@@ -1,0 +1,118 @@
+% Part: sets-functions-relations
+% Chapter: arithmetization
+% Section: From N to Z
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+
+\begin{document}
+
+\olfileid{sfr}{arith}{int}
+\olsection{$\Nat$ నుంచి $\Int$కు}
+
+ఇవిగో రెండు ప్రాథమిక అవగాహనలు:
+	\begin{enumerate}
+		\item ప్రతి పూర్ణ సంఖ్యను $n - m$ రూపంలో రాయవచ్చు; ఇక్కడ $n, m \in\Nat$.
+		\item $n - m$ అనే వ్యక్తీకరణలో సంకేతీకరించిన సమాచారాన్ని
+		క్రమిత జత $\tuple{n, m}$తో కూడా అంతే విధంగా సంకేతీకరించవచ్చు.
+	\end{enumerate}
+సహజ సంఖ్యల క్రమిత జతలు $\Nat^2$ యొక్క !!{element}s అని మనకు ఇప్పటికే
+తెలుసు. అంతేకాక, $\Nat$ను మనం అర్థం చేసుకున్నామని అనుకుంటున్నాం.
+కాబట్టి పై రెండు అవగాహనల ఆధారంగా ఒక సరళమైన సూచన ఇదిగో:
+\emph{పూర్ణ సంఖ్యలను సహజ సంఖ్యల క్రమిత జతలుగా పరిగణిద్దాం}.
+
+నిజానికి ఈ సూచన మరీ సరళమైనది. $0- 2 = 4 - 6$ కావాలని మనం స్పష్టంగా
+కోరుకుంటాం. కానీ $\tuple{0, 2 }\neq \tuple{4, 6}$ అనేది స్పష్టం.
+అందువల్ల $\Nat^2$నే పూర్ణ సంఖ్యల సమితి అని నేరుగా చెప్పలేం.
+
+ముందున్న సమస్యను సాధారణీకరిస్తే, మనకు కావలసింది ఇది:
+	$$a - b = c - d \text{ iff }a + d = c + b$$
+(పూర్ణ సంఖ్యలు ఇలాగే \emph{ప్రవర్తించాలి} అనేది స్పష్టమే: రెండు
+వైపులకూ $b$, $d$లను కలపండి.) ఈ ప్రవర్తనకు హామీ ఇచ్చే సులభమైన మార్గం,
+క్రమిత జతల మధ్య $\Intequiv$ అనే తుల్యతా సంబంధాన్ని ఇలా నిర్వచించడం:
+	$$\tuple{ a, b } \Intequiv \tuple{c, d}\text{ iff }a + d = c + b$$
+ఇప్పుడు ఇది తుల్యతా సంబంధమని చూపాలి.
+\begin{prop} $\Intequiv$ ఒక తుల్యతా సంబంధం.
+\end{prop}
+	\begin{proof}
+	$\Intequiv$ స్వావర్తన, సౌష్ఠవ, సంక్రామక ధర్మాలు కలిగి ఉందని
+	చూపాలి.
+
+	\emph{స్వావర్తన ధర్మం:} $a + b = b + a$ కనుక
+$\tuple{a, b} \Intequiv \tuple{a, b}$ అనేది స్పష్టం.
+
+	\emph{సౌష్ఠవ ధర్మం:} $\tuple{a, b} \Intequiv \tuple{c, d}$
+అనుకుందాం; అందువల్ల $a + d = c + b$. అప్పుడు $c + b = a + d$;
+కాబట్టి $\tuple{c, d} \Intequiv \tuple{a, b}$.
+
+	\emph{సంక్రామక ధర్మం:} $\tuple{a, b} \Intequiv \tuple{c,
+d}\Intequiv \tuple{m, n}$ అనుకుందాం. అప్పుడు $a + d = c + b$ మరియు
+$c + n = m + d$. కనుక $a + d + c + n = c + b + m + d$; అందువల్ల
+$a + n = m + b$. కాబట్టి $\tuple{a, b } \Intequiv \tuple{m, n}$.
+\end{proof}
+
+ఇప్పుడు ఈ తుల్యతా సంబంధాన్ని ఉపయోగించి తుల్యతా వర్గాలను తీసుకోవచ్చు.
+
+\begin{defn}
+		పూర్ణ సంఖ్యలు అంటే $\Intequiv$ కింద సహజ సంఖ్యల క్రమిత జతల
+		తుల్యతా వర్గాలు; అంటే,
+$\Int = \equivclass{\Nat^2}{\Intequiv}$.
+\end{defn}
+
+ఈ నిర్దేశిత నిర్వచనం గురించి అనేక భిన్నమైన \emph{తాత్త్విక}
+ప్రతిస్పందనలు ఉండవచ్చు. అయితే వాటిని పరిశీలించే ముందు కొన్ని సాంకేతిక
+వివరాలను కొనసాగించడం ఉపయోగకరం.
+
+పూర్ణ సంఖ్యలు ఏమిటో చెప్పిన తరువాత, వాటిపై ప్రాథమిక ప్రమేయాలు,
+సంబంధాలు నిర్వచించాలి. $\tuple{m, n}$ను !!a{element}గా కలిగిన,
+$\Intequiv$ కింద తుల్యతా వర్గాన్ని $\equivrep{m, n}{\Intequiv}$గా
+రాద్దాం.\footnote{గమనిక: \olref[sfr][rel][eqv]{def:equivalenceclass}లో
+ప్రవేశపెట్టిన సంజ్ఞను వాడితే, ఇదే దానిని
+$\equivrep{\tuple{m,n}}{\Intequiv}$గా రాసేవాళ్లం. కానీ అది చదవడానికి
+కొంచెం కష్టం.} అంటే:
+	$$\equivrep{m, n}{\Intequiv} = \Setabs{\tuple{a, b} \in \Nat^2}{\tuple{a, b}\Intequiv \tuple{m, n}}$$
+ఇప్పుడు ఈ నిర్వచనాలను ఇస్తాం:
+	\begin{align*}
+		\equivrep{a, b}{\Intequiv} + \equivrep{c, d}{\Intequiv} &= \equivrep{a + c, b + d}{\Intequiv}\\
+		\equivrep{a, b}{\Intequiv} \times \equivrep{c, d}{\Intequiv} &= \equivrep{a c + b  d, a  d + b c}{\Intequiv}\\
+		\equivrep{a, b}{\Intequiv} \leq \equivrep{c, d}{\Intequiv} &\text{ iff }a + d \leq b + c
+	\end{align*}
+(సాధారణంగా చేసే విధంగానే, సూత్రాలు చదవడానికి సులభంగా ఉండేందుకు
+`$ab$'ను `$(a \times b)$'కు సంక్షిప్తంగా వాడుతున్నాను.) ఇప్పుడు ఈ
+నిర్వచనాలు అవి \emph{ప్రవర్తించాల్సిన} విధంగానే ప్రవర్తిస్తాయని
+నిర్ధారించాలి. దాని అర్థాన్ని పూర్తిగా చెప్పి తనిఖీ చేయడం శ్రమతో కూడిన
+పని; వివరాలను \olref[check]{sec}కు వదిలేస్తాం. సంక్షిప్తంగా చెప్పాలంటే:
+అన్నీ పనిచేస్తాయి!
+
+చివరగా ఇంకొక విషయం మిగిలింది. సహజ సంఖ్యలను ఉపయోగించి పూర్ణ సంఖ్యలను
+నిర్మించాం. అయితే దాని వల్ల సహజ సంఖ్యలు \emph{స్వయంగా పూర్ణ సంఖ్యలు
+కావు}. దీని తాత్త్విక ప్రాముఖ్యతను \olref[ref]{sec}లో మళ్లీ
+పరిశీలిస్తాం. పూర్తిగా సాంకేతిక దృష్టిలో మాత్రం, సహజ సంఖ్యలను పూర్ణ
+సంఖ్యలుగా పరిగణించడానికి ఒక మార్గం కావాలి. ఆలోచన సులభం: ప్రతి
+$n \in \Nat$కు $n_\Int = \equivrep{n, 0}{\Intequiv}$ అని
+నిర్దేశిద్దాం. ఈ నిర్వచనం సరిగ్గా ప్రవర్తిస్తుందని, అంటే ఏ
+$m, n \in \Nat$కైనా కింది సమీకరణాలు వర్తిస్తాయని నిర్ధారించాలి:
+\begin{align*}
+	(m + n)_\Int &= m_\Int + n_\Int\\
+	(m \times n)_\Int &= m_\Int \times n_\Int\\
+	m \leq n &\liff m_\Int \leq n_\Int
+\end{align*}
+ఇదంతా సూటిగానే ఉంటుంది. ఉదాహరణకు, వీటిలో రెండవది వర్తిస్తుందని
+చూపడానికి సహజ సంఖ్యల ప్రవర్తనను ఉపయోగించి ఇలా తర్కించవచ్చు:
+%\begin{proof}
+%	సహజ సంఖ్యల ప్రవర్తనను ఉపయోగిస్తే, స్పష్టంగా:
+	\begin{align*}
+%		(m + n)_\Int  = \equivrep{m + n, 0}{\Intequiv} = \equivrep{m + n, 0 + 0}{\Intequiv} = \equivrep{m, 0}{\Intequiv} + \equivrep{n, 0}{\Intequiv} = m_\Int + n_\Int\\
+		(m \times n)_\Int  &= \equivrep{m \times n, 0}{\Intequiv} \\
+		&= \equivrep{m \times n + 0 \times 0, m \times 0 + 0 \times n}{\Intequiv} \\
+		&= \equivrep{m, 0}{\Intequiv} \times \equivrep{n, 0}{\Intequiv} \\
+		&= m_\Int \times n_\Int
+	\end{align*}
+%\end{proof}
+మిగిలిన రెండు షరతులు వర్తిస్తాయని నిర్ధారించడాన్ని సాధనగా
+వదిలేస్తాం.
+\begin{prob}
+	ఏ $m, n \in \Nat$కైనా $(m + n)_\Int = m_\Int + n_\Int$ మరియు
+$m \leq n \liff m_\Int \leq n_\Int$ అని చూపండి.
+\end{prob}
+\end{document}

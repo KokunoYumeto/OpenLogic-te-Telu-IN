@@ -1,0 +1,132 @@
+% Part: sets-functions-relations
+% Chapter: arithmetization
+% Section: cuts
+%
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{arith}{cuts}
+\olsection{$\Rat$ నుంచి $\Real$కు}
+
+సారాంశంగా, వాస్తవ సంఖ్యా రేఖపై ఏ బిందువు $\alpha$ అయినా ఆ రేఖను
+రెండు అర్ధభాగాలుగా సంపూర్ణంగా విభజిస్తుందని సంపూర్ణతా ధర్మం చూపుతుంది:
+ఒక అర్ధభాగానికి $\alpha$ కనిష్ఠ ఊర్ధ్వ అవధి; మరొక అర్ధభాగానికి
+$\alpha$ గరిష్ఠ అధో అవధి. కరణీయ సంఖ్యల నుంచి వాస్తవ సంఖ్యలను
+\emph{నిర్మించడానికి}, కరణీయ సంఖ్యలను విభజించే \emph{కోతలే} వాస్తవ
+సంఖ్యలు అని భావిద్దామని డెడెకిండ్ సూచించాడు. అంటే, $< \sqrt{2}$గా
+ఉన్న కరణీయ సంఖ్యలను $> \sqrt{2}$గా ఉన్న కరణీయ సంఖ్యల నుంచి వేరు
+చేసే \emph{కోత}తో $\sqrt{2}$ను గుర్తిస్తాం.
+
+దీనిని కచ్చితంగా చేద్దాం. కరణీయ సంఖ్యలను రెండు అర్ధభాగాలుగా కోస్తే,
+ఆ విభజనలోని \emph{దిగువ} అర్ధభాగాన్ని మాత్రమే పరిశీలించి మనం చేసిన
+విభజనను ఏకైకంగా గుర్తించవచ్చు. అందువల్ల కచ్చితంగా ఈ నిర్వచనాన్ని
+ఇస్తాం:
+
+\begin{defn}[కోత]
+\emph{కోత} $\alpha$ అంటే, గరిష్ఠ మూలకం లేని కరణీయ సంఖ్యల ఏదైనా
+శూన్యేతర నిజ ఆద్య ఖండం. అంటే, కింది షరతులు వర్తించినప్పుడు మాత్రమే
+$\alpha$ ఒక కోత:
+\begin{enumerate}
+	\item \emph{శూన్యేతరం, నిజం}: $\emptyset \neq \alpha \subsetneq \Rat$
+	\item \emph{ఆద్యం}: అన్ని $p,q \in \Rat$లకు: $p < q \in \alpha$ అయితే $p \in \alpha$
+	\item \emph{గరిష్ఠం లేదు}: ప్రతి $p \in \alpha$కు $p < q$ అయ్యే ఏదో $q \in \alpha$ ఉంది
+\end{enumerate}
+అప్పుడు $\Real$ కోతల సమితి.
+\end{defn}
+
+ఇప్పుడు $\sqrt{2} = \Setabs{p \in \Rat}{p^2 < 2\text{
+or }p < 0}$ అని చెప్పవచ్చు. ఇది నిజంగా ఒక కోత అని తనిఖీ చేయాలి;
+కానీ దానిని \olref[check]{sec}కు వదిలేస్తాం.
+
+మునుపటిలాగే, కొన్ని వస్తువులను నిర్వచించిన తరువాత వాటిపై ప్రాథమిక
+ప్రమేయాలు, సంబంధాలు నిర్వచించాలి. సులభమైన దానితో మొదలుపెడదాం:
+\begin{align*}
+	\alpha \leq \beta \text{ iff }\alpha \subseteq \beta
+\end{align*}
+ఈ క్రమ నిర్వచనం కేంద్ర ఫలితాన్ని \emph{ప్రకటించడానికి} వీలు కల్పిస్తుంది:
+కోతల సమితికి సంపూర్ణతా ధర్మం ఉంది. పూర్తిగా రాస్తే ప్రకటన రూపం ఇది.
+$S$ ఊర్ధ్వ అవధి గల శూన్యేతర కోతల సమితి అయితే, $S$కు కనిష్ఠ ఊర్ధ్వ
+అవధి ఉంటుంది. మరింత వివరంగా: $S$కు ఊర్ధ్వ అవధి అయిన ఒక కోత
+$\lambda$ ఉంది, అంటే $(\forall \alpha \in S)\alpha \subseteq
+\lambda$; అంతేకాక $\lambda$ అటువంటి కోతల్లో కనిష్ఠమైనది, అంటే
+$(\forall \beta \in \Real)((\forall \alpha \in S)\alpha \subseteq
+\beta \lif \lambda \subseteq \beta)$. ఇప్పుడు ఫలితపు నిరూపణ ఇదిగో:
+
+\begin{thm}\ollabel{realcompleteness}
+కోతల సమితికి సంపూర్ణతా ధర్మం ఉంది.
+\end{thm}
+
+\begin{proof}
+$S$ ఊర్ధ్వ అవధి గల ఏదైనా శూన్యేతర కోతల సమితి అనుకుందాం.
+$\lambda = \bigcup S$గా తీసుకుందాం.
+%\Setabs{p \in \Rat}{(\exists \alpha \in S)p \in \alpha}$$
+మొదట $\lambda$ ఒక కోత అని వాదిస్తాం:
+\begin{enumerate}
+\item $S$ శూన్యేతరం కనుక కనీసం ఒక కోత $S$లో ఉంది; అందువల్ల
+$\emptyset \neq \lambda$. $S$ కోతల సమితి కనుక $\lambda
+\subseteq \Rat$. $S$కు ఊర్ధ్వ అవధి ఉంది కనుక, ప్రతి కోత
+$\alpha \in S$లో లేని ఏదో $p \in \Rat$ ఉంది. అందువల్ల
+$p\notin \lambda$; కాబట్టి $\lambda \subsetneq \Rat$.
+\sourcecorrection{OLTEARITH-004}{ఆంగ్ల మూలం, $S$లో కనీసం ఒక కోత
+ఉందనేది $S$కు ఊర్ధ్వ అవధి ఉండటం నుంచి వస్తుందని తప్పుగా పేర్కొంది.
+ఆ నిర్ధారణ నిజానికి ఇప్పటికే ఇచ్చిన $S$ శూన్యేతరం అనే ఉపపత్తి నుంచి
+వస్తుంది; ఇక్కడ కారణాన్ని దానికి సరిచేశాం.}
+\item $p < q \in \lambda$ అనుకుందాం. అప్పుడు $q \in \alpha$ అయ్యే
+ఏదో $\alpha \in S$ ఉంది. $\alpha$ ఒక కోత కనుక $p \in \alpha$.
+కాబట్టి $p \in \lambda$.
+\item $p \in \lambda$ అనుకుందాం. అప్పుడు $p \in \alpha$ అయ్యే
+ఏదో $\alpha \in S$ ఉంది. $\alpha$ ఒక కోత కనుక $p < q$ అయ్యే
+ఏదో $q \in \alpha$ ఉంది. కాబట్టి $q \in \lambda$.
+\end{enumerate}
+దీనితో వాదన నిరూపితమైంది. అంతేకాక,
+$(\forall \alpha \in S)\alpha \subseteq \bigcup S = \lambda$
+అనేది స్పష్టం; అంటే $\lambda$, $S$కు ఊర్ధ్వ అవధి. ఇప్పుడు
+$\beta \in \mathbb{R}$ కూడా ఒక ఊర్ధ్వ అవధి అనుకుందాం; అంటే
+$(\forall \alpha \in S)\alpha \subseteq \beta$. ఏ
+$p \in \Rat$కైనా, $p \in \lambda$ అయితే $p \in \alpha$ అయ్యే
+ఏదో $\alpha \in S$ ఉంది; అందువల్ల $p \in \beta$.
+సాధారణీకరిస్తే $\lambda \subseteq \beta$. కాబట్టి $\lambda$,
+$S$కు \emph{కనిష్ఠ} ఊర్ధ్వ అవధి.
+\end{proof}
+
+ఈ విధంగా సంపూర్ణతా ధర్మాన్ని సంతృప్తిపరిచే అనేక వస్తువులు మనకు
+లభించాయి. దీనిని ఇలా కూడా చెప్పవచ్చు: మన కోతల్లో ``ఖాళీలు'' లేవు.
+(కాబట్టి కరణీయ సంఖ్యలకు బదులుగా వాస్తవ సంఖ్యలపై మరిన్ని ``కోతలు''
+తీసుకోవడం వల్ల ఆసక్తికరమైన కొత్త వస్తువులు రావు.)
+
+తరువాత వాస్తవ సంఖ్యలపై కొన్ని క్రియలను నిర్వచించాలి. ప్రతి
+$p \in \Rat$కు $p_\Real = \Setabs{q \in \Rat}{q < p}$ అని
+నిర్దేశించి, మొదట కరణీయ సంఖ్యలను వాస్తవ సంఖ్యల్లో అంతఃస్థాపిస్తాం.
+తరువాత ఇలా నిర్వచిస్తాం:
+\begin{align*}
+	\alpha + \beta &= \Setabs{p + q}{p \in \alpha \land q \in \beta}\\
+%	\alpha - \beta &\defis \Setabs{p - q}{p \in \alpha \land q \in \Rat \setminus \beta}\\
+	\alpha \times \beta &=
+	\Setabs{p \times q}{0 \leq p \in \alpha \land 0 \leq q \in \beta} \cup 0_\Real & \text{if }\alpha, \beta \geq 0_\Real
+%	\alpha \div \beta &\defis
+%	\Setabs{\nicefrac{p}{q}}{p \in \alpha \land q \in \Rat \setminus \beta}  & \text{if }\alpha \geq 0_\Real, \beta > 0_\Real
+\end{align*}
+\sourcecorrection{OLTEARITH-003}{ఋణేతర కోతల గుణకార సూత్రంలో ఆంగ్ల
+మూలం సున్నా కోతను అసంగతంగా $0^\mathbb{R}$గా రాసింది. ఈ విభాగంలోని
+$p_\Real$ అంతఃస్థాపనకు, తరువాతి $0_\Real$ సంజ్ఞకు అనుగుణంగా దానిని
+$0_\Real$గా సరిచేశాం.}
+మిగిలిన గుణకార సందర్భాలను నిర్వహించడానికి, మొదట ఇలా తీసుకుందాం:
+%that $0_\Real \times \alpha = 0_\Real = \alpha \times 0_\Real$, and add:
+\begin{align*}
+	-\alpha &= \Setabs{p - q}{p < 0 \land q \notin \alpha}
+\end{align*}
+ఆ తరువాత ఇలా నిర్దేశిద్దాం:
+\begin{align*}
+	\alpha \times \beta &\defis
+	\begin{cases}
+		\mathord{-}\alpha \times \mathord{-}\beta &\text{if }\alpha < 0_\Real\text{ and }\beta < 0_\Real\\
+		\mathord{-}(\mathord{-}\alpha \times \beta) &\text{if }\alpha < 0_\Real \text{ and }\beta > 0_\Real\\
+		\mathord{-}(\alpha \times \mathord{-}\beta) &\text{if }\alpha > 0_\Real \text{ and }\beta < 0_\Real
+	\end{cases}
+\end{align*}
+ఈ నిర్వచనాల్లో ప్రతి ఒక్కటీ ఎల్లప్పుడూ ఒక కోతనే ఇస్తుందని తనిఖీ
+చేయాలి. చివరగా, ఇలా నిర్వచించిన కోతలు అవి ప్రవర్తించాల్సిన విధంగానే
+ప్రవర్తిస్తాయని చూపే సులభమైన (కానీ సుదీర్ఘమైన) నిరూపణను ఇవ్వాలి.
+ఇదంతా \olref[check]{sec}కు వదిలేస్తాం.
+\end{document}

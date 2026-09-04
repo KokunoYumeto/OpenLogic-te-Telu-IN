@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 37 of 722 draft units**. This log contains 28 terminology/sense decisions and 19 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 45 of 722 draft units**. This log contains 30 terminology/sense decisions and 27 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 “Attested” means only that the specifically listed native page was actually inspected for the stated scope. It does not mean a human expert endorsed the final edition. The terminology rationales below were reconstructed retrospectively from primary records and exact current files; source-correction entries come from the contemporaneous audit.
 
@@ -566,6 +566,46 @@ Machine-readable companion: `EXPERT_REVIEW_LOG.jsonl`.
 
 - Review question: Is “కాంటర్ జిగ్‌జాగ్ పద్ధతి / జతీకరణ ప్రమేయం / సంకేతీకరించు / సంకేత సంఖ్య / కాంటర్ వికర్ణ పద్ధతి / వికర్ణీకరణ / సమస్యా తగ్గింపు / ష్రోడర్–బెర్న్‌స్టైన్” idiomatic and technically standard for “Cantor zig-zag / pairing function / encode / code / diagonal method / diagonalization / reduction / Schröder-Bernstein” in Telugu logic/mathematics across Andhra Pradesh and Telangana? If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
+## REV-TE-T029 — arithmetization / embedding / commutative ring / ordered ring / ordered field
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Chosen wording/treatment: అంకగణితీకరణ / అంతఃస్థాపన / వినిమయ వలయం / క్రమిత వలయం / క్రమిత క్షేత్రం
+
+- Exact implementation: content/sets-functions-relations/arithmetization/arithmetization.tex:8 ↔ translation/content/sets-functions-relations/arithmetization/arithmetization.tex:8 (OLP-0041-B004); content/sets-functions-relations/arithmetization/checking-details.tex:24 ↔ translation/content/sets-functions-relations/arithmetization/checking-details.tex:23-25 (OLP-0047-B006); content/sets-functions-relations/arithmetization/checking-details.tex:131-135 ↔ translation/content/sets-functions-relations/arithmetization/checking-details.tex:135-139 (OLP-0047-B019)
+
+- Authorities actually checked: TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P006, PDF 10, printed 36, Section 1 on real numbers; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P013, PDF 85, printed 75, Integer definition and number line, section 6.4
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: Native pages attest integer/rational/real number and theorem-proof register, while ordered-pair/set pages support the construction idiom. They do not attest these advanced algebra headwords. The frozen definitions and eight displayed ring laws control every selected descriptive term; no witness is claimed to establish the quotient constructions.
+
+- Alternatives: descriptive Telugu algebra headwords (chosen); untranslated English algebra terminology (not adopted in prose); source-eponym-free explanatory paraphrases (used where needed)
+
+- Uncertainty: Low for number classes; high nomenclatural for arithmetization and algebraic structures
+
+- Review question: Is “అంకగణితీకరణ / అంతఃస్థాపన / వినిమయ వలయం / క్రమిత వలయం / క్రమిత క్షేత్రం” idiomatic and technically standard for “arithmetization / embedding / commutative ring / ordered ring / ordered field” in Telugu logic/mathematics across Andhra Pradesh and Telangana? If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T030 — upper bound / least upper bound / greatest lower bound / Completeness Property / Dedekind cut / initial segment / Cauchy sequence / limit
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Chosen wording/treatment: ఊర్ధ్వ అవధి / కనిష్ఠ ఊర్ధ్వ అవధి / గరిష్ఠ అధో అవధి / సంపూర్ణతా ధర్మం / డెడెకిండ్ కోత / ఆద్య ఖండం / కౌషీ క్రమం / పరిమితి
+
+- Exact implementation: content/sets-functions-relations/arithmetization/reals.tex:74 ↔ translation/content/sets-functions-relations/arithmetization/reals.tex:76-81 (OLP-0044-B011); content/sets-functions-relations/arithmetization/cuts.tex:26-29 ↔ translation/content/sets-functions-relations/arithmetization/cuts.tex:26-29 (OLP-0045-B006); content/sets-functions-relations/arithmetization/cauchy.tex:83-87 ↔ translation/content/sets-functions-relations/arithmetization/cauchy.tex:78-82 (OLP-0048-B009)
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P006, PDF 10, printed 36, Section 1 on real numbers; TE-P017, PDF 311, printed 304, Question 11 and worked cases distinguishing A = B from A ≃ B
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: The inspected Telugu canon supports real/rational number and proof exposition, plus set comparison, but does not attest the advanced completeness constructions. Dedekind and Cauchy are explicit source-eponym borrowings; every cut, bound and convergence sense is held to the adjacent frozen definition and formula.
+
+- Alternatives: descriptive Telugu bound/completeness terminology (chosen); Dedekind and Cauchy source-eponym transliterations (retained); untranslated English analysis terminology (not adopted in prose)
+
+- Uncertainty: High nomenclatural; formal meanings and inequalities fixed
+
+- Review question: Is “ఊర్ధ్వ అవధి / కనిష్ఠ ఊర్ధ్వ అవధి / గరిష్ఠ అధో అవధి / సంపూర్ణతా ధర్మం / డెడెకిండ్ కోత / ఆద్య ఖండం / కౌషీ క్రమం / పరిమితి” idiomatic and technically standard for “upper bound / least upper bound / greatest lower bound / Completeness Property / Dedekind cut / initial segment / Cauchy sequence / limit” in Telugu logic/mathematics across Andhra Pradesh and Telangana? If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
 ## REV-OLFUN-001 — OLFUN-001
 
 - Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
@@ -945,3 +985,163 @@ Machine-readable companion: `EXPERT_REVIEW_LOG.jsonl`.
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Review question: Does the alternate characteristic-string definition use one bound output name consistently?
+
+## REV-OLTEARITH-001 — OLTEARITH-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: used s-r consistently with both controlling occurrences; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 53-58, order explanation and display ↔ translation/content/sets-functions-relations/arithmetization/rationals.tex:62 (OLP-0043-B006)
+
+- Authorities actually checked: OLTEARITH-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used s-r consistently with both controlling occurrences; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the rational-order explanation use s-r consistently with both controlling occurrences and preserve the nonnegative-numerator, positive-denominator condition?
+
+## REV-OLTEARITH-002 — OLTEARITH-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: removed the stray character only; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: line 80, stray less-than after element token ↔ translation/content/sets-functions-relations/arithmetization/reals.tex:95 (OLP-0044-B012)
+
+- Authorities actually checked: OLTEARITH-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: removed the stray character only; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the Telugu note make clear that only a stray less-than character was removed from ordinary prose?
+
+## REV-OLTEARITH-003 — OLTEARITH-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: replaced 0 superscript R with the chapter-consistent embedded zero 0_Real; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 96-100, nonnegative-cut multiplication ↔ translation/content/sets-functions-relations/arithmetization/cuts.tex:110 (OLP-0045-B012)
+
+- Authorities actually checked: OLTEARITH-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: replaced 0 superscript R with the chapter-consistent embedded zero 0_Real; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the multiplication formula use the embedded real zero 0_Real consistently with the surrounding construction?
+
+## REV-OLTEARITH-004 — OLTEARITH-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: attributed existence of a member to the stated non-emptiness of S; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 59-68, non-emptiness step in completeness proof ↔ translation/content/sets-functions-relations/arithmetization/cuts.tex:71 (OLP-0045-B010)
+
+- Authorities actually checked: OLTEARITH-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: attributed existence of a member to the stated non-emptiness of S; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the completeness proof correctly attribute existence of a member of S to non-emptiness rather than boundedness?
+
+## REV-OLTEARITH-005 — OLTEARITH-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: identified reals with equivalence classes under Realequiv; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 109-125, relation-versus-class identification ↔ translation/content/sets-functions-relations/arithmetization/cauchy.tex:118 (OLP-0048-B012)
+
+- Authorities actually checked: OLTEARITH-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: identified reals with equivalence classes under Realequiv; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the Cauchy construction distinguish the equivalence relation from the real objects, which are its equivalence classes?
+
+## REV-OLTEARITH-006 — OLTEARITH-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: compared the represented real with 0_Real rather than 0_Rat; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 149-152, positivity definition ↔ translation/content/sets-functions-relations/arithmetization/cauchy.tex:155 (OLP-0048-B015)
+
+- Authorities actually checked: OLTEARITH-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: compared the represented real with 0_Real rather than 0_Rat; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Is positivity of a represented real compared with 0_Real rather than the differently typed 0_Rat?
+
+## REV-OLTEARITH-007 — OLTEARITH-007
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: stated theorem and exercise for equivalence classes of Cauchy sequences; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 159-171, ordered-field theorem and exercise ↔ translation/content/sets-functions-relations/arithmetization/cauchy.tex:168 (OLP-0048-B015)
+
+- Authorities actually checked: OLTEARITH-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: stated theorem and exercise for equivalence classes of Cauchy sequences; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Do the ordered-field theorem and exercise state the result for equivalence classes rather than raw Cauchy sequences?
+
+## REV-OLTEARITH-008 — OLTEARITH-008
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: stated completeness for represented classes, retained S as representative sequences, and made the q_Real comparison class-typed; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 173-226, completeness theorem and proof ↔ translation/content/sets-functions-relations/arithmetization/cauchy.tex:189 (OLP-0048-B019)
+
+- Authorities actually checked: OLTEARITH-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: stated completeness for represented classes, retained S as representative sequences, and made the q_Real comparison class-typed; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Is S consistently a family of representative sequences while every ordered object is its represented equivalence class?

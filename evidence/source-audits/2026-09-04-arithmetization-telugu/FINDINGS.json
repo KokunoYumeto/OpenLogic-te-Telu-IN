@@ -1,0 +1,96 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTEARITH-20260904",
+  "created_utc": "2026-09-04T21:35:00Z",
+  "status": "confirmed_against_frozen_source_and_immediate_controlling_context",
+  "scope": {
+    "chapter": "Arithmetization",
+    "unit_ids": ["OLP-0041", "OLP-0042", "OLP-0043", "OLP-0044", "OLP-0045", "OLP-0046", "OLP-0047", "OLP-0048"],
+    "finding_count": 8
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "method": [
+    "Rehash each unit against SOURCE_MANIFEST.jsonl.",
+    "Resolve each suspected defect from the nearest controlling formula, definition, or explicit type.",
+    "Require an adjacent localized disclosure and an exact machine-readable delta for every translated repair."
+  ],
+  "findings": [
+    {
+      "finding_id": "OLTEARITH-001",
+      "unit_id": "OLP-0043",
+      "classification": "confirmed_reversed_difference_in_order_explanation",
+      "source": {"path": "content/sets-functions-relations/arithmetization/rationals.tex", "bytes": 3255, "sha256": "7140495368042fcbc55907e6ee568c5bc8b7066e44a01a50cbf4202acebe71d2", "locator": "lines 53-58"},
+      "finding": "The explanation correctly says r<=s iff s-r is nonnegative and the displayed definition computes [c,d]-[a,b], but the intervening phrase reverses that difference to r-s.",
+      "controlling_evidence": "Both the preceding clause and the immediately following display require s-r.",
+      "required_translation_handling": "Use s-r in both explanatory clauses and add an adjacent OLTEARITH-001 note."
+    },
+    {
+      "finding_id": "OLTEARITH-002",
+      "unit_id": "OLP-0044",
+      "classification": "confirmed_stray_character",
+      "source": {"path": "content/sets-functions-relations/arithmetization/reals.tex", "bytes": 4654, "sha256": "3df30161417b836178ff701aa3d778b9ec7c1ba8e3a8a54f98b5584a7960f453", "locator": "line 80"},
+      "finding": "A literal less-than character appears immediately after the plural element token and has no syntactic or mathematical role.",
+      "controlling_evidence": "The clause is ordinary prose saying all elements are smaller than 3.",
+      "required_translation_handling": "Omit only the stray character and add an adjacent OLTEARITH-002 note."
+    },
+    {
+      "finding_id": "OLTEARITH-003",
+      "unit_id": "OLP-0045",
+      "classification": "confirmed_zero_embedding_notation_mismatch",
+      "source": {"path": "content/sets-functions-relations/arithmetization/cuts.tex", "bytes": 5825, "sha256": "e7cb1029bcb0f0f1ac677c005af8d4e6a10df84bfff50c7483447b972324b44c", "locator": "lines 96-100"},
+      "finding": "The nonnegative multiplication case unions with 0 superscript R, inconsistent with the p_Real embedding defined four lines earlier and with later 0_Real uses.",
+      "controlling_evidence": "The intended set is the embedded rational zero cut, denoted 0_Real throughout the surrounding construction.",
+      "required_translation_handling": "Replace 0 superscript mathbb R by 0_Real and add an adjacent OLTEARITH-003 note."
+    },
+    {
+      "finding_id": "OLTEARITH-004",
+      "unit_id": "OLP-0045",
+      "classification": "confirmed_wrong_premise_attribution",
+      "source": {"path": "content/sets-functions-relations/arithmetization/cuts.tex", "bytes": 5825, "sha256": "e7cb1029bcb0f0f1ac677c005af8d4e6a10df84bfff50c7483447b972324b44c", "locator": "lines 59-68"},
+      "finding": "The proof says existence of a cut in S follows from S having an upper bound; it follows from the explicitly assumed non-emptiness of S.",
+      "controlling_evidence": "The theorem hypothesis says S is non-empty and bounded above; only the first hypothesis supplies a member.",
+      "required_translation_handling": "Attribute existence to non-emptiness and add an adjacent OLTEARITH-004 note."
+    },
+    {
+      "finding_id": "OLTEARITH-005",
+      "unit_id": "OLP-0048",
+      "classification": "confirmed_relation_class_type_confusion",
+      "source": {"path": "content/sets-functions-relations/arithmetization/cauchy.tex", "bytes": 10928, "sha256": "35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2", "locator": "lines 109-125"},
+      "finding": "The prose says real numbers are identified with equivalence relations, but the construction and next sentence identify them with equivalence classes under Realequiv.",
+      "controlling_evidence": "Lines 123-125 explicitly define reals as equivalence classes of Cauchy sequences.",
+      "required_translation_handling": "Use equivalence classes and add an adjacent OLTEARITH-005 note."
+    },
+    {
+      "finding_id": "OLTEARITH-006",
+      "unit_id": "OLP-0048",
+      "classification": "confirmed_zero_sort_mismatch",
+      "source": {"path": "content/sets-functions-relations/arithmetization/cauchy.tex", "bytes": 10928, "sha256": "35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2", "locator": "lines 149-152"},
+      "finding": "The equivalence class representing a constructed real is compared with 0_Rat instead of the already defined embedded zero 0_Real.",
+      "controlling_evidence": "Lines 136-138 define q_Real as the real represented by the constant rational sequence c_q.",
+      "required_translation_handling": "Use 0_Real and add an adjacent OLTEARITH-006 note."
+    },
+    {
+      "finding_id": "OLTEARITH-007",
+      "unit_id": "OLP-0048",
+      "classification": "confirmed_raw_sequence_vs_quotient_field_confusion",
+      "source": {"path": "content/sets-functions-relations/arithmetization/cauchy.tex", "bytes": 10928, "sha256": "35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2", "locator": "lines 159-171"},
+      "finding": "The theorem and exercise say Cauchy sequences constitute an ordered field, although equality and operations were defined on Realequiv equivalence classes.",
+      "controlling_evidence": "Lines 123-147 define the real objects and arithmetic on equivalence classes, not on raw sequences under literal equality.",
+      "required_translation_handling": "State the theorem and exercise for equivalence classes of Cauchy sequences and add an adjacent OLTEARITH-007 note."
+    },
+    {
+      "finding_id": "OLTEARITH-008",
+      "unit_id": "OLP-0048",
+      "classification": "confirmed_mixed_sequence_and_equivalence_class_typing",
+      "source": {"path": "content/sets-functions-relations/arithmetization/cauchy.tex", "bytes": 10928, "sha256": "35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2", "locator": "lines 173-226"},
+      "finding": "The completeness statement calls S a set of sequences, then compares q_Real directly with r in S, while all later comparisons correctly use equivalence classes [h].",
+      "controlling_evidence": "The proof formulas from line 201 onward uniformly order equivalence classes equivrep(h); the one direct q_Real<r comparison is ill-typed.",
+      "required_translation_handling": "Describe S as representative sequences for a family of classes, compare q_Real with equivrep(r), and add an adjacent OLTEARITH-008 note."
+    }
+  ]
+}

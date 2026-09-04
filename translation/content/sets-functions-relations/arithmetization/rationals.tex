@@ -1,0 +1,79 @@
+% Part: sets-functions-relations
+% Chapter: arithmetization
+% Section: rationals
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{arith}{rat}
+\olsection{$\Int$ నుంచి $\Rat$కు}
+
+కొంత సరళ సమితి సిద్ధాంతాన్ని ఉపయోగించి, సహజ సంఖ్యల నుంచి పూర్ణ
+సంఖ్యలను ఎలా నిర్మించాలో ఇప్పుడే చూశాం. ఇప్పుడు చాలా సారూప్యమైన
+విధానంలో పూర్ణ సంఖ్యల నుంచి కరణీయ సంఖ్యలను ఎలా నిర్మించాలో చూద్దాం.
+మన ప్రారంభ అవగాహనలు ఇవి:
+\begin{enumerate}
+	\item ప్రతి కరణీయ సంఖ్యను $\nicefrac{i}{j}$ రూపంలో రాయవచ్చు;
+	ఇక్కడ $i$, $j$ రెండూ పూర్ణ సంఖ్యలు, కానీ $j$ సున్నా కాదు.
+	\item $\nicefrac{i}{j}$ అనే వ్యక్తీకరణలో సంకేతీకరించిన సమాచారాన్ని
+	క్రమిత జత $\tuple{ i, j}$లో కూడా అంతే విధంగా సంకేతీకరించవచ్చు.
+\end{enumerate}
+కరణీయ సంఖ్యలను $\Int \times (\Int \setminus \{0_\Int\})$ నుంచి
+తీసుకున్న క్రమిత జతలుగానే భావించడం స్పష్టమైన విధానం. అయితే మునుపటిలాగే
+అది మరీ సరళం: $\nicefrac{3}{2} = \nicefrac{6}{4}$ కావాలని కోరుకుంటాం,
+కానీ $\tuple{ 3, 2}\neq \tuple{ 6, 4}$. మరింత సాధారణంగా, మనకు
+కావలసింది ఇది:
+\[
+	\nicefrac{a}{b} = \nicefrac{c}{d} \text{ iff } a \times d = b \times c
+\]
+దీనిని పొందేందుకు $\Int \times (\Int \setminus \{0_\Int\})$పై
+ఒక {తుల్యతా సంబంధాన్ని} ఇలా నిర్వచిస్తాం:
+\[
+	\tuple{ a, b }\Ratequiv \tuple{ c, d} \text{ iff }a \times d = b \times c
+\]
+ఇది తుల్యతా సంబంధమని తనిఖీ చేయాలి. ఇది $\Intequiv$ సందర్భానికి చాలా
+పోలివుంటుంది; దీనిని సాధనగా వదిలేస్తాం.
+\begin{prob}
+$\Ratequiv$ ఒక తుల్యతా సంబంధమని చూపండి.
+\end{prob}
+అప్పుడు ఇలా చెప్పవచ్చు:
+\begin{defn}
+కరణీయ సంఖ్యలు అంటే $\Ratequiv$ కింద రెండవ మూలకం సున్నా కాని పూర్ణ
+సంఖ్యల జతల తుల్యతా వర్గాలు. అంటే,
+$\Rat = \equivclass{(\Int \times (\Int\setminus \{0_\Int\}))}{\Ratequiv}$.
+\end{defn}
+
+పూర్ణ సంఖ్యల విషయంలోలాగే, కొన్ని ప్రాథమిక క్రియలను కూడా నిర్వచించాలి.
+$\tuple{i, j}$ను !!a{element}గా కలిగిన $\Ratequiv$ కింద తుల్యతా
+వర్గం $\equivrep{i,j}{\Ratequiv}$ అయినప్పుడు, ఇలా అంటాం:
+\begin{align*}
+	\equivrep{a, b}{\Ratequiv} + \equivrep{c, d}{\Ratequiv} &= \equivrep{ad + bc,  bd}{\Ratequiv}\\
+	\equivrep{a, b}{\Ratequiv} \times \equivrep{c, d}{\Ratequiv} &= \equivrep{a  c, b d}{\Ratequiv}.
+\intertext{ఈ కరణీయ సంఖ్యలపై $r \leq s$ను నిర్వచించడానికి,
+$r \le s$ కావడం అంటే $s - r$ ఋణాత్మకం కాకపోవడమే అనే వాస్తవాన్ని
+ఉపయోగిస్తాం; అంటే $s - r$ను $i$ ఋణేతరంగా, $j$ ధనంగా ఉండే
+$\nicefrac{i}{j}$ రూపంలో రాయవచ్చు:}
+	\equivrep{a, b}{\Ratequiv} \leq \equivrep{c, d}{\Ratequiv} &\text{ iff }
+	\equivrep{c, d}{\Ratequiv} - \equivrep{a, b}{\Ratequiv} =
+	\equivrep{i_\Int, j_\Int}{\Ratequiv}
+\end{align*}
+ఇక్కడ ఏవో $i \in \Nat$ మరియు $0 \neq j \in \Nat$ ఉంటాయి.
+\sourcecorrection{OLTEARITH-001}{ఆంగ్ల మూలం మొదట, అలాగే వెంటనే వచ్చే
+ప్రదర్శిత నిర్వచనం, $s-r$నే వాడినా మధ్య వివరణలో దానిని $r-s$గా
+తలకిందులు చేసింది. ఇక్కడ ఆ భేదాన్ని అంతటా $s-r$గా సరిచేశాం.}
+
+తరువాత ఈ నిర్వచనాలు అవి \emph{ప్రవర్తించాల్సిన} విధంగానే
+ప్రవర్తిస్తాయని తనిఖీ చేయాలి; దీనిని \olref[check]{sec}కు
+వదిలేస్తాం. అవి నిజంగానే అలా ప్రవర్తిస్తాయి!{} చివరగా పూర్ణ సంఖ్యలను
+కరణీయ సంఖ్యలుగా పరిగణించే మార్గం కావాలి; అందువల్ల ప్రతి $i \in \Int$కు
+$i_\Rat = \equivrep{i, 1_\Int}{\Ratequiv}$ అని నిర్దేశిస్తాం. ఇదంతా
+సరిగ్గా ప్రవర్తిస్తుందని కూడా \olref[check]{sec}లో తనిఖీ చేస్తాం.
+
+\begin{prob}
+ఏ $i, j \in \Int$కైనా $(i + j)_\Rat = i_\Rat+ j_\Rat$, అలాగే
+$(i \times j)_\Rat = i_\Rat \times j_\Rat$, అలాగే
+$i \leq j \liff i_\Rat \leq j_\Rat$ అని చూపండి.
+\end{prob}
+
+\end{document}
