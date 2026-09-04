@@ -1,0 +1,55 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTEPRF-20260905",
+  "created_utc": "2026-09-04T23:01:55Z",
+  "status": "confirmed_against_frozen_source_and_immediate_controlling_context",
+  "scope": {
+    "chapter": "Shared Proof Systems survey",
+    "unit_ids": ["OLP-0063", "OLP-0064", "OLP-0065", "OLP-0066", "OLP-0067", "OLP-0068"],
+    "finding_count": 4
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEPRF-001",
+      "unit_id": "OLP-0065",
+      "classification": "confirmed_dependent_indices_in_general_sequent_form",
+      "source": {"path": "content/first-order-logic/proof-systems/sequent-calculus.tex", "bytes": 2919, "sha256": "5448a91da184ef1d41e40ec2d56b74db63d49412d8b96b3f2a39a101b0191bad", "locator": "lines 17-23"},
+      "finding": "The purported general sequent ends both the antecedent and succedent sequences at index m, forcing equal lengths despite the adjacent statement that either sequence may independently be empty.",
+      "controlling_evidence": "A sequent is immediately defined as a pair of sequences and either sequence may be empty; their lengths therefore require independent indices m and n.",
+      "required_translation_handling": "Replace only the rightmost subscript m by n in the displayed general form and add an adjacent OLTEPRF-001 note."
+    },
+    {
+      "finding_id": "OLTEPRF-002",
+      "unit_id": "OLP-0067",
+      "classification": "confirmed_wrong_tableau_rule_macro_argument",
+      "source": {"path": "content/first-order-logic/proof-systems/tableaux.tex", "bytes": 3914, "sha256": "8c9db50bcbc7a4aa757b8d57796b2e51df04b1cabb61f46756a79f72a1780b8f", "locator": "lines 31-39"},
+      "finding": "The false-conjunction rule call gives the full formula A-and-B as TRule's operator argument.",
+      "controlling_evidence": "open-logic-config.sty's adjacent contract documents TRule{Sign}{Op}[line], and the paired true-conjunction call on line 34 supplies only the conjunction operator.",
+      "required_translation_handling": "Use TRule{False}{land} and add an adjacent OLTEPRF-002 note."
+    },
+    {
+      "finding_id": "OLTEPRF-003",
+      "unit_id": "OLP-0067",
+      "classification": "confirmed_wrong_rule_labels_in_tableau_example",
+      "source": {"path": "content/first-order-logic/proof-systems/tableaux.tex", "bytes": 3914, "sha256": "8c9db50bcbc7a4aa757b8d57796b2e51df04b1cabb61f46756a79f72a1780b8f", "locator": "lines 53-63"},
+      "finding": "After the false-conditional expansion, the example decomposes the true conjunction on line 2 into true A and true B, but both nodes are labelled with the true-conditional rule.",
+      "controlling_evidence": "The displayed parent is T(A-and-B), the prose on lines 31-39 states the true-conjunction expansion, and both labels cite parent line 2.",
+      "required_translation_handling": "Replace the connective in both rule labels by conjunction, retain [2], and add an adjacent OLTEPRF-003 note."
+    },
+    {
+      "finding_id": "OLTEPRF-004",
+      "unit_id": "OLP-0067",
+      "classification": "confirmed_insufficient_membership_quantifier_in_inconsistency_definition",
+      "source": {"path": "content/first-order-logic/proof-systems/tableaux.tex", "bytes": 3914, "sha256": "8c9db50bcbc7a4aa757b8d57796b2e51df04b1cabb61f46756a79f72a1780b8f", "locator": "lines 65-70"},
+      "finding": "The definition displays assumptions B_1 through B_n but requires only some B_i to be in Gamma, so it does not ensure that the finite assumption set comes from Gamma.",
+      "controlling_evidence": "The immediately preceding derivability definition correctly uses a finite set Gamma_0 contained in Gamma; inconsistency likewise requires all displayed assumptions to be members of Gamma.",
+      "required_translation_handling": "Require B_i in Gamma for every i from 1 through n and add an adjacent OLTEPRF-004 note."
+    }
+  ]
+}

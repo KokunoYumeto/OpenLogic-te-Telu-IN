@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 59 of 722 draft units**. This log contains 33 terminology/sense decisions and 37 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 65 of 722 draft units**. This log contains 35 terminology/sense decisions and 41 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 “Attested” means only that the specifically listed native page was actually inspected for the stated scope. It does not mean a human expert endorsed the final edition. The terminology rationales below were reconstructed retrospectively from primary records and exact current files; source-correction entries come from the contemporaneous audit.
 
@@ -665,6 +665,46 @@ Machine-readable companion: `EXPERT_REVIEW_LOG.jsonl`.
 - Uncertainty: Low for truth/falsity register; high nomenclatural for the formal semantic headwords
 
 - Review question: Is “సత్యమూల్యం / మూల్యనిర్ణయం / మూల్యాంకనం / సంతృప్తి / సర్వసత్యం / అర్థపర అనుగమనం / సంతృప్తిపరచదగిన / సంతృప్తిపరచలేని / పరిస్థిత్యాధీన / స్థానిక నిర్ణయితత్వం / అర్థపర నిగమన సిద్ధాంతం” idiomatic and technically standard for “truth value / valuation / evaluation / satisfaction / tautology / entailment / satisfiable / unsatisfiable / contingent / Local Determination / Semantic Deduction Theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana? If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T034 — derivation system / derivable / theorem / validity / soundness / completeness / consistency / inconsistency / axiom / inference rule
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Chosen wording/treatment: నిగమన వ్యవస్థ / నిగమించదగిన / సిద్ధాంతం / చెల్లుబాటుతనం / నిర్దుష్టత / సంపూర్ణత / అవైరుధ్యం / వైరుధ్యం / స్వీకృతం / నిగమన నియమం
+
+- Exact implementation: content/first-order-logic/proof-systems/introduction.tex:64-70 ↔ translation/content/first-order-logic/proof-systems/introduction.tex:67-76 (OLP-0064-B009); content/first-order-logic/proof-systems/introduction.tex:72-80 ↔ translation/content/first-order-logic/proof-systems/introduction.tex:78-84 (OLP-0064-B010); content/first-order-logic/proof-systems/introduction.tex:81-99 ↔ translation/content/first-order-logic/proof-systems/introduction.tex:86-103 (OLP-0064-B011)
+
+- Authorities actually checked: TE-P002, PDF 9, printed 35, Main paragraph, lower half; TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P002 supplies logic and truth-checking register, TE-P003 explicitly supplies proof, induction and deduction language, and TE-P004 supplies theorem/proof register. None attests the grouped formal metatheoretic headwords. OpenLogic's displayed Proves/Entails equivalences and its syntactic consistency definition control their extensions.
+
+- Alternatives: descriptive Telugu derivability and metatheory headwords (chosen); soundness transliteration or reuse of consistency vocabulary (not adopted because the definitions distinguish them); protected source-token spellings inside macros (retained for source identity)
+
+- Uncertainty: Low for theorem, proof and broad deduction register; high nomenclatural for derivability, soundness and consistency headwords
+
+- Review question: Is “నిగమన వ్యవస్థ / నిగమించదగిన / సిద్ధాంతం / చెల్లుబాటుతనం / నిర్దుష్టత / సంపూర్ణత / అవైరుధ్యం / వైరుధ్యం / స్వీకృతం / నిగమన నియమం” idiomatic and technically standard for “derivation system / derivable / theorem / validity / soundness / completeness / consistency / inconsistency / axiom / inference rule” in Telugu logic/mathematics across Andhra Pradesh and Telangana? If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T035 — sequent / sequent calculus / natural deduction / introduction rule / elimination rule / assumption / discharge / tableau / signed formula / closed branch / open branch / axiomatic derivation / axiom schema / modus ponens / resolution / proof-theoretic semantics
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Chosen wording/treatment: సీక్వెంట్ / సీక్వెంట్ కలనం / సహజ నిగమనం / ప్రవేశ నియమం / తొలగింపు నియమం / పరికల్పన / ఉపసంహరణ / టాబ్లో / చిహ్నిత సూత్రం / సంవృత శాఖ / వివృత శాఖ / స్వీకృతాధారిత నిగమనం / స్వీకృత నమూనా / మోడస్ పోనెన్స్ / రిజల్యూషన్ / నిరూపణ-సిద్ధాంత అర్థవిచారం
+
+- Exact implementation: content/first-order-logic/proof-systems/sequent-calculus.tex:13-23 ↔ translation/content/first-order-logic/proof-systems/sequent-calculus.tex:13-27 (OLP-0065-B005); content/first-order-logic/proof-systems/natural-deduction.tex:13-30 ↔ translation/content/first-order-logic/proof-systems/natural-deduction.tex:13-30 (OLP-0066-B005); content/first-order-logic/proof-systems/natural-deduction.tex:45-58 ↔ translation/content/first-order-logic/proof-systems/natural-deduction.tex:43-55 (OLP-0066-B007); content/first-order-logic/proof-systems/tableaux.tex:15-23 ↔ translation/content/first-order-logic/proof-systems/tableaux.tex:15-23 (OLP-0067-B006); content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-32 ↔ translation/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-37 (OLP-0068-B005); content/first-order-logic/proof-systems/axiomatic-deduction.tex:39-46 ↔ translation/content/first-order-logic/proof-systems/axiomatic-deduction.tex:39-45 (OLP-0068-B007)
+
+- Authorities actually checked: TE-P002, PDF 9, printed 35, Main paragraph, lower half; TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: The checked native pages support only broad logic, proof and deduction exposition. They do not attest these named calculi or their rule vocabulary. Sequent, tableau, modus ponens and resolution are explicit transliterated borrowings; the frozen tree, rule, assumption and schema descriptions fix all technical senses.
+
+- Alternatives: sequent, tableau, modus ponens and resolution transliterations (explicit borrowings); descriptive Telugu rule, branch and assumption headwords (chosen); untranslated English prose terminology (not adopted outside protected tokens and titles)
+
+- Uncertainty: Low for the broad proof register; high nomenclatural for the named proof formalisms and rule headwords
+
+- Review question: Is “సీక్వెంట్ / సీక్వెంట్ కలనం / సహజ నిగమనం / ప్రవేశ నియమం / తొలగింపు నియమం / పరికల్పన / ఉపసంహరణ / టాబ్లో / చిహ్నిత సూత్రం / సంవృత శాఖ / వివృత శాఖ / స్వీకృతాధారిత నిగమనం / స్వీకృత నమూనా / మోడస్ పోనెన్స్ / రిజల్యూషన్ / నిరూపణ-సిద్ధాంత అర్థవిచారం” idiomatic and technically standard for “sequent / sequent calculus / natural deduction / introduction rule / elimination rule / assumption / discharge / tableau / signed formula / closed branch / open branch / axiomatic derivation / axiom schema / modus ponens / resolution / proof-theoretic semantics” in Telugu logic/mathematics across Andhra Pradesh and Telangana? If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -1405,3 +1445,83 @@ Machine-readable companion: `EXPERT_REVIEW_LOG.jsonl`.
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Review question: Does Local Determination unambiguously restrict agreement to variables occurring in the one fixed formula A?
+
+## REV-OLTEPRF-001 — OLTEPRF-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: used an independent final index n for the succedent sequence; adjacent sourcecorrection discloses the formula repair
+
+- Exact implementation: lines 17-23, displayed general sequent ↔ translation/content/first-order-logic/proof-systems/sequent-calculus.tex:23 (OLP-0065-B006)
+
+- Authorities actually checked: OLTEPRF-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used an independent final index n for the succedent sequence; adjacent sourcecorrection discloses the formula repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the general sequent use independent final indices m and n, consistently with either side being independently empty?
+
+## REV-OLTEPRF-002 — OLTEPRF-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: passed only the conjunction operator to the false-conjunction rule-label macro; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 31-39, false-conjunction rule description ↔ translation/content/first-order-logic/proof-systems/tableaux.tex:41 (OLP-0067-B007)
+
+- Authorities actually checked: OLTEPRF-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: passed only the conjunction operator to the false-conjunction rule-label macro; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the false-conjunction tableau rule pass only the conjunction operator to the documented rule-label macro?
+
+## REV-OLTEPRF-003 — OLTEPRF-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: labelled both children of the true conjunction with the true-conjunction rule while retaining line reference 2; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 53-63, closed-tableau example ↔ translation/content/first-order-logic/proof-systems/tableaux.tex:69 (OLP-0067-B008)
+
+- Authorities actually checked: OLTEPRF-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: labelled both children of the true conjunction with the true-conjunction rule while retaining line reference 2; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Are both children produced from the true conjunction on line 2 labelled with the true-conjunction rule and the same line reference?
+
+## REV-OLTEPRF-004 — OLTEPRF-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: required membership in Gamma for every displayed index rather than for merely some index; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 65-70, tableau inconsistency definition ↔ translation/content/first-order-logic/proof-systems/tableaux.tex:81 (OLP-0067-B009)
+
+- Authorities actually checked: OLTEPRF-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: required membership in Gamma for every displayed index rather than for merely some index; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the tableau inconsistency definition require every displayed finite premise B_i, rather than merely some one premise, to belong to Gamma?

@@ -20,18 +20,19 @@ Continuing concept DOI:
 GitHub, GitHub Pages, and Zenodo public bytes have been anonymously verified;
 see [PUBLICATION.md](PUBLICATION.md).
 
-Fifty-nine full-unit editable drafts exist in this repository: Sets (7),
+Sixty-five full-unit editable drafts exist in this repository: Sets (7),
 Relations (9), Functions (7), Size of Sets (14), Arithmetization (8) and
 Infinite Sets (6), plus the Propositional Logic part driver and complete
-Syntax and Semantics chapter (8). All eight batches have
+Syntax and Semantics chapter (8), and the shared Proof Systems chapter (6).
+All nine batches have
 source-aligned structural and same-agent semantic review records. The Sets
 chapter also has an offline semantic HTML reader with Telugu document metadata, native MathML,
 local fonts, accessible inline diagrams, resolved internal links, and a
 separately collapsible copy of each canonical English unit. Its public browser
 version is at [OpenLogic తెలుగు — సమితులు](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sets/).
-Relations, Functions, Size of Sets, Arithmetization, Infinite Sets and
-Propositional Logic are not yet integrated into that reader. The other 663
-units and the coherent full
+Relations, Functions, Size of Sets, Arithmetization, Infinite Sets,
+Propositional Logic and Proof Systems are not yet integrated into that reader.
+The other 657 units and the coherent full
 reader remain in progress; neither current
 chapter format substitutes for that remaining work.
 
@@ -58,7 +59,8 @@ Original rights-restricted Telugu books and their page images are **not**
 redistributed here.
 
 Five confirmed source issues in Functions, fourteen in Size of Sets, eight
-in Arithmetization, six in Infinite Sets and four in Propositional Logic are
+in Arithmetization, six in Infinite Sets, four in Propositional Logic and four
+in Proof Systems are
 minimally repaired and disclosed beside the affected Telugu claims. The frozen
 English bytes remain unchanged. The Size of Sets records adopt ten shared
 OLSIZ findings and four additional deterministic OLTESIZ findings. A proposed
@@ -72,13 +74,15 @@ the bounded
 and the bounded
 [Infinite Sets audit](evidence/source-audits/2026-09-05-infinite-telugu/REVIEW.md),
 and the bounded
-[Propositional Syntax and Semantics audit](evidence/source-audits/2026-09-05-propositional-syntax-telugu/REVIEW.md).
+[Propositional Syntax and Semantics audit](evidence/source-audits/2026-09-05-propositional-syntax-telugu/REVIEW.md),
+and the bounded
+[Proof Systems audit](evidence/source-audits/2026-09-05-proof-systems-telugu/REVIEW.md).
 
-The [optional expert-review log](evidence/EXPERT_REVIEW_LOG.md) exposes all 33
-current terminology/sense decisions and the thirty-seven corrections with exact
+The [optional expert-review log](evidence/EXPERT_REVIEW_LOG.md) exposes all 35
+current terminology/sense decisions and the forty-one corrections with exact
 source/target locators, aligned segment hashes, authorities actually checked,
 known evidence limits, alternatives, uncertainty, and concrete review
-questions. Its status is explicitly partial (59/722); every entry is
+questions. Its status is explicitly partial (65/722); every entry is
 provisional for optional expert review and none is a translation hold.
 
 ## QA and limitations
@@ -90,13 +94,13 @@ last-two-pass hashes; all-page visual inspection; mixed-script and Telugu
 conjunct extraction samples. The final log has zero missing glyphs,
 overfull boxes, undefined references or warnings.
 
-All fifty-nine editable drafts pass correction-aware blank-block,
+All sixty-five editable drafts pass correction-aware blank-block,
 environment, source-token, protected-identifier and mathematical-form checks.
-Eight same-agent semantic reviews record source-aligned reverse paraphrases and
+Nine same-agent semantic reviews record source-aligned reverse paraphrases and
 their limits. Size of Sets, Arithmetization, Infinite Sets and Propositional
-Logic Syntax and Semantics have source QA
+Logic Syntax and Semantics, and Proof Systems have source QA
 only at this checkpoint; no PDF or HTML reader integration is claimed for
-those thirty-six units.
+those forty-two units.
 
 QA is machine/agent performed, not human or independent review. Several
 technical terms remain provisional. The PDF is not tagged. Source caveats

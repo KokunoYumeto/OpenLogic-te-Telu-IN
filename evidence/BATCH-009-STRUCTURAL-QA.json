@@ -1,0 +1,1044 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-04T23:20:09.209Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Intertext prose is masked while its inline math remains checked.",
+  "units": [
+    {
+      "unit_id": "OLP-0063",
+      "source_path": "content/first-order-logic/proof-systems/proof-systems.tex",
+      "source_sha256": "09977f6410bc57fcedf4428c2212ccf67b2bf0bf574413c4e2fdcf4de6cccab7",
+      "translation_sha256": "46f657f11b2149003656742b50ec3e84a403da7e6d6626ed010ef2883ac8f0b9",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport{introduction}",
+        "\\olimport{sequent-calculus}",
+        "\\olimport{natural-deduction}",
+        "\\olimport{tableaux}",
+        "\\olimport{axiomatic-deduction}"
+      ],
+      "identifiers_target": [
+        "\\olimport{introduction}",
+        "\\olimport{sequent-calculus}",
+        "\\olimport{natural-deduction}",
+        "\\olimport{tableaux}",
+        "\\olimport{axiomatic-deduction}"
+      ],
+      "tokens_source": {
+        "!!{derivation}": 1
+      },
+      "tokens_target": {
+        "!!{derivation}": 1
+      },
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 205,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: proof-systems",
+          "target_start": "% Part: first-order-logic\n% Chapter: proof-systems"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\iftag{FOL}\n      {\\olchapter{fol}{prf}{\\usetoken{S}{derivation} Systems}}\n      {\\olchapter{pl}{prf}{\\usetoke",
+          "target_start": "\\iftag{FOL}\n      {\\olchapter{fol}{prf}{\\usetoken{S}{derivation} వ్యవస్థలు}}\n      {\\olchapter{pl}{prf}{\\useto"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{editorial}\nThis chapter collects general material on !!{derivation} systems. A\ntextbook using a specifi",
+          "target_start": "\\begin{editorial}\nఈ అధ్యాయం !!{derivation} వ్యవస్థలకు సంబంధించిన సాధారణ విషయాన్ని\nసంకలనం చేస్తుంది. ఏదైనా నిర్"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport{introduction}",
+          "target_start": "\\olimport{introduction}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport{sequent-calculus}",
+          "target_start": "\\olimport{sequent-calculus}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\olimport{natural-deduction}",
+          "target_start": "\\olimport{natural-deduction}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport{tableaux}",
+          "target_start": "\\olimport{tableaux}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\olimport{axiomatic-deduction}",
+          "target_start": "\\olimport{axiomatic-deduction}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\OLEndChapterHook",
+          "target_start": "\\OLEndChapterHook"
+        },
+        {
+          "index": 12,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{fol}{prf}",
+        "\\olchapter{pl}{prf}",
+        "\\olimport{introduction}",
+        "\\olimport{sequent-calculus}",
+        "\\olimport{natural-deduction}",
+        "\\olimport{tableaux}",
+        "\\olimport{axiomatic-deduction}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{fol}{prf}",
+        "\\olchapter{pl}{prf}",
+        "\\olimport{introduction}",
+        "\\olimport{sequent-calculus}",
+        "\\olimport{natural-deduction}",
+        "\\olimport{tableaux}",
+        "\\olimport{axiomatic-deduction}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0064",
+      "source_path": "content/first-order-logic/proof-systems/introduction.tex",
+      "source_sha256": "148266281cc87fcd3e454249b9f6c42a117a9aed0733cc5a5f2e954ffd60bb58",
+      "translation_sha256": "f4bce72190129805b4680acc0bb09b4b006d0de8eda3ef83d2d7211b04dc5aab",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{prf}{int}",
+        "\\olfileid{pl}{prf}{int}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{prf}{int}",
+        "\\olfileid{pl}{prf}{int}"
+      ],
+      "tokens_source": {
+        "!!^a{derivation}": 1,
+        "!!a{derivation}": 5,
+        "!!a{formula}": 1,
+        "!!a{sentence}": 2,
+        "!!{derivability}": 1,
+        "!!{derivable}": 2,
+        "!!{derivation}": 16,
+        "!!{derivation}s": 7,
+        "!!{derive}": 1,
+        "!!{formula}": 1,
+        "!!{formula}s": 6,
+        "!!{sentence}s": 6
+      },
+      "tokens_target": {
+        "!!^a{derivation}": 1,
+        "!!a{derivation}": 5,
+        "!!a{formula}": 1,
+        "!!a{sentence}": 2,
+        "!!{derivability}": 1,
+        "!!{derivable}": 2,
+        "!!{derivation}": 16,
+        "!!{derivation}s": 7,
+        "!!{derive}": 1,
+        "!!{formula}": 1,
+        "!!{formula}s": 6,
+        "!!{sentence}s": 6
+      },
+      "math_source": [
+        "$\\Proves!A$",
+        "$!A$",
+        "$\\Gamma\\Proves!A$",
+        "$!A$",
+        "$\\Gamma$",
+        "$\\Proves$",
+        "$\\Entails$",
+        "$\\Proves!A$",
+        "$\\Entails!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\Entails!A$",
+        "$!A$",
+        "$!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Proves$",
+        "$\\Gamma$"
+      ],
+      "math_target_core": [
+        "$!A$",
+        "$\\Proves!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Proves$",
+        "$\\Entails$",
+        "$\\Proves!A$",
+        "$\\Entails!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\Entails!A$",
+        "$!A$",
+        "$!A$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Proves$",
+        "$\\Gamma$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 3304,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: proof-systems\n% Section: introduction",
+          "target_start": "% Part: first-order-logic\n% Chapter: proof-systems\n% Section: introduction"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\iftag{FOL}\n      {\\olfileid{fol}{prf}{int}}\n      {\\olfileid{pl}{prf}{int}}",
+          "target_start": "\\iftag{FOL}\n      {\\olfileid{fol}{prf}{int}}\n      {\\olfileid{pl}{prf}{int}}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Introduction}",
+          "target_start": "\\olsection{పరిచయం}"
+        },
+        {
+          "index": 6,
+          "source_start": "Logics commonly have both a semantics and !!a{derivation}\nsystem. The semantics concerns concepts such as trut",
+          "target_start": "తర్కవ్యవస్థలకు సాధారణంగా అర్థవిచారమూ, ఒక !!a{derivation}\nవ్యవస్థా ఉంటాయి. అర్థవిచారం సత్యం, సంతృప్తిపరచదగినతనం"
+        },
+        {
+          "index": 7,
+          "source_start": "The simplest (and historically first) !!{derivation} systems for\nfirst-order logic were \\emph{axiomatic}.  A s",
+          "target_start": "ప్రథమక్రమ తర్కానికి అత్యంత సరళమైన (చారిత్రకంగా మొదటివైన)\n!!{derivation} వ్యవస్థలు\n\\emph{స్వీకృతాధారితమైనవి}. అ"
+        },
+        {
+          "index": 8,
+          "source_start": "Other !!{derivation} systems have been developed with the aim of\nmaking it easier to construct !!{derivation}s",
+          "target_start": "!!{derivation}sను నిర్మించడమో, పూర్తయిన !!{derivation}sను అర్థం చేసుకోవడమో\nసులభం చేయాలనే లక్ష్యంతో ఇతర !!{deri"
+        },
+        {
+          "index": 9,
+          "source_start": "So for a given logic, such as first-order logic, the different\n!!{derivation} systems will give different expl",
+          "target_start": "కాబట్టి ప్రథమక్రమ తర్కం వంటి ఒక తర్కవ్యవస్థకు, వేర్వేరు\n!!{derivation} వ్యవస్థలు ఒక !!a{sentence}\n\\emph{సిద్ధా"
+        },
+        {
+          "index": 10,
+          "source_start": "The converse ``if'' direction is also important: it is called\n\\emph{completeness}. A complete !!{derivation} s",
+          "target_start": "దీనికి విరుద్ధమైన “అప్పుడు” దిశ కూడా ముఖ్యం; దానిని\n\\emph{సంపూర్ణత} అంటారు. $!A$ చెల్లుబాటయ్యే ప్రతిసారీ $!A$ "
+        },
+        {
+          "index": 11,
+          "source_start": "Another concept that is connected to !!{derivation} systems is that of\n\\emph{consistency}. A set of !!{sentenc",
+          "target_start": "!!{derivation} వ్యవస్థలకు సంబంధించిన మరొక భావన\n\\emph{అవైరుధ్యం}. ఒక !!{sentence}s సమితి నుంచి ఏదైనా సరే\n!!{der"
+        },
+        {
+          "index": 12,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{prf}{int}",
+        "\\olfileid{pl}{prf}{int}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{prf}{int}",
+        "\\olfileid{pl}{prf}{int}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0065",
+      "source_path": "content/first-order-logic/proof-systems/sequent-calculus.tex",
+      "source_sha256": "5448a91da184ef1d41e40ec2d56b74db63d49412d8b96b3f2a39a101b0191bad",
+      "translation_sha256": "f0a70cb7aec27bde1ee123392dff49343d9c9116ac7ab5a22cbf942cecf16590",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{prf}{seq}",
+        "\\olfileid{pl}{prf}{seq}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{prf}{seq}",
+        "\\olfileid{pl}{prf}{seq}"
+      ],
+      "tokens_source": {
+        "!!^a{derivation}": 1,
+        "!!a{derivation}": 3,
+        "!!{derivation}": 3,
+        "!!{derivation}s": 3,
+        "!!{derive}": 1,
+        "!!{formula}": 1,
+        "!!{sentence}": 1,
+        "!!{sentence}s": 3
+      },
+      "tokens_target": {
+        "!!^a{derivation}": 1,
+        "!!a{derivation}": 3,
+        "!!{derivation}": 3,
+        "!!{derivation}s": 3,
+        "!!{derive}": 1,
+        "!!{formula}": 1,
+        "!!{sentence}": 1,
+        "!!{sentence}s": 3
+      },
+      "math_source": [
+        "\\[!A_1,\\dots,!A_m\\Sequent!B_1,\\dots,!B_m,\\]",
+        "$\\Sequent$",
+        "$\\LeftR{\\land}$",
+        "$!A,\\Gamma\\Sequent\\Delta$",
+        "$!A\\land!B,\\Gamma\\Sequent\\Delta$",
+        "$\\RightR{\\lif}$",
+        "$!A,\\Gamma\\Sequent\\Delta,!B$",
+        "$\\Gamma\\Sequent\\Delta,!A\\lif!B$",
+        "$\\Gamma$",
+        "$\\Delta$",
+        "$!A$",
+        "$!B$",
+        "$\\Gamma$",
+        "$\\Delta$",
+        "$\\Proves$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma_0$",
+        "$!A$",
+        "$\\Gamma_0$",
+        "$\\Gamma$",
+        "$\\Gamma_0\\Sequent!A$",
+        "$!A$",
+        "$\\Sequent!A$",
+        "$\\Proves(!A\\land!B)\\lif!A$",
+        "$!A\\fCenter!A$",
+        "$!A\\land!B\\fCenter!A$",
+        "$\\fCenter(!A\\land!B)\\lif!A$",
+        "$\\Gamma$",
+        "$\\Gamma_0\\Sequent$",
+        "$!A\\in\\Gamma_0$",
+        "$\\Gamma$"
+      ],
+      "math_target_core": [
+        "\\[!A_1,\\dots,!A_m\\Sequent!B_1,\\dots,!B_n,\\]",
+        "$\\Sequent$",
+        "$\\LeftR{\\land}$",
+        "$!A,\\Gamma\\Sequent\\Delta$",
+        "$!A\\land!B,\\Gamma\\Sequent\\Delta$",
+        "$\\RightR{\\lif}$",
+        "$\\Gamma$",
+        "$\\Delta$",
+        "$!A$",
+        "$!B$",
+        "$!A,\\Gamma\\Sequent\\Delta,!B$",
+        "$\\Gamma\\Sequent\\Delta,!A\\lif!B$",
+        "$\\Gamma$",
+        "$\\Delta$",
+        "$\\Proves$",
+        "$\\Gamma_0$",
+        "$!A$",
+        "$\\Gamma$",
+        "$\\Gamma_0\\Sequent!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Sequent!A$",
+        "$!A$",
+        "$\\Proves(!A\\land!B)\\lif!A$",
+        "$!A\\fCenter!A$",
+        "$!A\\land!B\\fCenter!A$",
+        "$\\fCenter(!A\\land!B)\\lif!A$",
+        "$\\Gamma_0$",
+        "$!A\\in\\Gamma_0$",
+        "$\\Gamma$",
+        "$\\Gamma_0\\Sequent$",
+        "$\\Gamma$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "\\[!A_1,\\dots,!A_m\\Sequent!B_1,\\dots,!B_m,\\]"
+      ],
+      "math_delta_target_only": [
+        "\\[!A_1,\\dots,!A_m\\Sequent!B_1,\\dots,!B_n,\\]"
+      ],
+      "declared_source_correction_ids": [
+        "OLTEPRF-001"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1520,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: proof-systems\n% Section: seqeunt-calculus",
+          "target_start": "% Part: first-order-logic\n% Chapter: proof-systems\n% Section: seqeunt-calculus"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\iftag{FOL}\n      {\\olfileid{fol}{prf}{seq}}\n      {\\olfileid{pl}{prf}{seq}}",
+          "target_start": "\\iftag{FOL}\n      {\\olfileid{fol}{prf}{seq}}\n      {\\olfileid{pl}{prf}{seq}}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{The Sequent Calculus}",
+          "target_start": "\\olsection{సీక్వెంట్ కలనం}"
+        },
+        {
+          "index": 6,
+          "source_start": "While many !!{derivation} systems operate with arrangements of\n!!{sentence}s, the sequent calculus operates wi",
+          "target_start": "అనేక !!{derivation} వ్యవస్థలు !!{sentence}s అమరికలతో పనిచేస్తే,\nసీక్వెంట్ కలనం \\emph{సీక్వెంట్లతో} పనిచేస్తుంద"
+        },
+        {
+          "index": 7,
+          "source_start": "The $\\Proves$ relation based on the sequent calculus is defined as\nfollows: $\\Gamma \\Proves !A$ iff there is s",
+          "target_start": "సీక్వెంట్ కలనం ఆధారంగా $\\Proves$ సంబంధాన్ని ఇలా నిర్వచిస్తాం:\n$\\Gamma_0$లోని ప్రతి $!A$, $\\Gamma$లో ఉండి, మూలం"
+        },
+        {
+          "index": 8,
+          "source_start": "A set $\\Gamma$ is inconsistent in the sequent calculus if there is\n!!a{derivation} of $\\Gamma_0 \\Sequent$ (whe",
+          "target_start": "$\\Gamma_0$లోని ప్రతి $!A \\in \\Gamma_0$, $\\Gamma$లో ఉండి,\n$\\Gamma_0 \\Sequent$కు (సీక్వెంట్ కుడివైపు శూన్యంగా ఉం"
+        },
+        {
+          "index": 9,
+          "source_start": "The sequent calculus was invented in the 1930s by Gerhard Gentzen.\nBecause of its systematic and symmetric des",
+          "target_start": "సీక్వెంట్ కలనాన్ని 1930లలో గెర్హార్డ్ గెంట్సెన్ కనుగొన్నాడు. దాని\nక్రమబద్ధమైన, సౌష్ఠవమైన రూపకల్పన వల్ల !!{deri"
+        },
+        {
+          "index": 10,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{prf}{seq}",
+        "\\olfileid{pl}{prf}{seq}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{prf}{seq}",
+        "\\olfileid{pl}{prf}{seq}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0066",
+      "source_path": "content/first-order-logic/proof-systems/natural-deduction.tex",
+      "source_sha256": "77b5d31c7b63f657e0d5492d83810bfdc21af0169a9b38ccd5302e0e4cdefdfe",
+      "translation_sha256": "ddb8f9a0425a4737b43660d7d601fda646c574b72bf17565bb50acb73b33004b",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{prf}{ntd}",
+        "\\olfileid{pl}{prf}{ntd}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{prf}{ntd}",
+        "\\olfileid{pl}{prf}{ntd}"
+      ],
+      "tokens_source": {
+        "!!^a{derivation}": 1,
+        "!!a{derivation}": 6,
+        "!!{derivation}": 5,
+        "!!{derive}": 1,
+        "!!{discharged}": 2,
+        "!!{discharge}": 1,
+        "!!{formula}": 1,
+        "!!{formula}s": 4,
+        "!!{sentence}": 3,
+        "!!{undischarged}": 3
+      },
+      "tokens_target": {
+        "!!^a{derivation}": 1,
+        "!!a{derivation}": 6,
+        "!!{derivation}": 5,
+        "!!{derive}": 1,
+        "!!{discharged}": 2,
+        "!!{discharge}": 1,
+        "!!{formula}": 1,
+        "!!{formula}s": 4,
+        "!!{sentence}": 3,
+        "!!{undischarged}": 3
+      },
+      "math_source": [
+        "$\\Intro{\\lif}$",
+        "$\\Elim{\\lor}$",
+        "$\\Elim{\\land}$",
+        "$!A\\land!B$",
+        "$!A$",
+        "$!B$",
+        "$!B$",
+        "$!A$",
+        "$\\Intro{\\lif}$",
+        "$!A\\lif!B$",
+        "$!A$",
+        "$\\Gamma\\Proves!A$",
+        "$!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$!A$",
+        "$\\Proves(!A\\land!B)\\lif!A$",
+        "$\\Discharge{!A\\land!B}{1}$",
+        "$!A$",
+        "$(!A\\land!B)\\lif!A$",
+        "$1$",
+        "$!A\\land!B$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves\\lfalse$"
+      ],
+      "math_target_core": [
+        "$\\Intro{\\lif}$",
+        "$\\Elim{\\lor}$",
+        "$!A\\land!B$",
+        "$!A$",
+        "$!B$",
+        "$\\Elim{\\land}$",
+        "$!A$",
+        "$!B$",
+        "$!A\\lif!B$",
+        "$!A$",
+        "$\\Intro{\\lif}$",
+        "$!A$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves!A$",
+        "$!A$",
+        "$!A$",
+        "$\\Proves(!A\\land!B)\\lif!A$",
+        "$\\Discharge{!A\\land!B}{1}$",
+        "$!A$",
+        "$(!A\\land!B)\\lif!A$",
+        "$!A\\land!B$",
+        "$1$",
+        "$\\Gamma\\Proves\\lfalse$",
+        "$\\Gamma$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2508,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: proof-systems\n% Section: natural-deduction",
+          "target_start": "% Part: first-order-logic\n% Chapter: proof-systems\n% Section: natural-deduction"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\iftag{FOL}\n      {\\olfileid{fol}{prf}{ntd}}\n      {\\olfileid{pl}{prf}{ntd}}",
+          "target_start": "\\iftag{FOL}\n      {\\olfileid{fol}{prf}{ntd}}\n      {\\olfileid{pl}{prf}{ntd}}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Natural Deduction}",
+          "target_start": "\\olsection{సహజ నిగమనం}"
+        },
+        {
+          "index": 6,
+          "source_start": "Natural deduction is !!a{derivation} system intended to mirror actual\nreasoning (especially the kind of regime",
+          "target_start": "సహజ నిగమనం, వాస్తవ తార్కిక ఆలోచనను (ముఖ్యంగా గణితశాస్త్రజ్ఞులు\nఉపయోగించే క్రమబద్ధమైన తార్కిక ఆలోచనను) ప్రతిబిం"
+        },
+        {
+          "index": 7,
+          "source_start": "One feature that distinguishes natural deduction from other\n!!{derivation} systems is its use of assumptions. ",
+          "target_start": "ఇతర !!{derivation} వ్యవస్థల నుంచి సహజ నిగమనాన్ని వేరు చేసే ఒక\nలక్షణం పరికల్పనలను ఉపయోగించడం. సహజ నిగమనంలో ఒక !"
+        },
+        {
+          "index": 8,
+          "source_start": "The relation $\\Gamma \\Proves !A$ based on natural deduction holds iff\nthere is !!a{derivation} in which $!A$~i",
+          "target_start": "$!A$ వృక్షంలోని చివరి !!{sentence}గా ఉండి, !!{undischarged}గా ఉన్న\nప్రతి ఆకు $\\Gamma$లో ఉండే ఒక !!a{derivation"
+        },
+        {
+          "index": 9,
+          "source_start": "A set~$\\Gamma$ is inconsistent iff $\\Gamma \\Proves \\lfalse$ in natural\ndeduction.  The rule \\FalseInt{} makes ",
+          "target_start": "సహజ నిగమనంలో $\\Gamma \\Proves \\lfalse$ అయితే, అప్పుడు మాత్రమే\nసమితి~$\\Gamma$ వైరుధ్యభరితమైనది. వైరుధ్యభరిత సమిత"
+        },
+        {
+          "index": 10,
+          "source_start": "Natural deduction systems were developed by Gerhard Gentzen and\nStanis\\l{}aw Ja\\'skowski in the 1930s, and lat",
+          "target_start": "సహజ నిగమన వ్యవస్థలను 1930లలో గెర్హార్డ్ గెంట్సెన్, స్టానిస్వావ్\nయాష్కోవ్స్కీ అభివృద్ధి చేశారు; తరువాత డాగ్ ప్ర"
+        },
+        {
+          "index": 11,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{prf}{ntd}",
+        "\\olfileid{pl}{prf}{ntd}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{prf}{ntd}",
+        "\\olfileid{pl}{prf}{ntd}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0067",
+      "source_path": "content/first-order-logic/proof-systems/tableaux.tex",
+      "source_sha256": "8c9db50bcbc7a4aa757b8d57796b2e51df04b1cabb61f46756a79f72a1780b8f",
+      "translation_sha256": "bf83c8959eea0ca83b52e89e193e8482b93ad91384eea74bc89bafc65441927b",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{prf}{tab}",
+        "\\olfileid{pl}{prf}{tab}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{prf}{tab}",
+        "\\olfileid{pl}{prf}{tab}"
+      ],
+      "tokens_source": {
+        "!!^a{signed formula}": 1,
+        "!!^a{tableau}": 2,
+        "!!^{tableau}s": 2,
+        "!!a{sentence}": 1,
+        "!!a{tableau}": 2,
+        "!!{derivation}": 2,
+        "!!{formula}s": 1,
+        "!!{sentence}s": 2,
+        "!!{signed\n  formula}s": 1,
+        "!!{signed formula}": 1,
+        "!!{signed formula}s": 9,
+        "!!{structure}": 1,
+        "!!{structure}s": 1,
+        "!!{tableau}": 8,
+        "!!{tableau}s": 3
+      },
+      "tokens_target": {
+        "!!^a{signed formula}": 1,
+        "!!^a{tableau}": 2,
+        "!!^{tableau}s": 2,
+        "!!a{sentence}": 1,
+        "!!a{tableau}": 2,
+        "!!{derivation}": 2,
+        "!!{formula}s": 1,
+        "!!{sentence}s": 2,
+        "!!{signed\n  formula}s": 1,
+        "!!{signed formula}": 1,
+        "!!{signed formula}s": 9,
+        "!!{structure}": 1,
+        "!!{structure}s": 1,
+        "!!{tableau}": 8,
+        "!!{tableau}s": 3
+      },
+      "math_source": [
+        "$\\True$",
+        "$\\False$",
+        "\\[\\sFmla{\\True}{!A}\\sFmla{\\False}{!A}.\\]",
+        "$\\TRule{\\True}{\\land}$",
+        "$\\sFmla{\\True}{!A\\land!B}$",
+        "$\\sFmla{\\True}{!A}$",
+        "$\\sFmla{\\True}{!B}$",
+        "$\\sFmla{\\True}{!A\\land!B}$",
+        "$\\TRule{\\False}{!A\\land!B}$",
+        "$\\sFmla{\\False}{!A}$",
+        "$\\sFmla{\\False}{!B}$",
+        "$\\sFmla{\\True}{!A}$",
+        "$\\sFmla{\\False}{!A}$",
+        "$\\Proves$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma_0=\\{!B_1,\\dots,!B_n\\}\\subseteq\\Gamma$",
+        "\\[\\{\\sFmla{\\False}{!A},\\sFmla{\\True}{!B_1},\\dots,\\sFmla{\\True}{!B_n}\\}\\]",
+        "$\\Proves(!A\\land!B)\\lif!A$",
+        "$\\Gamma$",
+        "\\[\\{\\sFmla{\\True}{!B_1},\\dots,\\sFmla{\\True}{!B_n}\\}\\]",
+        "$!B_i\\in\\Gamma$"
+      ],
+      "math_target_core": [
+        "$\\True$",
+        "$\\False$",
+        "\\[\\sFmla{\\True}{!A}\\sFmla{\\False}{!A}.\\]",
+        "$\\TRule{\\True}{\\land}$",
+        "$\\sFmla{\\True}{!A\\land!B}$",
+        "$\\sFmla{\\True}{!A\\land!B}$",
+        "$\\sFmla{\\True}{!A}$",
+        "$\\sFmla{\\True}{!B}$",
+        "$\\TRule{\\False}{\\land}$",
+        "$\\sFmla{\\False}{!A}$",
+        "$\\sFmla{\\False}{!B}$",
+        "$\\sFmla{\\True}{!A}$",
+        "$\\sFmla{\\False}{!A}$",
+        "$\\Proves$",
+        "$\\Gamma_0=\\{!B_1,\\dots,!B_n\\}\\subseteq\\Gamma$",
+        "$\\Gamma\\Proves!A$",
+        "\\[\\{\\sFmla{\\False}{!A},\\sFmla{\\True}{!B_1},\\dots,\\sFmla{\\True}{!B_n}\\}\\]",
+        "$\\Proves(!A\\land!B)\\lif!A$",
+        "$!B_i\\in\\Gamma$",
+        "$\\Gamma$",
+        "\\[\\{\\sFmla{\\True}{!B_1},\\dots,\\sFmla{\\True}{!B_n}\\}\\]"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$\\TRule{\\False}{!A\\land!B}$"
+      ],
+      "math_delta_target_only": [
+        "$\\TRule{\\False}{\\land}$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTEPRF-002",
+        "OLTEPRF-003",
+        "OLTEPRF-004"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2124,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: proof-systems\n% Section: tableaux",
+          "target_start": "% Part: first-order-logic\n% Chapter: proof-systems\n% Section: tableaux"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\iftag{FOL}\n      {\\olfileid{fol}{prf}{tab}}\n      {\\olfileid{pl}{prf}{tab}}",
+          "target_start": "\\iftag{FOL}\n      {\\olfileid{fol}{prf}{tab}}\n      {\\olfileid{pl}{prf}{tab}}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{\\usetoken{P}{tableau}}",
+          "target_start": "\\olsection{\\usetoken{P}{tableau}}"
+        },
+        {
+          "index": 6,
+          "source_start": "While many !!{derivation} systems operate with arrangements of\n!!{sentence}s, !!{tableau}s operate with !!{sig",
+          "target_start": "అనేక !!{derivation} వ్యవస్థలు !!{sentence}s అమరికలతో పనిచేస్తే,\n!!{tableau}s అనేవి !!{signed formula}s అనే చిహ"
+        },
+        {
+          "index": 7,
+          "source_start": "A rule applied to a complex !!{signed formula} results in the addition\nof !!{signed formula}s which are immedi",
+          "target_start": "ఒక సంక్లిష్ట !!{signed formula}కు నియమాన్ని వర్తింపజేస్తే, దాని\nతక్షణ ఉప-!!{formula}s అయిన !!{signed formula}s"
+        },
+        {
+          "index": 8,
+          "source_start": "The $\\Proves$ relation based on !!{tableau}s is defined as follows:\n$\\Gamma \\Proves !A$ iff there is some fini",
+          "target_start": "!!{tableau}s ఆధారంగా $\\Proves$ సంబంధాన్ని ఇలా నిర్వచిస్తాం:\n$\\Gamma_0 = \\{!B_1, \\dots, !B_n\\} \\subseteq \\Gamma"
+        },
+        {
+          "index": 9,
+          "source_start": "A set $\\Gamma$ is inconsistent in the !!{tableau} calculus if there is\na closed !!{tableau} for assumptions\n\\[",
+          "target_start": "ప్రతి సూచికకు $!B_i \\in \\Gamma$ అయి, కింది పరికల్పనలకు ఒక సంవృత\n!!{tableau} ఉంటే, సమితి $\\Gamma$ !!{tableau} క"
+        },
+        {
+          "index": 10,
+          "source_start": "!!^{tableau}s were invented in the 1950s independently by Evert\nBeth and Jaakko Hintikka, and simplified and p",
+          "target_start": "1950లలో ఎవర్ట్ బెత్, యాకో హింటిక్కా ఒకరికొకరు స్వతంత్రంగా\n!!^{tableau}sను కనుగొన్నారు; రేమండ్ స్మల్యన్ వాటిని "
+        },
+        {
+          "index": 11,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{prf}{tab}",
+        "\\olfileid{pl}{prf}{tab}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{prf}{tab}",
+        "\\olfileid{pl}{prf}{tab}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0068",
+      "source_path": "content/first-order-logic/proof-systems/axiomatic-deduction.tex",
+      "source_sha256": "b9637a6a1cee29ebba2f8d2cdf238d4567d8ec4b7995607abcb0ee1aef0570b9",
+      "translation_sha256": "61671900831805aafe8b248de633b0d2c232568c311f5eaa57353d8dfaf8495c",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{prf}{axd}",
+        "\\olfileid{pl}{prf}{axd}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{prf}{axd}",
+        "\\olfileid{pl}{prf}{axd}"
+      ],
+      "tokens_source": {
+        "!!a{derivation}": 5,
+        "!!a{element}": 1,
+        "!!a{sentence}": 1,
+        "!!{derivation}": 6,
+        "!!{derivation}s": 5,
+        "!!{sentence}": 7,
+        "!!{sentence}s": 4
+      },
+      "tokens_target": {
+        "!!a{derivation}": 5,
+        "!!a{element}": 1,
+        "!!a{sentence}": 1,
+        "!!{derivation}": 6,
+        "!!{derivation}s": 5,
+        "!!{sentence}": 7,
+        "!!{sentence}s": 4
+      },
+      "math_source": [
+        "$!A$",
+        "$!A$",
+        "$!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$!A$",
+        "\\[!A\\lif(!B\\lif!A)\\qquad!B\\lif(!B\\lor!C)\\qquad(!B\\land!C)\\lif!B\\]",
+        "$\\lif$",
+        "$\\lor$",
+        "$\\land$",
+        "$!A$",
+        "$!A\\lif!B$",
+        "$!B$",
+        "$!B$",
+        "$!A$",
+        "$!A\\lif!B$",
+        "$!A$",
+        "$!B$",
+        "$\\Proves$",
+        "$\\Gamma\\Proves!A$",
+        "$!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$!A$",
+        "$\\Gamma$",
+        "$\\Proves!A\\lif(!B\\lif(!B\\lor!A))$",
+        "$!B\\lif(!B\\lor!A)$",
+        "$(!B\\lif(!B\\lor!A))\\lif(!A\\lif(!B\\lif(!B\\lor!A)))$",
+        "$!A\\lif(!B\\lif(!B\\lor!A))$",
+        "$!A\\lif(!A\\lor!B)$",
+        "$!A$",
+        "$!B$",
+        "$!A\\lif(!B\\lif!A)$",
+        "$!D$",
+        "$!C\\lif!D$",
+        "$!C$",
+        "$!B\\lif(!B\\lor!A)$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves\\lfalse$",
+        "$\\lfalse\\lif!A$",
+        "$!A$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves!A$",
+        "$!A$"
+      ],
+      "math_target_core": [
+        "$!A$",
+        "$!A$",
+        "$!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$!A$",
+        "\\[!A\\lif(!B\\lif!A)\\qquad!B\\lif(!B\\lor!C)\\qquad(!B\\land!C)\\lif!B\\]",
+        "$\\lif$",
+        "$\\lor$",
+        "$\\land$",
+        "$!A$",
+        "$!A\\lif!B$",
+        "$!B$",
+        "$!A$",
+        "$!A$",
+        "$!A\\lif!B$",
+        "$!B$",
+        "$!B$",
+        "$\\Proves$",
+        "$!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$!A$",
+        "$!A$",
+        "$\\Proves!A\\lif(!B\\lif(!B\\lor!A))$",
+        "$!B\\lif(!B\\lor!A)$",
+        "$(!B\\lif(!B\\lor!A))\\lif(!A\\lif(!B\\lif(!B\\lor!A)))$",
+        "$!A\\lif(!B\\lif(!B\\lor!A))$",
+        "$!A\\lif(!A\\lor!B)$",
+        "$!A$",
+        "$!B$",
+        "$!A\\lif(!B\\lif!A)$",
+        "$!D$",
+        "$!C\\lif!D$",
+        "$!C$",
+        "$!B\\lif(!B\\lor!A)$",
+        "$\\Gamma\\Proves\\lfalse$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\lfalse\\lif!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma\\Proves!A$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1924,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: proof-systems\n% Section: axiomatic-deduction",
+          "target_start": "% Part: first-order-logic\n% Chapter: proof-systems\n% Section: axiomatic-deduction"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\iftag{FOL}\n      {\\olfileid{fol}{prf}{axd}}\n      {\\olfileid{pl}{prf}{axd}}",
+          "target_start": "\\iftag{FOL}\n      {\\olfileid{fol}{prf}{axd}}\n      {\\olfileid{pl}{prf}{axd}}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Axiomatic \\usetoken{P}{derivation}}",
+          "target_start": "\\olsection{స్వీకృతాధారిత \\usetoken{P}{derivation}}"
+        },
+        {
+          "index": 6,
+          "source_start": "Axiomatic !!{derivation}s are the oldest and simplest logical\n!!{derivation} systems. Its !!{derivation}s are ",
+          "target_start": "స్వీకృతాధారిత !!{derivation}s అత్యంత పాతవి, అత్యంత సరళమైన తార్కిక\n!!{derivation} వ్యవస్థలు. వాటిలోని !!{deriva"
+        },
+        {
+          "index": 7,
+          "source_start": "A rule of inference is a conditional statement that gives a sufficient\ncondition for !!a{sentence} in !!a{deri",
+          "target_start": "నిగమన నియమం అంటే, !!a{derivation}లో ఒక !!a{sentence}కు సమర్థన\nఉండటానికి సరిపోయే షరతును ఇచ్చే షరతీయ ప్రకటన. మోడ"
+        },
+        {
+          "index": 8,
+          "source_start": "The $\\Proves$ relation based on axiomatic !!{derivation}s is defined\nas follows: $\\Gamma \\Proves !A$ iff there",
+          "target_start": "స్వీకృతాధారిత !!{derivation}s ఆధారంగా $\\Proves$ సంబంధాన్ని ఇలా\nనిర్వచిస్తాం: చివరి సూత్రంగా !!{sentence}~$!A$ "
+        },
+        {
+          "index": 9,
+          "source_start": "A set $\\Gamma$ is inconsistent if $\\Gamma \\Proves \\lfalse$. A complete\naxiom system will also prove that $\\lfa",
+          "target_start": "$\\Gamma \\Proves \\lfalse$ అయితే సమితి $\\Gamma$ వైరుధ్యభరితమైనది.\nసంపూర్ణమైన స్వీకృత వ్యవస్థ ఏ $!A$కైనా $\\lfalse"
+        },
+        {
+          "index": 10,
+          "source_start": "Systems of axiomatic !!{derivation}s for logic were first given by\nGottlob Frege in his 1879 \\emph{Begriffssch",
+          "target_start": "తర్కానికి స్వీకృతాధారిత !!{derivation}s వ్యవస్థలను మొదట గాట్లోబ్\nఫ్రేగె తన 1879 నాటి \\emph{Begriffsschrift}లో "
+        },
+        {
+          "index": 11,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{prf}{axd}",
+        "\\olfileid{pl}{prf}{axd}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{prf}{axd}",
+        "\\olfileid{pl}{prf}{axd}"
+      ],
+      "protected_identifier_parity": true
+    }
+  ]
+}
