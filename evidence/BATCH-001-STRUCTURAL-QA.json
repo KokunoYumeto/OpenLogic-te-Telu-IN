@@ -1,0 +1,1670 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-04T16:05:58.445Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Intertext prose is masked while its inline math remains checked.",
+  "units": [
+    {
+      "unit_id": "OLP-0004",
+      "source_path": "content/sets-functions-relations/sets/sets.tex",
+      "source_sha256": "98a8964a95d72ab3004decdef3ee74f1dd1f221dd06dfc0e6d44eff52104f277",
+      "translation_sha256": "5768f944fe7c03ca5943d7630ea9e60003d55a8b85de1ef14b392a782f3eac1f",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport{basics}",
+        "\\olimport{subsets}",
+        "\\olimport{important-sets}",
+        "\\olimport{unions-and-intersections}",
+        "\\olimport{pairs-and-products}",
+        "\\olimport{russells-paradox}"
+      ],
+      "identifiers_target": [
+        "\\olimport{basics}",
+        "\\olimport{subsets}",
+        "\\olimport{important-sets}",
+        "\\olimport{unions-and-intersections}",
+        "\\olimport{pairs-and-products}",
+        "\\olimport{russells-paradox}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target": [],
+      "math_multiset_match": true,
+      "telugu_chars": 7,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: sets",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: sets"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olchapter{sfr}{set}{Sets}",
+          "target_start": "\\olchapter{sfr}{set}{సమితులు}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olimport{basics}",
+          "target_start": "\\olimport{basics}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport{subsets}",
+          "target_start": "\\olimport{subsets}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport{important-sets}",
+          "target_start": "\\olimport{important-sets}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\olimport{unions-and-intersections}",
+          "target_start": "\\olimport{unions-and-intersections}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport{pairs-and-products}",
+          "target_start": "\\olimport{pairs-and-products}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\olimport{russells-paradox}",
+          "target_start": "\\olimport{russells-paradox}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\OLEndChapterHook",
+          "target_start": "\\OLEndChapterHook"
+        },
+        {
+          "index": 12,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{sfr}{set}",
+        "\\olimport{basics}",
+        "\\olimport{subsets}",
+        "\\olimport{important-sets}",
+        "\\olimport{unions-and-intersections}",
+        "\\olimport{pairs-and-products}",
+        "\\olimport{russells-paradox}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{sfr}{set}",
+        "\\olimport{basics}",
+        "\\olimport{subsets}",
+        "\\olimport{important-sets}",
+        "\\olimport{unions-and-intersections}",
+        "\\olimport{pairs-and-products}",
+        "\\olimport{russells-paradox}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0005",
+      "source_path": "content/sets-functions-relations/sets/basics.tex",
+      "source_sha256": "232ff51f51e74fcfee836650f3c597b54bf10ba5363c648a0c05fe8222e4a865",
+      "translation_sha256": "3d76307b46524e2184a721c9d1317b7232c9141d6a44078354e3e4b334b2d3b0",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{set}{bas}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{set}{bas}"
+      ],
+      "tokens_source": {
+        "!!a{element}": 3,
+        "!!{element}": 2,
+        "!!{element}s": 9
+      },
+      "tokens_target": {
+        "!!a{element}": 3,
+        "!!{element}": 2,
+        "!!{element}s": 9
+      },
+      "math_source": [
+        "$x$",
+        "$A$",
+        "$x\\inA$",
+        "$x\\notinA$",
+        "$\\emptyset$",
+        "$A$",
+        "$B$",
+        "$A=B$",
+        "$A$",
+        "$B$",
+        "$a_{1}$",
+        "$a_{n}$",
+        "$\\{a_{1},\\dots,a_{n}\\}$",
+        "$a_1,\\ldots,a_n$",
+        "\\[\\{a,a,b\\}=\\{a,b\\}=\\{b,a\\}.\\]",
+        "$S=\\{\\textrm{Ruth}\\}$",
+        "$4$",
+        "$\\{1,2,3\\}$",
+        "$\\{3,2,1\\}$",
+        "$\\{1,2,1,2,3\\}$",
+        "$\\{1,2,3\\}$",
+        "$\\{3,2,1\\}$",
+        "$\\{1,2,1,2,3\\}$",
+        "$\\Setabs{x}{\\phi(x)}$",
+        "$\\phi(x)$",
+        "$x$",
+        "$S$",
+        "\\[S=\\Setabs{x}{x}.\\]",
+        "$6$",
+        "$1$",
+        "$2$",
+        "$3$",
+        "$6=1+2+3$",
+        "$6$",
+        "$10$",
+        "\\[\\{6\\}=\\Setabs{x}{x0\\leqx\\leq10}\\]",
+        "$x$",
+        "$x$",
+        "$0\\leqx\\leq10$",
+        "$x$",
+        "$\\phi(x)$",
+        "$\\Setabs{x}{\\phi(x)}$",
+        "$x$",
+        "$\\phi(x)$",
+        "$A=B$",
+        "$x\\inA$",
+        "$x\\inB$",
+        "$y\\inB$",
+        "$y\\inA$",
+        "$A$",
+        "$B$",
+        "$A=B$"
+      ],
+      "math_target": [
+        "$x$",
+        "$A$",
+        "$x\\inA$",
+        "$x\\notinA$",
+        "$\\emptyset$",
+        "$A$",
+        "$B$",
+        "$A=B$",
+        "$A$",
+        "$B$",
+        "$a_{1}$",
+        "$a_{n}$",
+        "$\\{a_{1},\\dots,a_{n}\\}$",
+        "$a_1,\\ldots,a_n$",
+        "\\[\\{a,a,b\\}=\\{a,b\\}=\\{b,a\\}.\\]",
+        "$S=\\{\\textrm{Ruth}\\}$",
+        "$4$",
+        "$\\{1,2,3\\}$",
+        "$\\{3,2,1\\}$",
+        "$\\{1,2,1,2,3\\}$",
+        "$\\{1,2,3\\}$",
+        "$\\{3,2,1\\}$",
+        "$\\{1,2,1,2,3\\}$",
+        "$\\Setabs{x}{\\phi(x)}$",
+        "$\\phi(x)$",
+        "$x$",
+        "$S$",
+        "\\[S=\\Setabs{x}{x}.\\]",
+        "$6$",
+        "$1$",
+        "$2$",
+        "$3$",
+        "$6=1+2+3$",
+        "$10$",
+        "$6$",
+        "\\[\\{6\\}=\\Setabs{x}{x0\\leqx\\leq10}\\]",
+        "$x$",
+        "$0\\leqx\\leq10$",
+        "$x$",
+        "$\\phi(x)$",
+        "$x$",
+        "$\\Setabs{x}{\\phi(x)}$",
+        "$\\phi(x)$",
+        "$x$",
+        "$A=B$",
+        "$x\\inA$",
+        "$x\\inB$",
+        "$y\\inB$",
+        "$y\\inA$",
+        "$A$",
+        "$B$",
+        "$A=B$"
+      ],
+      "math_multiset_match": true,
+      "telugu_chars": 2051,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: sets\n% Section: basics",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: sets\n% Section: basics"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sfr}{set}{bas}\n\\olsection{Extensionality}",
+          "target_start": "\\olfileid{sfr}{set}{bas}\n\\olsection{మూలకాధారిత సమానత్వం}"
+        },
+        {
+          "index": 5,
+          "source_start": "A \\emph{set} is a collection of objects, considered {as} a single\nobject. The objects making up the set are ca",
+          "target_start": "వస్తువుల సమూహాన్ని {ఒకే} వస్తువుగా పరిగణించినప్పుడు దానిని\n\\emph{సమితి} అంటాం. ఆ సమితిని ఏర్పరచే వస్తువులను దా"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{explain}\nIt does not matter how we \\emph{specify} the set, or how we\n\\emph{order} its !!{element}s, or ",
+          "target_start": "\\begin{explain}\nసమితిని ఏ విధంగా \\emph{నిర్దేశించాం}, దాని\n\\tecase{acc}{!!{element}s} ఏ \\emph{క్రమంలో} పేర్కొన"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}[Extensionality]\n  If $A$ and $B$ are sets, then $A = B$ iff\n  every !!{element} of~$A$ is also !!",
+          "target_start": "\\begin{defn}[మూలకాధారిత సమానత్వం]\n  $A$, $B$ సమితులైతే, $A = B$ కావడానికి అవసరమైన మరియు సరిపడే\n  షరతు: $A$లోని"
+        },
+        {
+          "index": 8,
+          "source_start": "Extensionality licenses some notation. In general, when we have some\nobjects $a_{1}$, \\dots, $a_{n}$, then $\\{",
+          "target_start": "మూలకాధారిత సమానత్వం కొన్ని సంకేతాలను వాడటానికి ఆధారమిస్తుంది.\nసాధారణంగా $a_{1}$, \\dots, $a_{n}$ అనే వస్తువులు "
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{tagblock}{novice}\n\\begin{ex}\nWhenever you have a bunch of objects, you can collect them together in\na s",
+          "target_start": "\\begin{tagblock}{novice}\n\\begin{ex}\nకొన్ని వస్తువులు ఉన్నప్పుడు వాటిని ఒక సమితిగా సమీకరించవచ్చు.\nఉదాహరణకు, రిచ"
+        },
+        {
+          "index": 10,
+          "source_start": "Frequently we'll specify a set by some property that its !!{element}s\nshare. We'll use the following shorthand",
+          "target_start": "తరచుగా ఒక సమితిలోని !!{element}s అన్నింటికీ ఉమ్మడిగా ఉన్న\nధర్మం ద్వారా ఆ సమితిని నిర్దేశిస్తాం. ఇందుకు\n$\\Setab"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{tagblock}{novice}\n\\begin{ex}\nIn our example, we could have specified $S$ also as\n\\[\nS = \\Setabs{x}{x \\t",
+          "target_start": "\\begin{tagblock}{novice}\n\\begin{ex}\nమన ఉదాహరణలో $S$ను ఇలా కూడా నిర్దేశించవచ్చు:\n\\[\nS = \\Setabs{x}{x \\text{ రిచ"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{tagblock}{math}\n\\begin{ex}\nA number is called \\emph{perfect} iff it is equal to the sum of its\nproper d",
+          "target_start": "\\begin{tagblock}{math}\n\\begin{ex}\nఒక సంఖ్య తన నిజ భాజకాల మొత్తానికి సమానమైతే, అప్పుడే దానిని\n\\emph{పరిపూర్ణ} స"
+        },
+        {
+          "index": 13,
+          "source_start": "Extensionality gives us a way for showing that sets are identical: to\nshow that $A = B$, show that whenever $x",
+          "target_start": "రెండు సమితులు ఒకటేనని చూపే పద్ధతిని మూలకాధారిత సమానత్వం ఇస్తుంది:\n$A = B$ అని చూపాలంటే, $x \\in A$ అయినప్పుడల్ల"
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{prob}\nProve that there is at most one empty set, i.e., show that if $A$ and $B$\nare sets without !!{ele",
+          "target_start": "\\begin{prob}\nశూన్య సమితి మహా అయితే ఒక్కటే ఉండగలదని నిరూపించండి. అంటే,\n!!{element}s ఏవీ లేని సమితులు $A$, $B$ అ"
+        },
+        {
+          "index": 15,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{set}{bas}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{set}{bas}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0006",
+      "source_path": "content/sets-functions-relations/sets/subsets.tex",
+      "source_sha256": "63d819c246577b3bfd8ba2a933f114b58c6549bdc4fa6ea8ffa8ab07c7fed4b7",
+      "translation_sha256": "a62db2557caf16e095f13a8d311332df66f361c864189b90e6cadaa415e03a9a",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{set}{sub}",
+        "\\ollabel{forallxina}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{set}{sub}",
+        "\\ollabel{forallxina}"
+      ],
+      "tokens_source": {
+        "!!a{element}": 6,
+        "!!{element}": 6,
+        "!!{element}s": 2
+      },
+      "tokens_target": {
+        "!!a{element}": 6,
+        "!!{element}": 6,
+        "!!{element}s": 2
+      },
+      "math_source": [
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$A\\subseteqB$",
+        "$A$",
+        "$B$",
+        "$A\\not\\subseteqB$",
+        "$A\\subseteqB$",
+        "$A\\neqB$",
+        "$A\\subsetneqB$",
+        "$A$",
+        "$B$",
+        "$\\emptyset$",
+        "$\\{a,b\\}\\subseteq\\{a,b,c\\}$",
+        "$\\{a,b,e\\}$",
+        "$\\{a,b,c\\}$",
+        "$2$",
+        "$\\{0\\}\\in\\{0,\\{0\\}\\}$",
+        "$\\{0\\}\\subseteq\\{0,\\{0\\}\\}$",
+        "$A=B$",
+        "$A$",
+        "$B$",
+        "$A\\subseteqB$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$B\\subseteqA$",
+        "$B$",
+        "$A$",
+        "$A=B$",
+        "$A\\subseteqB$",
+        "$B\\subseteqA$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$\\dots$",
+        "$B$",
+        "$(\\forallx\\inA)\\phi$",
+        "$\\forallx(x\\inA\\lif\\phi)$",
+        "$(\\existsx\\inA)\\phi$",
+        "$\\existsx(x\\inA\\land\\phi)$",
+        "$A\\subseteqB$",
+        "$(\\forallx\\inA)x\\inB$",
+        "$A$",
+        "$A$",
+        "$\\Pow{A}$",
+        "\\[\\Pow{A}=\\Setabs{B}{B\\subseteqA}\\]",
+        "$\\{a,b,c\\}$",
+        "$\\emptyset$",
+        "$\\{a\\}$",
+        "$\\{b\\}$",
+        "$\\{c\\}$",
+        "$\\{a,b\\}$",
+        "$\\{a,c\\}$",
+        "$\\{b,c\\}$",
+        "$\\{a,b,c\\}$",
+        "$\\Pow{\\{a,b,c\\}}$",
+        "\\[\\Pow{\\{a,b,c\\}}=\\{\\emptyset,\\{a\\},\\{b\\},\\{c\\},\\{a,b\\},\\{b,c\\},\\{a,c\\},\\{a,b,c\\}\\}\\]",
+        "$\\{a,b,c,d\\}$",
+        "$A$",
+        "$n$",
+        "$\\Pow{A}$",
+        "$2^n$"
+      ],
+      "math_target": [
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$A\\subseteqB$",
+        "$A$",
+        "$B$",
+        "$A\\not\\subseteqB$",
+        "$A\\subseteqB$",
+        "$A\\neqB$",
+        "$A\\subsetneqB$",
+        "$A$",
+        "$B$",
+        "$\\emptyset$",
+        "$\\{a,b\\}\\subseteq\\{a,b,c\\}$",
+        "$\\{a,b,e\\}$",
+        "$\\{a,b,c\\}$",
+        "$2$",
+        "$\\{0\\}\\in\\{0,\\{0\\}\\}$",
+        "$\\{0\\}\\subseteq\\{0,\\{0\\}\\}$",
+        "$A=B$",
+        "$A$",
+        "$B$",
+        "$A\\subseteqB$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$B\\subseteqA$",
+        "$B$",
+        "$A$",
+        "$A=B$",
+        "$A\\subseteqB$",
+        "$B\\subseteqA$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$\\dots$",
+        "$B$",
+        "$(\\forallx\\inA)\\phi$",
+        "$\\forallx(x\\inA\\lif\\phi)$",
+        "$(\\existsx\\inA)\\phi$",
+        "$\\existsx(x\\inA\\land\\phi)$",
+        "$A\\subseteqB$",
+        "$(\\forallx\\inA)x\\inB$",
+        "$A$",
+        "$A$",
+        "$\\Pow{A}$",
+        "\\[\\Pow{A}=\\Setabs{B}{B\\subseteqA}\\]",
+        "$\\{a,b,c\\}$",
+        "$\\emptyset$",
+        "$\\{a\\}$",
+        "$\\{b\\}$",
+        "$\\{c\\}$",
+        "$\\{a,b\\}$",
+        "$\\{a,c\\}$",
+        "$\\{b,c\\}$",
+        "$\\{a,b,c\\}$",
+        "$\\Pow{\\{a,b,c\\}}$",
+        "\\[\\Pow{\\{a,b,c\\}}=\\{\\emptyset,\\{a\\},\\{b\\},\\{c\\},\\{a,b\\},\\{b,c\\},\\{a,c\\},\\{a,b,c\\}\\}\\]",
+        "$\\{a,b,c,d\\}$",
+        "$A$",
+        "$n$",
+        "$\\Pow{A}$",
+        "$2^n$"
+      ],
+      "math_multiset_match": true,
+      "telugu_chars": 1560,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: sets\n% Section: subsets",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: sets\n% Section: subsets"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sfr}{set}{sub}\n\\olsection{Subsets and Power Sets}",
+          "target_start": "\\olfileid{sfr}{set}{sub}\n\\olsection{ఉపసమితులు, ఘాత సమితులు}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{explain}\nWe will often want to compare sets. And one obvious kind of comparison\none might make is as fo",
+          "target_start": "\\begin{explain}\nసమితులను పోల్చవలసిన సందర్భాలు తరచూ వస్తాయి. ఒక సహజమైన పోలిక\nఇలా ఉంటుంది: \\emph{ఒక సమితిలో ఉన్న"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}[Subset]\nIf every !!{element} of a set $A$ is also !!a{element} of~$B$, then we\nsay that $A$ is a ",
+          "target_start": "\\begin{defn}[ఉపసమితి]\n$A$ అనే సమితిలోని ప్రతి !!{element}, $B$లో కూడా !!a{element}\nఅయితే, $A$ను $B$ యొక్క \\emp"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{ex}\nEvery set is a subset of itself, and $\\emptyset$ is a subset of every\nset. The set of natural even ",
+          "target_start": "\\begin{ex}\nప్రతి సమితీ తనకు తానే ఉపసమితి. అలాగే $\\emptyset$ ప్రతి సమితికీ\nఉపసమితి. సరి సహజ సంఖ్యల సమితి సహజ సం"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{ex}\nThe number $2$ is an !!{element} of the set of integers, whereas the\nset of even numbers is a subse",
+          "target_start": "\\begin{ex}\n$2$ అనే సంఖ్య పూర్ణ సంఖ్యల సమితిలో !!{element}; సరి సంఖ్యల\nసమితి మాత్రం పూర్ణ సంఖ్యల సమితికి ఉపసమిత"
+        },
+        {
+          "index": 9,
+          "source_start": "Extensionality gives a criterion of identity for sets: $A = B$ iff\nevery !!{element} of~$A$ is also !!a{elemen",
+          "target_start": "సమితులు ఒకటే కావడానికి మూలకాధారిత సమానత్వం ఒక ప్రమాణాన్ని ఇస్తుంది:\n$A = B$ కావడానికి అవసరమైన మరియు సరిపడే షరత"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{prop}\n$A = B$ iff both $A \\subseteq B$ and $B \\subseteq A$.\n\\end{prop}",
+          "target_start": "\\begin{prop}\n$A = B$ కావడానికి అవసరమైన మరియు సరిపడే షరతులు\n$A \\subseteq B$, $B \\subseteq A$ రెండూ నెరవేరడం.\n\\e"
+        },
+        {
+          "index": 11,
+          "source_start": "Now is also a good opportunity to introduce some further bits of\nhelpful notation. In defining when $A$ is a s",
+          "target_start": "ఇక్కడ మరికొన్ని ఉపయోగకరమైన సంకేతాలను పరిచయం చేద్దాం.\n$A$ అనేది $B$కు ఉపసమితి ఎప్పుడవుతుందో నిర్వచించేటప్పుడు,\n"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{defn}\\ollabel{forallxina}\n$(\\forall x \\in A)\\phi$ abbreviates $\\forall x(x \\in A \\lif\n\\phi)$. Similarly",
+          "target_start": "\\begin{defn}\\ollabel{forallxina}\n$(\\forall x \\in A)\\phi$ అనేది $\\forall x(x \\in A \\lif\n\\phi)$కు సంక్షిప్త రూపం"
+        },
+        {
+          "index": 13,
+          "source_start": "Using this notation, we can say that $A \\subseteq B$ iff $(\\forall\nx \\in A)x \\in B$. ",
+          "target_start": "ఈ సంకేతంతో, $A \\subseteq B$ కావడానికి అవసరమైన మరియు సరిపడే\nషరతు $(\\forall x \\in A)x \\in B$ అని చెప్పవచ్చు."
+        },
+        {
+          "index": 14,
+          "source_start": "Now we move on to considering a certain kind of set: the set of all\nsubsets of a given set. ",
+          "target_start": "ఇప్పుడు ఇచ్చిన సమితి యొక్క ఉపసమితులన్నింటితో ఏర్పడే సమితిని పరిశీలిద్దాం."
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{defn}[Power Set]\nThe set consisting of all subsets of a set~$A$ is called the\n\\emph{power set of}~$A$, ",
+          "target_start": "\\begin{defn}[ఘాత సమితి]\n$A$ అనే సమితికి గల ఉపసమితులన్నింటితో ఏర్పడే సమితిని\n$A$ యొక్క \\emph{ఘాత సమితి} అని పిల"
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{ex}\nWhat are all the possible subsets of $\\{ a, b, c \\}$? They are:\n$\\emptyset$, $\\{a \\}$, $\\{b\\}$, $\\{",
+          "target_start": "\\begin{ex}\n$\\{ a, b, c \\}$కు గల ఉపసమితులన్నీ ఏవి? అవి:\n$\\emptyset$, $\\{a \\}$, $\\{b\\}$, $\\{c\\}$, $\\{a, b\\}$, $\\"
+        },
+        {
+          "index": 17,
+          "source_start": "\\begin{prob}\nList all subsets of $\\{a, b, c, d\\}$.\n\\end{prob}",
+          "target_start": "\\begin{prob}\n$\\{a, b, c, d\\}$కు గల ఉపసమితులన్నింటినీ జాబితాగా రాయండి.\n\\end{prob}"
+        },
+        {
+          "index": 18,
+          "source_start": "\\begin{prob}\nShow that if $A$ has $n$ !!{element}s, then $\\Pow{A}$ has $2^n$\n!!{element}s.\n\\end{prob}",
+          "target_start": "\\begin{prob}\n$A$లో $n$ !!{element}s ఉంటే, $\\Pow{A}$లో $2^n$ !!{element}s\nఉంటాయని చూపండి.\n\\end{prob}"
+        },
+        {
+          "index": 19,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{set}{sub}",
+        "\\ollabel{forallxina}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{set}{sub}",
+        "\\ollabel{forallxina}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0007",
+      "source_path": "content/sets-functions-relations/sets/important-sets.tex",
+      "source_sha256": "ec2115fa48ea6c6684a65bdf2f504102ca0a74b40cf88293dfc12f4ab97ada02",
+      "translation_sha256": "de6ba52339e34a408cf7a17661d6f4b0784d82eb65c5a6a0b09596e8f3578cc1",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{set}{imp}",
+        "\\oliflabeldef{sfr:arith:real:realline}",
+        "\\olref[arith][real]{realline}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{set}{imp}",
+        "\\oliflabeldef{sfr:arith:real:realline}",
+        "\\olref[arith][real]{realline}"
+      ],
+      "tokens_source": {
+        "!!a{element}": 1,
+        "!!{element}s": 3
+      },
+      "tokens_target": {
+        "!!a{element}": 1,
+        "!!{element}s": 3
+      },
+      "math_source": [
+        "\\begin{multline*}\\Nat=\\{0,1,2,3,\\ldots\\}\\\\\\shoveright{}\\\\\\shoveleft{\\Int=\\{\\ldots,-2,-1,0,1,2,\\ldots\\}}\\\\\\shoveright{}\\\\\\shoveleft{\\Rat=\\Setabs{\\nicefrac{m}{n}}{m,n\\in\\Intn\\neq0}}\\\\\\shoveright{}\\\\\\shoveleft{\\Real=(-\\infty,\\infty)}\\\\\\end{multline*}",
+        "$\\Nat\\subseteq\\Int\\subseteq\\Rat\\subseteq\\Real$",
+        "$\\Nat\\subsetneq\\Int\\subsetneq\\Rat$",
+        "$-1$",
+        "$\\nicefrac{1}{2}$",
+        "$\\Rat\\subsetneq\\Real$",
+        "$\\PosInt=\\{1,2,3,\\dots\\}$",
+        "$\\Bin=\\{0,1\\}$",
+        "$A^{*}$",
+        "$A$",
+        "$A$",
+        "$A$",
+        "$\\Lambda$",
+        "$A$",
+        "$A$",
+        "\\begin{multline*}\\Bin^*=\\{\\Lambda,0,1,00,01,10,11,\\\\000,001,010,011,100,101,110,111,0000,\\ldots\\}.\\end{multline*}",
+        "$x=x_{1}\\ldotsx_{n}\\inA^{*}$",
+        "$n$",
+        "$A$",
+        "$n$",
+        "$\\len{x}=n$",
+        "$A$",
+        "$A^\\omega$",
+        "$A$",
+        "$a_1a_2a_3a_4\\dots$",
+        "$A$"
+      ],
+      "math_target": [
+        "\\begin{multline*}\\Nat=\\{0,1,2,3,\\ldots\\}\\\\\\shoveright{}\\\\\\shoveleft{\\Int=\\{\\ldots,-2,-1,0,1,2,\\ldots\\}}\\\\\\shoveright{}\\\\\\shoveleft{\\Rat=\\Setabs{\\nicefrac{m}{n}}{m,n\\in\\Intn\\neq0}}\\\\\\shoveright{}\\\\\\shoveleft{\\Real=(-\\infty,\\infty)}\\\\\\end{multline*}",
+        "$\\Nat\\subseteq\\Int\\subseteq\\Rat\\subseteq\\Real$",
+        "$\\Nat\\subsetneq\\Int\\subsetneq\\Rat$",
+        "$-1$",
+        "$\\nicefrac{1}{2}$",
+        "$\\Rat\\subsetneq\\Real$",
+        "$\\PosInt=\\{1,2,3,\\dots\\}$",
+        "$\\Bin=\\{0,1\\}$",
+        "$A$",
+        "$A^{*}$",
+        "$A$",
+        "$A$",
+        "$A$",
+        "$A$",
+        "$\\Lambda$",
+        "\\begin{multline*}\\Bin^*=\\{\\Lambda,0,1,00,01,10,11,\\\\000,001,010,011,100,101,110,111,0000,\\ldots\\}.\\end{multline*}",
+        "$x=x_{1}\\ldotsx_{n}\\inA^{*}$",
+        "$A$",
+        "$n$",
+        "$n$",
+        "$\\len{x}=n$",
+        "$A$",
+        "$A$",
+        "$A^\\omega$",
+        "$a_1a_2a_3a_4\\dots$",
+        "$A$"
+      ],
+      "math_multiset_match": true,
+      "telugu_chars": 1063,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: sets\n% Section: important-sets",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: sets\n% Section: important-sets"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sfr}{set}{imp}\n\\olsection{Some Important Sets}",
+          "target_start": "\\olfileid{sfr}{set}{imp}\n\\olsection{కొన్ని ముఖ్యమైన సమితులు}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{ex}\nWe will mostly be dealing with sets whose !!{element}s are\nmathematical objects. Four such sets are",
+          "target_start": "\\begin{ex}\nమన పరిశీలనలో ఎక్కువగా గణిత వస్తువులు !!{element}sగా గల సమితులే\nఉంటాయి. వాటిలో నాలుగు సమితులు ప్రత్య"
+        },
+        {
+          "index": 6,
+          "source_start": "As we move through these sets, we are adding \\emph{more} numbers to\nour stock. Indeed, it should be clear that",
+          "target_start": "ఈ సమితులను వరుసగా పరిశీలిస్తే, ఒక్కో దశలో మన సంఖ్యల సమూహానికి\n\\emph{మరిన్ని} సంఖ్యలను చేర్చుతున్నాం. నిజానికి\n"
+        },
+        {
+          "index": 7,
+          "source_start": "We'll sometimes also use the set of positive integers $\\PosInt = \\{1,\n2, 3, \\dots\\}$ and the set containing ju",
+          "target_start": "కొన్నిసార్లు ధన పూర్ణ సంఖ్యల సమితి $\\PosInt = \\{1, 2, 3, \\dots\\}$ను,\nమొదటి రెండు సహజ సంఖ్యలు మాత్రమే గల $\\Bin "
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{tagblock}{compsci}\n\\begin{ex}[Strings] \nAnother interesting example  is the set $A^{*}$ of \\emph{finite",
+          "target_start": "\\begin{tagblock}{compsci}\n\\begin{ex}[సంకేతమాలలు]\nమరో ఆసక్తికరమైన ఉదాహరణ, $A$ అనే వర్ణమాలపై గల\n\\emph{పరిమిత సంక"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{ex}[Infinite sequences]\nFor any set $A$ we may also consider the set~$A^\\omega$ of infinite\nsequences o",
+          "target_start": "\\begin{ex}[అనంత క్రమాలు]\nఏ సమితి $A$కైనా, $A$లోని \\tecase{gen}{!!{element}s} అనంత క్రమాల\nసమితి $A^\\omega$ను కూ"
+        },
+        {
+          "index": 10,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{set}{imp}",
+        "\\oliflabeldef{sfr:arith:real:realline}",
+        "\\olref[arith][real]{realline}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{set}{imp}",
+        "\\oliflabeldef{sfr:arith:real:realline}",
+        "\\olref[arith][real]{realline}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0008",
+      "source_path": "content/sets-functions-relations/sets/unions-and-intersections.tex",
+      "source_sha256": "e556ac6add69b1e6d41123eb05be4adb15f2dc120a3782a721caeab42dbc4529",
+      "translation_sha256": "3c78cc0af1c2fe09b3b17d5474b7ad14ce0f8dfcc1fc8f6aae29db89fcc93a12",
+      "source_blocks": 30,
+      "target_blocks": 30,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{set}{uni}",
+        "\\olref[sfr][set][bas]{sec}",
+        "\\olref{fig:union}",
+        "\\olasset{assets/diagrams/union.tikz}",
+        "\\ollabel{fig:union}",
+        "\\olref{fig:intersection}",
+        "\\olasset{assets/diagrams/intersection.tikz}",
+        "\\ollabel{fig:intersection}",
+        "\\olref{difference}",
+        "\\olasset{assets/diagrams/difference.tikz}",
+        "\\ollabel{difference}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{set}{uni}",
+        "\\olref[sfr][set][bas]{sec}",
+        "\\olref{fig:union}",
+        "\\olasset{assets/diagrams/union.tikz}",
+        "\\ollabel{fig:union}",
+        "\\olref{fig:intersection}",
+        "\\olasset{assets/diagrams/intersection.tikz}",
+        "\\ollabel{fig:intersection}",
+        "\\olref{difference}",
+        "\\olasset{assets/diagrams/difference.tikz}",
+        "\\ollabel{difference}"
+      ],
+      "tokens_source": {
+        "!!a{element}": 2,
+        "!!{element}": 4,
+        "!!{element}s": 21
+      },
+      "tokens_target": {
+        "!!a{element}": 2,
+        "!!{element}": 4,
+        "!!{element}s": 21
+      },
+      "math_source": [
+        "$\\Setabs{x}{\\phi(x)}$",
+        "$\\phi$",
+        "$A$",
+        "$B$",
+        "$\\Setabs{x}{x\\inA\\lorx\\inB}$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$A\\cupB$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$A\\cupB$",
+        "$A$",
+        "$B$",
+        "\\[A\\cupB=\\Setabs{x}{x\\inA\\lorx\\inB}\\]",
+        "$\\{a,b,c\\}\\cup\\{a,0,1\\}=\\{a,b,c,0,1\\}$",
+        "$\\{a,b,c\\}\\cup\\{a\\}=\\{a,b,c\\}$",
+        "$\\{a,b,c\\}\\cup\\emptyset=\\{a,b,c\\}$",
+        "$A\\subseteqB$",
+        "$A\\cupB=B$",
+        "$A$",
+        "$B$",
+        "$A\\capB$",
+        "$A$",
+        "$B$",
+        "$A\\capB$",
+        "$A$",
+        "$B$",
+        "\\[A\\capB=\\Setabs{x}{x\\inA\\landx\\inB}\\]",
+        "$\\{a,b,c\\}\\cap\\{0,1\\}=\\emptyset$",
+        "$\\{a,b,c\\}\\cap\\{a,b,d\\}=\\{a,b\\}$",
+        "$\\{a,b,c\\}\\cap\\{a,b\\}=\\{a,b\\}$",
+        "$\\{a,b,c\\}\\cap\\emptyset=\\emptyset$",
+        "$A\\subseteqB$",
+        "$A\\capB=A$",
+        "$A$",
+        "$\\bigcupA$",
+        "$A$",
+        "\\begin{align*}\\bigcupA&=\\Setabs{x}{xA},\\\\&=\\Setabs{x}{B\\inAx\\inB}\\end{align*}",
+        "$A$",
+        "$\\bigcapA$",
+        "$A$",
+        "\\begin{align*}\\bigcapA&=\\Setabs{x}{xA},\\\\&=\\Setabs{x}{B\\inA,x\\inB}\\end{align*}",
+        "$A=\\{\\{a,b\\},\\{a,d,e\\},\\{a,d\\}\\}$",
+        "$\\bigcupA=\\{a,b,d,e\\}$",
+        "$\\bigcapA=\\{a\\}$",
+        "$A$",
+        "$A\\inB$",
+        "$A\\subseteq\\bigcupB$",
+        "$A_1$",
+        "$A_2$",
+        "\\begin{align*}\\bigcup_iA_i&=\\Setabs{x}{xA_i}\\\\\\bigcap_iA_i&=\\Setabs{x}{xA_i}.\\end{align*}",
+        "$I$",
+        "$A_i$",
+        "$i\\inI$",
+        "\\begin{align*}\\bigcup_{i\\inI}A_i&=\\bigcup\\Setabs{A_i}{i\\inI}\\\\\\bigcap_{i\\inI}A_i&=\\bigcap\\Setabs{A_i}{i\\inI}\\end{align*}",
+        "$A$",
+        "$B$",
+        "$A\\setminusB$",
+        "$A$",
+        "$B$",
+        "$A\\setminusB$",
+        "$A$",
+        "$B$",
+        "\\[A\\setminusB=\\Setabs{x}{x\\inAx\\notinB}.\\]",
+        "$A\\subsetneqB$",
+        "$B\\setminusA\\neq\\emptyset$"
+      ],
+      "math_target": [
+        "$\\Setabs{x}{\\phi(x)}$",
+        "$\\phi$",
+        "$A$",
+        "$B$",
+        "$\\Setabs{x}{x\\inA\\lorx\\inB}$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$A\\cupB$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$A\\cupB$",
+        "$A$",
+        "$B$",
+        "\\[A\\cupB=\\Setabs{x}{x\\inA\\lorx\\inB}\\]",
+        "$\\{a,b,c\\}\\cup\\{a,0,1\\}=\\{a,b,c,0,1\\}$",
+        "$\\{a,b,c\\}\\cup\\{a\\}=\\{a,b,c\\}$",
+        "$\\{a,b,c\\}\\cup\\emptyset=\\{a,b,c\\}$",
+        "$A\\subseteqB$",
+        "$A\\cupB=B$",
+        "$A$",
+        "$B$",
+        "$A\\capB$",
+        "$A$",
+        "$B$",
+        "$A\\capB$",
+        "$A$",
+        "$B$",
+        "\\[A\\capB=\\Setabs{x}{x\\inA\\landx\\inB}\\]",
+        "$\\{a,b,c\\}\\cap\\{0,1\\}=\\emptyset$",
+        "$\\{a,b,c\\}\\cap\\{a,b,d\\}=\\{a,b\\}$",
+        "$\\{a,b,c\\}\\cap\\{a,b\\}=\\{a,b\\}$",
+        "$\\{a,b,c\\}\\cap\\emptyset=\\emptyset$",
+        "$A\\subseteqB$",
+        "$A\\capB=A$",
+        "$A$",
+        "$\\bigcupA$",
+        "$A$",
+        "\\begin{align*}\\bigcupA&=\\Setabs{x}{xA},\\\\&=\\Setabs{x}{B\\inAx\\inB}\\end{align*}",
+        "$A$",
+        "$\\bigcapA$",
+        "$A$",
+        "\\begin{align*}\\bigcapA&=\\Setabs{x}{xA},\\\\&=\\Setabs{x}{B\\inA,x\\inB}\\end{align*}",
+        "$A=\\{\\{a,b\\},\\{a,d,e\\},\\{a,d\\}\\}$",
+        "$\\bigcupA=\\{a,b,d,e\\}$",
+        "$\\bigcapA=\\{a\\}$",
+        "$A$",
+        "$A\\inB$",
+        "$A\\subseteq\\bigcupB$",
+        "$A_1$",
+        "$A_2$",
+        "\\begin{align*}\\bigcup_iA_i&=\\Setabs{x}{xA_i}\\\\\\bigcap_iA_i&=\\Setabs{x}{xA_i}.\\end{align*}",
+        "$I$",
+        "$i\\inI$",
+        "$A_i$",
+        "\\begin{align*}\\bigcup_{i\\inI}A_i&=\\bigcup\\Setabs{A_i}{i\\inI}\\\\\\bigcap_{i\\inI}A_i&=\\bigcap\\Setabs{A_i}{i\\inI}\\end{align*}",
+        "$A$",
+        "$B$",
+        "$A\\setminusB$",
+        "$A$",
+        "$B$",
+        "$A\\setminusB$",
+        "$A$",
+        "$B$",
+        "\\[A\\setminusB=\\Setabs{x}{x\\inAx\\notinB}.\\]",
+        "$A\\subsetneqB$",
+        "$B\\setminusA\\neq\\emptyset$"
+      ],
+      "math_multiset_match": true,
+      "telugu_chars": 2127,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: sets\n% Section: unions-and-intersections",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: sets\n% Section: unions-and-intersections"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sfr}{set}{uni}\n\\olsection{Unions and Intersections}",
+          "target_start": "\\olfileid{sfr}{set}{uni}\n\\olsection{సమ్మేళనాలు, ఛేదనాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{explain}\nIn \\olref[sfr][set][bas]{sec}, we introduced definitions of sets by\nabstraction, i.e., definit",
+          "target_start": "\\begin{explain}\n\\olref[sfr][set][bas]{sec}లో ధర్మనిర్దేశం ద్వారా సమితులను\nనిర్వచించాం; అంటే $\\Setabs{x}{\\phi(x"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{figure}\n  \\olasset{assets/diagrams/union.tikz}\n  \\caption{The union $A \\cup B$ of two sets is set of !!",
+          "target_start": "\\begin{figure}\n  \\olasset{assets/diagrams/union.tikz}\n  \\caption{రెండు సమితుల సమ్మేళనం $A \\cup B$ అనేది $A$లోన"
+        },
+        {
+          "index": 7,
+          "source_start": "This operation on sets---combining them---is very useful and common,\nand so we give it a formal name and a sym",
+          "target_start": "సమితులను కలిపే ఈ ప్రక్రియ ఉపయోగకరమైనదీ, తరచుగా వాడేదీ కనుక\nదీనికి ఒక నియతమైన పేరు, ఒక సంకేతం ఇస్తాం.\n\\end{expl"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{defn}[Union]\nThe \\emph{union} of two sets $A$ and $B$, written $A \\cup B$, is the\nset of all things whi",
+          "target_start": "\\begin{defn}[సమ్మేళనం]\n$A$, $B$ అనే రెండు సమితుల \\emph{సమ్మేళనం} $A \\cup B$:\nఇది $A$లోనో, $B$లోనో, లేదా రెండిం"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{ex}\nSince the multiplicity of !!{element}s doesn't matter, the union of two\nsets which have !!a{element",
+          "target_start": "\\begin{ex}\n\\tecase{acc}{!!{element}s} ఎన్నిసార్లు పేర్కొన్నామన్నది ముఖ్యం కాదు.\nఅందువల్ల రెండు సమితులకు ఉమ్మడి"
+        },
+        {
+          "index": 10,
+          "source_start": "The union of a set and one of its subsets is just the bigger set: $\\{a,\nb, c \\} \\cup \\{a \\} = \\{a, b, c\\}$.",
+          "target_start": "ఒక సమితికీ, దాని ఉపసమితికీ సమ్మేళనం పెద్ద సమితే:\n$\\{a, b, c \\} \\cup \\{a \\} = \\{a, b, c\\}$."
+        },
+        {
+          "index": 11,
+          "source_start": "The union of a set with the empty set is identical to the set: $\\{a,\nb, c \\} \\cup \\emptyset = \\{a, b, c \\}$.\n\\",
+          "target_start": "ఏ సమితికైనా శూన్య సమితితో సమ్మేళనం అదే సమితి:\n$\\{a, b, c \\} \\cup \\emptyset = \\{a, b, c \\}$.\n\\end{ex}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{prob}\nProve that if $A \\subseteq B$, then $A \\cup B = B$.\n\\end{prob}",
+          "target_start": "\\begin{prob}\n$A \\subseteq B$ అయితే $A \\cup B = B$ అని నిరూపించండి.\n\\end{prob}"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{explain}\nWe can also consider a ``dual'' operation to union. This is the\noperation that forms the set o",
+          "target_start": "\\begin{explain}\nసమ్మేళనానికి ``ద్వంద్వమైన'' ప్రక్రియను కూడా పరిగణించవచ్చు.\n$A$లో !!{element}sగా ఉంటూ, $B$లో కూ"
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{defn}[Intersection]\nThe \\emph{intersection} of two sets $A$ and $B$, written $A \\cap B$, is\nthe set of ",
+          "target_start": "\\begin{defn}[ఛేదనం]\n$A$, $B$ అనే రెండు సమితుల \\emph{ఛేదనం} $A \\cap B$:\nఇది $A$, $B$ రెండింటిలోనూ !!{element}sగ"
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{ex}\nIf two sets have no !!{element}s in common, their intersection is empty:\n$\\{ a, b, c\\} \\cap \\{ 0, 1",
+          "target_start": "\\begin{ex}\nరెండు సమితులకు ఉమ్మడి !!{element}s ఏవీ లేకపోతే, వాటి ఛేదనం శూన్యం:\n$\\{ a, b, c\\} \\cap \\{ 0, 1\\} = \\"
+        },
+        {
+          "index": 16,
+          "source_start": "If two sets do have !!{element}s in common, their intersection is the set of\nall those: $\\{a, b, c \\} \\cap \\{a",
+          "target_start": "రెండు సమితులకు ఉమ్మడి !!{element}s ఉంటే, వాటన్నింటి సమితే ఛేదనం:\n$\\{a, b, c \\} \\cap \\{a, b, d \\} = \\{a, b\\}$."
+        },
+        {
+          "index": 17,
+          "source_start": "The intersection of a set with one of its subsets is just the smaller\nset: $\\{a, b, c\\} \\cap \\{a, b\\} = \\{a, b",
+          "target_start": "ఒక సమితికీ, దాని ఉపసమితికీ ఛేదనం చిన్న సమితే:\n$\\{a, b, c\\} \\cap \\{a, b\\} = \\{a, b\\}$."
+        },
+        {
+          "index": 18,
+          "source_start": "The intersection of any set with the empty set is empty: $\\{a, b, c \\}\n\\cap \\emptyset = \\emptyset$.\n\\end{ex}",
+          "target_start": "ఏ సమితికైనా శూన్య సమితితో ఛేదనం శూన్యమే:\n$\\{a, b, c \\} \\cap \\emptyset = \\emptyset$.\n\\end{ex}"
+        },
+        {
+          "index": 19,
+          "source_start": "\\begin{prob}\nProve rigorously that if $A \\subseteq B$, then $A \\cap B = A$.\n\\end{prob}",
+          "target_start": "\\begin{prob}\n$A \\subseteq B$ అయితే $A \\cap B = A$ అని కచ్చితంగా నిరూపించండి.\n\\end{prob}"
+        },
+        {
+          "index": 20,
+          "source_start": "\\begin{explain}\nWe can also form the union or intersection of more than two\nsets. An elegant way of dealing wi",
+          "target_start": "\\begin{explain}\nరెండుకంటే ఎక్కువ సమితుల సమ్మేళనం లేదా ఛేదనాన్ని కూడా ఏర్పరచవచ్చు.\nసాధారణంగా దీనికి ఒక చక్కని ప"
+        },
+        {
+          "index": 21,
+          "source_start": "\\begin{defn}\nIf $A$ is a set of sets, then $\\bigcup A$ is the set of !!{element}s of\n!!{element}s of~$A$:\n\\beg",
+          "target_start": "\\begin{defn}\n$A$ అనేది సమితుల సమితి అయితే, $\\bigcup A$ అనేది $A$లోని\n\\tecase{gen}{!!{element}s} \\tecase{gen}{!"
+        },
+        {
+          "index": 22,
+          "source_start": "\\begin{defn}\nIf $A$ is a set of sets, then $\\bigcap A$ is the set of objects which\nall elements of~$A$ have in",
+          "target_start": "\\begin{defn}\n$A$ అనేది సమితుల సమితి అయితే, $\\bigcap A$ అనేది $A$లోని\nమూలకాలన్నింటికీ ఉమ్మడిగా ఉన్న వస్తువుల సమ"
+        },
+        {
+          "index": 23,
+          "source_start": "\\begin{ex}\nSuppose $A = \\{ \\{ a, b \\}, \\{ a, d, e \\}, \\{ a, d \\} \\}$.\nThen $\\bigcup A = \\{ a, b, d, e \\}$ and ",
+          "target_start": "\\begin{ex}\n$A = \\{ \\{ a, b \\}, \\{ a, d, e \\}, \\{ a, d \\} \\}$ అనుకుందాం.\nఅప్పుడు $\\bigcup A = \\{ a, b, d, e \\}$"
+        },
+        {
+          "index": 24,
+          "source_start": "We could also do the same for a sequence of sets $A_1$, $A_2$, \\dots\n\\begin{align*}\n\\bigcup_i A_i & = \\Setabs{",
+          "target_start": "$A_1$, $A_2$, \\dots అనే సమితుల క్రమానికీ ఇదే విధంగా చేయవచ్చు:\n\\begin{align*}\n\\bigcup_i A_i & = \\Setabs{x}{x \\t"
+        },
+        {
+          "index": 25,
+          "source_start": "When we have an \\emph{index} of sets, i.e., some set $I$ such that we\nare considering $A_i$ for each $i \\in I$",
+          "target_start": "సమితులకు ఒక \\emph{సూచిక} ఉన్నప్పుడు, అంటే $I$ అనే సమితిలోని\nప్రతి $i \\in I$కూ $A_i$ను పరిగణిస్తున్నప్పుడు, ఈ స"
+        },
+        {
+          "index": 26,
+          "source_start": "Finally, we may want to think about the set of all !!{element}s in~$A$\nwhich are not in~$B$. We can depict thi",
+          "target_start": "చివరగా, $A$లో ఉంటూ $B$లో లేని \\tecase{gen}{!!{element}s}\nసమితిని పరిశీలిద్దాం. దీనిని \\olref{difference}లో చూప"
+        },
+        {
+          "index": 27,
+          "source_start": "\\begin{figure}\n  \\olasset{assets/diagrams/difference.tikz}\n  \\caption{The difference $A \\setminus B$ of two se",
+          "target_start": "\\begin{figure}\n  \\olasset{assets/diagrams/difference.tikz}\n  \\caption{రెండు సమితుల భేదం $A \\setminus B$ అనేది "
+        },
+        {
+          "index": 28,
+          "source_start": "\\begin{defn}[Difference]\nThe \\emph{set difference}~$A \\setminus B$ is the set of all !!{element}s of\n$A$ which",
+          "target_start": "\\begin{defn}[భేదం]\n\\emph{సమితుల భేదం} $A \\setminus B$ అనేది $A$లో\n!!{element}sగా ఉండి, $B$లో !!{element}sగా లే"
+        },
+        {
+          "index": 29,
+          "source_start": "\\begin{prob}\n\tProve that if $A \\subsetneq B$, then $B \\setminus A \\neq \\emptyset$.\n\\end{prob}",
+          "target_start": "\\begin{prob}\n\t$A \\subsetneq B$ అయితే $B \\setminus A \\neq \\emptyset$ అని నిరూపించండి.\n\\end{prob}"
+        },
+        {
+          "index": 30,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{set}{uni}",
+        "\\olref[sfr][set][bas]{sec}",
+        "\\olref{fig:union}",
+        "\\olasset{assets/diagrams/union.tikz}",
+        "\\ollabel{fig:union}",
+        "\\olref{fig:intersection}",
+        "\\olasset{assets/diagrams/intersection.tikz}",
+        "\\ollabel{fig:intersection}",
+        "\\olref{difference}",
+        "\\olasset{assets/diagrams/difference.tikz}",
+        "\\ollabel{difference}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{set}{uni}",
+        "\\olref[sfr][set][bas]{sec}",
+        "\\olref{fig:union}",
+        "\\olasset{assets/diagrams/union.tikz}",
+        "\\ollabel{fig:union}",
+        "\\olref{fig:intersection}",
+        "\\olasset{assets/diagrams/intersection.tikz}",
+        "\\ollabel{fig:intersection}",
+        "\\olref{difference}",
+        "\\olasset{assets/diagrams/difference.tikz}",
+        "\\ollabel{difference}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0009",
+      "source_path": "content/sets-functions-relations/sets/pairs-and-products.tex",
+      "source_sha256": "935f1e0e90dc783a1d5cb3298a38aa8df49af8b424e7282b27dc2ab4e9d85610",
+      "translation_sha256": "deb0d6439c8dc94758cb998002a94621a5062fdcedcf213012757a0ee74cb4bf",
+      "source_blocks": 20,
+      "target_blocks": 20,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{set}{pai}",
+        "\\ollabel{wienerkuratowski}",
+        "\\olref[sfr][set][pai]{wienerkuratowski}",
+        "\\ollabel{cardnmprod}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{set}{pai}",
+        "\\ollabel{wienerkuratowski}",
+        "\\olref[sfr][set][pai]{wienerkuratowski}",
+        "\\ollabel{cardnmprod}"
+      ],
+      "tokens_source": {
+        "!!{element}": 1,
+        "!!{element}s": 11
+      },
+      "tokens_target": {
+        "!!{element}": 1,
+        "!!{element}s": 11
+      },
+      "math_source": [
+        "$\\tuple{x,y}$",
+        "$\\{x,y\\}$",
+        "$\\{x,y\\}=\\{y,x\\}$",
+        "$x\\neqy$",
+        "$\\tuple{x,y}\\neq\\tuple{y,x}$",
+        "\\[\\tuple{a,b}=\\tuple{c,d}a=cb=d.\\]",
+        "$\\tuple{a,b}=\\{\\{a\\},\\{a,b\\}\\}$",
+        "$\\tuple{a,b}=\\tuple{c,d}$",
+        "$a=c$",
+        "$b=d$",
+        "$\\tuple{x,y,z}$",
+        "$\\tuple{x,y,z,u}$",
+        "$\\tuple{x,y,z}$",
+        "$\\tuple{\\tuple{x,y},z}$",
+        "$\\tuple{x,y,z,u}$",
+        "$\\tuple{\\tuple{\\tuple{x,y},z},u}$",
+        "$n$",
+        "$\\tuple{x_1,\\dots,x_n}$",
+        "$n$",
+        "$A$",
+        "$B$",
+        "$A\\timesB$",
+        "\\[A\\timesB=\\Setabs{\\tuple{x,y}}{x\\inAy\\inB}.\\]",
+        "$A=\\{0,1\\}$",
+        "$B=\\{1,a,b\\}$",
+        "\\[A\\timesB=\\{\\tuple{0,1},\\tuple{0,a},\\tuple{0,b},\\tuple{1,1},\\tuple{1,a},\\tuple{1,b}\\}.\\]",
+        "$A$",
+        "$A$",
+        "$A\\timesA$",
+        "$A^2$",
+        "$\\tuple{x,y}$",
+        "$x,y\\inA$",
+        "$\\tuple{x,y,z}$",
+        "$A^3$",
+        "\\begin{align*}A^1&=A\\\\A^{k+1}&=A^k\\timesA\\end{align*}",
+        "$\\{1,2,3\\}^3$",
+        "$A$",
+        "$n$",
+        "$B$",
+        "$m$",
+        "$A\\timesB$",
+        "$n\\cdotm$",
+        "$x$",
+        "$A$",
+        "$m$",
+        "$\\tuple{x,y}\\inA\\timesB$",
+        "$B_x=\\Setabs{\\tuple{x,y}}{y\\inB}$",
+        "$x_1\\neqx_2$",
+        "$\\tuple{x_1,y}\\neq\\tuple{x_2,y}$",
+        "$B_{x_1}\\capB_{x_2}=\\emptyset$",
+        "$A=\\{x_1,\\dots,x_n\\}$",
+        "$A\\timesB=B_{x_1}\\cup\\dots\\cupB_{x_n}$",
+        "$n\\cdotm$",
+        "$A\\timesB$",
+        "\\[\\begin{array}{rcccc}B_{x_1}=&\\{\\tuple{x_1,y_1}&\\tuple{x_1,y_2}&\\dots&\\tuple{x_1,y_m}\\}\\\\B_{x_2}=&\\{\\tuple{x_2,y_1}&\\tuple{x_2,y_2}&\\dots&\\tuple{x_2,y_m}\\}\\\\\\vdots&&\\vdots\\\\B_{x_n}=&\\{\\tuple{x_n,y_1}&\\tuple{x_n,y_2}&\\dots&\\tuple{x_n,y_m}\\}\\end{array}\\]",
+        "$x_i$",
+        "$y_j$",
+        "$n\\cdotm$",
+        "$k$",
+        "$k\\ge1$",
+        "$A$",
+        "$n$",
+        "$A^k$",
+        "$n^k$",
+        "$A$",
+        "$A$",
+        "$A$",
+        "$n$",
+        "$A$",
+        "$A=\\{a,b,c\\}$",
+        "$bac$",
+        "$\\tuple{b,a,c}$",
+        "$A$",
+        "$1$",
+        "$\\emptyset$",
+        "$0$",
+        "$A$",
+        "\\[A^*=\\{\\emptyset\\}\\cupA\\cupA^2\\cupA^3\\cup\\dots\\]"
+      ],
+      "math_target": [
+        "$\\tuple{x,y}$",
+        "$\\{x,y\\}$",
+        "$\\{x,y\\}=\\{y,x\\}$",
+        "$x\\neqy$",
+        "$\\tuple{x,y}\\neq\\tuple{y,x}$",
+        "\\[\\tuple{a,b}=\\tuple{c,d}a=cb=d.\\]",
+        "$\\tuple{a,b}=\\{\\{a\\},\\{a,b\\}\\}$",
+        "$\\tuple{a,b}=\\tuple{c,d}$",
+        "$a=c$",
+        "$b=d$",
+        "$\\tuple{x,y,z}$",
+        "$\\tuple{x,y,z,u}$",
+        "$\\tuple{x,y,z}$",
+        "$\\tuple{\\tuple{x,y},z}$",
+        "$\\tuple{x,y,z,u}$",
+        "$\\tuple{\\tuple{\\tuple{x,y},z},u}$",
+        "$\\tuple{x_1,\\dots,x_n}$",
+        "$n$",
+        "$n$",
+        "$A$",
+        "$B$",
+        "$A\\timesB$",
+        "\\[A\\timesB=\\Setabs{\\tuple{x,y}}{x\\inAy\\inB}.\\]",
+        "$A=\\{0,1\\}$",
+        "$B=\\{1,a,b\\}$",
+        "\\[A\\timesB=\\{\\tuple{0,1},\\tuple{0,a},\\tuple{0,b},\\tuple{1,1},\\tuple{1,a},\\tuple{1,b}\\}.\\]",
+        "$A$",
+        "$A$",
+        "$A\\timesA$",
+        "$A^2$",
+        "$x,y\\inA$",
+        "$\\tuple{x,y}$",
+        "$\\tuple{x,y,z}$",
+        "$A^3$",
+        "\\begin{align*}A^1&=A\\\\A^{k+1}&=A^k\\timesA\\end{align*}",
+        "$\\{1,2,3\\}^3$",
+        "$A$",
+        "$n$",
+        "$B$",
+        "$m$",
+        "$A\\timesB$",
+        "$n\\cdotm$",
+        "$A$",
+        "$x$",
+        "$\\tuple{x,y}\\inA\\timesB$",
+        "$m$",
+        "$B_x=\\Setabs{\\tuple{x,y}}{y\\inB}$",
+        "$x_1\\neqx_2$",
+        "$\\tuple{x_1,y}\\neq\\tuple{x_2,y}$",
+        "$B_{x_1}\\capB_{x_2}=\\emptyset$",
+        "$A=\\{x_1,\\dots,x_n\\}$",
+        "$A\\timesB=B_{x_1}\\cup\\dots\\cupB_{x_n}$",
+        "$n\\cdotm$",
+        "$A\\timesB$",
+        "\\[\\begin{array}{rcccc}B_{x_1}=&\\{\\tuple{x_1,y_1}&\\tuple{x_1,y_2}&\\dots&\\tuple{x_1,y_m}\\}\\\\B_{x_2}=&\\{\\tuple{x_2,y_1}&\\tuple{x_2,y_2}&\\dots&\\tuple{x_2,y_m}\\}\\\\\\vdots&&\\vdots\\\\B_{x_n}=&\\{\\tuple{x_n,y_1}&\\tuple{x_n,y_2}&\\dots&\\tuple{x_n,y_m}\\}\\end{array}\\]",
+        "$x_i$",
+        "$y_j$",
+        "$n\\cdotm$",
+        "$k$",
+        "$k\\ge1$",
+        "$A$",
+        "$n$",
+        "$A^k$",
+        "$n^k$",
+        "$A$",
+        "$A$",
+        "$A$",
+        "$A$",
+        "$n$",
+        "$A=\\{a,b,c\\}$",
+        "$bac$",
+        "$\\tuple{b,a,c}$",
+        "$A$",
+        "$1$",
+        "$\\emptyset$",
+        "$0$",
+        "$A$",
+        "\\[A^*=\\{\\emptyset\\}\\cupA\\cupA^2\\cupA^3\\cup\\dots\\]"
+      ],
+      "math_multiset_match": true,
+      "telugu_chars": 1733,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: sets\n% Section: pairs-and-products",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: sets\n% Section: pairs-and-products"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sfr}{set}{pai}\n\\olsection{Pairs, Tuples, Cartesian Products}",
+          "target_start": "\\olfileid{sfr}{set}{pai}\n\\olsection{జతలు, క్రమిత బహుళకాలు, కార్టీజియన్ లబ్ధాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{explain}\nIt follows from extensionality that sets have no order to their\nelements. So if we want to rep",
+          "target_start": "\\begin{explain}\nసమితులలోని మూలకాలకు క్రమం ఉండదని మూలకాధారిత సమానత్వం చెబుతుంది.\nకనుక క్రమాన్ని సూచించాలంటే $\\t"
+        },
+        {
+          "index": 6,
+          "source_start": "How should we think about ordered pairs in set theory? Crucially, we\nwant to preserve the idea that ordered pa",
+          "target_start": "సమితి సిద్ధాంతంలో క్రమిత జతలను ఎలా పరిగణించాలి? రెండు క్రమిత జతలలో\nమొదటి మూలకం ఒకటే అయి, రెండవ మూలకం కూడా ఒకటే"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}[Ordered pair]\\ollabel{wienerkuratowski}\n\t$\\tuple{a, b} = \\{\\{a\\}, \\{a, b\\}\\}$.\n\\end{defn}",
+          "target_start": "\\begin{defn}[క్రమిత జత]\\ollabel{wienerkuratowski}\n\t$\\tuple{a, b} = \\{\\{a\\}, \\{a, b\\}\\}$.\n\\end{defn}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{prob}\n\tUsing \\olref[sfr][set][pai]{wienerkuratowski}, prove that $\\tuple{a,\n\tb}= \\tuple{c, d}$ iff both",
+          "target_start": "\\begin{prob}\n\t\\olref[sfr][set][pai]{wienerkuratowski}ను ఉపయోగించి,\n\t$\\tuple{a, b}= \\tuple{c, d}$ కావడానికి అవస"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{explain}\nHaving fixed a definition of an ordered pair, we can use it to define\nfurther sets. For exampl",
+          "target_start": "\\begin{explain}\nక్రమిత జత నిర్వచనాన్ని నిర్ణయించాక, దానితో మరిన్ని సమితులను\nనిర్వచించవచ్చు. ఉదాహరణకు కొన్నిసార"
+        },
+        {
+          "index": 10,
+          "source_start": "Certain sets of ordered pairs, or other ordered $n$-tuples, will be useful.\n\\end{explain}",
+          "target_start": "క్రమిత జతలతో లేదా ఇతర క్రమిత $n$-బహుళకాలతో ఏర్పడే కొన్ని సమితులు\nమనకు ఉపయోగపడతాయి.\n\\end{explain}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{defn}[Cartesian product]\nGiven sets $A$ and $B$, their \\emph{Cartesian product} $A \\times B$ is\ndefined",
+          "target_start": "\\begin{defn}[కార్టీజియన్ లబ్ధం]\n$A$, $B$ అనే సమితులు ఇచ్చినప్పుడు, వాటి \\emph{కార్టీజియన్ లబ్ధం}\n$A \\times B$న"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{ex}\nIf $A = \\{0, 1\\}$, and $B = \\{1, a, b\\}$, then their product is\n\\[\nA \\times B = \\{ \\tuple{0, 1}, \\t",
+          "target_start": "\\begin{ex}\n$A = \\{0, 1\\}$, $B = \\{1, a, b\\}$ అయితే, వాటి లబ్ధం\n\\[\nA \\times B = \\{ \\tuple{0, 1}, \\tuple{0, a}, "
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{ex}\nIf $A$ is a set, the product of $A$ with itself, $A \\times A$, is also\nwritten~$A^2$. It is the set",
+          "target_start": "\\begin{ex}\n$A$ ఒక సమితి అయితే, $A$తో దాని లబ్ధం $A \\times A$ను $A^2$\nఅని కూడా రాస్తాం. ఇది $x, y \\in A$ అయ్యే "
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{prob}\nList all !!{element}s of $\\{1, 2, 3\\}^3$.\n\\end{prob}",
+          "target_start": "\\begin{prob}\n$\\{1, 2, 3\\}^3$లోని \\tecase{acc}{!!{element}s} అన్నింటినీ జాబితాగా రాయండి.\n\\end{prob}"
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{prop}\\ollabel{cardnmprod}\nIf $A$ has $n$ !!{element}s and $B$ has $m$ !!{element}s, then $A\n\\times B$ h",
+          "target_start": "\\begin{prop}\\ollabel{cardnmprod}\n$A$లో $n$ !!{element}s, $B$లో $m$ !!{element}s ఉంటే,\n$A \\times B$లో $n\\cdot m"
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{proof}\nFor every !!{element}~$x$ in~$A$, there are $m$ !!{element}s of the\nform $\\tuple{x, y} \\in A \\ti",
+          "target_start": "\\begin{proof}\n$A$లోని ప్రతి !!{element} $x$కూ, $\\tuple{x, y} \\in A \\times B$\nరూపంలో $m$ !!{element}s ఉంటాయి. $"
+        },
+        {
+          "index": 17,
+          "source_start": "To visualize this, arrange the !!{element}s of~$A \\times B$ in a grid:\n\\[\n\\begin{array}{rcccc}\n  B_{x_1} = & \\",
+          "target_start": "దీనిని చూడటానికి $A \\times B$లోని \\tecase{acc}{!!{element}s}\nఅడ్డువరుసలు, నిలువువరుసలుగా అమర్చుదాం:\n\\[\n\\begin{"
+        },
+        {
+          "index": 18,
+          "source_start": "\\begin{prob}\nShow, by induction on~$k$, that for all $k \\ge 1$, if $A$ has $n$\n!!{element}s, then $A^k$ has $n",
+          "target_start": "\\begin{prob}\n$k$పై ఆగమనంతో, ప్రతి $k \\ge 1$కూ ఈ విషయాన్ని చూపండి:\n$A$లో $n$ !!{element}s ఉంటే, $A^k$లో $n^k$ !"
+        },
+        {
+          "index": 19,
+          "source_start": "\\begin{ex}\nIf $A$ is a set, a \\emph{word} over~$A$ is any sequence of\n!!{element}s of~$A$. A sequence can be t",
+          "target_start": "\\begin{ex}\n$A$ ఒక సమితి అయితే, $A$పై ఒక \\emph{పదం} అంటే $A$లోని\n\\tecase{gen}{!!{element}s} ఏదైనా క్రమం. అటువంట"
+        },
+        {
+          "index": 20,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{set}{pai}",
+        "\\ollabel{wienerkuratowski}",
+        "\\olref[sfr][set][pai]{wienerkuratowski}",
+        "\\ollabel{cardnmprod}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{set}{pai}",
+        "\\ollabel{wienerkuratowski}",
+        "\\olref[sfr][set][pai]{wienerkuratowski}",
+        "\\ollabel{cardnmprod}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0010",
+      "source_path": "content/sets-functions-relations/sets/russells-paradox.tex",
+      "source_sha256": "aa8e94675f56112d8952b81d17968545b54c33393bfc466745edcaca30f4453a",
+      "translation_sha256": "2bf4e3950b6221f6ec8c3656120f4f159445ce421ca987a4f65ed9f779532f74",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{set}{rus}",
+        "\\ollabel{thm:russells-paradox}",
+        "\\oliflabeldef{cumul:::part}",
+        "\\olref[cumul][][]{part}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{set}{rus}",
+        "\\ollabel{thm:russells-paradox}",
+        "\\oliflabeldef{cumul:::part}",
+        "\\olref[cumul][][]{part}"
+      ],
+      "tokens_source": {
+        "!!a{element}": 8,
+        "!!{element}s": 2
+      },
+      "tokens_target": {
+        "!!a{element}": 8,
+        "!!{element}s": 2
+      },
+      "math_source": [
+        "$\\Setabs{x}{\\phi(x)}$",
+        "$x$",
+        "$\\phi(x)$",
+        "$\\phi$",
+        "$\\phi$",
+        "$\\Setabs{x}{\\phi(x)}$",
+        "$A$",
+        "\\[R=\\Setabs{x}{x\\notinx}\\]",
+        "$R=\\Setabs{x}{x\\notinx}$",
+        "$R=\\Setabs{x}{x\\notinx}$",
+        "$R\\inR$",
+        "$R\\notinR$",
+        "$R$",
+        "$R\\inR$",
+        "$R\\inR$",
+        "$R$",
+        "$R\\inR$",
+        "$R$",
+        "$R$",
+        "$R$",
+        "$R$",
+        "$R$",
+        "$R\\notinR$",
+        "$R$",
+        "$R$",
+        "$R\\inR$",
+        "$R\\notinR$",
+        "$R\\notinR$",
+        "$R$",
+        "$R$",
+        "$R$",
+        "$R$",
+        "$R$",
+        "$R=\\Setabs{x}{x\\notinx}$"
+      ],
+      "math_target": [
+        "$\\phi(x)$",
+        "$x$",
+        "$\\Setabs{x}{\\phi(x)}$",
+        "$\\phi$",
+        "$\\phi$",
+        "$\\Setabs{x}{\\phi(x)}$",
+        "$A$",
+        "\\[R=\\Setabs{x}{x\\notinx}\\]",
+        "$R=\\Setabs{x}{x\\notinx}$",
+        "$R=\\Setabs{x}{x\\notinx}$",
+        "$R\\inR$",
+        "$R\\notinR$",
+        "$R$",
+        "$R\\inR$",
+        "$R\\inR$",
+        "$R$",
+        "$R\\inR$",
+        "$R$",
+        "$R$",
+        "$R$",
+        "$R$",
+        "$R$",
+        "$R\\notinR$",
+        "$R$",
+        "$R$",
+        "$R\\inR$",
+        "$R\\notinR$",
+        "$R\\notinR$",
+        "$R$",
+        "$R$",
+        "$R$",
+        "$R$",
+        "$R$",
+        "$R=\\Setabs{x}{x\\notinx}$"
+      ],
+      "math_multiset_match": true,
+      "telugu_chars": 2112,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: sets\n% Section: russells-paradox",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: sets\n% Section: russells-paradox"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sfr}{set}{rus}\n\\olsection{Russell's Paradox}",
+          "target_start": "\\olfileid{sfr}{set}{rus}\n\\olsection{రసెల్ వైరుధ్యం}"
+        },
+        {
+          "index": 5,
+          "source_start": "Extensionality licenses the notation $\\Setabs{x}{\\phi(x)}$, for\n\\emph{the} set of $x$'s such that~$\\phi(x)$. H",
+          "target_start": "$\\phi(x)$ అయ్యే $x$ల \\emph{ఆ ఏకైక} సమితికి\n$\\Setabs{x}{\\phi(x)}$ అనే సంకేతాన్ని వాడటానికి మూలకాధారిత\nసమానత్వం "
+        },
+        {
+          "index": 6,
+          "source_start": "But this conditional is important!{} Crucially, not every property\nlends itself to \\emph{comprehension}. That ",
+          "target_start": "కానీ ఈ షరతు చాలా ముఖ్యం!{} ప్రతి ధర్మం ద్వారా\n\\emph{ధర్మసంగ్రహం} సాధ్యం కాదు. అంటే కొన్ని ధర్మాలు సమితులను\nనిర"
+        },
+        {
+          "index": 7,
+          "source_start": "Sets may be !!{element}s of other sets---for instance, the power set\nof a set~$A$ is made up of sets. And so i",
+          "target_start": "సమితులు ఇతర సమితులలో !!{element}s కావచ్చు. ఉదాహరణకు\n$A$ అనే సమితి యొక్క ఘాత సమితి సమితులతోనే ఏర్పడుతుంది.\nఅందు"
+        },
+        {
+          "index": 8,
+          "source_start": "Russell's Paradox arises when we consider the property of not having\nitself as !!a{element}, of being \\emph{no",
+          "target_start": "తనను తాను !!a{element}గా కలిగి ఉండకపోవడం, అంటే\n\\emph{తనలో తానే సభ్యంగా లేకపోవడం}, అనే ధర్మాన్ని పరిశీలించినప్ప"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{thm}[Russell's Paradox]\\ollabel{thm:russells-paradox}\n\tThere is no set $R = \\Setabs{x}{x \\notin x}$.\n\\e",
+          "target_start": "\\begin{thm}[రసెల్ వైరుధ్యం]\\ollabel{thm:russells-paradox}\n\t$R = \\Setabs{x}{x \\notin x}$ అనే సమితి లేదు.\n\\end{t"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{proof}\nIf $R = \\Setabs{x}{x \\notin x}$ exists, then\n$R \\in R$ iff $R \\notin R$, which is a contradictio",
+          "target_start": "\\begin{proof}\n$R = \\Setabs{x}{x \\notin x}$ ఉంటే,\n$R \\in R$ కావడానికి అవసరమైన మరియు సరిపడే షరతు $R \\notin R$\nఅవ"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{tagblock}{novice}\n\\begin{explain}\nLet's run through this proof more slowly. If $R$ exists, it makes sen",
+          "target_start": "\\begin{tagblock}{novice}\n\\begin{explain}\nఈ నిరూపణను నెమ్మదిగా పరిశీలిద్దాం. $R$ ఉంటే, $R \\in R$ అవుతుందా\nఅని అ"
+        },
+        {
+          "index": 12,
+          "source_start": "Since the assumption that $R \\in R$ leads to a contradiction, we have\n$R \\notin R$. But this also leads to a c",
+          "target_start": "$R \\in R$ అనే ఊహ విరోధానికి దారితీసింది కనుక $R \\notin R$.\nకానీ ఇదీ విరోధానికే దారితీస్తుంది!{} ఎందుకంటే $R \\n"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{digress}\nHow do we set up a set theory which avoids falling into\nRussell's Paradox, i.e., which avoids ",
+          "target_start": "\\begin{digress}\nరసెల్ వైరుధ్యంలో చిక్కుకోని సమితి సిద్ధాంతాన్ని ఎలా నిర్మించాలి?\nఅంటే $R = \\Setabs{x}{x \\notin"
+        },
+        {
+          "index": 14,
+          "source_start": "The set theory sketched in this chapter doesn't do this. It's\n\\emph{genuinely na\\\"ive}. It tells you only that",
+          "target_start": "ఈ అధ్యాయంలో వివరించిన సమితి సిద్ధాంతం అలా చేయదు. ఇది\n\\emph{నిజంగానే అనౌపచారికమైనది}. సమితులు మూలకాధారిత సమానత్"
+        },
+        {
+          "index": 15,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{set}{rus}",
+        "\\ollabel{thm:russells-paradox}",
+        "\\oliflabeldef{cumul:::part}",
+        "\\olref[cumul][][]{part}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{set}{rus}",
+        "\\ollabel{thm:russells-paradox}",
+        "\\oliflabeldef{cumul:::part}",
+        "\\olref[cumul][][]{part}"
+      ],
+      "protected_identifier_parity": true
+    }
+  ]
+}

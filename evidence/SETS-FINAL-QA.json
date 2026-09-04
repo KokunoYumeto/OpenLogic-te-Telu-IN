@@ -1,0 +1,170 @@
+{
+  "schema": "openlogic-te-sets-final-qa/1",
+  "date": "2026-09-04",
+  "status": "chapter_pdf_pass",
+  "scope": "OLP-0004 through OLP-0010, 7 of 722 units; not full-edition completion",
+  "pdf_sha256": "4272102d0e7ef34f819d582304a19442ece75ed9b34a07fd677461f37cbaf719",
+  "pdf_bytes": 160275,
+  "page_images": [
+    {
+      "page": 1,
+      "file": "sets-final-01.png",
+      "sha256": "b2298551801c98a1c4fb94d646bb683f251e2ca50fcd8eca7391a9f92f323be0"
+    },
+    {
+      "page": 2,
+      "file": "sets-final-02.png",
+      "sha256": "8bb8ef761fdca79201f7616c24d2c5369a321569302d6bd05f8b1e8185033c83"
+    },
+    {
+      "page": 3,
+      "file": "sets-final-03.png",
+      "sha256": "1e7b65b3d03969b47cf9de180ca7d5709d29a1d543dfceffda7b22a5339db09b"
+    },
+    {
+      "page": 4,
+      "file": "sets-final-04.png",
+      "sha256": "338ad0d9ca91a459045a8e4b810667d9a3f6efe35488c1c313f2a64fac706231"
+    },
+    {
+      "page": 5,
+      "file": "sets-final-05.png",
+      "sha256": "eb7dab513a035880950095475b9ae7c690509dba5cfa527e885cbc45fcc78467"
+    },
+    {
+      "page": 6,
+      "file": "sets-final-06.png",
+      "sha256": "4c593b8b455911ae8e95841c141b7cbdec64cf4349ef1856315c9318273bfe1a"
+    },
+    {
+      "page": 7,
+      "file": "sets-final-07.png",
+      "sha256": "67efc08114402f8c1f6c15694d9d9db43fec611fb6791ebda46c7aa64cdb7f11"
+    },
+    {
+      "page": 8,
+      "file": "sets-final-08.png",
+      "sha256": "beedb79e4bacc64392253aa9d7442aa4d23495da47ce949137ff88bbc9d9d386"
+    },
+    {
+      "page": 9,
+      "file": "sets-final-09.png",
+      "sha256": "21693a1958eac578ce723035689fa29bf31e49322c688fe007ea7c6512053ffe"
+    },
+    {
+      "page": 10,
+      "file": "sets-final-10.png",
+      "sha256": "cb3ed7f623bbe83cc6afe7308883b6dfbb92409a818cecc80b1d70b07e99a407"
+    },
+    {
+      "page": 11,
+      "file": "sets-final-11.png",
+      "sha256": "b287f36d8801bf3c83531afb6b905e6c8204e5725ac0a9bb397a3aa539c81a61"
+    },
+    {
+      "page": 12,
+      "file": "sets-final-12.png",
+      "sha256": "a6c9c3343e890e69a5bc0b4bd311c70a2017fd351b32c1e5295a7cd275c5b7ef"
+    }
+  ],
+  "extraction_sha256": "c1ea70dbfcaccc3090bfc617833bf68e7af5a4638807371b7088427c39779e5e",
+  "sample_checks": [
+    {
+      "text": "మూలకాధారిత",
+      "found": true
+    },
+    {
+      "text": "సమానత్వం",
+      "found": true
+    },
+    {
+      "text": "సమితులు",
+      "found": true
+    },
+    {
+      "text": "పూర్ణ",
+      "found": true
+    },
+    {
+      "text": "సహజ",
+      "found": true
+    },
+    {
+      "text": "నిరూపణ",
+      "found": true
+    },
+    {
+      "text": "అభ్యాసం",
+      "found": true
+    },
+    {
+      "text": "క్రమిత",
+      "found": true
+    },
+    {
+      "text": "ఛేదనం",
+      "found": true
+    },
+    {
+      "text": "ధర్మసంగ్రహం",
+      "found": true
+    },
+    {
+      "text": "సరిపడే",
+      "found": true
+    },
+    {
+      "text": "అవిచ్ఛిన్న",
+      "found": true
+    },
+    {
+      "text": "ఆగమనం",
+      "found": true
+    },
+    {
+      "text": "Ruth",
+      "found": true
+    },
+    {
+      "text": "len",
+      "found": true
+    }
+  ],
+  "segment_ledger_sha256": "d5e9f841b29b71eb890a28f7ea6e970faf0b0be75b53bb804d89a5388e24c77d",
+  "build_receipt_sha256": "81aa957e4e69cb52d3920d7a46a46e3f0c1982e0463494d8e7f7fedd925d9da6",
+  "pages": 12,
+  "visual_review": {
+    "reviewer": "same translation agent; not human or independent",
+    "pages_actually_viewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "result": "All pages inspected at 1400-pixel full-page render. Telugu shaping, mixed Latin formulas, line breaks, header/footer numbering, title/contents, definitions, proofs and exercises are legible with no clipping, missing glyphs or overlap. Three diagrams occur after their introducing prose with Telugu captions. Mathematical text preserves intended spaces.",
+    "font_repairs": "Explicit family selection in mathematical text preserves spaces via empty brace terminators. Whole Telugu shaping runs retain joiners. Bookmark selectors are suppressed only in PDF strings."
+  },
+  "build": {
+    "mutex": "Global\\InterlanguageTeXSlotV1",
+    "acquired": true,
+    "passes": 4,
+    "reproducible_last_two_passes": true,
+    "missing_characters": 0,
+    "overfull_boxes": 0,
+    "undefined_references": false,
+    "log_warnings": 0
+  },
+  "limitations": [
+    "PDF is not tagged; semantic HTML is a separate required reader deliverable.",
+    "Technical terminology remains provisional where no native concept evidence was found.",
+    "Chapter passes do not certify the 706 undrafted units or Relations output integration."
+  ]
+}

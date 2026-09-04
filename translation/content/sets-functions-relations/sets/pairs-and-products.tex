@@ -1,0 +1,136 @@
+% Part: sets-functions-relations
+% Chapter: sets
+% Section: pairs-and-products
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{set}{pai}
+\olsection{జతలు, క్రమిత బహుళకాలు, కార్టీజియన్ లబ్ధాలు}
+
+\begin{explain}
+సమితులలోని మూలకాలకు క్రమం ఉండదని మూలకాధారిత సమానత్వం చెబుతుంది.
+కనుక క్రమాన్ని సూచించాలంటే $\tuple{x, y}$ అనే \emph{క్రమిత జతలను}
+వాడతాం. $\{x, y\}$ అనే అక్రమిత జతలో క్రమం ముఖ్యం కాదు:
+$\{x, y\} = \{y, x\}$. క్రమిత జతలో మాత్రం క్రమం ముఖ్యం:
+$x \neq y$ అయితే $\tuple{x, y} \neq \tuple{y, x}$.
+
+సమితి సిద్ధాంతంలో క్రమిత జతలను ఎలా పరిగణించాలి? రెండు క్రమిత జతలలో
+మొదటి మూలకం ఒకటే అయి, రెండవ మూలకం కూడా ఒకటే అయినప్పుడే ఆ జతలు
+సమానమవ్వాలన్న భావనను కాపాడాలి. అంటే:
+\[
+  \tuple{a, b}= \tuple{c, d}\text{ కావడానికి అవసరమైన, సరిపడే షరతులు }a = c \text{ మరియు }b=d.
+\]
+సమితి సిద్ధాంతంలో వీనర్--కురటోవ్‌స్కీ నిర్వచనాన్ని వాడి క్రమిత జతలను
+నిర్వచించవచ్చు.
+\end{explain}
+
+\begin{defn}[క్రమిత జత]\ollabel{wienerkuratowski}
+	$\tuple{a, b} = \{\{a\}, \{a, b\}\}$.
+\end{defn}
+
+\begin{prob}
+	\olref[sfr][set][pai]{wienerkuratowski}ను ఉపయోగించి,
+	$\tuple{a, b}= \tuple{c, d}$ కావడానికి అవసరమైన మరియు సరిపడే
+	షరతులు $a = c$, $b=d$ రెండూ నెరవేరడమేనని నిరూపించండి.
+\end{prob}
+
+\begin{explain}
+క్రమిత జత నిర్వచనాన్ని నిర్ణయించాక, దానితో మరిన్ని సమితులను
+నిర్వచించవచ్చు. ఉదాహరణకు కొన్నిసార్లు రెండుకంటే ఎక్కువ వస్తువుల
+క్రమాలు అవసరమవుతాయి: $\tuple{x, y, z}$ వంటి \emph{త్రికాలు},
+$\tuple{x, y, z, u}$ వంటి \emph{చతుష్కాలు}, మొదలైనవి.
+మొదటి మూలకమే ఒక క్రమిత జతగా ఉన్న ప్రత్యేక క్రమిత జతగా త్రికాన్ని
+పరిగణించవచ్చు: $\tuple{x, y, z}$ అనేది $\tuple{\tuple{x, y},z}$.
+చతుష్కానికీ ఇదే విధంగా: $\tuple{x,y,z,u}$ అనేది
+$\tuple{\tuple{\tuple{x,y},z},u}$. ఇలాగే కొనసాగించవచ్చు.
+సాధారణంగా $\tuple{x_1, \dots, x_n}$లను \emph{క్రమిత $n$-బహుళకాలు}
+అంటాం.
+
+క్రమిత జతలతో లేదా ఇతర క్రమిత $n$-బహుళకాలతో ఏర్పడే కొన్ని సమితులు
+మనకు ఉపయోగపడతాయి.
+\end{explain}
+
+\begin{defn}[కార్టీజియన్ లబ్ధం]
+$A$, $B$ అనే సమితులు ఇచ్చినప్పుడు, వాటి \emph{కార్టీజియన్ లబ్ధం}
+$A \times B$ను ఇలా నిర్వచిస్తాం:
+\[
+  A \times B = \Setabs{\tuple{x, y}}{x \in A \text{ మరియు } y \in B}.
+\]
+\end{defn}
+
+\begin{ex}
+$A = \{0, 1\}$, $B = \{1, a, b\}$ అయితే, వాటి లబ్ధం
+\[
+A \times B = \{ \tuple{0, 1}, \tuple{0, a}, \tuple{0, b},
+    \tuple{1, 1}, \tuple{1, a}, \tuple{1, b} \}.
+\]
+\end{ex}
+
+\begin{ex}
+$A$ ఒక సమితి అయితే, $A$తో దాని లబ్ధం $A \times A$ను $A^2$
+అని కూడా రాస్తాం. ఇది $x, y \in A$ అయ్యే $\tuple{x, y}$ అనే
+జతలన్నింటి సమితి; ఇక్కడ \emph{అన్ని} జతలనూ చేర్చాలి.
+$\tuple{x, y, z}$ అనే త్రికాలన్నింటి సమితి $A^3$; ఇదే విధంగా
+కొనసాగించవచ్చు. పునరావృత్త నిర్వచనాన్ని ఇలా ఇవ్వవచ్చు:
+\begin{align*}
+  A^1 & = A\\
+  A^{k+1} & = A^k \times A
+\end{align*}
+\end{ex}
+
+\begin{prob}
+$\{1, 2, 3\}^3$లోని \tecase{acc}{!!{element}s} అన్నింటినీ జాబితాగా రాయండి.
+\end{prob}
+
+\begin{prop}\ollabel{cardnmprod}
+$A$లో $n$ !!{element}s, $B$లో $m$ !!{element}s ఉంటే,
+$A \times B$లో $n\cdot m$ మూలకాలు ఉంటాయి.
+\end{prop}
+
+\begin{proof}
+$A$లోని ప్రతి !!{element} $x$కూ, $\tuple{x, y} \in A \times B$
+రూపంలో $m$ !!{element}s ఉంటాయి. $B_x = \Setabs{\tuple{x, y}}{y
+  \in B}$ అనుకుందాం. $x_1 \neq x_2$ అయినప్పుడల్లా
+$\tuple{x_1, y} \neq \tuple{x_2, y}$ కనుక
+$B_{x_1} \cap B_{x_2} = \emptyset$.
+అయితే $A = \{x_1, \dots, x_n\}$ అయితే,
+$A \times B = B_{x_1} \cup \dots \cup B_{x_n}$.
+కాబట్టి అందులో $n\cdot m$ !!{element}s ఉంటాయి.
+
+దీనిని చూడటానికి $A \times B$లోని \tecase{acc}{!!{element}s}
+అడ్డువరుసలు, నిలువువరుసలుగా అమర్చుదాం:
+\[
+\begin{array}{rcccc}
+  B_{x_1} = & \{\tuple{x_1, y_1} & \tuple{x_1, y_2} & \dots & \tuple{x_1, y_m}\}\\
+  B_{x_2} = & \{\tuple{x_2, y_1} & \tuple{x_2, y_2} & \dots & \tuple{x_2, y_m}\}\\
+  \vdots & & \vdots\\
+  B_{x_n} = & \{\tuple{x_n, y_1} & \tuple{x_n, y_2} & \dots & \tuple{x_n, y_m}\}
+\end{array}
+\]
+$x_i$లన్నీ వేర్వేరు, $y_j$లన్నీ వేర్వేరు కనుక ఈ అమరికలో
+ఏ రెండు జతలూ ఒకేలా ఉండవు. మొత్తం $n\cdot m$ జతలు ఉంటాయి.
+\end{proof}
+
+\begin{prob}
+$k$పై ఆగమనంతో, ప్రతి $k \ge 1$కూ ఈ విషయాన్ని చూపండి:
+$A$లో $n$ !!{element}s ఉంటే, $A^k$లో $n^k$ !!{element}s ఉంటాయి.
+\end{prob}
+
+\begin{ex}
+$A$ ఒక సమితి అయితే, $A$పై ఒక \emph{పదం} అంటే $A$లోని
+\tecase{gen}{!!{element}s} ఏదైనా క్రమం. అటువంటి క్రమాన్ని $A$లోని
+\tecase{gen}{!!{element}s} $n$-బహుళకంగా పరిగణించవచ్చు.
+ఉదాహరణకు $A = \{a, b, c\}$ అయితే, ``$bac$'' అనే క్రమాన్ని
+$\tuple{b, a, c}$ అనే త్రికంగా పరిగణించవచ్చు.
+పదాలు, అంటే సంకేతాల క్రమాలు, కంప్యూటర్ శాస్త్రంలో అత్యంత ముఖ్యమైనవి.
+ఒక ఆనవాయితీ ప్రకారం $A$లోని \tecase{acc}{!!{element}s}
+$1$ పొడవు గల క్రమాలుగా, $\emptyset$ను $0$ పొడవు గల క్రమంగా
+పరిగణిస్తాం. అప్పుడు $A$పై గల \emph{అన్ని} పదాల సమితి
+\[
+A^* = \{\emptyset\} \cup A \cup A^2 \cup A^3 \cup \dots
+\]
+\end{ex}
+
+\end{document}

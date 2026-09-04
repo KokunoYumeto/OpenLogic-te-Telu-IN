@@ -1,0 +1,178 @@
+% Part: sets-functions-relations
+% Chapter: sets
+% Section: unions-and-intersections
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{set}{uni}
+\olsection{సమ్మేళనాలు, ఛేదనాలు}
+
+\begin{explain}
+\olref[sfr][set][bas]{sec}లో ధర్మనిర్దేశం ద్వారా సమితులను
+నిర్వచించాం; అంటే $\Setabs{x}{\phi(x)}$ రూపంలోని నిర్వచనాలను
+పరిచయం చేశాం. ఇక్కడ వాడే $\phi$ అనే ధర్మంలో ఇంతకుముందే
+నిర్వచించిన సమితులను పేర్కొనవచ్చు. ఉదాహరణకు $A$, $B$ సమితులైతే,
+$\Setabs{x}{x \in A \lor x \in B}$ అనే సమితిలో $A$లో గానీ
+$B$లో గానీ !!{element}sగా ఉన్న వస్తువులన్నీ ఉంటాయి.
+అంటే ఇది $A$, $B$ల \tecase{acc}{!!{element}s} కలిపే సమితి.
+దీనిని \olref{fig:union}లో చూడవచ్చు. అందులో గుర్తించిన ప్రాంతం
+రెండు సమితులు $A$, $B$లకు చెందిన \tecase{acc}{!!{element}s}
+కలిపి చూపిస్తుంది.
+
+\begin{figure}
+  \olasset{assets/diagrams/union.tikz}
+  \caption{రెండు సమితుల సమ్మేళనం $A \cup B$ అనేది $A$లోని
+  \tecase{acc}{!!{element}s}, $B$లోని మూలకాలతో కలిపిన సమితి.}
+  \ollabel{fig:union}
+\end{figure}
+
+సమితులను కలిపే ఈ ప్రక్రియ ఉపయోగకరమైనదీ, తరచుగా వాడేదీ కనుక
+దీనికి ఒక నియతమైన పేరు, ఒక సంకేతం ఇస్తాం.
+\end{explain}
+
+\begin{defn}[సమ్మేళనం]
+$A$, $B$ అనే రెండు సమితుల \emph{సమ్మేళనం} $A \cup B$:
+ఇది $A$లోనో, $B$లోనో, లేదా రెండింటిలోనో !!{element}sగా ఉన్న
+వస్తువులన్నింటి సమితి.
+\[
+A \cup B = \Setabs{x}{x \in A \lor x \in B}
+\]
+\end{defn}
+
+\begin{ex}
+\tecase{acc}{!!{element}s} ఎన్నిసార్లు పేర్కొన్నామన్నది ముఖ్యం కాదు.
+అందువల్ల రెండు సమితులకు ఉమ్మడిగా !!a{element} ఉన్నప్పుడు,
+వాటి సమ్మేళనంలో ఆ !!{element} ఒక్కసారి మాత్రమే ఉంటుంది.
+ఉదాహరణకు $\{ a, b, c\} \cup \{ a, 0, 1\} = \{a, b, c, 0, 1\}$.
+
+ఒక సమితికీ, దాని ఉపసమితికీ సమ్మేళనం పెద్ద సమితే:
+$\{a, b, c \} \cup \{a \} = \{a, b, c\}$.
+
+ఏ సమితికైనా శూన్య సమితితో సమ్మేళనం అదే సమితి:
+$\{a, b, c \} \cup \emptyset = \{a, b, c \}$.
+\end{ex}
+
+\begin{prob}
+$A \subseteq B$ అయితే $A \cup B = B$ అని నిరూపించండి.
+\end{prob}
+
+\begin{explain}
+సమ్మేళనానికి ``ద్వంద్వమైన'' ప్రక్రియను కూడా పరిగణించవచ్చు.
+$A$లో !!{element}sగా ఉంటూ, $B$లో కూడా !!{element}sగా ఉండే
+\tecase{gen}{!!{element}s} సమితిని ఏర్పరచే ప్రక్రియ ఇది.
+దీనిని \emph{ఛేదనం} అంటాం; \olref{fig:intersection}లో దీనిని చూడవచ్చు.
+\begin{figure}
+  \olasset{assets/diagrams/intersection.tikz}
+  \caption{రెండు సమితుల ఛేదనం $A \cap B$ అనేది వాటికి ఉమ్మడిగా
+    ఉన్న \tecase{gen}{!!{element}s} సమితి.}
+  \ollabel{fig:intersection}
+\end{figure}
+\end{explain}
+
+\begin{defn}[ఛేదనం]
+$A$, $B$ అనే రెండు సమితుల \emph{ఛేదనం} $A \cap B$:
+ఇది $A$, $B$ రెండింటిలోనూ !!{element}sగా ఉన్న వస్తువులన్నింటి సమితి.
+\[
+A \cap B = \Setabs{x}{x \in A \land x \in B}
+\]
+రెండు సమితుల ఛేదనం శూన్యమైతే వాటిని \emph{వియుక్త} సమితులు అంటాం.
+అంటే వాటికి ఉమ్మడి !!{element}s ఏవీ ఉండవు.
+\end{defn}
+
+\begin{ex}
+రెండు సమితులకు ఉమ్మడి !!{element}s ఏవీ లేకపోతే, వాటి ఛేదనం శూన్యం:
+$\{ a, b, c\} \cap \{ 0, 1\} = \emptyset$.
+
+రెండు సమితులకు ఉమ్మడి !!{element}s ఉంటే, వాటన్నింటి సమితే ఛేదనం:
+$\{a, b, c \} \cap \{a, b, d \} = \{a, b\}$.
+
+ఒక సమితికీ, దాని ఉపసమితికీ ఛేదనం చిన్న సమితే:
+$\{a, b, c\} \cap \{a, b\} = \{a, b\}$.
+
+ఏ సమితికైనా శూన్య సమితితో ఛేదనం శూన్యమే:
+$\{a, b, c \} \cap \emptyset = \emptyset$.
+\end{ex}
+
+\begin{prob}
+$A \subseteq B$ అయితే $A \cap B = A$ అని కచ్చితంగా నిరూపించండి.
+\end{prob}
+
+\begin{explain}
+రెండుకంటే ఎక్కువ సమితుల సమ్మేళనం లేదా ఛేదనాన్ని కూడా ఏర్పరచవచ్చు.
+సాధారణంగా దీనికి ఒక చక్కని పద్ధతి ఉంది. సమ్మేళనం (లేదా ఛేదనం)
+ఏర్పరచదలచిన సమితులన్నింటినీ ఒకే సమితిలో చేర్చామనుకుందాం.
+అప్పుడు మూల సమితుల సమ్మేళనాన్ని, ఈ సమితిలోని కనీసం ఒక
+\tecase{dat}{!!{element}} చెందిన వస్తువులన్నింటి సమితిగా నిర్వచించవచ్చు.
+ఛేదనాన్ని, ఈ సమితిలోని ప్రతి \tecase{dat}{!!{element}} చెందిన వస్తువులన్నింటి
+సమితిగా నిర్వచించవచ్చు.
+\end{explain}
+
+\begin{defn}
+$A$ అనేది సమితుల సమితి అయితే, $\bigcup A$ అనేది $A$లోని
+\tecase{gen}{!!{element}s} \tecase{gen}{!!{element}s} సమితి:
+\begin{align*}
+\bigcup A & = \Setabs{x}{x \text{ అనేది } A\text{లోని \tecase{dat}{!!a{element}} చెందుతుంది}},
+\text{ అంటే,}\\
+& = \Setabs{x}{\text{ఏదో ఒక } B \in A
+  \text{ కోసం } x \in B}
+\end{align*}
+\end{defn}
+
+\begin{defn}
+$A$ అనేది సమితుల సమితి అయితే, $\bigcap A$ అనేది $A$లోని
+మూలకాలన్నింటికీ ఉమ్మడిగా ఉన్న వస్తువుల సమితి:
+\begin{align*}
+\bigcap A & = \Setabs{x}{x \text{ అనేది } A\text{లోని ప్రతి \tecase{dat}{!!{element}} చెందుతుంది}},
+\text{ అంటే,}\\
+ & = \Setabs{x}{\text{ప్రతి } B \in A\text{ కోసం}, x \in B}
+\end{align*}
+\end{defn}
+
+\begin{ex}
+$A = \{ \{ a, b \}, \{ a, d, e \}, \{ a, d \} \}$ అనుకుందాం.
+అప్పుడు $\bigcup A = \{ a, b, d, e \}$, $\bigcap A = \{ a \}$.
+\end{ex}
+\begin{prob}
+	$A$ ఒక సమితి అయి, $A \in B$ అయితే $A \subseteq \bigcup B$ అని చూపండి.
+\end{prob}
+
+$A_1$, $A_2$, \dots అనే సమితుల క్రమానికీ ఇదే విధంగా చేయవచ్చు:
+\begin{align*}
+\bigcup_i A_i & = \Setabs{x}{x \text{ అనేది ఏదో ఒక } A_i\text{కు చెందుతుంది}}\\
+\bigcap_i A_i & = \Setabs{x}{x \text{ అనేది ప్రతి } A_i\text{కు చెందుతుంది}}.
+\end{align*}
+
+సమితులకు ఒక \emph{సూచిక} ఉన్నప్పుడు, అంటే $I$ అనే సమితిలోని
+ప్రతి $i \in I$కూ $A_i$ను పరిగణిస్తున్నప్పుడు, ఈ సంక్షిప్త రూపాలను
+కూడా వాడవచ్చు:
+\begin{align*}
+	\bigcup_{i \in I} A_i & = \bigcup \Setabs{A_i }{i \in I}\\
+	\bigcap_{i \in I} A_i & = \bigcap\Setabs{A_i}{i \in I}
+\end{align*}
+
+చివరగా, $A$లో ఉంటూ $B$లో లేని \tecase{gen}{!!{element}s}
+సమితిని పరిశీలిద్దాం. దీనిని \olref{difference}లో చూపించవచ్చు.
+
+\begin{figure}
+  \olasset{assets/diagrams/difference.tikz}
+  \caption{రెండు సమితుల భేదం $A \setminus B$ అనేది $A$లో
+    !!{element}sగా ఉండి, $B$లో !!{element}sగా లేని వస్తువుల సమితి.}
+  \ollabel{difference}
+\end{figure}
+
+\begin{defn}[భేదం]
+\emph{సమితుల భేదం} $A \setminus B$ అనేది $A$లో
+!!{element}sగా ఉండి, $B$లో !!{element}sగా లేని వస్తువులన్నింటి సమితి.
+అంటే,
+\[
+A\setminus B = \Setabs{x}{x\in A \text{ మరియు } x \notin B}.
+\]
+\end{defn}
+
+\begin{prob}
+	$A \subsetneq B$ అయితే $B \setminus A \neq \emptyset$ అని నిరూపించండి.
+\end{prob}
+
+\end{document}

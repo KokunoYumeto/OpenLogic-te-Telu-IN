@@ -1,0 +1,2265 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-04T15:20:46.191Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Intertext prose is masked while its inline math remains checked.",
+  "units": [
+    {
+      "unit_id": "OLP-0011",
+      "source_path": "content/sets-functions-relations/relations/relations-complete.tex",
+      "source_sha256": "9720780fcf56a05f8f18c26234d7bebc24024116bb6549a151e0905845b41ef5",
+      "translation_sha256": "a68fa2effa82f3d3dc40c6273fc35a9c3a4e9b2df1a12b0399663a30ca040ed5",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport{relations-as-sets}",
+        "\\olimport{reflections}",
+        "\\olimport{special-properties}",
+        "\\olimport{equivalence-relations}",
+        "\\olimport{orders}",
+        "\\olimport{graphs}",
+        "\\olimport{trees}",
+        "\\olimport{operations}"
+      ],
+      "identifiers_target": [
+        "\\olimport{relations-as-sets}",
+        "\\olimport{reflections}",
+        "\\olimport{special-properties}",
+        "\\olimport{equivalence-relations}",
+        "\\olimport{orders}",
+        "\\olimport{graphs}",
+        "\\olimport{trees}",
+        "\\olimport{operations}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target": [],
+      "math_multiset_match": true,
+      "telugu_chars": 8,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: relations-complete",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: relations-complete"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olchapter{sfr}{rel}{Relations}",
+          "target_start": "\\olchapter{sfr}{rel}{సంబంధాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olimport{relations-as-sets}",
+          "target_start": "\\olimport{relations-as-sets}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport{reflections}",
+          "target_start": "\\olimport{reflections}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport{special-properties}",
+          "target_start": "\\olimport{special-properties}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\olimport{equivalence-relations}",
+          "target_start": "\\olimport{equivalence-relations}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport{orders}",
+          "target_start": "\\olimport{orders}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\olimport{graphs}",
+          "target_start": "\\olimport{graphs}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\olimport{trees}",
+          "target_start": "\\olimport{trees}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\olimport{operations}",
+          "target_start": "\\olimport{operations}"
+        },
+        {
+          "index": 13,
+          "source_start": "\\OLEndChapterHook",
+          "target_start": "\\OLEndChapterHook"
+        },
+        {
+          "index": 14,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{sfr}{rel}",
+        "\\olimport{relations-as-sets}",
+        "\\olimport{reflections}",
+        "\\olimport{special-properties}",
+        "\\olimport{equivalence-relations}",
+        "\\olimport{orders}",
+        "\\olimport{graphs}",
+        "\\olimport{trees}",
+        "\\olimport{operations}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{sfr}{rel}",
+        "\\olimport{relations-as-sets}",
+        "\\olimport{reflections}",
+        "\\olimport{special-properties}",
+        "\\olimport{equivalence-relations}",
+        "\\olimport{orders}",
+        "\\olimport{graphs}",
+        "\\olimport{trees}",
+        "\\olimport{operations}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0012",
+      "source_path": "content/sets-functions-relations/relations/relations-as-sets.tex",
+      "source_sha256": "2a67c6fb4846155e8e7cd8172fd1fb8214db96d508ceae5d70dec95d5dfcc1ff",
+      "translation_sha256": "89e3dfec8e41d0db5d2228770b3a439614e5421f2b691335e5cd0ba32b3c26c7",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{rel}{set}",
+        "\\olref[sfr][set][imp]{sec}",
+        "\\olref[sfr][set][pai]{sec}",
+        "\\ollabel{relations}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{rel}{set}",
+        "\\olref[sfr][set][imp]{sec}",
+        "\\olref[sfr][set][pai]{sec}",
+        "\\ollabel{relations}"
+      ],
+      "tokens_source": {
+        "!!{element}s": 2
+      },
+      "tokens_target": {
+        "!!{element}s": 2
+      },
+      "math_source": [
+        "$\\Nat$",
+        "$\\Int$",
+        "$\\Rat$",
+        "$\\Real$",
+        "$a$",
+        "$b$",
+        "$\\tuple{a,b}$",
+        "$a\\neqb$",
+        "$\\tuple{a,b}\\neq\\tuple{b,a}$",
+        "$2$",
+        "$\\{a,b\\}=\\{b,a\\}$",
+        "$A$",
+        "$B$",
+        "$A\\timesB$",
+        "$\\tuple{x,y}$",
+        "$x\\inA$",
+        "$y\\inB$",
+        "$A^{2}=A\\timesA$",
+        "$A$",
+        "$<$",
+        "$\\Nat$",
+        "$\\tuple{n,m}$",
+        "$n<m$",
+        "\\[R=\\Setabs{\\tuple{n,m}}{n,m\\in\\Natn<m}.\\]",
+        "$n$",
+        "$m$",
+        "$\\tuple{n,m}$",
+        "$R$",
+        "\\[n<m\\tuple{n,m}\\inR.\\]",
+        "$R$",
+        "$<$",
+        "$\\Nat$",
+        "$\\Nat^{2}$",
+        "$S\\subseteq\\Nat^{2}$",
+        "$n$",
+        "$m$",
+        "$\\tuple{n,m}\\inS$",
+        "$A$",
+        "$A^{2}$",
+        "$R\\subseteqA^{2}$",
+        "$A$",
+        "$x,y\\inA$",
+        "$Rxy$",
+        "$xRy$",
+        "$\\tuple{x,y}\\inR$",
+        "$\\Nat^{2}$",
+        "\\[\\begin{array}{ccccc}\\mathbf{\\tuple{0,0}}&\\tuple{0,1}&\\tuple{0,2}&\\tuple{0,3}&\\ldots\\\\\\tuple{1,0}&\\mathbf{\\tuple{1,1}}&\\tuple{1,2}&\\tuple{1,3}&\\ldots\\\\\\tuple{2,0}&\\tuple{2,1}&\\mathbf{\\tuple{2,2}}&\\tuple{2,3}&\\ldots\\\\\\tuple{3,0}&\\tuple{3,1}&\\tuple{3,2}&\\mathbf{\\tuple{3,3}}&\\ldots\\\\\\vdots&\\vdots&\\vdots&\\vdots&\\mathbf{\\ddots}\\end{array}\\]",
+        "$\\Nat^2$",
+        "\\[\\{\\tuple{0,0},\\tuple{1,1},\\tuple{2,2},\\dots\\},\\]",
+        "$\\Nat$",
+        "$\\Id{A}=\\Setabs{\\tuple{x,x}}{x\\inA}$",
+        "$A$",
+        "\\[L=\\{\\tuple{0,1},\\tuple{0,2},\\ldots,\\tuple{1,2},\\tuple{1,3},\\dots,\\tuple{2,3},\\tuple{2,4},\\ldots\\},\\]",
+        "$Lnm$",
+        "$n<m$",
+        "\\[G=\\{\\tuple{1,0},\\tuple{2,0},\\tuple{2,1},\\tuple{3,0},\\tuple{3,1},\\tuple{3,2},\\dots\\},\\]",
+        "$Gnm$",
+        "$n>m$",
+        "$L$",
+        "$I$",
+        "$K=L\\cupI$",
+        "$Knm$",
+        "$n\\lem$",
+        "$H=G\\cupI$",
+        "$L$",
+        "$G$",
+        "$K$",
+        "$H$",
+        "$L$",
+        "$G$",
+        "$L$",
+        "$G$",
+        "$n$",
+        "$Lnn$",
+        "$Gnn$",
+        "$A^{2}$",
+        "$A$",
+        "$\\emptyset$",
+        "$A^{2}$",
+        "$A$",
+        "$E=\\Setabs{\\tuple{n,m}}{n>5m\\timesn\\ge34}$",
+        "$\\subseteq$",
+        "$\\Pow{\\{a,b,c\\}}$"
+      ],
+      "math_target": [
+        "$\\Nat$",
+        "$\\Int$",
+        "$\\Rat$",
+        "$\\Real$",
+        "$a$",
+        "$b$",
+        "$\\tuple{a,b}$",
+        "$a\\neqb$",
+        "$\\tuple{a,b}\\neq\\tuple{b,a}$",
+        "$2$",
+        "$\\{a,b\\}=\\{b,a\\}$",
+        "$A$",
+        "$B$",
+        "$x\\inA$",
+        "$y\\inB$",
+        "$\\tuple{x,y}$",
+        "$A\\timesB$",
+        "$A^{2}=A\\timesA$",
+        "$A$",
+        "$\\Nat$",
+        "$<$",
+        "$n<m$",
+        "$\\tuple{n,m}$",
+        "\\[R=\\Setabs{\\tuple{n,m}}{n,m\\in\\Natn<m}.\\]",
+        "$n$",
+        "$m$",
+        "$\\tuple{n,m}$",
+        "$R$",
+        "\\[n<m\\tuple{n,m}\\inR.\\]",
+        "$R$",
+        "$\\Nat$",
+        "$<$",
+        "$\\Nat^{2}$",
+        "$S\\subseteq\\Nat^{2}$",
+        "$\\tuple{n,m}\\inS$",
+        "$n$",
+        "$m$",
+        "$A$",
+        "$A^{2}$",
+        "$R\\subseteqA^{2}$",
+        "$A$",
+        "$x,y\\inA$",
+        "$\\tuple{x,y}\\inR$",
+        "$Rxy$",
+        "$xRy$",
+        "$\\Nat^{2}$",
+        "\\[\\begin{array}{ccccc}\\mathbf{\\tuple{0,0}}&\\tuple{0,1}&\\tuple{0,2}&\\tuple{0,3}&\\ldots\\\\\\tuple{1,0}&\\mathbf{\\tuple{1,1}}&\\tuple{1,2}&\\tuple{1,3}&\\ldots\\\\\\tuple{2,0}&\\tuple{2,1}&\\mathbf{\\tuple{2,2}}&\\tuple{2,3}&\\ldots\\\\\\tuple{3,0}&\\tuple{3,1}&\\tuple{3,2}&\\mathbf{\\tuple{3,3}}&\\ldots\\\\\\vdots&\\vdots&\\vdots&\\vdots&\\mathbf{\\ddots}\\end{array}\\]",
+        "$\\Nat^2$",
+        "\\[\\{\\tuple{0,0},\\tuple{1,1},\\tuple{2,2},\\dots\\},\\]",
+        "$\\Nat$",
+        "$A$",
+        "$\\Id{A}=\\Setabs{\\tuple{x,x}}{x\\inA}$",
+        "\\[L=\\{\\tuple{0,1},\\tuple{0,2},\\ldots,\\tuple{1,2},\\tuple{1,3},\\dots,\\tuple{2,3},\\tuple{2,4},\\ldots\\},\\]",
+        "$Lnm$",
+        "$n<m$",
+        "\\[G=\\{\\tuple{1,0},\\tuple{2,0},\\tuple{2,1},\\tuple{3,0},\\tuple{3,1},\\tuple{3,2},\\dots\\},\\]",
+        "$Gnm$",
+        "$n>m$",
+        "$L$",
+        "$I$",
+        "$K=L\\cupI$",
+        "$Knm$",
+        "$n\\lem$",
+        "$H=G\\cupI$",
+        "$L$",
+        "$G$",
+        "$K$",
+        "$H$",
+        "$L$",
+        "$G$",
+        "$L$",
+        "$G$",
+        "$n$",
+        "$Lnn$",
+        "$Gnn$",
+        "$A^{2}$",
+        "$A$",
+        "$\\emptyset$",
+        "$A^{2}$",
+        "$A$",
+        "$E=\\Setabs{\\tuple{n,m}}{n>5m\\timesn\\ge34}$",
+        "$\\Pow{\\{a,b,c\\}}$",
+        "$\\subseteq$"
+      ],
+      "math_multiset_match": true,
+      "telugu_chars": 2341,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: relations\n% Section: relations-as-sets",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: relations\n% Section: relations-as-sets"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sfr}{rel}{set}\n\\olsection{Relations as Sets}",
+          "target_start": "\\olfileid{sfr}{rel}{set}\n\\olsection{సమితులుగా సంబంధాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{explain}\nIn \\olref[sfr][set][imp]{sec}, we mentioned some important sets:\n$\\Nat$, $\\Int$, $\\Rat$, $\\Rea",
+          "target_start": "\\begin{explain}\n\\olref[sfr][set][imp]{sec}లో $\\Nat$, $\\Int$, $\\Rat$, $\\Real$ అనే\nకొన్ని ముఖ్యమైన సమితులను పేర్"
+        },
+        {
+          "index": 6,
+          "source_start": "For this, recall two things from \\olref[sfr][set][pai]{sec}. First,\nrecall the notion of an \\emph{ordered pair",
+          "target_start": "దీనికోసం \\olref[sfr][set][pai]{sec}లోని రెండు విషయాలను గుర్తుచేసుకుందాం.\nమొదటిది \\emph{క్రమిత జత}: $a$, $b$ ఇచ"
+        },
+        {
+          "index": 7,
+          "source_start": "Now we will consider a particular relation on a set: the $<$-relation\non the set~$\\Nat$ of natural numbers. Co",
+          "target_start": "ఇప్పుడు ఒక సమితిపై ఒక నిర్దిష్ట సంబంధాన్ని పరిశీలిద్దాం: సహజ సంఖ్యల\nసమితి $\\Nat$పై $<$-సంబంధం. $n<m$ అయ్యే సంఖ"
+        },
+        {
+          "index": 8,
+          "source_start": "In the same way we can construct a subset of $\\Nat^{2}$ for any\nrelation between numbers. Conversely, given an",
+          "target_start": "ఇలాగే సంఖ్యల మధ్య ఏ సంబంధానికైనా $\\Nat^{2}$లో ఒక ఉపసమితిని\nనిర్మించవచ్చు. తిరుగుగా, సంఖ్యల జతల సమితి $S \\subse"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{defn}[Binary relation] \nA \\emph{binary relation} on a set $A$ is a subset of~$A^{2}$. If $R\n\\subseteq A",
+          "target_start": "\\begin{defn}[ద్విస్థానిక సంబంధం] \n$A$ అనే సమితిపై ఒక \\emph{ద్విస్థానిక సంబంధం} అంటే $A^{2}$లో ఒక\nఉపసమితి. $R \\"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{ex}\n  \\ollabel{relations}\nThe set $\\Nat^{2}$ of pairs of natural numbers can be listed in a\n2-dimension",
+          "target_start": "\\begin{ex}\n  \\ollabel{relations}\nసహజ సంఖ్యల జతల సమితి $\\Nat^{2}$ను ఈ విధంగా రెండు దిశలలో\nమాత్రిక రూపంలో జాబితా"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{explain}\nAlthough orders and identity are important and natural relations, it\nshould be emphasized that",
+          "target_start": "\\begin{explain}\nక్రమాలు, తాదాత్మ్యం ముఖ్యమైన సహజ సంబంధాలే అయినా, మన నిర్వచనం ప్రకారం\n$A^{2}$లోని \\emph{ఏ} ఉపసమ"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{prob}\n  List the !!{element}s of the relation $\\subseteq$ on the set\n  $\\Pow{\\{a, b, c\\}}$.\n\\end{prob}",
+          "target_start": "\\begin{prob}\n  $\\Pow{\\{a, b, c\\}}$ అనే సమితిపై $\\subseteq$ సంబంధంలోని\n  \\tecase{acc}{!!{element}s} జాబితాగా రా"
+        },
+        {
+          "index": 13,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{rel}{set}",
+        "\\olref[sfr][set][imp]{sec}",
+        "\\olref[sfr][set][pai]{sec}",
+        "\\ollabel{relations}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{rel}{set}",
+        "\\olref[sfr][set][imp]{sec}",
+        "\\olref[sfr][set][pai]{sec}",
+        "\\ollabel{relations}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0013",
+      "source_path": "content/sets-functions-relations/relations/reflections.tex",
+      "source_sha256": "75047e8806a58c0a0c07ae2e55554d9ad2affb9d5297b1d5585ebe0b2f3de651",
+      "translation_sha256": "5c415159dbb0c415c0b21c8abd76dcf3619f48e6cf65dc8004ee39139c824c4d",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{rel}{ref}",
+        "\\olref[set]{sec}",
+        "\\olref[set]{sec}",
+        "\\olref[set][pai]{wienerkuratowski}",
+        "\\citeyear{Benacerraf1965}",
+        "\\oliflabeldef{cumul:::part}",
+        "\\olref[cumul][][]{part}",
+        "\\olref[sfr][z][sep]{thm:NoUniversalSet}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{rel}{ref}",
+        "\\olref[set]{sec}",
+        "\\olref[set]{sec}",
+        "\\olref[set][pai]{wienerkuratowski}",
+        "\\citeyear{Benacerraf1965}",
+        "\\oliflabeldef{cumul:::part}",
+        "\\olref[cumul][][]{part}",
+        "\\olref[sfr][z][sep]{thm:NoUniversalSet}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\Nat$",
+        "$R=\\Setabs{\\tuple{n,m}}{n,m\\in\\Natn<m}$",
+        "$\\tuple{a,b}=\\{\\{a\\},\\{a,b\\}\\}$",
+        "$\\lVerta,b\\rVert=\\{\\{b\\},\\{a,b\\}\\}=\\tuple{b,a}$",
+        "$a\\neqb$",
+        "$\\tuple{a,b}\\neq\\lVerta,b\\rVert$",
+        "$\\lVerta,b\\rVert$",
+        "$\\tuple{a,b}$",
+        "\\begin{align*}R&=\\Setabs{\\tuple{n,m}}{n,m\\in\\Natn<m}\\\\S&=\\Setabs{\\lVertn,m\\rVert}{n,m\\in\\Natn<m}.\\end{align*}",
+        "$R\\neqS$",
+        "$\\Nat$",
+        "$R$",
+        "$S$",
+        "$\\in$",
+        "$\\Setabs{\\tuple{x,y}}{x\\iny}$",
+        "$I=\\Setabs{\\tuple{x,y}}{x\\iny}$",
+        "$\\bigcup\\bigcupI$",
+        "$Rxy$",
+        "$\\tuple{x,y}\\inR$",
+        "$\\in$",
+        "$\\in$",
+        "$\\tuple{x,y}\\inR$",
+        "$\\tuple{x,y}$",
+        "$\\in$",
+        "$R$"
+      ],
+      "math_target": [
+        "$\\Nat$",
+        "$R=\\Setabs{\\tuple{n,m}}{n,m\\in\\Natn<m}$",
+        "$\\tuple{a,b}=\\{\\{a\\},\\{a,b\\}\\}$",
+        "$\\lVerta,b\\rVert=\\{\\{b\\},\\{a,b\\}\\}=\\tuple{b,a}$",
+        "$a\\neqb$",
+        "$\\tuple{a,b}\\neq\\lVerta,b\\rVert$",
+        "$\\tuple{a,b}$",
+        "$\\lVerta,b\\rVert$",
+        "\\begin{align*}R&=\\Setabs{\\tuple{n,m}}{n,m\\in\\Natn<m}\\\\S&=\\Setabs{\\lVertn,m\\rVert}{n,m\\in\\Natn<m}.\\end{align*}",
+        "$R\\neqS$",
+        "$\\Nat$",
+        "$S$",
+        "$R$",
+        "$\\in$",
+        "$\\Setabs{\\tuple{x,y}}{x\\iny}$",
+        "$I=\\Setabs{\\tuple{x,y}}{x\\iny}$",
+        "$\\bigcup\\bigcupI$",
+        "$\\tuple{x,y}\\inR$",
+        "$Rxy$",
+        "$\\in$",
+        "$\\in$",
+        "$\\tuple{x,y}\\inR$",
+        "$\\tuple{x,y}$",
+        "$\\in$",
+        "$R$"
+      ],
+      "math_multiset_match": true,
+      "telugu_chars": 2242,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: relations\n% Section: reflections\n%\n\\documentclass[../../../include",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: relations\n% Section: reflections\n%\n\\documentclass[../../../include"
+        },
+        {
+          "index": 2,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\olfileid{sfr}{rel}{ref}\n\\olsection{Philosophical Reflections}",
+          "target_start": "\\olfileid{sfr}{rel}{ref}\n\\olsection{తాత్త్విక పరిశీలనలు}"
+        },
+        {
+          "index": 4,
+          "source_start": "In \\olref[set]{sec}, we defined relations as certain sets. We should\npause and ask a quick philosophical quest",
+          "target_start": "\\olref[set]{sec}లో సంబంధాలను కొన్ని సమితులుగా నిర్వచించాం.\nఇక్కడ కాసేపు ఆగి ఒక తాత్త్విక ప్రశ్న అడగాలి: అటువంట"
+        },
+        {
+          "index": 5,
+          "source_start": "First: in \\olref[set][pai]{wienerkuratowski}, we defined $\\tuple{a, b} =\n\\{\\{a\\}, \\{a, b\\}\\}$. Consider instea",
+          "target_start": "మొదటిది: \\olref[set][pai]{wienerkuratowski}లో\n$\\tuple{a, b} = \\{\\{a\\}, \\{a, b\\}\\}$ అని నిర్వచించాం.\nదీనికి బదు"
+        },
+        {
+          "index": 6,
+          "source_start": "Second: if we think that \\emph{every} relation should be identified\nwith a set, then the relation of set-membe",
+          "target_start": "రెండవది: \\emph{ప్రతి} సంబంధాన్నీ ఒక సమితితో తాదాత్మ్యం చేయాలని భావిస్తే,\nసమితి సభ్యత్వ సంబంధమైన $\\in$ కూడా ఒక "
+        },
+        {
+          "index": 7,
+          "source_start": "Third: when we ``identify'' relations with sets, we said that we would\nallow ourselves to write $Rxy$ for $\\tu",
+          "target_start": "మూడవది: సంబంధాలను సమితులతో ``తాదాత్మ్యం'' చేసినప్పుడు,\n$\\tuple{x,y} \\in R$కు బదులుగా $Rxy$ అని రాసుకోవచ్చని చె"
+        },
+        {
+          "index": 8,
+          "source_start": "So where does this leave us? Well, there is nothing \\emph{wrong} with\nour saying that the relations on the num",
+          "target_start": "మరి దీని నుంచి ఏం తేలుతుంది? సంఖ్యలపై సంబంధాలు సమితులే అని\nచెప్పడంలో \\emph{తప్పు} ఏమీ లేదు. ఆ మాటను ఏ ఉద్దేశంత"
+        },
+        {
+          "index": 9,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{rel}{ref}",
+        "\\olref[set]{sec}",
+        "\\olref[set]{sec}",
+        "\\olref[set][pai]{wienerkuratowski}",
+        "\\citeyear{Benacerraf1965}",
+        "\\oliflabeldef{cumul:::part}",
+        "\\olref[cumul][][]{part}",
+        "\\olref[sfr][z][sep]{thm:NoUniversalSet}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{rel}{ref}",
+        "\\olref[set]{sec}",
+        "\\olref[set]{sec}",
+        "\\olref[set][pai]{wienerkuratowski}",
+        "\\citeyear{Benacerraf1965}",
+        "\\oliflabeldef{cumul:::part}",
+        "\\olref[cumul][][]{part}",
+        "\\olref[sfr][z][sep]{thm:NoUniversalSet}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0014",
+      "source_path": "content/sets-functions-relations/relations/special-properties.tex",
+      "source_sha256": "006f2ea0d65e5069ef1509de94dd35a477ea835c19962da22f4bef48caffbee7",
+      "translation_sha256": "fd37f7663d542bd022a5a78bde478af4986eb6d66e3691931125a4ba48695f99",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{rel}{prp}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{rel}{prp}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\le$",
+        "$\\subseteq$",
+        "$\\Nat$",
+        "$\\le$",
+        "$\\Pow{A}$",
+        "$\\subseteq$",
+        "$R\\subseteqA^2$",
+        "$x\\inA$",
+        "$Rxx$",
+        "$R\\subseteqA^2$",
+        "$Rxy$",
+        "$Ryz$",
+        "$Rxz$",
+        "$R\\subseteqA^2$",
+        "$Rxy$",
+        "$Ryx$",
+        "$R\\subseteqA^2$",
+        "$Rxy$",
+        "$Ryx$",
+        "$x=y$",
+        "$x\\neqy$",
+        "$\\lnotRxy$",
+        "$\\lnotRyx$",
+        "$Rxy$",
+        "$Ryx$",
+        "$Rxy$",
+        "$Ryx$",
+        "$x=y$",
+        "$Rxy$",
+        "$Ryx$",
+        "$x=y$",
+        "$R\\subseteqA^2$",
+        "$x,y\\inA$",
+        "$x\\neqy$",
+        "$Rxy$",
+        "$Ryx$",
+        "$R\\subseteqA^2$",
+        "$x\\inA$",
+        "$Rxx$",
+        "$R\\subseteqA^2$",
+        "$x,y\\inA$",
+        "$Rxy$",
+        "$Ryx$",
+        "$A\\neq\\emptyset$",
+        "$A$",
+        "$A$",
+        "$R\\subseteqA^2$"
+      ],
+      "math_target": [
+        "$\\le$",
+        "$\\subseteq$",
+        "$\\le$",
+        "$\\Nat$",
+        "$\\subseteq$",
+        "$\\Pow{A}$",
+        "$x\\inA$",
+        "$Rxx$",
+        "$R\\subseteqA^2$",
+        "$Rxy$",
+        "$Ryz$",
+        "$Rxz$",
+        "$R\\subseteqA^2$",
+        "$Rxy$",
+        "$Ryx$",
+        "$R\\subseteqA^2$",
+        "$Rxy$",
+        "$Ryx$",
+        "$x=y$",
+        "$R\\subseteqA^2$",
+        "$x\\neqy$",
+        "$\\lnotRxy$",
+        "$\\lnotRyx$",
+        "$Rxy$",
+        "$Ryx$",
+        "$Rxy$",
+        "$Ryx$",
+        "$x=y$",
+        "$x=y$",
+        "$Rxy$",
+        "$Ryx$",
+        "$x,y\\inA$",
+        "$x\\neqy$",
+        "$Rxy$",
+        "$Ryx$",
+        "$R\\subseteqA^2$",
+        "$x\\inA$",
+        "$Rxx$",
+        "$R\\subseteqA^2$",
+        "$x,y\\inA$",
+        "$Rxy$",
+        "$Ryx$",
+        "$R\\subseteqA^2$",
+        "$A\\neq\\emptyset$",
+        "$A$",
+        "$A$",
+        "$R\\subseteqA^2$"
+      ],
+      "math_multiset_match": true,
+      "telugu_chars": 1752,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: relations\n% Section: special-properties",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: relations\n% Section: special-properties"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sfr}{rel}{prp}\n\\olsection{Special Properties of Relations}",
+          "target_start": "\\olfileid{sfr}{rel}{prp}\n\\olsection{సంబంధాల ప్రత్యేక ధర్మాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{intro}\nSome kinds of relations turn out to be so common that they have been\ngiven special names.  For i",
+          "target_start": "\\begin{intro}\nకొన్ని రకాల సంబంధాలు చాలా తరచుగా కనిపిస్తాయి కనుక వాటికి ప్రత్యేక\nపేర్లు పెట్టారు. ఉదాహరణకు $\\le"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}[Reflexivity]\nA relation $R \\subseteq A^2$ is \\emph{reflexive} iff, for every $x \\in\nA$, $Rxx$.\n\\e",
+          "target_start": "\\begin{defn}[స్వావర్తనత్వం]\nప్రతి $x \\in A$కూ $Rxx$ కావడం అనేది $R \\subseteq A^2$\nఅనే సంబంధం \\emph{స్వావర్తన} "
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}[Transitivity]\nA relation $R \\subseteq A^2$ is \\emph{transitive} iff, whenever $Rxy$\nand $Ryz$, th",
+          "target_start": "\\begin{defn}[సంక్రామకత్వం]\n$Rxy$, $Ryz$ ఉన్నప్పుడల్లా $Rxz$ కూడా ఉండటం అనేది\n$R \\subseteq A^2$ అనే సంబంధం \\emp"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{defn}[Symmetry]\nA relation~$R \\subseteq A^2$ is \\emph{symmetric} iff, whenever\n$Rxy$, then also~$Ryx$.\n",
+          "target_start": "\\begin{defn}[సౌష్ఠవం]\n$Rxy$ ఉన్నప్పుడల్లా $Ryx$ కూడా ఉండటం అనేది\n$R \\subseteq A^2$ అనే సంబంధం \\emph{సౌష్ఠవ} సం"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{defn}[Anti-symmetry]\nA relation~$R \\subseteq A^2$ is \\emph{anti-sym\\-met\\-ric} iff, whenever both\n$Rxy$",
+          "target_start": "\\begin{defn}[ప్రతిసౌష్ఠవం]\n$Rxy$, $Ryx$ రెండూ ఉన్నప్పుడల్లా $x=y$ కావడం అనేది\n$R \\subseteq A^2$ అనే సంబంధం \\em"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{explain}\nIn a symmetric relation, $Rxy$ and $Ryx$ always hold together, or\nneither holds.  In an anti-s",
+          "target_start": "\\begin{explain}\nసౌష్ఠవ సంబంధంలో $Rxy$, $Ryx$ ఎప్పుడూ రెండూ ఉంటాయి లేదా రెండూ ఉండవు.\nప్రతిసౌష్ఠవ సంబంధంలో $Rxy$"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{defn}[Connectivity]\nA relation $R \\subseteq A^2$ is \\emph{connected} if for all $x,y\\in\nA$, if $x \\neq ",
+          "target_start": "\\begin{defn}[సంయుక్తత్వం]\nప్రతి $x,y\\in A$కూ, $x \\neq y$ అయితే $Rxy$ లేదా $Ryx$\nఉన్నప్పుడు $R \\subseteq A^2$ అ"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{prob}\nGive examples of relations that are (a) reflexive and symmetric but\nnot transitive, (b) reflexive",
+          "target_start": "\\begin{prob}\nఈ ధర్మాలు గల సంబంధాలకు ఉదాహరణలు ఇవ్వండి:\n(a) స్వావర్తన, సౌష్ఠవ ధర్మాలు ఉండి సంక్రామక ధర్మం లేకపోవ"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{defn}[Irreflexivity]\nA relation $R \\subseteq A^2$ is called \\emph{irreflexive} if, for all $x \\in\nA$, n",
+          "target_start": "\\begin{defn}[అస్వావర్తనత్వం]\nప్రతి $x \\in A$కూ $Rxx$ లేకపోతే,\n$R \\subseteq A^2$ అనే సంబంధాన్ని \\emph{అస్వావర్త"
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{defn}[Asymmetry]\nA relation $R \\subseteq A^2$ is called \\emph{asymmetric} if for no pair $x,y\\in\nA$ we ",
+          "target_start": "\\begin{defn}[ఏకదిశత్వం]\nఏ జత $x,y\\in A$కూ $Rxy$, $Ryx$ రెండూ లేకపోతే,\n$R \\subseteq A^2$ అనే సంబంధాన్ని \\emph{ఏ"
+        },
+        {
+          "index": 15,
+          "source_start": "Note that if $A \\neq \\emptyset$, then no irreflexive relation on~$A$\nis reflexive and every asymmetric relatio",
+          "target_start": "$A \\neq \\emptyset$ అయితే, $A$పై ఏ అస్వావర్తన సంబంధమూ స్వావర్తన\nసంబంధం కాదనీ, $A$పై ప్రతి ఏకదిశ సంబంధమూ ప్రతిసౌ"
+        },
+        {
+          "index": 16,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{rel}{prp}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{rel}{prp}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0015",
+      "source_path": "content/sets-functions-relations/relations/equivalence-relations.tex",
+      "source_sha256": "d9531aa5cd774c12090fbd5c9fb289181e93cf7e9a96ecf7d4fd3fcdf5d250c7",
+      "translation_sha256": "851e7f553c671f20a0230a110fb7f4bd5516997008da2c83fea018c68042b21d",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{rel}{eqv}",
+        "\\ollabel{def:equivalenceclass}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{rel}{eqv}",
+        "\\ollabel{def:equivalenceclass}"
+      ],
+      "tokens_source": {
+        "!!^{element}s": 1,
+        "!!{element}s": 1
+      },
+      "tokens_target": {
+        "!!^{element}s": 1,
+        "!!{element}s": 1
+      },
+      "math_source": [
+        "$R$",
+        "$R\\subseteqA^2$",
+        "$x$",
+        "$y$",
+        "$A$",
+        "$R$",
+        "$Rxy$",
+        "$R\\subseteqA^2$",
+        "$x\\inA$",
+        "$x$",
+        "$A$",
+        "$\\equivrep{x}{R}=\\Setabs{y\\inA}{Rxy}$",
+        "$A$",
+        "$R$",
+        "$\\equivclass{A}{R}=\\Setabs{\\equivrep{x}{R}}{x\\inA}$",
+        "$A$",
+        "$R\\subseteqA^2$",
+        "$Rxy$",
+        "$\\equivrep{x}{R}=\\equivrep{y}{R}$",
+        "$Rxy$",
+        "$z\\in\\equivrep{x}{R}$",
+        "$Rxz$",
+        "$R$",
+        "$Ryz$",
+        "$Rxy$",
+        "$R$",
+        "$Ryx$",
+        "$Rxz$",
+        "$R$",
+        "$Ryz$",
+        "$z\\in\\equivrep{y}{R}$",
+        "$\\equivrep{x}{R}\\subseteq\\equivrep{y}{R}$",
+        "$\\equivrep{y}{R}\\subseteq\\equivrep{x}{R}$",
+        "$\\equivrep{x}{R}=\\equivrep{y}{R}$",
+        "$\\equivrep{x}{R}=\\equivrep{y}{R}$",
+        "$R$",
+        "$Ryy$",
+        "$y\\in\\equivrep{y}{R}$",
+        "$y\\in\\equivrep{x}{R}$",
+        "$\\equivrep{x}{R}=\\equivrep{y}{R}$",
+        "$Rxy$",
+        "$a$",
+        "$b$",
+        "$n\\in\\PosInt$",
+        "$a\\equiv_nb$",
+        "$a$",
+        "$n$",
+        "$b$",
+        "$n$",
+        "$a\\equiv_nb$",
+        "$k\\in\\Int$",
+        "$a-b=kn$",
+        "$\\equiv_n$",
+        "$n$",
+        "$n$",
+        "$\\equiv_n$",
+        "$\\equivclass{\\Nat}{\\equiv_n}$",
+        "$n$",
+        "$n$",
+        "$\\equivrep{0}{\\equiv_n}$",
+        "$n$",
+        "$1$",
+        "$\\equivrep{1}{\\equiv_n}$",
+        "$n$",
+        "$n-1$",
+        "$\\equivrep{n-1}{\\equiv_n}$",
+        "$\\equiv_n$",
+        "$n\\in\\PosInt$",
+        "$\\equivclass{\\Nat}{\\equiv_n}$",
+        "$n$"
+      ],
+      "math_target": [
+        "$R$",
+        "$R\\subseteqA^2$",
+        "$A$",
+        "$x$",
+        "$y$",
+        "$Rxy$",
+        "$R$",
+        "$R\\subseteqA^2$",
+        "$x\\inA$",
+        "$A$",
+        "$x$",
+        "$\\equivrep{x}{R}=\\Setabs{y\\inA}{Rxy}$",
+        "$R$",
+        "$A$",
+        "$\\equivclass{A}{R}=\\Setabs{\\equivrep{x}{R}}{x\\inA}$",
+        "$A$",
+        "$R\\subseteqA^2$",
+        "$Rxy$",
+        "$\\equivrep{x}{R}=\\equivrep{y}{R}$",
+        "$Rxy$",
+        "$z\\in\\equivrep{x}{R}$",
+        "$Rxz$",
+        "$R$",
+        "$Ryz$",
+        "$Rxy$",
+        "$R$",
+        "$Ryx$",
+        "$Rxz$",
+        "$R$",
+        "$Ryz$",
+        "$z\\in\\equivrep{y}{R}$",
+        "$\\equivrep{x}{R}\\subseteq\\equivrep{y}{R}$",
+        "$\\equivrep{y}{R}\\subseteq\\equivrep{x}{R}$",
+        "$\\equivrep{x}{R}=\\equivrep{y}{R}$",
+        "$\\equivrep{x}{R}=\\equivrep{y}{R}$",
+        "$R$",
+        "$Ryy$",
+        "$y\\in\\equivrep{y}{R}$",
+        "$\\equivrep{x}{R}=\\equivrep{y}{R}$",
+        "$y\\in\\equivrep{x}{R}$",
+        "$Rxy$",
+        "$a$",
+        "$b$",
+        "$n\\in\\PosInt$",
+        "$a$",
+        "$n$",
+        "$b$",
+        "$n$",
+        "$a\\equiv_nb$",
+        "$k\\in\\Int$",
+        "$a-b=kn$",
+        "$a\\equiv_nb$",
+        "$n$",
+        "$\\equiv_n$",
+        "$\\equiv_n$",
+        "$n$",
+        "$\\equivclass{\\Nat}{\\equiv_n}$",
+        "$n$",
+        "$n$",
+        "$\\equivrep{0}{\\equiv_n}$",
+        "$n$",
+        "$1$",
+        "$\\equivrep{1}{\\equiv_n}$",
+        "$n$",
+        "$n-1$",
+        "$\\equivrep{n-1}{\\equiv_n}$",
+        "$n\\in\\PosInt$",
+        "$\\equiv_n$",
+        "$\\equivclass{\\Nat}{\\equiv_n}$",
+        "$n$"
+      ],
+      "math_multiset_match": true,
+      "telugu_chars": 1481,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: relations\n% Section: equivalence-relations",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: relations\n% Section: equivalence-relations"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sfr}{rel}{eqv}",
+          "target_start": "\\olfileid{sfr}{rel}{eqv}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Equivalence Relations}",
+          "target_start": "\\olsection{తుల్యతా సంబంధాలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "The identity relation on a set is reflexive, symmetric, and\ntransitive. Relations~$R$ that have all three of t",
+          "target_start": "ఒక సమితిపై తాదాత్మ్య సంబంధానికి స్వావర్తన, సౌష్ఠవ, సంక్రామక ధర్మాలు\nఉంటాయి. ఈ మూడు ధర్మాలూ ఉన్న $R$ సంబంధాలు చ"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}[Equivalence relation] \nA relation $R \\subseteq A^2$ that is reflexive, symmetric, and\ntransitive ",
+          "target_start": "\\begin{defn}[తుల్యతా సంబంధం] \nస్వావర్తన, సౌష్ఠవ, సంక్రామక ధర్మాలు ఉన్న $R \\subseteq A^2$\nఅనే సంబంధాన్ని \\emph{"
+        },
+        {
+          "index": 8,
+          "source_start": "Equivalence relations give rise to the notion of an \\emph{equivalence\nclass}. An equivalence relation ``chunks",
+          "target_start": "తుల్యతా సంబంధాల నుంచి \\emph{తుల్యతా వర్గం} అనే భావన వస్తుంది.\nఒక తుల్యతా సంబంధం ప్రవేశాన్ని వేర్వేరు భాగాలుగా "
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{defn}\\ollabel{def:equivalenceclass}\nLet $R \\subseteq A^2$ be an equivalence relation. For each $x \\in A",
+          "target_start": "\\begin{defn}\\ollabel{def:equivalenceclass}\n$R \\subseteq A^2$ ఒక తుల్యతా సంబంధం అనుకుందాం.\nప్రతి $x \\in A$కూ, $"
+        },
+        {
+          "index": 10,
+          "source_start": "The next result vindicates the definition of an equivalence class, in\nproving that the equivalence classes are",
+          "target_start": "తుల్యతా వర్గాలు నిజంగానే $A$ను భాగాలుగా విభజిస్తాయని నిరూపించడం\nద్వారా, ఈ నిర్వచనాన్ని తదుపరి ఫలితం సమర్థిస్తు"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{prop}\nIf $R \\subseteq A^2$ is an equivalence relation, then $Rxy$ iff\n$\\equivrep{x}{R} = \\equivrep{y}{R",
+          "target_start": "\\begin{prop}\n$R \\subseteq A^2$ ఒక తుల్యతా సంబంధం అయితే,\n$Rxy$ కావడానికి అవసరమైన మరియు సరిపడే షరతు\n$\\equivrep{x"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{proof}\nFor the left-to-right direction, suppose $Rxy$, and let $z \\in\n\\equivrep{x}{R}$. By definition, ",
+          "target_start": "\\begin{proof}\nఎడమ నుంచి కుడి దిశకు, $Rxy$ అనుకుందాం; $z \\in \\equivrep{x}{R}$\nతీసుకుందాం. నిర్వచనం ప్రకారం $Rxz"
+        },
+        {
+          "index": 13,
+          "source_start": "For the right-to-left direction, suppose $\\equivrep{x}{R} =\n\\equivrep{y}{R}$. Since $R$ is reflexive, $Ryy$, s",
+          "target_start": "కుడి నుంచి ఎడమ దిశకు, $\\equivrep{x}{R} = \\equivrep{y}{R}$ అనుకుందాం.\n$R$ స్వావర్తన సంబంధం కనుక $Ryy$; అందువల్ల"
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{ex}\nA nice example of equivalence relations comes from modular arithmetic.\nFor any $a$, $b$, and $n \\in",
+          "target_start": "\\begin{ex}\nతుల్యతా సంబంధాలకు శేషాల ఆధారిత అంకగణితం చక్కని ఉదాహరణను ఇస్తుంది.\nఏ $a$, $b$, $n \\in \\PosInt$కైనా, "
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{prob}\nShow that $\\equiv_n$ is an equivalence relation, for any $n \\in\n\\PosInt$, and that $\\equivclass{\\",
+          "target_start": "\\begin{prob}\nప్రతి $n \\in \\PosInt$కూ $\\equiv_n$ తుల్యతా సంబంధమనీ,\n$\\equivclass{\\Nat}{\\equiv_n}$లో కచ్చితంగా $n"
+        },
+        {
+          "index": 16,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{rel}{eqv}",
+        "\\ollabel{def:equivalenceclass}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{rel}{eqv}",
+        "\\ollabel{def:equivalenceclass}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0016",
+      "source_path": "content/sets-functions-relations/relations/orders.tex",
+      "source_sha256": "79593789022fef31c0609b9c94856e2aef5cd5e88e92864e782bb6e6e5f4bce4",
+      "translation_sha256": "85d10bf22024fd1555b556a29f89bae04e46af815faed9bce865037371c7c74d",
+      "source_blocks": 30,
+      "target_blocks": 30,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{rel}{ord}",
+        "\\ollabel{def:linearorder}",
+        "\\ollabel{def:strictlinearorder}",
+        "\\ollabel{prop:stricttopartial}",
+        "\\ollabel{prop:partialtostrict}",
+        "\\olref[sfr][rel][ord]{prop:partialtostrict}",
+        "\\ollabel{prop:extensionality-strictlinearorders}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{rel}{ord}",
+        "\\ollabel{def:linearorder}",
+        "\\ollabel{def:strictlinearorder}",
+        "\\ollabel{prop:stricttopartial}",
+        "\\ollabel{prop:partialtostrict}",
+        "\\olref[sfr][rel][ord]{prop:partialtostrict}",
+        "\\ollabel{prop:extensionality-strictlinearorders}"
+      ],
+      "tokens_source": {
+        "!!{element}": 1
+      },
+      "tokens_target": {
+        "!!{element}": 1
+      },
+      "math_source": [
+        "$\\le$",
+        "$<$",
+        "$A$",
+        "$A$",
+        "$\\preccurlyeq$",
+        "$\\Bin^*$",
+        "$x\\preccurlyeqy$",
+        "$\\len{x}\\le\\len{y}$",
+        "$01\\preccurlyeq10$",
+        "$10\\preccurlyeq01$",
+        "$01\\neq10$",
+        "$\\subseteq$",
+        "$a\\neqb$",
+        "$\\Pow{\\{a,b\\}}=\\{\\emptyset,\\{a\\},\\{b\\},\\{a,b\\}\\}$",
+        "$\\{a\\}\\nsubseteq\\{b\\}$",
+        "$\\{a\\}\\neq\\{b\\}$",
+        "$\\{b\\}\\nsubseteq\\{a\\}$",
+        "$n$",
+        "$m$",
+        "$n\\midm$",
+        "$n$",
+        "$m$",
+        "$k$",
+        "$m=kn$",
+        "$\\Nat$",
+        "$2\\nmid3$",
+        "$3\\nmid2$",
+        "$\\Int$",
+        "$1\\mid-1$",
+        "$-1\\mid1$",
+        "$1\\neq-1$",
+        "$A^*$",
+        "$s\\sqsubseteqs'$",
+        "$s=\\emptyseq$",
+        "$s=s'$",
+        "$s=\\tuple{s_1,\\dots,s_n}$",
+        "$s'=\\tuple{s_1,\\dots,s_n,s_{n+1},\\dots,s_m}$",
+        "$s\\sqsubseteqs'$",
+        "$s$",
+        "$s'$",
+        "$A^*$",
+        "$a\\neqb$",
+        "$ab\\not\\sqsubseteqba$",
+        "$ba\\not\\sqsubseteqab$",
+        "$\\le$",
+        "$<$",
+        "$\\subseteq$",
+        "$\\subsetneq$",
+        "$R$",
+        "$A$",
+        "$\\Id{A}$",
+        "$\\tuple{x,x}$",
+        "$R$",
+        "$\\Id{A}$",
+        "$R$",
+        "$A$",
+        "$R^+=R\\cup\\Id{A}$",
+        "$R$",
+        "$R^+$",
+        "$R$",
+        "$R\\subseteqA^2$",
+        "$R$",
+        "$R^+=R\\cup\\Id{A}$",
+        "$R^+$",
+        "$R^+$",
+        "$\\tuple{x,x}\\in\\Id{A}\\subseteqR^+$",
+        "$x\\inA$",
+        "$R^+$",
+        "$R^+xy$",
+        "$R^+yx$",
+        "$x\\neqy$",
+        "$\\tuple{x,y}\\inR\\cup\\Id{A}$",
+        "$\\tuple{x,y}\\notin\\Id{A}$",
+        "$\\tuple{x,y}\\inR$",
+        "$Rxy$",
+        "$Ryx$",
+        "$R$",
+        "$R^+xy$",
+        "$R^+yz$",
+        "$\\tuple{x,y}\\inR$",
+        "$\\tuple{y,z}\\inR$",
+        "$\\tuple{x,z}\\inR$",
+        "$R$",
+        "$\\tuple{x,y}\\in\\Id{A}$",
+        "$x=y$",
+        "$\\tuple{y,z}\\in\\Id{A}$",
+        "$y=z$",
+        "$R^+yz$",
+        "$x=y$",
+        "$R^+xz$",
+        "$R^+xz$",
+        "$R^+$",
+        "$R$",
+        "$x\\neqy$",
+        "$Rxy$",
+        "$Ryx$",
+        "$\\tuple{x,y}\\inR$",
+        "$\\tuple{y,x}\\inR$",
+        "$R\\subseteqR^+$",
+        "$R^+$",
+        "$R^+$",
+        "$R$",
+        "$A$",
+        "$R^-=R\\setminus\\Id{A}$",
+        "$R$",
+        "$R^-$",
+        "$<$",
+        "$A$",
+        "\\[(\\foralla,b\\inA)((\\forallx\\inA)(x<a\\liffx<b)\\lifa=b).\\]",
+        "$(\\forallx\\inA)(x<a\\liffx<b)$",
+        "$a<b$",
+        "$a<a$",
+        "$<$",
+        "$a\\nlessb$",
+        "$b\\nlessa$",
+        "$a=b$",
+        "$<$"
+      ],
+      "math_target": [
+        "$\\le$",
+        "$<$",
+        "$A$",
+        "$A$",
+        "$\\Bin^*$",
+        "$\\preccurlyeq$",
+        "$x\\preccurlyeqy$",
+        "$\\len{x}\\le\\len{y}$",
+        "$01\\preccurlyeq10$",
+        "$10\\preccurlyeq01$",
+        "$01\\neq10$",
+        "$\\subseteq$",
+        "$a\\neqb$",
+        "$\\Pow{\\{a,b\\}}=\\{\\emptyset,\\{a\\},\\{b\\},\\{a,b\\}\\}$",
+        "$\\{a\\}\\nsubseteq\\{b\\}$",
+        "$\\{a\\}\\neq\\{b\\}$",
+        "$\\{b\\}\\nsubseteq\\{a\\}$",
+        "$n$",
+        "$m$",
+        "$n$",
+        "$m$",
+        "$n\\midm$",
+        "$k$",
+        "$m=kn$",
+        "$\\Nat$",
+        "$2\\nmid3$",
+        "$3\\nmid2$",
+        "$\\Int$",
+        "$1\\mid-1$",
+        "$-1\\mid1$",
+        "$1\\neq-1$",
+        "$A^*$",
+        "$s\\sqsubseteqs'$",
+        "$s=\\emptyseq$",
+        "$s=s'$",
+        "$s=\\tuple{s_1,\\dots,s_n}$",
+        "$s'=\\tuple{s_1,\\dots,s_n,s_{n+1},\\dots,s_m}$",
+        "$s\\sqsubseteqs'$",
+        "$s$",
+        "$s'$",
+        "$A^*$",
+        "$a\\neqb$",
+        "$ab\\not\\sqsubseteqba$",
+        "$ba\\not\\sqsubseteqab$",
+        "$<$",
+        "$\\le$",
+        "$\\subsetneq$",
+        "$\\subseteq$",
+        "$A$",
+        "$R$",
+        "$\\Id{A}$",
+        "$\\tuple{x,x}$",
+        "$R$",
+        "$\\Id{A}$",
+        "$R$",
+        "$A$",
+        "$R^+=R\\cup\\Id{A}$",
+        "$R$",
+        "$R^+$",
+        "$R$",
+        "$R\\subseteqA^2$",
+        "$R$",
+        "$R^+=R\\cup\\Id{A}$",
+        "$R^+$",
+        "$x\\inA$",
+        "$\\tuple{x,x}\\in\\Id{A}\\subseteqR^+$",
+        "$R^+$",
+        "$R^+$",
+        "$R^+xy$",
+        "$R^+yx$",
+        "$x\\neqy$",
+        "$\\tuple{x,y}\\inR\\cup\\Id{A}$",
+        "$\\tuple{x,y}\\notin\\Id{A}$",
+        "$\\tuple{x,y}\\inR$",
+        "$Rxy$",
+        "$Ryx$",
+        "$R$",
+        "$R^+xy$",
+        "$R^+yz$",
+        "$\\tuple{x,y}\\inR$",
+        "$\\tuple{y,z}\\inR$",
+        "$R$",
+        "$\\tuple{x,z}\\inR$",
+        "$\\tuple{x,y}\\in\\Id{A}$",
+        "$x=y$",
+        "$\\tuple{y,z}\\in\\Id{A}$",
+        "$y=z$",
+        "$R^+yz$",
+        "$x=y$",
+        "$R^+xz$",
+        "$R^+xz$",
+        "$R^+$",
+        "$R$",
+        "$x\\neqy$",
+        "$Rxy$",
+        "$Ryx$",
+        "$\\tuple{x,y}\\inR$",
+        "$\\tuple{y,x}\\inR$",
+        "$R\\subseteqR^+$",
+        "$R^+$",
+        "$R^+$",
+        "$R$",
+        "$A$",
+        "$R^-=R\\setminus\\Id{A}$",
+        "$R$",
+        "$R^-$",
+        "$<$",
+        "$A$",
+        "\\[(\\foralla,b\\inA)((\\forallx\\inA)(x<a\\liffx<b)\\lifa=b).\\]",
+        "$(\\forallx\\inA)(x<a\\liffx<b)$",
+        "$a<b$",
+        "$a<a$",
+        "$<$",
+        "$a\\nlessb$",
+        "$b\\nlessa$",
+        "$<$",
+        "$a=b$"
+      ],
+      "math_multiset_match": true,
+      "telugu_chars": 2996,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: relations\n% Section: orders",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: relations\n% Section: orders"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sfr}{rel}{ord}\n\\olsection{Orders}",
+          "target_start": "\\olfileid{sfr}{rel}{ord}\n\\olsection{క్రమాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{explain}\nMany of our comparisons involve describing some objects as being\n``less than'', ``equal to'', ",
+          "target_start": "\\begin{explain}\nమనం చేసే అనేక పోలికలలో, ఒక నిర్దిష్ట దృష్టిలో కొన్ని వస్తువులు ఇతర\nవస్తువుల ``కంటే చిన్నవి'', "
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}[Preorder]\nA relation which is both reflexive and transitive is called a\n\\emph{preorder.}  \n\\end{d",
+          "target_start": "\\begin{defn}[పూర్వక్రమం]\nస్వావర్తన, సంక్రామక ధర్మాలు రెండూ ఉన్న సంబంధాన్ని\n\\emph{పూర్వక్రమం} అంటాం.\n\\end{defn}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}[Partial order]\nA preorder which is also anti-symmetric is called a\n\\emph{partial order}.\n\\end{def",
+          "target_start": "\\begin{defn}[పాక్షిక క్రమం]\nప్రతిసౌష్ఠవ ధర్మం కూడా ఉన్న పూర్వక్రమాన్ని\n\\emph{పాక్షిక క్రమం} అంటాం.\n\\end{defn}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{defn}[Linear order]\\ollabel{def:linearorder}\nA partial order which is also connected is called a\n\\emph{",
+          "target_start": "\\begin{defn}[రేఖీయ క్రమం]\\ollabel{def:linearorder}\nసంయుక్త ధర్మం కూడా ఉన్న పాక్షిక క్రమాన్ని\n\\emph{సంపూర్ణ క్ర"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{ex}\nEvery linear order is also a partial order, and every partial order is\nalso a preorder, but the con",
+          "target_start": "\\begin{ex}\nప్రతి రేఖీయ క్రమమూ పాక్షిక క్రమమే; ప్రతి పాక్షిక క్రమమూ పూర్వక్రమమే.\nకానీ తిరుగు వాదనలు చెల్లవు. $A"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{ex}\nConsider the \\emph{no longer than} relation $\\preccurlyeq$\non~$\\Bin^*$: $x \\preccurlyeq y$ iff $\\le",
+          "target_start": "\\begin{ex}\n$\\Bin^*$పై \\emph{కంటే పొడవైనది కాదు} అనే $\\preccurlyeq$ సంబంధాన్ని\nపరిశీలించండి: $x \\preccurlyeq y$"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{ex}\nAn important partial order is the relation $\\subseteq$ on a set of\nsets. This is not in general a l",
+          "target_start": "\\begin{ex}\nసమితుల సమితిపై $\\subseteq$ సంబంధం ఒక ముఖ్యమైన పాక్షిక క్రమం.\nసాధారణంగా ఇది రేఖీయ క్రమం కాదు. ఎందుకం"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{ex}\nThe relation of \\emph{divisibility without remainder} gives us a\npartial order which isn't a linear",
+          "target_start": "\\begin{ex}\n\\emph{శేషం లేకుండా భాగించడం} అనే సంబంధం, రేఖీయ క్రమం కాని\nపాక్షిక క్రమానికి ఉదాహరణ. పూర్ణ సంఖ్యలు $"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{ex}\nThe \\emph{extension} relation on a set of sequences~$A^*$ is the\nfollowing: $s \\sqsubseteq s'$ iff ",
+          "target_start": "\\begin{ex}\nక్రమాల సమితి $A^*$పై \\emph{పొడిగింపు} సంబంధం ఇలా ఉంటుంది:\n$s \\sqsubseteq s'$ కావడానికి అవసరమైన మరియ"
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{defn}[Strict order]\nA \\emph{strict order} is a relation which is irreflexive, asymmetric,\nand transitiv",
+          "target_start": "\\begin{defn}[కఠిన క్రమం]\nఅస్వావర్తన, ఏకదిశ, సంక్రామక ధర్మాలు ఉన్న సంబంధాన్ని\n\\emph{కఠిన క్రమం} అంటాం.\n\\end{def"
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{defn}[Strict linear order]\\ollabel{def:strictlinearorder}\nA strict order which is also connected is cal",
+          "target_start": "\\begin{defn}[కఠిన రేఖీయ క్రమం]\\ollabel{def:strictlinearorder}\nసంయుక్త ధర్మం కూడా ఉన్న కఠిన క్రమాన్ని\n\\emph{కఠి"
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{ex}\n$\\le$ is the linear order corresponding to the strict linear\norder~$<$. $\\subseteq$ is the partial ",
+          "target_start": "\\begin{ex}\nకఠిన రేఖీయ క్రమమైన $<$కు అనుగుణమైన రేఖీయ క్రమం $\\le$.\nకఠిన క్రమమైన $\\subsetneq$కు అనుగుణమైన పాక్షిక"
+        },
+        {
+          "index": 17,
+          "source_start": "Any strict order $R$ on~$A$ can be turned into a partial order by\nadding the diagonal $\\Id{A}$, i.e., adding a",
+          "target_start": "$A$పై ఏ కఠిన క్రమం $R$నైనా, వికర్ణమైన $\\Id{A}$ను,\nఅంటే $\\tuple{x, x}$ జతలన్నింటినీ చేర్చి పాక్షిక క్రమంగా మార్"
+        },
+        {
+          "index": 18,
+          "source_start": "\\begin{prop}\\ollabel{prop:stricttopartial}\nIf $R$ is a strict order on~$A$, then $R^+ = R \\cup \\Id{A}$ is a\npa",
+          "target_start": "\\begin{prop}\\ollabel{prop:stricttopartial}\n$R$ అనేది $A$పై కఠిన క్రమం అయితే, $R^+ = R \\cup \\Id{A}$\nపాక్షిక క్ర"
+        },
+        {
+          "index": 19,
+          "source_start": "\\begin{proof}\nSuppose $R$ is a strict order, i.e., $R \\subseteq A^2$ and $R$ is\nirreflexive, asymmetric, and t",
+          "target_start": "\\begin{proof}\n$R$ కఠిన క్రమం అనుకుందాం. అంటే $R \\subseteq A^2$, అలాగే\n$R$కు అస్వావర్తన, ఏకదిశ, సంక్రామక ధర్మాల"
+        },
+        {
+          "index": 20,
+          "source_start": "$R^+$ is clearly reflexive, since $\\tuple{x, x} \\in \\Id{A} \\subseteq\nR^+$ for all $x \\in A$. ",
+          "target_start": "ప్రతి $x \\in A$కూ $\\tuple{x, x} \\in \\Id{A} \\subseteq R^+$\nకనుక, $R^+$కు స్వావర్తన ధర్మం స్పష్టంగా ఉంది."
+        },
+        {
+          "index": 21,
+          "source_start": "To show $R^+$ is anti-symmetric, suppose for reductio that $R^+xy$ and\n$R^+yx$ but $x \\neq y$. Since $\\tuple{x",
+          "target_start": "$R^+$కు ప్రతిసౌష్ఠవ ధర్మం ఉందని చూపడానికి, విరోధ నిరూపణ కోసం\n$R^+xy$, $R^+yx$ అయినా $x \\neq y$ అనుకుందాం.\n$\\tu"
+        },
+        {
+          "index": 22,
+          "source_start": "To establish transitivity, suppose that $R^+xy$ and $R^+yz$. If both\n$\\tuple{x, y} \\in R$ and $\\tuple{y,z} \\in",
+          "target_start": "సంక్రామకత్వాన్ని స్థాపించడానికి $R^+xy$, $R^+yz$ అనుకుందాం.\n$\\tuple{x, y} \\in R$, $\\tuple{y,z} \\in R$ రెండూ ఉం"
+        },
+        {
+          "index": 23,
+          "source_start": "Concerning the ``moreover'' clause, suppose that $R$ is also connected. \nSo for all $x \\neq y$, either $Rxy$ o",
+          "target_start": "``అంతేకాక'' అనే భాగం కోసం, $R$కు సంయుక్త ధర్మం కూడా ఉందనుకుందాం.\nకనుక ప్రతి $x \\neq y$కూ $Rxy$ లేదా $Ryx$;\nఅంట"
+        },
+        {
+          "index": 24,
+          "source_start": "\\begin{prop}\\ollabel{prop:partialtostrict}\nIf $R$ is a partial order on~$A$, then $R^- = R \\setminus \\Id{A}$ i",
+          "target_start": "\\begin{prop}\\ollabel{prop:partialtostrict}\n$R$ అనేది $A$పై పాక్షిక క్రమం అయితే,\n$R^- = R \\setminus \\Id{A}$ కఠి"
+        },
+        {
+          "index": 25,
+          "source_start": "\\begin{proof}\nThis is left as an exercise.\n\\end{proof}",
+          "target_start": "\\begin{proof}\nదీనిని అభ్యాసంగా వదిలివేస్తున్నాం.\n\\end{proof}"
+        },
+        {
+          "index": 26,
+          "source_start": "\\begin{prob}\nGive a proof of \\olref[sfr][rel][ord]{prop:partialtostrict}. \n\\end{prob}",
+          "target_start": "\\begin{prob}\n\\olref[sfr][rel][ord]{prop:partialtostrict}కు నిరూపణ ఇవ్వండి.\n\\end{prob}"
+        },
+        {
+          "index": 27,
+          "source_start": "The following simple result establishes that strict linear orders\nsatisfy an extensionality-like property:",
+          "target_start": "కఠిన రేఖీయ క్రమాలకు మూలకాధారిత సమానత్వాన్ని పోలిన ధర్మం ఉంటుందని\nఈ సరళమైన ఫలితం స్థాపిస్తుంది:"
+        },
+        {
+          "index": 28,
+          "source_start": "\\begin{prop}\\ollabel{prop:extensionality-strictlinearorders}\nIf $<$ is a strict linear order on $A$, then:\n\\[\n",
+          "target_start": "\\begin{prop}\\ollabel{prop:extensionality-strictlinearorders}\n$<$ అనేది $A$పై కఠిన రేఖీయ క్రమం అయితే:\n\\[\n  (\\fo"
+        },
+        {
+          "index": 29,
+          "source_start": "\\begin{proof}\nSuppose $(\\forall x \\in A)(x < a \\liff x < b)$. If $a < b$, then $a <\na$, contradicting the fact",
+          "target_start": "\\begin{proof}\n$(\\forall x \\in A)(x < a \\liff x < b)$ అనుకుందాం.\n$a < b$ అయితే $a < a$; ఇది $<$కు అస్వావర్తన ధర"
+        },
+        {
+          "index": 30,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{rel}{ord}",
+        "\\ollabel{def:linearorder}",
+        "\\ollabel{def:strictlinearorder}",
+        "\\ollabel{prop:stricttopartial}",
+        "\\ollabel{prop:partialtostrict}",
+        "\\olref[sfr][rel][ord]{prop:partialtostrict}",
+        "\\ollabel{prop:extensionality-strictlinearorders}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{rel}{ord}",
+        "\\ollabel{def:linearorder}",
+        "\\ollabel{def:strictlinearorder}",
+        "\\ollabel{prop:stricttopartial}",
+        "\\ollabel{prop:partialtostrict}",
+        "\\olref[sfr][rel][ord]{prop:partialtostrict}",
+        "\\ollabel{prop:extensionality-strictlinearorders}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0017",
+      "source_path": "content/sets-functions-relations/relations/graphs.tex",
+      "source_sha256": "dec624ef4e71903b72a9f0b5fcc6a15a2e0f897f9ebe881dd9c9e21333aeee75",
+      "translation_sha256": "3dc4cce85e8e9ae78a8d6566ddc77dbdd8e17008a031016eda22c3d051176aa4",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{rel}{grp}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{rel}{grp}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$G=\\tuple{V,E}$",
+        "$V$",
+        "$E\\subseteqV^2$",
+        "$v_1$",
+        "$v_2$",
+        "$\\tuple{v_1,v_2}\\inE$",
+        "$R$",
+        "$X$",
+        "$\\tuple{X,R}$",
+        "$\\tuple{V,E}$",
+        "$E\\subseteqV^2$",
+        "$V$",
+        "$\\tuple{V,E}$",
+        "$V=\\{1,2,3,4\\}$",
+        "$E=\\{\\tuple{1,1},\\allowbreak\\tuple{1,2},\\allowbreak\\tuple{1,3},\\allowbreak\\tuple{2,3}\\}$",
+        "\\begin{align*}&\\begin{tikzpicture}[->,nodedistance=2cm]\\node[draw,circle](A){$1$};\\node[draw,circle](B)[rightof=A]{$2$};\\node[draw,circle](C)[belowof=B]{$3$};\\node[draw,circle](D)[rightof=B]{$4$};\\draw(A)to[loopabove](A);\\draw(A)to(B);\\draw(A)to(C);\\draw(B)to(C);\\end{tikzpicture}$V'=\\{1,2,3\\}$$\\tuple{V',E}$&\\begin{tikzpicture}[->,nodedistance=2cm]\\node[draw,circle](A){$1$};\\node[draw,circle](B)[rightof=A]{$2$};\\node[draw,circle](C)[belowof=B]{$3$};\\draw(A)to[loopabove](A);\\draw(A)to(B);\\draw(A)to(C);\\draw(B)to(C);\\end{tikzpicture}\\end{align*}",
+        "$\\le$",
+        "$\\{1,2,3,4\\}$"
+      ],
+      "math_target": [
+        "$G=\\tuple{V,E}$",
+        "$V$",
+        "$E\\subseteqV^2$",
+        "$\\tuple{v_1,v_2}\\inE$",
+        "$v_1$",
+        "$v_2$",
+        "$X$",
+        "$R$",
+        "$\\tuple{X,R}$",
+        "$\\tuple{V,E}$",
+        "$V$",
+        "$E\\subseteqV^2$",
+        "$V=\\{1,2,3,4\\}$",
+        "$E=\\{\\tuple{1,1},\\allowbreak\\tuple{1,2},\\allowbreak\\tuple{1,3},\\allowbreak\\tuple{2,3}\\}$",
+        "$\\tuple{V,E}$",
+        "\\begin{align*}&\\begin{tikzpicture}[->,nodedistance=2cm]\\node[draw,circle](A){$1$};\\node[draw,circle](B)[rightof=A]{$2$};\\node[draw,circle](C)[belowof=B]{$3$};\\node[draw,circle](D)[rightof=B]{$4$};\\draw(A)to[loopabove](A);\\draw(A)to(B);\\draw(A)to(C);\\draw(B)to(C);\\end{tikzpicture}$V'=\\{1,2,3\\}$$\\tuple{V',E}$&\\begin{tikzpicture}[->,nodedistance=2cm]\\node[draw,circle](A){$1$};\\node[draw,circle](B)[rightof=A]{$2$};\\node[draw,circle](C)[belowof=B]{$3$};\\draw(A)to[loopabove](A);\\draw(A)to(B);\\draw(A)to(C);\\draw(B)to(C);\\end{tikzpicture}\\end{align*}",
+        "$\\{1,2,3,4\\}$",
+        "$\\le$"
+      ],
+      "math_multiset_match": true,
+      "telugu_chars": 1176,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: relations\n% Section: graphs",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: relations\n% Section: graphs"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sfr}{rel}{grp}\n\\olsection{Graphs}",
+          "target_start": "\\olfileid{sfr}{rel}{grp}\n\\olsection{గ్రాఫులు}"
+        },
+        {
+          "index": 5,
+          "source_start": "A \\emph{graph} is a diagram in which points---called ``nodes'' or\n``vertices'' (plural of ``vertex'')---are co",
+          "target_start": "ఒక \\emph{గ్రాఫు} అనేది బిందువులను అంచులతో కలిపి చూపే చిత్రం.\nఆ బిందువులను “నోడ్‌లు” లేదా “శీర్షాలు” అంటారు.\nవి"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}[Directed graph]\nA \\emph{directed graph} $G = \\tuple{V, E}$ is a set of\n\\emph{vertices}~$V$ and a ",
+          "target_start": "\\begin{defn}[దిశా గ్రాఫు]\nఒక \\emph{దిశా గ్రాఫు} $G = \\tuple{V, E}$లో\n\\emph{శీర్షాల} సమితి $V$, \\emph{అంచుల} సమ"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{explain}\nAccording to our definition, a graph just is a set together with a\nrelation on that set.  Of c",
+          "target_start": "\\begin{explain}\nమన నిర్వచనం ప్రకారం, గ్రాఫు అంటే ఒక సమితి, దానిపైన ఒక సంబంధం.\nగ్రాఫుల గురించి మాట్లాడేటప్పుడు "
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{ex}\nThe graph $\\tuple{V, E}$ with $V = \\{1, 2, 3, 4\\}$ and $E =\n\\{\\tuple{1,1}, \\allowbreak \\tuple{1, 2}",
+          "target_start": "\\begin{ex}\n$V = \\{1, 2, 3, 4\\}$,\n$E = \\{\\tuple{1,1}, \\allowbreak \\tuple{1, 2}, \\allowbreak \\tuple{1, 3},\n\\allo"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{prob}\n  Consider the less-than-or-equal-to relation~$\\le$ on the set $\\{1,\n  2, 3, 4\\}$ as a graph and ",
+          "target_start": "\\begin{prob}\n  $\\{1, 2, 3, 4\\}$ అనే సమితిపై చిన్నది-లేదా-సమానమైనది అనే\n  $\\le$ సంబంధాన్ని గ్రాఫుగా పరిగణించి, "
+        },
+        {
+          "index": 10,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{rel}{grp}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{rel}{grp}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0018",
+      "source_path": "content/sets-functions-relations/relations/trees.tex",
+      "source_sha256": "a158f1ce5b84c8c3f681dd6347b22491d1b67a91e110138b9cb6833e3d9dc23c",
+      "translation_sha256": "8626a8264fbdbe372e6ebd66e93de6e16d7d10ad1053f06d0662758947c74996",
+      "source_blocks": 21,
+      "target_blocks": 21,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{rel}{tre}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{rel}{tre}"
+      ],
+      "tokens_source": {
+        "!!a{element}": 1,
+        "!!{derivation}": 1,
+        "!!{derivation}s": 1,
+        "!!{formula}s": 1
+      },
+      "tokens_target": {
+        "!!a{element}": 1,
+        "!!{derivation}": 1,
+        "!!{derivation}s": 1,
+        "!!{formula}s": 1
+      },
+      "math_source": [
+        "$r$",
+        "$a$",
+        "$c$",
+        "$d$",
+        "$e$",
+        "$b$",
+        "$r$",
+        "$r$",
+        "$x$",
+        "$y$",
+        "$y$",
+        "$x$",
+        "$x$",
+        "$y$",
+        "$A$",
+        "$\\le$",
+        "$x\\inA$",
+        "$y\\inA$",
+        "$x\\ley$",
+        "$\\le$",
+        "$T=\\tuple{A,\\le}$",
+        "$A$",
+        "$\\le$",
+        "$A$",
+        "$r\\inA$",
+        "$x\\inA$",
+        "$\\Setabs{y}{y\\lex}$",
+        "$\\le$",
+        "$T=\\tuple{A,\\le}$",
+        "$x,y\\inA$",
+        "$x<y$",
+        "$z\\inA$",
+        "$x<z<y$",
+        "$y$",
+        "$x$",
+        "$x\\inA$",
+        "$y$",
+        "$x$",
+        "$x$",
+        "$y$",
+        "$\\tuple{A,\\le}$",
+        "$x\\inA$",
+        "$y_1<x$",
+        "$y_2<x$",
+        "$y_1\\neqy_2$",
+        "$\\{y_1,y_2\\}\\subseteq\\Setabs{z}{z<x}$",
+        "$\\Setabs{z}{z<x}$",
+        "$\\le$",
+        "$\\{y_1,y_2\\}$",
+        "$y_1$",
+        "$y_2$",
+        "$y_1\\ley_2$",
+        "$y_2\\ley_1$",
+        "$y_1\\neqy_2$",
+        "$y_1<y_2$",
+        "$y_2<y_1$",
+        "$y_1<x$",
+        "$y_2<x$",
+        "$y_1<y_2<x$",
+        "$y_2<y_1<x$",
+        "$y_1$",
+        "$y_2$",
+        "$x$",
+        "$T=\\tuple{A,\\le}$",
+        "$A$",
+        "$T$",
+        "$x\\inA$",
+        "$T$",
+        "$T=\\tuple{A,\\le}$",
+        "$T$",
+        "$T$",
+        "$B\\subseteqA$",
+        "$x,y\\inB$",
+        "$x\\ley$",
+        "$y\\lex$",
+        "$z\\inX\\setminusB$",
+        "$u\\inB$",
+        "$z\\leu$",
+        "$u\\lez$",
+        "$[T]$",
+        "$T$",
+        "$0$",
+        "$1$",
+        "$\\{0,1\\}^*$",
+        "$\\Bin^*$",
+        "$\\sqsubseteq$",
+        "$101\\sqsubseteq101101$",
+        "$0$",
+        "$1$",
+        "$s$",
+        "$s0$",
+        "$s1$",
+        "$\\emptyseq$",
+        "$\\Nat^*$",
+        "$\\sqsubseteq$",
+        "$s\\in\\Nat^*$",
+        "$sn$",
+        "$n\\in\\Nat$",
+        "$A\\subseteq\\Nat^*$",
+        "$\\sqsubseteq$",
+        "$\\Nat^*$",
+        "$A$",
+        "$s\\inA$",
+        "$s'\\sqsubseteqs$",
+        "$s'\\inA$",
+        "$\\Nat^*$",
+        "$T=\\tuple{A,\\le}$",
+        "$T$",
+        "$\\{0,1\\}^*$"
+      ],
+      "math_target": [
+        "$r$",
+        "$a$",
+        "$c$",
+        "$d$",
+        "$e$",
+        "$b$",
+        "$r$",
+        "$r$",
+        "$x$",
+        "$y$",
+        "$x$",
+        "$y$",
+        "$x$",
+        "$y$",
+        "$\\le$",
+        "$A$",
+        "$y\\inA$",
+        "$x\\ley$",
+        "$x\\inA$",
+        "$\\le$",
+        "$T=\\tuple{A,\\le}$",
+        "$A$",
+        "$\\le$",
+        "$A$",
+        "$r\\inA$",
+        "$x\\inA$",
+        "$\\Setabs{y}{y\\lex}$",
+        "$\\le$",
+        "$T=\\tuple{A,\\le}$",
+        "$x,y\\inA$",
+        "$x<y$",
+        "$x<z<y$",
+        "$z\\inA$",
+        "$y$",
+        "$x$",
+        "$x\\inA$",
+        "$y$",
+        "$x$",
+        "$x$",
+        "$y$",
+        "$\\tuple{A,\\le}$",
+        "$x\\inA$",
+        "$y_1<x$",
+        "$y_2<x$",
+        "$y_1\\neqy_2$",
+        "$\\{y_1,y_2\\}\\subseteq\\Setabs{z}{z<x}$",
+        "$\\Setabs{z}{z<x}$",
+        "$\\le$",
+        "$\\{y_1,y_2\\}$",
+        "$y_1$",
+        "$y_2$",
+        "$y_1\\ley_2$",
+        "$y_2\\ley_1$",
+        "$y_1\\neqy_2$",
+        "$y_1<y_2$",
+        "$y_2<y_1$",
+        "$y_1<x$",
+        "$y_2<x$",
+        "$y_1<y_2<x$",
+        "$y_2<y_1<x$",
+        "$y_1$",
+        "$y_2$",
+        "$x$",
+        "$A$",
+        "$T=\\tuple{A,\\le}$",
+        "$T$",
+        "$x\\inA$",
+        "$T$",
+        "$T=\\tuple{A,\\le}$",
+        "$T$",
+        "$T$",
+        "$B\\subseteqA$",
+        "$x,y\\inB$",
+        "$x\\ley$",
+        "$y\\lex$",
+        "$z\\inX\\setminusB$",
+        "$z\\leu$",
+        "$u\\lez$",
+        "$u\\inB$",
+        "$T$",
+        "$[T]$",
+        "$0$",
+        "$1$",
+        "$\\{0,1\\}^*$",
+        "$\\Bin^*$",
+        "$\\sqsubseteq$",
+        "$101\\sqsubseteq101101$",
+        "$0$",
+        "$1$",
+        "$s$",
+        "$s0$",
+        "$s1$",
+        "$\\emptyseq$",
+        "$\\Nat^*$",
+        "$\\sqsubseteq$",
+        "$s\\in\\Nat^*$",
+        "$n\\in\\Nat$",
+        "$sn$",
+        "$\\sqsubseteq$",
+        "$A\\subseteq\\Nat^*$",
+        "$\\Nat^*$",
+        "$s\\inA$",
+        "$s'\\sqsubseteqs$",
+        "$s'\\inA$",
+        "$A$",
+        "$\\Nat^*$",
+        "$T=\\tuple{A,\\le}$",
+        "$T$",
+        "$\\{0,1\\}^*$"
+      ],
+      "math_multiset_match": true,
+      "telugu_chars": 2628,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: relations\n% Section: trees",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: relations\n% Section: trees"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sfr}{rel}{tre}\n\\olsection{Trees}",
+          "target_start": "\\olfileid{sfr}{rel}{tre}\n\\olsection{వృక్షాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "A particular kind of partial order which plays an important role in\nall parts of logic is a \\emph{tree}. Finit",
+          "target_start": "తర్కశాస్త్రంలోని అన్ని భాగాలలో ముఖ్యమైన పాత్ర వహించే ఒక ప్రత్యేక\nరకం పాక్షిక క్రమం \\emph{వృక్షం}. ప్రాథమిక తర్"
+        },
+        {
+          "index": 6,
+          "source_start": "The set-theoretic concept of a tree is closely related to the notion\nof a tree in graph theory. Here is a pict",
+          "target_start": "వృక్షం యొక్క సమితి-సిద్ధాంత భావనకు, గ్రాఫు సిద్ధాంతంలోని వృక్ష భావనతో\nదగ్గరి సంబంధం ఉంది. ఒక పరిమిత వృక్షం చిత"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{center}\n\\begin{tikzpicture}[nodes={draw, circle}, -]\n\\node{$r$} [grow'=up]\n    child { node {$a$} \n    ",
+          "target_start": "\\begin{center}\n\\begin{tikzpicture}[nodes={draw, circle}, -]\n\\node{$r$} [grow'=up]\n    child { node {$a$} \n    "
+        },
+        {
+          "index": 8,
+          "source_start": "The lowermost node~$r$ is the root. Every node other than $r$ has\nexactly one parent node immediately below it",
+          "target_start": "అన్నింటికంటే కింద ఉన్న శీర్షం $r$ వృక్షమూలం.\n$r$ తప్ప ప్రతి శీర్షానికి దాని వెంటనే కింద కచ్చితంగా ఒక జనక శీర్ష"
+        },
+        {
+          "index": 9,
+          "source_start": "The ancestor relation in a tree is a strict partial order. This\nmotivates the set-theoretic definition. To sta",
+          "target_start": "వృక్షంలోని పూర్వజ సంబంధం ఒక కఠిన పాక్షిక క్రమం.\nఇదే సమితి-సిద్ధాంత నిర్వచనానికి ప్రేరణ.\nదానిని చెప్పడానికి రెం"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{defn}[Tree]\nA \\emph{tree} is a pair $T = \\tuple{A, \\le}$ such that $A$ is a set\nand $\\le$ is a partial ",
+          "target_start": "\\begin{defn}[వృక్షం]\nఒక \\emph{వృక్షం} అంటే $T = \\tuple{A, \\le}$ అనే జత.\nఇక్కడ $A$ ఒక సమితి; $\\le$ అనేది $A$పై "
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{defn}[Successors]\nSuppose $T = \\tuple{A, \\le}$ is a tree.\nIf $x,y \\in A$, $x < y$, and there is no $z \\",
+          "target_start": "\\begin{defn}[ఉత్తరవర్తులు]\n$T = \\tuple{A, \\le}$ ఒక వృక్షం అనుకుందాం.\n$x,y \\in A$, $x < y$ అయి, $x < z < y$ అయ్"
+        },
+        {
+          "index": 12,
+          "source_start": "The successors of $x \\in A$ are also called its \\emph{children}. If\n$y$ is a successor of~$x$, then we call $x",
+          "target_start": "$x \\in A$ యొక్క ఉత్తరవర్తులను దాని \\emph{సంతాన శీర్షాలు} అని కూడా అంటాం.\n$y$ అనేది $x$ యొక్క ఉత్తరవర్తి అయితే,"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{prop}\nIf $\\tuple{A,\\le}$ is a tree, then every $x \\in A$ other than the root\nhas at most one predecesso",
+          "target_start": "\\begin{prop}\n$\\tuple{A,\\le}$ ఒక వృక్షం అయితే, వృక్షమూలం తప్ప ప్రతి\n$x \\in A$కూ గరిష్ఠంగా ఒక పూర్వవర్తి ఉంటుంది"
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{proof}\n  Suppose $y_1 < x$ and $y_2 < x$ and $y_1 \\neq y_2$. Then $\\{y_1,\n  y_2\\} \\subseteq \\Setabs{z}{",
+          "target_start": "\\begin{proof}\n  $y_1 < x$, $y_2 < x$, $y_1 \\neq y_2$ అనుకుందాం.\n  అప్పుడు $\\{y_1, y_2\\} \\subseteq \\Setabs{z}{z"
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{defn}\nA tree $T = \\tuple{A, \\le}$ is said to be \\emph{infinite} if $A$ is an\ninfinite set, and \\emph{fi",
+          "target_start": "\\begin{defn}\n$A$ అనంత సమితి అయితే $T = \\tuple{A, \\le}$ అనే వృక్షాన్ని\n\\emph{అనంత} వృక్షం అంటాం; లేకపోతే \\emph{"
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{defn}[Branches]\nGiven a tree $T = \\tuple{A, \\le}$, a \\emph{branch} of~$T$ is a\nmaximal chain in~$T$, i.",
+          "target_start": "\\begin{defn}[శాఖలు]\n$T = \\tuple{A, \\le}$ అనే వృక్షంలో, $T$ యొక్క \\emph{శాఖ}\nఅంటే $T$లో ఒక గరిష్ఠ శృంఖల.\nఅంటే $"
+        },
+        {
+          "index": 17,
+          "source_start": "\\begin{ex}\nA classic example of a finitely branching tree is the\n\\emph{infinite binary tree} of finite sequenc",
+          "target_start": "\\begin{ex}\nపరిమిత శాఖీకరణం గల వృక్షానికి ఒక ప్రసిద్ధ ఉదాహరణ,\n$0$లు, $1$ల పరిమిత క్రమాలతో ఏర్పడే \\emph{అనంత ద్వ"
+        },
+        {
+          "index": 18,
+          "source_start": "\\begin{ex}\nSlightly more generally, the set of finite sequences of natural\nnumbers~$\\Nat^*$ with the extension",
+          "target_start": "\\begin{ex}\nఇంకొంచెం సాధారణంగా, సహజ సంఖ్యల పరిమిత క్రమాల సమితి $\\Nat^*$ కూడా,\nపొడిగింపు సంబంధం $\\sqsubseteq$తో "
+        },
+        {
+          "index": 19,
+          "source_start": "\\begin{prop}[K\\H{o}nig's lemma]\nIf $T = \\tuple{A,\\le}$ is a finitely branching infinite tree,\nthen $T$ has an ",
+          "target_start": "\\begin{prop}[కోనిగ్ ఉపసిద్ధాంతం]\n$T = \\tuple{A,\\le}$ అనేది పరిమిత శాఖీకరణం గల అనంత వృక్షం అయితే,\n$T$కు ఒక అనంత"
+        },
+        {
+          "index": 20,
+          "source_start": "A special case of K\\H{o}nig's lemma widely used in computability\ntheory, known as \\emph{weak K\\H{o}nig's lemma",
+          "target_start": "గణనీయతా సిద్ధాంతంలో విస్తృతంగా ఉపయోగించే కోనిగ్ ఉపసిద్ధాంతంలోని\nఒక ప్రత్యేక సందర్భాన్ని \\emph{బలహీన కోనిగ్ ఉపస"
+        },
+        {
+          "index": 21,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{rel}{tre}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{rel}{tre}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0019",
+      "source_path": "content/sets-functions-relations/relations/operations.tex",
+      "source_sha256": "73c8bdb301aca93f687a06a045533d75d30088ae711f5e1dfd577b7864f8d3d5",
+      "translation_sha256": "b4417daaffa078966a6785ad39858a42a2c62b80f2d470b6c8954e8513fba23a",
+      "source_blocks": 21,
+      "target_blocks": 21,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{rel}{ops}",
+        "\\olref[sfr][rel][ord]{prop:stricttopartial}",
+        "\\olref[sfr][rel][ord]{prop:partialtostrict}",
+        "\\ollabel{relationoperations}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{rel}{ops}",
+        "\\olref[sfr][rel][ord]{prop:stricttopartial}",
+        "\\olref[sfr][rel][ord]{prop:partialtostrict}",
+        "\\ollabel{relationoperations}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$R$",
+        "$S$",
+        "$A$",
+        "$R$",
+        "$R^{-1}=\\Setabs{\\tuple{y,x}}{\\tuple{x,y}\\inR}$",
+        "$R$",
+        "$S$",
+        "$(R\\midS)=\\{\\tuple{x,z}:\\existsy(Rxy\\landSyz)\\}$",
+        "$R$",
+        "$A$",
+        "$\\funrestrictionto{R}{A}=R\\capA^2$",
+        "$R$",
+        "$A$",
+        "$\\funimage{R}{A}=\\{y:(\\existsx\\inA)Rxy\\}$",
+        "$S\\subseteq\\Int^2$",
+        "$\\Int$",
+        "$S=\\Setabs{\\tuple{x,y}\\in\\Int^2}{x+1=y}$",
+        "$Sxy$",
+        "$x+1=y$",
+        "$S^{-1}$",
+        "$\\Int$",
+        "$\\Setabs{\\tuple{x,y}\\in\\Int^2}{x-1=y}$",
+        "$S\\midS$",
+        "$\\Setabs{\\tuple{x,y}\\in\\Int^2}{x+2=y}$",
+        "$\\funrestrictionto{S}{\\Nat}$",
+        "$\\Nat$",
+        "$\\funimage{S}{\\{1,2,3\\}}$",
+        "$\\{2,3,4\\}$",
+        "$R\\subseteqA^2$",
+        "$R$",
+        "$R^+=\\bigcup_{0<n\\in\\Nat}R^n$",
+        "$R^1=R$",
+        "$R^{n+1}=R^n\\midR$",
+        "$R$",
+        "$R^*=R^+\\cup\\Id{A}$",
+        "$S\\subseteq\\Int^2$",
+        "$S^2xy$",
+        "$x+2=y$",
+        "$S^3xy$",
+        "$x+3=y$",
+        "$S^+xy$",
+        "$x+n=y$",
+        "$n\\geq1$",
+        "$S^+xy$",
+        "$x<y$",
+        "$S^*xy$",
+        "$x\\ley$",
+        "$R$"
+      ],
+      "math_target": [
+        "$R$",
+        "$S$",
+        "$A$",
+        "$R$",
+        "$R^{-1}=\\Setabs{\\tuple{y,x}}{\\tuple{x,y}\\inR}$",
+        "$R$",
+        "$S$",
+        "$(R\\midS)=\\{\\tuple{x,z}:\\existsy(Rxy\\landSyz)\\}$",
+        "$R$",
+        "$A$",
+        "$\\funrestrictionto{R}{A}=R\\capA^2$",
+        "$R$",
+        "$A$",
+        "$\\funimage{R}{A}=\\{y:(\\existsx\\inA)Rxy\\}$",
+        "$S\\subseteq\\Int^2$",
+        "$\\Int$",
+        "$S=\\Setabs{\\tuple{x,y}\\in\\Int^2}{x+1=y}$",
+        "$Sxy$",
+        "$x+1=y$",
+        "$S^{-1}$",
+        "$\\Int$",
+        "$\\Setabs{\\tuple{x,y}\\in\\Int^2}{x-1=y}$",
+        "$S\\midS$",
+        "$\\Setabs{\\tuple{x,y}\\in\\Int^2}{x+2=y}$",
+        "$\\funrestrictionto{S}{\\Nat}$",
+        "$\\Nat$",
+        "$\\funimage{S}{\\{1,2,3\\}}$",
+        "$\\{2,3,4\\}$",
+        "$R\\subseteqA^2$",
+        "$R$",
+        "$R^+=\\bigcup_{0<n\\in\\Nat}R^n$",
+        "$R^1=R$",
+        "$R^{n+1}=R^n\\midR$",
+        "$R$",
+        "$R^*=R^+\\cup\\Id{A}$",
+        "$S\\subseteq\\Int^2$",
+        "$S^2xy$",
+        "$x+2=y$",
+        "$S^3xy$",
+        "$x+3=y$",
+        "$S^+xy$",
+        "$n\\geq1$",
+        "$x+n=y$",
+        "$S^+xy$",
+        "$x<y$",
+        "$S^*xy$",
+        "$x\\ley$",
+        "$R$"
+      ],
+      "math_multiset_match": true,
+      "telugu_chars": 817,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: relations\n% Section: operations",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: relations\n% Section: operations"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sfr}{rel}{ops}\n\\olsection{Operations on Relations}",
+          "target_start": "\\olfileid{sfr}{rel}{ops}\n\\olsection{సంబంధాలపై క్రియలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "It is often useful to modify or combine relations. In\n\\olref[sfr][rel][ord]{prop:stricttopartial}, we consider",
+          "target_start": "సంబంధాలను మార్చడం లేదా కలపడం తరచుగా ఉపయోగపడుతుంది.\n\\olref[sfr][rel][ord]{prop:stricttopartial}లో సంబంధాల\n\\emph"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}\\ollabel{relationoperations} \nLet $R$, $S$ be relations, and $A$ be any set. ",
+          "target_start": "\\begin{defn}\\ollabel{relationoperations} \n$R$, $S$ సంబంధాలు అనుకుందాం; $A$ ఏదైనా సమితి కావచ్చు."
+        },
+        {
+          "index": 7,
+          "source_start": "The \\emph{inverse} of $R$ is $R^{-1} = \\Setabs{\\tuple{y, x}}{\\tuple{x,\n    y} \\in R}$.",
+          "target_start": "$R$ యొక్క \\emph{విలోమం}\n$R^{-1} = \\Setabs{\\tuple{y, x}}{\\tuple{x, y} \\in R}$."
+        },
+        {
+          "index": 8,
+          "source_start": "The \\emph{relative product} of $R$ and $S$ is $(R \\mid S) =\n\\{\\tuple{x, z} : \\exists y(Rxy \\land Syz)\\}$.",
+          "target_start": "$R$, $S$ల \\emph{సాపేక్ష లబ్ధం}\n$(R \\mid S) = \\{\\tuple{x, z} : \\exists y(Rxy \\land Syz)\\}$."
+        },
+        {
+          "index": 9,
+          "source_start": "The \\emph{restriction} of $R$ to $A$ is $\\funrestrictionto{R}{A}= R\n\\cap A^2$.",
+          "target_start": "$R$ను $A$కు \\emph{పరిమితం చేసిన సంబంధం}\n$\\funrestrictionto{R}{A}= R \\cap A^2$."
+        },
+        {
+          "index": 10,
+          "source_start": "The \\emph{application} of $R$ to $A$ is $\\funimage{R}{A} = \\{y :\n(\\exists x \\in A)Rxy\\}$\n\\end{defn}",
+          "target_start": "$R$ను $A$కు \\emph{వర్తింపజేసిన ఫలితం}\n$\\funimage{R}{A} = \\{y : (\\exists x \\in A)Rxy\\}$\n\\end{defn}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{ex}\nLet $S \\subseteq \\Int^2$ be the successor relation on~$\\Int$, i.e.,\n$S = \\Setabs{\\tuple{x, y} \\in \\",
+          "target_start": "\\begin{ex}\n$S \\subseteq \\Int^2$ అనేది $\\Int$పై ఉత్తరవర్తి సంబంధం అనుకుందాం.\nఅంటే $S = \\Setabs{\\tuple{x, y} \\in"
+        },
+        {
+          "index": 12,
+          "source_start": "$S^{-1}$ is the predecessor relation on $\\Int$, i.e.,\n$\\Setabs{\\tuple{x,y}\\in\\Int^2}{x -1 =y}$.",
+          "target_start": "$S^{-1}$ అనేది $\\Int$పై పూర్వవర్తి సంబంధం, అంటే\n$\\Setabs{\\tuple{x,y}\\in\\Int^2}{x -1 =y}$."
+        },
+        {
+          "index": 13,
+          "source_start": "$S\\mid S$ is \n$ \\Setabs{\\tuple{x,y}\\in\\Int^2}{x + 2 =y}$",
+          "target_start": "$S\\mid S$ అనేది\n$ \\Setabs{\\tuple{x,y}\\in\\Int^2}{x + 2 =y}$."
+        },
+        {
+          "index": 14,
+          "source_start": "$\\funrestrictionto{S}{\\Nat}$ is the successor relation on~$\\Nat$.",
+          "target_start": "$\\funrestrictionto{S}{\\Nat}$ అనేది $\\Nat$పై ఉత్తరవర్తి సంబంధం."
+        },
+        {
+          "index": 15,
+          "source_start": "$\\funimage{S}{\\{1,2,3\\}}$ is $\\{2, 3, 4\\}$.\n\\end{ex}",
+          "target_start": "$\\funimage{S}{\\{1,2,3\\}}$ అనేది $\\{2, 3, 4\\}$.\n\\end{ex}"
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{defn}[Transitive closure]Let $R \\subseteq A^2$ be a binary relation. ",
+          "target_start": "\\begin{defn}[సంక్రామక సంవృతం] $R \\subseteq A^2$ ఒక ద్విస్థానిక సంబంధం అనుకుందాం."
+        },
+        {
+          "index": 17,
+          "source_start": "The \\emph{transitive closure} of~$R$ is $R^+ = \\bigcup_{0 < n \\in\n\\Nat} R^n$, where we recursively define $R^1",
+          "target_start": "$R$ యొక్క \\emph{సంక్రామక సంవృతం}\n$R^+ = \\bigcup_{0 < n \\in \\Nat} R^n$.\nఇక్కడ $R^1 = R$, $R^{n+1} = R^n \\mid R$"
+        },
+        {
+          "index": 18,
+          "source_start": "The \\emph{reflexive transitive closure} of $R$ is $R^* = R^+ \\cup\n\\Id{A}$.\n\\end{defn}",
+          "target_start": "$R$ యొక్క \\emph{స్వావర్తన సంక్రామక సంవృతం}\n$R^* = R^+ \\cup \\Id{A}$.\n\\end{defn}"
+        },
+        {
+          "index": 19,
+          "source_start": "\\begin{ex}\nTake the successor relation $S \\subseteq \\Int^2$. $S^2xy$ iff $x + 2 =\ny$, $S^3xy$ iff $x + 3 = y$,",
+          "target_start": "\\begin{ex}\nఉత్తరవర్తి సంబంధం $S \\subseteq \\Int^2$ తీసుకుందాం.\n$S^2xy$ కావడానికి అవసరమైన మరియు సరిపడే షరతు $x +"
+        },
+        {
+          "index": 20,
+          "source_start": "\\begin{prob}\nShow that the transitive closure of $R$ is in fact transitive.\n\\end{prob}",
+          "target_start": "\\begin{prob}\n$R$ యొక్క సంక్రామక సంవృతం నిజంగానే సంక్రామక సంబంధమని చూపండి.\n\\end{prob}"
+        },
+        {
+          "index": 21,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{rel}{ops}",
+        "\\olref[sfr][rel][ord]{prop:stricttopartial}",
+        "\\olref[sfr][rel][ord]{prop:partialtostrict}",
+        "\\ollabel{relationoperations}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{rel}{ops}",
+        "\\olref[sfr][rel][ord]{prop:stricttopartial}",
+        "\\olref[sfr][rel][ord]{prop:partialtostrict}",
+        "\\ollabel{relationoperations}"
+      ],
+      "protected_identifier_parity": true
+    }
+  ]
+}

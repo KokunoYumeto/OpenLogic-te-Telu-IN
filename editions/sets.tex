@@ -1,0 +1,99 @@
+% Telugu chapter reader. English source at upstream/ remains pristine.
+\documentclass[11pt,a4paper,oneside]{book}
+\usepackage[margin=23mm,headheight=16pt]{geometry}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\setmathrm{Latin Modern Roman}
+\newfontfamily{\telugufont}{NotoSerifTelugu-Regular.ttf}[Path=fonts/,Script=Telugu,Language=Telugu,BoldFont=NotoSerifTelugu-Bold.ttf,ItalicFont=NotoSerifTelugu-Regular.ttf,BoldItalicFont=NotoSerifTelugu-Bold.ttf]
+\usepackage[Latin,Telugu]{ucharclasses}
+\setTransitionsForLatin{\rmfamily}{}
+\setTransitionTo{Telugu}{\telugufont}
+\XeTeXgenerateactualtext=1
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{xparse,graphicx,xcolor,tikz}
+\usepackage{float}
+\floatplacement{figure}{H}
+\usepackage[unicode,colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\pdfstringdefDisableCommands{\def\telugufont{}\def\rmfamily{}}
+\hypersetup{pdftitle={సమితులు - OpenLogic తెలుగు},pdfauthor={Open Logic Project; Telugu machine translation},pdfsubject={7 of 722 source units; first chapter tranche; provisional terminology}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 1pt}
+\linespread{1.18}
+\tolerance=2000
+\emergencystretch=3em
+\raggedbottom
+\renewcommand{\emph}[1]{{\bfseries #1}}
+\renewcommand{\chaptername}{అధ్యాయం}
+\renewcommand{\contentsname}{విషయ సూచిక}
+\renewcommand{\figurename}{పటం}
+\renewcommand{\proofname}{నిరూపణ}
+\theoremstyle{definition}
+\newtheorem{defn}{నిర్వచనం}[section]
+\newtheorem{ex}[defn]{ఉదాహరణ}
+\newtheorem{prop}[defn]{ప్రతిపాదన}
+\newtheorem{thm}[defn]{సిద్ధాంతం}
+\newtheorem{prob}{అభ్యాసం}[section]
+\newenvironment{explain}{}{}
+\newenvironment{digress}{\par}{\par}
+\newenvironment{tagblock}[1]{}{}
+\newcommand{\Setabs}[2]{\{#1:#2\}}
+\newcommand{\Pow}[1]{\wp(#1)}
+\newcommand{\Nat}{\mathbb{N}}
+\newcommand{\Int}{\mathbb{Z}}
+\newcommand{\Rat}{\mathbb{Q}}
+\newcommand{\Real}{\mathbb{R}}
+\newcommand{\Bin}{\mathbb{B}}
+\newcommand{\PosInt}{\mathbb{Z}^{+}}
+\newcommand{\lif}{\mathbin{\rightarrow}}
+\newcommand{\tuple}[1]{\langle #1\rangle}
+\newcommand{\len}[1]{\mathrm{len}(#1)}
+\newcommand{\nicefrac}[2]{{#1}/{#2}}
+\definecolor{oldiagcolorA}{rgb}{0.15,0.15,0.15}
+\definecolor{oldiagcolorB}{rgb}{0.13,0.35,0.62}
+\definecolor{oldiagcolorC}{rgb}{0.68,0.19,0.25}
+\newcommand{\olasset}[1]{\centering\input{upstream/#1}}
+\newcommand{\olfileid}[3]{\def\tepart{#1}\def\techapter{#2}\def\tesection{#3}}
+\newcommand{\olchapter}[3]{\chapter{#3}}
+\newcommand{\olsection}[1]{\section{#1}\label{\tepart:\techapter:\tesection:sec}}
+\newcommand{\ollabel}[1]{\label{\tepart:\techapter:\tesection:#1}}
+\NewDocumentCommand\olref{O{} O{} O{} m}{\if\relax\detokenize{#1}\relax\ref{\tepart:\techapter:\tesection:#4}\else\ref{#1:#2:#3:#4}\fi}
+\makeatletter
+\newcommand{\oliflabeldef}[3]{\@ifundefined{r@#1}{#3}{#2}}
+\makeatother
+\begin{document}
+\frontmatter
+\begin{titlepage}
+\vspace*{25mm}
+{\Huge\bfseries సమితులు\par}
+\vspace{10mm}
+{\Large OpenLogic తెలుగు అనువాదం\par}
+\vspace{8mm}
+మొదటి అధ్యాయ విడుదల: 722 మూల విభాగాలలో 7 విభాగాలు.
+\par ఇది పూర్తి గ్రంథం కాదు. పూర్తి తెలుగు సంచికపై పని కొనసాగుతోంది.
+\vfill
+మూలం: Open Logic Project\par
+యంత్ర అనువాదం; పదాల ఆధారాలు, తాత్కాలిక నిర్ణయాలు విడిగా నమోదయ్యాయి.
+మానవ నిపుణుల సమీక్ష జరిగిందని ఈ సంచిక పేర్కొనదు.
+\par గణిత విషయాలకు ఆంగ్ల మూలమే ఆధారం; తెలుగు సాక్ష్య గ్రంథాలు
+భాషా వినియోగానికి ఆధారం మాత్రమే.
+\vspace{8mm}
+{\small మూల సంచిక: \texttt{9620cc73f9c8e0ad003c514a5d3748f29611c4c0}\par
+\url{https://github.com/OpenLogicProject/OpenLogic}\par
+\url{https://github.com/KokunoYumeto/OpenLogic-translations}}
+\end{titlepage}
+\section*{అనువాదం గురించి}
+Open Logic Project మూలానికి Creative Commons Attribution 4.0 International
+అనుమతి వర్తిస్తుంది. ఈ అనువాదం మూలంలో చేసిన మార్పుగా గుర్తించబడుతుంది.
+మూల రచయితల వివరాలు, పూర్తి అనుమతి పత్రం, భాగాల ప్రత్యేక నిబంధనలు
+సంపాదించగల మూలాలతోపాటు ఉంచబడ్డాయి.
+\par ఈ అధ్యాయంలో ``మూలకాధారిత సమానత్వం'', ``ధర్మసంగ్రహం'' వంటి కొన్ని
+పద నిర్ణయాలు తాత్కాలికమైనవి. వాటి కచ్చితమైన అర్థాన్ని ఇక్కడి
+నిర్వచనాలే నిర్ణయిస్తాయి. సహజ సంఖ్యల సమితిలో $0$ను చేర్చే మూల
+గ్రంథపు ఆనవాయితీని యథాతథంగా ఉంచాం.
+\par తెలంగాణ, ఆంధ్ర ప్రదేశ్ సాక్ష్యాలను వేర్వేరుగా నమోదు చేశాం.
+ఆ గ్రంథాలకు బహిరంగ పునర్ముద్రణ అనుమతి ఉందని భావించలేదు; వాటి పూర్తి
+ప్రతులు ఈ విడుదలలో చేర్చబడవు.
+\tableofcontents
+\mainmatter
+\input{build/sets-body.tex}
+\end{document}

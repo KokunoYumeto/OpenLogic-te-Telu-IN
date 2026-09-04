@@ -1,0 +1,75 @@
+% Part: sets-functions-relations
+% Chapter: relations
+% Section: operations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{rel}{ops}
+\olsection{సంబంధాలపై క్రియలు}
+
+సంబంధాలను మార్చడం లేదా కలపడం తరచుగా ఉపయోగపడుతుంది.
+\olref[sfr][rel][ord]{prop:stricttopartial}లో సంబంధాల
+\emph{సమ్మేళనాన్ని} పరిశీలించాం. సంబంధాలను జతల సమితులుగా
+పరిగణించి వాటి సమ్మేళనం తీసుకోవడమే అది.
+అలాగే \olref[sfr][rel][ord]{prop:partialtostrict}లో సంబంధాల
+సాపేక్ష భేదాన్ని పరిశీలించాం. సంబంధాలపై చేయగల మరికొన్ని క్రియలు ఇవి.
+
+\begin{defn}\ollabel{relationoperations} 
+$R$, $S$ సంబంధాలు అనుకుందాం; $A$ ఏదైనా సమితి కావచ్చు.
+
+$R$ యొక్క \emph{విలోమం}
+$R^{-1} = \Setabs{\tuple{y, x}}{\tuple{x, y} \in R}$.
+
+$R$, $S$ల \emph{సాపేక్ష లబ్ధం}
+$(R \mid S) = \{\tuple{x, z} : \exists y(Rxy \land Syz)\}$.
+
+$R$ను $A$కు \emph{పరిమితం చేసిన సంబంధం}
+$\funrestrictionto{R}{A}= R \cap A^2$.
+
+$R$ను $A$కు \emph{వర్తింపజేసిన ఫలితం}
+$\funimage{R}{A} = \{y : (\exists x \in A)Rxy\}$
+\end{defn}
+
+\begin{ex}
+$S \subseteq \Int^2$ అనేది $\Int$పై ఉత్తరవర్తి సంబంధం అనుకుందాం.
+అంటే $S = \Setabs{\tuple{x, y} \in \Int^2}{x + 1 = y}$;
+కనుక $Sxy$ కావడానికి అవసరమైన మరియు సరిపడే షరతు $x + 1 = y$ అవడం.
+
+$S^{-1}$ అనేది $\Int$పై పూర్వవర్తి సంబంధం, అంటే
+$\Setabs{\tuple{x,y}\in\Int^2}{x -1 =y}$.
+
+$S\mid S$ అనేది
+$ \Setabs{\tuple{x,y}\in\Int^2}{x + 2 =y}$.
+
+$\funrestrictionto{S}{\Nat}$ అనేది $\Nat$పై ఉత్తరవర్తి సంబంధం.
+
+$\funimage{S}{\{1,2,3\}}$ అనేది $\{2, 3, 4\}$.
+\end{ex}
+
+\begin{defn}[సంక్రామక సంవృతం] $R \subseteq A^2$ ఒక ద్విస్థానిక సంబంధం అనుకుందాం.
+	
+$R$ యొక్క \emph{సంక్రామక సంవృతం}
+$R^+ = \bigcup_{0 < n \in \Nat} R^n$.
+ఇక్కడ $R^1 = R$, $R^{n+1} = R^n \mid R$ అని పునరావృత్తంగా నిర్వచిస్తాం.
+
+$R$ యొక్క \emph{స్వావర్తన సంక్రామక సంవృతం}
+$R^* = R^+ \cup \Id{A}$.
+\end{defn}
+
+\begin{ex}
+ఉత్తరవర్తి సంబంధం $S \subseteq \Int^2$ తీసుకుందాం.
+$S^2xy$ కావడానికి అవసరమైన మరియు సరిపడే షరతు $x + 2 = y$;
+$S^3xy$కు అటువంటి షరతు $x + 3 = y$; ఇలాగే కొనసాగుతుంది.
+కనుక $S^+xy$ కావడానికి అవసరమైన మరియు సరిపడే షరతు
+ఏదో $n \geq 1$కు $x + n = y$ అవడం.
+మరోలా చెప్పాలంటే, $S^+xy$ కావడానికి అవసరమైన మరియు సరిపడే షరతు $x < y$;
+$S^*xy$కు అటువంటి షరతు $x \le y$.
+\end{ex}
+
+\begin{prob}
+$R$ యొక్క సంక్రామక సంవృతం నిజంగానే సంక్రామక సంబంధమని చూపండి.
+\end{prob}
+
+\end{document}
