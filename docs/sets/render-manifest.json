@@ -1,0 +1,5492 @@
+{
+  "schema": "openlogic-te-semantic-html/1",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "7 of 722 units; complete Sets chapter, not full edition",
+  "html_sha256": "b7869285497f7159e632ab108a17369827f62668cd9adcbfd6ca540b6498c335",
+  "katex_version": "0.18.5",
+  "math_output": "native MathML; no client JavaScript or remote runtime dependencies",
+  "units": [
+    {
+      "unit_id": "OLP-0004",
+      "source_path": "content/sets-functions-relations/sets/sets.tex",
+      "source_sha256": "98a8964a95d72ab3004decdef3ee74f1dd1f221dd06dfc0e6d44eff52104f277",
+      "translation_sha256": "5768f944fe7c03ca5943d7630ea9e60003d55a8b85de1ef14b392a782f3eac1f",
+      "render_sha256": "3ed92099cb1ee46911cec80b926d674dc9da693b9f11d978ef2dbffd098b0c9e",
+      "aligned_blocks": 12,
+      "linguistic_blocks": 1,
+      "math_expressions": 0,
+      "english_math_expressions": 0,
+      "telugu_text_runs": 23,
+      "telugu_text_characters": 31,
+      "telugu_text_runs_sha256": "53a5319319e5774495d532ce166ce4fcb7ff816a9fca15ccd5dcbab6ba9b15d2",
+      "english_text_runs": 23,
+      "english_text_characters": 28,
+      "english_text_runs_sha256": "851149532fda022815b4fb0505ef622d6228e9ba7b8b5c9325c9c887cc2a44e9",
+      "telugu_commands": {
+        "documentclass": 1,
+        "olchapter": 1,
+        "olimport": 6,
+        "OLEndChapterHook": 1
+      },
+      "english_commands": {
+        "documentclass": 1,
+        "olchapter": 1,
+        "olimport": 6,
+        "OLEndChapterHook": 1
+      },
+      "footnotes": 0,
+      "english_footnotes": 0,
+      "segments": [
+        {
+          "segment_id": "OLP-0004-B001",
+          "source_segment_sha256": "46237aad1603619132ea11bfd379a17774c380f3acceb5902ac43bb524e0321a",
+          "translation_segment_sha256": "46237aad1603619132ea11bfd379a17774c380f3acceb5902ac43bb524e0321a",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0004-B002",
+          "source_segment_sha256": "b71767813d35640cf2f2375ee638f0d99f5cd750056d6774a9a6fa6d5e6b7507",
+          "translation_segment_sha256": "b71767813d35640cf2f2375ee638f0d99f5cd750056d6774a9a6fa6d5e6b7507",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0004-B003",
+          "source_segment_sha256": "49d34b0366eb0a68eb35c75d6d8aeb1d60be3c49779501a7e1cdf4941acdab46",
+          "translation_segment_sha256": "49d34b0366eb0a68eb35c75d6d8aeb1d60be3c49779501a7e1cdf4941acdab46",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0004-B004",
+          "source_segment_sha256": "18adf04c4027eb508fbb334ba31cb8163c8a87212979846dbd832789ab014128",
+          "translation_segment_sha256": "fd711f2a7fbf3890bd75151e4507791deb316eaaeb52ec36bc13375fbe654af2",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P007"
+          ]
+        },
+        {
+          "segment_id": "OLP-0004-B005",
+          "source_segment_sha256": "0b1f609de4f628c34b9ce1a98e7064362a228f706b77eac3f6c0be43b66879c9",
+          "translation_segment_sha256": "0b1f609de4f628c34b9ce1a98e7064362a228f706b77eac3f6c0be43b66879c9",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0004-B006",
+          "source_segment_sha256": "e66c876db55a012ce13b07d3b221a48e18de3d8e23c364030308b47032b74166",
+          "translation_segment_sha256": "e66c876db55a012ce13b07d3b221a48e18de3d8e23c364030308b47032b74166",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0004-B007",
+          "source_segment_sha256": "bd42fb4fbbf141c8eae526c9f9ed3b11456ac23486d00e414f431e821e7d6c15",
+          "translation_segment_sha256": "bd42fb4fbbf141c8eae526c9f9ed3b11456ac23486d00e414f431e821e7d6c15",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0004-B008",
+          "source_segment_sha256": "e8307a208f1a9b6e9240fb9a83c1358eb47da800717dbc5893ce90ff91f32fa2",
+          "translation_segment_sha256": "e8307a208f1a9b6e9240fb9a83c1358eb47da800717dbc5893ce90ff91f32fa2",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0004-B009",
+          "source_segment_sha256": "577483cfcc15be01a228f2bc57723b15cfc586272d844107789f523a307ff163",
+          "translation_segment_sha256": "577483cfcc15be01a228f2bc57723b15cfc586272d844107789f523a307ff163",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0004-B010",
+          "source_segment_sha256": "e99181a1f5b02a4cca8bdcf3755400e3d532aee5c34c7badbc9dd074ec407f57",
+          "translation_segment_sha256": "e99181a1f5b02a4cca8bdcf3755400e3d532aee5c34c7badbc9dd074ec407f57",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0004-B011",
+          "source_segment_sha256": "852d0161cb11bc9e5643c64207ce43af4d799cc687561034eabe2132b15372b9",
+          "translation_segment_sha256": "852d0161cb11bc9e5643c64207ce43af4d799cc687561034eabe2132b15372b9",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0004-B012",
+          "source_segment_sha256": "2dc670e7ffe1f12aa0326631b39a0b6d72da153425c7f5f9aed627a71c1487d6",
+          "translation_segment_sha256": "2dc670e7ffe1f12aa0326631b39a0b6d72da153425c7f5f9aed627a71c1487d6",
+          "canon_passages": []
+        }
+      ]
+    },
+    {
+      "unit_id": "OLP-0005",
+      "source_path": "content/sets-functions-relations/sets/basics.tex",
+      "source_sha256": "232ff51f51e74fcfee836650f3c597b54bf10ba5363c648a0c05fe8222e4a865",
+      "translation_sha256": "3d76307b46524e2184a721c9d1317b7232c9141d6a44078354e3e4b334b2d3b0",
+      "render_sha256": "9dea4116515bcd2c4c7dfbdee73b29e0596cc66f077ce17e353cbfa5788fd8a0",
+      "aligned_blocks": 15,
+      "linguistic_blocks": 11,
+      "math_expressions": 52,
+      "english_math_expressions": 52,
+      "telugu_text_runs": 119,
+      "telugu_text_characters": 2678,
+      "telugu_text_runs_sha256": "63ae6f6dcd3d351611354eb0027488261cfeaf27de488491a958a3150d8cc27a",
+      "english_text_runs": 119,
+      "english_text_characters": 2724,
+      "english_text_runs_sha256": "962b498e4c0e0d5c7fecfbeffdb18dbaf79c413de165e08a4225ab246c5974ec",
+      "telugu_commands": {
+        "documentclass": 1,
+        "olfileid": 1,
+        "olsection": 1,
+        "emph": 12,
+        "dots": 1
+      },
+      "english_commands": {
+        "documentclass": 1,
+        "olfileid": 1,
+        "olsection": 1,
+        "emph": 12,
+        "dots": 1
+      },
+      "footnotes": 0,
+      "english_footnotes": 0,
+      "segments": [
+        {
+          "segment_id": "OLP-0005-B001",
+          "source_segment_sha256": "1be267283c27ce04838bae57d99576d96682399a26f24e60508560bbb569e860",
+          "translation_segment_sha256": "1be267283c27ce04838bae57d99576d96682399a26f24e60508560bbb569e860",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0005-B002",
+          "source_segment_sha256": "d2a6eebea8cc7f6e2dff4495ae790c756aa4472a206967fba087228e192a95b7",
+          "translation_segment_sha256": "d2a6eebea8cc7f6e2dff4495ae790c756aa4472a206967fba087228e192a95b7",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0005-B003",
+          "source_segment_sha256": "49d34b0366eb0a68eb35c75d6d8aeb1d60be3c49779501a7e1cdf4941acdab46",
+          "translation_segment_sha256": "49d34b0366eb0a68eb35c75d6d8aeb1d60be3c49779501a7e1cdf4941acdab46",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0005-B004",
+          "source_segment_sha256": "8f2b2c5e3e0860d1f8494e5f82dedfedea4f95788ac314cc39f330e525e7f11b",
+          "translation_segment_sha256": "f54d08b69b8fcf8c5ab26540ad22e944f9ca14000fe2de205cd31f2a4bf3623a",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0005-B005",
+          "source_segment_sha256": "8be7b263f22f821d3c0ff7c1d5520477d0851f94b5f0f55914083ee2af14af56",
+          "translation_segment_sha256": "ec89327d28ff86ec87fe64046bbb0489346910dcac68905a69516c13b20db8c6",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P007"
+          ]
+        },
+        {
+          "segment_id": "OLP-0005-B006",
+          "source_segment_sha256": "010694c7bc1ba74a31d4d8bbf0a9241f7cdcd395e7881efc97653a2150678f81",
+          "translation_segment_sha256": "dcbe0351c22a70ed32637dca168008b903ed910164c6a3836f710a862e0bbf92",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0005-B007",
+          "source_segment_sha256": "e11052d2c0bf7cbc8a4f5a8ba67c1a51676dec652e3b9a0e73b06a25711d8da5",
+          "translation_segment_sha256": "1abce7affc9b16ce4fa7bc26e123095846c819752e6d436ab577ea6d6f7a08a6",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0005-B008",
+          "source_segment_sha256": "b5d013669b63f3ed661db66c9fb21ba6deed1d13d92f99221e9f10011d9923fd",
+          "translation_segment_sha256": "bf10dc390feb554c75f4af081a8d8539315ba0e1b4d03b929943593d868ce4dd",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0005-B009",
+          "source_segment_sha256": "bd3ae60c0e0ba6ad739f049444eae56ab64b9186cd58ffc2ce96ac4780673c7f",
+          "translation_segment_sha256": "6c979e835cee939581f6080cf4beac022740fca064c955c0bf81e3228342ec4e",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P004",
+            "TE-P005"
+          ]
+        },
+        {
+          "segment_id": "OLP-0005-B010",
+          "source_segment_sha256": "e5b705ba7c9aded5e929bf1f6b9147f00e65bbddc33755bef50d4744b60f09f0",
+          "translation_segment_sha256": "84c7b74f096e669ef642cf553b730b0e63461acf3fe46353b4b51221a20bed4e",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P002"
+          ]
+        },
+        {
+          "segment_id": "OLP-0005-B011",
+          "source_segment_sha256": "b963b1811cf180f762e1967d10f6bcb1bb92eee545785b8bb3c5c6941bd4a78a",
+          "translation_segment_sha256": "75694e49ba342559036c35972369aec1804a55e2fdcc8200430ec111002cafe6",
+          "canon_passages": [
+            "TE-P001"
+          ]
+        },
+        {
+          "segment_id": "OLP-0005-B012",
+          "source_segment_sha256": "c0c079a49b7ae943c120dde448047b64a278eadfbccfb2fab0b3db8b16ff35ff",
+          "translation_segment_sha256": "969ca23662cac14ffe05b818d21088af074a6745306e90b5139a3e7809c78e5b",
+          "canon_passages": [
+            "TE-P004",
+            "TE-P005"
+          ]
+        },
+        {
+          "segment_id": "OLP-0005-B013",
+          "source_segment_sha256": "28184c7ab892cd4bc67dd80b4e4e387a63f01cbb3f5167c57b5c396e63c1b574",
+          "translation_segment_sha256": "734bacb391cd1b3475259428e63b7e49b9e824118aa4c7003dd7df1a09dfef99",
+          "canon_passages": [
+            "TE-P003",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0005-B014",
+          "source_segment_sha256": "378303ac62258d06449489589723d05829b443d01086080651131c4feb63116f",
+          "translation_segment_sha256": "9b716ecdc79a37e0c719ff5989f3a02b0e3ac4797f294fb460d443302fb13558",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P003"
+          ]
+        },
+        {
+          "segment_id": "OLP-0005-B015",
+          "source_segment_sha256": "2dc670e7ffe1f12aa0326631b39a0b6d72da153425c7f5f9aed627a71c1487d6",
+          "translation_segment_sha256": "2dc670e7ffe1f12aa0326631b39a0b6d72da153425c7f5f9aed627a71c1487d6",
+          "canon_passages": []
+        }
+      ]
+    },
+    {
+      "unit_id": "OLP-0006",
+      "source_path": "content/sets-functions-relations/sets/subsets.tex",
+      "source_sha256": "63d819c246577b3bfd8ba2a933f114b58c6549bdc4fa6ea8ffa8ab07c7fed4b7",
+      "translation_sha256": "a62db2557caf16e095f13a8d311332df66f361c864189b90e6cadaa415e03a9a",
+      "render_sha256": "47bebb050f00d909aedf1463cdf4368241d3058beddd8c66ef2fd3984eade633",
+      "aligned_blocks": 19,
+      "linguistic_blocks": 15,
+      "math_expressions": 65,
+      "english_math_expressions": 65,
+      "telugu_text_runs": 120,
+      "telugu_text_characters": 2168,
+      "telugu_text_runs_sha256": "e93548d81ca9662ae117fe4cc7d990b90ed0ed3114f5de63ef749151c0505088",
+      "english_text_runs": 124,
+      "english_text_characters": 2250,
+      "english_text_runs_sha256": "90bfaf661ac9b8d117596ca0a8c7538141bad5c0ee2b05a67b262e6ad20a2bd0",
+      "telugu_commands": {
+        "documentclass": 1,
+        "olfileid": 1,
+        "olsection": 1,
+        "emph": 6,
+        "dots": 1,
+        "ollabel": 1
+      },
+      "english_commands": {
+        "documentclass": 1,
+        "olfileid": 1,
+        "olsection": 1,
+        "emph": 6,
+        "dots": 1,
+        "ollabel": 1
+      },
+      "footnotes": 0,
+      "english_footnotes": 0,
+      "segments": [
+        {
+          "segment_id": "OLP-0006-B001",
+          "source_segment_sha256": "8f9b6df2cd60af77d7b1e7bde21f6c2d03b4d9c6287152f3ba30dc54d49509f4",
+          "translation_segment_sha256": "8f9b6df2cd60af77d7b1e7bde21f6c2d03b4d9c6287152f3ba30dc54d49509f4",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0006-B002",
+          "source_segment_sha256": "d2a6eebea8cc7f6e2dff4495ae790c756aa4472a206967fba087228e192a95b7",
+          "translation_segment_sha256": "d2a6eebea8cc7f6e2dff4495ae790c756aa4472a206967fba087228e192a95b7",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0006-B003",
+          "source_segment_sha256": "49d34b0366eb0a68eb35c75d6d8aeb1d60be3c49779501a7e1cdf4941acdab46",
+          "translation_segment_sha256": "49d34b0366eb0a68eb35c75d6d8aeb1d60be3c49779501a7e1cdf4941acdab46",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0006-B004",
+          "source_segment_sha256": "06b6bd0ee905707f32ecdd43a8bf34e861a29c8005dc416f1d03087547751c80",
+          "translation_segment_sha256": "1c8f015bb9170c274d8ce7361566679c7b672867e2723d8c2dfef6ddbb6c27e3",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0006-B005",
+          "source_segment_sha256": "adadd7cebbbfac416da01f008e820efed59957fe8ce8bc3d73cc4a0d16944ad3",
+          "translation_segment_sha256": "abaa36cacbb8c48f1a18812771181c5c1b2f5bb551d29750dfb7c555b3a786d4",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0006-B006",
+          "source_segment_sha256": "ad4f24f04bc88a3f2e02dc77428aabb4c9a8932ee1a3d1f3047764260a6b29ae",
+          "translation_segment_sha256": "f67c73216aa7f15d20905929ba9e5566f5bc0298bcf50b1f00898a07d4d65bce",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0006-B007",
+          "source_segment_sha256": "ae951f54d998ddd2440e2272e4946dddeb970b915d153f9007620ae5e200a981",
+          "translation_segment_sha256": "220b6115097c54c918e4bd312e59802fc84f48d7c31cc5ebb488c67272e642db",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P005",
+            "TE-P007"
+          ]
+        },
+        {
+          "segment_id": "OLP-0006-B008",
+          "source_segment_sha256": "299727b0a5dc7ae203dd4a76b1bcc7af17c3ffdfc86f418d934bbd83c29ab041",
+          "translation_segment_sha256": "d3b6243c4e7215079a079294f27d2298c81f53cbf8c80d93e84705a153e15eb3",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P005"
+          ]
+        },
+        {
+          "segment_id": "OLP-0006-B009",
+          "source_segment_sha256": "2e75907e57836259c06bd4f9b854fdf7fa7590050c53a61b383852759be3bfd8",
+          "translation_segment_sha256": "fa706c74b485e2d4b17e00c959466a36db02404bf11c4294a0563dd3f3b5d887",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0006-B010",
+          "source_segment_sha256": "919c257c455753942acb398eecb96f027c34f1de47fc5914479a201705c2aa58",
+          "translation_segment_sha256": "2425eeba5592dc078b5aa4c6caf5477cb70b417ccd873d004e3961ba90e8bc09",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0006-B011",
+          "source_segment_sha256": "b0271879f8c09fa85b2098195d14a2a69aada536ea884a8fe4284260a1090864",
+          "translation_segment_sha256": "37c6416f18bfee0be00dc46e1368d4bd794c3a972e90302c73218a69ec3753ca",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P002"
+          ]
+        },
+        {
+          "segment_id": "OLP-0006-B012",
+          "source_segment_sha256": "b735077f654271b6072bec9a344e9287e1960da133490dde74dc2e0c7ddfaea9",
+          "translation_segment_sha256": "c43445d350ddc5a06120906fcbe8f25a8d519861c825a67a88c72ee23bc780d5",
+          "canon_passages": [
+            "TE-P002"
+          ]
+        },
+        {
+          "segment_id": "OLP-0006-B013",
+          "source_segment_sha256": "2edb209d84efc6cc7f7aba978926545a6476e4313a5924637dff25cc1f2e8156",
+          "translation_segment_sha256": "637f52a407058e0e5e3abfe273494a8844bfb89c9a1ae8fa2ce84aa56cb4dad8",
+          "canon_passages": [
+            "TE-P002"
+          ]
+        },
+        {
+          "segment_id": "OLP-0006-B014",
+          "source_segment_sha256": "7edd43911552ac5f7273490c856dab0d33e1ad256c04b8d928ed52bf98f7db32",
+          "translation_segment_sha256": "d328ffb84dffecdfae7f4edcda410fcdbcb90ab3da20cc06fd1034a3966ee07b",
+          "canon_passages": [
+            "TE-P001"
+          ]
+        },
+        {
+          "segment_id": "OLP-0006-B015",
+          "source_segment_sha256": "31d7df0cd163437537e3a37124ad151935c52a4f875ec5c6b4b474c4b51c40b7",
+          "translation_segment_sha256": "1da57056b32e0798beabf02a0a9d411e9c6e5c2367a78f322de7ad53a94451ca",
+          "canon_passages": [
+            "TE-P001"
+          ]
+        },
+        {
+          "segment_id": "OLP-0006-B016",
+          "source_segment_sha256": "e1c69a376a1aa8702d331af8e63ff2949fbaa1cdbcb8628a57fa6f72c97aa941",
+          "translation_segment_sha256": "fc06e2718ec209b01513b8fe89567d318ac9bbaa270d7c275f0709b2195f30a5",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P005"
+          ]
+        },
+        {
+          "segment_id": "OLP-0006-B017",
+          "source_segment_sha256": "9ccfabea5cc502c673db614b15b385d9c0b922c4aa1df7b8e761df3f7cb0d4ec",
+          "translation_segment_sha256": "be0562deb17289b15a3b8a41c3e419774e288c37f342411a4f2a7aed96904190",
+          "canon_passages": [
+            "TE-P003"
+          ]
+        },
+        {
+          "segment_id": "OLP-0006-B018",
+          "source_segment_sha256": "cc0b68e2a8d168d07568c8b0a261e6414c4a3574165b192fe25fcb2ea9fd04e8",
+          "translation_segment_sha256": "601a2f69e7f0d64d3a180676570e0f0bb705dc057e600b5d9cc3d39f435e50c5",
+          "canon_passages": [
+            "TE-P003",
+            "TE-P005"
+          ]
+        },
+        {
+          "segment_id": "OLP-0006-B019",
+          "source_segment_sha256": "2dc670e7ffe1f12aa0326631b39a0b6d72da153425c7f5f9aed627a71c1487d6",
+          "translation_segment_sha256": "2dc670e7ffe1f12aa0326631b39a0b6d72da153425c7f5f9aed627a71c1487d6",
+          "canon_passages": []
+        }
+      ]
+    },
+    {
+      "unit_id": "OLP-0007",
+      "source_path": "content/sets-functions-relations/sets/important-sets.tex",
+      "source_sha256": "ec2115fa48ea6c6684a65bdf2f504102ca0a74b40cf88293dfc12f4ab97ada02",
+      "translation_sha256": "de6ba52339e34a408cf7a17661d6f4b0784d82eb65c5a6a0b09596e8f3578cc1",
+      "render_sha256": "b692f301f23f945c8ae02681ef94a8f1a40dd01e24ae16488a7b9ee3f333e2db",
+      "aligned_blocks": 10,
+      "linguistic_blocks": 6,
+      "math_expressions": 26,
+      "english_math_expressions": 26,
+      "telugu_text_runs": 62,
+      "telugu_text_characters": 1263,
+      "telugu_text_runs_sha256": "0de3605142c4315d41b25875a36ae826df7fff006104a6a3c8c700e3f3df082c",
+      "english_text_runs": 62,
+      "english_text_characters": 1369,
+      "english_text_runs_sha256": "204e07c8a9798a48766ffbaf5ff73159a66758add25938fe180ba0d0756c6fef",
+      "telugu_commands": {
+        "documentclass": 1,
+        "olfileid": 1,
+        "olsection": 1,
+        "emph": 5,
+        "oliflabeldef": 1
+      },
+      "english_commands": {
+        "documentclass": 1,
+        "olfileid": 1,
+        "olsection": 1,
+        "emph": 5,
+        "oliflabeldef": 1
+      },
+      "footnotes": 0,
+      "english_footnotes": 0,
+      "segments": [
+        {
+          "segment_id": "OLP-0007-B001",
+          "source_segment_sha256": "69ca031259951ee76b0dd3cd80e50b5a0cdc1e2d718db644773f1420c882a556",
+          "translation_segment_sha256": "69ca031259951ee76b0dd3cd80e50b5a0cdc1e2d718db644773f1420c882a556",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0007-B002",
+          "source_segment_sha256": "d2a6eebea8cc7f6e2dff4495ae790c756aa4472a206967fba087228e192a95b7",
+          "translation_segment_sha256": "d2a6eebea8cc7f6e2dff4495ae790c756aa4472a206967fba087228e192a95b7",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0007-B003",
+          "source_segment_sha256": "49d34b0366eb0a68eb35c75d6d8aeb1d60be3c49779501a7e1cdf4941acdab46",
+          "translation_segment_sha256": "49d34b0366eb0a68eb35c75d6d8aeb1d60be3c49779501a7e1cdf4941acdab46",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0007-B004",
+          "source_segment_sha256": "4d54b794bc5e71e76c80208a679c2e6fae9b5be44f7a558bea5dde357249cf1a",
+          "translation_segment_sha256": "8a293f099baf3be2b8d41951c74021ecfbe116832fa8bd87fdb3897eb3f9da02",
+          "canon_passages": [
+            "TE-P001"
+          ]
+        },
+        {
+          "segment_id": "OLP-0007-B005",
+          "source_segment_sha256": "15a082c18682b64512d59b174bfca6c9ae6e6042a66531320ae0b2b29010afe2",
+          "translation_segment_sha256": "4c86e64f618f0a55acd984ef06b5c0f14deb81f851f23aea659bb010d030f45e",
+          "canon_passages": [
+            "TE-P005",
+            "TE-P006",
+            "TE-P007",
+            "TE-P013"
+          ]
+        },
+        {
+          "segment_id": "OLP-0007-B006",
+          "source_segment_sha256": "36e9cdd3b81add0dcf6dc7ec12ae9317ee2069b36730315c7f900d7f5dc00bba",
+          "translation_segment_sha256": "1d1a83755a550eaa4a362274e918c10424b48214b91d55d566b0046aa7d959fe",
+          "canon_passages": [
+            "TE-P006",
+            "TE-P007",
+            "TE-P013"
+          ]
+        },
+        {
+          "segment_id": "OLP-0007-B007",
+          "source_segment_sha256": "f75ebe48afef411de4215f0e166d06addd75d3d263d470926af0aa6647edb8a1",
+          "translation_segment_sha256": "fa02b3a2d89947cc634c7f90a5076b94022b68feb84cadc9a8856c0425715d43",
+          "canon_passages": [
+            "TE-P005",
+            "TE-P007"
+          ]
+        },
+        {
+          "segment_id": "OLP-0007-B008",
+          "source_segment_sha256": "7ef70343746cd06547414e937f4d12e420a5b2833c79678711cf5e63c5cdd651",
+          "translation_segment_sha256": "153c9451c625ec63fc4d4a18441bf0d2aa5a911743c9a5804c24a6fb6b2aed94",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P002"
+          ]
+        },
+        {
+          "segment_id": "OLP-0007-B009",
+          "source_segment_sha256": "eec79f3a01875d687204d199d631878ac5d54bb2605ed9681c5db9920dc6b1c2",
+          "translation_segment_sha256": "75c397be4204edea556386ecd107503696174df7c4c8476dfaa464f61f70f982",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P002"
+          ]
+        },
+        {
+          "segment_id": "OLP-0007-B010",
+          "source_segment_sha256": "2dc670e7ffe1f12aa0326631b39a0b6d72da153425c7f5f9aed627a71c1487d6",
+          "translation_segment_sha256": "2dc670e7ffe1f12aa0326631b39a0b6d72da153425c7f5f9aed627a71c1487d6",
+          "canon_passages": []
+        }
+      ]
+    },
+    {
+      "unit_id": "OLP-0008",
+      "source_path": "content/sets-functions-relations/sets/unions-and-intersections.tex",
+      "source_sha256": "e556ac6add69b1e6d41123eb05be4adb15f2dc120a3782a721caeab42dbc4529",
+      "translation_sha256": "3c78cc0af1c2fe09b3b17d5474b7ad14ce0f8dfcc1fc8f6aae29db89fcc93a12",
+      "render_sha256": "133a46e9aa376c0565f2ff4b98eb086dec2bf2397331782050898ea8e20bc317",
+      "aligned_blocks": 30,
+      "linguistic_blocks": 26,
+      "math_expressions": 72,
+      "english_math_expressions": 72,
+      "telugu_text_runs": 165,
+      "telugu_text_characters": 2846,
+      "telugu_text_runs_sha256": "a130edd3b3604b24cdeab8f4107ba58976b3664a1ce96a284be507a378b11974",
+      "english_text_runs": 173,
+      "english_text_characters": 3272,
+      "english_text_runs_sha256": "959a6277d923fa3fd950e24aba96980be01816a7127efaec6944d41566fe9d7d",
+      "telugu_commands": {
+        "documentclass": 1,
+        "olfileid": 1,
+        "olsection": 1,
+        "emph": 6,
+        "dots": 1,
+        "ollabel": 3,
+        "olref": 4,
+        "olasset": 3,
+        "caption": 3
+      },
+      "english_commands": {
+        "documentclass": 1,
+        "olfileid": 1,
+        "olsection": 1,
+        "emph": 6,
+        "dots": 1,
+        "ollabel": 3,
+        "olref": 4,
+        "olasset": 3,
+        "caption": 3
+      },
+      "footnotes": 0,
+      "english_footnotes": 0,
+      "segments": [
+        {
+          "segment_id": "OLP-0008-B001",
+          "source_segment_sha256": "baa5eff53fa41a7734e5a26ea154a3aca3d43a878c7b4758c827158436e8233a",
+          "translation_segment_sha256": "baa5eff53fa41a7734e5a26ea154a3aca3d43a878c7b4758c827158436e8233a",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0008-B002",
+          "source_segment_sha256": "d2a6eebea8cc7f6e2dff4495ae790c756aa4472a206967fba087228e192a95b7",
+          "translation_segment_sha256": "d2a6eebea8cc7f6e2dff4495ae790c756aa4472a206967fba087228e192a95b7",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0008-B003",
+          "source_segment_sha256": "49d34b0366eb0a68eb35c75d6d8aeb1d60be3c49779501a7e1cdf4941acdab46",
+          "translation_segment_sha256": "49d34b0366eb0a68eb35c75d6d8aeb1d60be3c49779501a7e1cdf4941acdab46",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0008-B004",
+          "source_segment_sha256": "7c9d23d2a724d69668dd1d992ede37a02e62b142382cf6b07ce2e49372fabe1e",
+          "translation_segment_sha256": "0bc61ffe16921132c328961105863feacf6a886a50a681bcad71d46b23ad6a4f",
+          "canon_passages": [
+            "TE-P001"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B005",
+          "source_segment_sha256": "d534f2e1f9c1ffbf72c154bafc8bdd7116e401c28d64122e581a6b81aa4d975b",
+          "translation_segment_sha256": "1c3030f7938a284b5ca39344be7a86154ea3c444159af5e81a29fa9f55790b87",
+          "canon_passages": [
+            "TE-P001"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B006",
+          "source_segment_sha256": "be8ac1896f77b3906ce2cb535c0c06a90c540344b81fce2e7977b6b089aada2b",
+          "translation_segment_sha256": "c887194e6c9ea521ac68c1de91b79669559ae3b8275455e09ea5c5fde26276d2",
+          "canon_passages": [
+            "TE-P001"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B007",
+          "source_segment_sha256": "4f5391ec65db40cb4e156eef593499e96e0f46f01b55582183e07cfbfe94daaf",
+          "translation_segment_sha256": "e139241708672a50a4fdb3d8b117af6eb7a66afd74ce19725e181d6af038f074",
+          "canon_passages": [
+            "TE-P001"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B008",
+          "source_segment_sha256": "03d8e2d26353afa506b5473cedaff1e266e2dbd13d1bf3d7d2d1ab624ab27497",
+          "translation_segment_sha256": "767345281cc6162606ba31bcc1a7229a99e9d6d90466fd1658c99703b86732ec",
+          "canon_passages": [
+            "TE-P001"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B009",
+          "source_segment_sha256": "3e74d7c6f42a456cb74aea001689b5147f16cda49d915f0d08cc84ad9b75817d",
+          "translation_segment_sha256": "94e533a3c38e8ee2b951839c1a3064d87e0b0103b4989fe267019edd037f6b9c",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B010",
+          "source_segment_sha256": "1df012bf4822f4839ece9cc70ffc4761a3b35a803fa281f646c7cbf4da058d0c",
+          "translation_segment_sha256": "8418ea5d77fa0bed1a93132e815a4fc7a917ac526f5b47cfcfced90eef73ea05",
+          "canon_passages": [
+            "TE-P001"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B011",
+          "source_segment_sha256": "2ead9a6983b5e304ccd238182208e6d3eda46889b2be85a35b5df017834fe25c",
+          "translation_segment_sha256": "efa76a70b86a5356db6707420934f017846009bc8fd34855e824b42b3d9c19fd",
+          "canon_passages": [
+            "TE-P001"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B012",
+          "source_segment_sha256": "766ebb2fa9cdc526999d2f544f82bbb6f4e8ae5dba2fa0c2001d369773ee9002",
+          "translation_segment_sha256": "4e07456d3af512bc1ebee253f76808f993a4159c006b928eaa7f6f71cf0a6708",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P003"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B013",
+          "source_segment_sha256": "b8e801c3bdc21dc32f498cd781438518f09eecfb7c671593fba6e98f0d7caf96",
+          "translation_segment_sha256": "44a3a175271556d195d86b11fa620c72abc6784c2ee3729b60c0e9445fdab6ee",
+          "canon_passages": [
+            "TE-P001"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B014",
+          "source_segment_sha256": "b210de997b16a5d4dabd34efa3ecf98e4aaf334bf4c4c11b91f58862f7f27e05",
+          "translation_segment_sha256": "3c01b2044ccbefa5f884ad355b77bd32f13ec4fdb608793192f27f0f137c0c84",
+          "canon_passages": [
+            "TE-P001"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B015",
+          "source_segment_sha256": "0bee4fca062bd21bdc123ac5f45db2419116fc830f81d4cfa0ce11d8a1e5ae11",
+          "translation_segment_sha256": "2f6ff4a85ba55ba2e7c5748d918eeb653b6db90807dd07902d35a2319048a390",
+          "canon_passages": [
+            "TE-P001"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B016",
+          "source_segment_sha256": "4d6a03807548d63ecf72514a2e365e939565c37942aaba9879b50015bae5fc55",
+          "translation_segment_sha256": "9bb00831096b9b2acb5dde41398c7bfdaa2f66d9dbb7ab60989ab504d505ef78",
+          "canon_passages": [
+            "TE-P001"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B017",
+          "source_segment_sha256": "fe43c8eaa0f3951ef2d01116b00e3e2083d7cef2f8bf1a03464de8861a8a01b5",
+          "translation_segment_sha256": "fbef3e9a09e4aeeb1881376303be88b2b9c66c8a09d9125660a1040643cb544f",
+          "canon_passages": [
+            "TE-P001"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B018",
+          "source_segment_sha256": "8829dbe36f1436867f654ee06eb401ec2967dc76f43ef7f67e9c71cf0adaf623",
+          "translation_segment_sha256": "3b04cba51074698352257318eb56b463c98c9248f48ae5d40a4f700f577e2e4d",
+          "canon_passages": [
+            "TE-P001"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B019",
+          "source_segment_sha256": "64281478f0bfafec32ffb8d3e6ff1b7af737e49d7a7bf66107d5e3947819e078",
+          "translation_segment_sha256": "f76e32c41017e893db513c4689b7cbcf5ec74a808d18477d37b3eb4b9ce19011",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P003"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B020",
+          "source_segment_sha256": "3142a0cd33243f900dcb7a8b320f453bac6635822a1e6f9834499cf6d557190c",
+          "translation_segment_sha256": "63dff51bde1e521556f6082b540af030ae28da44c6f95d1500753172e8814489",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P002"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B021",
+          "source_segment_sha256": "0e4237b49d1461476bbb90ddac8b5e0b138e35824e51013589a4851d95022ef5",
+          "translation_segment_sha256": "a6caafdfd51f6ecf0faf02da508e7b4633cb018d7868eb0a76838ea48dbfe06f",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P002"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B022",
+          "source_segment_sha256": "594368e2a1950d5181345f2e6ca40f8139dcb443847faf234a9344f53c4e41d5",
+          "translation_segment_sha256": "df2a03ec0ac760d0bc1321bf1be37684dc266a22ab173326a74fb2f63a3d9b1b",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P002"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B023",
+          "source_segment_sha256": "38e6c7d88888080d9d96369920a4698baf4a4948144168da8ad7e5ae336476cc",
+          "translation_segment_sha256": "fa4ca0e287ab26411f9aaa64352331589bf9959e3d36a013f18b554626210bb6",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P003"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B024",
+          "source_segment_sha256": "0ebf0efa3b16569110a67d704759c635ce65b735d4ef28a6264e576a649efeb7",
+          "translation_segment_sha256": "3104f89f4bfe88b0b7dac9351e0ddfbf7e5f7cb1cd42809738436971480eaf57",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P002"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B025",
+          "source_segment_sha256": "3fcdbf6e7f4858defef1d3192b666ecd185a403258413203a78c890598f38fba",
+          "translation_segment_sha256": "24add91757f449ad21828dfd13ca6fc752032e3bc4361968d3ab9221b1fcb9c1",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P002"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B026",
+          "source_segment_sha256": "b161e363ba6cb79bcc8992e4a1b7f61b8a9b28943c23d4a519047b6a2bd47587",
+          "translation_segment_sha256": "0a0de43e79d7be7733e146fdbbbebc772396a87b65cc59047605b02e650f7964",
+          "canon_passages": [
+            "TE-P001"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B027",
+          "source_segment_sha256": "8dacd897c91d02cc9f1f8916719b4230f10e98242a54f4deb4f8a4e53b4301f3",
+          "translation_segment_sha256": "31d54e016f5f074e2af73813b4f7873309eb00cae5774a99ab8aa023a9be9635",
+          "canon_passages": [
+            "TE-P001"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B028",
+          "source_segment_sha256": "b3d1ef79deb53a80ff109fe25291958b55fb856dd3e59603549900685e15c2d2",
+          "translation_segment_sha256": "7ff4f5281db4f4d868e3147d2330a3544819f956e8bfc5847796208f07f2eb77",
+          "canon_passages": [
+            "TE-P001"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B029",
+          "source_segment_sha256": "e6dc229669aaf5d329f01d4ee54f21afa9f44936da958b6f5f11a9ab3c783537",
+          "translation_segment_sha256": "03c677a811979ab6796e33d73803f1b1ea07c32cd612bd09f60aeef4ab0d159d",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P003"
+          ]
+        },
+        {
+          "segment_id": "OLP-0008-B030",
+          "source_segment_sha256": "2dc670e7ffe1f12aa0326631b39a0b6d72da153425c7f5f9aed627a71c1487d6",
+          "translation_segment_sha256": "2dc670e7ffe1f12aa0326631b39a0b6d72da153425c7f5f9aed627a71c1487d6",
+          "canon_passages": []
+        }
+      ]
+    },
+    {
+      "unit_id": "OLP-0009",
+      "source_path": "content/sets-functions-relations/sets/pairs-and-products.tex",
+      "source_sha256": "935f1e0e90dc783a1d5cb3298a38aa8df49af8b424e7282b27dc2ab4e9d85610",
+      "translation_sha256": "deb0d6439c8dc94758cb998002a94621a5062fdcedcf213012757a0ee74cb4bf",
+      "render_sha256": "58596e7d24c5c6cec7182e309ccf46d20769da874fcbe3a1d6305c641d72524a",
+      "aligned_blocks": 20,
+      "linguistic_blocks": 16,
+      "math_expressions": 78,
+      "english_math_expressions": 78,
+      "telugu_text_runs": 140,
+      "telugu_text_characters": 2337,
+      "telugu_text_runs_sha256": "c24a73d18da0321ab73fdd4bdc1a74dd14035ff742772358f1dac505825db470",
+      "english_text_runs": 147,
+      "english_text_characters": 2383,
+      "english_text_runs_sha256": "59523a2c518dd1998dd50b9c54e272db3f310f7a633ff3e22eceebd7348b8d60",
+      "telugu_commands": {
+        "documentclass": 1,
+        "olfileid": 1,
+        "olsection": 1,
+        "emph": 8,
+        "ollabel": 2,
+        "olref": 1
+      },
+      "english_commands": {
+        "documentclass": 1,
+        "olfileid": 1,
+        "olsection": 1,
+        "emph": 8,
+        "ollabel": 2,
+        "olref": 1
+      },
+      "footnotes": 0,
+      "english_footnotes": 0,
+      "segments": [
+        {
+          "segment_id": "OLP-0009-B001",
+          "source_segment_sha256": "b19f7fa23cd4e19b7e2d7d6b61fb9575f22b930f4f99dad3e2c4d3cad6e378b9",
+          "translation_segment_sha256": "b19f7fa23cd4e19b7e2d7d6b61fb9575f22b930f4f99dad3e2c4d3cad6e378b9",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0009-B002",
+          "source_segment_sha256": "d2a6eebea8cc7f6e2dff4495ae790c756aa4472a206967fba087228e192a95b7",
+          "translation_segment_sha256": "d2a6eebea8cc7f6e2dff4495ae790c756aa4472a206967fba087228e192a95b7",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0009-B003",
+          "source_segment_sha256": "49d34b0366eb0a68eb35c75d6d8aeb1d60be3c49779501a7e1cdf4941acdab46",
+          "translation_segment_sha256": "49d34b0366eb0a68eb35c75d6d8aeb1d60be3c49779501a7e1cdf4941acdab46",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0009-B004",
+          "source_segment_sha256": "3c1919822387b3f8b2d2908471299b28e909b9bf9f178d84dbe8a80076730f84",
+          "translation_segment_sha256": "c4efd62b52e814ccddfd3d827d3edbf81bd60e0c0edebfc37cd916c94c5bfcf6",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0009-B005",
+          "source_segment_sha256": "5e30f7b43b4f0a9b8393d52ef924775b303445ec836c905f7ab97f0b6c85ab22",
+          "translation_segment_sha256": "a962f9e91c8646241e3ea0ea94f2b0d8668711bd25e35b9e70fa01072f5d120b",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0009-B006",
+          "source_segment_sha256": "715e4956fa32e17c9664b76b6fab77d96fc7a546d8aa0fc434f776171343762b",
+          "translation_segment_sha256": "28504154023385c1aa784d93b8b93e375c6323ec183f61a4395bc272ae808f87",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0009-B007",
+          "source_segment_sha256": "810eaa1cd7d6e3f90db68a8706fc9bc337a93a6a3c59621e1e2e1b7299c7673d",
+          "translation_segment_sha256": "0c05e840540015a7b4a0bdba1143ade62ac6868498fe7cb8f36981ed0b10da5f",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0009-B008",
+          "source_segment_sha256": "3d962bee2a9b1836b9fc92f0d07dce4dc0dd20eca3a0469bbf9b029f6b57fad8",
+          "translation_segment_sha256": "9bc5d17fa97195ea38c2af8227029d8e854318cae21c7916ef9c231e951de7ff",
+          "canon_passages": [
+            "TE-P003",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0009-B009",
+          "source_segment_sha256": "6e937f0def2a00f5a3d81e8312e10bf8d966f5b1a91b58b64601a3d10f572ce2",
+          "translation_segment_sha256": "3fd2530d098ca0889bdba4d769be0591689d4d9044b86174703c112100b1dee1",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0009-B010",
+          "source_segment_sha256": "11266c29e087a70cf3a616c371de14072f8fccb8ee834ecc3b3edd73d0b6dc5a",
+          "translation_segment_sha256": "436dcf2968015e738ec99645a0832c9526243e51c05fb110f2c19f3b4a3a871a",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0009-B011",
+          "source_segment_sha256": "703fa89067cb21bbdc18ab3330794af7262e95da14ec682cad8a565adf480732",
+          "translation_segment_sha256": "045efc7ff2bcdd7adffc5276ca111c277910b33b8cb631366973c99545edad52",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0009-B012",
+          "source_segment_sha256": "7f5464bbd8f2f6712d3502f186eb3ea3da60aee1918dcd212767d462bfd8557e",
+          "translation_segment_sha256": "839dc514ea61cfa5577be736cdd5f06d5eddf02f12f87ec2c0d1609e03856f7a",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0009-B013",
+          "source_segment_sha256": "036762b7a75cc62ed473705d498e336535cf6fb9d4d86995468c9aa02b343e86",
+          "translation_segment_sha256": "86dc08831f8456f2fdaff951a11f9257c20fd804f32445c510f036e72a4098d5",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0009-B014",
+          "source_segment_sha256": "6f996c80c72f2d35e29e1ab20773a4a03baba82d5c68b74ba656c7d75dce3b41",
+          "translation_segment_sha256": "902a2a5fc219b7c93b5736dfdc68712f8529b004baa0d3de44f5e88bc0430390",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P003"
+          ]
+        },
+        {
+          "segment_id": "OLP-0009-B015",
+          "source_segment_sha256": "e803f44945be605b566a6082a9f3765e8a6c9c8510592e0ae52e1c6c5720ec88",
+          "translation_segment_sha256": "2000bb360623fb3f79fb4400988ba45f19f17cb07e06e2cc068185ab1e9f8ece",
+          "canon_passages": [
+            "TE-P003",
+            "TE-P005"
+          ]
+        },
+        {
+          "segment_id": "OLP-0009-B016",
+          "source_segment_sha256": "419f56f9a1d729cacc9c73e97681ee5703feddf2aa18a38bac9150d39b5987ff",
+          "translation_segment_sha256": "bb575bba2d352d00f447f99865a4b5398b79344de55a9ac79843938329062c63",
+          "canon_passages": [
+            "TE-P003",
+            "TE-P004",
+            "TE-P005"
+          ]
+        },
+        {
+          "segment_id": "OLP-0009-B017",
+          "source_segment_sha256": "921db0ec7d5979310cb8f868126712dcfe1af84456d05829957cfc788d80fb5d",
+          "translation_segment_sha256": "1cb9e66cf66d28d96d0c4307594ce58fa105a4941f34243f49184756e6b39223",
+          "canon_passages": [
+            "TE-P003",
+            "TE-P005"
+          ]
+        },
+        {
+          "segment_id": "OLP-0009-B018",
+          "source_segment_sha256": "c3e6388527638a854590ba0d8e229b5767fd175d76cf0b99d298da930b4fa64c",
+          "translation_segment_sha256": "3592e55470d175b07144a00685483da9ee129a56500b00300f115b2349ed6771",
+          "canon_passages": [
+            "TE-P003",
+            "TE-P005"
+          ]
+        },
+        {
+          "segment_id": "OLP-0009-B019",
+          "source_segment_sha256": "96241a7682cc27318c1a8cb1d8ce1d0e8989e13884c0719d842d7ec8eb973a08",
+          "translation_segment_sha256": "0e5c46b7607a932bd770960be23a97fd97a8f4f7037c9881f10248595b2fdb62",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P002"
+          ]
+        },
+        {
+          "segment_id": "OLP-0009-B020",
+          "source_segment_sha256": "2dc670e7ffe1f12aa0326631b39a0b6d72da153425c7f5f9aed627a71c1487d6",
+          "translation_segment_sha256": "2dc670e7ffe1f12aa0326631b39a0b6d72da153425c7f5f9aed627a71c1487d6",
+          "canon_passages": []
+        }
+      ]
+    },
+    {
+      "unit_id": "OLP-0010",
+      "source_path": "content/sets-functions-relations/sets/russells-paradox.tex",
+      "source_sha256": "aa8e94675f56112d8952b81d17968545b54c33393bfc466745edcaca30f4453a",
+      "translation_sha256": "2bf4e3950b6221f6ec8c3656120f4f159445ce421ca987a4f65ed9f779532f74",
+      "render_sha256": "67379a2a1c3968547e561027b84eab3f5fd240399c413d54fe90ab967cfd6f39",
+      "aligned_blocks": 15,
+      "linguistic_blocks": 11,
+      "math_expressions": 34,
+      "english_math_expressions": 34,
+      "telugu_text_runs": 90,
+      "telugu_text_characters": 2561,
+      "telugu_text_runs_sha256": "9d3be1c3c89bc6bec916db4cd9fcb03e43af1ca891f871a0c06c6dad1d3b2d8f",
+      "english_text_runs": 93,
+      "english_text_characters": 2756,
+      "english_text_runs_sha256": "613eda4c4f180267eb1f1685f1b77d2ca1761beeda508e5f59f9d2f22737c27c",
+      "telugu_commands": {
+        "documentclass": 1,
+        "olfileid": 1,
+        "olsection": 1,
+        "emph": 11,
+        "ollabel": 1,
+        "oliflabeldef": 1
+      },
+      "english_commands": {
+        "documentclass": 1,
+        "olfileid": 1,
+        "olsection": 1,
+        "emph": 11,
+        "ollabel": 1,
+        "oliflabeldef": 1
+      },
+      "footnotes": 0,
+      "english_footnotes": 0,
+      "segments": [
+        {
+          "segment_id": "OLP-0010-B001",
+          "source_segment_sha256": "d78d9219cce0010374c7989d22b8fdde7c79b44fc5e9dbd731025545f511a507",
+          "translation_segment_sha256": "d78d9219cce0010374c7989d22b8fdde7c79b44fc5e9dbd731025545f511a507",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0010-B002",
+          "source_segment_sha256": "d2a6eebea8cc7f6e2dff4495ae790c756aa4472a206967fba087228e192a95b7",
+          "translation_segment_sha256": "d2a6eebea8cc7f6e2dff4495ae790c756aa4472a206967fba087228e192a95b7",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0010-B003",
+          "source_segment_sha256": "49d34b0366eb0a68eb35c75d6d8aeb1d60be3c49779501a7e1cdf4941acdab46",
+          "translation_segment_sha256": "49d34b0366eb0a68eb35c75d6d8aeb1d60be3c49779501a7e1cdf4941acdab46",
+          "canon_passages": []
+        },
+        {
+          "segment_id": "OLP-0010-B004",
+          "source_segment_sha256": "df42c230157ceccc8f6c18569e0bb42e92459b6cdbda9497f98260f714105feb",
+          "translation_segment_sha256": "af0c74098d106bb59eae45c3ee8cd15391ba32ba7fe2cf25a152f1d7281b5955",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P002",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0010-B005",
+          "source_segment_sha256": "2d87e00f082b79799a46407ccdf8809c81f3a10c4d1cf1a3d8ca018f497db4f3",
+          "translation_segment_sha256": "5c52ecf0688a20e5781b808162e8690ff5469b7440a154926e5d6f77328ea87e",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P002",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0010-B006",
+          "source_segment_sha256": "58f1030c4c094f0b0d8c65f60750c7d5eb2e9bacecab0098b0a501242ecf7861",
+          "translation_segment_sha256": "5ecc999386c7e055f0d0315d94982971a40c3b121621961ab25b6c8c3b67998d",
+          "canon_passages": [
+            "TE-P002",
+            "TE-P003"
+          ]
+        },
+        {
+          "segment_id": "OLP-0010-B007",
+          "source_segment_sha256": "10279767cc321883b4f3928378da70c26775274eb49927c26b6cb00da7079fb3",
+          "translation_segment_sha256": "4c6b10eb5c4e3ad5caa1e75317ae45f97924cbc0ac4ada44032ce2529bae2f83",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P002",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0010-B008",
+          "source_segment_sha256": "6e09275a81f5d852e95cf626c66995f3b13341e70974e2abc0fb7ba911df5367",
+          "translation_segment_sha256": "f3e6abbbe33a295ff20f3b53706c2885fbabdf14ccbb18d24ed4e81f554e67ab",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P002",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0010-B009",
+          "source_segment_sha256": "8484329f21d404633f8298d2aa924654eb9e0feda0f4ae7239127f231644d4f0",
+          "translation_segment_sha256": "be306b31607ccd157b0806725f1eb84ffeb1e5e3a6abb5aa94a8c838cd31f0ce",
+          "canon_passages": [
+            "TE-P002",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0010-B010",
+          "source_segment_sha256": "39d5f2c84590481d0700b06350f6bbb431d7558baa6b6814148bbbb04ad3e10a",
+          "translation_segment_sha256": "2da46c5c7eace25ae32dd66ee7b7b36f7d9bf954b579467913a76f5a7eb40d74",
+          "canon_passages": [
+            "TE-P002",
+            "TE-P003",
+            "TE-P004"
+          ]
+        },
+        {
+          "segment_id": "OLP-0010-B011",
+          "source_segment_sha256": "29c961c98f91bbee7b0d93aca6fccb0e3deb3885f6a3186141a3be4a1b6e9f4d",
+          "translation_segment_sha256": "e5c2c5d94934256be46905763776a062bb0abe9a01de6f69c02e949e75e8071c",
+          "canon_passages": [
+            "TE-P002",
+            "TE-P003"
+          ]
+        },
+        {
+          "segment_id": "OLP-0010-B012",
+          "source_segment_sha256": "7d48fb43bbcd51dcbcffea6a36795dbdb61beab9a6b7cc01b690603741ebb062",
+          "translation_segment_sha256": "9a5e32c3c80019c2450ad4a70030254b52ad3958dcd0f215d14103a14727a264",
+          "canon_passages": [
+            "TE-P002",
+            "TE-P003"
+          ]
+        },
+        {
+          "segment_id": "OLP-0010-B013",
+          "source_segment_sha256": "8bf5d1c80570538687e2df5985e96a6d1962362e0cd8f6afdcc938cb30b25df1",
+          "translation_segment_sha256": "2e76712d305856199768d725175ae8469ec7d11ab17fc72b74f2f571ca3827f9",
+          "canon_passages": [
+            "TE-P002",
+            "TE-P003"
+          ]
+        },
+        {
+          "segment_id": "OLP-0010-B014",
+          "source_segment_sha256": "a941dcaff8d02e00c8003029044a78bf0b9b080055a9c63ea2cc6d4ff19692da",
+          "translation_segment_sha256": "b7358c53239b5f5385d9425b36cf340d34357e3bdf2faaa595b661acbd98e766",
+          "canon_passages": [
+            "TE-P001",
+            "TE-P002",
+            "TE-P003"
+          ]
+        },
+        {
+          "segment_id": "OLP-0010-B015",
+          "source_segment_sha256": "2dc670e7ffe1f12aa0326631b39a0b6d72da153425c7f5f9aed627a71c1487d6",
+          "translation_segment_sha256": "2dc670e7ffe1f12aa0326631b39a0b6d72da153425c7f5f9aed627a71c1487d6",
+          "canon_passages": []
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "source_path": "assets/diagrams/union.tikz",
+      "source_sha256": "f9ca5508f0bac1f848271027572c4a59a6caba3db1f2c31bdd844f5bcea3e22e",
+      "paths": 11,
+      "conversion": "Exact source Bezier/control/line coordinates and stroke styles; native downward SVG y axis matches original TikZ negative y scale."
+    },
+    {
+      "source_path": "assets/diagrams/intersection.tikz",
+      "source_sha256": "d95d0e70278ddbdc46e76f94930b6f29aedec8b91a3550338e553ba35067464c",
+      "paths": 7,
+      "conversion": "Exact source Bezier/control/line coordinates and stroke styles; native downward SVG y axis matches original TikZ negative y scale."
+    },
+    {
+      "source_path": "assets/diagrams/difference.tikz",
+      "source_sha256": "c4214baef02f0261773a29b793a8221144fbe1d022ef1e753054c56080e4cdfc",
+      "paths": 11,
+      "conversion": "Exact source Bezier/control/line coordinates and stroke styles; native downward SVG y axis matches original TikZ negative y scale."
+    }
+  ],
+  "labels": [
+    [
+      "sfr:set::chap",
+      {
+        "number": "1",
+        "id": "sfr:set::chap"
+      }
+    ],
+    [
+      "sfr:set:bas:sec",
+      {
+        "number": "1.1",
+        "id": "sfr:set:bas:sec"
+      }
+    ],
+    [
+      "sfr:set:sub:sec",
+      {
+        "number": "1.2",
+        "id": "sfr:set:sub:sec"
+      }
+    ],
+    [
+      "sfr:set:sub:forallxina",
+      {
+        "number": "1.2.5",
+        "id": "sfr:set:sub:forallxina"
+      }
+    ],
+    [
+      "sfr:set:imp:sec",
+      {
+        "number": "1.3",
+        "id": "sfr:set:imp:sec"
+      }
+    ],
+    [
+      "sfr:set:uni:sec",
+      {
+        "number": "1.4",
+        "id": "sfr:set:uni:sec"
+      }
+    ],
+    [
+      "sfr:set:uni:fig:union",
+      {
+        "number": "1.1",
+        "id": "sfr:set:uni:fig:union"
+      }
+    ],
+    [
+      "sfr:set:uni:fig:intersection",
+      {
+        "number": "1.2",
+        "id": "sfr:set:uni:fig:intersection"
+      }
+    ],
+    [
+      "sfr:set:uni:difference",
+      {
+        "number": "1.3",
+        "id": "sfr:set:uni:difference"
+      }
+    ],
+    [
+      "sfr:set:pai:sec",
+      {
+        "number": "1.5",
+        "id": "sfr:set:pai:sec"
+      }
+    ],
+    [
+      "sfr:set:pai:wienerkuratowski",
+      {
+        "number": "1.5.1",
+        "id": "sfr:set:pai:wienerkuratowski"
+      }
+    ],
+    [
+      "sfr:set:pai:cardnmprod",
+      {
+        "number": "1.5.5",
+        "id": "sfr:set:pai:cardnmprod"
+      }
+    ],
+    [
+      "sfr:set:rus:sec",
+      {
+        "number": "1.6",
+        "id": "sfr:set:rus:sec"
+      }
+    ],
+    [
+      "sfr:set:rus:thm:russells-paradox",
+      {
+        "number": "1.6.1",
+        "id": "sfr:set:rus:thm:russells-paradox"
+      }
+    ]
+  ],
+  "english_labels": [
+    [
+      "sfr:set::chap",
+      {
+        "number": "1",
+        "id": "sfr:set::chap"
+      }
+    ],
+    [
+      "sfr:set:bas:sec",
+      {
+        "number": "1.1",
+        "id": "sfr:set:bas:sec"
+      }
+    ],
+    [
+      "sfr:set:sub:sec",
+      {
+        "number": "1.2",
+        "id": "sfr:set:sub:sec"
+      }
+    ],
+    [
+      "sfr:set:sub:forallxina",
+      {
+        "number": "1.2.5",
+        "id": "sfr:set:sub:forallxina"
+      }
+    ],
+    [
+      "sfr:set:imp:sec",
+      {
+        "number": "1.3",
+        "id": "sfr:set:imp:sec"
+      }
+    ],
+    [
+      "sfr:set:uni:sec",
+      {
+        "number": "1.4",
+        "id": "sfr:set:uni:sec"
+      }
+    ],
+    [
+      "sfr:set:uni:fig:union",
+      {
+        "number": "1.1",
+        "id": "sfr:set:uni:fig:union"
+      }
+    ],
+    [
+      "sfr:set:uni:fig:intersection",
+      {
+        "number": "1.2",
+        "id": "sfr:set:uni:fig:intersection"
+      }
+    ],
+    [
+      "sfr:set:uni:difference",
+      {
+        "number": "1.3",
+        "id": "sfr:set:uni:difference"
+      }
+    ],
+    [
+      "sfr:set:pai:sec",
+      {
+        "number": "1.5",
+        "id": "sfr:set:pai:sec"
+      }
+    ],
+    [
+      "sfr:set:pai:wienerkuratowski",
+      {
+        "number": "1.5.1",
+        "id": "sfr:set:pai:wienerkuratowski"
+      }
+    ],
+    [
+      "sfr:set:pai:cardnmprod",
+      {
+        "number": "1.5.5",
+        "id": "sfr:set:pai:cardnmprod"
+      }
+    ],
+    [
+      "sfr:set:rus:sec",
+      {
+        "number": "1.6",
+        "id": "sfr:set:rus:sec"
+      }
+    ],
+    [
+      "sfr:set:rus:thm:russells-paradox",
+      {
+        "number": "1.6.1",
+        "id": "sfr:set:rus:thm:russells-paradox"
+      }
+    ]
+  ],
+  "references": [
+    {
+      "key": "sfr:set:bas:sec",
+      "resolved": true
+    },
+    {
+      "key": "sfr:set:uni:fig:union",
+      "resolved": true
+    },
+    {
+      "key": "sfr:set:uni:fig:intersection",
+      "resolved": true
+    },
+    {
+      "key": "sfr:set:uni:difference",
+      "resolved": true
+    },
+    {
+      "key": "sfr:set:pai:wienerkuratowski",
+      "resolved": true
+    }
+  ],
+  "english_references": [
+    {
+      "key": "sfr:set:bas:sec",
+      "resolved": true
+    },
+    {
+      "key": "sfr:set:uni:fig:union",
+      "resolved": true
+    },
+    {
+      "key": "sfr:set:uni:fig:intersection",
+      "resolved": true
+    },
+    {
+      "key": "sfr:set:uni:difference",
+      "resolved": true
+    },
+    {
+      "key": "sfr:set:pai:wienerkuratowski",
+      "resolved": true
+    }
+  ],
+  "conditional_branches": [
+    {
+      "label": "sfr:arith:real:realline",
+      "selected": "false",
+      "true_source": "; ఈ విషయాన్ని\n\\olref[arith][real]{realline}లో తిరిగి పరిశీలిస్తాం",
+      "false_source": ""
+    },
+    {
+      "label": "cumul:::part",
+      "selected": "false",
+      "true_source": "ఆ కచ్చితమైన విధానాన్ని\n\\olref[cumul][][]{part} భాగంలో పరిశీలిస్తాం. ప్రస్తుతానికి\nఅనౌపచారికంగానే ముందుకు సాగుతూ, విరోధాలను జాగ్రత్తగా తప్పించుకోవడానికి\nప్రయత్నిస్తాం.",
+      "false_source": ""
+    }
+  ],
+  "english_conditional_branches": [
+    {
+      "label": "sfr:arith:real:realline",
+      "selected": "false",
+      "true_source": ", but we'll\nreturn to this in \\olref[arith][real]{realline}",
+      "false_source": ""
+    },
+    {
+      "label": "cumul:::part",
+      "selected": "false",
+      "true_source": "That rigour will be\nreserved for Part \\olref[cumul][][]{part}. For now, we will proceed\nna\\\"ively, and carefully try to sidestep contradictions.",
+      "false_source": ""
+    }
+  ],
+  "math": [
+    {
+      "source": "x",
+      "render_tex": "x",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x \\in A",
+      "render_tex": "x \\in A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x \\notin A",
+      "render_tex": "x \\notin A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\emptyset",
+      "render_tex": "\\emptyset",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A = B",
+      "render_tex": "A = B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "a_{1}",
+      "render_tex": "a_{1}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "a_{n}",
+      "render_tex": "a_{n}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{a_{1}, \\dots, a_{n}\\}",
+      "render_tex": "\\{a_{1}, \\dots, a_{n}\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "a_1, \\ldots, a_n",
+      "render_tex": "a_1, \\ldots, a_n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n    \\{a, a, b\\} = \\{a, b\\} = \\{b,a\\}.\n  ",
+      "render_tex": "\n    \\{a, a, b\\} = \\{a, b\\} = \\{b,a\\}.\n  ",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "S=\\{\\textrm{Ruth}\\}",
+      "render_tex": "S=\\{\\textrm{Ruth}\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "4",
+      "render_tex": "4",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{1, 2, 3\\}",
+      "render_tex": "\\{1, 2, 3\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{3, 2, 1\\}",
+      "render_tex": "\\{3, 2, 1\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{1, 2, 1, 2, 3\\}",
+      "render_tex": "\\{1, 2, 1, 2, 3\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{1, 2, 3\\}",
+      "render_tex": "\\{1, 2, 3\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{3, 2, 1\\}",
+      "render_tex": "\\{3, 2, 1\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{1, 2, 1, 2, 3\\}",
+      "render_tex": "\\{1, 2, 1, 2, 3\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Setabs{x}{\\phi(x)}",
+      "render_tex": "\\Setabs{x}{\\phi(x)}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\phi(x)",
+      "render_tex": "\\phi(x)",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x",
+      "render_tex": "x",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "S",
+      "render_tex": "S",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\nS = \\Setabs{x}{x \\text{ రిచర్డ్‌కు సహోదర సంబంధం గల వ్యక్తి}}.\n",
+      "render_tex": "\nS = \\Setabs{x}{x \\text{ రిచర్డ్‌కు సహోదర సంబంధం గల వ్యక్తి}}.\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "6",
+      "render_tex": "6",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "1",
+      "render_tex": "1",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "2",
+      "render_tex": "2",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "3",
+      "render_tex": "3",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "6 = 1 + 2 + 3",
+      "render_tex": "6 = 1 + 2 + 3",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "10",
+      "render_tex": "10",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "6",
+      "render_tex": "6",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n\t\\{6\\} = \\Setabs{x}{x\\text{ పరిపూర్ణం మరియు }0 \\leq x \\leq 10}\n",
+      "render_tex": "\n\t\\{6\\} = \\Setabs{x}{x\\text{ పరిపూర్ణం మరియు }0 \\leq x \\leq 10}\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "x",
+      "render_tex": "x",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "0 \\leq x \\leq 10",
+      "render_tex": "0 \\leq x \\leq 10",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x",
+      "render_tex": "x",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\phi(x)",
+      "render_tex": "\\phi(x)",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x",
+      "render_tex": "x",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Setabs{x}{\\phi(x)}",
+      "render_tex": "\\Setabs{x}{\\phi(x)}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\phi(x)",
+      "render_tex": "\\phi(x)",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x",
+      "render_tex": "x",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A = B",
+      "render_tex": "A = B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x \\in A",
+      "render_tex": "x \\in A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x \\in B",
+      "render_tex": "x \\in B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "y \\in B",
+      "render_tex": "y \\in B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "y \\in A",
+      "render_tex": "y \\in A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A = B",
+      "render_tex": "A = B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\subseteq B",
+      "render_tex": "A \\subseteq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\not\\subseteq B",
+      "render_tex": "A \\not\\subseteq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\subseteq B",
+      "render_tex": "A \\subseteq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\neq B",
+      "render_tex": "A \\neq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\subsetneq B",
+      "render_tex": "A \\subsetneq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\emptyset",
+      "render_tex": "\\emptyset",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{ a, b \\} \\subseteq \\{ a, b, c \\}",
+      "render_tex": "\\{ a, b \\} \\subseteq \\{ a, b, c \\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{ a, b, e \\}",
+      "render_tex": "\\{ a, b, e \\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{ a, b, c \\}",
+      "render_tex": "\\{ a, b, c \\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "2",
+      "render_tex": "2",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{0\\} \\in \\{0, \\{0\\}\\}",
+      "render_tex": "\\{0\\} \\in \\{0, \\{0\\}\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{0\\} \\subseteq \\{0, \\{0\\}\\}",
+      "render_tex": "\\{0\\} \\subseteq \\{0, \\{0\\}\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A = B",
+      "render_tex": "A = B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\subseteq B",
+      "render_tex": "A \\subseteq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B \\subseteq A",
+      "render_tex": "B \\subseteq A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A = B",
+      "render_tex": "A = B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\subseteq B",
+      "render_tex": "A \\subseteq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B \\subseteq A",
+      "render_tex": "B \\subseteq A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\dots",
+      "render_tex": "\\dots",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "(\\forall x \\in A)\\phi",
+      "render_tex": "(\\forall x \\in A)\\phi",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\forall x(x \\in A \\lif\n\\phi)",
+      "render_tex": "\\forall x(x \\in A \\lif\n\\phi)",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "(\\exists x \\in A)\\phi",
+      "render_tex": "(\\exists x \\in A)\\phi",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\exists x(x \\in A \\land \\phi)",
+      "render_tex": "\\exists x(x \\in A \\land \\phi)",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\subseteq B",
+      "render_tex": "A \\subseteq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "(\\forall x \\in A)x \\in B",
+      "render_tex": "(\\forall x \\in A)x \\in B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Pow{A}",
+      "render_tex": "\\Pow{A}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n    \\Pow{A} = \\Setabs{B}{B \\subseteq A}\n  ",
+      "render_tex": "\n    \\Pow{A} = \\Setabs{B}{B \\subseteq A}\n  ",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "\\{ a, b, c \\}",
+      "render_tex": "\\{ a, b, c \\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\emptyset",
+      "render_tex": "\\emptyset",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{a \\}",
+      "render_tex": "\\{a \\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{b\\}",
+      "render_tex": "\\{b\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{c\\}",
+      "render_tex": "\\{c\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{a, b\\}",
+      "render_tex": "\\{a, b\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{a, c\\}",
+      "render_tex": "\\{a, c\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{b, c\\}",
+      "render_tex": "\\{b, c\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{a, b, c\\}",
+      "render_tex": "\\{a, b, c\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Pow{\\{a,b,c\\}}",
+      "render_tex": "\\Pow{\\{a,b,c\\}}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n\\Pow{\\{ a, b, c \\}} = \\{\\emptyset, \\{a \\}, \\{b\\}, \\{c\\}, \\{a, b\\},\n\\{b, c\\}, \\{a, c\\}, \\{a, b, c\\}\\}\n",
+      "render_tex": "\n\\Pow{\\{ a, b, c \\}} = \\{\\emptyset, \\{a \\}, \\{b\\}, \\{c\\}, \\{a, b\\},\n\\{b, c\\}, \\{a, c\\}, \\{a, b, c\\}\\}\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "\\{a, b, c, d\\}",
+      "render_tex": "\\{a, b, c, d\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n",
+      "render_tex": "n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Pow{A}",
+      "render_tex": "\\Pow{A}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "2^n",
+      "render_tex": "2^n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n    \\Nat = \\{0, 1, 2, 3, \\ldots\\} \\\\\n    \\shoveright{\\text{సహజ సంఖ్యల సమితి}}\\\\\n    \\shoveleft{\\Int = \\{\\ldots, -2, -1, 0, 1, 2, \\ldots\\}} \\\\\n    \\shoveright{\\text{పూర్ణ సంఖ్యల సమితి}}\\\\\n    \\shoveleft{\\Rat = \\Setabs{\\nicefrac{m}{n}}{m, n \\in \\Int\\text{ మరియు }n \\neq 0}}\\\\\n    \\shoveright{\\text{కరణీయ సంఖ్యల సమితి}}\\\\\n    \\shoveleft{\\Real = (-\\infty, \\infty)}\\\\\n    \\text{వాస్తవ సంఖ్యల సమితి (అవిచ్ఛిన్న సమితి)}\n",
+      "render_tex": "\\begin{gathered}\n    \\Nat = \\{0, 1, 2, 3, \\ldots\\} \\\\\n    \\shoveright{\\text{సహజ సంఖ్యల సమితి}}\\\\\n    \\shoveleft{\\Int = \\{\\ldots, -2, -1, 0, 1, 2, \\ldots\\}} \\\\\n    \\shoveright{\\text{పూర్ణ సంఖ్యల సమితి}}\\\\\n    \\shoveleft{\\Rat = \\Setabs{\\nicefrac{m}{n}}{m, n \\in \\Int\\text{ మరియు }n \\neq 0}}\\\\\n    \\shoveright{\\text{కరణీయ సంఖ్యల సమితి}}\\\\\n    \\shoveleft{\\Real = (-\\infty, \\infty)}\\\\\n    \\text{వాస్తవ సంఖ్యల సమితి (అవిచ్ఛిన్న సమితి)}\n\\end{gathered}",
+      "display": true,
+      "environment": "multline*"
+    },
+    {
+      "source": "\\Nat \\subseteq \\Int \\subseteq \\Rat \\subseteq \\Real",
+      "render_tex": "\\Nat \\subseteq \\Int \\subseteq \\Rat \\subseteq \\Real",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Nat \\subsetneq \\Int \\subsetneq \\Rat",
+      "render_tex": "\\Nat \\subsetneq \\Int \\subsetneq \\Rat",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "-1",
+      "render_tex": "-1",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\nicefrac{1}{2}",
+      "render_tex": "\\nicefrac{1}{2}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Rat \\subsetneq \\Real",
+      "render_tex": "\\Rat \\subsetneq \\Real",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\PosInt = \\{1, 2, 3, \\dots\\}",
+      "render_tex": "\\PosInt = \\{1, 2, 3, \\dots\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Bin = \\{0, 1\\}",
+      "render_tex": "\\Bin = \\{0, 1\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A^{*}",
+      "render_tex": "A^{*}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Lambda",
+      "render_tex": "\\Lambda",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n\\Bin^*\n=\\{\\Lambda,0,1,00,01,10,11,\\\\\n000,001,010,011,100,101,110,111,0000,\\ldots\\}.\n",
+      "render_tex": "\\begin{gathered}\n\\Bin^*\n=\\{\\Lambda,0,1,00,01,10,11,\\\\\n000,001,010,011,100,101,110,111,0000,\\ldots\\}.\n\\end{gathered}",
+      "display": true,
+      "environment": "multline*"
+    },
+    {
+      "source": "x=x_{1}\\ldots x_{n}\\in A^{*}",
+      "render_tex": "x=x_{1}\\ldots x_{n}\\in A^{*}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n",
+      "render_tex": "n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n",
+      "render_tex": "n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\len{x}=n",
+      "render_tex": "\\len{x}=n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A^\\omega",
+      "render_tex": "A^\\omega",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "a_1a_2a_3a_4\\dots",
+      "render_tex": "a_1a_2a_3a_4\\dots",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Setabs{x}{\\phi(x)}",
+      "render_tex": "\\Setabs{x}{\\phi(x)}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\phi",
+      "render_tex": "\\phi",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Setabs{x}{x \\in A \\lor x \\in B}",
+      "render_tex": "\\Setabs{x}{x \\in A \\lor x \\in B}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\cup B",
+      "render_tex": "A \\cup B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\cup B",
+      "render_tex": "A \\cup B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\nA \\cup B = \\Setabs{x}{x \\in A \\lor x \\in B}\n",
+      "render_tex": "\nA \\cup B = \\Setabs{x}{x \\in A \\lor x \\in B}\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "\\{ a, b, c\\} \\cup \\{ a, 0, 1\\} = \\{a, b, c, 0, 1\\}",
+      "render_tex": "\\{ a, b, c\\} \\cup \\{ a, 0, 1\\} = \\{a, b, c, 0, 1\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{a, b, c \\} \\cup \\{a \\} = \\{a, b, c\\}",
+      "render_tex": "\\{a, b, c \\} \\cup \\{a \\} = \\{a, b, c\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{a, b, c \\} \\cup \\emptyset = \\{a, b, c \\}",
+      "render_tex": "\\{a, b, c \\} \\cup \\emptyset = \\{a, b, c \\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\subseteq B",
+      "render_tex": "A \\subseteq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\cup B = B",
+      "render_tex": "A \\cup B = B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\cap B",
+      "render_tex": "A \\cap B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\cap B",
+      "render_tex": "A \\cap B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\nA \\cap B = \\Setabs{x}{x \\in A \\land x \\in B}\n",
+      "render_tex": "\nA \\cap B = \\Setabs{x}{x \\in A \\land x \\in B}\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "\\{ a, b, c\\} \\cap \\{ 0, 1\\} = \\emptyset",
+      "render_tex": "\\{ a, b, c\\} \\cap \\{ 0, 1\\} = \\emptyset",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{a, b, c \\} \\cap \\{a, b, d \\} = \\{a, b\\}",
+      "render_tex": "\\{a, b, c \\} \\cap \\{a, b, d \\} = \\{a, b\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{a, b, c\\} \\cap \\{a, b\\} = \\{a, b\\}",
+      "render_tex": "\\{a, b, c\\} \\cap \\{a, b\\} = \\{a, b\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{a, b, c \\} \\cap \\emptyset = \\emptyset",
+      "render_tex": "\\{a, b, c \\} \\cap \\emptyset = \\emptyset",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\subseteq B",
+      "render_tex": "A \\subseteq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\cap B = A",
+      "render_tex": "A \\cap B = A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\bigcup A",
+      "render_tex": "\\bigcup A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n\\bigcup A & = \\Setabs{x}{x \\text{ అనేది } A\\text{లోని ఒక మూలకానికి చెందుతుంది}},\n\\text{ అంటే,}\\\\\n& = \\Setabs{x}{\\text{ఏదో ఒక } B \\in A\n  \\text{ కోసం } x \\in B}\n",
+      "render_tex": "\\begin{aligned}\n\\bigcup A & = \\Setabs{x}{x \\text{ అనేది } A\\text{లోని ఒక మూలకానికి చెందుతుంది}},\n\\text{ అంటే,}\\\\\n& = \\Setabs{x}{\\text{ఏదో ఒక } B \\in A\n  \\text{ కోసం } x \\in B}\n\\end{aligned}",
+      "display": true,
+      "environment": "align*"
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\bigcap A",
+      "render_tex": "\\bigcap A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n\\bigcap A & = \\Setabs{x}{x \\text{ అనేది } A\\text{లోని ప్రతి మూలకానికి చెందుతుంది}},\n\\text{ అంటే,}\\\\\n & = \\Setabs{x}{\\text{ప్రతి } B \\in A\\text{ కోసం}, x \\in B}\n",
+      "render_tex": "\\begin{aligned}\n\\bigcap A & = \\Setabs{x}{x \\text{ అనేది } A\\text{లోని ప్రతి మూలకానికి చెందుతుంది}},\n\\text{ అంటే,}\\\\\n & = \\Setabs{x}{\\text{ప్రతి } B \\in A\\text{ కోసం}, x \\in B}\n\\end{aligned}",
+      "display": true,
+      "environment": "align*"
+    },
+    {
+      "source": "A = \\{ \\{ a, b \\}, \\{ a, d, e \\}, \\{ a, d \\} \\}",
+      "render_tex": "A = \\{ \\{ a, b \\}, \\{ a, d, e \\}, \\{ a, d \\} \\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\bigcup A = \\{ a, b, d, e \\}",
+      "render_tex": "\\bigcup A = \\{ a, b, d, e \\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\bigcap A = \\{ a \\}",
+      "render_tex": "\\bigcap A = \\{ a \\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\in B",
+      "render_tex": "A \\in B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\subseteq \\bigcup B",
+      "render_tex": "A \\subseteq \\bigcup B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A_1",
+      "render_tex": "A_1",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A_2",
+      "render_tex": "A_2",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n\\bigcup_i A_i & = \\Setabs{x}{x \\text{ అనేది ఏదో ఒక } A_i\\text{కు చెందుతుంది}}\\\\\n\\bigcap_i A_i & = \\Setabs{x}{x \\text{ అనేది ప్రతి } A_i\\text{కు చెందుతుంది}}.\n",
+      "render_tex": "\\begin{aligned}\n\\bigcup_i A_i & = \\Setabs{x}{x \\text{ అనేది ఏదో ఒక } A_i\\text{కు చెందుతుంది}}\\\\\n\\bigcap_i A_i & = \\Setabs{x}{x \\text{ అనేది ప్రతి } A_i\\text{కు చెందుతుంది}}.\n\\end{aligned}",
+      "display": true,
+      "environment": "align*"
+    },
+    {
+      "source": "I",
+      "render_tex": "I",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "i \\in I",
+      "render_tex": "i \\in I",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A_i",
+      "render_tex": "A_i",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n\t\\bigcup_{i \\in I} A_i & = \\bigcup \\Setabs{A_i }{i \\in I}\\\\\n\t\\bigcap_{i \\in I} A_i & = \\bigcap\\Setabs{A_i}{i \\in I}\n",
+      "render_tex": "\\begin{aligned}\n\t\\bigcup_{i \\in I} A_i & = \\bigcup \\Setabs{A_i }{i \\in I}\\\\\n\t\\bigcap_{i \\in I} A_i & = \\bigcap\\Setabs{A_i}{i \\in I}\n\\end{aligned}",
+      "display": true,
+      "environment": "align*"
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\setminus B",
+      "render_tex": "A \\setminus B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\setminus B",
+      "render_tex": "A \\setminus B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\nA\\setminus B = \\Setabs{x}{x\\in A \\text{ మరియు } x \\notin B}.\n",
+      "render_tex": "\nA\\setminus B = \\Setabs{x}{x\\in A \\text{ మరియు } x \\notin B}.\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "A \\subsetneq B",
+      "render_tex": "A \\subsetneq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B \\setminus A \\neq \\emptyset",
+      "render_tex": "B \\setminus A \\neq \\emptyset",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x, y}",
+      "render_tex": "\\tuple{x, y}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{x, y\\}",
+      "render_tex": "\\{x, y\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{x, y\\} = \\{y, x\\}",
+      "render_tex": "\\{x, y\\} = \\{y, x\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x \\neq y",
+      "render_tex": "x \\neq y",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x, y} \\neq \\tuple{y, x}",
+      "render_tex": "\\tuple{x, y} \\neq \\tuple{y, x}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n  \\tuple{a, b}= \\tuple{c, d}\\text{ కావడానికి అవసరమైన, సరిపడే షరతులు }a = c \\text{ మరియు }b=d.\n",
+      "render_tex": "\n  \\tuple{a, b}= \\tuple{c, d}\\text{ కావడానికి అవసరమైన, సరిపడే షరతులు }a = c \\text{ మరియు }b=d.\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{a, b} = \\{\\{a\\}, \\{a, b\\}\\}",
+      "render_tex": "\\tuple{a, b} = \\{\\{a\\}, \\{a, b\\}\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{a, b}= \\tuple{c, d}",
+      "render_tex": "\\tuple{a, b}= \\tuple{c, d}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "a = c",
+      "render_tex": "a = c",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "b=d",
+      "render_tex": "b=d",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x, y, z}",
+      "render_tex": "\\tuple{x, y, z}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x, y, z, u}",
+      "render_tex": "\\tuple{x, y, z, u}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x, y, z}",
+      "render_tex": "\\tuple{x, y, z}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{\\tuple{x, y},z}",
+      "render_tex": "\\tuple{\\tuple{x, y},z}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x,y,z,u}",
+      "render_tex": "\\tuple{x,y,z,u}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{\\tuple{\\tuple{x,y},z},u}",
+      "render_tex": "\\tuple{\\tuple{\\tuple{x,y},z},u}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x_1, \\dots, x_n}",
+      "render_tex": "\\tuple{x_1, \\dots, x_n}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n",
+      "render_tex": "n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n",
+      "render_tex": "n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\times B",
+      "render_tex": "A \\times B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n  A \\times B = \\Setabs{\\tuple{x, y}}{x \\in A \\text{ మరియు } y \\in B}.\n",
+      "render_tex": "\n  A \\times B = \\Setabs{\\tuple{x, y}}{x \\in A \\text{ మరియు } y \\in B}.\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "A = \\{0, 1\\}",
+      "render_tex": "A = \\{0, 1\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B = \\{1, a, b\\}",
+      "render_tex": "B = \\{1, a, b\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\nA \\times B = \\{ \\tuple{0, 1}, \\tuple{0, a}, \\tuple{0, b},\n    \\tuple{1, 1}, \\tuple{1, a}, \\tuple{1, b} \\}.\n",
+      "render_tex": "\nA \\times B = \\{ \\tuple{0, 1}, \\tuple{0, a}, \\tuple{0, b},\n    \\tuple{1, 1}, \\tuple{1, a}, \\tuple{1, b} \\}.\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\times A",
+      "render_tex": "A \\times A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A^2",
+      "render_tex": "A^2",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x, y \\in A",
+      "render_tex": "x, y \\in A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x, y}",
+      "render_tex": "\\tuple{x, y}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x, y, z}",
+      "render_tex": "\\tuple{x, y, z}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A^3",
+      "render_tex": "A^3",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n  A^1 & = A\\\\\n  A^{k+1} & = A^k \\times A\n",
+      "render_tex": "\\begin{aligned}\n  A^1 & = A\\\\\n  A^{k+1} & = A^k \\times A\n\\end{aligned}",
+      "display": true,
+      "environment": "align*"
+    },
+    {
+      "source": "\\{1, 2, 3\\}^3",
+      "render_tex": "\\{1, 2, 3\\}^3",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n",
+      "render_tex": "n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "m",
+      "render_tex": "m",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\times B",
+      "render_tex": "A \\times B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n\\cdot m",
+      "render_tex": "n\\cdot m",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x",
+      "render_tex": "x",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x, y} \\in A \\times B",
+      "render_tex": "\\tuple{x, y} \\in A \\times B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "m",
+      "render_tex": "m",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B_x = \\Setabs{\\tuple{x, y}}{y\n  \\in B}",
+      "render_tex": "B_x = \\Setabs{\\tuple{x, y}}{y\n  \\in B}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x_1 \\neq x_2",
+      "render_tex": "x_1 \\neq x_2",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x_1, y} \\neq \\tuple{x_2, y}",
+      "render_tex": "\\tuple{x_1, y} \\neq \\tuple{x_2, y}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B_{x_1} \\cap B_{x_2} = \\emptyset",
+      "render_tex": "B_{x_1} \\cap B_{x_2} = \\emptyset",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A = \\{x_1, \\dots, x_n\\}",
+      "render_tex": "A = \\{x_1, \\dots, x_n\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\times B = B_{x_1} \\cup \\dots \\cup B_{x_n}",
+      "render_tex": "A \\times B = B_{x_1} \\cup \\dots \\cup B_{x_n}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n\\cdot m",
+      "render_tex": "n\\cdot m",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\times B",
+      "render_tex": "A \\times B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n\\begin{array}{rcccc}\n  B_{x_1} = & \\{\\tuple{x_1, y_1} & \\tuple{x_1, y_2} & \\dots & \\tuple{x_1, y_m}\\}\\\\\n  B_{x_2} = & \\{\\tuple{x_2, y_1} & \\tuple{x_2, y_2} & \\dots & \\tuple{x_2, y_m}\\}\\\\\n  \\vdots & & \\vdots\\\\\n  B_{x_n} = & \\{\\tuple{x_n, y_1} & \\tuple{x_n, y_2} & \\dots & \\tuple{x_n, y_m}\\}\n\\end{array}\n",
+      "render_tex": "\n\\begin{array}{rcccc}\n  B_{x_1} = & \\{\\tuple{x_1, y_1} & \\tuple{x_1, y_2} & \\dots & \\tuple{x_1, y_m}\\}\\\\\n  B_{x_2} = & \\{\\tuple{x_2, y_1} & \\tuple{x_2, y_2} & \\dots & \\tuple{x_2, y_m}\\}\\\\\n  \\vdots & & \\vdots\\\\\n  B_{x_n} = & \\{\\tuple{x_n, y_1} & \\tuple{x_n, y_2} & \\dots & \\tuple{x_n, y_m}\\}\n\\end{array}\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "x_i",
+      "render_tex": "x_i",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "y_j",
+      "render_tex": "y_j",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n\\cdot m",
+      "render_tex": "n\\cdot m",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "k",
+      "render_tex": "k",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "k \\ge 1",
+      "render_tex": "k \\ge 1",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n",
+      "render_tex": "n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A^k",
+      "render_tex": "A^k",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n^k",
+      "render_tex": "n^k",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n",
+      "render_tex": "n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A = \\{a, b, c\\}",
+      "render_tex": "A = \\{a, b, c\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "bac",
+      "render_tex": "bac",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{b, a, c}",
+      "render_tex": "\\tuple{b, a, c}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "1",
+      "render_tex": "1",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\emptyset",
+      "render_tex": "\\emptyset",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "0",
+      "render_tex": "0",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\nA^* = \\{\\emptyset\\} \\cup A \\cup A^2 \\cup A^3 \\cup \\dots\n",
+      "render_tex": "\nA^* = \\{\\emptyset\\} \\cup A \\cup A^2 \\cup A^3 \\cup \\dots\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "\\phi(x)",
+      "render_tex": "\\phi(x)",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x",
+      "render_tex": "x",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Setabs{x}{\\phi(x)}",
+      "render_tex": "\\Setabs{x}{\\phi(x)}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\phi",
+      "render_tex": "\\phi",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\phi",
+      "render_tex": "\\phi",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Setabs{x}{\\phi(x)}",
+      "render_tex": "\\Setabs{x}{\\phi(x)}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\nR = \\Setabs{x}{x \\notin x}\n",
+      "render_tex": "\nR = \\Setabs{x}{x \\notin x}\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "R = \\Setabs{x}{x \\notin x}",
+      "render_tex": "R = \\Setabs{x}{x \\notin x}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R = \\Setabs{x}{x \\notin x}",
+      "render_tex": "R = \\Setabs{x}{x \\notin x}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R \\in R",
+      "render_tex": "R \\in R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R \\notin R",
+      "render_tex": "R \\notin R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R \\in R",
+      "render_tex": "R \\in R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R \\in R",
+      "render_tex": "R \\in R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R \\in R",
+      "render_tex": "R \\in R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R \\notin R",
+      "render_tex": "R \\notin R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R \\in R",
+      "render_tex": "R \\in R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R \\notin R",
+      "render_tex": "R \\notin R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R \\notin R",
+      "render_tex": "R \\notin R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R = \\Setabs{x}{x \\notin x}",
+      "render_tex": "R = \\Setabs{x}{x \\notin x}",
+      "display": false,
+      "environment": null
+    }
+  ],
+  "english_math": [
+    {
+      "source": "x",
+      "render_tex": "x",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x \\in A",
+      "render_tex": "x \\in A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x \\notin A",
+      "render_tex": "x \\notin A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\emptyset",
+      "render_tex": "\\emptyset",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A = B",
+      "render_tex": "A = B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "a_{1}",
+      "render_tex": "a_{1}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "a_{n}",
+      "render_tex": "a_{n}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{a_{1}, \\dots, a_{n}\\}",
+      "render_tex": "\\{a_{1}, \\dots, a_{n}\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "a_1, \\ldots, a_n",
+      "render_tex": "a_1, \\ldots, a_n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n    \\{a, a, b\\} = \\{a, b\\} = \\{b,a\\}.\n  ",
+      "render_tex": "\n    \\{a, a, b\\} = \\{a, b\\} = \\{b,a\\}.\n  ",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "S=\\{\\textrm{Ruth}\\}",
+      "render_tex": "S=\\{\\textrm{Ruth}\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "4",
+      "render_tex": "4",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{1, 2, 3\\}",
+      "render_tex": "\\{1, 2, 3\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{3, 2, 1\\}",
+      "render_tex": "\\{3, 2, 1\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{1, 2, 1, 2, 3\\}",
+      "render_tex": "\\{1, 2, 1, 2, 3\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{1, 2, 3\\}",
+      "render_tex": "\\{1, 2, 3\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{3, 2, 1\\}",
+      "render_tex": "\\{3, 2, 1\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{1,\n2, 1, 2, 3\\}",
+      "render_tex": "\\{1,\n2, 1, 2, 3\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Setabs{x}{\\phi(x)}",
+      "render_tex": "\\Setabs{x}{\\phi(x)}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\phi(x)",
+      "render_tex": "\\phi(x)",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x",
+      "render_tex": "x",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "S",
+      "render_tex": "S",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\nS = \\Setabs{x}{x \\text{ is a sibling of Richard}}.\n",
+      "render_tex": "\nS = \\Setabs{x}{x \\text{ is a sibling of Richard}}.\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "6",
+      "render_tex": "6",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "1",
+      "render_tex": "1",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "2",
+      "render_tex": "2",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "3",
+      "render_tex": "3",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "6 = 1 + 2 + 3",
+      "render_tex": "6 = 1 + 2 + 3",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "6",
+      "render_tex": "6",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "10",
+      "render_tex": "10",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n\t\\{6\\} = \\Setabs{x}{x\\text{ is perfect and }0 \\leq x \\leq 10}\n",
+      "render_tex": "\n\t\\{6\\} = \\Setabs{x}{x\\text{ is perfect and }0 \\leq x \\leq 10}\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "x",
+      "render_tex": "x",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x",
+      "render_tex": "x",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "0 \\leq x \\leq 10",
+      "render_tex": "0 \\leq x \\leq 10",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x",
+      "render_tex": "x",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\phi(x)",
+      "render_tex": "\\phi(x)",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Setabs{x}{\\phi(x)}",
+      "render_tex": "\\Setabs{x}{\\phi(x)}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x",
+      "render_tex": "x",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\phi(x)",
+      "render_tex": "\\phi(x)",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A = B",
+      "render_tex": "A = B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x \\in A",
+      "render_tex": "x \\in A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x \\in B",
+      "render_tex": "x \\in B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "y \\in B",
+      "render_tex": "y \\in B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "y \\in A",
+      "render_tex": "y \\in A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A = B",
+      "render_tex": "A = B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\subseteq B",
+      "render_tex": "A \\subseteq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\not\\subseteq B",
+      "render_tex": "A \\not\\subseteq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\subseteq B",
+      "render_tex": "A \\subseteq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\neq B",
+      "render_tex": "A \\neq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\subsetneq B",
+      "render_tex": "A \\subsetneq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\emptyset",
+      "render_tex": "\\emptyset",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{ a, b \\} \\subseteq \\{ a, b, c \\}",
+      "render_tex": "\\{ a, b \\} \\subseteq \\{ a, b, c \\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{ a, b, e\n\\}",
+      "render_tex": "\\{ a, b, e\n\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{ a, b, c \\}",
+      "render_tex": "\\{ a, b, c \\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "2",
+      "render_tex": "2",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{0\\} \\in \\{0, \\{0\\}\\}",
+      "render_tex": "\\{0\\} \\in \\{0, \\{0\\}\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{0\\} \\subseteq \\{0,\n\\{0\\}\\}",
+      "render_tex": "\\{0\\} \\subseteq \\{0,\n\\{0\\}\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A = B",
+      "render_tex": "A = B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\subseteq B",
+      "render_tex": "A \\subseteq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B \\subseteq A",
+      "render_tex": "B \\subseteq A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A = B",
+      "render_tex": "A = B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\subseteq B",
+      "render_tex": "A \\subseteq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B \\subseteq A",
+      "render_tex": "B \\subseteq A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\dots",
+      "render_tex": "\\dots",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "(\\forall x \\in A)\\phi",
+      "render_tex": "(\\forall x \\in A)\\phi",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\forall x(x \\in A \\lif\n\\phi)",
+      "render_tex": "\\forall x(x \\in A \\lif\n\\phi)",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "(\\exists x \\in A)\\phi",
+      "render_tex": "(\\exists x \\in A)\\phi",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\exists x(x\n\\in A \\land \\phi)",
+      "render_tex": "\\exists x(x\n\\in A \\land \\phi)",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\subseteq B",
+      "render_tex": "A \\subseteq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "(\\forall\nx \\in A)x \\in B",
+      "render_tex": "(\\forall\nx \\in A)x \\in B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Pow{A}",
+      "render_tex": "\\Pow{A}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n    \\Pow{A} = \\Setabs{B}{B \\subseteq A} \n  ",
+      "render_tex": "\n    \\Pow{A} = \\Setabs{B}{B \\subseteq A} \n  ",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "\\{ a, b, c \\}",
+      "render_tex": "\\{ a, b, c \\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\emptyset",
+      "render_tex": "\\emptyset",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{a \\}",
+      "render_tex": "\\{a \\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{b\\}",
+      "render_tex": "\\{b\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{c\\}",
+      "render_tex": "\\{c\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{a, b\\}",
+      "render_tex": "\\{a, b\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{a, c\\}",
+      "render_tex": "\\{a, c\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{b,\nc\\}",
+      "render_tex": "\\{b,\nc\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{a, b, c\\}",
+      "render_tex": "\\{a, b, c\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Pow{\\{a,b,c\\}}",
+      "render_tex": "\\Pow{\\{a,b,c\\}}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n\\Pow{\\{ a, b, c \\}} = \\{\\emptyset, \\{a \\}, \\{b\\}, \\{c\\}, \\{a, b\\},\n\\{b, c\\}, \\{a, c\\}, \\{a, b, c\\}\\}\n",
+      "render_tex": "\n\\Pow{\\{ a, b, c \\}} = \\{\\emptyset, \\{a \\}, \\{b\\}, \\{c\\}, \\{a, b\\},\n\\{b, c\\}, \\{a, c\\}, \\{a, b, c\\}\\}\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "\\{a, b, c, d\\}",
+      "render_tex": "\\{a, b, c, d\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n",
+      "render_tex": "n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Pow{A}",
+      "render_tex": "\\Pow{A}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "2^n",
+      "render_tex": "2^n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n    \\Nat = \\{0, 1, 2, 3, \\ldots\\} \\\\\n    \\shoveright{\\text{the set of natural numbers}}\\\\\n    \\shoveleft{\\Int = \\{\\ldots, -2, -1, 0, 1, 2, \\ldots\\}} \\\\\n    \\shoveright{\\text{the set of integers}}\\\\\n    \\shoveleft{\\Rat = \\Setabs{\\nicefrac{m}{n}}{m, n \\in \\Int\\text{ and }n \\neq 0}}\\\\\n    \\shoveright{\\text{the set of rationals}}\\\\\n    \\shoveleft{\\Real = (-\\infty, \\infty)}\\\\\n    \\text{the set of real numbers (the continuum)}\n",
+      "render_tex": "\\begin{gathered}\n    \\Nat = \\{0, 1, 2, 3, \\ldots\\} \\\\\n    \\shoveright{\\text{the set of natural numbers}}\\\\\n    \\shoveleft{\\Int = \\{\\ldots, -2, -1, 0, 1, 2, \\ldots\\}} \\\\\n    \\shoveright{\\text{the set of integers}}\\\\\n    \\shoveleft{\\Rat = \\Setabs{\\nicefrac{m}{n}}{m, n \\in \\Int\\text{ and }n \\neq 0}}\\\\\n    \\shoveright{\\text{the set of rationals}}\\\\\n    \\shoveleft{\\Real = (-\\infty, \\infty)}\\\\\n    \\text{the set of real numbers (the continuum)}\n\\end{gathered}",
+      "display": true,
+      "environment": "multline*"
+    },
+    {
+      "source": "\\Nat \\subseteq \\Int\n\\subseteq \\Rat \\subseteq \\Real",
+      "render_tex": "\\Nat \\subseteq \\Int\n\\subseteq \\Rat \\subseteq \\Real",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Nat \\subsetneq \\Int \\subsetneq\n\\Rat",
+      "render_tex": "\\Nat \\subsetneq \\Int \\subsetneq\n\\Rat",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "-1",
+      "render_tex": "-1",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\nicefrac{1}{2}",
+      "render_tex": "\\nicefrac{1}{2}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Rat \\subsetneq \\Real",
+      "render_tex": "\\Rat \\subsetneq \\Real",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\PosInt = \\{1,\n2, 3, \\dots\\}",
+      "render_tex": "\\PosInt = \\{1,\n2, 3, \\dots\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Bin = \\{0, 1\\}",
+      "render_tex": "\\Bin = \\{0, 1\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A^{*}",
+      "render_tex": "A^{*}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Lambda",
+      "render_tex": "\\Lambda",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n\\Bin^*\n=\\{\\Lambda,0,1,00,01,10,11,\\\\\n000,001,010,011,100,101,110,111,0000,\\ldots\\}.\n",
+      "render_tex": "\\begin{gathered}\n\\Bin^*\n=\\{\\Lambda,0,1,00,01,10,11,\\\\\n000,001,010,011,100,101,110,111,0000,\\ldots\\}.\n\\end{gathered}",
+      "display": true,
+      "environment": "multline*"
+    },
+    {
+      "source": "x=x_{1}\\ldots x_{n}\\in A^{*}",
+      "render_tex": "x=x_{1}\\ldots x_{n}\\in A^{*}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n",
+      "render_tex": "n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n",
+      "render_tex": "n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\len{x}=n",
+      "render_tex": "\\len{x}=n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A^\\omega",
+      "render_tex": "A^\\omega",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "a_1a_2a_3a_4\\dots",
+      "render_tex": "a_1a_2a_3a_4\\dots",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Setabs{x}{\\phi(x)}",
+      "render_tex": "\\Setabs{x}{\\phi(x)}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\phi",
+      "render_tex": "\\phi",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Setabs{x}{x \\in A \\lor x \\in B}",
+      "render_tex": "\\Setabs{x}{x \\in A \\lor x \\in B}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\cup B",
+      "render_tex": "A \\cup B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\cup B",
+      "render_tex": "A \\cup B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\nA \\cup B = \\Setabs{x}{x \\in A \\lor x \\in B}\n",
+      "render_tex": "\nA \\cup B = \\Setabs{x}{x \\in A \\lor x \\in B}\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "\\{ a, b, c\\} \\cup \\{ a, 0, 1\\} = \\{a, b, c, 0, 1\\}",
+      "render_tex": "\\{ a, b, c\\} \\cup \\{ a, 0, 1\\} = \\{a, b, c, 0, 1\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{a,\nb, c \\} \\cup \\{a \\} = \\{a, b, c\\}",
+      "render_tex": "\\{a,\nb, c \\} \\cup \\{a \\} = \\{a, b, c\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{a,\nb, c \\} \\cup \\emptyset = \\{a, b, c \\}",
+      "render_tex": "\\{a,\nb, c \\} \\cup \\emptyset = \\{a, b, c \\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\subseteq B",
+      "render_tex": "A \\subseteq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\cup B = B",
+      "render_tex": "A \\cup B = B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\cap B",
+      "render_tex": "A \\cap B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\cap B",
+      "render_tex": "A \\cap B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\nA \\cap B = \\Setabs{x}{x \\in A \\land x \\in B}\n",
+      "render_tex": "\nA \\cap B = \\Setabs{x}{x \\in A \\land x \\in B}\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "\\{ a, b, c\\} \\cap \\{ 0, 1\\} = \\emptyset",
+      "render_tex": "\\{ a, b, c\\} \\cap \\{ 0, 1\\} = \\emptyset",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{a, b, c \\} \\cap \\{a, b, d \\} = \\{a, b\\}",
+      "render_tex": "\\{a, b, c \\} \\cap \\{a, b, d \\} = \\{a, b\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{a, b, c\\} \\cap \\{a, b\\} = \\{a, b\\}",
+      "render_tex": "\\{a, b, c\\} \\cap \\{a, b\\} = \\{a, b\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{a, b, c \\}\n\\cap \\emptyset = \\emptyset",
+      "render_tex": "\\{a, b, c \\}\n\\cap \\emptyset = \\emptyset",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\subseteq B",
+      "render_tex": "A \\subseteq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\cap B = A",
+      "render_tex": "A \\cap B = A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\bigcup A",
+      "render_tex": "\\bigcup A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n\\bigcup A & = \\Setabs{x}{x \\text{ belongs to an element of } A},\n\\text{ i.e.,}\\\\\n& = \\Setabs{x}{\\text{there is a } B \\in A\n  \\text{ so that } x \\in B}\n",
+      "render_tex": "\\begin{aligned}\n\\bigcup A & = \\Setabs{x}{x \\text{ belongs to an element of } A},\n\\text{ i.e.,}\\\\\n& = \\Setabs{x}{\\text{there is a } B \\in A\n  \\text{ so that } x \\in B}\n\\end{aligned}",
+      "display": true,
+      "environment": "align*"
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\bigcap A",
+      "render_tex": "\\bigcap A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n\\bigcap A & = \\Setabs{x}{x \\text{ belongs to every element of } A},\n\\text{ i.e.,}\\\\\n & = \\Setabs{x}{\\text{for all } B \\in A, x \\in B}\n",
+      "render_tex": "\\begin{aligned}\n\\bigcap A & = \\Setabs{x}{x \\text{ belongs to every element of } A},\n\\text{ i.e.,}\\\\\n & = \\Setabs{x}{\\text{for all } B \\in A, x \\in B}\n\\end{aligned}",
+      "display": true,
+      "environment": "align*"
+    },
+    {
+      "source": "A = \\{ \\{ a, b \\}, \\{ a, d, e \\}, \\{ a, d \\} \\}",
+      "render_tex": "A = \\{ \\{ a, b \\}, \\{ a, d, e \\}, \\{ a, d \\} \\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\bigcup A = \\{ a, b, d, e \\}",
+      "render_tex": "\\bigcup A = \\{ a, b, d, e \\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\bigcap A = \\{ a \\}",
+      "render_tex": "\\bigcap A = \\{ a \\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\in B",
+      "render_tex": "A \\in B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\subseteq \\bigcup B",
+      "render_tex": "A \\subseteq \\bigcup B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A_1",
+      "render_tex": "A_1",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A_2",
+      "render_tex": "A_2",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n\\bigcup_i A_i & = \\Setabs{x}{x \\text{ belongs to one of the } A_i}\\\\\n\\bigcap_i A_i & = \\Setabs{x}{x \\text{ belongs to every } A_i}.\n",
+      "render_tex": "\\begin{aligned}\n\\bigcup_i A_i & = \\Setabs{x}{x \\text{ belongs to one of the } A_i}\\\\\n\\bigcap_i A_i & = \\Setabs{x}{x \\text{ belongs to every } A_i}.\n\\end{aligned}",
+      "display": true,
+      "environment": "align*"
+    },
+    {
+      "source": "I",
+      "render_tex": "I",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A_i",
+      "render_tex": "A_i",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "i \\in I",
+      "render_tex": "i \\in I",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n\t\\bigcup_{i \\in I} A_i & = \\bigcup \\Setabs{A_i }{i \\in I}\\\\\n\t\\bigcap_{i \\in I} A_i & = \\bigcap\\Setabs{A_i}{i \\in I}\n",
+      "render_tex": "\\begin{aligned}\n\t\\bigcup_{i \\in I} A_i & = \\bigcup \\Setabs{A_i }{i \\in I}\\\\\n\t\\bigcap_{i \\in I} A_i & = \\bigcap\\Setabs{A_i}{i \\in I}\n\\end{aligned}",
+      "display": true,
+      "environment": "align*"
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\setminus B",
+      "render_tex": "A \\setminus B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\setminus B",
+      "render_tex": "A \\setminus B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\nA\\setminus B = \\Setabs{x}{x\\in A \\text{ and } x \\notin B}.\n",
+      "render_tex": "\nA\\setminus B = \\Setabs{x}{x\\in A \\text{ and } x \\notin B}.\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "A \\subsetneq B",
+      "render_tex": "A \\subsetneq B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B \\setminus A \\neq \\emptyset",
+      "render_tex": "B \\setminus A \\neq \\emptyset",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x, y}",
+      "render_tex": "\\tuple{x, y}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{x, y\\}",
+      "render_tex": "\\{x, y\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\{x, y\\} = \\{y, x\\}",
+      "render_tex": "\\{x, y\\} = \\{y, x\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x\n\\neq y",
+      "render_tex": "x\n\\neq y",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x, y} \\neq \\tuple{y, x}",
+      "render_tex": "\\tuple{x, y} \\neq \\tuple{y, x}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n  \\tuple{a, b}= \\tuple{c, d}\\text{ iff both }a = c \\text{ and }b=d.\n",
+      "render_tex": "\n  \\tuple{a, b}= \\tuple{c, d}\\text{ iff both }a = c \\text{ and }b=d.\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{a, b} = \\{\\{a\\}, \\{a, b\\}\\}",
+      "render_tex": "\\tuple{a, b} = \\{\\{a\\}, \\{a, b\\}\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{a,\n\tb}= \\tuple{c, d}",
+      "render_tex": "\\tuple{a,\n\tb}= \\tuple{c, d}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "a = c",
+      "render_tex": "a = c",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "b=d",
+      "render_tex": "b=d",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x, y, z}",
+      "render_tex": "\\tuple{x, y, z}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x, y, z, u}",
+      "render_tex": "\\tuple{x, y, z, u}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x, y, z}",
+      "render_tex": "\\tuple{x, y, z}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{\\tuple{x, y},z}",
+      "render_tex": "\\tuple{\\tuple{x, y},z}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x,y,z,u}",
+      "render_tex": "\\tuple{x,y,z,u}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{\\tuple{\\tuple{x,y},z},u}",
+      "render_tex": "\\tuple{\\tuple{\\tuple{x,y},z},u}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n",
+      "render_tex": "n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x_1, \\dots, x_n}",
+      "render_tex": "\\tuple{x_1, \\dots, x_n}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n",
+      "render_tex": "n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\times B",
+      "render_tex": "A \\times B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n  A \\times B = \\Setabs{\\tuple{x, y}}{x \\in A \\text{ and } y \\in B}.\n",
+      "render_tex": "\n  A \\times B = \\Setabs{\\tuple{x, y}}{x \\in A \\text{ and } y \\in B}.\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "A = \\{0, 1\\}",
+      "render_tex": "A = \\{0, 1\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B = \\{1, a, b\\}",
+      "render_tex": "B = \\{1, a, b\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\nA \\times B = \\{ \\tuple{0, 1}, \\tuple{0, a}, \\tuple{0, b},\n    \\tuple{1, 1}, \\tuple{1, a}, \\tuple{1, b} \\}.\n",
+      "render_tex": "\nA \\times B = \\{ \\tuple{0, 1}, \\tuple{0, a}, \\tuple{0, b},\n    \\tuple{1, 1}, \\tuple{1, a}, \\tuple{1, b} \\}.\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\times A",
+      "render_tex": "A \\times A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A^2",
+      "render_tex": "A^2",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x, y}",
+      "render_tex": "\\tuple{x, y}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x, y \\in A",
+      "render_tex": "x, y \\in A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x, y, z}",
+      "render_tex": "\\tuple{x, y, z}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A^3",
+      "render_tex": "A^3",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n  A^1 & = A\\\\\n  A^{k+1} & = A^k \\times A\n",
+      "render_tex": "\\begin{aligned}\n  A^1 & = A\\\\\n  A^{k+1} & = A^k \\times A\n\\end{aligned}",
+      "display": true,
+      "environment": "align*"
+    },
+    {
+      "source": "\\{1, 2, 3\\}^3",
+      "render_tex": "\\{1, 2, 3\\}^3",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n",
+      "render_tex": "n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B",
+      "render_tex": "B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "m",
+      "render_tex": "m",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A\n\\times B",
+      "render_tex": "A\n\\times B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n\\cdot m",
+      "render_tex": "n\\cdot m",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x",
+      "render_tex": "x",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "m",
+      "render_tex": "m",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x, y} \\in A \\times B",
+      "render_tex": "\\tuple{x, y} \\in A \\times B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B_x = \\Setabs{\\tuple{x, y}}{y\n  \\in B}",
+      "render_tex": "B_x = \\Setabs{\\tuple{x, y}}{y\n  \\in B}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x_1 \\neq x_2",
+      "render_tex": "x_1 \\neq x_2",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{x_1, y} \\neq\n\\tuple{x_2, y}",
+      "render_tex": "\\tuple{x_1, y} \\neq\n\\tuple{x_2, y}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "B_{x_1} \\cap B_{x_2} = \\emptyset",
+      "render_tex": "B_{x_1} \\cap B_{x_2} = \\emptyset",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A = \\{x_1,\n\\dots, x_n\\}",
+      "render_tex": "A = \\{x_1,\n\\dots, x_n\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\times B = B_{x_1} \\cup \\dots \\cup B_{x_n}",
+      "render_tex": "A \\times B = B_{x_1} \\cup \\dots \\cup B_{x_n}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n\\cdot m",
+      "render_tex": "n\\cdot m",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A \\times B",
+      "render_tex": "A \\times B",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\n\\begin{array}{rcccc}\n  B_{x_1} = & \\{\\tuple{x_1, y_1} & \\tuple{x_1, y_2} & \\dots & \\tuple{x_1, y_m}\\}\\\\\n  B_{x_2} = & \\{\\tuple{x_2, y_1} & \\tuple{x_2, y_2} & \\dots & \\tuple{x_2, y_m}\\}\\\\\n  \\vdots & & \\vdots\\\\\n  B_{x_n} = & \\{\\tuple{x_n, y_1} & \\tuple{x_n, y_2} & \\dots & \\tuple{x_n, y_m}\\}\n\\end{array}\n",
+      "render_tex": "\n\\begin{array}{rcccc}\n  B_{x_1} = & \\{\\tuple{x_1, y_1} & \\tuple{x_1, y_2} & \\dots & \\tuple{x_1, y_m}\\}\\\\\n  B_{x_2} = & \\{\\tuple{x_2, y_1} & \\tuple{x_2, y_2} & \\dots & \\tuple{x_2, y_m}\\}\\\\\n  \\vdots & & \\vdots\\\\\n  B_{x_n} = & \\{\\tuple{x_n, y_1} & \\tuple{x_n, y_2} & \\dots & \\tuple{x_n, y_m}\\}\n\\end{array}\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "x_i",
+      "render_tex": "x_i",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "y_j",
+      "render_tex": "y_j",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n\\cdot m",
+      "render_tex": "n\\cdot m",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "k",
+      "render_tex": "k",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "k \\ge 1",
+      "render_tex": "k \\ge 1",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n",
+      "render_tex": "n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A^k",
+      "render_tex": "A^k",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n^k",
+      "render_tex": "n^k",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "n",
+      "render_tex": "n",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A = \\{a, b, c\\}",
+      "render_tex": "A = \\{a, b, c\\}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "bac",
+      "render_tex": "bac",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\tuple{b, a, c}",
+      "render_tex": "\\tuple{b, a, c}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "1",
+      "render_tex": "1",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\emptyset",
+      "render_tex": "\\emptyset",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "0",
+      "render_tex": "0",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\nA^* = \\{\\emptyset\\} \\cup A \\cup A^2 \\cup A^3 \\cup \\dots\n",
+      "render_tex": "\nA^* = \\{\\emptyset\\} \\cup A \\cup A^2 \\cup A^3 \\cup \\dots\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "\\Setabs{x}{\\phi(x)}",
+      "render_tex": "\\Setabs{x}{\\phi(x)}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "x",
+      "render_tex": "x",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\phi(x)",
+      "render_tex": "\\phi(x)",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\phi",
+      "render_tex": "\\phi",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\phi",
+      "render_tex": "\\phi",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\\Setabs{x}{\\phi(x)}",
+      "render_tex": "\\Setabs{x}{\\phi(x)}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "A",
+      "render_tex": "A",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "\nR = \\Setabs{x}{x \\notin x}\n",
+      "render_tex": "\nR = \\Setabs{x}{x \\notin x}\n",
+      "display": true,
+      "environment": null
+    },
+    {
+      "source": "R = \\Setabs{x}{x \\notin x}",
+      "render_tex": "R = \\Setabs{x}{x \\notin x}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R = \\Setabs{x}{x \\notin x}",
+      "render_tex": "R = \\Setabs{x}{x \\notin x}",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R \\in R",
+      "render_tex": "R \\in R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R \\notin R",
+      "render_tex": "R \\notin R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R \\in\nR",
+      "render_tex": "R \\in\nR",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R \\in R",
+      "render_tex": "R \\in R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R \\in R",
+      "render_tex": "R \\in R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R \\notin R",
+      "render_tex": "R \\notin R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R \\in R",
+      "render_tex": "R \\in R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R \\notin R",
+      "render_tex": "R \\notin R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R\n\\notin R",
+      "render_tex": "R\n\\notin R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R",
+      "render_tex": "R",
+      "display": false,
+      "environment": null
+    },
+    {
+      "source": "R = \\Setabs{x}{x \\notin x}",
+      "render_tex": "R = \\Setabs{x}{x \\notin x}",
+      "display": false,
+      "environment": null
+    }
+  ],
+  "telugu_command_totals": {
+    "documentclass": 7,
+    "olchapter": 1,
+    "olimport": 6,
+    "OLEndChapterHook": 1,
+    "olfileid": 6,
+    "olsection": 6,
+    "emph": 48,
+    "dots": 3,
+    "ollabel": 7,
+    "oliflabeldef": 2,
+    "olref": 5,
+    "olasset": 3,
+    "caption": 3
+  },
+  "english_command_totals": {
+    "documentclass": 7,
+    "olchapter": 1,
+    "olimport": 6,
+    "OLEndChapterHook": 1,
+    "olfileid": 6,
+    "olsection": 6,
+    "emph": 48,
+    "dots": 3,
+    "ollabel": 7,
+    "oliflabeldef": 2,
+    "olref": 5,
+    "olasset": 3,
+    "caption": 3
+  },
+  "parser_policy": "Unknown commands/environments or math errors fail closed; all ordinary text parsed and rendered. Conditional projection follows available labels, exactly as the current chapter PDF; unselected branch source is preserved here and in editable TeX.",
+  "status": "deterministic_qa_pending"
+}

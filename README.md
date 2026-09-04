@@ -19,10 +19,14 @@ see [PUBLICATION.md](PUBLICATION.md).
 
 Twenty-three full-unit editable drafts exist in this repository: Sets (7),
 Relations (9) and Functions (7). All three batches have source-aligned
-structural and same-agent semantic review records. Relations and Functions
-are not yet integrated into a verified reader. The other 699 units and the coherent full reader remain in
-progress. Useful semantic HTML is also unfinished; no inaccessible PDF is
-represented as a substitute for it.
+structural and same-agent semantic review records. The Sets chapter also has
+an offline semantic HTML reader with Telugu document metadata, native MathML,
+local fonts, accessible inline diagrams, resolved internal links, and a
+separately collapsible copy of each canonical English unit. Its public browser
+version is at [OpenLogic తెలుగు — సమితులు](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sets/).
+Relations and Functions are not yet integrated into that reader. The other
+699 units and the coherent full reader remain in progress; neither current
+chapter format substitutes for that remaining work.
 
 ## Provenance and changes
 
@@ -45,6 +49,20 @@ every technical sense. Source definitions control the mathematics; in
 particular, the original zero-inclusive natural-number convention is kept.
 Original rights-restricted Telugu books and their page images are **not**
 redistributed here.
+
+Five confirmed source issues in the Functions chapter are minimally repaired
+and disclosed beside the affected Telugu claims as OLFUN-001 through
+OLFUN-005. The frozen English bytes remain unchanged. They cover the empty
+domain caveat for a left inverse, principal-square-root wording, an input-name
+typo, graph/relation typing, and the difference between function and relation
+restriction. See [SOURCE_CORRECTIONS.jsonl](evidence/SOURCE_CORRECTIONS.jsonl).
+
+The [optional expert-review log](evidence/EXPERT_REVIEW_LOG.md) exposes all 25
+current terminology/sense decisions and the five corrections with exact
+source/target locators, aligned segment hashes, authorities actually checked,
+known evidence limits, alternatives, uncertainty, and concrete review
+questions. Its status is explicitly partial (23/722); every entry is
+provisional for optional expert review and none is a translation hold.
 
 ## QA and limitations
 
@@ -83,6 +101,22 @@ may change PDF bytes; replay equality is checked within each build.
 The released source ZIP is a frozen snapshot. The packaging script refuses
 to overwrite an existing versioned artifact when current source bytes differ;
 use a new version for later cumulative releases.
+
+## Build and audit the Sets HTML reader
+
+Requires Node.js 22+. Install the pinned dependency from `package-lock.json`,
+then generate and audit the self-contained output:
+
+    npm ci --ignore-scripts
+    npm run html
+    npm run audit:html
+
+The renderer accepts only an explicit TeX subset and fails on unknown prose
+commands, environments, unresolved references, unbalanced groups, unsafe
+links, unsupported diagrams or invalid mathematics. KaTeX runs only at build
+time and emits MathML; the output has no client JavaScript, telemetry or
+network runtime dependency. `npm run html:pages` reproduces the tracked Pages
+tree under `docs/sets`.
 
 ## License
 

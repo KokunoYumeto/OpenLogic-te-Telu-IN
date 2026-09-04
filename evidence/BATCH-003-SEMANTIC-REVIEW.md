@@ -47,26 +47,34 @@ rechecked, and native pages were actually visually consulted before drafting.
   remain. Reverse paraphrase: single-valued relations yield partial functions;
   adding seriality over A makes the function total.
 
-## Inherited source issues, not silently repaired
+## Stable source corrections and preserved issues
 
-1. Basics calls the selected square root positive despite Nat containing
-   zero; at zero the principal root is zero, not positive. The source wording
-   and formula are preserved. A separately labelled reader note is warranted.
-2. The g example introduces n then describes successors of x. Both symbols
-   remain exactly as in the frozen source; no silent variable normalization.
-3. The graph discussion says relation on A times B while the definition is
-   a subset of A times B (a relation between A and B). Definition is clear;
-   the imprecise surrounding source wording is retained.
-4. The left-inverse proposition omits the nonempty-domain hypothesis used by
-   its proof when it chooses a in A. Counterexample: the empty injection
-   from emptyset to a nonempty B admits no map B to emptyset. If both are
-   empty, the empty map is its own inverse. Faithful translation retains
-   the statement/proof; a separate editorial erratum must accompany its
-   eventual reader integration. This is not a claim that the proposition
-   is correct without qualification.
-5. The later prose invokes the bijection proposition for a unique inverse
+The bounded source audit OLFUN-20260904 was read from REVIEW.md (SHA-256
+bc183d34b6ac57cc00e2df76d00277cdd2fabee293d12beb142d2e27344f8d24)
+and FINDINGS.json (SHA-256
+eee57facbea44f65a19a816fb12cbc86be0b18e21dcffeeed943f52f7e332960).
+All seven audited frozen files match their archive and manifest identities.
+SOURCE_CORRECTIONS.jsonl records exact source/target locations and treatments.
+
+1. OLFUN-002: the all-natural square-root selector now says nonnegative
+   (principal), not positive; the correct positive-integer two-root sentence
+   remains. An adjacent source-correction note explains the English adjective.
+2. OLFUN-003: the g example now uses x consistently; this is an explicitly
+   declared alpha-equivalent n-to-x prose/math normalization, not an unlogged
+   formula mismatch. Its adjacent note identifies the source typo.
+3. OLFUN-004: the graph is now a relation between A and B contained in A times
+   B, not literally a relation on A times B. An adjacent note gives the type
+   distinction without changing the graph definition.
+4. OLFUN-001: the injection-to-left-inverse theorem now requires nonempty A,
+   matching the proof's arbitrary-element choice. Its adjacent note records
+   the empty-domain counterexample and exact general condition: A nonempty or
+   B empty. The frozen English bytes remain unchanged.
+5. OLFUN-005: the correct input-only function-restriction definition remains;
+   the later exact-equivalence claim is qualified because the earlier relation
+   restriction constrains both coordinates. An adjacent note records this.
+6. The later prose invokes the bijection proposition for a unique inverse
    before the uniqueness result appears. Preserve the source ordering.
-6. Native TE-C004 page308 states range is a subset of codomain and then gives
+7. Native TE-C004 page308 states range is a subset of codomain and then gives
    an apparent equality slip. Only the Telugu labels/definitional distinction
    are used, not that formula. Page319 also has a malformed later example.
    Canon mathematics never overrides OpenLogic.
@@ -75,7 +83,11 @@ rechecked, and native pages were actually visually consulted before drafting.
 
 All seven pass exact blank-block alignment, environment counts, original
 text-token identities, protected identifiers/options/import/asset/citation
-parity and mathematical-form multiset parity. Initial failures were explicit
+parity and mathematical-form multiset parity, except two precisely declared
+source-correction deltas: OLFUN-003 replaces one n atom by x, and OLFUN-001
+adds the nonempty-A hypothesis atom. Correction notes are separately labelled
+and excluded from source-body math parity; their IDs must match the correction
+ledger exactly. Initial translation failures were explicit
 f/y mentions translated as pronouns; original symbols were restored at the
 same semantic places rather than weakening the check.
 

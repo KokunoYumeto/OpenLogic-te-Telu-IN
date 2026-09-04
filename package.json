@@ -1,0 +1,16 @@
+{
+  "name": "openlogic-te-telu-in",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "license": "CC-BY-4.0",
+  "engines": {"node": ">=22"},
+  "scripts": {
+    "html": "node scripts/build-html.mjs",
+    "html:pages": "node scripts/build-html.mjs --pages",
+    "audit:html": "node scripts/audit-html.mjs",
+    "audit:html:pages": "node scripts/audit-html.mjs --pages",
+    "check:sets": "node scripts/audit-batch.mjs 4 10 001"
+  },
+  "dependencies": {"katex": "0.18.5"}
+}

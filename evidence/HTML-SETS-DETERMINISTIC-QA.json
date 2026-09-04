@@ -1,0 +1,65 @@
+{
+  "schema": "openlogic-te-html-deterministic-qa/1",
+  "generated_utc": "2026-09-04T18:05:50.339Z",
+  "scope": "Sets chapter, OLP-0004..OLP-0010",
+  "directory": "docs/sets",
+  "units": 7,
+  "aligned_blocks": 121,
+  "linguistic_blocks": 86,
+  "telugu_mathml": 327,
+  "english_mathml": 327,
+  "internal_references": 10,
+  "accessible_svg_instances": 6,
+  "telugu_code_points": 13317,
+  "network_runtime_dependencies": 0,
+  "toolchain": {
+    "node": "v22.17.0",
+    "package_lock_sha256": "61f8dffd8e37b161b1a0332132eb67bc8485e656d4dcbce0abc8e86b79e3641b",
+    "builder_sha256": "f49d1073613476f2c69cd79515df07cebd965419b7439fb66165417a7b237b71",
+    "reader_sha256": "aa4960e12d5a62daf2de0eafe1940694fb25bde95ae8defadef6fed4cc998405",
+    "auditor_sha256": "e5f130200a9f114a976aedeae7744d369234e7a95fa0c5573759a28bbe68e442"
+  },
+  "files": [
+    {
+      "name": "index.html",
+      "bytes": 308441,
+      "sha256": "b7869285497f7159e632ab108a17369827f62668cd9adcbfd6ca540b6498c335"
+    },
+    {
+      "name": "reader.css",
+      "bytes": 4057,
+      "sha256": "d08767b1370583594c8068276038237c38304f0273c88b261a1753c7c133f2de"
+    },
+    {
+      "name": "render-manifest.json",
+      "bytes": 152197,
+      "sha256": "011e09650c06d3a85038edd722a6ccbd41b61f985c76ac33fdf05a358faf4441"
+    },
+    {
+      "name": "LICENSE.md",
+      "bytes": 17068,
+      "sha256": "bb5e0179a1e9bdb55634a4303784cf73c297a1dcee27b92cd546bf398075531c"
+    },
+    {
+      "name": "KATEX-LICENSE",
+      "bytes": 1107,
+      "sha256": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3"
+    },
+    {
+      "name": "fonts/NotoSerifTelugu-Regular.ttf",
+      "bytes": 312332,
+      "sha256": "02cf5610b0aa2dc1ab66ed8edadad207ffb86b85eea4889a0b229f041a4b4bf9"
+    },
+    {
+      "name": "fonts/NotoSerifTelugu-Bold.ttf",
+      "bytes": 332592,
+      "sha256": "c0ef9aeb5fe554daa93517e2f2e3b627ddaa1ab56bf7cc99f3059fe5a4e7cdfd"
+    },
+    {
+      "name": "fonts/OFL.txt",
+      "bytes": 4377,
+      "sha256": "0dab92d0544f7b233403f14b84a663bdbfa746982eda629e7f4f9ffe1b036feb"
+    }
+  ],
+  "status": "pass"
+}

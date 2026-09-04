@@ -1,6 +1,6 @@
 {
   "schema": "telugu-openlogic-batch-qa/1",
-  "generated_utc": "2026-09-04T16:29:35.496Z",
+  "generated_utc": "2026-09-04T17:03:42.841Z",
   "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Intertext prose is masked while its inline math remains checked.",
   "units": [
     {
@@ -33,7 +33,12 @@
       "tokens_source": {},
       "tokens_target": {},
       "math_source": [],
-      "math_target": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
       "math_multiset_match": true,
       "telugu_chars": 9,
       "unicode_replacement_char": false,
@@ -134,7 +139,7 @@
       "unit_id": "OLP-0021",
       "source_path": "content/sets-functions-relations/functions/function-basics.tex",
       "source_sha256": "d1fa0923e303fc49a88d4e476c319d6e91a8088de44c232dcfba5878325faea3",
-      "translation_sha256": "be95b3d7bb2ba3d71a86cfff69f8d086d28bd09fe4cd9819a0530374aeed4eaf",
+      "translation_sha256": "e2bb0411b6b6260b1deab544b3f495dd1f999c7fe7250ca90afc6897e192bf10",
       "source_blocks": 21,
       "target_blocks": 21,
       "paragraph_alignment": true,
@@ -229,7 +234,7 @@
         "$h\\colon\\Nat\\to\\Nat$",
         "\\[h(x)=\\begin{cases}\\frac{x}{2}&\\\\\\frac{x+1}{2}&\\end{cases}\\]"
       ],
-      "math_target": [
+      "math_target_core": [
         "$1$",
         "$n$",
         "$n+1$",
@@ -279,7 +284,7 @@
         "$g(x)=x+2-1$",
         "$g\\colon\\Nat\\to\\Nat$",
         "$g$",
-        "$n$",
+        "$x$",
         "$g$",
         "$x$",
         "$x+1$",
@@ -295,8 +300,20 @@
         "$h\\colon\\Nat\\to\\Nat$",
         "\\[h(x)=\\begin{cases}\\frac{x}{2}&\\\\\\frac{x+1}{2}&\\end{cases}\\]"
       ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$n$"
+      ],
+      "math_delta_target_only": [
+        "$x$"
+      ],
+      "declared_source_correction_ids": [
+        "OLFUN-002",
+        "OLFUN-003"
+      ],
+      "math_declared_source_correction_match": true,
       "math_multiset_match": true,
-      "telugu_chars": 3102,
+      "telugu_chars": 3323,
       "unicode_replacement_char": false,
       "unpaired_surrogate": false,
       "blocks": [
@@ -538,7 +555,7 @@
         "$A$",
         "$B$"
       ],
-      "math_target": [
+      "math_target_core": [
         "$B$",
         "$f$",
         "$f\\colonA\\rightarrowB$",
@@ -584,6 +601,11 @@
         "$A$",
         "$B$"
       ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
       "math_multiset_match": true,
       "telugu_chars": 1491,
       "unicode_replacement_char": false,
@@ -723,7 +745,7 @@
       "unit_id": "OLP-0023",
       "source_path": "content/sets-functions-relations/functions/functions-relations.tex",
       "source_sha256": "e2e46c0270c44b6f54861a4565f3829b1b5f91a7f72dca84046361e5abf622c3",
-      "translation_sha256": "200c20cc1e9d705f448048ea14325851602569d3fb1f4237df6bc66df826a312",
+      "translation_sha256": "fbdd1868af5332df005889b25115f03ff05db86deca233286c75e12f9d9cc61b",
       "source_blocks": 17,
       "target_blocks": 17,
       "paragraph_alignment": true,
@@ -817,7 +839,7 @@
         "$\\ran{f}=\\funimage{f}{\\dom{f}}$",
         "$f$"
       ],
-      "math_target": [
+      "math_target_core": [
         "$A$",
         "$B$",
         "$A$",
@@ -874,8 +896,16 @@
         "$f$",
         "$\\ran{f}=\\funimage{f}{\\dom{f}}$"
       ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [
+        "OLFUN-004",
+        "OLFUN-005"
+      ],
+      "math_declared_source_correction_match": true,
       "math_multiset_match": true,
-      "telugu_chars": 1845,
+      "telugu_chars": 2158,
       "unicode_replacement_char": false,
       "unpaired_surrogate": false,
       "blocks": [
@@ -937,7 +967,7 @@
         {
           "index": 12,
           "source_start": "\\begin{explain}\nEvery function $f\\colon A \\to B$ has a graph, i.e., a relation on $A\n\\times B$ defined by $f(x",
-          "target_start": "\\begin{explain}\nప్రతి ప్రమేయం $f\\colon A \\to B$కూ ఒక గ్రాఫు ఉంటుంది; అంటే\n$f(x) = y$ ద్వారా నిర్వచించే $A \\tim"
+          "target_start": "\\begin{explain}\nప్రతి ప్రమేయం $f\\colon A \\to B$కూ ఒక గ్రాఫు ఉంటుంది; అంటే\n$f(x) = y$ ద్వారా నిర్వచించే, ప్రవేశ"
         },
         {
           "index": 13,
@@ -1000,7 +1030,7 @@
       "unit_id": "OLP-0024",
       "source_path": "content/sets-functions-relations/functions/inverses.tex",
       "source_sha256": "96e36d8cd8dc4ec0e73e9507147ecfe33d7e4f368ecf46de92efb423a7d409c1",
-      "translation_sha256": "11ed3e680998ba9d30f3dddb664570b3850e8d0c9463c45f6f35d0b218bf59b9",
+      "translation_sha256": "30d398f5bc5d635d3c9b8e1e04adbd7417ae5d62e1006d0d69da1e54474b9afa",
       "source_blocks": 28,
       "target_blocks": 28,
       "paragraph_alignment": true,
@@ -1192,7 +1222,7 @@
         "$h$",
         "$g=h$"
       ],
-      "math_target": [
+      "math_target_core": [
         "$f(x)=x+1$",
         "$g(y)=y-1$",
         "$f$",
@@ -1240,6 +1270,7 @@
         "$f$",
         "$h$",
         "$f$",
+        "$A$",
         "$f\\colonA\\toB$",
         "$x\\inA$",
         "$g(f(x))=x$",
@@ -1337,8 +1368,17 @@
         "$h$",
         "$g=h$"
       ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [
+        "$A$"
+      ],
+      "declared_source_correction_ids": [
+        "OLFUN-001"
+      ],
+      "math_declared_source_correction_match": true,
       "math_multiset_match": true,
-      "telugu_chars": 3051,
+      "telugu_chars": 3262,
       "unicode_replacement_char": false,
       "unpaired_surrogate": false,
       "blocks": [
@@ -1400,7 +1440,7 @@
         {
           "index": 12,
           "source_start": "\\begin{prop}\nIf $f\\colon A \\to B$ is !!{injective}, then there is a \\emph{left\ninverse}~$g\\colon B \\to A$ of~$",
-          "target_start": "\\begin{prop}\n$f\\colon A \\to B$ అనేది !!{injective} అయితే, ప్రతి $x \\in A$కూ\n$g(f(x)) = x$ అయ్యే $f$ యొక్క \\emp"
+          "target_start": "\\begin{prop}\n$A$ శూన్యేతరమై, $f\\colon A \\to B$ అనేది !!{injective} అయితే, ప్రతి $x \\in A$కూ\n$g(f(x)) = x$ అయ్య"
         },
         {
           "index": 13,
@@ -1606,7 +1646,7 @@
         "$\\comp{f}{g}$",
         "$R_f\\midR_g$"
       ],
-      "math_target": [
+      "math_target_core": [
         "$f$",
         "$f^{-1}$",
         "$f$",
@@ -1655,6 +1695,11 @@
         "$\\comp{f}{g}$",
         "$R_f\\midR_g$"
       ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
       "math_multiset_match": true,
       "telugu_chars": 839,
       "unicode_replacement_char": false,
@@ -1830,7 +1875,7 @@
         "$f$",
         "$R$"
       ],
-      "math_target": [
+      "math_target_core": [
         "$A$",
         "$B$",
         "$f\\colonA\\ptoB$",
@@ -1893,6 +1938,11 @@
         "$R$",
         "$f$"
       ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
       "math_multiset_match": true,
       "telugu_chars": 1093,
       "unicode_replacement_char": false,
