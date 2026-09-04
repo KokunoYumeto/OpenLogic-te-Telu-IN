@@ -31,5 +31,5 @@
 
 The source license's warranty disclaimer remains applicable. Provisional
 technical nomenclature and mathematical-source caveats are documented in
-evidence. Full corpus coverage remains 16 drafted units of 722, with only
+evidence. Full corpus coverage remains 23 drafted units of 722, with only
 the seven-unit Sets chapter released as a verified PDF at this checkpoint.

@@ -21,7 +21,7 @@ open. No credential or account metadata is included in the readback receipts.
 
 The source archive was replay-packaged with the identical hash. Its extracted
 preparer reproduced the verified body hash and all seven structural checks
-passed. Two additional clean-folder TeX attempts acquired no slot and launched
+passed. Three additional clean-folder TeX attempts acquired no slot and launched
 no process; that extra archive rebuild has not yet been completed. The actual
 released PDF already passed its four-pass reproducible guarded build and
 all-page visual/extraction QA.

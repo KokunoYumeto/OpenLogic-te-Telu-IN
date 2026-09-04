@@ -1,6 +1,7 @@
 """Deterministic, allowlisted chapter archive. Run from any working directory."""
 from pathlib import Path
 import hashlib
+import io
 import json
 import zipfile
 
@@ -31,7 +32,8 @@ def digest(data):
     return hashlib.sha256(data).hexdigest()
 
 archive = OUT / "openlogic-te-Telu-IN-sets-source-v0.1.0.zip"
-with zipfile.ZipFile(archive, "w", compression=zipfile.ZIP_DEFLATED,
+archive_buffer = io.BytesIO()
+with zipfile.ZipFile(archive_buffer, "w", compression=zipfile.ZIP_DEFLATED,
                      compresslevel=9) as z:
     for name in sorted(FILES):
         source = (ROOT / name).resolve()
@@ -43,19 +45,26 @@ with zipfile.ZipFile(archive, "w", compression=zipfile.ZIP_DEFLATED,
         z.writestr(info, source.read_bytes(), compress_type=zipfile.ZIP_DEFLATED,
                    compresslevel=9)
 
+archive_data = archive_buffer.getvalue()
 pdf_data = (ROOT / "build/sets.pdf").read_bytes()
 qa = json.loads((ROOT / "evidence/SETS-FINAL-QA.json").read_text(encoding="utf-8-sig"))
 if digest(pdf_data) != qa["pdf_sha256"]:
     raise RuntimeError("PDF bytes differ from visually inspected QA artifact")
 pdf = OUT / "openlogic-te-Telu-IN-sets-v0.1.0.pdf"
-pdf.write_bytes(pdf_data)
-records = [{"filename": p.name, "bytes": p.stat().st_size,
-            "sha256": digest(p.read_bytes())} for p in [pdf, archive]]
+payloads = {pdf: pdf_data, archive: archive_data}
+records = [{"filename": p.name, "bytes": len(data),
+            "sha256": digest(data)} for p, data in payloads.items()]
 manifest = {"schema": "openlogic-te-release-manifest/1",
             "version": "0.1.0-sets", "date": "2026-09-04",
             "scope": "OLP-0004 through OLP-0010, 7 of 722 units; not the full edition",
             "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
             "artifacts": records}
-(OUT / "release-manifest.json").write_text(
-    json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+payloads[OUT / "release-manifest.json"] = (
+    json.dumps(manifest, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
+for destination, data in payloads.items():
+    if destination.exists() and destination.read_bytes() != data:
+        raise RuntimeError("Refusing to overwrite a versioned release artifact. "
+                           "Preserve the published snapshot and choose a new version.")
+for destination, data in payloads.items():
+    destination.write_bytes(data)
 print(json.dumps(manifest, ensure_ascii=False))

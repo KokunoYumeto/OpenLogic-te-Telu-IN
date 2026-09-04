@@ -1,0 +1,66 @@
+% Part: sets-functions-relations
+% Chapter: functions
+% Section: composition
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{fun}{cmp}
+\olsection{ప్రమేయాల సంయుక్తం}
+
+\begin{explain}
+\oliflabeldef{sfr:fun:inv:sec}{!!a{bijection} $f$ యొక్క విలోమం $f^{-1}$
+కూడా ఒక ప్రమేయమని \olref[inv]{sec}లో చూశాం.
+ప్రమేయాలపై మరో ప్రక్రియ సంయుక్తం: }{}రెండు ప్రమేయాలు $f$, $g$లను
+సంయుక్తం చేసి, అంటే ముందుగా $f$ను, ఆపై $g$ను వర్తింపజేసి,
+కొత్త ప్రమేయాన్ని నిర్వచించవచ్చు. వ్యాప్తులూ ప్రవేశాలూ సరిపడినప్పుడే
+ఇది సాధ్యం: $f$ వ్యాప్తి, $g$ ప్రవేశానికి ఉపసమితి కావాలి.
+\oliflabeldef{sfr:rel:ops:sec}{ప్రమేయాలపై ఈ ప్రక్రియ,
+\olref[rel][ops]{sec}లో సంబంధాలపై చేసిన సాపేక్ష లబ్ధ ప్రక్రియకు అనురూపం.}{}
+
+సంయుక్తం అనే భావాన్ని వివరించడానికి ఒక పటం ఉపయోగపడవచ్చు.
+\olref{fig:composition}లో $f \colon A \to B$, $g \colon B \to C$ అనే
+రెండు ప్రమేయాలను, వాటి సంయుక్తం $(\comp{f}{g})$ను చిత్రించాం.
+$(\comp{f}{g}) \colon A \to C$ అనే ప్రమేయం, $A$లోని ప్రతి
+\tecase{acc}{!!{element}}, $C$లోని \tecase{dat}{!!a{element}} జతచేస్తుంది.
+$A$లోని !!a{element}, $C$లోని ఏ \tecase{dat}{!!{element}} జతచేయబడుతుందో
+ఇలా పేర్కొంటాం: ఇన్‌పుట్ $x \in A$ ఇస్తే, మొదట $x$కు $f$ను
+వర్తింపజేయాలి; అది ఏదో ఒక $f(x) = y \in B$ను ఇస్తుంది.
+ఆపై $y$కు $g$ను వర్తింపజేయాలి; అది ఏదో ఒక $g(f(x)) = g(y) = z \in C$ను ఇస్తుంది.
+\begin{figure}
+  \olasset[2\olphotowidth]{assets/diagrams/composition.tikz}
+  \caption{$f$, $g$ అనే రెండు ప్రమేయాల సంయుక్తం $g \circ f$.}
+  \ollabel{fig:composition}
+\end{figure}
+\end{explain}
+
+\begin{defn}[సంయుక్తం]
+$f\colon A \to B$, $g\colon B \to C$ ప్రమేయాలు అనుకుందాం.
+$f$తో $g$ యొక్క \emph{సంయుక్తం} $\comp{f}{g} \colon A \to C$:
+ఇక్కడ $(\comp{f}{g})(x) = g(f(x))$.
+\end{defn}
+
+\begin{ex}
+$f(x) = x + 1$, $g(x) = 2x$ అనే ప్రమేయాలను పరిగణించండి.
+$(\comp{f}{g})(x) = g(f(x))$ కనుక, ప్రతి ఇన్‌పుట్ $x$కు ముందుగా
+దాని ఉత్తరవర్తిని తీసుకుని, వచ్చిన ఫలితాన్ని రెండుతో గుణించాలి.
+కాబట్టి వాటి సంయుక్తం $(\comp{f}{g})(x) = 2(x+1)$ ద్వారా ఇవ్వబడుతుంది.
+\end{ex}
+
+\begin{prob}
+$f \colon A \to B$, $g \colon B \to C$ రెండూ !!{injective} అయితే,
+$\comp{f}{g}\colon A \to C$ కూడా !!{injective} అని చూపండి.
+\end{prob}
+
+\begin{prob}
+$f \colon A \to B$, $g \colon B \to C$ రెండూ !!{surjective} అయితే,
+$\comp{f}{g}\colon A \to C$ కూడా !!{surjective} అని చూపండి.
+\end{prob}
+
+\begin{prob}
+$f \colon A \to B$, $g \colon B \to C$ అనుకుందాం.
+$\comp{f}{g}$ యొక్క గ్రాఫు $R_f \mid R_g$ అని చూపండి.
+\end{prob}
+
+\end{document}

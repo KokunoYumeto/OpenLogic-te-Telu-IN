@@ -17,10 +17,10 @@ source diagrams. This is **not the complete OpenLogic Telugu edition**.
 Both mirrors' public artifact bytes have been anonymously verified;
 see [PUBLICATION.md](PUBLICATION.md).
 
-Sixteen full-unit editable drafts exist in this repository: Sets (7) and
-Relations (9). Both batches have source-aligned structural and same-agent
-semantic review records. The Relations drafts are not yet integrated into a
-verified reader. The other 706 units and the coherent full reader remain in
+Twenty-three full-unit editable drafts exist in this repository: Sets (7),
+Relations (9) and Functions (7). All three batches have source-aligned
+structural and same-agent semantic review records. Relations and Functions
+are not yet integrated into a verified reader. The other 699 units and the coherent full reader remain in
 progress. Useful semantic HTML is also unfinished; no inaccessible PDF is
 represented as a substitute for it.
 
@@ -79,6 +79,10 @@ checks, disables shell escape and automatic package installation, and
 releases it in finally. A busy slot launches no TeX. The verified output is
 build/sets.pdf; a build receipt is written under build. Toolchain variation
 may change PDF bytes; replay equality is checked within each build.
+
+The released source ZIP is a frozen snapshot. The packaging script refuses
+to overwrite an existing versioned artifact when current source bytes differ;
+use a new version for later cumulative releases.
 
 ## License
 
