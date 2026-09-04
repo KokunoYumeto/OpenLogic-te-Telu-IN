@@ -1,0 +1,138 @@
+% Part: sets-functions-relations
+% Chapter: infinite
+% Section: dedekind
+%
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{infinite}{dedekind}
+\olsection{డెడెకిండ్ బీజగణితాలు}
+
+సహజ సంఖ్యలు అనంతంగా ఉండాలని మాత్రమే కాదు; వాటికి కొన్ని (బీజగణిత)
+ధర్మాలు ఉండాలని కూడా కోరుకుంటాం: సంకలనం, గుణకారం మొదలైన వాటి కింద
+అవి సరిగ్గా ప్రవర్తించాలి.
+
+\emph{ఉత్తరవర్తి ప్రమేయం} అనే ఆలోచనను ప్రాథమికంగా తీసుకుని, కింది
+ధర్మాలు గలవాటిగా సంఖ్యలను వర్ణించాలనేది డెడెకిండ్ ఆలోచన:
+\begin{enumerate}
+	\item ఏ సంఖ్యకూ ఉత్తరవర్తి కాని $0$ అనే ఒక సంఖ్య ఉంది
+	\\i.e., $0 \notin \ran{s}$
+	\\i.e., $\forall x\ s(x) \neq 0$
+	\item భిన్న సంఖ్యలకు భిన్న ఉత్తరవర్తులు ఉంటాయి
+	\\i.e., $s$ is !!a{injection}
+	\\i.e., $\forall x \forall y (s(x) = s(y) \lif x = y)$
+	\item\ollabel{repeatedapplication} ఉత్తరవర్తి ప్రమేయాన్ని $0$కు
+	పునఃపునః వర్తింపజేయడం ద్వారా ప్రతి సంఖ్య లభిస్తుంది.
+\end{enumerate}
+మొదటి రెండు షరతులను ప్రథమక్రమ తర్కంతో సులభంగా నిర్వహించవచ్చు (పైన
+చూడండి). కానీ \olref{repeatedapplication}ను కేవలం ప్రథమక్రమ తర్కంతో
+నిర్వహించలేం. \olref{repeatedapplication} షరతును సమితి-సిద్ధాంత
+రీతిలో ఇలా పునర్వ్యక్తీకరించడమే డెడెకిండ్ సాధించిన పురోగతి:
+\begin{enumerate}
+	\item[3$'$.] సహజ సంఖ్యలు, $0$ను కలిగి ఉండి
+	\emph{ఉత్తరవర్తి ప్రమేయం కింద సంవృతమైన} అతి చిన్న సమితి: అంటే,
+	సమితిలోని ఏ !!{element}కైనా $s$ను వర్తింపజేస్తే సమితిలోని మరో
+	!!{element} లభిస్తుంది.
+\end{enumerate}
+\sourcecorrection{OLTEINF-001}{ఆంగ్ల మూలంలోని 3$'$ షరతు ``ఉత్తరవర్తి
+ప్రమేయం కింద సంవృతమైన అతి చిన్న సమితి'' అని మాత్రమే చెప్పి, $0$ను
+కలిగి ఉండాలనే అవసరాన్ని వదిలింది; అలా అయితే ఖాళీ సమితే అతి చిన్నది.
+ముందున్న పునరావృత-వర్తింపు షరతుకు, తరువాతి సంవృత నిర్వచనానికి సరిపోయేలా
+``$0$ను కలిగి ఉండి'' అని చేర్చాం.}
+కానీ దీనిని నెమ్మదిగా పూర్తిగా వివరించాలి.
+
+\begin{defn}\ollabel{Closure}
+	ఏ $f \colon A \to A$కైనా, $X \subseteq A$ సమితి
+$f$-\emph{సంవృతం} కావడం {iff} $(\forall x \in X)f(x) \in X$.
+ఇప్పుడు ఏ $o \in A$కైనా ఇలా నిర్వచించండి:
+	$$\closureofunder{f}{o} = \bigcap\Setabs{X \subseteq A}{o \in X\text{ and }X
+\text{ is $f$-closed}}$$
+\end{defn}
+\sourcecorrection{OLTEINF-002}{ఆంగ్ల మూలం ``ఏ ప్రమేయం $f$కైనా'' అని
+చెప్పి, తరువాతి లెమ్మాలో బంధించని $A$ను వాడింది. అంతేకాక మూలం ఇచ్చిన
+$\ran{f}\cup\{o\}$ సాక్షి, ఉద్దేశించిన స్వ-ప్రమేయ రకం ఉన్నప్పుడే
+$f$-సంవృతం. తరువాతి డెడెకిండ్ బీజగణిత నిర్వచనం నిర్ణయించినట్లుగా
+$f \colon A\to A$, $o\in A$, $X\subseteq A$ అని రకాలను స్పష్టం చేశాం.}
+
+కాబట్టి $\closureofunder{f}{o}$ అనేది $o$ను !!a{element}గా కలిగిన
+$f$-సంవృత సమితులన్నిటి ఛేదనం. అంతర్బుద్ధి ప్రకారం,
+$\closureofunder{f}{o}$ అనేది $o$ను !!a{element}గా కలిగిన
+\emph{అతి చిన్న} $f$-సంవృత సమితి. ఈ అంతర్బుద్ధి ఆలోచనను తదుపరి
+ఫలితం కచ్చితంగా చెబుతుంది:
+\begin{lem}\ollabel{closureproperties}
+	ఏ ప్రమేయం $f \colon A \to A$కు, ఏ $o \in A$కైనా:
+	\begin{enumerate}
+		\item\ollabel{closurehaselem} $o \in \closureofunder{f}{o}$; మరియు
+		\item\ollabel{closureclosed} $\closureofunder{f}{o}$ $f$-సంవృతం; మరియు
+		\item\ollabel{closuresmallest} $X$ $f$-సంవృతమై, $o \in
+		X$ అయితే, $\closureofunder{f}{o} \subseteq X$
+	\end{enumerate}
+\end{lem}
+
+\begin{proof}
+$o$ను !!a{element}గా కలిగిన కనీసం ఒక $f$-సంవృత సమితి ఉంది; అదే
+$\ran{f}\cup \{o\}$. కాబట్టి అటువంటి సమితులన్నిటి ఛేదనమైన
+$\closureofunder{f}{o}$ ఉనికిలో ఉంటుంది. ఇప్పుడు
+\olref{closurehaselem}--\olref{closuresmallest}లను తనిఖీ చేయాలి.
+
+\olref{closurehaselem} గురించి: $\closureofunder{f}{o}$ అనేది
+$o$ను !!a{element}గా కలిగిన సమితుల ఛేదనం కనుక
+$o \in \closureofunder{f}{o}$.
+
+\olref{closureclosed} గురించి: $x \in \closureofunder{f}{o}$
+అనుకుందాం. $o \in X$ మరియు $X$ $f$-సంవృతం అయితే $x \in X$;
+ఇప్పుడు $X$ $f$-సంవృతం కనుక $f(x) \in X$. కాబట్టి
+$f(x) \in \closureofunder{f}{o}$.
+
+\olref{closuresmallest} గురించి: సాధారణంగా $X \in C$ అయితే
+$\bigcap C \subseteq X$.
+\end{proof}
+
+దీన్ని ఉపయోగించి ఇలా చెప్పవచ్చు:
+
+\begin{defn}
+\emph{డెడెకిండ్ బీజగణితం} అంటే, $f \colon A \to A$ అనే ప్రమేయం,
+ఏదో $o \in A$తో కూడిన, కింది షరతులను సంతృప్తిపరిచే $A$ అనే సమితి:
+	\begin{enumerate}
+		\item \ollabel{ded:proper} $o \notin \ran{f}$
+		\item \ollabel{ded:injection} $f$ is !!a{injection}
+		\item \ollabel{ded:closure} $A = \closureofunder{f}{o}$
+	\end{enumerate}
+\end{defn}
+
+$A = \closureofunder{f}{o}$ కనుక, $o$ను !!a{element}గా కలిగిన
+$f$-సంవృత సమితుల్లో $A$ అతి చిన్నదని మునుపటి ఫలితం చెబుతుంది.
+డెడెకిండ్ బీజగణితం డెడెకిండ్ అనంతమని స్పష్టం; నిర్వచనంలోని
+\olref{ded:proper}, \olref{ded:injection} ఉపవాక్యాలను చూడండి.
+అయితే మరింత ఆసక్తికరమైన విషయం ఏమిటంటే, ఏ డెడెకిండ్ అనంత సమితినైనా
+డెడెకిండ్ బీజగణితంగా మార్చవచ్చు.
+
+\begin{thm}\ollabel{thm:DedekindInfiniteAlgebra}
+డెడెకిండ్ అనంత సమితి ఒకటి ఉంటే, డెడెకిండ్ బీజగణితం ఒకటి ఉంటుంది.
+\end{thm}
+
+\begin{proof}
+$D$ డెడెకిండ్ అనంతం అనుకుందాం. అప్పుడు ఒకటి-ఒకటి ప్రమేయం
+$g \colon D \to D$, అలాగే ఒక మూలకం $o \in D \setminus \ran{g}$
+ఉంటాయి. ఇప్పుడు $A = \closureofunder{g}{o}$గా తీసుకుందాం;
+\olref{closureproperties} ప్రకారం $A$ ఉనికిలో ఉంటుంది, $o \in A$.
+$f = \funrestrictionto{g}{A}$గా తీసుకుందాం. $A, f, o$ కలిసి ఒక
+డెడెకిండ్ బీజగణితాన్ని ఏర్పరుస్తాయని చూపుతాం.
+
+\olref{ded:proper} గురించి: $o \notin \ran{g}$ మరియు
+$\ran{f} \subseteq \ran{g}$ కనుక $o\notin \ran{f}$.
+
+\olref{ded:injection} గురించి: $g$, $D$పై ఒకటి-ఒకటి ప్రమేయం;
+కాబట్టి $f \subseteq g$ కూడా ఒకటి-ఒకటి ప్రమేయం కావాలి.
+
+\olref{ded:closure} గురించి: \olref{closureproperties} ప్రకారం $A$
+$g$-సంవృతం; మరింత స్పష్టంగా, $A$ $f$-సంవృతం కూడా. అందువల్ల
+\olref{closureproperties} ప్రకారం $\closureofunder{f}{o} \subseteq A$.
+అలాగే $\closureofunder{f}{o}$ $f$-సంవృతం, మరియు
+$f = \funrestrictionto{g}{A}$ కనుక, $\closureofunder{f}{o}$
+$g$-సంవృతమని వస్తుంది. కాబట్టి \olref{closureproperties} ప్రకారం
+$A \subseteq \closureofunder{f}{o}$.
+\end{proof}
+
+\end{document}

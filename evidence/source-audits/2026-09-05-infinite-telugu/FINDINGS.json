@@ -1,0 +1,73 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTEINF-20260905",
+  "created_utc": "2026-09-05T00:10:00Z",
+  "status": "confirmed_against_frozen_source_and_immediate_controlling_context",
+  "scope": {
+    "chapter": "Infinite Sets",
+    "unit_ids": ["OLP-0049", "OLP-0050", "OLP-0051", "OLP-0052", "OLP-0053", "OLP-0054"],
+    "finding_count": 6
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEINF-001",
+      "unit_id": "OLP-0051",
+      "classification": "confirmed_missing_base_element_in_minimality_condition",
+      "source": {"path": "content/sets-functions-relations/infinite/dedekind-algebra.tex", "bytes": 5072, "sha256": "9cee716bb8cb3bfd507ed5c17bbd4477d05995af6f8f8d411087793bdaa86036", "locator": "lines 33-38"},
+      "finding": "Condition 3-prime says the naturals are the smallest successor-closed set but omits that the set must contain 0; otherwise the empty set is the smallest such set.",
+      "controlling_evidence": "The condition being reformulated says every number is obtained from 0, and the ensuing closure construction is explicitly the least closed set containing o.",
+      "required_translation_handling": "Add the containing-0 requirement and an adjacent OLTEINF-001 note."
+    },
+    {
+      "finding_id": "OLTEINF-002",
+      "unit_id": "OLP-0051",
+      "classification": "confirmed_unbound_ambient_set_and_function_type",
+      "source": {"path": "content/sets-functions-relations/infinite/dedekind-algebra.tex", "bytes": 5072, "sha256": "9cee716bb8cb3bfd507ed5c17bbd4477d05995af6f8f8d411087793bdaa86036", "locator": "lines 41-76"},
+      "finding": "The definition quantifies over any function, while the lemma suddenly says o in A without binding A. The proof's witness ran(f) union {o} is closed only under the intended self-map typing.",
+      "controlling_evidence": "The later Dedekind-algebra definition explicitly has f:A→A and o∈A; under that type, ran(f)∪{o} is a closed subset of A.",
+      "required_translation_handling": "Bind f:A→A and o∈A, restrict closure candidates to subsets of A, and add an adjacent OLTEINF-002 note."
+    },
+    {
+      "finding_id": "OLTEINF-003",
+      "unit_id": "OLP-0052",
+      "classification": "confirmed_closure_minimality_typing_gap",
+      "source": {"path": "content/sets-functions-relations/infinite/dedekind-induction.tex", "bytes": 3486, "sha256": "ea5f6c80d70abca6f5598de3e221c2f60524c40cbf533ae8a5336d5bb7186537", "locator": "lines 16-27"},
+      "finding": "The theorem permits any set X, but the proof invokes minimality directly on X even when X is not a subset of the self-map domain N.",
+      "controlling_evidence": "The theorem's own induction condition makes N∩X contain o and be s-closed; the typed closure lemma applies to that subset and yields N⊆N∩X⊆X.",
+      "required_translation_handling": "Use N∩X explicitly in the proof and add an adjacent OLTEINF-003 note."
+    },
+    {
+      "finding_id": "OLTEINF-004",
+      "unit_id": "OLP-0054",
+      "classification": "confirmed_unbound_set_closure_ambient_type",
+      "source": {"path": "content/sets-functions-relations/infinite/card-sb.tex", "bytes": 4143, "sha256": "88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9", "locator": "lines 25-46"},
+      "finding": "The set-closure definition is stated for an arbitrary function and set without an ambient domain/codomain in which every f(x) is defined.",
+      "controlling_evidence": "Its use in the helper has a self-map of C (the displayed codomain A is contained in C) and base C minus B; the least closure is taken among subsets of C.",
+      "required_translation_handling": "Bind an ambient U, f:U→U, B⊆U and X⊆U; add an adjacent OLTEINF-004 note."
+    },
+    {
+      "finding_id": "OLTEINF-005",
+      "unit_id": "OLP-0054",
+      "classification": "confirmed_malformed_nested_cardinality_conclusion",
+      "source": {"path": "content/sets-functions-relations/infinite/card-sb.tex", "bytes": 4143, "sha256": "88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9", "locator": "lines 49-53"},
+      "finding": "The helper conclusion nests cardeq(A,B) as an argument of another cardeq expression.",
+      "controlling_evidence": "The assumptions A⊆B⊆C and A≈C are the cardinal sandwich hypothesis; the proof constructs a bijection C→B and therefore proves B≈C.",
+      "required_translation_handling": "Replace the malformed conclusion with cardeq(B,C) and add an adjacent OLTEINF-005 note."
+    },
+    {
+      "finding_id": "OLTEINF-006",
+      "unit_id": "OLP-0054",
+      "classification": "confirmed_missing_range_inclusion",
+      "source": {"path": "content/sets-functions-relations/infinite/card-sb.tex", "bytes": 4143, "sha256": "88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9", "locator": "lines 55-83"},
+      "finding": "The proof announces ran(g)=B, then fixes x in B and proves only that every such x is hit.",
+      "controlling_evidence": "If y∈F then g(y)=f(y)∈A⊆B; if y∉F then y∉C\\B because C\\B⊆F, so g(y)=y∈B. This supplies the omitted ran(g)⊆B direction.",
+      "required_translation_handling": "Insert that missing inclusion argument before the existing B⊆ran(g) argument and add an adjacent OLTEINF-006 note."
+    }
+  ]
+}

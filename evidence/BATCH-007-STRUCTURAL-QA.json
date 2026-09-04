@@ -1,0 +1,1405 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-04T22:24:21.540Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Intertext prose is masked while its inline math remains checked.",
+  "units": [
+    {
+      "unit_id": "OLP-0049",
+      "source_path": "content/sets-functions-relations/infinite/infinite.tex",
+      "source_sha256": "6ea6bff5ac4f128338bfa6b1cb5b7c8bed6121210257e06f6aaa7b27d5cc4bbb",
+      "translation_sha256": "a5d3165664ee464506010bf762cf9a430892b1b793b70b182cd450a0af8893af",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport{hilberts-hotel}",
+        "\\olimport{dedekind-algebra}",
+        "\\olimport{dedekind-induction}",
+        "\\olimport{dedekinds-proof}",
+        "\\olimport{card-sb}"
+      ],
+      "identifiers_target": [
+        "\\olimport{hilberts-hotel}",
+        "\\olimport{dedekind-algebra}",
+        "\\olimport{dedekind-induction}",
+        "\\olimport{dedekinds-proof}",
+        "\\olimport{card-sb}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 63,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: infinite",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: infinite"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olchapter{sfr}{infinite}{Infinite Sets}",
+          "target_start": "\\olchapter{sfr}{infinite}{అనంత సమితులు}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{editorial}\nThis chapter on infinite sets is taken from Tim Button's \\emph{Open\nSet Theory}.\n\\end{editor",
+          "target_start": "\\begin{editorial}\nఅనంత సమితులపై ఈ అధ్యాయం టిమ్ బటన్ రచించిన \\emph{Open Set Theory}\nనుంచి తీసుకోబడింది.\n\\end{ed"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport{hilberts-hotel}\n\\olimport{dedekind-algebra}\n\\olimport{dedekind-induction}\n\\olimport{dedekinds-proof}",
+          "target_start": "\\olimport{hilberts-hotel}\n\\olimport{dedekind-algebra}\n\\olimport{dedekind-induction}\n\\olimport{dedekinds-proof}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{sfr}{infinite}",
+        "\\olimport{hilberts-hotel}",
+        "\\olimport{dedekind-algebra}",
+        "\\olimport{dedekind-induction}",
+        "\\olimport{dedekinds-proof}",
+        "\\olimport{card-sb}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{sfr}{infinite}",
+        "\\olimport{hilberts-hotel}",
+        "\\olimport{dedekind-algebra}",
+        "\\olimport{dedekind-induction}",
+        "\\olimport{dedekinds-proof}",
+        "\\olimport{card-sb}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0050",
+      "source_path": "content/sets-functions-relations/infinite/hilberts-hotel.tex",
+      "source_sha256": "e9a73caefcc496d7074251a3ac15f66fd577415bd3a531dd23f79375502ee0ed",
+      "translation_sha256": "45b003349eb40d8acdf9a4746ded52d3d1d0ad2e59f21c5d53f16646326ce33a",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{infinite}{hilbert}",
+        "\\citealt[730]{EwaldSieg2013}",
+        "\\citeyear{Dedekind1888}",
+        "\\ollabel{defn:DedekindInfinite}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{infinite}{hilbert}",
+        "\\citealt[730]{EwaldSieg2013}",
+        "\\citeyear{Dedekind1888}",
+        "\\ollabel{defn:DedekindInfinite}"
+      ],
+      "tokens_source": {
+        "!!a{injection}": 2
+      },
+      "tokens_target": {
+        "!!a{injection}": 2
+      },
+      "math_source": [
+        "$1$",
+        "$2$",
+        "$3$",
+        "$4$",
+        "$5$",
+        "$1$",
+        "$A$",
+        "$A$",
+        "$A$",
+        "$o\\inA$",
+        "$f\\colonA\\toA$",
+        "$o\\notin\\ran{f}$"
+      ],
+      "math_target_core": [
+        "$1$",
+        "$2$",
+        "$3$",
+        "$4$",
+        "$5$",
+        "$1$",
+        "$A$",
+        "$A$",
+        "$A$",
+        "$o\\notin\\ran{f}$",
+        "$o\\inA$",
+        "$f\\colonA\\toA$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1027,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: infinite\n% Section: hilberts-hotel\n%\n\\documentclass[../../../inclu",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: infinite\n% Section: hilberts-hotel\n%\n\\documentclass[../../../inclu"
+        },
+        {
+          "index": 2,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\olfileid{sfr}{infinite}{hilbert}\n\\olsection{Hilbert's Hotel}",
+          "target_start": "\\olfileid{sfr}{infinite}{hilbert}\n\\olsection{హిల్బర్ట్ హోటల్}"
+        },
+        {
+          "index": 4,
+          "source_start": "The set of the natural numbers is obviously infinite. So, if we do not\nwant to \\emph{help ourselves} to the na",
+          "target_start": "సహజ సంఖ్యల సమితి అనంతమైనదని స్పష్టం. కాబట్టి సహజ సంఖ్యలను ముందే\n\\emph{ఉపయోగించుకోకుండా} ఉండాలంటే, సహజ సంఖ్యలను"
+        },
+        {
+          "index": 5,
+          "source_start": "Now we stipulate that the hotel shall have infinitely many numbered\nrooms $1$, $2$, $3$, $4$, $5$, \\dots, each",
+          "target_start": "ఇప్పుడు హోటల్‌కు $1$, $2$, $3$, $4$, $5$, \\dots అని సంఖ్యలు గల\nఅనంత గదులు ఉన్నాయని, ప్రతి గదిలో సరిగ్గా ఒక అతి"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}\\ollabel{defn:DedekindInfinite}\nA set $A$ is \\emph{Dedekind infinite} iff there is !!a{injection}\n",
+          "target_start": "\\begin{defn}\\ollabel{defn:DedekindInfinite}\n$A$ నుంచి $A$ యొక్క ఒక నిజ ఉపసమితికి !!a{injection} ఉన్నప్పుడు మాత"
+        },
+        {
+          "index": 7,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{infinite}{hilbert}",
+        "\\citeyear{Dedekind1888}",
+        "\\ollabel{defn:DedekindInfinite}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{infinite}{hilbert}",
+        "\\citeyear{Dedekind1888}",
+        "\\ollabel{defn:DedekindInfinite}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0051",
+      "source_path": "content/sets-functions-relations/infinite/dedekind-algebra.tex",
+      "source_sha256": "9cee716bb8cb3bfd507ed5c17bbd4477d05995af6f8f8d411087793bdaa86036",
+      "translation_sha256": "c9dd5c1226367a62a3840e0dd189516a2249939e98bda8fd8409740d5a31636b",
+      "source_blocks": 20,
+      "target_blocks": 20,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{infinite}{dedekind}",
+        "\\ollabel{repeatedapplication}",
+        "\\olref{repeatedapplication}",
+        "\\olref{repeatedapplication}",
+        "\\ollabel{Closure}",
+        "\\ollabel{closureproperties}",
+        "\\ollabel{closurehaselem}",
+        "\\ollabel{closureclosed}",
+        "\\ollabel{closuresmallest}",
+        "\\olref{closurehaselem}",
+        "\\olref{closuresmallest}",
+        "\\olref{closurehaselem}",
+        "\\olref{closureclosed}",
+        "\\olref{closuresmallest}",
+        "\\ollabel{ded:proper}",
+        "\\ollabel{ded:injection}",
+        "\\ollabel{ded:closure}",
+        "\\olref{ded:proper}",
+        "\\olref{ded:injection}",
+        "\\ollabel{thm:DedekindInfiniteAlgebra}",
+        "\\olref{closureproperties}",
+        "\\olref{ded:proper}",
+        "\\olref{ded:injection}",
+        "\\olref{ded:closure}",
+        "\\olref{closureproperties}",
+        "\\olref{closureproperties}",
+        "\\olref{closureproperties}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{infinite}{dedekind}",
+        "\\ollabel{repeatedapplication}",
+        "\\olref{repeatedapplication}",
+        "\\olref{repeatedapplication}",
+        "\\ollabel{Closure}",
+        "\\ollabel{closureproperties}",
+        "\\ollabel{closurehaselem}",
+        "\\ollabel{closureclosed}",
+        "\\ollabel{closuresmallest}",
+        "\\olref{closurehaselem}",
+        "\\olref{closuresmallest}",
+        "\\olref{closurehaselem}",
+        "\\olref{closureclosed}",
+        "\\olref{closuresmallest}",
+        "\\ollabel{ded:proper}",
+        "\\ollabel{ded:injection}",
+        "\\ollabel{ded:closure}",
+        "\\olref{ded:proper}",
+        "\\olref{ded:injection}",
+        "\\ollabel{thm:DedekindInfiniteAlgebra}",
+        "\\olref{closureproperties}",
+        "\\olref{ded:proper}",
+        "\\olref{ded:injection}",
+        "\\olref{ded:closure}",
+        "\\olref{closureproperties}",
+        "\\olref{closureproperties}",
+        "\\olref{closureproperties}"
+      ],
+      "tokens_source": {
+        "!!a{element}": 5,
+        "!!a{injection}": 2,
+        "!!{element}": 2
+      },
+      "tokens_target": {
+        "!!a{element}": 5,
+        "!!a{injection}": 2,
+        "!!{element}": 2
+      },
+      "math_source": [
+        "$0$",
+        "$0\\notin\\ran{s}$",
+        "$\\forallx\\s(x)\\neq0$",
+        "$s$",
+        "$\\forallx\\forally(s(x)=s(y)\\lifx=y)$",
+        "$0$",
+        "$'$",
+        "$s$",
+        "$f$",
+        "$X$",
+        "$f$",
+        "$(\\forallx\\inX)f(x)\\inX$",
+        "$o$",
+        "$$",
+        "$f$",
+        "$$",
+        "$\\closureofunder{f}{o}$",
+        "$f$",
+        "$o$",
+        "$\\closureofunder{f}{o}$",
+        "$f$",
+        "$o$",
+        "$f$",
+        "$o\\inA$",
+        "$o\\in\\closureofunder{f}{o}$",
+        "$\\closureofunder{f}{o}$",
+        "$f$",
+        "$X$",
+        "$f$",
+        "$o\\inX$",
+        "$\\closureofunder{f}{o}\\subseteqX$",
+        "$f$",
+        "$o$",
+        "$\\ran{f}\\cup\\{o\\}$",
+        "$\\closureofunder{f}{o}$",
+        "$o\\in\\closureofunder{f}{o}$",
+        "$o$",
+        "$x\\in\\closureofunder{f}{o}$",
+        "$o\\inX$",
+        "$X$",
+        "$f$",
+        "$x\\inX$",
+        "$f(x)\\inX$",
+        "$X$",
+        "$f$",
+        "$f(x)\\in\\closureofunder{f}{o}$",
+        "$X\\inC$",
+        "$\\bigcapC\\subseteqX$",
+        "$A$",
+        "$f\\colonA\\toA$",
+        "$o\\inA$",
+        "$o\\notin\\ran{f}$",
+        "$f$",
+        "$A=\\closureofunder{f}{o}$",
+        "$A=\\closureofunder{f}{o}$",
+        "$A$",
+        "$f$",
+        "$o$",
+        "$D$",
+        "$g\\colonD\\toD$",
+        "$o\\inD\\setminus\\ran{g}$",
+        "$A=\\closureofunder{g}{o}$",
+        "$A$",
+        "$o\\inA$",
+        "$f=\\funrestrictionto{g}{A}$",
+        "$A,f,o$",
+        "$o\\notin\\ran{g}$",
+        "$\\ran{f}\\subseteq\\ran{g}$",
+        "$o\\notin\\ran{f}$",
+        "$g$",
+        "$D$",
+        "$f\\subseteqg$",
+        "$A$",
+        "$g$",
+        "$A$",
+        "$f$",
+        "$\\closureofunder{f}{o}\\subseteqA$",
+        "$\\closureofunder{f}{o}$",
+        "$f$",
+        "$f=\\funrestrictionto{g}{A}$",
+        "$\\closureofunder{f}{o}$",
+        "$g$",
+        "$A\\subseteq\\closureofunder{f}{o}$"
+      ],
+      "math_target_core": [
+        "$0$",
+        "$0\\notin\\ran{s}$",
+        "$\\forallx\\s(x)\\neq0$",
+        "$s$",
+        "$\\forallx\\forally(s(x)=s(y)\\lifx=y)$",
+        "$0$",
+        "$'$",
+        "$0$",
+        "$s$",
+        "$f\\colonA\\toA$",
+        "$X\\subseteqA$",
+        "$f$",
+        "$(\\forallx\\inX)f(x)\\inX$",
+        "$o\\inA$",
+        "$$",
+        "$f$",
+        "$$",
+        "$\\closureofunder{f}{o}$",
+        "$o$",
+        "$f$",
+        "$\\closureofunder{f}{o}$",
+        "$o$",
+        "$f$",
+        "$f\\colonA\\toA$",
+        "$o\\inA$",
+        "$o\\in\\closureofunder{f}{o}$",
+        "$\\closureofunder{f}{o}$",
+        "$f$",
+        "$X$",
+        "$f$",
+        "$o\\inX$",
+        "$\\closureofunder{f}{o}\\subseteqX$",
+        "$o$",
+        "$f$",
+        "$\\ran{f}\\cup\\{o\\}$",
+        "$\\closureofunder{f}{o}$",
+        "$\\closureofunder{f}{o}$",
+        "$o$",
+        "$o\\in\\closureofunder{f}{o}$",
+        "$x\\in\\closureofunder{f}{o}$",
+        "$o\\inX$",
+        "$X$",
+        "$f$",
+        "$x\\inX$",
+        "$X$",
+        "$f$",
+        "$f(x)\\inX$",
+        "$f(x)\\in\\closureofunder{f}{o}$",
+        "$X\\inC$",
+        "$\\bigcapC\\subseteqX$",
+        "$f\\colonA\\toA$",
+        "$o\\inA$",
+        "$A$",
+        "$o\\notin\\ran{f}$",
+        "$f$",
+        "$A=\\closureofunder{f}{o}$",
+        "$A=\\closureofunder{f}{o}$",
+        "$o$",
+        "$f$",
+        "$A$",
+        "$D$",
+        "$g\\colonD\\toD$",
+        "$o\\inD\\setminus\\ran{g}$",
+        "$A=\\closureofunder{g}{o}$",
+        "$A$",
+        "$o\\inA$",
+        "$f=\\funrestrictionto{g}{A}$",
+        "$A,f,o$",
+        "$o\\notin\\ran{g}$",
+        "$\\ran{f}\\subseteq\\ran{g}$",
+        "$o\\notin\\ran{f}$",
+        "$g$",
+        "$D$",
+        "$f\\subseteqg$",
+        "$A$",
+        "$g$",
+        "$A$",
+        "$f$",
+        "$\\closureofunder{f}{o}\\subseteqA$",
+        "$\\closureofunder{f}{o}$",
+        "$f$",
+        "$f=\\funrestrictionto{g}{A}$",
+        "$\\closureofunder{f}{o}$",
+        "$g$",
+        "$A\\subseteq\\closureofunder{f}{o}$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$X$",
+        "$f$",
+        "$f$",
+        "$o$"
+      ],
+      "math_delta_target_only": [
+        "$0$",
+        "$X\\subseteqA$",
+        "$\\closureofunder{f}{o}$",
+        "$f\\colonA\\toA$",
+        "$f\\colonA\\toA$",
+        "$o\\inA$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTEINF-001",
+        "OLTEINF-002"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2296,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: infinite\n% Section: dedekind\n%\n\\documentclass[../../../include/ope",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: infinite\n% Section: dedekind\n%\n\\documentclass[../../../include/ope"
+        },
+        {
+          "index": 2,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\olfileid{sfr}{infinite}{dedekind}\n\\olsection{Dedekind Algebras}",
+          "target_start": "\\olfileid{sfr}{infinite}{dedekind}\n\\olsection{డెడెకిండ్ బీజగణితాలు}"
+        },
+        {
+          "index": 4,
+          "source_start": "We not only want natural numbers to be infinite; we want them to have\ncertain (algebraic) properties: they nee",
+          "target_start": "సహజ సంఖ్యలు అనంతంగా ఉండాలని మాత్రమే కాదు; వాటికి కొన్ని (బీజగణిత)\nధర్మాలు ఉండాలని కూడా కోరుకుంటాం: సంకలనం, గుణ"
+        },
+        {
+          "index": 5,
+          "source_start": "Dedekind's idea was to take the idea of the \\emph{successor function}\nas basic, and then characterise the numb",
+          "target_start": "\\emph{ఉత్తరవర్తి ప్రమేయం} అనే ఆలోచనను ప్రాథమికంగా తీసుకుని, కింది\nధర్మాలు గలవాటిగా సంఖ్యలను వర్ణించాలనేది డెడె"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}\\ollabel{Closure}\n\tFor any function $f$, the set $X$ is $f$-\\emph{closed} {iff}\n\t$(\\forall x \\in X",
+          "target_start": "\\begin{defn}\\ollabel{Closure}\n\tఏ $f \\colon A \\to A$కైనా, $X \\subseteq A$ సమితి\n$f$-\\emph{సంవృతం} కావడం {iff} $"
+        },
+        {
+          "index": 7,
+          "source_start": "So $\\closureofunder{f}{o}$ is the intersection of all the $f$-closed\nsets with $o$ as !!a{element}. Intuitivel",
+          "target_start": "కాబట్టి $\\closureofunder{f}{o}$ అనేది $o$ను !!a{element}గా కలిగిన\n$f$-సంవృత సమితులన్నిటి ఛేదనం. అంతర్బుద్ధి ప్"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{proof}\nNote that there is at least one $f$-closed set with $o$ as !!a{element}, namely $\\ran{f}\\cup\n\\{o",
+          "target_start": "\\begin{proof}\n$o$ను !!a{element}గా కలిగిన కనీసం ఒక $f$-సంవృత సమితి ఉంది; అదే\n$\\ran{f}\\cup \\{o\\}$. కాబట్టి అటువ"
+        },
+        {
+          "index": 9,
+          "source_start": "Concerning \\olref{closurehaselem}: $o \\in \\closureofunder{f}{o}$ as it is an\nintersection of sets which all ha",
+          "target_start": "\\olref{closurehaselem} గురించి: $\\closureofunder{f}{o}$ అనేది\n$o$ను !!a{element}గా కలిగిన సమితుల ఛేదనం కనుక\n$o"
+        },
+        {
+          "index": 10,
+          "source_start": "Concerning \\olref{closureclosed}: suppose $x \\in \\closureofunder{f}{o}$. So if $o \\in X$ and $X$ is $f$-closed",
+          "target_start": "\\olref{closureclosed} గురించి: $x \\in \\closureofunder{f}{o}$\nఅనుకుందాం. $o \\in X$ మరియు $X$ $f$-సంవృతం అయితే $"
+        },
+        {
+          "index": 11,
+          "source_start": "Concerning \\olref{closuresmallest}: quite generally, if $X\n\\in C$ then $\\bigcap C \\subseteq X$.\n\\end{proof}",
+          "target_start": "\\olref{closuresmallest} గురించి: సాధారణంగా $X \\in C$ అయితే\n$\\bigcap C \\subseteq X$.\n\\end{proof}"
+        },
+        {
+          "index": 12,
+          "source_start": "Using this, we can say:",
+          "target_start": "దీన్ని ఉపయోగించి ఇలా చెప్పవచ్చు:"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{defn}\nA \\emph{Dedekind algebra} is a set $A$ together with a function $f\n\\colon A \\to A$ and some $o \\i",
+          "target_start": "\\begin{defn}\n\\emph{డెడెకిండ్ బీజగణితం} అంటే, $f \\colon A \\to A$ అనే ప్రమేయం,\nఏదో $o \\in A$తో కూడిన, కింది షరతు"
+        },
+        {
+          "index": 14,
+          "source_start": "Since $A = \\closureofunder{f}{o}$, our earlier result tells us that\n$A$ is the smallest $f$-closed set with $o",
+          "target_start": "$A = \\closureofunder{f}{o}$ కనుక, $o$ను !!a{element}గా కలిగిన\n$f$-సంవృత సమితుల్లో $A$ అతి చిన్నదని మునుపటి ఫలి"
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{thm}\\ollabel{thm:DedekindInfiniteAlgebra}\nIf there is a Dedekind infinite set, then there is a Dedekind",
+          "target_start": "\\begin{thm}\\ollabel{thm:DedekindInfiniteAlgebra}\nడెడెకిండ్ అనంత సమితి ఒకటి ఉంటే, డెడెకిండ్ బీజగణితం ఒకటి ఉంటుం"
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{proof}\nLet $D$ be Dedekind infinite. So there is an injection $g \\colon D \\to\nD$ and an element $o  \\in",
+          "target_start": "\\begin{proof}\n$D$ డెడెకిండ్ అనంతం అనుకుందాం. అప్పుడు ఒకటి-ఒకటి ప్రమేయం\n$g \\colon D \\to D$, అలాగే ఒక మూలకం $o \\"
+        },
+        {
+          "index": 17,
+          "source_start": "Concerning \\olref{ded:proper}: $o \\notin \\ran{g}$ and $\\ran{f}\n\\subseteq \\ran{g}$ so $o\\notin \\ran{f}$.",
+          "target_start": "\\olref{ded:proper} గురించి: $o \\notin \\ran{g}$ మరియు\n$\\ran{f} \\subseteq \\ran{g}$ కనుక $o\\notin \\ran{f}$."
+        },
+        {
+          "index": 18,
+          "source_start": "Concerning \\olref{ded:injection}: $g$ is an injection on $D$; so $f\n\\subseteq g$ must be an injection.",
+          "target_start": "\\olref{ded:injection} గురించి: $g$, $D$పై ఒకటి-ఒకటి ప్రమేయం;\nకాబట్టి $f \\subseteq g$ కూడా ఒకటి-ఒకటి ప్రమేయం కా"
+        },
+        {
+          "index": 19,
+          "source_start": "Concerning \\olref{ded:closure}: by \\olref{closureproperties}, $A$ is $g$-closed; a fortiori, $A$ is $f$-closed",
+          "target_start": "\\olref{ded:closure} గురించి: \\olref{closureproperties} ప్రకారం $A$\n$g$-సంవృతం; మరింత స్పష్టంగా, $A$ $f$-సంవృతం"
+        },
+        {
+          "index": 20,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{infinite}{dedekind}",
+        "\\ollabel{repeatedapplication}",
+        "\\olref{repeatedapplication}",
+        "\\olref{repeatedapplication}",
+        "\\ollabel{Closure}",
+        "\\ollabel{closureproperties}",
+        "\\ollabel{closurehaselem}",
+        "\\ollabel{closureclosed}",
+        "\\ollabel{closuresmallest}",
+        "\\olref{closurehaselem}",
+        "\\olref{closuresmallest}",
+        "\\olref{closurehaselem}",
+        "\\olref{closureclosed}",
+        "\\olref{closuresmallest}",
+        "\\ollabel{ded:proper}",
+        "\\ollabel{ded:injection}",
+        "\\ollabel{ded:closure}",
+        "\\olref{ded:proper}",
+        "\\olref{ded:injection}",
+        "\\ollabel{thm:DedekindInfiniteAlgebra}",
+        "\\olref{closureproperties}",
+        "\\olref{ded:proper}",
+        "\\olref{ded:injection}",
+        "\\olref{ded:closure}",
+        "\\olref{closureproperties}",
+        "\\olref{closureproperties}",
+        "\\olref{closureproperties}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{infinite}{dedekind}",
+        "\\ollabel{repeatedapplication}",
+        "\\olref{repeatedapplication}",
+        "\\olref{repeatedapplication}",
+        "\\ollabel{Closure}",
+        "\\ollabel{closureproperties}",
+        "\\ollabel{closurehaselem}",
+        "\\ollabel{closureclosed}",
+        "\\ollabel{closuresmallest}",
+        "\\olref{closurehaselem}",
+        "\\olref{closuresmallest}",
+        "\\olref{closurehaselem}",
+        "\\olref{closureclosed}",
+        "\\olref{closuresmallest}",
+        "\\ollabel{ded:proper}",
+        "\\ollabel{ded:injection}",
+        "\\ollabel{ded:closure}",
+        "\\olref{ded:proper}",
+        "\\olref{ded:injection}",
+        "\\ollabel{thm:DedekindInfiniteAlgebra}",
+        "\\olref{closureproperties}",
+        "\\olref{ded:proper}",
+        "\\olref{ded:injection}",
+        "\\olref{ded:closure}",
+        "\\olref{closureproperties}",
+        "\\olref{closureproperties}",
+        "\\olref{closureproperties}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0052",
+      "source_path": "content/sets-functions-relations/infinite/dedekind-induction.tex",
+      "source_sha256": "ea5f6c80d70abca6f5598de3e221c2f60524c40cbf533ae8a5336d5bb7186537",
+      "translation_sha256": "7fd385dc7fbf2700c76424e02f23ba0aed31ba7462817e79749b28b3a31864b4",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{infinite}{induction}",
+        "\\ollabel{thm:dedinfiniteinduction}",
+        "\\olref{thm:dedinfiniteinduction}",
+        "\\ollabel{natinductionschema}",
+        "\\olref{thm:dedinfiniteinduction}",
+        "\\olref[sth][][]{part}",
+        "\\olref[sth][ord-arithmetic][]{chap}",
+        "\\citealt[pp.~95--8]{Potter2004}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{infinite}{induction}",
+        "\\ollabel{thm:dedinfiniteinduction}",
+        "\\olref{thm:dedinfiniteinduction}",
+        "\\ollabel{natinductionschema}",
+        "\\olref{thm:dedinfiniteinduction}",
+        "\\olref[sth][][]{part}",
+        "\\olref[sth][ord-arithmetic][]{chap}",
+        "\\citealt[pp.~95--8]{Potter2004}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$N,s,o$",
+        "$X$",
+        "$o\\inX$",
+        "$(\\forall{n}\\inN\\capX){s}({n})\\inX$",
+        "$N\\subseteqX$",
+        "$N=\\closureofunder{s}{o}$",
+        "${o}\\inX$",
+        "$(\\forall{n}\\inN)(n\\inX\\lif{s}({n})\\inX)$",
+        "$N=\\closureofunder{s}{o}\\subseteqX$",
+        "$N,s,o$",
+        "$\\phi(x)$",
+        "$\\phi(o)$",
+        "$(\\forall{n}\\inN)(\\phi(n)\\lif\\phi({s}({n})))$",
+        "$(\\foralln\\inN)\\phi(n)$",
+        "$X=\\Setabs{n\\inN}{\\phi(n)}$",
+        "$c_1,\\ldots,c_k$",
+        "$\\phi(x,c_1,\\ldots,c_k)$",
+        "$\\phi(x,v_1,\\ldots,v_k)$",
+        "\\begin{align*}\\forallv_1\\ldots\\forallv_k((&\\phi(o,v_1,\\ldots,v_k)\\land{}\\\\&(\\forallx\\inN)(\\phi(x,v_1,\\ldots,v_k)\\lif\\phi(s(x),v_1,\\ldots,v_k)))\\lif{}\\\\&\\hspace{3em}(\\forallx\\inN)\\phi(x,v_1,\\ldots,v_k))\\end{align*}",
+        "$N,s,o$",
+        "\\begin{align*}{a}+{o}&={a}&&&{a}\\times{o}&={o}&&&{a}^{o}&=s(o)\\\\{a}+{s}({b})&={s}({a}+{b})&&&{a}\\times{s}({b})&=({a}\\times{b})+{a}&&&{a}^{{s}({b})}&={a}^{b}\\times{a}\\end{align*}"
+      ],
+      "math_target_core": [
+        "$N,s,o$",
+        "$X$",
+        "$o\\inX$",
+        "$(\\forall{n}\\inN\\capX){s}({n})\\inX$",
+        "$N\\subseteqX$",
+        "$N=\\closureofunder{s}{o}$",
+        "${o}\\inX$",
+        "$(\\forall{n}\\inN)(n\\inX\\lif{s}({n})\\inX)$",
+        "$N\\capX$",
+        "$o$",
+        "$s$",
+        "$N=\\closureofunder{s}{o}\\subseteqN\\capX\\subseteqX$",
+        "$N,s,o$",
+        "$\\phi(x)$",
+        "$\\phi(o)$",
+        "$(\\forall{n}\\inN)(\\phi(n)\\lif\\phi({s}({n})))$",
+        "$(\\foralln\\inN)\\phi(n)$",
+        "$X=\\Setabs{n\\inN}{\\phi(n)}$",
+        "$c_1,\\ldots,c_k$",
+        "$\\phi(x,c_1,\\ldots,c_k)$",
+        "$\\phi(x,v_1,\\ldots,v_k)$",
+        "\\begin{align*}\\forallv_1\\ldots\\forallv_k((&\\phi(o,v_1,\\ldots,v_k)\\land{}\\\\&(\\forallx\\inN)(\\phi(x,v_1,\\ldots,v_k)\\lif\\phi(s(x),v_1,\\ldots,v_k)))\\lif{}\\\\&\\hspace{3em}(\\forallx\\inN)\\phi(x,v_1,\\ldots,v_k))\\end{align*}",
+        "$N,s,o$",
+        "\\begin{align*}{a}+{o}&={a}&&&{a}\\times{o}&={o}&&&{a}^{o}&=s(o)\\\\{a}+{s}({b})&={s}({a}+{b})&&&{a}\\times{s}({b})&=({a}\\times{b})+{a}&&&{a}^{{s}({b})}&={a}^{b}\\times{a}\\end{align*}"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$N=\\closureofunder{s}{o}\\subseteqX$"
+      ],
+      "math_delta_target_only": [
+        "$N=\\closureofunder{s}{o}\\subseteqN\\capX\\subseteqX$",
+        "$N\\capX$",
+        "$o$",
+        "$s$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTEINF-003"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1577,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: infinite\n% Section: dedekind-induction",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: infinite\n% Section: dedekind-induction"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sfr}{infinite}{induction}\n\\olsection[Arithmetical Induction]{Dedekind Algebras and Arithmetical Indu",
+          "target_start": "\\olfileid{sfr}{infinite}{induction}\n\\olsection[Arithmetical Induction]{డెడెకిండ్ బీజగణితాలు, అంకగణిత ఆగమనం}"
+        },
+        {
+          "index": 5,
+          "source_start": "Crucially, now, a Dedekind algebra---indeed, \\emph{any} Dedekind\nalgebra---will serve as a surrogate for the n",
+          "target_start": "ఇప్పుడు కీలకంగా, ఒక డెడెకిండ్ బీజగణితం---నిజానికి \\emph{ఏ}\nడెడెకిండ్ బీజగణితమైనా---సహజ సంఖ్యలకు ప్రతిరూపంగా పన"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{thm}[Arithmetical induction]\\ollabel{thm:dedinfiniteinduction}\nLet $N, s, o$ comprise a Dedekind algebr",
+          "target_start": "\\begin{thm}[అంకగణిత ఆగమనం]\\ollabel{thm:dedinfiniteinduction}\n$N, s, o$ కలిసి ఒక డెడెకిండ్ బీజగణితాన్ని ఏర్పరుస"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{proof}\nBy the definition of a Dedekind algebra, $N = \\closureofunder{s}{o}$.\nNow if both ${o} \\in X$ an",
+          "target_start": "\\begin{proof}\nడెడెకిండ్ బీజగణిత నిర్వచనం ప్రకారం\n$N = \\closureofunder{s}{o}$. ఇప్పుడు ${o} \\in X$, అలాగే\n$(\\fo"
+        },
+        {
+          "index": 8,
+          "source_start": "Since induction is characteristic of the natural numbers, the point is\nthis. Given any Dedekind infinite set, ",
+          "target_start": "ఆగమనం సహజ సంఖ్యల విశిష్ట ధర్మం కనుక, విషయం ఇది. ఏ డెడెకిండ్ అనంత\nసమితి ఇచ్చినా, ఒక డెడెకిండ్ బీజగణితాన్ని ఏర్ప"
+        },
+        {
+          "index": 9,
+          "source_start": "Admittedly, \\olref{thm:dedinfiniteinduction} formulates induction in\n\\emph{set-theoretic} terms. But we can ea",
+          "target_start": "\\olref{thm:dedinfiniteinduction}, ఆగమనాన్ని \\emph{సమితి-సిద్ధాంత}\nపదాల్లో సూత్రీకరిస్తుందని ఒప్పుకోవాలి. కానీ "
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{cor}\\ollabel{natinductionschema}\nLet $N, s, o$ comprise a Dedekind algebra. Then for any formula\n$\\phi(",
+          "target_start": "\\begin{cor}\\ollabel{natinductionschema}\n$N, s, o$ కలిసి ఒక డెడెకిండ్ బీజగణితాన్ని ఏర్పరుస్తాయనుకుందాం. అప్పుడు"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{proof}\nLet $X = \\Setabs{n \\in N}{\\phi(n)}$, and now use\n\\olref{thm:dedinfiniteinduction}\n\\end{proof}",
+          "target_start": "\\begin{proof}\n$X = \\Setabs{n \\in N}{\\phi(n)}$గా తీసుకుని, ఇప్పుడు\n\\olref{thm:dedinfiniteinduction}ను ఉపయోగించం"
+        },
+        {
+          "index": 12,
+          "source_start": "In this result, we spoke of a formula ``having parameters''. What this\nmeans, roughly, is that for any objects",
+          "target_start": "ఈ ఫలితంలో ఒక సూత్రానికి ``పరామితులు ఉండటం'' గురించి మాట్లాడాం.\nస్థూలంగా దాని అర్థం ఏమిటంటే, ఏ వస్తువులు $c_1, "
+        },
+        {
+          "index": 13,
+          "source_start": "Returning to Dedekind algebras: given any Dedekind algebra, we can\nalso define the usual arithmetical function",
+          "target_start": "మళ్లీ డెడెకిండ్ బీజగణితాలకు వద్దాం: ఏ డెడెకిండ్ బీజగణితం ఇచ్చినా,\nసంకలనం, గుణకారం, ఘాతాంకం అనే సాధారణ అంకగణిత "
+        },
+        {
+          "index": 14,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{infinite}{induction}",
+        "\\ollabel{thm:dedinfiniteinduction}",
+        "\\olref{thm:dedinfiniteinduction}",
+        "\\ollabel{natinductionschema}",
+        "\\olref{thm:dedinfiniteinduction}",
+        "\\olref[sth][][]{part}",
+        "\\olref[sth][ord-arithmetic][]{chap}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{infinite}{induction}",
+        "\\ollabel{thm:dedinfiniteinduction}",
+        "\\olref{thm:dedinfiniteinduction}",
+        "\\ollabel{natinductionschema}",
+        "\\olref{thm:dedinfiniteinduction}",
+        "\\olref[sth][][]{part}",
+        "\\olref[sth][ord-arithmetic][]{chap}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0053",
+      "source_path": "content/sets-functions-relations/infinite/dedekinds-proof.tex",
+      "source_sha256": "a7c41cebb6b7b0e2bed0d187777be4ba69fecdb17baa070975a0ca5c5c55b8bf",
+      "translation_sha256": "f7b35736c8aa30b1056bf8651246d3f0be844e4f2ff6d5ca409b15f59552a5fc",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{infinite}{dedekindsproof}",
+        "\\olref[arith][ref]{sec}",
+        "\\olref[sfr][arith][]{chap}",
+        "\\olref[sfr][arith][ref]{sec}",
+        "\\citeyear[Theorems\r\n132--3]{Dedekind1888}",
+        "\\citep[preface]{Dedekind1888}",
+        "\\olref[sfr][arith][]{chap}",
+        "\\olref[sfr][infinite][dedekind]{thm:DedekindInfiniteAlgebra}",
+        "\\citep[\\S66]{Dedekind1888}",
+        "\\citet[p.~23]{Potter2004}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{infinite}{dedekindsproof}",
+        "\\olref[arith][ref]{sec}",
+        "\\olref[sfr][arith][]{chap}",
+        "\\olref[sfr][arith][ref]{sec}",
+        "\\citeyear[Theorems\n132--3]{Dedekind1888}",
+        "\\citep[preface]{Dedekind1888}",
+        "\\olref[sfr][arith][]{chap}",
+        "\\olref[sfr][infinite][dedekind]{thm:DedekindInfiniteAlgebra}",
+        "\\citep[\\S66]{Dedekind1888}",
+        "\\citet[p.~23]{Potter2004}"
+      ],
+      "tokens_source": {
+        "!!{element}s": 1
+      },
+      "tokens_target": {
+        "!!{element}s": 1
+      },
+      "math_source": [
+        "$\\Nat$",
+        "$\\Real$",
+        "$S$",
+        "$s$",
+        "$S$",
+        "$s'$",
+        "$s$",
+        "$S$",
+        "$\\phi(s)$",
+        "$s$",
+        "$S$",
+        "$S$",
+        "$S$"
+      ],
+      "math_target_core": [
+        "$\\Nat$",
+        "$\\Real$",
+        "$S$",
+        "$s$",
+        "$S$",
+        "$s$",
+        "$s'$",
+        "$S$",
+        "$s$",
+        "$\\phi(s)$",
+        "$S$",
+        "$S$",
+        "$S$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 3618,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: infinite\n% Section: dedekinds-proof\n%\n\\documentclass[../../../incl",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: infinite\n% Section: dedekinds-proof\n%\n\\documentclass[../../../incl"
+        },
+        {
+          "index": 2,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\olfileid{sfr}{infinite}{dedekindsproof}",
+          "target_start": "\\olfileid{sfr}{infinite}{dedekindsproof}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olsection[Dedekind's ``Proof'']{Dedekind's ``Proof'' of the \nExistence of an Infinite Set}",
+          "target_start": "\\olsection[Dedekind's ``Proof'']{అనంత సమితి ఉనికి గురించి డెడెకిండ్\n``నిరూపణ''}"
+        },
+        {
+          "index": 5,
+          "source_start": "In this chapter, we have offered a set-theoretic treatment of the\nnatural numbers, in terms of Dedekind algebr",
+          "target_start": "ఈ అధ్యాయంలో డెడెకిండ్ బీజగణితాల ద్వారా సహజ సంఖ్యలకు సమితి-సిద్ధాంత\nవివరణ ఇచ్చాం. \\olref[arith][ref]{sec}లో విశ"
+        },
+        {
+          "index": 6,
+          "source_start": "Throughout \\olref[sfr][arith][]{chap}, we took the natural numbers as\ngiven, and used them to construct the in",
+          "target_start": "\\olref[sfr][arith][]{chap} అంతటా సహజ సంఖ్యలు ఇచ్చివున్నాయని తీసుకుని,\nవాటిని ఉపయోగించి పూర్ణ, కరణీయ, వాస్తవ సం"
+        },
+        {
+          "index": 7,
+          "source_start": "Obviously, then, we cannot claim to have answered a metaphysical\nquestion, such as \\emph{which objects are the",
+          "target_start": "అందువల్ల \\emph{సహజ సంఖ్యలు ఏ వస్తువులు} వంటి అధిభౌతిక ప్రశ్నకు\nసమాధానం ఇచ్చామని చెప్పలేము. కానీ అది మంచి విషయమ"
+        },
+        {
+          "index": 8,
+          "source_start": " Moreover, we have shown how to embed the theory of the natural\n numbers into a na\\\"ive simple set theory, whi",
+          "target_start": "ఇంకా, సహజ సంఖ్యల సిద్ధాంతాన్ని సరళమైన సమితి సిద్ధాంతంలో ఎలా\nఅంతఃస్థాపించాలో చూపాం. ఆ సమితి సిద్ధాంతం ఇప్పటికీ "
+        },
+        {
+          "index": 9,
+          "source_start": "That's the idea. But hold on for a moment. Our construction of a\nDedekind algebra (our surrogate for the natur",
+          "target_start": "ఆలోచన అదే. కానీ ఒక్క క్షణం ఆగండి. సహజ సంఖ్యలకు మన ప్రతిరూపమైన\nడెడెకిండ్ బీజగణితం నిర్మాణం, ఒక డెడెకిండ్ అనంత స"
+        },
+        {
+          "index": 10,
+          "source_start": "So, \\emph{can} the existence of a Dedekind infinite set be established\nby ``the pure laws of thought''? Here w",
+          "target_start": "అయితే డెడెకిండ్ అనంత సమితి ఉనికిని ``శుద్ధ ఆలోచనా నియమాల'' ద్వారా\nస్థాపించగలమా? డెడెకిండ్ ప్రయత్నం ఇదిగో:\n\\beg"
+        },
+        {
+          "index": 11,
+          "source_start": "First: this ``proof'' scarcely has what we would now recognize as a\n``mathematical'' character. It speaks of p",
+          "target_start": "మొదట: ఈ ``నిరూపణ''కు ఇప్పుడు మనం ``గణితపరమైనది''గా గుర్తించే లక్షణం\nదాదాపు లేదు. ఇది మానసిక వస్తువుల (ఆలోచనల) "
+        },
+        {
+          "index": 12,
+          "source_start": "Second: at least as we have presented Dedekind algebras, this\n``proof'' has a straightforward technical shortc",
+          "target_start": "రెండవది: కనీసం మనం డెడెకిండ్ బీజగణితాలను వివరించిన విధానంలో, ఈ\n``నిరూపణ''కు ఒక సూటి సాంకేతిక లోపం ఉంది. డెడెకి"
+        },
+        {
+          "index": 13,
+          "source_start": "The fact that Dedekind did not see a gap here might suggest that his\nuse of the word ``totality'' does not pre",
+          "target_start": "ఇక్కడ ఖాళీ ఉందని డెడెకిండ్ చూడకపోవడం, ఆయన ``సమగ్రత'' అనే పదాన్ని\nవాడిన తీరు \\emph{మనం} ``సమితి'' అనే పదాన్ని వ"
+        },
+        {
+          "index": 14,
+          "source_start": " The time has come for us to outgrow our na\\\"ivety. ",
+          "target_start": "ఇక మన సరళత్వాన్ని అధిగమించాల్సిన సమయం వచ్చింది."
+        },
+        {
+          "index": 15,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{infinite}{dedekindsproof}",
+        "\\olref[arith][ref]{sec}",
+        "\\olref[sfr][arith][]{chap}",
+        "\\olref[sfr][arith][ref]{sec}",
+        "\\citeyear[Theorems\n132--3]{Dedekind1888}",
+        "\\olref[sfr][arith][]{chap}",
+        "\\olref[sfr][infinite][dedekind]{thm:DedekindInfiniteAlgebra}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{infinite}{dedekindsproof}",
+        "\\olref[arith][ref]{sec}",
+        "\\olref[sfr][arith][]{chap}",
+        "\\olref[sfr][arith][ref]{sec}",
+        "\\citeyear[Theorems\n132--3]{Dedekind1888}",
+        "\\olref[sfr][arith][]{chap}",
+        "\\olref[sfr][infinite][dedekind]{thm:DedekindInfiniteAlgebra}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0054",
+      "source_path": "content/sets-functions-relations/infinite/card-sb.tex",
+      "source_sha256": "88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9",
+      "translation_sha256": "db981332b8b0a26bd5c20b71901a5b927f5aa4a32399e5dab7550b950d68b3ff",
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{infinite}{card-sb}",
+        "\\olref[sfr][siz][sb]{thm:schroder-bernstein}",
+        "\\citet[pp.~157--8]{Potter2004}",
+        "\\olref[sfr][infinite][dedekind]{Closure}",
+        "\\ollabel{Closureprops}",
+        "\\ollabel{Closurehaselem}",
+        "\\ollabel{Closureclosed}",
+        "\\ollabel{Closuresmallest}",
+        "\\olref[sfr][infinite][dedekind]{closureproperties}",
+        "\\ollabel{sbhelper}",
+        "\\olref{Closureprops}",
+        "\\olref{Closureprops}",
+        "\\olref{sbhelper}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{infinite}{card-sb}",
+        "\\olref[sfr][siz][sb]{thm:schroder-bernstein}",
+        "\\citet[pp.~157--8]{Potter2004}",
+        "\\olref[sfr][infinite][dedekind]{Closure}",
+        "\\ollabel{Closureprops}",
+        "\\ollabel{Closurehaselem}",
+        "\\ollabel{Closureclosed}",
+        "\\ollabel{Closuresmallest}",
+        "\\olref[sfr][infinite][dedekind]{closureproperties}",
+        "\\ollabel{sbhelper}",
+        "\\olref{Closureprops}",
+        "\\olref{Closureprops}",
+        "\\olref{sbhelper}"
+      ],
+      "tokens_source": {
+        "!!a{bijection}": 9,
+        "!!a{injection}": 1,
+        "!!{injection}": 1,
+        "!!{injection}s": 2
+      },
+      "tokens_target": {
+        "!!a{bijection}": 9,
+        "!!a{injection}": 1,
+        "!!{injection}": 1,
+        "!!{injection}s": 2
+      },
+      "math_source": [
+        "$\\cardle{A}{B}$",
+        "$\\cardle{B}{A}$",
+        "$\\cardeq{A}{B}$",
+        "$f\\colonA\\toB$",
+        "$g\\colonB\\toA$",
+        "$h\\colonA\\toB$",
+        "$\\sqrt{2}$",
+        "\\[\\Closureofunder{f}{B}=\\bigcap\\Setabs{X}{B\\subseteqX}\\]",
+        "$B$",
+        "$f$",
+        "$\\Closureofunder{f}{B}$",
+        "$f$",
+        "$B$",
+        "$f$",
+        "$B$",
+        "$B\\subseteq\\Closureofunder{f}{B}$",
+        "$\\Closureofunder{f}{B}$",
+        "$f$",
+        "$X$",
+        "$f$",
+        "$B\\subseteqX$",
+        "$\\Closureofunder{f}{B}\\subseteqX$",
+        "$A\\subseteqB\\subseteqC$",
+        "$A\\approxC$",
+        "$\\cardeq{\\cardeq{A}{B}}{C}$",
+        "$f\\colonC\\toA$",
+        "$F=\\Closureofunder{f}{C\\setminusB}$",
+        "$g$",
+        "$C$",
+        "\\[g(x)=\\begin{cases}f(x)&\\\\x&\\end{cases}\\]",
+        "$g$",
+        "$C\\toB$",
+        "$\\comp{f^{-1}}{g}\\colonA\\toB$",
+        "$x\\inF$",
+        "$y\\notinF$",
+        "$g(x)\\neqg(y)$",
+        "$y=g(y)=g(x)=f(x)$",
+        "$x\\inF$",
+        "$F$",
+        "$f$",
+        "$y=f(x)\\inF$",
+        "$g(x)=g(y)$",
+        "$x\\inF$",
+        "$y\\inF$",
+        "$x,y\\inF$",
+        "$f(x)=g(x)=g(y)=f(y)$",
+        "$x=y$",
+        "$f$",
+        "$x,y\\notinF$",
+        "$x=g(x)=g(y)=y$",
+        "$g$",
+        "$\\ran{g}=B$",
+        "$x\\inB\\subseteqC$",
+        "$x\\notinF$",
+        "$g(x)=x$",
+        "$x\\inF$",
+        "$x=f(y)$",
+        "$y\\inF$",
+        "$F\\setminus\\{x\\}$",
+        "$f$",
+        "$C\\setminusB$",
+        "$g(y)=f(y)=x$",
+        "$h$",
+        "$D$",
+        "$\\funimage{h}{D}=\\Setabs{h(x)}{x\\inD}$",
+        "$f\\colonA\\toB$",
+        "$g\\colonB\\toA$",
+        "$\\funimage{f}{A}\\subseteqB$",
+        "$\\funimage{g}{\\funimage{f}{A}}\\subseteqg[B]\\subseteqA$",
+        "$\\comp{f}{g}\\colonA\\to\\funimage{g}{\\funimage{f}{A}}$",
+        "$g$",
+        "$f$",
+        "$\\comp{f}{g}$",
+        "$\\cardeq{\\funimage{g}{\\funimage{f}{A}}}{A}$",
+        "$h\\colonA\\to\\funimage{g}{B}$",
+        "$g^{-1}$",
+        "$\\funimage{g}{B}\\toB$",
+        "$\\comp{h}{g^{-1}}\\colonA\\toB$"
+      ],
+      "math_target_core": [
+        "$\\cardle{A}{B}$",
+        "$\\cardle{B}{A}$",
+        "$\\cardeq{A}{B}$",
+        "$f\\colonA\\toB$",
+        "$g\\colonB\\toA$",
+        "$h\\colonA\\toB$",
+        "$\\sqrt{2}$",
+        "$U$",
+        "$f\\colonU\\toU$",
+        "$B\\subseteqU$",
+        "\\[\\Closureofunder{f}{B}=\\bigcap\\Setabs{X\\subseteqU}{B\\subseteqX}\\]",
+        "$\\Closureofunder{f}{B}$",
+        "$B$",
+        "$f$",
+        "$f\\colonU\\toU$",
+        "$B\\subseteqU$",
+        "$B\\subseteq\\Closureofunder{f}{B}$",
+        "$\\Closureofunder{f}{B}$",
+        "$f$",
+        "$X$",
+        "$f$",
+        "$B\\subseteqX$",
+        "$\\Closureofunder{f}{B}\\subseteqX$",
+        "$A\\subseteqB\\subseteqC$",
+        "$A\\approxC$",
+        "$\\cardeq{B}{C}$",
+        "$f\\colonC\\toA$",
+        "$F=\\Closureofunder{f}{C\\setminusB}$",
+        "$C$",
+        "$g$",
+        "\\[g(x)=\\begin{cases}f(x)&\\\\x&\\end{cases}\\]",
+        "$g$",
+        "$C\\toB$",
+        "$\\comp{f^{-1}}{g}\\colonA\\toB$",
+        "$x\\inF$",
+        "$y\\notinF$",
+        "$g(x)\\neqg(y)$",
+        "$y=g(y)=g(x)=f(x)$",
+        "$x\\inF$",
+        "$F$",
+        "$f$",
+        "$y=f(x)\\inF$",
+        "$g(x)=g(y)$",
+        "$x\\inF$",
+        "$y\\inF$",
+        "$x,y\\inF$",
+        "$f(x)=g(x)=g(y)=f(y)$",
+        "$f$",
+        "$x=y$",
+        "$x,y\\notinF$",
+        "$x=g(x)=g(y)=y$",
+        "$g$",
+        "$\\ran{g}=B$",
+        "$g$",
+        "$B$",
+        "$y\\inF$",
+        "$g(y)=f(y)\\inA\\subseteqB$",
+        "$y\\notinF$",
+        "$C\\setminusB\\subseteqF$",
+        "$y\\inB$",
+        "$g(y)=y\\inB$",
+        "$x\\inB\\subseteqC$",
+        "$x\\notinF$",
+        "$g(x)=x$",
+        "$x\\inF$",
+        "$y\\inF$",
+        "$x=f(y)$",
+        "$F\\setminus\\{x\\}$",
+        "$f$",
+        "$C\\setminusB$",
+        "$g(y)=f(y)=x$",
+        "$h$",
+        "$D$",
+        "$\\funimage{h}{D}=\\Setabs{h(x)}{x\\inD}$",
+        "$f\\colonA\\toB$",
+        "$g\\colonB\\toA$",
+        "$\\funimage{f}{A}\\subseteqB$",
+        "$\\funimage{g}{\\funimage{f}{A}}\\subseteqg[B]\\subseteqA$",
+        "$g$",
+        "$f$",
+        "$\\comp{f}{g}\\colonA\\to\\funimage{g}{\\funimage{f}{A}}$",
+        "$\\comp{f}{g}$",
+        "$\\cardeq{\\funimage{g}{\\funimage{f}{A}}}{A}$",
+        "$h\\colonA\\to\\funimage{g}{B}$",
+        "$g^{-1}$",
+        "$\\funimage{g}{B}\\toB$",
+        "$\\comp{h}{g^{-1}}\\colonA\\toB$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$B$",
+        "$\\cardeq{\\cardeq{A}{B}}{C}$",
+        "$f$",
+        "$f$",
+        "\\[\\Closureofunder{f}{B}=\\bigcap\\Setabs{X}{B\\subseteqX}\\]"
+      ],
+      "math_delta_target_only": [
+        "$B\\subseteqU$",
+        "$B\\subseteqU$",
+        "$C\\setminusB\\subseteqF$",
+        "$U$",
+        "$\\cardeq{B}{C}$",
+        "$f\\colonU\\toU$",
+        "$f\\colonU\\toU$",
+        "$g$",
+        "$g(y)=f(y)\\inA\\subseteqB$",
+        "$g(y)=y\\inB$",
+        "$y\\inB$",
+        "$y\\inF$",
+        "$y\\notinF$",
+        "\\[\\Closureofunder{f}{B}=\\bigcap\\Setabs{X\\subseteqU}{B\\subseteqX}\\]"
+      ],
+      "declared_source_correction_ids": [
+        "OLTEINF-004",
+        "OLTEINF-005",
+        "OLTEINF-006"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1840,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 2,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\olfileid{sfr}{infinite}{card-sb}",
+          "target_start": "\\olfileid{sfr}{infinite}{card-sb}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olsection{Appendix: Proving Schr\\\"oder-Bernstein}",
+          "target_start": "\\olsection{అనుబంధం: ష్రోడర్--బెర్న్‌స్టైన్ నిరూపణ}"
+        },
+        {
+          "index": 5,
+          "source_start": "Before we depart from na\\\"ive set theory, we have one last na\\\"ive\n(but sophisticated!) proof to consider. Thi",
+          "target_start": "సరళ సమితి సిద్ధాంతాన్ని విడిచిపెట్టేముందు, పరిశీలించాల్సిన చివరి\nసరళమైన (కానీ అధునాతనమైన!) నిరూపణ ఒకటి ఉంది. ఇ"
+        },
+        {
+          "index": 6,
+          "source_start": "In this chapter, we followed Dedekind's notion of \\emph{closures}. In\nfact, Dedekind provided a lovely proof o",
+          "target_start": "ఈ అధ్యాయంలో డెడెకిండ్ చెప్పిన \\emph{సంవృతాల} భావనను అనుసరించాం.\nనిజానికి ఈ భావనను ఉపయోగించి డెడెకిండ్ ష్రోడర్-"
+        },
+        {
+          "index": 7,
+          "source_start": "Using similar notation as \\olref[sfr][infinite][dedekind]{Closure},\nlet\n\\[\n\\Closureofunder{f}{B} = \\bigcap \\Se",
+          "target_start": "\\olref[sfr][infinite][dedekind]{Closure}లోని సంజ్ఞకు సారూప్యంగా,\nఏ సమితి $U$, ప్రమేయం $f \\colon U \\to U$, ఉపసమ"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{lem}\\ollabel{Closureprops}\n\tFor any function $f$, and any $B$:\n\t\\begin{enumerate}\n\t\t\\item\\ollabel{Closu",
+          "target_start": "\\begin{lem}\\ollabel{Closureprops}\n\tఏ ప్రమేయం $f \\colon U \\to U$, ఏ $B \\subseteq U$కైనా:\n\t\\begin{enumerate}\n\t\t\\"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{proof}\nExactly as in \\olref[sfr][infinite][dedekind]{closureproperties}.\n\\end{proof}",
+          "target_start": "\\begin{proof}\n\\olref[sfr][infinite][dedekind]{closureproperties}లో చేసినట్లే.\n\\end{proof}"
+        },
+        {
+          "index": 10,
+          "source_start": "We need one last fact to get to Schr\\\"oder-Bernstein:",
+          "target_start": "ష్రోడర్--బెర్న్‌స్టైన్‌ను చేరుకోవడానికి చివరి వాస్తవం ఒకటి కావాలి:"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{prop}\\ollabel{sbhelper}\nIf $A \\subseteq B \\subseteq C$ and $A \\approx C$, then $\\cardeq{\\cardeq{A}{B}}{",
+          "target_start": "\\begin{prop}\\ollabel{sbhelper}\n$A \\subseteq B \\subseteq C$ మరియు $A \\approx C$ అయితే,\n$\\cardeq{B}{C}$.\n\\end{pr"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{proof}\nGiven !!a{bijection}  $f \\colon C \\to A$, let $F =\n\\Closureofunder{f}{C \\setminus B}$ and define",
+          "target_start": "\\begin{proof}\n!!a{bijection} $f \\colon C \\to A$ ఇచ్చినప్పుడు,\n$F = \\Closureofunder{f}{C \\setminus B}$గా తీసుకు"
+        },
+        {
+          "index": 13,
+          "source_start": "First we claim that if $x \\in F$ but $y\\notin F$ then $g(x) \\neq\ng(y)$. For reductio suppose otherwise, so tha",
+          "target_start": "మొదట $x \\in F$, కానీ $y\\notin F$ అయితే $g(x) \\neq g(y)$ అని\nవాదిస్తాం. వైరుధ్యం కోసం అలా కాదనుకుందాం; అప్పుడు\n"
+        },
+        {
+          "index": 14,
+          "source_start": "Now suppose $g(x) = g(y)$. So, by the above, $x \\in F$ iff $y \\in F$.\nIf $x, y \\in F$, then $f(x) = g (x) = g(",
+          "target_start": "ఇప్పుడు $g(x) = g(y)$ అనుకుందాం. పై వాదన ప్రకారం $x \\in F$ అవడం\nఅంటే $y \\in F$ అవడమే. $x, y \\in F$ అయితే,\n$f(x"
+        },
+        {
+          "index": 15,
+          "source_start": "It remains to show that $\\ran{g} = B$. So fix $x \\in B \\subseteq C$.\nIf $x \\notin F$, then $g(x) = x$. If $x \\",
+          "target_start": "ఇక $\\ran{g} = B$ అని చూపాలి. మొదట ప్రతి $g$ విలువ $B$లోనే ఉంటుంది:\n$y\\in F$ అయితే $g(y)=f(y)\\in A\\subseteq B$;"
+        },
+        {
+          "index": 16,
+          "source_start": "Finally, here is the proof of the main result. Recall that given a\nfunction $h$ and set $D$, we define $\\funim",
+          "target_start": "చివరగా, ప్రధాన ఫలితపు నిరూపణ ఇదిగో. ఒక ప్రమేయం $h$, సమితి $D$\nఇచ్చినప్పుడు $\\funimage{h}{D} = \\Setabs{h(x)}{x "
+        },
+        {
+          "index": 17,
+          "source_start": "\\begin{proof}[Proof of Schr\\\"oder-Bernstein] Let $f \\colon A \\to B$\nand $g \\colon B \\to A$ be !!{injection}s. ",
+          "target_start": "\\begin{proof}[ష్రోడర్--బెర్న్‌స్టైన్ నిరూపణ]\n$f \\colon A \\to B$, $g \\colon B \\to A$లు !!{injection}s అనుకుందాం"
+        },
+        {
+          "index": 18,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{infinite}{card-sb}",
+        "\\olref[sfr][siz][sb]{thm:schroder-bernstein}",
+        "\\olref[sfr][infinite][dedekind]{Closure}",
+        "\\ollabel{Closureprops}",
+        "\\ollabel{Closurehaselem}",
+        "\\ollabel{Closureclosed}",
+        "\\ollabel{Closuresmallest}",
+        "\\olref[sfr][infinite][dedekind]{closureproperties}",
+        "\\ollabel{sbhelper}",
+        "\\olref{Closureprops}",
+        "\\olref{Closureprops}",
+        "\\olref{sbhelper}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{infinite}{card-sb}",
+        "\\olref[sfr][siz][sb]{thm:schroder-bernstein}",
+        "\\olref[sfr][infinite][dedekind]{Closure}",
+        "\\ollabel{Closureprops}",
+        "\\ollabel{Closurehaselem}",
+        "\\ollabel{Closureclosed}",
+        "\\ollabel{Closuresmallest}",
+        "\\olref[sfr][infinite][dedekind]{closureproperties}",
+        "\\ollabel{sbhelper}",
+        "\\olref{Closureprops}",
+        "\\olref{Closureprops}",
+        "\\olref{sbhelper}"
+      ],
+      "protected_identifier_parity": true
+    }
+  ]
+}

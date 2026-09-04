@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 45 of 722 draft units**. This log contains 30 terminology/sense decisions and 27 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 51 of 722 draft units**. This log contains 31 terminology/sense decisions and 33 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 “Attested” means only that the specifically listed native page was actually inspected for the stated scope. It does not mean a human expert endorsed the final edition. The terminology rationales below were reconstructed retrospectively from primary records and exact current files; source-correction entries come from the contemporaneous audit.
 
@@ -606,6 +606,26 @@ Machine-readable companion: `EXPERT_REVIEW_LOG.jsonl`.
 
 - Review question: Is “ఊర్ధ్వ అవధి / కనిష్ఠ ఊర్ధ్వ అవధి / గరిష్ఠ అధో అవధి / సంపూర్ణతా ధర్మం / డెడెకిండ్ కోత / ఆద్య ఖండం / కౌషీ క్రమం / పరిమితి” idiomatic and technically standard for “upper bound / least upper bound / greatest lower bound / Completeness Property / Dedekind cut / initial segment / Cauchy sequence / limit” in Telugu logic/mathematics across Andhra Pradesh and Telangana? If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
+## REV-TE-T031 — Dedekind infinite / Dedekind algebra / f-closed / arithmetical induction / isomorphic
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Chosen wording/treatment: డెడెకిండ్ అనంతం / డెడెకిండ్ బీజగణితం / f-సంవృతం / అంకగణిత ఆగమనం / సమరూపం
+
+- Exact implementation: content/sets-functions-relations/infinite/dedekind-algebra.tex:82-88 ↔ translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:94-101 (OLP-0051-B013); content/sets-functions-relations/infinite/dedekind-algebra.tex:91-96 ↔ translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:104-109 (OLP-0051-B014); content/sets-functions-relations/infinite/dedekind-algebra.tex:41-50 ↔ translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:45-61 (OLP-0051-B006); content/sets-functions-relations/infinite/dedekind-induction.tex:16-20 ↔ translation/content/sets-functions-relations/infinite/dedekind-induction.tex:16-21 (OLP-0052-B006); content/sets-functions-relations/infinite/dedekinds-proof.tex:36-39 ↔ translation/content/sets-functions-relations/infinite/dedekinds-proof.tex:32-36 (OLP-0053-B007)
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P014, PDF 308, printed 301, Main points 5-7; TE-P016, PDF 310, printed 303, Questions 4-5 and answers on finite, infinite and equivalent sets
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P016 directly supplies native finite/infinite-set register, TE-P003 supplies broad induction and proof language, and TE-P014 supplies function-domain/range register. None attests the Dedekind constructions or isomorphism headword. Dedekind is retained as the explicit source eponym; each advanced sense is fixed by the adjacent self-map, closure, induction and structure-preservation formulas.
+
+- Alternatives: descriptive Telugu closure, induction and isomorphism headwords (chosen); Dedekind source-eponym transliteration (retained); untranslated English structure terminology (not adopted in prose)
+
+- Uncertainty: Low for broad infinite-set and induction register; high nomenclatural for the Dedekind, closure and isomorphism headwords
+
+- Review question: Is “డెడెకిండ్ అనంతం / డెడెకిండ్ బీజగణితం / f-సంవృతం / అంకగణిత ఆగమనం / సమరూపం” idiomatic and technically standard for “Dedekind infinite / Dedekind algebra / f-closed / arithmetical induction / isomorphic” in Telugu logic/mathematics across Andhra Pradesh and Telangana? If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
 ## REV-OLFUN-001 — OLFUN-001
 
 - Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
@@ -1145,3 +1165,123 @@ Machine-readable companion: `EXPERT_REVIEW_LOG.jsonl`.
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Review question: Is S consistently a family of representative sequences while every ordered object is its represented equivalence class?
+
+## REV-OLTEINF-001 — OLTEINF-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: added the required containing-zero condition fixed by the preceding repeated-application clause and following closure definition; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 33-39, set-theoretic condition 3-prime ↔ translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:38 (OLP-0051-B005)
+
+- Authorities actually checked: OLTEINF-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: added the required containing-zero condition fixed by the preceding repeated-application clause and following closure definition; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does condition 3-prime explicitly require the least successor-closed set to contain zero, ruling out the empty set?
+
+## REV-OLTEINF-002 — OLTEINF-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: bound f:A-to-A and o in A and restricted closure candidates to subsets of A; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 41-76, closure definition, lemma and witness ↔ translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:52 (OLP-0051-B006)
+
+- Authorities actually checked: OLTEINF-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: bound f:A-to-A and o in A and restricted closure candidates to subsets of A; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the closure definition bind one ambient set A, a self-map f:A-to-A, its base point o in A and candidate subsets X of A consistently?
+
+## REV-OLTEINF-003 — OLTEINF-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: applied closure minimality to N-intersection-X, the s-closed subset supplied by the theorem condition; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 16-27, induction theorem and closure-minimality proof ↔ translation/content/sets-functions-relations/infinite/dedekind-induction.tex:30 (OLP-0052-B007)
+
+- Authorities actually checked: OLTEINF-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: applied closure minimality to N-intersection-X, the s-closed subset supplied by the theorem condition; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the induction proof apply closure minimality to N-intersection-X rather than to an arbitrary set X outside the self-map domain?
+
+## REV-OLTEINF-004 — OLTEINF-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: bound an ambient U, self-map f, base B subset U and closure candidates X subset U; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 25-46, closure of a set under a function ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:34 (OLP-0054-B007)
+
+- Authorities actually checked: OLTEINF-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: bound an ambient U, self-map f, base B subset U and closure candidates X subset U; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the set-closure definition bind one ambient U, a self-map on U, a base subset of U and closure candidates contained in U?
+
+## REV-OLTEINF-005 — OLTEINF-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: replaced the malformed nested cardinal equality by B equinumerous with C; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 49-53, cardinal sandwich helper conclusion ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:59 (OLP-0054-B011)
+
+- Authorities actually checked: OLTEINF-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: replaced the malformed nested cardinal equality by B equinumerous with C; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the repaired helper proposition conclude B is equinumerous with C, without the malformed nested cardinality expression?
+
+## REV-OLTEINF-006 — OLTEINF-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: added the missing ran(g)-subset-B direction before the source's B-subset-ran(g) direction; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 55-83, range-equality proof ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:99 (OLP-0054-B015)
+
+- Authorities actually checked: OLTEINF-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: added the missing ran(g)-subset-B direction before the source's B-subset-ran(g) direction; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the proof establish both inclusions needed for ran(g)=B, including the formerly missing ran(g)-subset-B direction?

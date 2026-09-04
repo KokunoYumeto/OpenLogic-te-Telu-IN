@@ -39,7 +39,8 @@ const locations={
  'TE-T027':[L('content/sets-functions-relations/size-of-sets/introduction.tex',13,19,13,19,'size','పరిమాణం'),L('content/sets-functions-relations/size-of-sets/equinumerous-sets.tex',29,32,28,31,'\\emph{equinumerous}','\\emph{సమసంఖ్యాకం}')],
  'TE-T028':[L('content/sets-functions-relations/size-of-sets/zig-zag.tex',59,64,59,64,'zig-zag method','జిగ్‌జాగ్ పద్ధతి'),L('content/sets-functions-relations/size-of-sets/pairing.tex',51,56,53,58,'pairing function','జతీకరణ ప్రమేయం'),L('content/sets-functions-relations/size-of-sets/non-enumerability.tex',39,41,38,40,'diagonal method','వికర్ణ పద్ధతి'),L('content/sets-functions-relations/size-of-sets/reduction.tex',27,31,27,31,'\\emph{reducing}','\\emph{తగ్గించడం}'),L('content/sets-functions-relations/size-of-sets/schroder-bernstein.tex',11,11,11,11,'Schr\\"oder-Bernstein','ష్రోడర్--బెర్న్‌స్టైన్')],
  'TE-T029':[L('content/sets-functions-relations/arithmetization/arithmetization.tex',8,8,8,8,'Arithmetization','అంకగణితీకరణ'),L('content/sets-functions-relations/arithmetization/checking-details.tex',24,24,23,25,'commutative ring','వినిమయ వలయం'),L('content/sets-functions-relations/arithmetization/checking-details.tex',131,135,135,139,'ordered field','క్రమిత క్షేత్రం')],
- 'TE-T030':[L('content/sets-functions-relations/arithmetization/reals.tex',74,74,76,81,'Completeness Property','సంపూర్ణతా ధర్మం'),L('content/sets-functions-relations/arithmetization/cuts.tex',26,29,26,29,'\\emph{cut}','\\emph{కోత}'),L('content/sets-functions-relations/arithmetization/cauchy.tex',83,87,78,82,'\\emph{Cauchy sequence}','\\emph{కౌషీ క్రమం}')]
+ 'TE-T030':[L('content/sets-functions-relations/arithmetization/reals.tex',74,74,76,81,'Completeness Property','సంపూర్ణతా ధర్మం'),L('content/sets-functions-relations/arithmetization/cuts.tex',26,29,26,29,'\\emph{cut}','\\emph{కోత}'),L('content/sets-functions-relations/arithmetization/cauchy.tex',83,87,78,82,'\\emph{Cauchy sequence}','\\emph{కౌషీ క్రమం}')],
+ 'TE-T031':[L('content/sets-functions-relations/infinite/dedekind-algebra.tex',82,88,94,101,'Dedekind algebra','డెడెకిండ్ బీజగణితం'),L('content/sets-functions-relations/infinite/dedekind-algebra.tex',91,96,104,109,'Dedekind infinite','డెడెకిండ్ అనంత'),L('content/sets-functions-relations/infinite/dedekind-algebra.tex',41,50,45,61,'$f$-\\emph{closed}','$f$-\\emph{సంవృతం}'),L('content/sets-functions-relations/infinite/dedekind-induction.tex',16,20,16,21,'Arithmetical induction','అంకగణిత ఆగమనం'),L('content/sets-functions-relations/infinite/dedekinds-proof.tex',36,39,32,36,'isomorphic','సమరూపాలు')]
 };
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
@@ -54,9 +55,10 @@ const alternatives={
  'TE-T027':['సమసంఖ్యాక (chosen transparent headword)','తుల్య సమితులు (TE-P016 witness expression for the finite concept)'],
  'TE-T028':['descriptive Telugu constructions (chosen)','source-eponym transliterations for Cantor and Schröder–Bernstein (retained)'],
  'TE-T029':['descriptive Telugu algebra headwords (chosen)','untranslated English algebra terminology (not adopted in prose)','source-eponym-free explanatory paraphrases (used where needed)'],
- 'TE-T030':['descriptive Telugu bound/completeness terminology (chosen)','Dedekind and Cauchy source-eponym transliterations (retained)','untranslated English analysis terminology (not adopted in prose)']
+ 'TE-T030':['descriptive Telugu bound/completeness terminology (chosen)','Dedekind and Cauchy source-eponym transliterations (retained)','untranslated English analysis terminology (not adopted in prose)'],
+ 'TE-T031':['descriptive Telugu closure, induction and isomorphism headwords (chosen)','Dedekind source-eponym transliteration (retained)','untranslated English structure terminology (not adopted in prose)']
 };
-const completion='partial_45_of_722_draft_units';
+const completion='partial_51_of_722_draft_units';
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -110,7 +112,13 @@ const correctionQuestions={
  'OLTEARITH-005':'Does the Cauchy construction distinguish the equivalence relation from the real objects, which are its equivalence classes?',
  'OLTEARITH-006':'Is positivity of a represented real compared with 0_Real rather than the differently typed 0_Rat?',
  'OLTEARITH-007':'Do the ordered-field theorem and exercise state the result for equivalence classes rather than raw Cauchy sequences?',
- 'OLTEARITH-008':'Is S consistently a family of representative sequences while every ordered object is its represented equivalence class?'
+ 'OLTEARITH-008':'Is S consistently a family of representative sequences while every ordered object is its represented equivalence class?',
+ 'OLTEINF-001':'Does condition 3-prime explicitly require the least successor-closed set to contain zero, ruling out the empty set?',
+ 'OLTEINF-002':'Does the closure definition bind one ambient set A, a self-map f:A-to-A, its base point o in A and candidate subsets X of A consistently?',
+ 'OLTEINF-003':'Does the induction proof apply closure minimality to N-intersection-X rather than to an arbitrary set X outside the self-map domain?',
+ 'OLTEINF-004':'Does the set-closure definition bind one ambient U, a self-map on U, a base subset of U and closure candidates contained in U?',
+ 'OLTEINF-005':'Does the repaired helper proposition conclude B is equinumerous with C, without the malformed nested cardinality expression?',
+ 'OLTEINF-006':'Does the proof establish both inclusions needed for ran(g)=B, including the formerly missing ran(g)-subset-B direction?'
 };
 const correctionRecords=corrections.map(c=>{
  const segment=ledger.find(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));
@@ -120,7 +128,7 @@ const correctionRecords=corrections.map(c=>{
 const records=[...termRecords,...correctionRecords];
 const jsonText=records.map(x=>JSON.stringify(x)).join('\n')+'\n';
 fs.writeFileSync(path.join(dataDir,'EXPERT_REVIEW_LOG.jsonl'),jsonText);
-const md=['# Optional expert-review log','',`Status: **partial — 45 of 722 draft units**. This log contains ${termRecords.length} terminology/sense decisions and ${correctionRecords.length} source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.`,'','“Attested” means only that the specifically listed native page was actually inspected for the stated scope. It does not mean a human expert endorsed the final edition. The terminology rationales below were reconstructed retrospectively from primary records and exact current files; source-correction entries come from the contemporaneous audit.','','Machine-readable companion: `EXPERT_REVIEW_LOG.jsonl`.',''];
+const md=['# Optional expert-review log','',`Status: **partial — 51 of 722 draft units**. This log contains ${termRecords.length} terminology/sense decisions and ${correctionRecords.length} source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.`,'','“Attested” means only that the specifically listed native page was actually inspected for the stated scope. It does not mean a human expert endorsed the final edition. The terminology rationales below were reconstructed retrospectively from primary records and exact current files; source-correction entries come from the contemporaneous audit.','','Machine-readable companion: `EXPERT_REVIEW_LOG.jsonl`.',''];
 for(const r of records){
  md.push(`## ${r.review_id} — ${r.source_term??r.finding_id}`,'',`- Status: ${r.expert_review_status}`,'',`- Chosen wording/treatment: ${r.chosen_wording??r.rationale}`,'',`- Exact implementation: ${r.implementation_locations.map(x=>`${x.source_locator} ↔ ${x.target_locator} (${x.segment_id})`).join('; ')}`,'',`- Authorities actually checked: ${r.actual_authorities_checked.map(x=>x.passage_id?`${x.passage_id}, PDF ${x.pdf_page}, printed ${x.printed_page}, ${x.region}`:`${x.audit_id??x.source_revision}`).join('; ')}`,'',`- Not checked/not found: ${r.not_checked_or_not_found.join(' ')}`,'',`- Rationale: ${r.rationale}`,'',`- Alternatives: ${r.alternatives_considered_or_recorded.join('; ')}`,'',`- Uncertainty: ${r.uncertainty}`,'',`- Review question: ${r.precise_review_questions.join(' ')}`,'');
 }

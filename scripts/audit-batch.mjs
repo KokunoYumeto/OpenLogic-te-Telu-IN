@@ -34,7 +34,9 @@ const protectedIds=s=>{
   const skip=()=>{while(/\s/.test(s[at]??'')&&at<s.length)at++;};
   skip();while(s[at]==='['){const end=s.indexOf(']',at);if(end<0)throw new Error('Unclosed option');token+=s.slice(at,end+1);at=end+1;skip();}
   for(let n=0;n<arity[m[1]];n++){if(s[at]!=='{')throw new Error('Missing ID argument');let start=at,depth=0;do{if(s[at]==='{')depth++;else if(s[at]==='}')depth--;at++;}while(depth&&at<s.length);token+=s.slice(start,at);skip();}
-  ids.push(token);
+  // TeX treats CRLF and LF identically; compare protected identifiers after
+  // normalizing only that transport-level distinction.
+  ids.push(token.replace(/\r\n/g,'\n'));
  }
  return ids;
 };

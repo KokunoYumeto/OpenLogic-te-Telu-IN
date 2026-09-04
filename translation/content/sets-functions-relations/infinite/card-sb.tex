@@ -1,0 +1,125 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{infinite}{card-sb}
+
+\olsection{అనుబంధం: ష్రోడర్--బెర్న్‌స్టైన్ నిరూపణ}
+
+సరళ సమితి సిద్ధాంతాన్ని విడిచిపెట్టేముందు, పరిశీలించాల్సిన చివరి
+సరళమైన (కానీ అధునాతనమైన!) నిరూపణ ఒకటి ఉంది. ఇది
+ష్రోడర్--బెర్న్‌స్టైన్ నిరూపణ
+(\olref[sfr][siz][sb]{thm:schroder-bernstein}):
+$\cardle{A}{B}$ మరియు $\cardle{B}{A}$ అయితే $\cardeq{A}{B}$;
+అంటే, !!{injection}s $f \colon A \to B$, $g \colon B \to A$
+ఇచ్చినప్పుడు !!a{bijection} $h \colon A \to B$ ఉంటుంది.
+
+ఈ అధ్యాయంలో డెడెకిండ్ చెప్పిన \emph{సంవృతాల} భావనను అనుసరించాం.
+నిజానికి ఈ భావనను ఉపయోగించి డెడెకిండ్ ష్రోడర్--బెర్న్‌స్టైన్‌కు ఒక
+అందమైన నిరూపణ ఇచ్చాడు; దానినే ఇక్కడ అందిస్తాం. కొద్దిగా భిన్నమైన,
+కానీ సారాంశంగా సారూప్యమైన వివరణ కావాలంటే, ఈ నిరూపణ
+\citet[pp.~157--8]{Potter2004}ను దగ్గరగా అనుసరిస్తుంది. కొద్దిగా
+గూగుల్‌లో వెతికినా, $\sqrt{2}$ అకరణీయత మాదిరిగానే ఈ సిద్ధాంతానికి
+\emph{అనేక} ఆసక్తికరమైన, భిన్నమైన నిరూపణలు ఉన్నాయని తెలుస్తుంది.
+
+\olref[sfr][infinite][dedekind]{Closure}లోని సంజ్ఞకు సారూప్యంగా,
+ఏ సమితి $U$, ప్రమేయం $f \colon U \to U$, ఉపసమితి $B \subseteq U$కైనా
+ఇలా తీసుకుందాం:
+\[
+	\Closureofunder{f}{B} = \bigcap \Setabs{X \subseteq U}{B \subseteq X
+	\text{ and $X$ is $f$-closed}}
+\]
+ఇలా నిర్వచించిన $\Closureofunder{f}{B}$, $B$ను కలిగిన అతి చిన్న
+$f$-సంవృత సమితి; అంటే:
+\sourcecorrection{OLTEINF-004}{ఆంగ్ల మూలం ఈ సమితి-సంవృతాన్ని ఏ
+ప్రమేయం, ఏ సమితికైనా ప్రకటించి, $f(x)$ నిర్వచితమయ్యే పరిసర సమితిని
+బంధించలేదు. తరువాతి వినియోగం నిర్ణయించినట్లుగా $f \colon U\to U$,
+$B\subseteq U$, అభ్యర్థి $X\subseteq U$ అని రకాలను స్పష్టం చేశాం.}
+
+\begin{lem}\ollabel{Closureprops}
+	ఏ ప్రమేయం $f \colon U \to U$, ఏ $B \subseteq U$కైనా:
+	\begin{enumerate}
+		\item\ollabel{Closurehaselem} $B \subseteq \Closureofunder{f}{B}$; మరియు
+		\item\ollabel{Closureclosed} $\Closureofunder{f}{B}$ $f$-సంవృతం; మరియు
+		\item\ollabel{Closuresmallest} $X$ $f$-సంవృతమై, $B
+		\subseteq X$ అయితే, $\Closureofunder{f}{B} \subseteq X$.
+	\end{enumerate}
+\end{lem}
+
+\begin{proof}
+\olref[sfr][infinite][dedekind]{closureproperties}లో చేసినట్లే.
+\end{proof}
+
+ష్రోడర్--బెర్న్‌స్టైన్‌ను చేరుకోవడానికి చివరి వాస్తవం ఒకటి కావాలి:
+
+\begin{prop}\ollabel{sbhelper}
+$A \subseteq B \subseteq C$ మరియు $A \approx C$ అయితే,
+$\cardeq{B}{C}$.
+\end{prop}
+\sourcecorrection{OLTEINF-005}{ఆంగ్ల మూలపు ముగింపులో
+$\cardeq{\cardeq{A}{B}}{C}$ అనే వికృతంగా గూడుకట్టిన పరిమాణ-సమానత
+ఉంది. ఉపపత్తులు, తరువాతి $C$ నుంచి $B$కు ద్విగుణ ప్రమేయ నిరూపణ
+నిర్ణయించినట్లుగా ముగింపును $\cardeq{B}{C}$గా సరిచేశాం.}
+
+\begin{proof}
+!!a{bijection} $f \colon C \to A$ ఇచ్చినప్పుడు,
+$F = \Closureofunder{f}{C \setminus B}$గా తీసుకుని, ప్రవేశం $C$ గల
+$g$ అనే ప్రమేయాన్ని ఇలా నిర్వచించండి:
+\[
+	g(x) =
+	\begin{cases}
+			f(x) &\text{if $x \in F$}\\
+			x & \text{otherwise}
+		\end{cases}
+\]
+$g$, $C \to B$ నుంచి !!a{bijection} అని చూపుతాం; దాని నుంచి
+$\comp{f^{-1}}{g} \colon A \to B$ ఒక !!a{bijection} అని వస్తుంది;
+దీనితో నిరూపణ పూర్తవుతుంది.
+
+మొదట $x \in F$, కానీ $y\notin F$ అయితే $g(x) \neq g(y)$ అని
+వాదిస్తాం. వైరుధ్యం కోసం అలా కాదనుకుందాం; అప్పుడు
+$y = g(y) = g(x) = f(x)$. $x \in F$, అలాగే
+\olref{Closureprops} ప్రకారం $F$ $f$-సంవృతం కనుక
+$y = f(x) \in F$; ఇది వైరుధ్యం.
+
+ఇప్పుడు $g(x) = g(y)$ అనుకుందాం. పై వాదన ప్రకారం $x \in F$ అవడం
+అంటే $y \in F$ అవడమే. $x, y \in F$ అయితే,
+$f(x) = g (x) = g(y) = f(y)$; $f$ !!a{bijection} కనుక $x = y$.
+$x, y \notin F$ అయితే $x = g(x) = g(y) = y$. కాబట్టి $g$ ఒక
+!!a{injection}.
+
+ఇక $\ran{g} = B$ అని చూపాలి. మొదట ప్రతి $g$ విలువ $B$లోనే ఉంటుంది:
+$y\in F$ అయితే $g(y)=f(y)\in A\subseteq B$; $y\notin F$ అయితే
+$C\setminus B\subseteq F$ కనుక $y\in B$, అందువల్ల $g(y)=y\in B$.
+తిరుగుగా $x \in B \subseteq C$ను స్థిరపరచండి. $x \notin F$ అయితే
+$g(x) = x$. $x \in F$ అయితే, ఏదో $y \in F$కు $x = f(y)$;
+లేకపోతే $F \setminus \{x\}$, $f$-సంవృతమై $C\setminus B$ను కలిగి
+ఉండేది; ఇది \olref{Closureprops} ప్రకారం అసాధ్యం. ఇప్పుడు
+$g(y) = f(y) = x$.
+\sourcecorrection{OLTEINF-006}{ఆంగ్ల మూలం $\ran{g}=B$ అని చూపుతామని
+చెప్పి, ప్రతి $x\in B$ను $g$ తాకుతుందని మాత్రమే చూపింది. ఇక్కడ
+ముందుగా తప్పిపోయిన $\ran{g}\subseteq B$ దిశను, $F$లోని ఇన్‌పుట్లు
+$A\subseteq B$లోకి వెళ్తాయని, $F$ బయటివి $C\setminus B\subseteq F$
+వల్ల తప్పక $B$లోనే ఉంటాయని చూపి చేర్చాం.}
+\end{proof}
+
+చివరగా, ప్రధాన ఫలితపు నిరూపణ ఇదిగో. ఒక ప్రమేయం $h$, సమితి $D$
+ఇచ్చినప్పుడు $\funimage{h}{D} = \Setabs{h(x)}{x \in D}$గా
+నిర్వచిస్తామని గుర్తు చేసుకోండి.
+
+\begin{proof}[ష్రోడర్--బెర్న్‌స్టైన్ నిరూపణ]
+$f \colon A \to B$, $g \colon B \to A$లు !!{injection}s అనుకుందాం.
+$\funimage{f}{A} \subseteq B$ కనుక
+$\funimage{g}{\funimage{f}{A}} \subseteq g[B] \subseteq A$.
+అంతేకాక $g$, $f$ రెండూ ఒకటి-ఒకటి కనుక
+$\comp{f}{g} \colon A \to \funimage{g}{\funimage{f}{A}}$ ఒక
+!!{injection}; నిజానికి దాని సహప్రవేశాన్ని నిర్వచించిన విధానం వల్లనే
+$\comp{f}{g}$ ఒక !!a{bijection}. అందువల్ల
+$\cardeq{\funimage{g}{\funimage{f}{A}}}{A}$; కాబట్టి
+\olref{sbhelper} ప్రకారం !!a{bijection}
+$h \colon A \to \funimage{g}{B}$ ఉంది. అంతేకాక $g^{-1}$ అనేది
+$\funimage{g}{B} \to B$ నుంచి !!a{bijection}. కాబట్టి
+$\comp{h}{g^{-1}} \colon A \to B$ ఒక !!a{bijection}.
+\end{proof}
+
+\end{document}
