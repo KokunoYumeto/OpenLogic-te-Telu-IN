@@ -1,0 +1,182 @@
+{
+  "schema": "openlogic-te-commit-readback/1",
+  "commit": "d1daedb8f9070ed8318d85a4d520133ae14b9ea8",
+  "anonymous": true,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6837,
+      "sha256": "eb6d8059dbc870ce9fe5449f7858da2deeda83bef27278264b0ddb44d4f0b6f1",
+      "match": true
+    },
+    {
+      "path": "docs/.nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true
+    },
+    {
+      "path": "docs/index.html",
+      "bytes": 869,
+      "sha256": "64f605d5f785d7aa231d83310839dc3b0b7ef0295b3ecfdd7ce757ab92129e6b",
+      "match": true
+    },
+    {
+      "path": "docs/sets/KATEX-LICENSE",
+      "bytes": 1107,
+      "sha256": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3",
+      "match": true
+    },
+    {
+      "path": "docs/sets/LICENSE.md",
+      "bytes": 17068,
+      "sha256": "bb5e0179a1e9bdb55634a4303784cf73c297a1dcee27b92cd546bf398075531c",
+      "match": true
+    },
+    {
+      "path": "docs/sets/fonts/NotoSerifTelugu-Bold.ttf",
+      "bytes": 332592,
+      "sha256": "c0ef9aeb5fe554daa93517e2f2e3b627ddaa1ab56bf7cc99f3059fe5a4e7cdfd",
+      "match": true
+    },
+    {
+      "path": "docs/sets/fonts/NotoSerifTelugu-Regular.ttf",
+      "bytes": 312332,
+      "sha256": "02cf5610b0aa2dc1ab66ed8edadad207ffb86b85eea4889a0b229f041a4b4bf9",
+      "match": true
+    },
+    {
+      "path": "docs/sets/fonts/OFL.txt",
+      "bytes": 4377,
+      "sha256": "0dab92d0544f7b233403f14b84a663bdbfa746982eda629e7f4f9ffe1b036feb",
+      "match": true
+    },
+    {
+      "path": "docs/sets/index.html",
+      "bytes": 308441,
+      "sha256": "b7869285497f7159e632ab108a17369827f62668cd9adcbfd6ca540b6498c335",
+      "match": true
+    },
+    {
+      "path": "docs/sets/reader.css",
+      "bytes": 4057,
+      "sha256": "d08767b1370583594c8068276038237c38304f0273c88b261a1753c7c133f2de",
+      "match": true
+    },
+    {
+      "path": "docs/sets/render-manifest.json",
+      "bytes": 152197,
+      "sha256": "011e09650c06d3a85038edd722a6ccbd41b61f985c76ac33fdf05a358faf4441",
+      "match": true
+    },
+    {
+      "path": "editions/reader.css",
+      "bytes": 4057,
+      "sha256": "d08767b1370583594c8068276038237c38304f0273c88b261a1753c7c133f2de",
+      "match": true
+    },
+    {
+      "path": "evidence/BATCH-003-SEMANTIC-REVIEW.md",
+      "bytes": 6424,
+      "sha256": "34d0089cf7d3111983a079dbff4672cc88f630fd565fcf850aad92e496802809",
+      "match": true
+    },
+    {
+      "path": "evidence/BATCH-003-STRUCTURAL-QA.json",
+      "bytes": 79870,
+      "sha256": "a6a2f98eef1243a0818cf574eccca15b277f4449c08ff8ffc07e073ab66eda41",
+      "match": true
+    },
+    {
+      "path": "evidence/EXPERT_REVIEW_LOG.jsonl",
+      "bytes": 123881,
+      "sha256": "eaad029df7f4c35231d0c6438b1b2a7588f5ee1d51306375dff32d9820b95e41",
+      "match": true
+    },
+    {
+      "path": "evidence/EXPERT_REVIEW_LOG.md",
+      "bytes": 60929,
+      "sha256": "19eb31fa30311edddce755155a4ad95b9281ef2d2837ef874bec21e941aa3b6d",
+      "match": true
+    },
+    {
+      "path": "evidence/HTML-SETS-DETERMINISTIC-QA.json",
+      "bytes": 2096,
+      "sha256": "c1e380c7b54c5b468f59b1e4eb920ced4e8eb2ed12c0b0596a635f417a51ecdd",
+      "match": true
+    },
+    {
+      "path": "evidence/SEGMENT_CANON_USE.jsonl",
+      "bytes": 585249,
+      "sha256": "e6a3784ef8b3f095a6f75e84c69bcb31d80680345b6766114352afefbfdcce51",
+      "match": true
+    },
+    {
+      "path": "evidence/SOURCE_CORRECTIONS.jsonl",
+      "bytes": 4827,
+      "sha256": "1c7852134f7168ce5d26d87d34761470e1a9aa23d6c1e725245ebff42c0225aa",
+      "match": true
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 1193,
+      "sha256": "61f8dffd8e37b161b1a0332132eb67bc8485e656d4dcbce0abc8e86b79e3641b",
+      "match": true
+    },
+    {
+      "path": "package.json",
+      "bytes": 484,
+      "sha256": "63d722c6a1f9aad34755baeffd6622dbad6c6dfb6183f9c600d48266fca2c4b7",
+      "match": true
+    },
+    {
+      "path": "scripts/audit-batch.mjs",
+      "bytes": 7139,
+      "sha256": "786d822cd0b87e6c5b699a952d9a8b438814446176bf214be0dba7c694c5280c",
+      "match": true
+    },
+    {
+      "path": "scripts/audit-html.mjs",
+      "bytes": 6020,
+      "sha256": "e5f130200a9f114a976aedeae7744d369234e7a95fa0c5573759a28bbe68e442",
+      "match": true
+    },
+    {
+      "path": "scripts/build-html.mjs",
+      "bytes": 15140,
+      "sha256": "f49d1073613476f2c69cd79515df07cebd965419b7439fb66165417a7b237b71",
+      "match": true
+    },
+    {
+      "path": "scripts/build-review-log.mjs",
+      "bytes": 19085,
+      "sha256": "239e443854adf3ebfe126ed24ab217df9e10c30b7046b12411ef5cb6d9e40fb9",
+      "match": true
+    },
+    {
+      "path": "scripts/tex-reader.mjs",
+      "bytes": 13677,
+      "sha256": "aa4960e12d5a62daf2de0eafe1940694fb25bde95ae8defadef6fed4cc998405",
+      "match": true
+    },
+    {
+      "path": "translation/content/sets-functions-relations/functions/function-basics.tex",
+      "bytes": 12291,
+      "sha256": "e2bb0411b6b6260b1deab544b3f495dd1f999c7fe7250ca90afc6897e192bf10",
+      "match": true
+    },
+    {
+      "path": "translation/content/sets-functions-relations/functions/functions-relations.tex",
+      "bytes": 8545,
+      "sha256": "fbdd1868af5332df005889b25115f03ff05db86deca233286c75e12f9d9cc61b",
+      "match": true
+    },
+    {
+      "path": "translation/content/sets-functions-relations/functions/inverses.tex",
+      "bytes": 13507,
+      "sha256": "30d398f5bc5d635d3c9b8e1e04adbd7417ae5d62e1006d0d69da1e54474b9afa",
+      "match": true
+    }
+  ],
+  "status": "verified_public"
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "openlogic-te-github-pages-readback/1",
+  "verified_utc": "2026-09-04T18:09:28.834253+00:00",
+  "anonymous": true,
+  "base_url": "https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/",
+  "source_commit": "d1daedb8f9070ed8318d85a4d520133ae14b9ea8",
+  "files": [
+    {
+      "path": "index.html",
+      "url": "https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/index.html",
+      "bytes": 869,
+      "sha256": "64f605d5f785d7aa231d83310839dc3b0b7ef0295b3ecfdd7ce757ab92129e6b",
+      "content_type": "text/html; charset=utf-8",
+      "match": true
+    },
+    {
+      "path": "sets/fonts/NotoSerifTelugu-Bold.ttf",
+      "url": "https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sets/fonts/NotoSerifTelugu-Bold.ttf",
+      "bytes": 332592,
+      "sha256": "c0ef9aeb5fe554daa93517e2f2e3b627ddaa1ab56bf7cc99f3059fe5a4e7cdfd",
+      "content_type": "font/ttf",
+      "match": true
+    },
+    {
+      "path": "sets/fonts/NotoSerifTelugu-Regular.ttf",
+      "url": "https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sets/fonts/NotoSerifTelugu-Regular.ttf",
+      "bytes": 312332,
+      "sha256": "02cf5610b0aa2dc1ab66ed8edadad207ffb86b85eea4889a0b229f041a4b4bf9",
+      "content_type": "font/ttf",
+      "match": true
+    },
+    {
+      "path": "sets/fonts/OFL.txt",
+      "url": "https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sets/fonts/OFL.txt",
+      "bytes": 4377,
+      "sha256": "0dab92d0544f7b233403f14b84a663bdbfa746982eda629e7f4f9ffe1b036feb",
+      "content_type": "text/plain; charset=utf-8",
+      "match": true
+    },
+    {
+      "path": "sets/index.html",
+      "url": "https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sets/index.html",
+      "bytes": 308441,
+      "sha256": "b7869285497f7159e632ab108a17369827f62668cd9adcbfd6ca540b6498c335",
+      "content_type": "text/html; charset=utf-8",
+      "match": true
+    },
+    {
+      "path": "sets/KATEX-LICENSE",
+      "url": "https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sets/KATEX-LICENSE",
+      "bytes": 1107,
+      "sha256": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3",
+      "content_type": "application/octet-stream",
+      "match": true
+    },
+    {
+      "path": "sets/LICENSE.md",
+      "url": "https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sets/LICENSE.md",
+      "bytes": 17068,
+      "sha256": "bb5e0179a1e9bdb55634a4303784cf73c297a1dcee27b92cd546bf398075531c",
+      "content_type": "text/markdown; charset=utf-8",
+      "match": true
+    },
+    {
+      "path": "sets/reader.css",
+      "url": "https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sets/reader.css",
+      "bytes": 4057,
+      "sha256": "d08767b1370583594c8068276038237c38304f0273c88b261a1753c7c133f2de",
+      "content_type": "text/css; charset=utf-8",
+      "match": true
+    },
+    {
+      "path": "sets/render-manifest.json",
+      "url": "https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sets/render-manifest.json",
+      "bytes": 152197,
+      "sha256": "011e09650c06d3a85038edd722a6ccbd41b61f985c76ac33fdf05a358faf4441",
+      "content_type": "application/json; charset=utf-8",
+      "match": true
+    }
+  ],
+  "status": "verified_public"
+}

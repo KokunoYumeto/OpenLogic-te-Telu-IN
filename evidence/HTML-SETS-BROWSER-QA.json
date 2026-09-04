@@ -1,0 +1,72 @@
+{
+  "schema": "openlogic-te-html-browser-qa/1",
+  "checked_utc": "2026-09-04T18:12:30Z",
+  "status": "pass",
+  "live_url": "https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sets/",
+  "source_commit": "d1daedb8f9070ed8318d85a4d520133ae14b9ea8",
+  "page": {
+    "path": "docs/sets/index.html",
+    "bytes": 308441,
+    "sha256": "b7869285497f7159e632ab108a17369827f62668cd9adcbfd6ca540b6498c335"
+  },
+  "browser": {
+    "surface": "Codex in-app browser",
+    "observed_screenshot_width_px": 1265,
+    "observed_screenshot_height_px": 712,
+    "interaction_mode": "accessibility-tree navigation with visual screenshots"
+  },
+  "checks": [
+    {
+      "region": "opening matter and table of contents",
+      "result": "pass",
+      "observation": "Telugu title, partial-edition scope statement, review-status disclosure, and six-entry table of contents are legible and visually separated."
+    },
+    {
+      "region": "Telugu typography",
+      "result": "pass",
+      "observation": "Telugu glyph shaping is intact in headings and body text; no tofu, replacement glyphs, or overlapping lines were observed."
+    },
+    {
+      "region": "section navigation and diagrams",
+      "result": "pass",
+      "observation": "The table-of-contents link reaches section 1.4. The union diagram is crisp, centered, captioned, and exposed in the accessibility tree with a descriptive alternative; the same tree exposes all three diagrams."
+    },
+    {
+      "region": "mathematical layout",
+      "result": "pass",
+      "observation": "Inline and display mathematics in sections 1.4 and 1.5 aligns with surrounding prose. The ordered-pair formula, definition panel, exercise panel, and longer Cartesian-product material remain readable without visible clipping at the inspected desktop viewport."
+    },
+    {
+      "region": "canonical English disclosure",
+      "result": "pass",
+      "observation": "The OLP-0009 disclosure changes from collapsed to expanded, brings its content into the accessibility tree, and presents the canonical English text and MathML in a clearly bounded panel beneath the Telugu unit."
+    },
+    {
+      "region": "edition notes and provenance",
+      "result": "pass",
+      "observation": "Edition scope, offline/MathML note, source attribution, editable-source link, optional expert-review link, translations hub, DOI lineage, font license, and KaTeX license are legible at the footer."
+    },
+    {
+      "region": "semantic accessibility spot check",
+      "result": "pass",
+      "observation": "The browser accessibility tree exposes one level-one title, nested section headings, expandable buttons with state, mathematical expressions, three described images, internal references, and provenance links."
+    }
+  ],
+  "supporting_readback": {
+    "github_commit_receipt": {
+      "path": "GITHUB-COMMIT-d1daedb8f907-READBACK.json",
+      "sha256": "f0df6e65a0d68255e064485ab8ea12b33666e6e29b4c7b6b01b42ed1a0de789a",
+      "status": "verified_public"
+    },
+    "github_pages_receipt": {
+      "path": "GITHUB-PAGES-READBACK.json",
+      "sha256": "b6c4a0cafd20a671eb0344ba947ce85cb8390616894150c69c061540ff496884",
+      "status": "verified_public"
+    }
+  },
+  "limits": [
+    "This is a visual and interaction spot check at the observed desktop viewport, not a complete browser-matrix or accessibility-conformance certification.",
+    "Responsive and print rules are covered by the deterministic source audit; a narrow mobile viewport was not visually emulated in this browser pass.",
+    "This receipt does not claim human or independent linguistic review."
+  ]
+}
