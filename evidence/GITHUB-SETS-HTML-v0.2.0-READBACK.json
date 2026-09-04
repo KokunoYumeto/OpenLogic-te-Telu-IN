@@ -1,0 +1,75 @@
+{
+  "schema": "openlogic-te-github-release-readback/1",
+  "verified_utc": "2026-09-04T18:18:23.910364+00:00",
+  "anonymous": true,
+  "repository": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN",
+  "tag": "v0.2.0-sets-html",
+  "files": [
+    {
+      "filename": "openlogic-te-Telu-IN-sets-v0.1.0.pdf",
+      "url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.2.0-sets-html/openlogic-te-Telu-IN-sets-v0.1.0.pdf",
+      "bytes": 160275,
+      "sha256": "4272102d0e7ef34f819d582304a19442ece75ed9b34a07fd677461f37cbaf719",
+      "expected_bytes": 160275,
+      "expected_sha256": "4272102d0e7ef34f819d582304a19442ece75ed9b34a07fd677461f37cbaf719",
+      "inventory_bytes": 160275,
+      "match": true
+    },
+    {
+      "filename": "openlogic-te-Telu-IN-sets-source-v0.1.0.zip",
+      "url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.2.0-sets-html/openlogic-te-Telu-IN-sets-source-v0.1.0.zip",
+      "bytes": 415750,
+      "sha256": "26277e219d037a0353b13e2f9a63568a5a9bec5e23bc04bc779c6b368fb00080",
+      "expected_bytes": 415750,
+      "expected_sha256": "26277e219d037a0353b13e2f9a63568a5a9bec5e23bc04bc779c6b368fb00080",
+      "inventory_bytes": 415750,
+      "match": true
+    },
+    {
+      "filename": "release-manifest.json",
+      "url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.2.0-sets-html/release-manifest.json",
+      "bytes": 645,
+      "sha256": "6ca267b5d436027647b820b1c1ffc16420f6fd864079d925c12bab5a93bf12c5",
+      "expected_bytes": 645,
+      "expected_sha256": "6ca267b5d436027647b820b1c1ffc16420f6fd864079d925c12bab5a93bf12c5",
+      "inventory_bytes": 645,
+      "match": true
+    },
+    {
+      "filename": "openlogic-te-Telu-IN-sets-html-v0.2.0.zip",
+      "url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.2.0-sets-html/openlogic-te-Telu-IN-sets-html-v0.2.0.zip",
+      "bytes": 285502,
+      "sha256": "4dd32d2710c5c92f2c9d2a005abf30cd23a824c33055036c4d60e5793d05eb08",
+      "expected_bytes": 285502,
+      "expected_sha256": "4dd32d2710c5c92f2c9d2a005abf30cd23a824c33055036c4d60e5793d05eb08",
+      "inventory_bytes": 285502,
+      "match": true
+    },
+    {
+      "filename": "openlogic-te-Telu-IN-source-checkpoint-v0.2.0.zip",
+      "url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.2.0-sets-html/openlogic-te-Telu-IN-source-checkpoint-v0.2.0.zip",
+      "bytes": 873558,
+      "sha256": "f7039920e077a5b090fd047c3a3151a4a360a17db2c48d0baf20d8d8f3511b67",
+      "expected_bytes": 873558,
+      "expected_sha256": "f7039920e077a5b090fd047c3a3151a4a360a17db2c48d0baf20d8d8f3511b67",
+      "inventory_bytes": 873558,
+      "match": true
+    },
+    {
+      "filename": "release-manifest-v0.2.0.json",
+      "url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.2.0-sets-html/release-manifest-v0.2.0.json",
+      "bytes": 2956,
+      "sha256": "fca52a9ae37cc009d5e2a3178c03841393da08cfbe5c39613b52ad4450c5569a",
+      "expected_bytes": 2956,
+      "expected_sha256": "fca52a9ae37cc009d5e2a3178c03841393da08cfbe5c39613b52ad4450c5569a",
+      "inventory_bytes": 2956,
+      "match": true
+    }
+  ],
+  "status": "verified_public",
+  "inventory_url": "https://api.github.com/repos/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tags/v0.2.0-sets-html",
+  "inventory_sha256": "35a8cecc1e4277d13f5e3a8727e14df095a3c468e9e479f8b8003afd64f40ee9",
+  "release_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.2.0-sets-html",
+  "published_at": "2026-09-04T18:17:43Z",
+  "target_commitish": "420c68e28f5feb36ef66b37e0d826420c7eec4d6"
+}

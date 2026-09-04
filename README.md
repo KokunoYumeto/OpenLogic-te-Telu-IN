@@ -6,15 +6,18 @@ The complete target is 722 tracked TeX units at revision
 
 ## Current release
 
-The Sets chapter is complete as a first chapter tranche: OLP-0004 through
-OLP-0010, seven source units, six sections, twelve PDF pages including front
-matter. It includes definitions, examples, exercises, proofs and all three
-source diagrams. This is **not the complete OpenLogic Telugu edition**.
+The current cumulative checkpoint is
+[v0.2.0-sets-html](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.2.0-sets-html).
+It adds a self-contained semantic HTML reader for the complete Sets chapter,
+OLP-0004 through OLP-0010, while preserving the twelve-page v0.1.0 PDF and
+source snapshot unchanged. This is **not the complete OpenLogic Telugu
+edition**.
 
-[Download the chapter and editable source package](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases).
-
-[Zenodo DOI: 10.5281/zenodo.22307938](https://doi.org/10.5281/zenodo.22307938).
-Both mirrors' public artifact bytes have been anonymously verified;
+Latest version DOI:
+[10.5281/zenodo.22309234](https://doi.org/10.5281/zenodo.22309234).
+Continuing concept DOI:
+[10.5281/zenodo.22307937](https://doi.org/10.5281/zenodo.22307937).
+GitHub, GitHub Pages, and Zenodo public bytes have been anonymously verified;
 see [PUBLICATION.md](PUBLICATION.md).
 
 Twenty-three full-unit editable drafts exist in this repository: Sets (7),

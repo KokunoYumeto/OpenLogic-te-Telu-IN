@@ -1,0 +1,38 @@
+{
+  "schema": "openlogic-te-commit-readback/1",
+  "commit": "420c68e28f5feb36ef66b37e0d826420c7eec4d6",
+  "anonymous": true,
+  "files": [
+    {
+      "path": "RELEASES/0.2.0-sets-html.md",
+      "bytes": 1075,
+      "sha256": "d5204f4224f255c67e9fba40a015f966b4f77747804738effd566a0e98737dba",
+      "match": true
+    },
+    {
+      "path": "evidence/GITHUB-COMMIT-d1daedb8f907-READBACK.json",
+      "bytes": 5594,
+      "sha256": "f0df6e65a0d68255e064485ab8ea12b33666e6e29b4c7b6b01b42ed1a0de789a",
+      "match": true
+    },
+    {
+      "path": "evidence/GITHUB-PAGES-READBACK.json",
+      "bytes": 3151,
+      "sha256": "b6c4a0cafd20a671eb0344ba947ce85cb8390616894150c69c061540ff496884",
+      "match": true
+    },
+    {
+      "path": "evidence/HTML-SETS-BROWSER-QA.json",
+      "bytes": 3596,
+      "sha256": "af28c6ec8aced1e4ceb8922887f7e03850c9f3275ed592715430f577ca97a936",
+      "match": true
+    },
+    {
+      "path": "scripts/package-sets-html.py",
+      "bytes": 6449,
+      "sha256": "0d237c869e9fdffdce9f12d39d2a5dc08168545bd2223375981a020783dc6922",
+      "match": true
+    }
+  ],
+  "status": "verified_public"
+}
