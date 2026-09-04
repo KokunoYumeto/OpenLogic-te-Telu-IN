@@ -1,0 +1,2258 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-04T22:57:16.557Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Intertext prose is masked while its inline math remains checked.",
+  "units": [
+    {
+      "unit_id": "OLP-0055",
+      "source_path": "content/propositional-logic/propositional-logic.tex",
+      "source_sha256": "1af59702eeba2337e42385ae40315eb7761ca569b0991f0afe69ad74bd5258aa",
+      "translation_sha256": "decc96aff927f10a287ce656507ea0a638a6290e7f3fd10a5966b23057c18bb9",
+      "source_blocks": 17,
+      "target_blocks": 17,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport[syntax-and-semantics]{syntax-and-semantics}",
+        "\\olimport[../first-order-logic/proof-systems]{proof-systems}",
+        "\\olimport[../first-order-logic/sequent-calculus]{sequent-calculus}",
+        "\\olimport[../first-order-logic/natural-deduction]{natural-deduction}",
+        "\\olimport[../first-order-logic/tableaux]{tableaux}",
+        "\\olimport[../first-order-logic/axiomatic-deduction]{axiomatic-deduction}",
+        "\\olimport[../first-order-logic/completeness]{completeness}"
+      ],
+      "identifiers_target": [
+        "\\olimport[syntax-and-semantics]{syntax-and-semantics}",
+        "\\olimport[../first-order-logic/proof-systems]{proof-systems}",
+        "\\olimport[../first-order-logic/sequent-calculus]{sequent-calculus}",
+        "\\olimport[../first-order-logic/natural-deduction]{natural-deduction}",
+        "\\olimport[../first-order-logic/tableaux]{tableaux}",
+        "\\olimport[../first-order-logic/axiomatic-deduction]{axiomatic-deduction}",
+        "\\olimport[../first-order-logic/completeness]{completeness}"
+      ],
+      "tokens_source": {
+        "!!{structure}s": 1,
+        "!!{valuation}s": 1
+      },
+      "tokens_target": {
+        "!!{structure}s": 1,
+        "!!{valuation}s": 1
+      },
+      "math_source": [
+        "$\\Struct{M}$",
+        "$\\pAssign{v}$"
+      ],
+      "math_target_core": [
+        "$\\Struct{M}$",
+        "$\\pAssign{v}$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 478,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: propositional-logic",
+          "target_start": "% Part: propositional-logic"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../include/open-logic-part]{subfiles}",
+          "target_start": "\\documentclass[../../include/open-logic-part]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olpart{pl}{Propositional Logic}",
+          "target_start": "\\olpart{pl}{ప్రవచన తర్కం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{editorial}\n  This part contains material on classical propositional logic. The\n  first chapter is relat",
+          "target_start": "\\begin{editorial}\n  ఈ భాగంలో శాస్త్రీయ ప్రవచన తర్కానికి సంబంధించిన విషయం ఉంది. మొదటి\n  అధ్యాయం సాపేక్షంగా ప్రా"
+        },
+        {
+          "index": 6,
+          "source_start": "  It is planned to expand this part to include\n  more detail, and to add further topics and results, such as\n ",
+          "target_start": "  ఈ భాగాన్ని మరిన్ని వివరాలతో విస్తరించి, సత్యమూల్య-ప్రమేయ\n  సంపూర్ణత వంటి అదనపు అంశాలు, ఫలితాలను చేర్చాలని యో"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport[syntax-and-semantics]{syntax-and-semantics}",
+          "target_start": "\\olimport[syntax-and-semantics]{syntax-and-semantics}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\tagfalse{FOL}",
+          "target_start": "\\tagfalse{FOL}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport[../first-order-logic/proof-systems]{proof-systems}",
+          "target_start": "\\olimport[../first-order-logic/proof-systems]{proof-systems}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\iftag{prfSC}{%\n  \\olimport[../first-order-logic/sequent-calculus]{sequent-calculus}\n}{}",
+          "target_start": "\\iftag{prfSC}{%\n  \\olimport[../first-order-logic/sequent-calculus]{sequent-calculus}\n}{}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\iftag{prfND}{%\n  \\olimport[../first-order-logic/natural-deduction]{natural-deduction}\n}{}",
+          "target_start": "\\iftag{prfND}{%\n  \\olimport[../first-order-logic/natural-deduction]{natural-deduction}\n}{}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\iftag{prfTab}{%\n  \\olimport[../first-order-logic/tableaux]{tableaux}\n}{}",
+          "target_start": "\\iftag{prfTab}{%\n  \\olimport[../first-order-logic/tableaux]{tableaux}\n}{}"
+        },
+        {
+          "index": 13,
+          "source_start": "\\iftag{prfAX}{%\n  \\olimport[../first-order-logic/axiomatic-deduction]{axiomatic-deduction}\n}{}",
+          "target_start": "\\iftag{prfAX}{%\n  \\olimport[../first-order-logic/axiomatic-deduction]{axiomatic-deduction}\n}{}"
+        },
+        {
+          "index": 14,
+          "source_start": "\\olimport[../first-order-logic/completeness]{completeness}",
+          "target_start": "\\olimport[../first-order-logic/completeness]{completeness}"
+        },
+        {
+          "index": 15,
+          "source_start": "\\tagtrue{FOL}",
+          "target_start": "\\tagtrue{FOL}"
+        },
+        {
+          "index": 16,
+          "source_start": "\\OLEndPartHook",
+          "target_start": "\\OLEndPartHook"
+        },
+        {
+          "index": 17,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../include/open-logic-part]{subfiles}",
+        "\\olimport[syntax-and-semantics]{syntax-and-semantics}",
+        "\\olimport[../first-order-logic/proof-systems]{proof-systems}",
+        "\\olimport[../first-order-logic/sequent-calculus]{sequent-calculus}",
+        "\\olimport[../first-order-logic/natural-deduction]{natural-deduction}",
+        "\\olimport[../first-order-logic/tableaux]{tableaux}",
+        "\\olimport[../first-order-logic/axiomatic-deduction]{axiomatic-deduction}",
+        "\\olimport[../first-order-logic/completeness]{completeness}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../include/open-logic-part]{subfiles}",
+        "\\olimport[syntax-and-semantics]{syntax-and-semantics}",
+        "\\olimport[../first-order-logic/proof-systems]{proof-systems}",
+        "\\olimport[../first-order-logic/sequent-calculus]{sequent-calculus}",
+        "\\olimport[../first-order-logic/natural-deduction]{natural-deduction}",
+        "\\olimport[../first-order-logic/tableaux]{tableaux}",
+        "\\olimport[../first-order-logic/axiomatic-deduction]{axiomatic-deduction}",
+        "\\olimport[../first-order-logic/completeness]{completeness}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0056",
+      "source_path": "content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex",
+      "source_sha256": "d99022091f0fa2b689b3a3e845c3908dd45c8a9c36c74f3d9c589d17d629f805",
+      "translation_sha256": "34f88b591779c7b8e55f6dcd16bd466e9c3c191a603973201656eaebef347f59",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport{introduction}",
+        "\\olimport{formulas}",
+        "\\olimport{preliminaries}",
+        "\\olimport{formation-sequences}",
+        "\\olimport{valuations-sat}",
+        "\\olimport{semantic-notions}"
+      ],
+      "identifiers_target": [
+        "\\olimport{introduction}",
+        "\\olimport{formulas}",
+        "\\olimport{preliminaries}",
+        "\\olimport{formation-sequences}",
+        "\\olimport{valuations-sat}",
+        "\\olimport{semantic-notions}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 149,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: propositional-logic\n% Chapter: syntax-and-semantics",
+          "target_start": "% Part: propositional-logic\n% Chapter: syntax-and-semantics"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olchapter{pl}{syn}{Syntax and Semantics}",
+          "target_start": "\\olchapter{pl}{syn}{వాక్యనిర్మాణం మరియు అర్థవిచారం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{editorial}\n  This is a very quick summary of definitions only. It should be\n  expanded to provide a gen",
+          "target_start": "\\begin{editorial}\n  ఇది నిర్వచనాల అతి సంక్షిప్త సారాంశం మాత్రమే. సూత్రాలపై ఆగమనం ద్వారా\n  నిరూపణలను సులభంగా పర"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport{introduction}",
+          "target_start": "\\olimport{introduction}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport{formulas}",
+          "target_start": "\\olimport{formulas}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\olimport{preliminaries}",
+          "target_start": "\\olimport{preliminaries}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport{formation-sequences}",
+          "target_start": "\\olimport{formation-sequences}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\olimport{valuations-sat}",
+          "target_start": "\\olimport{valuations-sat}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\olimport{semantic-notions}",
+          "target_start": "\\olimport{semantic-notions}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\OLEndChapterHook",
+          "target_start": "\\OLEndChapterHook"
+        },
+        {
+          "index": 13,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{pl}{syn}",
+        "\\olimport{introduction}",
+        "\\olimport{formulas}",
+        "\\olimport{preliminaries}",
+        "\\olimport{formation-sequences}",
+        "\\olimport{valuations-sat}",
+        "\\olimport{semantic-notions}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{pl}{syn}",
+        "\\olimport{introduction}",
+        "\\olimport{formulas}",
+        "\\olimport{preliminaries}",
+        "\\olimport{formation-sequences}",
+        "\\olimport{valuations-sat}",
+        "\\olimport{semantic-notions}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0057",
+      "source_path": "content/propositional-logic/syntax-and-semantics/introduction.tex",
+      "source_sha256": "3040499782b5cc91adab39a5ba93031d4daf6d05ad084e97937d6f84ebed432c",
+      "translation_sha256": "c73e534294abd55bf1286fad87343d55c9c8d6d5a33fa30e906e0977b4242b43",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{pl}{syn}{int}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{pl}{syn}{int}"
+      ],
+      "tokens_source": {
+        "!!^a{formula}": 2,
+        "!!^a{valuation}": 1,
+        "!!a{formula}": 2,
+        "!!a{propositional variable}": 1,
+        "!!a{valuation}": 2,
+        "!!{formula}": 1,
+        "!!{formula}s": 10,
+        "!!{propositional variable}": 1,
+        "!!{propositional variable}s": 3,
+        "!!{valuation}": 4
+      },
+      "tokens_target": {
+        "!!^a{formula}": 2,
+        "!!^a{valuation}": 1,
+        "!!a{formula}": 2,
+        "!!a{propositional variable}": 1,
+        "!!a{valuation}": 2,
+        "!!{formula}": 1,
+        "!!{formula}s": 10,
+        "!!{propositional variable}": 1,
+        "!!{propositional variable}s": 3,
+        "!!{valuation}": 4
+      },
+      "math_source": [
+        "$\\lnot$",
+        "$\\land$",
+        "$\\lor$",
+        "$\\lif$",
+        "$\\liff$",
+        "$p$",
+        "$\\True$",
+        "$\\False$",
+        "$\\lif$",
+        "$\\pAssign{v}$",
+        "$\\True$",
+        "$\\False$",
+        "$\\pValue{v}(!A)$",
+        "$!A$",
+        "$\\pAssign{v}$",
+        "$\\pValue{v}(!A)=\\True$",
+        "$\\pSat{v}{!A}$",
+        "$!A$",
+        "$!A\\land!B$",
+        "$!A$",
+        "$!B$",
+        "$\\pSat{v}{!A}$",
+        "$\\Entails!A$",
+        "$\\pValue{v}(!A)=\\True$",
+        "$\\pAssign{v}$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma$",
+        "$!A$"
+      ],
+      "math_target_core": [
+        "$\\lnot$",
+        "$\\land$",
+        "$\\lor$",
+        "$\\lif$",
+        "$\\liff$",
+        "$p$",
+        "$\\True$",
+        "$\\False$",
+        "$\\lif$",
+        "$\\pAssign{v}$",
+        "$\\True$",
+        "$\\False$",
+        "$!A$",
+        "$\\pValue{v}(!A)$",
+        "$\\pAssign{v}$",
+        "$\\pValue{v}(!A)=\\True$",
+        "$\\pSat{v}{!A}$",
+        "$!A$",
+        "$!A\\land!B$",
+        "$!A$",
+        "$!B$",
+        "$\\pSat{v}{!A}$",
+        "$\\pAssign{v}$",
+        "$\\pValue{v}(!A)=\\True$",
+        "$\\Entails!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma\\Entails!A$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2582,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: propositional-logic\n% Chapter: syntax-and-semantics\n% Section: introduction",
+          "target_start": "% Part: propositional-logic\n% Chapter: syntax-and-semantics\n% Section: introduction"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{pl}{syn}{int}",
+          "target_start": "\\olfileid{pl}{syn}{int}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Introduction}",
+          "target_start": "\\olsection{పరిచయం}"
+        },
+        {
+          "index": 6,
+          "source_start": "Propositional logic deals with !!{formula}s that are built from\n!!{propositional variable}s using the proposit",
+          "target_start": "ప్రవచన తర్కం, !!{propositional variable}s నుంచి $\\lnot$, $\\land$,\n$\\lor$, $\\lif$, $\\liff$ అనే ప్రవచన సంయోజకాలన"
+        },
+        {
+          "index": 7,
+          "source_start": "In order to develop the theory and metatheory of truth-functional\npropositional logic, we must first define th",
+          "target_start": "సత్యమూల్య-ప్రమేయాత్మక ప్రవచన తర్క సిద్ధాంతాన్ని, అధిసిద్ధాంతాన్ని\nఅభివృద్ధి చేయాలంటే, ముందుగా దాని వ్యక్తీకరణల"
+        },
+        {
+          "index": 8,
+          "source_start": "Giving the meaning of expressions is the domain of semantics.  The\ncentral concept in semantics for propositio",
+          "target_start": "వ్యక్తీకరణలకు అర్థం ఇవ్వడం అర్థవిచార పరిధి. ప్రవచన తర్క\nఅర్థవిచారంలో కేంద్ర భావన, ఒక !!a{valuation}లో సంతృప్తి"
+        },
+        {
+          "index": 9,
+          "source_start": "On the basis of the satisfaction relation $\\pSat{v}{!A}$ for sentences\nwe can then define the basic semantic n",
+          "target_start": "వాక్యాల కోసం $\\pSat{v}{!A}$ అనే సంతృప్తి సంబంధం ఆధారంగా\nసర్వసత్యం, అర్థపర అనుగమనం, సంతృప్తిపరచదగినతనం అనే ప్రా"
+        },
+        {
+          "index": 10,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{pl}{syn}{int}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{pl}{syn}{int}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0058",
+      "source_path": "content/propositional-logic/syntax-and-semantics/formulas.tex",
+      "source_sha256": "f05ab9c5e23b362dbee9f6063f096f52ebc9e7f97b29acc9c07f18788f1f8f48",
+      "translation_sha256": "5ad26a2ba2aee970df90dc5d969c732de9969d88d1f20213cd8b8fda3aa4a8e3",
+      "source_blocks": 36,
+      "target_blocks": 36,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{pl}{syn}{fml}",
+        "\\ollabel{defn:formulas}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{pl}{syn}{fml}",
+        "\\ollabel{defn:formulas}"
+      ],
+      "tokens_source": {
+        "!!^a{denumerable}": 1,
+        "!!^{formula}s": 1,
+        "!!a{formula}": 7,
+        "!!{biconditional}": 2,
+        "!!{conditional}": 2,
+        "!!{falsity}": 2,
+        "!!{formula}": 8,
+        "!!{formula}s": 11,
+        "!!{propositional\n    variable}s": 1,
+        "!!{propositional variable}": 1,
+        "!!{propositional variable}s": 1,
+        "!!{truth}": 2
+      },
+      "tokens_target": {
+        "!!^a{denumerable}": 1,
+        "!!^{formula}s": 1,
+        "!!a{formula}": 7,
+        "!!{biconditional}": 2,
+        "!!{conditional}": 2,
+        "!!{falsity}": 2,
+        "!!{formula}": 8,
+        "!!{formula}s": 11,
+        "!!{propositional\n    variable}s": 1,
+        "!!{propositional variable}": 1,
+        "!!{propositional variable}s": 1,
+        "!!{truth}": 2
+      },
+      "math_source": [
+        "$\\lfalse$",
+        "$\\ltrue$",
+        "$\\PVar$",
+        "$\\Objp_0$",
+        "$\\Objp_1$",
+        "$\\lfalse$",
+        "$\\ltrue$",
+        "$\\lnot$",
+        "$\\land$",
+        "$\\lor$",
+        "$\\lif$",
+        "$\\liff$",
+        "$\\LangL_0$",
+        "$\\lnot$",
+        "$\\land$",
+        "$\\lor$",
+        "$\\lif$",
+        "$\\liff$",
+        "$\\lfalse$",
+        "$\\ltrue$",
+        "$\\sim$",
+        "$\\neg$",
+        "$\\wedge$",
+        "$\\cdot$",
+        "$\\&$",
+        "$\\rightarrow$",
+        "$\\Rightarrow$",
+        "$\\supset$",
+        "$\\leftrightarrow$",
+        "$\\Leftrightarrow$",
+        "$\\equiv$",
+        "$\\lfalse$",
+        "$\\ltrue$",
+        "$\\Frm[L_0]$",
+        "$\\lfalse$",
+        "$\\ltrue$",
+        "$\\Objp_i$",
+        "$!A$",
+        "$\\lnot!A$",
+        "$!A$",
+        "$!B$",
+        "$(!A\\land!B)$",
+        "$!A$",
+        "$!B$",
+        "$(!A\\lor!B)$",
+        "$!A$",
+        "$!B$",
+        "$(!A\\lif!B)$",
+        "$!A$",
+        "$!B$",
+        "$(!A\\liff!B)$",
+        "$\\ltrue$",
+        "$\\lfalse$",
+        "$\\Objp_i$",
+        "$(!B\\ast!C)$",
+        "$!B$",
+        "$!C$",
+        "$\\ast$",
+        "$!B\\ast!C$",
+        "$\\ltrue$",
+        "$\\lnot\\lfalse$",
+        "$(!A\\lor\\lnot!A)$",
+        "$!A$",
+        "$\\lfalse$",
+        "$\\lnot\\ltrue$",
+        "$(!A\\land\\lnot!A)$",
+        "$!A$",
+        "$\\lnot!A$",
+        "$!A\\lif\\lfalse$",
+        "$!A\\lor!B$",
+        "$\\lnot(\\lnot!A\\land\\lnot!B)$",
+        "$\\lnot!A\\lif!B$",
+        "$!A\\land!B$",
+        "$\\lnot(\\lnot!A\\lor\\lnot!B)$",
+        "$\\lnot(!A\\lif\\lnot!B)$",
+        "$!A\\lif!B$",
+        "$\\lnot!A\\lor!B)$",
+        "$\\lnot(!A\\land\\lnot!B)$",
+        "$!A\\liff!B$",
+        "$(!A\\lif!B)\\land(!B\\lif!A)$",
+        "$\\ident$",
+        "$!A\\ident!B$",
+        "$!A$",
+        "$!B$",
+        "$\\ident$",
+        "$!A\\ident(!B\\lor!C)$",
+        "$!A$",
+        "$!B$",
+        "$\\lor$",
+        "$!C$",
+        "$!A$",
+        "$!A$",
+        "$!B$",
+        "$\\lor$"
+      ],
+      "math_target_core": [
+        "$\\lfalse$",
+        "$\\ltrue$",
+        "$\\Objp_0$",
+        "$\\Objp_1$",
+        "$\\PVar$",
+        "$\\lfalse$",
+        "$\\ltrue$",
+        "$\\lnot$",
+        "$\\land$",
+        "$\\lor$",
+        "$\\lif$",
+        "$\\liff$",
+        "$\\LangL_0$",
+        "$\\lnot$",
+        "$\\land$",
+        "$\\lor$",
+        "$\\lif$",
+        "$\\liff$",
+        "$\\lfalse$",
+        "$\\ltrue$",
+        "$\\sim$",
+        "$\\neg$",
+        "$\\wedge$",
+        "$\\cdot$",
+        "$\\&$",
+        "$\\rightarrow$",
+        "$\\Rightarrow$",
+        "$\\supset$",
+        "$\\leftrightarrow$",
+        "$\\Leftrightarrow$",
+        "$\\equiv$",
+        "$\\lfalse$",
+        "$\\ltrue$",
+        "$\\Frm[L_0]$",
+        "$\\lfalse$",
+        "$\\ltrue$",
+        "$\\Objp_i$",
+        "$!A$",
+        "$\\lnot!A$",
+        "$!A$",
+        "$!B$",
+        "$(!A\\land!B)$",
+        "$!A$",
+        "$!B$",
+        "$(!A\\lor!B)$",
+        "$!A$",
+        "$!B$",
+        "$(!A\\lif!B)$",
+        "$!A$",
+        "$!B$",
+        "$(!A\\liff!B)$",
+        "$\\ltrue$",
+        "$\\lfalse$",
+        "$\\Objp_i$",
+        "$!B$",
+        "$!C$",
+        "$\\ast$",
+        "$(!B\\ast!C)$",
+        "$!B\\ast!C$",
+        "$\\ltrue$",
+        "$\\lnot\\lfalse$",
+        "$!A$",
+        "$(!A\\lor\\lnot!A)$",
+        "$\\lfalse$",
+        "$\\lnot\\ltrue$",
+        "$!A$",
+        "$(!A\\land\\lnot!A)$",
+        "$\\lnot!A$",
+        "$!A\\lif\\lfalse$",
+        "$!A\\lor!B$",
+        "$\\lnot(\\lnot!A\\land\\lnot!B)$",
+        "$\\lnot!A\\lif!B$",
+        "$!A\\land!B$",
+        "$\\lnot(\\lnot!A\\lor\\lnot!B)$",
+        "$\\lnot(!A\\lif\\lnot!B)$",
+        "$!A\\lif!B$",
+        "$\\lnot!A\\lor!B$",
+        "$\\lnot(!A\\land\\lnot!B)$",
+        "$!A\\liff!B$",
+        "$(!A\\lif!B)\\land(!B\\lif!A)$",
+        "$\\ident$",
+        "$!A\\ident!B$",
+        "$!A$",
+        "$!B$",
+        "$\\ident$",
+        "$!A\\ident(!B\\lor!C)$",
+        "$!B$",
+        "$\\lor$",
+        "$!C$",
+        "$!A$",
+        "$!A$",
+        "$!B$",
+        "$!A$",
+        "$\\lor$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$\\lnot!A\\lor!B)$"
+      ],
+      "math_delta_target_only": [
+        "$\\lnot!A\\lor!B$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTEPLSYN-001",
+        "OLTEPLSYN-002"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2844,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: propositional-logic\n% Chapter: syntax-and-semantics\n% Section: formulas",
+          "target_start": "% Part: propositional-logic\n% Chapter: syntax-and-semantics\n% Section: formulas"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{pl}{syn}{fml}",
+          "target_start": "\\olfileid{pl}{syn}{fml}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Propositional \\usetoken{P}{formula}}",
+          "target_start": "\\olsection{ప్రవచన \\usetoken{P}{formula}}"
+        },
+        {
+          "index": 6,
+          "source_start": "!!^{formula}s of propositional logic are built up from\n\\emph{!!{propositional\n    variable}s}\\iftag{prvFalse}{",
+          "target_start": "ప్రవచన తర్కంలోని !!^{formula}sను \\emph{!!{propositional\n    variable}s}\\iftag{prvFalse}{\\iftag{prvTrue}{,}{ మర"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{enumerate}\n\\item !!^a{denumerable} set~$\\PVar$ of !!{propositional variable}s $\\Obj p_0$,\n  $\\Obj p_1$,",
+          "target_start": "\\begin{enumerate}\n\\item !!{propositional variable}s $\\Obj p_0$, $\\Obj p_1$, \\dots గల\n  !!^a{denumerable} సమితి"
+        },
+        {
+          "index": 8,
+          "source_start": "We denote this language of propositional logic by $\\Lang L_0$.",
+          "target_start": "ప్రవచన తర్కంలోని ఈ భాషను $\\Lang L_0$తో సూచిస్తాం."
+        },
+        {
+          "index": 9,
+          "source_start": "\\iftag{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}{%\nIn addition to the primitive connecti",
+          "target_start": "\\iftag{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}{%\nపైన పరిచయం చేసిన ప్రాథమిక సంయోజకాలతో "
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{tagblock}{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}\n\\begin{explain}\nA defined sym",
+          "target_start": "\\begin{tagblock}{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}\n\\begin{explain}\nనిర్వచిత సంకే"
+        },
+        {
+          "index": 11,
+          "source_start": "% Alternate symbols",
+          "target_start": "% Alternate symbols"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{intro}\nYou may be familiar with different terminology and symbols than the\nones we use above. Logic tex",
+          "target_start": "\\begin{intro}\nమేము పైన వాడిన వాటికి భిన్నమైన పరిభాష, సంకేతాలు మీకు పరిచయం\nఉండవచ్చు. తర్కశాస్త్ర గ్రంథాలు (మరియ"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{defn}[Formula]\n\\ollabel{defn:formulas}\nThe set~$\\Frm[L_0]$ of \\emph{!!{formula}s} of propositional logi",
+          "target_start": "\\begin{defn}[సూత్రం]\n\\ollabel{defn:formulas}\nప్రవచన తర్కంలోని \\emph{!!{formula}s} సమితి~$\\Frm[L_0]$ను కింది\nవి"
+        },
+        {
+          "index": 14,
+          "source_start": "\\tagitem{prvTrue}{$\\ltrue$ is an atomic !!{formula}.}{}",
+          "target_start": "\\tagitem{prvTrue}{$\\ltrue$ ఒక పరమాణు !!{formula}.}{}"
+        },
+        {
+          "index": 15,
+          "source_start": "\\item Every !!{propositional variable}~$\\Obj p_i$ is an atomic\n  !!{formula}.",
+          "target_start": "\\item ప్రతి !!{propositional variable}~$\\Obj p_i$ ఒక పరమాణు\n  !!{formula}."
+        },
+        {
+          "index": 16,
+          "source_start": "\\tagitem{prvNot}{If $!A$ is !!a{formula}, then $\\lnot !A$ is\n  !!a{formula}.}{}",
+          "target_start": "\\tagitem{prvNot}{$!A$ ఒక !!a{formula} అయితే, $\\lnot !A$ ఒక\n  !!a{formula}.}{}"
+        },
+        {
+          "index": 17,
+          "source_start": "\\tagitem{prvAnd}{If $!A$ and $!B$ are !!{formula}s, then $(!A \\land\n  !B)$ is !!a{formula}.}{}",
+          "target_start": "\\tagitem{prvAnd}{$!A$, $!B$లు !!{formula}s అయితే, $(!A \\land\n  !B)$ ఒక !!a{formula}.}{}"
+        },
+        {
+          "index": 18,
+          "source_start": "\\tagitem{prvOr}{If $!A$ and $!B$ are !!{formula}s, then $(!A \\lor !B)$\n  is !!a{formula}.}{}",
+          "target_start": "\\tagitem{prvOr}{$!A$, $!B$లు !!{formula}s అయితే, $(!A \\lor !B)$\n  ఒక !!a{formula}.}{}"
+        },
+        {
+          "index": 19,
+          "source_start": "\\tagitem{prvIf}{If $!A$ and $!B$ are !!{formula}s, then $(!A \\lif !B)$\n  is !!a{formula}.}{}",
+          "target_start": "\\tagitem{prvIf}{$!A$, $!B$లు !!{formula}s అయితే, $(!A \\lif !B)$\n  ఒక !!a{formula}.}{}"
+        },
+        {
+          "index": 20,
+          "source_start": "\\tagitem{prvIff}{If $!A$ and $!B$ are !!{formula}s, then $(!A \\liff !B)$\n  is !!a{formula}.}{}",
+          "target_start": "\\tagitem{prvIff}{$!A$, $!B$లు !!{formula}s అయితే, $(!A \\liff !B)$\n  ఒక !!a{formula}.}{}"
+        },
+        {
+          "index": 21,
+          "source_start": "\\tagitem{limitClause}{Nothing else is !!a{formula}.}{}\n\\end{enumerate}\n\\end{defn}",
+          "target_start": "\\tagitem{limitClause}{మరేదీ !!a{formula} కాదు.}{}\n\\end{enumerate}\n\\end{defn}"
+        },
+        {
+          "index": 22,
+          "source_start": "\\begin{explain}\nThe definition of !!{formula}s is an\n\\emph{inductive definition}.  Essentially, we construct t",
+          "target_start": "\\begin{explain}\n!!{formula}s నిర్వచనం ఒక \\emph{ఆగమనాత్మక నిర్వచనం}. సారాంశంగా,\n!!{formula}s సమితిని అనంత దశల్ల"
+        },
+        {
+          "index": 23,
+          "source_start": "The other cases of the definition give rules for constructing new\n!!{formula}s out of !!{formula}s already con",
+          "target_start": "నిర్వచనంలోని మిగతా సందర్భాలు, అప్పటికే నిర్మించిన !!{formula}s\nనుంచి కొత్త !!{formula}sను నిర్మించే నియమాలను ఇ"
+        },
+        {
+          "index": 24,
+          "source_start": "When writing a formula $(!B \\ast !C)$ constructed from $!B$, $!C$\nusing a two-place connective~$\\ast$, we will",
+          "target_start": "$!B$, $!C$ల నుంచి ద్విస్థాన సంయోజకం~$\\ast$ను ఉపయోగించి నిర్మించిన\n$(!B \\ast !C)$ అనే సూత్రాన్ని రాసేటప్పుడు, బ"
+        },
+        {
+          "index": 25,
+          "source_start": "\\begin{tagblock}{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}\n\\begin{defn}\nFormulas constru",
+          "target_start": "\\begin{tagblock}{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}\n\\begin{defn}\nనిర్వచిత సంయోజకా"
+        },
+        {
+          "index": 26,
+          "source_start": "\\begin{tagenumerate}{defTrue,defFalse,defNot,defOr,defAnd,defIf,defIff,defEx,defAll}",
+          "target_start": "\\begin{tagenumerate}{defTrue,defFalse,defNot,defOr,defAnd,defIf,defIff,defEx,defAll}"
+        },
+        {
+          "index": 27,
+          "source_start": "\\tagitem{defTrue}{$\\ltrue$ abbreviates\n  \\iftag{prvFalse}{$\\lnot\\lfalse$}{$(!A \\lor \\lnot !A)$ for some\n    fi",
+          "target_start": "\\tagitem{defTrue}{$\\ltrue$ అనేది\n  \\iftag{prvFalse}{$\\lnot\\lfalse$}{ఏదో స్థిర పరమాణు\n    !!{formula}~$!A$కు $("
+        },
+        {
+          "index": 28,
+          "source_start": "\\tagitem{defFalse}{$\\lfalse$ abbreviates\n  \\iftag{prvTrue}{$\\lnot\\ltrue$}{$(!A \\land \\lnot !A)$ for some\n    f",
+          "target_start": "\\tagitem{defFalse}{$\\lfalse$ అనేది\n  \\iftag{prvTrue}{$\\lnot\\ltrue$}{ఏదో స్థిర పరమాణు\n    !!{formula}~$!A$కు $("
+        },
+        {
+          "index": 29,
+          "source_start": "\\tagitem{defNot}{$\\lnot !A$ abbreviates $!A \\lif \\lfalse$.}{}",
+          "target_start": "\\tagitem{defNot}{$\\lnot !A$ అనేది $!A \\lif \\lfalse$కు సంక్షిప్త\n  రూపం.}{}"
+        },
+        {
+          "index": 30,
+          "source_start": "\\tagitem{defOr}{$!A \\lor !B$ abbreviates\n  \\iftag{prvAnd}{$\\lnot(\\lnot !A \\land \\lnot !B)$}{$\\lnot !A \\lif\n   ",
+          "target_start": "\\tagitem{defOr}{$!A \\lor !B$ అనేది\n  \\iftag{prvAnd}{$\\lnot(\\lnot !A \\land \\lnot !B)$}{$\\lnot !A \\lif\n    !B$}క"
+        },
+        {
+          "index": 31,
+          "source_start": "\\tagitem{defAnd}{$!A \\land !B$ abbreviates\n  \\iftag{prvOr}{$\\lnot(\\lnot !A \\lor \\lnot !B)$}{$\\lnot (!A \\lif\n  ",
+          "target_start": "\\tagitem{defAnd}{$!A \\land !B$ అనేది\n  \\iftag{prvOr}{$\\lnot(\\lnot !A \\lor \\lnot !B)$}{$\\lnot (!A \\lif\n    \\lno"
+        },
+        {
+          "index": 32,
+          "source_start": "\\tagitem{defIf}{$!A \\lif !B$ abbreviates\n  \\iftag{prvOr}{$\\lnot !A \\lor !B)$}{$\\lnot (!A \\land \\lnot !B)$}.}{}",
+          "target_start": "\\tagitem{defIf}{$!A \\lif !B$ అనేది\n  \\iftag{prvOr}{$\\lnot !A \\lor !B$}{$\\lnot (!A \\land \\lnot !B)$}కు\n  సంక్షి"
+        },
+        {
+          "index": 33,
+          "source_start": "\\tagitem{defIff}{$!A \\liff !B$ abbreviates $(!A \\lif !B) \\land (!B\n  \\lif !A)$.}{}\n\\end{tagenumerate}\n\\end{def",
+          "target_start": "\\tagitem{defIff}{$!A \\liff !B$ అనేది $(!A \\lif !B) \\land (!B\n  \\lif !A)$కు సంక్షిప్త రూపం.}{}\n\\end{tagenumerat"
+        },
+        {
+          "index": 34,
+          "source_start": "\\begin{defn}[Syntactic identity]\nThe symbol $\\ident$ expresses syntactic identity between strings of\nsymbols, ",
+          "target_start": "\\begin{defn}[వాక్యనిర్మాణ తాదాత్మ్యం]\n$\\ident$ సంకేతం సంకేతమాలల మధ్య వాక్యనిర్మాణ తాదాత్మ్యాన్ని\nవ్యక్తపరుస్తు"
+        },
+        {
+          "index": 35,
+          "source_start": "The $\\ident$ symbol may be flanked by strings obtained by\nconcatenation, e.g., $!A \\ident (!B \\lor !C)$ means:",
+          "target_start": "$\\ident$ సంకేతానికి ఇరువైపులా సంధానం ద్వారా పొందిన సంకేతమాలలు\nఉండవచ్చు. ఉదాహరణకు, $!A \\ident (!B \\lor !C)$ అంట"
+        },
+        {
+          "index": 36,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{pl}{syn}{fml}",
+        "\\ollabel{defn:formulas}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{pl}{syn}{fml}",
+        "\\ollabel{defn:formulas}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0059",
+      "source_path": "content/propositional-logic/syntax-and-semantics/preliminaries.tex",
+      "source_sha256": "32b55f3fdc69170d1c4856c5abd86e8845d1d4993b8e649a0501475ad0c5a9dc",
+      "translation_sha256": "846647ea06bd3cb0a1abe404eeba8471b5d08eb7caa0e98a3ef88ac94034bf16",
+      "source_blocks": 24,
+      "target_blocks": 24,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{pl}{syn}{pre}",
+        "\\ollabel{thm:induction}",
+        "\\olref[fml]{defn:formulas}",
+        "\\ollabel{prop:balanced}",
+        "\\olref[pl][syn][pre]{prop:balanced}",
+        "\\ollabel{prop:noinit}",
+        "\\olref[pl][syn][pre]{prop:noinit}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{pl}{syn}{pre}",
+        "\\ollabel{thm:induction}",
+        "\\olref[fml]{defn:formulas}",
+        "\\ollabel{prop:balanced}",
+        "\\olref[pl][syn][pre]{prop:balanced}",
+        "\\ollabel{prop:noinit}",
+        "\\olref[pl][syn][pre]{prop:noinit}"
+      ],
+      "tokens_source": {
+        "!!a{formula}": 2,
+        "!!{formula}": 4,
+        "!!{formula}s": 12,
+        "!!{operator}s": 1,
+        "!!{propositional\nvariable}": 1
+      },
+      "tokens_target": {
+        "!!a{formula}": 2,
+        "!!{formula}": 4,
+        "!!{formula}s": 12,
+        "!!{operator}s": 1,
+        "!!{propositional\nvariable}": 1
+      },
+      "math_source": [
+        "$P$",
+        "$\\lnot!A$",
+        "$!A$",
+        "$(!A\\land!B)$",
+        "$!A$",
+        "$!B$",
+        "$(!A\\lor!B)$",
+        "$!A$",
+        "$!B$",
+        "$(!A\\lif!B)$",
+        "$!A$",
+        "$!B$",
+        "$(!A\\liff!B)$",
+        "$!A$",
+        "$!B$",
+        "$P$",
+        "$S$",
+        "$P$",
+        "$S\\subseteq\\Frm[L_0]$",
+        "$S$",
+        "$\\Frm[L_0]$",
+        "$\\Frm[L_0]\\subseteqS$",
+        "$\\Frm[L_0]=S$",
+        "$P$",
+        "$\\Frm[L_0]$",
+        "$!A$",
+        "$\\Frm[L_0]$",
+        "$\\lfalse$",
+        "$\\ltrue$",
+        "$\\Objp_n$",
+        "$\\Objp_n\\in\\PVar$",
+        "$\\lnot!B$",
+        "$!B$",
+        "$(!B\\land!C)$",
+        "$!B$",
+        "$!C$",
+        "$(!B\\lor!C)$",
+        "$!B$",
+        "$!C$",
+        "$(!B\\lif!C)$",
+        "$!B$",
+        "$!C$",
+        "$(!B\\liff!C)$",
+        "$!B$",
+        "$!C$",
+        "$!A$",
+        "$!A$",
+        "$(!B\\lif!C)$",
+        "$(!B'\\lif!C')$",
+        "$!B$",
+        "$!B'$",
+        "$!A$",
+        "$!C$",
+        "$!C'$",
+        "$!A$",
+        "$!B$",
+        "$\\Objp_i$",
+        "$\\Subst{!A}{!B}{\\Objp_i}$",
+        "$\\Objp_i$",
+        "$!B$",
+        "$!A$",
+        "$\\Objp_1$",
+        "$\\Objp_n$",
+        "$!B_1$",
+        "$!B_n$",
+        "$\\SSubst{!A}{\\subst{!B_1}{\\Objp_1},\\dots,\\subst{!B_n}{\\Objp_n}}$",
+        "$\\Subst{!A}{!B}{p}$"
+      ],
+      "math_target_core": [
+        "$P$",
+        "$!A$",
+        "$\\lnot!A$",
+        "$!A$",
+        "$!B$",
+        "$(!A\\land!B)$",
+        "$!A$",
+        "$!B$",
+        "$(!A\\lor!B)$",
+        "$!A$",
+        "$!B$",
+        "$(!A\\lif!B)$",
+        "$!A$",
+        "$!B$",
+        "$(!A\\liff!B)$",
+        "$P$",
+        "$P$",
+        "$S$",
+        "$S\\subseteq\\Frm[L_0]$",
+        "$S$",
+        "$\\Frm[L_0]$",
+        "$\\Frm[L_0]\\subseteqS$",
+        "$\\Frm[L_0]=S$",
+        "$P$",
+        "$\\Frm[L_0]$",
+        "$\\Frm[L_0]$",
+        "$!A$",
+        "$\\lfalse$",
+        "$\\ltrue$",
+        "$\\Objp_n\\in\\PVar$",
+        "$\\Objp_n$",
+        "$!B$",
+        "$\\lnot!B$",
+        "$!B$",
+        "$!C$",
+        "$(!B\\land!C)$",
+        "$!B$",
+        "$!C$",
+        "$(!B\\lor!C)$",
+        "$!B$",
+        "$!C$",
+        "$(!B\\lif!C)$",
+        "$!B$",
+        "$!C$",
+        "$(!B\\liff!C)$",
+        "$!A$",
+        "$!A$",
+        "$(!B\\lif!C)$",
+        "$(!B'\\lif!C')$",
+        "$!B$",
+        "$!B'$",
+        "$!A$",
+        "$!C$",
+        "$!C'$",
+        "$!A$",
+        "$!B$",
+        "$\\Objp_i$",
+        "$!A$",
+        "$\\Objp_i$",
+        "$!B$",
+        "$\\Subst{!A}{!B}{\\Objp_i}$",
+        "$\\Objp_1$",
+        "$\\Objp_n$",
+        "$!B_1$",
+        "$!B_n$",
+        "$\\SSubst{!A}{\\subst{!B_1}{\\Objp_1},\\dots,\\subst{!B_n}{\\Objp_n}}$",
+        "$\\Subst{!A}{!B}{p}$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1232,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: propositional-logic\n% Chapter: propositional-logic\n% Section: preliminaries",
+          "target_start": "% Part: propositional-logic\n% Chapter: propositional-logic\n% Section: preliminaries"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{pl}{syn}{pre}",
+          "target_start": "\\olfileid{pl}{syn}{pre}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Preliminaries}",
+          "target_start": "\\olsection{ప్రాథమిక ఫలితాలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{thm}[\\emph{Principle of induction on !!{formula}s}]\n  \\ollabel{thm:induction}  \n  If some property~$P$ ",
+          "target_start": "\\begin{thm}[\\emph{!!{formula}sపై ఆగమన సూత్రం}]\n  \\ollabel{thm:induction}\n  ఏదైనా ధర్మం~$P$ అన్ని పరమాణు !!{for"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{proof}\n  Let $S$ be the collection of all !!{formula}s with\n  property~$P$. Clearly $S \\subseteq \\Frm[L",
+          "target_start": "\\begin{proof}\n  $P$ ధర్మం గల అన్ని !!{formula}s సంగ్రహాన్ని $S$ అనుకుందాం.\n  స్పష్టంగా $S \\subseteq \\Frm[L_0]$"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{prop}\\ollabel{prop:balanced}\n   Any !!{formula} in~$\\Frm[L_0]$ is \\emph{balanced}, in that it has\n   as",
+          "target_start": "\\begin{prop}\\ollabel{prop:balanced}\n   $\\Frm[L_0]$లోని ఏ !!{formula} అయినా \\emph{సమతుల్యం}; అంటే దానిలో\n   ఎన్"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{prob}\nProve \\olref[pl][syn][pre]{prop:balanced}\n\\end{prob}",
+          "target_start": "\\begin{prob}\n\\olref[pl][syn][pre]{prop:balanced}ను నిరూపించండి.\n\\end{prob}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{prop} \\ollabel{prop:noinit}\nNo proper initial segment of !!a{formula} is !!a{formula}.\n\\end{prop}",
+          "target_start": "\\begin{prop} \\ollabel{prop:noinit}\n!!a{formula} యొక్క ఏ నిజ ఆద్య ఖండమూ !!a{formula} కాదు.\n\\end{prop}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{prob}\n  Prove \\olref[pl][syn][pre]{prop:noinit}\n\\end{prob}",
+          "target_start": "\\begin{prob}\n  \\olref[pl][syn][pre]{prop:noinit}ను నిరూపించండి.\n\\end{prob}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{prop}[Unique Readability]\nAny !!{formula}~$!A$ in $ \\Frm[L_0]$ has exactly one parsing as one of\nthe fo",
+          "target_start": "\\begin{prop}[ఏకైక పఠనీయత]\n$ \\Frm[L_0]$లోని ఏ !!{formula}~$!A$కైనా కింది రూపాల్లో కచ్చితంగా\nఒకే ఒక వాక్యనిర్మాణ"
+        },
+        {
+          "index": 13,
+          "source_start": "\\tagitem{prvTrue}{$\\ltrue$.}{}",
+          "target_start": "\\tagitem{prvTrue}{$\\ltrue$.}{}"
+        },
+        {
+          "index": 14,
+          "source_start": "\\item $\\Obj p_n$ for some $\\Obj p_n \\in  \\PVar$.",
+          "target_start": "\\item ఏదో $\\Obj p_n \\in  \\PVar$కు $\\Obj p_n$."
+        },
+        {
+          "index": 15,
+          "source_start": "\\tagitem{prvNot}{$\\lnot !B$ for some !!{formula}~$!B$.}{}",
+          "target_start": "\\tagitem{prvNot}{ఏదో !!{formula}~$!B$కు $\\lnot !B$.}{}"
+        },
+        {
+          "index": 16,
+          "source_start": "\\tagitem{prvAnd}{$(!B \\land !C)$ for some !!{formula}s $!B$ and~$!C$.}{}",
+          "target_start": "\\tagitem{prvAnd}{ఏవో !!{formula}s $!B$, $!C$లకు\n$(!B \\land !C)$.}{}"
+        },
+        {
+          "index": 17,
+          "source_start": "\\tagitem{prvOr}{$(!B \\lor !C)$ for some !!{formula}s $!B$ and~$!C$.}{}",
+          "target_start": "\\tagitem{prvOr}{ఏవో !!{formula}s $!B$, $!C$లకు\n$(!B \\lor !C)$.}{}"
+        },
+        {
+          "index": 18,
+          "source_start": "\\tagitem{prvIf}{$(!B \\lif !C)$ for some !!{formula}s $!B$ and~$!C$.}{}",
+          "target_start": "\\tagitem{prvIf}{ఏవో !!{formula}s $!B$, $!C$లకు\n$(!B \\lif !C)$.}{}"
+        },
+        {
+          "index": 19,
+          "source_start": "\\tagitem{prvIff}{$(!B \\liff !C)$ for some !!{formula}s $!B$ and~$!C$.}{}\n\\end{enumerate}\nMoreover, this parsin",
+          "target_start": "\\tagitem{prvIff}{ఏవో !!{formula}s $!B$, $!C$లకు\n$(!B \\liff !C)$.}{}\n\\end{enumerate}\nఅంతేకాక ఈ వాక్యనిర్మాణ విశ"
+        },
+        {
+          "index": 20,
+          "source_start": "\\begin{proof}\nBy induction on $!A$. For instance, suppose that $!A$ has two distinct\nreadings as $(!B \\lif !C)",
+          "target_start": "\\begin{proof}\n$!A$పై ఆగమనం ద్వారా నిరూపిస్తాం. ఉదాహరణకు, $!A$కు\n$(!B \\lif !C)$, $(!B' \\lif !C')$ అనే రెండు భిన"
+        },
+        {
+          "index": 21,
+          "source_start": "\\begin{defn}[Uniform Substitution]\nIf $!A$ and $!B$ are !!{formula}s, and $\\Obj p_i$ is a !!{propositional\nvar",
+          "target_start": "\\begin{defn}[ఏకరీతి ప్రతిస్థాపన]\n$!A$, $!B$లు !!{formula}s, $\\Obj p_i$ ఒక !!{propositional\nvariable} అయితే, $!"
+        },
+        {
+          "index": 22,
+          "source_start": "\\begin{prob} For each of the five !!{formula}s below determine whether the \n !!{formula} can be expressed as a",
+          "target_start": "\\begin{prob} కింద ఉన్న ఐదు !!{formula}sలో ప్రతి ఒక్కదానికి, ఆ\n !!{formula}ను \\( \\Subst{!A}{!B}{\\Obj p_i} \\) అన"
+        },
+        {
+          "index": 23,
+          "source_start": "\\begin{prob}\nGive a mathematically rigorous definition of $\\Subst{!A}{!B}{p}$ by\ninduction.\n\\end{prob}",
+          "target_start": "\\begin{prob}\nఆగమనం ద్వారా $\\Subst{!A}{!B}{p}$కు గణితపరంగా కచ్చితమైన నిర్వచనం\nఇవ్వండి.\n\\end{prob}"
+        },
+        {
+          "index": 24,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{pl}{syn}{pre}",
+        "\\ollabel{thm:induction}",
+        "\\olref[fml]{defn:formulas}",
+        "\\ollabel{prop:balanced}",
+        "\\olref[pl][syn][pre]{prop:balanced}",
+        "\\ollabel{prop:noinit}",
+        "\\olref[pl][syn][pre]{prop:noinit}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{pl}{syn}{pre}",
+        "\\ollabel{thm:induction}",
+        "\\olref[fml]{defn:formulas}",
+        "\\ollabel{prop:balanced}",
+        "\\olref[pl][syn][pre]{prop:balanced}",
+        "\\ollabel{prop:noinit}",
+        "\\olref[pl][syn][pre]{prop:noinit}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0060",
+      "source_path": "content/propositional-logic/syntax-and-semantics/formation-sequences.tex",
+      "source_sha256": "fff70555c1ef515d9092e72c91496aa898f74e4dd41e4cadc82f49a30c5850f5",
+      "translation_sha256": "e8b1df27c691cbfd04faab79e6cd79a02089c0a9ac6aa7ec28c06aaf01c7e5f6",
+      "source_blocks": 17,
+      "target_blocks": 17,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{pl}{syn}{fseq}",
+        "\\ollabel{defn:fseq-frm}",
+        "\\ollabel{prop:formed}",
+        "\\ollabel{lem:fseq-init}",
+        "\\ollabel{thm:fseq-frm-equiv}",
+        "\\olref[pl][syn][fseq]{prop:formed}",
+        "\\olref[pl][syn][fseq]{lem:fseq-init}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{pl}{syn}{fseq}",
+        "\\ollabel{defn:fseq-frm}",
+        "\\ollabel{prop:formed}",
+        "\\ollabel{lem:fseq-init}",
+        "\\ollabel{thm:fseq-frm-equiv}",
+        "\\olref[pl][syn][fseq]{prop:formed}",
+        "\\olref[pl][syn][fseq]{lem:fseq-init}"
+      ],
+      "tokens_source": {
+        "!!a{formula}": 1,
+        "!!{formula}": 2,
+        "!!{formula}s": 4
+      },
+      "tokens_target": {
+        "!!a{formula}": 1,
+        "!!{formula}": 2,
+        "!!{formula}s": 4
+      },
+      "math_source": [
+        "$\\tuple{!A_0,\\dotsc,!A_n}$",
+        "$\\LangL_0$",
+        "$!A$",
+        "$!A\\ident!A_n$",
+        "$i\\leqn$",
+        "$!A_i$",
+        "$j,k<i$",
+        "$!A_i\\ident\\lnot!A_j$",
+        "$!A_i\\ident(!A_j\\land!A_k)$",
+        "$!A_i\\ident(!A_j\\lor!A_k)$",
+        "$!A_i\\ident(!A_j\\lif!A_k)$",
+        "$!A_i\\ident(!A_j\\liff!A_k)$",
+        "\\[\\tuple{\\Objp_0,\\Objp_1,(\\Objp_1\\land\\Objp_0),\\lnot(\\Objp_1\\land\\Objp_0)}\\]",
+        "$\\lnot(\\Objp_1\\land\\Objp_0)$",
+        "\\[\\tuple{\\Objp_0,\\Objp_1,\\Objp_0,(\\Objp_1\\land\\Objp_0),(\\Objp_0\\lif\\Objp_1),\\lnot(\\Objp_1\\land\\Objp_0)}.\\]",
+        "$!A$",
+        "$\\Frm[L_0]$",
+        "$!A$",
+        "$\\tuple{!A}$",
+        "$!A$",
+        "$!B$",
+        "$!C$",
+        "$\\tuple{!B_0,\\dotsc,!B_n}$",
+        "$\\tuple{!C_0,\\dotsc,!C_m}$",
+        "$!A\\ident\\lnot!B$",
+        "$\\tuple{!B_0,\\dotsc,!B_n,\\lnot!B_n}$",
+        "$!A$",
+        "$!A\\ident(!B\\land!C)$",
+        "$\\tuple{!B_0,\\dotsc,!B_n,!C_0,\\dotsc,!C_m,(!B_n\\land!C_m)}$",
+        "$!A$",
+        "$!A\\ident(!B\\lor!C)$",
+        "$\\tuple{!B_0,\\dotsc,!B_n,!C_0,\\dotsc,!C_m,(!B_n\\lor!C_m)}$",
+        "$!A$",
+        "$!A\\ident(!B\\lif!C)$",
+        "$\\tuple{!B_0,\\dotsc,!B_n,!C_0,\\dotsc,!C_m,(!B_n\\lif!C_m)}$",
+        "$!A$",
+        "$!A\\ident(!B\\liff!C)$",
+        "$\\tuple{!B_0,\\dotsc,!B_n,!C_0,\\dotsc,!C_m,(!B_n\\liff!C_m)}$",
+        "$!A$",
+        "$\\tuple{!A_0,\\dotsc,!A_n}$",
+        "$!A_n$",
+        "$k\\leqn$",
+        "$\\tuple{!A_0,\\dotsc,!A_k}$",
+        "$!A_k$",
+        "$\\Frm[L_0]$",
+        "$\\LangL_0$",
+        "$F$",
+        "$\\LangL_0$",
+        "$\\Frm[L_0]\\subseteqF$",
+        "$!A$",
+        "$\\tuple{!A_0,\\dotsc,!A_n}$",
+        "$!A\\in\\Frm[L_0]$",
+        "$n$",
+        "$m<n$",
+        "$\\Frm[L_0]$",
+        "$!A_n$",
+        "$j,k<n$",
+        "$!A_n\\ident\\lnot!A_j$",
+        "$!A_n\\ident(!A_j\\land!A_k)$",
+        "$!A_n\\ident(!A_j\\lor!A_k)$",
+        "$!A_n\\ident(!A_j\\lif!A_k)$",
+        "$!A_n\\ident(!A_j\\liff!A_k)$",
+        "$!A_n$",
+        "$!A_n\\in\\Frm[L_0]$",
+        "$!A\\equiv(!A_j\\land!A_k)$",
+        "$\\tuple{!A_0,\\dotsc,!A_j}$",
+        "$\\tuple{!A_0,\\dotsc,!A_k}$",
+        "$!A_j$",
+        "$!A_k$",
+        "$!A$",
+        "$n$",
+        "$!A_j$",
+        "$!A_k$",
+        "$\\Frm[L_0]$",
+        "$(!A_j\\land!A_k)$"
+      ],
+      "math_target_core": [
+        "$\\LangL_0$",
+        "$\\tuple{!A_0,\\dotsc,!A_n}$",
+        "$!A$",
+        "$!A\\ident!A_n$",
+        "$i\\leqn$",
+        "$!A_i$",
+        "$j,k<i$",
+        "$!A_i\\ident\\lnot!A_j$",
+        "$!A_i\\ident(!A_j\\land!A_k)$",
+        "$!A_i\\ident(!A_j\\lor!A_k)$",
+        "$!A_i\\ident(!A_j\\lif!A_k)$",
+        "$!A_i\\ident(!A_j\\liff!A_k)$",
+        "\\[\\tuple{\\Objp_0,\\Objp_1,(\\Objp_1\\land\\Objp_0),\\lnot(\\Objp_1\\land\\Objp_0)}\\]",
+        "$\\lnot(\\Objp_1\\land\\Objp_0)$",
+        "\\[\\tuple{\\Objp_0,\\Objp_1,\\Objp_0,(\\Objp_1\\land\\Objp_0),(\\Objp_0\\lif\\Objp_1),\\lnot(\\Objp_1\\land\\Objp_0)}.\\]",
+        "$\\Frm[L_0]$",
+        "$!A$",
+        "$!A$",
+        "$\\tuple{!A}$",
+        "$!A$",
+        "$!B$",
+        "$!C$",
+        "$\\tuple{!B_0,\\dotsc,!B_n}$",
+        "$\\tuple{!C_0,\\dotsc,!C_m}$",
+        "$!A\\ident\\lnot!B$",
+        "$\\tuple{!B_0,\\dotsc,!B_n,\\lnot!B_n}$",
+        "$!A$",
+        "$!A\\ident(!B\\land!C)$",
+        "$\\tuple{!B_0,\\dotsc,!B_n,!C_0,\\dotsc,!C_m,(!B_n\\land!C_m)}$",
+        "$!A$",
+        "$!A\\ident(!B\\lor!C)$",
+        "$\\tuple{!B_0,\\dotsc,!B_n,!C_0,\\dotsc,!C_m,(!B_n\\lor!C_m)}$",
+        "$!A$",
+        "$!A\\ident(!B\\lif!C)$",
+        "$\\tuple{!B_0,\\dotsc,!B_n,!C_0,\\dotsc,!C_m,(!B_n\\lif!C_m)}$",
+        "$!A$",
+        "$!A\\ident(!B\\liff!C)$",
+        "$\\tuple{!B_0,\\dotsc,!B_n,!C_0,\\dotsc,!C_m,(!B_n\\liff!C_m)}$",
+        "$!A$",
+        "$\\tuple{!A_0,\\dotsc,!A_n}$",
+        "$!A_n$",
+        "$k\\leqn$",
+        "$\\tuple{!A_0,\\dotsc,!A_k}$",
+        "$!A_k$",
+        "$\\Frm[L_0]$",
+        "$\\LangL_0$",
+        "$\\LangL_0$",
+        "$F$",
+        "$\\Frm[L_0]\\subseteqF$",
+        "$!A$",
+        "$\\tuple{!A_0,\\dotsc,!A_n}$",
+        "$n$",
+        "$!A\\in\\Frm[L_0]$",
+        "$m<n$",
+        "$\\Frm[L_0]$",
+        "$!A_n$",
+        "$j,k<n$",
+        "$!A_n\\ident\\lnot!A_j$",
+        "$!A_n\\ident(!A_j\\land!A_k)$",
+        "$!A_n\\ident(!A_j\\lor!A_k)$",
+        "$!A_n\\ident(!A_j\\lif!A_k)$",
+        "$!A_n\\ident(!A_j\\liff!A_k)$",
+        "$!A_n$",
+        "$!A_n\\in\\Frm[L_0]$",
+        "$!A\\ident(!A_j\\land!A_k)$",
+        "$\\tuple{!A_0,\\dotsc,!A_j}$",
+        "$\\tuple{!A_0,\\dotsc,!A_k}$",
+        "$!A_j$",
+        "$!A_k$",
+        "$!A$",
+        "$n$",
+        "$!A_j$",
+        "$!A_k$",
+        "$\\Frm[L_0]$",
+        "$(!A_j\\land!A_k)$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$!A\\equiv(!A_j\\land!A_k)$"
+      ],
+      "math_delta_target_only": [
+        "$!A\\ident(!A_j\\land!A_k)$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTEPLSYN-003"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1860,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: syntax-and-semantics\n% Section: formation-sequences",
+          "target_start": "% Part: first-order-logic\n% Chapter: syntax-and-semantics\n% Section: formation-sequences"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{pl}{syn}{fseq}",
+          "target_start": "\\olfileid{pl}{syn}{fseq}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Formation Sequences}",
+          "target_start": "\\olsection{నిర్మాణ క్రమాలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "Defining !!{formula}s via an inductive definition, and the\ncomplementary technique of proving properties of !!",
+          "target_start": "ఆగమనాత్మక నిర్వచనం ద్వారా !!{formula}sను నిర్వచించడం, దానికి\nపూరకంగా ఆగమనం ద్వారా !!{formula}s ధర్మాలను నిరూపి"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}[Formation sequences for formulas]\n\\ollabel{defn:fseq-frm}\nA finite sequence $\\tuple{!A_0,\\dotsc,!",
+          "target_start": "\\begin{defn}[సూత్రాల నిర్మాణ క్రమాలు]\n\\ollabel{defn:fseq-frm}\nభాష~$\\Lang L_0$లోని సంకేతాలతో ఏర్పడిన సంకేతమాలల "
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{ex}\n\\[\n\\tuple{\n    \\Obj p_0,\n    \\Obj p_1,\n    (\\Obj p_1 \\land \\Obj p_0),\n    \\lnot (\\Obj p_1 \\land \\Ob",
+          "target_start": "\\begin{ex}\n\\[\n\\tuple{\n    \\Obj p_0,\n    \\Obj p_1,\n    (\\Obj p_1 \\land \\Obj p_0),\n    \\lnot (\\Obj p_1 \\land \\Ob"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{prop}\n\\ollabel{prop:formed}\nEvery !!{formula}~$!A$ in~$\\Frm[L_0]$ has a formation sequence.\n\\end{prop}",
+          "target_start": "\\begin{prop}\n\\ollabel{prop:formed}\n$\\Frm[L_0]$లోని ప్రతి !!{formula}~$!A$కు ఒక నిర్మాణ క్రమం ఉంటుంది.\n\\end{pro"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{proof}\nSuppose $!A$ is atomic. Then the sequence~$\\tuple{!A}$ is a\nformation sequence for~$!A$.\n%\nNow s",
+          "target_start": "\\begin{proof}\n$!A$ పరమాణు సూత్రం అనుకుందాం. అప్పుడు క్రమం~$\\tuple{!A}$,\n$!A$కు నిర్మాణ క్రమం.\n%\nఇప్పుడు $!B$, "
+        },
+        {
+          "index": 11,
+          "source_start": "We can also prove the converse. This is important because it shows\nthat our two ways of defining formulas are ",
+          "target_start": "దీని తిరుగుదిశను కూడా నిరూపించవచ్చు. సూత్రాలకు మనం ఇచ్చిన రెండు\nనిర్వచన పద్ధతులూ తుల్యమైనవని, అంటే అవి ఒకే ఫలి"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{lem}\n\\ollabel{lem:fseq-init}\nSuppose that $\\tuple{!A_0,\\dotsc,!A_n}$ is a formation sequence\nfor~$!A_n$",
+          "target_start": "\\begin{lem}\n\\ollabel{lem:fseq-init}\n$\\tuple{!A_0,\\dotsc,!A_n}$ అనేది $!A_n$కు నిర్మాణ క్రమమనీ,\n$k \\leq n$ అనీ "
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{proof}\nExercise.\n\\end{proof}",
+          "target_start": "\\begin{proof}\nసాధన.\n\\end{proof}"
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{thm}\n\\ollabel{thm:fseq-frm-equiv}\n$\\Frm[L_0]$ is the set of all strings of symbols\nin the language~$\\La",
+          "target_start": "\\begin{thm}\n\\ollabel{thm:fseq-frm-equiv}\n$\\Frm[L_0]$ అనేది నిర్మాణ క్రమం గల భాష~$\\Lang L_0$లోని అన్ని\nసంకేతమాల"
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{proof}\nLet $F$ be the set of all strings of symbols in the\nlanguage~$\\Lang L_0$ that have a formation s",
+          "target_start": "\\begin{proof}\nభాష~$\\Lang L_0$లో నిర్మాణ క్రమం గల అన్ని సంకేతమాలల సమితిని $F$\nఅనుకుందాం. \\olref[pl][syn][fseq]{"
+        },
+        {
+          "index": 16,
+          "source_start": "Suppose $!A$ has a formation sequence $\\tuple{!A_0,\\dotsc,!A_n}$.\nWe prove that $!A \\in \\Frm[L_0]$ by strong i",
+          "target_start": "$!A$కు $\\tuple{!A_0,\\dotsc,!A_n}$ అనే నిర్మాణ క్రమం ఉందనుకుందాం.\n$n$పై బలమైన ఆగమనం ద్వారా $!A \\in \\Frm[L_0]$ అ"
+        },
+        {
+          "index": 17,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{pl}{syn}{fseq}",
+        "\\ollabel{defn:fseq-frm}",
+        "\\ollabel{prop:formed}",
+        "\\ollabel{lem:fseq-init}",
+        "\\ollabel{thm:fseq-frm-equiv}",
+        "\\olref[pl][syn][fseq]{prop:formed}",
+        "\\olref[pl][syn][fseq]{lem:fseq-init}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{pl}{syn}{fseq}",
+        "\\ollabel{defn:fseq-frm}",
+        "\\ollabel{prop:formed}",
+        "\\ollabel{lem:fseq-init}",
+        "\\ollabel{thm:fseq-frm-equiv}",
+        "\\olref[pl][syn][fseq]{prop:formed}",
+        "\\olref[pl][syn][fseq]{lem:fseq-init}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0061",
+      "source_path": "content/propositional-logic/syntax-and-semantics/valuations-sat.tex",
+      "source_sha256": "9f0b5ecd5a8462ab5d970546602a1a0b0e46e5908c6a0f46369f93543583f882",
+      "translation_sha256": "060662617e5b57de2746650283cb4920f4bb4754b3c30b23f66c1cd9993cd7c3",
+      "source_blocks": 23,
+      "target_blocks": 23,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{pl}{syn}{val}",
+        "\\ollabel{thm:LocalDetermination}",
+        "\\ollabel{defn:satisfaction}",
+        "\\ollabel{prop:sat-value}",
+        "\\olref[pl][syn][val]{prop:sat-value}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{pl}{syn}{val}",
+        "\\ollabel{thm:LocalDetermination}",
+        "\\ollabel{defn:satisfaction}",
+        "\\ollabel{prop:sat-value}",
+        "\\olref[pl][syn][val]{prop:sat-value}"
+      ],
+      "tokens_source": {
+        "!!^{valuation}s": 1,
+        "!!a{formula}": 1,
+        "!!a{valuation}": 2,
+        "!!{formula}": 1,
+        "!!{formula}s": 1,
+        "!!{propositional\nvariable}s": 1,
+        "!!{propositional variable}s": 1,
+        "!!{valuation}": 1,
+        "!!{valuation}s": 1
+      },
+      "tokens_target": {
+        "!!^{valuation}s": 1,
+        "!!a{formula}": 1,
+        "!!a{valuation}": 2,
+        "!!{formula}": 1,
+        "!!{formula}s": 1,
+        "!!{propositional\nvariable}s": 1,
+        "!!{propositional variable}s": 1,
+        "!!{valuation}": 1,
+        "!!{valuation}s": 1
+      },
+      "math_source": [
+        "$\\{\\True,\\False\\}$",
+        "$\\Lang{L_0}$",
+        "$\\pAssign{v}$",
+        "$\\True$",
+        "$\\False$",
+        "$\\pAssign{v}\\colon\\PVar\\to\\{\\True,\\False\\}$",
+        "$\\pAssign{v}$",
+        "$\\pValue{v}\\colon\\Frm[L_0]\\to\\{\\True,\\False\\}$",
+        "\\begin{align*}\\iftag{prvFalse}{\\pValue{v}(\\lfalse)&=\\False;\\\\}{}\\iftag{prvTrue}{\\pValue{v}(\\ltrue)&=\\True;\\\\}{}\\pValue{v}(\\Objp_n)&=\\pAssign{v}(\\Objp_n);\\\\\\iftag{prvNot}{\\pValue{v}(\\lnot!A)&=\\begin{cases}\\True&\\pValue{v}(!A)=\\False;\\\\\\False&\\end{cases}\\\\}{}\\iftag{prvAnd}{\\pValue{v}(!A\\land!B)&=\\begin{cases}\\True&\\\\\\False&.\\end{cases}\\\\}{}\\iftag{prvOr}{\\pValue{v}(!A\\lor!B)&=\\begin{cases}\\True&\\\\\\False&.\\end{cases}\\\\}{}\\iftag{prvIf}{\\pValue{v}(!A\\lif!B)&=\\begin{cases}\\True&\\\\\\False&.\\end{cases}\\\\}{}\\iftag{prvIff}{\\pValue{v}(!A\\liff!B)&=\\begin{cases}\\True&\\\\\\False&.\\end{cases}}{}\\end{align*}",
+        "$!A$",
+        "$\\lnot!A$",
+        "$\\True$",
+        "$\\False$",
+        "$\\False$",
+        "$\\True$",
+        "$!A$",
+        "$!B$",
+        "$!A\\land!B$",
+        "$\\True$",
+        "$\\True$",
+        "$\\True$",
+        "$\\True$",
+        "$\\False$",
+        "$\\False$",
+        "$\\False$",
+        "$\\True$",
+        "$\\False$",
+        "$\\False$",
+        "$\\False$",
+        "$\\False$",
+        "$!A$",
+        "$!B$",
+        "$!A\\lor!B$",
+        "$\\True$",
+        "$\\True$",
+        "$\\True$",
+        "$\\True$",
+        "$\\False$",
+        "$\\True$",
+        "$\\False$",
+        "$\\True$",
+        "$\\True$",
+        "$\\False$",
+        "$\\False$",
+        "$\\False$",
+        "$!A$",
+        "$!B$",
+        "$!A\\lif!B$",
+        "$\\True$",
+        "$\\True$",
+        "$\\True$",
+        "$\\True$",
+        "$\\False$",
+        "$\\False$",
+        "$\\False$",
+        "$\\True$",
+        "$\\True$",
+        "$\\False$",
+        "$\\False$",
+        "$\\True$",
+        "$!A$",
+        "$!B$",
+        "$!A\\liff!B$",
+        "$\\True$",
+        "$\\True$",
+        "$\\True$",
+        "$\\True$",
+        "$\\False$",
+        "$\\False$",
+        "$\\False$",
+        "$\\True$",
+        "$\\False$",
+        "$\\False$",
+        "$\\False$",
+        "$\\True$",
+        "$\\Lang{L_0}$",
+        "$\\diamondsuit$",
+        "$\\pValue{v}(!A)=\\True$",
+        "$\\pValue{v}(!A)=\\False$",
+        "$\\pAssign{v_1}$",
+        "$\\pAssign{v_2}$",
+        "$!A$",
+        "$\\pAssign{v_1}(\\Objp_n)=\\pAssign{v_2}(\\Objp_n)$",
+        "$\\Objp_n$",
+        "$!A$",
+        "$\\pValue{v_1}$",
+        "$\\pValue{v_2}$",
+        "$!A$",
+        "$\\pValue{v_1}(!A)=\\pValue{v_2}(!A)$",
+        "$!A$",
+        "$!A$",
+        "$\\pAssign{v}$",
+        "$\\pSat{v}{!A}$",
+        "$\\pSat/{v}{!A}$",
+        "$\\pSat{v}{!A}$",
+        "$\\pSat/{v}{\\indfrm}$",
+        "$\\pSat{v}{\\indfrm}$",
+        "$\\pSat{v}{\\indfrm}$",
+        "$\\pAssign{v}(\\Objp_i)=\\True$",
+        "$\\pSat{v}{\\indfrm}$",
+        "$\\pSat/{v}{!B}$",
+        "$\\pSat{v}{\\indfrm}$",
+        "$\\pSat{v}{!B}$",
+        "$\\pSat{v}{!C}$",
+        "$\\pSat{v}{\\indfrm}$",
+        "$\\pSat{v}{!B}$",
+        "$\\pSat{v}{!C}$",
+        "$\\pSat{v}{\\indfrm}$",
+        "$\\pSat/{v}{!B}$",
+        "$\\pSat{v}{!C}$",
+        "$\\pSat{v}{\\indfrm}$",
+        "$\\pSat{v}{!B}$",
+        "$\\pSat{v}{!C}$",
+        "$\\pSat{v}{!B}$",
+        "$\\pSat{v}{!C}$",
+        "$\\Gamma$",
+        "$\\pSat{v}{\\Gamma}$",
+        "$\\pSat{v}{!A}$",
+        "$!A\\in\\Gamma$",
+        "$\\pSat{v}{!A}$",
+        "$\\pValue{v}(!A)=\\True$",
+        "$!A$"
+      ],
+      "math_target_core": [
+        "$\\{\\True,\\False\\}$",
+        "$\\Lang{L_0}$",
+        "$\\True$",
+        "$\\False$",
+        "$\\pAssign{v}$",
+        "$\\pAssign{v}\\colon\\PVar\\to\\{\\True,\\False\\}$",
+        "$\\pAssign{v}$",
+        "$\\pValue{v}\\colon\\Frm[L_0]\\to\\{\\True,\\False\\}$",
+        "\\begin{align*}\\iftag{prvFalse}{\\pValue{v}(\\lfalse)&=\\False;\\\\}{}\\iftag{prvTrue}{\\pValue{v}(\\ltrue)&=\\True;\\\\}{}\\pValue{v}(\\Objp_n)&=\\pAssign{v}(\\Objp_n);\\\\\\iftag{prvNot}{\\pValue{v}(\\lnot!A)&=\\begin{cases}\\True&\\pValue{v}(!A)=\\False;\\\\\\False&\\end{cases}\\\\}{}\\iftag{prvAnd}{\\pValue{v}(!A\\land!B)&=\\begin{cases}\\True&\\\\\\False&.\\end{cases}\\\\}{}\\iftag{prvOr}{\\pValue{v}(!A\\lor!B)&=\\begin{cases}\\True&\\\\\\False&.\\end{cases}\\\\}{}\\iftag{prvIf}{\\pValue{v}(!A\\lif!B)&=\\begin{cases}\\True&\\\\\\False&.\\end{cases}\\\\}{}\\iftag{prvIff}{\\pValue{v}(!A\\liff!B)&=\\begin{cases}\\True&\\\\\\False&.\\end{cases}}{}\\end{align*}",
+        "$!A$",
+        "$\\lnot!A$",
+        "$\\True$",
+        "$\\False$",
+        "$\\False$",
+        "$\\True$",
+        "$!A$",
+        "$!B$",
+        "$!A\\land!B$",
+        "$\\True$",
+        "$\\True$",
+        "$\\True$",
+        "$\\True$",
+        "$\\False$",
+        "$\\False$",
+        "$\\False$",
+        "$\\True$",
+        "$\\False$",
+        "$\\False$",
+        "$\\False$",
+        "$\\False$",
+        "$!A$",
+        "$!B$",
+        "$!A\\lor!B$",
+        "$\\True$",
+        "$\\True$",
+        "$\\True$",
+        "$\\True$",
+        "$\\False$",
+        "$\\True$",
+        "$\\False$",
+        "$\\True$",
+        "$\\True$",
+        "$\\False$",
+        "$\\False$",
+        "$\\False$",
+        "$!A$",
+        "$!B$",
+        "$!A\\lif!B$",
+        "$\\True$",
+        "$\\True$",
+        "$\\True$",
+        "$\\True$",
+        "$\\False$",
+        "$\\False$",
+        "$\\False$",
+        "$\\True$",
+        "$\\True$",
+        "$\\False$",
+        "$\\False$",
+        "$\\True$",
+        "$!A$",
+        "$!B$",
+        "$!A\\liff!B$",
+        "$\\True$",
+        "$\\True$",
+        "$\\True$",
+        "$\\True$",
+        "$\\False$",
+        "$\\False$",
+        "$\\False$",
+        "$\\True$",
+        "$\\False$",
+        "$\\False$",
+        "$\\False$",
+        "$\\True$",
+        "$\\Lang{L_0}$",
+        "$\\diamondsuit$",
+        "$\\pValue{v}(!A)=\\True$",
+        "$\\pValue{v}(!A)=\\False$",
+        "$\\pAssign{v_1}$",
+        "$\\pAssign{v_2}$",
+        "$!A$",
+        "$!A$",
+        "$\\Objp_n$",
+        "$\\pAssign{v_1}(\\Objp_n)=\\pAssign{v_2}(\\Objp_n)$",
+        "$\\pValue{v_1}$",
+        "$\\pValue{v_2}$",
+        "$!A$",
+        "$\\pValue{v_1}(!A)=\\pValue{v_2}(!A)$",
+        "$!A$",
+        "$!A$",
+        "$\\pAssign{v}$",
+        "$\\pSat{v}{!A}$",
+        "$\\pSat{v}{!A}$",
+        "$\\pSat/{v}{!A}$",
+        "$\\pSat/{v}{\\indfrm}$",
+        "$\\pSat{v}{\\indfrm}$",
+        "$\\pSat{v}{\\indfrm}$",
+        "$\\pAssign{v}(\\Objp_i)=\\True$",
+        "$\\pSat{v}{\\indfrm}$",
+        "$\\pSat/{v}{!B}$",
+        "$\\pSat{v}{\\indfrm}$",
+        "$\\pSat{v}{!B}$",
+        "$\\pSat{v}{!C}$",
+        "$\\pSat{v}{\\indfrm}$",
+        "$\\pSat{v}{!B}$",
+        "$\\pSat{v}{!C}$",
+        "$\\pSat{v}{\\indfrm}$",
+        "$\\pSat/{v}{!B}$",
+        "$\\pSat{v}{!C}$",
+        "$\\pSat{v}{\\indfrm}$",
+        "$\\pSat{v}{!B}$",
+        "$\\pSat{v}{!C}$",
+        "$\\pSat{v}{!B}$",
+        "$\\pSat{v}{!C}$",
+        "$\\Gamma$",
+        "$\\pSat{v}{\\Gamma}$",
+        "$!A\\in\\Gamma$",
+        "$\\pSat{v}{!A}$",
+        "$\\pSat{v}{!A}$",
+        "$\\pValue{v}(!A)=\\True$",
+        "$!A$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [
+        "OLTEPLSYN-004"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1093,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: propositional-logic\n% Chapter: syntax-and-semantics\n% Section: valuations-sat",
+          "target_start": "% Part: propositional-logic\n% Chapter: syntax-and-semantics\n% Section: valuations-sat"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{pl}{syn}{val}",
+          "target_start": "\\olfileid{pl}{syn}{val}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{\\usetoken{P}{valuation} and Satisfaction}",
+          "target_start": "\\olsection{\\usetoken{P}{valuation} మరియు సంతృప్తి}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}[!!^{valuation}s]\nLet $\\{\\True, \\False\\}$ be the set of the two truth values, ``true''\nand ``false",
+          "target_start": "\\begin{defn}[!!^{valuation}s]\n“సత్యం,” “అసత్యం” అనే రెండు సత్యమూల్యాల సమితి\n$\\{\\True, \\False\\}$ అనుకుందాం. $\\L"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}\n  Given !!a{valuation}~$\\pAssign{v}$, define the evaluation function\n  $\\pValue{v} \\colon \\Frm[L_",
+          "target_start": "\\begin{defn}\n  ఒక !!a{valuation}~$\\pAssign{v}$ ఇచ్చినప్పుడు, మూల్యాంకన ప్రమేయం\n  $\\pValue{v} \\colon \\Frm[L_0] "
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{explain}\nThe clauses correspond to the following truth tables:\n\\begin{center}\n\\iftag{prvNot}{\n  \\begin{",
+          "target_start": "\\begin{explain}\nఈ ఉపవాక్యాలు కింది సత్య పట్టికలకు సరిపోతాయి:\n\\begin{center}\n\\iftag{prvNot}{\n  \\begin{tabular}{"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{prob}\nConsider adding to $\\Lang{L_0}$ a ternary connective $\\diamondsuit$\nwith evaluation given by\n\\beg",
+          "target_start": "\\begin{prob}\n$\\Lang{L_0}$కు $\\diamondsuit$ అనే త్రిస్థాన సంయోజకాన్ని చేర్చడాన్ని\nపరిశీలించండి; దాని మూల్యాంకనం"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{thm}[Local Determination]\n\\ollabel{thm:LocalDetermination} Suppose that $\\pAssign{v_1}$ and\n$\\pAssign{v",
+          "target_start": "\\begin{thm}[స్థానిక నిర్ణయితత్వం]\n\\ollabel{thm:LocalDetermination} $\\pAssign{v_1}$, $\\pAssign{v_2}$ అనే\n!!{val"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{proof}\nBy induction on $!A$.\n\\end{proof}",
+          "target_start": "\\begin{proof}\n$!A$పై ఆగమనం ద్వారా.\n\\end{proof}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{defn}[Satisfaction]\n\\ollabel{defn:satisfaction} We can inductively define the notion of\n  \\emph{satisfa",
+          "target_start": "\\begin{defn}[సంతృప్తి]\n\\ollabel{defn:satisfaction} \\emph{ఒక !!a{formula}~$!A$ను\n  !!a{valuation}~$\\pAssign{v}$"
+        },
+        {
+          "index": 13,
+          "source_start": "\\tagitem{prvTrue}{%\n  \\indcase{!A}{\\ltrue}{$\\pSat{v}{\\indfrm}$.}}{}",
+          "target_start": "\\tagitem{prvTrue}{%\n  \\indcase{!A}{\\ltrue}{$\\pSat{v}{\\indfrm}$.}}{}"
+        },
+        {
+          "index": 14,
+          "source_start": "\\item \\indcase{!A}{\\Obj p_i}{$\\pSat{v}{\\indfrm}$\n  iff $\\pAssign{v}(\\Obj p_i) = \\True$.}",
+          "target_start": "\\item \\indcase{!A}{\\Obj p_i}{$\\pSat{v}{\\indfrm}$ కావడం,\n  $\\pAssign{v}(\\Obj p_i) = \\True$ అయినప్పుడూ, అప్పుడు "
+        },
+        {
+          "index": 15,
+          "source_start": "\\tagitem{prvNot}{%\n  \\indcase{!A}{\\lnot !B}{$\\pSat{v}{\\indfrm}$ iff\n    $\\pSat/{v}{!B}$.}}{}",
+          "target_start": "\\tagitem{prvNot}{%\n  \\indcase{!A}{\\lnot !B}{$\\pSat{v}{\\indfrm}$ కావడం,\n    $\\pSat/{v}{!B}$ అయినప్పుడూ, అప్పుడు"
+        },
+        {
+          "index": 16,
+          "source_start": "\\tagitem{prvAnd}{%\n  \\indcase{!A}{(!B \\land !C)}{$\\pSat{v}{\\indfrm}$ iff $\\pSat{v}{!B}$\n    and $\\pSat{v}{!C}$",
+          "target_start": "\\tagitem{prvAnd}{%\n  \\indcase{!A}{(!B \\land !C)}{$\\pSat{v}{\\indfrm}$ కావడం,\n    $\\pSat{v}{!B}$ మరియు $\\pSat{v}"
+        },
+        {
+          "index": 17,
+          "source_start": "\\tagitem{prvOr}{%\n  \\indcase{!A}{(!B \\lor !C)}{$\\pSat{v}{\\indfrm}$ iff\n    $\\pSat{v}{!B}$ or $\\pSat{v}{!C}$ (o",
+          "target_start": "\\tagitem{prvOr}{%\n  \\indcase{!A}{(!B \\lor !C)}{$\\pSat{v}{\\indfrm}$ కావడం,\n    $\\pSat{v}{!B}$ లేదా $\\pSat{v}{!C"
+        },
+        {
+          "index": 18,
+          "source_start": "\\tagitem{prvIf}{%\n  \\indcase{!A}{(!B \\lif !C)}{$\\pSat{v}{\\indfrm}$ iff $\\pSat/{v}{!B}$\n    or $\\pSat{v}{!C}$ (",
+          "target_start": "\\tagitem{prvIf}{%\n  \\indcase{!A}{(!B \\lif !C)}{$\\pSat{v}{\\indfrm}$ కావడం,\n    $\\pSat/{v}{!B}$ లేదా $\\pSat{v}{!"
+        },
+        {
+          "index": 19,
+          "source_start": "\\tagitem{prvIff}{%\n  \\indcase{!A}{(!B \\liff !C)}{$\\pSat{v}{\\indfrm}$ iff either both\n    $\\pSat{v}{!B}$ and $\\",
+          "target_start": "\\tagitem{prvIff}{%\n  \\indcase{!A}{(!B \\liff !C)}{$\\pSat{v}{\\indfrm}$ కావడం,\n    $\\pSat{v}{!B}$, $\\pSat{v}{!C}$"
+        },
+        {
+          "index": 20,
+          "source_start": "\\begin{prop}\\ollabel{prop:sat-value}\n  $\\pSat{v}{!A}$ iff $\\pValue{v}(!A) = \\True$.\n\\end{prop}",
+          "target_start": "\\begin{prop}\\ollabel{prop:sat-value}\n  $\\pSat{v}{!A}$ కావడం, $\\pValue{v}(!A) = \\True$ అయినప్పుడూ,\n  అప్పుడు మా"
+        },
+        {
+          "index": 21,
+          "source_start": "\\begin{proof}\n  By induction on~$!A$.\n\\end{proof}",
+          "target_start": "\\begin{proof}\n  $!A$పై ఆగమనం ద్వారా.\n\\end{proof}"
+        },
+        {
+          "index": 22,
+          "source_start": "\\begin{prob}\n  Prove \\olref[pl][syn][val]{prop:sat-value}\n\\end{prob}",
+          "target_start": "\\begin{prob}\n  \\olref[pl][syn][val]{prop:sat-value}ను నిరూపించండి.\n\\end{prob}"
+        },
+        {
+          "index": 23,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{pl}{syn}{val}",
+        "\\ollabel{thm:LocalDetermination}",
+        "\\ollabel{defn:satisfaction}",
+        "\\ollabel{prop:sat-value}",
+        "\\olref[pl][syn][val]{prop:sat-value}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{pl}{syn}{val}",
+        "\\ollabel{thm:LocalDetermination}",
+        "\\ollabel{defn:satisfaction}",
+        "\\ollabel{prop:sat-value}",
+        "\\olref[pl][syn][val]{prop:sat-value}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0062",
+      "source_path": "content/propositional-logic/syntax-and-semantics/semantic-notions.tex",
+      "source_sha256": "992456e01aa355799eabea11dc7d2a49a5f1a0f0ebeef05d36f86603c0f06d39",
+      "translation_sha256": "866d46c1c0eb5c70bae08eb3327456658fa66c64b9915fbbbc3a40982cfc034b",
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{pl}{syn}{sem}",
+        "\\ollabel{prop:semanticalfacts}",
+        "\\ollabel{def:monotonicity}",
+        "\\ollabel{def:Cut}",
+        "\\olref[pl][syn][sem]{prop:semanticalfacts}",
+        "\\ollabel{prop:entails-unsat}",
+        "\\olref[pl][syn][sem]{prop:entails-unsat}",
+        "\\ollabel{thm:sem-deduction}",
+        "\\olref[pl][syn][sem]{thm:sem-deduction}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{pl}{syn}{sem}",
+        "\\ollabel{prop:semanticalfacts}",
+        "\\ollabel{def:monotonicity}",
+        "\\ollabel{def:Cut}",
+        "\\olref[pl][syn][sem]{prop:semanticalfacts}",
+        "\\ollabel{prop:entails-unsat}",
+        "\\olref[pl][syn][sem]{prop:entails-unsat}",
+        "\\ollabel{thm:sem-deduction}",
+        "\\olref[pl][syn][sem]{thm:sem-deduction}"
+      ],
+      "tokens_source": {
+        "!!^a{formula}": 3,
+        "!!a{valuation}": 1,
+        "!!{formula}s": 3,
+        "!!{valuation}": 1,
+        "!!{valuation}s": 1
+      },
+      "tokens_target": {
+        "!!^a{formula}": 3,
+        "!!a{valuation}": 1,
+        "!!{formula}s": 3,
+        "!!{valuation}": 1,
+        "!!{valuation}s": 1
+      },
+      "math_source": [
+        "$!A$",
+        "$\\pAssign{v}$",
+        "$\\pSat{v}{!A}$",
+        "$\\pAssign{v}$",
+        "$\\pSat{v}{!A}$",
+        "$!A$",
+        "$\\pSat{v}{!A}$",
+        "$\\pAssign{v}$",
+        "$!A$",
+        "$\\Gamma$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\pSat{v}{!A}$",
+        "$\\pAssign{v}$",
+        "$\\pSat{v}{\\Gamma}$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\pAssign{v}$",
+        "$\\pSat{v}{\\Gamma}$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\emptyset\\Entails!A$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma\\Entails!A\\lif!B$",
+        "$\\Gamma\\Entails!B$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma\\subseteq\\Delta$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Delta\\Entails!A$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Delta\\cup\\{!A\\}\\Entails!B$",
+        "$\\Gamma\\cup\\Delta\\Entails!B$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma\\cup\\{\\lnot!A\\}$",
+        "$\\Gamma\\Entails!A\\lif!B$",
+        "$\\Gamma\\cup\\{!A\\}\\Entails!B$"
+      ],
+      "math_target_core": [
+        "$\\pAssign{v}$",
+        "$\\pSat{v}{!A}$",
+        "$!A$",
+        "$\\pAssign{v}$",
+        "$\\pSat{v}{!A}$",
+        "$\\pAssign{v}$",
+        "$\\pSat{v}{!A}$",
+        "$!A$",
+        "$!A$",
+        "$\\Gamma$",
+        "$\\pSat{v}{\\Gamma}$",
+        "$\\pAssign{v}$",
+        "$\\pSat{v}{!A}$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma$",
+        "$\\pAssign{v}$",
+        "$\\pSat{v}{\\Gamma}$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\emptyset\\Entails!A$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma\\Entails!A\\lif!B$",
+        "$\\Gamma\\Entails!B$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma\\subseteq\\Delta$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Delta\\Entails!A$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Delta\\cup\\{!A\\}\\Entails!B$",
+        "$\\Gamma\\cup\\Delta\\Entails!B$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma\\cup\\{\\lnot!A\\}$",
+        "$\\Gamma\\Entails!A\\lif!B$",
+        "$\\Gamma\\cup\\{!A\\}\\Entails!B$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 675,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: propositional-logic\n% Chapter: syntax-and-semantics\n% Section: semantic-notions",
+          "target_start": "% Part: propositional-logic\n% Chapter: syntax-and-semantics\n% Section: semantic-notions"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{pl}{syn}{sem}",
+          "target_start": "\\olfileid{pl}{syn}{sem}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Semantic Notions}",
+          "target_start": "\\olsection{అర్థపర భావనలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "We define the following semantic notions:",
+          "target_start": "కింది అర్థపర భావనలను నిర్వచిస్తాం:"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn} \n\\begin{enumerate}\n\\item !!^a{formula}~$!A$ is \\emph{satisfiable} if for\n  some~$\\pAssign{v}$, $\\",
+          "target_start": "\\begin{defn}\n\\begin{enumerate}\n\\item ఏదో~$\\pAssign{v}$కు $\\pSat{v}{!A}$ అయితే\n  !!^a{formula}~$!A$ \\emph{సంతృప"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{prob} \n For each of the following four !!{formula}s determine whether it\n is (a)~satisfiable, (b)~tauto",
+          "target_start": "\\begin{prob}\n కింది నాలుగు !!{formula}sలో ప్రతి ఒక్కటీ (a)~సంతృప్తిపరచదగినదా,\n (b)~సర్వసత్యమా, (c)~పరిస్థిత్యా"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{prop}\n\\ollabel{prop:semanticalfacts} \n\\begin{enumerate} \n\\item $!A$ is a tautology if and only if\n  $\\e",
+          "target_start": "\\begin{prop}\n\\ollabel{prop:semanticalfacts}\n\\begin{enumerate}\n\\item $!A$ ఒక సర్వసత్యం అయినప్పుడూ, అప్పుడు మాత్"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{proof}\nExercise.\n\\end{proof}",
+          "target_start": "\\begin{proof}\nసాధన.\n\\end{proof}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{prob}\nProve \\olref[pl][syn][sem]{prop:semanticalfacts}\n\\end{prob}",
+          "target_start": "\\begin{prob}\n\\olref[pl][syn][sem]{prop:semanticalfacts}ను నిరూపించండి.\n\\end{prob}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{prop}\\ollabel{prop:entails-unsat}\n  $\\Gamma \\Entails !A$ if and only if $\\Gamma \\cup \\{\\lnot !A\\}$\n  is",
+          "target_start": "\\begin{prop}\\ollabel{prop:entails-unsat}\n  $\\Gamma \\Entails !A$ అయినప్పుడూ, అప్పుడు మాత్రమే\n  $\\Gamma \\cup \\{\\"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{proof}\nExercise.\n\\end{proof}",
+          "target_start": "\\begin{proof}\nసాధన.\n\\end{proof}"
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{prob}\nProve \\olref[pl][syn][sem]{prop:entails-unsat}\n\\end{prob}",
+          "target_start": "\\begin{prob}\n\\olref[pl][syn][sem]{prop:entails-unsat}ను నిరూపించండి.\n\\end{prob}"
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{thm}[Semantic Deduction Theorem]\n  \\ollabel{thm:sem-deduction} $\\Gamma \\Entails !A \\lif !B$ if and only",
+          "target_start": "\\begin{thm}[అర్థపర నిగమన సిద్ధాంతం]\n  \\ollabel{thm:sem-deduction} $\\Gamma \\Entails !A \\lif !B$\n  అయినప్పుడూ, అ"
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{proof}\nExercise.\n\\end{proof}",
+          "target_start": "\\begin{proof}\nసాధన.\n\\end{proof}"
+        },
+        {
+          "index": 17,
+          "source_start": "\\begin{prob}\nProve \\olref[pl][syn][sem]{thm:sem-deduction}\n\\end{prob}",
+          "target_start": "\\begin{prob}\n\\olref[pl][syn][sem]{thm:sem-deduction}ను నిరూపించండి.\n\\end{prob}"
+        },
+        {
+          "index": 18,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{pl}{syn}{sem}",
+        "\\ollabel{prop:semanticalfacts}",
+        "\\ollabel{def:monotonicity}",
+        "\\ollabel{def:Cut}",
+        "\\olref[pl][syn][sem]{prop:semanticalfacts}",
+        "\\ollabel{prop:entails-unsat}",
+        "\\olref[pl][syn][sem]{prop:entails-unsat}",
+        "\\ollabel{thm:sem-deduction}",
+        "\\olref[pl][syn][sem]{thm:sem-deduction}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{pl}{syn}{sem}",
+        "\\ollabel{prop:semanticalfacts}",
+        "\\ollabel{def:monotonicity}",
+        "\\ollabel{def:Cut}",
+        "\\olref[pl][syn][sem]{prop:semanticalfacts}",
+        "\\ollabel{prop:entails-unsat}",
+        "\\olref[pl][syn][sem]{prop:entails-unsat}",
+        "\\ollabel{thm:sem-deduction}",
+        "\\olref[pl][syn][sem]{thm:sem-deduction}"
+      ],
+      "protected_identifier_parity": true
+    }
+  ]
+}

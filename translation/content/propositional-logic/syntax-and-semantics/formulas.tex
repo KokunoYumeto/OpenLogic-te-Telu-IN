@@ -1,0 +1,192 @@
+% Part: propositional-logic
+% Chapter: syntax-and-semantics
+% Section: formulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{syn}{fml}
+
+\olsection{ప్రవచన \usetoken{P}{formula}}
+
+ప్రవచన తర్కంలోని !!^{formula}sను \emph{!!{propositional
+    variable}s}\iftag{prvFalse}{\iftag{prvTrue}{,}{ మరియు} ప్రవచన
+  స్థిరాంకం~$\lfalse$}{}\iftag{prvTrue}{\iftag{prvFalse}{
+    మరియు}{} ప్రవచన స్థిరాంకం~$\ltrue$}{} నుంచి \emph{తార్కిక
+  సంయోజకాలను} ఉపయోగించి నిర్మిస్తాం.
+
+\begin{enumerate}
+\item !!{propositional variable}s $\Obj p_0$, $\Obj p_1$, \dots గల
+  !!^a{denumerable} సమితి~$\PVar$
+\tagitem{prvFalse}{!!{falsity} కోసం ప్రవచన స్థిరాంకం~$\lfalse$.}{}
+\tagitem{prvTrue}{!!{truth} కోసం ప్రవచన స్థిరాంకం~$\ltrue$.}{}
+\item తార్కిక సంయోజకాలు:
+  \startycommalist
+  \iftag{prvNot}{\ycomma $\lnot$ (నిషేధం)}{}%
+  \iftag{prvAnd}{\ycomma $\land$ (సంయోగం)}{}%
+  \iftag{prvOr}{\ycomma $\lor$ (వికల్పం)}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{prvIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+\item విరామచిహ్నాలు: (, ), మరియు కామా.
+\end{enumerate}
+
+ప్రవచన తర్కంలోని ఈ భాషను $\Lang L_0$తో సూచిస్తాం.
+
+\iftag{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}{%
+పైన పరిచయం చేసిన ప్రాథమిక సంయోజకాలతో పాటు కింది
+\emph{నిర్వచిత} సంకేతాలను కూడా వాడతాం:
+\startycommalist
+  \iftag{defNot}{\ycomma $\lnot$ (నిషేధం)}{}%
+  \iftag{defAnd}{\ycomma $\land$ (సంయోగం)}{}%
+  \iftag{defOr}{\ycomma $\lor$ (వికల్పం)}{}%
+  \iftag{defIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{defIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+  \iftag{defFalse}{\ycomma $\lfalse$ (!!{falsity})}{}%
+  \iftag{defTrue}{\ycomma $\ltrue$ (!!{truth})}{}.
+}{}
+\sourcecorrection{OLTEPLSYN-001}{ఆంగ్ల మూలంలోని చివరి defTrue ట్యాగు
+పరీక్షకు ఖాళీ అసత్య శాఖ రాకముందే బయటి ట్యాగు సమూహపు ముగింపు కుండలీకరణ
+వచ్చింది. లోపలి పరీక్షను రెండు శాఖలతో ముగించి, తరువాత బయటి పరీక్షను
+ముగిసేలా కుండలీకరణల క్రమాన్ని సరిచేశాం; పాఠ్య విషయం మారలేదు.}
+
+\begin{tagblock}{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}
+\begin{explain}
+నిర్వచిత సంకేతం అధికారికంగా భాషలో భాగం కాదు; దాన్ని అనౌపచారిక
+సంక్షిప్తీకరణగా పరిచయం చేస్తాం. ప్రాథమిక సంకేతాలను మాత్రమే వాడితే
+చాలా పొడవయ్యే సూత్రాలను సంక్షిప్తంగా రాయడానికి అది వీలు కల్పిస్తుంది.
+ఇది స్పష్టమైన ప్రయోజనం. అయితే ఇంకా పెద్ద ప్రయోజనం ఏమిటంటే నిరూపణలు
+చిన్నవవుతాయి. ఒక సంకేతం ప్రాథమికమైతే నిరూపణల్లో దాన్ని విడిగా
+నిర్వహించాలి. అందువల్ల ప్రాథమిక సంకేతాలు ఎక్కువైతే నిరూపణలు
+పొడవవుతాయి.
+\end{explain}
+\end{tagblock}
+
+% Alternate symbols
+
+\begin{intro}
+మేము పైన వాడిన వాటికి భిన్నమైన పరిభాష, సంకేతాలు మీకు పరిచయం
+ఉండవచ్చు. తర్కశాస్త్ర గ్రంథాలు (మరియు ఉపాధ్యాయులు) “నిషేధం” కోసం
+సాధారణంగా $\sim$, $\neg$, మరియు~!\ను; “సంయోగం” కోసం $\wedge$,
+$\cdot$, మరియు $\&$ను వాడుతారు. “షరతీయ సంయోజకం” లేదా “అన్వయం” కోసం
+సాధారణంగా వాడే సంకేతాలు $\rightarrow$, $\Rightarrow$, మరియు
+$\supset$.
+\iftag{prvIff,defIff}{“ద్విషరతీయ సంయోజకం,” “ద్వ్యన్వయం,” లేదా
+  “(భౌతిక) తుల్యత” కోసం $\leftrightarrow$, $\Leftrightarrow$,
+  మరియు $\equiv$ సంకేతాలు వాడతారు.}{}
+\iftag{prvFalse,defFalse}{$\lfalse$ సంకేతాన్ని “అసత్యం,” “ఫాల్సమ్,”
+  “అసంభవం,” లేదా “బాటమ్” అని వేర్వేరుగా పిలుస్తారు.}{}
+\iftag{prvTrue,defTrue}{$\ltrue$ సంకేతాన్ని “సత్యం,” “వేరమ్,” లేదా
+  “టాప్” అని వేర్వేరుగా పిలుస్తారు.}{}
+\end{intro}
+
+\begin{defn}[సూత్రం]
+\ollabel{defn:formulas}
+ప్రవచన తర్కంలోని \emph{!!{formula}s} సమితి~$\Frm[L_0]$ను కింది
+విధంగా ఆగమనాత్మకంగా నిర్వచిస్తాం:
+\begin{enumerate}
+\tagitem{prvFalse}{$\lfalse$ ఒక పరమాణు !!{formula}.}{}
+
+\tagitem{prvTrue}{$\ltrue$ ఒక పరమాణు !!{formula}.}{}
+
+\item ప్రతి !!{propositional variable}~$\Obj p_i$ ఒక పరమాణు
+  !!{formula}.
+
+\tagitem{prvNot}{$!A$ ఒక !!a{formula} అయితే, $\lnot !A$ ఒక
+  !!a{formula}.}{}
+
+\tagitem{prvAnd}{$!A$, $!B$లు !!{formula}s అయితే, $(!A \land
+  !B)$ ఒక !!a{formula}.}{}
+
+\tagitem{prvOr}{$!A$, $!B$లు !!{formula}s అయితే, $(!A \lor !B)$
+  ఒక !!a{formula}.}{}
+
+\tagitem{prvIf}{$!A$, $!B$లు !!{formula}s అయితే, $(!A \lif !B)$
+  ఒక !!a{formula}.}{}
+
+\tagitem{prvIff}{$!A$, $!B$లు !!{formula}s అయితే, $(!A \liff !B)$
+  ఒక !!a{formula}.}{}
+
+\tagitem{limitClause}{మరేదీ !!a{formula} కాదు.}{}
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+!!{formula}s నిర్వచనం ఒక \emph{ఆగమనాత్మక నిర్వచనం}. సారాంశంగా,
+!!{formula}s సమితిని అనంత దశల్లో నిర్మిస్తాం. మొదటి దశలో అన్ని
+పరమాణు సూత్రాలూ సూత్రాలని ప్రకటిస్తాం; ఇది నిర్వచనంలోని మొదటి కొన్ని
+సందర్భాలకు, అంటే
+\iftag{prvTrue}{$\ltrue$, }{}%
+\iftag{prvFalse}{$\lfalse$, }{}%
+$\Obj p_i$ సందర్భాలకు సరిపోతుంది. కాబట్టి “పరమాణు !!{formula}”
+అంటే ఈ రూపాల్లో ఏదో ఒక రూపంలో ఉన్న !!{formula}.
+
+నిర్వచనంలోని మిగతా సందర్భాలు, అప్పటికే నిర్మించిన !!{formula}s
+నుంచి కొత్త !!{formula}sను నిర్మించే నియమాలను ఇస్తాయి. రెండవ దశలో
+వాటిని ఉపయోగించి పరమాణు !!{formula}s నుంచి !!{formula}sను
+నిర్మించవచ్చు. మూడవ దశలో పరమాణు సూత్రాలు, రెండవ దశలో పొందిన
+సూత్రాల నుంచి కొత్త సూత్రాలను నిర్మిస్తాం; ఇలాగే కొనసాగిస్తాం.
+అటువంటి ఏదో ఒక దశలో చివరికి నిర్మితమయ్యేదే !!{formula}; మరేదీ
+సూత్రం కాదు.
+\end{explain}
+
+$!B$, $!C$ల నుంచి ద్విస్థాన సంయోజకం~$\ast$ను ఉపయోగించి నిర్మించిన
+$(!B \ast !C)$ అనే సూత్రాన్ని రాసేటప్పుడు, బయటివైపు ఉన్న
+కుండలీకరణల జతను తరచుగా వదిలి, కేవలం~$!B \ast !C$ అని రాస్తాం.
+
+\begin{tagblock}{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}
+\begin{defn}
+నిర్వచిత సంయోజకాలతో నిర్మించిన సూత్రాలను కింది విధంగా అర్థం
+చేసుకోవాలి:
+
+\begin{tagenumerate}{defTrue,defFalse,defNot,defOr,defAnd,defIf,defIff,defEx,defAll}
+
+\tagitem{defTrue}{$\ltrue$ అనేది
+  \iftag{prvFalse}{$\lnot\lfalse$}{ఏదో స్థిర పరమాణు
+    !!{formula}~$!A$కు $(!A \lor \lnot !A)$}కు సంక్షిప్త రూపం.}{}
+
+\tagitem{defFalse}{$\lfalse$ అనేది
+  \iftag{prvTrue}{$\lnot\ltrue$}{ఏదో స్థిర పరమాణు
+    !!{formula}~$!A$కు $(!A \land \lnot !A)$}కు సంక్షిప్త రూపం.}{}
+
+\tagitem{defNot}{$\lnot !A$ అనేది $!A \lif \lfalse$కు సంక్షిప్త
+  రూపం.}{}
+
+\tagitem{defOr}{$!A \lor !B$ అనేది
+  \iftag{prvAnd}{$\lnot(\lnot !A \land \lnot !B)$}{$\lnot !A \lif
+    !B$}కు సంక్షిప్త రూపం.}{}
+
+\tagitem{defAnd}{$!A \land !B$ అనేది
+  \iftag{prvOr}{$\lnot(\lnot !A \lor \lnot !B)$}{$\lnot (!A \lif
+    \lnot !B)$}కు సంక్షిప్త రూపం.}{}
+
+\tagitem{defIf}{$!A \lif !B$ అనేది
+  \iftag{prvOr}{$\lnot !A \lor !B$}{$\lnot (!A \land \lnot !B)$}కు
+  సంక్షిప్త రూపం.}{}
+\sourcecorrection{OLTEPLSYN-002}{ఆంగ్ల మూలంలోని మొదటి సంక్షిప్త
+సూత్రం చివర సరిపోలే ఎడమ కుండలీకరణ లేని కుడి కుండలీకరణ ఉంది. బయటివైపు
+కుండలీకరణలను వదలవచ్చనే ముందు నియమానికి అనుగుణంగా ఆ అదనపు కుడి
+కుండలీకరణను మాత్రమే తొలగించాం.}
+
+\tagitem{defIff}{$!A \liff !B$ అనేది $(!A \lif !B) \land (!B
+  \lif !A)$కు సంక్షిప్త రూపం.}{}
+\end{tagenumerate}
+\end{defn}
+\end{tagblock}
+
+\begin{defn}[వాక్యనిర్మాణ తాదాత్మ్యం]
+$\ident$ సంకేతం సంకేతమాలల మధ్య వాక్యనిర్మాణ తాదాత్మ్యాన్ని
+వ్యక్తపరుస్తుంది; అంటే, $!A \ident !B$ కావడం, $!A$, $!B$లు ఒకే
+పొడవు గల సంకేతమాలలై, ప్రతి స్థానంలో ఒకే సంకేతాన్ని కలిగి
+ఉన్నప్పుడూ, అప్పుడు మాత్రమే.
+\end{defn}
+
+$\ident$ సంకేతానికి ఇరువైపులా సంధానం ద్వారా పొందిన సంకేతమాలలు
+ఉండవచ్చు. ఉదాహరణకు, $!A \ident (!B \lor !C)$ అంటే: తెరచే
+కుండలీకరణ, $!B$ అనే సంకేతమాల, $\lor$ సంకేతం, $!C$ అనే
+సంకేతమాల, మూసే కుండలీకరణలను ఈ క్రమంలో సంధానించి పొందిన సంకేతమాలే
+$!A$. అలా అయితే $!A$లోని మొదటి సంకేతం తెరచే కుండలీకరణ అని, రెండవ
+సంకేతం వద్ద మొదలయ్యే ఉపమాలగా $!B$ను $!A$ కలిగి ఉందని, ఆ ఉపమాల
+తరువాత $\lor$ వస్తుందని, తదితర విషయాలను తెలుసుకుంటాం.
+
+\end{document}

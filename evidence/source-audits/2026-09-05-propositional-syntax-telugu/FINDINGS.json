@@ -1,0 +1,55 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTEPLSYN-20260905",
+  "created_utc": "2026-09-04T22:35:00Z",
+  "status": "confirmed_against_frozen_source_and_immediate_controlling_context",
+  "scope": {
+    "chapter": "Propositional Logic — Syntax and Semantics",
+    "unit_ids": ["OLP-0055", "OLP-0056", "OLP-0057", "OLP-0058", "OLP-0059", "OLP-0060", "OLP-0061", "OLP-0062"],
+    "finding_count": 4
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEPLSYN-001",
+      "unit_id": "OLP-0058",
+      "classification": "confirmed_malformed_nested_tag_closure",
+      "source": {"path": "content/propositional-logic/syntax-and-semantics/formulas.tex", "bytes": 7021, "sha256": "f05ab9c5e23b362dbee9f6063f096f52ebc9e7f97b29acc9c07f18788f1f8f48", "locator": "lines 37-47"},
+      "finding": "The final inner defTrue tag test has no empty false arm before the outer tag block closes; the existing closing braces make the inner macro consume the outer group terminator as its third argument.",
+      "controlling_evidence": "Every neighboring iftag call has a true and false arm, and the outer iftag opened on line 37 also requires its own closing true arm and empty false arm.",
+      "required_translation_handling": "Write the inner form as iftag{defTrue}{...}{}, then close the outer form with }{}; add an adjacent OLTEPLSYN-001 note."
+    },
+    {
+      "finding_id": "OLTEPLSYN-002",
+      "unit_id": "OLP-0058",
+      "classification": "confirmed_unmatched_parenthesis_in_defined_conditional",
+      "source": {"path": "content/propositional-logic/syntax-and-semantics/formulas.tex", "bytes": 7021, "sha256": "f05ab9c5e23b362dbee9f6063f096f52ebc9e7f97b29acc9c07f18788f1f8f48", "locator": "lines 158-159"},
+      "finding": "The prvOr branch says the material conditional abbreviates not-A-or-B followed by a closing parenthesis for which no opening parenthesis occurs.",
+      "controlling_evidence": "The intended classical equivalence is A→B iff not-A or B; the chapter explicitly allows omission of the outermost parenthesis.",
+      "required_translation_handling": "Remove only the unmatched closing parenthesis and add an adjacent OLTEPLSYN-002 note."
+    },
+    {
+      "finding_id": "OLTEPLSYN-003",
+      "unit_id": "OLP-0060",
+      "classification": "confirmed_wrong_identity_symbol_in_formation_proof",
+      "source": {"path": "content/propositional-logic/syntax-and-semantics/formation-sequences.tex", "bytes": 5278, "sha256": "fff70555c1ef515d9092e72c91496aa898f74e4dd41e4cadc82f49a30c5850f5", "locator": "lines 140-149"},
+      "finding": "The conjunction case uses equiv between A and the constructed symbol string even though the formation-sequence definition and preceding cases all use ident for syntactic identity.",
+      "controlling_evidence": "OLP-0058 defines ident as equality of symbol strings; OLP-0060's formation clauses use ident, and the proof must conclude that the last string has the displayed parse, not merely that two formulas are semantically equivalent.",
+      "required_translation_handling": "Replace equiv by ident in that proof step and add an adjacent OLTEPLSYN-003 note."
+    },
+    {
+      "finding_id": "OLTEPLSYN-004",
+      "unit_id": "OLP-0061",
+      "classification": "confirmed_fixed_formula_scope_ambiguity",
+      "source": {"path": "content/propositional-logic/syntax-and-semantics/valuations-sat.tex", "bytes": 5992, "sha256": "9f0b5ecd5a8462ab5d970546602a1a0b0e46e5908c6a0f46369f93543583f882", "locator": "lines 133-140"},
+      "finding": "The theorem correctly requires agreement on variables occurring in fixed A, but its i.e. clause says a variable occurs in some formula A, which under an existential reading applies to every propositional variable.",
+      "controlling_evidence": "The theorem heading and conclusion both concern the already fixed formula A; Local Determination requires only the variables occurring in that formula.",
+      "required_translation_handling": "Render the explanatory clause as occurrence in the fixed formula A and add an adjacent OLTEPLSYN-004 note."
+    }
+  ]
+}

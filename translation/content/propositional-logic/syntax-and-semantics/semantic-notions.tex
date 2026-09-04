@@ -1,0 +1,98 @@
+% Part: propositional-logic
+% Chapter: syntax-and-semantics
+% Section: semantic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{syn}{sem}
+
+\olsection{అర్థపర భావనలు}
+
+కింది అర్థపర భావనలను నిర్వచిస్తాం:
+
+\begin{defn}
+\begin{enumerate}
+\item ఏదో~$\pAssign{v}$కు $\pSat{v}{!A}$ అయితే
+  !!^a{formula}~$!A$ \emph{సంతృప్తిపరచదగినది}; ఏ
+  $\pAssign{v}$కూ $\pSat{v}{!A}$ కాకపోతే అది
+  \emph{సంతృప్తిపరచలేనిది};
+\item అన్ని !!{valuation}s~$\pAssign{v}$కు $\pSat{v}{!A}$ అయితే
+  !!^a{formula}~$!A$ ఒక \emph{సర్వసత్యం};
+\item !!^a{formula}~$!A$ సంతృప్తిపరచదగినదై, సర్వసత్యం కాకపోతే అది
+  \emph{పరిస్థిత్యాధీనమైనది};
+\item $\Gamma$ ఒక !!{formula}s సమితి అయితే, $\pSat{v}{\Gamma}$ అయ్యే
+  ప్రతి !!{valuation}~$\pAssign{v}$కు $\pSat{v}{!A}$ అయినప్పుడూ,
+  అప్పుడు మాత్రమే $\Gamma \Entails !A$ (“$\Gamma$ నుంచి $!A$
+  అర్థపరంగా అనుగమిస్తుంది”).
+\item $\Gamma$ ఒక !!{formula}s సమితి అయితే, ఏదో
+  !!a{valuation}~$\pAssign{v}$కు $\pSat{v}{\Gamma}$ అయినప్పుడు
+  $\Gamma$ \emph{సంతృప్తిపరచదగినది}; లేకపోతే $\Gamma$
+  \emph{సంతృప్తిపరచలేనిది}.
+\end{enumerate}
+\end{defn}
+
+\begin{prob}
+ కింది నాలుగు !!{formula}sలో ప్రతి ఒక్కటీ (a)~సంతృప్తిపరచదగినదా,
+ (b)~సర్వసత్యమా, (c)~పరిస్థిత్యాధీనమైనదా అని నిర్ణయించండి.
+\begin{enumerate}
+  \item \( ( \Obj p_0 \lif ( \lnot \Obj p_1 \lif \lnot \Obj p_0 ) ) \).
+  \item \( ( ( \Obj p_0 \land \lnot \Obj p_1 ) \lif ( \lnot \Obj p_0 \land \Obj p_2 )) \liff ( ( \Obj p_2 \lif \Obj p_0 ) \lif ( \Obj p_0 \lif \Obj p_1 )) \).
+  \item \( ( \Obj p_0 \liff \Obj p_1 ) \lif ( \Obj p_2 \liff \lnot \Obj p_1 ) \).
+  \item \( (( \Obj p_0 \liff ( \lnot \Obj p_1 \land \Obj p_2 )) \lor ( \Obj p_2 \lif ( \Obj p_0 \liff \Obj p_1 ))) \).
+\end{enumerate}
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:semanticalfacts}
+\begin{enumerate}
+\item $!A$ ఒక సర్వసత్యం అయినప్పుడూ, అప్పుడు మాత్రమే
+  $\emptyset \Entails !A$;
+\item $\Gamma \Entails !A$, $\Gamma \Entails !A \lif !B$ అయితే
+  $\Gamma \Entails !B$;
+\item $\Gamma$ సంతృప్తిపరచదగినదైతే, $\Gamma$ యొక్క ప్రతి పరిమిత
+  ఉపసమితి కూడా సంతృప్తిపరచదగినదే;
+\item \ollabel{def:monotonicity} ఏకదిశత: $\Gamma \subseteq \Delta$,
+  $\Gamma \Entails !A$ అయితే $\Delta \Entails !A$ కూడా;
+\item \ollabel{def:Cut} సంక్రమణశీలత: $\Gamma \Entails !A$,
+  $\Delta \cup \{ !A\} \Entails !B$ అయితే
+  $\Gamma \cup \Delta \Entails !B$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+సాధన.
+\end{proof}
+
+\begin{prob}
+\olref[pl][syn][sem]{prop:semanticalfacts}ను నిరూపించండి.
+\end{prob}
+
+\begin{prop}\ollabel{prop:entails-unsat}
+  $\Gamma \Entails !A$ అయినప్పుడూ, అప్పుడు మాత్రమే
+  $\Gamma \cup \{\lnot !A\}$ సంతృప్తిపరచలేనిది.
+\end{prop}
+
+\begin{proof}
+సాధన.
+\end{proof}
+
+\begin{prob}
+\olref[pl][syn][sem]{prop:entails-unsat}ను నిరూపించండి.
+\end{prob}
+
+\begin{thm}[అర్థపర నిగమన సిద్ధాంతం]
+  \ollabel{thm:sem-deduction} $\Gamma \Entails !A \lif !B$
+  అయినప్పుడూ, అప్పుడు మాత్రమే $\Gamma \cup \{!A\} \Entails !B$.
+\end{thm}
+
+\begin{proof}
+సాధన.
+\end{proof}
+
+\begin{prob}
+\olref[pl][syn][sem]{thm:sem-deduction}ను నిరూపించండి.
+\end{prob}
+
+\end{document}

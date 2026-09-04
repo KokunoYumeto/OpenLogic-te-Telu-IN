@@ -1,0 +1,211 @@
+% Part: propositional-logic
+% Chapter: syntax-and-semantics
+% Section: valuations-sat
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{syn}{val}
+
+\olsection{\usetoken{P}{valuation} మరియు సంతృప్తి}
+
+\begin{defn}[!!^{valuation}s]
+“సత్యం,” “అసత్యం” అనే రెండు సత్యమూల్యాల సమితి
+$\{\True, \False\}$ అనుకుందాం. $\Lang{L_0}$కు ఒక
+\emph{!!{valuation}} అంటే భాషలోని !!{propositional variable}sకు
+$\True$ లేదా $\False$ను కేటాయించే ప్రమేయం~$\pAssign{v}$; అంటే
+$\pAssign{v} \colon \PVar \to \{\True, \False \}$.
+\end{defn}
+
+\begin{defn}
+  ఒక !!a{valuation}~$\pAssign{v}$ ఇచ్చినప్పుడు, మూల్యాంకన ప్రమేయం
+  $\pValue{v} \colon \Frm[L_0] \to \{\True, \False \}$ను కింది
+  విధంగా ఆగమనాత్మకంగా నిర్వచించండి:
+  \begin{align*}
+    \iftag{prvFalse}{\pValue{v}(\lfalse) & = \False; \\}{}
+    \iftag{prvTrue}{\pValue{v}(\ltrue) & = \True; \\}{}
+    \pValue{v}(\Obj p_n) & = \pAssign{v}(\Obj p_n); \\
+    \iftag{prvNot}{\pValue{v}(\lnot !A) & = \begin{cases}
+        \True & \text{if } \pValue{v}(!A) = \False;\\
+        \False & \text{otherwise.}
+      \end{cases} \\ }{}
+    \iftag{prvAnd}{\pValue{v}(!A \land !B) & = \begin{cases}
+        \True &
+        \text{if $\pValue{v}(!A) = \True$ and $\pValue{v}(!B) = \True$;}\\
+        \False &
+        \text{if $\pValue{v}(!A) = \False$ or $\pValue{v}(!B) = \False$}.
+      \end{cases}\\}{}
+    \iftag{prvOr}{\pValue{v}(!A \lor !B) & = \begin{cases}
+        \True &
+        \text{if $\pValue{v}(!A) = \True$ or $\pValue{v}(!B) = \True$;}\\
+        \False &
+        \text{if $\pValue{v}(!A) = \False$ and $\pValue{v}(!B) = \False$}.
+      \end{cases}\\}{}
+    \iftag{prvIf}{\pValue{v}(!A \lif !B) & = \begin{cases}
+        \True &
+        \text{if $\pValue{v}(!A) = \False$ or $\pValue{v}(!B) = \True$;}\\
+        \False &
+        \text{if $\pValue{v}(!A) = \True$ and $\pValue{v}(!B) = \False$}.
+      \end{cases}\\}{}
+    \iftag{prvIff}{\pValue{v}(!A \liff !B) & = \begin{cases}
+        \True &
+        \text{if $\pValue{v}(!A) = \pValue{v}(!B)$;}\\
+        \False &
+        \text{if $\pValue{v}(!A) \neq \pValue{v}(!B)$}.
+      \end{cases}}{}
+\end{align*}
+\end{defn}
+
+\begin{explain}
+ఈ ఉపవాక్యాలు కింది సత్య పట్టికలకు సరిపోతాయి:
+\begin{center}
+\iftag{prvNot}{
+  \begin{tabular}{|c||c|} \hline
+    $!A$ & $ \lnot !A$ \\
+    \hline \hline
+    $\True$ & $\False$ \\
+    $\False$ & $\True$ \\
+    \hline
+  \end{tabular}
+}{}
+\iftag{prvAnd}{
+  \begin{tabular}{|cc||c|} \hline
+    $!A$ & $!B$ & $!A \land !B$ \\
+    \hline \hline
+    $\True$ & $\True$ & $\True$ \\
+    $\True$ & $\False$ & $\False$ \\
+    $\False$ & $\True$ & $\False$ \\
+    $\False$ & $\False$ & $\False$ \\
+    \hline
+  \end{tabular}
+}{}
+\iftag{prvOr}{
+  \begin{tabular}{|cc||c|} \hline
+    $!A$ & $!B$ & $!A \lor !B$ \\
+    \hline \hline
+    $\True$ & $\True$ & $\True$ \\
+    $\True$ & $\False$ & $\True$ \\
+    $\False$ & $\True$ & $\True$ \\
+    $\False$ & $\False$ & $\False$ \\
+    \hline
+  \end{tabular}
+}{}%
+\iftag{notprvNot,notprvAnd,notprvOr,notprvIf}{}{\\[1em]}
+\iftag{prvIf}{
+  \begin{tabular}{|cc||c|} \hline
+    $!A$ & $!B$ & $!A \lif !B$ \\
+    \hline \hline
+    $\True$ & $\True$ & $\True$ \\
+    $\True$ & $\False$ & $\False$ \\
+    $\False$ & $\True$ & $\True$ \\
+    $\False$ & $\False$ & $\True$ \\
+    \hline
+  \end{tabular}
+}{}
+\iftag{prvIff}{
+  \begin{tabular}{|cc||c|} \hline
+    $!A$ & $!B$ & $!A \liff !B$ \\
+    \hline \hline
+    $\True$ & $\True$ & $\True$ \\
+    $\True$ & $\False$ & $\False$ \\
+    $\False$ & $\True$ & $\False$ \\
+    $\False$ & $\False$ & $\True$ \\
+    \hline
+  \end{tabular}
+}{}
+\end{center}
+\end{explain}
+
+\begin{prob}
+$\Lang{L_0}$కు $\diamondsuit$ అనే త్రిస్థాన సంయోజకాన్ని చేర్చడాన్ని
+పరిశీలించండి; దాని మూల్యాంకనం ఇలా ఇవ్వబడింది:
+\begin{gather*}
+  \pValue{v}(\diamondsuit( !A , !B , !C ) ) = \begin{cases}
+    \pValue{v}( !B ) &
+    \text{if $\pValue{v}(!A) = \True$;}\\
+    \pValue{v}( !C ) &
+    \text{if $\pValue{v}(!A) = \False $}.
+  \end{cases}
+\end{gather*}
+ఈ సంయోజకానికి సత్య పట్టికను రాయండి.
+\end{prob}
+
+\begin{thm}[స్థానిక నిర్ణయితత్వం]
+\ollabel{thm:LocalDetermination} $\pAssign{v_1}$, $\pAssign{v_2}$ అనే
+!!{valuation}s, $!A$లో సంభవించే !!{propositional
+variable}sపై
+ఏకీభవిస్తాయని అనుకుందాం; అంటే, ఆ నిర్దిష్ట
+!!{formula}~$!A$లో $\Obj p_n$ సంభవించినప్పుడల్లా
+$\pAssign{v_1}(\Obj p_n) = \pAssign{v_2}(\Obj p_n)$. అప్పుడు
+$\pValue{v_1}$, $\pValue{v_2}$లు $!A$పై కూడా ఏకీభవిస్తాయి; అంటే
+$\pValue{v_1}(!A) = \pValue{v_2}(!A)$.
+\end{thm}
+\sourcecorrection{OLTEPLSYN-004}{ఆంగ్ల మూలం మొదట స్థిరపరిచిన $!A$లో
+సంభవించే చరరాశుల గురించి చెప్పి, వివరణలో “ఏదో సూత్రం $!A$లో” అని
+రాసింది. అస్తిత్వ పరిమాణీకరణగా చదివితే అది స్థానిక పరిమితిని
+కోల్పోతుంది. సిద్ధాంతపు ముందు వాక్యం, ముగింపు నిర్ణయించినట్లుగా
+“ఆ నిర్దిష్ట సూత్రం $!A$లో” అని స్పష్టం చేశాం.}
+
+\begin{proof}
+$!A$పై ఆగమనం ద్వారా.
+\end{proof}
+
+\begin{defn}[సంతృప్తి]
+\ollabel{defn:satisfaction} \emph{ఒక !!a{formula}~$!A$ను
+  !!a{valuation}~$\pAssign{v}$ సంతృప్తిపరచడం} అనే భావన
+  $\pSat{v}{!A}$ను కింది విధంగా ఆగమనాత్మకంగా నిర్వచించవచ్చు.
+  (“$\pSat{v}{!A}$ కాదు” అని సూచించడానికి $\pSat/{v}{!A}$ అని
+  రాస్తాం.)
+\begin{enumerate}
+\tagitem{prvFalse}{%
+  \indcase{!A}{\lfalse}{$\pSat/{v}{\indfrm}$.}}{}
+
+\tagitem{prvTrue}{%
+  \indcase{!A}{\ltrue}{$\pSat{v}{\indfrm}$.}}{}
+
+\item \indcase{!A}{\Obj p_i}{$\pSat{v}{\indfrm}$ కావడం,
+  $\pAssign{v}(\Obj p_i) = \True$ అయినప్పుడూ, అప్పుడు మాత్రమే.}
+
+\tagitem{prvNot}{%
+  \indcase{!A}{\lnot !B}{$\pSat{v}{\indfrm}$ కావడం,
+    $\pSat/{v}{!B}$ అయినప్పుడూ, అప్పుడు మాత్రమే.}}{}
+
+\tagitem{prvAnd}{%
+  \indcase{!A}{(!B \land !C)}{$\pSat{v}{\indfrm}$ కావడం,
+    $\pSat{v}{!B}$ మరియు $\pSat{v}{!C}$ అయినప్పుడూ, అప్పుడు మాత్రమే.}}{}
+
+\tagitem{prvOr}{%
+  \indcase{!A}{(!B \lor !C)}{$\pSat{v}{\indfrm}$ కావడం,
+    $\pSat{v}{!B}$ లేదా $\pSat{v}{!C}$ (లేదా రెండూ) అయినప్పుడూ,
+    అప్పుడు మాత్రమే.}}{}
+
+\tagitem{prvIf}{%
+  \indcase{!A}{(!B \lif !C)}{$\pSat{v}{\indfrm}$ కావడం,
+    $\pSat/{v}{!B}$ లేదా $\pSat{v}{!C}$ (లేదా రెండూ) అయినప్పుడూ,
+    అప్పుడు మాత్రమే.}}{}
+
+\tagitem{prvIff}{%
+  \indcase{!A}{(!B \liff !C)}{$\pSat{v}{\indfrm}$ కావడం,
+    $\pSat{v}{!B}$, $\pSat{v}{!C}$ రెండూ, లేదా
+    $\pSat{v}{!B}$, $\pSat{v}{!C}$ రెండూ కాకపోవడం జరిగినప్పుడూ,
+    అప్పుడు మాత్రమే.}}{}
+\end{enumerate}
+$\Gamma$ ఒక !!{formula}s సమితి అయితే, $\pSat{v}{\Gamma}$ కావడం,
+ప్రతి~$!A \in \Gamma$కు $\pSat{v}{!A}$ అయినప్పుడూ, అప్పుడు మాత్రమే.
+\end{defn}
+
+\begin{prop}\ollabel{prop:sat-value}
+  $\pSat{v}{!A}$ కావడం, $\pValue{v}(!A) = \True$ అయినప్పుడూ,
+  అప్పుడు మాత్రమే.
+\end{prop}
+
+\begin{proof}
+  $!A$పై ఆగమనం ద్వారా.
+\end{proof}
+
+\begin{prob}
+  \olref[pl][syn][val]{prop:sat-value}ను నిరూపించండి.
+\end{prob}
+
+\end{document}

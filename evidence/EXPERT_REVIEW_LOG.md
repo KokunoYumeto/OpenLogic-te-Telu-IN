@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 51 of 722 draft units**. This log contains 31 terminology/sense decisions and 33 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 59 of 722 draft units**. This log contains 33 terminology/sense decisions and 37 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 “Attested” means only that the specifically listed native page was actually inspected for the stated scope. It does not mean a human expert endorsed the final edition. The terminology rationales below were reconstructed retrospectively from primary records and exact current files; source-correction entries come from the contemporaneous audit.
 
@@ -625,6 +625,46 @@ Machine-readable companion: `EXPERT_REVIEW_LOG.jsonl`.
 - Uncertainty: Low for broad infinite-set and induction register; high nomenclatural for the Dedekind, closure and isomorphism headwords
 
 - Review question: Is “డెడెకిండ్ అనంతం / డెడెకిండ్ బీజగణితం / f-సంవృతం / అంకగణిత ఆగమనం / సమరూపం” idiomatic and technically standard for “Dedekind infinite / Dedekind algebra / f-closed / arithmetical induction / isomorphic” in Telugu logic/mathematics across Andhra Pradesh and Telangana? If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T032 — syntax / semantics / propositional variable / logical connective / negation / conjunction / disjunction / conditional / biconditional / atomic formula / syntactic identity / formation sequence / unique readability / uniform substitution
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Chosen wording/treatment: వాక్యనిర్మాణం / అర్థవిచారం / ప్రవచన చరరాశి / తార్కిక సంయోజకం / నిషేధం / సంయోగం / వికల్పం / షరతీయ సంయోజకం / ద్విషరతీయ సంయోజకం / పరమాణు సూత్రం / వాక్యనిర్మాణ తాదాత్మ్యం / నిర్మాణ క్రమం / ఏకైక పఠనీయత / ఏకరీతి ప్రతిస్థాపన
+
+- Exact implementation: content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex:8 ↔ translation/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex:8 (OLP-0056-B004); content/propositional-logic/syntax-and-semantics/formulas.tex:15-31 ↔ translation/content/propositional-logic/syntax-and-semantics/formulas.tex:14-30 (OLP-0058-B007); content/propositional-logic/syntax-and-semantics/formulas.tex:167-180 ↔ translation/content/propositional-logic/syntax-and-semantics/formulas.tex:177-189 (OLP-0058-B034); content/propositional-logic/syntax-and-semantics/formation-sequences.tex:15-26 ↔ translation/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:14-24 (OLP-0060-B006); content/propositional-logic/syntax-and-semantics/preliminaries.tex:91-98 ↔ translation/content/propositional-logic/syntax-and-semantics/preliminaries.tex:96-104 (OLP-0059-B021)
+
+- Authorities actually checked: TE-P002, PDF 9, printed 35, Main paragraph, lower half; TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P002 directly supplies native logic, mathematical-statement and truth/falsity register, while TE-P003 and TE-P004 support induction, theorem and proof exposition. None attests the grouped formal-syntax headwords. The frozen inductive formation rules, string-identity definition and substitution notation fix every technical extension.
+
+- Alternatives: descriptive Telugu syntax and construction headwords (chosen); direct transliterations of English formal-syntax terminology (not adopted in prose); protected source-token spellings inside macros (retained for source identity)
+
+- Uncertainty: Low for broad logic and proof register; high nomenclatural for the selected formal-syntax headwords
+
+- Review question: Is “వాక్యనిర్మాణం / అర్థవిచారం / ప్రవచన చరరాశి / తార్కిక సంయోజకం / నిషేధం / సంయోగం / వికల్పం / షరతీయ సంయోజకం / ద్విషరతీయ సంయోజకం / పరమాణు సూత్రం / వాక్యనిర్మాణ తాదాత్మ్యం / నిర్మాణ క్రమం / ఏకైక పఠనీయత / ఏకరీతి ప్రతిస్థాపన” idiomatic and technically standard for “syntax / semantics / propositional variable / logical connective / negation / conjunction / disjunction / conditional / biconditional / atomic formula / syntactic identity / formation sequence / unique readability / uniform substitution” in Telugu logic/mathematics across Andhra Pradesh and Telangana? If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T033 — truth value / valuation / evaluation / satisfaction / tautology / entailment / satisfiable / unsatisfiable / contingent / Local Determination / Semantic Deduction Theorem
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Chosen wording/treatment: సత్యమూల్యం / మూల్యనిర్ణయం / మూల్యాంకనం / సంతృప్తి / సర్వసత్యం / అర్థపర అనుగమనం / సంతృప్తిపరచదగిన / సంతృప్తిపరచలేని / పరిస్థిత్యాధీన / స్థానిక నిర్ణయితత్వం / అర్థపర నిగమన సిద్ధాంతం
+
+- Exact implementation: content/propositional-logic/syntax-and-semantics/valuations-sat.tex:11-23 ↔ translation/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:11-24 (OLP-0061-B006); content/propositional-logic/syntax-and-semantics/valuations-sat.tex:133-149 ↔ translation/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:134-157 (OLP-0061-B010); content/propositional-logic/syntax-and-semantics/semantic-notions.tex:13-30 ↔ translation/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:13-32 (OLP-0062-B007); content/propositional-logic/syntax-and-semantics/semantic-notions.tex:83-85 ↔ translation/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:85-87 (OLP-0062-B015)
+
+- Authorities actually checked: TE-P002, PDF 9, printed 35, Main paragraph, lower half; TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P014, PDF 308, printed 301, Main points 5-7
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P002 attests logic, statements and truth/falsity language, and TE-P014 supports only the broad function-assignment register. The native pages do not attest formal valuations, satisfaction or model-theoretic consequence. OpenLogic's two-valued assignment, recursive evaluation, truth tables and quantified satisfaction clauses control the selected semantic terms.
+
+- Alternatives: descriptive Telugu truth and consequence headwords (chosen); direct transliterations of English model-theoretic terminology (not adopted in prose); protected source-token spellings inside macros (retained for source identity)
+
+- Uncertainty: Low for truth/falsity register; high nomenclatural for the formal semantic headwords
+
+- Review question: Is “సత్యమూల్యం / మూల్యనిర్ణయం / మూల్యాంకనం / సంతృప్తి / సర్వసత్యం / అర్థపర అనుగమనం / సంతృప్తిపరచదగిన / సంతృప్తిపరచలేని / పరిస్థిత్యాధీన / స్థానిక నిర్ణయితత్వం / అర్థపర నిగమన సిద్ధాంతం” idiomatic and technically standard for “truth value / valuation / evaluation / satisfaction / tautology / entailment / satisfiable / unsatisfiable / contingent / Local Determination / Semantic Deduction Theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana? If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -1285,3 +1325,83 @@ Machine-readable companion: `EXPERT_REVIEW_LOG.jsonl`.
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Review question: Does the proof establish both inclusions needed for ran(g)=B, including the formerly missing ran(g)-subset-B direction?
+
+## REV-OLTEPLSYN-001 — OLTEPLSYN-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: closed the inner defTrue test with its empty false arm before closing the outer tag test; adjacent sourcecorrection discloses the TeX-structure repair
+
+- Exact implementation: lines 37-47, nested defined-symbol tag block ↔ translation/content/propositional-logic/syntax-and-semantics/formulas.tex:48 (OLP-0058-B009)
+
+- Authorities actually checked: OLTEPLSYN-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: closed the inner defTrue test with its empty false arm before closing the outer tag test; adjacent sourcecorrection discloses the TeX-structure repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the Telugu disclosure identify the malformed nested tag arms and make clear that only their brace/empty-arm closure was repaired?
+
+## REV-OLTEPLSYN-002 — OLTEPLSYN-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: removed the unmatched right parenthesis while retaining the not-A-or-B abbreviation; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 158-159, defined material-conditional disjunction ↔ translation/content/propositional-logic/syntax-and-semantics/formulas.tex:166 (OLP-0058-B032)
+
+- Authorities actually checked: OLTEPLSYN-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: removed the unmatched right parenthesis while retaining the not-A-or-B abbreviation; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the material-conditional abbreviation read exactly as not A or B after removal of the source’s unmatched closing parenthesis?
+
+## REV-OLTEPLSYN-003 — OLTEPLSYN-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: replaced semantic equivalence by the chapter's syntactic-identity symbol in the formation proof; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 140-149, strong-induction conjunction case ↔ translation/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:138 (OLP-0060-B016)
+
+- Authorities actually checked: OLTEPLSYN-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: replaced semantic equivalence by the chapter's syntactic-identity symbol in the formation proof; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the formation-sequence proof use syntactic identity, rather than semantic equivalence, for literal identity of symbol strings?
+
+## REV-OLTEPLSYN-004 — OLTEPLSYN-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: made the explanatory clause refer to the already fixed formula A rather than some formula; adjacent sourcecorrection discloses the scope repair
+
+- Exact implementation: lines 133-140, Local Determination theorem ↔ translation/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:143 (OLP-0061-B010)
+
+- Authorities actually checked: OLTEPLSYN-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: made the explanatory clause refer to the already fixed formula A rather than some formula; adjacent sourcecorrection discloses the scope repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does Local Determination unambiguously restrict agreement to variables occurring in the one fixed formula A?

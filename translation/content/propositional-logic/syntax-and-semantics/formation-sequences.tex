@@ -1,0 +1,151 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: formation-sequences
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{syn}{fseq}
+
+\olsection{నిర్మాణ క్రమాలు}
+
+ఆగమనాత్మక నిర్వచనం ద్వారా !!{formula}sను నిర్వచించడం, దానికి
+పూరకంగా ఆగమనం ద్వారా !!{formula}s ధర్మాలను నిరూపించడం సొగసైన,
+సమర్థమైన విధానం. అయితే !!{formula}s నిర్మాణాన్ని కింది నుంచి పైకి,
+మెట్టుమెట్టుగా పరిశీలించడం కూడా ఉపయోగకరం కావచ్చు. ఇక్కడ
+\emph{నిర్మాణ క్రమం} అనే భావనతో అదే చేస్తాం.
+
+\begin{defn}[సూత్రాల నిర్మాణ క్రమాలు]
+\ollabel{defn:fseq-frm}
+భాష~$\Lang L_0$లోని సంకేతాలతో ఏర్పడిన సంకేతమాలల పరిమిత క్రమం
+$\tuple{!A_0,\dotsc,!A_n}$, $!A$కు \emph{నిర్మాణ క్రమం} కావడం
+అంటే $!A \ident !A_n$, అలాగే ప్రతి $i \leq n$కు $!A_i$ ఒక పరమాణు
+సూత్రమో, లేక కింది వాటిలో ఒకటి సత్యమయ్యేలా $j,k < i$లు ఉంటాయో:
+\begin{enumerate}
+    \tagitem{prvNot}{$!A_i \ident \lnot !A_j$.}{}%
+    \tagitem{prvAnd}{$!A_i \ident (!A_j \land !A_k)$.}{}%
+    \tagitem{prvOr}{$!A_i \ident (!A_j \lor !A_k)$.}{}%
+    \tagitem{prvIf}{$!A_i \ident (!A_j \lif !A_k)$.}{}%
+    \tagitem{prvIff}{$!A_i \ident (!A_j \liff !A_k)$.}{}%
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+\[
+\tuple{
+    \Obj p_0,
+    \Obj p_1,
+    (\Obj p_1 \land \Obj p_0),
+    \lnot (\Obj p_1 \land \Obj p_0)
+}
+\]
+అనేది $\lnot (\Obj p_1 \land \Obj p_0)$ యొక్క ఒక నిర్మాణ క్రమం;
+కిందిదీ అలాంటి క్రమమే:
+\[
+\tuple{
+    \Obj p_0,
+    \Obj p_1,
+    \Obj p_0,
+    (\Obj p_1 \land \Obj p_0),
+    (\Obj p_0 \lif \Obj p_1),
+    \lnot (\Obj p_1 \land \Obj p_0)
+}.
+\]
+%
+రెండవ ఉదాహరణలో కనిపించినట్లుగా, నిర్మాణ క్రమాల్లో “వ్యర్థ” భాగాలు
+ఉండవచ్చు: అవి అనవసరమైన లేదా నిర్మాణానికి తోడ్పడని సూత్రాలు.
+\end{ex}
+
+\begin{prop}
+\ollabel{prop:formed}
+$\Frm[L_0]$లోని ప్రతి !!{formula}~$!A$కు ఒక నిర్మాణ క్రమం ఉంటుంది.
+\end{prop}
+
+\begin{proof}
+$!A$ పరమాణు సూత్రం అనుకుందాం. అప్పుడు క్రమం~$\tuple{!A}$,
+$!A$కు నిర్మాణ క్రమం.
+%
+ఇప్పుడు $!B$, $!C$లకు వరుసగా
+$\tuple{!B_0,\dotsc,!B_n}$, $\tuple{!C_0,\dotsc,!C_m}$ అనే నిర్మాణ
+క్రమాలు ఉన్నాయని అనుకుందాం.
+%
+\begin{enumerate}
+  \tagitem{prvNot}{$!A \ident \lnot !B$ అయితే,
+      $\tuple{!B_0,\dotsc,!B_n,\lnot !B_n}$ అనేది $!A$కు నిర్మాణ
+      క్రమం.}{}
+  \tagitem{prvAnd}{$!A \ident (!B \land !C)$ అయితే,
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \land !C_m)}$
+      అనేది $!A$కు నిర్మాణ క్రమం.}{}
+  \tagitem{prvOr}{$!A \ident (!B \lor !C)$ అయితే,
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \lor !C_m)}$
+      అనేది $!A$కు నిర్మాణ క్రమం.}{}
+  \tagitem{prvIf}{$!A \ident (!B \lif !C)$ అయితే,
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \lif !C_m)}$
+      అనేది $!A$కు నిర్మాణ క్రమం.}{}
+  \tagitem{prvIff}{$!A \ident (!B \liff !C)$ అయితే,
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \liff !C_m)}$
+      అనేది $!A$కు నిర్మాణ క్రమం.}{}
+\end{enumerate}
+!!{formula}sపై ఆగమన సూత్రం ప్రకారం ప్రతి !!{formula}కు ఒక నిర్మాణ
+క్రమం ఉంటుంది.
+\end{proof}
+
+దీని తిరుగుదిశను కూడా నిరూపించవచ్చు. సూత్రాలకు మనం ఇచ్చిన రెండు
+నిర్వచన పద్ధతులూ తుల్యమైనవని, అంటే అవి ఒకే ఫలితాలను ఇస్తాయని ఇది
+చూపుతుంది కనుక ముఖ్యం. నిర్మాణ క్రమాల పొడవుపై సాధారణ ఆగమనాన్ని
+ఉపయోగించి సూత్రాల గురించిన సిద్ధాంతాలను నిరూపించవచ్చని కూడా దీని
+అర్థం.
+
+\begin{lem}
+\ollabel{lem:fseq-init}
+$\tuple{!A_0,\dotsc,!A_n}$ అనేది $!A_n$కు నిర్మాణ క్రమమనీ,
+$k \leq n$ అనీ అనుకుందాం. అప్పుడు
+$\tuple{!A_0,\dotsc,!A_k}$ అనేది $!A_k$కు నిర్మాణ క్రమం.
+\end{lem}
+
+\begin{proof}
+సాధన.
+\end{proof}
+
+\begin{thm}
+\ollabel{thm:fseq-frm-equiv}
+$\Frm[L_0]$ అనేది నిర్మాణ క్రమం గల భాష~$\Lang L_0$లోని అన్ని
+సంకేతమాలల సమితి.
+\end{thm}
+
+\begin{proof}
+భాష~$\Lang L_0$లో నిర్మాణ క్రమం గల అన్ని సంకేతమాలల సమితిని $F$
+అనుకుందాం. \olref[pl][syn][fseq]{prop:formed}లో
+$\Frm[L_0] \subseteq F$ అని చూశాం; ఇప్పుడు తిరుగుదిశను నిరూపిస్తాం.
+
+$!A$కు $\tuple{!A_0,\dotsc,!A_n}$ అనే నిర్మాణ క్రమం ఉందనుకుందాం.
+$n$పై బలమైన ఆగమనం ద్వారా $!A \in \Frm[L_0]$ అని నిరూపిస్తాం.
+$m < n$ పొడవు గల నిర్మాణ క్రమం ఉన్న ప్రతి సంకేతమాల
+$\Frm[L_0]$లో ఉంటుందనేది మన ఆగమన పరికల్పన. నిర్మాణ క్రమం నిర్వచనం
+ప్రకారం, $!A_n$ పరమాణు సూత్రమో, లేక కింది వాటిలో ఒకటి సత్యమయ్యేలా
+$j,k < n$లు ఉంటాయో:
+\begin{enumerate}
+    \tagitem{prvNot}{$!A_n \ident \lnot !A_j$.}{}%
+    \tagitem{prvAnd}{$!A_n \ident (!A_j \land !A_k)$.}{}%
+    \tagitem{prvOr}{$!A_n \ident (!A_j \lor !A_k)$.}{}%
+    \tagitem{prvIf}{$!A_n \ident (!A_j \lif !A_k)$.}{}%
+    \tagitem{prvIff}{$!A_n \ident (!A_j \liff !A_k)$.}{}%
+\end{enumerate}
+ఇప్పుడు సందర్భాలవారీగా తర్కిద్దాం. $!A_n$ పరమాణు సూత్రమైతే
+$!A_n \in \Frm[L_0]$. బదులుగా $!A \ident
+(!A_j \land !A_k)$ అనుకుందాం.
+\sourcecorrection{OLTEPLSYN-003}{ఆంగ్ల మూలం ఈ వాక్యనిర్మాణ సందర్భంలో
+అర్థపర తుల్యత సంకేతం $\equiv$ను వాడింది. ముందు నిర్వచించిన నిర్మాణ
+క్రమాలు సంకేతమాల తాదాత్మ్యం $\ident$ను కోరుతాయి కనుక అదే సంకేతాన్ని
+ఇక్కడ నిలకడగా వాడాం.}
+\olref[pl][syn][fseq]{lem:fseq-init} ప్రకారం,
+$\tuple{!A_0,\dotsc,!A_j}$, $\tuple{!A_0,\dotsc,!A_k}$లు వరుసగా
+$!A_j$, $!A_k$లకు నిర్మాణ క్రమాలు. ఇవి $!A$ నిర్మాణ క్రమానికి నిజ
+ఆద్య ఉపక్రమాలు కనుక రెండింటి పొడవూ $n$కంటే తక్కువ. అందువల్ల ఆగమన
+పరికల్పన ప్రకారం $!A_j$, $!A_k$లు $\Frm[L_0]$లో ఉంటాయి; కాబట్టి
+!!a{formula} నిర్వచనం ప్రకారం $(!A_j \land !A_k)$ కూడా అందులోనే
+ఉంటుంది. మిగతా సందర్భాలు సమాంతర తర్కంతో వస్తాయి.
+\end{proof}
+
+\end{document}

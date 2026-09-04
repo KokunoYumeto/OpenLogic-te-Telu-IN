@@ -1,0 +1,126 @@
+% Part: propositional-logic
+% Chapter: propositional-logic
+% Section: preliminaries
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{syn}{pre}
+
+\olsection{ప్రాథమిక ఫలితాలు}
+
+\begin{thm}[\emph{!!{formula}sపై ఆగమన సూత్రం}]
+  \ollabel{thm:induction}
+  ఏదైనా ధర్మం~$P$ అన్ని పరమాణు !!{formula}sకు ఉండి, అది కింది
+  విధంగా ఉందనుకుందాం:
+  \begin{enumerate}
+    \tagitem{prvNot}{$!A$కు అది ఉన్నప్పుడల్లా $\lnot !A$కు కూడా
+      ఉంటుంది;}{}
+    \tagitem{prvAnd}{$!A$, $!B$లకు అది ఉన్నప్పుడల్లా
+      $(!A \land !B)$కు ఉంటుంది;}{}
+    \tagitem{prvOr}{$!A$, $!B$లకు అది ఉన్నప్పుడల్లా
+      $(!A \lor !B)$కు ఉంటుంది;}{}
+    \tagitem{prvIf}{$!A$, $!B$లకు అది ఉన్నప్పుడల్లా
+      $(!A \lif !B)$కు ఉంటుంది;}{}
+    \tagitem{prvIff}{$!A$, $!B$లకు అది ఉన్నప్పుడల్లా
+      $(!A \liff !B)$కు ఉంటుంది;}{}
+  \end{enumerate}
+  అప్పుడు $P$ అన్ని !!{formula}sకు ఉంటుంది.
+\end{thm}
+
+\begin{proof}
+  $P$ ధర్మం గల అన్ని !!{formula}s సంగ్రహాన్ని $S$ అనుకుందాం.
+  స్పష్టంగా $S \subseteq \Frm[L_0]$. $S$,
+  \olref[fml]{defn:formulas}లోని అన్ని షరతులను సంతృప్తిపరుస్తుంది:
+  అది అన్ని పరమాణు !!{formula}sను కలిగి ఉండి, !!{operator}s కింద
+  సంవృతంగా ఉంటుంది. అటువంటి అతి చిన్న వర్గం $\Frm[L_0]$ కనుక
+  $\Frm[L_0] \subseteq S$. కాబట్టి $\Frm[L_0] = S$; ప్రతి సూత్రానికీ
+  $P$ ధర్మం ఉంటుంది.
+\end{proof}
+
+\begin{prop}\ollabel{prop:balanced}
+   $\Frm[L_0]$లోని ఏ !!{formula} అయినా \emph{సమతుల్యం}; అంటే దానిలో
+   ఎన్ని ఎడమ కుండలీకరణలు ఉంటాయో అన్నే కుడి కుండలీకరణలు ఉంటాయి.
+\end{prop}
+
+\begin{prob}
+\olref[pl][syn][pre]{prop:balanced}ను నిరూపించండి.
+\end{prob}
+
+\begin{prop} \ollabel{prop:noinit}
+!!a{formula} యొక్క ఏ నిజ ఆద్య ఖండమూ !!a{formula} కాదు.
+\end{prop}
+
+\begin{prob}
+  \olref[pl][syn][pre]{prop:noinit}ను నిరూపించండి.
+\end{prob}
+
+\begin{prop}[ఏకైక పఠనీయత]
+$ \Frm[L_0]$లోని ఏ !!{formula}~$!A$కైనా కింది రూపాల్లో కచ్చితంగా
+ఒకే ఒక వాక్యనిర్మాణ విశ్లేషణ ఉంటుంది:
+\begin{enumerate}
+\tagitem{prvFalse}{$\lfalse$.}{}
+
+\tagitem{prvTrue}{$\ltrue$.}{}
+
+\item ఏదో $\Obj p_n \in  \PVar$కు $\Obj p_n$.
+
+\tagitem{prvNot}{ఏదో !!{formula}~$!B$కు $\lnot !B$.}{}
+
+\tagitem{prvAnd}{ఏవో !!{formula}s $!B$, $!C$లకు
+$(!B \land !C)$.}{}
+
+\tagitem{prvOr}{ఏవో !!{formula}s $!B$, $!C$లకు
+$(!B \lor !C)$.}{}
+
+\tagitem{prvIf}{ఏవో !!{formula}s $!B$, $!C$లకు
+$(!B \lif !C)$.}{}
+
+\tagitem{prvIff}{ఏవో !!{formula}s $!B$, $!C$లకు
+$(!B \liff !C)$.}{}
+\end{enumerate}
+అంతేకాక ఈ వాక్యనిర్మాణ విశ్లేషణ \emph{ఏకైకం}.
+\end{prop}
+
+\begin{proof}
+$!A$పై ఆగమనం ద్వారా నిరూపిస్తాం. ఉదాహరణకు, $!A$కు
+$(!B \lif !C)$, $(!B' \lif !C')$ అనే రెండు భిన్న పఠనాలు ఉన్నాయని
+అనుకుందాం. అప్పుడు $!B$, $!B'$ ఒకటే కావాలి (లేకపోతే ఒకటి మరొకదానికి
+నిజ ఆద్య ఖండమవుతుంది). కాబట్టి $!A$ యొక్క రెండు పఠనాలు భిన్నమైతే,
+ఒకే సంకేత క్రమానికి $!C$, $!C'$లు భిన్న విశ్లేషణలు కావడమే కారణం; కానీ
+ఆగమన పరికల్పన వల్ల అది అసాధ్యం.
+\end{proof}
+
+
+\begin{defn}[ఏకరీతి ప్రతిస్థాపన]
+$!A$, $!B$లు !!{formula}s, $\Obj p_i$ ఒక !!{propositional
+variable} అయితే, $!A$లోని $\Obj p_i$ ప్రతి సంభవాన్ని $!B$ సంభవంతో
+మార్చడం వల్ల వచ్చే ఫలితాన్ని $\Subst{!A}{!B}{\Obj p_i}$ సూచిస్తుంది.
+అలాగే $\Obj p_1$, \dots,~$\Obj p_n$లను !!{formula}s $!B_1$,
+\dots,~$!B_n$లతో ఏకకాలంలో ప్రతిస్థాపించడాన్ని
+$\SSubst{!A}{\subst{!B_1}{\Obj p_1},\dots,\subst{!B_n}{\Obj p_n}}$తో
+సూచిస్తాం.
+\end{defn}
+
+\begin{prob} కింద ఉన్న ఐదు !!{formula}sలో ప్రతి ఒక్కదానికి, ఆ
+ !!{formula}ను \( \Subst{!A}{!B}{\Obj p_i} \) అనే ప్రతిస్థాపనగా
+ రాయవచ్చో లేదో నిర్ణయించండి; ఇక్కడ \( !A \) అనేది (i)
+ \( \Obj p_0 \); (ii) \( ( \lnot \Obj p_0 \land \Obj
+ p_1) \); మరియు (iii) \( ( ( \lnot \Obj p_0 \lif \Obj p_1 ) \land \Obj
+ p_2 ) \). ప్రతి సందర్భంలో సంబంధిత ప్రతిస్థాపనను పేర్కొనండి.
+  \begin{enumerate}
+    \item \( \Obj p_1 \)
+    \item \( ( \lnot \Obj p_0 \land \Obj p_0 ) \)
+    \item \( ( ( \Obj p_0 \lor \Obj p_1 ) \land \Obj p_2 )  \)
+    \item \( \lnot ( ( \Obj p_0 \lif \Obj p_1 ) \land \Obj p_2 ) \)
+    \item \( (( \lnot ( \Obj p_0 \lif \Obj p_1 ) \lif ( \Obj p_0 \lor \Obj p_1 )) \land \lnot ( \Obj p_0 \land \Obj p_1 )) \)
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+ఆగమనం ద్వారా $\Subst{!A}{!B}{p}$కు గణితపరంగా కచ్చితమైన నిర్వచనం
+ఇవ్వండి.
+\end{prob}
+
+\end{document}
