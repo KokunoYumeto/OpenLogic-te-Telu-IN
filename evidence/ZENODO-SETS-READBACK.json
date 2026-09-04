@@ -1,0 +1,44 @@
+{
+  "schema": "openlogic-te-zenodo-readback/1",
+  "anonymous": true,
+  "verified_utc": "2026-09-04T16:19:14.413444+00:00",
+  "inventory_url": "https://zenodo.org/api/records/22307938",
+  "files": [
+    {
+      "filename": "openlogic-te-Telu-IN-sets-v0.1.0.pdf",
+      "url": "https://zenodo.org/api/records/22307938/files/openlogic-te-Telu-IN-sets-v0.1.0.pdf/content",
+      "bytes": 160275,
+      "sha256": "4272102d0e7ef34f819d582304a19442ece75ed9b34a07fd677461f37cbaf719",
+      "expected_bytes": 160275,
+      "expected_sha256": "4272102d0e7ef34f819d582304a19442ece75ed9b34a07fd677461f37cbaf719",
+      "inventory_bytes": 160275,
+      "match": true
+    },
+    {
+      "filename": "openlogic-te-Telu-IN-sets-source-v0.1.0.zip",
+      "url": "https://zenodo.org/api/records/22307938/files/openlogic-te-Telu-IN-sets-source-v0.1.0.zip/content",
+      "bytes": 415750,
+      "sha256": "26277e219d037a0353b13e2f9a63568a5a9bec5e23bc04bc779c6b368fb00080",
+      "expected_bytes": 415750,
+      "expected_sha256": "26277e219d037a0353b13e2f9a63568a5a9bec5e23bc04bc779c6b368fb00080",
+      "inventory_bytes": 415750,
+      "match": true
+    },
+    {
+      "filename": "release-manifest.json",
+      "url": "https://zenodo.org/api/records/22307938/files/release-manifest.json/content",
+      "bytes": 645,
+      "sha256": "6ca267b5d436027647b820b1c1ffc16420f6fd864079d925c12bab5a93bf12c5",
+      "expected_bytes": 645,
+      "expected_sha256": "6ca267b5d436027647b820b1c1ffc16420f6fd864079d925c12bab5a93bf12c5",
+      "inventory_bytes": 645,
+      "match": true
+    }
+  ],
+  "status": "verified_public",
+  "inventory_sha256": "a44c3f5526ba58de91ebfa9ea4de74c3030b31101f97fe5d30e94eadced2e0b0",
+  "record_id": 22307938,
+  "doi": "10.5281/zenodo.22307938",
+  "conceptdoi": "10.5281/zenodo.22307937",
+  "access_right": "open"
+}

@@ -13,6 +13,10 @@ source diagrams. This is **not the complete OpenLogic Telugu edition**.
 
 [Download the chapter and editable source package](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases).
 
+[Zenodo DOI: 10.5281/zenodo.22307938](https://doi.org/10.5281/zenodo.22307938).
+Both mirrors' public artifact bytes have been anonymously verified;
+see [PUBLICATION.md](PUBLICATION.md).
+
 Sixteen full-unit editable drafts exist in this repository: Sets (7) and
 Relations (9). Both batches have source-aligned structural and same-agent
 semantic review records. The Relations drafts are not yet integrated into a
