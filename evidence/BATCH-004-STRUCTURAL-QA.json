@@ -1,0 +1,1732 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-04T21:24:55.600Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Intertext prose is masked while its inline math remains checked.",
+  "units": [
+    {
+      "unit_id": "OLP-0027",
+      "source_path": "content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex",
+      "source_sha256": "bce6978871cb87871f8fbae0d51c9e260ba26c6c63ebefaad30d83c89ad1eae0",
+      "translation_sha256": "405d3d7af7c95e856bd64c2d4b173ce45c78ddc4bb37e15d0bbbe2f768345e49",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport{introduction}",
+        "\\olimport{enumerability}",
+        "\\olimport{zig-zag}",
+        "\\olimport{pairing}",
+        "\\olimport{pairing-alt}",
+        "\\olimport{non-enumerability}",
+        "\\olimport{reduction}",
+        "\\olimport{equinumerous-sets}",
+        "\\olimport{comparing-size}",
+        "\\olimport{schroder-bernstein}",
+        "\\olref[sfr][siz][enm-alt]{sec}",
+        "\\olref[sfr][siz][nen-alt]{sec}",
+        "\\olref[sfr][siz][red-alt]{sec}",
+        "\\olref[sfr][siz][enm]{sec}",
+        "\\olref[sfr][siz][nen]{sec}",
+        "\\olref[sfr][siz][red]{sec}",
+        "\\olimport{enumerability-alt}",
+        "\\olimport{non-enumerability-alt}",
+        "\\olimport{reduction-alt}"
+      ],
+      "identifiers_target": [
+        "\\olimport{introduction}",
+        "\\olimport{enumerability}",
+        "\\olimport{zig-zag}",
+        "\\olimport{pairing}",
+        "\\olimport{pairing-alt}",
+        "\\olimport{non-enumerability}",
+        "\\olimport{reduction}",
+        "\\olimport{equinumerous-sets}",
+        "\\olimport{comparing-size}",
+        "\\olimport{schroder-bernstein}",
+        "\\olref[sfr][siz][enm-alt]{sec}",
+        "\\olref[sfr][siz][nen-alt]{sec}",
+        "\\olref[sfr][siz][red-alt]{sec}",
+        "\\olref[sfr][siz][enm]{sec}",
+        "\\olref[sfr][siz][nen]{sec}",
+        "\\olref[sfr][siz][red]{sec}",
+        "\\olimport{enumerability-alt}",
+        "\\olimport{non-enumerability-alt}",
+        "\\olimport{reduction-alt}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\PosInt$",
+        "$\\Nat$",
+        "$\\Nat$",
+        "$\\PosInt$"
+      ],
+      "math_target_core": [
+        "$\\PosInt$",
+        "$\\Nat$",
+        "$\\PosInt$",
+        "$\\Nat$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [
+        "OLTESIZ-001"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 590,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations\n% Chapter: size-of-sets-complete",
+          "target_start": "% Part: sets-functions-relations\n% Chapter: size-of-sets-complete"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olchapter{sfr}{siz}{The Size of Sets}",
+          "target_start": "\\olchapter{sfr}{siz}{సమితుల పరిమాణం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{editorial}\nThis chapter discusses enumerations, countability and uncountability.\nSeveral sections come ",
+          "target_start": "\\begin{editorial}\nఈ అధ్యాయం లెక్కింపులు, లెక్కించదగినతనం, లెక్కించలేనితనం గురించి చర్చిస్తుంది.\nకొన్ని విభాగాల"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport{introduction}",
+          "target_start": "\\olimport{introduction}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport{enumerability}",
+          "target_start": "\\olimport{enumerability}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\olimport{zig-zag}",
+          "target_start": "\\olimport{zig-zag}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport{pairing}",
+          "target_start": "\\olimport{pairing}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\olimport{pairing-alt}",
+          "target_start": "\\olimport{pairing-alt}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\olimport{non-enumerability}",
+          "target_start": "\\olimport{non-enumerability}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\olimport{reduction}",
+          "target_start": "\\olimport{reduction}"
+        },
+        {
+          "index": 13,
+          "source_start": "\\olimport{equinumerous-sets}",
+          "target_start": "\\olimport{equinumerous-sets}"
+        },
+        {
+          "index": 14,
+          "source_start": "\\olimport{comparing-size}",
+          "target_start": "\\olimport{comparing-size}"
+        },
+        {
+          "index": 15,
+          "source_start": "\\olimport{schroder-bernstein}",
+          "target_start": "\\olimport{schroder-bernstein}"
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{editorial}\nThe following \\olref[sfr][siz][enm-alt]{sec},\n\\olref[sfr][siz][nen-alt]{sec}, \\olref[sfr][si",
+          "target_start": "\\begin{editorial}\nకిందివైన \\olref[sfr][siz][enm-alt]{sec},\n\\olref[sfr][siz][nen-alt]{sec}, \\olref[sfr][siz][re"
+        },
+        {
+          "index": 17,
+          "source_start": "\\olimport{enumerability-alt}\n\\olimport{non-enumerability-alt}\n\\olimport{reduction-alt}",
+          "target_start": "\\olimport{enumerability-alt}\n\\olimport{non-enumerability-alt}\n\\olimport{reduction-alt}"
+        },
+        {
+          "index": 18,
+          "source_start": "\\OLEndChapterHook",
+          "target_start": "\\OLEndChapterHook"
+        },
+        {
+          "index": 19,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{sfr}{siz}",
+        "\\olimport{introduction}",
+        "\\olimport{enumerability}",
+        "\\olimport{zig-zag}",
+        "\\olimport{pairing}",
+        "\\olimport{pairing-alt}",
+        "\\olimport{non-enumerability}",
+        "\\olimport{reduction}",
+        "\\olimport{equinumerous-sets}",
+        "\\olimport{comparing-size}",
+        "\\olimport{schroder-bernstein}",
+        "\\olref[sfr][siz][enm-alt]{sec}",
+        "\\olref[sfr][siz][nen-alt]{sec}",
+        "\\olref[sfr][siz][red-alt]{sec}",
+        "\\olref[sfr][siz][enm]{sec}",
+        "\\olref[sfr][siz][nen]{sec}",
+        "\\olref[sfr][siz][red]{sec}",
+        "\\olimport{enumerability-alt}",
+        "\\olimport{non-enumerability-alt}",
+        "\\olimport{reduction-alt}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{sfr}{siz}",
+        "\\olimport{introduction}",
+        "\\olimport{enumerability}",
+        "\\olimport{zig-zag}",
+        "\\olimport{pairing}",
+        "\\olimport{pairing-alt}",
+        "\\olimport{non-enumerability}",
+        "\\olimport{reduction}",
+        "\\olimport{equinumerous-sets}",
+        "\\olimport{comparing-size}",
+        "\\olimport{schroder-bernstein}",
+        "\\olref[sfr][siz][enm-alt]{sec}",
+        "\\olref[sfr][siz][nen-alt]{sec}",
+        "\\olref[sfr][siz][red-alt]{sec}",
+        "\\olref[sfr][siz][enm]{sec}",
+        "\\olref[sfr][siz][nen]{sec}",
+        "\\olref[sfr][siz][red]{sec}",
+        "\\olimport{enumerability-alt}",
+        "\\olimport{non-enumerability-alt}",
+        "\\olimport{reduction-alt}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0028",
+      "source_path": "content/sets-functions-relations/size-of-sets/introduction.tex",
+      "source_sha256": "bb5010906c4b4b95ef652f372efc49c44ca9feebbca1e50fecbb29b3ff6ce8aa",
+      "translation_sha256": "3af4db1eed086a5bf83204a087932e713f5f0b940b5cccfec35cd7febc45d95c",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{siz}{int}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{siz}{int}"
+      ],
+      "tokens_source": {
+        "!!{element}s": 2,
+        "!!{enumerable}": 2
+      },
+      "tokens_target": {
+        "!!{element}s": 2,
+        "!!{enumerable}": 2
+      },
+      "math_source": [
+        "$a$",
+        "$b$",
+        "$c$",
+        "$\\{a,b,c\\}$",
+        "$\\{a,b\\}$"
+      ],
+      "math_target_core": [
+        "$a$",
+        "$b$",
+        "$c$",
+        "$\\{a,b,c\\}$",
+        "$\\{a,b\\}$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 601,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part:sets-functions-relations\n% Chapter: size-of-sets\n% Section: introduction",
+          "target_start": "% Part:sets-functions-relations\n% Chapter: size-of-sets\n% Section: introduction"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sfr}{siz}{int}",
+          "target_start": "\\olfileid{sfr}{siz}{int}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Introduction}",
+          "target_start": "\\olsection{పరిచయం}"
+        },
+        {
+          "index": 6,
+          "source_start": "When Georg Cantor developed set theory in the 1870s, one of his aims\nwas to make palatable the idea of an infi",
+          "target_start": "జార్జ్ కాంటర్ 1870లలో సమితి సిద్ధాంతాన్ని అభివృద్ధి చేసినప్పుడు,\nఅనంత సముదాయం---మధ్యయుగ పండితులు చెప్పినట్లు వ"
+        },
+        {
+          "index": 7,
+          "source_start": "The first important idea here is that of an enumeration.  We can\nlist every finite set by listing all its !!{e",
+          "target_start": "ఇక్కడ మొదటి ముఖ్యమైన భావన లెక్కింపు. ప్రతి పరిమిత సమితిలోని\n!!{element}s అన్నింటినీ వరుసగా రాసి జాబితా చేయవచ్చ"
+        },
+        {
+          "index": 8,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{siz}{int}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{siz}{int}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0029",
+      "source_path": "content/sets-functions-relations/size-of-sets/enumerability.tex",
+      "source_sha256": "bf6be35c0e393cb6e1d227f8e9024df4216792e663f23beb7277045487acfa67",
+      "translation_sha256": "78c5bb348914bf2e0dfcd02183849fd8047483b3173307a4982cb3fd1b968171",
+      "source_blocks": 36,
+      "target_blocks": 36,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{siz}{enm}",
+        "\\olref[enm-alt]{sec}",
+        "\\ollabel{defn:enumerable}",
+        "\\ollabel{prop:enum-shift}",
+        "\\ollabel{cor:enum-nat}",
+        "\\ollabel{prop:enum-bij}",
+        "\\ollabel{cor:enum-nat-bij}",
+        "\\olref{prop:enum-bij}",
+        "\\olref{prop:enum-shift}",
+        "\\olref[sfr][siz][enm]{defn:enumerable}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{siz}{enm}",
+        "\\olref[enm-alt]{sec}",
+        "\\ollabel{defn:enumerable}",
+        "\\ollabel{prop:enum-shift}",
+        "\\ollabel{cor:enum-nat}",
+        "\\ollabel{prop:enum-bij}",
+        "\\ollabel{cor:enum-nat-bij}",
+        "\\olref{prop:enum-bij}",
+        "\\olref{prop:enum-shift}",
+        "\\olref[sfr][siz][enm]{defn:enumerable}"
+      ],
+      "tokens_source": {
+        "!!a{bijection}": 4,
+        "!!a{bijective}": 1,
+        "!!a{element}": 2,
+        "!!a{injective}": 2,
+        "!!a{surjection}": 4,
+        "!!a{surjective}": 11,
+        "!!{element}": 15,
+        "!!{element}s": 15,
+        "!!{enumerable}": 11,
+        "!!{injective}": 3,
+        "!!{surjective}": 12
+      },
+      "tokens_target": {
+        "!!a{bijection}": 4,
+        "!!a{bijective}": 1,
+        "!!a{element}": 2,
+        "!!a{injective}": 2,
+        "!!a{surjection}": 4,
+        "!!a{surjective}": 11,
+        "!!{element}": 15,
+        "!!{element}s": 15,
+        "!!{enumerable}": 11,
+        "!!{injective}": 3,
+        "!!{surjective}": 12
+      },
+      "math_source": [
+        "$\\PosInt$",
+        "$\\Nat$",
+        "$A$",
+        "$A$",
+        "$A$",
+        "$A$",
+        "$A$",
+        "$1$",
+        "$2$",
+        "$A$",
+        "$4$",
+        "$1$",
+        "$25$",
+        "$16$",
+        "$9$",
+        "$1$",
+        "$4$",
+        "$9$",
+        "$16$",
+        "$25$",
+        "$1$",
+        "$1$",
+        "$2$",
+        "$2$",
+        "$3$",
+        "$3$",
+        "$1$",
+        "$2$",
+        "$3$",
+        "$1$",
+        "$2$",
+        "$3$",
+        "$1$",
+        "$1$",
+        "$2$",
+        "$3$",
+        "$4$",
+        "$3$",
+        "$2$",
+        "$1$",
+        "$1$",
+        "$3$",
+        "$5$",
+        "$2$",
+        "$4$",
+        "$6$",
+        "$\\infty+1$",
+        "$\\infty+2$",
+        "$\\infty+3$",
+        "$A$",
+        "$A$",
+        "$x_1$",
+        "$x_2$",
+        "$x_i$",
+        "$A$",
+        "$x_i$",
+        "$A$",
+        "$x_1$",
+        "$x_{i-1}$",
+        "$x_i$",
+        "$x_1$",
+        "$x_{i-1}$",
+        "$A\\neq\\emptyset$",
+        "$f\\colon\\PosInt\\toA$",
+        "$\\PosInt$",
+        "$A$",
+        "$A$",
+        "$f(1)$",
+        "$f(2)$",
+        "$f(3)$",
+        "$f$",
+        "$A$",
+        "$f(n)$",
+        "$n\\in\\PosInt$",
+        "$A$",
+        "$A$",
+        "$f\\colon\\PosInt\\toA$",
+        "$f(n)$",
+        "$n$",
+        "$n$",
+        "$A$",
+        "$f\\colon\\PosInt\\toA$",
+        "$A$",
+        "$\\PosInt$",
+        "$f(n)=n$",
+        "$\\Nat$",
+        "$g(n)=n-1$",
+        "$f\\colon\\PosInt\\to\\PosInt$",
+        "$g\\colon\\PosInt\\to\\PosInt$",
+        "\\begin{align*}f(n)&=2n\\\\g(n)&=2n-1\\end{align*}",
+        "$\\PosInt$",
+        "$1$",
+        "$4$",
+        "$9$",
+        "$16$",
+        "$f(n)=(-1)^{n}\\lceil\\frac{(n-1)}{2}\\rceil$",
+        "$\\lceilx\\rceil$",
+        "$x$",
+        "$\\Int$",
+        "$f$",
+        "$\\Int$",
+        "\\[\\begin{array}{cccccccc}f(1)&f(2)&f(3)&f(4)&f(5)&f(6)&f(7)&\\dots\\\\\\\\-\\lceil\\tfrac{0}{2}\\rceil&\\lceil\\tfrac{1}{2}\\rceil&-\\lceil\\tfrac{2}{2}\\rceil&\\lceil\\tfrac{3}{2}\\rceil&-\\lceil\\tfrac{4}{2}\\rceil&\\lceil\\tfrac{5}{2}\\rceil&-\\lceil\\tfrac{6}{2}\\rceil&\\dots\\\\\\\\0&1&-1&2&-2&3&\\dots\\end{array}\\]",
+        "$f$",
+        "\\[f(n)=\\begin{cases}0&\\\\n/2&\\\\-(n-1)/2&\\end{cases}\\]",
+        "$A$",
+        "$B$",
+        "$A\\cupB$",
+        "$f\\colon\\PosInt\\toA$",
+        "$g\\colon\\PosInt\\toB$",
+        "$h\\colon\\PosInt\\toA\\cupB$",
+        "$A$",
+        "$B=\\emptyset$",
+        "$B\\subseteqA$",
+        "$A$",
+        "$B$",
+        "$f\\colon\\PosInt\\toA$",
+        "$g\\colon\\PosInt\\toB$",
+        "$B=\\emptyset$",
+        "$n$",
+        "$A_1$",
+        "$A_2$",
+        "$A_n$",
+        "$A_1\\cup\\dots\\cupA_n$",
+        "$A$",
+        "$B$",
+        "$A\\cupB$",
+        "$1$",
+        "$\\Nat$",
+        "$0$",
+        "$1$",
+        "$2$",
+        "$\\Nat$",
+        "$A$",
+        "$f\\colon\\PosInt\\toA$",
+        "$g\\colon\\Nat\\toA$",
+        "$f\\colon\\PosInt\\toA$",
+        "$g(n)=f(n+1)$",
+        "$n\\in\\Nat$",
+        "$g\\colon\\Nat\\toA$",
+        "$g\\colon\\Nat\\toA$",
+        "$f(n)=g(n-1)$",
+        "$A$",
+        "$f\\colon\\Nat\\toA$",
+        "$A$",
+        "$f\\colon\\PosInt\\toA$",
+        "$n\\in\\PosInt$",
+        "$A$",
+        "$\\PosInt$",
+        "$A$",
+        "$f$",
+        "$f$",
+        "$\\{1,\\dots,n\\}$",
+        "$\\PosInt$",
+        "$A$",
+        "$f\\colon\\PosInt\\toA$",
+        "$A$",
+        "$g\\colonZ\\toA$",
+        "$Z$",
+        "$\\PosInt$",
+        "$\\{1,\\dots,n\\}$",
+        "$n\\in\\PosInt$",
+        "$g$",
+        "$g(1)=f(1)$",
+        "$g(i)$",
+        "$g(i+1)$",
+        "$f(1)$",
+        "$f(2)$",
+        "$g(1)$",
+        "$g(i)$",
+        "$A$",
+        "$n$",
+        "$g(1)$",
+        "$g(n)$",
+        "$g\\colon\\{1,\\dots,n\\}\\toA$",
+        "$A$",
+        "$i$",
+        "$A$",
+        "$f(1)$",
+        "$f(2)$",
+        "$g(1)$",
+        "$g(i)$",
+        "$g\\colon\\PosInt\\toA$",
+        "$g$",
+        "$A$",
+        "$f(1)$",
+        "$f(2)$",
+        "$f$",
+        "$g(i)$",
+        "$i$",
+        "$j<i$",
+        "$g(j)=g(i)$",
+        "$g(i)$",
+        "$g(1)$",
+        "$g(i-1)$",
+        "$g$",
+        "$A$",
+        "$f\\colonN\\toA$",
+        "$N=\\Nat$",
+        "$N=\\{0,\\dots,n\\}$",
+        "$n\\in\\Nat$",
+        "$A$",
+        "$A$",
+        "$f\\colon\\PosInt\\toA$",
+        "$f\\colonZ\\toA$",
+        "$Z=\\PosInt$",
+        "$Z=\\{1,\\dots,n\\}$",
+        "$n\\in\\PosInt$",
+        "$g\\colonN\\toA$",
+        "$N=\\Nat$",
+        "$N=\\{0,\\dots,n-1\\}$",
+        "$A$",
+        "$A=\\emptyset$",
+        "$f\\colon\\PosInt\\toA$",
+        "$g\\colonA\\to\\PosInt$",
+        "$g\\colonA\\to\\PosInt$",
+        "$A=\\emptyset$",
+        "$f\\colon\\PosInt\\toA$"
+      ],
+      "math_target_core": [
+        "$\\PosInt$",
+        "$\\Nat$",
+        "$A$",
+        "$A$",
+        "$A$",
+        "$A$",
+        "$A$",
+        "$1$",
+        "$2$",
+        "$A$",
+        "$4$",
+        "$1$",
+        "$25$",
+        "$16$",
+        "$9$",
+        "$1$",
+        "$4$",
+        "$9$",
+        "$16$",
+        "$25$",
+        "$1$",
+        "$1$",
+        "$2$",
+        "$2$",
+        "$3$",
+        "$3$",
+        "$1$",
+        "$2$",
+        "$3$",
+        "$1$",
+        "$2$",
+        "$3$",
+        "$1$",
+        "$1$",
+        "$2$",
+        "$3$",
+        "$4$",
+        "$3$",
+        "$2$",
+        "$1$",
+        "$1$",
+        "$3$",
+        "$5$",
+        "$2$",
+        "$4$",
+        "$6$",
+        "$\\infty+1$",
+        "$\\infty+2$",
+        "$\\infty+3$",
+        "$A$",
+        "$x_i$",
+        "$A$",
+        "$A$",
+        "$x_1$",
+        "$x_2$",
+        "$x_i$",
+        "$x_1$",
+        "$x_{i-1}$",
+        "$A$",
+        "$x_1$",
+        "$x_{i-1}$",
+        "$x_i$",
+        "$A\\neq\\emptyset$",
+        "$f\\colon\\PosInt\\toA$",
+        "$\\PosInt$",
+        "$A$",
+        "$A$",
+        "$f(1)$",
+        "$f(2)$",
+        "$f(3)$",
+        "$f$",
+        "$A$",
+        "$n\\in\\PosInt$",
+        "$f(n)$",
+        "$A$",
+        "$A$",
+        "$f(n)$",
+        "$n$",
+        "$n$",
+        "$f\\colon\\PosInt\\toA$",
+        "$A$",
+        "$f\\colon\\PosInt\\toA$",
+        "$A$",
+        "$\\PosInt$",
+        "$f(n)=n$",
+        "$\\Nat$",
+        "$g(n)=n-1$",
+        "\\begin{align*}f(n)&=2n\\\\g(n)&=2n-1\\end{align*}",
+        "$f\\colon\\PosInt\\to\\PosInt$",
+        "$g\\colon\\PosInt\\to\\PosInt$",
+        "$\\PosInt$",
+        "$1$",
+        "$4$",
+        "$9$",
+        "$16$",
+        "$\\lceilx\\rceil$",
+        "$x$",
+        "$f(n)=(-1)^{n}\\lceil\\frac{(n-1)}{2}\\rceil$",
+        "$\\Int$",
+        "$\\Int$",
+        "$f$",
+        "\\[\\begin{array}{cccccccc}f(1)&f(2)&f(3)&f(4)&f(5)&f(6)&f(7)&\\dots\\\\\\\\-\\lceil\\tfrac{0}{2}\\rceil&\\lceil\\tfrac{1}{2}\\rceil&-\\lceil\\tfrac{2}{2}\\rceil&\\lceil\\tfrac{3}{2}\\rceil&-\\lceil\\tfrac{4}{2}\\rceil&\\lceil\\tfrac{5}{2}\\rceil&-\\lceil\\tfrac{6}{2}\\rceil&\\dots\\\\\\\\0&1&-1&2&-2&3&-3&\\dots\\end{array}\\]",
+        "$f$",
+        "\\[f(n)=\\begin{cases}0&\\\\n/2&\\\\-(n-1)/2&\\end{cases}\\]",
+        "$A$",
+        "$B$",
+        "$A\\cupB$",
+        "$f\\colon\\PosInt\\toA$",
+        "$g\\colon\\PosInt\\toB$",
+        "$h\\colon\\PosInt\\toA\\cupB$",
+        "$A$",
+        "$B=\\emptyset$",
+        "$B\\subseteqA$",
+        "$A$",
+        "$B$",
+        "$f\\colon\\PosInt\\toA$",
+        "$g\\colon\\PosInt\\toB$",
+        "$B=\\emptyset$",
+        "$A_1$",
+        "$A_2$",
+        "$A_n$",
+        "$A_1\\cup\\dots\\cupA_n$",
+        "$n$",
+        "$A$",
+        "$B$",
+        "$A\\cupB$",
+        "$1$",
+        "$\\Nat$",
+        "$0$",
+        "$1$",
+        "$2$",
+        "$\\Nat$",
+        "$A$",
+        "$f\\colon\\PosInt\\toA$",
+        "$g\\colon\\Nat\\toA$",
+        "$f\\colon\\PosInt\\toA$",
+        "$n\\in\\Nat$",
+        "$g(n)=f(n+1)$",
+        "$g\\colon\\Nat\\toA$",
+        "$g\\colon\\Nat\\toA$",
+        "$f(n)=g(n-1)$",
+        "$A$",
+        "$f\\colon\\Nat\\toA$",
+        "$A$",
+        "$n\\in\\PosInt$",
+        "$f\\colon\\PosInt\\toA$",
+        "$A$",
+        "$\\PosInt$",
+        "$A$",
+        "$f$",
+        "$f$",
+        "$\\{1,\\dots,n\\}$",
+        "$\\PosInt$",
+        "$A$",
+        "$f\\colon\\PosInt\\toA$",
+        "$A$",
+        "$Z$",
+        "$\\PosInt$",
+        "$n\\in\\PosInt$",
+        "$\\{1,\\dots,n\\}$",
+        "$g\\colonZ\\toA$",
+        "$g$",
+        "$g(1)=f(1)$",
+        "$g(i)$",
+        "$f(1)$",
+        "$f(2)$",
+        "$g(1)$",
+        "$g(i)$",
+        "$g(i+1)$",
+        "$A$",
+        "$n$",
+        "$g(1)$",
+        "$g(n)$",
+        "$g\\colon\\{1,\\dots,n\\}\\toA$",
+        "$A$",
+        "$i$",
+        "$f(1)$",
+        "$f(2)$",
+        "$g(1)$",
+        "$g(i)$",
+        "$A$",
+        "$g\\colon\\PosInt\\toA$",
+        "$A$",
+        "$f(1)$",
+        "$f(2)$",
+        "$f$",
+        "$i$",
+        "$g(i)$",
+        "$g$",
+        "$j<i$",
+        "$g(j)=g(i)$",
+        "$g(i)$",
+        "$g(1)$",
+        "$g(i-1)$",
+        "$g$",
+        "$A$",
+        "$N=\\Nat$",
+        "$n\\in\\Nat$",
+        "$N=\\{0,\\dots,n\\}$",
+        "$f\\colonN\\toA$",
+        "$A$",
+        "$A$",
+        "$f\\colon\\PosInt\\toA$",
+        "$Z=\\PosInt$",
+        "$n\\in\\PosInt$",
+        "$Z=\\{1,\\dots,n\\}$",
+        "$f\\colonZ\\toA$",
+        "$N=\\Nat$",
+        "$N=\\{0,\\dots,n-1\\}$",
+        "$g\\colonN\\toA$",
+        "$A=\\emptyset$",
+        "$f\\colon\\PosInt\\toA$",
+        "$A$",
+        "$g\\colonA\\to\\PosInt$",
+        "$A=\\emptyset$",
+        "$f\\colon\\PosInt\\toA$",
+        "$g\\colonA\\to\\PosInt$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "\\[\\begin{array}{cccccccc}f(1)&f(2)&f(3)&f(4)&f(5)&f(6)&f(7)&\\dots\\\\\\\\-\\lceil\\tfrac{0}{2}\\rceil&\\lceil\\tfrac{1}{2}\\rceil&-\\lceil\\tfrac{2}{2}\\rceil&\\lceil\\tfrac{3}{2}\\rceil&-\\lceil\\tfrac{4}{2}\\rceil&\\lceil\\tfrac{5}{2}\\rceil&-\\lceil\\tfrac{6}{2}\\rceil&\\dots\\\\\\\\0&1&-1&2&-2&3&\\dots\\end{array}\\]"
+      ],
+      "math_delta_target_only": [
+        "\\[\\begin{array}{cccccccc}f(1)&f(2)&f(3)&f(4)&f(5)&f(6)&f(7)&\\dots\\\\\\\\-\\lceil\\tfrac{0}{2}\\rceil&\\lceil\\tfrac{1}{2}\\rceil&-\\lceil\\tfrac{2}{2}\\rceil&\\lceil\\tfrac{3}{2}\\rceil&-\\lceil\\tfrac{4}{2}\\rceil&\\lceil\\tfrac{5}{2}\\rceil&-\\lceil\\tfrac{6}{2}\\rceil&\\dots\\\\\\\\0&1&-1&2&-2&3&-3&\\dots\\end{array}\\]"
+      ],
+      "declared_source_correction_ids": [
+        "OLSIZ-001"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 5398,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part:sets-functions-relations\n% Chapter: size-of-sets\n% Section: enumerations",
+          "target_start": "% Part:sets-functions-relations\n% Chapter: size-of-sets\n% Section: enumerations"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sfr}{siz}{enm}",
+          "target_start": "\\olfileid{sfr}{siz}{enm}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Enumerations and \\usetoken{S}{enumerable} Sets}",
+          "target_start": "\\olsection{లెక్కింపులు, \\usetoken{S}{enumerable} సమితులు}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{editorial}\n  This section discusses enumerations of sets, defining them as\n  surjections from $\\PosInt$",
+          "target_start": "\\begin{editorial}\n  ఈ విభాగం సమితుల లెక్కింపులను చర్చిస్తూ, వాటిని $\\PosInt$ నుంచి\n  సంగ్రస్త ప్రమేయాలుగా నిర్"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{explain}\nWe've already given examples of sets by listing their !!{element}s.\nLet's discuss in more gene",
+          "target_start": "\\begin{explain}\nసమితిలోని !!{element}sను జాబితాగా రాసి సమితులకు ఇప్పటికే ఉదాహరణలు\nఇచ్చాం. ఒక సమితి అనంతమైనా, ద"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{defn}[Enumeration, informally]\nInformally, an \\emph{enumeration} of a set~$A$ is a list (possibly\ninfin",
+          "target_start": "\\begin{defn}[లెక్కింపు: అనౌపచారికంగా]\nఅనౌపచారికంగా, $A$ సమితి యొక్క \\emph{లెక్కింపు} అంటే $A$లోని\n!!{element}s"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{explain}\nA couple of points about enumerations:\n\\begin{enumerate}\n\\item We count as enumerations only l",
+          "target_start": "\\begin{explain}\nలెక్కింపుల గురించి కొన్ని విషయాలు:\n\\begin{enumerate}\n\\item మొదలు ఉండి, మొదటిది కాని ప్రతి !!{e"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{prop}\n  If $A$ has an enumeration, it has an enumeration without\n  repetitions.\n\\end{prop}",
+          "target_start": "\\begin{prop}\n  $A$కు ఒక లెక్కింపు ఉంటే, పునరుక్తులు లేని లెక్కింపు కూడా ఉంటుంది.\n\\end{prop}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{proof}\n  Suppose $A$ has an enumeration $x_1$, $x_2$, \\dots{} in which each\n  $x_i$ is an !!{element} o",
+          "target_start": "\\begin{proof}\n  ప్రతి $x_i$, $A$లోని !!{element} అయ్యేలా $A$కు $x_1$, $x_2$,\n  \\dots{} అనే లెక్కింపు ఉందనుకుంద"
+        },
+        {
+          "index": 12,
+          "source_start": "The last argument shows that in order to get a good handle on\nenumerations and !!{enumerable} sets and to prov",
+          "target_start": "లెక్కింపులనూ !!{enumerable} సమితులనూ బాగా అర్థం చేసుకుని వాటి గురించి\nవిషయాలను నిరూపించాలంటే మరింత కచ్చితమైన న"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{defn}[Enumeration, formally] \nAn \\emph{enumeration} of a set $A \\neq \\emptyset$ is any\n!!{surjective} f",
+          "target_start": "\\begin{defn}[లెక్కింపు: ఔపచారికంగా]\n$A \\neq \\emptyset$ సమితి యొక్క \\emph{లెక్కింపు} అంటే ఏదైనా\n!!{surjective} "
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{explain}\nLet's convince ourselves that the formal definition and the informal\ndefinition using a possib",
+          "target_start": "\\begin{explain}\nఔపచారిక నిర్వచనం, అనంతం కావచ్చుననే జాబితాను వాడిన అనౌపచారిక\nనిర్వచనం సమానమని నిర్ధారించుకుందాం"
+        },
+        {
+          "index": 15,
+          "source_start": "On the other hand, given a list that enumerates all !!{element}s\nof~$A$, we can define !!a{surjective} functio",
+          "target_start": "మరోవైపు, $A$లోని !!{element}s అన్నింటినీ లెక్కించే జాబితా ఇచ్చినప్పుడు,\n$f(n)$ను జాబితాలోని $n$వ !!{element}గా"
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{defn}\n  \\ollabel{defn:enumerable}\n  A set~$A$ is !!{enumerable} iff it is empty or has an enumeration.\n",
+          "target_start": "\\begin{defn}\n  \\ollabel{defn:enumerable}\n  $A$ సమితి ఖాళీగా ఉంటే లేదా దానికి లెక్కింపు ఉంటేనే, అప్పుడే మాత్రమే"
+        },
+        {
+          "index": 17,
+          "source_start": "\\begin{ex}\nA function enumerating the positive integers ($\\PosInt$) is simply the\nidentity function given by $",
+          "target_start": "\\begin{ex}\nధన పూర్ణ సంఖ్యలను ($\\PosInt$) లెక్కించే ప్రమేయం $f(n) = n$గా ఇచ్చిన\nతాదాత్మ్య ప్రమేయమే. సహజ సంఖ్యలు"
+        },
+        {
+          "index": 18,
+          "source_start": "\\begin{ex}\nThe functions $f\\colon \\PosInt \\to \\PosInt$ and $g \\colon \\PosInt \\to\n\\PosInt$ given by\n\\begin{alig",
+          "target_start": "\\begin{ex}\n\\begin{align*}\nf(n) & = 2n \\text{ మరియు}\\\\\ng(n) & = 2n - 1\n\\end{align*}\nఅని ఇచ్చిన $f\\colon \\PosInt"
+        },
+        {
+          "index": 19,
+          "source_start": "\\begin{prob}\nDefine an enumeration of the positive squares $1$, $4$, $9$, $16$, \\dots\n\\end{prob}",
+          "target_start": "\\begin{prob}\nధన వర్గ సంఖ్యలు $1$, $4$, $9$, $16$, \\dots కు ఒక లెక్కింపును\nనిర్వచించండి.\n\\end{prob}"
+        },
+        {
+          "index": 20,
+          "source_start": "\\begin{ex}\nThe function $f(n) = (-1)^{n} \\lceil \\frac{(n-1)}{2}\\rceil$ (where\n$\\lceil x \\rceil$ denotes the \\e",
+          "target_start": "\\begin{ex}\n$\\lceil x \\rceil$ అనేది $x$ను దానికి సమీపంలోని పై పూర్ణ సంఖ్యకు\nచేర్చే \\emph{పై పూర్ణాంక} ప్రమేయం అ"
+        },
+        {
+          "index": 21,
+          "source_start": "\\begin{prob}\n  Show that if $A$ and $B$ are !!{enumerable}, so is $A \\cup B$. To do\n  this, suppose there are ",
+          "target_start": "\\begin{prob}\n  $A$, $B$లు !!{enumerable} అయితే $A \\cup B$ కూడా లెక్కించదగినదని\n  చూపండి. ఇందుకోసం !!{surjectiv"
+        },
+        {
+          "index": 22,
+          "source_start": "\\begin{prob}\n  Show that if $B \\subseteq A$ and $A$ is !!{enumerable}, so is~$B$. To\n  do this, suppose there ",
+          "target_start": "\\begin{prob}\n  $B \\subseteq A$, $A$ !!{enumerable} అయితే $B$ కూడా లెక్కించదగినది\n  అని చూపండి. ఇందుకోసం !!a{su"
+        },
+        {
+          "index": 23,
+          "source_start": "\\begin{prob}\n  Show by induction on $n$ that if $A_1$, $A_2$, \\dots, $A_n$ are all\n  !!{enumerable}, so is $A_",
+          "target_start": "\\begin{prob}\n  $A_1$, $A_2$, \\dots, $A_n$ అన్నీ !!{enumerable} అయితే\n  $A_1 \\cup \\dots \\cup A_n$ కూడా లెక్కించ"
+        },
+        {
+          "index": 24,
+          "source_start": "Although it is perhaps more natural when listing the !!{element}s of a\nset to start counting from the $1$st !!",
+          "target_start": "ఒక సమితిలోని !!{element}sను జాబితా చేసేటప్పుడు మొదటి !!{element}ను\n$1$వదిగా లెక్కించడం మరింత సహజంగా అనిపించవచ్"
+        },
+        {
+          "index": 25,
+          "source_start": "\\begin{prop}\\ollabel{prop:enum-shift}\n  There is !!a{surjection} $f\\colon \\PosInt \\to A$ iff there is\n  !!a{su",
+          "target_start": "\\begin{prop}\\ollabel{prop:enum-shift}\n  !!a{surjection} $f\\colon \\PosInt \\to A$ ఉంటేనే, అప్పుడే మాత్రమే\n  !!a{"
+        },
+        {
+          "index": 26,
+          "source_start": "\\begin{proof}\n  Given !!a{surjection} $f\\colon \\PosInt \\to A$, we can define $g(n) =\n  f(n+1)$ for all $n \\in ",
+          "target_start": "\\begin{proof}\n  !!a{surjection} $f\\colon \\PosInt \\to A$ ఇచ్చినప్పుడు, ప్రతి\n  $n \\in \\Nat$కు $g(n) = f(n+1)$గా"
+        },
+        {
+          "index": 27,
+          "source_start": "This gives us the following result:",
+          "target_start": "దీంతో మనకు కింది ఫలితం లభిస్తుంది:"
+        },
+        {
+          "index": 28,
+          "source_start": "\\begin{cor}\\ollabel{cor:enum-nat}\nA set $A$ is !!{enumerable} iff it is empty or there is\n!!a{surjective} func",
+          "target_start": "\\begin{cor}\\ollabel{cor:enum-nat}\n$A$ సమితి ఖాళీగా ఉంటే లేదా !!a{surjective} ప్రమేయం\n$f\\colon \\Nat \\to A$ ఉంటే"
+        },
+        {
+          "index": 29,
+          "source_start": "We discussed above that a list of !!{element}s of a set~$A$ can be\nturned into a list without repetitions. Thi",
+          "target_start": "$A$ సమితిలోని !!{element}s జాబితాను పునరుక్తులు లేని జాబితాగా\nమార్చవచ్చని పైన చర్చించాం. లెక్కింపుల విషయంలోనూ "
+        },
+        {
+          "index": 30,
+          "source_start": "\\begin{prop}\\ollabel{prop:enum-bij}\nIf $f\\colon \\PosInt \\to A$ is !!{surjective} (i.e., an enumeration\nof~$A$)",
+          "target_start": "\\begin{prop}\\ollabel{prop:enum-bij}\n$f\\colon \\PosInt \\to A$ !!{surjective} అయితే (అంటే $A$కు లెక్కింపు\nఅయితే),"
+        },
+        {
+          "index": 31,
+          "source_start": "\\begin{proof}\n  We define the function $g$ recursively: Let $g(1) = f(1)$. If $g(i)$\n  has already been define",
+          "target_start": "\\begin{proof}\n  $g$ ప్రమేయాన్ని పునరావృత్తంగా నిర్వచిస్తాం: $g(1) = f(1)$గా\n  తీసుకోండి. $g(i)$ ఇప్పటికే నిర్వ"
+        },
+        {
+          "index": 32,
+          "source_start": "  The function $g$ is !!{surjective}, since any element of~$A$ is\n  among $f(1)$, $f(2)$, \\dots{} (since $f$ i",
+          "target_start": "  $A$ యొక్క ఏ మూలకమైనా $f(1)$, $f(2)$, \\dots{}లో ఉంటుంది ($f$\n  !!{surjective} కనుక); అందుచేత ఏదో ఒక $i$కు చివ"
+        },
+        {
+          "index": 33,
+          "source_start": "\\begin{cor}\\ollabel{cor:enum-nat-bij}\nA set $A$ is !!{enumerable} iff it is empty or there is !!a{bijection}\n$",
+          "target_start": "\\begin{cor}\\ollabel{cor:enum-nat-bij}\n$A$ సమితి ఖాళీగా ఉంటే లేదా $N = \\Nat$ గానీ, ఏదో ఒక $n \\in \\Nat$కు\n$N = \\"
+        },
+        {
+          "index": 34,
+          "source_start": "\\begin{proof}\n$A$ is !!{enumerable} iff $A$ is empty or there is !!a{surjective}\n$f\\colon \\PosInt \\to A$. By \\",
+          "target_start": "\\begin{proof}\n$A$ !!{enumerable} అవడం అంటే $A$ ఖాళీగా ఉండటం లేదా !!a{surjective}\n$f\\colon \\PosInt \\to A$ ఉండటం"
+        },
+        {
+          "index": 35,
+          "source_start": "\\begin{prob}\n  According to \\olref[sfr][siz][enm]{defn:enumerable}, a set $A$ is\n  enumerable iff $A = \\emptys",
+          "target_start": "\\begin{prob}\n  \\olref[sfr][siz][enm]{defn:enumerable} ప్రకారం, $A = \\emptyset$\n  లేదా !!a{surjective} ప్రమేయం "
+        },
+        {
+          "index": 36,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{siz}{enm}",
+        "\\olref[enm-alt]{sec}",
+        "\\ollabel{defn:enumerable}",
+        "\\ollabel{prop:enum-shift}",
+        "\\ollabel{cor:enum-nat}",
+        "\\ollabel{prop:enum-bij}",
+        "\\ollabel{cor:enum-nat-bij}",
+        "\\olref{prop:enum-bij}",
+        "\\olref{prop:enum-shift}",
+        "\\olref[sfr][siz][enm]{defn:enumerable}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{siz}{enm}",
+        "\\olref[enm-alt]{sec}",
+        "\\ollabel{defn:enumerable}",
+        "\\ollabel{prop:enum-shift}",
+        "\\ollabel{cor:enum-nat}",
+        "\\ollabel{prop:enum-bij}",
+        "\\ollabel{cor:enum-nat-bij}",
+        "\\olref{prop:enum-bij}",
+        "\\olref{prop:enum-shift}",
+        "\\olref[sfr][siz][enm]{defn:enumerable}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0030",
+      "source_path": "content/sets-functions-relations/size-of-sets/zig-zag.tex",
+      "source_sha256": "514c709d325dd5496ee321828b0c4a0e7eea089a58d3f2ecde05128b9e7daf26",
+      "translation_sha256": "25ea797a420768673f278f6a877bf8c80b7e0b7a1faf896c28f28102790b199f",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{siz}{zigzag}",
+        "\\oliflabeldef{sfr:set:pai:sec}",
+        "\\olref[set][pai]{sec}",
+        "\\ollabel{natsquaredenumerable}",
+        "\\label{sfr:siz:zigzag:prob:posint-n}",
+        "\\label{sfr:siz:zigzag:prob:posint-star}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{siz}{zigzag}",
+        "\\oliflabeldef{sfr:set:pai:sec}",
+        "\\olref[set][pai]{sec}",
+        "\\ollabel{natsquaredenumerable}",
+        "\\label{sfr:siz:zigzag:prob:posint-n}",
+        "\\label{sfr:siz:zigzag:prob:posint-star}"
+      ],
+      "tokens_source": {
+        "!!{enumerable}": 4
+      },
+      "tokens_target": {
+        "!!{enumerable}": 4
+      },
+      "math_source": [
+        "\\[\\Nat\\times\\Nat=\\Setabs{\\tuple{n,m}}{n,m\\in\\Nat}\\]",
+        "\\[\\begin{array}{c|c|c|c|c|c}&\\mathbf0&\\mathbf1&\\mathbf2&\\mathbf3&\\dots\\\\\\hline\\mathbf0&\\tuple{0,0}&\\tuple{0,1}&\\tuple{0,2}&\\tuple{0,3}&\\dots\\\\\\hline\\mathbf1&\\tuple{1,0}&\\tuple{1,1}&\\tuple{1,2}&\\tuple{1,3}&\\dots\\\\\\hline\\mathbf2&\\tuple{2,0}&\\tuple{2,1}&\\tuple{2,2}&\\tuple{2,3}&\\dots\\\\\\hline\\mathbf3&\\tuple{3,0}&\\tuple{3,1}&\\tuple{3,2}&\\tuple{3,3}&\\dots\\\\\\hline\\vdots&\\vdots&\\vdots&\\vdots&\\vdots&\\ddots\\\\\\end{array}\\]",
+        "$\\Nat\\times\\Nat$",
+        "$\\tuple{n,m}$",
+        "$n$",
+        "$m$",
+        "\\[\\begin{array}{c|c|c|c|c|c|c}&\\mathbf0&\\mathbf1&\\mathbf2&\\mathbf3&\\mathbf4&\\dots\\\\\\hline\\mathbf0&0&1&3&6&10&\\ldots\\\\\\hline\\mathbf1&2&4&7&11&\\dots&\\ldots\\\\\\hline\\mathbf2&5&8&12&\\ldots&\\dots&\\ldots\\\\\\hline\\mathbf3&9&13&\\ldots&\\ldots&\\dots&\\ldots\\\\\\hline\\mathbf4&14&\\ldots&\\ldots&\\ldots&\\dots&\\ldots\\\\\\hline\\vdots&\\vdots&\\vdots&\\vdots&\\vdots&\\ldots&\\ddots\\\\\\end{array}\\]",
+        "$\\Nat\\times\\Nat$",
+        "\\[\\tuple{0,0},\\tuple{0,1},\\tuple{1,0},\\tuple{0,2},\\tuple{1,1},\\tuple{2,0},\\tuple{0,3},\\tuple{1,2},\\tuple{2,1},\\tuple{3,0},\\dots\\]",
+        "$\\Nat\\times\\Nat$",
+        "$f\\colon\\Nat\\to\\Nat\\times\\Nat$",
+        "$k\\in\\Nat$",
+        "$\\tuple{n,m}\\in\\Nat\\times\\Nat$",
+        "$k$",
+        "$n$",
+        "$m$",
+        "\\[\\Nat\\times\\Nat\\times\\Nat=\\Setabs{\\tuple{n,m,k}}{n,m,k\\in\\Nat}\\]",
+        "$\\Nat\\times\\Nat\\times\\Nat$",
+        "$\\Nat\\times\\Nat$",
+        "$\\Nat$",
+        "\\[\\Nat^3=(\\Nat\\times\\Nat)\\times\\Nat=\\Setabs{\\tuple{\\tuple{n,m},k}}{n,m,k\\in\\Nat}\\]",
+        "$\\Nat^3$",
+        "$\\Nat$",
+        "$\\Nat^2$",
+        "\\[\\begin{array}{c|c|c|c|c|c}&\\mathbf0&\\mathbf1&\\mathbf2&\\mathbf3&\\dots\\\\\\hline\\mathbf{\\tuple{0,0}}&\\tuple{0,0,0}&\\tuple{0,0,1}&\\tuple{0,0,2}&\\tuple{0,0,3}&\\dots\\\\\\hline\\mathbf{\\tuple{0,1}}&\\tuple{0,1,0}&\\tuple{0,1,1}&\\tuple{0,1,2}&\\tuple{0,1,3}&\\dots\\\\\\hline\\mathbf{\\tuple{1,0}}&\\tuple{1,0,0}&\\tuple{1,0,1}&\\tuple{1,0,2}&\\tuple{1,0,3}&\\dots\\\\\\hline\\mathbf{\\tuple{0,2}}&\\tuple{0,2,0}&\\tuple{0,2,1}&\\tuple{0,2,2}&\\tuple{0,2,3}&\\dots\\\\\\hline\\vdots&\\vdots&\\vdots&\\vdots&\\vdots&\\ddots\\\\\\end{array}\\]",
+        "$\\Nat^3$",
+        "$\\Nat^n$",
+        "$n$",
+        "$\\Nat^n$",
+        "$n\\in\\Nat$",
+        "$(\\PosInt)^n$",
+        "$n\\in\\Nat$",
+        "$(\\PosInt)^*$"
+      ],
+      "math_target_core": [
+        "\\[\\Nat\\times\\Nat=\\Setabs{\\tuple{n,m}}{n,m\\in\\Nat}\\]",
+        "\\[\\begin{array}{c|c|c|c|c|c}&\\mathbf0&\\mathbf1&\\mathbf2&\\mathbf3&\\dots\\\\\\hline\\mathbf0&\\tuple{0,0}&\\tuple{0,1}&\\tuple{0,2}&\\tuple{0,3}&\\dots\\\\\\hline\\mathbf1&\\tuple{1,0}&\\tuple{1,1}&\\tuple{1,2}&\\tuple{1,3}&\\dots\\\\\\hline\\mathbf2&\\tuple{2,0}&\\tuple{2,1}&\\tuple{2,2}&\\tuple{2,3}&\\dots\\\\\\hline\\mathbf3&\\tuple{3,0}&\\tuple{3,1}&\\tuple{3,2}&\\tuple{3,3}&\\dots\\\\\\hline\\vdots&\\vdots&\\vdots&\\vdots&\\vdots&\\ddots\\\\\\end{array}\\]",
+        "$\\Nat\\times\\Nat$",
+        "$\\tuple{n,m}$",
+        "$n$",
+        "$m$",
+        "\\[\\begin{array}{c|c|c|c|c|c|c}&\\mathbf0&\\mathbf1&\\mathbf2&\\mathbf3&\\mathbf4&\\dots\\\\\\hline\\mathbf0&0&1&3&6&10&\\ldots\\\\\\hline\\mathbf1&2&4&7&11&\\dots&\\ldots\\\\\\hline\\mathbf2&5&8&12&\\ldots&\\dots&\\ldots\\\\\\hline\\mathbf3&9&13&\\ldots&\\ldots&\\dots&\\ldots\\\\\\hline\\mathbf4&14&\\ldots&\\ldots&\\ldots&\\dots&\\ldots\\\\\\hline\\vdots&\\vdots&\\vdots&\\vdots&\\vdots&\\ldots&\\ddots\\\\\\end{array}\\]",
+        "$\\Nat\\times\\Nat$",
+        "\\[\\tuple{0,0},\\tuple{0,1},\\tuple{1,0},\\tuple{0,2},\\tuple{1,1},\\tuple{2,0},\\tuple{0,3},\\tuple{1,2},\\tuple{2,1},\\tuple{3,0},\\dots\\]",
+        "$\\Nat\\times\\Nat$",
+        "$k\\in\\Nat$",
+        "$n$",
+        "$m$",
+        "$k$",
+        "$\\tuple{n,m}\\in\\Nat\\times\\Nat$",
+        "$f\\colon\\Nat\\to\\Nat\\times\\Nat$",
+        "\\[\\Nat\\times\\Nat\\times\\Nat=\\Setabs{\\tuple{n,m,k}}{n,m,k\\in\\Nat}\\]",
+        "$\\Nat\\times\\Nat\\times\\Nat$",
+        "$\\Nat\\times\\Nat$",
+        "$\\Nat$",
+        "\\[\\Nat^3=(\\Nat\\times\\Nat)\\times\\Nat=\\Setabs{\\tuple{\\tuple{n,m},k}}{n,m,k\\in\\Nat}\\]",
+        "$\\Nat$",
+        "$\\Nat^2$",
+        "$\\Nat^3$",
+        "\\[\\begin{array}{c|c|c|c|c|c}&\\mathbf0&\\mathbf1&\\mathbf2&\\mathbf3&\\dots\\\\\\hline\\mathbf{\\tuple{0,0}}&\\tuple{0,0,0}&\\tuple{0,0,1}&\\tuple{0,0,2}&\\tuple{0,0,3}&\\dots\\\\\\hline\\mathbf{\\tuple{0,1}}&\\tuple{0,1,0}&\\tuple{0,1,1}&\\tuple{0,1,2}&\\tuple{0,1,3}&\\dots\\\\\\hline\\mathbf{\\tuple{1,0}}&\\tuple{1,0,0}&\\tuple{1,0,1}&\\tuple{1,0,2}&\\tuple{1,0,3}&\\dots\\\\\\hline\\mathbf{\\tuple{0,2}}&\\tuple{0,2,0}&\\tuple{0,2,1}&\\tuple{0,2,2}&\\tuple{0,2,3}&\\dots\\\\\\hline\\vdots&\\vdots&\\vdots&\\vdots&\\vdots&\\ddots\\\\\\end{array}\\]",
+        "$\\Nat^3$",
+        "$n$",
+        "$\\Nat^n$",
+        "$n\\in\\Nat$",
+        "$\\Nat^n$",
+        "$n\\in\\Nat$",
+        "$(\\PosInt)^n$",
+        "$(\\PosInt)^*$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1004,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part:sets-functions-relations\n% Chapter: size-of-sets\n% Section: zig-zag",
+          "target_start": "% Part:sets-functions-relations\n% Chapter: size-of-sets\n% Section: zig-zag"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sfr}{siz}{zigzag}",
+          "target_start": "\\olfileid{sfr}{siz}{zigzag}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Cantor's Zig-Zag Method}",
+          "target_start": "\\olsection{కాంటర్ జిగ్‌జాగ్ పద్ధతి}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{explain}\nWe've already considered some ``easy'' enumerations. Now we will\nconsider something a bit hard",
+          "target_start": "\\begin{explain}\nఇప్పటికే కొన్ని ``సులభమైన'' లెక్కింపులను పరిశీలించాం. ఇప్పుడు కాస్త\nకష్టమైనదాన్ని చూద్దాం. సహజ"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{prop}\\ollabel{natsquaredenumerable}\n$\\Nat \\times \\Nat$ is !!{enumerable}.\n\\end{prop}",
+          "target_start": "\\begin{prop}\\ollabel{natsquaredenumerable}\n$\\Nat \\times \\Nat$ !!{enumerable}.\n\\end{prop}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{proof}\nLet $f \\colon \\Nat \\to \\Nat\\times\\Nat$ take each $k \\in \\Nat$ to the\ntuple $\\tuple{n,m} \\in \\Nat",
+          "target_start": "\\begin{proof}\nప్రతి $k \\in \\Nat$ను, కాంటర్ జిగ్‌జాగ్ పట్టికలోని $n$వ అడ్డువరుస,\n$m$వ నిలువువరుస స్థానంలో విలువ"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{explain}\nThis technique also generalises rather nicely. For example, we can use\nit to enumerate the set",
+          "target_start": "\\begin{explain}\nఈ పద్ధతి చక్కగా సాధారణీకృతమవుతుంది. ఉదాహరణకు, సహజ సంఖ్యల క్రమిత\nత్రికాల సమితిని, అంటే\n\\[\n\\Nat "
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{prop}\n$\\Nat^n$ is !!{enumerable}, for every $n \\in \\Nat$.\n\\end{prop}",
+          "target_start": "\\begin{prop}\nప్రతి $n \\in \\Nat$కు $\\Nat^n$ !!{enumerable}.\n\\end{prop}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{prob}\\label{sfr:siz:zigzag:prob:posint-n}\nShow that $(\\PosInt)^n$ is !!{enumerable}, for every $n \\in \\",
+          "target_start": "\\begin{prob}\\label{sfr:siz:zigzag:prob:posint-n}\nప్రతి $n \\in \\Nat$కు $(\\PosInt)^n$ !!{enumerable} అని చూపండి."
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{prob}\\label{sfr:siz:zigzag:prob:posint-star}\n  Show that $(\\PosInt)^*$ is !!{enumerable}. You may assum",
+          "target_start": "\\begin{prob}\\label{sfr:siz:zigzag:prob:posint-star}\n  $(\\PosInt)^*$ !!{enumerable} అని చూపండి. మీరు\n  \\cref{sf"
+        },
+        {
+          "index": 13,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{siz}{zigzag}",
+        "\\oliflabeldef{sfr:set:pai:sec}",
+        "\\olref[set][pai]{sec}",
+        "\\ollabel{natsquaredenumerable}",
+        "\\label{sfr:siz:zigzag:prob:posint-n}",
+        "\\label{sfr:siz:zigzag:prob:posint-star}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{siz}{zigzag}",
+        "\\oliflabeldef{sfr:set:pai:sec}",
+        "\\olref[set][pai]{sec}",
+        "\\ollabel{natsquaredenumerable}",
+        "\\label{sfr:siz:zigzag:prob:posint-n}",
+        "\\label{sfr:siz:zigzag:prob:posint-star}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0031",
+      "source_path": "content/sets-functions-relations/size-of-sets/pairing.tex",
+      "source_sha256": "fb6cc1176e91e56cea5f5b9708723c59191813f8fe256aac8ed0457a0119a9bf",
+      "translation_sha256": "60cab43cfb19b08f4c3267e684995b1a809ae20890e089bc50e0dfeb6a6e3f59",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{siz}{pai}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{siz}{pai}"
+      ],
+      "tokens_source": {
+        "!!{element}s": 1,
+        "!!{enumerable}": 9
+      },
+      "tokens_target": {
+        "!!{element}s": 1,
+        "!!{enumerable}": 9
+      },
+      "math_source": [
+        "$\\Nat^n$",
+        "$\\Nat^2$",
+        "$\\tuple{1,2}$",
+        "$7$",
+        "$g\\colon\\Nat^2\\to\\Nat$",
+        "\\[g(\\tuple{0,0})=0,\\;g(\\tuple{0,1})=1,\\;g(\\tuple{1,0})=2,\\;\\dots,g(\\tuple{1,2})=7,\\;\\dots\\]",
+        "$\\tuple{n,m}$",
+        "$g$",
+        "$n$",
+        "$m$",
+        "$v$",
+        "$(n+1)$",
+        "$(m-1)$",
+        "$v+1$",
+        "$0$",
+        "$1$",
+        "$3$",
+        "$6$",
+        "$k$",
+        "$<k$",
+        "$k(k+1)/2$",
+        "\\[g(n,m)=\\frac{(n+m+1)(n+m)}{2}+n\\]",
+        "$g(n,m)$",
+        "$g(\\tuple{n,m})$",
+        "$(n+m)^$",
+        "$n$",
+        "$\\tuple{1,2}$",
+        "$\\frac{4\\times3}{2}+1=7$",
+        "$g$",
+        "$f\\colonA\\timesB\\to\\Nat$",
+        "$f$",
+        "$f$",
+        "$A\\timesB$",
+        "$f(x,y)$",
+        "$\\tuple{x,y}$",
+        "$\\Rat$",
+        "$z/m$",
+        "$z\\in\\Int$",
+        "$m\\in\\Nat^+$",
+        "$\\Bin^*$",
+        "$\\Bin^k\\to\\Bin$",
+        "$k$",
+        "$\\Nat$",
+        "$\\Nat$",
+        "$A\\subseteq\\Nat$",
+        "$\\Nat\\setminusA$",
+        "$I$",
+        "$\\Nat$",
+        "$I$",
+        "$A_1$",
+        "$A_2$",
+        "$A_i$",
+        "$\\bigcup_{i=1}^\\inftyA_i$",
+        "$f\\colonA\\timesB\\to\\Nat$",
+        "$f$",
+        "$A\\timesB$",
+        "$\\Nat^3$"
+      ],
+      "math_target_core": [
+        "$\\Nat^n$",
+        "$\\Nat^2$",
+        "$\\tuple{1,2}$",
+        "$7$",
+        "$g\\colon\\Nat^2\\to\\Nat$",
+        "\\[g(\\tuple{0,0})=0,\\;g(\\tuple{0,1})=1,\\;g(\\tuple{1,0})=2,\\;\\dots,g(\\tuple{1,2})=7,\\;\\dots\\]",
+        "$\\tuple{n,m}$",
+        "$g$",
+        "$n$",
+        "$m$",
+        "$v$",
+        "$(n+1)$",
+        "$(m-1)$",
+        "$v+1$",
+        "$0$",
+        "$1$",
+        "$3$",
+        "$6$",
+        "$k$",
+        "$k(k+1)/2$",
+        "\\[g(n,m)=\\frac{(n+m+1)(n+m)}{2}+n\\]",
+        "$g(\\tuple{n,m})$",
+        "$g(n,m)$",
+        "$(n+m)^$",
+        "$n$",
+        "$\\tuple{1,2}$",
+        "$\\frac{4\\times3}{2}+1=7$",
+        "$g$",
+        "$f\\colonA\\timesB\\to\\Nat$",
+        "$f$",
+        "$f$",
+        "$A\\timesB$",
+        "$f(x,y)$",
+        "$\\tuple{x,y}$",
+        "$\\Rat$",
+        "$z\\in\\Int$",
+        "$m\\in\\Nat^+$",
+        "$z/m$",
+        "$\\Bin^*$",
+        "$k$",
+        "$\\Bin^k\\to\\Bin$",
+        "$\\Nat$",
+        "$\\Nat$",
+        "$A\\subseteq\\Nat$",
+        "$\\Nat\\setminusA$",
+        "$\\Nat$",
+        "$I$",
+        "$I$",
+        "$A_1$",
+        "$A_2$",
+        "$A_i$",
+        "$\\bigcup_{i=1}^\\inftyA_i$",
+        "$f\\colonA\\timesB\\to\\Nat$",
+        "$f^{-1}\\colon\\ran{f}\\toA\\timesB$",
+        "$A\\timesB$",
+        "$f$",
+        "$\\Nat$",
+        "$f^{-1}\\colon\\Nat\\toA\\timesB$",
+        "$\\Nat^3$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$<k$"
+      ],
+      "math_delta_target_only": [
+        "$\\Nat$",
+        "$f^{-1}\\colon\\Nat\\toA\\timesB$",
+        "$f^{-1}\\colon\\ran{f}\\toA\\timesB$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTESIZ-002",
+        "OLSIZ-002",
+        "OLTESIZ-003"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2414,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part:sets-functions-relations\n% Chapter: size-of-sets\n% Section: pairing",
+          "target_start": "% Part:sets-functions-relations\n% Chapter: size-of-sets\n% Section: pairing"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sfr}{siz}{pai}\n\\olsection{Pairing Functions and Codes}",
+          "target_start": "\\olfileid{sfr}{siz}{pai}\n\\olsection{జతీకరణ ప్రమేయాలు, సంకేత సంఖ్యలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{explain}\nCantor's zig-zag method makes the enumerability of $\\Nat^n$ visually\nevident. But let us focus",
+          "target_start": "\\begin{explain}\nకాంటర్ జిగ్‌జాగ్ పద్ధతి $\\Nat^n$ లెక్కించదగినదని కంటికి కనిపించేలా\nచేస్తుంది. అయితే $\\Nat^2$ను"
+        },
+        {
+          "index": 6,
+          "source_start": "In fact, we can define $g$ directly by making two observations. First:\nif the $n$th row and $m$th column conta",
+          "target_start": "వాస్తవానికి రెండు విషయాలను గమనించి $g$ను నేరుగా నిర్వచించవచ్చు.\nమొదటిది: $n$వ అడ్డువరుస, $m$వ నిలువువరుసలో విల"
+        },
+        {
+          "index": 7,
+          "source_start": "This function $g$ is the \\emph{inverse} of an enumeration of a set of\npairs. Such functions are called \\emph{p",
+          "target_start": "ఈ ప్రమేయం $g$, జతల సమితి లెక్కింపు యొక్క \\emph{విలోమం}. ఇటువంటి\nప్రమేయాలను \\emph{జతీకరణ ప్రమేయాలు} అంటారు.\n\\en"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{defn}[Pairing function] \n  A function $f\\colon A \\times B \\to \\Nat$ is an arithmetical\n  \\emph{pairing ",
+          "target_start": "\\begin{defn}[జతీకరణ ప్రమేయం]\n$f\\colon A \\times B \\to \\Nat$ ఒకటి-ఒకటి అయితే, $f$ను అంకగణిత\n\\emph{జతీకరణ ప్రమేయం"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{explain}\nWe can use pairing functions to encode, e.g., pairs of natural numbers;\nor, in other words, we",
+          "target_start": "\\begin{explain}\nఉదాహరణకు, సహజ సంఖ్యల జతలను సంకేతీకరించడానికి జతీకరణ ప్రమేయాలను\nవాడవచ్చు. మరోలా చెప్పాలంటే, ప్ర"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{prob}\nGive an enumeration of the set of all non-negative rational numbers. \n\\end{prob}",
+          "target_start": "\\begin{prob}\nఋణేతర కరణీయ సంఖ్యలన్నిటి సమితికి ఒక లెక్కింపును ఇవ్వండి.\n\\end{prob}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{prob}\nShow that $\\Rat$ is !!{enumerable}. Recall that any rational number \ncan be written as a fraction",
+          "target_start": "\\begin{prob}\n$\\Rat$ !!{enumerable} అని చూపండి. ఏ కరణీయ సంఖ్యనైనా $z \\in \\Int$,\n$m \\in \\Nat^+$ అయ్యే $z/m$ భిన్"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{prob}\nDefine an enumeration of $\\Bin^*$.\n\\end{prob}",
+          "target_start": "\\begin{prob}\n$\\Bin^*$కు ఒక లెక్కింపును నిర్వచించండి.\n\\end{prob}"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{prob}\nRecall from your introductory logic course that each possible truth\ntable expresses a truth funct",
+          "target_start": "\\begin{prob}\nమీ పరిచయ తర్కశాస్త్ర పాఠ్యక్రమం నుంచి, సాధ్యమైన ప్రతి సత్యపట్టిక ఒక\nసత్య ప్రమేయాన్ని వ్యక్తం చేస్"
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{prob}\nShow that the set of all finite subsets of an arbitrary infinite\n!!{enumerable} set is !!{enumera",
+          "target_start": "\\begin{prob}\nఏదైనా అనంత !!{enumerable} సమితి యొక్క పరిమిత ఉపసమితులన్నిటి సమితి\n!!{enumerable} అని చూపండి.\n\\end"
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{prob}\nA subset of $\\Nat$ is said to be \\emph{cofinite} iff it is the\ncomplement of a finite set $\\Nat$;",
+          "target_start": "\\begin{prob}\n$\\Nat$ యొక్క ఒక ఉపసమితి, $\\Nat$లో తన పూరకం పరిమిత సమితి అయితేనే\nదాన్ని \\emph{పరిమిత-పూరక} సమితి అ"
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{prob}\nShow that the !!{enumerable} union of !!{enumerable} sets is\n!!{enumerable}. That is, whenever $A",
+          "target_start": "\\begin{prob}\n!!{enumerable} సమితుల !!{enumerable} సమ్మేళనం !!{enumerable} అని\nచూపండి. అంటే $A_1$, $A_2$, \\dots"
+        },
+        {
+          "index": 17,
+          "source_start": "\\begin{prob}\nLet $f \\colon A \\times B \\to \\Nat$ be an arbitrary pairing function.\nShow that the inverse of $f$",
+          "target_start": "\\begin{prob}\n$f \\colon A \\times B \\to \\Nat$ ఏదైనా జతీకరణ ప్రమేయం అనుకుందాం.\n$f^{-1}\\colon \\ran{f}\\to A\\times B"
+        },
+        {
+          "index": 18,
+          "source_start": "\\begin{prob}\nSpecify a function that encodes $\\Nat^3$.\n\\end{prob}",
+          "target_start": "\\begin{prob}\n$\\Nat^3$ను సంకేతీకరించే ఒక ప్రమేయాన్ని పేర్కొనండి.\n\\end{prob}"
+        },
+        {
+          "index": 19,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{siz}{pai}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{siz}{pai}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0032",
+      "source_path": "content/sets-functions-relations/size-of-sets/pairing-alt.tex",
+      "source_sha256": "c26b4e0da9e2e0b0ec839470ddd1d0d5eb1b3d3922d3b6986c9a795f34328797",
+      "translation_sha256": "5f1a2e550d00e53773d883c72edc68c5e023a67fff67711025acbe4e881bcef5",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sfr}{siz}{pai-alt}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{sfr}{siz}{pai-alt}"
+      ],
+      "tokens_source": {
+        "!!a{injective}": 1
+      },
+      "tokens_target": {
+        "!!a{injective}": 1
+      },
+      "math_source": [
+        "$\\Nat^2$",
+        "$\\tuple{n,m}$",
+        "$0$",
+        "$\\tuple{0,m}$",
+        "$\\tuple{0,0}$",
+        "$\\tuple{0,2}$",
+        "\\[\\small\\begin{array}{@{}ccccccccccc@{}}\\mathbf1&\\mathbf2&\\mathbf3&\\mathbf4&\\mathbf5&\\mathbf6&\\mathbf7&\\mathbf8&\\mathbf9&\\mathbf{10}&\\dots\\\\\\\\\\tuple{0,0}&&\\tuple{0,1}&&\\tuple{0,2}&&\\tuple{0,3}&&\\tuple{0,4}&&\\dots\\\\\\end{array}\\]",
+        "$\\tuple{1,m}$",
+        "\\[\\small\\begin{array}{@{}ccccccccccc@{}}\\mathbf1&\\mathbf2&\\mathbf3&\\mathbf4&\\mathbf5&\\mathbf6&\\mathbf7&\\mathbf8&\\mathbf9&\\mathbf{10}&\\dots\\\\\\\\\\tuple{0,0}&\\tuple{1,0}&\\tuple{0,1}&&\\tuple{0,2}&\\tuple{1,1}&\\tuple{0,3}&&\\tuple{0,4}&\\tuple{1,2}&\\dots\\\\\\end{array}\\]",
+        "$\\tuple{2,m}$",
+        "$\\tuple{2,m}$",
+        "\\[\\small\\begin{array}{@{}ccccccccccc@{}}\\mathbf1&\\mathbf2&\\mathbf3&\\mathbf4&\\mathbf5&\\mathbf6&\\mathbf7&\\mathbf8&\\mathbf9&\\mathbf{10}&\\dots\\\\\\\\\\tuple{0,0}&\\tuple{1,0}&\\tuple{0,1}&\\tuple{2,0}&\\tuple{0,2}&\\tuple{1,1}&\\tuple{0,3}&\\tuple{3,0}&\\tuple{0,4}&\\tuple{1,2}&\\dots\\\\\\end{array}\\]",
+        "\\[\\begin{array}{c|c|c|c|c|c|c|c}&\\mathbf0&\\mathbf1&\\mathbf2&\\mathbf3&\\mathbf4&\\mathbf5&\\dots\\\\\\hline\\mathbf0&1&3&5&7&9&11&\\dots\\\\\\hline\\mathbf1&2&6&10&14&18&\\dots&\\dots\\\\\\hline\\mathbf2&4&12&20&28&\\dots&\\dots&\\dots\\\\\\hline\\mathbf3&8&24&40&\\dots&\\dots&\\dots&\\dots\\\\\\hline\\mathbf4&16&48&\\dots&\\dots&\\dots&\\dots&\\dots\\\\\\hline\\mathbf5&32&\\dots&\\dots&\\dots&\\dots&\\dots&\\dots\\\\\\hline\\vdots&\\vdots&\\vdots&\\vdots&\\vdots&\\vdots&\\vdots&\\ddots\\\\\\end{array}\\]",
+        "$0$",
+        "$\\tuple{0,m}$",
+        "$2m+1$",
+        "$\\tuple{1,m}$",
+        "$2\\cdot(2m+1)$",
+        "$\\tuple{2,m}$",
+        "$4\\cdot(2m+1)$",
+        "$(2m+1)$",
+        "$1$",
+        "$2$",
+        "$4$",
+        "$8$",
+        "$2$",
+        "$1=2^0$",
+        "$2=2^1$",
+        "$4=2^2$",
+        "$8=2^3$",
+        "$\\tuple{n,m}$",
+        "$2^n$",
+        "$2^n\\cdot(2m+1)$",
+        "$\\tuple{0,0}$",
+        "$1$",
+        "$0$",
+        "$1$",
+        "$h\\colon\\Nat^2\\to\\Nat$",
+        "\\[h(n,m)=2^n(2m+1)-1\\]",
+        "$\\Nat^2$",
+        "$\\Nat^2$",
+        "$\\tuple{0,0}$",
+        "$h(0,0)=2^0(2\\cdot0+1)-1=0$",
+        "$\\tuple{1,2}$",
+        "$2^{1}\\cdot(2\\cdot2+1)-1=2\\cdot5-1=9$",
+        "$\\tuple{2,6}$",
+        "$2^{2}\\cdot(2\\cdot6+1)-1=51$",
+        "$\\Nat^2$",
+        "$j\\colon\\Nat^2\\to\\Nat^+$",
+        "\\[j(n,m)=2^n3^m\\]",
+        "$\\Nat^2\\to\\Nat$"
+      ],
+      "math_target_core": [
+        "$\\Nat^2$",
+        "$\\tuple{n,m}$",
+        "$0$",
+        "$\\tuple{0,m}$",
+        "$\\tuple{0,0}$",
+        "$\\tuple{0,1}$",
+        "\\[\\small\\begin{array}{@{}ccccccccccc@{}}\\mathbf1&\\mathbf2&\\mathbf3&\\mathbf4&\\mathbf5&\\mathbf6&\\mathbf7&\\mathbf8&\\mathbf9&\\mathbf{10}&\\dots\\\\\\\\\\tuple{0,0}&&\\tuple{0,1}&&\\tuple{0,2}&&\\tuple{0,3}&&\\tuple{0,4}&&\\dots\\\\\\end{array}\\]",
+        "$\\tuple{1,m}$",
+        "\\[\\small\\begin{array}{@{}ccccccccccc@{}}\\mathbf1&\\mathbf2&\\mathbf3&\\mathbf4&\\mathbf5&\\mathbf6&\\mathbf7&\\mathbf8&\\mathbf9&\\mathbf{10}&\\dots\\\\\\\\\\tuple{0,0}&\\tuple{1,0}&\\tuple{0,1}&&\\tuple{0,2}&\\tuple{1,1}&\\tuple{0,3}&&\\tuple{0,4}&\\tuple{1,2}&\\dots\\\\\\end{array}\\]",
+        "$\\tuple{2,m}$",
+        "$\\tuple{3,m}$",
+        "\\[\\small\\begin{array}{@{}ccccccccccc@{}}\\mathbf1&\\mathbf2&\\mathbf3&\\mathbf4&\\mathbf5&\\mathbf6&\\mathbf7&\\mathbf8&\\mathbf9&\\mathbf{10}&\\dots\\\\\\\\\\tuple{0,0}&\\tuple{1,0}&\\tuple{0,1}&\\tuple{2,0}&\\tuple{0,2}&\\tuple{1,1}&\\tuple{0,3}&\\tuple{3,0}&\\tuple{0,4}&\\tuple{1,2}&\\dots\\\\\\end{array}\\]",
+        "\\[\\begin{array}{c|c|c|c|c|c|c|c}&\\mathbf0&\\mathbf1&\\mathbf2&\\mathbf3&\\mathbf4&\\mathbf5&\\dots\\\\\\hline\\mathbf0&1&3&5&7&9&11&\\dots\\\\\\hline\\mathbf1&2&6&10&14&18&\\dots&\\dots\\\\\\hline\\mathbf2&4&12&20&28&\\dots&\\dots&\\dots\\\\\\hline\\mathbf3&8&24&40&\\dots&\\dots&\\dots&\\dots\\\\\\hline\\mathbf4&16&48&\\dots&\\dots&\\dots&\\dots&\\dots\\\\\\hline\\mathbf5&32&\\dots&\\dots&\\dots&\\dots&\\dots&\\dots\\\\\\hline\\vdots&\\vdots&\\vdots&\\vdots&\\vdots&\\vdots&\\vdots&\\ddots\\\\\\end{array}\\]",
+        "$0$",
+        "$\\tuple{0,m}$",
+        "$2m+1$",
+        "$\\tuple{1,m}$",
+        "$2\\cdot(2m+1)$",
+        "$\\tuple{2,m}$",
+        "$4\\cdot(2m+1)$",
+        "$(2m+1)$",
+        "$1$",
+        "$2$",
+        "$4$",
+        "$8$",
+        "$2$",
+        "$1=2^0$",
+        "$2=2^1$",
+        "$4=2^2$",
+        "$8=2^3$",
+        "$\\tuple{n,m}$",
+        "$2^n$",
+        "$2^n\\cdot(2m+1)$",
+        "$\\tuple{0,0}$",
+        "$1$",
+        "$0$",
+        "$1$",
+        "$\\Nat^2$",
+        "\\[h(n,m)=2^n(2m+1)-1\\]",
+        "$h\\colon\\Nat^2\\to\\Nat$",
+        "$\\Nat^2$",
+        "$\\tuple{0,0}$",
+        "$h(0,0)=2^0(2\\cdot0+1)-1=0$",
+        "$\\tuple{1,2}$",
+        "$2^{1}\\cdot(2\\cdot2+1)-1=2\\cdot5-1=9$",
+        "$\\tuple{2,6}$",
+        "$2^{2}\\cdot(2\\cdot6+1)-1=51$",
+        "$\\Nat^2$",
+        "\\[j(n,m)=2^n3^m\\]",
+        "$j\\colon\\Nat^2\\to\\Nat^+$",
+        "$\\Nat^2\\to\\Nat$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$\\tuple{0,2}$",
+        "$\\tuple{2,m}$"
+      ],
+      "math_delta_target_only": [
+        "$\\tuple{0,1}$",
+        "$\\tuple{3,m}$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTESIZ-004",
+        "OLSIZ-003"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1585,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part:sets-functions-relations\n% Chapter: size-of-sets\n% Section: pairing-alt",
+          "target_start": "% Part:sets-functions-relations\n% Chapter: size-of-sets\n% Section: pairing-alt"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sfr}{siz}{pai-alt}",
+          "target_start": "\\olfileid{sfr}{siz}{pai-alt}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{An Alternative Pairing Function}",
+          "target_start": "\\olsection{మరొక జతీకరణ ప్రమేయం}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{explain}\nThere are other enumerations of $\\Nat^2$ that make it easier to\nfigure out what their inverses",
+          "target_start": "\\begin{explain}\nవిలోమాలను సులభంగా కనుక్కోగలిగేలా $\\Nat^2$ను లెక్కించే ఇతర\nపద్ధతులూ ఉన్నాయి. ఇదొకటి. లెక్కింపున"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{ex}\nThe function $h\\colon \\Nat^2 \\to \\Nat$ given by\n\\[\nh(n,m) = 2^n (2m+1) - 1\n\\]\nis a pairing function",
+          "target_start": "\\begin{ex}\n$\\Nat^2$ సహజ సంఖ్యల జతల సమితికి\n\\[\nh(n,m) = 2^n (2m+1) - 1\n\\]\nఅని ఇచ్చిన $h\\colon \\Nat^2 \\to \\Nat$ "
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{explain}\nAccordingly, in our second enumeration of $\\Nat^2$, the pair\n$\\tuple{0,0}$ has code $h(0,0) = ",
+          "target_start": "\\begin{explain}\nఅందువల్ల $\\Nat^2$కు మన రెండవ లెక్కింపులో $\\tuple{0,0}$ సంకేత సంఖ్య\n$h(0,0) = 2^0(2\\cdot 0+1) -"
+        },
+        {
+          "index": 9,
+          "source_start": "Sometimes it is enough to encode pairs of natural numbers~$\\Nat^2$\nwithout requiring that the encoding is surj",
+          "target_start": "కొన్నిసార్లు సంకేతీకరణ సంగ్రస్తం కావాలని కోరకుండానే సహజ సంఖ్యల\n$\\Nat^2$ జతలను సంకేతీకరిస్తే సరిపోతుంది. అటువంట"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{ex}\nThe function $j\\colon \\Nat^2 \\to \\Nat^+$ given by\n\\[\nj(n,m) = 2^n3^m\n\\]\nis !!a{injective} function ",
+          "target_start": "\\begin{ex}\n\\[\nj(n,m) = 2^n3^m\n\\]\nఅని ఇచ్చిన $j\\colon \\Nat^2 \\to \\Nat^+$ అనేది $\\Nat^2 \\to \\Nat$\n!!a{injective}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{siz}{pai-alt}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sfr}{siz}{pai-alt}"
+      ],
+      "protected_identifier_parity": true
+    }
+  ]
+}

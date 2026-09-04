@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 23 of 722 draft units**. This log contains 25 terminology/sense decisions and 5 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 37 of 722 draft units**. This log contains 28 terminology/sense decisions and 19 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 “Attested” means only that the specifically listed native page was actually inspected for the stated scope. It does not mean a human expert endorsed the final edition. The terminology rationales below were reconstructed retrospectively from primary records and exact current files; source-correction entries come from the contemporaneous audit.
 
@@ -210,21 +210,21 @@ Machine-readable companion: `EXPERT_REVIEW_LOG.jsonl`.
 
 - Status: provisional_pending_optional_specialist_review_no_hold
 
-- Chosen wording/treatment: పరిమిత / అనంత / సంకేతమాల / క్రమం / వర్ణమాల
+- Chosen wording/treatment: పరిమిత / అనంత (witness synonym అపరిమిత) / సంకేతమాల / క్రమం / వర్ణమాల
 
 - Exact implementation: content/sets-functions-relations/sets/important-sets.tex:46-50 ↔ translation/content/sets-functions-relations/sets/important-sets.tex:46-51 (OLP-0007-B008); content/sets-functions-relations/sets/important-sets.tex:62-65 ↔ translation/content/sets-functions-relations/sets/important-sets.tex:63-66 (OLP-0007-B009)
 
-- Authorities actually checked: TE-P001, PDF 11, printed 37, Section 2, middle paragraph on sets; TE-P005, PDF 21, printed 9, Opening paragraph and Example 1
+- Authorities actually checked: TE-P001, PDF 11, printed 37, Section 2, middle paragraph on sets; TE-P005, PDF 21, printed 9, Opening paragraph and Example 1; TE-P016, PDF 310, printed 303, Questions 4-5 and answers on finite, infinite and equivalent sets
 
 - Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
 
-- Rationale: Native mathematical exposition supports grammar, not exact formal-language technical senses. Explicit OpenLogic definitions anchor extension and length.
+- Rationale: TE-P016 directly contrasts పరిమిత and అపరిమిత sets through countability of their elements. The established edition wording అనంత is retained as a transparent synonym for consistency. String, sequence and alphabet remain definition-controlled provisional senses.
 
 - Alternatives: No separate alternative was recorded in the primary decision; retain the current reversible wording unless a specialist supplies a source-grounded replacement.
 
-- Uncertainty: Medium-high terminology; no native formal-language attestation yet
+- Uncertainty: Low for finite/infinite concepts; medium-high for formal-language terminology
 
-- Review question: Is “పరిమిత / అనంత / సంకేతమాల / క్రమం / వర్ణమాల” idiomatic and technically standard for “finite / infinite / string / sequence / alphabet” in Telugu logic/mathematics across Andhra Pradesh and Telangana? If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+- Review question: Is “పరిమిత / అనంత (witness synonym అపరిమిత) / సంకేతమాల / క్రమం / వర్ణమాల” idiomatic and technically standard for “finite / infinite / string / sequence / alphabet” in Telugu logic/mathematics across Andhra Pradesh and Telangana? If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-TE-T012 — ordered pair / tuple / Cartesian product
 
@@ -506,6 +506,66 @@ Machine-readable companion: `EXPERT_REVIEW_LOG.jsonl`.
 
 - Review question: Is “స్థిర ప్రమేయం / తాదాత్మ్య ప్రమేయం” idiomatic and technically standard for “constant function / identity function” in Telugu logic/mathematics across Andhra Pradesh and Telangana? If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
+## REV-TE-T026 — enumeration / enumerable / nonenumerable / countability
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Chosen wording/treatment: లెక్కింపు / లెక్కించదగిన / లెక్కించలేని / లెక్కించదగినతనం
+
+- Exact implementation: content/sets-functions-relations/size-of-sets/enumerability.tex:27-32 ↔ translation/content/sets-functions-relations/size-of-sets/enumerability.tex:27-32 (OLP-0029-B008); content/sets-functions-relations/size-of-sets/enumerability-alt.tex:39-43 ↔ translation/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:39-43 (OLP-0038-B009)
+
+- Authorities actually checked: TE-P016, PDF 310, printed 303, Questions 4-5 and answers on finite, infinite and equivalent sets; TE-P005, PDF 21, printed 9, Opening paragraph and Example 1
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P016 supplies native mathematical counting language only for finite versus infinite sets. The selected forms transparently extend that register, but every occurrence is governed by OpenLogic's precise list, surjection or bijection definition, so finite countability is not conflated with enumerability.
+
+- Alternatives: లెక్కించదగిన / లెక్కించలేని (chosen transparent forms); గణనీయ / అగణనీయ (not adopted here because of collision with computability terminology); జాబితా చేయదగిన / చేయలేని (retained as explanatory gloss)
+
+- Uncertainty: Medium nomenclatural; definitions and formulas exact
+
+- Review question: Is “లెక్కింపు / లెక్కించదగిన / లెక్కించలేని / లెక్కించదగినతనం” idiomatic and technically standard for “enumeration / enumerable / nonenumerable / countability” in Telugu logic/mathematics across Andhra Pradesh and Telangana? If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T027 — equinumerous / equinumerosity / cardinality / no larger than / smaller than
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Chosen wording/treatment: సమసంఖ్యాక / సమసంఖ్యాకత / సమితి పరిమాణం / పరిమాణంలో మించని / పరిమాణంలో చిన్నది
+
+- Exact implementation: content/sets-functions-relations/size-of-sets/introduction.tex:13-19 ↔ translation/content/sets-functions-relations/size-of-sets/introduction.tex:13-19 (OLP-0028-B006); content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:29-32 ↔ translation/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:28-31 (OLP-0035-B007)
+
+- Authorities actually checked: TE-P016, PDF 310, printed 303, Questions 4-5 and answers on finite, infinite and equivalent sets; TE-P017, PDF 311, printed 304, Question 11 and worked cases distinguishing A = B from A ≃ B; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P016 and TE-P017 directly distinguish equal-member-count sets from literal set equality in finite examples. సమసంఖ్యాక is selected as a transparent headword to avoid collision with the established equivalence-relation terminology; OpenLogic's bijection and injection definitions control the extension to infinite sets.
+
+- Alternatives: సమసంఖ్యాక (chosen transparent headword); తుల్య సమితులు (TE-P016 witness expression for the finite concept)
+
+- Uncertainty: Low for finite concept, medium for selected headword and infinite extension
+
+- Review question: Is “సమసంఖ్యాక / సమసంఖ్యాకత / సమితి పరిమాణం / పరిమాణంలో మించని / పరిమాణంలో చిన్నది” idiomatic and technically standard for “equinumerous / equinumerosity / cardinality / no larger than / smaller than” in Telugu logic/mathematics across Andhra Pradesh and Telangana? If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T028 — Cantor zig-zag / pairing function / encode / code / diagonal method / diagonalization / reduction / Schröder-Bernstein
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Chosen wording/treatment: కాంటర్ జిగ్‌జాగ్ పద్ధతి / జతీకరణ ప్రమేయం / సంకేతీకరించు / సంకేత సంఖ్య / కాంటర్ వికర్ణ పద్ధతి / వికర్ణీకరణ / సమస్యా తగ్గింపు / ష్రోడర్–బెర్న్‌స్టైన్
+
+- Exact implementation: content/sets-functions-relations/size-of-sets/zig-zag.tex:59-64 ↔ translation/content/sets-functions-relations/size-of-sets/zig-zag.tex:59-64 (OLP-0030-B006); content/sets-functions-relations/size-of-sets/pairing.tex:51-56 ↔ translation/content/sets-functions-relations/size-of-sets/pairing.tex:53-58 (OLP-0031-B008); content/sets-functions-relations/size-of-sets/non-enumerability.tex:39-41 ↔ translation/content/sets-functions-relations/size-of-sets/non-enumerability.tex:38-40 (OLP-0033-B009); content/sets-functions-relations/size-of-sets/reduction.tex:27-31 ↔ translation/content/sets-functions-relations/size-of-sets/reduction.tex:27-31 (OLP-0034-B007); content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:11 ↔ translation/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:11 (OLP-0037-B005)
+
+- Authorities actually checked: TE-P002, PDF 9, printed 35, Main paragraph, lower half; TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P016, PDF 310, printed 303, Questions 4-5 and answers on finite, infinite and equivalent sets
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: Inspected witnesses support mathematical exposition, pairs and proof register but do not attest these advanced names. The selected wording is descriptive; Cantor and Schröder–Bernstein are explicit source eponyms. Each construction is fixed by its adjacent formula or proof.
+
+- Alternatives: descriptive Telugu constructions (chosen); source-eponym transliterations for Cantor and Schröder–Bernstein (retained)
+
+- Uncertainty: High nomenclatural; mathematical content fixed
+
+- Review question: Is “కాంటర్ జిగ్‌జాగ్ పద్ధతి / జతీకరణ ప్రమేయం / సంకేతీకరించు / సంకేత సంఖ్య / కాంటర్ వికర్ణ పద్ధతి / వికర్ణీకరణ / సమస్యా తగ్గింపు / ష్రోడర్–బెర్న్‌స్టైన్” idiomatic and technically standard for “Cantor zig-zag / pairing function / encode / code / diagonal method / diagonalization / reduction / Schröder-Bernstein” in Telugu logic/mathematics across Andhra Pradesh and Telangana? If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
 ## REV-OLFUN-001 — OLFUN-001
 
 - Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
@@ -605,3 +665,283 @@ Machine-readable companion: `EXPERT_REVIEW_LOG.jsonl`.
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Review question: Does the note clearly distinguish input-only function restriction from two-coordinate relation restriction R∩C²?
+
+## REV-OLTESIZ-001 — OLTESIZ-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: difference definition repaired to different definition; adjacent sourcecorrection discloses the one-word repair
+
+- Exact implementation: lines 43-46, alternative-definition editorial note ↔ translation/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex (OLP-0027-B016)
+
+- Authorities actually checked: OLTESIZ-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: difference definition repaired to different definition; adjacent sourcecorrection discloses the one-word repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the Telugu editorial note clearly identify the source adjective typo without overstating its importance?
+
+## REV-OLSIZ-001 — OLSIZ-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: added -3 below f(7), fixed by the displayed -ceil(6/2); adjacent sourcecorrection discloses repair
+
+- Exact implementation: lines 145-153, f(7) column and value row ↔ translation/content/sets-functions-relations/size-of-sets/enumerability.tex (OLP-0029-B020)
+
+- Authorities actually checked: OLSIZ-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: added -3 below f(7), fixed by the displayed -ceil(6/2); adjacent sourcecorrection discloses repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the repaired table visibly place -3 beneath f(7), with the note tied to the controlling ceiling formula?
+
+## REV-OLTESIZ-002 — OLTESIZ-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: less-than-k wording repaired to at-most-k while preserving k(k+1)/2 and the pairing formula; adjacent sourcecorrection discloses repair
+
+- Exact implementation: lines 32-38, triangular-number explanation ↔ translation/content/sets-functions-relations/size-of-sets/pairing.tex (OLP-0031-B006)
+
+- Authorities actually checked: OLTESIZ-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: less-than-k wording repaired to at-most-k while preserving k(k+1)/2 and the pairing formula; adjacent sourcecorrection discloses repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the triangular-number explanation now say at most k while preserving k(k+1)/2?
+
+## REV-OLSIZ-002 — OLSIZ-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: stated complement in Nat of a finite subset of Nat; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 91-96, cofinite definition ↔ translation/content/sets-functions-relations/size-of-sets/pairing.tex (OLP-0031-B015)
+
+- Authorities actually checked: OLSIZ-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: stated complement in Nat of a finite subset of Nat; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the Telugu cofinite definition unambiguously describe a complement in Nat of a finite subset of Nat?
+
+## REV-OLTESIZ-003 — OLTESIZ-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: inverse typed on ran(f), with enumerability conclusion; inverse itself called an enumeration only under surjectivity onto Nat; adjacent sourcecorrection discloses repair
+
+- Exact implementation: lines 106-109, inverse-of-pairing-function problem ↔ translation/content/sets-functions-relations/size-of-sets/pairing.tex (OLP-0031-B017)
+
+- Authorities actually checked: OLTESIZ-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: inverse typed on ran(f), with enumerability conclusion; inverse itself called an enumeration only under surjectivity onto Nat; adjacent sourcecorrection discloses repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the repaired exercise distinguish the inverse on ran(f) from an enumeration whose domain is all of Nat?
+
+## REV-OLTESIZ-004 — OLTESIZ-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: second pair repaired from <0,2> to <0,1>, matching the array and formula; adjacent sourcecorrection discloses repair
+
+- Exact implementation: lines 19-28, second pair with first coordinate zero ↔ translation/content/sets-functions-relations/size-of-sets/pairing-alt.tex (OLP-0032-B006)
+
+- Authorities actually checked: OLTESIZ-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: second pair repaired from <0,2> to <0,1>, matching the array and formula; adjacent sourcecorrection discloses repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the repaired first-row procedure identify (0,1) as the second pair, matching the table?
+
+## REV-OLSIZ-003 — OLSIZ-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: duplicated <2,m> repaired to successive <2,m>, <3,m>; adjacent sourcecorrection discloses repair
+
+- Exact implementation: lines 39-45, successive pairing families ↔ translation/content/sets-functions-relations/size-of-sets/pairing-alt.tex (OLP-0032-B006)
+
+- Authorities actually checked: OLSIZ-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: duplicated <2,m> repaired to successive <2,m>, <3,m>; adjacent sourcecorrection discloses repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the alternate pairing prose advance from the (2,m) family to the (3,m) family exactly as the table does?
+
+## REV-OLSIZ-004 — OLSIZ-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: bound one output sequence name s consistently; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 47-69, characteristic-sequence definition ↔ translation/content/sets-functions-relations/size-of-sets/reduction.tex:51-63 (OLP-0034-B011)
+
+- Authorities actually checked: OLSIZ-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: bound one output sequence name s consistently; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the Telugu characteristic-sequence definition use one bound output name consistently and preserve the intended subset-to-sequence map?
+
+## REV-OLSIZ-005 — OLSIZ-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: made h(n) an actual infinite binary sequence by appending an infinite tail of ones; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 85-100, finite zero string typed into Bin^omega ↔ translation/content/sets-functions-relations/size-of-sets/reduction.tex:98-107 (OLP-0034-B015)
+
+- Authorities actually checked: OLSIZ-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: made h(n) an actual infinite binary sequence by appending an infinite tail of ones; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the repaired h(n) example visibly denote an infinite binary sequence while preserving the reduction-direction warning?
+
+## REV-OLSIZ-006 — OLSIZ-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: replaced both premature g(x)=y occurrences with f(x)=y; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 68-94, two empty-set conditional branches ↔ translation/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:69-96 (OLP-0035-B015)
+
+- Authorities actually checked: OLSIZ-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: replaced both premature g(x)=y occurrences with f(x)=y; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Do both empty-set branches refer to the given bijection f rather than the not-yet-defined enumeration g?
+
+## REV-OLSIZ-007 — OLSIZ-007
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: quantified the arbitrary-element conclusion over every x in A; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 74-90, arbitrary-element conclusion ↔ translation/content/sets-functions-relations/size-of-sets/comparing-size.tex:83-106 (OLP-0036-B014)
+
+- Authorities actually checked: OLSIZ-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: quantified the arbitrary-element conclusion over every x in A; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the Cantor proof quantify its diagonal conclusion over every x in A and make non-surjectivity immediate?
+
+## REV-OLSIZ-008 — OLSIZ-008
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: described s_n(m) as the mth digit of the nth string, matching the array; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 61-75, s_n(m) index description ↔ translation/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:58-68 (OLP-0039-B012)
+
+- Authorities actually checked: OLSIZ-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: described s_n(m) as the mth digit of the nth string, matching the array; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the Telugu prose identify s_n(m) as the mth digit of the nth string, matching the array?
+
+## REV-OLSIZ-009 — OLSIZ-009
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: restored the complementary 1-to-0 and 0-to-1 cases; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 77-84, duplicated bit-flip instruction ↔ translation/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:78-87 (OLP-0039-B012)
+
+- Authorities actually checked: OLSIZ-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the complementary 1-to-0 and 0-to-1 cases; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the diagonal construction state the complementary 1-to-0 and 0-to-1 changes unambiguously?
+
+## REV-OLSIZ-010 — OLSIZ-010
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: bound one output string name s consistently; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 48-58, characteristic-sequence definition ↔ translation/content/sets-functions-relations/size-of-sets/reduction-alt.tex:50-56 (OLP-0040-B012)
+
+- Authorities actually checked: OLSIZ-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: bound one output string name s consistently; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the alternate characteristic-string definition use one bound output name consistently?

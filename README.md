@@ -20,15 +20,15 @@ Continuing concept DOI:
 GitHub, GitHub Pages, and Zenodo public bytes have been anonymously verified;
 see [PUBLICATION.md](PUBLICATION.md).
 
-Twenty-three full-unit editable drafts exist in this repository: Sets (7),
-Relations (9) and Functions (7). All three batches have source-aligned
-structural and same-agent semantic review records. The Sets chapter also has
-an offline semantic HTML reader with Telugu document metadata, native MathML,
+Thirty-seven full-unit editable drafts exist in this repository: Sets (7),
+Relations (9), Functions (7) and Size of Sets (14). All five batches have
+source-aligned structural and same-agent semantic review records. The Sets
+chapter also has an offline semantic HTML reader with Telugu document metadata, native MathML,
 local fonts, accessible inline diagrams, resolved internal links, and a
 separately collapsible copy of each canonical English unit. Its public browser
 version is at [OpenLogic తెలుగు — సమితులు](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sets/).
-Relations and Functions are not yet integrated into that reader. The other
-699 units and the coherent full reader remain in progress; neither current
+Relations, Functions and Size of Sets are not yet integrated into that reader.
+The other 685 units and the coherent full reader remain in progress; neither current
 chapter format substitutes for that remaining work.
 
 ## Provenance and changes
@@ -53,18 +53,21 @@ particular, the original zero-inclusive natural-number convention is kept.
 Original rights-restricted Telugu books and their page images are **not**
 redistributed here.
 
-Five confirmed source issues in the Functions chapter are minimally repaired
-and disclosed beside the affected Telugu claims as OLFUN-001 through
-OLFUN-005. The frozen English bytes remain unchanged. They cover the empty
-domain caveat for a left inverse, principal-square-root wording, an input-name
-typo, graph/relation typing, and the difference between function and relation
-restriction. See [SOURCE_CORRECTIONS.jsonl](evidence/SOURCE_CORRECTIONS.jsonl).
+Five confirmed source issues in Functions and fourteen in Size of Sets are
+minimally repaired and disclosed beside the affected Telugu claims. The frozen
+English bytes remain unchanged. The Size of Sets records adopt ten shared
+OLSIZ findings and four additional deterministic OLTESIZ findings. A proposed
+eleventh OLSIZ table finding was formally retracted after byte inspection
+confirmed that the source already contains the correct row break plus
+`\hline`; no correction was applied for it. See
+[SOURCE_CORRECTIONS.jsonl](evidence/SOURCE_CORRECTIONS.jsonl) and the
+[source-audit evidence](evidence/source-audits/2026-09-04-size-of-sets-shared/REVIEW.md).
 
-The [optional expert-review log](evidence/EXPERT_REVIEW_LOG.md) exposes all 25
-current terminology/sense decisions and the five corrections with exact
+The [optional expert-review log](evidence/EXPERT_REVIEW_LOG.md) exposes all 28
+current terminology/sense decisions and the nineteen corrections with exact
 source/target locators, aligned segment hashes, authorities actually checked,
 known evidence limits, alternatives, uncertainty, and concrete review
-questions. Its status is explicitly partial (23/722); every entry is
+questions. Its status is explicitly partial (37/722); every entry is
 provisional for optional expert review and none is a translation hold.
 
 ## QA and limitations
@@ -75,6 +78,12 @@ reverse-paraphrase review; four-pass guarded XeLaTeX builds with identical
 last-two-pass hashes; all-page visual inspection; mixed-script and Telugu
 conjunct extraction samples. The final log has zero missing glyphs,
 overfull boxes, undefined references or warnings.
+
+All thirty-seven editable drafts pass correction-aware blank-block,
+environment, source-token, protected-identifier and mathematical-form checks.
+Five same-agent semantic reviews record source-aligned reverse paraphrases and
+their limits. Size of Sets has source QA only at this checkpoint; no PDF or
+HTML reader integration is claimed for those fourteen units.
 
 QA is machine/agent performed, not human or independent review. Several
 technical terms remain provisional. The PDF is not tagged. Source caveats

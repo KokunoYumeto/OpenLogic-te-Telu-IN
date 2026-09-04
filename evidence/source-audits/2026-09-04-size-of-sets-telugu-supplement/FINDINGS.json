@@ -1,0 +1,46 @@
+{
+  "schema": "openlogic-lane-source-audit/1.0.0",
+  "audit_id": "OLTESIZ-20260904",
+  "reviewer": "same translation agent; not independent or human review",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "shared_audit": {
+    "audit_id": "OLSIZ-20260904",
+    "review_sha256": "26913176baacbda5ae8a47bcc82ccf0366b0763313e6eeeb45df59e64249a1f9",
+    "findings_sha256": "9b6e836c8432eb75d331913983603796d6557da6ec3ad71b846b2a248374cd07"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTESIZ-001",
+      "unit_id": "OLP-0027",
+      "source_locator": "size-of-sets-complete.tex:43-46",
+      "classification": "confirmed_wording_defect",
+      "finding": "The phrase 'a difference definition' must be 'a different definition' in this grammatical context.",
+      "treatment": "Translate the intended adjective and disclose the repair."
+    },
+    {
+      "finding_id": "OLTESIZ-002",
+      "unit_id": "OLP-0031",
+      "source_locator": "pairing.tex:32-38",
+      "classification": "confirmed_mathematical_explanation_defect",
+      "finding": "The sum of natural numbers strictly below k is not k(k+1)/2.",
+      "controlling_evidence": "The displayed pairing formula uses the triangular number 0+1+...+k=k(k+1)/2.",
+      "treatment": "Say at most k; preserve the formula."
+    },
+    {
+      "finding_id": "OLTESIZ-003",
+      "unit_id": "OLP-0031",
+      "source_locator": "pairing.tex:106-109",
+      "classification": "confirmed_mathematical_defect",
+      "finding": "An arbitrary pairing function is required only to be injective, so its inverse has domain ran(f), not necessarily all of Nat and not directly the chapter's enumeration type.",
+      "treatment": "State the inverse bijection on ran(f), infer enumerability, and state the stronger enumeration conclusion only when f is onto Nat."
+    },
+    {
+      "finding_id": "OLTESIZ-004",
+      "unit_id": "OLP-0032",
+      "source_locator": "pairing-alt.tex:19-28",
+      "classification": "confirmed_index_typo",
+      "finding": "The prose calls the second pair in the first row (0,2), but the construction and table make it (0,1).",
+      "treatment": "Use (0,1) and disclose the repair."
+    }
+  ]
+}

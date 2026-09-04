@@ -1,0 +1,128 @@
+% Part:sets-functions-relations
+% Chapter: size-of-sets
+% Section: zig-zag
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{siz}{zigzag}
+
+\olsection{కాంటర్ జిగ్‌జాగ్ పద్ధతి}
+
+\begin{explain}
+ఇప్పటికే కొన్ని ``సులభమైన'' లెక్కింపులను పరిశీలించాం. ఇప్పుడు కాస్త
+కష్టమైనదాన్ని చూద్దాం. సహజ సంఖ్యల జతల సమితిని పరిశీలించండి;
+\oliflabeldef{sfr:set:pai:sec}{దీనిని \olref[set][pai]{sec}లో ఇలా
+నిర్వచించాం:}{దీని నిర్వచనం:}
+\[
+\Nat \times \Nat = \Setabs{\tuple{n,m}}{n,m \in \Nat}
+\]
+ఈ క్రమిత జతలను ఒక \emph{పట్టిక}లో ఇలా అమర్చవచ్చు:
+\[
+\begin{array}{ c | c | c | c | c | c}
+& \mathbf 0 & \mathbf 1 & \mathbf 2 & \mathbf 3 & \dots \\
+\hline
+\mathbf 0 & \tuple{0,0} & \tuple{0,1} & \tuple{0,2} & \tuple{0,3} & \dots \\
+\hline
+\mathbf 1 & \tuple{1,0} & \tuple{1,1} & \tuple{1,2} & \tuple{1,3} & \dots \\
+\hline
+\mathbf 2 & \tuple{2,0} & \tuple{2,1} & \tuple{2,2} & \tuple{2,3} & \dots \\
+\hline
+\mathbf 3 & \tuple{3,0} & \tuple{3,1} & \tuple{3,2} & \tuple{3,3} & \dots \\
+\hline
+\vdots & \vdots & \vdots & \vdots & \vdots & \ddots\\
+\end{array}
+\]
+$\Nat \times \Nat$లోని ప్రతి క్రమిత జత పట్టికలో కచ్చితంగా ఒక్కసారి
+కనిపిస్తుంది. ప్రత్యేకించి, $\tuple{n,m}$ అనేది $n$వ అడ్డువరుసలో,
+$m$వ నిలువువరుసలో కనిపిస్తుంది. కానీ ఇలాంటి పట్టికలోని మూలకాలను
+``ఏకమితీయ'' జాబితాగా ఎలా అమర్చాలి? కింది పట్టికలోని నమూనా ఒక పద్ధతిని
+చూపుతుంది (వాస్తవానికి మరెన్నో మార్గాలు ఉన్నాయి):
+\[
+\begin{array}{ c | c | c | c | c | c | c}
+& \mathbf 0 & \mathbf 1 & \mathbf 2 & \mathbf 3 & \mathbf 4 &\dots \\
+\hline
+\mathbf 0 & 0  & 1& 3 & 6& 10 &\ldots \\
+\hline
+\mathbf 1 &2 & 4& 7 & 11 & \dots &\ldots \\
+\hline
+\mathbf 2 & 5 & 8 & 12 & \ldots & \dots&\ldots \\
+\hline
+\mathbf 3 & 9 & 13 & \ldots & \ldots & \dots & \ldots \\
+\hline
+\mathbf 4 & 14 & \ldots & \ldots & \ldots & \dots & \ldots \\
+\hline
+\vdots & \vdots & \vdots & \vdots & \vdots&\ldots & \ddots\\
+\end{array}
+\]\noindent
+ఈ నమూనాను \emph{కాంటర్ జిగ్‌జాగ్ పద్ధతి} అంటారు. ఇది
+$\Nat \times \Nat$ను ఇలా లెక్కిస్తుంది:
+\[
+\tuple{0,0}, \tuple{0,1}, \tuple{1,0}, \tuple{0,2}, \tuple{1,1},
+\tuple{2,0}, \tuple{0,3}, \tuple{1,2}, \tuple{2,1}, \tuple{3,0}, \dots
+\]
+దీనితో కింది ఫలితం స్థాపితమవుతుంది.
+\end{explain}
+
+\begin{prop}\ollabel{natsquaredenumerable}
+$\Nat \times \Nat$ !!{enumerable}.
+\end{prop}
+
+\begin{proof}
+ప్రతి $k \in \Nat$ను, కాంటర్ జిగ్‌జాగ్ పట్టికలోని $n$వ అడ్డువరుస,
+$m$వ నిలువువరుస స్థానంలో విలువ $k$ అయ్యే $\tuple{n,m} \in
+\Nat \times \Nat$కు పంపేలా $f \colon \Nat \to \Nat\times\Nat$ను
+తీసుకుందాం.
+\end{proof}
+
+\begin{explain}
+ఈ పద్ధతి చక్కగా సాధారణీకృతమవుతుంది. ఉదాహరణకు, సహజ సంఖ్యల క్రమిత
+త్రికాల సమితిని, అంటే
+\[
+\Nat \times \Nat \times \Nat = \Setabs{\tuple{n,m,k}}{n,m,k \in \Nat}
+\]
+ను లెక్కించడానికి దీన్ని వాడవచ్చు. $\Nat \times \Nat \times \Nat$ను
+$\Nat \times \Nat$, $\Nat$ల కార్టీజియన్ లబ్ధంగా భావిస్తాం; అంటే,
+\[
+\Nat^3 = (\Nat \times \Nat) \times \Nat =
+\Setabs{\tuple{\tuple{n,m},k}}{n, m, k
+  \in \Nat }
+\]
+అందువల్ల, ఒక అక్షానికి $\Nat$ లెక్కింపునూ, మరొక అక్షానికి
+$\Nat^2$ లెక్కింపునూ పేర్లుగా ఇచ్చి, ఒక పట్టికతో $\Nat^3$ను
+లెక్కించవచ్చు:
+\[
+\begin{array}{ c | c | c | c | c | c}
+& \mathbf 0 & \mathbf 1 & \mathbf 2 & \mathbf 3 & \dots \\
+\hline
+\mathbf{\tuple{0,0}} & \tuple{0,0,0} & \tuple{0,0,1} & \tuple{0,0,2} & \tuple{0,0,3} & \dots \\
+\hline
+\mathbf{\tuple{0,1}} & \tuple{0,1,0} & \tuple{0,1,1} & \tuple{0,1,2} & \tuple{0,1,3} & \dots \\
+\hline
+\mathbf{\tuple{1,0}} & \tuple{1,0,0} & \tuple{1,0,1} & \tuple{1,0,2} & \tuple{1,0,3} & \dots \\
+\hline
+\mathbf{\tuple{0,2}} & \tuple{0,2,0} & \tuple{0,2,1} & \tuple{0,2,2} & \tuple{0,2,3} & \dots\\
+\hline
+\vdots & \vdots & \vdots & \vdots & \vdots & \ddots \\
+\end{array}
+\]
+ఇలా, కాంటర్ జిగ్‌జాగ్ పద్ధతి వంటి పద్ధతితో $\Nat^3$కు కూడా
+లెక్కింపును పొందవచ్చు. ఇదే విధంగా కొనసాగిస్తూ, ఏ సహజ సంఖ్య $n$కైనా
+$\Nat^n$ లెక్కింపును పొందవచ్చు. అందుచేత:
+\end{explain}
+
+\begin{prop}
+ప్రతి $n \in \Nat$కు $\Nat^n$ !!{enumerable}.
+\end{prop}
+
+\begin{prob}\label{sfr:siz:zigzag:prob:posint-n}
+ప్రతి $n \in \Nat$కు $(\PosInt)^n$ !!{enumerable} అని చూపండి.
+\end{prob}
+
+\begin{prob}\label{sfr:siz:zigzag:prob:posint-star}
+  $(\PosInt)^*$ !!{enumerable} అని చూపండి. మీరు
+  \cref{sfr:siz:zigzag:prob:posint-n}ను వాడుకోవచ్చు.
+\end{prob}
+
+\end{document}
