@@ -1,22 +1,22 @@
 {
   "schema": "openlogic-te-expert-review-index/2",
   "status": "partial_no_holds",
-  "scope_completion": "partial_122_of_722_draft_units",
+  "scope_completion": "partial_134_of_722_draft_units",
   "language": "Telugu",
   "script": "Telu",
   "locale": "te-Telu-IN",
   "counts": {
-    "records": 113,
-    "terminology": 40,
-    "source_corrections": 73,
-    "implementation_occurrences": 206
+    "records": 123,
+    "terminology": 41,
+    "source_corrections": 82,
+    "implementation_occurrences": 226
   },
   "pagination_note": "Final printed/PDF page is deliberately null until the cited source unit is integrated into the coherent reader and final pagination is available. Source and target file/line locators are authoritative meanwhile.",
   "records": [
     {
       "review_id": "REV-TE-T001",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -75,7 +75,7 @@
     {
       "review_id": "REV-TE-T002",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -144,7 +144,7 @@
     {
       "review_id": "REV-TE-T003",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -213,7 +213,7 @@
     {
       "review_id": "REV-TE-T004",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -291,7 +291,7 @@
     {
       "review_id": "REV-TE-T005",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -359,7 +359,7 @@
     {
       "review_id": "REV-TE-T006",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -427,7 +427,7 @@
     {
       "review_id": "REV-TE-T007",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -486,7 +486,7 @@
     {
       "review_id": "REV-TE-T008",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -602,7 +602,7 @@
     {
       "review_id": "REV-TE-T009",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -733,7 +733,7 @@
     {
       "review_id": "REV-TE-T010",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -807,7 +807,7 @@
     {
       "review_id": "REV-TE-T011",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -899,7 +899,7 @@
     {
       "review_id": "REV-TE-T012",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1008,7 +1008,7 @@
     {
       "review_id": "REV-TE-T013",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1115,7 +1115,7 @@
     {
       "review_id": "REV-TE-T014",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1207,7 +1207,7 @@
     {
       "review_id": "REV-TE-T015",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1338,7 +1338,7 @@
     {
       "review_id": "REV-TE-T016",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1505,7 +1505,7 @@
     {
       "review_id": "REV-TE-T017",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1657,7 +1657,7 @@
     {
       "review_id": "REV-TE-T018",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1755,7 +1755,7 @@
     {
       "review_id": "REV-TE-T019",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1863,7 +1863,7 @@
     {
       "review_id": "REV-TE-T020",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1946,7 +1946,7 @@
     {
       "review_id": "REV-TE-T021",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2068,7 +2068,7 @@
     {
       "review_id": "REV-TE-T022",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2136,7 +2136,7 @@
     {
       "review_id": "REV-TE-T023",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2235,7 +2235,7 @@
     {
       "review_id": "REV-TE-T024",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2349,7 +2349,7 @@
     {
       "review_id": "REV-TE-T025",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2409,7 +2409,7 @@
     {
       "review_id": "REV-TE-T026",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2494,7 +2494,7 @@
     {
       "review_id": "REV-TE-T027",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2587,7 +2587,7 @@
     {
       "review_id": "REV-TE-T028",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2734,7 +2734,7 @@
     {
       "review_id": "REV-TE-T029",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2852,7 +2852,7 @@
     {
       "review_id": "REV-TE-T030",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2970,7 +2970,7 @@
     {
       "review_id": "REV-TE-T031",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3118,7 +3118,7 @@
     {
       "review_id": "REV-TE-T032",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3257,7 +3257,7 @@
     {
       "review_id": "REV-TE-T033",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3390,7 +3390,7 @@
     {
       "review_id": "REV-TE-T034",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3499,7 +3499,7 @@
     {
       "review_id": "REV-TE-T035",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3653,7 +3653,7 @@
     {
       "review_id": "REV-TE-T036",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3852,7 +3852,7 @@
     {
       "review_id": "REV-TE-T037",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3976,7 +3976,7 @@
     {
       "review_id": "REV-TE-T038",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4085,7 +4085,7 @@
     {
       "review_id": "REV-TE-T039",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4255,7 +4255,7 @@
     {
       "review_id": "REV-TE-T040",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4438,9 +4438,239 @@
       "translation_hold": false
     },
     {
+      "review_id": "REV-TE-T041",
+      "record_type": "terminology_or_sense_decision",
+      "scope_completion": "partial_134_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "term_id": "TE-T041",
+      "source_term": "complete set / saturated set / Henkin expansion / Lindenbaum's Lemma / term model / Truth Lemma / factoring / finitely satisfiable / Compactness Theorem / Lowenheim--Skolem Theorem / Skolem's Paradox",
+      "chosen_wording": "సంపూర్ణ సమితి / సంతృప్తీకృత సమితి / హెన్కిన్ విస్తరణ / లిండెన్‌బామ్ ఉపసిద్ధాంతం / పద నమూనా / సత్య ఉపసిద్ధాంతం / వర్గీకరణ / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ సిద్ధాంతం / లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతం / స్కోలెమ్ విరోధాభాసం",
+      "chosen_sense": "The precise extension is fixed by the adjacent OpenLogic definition and formulas.",
+      "evidence_status": "logic_and_proof_register_attested_completeness_model_theoretic_senses_definition_controlled_explicit_eponymic_borrowings",
+      "confidence": "mixed_provisional",
+      "review_priority": "high",
+      "expert_review_status": "provisional_pending_optional_specialist_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0129",
+          "section_path": "first-order-logic/completeness/complete-consistent-sets",
+          "source_file": "content/first-order-logic/completeness/complete-consistent-sets.tex",
+          "target_file": "translation/content/first-order-logic/completeness/complete-consistent-sets.tex",
+          "segment_id": "OLP-0129-B007",
+          "source_locator": "content/first-order-logic/completeness/complete-consistent-sets.tex:19-22",
+          "target_locator": "translation/content/first-order-logic/completeness/complete-consistent-sets.tex:19-22",
+          "source_unit_sha256": "6473c646a48e854478ef1388de877eb61bcd8b912179347703f86b655de0ae4f",
+          "translation_unit_sha256": "25d2435a8fe9d58f77781c0bf3b7a0829682364b527f7426966b4c5846efd431",
+          "source_segment_sha256": "ffaeab12bae4265d545c476f339252d17bad3e731edaa9422a9229f600ffeea2",
+          "translation_segment_sha256": "b951eb63f1599b6e400bb5456d9feda8ce89c68cb329a7725d6c3f16e9ea64cb",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0130",
+          "section_path": "first-order-logic/completeness/henkin-expansions",
+          "source_file": "content/first-order-logic/completeness/henkin-expansions.tex",
+          "target_file": "translation/content/first-order-logic/completeness/henkin-expansions.tex",
+          "segment_id": "OLP-0130-B005",
+          "source_locator": "content/first-order-logic/completeness/henkin-expansions.tex:11",
+          "target_locator": "translation/content/first-order-logic/completeness/henkin-expansions.tex:11",
+          "source_unit_sha256": "353b1ea300b6d916be92a5100dfa2e2f4cf9ad9f44e9506c96f028acea3b1ec8",
+          "translation_unit_sha256": "a4f88dacdaf322a7ff2ff776aaaf5253c14a29abb4cfbb1a56adfac2e81ef268",
+          "source_segment_sha256": "1915a8c7d09dff06a575a85b8182bcb0451b0e4ab001780a1a449466c2696167",
+          "translation_segment_sha256": "ce5859a3270a68cd594a00cd10c89c639b04b04f4a59569cf9916012c99d80ab",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0130",
+          "section_path": "first-order-logic/completeness/henkin-expansions",
+          "source_file": "content/first-order-logic/completeness/henkin-expansions.tex",
+          "target_file": "translation/content/first-order-logic/completeness/henkin-expansions.tex",
+          "segment_id": "OLP-0130-B008",
+          "source_locator": "content/first-order-logic/completeness/henkin-expansions.tex:39-46",
+          "target_locator": "translation/content/first-order-logic/completeness/henkin-expansions.tex:40-48",
+          "source_unit_sha256": "353b1ea300b6d916be92a5100dfa2e2f4cf9ad9f44e9506c96f028acea3b1ec8",
+          "translation_unit_sha256": "a4f88dacdaf322a7ff2ff776aaaf5253c14a29abb4cfbb1a56adfac2e81ef268",
+          "source_segment_sha256": "e0227fc45299b55bb975471bd9753bcbf3ab2ded66eb64e03b5adfeb0d9ec5bb",
+          "translation_segment_sha256": "ece03bb39029eca9f5cb25ddfac147f96aba1fc6d6f1f00d0e6d9c31ef3f4318",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0131",
+          "section_path": "first-order-logic/completeness/lindenbaums-lemma",
+          "source_file": "content/first-order-logic/completeness/lindenbaums-lemma.tex",
+          "target_file": "translation/content/first-order-logic/completeness/lindenbaums-lemma.tex",
+          "segment_id": "OLP-0131-B005",
+          "source_locator": "content/first-order-logic/completeness/lindenbaums-lemma.tex:13",
+          "target_locator": "translation/content/first-order-logic/completeness/lindenbaums-lemma.tex:13",
+          "source_unit_sha256": "096a854cefe8f47251e7ad20747bda7e3832a0272a8e38ba71d732d913a9be47",
+          "translation_unit_sha256": "681bf3b47c0bcd3c2fb8317f341fe2da6df7f6125d9a05573d1b4b6ac7e2730b",
+          "source_segment_sha256": "8333b0e2ffcc46b349bfeb3602749003a117b4e10501cc04b03937ec53b55122",
+          "translation_segment_sha256": "5eb857d6460cd0a25027fbcdfc1d7c7c89ac85d5f75f5a6fb71019ba1d0dcf77",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0132",
+          "section_path": "first-order-logic/completeness/construction-of-model",
+          "source_file": "content/first-order-logic/completeness/construction-of-model.tex",
+          "target_file": "translation/content/first-order-logic/completeness/construction-of-model.tex",
+          "segment_id": "OLP-0132-B007",
+          "source_locator": "content/first-order-logic/completeness/construction-of-model.tex:37-43",
+          "target_locator": "translation/content/first-order-logic/completeness/construction-of-model.tex:38-44",
+          "source_unit_sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702",
+          "translation_unit_sha256": "234f1785cf5fd8293a13487937293833aeb1c4488e39540d616ab1ea954735ca",
+          "source_segment_sha256": "c7076cb0e5c17b7e52fd53b4676839e2064f26b0f209fd00a15e370bbfb3ad81",
+          "translation_segment_sha256": "2f2b7d1e9aaca2fd8cc4886e0d4456999ef35f6319077e8d5fbc66550b4221f2",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0132",
+          "section_path": "first-order-logic/completeness/construction-of-model",
+          "source_file": "content/first-order-logic/completeness/construction-of-model.tex",
+          "target_file": "translation/content/first-order-logic/completeness/construction-of-model.tex",
+          "segment_id": "OLP-0132-B014",
+          "source_locator": "content/first-order-logic/completeness/construction-of-model.tex:163-166",
+          "target_locator": "translation/content/first-order-logic/completeness/construction-of-model.tex:174-178",
+          "source_unit_sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702",
+          "translation_unit_sha256": "234f1785cf5fd8293a13487937293833aeb1c4488e39540d616ab1ea954735ca",
+          "source_segment_sha256": "f378d6ddeea5c3dbf305c55bedab271e7dd56666d16ee9372880bbd1cb503d7d",
+          "translation_segment_sha256": "7ab3ab4f5167a1ec6065c37ff01c07a1f392da9d99fef3256d1cd881836d115b",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0133",
+          "section_path": "first-order-logic/completeness/identity",
+          "source_file": "content/first-order-logic/completeness/identity.tex",
+          "target_file": "translation/content/first-order-logic/completeness/identity.tex",
+          "segment_id": "OLP-0133-B005",
+          "source_locator": "content/first-order-logic/completeness/identity.tex:22-23",
+          "target_locator": "translation/content/first-order-logic/completeness/identity.tex:21",
+          "source_unit_sha256": "bc3391e4db38b0552ee8429b14f32124cdb7ee71e766ce17a5eaa2422126aa71",
+          "translation_unit_sha256": "1b6e36bed459e1246d938d3047c1e592e7d63f502b7a67527e276c4b4180c365",
+          "source_segment_sha256": "ea50042e7b514f9b6d6c0afad20e9307655306762a775033f419b85987bbe9c2",
+          "translation_segment_sha256": "41a0fe70fcfd857a936b08c34b0acbb5a7b9c29d531ef051a52de58eec908aea",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0135",
+          "section_path": "first-order-logic/completeness/compactness",
+          "source_file": "content/first-order-logic/completeness/compactness.tex",
+          "target_file": "translation/content/first-order-logic/completeness/compactness.tex",
+          "segment_id": "OLP-0135-B007",
+          "source_locator": "content/first-order-logic/completeness/compactness.tex:29-31",
+          "target_locator": "translation/content/first-order-logic/completeness/compactness.tex:28-32",
+          "source_unit_sha256": "427e195e6bab0024f56954406ec4d9303573e4c2c796e8bf7446c45fcf253407",
+          "translation_unit_sha256": "2a06f8914fa0f8f0d8cbf775c909b54ce0a2fbe428f69be873dbacb6404629c0",
+          "source_segment_sha256": "0f4f921038398e9a4f052d102f62824e967450ee4d6b9f8795d01f4e5c661651",
+          "translation_segment_sha256": "89dde5cf0dcb2e1396ce198ab38875d4fc50ab357ea738cf4eb9dc3d2e93513e",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0135",
+          "section_path": "first-order-logic/completeness/compactness",
+          "source_file": "content/first-order-logic/completeness/compactness.tex",
+          "target_file": "translation/content/first-order-logic/completeness/compactness.tex",
+          "segment_id": "OLP-0135-B005",
+          "source_locator": "content/first-order-logic/completeness/compactness.tex:13-18",
+          "target_locator": "translation/content/first-order-logic/completeness/compactness.tex:13-18",
+          "source_unit_sha256": "427e195e6bab0024f56954406ec4d9303573e4c2c796e8bf7446c45fcf253407",
+          "translation_unit_sha256": "2a06f8914fa0f8f0d8cbf775c909b54ce0a2fbe428f69be873dbacb6404629c0",
+          "source_segment_sha256": "7faf12d38e6008a53944e3da9024d9ae0d2be0f4346b00afe51a0475585ca5e6",
+          "translation_segment_sha256": "c10eb81e8cff5c7bba9cc7545c4b11a9433eb8f7fc82a1fcdc27b5b487a836a3",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0137",
+          "section_path": "first-order-logic/completeness/downward-ls",
+          "source_file": "content/first-order-logic/completeness/downward-ls.tex",
+          "target_file": "translation/content/first-order-logic/completeness/downward-ls.tex",
+          "segment_id": "OLP-0137-B004",
+          "source_locator": "content/first-order-logic/completeness/downward-ls.tex:10-15",
+          "target_locator": "translation/content/first-order-logic/completeness/downward-ls.tex:10-15",
+          "source_unit_sha256": "31e60aefb151429d7af1e982f1d44a05c4a4b37b8ea03d8163016fdf6d6058d3",
+          "translation_unit_sha256": "0be7d2d89caf0f98785f45176d7c71898743fe55ed82d3fc6017330326722eaa",
+          "source_segment_sha256": "074223456c83711ecc45af8a57a5713505800f20f7820b41a9df96ba34a07a6f",
+          "translation_segment_sha256": "9856cc3eccd0b93c9f1a484b0a33bcd7bad1f3e745fcfd99860baf63e4cfaf94",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0137",
+          "section_path": "first-order-logic/completeness/downward-ls",
+          "source_file": "content/first-order-logic/completeness/downward-ls.tex",
+          "target_file": "translation/content/first-order-logic/completeness/downward-ls.tex",
+          "segment_id": "OLP-0137-B010",
+          "source_locator": "content/first-order-logic/completeness/downward-ls.tex:48",
+          "target_locator": "translation/content/first-order-logic/completeness/downward-ls.tex:47",
+          "source_unit_sha256": "31e60aefb151429d7af1e982f1d44a05c4a4b37b8ea03d8163016fdf6d6058d3",
+          "translation_unit_sha256": "0be7d2d89caf0f98785f45176d7c71898743fe55ed82d3fc6017330326722eaa",
+          "source_segment_sha256": "11dca629bae2b1f47738aac37732516bf6e718400c88eb3b003f7e123e91a800",
+          "translation_segment_sha256": "42840a2ef629725480451d9a4f97b5d053f0f715380210bdf2272f2cc4552325",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "passage_id": "TE-P002",
+          "source_id": "TE-C003",
+          "pdf_page": 9,
+          "printed_page": "35",
+          "region": "Main paragraph, lower half",
+          "verified": "Native page visually read",
+          "role": "Logic and mathematical-statement usage; not evidence for a specific formal propositional-calculus term"
+        },
+        {
+          "passage_id": "TE-P003",
+          "source_id": "TE-C003",
+          "pdf_page": 4,
+          "printed_page": "30",
+          "region": "Reason-giving and proofs subsection",
+          "verified": "Native page visually read",
+          "role": "Native proof/explanation register; broad induction usage, not full formal induction theorem attestation"
+        },
+        {
+          "passage_id": "TE-P004",
+          "source_id": "TE-C002",
+          "pdf_page": 19,
+          "printed_page": "7",
+          "region": "Theorem 1.1 and surrounding Telugu explanation",
+          "verified": "Native Telugu page visually read; English facing page not substituted",
+          "role": "Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No human Telugu logician, mathematician or copy editor has reviewed this choice yet.",
+        "No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records."
+      ],
+      "rationale": "TE-P002--P004 support broad logic, truth/falsity, reasoning, proof, induction, deduction and theorem exposition, but do not independently attest the completeness and model-theoretic taxonomy. The complete-set and saturation definitions, Henkin and Lindenbaum constructions, term-model and factored-model definitions, Truth Lemmas, completeness theorem and compactness arguments control the selected senses. Henkin, Lindenbaum, Lowenheim--Skolem and Skolem are explicit eponymic borrowings. The choices reuse TE-T017, TE-T020, TE-T033, TE-T034 and TE-T037 only within their recorded scopes.",
+      "alternatives_considered_or_recorded": [
+        "descriptive Telugu completeness and model-theoretic headwords with eponymic names retained as explicit borrowings (chosen)",
+        "leave the completeness taxonomy in English (not adopted)",
+        "introduce unattested coined replacements for the eponymic names (not adopted)",
+        "retain protected source-token spellings inside grammatical macros (chosen for source identity)"
+      ],
+      "uncertainty": "Low for cross-chapter consistency and broad logic/proof register; high nomenclatural for the completeness and model-theoretic headwords",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "precise_review_questions": [
+        "Please double-check whether “సంపూర్ణ సమితి / సంతృప్తీకృత సమితి / హెన్కిన్ విస్తరణ / లిండెన్‌బామ్ ఉపసిద్ధాంతం / పద నమూనా / సత్య ఉపసిద్ధాంతం / వర్గీకరణ / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ సిద్ధాంతం / లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతం / స్కోలెమ్ విరోధాభాసం” is idiomatic and technically standard for “complete set / saturated set / Henkin expansion / Lindenbaum's Lemma / term model / Truth Lemma / factoring / finitely satisfiable / Compactness Theorem / Lowenheim--Skolem Theorem / Skolem's Paradox” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
+        "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
+      ],
+      "translation_hold": false
+    },
+    {
       "review_id": "REV-OLFUN-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4497,7 +4727,7 @@
     {
       "review_id": "REV-OLFUN-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4554,7 +4784,7 @@
     {
       "review_id": "REV-OLFUN-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4611,7 +4841,7 @@
     {
       "review_id": "REV-OLFUN-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4668,7 +4898,7 @@
     {
       "review_id": "REV-OLFUN-005",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4725,7 +4955,7 @@
     {
       "review_id": "REV-OLTESIZ-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4782,7 +5012,7 @@
     {
       "review_id": "REV-OLSIZ-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4839,7 +5069,7 @@
     {
       "review_id": "REV-OLTESIZ-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4896,7 +5126,7 @@
     {
       "review_id": "REV-OLSIZ-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4953,7 +5183,7 @@
     {
       "review_id": "REV-OLTESIZ-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5010,7 +5240,7 @@
     {
       "review_id": "REV-OLTESIZ-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5067,7 +5297,7 @@
     {
       "review_id": "REV-OLSIZ-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5124,7 +5354,7 @@
     {
       "review_id": "REV-OLSIZ-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5181,7 +5411,7 @@
     {
       "review_id": "REV-OLSIZ-005",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5238,7 +5468,7 @@
     {
       "review_id": "REV-OLSIZ-006",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5295,7 +5525,7 @@
     {
       "review_id": "REV-OLSIZ-007",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5352,7 +5582,7 @@
     {
       "review_id": "REV-OLSIZ-008",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5409,7 +5639,7 @@
     {
       "review_id": "REV-OLSIZ-009",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5466,7 +5696,7 @@
     {
       "review_id": "REV-OLSIZ-010",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5523,7 +5753,7 @@
     {
       "review_id": "REV-OLTEARITH-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5580,7 +5810,7 @@
     {
       "review_id": "REV-OLTEARITH-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5637,7 +5867,7 @@
     {
       "review_id": "REV-OLTEARITH-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5694,7 +5924,7 @@
     {
       "review_id": "REV-OLTEARITH-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5751,7 +5981,7 @@
     {
       "review_id": "REV-OLTEARITH-005",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5808,7 +6038,7 @@
     {
       "review_id": "REV-OLTEARITH-006",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5865,7 +6095,7 @@
     {
       "review_id": "REV-OLTEARITH-007",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5922,7 +6152,7 @@
     {
       "review_id": "REV-OLTEARITH-008",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5979,7 +6209,7 @@
     {
       "review_id": "REV-OLTEINF-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6036,7 +6266,7 @@
     {
       "review_id": "REV-OLTEINF-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6093,7 +6323,7 @@
     {
       "review_id": "REV-OLTEINF-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6150,7 +6380,7 @@
     {
       "review_id": "REV-OLTEINF-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6207,7 +6437,7 @@
     {
       "review_id": "REV-OLTEINF-005",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6264,7 +6494,7 @@
     {
       "review_id": "REV-OLTEINF-006",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6321,7 +6551,7 @@
     {
       "review_id": "REV-OLTEPLSYN-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6378,7 +6608,7 @@
     {
       "review_id": "REV-OLTEPLSYN-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6435,7 +6665,7 @@
     {
       "review_id": "REV-OLTEPLSYN-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6492,7 +6722,7 @@
     {
       "review_id": "REV-OLTEPLSYN-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6549,7 +6779,7 @@
     {
       "review_id": "REV-OLTEPRF-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6606,7 +6836,7 @@
     {
       "review_id": "REV-OLTEPRF-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6663,7 +6893,7 @@
     {
       "review_id": "REV-OLTEPRF-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6720,7 +6950,7 @@
     {
       "review_id": "REV-OLTEPRF-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6777,7 +7007,7 @@
     {
       "review_id": "REV-OLTESEQ-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6834,7 +7064,7 @@
     {
       "review_id": "REV-OLTESEQ-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6891,7 +7121,7 @@
     {
       "review_id": "REV-OLTESEQ-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6948,7 +7178,7 @@
     {
       "review_id": "REV-OLTESEQ-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7005,7 +7235,7 @@
     {
       "review_id": "REV-OLTESEQ-005",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7062,7 +7292,7 @@
     {
       "review_id": "REV-OLTEND-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7119,7 +7349,7 @@
     {
       "review_id": "REV-OLTEND-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7176,7 +7406,7 @@
     {
       "review_id": "REV-OLTEND-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7233,7 +7463,7 @@
     {
       "review_id": "REV-OLTEND-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7290,7 +7520,7 @@
     {
       "review_id": "REV-OLTETAB-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7347,7 +7577,7 @@
     {
       "review_id": "REV-OLTETAB-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7404,7 +7634,7 @@
     {
       "review_id": "REV-OLTETAB-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7461,7 +7691,7 @@
     {
       "review_id": "REV-OLTETAB-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7518,7 +7748,7 @@
     {
       "review_id": "REV-OLTETAB-005",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7575,7 +7805,7 @@
     {
       "review_id": "REV-OLTETAB-006",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7632,7 +7862,7 @@
     {
       "review_id": "REV-OLTETAB-007",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7689,7 +7919,7 @@
     {
       "review_id": "REV-OLTETAB-008",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7746,7 +7976,7 @@
     {
       "review_id": "REV-OLTETAB-009",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7803,7 +8033,7 @@
     {
       "review_id": "REV-OLTETAB-010",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7860,7 +8090,7 @@
     {
       "review_id": "REV-OLTETAB-011",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7917,7 +8147,7 @@
     {
       "review_id": "REV-OLTETAB-012",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7974,7 +8204,7 @@
     {
       "review_id": "REV-OLTEAXD-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -8031,7 +8261,7 @@
     {
       "review_id": "REV-OLTEAXD-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -8088,7 +8318,7 @@
     {
       "review_id": "REV-OLTEAXD-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -8145,7 +8375,7 @@
     {
       "review_id": "REV-OLTEAXD-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -8202,7 +8432,7 @@
     {
       "review_id": "REV-OLTEAXD-005",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -8259,7 +8489,7 @@
     {
       "review_id": "REV-OLTEAXD-006",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -8316,7 +8546,7 @@
     {
       "review_id": "REV-OLTEAXD-007",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -8373,7 +8603,7 @@
     {
       "review_id": "REV-OLTEAXD-008",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -8430,7 +8660,7 @@
     {
       "review_id": "REV-OLTEAXD-009",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -8487,7 +8717,7 @@
     {
       "review_id": "REV-OLTEAXD-010",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -8544,7 +8774,7 @@
     {
       "review_id": "REV-OLTEAXD-011",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_122_of_722_draft_units",
+      "scope_completion": "partial_134_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -8594,6 +8824,519 @@
       "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
       "precise_review_questions": [
         "Please double-check that reflexive identity is claimed only for closed terms, matching the stated scope of ax:id1."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTECOM-001",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_134_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTECOM-001",
+      "classification": "confirmed_atomic_scope_conflicts_with_complete_set_definition",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0128",
+          "section_path": "first-order-logic/completeness/outline",
+          "source_file": "content/first-order-logic/completeness/outline.tex",
+          "target_file": "translation/content/first-order-logic/completeness/outline.tex",
+          "segment_id": "OLP-0128-B010",
+          "source_locator": "lines 66-80, condition (b) and its identification as completeness",
+          "target_locator": "translation/content/first-order-logic/completeness/outline.tex:71",
+          "source_unit_sha256": "b3cbb5543255b168edbed2239981fa772d3a954bd5ce3dbf5bb8073e9b0525b1",
+          "translation_unit_sha256": "e8d72b38c541b4168108481e7a95cca30b86544d29d0665aab2fb9c151b26658",
+          "source_segment_sha256": "822d10389e332c8f4cbbf24880d78e9ea9a433aaff3dcd4eed3aaa39e28fa2e7",
+          "translation_segment_sha256": "6b915dff550373902a434b172166c016fdb283cddb0f79b5f84b1486cbce6e2e",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTECOM-20260905",
+          "audit_review_sha256": "c23601eae093432e44fdc0f2a09a3580dc554920438fcf1f9896df2ca3ea88c3",
+          "audit_findings_sha256": "241535bd263de3d25236e36799133895166acd9acc83e7b803bef6056a41386c"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/completeness/outline.tex",
+          "source_sha256": "b3cbb5543255b168edbed2239981fa772d3a954bd5ce3dbf5bb8073e9b0525b1"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "removed the contradictory atomic restriction so condition (b) ranges over every sentence, matching the controlling definition and construction; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that condition (b) ranges over every sentence, matching the complete-set definition rather than the source adjective atomic."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTECOM-002",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_134_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTECOM-002",
+      "classification": "confirmed_missing_variable_argument_in_henkin_definition_reminder",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0130",
+          "section_path": "first-order-logic/completeness/henkin-expansions",
+          "source_file": "content/first-order-logic/completeness/henkin-expansions.tex",
+          "target_file": "translation/content/first-order-logic/completeness/henkin-expansions.tex",
+          "segment_id": "OLP-0130-B017",
+          "source_locator": "lines 137-144, parenthetical universal-formula explanation",
+          "target_locator": "translation/content/first-order-logic/completeness/henkin-expansions.tex:149",
+          "source_unit_sha256": "353b1ea300b6d916be92a5100dfa2e2f4cf9ad9f44e9506c96f028acea3b1ec8",
+          "translation_unit_sha256": "a4f88dacdaf322a7ff2ff776aaaf5253c14a29abb4cfbb1a56adfac2e81ef268",
+          "source_segment_sha256": "fe5aec41dffebe3f21397371abe83c0c38fa946d18b208578c8fff0fd7618e81",
+          "translation_segment_sha256": "82b1654cf9622a55e669aab7e84afa72cb03f09ce016b388c95f4ebb28354299",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTECOM-20260905",
+          "audit_review_sha256": "c23601eae093432e44fdc0f2a09a3580dc554920438fcf1f9896df2ca3ea88c3",
+          "audit_findings_sha256": "241535bd263de3d25236e36799133895166acd9acc83e7b803bef6056a41386c"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/completeness/henkin-expansions.tex",
+          "source_sha256": "353b1ea300b6d916be92a5100dfa2e2f4cf9ad9f44e9506c96f028acea3b1ec8"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "restored the argument x_n in A_n(x_n), matching the surrounding formulas and recalled definition; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that the recalled universal formula retains the argument x_n in A_n(x_n), matching the surrounding Henkin formulas."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTECOM-003",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_134_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTECOM-003",
+      "classification": "confirmed_term_value_lemma_missing_closed_term_scope",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0132",
+          "section_path": "first-order-logic/completeness/construction-of-model",
+          "source_file": "content/first-order-logic/completeness/construction-of-model.tex",
+          "target_file": "translation/content/first-order-logic/completeness/construction-of-model.tex",
+          "segment_id": "OLP-0132-B009",
+          "source_locator": "lines 78-95, term-value lemma statement and proof",
+          "target_locator": "translation/content/first-order-logic/completeness/construction-of-model.tex:84",
+          "source_unit_sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702",
+          "translation_unit_sha256": "234f1785cf5fd8293a13487937293833aeb1c4488e39540d616ab1ea954735ca",
+          "source_segment_sha256": "de4934139d84107a3dd69a4260cd1ae158e4bab5df7b17b56646113deb029571",
+          "translation_segment_sha256": "a0e06bbaf5907b9667e31c1778307efb98c46faf480d05791246475d35c91d1e",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTECOM-20260905",
+          "audit_review_sha256": "c23601eae093432e44fdc0f2a09a3580dc554920438fcf1f9896df2ca3ea88c3",
+          "audit_findings_sha256": "241535bd263de3d25236e36799133895166acd9acc83e7b803bef6056a41386c"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/completeness/construction-of-model.tex",
+          "source_sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "restricted t to a closed term, matching the term-model domain and induction proof; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that the term-value lemma is explicitly restricted to closed terms, matching the term-model domain and proof."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTECOM-004",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_134_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTECOM-004",
+      "classification": "confirmed_wrong_formula_metavariable_in_universal_truth_case",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0132",
+          "section_path": "first-order-logic/completeness/construction-of-model",
+          "source_file": "content/first-order-logic/completeness/construction-of-model.tex",
+          "target_file": "translation/content/first-order-logic/completeness/construction-of-model.tex",
+          "segment_id": "OLP-0132-B022",
+          "source_locator": "lines 239-247, universal induction case of the Truth Lemma",
+          "target_locator": "translation/content/first-order-logic/completeness/construction-of-model.tex:267",
+          "source_unit_sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702",
+          "translation_unit_sha256": "234f1785cf5fd8293a13487937293833aeb1c4488e39540d616ab1ea954735ca",
+          "source_segment_sha256": "18e8cc2aec4ee9277dda68146f0c8f332b52a06f7101a3aafb967fead2eade81",
+          "translation_segment_sha256": "a26278f7d95706e2ac0a8be04d4e6ac0aec7f43cd349e6946d2ff62109ea0274",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTECOM-20260905",
+          "audit_review_sha256": "c23601eae093432e44fdc0f2a09a3580dc554920438fcf1f9896df2ca3ea88c3",
+          "audit_findings_sha256": "241535bd263de3d25236e36799133895166acd9acc83e7b803bef6056a41386c"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/completeness/construction-of-model.tex",
+          "source_sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "used B rather than A in the concluding universal membership formula, matching the induction-case header and preceding formulas; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that the universal Truth Lemma case concludes with forall x B(x), matching its case formula and preceding instances."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTECOM-005",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_134_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTECOM-005",
+      "classification": "confirmed_universal_truth_case_omits_closed_term_qualification",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0132",
+          "section_path": "first-order-logic/completeness/construction-of-model",
+          "source_file": "content/first-order-logic/completeness/construction-of-model.tex",
+          "target_file": "translation/content/first-order-logic/completeness/construction-of-model.tex",
+          "segment_id": "OLP-0132-B022",
+          "source_locator": "lines 242-246, universal term-model and saturation equivalences",
+          "target_locator": "translation/content/first-order-logic/completeness/construction-of-model.tex:261",
+          "source_unit_sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702",
+          "translation_unit_sha256": "234f1785cf5fd8293a13487937293833aeb1c4488e39540d616ab1ea954735ca",
+          "source_segment_sha256": "18e8cc2aec4ee9277dda68146f0c8f332b52a06f7101a3aafb967fead2eade81",
+          "translation_segment_sha256": "a26278f7d95706e2ac0a8be04d4e6ac0aec7f43cd349e6946d2ff62109ea0274",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTECOM-20260905",
+          "audit_review_sha256": "c23601eae093432e44fdc0f2a09a3580dc554920438fcf1f9896df2ca3ea88c3",
+          "audit_findings_sha256": "241535bd263de3d25236e36799133895166acd9acc83e7b803bef6056a41386c"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/completeness/construction-of-model.tex",
+          "source_sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "restored the closed-term qualification in both universal equivalences, matching the cited propositions and term-model domain; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that both universal-case equivalences quantify over closed terms, matching the cited propositions."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTECOM-006",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_134_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTECOM-006",
+      "classification": "confirmed_existential_truth_case_omits_closed_term_qualification",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0132",
+          "section_path": "first-order-logic/completeness/construction-of-model",
+          "source_file": "content/first-order-logic/completeness/construction-of-model.tex",
+          "target_file": "translation/content/first-order-logic/completeness/construction-of-model.tex",
+          "segment_id": "OLP-0132-B023",
+          "source_locator": "lines 249-257, existential term-model and saturation equivalences",
+          "target_locator": "translation/content/first-order-logic/completeness/construction-of-model.tex:277",
+          "source_unit_sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702",
+          "translation_unit_sha256": "234f1785cf5fd8293a13487937293833aeb1c4488e39540d616ab1ea954735ca",
+          "source_segment_sha256": "60448b7183a35a4cae78dcf4293b150574c3242e0dd20b99042f08f04ecb44ff",
+          "translation_segment_sha256": "7b1c9cedaf80348d3f672afa4b8ace4fd90c62e350a37dc04d2cea557f6ea182",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTECOM-20260905",
+          "audit_review_sha256": "c23601eae093432e44fdc0f2a09a3580dc554920438fcf1f9896df2ca3ea88c3",
+          "audit_findings_sha256": "241535bd263de3d25236e36799133895166acd9acc83e7b803bef6056a41386c"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/completeness/construction-of-model.tex",
+          "source_sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "restored the closed-term qualification in both existential equivalences, matching the cited propositions and term-model domain; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that both existential-case equivalences require at least one closed term, matching the cited propositions."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTECOM-007",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_134_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTECOM-007",
+      "classification": "confirmed_duplicate_comma_inside_function_term",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0133",
+          "section_path": "first-order-logic/completeness/identity",
+          "source_file": "content/first-order-logic/completeness/identity.tex",
+          "target_file": "translation/content/first-order-logic/completeness/identity.tex",
+          "segment_id": "OLP-0133-B008",
+          "source_locator": "line 69, item (4) function-congruence formula",
+          "target_locator": "translation/content/first-order-logic/completeness/identity.tex:72",
+          "source_unit_sha256": "bc3391e4db38b0552ee8429b14f32124cdb7ee71e766ce17a5eaa2422126aa71",
+          "translation_unit_sha256": "1b6e36bed459e1246d938d3047c1e592e7d63f502b7a67527e276c4b4180c365",
+          "source_segment_sha256": "d17e3dce3226ef164b3372364800df4d6aeb196a8de089594b61334ca634665e",
+          "translation_segment_sha256": "9054fa5d7a08b63884973ac4ad41eff13dd99f4d3ac5887ae2e7e4032063744c",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTECOM-20260905",
+          "audit_review_sha256": "c23601eae093432e44fdc0f2a09a3580dc554920438fcf1f9896df2ca3ea88c3",
+          "audit_findings_sha256": "241535bd263de3d25236e36799133895166acd9acc83e7b803bef6056a41386c"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/completeness/identity.tex",
+          "source_sha256": "bc3391e4db38b0552ee8429b14f32124cdb7ee71e766ce17a5eaa2422126aa71"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "removed the duplicate comma after t_{i+1}, leaving the single argument separator required by the parallel term; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that only the duplicate comma after t_(i+1) was removed from the function term and no argument changed."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTECOM-008",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_134_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTECOM-008",
+      "classification": "confirmed_compactness_theorem_conflates_set_and_sentence_types",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0135",
+          "section_path": "first-order-logic/completeness/compactness",
+          "source_file": "content/first-order-logic/completeness/compactness.tex",
+          "target_file": "translation/content/first-order-logic/completeness/compactness.tex",
+          "segment_id": "OLP-0135-B008",
+          "source_locator": "line 35, theorem-variable introduction",
+          "target_locator": "translation/content/first-order-logic/completeness/compactness.tex:38",
+          "source_unit_sha256": "427e195e6bab0024f56954406ec4d9303573e4c2c796e8bf7446c45fcf253407",
+          "translation_unit_sha256": "2a06f8914fa0f8f0d8cbf775c909b54ce0a2fbe428f69be873dbacb6404629c0",
+          "source_segment_sha256": "c075b5e57cbe130f250360e93929e09fdf97022219437b659dd9e53dd4a0b4f8",
+          "translation_segment_sha256": "cca297c0ffc12ca41f162a278ffaef8b4ad6ae25b1ee910263fe45d522d9d342",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTECOM-20260905",
+          "audit_review_sha256": "c23601eae093432e44fdc0f2a09a3580dc554920438fcf1f9896df2ca3ea88c3",
+          "audit_findings_sha256": "241535bd263de3d25236e36799133895166acd9acc83e7b803bef6056a41386c"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/completeness/compactness.tex",
+          "source_sha256": "427e195e6bab0024f56954406ec4d9303573e4c2c796e8bf7446c45fcf253407"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "typed Gamma as a set of sentences and A as one sentence, matching the finite-subset and entailment clauses; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that Gamma is typed as a set of sentences and A as one sentence in the Compactness Theorem statement."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTECOM-009",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_134_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTECOM-009",
+      "classification": "confirmed_membership_formula_missing_left_operand",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0131",
+          "section_path": "first-order-logic/completeness/lindenbaums-lemma",
+          "source_file": "content/first-order-logic/completeness/lindenbaums-lemma.tex",
+          "target_file": "translation/content/first-order-logic/completeness/lindenbaums-lemma.tex",
+          "segment_id": "OLP-0131-B011",
+          "source_locator": "lines 76-81, finite-subset argument",
+          "target_locator": "translation/content/first-order-logic/completeness/lindenbaums-lemma.tex:85",
+          "source_unit_sha256": "096a854cefe8f47251e7ad20747bda7e3832a0272a8e38ba71d732d913a9be47",
+          "translation_unit_sha256": "681bf3b47c0bcd3c2fb8317f341fe2da6df7f6125d9a05573d1b4b6ac7e2730b",
+          "source_segment_sha256": "43cfd2e8f33299c4d4355a47bb8d5bc4c0827da5ec9f7b5903fe355274607af7",
+          "translation_segment_sha256": "fd41897cf605626afda14b4b0ce3524705e3fece47397f8418a5888da9ccb620",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTECOM-20260905",
+          "audit_review_sha256": "c23601eae093432e44fdc0f2a09a3580dc554920438fcf1f9896df2ca3ea88c3",
+          "audit_findings_sha256": "241535bd263de3d25236e36799133895166acd9acc83e7b803bef6056a41386c"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/completeness/lindenbaums-lemma.tex",
+          "source_sha256": "096a854cefe8f47251e7ad20747bda7e3832a0272a8e38ba71d732d913a9be47"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "restored !B as the missing left operand in the membership formula, matching the scoped sentence and the ensuing subset conclusion; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that B is restored as the left operand of membership in Gamma_n, matching the scoped sentence and ensuing subset conclusion."
       ],
       "translation_hold": false,
       "status": "applied_qa_pass"

@@ -1,0 +1,147 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTECOM-20260905",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0126", "OLP-0127", "OLP-0128", "OLP-0129",
+      "OLP-0130", "OLP-0131", "OLP-0132", "OLP-0133",
+      "OLP-0134", "OLP-0135", "OLP-0136", "OLP-0137"
+    ],
+    "finding_count": 9
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTECOM-001",
+      "unit_id": "OLP-0128",
+      "classification": "confirmed_atomic_scope_conflicts_with_complete_set_definition",
+      "source": {
+        "path": "content/first-order-logic/completeness/outline.tex",
+        "bytes": 9362,
+        "sha256": "b3cbb5543255b168edbed2239981fa772d3a954bd5ce3dbf5bb8073e9b0525b1",
+        "locator": "lines 66-80, condition (b) and its identification as completeness"
+      },
+      "finding": "Condition (b) asks for a choice between A and not-A only for every atomic sentence, but the paragraph then calls condition (b) completeness.",
+      "controlling_evidence": "Definition def:complete-set and the Lindenbaum construction require that choice for every sentence, not merely every atomic sentence.",
+      "required_translation_handling": "Remove the contradictory atomic restriction and add an adjacent OLTECOM-001 note."
+    },
+    {
+      "finding_id": "OLTECOM-002",
+      "unit_id": "OLP-0130",
+      "classification": "confirmed_missing_variable_argument_in_henkin_definition_reminder",
+      "source": {
+        "path": "content/first-order-logic/completeness/henkin-expansions.tex",
+        "bytes": 8756,
+        "sha256": "353b1ea300b6d916be92a5100dfa2e2f4cf9ad9f44e9506c96f028acea3b1ec8",
+        "locator": "lines 137-144, parenthetical universal-formula explanation"
+      },
+      "finding": "The formula forall x_n not-A_n omits the argument (x_n) from the formula metavariable.",
+      "controlling_evidence": "The immediately surrounding three formulas and the definition being recalled all use A_n(x_n).",
+      "required_translation_handling": "Restore A_n(x_n) and add an adjacent OLTECOM-002 note."
+    },
+    {
+      "finding_id": "OLTECOM-003",
+      "unit_id": "OLP-0132",
+      "classification": "confirmed_term_value_lemma_missing_closed_term_scope",
+      "source": {
+        "path": "content/first-order-logic/completeness/construction-of-model.tex",
+        "bytes": 11011,
+        "sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702",
+        "locator": "lines 78-95, term-value lemma statement and proof"
+      },
+      "finding": "The lemma states Value(t)=t without restricting t to a closed term.",
+      "controlling_evidence": "The term-model domain is the set of closed terms, and both the induction step and conclusion of the proof explicitly quantify over closed terms.",
+      "required_translation_handling": "State that t is closed and add an adjacent OLTECOM-003 note."
+    },
+    {
+      "finding_id": "OLTECOM-004",
+      "unit_id": "OLP-0132",
+      "classification": "confirmed_wrong_formula_metavariable_in_universal_truth_case",
+      "source": {
+        "path": "content/first-order-logic/completeness/construction-of-model.tex",
+        "bytes": 11011,
+        "sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702",
+        "locator": "lines 239-247, universal induction case of the Truth Lemma"
+      },
+      "finding": "The case begins with forall x B(x) and uses B(t), but its final membership formula switches to forall x A(x).",
+      "controlling_evidence": "The induction-case header and both preceding satisfaction and membership formulas consistently use B.",
+      "required_translation_handling": "Use forall x B(x) in the final membership statement and add an adjacent OLTECOM-004 note."
+    },
+    {
+      "finding_id": "OLTECOM-005",
+      "unit_id": "OLP-0132",
+      "classification": "confirmed_universal_truth_case_omits_closed_term_qualification",
+      "source": {
+        "path": "content/first-order-logic/completeness/construction-of-model.tex",
+        "bytes": 11011,
+        "sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702",
+        "locator": "lines 242-246, universal term-model and saturation equivalences"
+      },
+      "finding": "The universal case says all terms even though its cited propositions range over all closed terms.",
+      "controlling_evidence": "Both prop:quant-termmodel and prop:saturated-instances explicitly state all closed terms, matching the term-model domain.",
+      "required_translation_handling": "Restore the closed-term qualification and add an adjacent OLTECOM-005 note."
+    },
+    {
+      "finding_id": "OLTECOM-006",
+      "unit_id": "OLP-0132",
+      "classification": "confirmed_existential_truth_case_omits_closed_term_qualification",
+      "source": {
+        "path": "content/first-order-logic/completeness/construction-of-model.tex",
+        "bytes": 11011,
+        "sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702",
+        "locator": "lines 249-257, existential term-model and saturation equivalences"
+      },
+      "finding": "The existential case says at least one term even though its cited propositions require at least one closed term.",
+      "controlling_evidence": "Both prop:quant-termmodel and prop:saturated-instances explicitly state a closed term, matching the term-model domain.",
+      "required_translation_handling": "Restore the closed-term qualification and add an adjacent OLTECOM-006 note."
+    },
+    {
+      "finding_id": "OLTECOM-007",
+      "unit_id": "OLP-0133",
+      "classification": "confirmed_duplicate_comma_inside_function_term",
+      "source": {
+        "path": "content/first-order-logic/completeness/identity.tex",
+        "bytes": 7831,
+        "sha256": "bc3391e4db38b0552ee8429b14f32124cdb7ee71e766ce17a5eaa2422126aa71",
+        "locator": "line 69, item (4) function-congruence formula"
+      },
+      "finding": "The first function term contains two consecutive comma separators after t_{i+1}.",
+      "controlling_evidence": "The argument list in the second term and the term pattern in the proposition contain exactly one separator at that position.",
+      "required_translation_handling": "Remove the duplicate comma and add an adjacent OLTECOM-007 note."
+    },
+    {
+      "finding_id": "OLTECOM-008",
+      "unit_id": "OLP-0135",
+      "classification": "confirmed_compactness_theorem_conflates_set_and_sentence_types",
+      "source": {
+        "path": "content/first-order-logic/completeness/compactness.tex",
+        "bytes": 8852,
+        "sha256": "427e195e6bab0024f56954406ec4d9303573e4c2c796e8bf7446c45fcf253407",
+        "locator": "line 35, theorem-variable introduction"
+      },
+      "finding": "The theorem calls both Gamma and A sentences even though Gamma is used as a set of sentences and A as a sentence.",
+      "controlling_evidence": "Clause (1) takes finite subsets Gamma_0 of Gamma, while the displayed entailment treats A as the single consequent sentence.",
+      "required_translation_handling": "State the two variable types separately and add an adjacent OLTECOM-008 note."
+    },
+    {
+      "finding_id": "OLTECOM-009",
+      "unit_id": "OLP-0131",
+      "classification": "confirmed_membership_formula_missing_left_operand",
+      "source": {
+        "path": "content/first-order-logic/completeness/lindenbaums-lemma.tex",
+        "bytes": 4187,
+        "sha256": "096a854cefe8f47251e7ad20747bda7e3832a0272a8e38ba71d732d913a9be47",
+        "locator": "lines 76-81, finite-subset argument"
+      },
+      "finding": "The membership formula in the finite-subset argument consists only of in Gamma_n and has no left operand.",
+      "controlling_evidence": "The sentence scopes B from B in Gamma' through its occurrence in Gamma_i, and the intended conclusion is B in Gamma_n before Gamma' is shown to be a subset of Gamma_n.",
+      "required_translation_handling": "Restore B as the left operand and add an adjacent OLTECOM-009 note."
+    }
+  ]
+}

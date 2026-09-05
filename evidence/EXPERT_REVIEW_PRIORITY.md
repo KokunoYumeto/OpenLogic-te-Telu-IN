@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 122 of 722 draft units**. This view selects 91 of 113 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 134 of 722 draft units**. This view selects 101 of 123 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -183,6 +183,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0113; first-order-logic/axiomatic-deduction/rules-and-proofs; translation/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:16-21; printed/PDF page pending; OLP-0113; first-order-logic/axiomatic-deduction/rules-and-proofs; translation/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41; printed/PDF page pending; OLP-0114; first-order-logic/axiomatic-deduction/axioms-rules-propositional; translation/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-17; printed/PDF page pending; OLP-0114; first-order-logic/axiomatic-deduction/axioms-rules-propositional; translation/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-41; printed/PDF page pending; OLP-0115; first-order-logic/axiomatic-deduction/axioms-rules-quantifiers; translation/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-32; printed/PDF page pending; OLP-0118; first-order-logic/axiomatic-deduction/proof-theoretic-notions; translation/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:13-24; printed/PDF page pending; OLP-0121; first-order-logic/axiomatic-deduction/provability-consistency; translation/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:14-17; printed/PDF page pending; OLP-0119; first-order-logic/axiomatic-deduction/deduction-theorem; translation/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:48-50; printed/PDF page pending
 
 - Please double-check: Please double-check whether “స్వీకృతం / స్వీకృత రూపం / స్వీకృతాధారిత నిరూపణ / నిగమన నియమం / మోడస్ పోనెన్స్ / పరిమాణీకరణిక నియమం / నిరూప్యతా సంబంధం / నిరూపణ-సిద్ధాంత భావన / నిగమన సిద్ధాంతం” is idiomatic and technically standard for “axiom / axiom instance / axiomatic derivation / inference rule / modus ponens / quantifier rule / derivability relation / proof-theoretic notion / deduction theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T041 — complete set / saturated set / Henkin expansion / Lindenbaum's Lemma / term model / Truth Lemma / factoring / finitely satisfiable / Compactness Theorem / Lowenheim--Skolem Theorem / Skolem's Paradox
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: సంపూర్ణ సమితి / సంతృప్తీకృత సమితి / హెన్కిన్ విస్తరణ / లిండెన్‌బామ్ ఉపసిద్ధాంతం / పద నమూనా / సత్య ఉపసిద్ధాంతం / వర్గీకరణ / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ సిద్ధాంతం / లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతం / స్కోలెమ్ విరోధాభాసం
+
+- Occurrences: OLP-0129; first-order-logic/completeness/complete-consistent-sets; translation/content/first-order-logic/completeness/complete-consistent-sets.tex:19-22; printed/PDF page pending; OLP-0130; first-order-logic/completeness/henkin-expansions; translation/content/first-order-logic/completeness/henkin-expansions.tex:11; printed/PDF page pending; OLP-0130; first-order-logic/completeness/henkin-expansions; translation/content/first-order-logic/completeness/henkin-expansions.tex:40-48; printed/PDF page pending; OLP-0131; first-order-logic/completeness/lindenbaums-lemma; translation/content/first-order-logic/completeness/lindenbaums-lemma.tex:13; printed/PDF page pending; OLP-0132; first-order-logic/completeness/construction-of-model; translation/content/first-order-logic/completeness/construction-of-model.tex:38-44; printed/PDF page pending; OLP-0132; first-order-logic/completeness/construction-of-model; translation/content/first-order-logic/completeness/construction-of-model.tex:174-178; printed/PDF page pending; OLP-0133; first-order-logic/completeness/identity; translation/content/first-order-logic/completeness/identity.tex:21; printed/PDF page pending; OLP-0135; first-order-logic/completeness/compactness; translation/content/first-order-logic/completeness/compactness.tex:28-32; printed/PDF page pending; OLP-0135; first-order-logic/completeness/compactness; translation/content/first-order-logic/completeness/compactness.tex:13-18; printed/PDF page pending; OLP-0137; first-order-logic/completeness/downward-ls; translation/content/first-order-logic/completeness/downward-ls.tex:10-15; printed/PDF page pending; OLP-0137; first-order-logic/completeness/downward-ls; translation/content/first-order-logic/completeness/downward-ls.tex:47; printed/PDF page pending
+
+- Please double-check: Please double-check whether “సంపూర్ణ సమితి / సంతృప్తీకృత సమితి / హెన్కిన్ విస్తరణ / లిండెన్‌బామ్ ఉపసిద్ధాంతం / పద నమూనా / సత్య ఉపసిద్ధాంతం / వర్గీకరణ / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ సిద్ధాంతం / లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతం / స్కోలెమ్ విరోధాభాసం” is idiomatic and technically standard for “complete set / saturated set / Henkin expansion / Lindenbaum's Lemma / term model / Truth Lemma / factoring / finitely satisfiable / Compactness Theorem / Lowenheim--Skolem Theorem / Skolem's Paradox” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -913,3 +923,93 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0125; first-order-logic/axiomatic-deduction/identity; translation/content/first-order-logic/axiomatic-deduction/identity.tex:41; printed/PDF page pending
 
 - Please double-check: Please double-check that reflexive identity is claimed only for closed terms, matching the stated scope of ax:id1.
+
+## REV-OLTECOM-001 — OLTECOM-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: removed the contradictory atomic restriction so condition (b) ranges over every sentence, matching the controlling definition and construction; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0128; first-order-logic/completeness/outline; translation/content/first-order-logic/completeness/outline.tex:71; printed/PDF page pending
+
+- Please double-check: Please double-check that condition (b) ranges over every sentence, matching the complete-set definition rather than the source adjective atomic.
+
+## REV-OLTECOM-002 — OLTECOM-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored the argument x_n in A_n(x_n), matching the surrounding formulas and recalled definition; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0130; first-order-logic/completeness/henkin-expansions; translation/content/first-order-logic/completeness/henkin-expansions.tex:149; printed/PDF page pending
+
+- Please double-check: Please double-check that the recalled universal formula retains the argument x_n in A_n(x_n), matching the surrounding Henkin formulas.
+
+## REV-OLTECOM-003 — OLTECOM-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restricted t to a closed term, matching the term-model domain and induction proof; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0132; first-order-logic/completeness/construction-of-model; translation/content/first-order-logic/completeness/construction-of-model.tex:84; printed/PDF page pending
+
+- Please double-check: Please double-check that the term-value lemma is explicitly restricted to closed terms, matching the term-model domain and proof.
+
+## REV-OLTECOM-004 — OLTECOM-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used B rather than A in the concluding universal membership formula, matching the induction-case header and preceding formulas; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0132; first-order-logic/completeness/construction-of-model; translation/content/first-order-logic/completeness/construction-of-model.tex:267; printed/PDF page pending
+
+- Please double-check: Please double-check that the universal Truth Lemma case concludes with forall x B(x), matching its case formula and preceding instances.
+
+## REV-OLTECOM-005 — OLTECOM-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored the closed-term qualification in both universal equivalences, matching the cited propositions and term-model domain; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0132; first-order-logic/completeness/construction-of-model; translation/content/first-order-logic/completeness/construction-of-model.tex:261; printed/PDF page pending
+
+- Please double-check: Please double-check that both universal-case equivalences quantify over closed terms, matching the cited propositions.
+
+## REV-OLTECOM-006 — OLTECOM-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored the closed-term qualification in both existential equivalences, matching the cited propositions and term-model domain; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0132; first-order-logic/completeness/construction-of-model; translation/content/first-order-logic/completeness/construction-of-model.tex:277; printed/PDF page pending
+
+- Please double-check: Please double-check that both existential-case equivalences require at least one closed term, matching the cited propositions.
+
+## REV-OLTECOM-007 — OLTECOM-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: removed the duplicate comma after t_{i+1}, leaving the single argument separator required by the parallel term; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0133; first-order-logic/completeness/identity; translation/content/first-order-logic/completeness/identity.tex:72; printed/PDF page pending
+
+- Please double-check: Please double-check that only the duplicate comma after t_(i+1) was removed from the function term and no argument changed.
+
+## REV-OLTECOM-008 — OLTECOM-008
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: typed Gamma as a set of sentences and A as one sentence, matching the finite-subset and entailment clauses; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0135; first-order-logic/completeness/compactness; translation/content/first-order-logic/completeness/compactness.tex:38; printed/PDF page pending
+
+- Please double-check: Please double-check that Gamma is typed as a set of sentences and A as one sentence in the Compactness Theorem statement.
+
+## REV-OLTECOM-009 — OLTECOM-009
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored !B as the missing left operand in the membership formula, matching the scoped sentence and the ensuing subset conclusion; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0131; first-order-logic/completeness/lindenbaums-lemma; translation/content/first-order-logic/completeness/lindenbaums-lemma.tex:85; printed/PDF page pending
+
+- Please double-check: Please double-check that B is restored as the left operand of membership in Gamma_n, matching the scoped sentence and ensuing subset conclusion.

@@ -1,0 +1,208 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: compactness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{com}{com}}
+      {\olfileid{pl}{com}{com}}
+
+\olsection{సంహతత్వ సిద్ధాంతం}
+
+సంపూర్ణతా సిద్ధాంతపు ఒక ముఖ్యమైన పరిణామం సంహతత్వ సిద్ధాంతం.
+!!{sentence}s సమితిలోని ప్రతి
+\emph{పరిమిత} ఉపసమితి సంతృప్తిపరచదగినదైతే, మొత్తం సమితి---అది
+అనంతమైనదైనా సరే---సంతృప్తిపరచదగినదని సంహతత్వ సిద్ధాంతం చెబుతుంది.
+ఇది ఏమాత్రం స్పష్టమైన విషయం కాదు. మొదటి చూపులోనైనా, వైరుధ్యం అనంతమైన
+సంఖ్య వల్లనే ఉత్పన్నమయ్యే వైరుధ్యభరిత అనంత !!{sentence}s సమితులు
+ఉండే అవకాశాన్ని ఏదీ తొలగిస్తున్నట్లు కనిపించదు. అలాంటి పరిస్థితిని
+తొలగించవచ్చని సంహతత్వ సిద్ధాంతం చెబుతుంది: ప్రతి పరిమిత ఉపసమితీ
+సంతృప్తిపరచదగినదై ఉండే, కానీ మొత్తం మీద సంతృప్తిపరచలేని అనంత
+!!{sentence}s సమితులు లేవు. సంపూర్ణతా సిద్ధాంతంలాగే, దీనికి అనుగమనానికి
+సంబంధించిన ఒక రూపం ఉంది: ఒక అనంత !!{sentence}s సమితి ఏదైనా విషయాన్ని
+అనుగమింపజేస్తే, ఇప్పటికే దాని ఒక పరిమిత ఉపసమితి దాన్ని అనుగమింపజేస్తుంది.
+
+\begin{defn}
+  !!{formula}s సమితి~$\Gamma$లోని ప్రతి పరిమిత $\Gamma_0 \subseteq
+  \Gamma$ సంతృప్తిపరచదగినదైతే, అప్పుడు మాత్రమే ఆ సమితిని
+  \emph{పరిమితంగా సంతృప్తిపరచదగినది} అంటాం.
+\end{defn}
+
+\begin{thm}[సంహతత్వ సిద్ధాంతం]
+\ollabel{thm:compactness}
+ఏ వాక్యాల సమితి~$\Gamma$కు, ఏ వాక్యం~$!A$కు కిందివి
+వర్తిస్తాయి:
+\sourcecorrection{OLTECOM-008}{ఆంగ్ల మూలం $\Gamma$, $!A$ రెండింటినీ
+``వాక్యాలు'' అని ఒకే రకంగా పేర్కొంది. తరువాతి రెండు అంశాలు కోరినట్లుగా
+$\Gamma$ను వాక్యాల సమితిగా, $!A$ను ఒక వాక్యంగా స్పష్టంచేశాం.}
+\begin{enumerate}
+  \item $\Gamma \Entails !A$ అయినప్పుడు, అప్పుడు మాత్రమే $\Gamma_0
+    \subseteq \Gamma$, $\Gamma_0 \Entails !A$ అయ్యే పరిమిత ఉపసమితి
+    ఉంది.
+  \item $\Gamma$ సంతృప్తిపరచదగినదైతే, అప్పుడు మాత్రమే అది పరిమితంగా
+    సంతృప్తిపరచదగినది.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+(2)ను నిరూపిస్తాం. $\Gamma$ సంతృప్తిపరచదగినదైతే, అన్ని $!A \in
+\Gamma$లకు $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ అయ్యే
+\iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+ఉంటుంది. ఈ $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ సహజంగానే
+~$\Gamma$లోని ప్రతి పరిమిత ఉపసమితిని కూడా సంతృప్తిపరుస్తుంది; కాబట్టి
+$\Gamma$ పరిమితంగా సంతృప్తిపరచదగినది.
+
+ఇప్పుడు~$\Gamma$ పరిమితంగా సంతృప్తిపరచదగినదని అనుకుందాం. అప్పుడు ప్రతి
+పరిమిత ఉపసమితి~$\Gamma_0 \subseteq \Gamma$ సంతృప్తిపరచదగినది.
+నిర్దుష్టత ప్రకారం
+(\iftag{FOL}{%
+  \tagrefs{prfAX/{fol:axd:sou:cor:consistency-soundness},
+    prfSC/{fol:seq:sou:cor:consistency-soundness},
+    prfND/{fol:ntd:sou:cor:consistency-soundness},
+    prfTab/{fol:tab:sou:cor:consistency-soundness}}}{%
+  \tagrefs{prfAX/{pl:axd:sou:cor:consistency-soundness},
+    prfSC/{pl:seq:sou:cor:consistency-soundness},
+    prfND/{pl:ntd:sou:cor:consistency-soundness},
+    prfTab/{pl:tab:sou:cor:consistency-soundness}}}),
+ప్రతి పరిమిత ఉపసమితీ అవైరుధ్యమైనది. అప్పుడు కింది ఫలితం ప్రకారం
+$\Gamma$ స్వయంగా అవైరుధ్యమైనది:
+\iftag{FOL}{%
+  \tagrefs{prfAX/{fol:axd:ptn:prop:proves-compact},
+    prfSC/{fol:seq:ptn:prop:proves-compact},
+    prfND/{fol:ntd:ptn:prop:proves-compact},
+    prfTab/{fol:tab:ptn:prop:proves-compact}}}{%
+  \tagrefs{prfAX/{pl:axd:ptn:prop:proves-compact},
+    prfSC/{pl:seq:ptn:prop:proves-compact},
+    prfND/{pl:ntd:ptn:prop:proves-compact},
+    prfTab/{pl:tab:ptn:prop:proves-compact}}}.
+సంపూర్ణత ప్రకారం (\olref[cth]{thm:completeness}), $\Gamma$
+అవైరుధ్యమైనది కనుక అది సంతృప్తిపరచదగినది.
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][com]{thm:compactness}లోని (1)ను నిరూపించండి.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][com][com]{thm:compactness}లోని (1)ను నిరూపించండి.
+\end{prob}
+\tagendprob
+
+\iftag{FOL}{%
+\begin{ex}
+సిద్ధాంతం~$\Gamma$ యొక్క ప్రతి నమూనా~$\Struct{M}$లో, ప్రతి పదం~$t$
+సహజంగానే~$\Domain{M}$లోని !!a{element}ను సూచిస్తుంది. $\Domain{M}$లోని
+ప్రతి !!{element}ను కూడా ఏదో ఒక పదం సూచిస్తుందని హామీ ఇవ్వగలమా?
+మరోలా చెప్పాలంటే, అన్ని నమూనాలూ ఆవరితంగా ఉండే సిద్ధాంతాలు~$\Gamma$
+ఉన్నాయా? $\Gamma$కు అనంత నమూనాలు ఉంటే అలా కాదని సంహతత్వ సిద్ధాంతం
+చూపుతుంది. అది ఇలా: $\Struct{M}$ అనేది~$\Gamma$ యొక్క అనంత నమూనా,
+$c$ అనేది~$\Gamma$ భాషలో లేని !!a{constant} అనుకుందాం. $t$ అనేది
+~$\Gamma$ భాష~$\Lang{L}$లోని పదంగా ఉండే అన్ని
+$\eq/[c][t]$ వాక్యాల సమితిని~$\Delta$ అందాం; అంటే,
+  \[
+  \Delta = \Setabs{\eq/[c][t]}{t \in \Trm[L]}.
+  \]
+$\Gamma \cup \Delta$లోని ఒక పరిమిత ఉపసమితిని $\Gamma' \cup
+\Delta'$గా రాయవచ్చు; ఇక్కడ $\Gamma' \subseteq \Gamma$, $\Delta'
+\subseteq \Delta$. $\Delta'$ పరిమితమైనది కనుక, దానిలో పరిమిత
+సంఖ్యలో పదాలు మాత్రమే ఉండగలవు. వాటిలో ఏదీ సూచించని
+$a \in \Domain{M}$ అనే ఒక $\Domain{M}$లోని !!a{element}ను తీసుకొని,
+$\Struct{M}$లాగే
+ఉండి అదనంగా $\Assign{c}{M'} = a$ అయ్యే !!{structure}ను~$\Struct{M'}$
+అందాం. $\Delta'$లో సంభవించే అన్ని~$t$లకు $a \neq \Value{t}{M}$ కనుక
+$\Sat{M'}{\Delta'}$. $\Sat{M}{\Gamma}$, $\Gamma' \subseteq \Gamma$,
+$c$ అనేది~$\Gamma$లో సంభవించదు కనుక $\Sat{M'}{\Gamma'}$ కూడా.
+కలిపితే, $\Gamma \cup \Delta$లోని ప్రతి పరిమిత ఉపసమితి $\Gamma'
+\cup \Delta'$కు $\Sat{M'}{\Gamma' \cup \Delta'}$. కాబట్టి $\Gamma
+\cup \Delta$లోని ప్రతి పరిమిత ఉపసమితి సంతృప్తిపరచదగినది. సంహతత్వం
+ప్రకారం $\Gamma \cup \Delta$ స్వయంగా సంతృప్తిపరచదగినది. అందువల్ల
+$\Sat{M}{\Gamma \cup \Delta}$ అయ్యే నమూనాలు ఉన్నాయి. అలాంటి ప్రతి
+$\Struct{M}$, $\Gamma$కు ఒక నమూనా; కానీ~$\Lang{L}$లోని అన్ని పదాలు~$t$కు
+$\Value{c}{M} \neq \Value{t}{M}$ కనుక అది ఆవరితమైనది కాదు.
+\end{ex}
+
+\begin{ex}
+!!{predicate}~$<$, !!{constant}s~$\Obj{0}$, $\Obj{1}$, ఇంకా
+!!{function}s~$+$, $\times$, $-$లను కలిగిన !!a{language}~$\Lang{L}$ను
+పరిశీలించండి. ప్రదేశం~$\Rat$, స్పష్టమైన అర్థవివరణలు గల
+!!{structure}~$\Struct{Q}$లో సత్యమైన ఈ !!{language}లోని అన్ని
+!!{sentence}s సమితిని~$\Gamma$ అందాం. కరణీయ సంఖ్యల గురించి సత్యమైన
+~$\Lang{L}$లోని అన్ని !!{sentence}s సమితి~$\Gamma$. సహజంగానే
+~$\Rat$లో (అంతేకాదు~$\Real$లో కూడా), $0$ కంటే పెద్దదై, ప్రతి
+$k \in \PosInt$కు $1/k$ కంటే చిన్నదైన సంఖ్య~$r$ ఏదీ లేదు. అలాంటి
+సంఖ్య ఉంటే అది
+\emph{అనంతసూక్ష్మం:} సున్నా కాదు, కానీ అనంతంగా చిన్నది. అనంతసూక్ష్మాలు
+ఉండే~$\Gamma$ నమూనాలు ఉన్నాయని చూపడానికి సంహతత్వ సిద్ధాంతాన్ని
+ఉపయోగించవచ్చు. మన భాషలో భాగహారానికి !!a{function} లేదు (సున్నాతో
+భాగహారం నిర్వచితం కాదు; !!{function}sను సర్వత్ర నిర్వచిత ప్రమేయాలతోనే
+అర్థం చేసుకోవాలి). అయినా $r < 1/k$ అని వ్యక్తం చేయవచ్చు; ఎందుకంటే
+$r \cdot k < 1$ అయినప్పుడు, అప్పుడు మాత్రమే అది నిజం. ఇప్పుడు $c$ ఒక
+కొత్త !!{constant} అనుకొని, $\Delta$ను ఇలా ఉంచండి:
+\[
+\{\Obj{0} < c\}
+\cup \Setabs{ c \times \num k < \Obj{1} }{k \in \PosInt}
+\]
+(ఇక్కడ $\num{k} = (\Obj{1} + (\Obj{1} + \dots + (\Obj{1} +
+\Obj{1})\dots))$; అందులో $k$~$\Obj{1}$లు ఉంటాయి). $\Delta$లోని ఏ
+పరిమిత ఉపసమితి~$\Delta_0$కైనా, $\Delta_0$లో ఉన్న అన్ని
+!!{sentence}s $c \times \num{k} < \Obj{1}$కు $k < K$ అయ్యే ఒక~$K$
+ఉంటుంది. $\Assign{c}{Q'} = 1/K$గా ఉంచి $\Struct{Q}$ను~$\Struct{Q'}$గా
+విస్తరిస్తే, ఏ పరిమిత $\Gamma_0 \subseteq \Gamma$కైనా
+$\Sat{Q'}{\Gamma_0 \cup \Delta_0}$. అందువల్ల $\Gamma \cup \Delta$
+పరిమితంగా సంతృప్తిపరచదగినది (దీన్ని వివరంగా నిరూపించడం అభ్యాసం).
+సంహతత్వం ప్రకారం $\Gamma \cup \Delta$ సంతృప్తిపరచదగినది. $\Gamma
+\cup \Delta$ యొక్క ఏ నమూనా~$\Struct{S}$లోనైనా ఒక అనంతసూక్ష్మం ఉంది;
+అది~$\Assign{c}{S}$.
+\end{ex}
+}{}
+
+\tagprob{FOL}
+\begin{prob}
+అంకగణితపు ప్రామాణిక నమూనా~$\Struct{N}$లో, ప్రతి సూత్రం~$\num{n} < x$
+ను సంతృప్తిపరిచే !!{element}~$k \in \Domain{N}$ ఏదీ లేదు (ఇక్కడ
+$\num{n}$ అనేది $n$~$\prime$లతో $\Obj{0}^{\prime\dots\prime}$).
+అంకగణితపు ప్రామాణిక నమూనా~$\Struct{N}$లో సత్యమైన అంకగణిత భాషలోని
+!!{sentence}s, ప్రతి సూత్రం~$\num{n} < x$ను
+\emph{సంతృప్తిపరిచే} !!a{element} ఉన్న !!a{structure}~$\Struct{N'}$లో
+కూడా సత్యమని చూపడానికి సంహతత్వ సిద్ధాంతాన్ని ఉపయోగించండి.
+\end{prob}
+\tagendprob
+
+\iftag{FOL}{
+\begin{ex}
+!!{identity} గల ప్రథమక్రమ తర్కం, !!{domain} పరిమాణానికి ఏదో ఒక కనిష్ఠ
+పరిమాణం తప్పనిసరి అని వ్యక్తం చేయగలదని మనకు తెలుసు: $!A_{\ge n}$ అనే
+వాక్యం (``కనీసం $n$ వేర్వేరు వస్తువులు ఉన్నాయి'' అని అది చెబుతుంది)
+$\Domain{M}$లో కనీసం~$n$ వస్తువులు గల నిర్మాణాల్లో మాత్రమే సత్యం.
+కాబట్టి
+  \[
+  \Delta = \Setabs{!A_{\ge n}}{n \ge 1}
+  \]
+గా తీసుకుంటే, $\Delta$ యొక్క ఏ నమూనా అయినా అనంతంగా ఉండాలి. అందువల్ల
+~$\Delta$ను ఒక సిద్ధాంతానికి చేర్చడం ద్వారా దానికి అనంత నమూనాలు మాత్రమే
+ఉండేలా హామీ ఇవ్వవచ్చు: $\Gamma \cup \Delta$ నమూనాలు సరిగ్గా~$\Gamma$
+యొక్క అనంత నమూనాలే.
+
+కాబట్టి ప్రథమక్రమ తర్కం అనంతత్వాన్ని వ్యక్తం చేయగలదు. అయితే అది
+పరిమితత్వాన్ని వ్యక్తం చేయలేదని సంహతత్వ సిద్ధాంతం చూపుతుంది. ఏదో ఒక
+వాక్యాల సమితి~$\Lambda$ను అన్ని పరిమిత !!{structure}s, అవి మాత్రమే,
+సంతృప్తిపరుస్తాయని అనుకుందాం. అప్పుడు $\Delta \cup \Lambda$ పరిమితంగా
+సంతృప్తిపరచదగినది. ఎందుకు? $\Delta' \subseteq \Delta$, $\Lambda'
+\subseteq \Lambda$ అయ్యే పరిమిత $\Delta' \cup \Lambda' \subseteq
+\Delta \cup \Lambda$ను తీసుకోండి. $!A_{\ge n} \in \Delta'$ అయ్యే
+అతిపెద్ద సంఖ్యను~$n$ అందాం. అన్ని పరిమిత నిర్మాణాలు~$\Lambda$ను
+సంతృప్తిపరుస్తాయి కనుక, పరిమిత సంఖ్యలో, కానీ $\ge n$ !!{element}s గల
+నమూనా~$\Struct{M}$ దానికి ఉంది. అప్పుడు $\Sat{M}{\Delta' \cup
+\Lambda'}$. సంహతత్వం ప్రకారం $\Delta \cup \Lambda$కు ఒక అనంత నమూనా
+ఉంది; ఇది~$\Lambda$ను పరిమిత !!{structure}s మాత్రమే సంతృప్తిపరుస్తాయనే
+పరికల్పనకు విరుద్ధం.
+\end{ex}
+}{}
+
+\end{document}

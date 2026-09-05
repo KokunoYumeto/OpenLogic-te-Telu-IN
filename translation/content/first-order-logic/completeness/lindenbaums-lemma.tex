@@ -1,0 +1,107 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: lindenbaums-lemma
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{com}{lin}}
+      {\olfileid{pl}{com}{lin}}
+
+\olsection{లిండెన్‌బామ్ ఉపసిద్ధాంతం}
+
+\begin{explain}
+ఏ అవైరుధ్య !!{sentence}s సమితైనా కేవలం అవైరుధ్యమైనదే కాక
+!!{complete} కూడా అయిన ఏదో ఒక వాక్యాల సమితిలో ఇమిడి ఉంటుందని చూపే
+ఉపసిద్ధాంతాన్ని ఇప్పుడు నిరూపిస్తాం. సమితి అవైరుధ్యంగానే ఉండటానికి ప్రతి
+అడుగులో హామీ ఇస్తూ, ఒకసారి ఒక !!{sentence}ను చేర్చడం ద్వారా నిరూపణ
+పనిచేస్తుంది. ప్రతి~$!A$కు ఏదో ఒక దశలో $!A$ లేదా $\lnot !A$
+చేరేలా దీన్ని చేస్తాం. అప్పుడు ఆ నిర్మాణంలోని అన్ని దశల సమ్మేళనంలో
+$!A$ లేదా దాని నిషేధం~$\lnot !A$ ఉంటుంది; అందువల్ల అది సంపూర్ణం.
+ప్రతి దశలోనూ వైరుధ్యాన్ని ప్రవేశపెట్టకుండా చూసుకుంటాం కనుక అది
+అవైరుధ్యమైనది కూడా.
+\end{explain}
+
+\begin{lem}[లిండెన్‌బామ్ ఉపసిద్ధాంతం]
+\ollabel{lem:lindenbaum} భాష~$\Lang{L}$లోని ప్రతి అవైరుధ్య
+సమితి~$\Gamma$ను !!a{complete}, అవైరుధ్య సమితి~$\Gamma^*$గా
+విస్తరించవచ్చు.
+\end{lem}
+
+\begin{proof}
+$\Gamma$ అవైరుధ్యమని అనుకుందాం. $\Lang L$లోని అన్ని !!{sentence}sకు
+$!A_0$, $!A_1$, \dots{} అనే ఒక లెక్కింపు ఉండనివ్వండి. $\Gamma_0 =
+\Gamma$గా, ఇంకా
+\[
+\Gamma_{n+1} =
+\begin{cases}
+\Gamma_n \cup \{ !A_n \} & \textrm{if $\Gamma_n \cup \{!A_n\}$ is
+  consistent;} \\
+\Gamma_n \cup \{ \lnot !A_n \} & \textrm{otherwise.}
+\end{cases}
+\]
+గా నిర్వచించండి. $\Gamma^* = \bigcup_{n \geq 0} \Gamma_n$గా ఉంచండి.
+
+ప్రతి~$\Gamma_n$ అవైరుధ్యమైనది: నిర్వచనం ప్రకారం $\Gamma_0$
+అవైరుధ్యమైనది. $\Gamma_{n+1} = \Gamma_n \cup \{!A_n\}$ అయితే,
+చివరిది అవైరుధ్యమైనందువల్లే అలా ఉంటుంది. అది అవైరుధ్యం కాకపోతే,
+$\Gamma_{n+1} = \Gamma_n \cup \{\lnot !A_n\}$. $\Gamma_n \cup
+\{\lnot !A_n\}$ అవైరుధ్యమని నిర్ధారించాలి. అది కూడా అవైరుధ్యం కాదని
+అనుకుందాం. అప్పుడు $\Gamma_n \cup \{!A_n\}$, $\Gamma_n \cup
+\{\lnot !A_n\}$
+\emph{రెండూ} వైరుధ్యభరితమైనవి. కింది ఫలితం ప్రకారం ఇది~$\Gamma_n$
+వైరుధ్యభరితమని అర్థం:
+\iftag{FOL}{%
+  \tagrefs{prfAX/{fol:axd:prv:prop:provability-exhaustive},
+    prfSC/{fol:seq:prv:prop:provability-exhaustive},
+    prfND/{fol:ntd:prv:prop:provability-exhaustive},
+    prfTab/{fol:tab:prv:prop:provability-exhaustive}}}{%
+  \tagrefs{prfAX/{pl:axd:prv:prop:provability-exhaustive},
+    prfSC/{pl:seq:prv:prop:provability-exhaustive},
+    prfND/{pl:ntd:prv:prop:provability-exhaustive},
+    prfTab/{pl:tab:prv:prop:provability-exhaustive}}};
+ఇది ఆగమన పరికల్పనకు విరుద్ధం.
+
+ప్రతి~$n$కు, ప్రతి $i < n$కు $\Gamma_i \subseteq \Gamma_n$. ఇది
+~$n$పై సరళమైన ఆగమనం ద్వారా వస్తుంది. $n=0$ అయినప్పుడు $i < 0$
+అయ్యేదేమీ లేదు; కాబట్టి వాదన స్వయంచాలకంగా నిజం. ఆగమన అడుగులో అది
+~$n$కు నిజమని అనుకుందాం. $i < n+1$ అయితే $\Gamma_i \subseteq
+\Gamma_{n+1}$ అని చూపుతాం. నిర్మాణం ప్రకారం $\Gamma_{n+1} = \Gamma_n
+\cup \{!A_n\}$ లేదా $= \Gamma_n \cup \{\lnot !A_n\}$. కనుక
+$\Gamma_n \subseteq \Gamma_{n+1}$. $i < n+1$ అయితే, ఆగమన పరికల్పన
+ప్రకారం ($i < n$ అయితే) $\Gamma_i \subseteq \Gamma_n$; లేదా ($i = n$
+అయితే) $\Gamma_n \subseteq \Gamma_n$ అనే తక్షణ వాస్తవం వర్తిస్తుంది.
+$\subseteq$ యొక్క సంక్రామకత్వం ద్వారా $\Gamma_i \subseteq
+\Gamma_{n+1}$ వస్తుంది.
+
+దీని నుంచి $\Gamma^*$ అవైరుధ్యమని అనుగమిస్తుంది. కారణం ఇది: పరిమిత
+$\Gamma' \subseteq \Gamma^*$ను తీసుకోండి. ప్రతి $!B \in \Gamma'$
+ఏదో ఒక~$i$కు~$\Gamma_i$లో కూడా ఉంటుంది. వాటిలో అతిపెద్దదాన్ని $n$
+అందాం. $i \le n$ అయితే $\Gamma_i \subseteq \Gamma_n$ కనుక, ప్రతి
+$!B \in \Gamma'$కు $!B \in \Gamma_n$ కూడా; అంటే $\Gamma' \subseteq
+\Gamma_n$, పైగా $\Gamma_n$ అవైరుధ్యమైనది.
+\sourcecorrection{OLTECOM-009}{ఆంగ్ల మూలం ఇక్కడ ఎడమ సభ్యమే లేని
+$\in \Gamma_n$ను రాసింది. వాక్యం పరిధిలో ఉన్న $!B$ను పునరుద్ధరించి
+పూర్తి సభ్యత్వ ప్రకటనగా రాశాం.} అందువల్ల ప్రతి పరిమిత
+ఉపసమితి $\Gamma' \subseteq \Gamma^*$ అవైరుధ్యమైనది. కింది ఫలితం
+ప్రకారం $\Gamma^*$ అవైరుధ్యమైనది:
+\iftag{FOL}{%
+  \tagrefs{prfAX/{fol:axd:ptn:prop:proves-compact},
+    prfSC/{fol:seq:ptn:prop:proves-compact},
+    prfND/{fol:ntd:ptn:prop:proves-compact},
+    prfTab/{fol:tab:ptn:prop:proves-compact}}}{%
+  \tagrefs{prfAX/{pl:axd:ptn:prop:proves-compact},
+    prfSC/{pl:seq:ptn:prop:proves-compact},
+    prfND/{pl:ntd:ptn:prop:proves-compact},
+    prfTab/{pl:tab:ptn:prop:proves-compact}}}.
+
+$\Frm[L]$లోని ప్రతి !!{sentence} $\Gamma^*$ను నిర్వచించడానికి
+ఉపయోగించిన జాబితాలో కనిపిస్తుంది. $!A_n \notin \Gamma^*$ అయితే,
+$\Gamma_n \cup \{!A_n\}$ వైరుధ్యభరితమై ఉండటమే దానికి కారణం. కానీ
+అప్పుడు $\lnot !A_n \in \Gamma^*$; అందువల్ల $\Gamma^*$
+!!{complete}.
+\end{proof}
+
+\end{document}

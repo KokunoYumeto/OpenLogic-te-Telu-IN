@@ -1,0 +1,205 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{com}{ide}
+\olsection{తాదాత్మ్యం}
+
+\begin{explain}
+ముందరి విభాగంలో ఇచ్చిన పద నమూనా నిర్మాణం, $\eq$ను కలిగి లేని
+సమితులు~$\Gamma$కు ప్రథమక్రమ తర్కపు సంపూర్ణతను స్థాపించడానికి
+సరిపోతుంది. $\eq$ను కలిగి లేని ప్రతి $!A \in \Gamma^*$ను (అందువల్ల
+ప్రతి $!A \in \Gamma$ను కూడా) పద నమూనా సంతృప్తిపరుస్తుంది. కానీ
+$\eq$ ఉంటే అది పనిచేయదు. ఎందుకంటే అప్పుడు~$\Gamma^*$లో
+!!a{sentence}~$\eq[t][t']$ ఉండవచ్చు; పద నమూనాలో ఏ పదం విలువైనా ఆ
+పదమే. అందువల్ల $t$, $t'$ వేర్వేరు పదాలైతే, పద నమూనాలో వాటి విలువలు
+వరుసగా $t$, $t'$ వేర్వేరుగా ఉంటాయి; కనుక $\eq[t][t']$ అసత్యం.
+అయితే ``వర్గీకరణ'' అనే నిర్మాణం ద్వారా దీన్ని సరిచేయవచ్చు.
+\end{explain}
+
+\begin{defn}
+  $\Gamma^*$ అనేది~$\Lang L$లోని వాక్యాల అవైరుధ్య, !!{complete}
+  సమితి అనుకుందాం. $\Lang L$లోని సంవృత పదాల సమితిపై $\approx$
+  సంబంధాన్ని ఇలా నిర్వచిస్తాం:
+  \[
+  t \approx t' \text{\quad iff \quad} \eq[t][t'] \in \Gamma^*
+  \]
+\end{defn}
+
+\begin{prop}
+\ollabel{prop:approx-equiv}
+$\approx$ సంబంధానికి కింది ధర్మాలు ఉన్నాయి:
+\begin{enumerate}
+\item $\approx$ స్వావర్తనమైనది.
+\item $\approx$ సౌష్ఠవమైనది.
+\item $\approx$ సంక్రామకమైనది.
+\item $t \approx t'$, $f$ ఒక !!a{function}, ఇంకా $t_1$, \dots,
+  $t_{i-1}$, $t_{i+1}$, \dots, $t_n$లు సంవృత పదాలైతే,
+\[
+\Atom{f}{t_1,\dots, t_{i-1}, t, t_{i+1}, \dots, t_n} \approx
+\Atom{f}{t_1,\dots, t_{i-1}, t', t_{i+1}, \dots, t_n}.
+\]
+\item $t \approx t'$, $R$ ఒక !!a{predicate}, ఇంకా $t_1$, \dots,
+  $t_{i-1}$, $t_{i+1}$, \dots, $t_n$లు సంవృత పదాలైతే,
+\begin{multline*}
+\Atom{R}{t_1,\dots, t_{i-1}, t, t_{i+1}, \dots, t_n} \in \Gamma^* \text{ iff } \\
+\Atom{R}{t_1,\dots, t_{i-1}, t', t_{i+1}, \dots, t_n} \in \Gamma^*.
+\end{multline*}
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+$\Gamma^*$ అవైరుధ్యమైనది, !!{complete} కనుక $\eq[t][t'] \in
+\Gamma^*$ అయినప్పుడు, అప్పుడు మాత్రమే $\Gamma^* \Proves \eq[t][t']$.
+అందువల్ల కింది వాటిని చూపితే చాలు:
+\begin{enumerate}
+\item అన్ని సంవృత పదాలు~$t$కు $\Gamma^* \Proves \eq[t][t]$.
+\item $\Gamma^* \Proves \eq[t][t']$ అయితే $\Gamma^* \Proves
+  \eq[t'][t]$.
+\item $\Gamma^* \Proves \eq[t][t']$, $\Gamma^* \Proves
+  \eq[t'][t'']$ అయితే $\Gamma^* \Proves \eq[t][t'']$.
+\item $\Gamma^* \Proves \eq[t][t']$ అయితే,
+\[
+\Gamma^* \Proves
+\eq[\Atom{f}{t_1,\dots,t_{i-1},t,t_{i+1},\dots,t_n}][\Atom{f}{t_1,\dots,t_{i-1},t',t_{i+1},\dots,t_n}]
+\]
+ప్రతి $n$-స్థాన !!{function}~$f$కు, సంవృత పదాలు $t_1$, \dots,
+$t_{i-1}$, $t_{i+1}$, \dots,~$t_n$కు.
+\sourcecorrection{OLTECOM-007}{ఆంగ్ల మూలంలో మొదటి ప్రమేయ పదంలో
+$t_{i+1}$ తరువాత వరుసగా రెండు కామాలు ఉన్నాయి. పదాల జాబితాకు కావలసిన
+ఒక్క కామాను మాత్రమే ఉంచాం.}
+\item $\Gamma^* \Proves \eq[t][t']$, ఇంకా
+$\Gamma^* \Proves
+\Atom{R}{t_1,\dots,t_{i-1},t,t_{i+1},\dots,t_n}$ అయితే,
+$\Gamma^* \Proves \Atom{R}{t_1,\dots,t_{i-1},t',t_{i+1},\dots,t_n}$;
+ఇది ప్రతి $n$-స్థాన !!{predicate}~$R$కు, సంవృత పదాలు $t_1$, \dots,
+$t_{i-1}$, $t_{i+1}$, \dots,~$t_n$కు వర్తిస్తుంది.
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+\olref[fol][com][ide]{prop:approx-equiv} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+
+\begin{defn}
+$\Gamma^*$ అనేది భాష~$\Lang L$లోని అవైరుధ్య, !!{complete} సమితి,
+$t$ ఒక సంవృత పదం, $\approx$ ముందరి నిర్వచనంలో ఉన్నట్లే అనుకుందాం.
+అప్పుడు:
+\[
+\equivrep{t}{\approx} = \Setabs{t'}{t'\in \Trm[L], t \approx t'}
+\]
+ఇంకా $\equivclass{\Trm[L]}{\approx} = \Setabs{\equivrep{t}{\approx}}{t \in \Trm[L]}$.
+\end{defn}
+
+\begin{defn}
+\ollabel{defn:term-model-factor}
+$\Struct M = \Struct M(\Gamma^*)$ అనేది \olref[mod]{defn:termmodel}
+లోని~$\Gamma^*$ పద నమూనా అనుకుందాం. అప్పుడు
+$\Struct{\equivclass{M}{\approx}}$ కింది !!{structure}:
+\begin{enumerate}
+\item $\Domain{\equivclass{M}{\approx}} = \equivclass{\Trm[L]}{\approx}$.
+\item $\Assign{c}{\equivclass{M}{\approx}} = \equivrep{c}{\approx}$
+\item $\Assign{f}{\equivclass{M}{\approx}}(\equivrep{t_1}{\approx}, \dots,
+  \equivrep{t_n}{\approx}) = \equivrep{\Atom{f}{t_1,\dots, t_n}}{\approx}$
+\item $\tuple{\equivrep{t_1}{\approx}, \dots, \equivrep{t_n}{\approx}} \in
+  \Assign{R}{\equivclass{M}{\approx}}$ అయినప్పుడు, అప్పుడు మాత్రమే
+  $\Sat{M}{\Atom{R}{t_1,\dots, t_n}}$; అంటే, అప్పుడు మాత్రమే
+  $\Atom{R}{t_1,\dots, t_n} \in \Gamma^*$.
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+$\equivclass{\Trm[L]}{\approx}$లోని మూలకాల కోసం
+$\Assign{f}{\equivclass{M}{\approx}}$, $\Assign{R}{\equivclass{M}{\approx}}$
+లను $\equivrep{t}{\approx}$ అని సూచిస్తూ, అంటే
+$t \in \equivrep{t}{\approx}$ అనే \emph{ప్రతినిధులు} ద్వారా
+నిర్వచించామని గమనించండి. ఈ నిర్వచనాలు ఆ ప్రతినిధుల ఎంపికపై ఆధారపడవని
+నిర్ధారించాలి; అంటే, అవే తుల్యతా వర్గాలను నిర్ణయించే మరొక ఎంపిక~$t'$
+ఉంటే ($\equivrep{t}{\approx} = \equivrep{t'}{\approx}$), నిర్వచనాలు
+అదే ఫలితాన్ని ఇవ్వాలి. ఉదాహరణకు, $R$ ఒక ఏకస్థాన !!{predicate} అయితే,
+నిర్వచనపు చివరి ఖండం ప్రకారం $\equivrep{t}{\approx} \in
+\Assign{R}{\equivclass{M}{\approx}}$ అయినప్పుడు, అప్పుడు మాత్రమే
+$\Sat{M}{\Atom{R}{t}}$. $t \approx t'$ అయ్యే మరొక పదం~$t'$కు
+$\Sat/{M}{\Atom{R}{t}}$ అయితే, నిర్వచనం $\equivrep{t'}{\approx}
+\notin \Assign{R}{\equivclass{M}{\approx}}$ అని కోరుతుంది. $t \approx
+t'$ అయితే $\equivrep{t}{\approx} = \equivrep{t'}{\approx}$; కానీ
+$\equivrep{t}{\approx} \in \Assign{R}{\equivclass{M}{\approx}}$,
+$\equivrep{t}{\approx} \notin \Assign{R}{\equivclass{M}{\approx}}$
+రెండూ ఉండలేవు. అయితే ఇది జరగదని \olref{prop:approx-equiv} హామీ
+ఇస్తుంది.
+\end{explain}
+
+\begin{prop}
+$\Struct{\equivclass{M}{\approx}}$ సునిర్వచితమైనది. అంటే, $t_1$,
+  \dots, $t_n$, $t_1'$, \dots, $t_n'$లు సంవృత పదాలు, ఇంకా
+  $t_i \approx t_i'$ అయితే,
+\begin{enumerate}
+\item $\equivrep{\Atom{f}{t_1,\dots, t_n}}{\approx} =
+    \equivrep{\Atom{f}{t_1',\dots, t_n'}}{\approx}$; అంటే,
+  \[
+  \Atom{f}{t_1,\dots, t_n} \approx \Atom{f}{t_1',\dots, t_n'}
+  \]
+  మరియు
+\item $\Sat{M}{\Atom{R}{t_1,\dots, t_n}}$ అయినప్పుడు, అప్పుడు మాత్రమే
+  $\Sat{M}{\Atom{R}{t_1',\dots, t_n'}}$; అంటే,
+  \[
+    \Atom{R}{t_1,\dots, t_n} \in \Gamma^* \text{ iff }
+    \Atom{R}{t_1',\dots, t_n'} \in \Gamma^*.
+  \]
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+~$n$పై ఆగమనం, \olref{prop:approx-equiv} ద్వారా అనుగమిస్తుంది.
+\end{proof}
+
+పద నమూనా సందర్భంలోలాగే, సత్య ఉపసిద్ధాంతాన్ని నిరూపించడానికి ముందు
+కింది ఉపసిద్ధాంతం అవసరం.
+
+\begin{lem}
+\ollabel{lem:val-in-termmodel-factored} $\Struct M = \Struct M
+ (\Gamma^*)$ అనుకుందాం. అప్పుడు $\Value{t}{\equivclass{M}{\approx}} = \equivrep{t}
+ {\approx}$.
+\end{lem}
+\begin{proof}
+నిరూపణ \olref[mod]{lem:val-in-termmodel} నిరూపణను పోలి ఉంటుంది.
+\end{proof}
+
+\begin{prob}
+\olref[fol][com][ide]{lem:val-in-termmodel-factored} నిరూపణను పూర్తి
+చేయండి.
+\end{prob}
+
+\begin{lem}
+\ollabel{lem:truth}
+అన్ని వాక్యాలు~$!A$కు $\Sat{\equivclass{M}{\approx}}{!A}$ అయినప్పుడు,
+అప్పుడు మాత్రమే $!A \in \Gamma^*$.
+\end{lem}
+
+\begin{proof}
+\olref[mod]{lem:truth} నిరూపణలోలాగే~$!A$పై ఆగమనం ద్వారా. $!A \ident
+\eq[t][t']$ అయిన సందర్భం మాత్రమే అదనపు శ్రద్ధ కోరుతుంది.
+\begin{align*}
+\Sat{\equivclass{M}{\approx}}{\eq[t][t']} & \text{ iff } \equivrep{t}{\approx} = \equivrep{t'}{\approx}
+\text{ (by definition of $\Struct{\equivclass{M}{\approx}}$)}\\
+& \text{ iff } t \approx t' \text{ (by definition of $\equivrep{t}{\approx}$)}\\
+& \text{ iff } \eq[t][t'] \in \Gamma^* \text{ (by definition of $\approx$).}
+\end{align*}
+\end{proof}
+
+\begin{digress}
+$\Struct{M(\Gamma^*)}$ ఎల్లప్పుడూ !!{enumerable}, అనంతమైనదే అయినా,
+$\Struct{\equivclass{M}{\approx}}$ పరిమితంగా ఉండవచ్చు; ఎందుకంటే
+$\equivrep{t}{\approx}$ వర్గాలు పరిమిత సంఖ్యలో మాత్రమే ఉన్నాయని
+తేలవచ్చు. ఇది ఊహించదగినదే; $\Gamma$లో, వాటిని సత్యం చేసే ఏ
+!!{structure} అయినా పరిమితంగా ఉండాలని కోరే !!{sentence}s ఉండవచ్చు.
+ఉదాహరణకు, $\lforall[x][\lforall[y][x = y]]$ ఒక అవైరుధ్య
+!!{sentence}; కానీ సరిగ్గా ఒక !!{element} మాత్రమే గల !!a{domain} ఉన్న
+!!{structure}sలోనే అది సంతృప్తిపరచబడుతుంది.
+\end{digress}
+
+\end{document}

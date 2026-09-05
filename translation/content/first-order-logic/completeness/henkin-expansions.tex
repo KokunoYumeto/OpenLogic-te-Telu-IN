@@ -1,0 +1,223 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: henkin-expansion
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{com}{hen}
+
+\olsection{హెన్కిన్ విస్తరణ}
+
+\begin{explain}
+సంపూర్ణతా సిద్ధాంతాన్ని నిరూపించడంలో ఒక సవాలు ఏమిటంటే, సంపూర్ణ
+అవైరుధ్య సమితి~$\Gamma$ నుంచి మనం నిర్మించే నమూనా, $\Gamma$లోని అన్ని
+పరిమాణీకృత !!{formula}sను సత్యం చేయాలి. దీనికి హామీ ఇవ్వడానికి లియాన్
+హెన్కిన్ ప్రతిపాదించిన ఒక ఉపాయాన్ని ఉపయోగిస్తాం. సారాంశంగా, అనంత
+సంఖ్యలో !!{constant}sను చేర్చి భాషను విస్తరించడం, ఒక స్వేచ్ఛా
+!!{variable} గల ప్రతి !!{formula}~$!A(x)$కు
+\iftag{prvEx}
+      {$\lexists[x][!A(x)] \lif !A(c)$}
+      {$\lnot\lforall[x][!A(x)] \lif \lnot !A(c)$}
+రూపంలోని ఒక సూత్రాన్ని చేర్చడం ఈ ఉపాయం; ఇక్కడ $c$ కొత్త
+!!{constant}sలో ఒకటి. $\Gamma$ను సంతృప్తిపరచే !!{structure}ను మనం
+నిర్మించినప్పుడు, కొత్త స్థిరాంకాల్లో ప్రతి
+\iftag{prvEx}
+{సత్యమైన అస్తిత్వ వాక్యానికి ఒక సాక్షి}
+{అసత్యమైన సార్వత్రిక వాక్యానికి ఒక ప్రతిదృష్టాంతం}
+ఉండటానికి ఇది హామీ ఇస్తుంది.
+\end{explain}
+
+\begin{prop}
+\ollabel{prop:lang-exp}
+$\Lang L$లో~$\Gamma$ అవైరుధ్యమై ఉండి, కొత్త !!{constant}s యొక్క ఒక
+!!a{denumerable} సమితి $\Obj d_0$, $\Obj d_1$, \dots ను~$\Lang L$కు
+చేర్చి $\Lang L'$ను పొందితే, $\Lang L'$లో కూడా~$\Gamma$
+అవైరుధ్యంగానే ఉంటుంది.
+\end{prop}
+
+\begin{defn}[సంతృప్తీకృత సమితి]
+ఒక స్వేచ్ఛా !!{variable}~$x$ గల ప్రతి !!{formula}~$!A(x) \in
+\Frm[L]$కు, కింది షరతును నెరవేర్చే !!a{constant}~$c \in \Lang{L}$
+ఉంటే, భాష~$\Lang {L}$లోని !!{formula}s సమితి~$\Gamma$ను
+\emph{సంతృప్తీకృతమైనది} అంటాం:
+\iftag{prvEx}
+      {$\lexists[x][!A(x)] \lif !A(c) \in \Gamma$}
+      {$\lnot\lforall[x][!A(x)] \lif \lnot !A(c) \in \Gamma$}.
+\end{defn}
+
+తరువాతి సిద్ధాంతపు నిరూపణలో కింది నిర్వచనాన్ని ఉపయోగిస్తాం.
+
+\begin{defn}
+\ollabel{defn:henkin-exp}
+$\Lang L'$ అనేది \olref{prop:lang-exp}లో ఉన్నట్లే ఉండనివ్వండి.
+ఒక చరరాశి ($x_i$) స్వేచ్ఛగా సంభవించే~$\Lang L'$లోని అన్ని
+!!{formula}s~$!A_i(x_i)$కు $!A_0(x_0)$, $!A_1(x_1)$, \dots అనే ఒక
+లెక్కింపును స్థిరపరచండి. !!{sentence}s~$!D_n$ను~$n$పై ఆగమనంతో
+నిర్వచిస్తాం.
+
+$!A_0(x_0)$లో సంభవించని, మనం~$\Lang{L}$కు చేర్చిన $\Obj d_i$లలో
+మొదటి !!{constant}ను $c_0$గా తీసుకోండి. $!D_0$, \dots,~$!D_{n-1}$
+ఇప్పటికే నిర్వచించబడ్డాయని అనుకొని, $!D_0$, \dots,~$!D_{n-1}$లోనూ,
+$!A_n(x_n)$లోనూ సంభవించని కొత్త !!{constant}s~$\Obj d_i$లో మొదటిదాన్ని
+$c_n$గా తీసుకోండి.
+
+ఇప్పుడు $!D_{n}$ను కింది !!{formula}గా తీసుకోండి:
+\iftag{prvEx}
+{$\lexists[x_{n}][!A_{n}(x_{n})] \lif
+  !A_{n}(c_{n})$}{$\lnot\lforall[x_{n}][!A_{n}(x_{n})] \lif \lnot
+  !A_{n}(c_{n})$}.
+\end{defn}
+
+\begin{lem}
+\ollabel{lem:henkin}
+ప్రతి అవైరుధ్య సమితి~$\Gamma$ను ఒక సంతృప్తీకృత అవైరుధ్య
+సమితి~$\Gamma'$గా విస్తరించవచ్చు.
+\end{lem}
+
+\begin{proof}
+భాష~$\Lang{L}$లోని అవైరుధ్య వాక్యాల సమితి~$\Gamma$ ఇచ్చారని
+అనుకుందాం. కొత్త !!{constant}s యొక్క ఒక !!a{denumerable} సమితిని
+చేర్చి భాషను~$\Lang{L'}$గా విస్తరించండి. \olref{prop:lang-exp}
+ప్రకారం మరింత విస్తృతమైన ఈ భాషలోనూ~$\Gamma$ అవైరుధ్యంగానే ఉంటుంది.
+ఇంకా, $!D_i$లు \olref{defn:henkin-exp}లో ఉన్నట్లే ఉండనివ్వండి. ఇలా
+నిర్వచించండి:
+\begin{align*}
+\Gamma_0 & = \Gamma \\
+\Gamma_{n+1} & = \Gamma_n \cup \{!D_n \}
+\end{align*}
+అంటే, $\Gamma_{n+1} = \Gamma \cup \{ !D_0, \dots, !D_n \}$; ఇంకా
+$\Gamma' = \bigcup_{n} \Gamma_n$గా ఉంచండి. $\Gamma'$ స్పష్టంగా
+సంతృప్తీకృతమైనది.
+
+$\Gamma'$ వైరుధ్యభరితమైతే, ఏదో ఒక~$n$కు $\Gamma_n$
+వైరుధ్యభరితమవుతుంది (ఎందుకో వివరించడం అభ్యాసం). కాబట్టి $\Gamma'$
+అవైరుధ్యమని చూపడానికి, ప్రతి సమితి~$\Gamma_n$ అవైరుధ్యమని~$n$పై
+ఆగమనంతో చూపితే చాలు.
+
+ఆగమన ఆధారం $\Gamma_0 = \Gamma$ అవైరుధ్యమనే వాదనే; ఇది సిద్ధాంతపు
+పరికల్పన. ఆగమన అడుగులో $\Gamma_{n}$ అవైరుధ్యమని, కానీ
+$\Gamma_{n+1} = \Gamma_n \cup \{!D_n\}$ వైరుధ్యభరితమని అనుకుందాం.
+$!D_n$ అనేది
+\iftag{prvEx}
+{$\lexists[x_{n}][!A_{n}(x_n)] \lif !A_{n}(c_{n})$}
+{$\lnot\lforall[x_{n}][!A_{n}(x_n)] \lif \lnot !A_{n}(c_{n})$}
+అని గుర్తుంచుకోండి; ఇక్కడ $!A_n(x_n)$ అనేది స్వేచ్ఛగా ఉన్నది
+$x_n$ మాత్రమే అయిన~$\Lang{L'}$లోని !!a{formula}. మనం~$c_n$ను
+ఎంచుకున్న విధానం వల్ల (\olref{defn:henkin-exp} చూడండి), $c_n$ అనేది
+$!A_n(x_n)$లోనూ, $\Gamma_n$లోనూ సంభవించదు.
+
+$\Gamma_n \cup \{!D_n\}$ వైరుధ్యభరితమైతే $\Gamma_n \Proves \lnot
+!D_n$; అందువల్ల కింది రెండూ వస్తాయి:
+\iftag{prvEx}{
+\[
+\Gamma_n \Proves \lexists[x_n][!A_n(x_n)]
+\qquad
+\Gamma_n \Proves \lnot !A_n(c_n)
+\]}{
+\[
+\Gamma_n \Proves \lnot\lforall[x_n][!A_n(x_n)]
+\qquad
+\Gamma_n \Proves !A_n(c_n)
+\]}
+$c_n$ అనేది $\Gamma_n$లోనూ, $!A_n(x_n)$లోనూ సంభవించదు కనుక,
+\tagrefs{prfAX/{fol:axd:qpr:thm:strong-generalization},prfSC/{fol:seq:qpr:thm:strong-generalization},prfND/{fol:ntd:qpr:thm:strong-generalization},prfTab/{fol:tab:qpr:thm:strong-generalization}}
+వర్తిస్తుంది. \iftag{prvEx}
+{$\Gamma_n \Proves \lnot !A_n(c_n)$}
+{$\Gamma_n \Proves !A_n(c_n)$}
+నుంచి మనకు
+\iftag{prvEx}
+{$\Gamma_n \Proves \lforall[x_n][\lnot !A_n(x_n)]$}
+{$\Gamma_n \Proves \lforall[x_n][!A_n(x_n)]$}
+వస్తుంది. కనుక కింది రెండూ మనకు ఉన్నాయి:
+\iftag{prvEx}
+{$\Gamma_n \Proves \lexists[x_n][!A_n(x_n)]$ మరియు
+$\Gamma_n \Proves \lforall[x_n][\lnot !A_n(x_n)]$}
+{$\Gamma_n \Proves \lnot\lforall[x_n][!A_n(x_n)]$ మరియు
+$\Gamma_n \Proves \lforall[x_n][!A_n(x_n)]$}.
+కాబట్టి $\Gamma_n$ స్వయంగా వైరుధ్యభరితమైనది.
+\iftag{prvEx}
+{(ఇది గమనించండి:
+\iftag{prvAll}
+{$\lforall[x_n][\lnot !A_n(x_n)] \Proves
+  \lnot\lexists[x_n][!A_n(x_n)]$}
+{$\lforall[x_n][\lnot !A_n(x_n)]$ అనేది
+  $\lnot\lexists[x_n][\lnot\lnot !A_n(x_n)]$గా నిర్వచించబడింది;
+  $\lnot\lexists[x_n][\lnot\lnot !A_n(x_n)] \Proves
+  \lnot\lexists[x_n][!A_n(x_n)]$}.)
+\sourcecorrection{OLTECOM-002}{ఆంగ్ల మూలంలోని ఈ నిర్వచన-స్మరణలో
+$\lforall[x_n][\lnot !A_n]$ అని చరరాశి ఆర్గ్యుమెంటును విడిచిపెట్టింది;
+చుట్టూ ఉన్న మూడు సూత్రాలు, నిర్వచనం కోరినట్లుగా ఇక్కడ
+$!A_n(x_n)$ను పునరుద్ధరించాం.}}{}
+ఇది వైరుధ్యం: $\Gamma_n$ అవైరుధ్యమని అనుకున్నాం. అందువల్ల
+$\Gamma_n \cup \{ !D_n\}$ అవైరుధ్యమైనది.
+\end{proof}
+
+\begin{explain}
+సంతృప్తీకృతమైన \emph{సంపూర్ణ}, అవైరుధ్య సమితులకు కింది ధర్మం ఉందని
+ఇప్పుడు చూపుతాం: \iftag{prvAll}{దానిలో ఒక సార్వత్రికంగా పరిమాణీకృత
+  !!{sentence} ఉన్నప్పుడు, అప్పుడు మాత్రమే దాని అన్ని రూపాలు
+  ఉంటాయి}{}\iftag{defAll,defEx}{}{
+  మరియు }\iftag{prvAll}{దానిలో ఒక అస్తిత్వంగా పరిమాణీకృత
+  !!{sentence} ఉన్నప్పుడు, అప్పుడు మాత్రమే దాని రూపాల్లో కనీసం ఒకటి
+  ఉంటుంది}{}. సంపూర్ణ, అవైరుధ్య, సంతృప్తీకృత సమితి నుంచి మనం
+నిర్మించే !!{structure} దానిలోని అన్ని పరిమాణీకృత వాక్యాలను సత్యం
+చేస్తుందని చూపడానికి దీన్ని ఉపయోగిస్తాం.
+\end{explain}
+
+\begin{prop}\ollabel{prop:saturated-instances}
+$\Gamma$ సంపూర్ణమైనది, అవైరుధ్యమైనది, సంతృప్తీకృతమైనది అనుకుందాం.
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$\lexists[x][!A(x)] \in \Gamma$ అయినప్పుడు, అప్పుడు
+  మాత్రమే కనీసం ఒక సంవృత పదం~$t$కు $!A(t) \in \Gamma$.}{}
+\tagitem{prvAll}{$\lforall[x][!A(x)] \in \Gamma$ అయినప్పుడు, అప్పుడు
+  మాత్రమే అన్ని సంవృత పదాలు~$t$కు $!A(t) \in \Gamma$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{tagenumerate}{prvEx,prvAll}
+  \tagitem{prvEx}{%
+    \iftag{probEx}{అభ్యాసం.}{మొదట $\lexists[x][!A(x)] \in \Gamma$
+      అని అనుకుందాం. $\Gamma$ సంతృప్తీకృతమైనది కనుక, ఏదో ఒక
+      !!{constant}~$c$కు $(\lexists[x][!A(x)] \lif !A(c)) \in
+      \Gamma$. కింది ఫలితంలోని అంశం~(1), ఇంకా
+      \olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-prov-in} ప్రకారం
+      \tagrefs{prfAX/{fol:axd:ppr:prop:provability-lif},prfSC/{fol:seq:ppr:prop:provability-lif},prfND/{fol:ntd:ppr:prop:provability-lif},prfTab/{fol:tab:ppr:prop:provability-lif}},
+      $!A(c) \in \Gamma$.
+
+    మరో దిశలో సంతృప్తీకరణ అవసరం లేదు: $!A(t) \in \Gamma$ అని
+    అనుకుందాం. కింది ఫలితంలోని అంశం~(1) ప్రకారం $\Gamma \Proves
+    \lexists[x][!A(x)]$:
+      \tagrefs{prfAX/{fol:axd:qpr:prop:provability-quantifiers},prfSC/{fol:seq:qpr:prop:provability-quantifiers},prfND/{fol:ntd:qpr:prop:provability-quantifiers},prfTab/{fol:tab:qpr:prop:provability-quantifiers}}.
+    \olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-prov-in} ప్రకారం
+    $\lexists[x][!A(x)] \in \Gamma$.}}{}
+  \tagitem{prvAll}{%
+    \iftag{probAll}{అభ్యాసం.}{అన్ని సంవృత పదాలు~$t$కు $!A(t) \in
+      \Gamma$ అని అనుకుందాం. వైరుధ్యాన్ని పొందే ఉద్దేశంతో
+      $\lforall[x][!A(x)] \notin \Gamma$ అని అనుకుందాం. $\Gamma$
+      సంపూర్ణమైనది కనుక $\lnot\lforall[x][!A(x)] \in \Gamma$.
+      సంతృప్తీకరణ వల్ల, ఏదో ఒక !!{constant}~$c$కు
+      \iftag{prvEx}{$(\lexists[x][\lnot !A(x)] \lif \lnot !A(c)) \in
+        \Gamma$}{$(\lnot\lforall[x][!A(x)] \lif \lnot !A(c)) \in
+        \Gamma$}. పరికల్పన ప్రకారం, $c$ సంవృత పదం కనుక $!A(c) \in
+      \Gamma$. కానీ ఇది~$\Gamma$ను వైరుధ్యభరితం చేస్తుంది. (కింది
+      సమితి వైరుధ్యభరితమని చూపే !!{derivation}ను ఇవ్వడం అభ్యాసం:
+      \[
+      \lnot \lforall[x][!A(x)],
+      \iftag{prvEx}{\lexists[x][\lnot !A(x)] \lif \lnot
+        !A(c)}{\lnot\lforall[x][!A(x)] \lif \lnot
+        !A(c)}, !A(c)
+      \]
+      .)
+
+      తిరుగు దిశకు సంతృప్తీకరణ అవసరం లేదు: $\lforall[x][!A(x)] \in
+      \Gamma$ అని అనుకుందాం. కింది ఫలితంలోని అంశం~(2) ప్రకారం
+      $\Gamma \Proves !A(t)$:
+      \tagrefs{prfAX/{fol:axd:qpr:prop:provability-quantifiers},prfSC/{fol:seq:qpr:prop:provability-quantifiers},prfND/{fol:ntd:qpr:prop:provability-quantifiers},prfTab/{fol:tab:qpr:prop:provability-quantifiers}}.
+      \olref[ccs]{prop:ccs} ద్వారా $!A(t) \in \Gamma$ వస్తుంది.}}{}
+  \end{tagenumerate}
+\end{proof}
+
+\end{document}

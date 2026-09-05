@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 122 of 722 draft units**. This log contains 40 terminology/sense decisions and 73 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 134 of 722 draft units**. This log contains 41 terminology/sense decisions and 82 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -967,6 +967,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for cross-chapter consistency and broad proof/deduction register; high nomenclatural for axiom, axiom-instance and proof-theoretic headwords
 
 - Please double-check: Please double-check whether “స్వీకృతం / స్వీకృత రూపం / స్వీకృతాధారిత నిరూపణ / నిగమన నియమం / మోడస్ పోనెన్స్ / పరిమాణీకరణిక నియమం / నిరూప్యతా సంబంధం / నిరూపణ-సిద్ధాంత భావన / నిగమన సిద్ధాంతం” is idiomatic and technically standard for “axiom / axiom instance / axiomatic derivation / inference rule / modus ponens / quantifier rule / derivability relation / proof-theoretic notion / deduction theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T041 — complete set / saturated set / Henkin expansion / Lindenbaum's Lemma / term model / Truth Lemma / factoring / finitely satisfiable / Compactness Theorem / Lowenheim--Skolem Theorem / Skolem's Paradox
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: సంపూర్ణ సమితి / సంతృప్తీకృత సమితి / హెన్కిన్ విస్తరణ / లిండెన్‌బామ్ ఉపసిద్ధాంతం / పద నమూనా / సత్య ఉపసిద్ధాంతం / వర్గీకరణ / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ సిద్ధాంతం / లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతం / స్కోలెమ్ విరోధాభాసం
+
+- Exact implementation: OLP-0129; first-order-logic/completeness/complete-consistent-sets; content/first-order-logic/completeness/complete-consistent-sets.tex:19-22 ↔ translation/content/first-order-logic/completeness/complete-consistent-sets.tex:19-22 (OLP-0129-B007); printed/PDF page pending; OLP-0130; first-order-logic/completeness/henkin-expansions; content/first-order-logic/completeness/henkin-expansions.tex:11 ↔ translation/content/first-order-logic/completeness/henkin-expansions.tex:11 (OLP-0130-B005); printed/PDF page pending; OLP-0130; first-order-logic/completeness/henkin-expansions; content/first-order-logic/completeness/henkin-expansions.tex:39-46 ↔ translation/content/first-order-logic/completeness/henkin-expansions.tex:40-48 (OLP-0130-B008); printed/PDF page pending; OLP-0131; first-order-logic/completeness/lindenbaums-lemma; content/first-order-logic/completeness/lindenbaums-lemma.tex:13 ↔ translation/content/first-order-logic/completeness/lindenbaums-lemma.tex:13 (OLP-0131-B005); printed/PDF page pending; OLP-0132; first-order-logic/completeness/construction-of-model; content/first-order-logic/completeness/construction-of-model.tex:37-43 ↔ translation/content/first-order-logic/completeness/construction-of-model.tex:38-44 (OLP-0132-B007); printed/PDF page pending; OLP-0132; first-order-logic/completeness/construction-of-model; content/first-order-logic/completeness/construction-of-model.tex:163-166 ↔ translation/content/first-order-logic/completeness/construction-of-model.tex:174-178 (OLP-0132-B014); printed/PDF page pending; OLP-0133; first-order-logic/completeness/identity; content/first-order-logic/completeness/identity.tex:22-23 ↔ translation/content/first-order-logic/completeness/identity.tex:21 (OLP-0133-B005); printed/PDF page pending; OLP-0135; first-order-logic/completeness/compactness; content/first-order-logic/completeness/compactness.tex:29-31 ↔ translation/content/first-order-logic/completeness/compactness.tex:28-32 (OLP-0135-B007); printed/PDF page pending; OLP-0135; first-order-logic/completeness/compactness; content/first-order-logic/completeness/compactness.tex:13-18 ↔ translation/content/first-order-logic/completeness/compactness.tex:13-18 (OLP-0135-B005); printed/PDF page pending; OLP-0137; first-order-logic/completeness/downward-ls; content/first-order-logic/completeness/downward-ls.tex:10-15 ↔ translation/content/first-order-logic/completeness/downward-ls.tex:10-15 (OLP-0137-B004); printed/PDF page pending; OLP-0137; first-order-logic/completeness/downward-ls; content/first-order-logic/completeness/downward-ls.tex:48 ↔ translation/content/first-order-logic/completeness/downward-ls.tex:47 (OLP-0137-B010); printed/PDF page pending
+
+- Authorities actually checked: TE-P002, PDF 9, printed 35, Main paragraph, lower half; TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P002--P004 support broad logic, truth/falsity, reasoning, proof, induction, deduction and theorem exposition, but do not independently attest the completeness and model-theoretic taxonomy. The complete-set and saturation definitions, Henkin and Lindenbaum constructions, term-model and factored-model definitions, Truth Lemmas, completeness theorem and compactness arguments control the selected senses. Henkin, Lindenbaum, Lowenheim--Skolem and Skolem are explicit eponymic borrowings. The choices reuse TE-T017, TE-T020, TE-T033, TE-T034 and TE-T037 only within their recorded scopes.
+
+- Alternatives: descriptive Telugu completeness and model-theoretic headwords with eponymic names retained as explicit borrowings (chosen); leave the completeness taxonomy in English (not adopted); introduce unattested coined replacements for the eponymic names (not adopted); retain protected source-token spellings inside grammatical macros (chosen for source identity)
+
+- Uncertainty: Low for cross-chapter consistency and broad logic/proof register; high nomenclatural for the completeness and model-theoretic headwords
+
+- Please double-check: Please double-check whether “సంపూర్ణ సమితి / సంతృప్తీకృత సమితి / హెన్కిన్ విస్తరణ / లిండెన్‌బామ్ ఉపసిద్ధాంతం / పద నమూనా / సత్య ఉపసిద్ధాంతం / వర్గీకరణ / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ సిద్ధాంతం / లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతం / స్కోలెమ్ విరోధాభాసం” is idiomatic and technically standard for “complete set / saturated set / Henkin expansion / Lindenbaum's Lemma / term model / Truth Lemma / factoring / finitely satisfiable / Compactness Theorem / Lowenheim--Skolem Theorem / Skolem's Paradox” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -2719,3 +2743,219 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check that reflexive identity is claimed only for closed terms, matching the stated scope of ax:id1.
+
+## REV-OLTECOM-001 — OLTECOM-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: removed the contradictory atomic restriction so condition (b) ranges over every sentence, matching the controlling definition and construction; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0128; first-order-logic/completeness/outline; lines 66-80, condition (b) and its identification as completeness ↔ translation/content/first-order-logic/completeness/outline.tex:71 (OLP-0128-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTECOM-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: removed the contradictory atomic restriction so condition (b) ranges over every sentence, matching the controlling definition and construction; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that condition (b) ranges over every sentence, matching the complete-set definition rather than the source adjective atomic.
+
+## REV-OLTECOM-002 — OLTECOM-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored the argument x_n in A_n(x_n), matching the surrounding formulas and recalled definition; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0130; first-order-logic/completeness/henkin-expansions; lines 137-144, parenthetical universal-formula explanation ↔ translation/content/first-order-logic/completeness/henkin-expansions.tex:149 (OLP-0130-B017); printed/PDF page pending
+
+- Authorities actually checked: OLTECOM-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the argument x_n in A_n(x_n), matching the surrounding formulas and recalled definition; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the recalled universal formula retains the argument x_n in A_n(x_n), matching the surrounding Henkin formulas.
+
+## REV-OLTECOM-003 — OLTECOM-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restricted t to a closed term, matching the term-model domain and induction proof; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0132; first-order-logic/completeness/construction-of-model; lines 78-95, term-value lemma statement and proof ↔ translation/content/first-order-logic/completeness/construction-of-model.tex:84 (OLP-0132-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTECOM-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restricted t to a closed term, matching the term-model domain and induction proof; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the term-value lemma is explicitly restricted to closed terms, matching the term-model domain and proof.
+
+## REV-OLTECOM-004 — OLTECOM-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used B rather than A in the concluding universal membership formula, matching the induction-case header and preceding formulas; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0132; first-order-logic/completeness/construction-of-model; lines 239-247, universal induction case of the Truth Lemma ↔ translation/content/first-order-logic/completeness/construction-of-model.tex:267 (OLP-0132-B022); printed/PDF page pending
+
+- Authorities actually checked: OLTECOM-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used B rather than A in the concluding universal membership formula, matching the induction-case header and preceding formulas; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the universal Truth Lemma case concludes with forall x B(x), matching its case formula and preceding instances.
+
+## REV-OLTECOM-005 — OLTECOM-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored the closed-term qualification in both universal equivalences, matching the cited propositions and term-model domain; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0132; first-order-logic/completeness/construction-of-model; lines 242-246, universal term-model and saturation equivalences ↔ translation/content/first-order-logic/completeness/construction-of-model.tex:261 (OLP-0132-B022); printed/PDF page pending
+
+- Authorities actually checked: OLTECOM-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the closed-term qualification in both universal equivalences, matching the cited propositions and term-model domain; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that both universal-case equivalences quantify over closed terms, matching the cited propositions.
+
+## REV-OLTECOM-006 — OLTECOM-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored the closed-term qualification in both existential equivalences, matching the cited propositions and term-model domain; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0132; first-order-logic/completeness/construction-of-model; lines 249-257, existential term-model and saturation equivalences ↔ translation/content/first-order-logic/completeness/construction-of-model.tex:277 (OLP-0132-B023); printed/PDF page pending
+
+- Authorities actually checked: OLTECOM-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the closed-term qualification in both existential equivalences, matching the cited propositions and term-model domain; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that both existential-case equivalences require at least one closed term, matching the cited propositions.
+
+## REV-OLTECOM-007 — OLTECOM-007
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: removed the duplicate comma after t_{i+1}, leaving the single argument separator required by the parallel term; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0133; first-order-logic/completeness/identity; line 69, item (4) function-congruence formula ↔ translation/content/first-order-logic/completeness/identity.tex:72 (OLP-0133-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTECOM-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: removed the duplicate comma after t_{i+1}, leaving the single argument separator required by the parallel term; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that only the duplicate comma after t_(i+1) was removed from the function term and no argument changed.
+
+## REV-OLTECOM-008 — OLTECOM-008
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: typed Gamma as a set of sentences and A as one sentence, matching the finite-subset and entailment clauses; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0135; first-order-logic/completeness/compactness; line 35, theorem-variable introduction ↔ translation/content/first-order-logic/completeness/compactness.tex:38 (OLP-0135-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTECOM-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: typed Gamma as a set of sentences and A as one sentence, matching the finite-subset and entailment clauses; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that Gamma is typed as a set of sentences and A as one sentence in the Compactness Theorem statement.
+
+## REV-OLTECOM-009 — OLTECOM-009
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored !B as the missing left operand in the membership formula, matching the scoped sentence and the ensuing subset conclusion; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0131; first-order-logic/completeness/lindenbaums-lemma; lines 76-81, finite-subset argument ↔ translation/content/first-order-logic/completeness/lindenbaums-lemma.tex:85 (OLP-0131-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTECOM-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored !B as the missing left operand in the membership formula, matching the scoped sentence and the ensuing subset conclusion; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that B is restored as the left operand of membership in Gamma_n, matching the scoped sentence and ensuing subset conclusion.

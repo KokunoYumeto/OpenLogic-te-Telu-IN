@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **122 of 722 source units drafted**. This readable view contains all 113 decisions and 213 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **134 of 722 source units drafted**. This readable view contains all 123 decisions and 233 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -1136,6 +1136,42 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T040-OCC-006; OLP-0118; OLP-0118-B005; source upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:13-23 bytes 252-804 SHA-256 0afb9df4b5f0f5c1e892cf411d126f45acce94cfbdc9087e4bd37cb851cc370b; target translation/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:13-24 bytes 252-1482 SHA-256 c778f2e5483be61768f2962972cb261b72b0d4d6d1cc6a53cae6c0c78b6f89da; reader page pending.
   - te-Telu-IN-TE-T040-OCC-007; OLP-0121; OLP-0121-B006; source upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:14-17 bytes 307-492 SHA-256 22a6a04d9ab4298d762efd6bf2041fa9bf3f2d91c6803b744458812c232cdacc; target translation/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:14-17 bytes 335-758 SHA-256 eadfa5cd0b5a0edba1517e5fd233dd275b8051cda1c100018ac37e4f3a88662a; reader page pending.
   - te-Telu-IN-TE-T040-OCC-008; OLP-0119; OLP-0119-B011; source upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:49-51 bytes 1591-1726 SHA-256 ef122fcfc1a8c24e89cf5abe30efa11bcd0a1cc3ed9fca2426618e9174481780; target translation/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:48-50 bytes 2453-2660 SHA-256 a75383bfb9a91bd05b111e06c436544430fd3397b41604f850fd3cdd7ae067a8; reader page pending.
+
+## te-Telu-IN-TE-T041 — complete set / saturated set / Henkin expansion / Lindenbaum's Lemma / term model / Truth Lemma / factoring / finitely satisfiable / Compactness Theorem / Lowenheim--Skolem Theorem / Skolem's Paradox
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: సంపూర్ణ సమితి / సంతృప్తీకృత సమితి / హెన్కిన్ విస్తరణ / లిండెన్‌బామ్ ఉపసిద్ధాంతం / పద నమూనా / సత్య ఉపసిద్ధాంతం / వర్గీకరణ / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ సిద్ధాంతం / లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతం / స్కోలెమ్ విరోధాభాసం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “complete set / saturated set / Henkin expansion / Lindenbaum's Lemma / term model / Truth Lemma / factoring / finitely satisfiable / Compactness Theorem / Lowenheim--Skolem Theorem / Skolem's Paradox” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low for cross-chapter consistency and broad logic/proof register; high nomenclatural for the completeness and model-theoretic headwords
+
+- Rationale: TE-P002--P004 support broad logic, truth/falsity, reasoning, proof, induction, deduction and theorem exposition, but do not independently attest the completeness and model-theoretic taxonomy. The complete-set and saturation definitions, Henkin and Lindenbaum constructions, term-model and factored-model definitions, Truth Lemmas, completeness theorem and compactness arguments control the selected senses. Henkin, Lindenbaum, Lowenheim--Skolem and Skolem are explicit eponymic borrowings. The choices reuse TE-T017, TE-T020, TE-T033, TE-T034 and TE-T037 only within their recorded scopes.
+
+- Authorities checked: TE-C003:TE-P002 [checked_context_only], PDF page 9; printed page 35; Main paragraph, lower half; Logic and mathematical-statement usage; not evidence for a specific formal propositional-calculus term | TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P004 [checked_context_only], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation
+
+- Alternatives: leave the completeness taxonomy in English [rejected: not adopted] | introduce unattested coined replacements for the eponymic names [rejected: not adopted]
+
+- Review question: Please double-check whether “సంపూర్ణ సమితి / సంతృప్తీకృత సమితి / హెన్కిన్ విస్తరణ / లిండెన్‌బామ్ ఉపసిద్ధాంతం / పద నమూనా / సత్య ఉపసిద్ధాంతం / వర్గీకరణ / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ సిద్ధాంతం / లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతం / స్కోలెమ్ విరోధాభాసం” is idiomatic and technically standard for “complete set / saturated set / Henkin expansion / Lindenbaum's Lemma / term model / Truth Lemma / factoring / finitely satisfiable / Compactness Theorem / Lowenheim--Skolem Theorem / Skolem's Paradox” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T041-OCC-001; OLP-0129; OLP-0129-B007; source upstream/content/first-order-logic/completeness/complete-consistent-sets.tex:19-22 bytes 477-666 SHA-256 6473c646a48e854478ef1388de877eb61bcd8b912179347703f86b655de0ae4f; target translation/content/first-order-logic/completeness/complete-consistent-sets.tex:19-22 bytes 515-807 SHA-256 25d2435a8fe9d58f77781c0bf3b7a0829682364b527f7426966b4c5846efd431; reader page pending.
+  - te-Telu-IN-TE-T041-OCC-002; OLP-0130; OLP-0130-B005; source upstream/content/first-order-logic/completeness/henkin-expansions.tex:11 bytes 186-215 SHA-256 353b1ea300b6d916be92a5100dfa2e2f4cf9ad9f44e9506c96f028acea3b1ec8; target translation/content/first-order-logic/completeness/henkin-expansions.tex:11 bytes 186-245 SHA-256 a4f88dacdaf322a7ff2ff776aaaf5253c14a29abb4cfbb1a56adfac2e81ef268; reader page pending.
+  - te-Telu-IN-TE-T041-OCC-003; OLP-0130; OLP-0130-B008; source upstream/content/first-order-logic/completeness/henkin-expansions.tex:39-46 bytes 1303-1662 SHA-256 353b1ea300b6d916be92a5100dfa2e2f4cf9ad9f44e9506c96f028acea3b1ec8; target translation/content/first-order-logic/completeness/henkin-expansions.tex:40-48 bytes 2399-2972 SHA-256 a4f88dacdaf322a7ff2ff776aaaf5253c14a29abb4cfbb1a56adfac2e81ef268; reader page pending.
+  - te-Telu-IN-TE-T041-OCC-004; OLP-0131; OLP-0131-B005; source upstream/content/first-order-logic/completeness/lindenbaums-lemma.tex:13 bytes 239-270 SHA-256 096a854cefe8f47251e7ad20747bda7e3832a0272a8e38ba71d732d913a9be47; target translation/content/first-order-logic/completeness/lindenbaums-lemma.tex:13 bytes 239-322 SHA-256 681bf3b47c0bcd3c2fb8317f341fe2da6df7f6125d9a05573d1b4b6ac7e2730b; reader page pending.
+  - te-Telu-IN-TE-T041-OCC-005; OLP-0132; OLP-0132-B007; source upstream/content/first-order-logic/completeness/construction-of-model.tex:37-43 bytes 1497-1770 SHA-256 4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702; target translation/content/first-order-logic/completeness/construction-of-model.tex:38-44 bytes 2794-3236 SHA-256 234f1785cf5fd8293a13487937293833aeb1c4488e39540d616ab1ea954735ca; reader page pending.
+  - te-Telu-IN-TE-T041-OCC-006; OLP-0132; OLP-0132-B014; source upstream/content/first-order-logic/completeness/construction-of-model.tex:163-166 bytes 6403-6595 SHA-256 4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702; target translation/content/first-order-logic/completeness/construction-of-model.tex:174-178 bytes 11326-11667 SHA-256 234f1785cf5fd8293a13487937293833aeb1c4488e39540d616ab1ea954735ca; reader page pending.
+  - te-Telu-IN-TE-T041-OCC-007; OLP-0133; OLP-0133-B005; source upstream/content/first-order-logic/completeness/identity.tex:22-23 bytes 783-915 SHA-256 bc3391e4db38b0552ee8429b14f32124cdb7ee71e766ce17a5eaa2422126aa71; target translation/content/first-order-logic/completeness/identity.tex:21 bytes 1362-1515 SHA-256 1b6e36bed459e1246d938d3047c1e592e7d63f502b7a67527e276c4b4180c365; reader page pending.
+  - te-Telu-IN-TE-T041-OCC-008; OLP-0135; OLP-0135-B007; source upstream/content/first-order-logic/completeness/compactness.tex:29-31 bytes 1110-1259 SHA-256 427e195e6bab0024f56954406ec4d9303573e4c2c796e8bf7446c45fcf253407; target translation/content/first-order-logic/completeness/compactness.tex:28-32 bytes 2254-2630 SHA-256 2a06f8914fa0f8f0d8cbf775c909b54ce0a2fbe428f69be873dbacb6404629c0; reader page pending.
+  - te-Telu-IN-TE-T041-OCC-009; OLP-0135; OLP-0135-B005; source upstream/content/first-order-logic/completeness/compactness.tex:13-18 bytes 233-533 SHA-256 427e195e6bab0024f56954406ec4d9303573e4c2c796e8bf7446c45fcf253407; target translation/content/first-order-logic/completeness/compactness.tex:13-18 bytes 233-852 SHA-256 2a06f8914fa0f8f0d8cbf775c909b54ce0a2fbe428f69be873dbacb6404629c0; reader page pending.
+  - te-Telu-IN-TE-T041-OCC-010; OLP-0137; OLP-0137-B004; source upstream/content/first-order-logic/completeness/downward-ls.tex:10-15 bytes 180-497 SHA-256 31e60aefb151429d7af1e982f1d44a05c4a4b37b8ea03d8163016fdf6d6058d3; target translation/content/first-order-logic/completeness/downward-ls.tex:10-15 bytes 180-885 SHA-256 0be7d2d89caf0f98785f45176d7c71898743fe55ed82d3fc6017330326722eaa; reader page pending.
+  - te-Telu-IN-TE-T041-OCC-011; OLP-0137; OLP-0137-B010; source upstream/content/first-order-logic/completeness/downward-ls.tex:48 bytes 1722-1751 SHA-256 31e60aefb151429d7af1e982f1d44a05c4a4b37b8ea03d8163016fdf6d6058d3; target translation/content/first-order-logic/completeness/downward-ls.tex:47 bytes 2968-3036 SHA-256 0be7d2d89caf0f98785f45176d7c71898743fe55ed82d3fc6017330326722eaa; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -3041,3 +3077,237 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEAXD-011-OCC-001; OLP-0125; OLP-0125-B011; source upstream/content/first-order-logic/axiomatic-deduction/identity.tex:39 bytes 886-950 SHA-256 9a4f25fcf00baab5d8d5f05e7fe2315ca9f4ceaa39a67551489a5130b9b8a2d4; target translation/content/first-order-logic/axiomatic-deduction/identity.tex:41 bytes 1375-1473 SHA-256 0f9f84f23ed4aca7ff1d669eea7e692c32d6115bf135ca515cd55fb143b3776a; reader page pending.
+
+## te-Telu-IN-OLTECOM-001 — OLTECOM-001: confirmed atomic scope conflicts with complete set definition
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: removed the contradictory atomic restriction so condition (b) ranges over every sentence, matching the controlling definition and construction; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed atomic scope conflicts with complete set definition at lines 66-80, condition (b) and its identification as completeness, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOM-20260905:OLTECOM-001 [checked_supports], content/first-order-logic/completeness/outline.tex; lines 66-80, condition (b) and its identification as completeness; confirmed_atomic_scope_conflicts_with_complete_set_definition; removed the contradictory atomic restriction so condition (b) ranges over every sentence, matching the controlling definition and construction; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that condition (b) ranges over every sentence, matching the complete-set definition rather than the source adjective atomic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOM-001-OCC-001; OLP-0128; OLP-0128-B010; source upstream/content/first-order-logic/completeness/outline.tex:66-80 bytes 3142-4152 SHA-256 b3cbb5543255b168edbed2239981fa772d3a954bd5ce3dbf5bb8073e9b0525b1; target translation/content/first-order-logic/completeness/outline.tex:71 bytes 6424-6539 SHA-256 e8d72b38c541b4168108481e7a95cca30b86544d29d0665aab2fb9c151b26658; reader page pending.
+
+## te-Telu-IN-OLTECOM-002 — OLTECOM-002: confirmed missing variable argument in henkin definition reminder
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored the argument x_n in A_n(x_n), matching the surrounding formulas and recalled definition; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing variable argument in henkin definition reminder at lines 137-144, parenthetical universal-formula explanation, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOM-20260905:OLTECOM-002 [checked_supports], content/first-order-logic/completeness/henkin-expansions.tex; lines 137-144, parenthetical universal-formula explanation; confirmed_missing_variable_argument_in_henkin_definition_reminder; restored the argument x_n in A_n(x_n), matching the surrounding formulas and recalled definition; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the recalled universal formula retains the argument x_n in A_n(x_n), matching the surrounding Henkin formulas.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOM-002-OCC-001; OLP-0130; OLP-0130-B017; source upstream/content/first-order-logic/completeness/henkin-expansions.tex:137-144 bytes 5125-5410 SHA-256 353b1ea300b6d916be92a5100dfa2e2f4cf9ad9f44e9506c96f028acea3b1ec8; target translation/content/first-order-logic/completeness/henkin-expansions.tex:149 bytes 8953-9073 SHA-256 a4f88dacdaf322a7ff2ff776aaaf5253c14a29abb4cfbb1a56adfac2e81ef268; reader page pending.
+
+## te-Telu-IN-OLTECOM-003 — OLTECOM-003: confirmed term value lemma missing closed term scope
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restricted t to a closed term, matching the term-model domain and induction proof; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed term value lemma missing closed term scope at lines 78-95, term-value lemma statement and proof, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOM-20260905:OLTECOM-003 [checked_supports], content/first-order-logic/completeness/construction-of-model.tex; lines 78-95, term-value lemma statement and proof; confirmed_term_value_lemma_missing_closed_term_scope; restricted t to a closed term, matching the term-model domain and induction proof; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the term-value lemma is explicitly restricted to closed terms, matching the term-model domain and proof.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOM-003-OCC-001; OLP-0132; OLP-0132-B009; source upstream/content/first-order-logic/completeness/construction-of-model.tex:78-95 bytes 2748-3510 SHA-256 4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702; target translation/content/first-order-logic/completeness/construction-of-model.tex:84 bytes 4882-5004 SHA-256 234f1785cf5fd8293a13487937293833aeb1c4488e39540d616ab1ea954735ca; reader page pending.
+
+## te-Telu-IN-OLTECOM-004 — OLTECOM-004: confirmed wrong formula metavariable in universal truth case
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used B rather than A in the concluding universal membership formula, matching the induction-case header and preceding formulas; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed wrong formula metavariable in universal truth case at lines 239-247, universal induction case of the Truth Lemma, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOM-20260905:OLTECOM-004 [checked_supports], content/first-order-logic/completeness/construction-of-model.tex; lines 239-247, universal induction case of the Truth Lemma; confirmed_wrong_formula_metavariable_in_universal_truth_case; used B rather than A in the concluding universal membership formula, matching the induction-case header and preceding formulas; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the universal Truth Lemma case concludes with forall x B(x), matching its case formula and preceding instances.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOM-004-OCC-001; OLP-0132; OLP-0132-B022; source upstream/content/first-order-logic/completeness/construction-of-model.tex:239-247 bytes 9752-10209 SHA-256 4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702; target translation/content/first-order-logic/completeness/construction-of-model.tex:267 bytes 17846-17958 SHA-256 234f1785cf5fd8293a13487937293833aeb1c4488e39540d616ab1ea954735ca; reader page pending.
+
+## te-Telu-IN-OLTECOM-005 — OLTECOM-005: confirmed universal truth case omits closed term qualification
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored the closed-term qualification in both universal equivalences, matching the cited propositions and term-model domain; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed universal truth case omits closed term qualification at lines 242-246, universal term-model and saturation equivalences, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOM-20260905:OLTECOM-005 [checked_supports], content/first-order-logic/completeness/construction-of-model.tex; lines 242-246, universal term-model and saturation equivalences; confirmed_universal_truth_case_omits_closed_term_qualification; restored the closed-term qualification in both universal equivalences, matching the cited propositions and term-model domain; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that both universal-case equivalences quantify over closed terms, matching the cited propositions.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOM-005-OCC-001; OLP-0132; OLP-0132-B022; source upstream/content/first-order-logic/completeness/construction-of-model.tex:242-246 bytes 9834-10159 SHA-256 4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702; target translation/content/first-order-logic/completeness/construction-of-model.tex:261 bytes 17060-17178 SHA-256 234f1785cf5fd8293a13487937293833aeb1c4488e39540d616ab1ea954735ca; reader page pending.
+
+## te-Telu-IN-OLTECOM-006 — OLTECOM-006: confirmed existential truth case omits closed term qualification
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored the closed-term qualification in both existential equivalences, matching the cited propositions and term-model domain; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed existential truth case omits closed term qualification at lines 249-257, existential term-model and saturation equivalences, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOM-20260905:OLTECOM-006 [checked_supports], content/first-order-logic/completeness/construction-of-model.tex; lines 249-257, existential term-model and saturation equivalences; confirmed_existential_truth_case_omits_closed_term_qualification; restored the closed-term qualification in both existential equivalences, matching the cited propositions and term-model domain; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that both existential-case equivalences require at least one closed term, matching the cited propositions.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOM-006-OCC-001; OLP-0132; OLP-0132-B023; source upstream/content/first-order-logic/completeness/construction-of-model.tex:249-257 bytes 10210-10681 SHA-256 4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702; target translation/content/first-order-logic/completeness/construction-of-model.tex:277 bytes 18630-18737 SHA-256 234f1785cf5fd8293a13487937293833aeb1c4488e39540d616ab1ea954735ca; reader page pending.
+
+## te-Telu-IN-OLTECOM-007 — OLTECOM-007: confirmed duplicate comma inside function term
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: removed the duplicate comma after t_{i+1}, leaving the single argument separator required by the parallel term; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed duplicate comma inside function term at line 69, item (4) function-congruence formula, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOM-20260905:OLTECOM-007 [checked_supports], content/first-order-logic/completeness/identity.tex; line 69, item (4) function-congruence formula; confirmed_duplicate_comma_inside_function_term; removed the duplicate comma after t_{i+1}, leaving the single argument separator required by the parallel term; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that only the duplicate comma after t_(i+1) was removed from the function term and no argument changed.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOM-007-OCC-001; OLP-0133; OLP-0133-B008; source upstream/content/first-order-logic/completeness/identity.tex:69 bytes 2478-2582 SHA-256 bc3391e4db38b0552ee8429b14f32124cdb7ee71e766ce17a5eaa2422126aa71; target translation/content/first-order-logic/completeness/identity.tex:72 bytes 3889-4006 SHA-256 1b6e36bed459e1246d938d3047c1e592e7d63f502b7a67527e276c4b4180c365; reader page pending.
+
+## te-Telu-IN-OLTECOM-008 — OLTECOM-008: confirmed compactness theorem conflates set and sentence types
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: typed Gamma as a set of sentences and A as one sentence, matching the finite-subset and entailment clauses; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed compactness theorem conflates set and sentence types at line 35, theorem-variable introduction, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOM-20260905:OLTECOM-008 [checked_supports], content/first-order-logic/completeness/compactness.tex; line 35, theorem-variable introduction; confirmed_compactness_theorem_conflates_set_and_sentence_types; typed Gamma as a set of sentences and A as one sentence, matching the finite-subset and entailment clauses; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that Gamma is typed as a set of sentences and A as one sentence in the Compactness Theorem statement.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOM-008-OCC-001; OLP-0135; OLP-0135-B008; source upstream/content/first-order-logic/completeness/compactness.tex:35 bytes 1319-1375 SHA-256 427e195e6bab0024f56954406ec4d9303573e4c2c796e8bf7446c45fcf253407; target translation/content/first-order-logic/completeness/compactness.tex:38 bytes 2869-2975 SHA-256 2a06f8914fa0f8f0d8cbf775c909b54ce0a2fbe428f69be873dbacb6404629c0; reader page pending.
+
+## te-Telu-IN-OLTECOM-009 — OLTECOM-009: confirmed membership formula missing left operand
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored !B as the missing left operand in the membership formula, matching the scoped sentence and the ensuing subset conclusion; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed membership formula missing left operand at lines 76-81, finite-subset argument, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOM-20260905:OLTECOM-009 [checked_supports], content/first-order-logic/completeness/lindenbaums-lemma.tex; lines 76-81, finite-subset argument; confirmed_membership_formula_missing_left_operand; restored !B as the missing left operand in the membership formula, matching the scoped sentence and the ensuing subset conclusion; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that B is restored as the left operand of membership in Gamma_n, matching the scoped sentence and ensuing subset conclusion.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOM-009-OCC-001; OLP-0131; OLP-0131-B011; source upstream/content/first-order-logic/completeness/lindenbaums-lemma.tex:76-81 bytes 3068-3473 SHA-256 096a854cefe8f47251e7ad20747bda7e3832a0272a8e38ba71d732d913a9be47; target translation/content/first-order-logic/completeness/lindenbaums-lemma.tex:85 bytes 5930-6048 SHA-256 681bf3b47c0bcd3c2fb8317f341fe2da6df7f6125d9a05573d1b4b6ac7e2730b; reader page pending.

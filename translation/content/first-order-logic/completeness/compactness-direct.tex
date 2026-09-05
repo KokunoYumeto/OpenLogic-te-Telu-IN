@@ -1,0 +1,167 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: compactness-direct
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{com}{cpd}}
+      {\olfileid{pl}{com}{cpd}}
+
+\olsection{సంహతత్వ సిద్ధాంతానికి నేర నిరూపణ}
+
+సంపూర్ణతా సిద్ధాంతాన్ని ఆశ్రయించకుండా, సంపూర్ణతా సిద్ధాంతపు నిరూపణలోని
+ఆలోచనలనే ఉపయోగించి సంహతత్వ సిద్ధాంతాన్ని నేరుగా నిరూపించవచ్చు.
+సంపూర్ణతా సిద్ధాంతపు నిరూపణలో అవైరుధ్య !!{sentence}s సమితి~$\Gamma$తో
+మొదలుపెట్టి, దాన్ని అవైరుధ్యమైన,\iftag{FOL}{ సంతృప్తీకృతమైన,}{}
+!!{complete} !!{sentence}s సమితి~$\Gamma^*$గా విస్తరించాం. తరువాత
+$\Gamma^*$ నుంచి నిర్మించిన \iftag{FOL}{పద
+  నమూనా~$\Struct{M(\Gamma^*)}$}{!!{valuation}~$\pAssign{v(\Gamma^*)}$}
+లో~$\Gamma$లోని అన్ని !!{sentence}s సత్యమని చూపాం; కాబట్టి $\Gamma$
+సంతృప్తిపరచదగినది.
+
+వాక్యాల పరిమితంగా సంతృప్తిపరచదగిన సమితి సంతృప్తిపరచదగినదని చూపడానికి
+ఇదే పద్ధతిని ఉపయోగించవచ్చు. సత్య ఉపసిద్ధాంతానికి దారితీసే ఫలితాల్లో
+``అవైరుధ్యమైనది'' స్థానంలో ``పరిమితంగా సంతృప్తిపరచదగినది''ని ఉంచిన
+సంబంధిత రూపాలను నిరూపిస్తే చాలు.
+
+\begin{prop}
+\ollabel{prop:fsat-ccs}
+$\Gamma$ !!{complete}, పరిమితంగా సంతృప్తిపరచదగినది అనుకుందాం. అప్పుడు:
+\begin{enumerate}
+\tagitem{prvAnd}{$(!A \land !B) \in \Gamma$ అయినప్పుడు, అప్పుడు
+  మాత్రమే $!A \in \Gamma$, $!B \in \Gamma$ రెండూ.}{}
+
+\tagitem{prvOr}{$(!A \lor !B) \in \Gamma$ అయినప్పుడు, అప్పుడు
+  మాత్రమే $!A \in \Gamma$ లేదా $!B \in \Gamma$.}{}
+
+\tagitem{prvIf}{$(!A \lif !B) \in \Gamma$ అయినప్పుడు, అప్పుడు
+  మాత్రమే $!A \notin \Gamma$ లేదా $!B \in \Gamma$.}{}
+\end{enumerate}
+\end{prop}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][cpd]{prop:fsat-ccs}ను నిరూపించండి. $\Proves$ను
+ఉపయోగించవద్దు.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][com][cpd]{prop:fsat-ccs}ను నిరూపించండి. $\Proves$ను
+ఉపయోగించవద్దు.
+\end{prob}
+\tagendprob
+
+\iftag{FOL}{%
+\begin{lem}
+\ollabel{lem:fsat-henkin} ప్రతి పరిమితంగా సంతృప్తిపరచదగిన
+సమితి~$\Gamma$ను సంతృప్తీకృత, పరిమితంగా సంతృప్తిపరచదగిన
+సమితి~$\Gamma'$గా విస్తరించవచ్చు.
+\end{lem}
+}{}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][cpd]{lem:fsat-henkin}ను నిరూపించండి. (సూచన:
+$\Gamma_n$ పరిమితంగా సంతృప్తిపరచదగినదైతే, !!{derivation}s లేదా
+అవైరుధ్యాన్ని ఏమాత్రం ఆశ్రయించకుండా $\Gamma_n \cup \{!D_n\}$ కూడా
+పరిమితంగా సంతృప్తిపరచదగినదని చూపడమే కీలకమైన అడుగు.)
+\end{prob}
+\tagendprob
+
+\iftag{FOL}{
+\begin{prop}\ollabel{prop:fsat-instances}
+$\Gamma$ సంపూర్ణమైనది, పరిమితంగా సంతృప్తిపరచదగినది,
+సంతృప్తీకృతమైనది అనుకుందాం.
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$\lexists[x][!A(x)] \in \Gamma$ అయినప్పుడు, అప్పుడు
+  మాత్రమే కనీసం ఒక సంవృత పదం~$t$కు $!A(t) \in \Gamma$.}{}
+\tagitem{prvAll}{$\lforall[x][!A(x)] \in \Gamma$ అయినప్పుడు, అప్పుడు
+  మాత్రమే అన్ని సంవృత పదాలు~$t$కు $!A(t) \in \Gamma$.}{}
+\end{tagenumerate}
+\end{prop}
+}{}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][cpd]{prop:fsat-instances}ను నిరూపించండి.
+\end{prob}
+\tagendprob
+
+\begin{lem}
+\ollabel{lem:fsat-lindenbaum} ప్రతి పరిమితంగా సంతృప్తిపరచదగిన
+సమితి~$\Gamma$ను !!a{complete}, పరిమితంగా సంతృప్తిపరచదగిన
+సమితి~$\Gamma^*$గా విస్తరించవచ్చు.
+\end{lem}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][cpd]{lem:fsat-lindenbaum}ను నిరూపించండి. (సూచన:
+$\Gamma_n$ పరిమితంగా సంతృప్తిపరచదగినదైతే, $\Gamma_n \cup \{!A_n\}$
+లేదా $\Gamma_n \cup \{\lnot !A_n\}$లలో కనీసం ఒకటి పరిమితంగా
+సంతృప్తిపరచదగినదని చూపడమే కీలకమైన అడుగు.)
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][com][cpd]{lem:fsat-lindenbaum}ను నిరూపించండి. (సూచన:
+$\Gamma_n$ పరిమితంగా సంతృప్తిపరచదగినదైతే, $\Gamma_n \cup \{!A_n\}$
+లేదా $\Gamma_n \cup \{\lnot !A_n\}$లలో కనీసం ఒకటి పరిమితంగా
+సంతృప్తిపరచదగినదని చూపడమే కీలకమైన అడుగు.)
+\end{prob}
+\tagendprob
+
+\begin{thm}[సంహతత్వం]
+\ollabel{thm:compactness-direct} $\Gamma$ సంతృప్తిపరచదగినదైతే, అప్పుడు
+మాత్రమే అది పరిమితంగా సంతృప్తిపరచదగినది.
+\end{thm}
+
+\begin{proof}
+$\Gamma$ సంతృప్తిపరచదగినదైతే, అన్ని $!A \in \Gamma$లకు
+$\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ అయ్యే
+\iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+ఉంటుంది. ఈ \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} సహజంగానే
+~$\Gamma$లోని ప్రతి పరిమిత ఉపసమితిని కూడా సంతృప్తిపరుస్తుంది; కాబట్టి
+$\Gamma$ పరిమితంగా సంతృప్తిపరచదగినది.
+
+ఇప్పుడు~$\Gamma$ పరిమితంగా సంతృప్తిపరచదగినదని అనుకుందాం.\iftag{FOL}{
+  \olref{lem:fsat-henkin} ప్రకారం, $\Gamma' \supseteq \Gamma$ అయ్యే
+  పరిమితంగా సంతృప్తిపరచదగిన, సంతృప్తీకృత సమితి ఉంది.}{}
+\olref{lem:fsat-lindenbaum} ప్రకారం,
+$\iftag{FOL}{\Gamma'}{\Gamma}$ను !!a{complete}, పరిమితంగా
+సంతృప్తిపరచదగిన సమితి~$\Gamma^*$గా విస్తరించవచ్చు\iftag{FOL}{;
+  $\Gamma^*$ ఇంకా సంతృప్తీకృతంగానే ఉంటుంది}{}. పద
+\iftag{FOL}{నమూనా~$\Struct{M(\Gamma^*)}$}{!!{valuation}~$\pAssign{v(\Gamma^*)}$}
+ను \olref[mod]{defn:termmodel}లో ఉన్నట్లుగా నిర్మించండి.\iftag{FOL}{
+\olref[mod]{prop:quant-termmodel} అనేది $\Gamma^*$ అవైరుధ్యమనే
+వాస్తవంపై (లేదా, నిజానికి అది !!{complete} లేదా సంతృప్తీకృతమనే
+వాస్తవంపై) ఆధారపడలేదు; $\Struct{M(\Gamma^*)}$ ఆవరితమనే వాస్తవంపైనే
+ఆధారపడిందని గమనించండి.}{} సత్య ఉపసిద్ధాంతం
+(\olref[mod]{lem:truth}) యొక్క నిరూపణలో
+\olref[ccs]{prop:ccs}\iftag{FOL}{, \olref[hen]{prop:saturated-instances}
+సూచనల స్థానంలో వరుసగా \olref{prop:fsat-ccs},
+\olref{prop:fsat-instances}} సూచనలను ఉంచితే అదే నిరూపణ పనిచేస్తుంది.
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+సత్య ఉపసిద్ధాంతం (\olref[fol][com][mod]{lem:truth}) యొక్క,
+\olref[fol][com][cpd]{thm:compactness-direct} నిరూపణకు కావలసిన రూపంలోని
+పూర్తి నిరూపణను రాయండి.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+సత్య ఉపసిద్ధాంతం (\olref[pl][com][mod]{lem:truth}) యొక్క,
+\olref[pl][com][cpd]{thm:compactness-direct} నిరూపణకు కావలసిన రూపంలోని
+పూర్తి నిరూపణను రాయండి.
+\end{prob}
+\tagendprob
+
+\end{document}

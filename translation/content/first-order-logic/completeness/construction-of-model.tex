@@ -1,0 +1,305 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: construction-of-model
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{com}{mod}}
+      {\olfileid{pl}{com}{mod}}
+
+\olsection{ఒక నమూనా నిర్మాణం}
+
+\begin{explain}
+\iftag{FOL}{ప్రస్తుతం మనకు~$\eq$ గురించి ఆందోళన లేదు; అంటే,
+  $\eq$ను కలిగి లేని అవైరుధ్య !!{sentence}s సమితి~$\Gamma$
+  సంతృప్తిపరచదగినదని మాత్రమే చూపాలనుకుంటున్నాం. మొదట~$\Gamma$ను
+  అవైరుధ్యమైన, !!{complete}, సంతృప్తీకృత సమితి~$\Gamma^*$గా
+  విస్తరిస్తాం. ఈ సందర్భంలో నమూనా~$\Struct{M(\Gamma^*)}$ నిర్వచనం
+  సరళమైనది: $\Lang{L'}$లోని సంవృత పదాల సమితిని ప్రదేశంగా తీసుకుంటాం.
+  ప్రతి !!{constant}ను దానికే నిర్దేశిస్తాం; ఇంకా సాధారణంగా, ప్రతి
+  సంవృత పదం~$t$కు $\Value{t}{M(\Gamma^*)} = t$ అయ్యేలా చూస్తాం.
+  ఒక పరమాణు !!{sentence} $\Struct{M(\Gamma^*)}$లో సత్యమవడం, అది
+  ~$\Gamma^*$లో ఉండటానికి సరిసమానమయ్యేలా !!{predicate}sకు విస్తరణలను
+  నిర్దేశిస్తాం. ఇది~$\Gamma^*$లోని అన్ని పరమాణు !!{sentence}sను
+  $\Struct{M(\Gamma^*)}$లో సత్యం చేస్తుందని స్పష్టం. మనం మొదలుపెట్టే
+  $\Gamma^*$ అవైరుధ్యంగా, సంపూర్ణంగా, సంతృప్తీకృతంగా ఉంటే మిగిలినవి
+  కూడా సత్యమవుతాయి.}{ఇప్పుడు ప్రతి $!A \in \Gamma$ను సత్యం చేసే
+  !!a{valuation}ను నిర్వచించడానికి సిద్ధంగా ఉన్నాం. దీనికోసం మొదట
+  లిండెన్‌బామ్ ఉపసిద్ధాంతాన్ని వర్తింపజేస్తాం: సంపూర్ణ అవైరుధ్య
+  $\Gamma^* \supseteq \Gamma$ను పొందుతాం.
+  ~$\Gamma^*$లోని !!{propositional variable}s
+  ~$\pAssign v(\Gamma^*)$ను నిర్ణయించేలా ఉంచుతాం.}
+\end{explain}
+
+\iftag{FOL}{%
+\begin{defn}[పద నమూనా]
+\ollabel{defn:termmodel}
+భాష~$\Lang L$లోని !!{sentence}s యొక్క !!a{complete}, అవైరుధ్య,
+సంతృప్తీకృత సమితి~$\Gamma^*$ ఉండనివ్వండి. $\Gamma^*$ యొక్క
+\emph{పద నమూనా}~$\Struct M(\Gamma^*)$ కింది విధంగా నిర్వచించిన
+!!{structure}:
+\begin{enumerate}
+\item !!{domain}~$\Domain{M(\Gamma^*)}$ అనేది~$\Lang L$లోని అన్ని
+  సంవృత పదాల సమితి.
+\item !!a{constant}~$c$ యొక్క అర్థవివరణ $c$ అదే:
+  $\Assign{c}{M(\Gamma^*)} = c$.
+\item సంవృత పదాలు $t_1$, \dots, $t_n$ను ఆర్గ్యుమెంట్లుగా తీసుకున్నప్పుడు
+  సంవృత పదం $f(t_1, \dots, t_n)$ను విలువగా ఇచ్చే ప్రమేయాన్ని
+  !!{function}~$f$కు నిర్దేశిస్తాం:
+\[
+\Assign{f}{M(\Gamma^*)}(t_1, \dots, t_n) = f(t_1,\dots, t_n)
+\]
+\item $R$ ఒక $n$-స్థాన !!{predicate} అయితే,
+  \[
+  \tuple{t_1, \dots,
+  t_n} \in \Assign{R}{M(\Gamma^*)} \text{ iff } \Atom{R}{t_1, \dots,
+    t_n} \in \Gamma^*.
+  \]
+\end{enumerate}
+\end{defn}
+}{%
+\begin{defn}
+\ollabel{defn:termmodel}
+$\Gamma^*$ ఒక సంపూర్ణ అవైరుధ్య !!{formula}s సమితి అనుకుందాం. అప్పుడు
+\[
+\pAssign v(\Gamma^*)(p) = \begin{cases}
+  \True & \text{if $p \in \Gamma^*$}\\
+  \False & \text{if $p \notin \Gamma^*$}
+  \end{cases}
+\]
+గా ఉంచుతాం.
+\end{defn}
+}
+
+\iftag{FOL}{%
+నిజంగానే $\Value{t}{M(\Gamma^*)} = t$ అని ఇప్పుడు తనిఖీ చేద్దాం.
+
+\begin{lem}
+\ollabel{lem:val-in-termmodel} $\Struct M(\Gamma^*)$ అనేది
+\olref{defn:termmodel}లోని పద నమూనా అయితే, ప్రతి సంవృత పదానికి
+$\Value{t}{M(\Gamma^*)} = t$.
+\sourcecorrection{OLTECOM-003}{ఆంగ్ల మూలంలోని ఉపసిద్ధాంత ప్రకటన
+$t$ను ఏ పదమైనా అన్నట్లుగా వదిలింది; అయితే దాని ప్రదేశం, వెంటనే ఇచ్చిన
+నిరూపణ సంవృత పదాలకే వర్తిస్తాయి. అందుకే అవసరమైన సంవృత-పద పరిమితిని
+స్పష్టంగా చేర్చాం.}
+\end{lem}
+\begin{proof}
+నిరూపణ $t$పై ఆగమనం ద్వారా సాగుతుంది. ఆధార సందర్భంలో $t$ ఒక
+!!a{constant}; అది పద నమూనా నిర్వచనం నుంచి నేరుగా వస్తుంది. ఆగమన
+అడుగులో $t_1, \ldots, t_n$లు $\Value{t_i}{M(\Gamma^*)} = t_i$ అయ్యే
+సంవృత పదాలని, $f$ ఒక $n$-స్థాన !!{function} అని అనుకుందాం. అప్పుడు
+\begin{align*}
+\Value{f(t_1,\ldots,t_n)}{M(\Gamma^*)} &= \Assign{f}{M(\Gamma^*)}(\Value{t_1}
+ {M(\Gamma^*)},
+\ldots, \Value{t_n}{M(\Gamma^*)}) \\
+&= \Assign{f}{M(\Gamma^*)}(t_1, \dots, t_n) \\
+&= f(t_1,\dots, t_n),
+\end{align*}
+కనుక ఆగమనం ద్వారా ప్రతి సంవృత పదం~$t$కు ఇది వర్తిస్తుంది.
+\end{proof}
+}
+
+\iftag{FOL}{%
+\begin{explain}
+  \iftag{prvEx}{ఏదైనా !!^a{structure}~$\Struct{M}$, అస్తిత్వంగా
+    పరిమాణీకృత !!{sentence}~$\lexists[x][!A(x)]$ను సత్యం చేసినా, అది
+    సత్యం చేసే రూపం~$!A(t)$ ఏదీ లేకపోవచ్చు.}{}
+  \iftag{prvAll}{ఏదైనా !!^a{structure}~$\Struct{M}$, సార్వత్రికంగా
+    పరిమాణీకృత !!{sentence}~$\lforall[x][!A(x)]$ యొక్క అన్ని
+    రూపాలు~$!A(t)$ను సత్యం చేసినా, $\lforall[x][!A(x)]$ను సత్యం
+    చేయకపోవచ్చు.}{} సాధారణంగా~$\Domain{M}$లోని ప్రతి !!{element}
+  ఒక సంవృత పదం విలువ కాకపోవడమే దీనికి కారణం ($\Struct{M}$ ఆవరితమై
+  ఉండకపోవచ్చు). సంతృప్తి సంబంధాన్ని చరరాశి నిర్దేశాల ద్వారా
+  నిర్వచించడానికి ఇదే కారణం. అయితే మన పద నమూనా~$\Struct{M(\Gamma^*)}$కు
+  ఇది అవసరం కాదు---ఎందుకంటే అది ఆవరితమైనది. ఇదే తరువాతి ఫలితపు విషయం.
+\end{explain}
+
+\begin{prop}
+\ollabel{prop:quant-termmodel}
+$\Struct M(\Gamma^*)$ అనేది \olref{defn:termmodel}లోని పద నమూనా
+అనుకుందాం.
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$\Sat{M(\Gamma^*)}{\lexists[x][!A(x)]}$ అయినప్పుడు,
+  అప్పుడు మాత్రమే కనీసం ఒక సంవృత పదం~$t$కు
+  $\Sat{M(\Gamma^*)}{!A(t)}$.}{}
+\tagitem{prvAll}{$\Sat{M(\Gamma^*)}{\lforall[x][!A(x)]}$ అయినప్పుడు,
+  అప్పుడు మాత్రమే అన్ని సంవృత పదాలు~$t$కు
+  $\Sat{M(\Gamma^*)}{!A(t)}$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{%
+  \iftag{probEx}{అభ్యాసం.}{\olref[syn][ass]{prop:sat-quant} ప్రకారం,
+    కనీసం ఒక చరరాశి నిర్దేశం~$s$కు
+    $\Sat{M(\Gamma^*)}{!A(x)}[s]$ అయినప్పుడు, అప్పుడు మాత్రమే
+    $\Sat{M(\Gamma^*)}{\lexists[x][!A(x)]}$. $\Domain{M(\Gamma^*)}$
+    అనేది~$\Lang{L}$లోని సంవృత పదాల సమితి కనుక, $s(x) = t$, ఇంకా
+    $\Sat{M(\Gamma^*)}{!A(x)}[s]$ అయ్యే కనీసం ఒక సంవృత పదం~$t$
+    ఉన్నప్పుడు, అప్పుడు మాత్రమే ఇది జరుగుతుంది.
+    \olref[fol][syn][ext]{prop:ext-formulas} ప్రకారం, $s(x) = t$
+    అయినప్పుడు $\Sat{M(\Gamma^*)}{!A(x)}[s]$ అయినప్పుడు, అప్పుడు
+    మాత్రమే $\Sat{M(\Gamma^*)}{!A(t)}[s]$. $!A(t)$ ఒక వాక్యం కనుక,
+    \olref[fol][syn][ass]{prop:sentence-sat-true} ప్రకారం
+    $\Sat{M(\Gamma^*)}{!A(t)}[s]$ అయినప్పుడు, అప్పుడు మాత్రమే
+    $\Sat{M(\Gamma^*)}{!A(t)}$.}}{}
+\tagitem{prvAll}{%
+  \iftag{probAll}{అభ్యాసం.}{\olref[syn][ass]{prop:sat-quant} ప్రకారం,
+    ప్రతి చరరాశి నిర్దేశం~$s$కు $\Sat{M(\Gamma^*)}{!A(x)}[s]$
+    అయినప్పుడు, అప్పుడు మాత్రమే
+    $\Sat{M(\Gamma^*)}{\lforall[x][!A(x)]}$. $\Domain{M(\Gamma^*)}$
+    అనేది~$\Lang{L}$లోని సంవృత పదాల సమితి అని గుర్తుంచుకోండి.
+    కాబట్టి ప్రతి సంవృత పదం~$t$కు $s(x) = t$ అయ్యే చరరాశి నిర్దేశం
+    ఉంటుంది; ఏ చరరాశి నిర్దేశానికైనా $s(x)$ ఏదో ఒక సంవృత పదం~$t$.
+    \olref[fol][syn][ext]{prop:ext-formulas} ప్రకారం, $s(x) = t$
+    అయినప్పుడు $\Sat{M(\Gamma^*)}{!A(x)}[s]$ అయినప్పుడు, అప్పుడు
+    మాత్రమే $\Sat{M(\Gamma^*)}{!A(t)}[s]$. $!A(t)$ ఒక వాక్యం కనుక,
+    \olref[fol][syn][ass]{prop:sentence-sat-true} ప్రకారం
+    $\Sat{M(\Gamma^*)}{!A(t)}[s]$ అయినప్పుడు, అప్పుడు మాత్రమే
+    $\Sat{M(\Gamma^*)}{!A(t)}$.}}{}
+\end{tagenumerate}
+\end{proof}
+}{}
+
+\tagprob[FOL]{probEx,probAll}
+\begin{prob}
+\olref[fol][com][mod]{prop:quant-termmodel} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+\tagendprob
+
+\begin{lem}[సత్య ఉపసిద్ధాంతం]
+\ollabel{lem:truth} \iftag{FOL}{$!A$లో~$\eq$ లేదని అనుకుందాం. అప్పుడు}{}
+$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!A}$ అయినప్పుడు,
+అప్పుడు మాత్రమే $!A \in \Gamma^*$.
+\end{lem}
+
+\begin{proof}
+రెండు దిశలనూ ఒకేసారి, $!A$పై ఆగమనంతో నిరూపిస్తాం.
+\begin{enumerate}
+\tagitem{prvFalse}{\indcase{!A}{\lfalse}
+  {$\iftag{FOL}{\Sat/{M(\Gamma^*)}{\lfalse}}{\pSat/{v(\Gamma^*)}{\lfalse}}$
+    అని సంతృప్తి నిర్వచనం చెబుతుంది. మరోవైపు, $\Gamma^*$ అవైరుధ్యమైనది
+    కనుక $\lfalse \notin \Gamma^*$.}}{}
+
+\tagitem{prvTrue}{\indcase{!A}{\ltrue}
+  {$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\ltrue}$
+    అని సంతృప్తి నిర్వచనం చెబుతుంది. మరోవైపు, $\Gamma^*$ అవైరుధ్యమైనది,
+    !!{complete}, ఇంకా $\Gamma^* \Proves \ltrue$ కనుక $\ltrue \in
+    \Gamma^*$.}}{}
+
+\tagitem{FOL}{\indcase{!A}{R(t_1, \dots, t_n)}
+  {$\Sat{M(\Gamma^*)}{\Atom{R}{t_1, \dots, t_n}}$ అయినప్పుడు, అప్పుడు
+    మాత్రమే $\tuple{t_1, \dots, t_n} \in \Assign{R}{M(\Gamma^*)}$
+    (సంతృప్తి నిర్వచనం ప్రకారం); అది జరిగినప్పుడు, అప్పుడు మాత్రమే
+    $R(t_1, \dots, t_n) \in \Gamma^*$ ($\Struct M(\Gamma^*)$
+    నిర్మాణం ప్రకారం).}}{\indcase{!A}{p}{$\pSat{v(\Gamma^*)}{p}$
+    అయినప్పుడు, అప్పుడు మాత్రమే $\pAssign v(\Gamma^*)(p) = \True$
+    (సంతృప్తి నిర్వచనం ప్రకారం); అది జరిగినప్పుడు, అప్పుడు మాత్రమే
+    $p \in \Gamma^*$ ($\pAssign v(\Gamma^*)$ నిర్మాణం ప్రకారం).}}
+
+\tagitem{prvNot}{%
+  \indcase{!A}{\lnot !B}
+    {$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\indfrm}$
+    అయినప్పుడు, అప్పుడు మాత్రమే
+    $\iftag{FOL}{\Sat/{M(\Gamma^*)}{!B}}{\pSat/{v(\Gamma^*)}{!B}}$
+    (సంతృప్తి నిర్వచనం ప్రకారం). ఆగమన పరికల్పన ప్రకారం,
+    $\iftag{FOL}{\Sat/{M(\Gamma^*)}{!B}}{\pSat/{v(\Gamma^*)}{!B}}$
+    అయినప్పుడు, అప్పుడు మాత్రమే $!B \notin \Gamma^*$. $\Gamma^*$
+    అవైరుధ్యమైనది, !!{complete} కనుక $!B \notin \Gamma^*$ అయినప్పుడు,
+    అప్పుడు మాత్రమే $\lnot !B \in \Gamma^*$.}}{}
+
+\tagitem{prvAnd}{%
+\iftag{probAnd}{%
+  \indcase!{!A}{!B \land !C}{}}{%
+  \indcase{!A}{!B \land
+    !C}{$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\indfrm}$
+    అయినప్పుడు, అప్పుడు మాత్రమే
+    $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!B}$,
+    $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!C}$ రెండూ
+    (సంతృప్తి నిర్వచనం ప్రకారం); ఆగమన పరికల్పన ప్రకారం ఇది $!B \in
+    \Gamma^*$, $!C \in \Gamma^*$ రెండూ కావడానికి సరిసమానం.
+    \olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-and} ప్రకారం, ఇది
+    $(!B \land !C) \in \Gamma^*$ కావడానికి సరిసమానం.}}}{}
+
+\tagitem{prvOr}{%
+\iftag{probOr}{%
+  \indcase!{!A}{!B \lor !C}{}}{%
+  \indcase{!A}{!B \lor !C}
+    {$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\indfrm}$
+    అయినప్పుడు, అప్పుడు మాత్రమే
+    $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!B}$ లేదా
+    $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!C}$
+    (సంతృప్తి నిర్వచనం ప్రకారం); ఆగమన పరికల్పన ప్రకారం ఇది $!B \in
+    \Gamma^*$ లేదా $!C \in \Gamma^*$ కావడానికి సరిసమానం.
+    \olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-or} ప్రకారం ఇది $(!B
+    \lor !C) \in \Gamma^*$ కావడానికి సరిసమానం.}}}{}
+
+\tagitem{prvIf}{%
+\iftag{probIf}{%
+  \indcase!{!A}{!B \lif !C}{}}{%
+  \indcase{!A}{!B \lif !C}
+    {$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\indfrm}$
+    అయినప్పుడు, అప్పుడు మాత్రమే
+    $\iftag{FOL}{\Sat/{M(\Gamma^*)}}{\pSat/{v(\Gamma^*)}}{!B}$ లేదా
+    $\iftag{FOL}{\Sat{M (\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!C}$
+    (సంతృప్తి నిర్వచనం ప్రకారం); ఆగమన పరికల్పన ప్రకారం ఇది $!B \notin
+    \Gamma^*$ లేదా $!C \in \Gamma^*$ కావడానికి సరిసమానం.
+    \olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-if} ప్రకారం ఇది $(!B
+    \lif !C) \in \Gamma^*$ కావడానికి సరిసమానం.}}}{}
+
+\iftag{FOL}{%
+\tagitem{prvAll}{%
+  \iftag{probAll}{%
+    \indcase!{!A}{\lforall[x][!B(x)]}{}}{%
+    \indcase{!A}{\lforall[x][!B(x)]}{$\Sat{M(\Gamma^*)}{\indfrm}$
+      అయినప్పుడు, అప్పుడు మాత్రమే అన్ని సంవృత పదాలు~$t$కు
+      $\Sat{M(\Gamma^*)}{!B(t)}$ (\olref{prop:quant-termmodel}).
+      \sourcecorrection{OLTECOM-005}{ఆంగ్ల మూలం ఇక్కడ ``అన్ని పదాలు''
+      అంటుంది; కానీ ఉదహరించిన ప్రతిపాదన, పద నమూనా ప్రదేశం సంవృత
+      పదాలకే పరిమితం. అందుకే ``సంవృత'' అర్హతను పునరుద్ధరించాం.}
+      ఆగమన పరికల్పన ప్రకారం ఇది అన్ని సంవృత పదాలు~$t$కు $!B(t) \in
+      \Gamma^*$ కావడానికి సరిసమానం; \olref[hen]{prop:saturated-instances}
+      ప్రకారం, ఇది $\lforall[x][!B(x)] \in \Gamma^*$ కావడానికి
+      సరిసమానం. \sourcecorrection{OLTECOM-004}{ఆంగ్ల మూలం ఈ చివరి
+      సార్వత్రిక సూత్రంలో పొరపాటున $!A(x)$ను వాడింది; ప్రస్తుత ఆగమన
+      సందర్భం, ముందరి రెండు సూత్రాలు కోరిన $!B(x)$ను ఇక్కడ ఉంచాం.}}}{}
+
+\tagitem{prvEx}{%
+  \iftag{probEx}{%
+    \indcase!{!A}{\lexists[x][!B(x)]}{}}{%
+    \indcase{!A}{\lexists[x][!B(x)]}{$\Sat{M(\Gamma^*)}{\indfrm}$
+      అయినప్పుడు, అప్పుడు మాత్రమే కనీసం ఒక సంవృత పదం~$t$కు
+      $\Sat{M(\Gamma^*)}{!B(t)}$ (\olref{prop:quant-termmodel}).
+      \sourcecorrection{OLTECOM-006}{ఆంగ్ల మూలం ఇక్కడ ``కనీసం ఒక
+      పదం'' అంటుంది; ఉదహరించిన ప్రతిపాదన మాత్రం సంవృత పదాన్నే కోరుతుంది.
+      అందుకే అవసరమైన సంవృత-పద అర్హతను పునరుద్ధరించాం.}
+      ఆగమన పరికల్పన ప్రకారం ఇది కనీసం ఒక సంవృత పదం~$t$కు $!B(t) \in
+      \Gamma^*$ కావడానికి సరిసమానం. \olref[hen]{prop:saturated-instances}
+      ప్రకారం, ఇది $\lexists[x][!B(x)] \in \Gamma^*$ కావడానికి
+      సరిసమానం.}}}{}
+}{}
+\end{enumerate}
+\end{proof}
+
+
+\tagprob[FOL]{probOr,probAnd,probIf,probEx,probAll}
+
+\begin{prob}
+\olref[fol][com][mod]{lem:truth} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+
+\tagendprob
+
+\tagprob[notFOL]{probOr,probAnd,probIf}
+
+\begin{prob}
+\olref[pl][com][mod]{lem:truth} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+
+\tagendprob
+
+\end{document}
