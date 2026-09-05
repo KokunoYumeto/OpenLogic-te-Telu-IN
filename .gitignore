@@ -11,11 +11,6 @@
 !/upstream/LICENSE.md
 !/upstream/README.md
 !/upstream/content/
-/upstream/content/*
-!/upstream/content/sets-functions-relations/
-/upstream/content/sets-functions-relations/*
-!/upstream/content/sets-functions-relations/sets/
-!/upstream/content/sets-functions-relations/relations/
 !/upstream/assets/
 /upstream/assets/*
 !/upstream/assets/diagrams/

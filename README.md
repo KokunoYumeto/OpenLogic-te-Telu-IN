@@ -51,7 +51,9 @@ Changes are Telugu machine translation, provisional terminology choices,
 grammatical realization of source text tokens, a chapter-specific reader,
 font shaping and layout. Stable OLP identifiers, source paths, mathematical
 formulas, labels, citation keys, links and exercises are retained in the
-editable translation. English source files under upstream are unmodified.
+editable translation. The `upstream/content` mirror contains all 722 frozen
+English TeX units, byte-for-byte matched to `evidence/SOURCE_MANIFEST.jsonl`;
+those English source files are unmodified.
 This edition is not endorsed by the original authors.
 
 Native Telugu textbook pages were actually consulted and indexed by source,

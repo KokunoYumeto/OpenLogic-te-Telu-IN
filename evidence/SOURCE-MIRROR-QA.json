@@ -1,0 +1,62 @@
+{
+  "schema": "telugu-openlogic-source-mirror-qa/1",
+  "generated_utc": "2026-09-05T21:54:49.6315414Z",
+  "repair_parent_commit": "a258d0daaa01f81fae913c1d7b3845f41a6be540",
+  "scope": "Packaging-only public provenance repair; frozen English source bytes are added without changing Telugu translations or reader artifacts.",
+  "frozen_source": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "archive_bytes": 1806644,
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357",
+    "manifest_bytes": 356467,
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "public_manifest_identical_to_seed": true
+  },
+  "source_mirror": {
+    "directory": "upstream/content",
+    "expected_tex_files": 722,
+    "actual_tex_files": 722,
+    "manifest_matched_files": 722,
+    "missing_files": 0,
+    "byte_or_sha256_mismatches": 0,
+    "unexpected_tex_files": 0,
+    "aggregate_algorithm": "SHA-256 of UTF-8 lines sorted by path, each line: path relative to upstream/content, TAB, byte count, TAB, lowercase file SHA-256, LF",
+    "aggregate_sha256": "573e4328b4253d4d4b4c858626f129535bbcb50da93c5b61df95f5e66f2dc2f7"
+  },
+  "editable_translation": {
+    "scope": "OLP-0004..OLP-0137",
+    "tex_files": 134,
+    "parent_git_tree": "539983ebec98fc092af274bf1b6ba0e69516b507",
+    "aggregate_algorithm": "SHA-256 of UTF-8 lines sorted by path, each line: path relative to translation, TAB, byte count, TAB, lowercase file SHA-256, LF",
+    "aggregate_sha256": "2a6c120067722db2783e7e2b55b4f11111910aae6f8d1a603ee845a327de482a",
+    "whole_range_structural_audit_units": 134,
+    "whole_range_structural_audit_failures": 0
+  },
+  "semantic_html_reader": {
+    "scope": "OLP-0004..OLP-0010",
+    "units": 7,
+    "parent_docs_git_tree": "118c57e348ff0a11e8131ffa41782ef6657108c1",
+    "docs_files": 10,
+    "docs_aggregate_sha256": "01bcea738005f6980aac48a629b9fe1f89f310fcdc2273fcd27d808485d288aa",
+    "index_html_sha256": "b7869285497f7159e632ab108a17369827f62668cd9adcbfd6ca540b6498c335",
+    "deterministic_audit": "pass"
+  },
+  "canon_review": {
+    "validator": "pass",
+    "decisions": 123,
+    "terminology_decisions": 41,
+    "source_corrections": 82,
+    "occurrences": 233,
+    "translation_decision_qa_sha256": "3ad284a9b1d6a78dc2b6cd5c7ff61ea95e15c066c6ed89230e2b5edb58eaeed6"
+  },
+  "privacy_scan": {
+    "scope": "Complete staged Git index",
+    "credential_or_local_machine_path_patterns": 8,
+    "matches": 0,
+    "status": "pass"
+  },
+  "staged_non_source_diff_check": "pass",
+  "upstream_whitespace_policy": "Original whitespace is intentionally preserved because source byte identity is the provenance requirement.",
+  "tex_toolchain_invoked": false,
+  "status": "pass"
+}
