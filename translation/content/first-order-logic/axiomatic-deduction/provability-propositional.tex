@@ -1,0 +1,92 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: provability-propositional
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{ppr}}
+      {\olfileid{pl}{axd}{ppr}}
+
+\olsection{\usetoken{S}{derivability} మరియు ప్రతిజ్ఞాత్మక సంయోజకాలు}
+
+\begin{explain}
+  $!A \land !B \Proves !A$, $!A, !A \lif !B \Proves !B$ (మోడస్
+  పోనెన్స్) వంటి, ప్రతిజ్ఞాత్మక సంయోజకాలకు సంబంధించిన కొన్ని ప్రాథమిక
+  వాస్తవాలను స్థాపించడానికి స్వీకృతాధారిత నిగమనంలోని
+  !!{derivability} సంబంధం~$\Proves$ తగినంత బలమైనదని నిరూపిస్తాం.
+  సంపూర్ణతా సిద్ధాంత నిరూపణకు ఈ వాస్తవాలు అవసరం.
+\end{explain}
+
+\begin{prop}\ollabel{prop:provability-land}
+  \begin{enumerate}
+  \item \ollabel{prop:provability-land-left} $!A \land !B \Proves
+    !A$, $!A \land !B \Proves !B$ రెండూ.
+  \item \ollabel{prop:provability-land-right} $!A, !B \Proves !A \land !B$.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item \olref[prp]{ax:land1}, \texttt{ax:land2}ల నుంచి మోడస్
+      పోనెన్స్ ద్వారా.
+    \sourcecorrection{OLTEAXD-007}{సంయోగపు ఎడమ, కుడి భాగాలను పొందే మొదటి
+    నిరూపణలో ఆంగ్ల మూలం రెండవ ప్రక్షేపణకూ \olref[prp]{ax:land1}ను
+    సూచించింది. రెండవ పర్యవసానానికి అవసరమైనది \texttt{ax:land2} కనుక
+    ఆ సూచనను సరిచేశాం.}
+  \item \olref[prp]{ax:land3} నుంచి మోడస్ పోనెన్స్‌ను రెండుసార్లు
+    వర్తింపజేయడం ద్వారా.
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-lor}
+  \begin{enumerate}
+  \item $!A \lor !B, \lnot !A, \lnot !B$ విరుద్ధం.
+  \item $!A \Proves !A \lor !B$, $!B \Proves !A \lor !B$ రెండూ.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item \texttt{ax:lnot2} నుంచి $\Proves \lnot !A \lif (!A
+    \lif \lfalse)$, $\Proves \lnot !B \lif (!B \lif \lfalse)$
+    లభిస్తాయి.
+    \sourcecorrection{OLTEAXD-008}{ఆంగ్ల మూలం $\lnot !A \lif
+    (!A \lif \lfalse)$ను పొందడానికి \olref[prp]{ax:lnot1}ను
+    సూచించింది. ఆ రూపం \texttt{ax:lnot2} యొక్క రూపం కనుక సూచనను
+    సరిచేశాం.}
+    కాబట్టి నిగమన సిద్ధాంతం వల్ల $\{\lnot !A\} \Proves
+    !A \lif \lfalse$, $\{\lnot !B\} \Proves !B \lif \lfalse$.
+    \olref[prp]{ax:lor3} నుంచి $\{\lnot !A, \lnot !B\} \Proves
+    (!A \lor !B) \lif \lfalse$ లభిస్తుంది. నిగమన సిద్ధాంతం వల్ల,
+    $\{!A \lor !B, \lnot !A, \lnot !B\} \Proves \lfalse$.
+  \item \olref[prp]{ax:lor1}, \olref[prp]{ax:lor2}ల నుంచి మోడస్
+    పోనెన్స్ ద్వారా.
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-lif}
+  \begin{enumerate}
+  \item \ollabel{prop:provability-lif-left} $!A, !A \lif !B \Proves !B$.
+  \item \ollabel{prop:provability-lif-right}
+    $\lnot !A \Proves !A \lif !B$, $!B \Proves !A \lif !B$ రెండూ.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item మనం ఇలా !!{derive} చేయవచ్చు:
+    \begin{derivation}
+      1. & $!A$ & \Hyp\\
+      2. & $!A \lif !B$ & \Hyp\\
+      3. & $!B$ & 1, 2, \MP
+    \end{derivation}
+
+  \item వరుసగా \olref[prp]{ax:lnot2}, \olref[prp]{ax:lif1}, నిగమన
+    సిద్ధాంతం ద్వారా.
+  \end{enumerate}
+\end{proof}
+
+\end{document}

@@ -1,0 +1,145 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: proof-theoretic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{ptn}}
+      {\olfileid{pl}{axd}{ptn}}
+
+\olsection{నిరూపణ-సిద్ధాంత భావనలు}
+
+\begin{explain}
+మనం అనేక ముఖ్యమైన అర్థవిజ్ఞాన భావనలను
+(\iftag{FOL}{సార్వత్రిక సత్యత్వం}{సర్వసత్యత}, అనుగమనం, సంతృప్తత)
+నిర్వచించినట్లే, ఇప్పుడు వాటికి సరిపోలే \emph{నిరూపణ-సిద్ధాంత
+భావనలను} నిర్వచిస్తాం. వీటిని !!{structure}sలో !!{sentence}s
+సంతృప్తి చెందడాన్ని ఆశ్రయించి నిర్వచించం; కొన్ని సూత్రాల
+!!{derivability} లేదా !!{nonderivability}ను ఆశ్రయించి నిర్వచిస్తాం.
+ఈ భావనలు ఏకీభవిస్తాయని కనుగొనడం ఒక ముఖ్యమైన ఆవిష్కరణ. అవి
+ఏకీభవిస్తాయనే విషయమే \emph{నిర్దుష్టత}, \emph{సంపూర్ణత}
+సిద్ధాంతాల సారం.
+\end{explain}
+
+\begin{defn}[!!^{derivability}]
+~$!A$తో ముగిసే ఒక !!a{derivation}~$\Gamma$ నుంచి ఉంటే,
+!!^a{formula}~$!A$ను $\Gamma$ నుంచి \emph{!!{derivable}} అంటాం;
+దీన్ని $\Gamma \Proves !A$ అని రాస్తాం.
+\end{defn}
+
+\begin{defn}[సిద్ధాంతాలు]
+ఖాళీ సమితి నుంచి $!A$కు ఒక !!a{derivation} ఉంటే,
+!!^a{formula}~$!A$ ఒక \emph{సిద్ధాంతం}. $!A$ సిద్ధాంతమైతే
+$\Proves !A$ అని, కాకపోతే $\Proves/ !A$ అని రాస్తాం.
+\end{defn}
+
+\begin{defn}[అవైరుధ్యం]
+!!{formula}s సమితి~$\Gamma$, $\Gamma\Proves/ \lfalse$ అయితే,
+అప్పుడు మాత్రమే \emph{అవిరుద్ధం}; లేకపోతే అది \emph{విరుద్ధం}.
+\end{defn}
+
+\begin{prop}[స్వావర్తనత్వం]
+\ollabel{prop:reflexivity}
+$!A \in \Gamma$ అయితే, $\Gamma \Proves !A$.
+\end{prop}
+
+\begin{proof}
+  !!{formula}~$!A$ ఒక్కటే,~$\Gamma$ నుంచి~$!A$కు ఒక
+  !!a{derivation}.
+\end{proof}
+
+\begin{prop}[ఏకదిశత]
+\ollabel{prop:monotonicity}
+$\Gamma \subseteq \Delta$, $\Gamma \Proves !A$ అయితే,
+$\Delta \Proves !A$.
+\end{prop}
+
+\begin{proof}
+$\Gamma$ నుంచి $!A$కు ఉన్న ఏ !!{derivation} అయినా~$\Delta$ నుంచి
+$!A$కు కూడా ఒక !!a{derivation}.
+\end{proof}
+
+\begin{prop}[సంక్రామకత్వం]
+\ollabel{prop:transitivity}
+$\Gamma \Proves !A$, $\{!A\} \cup \Delta \Proves !B$ అయితే,
+$\Gamma \cup \Delta \Proves !B$.
+\end{prop}
+
+\begin{proof}
+  $\{!A\} \cup \Delta \Proves !B$ అని అనుకుందాం. అప్పుడు
+  $\{!A\} \cup \Delta$ నుంచి~$!B_1$, \dots, $!B_l = !B$ అనే ఒక
+  !!a{derivation} ఉంది. ఆ !!{derivation}లోని కొన్ని దశలు, ముందరి
+  పంక్తి~$!B_i = !A$ను సూచించే నియమం వల్ల సరైనవిగా ఉంటాయి.
+  పరికల్పన ప్రకారం,~$\Gamma$ నుంచి~$!A$కు ఒక !!a{derivation} ఉంది;
+  అంటే, ప్రతి $!A_i$ ఒక స్వీకృతమైనా,~$\Gamma$ యొక్క ఒక
+  !!a{element} అయినా, నిగమన నియమం వల్ల సరైనదైనా అయ్యే
+  !!a{derivation}~$!A_1$, \dots, $!A_k = !A$ ఉంది. ఇప్పుడు ఈ క్రమాన్ని
+  పరిశీలించండి:
+  \[
+  !A_1, \dots, !A_k = !A, !B_1, \dots, !B_l = !B.
+  \]
+  ఇది $\Gamma \cup \Delta$ నుంచి~$!B$కు సరైన !!{derivation}; ఎందుకంటే
+  ప్రతి $!B_i = !A$ ఇప్పుడు~$!A_k = !A$ను సమర్థించిన అదే నియమం వల్ల
+  సమర్థించబడుతుంది.
+  \sourcecorrection{OLTEAXD-001}{ఆంగ్ల మూలం ఈ చివరి వాక్యంలో
+  $B_i = !A$ అని రాసి, సూత్రపు మెటాచరరాశి ముందు అవసరమైన ఆశ్చర్యార్థక
+  టోకెన్‌ను వదిలింది. ముందరి నిగమన క్రమానికి సరిపోయేలా
+  $!B_i = !A$గా సరిచేశాం.}
+\end{proof}
+
+దీనర్థం, ముఖ్యంగా, $\Gamma \Proves !A$, $!A \Proves !B$ అయితే
+$\Gamma \Proves !B$. అలాగే, $!A_1, \dots, !A_n \Proves !B$ అయ్యి,
+ప్రతి~$i$కు $\Gamma \Proves !A_i$ అయితే, $\Gamma \Proves !B$ అని
+కూడా అనుసరిస్తుంది.
+
+\begin{prop}
+\ollabel{prop:incons}
+ప్రతి~$!A$కు $\Gamma \Proves !A$ అయితే, అప్పుడు మాత్రమే $\Gamma$
+విరుద్ధం.
+\end{prop}
+
+\begin{proof}
+సాధన.
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][axd][ptn]{prop:incons}ను నిరూపించండి.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][axd][ptn]{prop:incons}ను నిరూపించండి.
+\end{prob}
+\tagendprob
+
+\begin{prop}[సంహతత్వం]
+\ollabel{prop:proves-compact}
+  \begin{enumerate}
+  \item $\Gamma \Proves !A$ అయితే, $\Gamma_0 \Proves !A$ అయ్యే
+    పరిమిత ఉపసమితి $\Gamma_0 \subseteq \Gamma$ ఒకటి ఉంటుంది.
+  \item~$\Gamma$ యొక్క ప్రతి పరిమిత ఉపసమితి అవిరుద్ధమైతే,
+    $\Gamma$ అవిరుద్ధం.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $\Gamma \Proves !A$ అయితే, $!A \ident !A_n$ అయ్యేలా,
+      అలాగే ప్రతి $!A_i$ ఒక తార్కిక స్వీకృతమైనా,~$\Gamma$ యొక్క ఒక
+      !!a{element} అయినా, ముందరి !!{formula}s నుంచి మోడస్ పోనెన్స్
+      ద్వారా వచ్చేదైనా అయ్యేలా $!A_1$, \dots,~$!A_n$ అనే పరిమిత
+      !!{formula}s క్రమం ఉంటుంది. వీటిలో~$\Gamma$లో ఉన్న $!A_i$ల
+      సమితినే $\Gamma_0$గా తీసుకోండి. అప్పుడు ఆ !!{derivation},
+      ~ $\Gamma_0$ నుంచి కూడా ఒక !!a{derivation}; అందువల్ల
+      $\Gamma_0 \Proves !A$.
+    \item $!A \ident \lfalse$ అనే ప్రత్యేక సందర్భంలో ఇది~(1) యొక్క
+      విపర్యయ ప్రతిజ్ఞ.
+\end{enumerate}
+\end{proof}
+
+\end{document}

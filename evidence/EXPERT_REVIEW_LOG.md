@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 108 of 722 draft units**. This log contains 39 terminology/sense decisions and 62 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 122 of 722 draft units**. This log contains 40 terminology/sense decisions and 73 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -943,6 +943,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for cross-chapter consistency and broad truth/proof register; high nomenclatural for the formal tableau, sign and branch-state headwords
 
 - Please double-check: Please double-check whether “చిహ్నిత సూత్రం / సత్యమూల్య సంకేతం / టాబ్లో / సంవృత శాఖ / వివృత శాఖ / తనిఖీ గుర్తు / ఐగెన్ చరరాశి షరతు / కట్ నియమం” is idiomatic and technically standard for “signed formula / truth-value sign / tableau / closed branch / open branch / checkmark / eigenvariable condition / cut rule” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T040 — axiom / axiom instance / axiomatic derivation / inference rule / modus ponens / quantifier rule / derivability relation / proof-theoretic notion / deduction theorem
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: స్వీకృతం / స్వీకృత రూపం / స్వీకృతాధారిత నిరూపణ / నిగమన నియమం / మోడస్ పోనెన్స్ / పరిమాణీకరణిక నియమం / నిరూప్యతా సంబంధం / నిరూపణ-సిద్ధాంత భావన / నిగమన సిద్ధాంతం
+
+- Exact implementation: OLP-0113; first-order-logic/axiomatic-deduction/rules-and-proofs; content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:16-21 ↔ translation/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:16-21 (OLP-0113-B006); printed/PDF page pending; OLP-0113; first-order-logic/axiomatic-deduction/rules-and-proofs; content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41 ↔ translation/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41 (OLP-0113-B008); printed/PDF page pending; OLP-0114; first-order-logic/axiomatic-deduction/axioms-rules-propositional; content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-17 ↔ translation/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-17 (OLP-0114-B006); printed/PDF page pending; OLP-0114; first-order-logic/axiomatic-deduction/axioms-rules-propositional; content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-41 ↔ translation/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-41 (OLP-0114-B007); printed/PDF page pending; OLP-0115; first-order-logic/axiomatic-deduction/axioms-rules-quantifiers; content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-32 ↔ translation/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-32 (OLP-0115-B007); printed/PDF page pending; OLP-0118; first-order-logic/axiomatic-deduction/proof-theoretic-notions; content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:13-23 ↔ translation/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:13-24 (OLP-0118-B005); printed/PDF page pending; OLP-0121; first-order-logic/axiomatic-deduction/provability-consistency; content/first-order-logic/axiomatic-deduction/provability-consistency.tex:14-17 ↔ translation/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:14-17 (OLP-0121-B006); printed/PDF page pending; OLP-0119; first-order-logic/axiomatic-deduction/deduction-theorem; content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:49-51 ↔ translation/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:48-50 (OLP-0119-B011); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P002, PDF 9, printed 35, Main paragraph, lower half
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P003 and TE-P004 support broad reasoning, proof, induction, deduction and theorem exposition, while TE-P002 supports logic and mathematical-statement register. They do not independently attest the axiomatic-deduction taxonomy. The chapter's finite-sequence definition, axiom schemata, modus-ponens and quantifier rules, derivability notation and deduction theorem control the selected senses. Modus ponens is an explicit transliterated borrowing.
+
+- Alternatives: descriptive Telugu axiom, inference and proof-theoretic headwords with a modus-ponens borrowing (chosen); leave the axiomatic-deduction taxonomy in English (not adopted); translate modus ponens into an unattested coined headword (not adopted); retain protected source-token spellings inside grammatical macros (chosen for source identity)
+
+- Uncertainty: Low for cross-chapter consistency and broad proof/deduction register; high nomenclatural for axiom, axiom-instance and proof-theoretic headwords
+
+- Please double-check: Please double-check whether “స్వీకృతం / స్వీకృత రూపం / స్వీకృతాధారిత నిరూపణ / నిగమన నియమం / మోడస్ పోనెన్స్ / పరిమాణీకరణిక నియమం / నిరూప్యతా సంబంధం / నిరూపణ-సిద్ధాంత భావన / నిగమన సిద్ధాంతం” is idiomatic and technically standard for “axiom / axiom instance / axiomatic derivation / inference rule / modus ponens / quantifier rule / derivability relation / proof-theoretic notion / deduction theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -2431,3 +2455,267 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check that only the dangling comma after the two signed assumptions was removed and no tableau formula changed.
+
+## REV-OLTEAXD-001 — OLTEAXD-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored the formula-metavariable marker in !B_i = !A, matching the displayed derivation and preceding references; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0118; first-order-logic/axiomatic-deduction/proof-theoretic-notions; line 82, final justification in the transitivity proof ↔ translation/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:87 (OLP-0118-B015); printed/PDF page pending
+
+- Authorities actually checked: OLTEAXD-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the formula-metavariable marker in !B_i = !A, matching the displayed derivation and preceding references; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the transitivity proof consistently names the indexed formula as !B_i, matching the displayed concatenated derivation.
+
+## REV-OLTEAXD-002 — OLTEAXD-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: wrote the well-formed membership statement !B in Gamma union {!A}; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0119; first-order-logic/axiomatic-deduction/deduction-theorem; line 67, length-one derivation case ↔ translation/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:73 (OLP-0119-B014); printed/PDF page pending
+
+- Authorities actually checked: OLTEAXD-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: wrote the well-formed membership statement !B in Gamma union {!A}; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the length-one derivation case now states the complete membership proposition !B in Gamma union {!A}.
+
+## REV-OLTEAXD-003 — OLTEAXD-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: added the missing final parenthesis to balance the nested composition conditional; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0119; first-order-logic/axiomatic-deduction/deduction-theorem; lines 106-107, derivfacts item (a) ↔ translation/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:122 (OLP-0119-B018); printed/PDF page pending
+
+- Authorities actually checked: OLTEAXD-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: added the missing final parenthesis to balance the nested composition conditional; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that derived-facts item (a) has exactly the balanced parentheses required by its nested composition conditional.
+
+## REV-OLTEAXD-004 — OLTEAXD-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: added the missing final parenthesis to balance the quantified meta-conditional; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0120; first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers; line 44, second propositional meta-conditional ↔ translation/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:50 (OLP-0120-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTEAXD-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: added the missing final parenthesis to balance the quantified meta-conditional; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the quantified meta-conditional closes both nested consequent parentheses without changing any connective.
+
+## REV-OLTEAXD-005 — OLTEAXD-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: concluded Gamma proves A implies B, preserving the discharged antecedent required by the theorem; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0120; first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers; line 48, conclusion of the universal-quantifier case ↔ translation/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:54 (OLP-0120-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTEAXD-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: concluded Gamma proves A implies B, preserving the discharged antecedent required by the theorem; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the universal-quantifier case concludes Gamma proves A implies B, exactly matching the deduction theorem target.
+
+## REV-OLTEAXD-006 — OLTEAXD-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: stated Gamma proves not-A by reflexivity before the two modus-ponens applications; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0121; first-order-logic/axiomatic-deduction/provability-consistency; lines 65-68, explicit-inconsistency proof ↔ translation/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:73 (OLP-0121-B014); printed/PDF page pending
+
+- Authorities actually checked: OLTEAXD-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: stated Gamma proves not-A by reflexivity before the two modus-ponens applications; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that reflexivity explicitly supplies Gamma proves not-A before the two modus-ponens applications.
+
+## REV-OLTEAXD-007 — OLTEAXD-007
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: named ax:land2 for the second projection while preserving the source's erroneous ax:land1 reference inside the adjacent disclosure note
+
+- Exact implementation: OLP-0122; first-order-logic/axiomatic-deduction/provability-propositional; line 33, proof of the two conjunction projections ↔ translation/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:35 (OLP-0122-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTEAXD-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: named ax:land2 for the second projection while preserving the source's erroneous ax:land1 reference inside the adjacent disclosure note
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the left conjunction projection uses ax:land1 and the right projection uses ax:land2.
+
+## REV-OLTEAXD-008 — OLTEAXD-008
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: named ax:lnot2 for the displayed instance while retaining the source's erroneous ax:lnot1 reference inside the adjacent disclosure note
+
+- Exact implementation: OLP-0122; first-order-logic/axiomatic-deduction/provability-propositional; lines 50-56, first disjunction proof ↔ translation/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:56 (OLP-0122-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTEAXD-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: named ax:lnot2 for the displayed instance while retaining the source's erroneous ax:lnot1 reference inside the adjacent disclosure note
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that not-A implies (A implies false) is attributed to ax:lnot2, not the contraposition axiom.
+
+## REV-OLTEAXD-009 — OLTEAXD-009
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: stated derivability of top as an axiom and applied modus ponens to the derived conditional; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0123; first-order-logic/axiomatic-deduction/provability-quantifiers; line 30, final step of strong generalization proof ↔ translation/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:33 (OLP-0123-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTEAXD-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: stated derivability of top as an axiom and applied modus ponens to the derived conditional; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the last strong-generalization step uses the top axiom and modus ponens rather than invoking the deduction theorem again.
+
+## REV-OLTEAXD-010 — OLTEAXD-010
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored the ! formula-metavariable marker before B in all three affected formulas; adjacent sourcecorrection discloses the repeated repair
+
+- Exact implementation: OLP-0124; first-order-logic/axiomatic-deduction/soundness; lines 80, 82 and 97, universal-quantifier rule case ↔ translation/content/first-order-logic/axiomatic-deduction/soundness.tex:106 (OLP-0124-B013); printed/PDF page pending
+
+- Authorities actually checked: OLTEAXD-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the ! formula-metavariable marker before B in all three affected formulas; adjacent sourcecorrection discloses the repeated repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that all three repaired B occurrences in the quantifier-soundness case carry the formula-metavariable marker.
+
+## REV-OLTEAXD-011 — OLTEAXD-011
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restricted the proposition to closed terms, matching ax:id1's stated schema scope; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0125; first-order-logic/axiomatic-deduction/identity; line 39, proposition prop:iden1 ↔ translation/content/first-order-logic/axiomatic-deduction/identity.tex:41 (OLP-0125-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTEAXD-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restricted the proposition to closed terms, matching ax:id1's stated schema scope; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that reflexive identity is claimed only for closed terms, matching the stated scope of ax:id1.

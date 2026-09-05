@@ -65,8 +65,8 @@ def main() -> None:
     correction_records = [item for item in jsonl(data_dir / "SOURCE_CORRECTIONS.jsonl") if item["status"].startswith("applied")]
     if len(decisions) != len(term_records) + len(correction_records):
         raise ValueError("Decision count does not match the primary ledgers")
-    if register["edition_release"]["source_units"] != 108:
-        raise ValueError("Edition coverage is not the expected 108 source units")
+    if register["edition_release"]["source_units"] != 122:
+        raise ValueError("Edition coverage is not the expected 122 source units")
     generator = register["generator"]
     generator_path = repo / Path(generator["path_or_uri"])
     generator_bytes = generator_path.read_bytes()

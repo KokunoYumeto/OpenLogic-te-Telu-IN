@@ -1,22 +1,22 @@
 {
   "schema": "openlogic-te-expert-review-index/2",
   "status": "partial_no_holds",
-  "scope_completion": "partial_108_of_722_draft_units",
+  "scope_completion": "partial_122_of_722_draft_units",
   "language": "Telugu",
   "script": "Telu",
   "locale": "te-Telu-IN",
   "counts": {
-    "records": 101,
-    "terminology": 39,
-    "source_corrections": 62,
-    "implementation_occurrences": 187
+    "records": 113,
+    "terminology": 40,
+    "source_corrections": 73,
+    "implementation_occurrences": 206
   },
   "pagination_note": "Final printed/PDF page is deliberately null until the cited source unit is integrated into the coherent reader and final pagination is available. Source and target file/line locators are authoritative meanwhile.",
   "records": [
     {
       "review_id": "REV-TE-T001",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -75,7 +75,7 @@
     {
       "review_id": "REV-TE-T002",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -144,7 +144,7 @@
     {
       "review_id": "REV-TE-T003",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -213,7 +213,7 @@
     {
       "review_id": "REV-TE-T004",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -291,7 +291,7 @@
     {
       "review_id": "REV-TE-T005",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -359,7 +359,7 @@
     {
       "review_id": "REV-TE-T006",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -427,7 +427,7 @@
     {
       "review_id": "REV-TE-T007",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -486,7 +486,7 @@
     {
       "review_id": "REV-TE-T008",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -602,7 +602,7 @@
     {
       "review_id": "REV-TE-T009",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -733,7 +733,7 @@
     {
       "review_id": "REV-TE-T010",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -807,7 +807,7 @@
     {
       "review_id": "REV-TE-T011",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -899,7 +899,7 @@
     {
       "review_id": "REV-TE-T012",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1008,7 +1008,7 @@
     {
       "review_id": "REV-TE-T013",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1115,7 +1115,7 @@
     {
       "review_id": "REV-TE-T014",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1207,7 +1207,7 @@
     {
       "review_id": "REV-TE-T015",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1338,7 +1338,7 @@
     {
       "review_id": "REV-TE-T016",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1505,7 +1505,7 @@
     {
       "review_id": "REV-TE-T017",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1657,7 +1657,7 @@
     {
       "review_id": "REV-TE-T018",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1755,7 +1755,7 @@
     {
       "review_id": "REV-TE-T019",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1863,7 +1863,7 @@
     {
       "review_id": "REV-TE-T020",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1946,7 +1946,7 @@
     {
       "review_id": "REV-TE-T021",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2068,7 +2068,7 @@
     {
       "review_id": "REV-TE-T022",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2136,7 +2136,7 @@
     {
       "review_id": "REV-TE-T023",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2235,7 +2235,7 @@
     {
       "review_id": "REV-TE-T024",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2349,7 +2349,7 @@
     {
       "review_id": "REV-TE-T025",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2409,7 +2409,7 @@
     {
       "review_id": "REV-TE-T026",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2494,7 +2494,7 @@
     {
       "review_id": "REV-TE-T027",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2587,7 +2587,7 @@
     {
       "review_id": "REV-TE-T028",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2734,7 +2734,7 @@
     {
       "review_id": "REV-TE-T029",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2852,7 +2852,7 @@
     {
       "review_id": "REV-TE-T030",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2970,7 +2970,7 @@
     {
       "review_id": "REV-TE-T031",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3118,7 +3118,7 @@
     {
       "review_id": "REV-TE-T032",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3257,7 +3257,7 @@
     {
       "review_id": "REV-TE-T033",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3390,7 +3390,7 @@
     {
       "review_id": "REV-TE-T034",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3499,7 +3499,7 @@
     {
       "review_id": "REV-TE-T035",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3653,7 +3653,7 @@
     {
       "review_id": "REV-TE-T036",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3852,7 +3852,7 @@
     {
       "review_id": "REV-TE-T037",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3976,7 +3976,7 @@
     {
       "review_id": "REV-TE-T038",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4085,7 +4085,7 @@
     {
       "review_id": "REV-TE-T039",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4253,9 +4253,194 @@
       "translation_hold": false
     },
     {
+      "review_id": "REV-TE-T040",
+      "record_type": "terminology_or_sense_decision",
+      "scope_completion": "partial_122_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "term_id": "TE-T040",
+      "source_term": "axiom / axiom instance / axiomatic derivation / inference rule / modus ponens / quantifier rule / derivability relation / proof-theoretic notion / deduction theorem",
+      "chosen_wording": "స్వీకృతం / స్వీకృత రూపం / స్వీకృతాధారిత నిరూపణ / నిగమన నియమం / మోడస్ పోనెన్స్ / పరిమాణీకరణిక నియమం / నిరూప్యతా సంబంధం / నిరూపణ-సిద్ధాంత భావన / నిగమన సిద్ధాంతం",
+      "chosen_sense": "The precise extension is fixed by the adjacent OpenLogic definition and formulas.",
+      "evidence_status": "proof_register_attested_axiomatic_deduction_senses_definition_controlled_explicit_borrowing",
+      "confidence": "mixed_provisional",
+      "review_priority": "high",
+      "expert_review_status": "provisional_pending_optional_specialist_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0113",
+          "section_path": "first-order-logic/axiomatic-deduction/rules-and-proofs",
+          "source_file": "content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex",
+          "target_file": "translation/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex",
+          "segment_id": "OLP-0113-B006",
+          "source_locator": "content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:16-21",
+          "target_locator": "translation/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:16-21",
+          "source_unit_sha256": "8b5cf02fabe434821d3a74db8fa803d25c772e38254c391edf03186b3dc23257",
+          "translation_unit_sha256": "5636c1394c2a4a99ffcd9a2b6d5080cc226b05e3decabd54f87650b17f39af7c",
+          "source_segment_sha256": "47737ff79b5b0c127fecbca57c47146e10c0da32ad0fd87de3530bcf4156d11e",
+          "translation_segment_sha256": "8231b0ee278484159205c3caf7417bdf3ea9cd6f095f923d3b2d4616fb3c81f2",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0113",
+          "section_path": "first-order-logic/axiomatic-deduction/rules-and-proofs",
+          "source_file": "content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex",
+          "target_file": "translation/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex",
+          "segment_id": "OLP-0113-B008",
+          "source_locator": "content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41",
+          "target_locator": "translation/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41",
+          "source_unit_sha256": "8b5cf02fabe434821d3a74db8fa803d25c772e38254c391edf03186b3dc23257",
+          "translation_unit_sha256": "5636c1394c2a4a99ffcd9a2b6d5080cc226b05e3decabd54f87650b17f39af7c",
+          "source_segment_sha256": "e6113a54f0f7752034f23bde3e1e1d295c09608330c99ccbd909cafe7fc79afd",
+          "translation_segment_sha256": "d35595dc62090befb68cf60a60cd7b71294696914bcd84f2254bcc945a199a27",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0114",
+          "section_path": "first-order-logic/axiomatic-deduction/axioms-rules-propositional",
+          "source_file": "content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex",
+          "target_file": "translation/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex",
+          "segment_id": "OLP-0114-B006",
+          "source_locator": "content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-17",
+          "target_locator": "translation/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-17",
+          "source_unit_sha256": "c6332d0af2635bb1c79d1f0e418f26472cdf1022ed23818ca51e9e1226889810",
+          "translation_unit_sha256": "414737e6a965707e21f3da4129380a4a55bfce8d7640ace6e1ba0f464d9c35c5",
+          "source_segment_sha256": "923772e078eba35387233f2b4fdb9ea468419d6d0c2cbf98906aabc5bf00e2cf",
+          "translation_segment_sha256": "460a4510acd59edaa6df4dbd45702dd9b0d958f431de0fb77e57984661c44b57",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0114",
+          "section_path": "first-order-logic/axiomatic-deduction/axioms-rules-propositional",
+          "source_file": "content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex",
+          "target_file": "translation/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex",
+          "segment_id": "OLP-0114-B007",
+          "source_locator": "content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-41",
+          "target_locator": "translation/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-41",
+          "source_unit_sha256": "c6332d0af2635bb1c79d1f0e418f26472cdf1022ed23818ca51e9e1226889810",
+          "translation_unit_sha256": "414737e6a965707e21f3da4129380a4a55bfce8d7640ace6e1ba0f464d9c35c5",
+          "source_segment_sha256": "8d0638124ee05f3c4d29a166184fc69dbdaf9b725c06ef47f576d51d5c2a34a7",
+          "translation_segment_sha256": "b6a48a302068134ae811c568b1ea7189627eeb8a8df3ea4314b6f6f766b662b1",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0115",
+          "section_path": "first-order-logic/axiomatic-deduction/axioms-rules-quantifiers",
+          "source_file": "content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex",
+          "target_file": "translation/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex",
+          "segment_id": "OLP-0115-B007",
+          "source_locator": "content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-32",
+          "target_locator": "translation/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-32",
+          "source_unit_sha256": "fa0af48f98b58f2c7b5df8aa80cf2e4981936e237594ddce342e826bbca2ddc8",
+          "translation_unit_sha256": "ebb45357983dc30c6ea2ec6656d6419b1788e446be2a83414bf46a1aad489fb6",
+          "source_segment_sha256": "5f35ec2aa9f4eb3278fb80034cb5a60ce7f430950d732855f119b364edf97de8",
+          "translation_segment_sha256": "72fc25aaed45b733ac115a15442984702ba0d8cea05684da89b0e476f7048ae4",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0118",
+          "section_path": "first-order-logic/axiomatic-deduction/proof-theoretic-notions",
+          "source_file": "content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex",
+          "target_file": "translation/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex",
+          "segment_id": "OLP-0118-B005",
+          "source_locator": "content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:13-23",
+          "target_locator": "translation/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:13-24",
+          "source_unit_sha256": "0afb9df4b5f0f5c1e892cf411d126f45acce94cfbdc9087e4bd37cb851cc370b",
+          "translation_unit_sha256": "c778f2e5483be61768f2962972cb261b72b0d4d6d1cc6a53cae6c0c78b6f89da",
+          "source_segment_sha256": "a4d7f9696615ed4c2bbd4f7c8f942c1bf076c86055419d4a2b6901960af18cc5",
+          "translation_segment_sha256": "1c61a0c7c06e27f11afa267f0631bb442345263af0a97812231bbdd0a60c0c9e",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0121",
+          "section_path": "first-order-logic/axiomatic-deduction/provability-consistency",
+          "source_file": "content/first-order-logic/axiomatic-deduction/provability-consistency.tex",
+          "target_file": "translation/content/first-order-logic/axiomatic-deduction/provability-consistency.tex",
+          "segment_id": "OLP-0121-B006",
+          "source_locator": "content/first-order-logic/axiomatic-deduction/provability-consistency.tex:14-17",
+          "target_locator": "translation/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:14-17",
+          "source_unit_sha256": "22a6a04d9ab4298d762efd6bf2041fa9bf3f2d91c6803b744458812c232cdacc",
+          "translation_unit_sha256": "eadfa5cd0b5a0edba1517e5fd233dd275b8051cda1c100018ac37e4f3a88662a",
+          "source_segment_sha256": "4b0d057e2c7e97206d98d1d07e3f4fb611af24b7daf6bb5e87ca5e0e8c9cc230",
+          "translation_segment_sha256": "ce956c955bdb9677cff28cb1622fa0fc30da18934e57c65e03cf1be4e142be06",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0119",
+          "section_path": "first-order-logic/axiomatic-deduction/deduction-theorem",
+          "source_file": "content/first-order-logic/axiomatic-deduction/deduction-theorem.tex",
+          "target_file": "translation/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex",
+          "segment_id": "OLP-0119-B011",
+          "source_locator": "content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:49-51",
+          "target_locator": "translation/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:48-50",
+          "source_unit_sha256": "ef122fcfc1a8c24e89cf5abe30efa11bcd0a1cc3ed9fca2426618e9174481780",
+          "translation_unit_sha256": "a75383bfb9a91bd05b111e06c436544430fd3397b41604f850fd3cdd7ae067a8",
+          "source_segment_sha256": "b1c4329bfa647032377188f78a9a68c3b628691205e2856723df16a1f60bc533",
+          "translation_segment_sha256": "09bb19bba4931e9043dc1d4b6645cc3420b264e3383c7ce71a79f6033284b8f9",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "passage_id": "TE-P003",
+          "source_id": "TE-C003",
+          "pdf_page": 4,
+          "printed_page": "30",
+          "region": "Reason-giving and proofs subsection",
+          "verified": "Native page visually read",
+          "role": "Native proof/explanation register; broad induction usage, not full formal induction theorem attestation"
+        },
+        {
+          "passage_id": "TE-P004",
+          "source_id": "TE-C002",
+          "pdf_page": 19,
+          "printed_page": "7",
+          "region": "Theorem 1.1 and surrounding Telugu explanation",
+          "verified": "Native Telugu page visually read; English facing page not substituted",
+          "role": "Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation"
+        },
+        {
+          "passage_id": "TE-P002",
+          "source_id": "TE-C003",
+          "pdf_page": 9,
+          "printed_page": "35",
+          "region": "Main paragraph, lower half",
+          "verified": "Native page visually read",
+          "role": "Logic and mathematical-statement usage; not evidence for a specific formal propositional-calculus term"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No human Telugu logician, mathematician or copy editor has reviewed this choice yet.",
+        "No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records."
+      ],
+      "rationale": "TE-P003 and TE-P004 support broad reasoning, proof, induction, deduction and theorem exposition, while TE-P002 supports logic and mathematical-statement register. They do not independently attest the axiomatic-deduction taxonomy. The chapter's finite-sequence definition, axiom schemata, modus-ponens and quantifier rules, derivability notation and deduction theorem control the selected senses. Modus ponens is an explicit transliterated borrowing.",
+      "alternatives_considered_or_recorded": [
+        "descriptive Telugu axiom, inference and proof-theoretic headwords with a modus-ponens borrowing (chosen)",
+        "leave the axiomatic-deduction taxonomy in English (not adopted)",
+        "translate modus ponens into an unattested coined headword (not adopted)",
+        "retain protected source-token spellings inside grammatical macros (chosen for source identity)"
+      ],
+      "uncertainty": "Low for cross-chapter consistency and broad proof/deduction register; high nomenclatural for axiom, axiom-instance and proof-theoretic headwords",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "precise_review_questions": [
+        "Please double-check whether “స్వీకృతం / స్వీకృత రూపం / స్వీకృతాధారిత నిరూపణ / నిగమన నియమం / మోడస్ పోనెన్స్ / పరిమాణీకరణిక నియమం / నిరూప్యతా సంబంధం / నిరూపణ-సిద్ధాంత భావన / నిగమన సిద్ధాంతం” is idiomatic and technically standard for “axiom / axiom instance / axiomatic derivation / inference rule / modus ponens / quantifier rule / derivability relation / proof-theoretic notion / deduction theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
+        "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
+      ],
+      "translation_hold": false
+    },
+    {
       "review_id": "REV-OLFUN-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4312,7 +4497,7 @@
     {
       "review_id": "REV-OLFUN-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4369,7 +4554,7 @@
     {
       "review_id": "REV-OLFUN-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4426,7 +4611,7 @@
     {
       "review_id": "REV-OLFUN-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4483,7 +4668,7 @@
     {
       "review_id": "REV-OLFUN-005",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4540,7 +4725,7 @@
     {
       "review_id": "REV-OLTESIZ-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4597,7 +4782,7 @@
     {
       "review_id": "REV-OLSIZ-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4654,7 +4839,7 @@
     {
       "review_id": "REV-OLTESIZ-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4711,7 +4896,7 @@
     {
       "review_id": "REV-OLSIZ-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4768,7 +4953,7 @@
     {
       "review_id": "REV-OLTESIZ-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4825,7 +5010,7 @@
     {
       "review_id": "REV-OLTESIZ-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4882,7 +5067,7 @@
     {
       "review_id": "REV-OLSIZ-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4939,7 +5124,7 @@
     {
       "review_id": "REV-OLSIZ-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4996,7 +5181,7 @@
     {
       "review_id": "REV-OLSIZ-005",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5053,7 +5238,7 @@
     {
       "review_id": "REV-OLSIZ-006",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5110,7 +5295,7 @@
     {
       "review_id": "REV-OLSIZ-007",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5167,7 +5352,7 @@
     {
       "review_id": "REV-OLSIZ-008",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5224,7 +5409,7 @@
     {
       "review_id": "REV-OLSIZ-009",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5281,7 +5466,7 @@
     {
       "review_id": "REV-OLSIZ-010",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5338,7 +5523,7 @@
     {
       "review_id": "REV-OLTEARITH-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5395,7 +5580,7 @@
     {
       "review_id": "REV-OLTEARITH-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5452,7 +5637,7 @@
     {
       "review_id": "REV-OLTEARITH-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5509,7 +5694,7 @@
     {
       "review_id": "REV-OLTEARITH-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5566,7 +5751,7 @@
     {
       "review_id": "REV-OLTEARITH-005",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5623,7 +5808,7 @@
     {
       "review_id": "REV-OLTEARITH-006",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5680,7 +5865,7 @@
     {
       "review_id": "REV-OLTEARITH-007",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5737,7 +5922,7 @@
     {
       "review_id": "REV-OLTEARITH-008",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5794,7 +5979,7 @@
     {
       "review_id": "REV-OLTEINF-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5851,7 +6036,7 @@
     {
       "review_id": "REV-OLTEINF-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5908,7 +6093,7 @@
     {
       "review_id": "REV-OLTEINF-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5965,7 +6150,7 @@
     {
       "review_id": "REV-OLTEINF-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6022,7 +6207,7 @@
     {
       "review_id": "REV-OLTEINF-005",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6079,7 +6264,7 @@
     {
       "review_id": "REV-OLTEINF-006",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6136,7 +6321,7 @@
     {
       "review_id": "REV-OLTEPLSYN-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6193,7 +6378,7 @@
     {
       "review_id": "REV-OLTEPLSYN-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6250,7 +6435,7 @@
     {
       "review_id": "REV-OLTEPLSYN-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6307,7 +6492,7 @@
     {
       "review_id": "REV-OLTEPLSYN-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6364,7 +6549,7 @@
     {
       "review_id": "REV-OLTEPRF-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6421,7 +6606,7 @@
     {
       "review_id": "REV-OLTEPRF-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6478,7 +6663,7 @@
     {
       "review_id": "REV-OLTEPRF-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6535,7 +6720,7 @@
     {
       "review_id": "REV-OLTEPRF-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6592,7 +6777,7 @@
     {
       "review_id": "REV-OLTESEQ-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6649,7 +6834,7 @@
     {
       "review_id": "REV-OLTESEQ-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6706,7 +6891,7 @@
     {
       "review_id": "REV-OLTESEQ-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6763,7 +6948,7 @@
     {
       "review_id": "REV-OLTESEQ-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6820,7 +7005,7 @@
     {
       "review_id": "REV-OLTESEQ-005",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6877,7 +7062,7 @@
     {
       "review_id": "REV-OLTEND-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6934,7 +7119,7 @@
     {
       "review_id": "REV-OLTEND-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6991,7 +7176,7 @@
     {
       "review_id": "REV-OLTEND-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7048,7 +7233,7 @@
     {
       "review_id": "REV-OLTEND-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7105,7 +7290,7 @@
     {
       "review_id": "REV-OLTETAB-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7162,7 +7347,7 @@
     {
       "review_id": "REV-OLTETAB-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7219,7 +7404,7 @@
     {
       "review_id": "REV-OLTETAB-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7276,7 +7461,7 @@
     {
       "review_id": "REV-OLTETAB-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7333,7 +7518,7 @@
     {
       "review_id": "REV-OLTETAB-005",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7390,7 +7575,7 @@
     {
       "review_id": "REV-OLTETAB-006",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7447,7 +7632,7 @@
     {
       "review_id": "REV-OLTETAB-007",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7504,7 +7689,7 @@
     {
       "review_id": "REV-OLTETAB-008",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7561,7 +7746,7 @@
     {
       "review_id": "REV-OLTETAB-009",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7618,7 +7803,7 @@
     {
       "review_id": "REV-OLTETAB-010",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7675,7 +7860,7 @@
     {
       "review_id": "REV-OLTETAB-011",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7732,7 +7917,7 @@
     {
       "review_id": "REV-OLTETAB-012",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_108_of_722_draft_units",
+      "scope_completion": "partial_122_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -7782,6 +7967,633 @@
       "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
       "precise_review_questions": [
         "Please double-check that only the dangling comma after the two signed assumptions was removed and no tableau formula changed."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTEAXD-001",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_122_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTEAXD-001",
+      "classification": "confirmed_missing_formula_metavariable_marker_in_transitivity_proof",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0118",
+          "section_path": "first-order-logic/axiomatic-deduction/proof-theoretic-notions",
+          "source_file": "content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex",
+          "target_file": "translation/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex",
+          "segment_id": "OLP-0118-B015",
+          "source_locator": "line 82, final justification in the transitivity proof",
+          "target_locator": "translation/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:87",
+          "source_unit_sha256": "0afb9df4b5f0f5c1e892cf411d126f45acce94cfbdc9087e4bd37cb851cc370b",
+          "translation_unit_sha256": "c778f2e5483be61768f2962972cb261b72b0d4d6d1cc6a53cae6c0c78b6f89da",
+          "source_segment_sha256": "0e39e774ec66a882924e3a7b8f80ea0a4435b0e639e6a7dc1aa96de214ee2eb4",
+          "translation_segment_sha256": "c4449ab1a365768657bf8956791e549f8db851054619c1de0a25bd9562a94229",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTEAXD-20260905",
+          "audit_review_sha256": "cda0b0e084ac1cc0d9608f80f2b4727d8413af539a509803615c279dfde70e57",
+          "audit_findings_sha256": "f2b3046c36663536978f3c0c43b4e92606cdce420c7f41496133d389acb52f19"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex",
+          "source_sha256": "0afb9df4b5f0f5c1e892cf411d126f45acce94cfbdc9087e4bd37cb851cc370b"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "restored the formula-metavariable marker in !B_i = !A, matching the displayed derivation and preceding references; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that the transitivity proof consistently names the indexed formula as !B_i, matching the displayed concatenated derivation."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTEAXD-002",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_122_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTEAXD-002",
+      "classification": "confirmed_malformed_membership_statement_in_induction_basis",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0119",
+          "section_path": "first-order-logic/axiomatic-deduction/deduction-theorem",
+          "source_file": "content/first-order-logic/axiomatic-deduction/deduction-theorem.tex",
+          "target_file": "translation/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex",
+          "segment_id": "OLP-0119-B014",
+          "source_locator": "line 67, length-one derivation case",
+          "target_locator": "translation/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:73",
+          "source_unit_sha256": "ef122fcfc1a8c24e89cf5abe30efa11bcd0a1cc3ed9fca2426618e9174481780",
+          "translation_unit_sha256": "a75383bfb9a91bd05b111e06c436544430fd3397b41604f850fd3cdd7ae067a8",
+          "source_segment_sha256": "b7c1326740e4cafbf450090e32b7cb3134c25574797c319dedefa190619c4b98",
+          "translation_segment_sha256": "7995a676293c6c32d56f515fa4b1d3e89af2343340130000c092d0a8bf326a70",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTEAXD-20260905",
+          "audit_review_sha256": "cda0b0e084ac1cc0d9608f80f2b4727d8413af539a509803615c279dfde70e57",
+          "audit_findings_sha256": "f2b3046c36663536978f3c0c43b4e92606cdce420c7f41496133d389acb52f19"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/axiomatic-deduction/deduction-theorem.tex",
+          "source_sha256": "ef122fcfc1a8c24e89cf5abe30efa11bcd0a1cc3ed9fca2426618e9174481780"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "wrote the well-formed membership statement !B in Gamma union {!A}; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that the length-one derivation case now states the complete membership proposition !B in Gamma union {!A}."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTEAXD-003",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_122_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTEAXD-003",
+      "classification": "confirmed_missing_closing_parenthesis_in_derived_formula",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0119",
+          "section_path": "first-order-logic/axiomatic-deduction/deduction-theorem",
+          "source_file": "content/first-order-logic/axiomatic-deduction/deduction-theorem.tex",
+          "target_file": "translation/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex",
+          "segment_id": "OLP-0119-B018",
+          "source_locator": "lines 106-107, derivfacts item (a)",
+          "target_locator": "translation/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:122",
+          "source_unit_sha256": "ef122fcfc1a8c24e89cf5abe30efa11bcd0a1cc3ed9fca2426618e9174481780",
+          "translation_unit_sha256": "a75383bfb9a91bd05b111e06c436544430fd3397b41604f850fd3cdd7ae067a8",
+          "source_segment_sha256": "8531933976176cfb813a1860211b61aee85bae06639ffcc38db837309d4d419f",
+          "translation_segment_sha256": "0983cb8ed1531dbd6a05e61d068a9a150db0e31861f0fecd8f46b01520b659fa",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTEAXD-20260905",
+          "audit_review_sha256": "cda0b0e084ac1cc0d9608f80f2b4727d8413af539a509803615c279dfde70e57",
+          "audit_findings_sha256": "f2b3046c36663536978f3c0c43b4e92606cdce420c7f41496133d389acb52f19"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/axiomatic-deduction/deduction-theorem.tex",
+          "source_sha256": "ef122fcfc1a8c24e89cf5abe30efa11bcd0a1cc3ed9fca2426618e9174481780"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "added the missing final parenthesis to balance the nested composition conditional; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that derived-facts item (a) has exactly the balanced parentheses required by its nested composition conditional."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTEAXD-004",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_122_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTEAXD-004",
+      "classification": "confirmed_missing_closing_parenthesis_in_quantified_meta_conditional",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0120",
+          "section_path": "first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers",
+          "source_file": "content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex",
+          "target_file": "translation/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex",
+          "segment_id": "OLP-0120-B009",
+          "source_locator": "line 44, second propositional meta-conditional",
+          "target_locator": "translation/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:50",
+          "source_unit_sha256": "79f2ddf58916652493c2892078b01dd53ae1691a97e28cfed043cbe285d11888",
+          "translation_unit_sha256": "bb77d66b66667f4c812a49ca9f7b2ab18d4a462aeb506a0871606ac837d06fcf",
+          "source_segment_sha256": "9f51d9a9e8f14aafe7e6edbc7e6993fb9627d2ccf42e8978dbe6b35793efbcd9",
+          "translation_segment_sha256": "98a1fe52fddd9160cd182c29c9b33841fb05a57e3a1b0c1b0c09ef984d497c09",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTEAXD-20260905",
+          "audit_review_sha256": "cda0b0e084ac1cc0d9608f80f2b4727d8413af539a509803615c279dfde70e57",
+          "audit_findings_sha256": "f2b3046c36663536978f3c0c43b4e92606cdce420c7f41496133d389acb52f19"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex",
+          "source_sha256": "79f2ddf58916652493c2892078b01dd53ae1691a97e28cfed043cbe285d11888"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "added the missing final parenthesis to balance the quantified meta-conditional; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that the quantified meta-conditional closes both nested consequent parentheses without changing any connective."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTEAXD-005",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_122_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTEAXD-005",
+      "classification": "confirmed_wrong_final_conclusion_in_quantified_deduction_theorem_case",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0120",
+          "section_path": "first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers",
+          "source_file": "content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex",
+          "target_file": "translation/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex",
+          "segment_id": "OLP-0120-B009",
+          "source_locator": "line 48, conclusion of the universal-quantifier case",
+          "target_locator": "translation/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:54",
+          "source_unit_sha256": "79f2ddf58916652493c2892078b01dd53ae1691a97e28cfed043cbe285d11888",
+          "translation_unit_sha256": "bb77d66b66667f4c812a49ca9f7b2ab18d4a462aeb506a0871606ac837d06fcf",
+          "source_segment_sha256": "9f51d9a9e8f14aafe7e6edbc7e6993fb9627d2ccf42e8978dbe6b35793efbcd9",
+          "translation_segment_sha256": "98a1fe52fddd9160cd182c29c9b33841fb05a57e3a1b0c1b0c09ef984d497c09",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTEAXD-20260905",
+          "audit_review_sha256": "cda0b0e084ac1cc0d9608f80f2b4727d8413af539a509803615c279dfde70e57",
+          "audit_findings_sha256": "f2b3046c36663536978f3c0c43b4e92606cdce420c7f41496133d389acb52f19"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex",
+          "source_sha256": "79f2ddf58916652493c2892078b01dd53ae1691a97e28cfed043cbe285d11888"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "concluded Gamma proves A implies B, preserving the discharged antecedent required by the theorem; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that the universal-quantifier case concludes Gamma proves A implies B, exactly matching the deduction theorem target."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTEAXD-006",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_122_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTEAXD-006",
+      "classification": "confirmed_omitted_reflexivity_premise_before_two_modus_ponens_steps",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0121",
+          "section_path": "first-order-logic/axiomatic-deduction/provability-consistency",
+          "source_file": "content/first-order-logic/axiomatic-deduction/provability-consistency.tex",
+          "target_file": "translation/content/first-order-logic/axiomatic-deduction/provability-consistency.tex",
+          "segment_id": "OLP-0121-B014",
+          "source_locator": "lines 65-68, explicit-inconsistency proof",
+          "target_locator": "translation/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:73",
+          "source_unit_sha256": "22a6a04d9ab4298d762efd6bf2041fa9bf3f2d91c6803b744458812c232cdacc",
+          "translation_unit_sha256": "eadfa5cd0b5a0edba1517e5fd233dd275b8051cda1c100018ac37e4f3a88662a",
+          "source_segment_sha256": "3934ae736a1fc5870525595117ccb840292067dff75d422d1b8bb7cb11e1903c",
+          "translation_segment_sha256": "082267f3094c1d0bc1abf2942181358e6739a1c294fa8d274e068a6b8ddf7315",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTEAXD-20260905",
+          "audit_review_sha256": "cda0b0e084ac1cc0d9608f80f2b4727d8413af539a509803615c279dfde70e57",
+          "audit_findings_sha256": "f2b3046c36663536978f3c0c43b4e92606cdce420c7f41496133d389acb52f19"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/axiomatic-deduction/provability-consistency.tex",
+          "source_sha256": "22a6a04d9ab4298d762efd6bf2041fa9bf3f2d91c6803b744458812c232cdacc"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "stated Gamma proves not-A by reflexivity before the two modus-ponens applications; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that reflexivity explicitly supplies Gamma proves not-A before the two modus-ponens applications."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTEAXD-007",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_122_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTEAXD-007",
+      "classification": "confirmed_wrong_second_conjunction_projection_axiom_reference",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0122",
+          "section_path": "first-order-logic/axiomatic-deduction/provability-propositional",
+          "source_file": "content/first-order-logic/axiomatic-deduction/provability-propositional.tex",
+          "target_file": "translation/content/first-order-logic/axiomatic-deduction/provability-propositional.tex",
+          "segment_id": "OLP-0122-B008",
+          "source_locator": "line 33, proof of the two conjunction projections",
+          "target_locator": "translation/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:35",
+          "source_unit_sha256": "25274e10fe6d96292fe2c701b7af38291dd1d98de12a62ef385a5efd1c413007",
+          "translation_unit_sha256": "9a9d1b1cd21bba5d94389f814e4e84152c007a109605060d5364d15b56909a2f",
+          "source_segment_sha256": "549ca58e18da544cb481773e2cef40e74a9e5368e00bf2b453ffab725a81e210",
+          "translation_segment_sha256": "83ef0f8dc607dbb6ebefc6e84e9cd4646a9652bba4e8edd3837b205a0adea168",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTEAXD-20260905",
+          "audit_review_sha256": "cda0b0e084ac1cc0d9608f80f2b4727d8413af539a509803615c279dfde70e57",
+          "audit_findings_sha256": "f2b3046c36663536978f3c0c43b4e92606cdce420c7f41496133d389acb52f19"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/axiomatic-deduction/provability-propositional.tex",
+          "source_sha256": "25274e10fe6d96292fe2c701b7af38291dd1d98de12a62ef385a5efd1c413007"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "named ax:land2 for the second projection while preserving the source's erroneous ax:land1 reference inside the adjacent disclosure note",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that the left conjunction projection uses ax:land1 and the right projection uses ax:land2."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTEAXD-008",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_122_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTEAXD-008",
+      "classification": "confirmed_wrong_negation_axiom_reference_in_disjunction_inconsistency_proof",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0122",
+          "section_path": "first-order-logic/axiomatic-deduction/provability-propositional",
+          "source_file": "content/first-order-logic/axiomatic-deduction/provability-propositional.tex",
+          "target_file": "translation/content/first-order-logic/axiomatic-deduction/provability-propositional.tex",
+          "segment_id": "OLP-0122-B010",
+          "source_locator": "lines 50-56, first disjunction proof",
+          "target_locator": "translation/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:56",
+          "source_unit_sha256": "25274e10fe6d96292fe2c701b7af38291dd1d98de12a62ef385a5efd1c413007",
+          "translation_unit_sha256": "9a9d1b1cd21bba5d94389f814e4e84152c007a109605060d5364d15b56909a2f",
+          "source_segment_sha256": "aa5f8c7826e6f05286753b3e0a829ec451b86ec88cd22a2f3d4d0ee14e40b93f",
+          "translation_segment_sha256": "db2a8684ee94b4a4c5a6195edca7849e2759aaf1e202508c4536652d37e7e635",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTEAXD-20260905",
+          "audit_review_sha256": "cda0b0e084ac1cc0d9608f80f2b4727d8413af539a509803615c279dfde70e57",
+          "audit_findings_sha256": "f2b3046c36663536978f3c0c43b4e92606cdce420c7f41496133d389acb52f19"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/axiomatic-deduction/provability-propositional.tex",
+          "source_sha256": "25274e10fe6d96292fe2c701b7af38291dd1d98de12a62ef385a5efd1c413007"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "named ax:lnot2 for the displayed instance while retaining the source's erroneous ax:lnot1 reference inside the adjacent disclosure note",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that not-A implies (A implies false) is attributed to ax:lnot2, not the contraposition axiom."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTEAXD-009",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_122_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTEAXD-009",
+      "classification": "confirmed_wrong_rule_named_for_final_strong_generalization_step",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0123",
+          "section_path": "first-order-logic/axiomatic-deduction/provability-quantifiers",
+          "source_file": "content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex",
+          "target_file": "translation/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex",
+          "segment_id": "OLP-0123-B009",
+          "source_locator": "line 30, final step of strong generalization proof",
+          "target_locator": "translation/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:33",
+          "source_unit_sha256": "07225de499f34bd17eec7586fc9bcc59e98ea3cfa064172091fa66a336bf20b6",
+          "translation_unit_sha256": "de8f8ba1857b40f8d8a2b98899f8b790e728b5b9525226ad03dc1092712e469a",
+          "source_segment_sha256": "47f52b5eb9f563c122f2f656adf9aee06fd6fc545e61d796b1bf92af31d611b0",
+          "translation_segment_sha256": "f3074ac96121a37bc4855475e8d4491dcf02ee32fce66e8b7d1448b2efce2550",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTEAXD-20260905",
+          "audit_review_sha256": "cda0b0e084ac1cc0d9608f80f2b4727d8413af539a509803615c279dfde70e57",
+          "audit_findings_sha256": "f2b3046c36663536978f3c0c43b4e92606cdce420c7f41496133d389acb52f19"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex",
+          "source_sha256": "07225de499f34bd17eec7586fc9bcc59e98ea3cfa064172091fa66a336bf20b6"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "stated derivability of top as an axiom and applied modus ponens to the derived conditional; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that the last strong-generalization step uses the top axiom and modus ponens rather than invoking the deduction theorem again."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTEAXD-010",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_122_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTEAXD-010",
+      "classification": "confirmed_missing_formula_metavariable_markers_in_quantifier_soundness_case",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0124",
+          "section_path": "first-order-logic/axiomatic-deduction/soundness",
+          "source_file": "content/first-order-logic/axiomatic-deduction/soundness.tex",
+          "target_file": "translation/content/first-order-logic/axiomatic-deduction/soundness.tex",
+          "segment_id": "OLP-0124-B013",
+          "source_locator": "lines 80, 82 and 97, universal-quantifier rule case",
+          "target_locator": "translation/content/first-order-logic/axiomatic-deduction/soundness.tex:106",
+          "source_unit_sha256": "b5a11dd6a46306a767149f694f099bd9f57396013b4dfe67965e68ccae411ecb",
+          "translation_unit_sha256": "ebe6a80cd6d957a2c6b17cbff7a698cbbf8f991c831108158dc6107a2dd20f46",
+          "source_segment_sha256": "72ff40a2f79973d16e44b3c635c52b607f1b63d4b23d12a924ea274be320737f",
+          "translation_segment_sha256": "5f863ece43f7280cff88a032ff9948447313f35ec5564952196aa88372b726b8",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTEAXD-20260905",
+          "audit_review_sha256": "cda0b0e084ac1cc0d9608f80f2b4727d8413af539a509803615c279dfde70e57",
+          "audit_findings_sha256": "f2b3046c36663536978f3c0c43b4e92606cdce420c7f41496133d389acb52f19"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/axiomatic-deduction/soundness.tex",
+          "source_sha256": "b5a11dd6a46306a767149f694f099bd9f57396013b4dfe67965e68ccae411ecb"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "restored the ! formula-metavariable marker before B in all three affected formulas; adjacent sourcecorrection discloses the repeated repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that all three repaired B occurrences in the quantifier-soundness case carry the formula-metavariable marker."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTEAXD-011",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_122_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTEAXD-011",
+      "classification": "confirmed_identity_reflexivity_claim_exceeds_axiom_schema_term_scope",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0125",
+          "section_path": "first-order-logic/axiomatic-deduction/identity",
+          "source_file": "content/first-order-logic/axiomatic-deduction/identity.tex",
+          "target_file": "translation/content/first-order-logic/axiomatic-deduction/identity.tex",
+          "segment_id": "OLP-0125-B011",
+          "source_locator": "line 39, proposition prop:iden1",
+          "target_locator": "translation/content/first-order-logic/axiomatic-deduction/identity.tex:41",
+          "source_unit_sha256": "9a4f25fcf00baab5d8d5f05e7fe2315ca9f4ceaa39a67551489a5130b9b8a2d4",
+          "translation_unit_sha256": "0f9f84f23ed4aca7ff1d669eea7e692c32d6115bf135ca515cd55fb143b3776a",
+          "source_segment_sha256": "9426e58aab313b76d2db65388493e4daa961cef5653ae208f929ea5177d87194",
+          "translation_segment_sha256": "ace484bf9faefc5e85e8517018350bd8a6afd8c321cae6c665375afc7cb20b1d",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTEAXD-20260905",
+          "audit_review_sha256": "cda0b0e084ac1cc0d9608f80f2b4727d8413af539a509803615c279dfde70e57",
+          "audit_findings_sha256": "f2b3046c36663536978f3c0c43b4e92606cdce420c7f41496133d389acb52f19"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/axiomatic-deduction/identity.tex",
+          "source_sha256": "9a4f25fcf00baab5d8d5f05e7fe2315ca9f4ceaa39a67551489a5130b9b8a2d4"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "restricted the proposition to closed terms, matching ax:id1's stated schema scope; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that reflexive identity is claimed only for closed terms, matching the stated scope of ax:id1."
       ],
       "translation_hold": false,
       "status": "applied_qa_pass"

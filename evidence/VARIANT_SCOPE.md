@@ -31,8 +31,8 @@ The Open Logic source itself controls formulas, metavariables, numerals,
 references and proof-tree layout. Retaining those notational forms supports
 source parity, reproducible QA and cross-language comparison. Telugu prose is
 left-to-right, so no bidirectional math layer is needed. Named formalisms such
-as టాబ్లో, సీక్వెంట్, ఐగెన్ and కట్ are explicit, reviewable borrowings rather
-than evidence for a second script.
+as టాబ్లో, సీక్వెంట్, ఐగెన్, కట్ and మోడస్ పోనెన్స్ are explicit, reviewable
+borrowings rather than evidence for a second script.
 
 ## Tradeoffs and review trigger
 

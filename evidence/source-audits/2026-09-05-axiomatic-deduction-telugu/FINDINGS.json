@@ -1,0 +1,120 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTEAXD-20260905",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0112", "OLP-0113", "OLP-0114", "OLP-0115", "OLP-0116",
+      "OLP-0117", "OLP-0118", "OLP-0119", "OLP-0120", "OLP-0121",
+      "OLP-0122", "OLP-0123", "OLP-0124", "OLP-0125"
+    ],
+    "finding_count": 11
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEAXD-001",
+      "unit_id": "OLP-0118",
+      "classification": "confirmed_missing_formula_metavariable_marker_in_transitivity_proof",
+      "source": {"path":"content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex","bytes":4266,"sha256":"0afb9df4b5f0f5c1e892cf411d126f45acce94cfbdc9087e4bd37cb851cc370b","locator":"line 82, final justification in the transitivity proof"},
+      "finding": "The proof writes B_i = !A although formula metavariables in this source require the ! marker and the same indexed formula is !B_i everywhere else.",
+      "controlling_evidence": "The displayed concatenated derivation and the preceding references consistently use !B_i; the sentence is justifying those same steps.",
+      "required_translation_handling": "Use !B_i = !A and add an adjacent OLTEAXD-001 note."
+    },
+    {
+      "finding_id": "OLTEAXD-002",
+      "unit_id": "OLP-0119",
+      "classification": "confirmed_malformed_membership_statement_in_induction_basis",
+      "source": {"path":"content/first-order-logic/axiomatic-deduction/deduction-theorem.tex","bytes":4727,"sha256":"ef122fcfc1a8c24e89cf5abe30efa11bcd0a1cc3ed9fca2426618e9174481780","locator":"line 67, length-one derivation case"},
+      "finding": "The proof says that B is either 'in Gamma union {A}' with the membership symbol stranded inside a separate math span.",
+      "controlling_evidence": "The derivation definition and the immediately following case split require the proposition !B in Gamma union {!A}.",
+      "required_translation_handling": "Write the well-formed membership statement and add an adjacent OLTEAXD-002 note."
+    },
+    {
+      "finding_id": "OLTEAXD-003",
+      "unit_id": "OLP-0119",
+      "classification": "confirmed_missing_closing_parenthesis_in_derived_formula",
+      "source": {"path":"content/first-order-logic/axiomatic-deduction/deduction-theorem.tex","bytes":4727,"sha256":"ef122fcfc1a8c24e89cf5abe30efa11bcd0a1cc3ed9fca2426618e9174481780","locator":"lines 106-107, derivfacts item (a)"},
+      "finding": "The displayed derived conditional closes its inner consequent but omits the closing parenthesis for the outer consequent.",
+      "controlling_evidence": "The proposition is the standard composition conditional, and its opening delimiters determine the missing final parenthesis unambiguously.",
+      "required_translation_handling": "Close both nested conditionals and add an adjacent OLTEAXD-003 note."
+    },
+    {
+      "finding_id": "OLTEAXD-004",
+      "unit_id": "OLP-0120",
+      "classification": "confirmed_missing_closing_parenthesis_in_quantified_meta_conditional",
+      "source": {"path":"content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex","bytes":2176,"sha256":"79f2ddf58916652493c2892078b01dd53ae1691a97e28cfed043cbe285d11888","locator":"line 44, second propositional meta-conditional"},
+      "finding": "The consequent A -> (C -> forall x D(x)) lacks its final closing parenthesis.",
+      "controlling_evidence": "The nested conditional's two opening parentheses and the next modus-ponens conclusion determine the balanced formula.",
+      "required_translation_handling": "Add the missing closing parenthesis and an adjacent OLTEAXD-004 note."
+    },
+    {
+      "finding_id": "OLTEAXD-005",
+      "unit_id": "OLP-0120",
+      "classification": "confirmed_wrong_final_conclusion_in_quantified_deduction_theorem_case",
+      "source": {"path":"content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex","bytes":2176,"sha256":"79f2ddf58916652493c2892078b01dd53ae1691a97e28cfed043cbe285d11888","locator":"line 48, conclusion of the universal-quantifier case"},
+      "finding": "After deriving Gamma proves A -> (C -> forall x D(x)), the proof calls this Gamma proves B, dropping the discharged antecedent A.",
+      "controlling_evidence": "The theorem's target is Gamma proves A -> B, while the case begins by identifying B with C -> forall x D(x).",
+      "required_translation_handling": "Conclude Gamma proves A -> B and add an adjacent OLTEAXD-005 note."
+    },
+    {
+      "finding_id": "OLTEAXD-006",
+      "unit_id": "OLP-0121",
+      "classification": "confirmed_omitted_reflexivity_premise_before_two_modus_ponens_steps",
+      "source": {"path":"content/first-order-logic/axiomatic-deduction/provability-consistency.tex","bytes":2886,"sha256":"22a6a04d9ab4298d762efd6bf2041fa9bf3f2d91c6803b744458812c232cdacc","locator":"lines 65-68, explicit-inconsistency proof"},
+      "finding": "The proof invokes modus ponens twice but states only the nested conditional; it omits the required derivability of not-A from the standing membership hypothesis.",
+      "controlling_evidence": "The proposition assumes not-A is in Gamma, so reflexivity supplies Gamma proves not-A; together with Gamma proves A this licenses the two stated applications.",
+      "required_translation_handling": "State the reflexivity step explicitly and add an adjacent OLTEAXD-006 note."
+    },
+    {
+      "finding_id": "OLTEAXD-007",
+      "unit_id": "OLP-0122",
+      "classification": "confirmed_wrong_second_conjunction_projection_axiom_reference",
+      "source": {"path":"content/first-order-logic/axiomatic-deduction/provability-propositional.tex","bytes":2632,"sha256":"25274e10fe6d96292fe2c701b7af38291dd1d98de12a62ef385a5efd1c413007","locator":"line 33, proof of the two conjunction projections"},
+      "finding": "The proof cites ax:land1 twice for the left and right conjunction projections.",
+      "controlling_evidence": "The immediately preceding axiom list gives ax:land1 for the left projection and ax:land2 for the right projection.",
+      "required_translation_handling": "Cite ax:land2 second and add an adjacent OLTEAXD-007 note."
+    },
+    {
+      "finding_id": "OLTEAXD-008",
+      "unit_id": "OLP-0122",
+      "classification": "confirmed_wrong_negation_axiom_reference_in_disjunction_inconsistency_proof",
+      "source": {"path":"content/first-order-logic/axiomatic-deduction/provability-propositional.tex","bytes":2632,"sha256":"25274e10fe6d96292fe2c701b7af38291dd1d98de12a62ef385a5efd1c413007","locator":"lines 50-56, first disjunction proof"},
+      "finding": "The proof attributes not-A -> (A -> false) to ax:lnot1.",
+      "controlling_evidence": "The chapter's ax:lnot2 schema is not-A -> (A -> B), whose B=false instance is exactly the displayed formula; ax:lnot1 is contraposition.",
+      "required_translation_handling": "Cite ax:lnot2 and add an adjacent OLTEAXD-008 note."
+    },
+    {
+      "finding_id": "OLTEAXD-009",
+      "unit_id": "OLP-0123",
+      "classification": "confirmed_wrong_rule_named_for_final_strong_generalization_step",
+      "source": {"path":"content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex","bytes":1449,"sha256":"07225de499f34bd17eec7586fc9bcc59e98ea3cfa064172091fa66a336bf20b6","locator":"line 30, final step of strong generalization proof"},
+      "finding": "The proof says the deduction theorem is used again to pass from Gamma proves top -> forall x A(x) to Gamma proves forall x A(x).",
+      "controlling_evidence": "Top is an axiom, so its derivability together with the displayed conditional yields the result by modus ponens; the deduction theorem does not perform that step.",
+      "required_translation_handling": "State the top-axiom and modus-ponens steps and add an adjacent OLTEAXD-009 note."
+    },
+    {
+      "finding_id": "OLTEAXD-010",
+      "unit_id": "OLP-0124",
+      "classification": "confirmed_missing_formula_metavariable_markers_in_quantifier_soundness_case",
+      "source": {"path":"content/first-order-logic/axiomatic-deduction/soundness.tex","bytes":5707,"sha256":"b5a11dd6a46306a767149f694f099bd9f57396013b4dfe67965e68ccae411ecb","locator":"lines 80, 82 and 97, universal-quantifier rule case"},
+      "finding": "Three formula occurrences omit the source's required ! marker before B: two universal formulas and one M' satisfaction claim.",
+      "controlling_evidence": "Every surrounding use in the same rule instance is !B(x) or !B(c), and the macros require formula metavariables rather than ordinary text tokens.",
+      "required_translation_handling": "Restore ! before B in all three occurrences and add an adjacent OLTEAXD-010 note."
+    },
+    {
+      "finding_id": "OLTEAXD-011",
+      "unit_id": "OLP-0125",
+      "classification": "confirmed_identity_reflexivity_claim_exceeds_axiom_schema_term_scope",
+      "source": {"path":"content/first-order-logic/axiomatic-deduction/identity.tex","bytes":1299,"sha256":"9a4f25fcf00baab5d8d5f05e7fe2315ca9f4ceaa39a67551489a5130b9b8a2d4","locator":"line 39, proposition prop:iden1"},
+      "finding": "The proposition asserts reflexive identity for any term, while the only supporting axiom schema was explicitly restricted to closed terms.",
+      "controlling_evidence": "Axiom ax:id1 and the definition immediately above quantify only over closed terms; no rule in the chapter generalizes the schema to open terms.",
+      "required_translation_handling": "Restrict the proposition to closed terms and add an adjacent OLTEAXD-011 note."
+    }
+  ]
+}

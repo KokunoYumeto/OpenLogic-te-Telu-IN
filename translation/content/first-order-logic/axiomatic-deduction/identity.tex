@@ -1,0 +1,60 @@
+% Part: first-order-logic
+% Chapter: axiomatic-proofs
+% Section: identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{axd}{ide}
+
+\olsection{\usetoken{S}{identity}తో \usetoken{P}{derivation}}
+
+!!{derivation}sలో $\eq$ను చేర్చుకోవడానికి, మనం కొత్త స్వీకృత
+పథకాలను మాత్రమే చేర్చుతాం. !!{derivation}, $\Proves$ల నిర్వచనం
+అదే ఉంటుంది; కొత్త స్వీకృతాలను కూడా అనుమతిస్తాం.
+
+\begin{defn}[!!{identity} స్వీకృతాలు]
+\begin{align}
+\ollabel{ax:id1} & \eq[t][t], \\
+\ollabel{ax:id2} & \eq[t_1][t_2] \lif (!B(t_1) \lif
+  !B(t_2)),
+\end{align}
+ఇక్కడ $t$, $t_1$, $t_2$ ఏ మూస పదాలైనా కావచ్చు.
+\end{defn}
+
+\begin{prop}\ollabel{prop:sound}
+  \olref{ax:id1}, \olref{ax:id2} స్వీకృతాలు సార్వత్రికంగా సత్యం.
+\end{prop}
+
+\begin{proof}
+  సాధన.
+\end{proof}
+
+\begin{prob}
+\olref[fol][axd][ide]{prop:sound}ను నిరూపించండి.
+\end{prob}
+
+\begin{prop}\ollabel{prop:iden1}
+ ఏ మూస పదం~$t$, ఏ సమితి~$\Gamma$కైనా $\Gamma \Proves \eq[t][t]$.
+\end{prop}
+\sourcecorrection{OLTEAXD-011}{\texttt{ax:id1} మూస పదాలకే స్వీకృత
+రూపాలను అనుమతిస్తుంది; కానీ ఆంగ్ల మూలంలోని ఈ ప్రతిపాదన ``ఏ పదం
+$t$కైనా'' అని చెప్పింది. నిర్వచనానికి సరిపోయేలా ``ఏ మూస పదం
+$t$కైనా'' అని సరిచేశాం.}
+
+\begin{prop}\ollabel{prop:iden2}
+  $\Gamma \Proves !A(t_1)$, $\Gamma \Proves \eq[t_1][t_2]$ అయితే,
+  $\Gamma \Proves !A(t_2)$.
+\end{prop}
+
+\begin{proof}
+!!{formula}
+\[
+(\eq[t_1][t_2] \lif (!A(t_1) \lif !A(t_2)))
+\]
+అనేది~\olref{ax:id2} రూపం. ~\MPని రెండుసార్లు వర్తింపజేస్తే
+నిష్కర్ష వస్తుంది.
+\end{proof}
+
+\end{document}

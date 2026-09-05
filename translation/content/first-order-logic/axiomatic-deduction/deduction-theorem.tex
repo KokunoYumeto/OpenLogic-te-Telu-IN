@@ -1,0 +1,138 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: deduction-theorem
+
+% verification of properties of provability needed for maximally
+% consistent sets in the completeness chapter.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{ded}}
+      {\olfileid{pl}{axd}{ded}}
+
+\olsection{నిగమన సిద్ధాంతం}
+
+మనం చూసినట్లుగా, స్వీకృతాధారిత వ్యవస్థలో !!{derivation}s ఇవ్వడం
+శ్రమతో కూడిన పని; !!{derivation}sను కనుగొనడం కూడా కష్టం కావచ్చు. పొడవైన
+!!{formula}s జాబితాలను నిజంగా రాయడానికి బదులు, కొన్ని సరళమైన ఫలితాలను
+ఉపయోగించి అలాంటి !!{derivation}s ఉన్నాయని వాదించడం సాధారణంగా సులభం.
+అలాంటి మూడు ఫలితాలను ఇప్పటికే స్థాపించాం:
+$!A \in \Gamma$ అని తెలిసినప్పుడు ఎల్లప్పుడూ $\Gamma \Proves !A$
+అని చెప్పవచ్చని \olref[ptn]{prop:reflexivity} చెబుతుంది.
+$\Gamma \Proves !A$ అయితే $\Gamma \cup \{!B\} \Proves !A$ కూడా అని
+\olref[ptn]{prop:monotonicity} చెబుతుంది. ఇంకా, $\Gamma \Proves !A$,
+$!A \Proves !B$ అయితే $\Gamma \Proves !B$ అని
+\olref[ptn]{prop:transitivity} సూచిస్తుంది. మోడస్ పోనెన్స్‌కు ఒక
+``మెటా'' రూపమైన మరొక సరళ ఫలితం ఇదిగో:
+
+\begin{prop}
+  \ollabel{prop:mp} $\Gamma \Proves !A$, $\Gamma \Proves !A \lif
+  !B$ అయితే, $\Gamma \Proves !B$.
+\end{prop}
+
+\begin{proof}
+  $\{!A, !A \lif !B\} \Proves !B$ అని మనకు తెలుసు:
+  \begin{derivation}
+    1. & $!A$ & Hyp.\\
+    2. & $!A \lif !B$ & Hyp.\\
+    3. & $!B$ & 1, 2, MP
+  \end{derivation}
+  \olref[ptn]{prop:transitivity} వల్ల, $\Gamma \Proves !B$.
+\end{proof}
+
+ఈ సందర్భంలో మనం ఉపయోగించే అత్యంత ముఖ్యమైన ఫలితం నిగమన సిద్ధాంతం:
+
+\begin{thm}[నిగమన సిద్ధాంతం]
+\ollabel{thm:deduction-thm} $\Gamma \cup \{!A\} \Proves !B$ అయితే,
+అప్పుడు మాత్రమే $\Gamma \Proves !A \lif !B$.
+\end{thm}
+
+\begin{proof}
+``అయితే'' దిశ తక్షణమే వస్తుంది. $\Gamma \Proves !A \lif !B$ అయితే,
+\olref[ptn]{prop:monotonicity} వల్ల $\Gamma \cup \{!A\} \Proves !A
+\lif !B$ కూడా. \olref[ptn]{prop:reflexivity} వల్ల $\Gamma \cup
+\{!A\} \Proves !A$ కూడా. కాబట్టి \olref{prop:mp} వల్ల $\Gamma \cup
+\{!A\} \Proves !B$.
+
+``అప్పుడే'' దిశ కోసం, $\Gamma \cup \{!A\}$ నుంచి $!B$కు గల
+!!{derivation} పొడవుపై ఆగమనం చేస్తాం.
+
+ఆగమన ప్రాతిపదికలో, పొడవు~$1$ ఉన్న ప్రతి !!{derivation}కు ఈ వాదనను
+నిరూపిస్తాం. $\Gamma \cup \{!A\}$ నుంచి~$!B$కు పొడవు~$1$ ఉన్న
+!!^a{derivation}లో $!B$ ఒక్కటే ఉంటుంది; అది సరైనదైతే,
+$!B \in \Gamma \cup \{!A\}$ లేదా ఒక స్వీకృతం. $!B \in \Gamma$
+అయినా, $!B$ ఒక స్వీకృతమైనా, $\Gamma \Proves !B$. అంతేకాక,
+\olref[prp]{ax:lif1} వల్ల $\Gamma \Proves !B \lif (!A \lif !B)$;
+అప్పుడు \olref{prop:mp} వల్ల $\Gamma \Proves !A \lif !B$. $!B \in
+\{!A\}$ అయితే, $\Gamma \Proves !A \lif !B$; ఎందుకంటే చివరి
+!!{sentence}~$!A \lif !B$ అనేది $!A \lif !A$తో సమానం, దాన్ని
+\olref[pro]{ex:identity}లో మనం !!{derive} చేశాం.
+\sourcecorrection{OLTEAXD-002}{ఆంగ్ల మూలం ఆగమన ప్రాతిపదికలో
+``$!B$ is either $\in \Gamma \cup \{!A\}$'' అని వ్యాకరణపరంగానూ,
+గణితపరంగానూ వికృతంగా రాసింది. ఉద్దేశించిన సభ్యత్వ వాక్యాన్ని
+$!B \in \Gamma \cup \{!A\}$గా సరిచేశాం.}
+
+ఆగమన దశలో, $\Gamma \cup \{!A\}$ నుంచి~$!B$కు గల !!a{derivation},
+మోడస్ పోనెన్స్ ద్వారా సమర్థించబడిన~$!B$ దశతో ముగుస్తుందని అనుకుందాం.
+(అది మోడస్ పోనెన్స్ ద్వారా సమర్థించబడకపోతే, $!B \in \Gamma$,
+$!B \ident !A$, లేదా $!B$ ఒక స్వీకృతం; అప్పుడు ఆగమన ప్రాతిపదికలోని
+అదే వాదన వర్తిస్తుంది.) అప్పుడు, ఏదో !!{formula}~$!C$కు,
+ఆ !!{derivation}లోని ముందరి దశలలో $!C \lif !B$, $!C$ ఉంటాయి; అంటే,
+$\Gamma \cup \{!A\} \Proves !C \lif !B$, $\Gamma \cup \{!A\}
+\Proves !C$. వాటి !!{derivation}s పొట్టివి కనుక, ఆగమన పరికల్పన
+వాటికి వర్తిస్తుంది. అందువల్ల ఈ రెండూ మనకు లభిస్తాయి:
+\begin{align*}
+  & \Gamma \Proves !A \lif (!C \lif !B); \\
+  & \Gamma \Proves !A \lif !C.
+\end{align*}
+అయితే, \olref[prp]{ax:lif2} వల్ల
+\[
+\Gamma \Proves (!A \lif (!C \lif !B)) \lif
+((!A\lif !C)  \lif (!A \lif !B)),
+\]
+కూడా; \olref{prop:mp}ను రెండుసార్లు వర్తింపజేస్తే, కావలసినట్లుగా
+$\Gamma \Proves !A \lif !B$ వస్తుంది.
+\end{proof}
+
+నిగమన సిద్ధాంతం చెల్లేలా చేయడానికే \olref[prp]{ax:lif1},
+\olref[prp]{ax:lif2}లను సరిగ్గా ఆ రూపాల్లో ఎంచుకున్నామని గమనించండి.
+
+కిందివి !!{derivability} గురించిన కొన్ని ఉపయోగకరమైన వాస్తవాలు; వాటిని
+సాధనలుగా వదిలేస్తున్నాం.
+
+\begin{prop}
+  \ollabel{prop:derivfacts}
+\begin{enumerate}
+\item $\Proves (!A \lif !B) \lif ((!B \lif !C)
+  \lif (!A \lif !C))$; \ollabel{derivfacts:a}
+\item $\Gamma \cup \{ \lnot !A\}
+  \Proves \lnot !B$ అయితే, $\Gamma \cup \{ !B\} \Proves
+  !A$ (విపర్యయనం); \ollabel{derivfacts:b}
+\item $\{ !A, \lnot!A\} \Proves
+    !B$ (అసత్యం నుంచి ఏదైనా, విస్ఫోటనం); \ollabel{derivfacts:c}
+\item $\{ \lnot\lnot!A\} \Proves
+  !A$ (ద్వినిషేధ తొలగింపు);\ollabel{derivfacts:d}
+\item $\Gamma \Proves \lnot\lnot!A$ అయితే, $\Gamma \Proves
+  !A$;\ollabel{derivfacts:e}
+\end{enumerate}
+\end{prop}
+\sourcecorrection{OLTEAXD-003}{ఆంగ్ల మూలంలో మొదటి నిరూప్యతా వాస్తవపు
+సూత్రం చివర ఒక కుడి కుండలీకరణ చిహ్నాన్ని వదిలింది. అంతర్గత,
+బాహ్య నిబంధనల రెండింటినీ మూసేలా $(!A \lif !C))$గా సరిచేశాం.}
+
+\tagprob{FOL}
+\begin{prob}
+  \olref[fol][axd][ded]{prop:derivfacts}ను నిరూపించండి.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+  \olref[pl][axd][ded]{prop:derivfacts}ను నిరూపించండి.
+\end{prob}
+\tagendprob
+
+\end{document}

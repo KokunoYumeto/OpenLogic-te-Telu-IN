@@ -1,6 +1,6 @@
 # Priority review
 
-This view contains 23 of 101 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
+This view contains 24 of 113 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
 
 Final reader pages remain pending; exact source and target file/line locators are shown.
 
@@ -233,3 +233,13 @@ Final reader pages remain pending; exact source and target file/line locators ar
 - Occurrences: OLP-0099 translation/content/first-order-logic/tableaux/rules-and-proofs.tex:15-25; OLP-0099 translation/content/first-order-logic/tableaux/rules-and-proofs.tex:15-25; OLP-0099 translation/content/first-order-logic/tableaux/rules-and-proofs.tex:44-49; OLP-0102 translation/content/first-order-logic/tableaux/derivations.tex:35-40; OLP-0103 translation/content/first-order-logic/tableaux/proving-things.tex:39-47; OLP-0101 translation/content/first-order-logic/tableaux/quantifier-rules.tex:27-56; OLP-0100 translation/content/first-order-logic/tableaux/propositional-rules.tex:77-91
 
 - Review question: Please double-check whether “చిహ్నిత సూత్రం / సత్యమూల్య సంకేతం / టాబ్లో / సంవృత శాఖ / వివృత శాఖ / తనిఖీ గుర్తు / ఐగెన్ చరరాశి షరతు / కట్ నియమం” is idiomatic and technically standard for “signed formula / truth-value sign / tableau / closed branch / open branch / checkmark / eigenvariable condition / cut rule” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T040 — axiom / axiom instance / axiomatic derivation / inference rule / modus ponens / quantifier rule / derivability relation / proof-theoretic notion / deduction theorem
+
+- Chosen rendering: స్వీకృతం / స్వీకృత రూపం / స్వీకృతాధారిత నిరూపణ / నిగమన నియమం / మోడస్ పోనెన్స్ / పరిమాణీకరణిక నియమం / నిరూప్యతా సంబంధం / నిరూపణ-సిద్ధాంత భావన / నిగమన సిద్ధాంతం
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0113 translation/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:16-21; OLP-0113 translation/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41; OLP-0114 translation/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-17; OLP-0114 translation/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-41; OLP-0115 translation/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-32; OLP-0118 translation/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:13-24; OLP-0121 translation/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:14-17; OLP-0119 translation/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:48-50
+
+- Review question: Please double-check whether “స్వీకృతం / స్వీకృత రూపం / స్వీకృతాధారిత నిరూపణ / నిగమన నియమం / మోడస్ పోనెన్స్ / పరిమాణీకరణిక నియమం / నిరూప్యతా సంబంధం / నిరూపణ-సిద్ధాంత భావన / నిగమన సిద్ధాంతం” is idiomatic and technically standard for “axiom / axiom instance / axiomatic derivation / inference rule / modus ponens / quantifier rule / derivability relation / proof-theoretic notion / deduction theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?

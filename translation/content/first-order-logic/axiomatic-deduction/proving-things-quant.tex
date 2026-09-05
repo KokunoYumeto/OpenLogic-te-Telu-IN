@@ -1,0 +1,36 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: proving-things-quant
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{axd}{prq}
+
+\olsection{పరిమాణీకరణికాలతో \usetoken{P}{derivation}}
+
+\begin{ex}
+$(\lforall[x][!A(x)] \land \lforall[y][!B(y)]) \lif
+\lforall[x][(!A(x) \land !B(x))]$కు ఒక !!a{derivation}ను ఇద్దాం.
+
+మొదటగా,
+\begin{align*}
+  (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif \lforall[x][!A(x)]\\
+  \intertext{అనేది \olref[prp]{ax:land1} రూపం; అలాగే}
+  \lforall[x][!A(x)] & \lif !A(a) \\
+  \intertext{అనేది \olref[qua]{ax:q1} రూపం. కాబట్టి \olref[pro]{prop:chain} ప్రకారం}
+  (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif !A(a) \\
+  \intertext{!!{derivable} అని తెలుసు. అదే విధంగా,}
+  (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif \lforall[y][!B(y)] \qquad\text{మరియు}\\
+    \lforall[y][!B(y)] & \lif !B(a)\\
+    \intertext{అనేవి వరుసగా \olref[prp]{ax:land2}, \olref[qua]{ax:q1} రూపాలు కనుక,}
+    (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif !B(a)\\
+    \intertext{అనేది \olref[pro]{prop:chain} వల్ల నిగమించదగినది. \olref[prp]{ax:land3} యొక్క తగిన రూపాన్ని,~\MPని రెండుసార్లు ఉపయోగిస్తే}
+    (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif (!A(a) \land !B(a))\\
+    \intertext{నిగమించదగినదని తెలుస్తుంది. ఇప్పుడు \QR{}ను వర్తింపజేస్తే}
+(\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif \lforall[x][(!A(x) \land !B(x))].
+\end{align*}
+\end{ex}
+
+\end{document}

@@ -1,0 +1,102 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: provability-consistency
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{prv}}
+      {\olfileid{pl}{axd}{prv}}
+
+\olsection{\usetoken{S}{derivability} మరియు అవైరుధ్యం}
+
+ఇప్పుడు !!{derivability} సంబంధపు అనేక లక్షణాలను స్థాపిస్తాం. అవి
+స్వతంత్రంగా కూడా ఆసక్తికరమైనవే; అయితే సంపూర్ణతా సిద్ధాంత నిరూపణలో
+ప్రతి ఒక్కటీ ఒక పాత్ర పోషిస్తుంది.
+
+\begin{prop}\ollabel{prop:provability-contr}
+  $\Gamma \Proves !A$ అయ్యి, $\Gamma \cup \{!A\}$ విరుద్ధమైతే,
+  $\Gamma$ విరుద్ధం.
+\end{prop}
+
+\begin{proof}
+  $\Gamma \cup \{!A\}$ విరుద్ధమైతే, $\Gamma \cup \{!A\}
+  \Proves \lfalse$. \olref[ptn]{prop:reflexivity} వల్ల, ప్రతి
+  $!B \in \Gamma$కు $\Gamma \Proves !B$. పరికల్పన ప్రకారం
+  $\Gamma \Proves !A$ కూడా కనుక, ప్రతి $!B \in \Gamma \cup
+  \{!A\}$కు $\Gamma \Proves !B$. \olref[ptn]{prop:transitivity}
+  వల్ల, $\Gamma \Proves \lfalse$; అంటే, $\Gamma$ విరుద్ధం.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:prov-incons}
+$\Gamma \Proves !A$ అయితే, అప్పుడు మాత్రమే $\Gamma \cup
+\{\lnot !A\}$ విరుద్ధం.
+\end{prop}
+
+\begin{proof}
+మొదట $\Gamma \Proves !A$ అని అనుకుందాం. అప్పుడు
+\olref[ptn]{prop:monotonicity} వల్ల $\Gamma \cup \{\lnot !A\}
+\Proves !A$. \olref[ptn]{prop:reflexivity} వల్ల $\Gamma \cup
+\{\lnot !A\} \Proves \lnot !A$. \olref[prp]{ax:lnot2} వల్ల
+$\Proves \lnot !A \lif (!A \lif \lfalse)$ కూడా. కాబట్టి
+\olref[ded]{prop:mp}ను రెండుసార్లు వర్తింపజేస్తే, $\Gamma \cup
+\{\lnot !A\} \Proves \lfalse$.
+
+ఇప్పుడు $\Gamma \cup \{\lnot !A\}$ విరుద్ధమని, అంటే $\Gamma \cup
+\{\lnot !A\} \Proves \lfalse$ అని అనుకుందాం. నిగమన సిద్ధాంతం వల్ల
+$\Gamma \Proves \lnot !A \lif \lfalse$. \olref[prp]{ax:lfalse2}
+వల్ల $\Gamma \Proves (\lnot !A \lif \lfalse) \lif \lnot\lnot !A$;
+కాబట్టి \olref[ded]{prop:mp} వల్ల $\Gamma \Proves \lnot\lnot !A$.
+$\Gamma \Proves \lnot\lnot !A \lif !A$ కూడా
+(\olref[prp]{ax:dne}) కనుక, \olref[ded]{prop:mp}ను మళ్లీ ఉపయోగించి
+$\Gamma \Proves !A$ పొందుతాం.
+\end{proof}
+
+\begin{prob}
+$\Gamma \Proves \lnot !A$ అయితే, అప్పుడు మాత్రమే $\Gamma \cup
+\{!A\}$ విరుద్ధమని నిరూపించండి.
+\end{prob}
+
+\begin{prop}\ollabel{prop:explicit-inc}
+  $\Gamma \Proves !A$, $\lnot !A \in \Gamma$ అయితే, $\Gamma$
+  విరుద్ధం.
+\end{prop}
+
+\begin{proof}
+  స్వావర్తనత్వం వల్ల $\Gamma \Proves \lnot !A$.
+  \olref[prp]{ax:lnot2} వల్ల $\Gamma \Proves \lnot !A \lif
+  (!A \lif \lfalse)$. \olref[ded]{prop:mp}ను రెండుసార్లు
+  వర్తింపజేస్తే $\Gamma \Proves \lfalse$.
+  \sourcecorrection{OLTEAXD-006}{ఆంగ్ల మూలం రెండు మోడస్ పోనెన్స్
+  అనువర్తనాలకు అవసరమైన $\Gamma \Proves \lnot !A$ పూర్వపక్షాన్ని
+  పేర్కొనలేదు. $\lnot !A \in \Gamma$ నుంచి స్వావర్తనత్వం ద్వారా
+  వచ్చే ఆ దశను స్పష్టంగా చేర్చాం.}
+\end{proof}
+
+
+\begin{prop}\ollabel{prop:provability-exhaustive}
+  $\Gamma \cup \{!A\}$, $\Gamma \cup \{\lnot !A\}$ రెండూ
+  విరుద్ధమైతే, $\Gamma$ విరుద్ధం.
+\end{prop}
+
+\begin{proof}
+సాధన.
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+  \olref[fol][axd][prv]{prop:provability-exhaustive}ను నిరూపించండి.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+  \olref[pl][axd][prv]{prop:provability-exhaustive}ను నిరూపించండి.
+\end{prob}
+\tagendprob
+
+
+\end{document}

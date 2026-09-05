@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **108 of 722 source units drafted**. This readable view contains all 101 decisions and 192 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **122 of 722 source units drafted**. This readable view contains all 113 decisions and 213 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -1103,6 +1103,39 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T039-OCC-005; OLP-0103; OLP-0103-B008; source upstream/content/first-order-logic/tableaux/proving-things.tex:39-47 bytes 1191-1766 SHA-256 6940ff2f8466cfb9dc740a4e7aa2cf9551c9a3d3304aa8ebe93217d11e451e90; target translation/content/first-order-logic/tableaux/proving-things.tex:39-47 bytes 1549-2960 SHA-256 45857b20ada030b996cdeb4bdec03f89562352f64e4d18f1b765959498713ee5; reader page pending.
   - te-Telu-IN-TE-T039-OCC-006; OLP-0101; OLP-0101-B012; source upstream/content/first-order-logic/tableaux/quantifier-rules.tex:27-55 bytes 539-1670 SHA-256 682b3f1de2569dc63657243b83a3daa8966cc1786fa44d5d2fa34da2658e2bb0; target translation/content/first-order-logic/tableaux/quantifier-rules.tex:27-56 bytes 599-2350 SHA-256 2be1ff9d3eddbf5eb91c9f2eccfae75f801ecabf60db2ae03ae6bee83a190d5c; reader page pending.
   - te-Telu-IN-TE-T039-OCC-007; OLP-0100; OLP-0100-B014; source upstream/content/first-order-logic/tableaux/propositional-rules.tex:77-91 bytes 1687-2230 SHA-256 dcf0dc5fbdbfd79a7cf8c4b07a3d3d51aedc9ac424416d205ee5a8fd0877a8f4; target translation/content/first-order-logic/tableaux/propositional-rules.tex:77-91 bytes 1780-2753 SHA-256 a34628548c52c1ecb31f0f089fb73186bb06dd19e5d9b4ac7388001e6b529123; reader page pending.
+
+## te-Telu-IN-TE-T040 — axiom / axiom instance / axiomatic derivation / inference rule / modus ponens / quantifier rule / derivability relation / proof-theoretic notion / deduction theorem
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: స్వీకృతం / స్వీకృత రూపం / స్వీకృతాధారిత నిరూపణ / నిగమన నియమం / మోడస్ పోనెన్స్ / పరిమాణీకరణిక నియమం / నిరూప్యతా సంబంధం / నిరూపణ-సిద్ధాంత భావన / నిగమన సిద్ధాంతం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “axiom / axiom instance / axiomatic derivation / inference rule / modus ponens / quantifier rule / derivability relation / proof-theoretic notion / deduction theorem” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low for cross-chapter consistency and broad proof/deduction register; high nomenclatural for axiom, axiom-instance and proof-theoretic headwords
+
+- Rationale: TE-P003 and TE-P004 support broad reasoning, proof, induction, deduction and theorem exposition, while TE-P002 supports logic and mathematical-statement register. They do not independently attest the axiomatic-deduction taxonomy. The chapter's finite-sequence definition, axiom schemata, modus-ponens and quantifier rules, derivability notation and deduction theorem control the selected senses. Modus ponens is an explicit transliterated borrowing.
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P004 [checked_context_only], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation | TE-C003:TE-P002 [checked_context_only], PDF page 9; printed page 35; Main paragraph, lower half; Logic and mathematical-statement usage; not evidence for a specific formal propositional-calculus term
+
+- Alternatives: leave the axiomatic-deduction taxonomy in English [rejected: not adopted] | translate modus ponens into an unattested coined headword [rejected: not adopted]
+
+- Review question: Please double-check whether “స్వీకృతం / స్వీకృత రూపం / స్వీకృతాధారిత నిరూపణ / నిగమన నియమం / మోడస్ పోనెన్స్ / పరిమాణీకరణిక నియమం / నిరూప్యతా సంబంధం / నిరూపణ-సిద్ధాంత భావన / నిగమన సిద్ధాంతం” is idiomatic and technically standard for “axiom / axiom instance / axiomatic derivation / inference rule / modus ponens / quantifier rule / derivability relation / proof-theoretic notion / deduction theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T040-OCC-001; OLP-0113; OLP-0113-B006; source upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:16-21 bytes 311-716 SHA-256 8b5cf02fabe434821d3a74db8fa803d25c772e38254c391edf03186b3dc23257; target translation/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:16-21 bytes 337-1170 SHA-256 5636c1394c2a4a99ffcd9a2b6d5080cc226b05e3decabd54f87650b17f39af7c; reader page pending.
+  - te-Telu-IN-TE-T040-OCC-002; OLP-0113; OLP-0113-B008; source upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41 bytes 1175-1454 SHA-256 8b5cf02fabe434821d3a74db8fa803d25c772e38254c391edf03186b3dc23257; target translation/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41 bytes 1920-2617 SHA-256 5636c1394c2a4a99ffcd9a2b6d5080cc226b05e3decabd54f87650b17f39af7c; reader page pending.
+  - te-Telu-IN-TE-T040-OCC-003; OLP-0114; OLP-0114-B006; source upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-17 bytes 319-460 SHA-256 c6332d0af2635bb1c79d1f0e418f26472cdf1022ed23818ca51e9e1226889810; target translation/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-17 bytes 402-693 SHA-256 414737e6a965707e21f3da4129380a4a55bfce8d7640ace6e1ba0f464d9c35c5; reader page pending.
+  - te-Telu-IN-TE-T040-OCC-004; OLP-0114; OLP-0114-B007; source upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-41 bytes 1261-1453 SHA-256 c6332d0af2635bb1c79d1f0e418f26472cdf1022ed23818ca51e9e1226889810; target translation/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-41 bytes 1494-1863 SHA-256 414737e6a965707e21f3da4129380a4a55bfce8d7640ace6e1ba0f464d9c35c5; reader page pending.
+  - te-Telu-IN-TE-T040-OCC-005; OLP-0115; OLP-0115-B007; source upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-32 bytes 518-957 SHA-256 fa0af48f98b58f2c7b5df8aa80cf2e4981936e237594ddce342e826bbca2ddc8; target translation/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-32 bytes 808-1613 SHA-256 ebb45357983dc30c6ea2ec6656d6419b1788e446be2a83414bf46a1aad489fb6; reader page pending.
+  - te-Telu-IN-TE-T040-OCC-006; OLP-0118; OLP-0118-B005; source upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:13-23 bytes 252-804 SHA-256 0afb9df4b5f0f5c1e892cf411d126f45acce94cfbdc9087e4bd37cb851cc370b; target translation/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:13-24 bytes 252-1482 SHA-256 c778f2e5483be61768f2962972cb261b72b0d4d6d1cc6a53cae6c0c78b6f89da; reader page pending.
+  - te-Telu-IN-TE-T040-OCC-007; OLP-0121; OLP-0121-B006; source upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:14-17 bytes 307-492 SHA-256 22a6a04d9ab4298d762efd6bf2041fa9bf3f2d91c6803b744458812c232cdacc; target translation/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:14-17 bytes 335-758 SHA-256 eadfa5cd0b5a0edba1517e5fd233dd275b8051cda1c100018ac37e4f3a88662a; reader page pending.
+  - te-Telu-IN-TE-T040-OCC-008; OLP-0119; OLP-0119-B011; source upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:49-51 bytes 1591-1726 SHA-256 ef122fcfc1a8c24e89cf5abe30efa11bcd0a1cc3ed9fca2426618e9174481780; target translation/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:48-50 bytes 2453-2660 SHA-256 a75383bfb9a91bd05b111e06c436544430fd3397b41604f850fd3cdd7ae067a8; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -2720,3 +2753,291 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTETAB-012-OCC-001; OLP-0108; OLP-0108-B009; source upstream/content/first-order-logic/tableaux/provability-quantifiers.tex:78-80 bytes 2652-2790 SHA-256 0087b4788815c95c714158f2f37438e351183f97d8388c0acde21c20a6e8aa0f; target translation/content/first-order-logic/tableaux/provability-quantifiers.tex:85 bytes 3923-4033 SHA-256 74aaab100f49e11f961799cd2c98950c7a8e1e76b62f65cd2acb83ee0311c16f; reader page pending.
+
+## te-Telu-IN-OLTEAXD-001 — OLTEAXD-001: confirmed missing formula metavariable marker in transitivity proof
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored the formula-metavariable marker in !B_i = !A, matching the displayed derivation and preceding references; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing formula metavariable marker in transitivity proof at line 82, final justification in the transitivity proof, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEAXD-20260905:OLTEAXD-001 [checked_supports], content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex; line 82, final justification in the transitivity proof; confirmed_missing_formula_metavariable_marker_in_transitivity_proof; restored the formula-metavariable marker in !B_i = !A, matching the displayed derivation and preceding references; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the transitivity proof consistently names the indexed formula as !B_i, matching the displayed concatenated derivation.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEAXD-001-OCC-001; OLP-0118; OLP-0118-B015; source upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:82 bytes 2654-2719 SHA-256 0afb9df4b5f0f5c1e892cf411d126f45acce94cfbdc9087e4bd37cb851cc370b; target translation/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:87 bytes 4550-4657 SHA-256 c778f2e5483be61768f2962972cb261b72b0d4d6d1cc6a53cae6c0c78b6f89da; reader page pending.
+
+## te-Telu-IN-OLTEAXD-002 — OLTEAXD-002: confirmed malformed membership statement in induction basis
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: wrote the well-formed membership statement !B in Gamma union {!A}; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed malformed membership statement in induction basis at line 67, length-one derivation case, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEAXD-20260905:OLTEAXD-002 [checked_supports], content/first-order-logic/axiomatic-deduction/deduction-theorem.tex; line 67, length-one derivation case; confirmed_malformed_membership_statement_in_induction_basis; wrote the well-formed membership statement !B in Gamma union {!A}; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the length-one derivation case now states the complete membership proposition !B in Gamma union {!A}.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEAXD-002-OCC-001; OLP-0119; OLP-0119-B014; source upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:67 bytes 2367-2438 SHA-256 ef122fcfc1a8c24e89cf5abe30efa11bcd0a1cc3ed9fca2426618e9174481780; target translation/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:73 bytes 4248-4358 SHA-256 a75383bfb9a91bd05b111e06c436544430fd3397b41604f850fd3cdd7ae067a8; reader page pending.
+
+## te-Telu-IN-OLTEAXD-003 — OLTEAXD-003: confirmed missing closing parenthesis in derived formula
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: added the missing final parenthesis to balance the nested composition conditional; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing closing parenthesis in derived formula at lines 106-107, derivfacts item (a), preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEAXD-20260905:OLTEAXD-003 [checked_supports], content/first-order-logic/axiomatic-deduction/deduction-theorem.tex; lines 106-107, derivfacts item (a); confirmed_missing_closing_parenthesis_in_derived_formula; added the missing final parenthesis to balance the nested composition conditional; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that derived-facts item (a) has exactly the balanced parentheses required by its nested composition conditional.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEAXD-003-OCC-001; OLP-0119; OLP-0119-B018; source upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:106-107 bytes 3978-4070 SHA-256 ef122fcfc1a8c24e89cf5abe30efa11bcd0a1cc3ed9fca2426618e9174481780; target translation/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:122 bytes 7465-7600 SHA-256 a75383bfb9a91bd05b111e06c436544430fd3397b41604f850fd3cdd7ae067a8; reader page pending.
+
+## te-Telu-IN-OLTEAXD-004 — OLTEAXD-004: confirmed missing closing parenthesis in quantified meta conditional
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: added the missing final parenthesis to balance the quantified meta-conditional; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing closing parenthesis in quantified meta conditional at line 44, second propositional meta-conditional, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEAXD-20260905:OLTEAXD-004 [checked_supports], content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex; line 44, second propositional meta-conditional; confirmed_missing_closing_parenthesis_in_quantified_meta_conditional; added the missing final parenthesis to balance the quantified meta-conditional; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the quantified meta-conditional closes both nested consequent parentheses without changing any connective.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEAXD-004-OCC-001; OLP-0120; OLP-0120-B009; source upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:44 bytes 1695-1795 SHA-256 79f2ddf58916652493c2892078b01dd53ae1691a97e28cfed043cbe285d11888; target translation/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:50 bytes 2940-3110 SHA-256 bb77d66b66667f4c812a49ca9f7b2ab18d4a462aeb506a0871606ac837d06fcf; reader page pending.
+
+## te-Telu-IN-OLTEAXD-005 — OLTEAXD-005: confirmed wrong final conclusion in quantified deduction theorem case
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: concluded Gamma proves A implies B, preserving the discharged antecedent required by the theorem; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed wrong final conclusion in quantified deduction theorem case at line 48, conclusion of the universal-quantifier case, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEAXD-20260905:OLTEAXD-005 [checked_supports], content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex; line 48, conclusion of the universal-quantifier case; confirmed_wrong_final_conclusion_in_quantified_deduction_theorem_case; concluded Gamma proves A implies B, preserving the discharged antecedent required by the theorem; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the universal-quantifier case concludes Gamma proves A implies B, exactly matching the deduction theorem target.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEAXD-005-OCC-001; OLP-0120; OLP-0120-B009; source upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:48 bytes 1903-1930 SHA-256 79f2ddf58916652493c2892078b01dd53ae1691a97e28cfed043cbe285d11888; target translation/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:54 bytes 3307-3434 SHA-256 bb77d66b66667f4c812a49ca9f7b2ab18d4a462aeb506a0871606ac837d06fcf; reader page pending.
+
+## te-Telu-IN-OLTEAXD-006 — OLTEAXD-006: confirmed omitted reflexivity premise before two modus ponens steps
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: stated Gamma proves not-A by reflexivity before the two modus-ponens applications; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed omitted reflexivity premise before two modus ponens steps at lines 65-68, explicit-inconsistency proof, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEAXD-20260905:OLTEAXD-006 [checked_supports], content/first-order-logic/axiomatic-deduction/provability-consistency.tex; lines 65-68, explicit-inconsistency proof; confirmed_omitted_reflexivity_premise_before_two_modus_ponens_steps; stated Gamma proves not-A by reflexivity before the two modus-ponens applications; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that reflexivity explicitly supplies Gamma proves not-A before the two modus-ponens applications.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEAXD-006-OCC-001; OLP-0121; OLP-0121-B014; source upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:65-68 bytes 2259-2434 SHA-256 22a6a04d9ab4298d762efd6bf2041fa9bf3f2d91c6803b744458812c232cdacc; target translation/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:73 bytes 3535-3654 SHA-256 eadfa5cd0b5a0edba1517e5fd233dd275b8051cda1c100018ac37e4f3a88662a; reader page pending.
+
+## te-Telu-IN-OLTEAXD-007 — OLTEAXD-007: confirmed wrong second conjunction projection axiom reference
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: named ax:land2 for the second projection while preserving the source's erroneous ax:land1 reference inside the adjacent disclosure note
+
+- Intended sense: Repair the audited confirmed wrong second conjunction projection axiom reference at line 33, proof of the two conjunction projections, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEAXD-20260905:OLTEAXD-007 [checked_supports], content/first-order-logic/axiomatic-deduction/provability-propositional.tex; line 33, proof of the two conjunction projections; confirmed_wrong_second_conjunction_projection_axiom_reference; named ax:land2 for the second projection while preserving the source's erroneous ax:land1 reference inside the adjacent disclosure note.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the left conjunction projection uses ax:land1 and the right projection uses ax:land2.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEAXD-007-OCC-001; OLP-0122; OLP-0122-B008; source upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:33 bytes 1002-1068 SHA-256 25274e10fe6d96292fe2c701b7af38291dd1d98de12a62ef385a5efd1c413007; target translation/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:35 bytes 1531-1666 SHA-256 9a9d1b1cd21bba5d94389f814e4e84152c007a109605060d5364d15b56909a2f; reader page pending.
+
+## te-Telu-IN-OLTEAXD-008 — OLTEAXD-008: confirmed wrong negation axiom reference in disjunction inconsistency proof
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: named ax:lnot2 for the displayed instance while retaining the source's erroneous ax:lnot1 reference inside the adjacent disclosure note
+
+- Intended sense: Repair the audited confirmed wrong negation axiom reference in disjunction inconsistency proof at lines 50-56, first disjunction proof, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEAXD-20260905:OLTEAXD-008 [checked_supports], content/first-order-logic/axiomatic-deduction/provability-propositional.tex; lines 50-56, first disjunction proof; confirmed_wrong_negation_axiom_reference_in_disjunction_inconsistency_proof; named ax:lnot2 for the displayed instance while retaining the source's erroneous ax:lnot1 reference inside the adjacent disclosure note.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that not-A implies (A implies false) is attributed to ax:lnot2, not the contraposition axiom.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEAXD-008-OCC-001; OLP-0122; OLP-0122-B010; source upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:50-56 bytes 1447-1895 SHA-256 25274e10fe6d96292fe2c701b7af38291dd1d98de12a62ef385a5efd1c413007; target translation/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:56 bytes 2661-2740 SHA-256 9a9d1b1cd21bba5d94389f814e4e84152c007a109605060d5364d15b56909a2f; reader page pending.
+
+## te-Telu-IN-OLTEAXD-009 — OLTEAXD-009: confirmed wrong rule named for final strong generalization step
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: stated derivability of top as an axiom and applied modus ponens to the derived conditional; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed wrong rule named for final strong generalization step at line 30, final step of strong generalization proof, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEAXD-20260905:OLTEAXD-009 [checked_supports], content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex; line 30, final step of strong generalization proof; confirmed_wrong_rule_named_for_final_strong_generalization_step; stated derivability of top as an axiom and applied modus ponens to the derived conditional; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the last strong-generalization step uses the top axiom and modus ponens rather than invoking the deduction theorem again.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEAXD-009-OCC-001; OLP-0123; OLP-0123-B009; source upstream/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:30 bytes 871-952 SHA-256 07225de499f34bd17eec7586fc9bcc59e98ea3cfa064172091fa66a336bf20b6; target translation/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:33 bytes 1517-1652 SHA-256 de8f8ba1857b40f8d8a2b98899f8b790e728b5b9525226ad03dc1092712e469a; reader page pending.
+
+## te-Telu-IN-OLTEAXD-010 — OLTEAXD-010: confirmed missing formula metavariable markers in quantifier soundness case
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored the ! formula-metavariable marker before B in all three affected formulas; adjacent sourcecorrection discloses the repeated repair
+
+- Intended sense: Repair the audited confirmed missing formula metavariable markers in quantifier soundness case at lines 80, 82 and 97, universal-quantifier rule case, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEAXD-20260905:OLTEAXD-010 [checked_supports], content/first-order-logic/axiomatic-deduction/soundness.tex; lines 80, 82 and 97, universal-quantifier rule case; confirmed_missing_formula_metavariable_markers_in_quantifier_soundness_case; restored the ! formula-metavariable marker before B in all three affected formulas; adjacent sourcecorrection discloses the repeated repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that all three repaired B occurrences in the quantifier-soundness case carry the formula-metavariable marker.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEAXD-010-OCC-001; OLP-0124; OLP-0124-B012; source upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:80 bytes 3058-3123 SHA-256 b5a11dd6a46306a767149f694f099bd9f57396013b4dfe67965e68ccae411ecb; target translation/content/first-order-logic/axiomatic-deduction/soundness.tex:106 bytes 7761-7890 SHA-256 ebe6a80cd6d957a2c6b17cbff7a698cbbf8f991c831108158dc6107a2dd20f46; reader page pending.
+  - te-Telu-IN-OLTEAXD-010-OCC-002; OLP-0124; OLP-0124-B012; source upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:82 bytes 3191-3254 SHA-256 b5a11dd6a46306a767149f694f099bd9f57396013b4dfe67965e68ccae411ecb; target translation/content/first-order-logic/axiomatic-deduction/soundness.tex:106 bytes 7761-7890 SHA-256 ebe6a80cd6d957a2c6b17cbff7a698cbbf8f991c831108158dc6107a2dd20f46; reader page pending.
+  - te-Telu-IN-OLTEAXD-010-OCC-003; OLP-0124; OLP-0124-B013; source upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:97 bytes 4025-4093 SHA-256 b5a11dd6a46306a767149f694f099bd9f57396013b4dfe67965e68ccae411ecb; target translation/content/first-order-logic/axiomatic-deduction/soundness.tex:106 bytes 7761-7890 SHA-256 ebe6a80cd6d957a2c6b17cbff7a698cbbf8f991c831108158dc6107a2dd20f46; reader page pending.
+
+## te-Telu-IN-OLTEAXD-011 — OLTEAXD-011: confirmed identity reflexivity claim exceeds axiom schema term scope
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restricted the proposition to closed terms, matching ax:id1's stated schema scope; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed identity reflexivity claim exceeds axiom schema term scope at line 39, proposition prop:iden1, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEAXD-20260905:OLTEAXD-011 [checked_supports], content/first-order-logic/axiomatic-deduction/identity.tex; line 39, proposition prop:iden1; confirmed_identity_reflexivity_claim_exceeds_axiom_schema_term_scope; restricted the proposition to closed terms, matching ax:id1's stated schema scope; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that reflexive identity is claimed only for closed terms, matching the stated scope of ax:id1.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEAXD-011-OCC-001; OLP-0125; OLP-0125-B011; source upstream/content/first-order-logic/axiomatic-deduction/identity.tex:39 bytes 886-950 SHA-256 9a4f25fcf00baab5d8d5f05e7fe2315ca9f4ceaa39a67551489a5130b9b8a2d4; target translation/content/first-order-logic/axiomatic-deduction/identity.tex:41 bytes 1375-1473 SHA-256 0f9f84f23ed4aca7ff1d669eea7e692c32d6115bf135ca515cd55fb143b3776a; reader page pending.

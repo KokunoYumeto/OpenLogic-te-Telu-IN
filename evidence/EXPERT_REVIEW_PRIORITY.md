@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 108 of 722 draft units**. This view selects 79 of 101 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 122 of 722 draft units**. This view selects 91 of 113 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -173,6 +173,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0099; first-order-logic/tableaux/rules-and-proofs; translation/content/first-order-logic/tableaux/rules-and-proofs.tex:15-25; printed/PDF page pending; OLP-0099; first-order-logic/tableaux/rules-and-proofs; translation/content/first-order-logic/tableaux/rules-and-proofs.tex:15-25; printed/PDF page pending; OLP-0099; first-order-logic/tableaux/rules-and-proofs; translation/content/first-order-logic/tableaux/rules-and-proofs.tex:44-49; printed/PDF page pending; OLP-0102; first-order-logic/tableaux/derivations; translation/content/first-order-logic/tableaux/derivations.tex:35-40; printed/PDF page pending; OLP-0103; first-order-logic/tableaux/proving-things; translation/content/first-order-logic/tableaux/proving-things.tex:39-47; printed/PDF page pending; OLP-0101; first-order-logic/tableaux/quantifier-rules; translation/content/first-order-logic/tableaux/quantifier-rules.tex:27-56; printed/PDF page pending; OLP-0100; first-order-logic/tableaux/propositional-rules; translation/content/first-order-logic/tableaux/propositional-rules.tex:77-91; printed/PDF page pending
 
 - Please double-check: Please double-check whether “చిహ్నిత సూత్రం / సత్యమూల్య సంకేతం / టాబ్లో / సంవృత శాఖ / వివృత శాఖ / తనిఖీ గుర్తు / ఐగెన్ చరరాశి షరతు / కట్ నియమం” is idiomatic and technically standard for “signed formula / truth-value sign / tableau / closed branch / open branch / checkmark / eigenvariable condition / cut rule” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T040 — axiom / axiom instance / axiomatic derivation / inference rule / modus ponens / quantifier rule / derivability relation / proof-theoretic notion / deduction theorem
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: స్వీకృతం / స్వీకృత రూపం / స్వీకృతాధారిత నిరూపణ / నిగమన నియమం / మోడస్ పోనెన్స్ / పరిమాణీకరణిక నియమం / నిరూప్యతా సంబంధం / నిరూపణ-సిద్ధాంత భావన / నిగమన సిద్ధాంతం
+
+- Occurrences: OLP-0113; first-order-logic/axiomatic-deduction/rules-and-proofs; translation/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:16-21; printed/PDF page pending; OLP-0113; first-order-logic/axiomatic-deduction/rules-and-proofs; translation/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41; printed/PDF page pending; OLP-0114; first-order-logic/axiomatic-deduction/axioms-rules-propositional; translation/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-17; printed/PDF page pending; OLP-0114; first-order-logic/axiomatic-deduction/axioms-rules-propositional; translation/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-41; printed/PDF page pending; OLP-0115; first-order-logic/axiomatic-deduction/axioms-rules-quantifiers; translation/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-32; printed/PDF page pending; OLP-0118; first-order-logic/axiomatic-deduction/proof-theoretic-notions; translation/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:13-24; printed/PDF page pending; OLP-0121; first-order-logic/axiomatic-deduction/provability-consistency; translation/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:14-17; printed/PDF page pending; OLP-0119; first-order-logic/axiomatic-deduction/deduction-theorem; translation/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:48-50; printed/PDF page pending
+
+- Please double-check: Please double-check whether “స్వీకృతం / స్వీకృత రూపం / స్వీకృతాధారిత నిరూపణ / నిగమన నియమం / మోడస్ పోనెన్స్ / పరిమాణీకరణిక నియమం / నిరూప్యతా సంబంధం / నిరూపణ-సిద్ధాంత భావన / నిగమన సిద్ధాంతం” is idiomatic and technically standard for “axiom / axiom instance / axiomatic derivation / inference rule / modus ponens / quantifier rule / derivability relation / proof-theoretic notion / deduction theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -793,3 +803,113 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0108; first-order-logic/tableaux/provability-quantifiers; translation/content/first-order-logic/tableaux/provability-quantifiers.tex:85; printed/PDF page pending
 
 - Please double-check: Please double-check that only the dangling comma after the two signed assumptions was removed and no tableau formula changed.
+
+## REV-OLTEAXD-001 — OLTEAXD-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored the formula-metavariable marker in !B_i = !A, matching the displayed derivation and preceding references; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0118; first-order-logic/axiomatic-deduction/proof-theoretic-notions; translation/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:87; printed/PDF page pending
+
+- Please double-check: Please double-check that the transitivity proof consistently names the indexed formula as !B_i, matching the displayed concatenated derivation.
+
+## REV-OLTEAXD-002 — OLTEAXD-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: wrote the well-formed membership statement !B in Gamma union {!A}; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0119; first-order-logic/axiomatic-deduction/deduction-theorem; translation/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:73; printed/PDF page pending
+
+- Please double-check: Please double-check that the length-one derivation case now states the complete membership proposition !B in Gamma union {!A}.
+
+## REV-OLTEAXD-003 — OLTEAXD-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: added the missing final parenthesis to balance the nested composition conditional; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0119; first-order-logic/axiomatic-deduction/deduction-theorem; translation/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:122; printed/PDF page pending
+
+- Please double-check: Please double-check that derived-facts item (a) has exactly the balanced parentheses required by its nested composition conditional.
+
+## REV-OLTEAXD-004 — OLTEAXD-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: added the missing final parenthesis to balance the quantified meta-conditional; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0120; first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers; translation/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:50; printed/PDF page pending
+
+- Please double-check: Please double-check that the quantified meta-conditional closes both nested consequent parentheses without changing any connective.
+
+## REV-OLTEAXD-005 — OLTEAXD-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: concluded Gamma proves A implies B, preserving the discharged antecedent required by the theorem; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0120; first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers; translation/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:54; printed/PDF page pending
+
+- Please double-check: Please double-check that the universal-quantifier case concludes Gamma proves A implies B, exactly matching the deduction theorem target.
+
+## REV-OLTEAXD-006 — OLTEAXD-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: stated Gamma proves not-A by reflexivity before the two modus-ponens applications; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0121; first-order-logic/axiomatic-deduction/provability-consistency; translation/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:73; printed/PDF page pending
+
+- Please double-check: Please double-check that reflexivity explicitly supplies Gamma proves not-A before the two modus-ponens applications.
+
+## REV-OLTEAXD-007 — OLTEAXD-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: named ax:land2 for the second projection while preserving the source's erroneous ax:land1 reference inside the adjacent disclosure note
+
+- Occurrences: OLP-0122; first-order-logic/axiomatic-deduction/provability-propositional; translation/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:35; printed/PDF page pending
+
+- Please double-check: Please double-check that the left conjunction projection uses ax:land1 and the right projection uses ax:land2.
+
+## REV-OLTEAXD-008 — OLTEAXD-008
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: named ax:lnot2 for the displayed instance while retaining the source's erroneous ax:lnot1 reference inside the adjacent disclosure note
+
+- Occurrences: OLP-0122; first-order-logic/axiomatic-deduction/provability-propositional; translation/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:56; printed/PDF page pending
+
+- Please double-check: Please double-check that not-A implies (A implies false) is attributed to ax:lnot2, not the contraposition axiom.
+
+## REV-OLTEAXD-009 — OLTEAXD-009
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: stated derivability of top as an axiom and applied modus ponens to the derived conditional; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0123; first-order-logic/axiomatic-deduction/provability-quantifiers; translation/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:33; printed/PDF page pending
+
+- Please double-check: Please double-check that the last strong-generalization step uses the top axiom and modus ponens rather than invoking the deduction theorem again.
+
+## REV-OLTEAXD-010 — OLTEAXD-010
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored the ! formula-metavariable marker before B in all three affected formulas; adjacent sourcecorrection discloses the repeated repair
+
+- Occurrences: OLP-0124; first-order-logic/axiomatic-deduction/soundness; translation/content/first-order-logic/axiomatic-deduction/soundness.tex:106; printed/PDF page pending
+
+- Please double-check: Please double-check that all three repaired B occurrences in the quantifier-soundness case carry the formula-metavariable marker.
+
+## REV-OLTEAXD-011 — OLTEAXD-011
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restricted the proposition to closed terms, matching ax:id1's stated schema scope; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0125; first-order-logic/axiomatic-deduction/identity; translation/content/first-order-logic/axiomatic-deduction/identity.tex:41; printed/PDF page pending
+
+- Please double-check: Please double-check that reflexive identity is claimed only for closed terms, matching the stated scope of ax:id1.

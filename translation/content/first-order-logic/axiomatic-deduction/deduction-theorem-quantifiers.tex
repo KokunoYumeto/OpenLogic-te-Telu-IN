@@ -1,0 +1,66 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: deduction-theorem-quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{axd}{ddq}
+
+\olsection{పరిమాణీకరణికాలతో నిగమన సిద్ధాంతం}
+
+\begin{thm}[నిగమన సిద్ధాంతం]
+\ollabel{thm:deduction-thm-q} $\Gamma \cup \{!A\} \Proves !B$
+అయితే, $\Gamma \Proves !A \lif !B$.
+\end{thm}
+
+\begin{proof}
+$\Gamma \cup \{!A\}$ నుంచి $!B$కు గల !!{derivation} పొడవుపై మళ్లీ
+ఆగమనం చేస్తాం.
+
+ఆగమన ప్రాతిపదిక నిరూపణ,~\olref[ded]{thm:deduction-thm} నిరూపణలో
+ఉన్నదానితో సరిసమానం.
+
+ఆగమన దశలో, $\Gamma \cup \{!A\}$ నుంచి $!B$కు గల !!{derivation},
+ఒక నిగమన నియమం ద్వారా సమర్థించబడిన~$!B$ దశతో ముగుస్తుందని మళ్లీ
+అనుకుందాం. ఆ నియమం మోడస్ పోనెన్స్ అయితే,
+\olref[ded]{thm:deduction-thm} నిరూపణలోలాగే సాగుతాం. ఆ నిగమన నియమం
+\QR{} అయితే, $!B \ident !C \lif \lforall[x][!D(x)]$ అని, అలాగే
+$!C \lif !D(a)$ రూపంలోని ఒక !!a{formula} ఆ !!{derivation}లో ముందుగా
+కనిపిస్తుందని మనకు తెలుసు; ఇక్కడ $a$ అనేది~$!C$, $!A$, $\Gamma$లలో
+కనిపించదు. అందువల్ల
+\begin{align*}
+  \Gamma \cup \{!A\} & \Proves !C \lif !D(a),\\
+  \intertext{అలాగే ఆగమన పరికల్పన వర్తిస్తుంది; అంటే,}
+    \Gamma & \Proves !A \lif (!C \lif !D(a)).\\
+  \intertext{ఇంకా}
+  & \Proves (!A \lif (!C \lif !D(a))) \lif ((!A \land !C) \lif !D(a))\\
+  \intertext{మరియు మోడస్ పోనెన్స్ వల్ల}
+  \Gamma & \Proves (!A \land !C) \lif !D(a).\\
+  \intertext{ఐగెన్ చరరాశి షరతు ఇంకా నెరవేరుతుంది కనుక, ఈ !!{derivation}కు \QRతో సమర్థించిన ఒక దశను చేర్చి}
+    \Gamma & \Proves (!A \land !C) \lif \lforall[x][!D(x)].\\
+    \intertext{ఇంకా మనకు}
+    & \Proves ((!A \land !C) \lif \lforall[x][!D(x)]) \lif (!A \lif (!C \lif \lforall[x][!D(x)])),\\
+    \intertext{కాబట్టి మోడస్ పోనెన్స్ వల్ల}
+    \Gamma & \Proves !A \lif (!C \lif \lforall[x][!D(x)]),
+\end{align*}
+అంటే, $\Gamma \Proves !A \lif !B$.
+\sourcecorrection{OLTEAXD-004}{ఆంగ్ల మూలం రెండవ మెటా-నిబంధనలోని
+పర్యవసానాన్ని మూసే కుడి కుండలీకరణ చిహ్నాన్ని వదిలింది. మొత్తం
+$(!A \lif (!C \lif \lforall[x][!D(x)]))$ పర్యవసానం మూసేలా
+సరిచేశాం.}
+\sourcecorrection{OLTEAXD-005}{ఈ సందర్భంలో $!B \ident !C \lif
+\lforall[x][!D(x)]$; నిరూపించాల్సిన నిగమన-సిద్ధాంత ముగింపు
+$\Gamma \Proves !A \lif !B$. ఆంగ్ల మూలం చివర పొరపాటుగా
+$\Gamma \Proves !B$ అని రాసింది; లక్ష్యానికి సరిపోయేలా సరిచేశాం.}
+
+$!B$ను \QR{} నియమం సమర్థించినా, అది $\lexists[x][!D(x)] \lif !C$
+రూపంలో ఉండే సందర్భాన్ని సాధనగా వదిలేస్తాం.
+\end{proof}
+
+\begin{prob}
+  \olref[fol][axd][ddq]{thm:deduction-thm-q} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+
+\end{document}

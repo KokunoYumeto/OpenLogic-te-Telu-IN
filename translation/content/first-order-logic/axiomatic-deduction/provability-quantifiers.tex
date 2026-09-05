@@ -1,0 +1,56 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: provability-quantifiers
+
+% verification of properties of provability needed for maximally
+% consistent sets in the completeness chapter.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{axd}{qpr}
+
+\olsection{\usetoken{S}{derivability} మరియు పరిమాణీకరణికాలు}
+
+\begin{explain}
+  ఈ విభాగంలో స్థాపించే~$\Proves$ గురించిన వాస్తవాలను స్వీకృతాధారిత
+  నిగమనాలు ఇవ్వాలని కూడా సంపూర్ణతా సిద్ధాంతం కోరుతుంది.
+\end{explain}
+
+\begin{thm}
+\ollabel{thm:strong-generalization} $c$ అనేది $\Gamma$లో గానీ
+$!A(x)$లో గానీ సంభవించని ఒక !!a{constant} అయ్యి, $\Gamma \Proves
+!A(c)$ అయితే, $\Gamma \Proves \lforall[x][!A(x)]$.
+\end{thm}
+
+\begin{proof}
+నిగమన సిద్ధాంతం వల్ల $\Gamma \Proves \ltrue \lif !A(c)$. $c$ అనేది
+$\Gamma$లో గానీ~$\top$లో గానీ సంభవించదు కనుక, $\Gamma \Proves
+\ltrue \lif \lforall[x][!A(x)]$. $\Gamma \Proves \ltrue$ అనేది
+\texttt{ax:ltrue} స్వీకృత రూపం; కాబట్టి మోడస్ పోనెన్స్ వల్ల $\Gamma
+\Proves \lforall[x][!A(x)]$.
+\sourcecorrection{OLTEAXD-009}{ఆంగ్ల మూలం చివరి దశను ``నిగమన సిద్ధాంతం
+మళ్లీ'' అని సమర్థించింది; అయితే $\Gamma \Proves \ltrue \lif
+\lforall[x][!A(x)]$ నుంచి కావలసిన ఫలితం రావడానికి
+$\Gamma \Proves \ltrue$ అనే స్వీకృత రూపంతో మోడస్ పోనెన్స్ అవసరం.
+ఆ రెండు దశలను స్పష్టంగా ఇచ్చాం.}
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:provability-quantifiers}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$!A(t) \Proves \lexists[x][!A(x)]$.}{}
+
+\tagitem{prvAll}{$\lforall[x][!A(x)] \Proves !A(t)$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{\olref[qua]{ax:q2}, నిగమన సిద్ధాంతం ద్వారా.}{}
+\tagitem{prvAll}{\olref[qua]{ax:q1}, నిగమన సిద్ధాంతం ద్వారా.}{}
+\end{tagenumerate}
+\end{proof}
+
+\end{document}

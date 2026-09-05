@@ -1,0 +1,34 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: axioms-rules-quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{axd}{qua}
+
+\olsection{పరిమాణీకరణికాల స్వీకృతాలు మరియు నియమాలు}
+
+\begin{defn}[పరిమాణీకరణికాల స్వీకృతాలు]
+పరిమాణీకరణికాలను నియంత్రించే \emph{స్వీకృతాలు} కిందివాటి అన్ని
+రూపాలు:
+\begin{align}
+\ollabel{ax:q1} & \lforall[x][!B] \lif !B(t), \\
+\ollabel{ax:q2} & !B(t) \lif \lexists[x][!B].
+\end{align}
+ఇక్కడ $t$ ఏ మూస పదమైనా కావచ్చు.
+\end{defn}
+
+\begin{defn}[పరిమాణీకరణికాల నియమాలు]
+\item ఒక !!{derivation}లో $!B \lif !A(a)$ ఇప్పటికే కనిపించి, $a$
+  అనేది~$\Gamma$లో గానీ~$!B$లో గానీ కనిపించకపోతే, $!B \lif
+  \lforall[x][!A(x)]$ ఒక సరైన నిగమన దశ.
+\item ఒక !!{derivation}లో $!A(a) \lif !B$ ఇప్పటికే కనిపించి, $a$
+  అనేది~$\Gamma$లో గానీ~$!B$లో గానీ కనిపించకపోతే,
+  $\lexists[x][!A(x)] \lif !B$ ఒక సరైన నిగమన దశ.
+\end{defn}
+
+ఈ రెండింటిలో దేనినైనా ``\QR'' అని సంక్షిప్తంగా రాస్తాం.
+
+\end{document}

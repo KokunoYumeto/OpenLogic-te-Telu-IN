@@ -1,0 +1,58 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+
+\documentclass[../../../include/open-logic-chapter]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olchapter{fol}{axd}{స్వీకృతాధారిత \usetoken{P}{derivation}}}
+      {\olchapter{pl}{axd}{స్వీకృతాధారిత \usetoken{P}{derivation}}}
+
+\begin{editorial}
+  ఏ సంయోజకాలు, పరిమాణీకరణికాలు ఆదిమమైనవో లేదా నిర్వచితమైనవో
+  సూచించే వివిధ ట్యాగ్‌లను ఈ అధ్యాయంలోని విషయం గౌరవిస్తుందని
+  నిర్ధారించడానికి ఇంకా ప్రయత్నం చేయలేదు: $\liff$ నిర్వచితమైనదని,
+  మిగతావన్నీ ఆదిమమైనవని అనుకుంటాం. FOL ట్యాగ్ నిజమైతే
+  పరిమాణీకరణికాలు గల రూపాన్ని, లేకపోతే అవి లేని రూపాన్ని ఇస్తాం.
+\end{editorial}
+
+\olimport{rules-and-proofs}
+
+\olimport{axioms-rules-propositional}
+
+\iftag{FOL}{%
+  \olimport{axioms-rules-quantifiers}
+}{}
+
+\olimport{proving-things}
+
+\iftag{FOL}{%
+  \olimport{proving-things-quant}
+}{}
+
+\olimport{proof-theoretic-notions}
+
+\olimport{deduction-theorem}
+
+\iftag{FOL}{%
+  \olimport{deduction-theorem-quantifiers}
+}{}
+
+\olimport{provability-consistency}
+
+\olimport{provability-propositional}
+
+\iftag{FOL}{%
+  \olimport{provability-quantifiers}
+}{}
+
+\olimport{soundness}
+
+\iftag{FOL}{
+  \olimport{identity}
+}{}
+
+\OLEndChapterHook
+
+\end{document}

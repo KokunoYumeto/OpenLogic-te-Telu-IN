@@ -1,0 +1,3463 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-05T16:37:09.548Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Intertext prose is masked while its inline math remains checked.",
+  "units": [
+    {
+      "unit_id": "OLP-0112",
+      "source_path": "content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex",
+      "source_sha256": "82b05cdab523aa9e7581b305adc4b065f01cb042bced407a85e776e0f3895382",
+      "translation_sha256": "4bd377748e493b510fea30d8dae851cbea5f98def985ac1396b3bd24973aa496",
+      "source_blocks": 20,
+      "target_blocks": 20,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport{rules-and-proofs}",
+        "\\olimport{axioms-rules-propositional}",
+        "\\olimport{axioms-rules-quantifiers}",
+        "\\olimport{proving-things}",
+        "\\olimport{proving-things-quant}",
+        "\\olimport{proof-theoretic-notions}",
+        "\\olimport{deduction-theorem}",
+        "\\olimport{deduction-theorem-quantifiers}",
+        "\\olimport{provability-consistency}",
+        "\\olimport{provability-propositional}",
+        "\\olimport{provability-quantifiers}",
+        "\\olimport{soundness}",
+        "\\olimport{identity}"
+      ],
+      "identifiers_target": [
+        "\\olimport{rules-and-proofs}",
+        "\\olimport{axioms-rules-propositional}",
+        "\\olimport{axioms-rules-quantifiers}",
+        "\\olimport{proving-things}",
+        "\\olimport{proving-things-quant}",
+        "\\olimport{proof-theoretic-notions}",
+        "\\olimport{deduction-theorem}",
+        "\\olimport{deduction-theorem-quantifiers}",
+        "\\olimport{provability-consistency}",
+        "\\olimport{provability-propositional}",
+        "\\olimport{provability-quantifiers}",
+        "\\olimport{soundness}",
+        "\\olimport{identity}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\liff$"
+      ],
+      "math_target_core": [
+        "$\\liff$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 272,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction",
+          "target_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\iftag{FOL}\n      {\\olchapter{fol}{axd}{Axiomatic \\usetoken{P}{derivation}}}\n      {\\olchapter{pl}{axd}{Axioma",
+          "target_start": "\\iftag{FOL}\n      {\\olchapter{fol}{axd}{స్వీకృతాధారిత \\usetoken{P}{derivation}}}\n      {\\olchapter{pl}{axd}{స్"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{editorial}\n  No effort has been made yet to ensure that the material in this\n  chapter respects various",
+          "target_start": "\\begin{editorial}\n  ఏ సంయోజకాలు, పరిమాణీకరణికాలు ఆదిమమైనవో లేదా నిర్వచితమైనవో\n  సూచించే వివిధ ట్యాగ్‌లను ఈ అధ్"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport{rules-and-proofs}",
+          "target_start": "\\olimport{rules-and-proofs}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport{axioms-rules-propositional}",
+          "target_start": "\\olimport{axioms-rules-propositional}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\iftag{FOL}{%\n  \\olimport{axioms-rules-quantifiers}\n}{}",
+          "target_start": "\\iftag{FOL}{%\n  \\olimport{axioms-rules-quantifiers}\n}{}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport{proving-things}",
+          "target_start": "\\olimport{proving-things}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\iftag{FOL}{%\n  \\olimport{proving-things-quant}\n}{}",
+          "target_start": "\\iftag{FOL}{%\n  \\olimport{proving-things-quant}\n}{}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\olimport{proof-theoretic-notions}",
+          "target_start": "\\olimport{proof-theoretic-notions}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\olimport{deduction-theorem}",
+          "target_start": "\\olimport{deduction-theorem}"
+        },
+        {
+          "index": 13,
+          "source_start": "\\iftag{FOL}{%\n  \\olimport{deduction-theorem-quantifiers}\n}{}",
+          "target_start": "\\iftag{FOL}{%\n  \\olimport{deduction-theorem-quantifiers}\n}{}"
+        },
+        {
+          "index": 14,
+          "source_start": "\\olimport{provability-consistency}",
+          "target_start": "\\olimport{provability-consistency}"
+        },
+        {
+          "index": 15,
+          "source_start": "\\olimport{provability-propositional}",
+          "target_start": "\\olimport{provability-propositional}"
+        },
+        {
+          "index": 16,
+          "source_start": "\\iftag{FOL}{%\n  \\olimport{provability-quantifiers}\n}{}",
+          "target_start": "\\iftag{FOL}{%\n  \\olimport{provability-quantifiers}\n}{}"
+        },
+        {
+          "index": 17,
+          "source_start": "\\olimport{soundness}",
+          "target_start": "\\olimport{soundness}"
+        },
+        {
+          "index": 18,
+          "source_start": "\\iftag{FOL}{\n  \\olimport{identity}\n}{}",
+          "target_start": "\\iftag{FOL}{\n  \\olimport{identity}\n}{}"
+        },
+        {
+          "index": 19,
+          "source_start": "\\OLEndChapterHook",
+          "target_start": "\\OLEndChapterHook"
+        },
+        {
+          "index": 20,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{fol}{axd}",
+        "\\olchapter{pl}{axd}",
+        "\\olimport{rules-and-proofs}",
+        "\\olimport{axioms-rules-propositional}",
+        "\\olimport{axioms-rules-quantifiers}",
+        "\\olimport{proving-things}",
+        "\\olimport{proving-things-quant}",
+        "\\olimport{proof-theoretic-notions}",
+        "\\olimport{deduction-theorem}",
+        "\\olimport{deduction-theorem-quantifiers}",
+        "\\olimport{provability-consistency}",
+        "\\olimport{provability-propositional}",
+        "\\olimport{provability-quantifiers}",
+        "\\olimport{soundness}",
+        "\\olimport{identity}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{fol}{axd}",
+        "\\olchapter{pl}{axd}",
+        "\\olimport{rules-and-proofs}",
+        "\\olimport{axioms-rules-propositional}",
+        "\\olimport{axioms-rules-quantifiers}",
+        "\\olimport{proving-things}",
+        "\\olimport{proving-things-quant}",
+        "\\olimport{proof-theoretic-notions}",
+        "\\olimport{deduction-theorem}",
+        "\\olimport{deduction-theorem-quantifiers}",
+        "\\olimport{provability-consistency}",
+        "\\olimport{provability-propositional}",
+        "\\olimport{provability-quantifiers}",
+        "\\olimport{soundness}",
+        "\\olimport{identity}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0113",
+      "source_path": "content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex",
+      "source_sha256": "8b5cf02fabe434821d3a74db8fa803d25c772e38254c391edf03186b3dc23257",
+      "translation_sha256": "5636c1394c2a4a99ffcd9a2b6d5080cc226b05e3decabd54f87650b17f39af7c",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{axd}{rul}",
+        "\\olfileid{pl}{axd}{rul}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{axd}{rul}",
+        "\\olfileid{pl}{axd}{rul}"
+      ],
+      "tokens_source": {
+        "!!^a{derivation}": 2,
+        "!!^a{formula}": 1,
+        "!!^{derivability}": 2,
+        "!!a{derivation}": 8,
+        "!!a{formula}": 1,
+        "!!{derivable}": 1,
+        "!!{derivation}": 7,
+        "!!{derivation}s": 1,
+        "!!{derive}s": 1,
+        "!!{formula}": 3,
+        "!!{formula}s": 5
+      },
+      "tokens_target": {
+        "!!^a{derivation}": 2,
+        "!!^a{formula}": 1,
+        "!!^{derivability}": 2,
+        "!!a{derivation}": 8,
+        "!!a{formula}": 1,
+        "!!{derivable}": 1,
+        "!!{derivation}": 7,
+        "!!{derivation}s": 1,
+        "!!{derive}s": 1,
+        "!!{formula}": 3,
+        "!!{formula}s": 5
+      },
+      "math_source": [
+        "$\\Gamma$",
+        "$\\LangL$",
+        "$\\Gamma$",
+        "$!A_1$",
+        "$!A_n$",
+        "$i\\len$",
+        "$!A_i\\in\\Gamma$",
+        "$!A_i$",
+        "$!A_i$",
+        "$!A_j$",
+        "$!A_k$",
+        "$j<i$",
+        "$k<i$",
+        "$A_i$",
+        "$\\Gamma$",
+        "$!A$",
+        "$!A\\in\\Gamma$",
+        "$!A\\in\\Gamma$",
+        "$!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$!A$",
+        "$!A$",
+        "$!A$",
+        "$!B\\lif!A$",
+        "$!B$",
+        "$!A$",
+        "$!A_1$",
+        "$!A_n$",
+        "$i\\len$",
+        "$!A_i\\in\\Gamma$",
+        "$!A_i$",
+        "$j<i$",
+        "$!A_j$",
+        "$!B\\lif!A_i$",
+        "$k<i$",
+        "$!A_k$",
+        "$!B$",
+        "$!A_i$",
+        "$!A_j$",
+        "$!B\\lif!A_i$",
+        "$!A_k$",
+        "$!B$",
+        "$1$",
+        "$n$",
+        "$!A_i$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$!A$",
+        "$!A$",
+        "$\\Proves!A$",
+        "$!A$",
+        "$\\Proves/!A$"
+      ],
+      "math_target_core": [
+        "$\\Gamma$",
+        "$\\LangL$",
+        "$\\Gamma$",
+        "$!A_1$",
+        "$!A_n$",
+        "$i\\len$",
+        "$!A_i\\in\\Gamma$",
+        "$!A_i$",
+        "$j<i$",
+        "$k<i$",
+        "$!A_j$",
+        "$!A_k$",
+        "$!A_i$",
+        "$A_i$",
+        "$\\Gamma$",
+        "$!A\\in\\Gamma$",
+        "$!A$",
+        "$!A\\in\\Gamma$",
+        "$\\Gamma$",
+        "$!A$",
+        "$!A$",
+        "$!A$",
+        "$!A$",
+        "$!A$",
+        "$!B\\lif!A$",
+        "$!B$",
+        "$!A$",
+        "$i\\len$",
+        "$!A_1$",
+        "$!A_n$",
+        "$!A_i\\in\\Gamma$",
+        "$!A_i$",
+        "$j<i$",
+        "$!A_j$",
+        "$!B\\lif!A_i$",
+        "$k<i$",
+        "$!A_k$",
+        "$!B$",
+        "$!A_j$",
+        "$!B\\lif!A_i$",
+        "$!A_k$",
+        "$!B$",
+        "$!A_i$",
+        "$1$",
+        "$n$",
+        "$\\Gamma$",
+        "$!A_i$",
+        "$\\Gamma$",
+        "$!A$",
+        "$!A$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves!A$",
+        "$!A$",
+        "$!A$",
+        "$!A$",
+        "$\\Proves!A$",
+        "$\\Proves/!A$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1479,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic \n% Chapter: axiomatic-deduction \n% Section: rules-and-proofs",
+          "target_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction\n% Section: rules-and-proofs"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\iftag{FOL}\n      {\\olfileid{fol}{axd}{rul}}\n      {\\olfileid{pl}{axd}{rul}}",
+          "target_start": "\\iftag{FOL}\n      {\\olfileid{fol}{axd}{rul}}\n      {\\olfileid{pl}{axd}{rul}}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Rules and \\usetoken{P}{derivation}}",
+          "target_start": "\\olsection{నియమాలు మరియు \\usetoken{P}{derivation}}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{explain}\n  Axiomatic !!{derivation}s are perhaps the simplest !!{derivation} system for\n  logic. !!^a{d",
+          "target_start": "\\begin{explain}\n  స్వీకృతాధారిత !!{derivation}s బహుశా తర్కంలోని అత్యంత సరళమైన\n  !!{derivation} వ్యవస్థలు. ఒక !"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}[!!^{derivability}]\nIf $\\Gamma$ is a set of !!{formula}s of $\\Lang L$ then a\n\\emph{!!{derivation}}",
+          "target_start": "\\begin{defn}[!!^{derivability}]\n$\\Gamma$ అనేది $\\Lang L$ యొక్క !!{formula}s సమితి అయితే,\n$\\Gamma$ నుంచి ఒక \\em"
+        },
+        {
+          "index": 8,
+          "source_start": "What counts as a correct !!{derivation} depends on which inference\nrules we allow (and of course what we take ",
+          "target_start": "ఏది సరైన !!{derivation}గా పరిగణింపబడుతుందో, మనం ఏ నిగమన నియమాలను\nఅనుమతిస్తామనే దానిపై (మరియు, తప్పకుండా, వేటిన"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{defn}[Rule of inference]\nA \\emph{rule of inference} gives a sufficient condition for what\ncounts as a c",
+          "target_start": "\\begin{defn}[నిగమన నియమం]\n$\\Gamma$ నుంచి ఒక !!a{derivation}లో ఏది సరైన నిగమన దశగా\nపరిగణింపబడుతుందో దానికి ఒక \\"
+        },
+        {
+          "index": 10,
+          "source_start": "For instance, since any one-element sequence $!A$ with $!A \\in \\Gamma$\ntrivially counts as !!a{derivation}, th",
+          "target_start": "ఉదాహరణకు, $!A \\in \\Gamma$ అయిన ఏక-మూలక క్రమం $!A$ అలవోకగా ఒక\n!!a{derivation} అవుతుంది కనుక, కిందిది చాలా సరళమై"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{defn}[!!^{derivability}]\nA !!{formula}~$!A$ is \\emph{!!{derivable}} from $\\Gamma$, written\n$\\Gamma \\Pro",
+          "target_start": "\\begin{defn}[!!^{derivability}]\n$\\Gamma$ నుంచి $!A$తో ముగిసే ఒక !!a{derivation} ఉంటే,\n!!{formula}~$!A$ను $\\Gam"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{defn}[Theorems]\n!!^a{formula}~$!A$ is a \\emph{theorem} if there is !!a{derivation}\nof~$!A$ from the emp",
+          "target_start": "\\begin{defn}[సిద్ధాంతాలు]\nఖాళీ సమితి నుంచి $!A$కు ఒక !!a{derivation} ఉంటే, !!^a{formula}~$!A$\nఒక \\emph{సిద్ధాం"
+        },
+        {
+          "index": 13,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{rul}",
+        "\\olfileid{pl}{axd}{rul}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{rul}",
+        "\\olfileid{pl}{axd}{rul}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0114",
+      "source_path": "content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex",
+      "source_sha256": "c6332d0af2635bb1c79d1f0e418f26472cdf1022ed23818ca51e9e1226889810",
+      "translation_sha256": "414737e6a965707e21f3da4129380a4a55bfce8d7640ace6e1ba0f464d9c35c5",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{axd}{prp}",
+        "\\olfileid{pl}{axd}{prp}",
+        "\\ollabel{ax:land1}",
+        "\\ollabel{ax:land2}",
+        "\\ollabel{ax:land3}",
+        "\\ollabel{ax:lor1}",
+        "\\ollabel{ax:lor2}",
+        "\\ollabel{ax:lor3}",
+        "\\ollabel{ax:lif1}",
+        "\\ollabel{ax:lif2}",
+        "\\ollabel{ax:lnot1}",
+        "\\ollabel{ax:lnot2}",
+        "\\ollabel{ax:ltrue}",
+        "\\ollabel{ax:lfalse1}",
+        "\\ollabel{ax:lfalse2}",
+        "\\ollabel{ax:dne}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{axd}{prp}",
+        "\\olfileid{pl}{axd}{prp}",
+        "\\ollabel{ax:land1}",
+        "\\ollabel{ax:land2}",
+        "\\ollabel{ax:land3}",
+        "\\ollabel{ax:lor1}",
+        "\\ollabel{ax:lor2}",
+        "\\ollabel{ax:lor3}",
+        "\\ollabel{ax:lif1}",
+        "\\ollabel{ax:lif2}",
+        "\\ollabel{ax:lnot1}",
+        "\\ollabel{ax:lnot2}",
+        "\\ollabel{ax:ltrue}",
+        "\\ollabel{ax:lfalse1}",
+        "\\ollabel{ax:lfalse2}",
+        "\\ollabel{ax:dne}"
+      ],
+      "tokens_source": {
+        "!!a{derivation}": 1,
+        "!!{formula}s": 1
+      },
+      "tokens_target": {
+        "!!a{derivation}": 1,
+        "!!{formula}s": 1
+      },
+      "math_source": [
+        "$\\PAx$",
+        "\\begin{align}&(!A\\land!B)\\lif!A\\ollabel{ax:land1}\\\\&(!A\\land!B)\\lif!B\\ollabel{ax:land2}\\\\&!A\\lif(!B\\lif(!A\\land!B))\\ollabel{ax:land3}\\\\&!A\\lif(!A\\lor!B)\\ollabel{ax:lor1}\\\\&!A\\lif(!B\\lor!A)\\ollabel{ax:lor2}\\\\&(!A\\lif!C)\\lif((!B\\lif!C)\\lif((!A\\lor!B)\\lif!C))\\ollabel{ax:lor3}\\\\&!A\\lif(!B\\lif!A)\\ollabel{ax:lif1}\\\\&(!A\\lif(!B\\lif!C))\\lif((!A\\lif!B)\\lif(!A\\lif!C))\\ollabel{ax:lif2}\\\\&(!A\\lif!B)\\lif((!A\\lif\\lnot!B)\\lif\\lnot!A)\\ollabel{ax:lnot1}\\\\&\\lnot!A\\lif(!A\\lif!B)\\ollabel{ax:lnot2}\\\\&\\ltrue\\ollabel{ax:ltrue}\\\\&\\lfalse\\lif!A\\ollabel{ax:lfalse1}\\\\&(!A\\lif\\lfalse)\\lif\\lnot!A\\ollabel{ax:lfalse2}\\\\&\\lnot\\lnot!A\\lif!A\\ollabel{ax:dne}\\end{align}",
+        "$!B$",
+        "$!B\\lif!A$",
+        "$!A$"
+      ],
+      "math_target_core": [
+        "$\\PAx$",
+        "\\begin{align}&(!A\\land!B)\\lif!A\\ollabel{ax:land1}\\\\&(!A\\land!B)\\lif!B\\ollabel{ax:land2}\\\\&!A\\lif(!B\\lif(!A\\land!B))\\ollabel{ax:land3}\\\\&!A\\lif(!A\\lor!B)\\ollabel{ax:lor1}\\\\&!A\\lif(!B\\lor!A)\\ollabel{ax:lor2}\\\\&(!A\\lif!C)\\lif((!B\\lif!C)\\lif((!A\\lor!B)\\lif!C))\\ollabel{ax:lor3}\\\\&!A\\lif(!B\\lif!A)\\ollabel{ax:lif1}\\\\&(!A\\lif(!B\\lif!C))\\lif((!A\\lif!B)\\lif(!A\\lif!C))\\ollabel{ax:lif2}\\\\&(!A\\lif!B)\\lif((!A\\lif\\lnot!B)\\lif\\lnot!A)\\ollabel{ax:lnot1}\\\\&\\lnot!A\\lif(!A\\lif!B)\\ollabel{ax:lnot2}\\\\&\\ltrue\\ollabel{ax:ltrue}\\\\&\\lfalse\\lif!A\\ollabel{ax:lfalse1}\\\\&(!A\\lif\\lfalse)\\lif\\lnot!A\\ollabel{ax:lfalse2}\\\\&\\lnot\\lnot!A\\lif!A\\ollabel{ax:dne}\\end{align}",
+        "$!B$",
+        "$!B\\lif!A$",
+        "$!A$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 214,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction\n% Section: axioms-rules-propositional",
+          "target_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction\n% Section: axioms-rules-propositional"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\iftag{FOL}\n      {\\olfileid{fol}{axd}{prp}}\n      {\\olfileid{pl}{axd}{prp}}",
+          "target_start": "\\iftag{FOL}\n      {\\olfileid{fol}{axd}{prp}}\n      {\\olfileid{pl}{axd}{prp}}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Axioms and Rules for the Propositional Connectives}",
+          "target_start": "\\olsection{ప్రతిజ్ఞాత్మక సంయోజకాల స్వీకృతాలు మరియు నియమాలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}[Axioms]\nThe set of $\\PAx$ of \\emph{axioms} for the propositional connectives comprises\nall !!{for",
+          "target_start": "\\begin{defn}[స్వీకృతాలు]\nప్రతిజ్ఞాత్మక సంయోజకాల \\emph{స్వీకృతాల} సమితి~$\\PAx$ కింది\nరూపాలన్నింటిలోని !!{formul"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}[Modus ponens]\n  If $!B$ and $!B \\lif !A$ already occur in !!a{derivation}, then $!A$ is\n  a corre",
+          "target_start": "\\begin{defn}[మోడస్ పోనెన్స్]\n  ఒక !!a{derivation}లో $!B$, $!B \\lif !A$ ఇప్పటికే కనిపిస్తే,\n  $!A$ ఒక సరైన నిగమ"
+        },
+        {
+          "index": 8,
+          "source_start": "We'll abbreviate the rule modus ponens as ``\\MP.''",
+          "target_start": "మోడస్ పోనెన్స్ నియమాన్ని ``\\MP'' అని సంక్షిప్తంగా రాస్తాం."
+        },
+        {
+          "index": 9,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{prp}",
+        "\\olfileid{pl}{axd}{prp}",
+        "\\ollabel{ax:land1}",
+        "\\ollabel{ax:land2}",
+        "\\ollabel{ax:land3}",
+        "\\ollabel{ax:lor1}",
+        "\\ollabel{ax:lor2}",
+        "\\ollabel{ax:lor3}",
+        "\\ollabel{ax:lif1}",
+        "\\ollabel{ax:lif2}",
+        "\\ollabel{ax:lnot1}",
+        "\\ollabel{ax:lnot2}",
+        "\\ollabel{ax:ltrue}",
+        "\\ollabel{ax:lfalse1}",
+        "\\ollabel{ax:lfalse2}",
+        "\\ollabel{ax:dne}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{prp}",
+        "\\olfileid{pl}{axd}{prp}",
+        "\\ollabel{ax:land1}",
+        "\\ollabel{ax:land2}",
+        "\\ollabel{ax:land3}",
+        "\\ollabel{ax:lor1}",
+        "\\ollabel{ax:lor2}",
+        "\\ollabel{ax:lor3}",
+        "\\ollabel{ax:lif1}",
+        "\\ollabel{ax:lif2}",
+        "\\ollabel{ax:lnot1}",
+        "\\ollabel{ax:lnot2}",
+        "\\ollabel{ax:ltrue}",
+        "\\ollabel{ax:lfalse1}",
+        "\\ollabel{ax:lfalse2}",
+        "\\ollabel{ax:dne}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0115",
+      "source_path": "content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex",
+      "source_sha256": "fa0af48f98b58f2c7b5df8aa80cf2e4981936e237594ddce342e826bbca2ddc8",
+      "translation_sha256": "ebb45357983dc30c6ea2ec6656d6419b1788e446be2a83414bf46a1aad489fb6",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{axd}{qua}",
+        "\\ollabel{ax:q1}",
+        "\\ollabel{ax:q2}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{axd}{qua}",
+        "\\ollabel{ax:q1}",
+        "\\ollabel{ax:q2}"
+      ],
+      "tokens_source": {
+        "!!{derivation}": 2
+      },
+      "tokens_target": {
+        "!!{derivation}": 2
+      },
+      "math_source": [
+        "\\begin{align}\\ollabel{ax:q1}&\\lforall[x][!B]\\lif!B(t),\\\\\\ollabel{ax:q2}&!B(t)\\lif\\lexists[x][!B].\\end{align}",
+        "$t$",
+        "$!B\\lif!A(a)$",
+        "$a$",
+        "$\\Gamma$",
+        "$!B$",
+        "$!B\\lif\\lforall[x][!A(x)]$",
+        "$!A(a)\\lif!B$",
+        "$a$",
+        "$\\Gamma$",
+        "$!B$",
+        "$\\lexists[x][!A(x)]\\lif!B$"
+      ],
+      "math_target_core": [
+        "\\begin{align}\\ollabel{ax:q1}&\\lforall[x][!B]\\lif!B(t),\\\\\\ollabel{ax:q2}&!B(t)\\lif\\lexists[x][!B].\\end{align}",
+        "$t$",
+        "$!B\\lif!A(a)$",
+        "$a$",
+        "$\\Gamma$",
+        "$!B$",
+        "$!B\\lif\\lforall[x][!A(x)]$",
+        "$!A(a)\\lif!B$",
+        "$a$",
+        "$\\Gamma$",
+        "$!B$",
+        "$\\lexists[x][!A(x)]\\lif!B$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 325,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction\n% Section: axioms-rules-quantifiers",
+          "target_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction\n% Section: axioms-rules-quantifiers"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{fol}{axd}{qua}",
+          "target_start": "\\olfileid{fol}{axd}{qua}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Axioms and Rules for Quantifiers}",
+          "target_start": "\\olsection{పరిమాణీకరణికాల స్వీకృతాలు మరియు నియమాలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}[Axioms for quantifiers]\nThe \\emph{axioms} governing quantifiers are\nall instances of the followin",
+          "target_start": "\\begin{defn}[పరిమాణీకరణికాల స్వీకృతాలు]\nపరిమాణీకరణికాలను నియంత్రించే \\emph{స్వీకృతాలు} కిందివాటి అన్ని\nరూపాలు:"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}[Rules for quantifiers]\n\\item If $!B \\lif !A(a)$ already occurs in the !!{derivation} and $a$\n  do",
+          "target_start": "\\begin{defn}[పరిమాణీకరణికాల నియమాలు]\n\\item ఒక !!{derivation}లో $!B \\lif !A(a)$ ఇప్పటికే కనిపించి, $a$\n  అనేది~"
+        },
+        {
+          "index": 8,
+          "source_start": "We'll abbreviate either of these by ``\\QR.''",
+          "target_start": "ఈ రెండింటిలో దేనినైనా ``\\QR'' అని సంక్షిప్తంగా రాస్తాం."
+        },
+        {
+          "index": 9,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{qua}",
+        "\\ollabel{ax:q1}",
+        "\\ollabel{ax:q2}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{qua}",
+        "\\ollabel{ax:q1}",
+        "\\ollabel{ax:q2}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0116",
+      "source_path": "content/first-order-logic/axiomatic-deduction/proving-things.tex",
+      "source_sha256": "23ad39fb3af69f934bb4410a53b692e1e589e5a12ecb757a219ee3e5dc4c6a56",
+      "translation_sha256": "aa48a126799b3830de5f58908dbbe7e8bc8b7fb6eda0e51e80687f4b0bd1a05a",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{axd}{pro}",
+        "\\olfileid{pl}{axd}{pro}",
+        "\\olref[prp]{ax:lor3}",
+        "\\olref[prp]{ax:lnot2}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lnot2}",
+        "\\olref[prp]{ax:lor3}",
+        "\\olref[prp]{ax:lif1}",
+        "\\ollabel{ex:identity}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif2}",
+        "\\olref[prp]{ax:lif2}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif2}",
+        "\\olref[prp]{ax:lif1}",
+        "\\ollabel{ex:chain}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif2}",
+        "\\ollabel{prop:chain}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{axd}{pro}",
+        "\\olfileid{pl}{axd}{pro}",
+        "\\olref[prp]{ax:lor3}",
+        "\\olref[prp]{ax:lnot2}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lnot2}",
+        "\\olref[prp]{ax:lor3}",
+        "\\olref[prp]{ax:lif1}",
+        "\\ollabel{ex:identity}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif2}",
+        "\\olref[prp]{ax:lif2}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif2}",
+        "\\olref[prp]{ax:lif1}",
+        "\\ollabel{ex:chain}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif2}",
+        "\\ollabel{prop:chain}"
+      ],
+      "tokens_source": {
+        "!!a{derivation}": 5,
+        "!!a{element}": 1,
+        "!!{derivable}": 1,
+        "!!{derivation}": 7,
+        "!!{derivation}s": 1,
+        "!!{derive}": 5,
+        "!!{formula}": 3,
+        "!!{formula}s": 1
+      },
+      "tokens_target": {
+        "!!a{derivation}": 5,
+        "!!a{element}": 1,
+        "!!{derivable}": 1,
+        "!!{derivation}": 7,
+        "!!{derivation}s": 1,
+        "!!{derive}": 5,
+        "!!{formula}": 3,
+        "!!{formula}s": 1
+      },
+      "math_source": [
+        "$(\\lnot!D\\lor!E)\\lif(!D\\lif!E)$",
+        "$!A$",
+        "$!A\\lif!B$",
+        "$!B$",
+        "$!A$",
+        "$\\lnot!D$",
+        "$!B$",
+        "$!E$",
+        "$!C$",
+        "$!D\\lif!E$",
+        "\\[(\\lnot!D\\lif(!D\\lif!E))\\lif((!E\\lif(!D\\lif!E))\\lif((\\lnot!D\\lor!E)\\lif(!D\\lif!E))).\\]",
+        "$\\lnot!D\\lif(!D\\lif!E)$",
+        "$!E\\lif(!D\\lif!E)$",
+        "$\\lnot!D\\lif(!D\\lif!E)$",
+        "$(\\lnot!D\\lif(!D\\lif!E))\\lif{}$",
+        "$((!E\\lif(!D\\lif!E))\\lif((\\lnot!D\\lor!E)\\lif(!D\\lif!E)))$",
+        "$(!E\\lif(!D\\lif!E))\\lif((\\lnot!D\\lor!E)\\lif(!D\\lif!E))$",
+        "$!E\\lif(!D\\lif!E)$",
+        "$(\\lnot!D\\lor!E)\\lif(!D\\lif!E)$",
+        "$!D\\lif!D$",
+        "$!A\\lif!B$",
+        "$!B$",
+        "$!D\\lif!D$",
+        "$!A$",
+        "$!D$",
+        "\\[!D\\lif(!D\\lif!D)\\]",
+        "$!A$",
+        "$!D$",
+        "$!D$",
+        "$\\lif$",
+        "\\[(!A\\lif(!B\\lif!C))\\lif((!A\\lif!B)\\lif(!A\\lif!C))\\]",
+        "$!A\\lif!C$",
+        "$!D\\lif!D$",
+        "$!A$",
+        "$!C$",
+        "$!D$",
+        "$!B$",
+        "$!A\\lif(!B\\lif!C)$",
+        "$!A\\lif!B$",
+        "$!D\\lif(!B\\lif!D)$",
+        "$!D\\lif!B$",
+        "$!B$",
+        "$!D\\lif!B$",
+        "$!B$",
+        "$(!D\\lif!D)$",
+        "$!D\\lif((!D\\lif!D)\\lif!D)$",
+        "$(!D\\lif((!D\\lif!D)\\lif!D))\\lif{}$",
+        "$((!D\\lif(!D\\lif!D))\\lif(!D\\lif!D))$",
+        "$(!D\\lif(!D\\lif!D))\\lif(!D\\lif!D)$",
+        "$!D\\lif(!D\\lif!D)$",
+        "$!D\\lif!D$",
+        "$\\Gamma$",
+        "$!A\\lif!C$",
+        "$\\Gamma=\\{!A\\lif!B,!B\\lif!C\\}$",
+        "$!A\\lif!B$",
+        "$!B\\lif!C$",
+        "$(!B\\lif!C)\\lif(!A\\lif(!B\\lif!C))$",
+        "$!A\\lif(!B\\lif!C)$",
+        "$(!A\\lif(!B\\lif!C))\\lif{}$",
+        "$((!A\\lif!B)\\lif(!A\\lif!C))$",
+        "$((!A\\lif!B)\\lif(!A\\lif!C))$",
+        "$!A\\lif!C$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves!A\\lif!B$",
+        "$\\Gamma\\Proves!B\\lif!C$",
+        "$\\Gamma\\Proves!A\\lif!C$",
+        "$\\Gamma\\Proves!A\\lif!B$",
+        "$\\Gamma\\Proves!B\\lif!C$",
+        "$!A\\lif!B$",
+        "$\\Gamma$",
+        "$!B\\lif!C$",
+        "$\\Gamma$",
+        "$!A\\lif!C$",
+        "$\\Gamma$",
+        "$!A\\lif!B$",
+        "$!B\\lif!C$",
+        "$(!A\\land!B)\\lif(!B\\land!A)$",
+        "$((!A\\land!B)\\lif!C)\\lif(!A\\lif(!B\\lif!C))$",
+        "$\\lnot(!A\\lor!B)\\lif\\lnot!A$"
+      ],
+      "math_target_core": [
+        "$(\\lnot!D\\lor!E)\\lif(!D\\lif!E)$",
+        "$!A$",
+        "$!A\\lif!B$",
+        "$!B$",
+        "$!A$",
+        "$\\lnot!D$",
+        "$!B$",
+        "$!E$",
+        "$!C$",
+        "$!D\\lif!E$",
+        "\\[(\\lnot!D\\lif(!D\\lif!E))\\lif((!E\\lif(!D\\lif!E))\\lif((\\lnot!D\\lor!E)\\lif(!D\\lif!E))).\\]",
+        "$\\lnot!D\\lif(!D\\lif!E)$",
+        "$!E\\lif(!D\\lif!E)$",
+        "$\\lnot!D\\lif(!D\\lif!E)$",
+        "$(\\lnot!D\\lif(!D\\lif!E))\\lif{}$",
+        "$((!E\\lif(!D\\lif!E))\\lif((\\lnot!D\\lor!E)\\lif(!D\\lif!E)))$",
+        "$(!E\\lif(!D\\lif!E))\\lif((\\lnot!D\\lor!E)\\lif(!D\\lif!E))$",
+        "$!E\\lif(!D\\lif!E)$",
+        "$(\\lnot!D\\lor!E)\\lif(!D\\lif!E)$",
+        "$!D\\lif!D$",
+        "$!A\\lif!B$",
+        "$!B$",
+        "$!D\\lif!D$",
+        "$!A$",
+        "$!D$",
+        "\\[!D\\lif(!D\\lif!D)\\]",
+        "$!A$",
+        "$!D$",
+        "$!D$",
+        "$\\lif$",
+        "\\[(!A\\lif(!B\\lif!C))\\lif((!A\\lif!B)\\lif(!A\\lif!C))\\]",
+        "$!A\\lif!C$",
+        "$!D\\lif!D$",
+        "$!A$",
+        "$!C$",
+        "$!D$",
+        "$!A\\lif(!B\\lif!C)$",
+        "$!A\\lif!B$",
+        "$!D\\lif(!B\\lif!D)$",
+        "$!D\\lif!B$",
+        "$!B$",
+        "$!B$",
+        "$!B$",
+        "$(!D\\lif!D)$",
+        "$!D\\lif!B$",
+        "$!D\\lif((!D\\lif!D)\\lif!D)$",
+        "$(!D\\lif((!D\\lif!D)\\lif!D))\\lif{}$",
+        "$((!D\\lif(!D\\lif!D))\\lif(!D\\lif!D))$",
+        "$(!D\\lif(!D\\lif!D))\\lif(!D\\lif!D)$",
+        "$!D\\lif(!D\\lif!D)$",
+        "$!D\\lif!D$",
+        "$\\Gamma$",
+        "$\\Gamma=\\{!A\\lif!B,!B\\lif!C\\}$",
+        "$!A\\lif!C$",
+        "$!A\\lif!B$",
+        "$!B\\lif!C$",
+        "$(!B\\lif!C)\\lif(!A\\lif(!B\\lif!C))$",
+        "$!A\\lif(!B\\lif!C)$",
+        "$(!A\\lif(!B\\lif!C))\\lif{}$",
+        "$((!A\\lif!B)\\lif(!A\\lif!C))$",
+        "$((!A\\lif!B)\\lif(!A\\lif!C))$",
+        "$!A\\lif!C$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves!A\\lif!B$",
+        "$\\Gamma\\Proves!B\\lif!C$",
+        "$\\Gamma\\Proves!A\\lif!C$",
+        "$\\Gamma\\Proves!A\\lif!B$",
+        "$\\Gamma\\Proves!B\\lif!C$",
+        "$\\Gamma$",
+        "$!A\\lif!B$",
+        "$\\Gamma$",
+        "$!B\\lif!C$",
+        "$\\Gamma$",
+        "$!A\\lif!C$",
+        "$!A\\lif!B$",
+        "$!B\\lif!C$",
+        "$(!A\\land!B)\\lif(!B\\land!A)$",
+        "$((!A\\land!B)\\lif!C)\\lif(!A\\lif(!B\\lif!C))$",
+        "$\\lnot(!A\\lor!B)\\lif\\lnot!A$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1556,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction\n% Section: proving-things",
+          "target_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction\n% Section: proving-things"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\iftag{FOL}\n      {\\olfileid{fol}{axd}{pro}}\n      {\\olfileid{pl}{axd}{pro}}",
+          "target_start": "\\iftag{FOL}\n      {\\olfileid{fol}{axd}{pro}}\n      {\\olfileid{pl}{axd}{pro}}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Examples of \\usetoken{P}{derivation}}",
+          "target_start": "\\olsection{\\usetoken{P}{derivation}కు ఉదాహరణలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{ex}\nSuppose we want to prove $(\\lnot !D \\lor !E) \\lif (!D \\lif\n!E)$. Clearly, this is not an instance o",
+          "target_start": "\\begin{ex}\nమనం $(\\lnot !D \\lor !E) \\lif (!D \\lif !E)$ను నిరూపించాలని\nఅనుకుందాం. స్పష్టంగా, ఇది మన స్వీకృతాలలో "
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{ex}\\ollabel{ex:identity}\nLet's try to find !!a{derivation} of $!D \\lif !D$.  It is not an\ninstance of a",
+          "target_start": "\\begin{ex}\\ollabel{ex:identity}\n$!D \\lif !D$కు ఒక !!a{derivation}ను కనుగొనే ప్రయత్నం చేద్దాం.\nఇది ఒక స్వీకృత ర"
+        },
+        {
+          "index": 8,
+          "source_start": "The other axiom involving just~$\\lif$ is \\olref[prp]{ax:lif2}, i.e.,\n\\[\n(!A \\lif (!B \\lif !C)) \\lif ((!A \\lif ",
+          "target_start": "కేవలం~$\\lif$ ఉన్న మరొక స్వీకృతం \\olref[prp]{ax:lif2}; అంటే,\n\\[\n(!A \\lif (!B \\lif !C)) \\lif ((!A \\lif !B) \\lif "
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{ex}\\ollabel{ex:chain}\nSometimes we want to show that there is !!a{derivation} of some\n!!{formula} from ",
+          "target_start": "\\begin{ex}\\ollabel{ex:chain}\nకొన్నిసార్లు కొన్ని ఇతర !!{formula}s~$\\Gamma$ నుంచి ఏదో ఒక\n!!{formula}కు ఒక !!a{d"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{prop}\n  \\ollabel{prop:chain} If $\\Gamma \\Proves !A \\lif !B$ and $\\Gamma\n  \\Proves !B \\lif !C$, then $\\G",
+          "target_start": "\\begin{prop}\n  \\ollabel{prop:chain} $\\Gamma \\Proves !A \\lif !B$, $\\Gamma\n  \\Proves !B \\lif !C$ అయితే, $\\Gamma "
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{proof}\n  Suppose $\\Gamma \\Proves !A \\lif !B$ and $\\Gamma \\Proves !B \\lif\n  !C$. Then there is !!a{deriv",
+          "target_start": "\\begin{proof}\n  $\\Gamma \\Proves !A \\lif !B$, $\\Gamma \\Proves !B \\lif !C$ అని\n  అనుకుందాం. అప్పుడు~$\\Gamma$ నుం"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{prob} \nShow that the following hold by exhibiting !!{derivation}s from the\naxioms:\n\\begin{enumerate} \n\\",
+          "target_start": "\\begin{prob}\nస్వీకృతాల నుంచి !!{derivation}sను చూపడం ద్వారా కిందివి చెల్లుతాయని\nనిరూపించండి:\n\\begin{enumerate}"
+        },
+        {
+          "index": 13,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{pro}",
+        "\\olfileid{pl}{axd}{pro}",
+        "\\olref[prp]{ax:lor3}",
+        "\\olref[prp]{ax:lnot2}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lnot2}",
+        "\\olref[prp]{ax:lor3}",
+        "\\olref[prp]{ax:lif1}",
+        "\\ollabel{ex:identity}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif2}",
+        "\\olref[prp]{ax:lif2}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif2}",
+        "\\olref[prp]{ax:lif1}",
+        "\\ollabel{ex:chain}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif2}",
+        "\\ollabel{prop:chain}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{pro}",
+        "\\olfileid{pl}{axd}{pro}",
+        "\\olref[prp]{ax:lor3}",
+        "\\olref[prp]{ax:lnot2}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lnot2}",
+        "\\olref[prp]{ax:lor3}",
+        "\\olref[prp]{ax:lif1}",
+        "\\ollabel{ex:identity}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif2}",
+        "\\olref[prp]{ax:lif2}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif2}",
+        "\\olref[prp]{ax:lif1}",
+        "\\ollabel{ex:chain}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif2}",
+        "\\ollabel{prop:chain}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0117",
+      "source_path": "content/first-order-logic/axiomatic-deduction/proving-things-quant.tex",
+      "source_sha256": "f0e9a893cec5f94f8d48ae6e7ca2c46ad04726c98a03fa33487c9a5c263d0c10",
+      "translation_sha256": "8f751aa5553e71a2e611f4861988876bcb3fbe68c31ab2985c4f6fb28592b3b9",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{axd}{prq}",
+        "\\olref[prp]{ax:land1}",
+        "\\olref[qua]{ax:q1}",
+        "\\olref[pro]{prop:chain}",
+        "\\olref[prp]{ax:land2}",
+        "\\olref[qua]{ax:q1}",
+        "\\olref[pro]{prop:chain}",
+        "\\olref[prp]{ax:land3}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{axd}{prq}",
+        "\\olref[prp]{ax:land1}",
+        "\\olref[qua]{ax:q1}",
+        "\\olref[pro]{prop:chain}",
+        "\\olref[prp]{ax:land2}",
+        "\\olref[qua]{ax:q1}",
+        "\\olref[pro]{prop:chain}",
+        "\\olref[prp]{ax:land3}"
+      ],
+      "tokens_source": {
+        "!!a{derivation}": 1,
+        "!!{derivable}": 1
+      },
+      "tokens_target": {
+        "!!a{derivation}": 1,
+        "!!{derivable}": 1
+      },
+      "math_source": [
+        "$(\\lforall[x][!A(x)]\\land\\lforall[y][!B(y)])\\lif\\lforall[x][(!A(x)\\land!B(x))]$",
+        "\\begin{align*}(\\lforall[x][!A(x)]\\land\\lforall[y][!B(y)])&\\lif\\lforall[x][!A(x)]\\\\\\lforall[x][!A(x)]&\\lif!A(a)\\\\(\\lforall[x][!A(x)]\\land\\lforall[y][!B(y)])&\\lif!A(a)\\\\(\\lforall[x][!A(x)]\\land\\lforall[y][!B(y)])&\\lif\\lforall[y][!B(y)]\\qquad\\\\\\lforall[y][!B(y)]&\\lif!B(a)\\\\(\\lforall[x][!A(x)]\\land\\lforall[y][!B(y)])&\\lif!B(a)\\\\(\\lforall[x][!A(x)]\\land\\lforall[y][!B(y)])&\\lif(!A(a)\\land!B(a))\\\\(\\lforall[x][!A(x)]\\land\\lforall[y][!B(y)])&\\lif\\lforall[x][(!A(x)\\land!B(x))].\\end{align*}"
+      ],
+      "math_target_core": [
+        "$(\\lforall[x][!A(x)]\\land\\lforall[y][!B(y)])\\lif\\lforall[x][(!A(x)\\land!B(x))]$",
+        "\\begin{align*}(\\lforall[x][!A(x)]\\land\\lforall[y][!B(y)])&\\lif\\lforall[x][!A(x)]\\\\\\lforall[x][!A(x)]&\\lif!A(a)\\\\(\\lforall[x][!A(x)]\\land\\lforall[y][!B(y)])&\\lif!A(a)\\\\(\\lforall[x][!A(x)]\\land\\lforall[y][!B(y)])&\\lif\\lforall[y][!B(y)]\\qquad\\\\\\lforall[y][!B(y)]&\\lif!B(a)\\\\(\\lforall[x][!A(x)]\\land\\lforall[y][!B(y)])&\\lif!B(a)\\\\(\\lforall[x][!A(x)]\\land\\lforall[y][!B(y)])&\\lif(!A(a)\\land!B(a))\\\\(\\lforall[x][!A(x)]\\land\\lforall[y][!B(y)])&\\lif\\lforall[x][(!A(x)\\land!B(x))].\\end{align*}"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 224,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic \n% Chapter: axiomatic-deduction \n% Section: proving-things-quant",
+          "target_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction\n% Section: proving-things-quant"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{fol}{axd}{prq}",
+          "target_start": "\\olfileid{fol}{axd}{prq}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{\\usetoken{P}{derivation} with Quantifiers}",
+          "target_start": "\\olsection{పరిమాణీకరణికాలతో \\usetoken{P}{derivation}}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{ex}\nLet us give !!a{derivation} of $(\\lforall[x][!A(x)] \\land\n\\lforall[y][!B(y)]) \\lif \\lforall[x][(!A(",
+          "target_start": "\\begin{ex}\n$(\\lforall[x][!A(x)] \\land \\lforall[y][!B(y)]) \\lif\n\\lforall[x][(!A(x) \\land !B(x))]$కు ఒక !!a{deri"
+        },
+        {
+          "index": 7,
+          "source_start": "First, note that\n\\begin{align*}\n  (\\lforall[x][!A(x)] \\land \\lforall[y][!B(y)]) & \\lif \\lforall[x][!A(x)]\\\\\n  ",
+          "target_start": "మొదటగా,\n\\begin{align*}\n  (\\lforall[x][!A(x)] \\land \\lforall[y][!B(y)]) & \\lif \\lforall[x][!A(x)]\\\\\n  \\intertex"
+        },
+        {
+          "index": 8,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{prq}",
+        "\\olref[prp]{ax:land1}",
+        "\\olref[qua]{ax:q1}",
+        "\\olref[pro]{prop:chain}",
+        "\\olref[prp]{ax:land2}",
+        "\\olref[qua]{ax:q1}",
+        "\\olref[pro]{prop:chain}",
+        "\\olref[prp]{ax:land3}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{prq}",
+        "\\olref[prp]{ax:land1}",
+        "\\olref[qua]{ax:q1}",
+        "\\olref[pro]{prop:chain}",
+        "\\olref[prp]{ax:land2}",
+        "\\olref[qua]{ax:q1}",
+        "\\olref[pro]{prop:chain}",
+        "\\olref[prp]{ax:land3}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0118",
+      "source_path": "content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex",
+      "source_sha256": "0afb9df4b5f0f5c1e892cf411d126f45acce94cfbdc9087e4bd37cb851cc370b",
+      "translation_sha256": "c778f2e5483be61768f2962972cb261b72b0d4d6d1cc6a53cae6c0c78b6f89da",
+      "source_blocks": 23,
+      "target_blocks": 23,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{axd}{ptn}",
+        "\\olfileid{pl}{axd}{ptn}",
+        "\\ollabel{prop:reflexivity}",
+        "\\ollabel{prop:monotonicity}",
+        "\\ollabel{prop:transitivity}",
+        "\\ollabel{prop:incons}",
+        "\\olref[fol][axd][ptn]{prop:incons}",
+        "\\olref[pl][axd][ptn]{prop:incons}",
+        "\\ollabel{prop:proves-compact}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{axd}{ptn}",
+        "\\olfileid{pl}{axd}{ptn}",
+        "\\ollabel{prop:reflexivity}",
+        "\\ollabel{prop:monotonicity}",
+        "\\ollabel{prop:transitivity}",
+        "\\ollabel{prop:incons}",
+        "\\olref[fol][axd][ptn]{prop:incons}",
+        "\\olref[pl][axd][ptn]{prop:incons}",
+        "\\ollabel{prop:proves-compact}"
+      ],
+      "tokens_source": {
+        "!!^a{formula}": 2,
+        "!!^{derivability}": 1,
+        "!!a{derivation}": 8,
+        "!!a{element}": 2,
+        "!!{derivability}": 1,
+        "!!{derivable}": 1,
+        "!!{derivation}": 4,
+        "!!{formula}": 1,
+        "!!{formula}s": 3,
+        "!!{nonderivability}": 1,
+        "!!{sentence}s": 1,
+        "!!{structure}s": 1
+      },
+      "tokens_target": {
+        "!!^a{formula}": 2,
+        "!!^{derivability}": 1,
+        "!!a{derivation}": 8,
+        "!!a{element}": 2,
+        "!!{derivability}": 1,
+        "!!{derivable}": 1,
+        "!!{derivation}": 4,
+        "!!{formula}": 1,
+        "!!{formula}s": 3,
+        "!!{nonderivability}": 1,
+        "!!{sentence}s": 1,
+        "!!{structure}s": 1
+      },
+      "math_source": [
+        "$!A$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$!A$",
+        "$!A$",
+        "$\\Proves!A$",
+        "$!A$",
+        "$\\Proves/!A$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves/\\lfalse$",
+        "$!A\\in\\Gamma$",
+        "$\\Gamma\\Proves!A$",
+        "$!A$",
+        "$!A$",
+        "$\\Gamma$",
+        "$\\Gamma\\subseteq\\Delta$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Delta\\Proves!A$",
+        "$!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Delta$",
+        "$\\Gamma\\Proves!A$",
+        "$\\{!A\\}\\cup\\Delta\\Proves!B$",
+        "$\\Gamma\\cup\\Delta\\Proves!B$",
+        "$\\{!A\\}\\cup\\Delta\\Proves!B$",
+        "$!B_1$",
+        "$!B_l=!B$",
+        "$\\{!A\\}\\cup\\Delta$",
+        "$!B_i=!A$",
+        "$!A$",
+        "$\\Gamma$",
+        "$!A_1$",
+        "$!A_k=!A$",
+        "$!A_i$",
+        "$\\Gamma$",
+        "\\[!A_1,\\dots,!A_k=!A,!B_1,\\dots,!B_l=!B.\\]",
+        "$!B$",
+        "$\\Gamma\\cup\\Delta$",
+        "$B_i=!A$",
+        "$!A_k=!A$",
+        "$\\Gamma\\Proves!A$",
+        "$!A\\Proves!B$",
+        "$\\Gamma\\Proves!B$",
+        "$!A_1,\\dots,!A_n\\Proves!B$",
+        "$\\Gamma\\Proves!A_i$",
+        "$i$",
+        "$\\Gamma\\Proves!B$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves!A$",
+        "$!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma_0\\subseteq\\Gamma$",
+        "$\\Gamma_0\\Proves!A$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves!A$",
+        "$!A_1$",
+        "$!A_n$",
+        "$!A\\ident!A_n$",
+        "$!A_i$",
+        "$\\Gamma$",
+        "$\\Gamma_0$",
+        "$!A_i$",
+        "$\\Gamma$",
+        "$\\Gamma_0$",
+        "$\\Gamma_0\\Proves!A$",
+        "$!A\\ident\\lfalse$"
+      ],
+      "math_target_core": [
+        "$!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves!A$",
+        "$!A$",
+        "$!A$",
+        "$!A$",
+        "$\\Proves!A$",
+        "$\\Proves/!A$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves/\\lfalse$",
+        "$!A\\in\\Gamma$",
+        "$\\Gamma\\Proves!A$",
+        "$!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma\\subseteq\\Delta$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Delta\\Proves!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Delta$",
+        "$!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\{!A\\}\\cup\\Delta\\Proves!B$",
+        "$\\Gamma\\cup\\Delta\\Proves!B$",
+        "$\\{!A\\}\\cup\\Delta\\Proves!B$",
+        "$\\{!A\\}\\cup\\Delta$",
+        "$!B_1$",
+        "$!B_l=!B$",
+        "$!B_i=!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$!A_i$",
+        "$\\Gamma$",
+        "$!A_1$",
+        "$!A_k=!A$",
+        "\\[!A_1,\\dots,!A_k=!A,!B_1,\\dots,!B_l=!B.\\]",
+        "$\\Gamma\\cup\\Delta$",
+        "$!B$",
+        "$!B_i=!A$",
+        "$!A_k=!A$",
+        "$\\Gamma\\Proves!A$",
+        "$!A\\Proves!B$",
+        "$\\Gamma\\Proves!B$",
+        "$!A_1,\\dots,!A_n\\Proves!B$",
+        "$i$",
+        "$\\Gamma\\Proves!A_i$",
+        "$\\Gamma\\Proves!B$",
+        "$!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma_0\\Proves!A$",
+        "$\\Gamma_0\\subseteq\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves!A$",
+        "$!A\\ident!A_n$",
+        "$!A_i$",
+        "$\\Gamma$",
+        "$!A_1$",
+        "$!A_n$",
+        "$\\Gamma$",
+        "$!A_i$",
+        "$\\Gamma_0$",
+        "$\\Gamma_0$",
+        "$\\Gamma_0\\Proves!A$",
+        "$!A\\ident\\lfalse$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$B_i=!A$"
+      ],
+      "math_delta_target_only": [
+        "$!B_i=!A$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTEAXD-001"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1470,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction\n% Section: proof-theoretic-notions",
+          "target_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction\n% Section: proof-theoretic-notions"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\iftag{FOL}\n      {\\olfileid{fol}{axd}{ptn}}\n      {\\olfileid{pl}{axd}{ptn}}",
+          "target_start": "\\iftag{FOL}\n      {\\olfileid{fol}{axd}{ptn}}\n      {\\olfileid{pl}{axd}{ptn}}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Proof-Theoretic Notions}",
+          "target_start": "\\olsection{నిరూపణ-సిద్ధాంత భావనలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{explain}\nJust as we've defined a number of important semantic notions\n(\\iftag{FOL}{validity}{tautology}",
+          "target_start": "\\begin{explain}\nమనం అనేక ముఖ్యమైన అర్థవిజ్ఞాన భావనలను\n(\\iftag{FOL}{సార్వత్రిక సత్యత్వం}{సర్వసత్యత}, అనుగమనం, స"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}[!!^{derivability}]\n!!^a{formula}~$!A$ is \\emph{!!{derivable}} from $\\Gamma$, written\n$\\Gamma \\Pro",
+          "target_start": "\\begin{defn}[!!^{derivability}]\n~$!A$తో ముగిసే ఒక !!a{derivation}~$\\Gamma$ నుంచి ఉంటే,\n!!^a{formula}~$!A$ను $\\"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{defn}[Theorems]\n!!^a{formula}~$!A$ is a \\emph{theorem} if there is !!a{derivation} of\n$!A$ from the emp",
+          "target_start": "\\begin{defn}[సిద్ధాంతాలు]\nఖాళీ సమితి నుంచి $!A$కు ఒక !!a{derivation} ఉంటే,\n!!^a{formula}~$!A$ ఒక \\emph{సిద్ధాం"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{defn}[Consistency]\nA set $\\Gamma$ of !!{formula}s is \\emph{consistent} if and only if\n$\\Gamma\\Proves/ \\",
+          "target_start": "\\begin{defn}[అవైరుధ్యం]\n!!{formula}s సమితి~$\\Gamma$, $\\Gamma\\Proves/ \\lfalse$ అయితే,\nఅప్పుడు మాత్రమే \\emph{అవి"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{prop}[Reflexivity]\n\\ollabel{prop:reflexivity}\nIf $!A \\in \\Gamma$, then $\\Gamma \\Proves !A$.\n\\end{prop}",
+          "target_start": "\\begin{prop}[స్వావర్తనత్వం]\n\\ollabel{prop:reflexivity}\n$!A \\in \\Gamma$ అయితే, $\\Gamma \\Proves !A$.\n\\end{prop}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{proof}\n  The !!{formula}~$!A$ by itself is !!a{derivation} of~$!A$ from~$\\Gamma$.\n\\end{proof}",
+          "target_start": "\\begin{proof}\n  !!{formula}~$!A$ ఒక్కటే,~$\\Gamma$ నుంచి~$!A$కు ఒక\n  !!a{derivation}.\n\\end{proof}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{prop}[Monotonicity]\n\\ollabel{prop:monotonicity}\nIf $\\Gamma \\subseteq \\Delta$ and $\\Gamma \\Proves !A$, t",
+          "target_start": "\\begin{prop}[ఏకదిశత]\n\\ollabel{prop:monotonicity}\n$\\Gamma \\subseteq \\Delta$, $\\Gamma \\Proves !A$ అయితే,\n$\\Delta"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{proof}\nAny !!{derivation} of $!A$ from $\\Gamma$ is also !!a{derivation} of\n$!A$ from~$\\Delta$.\n\\end{pro",
+          "target_start": "\\begin{proof}\n$\\Gamma$ నుంచి $!A$కు ఉన్న ఏ !!{derivation} అయినా~$\\Delta$ నుంచి\n$!A$కు కూడా ఒక !!a{derivation}."
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{prop}[Transitivity]\n\\ollabel{prop:transitivity}\nIf $\\Gamma \\Proves !A$ and $\\{!A\\} \\cup \\Delta \\Proves\n",
+          "target_start": "\\begin{prop}[సంక్రామకత్వం]\n\\ollabel{prop:transitivity}\n$\\Gamma \\Proves !A$, $\\{!A\\} \\cup \\Delta \\Proves !B$ అయ"
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{proof}\n  Suppose $\\{!A\\} \\cup \\Delta \\Proves !B$. Then there is\n  !!a{derivation} $!B_1$, \\dots, $!B_l ",
+          "target_start": "\\begin{proof}\n  $\\{!A\\} \\cup \\Delta \\Proves !B$ అని అనుకుందాం. అప్పుడు\n  $\\{!A\\} \\cup \\Delta$ నుంచి~$!B_1$, \\d"
+        },
+        {
+          "index": 16,
+          "source_start": "Note that this means that in particular if $\\Gamma \\Proves !A$ and $!A\n\\Proves !B$, then $\\Gamma \\Proves !B$. ",
+          "target_start": "దీనర్థం, ముఖ్యంగా, $\\Gamma \\Proves !A$, $!A \\Proves !B$ అయితే\n$\\Gamma \\Proves !B$. అలాగే, $!A_1, \\dots, !A_n \\"
+        },
+        {
+          "index": 17,
+          "source_start": "\\begin{prop}\n\\ollabel{prop:incons}\n$\\Gamma$ is inconsistent iff $\\Gamma \\Proves !A$ for every~$!A$.\n\\end{prop}",
+          "target_start": "\\begin{prop}\n\\ollabel{prop:incons}\nప్రతి~$!A$కు $\\Gamma \\Proves !A$ అయితే, అప్పుడు మాత్రమే $\\Gamma$\nవిరుద్ధం.\n"
+        },
+        {
+          "index": 18,
+          "source_start": "\\begin{proof}\nExercise.\n\\end{proof}",
+          "target_start": "\\begin{proof}\nసాధన.\n\\end{proof}"
+        },
+        {
+          "index": 19,
+          "source_start": "\\tagprob{FOL}\n\\begin{prob}\nProve \\olref[fol][axd][ptn]{prop:incons}.\n\\end{prob}\n\\tagendprob",
+          "target_start": "\\tagprob{FOL}\n\\begin{prob}\n\\olref[fol][axd][ptn]{prop:incons}ను నిరూపించండి.\n\\end{prob}\n\\tagendprob"
+        },
+        {
+          "index": 20,
+          "source_start": "\\tagprob{notFOL}\n\\begin{prob}\nProve \\olref[pl][axd][ptn]{prop:incons}.\n\\end{prob}\n\\tagendprob",
+          "target_start": "\\tagprob{notFOL}\n\\begin{prob}\n\\olref[pl][axd][ptn]{prop:incons}ను నిరూపించండి.\n\\end{prob}\n\\tagendprob"
+        },
+        {
+          "index": 21,
+          "source_start": "\\begin{prop}[Compactness]\n\\ollabel{prop:proves-compact}\n  \\begin{enumerate}\n  \\item If $\\Gamma \\Proves !A$ the",
+          "target_start": "\\begin{prop}[సంహతత్వం]\n\\ollabel{prop:proves-compact}\n  \\begin{enumerate}\n  \\item $\\Gamma \\Proves !A$ అయితే, $\\"
+        },
+        {
+          "index": 22,
+          "source_start": "\\begin{proof}\n  \\begin{enumerate}\n    \\item If $\\Gamma \\Proves !A$, then there is a finite sequence of\n      !",
+          "target_start": "\\begin{proof}\n  \\begin{enumerate}\n    \\item $\\Gamma \\Proves !A$ అయితే, $!A \\ident !A_n$ అయ్యేలా,\n      అలాగే ప"
+        },
+        {
+          "index": 23,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{ptn}",
+        "\\olfileid{pl}{axd}{ptn}",
+        "\\ollabel{prop:reflexivity}",
+        "\\ollabel{prop:monotonicity}",
+        "\\ollabel{prop:transitivity}",
+        "\\ollabel{prop:incons}",
+        "\\olref[fol][axd][ptn]{prop:incons}",
+        "\\olref[pl][axd][ptn]{prop:incons}",
+        "\\ollabel{prop:proves-compact}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{ptn}",
+        "\\olfileid{pl}{axd}{ptn}",
+        "\\ollabel{prop:reflexivity}",
+        "\\ollabel{prop:monotonicity}",
+        "\\ollabel{prop:transitivity}",
+        "\\ollabel{prop:incons}",
+        "\\olref[fol][axd][ptn]{prop:incons}",
+        "\\olref[pl][axd][ptn]{prop:incons}",
+        "\\ollabel{prop:proves-compact}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0119",
+      "source_path": "content/first-order-logic/axiomatic-deduction/deduction-theorem.tex",
+      "source_sha256": "ef122fcfc1a8c24e89cf5abe30efa11bcd0a1cc3ed9fca2426618e9174481780",
+      "translation_sha256": "a75383bfb9a91bd05b111e06c436544430fd3397b41604f850fd3cdd7ae067a8",
+      "source_blocks": 21,
+      "target_blocks": 21,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{axd}{ded}",
+        "\\olfileid{pl}{axd}{ded}",
+        "\\olref[ptn]{prop:reflexivity}",
+        "\\olref[ptn]{prop:monotonicity}",
+        "\\olref[ptn]{prop:transitivity}",
+        "\\ollabel{prop:mp}",
+        "\\olref[ptn]{prop:transitivity}",
+        "\\ollabel{thm:deduction-thm}",
+        "\\olref[ptn]{prop:monotonicity}",
+        "\\olref[ptn]{prop:reflexivity}",
+        "\\olref{prop:mp}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref{prop:mp}",
+        "\\olref[pro]{ex:identity}",
+        "\\olref[prp]{ax:lif2}",
+        "\\olref{prop:mp}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif2}",
+        "\\ollabel{prop:derivfacts}",
+        "\\ollabel{derivfacts:a}",
+        "\\ollabel{derivfacts:b}",
+        "\\ollabel{derivfacts:c}",
+        "\\ollabel{derivfacts:d}",
+        "\\ollabel{derivfacts:e}",
+        "\\olref[fol][axd][ded]{prop:derivfacts}",
+        "\\olref[pl][axd][ded]{prop:derivfacts}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{axd}{ded}",
+        "\\olfileid{pl}{axd}{ded}",
+        "\\olref[ptn]{prop:reflexivity}",
+        "\\olref[ptn]{prop:monotonicity}",
+        "\\olref[ptn]{prop:transitivity}",
+        "\\ollabel{prop:mp}",
+        "\\olref[ptn]{prop:transitivity}",
+        "\\ollabel{thm:deduction-thm}",
+        "\\olref[ptn]{prop:monotonicity}",
+        "\\olref[ptn]{prop:reflexivity}",
+        "\\olref{prop:mp}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref{prop:mp}",
+        "\\olref[pro]{ex:identity}",
+        "\\olref[prp]{ax:lif2}",
+        "\\olref{prop:mp}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif2}",
+        "\\ollabel{prop:derivfacts}",
+        "\\ollabel{derivfacts:a}",
+        "\\ollabel{derivfacts:b}",
+        "\\ollabel{derivfacts:c}",
+        "\\ollabel{derivfacts:d}",
+        "\\ollabel{derivfacts:e}",
+        "\\olref[fol][axd][ded]{prop:derivfacts}",
+        "\\olref[pl][axd][ded]{prop:derivfacts}"
+      ],
+      "tokens_source": {
+        "!!^a{derivation}": 1,
+        "!!a{derivation}": 1,
+        "!!{derivability}": 1,
+        "!!{derivation}": 3,
+        "!!{derivation}s": 4,
+        "!!{derive}": 1,
+        "!!{formula}": 1,
+        "!!{formula}s": 1,
+        "!!{sentence}": 1
+      },
+      "tokens_target": {
+        "!!^a{derivation}": 1,
+        "!!a{derivation}": 1,
+        "!!{derivability}": 1,
+        "!!{derivation}": 3,
+        "!!{derivation}s": 4,
+        "!!{derive}": 1,
+        "!!{formula}": 1,
+        "!!{formula}s": 1,
+        "!!{sentence}": 1
+      },
+      "math_source": [
+        "$\\Gamma\\Proves!A$",
+        "$!A\\in\\Gamma$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\cup\\{!B\\}\\Proves!A$",
+        "$\\Gamma\\Proves!A$",
+        "$!A\\Proves!B$",
+        "$\\Gamma\\Proves!B$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\Proves!A\\lif!B$",
+        "$\\Gamma\\Proves!B$",
+        "$\\{!A,!A\\lif!B\\}\\Proves!B$",
+        "$!A$",
+        "$!A\\lif!B$",
+        "$!B$",
+        "$\\Gamma\\Proves!B$",
+        "$\\Gamma\\cup\\{!A\\}\\Proves!B$",
+        "$\\Gamma\\Proves!A\\lif!B$",
+        "$\\Gamma\\Proves!A\\lif!B$",
+        "$\\Gamma\\cup\\{!A\\}\\Proves!A\\lif!B$",
+        "$\\Gamma\\cup\\{!A\\}\\Proves!A$",
+        "$\\Gamma\\cup\\{!A\\}\\Proves!B$",
+        "$!B$",
+        "$\\Gamma\\cup\\{!A\\}$",
+        "$1$",
+        "$!B$",
+        "$\\Gamma\\cup\\{!A\\}$",
+        "$1$",
+        "$!B$",
+        "$!B$",
+        "$\\in\\Gamma\\cup\\{!A\\}$",
+        "$!B\\in\\Gamma$",
+        "$\\Gamma\\Proves!B$",
+        "$\\Gamma\\Proves!B\\lif(!A\\lif!B)$",
+        "$\\Gamma\\Proves!A\\lif!B$",
+        "$!B\\in\\{!A\\}$",
+        "$\\Gamma\\Proves!A\\lif!B$",
+        "$!A\\lif!B$",
+        "$!A\\lif!A$",
+        "$!B$",
+        "$\\Gamma\\cup\\{!A\\}$",
+        "$!B$",
+        "$!B\\in\\Gamma$",
+        "$!B\\ident!A$",
+        "$!B$",
+        "$!C\\lif!B$",
+        "$!C$",
+        "$!C$",
+        "$\\Gamma\\cup\\{!A\\}\\Proves!C\\lif!B$",
+        "$\\Gamma\\cup\\{!A\\}\\Proves!C$",
+        "\\begin{align*}&\\Gamma\\Proves!A\\lif(!C\\lif!B);\\\\&\\Gamma\\Proves!A\\lif!C.\\end{align*}",
+        "\\[\\Gamma\\Proves(!A\\lif(!C\\lif!B))\\lif((!A\\lif!C)\\lif(!A\\lif!B)),\\]",
+        "$\\Gamma\\Proves!A\\lif!B$",
+        "$\\Proves(!A\\lif!B)\\lif((!B\\lif!C)\\lif(!A\\lif!C)$",
+        "$\\Gamma\\cup\\{\\lnot!A\\}\\Proves\\lnot!B$",
+        "$\\Gamma\\cup\\{!B\\}\\Proves!A$",
+        "$\\{!A,\\lnot!A\\}\\Proves!B$",
+        "$\\{\\lnot\\lnot!A\\}\\Proves!A$",
+        "$\\Gamma\\Proves\\lnot\\lnot!A$",
+        "$\\Gamma\\Proves!A$"
+      ],
+      "math_target_core": [
+        "$!A\\in\\Gamma$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\cup\\{!B\\}\\Proves!A$",
+        "$\\Gamma\\Proves!A$",
+        "$!A\\Proves!B$",
+        "$\\Gamma\\Proves!B$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\Proves!A\\lif!B$",
+        "$\\Gamma\\Proves!B$",
+        "$\\{!A,!A\\lif!B\\}\\Proves!B$",
+        "$!A$",
+        "$!A\\lif!B$",
+        "$!B$",
+        "$\\Gamma\\Proves!B$",
+        "$\\Gamma\\cup\\{!A\\}\\Proves!B$",
+        "$\\Gamma\\Proves!A\\lif!B$",
+        "$\\Gamma\\Proves!A\\lif!B$",
+        "$\\Gamma\\cup\\{!A\\}\\Proves!A\\lif!B$",
+        "$\\Gamma\\cup\\{!A\\}\\Proves!A$",
+        "$\\Gamma\\cup\\{!A\\}\\Proves!B$",
+        "$\\Gamma\\cup\\{!A\\}$",
+        "$!B$",
+        "$1$",
+        "$\\Gamma\\cup\\{!A\\}$",
+        "$!B$",
+        "$1$",
+        "$!B$",
+        "$!B\\in\\Gamma\\cup\\{!A\\}$",
+        "$!B\\in\\Gamma$",
+        "$!B$",
+        "$\\Gamma\\Proves!B$",
+        "$\\Gamma\\Proves!B\\lif(!A\\lif!B)$",
+        "$\\Gamma\\Proves!A\\lif!B$",
+        "$!B\\in\\{!A\\}$",
+        "$\\Gamma\\Proves!A\\lif!B$",
+        "$!A\\lif!B$",
+        "$!A\\lif!A$",
+        "$\\Gamma\\cup\\{!A\\}$",
+        "$!B$",
+        "$!B$",
+        "$!B\\in\\Gamma$",
+        "$!B\\ident!A$",
+        "$!B$",
+        "$!C$",
+        "$!C\\lif!B$",
+        "$!C$",
+        "$\\Gamma\\cup\\{!A\\}\\Proves!C\\lif!B$",
+        "$\\Gamma\\cup\\{!A\\}\\Proves!C$",
+        "\\begin{align*}&\\Gamma\\Proves!A\\lif(!C\\lif!B);\\\\&\\Gamma\\Proves!A\\lif!C.\\end{align*}",
+        "\\[\\Gamma\\Proves(!A\\lif(!C\\lif!B))\\lif((!A\\lif!C)\\lif(!A\\lif!B)),\\]",
+        "$\\Gamma\\Proves!A\\lif!B$",
+        "$\\Proves(!A\\lif!B)\\lif((!B\\lif!C)\\lif(!A\\lif!C))$",
+        "$\\Gamma\\cup\\{\\lnot!A\\}\\Proves\\lnot!B$",
+        "$\\Gamma\\cup\\{!B\\}\\Proves!A$",
+        "$\\{!A,\\lnot!A\\}\\Proves!B$",
+        "$\\{\\lnot\\lnot!A\\}\\Proves!A$",
+        "$\\Gamma\\Proves\\lnot\\lnot!A$",
+        "$\\Gamma\\Proves!A$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$\\Proves(!A\\lif!B)\\lif((!B\\lif!C)\\lif(!A\\lif!C)$",
+        "$\\in\\Gamma\\cup\\{!A\\}$"
+      ],
+      "math_delta_target_only": [
+        "$!B\\in\\Gamma\\cup\\{!A\\}$",
+        "$\\Proves(!A\\lif!B)\\lif((!B\\lif!C)\\lif(!A\\lif!C))$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTEAXD-002",
+        "OLTEAXD-003"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1561,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic \n% Chapter: axiomatic-deduction \n% Section: deduction-theorem",
+          "target_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction\n% Section: deduction-theorem"
+        },
+        {
+          "index": 2,
+          "source_start": "% verification of properties of provability needed for maximally \n% consistent sets in the completeness chapte",
+          "target_start": "% verification of properties of provability needed for maximally\n% consistent sets in the completeness chapter"
+        },
+        {
+          "index": 3,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\iftag{FOL}\n      {\\olfileid{fol}{axd}{ded}}\n      {\\olfileid{pl}{axd}{ded}}",
+          "target_start": "\\iftag{FOL}\n      {\\olfileid{fol}{axd}{ded}}\n      {\\olfileid{pl}{axd}{ded}}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olsection{The Deduction Theorem}",
+          "target_start": "\\olsection{నిగమన సిద్ధాంతం}"
+        },
+        {
+          "index": 7,
+          "source_start": "As we've seen, giving !!{derivation}s in an axiomatic system is\ncumbersome, and !!{derivation}s may be hard to",
+          "target_start": "మనం చూసినట్లుగా, స్వీకృతాధారిత వ్యవస్థలో !!{derivation}s ఇవ్వడం\nశ్రమతో కూడిన పని; !!{derivation}sను కనుగొనడం క"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{prop}\n  \\ollabel{prop:mp} If $\\Gamma \\Proves !A$ and $\\Gamma \\Proves !A \\lif\n  !B$, then $\\Gamma \\Prove",
+          "target_start": "\\begin{prop}\n  \\ollabel{prop:mp} $\\Gamma \\Proves !A$, $\\Gamma \\Proves !A \\lif\n  !B$ అయితే, $\\Gamma \\Proves !B$"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{proof}\n  We have that $\\{!A, !A \\lif !B\\} \\Proves !B$:\n  \\begin{derivation}\n    1. & $!A$ & Hyp.\\\\\n    ",
+          "target_start": "\\begin{proof}\n  $\\{!A, !A \\lif !B\\} \\Proves !B$ అని మనకు తెలుసు:\n  \\begin{derivation}\n    1. & $!A$ & Hyp.\\\\\n "
+        },
+        {
+          "index": 10,
+          "source_start": "The most important result we'll use in this context is the deduction\ntheorem:",
+          "target_start": "ఈ సందర్భంలో మనం ఉపయోగించే అత్యంత ముఖ్యమైన ఫలితం నిగమన సిద్ధాంతం:"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{thm}[Deduction Theorem]\n\\ollabel{thm:deduction-thm} $\\Gamma \\cup \\{!A\\} \\Proves !B$ if and\nonly if $\\Ga",
+          "target_start": "\\begin{thm}[నిగమన సిద్ధాంతం]\n\\ollabel{thm:deduction-thm} $\\Gamma \\cup \\{!A\\} \\Proves !B$ అయితే,\nఅప్పుడు మాత్రమ"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{proof}\nThe ``if'' direction is immediate.  If $\\Gamma \\Proves !A \\lif !B$\nthen also $\\Gamma \\cup \\{!A\\}",
+          "target_start": "\\begin{proof}\n``అయితే'' దిశ తక్షణమే వస్తుంది. $\\Gamma \\Proves !A \\lif !B$ అయితే,\n\\olref[ptn]{prop:monotonicity"
+        },
+        {
+          "index": 13,
+          "source_start": "For the ``only if'' direction, we proceed by induction on the length\nof the !!{derivation} of $!B$ from $\\Gamm",
+          "target_start": "``అప్పుడే'' దిశ కోసం, $\\Gamma \\cup \\{!A\\}$ నుంచి $!B$కు గల\n!!{derivation} పొడవుపై ఆగమనం చేస్తాం."
+        },
+        {
+          "index": 14,
+          "source_start": "For the induction basis, we prove the claim for every !!{derivation}\nof length~$1$. !!^a{derivation} of~$!B$ f",
+          "target_start": "ఆగమన ప్రాతిపదికలో, పొడవు~$1$ ఉన్న ప్రతి !!{derivation}కు ఈ వాదనను\nనిరూపిస్తాం. $\\Gamma \\cup \\{!A\\}$ నుంచి~$!B$"
+        },
+        {
+          "index": 15,
+          "source_start": "For the inductive step, suppose !!a{derivation} of~$!B$ from\n$\\Gamma \\cup \\{!A\\}$ ends with a step~$!B$ which ",
+          "target_start": "ఆగమన దశలో, $\\Gamma \\cup \\{!A\\}$ నుంచి~$!B$కు గల !!a{derivation},\nమోడస్ పోనెన్స్ ద్వారా సమర్థించబడిన~$!B$ దశతో "
+        },
+        {
+          "index": 16,
+          "source_start": "Notice how \\olref[prp]{ax:lif1} and \\olref[prp]{ax:lif2} were chosen\nprecisely so that the Deduction Theorem w",
+          "target_start": "నిగమన సిద్ధాంతం చెల్లేలా చేయడానికే \\olref[prp]{ax:lif1},\n\\olref[prp]{ax:lif2}లను సరిగ్గా ఆ రూపాల్లో ఎంచుకున్నా"
+        },
+        {
+          "index": 17,
+          "source_start": "The following are some useful facts about !!{derivability}, which we\nleave as exercises.",
+          "target_start": "కిందివి !!{derivability} గురించిన కొన్ని ఉపయోగకరమైన వాస్తవాలు; వాటిని\nసాధనలుగా వదిలేస్తున్నాం."
+        },
+        {
+          "index": 18,
+          "source_start": "\\begin{prop}\n  \\ollabel{prop:derivfacts}\n\\begin{enumerate}\n\\item $\\Proves (!A \\lif !B) \\lif ((!B \\lif !C)\n  \\l",
+          "target_start": "\\begin{prop}\n  \\ollabel{prop:derivfacts}\n\\begin{enumerate}\n\\item $\\Proves (!A \\lif !B) \\lif ((!B \\lif !C)\n  \\l"
+        },
+        {
+          "index": 19,
+          "source_start": "\\tagprob{FOL}\n\\begin{prob}\n  Prove \\olref[fol][axd][ded]{prop:derivfacts}\n\\end{prob}\n\\tagendprob",
+          "target_start": "\\tagprob{FOL}\n\\begin{prob}\n  \\olref[fol][axd][ded]{prop:derivfacts}ను నిరూపించండి.\n\\end{prob}\n\\tagendprob"
+        },
+        {
+          "index": 20,
+          "source_start": "\\tagprob{notFOL}\n\\begin{prob}\n  Prove \\olref[pl][axd][ded]{prop:derivfacts}\n\\end{prob}\n\\tagendprob",
+          "target_start": "\\tagprob{notFOL}\n\\begin{prob}\n  \\olref[pl][axd][ded]{prop:derivfacts}ను నిరూపించండి.\n\\end{prob}\n\\tagendprob"
+        },
+        {
+          "index": 21,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{ded}",
+        "\\olfileid{pl}{axd}{ded}",
+        "\\olref[ptn]{prop:reflexivity}",
+        "\\olref[ptn]{prop:monotonicity}",
+        "\\olref[ptn]{prop:transitivity}",
+        "\\ollabel{prop:mp}",
+        "\\olref[ptn]{prop:transitivity}",
+        "\\ollabel{thm:deduction-thm}",
+        "\\olref[ptn]{prop:monotonicity}",
+        "\\olref[ptn]{prop:reflexivity}",
+        "\\olref{prop:mp}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref{prop:mp}",
+        "\\olref[pro]{ex:identity}",
+        "\\olref[prp]{ax:lif2}",
+        "\\olref{prop:mp}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif2}",
+        "\\ollabel{prop:derivfacts}",
+        "\\ollabel{derivfacts:a}",
+        "\\ollabel{derivfacts:b}",
+        "\\ollabel{derivfacts:c}",
+        "\\ollabel{derivfacts:d}",
+        "\\ollabel{derivfacts:e}",
+        "\\olref[fol][axd][ded]{prop:derivfacts}",
+        "\\olref[pl][axd][ded]{prop:derivfacts}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{ded}",
+        "\\olfileid{pl}{axd}{ded}",
+        "\\olref[ptn]{prop:reflexivity}",
+        "\\olref[ptn]{prop:monotonicity}",
+        "\\olref[ptn]{prop:transitivity}",
+        "\\ollabel{prop:mp}",
+        "\\olref[ptn]{prop:transitivity}",
+        "\\ollabel{thm:deduction-thm}",
+        "\\olref[ptn]{prop:monotonicity}",
+        "\\olref[ptn]{prop:reflexivity}",
+        "\\olref{prop:mp}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref{prop:mp}",
+        "\\olref[pro]{ex:identity}",
+        "\\olref[prp]{ax:lif2}",
+        "\\olref{prop:mp}",
+        "\\olref[prp]{ax:lif1}",
+        "\\olref[prp]{ax:lif2}",
+        "\\ollabel{prop:derivfacts}",
+        "\\ollabel{derivfacts:a}",
+        "\\ollabel{derivfacts:b}",
+        "\\ollabel{derivfacts:c}",
+        "\\ollabel{derivfacts:d}",
+        "\\ollabel{derivfacts:e}",
+        "\\olref[fol][axd][ded]{prop:derivfacts}",
+        "\\olref[pl][axd][ded]{prop:derivfacts}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0120",
+      "source_path": "content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex",
+      "source_sha256": "79f2ddf58916652493c2892078b01dd53ae1691a97e28cfed043cbe285d11888",
+      "translation_sha256": "bb77d66b66667f4c812a49ca9f7b2ab18d4a462aeb506a0871606ac837d06fcf",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{axd}{ddq}",
+        "\\ollabel{thm:deduction-thm-q}",
+        "\\olref[ded]{thm:deduction-thm}",
+        "\\olref[ded]{thm:deduction-thm}",
+        "\\olref[fol][axd][ddq]{thm:deduction-thm-q}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{axd}{ddq}",
+        "\\ollabel{thm:deduction-thm-q}",
+        "\\olref[ded]{thm:deduction-thm}",
+        "\\olref[ded]{thm:deduction-thm}",
+        "\\olref[fol][axd][ddq]{thm:deduction-thm-q}"
+      ],
+      "tokens_source": {
+        "!!a{formula}": 1,
+        "!!{derivation}": 4
+      },
+      "tokens_target": {
+        "!!a{formula}": 1,
+        "!!{derivation}": 4
+      },
+      "math_source": [
+        "$\\Gamma\\cup\\{!A\\}\\Proves!B$",
+        "$\\Gamma\\Proves!A\\lif!B$",
+        "$!B$",
+        "$\\Gamma\\cup\\{!A\\}$",
+        "$!B$",
+        "$\\Gamma\\cup\\{!A\\}$",
+        "$!B$",
+        "$!B\\ident!C\\lif\\lforall[x][!D(x)]$",
+        "$!C\\lif!D(a)$",
+        "$a$",
+        "$!C$",
+        "$!A$",
+        "$\\Gamma$",
+        "\\begin{align*}\\Gamma\\cup\\{!A\\}&\\Proves!C\\lif!D(a),\\\\\\Gamma&\\Proves!A\\lif(!C\\lif!D(a)).\\\\&\\Proves(!A\\lif(!C\\lif!D(a)))\\lif((!A\\land!C)\\lif!D(a))\\\\\\Gamma&\\Proves(!A\\land!C)\\lif!D(a).\\\\\\Gamma&\\Proves(!A\\land!C)\\lif\\lforall[x][!D(x)].\\\\&\\Proves((!A\\land!C)\\lif\\lforall[x][!D(x)])\\lif(!A\\lif(!C\\lif\\lforall[x][!D(x)]),\\\\\\Gamma&\\Proves!A\\lif(!C\\lif\\lforall[x][!D(x)]),\\end{align*}",
+        "$\\Gamma\\Proves!B$",
+        "$!B$",
+        "$\\lexists[x][!D(x)]\\lif!C$"
+      ],
+      "math_target_core": [
+        "$\\Gamma\\cup\\{!A\\}\\Proves!B$",
+        "$\\Gamma\\Proves!A\\lif!B$",
+        "$\\Gamma\\cup\\{!A\\}$",
+        "$!B$",
+        "$\\Gamma\\cup\\{!A\\}$",
+        "$!B$",
+        "$!B$",
+        "$!B\\ident!C\\lif\\lforall[x][!D(x)]$",
+        "$!C\\lif!D(a)$",
+        "$a$",
+        "$!C$",
+        "$!A$",
+        "$\\Gamma$",
+        "\\begin{align*}\\Gamma\\cup\\{!A\\}&\\Proves!C\\lif!D(a),\\\\\\Gamma&\\Proves!A\\lif(!C\\lif!D(a)).\\\\&\\Proves(!A\\lif(!C\\lif!D(a)))\\lif((!A\\land!C)\\lif!D(a))\\\\\\Gamma&\\Proves(!A\\land!C)\\lif!D(a).\\\\\\Gamma&\\Proves(!A\\land!C)\\lif\\lforall[x][!D(x)].\\\\&\\Proves((!A\\land!C)\\lif\\lforall[x][!D(x)])\\lif(!A\\lif(!C\\lif\\lforall[x][!D(x)])),\\\\\\Gamma&\\Proves!A\\lif(!C\\lif\\lforall[x][!D(x)]),\\end{align*}",
+        "$\\Gamma\\Proves!A\\lif!B$",
+        "$!B$",
+        "$\\lexists[x][!D(x)]\\lif!C$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$\\Gamma\\Proves!B$",
+        "\\begin{align*}\\Gamma\\cup\\{!A\\}&\\Proves!C\\lif!D(a),\\\\\\Gamma&\\Proves!A\\lif(!C\\lif!D(a)).\\\\&\\Proves(!A\\lif(!C\\lif!D(a)))\\lif((!A\\land!C)\\lif!D(a))\\\\\\Gamma&\\Proves(!A\\land!C)\\lif!D(a).\\\\\\Gamma&\\Proves(!A\\land!C)\\lif\\lforall[x][!D(x)].\\\\&\\Proves((!A\\land!C)\\lif\\lforall[x][!D(x)])\\lif(!A\\lif(!C\\lif\\lforall[x][!D(x)]),\\\\\\Gamma&\\Proves!A\\lif(!C\\lif\\lforall[x][!D(x)]),\\end{align*}"
+      ],
+      "math_delta_target_only": [
+        "$\\Gamma\\Proves!A\\lif!B$",
+        "\\begin{align*}\\Gamma\\cup\\{!A\\}&\\Proves!C\\lif!D(a),\\\\\\Gamma&\\Proves!A\\lif(!C\\lif!D(a)).\\\\&\\Proves(!A\\lif(!C\\lif!D(a)))\\lif((!A\\land!C)\\lif!D(a))\\\\\\Gamma&\\Proves(!A\\land!C)\\lif!D(a).\\\\\\Gamma&\\Proves(!A\\land!C)\\lif\\lforall[x][!D(x)].\\\\&\\Proves((!A\\land!C)\\lif\\lforall[x][!D(x)])\\lif(!A\\lif(!C\\lif\\lforall[x][!D(x)])),\\\\\\Gamma&\\Proves!A\\lif(!C\\lif\\lforall[x][!D(x)]),\\end{align*}"
+      ],
+      "declared_source_correction_ids": [
+        "OLTEAXD-004",
+        "OLTEAXD-005"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 789,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic \n% Chapter: axiomatic-deduction \n% Section: deduction-theorem-quantifiers",
+          "target_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction\n% Section: deduction-theorem-quantifiers"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{fol}{axd}{ddq}",
+          "target_start": "\\olfileid{fol}{axd}{ddq}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{The Deduction Theorem with Quantifiers}",
+          "target_start": "\\olsection{పరిమాణీకరణికాలతో నిగమన సిద్ధాంతం}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{thm}[Deduction Theorem]\n\\ollabel{thm:deduction-thm-q} If $\\Gamma \\cup \\{!A\\} \\Proves !B$,\nthen $\\Gamma ",
+          "target_start": "\\begin{thm}[నిగమన సిద్ధాంతం]\n\\ollabel{thm:deduction-thm-q} $\\Gamma \\cup \\{!A\\} \\Proves !B$\nఅయితే, $\\Gamma \\Pro"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{proof}\nWe again proceed by induction on the length\nof the !!{derivation} of $!B$ from $\\Gamma \\cup \\{!A",
+          "target_start": "\\begin{proof}\n$\\Gamma \\cup \\{!A\\}$ నుంచి $!B$కు గల !!{derivation} పొడవుపై మళ్లీ\nఆగమనం చేస్తాం."
+        },
+        {
+          "index": 8,
+          "source_start": "The proof of the induction basis is identical to that in the proof\nof~\\olref[ded]{thm:deduction-thm}.",
+          "target_start": "ఆగమన ప్రాతిపదిక నిరూపణ,~\\olref[ded]{thm:deduction-thm} నిరూపణలో\nఉన్నదానితో సరిసమానం."
+        },
+        {
+          "index": 9,
+          "source_start": "For the inductive step, suppose again that the !!{derivation} of $!B$\nfrom $\\Gamma \\cup \\{!A\\}$ ends with a st",
+          "target_start": "ఆగమన దశలో, $\\Gamma \\cup \\{!A\\}$ నుంచి $!B$కు గల !!{derivation},\nఒక నిగమన నియమం ద్వారా సమర్థించబడిన~$!B$ దశతో మ"
+        },
+        {
+          "index": 10,
+          "source_start": "We leave the case where $!B$ is justified by the rule \\QR, but is of\nthe form $\\lexists[x][!D(x)] \\lif !C$, as",
+          "target_start": "$!B$ను \\QR{} నియమం సమర్థించినా, అది $\\lexists[x][!D(x)] \\lif !C$\nరూపంలో ఉండే సందర్భాన్ని సాధనగా వదిలేస్తాం.\n\\e"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{prob}\n  Complete the proof of \\olref[fol][axd][ddq]{thm:deduction-thm-q}.\n\\end{prob}",
+          "target_start": "\\begin{prob}\n  \\olref[fol][axd][ddq]{thm:deduction-thm-q} నిరూపణను పూర్తి చేయండి.\n\\end{prob}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{ddq}",
+        "\\ollabel{thm:deduction-thm-q}",
+        "\\olref[ded]{thm:deduction-thm}",
+        "\\olref[ded]{thm:deduction-thm}",
+        "\\olref[fol][axd][ddq]{thm:deduction-thm-q}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{ddq}",
+        "\\ollabel{thm:deduction-thm-q}",
+        "\\olref[ded]{thm:deduction-thm}",
+        "\\olref[ded]{thm:deduction-thm}",
+        "\\olref[fol][axd][ddq]{thm:deduction-thm-q}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0121",
+      "source_path": "content/first-order-logic/axiomatic-deduction/provability-consistency.tex",
+      "source_sha256": "22a6a04d9ab4298d762efd6bf2041fa9bf3f2d91c6803b744458812c232cdacc",
+      "translation_sha256": "eadfa5cd0b5a0edba1517e5fd233dd275b8051cda1c100018ac37e4f3a88662a",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{axd}{prv}",
+        "\\olfileid{pl}{axd}{prv}",
+        "\\ollabel{prop:provability-contr}",
+        "\\olref[ptn]{prop:reflexivity}",
+        "\\olref[ptn]{prop:transitivity}",
+        "\\ollabel{prop:prov-incons}",
+        "\\olref[ptn]{prop:monotonicity}",
+        "\\olref[ptn]{prop:reflexivity}",
+        "\\olref[prp]{ax:lnot2}",
+        "\\olref[ded]{prop:mp}",
+        "\\olref[prp]{ax:lfalse2}",
+        "\\olref[ded]{prop:mp}",
+        "\\olref[prp]{ax:dne}",
+        "\\olref[ded]{prop:mp}",
+        "\\ollabel{prop:explicit-inc}",
+        "\\olref[prp]{ax:lnot2}",
+        "\\olref[ded]{prop:mp}",
+        "\\ollabel{prop:provability-exhaustive}",
+        "\\olref[fol][axd][prv]{prop:provability-exhaustive}",
+        "\\olref[pl][axd][prv]{prop:provability-exhaustive}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{axd}{prv}",
+        "\\olfileid{pl}{axd}{prv}",
+        "\\ollabel{prop:provability-contr}",
+        "\\olref[ptn]{prop:reflexivity}",
+        "\\olref[ptn]{prop:transitivity}",
+        "\\ollabel{prop:prov-incons}",
+        "\\olref[ptn]{prop:monotonicity}",
+        "\\olref[ptn]{prop:reflexivity}",
+        "\\olref[prp]{ax:lnot2}",
+        "\\olref[ded]{prop:mp}",
+        "\\olref[prp]{ax:lfalse2}",
+        "\\olref[ded]{prop:mp}",
+        "\\olref[prp]{ax:dne}",
+        "\\olref[ded]{prop:mp}",
+        "\\ollabel{prop:explicit-inc}",
+        "\\olref[prp]{ax:lnot2}",
+        "\\olref[ded]{prop:mp}",
+        "\\ollabel{prop:provability-exhaustive}",
+        "\\olref[fol][axd][prv]{prop:provability-exhaustive}",
+        "\\olref[pl][axd][prv]{prop:provability-exhaustive}"
+      ],
+      "tokens_source": {
+        "!!{derivability}": 1
+      },
+      "tokens_target": {
+        "!!{derivability}": 1
+      },
+      "math_source": [
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\cup\\{!A\\}$",
+        "$\\Gamma$",
+        "$\\Gamma\\cup\\{!A\\}$",
+        "$\\Gamma\\cup\\{!A\\}\\Proves\\lfalse$",
+        "$\\Gamma\\Proves!B$",
+        "$!B\\in\\Gamma$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\Proves!B$",
+        "$!B\\in\\Gamma\\cup\\{!A\\}$",
+        "$\\Gamma\\Proves\\lfalse$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\cup\\{\\lnot!A\\}$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\cup\\{\\lnot!A\\}\\Proves!A$",
+        "$\\Gamma\\cup\\{\\lnot!A\\}\\Proves\\lnot!A$",
+        "$\\Proves\\lnot!A\\lif(!A\\lif\\lfalse)$",
+        "$\\Gamma\\cup\\{\\lnot!A\\}\\Proves\\lfalse$",
+        "$\\Gamma\\cup\\{\\lnot!A\\}$",
+        "$\\Gamma\\cup\\{\\lnot!A\\}\\Proves\\lfalse$",
+        "$\\Gamma\\Proves\\lnot!A\\lif\\lfalse$",
+        "$\\Gamma\\Proves(\\lnot!A\\lif\\lfalse)\\lif\\lnot\\lnot!A$",
+        "$\\Gamma\\Proves\\lnot\\lnot!A$",
+        "$\\Gamma\\Proves\\lnot\\lnot!A\\lif!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\Proves\\lnot!A$",
+        "$\\Gamma\\cup\\{!A\\}$",
+        "$\\Gamma\\Proves!A$",
+        "$\\lnot!A\\in\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves\\lnot!A\\lif(!A\\lif\\lfalse)$",
+        "$\\Gamma\\Proves\\lfalse$",
+        "$\\Gamma\\cup\\{!A\\}$",
+        "$\\Gamma\\cup\\{\\lnot!A\\}$",
+        "$\\Gamma$"
+      ],
+      "math_target_core": [
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\cup\\{!A\\}$",
+        "$\\Gamma$",
+        "$\\Gamma\\cup\\{!A\\}$",
+        "$\\Gamma\\cup\\{!A\\}\\Proves\\lfalse$",
+        "$!B\\in\\Gamma$",
+        "$\\Gamma\\Proves!B$",
+        "$\\Gamma\\Proves!A$",
+        "$!B\\in\\Gamma\\cup\\{!A\\}$",
+        "$\\Gamma\\Proves!B$",
+        "$\\Gamma\\Proves\\lfalse$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\cup\\{\\lnot!A\\}$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\cup\\{\\lnot!A\\}\\Proves!A$",
+        "$\\Gamma\\cup\\{\\lnot!A\\}\\Proves\\lnot!A$",
+        "$\\Proves\\lnot!A\\lif(!A\\lif\\lfalse)$",
+        "$\\Gamma\\cup\\{\\lnot!A\\}\\Proves\\lfalse$",
+        "$\\Gamma\\cup\\{\\lnot!A\\}$",
+        "$\\Gamma\\cup\\{\\lnot!A\\}\\Proves\\lfalse$",
+        "$\\Gamma\\Proves\\lnot!A\\lif\\lfalse$",
+        "$\\Gamma\\Proves(\\lnot!A\\lif\\lfalse)\\lif\\lnot\\lnot!A$",
+        "$\\Gamma\\Proves\\lnot\\lnot!A$",
+        "$\\Gamma\\Proves\\lnot\\lnot!A\\lif!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\Proves\\lnot!A$",
+        "$\\Gamma\\cup\\{!A\\}$",
+        "$\\Gamma\\Proves!A$",
+        "$\\lnot!A\\in\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves\\lnot!A$",
+        "$\\Gamma\\Proves\\lnot!A\\lif(!A\\lif\\lfalse)$",
+        "$\\Gamma\\Proves\\lfalse$",
+        "$\\Gamma\\cup\\{!A\\}$",
+        "$\\Gamma\\cup\\{\\lnot!A\\}$",
+        "$\\Gamma$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [
+        "$\\Gamma\\Proves\\lnot!A$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTEAXD-006"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 706,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction\n% Section: provability-consistency",
+          "target_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction\n% Section: provability-consistency"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\iftag{FOL}\n      {\\olfileid{fol}{axd}{prv}}\n      {\\olfileid{pl}{axd}{prv}}",
+          "target_start": "\\iftag{FOL}\n      {\\olfileid{fol}{axd}{prv}}\n      {\\olfileid{pl}{axd}{prv}}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{\\usetoken{S}{derivability} and Consistency}",
+          "target_start": "\\olsection{\\usetoken{S}{derivability} మరియు అవైరుధ్యం}"
+        },
+        {
+          "index": 6,
+          "source_start": "We will now establish a number of properties of the !!{derivability}\nrelation.  They are independently interes",
+          "target_start": "ఇప్పుడు !!{derivability} సంబంధపు అనేక లక్షణాలను స్థాపిస్తాం. అవి\nస్వతంత్రంగా కూడా ఆసక్తికరమైనవే; అయితే సంపూర్ణ"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{prop}\\ollabel{prop:provability-contr}\n  If $\\Gamma \\Proves !A$ and $\\Gamma \\cup \\{!A\\}$ is inconsistent",
+          "target_start": "\\begin{prop}\\ollabel{prop:provability-contr}\n  $\\Gamma \\Proves !A$ అయ్యి, $\\Gamma \\cup \\{!A\\}$ విరుద్ధమైతే,\n  "
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{proof}\n  If $\\Gamma \\cup \\{!A\\}$ is inconsistent, then $\\Gamma \\cup \\{!A\\}\n  \\Proves \\lfalse$. By \\olre",
+          "target_start": "\\begin{proof}\n  $\\Gamma \\cup \\{!A\\}$ విరుద్ధమైతే, $\\Gamma \\cup \\{!A\\}\n  \\Proves \\lfalse$. \\olref[ptn]{prop:ref"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{prop}\n\\ollabel{prop:prov-incons}\n$\\Gamma \\Proves !A$ iff $\\Gamma \\cup \\{\\lnot !A\\}$ is inconsistent.\n\\e",
+          "target_start": "\\begin{prop}\n\\ollabel{prop:prov-incons}\n$\\Gamma \\Proves !A$ అయితే, అప్పుడు మాత్రమే $\\Gamma \\cup\n\\{\\lnot !A\\}$ "
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{proof}\nFirst suppose $\\Gamma \\Proves !A$. Then $\\Gamma \\cup \\{\\lnot !A\\}\n\\Proves !A$ by \\olref[ptn]{pro",
+          "target_start": "\\begin{proof}\nమొదట $\\Gamma \\Proves !A$ అని అనుకుందాం. అప్పుడు\n\\olref[ptn]{prop:monotonicity} వల్ల $\\Gamma \\cup"
+        },
+        {
+          "index": 11,
+          "source_start": "Now assume $\\Gamma \\cup \\{\\lnot !A\\}$ is inconsistent, i.e., $\\Gamma\n\\cup \\{\\lnot !A\\} \\Proves \\lfalse$. By th",
+          "target_start": "ఇప్పుడు $\\Gamma \\cup \\{\\lnot !A\\}$ విరుద్ధమని, అంటే $\\Gamma \\cup\n\\{\\lnot !A\\} \\Proves \\lfalse$ అని అనుకుందాం. "
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{prob}\nProve that $\\Gamma \\Proves \\lnot !A$ iff $\\Gamma \\cup \\{!A\\}$ is\ninconsistent.\n\\end{prob}",
+          "target_start": "\\begin{prob}\n$\\Gamma \\Proves \\lnot !A$ అయితే, అప్పుడు మాత్రమే $\\Gamma \\cup\n\\{!A\\}$ విరుద్ధమని నిరూపించండి.\n\\en"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{prop}\\ollabel{prop:explicit-inc}\n  If $\\Gamma \\Proves !A$ and $\\lnot !A \\in \\Gamma$, then $\\Gamma$ is\n ",
+          "target_start": "\\begin{prop}\\ollabel{prop:explicit-inc}\n  $\\Gamma \\Proves !A$, $\\lnot !A \\in \\Gamma$ అయితే, $\\Gamma$\n  విరుద్ధ"
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{proof}\n  $\\Gamma \\Proves \\lnot !A \\lif (!A \\lif \\lfalse)$ by \\olref[prp]{ax:lnot2}.\n  $\\Gamma \\Proves \\",
+          "target_start": "\\begin{proof}\n  స్వావర్తనత్వం వల్ల $\\Gamma \\Proves \\lnot !A$.\n  \\olref[prp]{ax:lnot2} వల్ల $\\Gamma \\Proves \\ln"
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{prop}\\ollabel{prop:provability-exhaustive}\n  If $\\Gamma \\cup \\{!A\\}$ and $\\Gamma \\cup \\{\\lnot !A\\}$ are",
+          "target_start": "\\begin{prop}\\ollabel{prop:provability-exhaustive}\n  $\\Gamma \\cup \\{!A\\}$, $\\Gamma \\cup \\{\\lnot !A\\}$ రెండూ\n  వ"
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{proof}\nExercise.\n\\end{proof}",
+          "target_start": "\\begin{proof}\nసాధన.\n\\end{proof}"
+        },
+        {
+          "index": 17,
+          "source_start": "\\tagprob{FOL}\n\\begin{prob}\n  Prove \\olref[fol][axd][prv]{prop:provability-exhaustive}\n\\end{prob}\n\\tagendprob",
+          "target_start": "\\tagprob{FOL}\n\\begin{prob}\n  \\olref[fol][axd][prv]{prop:provability-exhaustive}ను నిరూపించండి.\n\\end{prob}\n\\tag"
+        },
+        {
+          "index": 18,
+          "source_start": "\\tagprob{notFOL}\n\\begin{prob}\n  Prove \\olref[pl][axd][prv]{prop:provability-exhaustive}\n\\end{prob}\n\\tagendprob",
+          "target_start": "\\tagprob{notFOL}\n\\begin{prob}\n  \\olref[pl][axd][prv]{prop:provability-exhaustive}ను నిరూపించండి.\n\\end{prob}\n\\t"
+        },
+        {
+          "index": 19,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{prv}",
+        "\\olfileid{pl}{axd}{prv}",
+        "\\ollabel{prop:provability-contr}",
+        "\\olref[ptn]{prop:reflexivity}",
+        "\\olref[ptn]{prop:transitivity}",
+        "\\ollabel{prop:prov-incons}",
+        "\\olref[ptn]{prop:monotonicity}",
+        "\\olref[ptn]{prop:reflexivity}",
+        "\\olref[prp]{ax:lnot2}",
+        "\\olref[ded]{prop:mp}",
+        "\\olref[prp]{ax:lfalse2}",
+        "\\olref[ded]{prop:mp}",
+        "\\olref[prp]{ax:dne}",
+        "\\olref[ded]{prop:mp}",
+        "\\ollabel{prop:explicit-inc}",
+        "\\olref[prp]{ax:lnot2}",
+        "\\olref[ded]{prop:mp}",
+        "\\ollabel{prop:provability-exhaustive}",
+        "\\olref[fol][axd][prv]{prop:provability-exhaustive}",
+        "\\olref[pl][axd][prv]{prop:provability-exhaustive}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{prv}",
+        "\\olfileid{pl}{axd}{prv}",
+        "\\ollabel{prop:provability-contr}",
+        "\\olref[ptn]{prop:reflexivity}",
+        "\\olref[ptn]{prop:transitivity}",
+        "\\ollabel{prop:prov-incons}",
+        "\\olref[ptn]{prop:monotonicity}",
+        "\\olref[ptn]{prop:reflexivity}",
+        "\\olref[prp]{ax:lnot2}",
+        "\\olref[ded]{prop:mp}",
+        "\\olref[prp]{ax:lfalse2}",
+        "\\olref[ded]{prop:mp}",
+        "\\olref[prp]{ax:dne}",
+        "\\olref[ded]{prop:mp}",
+        "\\ollabel{prop:explicit-inc}",
+        "\\olref[prp]{ax:lnot2}",
+        "\\olref[ded]{prop:mp}",
+        "\\ollabel{prop:provability-exhaustive}",
+        "\\olref[fol][axd][prv]{prop:provability-exhaustive}",
+        "\\olref[pl][axd][prv]{prop:provability-exhaustive}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0122",
+      "source_path": "content/first-order-logic/axiomatic-deduction/provability-propositional.tex",
+      "source_sha256": "25274e10fe6d96292fe2c701b7af38291dd1d98de12a62ef385a5efd1c413007",
+      "translation_sha256": "9a9d1b1cd21bba5d94389f814e4e84152c007a109605060d5364d15b56909a2f",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{axd}{ppr}",
+        "\\olfileid{pl}{axd}{ppr}",
+        "\\ollabel{prop:provability-land}",
+        "\\ollabel{prop:provability-land-left}",
+        "\\ollabel{prop:provability-land-right}",
+        "\\olref[prp]{ax:land1}",
+        "\\olref[prp]{ax:land1}",
+        "\\olref[prp]{ax:land3}",
+        "\\ollabel{prop:provability-lor}",
+        "\\olref[prp]{ax:lnot1}",
+        "\\olref[prp]{ax:lor3}",
+        "\\olref[prp]{ax:lor1}",
+        "\\olref[prp]{ax:lor2}",
+        "\\ollabel{prop:provability-lif}",
+        "\\ollabel{prop:provability-lif-left}",
+        "\\ollabel{prop:provability-lif-right}",
+        "\\olref[prp]{ax:lnot2}",
+        "\\olref[prp]{ax:lif1}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{axd}{ppr}",
+        "\\olfileid{pl}{axd}{ppr}",
+        "\\ollabel{prop:provability-land}",
+        "\\ollabel{prop:provability-land-left}",
+        "\\ollabel{prop:provability-land-right}",
+        "\\olref[prp]{ax:land1}",
+        "\\olref[prp]{ax:land1}",
+        "\\olref[prp]{ax:land3}",
+        "\\ollabel{prop:provability-lor}",
+        "\\olref[prp]{ax:lnot1}",
+        "\\olref[prp]{ax:lor3}",
+        "\\olref[prp]{ax:lor1}",
+        "\\olref[prp]{ax:lor2}",
+        "\\ollabel{prop:provability-lif}",
+        "\\ollabel{prop:provability-lif-left}",
+        "\\ollabel{prop:provability-lif-right}",
+        "\\olref[prp]{ax:lnot2}",
+        "\\olref[prp]{ax:lif1}"
+      ],
+      "tokens_source": {
+        "!!{derivability}": 1,
+        "!!{derive}": 1
+      },
+      "tokens_target": {
+        "!!{derivability}": 1,
+        "!!{derive}": 1
+      },
+      "math_source": [
+        "$\\Proves$",
+        "$!A\\land!B\\Proves!A$",
+        "$!A,!A\\lif!B\\Proves!B$",
+        "$!A\\land!B\\Proves!A$",
+        "$!A\\land!B\\Proves!B$",
+        "$!A,!B\\Proves!A\\land!B$",
+        "$!A\\lor!B,\\lnot!A,\\lnot!B$",
+        "$!A\\Proves!A\\lor!B$",
+        "$!B\\Proves!A\\lor!B$",
+        "$\\Proves\\lnot!A\\lif(!A\\lif\\lfalse)$",
+        "$\\Proves\\lnot!B\\lif(!B\\lif\\lfalse)$",
+        "$\\{\\lnot!A\\}\\Proves!A\\lif\\lfalse$",
+        "$\\{\\lnot!B\\}\\Proves!B\\lif\\lfalse$",
+        "$\\{\\lnot!A,\\lnot!B\\}\\Proves(!A\\lor!B)\\lif\\lfalse$",
+        "$\\{!A\\lor!B,\\lnot!A,\\lnot!B\\}\\Proves\\lfalse$",
+        "$!A,!A\\lif!B\\Proves!B$",
+        "$\\lnot!A\\Proves!A\\lif!B$",
+        "$!B\\Proves!A\\lif!B$",
+        "$!A$",
+        "$!A\\lif!B$",
+        "$!B$"
+      ],
+      "math_target_core": [
+        "$!A\\land!B\\Proves!A$",
+        "$!A,!A\\lif!B\\Proves!B$",
+        "$\\Proves$",
+        "$!A\\land!B\\Proves!A$",
+        "$!A\\land!B\\Proves!B$",
+        "$!A,!B\\Proves!A\\land!B$",
+        "$!A\\lor!B,\\lnot!A,\\lnot!B$",
+        "$!A\\Proves!A\\lor!B$",
+        "$!B\\Proves!A\\lor!B$",
+        "$\\Proves\\lnot!A\\lif(!A\\lif\\lfalse)$",
+        "$\\Proves\\lnot!B\\lif(!B\\lif\\lfalse)$",
+        "$\\{\\lnot!A\\}\\Proves!A\\lif\\lfalse$",
+        "$\\{\\lnot!B\\}\\Proves!B\\lif\\lfalse$",
+        "$\\{\\lnot!A,\\lnot!B\\}\\Proves(!A\\lor!B)\\lif\\lfalse$",
+        "$\\{!A\\lor!B,\\lnot!A,\\lnot!B\\}\\Proves\\lfalse$",
+        "$!A,!A\\lif!B\\Proves!B$",
+        "$\\lnot!A\\Proves!A\\lif!B$",
+        "$!B\\Proves!A\\lif!B$",
+        "$!A$",
+        "$!A\\lif!B$",
+        "$!B$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [
+        "OLTEAXD-007",
+        "OLTEAXD-008"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 630,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction\n% Section: provability-propositional",
+          "target_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction\n% Section: provability-propositional"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\iftag{FOL}\n      {\\olfileid{fol}{axd}{ppr}}\n      {\\olfileid{pl}{axd}{ppr}}",
+          "target_start": "\\iftag{FOL}\n      {\\olfileid{fol}{axd}{ppr}}\n      {\\olfileid{pl}{axd}{ppr}}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{\\usetoken{S}{derivability} and the Propositional Connectives}",
+          "target_start": "\\olsection{\\usetoken{S}{derivability} మరియు ప్రతిజ్ఞాత్మక సంయోజకాలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{explain}\n  We establish that the !!{derivability} relation~$\\Proves$ of\n  axiomatic deduction is strong",
+          "target_start": "\\begin{explain}\n  $!A \\land !B \\Proves !A$, $!A, !A \\lif !B \\Proves !B$ (మోడస్\n  పోనెన్స్) వంటి, ప్రతిజ్ఞాత్మక"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{prop}\\ollabel{prop:provability-land}\n  \\begin{enumerate}\n  \\item \\ollabel{prop:provability-land-left} B",
+          "target_start": "\\begin{prop}\\ollabel{prop:provability-land}\n  \\begin{enumerate}\n  \\item \\ollabel{prop:provability-land-left} $"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{proof}\n  \\begin{enumerate}\n    \\item From \\olref[prp]{ax:land1} and \\olref[prp]{ax:land1} by\n      modu",
+          "target_start": "\\begin{proof}\n  \\begin{enumerate}\n    \\item \\olref[prp]{ax:land1}, \\texttt{ax:land2}ల నుంచి మోడస్\n      పోనెన్"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{prop}\\ollabel{prop:provability-lor}\n  \\begin{enumerate}\n  \\item $!A \\lor !B, \\lnot !A, \\lnot !B$ is inc",
+          "target_start": "\\begin{prop}\\ollabel{prop:provability-lor}\n  \\begin{enumerate}\n  \\item $!A \\lor !B, \\lnot !A, \\lnot !B$ విరుద్"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{proof}\n  \\begin{enumerate}\n  \\item From \\olref[prp]{ax:lnot1} we get $\\Proves \\lnot !A \\lif (!A\n    \\li",
+          "target_start": "\\begin{proof}\n  \\begin{enumerate}\n  \\item \\texttt{ax:lnot2} నుంచి $\\Proves \\lnot !A \\lif (!A\n    \\lif \\lfalse)"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{prop}\\ollabel{prop:provability-lif}\n  \\begin{enumerate}\n  \\item \\ollabel{prop:provability-lif-left}  $!",
+          "target_start": "\\begin{prop}\\ollabel{prop:provability-lif}\n  \\begin{enumerate}\n  \\item \\ollabel{prop:provability-lif-left} $!A"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{proof}\n  \\begin{enumerate}\n  \\item We can !!{derive}:\n    \\begin{derivation}\n      1. & $!A$ & \\Hyp\\\\\n ",
+          "target_start": "\\begin{proof}\n  \\begin{enumerate}\n  \\item మనం ఇలా !!{derive} చేయవచ్చు:\n    \\begin{derivation}\n      1. & $!A$ "
+        },
+        {
+          "index": 13,
+          "source_start": "  \\item By \\olref[prp]{ax:lnot2} and \\olref[prp]{ax:lif1} and the\n    deduction theorem, respectively.\n  \\end{",
+          "target_start": "  \\item వరుసగా \\olref[prp]{ax:lnot2}, \\olref[prp]{ax:lif1}, నిగమన\n    సిద్ధాంతం ద్వారా.\n  \\end{enumerate}\n\\end"
+        },
+        {
+          "index": 14,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{ppr}",
+        "\\olfileid{pl}{axd}{ppr}",
+        "\\ollabel{prop:provability-land}",
+        "\\ollabel{prop:provability-land-left}",
+        "\\ollabel{prop:provability-land-right}",
+        "\\olref[prp]{ax:land1}",
+        "\\olref[prp]{ax:land1}",
+        "\\olref[prp]{ax:land3}",
+        "\\ollabel{prop:provability-lor}",
+        "\\olref[prp]{ax:lnot1}",
+        "\\olref[prp]{ax:lor3}",
+        "\\olref[prp]{ax:lor1}",
+        "\\olref[prp]{ax:lor2}",
+        "\\ollabel{prop:provability-lif}",
+        "\\ollabel{prop:provability-lif-left}",
+        "\\ollabel{prop:provability-lif-right}",
+        "\\olref[prp]{ax:lnot2}",
+        "\\olref[prp]{ax:lif1}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{ppr}",
+        "\\olfileid{pl}{axd}{ppr}",
+        "\\ollabel{prop:provability-land}",
+        "\\ollabel{prop:provability-land-left}",
+        "\\ollabel{prop:provability-land-right}",
+        "\\olref[prp]{ax:land1}",
+        "\\olref[prp]{ax:land1}",
+        "\\olref[prp]{ax:land3}",
+        "\\ollabel{prop:provability-lor}",
+        "\\olref[prp]{ax:lnot1}",
+        "\\olref[prp]{ax:lor3}",
+        "\\olref[prp]{ax:lor1}",
+        "\\olref[prp]{ax:lor2}",
+        "\\ollabel{prop:provability-lif}",
+        "\\ollabel{prop:provability-lif-left}",
+        "\\ollabel{prop:provability-lif-right}",
+        "\\olref[prp]{ax:lnot2}",
+        "\\olref[prp]{ax:lif1}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0123",
+      "source_path": "content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex",
+      "source_sha256": "07225de499f34bd17eec7586fc9bcc59e98ea3cfa064172091fa66a336bf20b6",
+      "translation_sha256": "de8f8ba1857b40f8d8a2b98899f8b790e728b5b9525226ad03dc1092712e469a",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{axd}{qpr}",
+        "\\ollabel{thm:strong-generalization}",
+        "\\ollabel{prop:provability-quantifiers}",
+        "\\olref[qua]{ax:q2}",
+        "\\olref[qua]{ax:q1}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{axd}{qpr}",
+        "\\ollabel{thm:strong-generalization}",
+        "\\ollabel{prop:provability-quantifiers}",
+        "\\olref[qua]{ax:q2}",
+        "\\olref[qua]{ax:q1}"
+      ],
+      "tokens_source": {
+        "!!a{constant}": 1
+      },
+      "tokens_target": {
+        "!!a{constant}": 1
+      },
+      "math_source": [
+        "$\\Proves$",
+        "$c$",
+        "$\\Gamma$",
+        "$!A(x)$",
+        "$\\Gamma\\Proves!A(c)$",
+        "$\\Gamma\\Proves\\lforall[x][!A(x)]$",
+        "$\\Gamma\\Proves\\ltrue\\lif!A(c)$",
+        "$c$",
+        "$\\Gamma$",
+        "$\\top$",
+        "$\\Gamma\\Proves\\ltrue\\lif\\lforall[x][!A(x)]$",
+        "$\\Gamma\\Proves\\lforall[x][!A(x)]$",
+        "$!A(t)\\Proves\\lexists[x][!A(x)]$",
+        "$\\lforall[x][!A(x)]\\Proves!A(t)$"
+      ],
+      "math_target_core": [
+        "$\\Proves$",
+        "$c$",
+        "$\\Gamma$",
+        "$!A(x)$",
+        "$\\Gamma\\Proves!A(c)$",
+        "$\\Gamma\\Proves\\lforall[x][!A(x)]$",
+        "$\\Gamma\\Proves\\ltrue\\lif!A(c)$",
+        "$c$",
+        "$\\Gamma$",
+        "$\\top$",
+        "$\\Gamma\\Proves\\ltrue\\lif\\lforall[x][!A(x)]$",
+        "$\\Gamma\\Proves\\ltrue$",
+        "$\\Gamma\\Proves\\lforall[x][!A(x)]$",
+        "$!A(t)\\Proves\\lexists[x][!A(x)]$",
+        "$\\lforall[x][!A(x)]\\Proves!A(t)$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [
+        "$\\Gamma\\Proves\\ltrue$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTEAXD-009"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 425,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction\n% Section: provability-quantifiers",
+          "target_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction\n% Section: provability-quantifiers"
+        },
+        {
+          "index": 2,
+          "source_start": "% verification of properties of provability needed for maximally\n% consistent sets in the completeness chapter",
+          "target_start": "% verification of properties of provability needed for maximally\n% consistent sets in the completeness chapter"
+        },
+        {
+          "index": 3,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olfileid{fol}{axd}{qpr}",
+          "target_start": "\\olfileid{fol}{axd}{qpr}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olsection{\\usetoken{S}{derivability} and the Quantifiers}",
+          "target_start": "\\olsection{\\usetoken{S}{derivability} మరియు పరిమాణీకరణికాలు}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{explain}\n  The completeness theorem also requires that axiomatic deductions\n  yield the facts about~$\\P",
+          "target_start": "\\begin{explain}\n  ఈ విభాగంలో స్థాపించే~$\\Proves$ గురించిన వాస్తవాలను స్వీకృతాధారిత\n  నిగమనాలు ఇవ్వాలని కూడా సం"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{thm}\n\\ollabel{thm:strong-generalization} If $c$ is !!a{constant} not occurring\nin $\\Gamma$ or $!A(x)$ a",
+          "target_start": "\\begin{thm}\n\\ollabel{thm:strong-generalization} $c$ అనేది $\\Gamma$లో గానీ\n$!A(x)$లో గానీ సంభవించని ఒక !!a{cons"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{proof}\nBy the deduction theorem, $\\Gamma \\Proves \\ltrue \\lif !A(c)$. Since\n$c$ does not occur in $\\Gamm",
+          "target_start": "\\begin{proof}\nనిగమన సిద్ధాంతం వల్ల $\\Gamma \\Proves \\ltrue \\lif !A(c)$. $c$ అనేది\n$\\Gamma$లో గానీ~$\\top$లో గానీ"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{prop}\n\\ollabel{prop:provability-quantifiers}\n\\begin{tagenumerate}{prvEx,prvAll}\n\\tagitem{prvEx}{$!A(t) ",
+          "target_start": "\\begin{prop}\n\\ollabel{prop:provability-quantifiers}\n\\begin{tagenumerate}{prvEx,prvAll}\n\\tagitem{prvEx}{$!A(t) "
+        },
+        {
+          "index": 11,
+          "source_start": "\\tagitem{prvAll}{$\\lforall[x][!A(x)] \\Proves !A(t)$.}{}\n\\end{tagenumerate}\n\\end{prop}",
+          "target_start": "\\tagitem{prvAll}{$\\lforall[x][!A(x)] \\Proves !A(t)$.}{}\n\\end{tagenumerate}\n\\end{prop}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{proof}\n\\begin{tagenumerate}{prvEx,prvAll}\n\\tagitem{prvEx}{By \\olref[qua]{ax:q2} and the deduction theor",
+          "target_start": "\\begin{proof}\n\\begin{tagenumerate}{prvEx,prvAll}\n\\tagitem{prvEx}{\\olref[qua]{ax:q2}, నిగమన సిద్ధాంతం ద్వారా.}{"
+        },
+        {
+          "index": 13,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{qpr}",
+        "\\ollabel{thm:strong-generalization}",
+        "\\ollabel{prop:provability-quantifiers}",
+        "\\olref[qua]{ax:q2}",
+        "\\olref[qua]{ax:q1}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{qpr}",
+        "\\ollabel{thm:strong-generalization}",
+        "\\ollabel{prop:provability-quantifiers}",
+        "\\olref[qua]{ax:q2}",
+        "\\olref[qua]{ax:q1}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0124",
+      "source_path": "content/first-order-logic/axiomatic-deduction/soundness.tex",
+      "source_sha256": "b5a11dd6a46306a767149f694f099bd9f57396013b4dfe67965e68ccae411ecb",
+      "translation_sha256": "ebe6a80cd6d957a2c6b17cbff7a698cbbf8f991c831108158dc6107a2dd20f46",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{axd}{sou}",
+        "\\olfileid{pl}{axd}{sou}",
+        "\\olref[qua]{ax:q1}",
+        "\\olref[syn][ext]{prop:ext-formulas}",
+        "\\ollabel{thm:soundness}",
+        "\\olref[syn][sem]{thm:sem-deduction}",
+        "\\olref[pl][syn][sem]{thm:sem-deduction}",
+        "\\olref[syn][sem]{thm:sem-deduction}",
+        "\\olref[syn][ass]{prop:sat-quant}",
+        "\\olref[syn][sat]{defn:satisfaction}",
+        "\\olref[syn][ext]{cor:extensionality-sent}",
+        "\\olref[syn][ass]{prop:sentence-sat-true}",
+        "\\olref[syn][ext]{prop:ext-formulas}",
+        "\\olref[syn][ext]{prop:extensionality}",
+        "\\olref[syn][sem]{thm:sem-deduction}",
+        "\\olref[fol][axd][sou]{thm:soundness}",
+        "\\ollabel{cor:weak-soundness}",
+        "\\ollabel{cor:consistency-soundness}",
+        "\\olref{thm:soundness}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{axd}{sou}",
+        "\\olfileid{pl}{axd}{sou}",
+        "\\olref[qua]{ax:q1}",
+        "\\olref[syn][ext]{prop:ext-formulas}",
+        "\\ollabel{thm:soundness}",
+        "\\olref[syn][sem]{thm:sem-deduction}",
+        "\\olref[pl][syn][sem]{thm:sem-deduction}",
+        "\\olref[syn][sem]{thm:sem-deduction}",
+        "\\olref[syn][ass]{prop:sat-quant}",
+        "\\olref[syn][sat]{defn:satisfaction}",
+        "\\olref[syn][ext]{cor:extensionality-sent}",
+        "\\olref[syn][ass]{prop:sentence-sat-true}",
+        "\\olref[syn][ext]{prop:ext-formulas}",
+        "\\olref[syn][ext]{prop:extensionality}",
+        "\\olref[syn][sem]{thm:sem-deduction}",
+        "\\olref[fol][axd][sou]{thm:soundness}",
+        "\\ollabel{cor:weak-soundness}",
+        "\\ollabel{cor:consistency-soundness}",
+        "\\olref{thm:soundness}"
+      ],
+      "tokens_source": {
+        "!!^a{derivation}": 1,
+        "!!a{derivation}": 3,
+        "!!a{sentence}": 2,
+        "!!{derivable}": 2,
+        "!!{derivation}": 7,
+        "!!{derive}": 2,
+        "!!{formula}s": 4,
+        "!!{free for}": 1,
+        "!!{structure}": 3,
+        "!!{valuation}": 3
+      },
+      "tokens_target": {
+        "!!^a{derivation}": 1,
+        "!!a{derivation}": 3,
+        "!!a{sentence}": 2,
+        "!!{derivable}": 2,
+        "!!{derivation}": 7,
+        "!!{derive}": 2,
+        "!!{formula}s": 4,
+        "!!{free for}": 1,
+        "!!{structure}": 3,
+        "!!{valuation}": 3
+      },
+      "math_source": [
+        "$!A$",
+        "$!A$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Sat{M}{!A}[s]$",
+        "$\\Struct{M}$",
+        "$s$",
+        "$\\pSat{v}{!A}$",
+        "$\\pAssign{v}$",
+        "$t$",
+        "$x$",
+        "$!A$",
+        "$\\Sat{M}{\\lforall[x][!A]}[s]$",
+        "$\\varAssign{s'}{s}{x}$",
+        "$\\Sat{M}{!A}[s']$",
+        "$s'(x)=\\Value{t}{M}[s]$",
+        "$\\Sat{M}{\\Subst{!A}{t}{x}}[s]$",
+        "$\\Sat{M}{(\\lforall[x][!A]\\lif\\Subst{!A}{t}{x})}[s]$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\Entails!A$",
+        "$!A$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma\\Entails!A$",
+        "$!A\\in\\Gamma$",
+        "$\\Gamma\\Entails!A$",
+        "$!A$",
+        "$!B$",
+        "$!B\\lif!A$",
+        "$\\Gamma\\Entails!B$",
+        "$\\Gamma\\Entails!B\\lif!A$",
+        "$\\Gamma\\Entails!A$",
+        "$!C\\lif\\lforall[x][B(x)]$",
+        "$!C\\lif!B(c)$",
+        "$c$",
+        "$\\Gamma$",
+        "$!C$",
+        "$\\lforall[x][B(x)]$",
+        "$\\Gamma\\Entails!C\\lif!B(c)$",
+        "$\\Gamma\\cup\\{!C\\}\\Entails!B(c)$",
+        "$\\Struct{M}$",
+        "$\\Sat{M}{\\Gamma\\cup\\{!C\\}}$",
+        "$\\Sat{M}{\\lforall[x][!B(x)]}$",
+        "$\\lforall[x][!B(x)]$",
+        "$s$",
+        "$\\Sat{M}{!B(x)}[s]$",
+        "$\\Gamma\\cup\\{!C\\}$",
+        "$\\Sat{M}{!D}[s]$",
+        "$!D\\in\\Gamma$",
+        "$\\Struct{M'}$",
+        "$\\Struct{M}$",
+        "$\\Assign{c}{M'}=s(x)$",
+        "$c$",
+        "$\\Gamma$",
+        "$!C$",
+        "$\\Sat{M'}{\\Gamma\\cup\\{!C\\}}$",
+        "$\\Gamma\\cup\\{!C\\}\\Entails!B(c)$",
+        "$\\Sat{M'}{B(c)}$",
+        "$!B(c)$",
+        "$\\Sat{M'}{!B(c)}[s]$",
+        "$\\Sat{M'}{!B(x)}[s]$",
+        "$\\Sat{M'}{!B(c)}[s]$",
+        "$!B(c)$",
+        "$\\Subst{!B(x)}{c}{x}$",
+        "$\\Sat{M'}{!B(x)}[s]$",
+        "$c$",
+        "$!B(x)$",
+        "$\\Sat{M}{!B(x)}[s]$",
+        "$s$",
+        "$\\Sat{M}{\\lforall[x][!B(x)]}$",
+        "$\\Gamma\\cup\\{!C\\}\\Entails\\lforall[x][!B(x)]$",
+        "$\\Gamma\\Entails!C\\lif\\lforall[x][!B(x)]$",
+        "$!A$",
+        "$\\lexists[x][!B(x)]\\lif!C$",
+        "$\\Proves!A$",
+        "$!A$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves\\lfalse$",
+        "$\\lfalse$",
+        "$\\Gamma$",
+        "$\\Struct{M}$",
+        "$\\pAssign{v}$",
+        "$\\Gamma$",
+        "$\\lfalse$",
+        "$\\Sat/{M}{\\lfalse}$",
+        "$\\Struct{M}$",
+        "$\\pSat/{v}{\\lfalse}$",
+        "$\\pAssign{v}$",
+        "$\\Struct{M}$",
+        "$\\pAssign{v}$",
+        "$\\Gamma$",
+        "$\\Gamma$"
+      ],
+      "math_target_core": [
+        "$!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Struct{M}$",
+        "$s$",
+        "$\\Sat{M}{!A}[s]$",
+        "$\\pAssign{v}$",
+        "$\\pSat{v}{!A}$",
+        "$t$",
+        "$!A$",
+        "$x$",
+        "$\\Sat{M}{\\lforall[x][!A]}[s]$",
+        "$\\varAssign{s'}{s}{x}$",
+        "$\\Sat{M}{!A}[s']$",
+        "$s'(x)=\\Value{t}{M}[s]$",
+        "$\\Sat{M}{\\Subst{!A}{t}{x}}[s]$",
+        "$\\Sat{M}{(\\lforall[x][!A]\\lif\\Subst{!A}{t}{x})}[s]$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma\\Entails!A$",
+        "$!A\\in\\Gamma$",
+        "$\\Gamma\\Entails!A$",
+        "$!A$",
+        "$!B$",
+        "$!B\\lif!A$",
+        "$\\Gamma\\Entails!B$",
+        "$\\Gamma\\Entails!B\\lif!A$",
+        "$\\Gamma\\Entails!A$",
+        "$!C\\lif\\lforall[x][!B(x)]$",
+        "$!C\\lif!B(c)$",
+        "$c$",
+        "$\\Gamma$",
+        "$!C$",
+        "$\\lforall[x][!B(x)]$",
+        "$\\Gamma\\Entails!C\\lif!B(c)$",
+        "$\\Gamma\\cup\\{!C\\}\\Entails!B(c)$",
+        "$\\Sat{M}{\\Gamma\\cup\\{!C\\}}$",
+        "$\\Struct{M}$",
+        "$\\Sat{M}{\\lforall[x][!B(x)]}$",
+        "$\\lforall[x][!B(x)]$",
+        "$s$",
+        "$\\Sat{M}{!B(x)}[s]$",
+        "$\\Gamma\\cup\\{!C\\}$",
+        "$!D\\in\\Gamma$",
+        "$\\Sat{M}{!D}[s]$",
+        "$\\Struct{M}$",
+        "$\\Assign{c}{M'}=s(x)$",
+        "$\\Struct{M'}$",
+        "$c$",
+        "$\\Gamma$",
+        "$!C$",
+        "$\\Sat{M'}{\\Gamma\\cup\\{!C\\}}$",
+        "$\\Gamma\\cup\\{!C\\}\\Entails!B(c)$",
+        "$\\Sat{M'}{!B(c)}$",
+        "$!B(c)$",
+        "$\\Sat{M'}{!B(c)}[s]$",
+        "$\\Sat{M'}{!B(x)}[s]$",
+        "$\\Sat{M'}{!B(c)}[s]$",
+        "$!B(c)$",
+        "$\\Subst{!B(x)}{c}{x}$",
+        "$\\Sat{M'}{!B(x)}[s]$",
+        "$c$",
+        "$!B(x)$",
+        "$\\Sat{M}{!B(x)}[s]$",
+        "$s$",
+        "$\\Sat{M}{\\lforall[x][!B(x)]}$",
+        "$\\Gamma\\cup\\{!C\\}\\Entails\\lforall[x][!B(x)]$",
+        "$\\Gamma\\Entails!C\\lif\\lforall[x][!B(x)]$",
+        "$!A$",
+        "$\\lexists[x][!B(x)]\\lif!C$",
+        "$\\Proves!A$",
+        "$!A$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves\\lfalse$",
+        "$\\Gamma$",
+        "$\\lfalse$",
+        "$\\Gamma$",
+        "$\\Struct{M}$",
+        "$\\pAssign{v}$",
+        "$\\lfalse$",
+        "$\\Struct{M}$",
+        "$\\Sat/{M}{\\lfalse}$",
+        "$\\pAssign{v}$",
+        "$\\pSat/{v}{\\lfalse}$",
+        "$\\Struct{M}$",
+        "$\\pAssign{v}$",
+        "$\\Gamma$",
+        "$\\Gamma$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$!C\\lif\\lforall[x][B(x)]$",
+        "$\\Sat{M'}{B(c)}$",
+        "$\\lforall[x][B(x)]$"
+      ],
+      "math_delta_target_only": [
+        "$!C\\lif\\lforall[x][!B(x)]$",
+        "$\\Sat{M'}{!B(c)}$",
+        "$\\lforall[x][!B(x)]$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTEAXD-010"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2088,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction\n% Section: soundness",
+          "target_start": "% Part: first-order-logic\n% Chapter: axiomatic-deduction\n% Section: soundness"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\iftag{FOL}\n      {\\olfileid{fol}{axd}{sou}}\n      {\\olfileid{pl}{axd}{sou}}",
+          "target_start": "\\iftag{FOL}\n      {\\olfileid{fol}{axd}{sou}}\n      {\\olfileid{pl}{axd}{sou}}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Soundness}",
+          "target_start": "\\olsection{నిర్దుష్టత}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{explain}\n!!^a{derivation} system, such as axiomatic deduction, is \\emph{sound}\nif it cannot !!{derive} ",
+          "target_start": "\\begin{explain}\nస్వీకృతాధారిత నిగమనం వంటి !!^a{derivation} వ్యవస్థ, నిజంగా చెల్లని\nవాటిని !!{derive} చేయలేకపోత"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{prop}\n  If $!A$ is an axiom, then\n  \\iftag{FOL}\n    {$\\Sat{M}{!A}[s]$ for each !!{structure}~$\\Struct{M",
+          "target_start": "\\begin{prop}\n  $!A$ ఒక స్వీకృతమైతే,\n  \\iftag{FOL}\n    {ప్రతి !!{structure}~$\\Struct{M}$, విలువ-నిర్ణయం~$s$కు $"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{proof}\n\\iftag{FOL}{We have to verify that all the axioms are valid. For\n  instance, here is the case fo",
+          "target_start": "\\begin{proof}\n\\iftag{FOL}{స్వీకృతాలన్నీ సార్వత్రికంగా సత్యమని నిర్ధారించాలి.\n  ఉదాహరణకు, \\olref[qua]{ax:q1} సం"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{thm}[Soundness]\n\\ollabel{thm:soundness}\nIf $\\Gamma \\Proves !A$ then $\\Gamma \\Entails !A$.\n\\end{thm}",
+          "target_start": "\\begin{thm}[నిర్దుష్టత]\n\\ollabel{thm:soundness}\n$\\Gamma \\Proves !A$ అయితే, $\\Gamma \\Entails !A$.\n\\end{thm}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{proof}\nBy induction on the length of the !!{derivation} of $!A$ from\n$\\Gamma$. If there are no steps ju",
+          "target_start": "\\begin{proof}\n$\\Gamma$ నుంచి $!A$కు గల !!{derivation} పొడవుపై ఆగమనం ద్వారా.\nనిగమనాలతో సమర్థించిన దశలేవీ లేకపోత"
+        },
+        {
+          "index": 11,
+          "source_start": "If the last step of the !!{derivation} of~$!A$ is justified by modus\nponens, then there are !!{formula}s $!B$ ",
+          "target_start": "~$!A$ యొక్క !!{derivation}లో చివరి దశను మోడస్ పోనెన్స్ సమర్థిస్తే,\nఆ !!{derivation}లో $!B$, $!B \\lif !A$ అనే !"
+        },
+        {
+          "index": 12,
+          "source_start": "\\iftag{FOL}{Now suppose the last step is justified by\n\\QR. Then that step has the form $!C \\lif \\lforall[x][B(",
+          "target_start": "\\iftag{FOL}{ఇప్పుడు చివరి దశను \\QR{} సమర్థిస్తుందని అనుకుందాం.\nఅప్పుడు ఆ దశ $!C \\lif \\lforall[x][!B(x)]$ రూపంల"
+        },
+        {
+          "index": 13,
+          "source_start": "Consider some structure~$\\Struct{M}$ such that $\\Sat{M}{\\Gamma \\cup\n  \\{!C\\}}$.  We need to show that $\\Sat{M}",
+          "target_start": "$\\Sat{M}{\\Gamma \\cup \\{!C\\}}$ అయ్యే ఏదో నిర్మాణం~$\\Struct{M}$ను\nపరిశీలించండి. $\\Sat{M}{\\lforall[x][!B(x)]}$ అన"
+        },
+        {
+          "index": 14,
+          "source_start": "The case where $!A$ is justified by \\QR{} but is of the form\n$\\lexists[x][!B(x)] \\lif !C$ is left as an exerci",
+          "target_start": "$!A$ను \\QR{} సమర్థించినా, అది $\\lexists[x][!B(x)] \\lif !C$ రూపంలో\nఉండే సందర్భాన్ని సాధనగా వదిలేస్తాం.}{}\n\\end{"
+        },
+        {
+          "index": 15,
+          "source_start": "\\tagprob{FOL}\n\\begin{prob}\n  Complete the proof of \\olref[fol][axd][sou]{thm:soundness}.\n\\end{prob}\n\\tagendpro",
+          "target_start": "\\tagprob{FOL}\n\\begin{prob}\n  \\olref[fol][axd][sou]{thm:soundness} నిరూపణను పూర్తి చేయండి.\n\\end{prob}\n\\tagendpr"
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{cor}\n\\ollabel{cor:weak-soundness}\nIf $\\Proves !A$, then $!A$ is \\iftag{FOL}{valid}{a tautology}.\n\\end{c",
+          "target_start": "\\begin{cor}\n\\ollabel{cor:weak-soundness}\n$\\Proves !A$ అయితే, $!A$ \\iftag{FOL}{సార్వత్రికంగా సత్యం}{ఒక సర్వసత్య"
+        },
+        {
+          "index": 17,
+          "source_start": "\\begin{cor}\n\\ollabel{cor:consistency-soundness}\nIf $\\Gamma$ is satisfiable, then it is consistent.\n\\end{cor}",
+          "target_start": "\\begin{cor}\n\\ollabel{cor:consistency-soundness}\n$\\Gamma$ సంతృప్తమైతే, అది అవిరుద్ధం.\n\\end{cor}"
+        },
+        {
+          "index": 18,
+          "source_start": "\\begin{proof}\nWe prove the contrapositive.  Suppose that $\\Gamma$ is not consistent.\nThen $\\Gamma \\Proves \\lfa",
+          "target_start": "\\begin{proof}\nవిపర్యయ ప్రతిజ్ఞను నిరూపిస్తాం. $\\Gamma$ అవిరుద్ధం కాదని అనుకుందాం.\nఅప్పుడు $\\Gamma \\Proves \\lfa"
+        },
+        {
+          "index": 19,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{sou}",
+        "\\olfileid{pl}{axd}{sou}",
+        "\\olref[qua]{ax:q1}",
+        "\\olref[syn][ext]{prop:ext-formulas}",
+        "\\ollabel{thm:soundness}",
+        "\\olref[syn][sem]{thm:sem-deduction}",
+        "\\olref[pl][syn][sem]{thm:sem-deduction}",
+        "\\olref[syn][sem]{thm:sem-deduction}",
+        "\\olref[syn][ass]{prop:sat-quant}",
+        "\\olref[syn][sat]{defn:satisfaction}",
+        "\\olref[syn][ext]{cor:extensionality-sent}",
+        "\\olref[syn][ass]{prop:sentence-sat-true}",
+        "\\olref[syn][ext]{prop:ext-formulas}",
+        "\\olref[syn][ext]{prop:extensionality}",
+        "\\olref[syn][sem]{thm:sem-deduction}",
+        "\\olref[fol][axd][sou]{thm:soundness}",
+        "\\ollabel{cor:weak-soundness}",
+        "\\ollabel{cor:consistency-soundness}",
+        "\\olref{thm:soundness}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{sou}",
+        "\\olfileid{pl}{axd}{sou}",
+        "\\olref[qua]{ax:q1}",
+        "\\olref[syn][ext]{prop:ext-formulas}",
+        "\\ollabel{thm:soundness}",
+        "\\olref[syn][sem]{thm:sem-deduction}",
+        "\\olref[pl][syn][sem]{thm:sem-deduction}",
+        "\\olref[syn][sem]{thm:sem-deduction}",
+        "\\olref[syn][ass]{prop:sat-quant}",
+        "\\olref[syn][sat]{defn:satisfaction}",
+        "\\olref[syn][ext]{cor:extensionality-sent}",
+        "\\olref[syn][ass]{prop:sentence-sat-true}",
+        "\\olref[syn][ext]{prop:ext-formulas}",
+        "\\olref[syn][ext]{prop:extensionality}",
+        "\\olref[syn][sem]{thm:sem-deduction}",
+        "\\olref[fol][axd][sou]{thm:soundness}",
+        "\\ollabel{cor:weak-soundness}",
+        "\\ollabel{cor:consistency-soundness}",
+        "\\olref{thm:soundness}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0125",
+      "source_path": "content/first-order-logic/axiomatic-deduction/identity.tex",
+      "source_sha256": "9a4f25fcf00baab5d8d5f05e7fe2315ca9f4ceaa39a67551489a5130b9b8a2d4",
+      "translation_sha256": "0f9f84f23ed4aca7ff1d669eea7e692c32d6115bf135ca515cd55fb143b3776a",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{axd}{ide}",
+        "\\ollabel{ax:id1}",
+        "\\ollabel{ax:id2}",
+        "\\ollabel{prop:sound}",
+        "\\olref{ax:id1}",
+        "\\olref{ax:id2}",
+        "\\olref[fol][axd][ide]{prop:sound}",
+        "\\ollabel{prop:iden1}",
+        "\\ollabel{prop:iden2}",
+        "\\olref{ax:id2}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{axd}{ide}",
+        "\\ollabel{ax:id1}",
+        "\\ollabel{ax:id2}",
+        "\\ollabel{prop:sound}",
+        "\\olref{ax:id1}",
+        "\\olref{ax:id2}",
+        "\\olref[fol][axd][ide]{prop:sound}",
+        "\\ollabel{prop:iden1}",
+        "\\ollabel{prop:iden2}",
+        "\\olref{ax:id2}"
+      ],
+      "tokens_source": {
+        "!!{derivation}": 1,
+        "!!{derivation}s": 1,
+        "!!{formula}": 1,
+        "!!{identity}": 1
+      },
+      "tokens_target": {
+        "!!{derivation}": 1,
+        "!!{derivation}s": 1,
+        "!!{formula}": 1,
+        "!!{identity}": 1
+      },
+      "math_source": [
+        "$\\eq$",
+        "$\\Proves$",
+        "\\begin{align}\\ollabel{ax:id1}&\\eq[t][t],\\\\\\ollabel{ax:id2}&\\eq[t_1][t_2]\\lif(!B(t_1)\\lif!B(t_2)),\\end{align}",
+        "$t$",
+        "$t_1$",
+        "$t_2$",
+        "$\\Gamma\\Proves\\eq[t][t]$",
+        "$t$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves!A(t_1)$",
+        "$\\Gamma\\Proves\\eq[t_1][t_2]$",
+        "$\\Gamma\\Proves!A(t_2)$",
+        "\\[(\\eq[t_1][t_2]\\lif(!A(t_1)\\lif!A(t_2)))\\]"
+      ],
+      "math_target_core": [
+        "$\\eq$",
+        "$\\Proves$",
+        "\\begin{align}\\ollabel{ax:id1}&\\eq[t][t],\\\\\\ollabel{ax:id2}&\\eq[t_1][t_2]\\lif(!B(t_1)\\lif!B(t_2)),\\end{align}",
+        "$t$",
+        "$t_1$",
+        "$t_2$",
+        "$t$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves\\eq[t][t]$",
+        "$\\Gamma\\Proves!A(t_1)$",
+        "$\\Gamma\\Proves\\eq[t_1][t_2]$",
+        "$\\Gamma\\Proves!A(t_2)$",
+        "\\[(\\eq[t_1][t_2]\\lif(!A(t_1)\\lif!A(t_2)))\\]"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [
+        "OLTEAXD-011"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 386,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: axiomatic-proofs\n% Section: identity",
+          "target_start": "% Part: first-order-logic\n% Chapter: axiomatic-proofs\n% Section: identity"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{fol}{axd}{ide}",
+          "target_start": "\\olfileid{fol}{axd}{ide}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{\\usetoken{P}{derivation} with \\usetoken{S}{identity}}",
+          "target_start": "\\olsection{\\usetoken{S}{identity}తో \\usetoken{P}{derivation}}"
+        },
+        {
+          "index": 6,
+          "source_start": "In order to accommodate $\\eq$ in !!{derivation}s, we simply add new\naxiom schemas. The definition of !!{deriva",
+          "target_start": "!!{derivation}sలో $\\eq$ను చేర్చుకోవడానికి, మనం కొత్త స్వీకృత\nపథకాలను మాత్రమే చేర్చుతాం. !!{derivation}, $\\Prov"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}[Axioms for !!{identity}]\n\\begin{align}\n\\ollabel{ax:id1} & \\eq[t][t], \\\\\n\\ollabel{ax:id2} & \\eq[t_",
+          "target_start": "\\begin{defn}[!!{identity} స్వీకృతాలు]\n\\begin{align}\n\\ollabel{ax:id1} & \\eq[t][t], \\\\\n\\ollabel{ax:id2} & \\eq[t_"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{prop}\\ollabel{prop:sound}\n  The axioms \\olref{ax:id1} and \\olref{ax:id2} are valid.\n\\end{prop}",
+          "target_start": "\\begin{prop}\\ollabel{prop:sound}\n  \\olref{ax:id1}, \\olref{ax:id2} స్వీకృతాలు సార్వత్రికంగా సత్యం.\n\\end{prop}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{proof}\n  Exercise.\n\\end{proof}",
+          "target_start": "\\begin{proof}\n  సాధన.\n\\end{proof}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{prob}\nProve \\olref[fol][axd][ide]{prop:sound}.\n\\end{prob}",
+          "target_start": "\\begin{prob}\n\\olref[fol][axd][ide]{prop:sound}ను నిరూపించండి.\n\\end{prob}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{prop}\\ollabel{prop:iden1}\n $\\Gamma \\Proves \\eq[t][t]$, for any term $t$ and set~$\\Gamma$.\n\\end{prop}",
+          "target_start": "\\begin{prop}\\ollabel{prop:iden1}\n ఏ మూస పదం~$t$, ఏ సమితి~$\\Gamma$కైనా $\\Gamma \\Proves \\eq[t][t]$.\n\\end{prop}\n\\"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{prop}\\ollabel{prop:iden2}\n  If $\\Gamma \\Proves !A(t_1)$ and $\\Gamma \\Proves\n  \\eq[t_1][t_2]$, then $\\Ga",
+          "target_start": "\\begin{prop}\\ollabel{prop:iden2}\n  $\\Gamma \\Proves !A(t_1)$, $\\Gamma \\Proves \\eq[t_1][t_2]$ అయితే,\n  $\\Gamma \\"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{proof}\nThe !!{formula}\n\\[\n(\\eq[t_1][t_2] \\lif (!A(t_1) \\lif !A(t_2)))\n\\]\nis an instance of~\\olref{ax:id",
+          "target_start": "\\begin{proof}\n!!{formula}\n\\[\n(\\eq[t_1][t_2] \\lif (!A(t_1) \\lif !A(t_2)))\n\\]\nఅనేది~\\olref{ax:id2} రూపం. ~\\MPని "
+        },
+        {
+          "index": 14,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{ide}",
+        "\\ollabel{ax:id1}",
+        "\\ollabel{ax:id2}",
+        "\\ollabel{prop:sound}",
+        "\\olref{ax:id1}",
+        "\\olref{ax:id2}",
+        "\\olref[fol][axd][ide]{prop:sound}",
+        "\\ollabel{prop:iden1}",
+        "\\ollabel{prop:iden2}",
+        "\\olref{ax:id2}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{axd}{ide}",
+        "\\ollabel{ax:id1}",
+        "\\ollabel{ax:id2}",
+        "\\ollabel{prop:sound}",
+        "\\olref{ax:id1}",
+        "\\olref{ax:id2}",
+        "\\olref[fol][axd][ide]{prop:sound}",
+        "\\ollabel{prop:iden1}",
+        "\\ollabel{prop:iden2}",
+        "\\olref{ax:id2}"
+      ],
+      "protected_identifier_parity": true
+    }
+  ]
+}
