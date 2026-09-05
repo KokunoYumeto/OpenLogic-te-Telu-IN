@@ -1,0 +1,108 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: derivations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{der}}
+      {\olfileid{pl}{ntd}{der}}
+
+\olsection{\usetoken{P}{derivation}}
+
+\begin{explain}
+పరికల్పన అంటే ఏమిటో చెప్పాం; నిగమన నియమాలనూ ఇచ్చాం. సహజ నిగమనంలోని
+!!^{derivation}s వీటి నుంచి ఆగమనాత్మకంగా ఉత్పన్నమవుతాయి: ప్రతి
+!!{derivation} తనంతట తానే ఒక పరికల్పన అయినా అవుతుంది, లేదా ఒకటి,
+రెండు, మూడు !!{derivation}s తర్వాత ఒక సరైన నిగమనం గలదైనా అవుతుంది.
+\end{explain}
+
+\begin{defn}[!!^{derivation}]
+పరికల్పనలు~$\Gamma$ నుంచి !!a{sentence}~$!A$ యొక్క
+\emph{\Article{derivation} !!{derivation}} అంటే కింది షరతులను తీర్చే
+!!{sentence}s పరిమిత వృక్షం:
+\begin{enumerate}
+\item వృక్షంలో అన్నిటికంటే పైనున్న !!{sentence}s, $\Gamma$లో ఉండాలి
+  లేదా వృక్షంలోని ఒక నిగమనం ద్వారా !!{discharged} అయి ఉండాలి.
+\item వృక్షంలో అన్నిటికంటే కిందనున్న !!{sentence}~$!A$.
+\item అడుగునున్న $!A$ తప్ప వృక్షంలోని ప్రతి !!{sentence}, ఆ
+  !!{sentence}కు నేరుగా
+  కింద నిలిచే నిష్కర్ష గల నిగమన నియమాన్ని సరిగ్గా వర్తింపజేయడంలో ఒక
+  పూర్వాధారం.
+\end{enumerate}
+అప్పుడు $!A$ను ఆ !!{derivation} యొక్క \emph{నిష్కర్ష} అనీ,
+$\Gamma$ను దాని !!{undischarged} పరికల్పనలు అనీ అంటాం.
+
+$\Gamma$ నుంచి $!A$ యొక్క ఒక !!a{derivation} ఉంటే, $\Gamma$ నుంచి
+$!A$ \emph{!!{derivable}} అని అంటాం; సంకేతాల్లో: $\Gamma \Proves
+!A$. ప్రతి పరికల్పనా !!{discharged} అయిన $!A$ యొక్క ఒక !!a{derivation}
+ఉంటే $\Proves !A$ అని రాస్తాం.
+\end{defn}
+
+\begin{ex}
+ప్రతి పరికల్పనా తనంతట తానే ఒక !!a{derivation}. కాబట్టి, ఉదాహరణకు,
+$!A$ తనంతట తానే ఒక !!a{derivation}; అలాగే $!B$ కూడా. వీటికి
+$\Intro{\land}$ నియమాన్ని వర్తింపజేసి కొత్త !!{derivation}ను
+పొందవచ్చు:
+\begin{prooftree}
+\AxiomC{$!A$}
+\AxiomC{$!B$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!A \land !B$}
+\end{prooftree}
+ఈ నియమాలు సాధారణమైనవి: అందులోని $!A$, $!B$ల స్థానంలో ఏ
+!!{sentence}sనైనా, ఉదాహరణకు $!C$, $!D$లను పెట్టవచ్చు. అప్పుడు
+నిష్కర్ష $!C \land !D$ అవుతుంది; కాబట్టి
+\begin{prooftree}
+\AxiomC{$!C$}
+\AxiomC{$!D$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!C \land !D$}
+\end{prooftree}
+ఒక సరైన !!{derivation}. పరికల్పనల స్థానాలను కూడా మార్చవచ్చు; అప్పుడు
+$!D$ అనేది $!A$ పాత్రను, $!C$ అనేది $!B$ పాత్రను పోషిస్తాయి. కనుక
+\begin{prooftree}
+\AxiomC{$!D$}
+\AxiomC{$!C$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!D \land !C$}
+\end{prooftree}
+కూడా ఒక సరైన !!{derivation}.
+
+ఇప్పుడు మరొక నియమాన్ని, ఉదాహరణకు $\Intro{\lif}$ను, వర్తింపజేయవచ్చు.
+ఇది ఒక షరతీయాన్ని నిష్కర్షగా పొందనిస్తుంది; ఆ షరతీయపు పూర్వాంగంతో
+తాదాత్మ్యం గల ఏ పరికల్పననైనా !!{discharge} చేయనిస్తుంది. కాబట్టి
+కిందివి రెండూ సరైన !!{derivation}s:
+\begin{prooftree}
+\AxiomC{$\Discharge{!C}{1}$}
+\AxiomC{$!D$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!C \land !D$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$!C \lif (!C \land !D)$}
+\DisplayProof\bottomAlignProof
+\AxiomC{$!C$}
+\AxiomC{$\Discharge{!D}{1}$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!C \land !D$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$!D \lif (!C \land !D)$}
+\end{prooftree}
+అవి వరుసగా $!D \Proves !C \lif (!C \land !D)$ అనీ,
+$!C \Proves !D \lif (!C \land !D)$ అనీ చూపుతాయి.
+
+పరికల్పనలను ఉపసంహరించడం ఒక అనుమతి, తప్పనిసరి షరతు కాదని గుర్తుంచుకోండి:
+పరికల్పనలను తప్పనిసరిగా ఉపసంహరించనవసరం లేదు. ముఖ్యంగా,
+!!{derivation}లో ఆ పరికల్పనలు లేకపోయినా ఒక నియమాన్ని వర్తింపజేయవచ్చు.
+ఉదాహరణకు, !!{discharged} చేయడానికి $!A$ పరికల్పన లేకపోయినా కిందిది
+అనుమతించబడుతుంది:
+\begin{prooftree}
+  \AxiomC{$!B$}
+  \DischargeRule{\Intro{\lif}}{1}
+  \UnaryInfC{$!A \lif !B$}
+\end{prooftree}
+\end{ex}
+
+\end{document}

@@ -1,0 +1,133 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: provability-consistency
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{prv}}
+      {\olfileid{pl}{ntd}{prv}}
+
+\olsection{\usetoken{S}{derivability} మరియు అవైరుధ్యం}
+
+ఇప్పుడు !!{derivability} సంబంధపు అనేక ధర్మాలను స్థాపిస్తాం. అవి
+స్వతంత్రంగా ఆసక్తికరమైనవి; అంతేకాక ప్రతి ఒక్కటీ సంపూర్ణతా సిద్ధాంతపు
+నిరూపణలో ఒక పాత్ర పోషిస్తుంది.
+
+\begin{prop}\ollabel{prop:provability-contr}
+  $\Gamma \Proves !A$ అయి, $\Gamma \cup \{!A\}$ వైరుధ్యభరితమైతే,
+  $\Gamma$ వైరుధ్యభరితమైనది.
+\end{prop}
+
+\begin{proof}
+$\Gamma$ నుంచి $!A$ యొక్క !!{derivation}ను $\delta_1$ అనీ,
+$\Gamma \cup \{!A\}$ నుంచి $\lfalse$ యొక్క !!{derivation}ను
+$\delta_2$ అనీ అందాం. అప్పుడు కిందివిధంగా !!{derive} చేయవచ్చు:
+\begin{prooftree}
+\AxiomC{$\Gamma, \Discharge{!A}{1}$}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{1}
+\UnaryInfC{$\lnot !A$}
+\AxiomC{$\Gamma$}
+\RightLabel{$\delta_1$}
+\DeduceC{$!A$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\end{prooftree}
+కొత్త !!{derivation}లో పరికల్పన~$!A$ !!{discharged} అయింది; కాబట్టి
+అది $\Gamma$ నుంచి ఒక !!a{derivation}.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:prov-incons}
+$\Gamma \Proves !A$ అయితే, అప్పుడు మాత్రమే $\Gamma \cup \{\lnot !A\}$
+వైరుధ్యభరితమైనది.
+\end{prop}
+
+\begin{proof}
+మొదట $\Gamma \Proves !A$ అనుకుందాం; అంటే !!{undischarged}
+పరికల్పనలు~$\Gamma$ నుంచి $!A$ యొక్క ఒక !!a{derivation}~$\delta_0$
+ఉంది. కిందివిధంగా $\Gamma \cup \{\lnot !A\}$ నుంచి $\lfalse$ యొక్క
+ఒక !!a{derivation}ను పొందుతాం:
+\begin{prooftree}
+  \AxiomC{$\lnot !A$}
+  \AxiomC{$\Gamma$}
+  \RightLabel{$\delta_0$}
+  \DeduceC{$!A$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+\end{prooftree}
+
+ఇప్పుడు $\Gamma \cup \{\lnot !A\}$ వైరుధ్యభరితమని అనుకుందాం;
+దానికి అనుగుణంగా $\Gamma \cup \{\lnot !A\}$లోని !!{undischarged}
+పరికల్పనల నుంచి $\lfalse$ యొక్క !!{derivation}ను $\delta_1$ అందాం.
+$\FalseCl$ను ఉపయోగించి $\Gamma$ ఒక్కదాని నుంచి $!A$ యొక్క ఒక
+!!a{derivation}ను ఇలా పొందుతాం:
+\begin{prooftree}
+  \AxiomC{$\Gamma, \Discharge{\lnot !A}{1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$\lfalse$}
+  \RightLabel{\FalseCl}
+  \DischargeRule{\FalseCl}{1}
+  \UnaryInfC{$!A$}
+\end{prooftree}
+\end{proof}
+
+\begin{prob}
+$\Gamma \Proves \lnot !A$ అయితే, అప్పుడు మాత్రమే
+$\Gamma \cup \{!A\}$ వైరుధ్యభరితమని నిరూపించండి.
+\end{prob}
+
+\begin{prop}\ollabel{prop:explicit-inc}
+  $\Gamma \Proves !A$ అయి, $\lnot !A \in \Gamma$ అయితే $\Gamma$
+  వైరుధ్యభరితమైనది.
+\end{prop}
+
+\begin{proof}
+  $\Gamma \Proves !A$, $\lnot !A \in \Gamma$ అనుకుందాం. అప్పుడు
+  $\Gamma$ నుంచి $!A$ యొక్క ఒక !!a{derivation}~$\delta$ ఉంటుంది.
+  $\Elim{\lnot}$ నియమాన్ని ఇలా సరళంగా వర్తింపజేయండి:
+  \begin{prooftree}
+    \AxiomC{$\lnot !A$}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta$}
+    \DeduceC{$!A$}
+    \RightLabel{\Elim{\lnot}}
+    \BinaryInfC{$\lfalse$}
+  \end{prooftree}
+  $\lnot !A \in \Gamma$ కనుక అన్ని !!{undischarged} పరికల్పనలూ
+  $\Gamma$లోనే ఉన్నాయి; అందువల్ల $\Gamma \Proves \lfalse$.
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-exhaustive}
+  $\Gamma \cup \{!A\}$, $\Gamma \cup \{\lnot !A\}$ రెండూ
+  వైరుధ్యభరితమైతే, $\Gamma$ వైరుధ్యభరితమైనది.
+\end{prop}
+
+\begin{proof}
+$\Gamma \cup \{ !A \}$ నుంచి $\lfalse$ను, $\Gamma \cup \{ \lnot !A \}$
+నుంచి $\lfalse$ను ఇచ్చే !!{derivation}s~$\delta_1$, $\delta_2$ వరుసగా ఉన్నాయి.
+అప్పుడు కిందివిధంగా !!{derive} చేయవచ్చు:
+\begin{prooftree}
+\AxiomC{$\Gamma, \Discharge{\lnot !A}{2}$}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{2}
+\UnaryInfC{$\lnot \lnot !A$}
+\AxiomC{$\Gamma, \Discharge{!A}{1}$}
+\RightLabel{$\delta_1$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{1}
+\UnaryInfC{$\lnot !A$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\end{prooftree}
+$!A$, $\lnot !A$ పరికల్పనలు !!{discharged} అయ్యాయి కనుక ఇది
+$\Gamma$ ఒక్కదాని నుంచి $\lfalse$ యొక్క ఒక !!a{derivation}. అందువల్ల
+$\Gamma$ వైరుధ్యభరితమైనది.
+\end{proof}
+
+\end{document}

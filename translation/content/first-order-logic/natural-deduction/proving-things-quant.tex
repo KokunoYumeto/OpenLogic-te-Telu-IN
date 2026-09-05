@@ -1,0 +1,247 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: proving-things-quant
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{ntd}{prq}
+
+\olsection{పరిమాణీకరణికాలతో \usetoken{P}{derivation}}
+
+\begin{ex}
+పరిమాణీకరణికాలతో వ్యవహరించేటప్పుడు ఐగెన్ చరరాశి షరతును ఉల్లంఘించకుండా
+చూసుకోవాలి. అందుకోసం కొన్నిసార్లు కొన్ని నిగమనాలను చేసే క్రమాన్ని
+మార్చి ప్రయత్నించాలి. సాధారణంగా ఐగెన్ చరరాశి షరతుకు లోబడే నియమాలను
+ముందుగా చూసుకోవడం ఉపయోగకరం (పూర్తయిన నిరూపణలో అవి కిందివైపు ఉంటాయి).
+
+$\lexists[x][\lnot !A(x)] \lif \lnot \lforall[x][!A(x)]$ అనే
+!!{formula}కు ఒక !!a{derivation} ఎలా ఇవ్వాలో చూద్దాం. ఎప్పటిలాగే ఇలా
+రాయడంతో మొదలుపెడతాం:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInfC{$\lexists[x][\lnot !A(x)]\lif \lnot \lforall[x][!A(x)]$}
+\end{prooftree}
+చివరి మెట్టును \Intro{\lif} నియమంతో సమర్థించడానికి ఏమి కావాలో మొదట
+రాసుకుందాం.
+\begin{prooftree}
+\AxiomC{$\Discharge{\lexists[x][\lnot !A(x)]}{1}$}
+\DeduceC{$\lnot \lforall[x][!A(x)]$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$\lexists[x][\lnot !A(x)]\lif \lnot \lforall[x][!A(x)]$}
+\end{prooftree}
+$\lnot \lforall[x][!A(x)]$కు వర్తింపజేయదగిన స్పష్టమైన నియమం లేదు
+కనుక \Elim{\lexists} నియమాన్ని వాడగలిగేలా !!{derivation}ను
+అమర్చుకుందాం. ఇక్కడ ఐగెన్ చరరాశి షరతును గమనించి,
+$\lexists[x][!A(x)]$లో గానీ అది ఆధారపడే పరికల్పనల్లో గానీ కనిపించని
+స్థిరాంకాన్ని ఎంచుకోవాలి. (అయితే ఏ !!{constant}s కనిపించడం లేదు కనుక
+ఏ ఎంపికైనా సరిపోతుంది.)
+\begin{prooftree}
+\AxiomC{$\Discharge{\lexists[x][\lnot !A(x)]}{1}$}
+\AxiomC{$\Discharge{\lnot !A(a)}{2}$}
+\DeduceC{$\lnot \lforall[x][!A(x)]$}
+\DischargeRule{\Elim{\lexists}}{2}
+\BinaryInfC{$\lnot \lforall[x][!A(x)]$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$\lexists[x][\lnot !A(x)] \lif \lnot \lforall[x][!A(x)]$}
+\end{prooftree}
+$\lnot \lforall[x][!A(x)]$ను నిగమించడానికి \Intro{\lnot} నియమాన్ని
+వాడటానికి ప్రయత్నిద్దాం: ఇందుకోసం $\lforall[x][!A(x)]$ను అదనపు
+పరికల్పనగా వాడుకొని అయినా ఒక వైరుధ్యాన్ని నిగమించాలి. ఈ వైరుధ్యంలో
+\Elim{\lexists} నిగమనం ఉపసంహరించే $\lnot !A(a)$ పరికల్పన కూడా
+ఉండవచ్చు. దాన్ని ఇలా అమర్చవచ్చు:
+\begin{prooftree}
+\AxiomC{$\Discharge{\lexists[x][\lnot !A(x)]}{1}$}
+\AxiomC{$\Discharge{\lnot !A(a)}{2}, \Discharge{\lforall[x][!A(x)]}{3}$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{3}
+\UnaryInfC{$\lnot \lforall[x][!A(x)]$}
+\DischargeRule{\Elim{\lexists}}{2}
+\BinaryInfC{$\lnot \lforall[x][!A(x)]$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$\lexists[x][\lnot !A(x)]\lif \lnot \lforall[x][!A(x)]$}
+\end{prooftree}
+వైరుధ్యాన్ని పొందడానికి దగ్గరపడ్డాం. ఐగెన్ చరరాశి షరతులేమీ లేని
+\Elim{\lforall}ను వర్తింపజేయడం అత్యంత సులభం. సార్వత్రికంగా
+పరిమాణీకరించిన $x$ స్థానంలో మనకు కావలసిన ఏ పదాన్నైనా వాడవచ్చు కనుక,
+వైరుధ్యానికి చేరడానికి $a$నే కొనసాగించి వాడడం సముచితం.
+\begin{prooftree}
+\AxiomC{$\Discharge{\lexists[x][\lnot !A(x)]}{1}$}
+\AxiomC{$\Discharge{\lnot !A(a)}{2}$}
+\AxiomC{$\Discharge{\lforall[x][!A(x)]}{3}$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!A(a)$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{3}
+\UnaryInfC{$\lnot \lforall[x][!A(x)]$}
+\DischargeRule{\Elim{\lexists}}{2}
+\BinaryInfC{$\lnot \lforall[x][!A(x)]$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$\lexists[x][\lnot !A(x)]\lif \lnot \lforall[x][!A(x)]$}
+\end{prooftree}
+
+ముఖ్యంగా పరిమాణీకరణికాలతో వ్యవహరిస్తున్నప్పుడు, ఐగెన్ చరరాశి షరతు
+ఉల్లంఘించబడలేదని ఈ దశలో మళ్లీ పరిశీలించడం ముఖ్యం. మనం వర్తింపజేసిన
+ఐగెన్ చరరాశి షరతుకు లోబడే ఏకైక నియమం \Elim{\exists}; ఐగెన్
+చరరాశి~$a$ అది ఆధారపడే ఏ పరికల్పనలోనూ కనిపించదు. కనుక ఇది ఒక సరైన
+!!{derivation}.
+\end{ex}
+
+\begin{ex}
+కొన్నిసార్లు కొన్ని !!{formula}s నుంచి ఒక !!a{formula}ను నిగమించవచ్చు.
+ఇలాంటి సందర్భాల్లో ఉపసంహరించని పరికల్పనలు ఉండవచ్చు. మన అంతిమ లక్ష్యంతో
+పాటు పరికల్పనలను కూడా గుర్తుంచుకోవడం ముఖ్యం.
+
+$\lexists[x][(!A(x) \land !B(x))]$, $\lforall[x][(!B(x) \lif
+!C(x,b))]$ అనే పరికల్పనల నుంచి !!{formula}
+$\lexists[x][!C(x,b)]$కు ఒక !!a{derivation} ఎలా ఇవ్వాలో చూద్దాం.
+ఎప్పటిలాగే నిష్కర్షను అడుగున రాస్తాం.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInfC{$\lexists[x][!C(x,b)]$}
+\end{prooftree}
+
+మనకు రెండు పూర్వాధారాలున్నాయి. మొదటిదాన్ని వాడడానికి, అంటే
+$\lexists[x][(!A(x) \land !B(x))]$ నుంచి
+$\lexists[x][!C(x, b)]$ యొక్క ఒక !!a{derivation}ను కనుగొనడానికి,
+\Elim{\lexists} నియమాన్ని వాడాలి. దానికి ఐగెన్ చరరాశి షరతు ఉంది కనుక
+ఆ నియమాన్ని ముందుగా వర్తింపజేద్దాం. కిందిది వస్తుంది:
+\begin{prooftree}
+\AxiomC{$\lexists[x][(!A(x) \land !B(x))]$}
+\AxiomC{$\Discharge{!A(a) \land !B(a)}{1}$}
+\DeduceC{$\lexists[x][!C(x,b)]$}
+\DischargeRule{\Elim{\lexists}}{1}
+\BinaryInfC{$\lexists[x][!C(x,b)]$}
+\end{prooftree}
+మనం ఉపయోగిస్తున్న రెండు పరికల్పనల్లోనూ $!B$ ఉంది. ఈ దశలో
+$!B(a)$ను విడదీయడానికి \Elim{\land}ను వర్తింపజేయడం ఉపయోగకరం.
+\begin{prooftree}
+\AxiomC{$\lexists[x][(!A(x) \land !B(x)])$}
+\AxiomC{$\Discharge{!A(a)
+\land !B(a)}{1}$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$!B(a)$}
+\DeduceC{$\lexists[x][!C(x,b)]$}
+\DischargeRule{\Elim{\lexists}}{1}
+\BinaryInfC{$\lexists[x][!C(x,b)]$}
+\end{prooftree}
+
+మనకు ఉపయోగపడే రెండవ పరికల్పన $\lforall[x][(!B(x) \lif
+!C(x,b))]$. ఐగెన్ చరరాశి షరతు లేదు కనుక $x$ స్థానంలో
+!!{constant}~$a$ను పెట్టడానికి \Elim{\lforall}ను వాడి
+$!B(a) \lif !C(a, b)$ను పొందవచ్చు. ఇప్పుడు $!B(a) \lif !C(a,b)$,
+$!B(a)$ రెండూ ఉన్నాయి. తరువాత \Elim{\lif} నియమాన్ని నేరుగా
+వర్తింపజేయాలి.
+\begin{prooftree}
+\AxiomC{$\lexists[x][(!A(x) \land !B(x))]$}
+\AxiomC{$\lforall[x][(!B(x) \lif !C(x,b))]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!B(a) \lif !C(a,b)$}
+\AxiomC{$\Discharge{!A(a)
+\land !B(a)}{1}$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$!B(a)$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C(a,b)$}
+\DeduceC{$\lexists[x][!C(x,b)]$}
+\DischargeRule{\Elim{\lexists}}{1}
+\insertBetweenHyps{\hspace{-5em}}
+\BinaryInfC{$\lexists[x][!C(x,b)]$}
+\end{prooftree}
+దాదాపు చేరుకున్నాం!{} \Intro{\lexists}ను ఒక్కసారి వర్తింపజేస్తే మన
+లక్ష్యానికి చేరతాం.
+\begin{prooftree}
+\AxiomC{$\lexists[x][(!A(x) \land !B(x))]$}
+\AxiomC{$\lforall[x][(!B(x) \lif !C(x,b))]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!B(a) \lif !C(a,b)$}
+\AxiomC{$\Discharge{!A(a)
+\land !B(a)}{1}$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$!B(a)$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C(a,b)$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][!C(x,b)]$}
+\DischargeRule{\Elim{\lexists}}{1}
+\insertBetweenHyps{\hspace{-5em}}
+\BinaryInfC{$\lexists[x][!C(x,b)]$}
+\end{prooftree}
+ప్రతి మెట్టులోనూ ఐగెన్ చరరాశి షరతులను ఉల్లంఘించకుండా చూసుకున్నాం
+కనుక ఇది ఒక సరైన !!{derivation} అని నిశ్చయించవచ్చు.
+\end{ex}
+
+\begin{ex}
+$\lforall[x][!A(x)] \lif \lexists[y][!B(y)]$,
+$\lnot\lexists[y][!B(y)]$ అనే పరికల్పనల నుంచి !!{formula}
+$\lnot\lforall[x][!A(x)]$కు ఒక !!a{derivation} ఇవ్వండి. ఎప్పటిలాగే
+లక్ష్య !!{formula}ను అడుగున రాస్తాం.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInfC{$\lnot\lforall[x][!A(x)]$}
+\end{prooftree}
+!!{derivation}లో చివరి వరుస నిషేధం కనుక \Intro{\lnot}ను
+ప్రయత్నిద్దాం. ఇందుకోసం ఒక వైరుధ్యాన్ని ఎలా !!{derive} చేయాలో
+కనుగొనాలి.
+\begin{prooftree}
+\AxiomC{$\Discharge{\lforall[x][!A(x)]}{1}$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{1}
+\UnaryInfC{$\lnot\lforall[x][!A(x)]$}
+\end{prooftree}
+ఇంతవరకు బాగుంది. \Elim{\lforall}ను వాడవచ్చు; కానీ అది లక్ష్యాన్ని
+పొందడంలో సహాయపడుతుందో స్పష్టం కాదు. బదులుగా మన పరికల్పనల్లో ఒకదాన్ని
+వాడదాం. $\lforall[x][!A(x)] \lif \lexists[y][!B(y)]$తో పాటు
+$\lforall[x][!A(x)]$ ఉంటే \Elim{\lif} నియమాన్ని వాడవచ్చు.
+\begin{prooftree}
+\AxiomC{$\lforall[x][!A(x)] \lif \lexists[y][!B(y)]$}
+\AxiomC{$\Discharge{\lforall[x][!A(x)]}{1}$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$\lexists[y][!B(y)]$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{1}
+\UnaryInfC{$\lnot\lforall[x][!A(x)]$}
+\end{prooftree}
+ఇప్పుడు వాడుకోవడానికి చివరి పరికల్పన ఒకటి మిగిలింది. \Elim{\lnot}ను
+వాడి వైరుధ్యానికి చేరడానికి అది సహాయపడుతుందని కనిపిస్తోంది.
+\begin{prooftree}
+\AxiomC{$\lnot\lexists[y][!B(y)]$}
+\AxiomC{$\lforall[x][!A(x)] \lif \lexists[y][!B(y)]$}
+\AxiomC{$\Discharge{\lforall[x][!A(x)]}{1}$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$\lexists[y][!B(y)]$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{1}
+\UnaryInfC{$\lnot\lforall[x][!A(x)]$}
+\end{prooftree}
+\end{ex}
+
+\begin{prob}
+కిందివాటిని చూపే !!{derivation}s ఇవ్వండి:
+\begin{enumerate}
+\item $\Proves (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) \lif
+\lforall[z][(!A(z) \land !B(z))]$.
+\item $\Proves (\lexists[x][!A(x)] \lor \lexists[y][!B(y)]) \lif
+\lexists[z][(!A(z) \lor !B(z))]$.
+\item $\lforall[x][(!A(x) \lif !B)] \Proves \lexists[y][!A(y)] \lif !B$.
+\item $\lforall[x][\lnot !A(x)] \Proves \lnot\lexists[x][!A(x)]$.
+\item $\Proves \lnot\lexists[x][!A(x)] \lif \lforall[x][\lnot !A(x)]$.
+\item $\Proves \lnot\lexists[x][\lforall[y][((!A(x,y) \lif \lnot
+!A(y,y)) \land (\lnot !A(y,y) \lif !A(x,y)))]]$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+కిందివాటిని చూపే !!{derivation}s ఇవ్వండి:
+\begin{enumerate}
+\item $\Proves \lnot\lforall[x][!A(x)] \lif \lexists[x][\lnot!A(x)]$.
+\item $(\lforall[x][!A(x)] \lif !B) \Proves \lexists[y][(!A(y) \lif !B)]$.
+\item $\Proves \lexists[x][(!A(x) \lif \lforall[y][!A(y)])]$.
+\end{enumerate}
+(వీటన్నింటికీ $\FalseCl$~నియమం అవసరం.)
+\end{prob}
+
+\end{document}

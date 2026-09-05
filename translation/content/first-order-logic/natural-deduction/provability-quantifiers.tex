@@ -1,0 +1,63 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: provability-quantifiers
+
+% verification of properties of provability needed for maximally
+% consistent sets in the completeness chapter.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{ntd}{qpr}
+
+\olsection{\usetoken{S}{derivability} మరియు పరిమాణీకరణికాలు}
+
+\begin{explain}
+  ఈ విభాగంలో స్థాపించే $\Proves$ గురించిన వాస్తవాలను సహజ నిగమన
+  నియమాలు ఇవ్వడం కూడా సంపూర్ణతా సిద్ధాంతానికి అవసరం.
+\end{explain}
+
+\begin{thm}
+\ollabel{thm:strong-generalization} $\Gamma$లో గానీ $!A(x)$లో గానీ
+కనిపించని స్థిరాంకం $c$ అయి, $\Gamma \Proves !A(c)$ అయితే,
+$\Gamma \Proves \lforall[x][!A(x)]$.
+\end{thm}
+
+\begin{proof}
+$\Gamma$ నుంచి $!A(c)$ యొక్క ఒక !!a{derivation}ను $\delta$ అందాం.
+ఒక \Intro{\lforall} నిగమనాన్ని చేర్చి $\lforall[x][!A(x)]$ యొక్క
+ఒక !!a{derivation}ను పొందుతాం. $c$ అనేది $\Gamma$లో గానీ $!A(x)$లో
+గానీ కనిపించదు కనుక ఐగెన్ చరరాశి షరతు నెరవేరుతుంది.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:provability-quantifiers}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$!A(t) \Proves \lexists[x][!A(x)]$.}{}
+
+\tagitem{prvAll}{$\lforall[x][!A(x)] \Proves !A(t)$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{కిందిది $!A(t)$ నుంచి $\lexists[x][!A(x)]$ యొక్క
+  ఒక !!a{derivation}:
+\begin{prooftree}
+\AxiomC{$!A(t)$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][!A(x)]$}
+\end{prooftree}}{}
+
+\tagitem{prvAll}{కిందిది $\lforall[x][!A(x)]$ నుంచి $!A(t)$ యొక్క
+  ఒక !!a{derivation}:
+\begin{prooftree}
+\AxiomC{$\lforall[x][!A(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!A(t)$}
+\end{prooftree}}{}
+\end{tagenumerate}
+\end{proof}
+
+\end{document}

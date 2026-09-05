@@ -20,19 +20,20 @@ Continuing concept DOI:
 GitHub, GitHub Pages, and Zenodo public bytes have been anonymously verified;
 see [PUBLICATION.md](PUBLICATION.md).
 
-Eighty full-unit editable drafts exist in this repository: Sets (7),
+Ninety-four full-unit editable drafts exist in this repository: Sets (7),
 Relations (9), Functions (7), Size of Sets (14), Arithmetization (8) and
 Infinite Sets (6), plus the Propositional Logic part driver and complete
 Syntax and Semantics chapter (8), the shared Proof Systems chapter (6), and
-the shared Sequent Calculus chapter (15). All ten batches have
+the shared Sequent Calculus chapter (15), and the shared Natural Deduction
+chapter (14). All eleven batches have
 source-aligned structural and same-agent semantic review records. The Sets
 chapter also has an offline semantic HTML reader with Telugu document metadata, native MathML,
 local fonts, accessible inline diagrams, resolved internal links, and a
 separately collapsible copy of each canonical English unit. Its public browser
 version is at [OpenLogic తెలుగు — సమితులు](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sets/).
 Relations, Functions, Size of Sets, Arithmetization, Infinite Sets,
-Propositional Logic, Proof Systems and Sequent Calculus are not yet integrated
-into that reader. The other 642 units and the coherent full
+Propositional Logic, Proof Systems, Sequent Calculus and Natural Deduction are
+not yet integrated into that reader. The other 628 units and the coherent full
 reader remain in progress; neither current
 chapter format substitutes for that remaining work.
 
@@ -60,7 +61,7 @@ redistributed here.
 
 Five confirmed source issues in Functions, fourteen in Size of Sets, eight
 in Arithmetization, six in Infinite Sets, four in Propositional Logic and four
-in Proof Systems, and five in Sequent Calculus are
+in Proof Systems, five in Sequent Calculus, and four in Natural Deduction are
 minimally repaired and disclosed beside the affected Telugu claims. The frozen
 English bytes remain unchanged. The Size of Sets records adopt ten shared
 OLSIZ findings and four additional deterministic OLTESIZ findings. A proposed
@@ -78,14 +79,22 @@ and the bounded
 and the bounded
 [Proof Systems audit](evidence/source-audits/2026-09-05-proof-systems-telugu/REVIEW.md),
 and the bounded
-[Sequent Calculus audit](evidence/source-audits/2026-09-05-sequent-calculus-telugu/REVIEW.md).
+[Sequent Calculus audit](evidence/source-audits/2026-09-05-sequent-calculus-telugu/REVIEW.md),
+and the bounded
+[Natural Deduction audit](evidence/source-audits/2026-09-05-natural-deduction-telugu/REVIEW.md).
 
-The [optional expert-review log](evidence/EXPERT_REVIEW_LOG.md) exposes all 37
-current terminology/sense decisions and the forty-six corrections with exact
+The [optional expert-review log](evidence/EXPERT_REVIEW_LOG.md) exposes all 38
+current terminology/sense decisions and the fifty corrections with exact
 source/target locators, aligned segment hashes, authorities actually checked,
 known evidence limits, alternatives, uncertainty, and concrete review
-questions. Its status is explicitly partial (80/722); every entry is
+questions. Its status is explicitly partial (94/722); every entry is
 provisional for optional expert review and none is a translation hold.
+The same decisions are published as a
+[priority view](evidence/EXPERT_REVIEW_PRIORITY.md), a
+[one-row-per-occurrence CSV](evidence/EXPERT_REVIEW_OCCURRENCES.csv), and
+[machine JSON](evidence/EXPERT_REVIEW_LOG.json). Final printed/PDF page fields
+remain explicitly pending until each unit enters the coherent reader and final
+pagination exists; exact unit, section, file and line locators are available now.
 
 ## QA and limitations
 
@@ -96,13 +105,13 @@ last-two-pass hashes; all-page visual inspection; mixed-script and Telugu
 conjunct extraction samples. The final log has zero missing glyphs,
 overfull boxes, undefined references or warnings.
 
-All eighty editable drafts pass correction-aware blank-block,
+All ninety-four editable drafts pass correction-aware blank-block,
 environment, source-token, protected-identifier and mathematical-form checks.
-Ten same-agent semantic reviews record source-aligned reverse paraphrases and
+Eleven same-agent semantic reviews record source-aligned reverse paraphrases and
 their limits. Size of Sets, Arithmetization, Infinite Sets and Propositional
-Logic Syntax and Semantics, Proof Systems, and Sequent Calculus have source QA
-only at this checkpoint; no PDF or HTML reader integration is claimed for
-those fifty-seven units.
+Logic Syntax and Semantics, Proof Systems, Sequent Calculus, and Natural
+Deduction have source QA only at this checkpoint; no PDF or HTML reader
+integration is claimed for those seventy-one units.
 
 QA is machine/agent performed, not human or independent review. Several
 technical terms remain provisional. The PDF is not tagged. Source caveats

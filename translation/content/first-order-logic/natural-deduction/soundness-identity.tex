@@ -1,0 +1,50 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: soundness-identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{ntd}{sid}
+
+\olsection{\usetoken{S}{identity}తో నిర్దుష్టత}
+
+\begin{prop}
+$\eq$కు నియమాలు గల సహజ నిగమనం నిర్దుష్టమైనది.
+\end{prop}
+
+\begin{proof}
+$\eq[t][t]$ రూపంలోని ప్రతి !!{formula} చెల్లుబాటు అవుతుంది; ఎందుకంటే
+ప్రతి !!{structure}~$\Struct M$కు $\Sat{M}{\eq[t][t]}$. ($t$ సంవృత
+పదం, అంటే అది ఏ చరరాశులనూ కలిగి ఉండదని అనుకుంటున్నాం; కనుక చరరాశి
+నిర్దేశాలు అప్రస్తుతం.)
+
+ఒక !!a{derivation}లో చివరి నిగమనం \Elim{\eq} అనుకుందాం; అంటే
+!!{derivation} కింది రూపంలో ఉంటుంది:
+\begin{prooftree}
+  \AxiomC{$\Gamma_1$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$\eq[t_1][t_2]$}
+  \AxiomC{$\Gamma_2$}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!A(t_1)$}
+  \RightLabel{\Elim{\eq}}
+  \BinaryInfC{$!A(t_2)$}
+\end{prooftree}
+పూర్వాధారాలు $\eq[t_1][t_2]$, $!A(t_1)$లు వరుసగా !!{undischarged}
+పరికల్పనలు~$\Gamma_1$, $\Gamma_2$ల నుంచి !!{derive}d అయ్యాయి.
+$\Gamma_1 \cup \Gamma_2$ నుంచి $!A(t_2)$ అనుగమిస్తుందని చూపాలి.
+$\Sat{M}{\Gamma_1 \cup \Gamma_2}$ అయ్యే ఒక
+!!a{structure}~$\Struct{M}$ను పరిశీలించండి. ఆగమన పరికల్పన ప్రకారం
+$\Sat{M}{!A(t_1)}$, $\Sat{M}{\eq[t_1][t_2]}$. అందువల్ల
+$\Value{t_1}{M} = \Value{t_2}{M}$. $s$ ఏదైనా చరరాశి నిర్దేశం అనీ,
+$m = \Value{t_1}{M} = \Value{t_2}{M}$ అనీ అందాం.
+\olref[fol][syn][ext]{prop:ext-formulas} ప్రకారం
+$\Sat{M}{!A(t_1)}[s]$ అయితే, అప్పుడు మాత్రమే
+$\Sat{M}{!A(x)}[\Subst{s}{m}{x}]$; అలాగే అప్పుడు మాత్రమే
+$\Sat{M}{!A(t_2)}[s]$. $\Sat{M}{!A(t_1)}$ కనుక
+$\Sat{M}{!A(t_2)}$.
+\end{proof}
+
+\end{document}

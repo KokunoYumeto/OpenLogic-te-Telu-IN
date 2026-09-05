@@ -1,0 +1,77 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTEND-20260905",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0084", "OLP-0085", "OLP-0086", "OLP-0087", "OLP-0088",
+      "OLP-0089", "OLP-0090", "OLP-0091", "OLP-0092", "OLP-0093",
+      "OLP-0094", "OLP-0095", "OLP-0096", "OLP-0097"
+    ],
+    "finding_count": 4
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEND-001",
+      "unit_id": "OLP-0085",
+      "classification": "confirmed_wrong_node_type_in_natural_deduction_tree_definition",
+      "source": {
+        "path": "content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+        "bytes": 2061,
+        "sha256": "e6e8bed6816bd64ac24342fd4d591ca0e7c1ddf82fc056b452aa87c45d810506",
+        "locator": "lines 31-38"
+      },
+      "finding": "The definition first identifies natural-deduction derivations as trees of sentences, then says a sentence may stand below one, two or three other sequents.",
+      "controlling_evidence": "The same paragraph calls every top node and every premise or conclusion a sentence, and every displayed natural-deduction rule connects sentence formulas rather than sequents.",
+      "required_translation_handling": "Replace the mistaken node type by sentences and add an adjacent OLTEND-001 note."
+    },
+    {
+      "finding_id": "OLTEND-002",
+      "unit_id": "OLP-0089",
+      "classification": "confirmed_wrong_rule_label_on_contradiction_step",
+      "source": {
+        "path": "content/first-order-logic/natural-deduction/proving-things.tex",
+        "bytes": 11062,
+        "sha256": "d39069643439c576cb5813ef635725ac09ef83257571e380b92dfa223a801ecc",
+        "locator": "lines 125-151"
+      },
+      "finding": "The intermediate tree combines not-A and A to false but labels the step with Intro{false} rather than Elim{not}.",
+      "controlling_evidence": "The immediately preceding prose explicitly names Elim{not}, the rule list defines that exact two-premise inference, and the later completed version of the same branch labels it Elim{not}.",
+      "required_translation_handling": "Use Elim{not} on that one tree step, retain all formulas and discharge labels, and add an adjacent OLTEND-002 note."
+    },
+    {
+      "finding_id": "OLTEND-003",
+      "unit_id": "OLP-0089",
+      "classification": "confirmed_sequent_calculus_term_in_natural_deduction_example",
+      "source": {
+        "path": "content/first-order-logic/natural-deduction/proving-things.tex",
+        "bytes": 11062,
+        "sha256": "d39069643439c576cb5813ef635725ac09ef83257571e380b92dfa223a801ecc",
+        "locator": "lines 62-69"
+      },
+      "finding": "The prose locates the principal sentence in an end-sequent even though this chapter's derivations have a conclusion sentence rather than a sequent.",
+      "controlling_evidence": "OLP-0085 and OLP-0088 define natural-deduction derivations as sentence trees with a bottommost conclusion; no sequent is introduced in this chapter.",
+      "required_translation_handling": "Refer to the sentence in the conclusion and add an adjacent OLTEND-003 note."
+    },
+    {
+      "finding_id": "OLTEND-004",
+      "unit_id": "OLP-0095",
+      "classification": "confirmed_wrong_semantic_object_in_propositional_tag_branch",
+      "source": {
+        "path": "content/first-order-logic/natural-deduction/soundness.tex",
+        "bytes": 13016,
+        "sha256": "8b90318e1a2ed38568fb61cd5529d496cdfd17f322fd9c731a194e2d08e0a4b9",
+        "locator": "lines 94-101"
+      },
+      "finding": "The structure noun is outside the FOL tag, whose non-FOL branch supplies a valuation symbol, producing the ill-typed phrase structure v in the propositional rendering.",
+      "controlling_evidence": "Every surrounding soundness case branches between an FOL structure M and a propositional valuation v, and the satisfaction macro in the same sentence is tag-selected accordingly.",
+      "required_translation_handling": "Move the structure token into the FOL branch, use native valuation wording in the propositional branch, preserve both symbols and add an adjacent OLTEND-004 note."
+    }
+  ]
+}

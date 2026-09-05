@@ -1,0 +1,122 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: propositional-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{prl}}
+      {\olfileid{pl}{ntd}{prl}}
+
+\olsection{ప్రతిపాదనాత్మక నియమాలు}
+
+
+\subsection{$\land$కు నియమాలు}
+
+\begin{defish}
+\AxiomC{$!A$}
+\AxiomC{$!B$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!A \land !B$}
+\DisplayProof
+\hfill
+\begin{tabular}{r}
+\AxiomC{$!A \land !B$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$!A$}
+\DisplayProof
+\\[3ex]
+\AxiomC{$!A \land !B$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$!B$}
+\DisplayProof
+\end{tabular}
+\end{defish}
+
+\subsection{$\lor$కు నియమాలు}
+
+\begin{defish}
+\begin{tabular}{r}
+\AxiomC{$!A$}
+\RightLabel{\Intro{\lor}}
+\UnaryInfC{$!A \lor !B$}
+\DisplayProof
+\\[3ex]
+\AxiomC{$!B$}
+\RightLabel{\Intro{\lor}}
+\UnaryInfC{$!A \lor !B$}
+\DisplayProof
+\end{tabular}
+\hfill
+\AxiomC{$!A \lor !B$}
+\AxiomC{$\Discharge{!A}{n}$}
+\DeduceC{$!C$}
+\AxiomC{$\Discharge{!B}{n}$}
+\DeduceC{$!C$}
+\DischargeRule{\Elim{\lor}}{n}
+\TrinaryInfC{$!C$}
+\DisplayProof
+\end{defish}
+
+\subsection{$\lif$కు నియమాలు}
+
+\begin{defish}
+\AxiomC{$\Discharge{!A}{n}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{n}
+\UnaryInfC{$!A \lif !B$}
+\DisplayProof
+\hfill
+\AxiomC{$!A \lif !B$}
+\AxiomC{$!A$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!B$}
+\DisplayProof
+\end{defish}
+
+\subsection{$\lnot$కు నియమాలు}
+
+\begin{defish}
+\AxiomC{$\Discharge{!A}{n}$}
+\noLine
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{n}
+\UnaryInfC{$\lnot !A$}
+\DisplayProof
+\hfill
+\AxiomC{$\lnot !A$}
+\AxiomC{$!A$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\DisplayProof
+\end{defish}
+
+\subsection{$\lfalse$కు నియమాలు}
+
+\begin{defish}
+\AxiomC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!A$}
+\DisplayProof
+\hfill
+\AxiomC{$\Discharge{\lnot !A}{n}$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\FalseCl}{n}
+\UnaryInfC{$!A$}
+\DisplayProof
+\end{defish}
+
+$\Intro{\lnot}$, $\FalseCl$ చాలా పోలి ఉన్నాయని గమనించండి: తేడా
+ఏమిటంటే $\Intro{\lnot}$ నిషేధిత !!{sentence}~$\lnot !A$ను
+నిగమిస్తుంది; కానీ $\FalseCl$ ధనాత్మక !!{sentence}~$!A$ను
+నిగమిస్తుంది.
+
+ఒక నియమం ఏదైనా పరికల్పనను ఉపసంహరించవచ్చని సూచించినప్పుడల్లా దాన్ని
+అనుమతిగానే తీసుకుంటాం, తప్పనిసరి షరతుగా కాదు. ఉదాహరణకు,
+$\Intro{\lif}$ నియమంలో పూర్వాధారం~$!B$ యొక్క !!{derivation}లోని
+$!A$ రూపపు పరికల్పనలను ఎన్నింటినైనా---ఒక్కదాన్నీ కాకపోయినా---
+ఉపసంహరించవచ్చు.
+
+\end{document}

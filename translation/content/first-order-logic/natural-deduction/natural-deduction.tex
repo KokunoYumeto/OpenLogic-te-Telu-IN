@@ -1,0 +1,55 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+
+\documentclass[../../../include/open-logic-chapter]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olchapter{fol}{ntd}{సహజ నిగమనం}}
+      {\olchapter{pl}{ntd}{సహజ నిగమనం}}
+
+\begin{editorial}
+ఈ అధ్యాయం గెంట్సెన్/ప్రావిట్జ్ శైలిలోని సహజ నిగమన వ్యవస్థను
+పరిచయం చేస్తుంది.
+
+నిరూపణ వ్యవస్థగా సహజ నిగమనానికి సంబంధించిన విషయాన్ని చేర్చడానికి
+లేదా మినహాయించడానికి ``prfND'' ట్యాగ్‌ను ఉపయోగించండి.
+\end{editorial}
+
+\olimport{rules-and-proofs}
+
+\olimport{propositional-rules}
+
+\iftag{FOL}{%
+  \olimport{quantifier-rules}
+}{}
+
+\olimport{derivations}
+
+\olimport{proving-things}
+
+\iftag{FOL}{%
+  \olimport{proving-things-quant}
+}{}
+
+\olimport{proof-theoretic-notions}
+
+\olimport{provability-consistency}
+
+\olimport{provability-propositional}
+
+\iftag{FOL}{%
+  \olimport{provability-quantifiers}
+}{}
+
+\olimport{soundness}
+
+\iftag{FOL}{%
+  \olimport{identity}
+  \olimport{soundness-identity}
+}{}
+
+\OLEndChapterHook
+
+\end{document}

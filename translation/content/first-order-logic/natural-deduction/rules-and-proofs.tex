@@ -1,0 +1,53 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: rules-and-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{rul}}
+      {\olfileid{pl}{ntd}{rul}}
+
+\olsection{నియమాలు మరియు \usetoken{P}{derivation}}
+
+\begin{explain}
+సహజ నిగమన వ్యవస్థలు గణిత నిరూపణలో ఉపయోగించే అనౌపచారిక తార్కిక
+ఆలోచనను దగ్గరగా అనుసరించడానికి ఉద్దేశించినవి (అందుకే అవి కొంతవరకు
+“సహజమైనవి”). సహజ నిగమన నిరూపణలు పరికల్పనలతో మొదలవుతాయి. తరువాత
+నిగమన నియమాలను వర్తింపజేస్తాం. \Intro{\lnot}, \Intro{\lif},
+\iftag{FOL}{\Elim{\lor}, \Elim{\lexists}}{\Elim{\lor}} నిగమన
+నియమాలు పరికల్పనలను “!!{discharged}” చేస్తాయి; స్పష్టత కోసం
+!!{discharged} అయిన పరికల్పన గుర్తును ఆ నిగమనం పక్కన పెడతాం.
+\end{explain}
+
+\begin{defn}[పరికల్పన]
+ఏ శాఖలోనైనా అన్నిటికంటే పైనున్న స్థానంలోని ఏ !!{sentence}నైనా
+\emph{పరికల్పన} అంటాం.
+\end{defn}
+
+సహజ నిగమనంలోని !!^{derivation}s కొన్ని !!{sentence}s వృక్షాలు.
+అందులో అన్నిటికంటే పైనున్న !!{sentence}s పరికల్పనలు; ఒక !!a{sentence}
+ఒకటి, రెండు లేదా మూడు ఇతర వాక్యాల కింద ఉంటే, అది నిగమన నియమం
+ద్వారా సరిగ్గా రావాలి. నిగమనం పైనున్న !!{sentence}sను దాని
+\emph{పూర్వాధారాలు} అనీ, కిందున్న !!{sentence}ను దాని
+\emph{నిష్కర్ష} అనీ అంటాం. ప్రతి !!{operator}కు ఒక ప్రవేశ నియమం,
+ఒక తొలగింపు నియమం చొప్పున నియమాలు జతలుగా వస్తాయి. అవి నిష్కర్షలో
+ఒక !!a{operator}ను ప్రవేశపెడతాయి లేదా నియమపు పూర్వాధారం నుంచి ఒక
+!!a{operator}ను తొలగిస్తాయి. కొన్ని నియమాలు ఒక నిర్దిష్ట రకపు
+పరికల్పనను \emph{!!{discharged}} చేయనిస్తాయి. ఏ నిగమనం ఏ పరికల్పనను
+!!{discharged} చేస్తుందో సూచించడానికి పరికల్పనకూ నిగమనానికీ గుర్తులు
+పెడతాం. పరికల్పనను ``$\Discharge{!A}{n}$'' అని రాసి దీన్ని సూచిస్తాం.
+\sourcecorrection{OLTEND-001}{మూల నిర్వచనం ఇక్కడ “ఇతర సీక్వెంట్ల”ని
+అంటుంది; ఈ వృక్షపు నోడ్‌లు వాక్యాలేనని అదే పేరా, పూర్వాధారాల నిర్వచనం
+నిర్ణయిస్తున్నందున “ఇతర వాక్యాల”గా సరిచేశాం.}
+
+% Only include this sentence is on of \land, lor, lif or lnot is defined.
+
+\iftag{notprvNot,notprvAnd,notprvOr,notprvIf}{}%
+	{$\land$, $\lor$, $\lif$, $\lnot$, $\lfalse$లలో కొన్ని నిర్వచితమైనవైనా, అన్ని !!{operator}sకు నియమాలను పరిగణించడం ఆచారం.}
+
+
+
+\end{document}
