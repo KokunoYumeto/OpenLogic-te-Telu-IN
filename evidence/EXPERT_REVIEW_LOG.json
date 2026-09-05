@@ -1,22 +1,22 @@
 {
   "schema": "openlogic-te-expert-review-index/2",
   "status": "partial_no_holds",
-  "scope_completion": "partial_94_of_722_draft_units",
+  "scope_completion": "partial_108_of_722_draft_units",
   "language": "Telugu",
   "script": "Telu",
   "locale": "te-Telu-IN",
   "counts": {
-    "records": 88,
-    "terminology": 38,
-    "source_corrections": 50,
-    "implementation_occurrences": 168
+    "records": 101,
+    "terminology": 39,
+    "source_corrections": 62,
+    "implementation_occurrences": 187
   },
   "pagination_note": "Final printed/PDF page is deliberately null until the cited source unit is integrated into the coherent reader and final pagination is available. Source and target file/line locators are authoritative meanwhile.",
   "records": [
     {
       "review_id": "REV-TE-T001",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -65,7 +65,7 @@
         "No separate alternative was recorded in the primary decision; retain the current reversible wording unless a specialist supplies a source-grounded replacement."
       ],
       "uncertainty": "Not separately graded in the original record; evidence status is attested, and optional specialist review remains open.",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “సమితి” is idiomatic and technically standard for “set” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -75,7 +75,7 @@
     {
       "review_id": "REV-TE-T002",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -134,7 +134,7 @@
         "సభ్యము (documented synonym)"
       ],
       "uncertainty": "Low for membership noun; synonym is editorial",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “మూలకం” is idiomatic and technically standard for “element/member of a set” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -144,7 +144,7 @@
     {
       "review_id": "REV-TE-T003",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -203,7 +203,7 @@
         "English-headword transliteration (not adopted)"
       ],
       "uncertainty": "High nomenclatural; mathematical definition fixed",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “మూలకాధారిత సమానత్వం” is idiomatic and technically standard for “extensionality” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -213,7 +213,7 @@
     {
       "review_id": "REV-TE-T004",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -281,7 +281,7 @@
         "క్రమ ఉపసమితి (TE-P009 witness form)"
       ],
       "uncertainty": "Low for subset; medium for selected proper-subset variant",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “ఉపసమితి / నిజ ఉపసమితి” is idiomatic and technically standard for “subset / proper subset” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -291,7 +291,7 @@
     {
       "review_id": "REV-TE-T005",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -349,7 +349,7 @@
         "No separate alternative was recorded in the primary decision; retain the current reversible wording unless a specialist supplies a source-grounded replacement."
       ],
       "uncertainty": "Low",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “ఘాత సమితి” is idiomatic and technically standard for “power set” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -359,7 +359,7 @@
     {
       "review_id": "REV-TE-T006",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -417,7 +417,7 @@
         "No separate alternative was recorded in the primary decision; retain the current reversible wording unless a specialist supplies a source-grounded replacement."
       ],
       "uncertainty": "Not separately graded in the original record; evidence status is attested, and optional specialist review remains open.",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “నిరూపణ / సిద్ధాంతం” is idiomatic and technically standard for “proof / theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -427,7 +427,7 @@
     {
       "review_id": "REV-TE-T007",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -476,7 +476,7 @@
         "No separate alternative was recorded in the primary decision; retain the current reversible wording unless a specialist supplies a source-grounded replacement."
       ],
       "uncertainty": "Not separately graded in the original record; evidence status is attested, and optional specialist review remains open.",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “తర్కం” is idiomatic and technically standard for “logic” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -486,7 +486,7 @@
     {
       "review_id": "REV-TE-T008",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -592,7 +592,7 @@
         "No separate alternative was recorded in the primary decision; retain the current reversible wording unless a specialist supplies a source-grounded replacement."
       ],
       "uncertainty": "Not separately graded in the original record; evidence status is attested_with_source_convention, and optional specialist review remains open.",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “సహజ సంఖ్య / పూర్ణ సంఖ్య / ధన పూర్ణ సంఖ్య” is idiomatic and technically standard for “natural number / integer / positive integer” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -602,7 +602,7 @@
     {
       "review_id": "REV-TE-T009",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -723,7 +723,7 @@
         "No separate alternative was recorded in the primary decision; retain the current reversible wording unless a specialist supplies a source-grounded replacement."
       ],
       "uncertainty": "Medium; reversible terminology decisions",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “శూన్య సమితి / సమ్మేళనం / ఛేదనం / భేదం / వియుక్త” is idiomatic and technically standard for “empty set / union / intersection / difference / disjoint” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -733,7 +733,7 @@
     {
       "review_id": "REV-TE-T010",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -797,7 +797,7 @@
         "No separate alternative was recorded in the primary decision; retain the current reversible wording unless a specialist supplies a source-grounded replacement."
       ],
       "uncertainty": "Not separately graded in the original record; evidence status is attested, and optional specialist review remains open.",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “కరణీయ సంఖ్య / అకరణీయ సంఖ్య / వాస్తవ సంఖ్య” is idiomatic and technically standard for “rational / irrational / real number” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -807,7 +807,7 @@
     {
       "review_id": "REV-TE-T011",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -889,7 +889,7 @@
         "No separate alternative was recorded in the primary decision; retain the current reversible wording unless a specialist supplies a source-grounded replacement."
       ],
       "uncertainty": "Low for finite/infinite concepts; medium-high for formal-language terminology",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “పరిమిత / అనంత (witness synonym అపరిమిత) / సంకేతమాల / క్రమం / వర్ణమాల” is idiomatic and technically standard for “finite / infinite / string / sequence / alphabet” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -899,7 +899,7 @@
     {
       "review_id": "REV-TE-T012",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -998,7 +998,7 @@
         "tuple transliteration (not adopted for the generalization)"
       ],
       "uncertainty": "High nomenclatural, definitions exact",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “క్రమిత జత / క్రమిత బహుళకం / కార్టీజియన్ లబ్ధం” is idiomatic and technically standard for “ordered pair / tuple / Cartesian product” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -1008,7 +1008,7 @@
     {
       "review_id": "REV-TE-T013",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1105,7 +1105,7 @@
         "No separate alternative was recorded in the primary decision; retain the current reversible wording unless a specialist supplies a source-grounded replacement."
       ],
       "uncertainty": "High nomenclatural; keep existence-versus-uniqueness and reductio content fixed",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “రసెల్ వైరుధ్యం / విరోధం / ధర్మసంగ్రహం / స్వీకృతం” is idiomatic and technically standard for “Russell's paradox / contradiction / comprehension / axiom” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -1115,7 +1115,7 @@
     {
       "review_id": "REV-TE-T014",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1197,7 +1197,7 @@
         "No separate alternative was recorded in the primary decision; retain the current reversible wording unless a specialist supplies a source-grounded replacement."
       ],
       "uncertainty": "Medium-high; native specialist canon expansion remains required",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “పరిపూర్ణ సంఖ్య / నిజ భాజకం / అవిచ్ఛిన్న సమితి / ఆగమనం / పునరావృత్త” is idiomatic and technically standard for “perfect number / proper divisor / continuum / induction / recursive” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -1207,7 +1207,7 @@
     {
       "review_id": "REV-TE-T015",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1328,7 +1328,7 @@
         "No separate alternative was recorded in the primary decision; retain the current reversible wording unless a specialist supplies a source-grounded replacement."
       ],
       "uncertainty": "Not separately graded in the original record; evidence status is attested_headwords_with_descriptive_binary_modifier, and optional specialist review remains open.",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “ద్విస్థానిక సంబంధం / ప్రవేశం / వ్యాప్తి / ప్రమేయం / విలోమం / సంయుక్తం” is idiomatic and technically standard for “binary relation / domain / range / function / inverse / composition” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -1338,7 +1338,7 @@
     {
       "review_id": "REV-TE-T016",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1495,7 +1495,7 @@
         "No separate alternative was recorded in the primary decision; retain the current reversible wording unless a specialist supplies a source-grounded replacement."
       ],
       "uncertainty": "Not separately graded in the original record; evidence status is provisional_formal_senses, and optional specialist review remains open.",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “స్వావర్తన / సంక్రామక / సౌష్ఠవ / ప్రతిసౌష్ఠవ / అస్వావర్తన / ఏకదిశ / సంయుక్త” is idiomatic and technically standard for “reflexive / transitive / symmetric / antisymmetric / irreflexive / asymmetric / connected” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -1505,7 +1505,7 @@
     {
       "review_id": "REV-TE-T017",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1647,7 +1647,7 @@
         "No separate alternative was recorded in the primary decision; retain the current reversible wording unless a specialist supplies a source-grounded replacement."
       ],
       "uncertainty": "Not separately graded in the original record; evidence status is provisional_formal_senses, and optional specialist review remains open.",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “తాదాత్మ్య / తుల్యతా సంబంధం / తుల్యతా వర్గం / వర్గీకృత సమితి / పూర్వక్రమం / పాక్షిక క్రమం / రేఖీయ క్రమం / కఠిన క్రమం” is idiomatic and technically standard for “identity / equivalence relation / equivalence class / quotient / preorder / partial order / linear order / strict order” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -1657,7 +1657,7 @@
     {
       "review_id": "REV-TE-T018",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1745,7 +1745,7 @@
         "No separate alternative was recorded in the primary decision; retain the current reversible wording unless a specialist supplies a source-grounded replacement."
       ],
       "uncertainty": "Not separately graded in the original record; evidence status is provisional_philosophical_senses, and optional specialist review remains open.",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “విధేయం / ప్రవచనం / ఏకవస్తు పదం / సమితి-సిద్ధాంత సంక్షేపణవాదం / అధిభౌతిక తాదాత్మ్యం” is idiomatic and technically standard for “predicate / proposition / singular term / set-theoretic reductionism / metaphysical identity” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -1755,7 +1755,7 @@
     {
       "review_id": "REV-TE-T019",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1853,7 +1853,7 @@
         "fully native graph/node replacements (not located in checked witnesses)"
       ],
       "uncertainty": "Not separately graded in the original record; evidence status is provisional_senses_with_explicit_borrowing, and optional specialist review remains open.",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “గ్రాఫు / శీర్షం / అంచు / వృక్షం / వృక్షమూలం / శాఖ / సుక్రమం / ఉత్తరవర్తి / పూర్వవర్తి” is idiomatic and technically standard for “graph / vertex / edge / tree / root / branch / well-order / successor / predecessor” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -1863,7 +1863,7 @@
     {
       "review_id": "REV-TE-T020",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -1936,7 +1936,7 @@
         "No separate alternative was recorded in the primary decision; retain the current reversible wording unless a specialist supplies a source-grounded replacement."
       ],
       "uncertainty": "Not separately graded in the original record; evidence status is provisional_formal_senses, and optional specialist review remains open.",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “సూత్రం / నిష్పాదన / ప్రవచన తర్కం / ప్రథమక్రమ తర్కం / సంపూర్ణత / గణనీయత” is idiomatic and technically standard for “formula / derivation / propositional logic / first-order logic / completeness / computability” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -1946,7 +1946,7 @@
     {
       "review_id": "REV-TE-T021",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2058,7 +2058,7 @@
         "No separate alternative was recorded in the primary decision; retain the current reversible wording unless a specialist supplies a source-grounded replacement."
       ],
       "uncertainty": "Not separately graded in the original record; evidence status is provisional_descriptive_senses, and optional specialist review remains open.",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “సంవృతం / పరిమితం చేసిన సంబంధం / వర్తింపజేసిన ఫలితం / సాపేక్ష లబ్ధం” is idiomatic and technically standard for “closure / restriction / relational image / relative product” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -2068,7 +2068,7 @@
     {
       "review_id": "REV-TE-T022",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2126,7 +2126,7 @@
         "No separate alternative was recorded in the primary decision; retain the current reversible wording unless a specialist supplies a source-grounded replacement."
       ],
       "uncertainty": "Not separately graded in the original record; evidence status is mixed_attested_and_provisional_with_explicit_borrowing, and optional specialist review remains open.",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “సహప్రవేశం / ప్రతిచిత్రణం / ఆర్గ్యుమెంట్ / విలువ” is idiomatic and technically standard for “codomain / mapping / argument / value” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -2136,7 +2136,7 @@
     {
       "review_id": "REV-TE-T023",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2225,7 +2225,7 @@
         "an established specialist injective headword, if documented"
       ],
       "uncertainty": "Medium for nomenclature; grammatical realization of article/capitalization/plural tokens belongs to the reader, which is not built yet.",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “ఒకటి-ఒకటి / సంగ్రస్త / ద్విగుణ; corresponding ప్రమేయం nouns” is idiomatic and technically standard for “injective / surjective / bijective; injection / surjection / bijection” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -2235,7 +2235,7 @@
     {
       "review_id": "REV-TE-T024",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2339,7 +2339,7 @@
         "a documented Telugu formal-relation headword, if one exists"
       ],
       "uncertainty": "Not separately graded in the original record; evidence status is provisional_formal_senses_with_explicit_borrowing, and optional specialist review remains open.",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “పాక్షిక / సర్వత్ర నిర్వచిత / నిర్వచిత / అనిర్వచిత / సునిర్వచిత / సీరియల్ / ఎడమ విలోమం / కుడి విలోమం / ఎంపిక స్వీకృతం” is idiomatic and technically standard for “partial / total / defined / undefined / well-defined / serial / left inverse / right inverse / Axiom of Choice” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -2349,7 +2349,7 @@
     {
       "review_id": "REV-TE-T025",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2399,7 +2399,7 @@
         "తత్సమ ప్రమేయం (TE-P015 witness form)"
       ],
       "uncertainty": "Not separately graded in the original record; evidence status is constant_attested_identity_selected_variant, and optional specialist review remains open.",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “స్థిర ప్రమేయం / తాదాత్మ్య ప్రమేయం” is idiomatic and technically standard for “constant function / identity function” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -2409,7 +2409,7 @@
     {
       "review_id": "REV-TE-T026",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2484,7 +2484,7 @@
         "జాబితా చేయదగిన / చేయలేని (retained as explanatory gloss)"
       ],
       "uncertainty": "Medium nomenclatural; definitions and formulas exact",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “లెక్కింపు / లెక్కించదగిన / లెక్కించలేని / లెక్కించదగినతనం” is idiomatic and technically standard for “enumeration / enumerable / nonenumerable / countability” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -2494,7 +2494,7 @@
     {
       "review_id": "REV-TE-T027",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2577,7 +2577,7 @@
         "తుల్య సమితులు (TE-P016 witness expression for the finite concept)"
       ],
       "uncertainty": "Low for finite concept, medium for selected headword and infinite extension",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “సమసంఖ్యాక / సమసంఖ్యాకత / సమితి పరిమాణం / పరిమాణంలో మించని / పరిమాణంలో చిన్నది” is idiomatic and technically standard for “equinumerous / equinumerosity / cardinality / no larger than / smaller than” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -2587,7 +2587,7 @@
     {
       "review_id": "REV-TE-T028",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2724,7 +2724,7 @@
         "source-eponym transliterations for Cantor and Schröder–Bernstein (retained)"
       ],
       "uncertainty": "High nomenclatural; mathematical content fixed",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “కాంటర్ జిగ్‌జాగ్ పద్ధతి / జతీకరణ ప్రమేయం / సంకేతీకరించు / సంకేత సంఖ్య / కాంటర్ వికర్ణ పద్ధతి / వికర్ణీకరణ / సమస్యా తగ్గింపు / ష్రోడర్–బెర్న్‌స్టైన్” is idiomatic and technically standard for “Cantor zig-zag / pairing function / encode / code / diagonal method / diagonalization / reduction / Schröder-Bernstein” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -2734,7 +2734,7 @@
     {
       "review_id": "REV-TE-T029",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2842,7 +2842,7 @@
         "source-eponym-free explanatory paraphrases (used where needed)"
       ],
       "uncertainty": "Low for number classes; high nomenclatural for arithmetization and algebraic structures",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “అంకగణితీకరణ / అంతఃస్థాపన / వినిమయ వలయం / క్రమిత వలయం / క్రమిత క్షేత్రం” is idiomatic and technically standard for “arithmetization / embedding / commutative ring / ordered ring / ordered field” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -2852,7 +2852,7 @@
     {
       "review_id": "REV-TE-T030",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -2960,7 +2960,7 @@
         "untranslated English analysis terminology (not adopted in prose)"
       ],
       "uncertainty": "High nomenclatural; formal meanings and inequalities fixed",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “ఊర్ధ్వ అవధి / కనిష్ఠ ఊర్ధ్వ అవధి / గరిష్ఠ అధో అవధి / సంపూర్ణతా ధర్మం / డెడెకిండ్ కోత / ఆద్య ఖండం / కౌషీ క్రమం / పరిమితి” is idiomatic and technically standard for “upper bound / least upper bound / greatest lower bound / Completeness Property / Dedekind cut / initial segment / Cauchy sequence / limit” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -2970,7 +2970,7 @@
     {
       "review_id": "REV-TE-T031",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3108,7 +3108,7 @@
         "untranslated English structure terminology (not adopted in prose)"
       ],
       "uncertainty": "Low for broad infinite-set and induction register; high nomenclatural for the Dedekind, closure and isomorphism headwords",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “డెడెకిండ్ అనంతం / డెడెకిండ్ బీజగణితం / f-సంవృతం / అంకగణిత ఆగమనం / సమరూపం” is idiomatic and technically standard for “Dedekind infinite / Dedekind algebra / f-closed / arithmetical induction / isomorphic” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -3118,7 +3118,7 @@
     {
       "review_id": "REV-TE-T032",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3247,7 +3247,7 @@
         "protected source-token spellings inside macros (retained for source identity)"
       ],
       "uncertainty": "Low for broad logic and proof register; high nomenclatural for the selected formal-syntax headwords",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “వాక్యనిర్మాణం / అర్థవిచారం / ప్రవచన చరరాశి / తార్కిక సంయోజకం / నిషేధం / సంయోగం / వికల్పం / షరతీయ సంయోజకం / ద్విషరతీయ సంయోజకం / పరమాణు సూత్రం / వాక్యనిర్మాణ తాదాత్మ్యం / నిర్మాణ క్రమం / ఏకైక పఠనీయత / ఏకరీతి ప్రతిస్థాపన” is idiomatic and technically standard for “syntax / semantics / propositional variable / logical connective / negation / conjunction / disjunction / conditional / biconditional / atomic formula / syntactic identity / formation sequence / unique readability / uniform substitution” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -3257,7 +3257,7 @@
     {
       "review_id": "REV-TE-T033",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3380,7 +3380,7 @@
         "protected source-token spellings inside macros (retained for source identity)"
       ],
       "uncertainty": "Low for truth/falsity register; high nomenclatural for the formal semantic headwords",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “సత్యమూల్యం / మూల్యనిర్ణయం / మూల్యాంకనం / సంతృప్తి / సర్వసత్యం / అర్థపర అనుగమనం / సంతృప్తిపరచదగిన / సంతృప్తిపరచలేని / పరిస్థిత్యాధీన / స్థానిక నిర్ణయితత్వం / అర్థపర నిగమన సిద్ధాంతం” is idiomatic and technically standard for “truth value / valuation / evaluation / satisfaction / tautology / entailment / satisfiable / unsatisfiable / contingent / Local Determination / Semantic Deduction Theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -3390,7 +3390,7 @@
     {
       "review_id": "REV-TE-T034",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3489,7 +3489,7 @@
         "protected source-token spellings inside macros (retained for source identity)"
       ],
       "uncertainty": "Low for theorem, proof and broad deduction register; high nomenclatural for derivability, soundness and consistency headwords",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “నిగమన వ్యవస్థ / నిగమించదగిన / సిద్ధాంతం / చెల్లుబాటుతనం / నిర్దుష్టత / సంపూర్ణత / అవైరుధ్యం / వైరుధ్యం / స్వీకృతం / నిగమన నియమం” is idiomatic and technically standard for “derivation system / derivable / theorem / validity / soundness / completeness / consistency / inconsistency / axiom / inference rule” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -3499,7 +3499,7 @@
     {
       "review_id": "REV-TE-T035",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3643,7 +3643,7 @@
         "untranslated English prose terminology (not adopted outside protected tokens and titles)"
       ],
       "uncertainty": "Low for the broad proof register; high nomenclatural for the named proof formalisms and rule headwords",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “సీక్వెంట్ / సీక్వెంట్ కలనం / సహజ నిగమనం / ప్రవేశ నియమం / తొలగింపు నియమం / పరికల్పన / ఉపసంహరణ / టాబ్లో / చిహ్నిత సూత్రం / సంవృత శాఖ / వివృత శాఖ / స్వీకృతాధారిత నిగమనం / స్వీకృత నమూనా / మోడస్ పోనెన్స్ / రిజల్యూషన్ / నిరూపణ-సిద్ధాంత అర్థవిచారం” is idiomatic and technically standard for “sequent / sequent calculus / natural deduction / introduction rule / elimination rule / assumption / discharge / tableau / signed formula / closed branch / open branch / axiomatic derivation / axiom schema / modus ponens / resolution / proof-theoretic semantics” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -3653,7 +3653,7 @@
     {
       "review_id": "REV-TE-T036",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3842,7 +3842,7 @@
         "replace the established sequent borrowing with a longer descriptive phrase (not adopted)"
       ],
       "uncertainty": "Low for broad rule/proof exposition; high nomenclatural for the sequent-specific headwords",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “పూర్వాంగం / ఉత్తరాంగం / ప్రారంభ సీక్వెంట్ / అంత్య సీక్వెంట్ / తార్కిక నియమం / నిర్మాణాత్మక నియమం / ఐగెన్ చరరాశి / బలహీనీకరణ / సంకోచనం / మార్పిడి / కట్” is idiomatic and technically standard for “antecedent / succedent / initial sequent / end-sequent / logical rule / structural rule / eigenvariable / weakening / contraction / exchange / cut” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -3852,7 +3852,7 @@
     {
       "review_id": "REV-TE-T037",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -3966,7 +3966,7 @@
         "an alternative specialist term for compactness if a Telugu logic authority documents one"
       ],
       "uncertainty": "Low for cross-chapter consistency; high nomenclatural for proof-theoretic compactness",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “స్వావర్తనత్వం / ఏకదిశత / సంక్రామకత్వం / సంహతత్వం” is idiomatic and technically standard for “reflexivity / monotonicity / transitivity / compactness (of derivability)” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -3976,7 +3976,7 @@
     {
       "review_id": "REV-TE-T038",
       "record_type": "terminology_or_sense_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4075,7 +4075,7 @@
         "retain the source token spellings only inside protected grammatical macros (chosen for source identity)"
       ],
       "uncertainty": "Low for cross-chapter consistency and broad proof prose; high nomenclatural for the formal discharge and subderivation headwords",
-      "rationale_phase": "Retrospective reconstruction on 2026-09-04 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
       "precise_review_questions": [
         "Please double-check whether “పరికల్పన / పూర్వాధారం / నిష్కర్ష / ప్రవేశ నియమం / తొలగింపు నియమం / ఉపసంహరించిన / ఉపసంహరించని / ఉప-నిరూపణ” is idiomatic and technically standard for “assumption / premise / conclusion / introduction rule / elimination rule / discharged / undischarged / subderivation” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
         "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
@@ -4083,9 +4083,179 @@
       "translation_hold": false
     },
     {
+      "review_id": "REV-TE-T039",
+      "record_type": "terminology_or_sense_decision",
+      "scope_completion": "partial_108_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "term_id": "TE-T039",
+      "source_term": "signed formula / truth-value sign / tableau / closed branch / open branch / checkmark / eigenvariable condition / cut rule",
+      "chosen_wording": "చిహ్నిత సూత్రం / సత్యమూల్య సంకేతం / టాబ్లో / సంవృత శాఖ / వివృత శాఖ / తనిఖీ గుర్తు / ఐగెన్ చరరాశి షరతు / కట్ నియమం",
+      "chosen_sense": "The precise extension is fixed by the adjacent OpenLogic definition and formulas.",
+      "evidence_status": "proof_register_attested_tableau_specific_senses_definition_controlled_explicit_borrowings",
+      "confidence": "mixed_provisional",
+      "review_priority": "high",
+      "expert_review_status": "provisional_pending_optional_specialist_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0099",
+          "section_path": "first-order-logic/tableaux/rules-and-proofs",
+          "source_file": "content/first-order-logic/tableaux/rules-and-proofs.tex",
+          "target_file": "translation/content/first-order-logic/tableaux/rules-and-proofs.tex",
+          "segment_id": "OLP-0099-B006",
+          "source_locator": "content/first-order-logic/tableaux/rules-and-proofs.tex:15-25",
+          "target_locator": "translation/content/first-order-logic/tableaux/rules-and-proofs.tex:15-25",
+          "source_unit_sha256": "312d16775a4a86acf5772c8d02db03233101014ef0ee9a77e3c39b5ca6815a8c",
+          "translation_unit_sha256": "b08d4419d59b0317d06c4a98e23b159eea304892f0c4ff410eed6e35ba1f59d7",
+          "source_segment_sha256": "9abd9278959b403d86306ed12d646b9a1e66c01dd898c3165a4daeaa66a80165",
+          "translation_segment_sha256": "a9aafd3269e593731a326ec7324f295a07410f0c6dce8c54e6759e614c59e035",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0099",
+          "section_path": "first-order-logic/tableaux/rules-and-proofs",
+          "source_file": "content/first-order-logic/tableaux/rules-and-proofs.tex",
+          "target_file": "translation/content/first-order-logic/tableaux/rules-and-proofs.tex",
+          "segment_id": "OLP-0099-B006",
+          "source_locator": "content/first-order-logic/tableaux/rules-and-proofs.tex:15-25",
+          "target_locator": "translation/content/first-order-logic/tableaux/rules-and-proofs.tex:15-25",
+          "source_unit_sha256": "312d16775a4a86acf5772c8d02db03233101014ef0ee9a77e3c39b5ca6815a8c",
+          "translation_unit_sha256": "b08d4419d59b0317d06c4a98e23b159eea304892f0c4ff410eed6e35ba1f59d7",
+          "source_segment_sha256": "9abd9278959b403d86306ed12d646b9a1e66c01dd898c3165a4daeaa66a80165",
+          "translation_segment_sha256": "a9aafd3269e593731a326ec7324f295a07410f0c6dce8c54e6759e614c59e035",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0099",
+          "section_path": "first-order-logic/tableaux/rules-and-proofs",
+          "source_file": "content/first-order-logic/tableaux/rules-and-proofs.tex",
+          "target_file": "translation/content/first-order-logic/tableaux/rules-and-proofs.tex",
+          "segment_id": "OLP-0099-B010",
+          "source_locator": "content/first-order-logic/tableaux/rules-and-proofs.tex:44-50",
+          "target_locator": "translation/content/first-order-logic/tableaux/rules-and-proofs.tex:44-49",
+          "source_unit_sha256": "312d16775a4a86acf5772c8d02db03233101014ef0ee9a77e3c39b5ca6815a8c",
+          "translation_unit_sha256": "b08d4419d59b0317d06c4a98e23b159eea304892f0c4ff410eed6e35ba1f59d7",
+          "source_segment_sha256": "3d3382d5bc942a2b9d517741206d003916e435480f7a26cdefd530ea75a77107",
+          "translation_segment_sha256": "d7c4199ffdf96e2e8fd0df4f2a05e6d70923c1334177bc1c308aaa0afe2cbe6b",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0102",
+          "section_path": "first-order-logic/tableaux/derivations",
+          "source_file": "content/first-order-logic/tableaux/derivations.tex",
+          "target_file": "translation/content/first-order-logic/tableaux/derivations.tex",
+          "segment_id": "OLP-0102-B007",
+          "source_locator": "content/first-order-logic/tableaux/derivations.tex:34-39",
+          "target_locator": "translation/content/first-order-logic/tableaux/derivations.tex:35-40",
+          "source_unit_sha256": "2cb9a2b6c144eb8b53c4a4d9c52daab60bcd3491dbc909cdd5ccf42300fe5452",
+          "translation_unit_sha256": "6d20e898e0b215f5140ee8d19b434bdf7aa8ec64c0ed257efbf9d6711339701a",
+          "source_segment_sha256": "52fc69957a841c5815fe237cd08a4a916291a8ac59bab8e2f3116da85ff5f80c",
+          "translation_segment_sha256": "2b2612048f25abb6c5908be4d3b0ec78e56a11f671fc2dd7a2d5a96f00274339",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0103",
+          "section_path": "first-order-logic/tableaux/proving-things",
+          "source_file": "content/first-order-logic/tableaux/proving-things.tex",
+          "target_file": "translation/content/first-order-logic/tableaux/proving-things.tex",
+          "segment_id": "OLP-0103-B008",
+          "source_locator": "content/first-order-logic/tableaux/proving-things.tex:39-47",
+          "target_locator": "translation/content/first-order-logic/tableaux/proving-things.tex:39-47",
+          "source_unit_sha256": "6940ff2f8466cfb9dc740a4e7aa2cf9551c9a3d3304aa8ebe93217d11e451e90",
+          "translation_unit_sha256": "45857b20ada030b996cdeb4bdec03f89562352f64e4d18f1b765959498713ee5",
+          "source_segment_sha256": "2d53c5d3ba64750bae8d907df6724676b58119ecf183155b06ab758ce4eed3ce",
+          "translation_segment_sha256": "2ef363002bed4c2d8c749a4f9caf6d3362ff6d07256944730f1118dea137703b",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0101",
+          "section_path": "first-order-logic/tableaux/quantifier-rules",
+          "source_file": "content/first-order-logic/tableaux/quantifier-rules.tex",
+          "target_file": "translation/content/first-order-logic/tableaux/quantifier-rules.tex",
+          "segment_id": "OLP-0101-B012",
+          "source_locator": "content/first-order-logic/tableaux/quantifier-rules.tex:27-55",
+          "target_locator": "translation/content/first-order-logic/tableaux/quantifier-rules.tex:27-56",
+          "source_unit_sha256": "682b3f1de2569dc63657243b83a3daa8966cc1786fa44d5d2fa34da2658e2bb0",
+          "translation_unit_sha256": "2be1ff9d3eddbf5eb91c9f2eccfae75f801ecabf60db2ae03ae6bee83a190d5c",
+          "source_segment_sha256": "0371ec61649c528ed8f6cbf7cb1370adb233b1305e86c743d6641c793e1a281b",
+          "translation_segment_sha256": "727e33576c0a9d1669b7e941f2c4d18dbee82c70900461266e3cd36ee8403a3f",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        },
+        {
+          "unit_id": "OLP-0100",
+          "section_path": "first-order-logic/tableaux/propositional-rules",
+          "source_file": "content/first-order-logic/tableaux/propositional-rules.tex",
+          "target_file": "translation/content/first-order-logic/tableaux/propositional-rules.tex",
+          "segment_id": "OLP-0100-B014",
+          "source_locator": "content/first-order-logic/tableaux/propositional-rules.tex:77-91",
+          "target_locator": "translation/content/first-order-logic/tableaux/propositional-rules.tex:77-91",
+          "source_unit_sha256": "dcf0dc5fbdbfd79a7cf8c4b07a3d3d51aedc9ac424416d205ee5a8fd0877a8f4",
+          "translation_unit_sha256": "a34628548c52c1ecb31f0f089fb73186bb06dd19e5d9b4ac7388001e6b529123",
+          "source_segment_sha256": "9c583b90a2b9e36857a4e22ee06e5c0db104c70b757af3c2fbf9b94ae9f8afb3",
+          "translation_segment_sha256": "f84b5bb823544312fc589f21490608e2fc3f386dba11f61abf650386adad1f54",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "passage_id": "TE-P003",
+          "source_id": "TE-C003",
+          "pdf_page": 4,
+          "printed_page": "30",
+          "region": "Reason-giving and proofs subsection",
+          "verified": "Native page visually read",
+          "role": "Native proof/explanation register; broad induction usage, not full formal induction theorem attestation"
+        },
+        {
+          "passage_id": "TE-P002",
+          "source_id": "TE-C003",
+          "pdf_page": 9,
+          "printed_page": "35",
+          "region": "Main paragraph, lower half",
+          "verified": "Native page visually read",
+          "role": "Logic and mathematical-statement usage; not evidence for a specific formal propositional-calculus term"
+        },
+        {
+          "passage_id": "TE-P004",
+          "source_id": "TE-C002",
+          "pdf_page": 19,
+          "printed_page": "7",
+          "region": "Theorem 1.1 and surrounding Telugu explanation",
+          "verified": "Native Telugu page visually read; English facing page not substituted",
+          "role": "Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No human Telugu logician, mathematician or copy editor has reviewed this choice yet.",
+        "No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records."
+      ],
+      "rationale": "TE-P003 and TE-P004 support broad proof, deduction and theorem exposition, while TE-P002 supports logic and truth/falsity register. They do not attest the formal tableau taxonomy. Tableau, eigen and cut remain explicit transliterated borrowings; the chapter's sign-pair definition, branching rules, closure condition, checkmark convention and eigenvariable restriction fix the selected technical senses.",
+      "alternatives_considered_or_recorded": [
+        "descriptive Telugu truth-sign and branch-state wording with tableau, eigen and cut borrowings (chosen)",
+        "leave every tableau-specific headword in English (not adopted)",
+        "replace tableau, eigenvariable and cut with unattested coined headwords (not adopted)",
+        "retain protected source-token spellings inside grammatical macros (chosen for source identity)"
+      ],
+      "uncertainty": "Low for cross-chapter consistency and broad truth/proof register; high nomenclatural for the formal tableau, sign and branch-state headwords",
+      "rationale_phase": "Retrospective reconstruction through 2026-09-05 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.",
+      "precise_review_questions": [
+        "Please double-check whether “చిహ్నిత సూత్రం / సత్యమూల్య సంకేతం / టాబ్లో / సంవృత శాఖ / వివృత శాఖ / తనిఖీ గుర్తు / ఐగెన్ చరరాశి షరతు / కట్ నియమం” is idiomatic and technically standard for “signed formula / truth-value sign / tableau / closed branch / open branch / checkmark / eigenvariable condition / cut rule” in Telugu logic/mathematics across Andhra Pradesh and Telangana.",
+        "If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?"
+      ],
+      "translation_hold": false
+    },
+    {
       "review_id": "REV-OLFUN-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4142,7 +4312,7 @@
     {
       "review_id": "REV-OLFUN-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4199,7 +4369,7 @@
     {
       "review_id": "REV-OLFUN-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4256,7 +4426,7 @@
     {
       "review_id": "REV-OLFUN-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4313,7 +4483,7 @@
     {
       "review_id": "REV-OLFUN-005",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4370,7 +4540,7 @@
     {
       "review_id": "REV-OLTESIZ-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4427,7 +4597,7 @@
     {
       "review_id": "REV-OLSIZ-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4484,7 +4654,7 @@
     {
       "review_id": "REV-OLTESIZ-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4541,7 +4711,7 @@
     {
       "review_id": "REV-OLSIZ-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4598,7 +4768,7 @@
     {
       "review_id": "REV-OLTESIZ-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4655,7 +4825,7 @@
     {
       "review_id": "REV-OLTESIZ-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4712,7 +4882,7 @@
     {
       "review_id": "REV-OLSIZ-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4769,7 +4939,7 @@
     {
       "review_id": "REV-OLSIZ-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4826,7 +4996,7 @@
     {
       "review_id": "REV-OLSIZ-005",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4883,7 +5053,7 @@
     {
       "review_id": "REV-OLSIZ-006",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4940,7 +5110,7 @@
     {
       "review_id": "REV-OLSIZ-007",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -4997,7 +5167,7 @@
     {
       "review_id": "REV-OLSIZ-008",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5054,7 +5224,7 @@
     {
       "review_id": "REV-OLSIZ-009",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5111,7 +5281,7 @@
     {
       "review_id": "REV-OLSIZ-010",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5168,7 +5338,7 @@
     {
       "review_id": "REV-OLTEARITH-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5225,7 +5395,7 @@
     {
       "review_id": "REV-OLTEARITH-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5282,7 +5452,7 @@
     {
       "review_id": "REV-OLTEARITH-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5339,7 +5509,7 @@
     {
       "review_id": "REV-OLTEARITH-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5396,7 +5566,7 @@
     {
       "review_id": "REV-OLTEARITH-005",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5453,7 +5623,7 @@
     {
       "review_id": "REV-OLTEARITH-006",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5510,7 +5680,7 @@
     {
       "review_id": "REV-OLTEARITH-007",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5567,7 +5737,7 @@
     {
       "review_id": "REV-OLTEARITH-008",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5624,7 +5794,7 @@
     {
       "review_id": "REV-OLTEINF-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5681,7 +5851,7 @@
     {
       "review_id": "REV-OLTEINF-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5738,7 +5908,7 @@
     {
       "review_id": "REV-OLTEINF-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5795,7 +5965,7 @@
     {
       "review_id": "REV-OLTEINF-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5852,7 +6022,7 @@
     {
       "review_id": "REV-OLTEINF-005",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5909,7 +6079,7 @@
     {
       "review_id": "REV-OLTEINF-006",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -5966,7 +6136,7 @@
     {
       "review_id": "REV-OLTEPLSYN-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6023,7 +6193,7 @@
     {
       "review_id": "REV-OLTEPLSYN-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6080,7 +6250,7 @@
     {
       "review_id": "REV-OLTEPLSYN-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6137,7 +6307,7 @@
     {
       "review_id": "REV-OLTEPLSYN-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6194,7 +6364,7 @@
     {
       "review_id": "REV-OLTEPRF-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6251,7 +6421,7 @@
     {
       "review_id": "REV-OLTEPRF-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6308,7 +6478,7 @@
     {
       "review_id": "REV-OLTEPRF-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6365,7 +6535,7 @@
     {
       "review_id": "REV-OLTEPRF-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6422,7 +6592,7 @@
     {
       "review_id": "REV-OLTESEQ-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6479,7 +6649,7 @@
     {
       "review_id": "REV-OLTESEQ-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6536,7 +6706,7 @@
     {
       "review_id": "REV-OLTESEQ-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6593,7 +6763,7 @@
     {
       "review_id": "REV-OLTESEQ-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6650,7 +6820,7 @@
     {
       "review_id": "REV-OLTESEQ-005",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6707,7 +6877,7 @@
     {
       "review_id": "REV-OLTEND-001",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6764,7 +6934,7 @@
     {
       "review_id": "REV-OLTEND-002",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6821,7 +6991,7 @@
     {
       "review_id": "REV-OLTEND-003",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6878,7 +7048,7 @@
     {
       "review_id": "REV-OLTEND-004",
       "record_type": "source_correction_decision",
-      "scope_completion": "partial_94_of_722_draft_units",
+      "scope_completion": "partial_108_of_722_draft_units",
       "language": "Telugu",
       "script": "Telu",
       "locale": "te-Telu-IN",
@@ -6928,6 +7098,690 @@
       "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
       "precise_review_questions": [
         "Please double-check that the FOL branch names a structure M and the propositional branch a valuation v, with both satisfaction readings preserved."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTETAB-001",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_108_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTETAB-001",
+      "classification": "confirmed_wrong_proof_system_in_tableaux_editorial_note",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0098",
+          "section_path": "first-order-logic/tableaux/tableaux",
+          "source_file": "content/first-order-logic/tableaux/tableaux.tex",
+          "target_file": "translation/content/first-order-logic/tableaux/tableaux.tex",
+          "segment_id": "OLP-0098-B006",
+          "source_locator": "lines 13-16, prfTab editorial scope note",
+          "target_locator": "translation/content/first-order-logic/tableaux/tableaux.tex:17",
+          "source_unit_sha256": "1c6e7018e63cae3440e85d537303288261afd422b9e13bc455b99c2d206aa1b6",
+          "translation_unit_sha256": "ac1fba073519d62f2bd9c3195993a08154a2800f6f2b836bc34fb62046df9856",
+          "source_segment_sha256": "266cf6c5dfdb57b19ac06328726fdc2669ac35f6555a8ece23b7989943efa333",
+          "translation_segment_sha256": "d117c2860fc95a4d645456b6ad4da3147e065503d766eca67666d64d8ed1c4e6",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTETAB-20260905",
+          "audit_review_sha256": "bf05ff168893652b3e8f3dbdd9d6132b025402c4f4ee1be2e00530d6f251787d",
+          "audit_findings_sha256": "5c06ad634356e8e4dae3d44091c63f9edc45f97c5cb0dda3390898bec83ead12"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/tableaux/tableaux.tex",
+          "source_sha256": "1c6e7018e63cae3440e85d537303288261afd422b9e13bc455b99c2d206aa1b6"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "named tableaux rather than natural deduction, as fixed by the chapter path, IDs, tag and imports; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that the scope note names tableaux, rather than natural deduction, while preserving the chapter driver and imports."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTETAB-002",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_108_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTETAB-002",
+      "classification": "confirmed_multiple_formulas_inside_single_signed_formula_argument",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0103",
+          "section_path": "first-order-logic/tableaux/proving-things",
+          "source_file": "content/first-order-logic/tableaux/proving-things.tex",
+          "target_file": "translation/content/first-order-logic/tableaux/proving-things.tex",
+          "segment_id": "OLP-0103-B016",
+          "source_locator": "lines 433-442, second problem set item 9",
+          "target_locator": "translation/content/first-order-logic/tableaux/proving-things.tex:445",
+          "source_unit_sha256": "6940ff2f8466cfb9dc740a4e7aa2cf9551c9a3d3304aa8ebe93217d11e451e90",
+          "translation_unit_sha256": "45857b20ada030b996cdeb4bdec03f89562352f64e4d18f1b765959498713ee5",
+          "source_segment_sha256": "72b3e22cf72839eeae797ebf7a31cc87ca100ca1ad438650c6d0bdb72678d572",
+          "translation_segment_sha256": "2fb7232dc148f44b16526a607425fbbeeac3dfed6edd2d8afab63b0b8f310c0f",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTETAB-20260905",
+          "audit_review_sha256": "bf05ff168893652b3e8f3dbdd9d6132b025402c4f4ee1be2e00530d6f251787d",
+          "audit_findings_sha256": "5c06ad634356e8e4dae3d44091c63f9edc45f97c5cb0dda3390898bec83ead12"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/tableaux/proving-things.tex",
+          "source_sha256": "6940ff2f8466cfb9dc740a4e7aa2cf9551c9a3d3304aa8ebe93217d11e451e90"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "split A-or-B and not-B into separate true-signed assumptions while retaining false A; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that the initial tableau assumptions are three separate signed formulas: true A-or-B, false B, and false A."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTETAB-003",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_108_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTETAB-003",
+      "classification": "confirmed_wrong_line_reference_in_quantified_tableau_example",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0104",
+          "section_path": "first-order-logic/tableaux/proving-things-quant",
+          "source_file": "content/first-order-logic/tableaux/proving-things-quant.tex",
+          "target_file": "translation/content/first-order-logic/tableaux/proving-things-quant.tex",
+          "segment_id": "OLP-0104-B010",
+          "source_locator": "lines 280-284, reusable signed-formula line references",
+          "target_locator": "translation/content/first-order-logic/tableaux/proving-things-quant.tex:289",
+          "source_unit_sha256": "253a81c3ef645fee728f66e385a86459773fa5d6a82e73740cb55497c598c234",
+          "translation_unit_sha256": "cfe610d73b65cf637e70c47e28a3e2ee3939b7fb27199c3894afed8fe4532215",
+          "source_segment_sha256": "82dce916134bc5410a33afdfec51f16a83fec1002f7b1e50adeaeae4d806adf6",
+          "translation_segment_sha256": "efb2c405e58b26ddb9bb1e60c8ca493bca611608238f30fe857ce75239bc7704",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTETAB-20260905",
+          "audit_review_sha256": "bf05ff168893652b3e8f3dbdd9d6132b025402c4f4ee1be2e00530d6f251787d",
+          "audit_findings_sha256": "5c06ad634356e8e4dae3d44091c63f9edc45f97c5cb0dda3390898bec83ead12"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/tableaux/proving-things-quant.tex",
+          "source_sha256": "253a81c3ef645fee728f66e385a86459773fa5d6a82e73740cb55497c598c234"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "referred to lines 1 and 4, matching the reusable true universal and false existential in the adjacent trees; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that the reusable quantifier lines are identified as lines 1 and 4, matching the two completed tableaux."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTETAB-004",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_108_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTETAB-004",
+      "classification": "confirmed_missing_set_braces_in_finite_subset_witness",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0105",
+          "section_path": "first-order-logic/tableaux/proof-theoretic-notions",
+          "source_file": "content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+          "target_file": "translation/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+          "segment_id": "OLP-0105-B016",
+          "source_locator": "lines 99-109, finite witness in the transitivity proof",
+          "target_locator": "translation/content/first-order-logic/tableaux/proof-theoretic-notions.tex:110",
+          "source_unit_sha256": "38a3260d51ba6fc9db22f6b40b1a57f5c46e80d2a008053beffbb7cf5eff7e71",
+          "translation_unit_sha256": "1dea529a567f2768951f97dbaf968735fd58d392551abdba1a8c232cc02dfb3e",
+          "source_segment_sha256": "166229e33eca4be858b74a2422887a40067228d3a08c5840e6e0b8d05d876990",
+          "translation_segment_sha256": "35f3c7fe5e7f9d1212b06b297fb6dad7c4aecc3869635dde8233ca1c7de81e98",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTETAB-20260905",
+          "audit_review_sha256": "bf05ff168893652b3e8f3dbdd9d6132b025402c4f4ee1be2e00530d6f251787d",
+          "audit_findings_sha256": "5c06ad634356e8e4dae3d44091c63f9edc45f97c5cb0dda3390898bec83ead12"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+          "source_sha256": "38a3260d51ba6fc9db22f6b40b1a57f5c46e80d2a008053beffbb7cf5eff7e71"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "placed the D-list in set braces before asserting it is a finite subset of Gamma; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that each finite premise family is displayed as a set contained in Gamma."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTETAB-005",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_108_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTETAB-005",
+      "classification": "confirmed_inconsistent_final_index_for_second_finite_witness",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0106",
+          "section_path": "first-order-logic/tableaux/provability-consistency",
+          "source_file": "content/first-order-logic/tableaux/provability-consistency.tex",
+          "target_file": "translation/content/first-order-logic/tableaux/provability-consistency.tex",
+          "segment_id": "OLP-0106-B008",
+          "source_locator": "lines 24-32, second finite witness index",
+          "target_locator": "translation/content/first-order-logic/tableaux/provability-consistency.tex:28",
+          "source_unit_sha256": "1e3cd1b98b0dae48850118a996aa37c04da92108c91d2096e51ac4a19025f348",
+          "translation_unit_sha256": "a0ff56b6630a6b731d8013f9c2f4fd2eafe165bdd77e2e5fddbc99aa45f1dad3",
+          "source_segment_sha256": "5071671727b77010e7dfd2b593e4e6ea8289198cb3affae4f6743dd2ceaabf61",
+          "translation_segment_sha256": "8c00bebbcbb4e518dbf62ab1dfe18a45d5331592a52be2c596ecbb96f92bc72d",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTETAB-20260905",
+          "audit_review_sha256": "bf05ff168893652b3e8f3dbdd9d6132b025402c4f4ee1be2e00530d6f251787d",
+          "audit_findings_sha256": "5c06ad634356e8e4dae3d44091c63f9edc45f97c5cb0dda3390898bec83ead12"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/tableaux/provability-consistency.tex",
+          "source_sha256": "1e3cd1b98b0dae48850118a996aa37c04da92108c91d2096e51ac4a19025f348"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "used independent final index m for Gamma_1, matching the immediately following display and rest of the proof; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that Gamma_1 uses the same terminal index m in its definition and both later occurrences."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTETAB-006",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_108_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTETAB-006",
+      "classification": "confirmed_wrong_negation_rule_input_and_inserted_line_reference",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0106",
+          "section_path": "first-order-logic/tableaux/provability-consistency",
+          "source_file": "content/first-order-logic/tableaux/provability-consistency.tex",
+          "target_file": "translation/content/first-order-logic/tableaux/provability-consistency.tex",
+          "segment_id": "OLP-0106-B014",
+          "source_locator": "lines 84-97, explicit-inconsistency tableau transformation",
+          "target_locator": "translation/content/first-order-logic/tableaux/provability-consistency.tex:107",
+          "source_unit_sha256": "1e3cd1b98b0dae48850118a996aa37c04da92108c91d2096e51ac4a19025f348",
+          "translation_unit_sha256": "a0ff56b6630a6b731d8013f9c2f4fd2eafe165bdd77e2e5fddbc99aa45f1dad3",
+          "source_segment_sha256": "747a5c573f13af06c9045b9593b68cef38a0e22baf66007550f087d852c358dc",
+          "translation_segment_sha256": "72ecdd268cd1d00acfc3c8916138500e9d5b1115b2a8c63415f16f8b2714eacb",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTETAB-20260905",
+          "audit_review_sha256": "bf05ff168893652b3e8f3dbdd9d6132b025402c4f4ee1be2e00530d6f251787d",
+          "audit_findings_sha256": "5c06ad634356e8e4dae3d44091c63f9edc45f97c5cb0dda3390898bec83ead12"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/tableaux/provability-consistency.tex",
+          "source_sha256": "1e3cd1b98b0dae48850118a996aa37c04da92108c91d2096e51ac4a19025f348"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "applied true-negation to true not-A, used the newly inserted line rather than a false fixed number, and removed the stray TeX character; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that true negation is applied to a true signed negation and that its conclusion is added on a fresh generic line."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTETAB-007",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_108_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTETAB-007",
+      "classification": "confirmed_malformed_signed_formula_macro_arguments_in_four_trees",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0107",
+          "section_path": "first-order-logic/tableaux/provability-propositional",
+          "source_file": "content/first-order-logic/tableaux/provability-propositional.tex",
+          "target_file": "translation/content/first-order-logic/tableaux/provability-propositional.tex",
+          "segment_id": "OLP-0107-B009",
+          "source_locator": "lines 39-55 and 102-117, eight malformed signed-formula nodes",
+          "target_locator": "translation/content/first-order-logic/tableaux/provability-propositional.tex:59",
+          "source_unit_sha256": "342109e7ee29a08f322f02df997f40ca08aa60cc1388f150b7b23c0aaddd9f13",
+          "translation_unit_sha256": "e623cc1bedb83e317268e601a13879466719ef8f16048ccf069be3d4dde005d3",
+          "source_segment_sha256": "1d3fc13c472f013fd81ea4aa5d55bf0908d7093c5569a58530703dda4e0fc8bb",
+          "translation_segment_sha256": "89e235044dc7e1dd03f52e499eae01db06b9e7a28c11fa7e79865c408202682d",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTETAB-20260905",
+          "audit_review_sha256": "bf05ff168893652b3e8f3dbdd9d6132b025402c4f4ee1be2e00530d6f251787d",
+          "audit_findings_sha256": "5c06ad634356e8e4dae3d44091c63f9edc45f97c5cb0dda3390898bec83ead12"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/tableaux/provability-propositional.tex",
+          "source_sha256": "342109e7ee29a08f322f02df997f40ca08aa60cc1388f150b7b23c0aaddd9f13"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "restored all eight sFmla calls to separate sign and formula arguments while preserving their signs, formulas and closures; adjacent sourcecorrection discloses the repeated repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that all eight repaired signed-formula nodes have both sign and formula arguments while leaving the displayed proof strategy unchanged."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTETAB-008",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_108_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTETAB-008",
+      "classification": "confirmed_inconsistent_metavariable_in_universal_soundness_cases",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0109",
+          "section_path": "first-order-logic/tableaux/soundness",
+          "source_file": "content/first-order-logic/tableaux/soundness.tex",
+          "target_file": "translation/content/first-order-logic/tableaux/soundness.tex",
+          "segment_id": "OLP-0109-B018",
+          "source_locator": "lines 126-156, true- and false-universal soundness cases",
+          "target_locator": "translation/content/first-order-logic/tableaux/soundness.tex:162",
+          "source_unit_sha256": "d08c0332f74466555414fa2463a0d32e8bcf40abdf7cab4016c1c48133166a80",
+          "translation_unit_sha256": "6bece07f02753e95f531c5c359e29a6c6b5ea86cc84e2867b3ac7553d16c7877",
+          "source_segment_sha256": "37f02452830346373d0fad040c2e4289abd0748293111da6c1929270eedeafc7",
+          "translation_segment_sha256": "70393f39765a5cac9fe630155b2251c7b6d56b47dd83000d3f6dc31f3433f61e",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTETAB-20260905",
+          "audit_review_sha256": "bf05ff168893652b3e8f3dbdd9d6132b025402c4f4ee1be2e00530d6f251787d",
+          "audit_findings_sha256": "5c06ad634356e8e4dae3d44091c63f9edc45f97c5cb0dda3390898bec83ead12"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/tableaux/soundness.tex",
+          "source_sha256": "d08c0332f74466555414fa2463a0d32e8bcf40abdf7cab4016c1c48133166a80"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "used metavariable A consistently in both universal-rule premises, conclusions and semantic arguments; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that the true- and false-universal soundness cases use A consistently in their premises, conclusions, and satisfaction claims."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTETAB-009",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_108_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTETAB-009",
+      "classification": "confirmed_wrong_substitution_instance_in_symmetry_explanation",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0110",
+          "section_path": "first-order-logic/tableaux/identity",
+          "source_file": "content/first-order-logic/tableaux/identity.tex",
+          "target_file": "translation/content/first-order-logic/tableaux/identity.tex",
+          "segment_id": "OLP-0110-B009",
+          "source_locator": "lines 67-71, symmetry premise instance",
+          "target_locator": "translation/content/first-order-logic/tableaux/identity.tex:71",
+          "source_unit_sha256": "3e088c34666999c12f7a9c60aee27e93d0a5e917b9af2afc47115c7c52ef4c1d",
+          "translation_unit_sha256": "e096d74d131682b6af4a53324212230c6fe95ceca3f5e937079a467c420742e4",
+          "source_segment_sha256": "a86777fa8afd17b6ce391c12ed7b01eabf2b928118ab8095e74d3136a55b0e9c",
+          "translation_segment_sha256": "6c903eb86571e25db252c3ef68dc094d28599a09e9b0c9f1e6704e51cd28769a",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTETAB-20260905",
+          "audit_review_sha256": "bf05ff168893652b3e8f3dbdd9d6132b025402c4f4ee1be2e00530d6f251787d",
+          "audit_findings_sha256": "5c06ad634356e8e4dae3d44091c63f9edc45f97c5cb0dda3390898bec83ead12"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/tableaux/identity.tex",
+          "source_sha256": "3e088c34666999c12f7a9c60aee27e93d0a5e917b9af2afc47115c7c52ef4c1d"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "identified line 3 as true A(s_1), matching the displayed equality and following substitution calculation; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that the symmetry explanation identifies line 3 as true A(s_1), matching the displayed tableau."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTETAB-010",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_108_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTETAB-010",
+      "classification": "confirmed_wrong_generic_equality_instance_for_line_two",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0110",
+          "section_path": "first-order-logic/tableaux/identity",
+          "source_file": "content/first-order-logic/tableaux/identity.tex",
+          "target_file": "translation/content/first-order-logic/tableaux/identity.tex",
+          "segment_id": "OLP-0110-B010",
+          "source_locator": "lines 85-90, transitivity line-2 equality instance",
+          "target_locator": "translation/content/first-order-logic/tableaux/identity.tex:95",
+          "source_unit_sha256": "3e088c34666999c12f7a9c60aee27e93d0a5e917b9af2afc47115c7c52ef4c1d",
+          "translation_unit_sha256": "e096d74d131682b6af4a53324212230c6fe95ceca3f5e937079a467c420742e4",
+          "source_segment_sha256": "92e035e14531db5eceef74ea9d4153b64d0a253e84ed32cbbdc2189f06ddf11d",
+          "translation_segment_sha256": "165deb099675c32812bcef1fe1b8ddd3750a025ae4d3263158a526d0686ba2d6",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTETAB-20260905",
+          "audit_review_sha256": "bf05ff168893652b3e8f3dbdd9d6132b025402c4f4ee1be2e00530d6f251787d",
+          "audit_findings_sha256": "5c06ad634356e8e4dae3d44091c63f9edc45f97c5cb0dda3390898bec83ead12"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/tableaux/identity.tex",
+          "source_sha256": "3e088c34666999c12f7a9c60aee27e93d0a5e917b9af2afc47115c7c52ef4c1d"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "named line 2 as eq(s_1,s_2), which is A(s_2) under the stated A(x)=eq(s_1,x); adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that the transitivity explanation identifies line 2 as s_1 equals s_2, matching the displayed tableau."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTETAB-011",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_108_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTETAB-011",
+      "classification": "confirmed_generic_sign_in_true_equality_soundness_case",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0111",
+          "section_path": "first-order-logic/tableaux/soundness-identity",
+          "source_file": "content/first-order-logic/tableaux/soundness-identity.tex",
+          "target_file": "translation/content/first-order-logic/tableaux/soundness-identity.tex",
+          "segment_id": "OLP-0111-B009",
+          "source_locator": "lines 30-43, true-equality soundness case",
+          "target_locator": "translation/content/first-order-logic/tableaux/soundness-identity.tex:45",
+          "source_unit_sha256": "d86101dc8eb627b831cd3c1f637102f221e755df98c96fe8ba74170f4a60f58b",
+          "translation_unit_sha256": "bb326efd395eee359a575433cebd4261d10e1677188abe2e70ed8af8e7a31171",
+          "source_segment_sha256": "e3ba0db63dc36483d473c59dc6f6872ea473749a46d639ab95509ef92dacf308",
+          "translation_segment_sha256": "1d14997eb97c6deec4373c991fadbe5ec0f212080bc5ae4c448f620173465dfc",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTETAB-20260905",
+          "audit_review_sha256": "bf05ff168893652b3e8f3dbdd9d6132b025402c4f4ee1be2e00530d6f251787d",
+          "audit_findings_sha256": "5c06ad634356e8e4dae3d44091c63f9edc45f97c5cb0dda3390898bec83ead12"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/tableaux/soundness-identity.tex",
+          "source_sha256": "d86101dc8eb627b831cd3c1f637102f221e755df98c96fe8ba74170f4a60f58b"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "used the true sign in the true-equality conclusion while retaining the separately stated analogous false case; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that the true-equality soundness conclusion carries the true sign, with the analogous false case still stated separately."
+      ],
+      "translation_hold": false,
+      "status": "applied_qa_pass"
+    },
+    {
+      "review_id": "REV-OLTETAB-012",
+      "record_type": "source_correction_decision",
+      "scope_completion": "partial_108_of_722_draft_units",
+      "language": "Telugu",
+      "script": "Telu",
+      "locale": "te-Telu-IN",
+      "finding_id": "OLTETAB-012",
+      "classification": "confirmed_dangling_comma_after_quantifier_assumptions",
+      "confidence": "high_mathematical_repair_moderate_disclosure_wording",
+      "review_priority": "medium",
+      "expert_review_status": "mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold",
+      "implementation_locations": [
+        {
+          "unit_id": "OLP-0108",
+          "section_path": "first-order-logic/tableaux/provability-quantifiers",
+          "source_file": "content/first-order-logic/tableaux/provability-quantifiers.tex",
+          "target_file": "translation/content/first-order-logic/tableaux/provability-quantifiers.tex",
+          "segment_id": "OLP-0108-B009",
+          "source_locator": "lines 78-80, second quantifier-provability example",
+          "target_locator": "translation/content/first-order-logic/tableaux/provability-quantifiers.tex:85",
+          "source_unit_sha256": "0087b4788815c95c714158f2f37438e351183f97d8388c0acde21c20a6e8aa0f",
+          "translation_unit_sha256": "74aaab100f49e11f961799cd2c98950c7a8e1e76b62f65cd2acb83ee0311c16f",
+          "source_segment_sha256": "7bc3e80cf603e45434fb7f8f13c7f7d1627dd4a9d58d993502e4c58ca889dd0a",
+          "translation_segment_sha256": "9c5fab05bbaac95aeb13659c172eea96f8bb3e643e72ec2fbd5b2cb6bfbb7ede",
+          "final_printed_page": null,
+          "pagination_status": "pending_coherent_reader_pagination"
+        }
+      ],
+      "actual_authorities_checked": [
+        {
+          "audit_id": "OLTETAB-20260905",
+          "audit_review_sha256": "bf05ff168893652b3e8f3dbdd9d6132b025402c4f4ee1be2e00530d6f251787d",
+          "audit_findings_sha256": "5c06ad634356e8e4dae3d44091c63f9edc45f97c5cb0dda3390898bec83ead12"
+        },
+        {
+          "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+          "source_path": "content/first-order-logic/tableaux/provability-quantifiers.tex",
+          "source_sha256": "0087b4788815c95c714158f2f37438e351183f97d8388c0acde21c20a6e8aa0f"
+        }
+      ],
+      "not_checked_or_not_found": [
+        "No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA."
+      ],
+      "rationale": "removed only the dangling comma after the two signed assumptions; adjacent sourcecorrection discloses the repair",
+      "alternatives_considered_or_recorded": [
+        "Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).",
+        "Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen)."
+      ],
+      "uncertainty": "Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.",
+      "rationale_phase": "Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.",
+      "precise_review_questions": [
+        "Please double-check that only the dangling comma after the two signed assumptions was removed and no tableau formula changed."
       ],
       "translation_hold": false,
       "status": "applied_qa_pass"

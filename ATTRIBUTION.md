@@ -31,6 +31,6 @@
 
 The source license's warranty disclaimer remains applicable. Provisional
 technical nomenclature and mathematical-source caveats are documented in
-evidence. Current repository coverage is 94 drafted units of 722, while only
+evidence. Current repository coverage is 108 drafted units of 722, while only
 the seven-unit Sets chapter is released as a verified PDF and semantic reader
 at this checkpoint.

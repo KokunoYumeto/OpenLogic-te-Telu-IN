@@ -1,0 +1,92 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: provability-quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{tab}{qpr}
+\olsection{\usetoken{S}{derivability} మరియు పరిమాణీకరణికాలు}
+
+\begin{explain}
+  ఈ విభాగంలో స్థాపించే $\Proves$ గురించిన వాస్తవాలను టాబ్లో నియమాలు
+  ఇవ్వడం కూడా సంపూర్ణతా సిద్ధాంతానికి అవసరం.
+\end{explain}
+
+\begin{thm}
+\ollabel{thm:strong-generalization} $\Gamma$లో గానీ $!A(x)$లో గానీ
+కనిపించని స్థిరాంకం $c$ అయి, $\Gamma \Proves !A(c)$ అయితే,
+$\Gamma \Proves \lforall[x][!A(x)]$.
+\end{thm}
+
+\begin{proof}
+$\Gamma \Proves !A(c)$ అనుకుందాం; అంటే $!B_1$, \dots, $!B_n
+\in \Gamma$ ఉండి, కింది సమితికి ఒక సంవృత !!{tableau} ఉంది:
+\begin{align*}
+\{ \sFmla{\False}{!A(c)}, &
+\sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n} \}.
+\intertext{కింది సమితికి కూడా ఒక సంవృత !!{tableau} ఉందని చూపాలి:}
+\{ \sFmla{\False}{\lforall[x][!A(x)]}, &
+\sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n} \}.
+\end{align*}
+ఇచ్చిన సంవృత !!{tableau}లో మొదటి పరికల్పన స్థానంలో
+$\sFmla{\False}{\lforall[x][!A(x)]}$ను పెట్టి, పరికల్పనల తర్వాత
+$\sFmla{\False}{!A(c)}$ను చేర్చండి.
+\begin{center}
+\begin{tableau}{not line numbering}
+  [\sFmla{\False}{\formula{A}(c)}
+    [\sFmla{\True}{\formula{B}_1}
+      [\vdots
+      [\sFmla{\True}{\formula{B}_n},
+        [][][]]]]]
+\end{tableau}\qquad
+\begin{tableau}{not line numbering}
+  [\sFmla{\False}{\lforall[x][\formula{A}(x)]}
+    [\sFmla{\True}{\formula{B}_1}
+      [\vdots
+        [\sFmla{\True}{\formula{B}_n},
+          [\sFmla{\False}{\formula{A}(c)}
+        [][][]]]]]]
+\end{tableau}
+\end{center}
+ముందు పరికల్పనలుగా లభించిన !!{sentence}s అన్నీ కొత్త
+!!{tableau} అగ్రభాగంలో ఇంకా లభిస్తున్నాయి కనుక అది సంవృతంగానే ఉంటుంది.
+చేర్చిన వరుస $\TRule{\False}{\lforall}$ను సరిగ్గా వర్తింపజేసిన
+ఫలితం: !!{constant}~$c$ అనేది $!B_1$, \dots, $!B_n$లలో గానీ
+$\lforall[x][!A(x)]$లో గానీ కనిపించదు; అంటే కొత్త !!{tableau}లో
+చేర్చిన వరుస పైన ఎక్కడా కనిపించదు.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:provability-quantifiers}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$!A(t) \Proves \lexists[x][!A(x)]$.}{}
+\tagitem{prvAll}{$\lforall[x][!A(x)] \Proves !A(t)$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$\sFmla{\False}{\lexists[x][!A(x)]},
+  \sFmla{\True}{!A(t)}$కు సంవృత !!{tableau} ఇది:
+  \begin{oltableau}
+    [\sFmla{\False}{\lexists[x][\formula{A}(x)]}, just = \TAss
+      [\sFmla{\True}{\formula{A}(t)}, just = \TAss
+        [\sFmla{\False}{\formula{A}(t)}, just = {\TRule{\False}{\lexists}[1]}, close]]]
+    \end{oltableau}}{}
+\tagitem{prvAll}{$\sFmla{\False}{\formula{A}(t)},
+  \sFmla{\True}{\lforall[x][!A(x)]}$కు సంవృత !!{tableau} ఇది:
+  \begin{oltableau}
+    [\sFmla{\False}{\formula{A}(t)}, just = \TAss
+      [\sFmla{\True}{\lforall[x][\formula{A}(x)]}, just = \TAss
+        [\sFmla{\True}{\formula{A}(t)}, just = {\TRule{\True}{\lforall}[2]}, close]]]
+    \end{oltableau}
+  \sourcecorrection{OLTETAB-012}{ఈ రెండవ ఉదాహరణను పరిచయం చేసే
+  ఆంగ్ల మూలపు గణిత భాగం చివర అనవసరమైన కామా ఉంది. అది రెండు
+  పరికల్పనల సమితిలో మూడవ ఖాళీ అంశాన్ని సూచించేలా కనిపించకుండా,
+  కామాను తొలగించాం; ప్రదర్శిత టాబ్లో, సూత్రాలు మారలేదు.}}{}
+\end{tagenumerate}
+\end{proof}
+
+\end{document}

@@ -1,0 +1,354 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: proving-things-quant
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{tab}{prq}
+
+\olsection{పరిమాణీకరణికాలతో \usetoken{P}{tableau}}
+
+\begin{ex}
+పరిమాణీకరణికాలతో వ్యవహరించేటప్పుడు ఐగెన్ చరరాశి షరతును
+ఉల్లంఘించకుండా చూసుకోవాలి; దానికోసం కొన్ని నిగమనాలను చేసే క్రమాన్ని
+కొన్నిసార్లు మార్చి ప్రయత్నించాలి. సాధారణంగా ఐగెన్ చరరాశి షరతుకు
+లోబడే నియమాలను ముందుగా చూసుకోవడం సహాయపడుతుంది (పూర్తయిన
+!!{tableau}లో అవి పై భాగంలో ఉంటాయి).
+
+!!{sentence} $\lexists[x][\lnot !A(x)] \lif \lnot
+\lforall[x][!A(x)]$ కోసం ఒక !!a{tableau}ను ఎలా ఇస్తామో చూద్దాం.
+ఎప్పటిలాగే పరికల్పనను నమోదు చేస్తూ మొదలుపెడతాం:
+\begin{oltableau}
+[\sFmla{\False}{\lexists[x][\lnot \formula{A}(x)]\lif \lnot
+    \lforall[x][\formula{A}(x)]}, just=\TAss]
+\end{oltableau}
+!!{main operator} $\lif$ కనుక $\TRule{\False}{\lif}$ను
+వర్తింపజేస్తాం:
+\begin{oltableau}
+[\sFmla{\False}{\lexists[x][\lnot \formula{A}(x)]\lif \lnot
+    \lforall[x][\formula{A}(x)]}, just=\TAss, checked
+  [\sFmla{\True}{\lexists[x][\lnot \formula{A}(x)]},
+    just={\TRule{\False}{\lif}[1]}
+    [\sFmla{\False}{\lnot\lforall[x][\formula{A}(x)]},
+      just={\TRule{\False}{\lif}[1]}]
+  ]
+]
+\end{oltableau}
+తర్వాత చూసుకోవాల్సింది వరుస~$2$. $\TRule{\True}{\lexists}$ను
+ఉపయోగిస్తాం. దీనికి కొత్త !!{constant} కావాలి; ఇప్పటివరకు ఏ
+!!{constant}s కనిపించలేదు కనుక ఏదైనా ఒకదాన్ని, ఉదాహరణకు~$a$ను,
+ఎంచుకోవచ్చు.
+\begin{oltableau}
+[\sFmla{\False}{\lexists[x][\lnot \formula{A}(x)]\lif \lnot
+    \lforall[x][\formula{A}(x)]}, just=\TAss, checked
+  [\sFmla{\True}{\lexists[x][\lnot \formula{A}(x)]},
+    just={\TRule{\False}{\lif}[1]}, checked
+    [\sFmla{\False}{\lnot\lforall[x][\formula{A}(x)]},
+      just={\TRule{\False}{\lif}[1]}
+      [\sFmla{\True}{\lnot\formula{A}(a)}, just={\TRule{\True}{\lexists}[2]}]
+    ]
+  ]
+]
+\end{oltableau}
+ఇప్పుడు వరుస~$3$కు $\TRule{\False}{\lnot}$ను వర్తింపజేస్తాం:
+\begin{oltableau}
+[\sFmla{\False}{\lexists[x][\lnot \formula{A}(x)]\lif \lnot
+    \lforall[x][\formula{A}(x)]}, just=\TAss, checked
+  [\sFmla{\True}{\lexists[x][\lnot \formula{A}(x)]},
+    just={\TRule{\False}{\lif}[1]}, checked
+    [\sFmla{\False}{\lnot\lforall[x][\formula{A}(x)]},
+      just={\TRule{\False}{\lif}[1]}, checked
+      [\sFmla{\True}{\lnot\formula{A}(a)}, just={\TRule{\True}{\lexists}[2]}
+        [\sFmla{\True}{\lforall[x][\formula{A}(x)]},
+          just = {\TRule{\False}{\lnot}[3]}
+        ]
+      ]
+    ]
+  ]
+]
+\end{oltableau}
+వరుస~$4$కు $\TRule{\True}{\lnot}$ను, ఆ తర్వాత వరుస~$5$కు
+$\TRule{\True}{\lforall}$ను వర్తింపజేసి సంవృత !!{tableau}ను
+పొందుతాం.
+\begin{oltableau}
+[\sFmla{\False}{\lexists[x][\lnot \formula{A}(x)]\lif \lnot
+    \lforall[x][\formula{A}(x)]}, just=\TAss, checked
+  [\sFmla{\True}{\lexists[x][\lnot \formula{A}(x)]},
+    just={\TRule{\False}{\lif}[1]}, checked
+    [\sFmla{\False}{\lnot\lforall[x][\formula{A}(x)]},
+      just={\TRule{\False}{\lif}[1]}, checked
+      [\sFmla{\True}{\lnot\formula{A}(a)}, just={\TRule{\True}{\lexists}[2]}
+        [\sFmla{\True}{\lforall[x][\formula{A}(x)]},
+          just = {\TRule{\False}{\lnot}[3]}
+          [\sFmla{\False}{\formula{A}(a)}, just={\TRule{\True}{\lnot}[4]}
+            [\sFmla{\True}{\formula{A}(a)},
+              just={\TRule{\True}{\lforall}[5]}, close
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+]
+\end{oltableau}
+\end{ex}
+
+\begin{ex}
+కింది సమితికి ఒక !!a{tableau}ను ఎలా ఇస్తామో చూద్దాం:
+\[
+\sFmla{\False}{\lexists[x][!C(x,b)]},
+\sFmla{\True}{\lexists[x][(!A(x) \land !B(x))]},
+\sFmla{\True}{\lforall[x][(!B(x) \lif !C(x,b))]}.
+\]
+ఎప్పటిలాగే పరికల్పనలతో మొదలుపెడతాం:
+\begin{oltableau}
+  [\sFmla{\False}{\lexists[x][\formula{C}(x,b)]}, just=\TAss
+    [\sFmla{\True}{\lexists[x][(\formula{A}(x) \land \formula{B}(x))]},
+      just=\TAss
+      [\sFmla{\True}{\lforall[x][(\formula{B}(x) \lif \formula{C}(x,b))]},
+        just=\TAss]
+    ]
+  ]
+\end{oltableau}
+ఐగెన్ చరరాశి షరతు గల నియమాన్ని ఎప్పుడూ ముందుగా
+వర్తింపజేయాలి; ఇక్కడ వరుస~$2$కు $\TRule{\True}{\lexists}$ను
+వర్తింపజేయాలి. పరికల్పనల్లో !!{constant}~$b$ ఉంది కనుక మరొకదాన్ని
+వాడాలి; మళ్లీ~$a$నే ఎంచుకుందాం.
+\begin{oltableau}
+  [\sFmla{\False}{\lexists[x][\formula{C}(x,b)]}, just=\TAss
+    [\sFmla{\True}{\lexists[x][(\formula{A}(x) \land \formula{B}(x))]},
+      just=\TAss, checked
+      [\sFmla{\True}{\lforall[x][(\formula{B}(x) \lif \formula{C}(x,b))]},
+        just=\TAss
+        [\sFmla{\True}{\formula{A}(a) \land \formula{B}(a)},
+          just={\TRule{\True}{\lexists}[2]}]
+      ]
+    ]
+  ]
+\end{oltableau}
+ఇప్పుడు వరుస~$1$కు $\TRule{\False}{\lexists}$ను లేదా వరుస~$3$కు
+$\TRule{\True}{\lforall}$ను వర్తింపజేస్తే, $x$ స్థానంలో ఏ పదం~$t$ను
+ప్రతిస్థాపించాలో నిర్ణయించాలి. ఈ నియమాలకు ఐగెన్ చరరాశి షరతు లేదు
+కనుక మనకు నచ్చిన పదాన్ని ఎంచుకోవచ్చు. కొన్ని సందర్భాల్లో వేర్వేరు
+$t$లతో నియమాన్ని అనేకసార్లు వర్తింపజేయాల్సి రావచ్చు. అయితే సాధారణ
+నియమంగా, !!{tableau}లో ఇప్పటికే కనిపించే పదాల్లో ఒకదాన్ని---ఇక్కడ
+$a$ లేదా~$b$ను---ఎంచుకోవడం ప్రయోజనకరం; ఈ సందర్భంలో $a$ సంవృత శాఖను
+ఇచ్చే అవకాశం ఎక్కువని ఊహించవచ్చు.
+\begin{oltableau}
+  [\sFmla{\False}{\lexists[x][\formula{C}(x,b)]}, just=\TAss
+    [\sFmla{\True}{\lexists[x][(\formula{A}(x) \land \formula{B}(x))]},
+      just=\TAss, checked
+      [\sFmla{\True}{\lforall[x][(\formula{B}(x) \lif \formula{C}(x,b))]}, just=\TAss
+        [\sFmla{\True}{\formula{A}(a) \land \formula{B}(a)}, just={\TRule{\True}{\lexists}[2]}
+          [\sFmla{\False}{\formula{C}(a,b)}, just={\TRule{\False}{\lexists}[1]}
+            [\sFmla{\True}{\formula{B}(a) \lif \formula{C}(a,b)},
+              just={\TRule{\True}{\lforall}[3]}
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+వరుసలు $1$, $3$లోని !!{signed formula}sకు తనిఖీ గుర్తు పెట్టం;
+వాటిని మళ్లీ ఉపయోగించాల్సి రావచ్చు. ఇప్పుడు వరుస~$4$కు
+$\TRule{\True}{\land}$ను వర్తింపజేద్దాం:
+\begin{oltableau}
+  [\sFmla{\False}{\lexists[x][\formula{C}(x,b)]}, just=\TAss
+    [\sFmla{\True}{\lexists[x][(\formula{A}(x) \land \formula{B}(x))]},
+      just=\TAss, checked
+      [\sFmla{\True}{\lforall[x][(\formula{B}(x) \lif \formula{C}(x,b))]}, just=\TAss
+        [\sFmla{\True}{\formula{A}(a) \land \formula{B}(a)},
+          just={\TRule{\True}{\lexists}[2]}, checked
+          [\sFmla{\False}{\formula{C}(a,b)}, just={\TRule{\False}{\lexists}[1]}
+            [\sFmla{\True}{\formula{B}(a) \lif \formula{C}(a,b)},
+              just={\TRule{\True}{\lforall}[3]}
+              [\sFmla{\True}{\formula{A}(a)}, just={\TRule{\True}{\land}[4]}
+                [\sFmla{\True}{\formula{B}(a)}, just={\TRule{\True}{\land}[4]}
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+ఇప్పుడు వరుస~$6$కు $\TRule{\True}{\lif}$ను వర్తింపజేస్తే
+!!{tableau} సంవృతమవుతుంది:
+\begin{oltableau}
+  [\sFmla{\False}{\lexists[x][\formula{C}(x,b)]}, just=\TAss
+    [\sFmla{\True}{\lexists[x][(\formula{A}(x) \land \formula{B}(x))]},
+      just=\TAss, checked
+      [\sFmla{\True}{\lforall[x][(\formula{B}(x) \lif \formula{C}(x,b))]},
+        just=\TAss
+        [\sFmla{\True}{\formula{A}(a) \land \formula{B}(a)},
+          just={\TRule{\True}{\lexists}[2]}, checked
+          [\sFmla{\False}{\formula{C}(a,b)},
+            just={\TRule{\False}{\lexists}[1]}
+            [\sFmla{\True}{\formula{B}(a) \lif \formula{C}(a,b)},
+              just={\TRule{\True}{\lforall}[3]}, checked
+              [\sFmla{\True}{\formula{A}(a)},
+                just={\TRule{\True}{\land}[4]}
+                [\sFmla{\True}{\formula{B}(a)},
+                  just={\TRule{\True}{\land}[4]}
+                  [\sFmla{\False}{\formula{B}(a)},
+                    just={\TRule{\True}{\lif}[6]},close
+                  ]
+                  [\sFmla{\True}{\formula{C}(a,b)},
+                    just={\TRule{\True}{\lif}[6]},close
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+
+
+\end{ex}
+
+\begin{ex}
+కింది సమితికి ఒక !!a{tableau}ను నిర్మిస్తాం:
+\[
+\sFmla{\True}{\lforall[x][!A(x)]}, \sFmla{\True}{\lforall[x][!A(x)]
+  \lif \lexists[y][!B(y)]}, \sFmla{\True}{\lnot\lexists[y][!B(y)]}.
+\]
+ఎప్పటిలాగే పరికల్పనలను రాస్తాం:
+\begin{oltableau}
+  [\sFmla{\True}{\lforall[x][\formula{A}(x)]}, just=\TAss
+    [\sFmla{\True}{\lforall[x][\formula{A}(x)] \lif
+        \lexists[y][\formula{B}(y)]}, just=\TAss
+      [\sFmla{\True}{\lnot\lexists[y][\formula{B}(y)]}, just=\TAss
+      ]
+    ]
+  ]
+\end{oltableau}
+మొదట వరుస~$3$కు $\TRule{\True}{\lnot}$ నియమాన్ని వర్తింపజేస్తాం.
+“ఐగెన్ చరరాశి షరతులు గల నియమాలను ఎప్పుడూ ముందుగా వర్తింపజేయాలి”
+అనే నియమానికి పర్యవసానం: “ఐగెన్ చరరాశి షరతులు లేని పరిమాణీకరణిక
+నియమాలు అవసరమయ్యే వరకు వాయిదా వేయాలి.” శాఖగా విడగొట్టే నియమాలనూ
+వాయిదా వేయండి.
+\begin{oltableau}
+  [\sFmla{\True}{\lforall[x][\formula{A}(x)]}, just=\TAss
+    [\sFmla{\True}{\lforall[x][\formula{A}(x)] \lif
+        \lexists[y][\formula{B}(y)]}, just=\TAss
+      [\sFmla{\True}{\lnot\lexists[y][\formula{B}(y)]}, just=\TAss, checked
+        [\sFmla{\False}{\lexists[y][\formula{B}(y)]}, just={\TRule{\True}{\lnot}[3]}]
+      ]
+    ]
+  ]
+\end{oltableau}
+కొత్త వరుస~$4$కు ఐగెన్ చరరాశి షరతు లేని పరిమాణీకరణిక నియమం
+$\TRule{\False}{\lexists}$ అవసరం. కనుక దాన్ని వాయిదా వేసి,
+వరుస~$2$కు $\TRule{\True}{\lif}$ను ఉపయోగిస్తాం.
+\begin{oltableau}
+  [\sFmla{\True}{\lforall[x][\formula{A}(x)]}, just=\TAss
+    [\sFmla{\True}{\lforall[x][\formula{A}(x)] \lif
+        \lexists[y][\formula{B}(y)]}, just=\TAss, checked
+      [\sFmla{\True}{\lnot\lexists[y][\formula{B}(y)]}, just=\TAss, checked
+        [\sFmla{\False}{\lexists[y][\formula{B}(y)]},
+          just={\TRule{\True}{\lnot}[3]},
+          [\sFmla{\False}{\lforall[x][\formula{A}(x)]}, just={\TRule{\True}{\lif}[2]}]
+          [\sFmla{\True}{\lexists[y][\formula{B}(y)]}, just={\TRule{\True}{\lif}[2]}]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+రెండు కొత్త !!{signed formula}sకూ ఐగెన్ చరరాశి షరతులు గల నియమాలు
+అవసరం; కాబట్టి తర్వాత వాటినే వర్తింపజేయాలి:
+\begin{oltableau}
+  [\sFmla{\True}{\lforall[x][\formula{A}(x)]}, just=\TAss
+    [\sFmla{\True}{\lforall[x][\formula{A}(x)] \lif
+        \lexists[y][\formula{B}(y)]}, just=\TAss, checked
+      [\sFmla{\True}{\lnot\lexists[y][\formula{B}(y)]}, just=\TAss, checked
+        [\sFmla{\False}{\lexists[y][\formula{B}(y)]},
+          just={\TRule{\True}{\lnot}[3]}
+          [\sFmla{\False}{\lforall[x][\formula{A}(x)]}, just={\TRule{\True}{\lif}[2]},checked
+            [\sFmla{\False}{\formula{A}(b)}, just={\TRule{\False}{\lforall}[5]}]
+          ]
+          [\sFmla{\True}{\lexists[y][\formula{B}(y)]}, just={\TRule{\True}{\lif}[2]},checked
+            [\sFmla{\True}{\formula{B}(c)}, just={\TRule{\True}{\lexists}[5]}]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+శాఖలను సంవృతం చేయడానికి వరుసలు $1$,~$4$లోని !!{signed formula}sను
+ఉపయోగించాలి. వాటికి సంబంధించిన నియమాలకు
+(\TRule{\True}{\lforall}, \TRule{\False}{\lexists}) ఐగెన్ చరరాశి
+షరతులు లేవు; కనుక తగిన పదాలను స్వేచ్ఛగా ఎంచుకోవచ్చు. ఇక్కడ అవి
+వరుసగా $b$,~$c$.
+\sourcecorrection{OLTETAB-003}{ఆంగ్ల మూలం ఈ చివరి దశకు అవసరమైన
+చిహ్నిత సూత్రాలను “వరుసలు $1$, $3$”లో ఉన్నవని చెప్పింది. కానీ
+వరుస~$3$లోని నిషేధానికి ఇప్పటికే తనిఖీ గుర్తు ఉంది; అవసరమైన
+$\sFmla{\False}{\lexists[y][!B(y)]}$ వరుస~$4$లో ఉందని ముందరి,
+తదుపరి టాబ్లోలు రెండూ చూపుతున్నాయి. అందువల్ల వరుస సూచనను $1$,~$4$గా
+సరిచేశాం.}
+\begin{oltableau}
+  [\sFmla{\True}{\lforall[x][\formula{A}(x)]}, just=\TAss
+    [\sFmla{\True}{\lforall[x][\formula{A}(x)] \lif
+        \lexists[y][\formula{B}(y)]}, just=\TAss, checked
+      [\sFmla{\True}{\lnot\lexists[y][\formula{B}(y)]}, just=\TAss, checked
+        [\sFmla{\False}{\lexists[y][\formula{B}(y)]},
+          just={\TRule{\True}{\lnot}[3]}
+          [\sFmla{\False}{\lforall[x][\formula{A}(x)]},
+            just={\TRule{\True}{\lif}[2]},checked
+            [\sFmla{\False}{\formula{A}(b)},
+              just={\TRule{\False}{\lforall}[5]}
+              [\sFmla{\True}{\formula{A}(b)},
+                just={\TRule{\True}{\lforall}[1]},close
+              ]
+            ]
+          ]
+          [\sFmla{\True}{\lexists[y][\formula{B}(y)]},
+            just={\TRule{\True}{\lif}[2]},checked
+            [\sFmla{\True}{\formula{B}(c)},
+              just={\TRule{\True}{\lexists}[5]}
+              [\sFmla{\False}{\formula{B}(c)},
+                just={\TRule{\False}{\lexists}[4]},close
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+\end{ex}
+
+\begin{prob}
+కిందివాటికి సంవృత !!{tableau}s ఇవ్వండి:
+\begin{enumerate}
+\item $\sFmla{\False}{(\lforall[x][!A(x)] \land \lforall[y][!B(y)])
+\lif \lforall[z][(!A(z) \land !B(z))]}$.
+\item $\sFmla{\False}{(\lexists[x][!A(x)] \lor \lexists[y][!B(y)])
+\lif \lexists[z][(!A(z) \lor !B(z))]}$.
+\item $\sFmla{\True}{\lforall[x][(!A(x) \lif !B)]},
+\sFmla{\False}{\lexists[y][!A(y)] \lif !B}$.
+\item $\sFmla{\True}{\lforall[x][\lnot !A(x)]},
+\sFmla{\False}{\lnot\lexists[x][!A(x)]}$.
+\item $\sFmla{\False}{\lnot\lexists[x][!A(x)] \lif \lforall[x][\lnot
+!A(x)]}$.
+\item $\sFmla{\False}{\lnot\lexists[x][\lforall[y][((!A(x,y) \lif
+\lnot !A(y,y)) \land (\lnot !A(y,y) \lif !A(x,y)))]]}$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+కిందివాటికి సంవృత !!{tableau}s ఇవ్వండి:
+\begin{enumerate}
+\item $\sFmla{\False}{\lnot\lforall[x][!A(x)] \lif \lexists[x][\lnot!A(x)]}$.
+\item $\sFmla{\True}{(\lforall[x][!A(x)] \lif !B)}, \sFmla{\False}{\lexists[y][(!A(y) \lif !B)]}$.
+\item $\sFmla{\False}{\lexists[x][(!A(x) \lif \lforall[y][!A(y)])]}$.
+\end{enumerate}
+\end{prob}
+
+\end{document}

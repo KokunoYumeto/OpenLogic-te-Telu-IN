@@ -1,0 +1,466 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: proving-things
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{tab}{pro}}
+      {\olfileid{pl}{tab}{pro}}
+
+\olsection{\usetoken{P}{tableau} ఉదాహరణలు}
+
+\begin{ex}
+!!{sentence} $(!A \land !B) \lif !A$ కోసం ఒక సంవృత !!{tableau}ను
+కనుగొందాం.
+
+మొదట సంబంధిత పరికల్పనను !!{tableau} అగ్రభాగంలో రాస్తాం.
+\begin{oltableau}
+  [\sFmla{\False}{(\formula{A} \land \formula{B}) \lif \formula{A}},
+    just = \TAss]
+\end{oltableau}
+
+ఒకే పరికల్పన ఉంది; కనుక నియమాన్ని వర్తింపజేయగల !!{signed formula}
+ఒక్కటే. (ప్రతి !!{signed formula}కు వర్తించగల నియమం గరిష్ఠంగా
+ఒక్కటే ఉంటుంది: అది సంబంధిత సంకేతానికి, !!{sentence} యొక్క
+!!{main operator}కు గల నియమం.) ఈ సందర్భంలో మనం
+$\TRule{\False}{\lif}$ను వర్తింపజేయాలి.
+\begin{oltableau}
+  [\sFmla{\False}{(\formula{A} \land \formula{B}) \lif \formula{A}},
+    checked, just = \TAss
+    [\sFmla{\True}{\formula{A} \land \formula{B}},
+      just={\TRule{\False}{\lif}[1]}
+      [\sFmla{\False}{\formula{A}}, just={\TRule{\False}{\lif}[1]}]
+    ]
+  ]
+\end{oltableau}
+ఏ !!{signed formula}sకు వాటి సంబంధిత నియమాలను వర్తింపజేశామో
+గుర్తుంచుకోవడానికి, ఆ వాక్యం పక్కన తనిఖీ గుర్తు పెడతాం. అయితే ఒక
+నియమాన్ని అన్ని వివృత శాఖలకూ వర్తింపజేసినప్పుడు \emph{మాత్రమే}
+తనిఖీ గుర్తు పెట్టండి. ఒక !!a{signed formula}కు సంబంధించిన నియమం
+ప్రతి వివృత శాఖలోనూ వర్తించిన తర్వాత, మళ్లీ దాని దగ్గరకు తిరిగి వచ్చి
+ఆ నియమాన్ని వర్తింపజేయాల్సిన అవసరం లేదు. ఇక్కడ ఒకే శాఖ ఉంది కనుక
+నియమాన్ని ఒక్కసారి మాత్రమే వర్తింపజేయాలి. (తనిఖీ గుర్తులు టాబ్లోలను
+నిర్మించడంలో సౌలభ్యం కోసం మాత్రమే; అవి టాబ్లోల వాక్యనిర్మాణంలో
+అధికారిక భాగం కావని గమనించండి.)
+
+ఇప్పుడు నియమాన్ని వర్తింపజేయగల కొత్త !!{signed formula} ఒకటి ఉంది:
+వరుస~$2$లోని $\sFmla{\True}{!A \land !B}$. దానికి
+$\TRule{\True}{\land}$ నియమాన్ని వర్తింపజేస్తే:
+\begin{oltableau}
+  [\sFmla{\False}{(\formula{A} \land \formula{B}) \lif \formula{A}},
+    checked, just = \TAss
+    [\sFmla{\True}{\formula{A} \land \formula{B}},
+      just={\TRule{\False}{\lif}[1]}, checked
+      [\sFmla{\False}{\formula{A}}, just={\TRule{\False}{\lif}[1]}
+        [\sFmla{\True}{\formula{A}}, just={\TRule{\True}{\land}[2]}
+          [\sFmla{\True}{\formula{B}}, just={\TRule{\True}{\land}[2]}, close
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+ఇప్పుడు శాఖలో $\sFmla{\True}{!A}$ (వరుస~$4$లో),
+$\sFmla{\False}{!A}$ (వరుస~$3$లో) రెండూ ఉన్నాయి కనుక శాఖ
+సంవృతమైంది. అదే ఒక్క శాఖ కనుక !!{tableau} కూడా సంవృతమైంది.
+$(!A \land !B) \lif !A$ కోసం ఒక సంవృత !!{tableau}ను కనుగొన్నాం.
+\end{ex}
+
+\begin{ex}
+ఇప్పుడు $(\lnot !A \lor !B) \lif (!A \lif !B)$ కోసం ఒక సంవృత
+!!{tableau}ను కనుగొందాం.
+
+సంబంధిత పరికల్పనతో మొదలుపెడతాం:
+\begin{oltableau}
+  [\sFmla{\False}{(\lnot \formula{A} \lor \formula{B}) \lif
+      (\formula{A} \lif \formula{B})}, just=\TAss]
+\end{oltableau}
+ఈ !!{tableau}లోని ఒక్క !!{signed formula}కు !!{main operator}~$\lif$,
+సంకేతం~$\False$ ఉన్నాయి. కనుక దానికి $\TRule{\False}{\lif}$ను
+వర్తింపజేసి కిందిది పొందుతాం:
+\begin{oltableau}
+  [\sFmla{\False}{(\lnot \formula{A} \lor \formula{B})
+      \lif (\formula{A} \lif \formula{B})}, just=\TAss, checked
+    [\sFmla{\True}{\lnot \formula{A} \lor \formula{B}},
+      just={\TRule{\False}{\lif}[1]}
+      [\sFmla{\False}{(\formula{A} \lif \formula{B})},
+        just={\TRule{\False}{\lif}[1]}
+      ]
+    ]
+  ]
+\end{oltableau}
+ఇప్పుడు వరుస~$2$కు $\TRule{\True}{\lor}$ను వర్తింపజేయాలా, లేక
+వరుస~$3$కు $\TRule{\False}{\lif}$ను వర్తింపజేయాలా అనే ఎంపిక ఉంది.
+ప్రతి !!{signed formula}కు సంబంధించిన నియమాన్ని ప్రతి శాఖలోనూ
+వర్తింపజేస్తే చాలు; మనం ఎంచుకునే క్రమం ముఖ్యం కాదు. కాబట్టి మొదటి
+ఎంపికను తీసుకుందాం. $\TRule{\True}{\lor}$ నియమం !!{tableau}ను
+శాఖలుగా విడగొడుతుంది; నియమపు రెండు నిష్కర్షలు రెండు కొత్త శాఖలకు
+చేర్చే కొత్త !!{signed formula}s అవుతాయి. దాని ఫలితం:
+\begin{oltableau}
+  [\sFmla{\False}{(\lnot \formula{A} \lor \formula{B}) \lif
+      (\formula{A} \lif \formula{B})}, just=\TAss, checked
+    [\sFmla{\True}{\lnot \formula{A} \lor \formula{B}},
+      just={\TRule{\False}{\lif}[1]}, checked
+      [\sFmla{\False}{(\formula{A} \lif \formula{B})},
+        just={\TRule{\False}{\lif}[1]}
+        [\sFmla{\True}{\lnot \formula{A}}, just={\TRule{\True}{\lor}[2]}]
+        [\sFmla{\True}{\formula{B}}, just={\TRule{\True}{\lor}[2]}]
+      ]
+    ]
+  ]
+\end{oltableau}
+వరుస~$3$కు $\TRule{\False}{\lif}$ నియమాన్ని ఇంకా వర్తింపజేయలేదు;
+ఇప్పుడు చేద్దాం. సమయం ఆదా చేయడానికి రెండు శాఖలకూ ఒకేసారి
+వర్తింపజేస్తాం. సంబంధిత నియమాన్ని ప్రతి వివృత శాఖలోనూ
+వర్తింపజేసినప్పుడు మాత్రమే ఒక !!a{signed formula} పక్కన తనిఖీ గుర్తు
+పెడతామని గుర్తుంచుకోండి. అందువల్ల ఒక నియమం వర్తించే
+!!{signed formula}ను కలిగిన ప్రతి శాఖ చివరలోనూ ఆ నియమాన్ని వర్తింపజేయడం మంచి
+పద్ధతి. అప్పుడు వివిధ శాఖల్లో కిందికి వెళ్లిన తర్వాత మళ్లీ ఆ
+!!{signed formula} దగ్గరకు తిరిగి రావాల్సిన అవసరం ఉండదు.
+\begin{oltableau}
+  [\sFmla{\False}{(\lnot \formula{A} \lor \formula{B}) \lif
+      (\formula{A} \lif \formula{B})}, just=\TAss, checked
+    [\sFmla{\True}{\lnot \formula{A} \lor \formula{B}},
+      just={\TRule{\False}{\lif}[1]}, checked
+      [\sFmla{\False}{(\formula{A} \lif \formula{B})},
+        just={\TRule{\False}{\lif}[1]}, checked
+        [\sFmla{\True}{\lnot \formula{A}}, just={\TRule{\True}{\lor}[2]}
+          [\sFmla{\True}{\formula{A}}, just={\TRule{\False}{\lif}[3]}
+            [\sFmla{\False}{\formula{B}}, just={\TRule{\False}{\lif}[3]}]
+          ]
+        ]
+        [\sFmla{\True}{\formula{B}}, just={\TRule{\True}{\lor}[2]}
+          [\sFmla{\True}{\formula{A}}, just={\TRule{\False}{\lif}[3]}
+            [\sFmla{\False}{\formula{B}}, just={\TRule{\False}{\lif}[3]}, close]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+కుడి శాఖ ఇప్పుడు సంవృతమైంది. ఎడమ శాఖలో వరుస~$4$కు
+$\TRule{\True}{\lnot}$ నియమాన్ని ఇంకా వర్తింపజేయవచ్చు. దాని వల్ల
+$\sFmla{\False}{!A}$ వచ్చి ఎడమ శాఖ కూడా సంవృతమవుతుంది:
+\begin{oltableau}
+  [\sFmla{\False}{(\lnot \formula{A} \lor \formula{B}) \lif
+      (\formula{A} \lif \formula{B})}, just=\TAss, checked
+    [\sFmla{\True}{\lnot \formula{A} \lor \formula{B}},
+      just={\TRule{\False}{\lif}[1]}, checked
+      [\sFmla{\False}{(\formula{A} \lif \formula{B})},
+        just={\TRule{\False}{\lif}[1]}, checked
+        [\sFmla{\True}{\lnot \formula{A}}, just={\TRule{\True}{\lor}[2]}
+          [\sFmla{\True}{\formula{A}}, just={\TRule{\False}{\lif}[3]}
+            [\sFmla{\False}{\formula{B}}, just={\TRule{\False}{\lif}[3]}
+              [\sFmla{\False}{\formula{A}},
+                just={\TRule{\True}{\lnot}[4]}, close]
+            ]
+          ]
+        ]
+        [\sFmla{\True}{\formula{B}}, just={\TRule{\True}{\lor}[2]}
+          [\sFmla{\True}{\formula{A}}, just={\TRule{\False}{\lif}[3]}
+            [\sFmla{\False}{\formula{B}},
+              just={\TRule{\False}{\lif}[3]}, close]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+\end{ex}
+
+\begin{ex}
+ఎన్ని !!{signed formula}sనైనా పరికల్పనలుగా తీసుకుని !!{tableau}sను
+ఇవ్వవచ్చు. శాఖలుగా విడగొట్టే ఒకటి కంటే ఎక్కువ నియమాలను
+వర్తింపజేయడం కూడా తరచుగా అవసరం; సాధారణంగా ఒక !!a{tableau}కు ఎన్ని
+శాఖలైనా ఉండవచ్చు. ఉదాహరణకు,
+$\{\sFmla{\True}{!A \lor (!B \land !C)}, \sFmla{\False}{(!A \lor !B) \land (!A
+  \lor !C)}\}$ కోసం ఒక !!a{tableau}ను పరిశీలించండి. మొదటి పరికల్పనకు
+$\TRule{\True}{\lor}$ను వర్తింపజేసి మొదలుపెడతాం:
+\begin{oltableau}
+  [\sFmla{\True}{\formula{A} \lor (\formula{B} \land \formula{C})},
+    just=\TAss, checked
+    [\sFmla{\False}{(\formula{A} \lor \formula{B}) \land
+        (\formula{A} \lor \formula{C})}, just=\TAss
+      [\sFmla{\True}{\formula{A}}, just={\TRule{\True}{\lor}[1]}]
+      [\sFmla{\True}{\formula{B} \land \formula{C}},
+        just={\TRule{\True}{\lor}[1]}]
+    ]
+  ]
+\end{oltableau}
+ఇప్పుడు వరుస~$2$కు $\TRule{\False}{\land}$ నియమాన్ని
+వర్తింపజేయవచ్చు. రెండు శాఖలకూ ఒకేసారి వర్తింపజేస్తాం; అందువల్ల
+వరుస~$2$కు తనిఖీ గుర్తు పెట్టవచ్చు:
+\begin{oltableau}
+  [\sFmla{\True}{\formula{A} \lor (\formula{B} \land \formula{C})},
+    just=\TAss, checked
+    [\sFmla{\False}{(\formula{A} \lor \formula{B}) \land
+        (\formula{A} \lor \formula{C})}, just=\TAss, checked
+      [\sFmla{\True}{\formula{A}}, just={\TRule{\True}{\lor}[1]}
+        [\sFmla{\False}{\formula{A} \lor \formula{B}},
+          just={\TRule{\False}{\land}[2]}]
+        [\sFmla{\False}{\formula{A} \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}]
+      ]
+      [\sFmla{\True}{\formula{B} \land \formula{C}},
+        just={\TRule{\True}{\lor}[1]}
+        [\sFmla{\False}{\formula{A} \lor \formula{B}},
+          just={\TRule{\False}{\land}[2]}]
+        [\sFmla{\False}{\formula{A} \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}]
+      ]
+    ]
+  ]
+\end{oltableau}
+ఇప్పుడు $!A \lor !B$ను కలిగి ఉన్న అన్ని శాఖలకూ
+$\TRule{\False}{\lor}$ను వర్తింపజేయవచ్చు:
+\begin{oltableau}
+  [\sFmla{\True}{\formula{A} \lor (\formula{B} \land \formula{C})},
+    just=\TAss, checked
+    [\sFmla{\False}{(\formula{A} \lor \formula{B}) \land
+        (\formula{A} \lor \formula{C})}, just=\TAss, checked
+      [\sFmla{\True}{\formula{A}}, just={\TRule{\True}{\lor}[1]}
+        [\sFmla{\False}{\formula{A} \lor \formula{B}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\formula{A}}, just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\formula{B}},
+              just={\TRule{\False}{\lor}[4]}, close]
+          ]
+        ]
+        [\sFmla{\False}{\formula{A} \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}]
+      ]
+      [\sFmla{\True}{\formula{B} \land \formula{C}},
+        just={\TRule{\True}{\lor}[1]}
+        [\sFmla{\False}{\formula{A} \lor \formula{B}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\formula{A}}, just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\formula{B}},
+              just={\TRule{\False}{\lor}[4]}]
+          ]
+        ]
+        [\sFmla{\False}{\formula{A} \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}]
+      ]
+    ]
+  ]
+\end{oltableau}
+అన్నిటికంటే ఎడమ శాఖ ఇప్పుడు సంవృతమైంది. ఇప్పుడు $!A \lor !C$కు
+$\TRule{\False}{\lor}$ను వర్తింపజేద్దాం:
+\begin{oltableau}
+  [\sFmla{\True}{\formula{A} \lor (\formula{B} \land \formula{C})},
+    just=\TAss, checked
+    [\sFmla{\False}{(\formula{A} \lor \formula{B}) \land
+        (\formula{A} \lor \formula{C})}, just=\TAss, checked
+      [\sFmla{\True}{\formula{A}}, just={\TRule{\True}{\lor}[1]}
+        [\sFmla{\False}{\formula{A} \lor \formula{B}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\formula{A}},
+            just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\formula{B}},
+              just={\TRule{\False}{\lor}[4]}, close]
+          ]
+        ]
+        [\sFmla{\False}{\formula{A} \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\formula{A}},
+            just={\TRule{\False}{\lor}[4]}, move by=2
+            [\sFmla{\False}{\formula{C}},
+              just={\TRule{\False}{\lor}[4]}, close]
+          ]
+        ]
+      ]
+      [\sFmla{\True}{\formula{B} \land \formula{C}},
+        just={\TRule{\True}{\lor}[1]}
+        [\sFmla{\False}{\formula{A} \lor \formula{B}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\formula{A}},
+            just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\formula{B}},
+              just={\TRule{\False}{\lor}[4]}
+            ]
+          ]
+        ]
+        [\sFmla{\False}{\formula{A} \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\formula{A}},
+            just={\TRule{\False}{\lor}[4]}, move by=2
+            [\sFmla{\False}{\formula{C}},
+              just={\TRule{\False}{\lor}[4]}]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+స్పష్టత కోసం $\TRule{\False}{\lor}$ను రెండోసారి వర్తింపజేసిన
+ఫలితాన్ని కిందికి కదిలించామని గమనించండి. ఇక్కడ సమర్థనలు ఒకేలా
+ఉంటాయి కనుక అది అవసరమయ్యేది కాదు.
+
+రెండు శాఖలు ఇంకా వివృతంగా ఉన్నాయి; వరుస~$3$లోని
+$\sFmla{\True}{!B \land !C}$కు తనిఖీ గుర్తు ఇంకా లేదు. దానికి
+$\TRule{\True}{\land}$ను వర్తింపజేసి సంవృత !!{tableau}ను పొందుతాం:
+\begin{oltableau}
+  [\sFmla{\True}{\formula{A} \lor (\formula{B} \land \formula{C})},
+    just=\TAss, checked
+    [\sFmla{\False}{(\formula{A} \lor \formula{B}) \land
+        (\formula{A} \lor \formula{C})}, just=\TAss, checked
+      [\sFmla{\True}{\formula{A}}, just={\TRule{\True}{\lor}[1]}
+        [\sFmla{\False}{\formula{A} \lor \formula{B}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\formula{A}},
+            just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\formula{B}},
+              just={\TRule{\False}{\lor}[4]}, close]
+          ]
+        ]
+        [\sFmla{\False}{\formula{A} \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\formula{A}},
+            just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\formula{C}},
+              just={\TRule{\False}{\lor}[4]}, close]
+          ]
+        ]
+      ]
+      [\sFmla{\True}{\formula{B} \land \formula{C}},
+        just={\TRule{\True}{\lor}[1]}, checked
+        [\sFmla{\False}{\formula{A} \lor \formula{B}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\formula{A}},
+            just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\formula{B}},
+              just={\TRule{\False}{\lor}[4]}
+              [\sFmla{\True}{\formula{B}},
+                just={\TRule{\True}{\land}[3]}
+                [\sFmla{\True}{\formula{C}},
+                  just={\TRule{\True}{\land}[3]},close
+                ]
+              ]
+            ]
+          ]
+        ]
+        [\sFmla{\False}{\formula{A} \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\formula{A}},
+            just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\formula{C}},
+              just={\TRule{\False}{\lor}[4]}
+              [\sFmla{\True}{\formula{B}},
+                just={\TRule{\True}{\land}[3]}
+                [\sFmla{\True}{\formula{C}},
+                  just={\TRule{\True}{\land}[3]},close
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+
+పోలిక కోసం, నియమాలను వేరే క్రమంలో వర్తింపజేసిన అదే పరికల్పనల
+సమితికి సంవృత !!{tableau} ఇది:
+\begin{oltableau}
+  [\sFmla{\True}{\formula{A} \lor (\formula{B} \land \formula{C})},
+    just=\TAss, checked
+    [\sFmla{\False}{(\formula{A} \lor \formula{B}) \land
+        (\formula{A} \lor \formula{C})}, just=\TAss, checked
+      [\sFmla{\False}{\formula{A} \lor \formula{B}},
+        just={\TRule{\False}{\land}[2]}, checked
+        [\sFmla{\False}{\formula{A}},
+          just={\TRule{\False}{\lor}[3]}
+          [\sFmla{\False}{\formula{B}},
+            just={\TRule{\False}{\lor}[3]}
+            [\sFmla{\True}{\formula{A}},
+              just={\TRule{\True}{\lor}[1]},close
+            ]
+            [\sFmla{\True}{\formula{B} \land \formula{C}},
+              just={\TRule{\True}{\lor}[1]}, checked
+              [\sFmla{\True}{\formula{B}},
+                just={\TRule{\True}{\land}[6]}
+                [\sFmla{\True}{\formula{C}},
+                  just={\TRule{\True}{\land}[6]},close
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+      [\sFmla{\False}{\formula{A} \lor \formula{C}},
+        just={\TRule{\False}{\land}[2]}, checked
+        [\sFmla{\False}{\formula{A}},
+          just={\TRule{\False}{\lor}[3]}
+          [\sFmla{\False}{\formula{C}},
+            just={\TRule{\False}{\lor}[3]}
+            [\sFmla{\True}{\formula{A}},
+              just={\TRule{\True}{\lor}[1]},close
+            ]
+            [\sFmla{\True}{\formula{B} \land \formula{C}},
+              just={\TRule{\True}{\lor}[1]}, checked
+              [\sFmla{\True}{\formula{B}},
+                just={\TRule{\True}{\land}[6]}
+                [\sFmla{\True}{\formula{C}},
+                  just={\TRule{\True}{\land}[6]},close
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+\end{ex}
+
+\begin{prob}
+కిందివాటికి సంవృత !!{tableau}s ఇవ్వండి:
+\begin{enumerate}
+\item $\sFmla{\True}{!A \land (!B \land !C)}, \sFmla{\False}{(!A \land !B) \land !C}$.
+\item $\sFmla{\True}{!A \lor (!B \lor !C)}, \sFmla{\False}{(!A \lor !B) \lor !C}$.
+\item $\sFmla{\True}{!A \lif (!B \lif !C)}, \sFmla{\False}{!B \lif (!A \lif !C)}$.
+\item $\sFmla{\True}{!A}, \sFmla{\False}{\lnot\lnot !A}$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+కిందివాటికి సంవృత !!{tableau}s ఇవ్వండి:
+\begin{enumerate}
+\item $\sFmla{\True}{(!A \lor !B) \lif !C}, \sFmla{\False}{!A \lif !C}$.
+\item $\sFmla{\True}{(!A \lif !C) \land (!B \lif !C)}, \sFmla{\False}{(!A \lor !B) \lif !C}$.
+\item $\sFmla{\False}{\lnot(!A \land \lnot !A)}$.
+\item $\sFmla{\True}{!B \lif !A}, \sFmla{\False}{\lnot !A \lif \lnot !B}$.
+\item $\sFmla{\False}{(!A \lif \lnot !A) \lif \lnot !A}$.
+\item $\sFmla{\False}{\lnot(!A \lif !B) \lif \lnot !B}$.
+\item $\sFmla{\True}{!A \lif !C}, \sFmla{\False}{\lnot (!A \land \lnot !C)}$.
+\item $\sFmla{\True}{!A \land \lnot !C}, \sFmla{\False}{\lnot (!A \lif !C)}$.
+\item $\sFmla{\True}{!A \lor !B}, \sFmla{\True}{\lnot !B}, \sFmla{\False}{!A}$.
+\item $\sFmla{\True}{\lnot !A \lor \lnot !B}, \sFmla{\False}{\lnot(!A \land !B)}$.
+\item $\sFmla{\False}{(\lnot !A \land \lnot !B) \lif\lnot(!A \lor !B)}$.
+\item $\sFmla{\False}{\lnot(!A \lor !B) \lif (\lnot !A \land \lnot !B)}$.
+\end{enumerate}
+\sourcecorrection{OLTETAB-002}{తొమ్మిదవ అంశంలో ఆంగ్ల మూలం
+$!A \lor !B$, $\lnot !B$లను ఒకే $\True$-చిహ్నిత సూత్రంలో కామాతో
+కలిపింది. ఇది చిహ్నిత సూత్ర నిర్వచనానికి సరిపోదు. అవసరమైన మూడు
+పరికల్పనలను విడిగా $\sFmla{\True}{!A \lor !B}$,
+$\sFmla{\True}{\lnot !B}$, $\sFmla{\False}{!A}$గా రాశాం.}
+\end{prob}
+
+\begin{prob}
+కిందివాటికి సంవృత !!{tableau}s ఇవ్వండి:
+\begin{enumerate}
+\item $\sFmla{\True}{\lnot(!A \lif !B)}, \sFmla{\False}{!A}$.
+\item $\sFmla{\True}{\lnot(!A \land !B)}, \sFmla{\False}{\lnot !A \lor \lnot !B}$.
+\item $\sFmla{\True}{!A \lif !B}, \sFmla{\False}{\lnot !A \lor !B}$.
+\item $\sFmla{\False}{\lnot \lnot !A \lif !A}$.
+\item $\sFmla{\True}{!A \lif !B}, \sFmla{\True}{\lnot !A \lif !B}, \sFmla{\False}{!B}$.
+\item $\sFmla{\True}{(!A \land !B) \lif !C}, \sFmla{\False}{(!A \lif !C) \lor (!B \lif !C)}$.
+\item $\sFmla{\True}{(!A \lif !B) \lif !A}, \sFmla{\False}{!A}$.
+\item $\sFmla{\False}{(!A \lif !B) \lor (!B \lif !C)}$.
+\end{enumerate}
+\end{prob}
+
+\end{document}

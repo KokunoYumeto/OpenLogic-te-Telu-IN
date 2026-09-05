@@ -10,6 +10,7 @@
     "html:pages": "node scripts/build-html.mjs --pages",
     "audit:html": "node scripts/audit-html.mjs",
     "audit:html:pages": "node scripts/audit-html.mjs --pages",
+    "evidence:reviews": "node scripts/build-review-log.mjs && node scripts/build-translation-decisions.mjs && python scripts/validate-translation-decisions.py",
     "check:sets": "node scripts/audit-batch.mjs 4 10 001"
   },
   "dependencies": {"katex": "0.18.5"}

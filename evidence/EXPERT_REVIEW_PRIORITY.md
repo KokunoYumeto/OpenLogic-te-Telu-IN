@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 94 of 722 draft units**. This view selects 66 of 88 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 108 of 722 draft units**. This view selects 79 of 101 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -163,6 +163,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0085; first-order-logic/natural-deduction/rules-and-proofs; translation/content/first-order-logic/natural-deduction/rules-and-proofs.tex:16-45; printed/PDF page pending; OLP-0088; first-order-logic/natural-deduction/derivations; translation/content/first-order-logic/natural-deduction/derivations.tex:23-41; printed/PDF page pending; OLP-0095; first-order-logic/natural-deduction/soundness; translation/content/first-order-logic/natural-deduction/soundness.tex:52-58; printed/PDF page pending
 
 - Please double-check: Please double-check whether “పరికల్పన / పూర్వాధారం / నిష్కర్ష / ప్రవేశ నియమం / తొలగింపు నియమం / ఉపసంహరించిన / ఉపసంహరించని / ఉప-నిరూపణ” is idiomatic and technically standard for “assumption / premise / conclusion / introduction rule / elimination rule / discharged / undischarged / subderivation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T039 — signed formula / truth-value sign / tableau / closed branch / open branch / checkmark / eigenvariable condition / cut rule
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: చిహ్నిత సూత్రం / సత్యమూల్య సంకేతం / టాబ్లో / సంవృత శాఖ / వివృత శాఖ / తనిఖీ గుర్తు / ఐగెన్ చరరాశి షరతు / కట్ నియమం
+
+- Occurrences: OLP-0099; first-order-logic/tableaux/rules-and-proofs; translation/content/first-order-logic/tableaux/rules-and-proofs.tex:15-25; printed/PDF page pending; OLP-0099; first-order-logic/tableaux/rules-and-proofs; translation/content/first-order-logic/tableaux/rules-and-proofs.tex:15-25; printed/PDF page pending; OLP-0099; first-order-logic/tableaux/rules-and-proofs; translation/content/first-order-logic/tableaux/rules-and-proofs.tex:44-49; printed/PDF page pending; OLP-0102; first-order-logic/tableaux/derivations; translation/content/first-order-logic/tableaux/derivations.tex:35-40; printed/PDF page pending; OLP-0103; first-order-logic/tableaux/proving-things; translation/content/first-order-logic/tableaux/proving-things.tex:39-47; printed/PDF page pending; OLP-0101; first-order-logic/tableaux/quantifier-rules; translation/content/first-order-logic/tableaux/quantifier-rules.tex:27-56; printed/PDF page pending; OLP-0100; first-order-logic/tableaux/propositional-rules; translation/content/first-order-logic/tableaux/propositional-rules.tex:77-91; printed/PDF page pending
+
+- Please double-check: Please double-check whether “చిహ్నిత సూత్రం / సత్యమూల్య సంకేతం / టాబ్లో / సంవృత శాఖ / వివృత శాఖ / తనిఖీ గుర్తు / ఐగెన్ చరరాశి షరతు / కట్ నియమం” is idiomatic and technically standard for “signed formula / truth-value sign / tableau / closed branch / open branch / checkmark / eigenvariable condition / cut rule” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -663,3 +673,123 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0095; first-order-logic/natural-deduction/soundness; translation/content/first-order-logic/natural-deduction/soundness.tex:99; printed/PDF page pending
 
 - Please double-check: Please double-check that the FOL branch names a structure M and the propositional branch a valuation v, with both satisfaction readings preserved.
+
+## REV-OLTETAB-001 — OLTETAB-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: named tableaux rather than natural deduction, as fixed by the chapter path, IDs, tag and imports; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0098; first-order-logic/tableaux/tableaux; translation/content/first-order-logic/tableaux/tableaux.tex:17; printed/PDF page pending
+
+- Please double-check: Please double-check that the scope note names tableaux, rather than natural deduction, while preserving the chapter driver and imports.
+
+## REV-OLTETAB-002 — OLTETAB-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: split A-or-B and not-B into separate true-signed assumptions while retaining false A; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0103; first-order-logic/tableaux/proving-things; translation/content/first-order-logic/tableaux/proving-things.tex:445; printed/PDF page pending
+
+- Please double-check: Please double-check that the initial tableau assumptions are three separate signed formulas: true A-or-B, false B, and false A.
+
+## REV-OLTETAB-003 — OLTETAB-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: referred to lines 1 and 4, matching the reusable true universal and false existential in the adjacent trees; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0104; first-order-logic/tableaux/proving-things-quant; translation/content/first-order-logic/tableaux/proving-things-quant.tex:289; printed/PDF page pending
+
+- Please double-check: Please double-check that the reusable quantifier lines are identified as lines 1 and 4, matching the two completed tableaux.
+
+## REV-OLTETAB-004 — OLTETAB-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: placed the D-list in set braces before asserting it is a finite subset of Gamma; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0105; first-order-logic/tableaux/proof-theoretic-notions; translation/content/first-order-logic/tableaux/proof-theoretic-notions.tex:110; printed/PDF page pending
+
+- Please double-check: Please double-check that each finite premise family is displayed as a set contained in Gamma.
+
+## REV-OLTETAB-005 — OLTETAB-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used independent final index m for Gamma_1, matching the immediately following display and rest of the proof; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0106; first-order-logic/tableaux/provability-consistency; translation/content/first-order-logic/tableaux/provability-consistency.tex:28; printed/PDF page pending
+
+- Please double-check: Please double-check that Gamma_1 uses the same terminal index m in its definition and both later occurrences.
+
+## REV-OLTETAB-006 — OLTETAB-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: applied true-negation to true not-A, used the newly inserted line rather than a false fixed number, and removed the stray TeX character; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0106; first-order-logic/tableaux/provability-consistency; translation/content/first-order-logic/tableaux/provability-consistency.tex:107; printed/PDF page pending
+
+- Please double-check: Please double-check that true negation is applied to a true signed negation and that its conclusion is added on a fresh generic line.
+
+## REV-OLTETAB-007 — OLTETAB-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored all eight sFmla calls to separate sign and formula arguments while preserving their signs, formulas and closures; adjacent sourcecorrection discloses the repeated repair
+
+- Occurrences: OLP-0107; first-order-logic/tableaux/provability-propositional; translation/content/first-order-logic/tableaux/provability-propositional.tex:59; printed/PDF page pending
+
+- Please double-check: Please double-check that all eight repaired signed-formula nodes have both sign and formula arguments while leaving the displayed proof strategy unchanged.
+
+## REV-OLTETAB-008 — OLTETAB-008
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used metavariable A consistently in both universal-rule premises, conclusions and semantic arguments; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0109; first-order-logic/tableaux/soundness; translation/content/first-order-logic/tableaux/soundness.tex:162; printed/PDF page pending
+
+- Please double-check: Please double-check that the true- and false-universal soundness cases use A consistently in their premises, conclusions, and satisfaction claims.
+
+## REV-OLTETAB-009 — OLTETAB-009
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: identified line 3 as true A(s_1), matching the displayed equality and following substitution calculation; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0110; first-order-logic/tableaux/identity; translation/content/first-order-logic/tableaux/identity.tex:71; printed/PDF page pending
+
+- Please double-check: Please double-check that the symmetry explanation identifies line 3 as true A(s_1), matching the displayed tableau.
+
+## REV-OLTETAB-010 — OLTETAB-010
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: named line 2 as eq(s_1,s_2), which is A(s_2) under the stated A(x)=eq(s_1,x); adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0110; first-order-logic/tableaux/identity; translation/content/first-order-logic/tableaux/identity.tex:95; printed/PDF page pending
+
+- Please double-check: Please double-check that the transitivity explanation identifies line 2 as s_1 equals s_2, matching the displayed tableau.
+
+## REV-OLTETAB-011 — OLTETAB-011
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used the true sign in the true-equality conclusion while retaining the separately stated analogous false case; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0111; first-order-logic/tableaux/soundness-identity; translation/content/first-order-logic/tableaux/soundness-identity.tex:45; printed/PDF page pending
+
+- Please double-check: Please double-check that the true-equality soundness conclusion carries the true sign, with the analogous false case still stated separately.
+
+## REV-OLTETAB-012 — OLTETAB-012
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: removed only the dangling comma after the two signed assumptions; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0108; first-order-logic/tableaux/provability-quantifiers; translation/content/first-order-logic/tableaux/provability-quantifiers.tex:85; printed/PDF page pending
+
+- Please double-check: Please double-check that only the dangling comma after the two signed assumptions was removed and no tableau formula changed.

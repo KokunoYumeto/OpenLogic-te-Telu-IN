@@ -1,0 +1,82 @@
+{
+  "schema": "openlogic-translation-decision-qa/1",
+  "status": "pass",
+  "schema_contract": {
+    "source_repository": "https://github.com/KokunoYumeto/OpenLogic-translations",
+    "commit": "811091d54be4989918864732073279a588340e6f",
+    "bytes": 10787,
+    "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+    "draft": "2020-12"
+  },
+  "validation_engine": {
+    "name": "python-jsonschema",
+    "version": "4.26.0",
+    "format_checker": true
+  },
+  "coverage": {
+    "state": "partial",
+    "source_units": 108,
+    "corpus_units": 722,
+    "reader_units": null
+  },
+  "counts": {
+    "decisions": 101,
+    "terminology": 39,
+    "source_corrections": 62,
+    "occurrences": 192,
+    "priority_urgent_or_high": 23,
+    "distinct_source_and_target_files_checked": 160,
+    "public_evidence_file_references_checked": 439,
+    "reader_locator_status": {
+      "pending": 192
+    }
+  },
+  "checks": {
+    "canonical_schema_bytes_exact": true,
+    "json_schema_validation": true,
+    "generator_artifact_hash": true,
+    "primary_ledger_count_reconciliation": true,
+    "decision_ids_unique": true,
+    "occurrence_ids_unique": true,
+    "source_target_file_hashes": true,
+    "source_target_byte_span_excerpts": true,
+    "public_evidence_reference_hashes": true,
+    "plain_please_double_check_questions": true,
+    "reader_pages_never_guessed": true,
+    "full_readable_view_complete": true,
+    "priority_view_complete": true,
+    "occurrence_csv_reconciled": true
+  },
+  "artifacts": [
+    {
+      "path": "evidence/START_HERE.md",
+      "bytes": 2340,
+      "sha256": "962c7d9b31a04867540e8b041608d68a765a02dd9d1ff0f6653f503a5237eefc"
+    },
+    {
+      "path": "evidence/TRANSLATION_DECISIONS_FULL.md",
+      "bytes": 293794,
+      "sha256": "25d6f1aed813dcaf5eecd1c5098c6ed59631a1371f73a95cb7f759ee16bc0bcb"
+    },
+    {
+      "path": "evidence/PRIORITY_REVIEW.md",
+      "bytes": 34671,
+      "sha256": "13c6887503ef4191effa948038d39dc581c562868db2c68b58671ba5e4bb0822"
+    },
+    {
+      "path": "evidence/DECISION_OCCURRENCES.csv",
+      "bytes": 289271,
+      "sha256": "5f4978a7e15044e0771009b0554a78745067d5471e050447de6a544ac9c9be54"
+    },
+    {
+      "path": "evidence/DECISIONS.json",
+      "bytes": 1383673,
+      "sha256": "bececb1a204434eede01eb1a949e72d445a8bc49a841110d30f188fff697bfe2"
+    },
+    {
+      "path": "evidence/translation-decision.schema.json",
+      "bytes": 10787,
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90"
+    }
+  ]
+}

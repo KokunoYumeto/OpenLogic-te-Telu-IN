@@ -1,0 +1,58 @@
+% Part: first-order-logic
+% Chapter: tableaux
+
+\documentclass[../../../include/open-logic-chapter]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olchapter{fol}{tab}{టాబ్లోలు}}
+      {\olchapter{pl}{tab}{టాబ్లోలు}}
+
+\begin{editorial}
+ఈ అధ్యాయం చిహ్నిత విశ్లేషణాత్మక టాబ్లో వ్యవస్థను పరిచయం చేస్తుంది.
+
+నిరూపణ వ్యవస్థగా టాబ్లోలకు సంబంధించిన విషయాన్ని చేర్చడానికి లేదా
+తొలగించడానికి ``prfTab'' ట్యాగును ఉపయోగించండి.
+\sourcecorrection{OLTETAB-001}{ఈ టాబ్లో అధ్యాయం, దాని
+\texttt{prfTab} ట్యాగు గురించి చెప్పే చోట ఆంగ్ల మూలం పొరపాటుగా
+“natural deduction” అని పేర్కొంది. అధ్యాయ మార్గం, గుర్తింపులు,
+దిగుమతులన్నిటికీ అనుగుణంగా దాన్ని “టాబ్లోలు”గా సరిచేశాం.}
+\end{editorial}
+
+\olimport{rules-and-proofs}
+
+\olimport{propositional-rules}
+
+\iftag{FOL}{%
+  \olimport{quantifier-rules}
+}{}
+
+\olimport{derivations}
+
+\olimport{proving-things}
+
+\iftag{FOL}{%
+  \olimport{proving-things-quant}
+}{}
+
+\olimport{proof-theoretic-notions}
+
+\olimport{provability-consistency}
+
+\olimport{provability-propositional}
+
+\iftag{FOL}{%
+  \olimport{provability-quantifiers}
+}{}
+
+\olimport{soundness}
+
+\iftag{FOL}{%
+  \olimport{identity}
+  \olimport{soundness-identity}
+}{}
+
+\OLEndChapterHook
+
+\end{document}

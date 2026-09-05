@@ -1,0 +1,110 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: quantifier-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{tab}{qrl}
+
+\olsection{పరిమాణీకరణిక నియమాలు}
+
+\subsection{$\lforall$కు నియమాలు}
+
+\begin{defish}
+\AxiomC{\sFmla{\True}{\lforall[x][!A(x)]}}
+\RightLabel{\TRule{\True}{\forall}}
+\UnaryInfC{\sFmla{\True}{!A(t)}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\False}{\lforall[x][!A(x)]}}
+\RightLabel{\TRule{\False}{\lforall}}
+\UnaryInfC{\sFmla{\False}{!A(a)}}
+\DisplayProof
+\end{defish}
+
+\TRule{\True}{\lforall}లో $t$ ఒక సంవృత పదం (అంటే చరరాశులు
+లేని పదం). \TRule{\False}{\lforall}లో $a$ అనేది
+\TRule{\False}{\lforall} నియమం పైనున్న శాఖలో ఎక్కడా కనిపించకూడని
+ఒక !!a{constant}. \TRule{\False}{\forall} నిగమనం యొక్క
+\emph{ఐగెన్ చరరాశి} అని $a$ను అంటాం.\footnote{పై నియమంలో $a$ ఒక
+!!a{constant} అయినప్పటికీ “ఐగెన్ చరరాశి” అనే పేరునే ఉపయోగిస్తాం.
+దీనికి చారిత్రక కారణాలున్నాయి.}
+
+\subsection{$\lexists$కు నియమాలు}
+
+\begin{defish}
+\AxiomC{\sFmla{\True}{\lexists[x][!A(x)]}}
+\RightLabel{\TRule{\True}{\lexists}}
+\UnaryInfC{\sFmla{\True}{!A(a)}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\False}{\lexists[x][!A(x)]}}
+\RightLabel{\TRule{\False}{\lexists}}
+\UnaryInfC{\sFmla{\False}{!A(t)}}
+\DisplayProof
+\end{defish}
+
+ఇక్కడ కూడా $t$ ఒక సంవృత పదం; $a$ అనేది
+\TRule{\True}{\lexists} నియమం పైనున్న శాఖలో కనిపించని ఒక
+!!a{constant}. \TRule{\True}{\lexists} నిగమనం యొక్క
+\emph{ఐగెన్ చరరాశి} అని $a$ను అంటాం.
+
+\TRule{\False}{\lforall} లేదా \TRule{\True}{\lexists} నిగమనం
+పైనున్న శాఖలో ఐగెన్ చరరాశి కనిపించకూడదనే షరతును
+\emph{ఐగెన్ చరరాశి షరతు} అంటాం.
+
+\begin{explain}
+!!{variable}~$x$ స్వేచ్ఛగా ఉన్న ఒక !!a{formula}ను $!A$ సూచిస్తే,
+దాన్ని $!A(x)$గా రాస్తామనే ఆచారాన్ని గుర్తుచేసుకోండి. అదే సందర్భంలో
+$!A(t)$ అనేది~$\Subst{!A}{t}{x}$కు సంక్షిప్త రూపం. కాబట్టి
+\TRule{\False}{\lexists} నియమాన్ని ఇలా కూడా రాయవచ్చు:
+\begin{prooftree}
+  \AxiomC{\sFmla{\False}{\lexists[x][!A]}}
+  \RightLabel{\TRule{\False}{\lexists}}
+  \UnaryInfC{\sFmla{\False}{\Subst{!A}{t}{x}}}
+\end{prooftree}
+$t$ ఇప్పటికే~$!A$లో కనిపించవచ్చని గమనించండి; ఉదాహరణకు $!A$
+అనేది~$\Atom{\Obj P}{t,x}$ కావచ్చు. అందువల్ల
+$\sFmla{\False}{\Atom{\Obj P}{t,t}}$ను
+$ \sFmla{\False}{\lexists[x][\Atom{\Obj P}{t,x}]}$ నుంచి
+నిగమించడం~\TRule{\False}{\lexists}ను సరిగ్గా వర్తింపజేయడమే. అయితే
+\TRule{\False}{\lforall},~\TRule{\True}{\lexists}లలోని ఐగెన్
+చరరాశి షరతులు !!{constant}~$a$ అనేది $!A$లో కనిపించకూడదని కోరుతాయి.
+కాబట్టి
+$\sFmla{\False}{\Atom{\Obj P}{a,a}}$ను
+$\sFmla{\False}{\lforall[x][\Atom{\Obj P}{a,x}]}$ నుంచి
+$\TRule{\False}{\lforall}$ ఉపయోగించి సరిగ్గా నిగమించలేం.
+\end{explain}
+
+\begin{explain}
+\TRule{\True}{\lforall}, \TRule{\False}{\lexists}లలో పదం~$t$పై
+ఎలాంటి పరిమితులూ లేవు. మరోవైపు, \TRule{\True}{\lexists},
+\TRule{\False}{\lforall} నియమాల్లో ఐగెన్ చరరాశి షరతు,
+!!{constant}~$a$ ఆయా నిగమనం పైనున్న శాఖల్లో ఎక్కడా కనిపించకూడదని
+కోరుతుంది. వ్యవస్థ నిర్దుష్టంగా ఉండేలా ఈ షరతు అవసరం. ఈ షరతు లేకపోతే
+$\lexists[x][\formula{A}(x)] \lif \lforall[x][\formula{A}(x)]$కు
+కిందిది సంవృత !!{tableau} అవుతుంది:
+\begin{center}
+\begin{tableau}{}
+  [\sFmla{\False}{\lexists[x][\formula{A}(x)] \lif \lforall[x][\formula{A}(x)]}, just=\TAss
+    [\sFmla{\True}{\lexists[x][\formula{A}(x)]},
+      just={\TRule{\False}{\lif}[1]}
+      [\sFmla{\False}{\lforall[x][\formula{A}(x)]},
+        just={\TRule{\False}{\lif}[1]}
+        [\sFmla{\True}{\formula{A}(a)},
+          just={\TRule{\True}{\lexists}[2]}
+          [\sFmla{\False}{\formula{A}(a)},
+            just={\TRule{\False}{\lforall}[3]}, close]
+        ]
+      ]
+    ]
+  ]
+\end{tableau}
+\end{center}
+అయితే $\lexists[x][\formula{A}(x)] \lif
+\lforall[x][\formula{A}(x)]$ చెల్లుబాటు కాదు.
+\end{explain}
+
+\end{document}

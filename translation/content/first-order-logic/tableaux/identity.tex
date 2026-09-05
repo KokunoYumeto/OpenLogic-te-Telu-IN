@@ -1,0 +1,114 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{tab}{ide}
+
+\olsection{\usetoken{S}{identity}తో \usetoken{P}{tableau}}
+
+!!{identity}తో !!^{tableau}sకు అదనపు నిగమన నియమాలు అవసరం.
+$\eq$కు నియమాలు కిందివి ($t$, $t_1$, $t_2$లు సంవృత పదాలు):
+
+\begin{defish}
+\AxiomC{}
+\RightLabel{$\eq$}
+\UnaryInfC{\sFmla{\True}{\eq[t][t]}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\True}{\eq[t_1][t_2]}}
+\noLine
+\UnaryInfC{\sFmla{\True}{!A(t_1)}}
+\RightLabel{$\TRule{\True}{\eq}$}
+\UnaryInfC{\sFmla{\True}{!A(t_2)}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\True}{\eq[t_1][t_2]}}
+\noLine
+\UnaryInfC{\sFmla{\False}{!A(t_1)}}
+\RightLabel{$\TRule{\False}{\eq}$}
+\UnaryInfC{\sFmla{\False}{!A(t_2)}}
+\DisplayProof
+\end{defish}
+మిగతా అన్ని నియమాలకు భిన్నంగా, $\TRule{\True}{\eq}$,
+$\TRule{\False}{\eq}$లకు శాఖలో ఇప్పటికే \emph{రెండు} చిహ్నిత
+!!{formula}s కనిపించాలి: $\sFmla{\True}{\eq[t_1][t_2]}$,
+$\sFmla{S}{!A(t_1)}$ రెండూ.
+
+\begin{ex}
+$s$, $t$లు సంవృత పదాలైతే $\eq[s][t], !A(s) \Proves !A(t)$:
+\begin{oltableau}
+  [\sFmla{\False}{\formula{A}(t)}, just = \TAss
+    [\sFmla{\True}{\eq[s][t]}, just = \TAss
+      [\sFmla{\True}{\formula{A}(s)}, just = \TAss
+        [\sFmla{\True}{\formula{A}(t)}, just={\TRule{\True}{\eq}[2, 3]}, close]
+      ]
+    ]
+  ]
+\end{oltableau}
+ఇది సమానమైన వాటి ప్రతిస్థాపన సూత్రం లేదా లైబ్నిట్స్ నియమంగా
+తెలిసినదై ఉండవచ్చు.
+
+!!^{tableau}s, $\eq$ సమమితమైనదని కూడా నిరూపిస్తాయి; అంటే
+$\eq[s_1][s_2] \Proves \eq[s_2][s_1]$:
+\begin{oltableau}
+  [\sFmla{\False}{\eq[s_2][s_1]}, just = \TAss
+    [\sFmla{\True}{\eq[s_1][s_2]}, just = \TAss
+      [\sFmla{\True}{\eq[s_1][s_1]}, just = {$\eq$}
+        [\sFmla{\True}{\eq[s_2][s_1]}, just = {\TRule{\True}{\eq}[2, 3]}, close]
+      ]
+    ]
+  ]
+\end{oltableau}
+ఇక్కడ వరుస $2$, $\TRule{\True}{\eq}$కు మొదటి పూర్వాపేక్ష
+!!{formula}~$\sFmla{\True}{\eq[s_1][s_2]}$. వరుస~$3$,
+$\sFmla{\True}{!A(s_1)}$ రూపంలోని రెండవది---$!A(x)$ను
+$\eq[x][s_1]$గా భావించండి; అప్పుడు $!A(s_1)$ అనేది
+$\eq[s_1][s_1]$, $!A(s_2)$ అనేది $\eq[s_2][s_1]$.
+\sourcecorrection{OLTETAB-009}{ఈ సమమితి ఉదాహరణలో ఆంగ్ల మూలం
+వరుస~$3$ను రెండవ పూర్వాపేక్ష $\sFmla{\True}{!A(s_2)}$ రూపంలో
+ఉందని చెప్పింది. కానీ వెంటనే ఇచ్చిన ప్రతిస్థాపన, ప్రదర్శిత టాబ్లో
+ప్రకారం వరుస~$3$ $!A(s_1)$; $!A(s_2)$ నియమపు నిష్కర్ష. అందువల్ల
+పూర్వాపేక్ష సూచికను $s_1$గా సరిచేశాం.}
+
+$\eq$ సంక్రామకమైనదని కూడా అవి నిరూపిస్తాయి; అంటే
+$\eq[s_1][s_2], \eq[s_2][s_3] \Proves \eq[s_1][s_3]$:
+\begin{oltableau}
+  [\sFmla{\False}{\eq[s_1][s_3]}, just = \TAss
+    [\sFmla{\True}{\eq[s_1][s_2]}, just = \TAss
+      [\sFmla{\True}{\eq[s_2][s_3]}, just = \TAss
+        [\sFmla{\True}{\eq[s_1][s_3]}, just = {\TRule{\True}{\eq}[3, 2]}, close]
+      ]
+    ]
+  ]
+\end{oltableau}
+ఈ !!{tableau}లో $\TRule{\True}{\eq}$కు మొదటి పూర్వాపేక్ష
+!!{formula}, వరుస~$3$లోని $\sFmla{\True}{\eq[s_2][s_3]}$
+($s_2$,~$t_1$ పాత్రను; $s_3$,~$t_2$ పాత్రను పోషిస్తాయి). రెండవ
+పూర్వాపేక్ష, $\sFmla{\True}{!A(s_2)}$ రూపంలో, వరుస~$2$. ఇక్కడ
+$!A(x)$ను $\eq[s_1][x]$గా భావించండి; అప్పుడు $!A(s_2)$ అనేది
+$\eq[s_1][s_2]$గా (అంటే వరుస~$2$గా), $!A(s_3)$ అనేది నిష్కర్షలోని
+!!{formula}~$\eq[s_1][s_3]$గా మారుతుంది.
+\sourcecorrection{OLTETAB-010}{ఈ సంక్రామకత్వ వివరణలో ఆంగ్ల మూలం
+$!A(s_2)$ను సాధారణ నియమ అక్షరాలతో $\eq[t_1][t_2]$గా గుర్తించి,
+దానినే వరుస~$2$ అంది. కానీ ఈ అన్వయంలో $t_1=s_2$, $t_2=s_3$ కనుక ఆ
+రూపం వరుస~$3$ను సూచిస్తుంది. $!A(x)=\eq[s_1][x]$ ప్రకారం వరుస~$2$
+ఖచ్చితంగా $\eq[s_1][s_2]$; అదే రూపాన్ని స్పష్టంగా రాశాం.}
+\end{ex}
+
+\begin{prob}
+కిందివాటికి సంవృత !!{tableau}s ఇవ్వండి:
+\begin{enumerate}
+\item $\sFmla{\False}{\lforall[x][\lforall[y][((x = y \land !A(x))
+      \lif !A(y))]]}$
+\item $\sFmla{\False}{\lexists[x][(!A(x) \land
+    \lforall[y][(!A(y) \lif y = x)])]}$,\\
+  $\sFmla{\True}{\lexists[x][!A(x)] \land
+    \lforall[y][\lforall[z][((!A(y) \land !A(z)) \lif y = z)]]}$
+\end{enumerate}
+\end{prob}
+
+\end{document}

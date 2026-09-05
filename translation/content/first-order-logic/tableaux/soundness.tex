@@ -1,0 +1,253 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: soundness.tex
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{tab}{sou}}
+      {\olfileid{pl}{tab}{sou}}
+
+\olsection{నిర్దుష్టత}
+
+\begin{explain}
+టాబ్లోల వంటి ఒక !!^a{derivation} వ్యవస్థ, వాస్తవంగా అనుగమించని
+వాటిని !!{derive} చేయలేకపోతే \emph{నిర్దుష్టమైనది}. కనుక నిర్దుష్టత
+అనేది !!{derivation} వ్యవస్థలకు హామీగల రక్షణ ధర్మం వంటిది. ఏ
+నిరూపణ-సిద్ధాంత ధర్మాన్ని పరిశీలిస్తున్నామో బట్టి, ఉదాహరణకు కిందివి
+తెలుసుకోవాలనుకుంటాం:
+\begin{enumerate}
+\item !!{derivable} అయిన ప్రతి~$!A$, \iftag{FOL}{చెల్లుబాటు
+  అవుతుంది}{ఒక సర్వసత్యం};
+\item కొన్ని వాక్యాల నుంచి ఒక !!a{sentence} !!{derivable}
+  అయితే, అది వాటి పర్యవసానం కూడా అవుతుంది;
+\item ఒక !!{sentence}s సమితి వైరుధ్యభరితమైతే, అది
+  సంతృప్తిపరచలేనిది.
+\end{enumerate}
+ఒక !!a{derivation} వ్యవస్థకు ఇవి ముఖ్యమైన ధర్మాలు. వీటిలో ఏదైనా
+నెరవేరకపోతే ఆ !!{derivation} వ్యవస్థ లోపభూయిష్టం---అది మితిమీరిన
+వాటిని !!{derive} చేస్తుంది. అందువల్ల ఒక !!a{derivation} వ్యవస్థ
+నిర్దుష్టతను స్థాపించడం అత్యంత ముఖ్యం.
+
+ఈ నిరూపణ-సిద్ధాంత ధర్మాలన్నీ ఏదో ఒక రకమైన సంవృత !!{tableau}s ద్వారా
+నిర్వచించబడ్డాయి. కనుక పై (1)--(3)లను నిరూపించడానికి సంవృత
+!!{tableau}s అర్థపర ధర్మాల గురించి ఏదో ఒకటి నిరూపించాలి. మొదట ఒక
+!!a{signed
+  formula} ఒక నిర్మాణంలో సంతృప్తి చెందడం అంటే ఏమిటో
+నిర్వచించి, ఒక !!{tableau} సంవృతమైతే దాని పరికల్పనలన్నిటినీ ఏ
+నిర్మాణమూ సంతృప్తిపరచదని చూపుతాం. అప్పుడు (1)--(3) ఈ ఫలితపు
+ఉపసిద్ధాంతాలుగా వస్తాయి.
+\end{explain}
+
+\begin{defn}
+\iftag{FOL}{ఒక !!^a{structure}}{ఒక !!^a{valuation}}~$\iftag{FOL}{\Struct{M}}{\pAssign{v}}$,
+!!a{signed formula} $\sFmla{\True}{!A}$ను \emph{సంతృప్తిపరుస్తుంది}
+అంటే $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$; అలాగే
+$\sFmla{\False}{!A}$ను సంతృప్తిపరుస్తుంది అంటే
+$\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$. $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$,
+!!{signed formula}s సమితి~$\Gamma$ను సంతృప్తిపరుస్తుంది అంటే అది
+ప్రతి $\sFmla{S}{!A} \in \Gamma$ను సంతృప్తిపరుస్తుంది. దాన్ని
+సంతృప్తిపరిచే \iftag{FOL}{ఒక !!a{structure}}{ఒక !!a{valuation}}
+ఉంటే $\Gamma$ \emph{సంతృప్తిపరచదగినది}; లేకపోతే
+\emph{సంతృప్తిపరచలేనిది}.
+\end{defn}
+
+\begin{thm}[నిర్దుష్టత]
+  \ollabel{thm:tableau-soundness}
+  $\Gamma$కు ఒక సంవృత !!{tableau} ఉంటే, $\Gamma$
+  సంతృప్తిపరచలేనిది.
+\end{thm}
+
+\begin{proof}
+ఒక !!a{tableau} శాఖపై ఉన్న !!{signed formula}s సమితి
+సంతృప్తిపరచదగినదైతే ఆ శాఖను సంతృప్తిపరచదగినది అందాం; కనీసం ఒక
+సంతృప్తిపరచదగిన శాఖను కలిగి ఉంటే ఒక !!a{tableau}ను
+సంతృప్తిపరచదగినది అందాం.
+
+కింది విషయాన్ని చూపుతాం: ఒక సంతృప్తిపరచదగిన !!{tableau}ను నిగమన
+నియమాల్లో ఒకదానితో విస్తరిస్తే, ఫలితం ఎల్లప్పుడూ
+సంతృప్తిపరచదగిన !!{tableau}. ఇది సిద్ధాంతాన్ని నిరూపిస్తుంది:
+ఏ సంవృత !!{tableau} అయినా $\Gamma$లోని పరికల్పనలు మాత్రమే గల
+!!{tableau}కు నిగమన నియమాలను వర్తింపజేయడం ద్వారా వస్తుంది. కనుక
+$\Gamma$ సంతృప్తిపరచదగినదైతే, దానికోసం ప్రతి !!{tableau} కూడా
+సంతృప్తిపరచదగినదే. కానీ సంవృత !!{tableau} స్పష్టంగా
+సంతృప్తిపరచదగినది కాదు: ప్రతి శాఖలో $\sFmla{\True}{!A}$,
+$\sFmla{\False}{!A}$ రెండూ ఉంటాయి; ఏ నిర్మాణమూ $!A$ను ఒకేసారి
+సంతృప్తిపరచడం, సంతృప్తిపరచకపోవడం చేయలేదు.
+
+కనీసం ఒక సంతృప్తిపరచదగిన శాఖ గల ఒక సంతృప్తిపరచదగిన !!a{tableau}
+ఉందనుకుందాం. నిగమన నియమాన్ని వర్తింపజేయడం ఒక శాఖకు
+!!{signed formula}sను చేర్చుతుంది లేదా ఒక శాఖను రెండుగా చీలుస్తుంది. ఆ నియమ
+వర్తింపు వల్ల విస్తరించని సంతృప్తిపరచదగిన శాఖ ఒకటి !!{tableau}లో
+ఉంటే, విస్తరించిన !!{tableau}లోనూ అది సంతృప్తిపరచదగిన శాఖగానే
+ఉంటుంది; కనుక విస్తరించిన !!{tableau} సంతృప్తిపరచదగినది. అందువల్ల నియమం
+ఒక సంతృప్తిపరచదగిన శాఖకు వర్తించే సందర్భాన్ని మాత్రమే పరిశీలించాలి.
+
+ఆ శాఖపై ఉన్న !!{signed formula}s సమితిని $\Gamma$ అందాం; నియమం
+వర్తించే !!{signed formula}ను $\sFmla{S}{!A} \in \Gamma$ అందాం.
+నియమం శాఖను చీల్చకపోతే, విస్తరించిన శాఖ, అంటే నియమపు నిష్కర్షలతో
+కలిసిన $\Gamma$, ఇంకా సంతృప్తిపరచదగినదని చూపాలి. నియమం శాఖను
+చీల్చితే, ఫలితంగా వచ్చే రెండు శాఖల్లో కనీసం ఒకటి
+సంతృప్తిపరచదగినదని చూపాలి.
+
+మొదట, శాఖను చీల్చని సాధ్యమైన నిగమనాలను పరిశీలిద్దాం.
+\begin{enumerate}
+\item $\sFmla{\True}{\lnot !B} \in \Gamma$కు
+  $\TRule{\True}{\lnot}$ను వర్తింపజేసి శాఖను విస్తరించాం. అప్పుడు
+  విస్తరించిన శాఖలోని !!{signed formula}s $\Gamma \cup
+  \{\sFmla{\False}{!B}\}$. $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$
+  అనుకుందాం. ముఖ్యంగా,
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\lnot !B}$. అందువల్ల
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$; అంటే
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$, $\sFmla{\False}{!B}$ను
+  సంతృప్తిపరుస్తుంది.
+\item $\sFmla{\False}{\lnot !B} \in \Gamma$కు
+  $\TRule{\False}{\lnot}$ను వర్తింపజేసి శాఖను విస్తరించాం: అభ్యాసం.
+\item $\sFmla{\True}{!B \land !C} \in \Gamma$కు
+  $\TRule{\True}{\land}$ను వర్తింపజేసి శాఖను విస్తరించాం; దీనివల్ల
+  శాఖపై $\sFmla{\True}{!B}$, $\sFmla{\True}{!C}$ అనే రెండు కొత్త
+  !!{signed formula}s వస్తాయి. $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$,
+  ముఖ్యంగా $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B \land !C}$ అనుకుందాం.
+  అప్పుడు $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$,
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$ రెండూ. అంటే
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$, $\sFmla{\True}{!B}$,
+  $\sFmla{\True}{!C}$ రెండింటినీ సంతృప్తిపరుస్తుంది.
+\item $\sFmla{\False}{!B \lor !C} \in \Gamma$కు
+  $\TRule{\False}{\lor}$ను వర్తింపజేసి శాఖను విస్తరించాం: అభ్యాసం.
+\item $\sFmla{\False}{!B \lif !C} \in \Gamma$కు
+  $\TRule{\False}{\lif}$ను వర్తింపజేసి శాఖను విస్తరించాం: దీనివల్ల
+  శాఖపై $\sFmla{\True}{!B}$, $\sFmla{\False}{!C}$ అనే రెండు కొత్త
+  !!{signed formula}s వస్తాయి. $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$,
+  ముఖ్యంగా $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B \lif !C}$ అనుకుందాం.
+  అప్పుడు $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$,
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$. అంటే
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$, $\sFmla{\True}{!B}$,
+  $\sFmla{\False}{!C}$ రెండింటినీ సంతృప్తిపరుస్తుంది.
+
+\iftag{FOL}{%
+\item $\sFmla{\True}{\lforall[x][!A(x)]} \in \Gamma$కు
+  $\TRule{\True}{\lforall}$ను వర్తింపజేసి శాఖను విస్తరించాం. దీనివల్ల
+  శాఖపై కొత్త !!{signed formula}~$\sFmla{\True}{!A(t)}$ వస్తుంది.
+  $\Sat{M}{\Gamma}$, ముఖ్యంగా $\Sat{M}{\lforall[x][!A(x)]}$
+  అనుకుందాం. \olref[syn][sem]{prop:quant-terms} ప్రకారం
+  $\Sat{M}{!A(t)}$. అందువల్ల $\Struct{M}$,
+  $\sFmla{\True}{!A(t)}$ను సంతృప్తిపరుస్తుంది.
+
+\item $\sFmla{\False}{\lforall[x][!A(x)]} \in \Gamma$కు
+  $\TRule{\False}{\lforall}$ను వర్తింపజేసి శాఖను విస్తరించాం. దీనివల్ల
+  శాఖపై కొత్త !!{signed formula}~$\sFmla{\False}{!A(a)}$ వస్తుంది;
+  ఇక్కడ $a$ అనేది $\Gamma$లో కనిపించని ఒక !!a{constant}.
+  $\Gamma$ సంతృప్తిపరచదగినది కనుక $\Sat{M}{\Gamma}$ అయ్యే
+  $\Struct{M}$ ఒకటి ఉంటుంది; ముఖ్యంగా
+  $\Sat/{M}{\lforall[x][!A(x)]}$. $\Gamma \cup
+  \{\sFmla{\False}{!A(a)}\}$ సంతృప్తిపరచదగినదని చూపాలి. అందుకోసం
+  తగిన~$\Struct{M'}$ను ఇలా నిర్వచిస్తాం.
+
+  \olref[syn][ass]{prop:sat-quant} ప్రకారం
+  $\Sat/{M}{\lforall[x][!A(x)]}$ అయితే, అప్పుడు మాత్రమే ఏదో $s$కు
+  $\Sat/{M}{!A(x)}[s]$. ఇప్పుడు $\Struct{M'}$ అనేది $\Struct{M}$లాగే
+  ఉండి, $\Assign{a}{M'} = s(x)$ మాత్రమే భిన్నంగా ఉండనివ్వండి.
+  $a$, $\Gamma$లో కనిపించదు కనుక
+  \olref[syn][ext]{cor:extensionality-sent} ప్రకారం ప్రతి
+  $\sFmla{\True}{!C} \in \Gamma$కు $\Sat{M'}{!C}$, ప్రతి
+  $\sFmla{\False}{!C} \in \Gamma$కు $\Sat/{M'}{!C}$.
+
+  \olref[syn][ext]{prop:extensionality} ప్రకారం
+  $\Sat/{M'}{!A(x)}[s]$. \olref[syn][ext]{prop:ext-formulas} ప్రకారం
+  $\Sat/{M'}{!A(a)}[s]$. $!A(a)$ ఒక !!a{sentence} కనుక
+  \olref[syn][ass]{prop:sentence-sat-true} ప్రకారం
+  $\Sat/{M'}{!A(a)}$; అంటే $\Struct{M'}$,
+  $\sFmla{\False}{!A(a)}$ను సంతృప్తిపరుస్తుంది.
+  \sourcecorrection{OLTETAB-008}{పరిమాణీకరణిక నిర్దుష్టతలోని ఈ రెండు
+  సందర్భాల్లో ఆంగ్ల మూలం నియమ పరికల్పనలకు $!B(x)$ను, వాటి ఫలితాలు,
+  అర్థపర వివరణకు $!A(x)$ను కలిపి వాడింది. ఒక్కో నియమ వర్తింపులో ఒకే
+  మెటాసూత్రం ఉండాలి కనుక రెండు సందర్భాలనూ $!A(x)$తో ఏకరీతిగా
+  చేశాం; నియమం, సంకేతం, పరిమాణీకరణిక లేదా నిరూపణ మారలేదు.}
+\item $\sFmla{\True}{\lexists[x][!B(x)]} \in \Gamma$కు
+  $\TRule{\True}{\lexists}$ను వర్తింపజేసి శాఖను విస్తరించాం: అభ్యాసం.
+\item $\sFmla{\False}{\lexists[x][!B(x)]} \in \Gamma$కు
+  $\TRule{\False}{\lexists}$ను వర్తింపజేసి శాఖను విస్తరించాం: అభ్యాసం.}{}
+\end{enumerate}
+ఇప్పుడు శాఖను చీల్చే సాధ్యమైన నిగమనాలను పరిశీలిద్దాం.
+\begin{enumerate}
+\item $\sFmla{\False}{!B \land !C} \in \Gamma$కు
+  $\TRule{\False}{\land}$ను వర్తింపజేసి శాఖను విస్తరించాం. దీనివల్ల
+  రెండు శాఖలు వస్తాయి: $\sFmla{\False}{!B}$ గుండా సాగే ఎడమ శాఖ,
+  $\sFmla{\False}{!C}$ గుండా సాగే కుడి శాఖ.
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$, ముఖ్యంగా
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B \land !C}$ అనుకుందాం. అప్పుడు
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$ లేదా
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$. మొదటి సందర్భంలో
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$,
+  $\sFmla{\False}{!B}$ను సంతృప్తిపరుస్తుంది; అంటే
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ ఎడమ శాఖలోని సూత్రాలను
+  సంతృప్తిపరుస్తుంది. రెండవ సందర్భంలో
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$,
+  $\sFmla{\False}{!C}$ను సంతృప్తిపరుస్తుంది; అంటే
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ కుడి శాఖలోని సూత్రాలను
+  సంతృప్తిపరుస్తుంది.
+\item $\sFmla{\True}{!B \lor !C} \in \Gamma$కు
+  $\TRule{\True}{\lor}$ను వర్తింపజేసి శాఖను విస్తరించాం: అభ్యాసం.
+\item $\sFmla{\True}{!B \lif !C} \in \Gamma$కు
+  $\TRule{\True}{\lif}$ను వర్తింపజేసి శాఖను విస్తరించాం: అభ్యాసం.
+\item \Cut{}తో శాఖను విస్తరించాం: దీనివల్ల రెండు శాఖలు వస్తాయి;
+  ఒకదానిలో $\sFmla{\True}{!B}$, మరొకదానిలో
+  $\sFmla{\False}{!B}$ ఉంటాయి. $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$
+  అయి, $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$ లేదా
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$లో ఒకటి అవుతుంది కనుక,
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ ఎడమ లేదా కుడి శాఖల్లో
+  ఒకదాన్ని సంతృప్తిపరుస్తుంది.
+\end{enumerate}
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][tab][sou]{thm:tableau-soundness} నిరూపణను పూర్తిచేయండి.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][tab][sou]{thm:tableau-soundness} నిరూపణను పూర్తిచేయండి.
+\end{prob}
+\tagendprob
+
+\begin{cor}
+\ollabel{cor:weak-soundness}
+$\Proves !A$ అయితే $!A$ \iftag{FOL}{చెల్లుబాటు అవుతుంది}{ఒక సర్వసత్యం}.
+\end{cor}
+
+\begin{cor}
+\ollabel{cor:entailment-soundness}
+$\Gamma \Proves !A$ అయితే $\Gamma \Entails !A$.
+\end{cor}
+
+\begin{proof}
+  $\Gamma \Proves !A$ అయితే, ఏవో $!B_1$, \dots, $!B_n \in
+  \Gamma$ కోసం $\{\sFmla{\False}{!A}, \sFmla{\True}{!B_1}, \dots,
+  \sFmla{\True}{!B_n}\}$కు ఒక సంవృత !!{tableau} ఉంటుంది.
+  \olref{thm:tableau-soundness} ప్రకారం ప్రతి
+  \iftag{FOL}{!!{structure}}{!!{valuation}}~$\iftag{FOL}{\Struct{M}}{\pAssign{v}}$,
+  ఏదో $!B_i$ని అసత్యం చేస్తుంది లేదా $!A$ను సత్యం చేస్తుంది. కనుక
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ అయితే
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ కూడా.
+\end{proof}
+
+\begin{cor}
+\ollabel{cor:consistency-soundness}
+$\Gamma$ సంతృప్తిపరచదగినదైతే అది అవైరుధ్యమైనది.
+\end{cor}
+
+\begin{proof}
+ప్రతిపక్షాన్ని నిరూపిస్తాం. $\Gamma$ అవైరుధ్యమైనది కాదనుకుందాం.
+అప్పుడు $!B_1$, \dots, $!B_n \in \Gamma$ ఉండి,
+$\{\sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}$కు ఒక సంవృత
+!!{tableau} ఉంటుంది. \olref{thm:tableau-soundness} ప్రకారం ప్రతి
+$i=1$, \dots,~$n$కు $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B_i}$ అయ్యే
+$\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ ఏదీ లేదు. కానీ అప్పుడు
+$\Gamma$ సంతృప్తిపరచదగినది కాదు.
+\end{proof}
+
+\end{document}

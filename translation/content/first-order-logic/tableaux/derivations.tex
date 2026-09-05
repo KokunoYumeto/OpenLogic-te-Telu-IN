@@ -1,0 +1,99 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: derivations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{tab}{der}}
+      {\olfileid{pl}{tab}{der}}
+
+\olsection{\usetoken{P}{tableau}}
+
+\begin{explain}
+పరికల్పన అంటే ఏమిటో చెప్పాం; నిగమన నియమాలనూ ఇచ్చాం. !!^{tableau}s
+వీటి నుంచి ఆగమనాత్మకంగా ఉత్పన్నమవుతాయి: ప్రతి !!{tableau}, ఒకటి
+లేదా అంతకంటే ఎక్కువ పరికల్పనలతో కూడిన ఒకే శాఖ అయినా అవుతుంది, లేదా
+ఒక శాఖపై నిగమన నియమాల్లో ఒకదాన్ని వర్తింపజేసి మరొక !!a{tableau}
+నుంచి ఏర్పడుతుంది.
+\end{explain}
+
+\begin{defn}[!!^{tableau}]
+పరికల్పనలు $\sFmla{S_1}{!A_1}$, \dots,
+$\sFmla{S_n}{!A_n}$ (ప్రతి $S_i$, $\True$ లేదా~$\False$లో ఒకటి)
+కోసం ఒక !!^a{tableau} అంటే కింది షరతులను తీర్చే !!{signed formula}s
+పరిమిత వృక్షం:
+\begin{enumerate}
+\item వృక్షంలో అన్నిటికంటే పైనున్న $n$ !!{signed formula}s,
+  ఒకదాని కింద మరొకటిగా $\sFmla{S_i}{!A_i}$లు.
+\item పరికల్పనల్లో ఒకటి కాని వృక్షంలోని ప్రతి !!{signed formula},
+  దాని పైనున్న శాఖలోని ఒక !!a{signed formula}కు నిగమన నియమాన్ని
+  సరిగ్గా వర్తింపజేయడం వల్ల వస్తుంది.
+\end{enumerate}
+ఒక !!a{tableau} శాఖలో $\sFmla{\True}{!A}$,
+$\sFmla{\False}{!A}$ రెండూ ఉంటే, అప్పుడు మాత్రమే అది
+\emph{సంవృతమైనది}; లేకపోతే అది \emph{వివృతమైనది}. ప్రతి శాఖా
+సంవృతంగా ఉన్న ఒక !!^a{tableau}, తన పరికల్పనల సమితికి ఒక
+\emph{సంవృత !!{tableau}}. ఒక !!a{tableau} సంవృతం కాకపోతే, అంటే
+అందులో కనీసం ఒక వివృత శాఖ ఉంటే, అది \emph{వివృతమైనది}.
+\end{defn}
+
+\begin{ex}
+  ప్రతి పరికల్పనల సమితి తనంతట తానే ఒక !!a{tableau}; కానీ సాధారణంగా
+  అది సంవృతంగా ఉండదు. (పరికల్పనల్లో ఇప్పటికే
+  $\sFmla{\True}{!A}$,~$\sFmla{\False}{!A}$ అనే !!{signed formula}s
+  జత ఉంటే మాత్రమే అది సంవృతమని స్పష్టం.)
+
+  ఒక !!a{tableau}లోని ఒక !!a{signed formula}~$!A$కు నిగమన
+  నియమాల్లో ఒకదాన్ని వర్తింపజేసి, ఆ టాబ్లో వివృతమైనదైనా
+  సంవృతమైనదైనా, దాని నుంచి కొత్తదైన మరింత పెద్ద టాబ్లోను
+  పొందవచ్చు. మనం నియమాన్ని వర్తింపజేసే $!A$ సంభవాన్ని కలిగి ఉన్న
+  ప్రతి శాఖ చివరికి ఆ నియమం ఒకటి లేదా అంతకంటే ఎక్కువ
+  !!{signed formula}sను చేర్చుతుంది.
+
+  ఉదాహరణకు, $\sFmla{\True}{!A \land \lnot !A}$ అనే పరికల్పనను
+  పరిశీలించండి. ఆ పరికల్పన మాత్రమే గల (వివృత) !!{tableau} ఇది:
+  \begin{center}
+    \begin{tableau}{}
+      [\sFmla{\True}{\formula{A} \land \lnot \formula{A}}, just=\TAss]
+    \end{tableau}{}
+  \end{center}
+  పరికల్పనకు $\TRule{\True}{\land}$ నియమాన్ని వర్తింపజేసి దాని నుంచి
+  కొత్త !!{tableau}ను పొందుతాం. ఆ నియమం !!{tableau}కు
+  $\sFmla{\True}{!A}$, $\sFmla{\True}{\lnot !A}$ అనే రెండు కొత్త
+  వరుసలను చేర్చనిస్తుంది:
+  \begin{center}
+    \begin{tableau}{}
+      [\sFmla{\True}{\formula{A} \land \lnot \formula{A}}, just=\TAss
+        [\sFmla{\True}{\formula{A}}, just={\TRule{\True}{\land}[1]},
+          [\sFmla{\True}{\lnot \formula{A}}, just={\TRule{\True}{\land}[1]}
+          ]
+        ]
+      ]
+    \end{tableau}{}
+  \end{center}
+  !!{tableau}sను రాసేటప్పుడు, మనం వర్తింపజేసిన నియమాలను కుడివైపు
+  నమోదు చేస్తాం (ఉదాహరణకు, $\TRule{\True}{\land} 1$ అంటే ఆ వరుసలోని
+  !!{signed formula}, వరుస~$1$లోని !!{signed formula}కు
+  $\TRule{\True}{\land}$ నియమాన్ని వర్తింపజేయడం వల్ల వచ్చిందని
+  అర్థం). ఈ కొత్త !!{tableau}లో ఇప్పుడు అదనపు !!{signed formula}s
+  ఉన్నాయి; కానీ వాటిలో ఒక్కదానికే ($\sFmla{\True}{\lnot !A}$కు)
+  ఒక నియమాన్ని వర్తింపజేయగలం (ఈ సందర్భంలో
+  $\TRule{\True}{\lnot}$ నియమం). దాని వల్ల కింది సంవృత
+  !!{tableau} వస్తుంది:
+  \begin{center}
+    \begin{tableau}{}
+      [\sFmla{\True}{\formula{A} \land \lnot \formula{A}}, just=\TAss
+        [\sFmla{\True}{\formula{A}}, just={\TRule{\True}{\land}[1]}
+          [\sFmla{\True}{\lnot \formula{A}}, just={\TRule{\True}{\land}[1]}
+            [\sFmla{\False}{\formula{A}}, just={\TRule{\True}{\lnot}[3]}, close]
+          ]
+        ]
+      ]
+    \end{tableau}{}
+  \end{center}
+\end{ex}
+
+\end{document}

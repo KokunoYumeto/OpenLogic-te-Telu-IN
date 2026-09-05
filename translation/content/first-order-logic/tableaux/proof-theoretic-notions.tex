@@ -1,0 +1,196 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: proof-theoretic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{tab}{ptn}}
+      {\olfileid{pl}{tab}{ptn}}
+
+\olsection{నిరూపణ-సిద్ధాంత భావనలు}
+
+\begin{editorial}
+ఈ విభాగం టాబ్లోలకు నిరూప్యతా సంబంధం, అవైరుధ్యం యొక్క నిర్వచనాలను
+సమీకరిస్తుంది.
+\end{editorial}
+
+\begin{explain}
+అనేక ముఖ్యమైన అర్థపర భావనలను (చెల్లుబాటు, అనుగమనం, సంతృప్తత)
+నిర్వచించినట్లే, ఇప్పుడు వాటికి అనుగుణమైన \emph{నిరూపణ-సిద్ధాంత
+భావనలను} నిర్వచిస్తాం. వీటిని !!{structure}sలో !!{sentence}s
+సంతృప్తి చెందడాన్ని ఆశ్రయించి నిర్వచించం; కొన్ని సంవృత
+!!{tableau}x ఉనికిని ఆశ్రయించి నిర్వచిస్తాం. ఈ భావనలు ఒకటే అవుతాయని
+కనుగొనడం ముఖ్యమైన విజయం. అవి ఒకటే అవుతాయనేదే \emph{నిర్దుష్టత},
+\emph{సంపూర్ణత} సిద్ధాంతాల విషయం.
+\end{explain}
+
+
+\begin{defn}[సిద్ధాంతాలు]
+$\sFmla{\False}{!A}$ కోసం ఒక సంవృత !!{tableau} ఉంటే
+!!{sentence}~$!A$ను \emph{సిద్ధాంతం} అంటాం. $!A$ ఒక సిద్ధాంతమైతే
+$\Proves !A$ అని, కాకపోతే $\Proves/ !A$ అని రాస్తాం.
+\end{defn}
+
+\begin{defn}[!!^{derivability}]
+!!{sentence}s సమితి~$\Gamma$ నుంచి !!^a{sentence}~$!A$
+\emph{!!{derivable}}, అంటే $\Gamma \Proves !A$, అవుతుంది అంటే,
+$\{!B_1, \dots, !B_n\} \subseteq \Gamma$ అనే పరిమిత సమితి ఒకటి,
+కింది సమితికి ఒక సంవృత !!{tableau} ఉండాలి:
+\[
+\{
+  \sFmla{\False}{!A},
+  \sFmla{\True}{!B_1}, \dots,
+  \sFmla{\True}{!B_n}
+  \}.
+\]
+$\Gamma$ నుంచి $!A$ !!{derivable} కాకపోతే $\Gamma \Proves/ !A$
+అని రాస్తాం.
+\end{defn}
+
+\begin{defn}[అవైరుధ్యం]
+!!{sentence}s సమితి~$\Gamma$ \emph{వైరుధ్యభరితమైనది} అంటే,
+$\{!B_1, \dots, !B_n\} \subseteq \Gamma$ అనే పరిమిత సమితి ఒకటి,
+కింది సమితికి ఒక సంవృత !!{tableau} ఉండాలి:
+\[
+\{
+  \sFmla{\True}{!B_1}, \dots,
+  \sFmla{\True}{!B_n}
+  \}.
+\]
+$\Gamma$ వైరుధ్యభరితం కాకపోతే దాన్ని \emph{అవైరుధ్యమైనది} అంటాం.
+\end{defn}
+
+\begin{prop}[స్వావర్తనత్వం]
+\ollabel{prop:reflexivity}
+$!A \in \Gamma$ అయితే $\Gamma \Proves !A$.
+\end{prop}
+
+\begin{proof}
+$!A \in \Gamma$ అయితే $\{!A\}$ అనేది $\Gamma$ యొక్క పరిమిత
+ఉపసమితి; కింది !!{tableau} సంవృతమైనది:
+\begin{oltableau}
+  [\sFmla{\False}{\formula{A}}, just = \TAss
+    [\sFmla{\True}{\formula{A}}, just = \TAss,close]
+  ]
+\end{oltableau}
+\end{proof}
+
+
+\begin{prop}[ఏకదిశత]
+\ollabel{prop:monotonicity}
+$\Gamma \subseteq \Delta$, $\Gamma \Proves !A$ అయితే $\Delta
+\Proves !A$.
+\end{prop}
+
+\begin{proof}
+$\Gamma$ యొక్క ప్రతి పరిమిత ఉపసమితీ $\Delta$కు కూడా పరిమిత ఉపసమితి.
+\end{proof}
+
+\begin{prop}[సంక్రామకత్వం]
+\ollabel{prop:transitivity}
+$\Gamma \Proves !A$, $\{!A\} \cup
+\Delta \Proves !B$ అయితే $\Gamma \cup \Delta \Proves !B$.
+\end{prop}
+
+\begin{proof}
+$\{!A\} \cup \Delta \Proves !B$ అయితే, $\Delta_0 =
+\{!C_1, \dots, !C_n\} \subseteq \Delta$ అనే పరిమిత ఉపసమితి ఉండి,
+\begin{align*}
+\{\sFmla{\False}{!B}, & \sFmla{\True}{!A}, \sFmla{\True}{!C_1},
+\dots, \sFmla{\True}{!C_n}\}
+\intertext{కు ఒక సంవృత !!{tableau} ఉంటుంది. $\Gamma \Proves !A$
+  అయితే, $\{!D_1, \dots, !D_m\} \subseteq \Gamma$ అయ్యేలా}
+\{\sFmla{\False}{!A}, & \sFmla{\True}{!D_1},
+\dots, \sFmla{\True}{!D_m}\}
+\end{align*}
+కు ఒక సంవృత !!{tableau} ఉంటుంది.
+\sourcecorrection{OLTETAB-004}{ఈ చోట ఆంగ్ల మూలం వ్యక్తిగత
+$!D_1$, \dots, $!D_m$లను నేరుగా $\Gamma$కు “ఉపసమితి”గా రాసింది.
+నిగమ్యత నిర్వచనం, వెంటనే ఉపయోగించే పరిమిత పరికల్పనల సమితి ప్రకారం
+సమితి కుండలీకరణాలను చేర్చి
+$\{!D_1, \dots, !D_m\} \subseteq \Gamma$గా సరిచేశాం.}
+
+ఇప్పుడు కింది పరికల్పనలు గల !!{tableau}ను పరిశీలించండి:
+\[
+\sFmla{\False}{!B},
+\sFmla{\True}{!C_1}, \dots, \sFmla{\True}{!C_n},
+\sFmla{\True}{!D_1}, \dots, \sFmla{\True}{!D_m}.
+\]
+$!A$పై \Cut{} నియమాన్ని వర్తింపజేయండి. దాని వల్ల రెండు శాఖలు
+వస్తాయి: ఒకదానిలో $\sFmla{\True}{!A}$, మరొకదానిలో
+$\sFmla{\False}{!A}$ ఉంటాయి. అప్పుడు ఒక శాఖలో కిందివన్నీ లభిస్తాయి:
+\[
+\{\sFmla{\False}{!B}, \sFmla{\True}{!A},
+\sFmla{\True}{!C_1}, \dots, \sFmla{\True}{!C_n}\}
+\]
+ఈ పరికల్పనలకు సంవృత !!{tableau} ఉంది కనుక దాన్ని ఆ శాఖకు
+జోడించవచ్చు; $\sFmla{\True}{!A}$ గుండా వెళ్లే ప్రతి శాఖా
+సంవృతమవుతుంది. మరొక శాఖలో కిందివన్నీ లభిస్తాయి:
+\[
+\{\sFmla{\False}{!A}, \sFmla{\True}{!D_1}, \dots,
+\sFmla{\True}{!D_m}\}
+\]
+కనుక మరొక వైపునూ పూర్తిచేసి ఒక సంవృత !!{tableau}ను పొందవచ్చు. ఇది
+$\Gamma \cup \Delta \Proves !B$ అని చూపుతుంది.
+\end{proof}
+
+ముఖ్యంగా, $\Gamma \Proves !A$, $!A \Proves !B$ అయితే $\Gamma
+\Proves !B$ అని దీని అర్థమని గమనించండి. అలాగే $!A_1,
+\dots, !A_n \Proves !B$ అయి, ప్రతి~$i$కి $\Gamma \Proves !A_i$
+అయితే $\Gamma \Proves !B$ అని కూడా అనుగమిస్తుంది.
+
+\begin{prop}
+\ollabel{prop:incons}
+$\Gamma$ వైరుధ్యభరితమైనది అయితే, అప్పుడు మాత్రమే ప్రతి
+!!{sentence}~$!A$కు $\Gamma \Proves !A$.
+\end{prop}
+
+\begin{proof}
+అభ్యాసం.
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][tab][ptn]{prop:incons}ను నిరూపించండి.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][tab][ptn]{prop:incons}ను నిరూపించండి.
+\end{prob}
+\tagendprob
+
+\begin{prop}[సంహతత్వం]
+  \ollabel{prop:proves-compact}
+  \begin{enumerate}
+  \item $\Gamma \Proves !A$ అయితే, $\Gamma_0 \Proves !A$ అయ్యే
+    పరిమిత ఉపసమితి $\Gamma_0 \subseteq \Gamma$ ఒకటి ఉంటుంది.
+  \item $\Gamma$లోని ప్రతి పరిమిత ఉపసమితీ అవైరుధ్యమైనదైతే,
+    $\Gamma$ అవైరుధ్యమైనది.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $\Gamma \Proves !A$ అయితే, పరిమిత ఉపసమితి
+      $\Gamma_0 = \{!B_1, \dots, !B_n\}$కు కింది సమితిపై ఒక సంవృత
+      !!{tableau} ఉంటుంది:
+      \[
+      \{\sFmla{\False}{!A}, \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}
+      \]
+      ఇదే !!{tableau}, $\Gamma_0 \Proves !A$ అని కూడా చూపుతుంది.
+    \item $\Gamma$ వైరుధ్యభరితమైతే, ఏదో పరిమిత ఉపసమితి
+      $\Gamma_0 = \{!B_1, \dots, !B_n\}$ కోసం కింది సమితికి ఒక
+      సంవృత !!{tableau} ఉంటుంది:
+      \[
+      \{\sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}
+      \]
+      ఈ సంవృత !!{tableau}, $\Gamma_0$ వైరుధ్యభరితమని చూపుతుంది.
+  \end{enumerate}
+\end{proof}
+
+\end{document}
