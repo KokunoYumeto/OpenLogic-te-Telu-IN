@@ -1,0 +1,348 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: proving-things
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{pro}}
+      {\olfileid{pl}{seq}{pro}}
+
+\olsection{\usetoken{P}{derivation} ఉదాహరణలు}
+
+\begin{ex}
+$!A \land !B \Sequent !A$ అనే సీక్వెంట్‌కు ఒక
+$\Log{LK}$-!!{derivation} ఇవ్వండి.
+
+కావలసిన అంత్య సీక్వెంట్‌ను !!{derivation} అడుగున రాయడంతో మొదలుపెడతాం.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$!A\land !B \fCenter !A$
+\end{prooftree}
+తర్వాత, ఈ రూపంలోని కింది సీక్వెంట్‌ను ఏ రకమైన నిగమనం ఇవ్వగలదో
+తెలుసుకోవాలి. అది నిర్మాణాత్మక నియమం కావచ్చు; కానీ మొదట తార్కిక
+నియమం కోసం చూడడం మంచిది. కింది సీక్వెంట్‌లో కనిపించే ఏకైక తార్కిక
+సంయోజకం $\land$. అందువల్ల మనం $\land$ నియమం కోసం చూస్తున్నాం;
+$\land$ సంకేతం పూర్వాంగంలో కనిపిస్తుంది కనుక మనం చూస్తున్నది
+\LeftR{\land} నియమం.
+\begin{prooftree}
+\AxiomC{}
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!A\land !B \fCenter !A$
+\end{prooftree}
+\LeftR{\land} నిగమనం యొక్క పై సీక్వెంట్ ఏమై ఉండవచ్చో రెండు ఎంపికలు
+ఉన్నాయి: పై సీక్వెంట్ $!A \Sequent !A$ కావచ్చు, లేదా
+$!B \Sequent !A$ కావచ్చు. $!A \Sequent !A$ ఒక ప్రారంభ సీక్వెంట్
+అని స్పష్టం (ఇది మనకు అనుకూలం); కానీ సాధారణంగా $!B \Sequent !A$
+నిగమించదగినది కాదు. పై సీక్వెంట్‌ను పూరిస్తాం:
+\begin{prooftree}
+\Axiom$!A \fCenter !A$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!A\land !B \fCenter !A$
+\end{prooftree}
+ఇప్పుడు $!A \land !B \Sequent !A$ సీక్వెంట్‌కు సరైన
+$\Log{LK}$-!!{derivation} దొరికింది.
+\end{ex}
+
+\begin{ex}
+$\lnot !A \lor !B \Sequent !A \lif !B$ అనే సీక్వెంట్‌కు ఒక
+$\Log{LK}$-!!{derivation} ఇవ్వండి.
+
+కావలసిన అంత్య సీక్వెంట్‌ను !!{derivation} అడుగున రాయడంతో మొదలుపెట్టండి.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lnot !A \lor !B \fCenter !A \lif !B$
+\end{prooftree}
+ఈ అంత్య సీక్వెంట్‌ను ఇవ్వగల తార్కిక నియమాన్ని కనుగొనడానికి అందులోని
+తార్కిక సంయోజకాలు $\lnot$, $\lor$, $\lif$లను పరిశీలిస్తాం. ప్రస్తుతానికి
+$\lor$, $\lif$లనే పట్టించుకుంటాం. ఎందుకంటే అవే అంత్య సీక్వెంట్‌లోని
+!!{sentence}sకు !!{main operator}s; $\lnot$ మరొక సంయోజకం పరిధిలో
+ఉంది కనుక దానిని తర్వాత చూసుకోవచ్చు. కాబట్టి చివరి నిగమనానికి మన
+తార్కిక నియమ ఎంపికలు \LeftR{\lor}, \RightR{\lif}. నిజానికి ఏ
+నియమాన్నైనా ఎంచుకోవచ్చు; కానీ రెండు శాఖలుగా విడిపోవడాన్ని కొంతసేపు
+వాయిదా వేయనిస్తుంది కనుక \RightR{\lif}ను ఎంచుకుందాం. ఈ కింది
+సీక్వెంట్‌ను ఇవ్వగల \RightR{\lif} నిగమనాల రూపం ప్రకారం అది ఇలా ఉండాలి:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ !A, \lnot !A \lor !B \fCenter !B $
+\RightLabel{\RightR{\lif}} \UnaryInf$ \lnot !A \lor !B \fCenter !A \lif !B $
+\end{prooftree}
+
+పూర్వాంగంలో $\lnot !A \lor !B$ను బయటి చివరకు కదిలిస్తే
+\LeftR{\lor} నియమాన్ని వర్తింపజేయవచ్చు. నియమ స్థూలనిర్దేశం ప్రకారం
+ఇది కింది విధంగా రెండు పై సీక్వెంట్లుగా విడిపోవాలి:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lnot !A, !A \fCenter !B$
+\AxiomC{}
+\UnaryInf$!B, !A \fCenter !B$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$ \lnot !A \lor !B, !A \fCenter !B $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !A, \lnot !A \lor !B \fCenter !B $
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \lnot !A \lor !B \fCenter !A \lif !B $
+\end{prooftree}
+\sourcecorrection{OLTESEQ-001}{ఈ ఉదాహరణలో పూర్వాంగంలోని సూత్రాలనే
+మార్చే నాలుగు మార్పిడి నిగమనాలకు ఆంగ్ల మూలం
+\texttt{RightR\{Exchange\}} గుర్తును ఇచ్చింది. అవన్నీ ఎడమవైపు
+మార్పిడులే కనుక వాటి గుర్తులను \texttt{LeftR\{Exchange\}}గా
+సరిచేశాం; సీక్వెంట్లు మారలేదు.}
+ప్రారంభ సీక్వెంట్ల వరకు పైకి చేరడమే మన లక్ష్యమని గుర్తుంచుకోండి;
+మనం వాటికి చాలా దగ్గరలో ఉన్నాం!{} కుడి శాఖ ఒక బలహీనీకరణ, ఒక
+మార్పిడి తర్వాత ప్రారంభ సీక్వెంట్ వద్ద ముగుస్తుంది:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lnot !A, !A \fCenter !B$
+\Axiom$!B \fCenter !B$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!A, !B \fCenter !B$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$!B, !A \fCenter !B$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot !A \lor !B, !A \fCenter !B $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !A, \lnot !A \lor !B \fCenter !B $
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \lnot !A \lor !B \fCenter !A \lif !B $
+\end{prooftree}
+
+ఇప్పుడు ఎడమ శాఖను చూస్తే, దానిలోని ఏ !!{sentence}లోనైనా ఉన్న ఏకైక
+తార్కిక సంయోజకం పూర్వాంగ !!{sentence}sలోని $\lnot$ సంకేతం. కాబట్టి
+మనకు కావలసింది \LeftR{\lnot} నియమపు ఒక సందర్భం.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ !A \fCenter !B, !A$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !A, !A \fCenter !B$
+\Axiom$!B \fCenter !B$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!A, !B \fCenter !B$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$!B, !A \fCenter !B$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot !A \lor !B, !A \fCenter !B $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !A, \lnot !A \lor !B \fCenter !B $
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \lnot !A \lor !B \fCenter !A \lif !B $
+\end{prooftree}
+కుడి శాఖను ముగించిన విధంగానే, ఈ ఎడమ శాఖను ముగించడానికి కూడా ఒక
+బలహీనీకరణ, ఒక మార్పిడి చాలు.
+\begin{prooftree}
+\Axiom$!A \fCenter !A$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$ !A \fCenter !A, !B$
+\RightLabel{\RightR{\Exchange}}
+\UnaryInf$ !A \fCenter !B, !A$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !A, !A \fCenter !B$
+\Axiom$!B \fCenter !B$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!A, !B \fCenter !B$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$!B, !A \fCenter !B$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot !A \lor !B, !A \fCenter !B $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !A, \lnot !A \lor !B \fCenter !B $
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \lnot !A \lor !B \fCenter !A \lif !B $
+\end{prooftree}
+\end{ex}
+
+\begin{ex}
+$\lnot !A \lor \lnot !B \Sequent \lnot (!A \land !B)$ అనే సీక్వెంట్‌కు
+ఒక $\Log{LK}$-!!{derivation} ఇవ్వండి.
+
+పైన ఉపయోగించిన పద్ధతులతో కావలసిన అంత్య సీక్వెంట్‌ను అడుగున రాయడం
+మొదలుపెడతాం.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ \lnot !A \lor \lnot !B \fCenter \lnot (!A \land !B) $
+\end{prooftree}
+అంత్య సీక్వెంట్‌లోని !!{sentence}sకు లభ్యమయ్యే ప్రధాన సంయోజకాలు
+$\lor$, $\lnot$. ఇక్కడ \LeftR{\lor} లేదా \RightR{\lnot} నియమాల్లో
+దేనినైనా వర్తింపజేయవచ్చు. కానీ రెండు శాఖలుగా విడిపోవడాన్ని కొంతసేపు
+తప్పిస్తుంది కనుక \RightR{\lnot} నియమంతో మొదలుపెడతాం:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$!A \land !B, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\lnot !A \lor \lnot !B \fCenter \lnot (!A \land !B)$
+\end{prooftree}
+ఇప్పుడు \LeftR{\land}, \LeftR{\lor} నియమాల్లో దేనిని చూడాలో
+ఎంచుకోవచ్చు. \LeftR{\land} నియమాన్ని వర్తింపజేస్తే ఏమవుతుందో చూద్దాం:
+$!A, \lnot !A \lor \lnot !B \Sequent \quad$ అనే సీక్వెంట్‌తో లేదా
+$!B, \lnot !A \lor \lnot !B \Sequent \quad$ అనే సీక్వెంట్‌తో
+మొదలుపెట్టవచ్చు. ఈ !!{derivation} $!A$, $!B$ల విషయంలో సౌష్ఠవంగా
+ఉంది కనుక మొదటిదాన్ని ఎంచుకుందాం.
+\sourcecorrection{OLTESEQ-002}{ఇక్కడ రెండు ఎంపికల్లోనూ ఆంగ్ల మూలం
+$\lnot !A \lor \lnot !B$కు బదులు $\lnot !A \lor !B$ అని రాసి,
+రెండవ వికల్పాంగంలోని నిషేధాన్ని వదిలేసింది. ముందు, తర్వాత ఉన్న
+అంత్య సీక్వెంట్ మరియు ప్రదర్శిత నిగమనాలు రెండింటిలోనూ దానిని నిషేధిత
+$!B$గానే నిర్ణయిస్తాయి; అందువల్ల తప్పిన రెండు $\lnot$లను పునరుద్ధరించాం.}
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$!A, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!A \land !B, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\lnot !A \lor \lnot !B \fCenter \lnot (!A \land !B)$
+\end{prooftree}
+!!{derivation}ను పూరిస్తూ పోతే ఒక సమస్య ఎదురవుతుందని చూస్తాం:
+\begin{prooftree}
+\Axiom$!A \fCenter !A$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$ \lnot !A, !A \fCenter$
+\AxiomC{}
+\RightLabel{?}
+\UnaryInf$!A \fCenter !B$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$ \lnot !B, !A \fCenter$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot !A \lor \lnot !B, !A \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$!A, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!A \land !B, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\lnot !A \lor \lnot !B \fCenter \lnot (!A \land !B)$
+\end{prooftree}
+కుడి శాఖ శిఖరాన్ని ఇక తగ్గించలేం; నిర్మాణాత్మక నిగమనాలతో దాన్ని
+ప్రారంభ సీక్వెంట్‌గా కూడా మార్చలేం. కాబట్టి ఇది సరైన మార్గం కాదు.
+పైన \LeftR{\land} నియమాన్ని వర్తింపజేయడం తప్పు అని స్పష్టమవుతుంది.
+అంతకుముందున్న దశకు తిరిగి వెళ్లి దానికి బదులు \LeftR{\lor} నియమాన్ని
+వర్తింపజేస్తే ఇలా వస్తుంది:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lnot !A, !A \land !B \fCenter $
+
+\AxiomC{}
+\UnaryInf$\lnot !B, !A \land !B \fCenter $
+
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot !A \lor \lnot !B, !A \land !B \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$!A \land !B, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\lnot !A \lor \lnot !B \fCenter \lnot (!A \land !B)$
+\end{prooftree}
+ముందు చేసినట్లే ప్రతి శాఖను పూర్తి చేస్తే కిందిది వస్తుంది:
+\begin{prooftree}
+\Axiom$ !A \fCenter!A$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!A \land !B \fCenter !A$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !A, !A \land !B \fCenter $
+
+\Axiom$ !B \fCenter !B$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!A \land !B \fCenter !B$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !B, !A \land !B \fCenter $
+
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot !A \lor \lnot !B, !A \land !B \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$!A \land !B, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\lnot !A \lor \lnot !B \fCenter \lnot (!A \land !B)$
+\end{prooftree}
+(ఈ దశల్లో $\land$ నియమాలను $\lnot$ నియమాలకంటే కింద
+వర్తింపజేసినా సరైన !!{derivation}నే లభిస్తుంది.)
+\end{ex}
+
+\begin{ex}
+ఇప్పటివరకు సంకోచన నియమాన్ని ఉపయోగించలేదు; కానీ కొన్నిసార్లు అది
+అవసరం. అలాంటి ఉదాహరణను చూద్దాం. $\quad \Sequent !A \lor \lnot !A$ను
+నిరూపించాలనుకుందాం. $\RightR{\lor}$ను వెనుకకు వర్తింపజేస్తే ఈ రెండు
+!!{derivation}sలో ఒకటి వస్తుంది:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ \fCenter !A$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \fCenter !A \lor \lnot !A$
+\DisplayProof\qquad\bottomAlignProof
+\AxiomC{}
+\UnaryInf$!A \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \fCenter \lnot !A$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \fCenter !A \lor \lnot !A$
+\end{prooftree}
+అవశ్యంగా, వీటిలో ఏదీ ప్రారంభ సీక్వెంట్‌తో ముగియదు. ఒక
+!!a{sentence} యొక్క రెండు ప్రతులను ఒక్కటిగా కలపడానికి సంకోచన నియమం
+అనుమతిస్తుందని గుర్తించడమే ఉపాయం. నిరూపణ కోసం కింది నుంచి పైకి
+వెళ్తున్నప్పుడు $!A \lor \lnot !A$ యొక్క ఒక ప్రతిని పూర్వాధారంలో
+ఉంచుకోవచ్చు; ఉదాహరణకు:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ \fCenter !A \lor \lnot !A, !A$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \fCenter !A \lor \lnot !A, !A \lor \lnot !A$
+\RightLabel{\RightR{\Contraction}}
+\UnaryInf$ \fCenter !A \lor \lnot !A$
+\end{prooftree}
+ఇప్పుడు $\RightR{\lor}$ను రెండవసారి వర్తింపజేసి $\lnot !A$ను కూడా
+పొందవచ్చు; దీనితో పూర్తి !!{derivation} లభిస్తుంది.
+\begin{prooftree}
+\Axiom$!A \fCenter !A$
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\fCenter !A, \lnot !A$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$\fCenter !A, !A \lor \lnot !A$
+\RightLabel{\RightR{\Exchange}}
+\UnaryInf$ \fCenter !A \lor \lnot !A, !A$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \fCenter !A \lor \lnot !A, !A \lor \lnot !A$
+\RightLabel{\RightR{\Contraction}}
+\UnaryInf$ \fCenter !A \lor \lnot !A$
+\end{prooftree}
+\end{ex}
+
+\begin{prob}
+కింది సీక్వెంట్లకు !!{derivation}s ఇవ్వండి:
+\begin{enumerate}
+\item $!A \land (!B \land !C) \Sequent (!A \land !B) \land !C$.
+\item $!A \lor (!B \lor !C) \Sequent (!A \lor !B) \lor !C$.
+\item $!A \lif (!B \lif !C) \Sequent !B \lif (!A \lif !C)$.
+\item $!A \Sequent \lnot\lnot !A$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+కింది సీక్వెంట్లకు !!{derivation}s ఇవ్వండి:
+\begin{enumerate}
+\item $(!A \lor !B) \lif !C \Sequent !A \lif !C$.
+\item $(!A \lif !C) \land (!B \lif !C) \Sequent (!A \lor !B) \lif !C$.
+\item $\Sequent \lnot(!A \land \lnot !A)$.
+\item $!B \lif !A \Sequent \lnot !A \lif \lnot !B$.
+\item $\Sequent (!A \lif \lnot !A) \lif \lnot !A$.
+\item $\Sequent \lnot(!A \lif !B) \lif \lnot !B$.
+\item $!A \lif !C \Sequent \lnot (!A \land \lnot !C)$.
+\item $!A \land \lnot !C \Sequent \lnot (!A \lif !C)$.
+\item $!A \lor !B, \lnot !B \Sequent !A$.
+\item $\lnot !A \lor \lnot !B \Sequent \lnot(!A \land !B)$.
+\item $\Sequent (\lnot !A \land \lnot !B) \lif\lnot(!A \lor !B)$.
+\item $\Sequent \lnot(!A \lor !B) \lif (\lnot !A \land \lnot !B)$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+కింది సీక్వెంట్లకు !!{derivation}s ఇవ్వండి:
+\begin{enumerate}
+\item $\lnot(!A \lif !B) \Sequent !A$.
+\item $\lnot(!A \land !B) \Sequent \lnot !A \lor \lnot !B$.
+\item $!A \lif !B \Sequent \lnot !A \lor !B$.
+\item $\Sequent \lnot \lnot !A \lif !A$.
+\item $!A \lif !B, \lnot !A \lif !B \Sequent !B$.
+\item $(!A \land !B) \lif !C \Sequent (!A \lif !C) \lor (!B \lif !C)$.
+\item $(!A \lif !B) \lif !A \Sequent !A$.
+\item $\Sequent (!A \lif !B) \lor (!B \lif !C)$.
+\end{enumerate}
+(వీటన్నింటికీ $\RightR{\Contraction}$ నియమం అవసరం.)
+\end{prob}
+\end{document}

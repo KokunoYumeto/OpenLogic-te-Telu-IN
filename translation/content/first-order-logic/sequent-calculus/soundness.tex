@@ -1,0 +1,416 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: soundness.tex
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{sou}}
+      {\olfileid{pl}{seq}{sou}}
+
+\olsection{నిర్దుష్టత}
+
+\begin{explain}
+సీక్వెంట్ కలనం వంటి !!^a{derivation} వ్యవస్థ, వాస్తవంగా చెల్లని
+విషయాలను !!{derive} చేయలేకపోతే \emph{నిర్దుష్టమైనది}. అందువల్ల
+నిర్దుష్టత అనేది !!{derivation} వ్యవస్థలకు ఒక రకమైన హామీగల భద్రతా
+ధర్మం. ఏ నిరూపణ-సిద్ధాంత ధర్మాన్ని పరిశీలిస్తున్నామో బట్టి, ఉదాహరణకు
+కిందివి తెలుసుకోవాలనుకుంటాం:
+\begin{enumerate}
+\item ప్రతి !!{derivable}~$!A$ అనేది \iftag{FOL}{చెల్లుబాటు
+  అయ్యేది}{సర్వసత్యం};
+\item ఒక !!a{sentence} కొన్ని ఇతర వాక్యాల నుంచి !!{derivable} అయితే,
+  అది వాటి పర్యవసానం కూడా;
+\item ఒక !!{sentence}s సమితి వైరుధ్యభరితమైతే, అది
+  సంతృప్తిపరచలేనిది.
+\end{enumerate}
+ఇవి ఒక !!a{derivation} వ్యవస్థకు ముఖ్యమైన ధర్మాలు. వీటిలో ఏదైనా
+చెల్లకపోతే ఆ !!{derivation} వ్యవస్థ లోపభూయిష్టమైనది---అది మరీ ఎక్కువ
+విషయాలను !!{derive} చేస్తుంది. కాబట్టి ఒక !!{derivation} వ్యవస్థ
+నిర్దుష్టతను స్థాపించడం అత్యంత ముఖ్యం.
+
+ఈ నిరూపణ-సిద్ధాంత ధర్మాలన్నీ కొన్ని సీక్వెంట్ల సీక్వెంట్-కలన
+!!{derivability} ద్వారా నిర్వచించబడ్డాయి. అందువల్ల పైనున్న (1)--(3)ను
+నిరూపించాలంటే !!{derivable} సీక్వెంట్ల అర్థపర ధర్మాల గురించి ఏదో
+నిరూపించాలి. మొదట ఒక సీక్వెంట్ \emph{చెల్లుబాటు} కావడం అంటే ఏమిటో
+నిర్వచించి, తర్వాత ప్రతి !!{derivable} సీక్వెంట్ చెల్లుబాటు అవుతుందని
+చూపుతాం. అప్పుడు ఈ ఫలితం నుంచి (1)--(3) ఉపసిద్ధాంతాలుగా వస్తాయి.
+\end{explain}
+
+\begin{defn}
+ఏదో $!A \in \Gamma$కు
+$\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$ అయినా, లేదా ఏదో
+$!A \in \Delta$కు $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ అయినా,
+అప్పుడు మాత్రమే \iftag{FOL}{!!^a{structure}~$\Struct
+  M$}{!!^a{valuation}~$\pAssign{v}$} అనేది
+$\Gamma \Sequent \Delta$ సీక్వెంట్‌ను \emph{సంతృప్తిపరుస్తుంది}.
+
+ప్రతి \iftag{FOL}{!!{structure}~$\Struct
+  M$}{!!{valuation}~$\pAssign{v}$} ఒక సీక్వెంట్‌ను
+సంతృప్తిపరిస్తే, అప్పుడు మాత్రమే ఆ సీక్వెంట్ \emph{చెల్లుబాటు} అవుతుంది.
+\end{defn}
+
+\begin{thm}[నిర్దుష్టత]
+\ollabel{thm:sequent-soundness} $\Log{LK}$ అనేది
+$\Theta \Sequent \Xi$ను !!{derive}s చేస్తే,
+$\Theta \Sequent \Xi$ చెల్లుబాటు అవుతుంది.
+\end{thm}
+
+\begin{proof}
+$\Theta \Sequent \Xi$ యొక్క ఒక !!a{derivation}ను $\pi$ అందాం.
+$\pi$లోని నిగమనాల సంఖ్య~$n$పై ఆగమనంతో కొనసాగుతాం.
+
+నిగమనాల సంఖ్య~$0$ అయితే $\pi$లో ఒక ప్రారంభ సీక్వెంట్ మాత్రమే ఉంటుంది.
+ప్రతి ప్రారంభ సీక్వెంట్ $!A \Sequent !A$ స్పష్టంగా చెల్లుబాటు అవుతుంది;
+ఎందుకంటే ప్రతి \iftag{FOL}{$\Struct M$}{$\pAssign{v}$}కు
+$\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$ లేదా
+$\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
+
+నిగమనాల సంఖ్య~0కంటే ఎక్కువైతే అన్నిటికంటే కిందనున్న నిగమనం రకాన్ని
+బట్టి సందర్భాలను వేరుచేస్తాం. ప్రతి పూర్వాధారం యొక్క !!{derivation}లో
+ఉన్న నిగమనాల సంఖ్య $n$కంటే తక్కువ కనుక, ఆ నిగమనం యొక్క పూర్వాధారాలు
+చెల్లుబాటు అవుతాయని ఆగమన పరికల్పన ద్వారా అనుకోవచ్చు.
+
+మొదట ఒకే పూర్వాధారం గల నిగమన అవకాశాలను పరిశీలిద్దాం.
+\begin{enumerate}
+\item చివరి నిగమనం బలహీనీకరణ. అప్పుడు $\Theta \Sequent \Xi$ అనేది
+  $!A, \Gamma \Sequent \Delta$ (చివరి నిగమనం
+  \LeftR{\Weakening} అయితే), లేదా $\Gamma \Sequent \Delta, !A$
+  (అది \RightR{\Weakening} అయితే); ఆ !!{derivation} కిందివాటిలో
+  ఒకదానితో ముగుస్తుంది:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\Weakening}}
+    \UnaryInf$!A, \Gamma \fCenter \Delta$
+    \DisplayProof\qquad\bottomAlignProof
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta$
+    \RightLabel{\RightR{\Weakening}}
+    \UnaryInf$\Gamma \fCenter \Delta, !A$
+  \end{prooftree}
+  ఆగమన పరికల్పన ప్రకారం $\Gamma \Sequent \Delta$ చెల్లుబాటు అవుతుంది;
+  అంటే ప్రతి
+  \iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}కు,
+  ఏదో $!C \in \Gamma$కు
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$ అయినా, లేదా ఏదో
+  $!C \in \Delta$కు $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$ అయినా అవుతుంది.
+
+  ఏదో $!C \in \Gamma$కు
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$ అయితే,
+  $\Theta = !A, \Gamma$ కనుక $!C \in \Theta$ కూడా; అందువల్ల ఏదో
+  $!C \in \Theta$కు $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$.
+  అదే విధంగా ఏదో $!C \in \Delta$కు
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$ అయితే, $!C \in \Xi$ కనుక
+  ఏదో $!C \in \Xi$కు $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$.
+  కాబట్టి $\Theta \Sequent \Xi$ చెల్లుబాటు అవుతుంది.
+\item చివరి నిగమనం \LeftR{\lnot}: అప్పుడు చివరి నిగమనం యొక్క
+  పూర్వాధారం $\Gamma \Sequent \Delta, !A$; నిష్కర్ష
+  $\lnot !A, \Gamma \Sequent \Delta$. అంటే !!{derivation} ఇలా
+  ముగుస్తుంది:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !A$
+    \RightLabel{\LeftR{\lnot}}
+    \UnaryInf$\lnot !A, \Gamma \fCenter \Delta$
+  \end{prooftree}
+  ఇక్కడ $\Theta = \lnot !A, \Gamma$, $\Xi = \Delta$.
+
+  $\Gamma \Sequent \Delta, !A$ చెల్లుబాటు అవుతుందని ఆగమన పరికల్పన
+  చెబుతుంది. అంటే ప్రతి \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$}కు,
+  (a) ఏదో $!C \in \Gamma$కు
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$, లేదా (b) ఏదో
+  $!C \in \Delta$కు $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$, లేదా
+  (c) $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. మనం
+  $\Theta \Sequent \Xi$ కూడా చెల్లుబాటు అవుతుందని చూపాలి.
+  \iftag{FOL}{$\Struct{M}$ అనే ఒక !!a{structure}ను}
+    {$\pAssign{v}$ అనే ఒక !!a{valuation}ను} తీసుకోండి. (a) చెల్లితే,
+  ఏదో $!C \in \Gamma$కు $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$;
+  అదే $!C \in \Theta$ కూడా. (b) చెల్లితే ఏదో $!C \in \Delta$కు
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$; అదే $!C \in \Xi$ కూడా.
+  చివరగా $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ అయితే
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{\lnot !A}$. $\lnot !A \in
+  \Theta$ కనుక ఏదో $!C \in \Theta$కు
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$. కాబట్టి
+  $\Theta \Sequent \Xi$ చెల్లుబాటు అవుతుంది.
+\item చివరి నిగమనం \RightR{\lnot}: అభ్యాసం.
+\item చివరి నిగమనం \LeftR{\land}: దీనికి రెండు రూపాలు ఉన్నాయి.
+  పూర్వాధారం ఎడమవైపున్న $!A$ నుంచి గానీ $!B$ నుంచి గానీ
+  $!A \land !B$ను నిగమించవచ్చు. మొదటి సందర్భంలో $\pi$ ఇలా ముగుస్తుంది:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$!A, \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\land}}
+    \UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+  \end{prooftree}
+  ఇక్కడ $\Theta = !A \land !B, \Gamma$, $\Xi = \Delta$. ఒక
+  \iftag{FOL}{!!a{structure}~$\Struct
+    M$}{!!a{valuation}~$\pAssign{v}$}ను పరిశీలించండి. ఆగమన పరికల్పన
+  ప్రకారం $!A, \Gamma \Sequent \Delta$ చెల్లుబాటు కనుక, (a)
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$, (b) ఏదో
+  $!C \in \Gamma$కు $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$, లేదా
+  (c) ఏదో $!C \in \Delta$కు
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$. (a) సందర్భంలో
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A \land !B}$; కాబట్టి
+  ఒక $!C \in \Theta$కు (అదే $!A \land !B$కు)
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$. (b) సందర్భంలో ఏదో
+  $!C \in \Gamma$కు $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$;
+  అదే $!C \in \Theta$ కూడా. (c) సందర్భంలో ఏదో $!C \in \Delta$కు
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$; $\Xi = \Delta$ కనుక అదే
+  $!C \in \Xi$ కూడా. అందువల్ల ప్రతి సందర్భంలో
+  \iftag{FOL}{$\Struct M$}{$\pAssign{v}$} అనేది
+  $!A \land !B, \Gamma \Sequent \Delta$ను సంతృప్తిపరుస్తుంది.
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$}ను యాదృచ్ఛికంగా ఎంచుకున్నాం
+  కనుక $!A \land !B, \Gamma \Sequent \Delta$ చెల్లుబాటు అవుతుంది.
+  \sourcecorrection{OLTESEQ-004}{ఈ సందర్భపు లక్ష్య నిష్కర్ష
+  $!A \land !B, \Gamma \Sequent \Delta$ అయినప్పటికీ, ఆంగ్ల మూలం
+  చివరి వాక్యంలో పొరపాటున పూర్వాధారపు తోక మాత్రమే అయిన
+  $\Gamma \Sequent \Delta$ చెల్లుబాటు అవుతుందని చెప్పింది. మొత్తం
+  నిష్కర్షనే పేర్కొనేలా సరిచేశాం.}
+  $!B$ నుంచి $!A \land !B$ను నిగమించే సందర్భాన్ని కూడా ఇదే విధంగా,
+  $!A$ను $!B$గా మార్చి నిర్వహించవచ్చు.
+\item చివరి నిగమనం \RightR{\lor}: దీనికి రెండు రూపాలు ఉన్నాయి.
+  పూర్వాధారం కుడివైపున్న $!A$ నుంచి గానీ $!B$ నుంచి గానీ
+  $!A \lor !B$ను నిగమించవచ్చు. మొదటి సందర్భంలో $\pi$ ఇలా ముగుస్తుంది:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !A$
+    \RightLabel{\RightR{\lor}}
+    \UnaryInf$\Gamma \fCenter \Delta, !A \lor !B$
+  \end{prooftree}
+  ఇప్పుడు $\Theta = \Gamma$, $\Xi = \Delta, !A \lor !B$. ఒక
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}ను
+  పరిశీలించండి. $\Gamma \Sequent \Delta, !A$ చెల్లుబాటు కనుక,
+  (a) $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$, (b) ఏదో
+  $!C \in \Gamma$కు $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$, లేదా
+  (c) ఏదో $!C \in \Delta$కు
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$. (a) సందర్భంలో
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lor !B}$. (b) సందర్భంలో ఏదో
+  $!C \in \Gamma$కు $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$.
+  (c) సందర్భంలో ఏదో $!C \in \Delta$కు
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$. కాబట్టి ప్రతి సందర్భంలో
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} అనేది
+  $\Gamma \Sequent \Delta, !A \lor !B$, అంటే
+  $\Theta \Sequent \Xi$ను సంతృప్తిపరుస్తుంది.
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$}ను యాదృచ్ఛికంగా ఎంచుకున్నాం
+  కనుక $\Theta \Sequent \Xi$ చెల్లుబాటు అవుతుంది. $!B$ నుంచి
+  $!A \lor !B$ను నిగమించే సందర్భాన్ని కూడా ఇదే విధంగా, $!A$ను
+  $!B$గా మార్చి నిర్వహించవచ్చు.
+\item చివరి నిగమనం \RightR{\lif}: అప్పుడు $\pi$ ఇలా ముగుస్తుంది:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$!A, \Gamma \fCenter \Delta, !B$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\Gamma \fCenter \Delta, !A \lif !B$
+  \end{prooftree}
+  పూర్వాధారం చెల్లుబాటు అవుతుందని ఆగమన పరికల్పన మళ్లీ చెబుతుంది;
+  నిష్కర్ష కూడా చెల్లుబాటు అవుతుందని చూపాలి. ఒక యాదృచ్ఛిక
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$}ను తీసుకుందాం.
+  $!A, \Gamma \Sequent \Delta, !B$ చెల్లుబాటు కనుక కింది సందర్భాల్లో
+  కనీసం ఒకటి వస్తుంది: (a)
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$, (b)
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$, (c) ఏదో
+  $~!C \in \Gamma$కు $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$, లేదా
+  (d) ఏదో $!C \in \Delta$కు
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$. (a), (b) సందర్భాల్లో
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lif !B}$; అందువల్ల
+  ఒక $!C \in \Delta, !A \lif !B$కు
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$. (c) సందర్భంలో ఏదో
+  $!C \in \Gamma$కు $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$.
+  (d) సందర్భంలో ఏదో $!C \in \Delta$కు
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$. ప్రతి సందర్భంలో
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} అనేది
+  $\Gamma \Sequent \Delta, !A \lif !B$ను సంతృప్తిపరుస్తుంది.
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$}ను యాదృచ్ఛికంగా ఎంచుకున్నాం
+  కనుక $\Gamma \Sequent \Delta, !A \lif !B$ చెల్లుబాటు అవుతుంది.
+  \iftag{FOL}{%
+\item చివరి నిగమనం \LeftR{\lforall}: అప్పుడు ఒక !!a{formula}~$!A(x)$,
+  ఒక సంవృత పదం~$t$ ఉండి, $\pi$ ఇలా ముగుస్తుంది:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$!A(t), \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[x][!A(x)], \Gamma \fCenter \Delta$
+  \end{prooftree}
+  $\lforall[x][!A(x)], \Gamma \Sequent \Delta$ అనే నిష్కర్ష
+  చెల్లుబాటు అవుతుందని చూపాలి. ఒక !!a{structure}~$\Struct M$ను
+  పరిశీలించండి. $!A(t), \Gamma \Sequent \Delta$ అనే పూర్వాధారం
+  చెల్లుబాటు కనుక, (a) $\Sat/{M}{!A(t)}$, (b) ఏదో
+  $!C \in \Gamma$కు $\Sat/{M}{!C}$, లేదా (c) ఏదో
+  $!C \in \Delta$కు $\Sat{M}{!C}$. (a) సందర్భంలో
+  \olref[syn][sem]{prop:quant-terms} ప్రకారం,
+  $\Sat{M}{\lforall[x][!A(x)]}$ అయితే $\Sat{M}{!A(t)}$. కానీ
+  $\Sat/{M}{!A(t)}$ కనుక $\Sat/{M}{\lforall[x][!A(x)]}$. (b), (c)
+  సందర్భాల్లో కూడా $\Struct{M}$ అనేది
+  $\lforall[x][!A(x)], \Gamma \Sequent \Delta$ను సంతృప్తిపరుస్తుంది.
+  $\Struct M$ను యాదృచ్ఛికంగా ఎంచుకున్నాం కనుక
+  $\lforall[x][!A(x)], \Gamma \Sequent \Delta$ చెల్లుబాటు అవుతుంది.
+\item చివరి నిగమనం \RightR{\lexists}: అభ్యాసం.
+\item చివరి నిగమనం \RightR{\lforall}: అప్పుడు ఒక
+  !!a{formula}~$!A(x)$, ఒక !!a{constant}~$a$ ఉండి, $\pi$ ఇలా ముగుస్తుంది:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !A(a)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!A(x)]$
+  \end{prooftree}
+  ఇక్కడ ఐగెన్ చరరాశి షరతు తీరుతుంది; అంటే $a$ అనేది $!A(x)$,
+  $\Gamma$, $\Delta$లలో కనిపించదు. చివరి నిగమనం యొక్క పూర్వాధారం
+  చెల్లుబాటు అవుతుందని ఆగమన పరికల్పన చెబుతుంది. దాని నిష్కర్ష కూడా
+  చెల్లుబాటు అవుతుందని చూపాలి. అంటే ఏ !!{structure}~$\Struct M$కైనా,
+  (a) $\Sat{M}{\lforall[x][!A(x)]}$, (b) ఏదో $!C \in \Gamma$కు
+  $\Sat/{M}{!C}$, లేదా (c) ఏదో $!C \in \Delta$కు $\Sat{M}{!C}$.
+
+  $\Struct{M}$ ఒక యాదృచ్ఛిక !!{structure} అనుకుందాం. (b) లేదా (c)
+  చెల్లితే పని పూర్తయింది. అందువల్ల రెండూ చెల్లవని అనుకుందాం: ప్రతి
+  $!C \in \Gamma$కు $\Sat{M}{!C}$; ప్రతి $!C \in \Delta$కు
+  $\Sat/{M}{!C}$. మనం (a), అంటే
+  $\Sat{M}{\lforall[x][!A(x)]}$ చెల్లుతుందని చూపాలి.
+  \olref[syn][ass]{prop:sat-quant} ప్రకారం, ప్రతి చరరాశి
+  విలువనిర్ణయం~$s$కు $\Sat{M}{!A(x)}[s]$ అని చూపితే చాలు. అందువల్ల
+  $s$ను ఒక యాదృచ్ఛిక చరరాశి విలువనిర్ణయంగా తీసుకుందాం.
+  $\Struct{M}$లాగే ఉండి $\Assign{a}{M'} = s(x)$ మాత్రమే అయ్యేలా
+  $\Struct{M'}$ను నిర్మించండి. \olref[syn][ext]{cor:extensionality-sent}
+  ప్రకారం ఏ $!C \in \Gamma$కైనా $\Sat{M'}{!C}$, ఎందుకంటే $a$ అనేది
+  $\Gamma$లో కనిపించదు; ఏ $!C \in \Delta$కైనా $\Sat/{M'}{!C}$.
+  కానీ పూర్వాధారం చెల్లుబాటు కనుక $\Sat{M'}{!A(a)}$.
+  $!A(a)$ ఒక వాక్యం కనుక \olref[syn][ass]{prop:sentence-sat-true}
+  ప్రకారం $\Sat{M'}{!A(a)}[s]$. $\Struct{M'}$ను ఇలాగే నిర్వచించాం
+  కనుక $s(x) = \Value{a}{M'}[s]$తో $\varAssign{s}{s}{x}$.
+  అందువల్ల \olref[syn][ext]{prop:ext-formulas} వర్తించి
+  $\Sat{M'}{!A(x)}[s]$ వస్తుంది. $a$ అనేది $!A(x)$లో కనిపించదు కనుక
+  \olref[syn][ext]{prop:extensionality} ప్రకారం
+  $\Sat{M}{!A(x)}[s]$. $s$ను యాదృచ్ఛికంగా ఎంచుకున్నాం కనుక ప్రతి
+  చరరాశి విలువనిర్ణయానికీ $\Sat{M}{!A(x)}[s]$ అని నిరూపించాం.
+\item చివరి నిగమనం \LeftR{\lexists}: అభ్యాసం.
+}{}
+\end{enumerate}
+ఇప్పుడు రెండు పూర్వాధారాలు గల నిగమన అవకాశాలను పరిశీలిద్దాం.
+\begin{enumerate}
+\item చివరి నిగమనం కట్: అప్పుడు $\pi$ ఇలా ముగుస్తుంది:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !A$
+    \AxiomC{}
+    \Deduce$!A, \Pi \fCenter \Lambda$
+    \RightLabel{\Cut}
+    \BinaryInf$\Gamma, \Pi \fCenter \Delta, \Lambda$
+  \end{prooftree}
+  \iftag{FOL}{$\Struct{M}$ అనే ఒక !!a{structure}ను}
+    {$\pAssign{v}$ అనే ఒక !!a{valuation}ను} తీసుకోండి. ఆగమన పరికల్పన
+  ప్రకారం పూర్వాధారాలు చెల్లుబాటు; కాబట్టి
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} రెండు పూర్వాధారాలనూ
+  సంతృప్తిపరుస్తుంది. రెండు సందర్భాలను వేరుచేద్దాం: (a)
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$; (b)
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. (a) సందర్భంలో ఎడమ
+  పూర్వాధారాన్ని సంతృప్తిపరచాలంటే
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} అనేది
+  $\Gamma \Sequent \Delta$ను సంతృప్తిపరచాలి. అప్పుడు అది నిష్కర్షను
+  కూడా సంతృప్తిపరుస్తుంది. (b) సందర్భంలో కుడి పూర్వాధారాన్ని
+  సంతృప్తిపరచాలంటే \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} అనేది
+  $\Pi \Sequent \Lambda$ను సంతృప్తిపరచాలి. మళ్లీ,
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} నిష్కర్షను
+  సంతృప్తిపరుస్తుంది.
+  \sourcecorrection{OLTESEQ-005}{కట్ సందర్భంలో కుడి పూర్వాధారం నుంచి
+  మిగిలే సీక్వెంట్ $\Pi \Sequent \Lambda$ కావాలి. ఆంగ్ల మూలం ఇక్కడ
+  సీక్వెంట్ సంకేతానికి బదులు సమితి భేద సంకేతాన్ని వాడి
+  $\Pi \setminus \Lambda$ అని రాసింది. ప్రదర్శిత కట్ నియమమే
+  నియంత్రణ సాక్ష్యం కనుక సరైన సీక్వెంట్ సంకేతాన్ని పునరుద్ధరించాం.}
+\item చివరి నిగమనం \RightR{\land}. అప్పుడు $\pi$ ఇలా ముగుస్తుంది:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !A$
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !B$
+    \RightLabel{\RightR{\land}}
+    \BinaryInf$\Gamma \fCenter \Delta, !A \land !B$
+  \end{prooftree}
+  ఒక \iftag{FOL}{!!a{structure}~$\Struct
+    M$}{!!a{valuation}~$\pAssign{v}$}ను పరిశీలించండి.
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} అనేది
+  $\Gamma \Sequent \Delta$ను సంతృప్తిపరిస్తే పని పూర్తయింది. అది
+  సంతృప్తిపరచదని అనుకుందాం. ఆగమన పరికల్పన ప్రకారం
+  $\Gamma \fCenter \Delta, !A$ చెల్లుబాటు కనుక
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. అదే విధంగా
+  $\Gamma \Sequent \Delta, !B$ చెల్లుబాటు కనుక
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$. అందువల్ల
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \land !B}$.
+\item చివరి నిగమనం \LeftR{\lor}: అభ్యాసం.
+\item చివరి నిగమనం \LeftR{\lif}. అప్పుడు $\pi$ ఇలా ముగుస్తుంది:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !A$
+    \AxiomC{}
+    \Deduce$!B, \Pi \fCenter \Lambda$
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$!A \lif !B, \Gamma, \Pi \fCenter \Delta, \Lambda$
+  \end{prooftree}
+  మళ్లీ ఒక
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}ను
+  పరిశీలించి, \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} అనేది
+  $\Gamma, \Pi \Sequent \Delta, \Lambda$ను సంతృప్తిపరచదని
+  అనుకుందాం. $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A \lif !B}$ అని
+  చూపాలి. \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} అనేది
+  $\Gamma, \Pi \Sequent \Delta, \Lambda$ను సంతృప్తిపరచకపోతే,
+  $\Gamma \Sequent \Delta$, $\Pi \Sequent \Lambda$ రెండింటినీ
+  సంతృప్తిపరచదు. $\Gamma \Sequent \Delta, !A$ చెల్లుబాటు కనుక
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. $!B, \Pi \Sequent \Lambda$
+  చెల్లుబాటు కనుక $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$. అందువల్ల
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A \lif !B}$; మనం చూపాలనుకున్నది ఇదే.
+\end{enumerate}
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][seq][sou]{thm:sequent-soundness} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][seq][sou]{thm:sequent-soundness} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+\tagendprob
+
+\begin{cor}
+\ollabel{cor:weak-soundness}
+$\Proves !A$ అయితే $!A$ అనేది \iftag{FOL}{చెల్లుబాటు అయ్యేది}{సర్వసత్యం}.
+\end{cor}
+
+\begin{cor}
+\ollabel{cor:entailment-soundness}
+$\Gamma \Proves !A$ అయితే $\Gamma \Entails !A$.
+\end{cor}
+
+\begin{proof}
+$\Gamma \Proves !A$ అయితే ఏదో పరిమిత ఉపసమితి
+$\Gamma_0 \subseteq \Gamma$కు $\Gamma_0 \Sequent !A$ యొక్క ఒక
+!!a{derivation} ఉంటుంది. \olref{thm:sequent-soundness} ప్రకారం ప్రతి
+\iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+ఏదో $!B \in \Gamma_0$ను అసత్యం చేస్తుంది, లేదా $!A$ను సత్యం
+చేస్తుంది. అందువల్ల $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ అయితే
+$\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ కూడా.
+\end{proof}
+
+\begin{cor}
+\ollabel{cor:consistency-soundness}
+$\Gamma$ సంతృప్తిపరచదగినదైతే అది అవైరుధ్యమైనది.
+\end{cor}
+
+\begin{proof}
+ప్రతివర్తనాన్ని నిరూపిస్తాం. $\Gamma$ అవైరుధ్యమైనది కాదనుకుందాం.
+అప్పుడు ఒక పరిమిత $\Gamma_0 \subseteq \Gamma$, దానికి
+$\Gamma_0 \Sequent \quad$ యొక్క ఒక !!a{derivation} ఉంటాయి.
+\olref{thm:sequent-soundness} ప్రకారం $\Gamma_0 \Sequent \quad$
+చెల్లుబాటు అవుతుంది. మరోలా చెప్పాలంటే, ప్రతి
+\iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}కు
+$\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$ అయ్యే ఒక
+$!C \in \Gamma_0$ ఉంటుంది; $\Gamma_0 \subseteq \Gamma$ కనుక అదే
+$!C$ అనేది $\Gamma$లోనూ ఉంటుంది. అందువల్ల ఏ
+\iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} కూడా $\Gamma$ను
+సంతృప్తిపరచదు; కాబట్టి $\Gamma$ సంతృప్తిపరచదగినది కాదు.
+\end{proof}
+
+\end{document}

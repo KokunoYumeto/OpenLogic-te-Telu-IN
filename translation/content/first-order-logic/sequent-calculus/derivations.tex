@@ -1,0 +1,120 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: derivations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{der}}
+      {\olfileid{pl}{seq}{der}}
+
+\olsection{\usetoken{P}{derivation}}
+
+\begin{explain}
+ప్రారంభ సీక్వెంట్ ఎలా ఉంటుందో చెప్పాం; నిగమన నియమాలనూ ఇచ్చాం.
+వీటి నుంచి సీక్వెంట్ కలనంలోని !!^{derivation}s ఆగమనాత్మకంగా
+ఉత్పన్నమవుతాయి: ప్రతి !!{derivation} తనంతట తానే ఒక ప్రారంభ సీక్వెంట్
+అయినా అవుతుంది, లేదా ఒకటి లేదా రెండు !!{derivation}s తర్వాత ఒక
+నిగమనం ఉండే రూపంలో ఉంటుంది.
+\end{explain}
+
+\begin{defn}[$\Log{LK}$ !!{derivation}]
+ఒక సీక్వెంట్~$S$కు \emph{$\Log{LK}$-!!{derivation}} అంటే కింది
+షరతులను తీర్చే సీక్వెంట్ల పరిమిత వృక్షం:
+\begin{enumerate}
+\item వృక్షంలో అన్నిటికంటే పైనున్న సీక్వెంట్లు ప్రారంభ సీక్వెంట్లు.
+\item వృక్షంలో అన్నిటికంటే కిందనున్న సీక్వెంట్~$S$.
+\item $S$ తప్ప వృక్షంలోని ప్రతి సీక్వెంట్, తనకు నేరుగా కింద నిలిచే
+  నిష్కర్ష గల నిగమన నియమాన్ని సరిగ్గా వర్తింపజేయడంలో ఒక పూర్వాధారం.
+\end{enumerate}
+అప్పుడు $S$ను ఆ !!{derivation} యొక్క \emph{అంత్య సీక్వెంట్} అనీ,
+$S$ను \emph{$\Log{LK}$లో !!{derivable}} (లేదా
+$\Log{LK}$-!!{derivable}) అనీ అంటాం.
+\end{defn}
+
+\begin{ex}
+ప్రతి ప్రారంభ సీక్వెంట్, ఉదాహరణకు $!C \Sequent !C$, ఒక
+!!a{derivation}. దీనికి, ఉదాహరణకు, $\LeftR{\Weakening}$ నియమాన్ని
+వర్తింపజేసి కొత్త !!{derivation}ను పొందవచ్చు:
+\begin{prooftree}
+\Axiom$ \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !A, \Gamma \fCenter \Delta$
+\end{prooftree}
+అయితే ఈ నియమం సాధారణంగా వర్తించేది: నియమంలోని $!A$ స్థానంలో ఏ
+!!{sentence}నైనా, ఉదాహరణకు $!D$ను కూడా పెట్టవచ్చు. పూర్వాధారం మన
+ప్రారంభ సీక్వెంట్ $!C \Sequent !C$తో సరిపోలితే, $\Gamma$, $\Delta$
+రెండూ కేవలం $!C$ అని అర్థం; అప్పుడు నిష్కర్ష $!D, !C \Sequent !C$
+అవుతుంది. కాబట్టి కిందిది ఒక !!a{derivation}:
+\begin{prooftree}
+\Axiom$ !C \fCenter !C $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !D, !C \fCenter !C$
+\end{prooftree}
+ఇప్పుడు ఎడమవైపు ఉన్న రెండు !!{sentence}s స్థానాలను మార్చనిచ్చే మరొక
+నియమాన్ని, ఉదాహరణకు $\LeftR{\Exchange}$ను, వర్తింపజేయవచ్చు. అందువల్ల
+కిందిది కూడా సరైన !!{derivation}:
+\begin{prooftree}
+\Axiom$ !C \fCenter !C $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !D, !C \fCenter !C$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !C, !D \fCenter !C$
+\end{prooftree}
+ఈ నియమ వర్తనలో, ఇచ్చిన నియమ రూపం
+\begin{prooftree}
+\Axiom$ \Gamma, !A, !B, \Pi \fCenter \Delta $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ \Gamma, !B, !A, \Pi \fCenter \Delta,$
+\end{prooftree}
+అయితే, $\Gamma$, $\Pi$ రెండూ శూన్య క్రమాలు, $\Delta$ అనేది $!C$;
+$!A$, $!B$ పాత్రలను వరుసగా $!D$, $!C$ పోషిస్తాయి. దాదాపు ఇదే
+విధంగా కిందిది కూడా ఒక !!a{derivation} అని చూస్తాం:
+\begin{prooftree}
+\Axiom$ !D \fCenter !D $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !C, !D \fCenter !D$
+\end{prooftree}
+ఇప్పుడు ఈ రెండు !!{derivation}sను తీసుకొని $\RightR{\land}$తో
+కలపవచ్చు. ఆ నియమం:
+\begin{prooftree}
+\Axiom$\Gamma \fCenter \Delta, !A$
+\Axiom$ \Gamma \fCenter \Delta, !B$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ \Gamma \fCenter \Delta, !A \land !B $
+\end{prooftree}
+మన సందర్భంలో పూర్వాధారాలు, వాటితో ముగిసే !!{derivation}sలోని చివరి
+సీక్వెంట్లతో సరిపోలాలి. అందువల్ల $\Gamma$ అనేది $!C, !D$;
+$\Delta$ శూన్యం; $!A$ అనేది $!C$; $!B$ అనేది $!D$. కాబట్టి నిగమనం
+సరైనదైతే నిష్కర్ష $!C, !D \Sequent !C \land !D$ అవుతుంది.
+\begin{prooftree}
+\Axiom$ !C \fCenter !C $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !D, !C \fCenter !C$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !C, !D \fCenter !C$
+\Axiom$ !D \fCenter !D $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !C, !D \fCenter !D$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ !C, !D \fCenter !C \land !D $
+\end{prooftree}
+అవశ్యంగా, పూర్వాధారాల క్రమాన్ని తిప్పవచ్చు; అప్పుడు $!A$ అనేది
+$!D$, $!B$ అనేది $!C$ అవుతాయి.
+\begin{prooftree}
+\Axiom$ !D \fCenter !D $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !C, !D \fCenter !D$
+\Axiom$ !C \fCenter !C $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !D, !C \fCenter !C$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !C, !D \fCenter !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ !C, !D \fCenter !D \land !C $
+\end{prooftree}
+\end{ex}
+
+\end{document}

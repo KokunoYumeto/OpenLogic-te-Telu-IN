@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 65 of 722 draft units**. This log contains 35 terminology/sense decisions and 41 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 80 of 722 draft units**. This log contains 37 terminology/sense decisions and 46 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 “Attested” means only that the specifically listed native page was actually inspected for the stated scope. It does not mean a human expert endorsed the final edition. The terminology rationales below were reconstructed retrospectively from primary records and exact current files; source-correction entries come from the contemporaneous audit.
 
@@ -705,6 +705,46 @@ Machine-readable companion: `EXPERT_REVIEW_LOG.jsonl`.
 - Uncertainty: Low for the broad proof register; high nomenclatural for the named proof formalisms and rule headwords
 
 - Review question: Is “సీక్వెంట్ / సీక్వెంట్ కలనం / సహజ నిగమనం / ప్రవేశ నియమం / తొలగింపు నియమం / పరికల్పన / ఉపసంహరణ / టాబ్లో / చిహ్నిత సూత్రం / సంవృత శాఖ / వివృత శాఖ / స్వీకృతాధారిత నిగమనం / స్వీకృత నమూనా / మోడస్ పోనెన్స్ / రిజల్యూషన్ / నిరూపణ-సిద్ధాంత అర్థవిచారం” idiomatic and technically standard for “sequent / sequent calculus / natural deduction / introduction rule / elimination rule / assumption / discharge / tableau / signed formula / closed branch / open branch / axiomatic derivation / axiom schema / modus ponens / resolution / proof-theoretic semantics” in Telugu logic/mathematics across Andhra Pradesh and Telangana? If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T036 — antecedent / succedent / initial sequent / end-sequent / logical rule / structural rule / eigenvariable / weakening / contraction / exchange / cut
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Chosen wording/treatment: పూర్వాంగం / ఉత్తరాంగం / ప్రారంభ సీక్వెంట్ / అంత్య సీక్వెంట్ / తార్కిక నియమం / నిర్మాణాత్మక నియమం / ఐగెన్ చరరాశి / బలహీనీకరణ / సంకోచనం / మార్పిడి / కట్
+
+- Exact implementation: content/first-order-logic/sequent-calculus/rules-and-proofs.tex:23-25 ↔ translation/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:23-25 (OLP-0070-B007); content/first-order-logic/sequent-calculus/rules-and-proofs.tex:52-60 ↔ translation/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:52-61 (OLP-0070-B010); content/first-order-logic/sequent-calculus/rules-and-proofs.tex:63-72 ↔ translation/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:64-72 (OLP-0070-B011); content/first-order-logic/sequent-calculus/derivations.tex:23-34 ↔ translation/content/first-order-logic/sequent-calculus/derivations.tex:23-34 (OLP-0074-B007); content/first-order-logic/sequent-calculus/quantifier-rules.tex:28-32 ↔ translation/content/first-order-logic/sequent-calculus/quantifier-rules.tex:28-32 (OLP-0072-B008); content/first-order-logic/sequent-calculus/structural-rules.tex:23 ↔ translation/content/first-order-logic/sequent-calculus/structural-rules.tex:23 (OLP-0073-B007); content/first-order-logic/sequent-calculus/structural-rules.tex:37 ↔ translation/content/first-order-logic/sequent-calculus/structural-rules.tex:37 (OLP-0073-B009); content/first-order-logic/sequent-calculus/structural-rules.tex:51 ↔ translation/content/first-order-logic/sequent-calculus/structural-rules.tex:51 (OLP-0073-B011); content/first-order-logic/sequent-calculus/structural-rules.tex:68-74 ↔ translation/content/first-order-logic/sequent-calculus/structural-rules.tex:68-74 (OLP-0073-B014)
+
+- Authorities actually checked: TE-P002, PDF 9, printed 35, Main paragraph, lower half; TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P002--P004 support broad logic, proof, induction, deduction and theorem exposition but do not attest the sequent-specific rule taxonomy. Sequent, eigen and cut are explicit borrowings. The two-sided sequence definition and each displayed LK rule schema control the selected senses and left/right distinctions.
+
+- Alternatives: sequent, eigen and cut borrowings combined with descriptive Telugu side/rule names (chosen); leave every sequent-calculus headword in English (not adopted); replace the established sequent borrowing with a longer descriptive phrase (not adopted)
+
+- Uncertainty: Low for broad rule/proof exposition; high nomenclatural for the sequent-specific headwords
+
+- Review question: Is “పూర్వాంగం / ఉత్తరాంగం / ప్రారంభ సీక్వెంట్ / అంత్య సీక్వెంట్ / తార్కిక నియమం / నిర్మాణాత్మక నియమం / ఐగెన్ చరరాశి / బలహీనీకరణ / సంకోచనం / మార్పిడి / కట్” idiomatic and technically standard for “antecedent / succedent / initial sequent / end-sequent / logical rule / structural rule / eigenvariable / weakening / contraction / exchange / cut” in Telugu logic/mathematics across Andhra Pradesh and Telangana? If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T037 — reflexivity / monotonicity / transitivity / compactness (of derivability)
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Chosen wording/treatment: స్వావర్తనత్వం / ఏకదిశత / సంక్రామకత్వం / సంహతత్వం
+
+- Exact implementation: content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:78-84 ↔ translation/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:84-90 (OLP-0077-B012); content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:88-101 ↔ translation/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:94-107 (OLP-0077-B014); content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:102-126 ↔ translation/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:108-132 (OLP-0077-B016); content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:147-167 ↔ translation/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:153-173 (OLP-0077-B022)
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P010, PDF 318, printed 311, Worked questions 33-36
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: The relation chapter already fixes స్వావర్తనత్వం and సంక్రామకత్వం, and the semantic-notions section uses ఏకదిశత for monotonicity. TE-P003 and TE-P004 support only proof/theorem exposition, while TE-P010 supports relation usage rather than proof-theoretic consequence. The four displayed propositions fix the present derivability senses; సంహతత్వం remains provisional nomenclature.
+
+- Alternatives: reuse the established relation/consequence vocabulary with each proof-theoretic sense fixed locally (chosen); direct English transliterations (not adopted); an alternative specialist term for compactness if a Telugu logic authority documents one
+
+- Uncertainty: Low for cross-chapter consistency; high nomenclatural for proof-theoretic compactness
+
+- Review question: Is “స్వావర్తనత్వం / ఏకదిశత / సంక్రామకత్వం / సంహతత్వం” idiomatic and technically standard for “reflexivity / monotonicity / transitivity / compactness (of derivability)” in Telugu logic/mathematics across Andhra Pradesh and Telangana? If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -1525,3 +1565,103 @@ Machine-readable companion: `EXPERT_REVIEW_LOG.jsonl`.
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Review question: Does the tableau inconsistency definition require every displayed finite premise B_i, rather than merely some one premise, to belong to Gamma?
+
+## REV-OLTESEQ-001 — OLTESEQ-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: labelled all four antecedent-order changes with LeftR{Exchange}, retaining every sequent; one adjacent sourcecorrection discloses the repeated repair
+
+- Exact implementation: lines 76-90, 94-108, 110-129 and 132-151, repeated antecedent exchange labels ↔ translation/content/first-order-logic/sequent-calculus/proving-things.tex:88 (OLP-0075-B010)
+
+- Authorities actually checked: OLTESEQ-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: labelled all four antecedent-order changes with LeftR{Exchange}, retaining every sequent; one adjacent sourcecorrection discloses the repeated repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Are all four steps that change only antecedent order labelled as left exchange while every displayed sequent remains unchanged?
+
+## REV-OLTESEQ-002 — OLTESEQ-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: restored the missing negation on B in both candidates so they match the end-sequent and following displayed inferences; one adjacent sourcecorrection discloses the repeated repair
+
+- Exact implementation: lines 175-188, both candidate premises in the third worked example ↔ translation/content/first-order-logic/sequent-calculus/proving-things.tex:182 (OLP-0075-B013)
+
+- Authorities actually checked: OLTESEQ-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the missing negation on B in both candidates so they match the end-sequent and following displayed inferences; one adjacent sourcecorrection discloses the repeated repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Do both prose candidate premises contain not-A-or-not-B, matching the end-sequent and the two displayed inferences?
+
+## REV-OLTESEQ-003 — OLTESEQ-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: named the sequent calculus rather than natural deduction, as fixed by the path, IDs and LK definitions; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 9-12, editorial section-scope note ↔ translation/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:12 (OLP-0077-B004)
+
+- Authorities actually checked: OLTESEQ-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: named the sequent calculus rather than natural deduction, as fixed by the path, IDs and LK definitions; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the editorial scope note identify the sequent calculus, consistently with the chapter path, identifiers and LK definitions?
+
+## REV-OLTESEQ-004 — OLTESEQ-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: named the full lower sequent A-and-B,Gamma entails Delta rather than only Gamma entails Delta; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 132-159, left-conjunction soundness case conclusion ↔ translation/content/first-order-logic/sequent-calculus/soundness.tex:167 (OLP-0081-B016)
+
+- Authorities actually checked: OLTESEQ-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: named the full lower sequent A-and-B,Gamma entails Delta rather than only Gamma entails Delta; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the left-conjunction soundness case conclude that the full lower sequent A-and-B,Gamma entails Delta is valid?
+
+## REV-OLTESEQ-005 — OLTESEQ-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Chosen wording/treatment: restored the sequent symbol between Pi and Lambda in the cut-case reasoning; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: lines 270-289, residual right premise in the cut case ↔ translation/content/first-order-logic/sequent-calculus/soundness.tex:316 (OLP-0081-B017)
+
+- Authorities actually checked: OLTESEQ-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the sequent symbol between Pi and Lambda in the cut-case reasoning; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Review question: Does the cut case use the residual sequent Pi entails Lambda rather than a set difference?

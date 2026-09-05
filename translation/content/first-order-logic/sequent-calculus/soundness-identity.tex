@@ -1,0 +1,46 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: soundness-identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{seq}{sid}
+
+\olsection{\usetoken{S}{identity}తో నిర్దుష్టత}
+
+\begin{prop}
+తాదాత్మ్యానికి ప్రారంభ సీక్వెంట్లు, నియమాలు గల $\Log{LK}$ నిర్దుష్టమైనది.
+\end{prop}
+
+\begin{proof}
+${} \Sequent \eq[t][t]$ రూపంలోని ప్రారంభ సీక్వెంట్లు చెల్లుబాటు
+అవుతాయి; ఎందుకంటే ప్రతి !!{structure}~$\Struct M$కు
+$\Sat{M}{\eq[t][t]}$. ($t$ సంవృత పదమని, అంటే అందులో చరరాశులు లేవని
+అనుకుంటున్నాం; అందువల్ల చరరాశి విలువనిర్ణయాలు అప్రస్తుతం.)
+
+ఒక !!a{derivation}లో చివరి నిగమనం $=$ అనుకుందాం. అప్పుడు పూర్వాధారం
+$\eq[t_1][t_2], \Gamma \Sequent \Delta, !A(t_1)$, నిష్కర్ష
+$\eq[t_1][t_2], \Gamma \Sequent \Delta, !A(t_2)$. ఒక
+!!a{structure}~$\Struct M$ను పరిశీలించండి. నిష్కర్ష చెల్లుబాటు అని,
+అంటే $\Sat{M}{\eq[t_1][t_2]}$, $\Sat{M}{\Gamma}$ అయితే ఏదో
+$!C \in \Delta$కు $\Sat{M}{!C}$ లేదా $\Sat{M}{!A(t_2)}$ అని
+చూపాలి.
+
+ఆగమన పరికల్పన ప్రకారం పూర్వాధారం చెల్లుబాటు అవుతుంది. అంటే
+$\Sat{M}{\eq[t_1][t_2]}$, $\Sat{M}{\Gamma}$ అయితే, (a) ఏదో
+$!C \in \Delta$కు $\Sat{M}{!C}$ లేదా (b) $\Sat{M}{!A(t_1)}$.
+(a) సందర్భంలో పని పూర్తయింది. (b) సందర్భాన్ని పరిశీలిద్దాం.
+$s(x) = \Value{t_1}{M}$ అయ్యే ఒక చరరాశి విలువనిర్ణయం $s$ను తీసుకోండి.
+\olref[syn][ass]{prop:sentence-sat-true} ప్రకారం
+$\Sat{M}{!A(t_1)}[s]$. $\varAssign{s}{s}{x}$ కనుక
+\olref[syn][ext]{prop:ext-formulas} ప్రకారం $\Sat{M}{!A(x)}[s]$.
+$\Sat{M}{\eq[t_1][t_2]}$ కనుక
+$\Value{t_1}{M} = \Value{t_2}{M}$; అందువల్ల
+$s(x) = \Value{t_2}{M}$. \olref[syn][ext]{prop:ext-formulas}ను మళ్లీ
+వర్తింపజేస్తే $\Sat{M}{!A(t_2)}[s]$ కూడా వస్తుంది.
+\olref[syn][ass]{prop:sentence-sat-true} ప్రకారం $\Sat{M}{!A(t_2)}$.
+\end{proof}
+
+\end{document}

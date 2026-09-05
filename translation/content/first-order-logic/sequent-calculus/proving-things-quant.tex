@@ -1,0 +1,107 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: proving-things-quant
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{seq}{prq}
+
+\olsection{పరిమాణీకరణలతో \usetoken{P}{derivation}}
+
+\begin{ex}
+$\lexists[x][\lnot !A(x)] \Sequent \lnot \lforall[x][!A(x)]$ అనే
+సీక్వెంట్‌కు ఒక $\Log{LK}$-!!{derivation} ఇవ్వండి.
+
+పరిమాణీకరణలతో పనిచేసేటప్పుడు ఐగెన్ చరరాశి షరతును ఉల్లంఘించకుండా
+చూసుకోవాలి. కొన్నిసార్లు దానికి కొన్ని నిగమనాలను అమలు చేసే క్రమాన్ని
+మార్చి ప్రయత్నించాల్సి వస్తుంది. సాధారణంగా ఐగెన్ చరరాశి షరతుకు లోబడే
+నియమాలను ముందుగా చూసుకోవడం సహాయపడుతుంది (పూర్తయిన నిరూపణలో అవి
+కిందివైపు ఉంటాయి). ముందుచూపుతో ప్రారంభ సీక్వెంట్ ఎలా ఉండవచ్చో
+ఊహించడానికి ప్రయత్నించడం కూడా మంచిది. మన సందర్భంలో అది
+$!A(a) \Sequent !A(a)$ లాంటిది అయి ఉండాలి. అంటే పరిమాణీకరణ నియమాలను
+“వెనక్కు” వర్తింపజేసేటప్పుడు $\lforall$, $\lexists$ నియమాలు రెండింటికీ
+ఒకే పదాన్ని---దానిని $a$ అందాం---ఎంచుకోవాలి. ఒక్కో నియమానికి వేర్వేరు
+పదాలను ఎంచుకుంటే చివరికి $!A(a) \Sequent !A(b)$ వంటిది వస్తుంది;
+అది నిగమించదగినది కాదని స్పష్టం.
+
+ఎప్పటిలాగే ఇలా రాయడం మొదలుపెడతాం:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lexists[x][\lnot !A(x)] \fCenter \lnot \lforall[x][!A(x)]$
+\end{prooftree}
+\LeftR{\exists} లేదా \RightR{\lnot} నియమాన్ని వర్తింపజేయవచ్చు.
+\LeftR{\exists} నియమం ఐగెన్ చరరాశి షరతుకు లోబడుతుంది కనుక దాన్ని
+ఆలస్యం చేయకుండా ముందే చూసుకోవడం మంచిది; అందువల్ల మొదట దానినే
+వర్తింపజేద్దాం.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ \lnot !A(a) \fCenter \lnot \lforall[x][!A(x)]$
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x][\lnot !A(x)] \fCenter \lnot \lforall[x][!A(x)]$
+\end{prooftree}
+\LeftR{\lnot}, \RightR{\lnot} నియమాలను వెనక్కు వర్తింపజేస్తే ఇలా వస్తుంది:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lforall[x][!A(x)] \fCenter !A(a)$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !A(a), \lforall[x][!A(x)] \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$\lforall[x][!A(x)], \lnot !A(a) \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \lnot !A(a) \fCenter \lnot \lforall[x] !A(x)$
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x] \lnot !A(x) \fCenter \lnot \lforall[x] !A(x)$
+\end{prooftree}
+ఈ దశలో \LeftR{\forall} నియమాన్ని వర్తింపజేయడమే మనకున్న ఏకైక
+ఎంపిక. ఈ నియమం ఐగెన్ చరరాశి పరిమితికి లోబడదు కనుక ఇబ్బంది లేదు.
+ప్రారంభ సీక్వెంట్‌ను ($!A(a) \Sequent !A(a)$ రూపంలో ఉన్నదాన్ని)
+పొందడానికి ప్రయత్నిస్తున్నామని గుర్తుంచుకోండి. అందువల్ల నియమాన్ని
+వర్తింపజేసేటప్పుడు $!A$కు ఆర్గ్యుమెంటుగా $a$నే ఎంచుకోవాలి.
+\begin{prooftree}
+\Axiom$!A(a) \fCenter !A(a)$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$\lforall[x][!A(x)] \fCenter !A(a)$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !A(a), \lforall[x][!A(x)] \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$\lforall[x][!A(x)], \lnot !A(a) \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \lnot !A(a) \fCenter \lnot \lforall[x][!A(x)]$
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x][ \lnot !A(x)] \fCenter \lnot \lforall[x][!A(x)]$
+\end{prooftree}
+ముఖ్యంగా పరిమాణీకరణలతో పనిచేసేటప్పుడు, ఈ దశలో ఐగెన్ చరరాశి షరతు
+ఉల్లంఘించబడలేదని మరొకసారి తనిఖీ చేయాలి. మనం వర్తింపజేసిన నియమాల్లో
+ఐగెన్ చరరాశి షరతుకు లోబడింది \LeftR{\exists} మాత్రమే; దాని ఐగెన్
+చరరాశి~$a$ దాని కింది సీక్వెంట్‌లో (అదే అంత్య సీక్వెంట్‌లో) కనిపించదు.
+కాబట్టి ఇది సరైన !!{derivation}.
+\end{ex}
+
+\begin{prob}
+కింది సీక్వెంట్లకు !!{derivation}s ఇవ్వండి:
+\begin{enumerate}
+\item $\Sequent (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) \lif
+\lforall[z][(!A(z) \land !B(z))]$.
+\item $\Sequent (\lexists[x][!A(x)] \lor \lexists[y][!B(y)]) \lif
+\lexists[z][(!A(z) \lor !B(z))]$.
+\item $\lforall[x][(!A(x) \lif !B)] \Sequent \lexists[y][!A(y)] \lif !B$.
+\item $\lforall[x][\lnot !A(x)] \Sequent \lnot\lexists[x][!A(x)]$.
+\item $\Sequent \lnot\lexists[x][!A(x)] \lif \lforall[x][\lnot !A(x)]$.
+\item $\Sequent \lnot\lexists[x][\lforall[y][((!A(x,y) \lif \lnot
+!A(y,y)) \land (\lnot !A(y,y) \lif !A(x,y)))]]$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+కింది సీక్వెంట్లకు !!{derivation}s ఇవ్వండి:
+\begin{enumerate}
+\item $\Sequent \lnot\lforall[x][!A(x)] \lif \lexists[x][\lnot!A(x)]$.
+\item $(\lforall[x][!A(x)] \lif !B) \Sequent \lexists[y][(!A(y) \lif !B)]$.
+\item $\Sequent \lexists[x][(!A(x) \lif \lforall[y][!A(y)])]$.
+\end{enumerate}
+(వీటన్నింటికీ $\RightR{\Contraction}$ నియమం అవసరం.)
+\end{prob}
+
+\end{document}

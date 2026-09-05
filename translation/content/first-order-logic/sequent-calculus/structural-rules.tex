@@ -1,0 +1,80 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: structural-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{srl}}
+      {\olfileid{pl}{seq}{srl}}
+
+\olsection{నిర్మాణాత్మక నియమాలు}
+
+సీక్వెంట్ యొక్క ఎడమ, కుడి వైపుల్లోని !!{sentence}sను
+పునర్వ్యవస్థీకరించనిచ్చే కొన్ని నియమాలు కూడా మనకు కావాలి. తార్కిక
+నియమం పనిచేసే పూర్వాధార !!{sentence}s అన్నిటికంటే ఎడమ లేదా
+అన్నిటికంటే కుడివైపు ఉండాలని ఆ నియమాలు కోరతాయి. అందువల్ల
+!!{sentence}sను తగిన స్థానానికి కదిలించడానికి “మార్పిడి” నియమం
+అవసరం. ఒకేలా ఉన్న రెండు !!{sentence}sను ఒక్కటిగా కలపగలగడం,
+ఏ వైపునైనా ఒక !!a{sentence}ను చేర్చగలగడం కూడా కొన్నిసార్లు ముఖ్యం.
+
+\subsection{బలహీనీకరణ}
+
+\begin{defish}
+\Axiom$ \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !A, \Gamma \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$ \Gamma \fCenter \Delta, !A$
+\DisplayProof
+\end{defish}
+
+\subsection{సంకోచనం}
+
+\begin{defish}
+\Axiom$ !A, !A, \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\Contraction}}
+\UnaryInf$ !A, \Gamma \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta, !A, !A$
+\RightLabel{\RightR{\Contraction}}
+\UnaryInf$ \Gamma \fCenter \Delta, !A$
+\DisplayProof
+\end{defish}
+
+\subsection{మార్పిడి}
+
+\begin{defish}
+\Axiom$ \Gamma, !A, !B, \Pi \fCenter \Delta $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ \Gamma, !B, !A, \Pi \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta, !A, !B, \Lambda$
+\RightLabel{\RightR{\Exchange}}
+\UnaryInf$ \Gamma \fCenter \Delta, !B, !A, \Lambda$
+\DisplayProof
+\end{defish}
+
+బలహీనీకరణ, సంకోచనం, మార్పిడి నిగమనాల వరుసను తరచుగా ద్విరేఖ
+నిగమన గీతలతో సూచిస్తాం.
+
+“కట్” అని పిలిచే కింది నియమం కచ్చితంగా అవసరమైనది కాకపోయినా,
+!!{derivation}sను తిరిగి ఉపయోగించడాన్ని, కలపడాన్ని ఎంతో సులభం చేస్తుంది.
+\begin{defish}
+\[
+\Axiom$ \Gamma \fCenter \Delta, !A$
+\Axiom$ !A, \Pi \fCenter \Lambda $
+\RightLabel{\Cut}
+\BinaryInf$ \Gamma, \Pi \fCenter \Delta, \Lambda$
+\DisplayProof
+\]
+\end{defish}
+
+\end{document}

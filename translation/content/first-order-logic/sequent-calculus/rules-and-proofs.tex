@@ -1,0 +1,76 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: rules-and-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{rul}}
+      {\olfileid{pl}{seq}{rul}}
+
+\olsection{నియమాలు, \usetoken{P}{derivation}}
+
+కింది చర్చలో $\Gamma, \Delta, \Pi, \Lambda$లు !!{sentence}s యొక్క
+పరిమిత క్రమాలను సూచిస్తాయని అనుకుందాం.
+
+\begin{defn}[సీక్వెంట్]
+\emph{సీక్వెంట్} అంటే కింది రూపంలోని వ్యక్తీకరణ:
+\[
+\Gamma \Sequent \Delta
+\]
+ఇక్కడ $\Gamma$, $\Delta$లు $\Lang L$ భాషలోని !!{sentence}s యొక్క
+పరిమిత (శూన్యమైనవీ కావచ్చు) క్రమాలు. $\Gamma$ను \emph{పూర్వాంగం}
+అనీ, $\Delta$ను \emph{ఉత్తరాంగం} అనీ అంటారు.
+\end{defn}
+
+\begin{explain}
+సీక్వెంట్ వెనుకనున్న అంతర్బుద్ధి ఇది: పూర్వాంగంలోని !!{sentence}s
+అన్నీ చెల్లితే, ఉత్తరాంగంలోని !!{sentence}sలో కనీసం ఒకటి చెల్లుతుంది.
+అంటే, $\Gamma = \tuple{!A_1, \dots, !A_m}$ మరియు
+$\Delta = \tuple{!B_1, \dots, !B_n}$ అయితే, కింది వాక్యం
+చెల్లినప్పుడు, అప్పుడు మాత్రమే $\Gamma \Sequent \Delta$ చెల్లుతుంది:
+\[
+(!A_1 \land \cdots \land !A_m) \lif (!B_1 \lor \cdots \lor
+!B_n)
+\]
+రెండు ప్రత్యేక సందర్భాలు ఉన్నాయి: $\Gamma$ శూన్యంగా ఉండడం,
+$\Delta$ శూన్యంగా ఉండడం. $\Gamma$ శూన్యంగా, అంటే $m = 0$గా ఉంటే,
+$!B_1 \lor \dots \lor !B_n$ చెల్లినప్పుడు, అప్పుడు మాత్రమే $\quad
+\Sequent \Delta$ చెల్లుతుంది. $\Delta$ శూన్యంగా, అంటే $n = 0$గా
+ఉంటే, $\lnot(!A_1 \land \dots \land !A_m)$ చెల్లినప్పుడు, అప్పుడు
+మాత్రమే $\Gamma \Sequent \quad$ చెల్లుతుంది. దానికి సరిపోలే
+!!{sentence} చెల్లుబాటైతే, అప్పుడు మాత్రమే సీక్వెంట్ చెల్లుబాటని అంటాం.
+\end{explain}
+
+$\Gamma$ ఒక !!{sentence}s క్రమమైతే, $\Gamma$ కుడి చివర $!A$ను
+చేర్చగా వచ్చే క్రమాన్ని $\Gamma, !A$ అనీ ($\Gamma$ ఎడమ చివర $!A$ను
+చేర్చగా వచ్చే క్రమాన్ని $!A, \Gamma$ అనీ) రాస్తాం. $\Delta$ కూడా ఒక
+!!{sentence}s క్రమమైతే, ఈ రెండు క్రమాల సంయోజనమే $\Gamma, \Delta$.
+
+\begin{defn}[ప్రారంభ సీక్వెంట్]
+\emph{ప్రారంభ సీక్వెంట్} అంటే
+\iftag{prvFalse,prvTrue}{కింది రూపాల్లో ఒకదానిలోని సీక్వెంట్:
+  \begin{enumerate}
+    \item $!A \Sequent !A$
+    \tagitem{prvTrue}{$\quad \Sequent \ltrue$}{}
+    \tagitem{prvFalse}{$\lfalse \Sequent \quad$}{}
+  \end{enumerate}}
+{భాషలోని ఏ !!{sentence} $!A$కైనా $!A \Sequent !A$ రూపంలోని
+సీక్వెంట్}.
+\end{defn}
+
+సీక్వెంట్ కలనంలోని !!^{derivation}s కొన్ని సీక్వెంట్ వృక్షాలు.
+వాటిలో అన్నిటికంటే పైనున్నవి ప్రారంభ సీక్వెంట్లు; ఒక సీక్వెంట్ ఒకటి
+లేదా రెండు ఇతర సీక్వెంట్ల కింద ఉంటే, అది నిగమన నియమాన్ని సరిగ్గా
+వర్తింపజేయడం ద్వారా వాటి నుంచి రావాలి. $\Log{LK}$ నియమాలు రెండు ప్రధాన
+రకాలుగా విభజించబడతాయి: \emph{తార్కిక} నియమాలు, \emph{నిర్మాణాత్మక}
+నియమాలు. కింది సీక్వెంట్‌లో $!A$ను మరియు/లేదా $!B$ను కలిగిన
+!!{sentence} యొక్క !!{main
+  operator} పేరును తార్కిక నియమానికి పెడతాం.
+ప్రతి నియమానికి రెండు రూపాలు ఉంటాయి: !!{operator}ను కలిగిన !!{sentence}
+ఎడమవైపు ఉండే సీక్వెంట్‌ను నిగమించే రూపం ఒకటి, అది కుడివైపు ఉండే
+!!{sentence} గల సీక్వెంట్‌ను నిగమించే రూపం మరొకటి.
+
+\end{document}

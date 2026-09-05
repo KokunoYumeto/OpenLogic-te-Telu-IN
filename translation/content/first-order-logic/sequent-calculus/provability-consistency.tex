@@ -1,0 +1,133 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: provability-consistency
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{prv}}
+      {\olfileid{pl}{seq}{prv}}
+
+\olsection{\usetoken{S}{derivability}, అవైరుధ్యం}
+
+ఇప్పుడు !!{derivability} సంబంధపు అనేక ధర్మాలను స్థాపిస్తాం. అవి
+స్వతంత్రంగా ఆసక్తికరమైనవే కాక, సంపూర్ణతా సిద్ధాంత నిరూపణలో ఒక్కొక్కటి
+ఒక పాత్ర పోషిస్తాయి.
+
+\begin{prop}\ollabel{prop:provability-contr}
+  $\Gamma \Proves !A$ అయి, $\Gamma \cup \{!A\}$ వైరుధ్యభరితమైతే,
+  $\Gamma$ వైరుధ్యభరితం.
+\end{prop}
+
+\begin{proof}
+$\Gamma_0$, $\Gamma_1 \subseteq \Gamma$ అనే పరిమిత సమితులు ఉండి,
+$\Log{LK}$ అనేది $\Gamma_0 \Sequent !A$, $!A, \Gamma_1
+\Sequent \quad$లను !!{derive}s చేస్తుంది. $\Gamma_0 \Sequent !A$
+యొక్క $\Log{LK}$-!!{derivation}ను $\pi_0$ అనీ, $\Gamma_1, !A
+\Sequent \quad$ యొక్క $\Log{LK}$-!!{derivation}ను $\pi_1$ అనీ
+అందాం. అప్పుడు కిందివిధంగా !!{derive} చేయవచ్చు:
+\begin{prooftree}
+\AxiomC{}
+\RightLabel{$\pi_0$}
+\Deduce$ \Gamma_0 \fCenter !A $
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!A, \Gamma_1 \fCenter $
+\RightLabel{\Cut}
+\BinaryInf$ \Gamma_0,\Gamma_1 \fCenter $
+\end{prooftree}
+
+$\Gamma_0 \subseteq \Gamma$, $\Gamma_1 \subseteq \Gamma$ కనుక
+$\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$; అందువల్ల $\Gamma$
+వైరుధ్యభరితం.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:prov-incons}
+$\Gamma \cup \{\lnot !A\}$ వైరుధ్యభరితమైనప్పుడు, అప్పుడు మాత్రమే
+$\Gamma \Proves !A$.
+\end{prop}
+
+\begin{proof}
+మొదట $\Gamma \Proves !A$ అనుకుందాం. అంటే $\Gamma \Sequent !A$
+యొక్క ఒక !!a{derivation}~$\pi_0$ ఉంది. ఒక $\LeftR{\lnot}$ నియమాన్ని
+చేర్చితే $\lnot !A, \Gamma \Sequent \quad$ యొక్క ఒక
+!!a{derivation} వస్తుంది; అంటే $\Gamma \cup \{\lnot !A\}$
+వైరుధ్యభరితం.
+
+$\Gamma \cup \{\lnot !A\}$ వైరుధ్యభరితమైతే,
+$\lnot !A, \Gamma \Sequent \quad$ యొక్క ఒక !!a{derivation}~$\pi_1$
+ఉంటుంది. కిందిది $\Gamma \Sequent !A$ యొక్క ఒక !!a{derivation}:
+\begin{prooftree}
+  \Axiom$!A \fCenter !A$
+  \RightLabel{\RightR{\lnot}}
+  \UnaryInf$\fCenter !A, \lnot !A$
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\lnot !A, \Gamma \fCenter$
+  \RightLabel{\Cut}
+  \BinaryInf$\Gamma \fCenter !A$
+\end{prooftree}
+\end{proof}
+
+\begin{prob}
+$\Gamma \cup \{!A\}$ వైరుధ్యభరితమైనప్పుడు, అప్పుడు మాత్రమే
+$\Gamma \Proves \lnot !A$ అని నిరూపించండి.
+\end{prob}
+
+\begin{prop}\ollabel{prop:explicit-inc}
+  $\Gamma \Proves !A$, $\lnot !A \in \Gamma$ అయితే $\Gamma$
+  వైరుధ్యభరితం.
+\end{prop}
+
+\begin{proof}
+  $\Gamma \Proves !A$, $\lnot !A \in \Gamma$ అనుకుందాం. అప్పుడు
+  $\Gamma_0 \Sequent !A$ అనే ఒక సీక్వెంట్ యొక్క
+  !!a{derivation}~$\pi$ ఉంటుంది. $\lnot !A, \Gamma_0 \Sequent \quad$
+  సీక్వెంట్ కూడా !!{derivable}:
+  \begin{prooftree}
+    \AxiomC{}
+    \RightLabel{$\pi$}
+    \Deduce$\Gamma_0 \fCenter !A$
+    \Axiom$!A \fCenter !A$
+    \RightLabel{\LeftR{\lnot}}
+    \UnaryInf$\lnot !A, !A \fCenter$
+    \RightLabel{\LeftR{\Exchange}}
+    \UnaryInf$!A, \lnot !A \fCenter$
+    \RightLabel{\Cut}
+    \BinaryInf$\Gamma_0, \lnot !A \fCenter$
+  \end{prooftree}
+  $\lnot !A \in \Gamma$, $\Gamma_0 \subseteq \Gamma$ కనుక ఇది
+  $\Gamma$ వైరుధ్యభరితమని చూపుతుంది.
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-exhaustive}
+  $\Gamma \cup \{!A\}$, $\Gamma \cup \{\lnot !A\}$ రెండూ
+  వైరుధ్యభరితమైతే, $\Gamma$ వైరుధ్యభరితం.
+\end{prop}
+
+\begin{proof}
+$\Gamma_0 \subseteq \Gamma$, $\Gamma_1 \subseteq \Gamma$ అనే పరిమిత
+సమితులు, వరుసగా $!A, \Gamma_0 \Sequent \quad$,
+$\lnot !A, \Gamma_1 \Sequent \quad$ల యొక్క $\Log{LK}$-!!{derivation}s
+$\pi_0$, $\pi_1$ ఉన్నాయి. అప్పుడు కిందివిధంగా !!{derive} చేయవచ్చు:
+\begin{prooftree}
+\AxiomC{}
+\RightLabel{$\pi_0$}
+\Deduce$ !A, \Gamma_0 \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \Gamma_0 \fCenter \lnot !A$
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\lnot !A, \Gamma_1 \fCenter  $
+\RightLabel{\Cut}
+\BinaryInf$ \Gamma_0, \Gamma_1 \fCenter $
+\end{prooftree}
+$\Gamma_0 \subseteq \Gamma$, $\Gamma_1 \subseteq \Gamma$ కనుక
+$\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$. అందువల్ల $\Gamma$
+వైరుధ్యభరితం.
+\end{proof}
+
+\end{document}

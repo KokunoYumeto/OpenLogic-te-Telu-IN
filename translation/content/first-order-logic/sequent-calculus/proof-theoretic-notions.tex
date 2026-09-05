@@ -1,0 +1,175 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: proof-theoretic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\begin{editorial}
+  ఈ విభాగం సీక్వెంట్ కలనానికి సంబంధించిన నిరూపణీయతా సంబంధం,
+  అవైరుధ్యం నిర్వచనాలను ఒకచోట చేర్చుతుంది.
+  \sourcecorrection{OLTESEQ-003}{ఇది సీక్వెంట్ కలనం అధ్యాయంలోని
+  విభాగం అయినప్పటికీ, ఆంగ్ల సంపాదకీయ గమనిక పొరపాటున ఈ నిర్వచనాలు
+  “సహజ నిగమనానికి” చెందినవని చెప్పింది. విభాగపు గుర్తింపులు,
+  $\Log{LK}$ నిర్వచనాలు, అధ్యాయ సందర్భం ప్రకారం దానిని “సీక్వెంట్
+  కలనానికి”గా సరిచేశాం.}
+\end{editorial}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{ptn}}
+      {\olfileid{pl}{seq}{ptn}}
+
+\olsection{నిరూపణ-సిద్ధాంత భావనలు}
+
+\begin{explain}
+కొన్ని ముఖ్యమైన అర్థపర భావనలను (చెల్లుబాటుతనం, అనుగమనం,
+సంతృప్తిపరచదగినతనం) నిర్వచించినట్లే, ఇప్పుడు వాటికి సరిపోలే
+\emph{నిరూపణ-సిద్ధాంత భావనలను} నిర్వచిస్తాం. వీటిని !!{structure}sలో
+!!{sentence}s సంతృప్తి చెందడాన్ని ఆశ్రయించి నిర్వచించం; కొన్ని
+సీక్వెంట్ల !!{derivability} లేదా !!{nonderivability}ను ఆశ్రయించి
+నిర్వచిస్తాం. ఈ రెండు రకాల భావనలు ఏకీభవిస్తాయనేది ఒక ముఖ్యమైన
+ఆవిష్కరణ. అవి ఏకీభవిస్తాయనే విషయమే \emph{నిర్దుష్టత},
+\emph{సంపూర్ణతా సిద్ధాంతాల} సారం.
+\end{explain}
+
+\begin{defn}[సిద్ధాంతాలు]
+!!^a{sentence}~$!A$కు $\quad \Sequent !A$ సీక్వెంట్ యొక్క ఒక
+$\Log{LK}$ !!a{derivation} ఉంటే, దానిని \emph{సిద్ధాంతం} అంటాం.
+$!A$ సిద్ధాంతమైతే $\Proves !A$ అనీ, కాకపోతే $\Proves/ !A$ అనీ రాస్తాం.
+\end{defn}
+
+\begin{defn}[!!^{derivability}]
+!!{sentence}s సమితి~$\Gamma$ నుంచి !!^a{sentence}~$!A$
+\emph{!!{derivable}}, అంటే $\Gamma \Proves !A$, అవుతుంది అంటే:
+$\Gamma_0 \subseteq \Gamma$ అనే ఒక పరిమిత ఉపసమితి, $\Gamma_0$లోని
+!!{sentence}sతో కూడిన $\Gamma_0'$ అనే ఒక క్రమం ఉండి, $\Log{LK}$
+$\Gamma_0' \Sequent !A$ను !!{derive}s చేయాలి. $\Gamma$ నుంచి $!A$
+!!{derivable} కాకపోతే $\Gamma \Proves/ !A$ అని రాస్తాం.
+\end{defn}
+
+సంకోచనం, బలహీనీకరణ, మార్పిడి నియమాల వల్ల $\Gamma_0'$లోని
+!!{sentence}s క్రమమూ, వాటి సంఖ్యా ముఖ్యం కాదు: $\Gamma_0' \Sequent !A$
+సీక్వెంట్ !!{derivable} అయితే, $\Gamma_0'$లో ఉన్న !!{sentence}sనే
+కలిగిన ఏ $\Gamma_0''$కైనా $\Gamma_0'' \Sequent !A$ కూడా
+నిగమించదగినది. ఉదాహరణకు $\Gamma_0 = \{!B, !C\}$ అయితే,
+$\Gamma_0' = \tuple{!B, !B, !C}$, $\Gamma_0'' =
+\tuple{!C, !C, !B}$ రెండూ $\Gamma_0$లోని !!{sentence}sనే కలిగిన
+క్రమాలు. వీటిలో ఒకదాన్ని కలిగిన సీక్వెంట్ !!{derivable} అయితే
+మరొకదాన్ని కలిగినదీ అలాగే అవుతుంది; ఉదాహరణకు:
+\begin{prooftree}
+  \AxiomC{}
+  \Deduce$!B, !B, !C \fCenter !A$
+  \RightLabel{\LeftR{\Contraction}}
+  \UnaryInf$!B, !C \fCenter !A$
+  \RightLabel{\LeftR{\Exchange}}
+  \UnaryInf$!C, !B \fCenter !A$
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$!C, !C, !B \fCenter !A$
+\end{prooftree}
+ఇకపై $\Gamma_0$ ఒక పరిమిత !!{sentence}s సమితి అయితే,
+$\Gamma_0 \Sequent !A$ అనేది $\Gamma_0$లోని !!{sentence}s క్రమాన్ని
+పూర్వాంగంగా కలిగిన ఏ సీక్వెంట్‌నైనా సూచిస్తుందని అంటాం; అవసరమైతే
+సంకోచనాలు, మార్పిడులు, బలహీనీకరణలను మౌనంగా చేర్చినట్లు భావిస్తాం.
+
+\begin{defn}[అవైరుధ్యం]
+$\Gamma_0 \subseteq \Gamma$ అనే ఏదో పరిమిత ఉపసమితికి
+$\Gamma_0 \Sequent \quad$ను $\Log{LK}$ !!{derive}s చేస్తే, అప్పుడు
+మాత్రమే వాక్యాల సమితి~$\Gamma$ \emph{వైరుధ్యభరితం}. $\Gamma$
+వైరుధ్యభరితం కాకపోతే, అంటే ప్రతి పరిమిత $\Gamma_0 \subseteq \Gamma$కు
+$\Log{LK}$ అనేది $\Gamma_0 \Sequent \quad$ను !!{derive} చేయకపోతే,
+దాన్ని \emph{అవైరుధ్యమైనది} అంటాం.
+\end{defn}
+
+\begin{prop}[స్వావర్తనత్వం]
+\ollabel{prop:reflexivity}
+$!A \in \Gamma$ అయితే $\Gamma \Proves !A$.
+\end{prop}
+
+\begin{proof}
+ప్రారంభ సీక్వెంట్ $!A \Sequent !A$ అనేది !!{derivable}; అంతేకాక
+$\{!A\} \subseteq \Gamma$.
+\end{proof}
+
+\begin{prop}[ఏకదిశత]
+\ollabel{prop:monotonicity}
+$\Gamma \subseteq \Delta$, $\Gamma \Proves !A$ అయితే
+$\Delta \Proves !A$.
+\end{prop}
+
+\begin{proof}
+$\Gamma \Proves !A$ అనుకుందాం. అంటే $\Gamma_0 \subseteq \Gamma$ అనే
+ఒక పరిమిత సమితికి $\Gamma_0 \Sequent !A$ !!{derivable} అవుతుంది.
+$\Gamma \subseteq \Delta$ కనుక $\Gamma_0$ అనేది $\Delta$కు కూడా
+పరిమిత ఉపసమితి. కాబట్టి $\Gamma_0 \Sequent !A$ యొక్క !!{derivation}
+$\Delta \Proves !A$ అని కూడా చూపుతుంది.
+\end{proof}
+
+\begin{prop}[సంక్రామకత్వం]
+\ollabel{prop:transitivity}
+$\Gamma \Proves !A$, $\{!A\} \cup \Delta \Proves !B$ అయితే
+$\Gamma \cup \Delta \Proves !B$.
+\end{prop}
+
+\begin{proof}
+$\Gamma \Proves !A$ అయితే $\Gamma_0 \subseteq \Gamma$ అనే ఒక పరిమిత
+సమితి, $\Gamma_0 \Sequent !A$ యొక్క !!a{derivation}~$\pi_0$ ఉంటాయి.
+$\{!A\} \cup \Delta \Proves !B$ అయితే ఏదో పరిమిత ఉపసమితి
+$\Delta_0 \subseteq \Delta$కు $!A, \Delta_0 \Sequent !B$ యొక్క
+!!a{derivation}~$\pi_1$ ఉంటుంది. కింది !!{derivation}ను పరిశీలించండి:
+\begin{prooftree}
+  \AxiomC{}
+  \RightLabel{$\pi_0$}
+  \Deduce$\Gamma_0 \fCenter !A$
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!A, \Delta_0 \fCenter !B$
+  \RightLabel{\Cut}
+  \BinaryInf$\Gamma_0, \Delta_0 \fCenter !B$
+\end{prooftree}
+$\Gamma_0 \cup \Delta_0 \subseteq \Gamma \cup \Delta$ కనుక ఇది
+$\Gamma \cup \Delta \Proves !B$ అని చూపుతుంది.
+\end{proof}
+
+ప్రత్యేకంగా $\Gamma \Proves !A$, $!A \Proves !B$ అయితే
+$\Gamma \Proves !B$ అని దీని అర్థమని గమనించండి. అలాగే
+$!A_1, \dots, !A_n \Proves !B$ అయి, ప్రతి~$i$కి
+$\Gamma \Proves !A_i$ అయితే $\Gamma \Proves !B$ అని కూడా వస్తుంది.
+
+\begin{prop}
+\ollabel{prop:incons}
+ప్రతి వాక్యం~$!A$కు $\Gamma \Proves {!A}$ అయినప్పుడు, అప్పుడు మాత్రమే
+$\Gamma$ వైరుధ్యభరితం.
+\end{prop}
+
+\begin{proof}
+అభ్యాసం.
+\end{proof}
+
+\begin{prob}
+\olref[fol][seq][ptn]{prop:incons}ను నిరూపించండి.
+\end{prob}
+
+\begin{prop}[సంహతత్వం]
+  \ollabel{prop:proves-compact}
+  \begin{enumerate}
+  \item $\Gamma \Proves !A$ అయితే $\Gamma_0 \Proves !A$ అయ్యేలా
+    $\Gamma_0 \subseteq \Gamma$ అనే ఒక పరిమిత ఉపసమితి ఉంటుంది.
+  \item $\Gamma$ యొక్క ప్రతి పరిమిత ఉపసమితి అవైరుధ్యమైతే,
+    $\Gamma$ అవైరుధ్యమైనది.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $\Gamma \Proves !A$ అయితే $\Gamma_0 \subseteq \Gamma$ అనే
+      ఒక పరిమిత ఉపసమితికి $\Gamma_0 \Sequent !A$ సీక్వెంట్ యొక్క
+      !!a{derivation} ఉంటుంది. కాబట్టి $\Gamma_0 \Proves !A$.
+    \item $\Gamma$ వైరుధ్యభరితమైతే, $\Gamma_0 \subseteq \Gamma$ అనే
+      ఒక పరిమిత ఉపసమితికి $\Gamma_0 \Sequent \quad$ను $\Log{LK}$
+      !!{derive}s చేస్తుంది. కానీ అప్పుడు $\Gamma_0$ అనేది
+      వైరుధ్యభరితమైన, $\Gamma$ యొక్క పరిమిత ఉపసమితి.
+  \end{enumerate}
+\end{proof}
+
+\end{document}

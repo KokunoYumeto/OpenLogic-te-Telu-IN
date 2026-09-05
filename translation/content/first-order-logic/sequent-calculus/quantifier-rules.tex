@@ -1,0 +1,104 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: quantifier-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{seq}{qrl}
+
+\olsection{పరిమాణీకరణ నియమాలు}
+
+\subsection{$\lforall$కు నియమాలు}
+
+\begin{defish}
+\Axiom$ !A(t), \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$ \lforall[x][!A(x)],\Gamma \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta, !A(a) $
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$ \Gamma \fCenter \Delta, \lforall[x][!A(x)]$
+\DisplayProof
+\end{defish}
+
+\LeftR{\lforall}లో $t$ ఒక సంవృత పదం (అంటే చరరాశులు లేని పదం).
+\RightR{\lforall}లో $a$ ఒక !!a{constant}; అది \RightR{\lforall}
+నియమంలోని కింది సీక్వెంట్‌లో ఎక్కడా కనిపించరాదు. \RightR{\forall}
+నిగమనం యొక్క \emph{ఐగెన్ చరరాశి} అని $a$ను అంటాం.\footnote{పై
+నియమంలో $a$ ఒక !!a{constant} అయినప్పటికీ చారిత్రక కారణాల వల్ల
+“ఐగెన్ చరరాశి” అనే పేరునే ఉపయోగిస్తాం.}
+
+\subsection{$\lexists$కు నియమాలు}
+
+\begin{defish}
+\Axiom$ !A(a), \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x][!A(x)], \Gamma \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta, !A(t) $
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$ \Gamma \fCenter \Delta, \lexists[x][!A(x)]$
+\DisplayProof
+\end{defish}
+
+ఇక్కడ కూడా $t$ ఒక సంవృత పదం; $a$ ఒక !!a{constant}, అది
+\LeftR{\lexists} నియమంలోని కింది సీక్వెంట్‌లో కనిపించదు.
+\LeftR{\lexists} నిగమనం యొక్క \emph{ఐగెన్ చరరాశి} అని $a$ను అంటాం.
+
+\RightR{\lforall} లేదా \LeftR{\lexists} నిగమనంలోని కింది సీక్వెంట్‌లో
+ఐగెన్ చరరాశి కనిపించకూడదనే షరతును \emph{ఐగెన్ చరరాశి షరతు} అంటాం.
+
+\begin{explain}
+!!a{formula} అయిన $!A$లో !!{variable}~$x$ స్వేచ్ఛగా ఉంటే దానిని
+$!A(x)$ అని రాస్తామనే
+సంప్రదాయాన్ని గుర్తు చేసుకోండి. అదే సందర్భంలో $!A(t)$ అనేది
+$\Subst{!A}{t}{x}$కు సంక్షిప్త రూపం. అందువల్ల \RightR{\lexists}
+నియమాన్ని ఇలా కూడా రాయవచ్చు:
+\begin{prooftree}
+  \Axiom$\Gamma \fCenter \Delta, \Subst{!A}{t}{x}$
+  \RightLabel{\RightR{\lexists}}
+  \UnaryInf$\Gamma \fCenter \Delta, \lexists[x][!A]$
+\end{prooftree}
+$t$ ఇప్పటికే $!A$లో కనిపించవచ్చని గమనించండి; ఉదాహరణకు $!A$ అనేది
+$\Atom{\Obj P}{t,x}$ కావచ్చు. కాబట్టి $\Gamma \Sequent \Delta,
+\Atom{\Obj P}{t,t}$ నుంచి $\Gamma \Sequent \Delta,
+\lexists[x][\Atom{\Obj P}{t,x}]$ను నిగమించడం \RightR{\lexists}ను
+సరిగ్గా వర్తింపజేయడమే---పూర్వాధారంలోని $t$ ప్రత్యక్షతల్లో ఒకటి లేదా
+అంతకంటే ఎక్కువను బద్ధ !!{variable}~$x$తో “మార్చవచ్చు”; అన్నిటినీ
+మార్చాల్సిన అవసరం లేదు. అయితే \RightR{\lforall},
+\LeftR{\lexists}లలోని ఐగెన్ చరరాశి షరతులు !!{constant}~$a$ అనేది
+$!A$లో కనిపించకూడదని కోరుతాయి. అందువల్ల $\Gamma \Sequent \Delta,
+\Atom{\Obj P}{a,a}$ నుంచి $\Gamma \Sequent \Delta,
+\lforall[x][\Atom{\Obj P}{a,x}]$ను $\RightR{\lforall}$తో సరిగ్గా
+నిగమించలేం.
+\end{explain}
+
+\begin{explain}
+\RightR{\lexists}, \LeftR{\lforall}లలో $t$ అనే పదంపై ఏ పరిమితులూ
+లేవు. మరోవైపు, \LeftR{\lexists}, \RightR{\lforall} నియమాల్లో ఐగెన్
+చరరాశి షరతు ప్రకారం పై సీక్వెంట్‌లోని $!A(a)$ వెలుపల
+!!{constant}~$a$ ఎక్కడా కనిపించరాదు. వ్యవస్థ నిర్దుష్టంగా ఉండేలా,
+అంటే చెల్లుబాటు అయ్యే సీక్వెంట్లను మాత్రమే !!{derive}s చేసేలా చేయడానికి
+ఈ షరతు అవసరం. ఈ షరతు లేకపోతే కిందివి అనుమతించబడతాయి:
+\begin{prooftree}
+  \Axiom$!A(a) \fCenter !A(a)$
+  \RightLabel{*\LeftR{\lexists}}
+  \UnaryInf$\lexists[x][!A(x)] \fCenter !A(a)$
+  \RightLabel{\RightR{\lforall}}
+  \UnaryInf$\lexists[x][!A(x)] \fCenter \lforall[x][!A(x)]$
+  \DisplayProof\bottomAlignProof
+  \qquad
+  \Axiom$!A(a) \fCenter !A(a)$
+  \RightLabel{*\RightR{\lforall}}
+  \UnaryInf$!A(a) \fCenter \lforall[x][!A(x)]$
+  \RightLabel{\LeftR{\lexists}}
+  \UnaryInf$\lexists[x][!A(x)] \fCenter \lforall[x][!A(x)]$
+\end{prooftree}
+కానీ $\lexists[x][!A(x)] \Sequent \lforall[x][!A(x)]$ చెల్లుబాటు కాదు.
+\end{explain}
+
+\end{document}

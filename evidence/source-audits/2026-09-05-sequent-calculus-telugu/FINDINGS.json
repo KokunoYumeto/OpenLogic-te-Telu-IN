@@ -1,0 +1,91 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTESEQ-20260905",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0069", "OLP-0070", "OLP-0071", "OLP-0072", "OLP-0073",
+      "OLP-0074", "OLP-0075", "OLP-0076", "OLP-0077", "OLP-0078",
+      "OLP-0079", "OLP-0080", "OLP-0081", "OLP-0082", "OLP-0083"
+    ],
+    "finding_count": 5
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTESEQ-001",
+      "unit_id": "OLP-0075",
+      "classification": "confirmed_wrong_side_on_repeated_exchange_rule_labels",
+      "source": {
+        "path": "content/first-order-logic/sequent-calculus/proving-things.tex",
+        "bytes": 12407,
+        "sha256": "8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303",
+        "locator": "lines 76-90, 94-108, 110-129 and 132-151"
+      },
+      "finding": "Four displayed steps exchange formulas only in the antecedent but label those steps with the right-exchange rule.",
+      "controlling_evidence": "The structural-rule schema in OLP-0073 defines LeftR{Exchange} as the rule that swaps adjacent antecedent formulas and RightR{Exchange} as the rule that swaps succedent formulas. In all four affected steps the succedent remains B while the antecedent order changes.",
+      "required_translation_handling": "Replace the four affected RightR{Exchange} labels by LeftR{Exchange}, leave every sequent unchanged, and add one adjacent OLTESEQ-001 note covering the repeated repair."
+    },
+    {
+      "finding_id": "OLTESEQ-002",
+      "unit_id": "OLP-0075",
+      "classification": "confirmed_missing_negation_in_prose_sequent",
+      "source": {
+        "path": "content/first-order-logic/sequent-calculus/proving-things.tex",
+        "bytes": 12407,
+        "sha256": "8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303",
+        "locator": "lines 175-188"
+      },
+      "finding": "Both prose candidate premises contain not-A-or-B, dropping the negation on B from the end-sequent under discussion.",
+      "controlling_evidence": "The end-sequent immediately above, both displayed candidates immediately below and the symmetry claim all use not-A-or-not-B.",
+      "required_translation_handling": "Restore the missing negation on B in both inline candidate sequents and add one adjacent OLTESEQ-002 note covering the repeated omission."
+    },
+    {
+      "finding_id": "OLTESEQ-003",
+      "unit_id": "OLP-0077",
+      "classification": "confirmed_wrong_calculus_named_in_editorial_scope_note",
+      "source": {
+        "path": "content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex",
+        "bytes": 5914,
+        "sha256": "91c07ed071c2f9c18d3f10665b163b35dcc8636e7e0f27b4586aa9df63177a53",
+        "locator": "lines 9-12"
+      },
+      "finding": "The editorial note says the section collects definitions for natural deduction even though it is the sequent-calculus section and every definition is stated using LK.",
+      "controlling_evidence": "The chapter path and identifiers are fol/pl-seq-ptn, the surrounding driver imports this file into the sequent-calculus chapter, and the definitions explicitly appeal to LK derivations and sequents.",
+      "required_translation_handling": "Name the sequent calculus rather than natural deduction in the translated editorial note and add an adjacent OLTESEQ-003 note."
+    },
+    {
+      "finding_id": "OLTESEQ-004",
+      "unit_id": "OLP-0081",
+      "classification": "confirmed_wrong_conclusion_named_in_left_conjunction_soundness_case",
+      "source": {
+        "path": "content/first-order-logic/sequent-calculus/soundness.tex",
+        "bytes": 17663,
+        "sha256": "4de487cafc9d685844abb2c0b29c7b51debeb30a9b1129c7a2fa8c13ae48b151",
+        "locator": "lines 132-159"
+      },
+      "finding": "After showing that every structure or valuation satisfies the lower sequent A-and-B,Gamma entails Delta, the proof's concluding sentence instead names only Gamma entails Delta as valid.",
+      "controlling_evidence": "The displayed LeftR{land} inference, the stated values of Theta and Xi, and the immediately preceding satisfaction conclusion all identify A-and-B,Gamma entails Delta as the induction case's conclusion.",
+      "required_translation_handling": "Name the full lower sequent A-and-B,Gamma entails Delta in the final sentence and add an adjacent OLTESEQ-004 note."
+    },
+    {
+      "finding_id": "OLTESEQ-005",
+      "unit_id": "OLP-0081",
+      "classification": "confirmed_set_difference_symbol_in_place_of_sequent_symbol",
+      "source": {
+        "path": "content/first-order-logic/sequent-calculus/soundness.tex",
+        "bytes": 17663,
+        "sha256": "4de487cafc9d685844abb2c0b29c7b51debeb30a9b1129c7a2fa8c13ae48b151",
+        "locator": "lines 270-289"
+      },
+      "finding": "In the cut case, the proof says the structure or valuation must satisfy Pi set-minus Lambda instead of the sequent Pi entails Lambda.",
+      "controlling_evidence": "The displayed cut rule immediately above has right premise A,Pi entails Lambda. When A is true, satisfaction of that premise requires satisfaction of the residual sequent Pi entails Lambda; set difference is not a sequent here.",
+      "required_translation_handling": "Replace the set-difference symbol by the sequent symbol in that one inline formula and add an adjacent OLTESEQ-005 note."
+    }
+  ]
+}
