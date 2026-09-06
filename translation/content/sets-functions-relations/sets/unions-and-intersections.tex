@@ -15,16 +15,16 @@
 పరిచయం చేశాం. ఇక్కడ వాడే $\phi$ అనే ధర్మంలో ఇంతకుముందే
 నిర్వచించిన సమితులను పేర్కొనవచ్చు. ఉదాహరణకు $A$, $B$ సమితులైతే,
 $\Setabs{x}{x \in A \lor x \in B}$ అనే సమితిలో $A$లో గానీ
-$B$లో గానీ !!{element}sగా ఉన్న వస్తువులన్నీ ఉంటాయి.
-అంటే ఇది $A$, $B$ల \tecase{acc}{!!{element}s} కలిపే సమితి.
+$B$లో గానీ \tetoken{మూలకాలుగా}{!!{element}s} ఉన్న వస్తువులన్నీ ఉంటాయి.
+అంటే ఇది $A$, $B$ల \tetoken{మూలకాలను}{!!{element}s} కలిపే సమితి.
 దీనిని \olref{fig:union}లో చూడవచ్చు. అందులో గుర్తించిన ప్రాంతం
-రెండు సమితులు $A$, $B$లకు చెందిన \tecase{acc}{!!{element}s}
+రెండు సమితులు $A$, $B$లకు చెందిన \tetoken{మూలకాలను}{!!{element}s}
 కలిపి చూపిస్తుంది.
 
 \begin{figure}
   \olasset{assets/diagrams/union.tikz}
   \caption{రెండు సమితుల సమ్మేళనం $A \cup B$ అనేది $A$లోని
-  \tecase{acc}{!!{element}s}, $B$లోని మూలకాలతో కలిపిన సమితి.}
+  \tetoken{మూలకాలను}{!!{element}s}, $B$లోని మూలకాలతో కలిపిన సమితి.}
   \ollabel{fig:union}
 \end{figure}
 
@@ -34,7 +34,7 @@ $B$లో గానీ !!{element}sగా ఉన్న వస్తువుల�
 
 \begin{defn}[సమ్మేళనం]
 $A$, $B$ అనే రెండు సమితుల \emph{సమ్మేళనం} $A \cup B$:
-ఇది $A$లోనో, $B$లోనో, లేదా రెండింటిలోనో !!{element}sగా ఉన్న
+ఇది $A$లోనో, $B$లోనో, లేదా రెండింటిలోనో \tetoken{మూలకాలుగా}{!!{element}s} ఉన్న
 వస్తువులన్నింటి సమితి.
 \[
 A \cup B = \Setabs{x}{x \in A \lor x \in B}
@@ -42,9 +42,9 @@ A \cup B = \Setabs{x}{x \in A \lor x \in B}
 \end{defn}
 
 \begin{ex}
-\tecase{acc}{!!{element}s} ఎన్నిసార్లు పేర్కొన్నామన్నది ముఖ్యం కాదు.
-అందువల్ల రెండు సమితులకు ఉమ్మడిగా !!a{element} ఉన్నప్పుడు,
-వాటి సమ్మేళనంలో ఆ !!{element} ఒక్కసారి మాత్రమే ఉంటుంది.
+\tetoken{మూలకాలను}{!!{element}s} ఎన్నిసార్లు పేర్కొన్నామన్నది ముఖ్యం కాదు.
+అందువల్ల రెండు సమితులకు ఉమ్మడిగా \tetoken{ఒక మూలకం}{!!a{element}} ఉన్నప్పుడు,
+వాటి సమ్మేళనంలో ఆ \tetoken{మూలకం}{!!{element}} ఒక్కసారి మాత్రమే ఉంటుంది.
 ఉదాహరణకు $\{ a, b, c\} \cup \{ a, 0, 1\} = \{a, b, c, 0, 1\}$.
 
 ఒక సమితికీ, దాని ఉపసమితికీ సమ్మేళనం పెద్ద సమితే:
@@ -60,32 +60,32 @@ $A \subseteq B$ అయితే $A \cup B = B$ అని నిరూపిం�
 
 \begin{explain}
 సమ్మేళనానికి ``ద్వంద్వమైన'' ప్రక్రియను కూడా పరిగణించవచ్చు.
-$A$లో !!{element}sగా ఉంటూ, $B$లో కూడా !!{element}sగా ఉండే
-\tecase{gen}{!!{element}s} సమితిని ఏర్పరచే ప్రక్రియ ఇది.
+$A$లో \tetoken{మూలకాలుగా}{!!{element}s} ఉంటూ, $B$లో కూడా \tetoken{మూలకాలుగా}{!!{element}s} ఉండే
+\tetoken{మూలకాల}{!!{element}s} సమితిని ఏర్పరచే ప్రక్రియ ఇది.
 దీనిని \emph{ఛేదనం} అంటాం; \olref{fig:intersection}లో దీనిని చూడవచ్చు.
 \begin{figure}
   \olasset{assets/diagrams/intersection.tikz}
   \caption{రెండు సమితుల ఛేదనం $A \cap B$ అనేది వాటికి ఉమ్మడిగా
-    ఉన్న \tecase{gen}{!!{element}s} సమితి.}
+    ఉన్న \tetoken{మూలకాల}{!!{element}s} సమితి.}
   \ollabel{fig:intersection}
 \end{figure}
 \end{explain}
 
 \begin{defn}[ఛేదనం]
 $A$, $B$ అనే రెండు సమితుల \emph{ఛేదనం} $A \cap B$:
-ఇది $A$, $B$ రెండింటిలోనూ !!{element}sగా ఉన్న వస్తువులన్నింటి సమితి.
+ఇది $A$, $B$ రెండింటిలోనూ \tetoken{మూలకాలుగా}{!!{element}s} ఉన్న వస్తువులన్నింటి సమితి.
 \[
 A \cap B = \Setabs{x}{x \in A \land x \in B}
 \]
 రెండు సమితుల ఛేదనం శూన్యమైతే వాటిని \emph{వియుక్త} సమితులు అంటాం.
-అంటే వాటికి ఉమ్మడి !!{element}s ఏవీ ఉండవు.
+అంటే వాటికి ఉమ్మడి \tetoken{మూలకాలు}{!!{element}s} ఏవీ ఉండవు.
 \end{defn}
 
 \begin{ex}
-రెండు సమితులకు ఉమ్మడి !!{element}s ఏవీ లేకపోతే, వాటి ఛేదనం శూన్యం:
+రెండు సమితులకు ఉమ్మడి \tetoken{మూలకాలు}{!!{element}s} ఏవీ లేకపోతే, వాటి ఛేదనం శూన్యం:
 $\{ a, b, c\} \cap \{ 0, 1\} = \emptyset$.
 
-రెండు సమితులకు ఉమ్మడి !!{element}s ఉంటే, వాటన్నింటి సమితే ఛేదనం:
+రెండు సమితులకు ఉమ్మడి \tetoken{మూలకాలు}{!!{element}s} ఉంటే, వాటన్నింటి సమితే ఛేదనం:
 $\{a, b, c \} \cap \{a, b, d \} = \{a, b\}$.
 
 ఒక సమితికీ, దాని ఉపసమితికీ ఛేదనం చిన్న సమితే:
@@ -104,16 +104,16 @@ $A \subseteq B$ అయితే $A \cap B = A$ అని కచ్చితం�
 సాధారణంగా దీనికి ఒక చక్కని పద్ధతి ఉంది. సమ్మేళనం (లేదా ఛేదనం)
 ఏర్పరచదలచిన సమితులన్నింటినీ ఒకే సమితిలో చేర్చామనుకుందాం.
 అప్పుడు మూల సమితుల సమ్మేళనాన్ని, ఈ సమితిలోని కనీసం ఒక
-\tecase{dat}{!!{element}} చెందిన వస్తువులన్నింటి సమితిగా నిర్వచించవచ్చు.
-ఛేదనాన్ని, ఈ సమితిలోని ప్రతి \tecase{dat}{!!{element}} చెందిన వస్తువులన్నింటి
+\tetoken{మూలకానికి}{!!{element}} చెందిన వస్తువులన్నింటి సమితిగా నిర్వచించవచ్చు.
+ఛేదనాన్ని, ఈ సమితిలోని ప్రతి \tetoken{మూలకానికి}{!!{element}} చెందిన వస్తువులన్నింటి
 సమితిగా నిర్వచించవచ్చు.
 \end{explain}
 
 \begin{defn}
 $A$ అనేది సమితుల సమితి అయితే, $\bigcup A$ అనేది $A$లోని
-\tecase{gen}{!!{element}s} \tecase{gen}{!!{element}s} సమితి:
+\tetoken{మూలకాల}{!!{element}s} \tetoken{మూలకాల}{!!{element}s} సమితి:
 \begin{align*}
-\bigcup A & = \Setabs{x}{x \text{ అనేది } A\text{లోని \tecase{dat}{!!a{element}} చెందుతుంది}},
+\bigcup A & = \Setabs{x}{x \text{ అనేది } A\text{లోని \tetoken{ఒక మూలకానికి}{!!a{element}} చెందుతుంది}},
 \text{ అంటే,}\\
 & = \Setabs{x}{\text{ఏదో ఒక } B \in A
   \text{ కోసం } x \in B}
@@ -124,7 +124,7 @@ $A$ అనేది సమితుల సమితి అయితే, $\bigcup
 $A$ అనేది సమితుల సమితి అయితే, $\bigcap A$ అనేది $A$లోని
 మూలకాలన్నింటికీ ఉమ్మడిగా ఉన్న వస్తువుల సమితి:
 \begin{align*}
-\bigcap A & = \Setabs{x}{x \text{ అనేది } A\text{లోని ప్రతి \tecase{dat}{!!{element}} చెందుతుంది}},
+\bigcap A & = \Setabs{x}{x \text{ అనేది } A\text{లోని ప్రతి \tetoken{మూలకానికి}{!!{element}} చెందుతుంది}},
 \text{ అంటే,}\\
  & = \Setabs{x}{\text{ప్రతి } B \in A\text{ కోసం}, x \in B}
 \end{align*}
@@ -152,19 +152,19 @@ $A_1$, $A_2$, \dots అనే సమితుల క్రమానికీ ఇ
 	\bigcap_{i \in I} A_i & = \bigcap\Setabs{A_i}{i \in I}
 \end{align*}
 
-చివరగా, $A$లో ఉంటూ $B$లో లేని \tecase{gen}{!!{element}s}
+చివరగా, $A$లో ఉంటూ $B$లో లేని \tetoken{మూలకాల}{!!{element}s}
 సమితిని పరిశీలిద్దాం. దీనిని \olref{difference}లో చూపించవచ్చు.
 
 \begin{figure}
   \olasset{assets/diagrams/difference.tikz}
   \caption{రెండు సమితుల భేదం $A \setminus B$ అనేది $A$లో
-    !!{element}sగా ఉండి, $B$లో !!{element}sగా లేని వస్తువుల సమితి.}
+    \tetoken{మూలకాలుగా}{!!{element}s} ఉండి, $B$లో \tetoken{మూలకాలుగా}{!!{element}s} లేని వస్తువుల సమితి.}
   \ollabel{difference}
 \end{figure}
 
 \begin{defn}[భేదం]
 \emph{సమితుల భేదం} $A \setminus B$ అనేది $A$లో
-!!{element}sగా ఉండి, $B$లో !!{element}sగా లేని వస్తువులన్నింటి సమితి.
+\tetoken{మూలకాలుగా}{!!{element}s} ఉండి, $B$లో \tetoken{మూలకాలుగా}{!!{element}s} లేని వస్తువులన్నింటి సమితి.
 అంటే,
 \[
 A\setminus B = \Setabs{x}{x\in A \text{ మరియు } x \notin B}.

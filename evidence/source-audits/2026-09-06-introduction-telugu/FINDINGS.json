@@ -1,0 +1,91 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTEINT-20260906",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0138", "OLP-0139", "OLP-0140", "OLP-0141",
+      "OLP-0142", "OLP-0143", "OLP-0144", "OLP-0145",
+      "OLP-0146", "OLP-0147", "OLP-0148"
+    ],
+    "finding_count": 5
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEINT-001",
+      "unit_id": "OLP-0140",
+      "classification": "confirmed_misplaced_closing_bracket_in_entailment_example",
+      "source": {
+        "path": "content/first-order-logic/introduction/first-order-logic.tex",
+        "bytes": 4685,
+        "sha256": "04bfc243ce8ec9263cc7f805971d4193f93c9667a595a8bdae8a1cd1931ca4b2",
+        "locator": "lines 50-58, first formalization of the ants-and-insects entailment"
+      },
+      "finding": "The closing bracket for the universal premise appears after the conclusion, so the displayed entailment does not delimit its two premises and conclusion as described by the following English argument.",
+      "controlling_evidence": "The immediately following prose gives three separate claims—every ant is an insect, ants exist, and insects exist—and explicitly calls the first two premises and the third the conclusion.",
+      "required_translation_handling": "Close the universal premise before the comma, remove the trailing extra bracket after the conclusion, and add an adjacent OLTEINT-001 note."
+    },
+    {
+      "finding_id": "OLTEINT-002",
+      "unit_id": "OLP-0140",
+      "classification": "confirmed_repeated_misplaced_brackets_in_derivation_examples",
+      "source": {
+        "path": "content/first-order-logic/introduction/first-order-logic.tex",
+        "bytes": 4685,
+        "sha256": "04bfc243ce8ec9263cc7f805971d4193f93c9667a595a8bdae8a1cd1931ca4b2",
+        "locator": "lines 67-84, natural-deduction and metalogical restatements of the same entailment"
+      },
+      "finding": "Two later restatements omit the universal premise's closing bracket and place an extra bracket after the existential conclusion.",
+      "controlling_evidence": "Both passages explicitly identify the universal and existential formulas as separate premises and the final existential formula as the conclusion; correctly delimited instances of the same formulas also occur in the intervening text.",
+      "required_translation_handling": "Move each misplaced bracket to the end of the universal premise and add an adjacent OLTEINT-002 note."
+    },
+    {
+      "finding_id": "OLTEINT-003",
+      "unit_id": "OLP-0143",
+      "classification": "confirmed_predicate_constant_category_error",
+      "source": {
+        "path": "content/first-order-logic/introduction/satisfaction.tex",
+        "bytes": 5894,
+        "sha256": "01faa20f2f8d843d47cb7ca05e57a665ad3cd43f288b9504910a8e43bbad0c18",
+        "locator": "lines 13-25, description of a structure and the general-language case"
+      },
+      "finding": "The general-case sentence says constants can have more than one place, conflating individual constants with multi-place predicates.",
+      "controlling_evidence": "The simple structure just described interprets the constant a as one object and the predicate P as a set; the general first-order vocabulary assigns arity to predicate and function symbols, while individual constants remain nullary.",
+      "required_translation_handling": "Use predicates, not constants, as the category that can have more than one place and add an adjacent OLTEINT-003 note."
+    },
+    {
+      "finding_id": "OLTEINT-004",
+      "unit_id": "OLP-0143",
+      "classification": "confirmed_domain_example_value_mismatch",
+      "source": {
+        "path": "content/first-order-logic/introduction/satisfaction.tex",
+        "bytes": 5894,
+        "sha256": "01faa20f2f8d843d47cb7ca05e57a665ad3cd43f288b9504910a8e43bbad0c18",
+        "locator": "lines 43-67, fixed domain followed by the variable-assignment example"
+      },
+      "finding": "After fixing the domain as {0,1,2}, the text says a variable assignment maps to one of 1, 2, or 3, incorrectly including 3 and omitting 0.",
+      "controlling_evidence": "A variable assignment must map variables to elements of the declared domain, and the continuation explicitly uses value 0 for the same assignment example.",
+      "required_translation_handling": "Replace the list 1,2,3 with 0,1,2 and add an adjacent OLTEINT-004 note."
+    },
+    {
+      "finding_id": "OLTEINT-005",
+      "unit_id": "OLP-0146",
+      "classification": "confirmed_atomic_argument_outside_universal_formula",
+      "source": {
+        "path": "content/first-order-logic/introduction/substitution.tex",
+        "bytes": 2288,
+        "sha256": "a874a9c9150455531a7d563ddf3e6bf35c86fc2134c324f9bf78135213d912f1",
+        "locator": "lines 13-28, opening universal-instantiation example"
+      },
+      "finding": "The argument v_0 is placed outside the atomic-formula braces in the universally quantified premise, leaving P without its intended argument.",
+      "controlling_evidence": "The paragraph immediately generalizes the example as inferring A(t) from forall x A(x), so the opening instance must be forall v_0 P(v_0).",
+      "required_translation_handling": "Restore v_0 inside the P atom, retain the surrounding universal scope, and add an adjacent OLTEINT-005 note."
+    }
+  ]
+}

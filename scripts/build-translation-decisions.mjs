@@ -48,7 +48,7 @@ const edition = Object.freeze({
 });
 
 const artifactRefs = {
-  terms: publicArtifact('TERM_DECISIONS.jsonl', 'partial-134-of-722'),
+  terms: publicArtifact('TERM_DECISIONS.jsonl', 'partial-145-of-722'),
   passages: publicArtifact('CANON_PASSAGES.jsonl', 'consulted-passage-index'),
   corrections: publicArtifact('SOURCE_CORRECTIONS.jsonl', 'applied-source-corrections')
 };
@@ -350,7 +350,7 @@ const canonical = {
     doi: null,
     source_revision: '9620cc73f9c8e0ad003c514a5d3748f29611c4c0',
     coverage_state: 'partial',
-    source_units: 134,
+    source_units: 145,
     reader_units: null
   },
   generator: {
@@ -368,7 +368,7 @@ const byteLabel = span => span.status === 'available' ? `${span.start}-${span.en
 const full = [
   '# Full translation-decision register',
   '',
-  `Edition: **${edition.language_tag} / ${edition.script} / ${edition.register_or_variant}**. Coverage: **134 of 722 source units drafted**. This readable view contains all ${decisions.length} decisions and ${occurrenceCount} recorded occurrences.`,
+  `Edition: **${edition.language_tag} / ${edition.script} / ${edition.register_or_variant}**. Coverage: **145 of 722 source units drafted**. This readable view contains all ${decisions.length} decisions and ${occurrenceCount} recorded occurrences.`,
   '',
   'Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.',
   ''
@@ -473,7 +473,7 @@ fs.writeFileSync(path.join(dataDir, 'DECISION_OCCURRENCES.csv'), csv);
 
 const startHere = `# Start here: Telugu translation decisions
 
-Status: **partial — 134 of 722 source units drafted**. The canonical register currently contains **${decisions.length} decisions** (${termDecisions.length} terminology/sense decisions and ${correctionDecisions.length} source-correction decisions) with **${occurrenceCount} concrete occurrences**.
+Status: **partial — 145 of 722 source units drafted**. The canonical register currently contains **${decisions.length} decisions** (${termDecisions.length} terminology/sense decisions and ${correctionDecisions.length} source-correction decisions) with **${occurrenceCount} concrete occurrences**.
 
 Use these views:
 

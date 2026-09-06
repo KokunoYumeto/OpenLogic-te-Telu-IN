@@ -11,18 +11,18 @@
 
 \begin{explain}
 ముందరి విభాగంలో ఇచ్చిన పద నమూనా నిర్మాణం, $\eq$ను కలిగి లేని
-సమితులు~$\Gamma$కు ప్రథమక్రమ తర్కపు సంపూర్ణతను స్థాపించడానికి
+సమితులు~$\Gamma$కు మొదటిస్థాయి విధేయ తర్కపు సంపూర్ణతను స్థాపించడానికి
 సరిపోతుంది. $\eq$ను కలిగి లేని ప్రతి $!A \in \Gamma^*$ను (అందువల్ల
 ప్రతి $!A \in \Gamma$ను కూడా) పద నమూనా సంతృప్తిపరుస్తుంది. కానీ
 $\eq$ ఉంటే అది పనిచేయదు. ఎందుకంటే అప్పుడు~$\Gamma^*$లో
-!!a{sentence}~$\eq[t][t']$ ఉండవచ్చు; పద నమూనాలో ఏ పదం విలువైనా ఆ
+\tetoken{ఒక వాక్యం}{!!a{sentence}}~$\eq[t][t']$ ఉండవచ్చు; పద నమూనాలో ఏ పదం విలువైనా ఆ
 పదమే. అందువల్ల $t$, $t'$ వేర్వేరు పదాలైతే, పద నమూనాలో వాటి విలువలు
 వరుసగా $t$, $t'$ వేర్వేరుగా ఉంటాయి; కనుక $\eq[t][t']$ అసత్యం.
 అయితే ``వర్గీకరణ'' అనే నిర్మాణం ద్వారా దీన్ని సరిచేయవచ్చు.
 \end{explain}
 
 \begin{defn}
-  $\Gamma^*$ అనేది~$\Lang L$లోని వాక్యాల అవైరుధ్య, !!{complete}
+  $\Gamma^*$ అనేది~$\Lang L$లోని వాక్యాల అవైరుధ్య, \tetoken{సంపూర్ణ}{!!{complete}}
   సమితి అనుకుందాం. $\Lang L$లోని సంవృత పదాల సమితిపై $\approx$
   సంబంధాన్ని ఇలా నిర్వచిస్తాం:
   \[
@@ -37,13 +37,13 @@ $\approx$ సంబంధానికి కింది ధర్మాలు �
 \item $\approx$ స్వావర్తనమైనది.
 \item $\approx$ సౌష్ఠవమైనది.
 \item $\approx$ సంక్రామకమైనది.
-\item $t \approx t'$, $f$ ఒక !!a{function}, ఇంకా $t_1$, \dots,
+\item $t \approx t'$, $f$ ఒక \tetoken{ప్రమేయ సంకేతం}{!!a{function}}, ఇంకా $t_1$, \dots,
   $t_{i-1}$, $t_{i+1}$, \dots, $t_n$లు సంవృత పదాలైతే,
 \[
 \Atom{f}{t_1,\dots, t_{i-1}, t, t_{i+1}, \dots, t_n} \approx
 \Atom{f}{t_1,\dots, t_{i-1}, t', t_{i+1}, \dots, t_n}.
 \]
-\item $t \approx t'$, $R$ ఒక !!a{predicate}, ఇంకా $t_1$, \dots,
+\item $t \approx t'$, $R$ ఒక \tetoken{విధేయ సంకేతం}{!!a{predicate}}, ఇంకా $t_1$, \dots,
   $t_{i-1}$, $t_{i+1}$, \dots, $t_n$లు సంవృత పదాలైతే,
 \begin{multline*}
 \Atom{R}{t_1,\dots, t_{i-1}, t, t_{i+1}, \dots, t_n} \in \Gamma^* \text{ iff } \\
@@ -53,7 +53,7 @@ $\approx$ సంబంధానికి కింది ధర్మాలు �
 \end{prop}
 
 \begin{proof}
-$\Gamma^*$ అవైరుధ్యమైనది, !!{complete} కనుక $\eq[t][t'] \in
+$\Gamma^*$ అవైరుధ్యమైనది, \tetoken{సంపూర్ణ}{!!{complete}} కనుక $\eq[t][t'] \in
 \Gamma^*$ అయినప్పుడు, అప్పుడు మాత్రమే $\Gamma^* \Proves \eq[t][t']$.
 అందువల్ల కింది వాటిని చూపితే చాలు:
 \begin{enumerate}
@@ -67,7 +67,7 @@ $\Gamma^*$ అవైరుధ్యమైనది, !!{complete} కనుక $\
 \Gamma^* \Proves
 \eq[\Atom{f}{t_1,\dots,t_{i-1},t,t_{i+1},\dots,t_n}][\Atom{f}{t_1,\dots,t_{i-1},t',t_{i+1},\dots,t_n}]
 \]
-ప్రతి $n$-స్థాన !!{function}~$f$కు, సంవృత పదాలు $t_1$, \dots,
+ప్రతి $n$-స్థాన \tetoken{ప్రమేయ సంకేతం}{!!{function}}~$f$కు, సంవృత పదాలు $t_1$, \dots,
 $t_{i-1}$, $t_{i+1}$, \dots,~$t_n$కు.
 \sourcecorrection{OLTECOM-007}{ఆంగ్ల మూలంలో మొదటి ప్రమేయ పదంలో
 $t_{i+1}$ తరువాత వరుసగా రెండు కామాలు ఉన్నాయి. పదాల జాబితాకు కావలసిన
@@ -76,7 +76,7 @@ $t_{i+1}$ తరువాత వరుసగా రెండు కామాల�
 $\Gamma^* \Proves
 \Atom{R}{t_1,\dots,t_{i-1},t,t_{i+1},\dots,t_n}$ అయితే,
 $\Gamma^* \Proves \Atom{R}{t_1,\dots,t_{i-1},t',t_{i+1},\dots,t_n}$;
-ఇది ప్రతి $n$-స్థాన !!{predicate}~$R$కు, సంవృత పదాలు $t_1$, \dots,
+ఇది ప్రతి $n$-స్థాన \tetoken{విధేయ సంకేతం}{!!{predicate}}~$R$కు, సంవృత పదాలు $t_1$, \dots,
 $t_{i-1}$, $t_{i+1}$, \dots,~$t_n$కు వర్తిస్తుంది.
 \end{enumerate}
 \end{proof}
@@ -86,7 +86,7 @@ $t_{i-1}$, $t_{i+1}$, \dots,~$t_n$కు వర్తిస్తుంది.
 \end{prob}
 
 \begin{defn}
-$\Gamma^*$ అనేది భాష~$\Lang L$లోని అవైరుధ్య, !!{complete} సమితి,
+$\Gamma^*$ అనేది భాష~$\Lang L$లోని అవైరుధ్య, \tetoken{సంపూర్ణ}{!!{complete}} సమితి,
 $t$ ఒక సంవృత పదం, $\approx$ ముందరి నిర్వచనంలో ఉన్నట్లే అనుకుందాం.
 అప్పుడు:
 \[
@@ -99,7 +99,7 @@ $t$ ఒక సంవృత పదం, $\approx$ ముందరి నిర్�
 \ollabel{defn:term-model-factor}
 $\Struct M = \Struct M(\Gamma^*)$ అనేది \olref[mod]{defn:termmodel}
 లోని~$\Gamma^*$ పద నమూనా అనుకుందాం. అప్పుడు
-$\Struct{\equivclass{M}{\approx}}$ కింది !!{structure}:
+$\Struct{\equivclass{M}{\approx}}$ కింది \tetoken{నిర్మాణం}{!!{structure}}:
 \begin{enumerate}
 \item $\Domain{\equivclass{M}{\approx}} = \equivclass{\Trm[L]}{\approx}$.
 \item $\Assign{c}{\equivclass{M}{\approx}} = \equivrep{c}{\approx}$
@@ -120,7 +120,7 @@ $t \in \equivrep{t}{\approx}$ అనే \emph{ప్రతినిధులు}
 నిర్వచించామని గమనించండి. ఈ నిర్వచనాలు ఆ ప్రతినిధుల ఎంపికపై ఆధారపడవని
 నిర్ధారించాలి; అంటే, అవే తుల్యతా వర్గాలను నిర్ణయించే మరొక ఎంపిక~$t'$
 ఉంటే ($\equivrep{t}{\approx} = \equivrep{t'}{\approx}$), నిర్వచనాలు
-అదే ఫలితాన్ని ఇవ్వాలి. ఉదాహరణకు, $R$ ఒక ఏకస్థాన !!{predicate} అయితే,
+అదే ఫలితాన్ని ఇవ్వాలి. ఉదాహరణకు, $R$ ఒక ఏకస్థాన \tetoken{విధేయ సంకేతం}{!!{predicate}} అయితే,
 నిర్వచనపు చివరి ఖండం ప్రకారం $\equivrep{t}{\approx} \in
 \Assign{R}{\equivclass{M}{\approx}}$ అయినప్పుడు, అప్పుడు మాత్రమే
 $\Sat{M}{\Atom{R}{t}}$. $t \approx t'$ అయ్యే మరొక పదం~$t'$కు
@@ -192,14 +192,14 @@ $\Struct{\equivclass{M}{\approx}}$ సునిర్వచితమైనది
 \end{proof}
 
 \begin{digress}
-$\Struct{M(\Gamma^*)}$ ఎల్లప్పుడూ !!{enumerable}, అనంతమైనదే అయినా,
+$\Struct{M(\Gamma^*)}$ ఎల్లప్పుడూ \tetoken{లెక్కించదగిన}{!!{enumerable}}, అనంతమైనదే అయినా,
 $\Struct{\equivclass{M}{\approx}}$ పరిమితంగా ఉండవచ్చు; ఎందుకంటే
 $\equivrep{t}{\approx}$ వర్గాలు పరిమిత సంఖ్యలో మాత్రమే ఉన్నాయని
 తేలవచ్చు. ఇది ఊహించదగినదే; $\Gamma$లో, వాటిని సత్యం చేసే ఏ
-!!{structure} అయినా పరిమితంగా ఉండాలని కోరే !!{sentence}s ఉండవచ్చు.
+\tetoken{నిర్మాణం}{!!{structure}} అయినా పరిమితంగా ఉండాలని కోరే \tetoken{వాక్యాలు}{!!{sentence}s} ఉండవచ్చు.
 ఉదాహరణకు, $\lforall[x][\lforall[y][x = y]]$ ఒక అవైరుధ్య
-!!{sentence}; కానీ సరిగ్గా ఒక !!{element} మాత్రమే గల !!a{domain} ఉన్న
-!!{structure}sలోనే అది సంతృప్తిపరచబడుతుంది.
+\tetoken{వాక్యం}{!!{sentence}}; కానీ సరిగ్గా ఒక \tetoken{మూలకం}{!!{element}} మాత్రమే గల \tetoken{ఒక వ్యక్తి క్షేత్రం}{!!a{domain}} ఉన్న
+\tetoken{నిర్మాణాలలోనే}{!!{structure}s} అది సంతృప్తిపరచబడుతుంది.
 \end{digress}
 
 \end{document}

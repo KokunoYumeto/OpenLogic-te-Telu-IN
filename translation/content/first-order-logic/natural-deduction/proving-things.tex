@@ -13,21 +13,21 @@
 \olsection{\usetoken{P}{derivation}కు ఉదాహరణలు}
 
 \begin{ex}
-!!{sentence}~$(!A \land !B) \lif !A$ యొక్క ఒక !!a{derivation}ను
+\tetoken{వాక్యం}{!!{sentence}}~$(!A \land !B) \lif !A$ యొక్క ఒక \tetoken{వ్యుత్పత్తిని}{!!a{derivation}}
 ఇద్దాం.
 
-కావలసిన నిష్కర్షను !!{derivation} అడుగున రాయడంతో మొదలుపెడతాం.
+కావలసిన నిష్కర్షను \tetoken{వ్యుత్పత్తి}{!!{derivation}} అడుగున రాయడంతో మొదలుపెడతాం.
 \begin{prooftree}
 \AxiomC{}
 \UnaryInfC{$(!A\land !B) \lif !A$}
 \end{prooftree}
 
-ఇలాంటి రూపంలోని ఒక !!a{sentence}ను ఏ రకపు నిగమనం ఇవ్వగలదో ఇప్పుడు
-కనుగొనాలి. నిష్కర్షలోని !!{main operator}~$\lif$; కనుక
+ఇలాంటి రూపంలోని ఒక \tetoken{వాక్యాన్ని}{!!a{sentence}} ఏ రకపు నిగమనం ఇవ్వగలదో ఇప్పుడు
+కనుగొనాలి. నిష్కర్షలోని \tetoken{ప్రధాన సంయోజకం}{!!{main operator}}~$\lif$; కనుక
 \Intro{\lif} నియమంతో నిష్కర్షకు చేరడానికి ప్రయత్నిద్దాం. ముందుకు
 సాగుతున్నప్పుడే సంబంధిత పరికల్పనలను రాసి, నిగమన నియమాలకు గుర్తులు
 పెట్టడం మంచిది. అప్పుడు నిరూపణ చివరికి అన్ని పరికల్పనలూ
-!!{discharged} అయ్యాయో లేదో సులభంగా చూడవచ్చు.
+\tetoken{ఉపసంహరించిన}{!!{discharged}} అయ్యాయో లేదో సులభంగా చూడవచ్చు.
 \begin{prooftree}
 \AxiomC{$\Discharge{!A \land !B}{1}$}
 \DeduceC{$!A$}
@@ -45,22 +45,22 @@
 \DischargeRule{\Intro{\lif}}{1}
 \UnaryInfC{$(!A\land !B) \lif !A$}
 \end{prooftree}
-ఇప్పుడు $(!A \land !B) \lif !A$కు ఒక సరైన !!{derivation} ఉంది.
+ఇప్పుడు $(!A \land !B) \lif !A$కు ఒక సరైన \tetoken{వ్యుత్పత్తి}{!!{derivation}} ఉంది.
 \end{ex}
 
 \begin{ex}
 ఇప్పుడు $(\lnot !A \lor !B) \lif (!A \lif !B)$కు ఒక
-!!a{derivation} ఇద్దాం.
+\tetoken{వ్యుత్పత్తి}{!!a{derivation}} ఇద్దాం.
 
-కావలసిన నిష్కర్షను !!{derivation} అడుగున రాయడంతో మొదలుపెడతాం.
+కావలసిన నిష్కర్షను \tetoken{వ్యుత్పత్తి}{!!{derivation}} అడుగున రాయడంతో మొదలుపెడతాం.
 \begin{prooftree}
 \AxiomC{}
 \UnaryInfC{$(\lnot !A \lor !B) \lif (!A \lif !B)$}
 \end{prooftree}
 ఈ నిష్కర్షను ఇవ్వగల తార్కిక నియమాన్ని కనుగొనడానికి అందులోని తార్కిక
 సంయోజకాలైన $\lnot$, $\lor$, $\lif$లను చూస్తాం. ప్రస్తుతం మొదటి
-$\lif$ను మాత్రమే పట్టించుకుంటాం; అది నిష్కర్షలోని !!{sentence} యొక్క
-!!{main operator}. $\lnot$, $\lor$, రెండవ $\lif$ మరొక సంయోజకం
+$\lif$ను మాత్రమే పట్టించుకుంటాం; అది నిష్కర్షలోని \tetoken{వాక్యం}{!!{sentence}} యొక్క
+\tetoken{ప్రధాన సంయోజకం}{!!{main operator}}. $\lnot$, $\lor$, రెండవ $\lif$ మరొక సంయోజకం
 పరిధిలో ఉన్నాయి కనుక వాటిని తరువాత చూసుకోవచ్చు. అందువల్ల
 \Intro{\lif} నియమంతో మొదలుపెడతాం. దాన్ని సరిగ్గా వర్తింపజేస్తే ఇలా
 ఉండాలి:
@@ -82,7 +82,7 @@ $\lif$ను మాత్రమే పట్టించుకుంటాం; �
 వర్తింపజేయాలంటే మిగతా రెండు పూర్వాధారాలూ నిష్కర్ష $!A \lif !B$తో
 ఒకేలా ఉండాలి; అయితే వాటిలో ప్రతి ఒక్కదాన్ని $\lnot !A \lor !B$లోని
 రెండు వికల్పాంగాల్లో ఒకదాన్ని పరికల్పించి వరుసగా నిగమించవచ్చు. కాబట్టి
-మన !!{derivation} ఇలా ఉంటుంది:
+మన \tetoken{వ్యుత్పత్తి}{!!{derivation}} ఇలా ఉంటుంది:
 \begin{prooftree}
 \AxiomC{$\Discharge{\lnot !A \lor !B}{1}$}
 \AxiomC{$\Discharge{\lnot !A}{2}$}
@@ -95,7 +95,7 @@ $\lif$ను మాత్రమే పట్టించుకుంటాం; �
 \UnaryInfC{$(\lnot !A \lor !B) \lif (!A \lif !B)$}
 \end{prooftree}
 
-కుడివైపున్న రెండు శాఖల్లోనూ $!A \lif !B$ను !!{derive} చేయాలి;
+కుడివైపున్న రెండు శాఖల్లోనూ $!A \lif !B$ను \tetoken{నిగమనం}{!!{derive}} చేయాలి;
 దానికి \Intro{\lif}ను ఉపయోగించడం ఉత్తమం.
 \begin{prooftree}
 \AxiomC{$\Discharge{\lnot !A \lor !B}{1}$}
@@ -113,9 +113,9 @@ $\lif$ను మాత్రమే పట్టించుకుంటాం; �
 \UnaryInfC{$(\lnot !A \lor !B) \lif (!A \lif !B)$}
 \end{prooftree}
 
-!!{derivation}లోని ఖాళీగా ఉన్న రెండు భాగాల కోసం, మధ్యలో $\lnot !A$,
+\tetoken{వ్యుత్పత్తిలోని}{!!{derivation}} ఖాళీగా ఉన్న రెండు భాగాల కోసం, మధ్యలో $\lnot !A$,
 $!A$ల నుంచి, ఎడమవైపు $!A$, $!B$ల నుంచి $!B$ యొక్క
-!!{derivation}s కావాలి. మొదట ముందుదాన్ని తీసుకుందాం.
+\tetoken{వ్యుత్పత్తులు}{!!{derivation}s} కావాలి. మొదట ముందుదాన్ని తీసుకుందాం.
 $\lnot !A$, $!A$లు \Elim{\lnot} యొక్క రెండు పూర్వాధారాలు:
 \begin{prooftree}
 \AxiomC{$\Discharge{\lnot !A}{2}$}
@@ -149,13 +149,13 @@ $\lnot !A$, $!A$లు \Elim{\lnot} యొక్క రెండు పూర్
 నిర్వచిత నియమం, తర్వాతి పూర్తి వృక్షానికి అనుగుణంగా
 $\Elim{\lnot}$గా సరిచేశాం.}
 
-ఇప్పుడు కుడివైపు చివరి శాఖను చూద్దాం. !!{derivation} నిర్వచనం
+ఇప్పుడు కుడివైపు చివరి శాఖను చూద్దాం. \tetoken{వ్యుత్పత్తి}{!!{derivation}} నిర్వచనం
 \emph{పరికల్పనలను ఉపసంహరించడానికి అనుమతిస్తుంది}, కాని వాటిని
 \emph{తప్పనిసరిగా ఉపసంహరించాలని కోరదు} అని ఇక్కడ గుర్తించడం ముఖ్యం.
 అంటే $!A$, $!B$ పరికల్పనల్లో ఒకదాన్ని మాత్రమే వాడి $!B$ను
 నిగమించగలిగితే, మరొకదాన్ని వాడకపోవచ్చు. $!B$ నుంచి $!B$ను
-!!{derive} చేయడం అల్పసాధ్యం: $!B$ తనంతట తానే అలాంటి
-!!a{derivation}; ఏ నిగమనాలూ అవసరం లేదు. కాబట్టి $!A$ పరికల్పనను
+\tetoken{నిగమనం}{!!{derive}} చేయడం అల్పసాధ్యం: $!B$ తనంతట తానే అలాంటి
+\tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}}; ఏ నిగమనాలూ అవసరం లేదు. కాబట్టి $!A$ పరికల్పనను
 తొలగించవచ్చు.
 \begin{prooftree}
 \AxiomC{$\Discharge{\lnot !A \lor !B}{1}$}
@@ -175,21 +175,21 @@ $\Elim{\lnot}$గా సరిచేశాం.}
 \DischargeRule{\Intro{\lif}}{1}
 \UnaryInfC{$(\lnot !A \lor !B) \lif (!A \lif !B)$}
 \end{prooftree}
-పూర్తయిన !!{derivation}లో కుడివైపు చివరి \Intro{\lif} నిగమనం
+పూర్తయిన \tetoken{వ్యుత్పత్తిలో}{!!{derivation}} కుడివైపు చివరి \Intro{\lif} నిగమనం
 వాస్తవానికి ఏ పరికల్పననూ ఉపసంహరించదని గమనించండి.
 \end{ex}
 
 \begin{ex}
 ఇప్పటివరకు మనకు \FalseCl{} నియమం అవసరం కాలేదు. నియమపు నిష్కర్షకు
-ఉప-!!{formula} కాని ఒక పరికల్పనను ఉపసంహరించనివ్వడం దీని ప్రత్యేకత.
+ఉప-\tetoken{సూత్రం}{!!{formula}} కాని ఒక పరికల్పనను ఉపసంహరించనివ్వడం దీని ప్రత్యేకత.
 ఇది \FalseInt{} నియమానికి దగ్గరి సంబంధం కలది. నిజానికి \FalseInt{}
 నియమం \FalseCl{} నియమపు ఒక ప్రత్యేక సందర్భం---\FalseInt{}ను మాత్రమే
 అనుమతించే “అంతర్బోధాత్మక తర్కం” అనే తర్కం ఉంది. మరే పద్ధతీ పని
 చేయనప్పుడు \FalseCl{} చివరి ఉపాయం. ఉదాహరణకు $!A \lor \lnot !A$ను
-!!{derive} చేయాలనుకుందాం. సాధారణ వ్యూహం $\Intro{\lor}$ ఉపయోగించి
-$!A \lor \lnot !A$ను !!{derive} చేయడానికి ప్రయత్నించడం. కానీ అలా
+\tetoken{నిగమనం}{!!{derive}} చేయాలనుకుందాం. సాధారణ వ్యూహం $\Intro{\lor}$ ఉపయోగించి
+$!A \lor \lnot !A$ను \tetoken{నిగమనం}{!!{derive}} చేయడానికి ప్రయత్నించడం. కానీ అలా
 చేయాలంటే పరికల్పనలేమీ లేకుండా $!A$ లేదా $\lnot !A$లో ఒకదాన్ని
-!!{derive} చేయాలి; అది సాధ్యం కాదు. ఇప్పుడు \FalseCl{} ఆదుకుంటుంది!
+\tetoken{నిగమనం}{!!{derive}} చేయాలి; అది సాధ్యం కాదు. ఇప్పుడు \FalseCl{} ఆదుకుంటుంది!
 \begin{prooftree}
   \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}$}
   \DeduceC{$\lfalse$}
@@ -197,7 +197,7 @@ $!A \lor \lnot !A$ను !!{derive} చేయడానికి ప్రయత�
   \UnaryInfC{$!A \lor \lnot !A$}
 \end{prooftree}
 ఇప్పుడు $\lnot(!A \lor \lnot !A)$ నుంచి $\lfalse$ యొక్క ఒక
-!!a{derivation} కోసం చూస్తున్నాం. $\lfalse$ అనేది $\Elim{\lnot}$
+\tetoken{వ్యుత్పత్తి}{!!a{derivation}} కోసం చూస్తున్నాం. $\lfalse$ అనేది $\Elim{\lnot}$
 నిష్కర్ష కనుక దాన్ని ప్రయత్నించవచ్చు:
 \begin{prooftree}
   \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}$}
@@ -209,7 +209,7 @@ $!A \lor \lnot !A$ను !!{derive} చేయడానికి ప్రయత�
   \DischargeRule{\FalseCl}{1}
   \UnaryInfC{$!A \lor \lnot !A$}
 \end{prooftree}
-$\lnot !A$ యొక్క ఒక !!a{derivation}ను కనుగొనే మన వ్యూహం
+$\lnot !A$ యొక్క ఒక \tetoken{వ్యుత్పత్తిని}{!!a{derivation}} కనుగొనే మన వ్యూహం
 $\Intro{\lnot}$ను వర్తింపజేయమంటుంది:
 \begin{prooftree}
   \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}, \Discharge{!A}{2}$}
@@ -269,7 +269,7 @@ $\Elim{\lnot}$ను వర్తింపజేసి $\lfalse$ను సుల
 \end{ex}
 
 \begin{prob}
-కిందివాటిని చూపే !!{derivation}s ఇవ్వండి:
+కిందివాటిని చూపే \tetoken{వ్యుత్పత్తులు}{!!{derivation}s} ఇవ్వండి:
 \begin{enumerate}
 \item $!A \land (!B \land !C) \Proves (!A \land !B) \land !C$.
 \item $!A \lor (!B \lor !C) \Proves (!A \lor !B) \lor !C$.
@@ -279,7 +279,7 @@ $\Elim{\lnot}$ను వర్తింపజేసి $\lfalse$ను సుల
 \end{prob}
 
 \begin{prob}
-కిందివాటిని చూపే !!{derivation}s ఇవ్వండి:
+కిందివాటిని చూపే \tetoken{వ్యుత్పత్తులు}{!!{derivation}s} ఇవ్వండి:
 \begin{enumerate}
 \item $(!A \lor !B) \lif !C \Proves !A \lif !C$.
 \item $(!A \lif !C) \land (!B \lif !C) \Proves (!A \lor !B) \lif !C$.
@@ -297,7 +297,7 @@ $\Elim{\lnot}$ను వర్తింపజేసి $\lfalse$ను సుల
 \end{prob}
 
 \begin{prob}
-కిందివాటిని చూపే !!{derivation}s ఇవ్వండి:
+కిందివాటిని చూపే \tetoken{వ్యుత్పత్తులు}{!!{derivation}s} ఇవ్వండి:
 \begin{enumerate}
 \item $\lnot(!A \lif !B) \Proves !A$.
 \item $\lnot(!A \land !B) \Proves \lnot !A \lor \lnot !B$.

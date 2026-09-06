@@ -1,11 +1,10 @@
 import katex from 'katex';
+import {renderTeluguTokens} from './telugu-token-markup.mjs';
 
 export const escapeHtml = text => text.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
-const cases = {acc:['మూలకాన్ని','మూలకాలను'],gen:['మూలకపు','మూలకాల'],loc:['మూలకంలో','మూలకాలలో'],dat:['మూలకానికి','మూలకాలకు']};
 export function realizeTokens(text, language='te') {
   if(language==='en') return text.replace(/!!(\^?)(a?)\{element\}(s?)/g,(_,cap,a,p)=>(a?(cap?'An ':'an '):'')+(cap&&!a?'Element':'element')+(p?'s':''));
-  return text.replace(/\\tecase\{(acc|gen|loc|dat)\}\{!!(a?)\{element\}(s?)\}/g,(_,c,a,p)=>(a?'ఒక ':'')+cases[c][p?1:0])
-    .replace(/!!\^?(a?)\{element\}(s?)/g,(_,a,p)=>(a?'ఒక ':'')+(p?'మూలకాలు':'మూలకం'));
+  return renderTeluguTokens(text);
 }
 
 // Only an explicit, supported TeX subset is accepted. Unknown commands and

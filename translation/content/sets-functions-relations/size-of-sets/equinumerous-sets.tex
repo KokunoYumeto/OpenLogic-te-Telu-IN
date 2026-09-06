@@ -26,7 +26,7 @@
 ఈ భాగంలోని అంతర్దృష్టిని ఒక ఆచారబద్ధ నిర్వచనం ద్వారా వ్యక్తం చేయవచ్చు:
 
 \begin{defn}\ollabel{comparisondef}
-  !!a{bijection} $f \colon A \to B$ ఉంటేనే $A$, $B$తో
+  \tetoken{ఒక ద్విగుణ ప్రమేయం}{!!a{bijection}} $f \colon A \to B$ ఉంటేనే $A$, $B$తో
   \emph{సమసంఖ్యాకం} అంటాం; దీన్ని $\cardeq{A}{B}$ అని రాస్తాం.
 \end{defn}
 
@@ -39,22 +39,22 @@
 $A, B$, $C$ సమితులు అనుకుందాం.
 
 \emph{స్వావర్తనత్వం.} ప్రతి $x \in A$కు $\Id{A} (x) = x$ అయ్యే
-తాదాత్మ్య చిత్రణ $\Id{A} \colon A \to A$ ఒక !!a{bijection}.
+తాదాత్మ్య చిత్రణ $\Id{A} \colon A \to A$ ఒక \tetoken{ద్విగుణ ప్రమేయం}{!!a{bijection}}.
 కాబట్టి $\cardeq{A}{A}$.
 
 \emph{సౌష్ఠవం.} $\cardeq{A}{B}$ అనుకుందాం; అంటే, ఒక
-!!a{bijection} $f\colon A \to B$ ఉంది. $f$ !!{bijective} కనుక దాని
-విలోమం $f^{-1}$ ఉంటుంది, అది కూడా !!{bijective}. అందువల్ల
-$f^{-1}\colon B \to A$ ఒక !!a{bijection}; కాబట్టి $\cardeq{B}{A}$.
+\tetoken{ద్విగుణ ప్రమేయం}{!!a{bijection}} $f\colon A \to B$ ఉంది. $f$ \tetoken{ద్విగుణ}{!!{bijective}} కనుక దాని
+విలోమం $f^{-1}$ ఉంటుంది, అది కూడా \tetoken{ద్విగుణ}{!!{bijective}}. అందువల్ల
+$f^{-1}\colon B \to A$ ఒక \tetoken{ద్విగుణ ప్రమేయం}{!!a{bijection}}; కాబట్టి $\cardeq{B}{A}$.
 
 \emph{సంక్రామకత్వం.} $\cardeq{A}{B}$, $\cardeq{B}{C}$ అనుకుందాం;
-అంటే, !!{bijection}s $f\colon A \to B$, $g\colon B \to C$ ఉన్నాయి.
-అప్పుడు సంయోగం $\comp{f}{g}\colon A \to C$ !!{bijective}; కాబట్టి
+అంటే, \tetoken{ద్విగుణ ప్రమేయాలు}{!!{bijection}s} $f\colon A \to B$, $g\colon B \to C$ ఉన్నాయి.
+అప్పుడు సంయోగం $\comp{f}{g}\colon A \to C$ \tetoken{ద్విగుణ}{!!{bijective}}; కాబట్టి
 $\cardeq{A}{C}$.
 \end{proof}
 
 \begin{prop}
-$\cardeq{A}{B}$ అయితే, $A$ !!{enumerable} కావడానికి అవసరమైన మరియు
+$\cardeq{A}{B}$ అయితే, $A$ \tetoken{లెక్కించదగిన}{!!{enumerable}} కావడానికి అవసరమైన మరియు
 సరిపడే షరతు $B$ లెక్కించదగినదిగా ఉండటం.
 \end{prop}
 
@@ -65,38 +65,38 @@ $\cardeq{A}{B}$ అయితే, $A$ !!{enumerable} కావడానికి 
 \end{editorial}
 
 \begin{proof}
-$\cardeq{A}{B}$ అనుకుందాం; కాబట్టి ఏదో !!{bijection}
-$f \colon A \to B$ ఉంది. అలాగే $A$ !!{enumerable} అనుకుందాం.
+$\cardeq{A}{B}$ అనుకుందాం; కాబట్టి ఏదో \tetoken{ద్విగుణ ప్రమేయం}{!!{bijection}}
+$f \colon A \to B$ ఉంది. అలాగే $A$ \tetoken{లెక్కించదగిన}{!!{enumerable}} అనుకుందాం.
 \oliflabeldef{sfr:siz:enm:defn:enumerable}{
-  అప్పుడు $A = \emptyset$ లేదా !!a{surjective} ప్రమేయం
+  అప్పుడు $A = \emptyset$ లేదా \tetoken{ఒక సంగ్రస్త}{!!a{surjective}} ప్రమేయం
   $g\colon \PosInt \to A$ ఉంటుంది. $A = \emptyset$ అయితే
-  $B = \emptyset$ కూడా (లేకపోతే !!a{element}~$y \in B$ ఉంటుంది,
+  $B = \emptyset$ కూడా (లేకపోతే \tetoken{ఒక మూలకం}{!!a{element}}~$y \in B$ ఉంటుంది,
   కానీ $f(x) = y$ అయ్యే $x \in A$ ఉండదు). మరోవైపు,
-  $g\colon \PosInt \to A$ !!{surjective} అయితే,
-  $\comp{g}{f} \colon \PosInt \to B$ !!{surjective}. దీన్ని చూడటానికి
-  $y \in B$ తీసుకోండి. $f$ !!{surjective} కనుక $f(x) = y$ అయ్యే
-  $x \in A$ ఒకటి ఉంటుంది. $g$ !!{surjective} కనుక $g(n) = x$ అయ్యే
+  $g\colon \PosInt \to A$ \tetoken{సంగ్రస్త}{!!{surjective}} అయితే,
+  $\comp{g}{f} \colon \PosInt \to B$ \tetoken{సంగ్రస్త}{!!{surjective}}. దీన్ని చూడటానికి
+  $y \in B$ తీసుకోండి. $f$ \tetoken{సంగ్రస్త}{!!{surjective}} కనుక $f(x) = y$ అయ్యే
+  $x \in A$ ఒకటి ఉంటుంది. $g$ \tetoken{సంగ్రస్త}{!!{surjective}} కనుక $g(n) = x$ అయ్యే
   $n \in \PosInt$ ఒకటి ఉంటుంది. అందువల్ల,
 \[
 (\comp{g}{f})(n) = f(g(n)) = f(x) = y
 \]
-కాబట్టి $\comp{g}{f}$ !!{surjective}. $\comp{g}{f}$ అనేది $B$ యొక్క
-లెక్కింపు; అందువల్ల $B$~!!{enumerable}.}
+కాబట్టి $\comp{g}{f}$ \tetoken{సంగ్రస్త}{!!{surjective}}. $\comp{g}{f}$ అనేది $B$ యొక్క
+లెక్కింపు; అందువల్ల $B$~\tetoken{లెక్కించదగిన}{!!{enumerable}}.}
 {
   అప్పుడు $A = \emptyset$ లేదా, పరిధి $A$గానూ ప్రవేశం $\Nat$ లేదా
-  సహజ సంఖ్యల ఒక ఆరంభ క్రమంగానూ ఉన్న !!a{bijection}~$g$ ఉంటుంది.
+  సహజ సంఖ్యల ఒక ఆరంభ క్రమంగానూ ఉన్న \tetoken{ఒక ద్విగుణ ప్రమేయం}{!!a{bijection}}~$g$ ఉంటుంది.
   $A = \emptyset$ అయితే $B = \emptyset$ కూడా (లేకపోతే $f(x) = y$
   అయ్యే $x \in A$ ఏదీ లేని ఏదో $y \in B$ ఉంటుంది). కాబట్టి మనకు
-  !!{bijection}~$g$ ఉందనుకుందాం. అప్పుడు $\comp{g}{f}$ అనేది పరిధి
+  \tetoken{ద్విగుణ ప్రమేయం}{!!{bijection}}~$g$ ఉందనుకుందాం. అప్పుడు $\comp{g}{f}$ అనేది పరిధి
   $B$గానూ, ప్రవేశం $g$ ప్రవేశంతో సమానంగానూ (అంటే, $\Nat$ లేదా దాని
-  ఒక ఆరంభ ఖండంగానూ) ఉన్న !!a{bijection}. కాబట్టి $B$ !!{enumerable}.}
+  ఒక ఆరంభ ఖండంగానూ) ఉన్న \tetoken{ఒక ద్విగుణ ప్రమేయం}{!!a{bijection}}. కాబట్టి $B$ \tetoken{లెక్కించదగిన}{!!{enumerable}}.}
 \sourcecorrection{OLSIZ-006}{రెండు ఖాళీ-సమితి శాఖల్లోనూ ఆంగ్ల మూలం,
 ఇంకా నిర్వచించని $g$ను వాడి $g(x)=y$ అని రాస్తుంది. అక్కడ అవసరమైన
 ద్విగుణ ప్రమేయం $f$ కనుక, రెండు చోట్లా $f(x)=y$గా సరిచేశాం.}
 
-$B$ !!{enumerable} అయితే, $f$కు బదులు !!{bijection}
+$B$ \tetoken{లెక్కించదగిన}{!!{enumerable}} అయితే, $f$కు బదులు \tetoken{ద్విగుణ ప్రమేయం}{!!{bijection}}
 $f^{-1}\colon B \to A$తో ఇదే వాదనను పునరావృతం చేసి $A$
-!!{enumerable} అని పొందుతాం.
+\tetoken{లెక్కించదగిన}{!!{enumerable}} అని పొందుతాం.
 \end{proof}
 
 \begin{prob}
@@ -105,7 +105,7 @@ C \cap D = \emptyset$ అయితే $\cardeq{A \cup B}{C \cup D}$ అని �
 \end{prob}
 
 \begin{prob}
-$A$ అనంతమైనది, !!{enumerable} అయితే $\cardeq{A}{\Nat}$ అని చూపండి.
+$A$ అనంతమైనది, \tetoken{లెక్కించదగిన}{!!{enumerable}} అయితే $\cardeq{A}{\Nat}$ అని చూపండి.
 \end{prob}
 
 \end{document}

@@ -11,8 +11,8 @@
 ష్రోడర్--బెర్న్‌స్టైన్ నిరూపణ
 (\olref[sfr][siz][sb]{thm:schroder-bernstein}):
 $\cardle{A}{B}$ మరియు $\cardle{B}{A}$ అయితే $\cardeq{A}{B}$;
-అంటే, !!{injection}s $f \colon A \to B$, $g \colon B \to A$
-ఇచ్చినప్పుడు !!a{bijection} $h \colon A \to B$ ఉంటుంది.
+అంటే, \tetoken{ఒకటి-ఒకటి ప్రమేయాలు}{!!{injection}s} $f \colon A \to B$, $g \colon B \to A$
+ఇచ్చినప్పుడు \tetoken{ఒక ద్విగుణ ప్రమేయం}{!!a{bijection}} $h \colon A \to B$ ఉంటుంది.
 
 ఈ అధ్యాయంలో డెడెకిండ్ చెప్పిన \emph{సంవృతాల} భావనను అనుసరించాం.
 నిజానికి ఈ భావనను ఉపయోగించి డెడెకిండ్ ష్రోడర్--బెర్న్‌స్టైన్‌కు ఒక
@@ -62,7 +62,7 @@ $\cardeq{\cardeq{A}{B}}{C}$ అనే వికృతంగా గూడుక�
 నిర్ణయించినట్లుగా ముగింపును $\cardeq{B}{C}$గా సరిచేశాం.}
 
 \begin{proof}
-!!a{bijection} $f \colon C \to A$ ఇచ్చినప్పుడు,
+\tetoken{ఒక ద్విగుణ ప్రమేయం}{!!a{bijection}} $f \colon C \to A$ ఇచ్చినప్పుడు,
 $F = \Closureofunder{f}{C \setminus B}$గా తీసుకుని, ప్రవేశం $C$ గల
 $g$ అనే ప్రమేయాన్ని ఇలా నిర్వచించండి:
 \[
@@ -72,8 +72,8 @@ $g$ అనే ప్రమేయాన్ని ఇలా నిర్వచి�
 			x & \text{otherwise}
 		\end{cases}
 \]
-$g$, $C \to B$ నుంచి !!a{bijection} అని చూపుతాం; దాని నుంచి
-$\comp{f^{-1}}{g} \colon A \to B$ ఒక !!a{bijection} అని వస్తుంది;
+$g$, $C \to B$ నుంచి \tetoken{ఒక ద్విగుణ ప్రమేయం}{!!a{bijection}} అని చూపుతాం; దాని నుంచి
+$\comp{f^{-1}}{g} \colon A \to B$ ఒక \tetoken{ద్విగుణ ప్రమేయం}{!!a{bijection}} అని వస్తుంది;
 దీనితో నిరూపణ పూర్తవుతుంది.
 
 మొదట $x \in F$, కానీ $y\notin F$ అయితే $g(x) \neq g(y)$ అని
@@ -84,9 +84,9 @@ $y = f(x) \in F$; ఇది వైరుధ్యం.
 
 ఇప్పుడు $g(x) = g(y)$ అనుకుందాం. పై వాదన ప్రకారం $x \in F$ అవడం
 అంటే $y \in F$ అవడమే. $x, y \in F$ అయితే,
-$f(x) = g (x) = g(y) = f(y)$; $f$ !!a{bijection} కనుక $x = y$.
+$f(x) = g (x) = g(y) = f(y)$; $f$ \tetoken{ఒక ద్విగుణ ప్రమేయం}{!!a{bijection}} కనుక $x = y$.
 $x, y \notin F$ అయితే $x = g(x) = g(y) = y$. కాబట్టి $g$ ఒక
-!!a{injection}.
+\tetoken{ఒకటి-ఒకటి ప్రమేయం}{!!a{injection}}.
 
 ఇక $\ran{g} = B$ అని చూపాలి. మొదట ప్రతి $g$ విలువ $B$లోనే ఉంటుంది:
 $y\in F$ అయితే $g(y)=f(y)\in A\subseteq B$; $y\notin F$ అయితే
@@ -108,18 +108,18 @@ $A\subseteq B$లోకి వెళ్తాయని, $F$ బయటివి $
 నిర్వచిస్తామని గుర్తు చేసుకోండి.
 
 \begin{proof}[ష్రోడర్--బెర్న్‌స్టైన్ నిరూపణ]
-$f \colon A \to B$, $g \colon B \to A$లు !!{injection}s అనుకుందాం.
+$f \colon A \to B$, $g \colon B \to A$లు \tetoken{ఒకటి-ఒకటి ప్రమేయాలు}{!!{injection}s} అనుకుందాం.
 $\funimage{f}{A} \subseteq B$ కనుక
 $\funimage{g}{\funimage{f}{A}} \subseteq g[B] \subseteq A$.
 అంతేకాక $g$, $f$ రెండూ ఒకటి-ఒకటి కనుక
 $\comp{f}{g} \colon A \to \funimage{g}{\funimage{f}{A}}$ ఒక
-!!{injection}; నిజానికి దాని సహప్రవేశాన్ని నిర్వచించిన విధానం వల్లనే
-$\comp{f}{g}$ ఒక !!a{bijection}. అందువల్ల
+\tetoken{ఒకటి-ఒకటి ప్రమేయం}{!!{injection}}; నిజానికి దాని సహప్రవేశాన్ని నిర్వచించిన విధానం వల్లనే
+$\comp{f}{g}$ ఒక \tetoken{ద్విగుణ ప్రమేయం}{!!a{bijection}}. అందువల్ల
 $\cardeq{\funimage{g}{\funimage{f}{A}}}{A}$; కాబట్టి
-\olref{sbhelper} ప్రకారం !!a{bijection}
+\olref{sbhelper} ప్రకారం \tetoken{ఒక ద్విగుణ ప్రమేయం}{!!a{bijection}}
 $h \colon A \to \funimage{g}{B}$ ఉంది. అంతేకాక $g^{-1}$ అనేది
-$\funimage{g}{B} \to B$ నుంచి !!a{bijection}. కాబట్టి
-$\comp{h}{g^{-1}} \colon A \to B$ ఒక !!a{bijection}.
+$\funimage{g}{B} \to B$ నుంచి \tetoken{ఒక ద్విగుణ ప్రమేయం}{!!a{bijection}}. కాబట్టి
+$\comp{h}{g^{-1}} \colon A \to B$ ఒక \tetoken{ద్విగుణ ప్రమేయం}{!!a{bijection}}.
 \end{proof}
 
 \end{document}

@@ -18,7 +18,7 @@
 
 \begin{thm}[సంపూర్ణతా సిద్ధాంతం]
 \ollabel{thm:completeness}
-$\Gamma$ ఒక !!{sentence}s సమితి అనుకుందాం. $\Gamma$ అవైరుధ్యమైతే,
+$\Gamma$ ఒక \tetoken{వాక్యాలు}{!!{sentence}s} సమితి అనుకుందాం. $\Gamma$ అవైరుధ్యమైతే,
 అది సంతృప్తిపరచదగినది.
 \end{thm}
 
@@ -28,14 +28,14 @@ $\Gamma$ అవైరుధ్యమని అనుకుందాం.\iftag{FO
   సంతృప్తీకృత అవైరుధ్య సమితి ఉంది.}{}
 \olref[lin]{lem:lindenbaum} ప్రకారం,
 $\Gamma^* \supseteq \iftag{FOL}{\Gamma'}{\Gamma}$ అయ్యే అవైరుధ్య,
-!!{complete} సమితి ఉంది.
+\tetoken{సంపూర్ణ}{!!{complete}} సమితి ఉంది.
 \iftag{FOL}{
-  $\Gamma' \subseteq \Gamma^*$ కనుక, ప్రతి !!{formula}~$!A(x)$కు
+  $\Gamma' \subseteq \Gamma^*$ కనుక, ప్రతి \tetoken{సూత్రం}{!!{formula}}~$!A(x)$కు
   $\Gamma^*$లో
   \iftag{prvEx}
         {$\lexists[x][!A(x)] \lif !A(c)$}
         {$\lnot\lforall[x][!A(x)] \lif \lnot !A(c)$}
-  రూపంలోని !!a{sentence} ఉంటుంది; అందువల్ల $\Gamma^*$
+  రూపంలోని \tetoken{ఒక వాక్యం}{!!a{sentence}} ఉంటుంది; అందువల్ల $\Gamma^*$
   సంతృప్తీకృతమైనది. $\Gamma$లో~$\eq$ లేకపోతే,}{అప్పుడు}
 \olref[mod]{lem:truth} ప్రకారం,
 $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!A}$ అయినప్పుడు,
@@ -43,7 +43,7 @@ $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!A}$ అయినప్ప�
 \Gamma$కు $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!A}$;
 కాబట్టి $\Gamma$ సంతృప్తిపరచదగినది.\iftag{FOL}{
   $\Gamma$లో~$\eq$ ఉంటే, \olref[ide]{lem:truth} ప్రకారం అన్ని
-  !!{sentence}s~$!A$కు $\Sat{\equivclass{M}{\approx}}{!A}$ అయినప్పుడు,
+  \tetoken{వాక్యాలు}{!!{sentence}s}~$!A$కు $\Sat{\equivclass{M}{\approx}}{!A}$ అయినప్పుడు,
   అప్పుడు మాత్రమే $!A \in \Gamma^*$. ప్రత్యేకంగా, ప్రతి $!A \in
   \Gamma$కు $\Sat{\equivclass{M}{\approx}}{!A}$; కాబట్టి $\Gamma$
   సంతృప్తిపరచదగినది.}{}
@@ -51,7 +51,7 @@ $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!A}$ అయినప్ప�
 
 \begin{cor}[సంపూర్ణతా సిద్ధాంతం, రెండవ రూపం]
 \ollabel{cor:completeness}
-అన్ని~$\Gamma$, !!{sentence}s~$!A$లకు: $\Gamma \Entails !A$ అయితే
+అన్ని~$\Gamma$, \tetoken{వాక్యాలు}{!!{sentence}s}~$!A$లకు: $\Gamma \Entails !A$ అయితే
 $\Gamma \Proves !A$.
 \end{cor}
 
@@ -59,7 +59,7 @@ $\Gamma \Proves !A$.
 \olref{cor:completeness}, \olref{thm:completeness}లలోని~$\Gamma$లు
 సార్వత్రికంగా పరిమాణీకృతమయ్యాయని గమనించండి. మనం గందరగోళపడకుండా,
 \olref{thm:completeness}ను వేరొక చరరాశితో మళ్లీ చెబుదాం: ఏ
-!!{sentence}s సమితి~$\Delta$కైనా, $\Delta$ అవైరుధ్యమైతే అది
+\tetoken{వాక్యాలు}{!!{sentence}s} సమితి~$\Delta$కైనా, $\Delta$ అవైరుధ్యమైతే అది
 సంతృప్తిపరచదగినది. ప్రతిపక్షం ద్వారా, $\Delta$
 సంతృప్తిపరచదగినది కాకపోతే $\Delta$ వైరుధ్యభరితమైనది. ఉపఫలితాన్ని
 నిరూపించడానికి దీన్ని ఉపయోగిస్తాం.
@@ -99,13 +99,13 @@ $\Gamma \Proves !A$.
 
 \tagprob{FOL}
 \begin{prob}
-ఒక !!a{derivation} వ్యవస్థ సంపూర్ణంగా ఉండాలంటే, ప్రతి
+ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}} వ్యవస్థ సంపూర్ణంగా ఉండాలంటే, ప్రతి
 సంతృప్తిపరచలేని సమితీ వైరుధ్యభరితమని నిరూపించగలిగేంత బలమైన నియమాలు
-దానికి ఉండాలి. సంపూర్ణతను నిరూపించడానికి !!{derivation} నియమాల్లో ఏవి
+దానికి ఉండాలి. సంపూర్ణతను నిరూపించడానికి \tetoken{వ్యుత్పత్తి}{!!{derivation}} నియమాల్లో ఏవి
 అవసరమయ్యాయి? ఈ నియమాల్లో ఏవైనా నిరూపణలో ఎక్కడా ఉపయోగించబడలేదా? ఈ
 ప్రశ్నలకు సమాధానం ఇవ్వడానికి,
 \olref[fol][com][cth]{thm:completeness} నిరూపణకు దారితీసే ఏ ఫలితాల్లో
-ఏ !!{derivation} నియమాలు ఉపయోగించబడ్డాయో చూపే జాబితా లేదా రేఖాచిత్రం
+ఏ \tetoken{వ్యుత్పత్తి}{!!{derivation}} నియమాలు ఉపయోగించబడ్డాయో చూపే జాబితా లేదా రేఖాచిత్రం
 తయారుచేయండి. ఈ నిరూపణల్లో నియమాల అవ్యక్త ఉపయోగాలనూ తప్పకుండా
 గుర్తించండి.
 \end{prob}
@@ -113,13 +113,13 @@ $\Gamma \Proves !A$.
 
 \tagprob{notFOL}
 \begin{prob}
-ఒక !!a{derivation} వ్యవస్థ సంపూర్ణంగా ఉండాలంటే, ప్రతి
+ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}} వ్యవస్థ సంపూర్ణంగా ఉండాలంటే, ప్రతి
 సంతృప్తిపరచలేని సమితీ వైరుధ్యభరితమని నిరూపించగలిగేంత బలమైన నియమాలు
-దానికి ఉండాలి. సంపూర్ణతను నిరూపించడానికి !!{derivation} నియమాల్లో ఏవి
+దానికి ఉండాలి. సంపూర్ణతను నిరూపించడానికి \tetoken{వ్యుత్పత్తి}{!!{derivation}} నియమాల్లో ఏవి
 అవసరమయ్యాయి? ఈ నియమాల్లో ఏవైనా నిరూపణలో ఎక్కడా ఉపయోగించబడలేదా? ఈ
 ప్రశ్నలకు సమాధానం ఇవ్వడానికి,
 \olref[pl][com][cth]{thm:completeness} నిరూపణకు దారితీసే ఏ ఫలితాల్లో
-ఏ !!{derivation} నియమాలు ఉపయోగించబడ్డాయో చూపే జాబితా లేదా రేఖాచిత్రం
+ఏ \tetoken{వ్యుత్పత్తి}{!!{derivation}} నియమాలు ఉపయోగించబడ్డాయో చూపే జాబితా లేదా రేఖాచిత్రం
 తయారుచేయండి. ఈ నిరూపణల్లో నియమాల అవ్యక్త ఉపయోగాలనూ తప్పకుండా
 గుర్తించండి.
 \end{prob}

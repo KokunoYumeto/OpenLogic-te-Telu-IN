@@ -13,10 +13,10 @@
       {\olfileid{fol}{seq}{ppr}}
       {\olfileid{pl}{seq}{ppr}}
 
-\olsection{\usetoken{S}{derivability}, ప్రవచన సంయోజకాలు}
+\olsection{\usetoken{S}{derivability}, ప్రతిజ్ఞావాక్య సంయోజకాలు}
 
 \begin{explain}
-  సీక్వెంట్ కలనం యొక్క !!{derivability} సంబంధం~$\Proves$ ప్రవచన
+  సీక్వెంట్ కలనం యొక్క \tetoken{వ్యుత్పాద్యత}{!!{derivability}} సంబంధం~$\Proves$ ప్రతిజ్ఞావాక్య
   సంయోజకాలకు సంబంధించిన కొన్ని ప్రాథమిక విషయాలను స్థాపించగలంత
   బలమైనదని చూపుతాం. ఉదాహరణకు $!A \land !B \Proves !A$ మరియు
   $!A, !A \lif !B \Proves !B$ (మోడస్ పోనెన్స్). సంపూర్ణతా సిద్ధాంత
@@ -35,7 +35,7 @@
 \begin{proof}
   \begin{enumerate}
   \item $!A \land !B \Sequent !A$, $!A \land !B \Sequent !B$ అనే
-    రెండు సీక్వెంట్లూ !!{derivable}:
+    రెండు సీక్వెంట్లూ \tetoken{వ్యుత్పాదించదగిన}{!!{derivable}}:
     \begin{prooftree}
       \Axiom$!A \fCenter !A$
       \RightLabel{\LeftR{\land}}
@@ -46,7 +46,7 @@
       \UnaryInf$!A \land !B \fCenter !B$
     \end{prooftree}
     \item $!A, !B \Sequent !A \land !B$ సీక్వెంట్‌కు ఒక
-    !!a{derivation} ఇది:
+    \tetoken{వ్యుత్పత్తి}{!!a{derivation}} ఇది:
     \begin{prooftree}
       \Axiom$!A \fCenter !A$
       \Axiom$!B \fCenter !B$
@@ -67,7 +67,7 @@
 \begin{proof}
   \begin{enumerate}
   \item $!A \lor !B, \lnot !A, \lnot !B \Sequent$ సీక్వెంట్‌కు ఒక
-    !!a{derivation} ఇస్తాం:
+    \tetoken{వ్యుత్పత్తి}{!!a{derivation}} ఇస్తాం:
     \begin{prooftree}
       \Axiom$!A \fCenter !A$
       \RightLabel{\LeftR{\lnot}}
@@ -85,7 +85,7 @@
     (ద్విరేఖ నిగమన గీతలు అనేక బలహీనీకరణ, సంకోచన, మార్పిడి
     నిగమనాలను సూచిస్తాయని గుర్తు చేసుకోండి.)
   \item $!A \Sequent !A \lor !B$, $!B \Sequent !A \lor !B$ అనే
-    రెండు సీక్వెంట్లకూ !!{derivation}s ఉన్నాయి:
+    రెండు సీక్వెంట్లకూ \tetoken{వ్యుత్పత్తులు}{!!{derivation}s} ఉన్నాయి:
     \begin{prooftree}
       \Axiom$!A \fCenter !A$
       \RightLabel{\RightR{\lor}}
@@ -110,7 +110,7 @@
 
 \begin{proof}
   \begin{enumerate}
-    \item $!A \lif !B, !A \Sequent !B$ సీక్వెంట్ !!{derivable}:
+    \item $!A \lif !B, !A \Sequent !B$ సీక్వెంట్ \tetoken{వ్యుత్పాదించదగిన}{!!{derivable}}:
       \begin{prooftree}
         \Axiom$!A \fCenter !A$
         \Axiom$!B \fCenter !B$
@@ -118,7 +118,7 @@
         \BinaryInf$!A \lif !B, !A  \fCenter !B$
       \end{prooftree}
     \item $\lnot !A \Sequent !A \lif !B$, $!B \Sequent !A \lif !B$
-      అనే రెండు సీక్వెంట్లూ !!{derivable}:
+      అనే రెండు సీక్వెంట్లూ \tetoken{వ్యుత్పాదించదగిన}{!!{derivable}}:
       \begin{prooftree}
         \Axiom$!A \fCenter !A$
         \RightLabel{\LeftR{\lnot}}

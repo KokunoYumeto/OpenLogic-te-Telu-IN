@@ -1,0 +1,74 @@
+{
+  "schema": "openlogic-te-canon-revalidation-receipt/1",
+  "audit_id": "TE-CANON-REVALIDATION-20260906",
+  "checkpoint_utc": "2026-09-06T20:41:49.314Z",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "production_start_revision": "be1bc4934234389376ea189dc3cd4d00d47b9b8d",
+  "scope": {
+    "unit_range": "OLP-0004--OLP-0148",
+    "units": 145,
+    "choices": 2343,
+    "target_content_tokens": 190182,
+    "token_identity_markers": 2060,
+    "token_key_families": 41,
+    "source_corrections": 87,
+    "canon_sources": 5,
+    "canon_passages": 34
+  },
+  "validator": {
+    "status": "COMPLETE_PASS",
+    "semantic_acceptance_eligible": true,
+    "semantic_blocking_choices": 0,
+    "process_exit_code": 0,
+    "failures": [],
+    "warnings": [],
+    "sha256": "52c9878de63d1e25c4070ba3ed1c964f826e8d542435e5b4787325cf39e4d8f0"
+  },
+  "protocol_sha256": "154bf266fc797871e59e85265e0ec7848643c373adb59343d1fef7ec7bc28431",
+  "choice_schema_sha256": "bae5b1a0d550c14b01e151cdb9fa4e1e05c6dce9d217873335207dd98c808ad8",
+  "status_counts": {
+    "formal-invariant": 873,
+    "supported": 319,
+    "supported-provisional": 777,
+    "contentious-human-review": 374,
+    "unsupported": 0,
+    "needs-revision": 0
+  },
+  "review": {
+    "choices_requiring_human_review": 1151,
+    "contentious_rows": 1151,
+    "claim": "Provisional and contentious records remain visible for optional human review; they are not release holds or human certification."
+  },
+  "evidence_timing": {
+    "later-revalidation": 1470,
+    "none": 873
+  },
+  "target_inventory": {
+    "sets-functions-relations": {"files": 51, "bytes": 439966, "lines": 5736, "telugu_codepoints": 105446},
+    "propositional-logic": {"files": 8, "bytes": 59387, "lines": 940, "telugu_codepoints": 12276},
+    "first-order-logic": {"files": 86, "bytes": 707167, "lines": 10698, "telugu_codepoints": 139642}
+  },
+  "input_identities": {
+    "TERM_DECISIONS.jsonl": {"records": 42, "bytes": 36381, "sha256": "4e3e89b1ea05d9f9e6e75a46538a86a7b4c3f5e6f4715da7e4733fd07a1e4aef"},
+    "SOURCE_CORRECTIONS.jsonl": {"records": 87, "bytes": 86962, "sha256": "be65285a657125f9b7317fbfe7ddb354ab4f617688311a7ea73f15cf08446689"},
+    "SEGMENT_CANON_USE.jsonl": {"records": 2343, "bytes": 4382455, "sha256": "0d54c45fd5f22d2a4d9099b4d30d0f60a3b40b2747ef19088956ff02a1e795a5"},
+    "TELUGU_TOKENS.json": {"keys": 41, "sha256": "f4a96929c4e512ab0690a4bb547799097f92ab5995149b8302a456aa8a79fd50"}
+  },
+  "manager_package_identities": {
+    "CANON_INVENTORY.jsonl": {"bytes": 6284, "sha256": "0d8ecd16fa2a948dd5b61ffb3697a0f72d797764851dfd74233c9ee89296bc97"},
+    "CANON_PASSAGES.jsonl": {"bytes": 27941, "sha256": "d61748a088097ba0c66775bda45bf96c1b994e758616a107ac5f27871357e9cd"},
+    "CHOICES.jsonl": {"bytes": 20200970, "sha256": "30686b554a60aca3a619b520ddeb3b5afe89d6cf07bda9a992751baac1a70be5"},
+    "CONTENTIOUS.jsonl": {"bytes": 10538696, "sha256": "65c8667dcc82f9089c17a9502ef6635f22e70fe1ad8b68b1a0261ca70564cbac"},
+    "HUMAN_REVIEW.md": {"bytes": 5816580, "sha256": "3d8259491897a260b089c9c272794bb790769dba65271fe4ccd710fceaf7f460"},
+    "SUMMARY.md": {"bytes": 3643, "sha256": "1f264d4cecf6e2359f3e0a43b5cd0df2b37a5186ad8afd7f8208294e21e13637"},
+    "CURSOR.json": {"bytes": 27453, "sha256": "2d29b8c1669b3e69701f6a39924cd65453d5903a08ea332d0054f49824212d82"},
+    "HASHES.json": {"bytes": 1598, "sha256": "c5c834f59b72ab84e793a80e95c5de662b898a6caa9dd56962a2f23130626dab"}
+  },
+  "recovery_snapshots": {
+    "PRE-CANON-REPAIR-OLP0004-0148-20260906.zip": {"bytes": 334879, "sha256": "4c884c3da2e010955d6c85644bdf8e1fc058182a5deae618af06e1d5237b6cb3"},
+    "PRE-MANAGER-AUDIT-REBUILD-20260906.zip": {"bytes": 3182324, "sha256": "5f0689d122e63f08e3e2ede5d78b22cc3a049cd5d5a321c3e9a4352c278c90d2"}
+  },
+  "retention": "The full choice package and recovery snapshots remain in task state; this sanitized receipt binds them without redistributing the manager files or rights-restricted canon originals.",
+  "tex_launches": 0,
+  "commit_or_publication_during_revalidation": false
+}

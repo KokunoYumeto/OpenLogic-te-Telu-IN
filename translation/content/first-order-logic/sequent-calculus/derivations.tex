@@ -14,14 +14,14 @@
 
 \begin{explain}
 ప్రారంభ సీక్వెంట్ ఎలా ఉంటుందో చెప్పాం; నిగమన నియమాలనూ ఇచ్చాం.
-వీటి నుంచి సీక్వెంట్ కలనంలోని !!^{derivation}s ఆగమనాత్మకంగా
-ఉత్పన్నమవుతాయి: ప్రతి !!{derivation} తనంతట తానే ఒక ప్రారంభ సీక్వెంట్
-అయినా అవుతుంది, లేదా ఒకటి లేదా రెండు !!{derivation}s తర్వాత ఒక
+వీటి నుంచి సీక్వెంట్ కలనంలోని \tetoken{వ్యుత్పత్తులు}{!!^{derivation}s} ఆగమనాత్మకంగా
+ఉత్పన్నమవుతాయి: ప్రతి \tetoken{వ్యుత్పత్తి}{!!{derivation}} తనంతట తానే ఒక ప్రారంభ సీక్వెంట్
+అయినా అవుతుంది, లేదా ఒకటి లేదా రెండు \tetoken{వ్యుత్పత్తులు}{!!{derivation}s} తర్వాత ఒక
 నిగమనం ఉండే రూపంలో ఉంటుంది.
 \end{explain}
 
-\begin{defn}[$\Log{LK}$ !!{derivation}]
-ఒక సీక్వెంట్~$S$కు \emph{$\Log{LK}$-!!{derivation}} అంటే కింది
+\begin{defn}[$\Log{LK}$ \tetoken{వ్యుత్పత్తి}{!!{derivation}}]
+ఒక సీక్వెంట్~$S$కు \emph{$\Log{LK}$-\tetoken{వ్యుత్పత్తి}{!!{derivation}}} అంటే కింది
 షరతులను తీర్చే సీక్వెంట్ల పరిమిత వృక్షం:
 \begin{enumerate}
 \item వృక్షంలో అన్నిటికంటే పైనున్న సీక్వెంట్లు ప్రారంభ సీక్వెంట్లు.
@@ -29,33 +29,33 @@
 \item $S$ తప్ప వృక్షంలోని ప్రతి సీక్వెంట్, తనకు నేరుగా కింద నిలిచే
   నిష్కర్ష గల నిగమన నియమాన్ని సరిగ్గా వర్తింపజేయడంలో ఒక పూర్వాధారం.
 \end{enumerate}
-అప్పుడు $S$ను ఆ !!{derivation} యొక్క \emph{అంత్య సీక్వెంట్} అనీ,
-$S$ను \emph{$\Log{LK}$లో !!{derivable}} (లేదా
-$\Log{LK}$-!!{derivable}) అనీ అంటాం.
+అప్పుడు $S$ను ఆ \tetoken{వ్యుత్పత్తి}{!!{derivation}} యొక్క \emph{అంత్య సీక్వెంట్} అనీ,
+$S$ను \emph{$\Log{LK}$లో \tetoken{వ్యుత్పాదించదగిన}{!!{derivable}}} (లేదా
+$\Log{LK}$-\tetoken{వ్యుత్పాదించదగిన}{!!{derivable}}) అనీ అంటాం.
 \end{defn}
 
 \begin{ex}
 ప్రతి ప్రారంభ సీక్వెంట్, ఉదాహరణకు $!C \Sequent !C$, ఒక
-!!a{derivation}. దీనికి, ఉదాహరణకు, $\LeftR{\Weakening}$ నియమాన్ని
-వర్తింపజేసి కొత్త !!{derivation}ను పొందవచ్చు:
+\tetoken{వ్యుత్పత్తి}{!!a{derivation}}. దీనికి, ఉదాహరణకు, $\LeftR{\Weakening}$ నియమాన్ని
+వర్తింపజేసి కొత్త \tetoken{వ్యుత్పత్తిని}{!!{derivation}} పొందవచ్చు:
 \begin{prooftree}
 \Axiom$ \Gamma \fCenter \Delta $
 \RightLabel{\LeftR{\Weakening}}
 \UnaryInf$ !A, \Gamma \fCenter \Delta$
 \end{prooftree}
 అయితే ఈ నియమం సాధారణంగా వర్తించేది: నియమంలోని $!A$ స్థానంలో ఏ
-!!{sentence}నైనా, ఉదాహరణకు $!D$ను కూడా పెట్టవచ్చు. పూర్వాధారం మన
+\tetoken{వాక్యమైనా}{!!{sentence}}, ఉదాహరణకు $!D$ను కూడా పెట్టవచ్చు. పూర్వాధారం మన
 ప్రారంభ సీక్వెంట్ $!C \Sequent !C$తో సరిపోలితే, $\Gamma$, $\Delta$
 రెండూ కేవలం $!C$ అని అర్థం; అప్పుడు నిష్కర్ష $!D, !C \Sequent !C$
-అవుతుంది. కాబట్టి కిందిది ఒక !!a{derivation}:
+అవుతుంది. కాబట్టి కిందిది ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}:
 \begin{prooftree}
 \Axiom$ !C \fCenter !C $
 \RightLabel{\LeftR{\Weakening}}
 \UnaryInf$ !D, !C \fCenter !C$
 \end{prooftree}
-ఇప్పుడు ఎడమవైపు ఉన్న రెండు !!{sentence}s స్థానాలను మార్చనిచ్చే మరొక
+ఇప్పుడు ఎడమవైపు ఉన్న రెండు \tetoken{వాక్యాలు}{!!{sentence}s} స్థానాలను మార్చనిచ్చే మరొక
 నియమాన్ని, ఉదాహరణకు $\LeftR{\Exchange}$ను, వర్తింపజేయవచ్చు. అందువల్ల
-కిందిది కూడా సరైన !!{derivation}:
+కిందిది కూడా సరైన \tetoken{వ్యుత్పత్తి}{!!{derivation}}:
 \begin{prooftree}
 \Axiom$ !C \fCenter !C $
 \RightLabel{\LeftR{\Weakening}}
@@ -71,13 +71,13 @@ $\Log{LK}$-!!{derivable}) అనీ అంటాం.
 \end{prooftree}
 అయితే, $\Gamma$, $\Pi$ రెండూ శూన్య క్రమాలు, $\Delta$ అనేది $!C$;
 $!A$, $!B$ పాత్రలను వరుసగా $!D$, $!C$ పోషిస్తాయి. దాదాపు ఇదే
-విధంగా కిందిది కూడా ఒక !!a{derivation} అని చూస్తాం:
+విధంగా కిందిది కూడా ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}} అని చూస్తాం:
 \begin{prooftree}
 \Axiom$ !D \fCenter !D $
 \RightLabel{\LeftR{\Weakening}}
 \UnaryInf$ !C, !D \fCenter !D$
 \end{prooftree}
-ఇప్పుడు ఈ రెండు !!{derivation}sను తీసుకొని $\RightR{\land}$తో
+ఇప్పుడు ఈ రెండు \tetoken{వ్యుత్పత్తులను}{!!{derivation}s} తీసుకొని $\RightR{\land}$తో
 కలపవచ్చు. ఆ నియమం:
 \begin{prooftree}
 \Axiom$\Gamma \fCenter \Delta, !A$
@@ -85,7 +85,7 @@ $!A$, $!B$ పాత్రలను వరుసగా $!D$, $!C$ పోషి�
 \RightLabel{\RightR{\land}}
 \BinaryInf$ \Gamma \fCenter \Delta, !A \land !B $
 \end{prooftree}
-మన సందర్భంలో పూర్వాధారాలు, వాటితో ముగిసే !!{derivation}sలోని చివరి
+మన సందర్భంలో పూర్వాధారాలు, వాటితో ముగిసే \tetoken{వ్యుత్పత్తులలోని}{!!{derivation}s} చివరి
 సీక్వెంట్లతో సరిపోలాలి. అందువల్ల $\Gamma$ అనేది $!C, !D$;
 $\Delta$ శూన్యం; $!A$ అనేది $!C$; $!B$ అనేది $!D$. కాబట్టి నిగమనం
 సరైనదైతే నిష్కర్ష $!C, !D \Sequent !C \land !D$ అవుతుంది.

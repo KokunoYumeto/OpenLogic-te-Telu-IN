@@ -16,7 +16,7 @@
 \olsection{\usetoken{S}{derivability} మరియు ప్రతిపాదనాత్మక సంయోజకాలు}
 
 \begin{explain}
-  సహజ నిగమనపు !!{derivability} సంబంధం~$\Proves$, $!A \land !B
+  సహజ నిగమనపు \tetoken{వ్యుత్పాద్యత}{!!{derivability}} సంబంధం~$\Proves$, $!A \land !B
   \Proves !A$, $!A, !A \lif !B \Proves !B$ (మోడస్ పోనెన్స్) వంటి
   ప్రతిపాదనాత్మక సంయోజకాల ప్రాథమిక వాస్తవాలను స్థాపించగలిగేంత
   బలమైనదని చూపుతాం. సంపూర్ణతా సిద్ధాంతపు నిరూపణకు ఈ వాస్తవాలు అవసరం.
@@ -32,7 +32,7 @@
 
 \begin{proof}
   \begin{enumerate}
-  \item రెండింటినీ ఇలా !!{derive} చేయవచ్చు:
+  \item రెండింటినీ ఇలా \tetoken{నిగమనం}{!!{derive}} చేయవచ్చు:
     \begin{prooftree}
       \AxiomC{$!A \land !B$}
       \RightLabel{\Elim{\land}}
@@ -42,7 +42,7 @@
       \RightLabel{\Elim{\land}}
       \UnaryInfC{$!B$}
     \end{prooftree}
-  \item ఇలా !!{derive} చేయవచ్చు:
+  \item ఇలా \tetoken{నిగమనం}{!!{derive}} చేయవచ్చు:
     \begin{prooftree}
       \AxiomC{$!A$}
       \AxiomC{$!B$}
@@ -62,7 +62,7 @@
 
 \begin{proof}
   \begin{enumerate}
-  \item కింది !!{derivation}ను పరిశీలించండి:
+  \item కింది \tetoken{వ్యుత్పత్తిని}{!!{derivation}} పరిశీలించండి:
     \begin{prooftree}
       \AxiomC{$!A \lor !B$}
       \AxiomC{$\lnot !A$}
@@ -76,9 +76,9 @@
       \DischargeRule{\Elim{\lor}}{1}
       \TrinaryInfC{$\lfalse$}
     \end{prooftree}
-    ఇది !!{undischarged} పరికల్పనలు $!A \lor !B$, $\lnot !A$,
-    $\lnot !B$ల నుంచి $\lfalse$ యొక్క ఒక !!a{derivation}.
-  \item రెండింటినీ ఇలా !!{derive} చేయవచ్చు:
+    ఇది \tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనలు $!A \lor !B$, $\lnot !A$,
+    $\lnot !B$ల నుంచి $\lfalse$ యొక్క ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}.
+  \item రెండింటినీ ఇలా \tetoken{నిగమనం}{!!{derive}} చేయవచ్చు:
     \begin{prooftree}
       \AxiomC{$!A$}
       \RightLabel{\Intro{\lor}}
@@ -101,7 +101,7 @@
 
 \begin{proof}
   \begin{enumerate}
-  \item ఇలా !!{derive} చేయవచ్చు:
+  \item ఇలా \tetoken{నిగమనం}{!!{derive}} చేయవచ్చు:
     \begin{prooftree}
       \AxiomC{$!A \lif !B$}
       \AxiomC{$!A$}
@@ -109,7 +109,7 @@
       \BinaryInfC{$!B$}
     \end{prooftree}
 
-  \item కింది రెండు !!{derivation}s దీన్ని చూపుతాయి:
+  \item కింది రెండు \tetoken{వ్యుత్పత్తులు}{!!{derivation}s} దీన్ని చూపుతాయి:
     \begin{prooftree}
       \AxiomC{$\lnot !A$}
       \AxiomC{$\Discharge{!A}{1}$}
@@ -124,7 +124,7 @@
       \RightLabel{\Intro{\lif}}
       \UnaryInfC{$!A \lif !B$}
     \end{prooftree}
-    $\Intro{\lif}$ పరికల్పన~$!A$ను !!{discharge} చేయవచ్చు; కానీ
+    $\Intro{\lif}$ పరికల్పన~$!A$ను \tetoken{ఉపసంహరణ}{!!{discharge}} చేయవచ్చు; కానీ
     తప్పనిసరిగా చేయనవసరం లేదని గమనించండి.
   \end{enumerate}
 \end{proof}

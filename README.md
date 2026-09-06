@@ -20,14 +20,15 @@ Continuing concept DOI:
 GitHub, GitHub Pages, and Zenodo public bytes have been anonymously verified;
 see [PUBLICATION.md](PUBLICATION.md).
 
-One hundred thirty-four full-unit editable drafts exist in this repository: Sets (7),
+One hundred forty-five full-unit editable drafts exist in this repository: Sets (7),
 Relations (9), Functions (7), Size of Sets (14), Arithmetization (8) and
 Infinite Sets (6), plus the Propositional Logic part driver and complete
 Syntax and Semantics chapter (8), the shared Proof Systems chapter (6), and
 the shared Sequent Calculus chapter (15), the shared Natural Deduction
 chapter (14), the shared Tableaux chapter (14), the shared Axiomatic
-Deduction chapter (14), and the shared First-Order Completeness chapter (12).
-All fourteen batches have
+Deduction chapter (14), the shared First-Order Completeness chapter (12), and
+the First-Order Logic part driver plus complete Introduction chapter (11).
+All fifteen batches have
 source-aligned structural and same-agent semantic review records. The Sets
 chapter also has an offline semantic HTML reader with Telugu document metadata, native MathML,
 local fonts, accessible inline diagrams, resolved internal links, and a
@@ -35,8 +36,8 @@ separately collapsible copy of each canonical English unit. Its public browser
 version is at [OpenLogic తెలుగు — సమితులు](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sets/).
 Relations, Functions, Size of Sets, Arithmetization, Infinite Sets,
 Propositional Logic, Proof Systems, Sequent Calculus, Natural Deduction,
-Tableaux, Axiomatic Deduction and First-Order Completeness are not yet
-integrated into that reader. The other 588 units and the
+Tableaux, Axiomatic Deduction, First-Order Completeness and First-Order
+Introduction are not yet integrated into that reader. The other 577 units and the
 coherent full reader remain in progress; neither current chapter format
 substitutes for that remaining work.
 
@@ -68,7 +69,7 @@ Five confirmed source issues in Functions, fourteen in Size of Sets, eight
 in Arithmetization, six in Infinite Sets, four in Propositional Logic and four
 in Proof Systems, five in Sequent Calculus, four in Natural Deduction,
 twelve in Tableaux, eleven in Axiomatic Deduction and nine in First-Order
-Completeness are minimally repaired and disclosed beside the affected
+Completeness, plus five in First-Order Introduction, are minimally repaired and disclosed beside the affected
 Telugu claims. The frozen
 English bytes remain unchanged. The Size of Sets records adopt ten shared
 OLSIZ findings and four additional deterministic OLTESIZ findings. A proposed
@@ -94,13 +95,15 @@ and the bounded
 and the bounded
 [Axiomatic Deduction audit](evidence/source-audits/2026-09-05-axiomatic-deduction-telugu/REVIEW.md),
 and the bounded
-[First-Order Completeness audit](evidence/source-audits/2026-09-05-completeness-telugu/REVIEW.md).
+[First-Order Completeness audit](evidence/source-audits/2026-09-05-completeness-telugu/REVIEW.md),
+and the bounded
+[First-Order Introduction audit](evidence/source-audits/2026-09-06-introduction-telugu/REVIEW.md).
 
 The [canonical translation-decision index](evidence/START_HERE.md) exposes all
-41 current terminology/sense decisions and 82 corrections with exact
+42 current terminology/sense decisions and 87 corrections with exact
 source/target locators, aligned segment hashes, authorities actually checked,
 known evidence limits, alternatives, uncertainty, and concrete review
-questions. Its status is explicitly partial (134/722); optional expert review
+questions. Its status is explicitly partial (145/722); optional expert review
 creates no translation hold. The canonical views include a
 [full readable register](evidence/TRANSLATION_DECISIONS_FULL.md), a
 [priority view](evidence/PRIORITY_REVIEW.md), a
@@ -111,6 +114,10 @@ creates no translation hold. The canonical views include a
 `EXPERT_REVIEW_*` files remain compatibility views. Final printed/PDF page fields
 remain explicitly pending until each unit enters the coherent reader and final
 pagination exists; exact unit, section, file and line locators are available now.
+The sanitized [canon-revalidation receipt](evidence/CANON-REVALIDATION-RECEIPT.json)
+binds the complete 2,343-choice audit and its live central-validator
+`COMPLETE_PASS` result without redistributing the manager package or
+rights-restricted canon originals.
 
 ## QA and limitations
 
@@ -121,14 +128,14 @@ last-two-pass hashes; all-page visual inspection; mixed-script and Telugu
 conjunct extraction samples. The final log has zero missing glyphs,
 overfull boxes, undefined references or warnings.
 
-All 134 editable drafts pass correction-aware blank-block,
+All 145 editable drafts pass correction-aware blank-block,
 environment, source-token, protected-identifier and mathematical-form checks.
-Fourteen same-agent semantic reviews record source-aligned reverse paraphrases and
+Fifteen same-agent semantic reviews record source-aligned reverse paraphrases and
 their limits. Size of Sets, Arithmetization, Infinite Sets and Propositional
 Logic Syntax and Semantics, Proof Systems, Sequent Calculus, and Natural
-Deduction, Tableaux, Axiomatic Deduction and First-Order Completeness have
-source QA only at this checkpoint; no PDF or HTML reader integration is
-claimed for those one hundred eleven units.
+Deduction, Tableaux, Axiomatic Deduction, First-Order Completeness and
+First-Order Introduction have source QA only at this checkpoint; no PDF or
+HTML reader integration is claimed for those one hundred thirty-eight units.
 
 QA is machine/agent performed, not human or independent review. Several
 technical terms remain provisional. The PDF is not tagged. Source caveats

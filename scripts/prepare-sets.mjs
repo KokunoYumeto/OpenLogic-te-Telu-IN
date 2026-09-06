@@ -1,11 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import {renderTeluguTokens} from './telugu-token-markup.mjs';
 const root=path.resolve(import.meta.dirname,'..');
 const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 const base='translation/content/sets-functions-relations/sets/';
 const files=['sets','basics','subsets','important-sets','unions-and-intersections','pairs-and-products','russells-paradox'];
-const cases={acc:['మూలకాన్ని','మూలకాలను'],gen:['మూలకపు','మూలకాల'],loc:['మూలకంలో','మూలకాలలో'],dat:['మూలకానికి','మూలకాలకు']};
 const receipt=[];
 function explicitMathTextFonts(text) {
  let out='',at=0;
@@ -28,15 +28,14 @@ const chunks=files.map((name,index)=>{
  let body=input.split('\\begin{document}')[1]?.split('\\end{document}')[0];
  if(body===undefined) throw new Error('Missing document boundary: '+name);
  body=body.replace(/\\olimport\{[^}]+\}/g,'').replace('\\OLEndChapterHook','');
- body=body.replace(/\\tecase\{(acc|gen|loc|dat)\}\{!!(a?)\{element\}(s?)\}/g,(_,c,a,p)=>(a?'ఒక ':'')+cases[c][p?1:0]);
- body=body.replace(/!!a\{element\}/g,'ఒక మూలకం').replace(/!!\{element\}s/g,'మూలకాలు').replace(/!!\{element\}/g,'మూలకం');
+ body=renderTeluguTokens(body);
  body=explicitMathTextFonts(body);
  // Unicode-class transitions alone can inherit the math font after text-mode
  // ellipses. Select the family for each whole Telugu run, retaining joiners
  // inside the shaping unit and leaving editable translation bytes unchanged.
  body=body.replace(/[\u0C00-\u0C7F][\u0C00-\u0C7F\u200C\u200D]*/g,word=>'{\\telugufont '+word+'}');
- if(body.includes('!!')||body.includes('\\tecase'))throw new Error('Unresolved text token: '+name);
- receipt.push({unit_id:'OLP-'+String(index+4).padStart(4,'0'),translation_path:base+name+'.tex',translation_sha256:sha(input),render_body_sha256:sha(body),operations:['strip subfile document wrapper','expand chapter imports in frozen order','realize Telugu text-token number and grammatical case','select explicit Telugu/Latin font at mathematical text boundaries and whole Telugu shaping runs']});
+ if(body.includes('!!')||body.includes('\\tetoken')||body.includes('\\tecase'))throw new Error('Unresolved text token: '+name);
+ receipt.push({unit_id:'OLP-'+String(index+4).padStart(4,'0'),translation_path:base+name+'.tex',translation_sha256:sha(input),render_body_sha256:sha(body),operations:['strip subfile document wrapper','expand chapter imports in frozen order','realize Telugu text-token surfaces while preserving source-token identity in editable files','select explicit Telugu/Latin font at mathematical text boundaries and whole Telugu shaping runs']});
  return '% '+receipt.at(-1).unit_id+'\n'+body;
 });
 fs.mkdirSync(path.join(root,'build'),{recursive:true});

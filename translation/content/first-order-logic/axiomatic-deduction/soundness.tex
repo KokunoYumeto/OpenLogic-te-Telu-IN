@@ -13,34 +13,34 @@
 \olsection{నిర్దుష్టత}
 
 \begin{explain}
-స్వీకృతాధారిత నిగమనం వంటి !!^a{derivation} వ్యవస్థ, నిజంగా చెల్లని
-వాటిని !!{derive} చేయలేకపోతే \emph{నిర్దుష్టమైనది}. కాబట్టి నిర్దుష్టత
-అనేది !!{derivation} వ్యవస్థలకు ఒక రకమైన హామీతో కూడిన భద్రతా లక్షణం.
+స్వీకృతాధారిత నిగమనం వంటి \tetoken{ఒక వ్యుత్పత్తి}{!!^a{derivation}} వ్యవస్థ, నిజంగా చెల్లని
+వాటిని \tetoken{నిగమనం}{!!{derive}} చేయలేకపోతే \emph{నిర్దుష్టమైనది}. కాబట్టి నిర్దుష్టత
+అనేది \tetoken{వ్యుత్పత్తి}{!!{derivation}} వ్యవస్థలకు ఒక రకమైన హామీతో కూడిన భద్రతా లక్షణం.
 ఏ నిరూపణ-సిద్ధాంత లక్షణాన్ని పరిశీలిస్తున్నామనే దాన్ని బట్టి, ఉదాహరణకు
 కిందివి తెలుసుకోవాలనుకుంటాం:
 \begin{enumerate}
-\item ప్రతి !!{derivable}~$!A$ సార్వత్రికంగా సత్యం;
-\item కొన్ని ఇతర సూత్రాల~$\Gamma$ నుంచి $!A$ !!{derivable} అయితే,
+\item ప్రతి \tetoken{వ్యుత్పాదించదగిన}{!!{derivable}}~$!A$ సార్వత్రికంగా సత్యం;
+\item కొన్ని ఇతర సూత్రాల~$\Gamma$ నుంచి $!A$ \tetoken{వ్యుత్పాదించదగిన}{!!{derivable}} అయితే,
   అది వాటి పర్యవసానం కూడా;
-\item !!{formula}s సమితి~$\Gamma$ విరుద్ధమైతే, అది అసంతృప్తం.
+\item \tetoken{సూత్రాలు}{!!{formula}s} సమితి~$\Gamma$ విరుద్ధమైతే, అది అసంతృప్తం.
 \end{enumerate}
-ఇవి ఒక !!a{derivation} వ్యవస్థకు ముఖ్యమైన లక్షణాలు. వీటిలో ఏదైనా
-చెల్లకపోతే, ఆ !!{derivation} వ్యవస్థ లోపభూయిష్టం—అది మరీ ఎక్కువను
-!!{derive} చేస్తుంది. అందువల్ల ఒక !!a{derivation} వ్యవస్థ నిర్దుష్టతను
+ఇవి ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}} వ్యవస్థకు ముఖ్యమైన లక్షణాలు. వీటిలో ఏదైనా
+చెల్లకపోతే, ఆ \tetoken{వ్యుత్పత్తి}{!!{derivation}} వ్యవస్థ లోపభూయిష్టం—అది మరీ ఎక్కువను
+\tetoken{నిగమనం}{!!{derive}} చేస్తుంది. అందువల్ల ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}} వ్యవస్థ నిర్దుష్టతను
 స్థాపించడం అత్యంత ముఖ్యం.
 \end{explain}
 
 \begin{prop}
   $!A$ ఒక స్వీకృతమైతే,
   \iftag{FOL}
-    {ప్రతి !!{structure}~$\Struct{M}$, విలువ-నిర్ణయం~$s$కు $\Sat{M}{!A}[s]$.}
-    {ప్రతి !!{valuation}~$\pAssign{v}$కు $\pSat{v}{!A}$.}
+    {ప్రతి \tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M}$, విలువ-నిర్ణయం~$s$కు $\Sat{M}{!A}[s]$.}
+    {ప్రతి \tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}~$\pAssign{v}$కు $\pSat{v}{!A}$.}
 \end{prop}
 
 \begin{proof}
 \iftag{FOL}{స్వీకృతాలన్నీ సార్వత్రికంగా సత్యమని నిర్ధారించాలి.
   ఉదాహరణకు, \olref[qua]{ax:q1} సందర్భం ఇదిగో: $t$ అనేది $!A$లో
-  $x$కు !!{free for} అని, $\Sat{M}{\lforall[x][!A]}[s]$ అని
+  $x$కు \tetoken{ప్రతిస్థాపనకు స్వేచ్ఛగా}{!!{free for}} అని, $\Sat{M}{\lforall[x][!A]}[s]$ అని
   అనుకుందాం. అప్పుడు సంతృప్తి నిర్వచనం ప్రకారం, ప్రతి
   $\varAssign{s'}{s}{x}$కు $\Sat{M}{!A}[s']$ కూడా; ముఖ్యంగా
   $s'(x) = \Value{t}{M}[s]$ అయినప్పుడు ఇది చెల్లుతుంది.
@@ -56,16 +56,16 @@ $\Gamma \Proves !A$ అయితే, $\Gamma \Entails !A$.
 \end{thm}
 
 \begin{proof}
-$\Gamma$ నుంచి $!A$కు గల !!{derivation} పొడవుపై ఆగమనం ద్వారా.
-నిగమనాలతో సమర్థించిన దశలేవీ లేకపోతే, ఆ !!{derivation}లోని అన్ని
-!!{formula}s స్వీకృతాల రూపాలైనా,~$\Gamma$లో ఉన్నవైనా అవుతాయి. ముందరి
+$\Gamma$ నుంచి $!A$కు గల \tetoken{వ్యుత్పత్తి}{!!{derivation}} పొడవుపై ఆగమనం ద్వారా.
+నిగమనాలతో సమర్థించిన దశలేవీ లేకపోతే, ఆ \tetoken{వ్యుత్పత్తిలోని}{!!{derivation}} అన్ని
+\tetoken{సూత్రాలు}{!!{formula}s} స్వీకృతాల రూపాలైనా,~$\Gamma$లో ఉన్నవైనా అవుతాయి. ముందరి
 ప్రతిపాదన వల్ల స్వీకృతాలన్నీ \iftag{FOL}{సార్వత్రికంగా సత్యం}{సర్వసత్యాలు};
 అందువల్ల $!A$ ఒక స్వీకృతమైతే $\Gamma \Entails !A$. $!A \in \Gamma$
 అయితే, అలవోకగా $\Gamma \Entails !A$.
 
-~$!A$ యొక్క !!{derivation}లో చివరి దశను మోడస్ పోనెన్స్ సమర్థిస్తే,
-ఆ !!{derivation}లో $!B$, $!B \lif !A$ అనే !!{formula}s ఉంటాయి; ఆ
-!!{formula}sతో ముగిసే !!{derivation} భాగాలకు ఆగమన పరికల్పన వర్తిస్తుంది
+~$!A$ యొక్క \tetoken{వ్యుత్పత్తిలో}{!!{derivation}} చివరి దశను మోడస్ పోనెన్స్ సమర్థిస్తే,
+ఆ \tetoken{వ్యుత్పత్తిలో}{!!{derivation}} $!B$, $!B \lif !A$ అనే \tetoken{సూత్రాలు}{!!{formula}s} ఉంటాయి; ఆ
+\tetoken{సూత్రాలతో}{!!{formula}s} ముగిసే \tetoken{వ్యుత్పత్తి}{!!{derivation}} భాగాలకు ఆగమన పరికల్పన వర్తిస్తుంది
 (ఎందుకంటే వాటిలో నిగమనం ద్వారా సమర్థించిన దశలు కనీసం ఒకటి తక్కువగా
 ఉంటాయి). కాబట్టి ఆగమన పరికల్పన వల్ల $\Gamma \Entails !B$,
 $\Gamma \Entails !B \lif !A$. అప్పుడు
@@ -83,7 +83,7 @@ $\Gamma \cup \{!C\} \Entails !B(c)$.
 
 $\Sat{M}{\Gamma \cup \{!C\}}$ అయ్యే ఏదో నిర్మాణం~$\Struct{M}$ను
 పరిశీలించండి. $\Sat{M}{\lforall[x][!B(x)]}$ అని చూపాలి.
-$\lforall[x][!B(x)]$ ఒక !!a{sentence} కనుక, ప్రతి చరరాశి
+$\lforall[x][!B(x)]$ ఒక \tetoken{వాక్యం}{!!a{sentence}} కనుక, ప్రతి చరరాశి
 విలువ-నిర్ణయం~$s$కు $\Sat{M}{!B(x)}[s]$ అని చూపాలి
 (\olref[syn][ass]{prop:sat-quant}). $\Gamma \cup \{!C\}$ పూర్తిగా
 వాక్యాలతోనే కూడి ఉంది కనుక, \olref[syn][sat]{defn:satisfaction}
@@ -92,7 +92,7 @@ $\lforall[x][!B(x)]$ ఒక !!a{sentence} కనుక, ప్రతి చర�
 తీసుకుందాం. $c$ అనేది~$\Gamma$లో గానీ~$!C$లో గానీ సంభవించదు కనుక,
 \olref[syn][ext]{cor:extensionality-sent} వల్ల
 $\Sat{M'}{\Gamma \cup \{!C\}}$. $\Gamma \cup \{!C\} \Entails
-!B(c)$ కనుక, $\Sat{M'}{!B(c)}$. $!B(c)$ ఒక !!a{sentence} కనుక,
+!B(c)$ కనుక, $\Sat{M'}{!B(c)}$. $!B(c)$ ఒక \tetoken{వాక్యం}{!!a{sentence}} కనుక,
 \olref[syn][ass]{prop:sentence-sat-true} వల్ల
 $\Sat{M'}{!B(c)}[s]$. \olref[syn][ext]{prop:ext-formulas} వల్ల
 $\Sat{M'}{!B(x)}[s]$ అయితే, అప్పుడు మాత్రమే $\Sat{M'}{!B(c)}[s]$
@@ -131,12 +131,12 @@ $\Gamma$ సంతృప్తమైతే, అది అవిరుద్ధ�
 \begin{proof}
 విపర్యయ ప్రతిజ్ఞను నిరూపిస్తాం. $\Gamma$ అవిరుద్ధం కాదని అనుకుందాం.
 అప్పుడు $\Gamma \Proves \lfalse$; అంటే,~$\Gamma$ నుంచి $\lfalse$కు
-ఒక !!a{derivation} ఉంది. \olref{thm:soundness} వల్ల, $\Gamma$ను
+ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}} ఉంది. \olref{thm:soundness} వల్ల, $\Gamma$ను
 సంతృప్తిపరిచే ఏ
-\iftag{FOL}{!!{structure}~$\Struct{M}$ అయినా}{!!{valuation}~$\pAssign{v}$ అయినా}
+\iftag{FOL}{\tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M}$ అయినా}{\tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}~$\pAssign{v}$ అయినా}
 ~$\lfalse$ను సంతృప్తిపరచాలి. ప్రతి
-\iftag{FOL}{!!{structure}~$\Struct{M}$కు $\Sat/{M}{\lfalse}$}{
-!!{valuation}~$\pAssign{v}$కు $\pSat/{v}{\lfalse}$} కనుక, ఏ
+\iftag{FOL}{\tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M}$కు $\Sat/{M}{\lfalse}$}{
+\tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}~$\pAssign{v}$కు $\pSat/{v}{\lfalse}$} కనుక, ఏ
 \iftag{FOL}{$\Struct{M}$ కూడా}{$\pAssign{v}$ కూడా} $\Gamma$ను
 సంతృప్తిపరచలేదు; అంటే, $\Gamma$ అసంతృప్తం.
 \end{proof}

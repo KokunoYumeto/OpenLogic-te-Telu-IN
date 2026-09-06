@@ -13,15 +13,15 @@
 \begin{explain}
 సంపూర్ణతా సిద్ధాంతాన్ని నిరూపించడంలో ఒక సవాలు ఏమిటంటే, సంపూర్ణ
 అవైరుధ్య సమితి~$\Gamma$ నుంచి మనం నిర్మించే నమూనా, $\Gamma$లోని అన్ని
-పరిమాణీకృత !!{formula}sను సత్యం చేయాలి. దీనికి హామీ ఇవ్వడానికి లియాన్
+పరిమాణీకృత \tetoken{సూత్రాలను}{!!{formula}s} సత్యం చేయాలి. దీనికి హామీ ఇవ్వడానికి లియాన్
 హెన్కిన్ ప్రతిపాదించిన ఒక ఉపాయాన్ని ఉపయోగిస్తాం. సారాంశంగా, అనంత
-సంఖ్యలో !!{constant}sను చేర్చి భాషను విస్తరించడం, ఒక స్వేచ్ఛా
-!!{variable} గల ప్రతి !!{formula}~$!A(x)$కు
+సంఖ్యలో \tetoken{స్థిరసంకేతాలను}{!!{constant}s} చేర్చి భాషను విస్తరించడం, ఒక స్వేచ్ఛా
+\tetoken{చరం}{!!{variable}} గల ప్రతి \tetoken{సూత్రం}{!!{formula}}~$!A(x)$కు
 \iftag{prvEx}
       {$\lexists[x][!A(x)] \lif !A(c)$}
       {$\lnot\lforall[x][!A(x)] \lif \lnot !A(c)$}
 రూపంలోని ఒక సూత్రాన్ని చేర్చడం ఈ ఉపాయం; ఇక్కడ $c$ కొత్త
-!!{constant}sలో ఒకటి. $\Gamma$ను సంతృప్తిపరచే !!{structure}ను మనం
+\tetoken{స్థిరసంకేతాలలో}{!!{constant}s} ఒకటి. $\Gamma$ను సంతృప్తిపరచే \tetoken{నిర్మాణాన్ని}{!!{structure}} మనం
 నిర్మించినప్పుడు, కొత్త స్థిరాంకాల్లో ప్రతి
 \iftag{prvEx}
 {సత్యమైన అస్తిత్వ వాక్యానికి ఒక సాక్షి}
@@ -31,16 +31,16 @@
 
 \begin{prop}
 \ollabel{prop:lang-exp}
-$\Lang L$లో~$\Gamma$ అవైరుధ్యమై ఉండి, కొత్త !!{constant}s యొక్క ఒక
-!!a{denumerable} సమితి $\Obj d_0$, $\Obj d_1$, \dots ను~$\Lang L$కు
+$\Lang L$లో~$\Gamma$ అవైరుధ్యమై ఉండి, కొత్త \tetoken{స్థిరసంకేతాలు}{!!{constant}s} యొక్క ఒక
+\tetoken{అనంతంగా లెక్కించదగిన}{!!a{denumerable}} సమితి $\Obj d_0$, $\Obj d_1$, \dots ను~$\Lang L$కు
 చేర్చి $\Lang L'$ను పొందితే, $\Lang L'$లో కూడా~$\Gamma$
 అవైరుధ్యంగానే ఉంటుంది.
 \end{prop}
 
 \begin{defn}[సంతృప్తీకృత సమితి]
-ఒక స్వేచ్ఛా !!{variable}~$x$ గల ప్రతి !!{formula}~$!A(x) \in
-\Frm[L]$కు, కింది షరతును నెరవేర్చే !!a{constant}~$c \in \Lang{L}$
-ఉంటే, భాష~$\Lang {L}$లోని !!{formula}s సమితి~$\Gamma$ను
+ఒక స్వేచ్ఛా \tetoken{చరం}{!!{variable}}~$x$ గల ప్రతి \tetoken{సూత్రం}{!!{formula}}~$!A(x) \in
+\Frm[L]$కు, కింది షరతును నెరవేర్చే \tetoken{ఒక స్థిరసంకేతం}{!!a{constant}}~$c \in \Lang{L}$
+ఉంటే, భాష~$\Lang {L}$లోని \tetoken{సూత్రాలు}{!!{formula}s} సమితి~$\Gamma$ను
 \emph{సంతృప్తీకృతమైనది} అంటాం:
 \iftag{prvEx}
       {$\lexists[x][!A(x)] \lif !A(c) \in \Gamma$}
@@ -53,17 +53,17 @@ $\Lang L$లో~$\Gamma$ అవైరుధ్యమై ఉండి, కొత�
 \ollabel{defn:henkin-exp}
 $\Lang L'$ అనేది \olref{prop:lang-exp}లో ఉన్నట్లే ఉండనివ్వండి.
 ఒక చరరాశి ($x_i$) స్వేచ్ఛగా సంభవించే~$\Lang L'$లోని అన్ని
-!!{formula}s~$!A_i(x_i)$కు $!A_0(x_0)$, $!A_1(x_1)$, \dots అనే ఒక
-లెక్కింపును స్థిరపరచండి. !!{sentence}s~$!D_n$ను~$n$పై ఆగమనంతో
+\tetoken{సూత్రాలు}{!!{formula}s}~$!A_i(x_i)$కు $!A_0(x_0)$, $!A_1(x_1)$, \dots అనే ఒక
+లెక్కింపును స్థిరపరచండి. \tetoken{వాక్యాలు}{!!{sentence}s}~$!D_n$ను~$n$పై ఆగమనంతో
 నిర్వచిస్తాం.
 
 $!A_0(x_0)$లో సంభవించని, మనం~$\Lang{L}$కు చేర్చిన $\Obj d_i$లలో
-మొదటి !!{constant}ను $c_0$గా తీసుకోండి. $!D_0$, \dots,~$!D_{n-1}$
+మొదటి \tetoken{స్థిరసంకేతాన్ని}{!!{constant}} $c_0$గా తీసుకోండి. $!D_0$, \dots,~$!D_{n-1}$
 ఇప్పటికే నిర్వచించబడ్డాయని అనుకొని, $!D_0$, \dots,~$!D_{n-1}$లోనూ,
-$!A_n(x_n)$లోనూ సంభవించని కొత్త !!{constant}s~$\Obj d_i$లో మొదటిదాన్ని
+$!A_n(x_n)$లోనూ సంభవించని కొత్త \tetoken{స్థిరసంకేతాలు}{!!{constant}s}~$\Obj d_i$లో మొదటిదాన్ని
 $c_n$గా తీసుకోండి.
 
-ఇప్పుడు $!D_{n}$ను కింది !!{formula}గా తీసుకోండి:
+ఇప్పుడు $!D_{n}$ను కింది \tetoken{సూత్రంగా}{!!{formula}} తీసుకోండి:
 \iftag{prvEx}
 {$\lexists[x_{n}][!A_{n}(x_{n})] \lif
   !A_{n}(c_{n})$}{$\lnot\lforall[x_{n}][!A_{n}(x_{n})] \lif \lnot
@@ -78,7 +78,7 @@ $c_n$గా తీసుకోండి.
 
 \begin{proof}
 భాష~$\Lang{L}$లోని అవైరుధ్య వాక్యాల సమితి~$\Gamma$ ఇచ్చారని
-అనుకుందాం. కొత్త !!{constant}s యొక్క ఒక !!a{denumerable} సమితిని
+అనుకుందాం. కొత్త \tetoken{స్థిరసంకేతాలు}{!!{constant}s} యొక్క ఒక \tetoken{అనంతంగా లెక్కించదగిన}{!!a{denumerable}} సమితిని
 చేర్చి భాషను~$\Lang{L'}$గా విస్తరించండి. \olref{prop:lang-exp}
 ప్రకారం మరింత విస్తృతమైన ఈ భాషలోనూ~$\Gamma$ అవైరుధ్యంగానే ఉంటుంది.
 ఇంకా, $!D_i$లు \olref{defn:henkin-exp}లో ఉన్నట్లే ఉండనివ్వండి. ఇలా
@@ -104,7 +104,7 @@ $!D_n$ అనేది
 {$\lexists[x_{n}][!A_{n}(x_n)] \lif !A_{n}(c_{n})$}
 {$\lnot\lforall[x_{n}][!A_{n}(x_n)] \lif \lnot !A_{n}(c_{n})$}
 అని గుర్తుంచుకోండి; ఇక్కడ $!A_n(x_n)$ అనేది స్వేచ్ఛగా ఉన్నది
-$x_n$ మాత్రమే అయిన~$\Lang{L'}$లోని !!a{formula}. మనం~$c_n$ను
+$x_n$ మాత్రమే అయిన~$\Lang{L'}$లోని \tetoken{ఒక సూత్రం}{!!a{formula}}. మనం~$c_n$ను
 ఎంచుకున్న విధానం వల్ల (\olref{defn:henkin-exp} చూడండి), $c_n$ అనేది
 $!A_n(x_n)$లోనూ, $\Gamma_n$లోనూ సంభవించదు.
 
@@ -157,12 +157,12 @@ $\Gamma_n \cup \{ !D_n\}$ అవైరుధ్యమైనది.
 \begin{explain}
 సంతృప్తీకృతమైన \emph{సంపూర్ణ}, అవైరుధ్య సమితులకు కింది ధర్మం ఉందని
 ఇప్పుడు చూపుతాం: \iftag{prvAll}{దానిలో ఒక సార్వత్రికంగా పరిమాణీకృత
-  !!{sentence} ఉన్నప్పుడు, అప్పుడు మాత్రమే దాని అన్ని రూపాలు
+  \tetoken{వాక్యం}{!!{sentence}} ఉన్నప్పుడు, అప్పుడు మాత్రమే దాని అన్ని రూపాలు
   ఉంటాయి}{}\iftag{defAll,defEx}{}{
   మరియు }\iftag{prvAll}{దానిలో ఒక అస్తిత్వంగా పరిమాణీకృత
-  !!{sentence} ఉన్నప్పుడు, అప్పుడు మాత్రమే దాని రూపాల్లో కనీసం ఒకటి
+  \tetoken{వాక్యం}{!!{sentence}} ఉన్నప్పుడు, అప్పుడు మాత్రమే దాని రూపాల్లో కనీసం ఒకటి
   ఉంటుంది}{}. సంపూర్ణ, అవైరుధ్య, సంతృప్తీకృత సమితి నుంచి మనం
-నిర్మించే !!{structure} దానిలోని అన్ని పరిమాణీకృత వాక్యాలను సత్యం
+నిర్మించే \tetoken{నిర్మాణం}{!!{structure}} దానిలోని అన్ని పరిమాణీకృత వాక్యాలను సత్యం
 చేస్తుందని చూపడానికి దీన్ని ఉపయోగిస్తాం.
 \end{explain}
 
@@ -181,7 +181,7 @@ $\Gamma$ సంపూర్ణమైనది, అవైరుధ్యమైన
   \tagitem{prvEx}{%
     \iftag{probEx}{అభ్యాసం.}{మొదట $\lexists[x][!A(x)] \in \Gamma$
       అని అనుకుందాం. $\Gamma$ సంతృప్తీకృతమైనది కనుక, ఏదో ఒక
-      !!{constant}~$c$కు $(\lexists[x][!A(x)] \lif !A(c)) \in
+      \tetoken{స్థిరసంకేతం}{!!{constant}}~$c$కు $(\lexists[x][!A(x)] \lif !A(c)) \in
       \Gamma$. కింది ఫలితంలోని అంశం~(1), ఇంకా
       \olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-prov-in} ప్రకారం
       \tagrefs{prfAX/{fol:axd:ppr:prop:provability-lif},prfSC/{fol:seq:ppr:prop:provability-lif},prfND/{fol:ntd:ppr:prop:provability-lif},prfTab/{fol:tab:ppr:prop:provability-lif}},
@@ -198,12 +198,12 @@ $\Gamma$ సంపూర్ణమైనది, అవైరుధ్యమైన
       \Gamma$ అని అనుకుందాం. వైరుధ్యాన్ని పొందే ఉద్దేశంతో
       $\lforall[x][!A(x)] \notin \Gamma$ అని అనుకుందాం. $\Gamma$
       సంపూర్ణమైనది కనుక $\lnot\lforall[x][!A(x)] \in \Gamma$.
-      సంతృప్తీకరణ వల్ల, ఏదో ఒక !!{constant}~$c$కు
+      సంతృప్తీకరణ వల్ల, ఏదో ఒక \tetoken{స్థిరసంకేతం}{!!{constant}}~$c$కు
       \iftag{prvEx}{$(\lexists[x][\lnot !A(x)] \lif \lnot !A(c)) \in
         \Gamma$}{$(\lnot\lforall[x][!A(x)] \lif \lnot !A(c)) \in
         \Gamma$}. పరికల్పన ప్రకారం, $c$ సంవృత పదం కనుక $!A(c) \in
       \Gamma$. కానీ ఇది~$\Gamma$ను వైరుధ్యభరితం చేస్తుంది. (కింది
-      సమితి వైరుధ్యభరితమని చూపే !!{derivation}ను ఇవ్వడం అభ్యాసం:
+      సమితి వైరుధ్యభరితమని చూపే \tetoken{వ్యుత్పత్తిని}{!!{derivation}} ఇవ్వడం అభ్యాసం:
       \[
       \lnot \lforall[x][!A(x)],
       \iftag{prvEx}{\lexists[x][\lnot !A(x)] \lif \lnot

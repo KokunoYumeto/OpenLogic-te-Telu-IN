@@ -14,12 +14,12 @@
 
 సంపూర్ణతా సిద్ధాంతాన్ని ఆశ్రయించకుండా, సంపూర్ణతా సిద్ధాంతపు నిరూపణలోని
 ఆలోచనలనే ఉపయోగించి సంహతత్వ సిద్ధాంతాన్ని నేరుగా నిరూపించవచ్చు.
-సంపూర్ణతా సిద్ధాంతపు నిరూపణలో అవైరుధ్య !!{sentence}s సమితి~$\Gamma$తో
+సంపూర్ణతా సిద్ధాంతపు నిరూపణలో అవైరుధ్య \tetoken{వాక్యాలు}{!!{sentence}s} సమితి~$\Gamma$తో
 మొదలుపెట్టి, దాన్ని అవైరుధ్యమైన,\iftag{FOL}{ సంతృప్తీకృతమైన,}{}
-!!{complete} !!{sentence}s సమితి~$\Gamma^*$గా విస్తరించాం. తరువాత
+\tetoken{సంపూర్ణ}{!!{complete}} \tetoken{వాక్యాలు}{!!{sentence}s} సమితి~$\Gamma^*$గా విస్తరించాం. తరువాత
 $\Gamma^*$ నుంచి నిర్మించిన \iftag{FOL}{పద
-  నమూనా~$\Struct{M(\Gamma^*)}$}{!!{valuation}~$\pAssign{v(\Gamma^*)}$}
-లో~$\Gamma$లోని అన్ని !!{sentence}s సత్యమని చూపాం; కాబట్టి $\Gamma$
+  నమూనా~$\Struct{M(\Gamma^*)}$}{\tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}~$\pAssign{v(\Gamma^*)}$}
+లో~$\Gamma$లోని అన్ని \tetoken{వాక్యాలు}{!!{sentence}s} సత్యమని చూపాం; కాబట్టి $\Gamma$
 సంతృప్తిపరచదగినది.
 
 వాక్యాల పరిమితంగా సంతృప్తిపరచదగిన సమితి సంతృప్తిపరచదగినదని చూపడానికి
@@ -29,7 +29,7 @@ $\Gamma^*$ నుంచి నిర్మించిన \iftag{FOL}{పద
 
 \begin{prop}
 \ollabel{prop:fsat-ccs}
-$\Gamma$ !!{complete}, పరిమితంగా సంతృప్తిపరచదగినది అనుకుందాం. అప్పుడు:
+$\Gamma$ \tetoken{సంపూర్ణ}{!!{complete}}, పరిమితంగా సంతృప్తిపరచదగినది అనుకుందాం. అప్పుడు:
 \begin{enumerate}
 \tagitem{prvAnd}{$(!A \land !B) \in \Gamma$ అయినప్పుడు, అప్పుడు
   మాత్రమే $!A \in \Gamma$, $!B \in \Gamma$ రెండూ.}{}
@@ -67,7 +67,7 @@ $\Gamma$ !!{complete}, పరిమితంగా సంతృప్తిప�
 \tagprob{FOL}
 \begin{prob}
 \olref[fol][com][cpd]{lem:fsat-henkin}ను నిరూపించండి. (సూచన:
-$\Gamma_n$ పరిమితంగా సంతృప్తిపరచదగినదైతే, !!{derivation}s లేదా
+$\Gamma_n$ పరిమితంగా సంతృప్తిపరచదగినదైతే, \tetoken{వ్యుత్పత్తులు}{!!{derivation}s} లేదా
 అవైరుధ్యాన్ని ఏమాత్రం ఆశ్రయించకుండా $\Gamma_n \cup \{!D_n\}$ కూడా
 పరిమితంగా సంతృప్తిపరచదగినదని చూపడమే కీలకమైన అడుగు.)
 \end{prob}
@@ -94,7 +94,7 @@ $\Gamma$ సంపూర్ణమైనది, పరిమితంగా స�
 
 \begin{lem}
 \ollabel{lem:fsat-lindenbaum} ప్రతి పరిమితంగా సంతృప్తిపరచదగిన
-సమితి~$\Gamma$ను !!a{complete}, పరిమితంగా సంతృప్తిపరచదగిన
+సమితి~$\Gamma$ను \tetoken{ఒక సంపూర్ణ}{!!a{complete}}, పరిమితంగా సంతృప్తిపరచదగిన
 సమితి~$\Gamma^*$గా విస్తరించవచ్చు.
 \end{lem}
 
@@ -124,7 +124,7 @@ $\Gamma_n$ పరిమితంగా సంతృప్తిపరచదగ�
 \begin{proof}
 $\Gamma$ సంతృప్తిపరచదగినదైతే, అన్ని $!A \in \Gamma$లకు
 $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ అయ్యే
-\iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+\iftag{FOL}{\tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct{M}$}{\tetoken{ఒక సత్యమూల్య కేటాయింపు}{!!a{valuation}}~$\pAssign{v}$}
 ఉంటుంది. ఈ \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} సహజంగానే
 ~$\Gamma$లోని ప్రతి పరిమిత ఉపసమితిని కూడా సంతృప్తిపరుస్తుంది; కాబట్టి
 $\Gamma$ పరిమితంగా సంతృప్తిపరచదగినది.
@@ -133,13 +133,13 @@ $\Gamma$ పరిమితంగా సంతృప్తిపరచదగి�
   \olref{lem:fsat-henkin} ప్రకారం, $\Gamma' \supseteq \Gamma$ అయ్యే
   పరిమితంగా సంతృప్తిపరచదగిన, సంతృప్తీకృత సమితి ఉంది.}{}
 \olref{lem:fsat-lindenbaum} ప్రకారం,
-$\iftag{FOL}{\Gamma'}{\Gamma}$ను !!a{complete}, పరిమితంగా
+$\iftag{FOL}{\Gamma'}{\Gamma}$ను \tetoken{ఒక సంపూర్ణ}{!!a{complete}}, పరిమితంగా
 సంతృప్తిపరచదగిన సమితి~$\Gamma^*$గా విస్తరించవచ్చు\iftag{FOL}{;
   $\Gamma^*$ ఇంకా సంతృప్తీకృతంగానే ఉంటుంది}{}. పద
-\iftag{FOL}{నమూనా~$\Struct{M(\Gamma^*)}$}{!!{valuation}~$\pAssign{v(\Gamma^*)}$}
+\iftag{FOL}{నమూనా~$\Struct{M(\Gamma^*)}$}{\tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}~$\pAssign{v(\Gamma^*)}$}
 ను \olref[mod]{defn:termmodel}లో ఉన్నట్లుగా నిర్మించండి.\iftag{FOL}{
 \olref[mod]{prop:quant-termmodel} అనేది $\Gamma^*$ అవైరుధ్యమనే
-వాస్తవంపై (లేదా, నిజానికి అది !!{complete} లేదా సంతృప్తీకృతమనే
+వాస్తవంపై (లేదా, నిజానికి అది \tetoken{సంపూర్ణ}{!!{complete}} లేదా సంతృప్తీకృతమనే
 వాస్తవంపై) ఆధారపడలేదు; $\Struct{M(\Gamma^*)}$ ఆవరితమనే వాస్తవంపైనే
 ఆధారపడిందని గమనించండి.}{} సత్య ఉపసిద్ధాంతం
 (\olref[mod]{lem:truth}) యొక్క నిరూపణలో

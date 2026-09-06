@@ -22,9 +22,9 @@ $\Gamma \Proves \lforall[x][!A(x)]$.
 
 \begin{proof}
 ఏదో పరిమిత $\Gamma_0 \subseteq \Gamma$కు $\Gamma_0 \Sequent !A(c)$
-యొక్క $\Log{LK}$-!!{derivation}ను $\pi_0$ అందాం. ఒక
+యొక్క $\Log{LK}$-\tetoken{వ్యుత్పత్తిని}{!!{derivation}} $\pi_0$ అందాం. ఒక
 $\RightR{\lforall}$ నిగమనాన్ని చేరిస్తే
-$\Gamma_0 \Sequent \lforall[x][!A(x)]$ యొక్క !!a{derivation} వస్తుంది.
+$\Gamma_0 \Sequent \lforall[x][!A(x)]$ యొక్క \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} వస్తుంది.
 $c$ అనేది $\Gamma$లో గానీ $!A(x)$లో గానీ కనిపించదు కనుక ఐగెన్
 చరరాశి షరతు తీరుతుంది.
 \end{proof}
@@ -40,14 +40,14 @@ $c$ అనేది $\Gamma$లో గానీ $!A(x)$లో గానీ క�
 \begin{proof}
 \begin{tagenumerate}{prvEx,prvAll}
 \tagitem{prvEx}{$!A(t) \Sequent \lexists[x][!A(x)]$ సీక్వెంట్
-  !!{derivable}:
+  \tetoken{వ్యుత్పాదించదగిన}{!!{derivable}}:
   \begin{prooftree}
     \Axiom$!A(t) \fCenter !A(t)$
     \RightLabel{\RightR{\lexists}}
     \UnaryInf$!A(t) \fCenter \lexists[x][!A(x)]$
     \end{prooftree}}{}
 \tagitem{prvAll}{$\lforall[x][!A(x)] \Sequent !A(t)$ సీక్వెంట్
-  !!{derivable}:
+  \tetoken{వ్యుత్పాదించదగిన}{!!{derivable}}:
   \begin{prooftree}
     \Axiom$!A(t) \fCenter !A(t)$
     \RightLabel{\LeftR{\lforall}}

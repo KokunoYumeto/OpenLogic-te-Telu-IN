@@ -14,45 +14,45 @@
 
 \begin{explain}
 \iftag{FOL}{ప్రస్తుతం మనకు~$\eq$ గురించి ఆందోళన లేదు; అంటే,
-  $\eq$ను కలిగి లేని అవైరుధ్య !!{sentence}s సమితి~$\Gamma$
+  $\eq$ను కలిగి లేని అవైరుధ్య \tetoken{వాక్యాలు}{!!{sentence}s} సమితి~$\Gamma$
   సంతృప్తిపరచదగినదని మాత్రమే చూపాలనుకుంటున్నాం. మొదట~$\Gamma$ను
-  అవైరుధ్యమైన, !!{complete}, సంతృప్తీకృత సమితి~$\Gamma^*$గా
+  అవైరుధ్యమైన, \tetoken{సంపూర్ణ}{!!{complete}}, సంతృప్తీకృత సమితి~$\Gamma^*$గా
   విస్తరిస్తాం. ఈ సందర్భంలో నమూనా~$\Struct{M(\Gamma^*)}$ నిర్వచనం
   సరళమైనది: $\Lang{L'}$లోని సంవృత పదాల సమితిని ప్రదేశంగా తీసుకుంటాం.
-  ప్రతి !!{constant}ను దానికే నిర్దేశిస్తాం; ఇంకా సాధారణంగా, ప్రతి
+  ప్రతి \tetoken{స్థిరసంకేతాన్ని}{!!{constant}} దానికే నిర్దేశిస్తాం; ఇంకా సాధారణంగా, ప్రతి
   సంవృత పదం~$t$కు $\Value{t}{M(\Gamma^*)} = t$ అయ్యేలా చూస్తాం.
-  ఒక పరమాణు !!{sentence} $\Struct{M(\Gamma^*)}$లో సత్యమవడం, అది
-  ~$\Gamma^*$లో ఉండటానికి సరిసమానమయ్యేలా !!{predicate}sకు విస్తరణలను
-  నిర్దేశిస్తాం. ఇది~$\Gamma^*$లోని అన్ని పరమాణు !!{sentence}sను
+  ఒక పరమాణు \tetoken{వాక్యం}{!!{sentence}} $\Struct{M(\Gamma^*)}$లో సత్యమవడం, అది
+  ~$\Gamma^*$లో ఉండటానికి సరిసమానమయ్యేలా \tetoken{విధేయ సంకేతాలకు}{!!{predicate}s} విస్తరణలను
+  నిర్దేశిస్తాం. ఇది~$\Gamma^*$లోని అన్ని పరమాణు \tetoken{వాక్యాలను}{!!{sentence}s}
   $\Struct{M(\Gamma^*)}$లో సత్యం చేస్తుందని స్పష్టం. మనం మొదలుపెట్టే
   $\Gamma^*$ అవైరుధ్యంగా, సంపూర్ణంగా, సంతృప్తీకృతంగా ఉంటే మిగిలినవి
   కూడా సత్యమవుతాయి.}{ఇప్పుడు ప్రతి $!A \in \Gamma$ను సత్యం చేసే
-  !!a{valuation}ను నిర్వచించడానికి సిద్ధంగా ఉన్నాం. దీనికోసం మొదట
+  \tetoken{ఒక సత్యమూల్య కేటాయింపును}{!!a{valuation}} నిర్వచించడానికి సిద్ధంగా ఉన్నాం. దీనికోసం మొదట
   లిండెన్‌బామ్ ఉపసిద్ధాంతాన్ని వర్తింపజేస్తాం: సంపూర్ణ అవైరుధ్య
   $\Gamma^* \supseteq \Gamma$ను పొందుతాం.
-  ~$\Gamma^*$లోని !!{propositional variable}s
+  ~$\Gamma^*$లోని \tetoken{ప్రతిజ్ఞావాక్య చరాలు}{!!{propositional variable}s}
   ~$\pAssign v(\Gamma^*)$ను నిర్ణయించేలా ఉంచుతాం.}
 \end{explain}
 
 \iftag{FOL}{%
 \begin{defn}[పద నమూనా]
 \ollabel{defn:termmodel}
-భాష~$\Lang L$లోని !!{sentence}s యొక్క !!a{complete}, అవైరుధ్య,
+భాష~$\Lang L$లోని \tetoken{వాక్యాలు}{!!{sentence}s} యొక్క \tetoken{ఒక సంపూర్ణ}{!!a{complete}}, అవైరుధ్య,
 సంతృప్తీకృత సమితి~$\Gamma^*$ ఉండనివ్వండి. $\Gamma^*$ యొక్క
 \emph{పద నమూనా}~$\Struct M(\Gamma^*)$ కింది విధంగా నిర్వచించిన
-!!{structure}:
+\tetoken{నిర్మాణం}{!!{structure}}:
 \begin{enumerate}
-\item !!{domain}~$\Domain{M(\Gamma^*)}$ అనేది~$\Lang L$లోని అన్ని
+\item \tetoken{వ్యక్తి క్షేత్రం}{!!{domain}}~$\Domain{M(\Gamma^*)}$ అనేది~$\Lang L$లోని అన్ని
   సంవృత పదాల సమితి.
-\item !!a{constant}~$c$ యొక్క అర్థవివరణ $c$ అదే:
+\item \tetoken{ఒక స్థిరసంకేతం}{!!a{constant}}~$c$ యొక్క అర్థవివరణ $c$ అదే:
   $\Assign{c}{M(\Gamma^*)} = c$.
 \item సంవృత పదాలు $t_1$, \dots, $t_n$ను ఆర్గ్యుమెంట్లుగా తీసుకున్నప్పుడు
   సంవృత పదం $f(t_1, \dots, t_n)$ను విలువగా ఇచ్చే ప్రమేయాన్ని
-  !!{function}~$f$కు నిర్దేశిస్తాం:
+  \tetoken{ప్రమేయ సంకేతం}{!!{function}}~$f$కు నిర్దేశిస్తాం:
 \[
 \Assign{f}{M(\Gamma^*)}(t_1, \dots, t_n) = f(t_1,\dots, t_n)
 \]
-\item $R$ ఒక $n$-స్థాన !!{predicate} అయితే,
+\item $R$ ఒక $n$-స్థాన \tetoken{విధేయ సంకేతం}{!!{predicate}} అయితే,
   \[
   \tuple{t_1, \dots,
   t_n} \in \Assign{R}{M(\Gamma^*)} \text{ iff } \Atom{R}{t_1, \dots,
@@ -63,7 +63,7 @@
 }{%
 \begin{defn}
 \ollabel{defn:termmodel}
-$\Gamma^*$ ఒక సంపూర్ణ అవైరుధ్య !!{formula}s సమితి అనుకుందాం. అప్పుడు
+$\Gamma^*$ ఒక సంపూర్ణ అవైరుధ్య \tetoken{సూత్రాలు}{!!{formula}s} సమితి అనుకుందాం. అప్పుడు
 \[
 \pAssign v(\Gamma^*)(p) = \begin{cases}
   \True & \text{if $p \in \Gamma^*$}\\
@@ -88,9 +88,9 @@ $t$ను ఏ పదమైనా అన్నట్లుగా వదిలి�
 \end{lem}
 \begin{proof}
 నిరూపణ $t$పై ఆగమనం ద్వారా సాగుతుంది. ఆధార సందర్భంలో $t$ ఒక
-!!a{constant}; అది పద నమూనా నిర్వచనం నుంచి నేరుగా వస్తుంది. ఆగమన
+\tetoken{స్థిరసంకేతం}{!!a{constant}}; అది పద నమూనా నిర్వచనం నుంచి నేరుగా వస్తుంది. ఆగమన
 అడుగులో $t_1, \ldots, t_n$లు $\Value{t_i}{M(\Gamma^*)} = t_i$ అయ్యే
-సంవృత పదాలని, $f$ ఒక $n$-స్థాన !!{function} అని అనుకుందాం. అప్పుడు
+సంవృత పదాలని, $f$ ఒక $n$-స్థాన \tetoken{ప్రమేయ సంకేతం}{!!{function}} అని అనుకుందాం. అప్పుడు
 \begin{align*}
 \Value{f(t_1,\ldots,t_n)}{M(\Gamma^*)} &= \Assign{f}{M(\Gamma^*)}(\Value{t_1}
  {M(\Gamma^*)},
@@ -104,13 +104,13 @@ $t$ను ఏ పదమైనా అన్నట్లుగా వదిలి�
 
 \iftag{FOL}{%
 \begin{explain}
-  \iftag{prvEx}{ఏదైనా !!^a{structure}~$\Struct{M}$, అస్తిత్వంగా
-    పరిమాణీకృత !!{sentence}~$\lexists[x][!A(x)]$ను సత్యం చేసినా, అది
+  \iftag{prvEx}{ఏదైనా \tetoken{ఒక నిర్మాణం}{!!^a{structure}}~$\Struct{M}$, అస్తిత్వంగా
+    పరిమాణీకృత \tetoken{వాక్యం}{!!{sentence}}~$\lexists[x][!A(x)]$ను సత్యం చేసినా, అది
     సత్యం చేసే రూపం~$!A(t)$ ఏదీ లేకపోవచ్చు.}{}
-  \iftag{prvAll}{ఏదైనా !!^a{structure}~$\Struct{M}$, సార్వత్రికంగా
-    పరిమాణీకృత !!{sentence}~$\lforall[x][!A(x)]$ యొక్క అన్ని
+  \iftag{prvAll}{ఏదైనా \tetoken{ఒక నిర్మాణం}{!!^a{structure}}~$\Struct{M}$, సార్వత్రికంగా
+    పరిమాణీకృత \tetoken{వాక్యం}{!!{sentence}}~$\lforall[x][!A(x)]$ యొక్క అన్ని
     రూపాలు~$!A(t)$ను సత్యం చేసినా, $\lforall[x][!A(x)]$ను సత్యం
-    చేయకపోవచ్చు.}{} సాధారణంగా~$\Domain{M}$లోని ప్రతి !!{element}
+    చేయకపోవచ్చు.}{} సాధారణంగా~$\Domain{M}$లోని ప్రతి \tetoken{మూలకం}{!!{element}}
   ఒక సంవృత పదం విలువ కాకపోవడమే దీనికి కారణం ($\Struct{M}$ ఆవరితమై
   ఉండకపోవచ్చు). సంతృప్తి సంబంధాన్ని చరరాశి నిర్దేశాల ద్వారా
   నిర్వచించడానికి ఇదే కారణం. అయితే మన పద నమూనా~$\Struct{M(\Gamma^*)}$కు
@@ -188,7 +188,7 @@ $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!A}$ అయినప్ప�
 \tagitem{prvTrue}{\indcase{!A}{\ltrue}
   {$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\ltrue}$
     అని సంతృప్తి నిర్వచనం చెబుతుంది. మరోవైపు, $\Gamma^*$ అవైరుధ్యమైనది,
-    !!{complete}, ఇంకా $\Gamma^* \Proves \ltrue$ కనుక $\ltrue \in
+    \tetoken{సంపూర్ణ}{!!{complete}}, ఇంకా $\Gamma^* \Proves \ltrue$ కనుక $\ltrue \in
     \Gamma^*$.}}{}
 
 \tagitem{FOL}{\indcase{!A}{R(t_1, \dots, t_n)}
@@ -209,7 +209,7 @@ $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!A}$ అయినప్ప�
     (సంతృప్తి నిర్వచనం ప్రకారం). ఆగమన పరికల్పన ప్రకారం,
     $\iftag{FOL}{\Sat/{M(\Gamma^*)}{!B}}{\pSat/{v(\Gamma^*)}{!B}}$
     అయినప్పుడు, అప్పుడు మాత్రమే $!B \notin \Gamma^*$. $\Gamma^*$
-    అవైరుధ్యమైనది, !!{complete} కనుక $!B \notin \Gamma^*$ అయినప్పుడు,
+    అవైరుధ్యమైనది, \tetoken{సంపూర్ణ}{!!{complete}} కనుక $!B \notin \Gamma^*$ అయినప్పుడు,
     అప్పుడు మాత్రమే $\lnot !B \in \Gamma^*$.}}{}
 
 \tagitem{prvAnd}{%

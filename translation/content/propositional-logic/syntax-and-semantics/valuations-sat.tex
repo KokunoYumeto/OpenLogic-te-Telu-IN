@@ -10,16 +10,16 @@
 
 \olsection{\usetoken{P}{valuation} మరియు సంతృప్తి}
 
-\begin{defn}[!!^{valuation}s]
+\begin{defn}[\tetoken{సత్యమూల్య కేటాయింపులు}{!!^{valuation}s}]
 “సత్యం,” “అసత్యం” అనే రెండు సత్యమూల్యాల సమితి
 $\{\True, \False\}$ అనుకుందాం. $\Lang{L_0}$కు ఒక
-\emph{!!{valuation}} అంటే భాషలోని !!{propositional variable}sకు
+\emph{\tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}} అంటే భాషలోని \tetoken{ప్రతిజ్ఞావాక్య చరాలకు}{!!{propositional variable}s}
 $\True$ లేదా $\False$ను కేటాయించే ప్రమేయం~$\pAssign{v}$; అంటే
 $\pAssign{v} \colon \PVar \to \{\True, \False \}$.
 \end{defn}
 
 \begin{defn}
-  ఒక !!a{valuation}~$\pAssign{v}$ ఇచ్చినప్పుడు, మూల్యాంకన ప్రమేయం
+  ఒక \tetoken{సత్యమూల్య కేటాయింపు}{!!a{valuation}}~$\pAssign{v}$ ఇచ్చినప్పుడు, మూల్యాంకన ప్రమేయం
   $\pValue{v} \colon \Frm[L_0] \to \{\True, \False \}$ను కింది
   విధంగా ఆగమనాత్మకంగా నిర్వచించండి:
   \begin{align*}
@@ -133,10 +133,10 @@ $\Lang{L_0}$కు $\diamondsuit$ అనే త్రిస్థాన సం�
 
 \begin{thm}[స్థానిక నిర్ణయితత్వం]
 \ollabel{thm:LocalDetermination} $\pAssign{v_1}$, $\pAssign{v_2}$ అనే
-!!{valuation}s, $!A$లో సంభవించే !!{propositional
-variable}sపై
+\tetoken{సత్యమూల్య కేటాయింపులు}{!!{valuation}s}, $!A$లో సంభవించే \tetoken{ప్రతిజ్ఞావాక్య చరాలపై}{!!{propositional
+variable}s}
 ఏకీభవిస్తాయని అనుకుందాం; అంటే, ఆ నిర్దిష్ట
-!!{formula}~$!A$లో $\Obj p_n$ సంభవించినప్పుడల్లా
+\tetoken{సూత్రం}{!!{formula}}~$!A$లో $\Obj p_n$ సంభవించినప్పుడల్లా
 $\pAssign{v_1}(\Obj p_n) = \pAssign{v_2}(\Obj p_n)$. అప్పుడు
 $\pValue{v_1}$, $\pValue{v_2}$లు $!A$పై కూడా ఏకీభవిస్తాయి; అంటే
 $\pValue{v_1}(!A) = \pValue{v_2}(!A)$.
@@ -152,8 +152,8 @@ $!A$పై ఆగమనం ద్వారా.
 \end{proof}
 
 \begin{defn}[సంతృప్తి]
-\ollabel{defn:satisfaction} \emph{ఒక !!a{formula}~$!A$ను
-  !!a{valuation}~$\pAssign{v}$ సంతృప్తిపరచడం} అనే భావన
+\ollabel{defn:satisfaction} \emph{ఒక \tetoken{సూత్రం}{!!a{formula}}~$!A$ను
+  \tetoken{ఒక సత్యమూల్య కేటాయింపు}{!!a{valuation}}~$\pAssign{v}$ సంతృప్తిపరచడం} అనే భావన
   $\pSat{v}{!A}$ను కింది విధంగా ఆగమనాత్మకంగా నిర్వచించవచ్చు.
   (“$\pSat{v}{!A}$ కాదు” అని సూచించడానికి $\pSat/{v}{!A}$ అని
   రాస్తాం.)
@@ -191,7 +191,7 @@ $!A$పై ఆగమనం ద్వారా.
     $\pSat{v}{!B}$, $\pSat{v}{!C}$ రెండూ కాకపోవడం జరిగినప్పుడూ,
     అప్పుడు మాత్రమే.}}{}
 \end{enumerate}
-$\Gamma$ ఒక !!{formula}s సమితి అయితే, $\pSat{v}{\Gamma}$ కావడం,
+$\Gamma$ ఒక \tetoken{సూత్రాలు}{!!{formula}s} సమితి అయితే, $\pSat{v}{\Gamma}$ కావడం,
 ప్రతి~$!A \in \Gamma$కు $\pSat{v}{!A}$ అయినప్పుడూ, అప్పుడు మాత్రమే.
 \end{defn}
 

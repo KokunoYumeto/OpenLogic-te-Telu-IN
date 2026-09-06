@@ -8,30 +8,30 @@
 
 \olfileid{pl}{syn}{fml}
 
-\olsection{ప్రవచన \usetoken{P}{formula}}
+\olsection{ప్రతిజ్ఞావాక్య \usetoken{P}{formula}}
 
-ప్రవచన తర్కంలోని !!^{formula}sను \emph{!!{propositional
-    variable}s}\iftag{prvFalse}{\iftag{prvTrue}{,}{ మరియు} ప్రవచన
+ప్రతిజ్ఞావాక్యాత్మక తర్కంలోని \tetoken{సూత్రాలను}{!!^{formula}s} \emph{\tetoken{ప్రతిజ్ఞావాక్య చరాలు}{!!{propositional
+    variable}s}}\iftag{prvFalse}{\iftag{prvTrue}{,}{ మరియు} ప్రతిజ్ఞావాక్య
   స్థిరాంకం~$\lfalse$}{}\iftag{prvTrue}{\iftag{prvFalse}{
-    మరియు}{} ప్రవచన స్థిరాంకం~$\ltrue$}{} నుంచి \emph{తార్కిక
+    మరియు}{} ప్రతిజ్ఞావాక్య స్థిరాంకం~$\ltrue$}{} నుంచి \emph{తార్కిక
   సంయోజకాలను} ఉపయోగించి నిర్మిస్తాం.
 
 \begin{enumerate}
-\item !!{propositional variable}s $\Obj p_0$, $\Obj p_1$, \dots గల
-  !!^a{denumerable} సమితి~$\PVar$
-\tagitem{prvFalse}{!!{falsity} కోసం ప్రవచన స్థిరాంకం~$\lfalse$.}{}
-\tagitem{prvTrue}{!!{truth} కోసం ప్రవచన స్థిరాంకం~$\ltrue$.}{}
+\item \tetoken{ప్రతిజ్ఞావాక్య చరాలు}{!!{propositional variable}s} $\Obj p_0$, $\Obj p_1$, \dots గల
+  \tetoken{ఒక అనంతంగా లెక్కించదగిన}{!!^a{denumerable}} సమితి~$\PVar$
+\tagitem{prvFalse}{\tetoken{అసత్యం}{!!{falsity}} కోసం ప్రతిజ్ఞావాక్య స్థిరాంకం~$\lfalse$.}{}
+\tagitem{prvTrue}{\tetoken{సత్యం}{!!{truth}} కోసం ప్రతిజ్ఞావాక్య స్థిరాంకం~$\ltrue$.}{}
 \item తార్కిక సంయోజకాలు:
   \startycommalist
   \iftag{prvNot}{\ycomma $\lnot$ (నిషేధం)}{}%
   \iftag{prvAnd}{\ycomma $\land$ (సంయోగం)}{}%
   \iftag{prvOr}{\ycomma $\lor$ (వికల్పం)}{}%
-  \iftag{prvIf}{\ycomma $\lif$ (!!{conditional})}{}%
-  \iftag{prvIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (\tetoken{సోపాధికం}{!!{conditional}})}{}%
+  \iftag{prvIff}{\ycomma $\liff$ (\tetoken{ద్విసోపాధికం}{!!{biconditional}})}{}%
 \item విరామచిహ్నాలు: (, ), మరియు కామా.
 \end{enumerate}
 
-ప్రవచన తర్కంలోని ఈ భాషను $\Lang L_0$తో సూచిస్తాం.
+ప్రతిజ్ఞావాక్యాత్మక తర్కంలోని ఈ భాషను $\Lang L_0$తో సూచిస్తాం.
 
 \iftag{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}{%
 పైన పరిచయం చేసిన ప్రాథమిక సంయోజకాలతో పాటు కింది
@@ -40,10 +40,10 @@
   \iftag{defNot}{\ycomma $\lnot$ (నిషేధం)}{}%
   \iftag{defAnd}{\ycomma $\land$ (సంయోగం)}{}%
   \iftag{defOr}{\ycomma $\lor$ (వికల్పం)}{}%
-  \iftag{defIf}{\ycomma $\lif$ (!!{conditional})}{}%
-  \iftag{defIff}{\ycomma $\liff$ (!!{biconditional})}{}%
-  \iftag{defFalse}{\ycomma $\lfalse$ (!!{falsity})}{}%
-  \iftag{defTrue}{\ycomma $\ltrue$ (!!{truth})}{}.
+  \iftag{defIf}{\ycomma $\lif$ (\tetoken{సోపాధికం}{!!{conditional}})}{}%
+  \iftag{defIff}{\ycomma $\liff$ (\tetoken{ద్విసోపాధికం}{!!{biconditional}})}{}%
+  \iftag{defFalse}{\ycomma $\lfalse$ (\tetoken{అసత్యం}{!!{falsity}})}{}%
+  \iftag{defTrue}{\ycomma $\ltrue$ (\tetoken{సత్యం}{!!{truth}})}{}.
 }{}
 \sourcecorrection{OLTEPLSYN-001}{ఆంగ్ల మూలంలోని చివరి defTrue ట్యాగు
 పరీక్షకు ఖాళీ అసత్య శాఖ రాకముందే బయటి ట్యాగు సమూహపు ముగింపు కుండలీకరణ
@@ -82,51 +82,51 @@ $\supset$.
 
 \begin{defn}[సూత్రం]
 \ollabel{defn:formulas}
-ప్రవచన తర్కంలోని \emph{!!{formula}s} సమితి~$\Frm[L_0]$ను కింది
+ప్రతిజ్ఞావాక్యాత్మక తర్కంలోని \emph{\tetoken{సూత్రాలు}{!!{formula}s}} సమితి~$\Frm[L_0]$ను కింది
 విధంగా ఆగమనాత్మకంగా నిర్వచిస్తాం:
 \begin{enumerate}
-\tagitem{prvFalse}{$\lfalse$ ఒక పరమాణు !!{formula}.}{}
+\tagitem{prvFalse}{$\lfalse$ ఒక పరమాణు \tetoken{సూత్రం}{!!{formula}}.}{}
 
-\tagitem{prvTrue}{$\ltrue$ ఒక పరమాణు !!{formula}.}{}
+\tagitem{prvTrue}{$\ltrue$ ఒక పరమాణు \tetoken{సూత్రం}{!!{formula}}.}{}
 
-\item ప్రతి !!{propositional variable}~$\Obj p_i$ ఒక పరమాణు
-  !!{formula}.
+\item ప్రతి \tetoken{ప్రతిజ్ఞావాక్య చరం}{!!{propositional variable}}~$\Obj p_i$ ఒక పరమాణు
+  \tetoken{సూత్రం}{!!{formula}}.
 
-\tagitem{prvNot}{$!A$ ఒక !!a{formula} అయితే, $\lnot !A$ ఒక
-  !!a{formula}.}{}
+\tagitem{prvNot}{$!A$ ఒక \tetoken{సూత్రం}{!!a{formula}} అయితే, $\lnot !A$ ఒక
+  \tetoken{సూత్రం}{!!a{formula}}.}{}
 
-\tagitem{prvAnd}{$!A$, $!B$లు !!{formula}s అయితే, $(!A \land
-  !B)$ ఒక !!a{formula}.}{}
+\tagitem{prvAnd}{$!A$, $!B$లు \tetoken{సూత్రాలు}{!!{formula}s} అయితే, $(!A \land
+  !B)$ ఒక \tetoken{సూత్రం}{!!a{formula}}.}{}
 
-\tagitem{prvOr}{$!A$, $!B$లు !!{formula}s అయితే, $(!A \lor !B)$
-  ఒక !!a{formula}.}{}
+\tagitem{prvOr}{$!A$, $!B$లు \tetoken{సూత్రాలు}{!!{formula}s} అయితే, $(!A \lor !B)$
+  ఒక \tetoken{సూత్రం}{!!a{formula}}.}{}
 
-\tagitem{prvIf}{$!A$, $!B$లు !!{formula}s అయితే, $(!A \lif !B)$
-  ఒక !!a{formula}.}{}
+\tagitem{prvIf}{$!A$, $!B$లు \tetoken{సూత్రాలు}{!!{formula}s} అయితే, $(!A \lif !B)$
+  ఒక \tetoken{సూత్రం}{!!a{formula}}.}{}
 
-\tagitem{prvIff}{$!A$, $!B$లు !!{formula}s అయితే, $(!A \liff !B)$
-  ఒక !!a{formula}.}{}
+\tagitem{prvIff}{$!A$, $!B$లు \tetoken{సూత్రాలు}{!!{formula}s} అయితే, $(!A \liff !B)$
+  ఒక \tetoken{సూత్రం}{!!a{formula}}.}{}
 
-\tagitem{limitClause}{మరేదీ !!a{formula} కాదు.}{}
+\tagitem{limitClause}{మరేదీ \tetoken{ఒక సూత్రం}{!!a{formula}} కాదు.}{}
 \end{enumerate}
 \end{defn}
 
 \begin{explain}
-!!{formula}s నిర్వచనం ఒక \emph{ఆగమనాత్మక నిర్వచనం}. సారాంశంగా,
-!!{formula}s సమితిని అనంత దశల్లో నిర్మిస్తాం. మొదటి దశలో అన్ని
+\tetoken{సూత్రాలు}{!!{formula}s} నిర్వచనం ఒక \emph{ఆగమనాత్మక నిర్వచనం}. సారాంశంగా,
+\tetoken{సూత్రాలు}{!!{formula}s} సమితిని అనంత దశల్లో నిర్మిస్తాం. మొదటి దశలో అన్ని
 పరమాణు సూత్రాలూ సూత్రాలని ప్రకటిస్తాం; ఇది నిర్వచనంలోని మొదటి కొన్ని
 సందర్భాలకు, అంటే
 \iftag{prvTrue}{$\ltrue$, }{}%
 \iftag{prvFalse}{$\lfalse$, }{}%
-$\Obj p_i$ సందర్భాలకు సరిపోతుంది. కాబట్టి “పరమాణు !!{formula}”
-అంటే ఈ రూపాల్లో ఏదో ఒక రూపంలో ఉన్న !!{formula}.
+$\Obj p_i$ సందర్భాలకు సరిపోతుంది. కాబట్టి “పరమాణు \tetoken{సూత్రం}{!!{formula}}”
+అంటే ఈ రూపాల్లో ఏదో ఒక రూపంలో ఉన్న \tetoken{సూత్రం}{!!{formula}}.
 
-నిర్వచనంలోని మిగతా సందర్భాలు, అప్పటికే నిర్మించిన !!{formula}s
-నుంచి కొత్త !!{formula}sను నిర్మించే నియమాలను ఇస్తాయి. రెండవ దశలో
-వాటిని ఉపయోగించి పరమాణు !!{formula}s నుంచి !!{formula}sను
+నిర్వచనంలోని మిగతా సందర్భాలు, అప్పటికే నిర్మించిన \tetoken{సూత్రాలు}{!!{formula}s}
+నుంచి కొత్త \tetoken{సూత్రాలను}{!!{formula}s} నిర్మించే నియమాలను ఇస్తాయి. రెండవ దశలో
+వాటిని ఉపయోగించి పరమాణు \tetoken{సూత్రాలు}{!!{formula}s} నుంచి \tetoken{సూత్రాలను}{!!{formula}s}
 నిర్మించవచ్చు. మూడవ దశలో పరమాణు సూత్రాలు, రెండవ దశలో పొందిన
 సూత్రాల నుంచి కొత్త సూత్రాలను నిర్మిస్తాం; ఇలాగే కొనసాగిస్తాం.
-అటువంటి ఏదో ఒక దశలో చివరికి నిర్మితమయ్యేదే !!{formula}; మరేదీ
+అటువంటి ఏదో ఒక దశలో చివరికి నిర్మితమయ్యేదే \tetoken{సూత్రం}{!!{formula}}; మరేదీ
 సూత్రం కాదు.
 \end{explain}
 
@@ -143,11 +143,11 @@ $(!B \ast !C)$ అనే సూత్రాన్ని రాసేటప్ప
 
 \tagitem{defTrue}{$\ltrue$ అనేది
   \iftag{prvFalse}{$\lnot\lfalse$}{ఏదో స్థిర పరమాణు
-    !!{formula}~$!A$కు $(!A \lor \lnot !A)$}కు సంక్షిప్త రూపం.}{}
+    \tetoken{సూత్రం}{!!{formula}}~$!A$కు $(!A \lor \lnot !A)$}కు సంక్షిప్త రూపం.}{}
 
 \tagitem{defFalse}{$\lfalse$ అనేది
   \iftag{prvTrue}{$\lnot\ltrue$}{ఏదో స్థిర పరమాణు
-    !!{formula}~$!A$కు $(!A \land \lnot !A)$}కు సంక్షిప్త రూపం.}{}
+    \tetoken{సూత్రం}{!!{formula}}~$!A$కు $(!A \land \lnot !A)$}కు సంక్షిప్త రూపం.}{}
 
 \tagitem{defNot}{$\lnot !A$ అనేది $!A \lif \lfalse$కు సంక్షిప్త
   రూపం.}{}

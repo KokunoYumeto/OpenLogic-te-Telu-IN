@@ -13,19 +13,19 @@
 \olsection{\usetoken{P}{tableau} ఉదాహరణలు}
 
 \begin{ex}
-!!{sentence} $(!A \land !B) \lif !A$ కోసం ఒక సంవృత !!{tableau}ను
+\tetoken{వాక్యం}{!!{sentence}} $(!A \land !B) \lif !A$ కోసం ఒక సంవృత \tetoken{టాబ్లోను}{!!{tableau}}
 కనుగొందాం.
 
-మొదట సంబంధిత పరికల్పనను !!{tableau} అగ్రభాగంలో రాస్తాం.
+మొదట సంబంధిత పరికల్పనను \tetoken{టాబ్లో}{!!{tableau}} అగ్రభాగంలో రాస్తాం.
 \begin{oltableau}
   [\sFmla{\False}{(\formula{A} \land \formula{B}) \lif \formula{A}},
     just = \TAss]
 \end{oltableau}
 
-ఒకే పరికల్పన ఉంది; కనుక నియమాన్ని వర్తింపజేయగల !!{signed formula}
-ఒక్కటే. (ప్రతి !!{signed formula}కు వర్తించగల నియమం గరిష్ఠంగా
-ఒక్కటే ఉంటుంది: అది సంబంధిత సంకేతానికి, !!{sentence} యొక్క
-!!{main operator}కు గల నియమం.) ఈ సందర్భంలో మనం
+ఒకే పరికల్పన ఉంది; కనుక నియమాన్ని వర్తింపజేయగల \tetoken{చిహ్నిత సూత్రం}{!!{signed formula}}
+ఒక్కటే. (ప్రతి \tetoken{చిహ్నిత సూత్రానికి}{!!{signed formula}} వర్తించగల నియమం గరిష్ఠంగా
+ఒక్కటే ఉంటుంది: అది సంబంధిత సంకేతానికి, \tetoken{వాక్యం}{!!{sentence}} యొక్క
+\tetoken{ప్రధాన సంయోజకానికి}{!!{main operator}} గల నియమం.) ఈ సందర్భంలో మనం
 $\TRule{\False}{\lif}$ను వర్తింపజేయాలి.
 \begin{oltableau}
   [\sFmla{\False}{(\formula{A} \land \formula{B}) \lif \formula{A}},
@@ -36,17 +36,17 @@ $\TRule{\False}{\lif}$ను వర్తింపజేయాలి.
     ]
   ]
 \end{oltableau}
-ఏ !!{signed formula}sకు వాటి సంబంధిత నియమాలను వర్తింపజేశామో
+ఏ \tetoken{చిహ్నిత సూత్రాలకు}{!!{signed formula}s} వాటి సంబంధిత నియమాలను వర్తింపజేశామో
 గుర్తుంచుకోవడానికి, ఆ వాక్యం పక్కన తనిఖీ గుర్తు పెడతాం. అయితే ఒక
 నియమాన్ని అన్ని వివృత శాఖలకూ వర్తింపజేసినప్పుడు \emph{మాత్రమే}
-తనిఖీ గుర్తు పెట్టండి. ఒక !!a{signed formula}కు సంబంధించిన నియమం
+తనిఖీ గుర్తు పెట్టండి. ఒక \tetoken{చిహ్నిత సూత్రానికి}{!!a{signed formula}} సంబంధించిన నియమం
 ప్రతి వివృత శాఖలోనూ వర్తించిన తర్వాత, మళ్లీ దాని దగ్గరకు తిరిగి వచ్చి
 ఆ నియమాన్ని వర్తింపజేయాల్సిన అవసరం లేదు. ఇక్కడ ఒకే శాఖ ఉంది కనుక
 నియమాన్ని ఒక్కసారి మాత్రమే వర్తింపజేయాలి. (తనిఖీ గుర్తులు టాబ్లోలను
 నిర్మించడంలో సౌలభ్యం కోసం మాత్రమే; అవి టాబ్లోల వాక్యనిర్మాణంలో
 అధికారిక భాగం కావని గమనించండి.)
 
-ఇప్పుడు నియమాన్ని వర్తింపజేయగల కొత్త !!{signed formula} ఒకటి ఉంది:
+ఇప్పుడు నియమాన్ని వర్తింపజేయగల కొత్త \tetoken{చిహ్నిత సూత్రం}{!!{signed formula}} ఒకటి ఉంది:
 వరుస~$2$లోని $\sFmla{\True}{!A \land !B}$. దానికి
 $\TRule{\True}{\land}$ నియమాన్ని వర్తింపజేస్తే:
 \begin{oltableau}
@@ -65,20 +65,20 @@ $\TRule{\True}{\land}$ నియమాన్ని వర్తింపజే�
 \end{oltableau}
 ఇప్పుడు శాఖలో $\sFmla{\True}{!A}$ (వరుస~$4$లో),
 $\sFmla{\False}{!A}$ (వరుస~$3$లో) రెండూ ఉన్నాయి కనుక శాఖ
-సంవృతమైంది. అదే ఒక్క శాఖ కనుక !!{tableau} కూడా సంవృతమైంది.
-$(!A \land !B) \lif !A$ కోసం ఒక సంవృత !!{tableau}ను కనుగొన్నాం.
+సంవృతమైంది. అదే ఒక్క శాఖ కనుక \tetoken{టాబ్లో}{!!{tableau}} కూడా సంవృతమైంది.
+$(!A \land !B) \lif !A$ కోసం ఒక సంవృత \tetoken{టాబ్లోను}{!!{tableau}} కనుగొన్నాం.
 \end{ex}
 
 \begin{ex}
 ఇప్పుడు $(\lnot !A \lor !B) \lif (!A \lif !B)$ కోసం ఒక సంవృత
-!!{tableau}ను కనుగొందాం.
+\tetoken{టాబ్లోను}{!!{tableau}} కనుగొందాం.
 
 సంబంధిత పరికల్పనతో మొదలుపెడతాం:
 \begin{oltableau}
   [\sFmla{\False}{(\lnot \formula{A} \lor \formula{B}) \lif
       (\formula{A} \lif \formula{B})}, just=\TAss]
 \end{oltableau}
-ఈ !!{tableau}లోని ఒక్క !!{signed formula}కు !!{main operator}~$\lif$,
+ఈ \tetoken{టాబ్లోలోని}{!!{tableau}} ఒక్క \tetoken{చిహ్నిత సూత్రానికి}{!!{signed formula}} \tetoken{ప్రధాన సంయోజకం}{!!{main operator}}~$\lif$,
 సంకేతం~$\False$ ఉన్నాయి. కనుక దానికి $\TRule{\False}{\lif}$ను
 వర్తింపజేసి కిందిది పొందుతాం:
 \begin{oltableau}
@@ -94,11 +94,11 @@ $(!A \land !B) \lif !A$ కోసం ఒక సంవృత !!{tableau}ను �
 \end{oltableau}
 ఇప్పుడు వరుస~$2$కు $\TRule{\True}{\lor}$ను వర్తింపజేయాలా, లేక
 వరుస~$3$కు $\TRule{\False}{\lif}$ను వర్తింపజేయాలా అనే ఎంపిక ఉంది.
-ప్రతి !!{signed formula}కు సంబంధించిన నియమాన్ని ప్రతి శాఖలోనూ
+ప్రతి \tetoken{చిహ్నిత సూత్రానికి}{!!{signed formula}} సంబంధించిన నియమాన్ని ప్రతి శాఖలోనూ
 వర్తింపజేస్తే చాలు; మనం ఎంచుకునే క్రమం ముఖ్యం కాదు. కాబట్టి మొదటి
-ఎంపికను తీసుకుందాం. $\TRule{\True}{\lor}$ నియమం !!{tableau}ను
+ఎంపికను తీసుకుందాం. $\TRule{\True}{\lor}$ నియమం \tetoken{టాబ్లోను}{!!{tableau}}
 శాఖలుగా విడగొడుతుంది; నియమపు రెండు నిష్కర్షలు రెండు కొత్త శాఖలకు
-చేర్చే కొత్త !!{signed formula}s అవుతాయి. దాని ఫలితం:
+చేర్చే కొత్త \tetoken{చిహ్నిత సూత్రాలు}{!!{signed formula}s} అవుతాయి. దాని ఫలితం:
 \begin{oltableau}
   [\sFmla{\False}{(\lnot \formula{A} \lor \formula{B}) \lif
       (\formula{A} \lif \formula{B})}, just=\TAss, checked
@@ -115,11 +115,11 @@ $(!A \land !B) \lif !A$ కోసం ఒక సంవృత !!{tableau}ను �
 వరుస~$3$కు $\TRule{\False}{\lif}$ నియమాన్ని ఇంకా వర్తింపజేయలేదు;
 ఇప్పుడు చేద్దాం. సమయం ఆదా చేయడానికి రెండు శాఖలకూ ఒకేసారి
 వర్తింపజేస్తాం. సంబంధిత నియమాన్ని ప్రతి వివృత శాఖలోనూ
-వర్తింపజేసినప్పుడు మాత్రమే ఒక !!a{signed formula} పక్కన తనిఖీ గుర్తు
+వర్తింపజేసినప్పుడు మాత్రమే ఒక \tetoken{చిహ్నిత సూత్రం}{!!a{signed formula}} పక్కన తనిఖీ గుర్తు
 పెడతామని గుర్తుంచుకోండి. అందువల్ల ఒక నియమం వర్తించే
-!!{signed formula}ను కలిగిన ప్రతి శాఖ చివరలోనూ ఆ నియమాన్ని వర్తింపజేయడం మంచి
+\tetoken{చిహ్నిత సూత్రాన్ని}{!!{signed formula}} కలిగిన ప్రతి శాఖ చివరలోనూ ఆ నియమాన్ని వర్తింపజేయడం మంచి
 పద్ధతి. అప్పుడు వివిధ శాఖల్లో కిందికి వెళ్లిన తర్వాత మళ్లీ ఆ
-!!{signed formula} దగ్గరకు తిరిగి రావాల్సిన అవసరం ఉండదు.
+\tetoken{చిహ్నిత సూత్రం}{!!{signed formula}} దగ్గరకు తిరిగి రావాల్సిన అవసరం ఉండదు.
 \begin{oltableau}
   [\sFmla{\False}{(\lnot \formula{A} \lor \formula{B}) \lif
       (\formula{A} \lif \formula{B})}, just=\TAss, checked
@@ -172,12 +172,12 @@ $\sFmla{\False}{!A}$ వచ్చి ఎడమ శాఖ కూడా సంవ�
 \end{ex}
 
 \begin{ex}
-ఎన్ని !!{signed formula}sనైనా పరికల్పనలుగా తీసుకుని !!{tableau}sను
+ఎన్ని \tetoken{చిహ్నిత సూత్రాలనైనా}{!!{signed formula}s} పరికల్పనలుగా తీసుకుని \tetoken{టాబ్లోలను}{!!{tableau}s}
 ఇవ్వవచ్చు. శాఖలుగా విడగొట్టే ఒకటి కంటే ఎక్కువ నియమాలను
-వర్తింపజేయడం కూడా తరచుగా అవసరం; సాధారణంగా ఒక !!a{tableau}కు ఎన్ని
+వర్తింపజేయడం కూడా తరచుగా అవసరం; సాధారణంగా ఒక \tetoken{టాబ్లోకు}{!!a{tableau}} ఎన్ని
 శాఖలైనా ఉండవచ్చు. ఉదాహరణకు,
 $\{\sFmla{\True}{!A \lor (!B \land !C)}, \sFmla{\False}{(!A \lor !B) \land (!A
-  \lor !C)}\}$ కోసం ఒక !!a{tableau}ను పరిశీలించండి. మొదటి పరికల్పనకు
+  \lor !C)}\}$ కోసం ఒక \tetoken{టాబ్లోను}{!!a{tableau}} పరిశీలించండి. మొదటి పరికల్పనకు
 $\TRule{\True}{\lor}$ను వర్తింపజేసి మొదలుపెడతాం:
 \begin{oltableau}
   [\sFmla{\True}{\formula{A} \lor (\formula{B} \land \formula{C})},
@@ -301,7 +301,7 @@ $\TRule{\False}{\lor}$ను వర్తింపజేద్దాం:
 
 రెండు శాఖలు ఇంకా వివృతంగా ఉన్నాయి; వరుస~$3$లోని
 $\sFmla{\True}{!B \land !C}$కు తనిఖీ గుర్తు ఇంకా లేదు. దానికి
-$\TRule{\True}{\land}$ను వర్తింపజేసి సంవృత !!{tableau}ను పొందుతాం:
+$\TRule{\True}{\land}$ను వర్తింపజేసి సంవృత \tetoken{టాబ్లోను}{!!{tableau}} పొందుతాం:
 \begin{oltableau}
   [\sFmla{\True}{\formula{A} \lor (\formula{B} \land \formula{C})},
     just=\TAss, checked
@@ -363,7 +363,7 @@ $\TRule{\True}{\land}$ను వర్తింపజేసి సంవృత !
 \end{oltableau}
 
 పోలిక కోసం, నియమాలను వేరే క్రమంలో వర్తింపజేసిన అదే పరికల్పనల
-సమితికి సంవృత !!{tableau} ఇది:
+సమితికి సంవృత \tetoken{టాబ్లో}{!!{tableau}} ఇది:
 \begin{oltableau}
   [\sFmla{\True}{\formula{A} \lor (\formula{B} \land \formula{C})},
     just=\TAss, checked
@@ -417,7 +417,7 @@ $\TRule{\True}{\land}$ను వర్తింపజేసి సంవృత !
 \end{ex}
 
 \begin{prob}
-కిందివాటికి సంవృత !!{tableau}s ఇవ్వండి:
+కిందివాటికి సంవృత \tetoken{టాబ్లోలు}{!!{tableau}s} ఇవ్వండి:
 \begin{enumerate}
 \item $\sFmla{\True}{!A \land (!B \land !C)}, \sFmla{\False}{(!A \land !B) \land !C}$.
 \item $\sFmla{\True}{!A \lor (!B \lor !C)}, \sFmla{\False}{(!A \lor !B) \lor !C}$.
@@ -427,7 +427,7 @@ $\TRule{\True}{\land}$ను వర్తింపజేసి సంవృత !
 \end{prob}
 
 \begin{prob}
-కిందివాటికి సంవృత !!{tableau}s ఇవ్వండి:
+కిందివాటికి సంవృత \tetoken{టాబ్లోలు}{!!{tableau}s} ఇవ్వండి:
 \begin{enumerate}
 \item $\sFmla{\True}{(!A \lor !B) \lif !C}, \sFmla{\False}{!A \lif !C}$.
 \item $\sFmla{\True}{(!A \lif !C) \land (!B \lif !C)}, \sFmla{\False}{(!A \lor !B) \lif !C}$.
@@ -450,7 +450,7 @@ $\sFmla{\True}{\lnot !B}$, $\sFmla{\False}{!A}$గా రాశాం.}
 \end{prob}
 
 \begin{prob}
-కిందివాటికి సంవృత !!{tableau}s ఇవ్వండి:
+కిందివాటికి సంవృత \tetoken{టాబ్లోలు}{!!{tableau}s} ఇవ్వండి:
 \begin{enumerate}
 \item $\sFmla{\True}{\lnot(!A \lif !B)}, \sFmla{\False}{!A}$.
 \item $\sFmla{\True}{\lnot(!A \land !B)}, \sFmla{\False}{\lnot !A \lor \lnot !B}$.

@@ -20,20 +20,20 @@
 	\\i.e., $0 \notin \ran{s}$
 	\\i.e., $\forall x\ s(x) \neq 0$
 	\item భిన్న సంఖ్యలకు భిన్న ఉత్తరవర్తులు ఉంటాయి
-	\\i.e., $s$ is !!a{injection}
+	\\i.e., $s$ is \tetoken{ఒక ఒకటి-ఒకటి ప్రమేయం}{!!a{injection}}
 	\\i.e., $\forall x \forall y (s(x) = s(y) \lif x = y)$
 	\item\ollabel{repeatedapplication} ఉత్తరవర్తి ప్రమేయాన్ని $0$కు
 	పునఃపునః వర్తింపజేయడం ద్వారా ప్రతి సంఖ్య లభిస్తుంది.
 \end{enumerate}
-మొదటి రెండు షరతులను ప్రథమక్రమ తర్కంతో సులభంగా నిర్వహించవచ్చు (పైన
-చూడండి). కానీ \olref{repeatedapplication}ను కేవలం ప్రథమక్రమ తర్కంతో
+మొదటి రెండు షరతులను మొదటిస్థాయి విధేయ తర్కంతో సులభంగా నిర్వహించవచ్చు (పైన
+చూడండి). కానీ \olref{repeatedapplication}ను కేవలం మొదటిస్థాయి విధేయ తర్కంతో
 నిర్వహించలేం. \olref{repeatedapplication} షరతును సమితి-సిద్ధాంత
 రీతిలో ఇలా పునర్వ్యక్తీకరించడమే డెడెకిండ్ సాధించిన పురోగతి:
 \begin{enumerate}
 	\item[3$'$.] సహజ సంఖ్యలు, $0$ను కలిగి ఉండి
 	\emph{ఉత్తరవర్తి ప్రమేయం కింద సంవృతమైన} అతి చిన్న సమితి: అంటే,
-	సమితిలోని ఏ !!{element}కైనా $s$ను వర్తింపజేస్తే సమితిలోని మరో
-	!!{element} లభిస్తుంది.
+	సమితిలోని ఏ \tetoken{మూలకానికైనా}{!!{element}} $s$ను వర్తింపజేస్తే సమితిలోని మరో
+	\tetoken{మూలకం}{!!{element}} లభిస్తుంది.
 \end{enumerate}
 \sourcecorrection{OLTEINF-001}{ఆంగ్ల మూలంలోని 3$'$ షరతు ``ఉత్తరవర్తి
 ప్రమేయం కింద సంవృతమైన అతి చిన్న సమితి'' అని మాత్రమే చెప్పి, $0$ను
@@ -55,9 +55,9 @@ $\ran{f}\cup\{o\}$ సాక్షి, ఉద్దేశించిన స్�
 $f$-సంవృతం. తరువాతి డెడెకిండ్ బీజగణిత నిర్వచనం నిర్ణయించినట్లుగా
 $f \colon A\to A$, $o\in A$, $X\subseteq A$ అని రకాలను స్పష్టం చేశాం.}
 
-కాబట్టి $\closureofunder{f}{o}$ అనేది $o$ను !!a{element}గా కలిగిన
+కాబట్టి $\closureofunder{f}{o}$ అనేది $o$ను \tetoken{ఒక మూలకంగా}{!!a{element}} కలిగిన
 $f$-సంవృత సమితులన్నిటి ఛేదనం. అంతర్బుద్ధి ప్రకారం,
-$\closureofunder{f}{o}$ అనేది $o$ను !!a{element}గా కలిగిన
+$\closureofunder{f}{o}$ అనేది $o$ను \tetoken{ఒక మూలకంగా}{!!a{element}} కలిగిన
 \emph{అతి చిన్న} $f$-సంవృత సమితి. ఈ అంతర్బుద్ధి ఆలోచనను తదుపరి
 ఫలితం కచ్చితంగా చెబుతుంది:
 \begin{lem}\ollabel{closureproperties}
@@ -71,13 +71,13 @@ $\closureofunder{f}{o}$ అనేది $o$ను !!a{element}గా కలి�
 \end{lem}
 
 \begin{proof}
-$o$ను !!a{element}గా కలిగిన కనీసం ఒక $f$-సంవృత సమితి ఉంది; అదే
+$o$ను \tetoken{ఒక మూలకంగా}{!!a{element}} కలిగిన కనీసం ఒక $f$-సంవృత సమితి ఉంది; అదే
 $\ran{f}\cup \{o\}$. కాబట్టి అటువంటి సమితులన్నిటి ఛేదనమైన
 $\closureofunder{f}{o}$ ఉనికిలో ఉంటుంది. ఇప్పుడు
 \olref{closurehaselem}--\olref{closuresmallest}లను తనిఖీ చేయాలి.
 
 \olref{closurehaselem} గురించి: $\closureofunder{f}{o}$ అనేది
-$o$ను !!a{element}గా కలిగిన సమితుల ఛేదనం కనుక
+$o$ను \tetoken{ఒక మూలకంగా}{!!a{element}} కలిగిన సమితుల ఛేదనం కనుక
 $o \in \closureofunder{f}{o}$.
 
 \olref{closureclosed} గురించి: $x \in \closureofunder{f}{o}$
@@ -96,12 +96,12 @@ $\bigcap C \subseteq X$.
 ఏదో $o \in A$తో కూడిన, కింది షరతులను సంతృప్తిపరిచే $A$ అనే సమితి:
 	\begin{enumerate}
 		\item \ollabel{ded:proper} $o \notin \ran{f}$
-		\item \ollabel{ded:injection} $f$ is !!a{injection}
+		\item \ollabel{ded:injection} $f$ is \tetoken{ఒక ఒకటి-ఒకటి ప్రమేయం}{!!a{injection}}
 		\item \ollabel{ded:closure} $A = \closureofunder{f}{o}$
 	\end{enumerate}
 \end{defn}
 
-$A = \closureofunder{f}{o}$ కనుక, $o$ను !!a{element}గా కలిగిన
+$A = \closureofunder{f}{o}$ కనుక, $o$ను \tetoken{ఒక మూలకంగా}{!!a{element}} కలిగిన
 $f$-సంవృత సమితుల్లో $A$ అతి చిన్నదని మునుపటి ఫలితం చెబుతుంది.
 డెడెకిండ్ బీజగణితం డెడెకిండ్ అనంతమని స్పష్టం; నిర్వచనంలోని
 \olref{ded:proper}, \olref{ded:injection} ఉపవాక్యాలను చూడండి.

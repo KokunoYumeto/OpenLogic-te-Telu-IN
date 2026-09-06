@@ -1,0 +1,59 @@
+% Part: first-order logic
+
+\documentclass[../../include/open-logic-part]{subfiles}
+
+\begin{document}
+
+\olpart{fol}{మొదటిస్థాయి విధేయ తర్కం}
+
+\begin{editorial}
+  ఈ భాగం మొదటిస్థాయి విధేయ తర్కపు అధిసిద్ధాంతాన్ని సంపూర్ణత వరకు
+  వివరిస్తుంది. ప్రస్తుతం ఇది ప్రతిజ్ఞావాక్యాత్మక తర్కంపై విడిగా చేసిన చర్చను
+  ఆధారంగా తీసుకోదు; ప్రతిదీ ఇక్కడే నిరూపించబడుతుంది. ``FOL'' ట్యాగు
+  అసత్యమైతే, మూల ఫైళ్లు పరిమాణీకరణికాల గురించిన విషయాన్ని
+  మినహాయిస్తాయి (అలాగే ``\tetoken{నిర్మాణం}{!!{structure}}'' స్థానంలో
+  ``\tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}'', $\Struct{M}$ స్థానంలో~$\pAssign{v}$ మొదలైనవి
+  పెడతాయి). నిజానికి, ప్రతిజ్ఞావాక్యాత్మక తర్క భాగంలోని విషయంలో చాలావరకు,
+  ``FOL'' ట్యాగును ఆపి
+  వాడిన మొదటిస్థాయి విషయమే.
+
+  ప్రతిజ్ఞావాక్యాత్మక తర్క భాగాన్ని కూడా చేర్చితే చాలా పునరుక్తి వస్తుంది. అయితే,
+  ప్రతిజ్ఞావాక్యాత్మక తర్కంలో ఇప్పటికే చర్చించిన విషయాన్ని ఈ భాగం పరిగణనలోకి
+  తీసుకునేలా చేయాలని యోచించాం (అంటే, ఇప్పటికే చర్చించిన విషయాన్ని
+  మినహాయించి, ప్రతిజ్ఞావాక్యాత్మక తర్క భాగంలోని సంబంధిత చోట్లకు సూచనలతో
+  నిరూపణలను కుదించాలి).
+\end{editorial}
+
+\olimport[introduction]{introduction}
+
+\olimport[syntax-and-semantics]{syntax}
+
+\olimport[syntax-and-semantics]{semantics}
+
+\olimport[models-theories]{models-theories}
+
+\olimport[proof-systems]{proof-systems}
+
+\iftag{prfSC}{%
+  \olimport[sequent-calculus]{sequent-calculus}
+}{}
+
+\iftag{prfND}{%
+  \olimport[natural-deduction]{natural-deduction}
+}{}
+
+\iftag{prfTab}{%
+  \olimport[tableaux]{tableaux}
+}{}
+
+\iftag{prfAX}{%
+  \olimport[axiomatic-deduction]{axiomatic-deduction}
+}{}
+
+\olimport[completeness]{completeness}
+
+\olimport[beyond]{beyond}
+
+\OLEndPartHook
+
+\end{document}

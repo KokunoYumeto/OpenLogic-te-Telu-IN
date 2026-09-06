@@ -1,0 +1,90 @@
+% Part: first-order-logic
+% Chapter: introduction
+% Section: formulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{int}{fml}
+
+\section{\usetoken{P}{formula}}
+
+మొదటిస్థాయి విధేయ తర్కపు \tetoken{వాక్యాలను}{!!{sentence}s} కఠినంగా నిర్దేశించడానికి,
+\tetoken{చరాలు}{!!{variable}s} వాడకం వల్ల వచ్చే సమస్యలను పరిష్కరించడానికి మనం
+అనుసరించే పద్ధతి ఇదీ. ముందుగా \emph{వేరొక} వ్యక్తీకరణల సమితిని,
+అంటే \tetoken{సూత్రాలను}{!!{formula}s} నిర్వచిస్తాం. ఆ తరువాత వాటిలో \tetoken{చరాలు}{!!{variable}s}
+పోషించే పాత్రను పరిశీలించవచ్చు; ``స్వేచ్ఛా,'' ``బద్ధ''
+\tetoken{చరాలు}{!!{variable}s} అనే మరికొన్ని భావనల ఆధారంగా \tetoken{ఒక వాక్యం}{!!a{sentence}} అంటే ఏమిటో
+నిర్వచించవచ్చు (అంటే, స్వేచ్ఛా \tetoken{చరాలు}{!!{variable}s} లేని \tetoken{ఒక సూత్రం}{!!a{formula}}).
+``\tetoken{వాక్యం}{!!{sentence}}'' నిర్వచనాన్ని నిర్వహించడానికి ఇది సులభమవుతుందనే
+కారణంతో మాత్రమే ఇలా చేయడం లేదు; సంతృప్తి అనే అర్థపర భావనను మనం
+నిర్వచించే విధానానికి కూడా ఇది కీలకం అవుతుంది.
+
+ఒకే \tetoken{విధేయ సంకేతం}{!!{predicate}}~$\Obj P$, ఒకే \tetoken{స్థిరసంకేతం}{!!{constant}}~$\Obj a$ను, అలాగే
+$\lnot$, $\land$, $\lexists$ అనే తార్కిక సంకేతాలను మాత్రమే కలిగిన
+ఒక సరళ మొదటిస్థాయి భాష కోసం ``\tetoken{సూత్రం}{!!{formula}}''ను నిర్వచిద్దాం. మన పూర్తి
+నిర్వచనాలు మరింత సాధారణంగా ఉంటాయి: అనంత సంఖ్యలో \tetoken{విధేయ సంకేతాలు}{!!{predicate}s},
+\tetoken{స్థిరసంకేతాలను}{!!{constant}s} అనుమతిస్తాం. నిజానికి, ``పదాలు'' రూపొందించడానికి
+\tetoken{స్థిరసంకేతాలు}{!!{constant}s}, \tetoken{చరాలతో}{!!{variable}s} కలపగల \tetoken{ప్రమేయ సంకేతాలను}{!!{function}s} కూడా
+పరిశీలిస్తాం. ప్రస్తుతానికి, $\Obj a$, చరరాశులు మాత్రమే మన పదాలు.
+మనకు అనంత సంఖ్యలో \tetoken{చరాలు}{!!{variable}s} అవసరం. అధికారికంగా $\Obj v_0$,
+$\Obj v_1$, \dots సంకేతాలను చరరాశులుగా వాడతాం.
+
+\begin{defn}
+\emph{\tetoken{సూత్రాలు}{!!{formula}s}} సమితి~$\Frm$ను కింది విధంగా నిర్వచిస్తాం:
+\begin{enumerate}
+\item\ollabel{fmls-atom} $\Atom{\Obj P}{\Obj a}$ మరియు $\Atom{\Obj
+  P}{\Obj v_i}$లు \tetoken{సూత్రాలు}{!!{formula}s} ($i \in \Nat$).
+
+\tagitem{prvNot}{\ollabel{fmls-not}$!A$ ఒక \tetoken{సూత్రం}{!!a{formula}} అయితే, $\lnot !A$
+  ఒక \tetoken{సూత్రం}{!!{formula}}.}{}
+
+\tagitem{prvAnd}{$!A$, $!B$లు \tetoken{సూత్రాలు}{!!{formula}s} అయితే, $(!A \land
+  !B)$ ఒక \tetoken{సూత్రం}{!!a{formula}}.}{}
+
+\tagitem{prvEx}{\ollabel{fmls-ex}$!A$ ఒక \tetoken{సూత్రం}{!!a{formula}}, $x$ ఒక \tetoken{చరం}{!!a{variable}}
+  అయితే, $\lexists[x][!A]$ ఒక \tetoken{సూత్రం}{!!a{formula}}.}{}
+
+\tagitem{limitClause}{\ollabel{fmls-limit}మరేదీ \tetoken{ఒక సూత్రం}{!!a{formula}} కాదు.}{}
+\end{enumerate}
+\end{defn}
+
+ఏ $i \in \Nat$కైనా $\Atom{\Obj P}{\Obj a}$,
+$\Atom{\Obj P}{\Obj v_i}$లు \tetoken{సూత్రాలు}{!!{formula}s} అని \olref{fmls-atom}
+చెబుతుంది. వీటినే \emph{పరమాణు} \tetoken{సూత్రాలు}{!!{formula}s} అంటారు. మనకు
+ప్రారంభించడానికి ఇవి ఆధారమిస్తాయి. ఇప్పటికే రూపొందించిన
+సూత్రాల నుంచి కొత్త \tetoken{సూత్రాలను}{!!{formula}s} రూపొందించే పద్ధతులను ఇతర
+ఉపవాక్యాలు ఇస్తాయి. ఉదాహరణకు, \olref{fmls-not} ప్రకారం $\lnot
+\Atom{\Obj P}{\Obj v_2}$ ఒక \tetoken{సూత్రం}{!!a{formula}}; ఎందుకంటే
+$\Atom{\Obj P}{\Obj v_2}$ ఇప్పటికే \olref{fmls-atom} వల్ల ఒక
+\tetoken{సూత్రం}{!!a{formula}}. తరువాత \olref{fmls-ex} వల్ల
+$\lexists[\Obj v_2][\lnot \Atom{\Obj P}{\Obj v_2}]$ మరో
+\tetoken{ఒక సూత్రం}{!!{formula}}; ఇలాగే కొనసాగుతుంది. ఈ విధంగా మనం రూపొందించగల
+సంకేతమాలలు \emph{మాత్రమే} \tetoken{సూత్రాలుగా}{!!{formula}s} లెక్కవుతాయని
+\olref{fmls-limit} చెబుతుంది. ముఖ్యంగా,
+$\lexists[\Obj v_0][\Atom{\Obj P}{\Obj a}]$,
+$\lexists[\Obj v_0][\lexists[\Obj v_0][\Atom{\Obj P}{\Obj a}]]$
+\tetoken{సూత్రాలుగా}{!!{formula}s} \emph{లెక్కవుతాయి}; బయట అనవసరమైన కుండలీకరణలు ఉన్నందున
+$(\lnot \Atom{\Obj P}{\Obj a})$ మాత్రం లెక్కవదు.
+
+\tetoken{సూత్రాలను}{!!{formula}s} ఇలా నిర్వచించడాన్ని \emph{ఆగమనాత్మక నిర్వచనం}
+అంటారు. ఇది \emph{నిర్మాణాత్మక ఆగమనం} అనే ఆగమన నిరూపణ రూపాన్ని
+ఉపయోగించి \tetoken{సూత్రాలు}{!!{formula}s} గురించి విషయాలను నిరూపించడానికి వీలు
+కల్పిస్తుంది. వీటిని \olref[mth][ind][idf]{sec},
+\olref[mth][ind][sti]{sec}లలో సాధారణంగా చర్చించాం; తరువాతి
+నిరూపణల్లోకి వెళ్లే ముందు వాటిని పునశ్చరణ చేయాలి. ప్రాథమిక భావన ఇదీ:
+ఏదైనా విషయం అన్ని \tetoken{సూత్రాలకు}{!!{formula}s} సత్యమని నిరూపించాలంటే, ముందుగా అది
+పరమాణు \tetoken{సూత్రాలకు}{!!{formula}s} సత్యమని చూపాలి; తరువాత, అది ఏ
+\tetoken{సూత్రం}{!!{formula}}~$!A$కు (మరియు~$!B$కు) సత్యమైతే, $\lnot !A$,
+$(!A \land !B)$, $\lexists[x][!A]$లకు కూడా సత్యమని చూపాలి.
+ఉదాహరణకు, అది $\lexists[\Obj v_2][\lnot \Atom{\Obj P}{\Obj
+v_2}]$కు సత్యమని ఇది నిరూపిస్తుంది: మొదటి భాగం నుంచి పరమాణు
+\tetoken{సూత్రం}{!!{formula}}~$\Atom{\Obj P}{\Obj v_2}$కు అది సత్యమని తెలుస్తుంది.
+అప్పుడు రెండవ భాగం నుంచి $\lnot \Atom{\Obj P}{\Obj v_2}$కు సత్యమని,
+మరొకసారి అదే భాగం నుంచి $\lexists[\Obj v_2][\lnot \Atom{\Obj
+P}{\Obj v_2}]$కే సత్యమని లభిస్తుంది. అన్ని \tetoken{సూత్రాలు}{!!{formula}s} పరమాణు
+\tetoken{సూత్రాలు}{!!{formula}s} నుంచి ఆగమనాత్మకంగా ఉత్పన్నమవుతాయి కాబట్టి, వాటిలో
+దేనికైనా ఇది పనిచేస్తుంది.
+
+\end{document}

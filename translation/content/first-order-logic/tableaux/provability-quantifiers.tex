@@ -22,15 +22,15 @@ $\Gamma \Proves \lforall[x][!A(x)]$.
 
 \begin{proof}
 $\Gamma \Proves !A(c)$ అనుకుందాం; అంటే $!B_1$, \dots, $!B_n
-\in \Gamma$ ఉండి, కింది సమితికి ఒక సంవృత !!{tableau} ఉంది:
+\in \Gamma$ ఉండి, కింది సమితికి ఒక సంవృత \tetoken{టాబ్లో}{!!{tableau}} ఉంది:
 \begin{align*}
 \{ \sFmla{\False}{!A(c)}, &
 \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n} \}.
-\intertext{కింది సమితికి కూడా ఒక సంవృత !!{tableau} ఉందని చూపాలి:}
+\intertext{కింది సమితికి కూడా ఒక సంవృత \tetoken{టాబ్లో}{!!{tableau}} ఉందని చూపాలి:}
 \{ \sFmla{\False}{\lforall[x][!A(x)]}, &
 \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n} \}.
 \end{align*}
-ఇచ్చిన సంవృత !!{tableau}లో మొదటి పరికల్పన స్థానంలో
+ఇచ్చిన సంవృత \tetoken{టాబ్లోలో}{!!{tableau}} మొదటి పరికల్పన స్థానంలో
 $\sFmla{\False}{\lforall[x][!A(x)]}$ను పెట్టి, పరికల్పనల తర్వాత
 $\sFmla{\False}{!A(c)}$ను చేర్చండి.
 \begin{center}
@@ -50,11 +50,11 @@ $\sFmla{\False}{!A(c)}$ను చేర్చండి.
         [][][]]]]]]
 \end{tableau}
 \end{center}
-ముందు పరికల్పనలుగా లభించిన !!{sentence}s అన్నీ కొత్త
-!!{tableau} అగ్రభాగంలో ఇంకా లభిస్తున్నాయి కనుక అది సంవృతంగానే ఉంటుంది.
+ముందు పరికల్పనలుగా లభించిన \tetoken{వాక్యాలు}{!!{sentence}s} అన్నీ కొత్త
+\tetoken{టాబ్లో}{!!{tableau}} అగ్రభాగంలో ఇంకా లభిస్తున్నాయి కనుక అది సంవృతంగానే ఉంటుంది.
 చేర్చిన వరుస $\TRule{\False}{\lforall}$ను సరిగ్గా వర్తింపజేసిన
-ఫలితం: !!{constant}~$c$ అనేది $!B_1$, \dots, $!B_n$లలో గానీ
-$\lforall[x][!A(x)]$లో గానీ కనిపించదు; అంటే కొత్త !!{tableau}లో
+ఫలితం: \tetoken{స్థిరసంకేతం}{!!{constant}}~$c$ అనేది $!B_1$, \dots, $!B_n$లలో గానీ
+$\lforall[x][!A(x)]$లో గానీ కనిపించదు; అంటే కొత్త \tetoken{టాబ్లోలో}{!!{tableau}}
 చేర్చిన వరుస పైన ఎక్కడా కనిపించదు.
 \end{proof}
 
@@ -69,14 +69,14 @@ $\lforall[x][!A(x)]$లో గానీ కనిపించదు; అంట�
 \begin{proof}
 \begin{tagenumerate}{prvEx,prvAll}
 \tagitem{prvEx}{$\sFmla{\False}{\lexists[x][!A(x)]},
-  \sFmla{\True}{!A(t)}$కు సంవృత !!{tableau} ఇది:
+  \sFmla{\True}{!A(t)}$కు సంవృత \tetoken{టాబ్లో}{!!{tableau}} ఇది:
   \begin{oltableau}
     [\sFmla{\False}{\lexists[x][\formula{A}(x)]}, just = \TAss
       [\sFmla{\True}{\formula{A}(t)}, just = \TAss
         [\sFmla{\False}{\formula{A}(t)}, just = {\TRule{\False}{\lexists}[1]}, close]]]
     \end{oltableau}}{}
 \tagitem{prvAll}{$\sFmla{\False}{\formula{A}(t)},
-  \sFmla{\True}{\lforall[x][!A(x)]}$కు సంవృత !!{tableau} ఇది:
+  \sFmla{\True}{\lforall[x][!A(x)]}$కు సంవృత \tetoken{టాబ్లో}{!!{tableau}} ఇది:
   \begin{oltableau}
     [\sFmla{\False}{\formula{A}(t)}, just = \TAss
       [\sFmla{\True}{\lforall[x][\formula{A}(x)]}, just = \TAss

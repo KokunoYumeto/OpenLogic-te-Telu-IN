@@ -10,7 +10,7 @@
 
 \olsection{\usetoken{S}{identity}తో \usetoken{P}{derivation}}
 
-!!{identity}తో కూడిన !!^{derivation}sకు అదనపు నిగమన నియమాలు అవసరం.
+\tetoken{తాదాత్మ్య విధేయంతో}{!!{identity}} కూడిన \tetoken{వ్యుత్పత్తులకు}{!!^{derivation}s} అదనపు నిగమన నియమాలు అవసరం.
 
 \begin{defish}
 \AxiomC{}
@@ -35,7 +35,7 @@
 
 పై నియమాల్లో $t$, $t_1$, $t_2$లు సంవృత పదాలు. \Intro{\eq} నియమం
 ఎలాంటి పరికల్పనలూ లేకుండానే $\eq[t][t]$ రూపంలోని ఏ తాదాత్మ్య
-ప్రకటననైనా నేరుగా !!{derive} చేయనిస్తుంది.
+ప్రకటననైనా నేరుగా \tetoken{నిగమనం}{!!{derive}} చేయనిస్తుంది.
 
 \begin{ex}
 $s$, $t$లు సంవృత పదాలైతే $!A(s), \eq[s][t] \Proves !A(t)$:
@@ -53,17 +53,17 @@ $s$, $t$లు సంవృత పదాలైతే $!A(s), \eq[s][t] \Proves !
 $=$ సౌష్ఠవమైనదీ సంక్రామకమైనదీ అని నిరూపించండి; అంటే
 $\lforall[x][\lforall[y][(\eq[x][y] \lif \eq[y][x])]]$,
 $\lforall[x][\lforall[y][\lforall[z]((\eq[x][y] \land \eq[y][z])
-\lif \eq[x][z])]]$ యొక్క !!{derivation}s ఇవ్వండి.
+\lif \eq[x][z])]]$ యొక్క \tetoken{వ్యుత్పత్తులు}{!!{derivation}s} ఇవ్వండి.
 \end{prob}
 
 \begin{ex}
-!!{sentence}
+\tetoken{వాక్యం}{!!{sentence}}
 \begin{align*}
 & \lforall[x][\lforall[y][((!A(x) \land !A(y)) \lif \eq[x][y])]]
-\intertext{ను ఈ !!{sentence} నుంచి !!{derive} చేస్తాం:}
+\intertext{ను ఈ \tetoken{వాక్యం}{!!{sentence}} నుంచి \tetoken{నిగమనం}{!!{derive}} చేస్తాం:}
 & \lexists[x][\lforall[y][(!A(y) \lif \eq[y][x])]]
 \end{align*}
-!!{derivation}ను వెనుక నుంచి నిర్మిద్దాం:
+\tetoken{వ్యుత్పత్తిని}{!!{derivation}} వెనుక నుంచి నిర్మిద్దాం:
 \begin{prooftree}
 \AxiomC{$\lexists[x][\lforall[y][(!A(y) \lif \eq[y][x])]]
 \quad \Discharge{!A(a) \land !A(b)}{1}$}
@@ -75,8 +75,8 @@ $\lforall[x][\lforall[y][\lforall[z]((\eq[x][y] \land \eq[y][z])
 \RightLabel{\Intro{\lforall}}
 \UnaryInfC{$\lforall[x][\lforall[y][((!A(x) \land !A(y)) \lif \eq[x][y])]]$}
 \end{prooftree}
-ఇప్పుడు ప్రధాన పరికల్పనను వాడాలి: అది ఒక అస్తిత్వ !!{formula} కనుక
-మధ్యంతర నిష్కర్ష $\eq[a][b]$ను !!{derive} చేయడానికి
+ఇప్పుడు ప్రధాన పరికల్పనను వాడాలి: అది ఒక అస్తిత్వ \tetoken{సూత్రం}{!!{formula}} కనుక
+మధ్యంతర నిష్కర్ష $\eq[a][b]$ను \tetoken{నిగమనం}{!!{derive}} చేయడానికి
 \Elim{\lexists}ను వాడతాం.
 \begin{prooftree}
 \AxiomC{$\lexists[x][\lforall[y][(!A(y) \lif \eq[y][x])]]$}
@@ -93,9 +93,9 @@ $\lforall[x][\lforall[y][\lforall[z]((\eq[x][y] \land \eq[y][z])
 \RightLabel{\Intro{\lforall}}
 \UnaryInfC{$\lforall[x][\lforall[y][((!A(x) \land !A(y)) \lif \eq[x][y])]]$}
 \end{prooftree}
-కుడివైపు పైనున్న ఉప-!!{derivation}ను దాని పరికల్పనలతో
+కుడివైపు పైనున్న ఉప-\tetoken{వ్యుత్పత్తిని}{!!{derivation}} దాని పరికల్పనలతో
 $\eq[a][c]$, $\eq[b][c]$ అని చూపి పూర్తి చేస్తాం. ఇందుకు రెండు వేరు
-!!{derivation}s అవసరం. $\eq[a][c]$కు !!{derivation} కిందివిధంగా ఉంటుంది:
+\tetoken{వ్యుత్పత్తులు}{!!{derivation}s} అవసరం. $\eq[a][c]$కు \tetoken{వ్యుత్పత్తి}{!!{derivation}} కిందివిధంగా ఉంటుంది:
 \begin{prooftree}
 \AxiomC{$\Discharge{\lforall[y][(!A(y) \lif \eq[y][c]])}{2}$}
 \RightLabel{\Elim{\lforall}}
@@ -107,11 +107,11 @@ $\eq[a][c]$, $\eq[b][c]$ అని చూపి పూర్తి చేస్�
 \BinaryInfC{$\eq[a][c]$}
 \end{prooftree}
 $\eq[a][c]$, $\eq[b][c]$ నుంచి \Elim{\eq} ద్వారా $\eq[a][b]$ను
-!!{derive} చేస్తాం.
+\tetoken{నిగమనం}{!!{derive}} చేస్తాం.
 \end{ex}
 
 \begin{prob}
-కింది !!{formula}s యొక్క !!{derivation}s ఇవ్వండి:
+కింది \tetoken{సూత్రాలు}{!!{formula}s} యొక్క \tetoken{వ్యుత్పత్తులు}{!!{derivation}s} ఇవ్వండి:
 \begin{enumerate}
 \item $\lforall[x][\lforall[y][((\eq[x][y] \land !A(x)) \lif !A(y))]]$
 \item $\lexists[x][!A(x)] \land \lforall[y][\lforall[z][((!A(y) \land

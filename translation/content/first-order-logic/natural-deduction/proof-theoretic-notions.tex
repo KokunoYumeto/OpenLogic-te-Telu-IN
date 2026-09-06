@@ -20,9 +20,9 @@
 \begin{explain}
 అనేక ముఖ్యమైన అర్థపర భావనలను (చెల్లుబాటు, అనుగమనం, సంతృప్తత)
 నిర్వచించినట్లే, ఇప్పుడు వాటికి అనుగుణమైన \emph{నిరూపణ-సిద్ధాంత
-భావనలను} నిర్వచిస్తాం. వీటిని !!{structure}sలో !!{sentence}s
-సంతృప్తి చెందడాన్ని ఆశ్రయించి నిర్వచించం; కొన్ని !!{sentence}s ఇతర
-వాక్యాల నుంచి !!{derivability} లేదా !!{nonderivability} కావడాన్ని
+భావనలను} నిర్వచిస్తాం. వీటిని \tetoken{నిర్మాణాలలో}{!!{structure}s} \tetoken{వాక్యాలు}{!!{sentence}s}
+సంతృప్తి చెందడాన్ని ఆశ్రయించి నిర్వచించం; కొన్ని \tetoken{వాక్యాలు}{!!{sentence}s} ఇతర
+వాక్యాల నుంచి \tetoken{వ్యుత్పాద్యత}{!!{derivability}} లేదా \tetoken{అవ్యుత్పాద్యత}{!!{nonderivability}} కావడాన్ని
 ఆశ్రయించి నిర్వచిస్తాం. ఈ భావనలు ఒకటే అవుతాయని కనుగొనడం ముఖ్యమైన
 విజయం. అవి ఒకటే అవుతాయనేదే \emph{నిర్దుష్టత}, \emph{సంపూర్ణత}
 సిద్ధాంతాల విషయం.
@@ -30,22 +30,22 @@
 
 
 \begin{defn}[సిద్ధాంతాలు]
-అన్ని పరికల్పనలూ !!{discharged} అయిన సహజ నిగమనంలో
-!!{sentence}~$!A$ యొక్క ఒక !!a{derivation} ఉంటే, $!A$ను
+అన్ని పరికల్పనలూ \tetoken{ఉపసంహరించిన}{!!{discharged}} అయిన సహజ నిగమనంలో
+\tetoken{వాక్యం}{!!{sentence}}~$!A$ యొక్క ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}} ఉంటే, $!A$ను
 \emph{సిద్ధాంతం} అంటాం. $!A$ ఒక సిద్ధాంతమైతే $\Proves !A$ అని,
 కాకపోతే $\Proves/ !A$ అని రాస్తాం.
 \end{defn}
 
-\begin{defn}[!!^{derivability}]
-నిష్కర్ష~$!A$గా ఉండి, ప్రతి పరికల్పనా !!{discharged} అయినా లేదా
-$\Gamma$లోనిదైనా అయ్యే ఒక !!{derivation} ఉంటే, !!{sentence}s
-సమితి~$\Gamma$ నుంచి !!^a{sentence}~$!A$ \emph{!!{derivable}}, అంటే
-$\Gamma \Proves !A$. $\Gamma$ నుంచి $!A$ !!{derivable} కాకపోతే
+\begin{defn}[\tetoken{వ్యుత్పాద్యత}{!!^{derivability}}]
+నిష్కర్ష~$!A$గా ఉండి, ప్రతి పరికల్పనా \tetoken{ఉపసంహరించిన}{!!{discharged}} అయినా లేదా
+$\Gamma$లోనిదైనా అయ్యే ఒక \tetoken{వ్యుత్పత్తి}{!!{derivation}} ఉంటే, \tetoken{వాక్యాలు}{!!{sentence}s}
+సమితి~$\Gamma$ నుంచి \tetoken{ఒక వాక్యం}{!!^a{sentence}}~$!A$ \emph{\tetoken{వ్యుత్పాదించదగిన}{!!{derivable}}}, అంటే
+$\Gamma \Proves !A$. $\Gamma$ నుంచి $!A$ \tetoken{వ్యుత్పాదించదగిన}{!!{derivable}} కాకపోతే
 $\Gamma \Proves/ !A$ అని రాస్తాం.
 \end{defn}
 
 \begin{defn}[అవైరుధ్యం]
-!!{sentence}s సమితి~$\Gamma$కు $\Gamma \Proves \lfalse$ అయితే,
+\tetoken{వాక్యాలు}{!!{sentence}s} సమితి~$\Gamma$కు $\Gamma \Proves \lfalse$ అయితే,
 అప్పుడు మాత్రమే అది \emph{వైరుధ్యభరితమైనది}. $\Gamma$ వైరుధ్యభరితం
 కాకపోతే, అంటే $\Gamma \Proves/ \lfalse$ అయితే, దాన్ని
 \emph{అవైరుధ్యమైనది} అంటాం.
@@ -57,8 +57,8 @@ $!A \in \Gamma$ అయితే $\Gamma \Proves !A$.
 \end{prop}
 
 \begin{proof}
-$!A$ పరికల్పన తనంతట తానే $!A$ యొక్క ఒక !!a{derivation}; అందులోని ప్రతి
-!!{undischarged} పరికల్పన (అంటే $!A$) $\Gamma$లో ఉంటుంది.
+$!A$ పరికల్పన తనంతట తానే $!A$ యొక్క ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}; అందులోని ప్రతి
+\tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పన (అంటే $!A$) $\Gamma$లో ఉంటుంది.
 \end{proof}
 
 
@@ -69,8 +69,8 @@ $\Gamma \subseteq \Delta$, $\Gamma \Proves !A$ అయితే $\Delta
 \end{prop}
 
 \begin{proof}
-$\Gamma$ నుంచి $!A$ యొక్క ఏ !!{derivation} అయినా $\Delta$ నుంచి
-$!A$ యొక్క ఒక !!a{derivation} కూడా అవుతుంది.
+$\Gamma$ నుంచి $!A$ యొక్క ఏ \tetoken{వ్యుత్పత్తి}{!!{derivation}} అయినా $\Delta$ నుంచి
+$!A$ యొక్క ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}} కూడా అవుతుంది.
 \end{proof}
 
 \begin{prop}[సంక్రామకత్వం]
@@ -80,10 +80,10 @@ $\Gamma \cup \Delta \Proves !B$.
 \end{prop}
 
 \begin{proof}
-$\Gamma \Proves !A$ అయితే, $\Gamma$లోని !!{undischarged}
-పరికల్పనలతో $!A$ యొక్క ఒక !!a{derivation}~$\delta_0$ ఉంటుంది.
+$\Gamma \Proves !A$ అయితే, $\Gamma$లోని \tetoken{ఉపసంహరించని}{!!{undischarged}}
+పరికల్పనలతో $!A$ యొక్క ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}~$\delta_0$ ఉంటుంది.
 $\{!A\} \cup \Delta \Proves !B$ అయితే, $\{!A\} \cup \Delta$లోని
-!!{undischarged} పరికల్పనలతో $!B$ యొక్క ఒక !!a{derivation}~$\delta_1$
+\tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనలతో $!B$ యొక్క ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}~$\delta_1$
 ఉంటుంది. ఇప్పుడు కిందిదాన్ని పరిశీలించండి:
 \begin{prooftree}
   \AxiomC{$\Delta, \Discharge{!A}{1}$}
@@ -97,7 +97,7 @@ $\{!A\} \cup \Delta \Proves !B$ అయితే, $\{!A\} \cup \Delta$లోన�
   \RightLabel{\Elim{\lif}}
   \BinaryInfC{$!B$}
 \end{prooftree}
-ఇప్పుడు !!{undischarged} పరికల్పనలన్నీ $\Gamma \cup \Delta$లోనివే;
+ఇప్పుడు \tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనలన్నీ $\Gamma \cup \Delta$లోనివే;
 కనుక ఇది $\Gamma \cup \Delta \Proves !B$ అని చూపుతుంది.
 \end{proof}
 
@@ -115,8 +115,8 @@ $i$కి $\Gamma \Proves !A_i$ అయితే $\Gamma \Proves !B$ అని �
 కిందివి తుల్యమైనవి.
     \begin{enumerate}
       \item \( \Gamma \) వైరుధ్యభరితమైనది.
-      \item ప్రతి !!{sentence}~\( {!A} \)కు \( \Gamma \Proves {!A} \).
-      \item ఏదో !!{sentence}~\( {!A} \)కు \( \Gamma \Proves {!A} \), \( \Gamma \Proves \lnot {!A} \).
+      \item ప్రతి \tetoken{వాక్యం}{!!{sentence}}~\( {!A} \)కు \( \Gamma \Proves {!A} \).
+      \item ఏదో \tetoken{వాక్యం}{!!{sentence}}~\( {!A} \)కు \( \Gamma \Proves {!A} \), \( \Gamma \Proves \lnot {!A} \).
     \end{enumerate}
 \end{prop}
 
@@ -149,11 +149,11 @@ $i$కి $\Gamma \Proves !A_i$ అయితే $\Gamma \Proves !B$ అని �
 \begin{proof}
   \begin{enumerate}
     \item $\Gamma \Proves !A$ అయితే, $\Gamma$ నుంచి $!A$ యొక్క
-      ఒక !!a{derivation}~$\delta$ ఉంటుంది. $\delta$లోని
-      !!{undischarged} పరికల్పనల సమితిని $\Gamma_0$ అందాం. ప్రతి
-      !!{derivation} పరిమితం కనుక $\Gamma_0$లో పరిమిత సంఖ్యలో మాత్రమే
-      !!{sentence}s ఉండగలవు. కాబట్టి $\delta$ అనేది పరిమిత
-      $\Gamma_0 \subseteq \Gamma$ నుంచి $!A$ యొక్క ఒక !!a{derivation}.
+      ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}~$\delta$ ఉంటుంది. $\delta$లోని
+      \tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనల సమితిని $\Gamma_0$ అందాం. ప్రతి
+      \tetoken{వ్యుత్పత్తి}{!!{derivation}} పరిమితం కనుక $\Gamma_0$లో పరిమిత సంఖ్యలో మాత్రమే
+      \tetoken{వాక్యాలు}{!!{sentence}s} ఉండగలవు. కాబట్టి $\delta$ అనేది పరిమిత
+      $\Gamma_0 \subseteq \Gamma$ నుంచి $!A$ యొక్క ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}.
     \item ఇది $!A \ident \lfalse$ అనే ప్రత్యేక సందర్భంలో (1)కు
       ప్రతిపక్ష నిరూపణ.
   \end{enumerate}

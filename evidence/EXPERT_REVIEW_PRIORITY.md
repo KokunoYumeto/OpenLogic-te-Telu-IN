@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 134 of 722 draft units**. This view selects 101 of 123 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 145 of 722 draft units**. This view selects 108 of 129 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -8,11 +8,11 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Priority/confidence: high / mixed_provisional
 
-- Chosen wording/treatment: మూలకాధారిత సమానత్వం
+- Chosen wording/treatment: సమితుల సమానత్వ సూత్రం (Extensionality)
 
-- Occurrences: OLP-0005; sets-functions-relations/sets/basics; translation/content/sets-functions-relations/sets/basics.tex:10; printed/PDF page pending
+- Occurrences: OLP-0005; sets-functions-relations/sets/basics; translation/content/sets-functions-relations/sets/basics.tex:9-10; printed/PDF page pending
 
-- Please double-check: Please double-check whether “మూలకాధారిత సమానత్వం” is idiomatic and technically standard for “extensionality” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+- Please double-check: Please double-check whether “సమితుల సమానత్వ సూత్రం (Extensionality)” is idiomatic and technically standard for “extensionality” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-TE-T011 — finite / infinite / string / sequence / alphabet
 
@@ -20,7 +20,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: పరిమిత / అనంత (witness synonym అపరిమిత) / సంకేతమాల / క్రమం / వర్ణమాల
 
-- Occurrences: OLP-0007; sets-functions-relations/sets/important-sets; translation/content/sets-functions-relations/sets/important-sets.tex:46-51; printed/PDF page pending; OLP-0007; sets-functions-relations/sets/important-sets; translation/content/sets-functions-relations/sets/important-sets.tex:63-66; printed/PDF page pending
+- Occurrences: OLP-0007; sets-functions-relations/sets/important-sets; translation/content/sets-functions-relations/sets/important-sets.tex:45-61; printed/PDF page pending; OLP-0007; sets-functions-relations/sets/important-sets; translation/content/sets-functions-relations/sets/important-sets.tex:63-68; printed/PDF page pending
 
 - Please double-check: Please double-check whether “పరిమిత / అనంత (witness synonym అపరిమిత) / సంకేతమాల / క్రమం / వర్ణమాల” is idiomatic and technically standard for “finite / infinite / string / sequence / alphabet” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
@@ -28,11 +28,11 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Priority/confidence: high / mixed_provisional
 
-- Chosen wording/treatment: క్రమిత జత / క్రమిత బహుళకం / కార్టీజియన్ లబ్ధం
+- Chosen wording/treatment: క్రమయుగ్మం / క్రమిత బహుళకం / కార్టీజియన్ లబ్ధం
 
-- Occurrences: OLP-0009; sets-functions-relations/sets/pairs-and-products; translation/content/sets-functions-relations/sets/pairs-and-products.tex:14-17; printed/PDF page pending; OLP-0009; sets-functions-relations/sets/pairs-and-products; translation/content/sets-functions-relations/sets/pairs-and-products.tex:48-51; printed/PDF page pending; OLP-0009; sets-functions-relations/sets/pairs-and-products; translation/content/sets-functions-relations/sets/pairs-and-products.tex:55-57; printed/PDF page pending
+- Occurrences: OLP-0009; sets-functions-relations/sets/pairs-and-products; translation/content/sets-functions-relations/sets/pairs-and-products.tex:12-17; printed/PDF page pending; OLP-0009; sets-functions-relations/sets/pairs-and-products; translation/content/sets-functions-relations/sets/pairs-and-products.tex:39-49; printed/PDF page pending; OLP-0009; sets-functions-relations/sets/pairs-and-products; translation/content/sets-functions-relations/sets/pairs-and-products.tex:55-61; printed/PDF page pending
 
-- Please double-check: Please double-check whether “క్రమిత జత / క్రమిత బహుళకం / కార్టీజియన్ లబ్ధం” is idiomatic and technically standard for “ordered pair / tuple / Cartesian product” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+- Please double-check: Please double-check whether “క్రమయుగ్మం / క్రమిత బహుళకం / కార్టీజియన్ లబ్ధం” is idiomatic and technically standard for “ordered pair / tuple / Cartesian product” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-TE-T013 — Russell's paradox / contradiction / comprehension / axiom
 
@@ -40,7 +40,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: రసెల్ వైరుధ్యం / విరోధం / ధర్మసంగ్రహం / స్వీకృతం
 
-- Occurrences: OLP-0010; sets-functions-relations/sets/russells-paradox; translation/content/sets-functions-relations/sets/russells-paradox.tex:22-26; printed/PDF page pending; OLP-0010; sets-functions-relations/sets/russells-paradox; translation/content/sets-functions-relations/sets/russells-paradox.tex:25-26; printed/PDF page pending; OLP-0010; sets-functions-relations/sets/russells-paradox; translation/content/sets-functions-relations/sets/russells-paradox.tex:82; printed/PDF page pending
+- Occurrences: OLP-0010; sets-functions-relations/sets/russells-paradox; translation/content/sets-functions-relations/sets/russells-paradox.tex:22-26; printed/PDF page pending; OLP-0010; sets-functions-relations/sets/russells-paradox; translation/content/sets-functions-relations/sets/russells-paradox.tex:22-26; printed/PDF page pending; OLP-0010; sets-functions-relations/sets/russells-paradox; translation/content/sets-functions-relations/sets/russells-paradox.tex:77-82; printed/PDF page pending
 
 - Please double-check: Please double-check whether “రసెల్ వైరుధ్యం / విరోధం / ధర్మసంగ్రహం / స్వీకృతం” is idiomatic and technically standard for “Russell's paradox / contradiction / comprehension / axiom” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
@@ -50,9 +50,29 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: పరిపూర్ణ సంఖ్య / నిజ భాజకం / అవిచ్ఛిన్న సమితి / ఆగమనం / పునరావృత్త
 
-- Occurrences: OLP-0005; sets-functions-relations/sets/basics; translation/content/sets-functions-relations/sets/basics.tex:78-83; printed/PDF page pending; OLP-0005; sets-functions-relations/sets/basics; translation/content/sets-functions-relations/sets/basics.tex:78-82; printed/PDF page pending
+- Occurrences: OLP-0005; sets-functions-relations/sets/basics; translation/content/sets-functions-relations/sets/basics.tex:76-96; printed/PDF page pending; OLP-0005; sets-functions-relations/sets/basics; translation/content/sets-functions-relations/sets/basics.tex:76-96; printed/PDF page pending
 
 - Please double-check: Please double-check whether “పరిపూర్ణ సంఖ్య / నిజ భాజకం / అవిచ్ఛిన్న సమితి / ఆగమనం / పునరావృత్త” is idiomatic and technically standard for “perfect number / proper divisor / continuum / induction / recursive” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T018 — predicate / proposition / singular term / set-theoretic reductionism / metaphysical identity
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: విధేయం / ప్రతిజ్ఞావాక్యం / ఏకవస్తు పదం / సమితి-సిద్ధాంత సంక్షేపణవాదం / అధిభౌతిక తాదాత్మ్యం
+
+- Occurrences: OLP-0013; sets-functions-relations/relations/reflections; translation/content/sets-functions-relations/relations/reflections.tex:12-19; printed/PDF page pending; OLP-0013; sets-functions-relations/relations/reflections; translation/content/sets-functions-relations/relations/reflections.tex:21-42; printed/PDF page pending; OLP-0013; sets-functions-relations/relations/reflections; translation/content/sets-functions-relations/relations/reflections.tex:61-73; printed/PDF page pending
+
+- Please double-check: Please double-check whether “విధేయం / ప్రతిజ్ఞావాక్యం / ఏకవస్తు పదం / సమితి-సిద్ధాంత సంక్షేపణవాదం / అధిభౌతిక తాదాత్మ్యం” is idiomatic and technically standard for “predicate / proposition / singular term / set-theoretic reductionism / metaphysical identity” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T020 — formula / derivation / propositional logic / first-order logic / completeness / computability
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: సూత్రం / వ్యుత్పత్తి / ప్రతిజ్ఞావాక్యాత్మక తర్కం / మొదటిస్థాయి విధేయ తర్కం / సంపూర్ణత / గణనీయత
+
+- Occurrences: OLP-0018; sets-functions-relations/relations/trees; translation/content/sets-functions-relations/relations/trees.tex:12-19; printed/PDF page pending; OLP-0018; sets-functions-relations/relations/trees; translation/content/sets-functions-relations/relations/trees.tex:135-137; printed/PDF page pending
+
+- Please double-check: Please double-check whether “సూత్రం / వ్యుత్పత్తి / ప్రతిజ్ఞావాక్యాత్మక తర్కం / మొదటిస్థాయి విధేయ తర్కం / సంపూర్ణత / గణనీయత” is idiomatic and technically standard for “formula / derivation / propositional logic / first-order logic / completeness / computability” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-TE-T028 — Cantor zig-zag / pairing function / encode / code / diagonal method / diagonalization / reduction / Schröder-Bernstein
 
@@ -60,7 +80,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: కాంటర్ జిగ్‌జాగ్ పద్ధతి / జతీకరణ ప్రమేయం / సంకేతీకరించు / సంకేత సంఖ్య / కాంటర్ వికర్ణ పద్ధతి / వికర్ణీకరణ / సమస్యా తగ్గింపు / ష్రోడర్–బెర్న్‌స్టైన్
 
-- Occurrences: OLP-0030; sets-functions-relations/size-of-sets/zig-zag; translation/content/sets-functions-relations/size-of-sets/zig-zag.tex:59-64; printed/PDF page pending; OLP-0031; sets-functions-relations/size-of-sets/pairing; translation/content/sets-functions-relations/size-of-sets/pairing.tex:53-58; printed/PDF page pending; OLP-0033; sets-functions-relations/size-of-sets/non-enumerability; translation/content/sets-functions-relations/size-of-sets/non-enumerability.tex:38-40; printed/PDF page pending; OLP-0034; sets-functions-relations/size-of-sets/reduction; translation/content/sets-functions-relations/size-of-sets/reduction.tex:27-31; printed/PDF page pending; OLP-0037; sets-functions-relations/size-of-sets/schroder-bernstein; translation/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:11; printed/PDF page pending
+- Occurrences: OLP-0030; sets-functions-relations/size-of-sets/zig-zag; translation/content/sets-functions-relations/size-of-sets/zig-zag.tex:13-66; printed/PDF page pending; OLP-0031; sets-functions-relations/size-of-sets/pairing; translation/content/sets-functions-relations/size-of-sets/pairing.tex:53-58; printed/PDF page pending; OLP-0033; sets-functions-relations/size-of-sets/non-enumerability; translation/content/sets-functions-relations/size-of-sets/non-enumerability.tex:33-40; printed/PDF page pending; OLP-0034; sets-functions-relations/size-of-sets/reduction; translation/content/sets-functions-relations/size-of-sets/reduction.tex:20-31; printed/PDF page pending; OLP-0037; sets-functions-relations/size-of-sets/schroder-bernstein; translation/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:11; printed/PDF page pending
 
 - Please double-check: Please double-check whether “కాంటర్ జిగ్‌జాగ్ పద్ధతి / జతీకరణ ప్రమేయం / సంకేతీకరించు / సంకేత సంఖ్య / కాంటర్ వికర్ణ పద్ధతి / వికర్ణీకరణ / సమస్యా తగ్గింపు / ష్రోడర్–బెర్న్‌స్టైన్” is idiomatic and technically standard for “Cantor zig-zag / pairing function / encode / code / diagonal method / diagonalization / reduction / Schröder-Bernstein” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
@@ -70,7 +90,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: అంకగణితీకరణ / అంతఃస్థాపన / వినిమయ వలయం / క్రమిత వలయం / క్రమిత క్షేత్రం
 
-- Occurrences: OLP-0041; sets-functions-relations/arithmetization/arithmetization; translation/content/sets-functions-relations/arithmetization/arithmetization.tex:8; printed/PDF page pending; OLP-0047; sets-functions-relations/arithmetization/checking-details; translation/content/sets-functions-relations/arithmetization/checking-details.tex:23-25; printed/PDF page pending; OLP-0047; sets-functions-relations/arithmetization/checking-details; translation/content/sets-functions-relations/arithmetization/checking-details.tex:135-139; printed/PDF page pending
+- Occurrences: OLP-0041; sets-functions-relations/arithmetization/arithmetization; translation/content/sets-functions-relations/arithmetization/arithmetization.tex:8; printed/PDF page pending; OLP-0047; sets-functions-relations/arithmetization/checking-details; translation/content/sets-functions-relations/arithmetization/checking-details.tex:22-39; printed/PDF page pending; OLP-0047; sets-functions-relations/arithmetization/checking-details; translation/content/sets-functions-relations/arithmetization/checking-details.tex:131-140; printed/PDF page pending
 
 - Please double-check: Please double-check whether “అంకగణితీకరణ / అంతఃస్థాపన / వినిమయ వలయం / క్రమిత వలయం / క్రమిత క్షేత్రం” is idiomatic and technically standard for “arithmetization / embedding / commutative ring / ordered ring / ordered field” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
@@ -80,7 +100,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: ఊర్ధ్వ అవధి / కనిష్ఠ ఊర్ధ్వ అవధి / గరిష్ఠ అధో అవధి / సంపూర్ణతా ధర్మం / డెడెకిండ్ కోత / ఆద్య ఖండం / కౌషీ క్రమం / పరిమితి
 
-- Occurrences: OLP-0044; sets-functions-relations/arithmetization/reals; translation/content/sets-functions-relations/arithmetization/reals.tex:76-81; printed/PDF page pending; OLP-0045; sets-functions-relations/arithmetization/cuts; translation/content/sets-functions-relations/arithmetization/cuts.tex:26-29; printed/PDF page pending; OLP-0048; sets-functions-relations/arithmetization/cauchy; translation/content/sets-functions-relations/arithmetization/cauchy.tex:78-82; printed/PDF page pending
+- Occurrences: OLP-0044; sets-functions-relations/arithmetization/reals; translation/content/sets-functions-relations/arithmetization/reals.tex:76-81; printed/PDF page pending; OLP-0045; sets-functions-relations/arithmetization/cuts; translation/content/sets-functions-relations/arithmetization/cuts.tex:26-36; printed/PDF page pending; OLP-0048; sets-functions-relations/arithmetization/cauchy; translation/content/sets-functions-relations/arithmetization/cauchy.tex:70-82; printed/PDF page pending
 
 - Please double-check: Please double-check whether “ఊర్ధ్వ అవధి / కనిష్ఠ ఊర్ధ్వ అవధి / గరిష్ఠ అధో అవధి / సంపూర్ణతా ధర్మం / డెడెకిండ్ కోత / ఆద్య ఖండం / కౌషీ క్రమం / పరిమితి” is idiomatic and technically standard for “upper bound / least upper bound / greatest lower bound / Completeness Property / Dedekind cut / initial segment / Cauchy sequence / limit” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
@@ -90,7 +110,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: డెడెకిండ్ అనంతం / డెడెకిండ్ బీజగణితం / f-సంవృతం / అంకగణిత ఆగమనం / సమరూపం
 
-- Occurrences: OLP-0051; sets-functions-relations/infinite/dedekind-algebra; translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:94-101; printed/PDF page pending; OLP-0051; sets-functions-relations/infinite/dedekind-algebra; translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:104-109; printed/PDF page pending; OLP-0051; sets-functions-relations/infinite/dedekind-algebra; translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:45-61; printed/PDF page pending; OLP-0052; sets-functions-relations/infinite/dedekind-induction; translation/content/sets-functions-relations/infinite/dedekind-induction.tex:16-21; printed/PDF page pending; OLP-0053; sets-functions-relations/infinite/dedekinds-proof; translation/content/sets-functions-relations/infinite/dedekinds-proof.tex:32-36; printed/PDF page pending
+- Occurrences: OLP-0051; sets-functions-relations/infinite/dedekind-algebra; translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:94-102; printed/PDF page pending; OLP-0051; sets-functions-relations/infinite/dedekind-algebra; translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:104-109; printed/PDF page pending; OLP-0051; sets-functions-relations/infinite/dedekind-algebra; translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:45-56; printed/PDF page pending; OLP-0052; sets-functions-relations/infinite/dedekind-induction; translation/content/sets-functions-relations/infinite/dedekind-induction.tex:16-22; printed/PDF page pending; OLP-0053; sets-functions-relations/infinite/dedekinds-proof; translation/content/sets-functions-relations/infinite/dedekinds-proof.tex:26-38; printed/PDF page pending
 
 - Please double-check: Please double-check whether “డెడెకిండ్ అనంతం / డెడెకిండ్ బీజగణితం / f-సంవృతం / అంకగణిత ఆగమనం / సమరూపం” is idiomatic and technically standard for “Dedekind infinite / Dedekind algebra / f-closed / arithmetical induction / isomorphic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
@@ -98,11 +118,11 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Priority/confidence: high / mixed_provisional
 
-- Chosen wording/treatment: వాక్యనిర్మాణం / అర్థవిచారం / ప్రవచన చరరాశి / తార్కిక సంయోజకం / నిషేధం / సంయోగం / వికల్పం / షరతీయ సంయోజకం / ద్విషరతీయ సంయోజకం / పరమాణు సూత్రం / వాక్యనిర్మాణ తాదాత్మ్యం / నిర్మాణ క్రమం / ఏకైక పఠనీయత / ఏకరీతి ప్రతిస్థాపన
+- Chosen wording/treatment: వాక్యనిర్మాణం / అర్థవిచారం / ప్రతిజ్ఞావాక్య చరం / తార్కిక సంయోజకం / నిషేధం / సంయోగం / వికల్పం / సోపాధికం / ద్విసోపాధికం / పరమాణు సూత్రం / వాక్యనిర్మాణ తాదాత్మ్యం / నిర్మాణ క్రమం / ఏకైక పఠనీయత / ఏకరీతి ప్రతిస్థాపన
 
-- Occurrences: OLP-0056; propositional-logic/syntax-and-semantics/syntax-and-semantics; translation/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex:8; printed/PDF page pending; OLP-0058; propositional-logic/syntax-and-semantics/formulas; translation/content/propositional-logic/syntax-and-semantics/formulas.tex:14-30; printed/PDF page pending; OLP-0058; propositional-logic/syntax-and-semantics/formulas; translation/content/propositional-logic/syntax-and-semantics/formulas.tex:177-189; printed/PDF page pending; OLP-0060; propositional-logic/syntax-and-semantics/formation-sequences; translation/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:14-24; printed/PDF page pending; OLP-0059; propositional-logic/syntax-and-semantics/preliminaries; translation/content/propositional-logic/syntax-and-semantics/preliminaries.tex:96-104; printed/PDF page pending
+- Occurrences: OLP-0056; propositional-logic/syntax-and-semantics/syntax-and-semantics; translation/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex:8; printed/PDF page pending; OLP-0058; propositional-logic/syntax-and-semantics/formulas; translation/content/propositional-logic/syntax-and-semantics/formulas.tex:19-32; printed/PDF page pending; OLP-0058; propositional-logic/syntax-and-semantics/formulas; translation/content/propositional-logic/syntax-and-semantics/formulas.tex:177-182; printed/PDF page pending; OLP-0060; propositional-logic/syntax-and-semantics/formation-sequences; translation/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:13-17; printed/PDF page pending; OLP-0059; propositional-logic/syntax-and-semantics/preliminaries; translation/content/propositional-logic/syntax-and-semantics/preliminaries.tex:96-104; printed/PDF page pending
 
-- Please double-check: Please double-check whether “వాక్యనిర్మాణం / అర్థవిచారం / ప్రవచన చరరాశి / తార్కిక సంయోజకం / నిషేధం / సంయోగం / వికల్పం / షరతీయ సంయోజకం / ద్విషరతీయ సంయోజకం / పరమాణు సూత్రం / వాక్యనిర్మాణ తాదాత్మ్యం / నిర్మాణ క్రమం / ఏకైక పఠనీయత / ఏకరీతి ప్రతిస్థాపన” is idiomatic and technically standard for “syntax / semantics / propositional variable / logical connective / negation / conjunction / disjunction / conditional / biconditional / atomic formula / syntactic identity / formation sequence / unique readability / uniform substitution” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+- Please double-check: Please double-check whether “వాక్యనిర్మాణం / అర్థవిచారం / ప్రతిజ్ఞావాక్య చరం / తార్కిక సంయోజకం / నిషేధం / సంయోగం / వికల్పం / సోపాధికం / ద్విసోపాధికం / పరమాణు సూత్రం / వాక్యనిర్మాణ తాదాత్మ్యం / నిర్మాణ క్రమం / ఏకైక పఠనీయత / ఏకరీతి ప్రతిస్థాపన” is idiomatic and technically standard for “syntax / semantics / propositional variable / logical connective / negation / conjunction / disjunction / conditional / biconditional / atomic formula / syntactic identity / formation sequence / unique readability / uniform substitution” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-TE-T033 — truth value / valuation / evaluation / satisfaction / tautology / entailment / satisfiable / unsatisfiable / contingent / Local Determination / Semantic Deduction Theorem
 
@@ -110,7 +130,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: సత్యమూల్యం / మూల్యనిర్ణయం / మూల్యాంకనం / సంతృప్తి / సర్వసత్యం / అర్థపర అనుగమనం / సంతృప్తిపరచదగిన / సంతృప్తిపరచలేని / పరిస్థిత్యాధీన / స్థానిక నిర్ణయితత్వం / అర్థపర నిగమన సిద్ధాంతం
 
-- Occurrences: OLP-0061; propositional-logic/syntax-and-semantics/valuations-sat; translation/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:11-24; printed/PDF page pending; OLP-0061; propositional-logic/syntax-and-semantics/valuations-sat; translation/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:134-157; printed/PDF page pending; OLP-0062; propositional-logic/syntax-and-semantics/semantic-notions; translation/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:13-32; printed/PDF page pending; OLP-0062; propositional-logic/syntax-and-semantics/semantic-notions; translation/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:85-87; printed/PDF page pending
+- Occurrences: OLP-0061; propositional-logic/syntax-and-semantics/valuations-sat; translation/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:13-19; printed/PDF page pending; OLP-0061; propositional-logic/syntax-and-semantics/valuations-sat; translation/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:134-148; printed/PDF page pending; OLP-0062; propositional-logic/syntax-and-semantics/semantic-notions; translation/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:15-34; printed/PDF page pending; OLP-0062; propositional-logic/syntax-and-semantics/semantic-notions; translation/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:85-88; printed/PDF page pending
 
 - Please double-check: Please double-check whether “సత్యమూల్యం / మూల్యనిర్ణయం / మూల్యాంకనం / సంతృప్తి / సర్వసత్యం / అర్థపర అనుగమనం / సంతృప్తిపరచదగిన / సంతృప్తిపరచలేని / పరిస్థిత్యాధీన / స్థానిక నిర్ణయితత్వం / అర్థపర నిగమన సిద్ధాంతం” is idiomatic and technically standard for “truth value / valuation / evaluation / satisfaction / tautology / entailment / satisfiable / unsatisfiable / contingent / Local Determination / Semantic Deduction Theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
@@ -118,11 +138,11 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Priority/confidence: high / mixed_provisional
 
-- Chosen wording/treatment: నిగమన వ్యవస్థ / నిగమించదగిన / సిద్ధాంతం / చెల్లుబాటుతనం / నిర్దుష్టత / సంపూర్ణత / అవైరుధ్యం / వైరుధ్యం / స్వీకృతం / నిగమన నియమం
+- Chosen wording/treatment: వ్యుత్పత్తి వ్యవస్థ / వ్యుత్పాదించదగిన / సిద్ధాంతం / చెల్లుబాటుతనం / నిర్దుష్టత / సంపూర్ణత / అవైరుధ్యం / వైరుధ్యం / స్వీకృతం / నిగమన నియమం
 
-- Occurrences: OLP-0064; first-order-logic/proof-systems/introduction; translation/content/first-order-logic/proof-systems/introduction.tex:67-76; printed/PDF page pending; OLP-0064; first-order-logic/proof-systems/introduction; translation/content/first-order-logic/proof-systems/introduction.tex:78-84; printed/PDF page pending; OLP-0064; first-order-logic/proof-systems/introduction; translation/content/first-order-logic/proof-systems/introduction.tex:86-103; printed/PDF page pending
+- Occurrences: OLP-0064; first-order-logic/proof-systems/introduction; translation/content/first-order-logic/proof-systems/introduction.tex:51-76; printed/PDF page pending; OLP-0064; first-order-logic/proof-systems/introduction; translation/content/first-order-logic/proof-systems/introduction.tex:78-85; printed/PDF page pending; OLP-0064; first-order-logic/proof-systems/introduction; translation/content/first-order-logic/proof-systems/introduction.tex:87-103; printed/PDF page pending
 
-- Please double-check: Please double-check whether “నిగమన వ్యవస్థ / నిగమించదగిన / సిద్ధాంతం / చెల్లుబాటుతనం / నిర్దుష్టత / సంపూర్ణత / అవైరుధ్యం / వైరుధ్యం / స్వీకృతం / నిగమన నియమం” is idiomatic and technically standard for “derivation system / derivable / theorem / validity / soundness / completeness / consistency / inconsistency / axiom / inference rule” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+- Please double-check: Please double-check whether “వ్యుత్పత్తి వ్యవస్థ / వ్యుత్పాదించదగిన / సిద్ధాంతం / చెల్లుబాటుతనం / నిర్దుష్టత / సంపూర్ణత / అవైరుధ్యం / వైరుధ్యం / స్వీకృతం / నిగమన నియమం” is idiomatic and technically standard for “derivation system / derivable / theorem / validity / soundness / completeness / consistency / inconsistency / axiom / inference rule” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-TE-T035 — sequent / sequent calculus / natural deduction / introduction rule / elimination rule / assumption / discharge / tableau / signed formula / closed branch / open branch / axiomatic derivation / axiom schema / modus ponens / resolution / proof-theoretic semantics
 
@@ -130,7 +150,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: సీక్వెంట్ / సీక్వెంట్ కలనం / సహజ నిగమనం / ప్రవేశ నియమం / తొలగింపు నియమం / పరికల్పన / ఉపసంహరణ / టాబ్లో / చిహ్నిత సూత్రం / సంవృత శాఖ / వివృత శాఖ / స్వీకృతాధారిత నిగమనం / స్వీకృత నమూనా / మోడస్ పోనెన్స్ / రిజల్యూషన్ / నిరూపణ-సిద్ధాంత అర్థవిచారం
 
-- Occurrences: OLP-0065; first-order-logic/proof-systems/sequent-calculus; translation/content/first-order-logic/proof-systems/sequent-calculus.tex:13-27; printed/PDF page pending; OLP-0066; first-order-logic/proof-systems/natural-deduction; translation/content/first-order-logic/proof-systems/natural-deduction.tex:13-30; printed/PDF page pending; OLP-0066; first-order-logic/proof-systems/natural-deduction; translation/content/first-order-logic/proof-systems/natural-deduction.tex:43-55; printed/PDF page pending; OLP-0067; first-order-logic/proof-systems/tableaux; translation/content/first-order-logic/proof-systems/tableaux.tex:15-23; printed/PDF page pending; OLP-0068; first-order-logic/proof-systems/axiomatic-deduction; translation/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13-37; printed/PDF page pending; OLP-0068; first-order-logic/proof-systems/axiomatic-deduction; translation/content/first-order-logic/proof-systems/axiomatic-deduction.tex:39-45; printed/PDF page pending
+- Occurrences: OLP-0065; first-order-logic/proof-systems/sequent-calculus; translation/content/first-order-logic/proof-systems/sequent-calculus.tex:13; printed/PDF page pending; OLP-0066; first-order-logic/proof-systems/natural-deduction; translation/content/first-order-logic/proof-systems/natural-deduction.tex:13; printed/PDF page pending; OLP-0066; first-order-logic/proof-systems/natural-deduction; translation/content/first-order-logic/proof-systems/natural-deduction.tex:32-55; printed/PDF page pending; OLP-0067; first-order-logic/proof-systems/tableaux; translation/content/first-order-logic/proof-systems/tableaux.tex:15-29; printed/PDF page pending; OLP-0068; first-order-logic/proof-systems/axiomatic-deduction; translation/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13; printed/PDF page pending; OLP-0068; first-order-logic/proof-systems/axiomatic-deduction; translation/content/first-order-logic/proof-systems/axiomatic-deduction.tex:39-45; printed/PDF page pending
 
 - Please double-check: Please double-check whether “సీక్వెంట్ / సీక్వెంట్ కలనం / సహజ నిగమనం / ప్రవేశ నియమం / తొలగింపు నియమం / పరికల్పన / ఉపసంహరణ / టాబ్లో / చిహ్నిత సూత్రం / సంవృత శాఖ / వివృత శాఖ / స్వీకృతాధారిత నిగమనం / స్వీకృత నమూనా / మోడస్ పోనెన్స్ / రిజల్యూషన్ / నిరూపణ-సిద్ధాంత అర్థవిచారం” is idiomatic and technically standard for “sequent / sequent calculus / natural deduction / introduction rule / elimination rule / assumption / discharge / tableau / signed formula / closed branch / open branch / axiomatic derivation / axiom schema / modus ponens / resolution / proof-theoretic semantics” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
@@ -140,7 +160,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: పూర్వాంగం / ఉత్తరాంగం / ప్రారంభ సీక్వెంట్ / అంత్య సీక్వెంట్ / తార్కిక నియమం / నిర్మాణాత్మక నియమం / ఐగెన్ చరరాశి / బలహీనీకరణ / సంకోచనం / మార్పిడి / కట్
 
-- Occurrences: OLP-0070; first-order-logic/sequent-calculus/rules-and-proofs; translation/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:23-25; printed/PDF page pending; OLP-0070; first-order-logic/sequent-calculus/rules-and-proofs; translation/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:52-61; printed/PDF page pending; OLP-0070; first-order-logic/sequent-calculus/rules-and-proofs; translation/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:64-72; printed/PDF page pending; OLP-0074; first-order-logic/sequent-calculus/derivations; translation/content/first-order-logic/sequent-calculus/derivations.tex:23-34; printed/PDF page pending; OLP-0072; first-order-logic/sequent-calculus/quantifier-rules; translation/content/first-order-logic/sequent-calculus/quantifier-rules.tex:28-32; printed/PDF page pending; OLP-0073; first-order-logic/sequent-calculus/structural-rules; translation/content/first-order-logic/sequent-calculus/structural-rules.tex:23; printed/PDF page pending; OLP-0073; first-order-logic/sequent-calculus/structural-rules; translation/content/first-order-logic/sequent-calculus/structural-rules.tex:37; printed/PDF page pending; OLP-0073; first-order-logic/sequent-calculus/structural-rules; translation/content/first-order-logic/sequent-calculus/structural-rules.tex:51; printed/PDF page pending; OLP-0073; first-order-logic/sequent-calculus/structural-rules; translation/content/first-order-logic/sequent-calculus/structural-rules.tex:68-74; printed/PDF page pending
+- Occurrences: OLP-0070; first-order-logic/sequent-calculus/rules-and-proofs; translation/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:18-26; printed/PDF page pending; OLP-0070; first-order-logic/sequent-calculus/rules-and-proofs; translation/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:52-62; printed/PDF page pending; OLP-0070; first-order-logic/sequent-calculus/rules-and-proofs; translation/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:64-74; printed/PDF page pending; OLP-0074; first-order-logic/sequent-calculus/derivations; translation/content/first-order-logic/sequent-calculus/derivations.tex:23-35; printed/PDF page pending; OLP-0072; first-order-logic/sequent-calculus/quantifier-rules; translation/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27-32; printed/PDF page pending; OLP-0073; first-order-logic/sequent-calculus/structural-rules; translation/content/first-order-logic/sequent-calculus/structural-rules.tex:23; printed/PDF page pending; OLP-0073; first-order-logic/sequent-calculus/structural-rules; translation/content/first-order-logic/sequent-calculus/structural-rules.tex:37; printed/PDF page pending; OLP-0073; first-order-logic/sequent-calculus/structural-rules; translation/content/first-order-logic/sequent-calculus/structural-rules.tex:51; printed/PDF page pending; OLP-0073; first-order-logic/sequent-calculus/structural-rules; translation/content/first-order-logic/sequent-calculus/structural-rules.tex:68-78; printed/PDF page pending
 
 - Please double-check: Please double-check whether “పూర్వాంగం / ఉత్తరాంగం / ప్రారంభ సీక్వెంట్ / అంత్య సీక్వెంట్ / తార్కిక నియమం / నిర్మాణాత్మక నియమం / ఐగెన్ చరరాశి / బలహీనీకరణ / సంకోచనం / మార్పిడి / కట్” is idiomatic and technically standard for “antecedent / succedent / initial sequent / end-sequent / logical rule / structural rule / eigenvariable / weakening / contraction / exchange / cut” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
@@ -150,7 +170,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: స్వావర్తనత్వం / ఏకదిశత / సంక్రామకత్వం / సంహతత్వం
 
-- Occurrences: OLP-0077; first-order-logic/sequent-calculus/proof-theoretic-notions; translation/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:84-90; printed/PDF page pending; OLP-0077; first-order-logic/sequent-calculus/proof-theoretic-notions; translation/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:94-107; printed/PDF page pending; OLP-0077; first-order-logic/sequent-calculus/proof-theoretic-notions; translation/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:108-132; printed/PDF page pending; OLP-0077; first-order-logic/sequent-calculus/proof-theoretic-notions; translation/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:153-173; printed/PDF page pending
+- Occurrences: OLP-0077; first-order-logic/sequent-calculus/proof-theoretic-notions; translation/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:84-87; printed/PDF page pending; OLP-0077; first-order-logic/sequent-calculus/proof-theoretic-notions; translation/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:94-98; printed/PDF page pending; OLP-0077; first-order-logic/sequent-calculus/proof-theoretic-notions; translation/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:108-112; printed/PDF page pending; OLP-0077; first-order-logic/sequent-calculus/proof-theoretic-notions; translation/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:153-161; printed/PDF page pending
 
 - Please double-check: Please double-check whether “స్వావర్తనత్వం / ఏకదిశత / సంక్రామకత్వం / సంహతత్వం” is idiomatic and technically standard for “reflexivity / monotonicity / transitivity / compactness (of derivability)” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
@@ -160,7 +180,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: పరికల్పన / పూర్వాధారం / నిష్కర్ష / ప్రవేశ నియమం / తొలగింపు నియమం / ఉపసంహరించిన / ఉపసంహరించని / ఉప-నిరూపణ
 
-- Occurrences: OLP-0085; first-order-logic/natural-deduction/rules-and-proofs; translation/content/first-order-logic/natural-deduction/rules-and-proofs.tex:16-45; printed/PDF page pending; OLP-0088; first-order-logic/natural-deduction/derivations; translation/content/first-order-logic/natural-deduction/derivations.tex:23-41; printed/PDF page pending; OLP-0095; first-order-logic/natural-deduction/soundness; translation/content/first-order-logic/natural-deduction/soundness.tex:52-58; printed/PDF page pending
+- Occurrences: OLP-0085; first-order-logic/natural-deduction/rules-and-proofs; translation/content/first-order-logic/natural-deduction/rules-and-proofs.tex:15-23; printed/PDF page pending; OLP-0088; first-order-logic/natural-deduction/derivations; translation/content/first-order-logic/natural-deduction/derivations.tex:22-36; printed/PDF page pending; OLP-0095; first-order-logic/natural-deduction/soundness; translation/content/first-order-logic/natural-deduction/soundness.tex:52-58; printed/PDF page pending
 
 - Please double-check: Please double-check whether “పరికల్పన / పూర్వాధారం / నిష్కర్ష / ప్రవేశ నియమం / తొలగింపు నియమం / ఉపసంహరించిన / ఉపసంహరించని / ఉప-నిరూపణ” is idiomatic and technically standard for “assumption / premise / conclusion / introduction rule / elimination rule / discharged / undischarged / subderivation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
@@ -170,7 +190,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: చిహ్నిత సూత్రం / సత్యమూల్య సంకేతం / టాబ్లో / సంవృత శాఖ / వివృత శాఖ / తనిఖీ గుర్తు / ఐగెన్ చరరాశి షరతు / కట్ నియమం
 
-- Occurrences: OLP-0099; first-order-logic/tableaux/rules-and-proofs; translation/content/first-order-logic/tableaux/rules-and-proofs.tex:15-25; printed/PDF page pending; OLP-0099; first-order-logic/tableaux/rules-and-proofs; translation/content/first-order-logic/tableaux/rules-and-proofs.tex:15-25; printed/PDF page pending; OLP-0099; first-order-logic/tableaux/rules-and-proofs; translation/content/first-order-logic/tableaux/rules-and-proofs.tex:44-49; printed/PDF page pending; OLP-0102; first-order-logic/tableaux/derivations; translation/content/first-order-logic/tableaux/derivations.tex:35-40; printed/PDF page pending; OLP-0103; first-order-logic/tableaux/proving-things; translation/content/first-order-logic/tableaux/proving-things.tex:39-47; printed/PDF page pending; OLP-0101; first-order-logic/tableaux/quantifier-rules; translation/content/first-order-logic/tableaux/quantifier-rules.tex:27-56; printed/PDF page pending; OLP-0100; first-order-logic/tableaux/propositional-rules; translation/content/first-order-logic/tableaux/propositional-rules.tex:77-91; printed/PDF page pending
+- Occurrences: OLP-0099; first-order-logic/tableaux/rules-and-proofs; translation/content/first-order-logic/tableaux/rules-and-proofs.tex:15-19; printed/PDF page pending; OLP-0099; first-order-logic/tableaux/rules-and-proofs; translation/content/first-order-logic/tableaux/rules-and-proofs.tex:15-19; printed/PDF page pending; OLP-0099; first-order-logic/tableaux/rules-and-proofs; translation/content/first-order-logic/tableaux/rules-and-proofs.tex:44-52; printed/PDF page pending; OLP-0102; first-order-logic/tableaux/derivations; translation/content/first-order-logic/tableaux/derivations.tex:23-41; printed/PDF page pending; OLP-0103; first-order-logic/tableaux/proving-things; translation/content/first-order-logic/tableaux/proving-things.tex:25-47; printed/PDF page pending; OLP-0101; first-order-logic/tableaux/quantifier-rules; translation/content/first-order-logic/tableaux/quantifier-rules.tex:54-56; printed/PDF page pending; OLP-0100; first-order-logic/tableaux/propositional-rules; translation/content/first-order-logic/tableaux/propositional-rules.tex:77; printed/PDF page pending
 
 - Please double-check: Please double-check whether “చిహ్నిత సూత్రం / సత్యమూల్య సంకేతం / టాబ్లో / సంవృత శాఖ / వివృత శాఖ / తనిఖీ గుర్తు / ఐగెన్ చరరాశి షరతు / కట్ నియమం” is idiomatic and technically standard for “signed formula / truth-value sign / tableau / closed branch / open branch / checkmark / eigenvariable condition / cut rule” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
@@ -180,7 +200,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: స్వీకృతం / స్వీకృత రూపం / స్వీకృతాధారిత నిరూపణ / నిగమన నియమం / మోడస్ పోనెన్స్ / పరిమాణీకరణిక నియమం / నిరూప్యతా సంబంధం / నిరూపణ-సిద్ధాంత భావన / నిగమన సిద్ధాంతం
 
-- Occurrences: OLP-0113; first-order-logic/axiomatic-deduction/rules-and-proofs; translation/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:16-21; printed/PDF page pending; OLP-0113; first-order-logic/axiomatic-deduction/rules-and-proofs; translation/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41; printed/PDF page pending; OLP-0114; first-order-logic/axiomatic-deduction/axioms-rules-propositional; translation/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-17; printed/PDF page pending; OLP-0114; first-order-logic/axiomatic-deduction/axioms-rules-propositional; translation/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-41; printed/PDF page pending; OLP-0115; first-order-logic/axiomatic-deduction/axioms-rules-quantifiers; translation/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-32; printed/PDF page pending; OLP-0118; first-order-logic/axiomatic-deduction/proof-theoretic-notions; translation/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:13-24; printed/PDF page pending; OLP-0121; first-order-logic/axiomatic-deduction/provability-consistency; translation/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:14-17; printed/PDF page pending; OLP-0119; first-order-logic/axiomatic-deduction/deduction-theorem; translation/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:48-50; printed/PDF page pending
+- Occurrences: OLP-0113; first-order-logic/axiomatic-deduction/rules-and-proofs; translation/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:15-22; printed/PDF page pending; OLP-0113; first-order-logic/axiomatic-deduction/rules-and-proofs; translation/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41; printed/PDF page pending; OLP-0114; first-order-logic/axiomatic-deduction/axioms-rules-propositional; translation/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:15-34; printed/PDF page pending; OLP-0114; first-order-logic/axiomatic-deduction/axioms-rules-propositional; translation/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:36-39; printed/PDF page pending; OLP-0115; first-order-logic/axiomatic-deduction/axioms-rules-quantifiers; translation/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23-30; printed/PDF page pending; OLP-0118; first-order-logic/axiomatic-deduction/proof-theoretic-notions; translation/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:13; printed/PDF page pending; OLP-0121; first-order-logic/axiomatic-deduction/provability-consistency; translation/content/first-order-logic/axiomatic-deduction/provability-consistency.tex:15-17; printed/PDF page pending; OLP-0119; first-order-logic/axiomatic-deduction/deduction-theorem; translation/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:48-51; printed/PDF page pending
 
 - Please double-check: Please double-check whether “స్వీకృతం / స్వీకృత రూపం / స్వీకృతాధారిత నిరూపణ / నిగమన నియమం / మోడస్ పోనెన్స్ / పరిమాణీకరణిక నియమం / నిరూప్యతా సంబంధం / నిరూపణ-సిద్ధాంత భావన / నిగమన సిద్ధాంతం” is idiomatic and technically standard for “axiom / axiom instance / axiomatic derivation / inference rule / modus ponens / quantifier rule / derivability relation / proof-theoretic notion / deduction theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
@@ -190,7 +210,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: సంపూర్ణ సమితి / సంతృప్తీకృత సమితి / హెన్కిన్ విస్తరణ / లిండెన్‌బామ్ ఉపసిద్ధాంతం / పద నమూనా / సత్య ఉపసిద్ధాంతం / వర్గీకరణ / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ సిద్ధాంతం / లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతం / స్కోలెమ్ విరోధాభాసం
 
-- Occurrences: OLP-0129; first-order-logic/completeness/complete-consistent-sets; translation/content/first-order-logic/completeness/complete-consistent-sets.tex:19-22; printed/PDF page pending; OLP-0130; first-order-logic/completeness/henkin-expansions; translation/content/first-order-logic/completeness/henkin-expansions.tex:11; printed/PDF page pending; OLP-0130; first-order-logic/completeness/henkin-expansions; translation/content/first-order-logic/completeness/henkin-expansions.tex:40-48; printed/PDF page pending; OLP-0131; first-order-logic/completeness/lindenbaums-lemma; translation/content/first-order-logic/completeness/lindenbaums-lemma.tex:13; printed/PDF page pending; OLP-0132; first-order-logic/completeness/construction-of-model; translation/content/first-order-logic/completeness/construction-of-model.tex:38-44; printed/PDF page pending; OLP-0132; first-order-logic/completeness/construction-of-model; translation/content/first-order-logic/completeness/construction-of-model.tex:174-178; printed/PDF page pending; OLP-0133; first-order-logic/completeness/identity; translation/content/first-order-logic/completeness/identity.tex:21; printed/PDF page pending; OLP-0135; first-order-logic/completeness/compactness; translation/content/first-order-logic/completeness/compactness.tex:28-32; printed/PDF page pending; OLP-0135; first-order-logic/completeness/compactness; translation/content/first-order-logic/completeness/compactness.tex:13-18; printed/PDF page pending; OLP-0137; first-order-logic/completeness/downward-ls; translation/content/first-order-logic/completeness/downward-ls.tex:10-15; printed/PDF page pending; OLP-0137; first-order-logic/completeness/downward-ls; translation/content/first-order-logic/completeness/downward-ls.tex:47; printed/PDF page pending
+- Occurrences: OLP-0129; first-order-logic/completeness/complete-consistent-sets; translation/content/first-order-logic/completeness/complete-consistent-sets.tex:19-23; printed/PDF page pending; OLP-0130; first-order-logic/completeness/henkin-expansions; translation/content/first-order-logic/completeness/henkin-expansions.tex:11; printed/PDF page pending; OLP-0130; first-order-logic/completeness/henkin-expansions; translation/content/first-order-logic/completeness/henkin-expansions.tex:40-48; printed/PDF page pending; OLP-0131; first-order-logic/completeness/lindenbaums-lemma; translation/content/first-order-logic/completeness/lindenbaums-lemma.tex:13; printed/PDF page pending; OLP-0132; first-order-logic/completeness/construction-of-model; translation/content/first-order-logic/completeness/construction-of-model.tex:37-75; printed/PDF page pending; OLP-0132; first-order-logic/completeness/construction-of-model; translation/content/first-order-logic/completeness/construction-of-model.tex:174-178; printed/PDF page pending; OLP-0133; first-order-logic/completeness/identity; translation/content/first-order-logic/completeness/identity.tex:12-22; printed/PDF page pending; OLP-0135; first-order-logic/completeness/compactness; translation/content/first-order-logic/completeness/compactness.tex:28-32; printed/PDF page pending; OLP-0135; first-order-logic/completeness/compactness; translation/content/first-order-logic/completeness/compactness.tex:13; printed/PDF page pending; OLP-0137; first-order-logic/completeness/downward-ls; translation/content/first-order-logic/completeness/downward-ls.tex:9-10; printed/PDF page pending; OLP-0137; first-order-logic/completeness/downward-ls; translation/content/first-order-logic/completeness/downward-ls.tex:47-59; printed/PDF page pending
 
 - Please double-check: Please double-check whether “సంపూర్ణ సమితి / సంతృప్తీకృత సమితి / హెన్కిన్ విస్తరణ / లిండెన్‌బామ్ ఉపసిద్ధాంతం / పద నమూనా / సత్య ఉపసిద్ధాంతం / వర్గీకరణ / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ సిద్ధాంతం / లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతం / స్కోలెమ్ విరోధాభాసం” is idiomatic and technically standard for “complete set / saturated set / Henkin expansion / Lindenbaum's Lemma / term model / Truth Lemma / factoring / finitely satisfiable / Compactness Theorem / Lowenheim--Skolem Theorem / Skolem's Paradox” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
@@ -1013,3 +1033,53 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0131; first-order-logic/completeness/lindenbaums-lemma; translation/content/first-order-logic/completeness/lindenbaums-lemma.tex:85; printed/PDF page pending
 
 - Please double-check: Please double-check that B is restored as the left operand of membership in Gamma_n, matching the scoped sentence and ensuing subset conclusion.
+
+## REV-OLTEINT-001 — OLTEINT-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: closed the universal premise before the premise separator and removed the trailing extra bracket after the conclusion; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0140; first-order-logic/introduction/first-order-logic; translation/content/first-order-logic/introduction/first-order-logic.tex:51-63; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINT-001 is mathematically precise and idiomatic.
+
+## REV-OLTEINT-002 — OLTEINT-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: moved the closing bracket to the end of the universal premise in both restatements and removed each extra bracket after the conclusion; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0140; first-order-logic/introduction/first-order-logic; translation/content/first-order-logic/introduction/first-order-logic.tex:74-97; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINT-002 is mathematically precise and idiomatic.
+
+## REV-OLTEINT-003 — OLTEINT-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: named predicates rather than constants as the symbols that may have more than one place; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0143; first-order-logic/introduction/satisfaction; translation/content/first-order-logic/introduction/satisfaction.tex:13-30; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINT-003 is mathematically precise and idiomatic.
+
+## REV-OLTEINT-004 — OLTEINT-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: replaced the out-of-domain list 1,2,3 with 0,1,2, matching the declared domain and continuation; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0143; first-order-logic/introduction/satisfaction; translation/content/first-order-logic/introduction/satisfaction.tex:48-78; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINT-004 is mathematically precise and idiomatic.
+
+## REV-OLTEINT-005 — OLTEINT-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored v_0 inside the P atom under the universal quantifier; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0146; first-order-logic/introduction/substitution; translation/content/first-order-logic/introduction/substitution.tex:13-33; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINT-005 is mathematically precise and idiomatic.

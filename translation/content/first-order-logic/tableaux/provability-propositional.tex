@@ -16,7 +16,7 @@
 \olsection{\usetoken{S}{derivability} మరియు ప్రతిపాదనాత్మక సంయోజకాలు}
 
 \begin{explain}
-  టాబ్లోల !!{derivability} సంబంధం~$\Proves$, $!A \land !B
+  టాబ్లోల \tetoken{వ్యుత్పాద్యత}{!!{derivability}} సంబంధం~$\Proves$, $!A \land !B
   \Proves !A$, $!A, !A \lif !B \Proves !B$ (మోడస్ పోనెన్స్) వంటి
   ప్రతిపాదనాత్మక సంయోజకాల ప్రాథమిక వాస్తవాలను స్థాపించగలిగేంత
   బలమైనదని చూపుతాం. సంపూర్ణతా సిద్ధాంతపు నిరూపణకు ఈ వాస్తవాలు అవసరం.
@@ -35,7 +35,7 @@
   \begin{enumerate}
   \item $\{\sFmla{\False}{!A}, \sFmla{\True}{!A \land !B}\}$,
     $\{\sFmla{\False}{!B}, \sFmla{\True}{!A \land !B}\}$ రెండింటికీ
-    సంవృత !!{tableau}s ఉన్నాయి:
+    సంవృత \tetoken{టాబ్లోలు}{!!{tableau}s} ఉన్నాయి:
     \begin{oltableau}{}
       [\sFmla{\False}{\formula{A}}, just=\TAss
         [\sFmla{\True}{\formula{A} \land \formula{B}}, just=\TAss
@@ -64,7 +64,7 @@
     అన్ని ఎనిమిది చిహ్నిత సూత్రాల కుండలీకరణాలను సరిచేశాం; సంకేతాలు,
     సూత్రాలు, శాఖల మూసివేతలు మారలేదు.}
     \item $\{\sFmla{\True}{!A}, \sFmla{\True}{!B},
-      \sFmla{\False}{!A \land !B}\}$కు సంవృత !!{tableau} ఇది:
+      \sFmla{\False}{!A \land !B}\}$కు సంవృత \tetoken{టాబ్లో}{!!{tableau}} ఇది:
       \begin{oltableau}
         [\sFmla{\False}{\formula{A} \land \formula{B}}, just = \TAss
           [\sFmla{\True}{\formula{A}}, just = \TAss
@@ -89,7 +89,7 @@
   \begin{enumerate}
   \item $\{\sFmla{\True}{!A \lor !B},
     \sFmla{\True}{\lnot !A}, \sFmla{\True}{\lnot !B}\}$కు ఒక
-    సంవృత !!{tableau} ఇస్తాం:
+    సంవృత \tetoken{టాబ్లో}{!!{tableau}} ఇస్తాం:
     \begin{oltableau}
       [\sFmla{\True}{\formula{A} \lor \formula{B}}, just = \TAss
         [\sFmla{\True}{\lnot \formula{A}}, just = \TAss
@@ -106,7 +106,7 @@
     \end{oltableau}
   \item $\{\sFmla{\False}{!A \lor !B}, \sFmla{\True}{!A}\}$,
     $\{\sFmla{\False}{!A \lor !B}, \sFmla{\True}{!B}\}$ రెండింటికీ
-    సంవృత !!{tableau}s ఉన్నాయి:
+    సంవృత \tetoken{టాబ్లోలు}{!!{tableau}s} ఉన్నాయి:
     \begin{oltableau}{}
       [\sFmla{\False}{\formula{A} \lor \formula{B}}, just=\TAss
         [\sFmla{\True}{\formula{A}}, just=\TAss
@@ -141,7 +141,7 @@
 \begin{proof}
   \begin{enumerate}
     \item $\{\sFmla{\False}{!B}, \sFmla{\True}{!A \lif !B},
-      \sFmla{\True}{!A}\}$కు సంవృత !!{tableau} ఉంది:
+      \sFmla{\True}{!A}\}$కు సంవృత \tetoken{టాబ్లో}{!!{tableau}} ఉంది:
       \begin{oltableau}
         [\sFmla{\False}{\formula{B}}, just=\TAss
           [\sFmla{\True}{\formula{A} \lif \formula{B}}, just=\TAss
@@ -155,7 +155,7 @@
     \item $\{\sFmla{\False}{!A \lif !B},
       \sFmla{\True}{\lnot !A}\}$,
       $\{\sFmla{\False}{!A \lif !B}, \sFmla{\True}{!B}\}$ రెండింటికీ
-      సంవృత !!{tableau}s ఉన్నాయి:
+      సంవృత \tetoken{టాబ్లోలు}{!!{tableau}s} ఉన్నాయి:
       \begin{oltableau}
         [\sFmla{\False}{\formula{A} \lif \formula{B}}, just = \TAss
           [\sFmla{\True}{\lnot \formula{A}}, just = \TAss

@@ -13,55 +13,55 @@
 \olsection{నిర్దుష్టత}
 
 \begin{explain}
-సహజ నిగమనం వంటి !!^a{derivation} వ్యవస్థ, వాస్తవంగా అనుగమించని
-విషయాలను !!{derive} చేయలేకపోతే \emph{నిర్దుష్టమైనది}. అందువల్ల
-నిర్దుష్టత అనేది !!{derivation} వ్యవస్థలకు ఒక రకమైన హామీగల భద్రతా
+సహజ నిగమనం వంటి \tetoken{ఒక వ్యుత్పత్తి}{!!^a{derivation}} వ్యవస్థ, వాస్తవంగా అనుగమించని
+విషయాలను \tetoken{నిగమనం}{!!{derive}} చేయలేకపోతే \emph{నిర్దుష్టమైనది}. అందువల్ల
+నిర్దుష్టత అనేది \tetoken{వ్యుత్పత్తి}{!!{derivation}} వ్యవస్థలకు ఒక రకమైన హామీగల భద్రతా
 ధర్మం. పరిశీలిస్తున్న నిరూపణ-సిద్ధాంత ధర్మాన్ని బట్టి, ఉదాహరణకు
 కిందివి తెలుసుకోవాలనుకుంటాం:
 \begin{enumerate}
-\item ప్రతి !!{derivable} !!{sentence} ఒక \iftag{FOL}{చెల్లుబాటు
+\item ప్రతి \tetoken{వ్యుత్పాదించదగిన}{!!{derivable}} \tetoken{వాక్యం}{!!{sentence}} ఒక \iftag{FOL}{చెల్లుబాటు
   అయ్యేది}{సర్వసత్యం};
-\item ఒక !!a{sentence} కొన్ని ఇతర వాక్యాల నుంచి !!{derivable} అయితే,
+\item ఒక \tetoken{వాక్యం}{!!a{sentence}} కొన్ని ఇతర వాక్యాల నుంచి \tetoken{వ్యుత్పాదించదగిన}{!!{derivable}} అయితే,
   అది వాటి పర్యవసానం కూడా;
-\item ఒక !!{sentence}s సమితి వైరుధ్యభరితమైతే, అది అసంతృప్తమైనది.
+\item ఒక \tetoken{వాక్యాలు}{!!{sentence}s} సమితి వైరుధ్యభరితమైతే, అది అసంతృప్తమైనది.
 \end{enumerate}
-ఇవి ఒక !!a{derivation} వ్యవస్థకు ముఖ్యమైన ధర్మాలు. వీటిలో ఏదైనా
-చెల్లకపోతే ఆ !!{derivation} వ్యవస్థ లోపభూయిష్టమైనది---అది మరీ ఎక్కువ
-విషయాలను !!{derive} చేస్తుంది. కాబట్టి ఒక !!{derivation} వ్యవస్థ
+ఇవి ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}} వ్యవస్థకు ముఖ్యమైన ధర్మాలు. వీటిలో ఏదైనా
+చెల్లకపోతే ఆ \tetoken{వ్యుత్పత్తి}{!!{derivation}} వ్యవస్థ లోపభూయిష్టమైనది---అది మరీ ఎక్కువ
+విషయాలను \tetoken{నిగమనం}{!!{derive}} చేస్తుంది. కాబట్టి ఒక \tetoken{వ్యుత్పత్తి}{!!{derivation}} వ్యవస్థ
 నిర్దుష్టతను స్థాపించడం అత్యంత ముఖ్యం.
 \end{explain}
 
 \begin{thm}[నిర్దుష్టత]
 \ollabel{thm:soundness}
-!!{undischarged} పరికల్పనలు $\Gamma$ నుంచి $!A$ !!{derivable} అయితే,
+\tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనలు $\Gamma$ నుంచి $!A$ \tetoken{వ్యుత్పాదించదగిన}{!!{derivable}} అయితే,
 $\Gamma \Entails !A$.
 \end{thm}
 
 \begin{proof}
-$!A$ యొక్క ఒక !!a{derivation}ను $\delta$ అందాం. $\delta$లోని
+$!A$ యొక్క ఒక \tetoken{వ్యుత్పత్తిని}{!!a{derivation}} $\delta$ అందాం. $\delta$లోని
 నిగమనాల సంఖ్యపై ఆగమనం చేస్తాం.
 
 ఆగమన ప్రాతిపదికలో నిగమనాల సంఖ్య $0$ అయినప్పుడు ప్రతిపాదనను చూపుతాం.
-ఈ సందర్భంలో $\delta$ ఒకే !!{sentence}~$!A$, అంటే ఒక పరికల్పనను మాత్రమే
-కలిగి ఉంటుంది. నిగమనాల ద్వారా మాత్రమే పరికల్పనలు !!{discharged}
-కాగలవు; ఇక్కడ నిగమనాలే లేవు కనుక ఆ పరికల్పన !!{undischarged}గానే
-ఉంటుంది. అందువల్ల నిరూపణలోని !!{undischarged} పరికల్పనలన్నిటినీ
-సంతృప్తిపరచే ఏ \iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+ఈ సందర్భంలో $\delta$ ఒకే \tetoken{వాక్యం}{!!{sentence}}~$!A$, అంటే ఒక పరికల్పనను మాత్రమే
+కలిగి ఉంటుంది. నిగమనాల ద్వారా మాత్రమే పరికల్పనలు \tetoken{ఉపసంహరించిన}{!!{discharged}}
+కాగలవు; ఇక్కడ నిగమనాలే లేవు కనుక ఆ పరికల్పన \tetoken{ఉపసంహరించకుండానే}{!!{undischarged}}
+ఉంటుంది. అందువల్ల నిరూపణలోని \tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనలన్నిటినీ
+సంతృప్తిపరచే ఏ \iftag{FOL}{\tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M}$}{\tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}~$\pAssign{v}$}
 అయినా $!A$ను కూడా సంతృప్తిపరుస్తుంది.
 
 ఇప్పుడు ఆగమన మెట్టు. $\delta$లో $n$ నిగమనాలున్నాయని అనుకుందాం.
 అన్నిటికంటే కింది నిగమనపు పూర్వాధారం(లు), ఒక్కొక్కదానిలో $n$ కంటే
-తక్కువ నిగమనాలు గల ఉప-!!{derivation}sను ఉపయోగించి !!{derive} చేయబడ్డాయి.
+తక్కువ నిగమనాలు గల ఉప-\tetoken{వ్యుత్పత్తులను}{!!{derivation}s} ఉపయోగించి \tetoken{నిగమనం}{!!{derive}} చేయబడ్డాయి.
 ఆగమన పరికల్పనను అనుకుందాం: అన్నిటికంటే కింది నిగమనపు పూర్వాధారాలు,
-ఆ పూర్వాధారాలతో ముగిసే ఉప-!!{derivation}sలోని !!{undischarged}
+ఆ పూర్వాధారాలతో ముగిసే ఉప-\tetoken{వ్యుత్పత్తులలోని}{!!{derivation}s} \tetoken{ఉపసంహరించని}{!!{undischarged}}
 పరికల్పనల నుంచి అనుగమిస్తాయి. నిష్కర్ష~$!A$, మొత్తం నిరూపణలోని
-!!{undischarged} పరికల్పనల నుంచి అనుగమిస్తుందని చూపాలి.
+\tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనల నుంచి అనుగమిస్తుందని చూపాలి.
 
 అన్నిటికంటే కింది నిగమనం రకాన్ని బట్టి సందర్భాలను వేరుచేస్తాం.
 మొదట ఒకే పూర్వాధారం గల నిగమనాలను పరిశీలిస్తాం.
 
 \begin{enumerate}
-\item చివరి నిగమనం \Intro{\lnot} అనుకుందాం: !!{derivation} రూపం
+\item చివరి నిగమనం \Intro{\lnot} అనుకుందాం: \tetoken{వ్యుత్పత్తి}{!!{derivation}} రూపం
   ఇలా ఉంటుంది:
   \begin{prooftree}
     \AxiomC{$\Gamma, \Discharge{!A}{n}$}
@@ -70,9 +70,9 @@ $!A$ యొక్క ఒక !!a{derivation}ను $\delta$ అందాం. $\de
     \DischargeRule{\Intro{\lnot}}{n}
     \UnaryInfC{$\lnot !A$}
   \end{prooftree}
-  ఆగమన పరికల్పన ప్రకారం $\delta_1$లోని !!{undischarged} పరికల్పనలు
+  ఆగమన పరికల్పన ప్రకారం $\delta_1$లోని \tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనలు
   $\Gamma \cup \{!A\}$ నుంచి $\lfalse$ అనుగమిస్తుంది. ఒక
-  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}ను
+  \iftag{FOL}{\tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct{M}$}{\tetoken{ఒక సత్యమూల్య కేటాయింపు}{!!a{valuation}}~$\pAssign{v}$}ను
   పరిశీలించండి. $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ అయితే
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\lnot !A}$ అని చూపాలి. ప్రతిపక్ష
   నిరూపణ కోసం $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ కానీ
@@ -84,7 +84,7 @@ $!A$ యొక్క ఒక !!a{derivation}ను $\delta$ అందాం. $\de
 
 \item చివరి నిగమనం \Elim{\land}: దీనికి రెండు రూపాలున్నాయి:
   $!A \land !B$ అనే పూర్వాధారం నుంచి $!A$ లేదా $!B$ను నిగమించవచ్చు.
-  మొదటి సందర్భాన్ని పరిశీలిద్దాం. !!{derivation}~$\delta$ ఇలా ఉంటుంది:
+  మొదటి సందర్భాన్ని పరిశీలిద్దాం. \tetoken{వ్యుత్పత్తి}{!!{derivation}}~$\delta$ ఇలా ఉంటుంది:
   \begin{prooftree}
     \AxiomC{$\Gamma$}
     \RightLabel{$\delta_1$}
@@ -92,9 +92,9 @@ $!A$ యొక్క ఒక !!a{derivation}ను $\delta$ అందాం. $\de
     \RightLabel{\Elim{\land}}
     \UnaryInfC{$!A$}
   \end{prooftree}
-  ఆగమన పరికల్పన ప్రకారం $\delta_1$లోని !!{undischarged} పరికల్పనలు
+  ఆగమన పరికల్పన ప్రకారం $\delta_1$లోని \tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనలు
   $\Gamma$ నుంచి $!A \land !B$ అనుగమిస్తుంది. ఒక
-  \iftag{FOL}{!!a{structure}~$\Struct{M}$ను}{సత్యనిర్దేశం~$\pAssign{v}$ను}
+  \iftag{FOL}{\tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct{M}$ను}{సత్యనిర్దేశం~$\pAssign{v}$ను}
   పరిశీలించండి.
   \sourcecorrection{OLTEND-004}{మూలంలో “నిర్మాణం” అనే నామపదాన్ని
   ట్యాగ్ వెలుపల ఉంచడం వల్ల ప్రతిపాదనాత్మక రూపం “నిర్మాణం~$v$”గా
@@ -112,7 +112,7 @@ $!A$ యొక్క ఒక !!a{derivation}ను $\delta$ అందాం. $\de
 
 \item చివరి నిగమనం \Intro{\lor}: దీనికి రెండు రూపాలున్నాయి: పూర్వాధారం
   $!A$ నుంచి లేదా పూర్వాధారం $!B$ నుంచి $!A \lor !B$ను నిగమించవచ్చు.
-  మొదటి సందర్భాన్ని పరిశీలిద్దాం. !!{derivation} రూపం ఇలా ఉంటుంది:
+  మొదటి సందర్భాన్ని పరిశీలిద్దాం. \tetoken{వ్యుత్పత్తి}{!!{derivation}} రూపం ఇలా ఉంటుంది:
   \begin{prooftree}
     \AxiomC{$\Gamma$}
     \RightLabel{$\delta_1$}
@@ -120,9 +120,9 @@ $!A$ యొక్క ఒక !!a{derivation}ను $\delta$ అందాం. $\de
     \RightLabel{\Intro{\lor}}
     \UnaryInfC{$!A \lor !B$}
   \end{prooftree}
-  ఆగమన పరికల్పన ప్రకారం $\delta_1$లోని !!{undischarged} పరికల్పనలు
+  ఆగమన పరికల్పన ప్రకారం $\delta_1$లోని \tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనలు
   $\Gamma$ నుంచి $!A$ అనుగమిస్తుంది. ఒక
-  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}ను
+  \iftag{FOL}{\tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct{M}$}{\tetoken{ఒక సత్యమూల్య కేటాయింపు}{!!a{valuation}}~$\pAssign{v}$}ను
   పరిశీలించండి. $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ అయితే
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lor !B}$ అని చూపాలి.
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ అనుకుందాం; ఆగమన పరికల్పన
@@ -140,14 +140,14 @@ $!A$ యొక్క ఒక !!a{derivation}ను $\delta$ అందాం. $\de
     \DischargeRule{\Intro{\lif}}{n}
     \UnaryInfC{$!A \lif !B$}
   \end{prooftree}
-  ఆగమన పరికల్పన ప్రకారం $\delta_1$లోని !!{undischarged} పరికల్పనల
+  ఆగమన పరికల్పన ప్రకారం $\delta_1$లోని \tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనల
   నుంచి $!B$ అనుగమిస్తుంది; అంటే
   $\Gamma \cup \{!A\} \Entails !B$. ఒక
-  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}ను
+  \iftag{FOL}{\tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct{M}$}{\tetoken{ఒక సత్యమూల్య కేటాయింపు}{!!a{valuation}}~$\pAssign{v}$}ను
   పరిశీలించండి. చివరి నిగమనం వద్ద $!A$ ఉపసంహరించబడింది కనుక
-  $\delta$లోని !!{undischarged} పరికల్పనలు $\Gamma$ మాత్రమే. కాబట్టి
+  $\delta$లోని \tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనలు $\Gamma$ మాత్రమే. కాబట్టి
   $\Gamma \Entails !A \lif !B$ అని చూపాలి. ప్రతిపక్ష నిరూపణ కోసం,
-  ఏదో \iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}కు
+  ఏదో \iftag{FOL}{\tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M}$}{\tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}~$\pAssign{v}$}కు
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ కానీ
   $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A \lif !B}$ అనుకుందాం. అప్పుడు
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ మరియు
@@ -185,11 +185,11 @@ $!A$ యొక్క ఒక !!a{derivation}ను $\delta$ అందాం. $\de
     \RightLabel{\Intro{\lforall}}
     \UnaryInfC{$\lforall[x][!A(x)]$}
   \end{prooftree}
-  ఆగమన పరికల్పన ప్రకారం పూర్వాధారం $!A(a)$ అనేది !!{undischarged}
+  ఆగమన పరికల్పన ప్రకారం పూర్వాధారం $!A(a)$ అనేది \tetoken{ఉపసంహరించని}{!!{undischarged}}
   పరికల్పనలు $\Gamma$ యొక్క పర్యవసానం. $\Sat{M}{\Gamma}$ అయ్యే ఒక
   నిర్మాణం $\Struct{M}$ను పరిశీలించండి. మనం
   $\Sat{M}{\lforall[x][!A(x)]}$ అని చూపాలి. $\lforall[x][!A(x)]$
-  ఒక !!a{sentence} కనుక ప్రతి చరరాశి నిర్దేశం~$s$కు
+  ఒక \tetoken{వాక్యం}{!!a{sentence}} కనుక ప్రతి చరరాశి నిర్దేశం~$s$కు
   $\Sat{M}{!A(x)}[s]$ అని చూపాలి
   (\olref[syn][ass]{prop:sat-quant}). $\Gamma$ అంతా వాక్యాలతోనే
   కూడి ఉంది కనుక ప్రతి $!B \in \Gamma$కు
@@ -198,7 +198,7 @@ $!A$ యొక్క ఒక !!a{derivation}ను $\delta$ అందాం. $\de
   $\Struct{M'}$ను తీసుకోండి. $a$ అనేది $\Gamma$లో కనిపించదు కనుక
   \olref[syn][ext]{cor:extensionality-sent} ప్రకారం
   $\Sat{M'}{\Gamma}$. $\Gamma \Entails !A(a)$ కనుక
-  $\Sat{M'}{!A(a)}$. $!A(a)$ ఒక !!a{sentence} కనుక
+  $\Sat{M'}{!A(a)}$. $!A(a)$ ఒక \tetoken{వాక్యం}{!!a{sentence}} కనుక
   \olref[syn][ass]{prop:sentence-sat-true} ప్రకారం
   $\Sat{M'}{!A(a)}[s]$. $!A(a)$ అనేది
   $\Subst{!A(x)}{a}{x}$ మాత్రమేనని గుర్తుచేసుకుంటే,
@@ -232,13 +232,13 @@ $!A$ యొక్క ఒక !!a{derivation}ను $\delta$ అందాం. $\de
     \RightLabel{\Intro{\land}}
     \BinaryInfC{$!A \land !B$}
   \end{prooftree}
-  ఆగమన పరికల్పన ప్రకారం $\delta_1$లోని !!{undischarged} పరికల్పనలు
+  ఆగమన పరికల్పన ప్రకారం $\delta_1$లోని \tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనలు
   $\Gamma_1$ నుంచి $!A$ అనుగమిస్తుంది; $\delta_2$లోని
-  !!{undischarged} పరికల్పనలు $\Gamma_2$ నుంచి $!B$ అనుగమిస్తుంది.
-  $\delta$లోని !!{undischarged} పరికల్పనలు $\Gamma_1 \cup \Gamma_2$;
+  \tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనలు $\Gamma_2$ నుంచి $!B$ అనుగమిస్తుంది.
+  $\delta$లోని \tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనలు $\Gamma_1 \cup \Gamma_2$;
   కాబట్టి $\Gamma_1 \cup \Gamma_2 \Entails !A \land !B$ అని చూపాలి.
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_1 \cup \Gamma_2}$ అయ్యే
-  ఒక \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}ను
+  ఒక \iftag{FOL}{\tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct{M}$}{\tetoken{ఒక సత్యమూల్య కేటాయింపు}{!!a{valuation}}~$\pAssign{v}$}ను
   పరిశీలించండి. $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_1}$, మరియు
   $\Gamma_1 \Entails !A$ కనుక
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. అలాగే
@@ -249,7 +249,7 @@ $!A$ యొక్క ఒక !!a{derivation}ను $\delta$ అందాం. $\de
 \item చివరి నిగమనం \Elim{\lor}: అభ్యాసం.
 
 \item చివరి నిగమనం \Elim{\lif}. $!A \lif !B$, $!A$ అనే
-  పూర్వాధారాల నుంచి $!B$ను నిగమిస్తాం. !!{derivation}~$\delta$ ఇలా
+  పూర్వాధారాల నుంచి $!B$ను నిగమిస్తాం. \tetoken{వ్యుత్పత్తి}{!!{derivation}}~$\delta$ ఇలా
   ఉంటుంది:
   \begin{prooftree}
     \AxiomC{$\Gamma_1$}
@@ -261,10 +261,10 @@ $!A$ యొక్క ఒక !!a{derivation}ను $\delta$ అందాం. $\de
     \RightLabel{\Elim{\lif}}
     \BinaryInfC{$!B$}
   \end{prooftree}
-  ఆగమన పరికల్పన ప్రకారం $\delta_1$లోని !!{undischarged} పరికల్పనలు
+  ఆగమన పరికల్పన ప్రకారం $\delta_1$లోని \tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనలు
   $\Gamma_1$ నుంచి $!A \lif !B$ అనుగమిస్తుంది; $\delta_2$లోని
-  !!{undischarged} పరికల్పనలు $\Gamma_2$ నుంచి $!A$ అనుగమిస్తుంది.
-  ఒక \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}ను
+  \tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనలు $\Gamma_2$ నుంచి $!A$ అనుగమిస్తుంది.
+  ఒక \iftag{FOL}{\tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct{M}$}{\tetoken{ఒక సత్యమూల్య కేటాయింపు}{!!a{valuation}}~$\pAssign{v}$}ను
   పరిశీలించండి. $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_1 \cup
     \Gamma_2}$ అయితే $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$ అని చూపాలి.
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_1 \cup \Gamma_2}$ అనుకుందాం.
@@ -308,11 +308,11 @@ $\Gamma$ సంతృప్తమైతే అది అవైరుధ్యమ
 \begin{proof}
 ప్రతిపక్షాన్ని నిరూపిస్తాం. $\Gamma$ అవైరుధ్యమైనది కాదనుకుందాం.
 అప్పుడు $\Gamma \Proves \lfalse$; అంటే $\Gamma$లోని
-!!{undischarged} పరికల్పనల నుంచి $\lfalse$ యొక్క ఒక !!a{derivation}
+\tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనల నుంచి $\lfalse$ యొక్క ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}
 ఉంటుంది. \olref{thm:soundness} ప్రకారం $\Gamma$ను సంతృప్తిపరచే ఏ
-\iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+\iftag{FOL}{\tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M}$}{\tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}~$\pAssign{v}$}
 అయినా $\lfalse$ను సంతృప్తిపరచాలి. ప్రతి
-\iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}కు
+\iftag{FOL}{\tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M}$}{\tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}~$\pAssign{v}$}కు
 $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{\lfalse}$ కనుక ఏ
 \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} కూడా $\Gamma$ను
 సంతృప్తిపరచలేదు; అంటే $\Gamma$ సంతృప్తం కాదు.

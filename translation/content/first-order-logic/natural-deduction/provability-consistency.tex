@@ -12,7 +12,7 @@
 
 \olsection{\usetoken{S}{derivability} మరియు అవైరుధ్యం}
 
-ఇప్పుడు !!{derivability} సంబంధపు అనేక ధర్మాలను స్థాపిస్తాం. అవి
+ఇప్పుడు \tetoken{వ్యుత్పాద్యత}{!!{derivability}} సంబంధపు అనేక ధర్మాలను స్థాపిస్తాం. అవి
 స్వతంత్రంగా ఆసక్తికరమైనవి; అంతేకాక ప్రతి ఒక్కటీ సంపూర్ణతా సిద్ధాంతపు
 నిరూపణలో ఒక పాత్ర పోషిస్తుంది.
 
@@ -22,9 +22,9 @@
 \end{prop}
 
 \begin{proof}
-$\Gamma$ నుంచి $!A$ యొక్క !!{derivation}ను $\delta_1$ అనీ,
-$\Gamma \cup \{!A\}$ నుంచి $\lfalse$ యొక్క !!{derivation}ను
-$\delta_2$ అనీ అందాం. అప్పుడు కిందివిధంగా !!{derive} చేయవచ్చు:
+$\Gamma$ నుంచి $!A$ యొక్క \tetoken{వ్యుత్పత్తిని}{!!{derivation}} $\delta_1$ అనీ,
+$\Gamma \cup \{!A\}$ నుంచి $\lfalse$ యొక్క \tetoken{వ్యుత్పత్తిని}{!!{derivation}}
+$\delta_2$ అనీ అందాం. అప్పుడు కిందివిధంగా \tetoken{నిగమనం}{!!{derive}} చేయవచ్చు:
 \begin{prooftree}
 \AxiomC{$\Gamma, \Discharge{!A}{1}$}
 \RightLabel{$\delta_2$}
@@ -37,8 +37,8 @@ $\delta_2$ అనీ అందాం. అప్పుడు కిందివ�
 \RightLabel{\Elim{\lnot}}
 \BinaryInfC{$\lfalse$}
 \end{prooftree}
-కొత్త !!{derivation}లో పరికల్పన~$!A$ !!{discharged} అయింది; కాబట్టి
-అది $\Gamma$ నుంచి ఒక !!a{derivation}.
+కొత్త \tetoken{వ్యుత్పత్తిలో}{!!{derivation}} పరికల్పన~$!A$ \tetoken{ఉపసంహరించిన}{!!{discharged}} అయింది; కాబట్టి
+అది $\Gamma$ నుంచి ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}.
 \end{proof}
 
 \begin{prop}
@@ -48,10 +48,10 @@ $\Gamma \Proves !A$ అయితే, అప్పుడు మాత్రమే
 \end{prop}
 
 \begin{proof}
-మొదట $\Gamma \Proves !A$ అనుకుందాం; అంటే !!{undischarged}
-పరికల్పనలు~$\Gamma$ నుంచి $!A$ యొక్క ఒక !!a{derivation}~$\delta_0$
+మొదట $\Gamma \Proves !A$ అనుకుందాం; అంటే \tetoken{ఉపసంహరించని}{!!{undischarged}}
+పరికల్పనలు~$\Gamma$ నుంచి $!A$ యొక్క ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}~$\delta_0$
 ఉంది. కిందివిధంగా $\Gamma \cup \{\lnot !A\}$ నుంచి $\lfalse$ యొక్క
-ఒక !!a{derivation}ను పొందుతాం:
+ఒక \tetoken{వ్యుత్పత్తిని}{!!a{derivation}} పొందుతాం:
 \begin{prooftree}
   \AxiomC{$\lnot !A$}
   \AxiomC{$\Gamma$}
@@ -62,10 +62,10 @@ $\Gamma \Proves !A$ అయితే, అప్పుడు మాత్రమే
 \end{prooftree}
 
 ఇప్పుడు $\Gamma \cup \{\lnot !A\}$ వైరుధ్యభరితమని అనుకుందాం;
-దానికి అనుగుణంగా $\Gamma \cup \{\lnot !A\}$లోని !!{undischarged}
-పరికల్పనల నుంచి $\lfalse$ యొక్క !!{derivation}ను $\delta_1$ అందాం.
+దానికి అనుగుణంగా $\Gamma \cup \{\lnot !A\}$లోని \tetoken{ఉపసంహరించని}{!!{undischarged}}
+పరికల్పనల నుంచి $\lfalse$ యొక్క \tetoken{వ్యుత్పత్తిని}{!!{derivation}} $\delta_1$ అందాం.
 $\FalseCl$ను ఉపయోగించి $\Gamma$ ఒక్కదాని నుంచి $!A$ యొక్క ఒక
-!!a{derivation}ను ఇలా పొందుతాం:
+\tetoken{వ్యుత్పత్తిని}{!!a{derivation}} ఇలా పొందుతాం:
 \begin{prooftree}
   \AxiomC{$\Gamma, \Discharge{\lnot !A}{1}$}
   \RightLabel{$\delta_1$}
@@ -88,7 +88,7 @@ $\Gamma \cup \{!A\}$ వైరుధ్యభరితమని నిరూప�
 
 \begin{proof}
   $\Gamma \Proves !A$, $\lnot !A \in \Gamma$ అనుకుందాం. అప్పుడు
-  $\Gamma$ నుంచి $!A$ యొక్క ఒక !!a{derivation}~$\delta$ ఉంటుంది.
+  $\Gamma$ నుంచి $!A$ యొక్క ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}~$\delta$ ఉంటుంది.
   $\Elim{\lnot}$ నియమాన్ని ఇలా సరళంగా వర్తింపజేయండి:
   \begin{prooftree}
     \AxiomC{$\lnot !A$}
@@ -98,7 +98,7 @@ $\Gamma \cup \{!A\}$ వైరుధ్యభరితమని నిరూప�
     \RightLabel{\Elim{\lnot}}
     \BinaryInfC{$\lfalse$}
   \end{prooftree}
-  $\lnot !A \in \Gamma$ కనుక అన్ని !!{undischarged} పరికల్పనలూ
+  $\lnot !A \in \Gamma$ కనుక అన్ని \tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనలూ
   $\Gamma$లోనే ఉన్నాయి; అందువల్ల $\Gamma \Proves \lfalse$.
 \end{proof}
 
@@ -109,8 +109,8 @@ $\Gamma \cup \{!A\}$ వైరుధ్యభరితమని నిరూప�
 
 \begin{proof}
 $\Gamma \cup \{ !A \}$ నుంచి $\lfalse$ను, $\Gamma \cup \{ \lnot !A \}$
-నుంచి $\lfalse$ను ఇచ్చే !!{derivation}s~$\delta_1$, $\delta_2$ వరుసగా ఉన్నాయి.
-అప్పుడు కిందివిధంగా !!{derive} చేయవచ్చు:
+నుంచి $\lfalse$ను ఇచ్చే \tetoken{వ్యుత్పత్తులు}{!!{derivation}s}~$\delta_1$, $\delta_2$ వరుసగా ఉన్నాయి.
+అప్పుడు కిందివిధంగా \tetoken{నిగమనం}{!!{derive}} చేయవచ్చు:
 \begin{prooftree}
 \AxiomC{$\Gamma, \Discharge{\lnot !A}{2}$}
 \RightLabel{$\delta_2$}
@@ -125,8 +125,8 @@ $\Gamma \cup \{ !A \}$ నుంచి $\lfalse$ను, $\Gamma \cup \{ \lnot !A
 \RightLabel{\Elim{\lnot}}
 \BinaryInfC{$\lfalse$}
 \end{prooftree}
-$!A$, $\lnot !A$ పరికల్పనలు !!{discharged} అయ్యాయి కనుక ఇది
-$\Gamma$ ఒక్కదాని నుంచి $\lfalse$ యొక్క ఒక !!a{derivation}. అందువల్ల
+$!A$, $\lnot !A$ పరికల్పనలు \tetoken{ఉపసంహరించిన}{!!{discharged}} అయ్యాయి కనుక ఇది
+$\Gamma$ ఒక్కదాని నుంచి $\lfalse$ యొక్క ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}. అందువల్ల
 $\Gamma$ వైరుధ్యభరితమైనది.
 \end{proof}
 

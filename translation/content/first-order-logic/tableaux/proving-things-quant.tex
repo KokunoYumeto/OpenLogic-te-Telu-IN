@@ -15,16 +15,16 @@
 ఉల్లంఘించకుండా చూసుకోవాలి; దానికోసం కొన్ని నిగమనాలను చేసే క్రమాన్ని
 కొన్నిసార్లు మార్చి ప్రయత్నించాలి. సాధారణంగా ఐగెన్ చరరాశి షరతుకు
 లోబడే నియమాలను ముందుగా చూసుకోవడం సహాయపడుతుంది (పూర్తయిన
-!!{tableau}లో అవి పై భాగంలో ఉంటాయి).
+\tetoken{టాబ్లోలో}{!!{tableau}} అవి పై భాగంలో ఉంటాయి).
 
-!!{sentence} $\lexists[x][\lnot !A(x)] \lif \lnot
-\lforall[x][!A(x)]$ కోసం ఒక !!a{tableau}ను ఎలా ఇస్తామో చూద్దాం.
+\tetoken{వాక్యం}{!!{sentence}} $\lexists[x][\lnot !A(x)] \lif \lnot
+\lforall[x][!A(x)]$ కోసం ఒక \tetoken{టాబ్లోను}{!!a{tableau}} ఎలా ఇస్తామో చూద్దాం.
 ఎప్పటిలాగే పరికల్పనను నమోదు చేస్తూ మొదలుపెడతాం:
 \begin{oltableau}
 [\sFmla{\False}{\lexists[x][\lnot \formula{A}(x)]\lif \lnot
     \lforall[x][\formula{A}(x)]}, just=\TAss]
 \end{oltableau}
-!!{main operator} $\lif$ కనుక $\TRule{\False}{\lif}$ను
+\tetoken{ప్రధాన సంయోజకం}{!!{main operator}} $\lif$ కనుక $\TRule{\False}{\lif}$ను
 వర్తింపజేస్తాం:
 \begin{oltableau}
 [\sFmla{\False}{\lexists[x][\lnot \formula{A}(x)]\lif \lnot
@@ -37,8 +37,8 @@
 ]
 \end{oltableau}
 తర్వాత చూసుకోవాల్సింది వరుస~$2$. $\TRule{\True}{\lexists}$ను
-ఉపయోగిస్తాం. దీనికి కొత్త !!{constant} కావాలి; ఇప్పటివరకు ఏ
-!!{constant}s కనిపించలేదు కనుక ఏదైనా ఒకదాన్ని, ఉదాహరణకు~$a$ను,
+ఉపయోగిస్తాం. దీనికి కొత్త \tetoken{స్థిరసంకేతం}{!!{constant}} కావాలి; ఇప్పటివరకు ఏ
+\tetoken{స్థిరసంకేతాలు}{!!{constant}s} కనిపించలేదు కనుక ఏదైనా ఒకదాన్ని, ఉదాహరణకు~$a$ను,
 ఎంచుకోవచ్చు.
 \begin{oltableau}
 [\sFmla{\False}{\lexists[x][\lnot \formula{A}(x)]\lif \lnot
@@ -70,7 +70,7 @@
 ]
 \end{oltableau}
 వరుస~$4$కు $\TRule{\True}{\lnot}$ను, ఆ తర్వాత వరుస~$5$కు
-$\TRule{\True}{\lforall}$ను వర్తింపజేసి సంవృత !!{tableau}ను
+$\TRule{\True}{\lforall}$ను వర్తింపజేసి సంవృత \tetoken{టాబ్లోను}{!!{tableau}}
 పొందుతాం.
 \begin{oltableau}
 [\sFmla{\False}{\lexists[x][\lnot \formula{A}(x)]\lif \lnot
@@ -96,7 +96,7 @@ $\TRule{\True}{\lforall}$ను వర్తింపజేసి సంవృ�
 \end{ex}
 
 \begin{ex}
-కింది సమితికి ఒక !!a{tableau}ను ఎలా ఇస్తామో చూద్దాం:
+కింది సమితికి ఒక \tetoken{టాబ్లోను}{!!a{tableau}} ఎలా ఇస్తామో చూద్దాం:
 \[
 \sFmla{\False}{\lexists[x][!C(x,b)]},
 \sFmla{\True}{\lexists[x][(!A(x) \land !B(x))]},
@@ -114,7 +114,7 @@ $\TRule{\True}{\lforall}$ను వర్తింపజేసి సంవృ�
 \end{oltableau}
 ఐగెన్ చరరాశి షరతు గల నియమాన్ని ఎప్పుడూ ముందుగా
 వర్తింపజేయాలి; ఇక్కడ వరుస~$2$కు $\TRule{\True}{\lexists}$ను
-వర్తింపజేయాలి. పరికల్పనల్లో !!{constant}~$b$ ఉంది కనుక మరొకదాన్ని
+వర్తింపజేయాలి. పరికల్పనల్లో \tetoken{స్థిరసంకేతం}{!!{constant}}~$b$ ఉంది కనుక మరొకదాన్ని
 వాడాలి; మళ్లీ~$a$నే ఎంచుకుందాం.
 \begin{oltableau}
   [\sFmla{\False}{\lexists[x][\formula{C}(x,b)]}, just=\TAss
@@ -133,7 +133,7 @@ $\TRule{\True}{\lforall}$ను వర్తింపజేస్తే, $x$ స
 ప్రతిస్థాపించాలో నిర్ణయించాలి. ఈ నియమాలకు ఐగెన్ చరరాశి షరతు లేదు
 కనుక మనకు నచ్చిన పదాన్ని ఎంచుకోవచ్చు. కొన్ని సందర్భాల్లో వేర్వేరు
 $t$లతో నియమాన్ని అనేకసార్లు వర్తింపజేయాల్సి రావచ్చు. అయితే సాధారణ
-నియమంగా, !!{tableau}లో ఇప్పటికే కనిపించే పదాల్లో ఒకదాన్ని---ఇక్కడ
+నియమంగా, \tetoken{టాబ్లోలో}{!!{tableau}} ఇప్పటికే కనిపించే పదాల్లో ఒకదాన్ని---ఇక్కడ
 $a$ లేదా~$b$ను---ఎంచుకోవడం ప్రయోజనకరం; ఈ సందర్భంలో $a$ సంవృత శాఖను
 ఇచ్చే అవకాశం ఎక్కువని ఊహించవచ్చు.
 \begin{oltableau}
@@ -152,7 +152,7 @@ $a$ లేదా~$b$ను---ఎంచుకోవడం ప్రయోజన�
     ]
   ]
 \end{oltableau}
-వరుసలు $1$, $3$లోని !!{signed formula}sకు తనిఖీ గుర్తు పెట్టం;
+వరుసలు $1$, $3$లోని \tetoken{చిహ్నిత సూత్రాలకు}{!!{signed formula}s} తనిఖీ గుర్తు పెట్టం;
 వాటిని మళ్లీ ఉపయోగించాల్సి రావచ్చు. ఇప్పుడు వరుస~$4$కు
 $\TRule{\True}{\land}$ను వర్తింపజేద్దాం:
 \begin{oltableau}
@@ -177,7 +177,7 @@ $\TRule{\True}{\land}$ను వర్తింపజేద్దాం:
   ]
 \end{oltableau}
 ఇప్పుడు వరుస~$6$కు $\TRule{\True}{\lif}$ను వర్తింపజేస్తే
-!!{tableau} సంవృతమవుతుంది:
+\tetoken{టాబ్లో}{!!{tableau}} సంవృతమవుతుంది:
 \begin{oltableau}
   [\sFmla{\False}{\lexists[x][\formula{C}(x,b)]}, just=\TAss
     [\sFmla{\True}{\lexists[x][(\formula{A}(x) \land \formula{B}(x))]},
@@ -214,7 +214,7 @@ $\TRule{\True}{\land}$ను వర్తింపజేద్దాం:
 \end{ex}
 
 \begin{ex}
-కింది సమితికి ఒక !!a{tableau}ను నిర్మిస్తాం:
+కింది సమితికి ఒక \tetoken{టాబ్లోను}{!!a{tableau}} నిర్మిస్తాం:
 \[
 \sFmla{\True}{\lforall[x][!A(x)]}, \sFmla{\True}{\lforall[x][!A(x)]
   \lif \lexists[y][!B(y)]}, \sFmla{\True}{\lnot\lexists[y][!B(y)]}.
@@ -261,7 +261,7 @@ $\TRule{\False}{\lexists}$ అవసరం. కనుక దాన్ని వ�
     ]
   ]
 \end{oltableau}
-రెండు కొత్త !!{signed formula}sకూ ఐగెన్ చరరాశి షరతులు గల నియమాలు
+రెండు కొత్త \tetoken{చిహ్నిత సూత్రాలకూ}{!!{signed formula}s} ఐగెన్ చరరాశి షరతులు గల నియమాలు
 అవసరం; కాబట్టి తర్వాత వాటినే వర్తింపజేయాలి:
 \begin{oltableau}
   [\sFmla{\True}{\lforall[x][\formula{A}(x)]}, just=\TAss
@@ -281,7 +281,7 @@ $\TRule{\False}{\lexists}$ అవసరం. కనుక దాన్ని వ�
     ]
   ]
 \end{oltableau}
-శాఖలను సంవృతం చేయడానికి వరుసలు $1$,~$4$లోని !!{signed formula}sను
+శాఖలను సంవృతం చేయడానికి వరుసలు $1$,~$4$లోని \tetoken{చిహ్నిత సూత్రాలను}{!!{signed formula}s}
 ఉపయోగించాలి. వాటికి సంబంధించిన నియమాలకు
 (\TRule{\True}{\lforall}, \TRule{\False}{\lexists}) ఐగెన్ చరరాశి
 షరతులు లేవు; కనుక తగిన పదాలను స్వేచ్ఛగా ఎంచుకోవచ్చు. ఇక్కడ అవి
@@ -325,7 +325,7 @@ $\sFmla{\False}{\lexists[y][!B(y)]}$ వరుస~$4$లో ఉందని మ�
 \end{ex}
 
 \begin{prob}
-కిందివాటికి సంవృత !!{tableau}s ఇవ్వండి:
+కిందివాటికి సంవృత \tetoken{టాబ్లోలు}{!!{tableau}s} ఇవ్వండి:
 \begin{enumerate}
 \item $\sFmla{\False}{(\lforall[x][!A(x)] \land \lforall[y][!B(y)])
 \lif \lforall[z][(!A(z) \land !B(z))]}$.
@@ -343,7 +343,7 @@ $\sFmla{\False}{\lexists[y][!B(y)]}$ వరుస~$4$లో ఉందని మ�
 \end{prob}
 
 \begin{prob}
-కిందివాటికి సంవృత !!{tableau}s ఇవ్వండి:
+కిందివాటికి సంవృత \tetoken{టాబ్లోలు}{!!{tableau}s} ఇవ్వండి:
 \begin{enumerate}
 \item $\sFmla{\False}{\lnot\lforall[x][!A(x)] \lif \lexists[x][\lnot!A(x)]}$.
 \item $\sFmla{\True}{(\lforall[x][!A(x)] \lif !B)}, \sFmla{\False}{\lexists[y][(!A(y) \lif !B)]}$.

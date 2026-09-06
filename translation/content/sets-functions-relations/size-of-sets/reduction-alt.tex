@@ -17,11 +17,11 @@
   \olref[red]{sec}లో ఇచ్చాం.
 \end{editorial}
 
-వికర్ణీకరణ వాదనతో $\Bin^\omega$ !!{nonenumerable} అని నిరూపించాం.
-ఇలాంటి వికర్ణీకరణ వాదనతో $\Pow{\Nat}$ !!{nonenumerable} అని చూపాం.
-అయితే $\Pow{\Nat}$ !!{nonenumerable} అని నిరూపించడానికి మరో మార్గం
-ఇదిగో: \emph{$\Pow{\Nat}$ !!{enumerable} అయితే $\Bin^\omega$ కూడా
-!!{enumerable} అవుతుందని చూపడం}. $\Bin^\omega$ !!{nonenumerable}
+వికర్ణీకరణ వాదనతో $\Bin^\omega$ \tetoken{లెక్కించలేని}{!!{nonenumerable}} అని నిరూపించాం.
+ఇలాంటి వికర్ణీకరణ వాదనతో $\Pow{\Nat}$ \tetoken{లెక్కించలేని}{!!{nonenumerable}} అని చూపాం.
+అయితే $\Pow{\Nat}$ \tetoken{లెక్కించలేని}{!!{nonenumerable}} అని నిరూపించడానికి మరో మార్గం
+ఇదిగో: \emph{$\Pow{\Nat}$ \tetoken{లెక్కించదగిన}{!!{enumerable}} అయితే $\Bin^\omega$ కూడా
+\tetoken{లెక్కించదగిన}{!!{enumerable}} అవుతుందని చూపడం}. $\Bin^\omega$ \tetoken{లెక్కించలేని}{!!{nonenumerable}}
 అని మనకు తెలుసు కనుక, $\Pow{\Nat}$ కూడా అలాగే అని తేలుతుంది.
 
 దీనినే ఒక సమస్యను మరొక సమస్యకు \emph{తగ్గించడం} అంటారు. ఇక్కడ
@@ -31,20 +31,20 @@ $\Bin^\omega$ను లెక్కించే సమస్యను $\Pow{\Nat
 
 $B$ సమితిని లెక్కించే సమస్యను $A$ సమితిని లెక్కించే సమస్యకు తగ్గించడానికి,
 $A$ యొక్క లెక్కింపును $B$ యొక్క లెక్కింపుగా మార్చే ఒక విధానాన్ని ఇస్తాం.
-అందుకు అత్యంత సులభమైన మార్గం !!a{surjection} $f\colon A \to B$ను
+అందుకు అత్యంత సులభమైన మార్గం \tetoken{ఒక సంగ్రస్త ప్రమేయం}{!!a{surjection}} $f\colon A \to B$ను
 నిర్వచించడం. $x_1$, $x_2$, \dots{} $A$ను లెక్కిస్తే, $f(x_1)$,
-$f(x_2)$, \dots{} $B$ను లెక్కిస్తాయి. మన సందర్భంలో, !!a{surjection}
+$f(x_2)$, \dots{} $B$ను లెక్కిస్తాయి. మన సందర్భంలో, \tetoken{ఒక సంగ్రస్త ప్రమేయం}{!!a{surjection}}
 $f\colon \Pow{\Nat} \to \Bin^\omega$ కోసం చూస్తున్నాం.
 
 \begin{prob}
-$g\colon B \to A$ అనే !!{injective} ప్రమేయం ఉండి, $B$~!!{nonenumerable}
+$g\colon B \to A$ అనే \tetoken{ఒకటి-ఒకటి}{!!{injective}} ప్రమేయం ఉండి, $B$~\tetoken{లెక్కించలేని}{!!{nonenumerable}}
 అయితే $A$ కూడా లెక్కించలేనిది అని చూపండి. $A$ యొక్క లెక్కింపును
 $B$ యొక్క లెక్కింపుగా మార్చడానికి $g$ను ఎలా వాడవచ్చో చూపి దీన్ని
 నిరూపించండి.
 \end{prob}
 
 \begin{proof}[తగ్గింపు ద్వారా {\olref[nen-alt]{thm:nonenum-pownat}} నిరూపణ]
-తగ్గింపు కోసం $\Pow{\Nat}$ !!{enumerable} అనుకుందాం; అందువల్ల దానికి
+తగ్గింపు కోసం $\Pow{\Nat}$ \tetoken{లెక్కించదగిన}{!!{enumerable}} అనుకుందాం; అందువల్ల దానికి
 $N_{1}$, $N_{2}$, $N_{3}$, \dots అనే లెక్కింపు ఉందనుకుందాం.
 
 $f(N)$ను $s$ అనే పదబంధంగా తీసుకుని, $n \in N$ అయినప్పుడు మాత్రమే
@@ -55,13 +55,13 @@ $f \colon \Pow{\Nat} \to \Bin^\omega$ను నిర్వచిద్దాం
 ఒక్క పేరును నిలకడగా వాడి నిర్వచనాన్ని సరిచేశాం.}
 
 ఇది స్పష్టంగా ఒక ప్రమేయాన్ని నిర్వచిస్తుంది: $N \subseteq \Nat$
-అయినప్పుడల్లా, ఏ $n \in \Nat$ అయినా $N$ యొక్క !!a{element} అవుతుంది
+అయినప్పుడల్లా, ఏ $n \in \Nat$ అయినా $N$ యొక్క \tetoken{ఒక మూలకం}{!!a{element}} అవుతుంది
 లేదా కాదు. ఉదాహరణకు, సరి సహజ సంఖ్యల సమితి
 $2\Nat = \Setabs{2n}{n \in \Nat} = \{0,2, 4, 6, \dots\}$ను
 $1010101\dots$ పదబంధానికి; $\emptyset$ను $0000\dots$కు; $\Nat$ను
 $1111\dots$కు పంపుతుంది.
 
-ఇది !!{surjective} కూడా: $0$, $1$ల ప్రతి పదబంధానికి ఏదో ఒక సహజ
+ఇది \tetoken{సంగ్రస్త}{!!{surjective}} కూడా: $0$, $1$ల ప్రతి పదబంధానికి ఏదో ఒక సహజ
 సంఖ్యల సమితి సరిపోతుంది; ఆ పదబంధంలో $1$లు ఉన్న స్థానాలకు సరిపడే సహజ
 సంఖ్యలనే ఆ సమితి మూలకాలుగా తీసుకుంటాం. మరింత కచ్చితంగా,
 $s \in \Bin^\omega$ అయితే $N \subseteq \Nat$ను ఇలా నిర్వచించండి:
@@ -74,64 +74,64 @@ N = \Setabs{n \in \Nat}{s(n) = 1}
 \[
 f(N_1), f(N_2), f(N_3), \dots
 \]
-$f$ !!{surjective} కనుక, $\Bin^\omega$ యొక్క ప్రతి మూలకం ఏదో ఒక
+$f$ \tetoken{సంగ్రస్త}{!!{surjective}} కనుక, $\Bin^\omega$ యొక్క ప్రతి మూలకం ఏదో ఒక
 ఆర్గ్యుమెంటుకు $f$ విలువగా రావాలి; అందువల్ల ఈ జాబితాలో రావాలి.
 కాబట్టి ఈ జాబితా $\Bin^\omega$ అంతటినీ లెక్కిస్తుంది.
 
-అందుచేత $\Pow{\Nat}$ !!{enumerable} అయితే $\Bin^\omega$ కూడా
-!!{enumerable} అవుతుంది. కానీ $\Bin^\omega$ !!{nonenumerable}
+అందుచేత $\Pow{\Nat}$ \tetoken{లెక్కించదగిన}{!!{enumerable}} అయితే $\Bin^\omega$ కూడా
+\tetoken{లెక్కించదగిన}{!!{enumerable}} అవుతుంది. కానీ $\Bin^\omega$ \tetoken{లెక్కించలేని}{!!{nonenumerable}}
 (\olref[nen-alt]{thm:nonenum-bin-omega}). కాబట్టి $\Pow{\Nat}$
-!!{nonenumerable}.
+\tetoken{లెక్కించలేని}{!!{nonenumerable}}.
 \end{proof}
 
 %\begin{explain}
 %తగ్గింపు ఏ దిశలో సాగుతుందో విషయంలో గందరగోళం పడటం సులభం.
-%ఉదాహరణకు, !!a{surjective} ప్రమేయం $g \colon \Bin^\omega \to X$
-%ఉండటం వల్ల $X$ !!{nonenumerable} అని \emph{నిర్ధారణ కాదు}. ($g
+%ఉదాహరణకు, \tetoken{ఒక సంగ్రస్త}{!!a{surjective}} ప్రమేయం $g \colon \Bin^\omega \to X$
+%ఉండటం వల్ల $X$ \tetoken{లెక్కించలేని}{!!{nonenumerable}} అని \emph{నిర్ధారణ కాదు}. ($g
 %\colon \Bin^\omega \to \Bin$ను $g(s) = s(1)$గా నిర్వచించండి; ఈ
-%ప్రమేయం $0$, $1$ల క్రమాన్ని దాని మొదటి !!{element}కు పంపుతుంది.
+%ప్రమేయం $0$, $1$ల క్రమాన్ని దాని మొదటి \tetoken{మూలకానికి}{!!{element}} పంపుతుంది.
 %కొన్ని క్రమాలు $0$తో, మరికొన్ని $1$తో మొదలవుతాయి కనుక ఇది సంగ్రస్తం.
 %కానీ $\Bin$ పరిమిత సమితి.) $f$ తప్పక సంగ్రస్తం కావాలని కూడా గమనించండి;
 %లేకపోతే వాదన పనిచేయదు: $f(x_1)$, $f(x_2)$, \dots{}లో $Y$ యొక్క
-%!!{element}s అన్నీ ఉంటాయని హామీ ఉండదు. ఉదాహరణకు, $h\colon \Nat \to
+%\tetoken{మూలకాలు}{!!{element}s} అన్నీ ఉంటాయని హామీ ఉండదు. ఉదాహరణకు, $h\colon \Nat \to
 %\Bin^\omega$ను ఇలా నిర్వచిస్తే
 %\[
 %h(n) = \underbrace{000\dots0}_{\text{$n$ $0$లు}}
 %\]
-%ఒక ప్రమేయమే, కానీ $\Nat$ !!{enumerable}.
+%ఒక ప్రమేయమే, కానీ $\Nat$ \tetoken{లెక్కించదగిన}{!!{enumerable}}.
 %\end{explain}
 
 \begin{prob}\label{sfr:siz:red:prob:nat-nat}
   $f\colon \Nat \to \Nat$ రూపంలోని ప్రమేయాలన్నిటి సమితి $X$
-  !!{nonenumerable} అని తగ్గింపు వాదనతో చూపండి. (సూచన: $X$ నుంచి
+  \tetoken{లెక్కించలేని}{!!{nonenumerable}} అని తగ్గింపు వాదనతో చూపండి. (సూచన: $X$ నుంచి
   $\Bin^\omega$పైకి ఒక సంగ్రస్త ప్రమేయాన్ని ఇవ్వండి.)
 \end{prob}
 
 \begin{prob}
 సహజ సంఖ్యల జతల \emph{సమితులన్నిటి} సమితి, అంటే
-$\Pow{\Nat \times \Nat}$, !!{nonenumerable} అని తగ్గింపు వాదనతో చూపండి.
+$\Pow{\Nat \times \Nat}$, \tetoken{లెక్కించలేని}{!!{nonenumerable}} అని తగ్గింపు వాదనతో చూపండి.
 \end{prob}
 
 \begin{prob}
-సహజ సంఖ్యల అనంత క్రమాల సమితి $\Nat^\omega$ !!{nonenumerable} అని
+సహజ సంఖ్యల అనంత క్రమాల సమితి $\Nat^\omega$ \tetoken{లెక్కించలేని}{!!{nonenumerable}} అని
 తగ్గింపు వాదనతో చూపండి.
 \end{prob}
 
 %\begin{prob}
 %$\Nat$ నుంచి $\{0\}$ సమితికి ప్రమేయాల సమితి $P$, ధన పూర్ణాంకాల
 %సమితి నుంచి $\{0\}$కు \emph{పాక్షిక} ప్రమేయాల సమితి $Q$ అనుకుందాం.
-%$P$~!!{enumerable}, $Q$ అలా కాదని చూపండి. (సూచన: $\Bin^\omega$ను
+%$P$~\tetoken{లెక్కించదగిన}{!!{enumerable}}, $Q$ అలా కాదని చూపండి. (సూచన: $\Bin^\omega$ను
 %లెక్కించే సమస్యను $Q$ను లెక్కించే సమస్యకు తగ్గించండి.)
 %\end{prob}
 
 \begin{prob}
-$\Nat$ నుంచి $\{0,1\}$ సమితిపైకి !!{surjection}s అన్నిటి సమితి $S$
-అనుకుందాం; అంటే, !!{surjection}s~$f \colon \Nat \to \Bin$
-అన్నిటితో $S$ ఏర్పడుతుంది. $S$ !!{nonenumerable} అని చూపండి.
+$\Nat$ నుంచి $\{0,1\}$ సమితిపైకి \tetoken{సంగ్రస్త ప్రమేయాలు}{!!{surjection}s} అన్నిటి సమితి $S$
+అనుకుందాం; అంటే, \tetoken{సంగ్రస్త ప్రమేయాలు}{!!{surjection}s}~$f \colon \Nat \to \Bin$
+అన్నిటితో $S$ ఏర్పడుతుంది. $S$ \tetoken{లెక్కించలేని}{!!{nonenumerable}} అని చూపండి.
 \end{prob}
 
 \begin{prob}
-వాస్తవ సంఖ్యల సమితి $\Real$ !!{nonenumerable} అని చూపండి.
+వాస్తవ సంఖ్యల సమితి $\Real$ \tetoken{లెక్కించలేని}{!!{nonenumerable}} అని చూపండి.
 \end{prob}
 
 \end{document}
