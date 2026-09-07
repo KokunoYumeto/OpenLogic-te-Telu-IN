@@ -1,0 +1,62 @@
+% Part: first-order-logic
+% Chapter: models-theories
+% Section: expressing-props-of-structures
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{mat}{exs}
+
+\olsection{\printtoken{P}{structure}ల ధర్మాలను వ్యక్తం చేయడం}
+
+\begin{explain}
+ప్రమేయాలు, సంబంధాలపై షరతులను వ్యక్తం చేయడం, లేదా మరింత సాధారణంగా ఒక
+నిర్మాణంలోని ప్రమేయాలు, సంబంధాలు ఆ షరతులను సంతృప్తిపరుస్తాయని వ్యక్తం
+చేయడం తరచుగా ఉపయోగకరమూ ముఖ్యమూ అవుతుంది. ఉదాహరణకు, ఒక భాష కోసం మనం
+\tetoken{విధేయ సంకేతాలకు}{!!{predicate}s} ఉద్దేశించిన ``అర్థాన్ని'' ``పట్టుకునే'' \tetoken{నిర్మాణాలను}{!!{structure}s},
+అలా చేయని వాటి నుంచి వేరు చేయడానికి మార్గాలు కావాలి. ఏ \tetoken{నిర్మాణాలను}{!!{structure}s}
+``ఉద్దేశించాలో'' నిర్దేశించడంలో మనకు పూర్తి స్వేచ్ఛ ఉంది. ఉదాహరణకు,
+\tetoken{విధేయ సంకేతం}{!!{predicate}}~$\le$ యొక్క అర్థనిర్దేశం ఒక క్రమం కావాలని, లేదా క్షేత్రం
+సమితులతో ఏర్పడి $\Obj \in$కు ``దీనిలో ఒక \tetoken{మూలకం}{!!a{element}}'' అనే సంబంధమే
+అర్థనిర్దేశంగా ఉండే~$\Lang L$ అర్థనిర్దేశాలపైనే మనకు ఆసక్తి ఉందని
+నిర్దేశించవచ్చు. కానీ భాషలోని \tetoken{వాక్యాలతో}{!!{sentence}s} ఇలా చేయగలమా? మరోలా
+చెప్పాలంటే, \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$పై ఏ షరతులను~$\Struct M$ భాషలోని
+\tetoken{ఒక వాక్యంతో}{!!a{sentence}} (లేదా బహుశా \tetoken{వాక్యాలు}{!!{sentence}s} సమితితో) వ్యక్తం చేయగలం?
+మనం వ్యక్తం చేయలేని కొన్ని షరతులు ఉన్నాయి. ఉదాహరణకు,
+$\Domain M = \Nat$ అయిన ఒక \tetoken{నిర్మాణం}{!!{structure}}~$\Struct M$లో మాత్రమే సత్యమయ్యే
+$\Lang L_A$ వాక్యం ఏదీ లేదు. ``క్షేత్రంలో సహజ సంఖ్యలు మాత్రమే ఉన్నాయి''
+అని మనం వ్యక్తం చేయలేం. కానీ \tetoken{నిర్మాణాలకు}{!!{structure}s} చెందిన కొన్ని
+``నిర్మాణాత్మక ధర్మాలను'' బహుశా వ్యక్తం చేయగలం. \tetoken{నిర్మాణాలు}{!!{structure}s} యొక్క ఏ
+ధర్మాలను \tetoken{వాక్యాలు}{!!{sentence}s} ద్వారా వ్యక్తం చేయగలం? మరో విధంగా అడిగితే,
+\tetoken{ఒక వాక్యాన్ని}{!!a{sentence}} (లేదా \tetoken{వాక్యాలు}{!!{sentence}s} సమితిని) సత్యం చేసే వాటిగా ఏ
+\tetoken{నిర్మాణాలు}{!!{structure}s} సముదాయాలను వర్ణించగలం?
+\end{explain}
+
+\begin{defn}[ఒక సమితికి నమూనా]
+$\Gamma$, భాష~$\Lang L$లోని \tetoken{వాక్యాలు}{!!{sentence}s} సమితి అనుకుందాం. ప్రతి
+$!A \in \Gamma$కు $\Sat{M}{!A}$ అయితే, \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$ను
+$\Gamma$కు \emph{ఒక నమూనా} అంటాం.
+\end{defn}
+
+\begin{ex}
+వాక్యం~$\lforall[x][x \le x]$, $\Assign{\le}{M}$ స్వావర్తన సంబంధం
+అయినప్పుడు మాత్రమే~$\Struct M$లో సత్యం. వాక్యం
+$\lforall[x][\lforall[y][((x \le y \land y \le x) \lif x = y)]]$,
+$\Assign{\le}{M}$ ప్రతిసౌష్ఠవ సంబంధం అయినప్పుడు మాత్రమే~$\Struct M$లో
+సత్యం. వాక్యం $\lforall[x][\lforall[y][\lforall[z][((x \le y \land y \le z)
+      \lif x \le z)]]]$, $\Assign{\le}{M}$ సంక్రామక సంబంధం అయినప్పుడు
+మాత్రమే~$\Struct M$లో సత్యం. అందువల్ల
+\begin{align*}
+\{\quad &\lforall[x][x \le x], \\
+   & \lforall[x][\lforall[y][((x \le y \land y \le
+    x) \lif x = y)]], \\
+   &\lforall[x][\lforall[y][\lforall[z][((x \le y
+      \land y \le z) \lif x \le z)]]] \quad \}
+\end{align*}
+యొక్క నమూనాలు సరిగ్గా~$\Assign{\le}{M}$ స్వావర్తన, ప్రతిసౌష్ఠవ,
+సంక్రామక సంబంధం, అంటే పాక్షిక క్రమం, అయ్యే నిర్మాణాలే. కనుక వీటిని
+\emph{పాక్షిక క్రమాల మొదటిస్థాయి సిద్ధాంతానికి} స్వీకృతాలుగా తీసుకోవచ్చు.
+\end{ex}
+
+\end{document}

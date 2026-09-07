@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 163 of 722 draft units**. This log contains 46 terminology/sense decisions and 103 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 170 of 722 draft units**. This log contains 49 terminology/sense decisions and 104 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1111,6 +1111,78 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Medium to high nomenclatural uncertainty; low propositional uncertainty because the source proposition fixes the exact condition
 
 - Please double-check: Please double-check whether “విస్తారత (సంబద్ధత అని కూడా పిలుస్తారు)” is idiomatic and technically standard for “extensionality (also called relevance) in first-order semantics” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T047 — axiomatic method / theory / axiom system / axiomatized by / closure / model / definability / explicit definition
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: స్వీకృతాధార పద్ధతి / సిద్ధాంతం / స్వీకృత వ్యవస్థ / స్వీకృతీకరించబడిన / సంవృతి / నమూనా / నిర్వచనీయత / స్పష్ట నిర్వచనం
+
+- Exact implementation: OLP-0168; first-order-logic/models-theories/introduction; content/first-order-logic/models-theories/introduction.tex:28-31 ↔ translation/content/first-order-logic/models-theories/introduction.tex:28-32 (OLP-0168-B007); printed/PDF page pending; OLP-0169; first-order-logic/models-theories/expressing-props-of-structures; content/first-order-logic/models-theories/expressing-props-of-structures.tex:39-43 ↔ translation/content/first-order-logic/models-theories/expressing-props-of-structures.tex:36-40 (OLP-0169-B007); printed/PDF page pending; OLP-0171; first-order-logic/models-theories/expressing-relations; content/first-order-logic/models-theories/expressing-relations.tex:69-78 ↔ translation/content/first-order-logic/models-theories/expressing-relations.tex:71-80 (OLP-0171-B010); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P003--TE-P004 support native proof, theorem, induction and deduction exposition; TE-P018 and TE-P023 support formal logic and consequence; TE-P027, TE-P029--TE-P031 support predicate logic, first-order language, the individuals domain and sentence vocabulary. They do not directly attest OpenLogic's full axiomatization or definability taxonomy. The closure definition, model condition and relation-expression clauses in OLP-0168--OLP-0171 therefore control the precise extensions, while the already established స్వీకృతం, సిద్ధాంతం and నమూనా choices are reused consistently. No unexplained English reader-facing lexical borrowing; mathematical symbols and raw token keys remain protected source identity
+
+- Alternatives: reuse the established స్వీకృతం, సిద్ధాంతం and నమూనా register with definition-controlled compounds (chosen); leave axiomatization and definability headwords in English prose (rejected); claim direct canon attestation for the full model-theoretic taxonomy (rejected)
+
+- Uncertainty: Low for broad theory, proof and first-order register; medium to high nomenclatural uncertainty for axiomatization, closure and definability compounds
+
+- Please double-check: Please double-check whether “స్వీకృతాధార పద్ధతి / సిద్ధాంతం / స్వీకృత వ్యవస్థ / స్వీకృతీకరించబడిన / సంవృతి / నమూనా / నిర్వచనీయత / స్పష్ట నిర్వచనం” is idiomatic and technically standard for “axiomatic method / theory / axiom system / axiomatized by / closure / model / definability / explicit definition” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T048 — pure set / urelement / axiom of extensionality / naive comprehension scheme / comprehension principle / separation principle / Russell's Paradox / Zermelo--Fraenkel set theory
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: శుద్ధ సమితి / యూర్-ఎలిమెంట్ / విస్తారతా స్వీకృతం / అమాయక ధర్మసంగ్రహ పథకం / ధర్మసంగ్రహ సూత్రం / వేరుచేయు సూత్రం / రసెల్ వైరుధ్యం / జెర్మెలో--ఫ్రెంకెల్ సమితి సిద్ధాంతం
+
+- Exact implementation: OLP-0170; first-order-logic/models-theories/theories; content/first-order-logic/models-theories/theories.tex:62-69 ↔ translation/content/first-order-logic/models-theories/theories.tex:61-68 (OLP-0170-B010); printed/PDF page pending; OLP-0172; first-order-logic/models-theories/set-theory; content/first-order-logic/models-theories/set-theory.tex:13-29 ↔ translation/content/first-order-logic/models-theories/set-theory.tex:13-27 (OLP-0172-B006); printed/PDF page pending; OLP-0172; first-order-logic/models-theories/set-theory; content/first-order-logic/models-theories/set-theory.tex:149-171 ↔ translation/content/first-order-logic/models-theories/set-theory.tex:147-169 (OLP-0172-B013); printed/PDF page pending
+
+- Authorities actually checked: TE-P002, PDF 9, printed 35, Main paragraph, lower half; TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P027, PDF 91, printed 84, Predicate-logic opening
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P008 directly supports membership, subset, union and ordered-pair set vocabulary; TE-P002--TE-P004 and TE-P018, TE-P023, TE-P027 support logic, proof, theorem, consequence and predicate-language register. The prior TE-T013 decision controls ధర్మసంగ్రహం and రసెల్ వైరుధ్యం. None of the inspected pages directly attests the full foundational taxonomy, so the displayed axioms, Russell construction and restricted-separation formula fix the technical senses. యూర్-ఎలిమెంట్ and the Zermelo--Fraenkel and Russell names are explicit source-driven borrowings. యూర్-ఎలిమెంట్ is an explicit technical borrowing; జెర్మెలో--ఫ్రెంకెల్ and రసెల్ are source eponyms, and ZFC remains formal notation
+
+- Alternatives: reuse the established ధర్మసంగ్రహం and రసెల్ వైరుధ్యం terminology while distinguishing scheme, principle and separation locally (chosen); replace the source eponyms and urelement with unattested coined names (rejected); leave all set-foundational prose in English (rejected)
+
+- Uncertainty: Low for membership and ordinary set operations; medium to high nomenclatural uncertainty for pure-set, urelement, comprehension and separation labels
+
+- Please double-check: Please double-check whether “శుద్ధ సమితి / యూర్-ఎలిమెంట్ / విస్తారతా స్వీకృతం / అమాయక ధర్మసంగ్రహ పథకం / ధర్మసంగ్రహ సూత్రం / వేరుచేయు సూత్రం / రసెల్ వైరుధ్యం / జెర్మెలో--ఫ్రెంకెల్ సమితి సిద్ధాంతం” is idiomatic and technically standard for “pure set / urelement / axiom of extensionality / naive comprehension scheme / comprehension principle / separation principle / Russell's Paradox / Zermelo--Fraenkel set theory” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T049 — mereology / parthood / parthood structure / improper part / proper part / mereological sum / fusion
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: భాగతత్త్వం (మీరియాలజీ) / భాగత్వం / భాగత్వ నిర్మాణం / క్రమేతర భాగం / క్రమ భాగం / భాగతాత్త్విక మొత్తం / సంలీనం
+
+- Exact implementation: OLP-0170; first-order-logic/models-theories/theories; content/first-order-logic/models-theories/theories.tex:102-106 ↔ translation/content/first-order-logic/models-theories/theories.tex:101-105 (OLP-0170-B013); printed/PDF page pending
+
+- Authorities actually checked: TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P008 and TE-P010 directly support set-membership, subset, ordered-pair and binary-relation prose; TE-P004 supports order-sensitive mathematical explanation; TE-P018, TE-P027 and TE-P029 support formal logic, predicates and first-order language. No inspected Telugu witness directly attests the mereological taxonomy. The source's partial-order axioms and least-upper-bound formula control the meanings of parthood and sum, while proper/improper are rendered by the established క్రమ distinction. మీరియాలజీ is retained only as an explicit parenthetical borrowing beside the descriptive భాగతత్త్వం. మీరియాలజీ is an explicit parenthetical borrowing; the primary reader term is the descriptive భాగతత్త్వం
+
+- Alternatives: భాగతత్త్వం with మీరియాలజీ supplied once as an explicit borrowing (chosen); use the English mereology headword throughout the reader (rejected); claim the new parthood taxonomy as directly attested by the checked relation witness (rejected)
+
+- Uncertainty: High nomenclatural uncertainty for the mereological headwords; low structural uncertainty because the displayed partial-order and sum conditions fix their mathematical roles
+
+- Please double-check: Please double-check whether “భాగతత్త్వం (మీరియాలజీ) / భాగత్వం / భాగత్వ నిర్మాణం / క్రమేతర భాగం / క్రమ భాగం / భాగతాత్త్విక మొత్తం / సంలీనం” is idiomatic and technically standard for “mereology / parthood / parthood structure / improper part / proper part / mereological sum / fusion” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -3583,3 +3655,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLEXT-001 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLMAT-001 — OLTEFOLMAT-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored only the missing \Obj marker before the final v_2 and retained the formula otherwise; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0171; first-order-logic/models-theories/expressing-relations; lines 62-64, second formula defining the strict-order relation ↔ translation/content/first-order-logic/models-theories/expressing-relations.tex:62-67 (OLP-0171-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLMAT-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored only the missing \Obj marker before the final v_2 and retained the formula otherwise; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the repaired strict-order formula gives its final v_2 the same object-language marker as the other variables, without changing any other symbol.

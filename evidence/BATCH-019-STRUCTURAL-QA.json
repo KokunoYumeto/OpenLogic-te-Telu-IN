@@ -1,0 +1,1501 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-07T17:34:41.695Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Intertext prose is masked while its inline math remains checked.",
+  "units": [
+    {
+      "unit_id": "OLP-0167",
+      "source_path": "content/first-order-logic/models-theories/models-theories.tex",
+      "source_sha256": "be635957198b3c2fcfee43dff67ce462f827c6cb051af468fd45feb3858ea9a7",
+      "translation_sha256": "ce602a622e778c426c90ed7db03071e7310eeb6c15e5308e79a76d1dbb2ee204",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport{introduction}",
+        "\\olimport{expressing-props-of-structures}",
+        "\\olimport{theories}",
+        "\\olimport{expressing-relations}",
+        "\\olimport{set-theory}",
+        "\\olimport{size-of-structures}"
+      ],
+      "identifiers_target": [
+        "\\olimport{introduction}",
+        "\\olimport{expressing-props-of-structures}",
+        "\\olimport{theories}",
+        "\\olimport{expressing-relations}",
+        "\\olimport{set-theory}",
+        "\\olimport{size-of-structures}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 27,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: models-theories",
+          "target_start": "% Part: first-order-logic\n% Chapter: models-theories"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olchapter{fol}{mat}{Theories and Their Models}",
+          "target_start": "\\olchapter{fol}{mat}{సిద్ధాంతాలు మరియు వాటి నమూనాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olimport{introduction}",
+          "target_start": "\\olimport{introduction}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport{expressing-props-of-structures}",
+          "target_start": "\\olimport{expressing-props-of-structures}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport{theories}",
+          "target_start": "\\olimport{theories}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\olimport{expressing-relations}",
+          "target_start": "\\olimport{expressing-relations}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport{set-theory}",
+          "target_start": "\\olimport{set-theory}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\olimport{size-of-structures}",
+          "target_start": "\\olimport{size-of-structures}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\OLEndChapterHook",
+          "target_start": "\\OLEndChapterHook"
+        },
+        {
+          "index": 12,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{fol}{mat}",
+        "\\olimport{introduction}",
+        "\\olimport{expressing-props-of-structures}",
+        "\\olimport{theories}",
+        "\\olimport{expressing-relations}",
+        "\\olimport{set-theory}",
+        "\\olimport{size-of-structures}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{fol}{mat}",
+        "\\olimport{introduction}",
+        "\\olimport{expressing-props-of-structures}",
+        "\\olimport{theories}",
+        "\\olimport{expressing-relations}",
+        "\\olimport{set-theory}",
+        "\\olimport{size-of-structures}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0168",
+      "source_path": "content/first-order-logic/models-theories/introduction.tex",
+      "source_sha256": "af9e91c4a4e19debfa137b696a280723e3de5779d7b65cc32ff0d0bcbac377a1",
+      "translation_sha256": "84d64cebfda72c7bfef801bb5d4ded2096b0ea4e8859950694049fbcdb460b0f",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{mat}{int}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{mat}{int}"
+      ],
+      "tokens_source": {
+        "!!{derivation}": 1,
+        "!!{sentence}s": 4,
+        "!!{structure}s": 8
+      },
+      "tokens_target": {
+        "!!{derivation}": 1,
+        "!!{sentence}s": 4,
+        "!!{structure}s": 8
+      },
+      "math_source": [
+        "$\\Gamma$",
+        "$\\Gamma\\Entails!A$",
+        "$!A\\in\\Gamma$",
+        "$\\Gamma$",
+        "$\\Setabs{!A}{\\Gamma\\Entails!A}$",
+        "$\\Gamma$",
+        "$\\Delta$",
+        "$\\Gamma$",
+        "$\\Delta$",
+        "$\\Delta$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\StructM$",
+        "$\\Sat{M}{\\Gamma}$",
+        "$\\StructM$",
+        "$\\Sat{M}{\\Gamma}$",
+        "$\\StructM$",
+        "$\\StructM$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma$",
+        "$\\Gamma\\setminus\\{!A\\}\\Entails!A$",
+        "$(\\Gamma\\setminus\\{!A\\})\\cup\\{\\lnot!A\\}$",
+        "$\\le$",
+        "$<$"
+      ],
+      "math_target_core": [
+        "$\\Gamma$",
+        "$\\Gamma\\Entails!A$",
+        "$!A\\in\\Gamma$",
+        "$\\Gamma$",
+        "$\\Setabs{!A}{\\Gamma\\Entails!A}$",
+        "$\\Gamma$",
+        "$\\Delta$",
+        "$\\Delta$",
+        "$\\Gamma$",
+        "$\\Delta$",
+        "$\\Gamma$",
+        "$\\Sat{M}{\\Gamma}$",
+        "$\\StructM$",
+        "$\\Gamma$",
+        "$\\Sat{M}{\\Gamma}$",
+        "$\\StructM$",
+        "$\\StructM$",
+        "$\\StructM$",
+        "$\\Gamma$",
+        "$\\Gamma\\Entails!A$",
+        "$!A$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma\\setminus\\{!A\\}\\Entails!A$",
+        "$(\\Gamma\\setminus\\{!A\\})\\cup\\{\\lnot!A\\}$",
+        "$\\le$",
+        "$<$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 3372,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: models-theories\n% Section: introduction",
+          "target_start": "% Part: first-order-logic\n% Chapter: models-theories\n% Section: introduction"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{fol}{mat}{int}\n\\olsection{Introduction}",
+          "target_start": "\\olfileid{fol}{mat}{int}\n\\olsection{పరిచయం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{explain}\nThe development of the axiomatic method is a significant achievement\nin the history of science",
+          "target_start": "\\begin{explain}\nస్వీకృతాధార పద్ధతి అభివృద్ధి విజ్ఞానశాస్త్ర చరిత్రలో ఒక విశిష్టమైన\nసాఫల్యం; గణితశాస్త్ర చరిత్ర"
+        },
+        {
+          "index": 6,
+          "source_start": "The axiomatic method and logic were made for each other.  Formal logic\nprovides the tools for formulating axio",
+          "target_start": "స్వీకృతాధార పద్ధతి, తర్కం ఒకదానికొకటి సరిగ్గా సరిపోతాయి. స్వీకృతాధార\nసిద్ధాంతాలను సూత్రీకరించడానికి, సిద్ధాంతప"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}\nA set of !!{sentence}s~$\\Gamma$ is \\emph{closed} iff, whenever\n$\\Gamma \\Entails !A$ then $!A \\in ",
+          "target_start": "\\begin{defn}\n\\tetoken{వాక్యాలు}{!!{sentence}s} సమితి~$\\Gamma$ను, $\\Gamma \\Entails !A$ అయినప్పుడల్లా\n$!A \\in \\G"
+        },
+        {
+          "index": 8,
+          "source_start": "We say that~$\\Gamma$ is \\emph{axiomatized by} a set of\nsentences~$\\Delta$ if $\\Gamma$ is the closure of~$\\Delt",
+          "target_start": "$\\Gamma$, వాక్యాల సమితి~$\\Delta$ యొక్క సంవృతి అయితే, $\\Delta$\nద్వారా~$\\Gamma$ \\emph{స్వీకృతీకరించబడింది} అంటాం"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{explain}\nWe can think of an axiomatic theory as the set of sentences that is\naxiomatized by its set of ",
+          "target_start": "\\begin{explain}\nఒక స్వీకృతాధార సిద్ధాంతాన్ని, దాని స్వీకృతాల సమితి~$\\Delta$ ద్వారా\nస్వీకృతీకరించబడిన వాక్యాల స"
+        },
+        {
+          "index": 10,
+          "source_start": "The important logical facts that make this formal approach to the\naxiomatic method so important are the follow",
+          "target_start": "స్వీకృతాధార పద్ధతికి ఈ ఔపచారిక దృక్పథాన్ని అంత ముఖ్యమైనదిగా చేసే ప్రధాన\nతార్కిక వాస్తవాలు కిందివి. $\\Gamma$ ఒక"
+        },
+        {
+          "index": 11,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{mat}{int}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{mat}{int}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0169",
+      "source_path": "content/first-order-logic/models-theories/expressing-props-of-structures.tex",
+      "source_sha256": "feb12b7951795d4ad220ee97941e52fef3469bcfe363ec6a3660992225154f9e",
+      "translation_sha256": "08f79260dadc32fd1bff7155f08d1d1ba04b7c02720fa52fb54d7128da16cb6d",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{mat}{exs}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{mat}{exs}"
+      ],
+      "tokens_source": {
+        "!!a{element}": 1,
+        "!!a{sentence}": 2,
+        "!!a{structure}": 2,
+        "!!{predicate}": 1,
+        "!!{predicate}s": 1,
+        "!!{sentence}s": 5,
+        "!!{structure}": 1,
+        "!!{structure}s": 5
+      },
+      "tokens_target": {
+        "!!a{element}": 1,
+        "!!a{sentence}": 2,
+        "!!a{structure}": 2,
+        "!!{predicate}": 1,
+        "!!{predicate}s": 1,
+        "!!{sentence}s": 5,
+        "!!{structure}": 1,
+        "!!{structure}s": 5
+      },
+      "math_source": [
+        "$\\le$",
+        "$\\LangL$",
+        "$\\Obj\\in$",
+        "$\\StructM$",
+        "$\\StructM$",
+        "$\\LangL_A$",
+        "$\\StructM$",
+        "$\\DomainM=\\Nat$",
+        "$\\Gamma$",
+        "$\\LangL$",
+        "$\\StructM$",
+        "$\\Gamma$",
+        "$\\Sat{M}{!A}$",
+        "$!A\\in\\Gamma$",
+        "$\\lforall[x][x\\lex]$",
+        "$\\StructM$",
+        "$\\Assign{\\le}{M}$",
+        "$\\lforall[x][\\lforall[y][((x\\ley\\landy\\lex)\\lifx=y)]]$",
+        "$\\StructM$",
+        "$\\Assign{\\le}{M}$",
+        "$\\lforall[x][\\lforall[y][\\lforall[z][((x\\ley\\landy\\lez)\\lifx\\lez)]]]$",
+        "$\\StructM$",
+        "$\\Assign{\\le}{M}$",
+        "\\begin{align*}\\{\\quad&\\lforall[x][x\\lex],\\\\&\\lforall[x][\\lforall[y][((x\\ley\\landy\\lex)\\lifx=y)]],\\\\&\\lforall[x][\\lforall[y][\\lforall[z][((x\\ley\\landy\\lez)\\lifx\\lez)]]]\\quad\\}\\end{align*}",
+        "$\\Assign{\\le}{M}$"
+      ],
+      "math_target_core": [
+        "$\\le$",
+        "$\\Obj\\in$",
+        "$\\LangL$",
+        "$\\StructM$",
+        "$\\StructM$",
+        "$\\DomainM=\\Nat$",
+        "$\\StructM$",
+        "$\\LangL_A$",
+        "$\\Gamma$",
+        "$\\LangL$",
+        "$!A\\in\\Gamma$",
+        "$\\Sat{M}{!A}$",
+        "$\\StructM$",
+        "$\\Gamma$",
+        "$\\lforall[x][x\\lex]$",
+        "$\\Assign{\\le}{M}$",
+        "$\\StructM$",
+        "$\\lforall[x][\\lforall[y][((x\\ley\\landy\\lex)\\lifx=y)]]$",
+        "$\\Assign{\\le}{M}$",
+        "$\\StructM$",
+        "$\\lforall[x][\\lforall[y][\\lforall[z][((x\\ley\\landy\\lez)\\lifx\\lez)]]]$",
+        "$\\Assign{\\le}{M}$",
+        "$\\StructM$",
+        "\\begin{align*}\\{\\quad&\\lforall[x][x\\lex],\\\\&\\lforall[x][\\lforall[y][((x\\ley\\landy\\lex)\\lifx=y)]],\\\\&\\lforall[x][\\lforall[y][\\lforall[z][((x\\ley\\landy\\lez)\\lifx\\lez)]]]\\quad\\}\\end{align*}",
+        "$\\Assign{\\le}{M}$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1367,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: models-theories\n% Section: expressing-props-of-structures",
+          "target_start": "% Part: first-order-logic\n% Chapter: models-theories\n% Section: expressing-props-of-structures"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{fol}{mat}{exs}",
+          "target_start": "\\olfileid{fol}{mat}{exs}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Expressing Properties of \\printtoken{P}{structure}}",
+          "target_start": "\\olsection{\\printtoken{P}{structure}ల ధర్మాలను వ్యక్తం చేయడం}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{explain}\nIt is often useful and important to express conditions on\nfunctions and relations, or more gen",
+          "target_start": "\\begin{explain}\nప్రమేయాలు, సంబంధాలపై షరతులను వ్యక్తం చేయడం, లేదా మరింత సాధారణంగా ఒక\nనిర్మాణంలోని ప్రమేయాలు, సం"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}[Model of a set]\nLet $\\Gamma$ be a set of !!{sentence}s in a language~$\\Lang L$.  We\nsay that !!a{",
+          "target_start": "\\begin{defn}[ఒక సమితికి నమూనా]\n$\\Gamma$, భాష~$\\Lang L$లోని \\tetoken{వాక్యాలు}{!!{sentence}s} సమితి అనుకుందాం. "
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{ex}\nThe sentence $\\lforall[x][x \\le x]$ is true in~$\\Struct M$ iff\n$\\Assign{\\le}{M}$ is a reflexive rel",
+          "target_start": "\\begin{ex}\nవాక్యం~$\\lforall[x][x \\le x]$, $\\Assign{\\le}{M}$ స్వావర్తన సంబంధం\nఅయినప్పుడు మాత్రమే~$\\Struct M$లో "
+        },
+        {
+          "index": 9,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{mat}{exs}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{mat}{exs}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0170",
+      "source_path": "content/first-order-logic/models-theories/theories.tex",
+      "source_sha256": "5ce32448dbe95d0b37477a6c343ae3a976bb299c955f50ae206b0f150f09ccd5",
+      "translation_sha256": "3d26fb8886139618d0a2192d1267d89c06849f50c048f3aeb08286a54951dffd",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{mat}{the}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{mat}{the}"
+      ],
+      "tokens_source": {
+        "!!a{element}": 1,
+        "!!a{structure}": 1,
+        "!!{constant}": 1,
+        "!!{element}s": 2,
+        "!!{function}": 1,
+        "!!{sentence}": 2,
+        "!!{sentence}s": 1,
+        "!!{structure}": 1,
+        "!!{structure}s": 1
+      },
+      "tokens_target": {
+        "!!a{element}": 1,
+        "!!a{structure}": 1,
+        "!!{constant}": 1,
+        "!!{element}s": 2,
+        "!!{function}": 1,
+        "!!{sentence}": 2,
+        "!!{sentence}s": 1,
+        "!!{structure}": 1,
+        "!!{structure}s": 1
+      },
+      "math_source": [
+        "$\\LangL_<$",
+        "\\begin{align*}\\{\\quad&\\lforall[x][\\lnotx<x],\\\\&\\lforall[x][\\lforall[y][((x<y\\lory<x)\\lorx=y)]],\\\\&\\lforall[x][\\lforall[y][\\lforall[z][((x<y\\landy<z)\\lifx<z)]]]\\quad\\}\\end{align*}",
+        "$R$",
+        "$X$",
+        "$\\StructM$",
+        "$\\DomainM=X$",
+        "$\\Assign{<}{M}=R$",
+        "$\\Obj1$",
+        "$\\cdot$",
+        "\\begin{align*}&\\lforall[x][\\eq[(x\\cdot\\Obj1)][x]]\\\\&\\lforall[x][\\lforall[y][\\lforall[z][\\eq[(x\\cdot(y\\cdotz))][((x\\cdoty)\\cdotz)]]]]\\\\&\\lforall[x][\\lexists[y][\\eq[(x\\cdoty)][\\Obj1]]]\\end{align*}",
+        "$\\LangL_A$",
+        "\\begin{align*}&\\lforall[x][\\lforall[y][(\\eq[x'][y']\\lif\\eq[x][y])]]\\\\&\\lforall[x][\\eq/[\\Obj0][x']]\\\\&\\lforall[x][\\eq[(x+\\Obj0)][x]]\\\\&\\lforall[x][\\lforall[y][\\eq[(x+y')][(x+y)']]]\\\\&\\lforall[x][\\eq[(x\\times\\Obj0)][\\Obj0]]\\\\&\\lforall[x][\\lforall[y][\\eq[(x\\timesy')][((x\\timesy)+x)]]]\\\\&\\lforall[x][\\lforall[y][(x<y\\liff\\lexists[z][\\eq[(z'+x)][y])]]]\\\\&(!A(\\Obj0)\\land\\lforall[x][(!A(x)\\lif!A(x'))])\\lif\\lforall[x][!A(x)]\\end{align*}",
+        "$<$",
+        "\\begin{align*}&\\lexists[x][\\lnot\\lexists[y][y\\inx]]\\\\&\\lforall[x][\\lforall[y][(\\lforall[z](z\\inx\\liffz\\iny)\\lif\\eq[x][y])]]\\\\&\\lforall[x][\\lforall[y][\\lexists[z][\\lforall[u][(u\\inz\\liff(\\eq[u][x]\\lor\\eq[u][y]))]]]]\\\\&\\lforall[x][\\lexists[y][\\lforall[z][(z\\iny\\liff\\lexists[u][(z\\inu\\landu\\inx)])]]]\\\\&\\lexists[x][\\lforall[y][(y\\inx\\liff!A(y))]]\\end{align*}",
+        "$\\emptyset$",
+        "$X$",
+        "$Y$",
+        "$\\{X,Y\\}$",
+        "$X$",
+        "$\\cupX$",
+        "$\\cupX$",
+        "$X$",
+        "$!A(x)$",
+        "$\\Setabs{x}{!A(x)}$",
+        "$!A(y)$",
+        "$\\lnoty\\iny$",
+        "\\[\\lexists[x][\\lforall[y][(y\\inx\\liff\\lnoty\\iny)]]\\]",
+        "$\\ObjP$",
+        "$\\Atom{\\ObjP}{x,y}$",
+        "$x$",
+        "$y$",
+        "$\\Assign{\\ObjP}{M}$",
+        "\\begin{align*}&\\lforall[x][\\Atom{\\ObjP}{x,x}]\\\\&\\lforall[x][\\lforall[y][((\\Part{x}{y}\\land\\Part{y}{x})\\lif\\eq[x][y])]]\\\\&\\lforall[x][\\lforall[y][\\lforall[z][((\\Part{x}{y}\\land\\Part{y}{z})\\lif\\Part{x}{z})]]]\\\\&\\lforall[x][\\lforall[y][\\lexists[z][\\lforall[u][(\\Part{z}{u}\\liff(\\Part{x}{u}\\land\\Part{y}{u}))]]]]\\end{align*}",
+        "$x$",
+        "$y$",
+        "$z$",
+        "$y$",
+        "$y$",
+        "$z$",
+        "$x$"
+      ],
+      "math_target_core": [
+        "$\\LangL_<$",
+        "\\begin{align*}\\{\\quad&\\lforall[x][\\lnotx<x],\\\\&\\lforall[x][\\lforall[y][((x<y\\lory<x)\\lorx=y)]],\\\\&\\lforall[x][\\lforall[y][\\lforall[z][((x<y\\landy<z)\\lifx<z)]]]\\quad\\}\\end{align*}",
+        "$R$",
+        "$X$",
+        "$\\DomainM=X$",
+        "$\\Assign{<}{M}=R$",
+        "$\\StructM$",
+        "$\\Obj1$",
+        "$\\cdot$",
+        "\\begin{align*}&\\lforall[x][\\eq[(x\\cdot\\Obj1)][x]]\\\\&\\lforall[x][\\lforall[y][\\lforall[z][\\eq[(x\\cdot(y\\cdotz))][((x\\cdoty)\\cdotz)]]]]\\\\&\\lforall[x][\\lexists[y][\\eq[(x\\cdoty)][\\Obj1]]]\\end{align*}",
+        "$\\LangL_A$",
+        "\\begin{align*}&\\lforall[x][\\lforall[y][(\\eq[x'][y']\\lif\\eq[x][y])]]\\\\&\\lforall[x][\\eq/[\\Obj0][x']]\\\\&\\lforall[x][\\eq[(x+\\Obj0)][x]]\\\\&\\lforall[x][\\lforall[y][\\eq[(x+y')][(x+y)']]]\\\\&\\lforall[x][\\eq[(x\\times\\Obj0)][\\Obj0]]\\\\&\\lforall[x][\\lforall[y][\\eq[(x\\timesy')][((x\\timesy)+x)]]]\\\\&\\lforall[x][\\lforall[y][(x<y\\liff\\lexists[z][\\eq[(z'+x)][y])]]]\\\\&(!A(\\Obj0)\\land\\lforall[x][(!A(x)\\lif!A(x'))])\\lif\\lforall[x][!A(x)]\\end{align*}",
+        "$<$",
+        "\\begin{align*}&\\lexists[x][\\lnot\\lexists[y][y\\inx]]\\\\&\\lforall[x][\\lforall[y][(\\lforall[z](z\\inx\\liffz\\iny)\\lif\\eq[x][y])]]\\\\&\\lforall[x][\\lforall[y][\\lexists[z][\\lforall[u][(u\\inz\\liff(\\eq[u][x]\\lor\\eq[u][y]))]]]]\\\\&\\lforall[x][\\lexists[y][\\lforall[z][(z\\iny\\liff\\lexists[u][(z\\inu\\landu\\inx)])]]]\\\\&\\lexists[x][\\lforall[y][(y\\inx\\liff!A(y))]]\\end{align*}",
+        "$\\emptyset$",
+        "$X$",
+        "$Y$",
+        "$\\{X,Y\\}$",
+        "$X$",
+        "$\\cupX$",
+        "$\\cupX$",
+        "$X$",
+        "$!A(x)$",
+        "$\\Setabs{x}{!A(x)}$",
+        "$!A(y)$",
+        "$\\lnoty\\iny$",
+        "\\[\\lexists[x][\\lforall[y][(y\\inx\\liff\\lnoty\\iny)]]\\]",
+        "$\\ObjP$",
+        "$\\Atom{\\ObjP}{x,y}$",
+        "$x$",
+        "$y$",
+        "$\\Assign{\\ObjP}{M}$",
+        "\\begin{align*}&\\lforall[x][\\Atom{\\ObjP}{x,x}]\\\\&\\lforall[x][\\lforall[y][((\\Part{x}{y}\\land\\Part{y}{x})\\lif\\eq[x][y])]]\\\\&\\lforall[x][\\lforall[y][\\lforall[z][((\\Part{x}{y}\\land\\Part{y}{z})\\lif\\Part{x}{z})]]]\\\\&\\lforall[x][\\lforall[y][\\lexists[z][\\lforall[u][(\\Part{z}{u}\\liff(\\Part{x}{u}\\land\\Part{y}{u}))]]]]\\end{align*}",
+        "$x$",
+        "$y$",
+        "$y$",
+        "$z$",
+        "$y$",
+        "$z$",
+        "$x$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2883,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: models-theories\n% Section: theories",
+          "target_start": "% Part: first-order-logic\n% Chapter: models-theories\n% Section: theories"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{fol}{mat}{the}",
+          "target_start": "\\olfileid{fol}{mat}{the}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Examples of First-Order Theories}",
+          "target_start": "\\olsection{మొదటిస్థాయి సిద్ధాంతాల ఉదాహరణలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{ex}\nThe theory of strict linear orders in the language~$\\Lang L_<$ is\naxiomatized by the set\n\\begin{ali",
+          "target_start": "\\begin{ex}\nభాష~$\\Lang L_<$లోని కఠిన రేఖీయ క్రమాల సిద్ధాంతం కింది సమితి ద్వారా\nస్వీకృతీకరించబడింది:\n\\begin{alig"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{ex}\nThe theory of groups in the language $\\Obj 1$ (!!{constant}), $\\cdot$\n(two-place !!{function}) is a",
+          "target_start": "\\begin{ex}\n$\\Obj 1$ (\\tetoken{స్థిరసంకేతం}{!!{constant}}), $\\cdot$ (ద్విస్థానిక \\tetoken{ప్రమేయ సంకేతం}{!!{fun"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{ex}\nThe theory of Peano arithmetic is axiomatized by the following\nsentences in the language of arithme",
+          "target_start": "\\begin{ex}\nపియానో అంకగణిత సిద్ధాంతం, అంకగణిత భాష~$\\Lang L_A$లోని కింది\nవాక్యాల ద్వారా స్వీకృతీకరించబడింది.\n\\be"
+        },
+        {
+          "index": 9,
+          "source_start": "The last axiom is an \\emph{explicit definition} of~$<$.\n\\end{ex}",
+          "target_start": "చివరి స్వీకృతం~$<$కు ఒక \\emph{స్పష్ట నిర్వచనం}.\n\\end{ex}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{ex}\nThe theory of pure sets plays an important role in the foundations\n(and in the philosophy) of mathe",
+          "target_start": "\\begin{ex}\nగణితపు పునాదుల్లో (అలాగే గణిత తత్వశాస్త్రంలో) శుద్ధ సమితుల సిద్ధాంతం\nముఖ్యమైన పాత్ర పోషిస్తుంది. ఒక"
+        },
+        {
+          "index": 11,
+          "source_start": "The following might be considered as an axiom system for a theory of\npure sets:\n\\begin{align*}\n& \\lexists[x][\\",
+          "target_start": "కింది వాటిని శుద్ధ సమితుల సిద్ధాంతానికి ఒక స్వీకృత వ్యవస్థగా\nపరిగణించవచ్చు:\n\\begin{align*}\n& \\lexists[x][\\lnot"
+        },
+        {
+          "index": 12,
+          "source_start": "The !!{sentence}s mentioned last are collectively called the\n\\emph{naive comprehension scheme}.  It essentiall",
+          "target_start": "చివర పేర్కొన్న \\tetoken{వాక్యాలను}{!!{sentence}s} సమష్టిగా \\emph{అమాయక ధర్మసంగ్రహ పథకం}\nఅంటారు. ప్రతి~$!A(x)$క"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{ex}\nIn the area of \\emph{mereology}, the relation of \\emph{parthood} is a\nfundamental relation.  Just l",
+          "target_start": "\\begin{ex}\n\\emph{భాగతత్త్వం} (మీరియాలజీ)లో \\emph{భాగత్వ} సంబంధం ఒక మౌలిక\nసంబంధం. సమితుల సిద్ధాంతాల మాదిరిగానే,"
+        },
+        {
+          "index": 14,
+          "source_start": "The language of mereology contains a single two-place predicate\nsymbol~$\\Obj P$, and $\\Atom{\\Obj P}{x, y}$ ``m",
+          "target_start": "భాగతత్త్వ భాషలో ఒకే ద్విస్థానిక విధేయ సంకేతం~$\\Obj P$ ఉంటుంది;\n$\\Atom{\\Obj P}{x,y}$కు ``$x$, $y$లో ఒక భాగం'' అ"
+        },
+        {
+          "index": 15,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{mat}{the}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{mat}{the}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0171",
+      "source_path": "content/first-order-logic/models-theories/expressing-relations.tex",
+      "source_sha256": "37f0dcfda647cea12a9e3182a4e868092993f1d928faca29225f8e6efb82f87b",
+      "translation_sha256": "73957080816bd80674dc99db8954e58f1cac54fb5f233fd1ce763e1b09f837a5",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{mat}{exr}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{mat}{exr}"
+      ],
+      "tokens_source": {
+        "!!a{formula}": 1,
+        "!!a{structure}": 4,
+        "!!{constant}s": 2,
+        "!!{domain}": 1,
+        "!!{element}s": 1,
+        "!!{formula}": 2,
+        "!!{formula}s": 5,
+        "!!{function}s": 2,
+        "!!{predicate}s": 4,
+        "!!{structure}s": 1
+      },
+      "tokens_target": {
+        "!!a{formula}": 1,
+        "!!a{structure}": 4,
+        "!!{constant}s": 2,
+        "!!{domain}": 1,
+        "!!{element}s": 1,
+        "!!{formula}": 2,
+        "!!{formula}s": 5,
+        "!!{function}s": 2,
+        "!!{predicate}s": 4,
+        "!!{structure}s": 1
+      },
+      "math_source": [
+        "$\\StructM$",
+        "$\\LangL$",
+        "$\\StructM$",
+        "$\\StructM$",
+        "$\\StructM$",
+        "$\\DomainM$",
+        "$\\DomainM$",
+        "$\\DomainM$",
+        "$\\ObjA^2_0$",
+        "$\\LangL$",
+        "$\\StructM$",
+        "$R=\\Assign{{\\ObjA^2_0}}{M}$",
+        "$\\Atom{\\ObjA^2_0}{\\Objv_1,\\Objv_2}$",
+        "$s$",
+        "$\\Objv_1$",
+        "$a\\in\\Domain{M}$",
+        "$\\Objv_2$",
+        "$b\\in\\DomainM$",
+        "\\[Rab\\Sat{M}{\\Atom{\\ObjA^2_0}{\\Objv_1,\\Objv_2}}[s].\\]",
+        "$Rab$",
+        "$\\Sat{M}{\\Atom{\\ObjA^2_0}{a,b}}$",
+        "$a$",
+        "$b$",
+        "$\\Domain{M}$",
+        "$\\StructM$",
+        "$!A(\\Objv_1,\\dots,\\Objv_n)$",
+        "$\\LangL$",
+        "$\\Objv_1$",
+        "$\\Objv_n$",
+        "$\\StructM$",
+        "$\\LangL$",
+        "$!A(\\Objv_1,\\dots,\\Objv_n)$",
+        "$R\\subseteq\\DomainM^n$",
+        "\\[Ra_1\\dotsa_n\\Sat{M}{\\Atom{!A}{\\Objv_1,\\dots,\\Objv_n}}[s]\\]",
+        "$s$",
+        "$s(\\Objv_i)=a_i$",
+        "$i=1,\\dots,n$",
+        "$\\StructN$",
+        "$\\Objv_1<\\Objv_2\\lor\\eq[\\Objv_1][\\Objv_2]$",
+        "$\\le$",
+        "$\\Nat$",
+        "$\\eq[\\Objv_2][\\Objv_1']$",
+        "$R\\subseteq\\Nat^2$",
+        "$Rnm$",
+        "$m$",
+        "$n$",
+        "$\\eq[\\Objv_1][\\Objv_2']$",
+        "$\\lexists[\\Objv_3][(\\eq/[\\Objv_3][\\Obj0]\\land\\eq[\\Objv_2][(\\Objv_1+\\Objv_3)])]$",
+        "$\\lexists[\\Objv_3][\\eq[(\\Objv_1+{\\Objv_3}')][v_2]]$",
+        "$\\Obj<$",
+        "$<$",
+        "$\\LangL_A$",
+        "$n$",
+        "$i$",
+        "$j$",
+        "$n$",
+        "$m$",
+        "$m$",
+        "$n$",
+        "$n$",
+        "$1$",
+        "$n$",
+        "$n$",
+        "$!A(\\Objv_1,\\Objv_2)$",
+        "$R\\subseteq\\DomainM^2$",
+        "$\\StructM$",
+        "$R^{-1}$",
+        "$R$",
+        "$R\\midR$",
+        "$R^+$",
+        "$R$",
+        "$\\Lang{L}$",
+        "$<$",
+        "$\\eq$",
+        "$\\Struct{N}$",
+        "$\\Domain{N}=\\Nat$",
+        "$\\Assign{<}{N}=\\Setabs{\\tuple{n,m}}{n<m}$",
+        "$\\{0\\}$",
+        "$\\Struct{N}$",
+        "$\\{1\\}$",
+        "$\\Struct{N}$",
+        "$\\{2\\}$",
+        "$\\Struct{N}$",
+        "$n\\in\\Nat$",
+        "$\\{n\\}$",
+        "$\\Struct{N}$",
+        "$\\Domain{N}$",
+        "$\\Struct{N}$",
+        "$\\Domain{N}$",
+        "$\\Struct{N}$",
+        "$X\\subseteq\\Nat$",
+        "$\\Nat\\setminusX$"
+      ],
+      "math_target_core": [
+        "$\\StructM$",
+        "$\\StructM$",
+        "$\\LangL$",
+        "$\\StructM$",
+        "$\\StructM$",
+        "$\\DomainM$",
+        "$\\DomainM$",
+        "$\\DomainM$",
+        "$\\ObjA^2_0$",
+        "$\\LangL$",
+        "$\\StructM$",
+        "$R=\\Assign{{\\ObjA^2_0}}{M}$",
+        "$\\Atom{\\ObjA^2_0}{\\Objv_1,\\Objv_2}$",
+        "$s$",
+        "$\\Objv_1$",
+        "$a\\in\\Domain{M}$",
+        "$\\Objv_2$",
+        "$b\\in\\DomainM$",
+        "\\[Rab\\Sat{M}{\\Atom{\\ObjA^2_0}{\\Objv_1,\\Objv_2}}[s].\\]",
+        "$Rab$",
+        "$\\Sat{M}{\\Atom{\\ObjA^2_0}{a,b}}$",
+        "$a$",
+        "$b$",
+        "$\\Domain{M}$",
+        "$\\StructM$",
+        "$!A(\\Objv_1,\\dots,\\Objv_n)$",
+        "$\\LangL$",
+        "$\\Objv_1$",
+        "$\\Objv_n$",
+        "$\\StructM$",
+        "$\\LangL$",
+        "$s$",
+        "$s(\\Objv_i)=a_i$",
+        "$i=1,\\dots,n$",
+        "\\[Ra_1\\dotsa_n\\Sat{M}{\\Atom{!A}{\\Objv_1,\\dots,\\Objv_n}}[s]\\]",
+        "$!A(\\Objv_1,\\dots,\\Objv_n)$",
+        "$R\\subseteq\\DomainM^n$",
+        "$\\StructN$",
+        "$\\Objv_1<\\Objv_2\\lor\\eq[\\Objv_1][\\Objv_2]$",
+        "$\\Nat$",
+        "$\\le$",
+        "$\\eq[\\Objv_2][\\Objv_1']$",
+        "$m$",
+        "$n$",
+        "$Rnm$",
+        "$R\\subseteq\\Nat^2$",
+        "$\\eq[\\Objv_1][\\Objv_2']$",
+        "$\\lexists[\\Objv_3][(\\eq/[\\Objv_3][\\Obj0]\\land\\eq[\\Objv_2][(\\Objv_1+\\Objv_3)])]$",
+        "$\\lexists[\\Objv_3][\\eq[(\\Objv_1+{\\Objv_3}')][\\Objv_2]]$",
+        "$\\Obj<$",
+        "$<$",
+        "$\\LangL_A$",
+        "$n$",
+        "$i$",
+        "$j$",
+        "$n$",
+        "$m$",
+        "$m$",
+        "$n$",
+        "$n$",
+        "$1$",
+        "$n$",
+        "$n$",
+        "$!A(\\Objv_1,\\Objv_2)$",
+        "$\\StructM$",
+        "$R\\subseteq\\DomainM^2$",
+        "$R$",
+        "$R^{-1}$",
+        "$R\\midR$",
+        "$R$",
+        "$R^+$",
+        "$\\Lang{L}$",
+        "$<$",
+        "$\\eq$",
+        "$\\Domain{N}=\\Nat$",
+        "$\\Assign{<}{N}=\\Setabs{\\tuple{n,m}}{n<m}$",
+        "$\\Struct{N}$",
+        "$\\{0\\}$",
+        "$\\Struct{N}$",
+        "$\\{1\\}$",
+        "$\\Struct{N}$",
+        "$\\{2\\}$",
+        "$\\Struct{N}$",
+        "$n\\in\\Nat$",
+        "$\\{n\\}$",
+        "$\\Struct{N}$",
+        "$\\Domain{N}$",
+        "$\\Struct{N}$",
+        "$\\Domain{N}$",
+        "$\\Struct{N}$",
+        "$X\\subseteq\\Nat$",
+        "$\\Nat\\setminusX$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$\\lexists[\\Objv_3][\\eq[(\\Objv_1+{\\Objv_3}')][v_2]]$"
+      ],
+      "math_delta_target_only": [
+        "$\\lexists[\\Objv_3][\\eq[(\\Objv_1+{\\Objv_3}')][\\Objv_2]]$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTEFOLMAT-001"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2458,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: models-theories\n% Section: expressing-relations",
+          "target_start": "% Part: first-order-logic\n% Chapter: models-theories\n% Section: expressing-relations"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{fol}{mat}{exr}",
+          "target_start": "\\olfileid{fol}{mat}{exr}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Expressing Relations in \\article{structure}\n  \\printtoken{S}{structure}}",
+          "target_start": "\\olsection{\\article{structure}\n  \\printtoken{S}{structure}లో సంబంధాలను వ్యక్తం చేయడం}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{explain}\nOne main use !!{formula}s can be put to is to express properties and\nrelations in !!a{structur",
+          "target_start": "\\begin{explain}\n\\tetoken{సూత్రాలు}{!!{formula}s} యొక్క ఒక ప్రధాన ఉపయోగం, \\tetoken{ఒక నిర్మాణం}{!!a{structure}}"
+        },
+        {
+          "index": 7,
+          "source_start": "Since we don't just have atomic !!{formula}s, but can combine them\nusing the logical connectives and the quant",
+          "target_start": "మనకు పరమాణు \\tetoken{సూత్రాలు}{!!{formula}s} మాత్రమే కాకుండా, తార్కిక సంయోజకాలు,\nపరిమాణీకరణికాల ద్వారా వాటిని "
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{defn}\nLet $!A(\\Obj v_1,\\dots, \\Obj v_n)$ be !!a{formula} of $\\Lang L$ in\nwhich only $\\Obj v_1$,\\dots, $",
+          "target_start": "\\begin{defn}\n$!A(\\Obj v_1,\\dots, \\Obj v_n)$ అనేది~$\\Lang L$లోని \\tetoken{ఒక సూత్రం}{!!a{formula}} అని,\nదానిలో "
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{ex}\nIn the standard model of arithmetic~$\\Struct N$, the !!{formula} $\\Obj\nv_1 < \\Obj v_2 \\lor \\eq[\\Obj",
+          "target_start": "\\begin{ex}\nఅంకగణిత ప్రామాణిక నమూనా~$\\Struct N$లో, \\tetoken{సూత్రం}{!!{formula}}\n$\\Obj v_1 < \\Obj v_2 \\lor \\eq["
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{explain}\nThis idea is not just interesting in specific !!{structure}s, but\ngenerally whenever we use a ",
+          "target_start": "\\begin{explain}\nఈ భావన నిర్దిష్ట \\tetoken{నిర్మాణాలలో}{!!{structure}s} మాత్రమే ఆసక్తికరమైనది కాదు; ఒక\nఉద్దేశిం"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{prob}\nFind !!{formula}s in $\\Lang L_A$ which define the following relations:\n\\begin{enumerate}\n\\item $n",
+          "target_start": "\\begin{prob}\nకింది సంబంధాలను నిర్వచించే \\tetoken{సూత్రాలను}{!!{formula}s}~$\\Lang L_A$లో కనుగొనండి:\n\\begin{enum"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{prob}\nSuppose the formula $!A(\\Obj v_1, \\Obj v_2)$ expresses the relation $R\n\\subseteq \\Domain M^2$ in ",
+          "target_start": "\\begin{prob}\nసూత్రం~$!A(\\Obj v_1, \\Obj v_2)$, \\tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\\Struct M$లో\n$R \\subseteq"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{prob}\nLet $\\Lang{L}$ be the language containing a 2-place predicate symbol\n$<$ only (no other !!{consta",
+          "target_start": "\\begin{prob}\n$\\Lang{L}$లో $<$ అనే ద్విస్థానిక విధేయ సంకేతం మాత్రమే ఉందనుకుందాం\n(వేరే \\tetoken{స్థిరసంకేతాలు}{!"
+        },
+        {
+          "index": 14,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{mat}{exr}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{mat}{exr}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0172",
+      "source_path": "content/first-order-logic/models-theories/set-theory.tex",
+      "source_sha256": "e85d5beac63c3e6a5c44bec12aabbfe05e0b2af8f2604d6d79bb5220587eaeaf",
+      "translation_sha256": "c43795a166b9982fc1e479cdbb08018b3534979afdd57dfecc36b97ab85bc2a9",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{mat}{set}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{mat}{set}"
+      ],
+      "tokens_source": {
+        "!!a{derivation}": 1,
+        "!!a{formula}": 1,
+        "!!a{function}": 1,
+        "!!{constant}": 1,
+        "!!{constant}s": 1,
+        "!!{element}": 1,
+        "!!{element}s": 10,
+        "!!{formula}": 1,
+        "!!{formula}s": 1,
+        "!!{function}s": 1,
+        "!!{injective}": 3,
+        "!!{sentence}": 4
+      },
+      "tokens_target": {
+        "!!a{derivation}": 1,
+        "!!a{formula}": 1,
+        "!!a{function}": 1,
+        "!!{constant}": 1,
+        "!!{constant}s": 1,
+        "!!{element}": 1,
+        "!!{element}s": 10,
+        "!!{formula}": 1,
+        "!!{formula}s": 1,
+        "!!{function}s": 1,
+        "!!{injective}": 3,
+        "!!{sentence}": 4
+      },
+      "math_source": [
+        "$\\in$",
+        "$\\in$",
+        "$\\Log{ZFC}$",
+        "$\\emptyset$",
+        "$\\Nat$",
+        "$X\\cupY$",
+        "$\\Pow{X}$",
+        "$!A(x,y)$",
+        "$\\tuple{X,Y}$",
+        "$X\\subseteqY$",
+        "$X$",
+        "$Y$",
+        "$X$",
+        "$Y$",
+        "$\\subseteq$",
+        "\\[\\lforall[z][(z\\inx\\lifz\\iny)]\\]",
+        "$\\subseteq$",
+        "$x$",
+        "$y$",
+        "$z$",
+        "$x$",
+        "$y$",
+        "$x$",
+        "$y$",
+        "$\\lforall[x][\\lforall[y][((x\\subseteqy\\landy\\subseteqx)\\lifx=y)]]$",
+        "$\\subseteq$",
+        "\\[\\lforall[x][\\lforall[y][((\\lforall[z][(z\\inx\\lifz\\iny)]\\land\\lforall[z][(z\\iny\\lifz\\inx)])\\lifx=y)]].\\]",
+        "$\\Log{ZFC}$",
+        "$\\emptyset$",
+        "$x$",
+        "$\\lnot\\lexists[y][y\\inx]$",
+        "$\\emptyset$",
+        "$\\lexists[x][\\lnot\\lexists[y][y\\inx]]$",
+        "$\\Log{ZFC}$",
+        "$\\emptyset$",
+        "$\\emptyset$",
+        "\\[\\lexists[x][(\\lnot\\lexists[y][y\\inx]\\land\\lforall[z][x\\subseteqz])]\\]",
+        "$x\\subseteqz$",
+        "$X\\cupY$",
+        "$\\Pow{X}$",
+        "$X\\cupY=Z$",
+        "$\\Pow{X}=Y$",
+        "\\begin{align*}&\\lforall[u][((u\\inx\\loru\\iny)\\liffu\\inz)]\\\\&\\lforall[u][(u\\subseteqx\\liffu\\iny)]\\end{align*}",
+        "$X\\cupY$",
+        "$X$",
+        "$Y$",
+        "$\\Pow{X}$",
+        "$X$",
+        "$x\\cupy$",
+        "$\\Pow{x}$",
+        "$X\\cupY=Z$",
+        "$\\Pow{X}=Y$",
+        "$\\lforall[x][\\lexists[y][\\Pow{x}=y]]$",
+        "$\\Log{ZFC}$",
+        "$\\tuple{x,y}$",
+        "$\\{\\{x\\},\\{x,y\\}\\}$",
+        "$\\tuple{x,y}=z$",
+        "$\\{\\{x\\},\\{x,y\\}\\}=z$",
+        "\\[\\lforall[u][(u\\inz\\liff(\\lforall[v][(v\\inu\\liffv=x)]\\lor\\lforall[v][(v\\inu\\liff(v=x\\lorv=y))]))]\\]",
+        "$u$",
+        "$z$",
+        "$x$",
+        "$x$",
+        "$y$",
+        "$\\{x\\}$",
+        "$\\{x,y\\}$",
+        "$X\\timesY=Z$",
+        "\\[\\lforall[z][(z\\inZ\\liff\\lexists[x][\\lexists[y][(x\\inX\\landy\\inY\\land\\tuple{x,y}=z)]])]\\]",
+        "$f\\colonX\\toY$",
+        "$f(x)=y$",
+        "$\\Setabs{\\tuple{x,y}}{f(x)=y}$",
+        "$f$",
+        "$X$",
+        "$Y$",
+        "$\\subseteqX\\timesY$",
+        "$x\\inX$",
+        "$y\\inY$",
+        "$\\tuple{x,y}\\inf$",
+        "$\\tuple{x,y},\\tuple{x,y'}\\inf$",
+        "$y=y'$",
+        "$f$",
+        "$X$",
+        "$Y$",
+        "\\begin{align*}\\lforall[u][(u\\inf\\lif{}]&\\lexists[x][\\lexists[y][(x\\inX\\landy\\inY\\land\\tuple{x,y}=u)]])\\land{}\\\\\\lforall[x][(x\\inX\\lif{}]&(\\lexists[y][(y\\inY\\land\\mathrm{maps}(f,x,y))]\\land{}\\\\&(\\lforall[y][\\lforall[y'][((\\mathrm{maps}(f,x,y)\\land\\mathrm{maps}(f,x,y'))\\lify=y')]]))\\end{align*}",
+        "$\\mathrm{maps}(f,x,y)$",
+        "$\\lexists[v][(v\\inf\\land\\tuple{x,y}=v)]$",
+        "$f(x)=y$",
+        "$f\\colonX\\toY$",
+        "\\begin{multline*}f\\colonX\\toY\\land\\lforall[x][\\lforall[x'][((x\\inX\\landx'\\inX\\land{}]]\\\\\\lexists[y][(\\mathrm{maps}(f,x,y)\\land\\mathrm{maps}(f,x',y))])\\lifx=x')\\end{multline*}",
+        "$f\\colonX\\toY$",
+        "$f$",
+        "$x,x'\\inX$",
+        "$y$",
+        "$x=x'$",
+        "$\\mathrm{inj}(f,X,Y)$",
+        "$\\Pow{X}$",
+        "$X$",
+        "\\[\\lforall[X][\\lforall[Y][(\\Pow{X}=Y\\lif\\lnot\\lexists[f][\\mathrm{inj}(f,Y,X)])]]\\]",
+        "$!A(x)$",
+        "$x$",
+        "\\[\\lexists[y][\\lforall[x][(x\\iny\\liff!A(x))]].\\]",
+        "$y$",
+        "$x$",
+        "$!A(x)$",
+        "$!A(x)\\ident\\lnotx\\inx$",
+        "\\[\\lexists[y][\\lforall[x][(x\\iny\\liffx\\notinx)]],\\]",
+        "$\\Log{ZFC}$",
+        "\\[\\lforall[z][\\lexists[y][\\lforall[x][(x\\iny\\liff(x\\inz\\land!A(x))]]].\\]",
+        "\\[\\lexists[y][\\lforall[x][(x\\iny\\liffx\\notinx)]]\\Proves\\lfalse.\\]",
+        "$(A\\lif\\lnotA)\\land(\\lnotA\\lifA)\\Proves\\lfalse$"
+      ],
+      "math_target_core": [
+        "$\\in$",
+        "$\\in$",
+        "$\\Log{ZFC}$",
+        "$\\emptyset$",
+        "$\\Nat$",
+        "$X\\cupY$",
+        "$\\Pow{X}$",
+        "$!A(x,y)$",
+        "$\\tuple{X,Y}$",
+        "$X\\subseteqY$",
+        "$X$",
+        "$Y$",
+        "$X$",
+        "$Y$",
+        "$\\subseteq$",
+        "\\[\\lforall[z][(z\\inx\\lifz\\iny)]\\]",
+        "$\\subseteq$",
+        "$x$",
+        "$y$",
+        "$z$",
+        "$x$",
+        "$y$",
+        "$x$",
+        "$y$",
+        "$\\lforall[x][\\lforall[y][((x\\subseteqy\\landy\\subseteqx)\\lifx=y)]]$",
+        "$\\subseteq$",
+        "\\[\\lforall[x][\\lforall[y][((\\lforall[z][(z\\inx\\lifz\\iny)]\\land\\lforall[z][(z\\iny\\lifz\\inx)])\\lifx=y)]].\\]",
+        "$\\Log{ZFC}$",
+        "$\\emptyset$",
+        "$x$",
+        "$\\lnot\\lexists[y][y\\inx]$",
+        "$\\emptyset$",
+        "$\\lexists[x][\\lnot\\lexists[y][y\\inx]]$",
+        "$\\Log{ZFC}$",
+        "$\\emptyset$",
+        "$\\emptyset$",
+        "\\[\\lexists[x][(\\lnot\\lexists[y][y\\inx]\\land\\lforall[z][x\\subseteqz])]\\]",
+        "$x\\subseteqz$",
+        "$X\\cupY$",
+        "$\\Pow{X}$",
+        "$X\\cupY=Z$",
+        "$\\Pow{X}=Y$",
+        "\\begin{align*}&\\lforall[u][((u\\inx\\loru\\iny)\\liffu\\inz)]\\\\&\\lforall[u][(u\\subseteqx\\liffu\\iny)]\\end{align*}",
+        "$X\\cupY$",
+        "$X$",
+        "$Y$",
+        "$\\Pow{X}$",
+        "$X$",
+        "$x\\cupy$",
+        "$\\Pow{x}$",
+        "$X\\cupY=Z$",
+        "$\\Pow{X}=Y$",
+        "$\\lforall[x][\\lexists[y][\\Pow{x}=y]]$",
+        "$\\Log{ZFC}$",
+        "$\\tuple{x,y}$",
+        "$\\{\\{x\\},\\{x,y\\}\\}$",
+        "$\\tuple{x,y}=z$",
+        "$\\{\\{x\\},\\{x,y\\}\\}=z$",
+        "\\[\\lforall[u][(u\\inz\\liff(\\lforall[v][(v\\inu\\liffv=x)]\\lor\\lforall[v][(v\\inu\\liff(v=x\\lorv=y))]))]\\]",
+        "$z$",
+        "$u$",
+        "$x$",
+        "$x$",
+        "$y$",
+        "$\\{x\\}$",
+        "$\\{x,y\\}$",
+        "$X\\timesY=Z$",
+        "\\[\\lforall[z][(z\\inZ\\liff\\lexists[x][\\lexists[y][(x\\inX\\landy\\inY\\land\\tuple{x,y}=z)]])]\\]",
+        "$f\\colonX\\toY$",
+        "$f(x)=y$",
+        "$\\Setabs{\\tuple{x,y}}{f(x)=y}$",
+        "$f$",
+        "$X$",
+        "$Y$",
+        "$\\subseteqX\\timesY$",
+        "$x\\inX$",
+        "$\\tuple{x,y}\\inf$",
+        "$y\\inY$",
+        "$\\tuple{x,y},\\tuple{x,y'}\\inf$",
+        "$y=y'$",
+        "$f$",
+        "$X$",
+        "$Y$",
+        "\\begin{align*}\\lforall[u][(u\\inf\\lif{}]&\\lexists[x][\\lexists[y][(x\\inX\\landy\\inY\\land\\tuple{x,y}=u)]])\\land{}\\\\\\lforall[x][(x\\inX\\lif{}]&(\\lexists[y][(y\\inY\\land\\mathrm{maps}(f,x,y))]\\land{}\\\\&(\\lforall[y][\\lforall[y'][((\\mathrm{maps}(f,x,y)\\land\\mathrm{maps}(f,x,y'))\\lify=y')]]))\\end{align*}",
+        "$\\mathrm{maps}(f,x,y)$",
+        "$\\lexists[v][(v\\inf\\land\\tuple{x,y}=v)]$",
+        "$f(x)=y$",
+        "$f\\colonX\\toY$",
+        "\\begin{multline*}f\\colonX\\toY\\land\\lforall[x][\\lforall[x'][((x\\inX\\landx'\\inX\\land{}]]\\\\\\lexists[y][(\\mathrm{maps}(f,x,y)\\land\\mathrm{maps}(f,x',y))])\\lifx=x')\\end{multline*}",
+        "$f\\colonX\\toY$",
+        "$f$",
+        "$x,x'\\inX$",
+        "$y$",
+        "$x=x'$",
+        "$\\mathrm{inj}(f,X,Y)$",
+        "$\\Pow{X}$",
+        "$X$",
+        "\\[\\lforall[X][\\lforall[Y][(\\Pow{X}=Y\\lif\\lnot\\lexists[f][\\mathrm{inj}(f,Y,X)])]]\\]",
+        "$!A(x)$",
+        "$x$",
+        "\\[\\lexists[y][\\lforall[x][(x\\iny\\liff!A(x))]].\\]",
+        "$!A(x)$",
+        "$x$",
+        "$y$",
+        "$!A(x)\\ident\\lnotx\\inx$",
+        "\\[\\lexists[y][\\lforall[x][(x\\iny\\liffx\\notinx)]],\\]",
+        "$\\Log{ZFC}$",
+        "\\[\\lforall[z][\\lexists[y][\\lforall[x][(x\\iny\\liff(x\\inz\\land!A(x))]]].\\]",
+        "\\[\\lexists[y][\\lforall[x][(x\\iny\\liffx\\notinx)]]\\Proves\\lfalse.\\]",
+        "$(A\\lif\\lnotA)\\land(\\lnotA\\lifA)\\Proves\\lfalse$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 4004,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: models-theories\n% Section: set-theory",
+          "target_start": "% Part: first-order-logic\n% Chapter: models-theories\n% Section: set-theory"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{fol}{mat}{set}",
+          "target_start": "\\olfileid{fol}{mat}{set}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{The Theory of Sets}",
+          "target_start": "\\olsection{సమితుల సిద్ధాంతం}"
+        },
+        {
+          "index": 6,
+          "source_start": "Almost all of mathematics can be developed in the theory of sets.\nDeveloping mathematics in this theory involv",
+          "target_start": "దాదాపు మొత్తం గణితాన్ని సమితుల సిద్ధాంతంలో అభివృద్ధి చేయవచ్చు. ఈ\nసిద్ధాంతంలో గణితాన్ని అభివృద్ధి చేయడానికి అనే"
+        },
+        {
+          "index": 7,
+          "source_start": "To begin with, ``is an element of'' is not the only relation we are\ninterested in: ``is a subset of'' seems al",
+          "target_start": "``దీనిలో మూలకం'' అనేది మాత్రమే మనకు ఆసక్తి ఉన్న సంబంధం కాదు:\n``దీనికి ఉపసమితి'' కూడా దాదాపు అంతే ముఖ్యమైనదిగా "
+        },
+        {
+          "index": 8,
+          "source_start": "There is no !!{constant} for $\\emptyset$, but we can express ``$x$ is\nempty'' by $\\lnot \\lexists[y][y \\in x]$.",
+          "target_start": "$\\emptyset$కు \\tetoken{స్థిరసంకేతం}{!!{constant}} లేదు; కానీ ``$x$ శూన్యం'' అని\n$\\lnot \\lexists[y][y \\in x]$ ద"
+        },
+        {
+          "index": 9,
+          "source_start": "To talk about operations on sets, such as $X \\cup Y$ and $\\Pow{X}$, we\nhave to use a similar trick.  There are",
+          "target_start": "$X \\cup Y$, $\\Pow{X}$ వంటి సమితులపై చర్యల గురించి మాట్లాడడానికి కూడా\nఇలాంటి ఉపాయమే ఉపయోగించాలి. సమితుల సిద్ధాం"
+        },
+        {
+          "index": 10,
+          "source_start": "Now what about talk of ordered pairs or functions?  Here we have to\nexplain how we can think of ordered pairs ",
+          "target_start": "ఇప్పుడు క్రమయుగ్మాలు లేదా ప్రమేయాల గురించి ఎలా మాట్లాడాలి? ఇక్కడ\nక్రమయుగ్మాలు, ప్రమేయాలను ప్రత్యేక రకాల సమితుల"
+        },
+        {
+          "index": 11,
+          "source_start": "A function $f \\colon X \\to Y$ can be thought of as the relation $f(x)\n= y$, i.e., as the set of pairs~$\\Setabs",
+          "target_start": "ప్రమేయం~$f \\colon X \\to Y$ను $f(x)=y$ అనే సంబంధంగా, అంటే\n$\\Setabs{\\tuple{x,y}}{f(x)=y}$ అనే యుగ్మాల సమితిగా భా"
+        },
+        {
+          "index": 12,
+          "source_start": "It is now also not hard to express that $f\\colon X \\to Y$ is\n!!{injective}, for instance:\n\\begin{multline*}\n f",
+          "target_start": "ఉదాహరణకు, $f\\colon X\\to Y$ \\tetoken{ఒకటి-ఒకటి}{!!{injective}} అని వ్యక్తం చేయడం కూడా ఇప్పుడు\nకష్టం కాదు:\n\\begi"
+        },
+        {
+          "index": 13,
+          "source_start": "One might think that set theory requires another axiom that guarantees\nthe existence of a set for every defini",
+          "target_start": "ప్రతి నిర్వచక ధర్మానికీ ఒక సమితి ఉనికిని హామీ ఇచ్చే మరో స్వీకృతం\nసమితుల సిద్ధాంతానికి అవసరమని అనిపించవచ్చు. $!"
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{prob}\nShow that the comprehension principle is inconsistent by giving\n!!a{derivation} that shows\n\\[\n\\le",
+          "target_start": "\\begin{prob}\nకింది దాన్ని చూపే \\tetoken{ఒక వ్యుత్పత్తిని}{!!a{derivation}} ఇవ్వడం ద్వారా ధర్మసంగ్రహ సూత్రం\nఅవై"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{mat}{set}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{mat}{set}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0173",
+      "source_path": "content/first-order-logic/models-theories/size-of-structures.tex",
+      "source_sha256": "8b7238c293db0a3717f1fcf3ad2420e093cd65593237c26faaaf36d7b131e934",
+      "translation_sha256": "261d03291a99cfbe0fae2620ae824c8f955c635cea4cb3c50bdee4423e96b24c",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{mat}{siz}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{mat}{siz}"
+      ],
+      "tokens_source": {
+        "!!a{structure}": 3,
+        "!!{domain}": 1,
+        "!!{element}s": 4,
+        "!!{nonenumerable}": 1,
+        "!!{predicate}s": 1,
+        "!!{sentence}": 2,
+        "!!{sentence}s": 3,
+        "!!{structure}": 3
+      },
+      "tokens_target": {
+        "!!a{structure}": 3,
+        "!!{domain}": 1,
+        "!!{element}s": 4,
+        "!!{nonenumerable}": 1,
+        "!!{predicate}s": 1,
+        "!!{sentence}": 2,
+        "!!{sentence}s": 3,
+        "!!{structure}": 3
+      },
+      "math_source": [
+        "$n$",
+        "\\begin{multline*}!A_{\\gen}\\ident\\lexists[x_1][\\lexists[x_2][\\dots\\lexists[x_n][{}]]]\\\\\\begin{aligned}(\\eq/[x_1][x_2]\\land{}\\eq/[x_1][x_3]\\land\\eq/[x_1][x_4]\\land\\dots\\land\\eq/[x_1][x_n]\\land{}\\\\\\eq/[x_2][x_3]\\land\\eq/[x_2][x_4]\\land\\dots\\land{}\\eq/[x_2][x_n]\\land{}\\\\\\vdots\\\\\\eq/[x_{n-1}][x_n])\\end{aligned}\\end{multline*}",
+        "$\\StructM$",
+        "$\\DomainM$",
+        "$n$",
+        "$\\Sat{M}{\\lnot!A_{\\gen+1}}$",
+        "$\\DomainM$",
+        "$n$",
+        "\\begin{multline*}!A_{=n}\\ident\\lexists[x_1][\\lexists[x_2][\\dots\\lexists[x_n][{}]]]\\\\\\begin{aligned}(\\eq/[x_1][x_2]\\land{}\\eq/[x_1][x_3]\\land\\eq/[x_1][x_4]\\land\\dots\\land\\eq/[x_1][x_n]\\land{}\\\\\\eq/[x_2][x_3]\\land\\eq/[x_2][x_4]\\land\\dots\\land{}\\eq/[x_2][x_n]\\land{}\\\\\\vdots\\\\\\eq/[x_{n-1}][x_n]\\land{}\\\\\\lforall[y][(\\eq[y][x_1]\\lor\\dots\\lor\\eq[y][x_n]]))\\end{aligned}\\end{multline*}",
+        "$\\StructM$",
+        "$\\DomainM$",
+        "$n$",
+        "\\[\\{!A_{\\ge1},!A_{\\ge2},!A_{\\ge3},\\dots\\}.\\]",
+        "$\\StructM$",
+        "$\\DomainM$"
+      ],
+      "math_target_core": [
+        "$n$",
+        "\\begin{multline*}!A_{\\gen}\\ident\\lexists[x_1][\\lexists[x_2][\\dots\\lexists[x_n][{}]]]\\\\\\begin{aligned}(\\eq/[x_1][x_2]\\land{}\\eq/[x_1][x_3]\\land\\eq/[x_1][x_4]\\land\\dots\\land\\eq/[x_1][x_n]\\land{}\\\\\\eq/[x_2][x_3]\\land\\eq/[x_2][x_4]\\land\\dots\\land{}\\eq/[x_2][x_n]\\land{}\\\\\\vdots\\\\\\eq/[x_{n-1}][x_n])\\end{aligned}\\end{multline*}",
+        "$\\StructM$",
+        "$\\DomainM$",
+        "$n$",
+        "$\\DomainM$",
+        "$n$",
+        "$\\Sat{M}{\\lnot!A_{\\gen+1}}$",
+        "\\begin{multline*}!A_{=n}\\ident\\lexists[x_1][\\lexists[x_2][\\dots\\lexists[x_n][{}]]]\\\\\\begin{aligned}(\\eq/[x_1][x_2]\\land{}\\eq/[x_1][x_3]\\land\\eq/[x_1][x_4]\\land\\dots\\land\\eq/[x_1][x_n]\\land{}\\\\\\eq/[x_2][x_3]\\land\\eq/[x_2][x_4]\\land\\dots\\land{}\\eq/[x_2][x_n]\\land{}\\\\\\vdots\\\\\\eq/[x_{n-1}][x_n]\\land{}\\\\\\lforall[y][(\\eq[y][x_1]\\lor\\dots\\lor\\eq[y][x_n]]))\\end{aligned}\\end{multline*}",
+        "$\\StructM$",
+        "$\\DomainM$",
+        "$n$",
+        "\\[\\{!A_{\\ge1},!A_{\\ge2},!A_{\\ge3},\\dots\\}.\\]",
+        "$\\DomainM$",
+        "$\\StructM$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 807,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: models-theories\n% Section: size-of-structures",
+          "target_start": "% Part: first-order-logic\n% Chapter: models-theories\n% Section: size-of-structures"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{fol}{mat}{siz}",
+          "target_start": "\\olfileid{fol}{mat}{siz}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Expressing the Size of \\printtoken{P}{structure}}",
+          "target_start": "\\olsection{\\printtoken{P}{structure} పరిమాణాన్ని వ్యక్తం చేయడం}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{explain}\nThere are some properties of structures we can express even without\nusing the non-logical symb",
+          "target_start": "\\begin{explain}\nఒక భాషలోని తార్కికేతర సంకేతాలను ఉపయోగించకుండానే వ్యక్తం చేయగల కొన్ని\nనిర్మాణ ధర్మాలు ఉన్నాయి. "
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{prop}\nThe !!{sentence}\n\\begin{multline*}\n  !A_{\\ge n} \\ident \\lexists[x_1][\\lexists[x_2][\\dots\\lexists[",
+          "target_start": "\\begin{prop}\n\\tetoken{వాక్యం}{!!{sentence}}\n\\begin{multline*}\n  !A_{\\ge n} \\ident \\lexists[x_1][\\lexists[x_2]["
+        },
+        {
+          "index": 8,
+          "source_start": "\\end{prop}",
+          "target_start": "\\end{prop}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{prop}\nThe !!{sentence}\n\\begin{multline*}\n!A_{= n} \\ident \\lexists[x_1][\\lexists[x_2][\\dots\\lexists[x_n]",
+          "target_start": "\\begin{prop}\n\\tetoken{వాక్యం}{!!{sentence}}\n\\begin{multline*}\n!A_{= n} \\ident \\lexists[x_1][\\lexists[x_2][\\dot"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{prop}\nA !!{structure} is infinite iff it is a model of\n\\[\n\\{!A_{\\ge 1}, !A_{\\ge 2}, !A_{\\ge 3}, \\dots \\",
+          "target_start": "\\begin{prop}\nఒక \\tetoken{నిర్మాణం}{!!{structure}} కింది సమితికి నమూనా అయితే, అప్పుడు మాత్రమే అది అనంతమైనది:\n\\["
+        },
+        {
+          "index": 11,
+          "source_start": "There is no single purely logical sentence which is true in~$\\Struct\nM$ iff $\\Domain M$ is infinite.  However,",
+          "target_start": "$\\Domain M$ అనంతమైనప్పుడు మాత్రమే~$\\Struct M$లో సత్యమయ్యే ఒకే శుద్ధ\nతార్కిక వాక్యం లేదు. అయితే అనంత నమూనాలు మా"
+        },
+        {
+          "index": 12,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{mat}{siz}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{mat}{siz}"
+      ],
+      "protected_identifier_parity": true
+    }
+  ]
+}

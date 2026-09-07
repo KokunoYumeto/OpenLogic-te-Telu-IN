@@ -1,0 +1,39 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTEFOLMAT-20260907",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0167",
+      "OLP-0168",
+      "OLP-0169",
+      "OLP-0170",
+      "OLP-0171",
+      "OLP-0172",
+      "OLP-0173"
+    ],
+    "finding_count": 1
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEFOLMAT-001",
+      "unit_id": "OLP-0171",
+      "classification": "confirmed_missing_object_language_variable_marker",
+      "source": {
+        "path": "content/first-order-logic/models-theories/expressing-relations.tex",
+        "bytes": 4998,
+        "sha256": "37f0dcfda647cea12a9e3182a4e868092993f1d928faca29225f8e6efb82f87b",
+        "locator": "lines 62-64, second formula defining the strict-order relation"
+      },
+      "finding": "The second existential formula ends with the unmarked variable v_2 even though every object-language variable in the formula and the parallel first formula carries the \\Obj marker.",
+      "controlling_evidence": "Both formulas are stated to express the same strict-order relation in the arithmetic language. The immediately preceding formula uses \\Obj v_2, and the chapter's object-language notation consistently marks these variables with \\Obj.",
+      "required_translation_handling": "Restore only the missing \\Obj marker before v_2, preserve the formula otherwise, and add an adjacent OLTEFOLMAT-001 disclosure."
+    }
+  ]
+}

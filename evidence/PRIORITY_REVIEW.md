@@ -1,6 +1,6 @@
 # Priority review
 
-This view contains 28 of 149 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
+This view contains 31 of 153 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
 
 Final reader pages remain pending; exact source and target file/line locators are shown.
 
@@ -283,3 +283,33 @@ Final reader pages remain pending; exact source and target file/line locators ar
 - Occurrences: OLP-0165 translation/content/first-order-logic/syntax-and-semantics/extensionality.tex:11
 
 - Review question: Please double-check whether “విస్తారత (సంబద్ధత అని కూడా పిలుస్తారు)” is idiomatic and technically standard for “extensionality (also called relevance) in first-order semantics” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T047 — axiomatic method / theory / axiom system / axiomatized by / closure / model / definability / explicit definition
+
+- Chosen rendering: స్వీకృతాధార పద్ధతి / సిద్ధాంతం / స్వీకృత వ్యవస్థ / స్వీకృతీకరించబడిన / సంవృతి / నమూనా / నిర్వచనీయత / స్పష్ట నిర్వచనం
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0168 translation/content/first-order-logic/models-theories/introduction.tex:28-32; OLP-0169 translation/content/first-order-logic/models-theories/expressing-props-of-structures.tex:36-40; OLP-0171 translation/content/first-order-logic/models-theories/expressing-relations.tex:71-80
+
+- Review question: Please double-check whether “స్వీకృతాధార పద్ధతి / సిద్ధాంతం / స్వీకృత వ్యవస్థ / స్వీకృతీకరించబడిన / సంవృతి / నమూనా / నిర్వచనీయత / స్పష్ట నిర్వచనం” is idiomatic and technically standard for “axiomatic method / theory / axiom system / axiomatized by / closure / model / definability / explicit definition” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T048 — pure set / urelement / axiom of extensionality / naive comprehension scheme / comprehension principle / separation principle / Russell's Paradox / Zermelo--Fraenkel set theory
+
+- Chosen rendering: శుద్ధ సమితి / యూర్-ఎలిమెంట్ / విస్తారతా స్వీకృతం / అమాయక ధర్మసంగ్రహ పథకం / ధర్మసంగ్రహ సూత్రం / వేరుచేయు సూత్రం / రసెల్ వైరుధ్యం / జెర్మెలో--ఫ్రెంకెల్ సమితి సిద్ధాంతం
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0170 translation/content/first-order-logic/models-theories/theories.tex:61-68; OLP-0172 translation/content/first-order-logic/models-theories/set-theory.tex:13-27; OLP-0172 translation/content/first-order-logic/models-theories/set-theory.tex:147-169
+
+- Review question: Please double-check whether “శుద్ధ సమితి / యూర్-ఎలిమెంట్ / విస్తారతా స్వీకృతం / అమాయక ధర్మసంగ్రహ పథకం / ధర్మసంగ్రహ సూత్రం / వేరుచేయు సూత్రం / రసెల్ వైరుధ్యం / జెర్మెలో--ఫ్రెంకెల్ సమితి సిద్ధాంతం” is idiomatic and technically standard for “pure set / urelement / axiom of extensionality / naive comprehension scheme / comprehension principle / separation principle / Russell's Paradox / Zermelo--Fraenkel set theory” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T049 — mereology / parthood / parthood structure / improper part / proper part / mereological sum / fusion
+
+- Chosen rendering: భాగతత్త్వం (మీరియాలజీ) / భాగత్వం / భాగత్వ నిర్మాణం / క్రమేతర భాగం / క్రమ భాగం / భాగతాత్త్విక మొత్తం / సంలీనం
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0170 translation/content/first-order-logic/models-theories/theories.tex:101-105
+
+- Review question: Please double-check whether “భాగతత్త్వం (మీరియాలజీ) / భాగత్వం / భాగత్వ నిర్మాణం / క్రమేతర భాగం / క్రమ భాగం / భాగతాత్త్విక మొత్తం / సంలీనం” is idiomatic and technically standard for “mereology / parthood / parthood structure / improper part / proper part / mereological sum / fusion” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?

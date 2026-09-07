@@ -1,0 +1,71 @@
+% Part: first-order-logic
+% Chapter: models-theories
+% Section: size-of-structures
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{mat}{siz}
+
+\olsection{\printtoken{P}{structure} పరిమాణాన్ని వ్యక్తం చేయడం}
+
+\begin{explain}
+ఒక భాషలోని తార్కికేతర సంకేతాలను ఉపయోగించకుండానే వ్యక్తం చేయగల కొన్ని
+నిర్మాణ ధర్మాలు ఉన్నాయి. ఉదాహరణకు, \tetoken{నిర్మాణం}{!!{structure}} యొక్క \tetoken{వ్యక్తి క్షేత్రంలో}{!!{domain}}
+కనీసం, గరిష్ఠంగా, లేదా సరిగ్గా~$n$ \tetoken{మూలకాలు}{!!{element}s}
+ఉన్నప్పుడు మాత్రమే ఆ \tetoken{ఒక నిర్మాణంలో}{!!a{structure}} సత్యమయ్యే \tetoken{వాక్యాలు}{!!{sentence}s} ఉన్నాయి.
+\end{explain}
+
+\begin{prop}
+\tetoken{వాక్యం}{!!{sentence}}
+\begin{multline*}
+  !A_{\ge n} \ident \lexists[x_1][\lexists[x_2][\dots\lexists[x_n][{}]]]\\
+  \begin{aligned}
+  (\eq/[x_1][x_2] \land {}
+  \eq/[x_1][x_3] \land \eq/[x_1][x_4] \land \dots \land \eq/[x_1][x_n] \land {}\\
+\eq/[x_2][x_3] \land \eq/[x_2][x_4] \land \dots \land {} \eq/[x_2][x_n] \land {} \\
+\vdots\\
+\eq/[x_{n-1}][x_n])
+\end{aligned}
+\end{multline*}
+\tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$లో సత్యం కావడం, $\Domain M$లో కనీసం
+$n$ \tetoken{మూలకాలు}{!!{element}s} ఉండటానికి అవసరమైన మరియు సరిపడే షరతు. తత్ఫలితంగా,
+$\Domain M$లో గరిష్ఠంగా~$n$ \tetoken{మూలకాలు}{!!{element}s} ఉన్నప్పుడు మాత్రమే
+$\Sat{M}{\lnot !A_{\ge n+1}}$.
+
+\end{prop}
+
+\begin{prop}
+\tetoken{వాక్యం}{!!{sentence}}
+\begin{multline*}
+!A_{= n} \ident \lexists[x_1][\lexists[x_2][\dots\lexists[x_n][{}]]] \\
+\begin{aligned}
+  (\eq/[x_1][x_2] \land {}
+  \eq/[x_1][x_3] \land \eq/[x_1][x_4] \land \dots \land \eq/[x_1][x_n] \land {}\\
+\eq/[x_2][x_3] \land \eq/[x_2][x_4] \land \dots \land {} \eq/[x_2][x_n] \land {} \\
+\vdots\\
+\eq/[x_{n-1}][x_n] \land {} \\
+\lforall[y][(\eq[y][x_1] \lor \dots \lor \eq[y][x_n]]))
+\end{aligned}
+\end{multline*}
+\tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$లో సత్యం కావడం, $\Domain M$లో సరిగ్గా
+$n$ \tetoken{మూలకాలు}{!!{element}s} ఉండటానికి అవసరమైన మరియు సరిపడే షరతు.
+\end{prop}
+
+\begin{prop}
+ఒక \tetoken{నిర్మాణం}{!!{structure}} కింది సమితికి నమూనా అయితే, అప్పుడు మాత్రమే అది అనంతమైనది:
+\[
+\{!A_{\ge 1}, !A_{\ge 2}, !A_{\ge 3}, \dots \}.
+\]
+\end{prop}
+
+$\Domain M$ అనంతమైనప్పుడు మాత్రమే~$\Struct M$లో సత్యమయ్యే ఒకే శుద్ధ
+తార్కిక వాక్యం లేదు. అయితే అనంత నమూనాలు మాత్రమే గల, తార్కికేతర
+\tetoken{విధేయ సంకేతాలతో}{!!{predicate}s} కూడిన \tetoken{వాక్యాలను}{!!{sentence}s} ఇవ్వవచ్చు (అయినా ప్రతి అనంత
+\tetoken{నిర్మాణం}{!!{structure}} వాటికి నమూనా కాదు). పరిమిత నిర్మాణంగా ఉండే ధర్మాన్ని,
+\tetoken{లెక్కించలేని}{!!{nonenumerable}} నిర్మాణంగా ఉండే ధర్మాన్ని అనంత \tetoken{వాక్యాలు}{!!{sentence}s}
+సమితితో కూడా వ్యక్తం చేయలేం. ఈ వాస్తవాలు సంహతత్వ, లొవెన్‌హైమ్--స్కోలెమ్
+సిద్ధాంతాల నుంచి అనుగమిస్తాయి.
+
+\end{document}

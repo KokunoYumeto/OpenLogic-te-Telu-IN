@@ -70,6 +70,17 @@ locations['TE-T044']=[
 ];
 locations['TE-T045']=[L('content/first-order-logic/syntax-and-semantics/satisfaction.tex',74,79,70,76,'$x$-Variant','$x$-భేదరూపం')];
 locations['TE-T046']=[L('content/first-order-logic/syntax-and-semantics/extensionality.tex',11,19,11,18,'Extensionality','విస్తారత')];
+locations['TE-T047']=[
+ L('content/first-order-logic/models-theories/introduction.tex',29,34,28,35,'\\emph{closed}','\\emph{సంవృతం}'),
+ L('content/first-order-logic/models-theories/expressing-props-of-structures.tex',39,42,36,40,'\\emph{is a model of}','\\emph{ఒక నమూనా}'),
+ L('content/first-order-logic/models-theories/expressing-relations.tex',70,78,71,79,'\\emph{define}','\\emph{నిర్వచించగలం}')
+];
+locations['TE-T048']=[
+ L('content/first-order-logic/models-theories/theories.tex',63,99,62,99,'pure sets','శుద్ధ సమితుల'),
+ L('content/first-order-logic/models-theories/set-theory.tex',13,24,13,24,'Zermelo--Fraenkel','జెర్మెలో--ఫ్రెంకెల్'),
+ L('content/first-order-logic/models-theories/set-theory.tex',150,169,147,169,'comprehension principle','ధర్మసంగ్రహ సూత్రం')
+];
+locations['TE-T049']=[L('content/first-order-logic/models-theories/theories.tex',103,141,102,139,'\\emph{mereology}','\\emph{భాగతత్త్వం}')];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -101,7 +112,10 @@ alternatives['TE-T043']=['use the directly witnessed Telugu first-order/formal-l
 alternatives['TE-T044']=['use the directly witnessed first-order/domain/function/consequence register with definition-controlled model-theoretic compounds (chosen)','leave model-theoretic headwords in English reader prose (rejected)','claim the covered-structure and satisfaction headwords as directly attested by the canon (rejected because the inspected pages do not contain them)'];
 alternatives['TE-T045']=['x-భేదరూపం as a transparent definition-controlled compound (chosen)','x-వేరియంట్ as an unexplained English borrowing (rejected)','claim direct canon attestation for the compound (rejected)'];
 alternatives['TE-T046']=['విస్తారత with the source alternate label సంబద్ధత stated at introduction (chosen)','unexplained extensionality transliteration (rejected)','reuse set-extensionality wording without the local semantic definition (rejected)'];
-const completion='partial_163_of_722_draft_units';
+alternatives['TE-T047']=['reuse the established స్వీకృతం, సిద్ధాంతం and నమూనా register with definition-controlled compounds (chosen)','leave axiomatization and definability headwords in English prose (rejected)','claim direct canon attestation for the full model-theoretic taxonomy (rejected)'];
+alternatives['TE-T048']=['reuse the established ధర్మసంగ్రహం and రసెల్ వైరుధ్యం terminology while distinguishing scheme, principle and separation locally (chosen)','replace the source eponyms and urelement with unattested coined names (rejected)','leave all set-foundational prose in English (rejected)'];
+alternatives['TE-T049']=['భాగతత్త్వం with మీరియాలజీ supplied once as an explicit borrowing (chosen)','use the English mereology headword throughout the reader (rejected)','claim the new parthood taxonomy as directly attested by the checked relation witness (rejected)'];
+const completion='partial_170_of_722_draft_units';
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -117,7 +131,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Retrospective reconstruction through 2026-09-06 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.';
+const phase='Retrospective reconstruction through 2026-09-07 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; it is not represented as a contemporaneous pre-draft note.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -208,8 +222,9 @@ const correctionQuestions={
  'OLTECOM-005':'Please double-check that both universal-case equivalences quantify over closed terms, matching the cited propositions.',
  'OLTECOM-006':'Please double-check that both existential-case equivalences require at least one closed term, matching the cited propositions.',
  'OLTECOM-007':'Please double-check that only the duplicate comma after t_(i+1) was removed from the function term and no argument changed.',
- 'OLTECOM-008':'Please double-check that Gamma is typed as a set of sentences and A as one sentence in the Compactness Theorem statement.',
- 'OLTECOM-009':'Please double-check that B is restored as the left operand of membership in Gamma_n, matching the scoped sentence and ensuing subset conclusion.'
+  'OLTECOM-008':'Please double-check that Gamma is typed as a set of sentences and A as one sentence in the Compactness Theorem statement.',
+  'OLTECOM-009':'Please double-check that B is restored as the left operand of membership in Gamma_n, matching the scoped sentence and ensuing subset conclusion.',
+  'OLTEFOLMAT-001':'Please double-check that the repaired strict-order formula gives its final v_2 the same object-language marker as the other variables, without changing any other symbol.'
 };
 const correctionRecords=corrections.map(c=>{
  const segment=ledger.find(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));
@@ -225,13 +240,13 @@ fs.writeFileSync(path.join(dataDir,'EXPERT_REVIEW_LOG.jsonl'),jsonText);
 const machine={schema:'openlogic-te-expert-review-index/2',status:'partial_no_holds',scope_completion:completion,language:'Telugu',script:'Telu',locale:'te-Telu-IN',counts:{records:records.length,terminology:termRecords.length,source_corrections:correctionRecords.length,implementation_occurrences:records.reduce((n,r)=>n+r.implementation_locations.length,0)},pagination_note:'Final printed/PDF page is deliberately null until the cited source unit is integrated into the coherent reader and final pagination is available. Source and target file/line locators are authoritative meanwhile.',records};
 const machineText=JSON.stringify(machine,null,2)+'\n';
 fs.writeFileSync(path.join(dataDir,'EXPERT_REVIEW_LOG.json'),machineText);
-const md=['# Optional expert-review log','',`Status: **partial — 163 of 722 draft units**. This log contains ${termRecords.length} terminology/sense decisions and ${correctionRecords.length} source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.`,'','Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.','',`“Attested” means only that the specifically listed native page was actually inspected for the stated scope. It does not mean a human expert endorsed the final edition. The terminology rationales below were reconstructed retrospectively from primary records and exact current files; source-correction entries come from the contemporaneous audit.`,'','Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPERT_REVIEW_LOG.json`, and line-oriented `EXPERT_REVIEW_LOG.jsonl`.',''];
+const md=['# Optional expert-review log','',`Status: **partial — 170 of 722 draft units**. This log contains ${termRecords.length} terminology/sense decisions and ${correctionRecords.length} source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.`,'','Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.','',`“Attested” means only that the specifically listed native page was actually inspected for the stated scope. It does not mean a human expert endorsed the final edition. The terminology rationales below were reconstructed retrospectively from primary records and exact current files; source-correction entries come from the contemporaneous audit.`,'','Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPERT_REVIEW_LOG.json`, and line-oriented `EXPERT_REVIEW_LOG.jsonl`.',''];
 for(const r of records){
  md.push(`## ${r.review_id} — ${r.source_term??r.finding_id}`,'',`- Status: ${r.expert_review_status}`,'',`- Locale/script: ${r.locale} / ${r.script}`,'',`- Confidence/priority: ${r.confidence} / ${r.review_priority}`,'',`- Chosen wording/treatment: ${r.chosen_wording??r.rationale}`,'',`- Exact implementation: ${r.implementation_locations.map(x=>`${x.unit_id}; ${x.section_path}; ${x.source_locator} ↔ ${x.target_locator} (${x.segment_id}); printed/PDF page ${x.final_printed_page??'pending'}`).join('; ')}`,'',`- Authorities actually checked: ${r.actual_authorities_checked.map(x=>x.passage_id?`${x.passage_id}, PDF ${x.pdf_page}, printed ${x.printed_page}, ${x.region}`:`${x.audit_id??x.source_revision}`).join('; ')}`,'',`- Not checked/not found: ${r.not_checked_or_not_found.join(' ')}`,'',`- Rationale: ${r.rationale}`,'',`- Alternatives: ${r.alternatives_considered_or_recorded.join('; ')}`,'',`- Uncertainty: ${r.uncertainty}`,'',`- Please double-check: ${r.precise_review_questions.join(' ')}`,'');
 }
 fs.writeFileSync(path.join(dataDir,'EXPERT_REVIEW_LOG.md'),md.join('\n').trimEnd()+'\n');
 const priorityRecords=records.filter(r=>r.review_priority==='high'||r.review_priority==='medium');
-const priorityMd=['# Priority optional expert-review view','',`Scope: **partial — 163 of 722 draft units**. This view selects ${priorityRecords.length} of ${records.length} open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.`,'','Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.',''];
+const priorityMd=['# Priority optional expert-review view','',`Scope: **partial — 170 of 722 draft units**. This view selects ${priorityRecords.length} of ${records.length} open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.`,'','Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.',''];
 for(const r of priorityRecords)priorityMd.push(`## ${r.review_id} — ${r.source_term??r.finding_id}`,'',`- Priority/confidence: ${r.review_priority} / ${r.confidence}`,'',`- Chosen wording/treatment: ${r.chosen_wording??r.rationale}`,'',`- Occurrences: ${r.implementation_locations.map(x=>`${x.unit_id}; ${x.section_path}; ${x.target_locator}; printed/PDF page ${x.final_printed_page??'pending'}`).join('; ')}`,'',`- Please double-check: ${r.precise_review_questions.join(' ')}`,'');
 fs.writeFileSync(path.join(dataDir,'EXPERT_REVIEW_PRIORITY.md'),priorityMd.join('\n').trimEnd()+'\n');
 const headers=['review_id','record_type','review_priority','confidence','source_term_or_finding','chosen_rendering_or_treatment','language','script','locale','unit_id','section_path','source_file','target_file','source_locator','target_locator','segment_id','final_printed_page','pagination_status','expert_review_status','please_double_check'];
