@@ -1,0 +1,44 @@
+% Part: first-order-logic
+% Chapter: model-theory
+% Section: overspill
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{ove}
+\olsection{అధిప్రసరణ (ఓవర్‌స్పిల్)}
+
+\begin{thm}
+\ollabel{overspill}
+వాక్యాల సమితి $\Gamma$కు యథేచ్ఛగా పెద్ద పరిమిత
+నమూనాలు ఉంటే, దానికి ఒక అనంత నమూనా ఉంటుంది.
+\end{thm}
+
+\begin{proof}
+$c_0$, $c_1$, \dots అనే లెక్కించదగినన్ని కొత్త స్థిరసంకేతాలను చేర్చి
+$\Gamma$ యొక్క భాషను విస్తరించండి; $\Gamma \cup \{c_i \neq c_j :
+i \neq j\}$ సమితిని పరిశీలించండి. $\Gamma$కు యథేచ్ఛగా పెద్ద పరిమిత
+నమూనాలు ఉన్నాయనడం అంటే, ప్రతి $m>0$కు $n\ge m$ అయ్యేలా
+కార్డినాలిటీ~$n$ గల $\Gamma$ నమూనా ఉందని అర్థం. దీనివల్ల $\Gamma
+\cup \{c_i \neq c_j : i \neq j\}$ పరిమితంగా సంతృప్తిపరచదగినదని
+వస్తుంది. సంహతత్వం వల్ల $\Gamma \cup \{c_i \neq c_j : i \neq j\}$కు
+ఒక నమూనా $\Struct M$ ఉంటుంది. అది అన్ని $c_i \neq c_j$ అసమానతలను
+సంతృప్తిపరుస్తుంది కాబట్టి దాని వ్యక్తి క్షేత్రం అనంతమై ఉండాలి.
+\end{proof}
+
+\begin{prop}
+\ollabel{inf-not-fo}
+ఏ మొదటిస్థాయి భాషలోనూ, \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$లో
+సత్యమవడం మరియు ఆ \tetoken{నిర్మాణపు}{!!{structure}} వ్యక్తి క్షేత్రం
+$\Domain{M}$ అనంతమవడం పరస్పరం తుల్యమయ్యే వాక్యం~$!A$ లేదు.
+\end{prop}
+
+\begin{proof}
+అటువంటి $!A$ ఉందనుకుంటే, దాని నిషేధం $\lnot !A$ అన్ని పరిమిత
+\tetoken{నిర్మాణాల్లో}{!!{structure}s}, వాటిలో మాత్రమే సత్యమవుతుంది. కాబట్టి
+ఆ నిషేధానికి యథేచ్ఛగా పెద్ద పరిమిత నమూనాలు ఉంటాయి, కానీ అనంత నమూనా
+ఉండదు; ఇది \olref{overspill}కు విరుద్ధం.
+\end{proof}
+
+\end{document}

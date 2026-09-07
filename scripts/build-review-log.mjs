@@ -95,6 +95,19 @@ locations['TE-T053']=[
  L('content/first-order-logic/beyond/modal-logics.tex',41,48,38,45,'accessibility','ప్రాప్యత')
 ];
 locations['TE-T054']=[L('content/first-order-logic/beyond/other-logics.tex',22,35,22,35,'Fuzzy logic','ఫజీ తర్కాన్ని')];
+locations['TE-T055']=[
+ L('content/model-theory/basics/reducts-and-expansions.tex',24,31,24,31,'\\emph{reduct}','\\emph{సంకుచిత రూపం}'),
+ L('content/model-theory/basics/substructures.tex',20,28,20,28,'sub!!{structure}','ఉప\\tetoken{నిర్మాణం')
+];
+locations['TE-T056']=[
+ L('content/model-theory/basics/isomorphism.tex',12,32,12,33,'elementarily equivalent','మొదటిస్థాయి-వాక్య తుల్యాలు'),
+ L('content/model-theory/basics/partial-iso.tex',13,17,13,19,'partial isomorphism','పాక్షిక సమరూపత')
+];
+locations['TE-T057']=[
+ L('content/model-theory/basics/overspill.tex',9,15,9,15,'\\olsection{Overspill}','అధిప్రసరణ'),
+ L('content/model-theory/basics/partial-iso.tex',113,120,120,128,'quantifier rank','పరిమాణక ర్యాంకు'),
+ L('content/model-theory/basics/dlo.tex',12,15,12,17,'dense linear ordering without endpoints','అంత్యబిందువులు లేని సాంద్ర రేఖీయ క్రమం')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -134,7 +147,10 @@ alternatives['TE-T051']=['definition-controlled Telugu compounds with explicit b
 alternatives['TE-T052']=['descriptive Telugu proof and truth register with BHK, Curry--Howard, forcing and monotone borrowings explicitly identified (chosen)','leave the intuitionistic exposition in English terminology (rejected)','replace source eponyms and abbreviations with unsupported coined names (rejected)'];
 alternatives['TE-T053']=['descriptive possible-world and accessibility wording with modal and intensional/extensional borrowings made explicit (chosen)','leave the full modal taxonomy in English reader prose (rejected)','reuse only classical-semantic terminology and obscure the possible-world distinction (rejected)'];
 alternatives['TE-T054']=['source-controlled descriptive subfield names with fuzzy, default and deontic marked as explicit borrowings (chosen)','leave the closing taxonomy in untranslated English (rejected)','coin unsupported replacements without a Telugu specialist witness (rejected)'];
-const completion='partial_178_of_722_draft_units';
+alternatives['TE-T055']=['reuse the established నమూనా, నిర్మాణం and సిద్ధాంతం register with definition-controlled descriptive compounds (chosen)','leave reduct and substructure in English prose (rejected)','claim direct canon attestation for model-theoretic signature restriction (rejected)'];
+alternatives['TE-T056']=['make the defining first-order-sentence criterion visible in మొదటిస్థాయి-వాక్య తుల్యత and reuse established సమరూపత (chosen)','import elementary as an unexplained English headword (rejected)','collapse elementary equivalence into isomorphism (rejected because the chapter distinguishes them)'];
+alternatives['TE-T057']=['use descriptive Telugu labels with overspill and rank explicitly marked as technical borrowings (chosen)','leave the full advanced taxonomy in English prose (rejected)','claim the checked witnesses directly attest overspill or quantifier rank (rejected)'];
+const completion='partial_187_of_722_draft_units';
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -247,7 +263,17 @@ const correctionQuestions={
   'OLTEFOLBYD-001':'Please double-check that the inner many-sorted universal now binds x with the same two optional arguments as the outer universal and that no other display symbol changed.',
   'OLTEFOLBYD-002':'Please double-check that the comprehension explanation uses the atomic-formula constructor for R(t_1,...,t_k), consistently with the surrounding rule.',
   'OLTEFOLBYD-003':'Please double-check that the second arithmetic axiom uses the declared postfix successor on x and y, rather than the source sentence’s undefined s.',
-  'OLTEFOLBYD-004':'Please double-check that the lambda-bound x is assigned type tau, matching formation rule (6), while s remains type sigma.'
+  'OLTEFOLBYD-004':'Please double-check that the lambda-bound x is assigned type tau, matching formation rule (6), while s remains type sigma.',
+  'OLTEMODBAS-001':'Please double-check that the Telugu editorial reads the defective phrase as “is planning to work” while preserving the contributor and issue reference.',
+  'OLTEMODBAS-002':'Please double-check that the relation-only substructure remark requires N to be non-empty, consistently with OpenLogic’s structure definition.',
+  'OLTEMODBAS-003':'Please double-check that the value of the function term in M-prime uses the interpretation of f in M-prime.',
+  'OLTEMODBAS-004':'Please double-check that the first function-term equality closes the outer h application with exactly one restored parenthesis.',
+  'OLTEMODBAS-005':'Please double-check that the even back-and-forth stages now add b_0, b_1, and so on rather than skipping b_0.',
+  'OLTEMODBAS-006':'Please double-check that the finite-signature proposition states its predicate, constant, and function inventory without contradicting the earlier purely-relational definition.',
+  'OLTEMODBAS-007':'Please double-check that k is the sequence length while n remains the recursion and quantifier-rank index in I_n.',
+  'OLTEMODBAS-008':'Please double-check that the strengthened fixed-variable formula-class lemma is exactly what the finite conjunction T_n^a requires.',
+  'OLTEMODBAS-009':'Please double-check that the dense-order Forth proof now covers both the empty partial map and an already-mapped point before its three new-point cases.',
+  'OLTEMODBAS-010':'Please double-check that the automorphism exercise is limited to parameter-free definability, so invariance under every automorphism is valid.'
 };
 const correctionRecords=corrections.map(c=>{
  const segment=ledger.find(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));
@@ -263,13 +289,13 @@ fs.writeFileSync(path.join(dataDir,'EXPERT_REVIEW_LOG.jsonl'),jsonText);
 const machine={schema:'openlogic-te-expert-review-index/2',status:'partial_no_holds',scope_completion:completion,language:'Telugu',script:'Telu',locale:'te-Telu-IN',counts:{records:records.length,terminology:termRecords.length,source_corrections:correctionRecords.length,implementation_occurrences:records.reduce((n,r)=>n+r.implementation_locations.length,0)},pagination_note:'Final printed/PDF page is deliberately null until the cited source unit is integrated into the coherent reader and final pagination is available. Source and target file/line locators are authoritative meanwhile.',records};
 const machineText=JSON.stringify(machine,null,2)+'\n';
 fs.writeFileSync(path.join(dataDir,'EXPERT_REVIEW_LOG.json'),machineText);
-const md=['# Optional expert-review log','',`Status: **partial — 178 of 722 draft units**. This log contains ${termRecords.length} terminology/sense decisions and ${correctionRecords.length} source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.`,'','Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.','',`“Attested” means only that the specifically listed native page was actually inspected for the stated scope. It does not mean a human expert endorsed the final edition. The terminology rationales below were reconstructed retrospectively from primary records and exact current files; source-correction entries come from the contemporaneous audit.`,'','Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPERT_REVIEW_LOG.json`, and line-oriented `EXPERT_REVIEW_LOG.jsonl`.',''];
+const md=['# Optional expert-review log','',`Status: **partial — 187 of 722 draft units**. This log contains ${termRecords.length} terminology/sense decisions and ${correctionRecords.length} source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.`,'','Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.','',`“Attested” means only that the specifically listed native page was actually inspected for the stated scope. It does not mean a human expert endorsed the final edition. The terminology rationales below were reconstructed retrospectively from primary records and exact current files; source-correction entries come from the contemporaneous audit.`,'','Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPERT_REVIEW_LOG.json`, and line-oriented `EXPERT_REVIEW_LOG.jsonl`.',''];
 for(const r of records){
  md.push(`## ${r.review_id} — ${r.source_term??r.finding_id}`,'',`- Status: ${r.expert_review_status}`,'',`- Locale/script: ${r.locale} / ${r.script}`,'',`- Confidence/priority: ${r.confidence} / ${r.review_priority}`,'',`- Chosen wording/treatment: ${r.chosen_wording??r.rationale}`,'',`- Exact implementation: ${r.implementation_locations.map(x=>`${x.unit_id}; ${x.section_path}; ${x.source_locator} ↔ ${x.target_locator} (${x.segment_id}); printed/PDF page ${x.final_printed_page??'pending'}`).join('; ')}`,'',`- Authorities actually checked: ${r.actual_authorities_checked.map(x=>x.passage_id?`${x.passage_id}, PDF ${x.pdf_page}, printed ${x.printed_page}, ${x.region}`:`${x.audit_id??x.source_revision}`).join('; ')}`,'',`- Not checked/not found: ${r.not_checked_or_not_found.join(' ')}`,'',`- Rationale: ${r.rationale}`,'',`- Alternatives: ${r.alternatives_considered_or_recorded.join('; ')}`,'',`- Uncertainty: ${r.uncertainty}`,'',`- Please double-check: ${r.precise_review_questions.join(' ')}`,'');
 }
 fs.writeFileSync(path.join(dataDir,'EXPERT_REVIEW_LOG.md'),md.join('\n').trimEnd()+'\n');
 const priorityRecords=records.filter(r=>r.review_priority==='high'||r.review_priority==='medium');
-const priorityMd=['# Priority optional expert-review view','',`Scope: **partial — 178 of 722 draft units**. This view selects ${priorityRecords.length} of ${records.length} open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.`,'','Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.',''];
+const priorityMd=['# Priority optional expert-review view','',`Scope: **partial — 187 of 722 draft units**. This view selects ${priorityRecords.length} of ${records.length} open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.`,'','Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.',''];
 for(const r of priorityRecords)priorityMd.push(`## ${r.review_id} — ${r.source_term??r.finding_id}`,'',`- Priority/confidence: ${r.review_priority} / ${r.confidence}`,'',`- Chosen wording/treatment: ${r.chosen_wording??r.rationale}`,'',`- Occurrences: ${r.implementation_locations.map(x=>`${x.unit_id}; ${x.section_path}; ${x.target_locator}; printed/PDF page ${x.final_printed_page??'pending'}`).join('; ')}`,'',`- Please double-check: ${r.precise_review_questions.join(' ')}`,'');
 fs.writeFileSync(path.join(dataDir,'EXPERT_REVIEW_PRIORITY.md'),priorityMd.join('\n').trimEnd()+'\n');
 const headers=['review_id','record_type','review_priority','confidence','source_term_or_finding','chosen_rendering_or_treatment','language','script','locale','unit_id','section_path','source_file','target_file','source_locator','target_locator','segment_id','final_printed_page','pagination_status','expert_review_status','please_double_check'];

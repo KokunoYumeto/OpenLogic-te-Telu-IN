@@ -1,6 +1,6 @@
 # Priority review
 
-This view contains 36 of 162 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
+This view contains 38 of 175 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
 
 Final reader pages remain pending; exact source and target file/line locators are shown.
 
@@ -363,3 +363,23 @@ Final reader pages remain pending; exact source and target file/line locators ar
 - Occurrences: OLP-0181 translation/content/first-order-logic/beyond/other-logics.tex:22-35
 
 - Review question: Please double-check whether “ఫజీ తర్కం / సంభావ్యతా తర్కం / డిఫాల్ట్ తర్కం / రద్దుచేయదగిన హేతుచింతన / ఏకదిశేతర తర్కం / జ్ఞానమీమాంసాత్మక తర్కం / కారణ తర్కం / కర్తవ్యాత్మక (డియాంటిక్) తర్కం” is idiomatic and technically standard for “fuzzy logic / probabilistic logic / default logic / defeasible reasoning / nonmonotonic logic / epistemic logic / causal logic / deontic logic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T055 — model theory / reduct / expansion / substructure / extension / theory of a structure
+
+- Chosen rendering: నమూనా సిద్ధాంతం / సంకుచిత రూపం / విస్తరణ / ఉపనిర్మాణం / విస్తృత నిర్మాణం / నిర్మాణపు సిద్ధాంతం
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0184 translation/content/model-theory/basics/reducts-and-expansions.tex:24-41; OLP-0185 translation/content/model-theory/basics/substructures.tex:20-40
+
+- Review question: Please double-check whether “నమూనా సిద్ధాంతం / సంకుచిత రూపం / విస్తరణ / ఉపనిర్మాణం / విస్తృత నిర్మాణం / నిర్మాణపు సిద్ధాంతం” is idiomatic and technically standard for “model theory / reduct / expansion / substructure / extension / theory of a structure” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T057 — overspill / quantifier rank / n-equivalence / concatenation / dense linear order without endpoints
+
+- Chosen rendering: అధిప్రసరణ (ఓవర్‌స్పిల్) / పరిమాణక ర్యాంకు / n-తుల్యత / అనుసంధానం / అంత్యబిందువులు లేని సాంద్ర రేఖీయ క్రమం
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0186 translation/content/model-theory/basics/overspill.tex:9-10; OLP-0189 translation/content/model-theory/basics/partial-iso.tex:120-129; OLP-0190 translation/content/model-theory/basics/dlo.tex:12-27
+
+- Review question: Please double-check whether “అధిప్రసరణ (ఓవర్‌స్పిల్) / పరిమాణక ర్యాంకు / n-తుల్యత / అనుసంధానం / అంత్యబిందువులు లేని సాంద్ర రేఖీయ క్రమం” is idiomatic and technically standard for “overspill / quantifier rank / n-equivalence / concatenation / dense linear order without endpoints” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?

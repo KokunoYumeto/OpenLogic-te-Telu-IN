@@ -1,0 +1,97 @@
+% Part: first-order-logic
+% Chapter: model-theory
+% Section: partial-iso
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{dlo}
+\section{సాంద్ర రేఖీయ క్రమాలు}
+
+\begin{defn}
+  ఒకే ఒక్క ద్విస్థాన \tetoken{విధేయ సంకేతం}{!!{predicate}}~$<$ గల
+  \tetoken{భాష}{!!{language}}కు చెందిన, కింది వాక్యాలను సంతృప్తిపరిచే
+  \tetoken{నిర్మాణం}{!!a{structure}}~$\Struct{M}$ను
+  \emph{అంత్యబిందువులు లేని సాంద్ర రేఖీయ క్రమం} అంటాం:
+  \begin{enumerate}
+  \item $\lforall[x][\lnot x < x]$;
+  \item $\lforall[x][\lforall[y][\lforall[z][(x < y \lif (y < z \lif x
+    <z ))]]]$;
+  \item $\lforall[x][\lforall[y][(x< y \lor \eq[x][y] \lor y < x)]]$;
+  \item $\lforall[x][\lexists[y][x < y]]$;
+  \item $\lforall[x][\lexists[y][y < x]]$;
+  \item $\lforall[x][\lforall[y][(x < y \lif \lexists[z][(x < z \land
+        z < y))]]]$.
+  \end{enumerate}
+\end{defn}
+
+\begin{thm}\ollabel{thm:cantorQ}
+  అంత్యబిందువులు లేని ఏ రెండు \tetoken{లెక్కించదగిన}{!!{enumerable}} సాంద్ర
+  రేఖీయ క్రమాలైనా సమరూపాలు.
+\end{thm}
+
+\begin{proof}
+  $\Struct{M_1}$, $\Struct{M_2}$లు అంత్యబిందువులు లేని
+  \tetoken{లెక్కించదగిన}{!!{enumerable}} సాంద్ర రేఖీయ క్రమాలు అనుకుందాం;
+  ${<_1}=\Assign{<}{M_1}$, ${<_2}=\Assign{<}{M_2}$గా ఉంచండి. వాటి మధ్య
+  అన్ని పాక్షిక సమరూపతల సమితి $\PIso{I}$ అనుకుందాం. కనీసం
+  $\emptyset\in\PIso{I}$ కాబట్టి $\PIso{I}$ ఖాళీ కాదు.
+  $\PIso{I}$ ముందుకు-వెనుకకు ధర్మాన్ని నెరవేరుస్తుందని చూపుతాం. అప్పుడు
+  $\Struct{M_1}\iso[p]\Struct{M_2}$; \olref[pis]{thm:p-isom1} వల్ల
+  సిద్ధాంతం వస్తుంది.
+
+  $\PIso{I}$ ముందుకు ధర్మాన్ని నెరవేరుస్తుందని చూపడానికి
+  $p\in\PIso{I}$, $a\in\Domain{M_1}$ తీసుకోండి. $p=\emptyset$ అయితే,
+  ఏ $b\in\Domain{M_2}$నైనా ఎంచుకొని
+  $q=\{\langle a,b\rangle\}$గా ఉంచవచ్చు. ఇక $p\ne\emptyset$
+  అనుకుందాం; $i=1$, \dots,~$n$కు $p(a_i)=b_i$గా వ్రాసి, సాధారణతకు
+  భంగం లేకుండా $a_1<_1a_2<_1\cdots<_1a_n$ అనుకుందాం.
+  $a$ ఇప్పటికే $p$ నిర్వచన క్షేత్రంలో ఉంటే $q=p$గా తీసుకోండి.
+  లేదంటే $b\in\Domain{M_2}$ను కింది విధంగా కనుగొనండి:
+  \begin{enumerate}
+  \item $a<_1a_1$ అయితే, $b<_2b_1$ అయ్యే
+    $b\in\Domain{M_2}$ను తీసుకోండి;
+  \item $a_n<_1a$ అయితే, $b_n<_2b$ అయ్యే
+    $b\in\Domain{M_2}$ను తీసుకోండి;
+  \item ఏదో $i$కు $a_i<_1a<_1a_{i+1}$ అయితే,
+    $b_i<_2b<_2b_{i+1}$ అయ్యే $b\in\Domain{M_2}$ను తీసుకోండి.
+  \end{enumerate}
+  \sourcecorrection{OLTEMODBAS-009}{ఆంగ్ల నిరూపణలోని మూడు స్థాన-సందర్భాలు $p$ ఖాళీగా ఉన్న సందర్భాన్నీ, $a$ ఇప్పటికే $p$ నిర్వచన క్షేత్రంలో ఉన్న సందర్భాన్నీ కప్పవు. మొదటిదానికి ఒక యథేచ్ఛ ఏక-జత పాక్షిక సమరూపతను, రెండోదానికి $q=p$ను స్పష్టం చేశాం; కొత్త $a$ కోసం మూలంలోని మూడు క్రమ-సందర్భాలను మార్చలేదు.}
+  $\Struct{M_2}$ అంత్యబిందువులు లేని సాంద్ర రేఖీయ క్రమం కాబట్టి,
+  కోరిన ధర్మం గల $b$ను ఎల్లప్పుడూ కనుగొనవచ్చు.
+  $q=p\cup\{\langle a,b\rangle\}$గా నిర్వచిస్తే,
+  $q\in\PIso{I}$ అనేది కోరిన $p$ విస్తరణ. దీనితో ముందుకు ధర్మం
+  నిర్ధారితమైంది. వెనుకకు ధర్మం నిరూపణ కూడా ఇదే విధంగా ఉంటుంది.
+  కాబట్టి $\Struct{M_1}\iso[p]\Struct{M_2}$; అప్పుడు
+  \olref[pis]{thm:p-isom1} వల్ల
+  $\Struct{M_1}\iso\Struct{M_2}$.
+\end{proof}
+
+\begin{prob}
+  $\PIso{I}$ వెనుకకు ధర్మాన్ని నెరవేరుస్తుందని ధ్రువీకరించి
+  \olref[mod][bas][dlo]{thm:cantorQ} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+
+\begin{rem}
+  $\Struct{S}$ అనేది అంత్యబిందువులు లేని ఏ
+  \tetoken{లెక్కించదగిన}{!!{enumerable}} సాంద్ర రేఖీయ క్రమమైనా కావచ్చు.
+  అప్పుడు (\olref{thm:cantorQ} వల్ల)
+  $\Struct{S}\iso\Struct{Q}$; ఇక్కడ
+  $\Struct{Q}=(\Rat,<)$ అనేది కరణీయ సంఖ్యల సమితి $\Rat$ను వ్యక్తి
+  క్షేత్రంగా గల \tetoken{లెక్కించదగిన}{!!{enumerable}} సాంద్ర రేఖీయ క్రమం.
+  ఇప్పుడు \olref[thm]{remark:R}లోని
+  \tetoken{నిర్మాణం}{!!{structure}}~$\Struct{R}=(\Real,<)$ను మళ్లీ
+  పరిశీలించండి. $\Struct{R}\elemequiv\Struct{S}$ అయ్యే
+  \tetoken{లెక్కించదగిన}{!!a{enumerable}}
+  \tetoken{నిర్మాణం}{!!{structure}}~$\Struct{S}$ ఉందని చూశాం. కానీ
+  $\Struct{S}$ అంత్యబిందువులు లేని
+  \tetoken{లెక్కించదగిన}{!!a{enumerable}} సాంద్ర రేఖీయ క్రమం కాబట్టి,
+  అది \tetoken{నిర్మాణం}{!!{structure}}~$\Struct{Q}$కు సమరూపం; అందువల్ల
+  మొదటిస్థాయి-వాక్య తుల్యం కూడా. మొదటిస్థాయి-వాక్య తుల్యత యొక్క
+  సంక్రమణశీలత వల్ల $\Struct{R}\elemequiv\Struct{Q}$.
+  (అదే ముందుకు-వెనుకకు వాదనతో
+  $\Struct{R}\iso[p]\Struct{Q}$ను స్థాపించి దీన్ని నేరుగా కూడా
+  చూపవచ్చు.)
+\end{rem}
+\end{document}

@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 178 of 722 draft units**. This view selects 140 of 162 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 187 of 722 draft units**. This view selects 152 of 175 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -323,6 +323,26 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0181; first-order-logic/beyond/other-logics; translation/content/first-order-logic/beyond/other-logics.tex:22-35; printed/PDF page pending
 
 - Please double-check: Please double-check whether “ఫజీ తర్కం / సంభావ్యతా తర్కం / డిఫాల్ట్ తర్కం / రద్దుచేయదగిన హేతుచింతన / ఏకదిశేతర తర్కం / జ్ఞానమీమాంసాత్మక తర్కం / కారణ తర్కం / కర్తవ్యాత్మక (డియాంటిక్) తర్కం” is idiomatic and technically standard for “fuzzy logic / probabilistic logic / default logic / defeasible reasoning / nonmonotonic logic / epistemic logic / causal logic / deontic logic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T055 — model theory / reduct / expansion / substructure / extension / theory of a structure
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: నమూనా సిద్ధాంతం / సంకుచిత రూపం / విస్తరణ / ఉపనిర్మాణం / విస్తృత నిర్మాణం / నిర్మాణపు సిద్ధాంతం
+
+- Occurrences: OLP-0184; model-theory/basics/reducts-and-expansions; translation/content/model-theory/basics/reducts-and-expansions.tex:24-41; printed/PDF page pending; OLP-0185; model-theory/basics/substructures; translation/content/model-theory/basics/substructures.tex:20-40; printed/PDF page pending
+
+- Please double-check: Please double-check whether “నమూనా సిద్ధాంతం / సంకుచిత రూపం / విస్తరణ / ఉపనిర్మాణం / విస్తృత నిర్మాణం / నిర్మాణపు సిద్ధాంతం” is idiomatic and technically standard for “model theory / reduct / expansion / substructure / extension / theory of a structure” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T057 — overspill / quantifier rank / n-equivalence / concatenation / dense linear order without endpoints
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: అధిప్రసరణ (ఓవర్‌స్పిల్) / పరిమాణక ర్యాంకు / n-తుల్యత / అనుసంధానం / అంత్యబిందువులు లేని సాంద్ర రేఖీయ క్రమం
+
+- Occurrences: OLP-0186; model-theory/basics/overspill; translation/content/model-theory/basics/overspill.tex:9-10; printed/PDF page pending; OLP-0189; model-theory/basics/partial-iso; translation/content/model-theory/basics/partial-iso.tex:120-129; printed/PDF page pending; OLP-0190; model-theory/basics/dlo; translation/content/model-theory/basics/dlo.tex:12-27; printed/PDF page pending
+
+- Please double-check: Please double-check whether “అధిప్రసరణ (ఓవర్‌స్పిల్) / పరిమాణక ర్యాంకు / n-తుల్యత / అనుసంధానం / అంత్యబిందువులు లేని సాంద్ర రేఖీయ క్రమం” is idiomatic and technically standard for “overspill / quantifier rank / n-equivalence / concatenation / dense linear order without endpoints” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -1403,3 +1423,103 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0178; first-order-logic/beyond/higher-order-logic; translation/content/first-order-logic/beyond/higher-order-logic.tex:82-91; printed/PDF page pending
 
 - Please double-check: Please double-check that the lambda-bound x is assigned type tau, matching formation rule (6), while s remains type sigma.
+
+## REV-OLTEMODBAS-001 — OLTEMODBAS-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: read is at planning to work as is planning to work; preserved the contributor name, issue reference and intent; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0182; model-theory/model-theory; translation/content/model-theory/model-theory.tex:9-17; printed/PDF page pending
+
+- Please double-check: Please double-check that the Telugu editorial reads the defective phrase as “is planning to work” while preserving the contributor and issue reference.
+
+## REV-OLTEMODBAS-002 — OLTEMODBAS-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: added the nonempty-carrier condition required by the edition's structure definition; preserved the relation restriction; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0185; model-theory/basics/substructures; translation/content/model-theory/basics/substructures.tex:42-50; printed/PDF page pending
+
+- Please double-check: Please double-check that the relation-only substructure remark requires N to be non-empty, consistently with OpenLogic’s structure definition.
+
+## REV-OLTEMODBAS-003 — OLTEMODBAS-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: changed only the affected function interpretation from M to M-prime; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0187; model-theory/basics/isomorphism; translation/content/model-theory/basics/isomorphism.tex:92-101; printed/PDF page pending
+
+- Please double-check: Please double-check that the value of the function term in M-prime uses the interpretation of f in M-prime.
+
+## REV-OLTEMODBAS-004 — OLTEMODBAS-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored one closing parenthesis for the outer h application; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0187; model-theory/basics/isomorphism; translation/content/model-theory/basics/isomorphism.tex:103-114; printed/PDF page pending
+
+- Please double-check: Please double-check that the first function-term equality closes the outer h application with exactly one restored parenthesis.
+
+## REV-OLTEMODBAS-005 — OLTEMODBAS-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: changed the even-branch parametrization to n=2r+1 so its range obligations begin at b_0; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0189; model-theory/basics/partial-iso; translation/content/model-theory/basics/partial-iso.tex:64-76; printed/PDF page pending
+
+- Please double-check: Please double-check that the even back-and-forth stages now add b_0, b_1, and so on rather than skipping b_0.
+
+## REV-OLTEMODBAS-006 — OLTEMODBAS-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: stated the source's signature inventory directly and omitted only its conflicting purely relational label; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0189; model-theory/basics/partial-iso; translation/content/model-theory/basics/partial-iso.tex:130-146; printed/PDF page pending
+
+- Please double-check: Please double-check that the finite-signature proposition states its predicate, constant, and function inventory without contradicting the earlier purely-relational definition.
+
+## REV-OLTEMODBAS-007 — OLTEMODBAS-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: named the common sequence length k and changed the atomic variable-list endpoint from n to k; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0189; model-theory/basics/partial-iso; translation/content/model-theory/basics/partial-iso.tex:163-179; printed/PDF page pending
+
+- Please double-check: Please double-check that k is the sequence length while n remains the recursion and quantifier-rank index in I_n.
+
+## REV-OLTEMODBAS-008 — OLTEMODBAS-008
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: stated the fixed-free-variable formula-class lemma, retained the sentence case at k=0, and used a finite conjunction of satisfied representatives in the proof; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0189; model-theory/basics/partial-iso; translation/content/model-theory/basics/partial-iso.tex:130-146 and 224-238; printed/PDF page pending
+
+- Please double-check: Please double-check that the strengthened fixed-variable formula-class lemma is exactly what the finite conjunction T_n^a requires.
+
+## REV-OLTEMODBAS-009 — OLTEMODBAS-009
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: added the empty-map and already-mapped cases, then retained the source's three order-position cases for a new point; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0190; model-theory/basics/dlo; translation/content/model-theory/basics/dlo.tex:42-65; printed/PDF page pending
+
+- Please double-check: Please double-check that the dense-order Forth proof now covers both the empty partial map and an already-mapped point before its three new-point cases.
+
+## REV-OLTEMODBAS-010 — OLTEMODBAS-010
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restricted the invariant-subset exercise to definability without additional parameters; preserved its automorphism and set-image equation; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0187; model-theory/basics/isomorphism; translation/content/model-theory/basics/isomorphism.tex:137-144; printed/PDF page pending
+
+- Please double-check: Please double-check that the automorphism exercise is limited to parameter-free definability, so invariance under every automorphism is valid.

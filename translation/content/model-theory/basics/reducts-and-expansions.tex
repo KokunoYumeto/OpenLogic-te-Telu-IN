@@ -1,0 +1,70 @@
+% Part: first-order-logic
+% Chapter: model-theory
+% Section: reducts-and-expansions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{red}
+\section{సంకుచిత రూపాలు మరియు విస్తరణలు}
+
+కొన్ని ఉమ్మడి సంకేతాలు గల భాషలను, అలాగే ఆ భాషల
+\tetoken{నిర్మాణాలను}{!!{structure}s} పోల్చడం తరచుగా ఉపయోగకరం లేదా అవసరం. అత్యంత
+సాధారణ సందర్భంలో \tetoken{ఒక భాష}{!!a{language}}~$\Lang{L}$లోని సంకేతాలన్నీ
+\tetoken{మరో భాష}{!!a{language}}~$\Lang{L'}$లోనూ భాగమవుతాయి; అంటే,
+$\Lang{L} \subseteq \Lang{L'}$. అప్పుడు ఉమ్మడి సంకేతాల
+అర్థనిర్దేశాలను మార్చకుండా, అదనపు సంకేతాలకు అర్థనిర్దేశాలు చేర్చి,
+ఒక $\Lang{L}$-\tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M}$ను ఎల్లప్పుడూ
+$\Lang{L'}$-\tetoken{నిర్మాణంగా}{!!{structure}} విస్తరించవచ్చు. మరోవైపు,
+$\Lang{L'}$-నిర్మాణం~$\Struct{M'}$ నుంచి
+$\Lang{L}$లో లేని సంకేతాల అర్థనిర్దేశాలను “మరచిపోవడం” ద్వారా
+$\Lang{L}$-నిర్మాణాన్ని పొందవచ్చు.
+
+\begin{defn}
+\ollabel{defn:reduct}
+$\Lang L \subseteq \Lang L'$ అనుకుందాం; $\Struct M$ ఒక
+$\Lang L$-\tetoken{నిర్మాణం}{!!{structure}}, $\Struct M'$ ఒక
+$\Lang L'$-\tetoken{నిర్మాణం}{!!{structure}} అనుకుందాం. కింది షరతులు నెరవేరితే,
+అప్పుడే $\Struct M$ను $\Lang L$కు పరిమితమైన $\Struct M'$ యొక్క
+\emph{సంకుచిత రూపం} అంటాం; $\Struct M'$ను $\Lang L'$కు విస్తరించిన
+$\Struct M$ యొక్క \emph{విస్తరణ} అంటాం:
+\begin{enumerate}
+\item $\Domain{M} = \Domain{M'}$.
+\item ప్రతి \tetoken{స్థిరసంకేతం}{!!{constant}}~$c \in \Lang L$కు,
+  $\Assign{c}{M} = \Assign{c}{M'}$.
+\item ప్రతి \tetoken{ప్రమేయ సంకేతం}{!!{function}}~$f \in \Lang L$కు,
+  $\Assign{f}{M} = \Assign{f}{M'}$.
+\item ప్రతి \tetoken{విధేయ సంకేతం}{!!{predicate}}~$P \in \Lang L$కు,
+  $\Assign{P}{M} = \Assign{P}{M'}$.
+\end{enumerate}
+\end{defn}
+
+\begin{prop}
+\ollabel{prop:reduct}
+ఒక $\Lang{L}$-\tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M}$,
+$\Lang{L'}$-\tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M'}$ యొక్క సంకుచిత
+రూపమైతే, ప్రతి $\Lang{L}$-\tetoken{వాక్యం}{!!{sentence}s}~$!A$కు
+\[
+\Sat{M}{!A} \text{ అవుతుంది అప్పుడే } \Sat{M'}{!A}.
+\]
+\end{prop}
+
+\begin{proof}
+  అభ్యాసం.
+\end{proof}
+
+\begin{prob}
+\olref[mod][bas][red]{prop:reduct}ను నిరూపించండి.
+\end{prob}
+
+\begin{defn}
+మనకు $\Lang{L}$-నిర్మాణం $\Struct{M}$ ఉందనుకుందాం.
+ఒకే ఒక $n$-స్థాన \tetoken{విధేయ సంకేతం}{!!{predicate}}~$P$ను చేర్చి
+$\Lang{L}$ నుంచి పొందిన విస్తరణ $\Lang{L'} = \Lang{L} \cup \{P\}$
+అనుకుందాం; $R \subseteq \Domain{M}^n$ ఒక $n$-స్థాన సంబంధం అనుకుందాం.
+అప్పుడు $\Assign{P}{M'} = R$ అయ్యేలా $\Struct{M}$ను విస్తరించి పొందిన
+$\Struct{M'}$ను $\Expan{M}{R}$గా రాస్తాం.
+\end{defn}
+
+\end{document}

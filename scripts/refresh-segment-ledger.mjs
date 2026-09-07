@@ -3,12 +3,15 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 
 const root = path.resolve(import.meta.dirname, '..');
-const first = Number(process.argv[2] ?? 11);
-const last = Number(process.argv[3] ?? 137);
-const ledgerPath = path.resolve(process.argv[4] ?? path.join(root, 'evidence', 'SEGMENT_CANON_USE.jsonl'));
+const args = process.argv.slice(2);
+const writeMode = args.includes('--write');
+const positional = args.filter(arg => arg !== '--write');
+const first = Number(positional[0] ?? 11);
+const last = Number(positional[1] ?? 137);
+const ledgerPath = path.resolve(positional[2] ?? path.join(root, 'evidence', 'SEGMENT_CANON_USE.jsonl'));
 
 if (!Number.isInteger(first) || !Number.isInteger(last) || first < 1 || last > 722 || first > last) {
-  throw new Error('Usage: node scripts/refresh-segment-ledger.mjs FIRST LAST [LEDGER_PATH]');
+  throw new Error('Usage: node scripts/refresh-segment-ledger.mjs FIRST LAST [LEDGER_PATH] [--write]');
 }
 
 const sha = value => crypto.createHash('sha256').update(value).digest('hex');
@@ -65,13 +68,20 @@ for (let order = first; order <= last; order += 1) {
       source_corrections: [...targetBlocks[i].block.matchAll(/\\sourcecorrection\{([^{}]+)\}/gu)].map(match => match[1]),
     };
     const nextLine = JSON.stringify(refreshed);
-    if (nextLine !== originalLines[recordIndex]) changed.push({ oldLine: originalLines[recordIndex], nextLine });
+    if (nextLine !== originalLines[recordIndex]) changed.push({ recordIndex, oldLine: originalLines[recordIndex], nextLine });
   });
   unitSummaries.push({ unit_id: unitId, segments: indexes.length, source_blocks: sourceBlocks.length, target_blocks: targetBlocks.length });
 }
 
 process.stderr.write(JSON.stringify({ ledger: ledgerPath, first, last, units: unitSummaries.length, records: unitSummaries.reduce((n, unit) => n + unit.segments, 0), changed_records: changed.length }) + '\n');
 if (!changed.length) process.exit(0);
+if (writeMode) {
+  const refreshedLines = [...originalLines];
+  for (const item of changed) refreshedLines[item.recordIndex] = item.nextLine;
+  fs.writeFileSync(ledgerPath, `${refreshedLines.join('\n')}\n`, 'utf8');
+  process.stderr.write(JSON.stringify({ wrote: ledgerPath, changed_records: changed.length }) + '\n');
+  process.exit(0);
+}
 process.stdout.write('*** Begin Patch\n');
 process.stdout.write(`*** Update File: ${ledgerPath}\n`);
 for (const item of changed) {

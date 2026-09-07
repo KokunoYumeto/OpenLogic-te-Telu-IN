@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 178 of 722 draft units**. This log contains 54 terminology/sense decisions and 108 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 187 of 722 draft units**. This log contains 57 terminology/sense decisions and 118 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1303,6 +1303,78 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the stated functional distinctions; high nomenclatural uncertainty because the inspected scholarly witnesses do not directly attest these subfield names
 
 - Please double-check: Please double-check whether “ఫజీ తర్కం / సంభావ్యతా తర్కం / డిఫాల్ట్ తర్కం / రద్దుచేయదగిన హేతుచింతన / ఏకదిశేతర తర్కం / జ్ఞానమీమాంసాత్మక తర్కం / కారణ తర్కం / కర్తవ్యాత్మక (డియాంటిక్) తర్కం” is idiomatic and technically standard for “fuzzy logic / probabilistic logic / default logic / defeasible reasoning / nonmonotonic logic / epistemic logic / causal logic / deontic logic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T055 — model theory / reduct / expansion / substructure / extension / theory of a structure
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: నమూనా సిద్ధాంతం / సంకుచిత రూపం / విస్తరణ / ఉపనిర్మాణం / విస్తృత నిర్మాణం / నిర్మాణపు సిద్ధాంతం
+
+- Exact implementation: OLP-0184; model-theory/basics/reducts-and-expansions; content/model-theory/basics/reducts-and-expansions.tex:24-39 ↔ translation/content/model-theory/basics/reducts-and-expansions.tex:24-41 (OLP-0184-B006); printed/PDF page pending; OLP-0185; model-theory/basics/substructures; content/model-theory/basics/substructures.tex:19-37 ↔ translation/content/model-theory/basics/substructures.tex:20-40 (OLP-0185-B006); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P012, PDF 319, printed 312, Questions 37-38; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P008 and TE-P011--TE-P012 support subsets, functions and mappings; TE-P018, TE-P023, TE-P027, TE-P029--TE-P031 support formal logic, consequence, predicates, first-order language, the individuals domain and sentences; TE-P003--TE-P004 support proof and theorem exposition. The witnesses do not directly attest reducts or substructures. The signature-forgetting, interpretation-preservation and true-sentence definitions in OLP-0182--OLP-0188 control the exact senses, while the established నమూనా, నిర్మాణం and సిద్ధాంతం choices are reused. No unexplained English reader-facing lexical borrowing; the descriptive సంకుచిత రూపం is preferred to an unsupported transliteration of reduct
+
+- Alternatives: reuse the established నమూనా, నిర్మాణం and సిద్ధాంతం register with definition-controlled descriptive compounds (chosen); leave reduct and substructure in English prose (rejected); claim direct canon attestation for model-theoretic signature restriction (rejected)
+
+- Uncertainty: Low for broad set, function, first-order, domain, structure, model and theory register; medium to high nomenclatural uncertainty for reduct and extension labels
+
+- Please double-check: Please double-check whether “నమూనా సిద్ధాంతం / సంకుచిత రూపం / విస్తరణ / ఉపనిర్మాణం / విస్తృత నిర్మాణం / నిర్మాణపు సిద్ధాంతం” is idiomatic and technically standard for “model theory / reduct / expansion / substructure / extension / theory of a structure” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T056 — elementary equivalence / isomorphism / automorphism / partial isomorphism / back-and-forth property
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: moderate / standard
+
+- Chosen wording/treatment: మొదటిస్థాయి-వాక్య తుల్యత / సమరూపత / స్వసమరూపత / పాక్షిక సమరూపత / ముందుకు-వెనుకకు ధర్మం
+
+- Exact implementation: OLP-0187; model-theory/basics/isomorphism; content/model-theory/basics/isomorphism.tex:12-24 ↔ translation/content/model-theory/basics/isomorphism.tex:12-24 (OLP-0187-B005); printed/PDF page pending; OLP-0189; model-theory/basics/partial-iso; content/model-theory/basics/partial-iso.tex:12-31 ↔ translation/content/model-theory/basics/partial-iso.tex:12-34 (OLP-0189-B005); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P012, PDF 319, printed 312, Questions 37-38; TE-P015, PDF 309, printed 302, Main points 9-12; TE-P016, PDF 310, printed 303, Questions 4-5 and answers on finite, infinite and equivalent sets; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P016 directly supports finite-set equivalence; TE-P011--TE-P012 and TE-P015 support functions, images, injectivity and surjectivity; TE-P018, TE-P023--TE-P024, TE-P027, TE-P029--TE-P031 support formal logic, consequence, derivation, predicates, first-order language, domains and sentences. None directly attests the model-theoretic distinction. The same-sentences definition, five structure-preservation clauses and finite extension conditions in OLP-0187--OLP-0190 fix the senses. The established సమరూపత choice from TE-T031 is retained. No English headword is left unexplained; మొదటిస్థాయి-వాక్య తుల్యత deliberately exposes the defining sentence criterion rather than importing elementary
+
+- Alternatives: make the defining first-order-sentence criterion visible in మొదటిస్థాయి-వాక్య తుల్యత and reuse established సమరూపత (chosen); import elementary as an unexplained English headword (rejected); collapse elementary equivalence into isomorphism (rejected because the chapter distinguishes them)
+
+- Uncertainty: Low structural uncertainty because the formulas fully define the relations; medium nomenclatural uncertainty for elementary equivalence and back-and-forth
+
+- Please double-check: Please double-check whether “మొదటిస్థాయి-వాక్య తుల్యత / సమరూపత / స్వసమరూపత / పాక్షిక సమరూపత / ముందుకు-వెనుకకు ధర్మం” is idiomatic and technically standard for “elementary equivalence / isomorphism / automorphism / partial isomorphism / back-and-forth property” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T057 — overspill / quantifier rank / n-equivalence / concatenation / dense linear order without endpoints
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: అధిప్రసరణ (ఓవర్‌స్పిల్) / పరిమాణక ర్యాంకు / n-తుల్యత / అనుసంధానం / అంత్యబిందువులు లేని సాంద్ర రేఖీయ క్రమం
+
+- Exact implementation: OLP-0186; model-theory/basics/overspill; content/model-theory/basics/overspill.tex:9-10 ↔ translation/content/model-theory/basics/overspill.tex:9-10 (OLP-0186-B004); printed/PDF page pending; OLP-0189; model-theory/basics/partial-iso; content/model-theory/basics/partial-iso.tex:113-120 ↔ translation/content/model-theory/basics/partial-iso.tex:120-129 (OLP-0189-B015); printed/PDF page pending; OLP-0190; model-theory/basics/dlo; content/model-theory/basics/dlo.tex:12-26 ↔ translation/content/model-theory/basics/dlo.tex:12-27 (OLP-0190-B005); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P016, PDF 310, printed 303, Questions 4-5 and answers on finite, infinite and equivalent sets; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P008 and TE-P016 support sets, finite/infinite and equivalence register; TE-P018, TE-P023--TE-P024, TE-P027, TE-P029--TE-P031 support formal logic, consequence, derivation, predicates, first-order quantification, domains and sentences; TE-P003--TE-P004 and TE-P032 support proof, theorem, induction and deduction prose. They do not directly attest these advanced model-theoretic names. The compactness consequence, recursive nesting-depth definition, finite-sequence operation and six displayed order axioms in OLP-0186, OLP-0189 and OLP-0190 control the exact senses. ఓవర్‌స్పిల్ is an explicit parenthetical borrowing beside descriptive అధిప్రసరణ; ర్యాంకు is an explicit technical borrowing fixed by the adjacent nesting-depth definition
+
+- Alternatives: use descriptive Telugu labels with overspill and rank explicitly marked as technical borrowings (chosen); leave the full advanced taxonomy in English prose (rejected); claim the checked witnesses directly attest overspill or quantifier rank (rejected)
+
+- Uncertainty: Low semantic uncertainty because each construction is explicitly defined; high nomenclatural uncertainty for overspill and quantifier-rank headwords
+
+- Please double-check: Please double-check whether “అధిప్రసరణ (ఓవర్‌స్పిల్) / పరిమాణక ర్యాంకు / n-తుల్యత / అనుసంధానం / అంత్యబిందువులు లేని సాంద్ర రేఖీయ క్రమం” is idiomatic and technically standard for “overspill / quantifier rank / n-equivalence / concatenation / dense linear order without endpoints” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -3895,3 +3967,243 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check that the lambda-bound x is assigned type tau, matching formation rule (6), while s remains type sigma.
+
+## REV-OLTEMODBAS-001 — OLTEMODBAS-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: read is at planning to work as is planning to work; preserved the contributor name, issue reference and intent; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0182; model-theory/model-theory; lines 9-16, closing sentence of the part editorial ↔ translation/content/model-theory/model-theory.tex:9-17 (OLP-0182-B005); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODBAS-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: read is at planning to work as is planning to work; preserved the contributor name, issue reference and intent; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the Telugu editorial reads the defective phrase as “is planning to work” while preserving the contributor and issue reference.
+
+## REV-OLTEMODBAS-002 — OLTEMODBAS-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: added the nonempty-carrier condition required by the edition's structure definition; preserved the relation restriction; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0185; model-theory/basics/substructures; lines 39-44, relation-only substructure remark ↔ translation/content/model-theory/basics/substructures.tex:42-50 (OLP-0185-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODBAS-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: added the nonempty-carrier condition required by the edition's structure definition; preserved the relation restriction; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the relation-only substructure remark requires N to be non-empty, consistently with OpenLogic’s structure definition.
+
+## REV-OLTEMODBAS-003 — OLTEMODBAS-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: changed only the affected function interpretation from M to M-prime; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0187; model-theory/basics/isomorphism; lines 86-91, function-term induction case ↔ translation/content/model-theory/basics/isomorphism.tex:92-101 (OLP-0187-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODBAS-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: changed only the affected function interpretation from M to M-prime; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the value of the function term in M-prime uses the interpretation of f in M-prime.
+
+## REV-OLTEMODBAS-004 — OLTEMODBAS-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored one closing parenthesis for the outer h application; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0187; model-theory/basics/isomorphism; lines 94-101, first line of the function-term equality chain ↔ translation/content/model-theory/basics/isomorphism.tex:103-114 (OLP-0187-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODBAS-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored one closing parenthesis for the outer h application; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the first function-term equality closes the outer h application with exactly one restored parenthesis.
+
+## REV-OLTEMODBAS-005 — OLTEMODBAS-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: changed the even-branch parametrization to n=2r+1 so its range obligations begin at b_0; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0189; model-theory/basics/partial-iso; lines 61-70, alternating construction of partial isomorphisms ↔ translation/content/model-theory/basics/partial-iso.tex:64-76 (OLP-0189-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODBAS-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: changed the even-branch parametrization to n=2r+1 so its range obligations begin at b_0; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the even back-and-forth stages now add b_0, b_1, and so on rather than skipping b_0.
+
+## REV-OLTEMODBAS-006 — OLTEMODBAS-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: stated the source's signature inventory directly and omitted only its conflicting purely relational label; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0189; model-theory/basics/partial-iso; lines 122-125, finite-language proposition ↔ translation/content/model-theory/basics/partial-iso.tex:130-146 (OLP-0189-B016); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODBAS-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: stated the source's signature inventory directly and omitted only its conflicting purely relational label; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the finite-signature proposition states its predicate, constant, and function inventory without contradicting the earlier purely-relational definition.
+
+## REV-OLTEMODBAS-007 — OLTEMODBAS-007
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: named the common sequence length k and changed the atomic variable-list endpoint from n to k; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0189; model-theory/basics/partial-iso; lines 143-153, base relation I_0 ↔ translation/content/model-theory/basics/partial-iso.tex:163-179 (OLP-0189-B019); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODBAS-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: named the common sequence length k and changed the atomic variable-list endpoint from n to k; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that k is the sequence length while n remains the recursion and quantifier-rank index in I_n.
+
+## REV-OLTEMODBAS-008 — OLTEMODBAS-008
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: stated the fixed-free-variable formula-class lemma, retained the sentence case at k=0, and used a finite conjunction of satisfied representatives in the proof; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0189; model-theory/basics/partial-iso; lines 122-129 and 199-203, finite-rank proposition and its converse-proof use ↔ translation/content/model-theory/basics/partial-iso.tex:130-146 and 224-238 (OLP-0189-B016); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODBAS-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: stated the fixed-free-variable formula-class lemma, retained the sentence case at k=0, and used a finite conjunction of satisfied representatives in the proof; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the strengthened fixed-variable formula-class lemma is exactly what the finite conjunction T_n^a requires.
+
+## REV-OLTEMODBAS-009 — OLTEMODBAS-009
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: added the empty-map and already-mapped cases, then retained the source's three order-position cases for a new point; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0190; model-theory/basics/dlo; lines 42-56, Forth-property construction ↔ translation/content/model-theory/basics/dlo.tex:42-65 (OLP-0190-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODBAS-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: added the empty-map and already-mapped cases, then retained the source's three order-position cases for a new point; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the dense-order Forth proof now covers both the empty partial map and an already-mapped point before its three new-point cases.
+
+## REV-OLTEMODBAS-010 — OLTEMODBAS-010
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restricted the invariant-subset exercise to definability without additional parameters; preserved its automorphism and set-image equation; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0187; model-theory/basics/isomorphism; lines 124-128, automorphism exercise ↔ translation/content/model-theory/basics/isomorphism.tex:137-144 (OLP-0187-B013); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODBAS-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restricted the invariant-subset exercise to definability without additional parameters; preserved its automorphism and set-image equation; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the automorphism exercise is limited to parameter-free definability, so invariance under every automorphism is valid.

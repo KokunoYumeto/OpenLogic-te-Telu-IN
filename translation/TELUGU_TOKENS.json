@@ -2,7 +2,7 @@
   "schema": "openlogic-te-token-realization/1",
   "locale": "te-Telu-IN",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
-  "contract": "The English strings inside !! token markup are stable OpenLogic configuration keys, not reader-visible English. Every occurrence in the current translated scope is wrapped as \\tetoken{Telugu surface}{original key}; renderers emit only the first argument and retain the second for exact source-token identity checks. The mapping now covers the 42 keys used through OLP-0158.",
+  "contract": "The English strings inside !! token markup are stable OpenLogic configuration keys, not reader-visible English. Every occurrence in the current translated scope is wrapped as \\tetoken{Telugu surface}{original key}; renderers emit only the first argument and retain the second for exact source-token identity checks. The mapping now covers the 42 keys used through OLP-0190.",
   "article": "ఒక",
   "tokens": {
     "language": {"singular": "భాష", "plural": "భాషలు", "kind": "a_noun", "canon_passages": ["TE-P018"], "evidence": "definition-controlled academic register"},

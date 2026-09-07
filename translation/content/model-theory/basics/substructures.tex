@@ -1,0 +1,54 @@
+% Part: first-order-logic
+% Chapter: model-theory
+% Section: substructures
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{sub}
+\olsection{ఉప\printtoken{p}{structure}}
+
+ఒక \tetoken{నిర్మాణం}{!!a{structure}}~$\Struct{M}$ యొక్క
+\tetoken{వ్యక్తి క్షేత్రం}{!!{domain}}, మరో నిర్మాణం~$\Struct{M'}$ యొక్క
+వ్యక్తి క్షేత్రానికి ఉపసమితి కావచ్చు. కానీ $\Domain{M} \subseteq
+\Domain{M'}$ కావడమే కాకుండా, ఉమ్మడి భాగం~$\Domain{M}$పై భాషా
+సంకేతాలకు అవి ఇచ్చే అర్థనిర్దేశాల్లోనూ $\Struct{M}$, $\Struct{M'}$
+“ఏకీభవిస్తే” మాత్రమే $\Struct{M}$ను $\Struct{M'}$లో ఒక “భాగం”గా
+పరిగణించాలి.
+
+\begin{defn}
+\ollabel{defn:substructure}
+ఒకే భాష~$\Lang L$కు చెందిన \tetoken{నిర్మాణాలు}{!!{structure}s}
+$\Struct M$, $\Struct M'$ ఇవ్వబడ్డాయనుకుందాం. కింది షరతులు నెరవేరితే,
+అప్పుడే $\Struct M$ను $\Struct M'$ యొక్క
+\emph{ఉప\tetoken{నిర్మాణం}{!!{structure}}} అని,
+$\Struct M'$ను $\Struct M$ యొక్క \emph{విస్తృత నిర్మాణం} అని అంటాం;
+దీనిని $\Struct M \substruct \Struct M'$గా రాస్తాం:
+\begin{enumerate}
+\item $\Domain{M} \subseteq \Domain{M'}$;
+\item ప్రతి స్థిరసంకేతం $c \in \Lang L$కు, $\Assign{c}{M} =
+    \Assign{c}{M'}$;
+\item ప్రతి $n$-స్థాన \tetoken{ప్రమేయ సంకేతం}{!!{function}} $f \in \Lang L$కు,
+  అన్ని $a_1$, \dots, $a_n \in \Domain{M}$ కోసం
+  $\Assign{f}{M}(a_1, \dots, a_n) = \Assign{f}{M'}(a_1, \dots, a_n)$;
+\item ప్రతి $n$-స్థాన \tetoken{విధేయ సంకేతం}{!!{predicate}} $R \in \Lang L$కు,
+  అన్ని $a_1$, \dots, $a_n \in \Domain{M}$ కోసం $\langle
+  a_1, \dots, a_n\rangle \in \Assign{R}{M}$ అవుతుంది అప్పుడే
+  $\langle a_1, \dots, a_n\rangle \in \Assign{R}{M'}$.
+\end{enumerate}
+\end{defn}
+
+\begin{rem}
+\ollabel{rem:substructure}
+భాషలో స్థిరసంకేతాలు లేదా \tetoken{ప్రమేయ సంకేతాలు}{!!{function}s} లేకపోతే,
+$N \subseteq \Domain{M}$, $N \ne \emptyset$ అయ్యే ప్రతి అటువంటి సమితి,
+\tetoken{వ్యక్తి క్షేత్రం}{!!{domain}}~$\Domain{N}=N$ గల $\Struct M$ యొక్క
+ఉప\-\tetoken{నిర్మాణం}{!!{structure}}~$\Struct{N}$ను నిర్ణయిస్తుంది; ఇందుకు
+$\Assign{R}{N} = \Assign{R}{M} \cap N^n$గా ఉంచుతాం.
+\sourcecorrection{OLTEMODBAS-002}{నిర్మాణపు వ్యక్తి క్షేత్రం ఖాళీ కాని సమితి కావాలనే ఈ గ్రంథపు నిర్వచనానికి అనుగుణంగా, ఆంగ్ల మూలం చెప్పని $N \ne \emptyset$ షరతును స్పష్టం చేశాం; సంబంధపు నియంత్రణ మారలేదు.}
+\end{rem}
+
+% prove something about this? Examples?
+
+\end{document}

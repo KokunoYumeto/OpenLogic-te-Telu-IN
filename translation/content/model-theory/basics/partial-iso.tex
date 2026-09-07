@@ -1,0 +1,254 @@
+% Part: first-order-logic
+% Chapter: model-theory
+% Section: partial-iso
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{pis}
+\section{పాక్షిక సమరూపతలు}
+
+\begin{defn}
+  రెండు \tetoken{నిర్మాణాలు}{!!{structure}s} $\Struct{M}$, $\Struct{N}$
+  ఇవ్వబడ్డాయనుకుందాం. $\Struct{M}$ నుంచి $\Struct{N}$కు ఒక
+  \emph{పాక్షిక సమరూపత} అంటే, $\Domain M$లోని ప్రాచలాలను తీసుకొని
+  $\Domain N$లో విలువలను ఇచ్చే పరిమిత పాక్షిక ప్రమేయం~$p$; అది తన
+  నిర్వచన క్షేత్రంపై \olref[iso]{defn:isomorphism}లోని సమరూపత
+  షరతులను నెరవేరుస్తుంది:
+  \begin{enumerate}
+  \item $p$ \tetoken{ఒకటి-ఒకటి}{!!{injective}};
+  \item ప్రతి \tetoken{స్థిరసంకేతం}{!!{constant}}~$c$కు:
+    $p(\Assign{c}{M})$ నిర్వచితమైతే,
+    $p(\Assign{c}{M})=\Assign{c}{N}$;
+  \item ప్రతి $n$-స్థాన \tetoken{విధేయ సంకేతం}{!!{predicate}} $P$కు:
+    $a_1$, \dots, $a_n$ అన్నీ $p$ యొక్క నిర్వచన క్షేత్రంలో ఉంటే,
+    $\langle a_1, \dots, a_n\rangle \in \Assign P M$ అవుతుంది అప్పుడే
+    $\langle p(a_1), \dots, p(a_n)\rangle \in \Assign P N$;
+  \item ప్రతి $n$-స్థాన \tetoken{ప్రమేయ సంకేతం}{!!{function}} $f$కు:
+    $a_1$, \dots, $a_n$ అన్నీ $p$ యొక్క నిర్వచన క్షేత్రంలో ఉంటే,
+    $p(\Assign f M(a_1, \dots,a_n))
+    =\Assign f N(p(a_1), \dots,p(a_n))$.
+  \end{enumerate}
+  $p$ పరిమితమని అనడం అంటే $\dom{p}$ పరిమితమని అర్థం.
+\end{defn}
+
+ఖాళీ ప్రమేయం~$\emptyset$ ఏ రెండు \tetoken{నిర్మాణాల}{!!{structure}s} మధ్యనైనా
+ఎల్లప్పుడూ ఒక పాక్షిక సమరూపత అవుతుందని గమనించండి.
+
+\begin{defn}\ollabel{defn:partialisom}
+  రెండు \tetoken{నిర్మాణాలు}{!!{structure}s} $\Struct{M}$, $\Struct{N}$
+  ఇవ్వబడ్డాయనుకుందాం. $\Struct{M}$, $\Struct{N}$ల మధ్య కింది
+  \emph{ముందుకు-వెనుకకు} ధర్మాన్ని నెరవేర్చే పాక్షిక సమరూపతల ఖాళీ
+  కాని సమితి~$I$ ఉంటే, అప్పుడే ఆ నిర్మాణాలను
+  \emph{పాక్షికంగా సమరూపమైనవి} అంటాం; దీనిని $\Struct{M} \iso[p]
+  \Struct{N}$గా రాస్తాం:
+  \begin{enumerate}
+  \item (\emph{ముందుకు}) ప్రతి $p \in I$, $a \in \Domain M$కు
+    $p \subseteq q$ అయ్యే, అలాగే $a$ అనేది $q$ నిర్వచన క్షేత్రంలో
+    ఉండే $q \in I$ ఉంది;
+  \item (\emph{వెనుకకు}) ప్రతి $p \in I$, $b \in \Domain N$కు
+    $p \subseteq q$ అయ్యే, అలాగే $b$ అనేది $q$ విలువల పరిధిలో
+    ఉండే $q \in I$ ఉంది.
+  \end{enumerate}
+\end{defn}
+
+\begin{thm}\ollabel{thm:p-isom1}
+  $\Struct{M} \iso[p] \Struct{N}$ కాగా $\Struct{M}$, $\Struct{N}$
+  రెండూ \tetoken{లెక్కించదగినవి}{!!{enumerable}} అయితే,
+  $\Struct{M} \iso \Struct{N}$.
+\end{thm}
+
+\begin{proof}
+  $\Struct{M}$, $\Struct{N}$ \tetoken{లెక్కించదగినవి}{!!{enumerable}} కాబట్టి,
+  $\Domain{M}=\{a_0,a_1,\ldots\}$, $\Domain{N}=\{b_0,b_1,\ldots\}$
+  అనుకుందాం. యథేచ్ఛ $p_0 \in I$తో మొదలుపెట్టి, పాక్షిక సమరూపతల
+  వృద్ధి అనుక్రమం $p_0 \subseteq p_1 \subseteq p_2 \subseteq
+  \cdots$ను కింది విధంగా నిర్వచిస్తాం:
+  \begin{enumerate}
+  \item $n+1$ బేసి సంఖ్య అయితే, అంటే $n=2r$ అయితే, ముందుకు ధర్మాన్ని
+    ఉపయోగించి $p_n \subseteq p_{n+1}$ అయ్యే, $a_r$ అనేది
+    $p_{n+1}$ నిర్వచన క్షేత్రంలో ఉండే $p_{n+1}\in I$ను కనుగొనండి;
+  \item $n+1$ సరి సంఖ్య అయితే, అంటే $n=2r+1$ అయితే, వెనుకకు ధర్మాన్ని
+    ఉపయోగించి $p_n \subseteq p_{n+1}$ అయ్యే, $b_r$ అనేది
+    $p_{n+1}$ విలువల పరిధిలో ఉండే $p_{n+1}\in I$ను కనుగొనండి.
+  \end{enumerate}
+  \sourcecorrection{OLTEMODBAS-005}{వెనుకకు దశలో ఆంగ్ల మూలం $n+1=2r$ అని ఉంచి $b_r$ను ఎంచుకుంటుంది; మొదటి సరి దశలో దాంతో $b_1$ వస్తుంది, $b_0$ ఎప్పటికీ చేరదు. ముందుకు దశకు సమాంతరంగా $n=2r+1$గా సరిచేసి $b_0,b_1,\ldots$ అన్నీ చేరేలా చేశాం.}
+ఇప్పుడు
+\[
+p=\bigcup_{n\ge 0}p_n,
+\]
+అని ఉంచితే, $p$ అనేది $\Struct{M}$, $\Struct{N}$ల మధ్య ఒక
+సమరూపత అవుతుంది.
+\end{proof}
+
+\begin{prob}
+  \olref[mod][bas][pis]{thm:p-isom1}లో నిర్వచించిన $p$ నిజంగానే ఒక
+  సమరూపత అని వివరంగా చూపండి.
+\end{prob}
+
+\begin{thm}\ollabel{thm:p-isom2}
+  $\Struct{M}$, $\Struct{N}$ అనేవి శుద్ధ సంబంధాత్మక
+  \tetoken{భాష}{!!{language}}కు చెందిన \tetoken{నిర్మాణాలు}{!!{structure}s}
+  అనుకుందాం (అంటే \tetoken{విధేయ సంకేతాలు}{!!{predicate}s} మాత్రమే ఉండి,
+  \tetoken{ప్రమేయ సంకేతాలు}{!!{function}s}, స్థిరసంకేతాలు లేని
+  \tetoken{ఒక భాష}{!!a{language}}). అప్పుడు $\Struct{M} \iso[p] \Struct{N}$
+  అయితే, $\Struct{M} \elemequiv \Struct{N}$ కూడా.
+\end{thm}
+
+\begin{proof}
+  \tetoken{సూత్రాలపై}{!!{formula}s} ఆగమనంతో కింది విషయం చూపవచ్చు.
+  $a_1$, \dots, $a_n$, అలాగే $b_1$, \dots, $b_n$లకు, ప్రతి $a_i$ని
+  $b_i$కు పంపే పాక్షిక సమరూపత~$p$ ఉండి, $s_1(x_i)=a_i$,
+  $s_2(x_i)=b_i$ అయితే ($i=1$, \dots,~$n$), $\Sat{M}{!A}[s_1]$
+  అవుతుంది అప్పుడే $\Sat{N}{!A}[s_2]$. $n=0$ సందర్భం
+  $\Struct{M} \elemequiv \Struct{N}$ను ఇస్తుంది.
+\end{proof}
+
+\begin{rem}
+\tetoken{ప్రమేయ సంకేతాలు}{!!{function}s} ఉంటే, ముందరి ఫలితం ఇంకా సత్యమే.
+అయితే $a_1$, \dots, $a_n$లచే ఉత్పన్నమైన $\Struct{M}$ యొక్క
+ఉప\-\tetoken{నిర్మాణం}{!!{structure}}, $b_1$, \dots, $b_n$లచే ఉత్పన్నమైన
+$\Struct{N}$ యొక్క ఉప\-\tetoken{నిర్మాణం}{!!{structure}} మధ్య $p$ ప్రేరేపించే
+సమరూపతను పరిశీలించాలి.
+\end{rem}
+
+\tetoken{ఒక సూత్రం}{!!a{formula}}లో అంతఃస్థాపితమైన పరిమాణకాల సంఖ్యకు,
+సంబంధిత పాక్షిక సమరూపతలను ఎన్నిసార్లు విస్తరించగలమనే దానికి మధ్య
+సంబంధాన్ని ఏర్పరచి, ముందరి ఫలితాన్ని దశలుగా విభజించవచ్చు.
+
+\begin{defn}
+  ప్రతి \tetoken{సూత్రం}{!!{formula}}~$!A$కు, $!A$ యొక్క
+  \emph{పరిమాణక ర్యాంకు} $\QuantRank{!A}\in\Nat$ను, $!A$లో
+  అంతఃస్థాపితమైన పరిమాణకాల గరిష్ఠ
+  సంఖ్యగా పునరావృత్త పద్ధతిలో నిర్వచిస్తాం. రెండు
+  \tetoken{నిర్మాణాలు}{!!{structure}s} $\Struct{M}$, $\Struct{N}$ పరిమాణక
+  ర్యాంకు $n$కు తక్కువ లేదా సమానమైన అన్ని వాక్యాల విషయంలో
+  ఏకీభవిస్తే, వాటిని \emph{$n$-తుల్యాలు} అంటాం; దీనిని
+  $\Struct{M} \elemequiv[n] \Struct{N}$గా రాస్తాం.
+\end{defn}
+
+\begin{prop}\ollabel{prop:qr-finite}
+  $\Lang{L}$ ఒక పరిమిత \tetoken{భాష}{!!{language}} అనుకుందాం; అంటే, ఆ
+  \tetoken{భాషలో}{!!{language}} పరిమిత సంఖ్యలో
+  \tetoken{విధేయ సంకేతాలు}{!!{predicate}s},
+  \tetoken{స్థిరసంకేతాలు}{!!{constant}s} ఉండి,
+  \tetoken{ప్రమేయ సంకేతాలు}{!!{function}s} లేవు. ప్రతి $n\in\Nat$కు,
+  స్థిరమైన ప్రతి
+  పరిమిత చరాల జాబితా $x_1,\dots,x_k$కు, స్వేచ్ఛా చరాలన్నీ ఆ
+  జాబితాలోనే ఉండి పరిమాణక ర్యాంకు $n$కు మించని మొదటిస్థాయి
+  \tetoken{భాష}{!!{language}}~$\Lang{L}$లోని
+  \tetoken{సూత్రాలు}{!!{formula}s}, తార్కిక తుల్యత వరకు, పరిమిత సంఖ్యలోనే
+  ఉంటాయి. ముఖ్యంగా $k=0$ అయితే అటువంటి
+  \tetoken{వాక్యాలు}{!!{sentence}s} పరిమిత సంఖ్యలోనే ఉంటాయి.
+\end{prop}
+\sourcecorrection{OLTEMODBAS-006}{ఇక్కడ స్థిరసంకేతాలను అనుమతిస్తూనే ఆంగ్ల మూలం భాషను \texttt{purely relational} అంటుంది; ఈ అధ్యాయంలో ముందే ఇచ్చిన, స్థిరసంకేతాలు లేని నిర్వచనంతో ఘర్షణ రాకుండా, మూలం జాబితా చేసిన సంకేతవర్గాలనే తెలుగులో నేరుగా తెలిపాం.}
+\sourcecorrection{OLTEMODBAS-008}{తరువాతి నిరూపణకు స్థిరమైన స్వేచ్ఛా-చరాల జాబితాపై సూత్రాల పరిమిత తుల్యత-వర్గాలు అవసరం; కానీ ఆంగ్ల ప్రతిపాదన వాక్యాలను మాత్రమే పేర్కొంటుంది. ప్రామాణిక బలమైన రూపాన్ని స్పష్టం చేసి, $k=0$ సందర్భంలో మూల వాక్య-ఫలితాన్ని అలాగే ఉంచాం.}
+
+\begin{proof}
+  $n$పై ఆగమనంతో.
+\end{proof}
+
+\begin{defn}
+  \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct{M}$ ఇవ్వబడిందనుకుందాం.
+  $\Domain M^{<\omega}$ అనేది $\Domain{M}$పై అన్ని పరిమిత అనుక్రమాల
+  సమితి. మూలకాల పరిమిత అనుక్రమాలపై విస్తరించడానికి
+  $\mathbf{a},\mathbf{b},\mathbf{c},\ldots$ వాడతాం.
+  $\mathbf{a}\in\Domain{M}^{<\omega}$, $a\in\Domain{M}$ అయితే,
+  $\mathbf{a}a$ అనేది $\mathbf{a}$కు $a$ను చివర జోడించి పొందిన
+  \emph{అనుసంధానాన్ని} సూచిస్తుంది.
+\end{defn}
+
+\begin{defn}
+  \tetoken{నిర్మాణాలు}{!!{structure}s} $\Struct{M}$, $\Struct{N}$
+  ఇవ్వబడ్డాయనుకుందాం. సమానమైన $k$ పొడవు గల అనుక్రమాల మధ్య
+  $I_n\subseteq\Domain M^{<\omega}\times\Domain N^{<\omega}$ సంబంధాలను
+  $n$పై పునరావృత్త పద్ధతిలో కింది విధంగా నిర్వచిస్తాం:
+  \begin{enumerate}
+  \item $I_0(\mathbf{a},\mathbf{b})$ అవుతుంది అప్పుడే
+    $\mathbf{a}$, $\mathbf{b}$లు $\Struct{M}$, $\Struct{N}$లలో ఒకే
+    పరమాణు \tetoken{సూత్రాలను}{!!{formula}s} సంతృప్తిపరచినప్పుడు; అంటే,
+    $s_1(x_i)=a_i$, $s_2(x_i)=b_i$ కాగా, అన్ని
+    \tetoken{చరాలు}{!!{variable}s} $x_1$, \dots,~$x_k$లలోనే ఉన్న ప్రతి
+    పరమాణు $!A$కు $\Sat{M}{!A}[s_1]$ అవుతుంది అప్పుడే
+    $\Sat{N}{!A}[s_2]$;
+  \item $I_{n+1}(\mathbf{a},\mathbf{b})$ అవుతుంది అప్పుడే, ప్రతి
+    $a\in\Domain M$కు $I_n(\mathbf{a}a,\mathbf{b}b)$ అయ్యే
+    $b\in\Domain N$ ఉండి, తిరుగు దిశలోనూ అలాగే ఉన్నప్పుడు.
+  \end{enumerate}
+  \sourcecorrection{OLTEMODBAS-007}{ఆంగ్ల మూలం $I_n$లోని పునరావృత్త సూచిక $n$నే అనుక్రమపు పొడవుకూ వాడి, $I_0$ ఉపవాక్యంలో చరాలను $x_1,\dots,x_n$కు పరిమితం చేసింది. అనుక్రమపు స్వతంత్ర పొడవును $k$గా పేరుపెట్టి, చరాల జాబితాను $x_1,\dots,x_k$గా సరిచేశాం.}
+\end{defn}
+
+\begin{defn}
+  $\Struct{M}$, $\Struct{N}$లకు
+  $I_n(\emptyseq,\emptyseq)$ నెరవేరితే
+  $\Struct{M}\approx_n\Struct{N}$గా రాస్తాం (ఇక్కడ $\emptyseq$ ఖాళీ
+  అనుక్రమం).
+\end{defn}
+
+\begin{thm}\ollabel{thm:b-n-f}
+  $\Lang{L}$ ఒక శుద్ధ సంబంధాత్మక \tetoken{భాష}{!!{language}} అనుకుందాం.
+  అప్పుడు $I_n(\mathbf{a},\mathbf{b})$ అయితే,
+  $\QuantRank{!A}\le n$ అయ్యే ప్రతి $!A$కు
+  $\Sat{M}{!A}[\mathbf{a}]$ అవుతుంది అప్పుడే
+  $\Sat{N}{!A}[\mathbf{b}]$ (ఇక్కడ కూడా $\mathbf{a}$, $!A$ను
+  సంతృప్తిపరుస్తుందని అనడం అంటే, $s(x_i)=a_i$ అయ్యే ఏ
+  $s$ అయినా $!A$ను సంతృప్తిపరిచినప్పుడు అని అర్థం).
+  అంతేకాక, $\Lang{L}$ పరిమితమైతే
+  విపర్యయం కూడా సత్యమే.
+\end{thm}
+
+\begin{proof}
+  $I_n(\mathbf{a},\mathbf{b})$ అయితే $\mathbf{a}$, $\mathbf{b}$లు
+  పరిమాణక ర్యాంకు $n$కు మించని ఒకే
+  \tetoken{సూత్రాలను}{!!{formula}s} సంతృప్తిపరుస్తాయని $!A$పై సరళమైన
+  ఆగమనంతో వస్తుంది. విపర్యయానికి $n$పై ఆగమనాన్ని,
+  \olref{prop:qr-finite}ను ఉపయోగిస్తాం; స్థిరమైన స్వేచ్ఛా-చరాల
+  జాబితాతో ప్రతి $n$కు ఆ ర్యాంకు వరకు పరస్పరం తుల్యం కాని
+  \tetoken{సూత్రాలు}{!!{formula}s} పరిమిత సంఖ్యలోనే ఉంటాయని ఆ ప్రతిపాదన
+  హామీ ఇస్తుంది.
+
+  $n=0$కు, $\mathbf{a}$, $\mathbf{b}$లు పరిమాణకాలు లేని ఒకే
+  \tetoken{సూత్రాలను}{!!{formula}s} సంతృప్తిపరుస్తాయనే పరికల్పన వల్ల అవి
+  ఒకే పరమాణు సూత్రాలను సంతృప్తిపరుస్తాయి; కాబట్టి
+  $I_0(\mathbf{a},\mathbf{b})$.
+
+  $n+1$ సందర్భంలో, $\mathbf{a}$, $\mathbf{b}$లు పరిమాణక ర్యాంకు
+  $n+1$కు మించని ఒకే \tetoken{సూత్రాలను}{!!{formula}s}
+  సంతృప్తిపరుస్తాయనుకుందాం. $I_{n+1}(\mathbf{a},\mathbf{b})$ను
+  చూపడానికి, ప్రతి $a\in\Domain M$కు
+  $I_n(\mathbf{a}a,\mathbf{b}b)$ అయ్యే $b\in\Domain N$ ఉందని చూపితే
+  చాలు. ఆగమన పరికల్పన వల్ల, ప్రతి $a\in\Domain M$కు
+  $\mathbf{a}a$, $\mathbf{b}b$లు పరిమాణక ర్యాంకు $n$కు మించని ఒకే
+  \tetoken{సూత్రాలను}{!!{formula}s} సంతృప్తిపరిచే $b\in\Domain N$ ఉందని
+  చూపితే మళ్లీ చాలు.
+
+  $a\in\Domain M$ ఇవ్వబడిందనుకుందాం. $\Struct{M}$లో
+  $\mathbf{a}a$ సంతృప్తిపరిచే, ర్యాంకు $n$కు మించని
+  $!B(x,\mathbf{y})$ \tetoken{సూత్రాల}{!!{formula}s} తార్కిక తుల్యత-వర్గాల
+  ప్రతినిధులను తీసుకోండి. పై పరిమితతా ఫలితం వల్ల అవి పరిమిత
+  సంఖ్యలోనే ఉన్నాయి; వాటి సంయోగాన్ని ఒకే మొదటిస్థాయి
+  \tetoken{సూత్రం}{!!{formula}}~$!T^a_n(x,\mathbf{y})$గా తీసుకోవచ్చు.
+  అందువల్ల $\mathbf{a}$, పరిమాణక ర్యాంకు $n+1$కు మించని
+  $\lexists[x][!T^a_n(x,\mathbf{y})]$ను సంతృప్తిపరుస్తుంది.
+  పరికల్పన వల్ల $\Struct{N}$లో $\mathbf{b}$ కూడా అదే
+  \tetoken{సూత్రాన్ని}{!!{formula}} సంతృప్తిపరుస్తుంది. కాబట్టి
+  $\mathbf{b}b$ అనేది $!T^a_n$ను సంతృప్తిపరిచే $b\in\Domain N$ ఉంది;
+  ముఖ్యంగా $\mathbf{a}a$ సంతృప్తిపరిచే పరిమాణక ర్యాంకు $n$కు
+  మించని సూత్రాలనే $\mathbf{b}b$ కూడా సంతృప్తిపరుస్తుంది.
+  ఇదే వాదనను తిరుగు దిశలో ప్రయోగిస్తే, ప్రతి $b\in\Domain N$కు
+  $\mathbf{a}a$, $\mathbf{b}b$లు పరిమాణక ర్యాంకు $n$కు మించని ఒకే
+  \tetoken{సూత్రాలను}{!!{formula}s} సంతృప్తిపరిచే $a\in\Domain M$ ఉందని
+  వస్తుంది. దీనితో నిరూపణ పూర్తవుతుంది.
+\end{proof}
+
+\begin{cor}\ollabel{cor:b-n-f}
+  $\Struct{M}$, $\Struct{N}$లు ఒక పరిమిత \tetoken{భాషలోని}{!!{language}}
+  శుద్ధ సంబంధాత్మక \tetoken{నిర్మాణాలు}{!!{structure}s} అయితే,
+  $\Struct{M}\approx_n\Struct{N}$ అవుతుంది అప్పుడే
+  $\Struct{M}\elemequiv[n]\Struct{N}$. ముఖ్యంగా
+  $\Struct{M}\elemequiv\Struct{N}$ అవుతుంది అప్పుడే ప్రతి $n$కు
+  $\Struct{M}\approx_n\Struct{N}$.
+\end{cor}
+
+\end{document}

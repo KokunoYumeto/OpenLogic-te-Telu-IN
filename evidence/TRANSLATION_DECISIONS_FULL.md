@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **178 of 722 source units drafted**. This readable view contains all 162 decisions and 288 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **187 of 722 source units drafted**. This readable view contains all 175 decisions and 306 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -1526,6 +1526,88 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-TE-T054-OCC-001; OLP-0181; OLP-0181-B007; source upstream/content/first-order-logic/beyond/other-logics.tex:22-36 bytes 706-1636 SHA-256 025f94f3d087242ea1cf63543ab32c653ca6960c89ea7c321f9805a3b14f3350; target translation/content/first-order-logic/beyond/other-logics.tex:22-35 bytes 1519-3849 SHA-256 c23149d28ea7e16f54a275aef98a0dea81ef73fa28cc550ad90160ba6dfc0623; reader page pending.
+
+## te-Telu-IN-TE-T055 — model theory / reduct / expansion / substructure / extension / theory of a structure
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: నమూనా సిద్ధాంతం / సంకుచిత రూపం / విస్తరణ / ఉపనిర్మాణం / విస్తృత నిర్మాణం / నిర్మాణపు సిద్ధాంతం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “model theory / reduct / expansion / substructure / extension / theory of a structure” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low for broad set, function, first-order, domain, structure, model and theory register; medium to high nomenclatural uncertainty for reduct and extension labels
+
+- Rationale: TE-P008 and TE-P011--TE-P012 support subsets, functions and mappings; TE-P018, TE-P023, TE-P027, TE-P029--TE-P031 support formal logic, consequence, predicates, first-order language, the individuals domain and sentences; TE-P003--TE-P004 support proof and theorem exposition. The witnesses do not directly attest reducts or substructures. The signature-forgetting, interpretation-preservation and true-sentence definitions in OLP-0182--OLP-0188 control the exact senses, while the established నమూనా, నిర్మాణం and సిద్ధాంతం choices are reused. No unexplained English reader-facing lexical borrowing; the descriptive సంకుచిత రూపం is preferred to an unsupported transliteration of reduct
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P004 [checked_context_only], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C004:TE-P012 [checked_context_only], PDF page 319; printed page 312; Questions 37-38; Function-versus-relation explanatory register; do not copy source answers mechanically. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage.
+
+- Alternatives: leave reduct and substructure in English prose [rejected: rejected] | claim direct canon attestation for model-theoretic signature restriction [rejected: rejected]
+
+- Review question: Please double-check whether “నమూనా సిద్ధాంతం / సంకుచిత రూపం / విస్తరణ / ఉపనిర్మాణం / విస్తృత నిర్మాణం / నిర్మాణపు సిద్ధాంతం” is idiomatic and technically standard for “model theory / reduct / expansion / substructure / extension / theory of a structure” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T055-OCC-001; OLP-0184; OLP-0184-B006; source upstream/content/model-theory/basics/reducts-and-expansions.tex:24-39 bytes 926-1551 SHA-256 8ba69b70aa9f9ce0d2cdd1e468906bd1f2d06ab97e5dd448a9e062edc3822205; target translation/content/model-theory/basics/reducts-and-expansions.tex:24-41 bytes 1675-2840 SHA-256 49d310253c1c740d8b74aaa7a3716cee593d52805f885a52db3eac309033b9ba; reader page pending.
+  - te-Telu-IN-TE-T055-OCC-002; OLP-0185; OLP-0185-B006; source upstream/content/model-theory/basics/substructures.tex:19-37 bytes 578-1420 SHA-256 7e887827ad7a38da3e8c86043ea0cf6d94ddb1512241c44f4c4cdd3f3db61904; target translation/content/model-theory/basics/substructures.tex:20-40 bytes 1010-2475 SHA-256 ab25867451ef34e8582b7f0e65b12854d0aa917110be514954d86d2d6e463e11; reader page pending.
+
+## te-Telu-IN-TE-T056 — elementary equivalence / isomorphism / automorphism / partial isomorphism / back-and-forth property
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: మొదటిస్థాయి-వాక్య తుల్యత / సమరూపత / స్వసమరూపత / పాక్షిక సమరూపత / ముందుకు-వెనుకకు ధర్మం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “elementary equivalence / isomorphism / automorphism / partial isomorphism / back-and-forth property” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: Low structural uncertainty because the formulas fully define the relations; medium nomenclatural uncertainty for elementary equivalence and back-and-forth
+
+- Rationale: TE-P016 directly supports finite-set equivalence; TE-P011--TE-P012 and TE-P015 support functions, images, injectivity and surjectivity; TE-P018, TE-P023--TE-P024, TE-P027, TE-P029--TE-P031 support formal logic, consequence, derivation, predicates, first-order language, domains and sentences. None directly attests the model-theoretic distinction. The same-sentences definition, five structure-preservation clauses and finite extension conditions in OLP-0187--OLP-0190 fix the senses. The established సమరూపత choice from TE-T031 is retained. No English headword is left unexplained; మొదటిస్థాయి-వాక్య తుల్యత deliberately exposes the defining sentence criterion rather than importing elementary
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P004 [checked_context_only], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C004:TE-P012 [checked_context_only], PDF page 319; printed page 312; Questions 37-38; Function-versus-relation explanatory register; do not copy source answers mechanically. | TE-C004:TE-P015 [checked_context_only], PDF page 309; printed page 302; Main points 9-12; Concept-specific function-kind usage, not attestation of left/right inverse, partial function, seriality or Axiom of Choice. | TE-C004:TE-P016 [checked_context_only], PDF page 310; printed page 303; Questions 4-5 and answers on finite, infinite and equivalent sets; Direct finite/infinite and finite equinumerosity register. It does not establish countable infinity or the exact OpenLogic definition of enumeration; those remain controlled by the frozen source. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage.
+
+- Alternatives: import elementary as an unexplained English headword [rejected: rejected] | collapse elementary equivalence into isomorphism [rejected: rejected because the chapter distinguishes them]
+
+- Review question: Please double-check whether “మొదటిస్థాయి-వాక్య తుల్యత / సమరూపత / స్వసమరూపత / పాక్షిక సమరూపత / ముందుకు-వెనుకకు ధర్మం” is idiomatic and technically standard for “elementary equivalence / isomorphism / automorphism / partial isomorphism / back-and-forth property” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T056-OCC-001; OLP-0187; OLP-0187-B005; source upstream/content/model-theory/basics/isomorphism.tex:12-24 bytes 215-1102 SHA-256 bc20c7ae117da49ae395fe60f41be8baa408de9f1e0ccb78bb4356b40626861f; target translation/content/model-theory/basics/isomorphism.tex:12-24 bytes 240-2365 SHA-256 39d149e0e26ea0082848dda825a41f8d6fac73a7ae2a72d1516340b8ae8aec55; reader page pending.
+  - te-Telu-IN-TE-T056-OCC-002; OLP-0189; OLP-0189-B005; source upstream/content/model-theory/basics/partial-iso.tex:12-31 bytes 212-1211 SHA-256 ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d; target translation/content/model-theory/basics/partial-iso.tex:12-34 bytes 238-2083 SHA-256 a4a6deb43d9540768c1723d5b46b5c2525e270676a194c50233aabf8d9251500; reader page pending.
+
+## te-Telu-IN-TE-T057 — overspill / quantifier rank / n-equivalence / concatenation / dense linear order without endpoints
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: అధిప్రసరణ (ఓవర్‌స్పిల్) / పరిమాణక ర్యాంకు / n-తుల్యత / అనుసంధానం / అంత్యబిందువులు లేని సాంద్ర రేఖీయ క్రమం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “overspill / quantifier rank / n-equivalence / concatenation / dense linear order without endpoints” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low semantic uncertainty because each construction is explicitly defined; high nomenclatural uncertainty for overspill and quantifier-rank headwords
+
+- Rationale: TE-P008 and TE-P016 support sets, finite/infinite and equivalence register; TE-P018, TE-P023--TE-P024, TE-P027, TE-P029--TE-P031 support formal logic, consequence, derivation, predicates, first-order quantification, domains and sentences; TE-P003--TE-P004 and TE-P032 support proof, theorem, induction and deduction prose. They do not directly attest these advanced model-theoretic names. The compactness consequence, recursive nesting-depth definition, finite-sequence operation and six displayed order axioms in OLP-0186, OLP-0189 and OLP-0190 control the exact senses. ఓవర్‌స్పిల్ is an explicit parenthetical borrowing beside descriptive అధిప్రసరణ; ర్యాంకు is an explicit technical borrowing fixed by the adjacent nesting-depth definition
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P004 [checked_context_only], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P016 [checked_context_only], PDF page 310; printed page 303; Questions 4-5 and answers on finite, infinite and equivalent sets; Direct finite/infinite and finite equinumerosity register. It does not establish countable infinity or the exact OpenLogic definition of enumeration; those remain controlled by the frozen source. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: leave the full advanced taxonomy in English prose [rejected: rejected] | claim the checked witnesses directly attest overspill or quantifier rank [rejected: rejected]
+
+- Review question: Please double-check whether “అధిప్రసరణ (ఓవర్‌స్పిల్) / పరిమాణక ర్యాంకు / n-తుల్యత / అనుసంధానం / అంత్యబిందువులు లేని సాంద్ర రేఖీయ క్రమం” is idiomatic and technically standard for “overspill / quantifier rank / n-equivalence / concatenation / dense linear order without endpoints” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T057-OCC-001; OLP-0186; OLP-0186-B004; source upstream/content/model-theory/basics/overspill.tex:9-10 bytes 153-200 SHA-256 e45ee9f5556ac6d7e9c55c8be3d568a03a6cdbce8d1969d7c8b025bea058e99a; target translation/content/model-theory/basics/overspill.tex:9-10 bytes 153-254 SHA-256 079d4db45f95dbe3879abae4532c7e26347d57a7010414fb176560266e40e29f; reader page pending.
+  - te-Telu-IN-TE-T057-OCC-002; OLP-0189; OLP-0189-B015; source upstream/content/model-theory/basics/partial-iso.tex:113-120 bytes 4363-4776 SHA-256 ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d; target translation/content/model-theory/basics/partial-iso.tex:120-129 bytes 8469-9357 SHA-256 a4a6deb43d9540768c1723d5b46b5c2525e270676a194c50233aabf8d9251500; reader page pending.
+  - te-Telu-IN-TE-T057-OCC-003; OLP-0190; OLP-0190-B005; source upstream/content/model-theory/basics/dlo.tex:12-26 bytes 211-830 SHA-256 9c7bd2cbee65556d3edc1316632fa5714527901ee0aed70ee76e2c4db7c03531; target translation/content/model-theory/basics/dlo.tex:12-27 bytes 248-1154 SHA-256 155efdcc6472a9c6eeb30941ecaf447bee3b2fd96cc76fd718d4ecc9ebaf0af6; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -4341,3 +4423,264 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEFOLBYD-004-OCC-001; OLP-0178; OLP-0178-B008; source upstream/content/first-order-logic/beyond/higher-order-logic.tex:82-89 bytes 3827-4137 SHA-256 38ced5d3bad860479a37abcc7745229561d26bbfdbe77a5b2a1c6dece2a455b1; target translation/content/first-order-logic/beyond/higher-order-logic.tex:82-91 bytes 7321-8595 SHA-256 1c17e93ad9b17bdafbab64d044c4d9495cecc3669e31ba67ba3ef9d38f6a9974; reader page pending.
+
+## te-Telu-IN-OLTEMODBAS-001 — OLTEMODBAS-001: confirmed editorial wording typo
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: read is at planning to work as is planning to work; preserved the contributor name, issue reference and intent; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed editorial wording typo at lines 9-16, closing sentence of the part editorial, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODBAS-20260907:OLTEMODBAS-001 [checked_supports], content/model-theory/model-theory.tex; lines 9-16, closing sentence of the part editorial; confirmed_editorial_wording_typo; read is at planning to work as is planning to work; preserved the contributor name, issue reference and intent; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the Telugu editorial reads the defective phrase as “is planning to work” while preserving the contributor and issue reference.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODBAS-001-OCC-001; OLP-0182; OLP-0182-B005; source upstream/content/model-theory/model-theory.tex:9-16 bytes 125-588 SHA-256 b003b16803f9b40df8da5a6664ff8ee5198559f77e88616aea9911323b757abf; target translation/content/model-theory/model-theory.tex:9-17 bytes 156-1742 SHA-256 44991c8b58203235d6f312f78a0122962dbcccd06b0d74670d914b9569a4e393; reader page pending.
+
+## te-Telu-IN-OLTEMODBAS-002 — OLTEMODBAS-002: confirmed missing nonempty subdomain condition
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: added the nonempty-carrier condition required by the edition's structure definition; preserved the relation restriction; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing nonempty subdomain condition at lines 39-44, relation-only substructure remark, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODBAS-20260907:OLTEMODBAS-002 [checked_supports], content/model-theory/basics/substructures.tex; lines 39-44, relation-only substructure remark; confirmed_missing_nonempty_subdomain_condition; added the nonempty-carrier condition required by the edition's structure definition; preserved the relation restriction; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the relation-only substructure remark requires N to be non-empty, consistently with OpenLogic’s structure definition.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODBAS-002-OCC-001; OLP-0185; OLP-0185-B007; source upstream/content/model-theory/basics/substructures.tex:39-44 bytes 1421-1693 SHA-256 7e887827ad7a38da3e8c86043ea0cf6d94ddb1512241c44f4c4cdd3f3db61904; target translation/content/model-theory/basics/substructures.tex:42-50 bytes 2476-3593 SHA-256 ab25867451ef34e8582b7f0e65b12854d0aa917110be514954d86d2d6e463e11; reader page pending.
+
+## te-Telu-IN-OLTEMODBAS-003 — OLTEMODBAS-003: confirmed wrong structure in function term value
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: changed only the affected function interpretation from M to M-prime; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed wrong structure in function term value at lines 86-91, function-term induction case, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODBAS-20260907:OLTEMODBAS-003 [checked_supports], content/model-theory/basics/isomorphism.tex; lines 86-91, function-term induction case; confirmed_wrong_structure_in_function_term_value; changed only the affected function interpretation from M to M-prime; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the value of the function term in M-prime uses the interpretation of f in M-prime.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODBAS-003-OCC-001; OLP-0187; OLP-0187-B009; source upstream/content/model-theory/basics/isomorphism.tex:86-91 bytes 3508-3799 SHA-256 bc20c7ae117da49ae395fe60f41be8baa408de9f1e0ccb78bb4356b40626861f; target translation/content/model-theory/basics/isomorphism.tex:92-101 bytes 6203-6971 SHA-256 39d149e0e26ea0082848dda825a41f8d6fac73a7ae2a72d1516340b8ae8aec55; reader page pending.
+
+## te-Telu-IN-OLTEMODBAS-004 — OLTEMODBAS-004: confirmed missing closing parenthesis
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored one closing parenthesis for the outer h application; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing closing parenthesis at lines 94-101, first line of the function-term equality chain, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODBAS-20260907:OLTEMODBAS-004 [checked_supports], content/model-theory/basics/isomorphism.tex; lines 94-101, first line of the function-term equality chain; confirmed_missing_closing_parenthesis; restored one closing parenthesis for the outer h application; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the first function-term equality closes the outer h application with exactly one restored parenthesis.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODBAS-004-OCC-001; OLP-0187; OLP-0187-B009; source upstream/content/model-theory/basics/isomorphism.tex:94-101 bytes 3906-4267 SHA-256 bc20c7ae117da49ae395fe60f41be8baa408de9f1e0ccb78bb4356b40626861f; target translation/content/model-theory/basics/isomorphism.tex:103-114 bytes 7021-7925 SHA-256 39d149e0e26ea0082848dda825a41f8d6fac73a7ae2a72d1516340b8ae8aec55; reader page pending.
+
+## te-Telu-IN-OLTEMODBAS-005 — OLTEMODBAS-005: confirmed back and forth enumeration index error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: changed the even-branch parametrization to n=2r+1 so its range obligations begin at b_0; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed back and forth enumeration index error at lines 61-70, alternating construction of partial isomorphisms, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODBAS-20260907:OLTEMODBAS-005 [checked_supports], content/model-theory/basics/partial-iso.tex; lines 61-70, alternating construction of partial isomorphisms; confirmed_back_and_forth_enumeration_index_error; changed the even-branch parametrization to n=2r+1 so its range obligations begin at b_0; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the even back-and-forth stages now add b_0, b_1, and so on rather than skipping b_0.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODBAS-005-OCC-001; OLP-0189; OLP-0189-B009; source upstream/content/model-theory/basics/partial-iso.tex:61-70 bytes 2336-2863 SHA-256 ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d; target translation/content/model-theory/basics/partial-iso.tex:64-76 bytes 4019-5667 SHA-256 a4a6deb43d9540768c1723d5b46b5c2525e270676a194c50233aabf8d9251500; reader page pending.
+
+## te-Telu-IN-OLTEMODBAS-006 — OLTEMODBAS-006: confirmed inconsistent purely relational label
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: stated the source's signature inventory directly and omitted only its conflicting purely relational label; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed inconsistent purely relational label at lines 122-125, finite-language proposition, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODBAS-20260907:OLTEMODBAS-006 [checked_supports], content/model-theory/basics/partial-iso.tex; lines 122-125, finite-language proposition; confirmed_inconsistent_purely_relational_label; stated the source's signature inventory directly and omitted only its conflicting purely relational label; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the finite-signature proposition states its predicate, constant, and function inventory without contradicting the earlier purely-relational definition.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODBAS-006-OCC-001; OLP-0189; OLP-0189-B016; source upstream/content/model-theory/basics/partial-iso.tex:122-125 bytes 4777-5018 SHA-256 ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d; target translation/content/model-theory/basics/partial-iso.tex:130-146 bytes 9357-11840 SHA-256 a4a6deb43d9540768c1723d5b46b5c2525e270676a194c50233aabf8d9251500; reader page pending.
+
+## te-Telu-IN-OLTEMODBAS-007 — OLTEMODBAS-007: confirmed sequence length recursion index collision
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: named the common sequence length k and changed the atomic variable-list endpoint from n to k; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed sequence length recursion index collision at lines 143-153, base relation I_0, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODBAS-20260907:OLTEMODBAS-007 [checked_supports], content/model-theory/basics/partial-iso.tex; lines 143-153, base relation I_0; confirmed_sequence_length_recursion_index_collision; named the common sequence length k and changed the atomic variable-list endpoint from n to k; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that k is the sequence length while n remains the recursion and quantifier-rank index in I_n.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODBAS-007-OCC-001; OLP-0189; OLP-0189-B019; source upstream/content/model-theory/basics/partial-iso.tex:143-153 bytes 5628-6226 SHA-256 ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d; target translation/content/model-theory/basics/partial-iso.tex:163-179 bytes 12662-14609 SHA-256 a4a6deb43d9540768c1723d5b46b5c2525e270676a194c50233aabf8d9251500; reader page pending.
+
+## te-Telu-IN-OLTEMODBAS-008 — OLTEMODBAS-008: confirmed insufficient finite formula class lemma
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: stated the fixed-free-variable formula-class lemma, retained the sentence case at k=0, and used a finite conjunction of satisfied representatives in the proof; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed insufficient finite formula class lemma at lines 122-129 and 199-203, finite-rank proposition and its converse-proof use, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODBAS-20260907:OLTEMODBAS-008 [checked_supports], content/model-theory/basics/partial-iso.tex; lines 122-129 and 199-203, finite-rank proposition and its converse-proof use; confirmed_insufficient_finite_formula_class_lemma; stated the fixed-free-variable formula-class lemma, retained the sentence case at k=0, and used a finite conjunction of satisfied representatives in the proof; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the strengthened fixed-variable formula-class lemma is exactly what the finite conjunction T_n^a requires.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODBAS-008-OCC-001; OLP-0189; OLP-0189-B016; source upstream/content/model-theory/basics/partial-iso.tex:122-129 bytes 4777-5185 SHA-256 ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d; target translation/content/model-theory/basics/partial-iso.tex:131-146 bytes 9358-11840 SHA-256 a4a6deb43d9540768c1723d5b46b5c2525e270676a194c50233aabf8d9251500; reader page pending.
+  - te-Telu-IN-OLTEMODBAS-008-OCC-002; OLP-0189; OLP-0189-B025; source upstream/content/model-theory/basics/partial-iso.tex:199-203 bytes 8223-8544 SHA-256 ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d; target translation/content/model-theory/basics/partial-iso.tex:131-146 bytes 9358-11840 SHA-256 a4a6deb43d9540768c1723d5b46b5c2525e270676a194c50233aabf8d9251500; reader page pending.
+
+## te-Telu-IN-OLTEMODBAS-009 — OLTEMODBAS-009: confirmed incomplete forth case split
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: added the empty-map and already-mapped cases, then retained the source's three order-position cases for a new point; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed incomplete forth case split at lines 42-56, Forth-property construction, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODBAS-20260907:OLTEMODBAS-009 [checked_supports], content/model-theory/basics/dlo.tex; lines 42-56, Forth-property construction; confirmed_incomplete_forth_case_split; added the empty-map and already-mapped cases, then retained the source's three order-position cases for a new point; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the dense-order Forth proof now covers both the empty partial map and an already-mapped point before its three new-point cases.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODBAS-009-OCC-001; OLP-0190; OLP-0190-B008; source upstream/content/model-theory/basics/dlo.tex:42-56 bytes 1444-2230 SHA-256 9c7bd2cbee65556d3edc1316632fa5714527901ee0aed70ee76e2c4db7c03531; target translation/content/model-theory/basics/dlo.tex:42-65 bytes 2264-4959 SHA-256 155efdcc6472a9c6eeb30941ecaf447bee3b2fd96cc76fd718d4ecc9ebaf0af6; reader page pending.
+
+## te-Telu-IN-OLTEMODBAS-010 — OLTEMODBAS-010: confirmed missing parameter free definability scope
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restricted the invariant-subset exercise to definability without additional parameters; preserved its automorphism and set-image equation; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing parameter free definability scope at lines 124-128, automorphism exercise, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODBAS-20260907:OLTEMODBAS-010 [checked_supports], content/model-theory/basics/isomorphism.tex; lines 124-128, automorphism exercise; confirmed_missing_parameter_free_definability_scope; restricted the invariant-subset exercise to definability without additional parameters; preserved its automorphism and set-image equation; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the automorphism exercise is limited to parameter-free definability, so invariance under every automorphism is valid.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODBAS-010-OCC-001; OLP-0187; OLP-0187-B013; source upstream/content/model-theory/basics/isomorphism.tex:124-128 bytes 4946-5168 SHA-256 bc20c7ae117da49ae395fe60f41be8baa408de9f1e0ccb78bb4356b40626861f; target translation/content/model-theory/basics/isomorphism.tex:137-144 bytes 9178-10432 SHA-256 39d149e0e26ea0082848dda825a41f8d6fac73a7ae2a72d1516340b8ae8aec55; reader page pending.

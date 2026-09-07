@@ -1,0 +1,167 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTEMODBAS-20260907",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0182",
+      "OLP-0183",
+      "OLP-0184",
+      "OLP-0185",
+      "OLP-0186",
+      "OLP-0187",
+      "OLP-0188",
+      "OLP-0189",
+      "OLP-0190"
+    ],
+    "finding_count": 10
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEMODBAS-001",
+      "unit_id": "OLP-0182",
+      "classification": "confirmed_editorial_wording_typo",
+      "source": {
+        "path": "content/model-theory/model-theory.tex",
+        "bytes": 792,
+        "sha256": "b003b16803f9b40df8da5a6664ff8ee5198559f77e88616aea9911323b757abf",
+        "locator": "lines 9-16, closing sentence of the part editorial"
+      },
+      "finding": "The phrase `is at planning to work` is ungrammatical and interrupts an otherwise direct statement of a contributor's plan.",
+      "controlling_evidence": "Removing the stray `at` yields the grammatical construction `is planning to work` while preserving the named person, issue reference, and editorial intent.",
+      "required_translation_handling": "Translate the intended `is planning to work`, preserve issue 65, and add an adjacent OLTEMODBAS-001 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODBAS-002",
+      "unit_id": "OLP-0185",
+      "classification": "confirmed_missing_nonempty_subdomain_condition",
+      "source": {
+        "path": "content/model-theory/basics/substructures.tex",
+        "bytes": 1760,
+        "sha256": "7e887827ad7a38da3e8c86043ea0cf6d94ddb1512241c44f4c4cdd3f3db61904",
+        "locator": "lines 39-44, relation-only substructure remark"
+      },
+      "finding": "The remark says every subset N of the domain determines a substructure, including the empty subset.",
+      "controlling_evidence": "OpenLogic's structure definition requires a non-empty domain; the stated construction is therefore a structure only when N is non-empty.",
+      "required_translation_handling": "Add only the condition N not equal to the empty set, keep the relation restriction unchanged, and add an adjacent OLTEMODBAS-002 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODBAS-003",
+      "unit_id": "OLP-0187",
+      "classification": "confirmed_wrong_structure_in_function_term_value",
+      "source": {
+        "path": "content/model-theory/basics/isomorphism.tex",
+        "bytes": 5185,
+        "sha256": "bc20c7ae117da49ae395fe60f41be8baa408de9f1e0ccb78bb4356b40626861f",
+        "locator": "lines 86-91, function-term induction case"
+      },
+      "finding": "The value of t in M-prime is expanded using the interpretation of f in M rather than in M-prime.",
+      "controlling_evidence": "The left side is `\\Value{t}{M'}[h \\circ s]`, the argument values are all in M-prime, and the immediately following calculation correctly uses `\\Assign{f}{M'}`.",
+      "required_translation_handling": "Change only the affected interpretation superscript from M to M-prime and add an adjacent OLTEMODBAS-003 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODBAS-004",
+      "unit_id": "OLP-0187",
+      "classification": "confirmed_missing_closing_parenthesis",
+      "source": {
+        "path": "content/model-theory/basics/isomorphism.tex",
+        "bytes": 5185,
+        "sha256": "bc20c7ae117da49ae395fe60f41be8baa408de9f1e0ccb78bb4356b40626861f",
+        "locator": "lines 94-101, first line of the function-term equality chain"
+      },
+      "finding": "The first equality opens both h(...) and the interpretation application but closes only the inner application.",
+      "controlling_evidence": "The preceding claim applies h to the entire term value, and every following line is an equality for that same outer h-expression.",
+      "required_translation_handling": "Restore exactly one closing parenthesis before the alignment annotation and add an adjacent OLTEMODBAS-004 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODBAS-005",
+      "unit_id": "OLP-0189",
+      "classification": "confirmed_back_and_forth_enumeration_index_error",
+      "source": {
+        "path": "content/model-theory/basics/partial-iso.tex",
+        "bytes": 9479,
+        "sha256": "ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d",
+        "locator": "lines 61-70, alternating construction of partial isomorphisms"
+      },
+      "finding": "At an even stage the source writes n+1=2r and adds b_r. The first such stage is n+1=2, so the construction starts with b_1 and never forces b_0 into the range.",
+      "controlling_evidence": "Writing n=2r+1 for the even branch makes its successive choices b_0, b_1, and so on, parallel to the odd branch's a_0, a_1, and so on.",
+      "required_translation_handling": "Replace only the branch parametrization by n=2r+1, retain b_r, and add an adjacent OLTEMODBAS-005 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODBAS-006",
+      "unit_id": "OLP-0189",
+      "classification": "confirmed_inconsistent_purely_relational_label",
+      "source": {
+        "path": "content/model-theory/basics/partial-iso.tex",
+        "bytes": 9479,
+        "sha256": "ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d",
+        "locator": "lines 122-125, finite-language proposition"
+      },
+      "finding": "The proposition calls the language purely relational while explicitly allowing constants, contradicting this section's earlier definition of purely relational as having predicates only and no functions or constants.",
+      "controlling_evidence": "The proposition's mathematical content explicitly lists finitely many predicate and constant symbols and no function symbols; that inventory can be stated directly without the conflicting label.",
+      "required_translation_handling": "State the listed signature conditions directly, omit only the conflicting `purely relational` label here, and add an adjacent OLTEMODBAS-006 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODBAS-007",
+      "unit_id": "OLP-0189",
+      "classification": "confirmed_sequence_length_recursion_index_collision",
+      "source": {
+        "path": "content/model-theory/basics/partial-iso.tex",
+        "bytes": 9479,
+        "sha256": "ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d",
+        "locator": "lines 143-153, base relation I_0"
+      },
+      "finding": "The definition uses n both for the recursion level I_n and for the independently varying sequence length. In the I_0 clause this would restrict the displayed variable list to length zero.",
+      "controlling_evidence": "I_n is defined on all pairs of equal-length finite sequences; assigning their common length a separate name k makes the atomic variable list x_1 through x_k.",
+      "required_translation_handling": "Name the common sequence length k, change only the atomic variable-list endpoint from n to k, and add an adjacent OLTEMODBAS-007 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODBAS-008",
+      "unit_id": "OLP-0189",
+      "classification": "confirmed_insufficient_finite_formula_class_lemma",
+      "source": {
+        "path": "content/model-theory/basics/partial-iso.tex",
+        "bytes": 9479,
+        "sha256": "ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d",
+        "locator": "lines 122-129 and 199-203, finite-rank proposition and its converse-proof use"
+      },
+      "finding": "The proposition establishes finiteness only for sentences, but the converse proof invokes finiteness for formulas B(x,y-vector). It also calls the syntactic set T finite rather than finite up to logical equivalence.",
+      "controlling_evidence": "For a finite relational-and-constant signature, fixed quantifier rank, and fixed finite list of possible free variables, there are finitely many formula equivalence classes. Their satisfied representatives have a finite conjunction, which is the formula the proof needs.",
+      "required_translation_handling": "State the standard fixed-variable formula-class lemma with the sentence result as k=0, use a finite conjunction of satisfied representatives in the proof, and add an adjacent OLTEMODBAS-008 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODBAS-009",
+      "unit_id": "OLP-0190",
+      "classification": "confirmed_incomplete_forth_case_split",
+      "source": {
+        "path": "content/model-theory/basics/dlo.tex",
+        "bytes": 3509,
+        "sha256": "9c7bd2cbee65556d3edc1316632fa5714527901ee0aed70ee76e2c4db7c03531",
+        "locator": "lines 42-56, Forth-property construction"
+      },
+      "finding": "The three order-position cases presuppose a non-empty partial map and a new point a. They cover neither p empty nor a already in the domain of p.",
+      "controlling_evidence": "If p is empty, any singleton order-preserving map supplies the required extension; if a is already in its domain, q=p suffices. The source's three cases then cover every genuinely new point for non-empty p.",
+      "required_translation_handling": "Add those two preliminary cases, retain the source's three new-point position cases, and add an adjacent OLTEMODBAS-009 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODBAS-010",
+      "unit_id": "OLP-0187",
+      "classification": "confirmed_missing_parameter_free_definability_scope",
+      "source": {
+        "path": "content/model-theory/basics/isomorphism.tex",
+        "bytes": 5185,
+        "sha256": "bc20c7ae117da49ae395fe60f41be8baa408de9f1e0ccb78bb4356b40626861f",
+        "locator": "lines 124-128, automorphism exercise"
+      },
+      "finding": "The exercise claims every definable subset is fixed by every automorphism without restricting parameters. A set defined using a movable parameter need not be invariant under an automorphism that moves that parameter.",
+      "controlling_evidence": "A parameter-free defining formula is preserved by every automorphism. More generally a definition with parameters is preserved only by automorphisms fixing those parameters, but the exercise quantifies over an arbitrary automorphism.",
+      "required_translation_handling": "Restrict the exercise to a subset definable without additional parameters, retain the invariance equation, and add an adjacent OLTEMODBAS-010 disclosure."
+    }
+  ]
+}

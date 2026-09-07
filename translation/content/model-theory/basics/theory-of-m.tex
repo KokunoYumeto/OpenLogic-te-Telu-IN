@@ -1,0 +1,70 @@
+% Part: first-order-logic
+% Chapter: model-theory
+% Section: theory-of-m
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{thm}
+
+\section{\printtoken{S}{structure} యొక్క సిద్ధాంతం}
+
+ప్రతి \tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M}$ కొన్ని
+\tetoken{వాక్యాలను}{!!{sentence}s} సత్యం చేస్తుంది, మరికొన్నింటిని అసత్యం
+చేస్తుంది. అది సత్యం చేసే \tetoken{వాక్యాలన్నింటి}{!!{sentence}s} సమితిని దాని
+\emph{సిద్ధాంతం} అంటాం. ఆ సమితి నిజంగానే ఒక సిద్ధాంతం: దాని నుంచి
+ఫలితమయ్యేదేదైనా దాని అన్ని నమూనాల్లో, వాటిలో $\Struct{M}$లో కూడా,
+సత్యమై ఉండాలి.
+
+\begin{defn}
+  \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$ ఇవ్వబడిందనుకుందాం.
+  $\Struct{M}$లో సత్యమయ్యే \tetoken{వాక్యాల}{!!{sentence}s} సమితి
+  $\Theory{M}$ను $\Struct{M}$ యొక్క \emph{సిద్ధాంతం} అంటాం; అంటే,
+  $\Theory{M} = \Setabs{!A}{\Sat{M}{!A}}$.
+\end{defn}
+
+నిగమన పరంగా సంవృతమై ఉన్నా లేకపోయినా, ఉద్దేశించిన అర్థనిర్దేశం గల
+\tetoken{వాక్యాల}{!!{sentence}s} సమితులను సూచించడానికి “సిద్ధాంతం” అనే పదాన్ని
+అనౌపచారికంగానూ వాడతాం.
+
+\begin{prop}
+ప్రతి $\Struct{M}$కు $\Theory{M}$ సంపూర్ణమైనది.
+\end{prop}
+
+\begin{proof}
+ప్రతి \tetoken{వాక్యం}{!!{sentence}}~$!A$కు $\Sat{M}{!A}$ లేదా
+$\Sat{M}{\lnot !A}$ అవుతుంది. కాబట్టి $!A \in \Theory{M}$ లేదా
+$\lnot !A \in \Theory{M}$.
+\end{proof}
+
+\begin{prop}\ollabel{prop:equiv}
+  ప్రతి $!A \in \Theory{M}$కు $\Struct{N} \models !A$ అయితే,
+  $\Struct{M} \elemequiv \Struct{N}$.
+\end{prop}
+
+\begin{proof}
+ప్రతి $!A \in \Theory{M}$కు $\Sat{N}{!A}$ కాబట్టి,
+$\Theory{M} \subseteq \Theory{N}$. $\Sat{N}{!A}$ అయితే,
+$\Sat/{N}{\lnot !A}$; అందువల్ల $\lnot !A \notin \Theory{M}$.
+$\Theory{M}$ సంపూర్ణమైనది కాబట్టి $!A \in \Theory{M}$. కాబట్టి
+$\Theory{N} \subseteq \Theory{M}$; అందుచేత
+$\Struct{M} \elemequiv \Struct{N}$.
+\end{proof}
+
+\begin{rem}\ollabel{remark:R}
+  $\Struct{R} = \langle\Real, <\rangle$ను పరిశీలించండి. దీని
+  వ్యక్తి క్షేత్రం వాస్తవ సంఖ్యల సమితి $\Real$; వాస్తవ
+  సంఖ్యలపై $<$ సంబంధంగా అర్థనిర్దేశం చేసిన ఒకే ఒక్క ద్విస్థాన
+  \tetoken{విధేయ సంకేతం}{!!{predicate}} గల \tetoken{భాషలో}{!!{language}} ఇది ఒక
+  \tetoken{నిర్మాణం}{!!{structure}}. స్పష్టంగా $\Struct{R}$
+  \tetoken{లెక్కించలేనిది}{!!{nonenumerable}}. అయినా $\Theory{R}$ స్పష్టంగా
+  సుసంగతమైనది కాబట్టి, లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతం ప్రకారం దానికి
+  \tetoken{లెక్కించదగిన}{!!a{enumerable}} నమూనా $\Struct{S}$ ఉంది. అలాగే
+  \olref{prop:equiv} వల్ల $\Struct{R} \equiv \Struct{S}$. అంతేకాక,
+  $\Struct{R}$, $\Struct{S}$ సమరూపాలు కావు; అందువల్ల
+  \olref[iso]{thm:isom} యొక్క విపర్యయం సాధారణంగా విఫలమవుతుందని ఇది
+  చూపుతుంది.
+\end{rem}
+
+\end{document}
