@@ -1,0 +1,108 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: Structures
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{str}
+
+\olsection{మొదటిస్థాయి విధేయ భాషల కోసం \printtoken{P}{structure}}
+
+\begin{explain}
+మొదటిస్థాయి విధేయ భాషలకు వాటంతట వాటికి \emph{అర్థనిర్దేశం ఉండదు:}
+వాటిలోని \tetoken{స్థిరసంకేతాలు}{!!{constant}s}, \tetoken{ప్రమేయ సంకేతాలు}{!!{function}s}, \tetoken{విధేయ సంకేతాలు}{!!{predicate}s} నిర్దిష్టమైన
+అర్థం జోడించబడి ఉండదు. ఒక \article{structure} \emph{\tetoken{నిర్మాణం}{!!{structure}}}ను
+నిర్దేశించడం ద్వారా వాటికి అర్థాలు ఇస్తాం. అది \emph{వ్యక్తి క్షేత్రం}ను,
+అంటే \tetoken{స్థిరసంకేతాలు}{!!{constant}s} సూచించే, \tetoken{ప్రమేయ సంకేతాలు}{!!{function}s} పనిచేసే, పరిమాణకాలు
+పరిధి కలిగి ఉండే వస్తువులను నిర్దేశిస్తుంది. అదనంగా, ఏ \tetoken{స్థిరసంకేతాలు}{!!{constant}s}
+ఏ వస్తువులను సూచిస్తాయో, ఒక \tetoken{ప్రమేయ సంకేతం}{!!a{function}} వస్తువులను వస్తువులకు ఎలా
+పంపుతుందో, \tetoken{విధేయ సంకేతాలు}{!!{predicate}s} ఏ వస్తువులకు వర్తిస్తాయో అది నిర్దేశిస్తుంది.
+తర్కంలో పర్యవసానం, చెల్లుబాటుతనం, సంతృప్తిపరచదగినతనం వంటి
+\emph{అర్థపర} భావనలకు \tetoken{నిర్మాణాలు}{!!^{structure}s} ఆధారం. సాహిత్యంలో వీటిని
+``నిర్మాణాలు,'' ``అర్థనిర్దేశాలు,'' లేదా ``నమూనాలు'' అని వివిధంగా
+పిలుస్తారు.
+\end{explain}
+
+\begin{defn}[\tetoken{నిర్మాణాలు}{!!^{structure}s}]
+మొదటిస్థాయి విధేయ తర్క భాష~$\Lang{L}$కు ఒక \Article{structure}
+\emph{\tetoken{నిర్మాణం}{!!{structure}}}~$\Struct M$ కింది అంశాలతో కూడి ఉంటుంది:
+\begin{enumerate}
+\item \emph{వ్యక్తి క్షేత్రం:} ఖాళీ కాని సమితి, $\Domain M$
+\item \emph{\tetoken{స్థిరసంకేతాల}{!!{constant}s} అర్థనిర్దేశం:} $\Lang{L}$లోని ప్రతి
+  \tetoken{స్థిరసంకేతం}{!!{constant}}~$c$కు ఒక \tetoken{మూలకం}{!!a{element}} $\Assign{c}{M} \in \Domain M$
+\item \emph{\tetoken{విధేయ సంకేతాల}{!!{predicate}s} అర్థనిర్దేశం:} $\Lang{L}$లోని ప్రతి
+  $n$-స్థాన \tetoken{విధేయ సంకేతం}{!!{predicate}}~$R$కు ($\eq$ తప్ప), ఒక $n$-స్థాన సంబంధం
+  $\Assign{R}{M} \subseteq \Domain{M}^n$
+\item \emph{\tetoken{ప్రమేయ సంకేతాల}{!!{function}s} అర్థనిర్దేశం:} $\Lang{L}$లోని ప్రతి
+  $n$-స్థాన \tetoken{ప్రమేయ సంకేతం}{!!{function}}~$f$కు, ఒక $n$-స్థాన ప్రమేయం
+  $\Assign{f}{M} \colon \Domain{M}^n \to \Domain{M}$
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+అంకగణిత భాషకు ఒక \tetoken{నిర్మాణం}{!!^a{structure}}~$\Struct M$, ఒక సమితి, ఆ సమితి
+$\Domain M$లోని ఒక మూలకం $\Assign{\Obj 0}{M}$ (ఇది
+\tetoken{స్థిరసంకేతం}{!!{constant}}~$\Obj 0$ యొక్క అర్థనిర్దేశం), ఒక ఏకస్థాన ప్రమేయం
+$\Assign{\Obj \prime}{M} \colon \Domain{M} \to \Domain M$, రెండు
+ద్విస్థాన ప్రమేయాలు $\Assign{\Obj +}{M}$, $\Assign{\Obj
+  \times}{M}$ (రెండూ $\Domain M^2 \to \Domain M$), ఇంకా ఒక ద్విస్థాన
+సంబంధం $\Assign{\Obj <}{M} \subseteq \Domain{M}^2$తో కూడి ఉంటుంది.
+
+అటువంటి నిర్మాణానికి స్పష్టమైన ఉదాహరణ ఇది:
+\begin{enumerate}
+\item $\Domain N = \Nat$
+\item $\Assign{\Obj 0}{N} = 0$
+\item అన్ని $n \in \Nat$లకు $\Assign{\Obj \prime}{N}(n) = n + 1$
+\item అన్ని $n, m \in \Nat$లకు $\Assign{\Obj +}{N}(n, m) = n + m$
+\item అన్ని $n, m \in \Nat$లకు $\Assign{\Obj \times}{N}(n, m) = n\cdot m$
+\item $\Assign{\Obj <}{N} = \Setabs{\tuple{n, m}}{n \in \Nat, m \in
+  \Nat, n < m}$
+\end{enumerate}
+ఈ విధంగా నిర్వచించిన $\Lang L_A$ యొక్క నిర్మాణం~$\Struct N$ను
+\emph{అంకగణిత ప్రామాణిక నమూనా} అంటారు; ఎందుకంటే అది~$\Lang L_A$లోని
+తార్కికేతర స్థిరసంకేతాలకు మనం సహజంగా ఆశించే అర్థాన్నే ఇస్తుంది.
+
+అయితే~$\Lang L_A$కు మరెన్నో \tetoken{నిర్మాణాలు}{!!{structure}s} సాధ్యమే. ఉదాహరణకు,
+వ్యక్తి క్షేత్రంగా సహజ సంఖ్యల సమితి~$\Nat$కు బదులు పూర్ణాంకాల
+సమితి~$\Int$ను తీసుకొని, $\Obj 0$, $\Obj \prime$, $\Obj +$,
+$\Obj \times$, $\Obj <$లకు తగిన అర్థనిర్దేశాలు ఇవ్వవచ్చు. సంఖ్యలతో
+ఏమాత్రమూ సంబంధం లేని నిర్మాణాలను కూడా~$\Lang L_A$కు నిర్వచించవచ్చు.
+\end{ex}
+
+\begin{ex}
+సమితి సిద్ధాంత భాష~$\Lang L_Z$కు ఒక నిర్మాణం~$\Struct M$లో కేవలం
+ఒక సమితి, ఒక్క ద్విస్థాన సంబంధం అవసరం.\sourcecorrection{OLTEFOLSEM-001}{మూలంలోని ``single-two place relation''ను సందర్భానుసారంగా ``single two-place relation''గా చదివాం.} అందువల్ల సాంకేతికంగా,
+ఉదాహరణకు మనుషుల సమితితో పాటు ``$x$, ~$y$ కంటే పెద్దవయస్కుడు'' అనే
+సంబంధాన్ని, లేదా $n, m \in \Nat$లకు $n \ge m$ అనే సంబంధంతో పాటు
+$\Nat$ను, $\Lang L_Z$కు ఒక \tetoken{నిర్మాణంగా}{!!a{structure}} ఉపయోగించవచ్చు.
+
+$\Lang L_Z$కు ప్రత్యేకంగా ఆసక్తికరమైన \tetoken{నిర్మాణంలో}{!!{structure}}
+వ్యక్తి క్షేత్రంలోని \tetoken{మూలకాలు}{!!{element}s} నిజంగానే సమితులు; $\Obj \in$ యొక్క
+అర్థనిర్దేశం నిజంగానే ``$x$, ~$y$లోని ఒక \tetoken{మూలకం}{!!a{element}}'' అనే సంబంధం.
+అది \emph{వంశపారంపర్యంగా పరిమిత సమితుల} \tetoken{నిర్మాణం}{!!{structure}}~$\Struct{{HF}}$:
+\begin{enumerate}
+\item $\Domain{{{HF}}} = \emptyset \cup \Pow{\emptyset} \cup
+  \Pow{\Pow{\emptyset}} \cup \Pow{\Pow{\Pow{\emptyset}}} \cup \dots$;
+\item $\Assign{\Obj \in}{{{HF}}} = \Setabs{\tuple{x, y}}{x, y \in
+  \Domain{{{HF}}}, x \in y}$.
+\end{enumerate}
+\end{ex}
+
+\begin{digress}
+ఏది ఒక \tetoken{నిర్మాణంగా}{!!a{structure}} పరిగణించబడుతుందో మనం చేసే నిర్దేశాలు మన
+తర్కంపై ప్రభావం చూపుతాయి. ఉదాహరణకు, ఖాళీ వ్యక్తి క్షేత్రాలను అనుమతించకపోవడం
+వల్ల, పరిమాణీకృత వాక్యాల సంతృప్తి (లేదా సత్యం) గురించి సాధారణంగా
+ఇచ్చే వివరణ ప్రకారం, $\lexists[x][(!A(x) \lor \lnot !A(x))]$
+చెల్లుబాటు అవుతుంది---అంటే అది ఒక తార్కిక సత్యం. అంతేకాక, అన్ని
+\tetoken{స్థిరసంకేతాలు}{!!{constant}s} తప్పనిసరిగా వ్యక్తి క్షేత్రంలోని ఒక వస్తువును సూచించాలనే
+నిబంధన వల్ల, అస్తిత్వ సాధారణీకరణ ఒక నిర్దుష్ట నిగమన నమూనా అవుతుంది:
+$!A(a)$, కాబట్టి $\lexists[x][!A(x)]$. పేర్లు వ్యక్తి క్షేత్రం బయటివాటిని
+సూచించడానికి లేదా దేనినీ సూచించకపోవడానికి అనుమతిస్తే, మనం
+\emph{స్వేచ్ఛా తర్కం} వైపు వెళ్తాం. అందులో అస్తిత్వ సాధారణీకరణకు ఒక
+అదనపు పూర్వాధారం అవసరం: $!A(a)$ మరియు $\lexists[x][\eq[x][a]]$,
+కాబట్టి $\lexists[x][!A(x)]$.
+\end{digress}
+
+\end{document}

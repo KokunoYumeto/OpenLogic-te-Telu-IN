@@ -1,0 +1,73 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTEFOLSAT-20260907",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": ["OLP-0163"],
+    "finding_count": 4
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEFOLSAT-001",
+      "unit_id": "OLP-0163",
+      "classification": "confirmed_relation_interpretation_assignment_suffix_typo",
+      "source": {
+        "path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+        "bytes": 16899,
+        "sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+        "locator": "line 213, atomic-formula counterexample"
+      },
+      "finding": "The non-membership assertion appends [s] to the interpreted relation itself, even though variable assignments parameterize term values and satisfaction, not the structure's relation interpretation.",
+      "controlling_evidence": "The satisfaction definition at lines 114--116 tests the tuple against \\Assign{R}{M}; the immediately preceding positive example does the same.",
+      "required_translation_handling": "Remove only the stray [s] after \\Assign{R}{M}, retain the satisfaction assignment [s], and add an adjacent OLTEFOLSAT-001 disclosure."
+    },
+    {
+      "finding_id": "OLTEFOLSAT-002",
+      "unit_id": "OLP-0163",
+      "classification": "confirmed_antecedent_predicate_orientation_error",
+      "source": {
+        "path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+        "bytes": 16899,
+        "sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+        "locator": "lines 307--313, defAll-tagged universal example"
+      },
+      "finding": "For m = 2, 3, and 4, the text says R(a,x) is false while using that assertion to make the antecedent of R(x,a) -> R(a,x) false.",
+      "controlling_evidence": "Under the displayed relation, R(a,x) is actually true at m = 2; R(x,a) is the antecedent and is false at m = 2, 3, and 4, matching the parallel prvAll derivation at lines 267--269.",
+      "required_translation_handling": "Replace only R(a,x) with R(x,a) in the stated false antecedent and add an adjacent OLTEFOLSAT-002 disclosure."
+    },
+    {
+      "finding_id": "OLTEFOLSAT-003",
+      "unit_id": "OLP-0163",
+      "classification": "confirmed_missing_variable_in_case_value",
+      "source": {
+        "path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+        "bytes": 16899,
+        "sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+        "locator": "lines 328--332, outer universal example"
+      },
+      "finding": "The second interesting case is printed as '$ = 2$' with its variable missing.",
+      "controlling_evidence": "The first case is m = 1, the outer x-variant is parameterized by m throughout, and the following paragraph explicitly evaluates the m = 2 assignment.",
+      "required_translation_handling": "Restore m so the case reads m = 2 and add an adjacent OLTEFOLSAT-003 disclosure."
+    },
+    {
+      "finding_id": "OLTEFOLSAT-004",
+      "unit_id": "OLP-0163",
+      "classification": "confirmed_outer_quantifier_variable_mismatch",
+      "source": {
+        "path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+        "bytes": 16899,
+        "sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+        "locator": "lines 347--351, summary of the nested-quantifier example"
+      },
+      "finding": "The summary begins 'for all n' but immediately splits cases by m and quantifies the outer x-assignment; n was the inner y witness used only in the preceding calculation.",
+      "controlling_evidence": "Both disjuncts in the summary use \\Subst{s}{m}{x}, and the conclusion is universally quantified over x, so the summarizing variable must be m.",
+      "required_translation_handling": "Replace only n with m in the universal summary and add an adjacent OLTEFOLSAT-004 disclosure."
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: Semantic Notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{sem}
+\olsection{అర్థపర భావనలు}
+
+\begin{explain}
+మొదటిస్థాయి విధేయ భాషల కోసం \tetoken{నిర్మాణాలు}{!!{structure}s} నిర్వచనం ఇచ్చిన తరువాత,
+వాక్యాలకు సంబంధించిన కొన్ని మౌలిక అర్థపర ధర్మాలను, వాటి మధ్య
+సంబంధాలను నిర్వచించవచ్చు. వీటిలో అత్యంత సరళమైనది ఒక వాక్యం యొక్క
+\emph{చెల్లుబాటుతనం}. ఒక వాక్యం ప్రతి \tetoken{నిర్మాణంలో}{!!{structure}}
+సంతృప్తమైతే అది చెల్లుబాటు అవుతుంది. చెల్లుబాటయ్యే వాక్యాల్లోని
+తార్కికేతర సంకేతాలను ఎలా అర్థనిర్దేశం చేసినా అవి సంతృప్తమవుతాయి.
+అందుకే చెల్లుబాటయ్యే వాక్యాలను \emph{తార్కిక సత్యాలు} అని కూడా
+అంటారు---అవి ఏ \tetoken{నిర్మాణంలోనైనా}{!!{structure}} సత్యం, అంటే సంతృప్తమవుతాయి. కాబట్టి
+వాటి సత్యం వాటిలో కనిపించే తార్కిక సంకేతాలపై, వాటి వాక్యనిర్మాణ
+\tetoken{నిర్మాణంపై}{!!{structure}} మాత్రమే ఆధారపడుతుంది; తార్కికేతర సంకేతాలపై లేదా వాటి
+అర్థనిర్దేశంపై ఆధారపడదు.
+\end{explain}
+
+\begin{defn}[చెల్లుబాటుతనం]
+ఒక వాక్యం~$!A$ \emph{చెల్లుబాటు అవుతుంది}, $\Entails !A$, అప్పుడే,
+అప్పుడు మాత్రమే ప్రతి \tetoken{నిర్మాణం}{!!{structure}}~$\Struct M$కు $\Sat{M}{!A}$.
+\end{defn}
+
+\begin{defn}[అర్థపర అనుగమనం]
+వాక్యాల సమితి~$\Gamma$ నుంచి వాక్యం~$!A$ \emph{అర్థపరంగా
+అనుగమిస్తుంది}, $\Gamma \Entails !A$, అప్పుడే, అప్పుడు మాత్రమే
+$\Sat{M}{\Gamma}$ అయ్యే ప్రతి \tetoken{నిర్మాణం}{!!{structure}}~$\Struct M$కు
+$\Sat{M}{!A}$.
+\end{defn}
+
+
+\begin{defn}[సంతృప్తిపరచదగినతనం]
+ఏదో ఒక \tetoken{నిర్మాణం}{!!{structure}}~$\Struct M$కు $\Sat{M}{\Gamma}$ అయితే, వాక్యాల
+సమితి~$\Gamma$ \emph{సంతృప్తిపరచదగినది}. $\Gamma$
+సంతృప్తిపరచదగినది కాకపోతే దాన్ని \emph{సంతృప్తిపరచదగనిది} అంటాం.
+\end{defn}
+
+\begin{prop}
+వాక్యం~$!A$ చెల్లుబాటు అవుతుంది అప్పుడే, అప్పుడు మాత్రమే ప్రతి
+వాక్యాల సమితి~$\Gamma$కు $\Gamma \Entails !A$.
+\end{prop}
+
+\begin{proof}
+ముందుకు దిశ కోసం, $!A$ చెల్లుబాటు అవుతుందనీ, $\Gamma$ ఒక వాక్యాల
+సమితి అనీ అనుకుందాం. $\Sat{M}{\Gamma}$ అయ్యే
+\tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$ను తీసుకుందాం. $!A$ చెల్లుబాటు అవుతుంది
+కాబట్టి $\Sat{M}{!A}$; అందువల్ల $\Gamma \Entails !A$.
+
+వెనుకకు దిశ యొక్క ప్రతివ్యత్యాసం కోసం, $!A$ చెల్లుబాటు కాదని
+అనుకుందాం. అప్పుడు $\Sat/{M}{!A}$ అయ్యే \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$
+ఉంటుంది. $\Gamma = \{ \ltrue \}$ అయినప్పుడు, $\ltrue$ చెల్లుబాటు
+అవుతుంది కాబట్టి $\Sat{M}{\Gamma}$. అందువల్ల $\Sat{M}{\Gamma}$ కానీ
+$\Sat/{M}{!A}$ అయ్యే \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$ ఉంది; కనుక
+$\Gamma$ నుంచి $!A$ అనుగమించదు.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:entails-unsat}
+$\Gamma \Entails !A$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే
+$\Gamma \cup \{\lnot !A\}$ సంతృప్తిపరచదగనిది.
+\end{prop}
+
+\begin{proof}
+ముందుకు దిశ కోసం, $\Gamma \Entails !A$ అనుకుందాం; దీనికి విరుద్ధంగా,
+$\Sat{M}{\Gamma \cup \{ \lnot !A \}}$ అయ్యే
+\tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$ ఉందని అనుకుందాం. $\Sat{M}{\Gamma}$, అలాగే
+$\Gamma \Entails !A$ కాబట్టి $\Sat{M}{!A}$. అంతేకాక,
+$\Sat{M}{\Gamma\cup \{ \lnot !A \}}$ కాబట్టి
+$\Sat{M}{\lnot !A}$; అందువల్ల $\Sat{M}{!A}$, ~$\Sat/{M}{!A}$ రెండూ
+లభిస్తాయి---ఇది వైరుధ్యం. కాబట్టి అలాంటి \tetoken{నిర్మాణం}{!!{structure}}~$\Struct M$
+ఉండదు; అందువల్ల $\Gamma \cup \{ \lnot !A \}$
+సంతృప్తిపరచదగనిది.
+
+వెనుకకు దిశ కోసం, $\Gamma \cup \{ \lnot !A \}$
+సంతృప్తిపరచదగనిది అనుకుందాం. కాబట్టి ప్రతి
+\tetoken{నిర్మాణం}{!!{structure}}~$\Struct M$కు $\Sat/{M}{\Gamma}$ లేదా $\Sat{M}{!A}$.
+అందువల్ల $\Sat{M}{\Gamma}$ అయ్యే ప్రతి \tetoken{నిర్మాణం}{!!{structure}}~$\Struct M$కు
+$\Sat{M}{!A}$; కనుక $\Gamma \Entails !A$.
+\end{proof}
+
+\begin{prob}
+\begin{enumerate}
+\item $\Gamma \Entails \bot$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే
+  $\Gamma$ సంతృప్తిపరచదగనిదని చూపండి.
+\item $\Gamma \cup \{!A\} \Entails \bot$ అవుతుంది అప్పుడే, అప్పుడు
+  మాత్రమే $\Gamma \Entails \lnot !A$ అని చూపండి.
+\item $c$ అనేది $!A$లో గానీ $\Gamma$లో గానీ కనిపించదని అనుకుందాం.
+  అప్పుడు $\Gamma \Entails \lforall[x][!A]$ అవుతుంది అప్పుడే, అప్పుడు
+  మాత్రమే $\Gamma \Entails \Subst{!A}{c}{x}$ అని చూపండి.
+\end{enumerate}
+\end{prob}
+
+\begin{prop}
+$\Gamma \subseteq \Gamma'$, అలాగే $\Gamma \Entails !A$ అయితే,
+$\Gamma' \Entails !A$.
+\end{prop}
+
+\begin{proof}
+$\Gamma \subseteq \Gamma'$, అలాగే $\Gamma \Entails !A$ అని
+అనుకుందాం. $\Sat{M}{\Gamma'}$ అయ్యే నిర్మాణం~$\Struct M$ను
+తీసుకుందాం; అప్పుడు $\Sat{M}{\Gamma}$; $\Gamma \Entails !A$ కాబట్టి
+$\Sat{M}{!A}$. అందువల్ల $\Sat{M}{\Gamma'}$ అయినప్పుడల్లా
+$\Sat{M}{!A}$; కనుక $\Gamma' \Entails !A$.
+\end{proof}
+
+
+\begin{thm}[అర్థపర నిగమన సిద్ధాంతం]
+\ollabel{thm:sem-deduction}
+$\Gamma \cup \{!A\} \Entails !B$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే
+$\Gamma \Entails !A \lif !B$.
+\end{thm}
+
+\begin{proof}
+ముందుకు దిశ కోసం, $\Gamma \cup \{ !A \} \Entails !B$ అనీ,
+$\Sat{M}{\Gamma}$ అయ్యే \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$ అనీ అనుకుందాం.
+$\Sat{M}{!A}$ అయితే $\Sat{M}{\Gamma \cup \{ !A \} }$; కాబట్టి
+$\Gamma \cup \{ !A \}$ నుంచి $!B$ అనుగమిస్తుంది కనుక
+$\Sat{M}{!B}$. అందువల్ల $\Sat{M}{!A \lif !B}$; కనుక
+$\Gamma \Entails !A \lif !B$.
+
+వెనుకకు దిశ కోసం, $\Gamma \Entails !A \lif !B$ అనీ,
+$\Sat{M}{\Gamma \cup \{ !A \}}$ అయ్యే \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$
+అనీ అనుకుందాం. అప్పుడు $\Sat{M}{\Gamma}$; కాబట్టి
+$\Sat{M}{!A \lif !B}$; అలాగే $\Sat{M}{!A}$ కాబట్టి $\Sat{M}{!B}$.
+అందువల్ల $\Sat{M}{\Gamma \cup \{ !A \} }$ అయినప్పుడల్లా
+$\Sat{M}{!B}$; కనుక $\Gamma \cup \{ !A \} \Entails !B$.
+\end{proof}
+
+\begin{prop}\ollabel{prop:quant-terms}
+  $\Struct{M}$ ఒక \tetoken{నిర్మాణం}{!!a{structure}}, ~$!A(x)$ ఒక స్వేచ్ఛా చరం~$x$ గల
+  \tetoken{ఒక సూత్రం}{!!a{formula}}, ~$t$ ఒక సంవృత పదం అనుకుందాం. అప్పుడు:
+  \begin{tagenumerate}{prvEx,prvAll}
+    \tagitem{prvEx}{$!A(t) \Entails \lexists[x][!A(x)]$}{}
+    \tagitem{prvAll}{$\lforall[x][!A(x)] \Entails !A(t)$}{}
+  \end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{tagenumerate}{prvEx,prvAll}
+    \tagitem{prvEx}{%
+      \iftag{probEx}{వ్యాయామం.}{$\Sat{M}{!A(t)}$ అనుకుందాం.
+        $s(x) = \Value{t}{M}$ అయ్యే ఒక చర నిర్దేశం~$s$ను తీసుకుందాం.
+        $!A(t)$ ఒక \tetoken{వాక్యం}{!!a{sentence}} కాబట్టి $\Sat{M}{!A(t)}[s]$.
+        \olref[ext]{prop:ext-formulas} ప్రకారం
+        $\Sat{M}{!A(x)}[s]$. \olref[ass]{prop:sat-quant} ప్రకారం,
+        $\Sat{M}{\lexists[x][!A(x)]}$.}}{}
+    \tagitem{prvAll}{%
+      \iftag{probAll}{వ్యాయామం.}{
+        $\Sat{M}{\lforall[x][!A(x)]}$ అనుకుందాం.
+        $s(x) = \Value{t}{M}$ అయ్యే ఒక చర నిర్దేశం~$s$ను తీసుకుందాం.
+        \olref[ass]{prop:sat-quant} ప్రకారం $\Sat{M}{!A(x)}[s]$.
+        \olref[ext]{prop:ext-formulas} ప్రకారం $\Sat{M}{!A(t)}[s]$.
+        $!A(t)$ ఒక \tetoken{వాక్యం}{!!a{sentence}} కాబట్టి
+        \olref[ass]{prop:sentence-sat-true} ప్రకారం
+        $\Sat{M}{!A(t)}$.}}{}
+  \end{tagenumerate}
+\end{proof}
+
+\begin{probtag}{probEx,probAll}
+  \olref[fol][syn][sem]{prop:quant-terms} యొక్క నిరూపణను పూర్తి చేయండి.
+\end{probtag}
+
+\end{document}

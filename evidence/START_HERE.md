@@ -1,6 +1,6 @@
 # Start here: Telugu translation decisions
 
-Status: **partial — 145 of 722 source units drafted**. The canonical register currently contains **129 decisions** (42 terminology/sense decisions and 87 source-correction decisions) with **239 concrete occurrences**.
+Status: **partial — 163 of 722 source units drafted**. The canonical register currently contains **149 decisions** (46 terminology/sense decisions and 103 source-correction decisions) with **268 concrete occurrences**.
 
 Use these views:
 

@@ -62,6 +62,7 @@ for (let order = first; order <= last; order += 1) {
       target_end_line: targetBlocks[i].endLine,
       source_segment_sha256: sha(sourceBlocks[i].block),
       translation_segment_sha256: sha(targetBlocks[i].block),
+      source_corrections: [...targetBlocks[i].block.matchAll(/\\sourcecorrection\{([^{}]+)\}/gu)].map(match => match[1]),
     };
     const nextLine = JSON.stringify(refreshed);
     if (nextLine !== originalLines[recordIndex]) changed.push({ oldLine: originalLines[recordIndex], nextLine });

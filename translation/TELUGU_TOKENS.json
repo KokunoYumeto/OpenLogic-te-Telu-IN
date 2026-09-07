@@ -2,11 +2,12 @@
   "schema": "openlogic-te-token-realization/1",
   "locale": "te-Telu-IN",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
-  "contract": "The English strings inside !! token markup are stable OpenLogic configuration keys, not reader-visible English. Every occurrence in the current translated scope is wrapped as \\tetoken{Telugu surface}{original key}; renderers emit only the first argument and retain the second for exact source-token identity checks.",
+  "contract": "The English strings inside !! token markup are stable OpenLogic configuration keys, not reader-visible English. Every occurrence in the current translated scope is wrapped as \\tetoken{Telugu surface}{original key}; renderers emit only the first argument and retain the second for exact source-token identity checks. The mapping now covers the 42 keys used through OLP-0158.",
   "article": "ఒక",
   "tokens": {
     "language": {"singular": "భాష", "plural": "భాషలు", "kind": "a_noun", "canon_passages": ["TE-P018"], "evidence": "definition-controlled academic register"},
     "formula": {"singular": "సూత్రం", "plural": "సూత్రాలు", "kind": "am_noun", "canon_passages": ["TE-P024"], "evidence": "formal-logic witness plus definition control"},
+    "subformula": {"singular": "ఉపసూత్రం", "plural": "ఉపసూత్రాలు", "kind": "am_noun", "canon_passages": ["TE-P024", "TE-P027"], "evidence": "transparent formal-logic compound; subformula relation is fixed by the chapter definitions"},
     "sentence": {"singular": "వాక్యం", "plural": "వాక్యాలు", "kind": "am_noun", "canon_passages": ["TE-P031"], "evidence": "formal-logic witness plus closed-formula definition"},
     "variable": {"singular": "చరం", "plural": "చరాలు", "kind": "am_noun", "canon_passages": ["TE-P027", "TE-P029"], "evidence": "directly attested formal-logic terminology"},
     "propositional variable": {"singular": "ప్రతిజ్ఞావాక్య చరం", "plural": "ప్రతిజ్ఞావాక్య చరాలు", "kind": "am_noun", "canon_passages": ["TE-P018", "TE-P027"], "evidence": "directly attested components; OpenLogic definition controls the compound"},

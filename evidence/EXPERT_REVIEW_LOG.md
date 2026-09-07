@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 145 of 722 draft units**. This log contains 42 terminology/sense decisions and 87 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 163 of 722 draft units**. This log contains 46 terminology/sense decisions and 103 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1015,6 +1015,102 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low mechanical identity and reader visibility; term-specific uncertainty remains in the mapped evidence fields
 
 - Please double-check: Please double-check whether “41-key Telugu reader-surface mapping in translation/TELUGU_TOKENS.json” is idiomatic and technically standard for “OpenLogic !! configuration token realization in OLP-0004--OLP-0148” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T043 — First-order syntax register: term, string, formation sequence, syntactic identity, unique readability, main operator, subformula, scope, free/bound variable, sentence and substitution
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: పదం / సంకేతమాల / నిర్మాణ క్రమం / వాక్యనిర్మాణ తాదాత్మ్యం / ఏకార్థ పఠనీయత / ప్రధాన సంయోజకం / ఉపసూత్రం / పరిధి / స్వేచ్ఛా-బద్ధ చరం / వాక్యం / ప్రతిస్థాపన
+
+- Exact implementation: OLP-0150; first-order-logic/syntax-and-semantics/intro-syntax; content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31 ↔ translation/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31 (OLP-0150-B006); printed/PDF page pending; OLP-0151; first-order-logic/syntax-and-semantics/first-order-languages; content/first-order-logic/syntax-and-semantics/first-order-languages.tex:14-19 ↔ translation/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:14-19 (OLP-0151-B006); printed/PDF page pending; OLP-0152; first-order-logic/syntax-and-semantics/terms-formulas; content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15 ↔ translation/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15 (OLP-0152-B006); printed/PDF page pending; OLP-0153; first-order-logic/syntax-and-semantics/unique-readability; content/first-order-logic/syntax-and-semantics/unique-readability.tex:13-21 ↔ translation/content/first-order-logic/syntax-and-semantics/unique-readability.tex:13-21 (OLP-0153-B006); printed/PDF page pending; OLP-0154; first-order-logic/syntax-and-semantics/main-operator; content/first-order-logic/syntax-and-semantics/main-operator.tex:13-19 ↔ translation/content/first-order-logic/syntax-and-semantics/main-operator.tex:13-19 (OLP-0154-B006); printed/PDF page pending; OLP-0155; first-order-logic/syntax-and-semantics/subformulas; content/first-order-logic/syntax-and-semantics/subformulas.tex:13-18 ↔ translation/content/first-order-logic/syntax-and-semantics/subformulas.tex:13-18 (OLP-0155-B006); printed/PDF page pending; OLP-0156; first-order-logic/syntax-and-semantics/formation-sequences; content/first-order-logic/syntax-and-semantics/formation-sequences.tex:13-23 ↔ translation/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:13-21 (OLP-0156-B006); printed/PDF page pending; OLP-0157; first-order-logic/syntax-and-semantics/free-vars-sentences; content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19 ↔ translation/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19 (OLP-0157-B006); printed/PDF page pending; OLP-0158; first-order-logic/syntax-and-semantics/substitution; content/first-order-logic/syntax-and-semantics/substitution.tex:13-17 ↔ translation/content/first-order-logic/syntax-and-semantics/substitution.tex:13-18 (OLP-0158-B006); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P021, PDF undefined, printed undefined, Conditional and biconditional headings and explanations; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P033, PDF 40, printed 33, Inference section heading and definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P018--P021 directly support the connective and formal-symbol register; TE-P024 supports labelled formal derivation prose; TE-P027 directly witnesses terms, predicates, quantifiers, variables and constants; TE-P029--P030 support first-order, scope and bound-variable language; TE-P031 supports the sentence/proposition distinction; TE-P032--P033 support induction, deduction and inference register. The exact OpenLogic compounds for strings, formation sequences, syntactic identity, unique readability, main operator, subformula and capture-avoiding substitution are definition-controlled extensions, not claimed as direct headword attestation. No unexplained English reader-facing borrowings; named authors in the history block remain source attributions
+
+- Alternatives: use the directly witnessed Telugu first-order/formal-logic register and definition-controlled compounds (chosen); retain English syntax headwords in reader prose (rejected except for protected source-token keys); coin an unsupported specialist neologism for each OpenLogic compound (rejected)
+
+- Uncertainty: Low for the broad first-order and logic register; medium to high nomenclatural uncertainty for newly composed syntax headwords and the technical free-for condition
+
+- Please double-check: Please double-check whether “పదం / సంకేతమాల / నిర్మాణ క్రమం / వాక్యనిర్మాణ తాదాత్మ్యం / ఏకార్థ పఠనీయత / ప్రధాన సంయోజకం / ఉపసూత్రం / పరిధి / స్వేచ్ఛా-బద్ధ చరం / వాక్యం / ప్రతిస్థాపన” is idiomatic and technically standard for “First-order syntax register: term, string, formation sequence, syntactic identity, unique readability, main operator, subformula, scope, free/bound variable, sentence and substitution” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T044 — First-order semantic register: structure, domain, interpretation, variable assignment, satisfaction, validity, entailment, satisfiability, covered structure and model
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: నిర్మాణం / వ్యక్తి క్షేత్రం / అర్థనిర్దేశం / చర నిర్దేశం / సంతృప్తి / చెల్లుబాటుతనం / అర్థపర అనుగమనం / సంతృప్తిపరచదగినతనం / ఆవృత నిర్మాణం / నమూనా
+
+- Exact implementation: OLP-0160; first-order-logic/syntax-and-semantics/intro-semantics; content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33 ↔ translation/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-32 (OLP-0160-B006); printed/PDF page pending; OLP-0162; first-order-logic/syntax-and-semantics/covered-structures; content/first-order-logic/syntax-and-semantics/covered-structures.tex:31-34 ↔ translation/content/first-order-logic/syntax-and-semantics/covered-structures.tex:31-34 (OLP-0162-B008); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P012, PDF 319, printed 312, Questions 37-38; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P027 and TE-P029 directly support predicate-logic and first-order register; TE-P030 directly names the individuals domain; TE-P008 directly supports element and membership language; TE-P011--P012 support functions and mappings; TE-P019 supports truth-value prose; TE-P023 directly defines truth-preserving consequence; and TE-P031 supplies the sentence distinction. The inspected witnesses do not directly attest OpenLogic's model-theoretic headwords for structure, variable assignment, satisfaction or covered structure, so those Telugu compounds are fixed by the frozen definitions and the already established semantic register rather than claimed as quotations from the canon. No unexplained English reader-facing borrowing; the symbols and raw OpenLogic token keys remain non-reader-visible source identity
+
+- Alternatives: use the directly witnessed first-order/domain/function/consequence register with definition-controlled model-theoretic compounds (chosen); leave model-theoretic headwords in English reader prose (rejected); claim the covered-structure and satisfaction headwords as directly attested by the canon (rejected because the inspected pages do not contain them)
+
+- Uncertainty: Low for the witnessed first-order, domain, element, function and consequence register; medium to high nomenclatural uncertainty for structure, satisfaction and covered-structure headwords
+
+- Please double-check: Please double-check whether “నిర్మాణం / వ్యక్తి క్షేత్రం / అర్థనిర్దేశం / చర నిర్దేశం / సంతృప్తి / చెల్లుబాటుతనం / అర్థపర అనుగమనం / సంతృప్తిపరచదగినతనం / ఆవృత నిర్మాణం / నమూనా” is idiomatic and technically standard for “First-order semantic register: structure, domain, interpretation, variable assignment, satisfaction, validity, entailment, satisfiability, covered structure and model” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T045 — x-variant of a variable assignment
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: moderate / standard
+
+- Chosen wording/treatment: x-భేదరూపం
+
+- Exact implementation: OLP-0163; first-order-logic/syntax-and-semantics/satisfaction; content/first-order-logic/syntax-and-semantics/satisfaction.tex:74-79 ↔ translation/content/first-order-logic/syntax-and-semantics/satisfaction.tex:70-76 (OLP-0163-B011); printed/PDF page pending
+
+- Authorities actually checked: TE-P011, PDF 309, printed 302, Main points 8-18; TE-P012, PDF 319, printed 312, Questions 37-38; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P011--P012 support functions and mappings, while TE-P027, TE-P029 and TE-P030 support variables, first-order language and the individuals domain. None directly attests this model-theoretic headword. The Telugu compound is therefore fixed transparently by the frozen definition: a variable assignment that may differ from the original only at x; the notation and defining condition remain authoritative. The metavariable x is formal notation, not an English borrowing; no reader-facing English lexical borrowing is used
+
+- Alternatives: x-భేదరూపం as a transparent definition-controlled compound (chosen); x-వేరియంట్ as an unexplained English borrowing (rejected); claim direct canon attestation for the compound (rejected)
+
+- Uncertainty: Medium nomenclatural uncertainty; low semantic uncertainty because the definition and notation are explicit
+
+- Please double-check: Please double-check whether “x-భేదరూపం” is idiomatic and technically standard for “x-variant of a variable assignment” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T046 — extensionality (also called relevance) in first-order semantics
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: విస్తారత (సంబద్ధత అని కూడా పిలుస్తారు)
+
+- Exact implementation: OLP-0165; first-order-logic/syntax-and-semantics/extensionality; content/first-order-logic/syntax-and-semantics/extensionality.tex:11 ↔ translation/content/first-order-logic/syntax-and-semantics/extensionality.tex:11 (OLP-0165-B005); printed/PDF page pending
+
+- Authorities actually checked: TE-P011, PDF 309, printed 302, Main points 8-18; TE-P012, PDF 319, printed 312, Questions 37-38; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: The cited passages support mappings, relations, consequence, variables, first-order language and the individuals domain, but none directly attests the technical extensionality headword. The Telugu surface is therefore a transparent, definition-controlled extension: satisfaction depends only on the common domain and the interpretations/assignment values of symbols and variables that actually occur in the formula. The source's alternate label relevance is rendered descriptively as సంబద్ధత. No unexplained English reader-facing borrowing; the term is introduced together with its defining proposition
+
+- Alternatives: విస్తారత with the source alternate label సంబద్ధత stated at introduction (chosen); unexplained extensionality transliteration (rejected); reuse set-extensionality wording without the local semantic definition (rejected)
+
+- Uncertainty: Medium to high nomenclatural uncertainty; low propositional uncertainty because the source proposition fixes the exact condition
+
+- Please double-check: Please double-check whether “విస్తారత (సంబద్ధత అని కూడా పిలుస్తారు)” is idiomatic and technically standard for “extensionality (also called relevance) in first-order semantics” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -3103,3 +3199,387 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTEINT-005 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSYN-001 — OLTEFOLSYN-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: removed the unmatched closing parenthesis after B; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0152; first-order-logic/syntax-and-semantics/terms-formulas; defined-operator defIf branch ↔ translation/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:147-151 (OLP-0152-B032); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLSYN-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: removed the unmatched closing parenthesis after B; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSYN-001 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSYN-002 — OLTEFOLSYN-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: moved the three right parentheses inside their corresponding math spans; adjacent sourcecorrection discloses the repeated delimiter repair
+
+- Exact implementation: OLP-0154; first-order-logic/syntax-and-semantics/main-operator; main-operator table examples ↔ translation/content/first-order-logic/syntax-and-semantics/main-operator.tex:91-105 (OLP-0154-B018); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLSYN-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: moved the three right parentheses inside their corresponding math spans; adjacent sourcecorrection discloses the repeated delimiter repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSYN-002 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSYN-003 — OLTEFOLSYN-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: changed the k+1 indexed arguments to k indexed arguments m_1 through m_k; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0156; first-order-logic/syntax-and-semantics/formation-sequences; formation sequences for terms definition ↔ translation/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:41-48 (OLP-0156-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLSYN-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: changed the k+1 indexed arguments to k indexed arguments m_1 through m_k; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSYN-003 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSYN-004 — OLTEFOLSYN-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: changed the two proof occurrences from Frm[L_0] to Frm[L], matching the theorem's arbitrary language; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0156; first-order-logic/syntax-and-semantics/formation-sequences; converse proof atomic case ↔ translation/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:199-203 (OLP-0156-B021); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLSYN-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: changed the two proof occurrences from Frm[L_0] to Frm[L], matching the theorem's arbitrary language; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSYN-004 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSYN-005 — OLTEFOLSYN-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: clarified the induction hypothesis in prose as a final-index condition; no formal math atom was changed
+
+- Exact implementation: OLP-0156; first-order-logic/syntax-and-semantics/formation-sequences; strong-induction hypothesis in converse proof ↔ translation/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-188 (OLP-0156-B021); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLSYN-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: clarified the induction hypothesis in prose as a final-index condition; no formal math atom was changed
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSYN-005 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSYN-006 — OLTEFOLSYN-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: changed semantic equivalence to syntactic identity in the formation-sequence case; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0156; first-order-logic/syntax-and-semantics/formation-sequences; converse proof conjunction case ↔ translation/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:204-208 (OLP-0156-B021); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLSYN-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: changed semantic equivalence to syntactic identity in the formation-sequence case; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSYN-006 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSEM-001 — OLTEFOLSEM-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: read 'single-two place relation' as 'a single two-place relation' and translated that intended construction; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0161; first-order-logic/syntax-and-semantics/structures; line 77, set-theory structure example ↔ translation/content/first-order-logic/syntax-and-semantics/structures.tex:74-80 (OLP-0161-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLSEM-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: read 'single-two place relation' as 'a single two-place relation' and translated that intended construction; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSEM-001 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSEM-002 — OLTEFOLSEM-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: removed the first of two consecutive equality signs so the displayed chain has one equality per step; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0162; first-order-logic/syntax-and-semantics/covered-structures; lines 54-56, opening of the displayed value calculation ↔ translation/content/first-order-logic/syntax-and-semantics/covered-structures.tex:53-56 (OLP-0162-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLSEM-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: removed the first of two consecutive equality signs so the displayed chain has one equality per step; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSEM-002 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSAT-001 — OLTEFOLSAT-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: removed only the stray [s] from the relation interpretation while retaining the assignment on the satisfaction assertion; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0163; first-order-logic/syntax-and-semantics/satisfaction; line 213, atomic-formula counterexample ↔ translation/content/first-order-logic/syntax-and-semantics/satisfaction.tex:208-214 (OLP-0163-B030); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLSAT-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: removed only the stray [s] from the relation interpretation while retaining the assignment on the satisfaction assertion; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSAT-001 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSAT-002 — OLTEFOLSAT-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: changed R(a,x) to the actual antecedent R(x,a) for m = 2, 3, and 4; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0163; first-order-logic/syntax-and-semantics/satisfaction; lines 307-313, defAll-tagged universal example ↔ translation/content/first-order-logic/syntax-and-semantics/satisfaction.tex:307-315 (OLP-0163-B036); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLSAT-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: changed R(a,x) to the actual antecedent R(x,a) for m = 2, 3, and 4; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSAT-002 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSAT-003 — OLTEFOLSAT-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored the missing m in the second outer-assignment case; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0163; first-order-logic/syntax-and-semantics/satisfaction; lines 328-332, outer universal example ↔ translation/content/first-order-logic/syntax-and-semantics/satisfaction.tex:328-336 (OLP-0163-B037); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLSAT-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the missing m in the second outer-assignment case; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSAT-003 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSAT-004 — OLTEFOLSAT-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: changed the universal-summary variable from the inner witness n to the outer assignment parameter m; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0163; first-order-logic/syntax-and-semantics/satisfaction; lines 347-351, summary of the nested-quantifier example ↔ translation/content/first-order-logic/syntax-and-semantics/satisfaction.tex:351-357 (OLP-0163-B039); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLSAT-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: changed the universal-summary variable from the inner witness n to the outer assignment parameter m; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSAT-004 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLASS-001 — OLTEFOLASS-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: changed only the second tuple's initial t_i to t_1 so the argument list runs from t_1 through t_k; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0164; first-order-logic/syntax-and-semantics/assignments; lines 89-92, atomic case of assignment-independence proof ↔ translation/content/first-order-logic/syntax-and-semantics/assignments.tex:89-95 (OLP-0164-B014); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLASS-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: changed only the second tuple's initial t_i to t_1 so the argument list runs from t_1 through t_k; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLASS-001 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLASS-002 — OLTEFOLASS-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: defined s_1' from s_1 and s_2' from s_2 instead of defining both from unindexed s; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0164; first-order-logic/syntax-and-semantics/assignments; lines 177-189, universal-quantifier induction case ↔ translation/content/first-order-logic/syntax-and-semantics/assignments.tex:184-199 (OLP-0164-B022); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLASS-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: defined s_1' from s_1 and s_2' from s_2 instead of defining both from unindexed s; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLASS-002 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLASS-003 — OLTEFOLASS-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: removed only the repeated second Gamma from the antecedent; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0164; first-order-logic/syntax-and-semantics/assignments; lines 239-244, satisfaction of a set definition ↔ translation/content/first-order-logic/syntax-and-semantics/assignments.tex:249-254 (OLP-0164-B029); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLASS-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: removed only the repeated second Gamma from the antecedent; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLASS-003 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLEXT-001 — OLTEFOLEXT-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: removed the first of two consecutive equality signs at the display opening and retained the recursive equality chain; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0165; first-order-logic/syntax-and-semantics/extensionality; lines 87-90, function-term case of the substitution lemma ↔ translation/content/first-order-logic/syntax-and-semantics/extensionality.tex:90-105 (OLP-0165-B018); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLEXT-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: removed the first of two consecutive equality signs at the display opening and retained the recursive equality chain; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLEXT-001 is mathematically precise and idiomatic.

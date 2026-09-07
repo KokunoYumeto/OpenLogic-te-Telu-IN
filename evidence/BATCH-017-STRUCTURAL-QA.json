@@ -1,0 +1,779 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-07T14:55:15.135Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Intertext prose is masked while its inline math remains checked.",
+  "units": [
+    {
+      "unit_id": "OLP-0159",
+      "source_path": "content/first-order-logic/syntax-and-semantics/semantics.tex",
+      "source_sha256": "9ece0259134346fe5dad884d12bfe4aaa88dab579e7d821a156115ee904e8f3b",
+      "translation_sha256": "1cfa0a9f33be944dd1c78df1e6a9d58acdd3a781e22a06408ce41f6bfd0ebe0c",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport{intro-semantics}",
+        "\\olimport{structures}",
+        "\\olimport{covered-structures}",
+        "\\olimport{satisfaction}",
+        "\\olimport{assignments}",
+        "\\olimport{extensionality}",
+        "\\olimport{semantic-notions}"
+      ],
+      "identifiers_target": [
+        "\\olimport{intro-semantics}",
+        "\\olimport{structures}",
+        "\\olimport{covered-structures}",
+        "\\olimport{satisfaction}",
+        "\\olimport{assignments}",
+        "\\olimport{extensionality}",
+        "\\olimport{semantic-notions}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 30,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: semantics",
+          "target_start": "% Part: first-order-logic\n% Chapter: semantics"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olchapter{fol}{sem}{Semantics of First-Order Logic}",
+          "target_start": "\\olchapter{fol}{sem}{మొదటిస్థాయి విధేయ తర్క అర్థవిచారం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olimport{intro-semantics}",
+          "target_start": "\\olimport{intro-semantics}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport{structures}",
+          "target_start": "\\olimport{structures}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport{covered-structures}",
+          "target_start": "\\olimport{covered-structures}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\olimport{satisfaction}",
+          "target_start": "\\olimport{satisfaction}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport{assignments}",
+          "target_start": "\\olimport{assignments}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\olimport{extensionality}",
+          "target_start": "\\olimport{extensionality}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\olimport{semantic-notions}",
+          "target_start": "\\olimport{semantic-notions}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\OLEndChapterHook",
+          "target_start": "\\OLEndChapterHook"
+        },
+        {
+          "index": 13,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{fol}{sem}",
+        "\\olimport{intro-semantics}",
+        "\\olimport{structures}",
+        "\\olimport{covered-structures}",
+        "\\olimport{satisfaction}",
+        "\\olimport{assignments}",
+        "\\olimport{extensionality}",
+        "\\olimport{semantic-notions}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{fol}{sem}",
+        "\\olimport{intro-semantics}",
+        "\\olimport{structures}",
+        "\\olimport{covered-structures}",
+        "\\olimport{satisfaction}",
+        "\\olimport{assignments}",
+        "\\olimport{extensionality}",
+        "\\olimport{semantic-notions}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0160",
+      "source_path": "content/first-order-logic/syntax-and-semantics/intro-semantics.tex",
+      "source_sha256": "0c17fd8bd7b0a2218229c8f217581bf09cde11ec08a602019f46b20f174a4722",
+      "translation_sha256": "5a747702a975f832e862e3776ca3a2a09ecf0d53cb8b74bf9c95c594dfa32213",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{syn}{its}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{syn}{its}"
+      ],
+      "tokens_source": {
+        "!!^a{formula}": 1,
+        "!!^a{sentence}": 1,
+        "!!^a{structure}": 1,
+        "!!^{variable}s": 1,
+        "!!a{domain}": 1,
+        "!!a{sentence}": 1,
+        "!!a{structure}": 3,
+        "!!a{variable}": 1,
+        "!!{constant}s": 1,
+        "!!{domain}": 4,
+        "!!{element}s": 1,
+        "!!{formula}": 1,
+        "!!{formula}s": 3,
+        "!!{function}s": 1,
+        "!!{predicate}s": 1,
+        "!!{sentence}s": 6,
+        "!!{structure}": 3,
+        "!!{structure}s": 1,
+        "!!{variable}": 1
+      },
+      "tokens_target": {
+        "!!^a{formula}": 1,
+        "!!^a{sentence}": 1,
+        "!!^a{structure}": 1,
+        "!!^{variable}s": 1,
+        "!!a{domain}": 1,
+        "!!a{sentence}": 1,
+        "!!a{structure}": 3,
+        "!!a{variable}": 1,
+        "!!{constant}s": 1,
+        "!!{domain}": 4,
+        "!!{element}s": 1,
+        "!!{formula}": 1,
+        "!!{formula}s": 3,
+        "!!{function}s": 1,
+        "!!{predicate}s": 1,
+        "!!{sentence}s": 6,
+        "!!{structure}": 3,
+        "!!{structure}s": 1,
+        "!!{variable}": 1
+      },
+      "math_source": [
+        "$\\Struct{M}$",
+        "$s$",
+        "$\\Sat{M}{!A}[s]$",
+        "$!A$",
+        "$(!A\\land!B)$",
+        "$!A$",
+        "$!B$",
+        "$!A$",
+        "$\\Sat{M}{!A}$",
+        "$\\Entails!A$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma$",
+        "$!A$"
+      ],
+      "math_target_core": [
+        "$\\Struct{M}$",
+        "$s$",
+        "$\\Sat{M}{!A}[s]$",
+        "$!A$",
+        "$(!A\\land!B)$",
+        "$!A$",
+        "$!B$",
+        "$!A$",
+        "$\\Sat{M}{!A}$",
+        "$\\Entails!A$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma$",
+        "$!A$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1606,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: semantics\n% Section: intro-semantics",
+          "target_start": "% Part: first-order-logic\n% Chapter: semantics\n% Section: intro-semantics"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{fol}{syn}{its}",
+          "target_start": "\\olfileid{fol}{syn}{its}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Introduction}",
+          "target_start": "\\olsection{పరిచయం}"
+        },
+        {
+          "index": 6,
+          "source_start": "Giving the meaning of expressions is the domain of semantics.  The\ncentral concept in semantics is that of sat",
+          "target_start": "వ్యక్తీకరణలకు అర్థం ఇవ్వడం అర్థవిచార పరిధి. అర్థవిచారంలో కేంద్ర\nభావన, ఒక \\tetoken{నిర్మాణంలో}{!!a{structure}} "
+        },
+        {
+          "index": 7,
+          "source_start": "On the basis of the satisfaction relation $\\Sat{M}{!A}$ for !!{sentence}s\nwe can then define the basic semanti",
+          "target_start": "\\tetoken{వాక్యాలు}{!!{sentence}s} కోసం సంతృప్తి సంబంధం~$\\Sat{M}{!A}$ ఆధారంగా\nచెల్లుబాటుతనం, అర్థపర అనుగమనం, సం"
+        },
+        {
+          "index": 8,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{syn}{its}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{syn}{its}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0161",
+      "source_path": "content/first-order-logic/syntax-and-semantics/structures.tex",
+      "source_sha256": "7e144a9715ae1bfff09927c72b15f902f831042a7808541d595820981b722ebf",
+      "translation_sha256": "2a1429053b3e2db089b63e0d088a0eb56c58da012358bc00270342ac33bf5077",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{syn}{str}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{syn}{str}"
+      ],
+      "tokens_source": {
+        "!!^a{structure}": 1,
+        "!!^{structure}s": 2,
+        "!!a{element}": 2,
+        "!!a{function}": 1,
+        "!!a{structure}": 2,
+        "!!{constant}": 2,
+        "!!{constant}s": 5,
+        "!!{element}s": 1,
+        "!!{function}": 1,
+        "!!{function}s": 3,
+        "!!{predicate}": 1,
+        "!!{predicate}s": 3,
+        "!!{structure}": 4,
+        "!!{structure}s": 1
+      },
+      "tokens_target": {
+        "!!^a{structure}": 1,
+        "!!^{structure}s": 2,
+        "!!a{element}": 2,
+        "!!a{function}": 1,
+        "!!a{structure}": 2,
+        "!!{constant}": 2,
+        "!!{constant}s": 5,
+        "!!{element}s": 1,
+        "!!{function}": 1,
+        "!!{function}s": 3,
+        "!!{predicate}": 1,
+        "!!{predicate}s": 3,
+        "!!{structure}": 4,
+        "!!{structure}s": 1
+      },
+      "math_source": [
+        "$\\StructM$",
+        "$\\Lang{L}$",
+        "$\\DomainM$",
+        "$c$",
+        "$\\Lang{L}$",
+        "$\\Assign{c}{M}\\in\\DomainM$",
+        "$n$",
+        "$R$",
+        "$\\Lang{L}$",
+        "$\\eq$",
+        "$n$",
+        "$\\Assign{R}{M}\\subseteq\\Domain{M}^n$",
+        "$n$",
+        "$f$",
+        "$\\Lang{L}$",
+        "$n$",
+        "$\\Assign{f}{M}\\colon\\Domain{M}^n\\to\\Domain{M}$",
+        "$\\StructM$",
+        "$\\DomainM$",
+        "$\\Assign{\\Obj0}{M}$",
+        "$\\Obj0$",
+        "$\\Assign{\\Obj\\prime}{M}\\colon\\Domain{M}\\to\\DomainM$",
+        "$\\Assign{\\Obj+}{M}$",
+        "$\\Assign{\\Obj\\times}{M}$",
+        "$\\DomainM^2\\to\\DomainM$",
+        "$\\Assign{\\Obj<}{M}\\subseteq\\Domain{M}^2$",
+        "$\\DomainN=\\Nat$",
+        "$\\Assign{\\Obj0}{N}=0$",
+        "$\\Assign{\\Obj\\prime}{N}(n)=n+1$",
+        "$n\\in\\Nat$",
+        "$\\Assign{\\Obj+}{N}(n,m)=n+m$",
+        "$n,m\\in\\Nat$",
+        "$\\Assign{\\Obj\\times}{N}(n,m)=n\\cdotm$",
+        "$n,m\\in\\Nat$",
+        "$\\Assign{\\Obj<}{N}=\\Setabs{\\tuple{n,m}}{n\\in\\Nat,m\\in\\Nat,n<m}$",
+        "$\\StructN$",
+        "$\\LangL_A$",
+        "$\\LangL_A$",
+        "$\\LangL_A$",
+        "$\\Int$",
+        "$\\Nat$",
+        "$\\Obj0$",
+        "$\\Obj\\prime$",
+        "$\\Obj+$",
+        "$\\Obj\\times$",
+        "$\\Obj<$",
+        "$\\LangL_A$",
+        "$\\StructM$",
+        "$\\LangL_Z$",
+        "$x$",
+        "$y$",
+        "$\\LangL_Z$",
+        "$\\Nat$",
+        "$n\\gem$",
+        "$n,m\\in\\Nat$",
+        "$\\LangL_Z$",
+        "$\\Obj\\in$",
+        "$x$",
+        "$y$",
+        "$\\Struct{{HF}}$",
+        "$\\Domain{{{HF}}}=\\emptyset\\cup\\Pow{\\emptyset}\\cup\\Pow{\\Pow{\\emptyset}}\\cup\\Pow{\\Pow{\\Pow{\\emptyset}}}\\cup\\dots$",
+        "$\\Assign{\\Obj\\in}{{{HF}}}=\\Setabs{\\tuple{x,y}}{x,y\\in\\Domain{{{HF}}},x\\iny}$",
+        "$\\lexists[x][(!A(x)\\lor\\lnot!A(x))]$",
+        "$!A(a)$",
+        "$\\lexists[x][!A(x)]$",
+        "$!A(a)$",
+        "$\\lexists[x][\\eq[x][a]]$",
+        "$\\lexists[x][!A(x)]$"
+      ],
+      "math_target_core": [
+        "$\\Lang{L}$",
+        "$\\StructM$",
+        "$\\DomainM$",
+        "$\\Lang{L}$",
+        "$c$",
+        "$\\Assign{c}{M}\\in\\DomainM$",
+        "$\\Lang{L}$",
+        "$n$",
+        "$R$",
+        "$\\eq$",
+        "$n$",
+        "$\\Assign{R}{M}\\subseteq\\Domain{M}^n$",
+        "$\\Lang{L}$",
+        "$n$",
+        "$f$",
+        "$n$",
+        "$\\Assign{f}{M}\\colon\\Domain{M}^n\\to\\Domain{M}$",
+        "$\\StructM$",
+        "$\\DomainM$",
+        "$\\Assign{\\Obj0}{M}$",
+        "$\\Obj0$",
+        "$\\Assign{\\Obj\\prime}{M}\\colon\\Domain{M}\\to\\DomainM$",
+        "$\\Assign{\\Obj+}{M}$",
+        "$\\Assign{\\Obj\\times}{M}$",
+        "$\\DomainM^2\\to\\DomainM$",
+        "$\\Assign{\\Obj<}{M}\\subseteq\\Domain{M}^2$",
+        "$\\DomainN=\\Nat$",
+        "$\\Assign{\\Obj0}{N}=0$",
+        "$n\\in\\Nat$",
+        "$\\Assign{\\Obj\\prime}{N}(n)=n+1$",
+        "$n,m\\in\\Nat$",
+        "$\\Assign{\\Obj+}{N}(n,m)=n+m$",
+        "$n,m\\in\\Nat$",
+        "$\\Assign{\\Obj\\times}{N}(n,m)=n\\cdotm$",
+        "$\\Assign{\\Obj<}{N}=\\Setabs{\\tuple{n,m}}{n\\in\\Nat,m\\in\\Nat,n<m}$",
+        "$\\LangL_A$",
+        "$\\StructN$",
+        "$\\LangL_A$",
+        "$\\LangL_A$",
+        "$\\Nat$",
+        "$\\Int$",
+        "$\\Obj0$",
+        "$\\Obj\\prime$",
+        "$\\Obj+$",
+        "$\\Obj\\times$",
+        "$\\Obj<$",
+        "$\\LangL_A$",
+        "$\\LangL_Z$",
+        "$\\StructM$",
+        "$x$",
+        "$y$",
+        "$n,m\\in\\Nat$",
+        "$n\\gem$",
+        "$\\Nat$",
+        "$\\LangL_Z$",
+        "$\\LangL_Z$",
+        "$\\Obj\\in$",
+        "$x$",
+        "$y$",
+        "$\\Struct{{HF}}$",
+        "$\\Domain{{{HF}}}=\\emptyset\\cup\\Pow{\\emptyset}\\cup\\Pow{\\Pow{\\emptyset}}\\cup\\Pow{\\Pow{\\Pow{\\emptyset}}}\\cup\\dots$",
+        "$\\Assign{\\Obj\\in}{{{HF}}}=\\Setabs{\\tuple{x,y}}{x,y\\in\\Domain{{{HF}}},x\\iny}$",
+        "$\\lexists[x][(!A(x)\\lor\\lnot!A(x))]$",
+        "$!A(a)$",
+        "$\\lexists[x][!A(x)]$",
+        "$!A(a)$",
+        "$\\lexists[x][\\eq[x][a]]$",
+        "$\\lexists[x][!A(x)]$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [
+        "OLTEFOLSEM-001"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2341,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: syntax-and-semantics\n% Section: Structures",
+          "target_start": "% Part: first-order-logic\n% Chapter: syntax-and-semantics\n% Section: Structures"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{fol}{syn}{str}",
+          "target_start": "\\olfileid{fol}{syn}{str}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{\\printtoken{P}{structure} for First-order Languages}",
+          "target_start": "\\olsection{మొదటిస్థాయి విధేయ భాషల కోసం \\printtoken{P}{structure}}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{explain}\nFirst-order languages are, by themselves, \\emph{uninterpreted:} the\n!!{constant}s, !!{function",
+          "target_start": "\\begin{explain}\nమొదటిస్థాయి విధేయ భాషలకు వాటంతట వాటికి \\emph{అర్థనిర్దేశం ఉండదు:}\nవాటిలోని \\tetoken{స్థిరసంకేత"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}[!!^{structure}s]\n\\Article{structure} \\emph{!!{structure}}~$\\Struct M$, for a language\n$\\Lang{L}$ ",
+          "target_start": "\\begin{defn}[\\tetoken{నిర్మాణాలు}{!!^{structure}s}]\nమొదటిస్థాయి విధేయ తర్క భాష~$\\Lang{L}$కు ఒక \\Article{struct"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{ex}\n!!^a{structure}~$\\Struct M$ for the language of arithmetic consists of a\n  set, an element of $\\Dom",
+          "target_start": "\\begin{ex}\nఅంకగణిత భాషకు ఒక \\tetoken{నిర్మాణం}{!!^a{structure}}~$\\Struct M$, ఒక సమితి, ఆ సమితి\n$\\Domain M$లోని"
+        },
+        {
+          "index": 9,
+          "source_start": "An obvious example of such a structure is the following:\n\\begin{enumerate}\n\\item $\\Domain N = \\Nat$\n\\item $\\As",
+          "target_start": "అటువంటి నిర్మాణానికి స్పష్టమైన ఉదాహరణ ఇది:\n\\begin{enumerate}\n\\item $\\Domain N = \\Nat$\n\\item $\\Assign{\\Obj 0}{N"
+        },
+        {
+          "index": 10,
+          "source_start": "However, there are many other possible !!{structure}s for~$\\Lang\nL_A$. For instance, we might take as the doma",
+          "target_start": "అయితే~$\\Lang L_A$కు మరెన్నో \\tetoken{నిర్మాణాలు}{!!{structure}s} సాధ్యమే. ఉదాహరణకు,\nవ్యక్తి క్షేత్రంగా సహజ సంఖ"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{ex}\nA structure~$\\Struct M$ for the language~$\\Lang L_Z$ of set theory requires\njust a set and a single",
+          "target_start": "\\begin{ex}\nసమితి సిద్ధాంత భాష~$\\Lang L_Z$కు ఒక నిర్మాణం~$\\Struct M$లో కేవలం\nఒక సమితి, ఒక్క ద్విస్థాన సంబంధం అవ"
+        },
+        {
+          "index": 12,
+          "source_start": "A particularly interesting !!{structure} for $\\Lang L_Z$ in which the\n!!{element}s of the domain are actually ",
+          "target_start": "$\\Lang L_Z$కు ప్రత్యేకంగా ఆసక్తికరమైన \\tetoken{నిర్మాణంలో}{!!{structure}}\nవ్యక్తి క్షేత్రంలోని \\tetoken{మూలకాల"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{digress}\nThe stipulations we make as to what counts as !!a{structure} impact\nour logic. For example, th",
+          "target_start": "\\begin{digress}\nఏది ఒక \\tetoken{నిర్మాణంగా}{!!a{structure}} పరిగణించబడుతుందో మనం చేసే నిర్దేశాలు మన\nతర్కంపై ప్"
+        },
+        {
+          "index": 14,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{syn}{str}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{syn}{str}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0162",
+      "source_path": "content/first-order-logic/syntax-and-semantics/covered-structures.tex",
+      "source_sha256": "50975f7de07ff4167fcf30249770ab3a4eaac7df0ae1f38d0c8f15ca7f87d530",
+      "translation_sha256": "13a68ac093651e55f54a49b6ab9aa820fa5696bc305a4c48d37b8510e9c0f05e",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{syn}{cov}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{syn}{cov}"
+      ],
+      "tokens_source": {
+        "!!^{value}": 1,
+        "!!a{structure}": 1,
+        "!!{constant}": 1,
+        "!!{constant}s": 1,
+        "!!{function}": 2,
+        "!!{function}s": 1,
+        "!!{predicate}": 1,
+        "!!{structure}": 3,
+        "!!{value}": 4,
+        "!!{variable}s": 1
+      },
+      "tokens_target": {
+        "!!^{value}": 1,
+        "!!a{structure}": 1,
+        "!!{constant}": 1,
+        "!!{constant}s": 1,
+        "!!{function}": 2,
+        "!!{function}s": 1,
+        "!!{predicate}": 1,
+        "!!{structure}": 3,
+        "!!{value}": 4,
+        "!!{variable}s": 1
+      },
+      "math_source": [
+        "$t$",
+        "$\\LangL$",
+        "$\\StructM$",
+        "$\\LangL$",
+        "$\\Value{t}{M}$",
+        "$t$",
+        "$c$",
+        "$\\Value{c}{M}=\\Assign{c}{M}$",
+        "$t$",
+        "$\\Atom{f}{t_1,\\ldots,t_n}$",
+        "\\[\\Value{t}{M}=\\Assign{f}{M}(\\Value{t_1}{M},\\ldots,\\Value{t_n}{M}).\\]",
+        "$\\LangL$",
+        "$\\Obj{zero}$",
+        "$\\Obj{one}$",
+        "$\\Obj{two}$",
+        "$<$",
+        "$+$",
+        "$\\times$",
+        "$\\StructM$",
+        "$\\LangL$",
+        "$\\DomainM=\\{0,1,2,\\ldots\\}$",
+        "$\\Assign{\\Obj{zero}}{M}=0$",
+        "$\\Assign{\\Obj{one}}{M}=1$",
+        "$\\Assign{\\Obj{two}}{M}=2$",
+        "$<$",
+        "$\\Assign{<}{M}$",
+        "$\\tuple{c_1,c_2}\\in\\Domain{M}^2$",
+        "$c_1$",
+        "$c_2$",
+        "$\\tuple{1,3}\\in\\Assign{<}{M}$",
+        "$\\tuple{2,2}\\notin\\Assign{<}{M}$",
+        "$+$",
+        "$\\Assign{+}{M}$",
+        "$\\Assign{+}{M}(2,3)$",
+        "$5$",
+        "$\\times$",
+        "$\\Obj{four}$",
+        "$4$",
+        "$\\times(\\Obj{two},+(\\Obj{three},\\Obj{zero}))$",
+        "$\\Obj{two}\\times(\\Obj{three}+\\Obj{zero})$",
+        "\\begin{multline*}\\Value{\\times(\\Obj{two},+(\\Obj{three},\\Obj{zero}))}{M}=\\\\\\begin{aligned}&=\\Assign{\\times}{M}(\\Value{\\Obj{two}}{M},\\Value{+(\\Obj{three},\\Obj{zero})}{M})\\\\&=\\Assign{\\times}{M}(\\Value{\\Obj{two}}{M},\\Assign{+}{M}(\\Value{\\Obj{three}}{M},\\Value{\\Obj{zero}}{M}))\\\\&=\\Assign{\\times}{M}(\\Assign{\\Obj{two}}{M},\\Assign{+}{M}(\\Assign{\\Obj{three}}{M},\\Assign{\\Obj{zero}}{M}))\\\\&=\\Assign{\\times}{M}(2,\\Assign{+}{M}(3,0))\\\\&=\\Assign{\\times}{M}(2,3)\\\\&=6\\end{aligned}\\end{multline*}",
+        "$\\StructN$"
+      ],
+      "math_target_core": [
+        "$t$",
+        "$\\LangL$",
+        "$\\StructM$",
+        "$\\LangL$",
+        "$\\Value{t}{M}$",
+        "$t$",
+        "$c$",
+        "$\\Value{c}{M}=\\Assign{c}{M}$",
+        "$t$",
+        "$\\Atom{f}{t_1,\\ldots,t_n}$",
+        "\\[\\Value{t}{M}=\\Assign{f}{M}(\\Value{t_1}{M},\\ldots,\\Value{t_n}{M}).\\]",
+        "$\\LangL$",
+        "$\\Obj{zero}$",
+        "$\\Obj{one}$",
+        "$\\Obj{two}$",
+        "$<$",
+        "$+$",
+        "$\\times$",
+        "$\\LangL$",
+        "$\\StructM$",
+        "$\\DomainM=\\{0,1,2,\\ldots\\}$",
+        "$\\Assign{\\Obj{zero}}{M}=0$",
+        "$\\Assign{\\Obj{one}}{M}=1$",
+        "$\\Assign{\\Obj{two}}{M}=2$",
+        "$<$",
+        "$\\Assign{<}{M}$",
+        "$c_1$",
+        "$c_2$",
+        "$\\tuple{c_1,c_2}\\in\\Domain{M}^2$",
+        "$\\tuple{1,3}\\in\\Assign{<}{M}$",
+        "$\\tuple{2,2}\\notin\\Assign{<}{M}$",
+        "$+$",
+        "$\\Assign{+}{M}$",
+        "$\\Assign{+}{M}(2,3)$",
+        "$5$",
+        "$\\times$",
+        "$\\Obj{four}$",
+        "$4$",
+        "$\\times(\\Obj{two},+(\\Obj{three},\\Obj{zero}))$",
+        "$\\Obj{two}\\times(\\Obj{three}+\\Obj{zero})$",
+        "\\begin{multline*}\\Value{\\times(\\Obj{two},+(\\Obj{three},\\Obj{zero}))}{M}\\\\\\begin{aligned}&=\\Assign{\\times}{M}(\\Value{\\Obj{two}}{M},\\Value{+(\\Obj{three},\\Obj{zero})}{M})\\\\&=\\Assign{\\times}{M}(\\Value{\\Obj{two}}{M},\\Assign{+}{M}(\\Value{\\Obj{three}}{M},\\Value{\\Obj{zero}}{M}))\\\\&=\\Assign{\\times}{M}(\\Assign{\\Obj{two}}{M},\\Assign{+}{M}(\\Assign{\\Obj{three}}{M},\\Assign{\\Obj{zero}}{M}))\\\\&=\\Assign{\\times}{M}(2,\\Assign{+}{M}(3,0))\\\\&=\\Assign{\\times}{M}(2,3)\\\\&=6\\end{aligned}\\end{multline*}",
+        "$\\StructN$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "\\begin{multline*}\\Value{\\times(\\Obj{two},+(\\Obj{three},\\Obj{zero}))}{M}=\\\\\\begin{aligned}&=\\Assign{\\times}{M}(\\Value{\\Obj{two}}{M},\\Value{+(\\Obj{three},\\Obj{zero})}{M})\\\\&=\\Assign{\\times}{M}(\\Value{\\Obj{two}}{M},\\Assign{+}{M}(\\Value{\\Obj{three}}{M},\\Value{\\Obj{zero}}{M}))\\\\&=\\Assign{\\times}{M}(\\Assign{\\Obj{two}}{M},\\Assign{+}{M}(\\Assign{\\Obj{three}}{M},\\Assign{\\Obj{zero}}{M}))\\\\&=\\Assign{\\times}{M}(2,\\Assign{+}{M}(3,0))\\\\&=\\Assign{\\times}{M}(2,3)\\\\&=6\\end{aligned}\\end{multline*}"
+      ],
+      "math_delta_target_only": [
+        "\\begin{multline*}\\Value{\\times(\\Obj{two},+(\\Obj{three},\\Obj{zero}))}{M}\\\\\\begin{aligned}&=\\Assign{\\times}{M}(\\Value{\\Obj{two}}{M},\\Value{+(\\Obj{three},\\Obj{zero})}{M})\\\\&=\\Assign{\\times}{M}(\\Value{\\Obj{two}}{M},\\Assign{+}{M}(\\Value{\\Obj{three}}{M},\\Value{\\Obj{zero}}{M}))\\\\&=\\Assign{\\times}{M}(\\Assign{\\Obj{two}}{M},\\Assign{+}{M}(\\Assign{\\Obj{three}}{M},\\Assign{\\Obj{zero}}{M}))\\\\&=\\Assign{\\times}{M}(2,\\Assign{+}{M}(3,0))\\\\&=\\Assign{\\times}{M}(2,3)\\\\&=6\\end{aligned}\\end{multline*}"
+      ],
+      "declared_source_correction_ids": [
+        "OLTEFOLSEM-002"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 801,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: syntax-and-semantics\n% Section: covered-structures",
+          "target_start": "% Part: first-order-logic\n% Chapter: syntax-and-semantics\n% Section: covered-structures"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{fol}{syn}{cov}",
+          "target_start": "\\olfileid{fol}{syn}{cov}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Covered \\printtoken{P}{structure} for First-order Languages}",
+          "target_start": "\\olsection{మొదటిస్థాయి విధేయ భాషల కోసం ఆవృత \\printtoken{P}{structure}}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{explain}\nRecall that a term is \\emph{closed} if it contains no !!{variable}s.\n\\end{explain}",
+          "target_start": "\\begin{explain}\nఏ \\tetoken{చరాలనూ}{!!{variable}s} కలిగి లేని పదాన్ని \\emph{సంవృత} పదం అంటామని గుర్తుచేసుకోండి."
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}[!!^{value} of closed terms]\nIf $t$ is a closed term of the language~$\\Lang L$ and $\\Struct M$ is ",
+          "target_start": "\\begin{defn}[సంవృత పదాల \\tetoken{విలువ}{!!^{value}}]\n$t$ అనేది భాష~$\\Lang L$లోని సంవృత పదం, $\\Struct M$ అనేది\n"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{defn}[Covered !!{structure}]\nA !!{structure} is \\emph{covered} if every element of the domain is the\n!!",
+          "target_start": "\\begin{defn}[ఆవృత \\tetoken{నిర్మాణం}{!!{structure}}]\nఒక \\tetoken{నిర్మాణంలో}{!!{structure}} వ్యక్తి క్షేత్రంలో"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{ex}\nLet ~$\\Lang L$ be the language with !!{constant}s $\\Obj{zero}$,\n$\\Obj{one}$, $\\Obj{two}$, \\dots, th",
+          "target_start": "\\begin{ex}\n~$\\Lang L$ అనేది $\\Obj{zero}$, $\\Obj{one}$, $\\Obj{two}$, \\dots, అనే\n\\tetoken{స్థిరసంకేతాలు}{!!{cons"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{prob}\nIs $\\Struct N$, the standard model of arithmetic, covered? Explain.\n\\end{prob}",
+          "target_start": "\\begin{prob}\nఅంకగణిత ప్రామాణిక నమూనా~$\\Struct N$ ఆవృతమైనదా? వివరించండి.\n\\end{prob}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{syn}{cov}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{syn}{cov}"
+      ],
+      "protected_identifier_parity": true
+    }
+  ]
+}

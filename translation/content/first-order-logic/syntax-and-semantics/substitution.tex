@@ -1,0 +1,125 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: substitution
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{sub}
+
+\olsection{ప్రతిస్థాపన}
+
+\begin{defn}[పదంలో ప్రతిస్థాపన]
+$\Subst{s}{t}{x}$ను---అంటే $s$లోని ప్రతి~$x$ ఘటనకు బదులుగా $t$ను
+\emph{ప్రతిస్థాపించిన} ఫలితాన్ని---పునరావర్తకంగా కింది విధంగా
+నిర్వచిస్తాం:
+\begin{enumerate}
+\item \indcase{s}{c}{$\Subst{\indfrm}{t}{x}$ కేవలం~$s$.}
+
+\item \indcase{s}{y}{$\Subst{\indfrm}{t}{x}$ కూడా కేవలం~$s$; అయితే
+  $y$ ఒక చరం, $y \not\ident x$ కావాలి.}
+
+\item \indcase{s}{x}{$\Subst{\indfrm}{t}{x}$,~$t$.}
+
+\item\indcase{s}{\Atom{f}{t_1, \dots, t_n}}{$\Subst{\indfrmp}{t}{x}$
+  అనేది $\Atom{f}{\Subst{t_1}{t}{x}, \dots, \Subst{t_n}{t}{x}}$.}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}
+ఒక సూత్రం~$!A$లో $x$కు పదం~$t$ \emph{\tetoken{ప్రతిస్థాపనకు స్వేచ్ఛగా}{!!{free for}}} కావడం అంటే,
+$!A$లోని $x$ యొక్క స్వేచ్ఛా ఘటనల్లో ఏదీ $t$లోని చరాన్ని బంధించే
+పరిమాణీకరణిక పరిధిలో ఉండకపోవడం.
+\end{defn}
+
+\begin{ex} ~
+\begin{enumerate}
+\item $\Obj v_8$, $\lexists[\Obj
+  v_3]\Atom{\Obj A^2_4}{\Obj v_3,\Obj v_1}$లో $\Obj v_1$కు స్వేచ్ఛగా ఉంది.
+
+\item $\Obj f^2_1(\Obj v_1, \Obj v_2)$, $\lforall[\Obj v_2]\Atom{\Obj A^2_4}{\Obj v_0,\Obj v_2}$లో
+  $\Obj v_0$కు స్వేచ్ఛగా \emph{లేదు}.
+\end{enumerate}
+\end{ex}
+
+\begin{defn}[\tetoken{ఒక సూత్రంలో}{!!a{formula}} ప్రతిస్థాపన]
+$!A$ \tetoken{ఒక సూత్రం}{!!a{formula}}, $x$ \tetoken{ఒక చరం}{!!a{variable}}, $t$ అనే పదం $!A$లో $x$కు
+\tetoken{ప్రతిస్థాపనకు స్వేచ్ఛగా}{!!{free for}} అయితే, $\Subst{!A}{t}{x}$ అనేది $!A$లోని అన్ని స్వేచ్ఛా
+$x$ ఘటనలకు బదులుగా $t$ను ప్రతిస్థాపించిన ఫలితం.
+\begin{enumerate}
+\tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\Subst{\indfrm}{t}{x}$
+    $\lfalse$.}}{}
+
+\tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\Subst{\indfrm}{t}{x}$
+    $\ltrue$.}}{}
+
+\item \indcase{!A}{\Atom{P}{t_1,\dots,
+    t_n}}{$\Subst{\indfrm}{t}{x}$ అనేది
+    $\Atom{P}{\Subst{t_1}{t}{x}, \dots, \Subst{t_n}{t}{x}}$.}
+
+\item \indcase{!A}{\eq[t_1][t_2]}{$\Subst{\indfrmp}{t}{x}$ అనేది
+  $\Subst{t_1}{t}{x} = \Subst{t_2}{t}{x}$.}
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\Subst{\indfrmp}{t}{x}$
+    అనేది $\lnot \Subst{!B}{t}{x}$.}}{}
+
+\tagitem{prvAnd}{\indcase{!A}{(!B \land
+    !C)}{$\Subst{\indfrmp}{t}{x}$ అనేది $(\Subst{!B}{t}{x} \land
+    \Subst{!C}{t}{x})$.}}{}
+
+\tagitem{prvOr}{\indcase{!A}{(!B \lor
+    !C)}{$\Subst{\indfrmp}{t}{x}$ అనేది $(\Subst{!B}{t}{x} \lor
+    \Subst{!C}{t}{x})$.}}{}
+
+\tagitem{prvIf}{\indcase{!A}{(!B \lif
+    !C)}{$\Subst{\indfrmp}{t}{x}$ అనేది $(\Subst{!B}{t}{x} \lif
+    \Subst{!C}{t}{x})$.}}{}
+
+\tagitem{prvIff}{\indcase{!A}{(!B \liff
+    !C)}{$\Subst{\indfrmp}{t}{x}$ అనేది $(\Subst{!B}{t}{x} \liff
+    \Subst{!C}{t}{x})$.}}{}
+
+\tagitem{prvAll}{
+\indcase{!A}{\lforall[y][!B]}{$\Subst{\indfrmp}{t}{x}$
+    అనేది $\lforall[y][\Subst{!B}{t}{x}]$; $y$, $x$ కాకుండా వేరే చరం
+    కావాలి. లేకపోతే $\Subst{\indfrmp}{t}{x}$ కేవలం $\indfrm$.}}{}
+
+\tagitem{prvEx}{
+\indcase{!A}{\lexists[y][!B]}{$\Subst{\indfrmp}{t}{x}$
+    అనేది $\lexists[y][\Subst{!B}{t}{x}]$; $y$, $x$ కాకుండా వేరే చరం
+    కావాలి. లేకపోతే $\Subst{\indfrmp}{t}{x}$ కేవలం $\indfrm$.}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+$x$, $!A$లో ఎక్కడా కనిపించకపోతే $\Subst{!A}{t}{x}$ కేవలం~$!A$గా
+ఉంటుంది; అందువల్ల ప్రతిస్థాపన శూన్యంగా ఉండవచ్చు.
+
+$t$, $!A$లో $x$కు \tetoken{ప్రతిస్థాపనకు స్వేచ్ఛగా}{!!{free for}} కావాలనే పరిమితి కింది వంటి సందర్భాలను
+తొలగించడానికి అవసరం. $!A \ident \lexists[y][x < y]$, $t \ident y$
+అయితే, $\Subst{!A}{t}{x}$, $\lexists[y][y < y]$ అవుతుంది. ఇక్కడ
+స్వేచ్ఛా చరం~$y$, ప్రతిస్థాపన తరువాత $\lexists[y]$ పరిమాణీకరణికం చేత
+``పట్టుబడుతుంది''; అది అవాంఛనీయం. ఉదాహరణకు,
+$\lforall[x][!B]$ సత్యమైతే $\Subst{!B}{t}{x}$ కూడా సత్యం కావాలని
+మనకు ఉంటుంది. కానీ $\lforall[x][\lexists[y][x < y]]$ను పరిశీలించండి
+(ఇక్కడ $!B$ అనేది $\lexists[y][x < y]$). సహజ సంఖ్యల గురించి ఇది నిజమైన
+వాక్యం: ప్రతి సంఖ్య~$x$కు దానికంటే పెద్ద సంఖ్య~$y$ ఒకటి ఉంటుంది. $x$కు
+సాధ్యమైన ప్రతిస్థాపనగా~$y$ను అనుమతిస్తే,
+$\Subst{!B}{y}{x} \ident \lexists[y][y < y]$ అవుతుంది; ఇది అబద్ధం.
+$t$లోని స్వేచ్ఛా చరాలు $!A$లోని పరిమాణీకరణికం చేత బద్ధం అయ్యేలా
+లేకుండా కోరడం ద్వారా దీన్ని నివారిస్తాం.
+\end{explain}
+
+సంక్లిష్టమైన సంకేతనాన్ని నివారించడానికి తరచుగా కింది సంప్రదాయాన్ని
+వాడతాం: $!A$ ఒక \tetoken{సూత్రం}{!!a{formula}} అయి, అందులో \tetoken{చరం}{!!{variable}}~$x$ స్వేచ్ఛగా
+ఉండవచ్చని అనుకుంటే, దీన్ని
+సూచించడానికి $!A(x)$ అని కూడా రాస్తాం. ఏ $!A$, $x$లు ఉద్దేశించబడ్డాయో
+స్పష్టంగా ఉన్నప్పుడు, $t$ అనేది $!A(x)$లో $x$కు స్వేచ్ఛగా ఉండే పదం అని
+అనుకుంటూ, $!A(t)$ను $\Subst{!A}{t}{x}$కు సంక్షిప్తంగా రాస్తాం. ఉదాహరణకు,
+``$!A(t)$ను $\lforall[x][!A(x)]$ యొక్క ఒక దృష్టాంతం అంటాం'' అని
+చెప్పవచ్చు. దీని అర్థం: ఏదైనా \tetoken{సూత్రం}{!!{formula}}~$!A$, \tetoken{ఒక చరం}{!!a{variable}}~$x$,
+$!A$లో $x$కు స్వేచ్ఛగా ఉండే పదం~$t$ ఉంటే,
+$\Subst{!A}{t}{x}$, $\lforall[x][!A]$ యొక్క ఒక దృష్టాంతం.
+
+\end{document}

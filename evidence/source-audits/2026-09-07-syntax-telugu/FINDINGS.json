@@ -1,0 +1,71 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTEFOLSYN-20260907",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": ["OLP-0149", "OLP-0150", "OLP-0151", "OLP-0152", "OLP-0153", "OLP-0154", "OLP-0155", "OLP-0156", "OLP-0157", "OLP-0158"],
+    "finding_count": 6
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEFOLSYN-001",
+      "unit_id": "OLP-0152",
+      "classification": "confirmed_unmatched_parenthesis_in_defined_conditional",
+      "source": {"path": "content/first-order-logic/syntax-and-semantics/terms-formulas.tex", "bytes": 8909, "sha256": "8a31bcb40fff1de629e4bb540c781a6b49d32c412cb87cb2bc5a29efd32461e3", "locator": "defined-operator defIf branch"},
+      "finding": "The disjunctive abbreviation for the conditional has a closing parenthesis after B with no corresponding opening parenthesis.",
+      "controlling_evidence": "The neighboring defined-operator clauses and the standard equivalence A -> B iff not-A or B identify the intended expression.",
+      "required_translation_handling": "Remove only the unmatched closing parenthesis and add an adjacent OLTEFOLSYN-001 note."
+    },
+    {
+      "finding_id": "OLTEFOLSYN-002",
+      "unit_id": "OLP-0154",
+      "classification": "confirmed_misplaced_closing_parentheses_in_main_operator_table",
+      "source": {"path": "content/first-order-logic/syntax-and-semantics/main-operator.tex", "bytes": 3627, "sha256": "788d271215826c823cfcc63c0b54ab7ef65a42a50cde27b27542f2072de2d786", "locator": "main-operator table examples"},
+      "finding": "The conjunction, disjunction and conditional examples close math mode before the final right parenthesis, leaving malformed displayed examples.",
+      "controlling_evidence": "The table labels each connective with its parenthesized formula form, and the biconditional row already shows the intended delimiter placement.",
+      "required_translation_handling": "Move each closing parenthesis inside its math span and disclose the repeated delimiter repair."
+    },
+    {
+      "finding_id": "OLTEFOLSYN-003",
+      "unit_id": "OLP-0156",
+      "classification": "confirmed_function_arity_index_error",
+      "source": {"path": "content/first-order-logic/syntax-and-semantics/formation-sequences.tex", "bytes": 10074, "sha256": "b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01", "locator": "formation sequences for terms definition"},
+      "finding": "A k-ary function is written with k+1 indexed arguments m_0 through m_k.",
+      "controlling_evidence": "The language and term definitions use exactly k arguments for a k-ary function, and the worked binary and unary examples confirm that arity.",
+      "required_translation_handling": "Use m_1 through m_k and disclose the arity repair."
+    },
+    {
+      "finding_id": "OLTEFOLSYN-004",
+      "unit_id": "OLP-0156",
+      "classification": "confirmed_wrong_language_subscript_in_equivalence_proof",
+      "source": {"path": "content/first-order-logic/syntax-and-semantics/formation-sequences.tex", "bytes": 10074, "sha256": "b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01", "locator": "converse proof atomic case"},
+      "finding": "The proof is parameterized by an arbitrary language L but switches to Frm[L_0] in the atomic case and again later.",
+      "controlling_evidence": "The theorem statement, definition of F, and the surrounding proof all use Lang L and Frm[L].",
+      "required_translation_handling": "Use Frm[L] consistently and disclose the notation repair."
+    },
+    {
+      "finding_id": "OLTEFOLSYN-005",
+      "unit_id": "OLP-0156",
+      "classification": "confirmed_induction_length_wording_inconsistency",
+      "source": {"path": "content/first-order-logic/syntax-and-semantics/formation-sequences.tex", "bytes": 10074, "sha256": "b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01", "locator": "strong-induction hypothesis in converse proof"},
+      "finding": "The proof names n as the induction parameter while describing the hypothesis using formation-sequence length m<n, although the sequence is indexed from 0 through n and subsequent reasoning uses proper initial subsequences.",
+      "controlling_evidence": "The proof's later length comparison and the lemma on initial subsequences determine the intended zero-based index convention.",
+      "required_translation_handling": "Clarify the hypothesis in Telugu as a final-index condition and disclose the prose repair; no formal math atom is changed."
+    },
+    {
+      "finding_id": "OLTEFOLSYN-006",
+      "unit_id": "OLP-0156",
+      "classification": "confirmed_syntactic_identity_symbol_mismatch",
+      "source": {"path": "content/first-order-logic/syntax-and-semantics/formation-sequences.tex", "bytes": 10074, "sha256": "b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01", "locator": "converse proof conjunction case"},
+      "finding": "The formation-sequence definition requires syntactic identity but the conjunction case switches to semantic equivalence.",
+      "controlling_evidence": "The proof is about strings and formation-sequence construction, and the immediately preceding cases use the syntactic identity symbol.",
+      "required_translation_handling": "Use ident in the conjunction case and disclose the notation repair."
+    }
+  ]
+}

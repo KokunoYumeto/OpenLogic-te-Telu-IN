@@ -1,0 +1,279 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: formation-sequences
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{fseq}
+
+\olsection{నిర్మాణ క్రమాలు}
+
+ఆగమనాత్మక నిర్వచనం ద్వారా \tetoken{సూత్రాలను}{!!{formula}s} నిర్వచించడం, దానికి పూరకంగా
+ఆగమనం ద్వారా \tetoken{సూత్రాలు}{!!{formula}s} ధర్మాలను నిరూపించడం సొగసైన, సమర్థమైన
+విధానం. అయితే \tetoken{సూత్రాలు}{!!{formula}s} నిర్మాణాన్ని కింది నుంచి పైకి, మెట్టుమెట్టుగా
+పరిశీలించడం కూడా ఉపయోగకరం కావచ్చు. ఇక్కడ \emph{నిర్మాణ క్రమం} అనే
+భావనతో అదే చేస్తాం.
+%
+పదాలు, \tetoken{సూత్రాలను}{!!{formula}s} వాటి ఆగమనాత్మక నిర్వచనాలను ప్రస్తావించకుండానే
+ఈ విధంగా ఎలా ప్రవేశపెట్టవచ్చో చూపడానికి, ముందుగా ఏదో భాష~$\Lang L$
+నుంచి తీసుకున్న సంకేతాల యాదృచ్ఛిక సంకేతమాల అనే భావనను ప్రవేశపెడతాం.
+
+\begin{defn}[సంకేతమాలలు]
+\ollabel{defn:string}
+$\Lang L$ ఒక మొదటిస్థాయి విధేయ భాష అనుకుందాం. \emph{$\Lang
+L$-సంకేతమాల} అంటే $\Lang L$లోని సంకేతాల పరిమిత క్రమం. భాష~$\Lang L$
+ఏదో సందర్భం నుంచి స్పష్టంగా ఉన్నప్పుడు, $\Lang L$-సంకేతమాలను తరచుగా
+కేవలం \emph{సంకేతమాల} అంటాం.
+\end{defn}
+
+\begin{ex}
+ఏ మొదటిస్థాయి విధేయ భాష~$\Lang L$కైనా, అన్ని $\Lang L$-\tetoken{సూత్రాలు}{!!{formula}s}
+$\Lang L$-సంకేతమాలలు; కానీ తిరుగుదిశ నిజం కాదు. ఉదాహరణకు,
+\[)(\Obj v_0\lif\lexists\] అనేది $\Lang L$-సంకేతమాల, కానీ
+$\Lang L$-\tetoken{సూత్రం}{!!{formula}} కాదు.
+\end{ex}
+
+\begin{defn}[పదాల నిర్మాణ క్రమాలు]
+\ollabel{defn:fseq-trm}
+$\Lang L$-సంకేతమాలల పరిమిత క్రమం $\tuple{t_0,\dotsc,t_n}$, పదం~$t$కు
+\emph{నిర్మాణ క్రమం} కావడం అంటే $t \ident t_n$, ఇంకా ప్రతి $i \leq n$కు
+$t_i$ \tetoken{ఒక చరం}{!!a{variable}} లేదా \tetoken{ఒక స్థిరసంకేతం}{!!a{constant}} అయి ఉండాలి; లేదా $\Lang L$లో
+$k$-స్థాన \tetoken{ప్రమేయ సంకేతం}{!!{function}}~$f$ ఉండి, $t_i \ident
+f(t_{m_1},\dotsc,t_{m_k})$ అయ్యే $m_1,\dotsc,m_k < i$లు ఉండాలి.
+\sourcecorrection{OLTEFOLSYN-003}{ఆంగ్ల మూలం $k$-స్థాన ప్రమేయానికి
+$m_0,\dotsc,m_k$లతో $k+1$ ఆర్గ్యుమెంట్లను ఇచ్చింది. ఇదే అధ్యాయంలోని
+$k$-స్థాన నిర్వచనానికి సరిపడేలా సూచికలను $m_1,\dotsc,m_k$గా చేశాం.}
+భేదం చెప్పాల్సినప్పుడు, పదాల నిర్మాణ క్రమాలను \emph{పద నిర్మాణ
+క్రమాలు} అంటాం.
+\end{defn}
+
+\begin{ex}
+క్రమం
+\[
+    \tuple{\Obj c_0, \Obj v_0, \Atom{\Obj f^2_0}{\Obj c_0, \Obj v_0}, \Atom{\Obj f^1_0}{\Atom{\Obj f^2_0}{\Obj c_0, \Obj v_0}}}
+\]
+అనేది $\Atom{\Obj f^1_0}{\Atom{\Obj
+f^2_0}{\Obj c_0, \Obj v_0}}$ పదానికి నిర్మాణ క్రమం; కిందిదీ అలాంటిదే:
+\[
+    \tuple{\Obj v_0, \Obj c_0, \Atom{\Obj f^2_0}{\Obj c_0, \Obj v_0}, \Atom{\Obj f^1_0}{\Atom{\Obj f^2_0}{\Obj c_0, \Obj v_0}}}.
+\]
+\end{ex}
+
+\begin{defn}[సూత్రాల నిర్మాణ క్రమాలు]
+\ollabel{defn:fseq-frm}
+$\Lang L$-సంకేతమాలల పరిమిత క్రమం $\tuple{!A_0,\dotsc,!A_n}$,
+$!A$కు \emph{నిర్మాణ క్రమం} కావడం అంటే $!A \ident !A_n$, ఇంకా
+ప్రతి $i \leq n$కు $!A_i$ ఒక పరమాణు \tetoken{సూత్రం}{!!{formula}} అయి ఉండాలి; లేదా
+కింది వాటిలో ఒకటి నిజమయ్యేలా $j,k < i$లు, \tetoken{ఒక చరం}{!!a{variable}}~$x$ ఉండాలి:
+\begin{enumerate}
+    \tagitem{prvNot}{$!A_i \ident \lnot !A_j$.}{}%
+    \tagitem{prvAnd}{$!A_i \ident (!A_j \land !A_k)$.}{}%
+    \tagitem{prvOr}{$!A_i \ident (!A_j \lor !A_k)$.}{}%
+    \tagitem{prvIf}{$!A_i \ident (!A_j \lif !A_k)$.}{}%
+    \tagitem{prvIff}{$!A_i \ident (!A_j \liff !A_k)$.}{}%
+    \tagitem{prvAll}{$!A_i \ident \lforall[x][!A_j]$.}{}%
+    \tagitem{prvEx}{$!A_i \ident \lexists[x][!A_j]$.}{}%
+\end{enumerate}
+భేదం చెప్పాల్సినప్పుడు సూత్రాల నిర్మాణ క్రమాలను \emph{సూత్ర నిర్మాణ
+క్రమాలు} అంటాం.
+\end{defn}
+
+\begin{ex}
+\[
+\tuple{
+    \Atom{\Obj A^1_0}{\Obj v_0},
+    \Atom{\Obj A^1_1}{\Obj c_1},
+    (\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj A^1_0}{\Obj v_0}),
+    \lexists[\Obj v_0][(\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj A^1_0}{\Obj v_0})]
+}
+\]
+అనేది $\lexists[\Obj v_0][(\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj
+A^1_0}{\Obj v_0})]$కు నిర్మాణ క్రమం; కిందిదీ అలాంటిదే:
+\begin{multline*}
+\tuple{
+    \Atom{\Obj A^1_0}{\Obj v_0},
+    \Atom{\Obj A^1_1}{\Obj c_1},
+    (\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj A^1_0}{\Obj v_0}),
+    \Atom{\Obj A^1_1}{\Obj c_1},\\
+    \lforall[\Obj v_1][\Atom{\Obj A^1_0}{\Obj v_0}],
+    \lexists[\Obj v_0][(\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj A^1_0}{\Obj v_0})]
+}.
+\end{multline*}
+%
+రెండవ ఉదాహరణలో కనిపించినట్లుగా, నిర్మాణ క్రమాల్లో ``వ్యర్థ'' భాగాలు
+ఉండవచ్చు: అవి అనవసరమైన లేదా నిర్మాణానికి తోడ్పడని \tetoken{సూత్రాలు}{!!{formula}s}.
+\end{ex}
+
+\begin{prop}\ollabel{prop:formed}
+$\Frm[L]$లోని ప్రతి \tetoken{సూత్రం}{!!{formula}}~$!A$కు ఒక నిర్మాణ క్రమం ఉంటుంది.
+\end{prop}
+
+\begin{proof}
+$!A$ పరమాణువు అనుకుందాం. అప్పుడు $\tuple{!A}$ అనే క్రమం $!A$కు
+నిర్మాణ క్రమం.
+%
+ఇప్పుడు $!B$,~$!C$లకు వరుసగా $\tuple{!B_0,\dotsc,!B_n}$,
+$\tuple{!C_0,\dotsc,!C_m}$ అనే నిర్మాణ క్రమాలు ఉన్నాయనుకుందాం.
+%
+\begin{enumerate}
+  \tagitem{prvNot}{$!A \ident \lnot !B$ అయితే,
+      $\tuple{!B_0,\dotsc,!B_n,\lnot !B_n}$ అనేది $!A$కు నిర్మాణ
+      క్రమం.}{}
+  \tagitem{prvAnd}{$!A \ident (!B \land !C)$ అయితే,
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \land !C_m)}$
+      అనేది $!A$కు నిర్మాణ క్రమం.}{}
+  \tagitem{prvOr}{$!A \ident (!B \lor !C)$ అయితే,
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \lor !C_m)}$
+      అనేది $!A$కు నిర్మాణ క్రమం.}{}
+  \tagitem{prvIf}{$!A \ident (!B \lif !C)$ అయితే,
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \lif !C_m)}$
+      అనేది $!A$కు నిర్మాణ క్రమం.}{}
+  \tagitem{prvIff}{$!A \ident (!B \liff !C)$ అయితే,
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \liff !C_m)}$
+      అనేది $!A$కు నిర్మాణ క్రమం.}{}
+  \tagitem{prvAll}{$!A \ident \lforall[x][!B]$ అయితే,
+      $\tuple{!B_0,\dotsc,!B_n,\lforall[x][!B_n]}$ అనేది $!A$కు
+      నిర్మాణ క్రమం.}{}
+  \tagitem{prvEx}{$!A \ident \lexists[x][!B]$ అయితే,
+      $\tuple{!B_0,\dotsc,!B_n,\lexists[x][!B_n]}$ అనేది $!A$కు
+      నిర్మాణ క్రమం.}{}
+\end{enumerate}
+\tetoken{సూత్రాలపై}{!!{formula}s} ఆగమన సూత్రం ప్రకారం ప్రతి \tetoken{సూత్రానికి}{!!{formula}} ఒక నిర్మాణ
+క్రమం ఉంటుంది.
+\end{proof}
+
+తిరుగుదిశను కూడా నిరూపించవచ్చు. సూత్రాలను నిర్వచించే మన రెండు
+పద్ధతులు తుల్యమైనవని---అవి ఒకే ఫలితాలను ఇస్తాయని---ఇది చూపుతుంది
+కనుక ముఖ్యం. నిర్మాణ క్రమాల పొడవుపై సాధారణ ఆగమనాన్ని ఉపయోగించి
+సూత్రాల గురించిన సిద్ధాంతాలను నిరూపించవచ్చని కూడా దీని అర్థం.
+
+\begin{lem}
+\ollabel{lem:fseq-init}
+$\tuple{!A_0,\dotsc,!A_n}$ అనేది $!A_n$కు నిర్మాణ క్రమమనీ,
+$k \leq n$ అనీ అనుకుందాం. అప్పుడు $\tuple{!A_0,\dotsc,!A_k}$
+అనేది $!A_k$కు నిర్మాణ క్రమం.
+\end{lem}
+
+\begin{proof}
+సాధన.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][fseq]{lem:fseq-init}ను నిరూపించండి.
+\end{prob}
+
+\begin{thm}
+\ollabel{thm:fseq-frm-equiv}
+$\Frm[L]$ అనేది, నిర్మాణ క్రమం గల అన్ని $\Lang L$-సంకేతమాలలు~$!A$
+ఉన్న సమితి.
+\end{thm}
+
+\begin{proof}
+భాష~$\Lang L$లో నిర్మాణ క్రమం గల అన్ని సంకేతమాలల సమితిని $F$
+అనుకుందాం. \olref[fol][syn][fseq]{prop:formed}లో
+$\Frm[L] \subseteq F$ అని చూశాం; ఇప్పుడు తిరుగుదిశను నిరూపిస్తాం.
+
+$!A$కు $\tuple{!A_0,\dotsc,!A_n}$ అనే నిర్మాణ క్రమం ఉందనుకుందాం.
+$n$పై బలమైన ఆగమనం ద్వారా $!A \in \Frm[L]$ అని నిరూపిస్తాం. చివరి
+సూచిక $m < n$ గల నిర్మాణ క్రమం ఉన్న ప్రతి సంకేతమాల $\Frm[L]$లో
+ఉంటుందనేది మన ఆగమన పరికల్పన.
+\sourcecorrection{OLTEFOLSYN-005}{ఆంగ్ల మూలం $n$పై ఆగమనం అంటూనే,
+పరికల్పనను ``పొడవు $m<n$'' కోసం పేర్కొంది; కానీ
+$\tuple{!A_0,\dotsc,!A_n}$ పొడవు $n+1$. పరికల్పనను చివరి సూచిక
+$m<n$ అని స్పష్టపరచాం; ఇది వెంటనే వాడే $j,k<n$తో సరిపోతుంది.}
+నిర్మాణ క్రమం నిర్వచనం ప్రకారం, $!A \ident !A_n$ పరమాణువు అయి ఉండాలి;
+లేదా కింది వాటిలో ఒకటి నిజమయ్యేలా $j,k < n$లు ఉండాలి:
+\begin{enumerate}
+    \tagitem{prvNot}{$!A \ident \lnot !A_j$.}{}%
+    \tagitem{prvAnd}{$!A \ident (!A_j \land !A_k)$.}{}%
+    \tagitem{prvOr}{$!A \ident (!A_j \lor !A_k)$.}{}%
+    \tagitem{prvIf}{$!A \ident (!A_j \lif !A_k)$.}{}%
+    \tagitem{prvIff}{$!A \ident (!A_j \liff !A_k)$.}{}%
+    \tagitem{prvAll}{$!A \ident \lforall[x][!A_j]$.}{}%
+    \tagitem{prvEx}{$!A \ident \lexists[x][!A_j]$.}{}%
+\end{enumerate}
+ఇప్పుడు సందర్భాలవారీగా తర్కిద్దాం. $!A$ పరమాణువు అయితే
+$!A_n \in \Frm[L]$.
+\sourcecorrection{OLTEFOLSYN-004}{సిద్ధాంతమూ నిరూపణమూ భాష~$\Lang L$ను
+నిర్దేశించినా, ఆంగ్ల మూలం పరమాణు సందర్భంలోనూ తరువాతి ద్విస్థానిక
+సందర్భంలోనూ $\Frm[L_0]$కు మారింది. రెండింటినీ సందర్భం కోరే
+$\Frm[L]$గా చేశాం.}
+బదులుగా $!A \ident (!A_j \land !A_k)$ అనుకుందాం.
+\sourcecorrection{OLTEFOLSYN-006}{ఆంగ్ల మూలం ఇక్కడ అర్థపర తుల్యత
+$\equiv$ను వాడింది. నిర్మాణ క్రమ నిర్వచనం సంకేతమాల తాదాత్మ్యం
+$\ident$ను కోరుతుంది కనుక, అదే సంబంధాన్ని నిలకడగా వాడాం.}
+\olref[fol][syn][fseq]{lem:fseq-init} ప్రకారం,
+$\tuple{!A_0,\dotsc,!A_j}$, $\tuple{!A_0,\dotsc,!A_k}$లు వరుసగా
+$!A_j$,~$!A_k$లకు నిర్మాణ క్రమాలు. ఇవి $!A$ నిర్మాణ క్రమానికి నిజ
+ఆద్య ఉపక్రమాలు కనుక వాటి చివరి సూచికలు~$n$కంటే తక్కువ. అందువల్ల
+ఆగమన పరికల్పన ప్రకారం $!A_j$,~$!A_k$లు $\Frm[L]$లో ఉంటాయి; \tetoken{ఒక సూత్రం}{!!a{formula}}
+నిర్వచనం ప్రకారం $(!A_j \land !A_k)$ కూడా అందులోనే ఉంటుంది. మిగతా
+సందర్భాలు సమాంతర తర్కంతో వస్తాయి.
+\end{proof}
+
+పదాల నిర్మాణ క్రమాలకు కూడా \tetoken{సూత్రాలు}{!!{formula}s} నిర్మాణ క్రమాల వంటి ధర్మాలు
+ఉంటాయి.
+
+\begin{prop}
+\ollabel{prop:fseq-trm-equiv}
+$\Trm[L]$ అనేది పద నిర్మాణ క్రమం గల అన్ని $\Lang L$-సంకేతమాలలు~$t$
+ఉన్న సమితి.
+\end{prop}
+
+\begin{proof}
+సాధన.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][fseq]{prop:fseq-trm-equiv}ను నిరూపించండి.
+సూచన: \olref[fol][syn][fseq]{thm:fseq-frm-equiv} నిరూపణలో వాడిన
+వ్యూహాన్ని పోలిన వ్యూహాన్ని వాడండి.
+\end{prob}
+
+నిర్మాణ క్రమాల్లో రెండు రకాల ``వ్యర్థ'' భాగాలు ఉండవచ్చు: పునరావృత
+మూలకాలు; సూత్రం లేదా పదం నిర్మాణానికి సంబంధం లేని మూలకాలు. కనిష్ఠ
+నిర్మాణ క్రమాలను పరిశీలించడం ద్వారా రెండింటినీ తొలగించవచ్చు.
+
+\begin{defn}[కనిష్ఠ నిర్మాణ క్రమాలు]
+\ollabel{defn:minimal-fseq}
+సూత్రం~$!A$కు నిర్మాణ క్రమం $\tuple{!A_0, \ldots, !A_n}$,
+$!A$కు \emph{కనిష్ఠ నిర్మాణ క్రమం} కావడం అంటే $!A$కు ఉన్న ప్రతి ఇతర
+నిర్మాణ క్రమం~$s$ కోసం, $!A$కు ఆ క్రమం~$s$ పొడవు $n+1$కంటే ఎక్కువ
+లేదా దానికి సమానం కావడం.
+
+అదే విధంగా, పదం~$t$కు నిర్మాణ క్రమం $\tuple{t_0, \ldots, t_n}$,
+$t$కు \emph{కనిష్ఠ నిర్మాణ క్రమం} కావడం అంటే $t$కు ఉన్న ప్రతి ఇతర
+నిర్మాణ క్రమం~$s$ కోసం, $t$కు ఆ క్రమం~$s$ పొడవు $n+1$కంటే ఎక్కువ లేదా
+దానికి సమానం కావడం.
+\end{defn}
+
+ఒక సూత్రం లేదా పదానికి ఒకటికంటే ఎక్కువ కనిష్ఠ నిర్మాణ క్రమాలు
+ఉండవచ్చని గమనించండి; కానీ వాటిలో సరిగ్గా అవే సంకేతమాలలు ఉంటాయి.
+
+\begin{prop}
+\ollabel{prop:subformula-equivs}
+కిందివి తుల్యమైనవి:
+\begin{enumerate}
+    \item $!B$, $!A$కు ఉప-\tetoken{సూత్రం}{!!{formula}}.
+    \item $!A$కు ఉన్న ప్రతి నిర్మాణ క్రమంలో $!B$ వస్తుంది.
+    \item $!A$కు ఉన్న ఒక కనిష్ఠ నిర్మాణ క్రమంలో $!B$ వస్తుంది.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+సాధన.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][fseq]{prop:subformula-equivs}ను నిరూపించండి.
+\end{prob}
+
+\begin{history}
+రేమండ్ స్మల్యన్ తన \emph{First-Order Logic} పాఠ్యగ్రంథంలో
+\citep{Smullyan1968} నిర్మాణ క్రమాలను ప్రవేశపెట్టారు. నిర్మాణ క్రమాల
+అదనపు ధర్మాలను \citet{Zuckerman1973} స్థాపించారు.
+\end{history}
+
+\end{document}

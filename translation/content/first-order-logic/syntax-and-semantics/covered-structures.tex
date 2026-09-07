@@ -1,0 +1,73 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: covered-structures
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{cov}
+
+\olsection{మొదటిస్థాయి విధేయ భాషల కోసం ఆవృత \printtoken{P}{structure}}
+
+\begin{explain}
+ఏ \tetoken{చరాలనూ}{!!{variable}s} కలిగి లేని పదాన్ని \emph{సంవృత} పదం అంటామని గుర్తుచేసుకోండి.
+\end{explain}
+
+\begin{defn}[సంవృత పదాల \tetoken{విలువ}{!!^{value}}]
+$t$ అనేది భాష~$\Lang L$లోని సంవృత పదం, $\Struct M$ అనేది
+$\Lang L$కు ఒక \tetoken{నిర్మాణం}{!!{structure}} అయితే, దాని \emph{\tetoken{విలువ}{!!{value}}}~$\Value{t}{M}$ను
+కింది విధంగా నిర్వచిస్తాం:
+\begin{enumerate}
+\item $t$ కేవలం \tetoken{స్థిరసంకేతం}{!!{constant}}~$c$ అయితే, $\Value{c}{M} = \Assign{c}{M}$.
+\item $t$ రూపం $\Atom{f}{t_1, \ldots, t_n}$ అయితే,
+  \[
+  \Value{t}{M} = \Assign{f}{M}(\Value{t_1}{M}, \ldots,
+  \Value{t_n}{M}).
+  \]
+\end{enumerate}
+\end{defn}
+
+\begin{defn}[ఆవృత \tetoken{నిర్మాణం}{!!{structure}}]
+ఒక \tetoken{నిర్మాణంలో}{!!{structure}} వ్యక్తి క్షేత్రంలోని ప్రతి మూలకం ఏదో ఒక సంవృత
+పదం యొక్క \tetoken{విలువ}{!!{value}} అయితే, దానిని \emph{ఆవృతమైనది} అంటాం.
+\end{defn}
+
+\begin{ex}
+~$\Lang L$ అనేది $\Obj{zero}$, $\Obj{one}$, $\Obj{two}$, \dots, అనే
+\tetoken{స్థిరసంకేతాలు}{!!{constant}s}, ద్విస్థాన \tetoken{విధేయ సంకేతం}{!!{predicate}}~$<$, ద్విస్థాన \tetoken{ప్రమేయ సంకేతాలు}{!!{function}s}
+$+$, $\times$ గల భాష అనుకుందాం. అప్పుడు~$\Lang L$కు \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct
+M$ ఇలా ఉంటుంది: దాని వ్యక్తి క్షేత్రం $\Domain M = \{0, 1, 2, \ldots
+\}$; దాని నిర్దేశాలు $\Assign{\Obj{zero}}{M} = 0$,
+$\Assign{\Obj{one}}{M} = 1$, $\Assign{\Obj{two}}{M} = 2$, ఇలా
+కొనసాగుతాయి. ద్విస్థాన సంబంధ సంకేతం~$<$ కోసం, $\Assign{<}{M}$ అనేది
+$c_1$, ~$c_2$ కంటే చిన్నదిగా ఉండే అన్ని జంటలు
+$\tuple{c_1, c_2} \in \Domain{M}^2$ సమితి: ఉదాహరణకు,
+$\tuple{1, 3} \in \Assign{<}{M}$, కానీ
+$\tuple{2, 2} \notin \Assign{<}{M}$. ద్విస్థాన \tetoken{ప్రమేయ సంకేతం}{!!{function}}~$+$కు
+$\Assign{+}{M}$ను సాధారణ విధంగా నిర్వచించండి---ఉదాహరణకు,
+$\Assign{+}{M}(2,3)$ అనేది ~$5$కు పంపుతుంది; ద్విస్థాన
+\tetoken{ప్రమేయ సంకేతం}{!!{function}}~$\times$కు కూడా అలాగే చేయండి. అందువల్ల $\Obj{four}$ యొక్క
+\tetoken{విలువ}{!!{value}} కేవలం~$4$; $\times(\Obj{two},
++(\Obj{three},\Obj{zero}))$ యొక్క \tetoken{విలువ}{!!{value}} (లేదా మధ్యస్థ సంజ్ఞావిధానంలో,
+$\Obj{two} \times (\Obj{three} + \Obj{zero})$) ఇది:\sourcecorrection{OLTEFOLSEM-002}{లెక్కలో వరుసగా వచ్చిన రెండు సమానతా చిహ్నాల్లో మొదటిదాన్ని తొలగించాం.}
+\begin{multline*}
+\Value{\times(\Obj{two}, +(\Obj{three},\Obj{zero}))}{M}\\
+\begin{aligned}
+& =\Assign{\times}{M}(\Value{\Obj{two}}{M}, \Value{+(\Obj{three}, \Obj{zero})}{M})\\
+& = \Assign{\times}{M}(\Value{\Obj{two}}{M}, \Assign{+}{M}(\Value{\Obj{three}}{M},
+\Value{\Obj{zero}}{M})) \\
+& = \Assign{\times}{M}(\Assign{\Obj{two}}{M}, \Assign{+}{M}(\Assign{\Obj{three}}{M},
+\Assign{\Obj{zero}}{M})) \\
+& = \Assign{\times}{M}(2, \Assign{+}{M}(3, 0)) \\
+& = \Assign{\times}{M}(2, 3) \\
+& = 6
+\end{aligned}
+\end{multline*}
+\end{ex}
+
+\begin{prob}
+అంకగణిత ప్రామాణిక నమూనా~$\Struct N$ ఆవృతమైనదా? వివరించండి.
+\end{prob}
+
+\end{document}

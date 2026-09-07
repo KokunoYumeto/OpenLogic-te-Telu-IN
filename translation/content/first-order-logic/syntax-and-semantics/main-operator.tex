@@ -1,0 +1,104 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: main-operator
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{mai}
+
+\olsection{ఒక సూత్రపు \printtoken{S}{main operator}}
+
+\begin{explain}
+\tetoken{ఒక సూత్రం}{!!a{formula}}~$!A$ను నిర్మించడంలో చివరిగా ఉపయోగించిన సంయోజకం గురించి
+మాట్లాడడం తరచుగా ఉపయోగకరం. ఈ సంయోజకాన్ని $!A$ యొక్క
+\emph{ప్రధాన సంయోజకం} అంటాం. సహజావబోధన ప్రకారం, ఇది $!A$లో
+``అత్యంత వెలుపలి'' సంయోజకం. ఉదాహరణకు, $\lnot !A$కు ప్రధాన సంయోజకం
+$\lnot$; $(!A \lor !B)$కు ప్రధాన సంయోజకం $\lor$; ఇలాగే కొనసాగుతుంది.
+\end{explain}
+
+
+\begin{defn}[\tetoken{ప్రధాన సంయోజకం}{!!^{main operator}}]
+\ollabel{def:main-op}
+\tetoken{ఒక సూత్రం}{!!a{formula}}~$!A$ యొక్క \emph{\tetoken{ప్రధాన సంయోజకం}{!!{main operator}}}ను కింది విధంగా
+నిర్వచిస్తాం:
+\begin{enumerate}
+\item \indcase*{!A}{!A}{$\indfrm$కు \tetoken{ప్రధాన సంయోజకం}{!!{main operator}} ఉండదు.}
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\indfrm$ యొక్క \tetoken{ప్రధాన సంయోజకం}{!!{main operator}}
+  $\lnot$.}}{}
+
+\tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{$\indfrm$ యొక్క
+  \tetoken{ప్రధాన సంయోజకం}{!!{main operator}} $\land$.}}{}
+
+\tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{$\indfrm$ యొక్క
+  \tetoken{ప్రధాన సంయోజకం}{!!{main operator}} $\lor$.}}{}
+
+\tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{$\indfrm$ యొక్క
+  \tetoken{ప్రధాన సంయోజకం}{!!{main operator}} $\lif$.}}{}
+
+\tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{$\indfrm$ యొక్క
+  \tetoken{ప్రధాన సంయోజకం}{!!{main operator}} $\liff$.}}{}
+
+\tagitem{prvAll}{\indcase{!A}{\lforall[x][!B]}{$\indfrm$ యొక్క
+  \tetoken{ప్రధాన సంయోజకం}{!!{main operator}} $\lforall$.}}{}
+
+\tagitem{prvEx}{\indcase{!A}{\lexists[x][!B]}{$\indfrm$ యొక్క
+  \tetoken{ప్రధాన సంయోజకం}{!!{main operator}} $\lexists$.}}{}
+\end{enumerate}
+\end{defn}
+
+ప్రతి సందర్భంలోనూ సూత్రంలో సూచించిన నిర్దిష్ట \tetoken{ప్రధాన సంయోజకం}{!!{main operator}}
+\emph{ఘటన}నే ఉద్దేశిస్తున్నాం. ఉదాహరణకు,
+$((!D \lif !E) \lif (!E \lif !D))$ సూత్రం $(!B \lif !C)$ రూపంలో
+ఉంటుంది; ఇక్కడ $!B$ అనేది $(!D \lif !E)$, $!C$ అనేది
+$(!E \lif !D)$. కనుక $\lif$ యొక్క రెండవ ఘటనే \tetoken{ప్రధాన సంయోజకం}{!!{main operator}}.
+
+\begin{explain}
+ఇది పరమాణుయేతర \tetoken{సూత్రాలు}{!!{formula}s} అన్నింటినీ వాటి \tetoken{ప్రధాన సంయోజకం}{!!{main operator}} ఘటనకు
+పంపే ప్రమేయానికి \emph{పునరావర్తక} నిర్వచనం. \tetoken{సూత్రాలను}{!!{formula}s}
+ఆగమనాత్మకంగా నిర్వచించిన తీరు వల్ల ప్రతి \tetoken{సూత్రం}{!!{formula}}~$!A$,
+\olref{def:main-op}లోని సందర్భాల్లో ఒకదాన్ని తీరుస్తుంది. అందువల్ల
+ప్రతి పరమాణుయేతర \tetoken{సూత్రం}{!!{formula}}~$!A$కు \tetoken{ఒక ప్రధాన సంయోజకం}{!!a{main
+  operator}} ఉంటుందని హామీ.
+ప్రతి \tetoken{సూత్రం}{!!{formula}} ఈ షరతుల్లో ఒక్కదాన్నే తీరుస్తుంది; ప్రతి సందర్భంలో
+$!A$ను నిర్మించిన చిన్న \tetoken{సూత్రాలు}{!!{formula}s} ఏకైకంగా నిర్ణయితమవుతాయి. కనుక
+$!A$ యొక్క \tetoken{ప్రధాన సంయోజకం}{!!{main
+  operator}} ఘటన ఏకైకం; అందువల్ల మనం ఒక ప్రమేయాన్ని
+నిర్వచించాం.
+\end{explain}
+
+ఒక సూత్రపు \tetoken{ప్రధాన సంయోజకం}{!!{main operator}} ఏ సంకేతమో బట్టి, \olref{tab:main-op}లోని
+పేర్లతో \tetoken{సూత్రాలను}{!!{formula}s} పిలుస్తాం.\iftag{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}
+{ అయితే నిర్వచిత సంయోజకాలు అధికారికంగా \tetoken{సూత్రాలలో}{!!{formula}s} కనిపించవని
+గుర్తుంచుకోండి. అవి కేవలం సంక్షిప్త రూపాలు; అందువల్ల అధికారికంగా అవి
+ఒక సూత్రానికి ప్రధాన సంయోజకాలు కాలేవు. కాబట్టి అన్ని \tetoken{సూత్రాలు}{!!{formula}s}
+గురించిన నిరూపణల్లో వాటిని విడిగా పరిశీలించాల్సిన అవసరం లేదు.}
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{c | c | c}
+\tetoken{ప్రధాన సంయోజకం}{!!^{main operator}} & \tetoken{సూత్రం}{!!{formula}} రకం & ఉదాహరణ\\
+\hline
+ఏదీ లేదు & పరమాణు (\tetoken{సూత్రం}{!!{formula}}) &
+\iftag{prvFalse}{$\lfalse$,}{}
+\iftag{prvTrue}{$\ltrue$,}{}
+$\Atom{R}{t_1, \dots, t_n}$,
+$\eq[t_1][t_2]$\\
+$\lnot$ & నిషేధం & $\lnot !A$ \\
+$\land$ & సంధానం & $(!A \land !B)$ \\
+$\lor$ & వికల్పం & $(!A \lor !B)$ \\
+$\lif$ & \tetoken{సోపాధికం}{!!{conditional}} & $(!A \lif !B)$ \\
+$\liff$ & \tetoken{ద్విసోపాధికం}{!!{biconditional}} & $(!A \liff !B)$ \\
+$\lforall[][]$ & సార్వత్రిక (\tetoken{సూత్రం}{!!{formula}})& $\lforall[x][!A]$ \\
+$\lexists[][]$ & అస్తిత్వ (\tetoken{సూత్రం}{!!{formula}})& $\lexists[x][!A]$
+\end{tabular}
+\caption{\tetoken{సూత్రాలు}{!!{formula}s} ప్రధాన సంయోజకం, పేర్లు}
+\ollabel{tab:main-op}
+\end{table}
+\sourcecorrection{OLTEFOLSYN-002}{ఆంగ్ల మూలంలో సంధాన ఉదాహరణకు కుడి
+కుండలీకరణ చిహ్నం గణిత పరిధి వెలుపల ఉంది. దాన్ని $(!A \land !B)$లో
+జతగా ఉండే స్థానానికి మార్చాం; సూత్రంలోని సంకేతాల క్రమం మారలేదు.}
+
+\end{document}

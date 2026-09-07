@@ -1,0 +1,31 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTEFOLEXT-20260907",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": ["OLP-0165"],
+    "finding_count": 1
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEFOLEXT-001",
+      "unit_id": "OLP-0165",
+      "classification": "confirmed_duplicate_equality_in_term_substitution_calculation",
+      "source": {
+        "path": "content/first-order-logic/syntax-and-semantics/extensionality.tex",
+        "bytes": 5213,
+        "sha256": "50a329405f437b78605cafd811dbf3837efa0fde17069d1dee208bff49a20fda",
+        "locator": "lines 87--90, function-term case of the substitution lemma"
+      },
+      "finding": "The first display line ends with an equals sign and the first aligned line immediately begins with another equals sign, leaving no expression between the two equalities.",
+      "controlling_evidence": "The rest of the display is a standard equality chain from the substituted term's value through the recursive function interpretation to the target assignment value.",
+      "required_translation_handling": "Remove only the first redundant equals sign, retain every subsequent equality step, and add an adjacent OLTEFOLEXT-001 disclosure."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **145 of 722 source units drafted**. This readable view contains all 129 decisions and 239 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **163 of 722 source units drafted**. This readable view contains all 149 decisions and 268 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -1198,6 +1198,119 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-TE-T042-OCC-001; OLP-0005; OLP-0005-B005; source upstream/content/sets-functions-relations/sets/basics.tex:12-17 bytes 202-545 SHA-256 232ff51f51e74fcfee836650f3c597b54bf10ba5363c648a0c05fe8222e4a865; target translation/content/sets-functions-relations/sets/basics.tex:12-17 bytes 264-1086 SHA-256 9c53dd1f24d292aad1d5554b24ec18b39536cc488d43b0d399ecb72523218d8f; reader page pending.
+
+## te-Telu-IN-TE-T043 — First-order syntax register: term, string, formation sequence, syntactic identity, unique readability, main operator, subformula, scope, free/bound variable, sentence and substitution
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: పదం / సంకేతమాల / నిర్మాణ క్రమం / వాక్యనిర్మాణ తాదాత్మ్యం / ఏకార్థ పఠనీయత / ప్రధాన సంయోజకం / ఉపసూత్రం / పరిధి / స్వేచ్ఛా-బద్ధ చరం / వాక్యం / ప్రతిస్థాపన
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “First-order syntax register: term, string, formation sequence, syntactic identity, unique readability, main operator, subformula, scope, free/bound variable, sentence and substitution” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low for the broad first-order and logic register; medium to high nomenclatural uncertainty for newly composed syntax headwords and the technical free-for condition
+
+- Rationale: TE-P018--P021 directly support the connective and formal-symbol register; TE-P024 supports labelled formal derivation prose; TE-P027 directly witnesses terms, predicates, quantifiers, variables and constants; TE-P029--P030 support first-order, scope and bound-variable language; TE-P031 supports the sentence/proposition distinction; TE-P032--P033 support induction, deduction and inference register. The exact OpenLogic compounds for strings, formation sequences, syntactic identity, unique readability, main operator, subformula and capture-avoiding substitution are definition-controlled extensions, not claimed as direct headword attestation. No unexplained English reader-facing borrowings; named authors in the history block remain source attributions
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P021 [checked_context_only], PDF page undefined; printed page not stated; Conditional and biconditional headings and explanations; Direct conditional and biconditional terminology. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C005:TE-P033 [checked_context_only], PDF page 40; printed page 33; Inference section heading and definition; Direct inference and explanatory register; derivation headword is separately witnessed at TE-P024.
+
+- Alternatives: retain English syntax headwords in reader prose [rejected: rejected except for protected source-token keys] | coin an unsupported specialist neologism for each OpenLogic compound [rejected: rejected]
+
+- Review question: Please double-check whether “పదం / సంకేతమాల / నిర్మాణ క్రమం / వాక్యనిర్మాణ తాదాత్మ్యం / ఏకార్థ పఠనీయత / ప్రధాన సంయోజకం / ఉపసూత్రం / పరిధి / స్వేచ్ఛా-బద్ధ చరం / వాక్యం / ప్రతిస్థాపన” is idiomatic and technically standard for “First-order syntax register: term, string, formation sequence, syntactic identity, unique readability, main operator, subformula, scope, free/bound variable, sentence and substitution” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T043-OCC-001; OLP-0150; OLP-0150-B006; source upstream/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31 bytes 202-1424 SHA-256 471a1c986e2c701856bc6bec91cfe741242434d9a933420e279002792e2da1ec; target translation/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31 bytes 208-3503 SHA-256 01e6e1cca9e9bfb23714ca3ae9e71e44874bdeed196f239f0d16053b2fb8d685; reader page pending.
+  - te-Telu-IN-TE-T043-OCC-002; OLP-0151; OLP-0151-B006; source upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:14-19 bytes 235-583 SHA-256 12389cc260a1209a3b4db95aa795df350026c94576bb0e62653229438ada136d; target translation/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:14-19 bytes 279-1208 SHA-256 1e705735bc0b1277170dd0db769eae1bc03010e938d558f2b61a48494f65262c; reader page pending.
+  - te-Telu-IN-TE-T043-OCC-003; OLP-0152; OLP-0152-B006; source upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15 bytes 239-429 SHA-256 8a31bcb40fff1de629e4bb540c781a6b49d32c412cb87cb2bc5a29efd32461e3; target translation/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15 bytes 261-728 SHA-256 2b3386a3a2c8802d491d68e1f13f1c7bf737ff43f4c3d9544d765c1e6d8b2b88; reader page pending.
+  - te-Telu-IN-TE-T043-OCC-004; OLP-0153; OLP-0153-B006; source upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:13-21 bytes 228-790 SHA-256 6965d26327ea625a4697236ead340f76d3d83acdd087dc6cbe2bde3eebe33833; target translation/content/first-order-logic/syntax-and-semantics/unique-readability.tex:13-21 bytes 247-1597 SHA-256 912e3b885c01bc4aafb54697302b818866aa90acd4de3e96e05f6564c71c34c2; reader page pending.
+  - te-Telu-IN-TE-T043-OCC-005; OLP-0154; OLP-0154-B006; source upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:13-19 bytes 247-593 SHA-256 788d271215826c823cfcc63c0b54ab7ef65a42a50cde27b27542f2072de2d786; target translation/content/first-order-logic/syntax-and-semantics/main-operator.tex:13-19 bytes 263-1042 SHA-256 be88d7000e8f87fd2616874cbba19b53685171278422071f985f08c2a2e9c601; reader page pending.
+  - te-Telu-IN-TE-T043-OCC-006; OLP-0155; OLP-0155-B006; source upstream/content/first-order-logic/syntax-and-semantics/subformulas.tex:13-18 bytes 229-523 SHA-256 6e287a941dee45c936517925a0db269918b5020ac24892a03342dc7678f6c938; target translation/content/first-order-logic/syntax-and-semantics/subformulas.tex:13-18 bytes 229-999 SHA-256 12d27b0982dd916aa48a5b36540f6f3e6e831831acfa1fb0519f6bee8e88e529; reader page pending.
+  - te-Telu-IN-TE-T043-OCC-007; OLP-0156; OLP-0156-B006; source upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:13-23 bytes 231-815 SHA-256 b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01; target translation/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:13-21 bytes 255-1619 SHA-256 d81b0a79c050b3a3471d55c53689a955d1ffdf22733f558e844b31e672e9abea; reader page pending.
+  - te-Telu-IN-TE-T043-OCC-008; OLP-0157; OLP-0157-B006; source upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19 bytes 269-547 SHA-256 b04a358a03907e8e42caa4b1cee49c217db77e1ca2c742da21c6eb6d7051edde; target translation/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19 bytes 286-897 SHA-256 63a14129006a17e742bebceaadb8af5bdb3cf483f970e599f1cf70d10e9d4577; reader page pending.
+  - te-Telu-IN-TE-T043-OCC-009; OLP-0158; OLP-0158-B006; source upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:13-17 bytes 216-446 SHA-256 3db5cd0e374edb0ba4cff9f6f849272190d5fc5420e5132e1237adcd64619fae; target translation/content/first-order-logic/syntax-and-semantics/substitution.tex:13-18 bytes 237-705 SHA-256 e14628d57586a165b987c4bc2fc06e2e152526d96a58d03b156f93a1f9869ee3; reader page pending.
+
+## te-Telu-IN-TE-T044 — First-order semantic register: structure, domain, interpretation, variable assignment, satisfaction, validity, entailment, satisfiability, covered structure and model
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: నిర్మాణం / వ్యక్తి క్షేత్రం / అర్థనిర్దేశం / చర నిర్దేశం / సంతృప్తి / చెల్లుబాటుతనం / అర్థపర అనుగమనం / సంతృప్తిపరచదగినతనం / ఆవృత నిర్మాణం / నమూనా
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “First-order semantic register: structure, domain, interpretation, variable assignment, satisfaction, validity, entailment, satisfiability, covered structure and model” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low for the witnessed first-order, domain, element, function and consequence register; medium to high nomenclatural uncertainty for structure, satisfaction and covered-structure headwords
+
+- Rationale: TE-P027 and TE-P029 directly support predicate-logic and first-order register; TE-P030 directly names the individuals domain; TE-P008 directly supports element and membership language; TE-P011--P012 support functions and mappings; TE-P019 supports truth-value prose; TE-P023 directly defines truth-preserving consequence; and TE-P031 supplies the sentence distinction. The inspected witnesses do not directly attest OpenLogic's model-theoretic headwords for structure, variable assignment, satisfaction or covered structure, so those Telugu compounds are fixed by the frozen definitions and the already established semantic register rather than claimed as quotations from the canon. No unexplained English reader-facing borrowing; the symbols and raw OpenLogic token keys remain non-reader-visible source identity
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C004:TE-P012 [checked_context_only], PDF page 319; printed page 312; Questions 37-38; Function-versus-relation explanatory register; do not copy source answers mechanically. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage.
+
+- Alternatives: leave model-theoretic headwords in English reader prose [rejected: rejected] | claim the covered-structure and satisfaction headwords as directly attested by the canon [rejected: rejected because the inspected pages do not contain them]
+
+- Review question: Please double-check whether “నిర్మాణం / వ్యక్తి క్షేత్రం / అర్థనిర్దేశం / చర నిర్దేశం / సంతృప్తి / చెల్లుబాటుతనం / అర్థపర అనుగమనం / సంతృప్తిపరచదగినతనం / ఆవృత నిర్మాణం / నమూనా” is idiomatic and technically standard for “First-order semantic register: structure, domain, interpretation, variable assignment, satisfaction, validity, entailment, satisfiability, covered structure and model” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T044-OCC-001; OLP-0160; OLP-0160-B006; source upstream/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-33 bytes 208-1604 SHA-256 0c17fd8bd7b0a2218229c8f217581bf09cde11ec08a602019f46b20f174a4722; target translation/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-32 bytes 214-3996 SHA-256 5a747702a975f832e862e3776ca3a2a09ecf0d53cb8b74bf9c95c594dfa32213; reader page pending.
+  - te-Telu-IN-TE-T044-OCC-002; OLP-0162; OLP-0162-B008; source upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:31-34 bytes 842-992 SHA-256 50975f7de07ff4167fcf30249770ab3a4eaac7df0ae1f38d0c8f15ca7f87d530; target translation/content/first-order-logic/syntax-and-semantics/covered-structures.tex:31-34 bytes 1321-1747 SHA-256 13a68ac093651e55f54a49b6ab9aa820fa5696bc305a4c48d37b8510e9c0f05e; reader page pending.
+
+## te-Telu-IN-TE-T045 — x-variant of a variable assignment
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: x-భేదరూపం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “x-variant of a variable assignment” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: Medium nomenclatural uncertainty; low semantic uncertainty because the definition and notation are explicit
+
+- Rationale: TE-P011--P012 support functions and mappings, while TE-P027, TE-P029 and TE-P030 support variables, first-order language and the individuals domain. None directly attests this model-theoretic headword. The Telugu compound is therefore fixed transparently by the frozen definition: a variable assignment that may differ from the original only at x; the notation and defining condition remain authoritative. The metavariable x is formal notation, not an English borrowing; no reader-facing English lexical borrowing is used
+
+- Authorities checked: TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C004:TE-P012 [checked_context_only], PDF page 319; printed page 312; Questions 37-38; Function-versus-relation explanatory register; do not copy source answers mechanically. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations.
+
+- Alternatives: x-వేరియంట్ as an unexplained English borrowing [rejected: rejected] | claim direct canon attestation for the compound [rejected: rejected]
+
+- Review question: Please double-check whether “x-భేదరూపం” is idiomatic and technically standard for “x-variant of a variable assignment” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T045-OCC-001; OLP-0163; OLP-0163-B011; source upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:74-79 bytes 3078-3400 SHA-256 1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace; target translation/content/first-order-logic/syntax-and-semantics/satisfaction.tex:70-76 bytes 7066-7785 SHA-256 62464ea24cf0839849fb8808d695c66d0d091fefad102eb56d38123b97a708df; reader page pending.
+
+## te-Telu-IN-TE-T046 — extensionality (also called relevance) in first-order semantics
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: విస్తారత (సంబద్ధత అని కూడా పిలుస్తారు)
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “extensionality (also called relevance) in first-order semantics” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Medium to high nomenclatural uncertainty; low propositional uncertainty because the source proposition fixes the exact condition
+
+- Rationale: The cited passages support mappings, relations, consequence, variables, first-order language and the individuals domain, but none directly attests the technical extensionality headword. The Telugu surface is therefore a transparent, definition-controlled extension: satisfaction depends only on the common domain and the interpretations/assignment values of symbols and variables that actually occur in the formula. The source's alternate label relevance is rendered descriptively as సంబద్ధత. No unexplained English reader-facing borrowing; the term is introduced together with its defining proposition
+
+- Authorities checked: TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C004:TE-P012 [checked_context_only], PDF page 319; printed page 312; Questions 37-38; Function-versus-relation explanatory register; do not copy source answers mechanically. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations.
+
+- Alternatives: unexplained extensionality transliteration [rejected: rejected] | reuse set-extensionality wording without the local semantic definition [rejected: rejected]
+
+- Review question: Please double-check whether “విస్తారత (సంబద్ధత అని కూడా పిలుస్తారు)” is idiomatic and technically standard for “extensionality (also called relevance) in first-order semantics” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T046-OCC-001; OLP-0165; OLP-0165-B005; source upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:11 bytes 190-217 SHA-256 50a329405f437b78605cafd811dbf3837efa0fde17069d1dee208bff49a20fda; target translation/content/first-order-logic/syntax-and-semantics/extensionality.tex:11 bytes 190-227 SHA-256 15a47de0c446d52f8ae433eaaa18ee6758271fd3780fe59a676afc9a923a2e8d; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -3467,3 +3580,419 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEINT-005-OCC-001; OLP-0146; OLP-0146-B006; source upstream/content/first-order-logic/introduction/substitution.tex:13-28 bytes 208-1220 SHA-256 a874a9c9150455531a7d563ddf3e6bf35c86fc2134c324f9bf78135213d912f1; target translation/content/first-order-logic/introduction/substitution.tex:13-33 bytes 229-3348 SHA-256 f8f0f8d61c4e38423364dc4e657bddb9c860bd8f8f5a63c468dca742ce1b877e; reader page pending.
+
+## te-Telu-IN-OLTEFOLSYN-001 — OLTEFOLSYN-001: confirmed unmatched parenthesis in defined conditional
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: removed the unmatched closing parenthesis after B; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed unmatched parenthesis in defined conditional at defined-operator defIf branch, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEFOLSYN-20260907:OLTEFOLSYN-001 [checked_supports], content/first-order-logic/syntax-and-semantics/terms-formulas.tex; defined-operator defIf branch; confirmed_unmatched_parenthesis_in_defined_conditional; removed the unmatched closing parenthesis after B; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEFOLSYN-001 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEFOLSYN-001-OCC-001; OLP-0152; OLP-0152-B032; source upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:147-148 bytes 5220-5331 SHA-256 8a31bcb40fff1de629e4bb540c781a6b49d32c412cb87cb2bc5a29efd32461e3; target translation/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:147-151 bytes 10281-10742 SHA-256 2b3386a3a2c8802d491d68e1f13f1c7bf737ff43f4c3d9544d765c1e6d8b2b88; reader page pending.
+
+## te-Telu-IN-OLTEFOLSYN-002 — OLTEFOLSYN-002: confirmed misplaced closing parentheses in main operator table
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: moved the three right parentheses inside their corresponding math spans; adjacent sourcecorrection discloses the repeated delimiter repair
+
+- Intended sense: Repair the audited confirmed misplaced closing parentheses in main operator table at main-operator table examples, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEFOLSYN-20260907:OLTEFOLSYN-002 [checked_supports], content/first-order-logic/syntax-and-semantics/main-operator.tex; main-operator table examples; confirmed_misplaced_closing_parentheses_in_main_operator_table; moved the three right parentheses inside their corresponding math spans; adjacent sourcecorrection discloses the repeated delimiter repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEFOLSYN-002 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEFOLSYN-002-OCC-001; OLP-0154; OLP-0154-B018; source upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:79-99 bytes 2922-3611 SHA-256 788d271215826c823cfcc63c0b54ab7ef65a42a50cde27b27542f2072de2d786; target translation/content/first-order-logic/syntax-and-semantics/main-operator.tex:91-105 bytes 6435-7513 SHA-256 be88d7000e8f87fd2616874cbba19b53685171278422071f985f08c2a2e9c601; reader page pending.
+
+## te-Telu-IN-OLTEFOLSYN-003 — OLTEFOLSYN-003: confirmed function arity index error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: changed the k+1 indexed arguments to k indexed arguments m_1 through m_k; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed function arity index error at formation sequences for terms definition, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEFOLSYN-20260907:OLTEFOLSYN-003 [checked_supports], content/first-order-logic/syntax-and-semantics/formation-sequences.tex; formation sequences for terms definition; confirmed_function_arity_index_error; changed the k+1 indexed arguments to k indexed arguments m_1 through m_k; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEFOLSYN-003 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEFOLSYN-003-OCC-001; OLP-0156; OLP-0156-B009; source upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:40-49 bytes 1349-1884 SHA-256 b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01; target translation/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:41-48 bytes 2884-3982 SHA-256 d81b0a79c050b3a3471d55c53689a955d1ffdf22733f558e844b31e672e9abea; reader page pending.
+
+## te-Telu-IN-OLTEFOLSYN-004 — OLTEFOLSYN-004: confirmed wrong language subscript in equivalence proof
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: changed the two proof occurrences from Frm[L_0] to Frm[L], matching the theorem's arbitrary language; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed wrong language subscript in equivalence proof at converse proof atomic case, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEFOLSYN-20260907:OLTEFOLSYN-004 [checked_supports], content/first-order-logic/syntax-and-semantics/formation-sequences.tex; converse proof atomic case; confirmed_wrong_language_subscript_in_equivalence_proof; changed the two proof occurrences from Frm[L_0] to Frm[L], matching the theorem's arbitrary language; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEFOLSYN-004 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEFOLSYN-004-OCC-001; OLP-0156; OLP-0156-B021; source upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210 bytes 6652-8061 SHA-256 b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01; target translation/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:199-203 bytes 12801-13352 SHA-256 d81b0a79c050b3a3471d55c53689a955d1ffdf22733f558e844b31e672e9abea; reader page pending.
+
+## te-Telu-IN-OLTEFOLSYN-005 — OLTEFOLSYN-005: confirmed induction length wording inconsistency
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: clarified the induction hypothesis in prose as a final-index condition; no formal math atom was changed
+
+- Intended sense: Repair the audited confirmed induction length wording inconsistency at strong-induction hypothesis in converse proof, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEFOLSYN-20260907:OLTEFOLSYN-005 [checked_supports], content/first-order-logic/syntax-and-semantics/formation-sequences.tex; strong-induction hypothesis in converse proof; confirmed_induction_length_wording_inconsistency; clarified the induction hypothesis in prose as a final-index condition; no formal math atom was changed.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEFOLSYN-005 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEFOLSYN-005-OCC-001; OLP-0156; OLP-0156-B021; source upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210 bytes 6652-8061 SHA-256 b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01; target translation/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-188 bytes 11464-12242 SHA-256 d81b0a79c050b3a3471d55c53689a955d1ffdf22733f558e844b31e672e9abea; reader page pending.
+
+## te-Telu-IN-OLTEFOLSYN-006 — OLTEFOLSYN-006: confirmed syntactic identity symbol mismatch
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: changed semantic equivalence to syntactic identity in the formation-sequence case; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed syntactic identity symbol mismatch at converse proof conjunction case, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEFOLSYN-20260907:OLTEFOLSYN-006 [checked_supports], content/first-order-logic/syntax-and-semantics/formation-sequences.tex; converse proof conjunction case; confirmed_syntactic_identity_symbol_mismatch; changed semantic equivalence to syntactic identity in the formation-sequence case; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEFOLSYN-006 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEFOLSYN-006-OCC-001; OLP-0156; OLP-0156-B021; source upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210 bytes 6652-8061 SHA-256 b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01; target translation/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:204-208 bytes 13352-13902 SHA-256 d81b0a79c050b3a3471d55c53689a955d1ffdf22733f558e844b31e672e9abea; reader page pending.
+
+## te-Telu-IN-OLTEFOLSEM-001 — OLTEFOLSEM-001: confirmed hyphenation typo in relation description
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: read 'single-two place relation' as 'a single two-place relation' and translated that intended construction; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed hyphenation typo in relation description at line 77, set-theory structure example, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEFOLSEM-20260907:OLTEFOLSEM-001 [checked_supports], content/first-order-logic/syntax-and-semantics/structures.tex; line 77, set-theory structure example; confirmed_hyphenation_typo_in_relation_description; read 'single-two place relation' as 'a single two-place relation' and translated that intended construction; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEFOLSEM-001 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEFOLSEM-001-OCC-001; OLP-0161; OLP-0161-B011; source upstream/content/first-order-logic/syntax-and-semantics/structures.tex:77 bytes 3360-3430 SHA-256 7e144a9715ae1bfff09927c72b15f902f831042a7808541d595820981b722ebf; target translation/content/first-order-logic/syntax-and-semantics/structures.tex:74-80 bytes 6526-7452 SHA-256 2a1429053b3e2db089b63e0d088a0eb56c58da012358bc00270342ac33bf5077; reader page pending.
+
+## te-Telu-IN-OLTEFOLSEM-002 — OLTEFOLSEM-002: confirmed duplicate equality in closed term calculation
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: removed the first of two consecutive equality signs so the displayed chain has one equality per step; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed duplicate equality in closed term calculation at lines 54-56, opening of the displayed value calculation, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEFOLSEM-20260907:OLTEFOLSEM-002 [checked_supports], content/first-order-logic/syntax-and-semantics/covered-structures.tex; lines 54-56, opening of the displayed value calculation; confirmed_duplicate_equality_in_closed_term_calculation; removed the first of two consecutive equality signs so the displayed chain has one equality per step; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEFOLSEM-002 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEFOLSEM-002-OCC-001; OLP-0162; OLP-0162-B009; source upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:54-56 bytes 2026-2187 SHA-256 50975f7de07ff4167fcf30249770ab3a4eaac7df0ae1f38d0c8f15ca7f87d530; target translation/content/first-order-logic/syntax-and-semantics/covered-structures.tex:53-56 bytes 3697-4070 SHA-256 13a68ac093651e55f54a49b6ab9aa820fa5696bc305a4c48d37b8510e9c0f05e; reader page pending.
+
+## te-Telu-IN-OLTEFOLSAT-001 — OLTEFOLSAT-001: confirmed relation interpretation assignment suffix typo
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: removed only the stray [s] from the relation interpretation while retaining the assignment on the satisfaction assertion; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed relation interpretation assignment suffix typo at line 213, atomic-formula counterexample, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEFOLSAT-20260907:OLTEFOLSAT-001 [checked_supports], content/first-order-logic/syntax-and-semantics/satisfaction.tex; line 213, atomic-formula counterexample; confirmed_relation_interpretation_assignment_suffix_typo; removed only the stray [s] from the relation interpretation while retaining the assignment on the satisfaction assertion; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEFOLSAT-001 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEFOLSAT-001-OCC-001; OLP-0163; OLP-0163-B030; source upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:213 bytes 8891-8965 SHA-256 1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace; target translation/content/first-order-logic/syntax-and-semantics/satisfaction.tex:208-214 bytes 17611-18598 SHA-256 62464ea24cf0839849fb8808d695c66d0d091fefad102eb56d38123b97a708df; reader page pending.
+
+## te-Telu-IN-OLTEFOLSAT-002 — OLTEFOLSAT-002: confirmed antecedent predicate orientation error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: changed R(a,x) to the actual antecedent R(x,a) for m = 2, 3, and 4; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed antecedent predicate orientation error at lines 307-313, defAll-tagged universal example, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEFOLSAT-20260907:OLTEFOLSAT-002 [checked_supports], content/first-order-logic/syntax-and-semantics/satisfaction.tex; lines 307-313, defAll-tagged universal example; confirmed_antecedent_predicate_orientation_error; changed R(a,x) to the actual antecedent R(x,a) for m = 2, 3, and 4; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEFOLSAT-002 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEFOLSAT-002-OCC-001; OLP-0163; OLP-0163-B036; source upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:307-313 bytes 12895-13334 SHA-256 1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace; target translation/content/first-order-logic/syntax-and-semantics/satisfaction.tex:307-315 bytes 25010-25776 SHA-256 62464ea24cf0839849fb8808d695c66d0d091fefad102eb56d38123b97a708df; reader page pending.
+
+## te-Telu-IN-OLTEFOLSAT-003 — OLTEFOLSAT-003: confirmed missing variable in case value
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored the missing m in the second outer-assignment case; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing variable in case value at lines 328-332, outer universal example, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEFOLSAT-20260907:OLTEFOLSAT-003 [checked_supports], content/first-order-logic/syntax-and-semantics/satisfaction.tex; lines 328-332, outer universal example; confirmed_missing_variable_in_case_value; restored the missing m in the second outer-assignment case; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEFOLSAT-003 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEFOLSAT-003-OCC-001; OLP-0163; OLP-0163-B037; source upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:328-332 bytes 13777-14092 SHA-256 1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace; target translation/content/first-order-logic/syntax-and-semantics/satisfaction.tex:328-336 bytes 26532-27337 SHA-256 62464ea24cf0839849fb8808d695c66d0d091fefad102eb56d38123b97a708df; reader page pending.
+
+## te-Telu-IN-OLTEFOLSAT-004 — OLTEFOLSAT-004: confirmed outer quantifier variable mismatch
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: changed the universal-summary variable from the inner witness n to the outer assignment parameter m; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed outer quantifier variable mismatch at lines 347-351, summary of the nested-quantifier example, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEFOLSAT-20260907:OLTEFOLSAT-004 [checked_supports], content/first-order-logic/syntax-and-semantics/satisfaction.tex; lines 347-351, summary of the nested-quantifier example; confirmed_outer_quantifier_variable_mismatch; changed the universal-summary variable from the inner witness n to the outer assignment parameter m; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEFOLSAT-004 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEFOLSAT-004-OCC-001; OLP-0163; OLP-0163-B039; source upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-351 bytes 14824-15056 SHA-256 1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace; target translation/content/first-order-logic/syntax-and-semantics/satisfaction.tex:351-357 bytes 28363-28950 SHA-256 62464ea24cf0839849fb8808d695c66d0d091fefad102eb56d38123b97a708df; reader page pending.
+
+## te-Telu-IN-OLTEFOLASS-001 — OLTEFOLASS-001: confirmed tuple initial index typo
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: changed only the second tuple's initial t_i to t_1 so the argument list runs from t_1 through t_k; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed tuple initial index typo at lines 89-92, atomic case of assignment-independence proof, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEFOLASS-20260907:OLTEFOLASS-001 [checked_supports], content/first-order-logic/syntax-and-semantics/assignments.tex; lines 89-92, atomic case of assignment-independence proof; confirmed_tuple_initial_index_typo; changed only the second tuple's initial t_i to t_1 so the argument list runs from t_1 through t_k; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEFOLASS-001 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEFOLASS-001-OCC-001; OLP-0164; OLP-0164-B014; source upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:89-92 bytes 3510-3759 SHA-256 761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1; target translation/content/first-order-logic/syntax-and-semantics/assignments.tex:89-95 bytes 6144-6825 SHA-256 81974790c4ea0444d87a530972649ef0f844366fce40a404942747a31a039c6e; reader page pending.
+
+## te-Telu-IN-OLTEFOLASS-002 — OLTEFOLASS-002: confirmed variant base assignment typos
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: defined s_1' from s_1 and s_2' from s_2 instead of defining both from unindexed s; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed variant base assignment typos at lines 177-189, universal-quantifier induction case, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEFOLASS-20260907:OLTEFOLASS-002 [checked_supports], content/first-order-logic/syntax-and-semantics/assignments.tex; lines 177-189, universal-quantifier induction case; confirmed_variant_base_assignment_typos; defined s_1' from s_1 and s_2' from s_2 instead of defining both from unindexed s; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEFOLASS-002 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEFOLASS-002-OCC-001; OLP-0164; OLP-0164-B022; source upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:177-189 bytes 7400-8255 SHA-256 761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1; target translation/content/first-order-logic/syntax-and-semantics/assignments.tex:184-199 bytes 12418-14223 SHA-256 81974790c4ea0444d87a530972649ef0f844366fce40a404942747a31a039c6e; reader page pending.
+
+## te-Telu-IN-OLTEFOLASS-003 — OLTEFOLASS-003: confirmed duplicate set symbol in definition
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: removed only the repeated second Gamma from the antecedent; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed duplicate set symbol in definition at lines 239-244, satisfaction of a set definition, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEFOLASS-20260907:OLTEFOLASS-003 [checked_supports], content/first-order-logic/syntax-and-semantics/assignments.tex; lines 239-244, satisfaction of a set definition; confirmed_duplicate_set_symbol_in_definition; removed only the repeated second Gamma from the antecedent; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEFOLASS-003 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEFOLASS-003-OCC-001; OLP-0164; OLP-0164-B029; source upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:239-244 bytes 10173-10392 SHA-256 761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1; target translation/content/first-order-logic/syntax-and-semantics/assignments.tex:249-254 bytes 18375-19041 SHA-256 81974790c4ea0444d87a530972649ef0f844366fce40a404942747a31a039c6e; reader page pending.
+
+## te-Telu-IN-OLTEFOLEXT-001 — OLTEFOLEXT-001: confirmed duplicate equality in term substitution calculation
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: removed the first of two consecutive equality signs at the display opening and retained the recursive equality chain; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed duplicate equality in term substitution calculation at lines 87-90, function-term case of the substitution lemma, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEFOLEXT-20260907:OLTEFOLEXT-001 [checked_supports], content/first-order-logic/syntax-and-semantics/extensionality.tex; lines 87-90, function-term case of the substitution lemma; confirmed_duplicate_equality_in_term_substitution_calculation; removed the first of two consecutive equality signs at the display opening and retained the recursive equality chain; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEFOLEXT-001 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEFOLEXT-001-OCC-001; OLP-0165; OLP-0165-B018; source upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:87-90 bytes 3163-3317 SHA-256 50a329405f437b78605cafd811dbf3837efa0fde17069d1dee208bff49a20fda; target translation/content/first-order-logic/syntax-and-semantics/extensionality.tex:90-105 bytes 5573-6792 SHA-256 15a47de0c446d52f8ae433eaaa18ee6758271fd3780fe59a676afc9a923a2e8d; reader page pending.

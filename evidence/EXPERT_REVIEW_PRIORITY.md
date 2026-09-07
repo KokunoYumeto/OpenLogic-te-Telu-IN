@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 145 of 722 draft units**. This view selects 108 of 129 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 163 of 722 draft units**. This view selects 127 of 149 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -213,6 +213,36 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0129; first-order-logic/completeness/complete-consistent-sets; translation/content/first-order-logic/completeness/complete-consistent-sets.tex:19-23; printed/PDF page pending; OLP-0130; first-order-logic/completeness/henkin-expansions; translation/content/first-order-logic/completeness/henkin-expansions.tex:11; printed/PDF page pending; OLP-0130; first-order-logic/completeness/henkin-expansions; translation/content/first-order-logic/completeness/henkin-expansions.tex:40-48; printed/PDF page pending; OLP-0131; first-order-logic/completeness/lindenbaums-lemma; translation/content/first-order-logic/completeness/lindenbaums-lemma.tex:13; printed/PDF page pending; OLP-0132; first-order-logic/completeness/construction-of-model; translation/content/first-order-logic/completeness/construction-of-model.tex:37-75; printed/PDF page pending; OLP-0132; first-order-logic/completeness/construction-of-model; translation/content/first-order-logic/completeness/construction-of-model.tex:174-178; printed/PDF page pending; OLP-0133; first-order-logic/completeness/identity; translation/content/first-order-logic/completeness/identity.tex:12-22; printed/PDF page pending; OLP-0135; first-order-logic/completeness/compactness; translation/content/first-order-logic/completeness/compactness.tex:28-32; printed/PDF page pending; OLP-0135; first-order-logic/completeness/compactness; translation/content/first-order-logic/completeness/compactness.tex:13; printed/PDF page pending; OLP-0137; first-order-logic/completeness/downward-ls; translation/content/first-order-logic/completeness/downward-ls.tex:9-10; printed/PDF page pending; OLP-0137; first-order-logic/completeness/downward-ls; translation/content/first-order-logic/completeness/downward-ls.tex:47-59; printed/PDF page pending
 
 - Please double-check: Please double-check whether “సంపూర్ణ సమితి / సంతృప్తీకృత సమితి / హెన్కిన్ విస్తరణ / లిండెన్‌బామ్ ఉపసిద్ధాంతం / పద నమూనా / సత్య ఉపసిద్ధాంతం / వర్గీకరణ / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ సిద్ధాంతం / లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతం / స్కోలెమ్ విరోధాభాసం” is idiomatic and technically standard for “complete set / saturated set / Henkin expansion / Lindenbaum's Lemma / term model / Truth Lemma / factoring / finitely satisfiable / Compactness Theorem / Lowenheim--Skolem Theorem / Skolem's Paradox” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T043 — First-order syntax register: term, string, formation sequence, syntactic identity, unique readability, main operator, subformula, scope, free/bound variable, sentence and substitution
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: పదం / సంకేతమాల / నిర్మాణ క్రమం / వాక్యనిర్మాణ తాదాత్మ్యం / ఏకార్థ పఠనీయత / ప్రధాన సంయోజకం / ఉపసూత్రం / పరిధి / స్వేచ్ఛా-బద్ధ చరం / వాక్యం / ప్రతిస్థాపన
+
+- Occurrences: OLP-0150; first-order-logic/syntax-and-semantics/intro-syntax; translation/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31; printed/PDF page pending; OLP-0151; first-order-logic/syntax-and-semantics/first-order-languages; translation/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:14-19; printed/PDF page pending; OLP-0152; first-order-logic/syntax-and-semantics/terms-formulas; translation/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15; printed/PDF page pending; OLP-0153; first-order-logic/syntax-and-semantics/unique-readability; translation/content/first-order-logic/syntax-and-semantics/unique-readability.tex:13-21; printed/PDF page pending; OLP-0154; first-order-logic/syntax-and-semantics/main-operator; translation/content/first-order-logic/syntax-and-semantics/main-operator.tex:13-19; printed/PDF page pending; OLP-0155; first-order-logic/syntax-and-semantics/subformulas; translation/content/first-order-logic/syntax-and-semantics/subformulas.tex:13-18; printed/PDF page pending; OLP-0156; first-order-logic/syntax-and-semantics/formation-sequences; translation/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:13-21; printed/PDF page pending; OLP-0157; first-order-logic/syntax-and-semantics/free-vars-sentences; translation/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19; printed/PDF page pending; OLP-0158; first-order-logic/syntax-and-semantics/substitution; translation/content/first-order-logic/syntax-and-semantics/substitution.tex:13-18; printed/PDF page pending
+
+- Please double-check: Please double-check whether “పదం / సంకేతమాల / నిర్మాణ క్రమం / వాక్యనిర్మాణ తాదాత్మ్యం / ఏకార్థ పఠనీయత / ప్రధాన సంయోజకం / ఉపసూత్రం / పరిధి / స్వేచ్ఛా-బద్ధ చరం / వాక్యం / ప్రతిస్థాపన” is idiomatic and technically standard for “First-order syntax register: term, string, formation sequence, syntactic identity, unique readability, main operator, subformula, scope, free/bound variable, sentence and substitution” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T044 — First-order semantic register: structure, domain, interpretation, variable assignment, satisfaction, validity, entailment, satisfiability, covered structure and model
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: నిర్మాణం / వ్యక్తి క్షేత్రం / అర్థనిర్దేశం / చర నిర్దేశం / సంతృప్తి / చెల్లుబాటుతనం / అర్థపర అనుగమనం / సంతృప్తిపరచదగినతనం / ఆవృత నిర్మాణం / నమూనా
+
+- Occurrences: OLP-0160; first-order-logic/syntax-and-semantics/intro-semantics; translation/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-32; printed/PDF page pending; OLP-0162; first-order-logic/syntax-and-semantics/covered-structures; translation/content/first-order-logic/syntax-and-semantics/covered-structures.tex:31-34; printed/PDF page pending
+
+- Please double-check: Please double-check whether “నిర్మాణం / వ్యక్తి క్షేత్రం / అర్థనిర్దేశం / చర నిర్దేశం / సంతృప్తి / చెల్లుబాటుతనం / అర్థపర అనుగమనం / సంతృప్తిపరచదగినతనం / ఆవృత నిర్మాణం / నమూనా” is idiomatic and technically standard for “First-order semantic register: structure, domain, interpretation, variable assignment, satisfaction, validity, entailment, satisfiability, covered structure and model” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T046 — extensionality (also called relevance) in first-order semantics
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: విస్తారత (సంబద్ధత అని కూడా పిలుస్తారు)
+
+- Occurrences: OLP-0165; first-order-logic/syntax-and-semantics/extensionality; translation/content/first-order-logic/syntax-and-semantics/extensionality.tex:11; printed/PDF page pending
+
+- Please double-check: Please double-check whether “విస్తారత (సంబద్ధత అని కూడా పిలుస్తారు)” is idiomatic and technically standard for “extensionality (also called relevance) in first-order semantics” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -1083,3 +1113,163 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0146; first-order-logic/introduction/substitution; translation/content/first-order-logic/introduction/substitution.tex:13-33; printed/PDF page pending
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTEINT-005 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSYN-001 — OLTEFOLSYN-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: removed the unmatched closing parenthesis after B; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0152; first-order-logic/syntax-and-semantics/terms-formulas; translation/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:147-151; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSYN-001 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSYN-002 — OLTEFOLSYN-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: moved the three right parentheses inside their corresponding math spans; adjacent sourcecorrection discloses the repeated delimiter repair
+
+- Occurrences: OLP-0154; first-order-logic/syntax-and-semantics/main-operator; translation/content/first-order-logic/syntax-and-semantics/main-operator.tex:91-105; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSYN-002 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSYN-003 — OLTEFOLSYN-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: changed the k+1 indexed arguments to k indexed arguments m_1 through m_k; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0156; first-order-logic/syntax-and-semantics/formation-sequences; translation/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:41-48; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSYN-003 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSYN-004 — OLTEFOLSYN-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: changed the two proof occurrences from Frm[L_0] to Frm[L], matching the theorem's arbitrary language; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0156; first-order-logic/syntax-and-semantics/formation-sequences; translation/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:199-203; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSYN-004 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSYN-005 — OLTEFOLSYN-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: clarified the induction hypothesis in prose as a final-index condition; no formal math atom was changed
+
+- Occurrences: OLP-0156; first-order-logic/syntax-and-semantics/formation-sequences; translation/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-188; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSYN-005 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSYN-006 — OLTEFOLSYN-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: changed semantic equivalence to syntactic identity in the formation-sequence case; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0156; first-order-logic/syntax-and-semantics/formation-sequences; translation/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:204-208; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSYN-006 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSEM-001 — OLTEFOLSEM-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: read 'single-two place relation' as 'a single two-place relation' and translated that intended construction; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0161; first-order-logic/syntax-and-semantics/structures; translation/content/first-order-logic/syntax-and-semantics/structures.tex:74-80; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSEM-001 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSEM-002 — OLTEFOLSEM-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: removed the first of two consecutive equality signs so the displayed chain has one equality per step; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0162; first-order-logic/syntax-and-semantics/covered-structures; translation/content/first-order-logic/syntax-and-semantics/covered-structures.tex:53-56; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSEM-002 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSAT-001 — OLTEFOLSAT-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: removed only the stray [s] from the relation interpretation while retaining the assignment on the satisfaction assertion; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0163; first-order-logic/syntax-and-semantics/satisfaction; translation/content/first-order-logic/syntax-and-semantics/satisfaction.tex:208-214; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSAT-001 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSAT-002 — OLTEFOLSAT-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: changed R(a,x) to the actual antecedent R(x,a) for m = 2, 3, and 4; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0163; first-order-logic/syntax-and-semantics/satisfaction; translation/content/first-order-logic/syntax-and-semantics/satisfaction.tex:307-315; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSAT-002 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSAT-003 — OLTEFOLSAT-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored the missing m in the second outer-assignment case; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0163; first-order-logic/syntax-and-semantics/satisfaction; translation/content/first-order-logic/syntax-and-semantics/satisfaction.tex:328-336; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSAT-003 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLSAT-004 — OLTEFOLSAT-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: changed the universal-summary variable from the inner witness n to the outer assignment parameter m; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0163; first-order-logic/syntax-and-semantics/satisfaction; translation/content/first-order-logic/syntax-and-semantics/satisfaction.tex:351-357; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLSAT-004 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLASS-001 — OLTEFOLASS-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: changed only the second tuple's initial t_i to t_1 so the argument list runs from t_1 through t_k; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0164; first-order-logic/syntax-and-semantics/assignments; translation/content/first-order-logic/syntax-and-semantics/assignments.tex:89-95; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLASS-001 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLASS-002 — OLTEFOLASS-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: defined s_1' from s_1 and s_2' from s_2 instead of defining both from unindexed s; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0164; first-order-logic/syntax-and-semantics/assignments; translation/content/first-order-logic/syntax-and-semantics/assignments.tex:184-199; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLASS-002 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLASS-003 — OLTEFOLASS-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: removed only the repeated second Gamma from the antecedent; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0164; first-order-logic/syntax-and-semantics/assignments; translation/content/first-order-logic/syntax-and-semantics/assignments.tex:249-254; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLASS-003 is mathematically precise and idiomatic.
+
+## REV-OLTEFOLEXT-001 — OLTEFOLEXT-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: removed the first of two consecutive equality signs at the display opening and retained the recursive equality chain; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0165; first-order-logic/syntax-and-semantics/extensionality; translation/content/first-order-logic/syntax-and-semantics/extensionality.tex:90-105; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEFOLEXT-001 is mathematically precise and idiomatic.

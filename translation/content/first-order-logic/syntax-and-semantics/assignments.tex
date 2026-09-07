@@ -1,0 +1,376 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: assignments
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{ass}
+
+\olsection{చర నిర్దేశాలు}
+
+\begin{explain}
+ఒక \tetoken{చరం}{!!{variable}} నిర్దేశం~$s$, \emph{ప్రతి} చరానికీ ఒక విలువను
+ఇస్తుంది---అలాంటి చరాలు అనంతంగా ఉన్నాయి. ఇంత చేయడం నిజానికి అవసరం
+కాదు. \tetoken{చర}{!!{variable}} నిర్దేశాలు అన్ని \tetoken{చరాలకు}{!!{variable}s} విలువలను నిర్దేశించాలని కోరేది, దానివల్ల
+విషయాలు చాలా సులభమవుతాయి కాబట్టే. ఒక పదం~$t$ యొక్క విలువ, అలాగే
+\tetoken{ఒక సూత్రం}{!!a{formula}}~$!A$ అనేది \tetoken{ఒక నిర్మాణంలో}{!!a{structure}} $s$కు సాపేక్షంగా
+సంతృప్తమవుతుందా లేదా అనేవి, $t$లోని \tetoken{చరాలకు}{!!{variable}s}, $!A$లోని
+స్వేచ్ఛా \tetoken{చరాలకు}{!!{variable}s} $s$ చేసే నిర్దేశాలపైన మాత్రమే ఆధారపడతాయి.
+తరువాతి రెండు ప్రతిపాదనలు చెప్పేది ఇదే. ``ఆధారపడుతుంది'' అనే భావాన్ని
+ఖచ్చితంగా చేయడానికి, $t$లోని అన్ని చరాలపై ఏకీభవించే ఏ రెండు చర
+నిర్దేశాలైనా ఒకే విలువను ఇస్తాయని చూపుతాం; అలాగే $!A$లోని అన్ని
+స్వేచ్ఛా చరాలపై రెండు చర నిర్దేశాలు ఏకీభవిస్తే, ఒకదానికి సాపేక్షంగా
+$!A$ సంతృప్తమవుతుంది అప్పుడే, అప్పుడు మాత్రమే మరొకదానికి సాపేక్షంగా
+కూడా సంతృప్తమవుతుందని చూపుతాం.
+\end{explain}
+
+\begin{prop}\ollabel{prop:valindep}
+ఒక పదం~$t$లోని \tetoken{చరాలు}{!!{variable}s} అన్నీ $x_1$, \dots,~$x_n$లలో ఉంటే,
+$i = 1$, \dots,~$n$కు $s_1(x_i) = s_2(x_i)$ అయితే,
+$\Value{t}{M}[s_1] = \Value{t}{M}[s_2]$.
+\end{prop}
+
+\begin{proof}
+$t$ యొక్క సంక్లిష్టతపై ఆగమనం ద్వారా నిరూపిస్తాం. ఆధార సందర్భంలో $t$
+అనేది \tetoken{ఒక స్థిరసంకేతం}{!!a{constant}} లేదా $x_1$, \dots,~$x_n$లలో ఒక చరం కావచ్చు.
+$t = c$ అయితే,
+$\Value{t}{M}[s_1] = \Assign{c}{M} = \Value{t}{M}[s_2]$. $t = x_i$
+అయితే, ప్రతిపాదన పరికల్పన ప్రకారం $s_1(x_i) = s_2(x_i)$; అందువల్ల
+$\Value{t}{M}[s_1] = s_1(x_i) = s_2(x_i) = \Value{t}{M}[s_2]$.
+
+ఆగమన దశ కోసం $t = \Atom{f}{t_1, \dots, t_k}$ అనీ, వాదన
+$t_1$, \dots, ~$t_k$లకు వర్తిస్తుందనీ అనుకుందాం. అప్పుడు
+\begin{align*}
+  \Value{t}{M}[s_1] & = \Value{\Atom{f}{t_1, \dots, t_k}}{M}[s_1] \\
+  & = \Assign{f}{M}(\Value{t_1}{M}[s_1], \dots, \Value{t_k}{M}[s_1]).
+\intertext{$j = 1$, \dots,~$k$కు, $t_j$లోని \tetoken{చరాలు}{!!{variable}s}
+    $x_1$, \dots,~$x_n$లలో ఉంటాయి. ఆగమన పరికల్పన ప్రకారం,
+    $\Value{t_j}{M}[s_1] = \Value{t_j}{M}[s_2]$. కాబట్టి,}
+\Value{t}{M}[s_1] & = \Value{\Atom{f}{t_1, \dots, t_k}}{M}[s_1] \\
+  & = \Assign{f}{M}(\Value{t_1}{M}[s_1], \dots, \Value{t_k}{M}[s_1]) \\
+  & = \Assign{f}{M}(\Value{t_1}{M}[s_2], \dots, \Value{t_k}{M}[s_2]) \\
+  & = \Value{\Atom{f}{t_1, \dots, t_k}}{M}[s_2] = \Value{t}{M}[s_2].
+\end{align*}
+\end{proof}
+
+\begin{prop}\ollabel{prop:satindep}
+$!A$లోని స్వేచ్ఛా \tetoken{చరాలు}{!!{variable}s} అన్నీ $x_1$, \dots,~$x_n$లలో ఉంటే,
+$i = 1$, \dots,~$n$కు $s_1(x_i) = s_2(x_i)$ అయితే,
+$\Sat{M}{!A}[s_1]$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే
+$\Sat{M}{!A}[s_2]$.
+\end{prop}
+
+\begin{proof}
+$!A$ యొక్క సంక్లిష్టతపై ఆగమనాన్ని ఉపయోగిస్తాం. $!A$ పరమాణువుగా ఉండే
+ఆధార సందర్భంలో, $!A$ వీటిలో ఒకటి కావచ్చు:
+\iftag{prvTrue}{$\ltrue$,}{}
+\iftag{prvFalse}{$\lfalse$,}{}
+$k$-స్థాన విధేయం $R$, పదాలు $t_1$, \dots,~$t_k$ల కోసం
+$\Atom{R}{t_1, \dots, t_k}$; లేదా పదాలు $t_1$, ~$t_2$ల కోసం
+$\eq[t_1][t_2]$. చివరి రెండు సందర్భాల్లో, \tetoken{ద్విసోపాధికం}{!!{biconditional}} యొక్క
+ముందుకు దిశను మాత్రమే చూపుతాం; వెనుకకు దిశ నిరూపణ దానికి సమరూపం.
+
+\begin{enumerate}
+\tagitem{prvTrue}{%
+  \indcase{!A}{\ltrue}{$\Sat{M}{\indfrm}[s_1]$, అలాగే
+    $\Sat{M}{\indfrm}[s_2]$ రెండూ అవుతాయి.}}{}
+
+\tagitem{prvFalse}{%
+  \indcase{!A}{\lfalse}{$\Sat/{M}{!A}[s_1]$, అలాగే
+    $\Sat/{M}{!A}[s_2]$ రెండూ అవుతాయి.}}{}
+
+\item
+  \indcase{!A}{\Atom{R}{t_1, \ldots, t_k}}{
+    $\Sat{M}{\indfrm}[s_1]$ అనుకుందాం. అప్పుడు
+    \[
+    \langle \Value{t_1}{M}[s_1], \ldots, \Value{t_k}{M}[s_1] \rangle
+    \in \Assign{R}{M}.
+    \]
+    $i = 1$, \dots,~$k$కు, \olref{prop:valindep} ప్రకారం
+    $\Value{t_i}{M}[s_1] = \Value{t_i}{M}[s_2]$. కాబట్టి మనకు
+    $\langle \Value{t_1}{M}[s_2], \ldots, \Value{t_k}{M}[s_2] \rangle
+    \in \Assign{R}{M}$ కూడా లభిస్తుంది; అందువల్ల
+    $\Sat{M}{\indfrm}[s_2]$.\sourcecorrection{OLTEFOLASS-001}{మూలంలోని రెండవ క్రమిత జాబితా మొదటి పదాన్ని $t_i$గా కాకుండా, జాబితా ఆరంభానికి అనుగుణంగా $t_1$గా సరిచేశాం.}}
+\item
+  \indcase{!A}{\eq[t_1][t_2]}{$\Sat{M}{\indfrm}[s_1]$ అనుకుందాం.
+    అప్పుడు $\Value{t_1}{M}[s_1] = \Value{t_2}{M}[s_1]$. కాబట్టి,
+    \begin{align*}
+      \Value{t_1}{M}[s_2] & = \Value{t_1}{M}[s_1]
+      & \text{(\olref{prop:valindep} ప్రకారం)} \\
+      & = \Value{t_2}{M}[s_1]
+      & \text{($\Sat{M}{\eq[t_1][t_2]}[s_1]$ కాబట్టి)}\\
+      &= \Value{t_2}{M}[s_2]
+      & \text{(\olref{prop:valindep} ప్రకారం),}
+    \end{align*}
+    కనుక $\Sat{M}{\eq[t_1][t_2]}[s_2]$.}
+\end{enumerate}
+
+$!A$ కంటే తక్కువ సంక్లిష్టత గల అన్ని \tetoken{సూత్రాలు}{!!{formula}s} $!B$కు
+$\Sat{M}{!B}[s_1]$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే
+$\Sat{M}{!B}[s_2]$ అని ఇప్పుడు అనుకుందాం. $!A$ యొక్క ప్రధాన సంచాలకం
+నిర్ణయించే సందర్భాల ప్రకారం ఆగమన దశ సాగుతుంది. ప్రతి సందర్భంలోనూ
+\tetoken{ద్విసోపాధికం}{!!{biconditional}} యొక్క ముందుకు దిశను మాత్రమే చూపుతాం; వెనుకకు దిశ
+నిరూపణ దానికి సమరూపం. పరిమాణకాల సందర్భాలు తప్ప మిగతా అన్నింటిలో,
+$!A$ యొక్క ఉప-\tetoken{సూత్రాలు}{!!{formula}s}~$!B$కు ఆగమన పరికల్పనను వర్తింపజేస్తాం.
+$!B$లోని స్వేచ్ఛా చరాలు $!A$లోని వాటిలో ఉంటాయి. కాబట్టి $!A$లోని
+స్వేచ్ఛా చరాలపై $s_1$, ~$s_2$లు ఏకీభవిస్తే, $!B$లోని వాటిపైనా
+ఏకీభవిస్తాయి; అప్పుడు ఆగమన పరికల్పన $!B$కు వర్తిస్తుంది.
+
+\begin{enumerate}
+\tagitem{defNot}{}{%
+  \iftag{probNot}{%
+    \indcase!{!A}{\lnot !B}{}}{%
+    \indcase{!A}{\lnot !B}{$\Sat{M}{\indfrm}[s_1]$ అయితే,
+      $\Sat/{M}{!B}[s_1]$; ఆగమన పరికల్పన ప్రకారం
+      $\Sat/{M}{!B}[s_2]$; అందువల్ల $\Sat{M}{\indfrm}[s_2]$.}}}
+
+\tagitem{defAnd}{}{%
+  \iftag{probAnd}{%
+    \indcase!{!A}{!B \land !C}{}}{%
+    \indcase{!A}{!B \land !C}{$\Sat{M}{\indfrm}[s_1]$ అయితే,
+      $\Sat{M}{!B}[s_1]$, అలాగే $\Sat{M}{!C}[s_1]$. ఆగమన పరికల్పన
+      ప్రకారం $\Sat{M}{!B}[s_2]$, అలాగే $\Sat{M}{!C}[s_2]$. అందువల్ల
+      $\Sat{M}{\indfrm}[s_2]$.}}}
+
+\tagitem{defOr}{}{%
+  \iftag{probOr}{%
+    \indcase!{!A}{!B \lor !C}{}}{%
+    \indcase{!A}{!B \lor !C}{$\Sat{M}{\indfrm}[s_1]$ అయితే,
+      $\Sat{M}{!B}[s_1]$ లేదా $\Sat{M}{!C}[s_1]$. ఆగమన పరికల్పన
+      ప్రకారం $\Sat{M}{!B}[s_2]$ లేదా $\Sat{M}{!C}[s_2]$; కనుక
+      $\Sat{M}{\indfrm}[s_2]$.}}}
+
+\tagitem{defIf}{}{%
+  \iftag{probIf}{%
+    \indcase!{!A}{!B \lif !C}{}}{%
+    \indcase{!A}{!B \lif !C}{$\Sat{M}{\indfrm}[s_1]$ అయితే,
+    $\Sat/{M}{!B}[s_1]$ లేదా $\Sat{M}{!C}[s_1]$. ఆగమన పరికల్పన ప్రకారం,
+    $\Sat/{M}{!B}[s_2]$ లేదా $\Sat{M}{!C}[s_2]$; కనుక
+    $\Sat{M}{\indfrm}[s_2]$.}}}
+
+\tagitem{defIff}{}{%
+  \iftag{probIff}{%
+    \indcase!{!A}{!B \liff !C}{}}{%
+    \indcase{!A}{!B \liff !C}{$\Sat{M}{\indfrm}[s_1]$ అయితే,
+      $\Sat{M}{!B}[s_1]$, $\Sat{M}{!C}[s_1]$ రెండూ అవుతాయి, లేదా
+      $\Sat/{M}{!B}[s_1]$, $\Sat/{M}{!C}[s_1]$ రెండూ అవుతాయి. ఆగమన
+      పరికల్పన ప్రకారం, $\Sat{M}{!B}[s_2]$, $\Sat{M}{!C}[s_2]$ రెండూ,
+      లేదా $\Sat/{M}{!B}[s_2]$, $\Sat/{M}{!C}[s_2]$ రెండూ అవుతాయి.
+      ఏ సందర్భంలోనైనా $\Sat{M}{\indfrm}[s_2]$.}}}
+
+\tagitem{defEx}{}{%
+  \iftag{probEx}{%
+    \indcase!{!A}{\lexists[x][!B]}{}}{%
+    \indcase{!A}{\lexists[x][!B]}{$\Sat{M}{\indfrm}[s_1]$ అయితే,
+      $\Sat{M}{!B}[\Subst{s_1}{m}{x}]$ అయ్యే ఒక
+      $m \in \Domain{M}$ ఉంటుంది. $s_1' = \Subst{s_1}{m}{x}$, అలాగే
+      $s_2' = \Subst{s_2}{m}{x}$ అనుకుందాం. $!B$లోని స్వేచ్ఛా చరాలు
+      $x_1$, \dots, ~$x_n$, ~$x$లలో ఉంటాయి. $s_1'$, ~$s_2'$లు వరుసగా
+      $s_1$, ~$s_2$ల $x$-భేదరూపాలు కావడం వల్ల, పరికల్పన ప్రకారం
+      $s_1(x_i) = s_2(x_i)$ కావడం వల్ల $s_1'(x_i) = s_2'(x_i)$.
+      $s_1'$, ~$s_2'$లను నిర్వచించిన విధానం వల్ల
+      $s_1'(x) = s_2'(x) = m$. అప్పుడు $!B$, $s_1'$, ~$s_2'$లకు
+      ఆగమన పరికల్పన వర్తిస్తుంది; కనుక $\Sat{M}{!B}[s_2']$.
+      $s_2' = \Subst{s_2}{m}{x}$ కాబట్టి,
+      $\Sat{M}{!B}[\Subst{s_2}{m}{x}]$ అయ్యే ఒక
+      $m \in \Domain{M}$ ఉంటుంది; అందువల్ల
+      $\Sat{M}{\indfrm}[s_2]$.}}}
+
+\tagitem{defAll}{}{%
+  \iftag{probAll}{%
+    \indcase!{!A}{\lforall[x][!B]}{}}{%
+    \indcase{!A}{\lforall[x][!B]}{$\Sat{M}{\indfrm}[s_1]$ అయితే,
+      ప్రతి $m \in \Domain{M}$కు $\Sat{M}{!B}[\Subst{s_1}{m}{x}]$.
+      ప్రతి $m \in \Domain{M}$కు
+      $\Sat{M}{!B}[\Subst{s_2}{m}{x}]$ కూడా అని చూపాలి. కాబట్టి
+      ఏదైనా $m \in \Domain{M}$ను తీసుకొని,
+      $s_1' = \Subst{s_1}{m}{x}$, $s_2' = \Subst{s_2}{m}{x}$లను
+      పరిశీలిద్దాం. అప్పుడు $\Sat{M}{!B}[s_1']$.\sourcecorrection{OLTEFOLASS-002}{మూలంలో రెండు భేదరూపాల నిర్వచనాల్లోనూ $s$ను ఉపయోగించారు; సందర్భం, తరువాతి వాక్యాలకు అనుగుణంగా వాటిని వరుసగా $s_1$, $s_2$గా సరిచేశాం.}
+      $!B$లోని స్వేచ్ఛా చరాలు $x_1$, \dots, ~$x_n$, ~$x$లలో
+      ఉంటాయి. $s_1'$, ~$s_2'$లు వరుసగా $s_1$, ~$s_2$ల
+      $x$-భేదరూపాలు కావడం వల్ల, పరికల్పన ప్రకారం
+      $s_1(x_i) = s_2(x_i)$ కావడం వల్ల $s_1'(x_i) = s_2'(x_i)$.
+      $s_1'$, ~$s_2'$లను నిర్వచించిన విధానం వల్ల
+      $s_1'(x) = s_2'(x) = m$. అప్పుడు $!B$, $s_1'$, ~$s_2'$లకు
+      ఆగమన పరికల్పన వర్తిస్తుంది; మనకు $\Sat{M}{!B}[s_2']$ లభిస్తుంది.
+      ఇది ప్రతి $m \in \Domain{M}$కు వర్తిస్తుంది; అంటే, అన్ని
+      $m \in \Domain{M}$లకు $\Sat{M}{!B}[\Subst{s_2}{m}{x}]$;
+      కనుక $\Sat{M}{\indfrm}[s_2]$.}}}
+\end{enumerate}
+ఆగమనం ద్వారా, $!A$లోని స్వేచ్ఛా \tetoken{చరాలు}{!!{variable}s} అన్నీ
+$x_1$, \dots, ~$x_n$లలో ఉన్నప్పుడూ, $i = 1$, \dots,~$n$కు
+$s_1(x_i)=s_2(x_i)$ అయినప్పుడూ, $\Sat{M}{!A}[s_1]$ అవుతుంది అప్పుడే,
+అప్పుడు మాత్రమే $\Sat{M}{!A}[s_2]$ అని లభిస్తుంది.
+\end{proof}
+
+\begin{probtag}{probNot,probOr,probAnd,probIf,probIff,probEx,probAll}
+\olref[fol][syn][ass]{prop:satindep} యొక్క నిరూపణను పూర్తి చేయండి.
+\end{probtag}
+
+\begin{explain}
+\tetoken{వాక్యాలలో}{!!^{sentence}s} స్వేచ్ఛా చరాలు ఉండవు; కాబట్టి ఒక వాక్యంలో ఉండే
+(సున్నా) స్వేచ్ఛా చరాలన్నింటికీ ఏ రెండు చర నిర్దేశాలైనా ఒకే వాటిని
+నిర్దేశిస్తాయి. ఇప్పుడే నిరూపించిన ప్రతిపాదన ప్రకారం, ఒక చర నిర్దేశానికి
+సాపేక్షంగా ఒక నిర్మాణంలో \tetoken{ఒక వాక్యం}{!!a{sentence}} సంతృప్తమవుతుందా లేదా అనేది ఆ
+నిర్దేశంపై పూర్తిగా ఆధారపడదు. ఈ వాస్తవాన్ని నమోదు చేద్దాం. తరువాత వచ్చే,
+చర నిర్దేశాన్ని ప్రస్తావించని, \tetoken{ఒక నిర్మాణంలో}{!!a{structure}} \tetoken{ఒక వాక్యం}{!!a{sentence}} యొక్క
+సంతృప్తి నిర్వచనాన్ని ఇది సమర్థిస్తుంది.
+\end{explain}
+
+\begin{cor}
+\ollabel{cor:sat-sentence}
+$!A$ ఒక \tetoken{వాక్యం}{!!a{sentence}}, ~$s$ ఒక చర నిర్దేశం అయితే, ప్రతి చర
+నిర్దేశం~$s'$కు $\Sat{M}{!A}[s]$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే
+$\Sat{M}{!A}[s']$.
+\end{cor}
+
+\begin{proof}
+  $s'$ ఏదైనా చర నిర్దేశం అనుకుందాం. $!A$ ఒక \tetoken{వాక్యం}{!!a{sentence}} కాబట్టి,
+  దానిలో స్వేచ్ఛా చరాలు లేవు; అందువల్ల ప్రతి చర నిర్దేశం~$s'$,
+  $!A$లోని స్వేచ్ఛా చరాలన్నింటిపై $s$ నిర్దేశించే వాటినే అల్పార్థంగా
+  నిర్దేశిస్తుంది. కాబట్టి \olref{prop:satindep} యొక్క షరతు
+  సంతృప్తమవుతుంది; మనకు $\Sat{M}{!A}[s]$ అవుతుంది అప్పుడే, అప్పుడు
+  మాత్రమే $\Sat{M}{!A}[s']$ అని లభిస్తుంది.
+\end{proof}
+
+\begin{defn}
+\ollabel{defn:satisfaction}
+$!A$ ఒక \tetoken{వాక్యం}{!!a{sentence}} అయితే, \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$, ~$!A$ను
+\emph{సంతృప్తిపరుస్తుంది}, $\Sat{M}{!A}$, అని అంటాం అప్పుడే, అప్పుడు
+మాత్రమే అన్ని చర నిర్దేశాలు~$s$కు $\Sat{M}{!A}[s]$.
+\end{defn}
+
+$\Sat{M}{!A}$ అయితే, \emph{$!A$ అనేది~$\Struct{M}$లో సత్యం} అని కూడా
+సరళంగా అంటాం. సంతృప్తి భావన వ్యక్తిగత \tetoken{వాక్యాలు}{!!{sentence}s} నుంచి
+\tetoken{వాక్యాలు}{!!{sentence}s} సమితులకు సహజంగా విస్తరిస్తుంది.
+
+\begin{defn}
+\ollabel{defn:sat}
+$\Gamma$ ఒక \tetoken{వాక్యాలు}{!!{sentence}s} సమితి అయితే, \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$,
+$\Gamma$ను \emph{సంతృప్తిపరుస్తుంది}, $\Sat{M}{\Gamma}$, అని అంటాం
+అప్పుడే, అప్పుడు మాత్రమే అన్ని $!A \in \Gamma$లకు $\Sat{M}{!A}$.\sourcecorrection{OLTEFOLASS-003}{మూలంలోని ``$\Gamma$ is a set of sentences~$\Gamma$'' అనే పునరుక్తిలో రెండవ $\Gamma$ను తొలగించాం.}
+\end{defn}
+
+\begin{prop}\ollabel{prop:sentence-sat-true}
+  $\Struct{M}$ ఒక \tetoken{నిర్మాణం}{!!a{structure}}, ~$!A$ ఒక \tetoken{వాక్యం}{!!a{sentence}}, ~$s$ ఒక చర
+  నిర్దేశం అనుకుందాం. $\Sat{M}{!A}$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే
+  $\Sat{M}{!A}[s]$.
+\end{prop}
+
+\begin{proof}
+వ్యాయామం.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][ass]{prop:sentence-sat-true}ను నిరూపించండి.
+\end{prob}
+
+\begin{prop}\ollabel{prop:sat-quant}
+  $!A(x)$లో $x$ మాత్రమే స్వేచ్ఛగా కనిపిస్తుందనీ, $\Struct M$ ఒక
+  \tetoken{నిర్మాణం}{!!a{structure}} అనీ అనుకుందాం. అప్పుడు:
+  \begin{tagenumerate}{prvEx,prvAll}
+    \tagitem{prvEx}{$\Sat{M}{\lexists[x][!A(x)]}$ అవుతుంది అప్పుడే,
+      అప్పుడు మాత్రమే కనీసం ఒక చర నిర్దేశం~$s$కు
+      $\Sat{M}{!A(x)}[s]$.}{}
+    \tagitem{prvAll}{$\Sat{M}{\lforall[x][!A(x)]}$ అవుతుంది అప్పుడే,
+      అప్పుడు మాత్రమే అన్ని చర నిర్దేశాలు~$s$కు
+      $\Sat{M}{!A(x)}[s]$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+వ్యాయామం.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][ass]{prop:sat-quant}ను నిరూపించండి.
+\end{prob}
+
+\begin{prob}
+\DeclareRobustCommand{\VDash}{\mathrel{||}\joinrel\Relbar}
+$\Lang L$ అనేది \tetoken{ప్రమేయ సంకేతాలు}{!!{function}s} లేని భాష అనుకుందాం. ఒక
+\tetoken{నిర్మాణం}{!!{structure}}~$\Struct M$, \tetoken{ఒక స్థిరసంకేతం}{!!a{constant}}~$c$, ~$a \in \Domain M$
+ఇచ్చినప్పుడు, $\Struct M[a/c]$ అనేది $\Assign{c}{M[a/c]} = a$ కావడం
+తప్ప మిగతా అన్నింటిలోనూ~$\Struct M$లాగే ఉండే \tetoken{నిర్మాణంగా}{!!{structure}}
+నిర్వచించండి. \tetoken{వాక్యాలు}{!!{sentence}s}~$!A$ కోసం $\Struct M \VDash !A$ను ఇలా
+నిర్వచించండి:
+\begin{enumerate}
+\tagitem{prvFalse}{%
+  \indcase{!A}{\lfalse}{$\Struct{M} \VDash \indfrm$ కాదు.}}{}
+
+\tagitem{prvTrue}{%
+  \indcase{!A}{\ltrue}{$\Struct{M} \VDash \indfrm$.}}{}
+
+\item \indcase{!A}{\Atom{R}{d_1, \dots, d_n}}{$\Struct M \VDash \indfrm$
+  అవుతుంది అప్పుడే, అప్పుడు మాత్రమే
+  $\langle \Assign{d_1}{M}, \dots, \Assign{d_n}{M} \rangle \in
+  \Assign{R}{M}$.}
+
+\item \indcase{!A}{\eq[d_1][d_2]}{$\Struct M \VDash \indfrm$ అవుతుంది
+  అప్పుడే, అప్పుడు మాత్రమే $\Assign{d_1}{M} = \Assign{d_2}{M}$.}
+
+\tagitem{prvNot}{%
+  \indcase{!A}{\lnot !B}{$\Struct{M} \VDash \indfrm$ అవుతుంది అప్పుడే,
+    అప్పుడు మాత్రమే $\Struct{M} \VDash {!B}$ కాదు.}}{}
+
+\tagitem{prvAnd}{%
+  \indcase{!A}{(!B \land !C)}{$\Struct{M} \VDash
+    \indfrm$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే $\Struct{M} \VDash!B$,
+    అలాగే $\Struct{M} \VDash !C$.}}{}
+
+\tagitem{prvOr}{%
+  \indcase{!A}{(!B \lor !C)}{$\Struct{M} \VDash \indfrm$ అవుతుంది
+    అప్పుడే, అప్పుడు మాత్రమే $\Struct{M} \VDash !B$ లేదా
+    $\Struct{M} \VDash !C$ (లేదా రెండూ).}}{}
+
+\tagitem{prvIf}{%
+  \indcase{!A}{(!B \lif !C)}{$\Struct{M} \VDash \indfrm$ అవుతుంది
+    అప్పుడే, అప్పుడు మాత్రమే $\Struct {M} \VDash !B$ కాదు, లేదా
+    $\Struct M \VDash !C$ (లేదా రెండూ).}}{}
+
+\tagitem{prvIff}{%
+  \indcase{!A}{(!B \liff !C)}{$\Struct{M} \VDash {\indfrm}$ అవుతుంది
+    అప్పుడే, అప్పుడు మాత్రమే $\Struct{M} \VDash {!B}$,
+    $\Struct{M} \VDash {!C}$ రెండూ అవుతాయి, లేదా
+    $\Struct{M} \VDash {!B}$, $\Struct{M} \VDash {!C}$ రెండూ కావు.}}{}
+
+\tagitem{prvAll}{%
+  \indcase{!A}{\lforall[x][!B]}{$\Struct{M} \VDash {\indfrm}$ అవుతుంది
+    అప్పుడే, అప్పుడు మాత్రమే అన్ని $a \in \Domain{M}$లకు,
+    $c$ అనేది~$!B$లో కనిపించకపోతే,
+    $\Struct{M[a/c]} \VDash \Subst{!B}{c}{x}$.}}{}
+
+\tagitem{prvEx}{%
+  \indcase{!A}{\lexists[x][!B]}{$\Struct{M} \VDash
+  {\indfrm}$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే, $c$ అనేది~$!B$లో
+  కనిపించకుండా, $\Struct{M[a/c]} \VDash \Subst{!B}{c}{x}$ అయ్యే
+  ఒక $a \in \Domain M$ ఉంటుంది.}}{}
+\end{enumerate}
+$!A$లోని అన్ని స్వేచ్ఛా \tetoken{చరాలు}{!!{variable}s} $x_1$, \dots, ~$x_n$ అనీ,
+$c_1$, \dots, ~$c_n$లు $!A$లో లేని స్థిరసంకేతాలు అనీ,
+$a_1$, \dots, ~$a_n \in \Domain M$ అనీ, $s(x_i) = a_i$ అనీ
+అనుకుందాం.
+
+$\Sat{M}{!A}[s]$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే
+$\Struct M[a_1/c_1,\dots,a_n/c_n]
+\VDash \Subst{\Subst{!A}{c_1}{x_1}\dots}{c_n}{x_n}$ అని చూపండి.
+
+(చర నిర్దేశాలు లేకుండానే మొదటిస్థాయి విధేయ తర్కానికి అర్థవిచారం
+ఇవ్వడం సాధ్యమని ఈ సమస్య చూపుతుంది.)
+\end{prob}
+
+\begin{prob}
+$f$ అనేది~$!A(x,y)$లో లేని ప్రమేయ సంకేతం అనుకుందాం. అప్పుడు
+$\Sat{M}{\lforall[x][\lexists[y][!A(x,y)]]}$ అయ్యే
+\tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct{M}$ ఉంది అప్పుడే, అప్పుడు మాత్రమే
+$\Sat{M'}{\lforall[x][!A(x,f(x))]}$ అయ్యే~$\Struct M'$ ఉందని చూపండి.
+
+(ఈ సమస్య స్కోలెమ్ సిద్ధాంతం అని పిలిచేదాని ఒక ప్రత్యేక సందర్భం;
+$\lforall[x][!A(x,f(x))]$ను
+$\lforall[x][\lexists[y][!A(x,y)]]$ యొక్క \emph{స్కోలెమ్ సాధారణ రూపం}
+అంటారు.)
+\end{prob}
+
+\end{document}

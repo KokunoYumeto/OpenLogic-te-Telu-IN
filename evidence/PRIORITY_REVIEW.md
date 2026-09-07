@@ -1,6 +1,6 @@
 # Priority review
 
-This view contains 25 of 129 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
+This view contains 28 of 149 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
 
 Final reader pages remain pending; exact source and target file/line locators are shown.
 
@@ -253,3 +253,33 @@ Final reader pages remain pending; exact source and target file/line locators ar
 - Occurrences: OLP-0129 translation/content/first-order-logic/completeness/complete-consistent-sets.tex:19-23; OLP-0130 translation/content/first-order-logic/completeness/henkin-expansions.tex:11; OLP-0130 translation/content/first-order-logic/completeness/henkin-expansions.tex:40-48; OLP-0131 translation/content/first-order-logic/completeness/lindenbaums-lemma.tex:13; OLP-0132 translation/content/first-order-logic/completeness/construction-of-model.tex:37-75; OLP-0132 translation/content/first-order-logic/completeness/construction-of-model.tex:174-178; OLP-0133 translation/content/first-order-logic/completeness/identity.tex:12-22; OLP-0135 translation/content/first-order-logic/completeness/compactness.tex:28-32; OLP-0135 translation/content/first-order-logic/completeness/compactness.tex:13; OLP-0137 translation/content/first-order-logic/completeness/downward-ls.tex:9-10; OLP-0137 translation/content/first-order-logic/completeness/downward-ls.tex:47-59
 
 - Review question: Please double-check whether “సంపూర్ణ సమితి / సంతృప్తీకృత సమితి / హెన్కిన్ విస్తరణ / లిండెన్‌బామ్ ఉపసిద్ధాంతం / పద నమూనా / సత్య ఉపసిద్ధాంతం / వర్గీకరణ / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ సిద్ధాంతం / లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతం / స్కోలెమ్ విరోధాభాసం” is idiomatic and technically standard for “complete set / saturated set / Henkin expansion / Lindenbaum's Lemma / term model / Truth Lemma / factoring / finitely satisfiable / Compactness Theorem / Lowenheim--Skolem Theorem / Skolem's Paradox” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T043 — First-order syntax register: term, string, formation sequence, syntactic identity, unique readability, main operator, subformula, scope, free/bound variable, sentence and substitution
+
+- Chosen rendering: పదం / సంకేతమాల / నిర్మాణ క్రమం / వాక్యనిర్మాణ తాదాత్మ్యం / ఏకార్థ పఠనీయత / ప్రధాన సంయోజకం / ఉపసూత్రం / పరిధి / స్వేచ్ఛా-బద్ధ చరం / వాక్యం / ప్రతిస్థాపన
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0150 translation/content/first-order-logic/syntax-and-semantics/intro-syntax.tex:13-31; OLP-0151 translation/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:14-19; OLP-0152 translation/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:13-15; OLP-0153 translation/content/first-order-logic/syntax-and-semantics/unique-readability.tex:13-21; OLP-0154 translation/content/first-order-logic/syntax-and-semantics/main-operator.tex:13-19; OLP-0155 translation/content/first-order-logic/syntax-and-semantics/subformulas.tex:13-18; OLP-0156 translation/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:13-21; OLP-0157 translation/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13-19; OLP-0158 translation/content/first-order-logic/syntax-and-semantics/substitution.tex:13-18
+
+- Review question: Please double-check whether “పదం / సంకేతమాల / నిర్మాణ క్రమం / వాక్యనిర్మాణ తాదాత్మ్యం / ఏకార్థ పఠనీయత / ప్రధాన సంయోజకం / ఉపసూత్రం / పరిధి / స్వేచ్ఛా-బద్ధ చరం / వాక్యం / ప్రతిస్థాపన” is idiomatic and technically standard for “First-order syntax register: term, string, formation sequence, syntactic identity, unique readability, main operator, subformula, scope, free/bound variable, sentence and substitution” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T044 — First-order semantic register: structure, domain, interpretation, variable assignment, satisfaction, validity, entailment, satisfiability, covered structure and model
+
+- Chosen rendering: నిర్మాణం / వ్యక్తి క్షేత్రం / అర్థనిర్దేశం / చర నిర్దేశం / సంతృప్తి / చెల్లుబాటుతనం / అర్థపర అనుగమనం / సంతృప్తిపరచదగినతనం / ఆవృత నిర్మాణం / నమూనా
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0160 translation/content/first-order-logic/syntax-and-semantics/intro-semantics.tex:13-32; OLP-0162 translation/content/first-order-logic/syntax-and-semantics/covered-structures.tex:31-34
+
+- Review question: Please double-check whether “నిర్మాణం / వ్యక్తి క్షేత్రం / అర్థనిర్దేశం / చర నిర్దేశం / సంతృప్తి / చెల్లుబాటుతనం / అర్థపర అనుగమనం / సంతృప్తిపరచదగినతనం / ఆవృత నిర్మాణం / నమూనా” is idiomatic and technically standard for “First-order semantic register: structure, domain, interpretation, variable assignment, satisfaction, validity, entailment, satisfiability, covered structure and model” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T046 — extensionality (also called relevance) in first-order semantics
+
+- Chosen rendering: విస్తారత (సంబద్ధత అని కూడా పిలుస్తారు)
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0165 translation/content/first-order-logic/syntax-and-semantics/extensionality.tex:11
+
+- Review question: Please double-check whether “విస్తారత (సంబద్ధత అని కూడా పిలుస్తారు)” is idiomatic and technically standard for “extensionality (also called relevance) in first-order semantics” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?

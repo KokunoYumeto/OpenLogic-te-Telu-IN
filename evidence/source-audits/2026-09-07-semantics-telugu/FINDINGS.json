@@ -1,0 +1,45 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTEFOLSEM-20260907",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": ["OLP-0159", "OLP-0160", "OLP-0161", "OLP-0162"],
+    "finding_count": 2
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEFOLSEM-001",
+      "unit_id": "OLP-0161",
+      "classification": "confirmed_hyphenation_typo_in_relation_description",
+      "source": {
+        "path": "content/first-order-logic/syntax-and-semantics/structures.tex",
+        "bytes": 4951,
+        "sha256": "7e144a9715ae1bfff09927c72b15f902f831042a7808541d595820981b722ebf",
+        "locator": "line 77, set-theory structure example"
+      },
+      "finding": "The phrase 'a single-two place relation' combines 'single' and 'two-place' with a hyphen that makes the English description malformed.",
+      "controlling_evidence": "The language has only one non-logical symbol, the binary membership predicate; the following examples all interpret it as one two-place relation.",
+      "required_translation_handling": "Read the phrase as 'a single two-place relation', translate that intended construction, and add an adjacent OLTEFOLSEM-001 disclosure. No formula changes."
+    },
+    {
+      "finding_id": "OLTEFOLSEM-002",
+      "unit_id": "OLP-0162",
+      "classification": "confirmed_duplicate_equality_in_closed_term_calculation",
+      "source": {
+        "path": "content/first-order-logic/syntax-and-semantics/covered-structures.tex",
+        "bytes": 2646,
+        "sha256": "50975f7de07ff4167fcf30249770ab3a4eaac7df0ae1f38d0c8f15ca7f87d530",
+        "locator": "lines 54-56, opening of the displayed value calculation"
+      },
+      "finding": "The first display line ends with an equals sign and the next aligned line begins with another equals sign, yielding two consecutive equality signs with no intervening expression.",
+      "controlling_evidence": "The remaining lines form a standard equality chain from the term value to its recursively evaluated value and finally to 6.",
+      "required_translation_handling": "Remove only the first, redundant equals sign, retain the aligned equality chain, and add an adjacent OLTEFOLSEM-002 disclosure."
+    }
+  ]
+}

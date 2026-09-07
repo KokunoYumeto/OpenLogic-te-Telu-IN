@@ -1,0 +1,428 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: satisfaction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{sat}
+
+\olsection{\article{structure} \printtoken{S}{structure}లో
+  \article{formula} \printtoken{S}{formula} యొక్క సంతృప్తి}
+
+\begin{explain}
+ఒక వైపు పదాలు, \tetoken{సూత్రాలు}{!!{formula}s} వంటి వ్యక్తీకరణలను, మరో వైపు
+\tetoken{నిర్మాణాలను}{!!{structure}s} అనుసంధానించే మౌలిక భావనలు: ఒక పదం యొక్క
+\emph{\tetoken{విలువ}{!!{value}}}, \tetoken{ఒక సూత్రం}{!!a{formula}} యొక్క \emph{సంతృప్తి}. అనౌపచారికంగా,
+ఒక పదం యొక్క \tetoken{విలువ}{!!{value}} అనేది \tetoken{ఒక నిర్మాణంలోని}{!!a{structure}} \tetoken{మూలకం}{!!{element}}---ఆ పదం
+కేవలం ఒక స్థిరసంకేతమైతే, దానికి \tetoken{నిర్మాణం}{!!{structure}} నిర్దేశించిన వస్తువే దాని
+\tetoken{విలువ}{!!{value}}; అది \tetoken{ప్రమేయ సంకేతాలను}{!!{function}s} ఉపయోగించి నిర్మించబడితే, ఆ పదంలోని
+స్థిరసంకేతాల \tetoken{విలువలు}{!!{value}s}, ప్రమేయ సంకేతాలకు నిర్దేశించిన ప్రమేయాల నుంచి
+దాని \tetoken{విలువను}{!!{value}} లెక్కిస్తాం. విధేయాలకు ఇచ్చిన అర్థనిర్దేశం ఆ
+\tetoken{సూత్రాన్ని}{!!{formula}} \tetoken{నిర్మాణం}{!!{structure}} యొక్క వ్యక్తి క్షేత్రంలో సత్యం చేస్తే,
+\tetoken{ఒక సూత్రం}{!!^a{formula}} ఆ \tetoken{ఒక నిర్మాణంలో}{!!a{structure}} \emph{సంతృప్తమవుతుంది}. ఈ సంతృప్తి
+భావనను ఆగమనాత్మకంగా నిర్దేశిస్తాం: పరమాణు \tetoken{సూత్రాలు}{!!{formula}s} ఎప్పుడు
+సంతృప్తమవుతాయో \tetoken{నిర్మాణం}{!!{structure}} యొక్క నిర్దేశమే నేరుగా చెబుతుంది; ఒక
+సంక్లిష్ట \tetoken{సూత్రం}{!!{formula}} ఎప్పుడు సంతృప్తమవుతుందో, దాని ప్రధాన సంయోజకం లేదా
+పరిమాణకం ఏదో, దాని తక్షణ \tetoken{ఉపసూత్రాలు}{!!{subformula}s} సంతృప్తమవుతాయో లేదో అనేదాని
+ఆధారంగా నిర్వచిస్తాం.
+
+ఇక్కడ పరిమాణకాల సందర్భం కాస్త సూక్ష్మమైనది. పరిమాణీకృత \tetoken{సూత్రం}{!!{formula}}
+యొక్క తక్షణ \tetoken{ఉపసూత్రంలో}{!!{subformula}} ఒక స్వేచ్ఛా \tetoken{చరం}{!!{variable}} ఉంటుంది; కానీ
+\tetoken{నిర్మాణాలు}{!!{structure}s}, \tetoken{చరాలు}{!!{variable}s} యొక్క \tetoken{విలువలను}{!!{value}s} నిర్దేశించవు. ఈ
+కష్టాన్ని పరిష్కరించడానికి \emph{చర నిర్దేశాలను} కూడా ప్రవేశపెట్టి,
+సంతృప్తిని కేవలం \tetoken{ఒక నిర్మాణానికి}{!!a{structure}} సాపేక్షంగా కాకుండా, \tetoken{ఒక నిర్మాణంతో}{!!a{structure}}
+పాటు \tetoken{ఒక చరం}{!!a{variable}} నిర్దేశానికి సాపేక్షంగా నిర్వచిస్తాం.
+\end{explain}
+
+\begin{defn}[చర నిర్దేశం]
+\tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct{M}$ కోసం \emph{చర నిర్దేశం}~$s$ అనేది ప్రతి
+\tetoken{చరాన్ని}{!!{variable}} $\Domain M$లోని \tetoken{ఒక మూలకానికి}{!!a{element}} పంపే ప్రమేయం; అంటే,
+$s\colon \Var \to \Domain M$.
+\end{defn}
+
+\begin{explain}
+\tetoken{ఒక నిర్మాణం}{!!^a{structure}} ప్రతి \tetoken{స్థిరసంకేతానికి}{!!{constant}} \tetoken{ఒక విలువను}{!!a{value}}, చర నిర్దేశం ప్రతి
+చరానికి ఒక విలువను నిర్దేశిస్తాయి. అయితే వాటి నుంచి నిర్మించిన పదాలు కూడా
+\tetoken{వ్యక్తి క్షేత్రంలోని}{!!{domain}} \tetoken{మూలకాలను}{!!{element}s} సూచించాలని కోరుకుంటాం. ఇందుకోసం పదాల
+\tetoken{విలువను}{!!{value}} ఆగమనాత్మకంగా నిర్వచిస్తాం. \tetoken{స్థిరసంకేతాలు}{!!{constant}s}, చరాల విషయంలో
+విలువను వరుసగా \tetoken{నిర్మాణం}{!!{structure}}, చర నిర్దేశం చెప్పినట్లే తీసుకుంటాం; మరింత
+సంక్లిష్టమైన పదాల విషయంలో, \tetoken{నిర్మాణం}{!!{structure}} \tetoken{ప్రమేయ సంకేతాలకు}{!!{function}s} నిర్దేశించిన
+ప్రమేయాలను ఉపయోగించి పునరావర్తనంగా లెక్కిస్తాం.
+\end{explain}
+
+\begin{defn}[పదాల \tetoken{విలువ}{!!^{value}}]
+$t$ అనేది భాష~$\Lang L$లోని పదం, $\Struct M$ అనేది $\Lang L$కు ఒక
+\tetoken{నిర్మాణం}{!!{structure}}, $s$ అనేది $\Struct M$ కోసం \tetoken{ఒక చరం}{!!a{variable}} నిర్దేశం అయితే,
+\emph{\tetoken{విలువ}{!!{value}}}~$\Value{t}{M}[s]$ను కింది విధంగా నిర్వచిస్తాం:
+\begin{enumerate}
+\item \indcase{t}{c}{$\Value{\indfrm}{M}[s] = \Assign{\indcomplex}{M}$.}
+\item \indcase{t}{x}{$\Value{\indfrm}{M}[s] = s(\indcomplex)$.}
+\item \indcase{t}{\Atom{f}{t_1, \ldots, t_n}}{
+\[
+\Value{\indfrm}{M}[s] = \Assign{f}{M}(\Value{t_1}{M}[s], \ldots,
+\Value{t_n}{M}[s]).
+\]}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}[$x$-భేదరూపం]
+$s$ అనేది \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$ కోసం \tetoken{ఒక చరం}{!!a{variable}} నిర్దేశం అయితే,
+$x$కు ఏమి నిర్దేశిస్తుందనే విషయంలో మాత్రమే గరిష్ఠంగా $s$తో భేదించే
+$\Struct M$ కోసం ఏ \tetoken{చరం}{!!{variable}} నిర్దేశం~$s'$నైనా, $s$ యొక్క
+\emph{$x$-భేదరూపం} అంటాం. $s'$ అనేది $s$ యొక్క $x$-భేదరూపమైతే
+$\varAssign{s'}{s}{x}$ అని రాస్తాం.
+\end{defn}
+
+\begin{explain}
+ఒక నిర్దేశం~$s$ యొక్క $x$-భేదరూపం, $x$కు తప్పనిసరిగా \emph{వేరే}
+దానిని నిర్దేశించాల్సిన అవసరం లేదని గమనించండి. వాస్తవానికి, ప్రతి
+నిర్దేశం తనకే ఒక $x$-భేదరూపంగా పరిగణించబడుతుంది.
+\end{explain}
+
+\begin{defn}
+  $s$ అనేది \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$ కోసం \tetoken{ఒక చరం}{!!a{variable}} నిర్దేశం,
+  $m \in \Domain{M}$ అయితే, $\Subst{s}{m}{x}$ అనే నిర్దేశం కింది విధంగా
+  నిర్వచించిన చర నిర్దేశం:
+  \[\Subst{s}{m}{x}(y) = \begin{cases}
+    m & y \ident x \text{ అయితే}\\
+    s(y) & \text{లేకపోతే}.
+  \end{cases}\]
+\end{defn}
+
+మరోలా చెప్పాలంటే, $\Subst{s}{m}{x}$ అనేది $x$కు వ్యక్తి క్షేత్రపు
+\tetoken{మూలకం}{!!{element}}~$m$ను నిర్దేశించే $s$ యొక్క ప్రత్యేక $x$-భేదరూపం; $x$
+కాని \tetoken{చరాలకు}{!!{variable}s} మాత్రం $s$ నిర్దేశించిన వాటినే నిర్దేశిస్తుంది.
+
+\begin{defn}[సంతృప్తి]
+\ollabel{defn:satisfaction}
+\tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$లో, \tetoken{ఒక చరం}{!!a{variable}} నిర్దేశం~$s$కు సాపేక్షంగా
+\tetoken{ఒక సూత్రం}{!!a{formula}}~$!A$ యొక్క సంతృప్తిని $\Sat{M}{!A}[s]$ అనే సంకేతాలతో
+కింది విధంగా పునరావర్తనంగా నిర్వచిస్తాం. (``$\Sat{M}{!A}[s]$ కాదు'' అని
+అర్థం చేసుకోవడానికి $\Sat/{M}{!A}[s]$ అని రాస్తాం.)
+\begin{enumerate}
+\tagitem{prvFalse}{%
+  \indcase{!A}{\lfalse}{$\Sat/{M}{\indfrm}[s]$.}}{}
+
+\tagitem{prvTrue}{%
+  \indcase{!A}{\ltrue}{$\Sat{M}{\indfrm}[s]$.}}{}
+
+\item \indcase{!A}{\Atom{R}{t_1, \dots, t_n}}{$\Sat{M}{\indfrm}[s]$
+  అవుతుంది అప్పుడే, అప్పుడు మాత్రమే $\langle \Value{t_1}{M}[s], \dots,
+  \Value{t_n}{M}[s] \rangle \in \Assign{R}{M}$.}
+
+\item \indcase{!A}{\eq[t_1][t_2]}{$\Sat{M}{\indfrm}[s]$ అవుతుంది
+  అప్పుడే, అప్పుడు మాత్రమే $\Value{t_1}{M}[s] = \Value{t_2}{M}[s]$.}
+
+\tagitem{prvNot}{%
+  \indcase{!A}{\lnot !B}{$\Sat{M}{\indfrm}[s]$ అవుతుంది అప్పుడే,
+    అప్పుడు మాత్రమే $\Sat/{M}{!B}[s]$.}}{}
+
+\tagitem{prvAnd}{%
+  \indcase{!A}{(!B \land !C)}{$\Sat{M}{\indfrm}[s]$ అవుతుంది అప్పుడే,
+    అప్పుడు మాత్రమే $\Sat{M}{!B}[s]$ మరియు $\Sat{M}{!C}[s]$.}}{}
+
+\tagitem{prvOr}{%
+  \indcase{!A}{(!B \lor !C)}{$\Sat{M}{\indfrm}[s]$ అవుతుంది అప్పుడే,
+    అప్పుడు మాత్రమే $\Sat{M}{!B}[s]$ లేదా $\Sat{M}{!C}[s]$ (లేదా రెండూ).}}{}
+
+\tagitem{prvIf}{%
+  \indcase{!A}{(!B \lif !C)}{$\Sat{M}{\indfrm}[s]$ అవుతుంది అప్పుడే,
+    అప్పుడు మాత్రమే $\Sat/{M}{!B}[s]$ లేదా $\Sat{M}{!C}[s]$ (లేదా రెండూ).}}{}
+
+\tagitem{prvIff}{%
+  \indcase{!A}{(!B \liff !C)}{$\Sat{M}{\indfrm}[s]$ అవుతుంది అప్పుడే,
+    అప్పుడు మాత్రమే $\Sat{M}{!B}[s]$, $\Sat{M}{!C}[s]$ రెండూ అవుతాయి,
+    లేదా $\Sat{M}{!B}[s]$, $\Sat{M}{!C}[s]$ రెండూ కావు.}}{}
+
+\tagitem{prvAll}{%
+  \indcase{!A}{\lforall[x][!B]}{$\Sat{M}{\indfrm}[s]$ అవుతుంది అప్పుడే,
+    అప్పుడు మాత్రమే ప్రతి \tetoken{మూలకం}{!!{element}}~$m \in \Domain M$కు
+    $\Sat{M}{!B}[\Subst{s}{m}{x}]$.}}{}
+
+\tagitem{prvEx}{%
+  \indcase{!A}{\lexists[x][!B]}{$\Sat{M}{\indfrm}[s]$ అవుతుంది అప్పుడే,
+  అప్పుడు మాత్రమే కనీసం ఒక \tetoken{మూలకం}{!!{element}}~$m \in \Domain M$కు
+  $\Sat{M}{!B}[\Subst{s}{m}{x}]$.}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+చివరి \iftag{notprvEx,notprvAll}{నిబంధనలో}{రెండు నిబంధనల్లో} చర
+నిర్దేశాలు ముఖ్యమైనవి.\iftag{prvAll}{ $\lforall[x][!B(x)]$ యొక్క
+సంతృప్తిని ``అన్ని $m \in \Domain{M}$లకు $\Sat{M}{!B(m)}$'' అని
+నిర్వచించలేం.}{}\iftag{prvEx}{ $\lexists[x][!B(x)]$ యొక్క సంతృప్తిని
+``కనీసం ఒక $m \in \Domain{M}$కు $\Sat{M}{!B(m)}$'' అని
+నిర్వచించలేం.}{} కారణం: $m \in \Domain M$ అయితే అది భాషలోని సంకేతం
+కాదు; కాబట్టి $!B(m)$ ఒక \tetoken{సూత్రం}{!!a{formula}} కాదు (అంటే,
+$\Subst{!B}{m}{x}$ నిర్వచించబడలేదు). అంతేకాక, $\Struct{M}$లోని ప్రతి
+\tetoken{మూలకానికి}{!!{element}} పేరు పెట్టే \tetoken{స్థిరసంకేతాలు}{!!{constant}s} లేదా పదాలు మనకు అందుబాటులో
+ఉంటాయని భావించలేం; \tetoken{నిర్మాణాలు}{!!{structure}s} నిర్వచనంలో అలాంటి నిబంధనేమీ లేదు.
+ప్రామాణిక భాషలో \tetoken{స్థిరసంకేతాలు}{!!{constant}s} సమితి \tetoken{అనంతంగా లెక్కించదగిన}{!!{denumerable}}; అందువల్ల
+$\Domain{M}$ \tetoken{లెక్కించదగిన}{!!{enumerable}} కాకపోతే, ప్రతి వస్తువుకు పేరు పెట్టడానికి
+సరిపడా \tetoken{స్థిరసంకేతాలు}{!!{constant}s} కూడా ఉండవు.
+
+చరాలను వ్యక్తి క్షేత్రంలోని \tetoken{మూలకాలతో}{!!{element}s} నేరుగా అనుసంధానించే
+\tetoken{చరం}{!!{variable}} నిర్దేశాలను ప్రవేశపెట్టి ఈ సమస్యను పరిష్కరిస్తాం. అప్పుడు,
+ఉదాహరణకు, \iftag{prvEx}{$\lexists[x][!B(x)]$}{$\lforall[x][!B(x)]$}
+అనేది~$\Struct M$లో సంతృప్తమవుతుంది అప్పుడే, అప్పుడు మాత్రమే
+\iftag{prvEx}{కనీసం ఒక $m \in \Domain{M}$కు}{అన్ని $m \in
+\Domain{M}$లకు, $\Sat{M}{!B(m)}$} అని చెప్పడానికి బదులుగా, అది
+$s$కు \emph{సాపేక్షంగా}~$\Struct M$లో సంతృప్తమవుతుంది అప్పుడే, అప్పుడు
+మాత్రమే, $!B(x)$ అనేది \iftag{prvEx}{కనీసం ఒక}{ప్రతి}
+$m \in \Domain M$కు $\Subst{s}{m}{x}$కు సాపేక్షంగా సంతృప్తమవుతుంది
+అని చెబుతాం.
+\end{explain}
+
+\begin{ex}
+$\Lang{L} = \{a, b, f, R\}$ అనుకుందాం; ఇక్కడ $a$, ~$b$లు
+\tetoken{స్థిరసంకేతాలు}{!!{constant}s}, $f$ ఒక ద్విస్థాన \tetoken{ప్రమేయ సంకేతం}{!!{function}}, $R$ ఒక ద్విస్థాన
+\tetoken{విధేయ సంకేతం}{!!{predicate}}. కింది విధంగా నిర్వచించిన \tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M}$ను
+పరిశీలించండి:
+\begin{enumerate}
+\item $\Domain M = \{1, 2, 3, 4\}$
+\item $\Assign{a}{M} = 1$
+\item $\Assign{b}{M} = 2$
+\item $\Assign{f}{M}(x, y) = x+y$, $x+y \le 3$ అయితే; లేకపోతే $= 3$.
+\item $\Assign{R}{M} = \{\tuple{1, 1}, \tuple{1, 2}, \tuple{2, 3}, \tuple{2, 4}\}$
+\end{enumerate}
+ప్రతి \tetoken{చరానికి}{!!{variable}} $1 \in \Domain{M}$ను నిర్దేశించే ప్రమేయం
+$s(x) = 1$, $\Struct{M}$ కోసం ఒక చర నిర్దేశం.
+
+అప్పుడు
+\begin{align*}
+\Value{f(a,b)}{M}[s] & = \Assign{f}{M}(\Value{a}{M}[s], \Value{b}{M}[s]).
+\intertext{$a$, ~$b$లు \tetoken{స్థిరసంకేతాలు}{!!{constant}s} కాబట్టి, $\Value{a}{M}[s]
+  = \Assign{a}{M} = 1$, అలాగే $\Value{b}{M}[s] = \Assign{b}{M} = 2$. కనుక}
+\Value{f(a,b)}{M}[s] & = \Assign{f}{M}(1, 2) = 1+2 = 3.
+\intertext{$f(f(a,b),a)$ విలువను లెక్కించడానికి మనం పరిశీలించాల్సింది}
+\Value{f(f(a,b),a)}{M}[s] & = \Assign{f}{M}(\Value{f(a, b)}{M}[s],
+\Value{a}{M}[s]) = \Assign{f}{M}(3, 1) = 3,
+\intertext{ఎందుకంటే $3+1 > 3$. $s(x) = 1$, అలాగే $\Value{x}{M}[s] =
+  s(x)$ కాబట్టి, మనకు ఇది కూడా లభిస్తుంది:}
+\Value{f(f(a,b),x)}{M}[s] & = \Assign{f}{M}(\Value{f(a, b)}{M}[s],
+\Value{x}{M}[s]) = \Assign{f}{M}(3, 1) = 3,
+\end{align*}
+
+ఒక పరమాణు \tetoken{సూత్రం}{!!{formula}}~$R(t_1, t_2)$, దాని ఆర్గ్యుమెంట్ల విలువల క్రమిత
+జంట, అంటే $\tuple{\Value{t_1}{M}[s], \Value{t_2}{M}[s]}$,
+$\Assign{R}{M}$లో \tetoken{ఒక మూలకం}{!!a{element}} అయితే సంతృప్తమవుతుంది. కాబట్టి,
+ఉదాహరణకు, $\tuple{\Value{b}{M}, \Value{f(a,b)}{M}} = \tuple{2, 3}
+\in \Assign{R}{M}$ కావడంతో $\Sat{M}{R(b,f(a,b))}[s]$; కానీ
+$\tuple{1, 3} \notin \Assign{R}{M}$ కావడంతో
+$\Sat/{M}{R(x, f(a,b))}[s]$.\sourcecorrection{OLTEFOLSAT-001}{మూలంలో సంబంధ అర్థనిర్దేశం $\Assign{R}{M}$కు పొరపాటున జోడించిన $[s]$ను తొలగించాం; చర నిర్దేశం సూత్ర సంతృప్తికే వర్తిస్తుంది.}
+
+పరమాణువుకాని సూత్రం~$!A$ సంతృప్తమవుతుందో నిర్ధారించడానికి, దాని
+ప్రధాన సంయోజకానికి వర్తించే ఆగమనాత్మక నిర్వచన నిబంధనను ఉపయోగిస్తారు.
+ఉదాహరణకు, $R(a, a) \lif (R(b, x) \lor R(x, b))$లో ప్రధాన సంయోజకం
+$\lif$; అందువల్ల
+\begin{align*}
+  & \Sat{M}{R(a, a) \lif (R(b, x) \lor R(x, b))}[s] \text{ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే }\\
+  & \qquad
+  \Sat/{M}{R(a,a)}[s] \text{ లేదా } \Sat{M}{R(b, x) \lor R(x, b)}[s]
+  \intertext{$\Sat{M}{R(a,a)}[s]$ కాబట్టి ($\tuple{1,1} \in
+    \Assign{R}{M}$ కావడం వల్ల), సమాధానాన్ని ఇంకా నిర్ణయించలేం;
+    మొదట $\Sat{M}{R(b, x) \lor R(x, b)}[s]$ అవుతుందో తెలుసుకోవాలి:}
+  & \Sat{M}{R(b, x) \lor R(x, b)}[s] \text{ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే }\\
+  & \qquad \Sat{M}{R(b,x)}[s] \text{ లేదా } \Sat{M}{R(x, b)}[s]
+  \intertext{$\Sat{M}{R(x, b)}[s]$ కాబట్టి ఇది జరుగుతుంది
+    ($\tuple{1,2} \in \Assign{R}{M}$ కావడం వల్ల).}
+\end{align*}
+
+$s$ యొక్క $x$-భేదరూపం అంటే, $x$కు ఏమి నిర్దేశిస్తుందనే విషయంలో మాత్రమే
+గరిష్ఠంగా $s$తో భేదించే చర నిర్దేశమని గుర్తుచేసుకోండి. $\Domain{M}$లోని
+ప్రతి \tetoken{మూలకానికి}{!!{element}} $s$ యొక్క ఒక $x$-భేదరూపం ఉంది:
+\begin{align*}
+  s_1 & = \Subst{s}{1}{x}, &
+  s_2 & = \Subst{s}{2}{x},\\
+  s_3 & = \Subst{s}{3}{x}, &
+  s_4 & = \Subst{s}{4}{x}.
+\end{align*}
+ఉదాహరణకు, $s_2(x) = 2$; అలాగే $x$ కాని అన్ని చరాలు~$y$కు
+$s_2(y) = s(y) = 1$. $\Domain{M} = \{1, 2, 3, 4\}$ కాబట్టి,
+$\Struct{M}$ నిర్మాణం కోసం $s$కు ఉన్న $x$-భేదరూపాలు ఇవన్నీ. ముఖ్యంగా,
+$s_1 = s$ అని గమనించండి ($s$ ఎల్లప్పుడూ తనకే ఒక $x$-భేదరూపం).
+
+\iftag{prvEx}{అస్తిత్వ పరిమాణీకృత \tetoken{సూత్రం}{!!{formula}}~$\lexists[x][!A(x)]$
+  సంతృప్తమవుతుందో నిర్ణయించడానికి, కనీసం ఒక $m \in \Domain M$కు
+  $\Sat{M}{!A(x)}[\Subst{s}{m}{x}]$ అవుతుందో నిర్ణయించాలి. కాబట్టి,
+  \[
+  \Sat{M}{\lexists[x][(R(b,x) \lor R(x,b))]}[s],
+  \]
+  ఎందుకంటే $\Sat{M}{R(b,x) \lor R(x, b)}[\Subst{s}{1}{x}]$
+  ($\Subst{s}{3}{x}$ కూడా ఈ అవసరాన్ని తీరుస్తుంది). కానీ,
+  \[
+  \Sat/{M}{\lexists[x][(R(b,x) \land R(x,b))]}[s]
+  \]
+  ఎందుకంటే, మనం ఏ $m \in \Domain{M}$ను ఎంచుకున్నా,
+  $\Sat/{M}{R(b,x) \land R(x,b)}[\Subst{s}{m}{x}]$.}{}
+
+\iftag{prvAll}{సార్వత్రిక పరిమాణీకృత \tetoken{సూత్రం}{!!{formula}}~$\lforall[x][!A(x)]$
+  సంతృప్తమవుతుందో నిర్ణయించడానికి, అన్ని $m \in \Domain M$లకు
+  $\Sat{M}{!A(x)}[\Subst{s}{m}{x}]$ అవుతుందో నిర్ణయించాలి. కాబట్టి,
+  \[
+  \Sat{M}{\lforall[x][(R(x,a) \lif R(a,x))]}[s],
+  \]
+  ఎందుకంటే అన్ని $m \in \Domain M$లకు
+  $\Sat{M}{R(x,a) \lif R(a,x)}[\Subst{s}{m}{x}]$. $m = 1$కు
+  $\Sat{M}{R(a,x)}[\Subst{s}{1}{x}]$ అవుతుంది, కనుక పర్యవసానం సత్యం;
+  $m = 2$, ~$3$, ~$4$లకు $\Sat/{M}{R(x,a)}[\Subst{s}{m}{x}]$
+  అవుతుంది, కనుక పూర్వపక్షం అసత్యం. కానీ,
+  \[
+  \Sat/{M}{\lforall[x][(R(a,x) \lif R(x,a))]}[s]
+  \]
+  ఎందుకంటే $\Sat/{M}{R(a,x) \lif R(x,a)}[\Subst{s}{2}{x}]$
+  ($\Sat{M}{R(a, x)}[\Subst{s}{2}{x}]$ మరియు $\Sat/{M}{R(x,
+  a)}[\Subst{s}{2}{x}]$ కావడం వల్ల).}{}
+
+\iftag{defEx}{అస్తిత్వ పరిమాణీకృత \tetoken{సూత్రం}{!!{formula}}~$\lexists[x][!A(x)]$
+  సంతృప్తమవుతుందో నిర్ణయించడానికి,
+  $\Sat{M}{\lnot \lforall[x][\lnot !A(x)]}[s]$ అవుతుందో నిర్ణయించాలి.
+  ఉదాహరణకు, మనకు
+  \[
+  \Sat{M}{\lexists[x][(R(b,x) \lor R(x,b))]}[s].
+  \]
+  మొదట, $\Sat{M}{R(b,x) \lor R(x, b)}[\Subst{s}{1}{x}]$
+  ($\Subst{s}{3}{x}$ కూడా ఈ అవసరాన్ని తీరుస్తుంది). కనుక,
+  $\Sat/{M}{\lnot(R(b,x) \lor R(x,b))}[\Subst{s}{1}{x}]$; అందువల్ల
+  $\Sat/{M}{\lforall[x][\lnot((R(b,x) \lor R(x,b))]}[s]$; కాబట్టి
+  $\Sat{M}{\lnot\lforall[x][\lnot((R(b,x) \lor
+  R(x,b))]}[s]$. మరోవైపు,
+  \[
+  \Sat/{M}{\lexists[x][(R(b,x) \land R(x,b))],}[s].
+  \]
+  కారణం: $\Sat{M}{\lforall[x][\lnot(R(b,x) \land
+  R(x,b))]}[s]$, ఎందుకంటే ఏ $m \in \Domain M$కూ
+  $\Sat{M}{R(b,x) \land R(x,b)}[\Subst{s}{m}{x}]$ కాదు. ఈ ఉదాహరణల
+  నుంచి మీరు ఊహించగలిగినట్లుగా, కనీసం ఒక $m \in \Domain M$కు
+  $\Sat{M}{!A(x)}[\Subst{s}{m}{x}]$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే
+  $\Sat{M}{\lexists[x][!A(x)]}[s]$.}{}
+
+\iftag{defAll}{సార్వత్రిక పరిమాణీకృత \tetoken{సూత్రం}{!!{formula}}~$\lforall[x][!A(x)]$
+  సంతృప్తమవుతుందో నిర్ణయించడానికి,
+  $\Sat{M}{\lnot\lexists[x][\lnot !A(x)]}[s]$ అవుతుందో నిర్ణయించాలి.
+  ఉదాహరణకు,
+  \[
+  \Sat{M}{\lforall[x][(R(x,a) \lif R(a,x))]}[s],
+  \]
+  మొదట, అన్ని $m \in \Domain M$లకు
+  $\Sat{M}{R(x,a) \lif R(a,x)}[\Subst{s}{m}{x}]$;
+  ($\Sat{M}{R(a,x)}[\Subst{s}{1}{x}]$, అలాగే $m = 2$, ~$3$, ~$4$లకు
+  $\Sat/{M}{R(x,a)}[\Subst{s}{m}{x}]$).\sourcecorrection{OLTEFOLSAT-002}{ఈ పర్యవసాన నిరూపణలో $m=2,3,4$కు అసత్యమయ్యేది పూర్వపక్షం $R(x,a)$; మూలంలో ఉన్న $R(a,x)$ను సరిచేశాం.}
+  అందువల్ల $\Sat{M}{\lnot(R(x,a) \lif R(a,x))}[\Subst{s}{m}{x}]$
+  అయ్యే $m \in \Domain M$ లేదు; కనుక
+  $\Sat/{M}{\lexists[x][\lnot(R(x,a) \lif R(a,x))]}[s]$. అందుచేత,
+  $\Sat{M}{\lnot\lexists[x][\lnot(R(x,a) \lif R(a,x))]}[s]$.
+  మరోవైపు,
+  \[
+  \Sat/{M}{\lforall[x][(R(a,x) \lif R(x,a))]}[s],
+  \]
+  ఎందుకంటే $\Sat/{M}{R(a,x) \lif R(x,a)}[\Subst{s}{2}{x}]$; కాబట్టి
+  $\Sat{M}{\lexists[x][\lnot(R(a,x) \lif R(x,a))]}[s]$. ఈ
+  ఉదాహరణల నుంచి మీరు ఊహించగలిగినట్లుగా, ప్రతి $m \in \Domain M$కు
+  $\Sat{M}{!A(x)}[\Subst{s}{m}{x}]$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే
+  $\Sat{M}{\lforall[x][!A(x)]}[s]$.}{}
+
+మరింత సంక్లిష్టమైన సందర్భంగా దీనిని పరిశీలించండి:
+\[
+\lforall[x][(R(a,x) \lif \lexists[y][R(x,y)])].
+\]
+$\Sat/{M}{R(a,x)}[\Subst{s}{3}{x}]$, అలాగే
+$\Sat/{M}{R(a,x)}[\Subst{s}{4}{x}]$ కాబట్టి, షరతు యొక్క పర్యవసానం
+గురించి పరిశీలించాల్సిన సందర్భాలు $m = 1$, ~$m = 2$ మాత్రమే.\sourcecorrection{OLTEFOLSAT-003}{మూలంలో రెండవ సందర్భం వద్ద తప్పిపోయిన చరాన్ని పునరుద్ధరించి ``$m=2$''గా చదివాం.}
+$\Sat{M}{\lexists[y][R(x,y)]}[\Subst{s}{1}{x}]$ అవుతుందా? కనీసం ఒక
+$n \in \Domain M$కు
+$\Sat{M}{R(x,y)}[\Subst{\Subst{s}{1}{x}}{n}{y}]$ అయితే అవుతుంది.
+వాస్తవానికి $n = 1$ను తీసుకుంటే,
+$\Subst{\Subst{s}{1}{x}}{n}{y} = \Subst{s}{1}{y} = s$. $s(x) = 1$,
+$s(y) = 1$, ఇంకా $\tuple{1,1} \in \Assign{R}{M}$ కాబట్టి సమాధానం అవును.
+
+$\Sat{M}{\lexists[y][R(x,y)]}[\Subst{s}{2}{x}]$ అవుతుందో
+నిర్ణయించడానికి, $\Subst{\Subst{s}{2}{x}}{n}{y}$ అనే \tetoken{చరం}{!!{variable}}
+నిర్దేశాలను పరిశీలించాలి. ఇక్కడ $n = 1$కు ఈ నిర్దేశం
+$s_2 = \Subst{s}{2}{x}$; ఇది $R(x,y)$ను సంతృప్తిపరచదు ($s_2(x) = 2$,
+$s_2(y) = 1$, ఇంకా $\tuple{2,1}\notin \Assign{R}{M}$). అయితే,
+$\Subst{\Subst{s}{2}{x}}{3}{y} = \Subst{s_2}{3}{y}$ను పరిశీలించండి.
+$\tuple{2,3} \in \Assign{R}{M}$ కాబట్టి
+$\Sat{M}{R(x,y)}[\Subst{s_2}{3}{y}]$; అందువల్ల
+$\Sat{M}{\lexists[y][R(x,y)]}[s_2]$.
+
+కాబట్టి ప్రతి $m \in \Domain M$కు,
+$m = 3$, ~$4$ అయితే $\Sat/{M}{R(a,x)}[\Subst{s}{m}{x}]$, లేదా
+$m = 1$, ~$2$ అయితే $\Sat{M}{\lexists[y][R(x,y)]}[\Subst{s}{m}{x}]$;
+అందువల్ల\sourcecorrection{OLTEFOLSAT-004}{బాహ్య సార్వత్రిక పరిమాణకం $x$కు సంబంధించిన ఈ సంగ్రహంలో మూలంలోని ``for all $n$''ను ``for all $m$''గా సరిచేశాం.}
+\[
+\Sat{M}{\lforall[x][(R(a,x) \lif \lexists[y][R(x,y)])]}[s].
+\]
+మరోవైపు,
+\[
+\Sat/{M}{\lexists[x][(R(a,x) \land \lforall[y][R(x,y)])]}[s].
+\]
+$m = 1$, ~$m = 2$కు మాత్రమే $\Sat{M}{R(a,x)}[\Subst{s}{m}{x}]$.
+కానీ $m$ యొక్క ఈ రెండు విలువల్లో ప్రతి దానికీ, తిరిగి ఒక
+$n \in \Domain M$ ఉంది---అదే $n = 4$---దానికి
+$\Sat/{M}{R(x,y)}[\Subst{\Subst{s}{m}{x}}{n}{y}]$; అందువల్ల
+$m = 1$, ~$m = 2$కు
+$\Sat/{M}{\lforall[y][R(x,y)]}[\Subst{s}{m}{x}]$. మొత్తానికి,
+$\Sat{M}{R(a,x) \land \lforall[y][R(x,y)]}[\Subst{s}{m}{x}]$ అయ్యే
+$m \in \Domain M$ ఏదీ లేదు.
+\end{ex}
+
+\iftag{defEx}{%
+\begin{prop}\ollabel{prop:sat-ex}
+$\Sat{M}{\lexists[x][!B(x)]}[s]$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే $s$కు
+$\Sat{M}{!B(x)}[s']$ అయ్యే ఒక $x$-భేదరూపం $s'$ ఉంది.
+\end{prop}
+
+\begin{proof}
+  వ్యాయామం.
+\end{proof}
+}{}
+
+\tagprob{defEx}
+\begin{prob}
+  \olref[fol][syn][sat]{prop:sat-ex}ను నిరూపించండి.
+\end{prob}
+\tagendprob
+
+\iftag{defAll}{%
+\begin{prop}\ollabel{prop:sat-all}
+$\Sat{M}{\lforall[x][!B(x)]}[s]$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే $s$
+యొక్క ప్రతి $x$-భేదరూపం~$s'$కు $\Sat{M}{!B(x)}[s']$.
+\end{prop}
+
+\begin{proof}
+  వ్యాయామం.
+\end{proof}
+}{}
+
+\tagprob{defAll}
+\begin{prob}
+  \olref[fol][syn][sat]{prop:sat-all}ను నిరూపించండి.
+\end{prob}
+\tagendprob
+
+\begin{prob}
+$\Lang L = \{c, f, A\}$లో ఒక \tetoken{స్థిరసంకేతం}{!!{constant}}, ఒక ఏకస్థాన
+\tetoken{ప్రమేయ సంకేతం}{!!{function}}, ఒక ద్విస్థాన \tetoken{విధేయ సంకేతం}{!!{predicate}} ఉన్నాయని, \tetoken{నిర్మాణం}{!!{structure}}
+$\Struct{M}$ను కింది విధంగా ఇచ్చారని అనుకుందాం:
+\begin{enumerate}
+\item $\Domain M = \{1, 2, 3\}$
+\item $\Assign{c}{M} = 3$
+\item $\Assign{f}{M}(1) = 2, \Assign{f}{M}(2) = 3, \Assign{f}{M}(3) = 2$
+\item $\Assign{A}{M} = \{\tuple{1, 2}, \tuple{2, 3}, \tuple{3, 3}\}$
+\end{enumerate}
+(a) అన్ని \tetoken{చరాలు}{!!{variable}s}~$v$కు $s(v) = 1$ అనుకుందాం. కిందిది
+అవుతుందో లేదో కనుగొనండి:
+\[
+\Sat{M}{\lexists[x][(A(f(z), c) \lif \lforall[y][(A(y, x) \lor A(f(y),
+      x))])]}[s]
+\]
+ఎందుకు అవుతుందో లేదా ఎందుకు కాదో వివరించండి.
+
+(b) ఆ \tetoken{సూత్రం}{!!{formula}} సంతృప్తమవని మరొక నిర్మాణాన్ని, \tetoken{చరం}{!!{variable}}
+నిర్దేశాన్ని ఇవ్వండి.
+\end{prob}
+
+\end{document}

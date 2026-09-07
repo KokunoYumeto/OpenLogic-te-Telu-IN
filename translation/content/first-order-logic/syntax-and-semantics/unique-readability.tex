@@ -1,0 +1,203 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: unique-readability
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{unq}
+
+\olsection{ఏకార్థ పఠనీయత}
+
+\begin{explain}
+మనం \tetoken{సూత్రాలను}{!!{formula}s} నిర్వచించిన విధానం ప్రతి \tetoken{సూత్రానికి}{!!{formula}} ఒక
+\emph{ఏకార్థ పఠనం} ఉంటుందని హామీ ఇస్తుంది. అంటే, \tetoken{సూత్రాలకు}{!!{formula}s} మన
+నిర్మాణ నియమాల ప్రకారం దాన్ని నిర్మించడానికి సారాంశంగా ఒకే మార్గమూ,
+దానికి ``అర్థం చెప్పడానికి'' ఒకే మార్గమూ ఉంటాయి. అలా లేకపోతే మనకు
+సందిగ్ధమైన \tetoken{సూత్రాలు}{!!{formula}s}, అంటే ఒకటికంటే ఎక్కువ పఠనాలు లేదా అర్థాలు గల
+\tetoken{సూత్రాలు}{!!{formula}s} ఉండేవి---దాన్ని మనం నివారించాలనుకోవడం స్పష్టమే. మరింత
+ముఖ్యంగా, ఈ ధర్మం లేకపోతే మనం ఇవ్వబోయే నిర్వచనాలు, నిరూపణల్లో అధిక
+భాగం పనిచేయదు.
+
+ఏకార్థ పఠనీయతకు హామీ ఇవ్వని చెడ్డ నిర్మాణ నియమాలను \tetoken{సూత్రాలకు}{!!{formula}s}
+ఇచ్చి ఉంటే ఏమయ్యేదో చూడడం ద్వారా దీన్ని బహుశా అత్యంత స్పష్టంగా
+చూడవచ్చు. ఉదాహరణకు, సంయోజకాల నిర్మాణ నియమాల్లో కుండలీకరణ చిహ్నాలను
+మర్చిపోయి, కిందిదాన్ని అనుమతించి ఉండవచ్చు:
+\begin{quote}
+$!A$, $!B$లు \tetoken{సూత్రాలు}{!!{formula}s} అయితే, $!A \lif !B$ కూడా ఒక సూత్రమే.
+\end{quote}
+పరమాణు సూత్రం~$!D$తో మొదలుపెడితే, దీని వల్ల $!D \lif !D$ను
+ఏర్పరచవచ్చు. దీని నుంచీ $!D$ నుంచీ $!D \lif !D \lif !D$ను పొందవచ్చు.
+కానీ దీన్ని చేయడానికి రెండు మార్గాలు ఉన్నాయి:
+\begin{enumerate}
+\item $!D$ను $!A$గానూ, $!D \lif !D$ను $!B$గానూ తీసుకుంటాం.
+\item $!A$ను $!D \lif !D$గానూ, $!B$ను~$!D$గానూ తీసుకుంటాం.
+\end{enumerate}
+దానికి అనుగుణంగా \tetoken{సూత్రం}{!!{formula}}~$!D \lif !D \lif !D$ను ``చదవడానికి''
+రెండు మార్గాలు ఉన్నాయి. అది $!B \lif !C$ రూపంలో ఉంటుంది; ఇందులో
+$!B$ అనేది $!D$, $!C$ అనేది $!D \lif !D$. కానీ అది $!B \lif !C$
+రూపంలో \emph{కూడా} ఉంటుంది; అప్పుడు $!B$ అనేది $!D \lif !D$, $!C$
+అనేది~$!D$.
+
+ఇలా జరిగితే మన నిర్వచనాలు ఎల్లప్పుడూ పనిచేయవు. ఉదాహరణకు, ఒక సూత్రపు
+\tetoken{ప్రధాన సంయోజకాన్ని}{!!{main operator}} నిర్వచించేటప్పుడు ఇలా అంటాం: $!B \lif !C$ రూపపు
+సూత్రంలో సూచించిన~$\lif$ ఘటనే \tetoken{ప్రధాన సంయోజకం}{!!{main operator}}. కానీ
+$!D \lif !D \lif !D$ సూత్రాన్ని పైన చెప్పిన రెండు వేర్వేరు మార్గాల్లో
+$!B \lif !C$తో సరిపోల్చగలిగితే, ఒక సందర్భంలో మొదటి $\lif$ ఘటనే
+\tetoken{ప్రధాన సంయోజకం}{!!{main operator}} అవుతుంది; రెండవ సందర్భంలో రెండవ ఘటనే అవుతుంది.
+అయితే \tetoken{ప్రధాన సంయోజకం}{!!{main
+  operator}} అనేది \tetoken{సూత్రంపై}{!!{formula}} ఒక \emph{ప్రమేయం} కావాలని
+మన ఉద్దేశం. అంటే ప్రతి \tetoken{సూత్రానికి}{!!{formula}} సరిగ్గా ఒక్క \tetoken{ప్రధాన సంయోజకం}{!!{main operator}}
+ఘటన ఉండాలి.
+\end{explain}
+
+\begin{lem}
+\tetoken{ఒక సూత్రం}{!!a{formula}}~$!A$లోని ఎడమ, కుడి కుండలీకరణ చిహ్నాల సంఖ్యలు సమానం.
+\end{lem}
+
+\begin{proof}
+$!A$ను నిర్మించిన విధానంపై ఆగమనం ద్వారా దీన్ని నిరూపిస్తాం. దీనికి
+రెండు విషయాలు కావాలి: (a) ముందుగా అన్ని పరమాణు సూత్రాలకూ పరిశీలిస్తున్న
+ధర్మం ఉందని నిరూపించాలి (ఆగమన ఆధారం). (b) తరువాత, ఇచ్చిన సూత్రాల నుంచి
+కొత్త సూత్రాలను నిర్మించినప్పుడు, పాత వాటికి ఆ ధర్మం ఉంటే కొత్త వాటికీ
+ఉంటుందని నిరూపించాలి.
+
+$l(!A)$ అనేది $!A$లోని ఎడమ కుండలీకరణ చిహ్నాల సంఖ్య, $r(!A)$ అనేది
+కుడి కుండలీకరణ చిహ్నాల సంఖ్య అనుకుందాం. అదే విధంగా $l(t)$, $r(t)$లు
+పదం~$t$లోని ఎడమ, కుడి కుండలీకరణ చిహ్నాల సంఖ్యలు.
+
+\begin{prob}
+    ఏ పదం~$t$కైనా $l(t) = r(t)$ అని నిరూపించండి.
+\end{prob}
+
+\begin{enumerate}
+\tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\indfrm$లో $0$ ఎడమ,
+    $0$ కుడి కుండలీకరణ చిహ్నాలు ఉంటాయి.}}{}
+
+\tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\indfrm$లో $0$ ఎడమ,
+    $0$ కుడి కుండలీకరణ చిహ్నాలు ఉంటాయి.}}{}
+
+\item \indcase{!A}{\Atom{R}{t_1,\dots,t_n}}{$l(\indfrm) = 1 + l(t_1) +
+  \dots + l(t_n) = 1 + r(t_1) + \dots + r(t_n) = r(\indfrm)$.
+  ఇక్కడ ఏ పదం~$t$కైనా $l(t) = r(t)$ అనే, సాధనగా విడిచిపెట్టిన
+  వాస్తవాన్ని ఉపయోగించాం.}
+
+\item \indcase{!A}{\eq[t_1][t_2]}{$l(\indfrm) = l(t_1) + l(t_2) =
+  r(t_1) + r(t_2) = r(\indfrm)$.}
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{ఆగమన పరికల్పన ప్రకారం,
+    $l(!B) = r(!B)$. అందువల్ల $l(\indfrm) = l(!B) = r(!B) =
+    r(\indfrm)$.}}{}
+
+\item \indcase{!A}{(!B \ast !C)}{ఆగమన పరికల్పన ప్రకారం $l(!B) =
+  r(!B)$, $l(!C) = r(!C)$. అందువల్ల $l(\indfrm) = 1 + l(!B) + l(!C) =
+  1 + r(!B) + r(!C) = r(\indfrm)$.}
+
+\tagitem{prvAll}{\indcase{!A}{\lforall[x][!B]}{ఆగమన పరికల్పన
+    ప్రకారం $l(!B) = r(!B)$. అందువల్ల $l(\indfrm) = l(!B) = r(!B) =
+    r(\indfrm)$.}}{}
+
+% Print case for \lexists if prvEx and not prvAll
+\tagitem{prvAll,notprvEx}{}{\indcase{!A}{\lexists[x][!B]}{ఆగమన
+    పరికల్పన ప్రకారం $l(!B) = r(!B)$. అందువల్ల
+    $l(\indfrm) = l(!B) = r(!B) = r(\indfrm)$.}}
+
+% Just say similarly if prvEx and prvAll
+\tagitem{notprvAll,notprvEx}{}{\indcase{!A}{\lexists[x][!B]}{అదే విధంగా.}}
+\end{enumerate}
+\end{proof}
+
+\begin{defn}[నిజ ఆద్యఖండం]
+సంకేతమాల~$!B$కు శూన్యేతర సంకేతమాలను సంయోజించినప్పుడు సంకేతమాల~$!A$
+వస్తే, $!B$ను $!A$ యొక్క \emph{నిజ ఆద్యఖండం} అంటాం.
+\end{defn}
+
+\begin{lem}\ollabel{lem:no-prefix}
+$!A$ \tetoken{ఒక సూత్రం}{!!a{formula}}, $!B$ అనేది $!A$కు నిజ ఆద్యఖండం అయితే, $!B$
+\tetoken{ఒక సూత్రం}{!!a{formula}} కాదు.
+\end{lem}
+
+\begin{proof}
+సాధన.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][unq]{lem:no-prefix}ను నిరూపించండి.
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:unique-atomic}
+$!A$ పరమాణు \tetoken{సూత్రం}{!!{formula}} అయితే, కింది షరతుల్లో ఒక్కటి, ఒక్కటి మాత్రమే
+దానికి వర్తిస్తుంది.
+\begin{enumerate}
+\tagitem{prvFalse}{$!A \ident \lfalse$.}{}
+\tagitem{prvTrue}{$!A \ident \ltrue$.}{}
+\item $!A \ident \Atom{R}{t_1,\dots,t_n}$; ఇక్కడ $R$ ఒక $n$-స్థాన
+  \tetoken{విధేయ సంకేతం}{!!{predicate}}, $t_1$, \dots, $t_n$లు పదాలు, ఇంకా $R$,
+  $t_1$, \dots, $t_n$లలో ప్రతిదీ ఏకైకంగా నిర్ణయితమవుతుంది.
+\item $!A \ident \eq[t_1][t_2]$; ఇక్కడ $t_1$, $t_2$లు ఏకైకంగా
+  నిర్ణయితమైన పదాలు.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+సాధన.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][unq]{prop:unique-atomic}ను నిరూపించండి (సూచన:
+పదాల కోసం \olref[fol][syn][unq]{lem:no-prefix}కు ఒక రూపాన్ని
+ప్రతిపాదించి నిరూపించండి).
+\end{prob}
+
+\begin{prop}[ఏకార్థ పఠనీయత]
+ప్రతి \tetoken{సూత్రం}{!!{formula}} కింది షరతుల్లో ఒక్కదాన్ని, ఒక్కదాన్ని మాత్రమే తీరుస్తుంది.
+\begin{enumerate}
+\item $!A$ పరమాణువు.
+
+\tagitem{prvNot}{$!A$, $\lnot !B$ రూపంలో ఉంటుంది.}{}
+
+\tagitem{prvAnd}{$!A$, $(!B \land !C)$ రూపంలో ఉంటుంది.}{}
+
+\tagitem{prvOr}{$!A$, $(!B \lor !C)$ రూపంలో ఉంటుంది.}{}
+
+\tagitem{prvIf}{$!A$, $(!B \lif !C)$ రూపంలో ఉంటుంది.}{}
+
+\tagitem{prvIff}{$!A$, $(!B \liff !C)$ రూపంలో ఉంటుంది.}{}
+
+\tagitem{prvAll}{$!A$, $\lforall[x][!B]$ రూపంలో ఉంటుంది.}{}
+
+\tagitem{prvEx}{$!A$, $\lexists[x][!B]$ రూపంలో ఉంటుంది.}{}
+\end{enumerate}
+అంతేకాక, ప్రతి సందర్భంలో $!B$, లేదా $!B$, $!C$లు ఏకైకంగా
+నిర్ణయితమవుతాయి. ఉదాహరణకు, $!A$ కింది రెండు రూపాల్లోనూ ఉండేలా
+వేర్వేరు జతలు $!B$, $!C$ మరియు $!B'$, $!C'$ ఉండవని దీని అర్థం:
+\iftag{prvIf}{$(!B \lif !C)$ మరియు $(!B' \lif !C')$.}{
+    \iftag{prvOr}{$(!B \lor !C)$ మరియు $(!B' \lor !C')$.}{
+      \iftag{prvAnd}{$(!B \land !C)$ మరియు $(!B' \land !C')$.}{}}}
+\end{prop}
+
+\begin{proof}
+\tetoken{ఒక సూత్రం}{!!a{formula}} పరమాణువు కాకపోతే, అది తప్పనిసరిగా ఎడమ కుండలీకరణ
+చిహ్నం~(తో, \iftag{prvNot}{$\lnot$తో,}{} లేదా ఒక పరిమాణీకరణికంతో
+మొదలవ్వాలని నిర్మాణ నియమాలు కోరుతాయి. మరోవైపు, కింది సంకేతాల్లో
+దేనితోనైనా మొదలయ్యే ప్రతి \tetoken{సూత్రం}{!!{formula}} తప్పనిసరిగా పరమాణువు:
+\tetoken{ఒక విధేయ సంకేతం}{!!a{predicate}}, \tetoken{ఒక ప్రమేయ సంకేతం}{!!a{function}}, \tetoken{ఒక స్థిరసంకేతం}{!!a{constant}}\iftag{prvFalse}{,
+$\lfalse$}{}\iftag{prvTrue}{, $\ltrue$}{}.
+
+కాబట్టి $!A$ ఒకవైపు $(!B \ast !C)$ రూపంలోనూ, మరోవైపు
+$(!B' \mathbin{\ast'} !C')$ రూపంలోనూ ఉంటే, $!B \ident !B'$,
+$!C \ident !C'$, $\ast = {\ast'}$ అని మాత్రమే చూపాలి.
+
+$!A \ident (!B \ast !C)$, $!A \ident (!B'
+\mathbin{\ast'} !C')$ రెండూ అనుకుందాం. అప్పుడు $!B \ident !B'$
+లేదా అలా కాదు. అలా అయితే, అవి $!A$లో ఒకే చోట మొదలై సమాన పొడవు గల
+ఉపసంకేతమాలలు కనుక $\ast = {\ast'}$, $!C \ident !C'$ అని స్పష్టం.
+మిగిలిన సందర్భం $!B \not\ident !B'$. $!B$, $!B'$ రెండూ $!A$లో
+ఒకే చోట మొదలయ్యే ఉపసంకేతమాలలు కనుక, వాటిలో ఒకటి మరొకదానికి నిజ
+ఆద్యఖండం అయి ఉండాలి. కానీ \olref{lem:no-prefix} ప్రకారం ఇది అసాధ్యం.
+\end{proof}
+
+
+\end{document}

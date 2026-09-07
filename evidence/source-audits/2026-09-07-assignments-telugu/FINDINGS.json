@@ -1,0 +1,59 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTEFOLASS-20260907",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": ["OLP-0164"],
+    "finding_count": 3
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEFOLASS-001",
+      "unit_id": "OLP-0164",
+      "classification": "confirmed_tuple_initial_index_typo",
+      "source": {
+        "path": "content/first-order-logic/syntax-and-semantics/assignments.tex",
+        "bytes": 14133,
+        "sha256": "761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1",
+        "locator": "lines 89--92, atomic case of assignment-independence proof"
+      },
+      "finding": "The second tuple starts with the value of t_i and then continues through t_k, although it is meant to list all argument values in order just like the first tuple.",
+      "controlling_evidence": "The premise establishes equal values for each t_i; the displayed tuple directly above begins with t_1, and satisfaction of R(t_1,...,t_k) requires the ordered tuple from t_1 through t_k.",
+      "required_translation_handling": "Replace only the tuple's initial t_i with t_1 and add an adjacent OLTEFOLASS-001 disclosure."
+    },
+    {
+      "finding_id": "OLTEFOLASS-002",
+      "unit_id": "OLP-0164",
+      "classification": "confirmed_variant_base_assignment_typos",
+      "source": {
+        "path": "content/first-order-logic/syntax-and-semantics/assignments.tex",
+        "bytes": 14133,
+        "sha256": "761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1",
+        "locator": "lines 177--189, universal-quantifier induction case"
+      },
+      "finding": "The proof defines both s_1' and s_2' as variants of an unindexed s, although the argument compares assignments s_1 and s_2 and immediately calls the new assignments their respective variants.",
+      "controlling_evidence": "The existential case correctly defines s_1' from s_1 and s_2' from s_2; the subsequent universal-case equations and induction hypothesis require the same construction.",
+      "required_translation_handling": "Use s_1 and s_2 respectively as the two substitution bases, leave the remaining proof unchanged, and add an adjacent OLTEFOLASS-002 disclosure."
+    },
+    {
+      "finding_id": "OLTEFOLASS-003",
+      "unit_id": "OLP-0164",
+      "classification": "confirmed_duplicate_set_symbol_in_definition",
+      "source": {
+        "path": "content/first-order-logic/syntax-and-semantics/assignments.tex",
+        "bytes": 14133,
+        "sha256": "761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1",
+        "locator": "lines 239--244, satisfaction of a set definition"
+      },
+      "finding": "The antecedent repeats Gamma after already saying that Gamma is a set of sentences.",
+      "controlling_evidence": "The rest of the definition consistently uses Gamma as the one sentence set and quantifies A over membership in that set; the repeated symbol has no grammatical or mathematical role.",
+      "required_translation_handling": "Omit only the repeated second Gamma and add an adjacent OLTEFOLASS-003 disclosure."
+    }
+  ]
+}

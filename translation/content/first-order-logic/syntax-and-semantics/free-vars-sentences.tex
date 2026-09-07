@@ -1,0 +1,96 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: free-vars-sentences
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{fvs}
+
+\olsection{స్వేచ్ఛా \printtoken{P}{variable}, \printtoken{P}{sentence}}
+
+\begin{defn}[\tetoken{ఒక చరం}{!!a{variable}} యొక్క స్వేచ్ఛా ఘటనలు]
+\ollabel{defn:free-occ}
+\tetoken{ఒక సూత్రంలోని}{!!a{formula}} \tetoken{ఒక చరం}{!!a{variable}} యొక్క \emph{స్వేచ్ఛా} ఘటనలను కింది
+విధంగా ఆగమనాత్మకంగా నిర్వచిస్తాం:
+\begin{enumerate}
+\item \indcase*{!A}{$!A$ పరమాణువు}{ $\indfrm$లోని అన్ని \tetoken{చరం}{!!{variable}}
+  ఘటనలు స్వేచ్ఛావే.}
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\indfrm$లోని స్వేచ్ఛా
+  \tetoken{చరం}{!!{variable}} ఘటనలు $!B$లో ఉన్నవే.}}{}
+
+\item \indcase{!A}{(!B \ast !C)}{$\indfrm$లోని స్వేచ్ఛా
+  \tetoken{చరం}{!!{variable}} ఘటనలు $!B$లోనివి, $!C$లోనివి.}
+
+\tagitem{prvAll}{\indcase{!A}{\lforall[x][!B]}{$\indfrm$లోని స్వేచ్ఛా
+  \tetoken{చరం}{!!{variable}} ఘటనలు $!B$లో ఉన్న వాటిలో~$x$ ఘటనలు మినహా మిగిలినవి.}}{}
+
+\tagitem{prvEx}{\indcase{!A}{\lexists[x][!B]}{$\indfrm$లోని స్వేచ్ఛా
+  \tetoken{చరం}{!!{variable}} ఘటనలు $!B$లో ఉన్న వాటిలో~$x$ ఘటనలు మినహా మిగిలినవి.}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}[బద్ధ చరాలు]
+ఒక సూత్రం~$!A$లోని \tetoken{ఒక చరం}{!!a{variable}} ఘటన స్వేచ్ఛగా లేకపోతే అది
+\emph{బద్ధమైనది}.
+\end{defn}
+
+\begin{prob}
+\olref[fol][syn][fvs]{defn:free-occ}ను అనుసరించే విధంగా బద్ధ
+చర ఘటనలకు ఆగమనాత్మక నిర్వచనం ఇవ్వండి.
+\end{prob}
+
+\begin{defn}[పరిధి]
+\iftag{prvAll}{ఒక సూత్రం~$!A$లో $\lforall[x][!B]$ ఒక ఉపసూత్ర ఘటన
+  అయితే, $!A$లో దానికి అనుగుణంగా ఉన్న~$!B$ ఘటనను $\lforall[x]$కు
+  అనుగుణమైన ఘటన యొక్క \emph{పరిధి} అంటాం. \iftag{prvEx}{అదే విధంగా
+  $\lexists[x]$కూ.}{}}{ఒక సూత్రం~$!A$లో $\lexists[x][!B]$ ఒక
+  ఉపసూత్ర ఘటన అయితే, $!A$లో దానికి అనుగుణంగా ఉన్న~$!B$ ఘటనను
+  $\lexists[x]$కు అనుగుణమైన ఘటన యొక్క \emph{పరిధి} అంటాం.}
+
+$!A$లో ఒక పరిమాణీకరణిక ఘటన
+\iftag{prvAll}{$\lforall[x]$\iftag{prvEx}{ లేదా
+    $\lexists[x]$}{}}{$\lexists[x]$}కు~$!B$ పరిధి అయితే, $!B$లోని $x$
+స్వేచ్ఛా ఘటనలు
+\iftag{prvAll}{$\lforall[x][!B]$లో\iftag{prvEx}{ మరియు
+    $\lexists[x][!B]$లో}{}}{$\lexists[x][!B]$లో బద్ధమవుతాయి. ఈ
+ఘటనలను పేర్కొన్న పరిమాణీకరణిక ఘటన \emph{బంధించింది} అని అంటాం.
+\end{defn}
+
+\begin{ex}
+కింది సూత్రాన్ని పరిశీలించండి:
+\[
+\lexists[\Obj v_0][\underbrace{\Atom{\Obj A^2_0}{\Obj v_0,\Obj v_1}}_{!B}]
+\]
+$!B$, $\lexists[\Obj v_0]$ యొక్క పరిధిని సూచిస్తుంది.
+పరిమాణీకరణికం $!B$లోని $\Obj v_0$ ఘటనను బంధిస్తుంది; కానీ
+$\Obj v_1$ ఘటనను బంధించదు. అందువల్ల ఈ సందర్భంలో $\Obj v_1$ స్వేచ్ఛా
+చరం.
+
+
+ఇది మరింత సంక్లిష్టమైన \tetoken{సూత్రం}{!!{formula}}~$!A$లో ఎలా పనిచేస్తుందో ఇప్పుడు
+చూడవచ్చు:
+\[
+\lforall[\Obj v_0][\underbrace{(\Atom{\Obj A^1_0}{\Obj v_0} \lif
+    \Atom{\Obj A^2_0}{\Obj v_0, \Obj v_1})}_{!B}] \lif \lexists[\Obj
+  v_1][\underbrace{(\Atom{\Obj A^2_1}{\Obj v_0, \Obj v_1} \lor \lforall[\Obj v_0][\overbrace{\lnot \Atom{\Obj A^1_1}{\Obj v_0}}^{!D}])}_{!C}]
+\]
+$!B$, మొదటి $\lforall[\Obj v_0]$ పరిధి; $!C$, $\lexists[\Obj v_1]$
+పరిధి; $!D$, రెండవ $\lforall[\Obj v_0]$ పరిధి. మొదటి
+$\lforall[\Obj v_0]$,~$!B$లోని $\Obj v_0$ ఘటనలను బంధిస్తుంది;
+$\lexists[\Obj v_1]$,~$!C$లోని $\Obj v_1$ ఘటనను బంధిస్తుంది; రెండవ
+$\lforall[\Obj v_0]$,~$!D$లోని $\Obj v_0$ ఘటనను బంధిస్తుంది. $!A$లోని
+మొదటి $\Obj v_1$ ఘటన, నాలుగవ $\Obj v_0$ ఘటనలు స్వేచ్ఛావి. చివరి
+$\Obj v_0$ ఘటన $!D$లో స్వేచ్ఛగా ఉన్నా, $!C$,~$!A$లలో బద్ధంగా ఉంది.
+\end{ex}
+
+\begin{defn}[వాక్యం]
+\tetoken{ఒక సూత్రం}{!!^a{formula}}~$!A$లో \tetoken{చరాలు}{!!{variable}s} యొక్క స్వేచ్ఛా ఘటనలు ఏవీ లేకపోతే,
+అప్పుడు మాత్రమే అది \article{\tetoken{వాక్యం}{!!{sentence}}}.
+\end{defn}
+
+% add examples!
+
+\end{document}

@@ -1,0 +1,107 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: subformulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{sbf}
+
+\olsection{\printtoken{P}{subformula}}
+
+\begin{explain}
+ఇచ్చిన \tetoken{సూత్రాలను}{!!{formula}s} ``ఏర్పరచే'' \tetoken{సూత్రం}{!!{formula}} గురించి మాట్లాడడం
+తరచుగా ఉపయోగకరం. వాటిని దాని \emph{\tetoken{ఉపసూత్రాలు}{!!{subformula}s}} అంటాం. ప్రతి
+\tetoken{సూత్రం}{!!{formula}} దానికే \tetoken{ఒక ఉపసూత్రంగా}{!!a{subformula}} లెక్కలోకి వస్తుంది; $!A$కు,
+$!A$ స్వయంగా కాకుండా ఉన్న ఉపసూత్రాన్ని \emph{నిజ \tetoken{ఉపసూత్రం}{!!{subformula}}} అంటాం.
+\end{explain}
+
+\begin{defn}[తక్షణ \tetoken{ఉపసూత్రం}{!!^{subformula}}]
+$!A$ \tetoken{ఒక సూత్రం}{!!a{formula}} అయితే, $!A$ యొక్క \emph{తక్షణ \tetoken{ఉపసూత్రాలు}{!!{subformula}s}}ను
+కింది విధంగా ఆగమనాత్మకంగా నిర్వచిస్తాం:
+\begin{enumerate}
+\item పరమాణు \tetoken{సూత్రాలకు}{!!{formula}s} తక్షణ \tetoken{ఉపసూత్రాలు}{!!{subformula}s} ఉండవు.
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\indfrm$కు ఉన్న ఏకైక తక్షణ
+    \tetoken{ఉపసూత్రం}{!!{subformula}}~$!B$.}}{}
+
+\item \indcase{!A}{(!B \ast !C)}{$\indfrm$ యొక్క తక్షణ
+  \tetoken{ఉపసూత్రాలు}{!!{subformula}s} $!B$, $!C$ ($\ast$ ద్విస్థానిక సంయోజకాల్లో ఏదైనా).}
+
+\tagitem{prvAll}{\indcase{!A}{\lforall[x][!B]}{$\indfrm$కు ఉన్న
+    ఏకైక తక్షణ \tetoken{ఉపసూత్రం}{!!{subformula}}~$!B$.}}{}
+
+\tagitem{prvEx}{\indcase{!A}{\lexists[x][!B]}{$\indfrm$కు ఉన్న
+    ఏకైక తక్షణ \tetoken{ఉపసూత్రం}{!!{subformula}}~$!B$.}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}[నిజ \tetoken{ఉపసూత్రం}{!!^{subformula}}]
+$!A$ \tetoken{ఒక సూత్రం}{!!a{formula}} అయితే, $!A$ యొక్క \emph{నిజ \tetoken{ఉపసూత్రాలు}{!!{subformula}s}}ను
+కింది విధంగా పునరావర్తకంగా నిర్వచిస్తాం:
+\begin{enumerate}
+\item పరమాణు \tetoken{సూత్రాలకు}{!!{formula}s} నిజ \tetoken{ఉపసూత్రాలు}{!!{subformula}s} ఉండవు.
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\indfrm$ యొక్క నిజ
+    \tetoken{ఉపసూత్రాలు}{!!{subformula}s}: $!B$, దానితో పాటు $!B$ యొక్క అన్ని నిజ
+    \tetoken{ఉపసూత్రాలు}{!!{subformula}s}.}}{}
+
+\item \indcase{!A}{(!B \ast !C)}{$\indfrm$ యొక్క నిజ
+  \tetoken{ఉపసూత్రాలు}{!!{subformula}s}: $!B$, $!C$, వాటితో పాటు $!B$, $!C$ యొక్క అన్ని నిజ
+  \tetoken{ఉపసూత్రాలు}{!!{subformula}s}.}
+
+\tagitem{prvAll}{\indcase{!A}{\lforall[x][!B]}{$\indfrm$ యొక్క నిజ
+    \tetoken{ఉపసూత్రాలు}{!!{subformula}s}: $!B$, దానితో పాటు $!B$ యొక్క అన్ని నిజ
+    \tetoken{ఉపసూత్రాలు}{!!{subformula}s}.}}{}
+
+\tagitem{prvEx}{\indcase{!A}{\lexists[x][!B]}{$\indfrm$ యొక్క నిజ
+    \tetoken{ఉపసూత్రాలు}{!!{subformula}s}: $!B$, దానితో పాటు $!B$ యొక్క అన్ని నిజ
+    \tetoken{ఉపసూత్రాలు}{!!{subformula}s}.}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}[\tetoken{ఉపసూత్రం}{!!^{subformula}}]
+$!A$ యొక్క \tetoken{ఉపసూత్రాలు}{!!{subformula}s}: $!A$ స్వయంగా, దానితో పాటు దాని అన్ని నిజ
+\tetoken{ఉపసూత్రాలు}{!!{subformula}s}.
+\end{defn}
+
+\begin{explain}
+తక్షణ \tetoken{ఉపసూత్రాలను}{!!{subformula}s}, నిజ \tetoken{ఉపసూత్రాలను}{!!{subformula}s} నిర్వచించిన తీరులోని
+సూక్ష్మ భేదాన్ని గమనించండి. మొదటి సందర్భంలో $!A$కు సాధ్యమైన ప్రతి
+ప్రతి $!A$ రూపం కోసం, దాని తక్షణ \tetoken{ఉపసూత్రాలను}{!!{subformula}s} నేరుగా నిర్వచించాం. ఇది
+సందర్భాలవారీ స్పష్ట నిర్వచనం; ఈ సందర్భాలు \tetoken{సూత్రాలు}{!!{formula}s} సమితి యొక్క
+ఆగమనాత్మక నిర్వచనాన్ని ప్రతిబింబిస్తాయి. రెండవ సందర్భంలో కూడా అన్ని
+\tetoken{సూత్రాలు}{!!{formula}s} సమితిని నిర్వచించిన తీరునే ప్రతిబింబించాం; కానీ ప్రతి
+సందర్భంలో చిన్న నిజ \tetoken{ఉపసూత్రాలు}{!!{subformula}s} అయిన \tetoken{సూత్రాలు}{!!{formula}s} $!B$, $!C$లను
+మాత్రమే కాకుండా ఈ \tetoken{సూత్రాలను}{!!{formula}s} కూడా చేర్చాం. దీనివల్ల నిర్వచనం \emph{పునరావర్తకం}
+అవుతుంది. సాధారణంగా ఆగమనాత్మకంగా నిర్వచించిన సమితిపై (మన సందర్భంలో
+\tetoken{సూత్రాలపై}{!!{formula}s}) ఒక ప్రమేయపు నిర్వచనం, దాని సందర్భాల్లో అదే ప్రమేయాన్ని
+తిరిగి ఉపయోగిస్తే పునరావర్తకమవుతుంది. అయితే అది సునిర్వచితం కావాలంటే,
+మనం నిర్వచిస్తున్న ఆర్గ్యుమెంటు కంటే ``ముందు'' వచ్చే ఆర్గ్యుమెంట్లకు
+ప్రమేయం విలువలను మాత్రమే వాడుతున్నామని నిర్ధారించాలి---మన సందర్భంలో
+``నిజ \tetoken{ఉపసూత్రం}{!!{subformula}}''ను $(!B \ast !C)$కు నిర్వచించేటప్పుడు, ``ముందరి''
+\tetoken{ఉపసూత్రాలు}{!!{subformula}s} అయిన \tetoken{సూత్రాలు}{!!{formula}s} $!B$, $!C$లనే వాడుతున్నాం.
+\end{explain}
+
+\begin{prop}
+\ollabel{prop:subfrm-trans}
+$!B$, $!A$కు ఉపసూత్రం, $!C$, $!B$కు ఉపసూత్రం అనుకుందాం. అప్పుడు
+$!C$, $!A$కు ఉపసూత్రం. మరో మాటలో, ఉపసూత్ర సంబంధం సంక్రామకం.
+\end{prop}
+
+\begin{prob}
+\olref[fol][syn][sbf]{prop:subfrm-trans}ను నిరూపించండి.
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:count-subfrms}
+$!A$ అనేది $n$ సంయోజకాలు, పరిమాణీకరణికాలు గల సూత్రం అనుకుందాం.
+అప్పుడు $!A$కు అత్యధికంగా $2n+1$ ఉపసూత్రాలు ఉంటాయి.
+\end{prop}
+
+\begin{prob}
+\olref[fol][syn][sbf]{prop:count-subfrms}ను నిరూపించండి.
+\end{prob}
+
+\end{document}

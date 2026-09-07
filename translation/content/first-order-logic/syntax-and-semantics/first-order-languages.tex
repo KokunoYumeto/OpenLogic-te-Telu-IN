@@ -1,0 +1,157 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: first-order-languages
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{fol}
+
+\olsection{మొదటిస్థాయి విధేయ భాషలు}
+
+
+మొదటిస్థాయి విధేయ తర్కపు వ్యక్తీకరణలను \emph{\tetoken{చరాలు}{!!{variable}s}},
+\emph{\tetoken{స్థిరసంకేతాలు}{!!{constant}s}}, \emph{\tetoken{విధేయ సంకేతాలు}{!!{predicate}s}}, కొన్నిసార్లు
+\emph{\tetoken{ప్రమేయ సంకేతాలు}{!!{function}s}} ఉన్న ప్రాథమిక పదజాలం నుంచి నిర్మిస్తాం. వాటితో
+పాటు తార్కిక సంయోజకాలు, పరిమాణీకరణికాలు, కుండలీకరణ చిహ్నాలు, కామాలు
+వంటి విరామసంకేతాలను ఉపయోగించి \emph{పదాలు}, \emph{\tetoken{సూత్రాలు}{!!{formula}s}}
+ఏర్పరుస్తాం.
+
+\begin{explain}
+అనౌపచారికంగా, \tetoken{విధేయ సంకేతాలు}{!!{predicate}s} ధర్మాలు, సంబంధాలకు పేర్లు;
+\tetoken{స్థిరసంకేతాలు}{!!{constant}s} వ్యక్తిగత వస్తువులకు పేర్లు; \tetoken{ప్రమేయ సంకేతాలు}{!!{function}s}
+అన్వయాలకు పేర్లు. \tetoken{తాదాత్మ్య విధేయం}{!!{identity}}~$\eq$ మినహా ఇవన్నీ
+\emph{తార్కికేతర సంకేతాలు}; ఇవన్నీ కలిసి ఒక భాషను ఏర్పరుస్తాయి.
+ఏ మొదటిస్థాయి విధేయ భాష~$\Lang L$ అయినా దాని తార్కికేతర సంకేతాల ద్వారా
+నిర్ణయితమవుతుంది. అత్యంత సాధారణ సందర్భంలో, $\Lang L$లో ప్రతి రకానికి
+అనంతంగా అనేక సంకేతాలు ఉంటాయి.
+\end{explain}
+
+సాధారణ సందర్భంలో మొదటిస్థాయి విధేయ తర్కంలో కింది సంకేతాలను వాడతాం:
+
+\begin{enumerate}
+\item తార్కిక సంకేతాలు
+\begin{enumerate}
+\item తార్కిక సంయోజకాలు:
+  \startycommalist
+  \iftag{prvNot}{\ycomma $\lnot$ (నిషేధం)}{}%
+  \iftag{prvAnd}{\ycomma $\land$ (సంధానం)}{}%
+  \iftag{prvOr}{\ycomma $\lor$ (వికల్పం)}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (\tetoken{సోపాధికం}{!!{conditional}})}{}%
+  \iftag{prvIff}{\ycomma $\liff$ (\tetoken{ద్విసోపాధికం}{!!{biconditional}})}{}%
+  \iftag{prvAll}{\ycomma $\lforall$ (సార్వత్రిక పరిమాణీకరణికం)}{}%
+  \iftag{prvEx}{\ycomma $\lexists$ (అస్తిత్వ పరిమాణీకరణికం)}{}.
+\tagitem{prvFalse}{\tetoken{అసత్యానికి}{!!{falsity}} ప్రతిజ్ఞావాక్య స్థిరసంకేతం~$\lfalse$.}{}
+\tagitem{prvTrue}{\tetoken{సత్యానికి}{!!{truth}} ప్రతిజ్ఞావాక్య స్థిరసంకేతం~$\ltrue$.}{}
+\item ద్విస్థానిక \tetoken{తాదాత్మ్య విధేయం}{!!{identity}}~$\eq$.
+\item \tetoken{చరాలు}{!!{variable}s} యొక్క \tetoken{అనంతంగా లెక్కించదగిన}{!!{denumerable}s} సమితి: $\Obj v_0$, $\Obj v_1$, $\Obj
+  v_2$, \dots
+\end{enumerate}
+\item మొదటిస్థాయి విధేయ తర్కపు \emph{ప్రామాణిక భాష}ను ఏర్పరచే
+  తార్కికేతర సంకేతాలు
+\begin{enumerate}
+\item ప్రతి $n>0$కు $n$-స్థాన \tetoken{విధేయ సంకేతాలు}{!!{predicate}s} యొక్క \tetoken{అనంతంగా లెక్కించదగిన}{!!{denumerable}s}
+  సమితి: $\Obj A^n_0$, $\Obj A^n_1$, $\Obj A^n_2$, \dots
+\item \tetoken{స్థిరసంకేతాలు}{!!{constant}s} యొక్క \tetoken{అనంతంగా లెక్కించదగిన}{!!{denumerable}s} సమితి: $\Obj c_0$, $\Obj c_1$, $\Obj
+  c_2$, \dots.
+\item ప్రతి $n>0$కు $n$-స్థాన \tetoken{ప్రమేయ సంకేతాలు}{!!{function}s} యొక్క \tetoken{అనంతంగా లెక్కించదగిన}{!!{denumerable}s}
+  సమితి: $\Obj f^n_0$, $\Obj f^n_1$, $\Obj f^n_2$, \dots
+\end{enumerate}
+\item విరామసంకేతాలు: (, ), కామా.
+\end{enumerate}
+
+మన నిర్వచనాలు, ఫలితాల్లో అధిక భాగాన్ని మొదటిస్థాయి విధేయ తర్కపు పూర్తి
+ప్రామాణిక భాషకోసం రూపొందిస్తాం. అయితే అనువర్తనాన్ని బట్టి భాషను కొన్ని
+\tetoken{విధేయ సంకేతాలు}{!!{predicate}s}, \tetoken{స్థిరసంకేతాలు}{!!{constant}s}, \tetoken{ప్రమేయ సంకేతాలకు}{!!{function}s} మాత్రమే పరిమితం చేయవచ్చు.
+
+\begin{ex}
+అంకగణిత భాష~$\Lang L_A$లో ఒక్క ద్విస్థానిక \tetoken{విధేయ సంకేతం}{!!{predicate}}~$<$, ఒక్క
+\tetoken{స్థిరసంకేతం}{!!{constant}}~$\Obj 0$, ఒక్క ఏకస్థానిక \tetoken{ప్రమేయ సంకేతం}{!!{function}}~$\prime$, రెండు
+ద్విస్థానిక \tetoken{ప్రమేయ సంకేతాలు}{!!{function}s}~$+$,~$\times$ ఉంటాయి.
+\end{ex}
+
+\begin{ex}
+సమితి సిద్ధాంత భాష~$\Lang L_Z$లో ఒక్క ద్విస్థానిక \tetoken{విధేయ సంకేతం}{!!{predicate}}~$\in$
+మాత్రమే ఉంటుంది.
+\end{ex}
+
+\begin{ex}
+క్రమాల భాష~$\Lang L_\le$లో ద్విస్థానిక \tetoken{విధేయ సంకేతం}{!!{predicate}}~$\le$ మాత్రమే
+ఉంటుంది.
+\end{ex}
+
+మళ్ళీ చెప్పాలంటే ఇవి సంప్రదాయాలు మాత్రమే: అధికారికంగా ఇవి కేవలం
+మారుపేర్లు. ఉదాహరణకు $<$, $\in$, $\le$ అనేవి $\Obj A^2_0$కు,
+$\Obj 0$ అనేది $\Obj c_0$కు, $\prime$ అనేది $\Obj f^1_0$కు, $+$ అనేది
+$\Obj f^2_0$కు, $\times$ అనేది $\Obj f^2_1$కు మారుపేర్లు.
+
+\iftag{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}{%
+పైన ప్రవేశపెట్టిన ప్రాథమిక సంయోజకాలు,
+\iftag{notprvEx,notprvAll}{పరిమాణీకరణికానికి}{పరిమాణీకరణికాలకు} అదనంగా,
+కింది \emph{నిర్వచిత} సంకేతాలను కూడా వాడతాం:
+\startycommalist
+  \iftag{defNot}{\ycomma $\lnot$ (నిషేధం)}{}%
+  \iftag{defAnd}{\ycomma $\land$ (సంధానం)}{}%
+  \iftag{defOr}{\ycomma $\lor$ (వికల్పం)}{}%
+  \iftag{defIf}{\ycomma $\lif$ (\tetoken{సోపాధికం}{!!{conditional}})}{}%
+  \iftag{defIff}{\ycomma $\liff$ (\tetoken{ద్విసోపాధికం}{!!{biconditional}})}{}%
+  \iftag{defAll}{\ycomma $\lforall$ (సార్వత్రిక పరిమాణీకరణికం)}{}%
+  \iftag{defEx}{\ycomma $\lexists$ (అస్తిత్వ పరిమాణీకరణికం)}{}%
+  \iftag{defFalse}{\ycomma \tetoken{అసత్యం}{!!{falsity}}~$\lfalse$}{}%
+  \iftag{defTrue}{\ycomma \tetoken{సత్యం}{!!{truth}}~$\ltrue$}}{}.
+
+\begin{tagblock}{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}
+\begin{explain}
+నిర్వచిత సంకేతం అధికారికంగా భాషలో భాగం కాదు; దాన్ని అనౌపచారిక
+సంక్షిప్తీకరణగా ప్రవేశపెడతాం. ప్రాథమిక సంకేతాలనే వాడితే చాలా పొడవయ్యే
+సూత్రాలను సంక్షిప్తంగా రాయడానికి అది వీలు కల్పిస్తుంది. ఇది స్పష్టమైన
+ప్రయోజనం. ఇంకా పెద్ద ప్రయోజనం ఏమిటంటే, నిరూపణలు చిన్నవవుతాయి.
+ఒక సంకేతం ప్రాథమికమైతే నిరూపణల్లో దాని సందర్భాన్ని విడిగా
+పరిశీలించాలి. అందువల్ల ప్రాథమిక సంకేతాలు ఎక్కువైతే మన నిరూపణలు కూడా
+పొడవవుతాయి.
+\end{explain}
+\end{tagblock}
+
+% Alternate symbols
+
+\begin{intro}
+మేము పైన వాడిన వాటికి భిన్నమైన పదజాలం, సంకేతాలు మీకు పరిచయమై
+ఉండవచ్చు. తర్కశాస్త్ర గ్రంథాలు (బోధకులు కూడా) ``నిషేధం'' కోసం సాధారణంగా
+$\sim$, $\neg$, లేదా~!ను, ``సంధానం'' కోసం $\wedge$, $\cdot$, లేదా $\&$ను
+వాడతాయి. ``సోపాధికం'' లేదా ``ఆపాదన''కు సాధారణ సంకేతాలు
+$\rightarrow$, $\Rightarrow$, $\supset$.
+\iftag{prvIff,defIff}{``ద్విసోపాధికం,'' ``ద్వి-ఆపాదన,'' లేదా
+  ``(భౌతిక) తుల్యత''కు సంకేతాలు $\leftrightarrow$,
+  $\Leftrightarrow$, $\equiv$.}{}
+\iftag{prvFalse,defFalse}{$\lfalse$ సంకేతాన్ని ``అసత్యం,''
+  ``ఫాల్సమ్,'' ``అసంభవం,'' లేదా ``అధస్తనం'' అని పలు విధాలుగా అంటారు.}{}
+\iftag{prvTrue,defTrue}{$\ltrue$ సంకేతాన్ని ``సత్యం,'' ``వేరమ్,'' లేదా
+  ``ఉపరిస్థానం'' అని పలు విధాలుగా అంటారు.}{}
+
+\tetoken{స్థిరసంకేతాలకు}{!!{constant}s} (వీటిని కొన్నిసార్లు పేర్లు అంటారు) లాటిన్ వర్ణమాల
+మొదట్లోని చిన్న అక్షరాలు (ఉదా., $a$, $b$, $c$), \tetoken{చరాలకు}{!!{variable}s}
+చివర్లోని చిన్న అక్షరాలు (ఉదా., $x$, $y$, $z$) వాడడం సంప్రదాయం.
+పరిమాణీకరణికాలు \tetoken{చరాలతో}{!!{variable}s}, ఉదా., $x$తో కలుస్తాయి. సార్వత్రిక
+పరిమాణీకరణికానికి $\forall x$, $(\forall x)$, $(x)$, $\Pi x$,
+$\bigwedge_x$; అస్తిత్వ పరిమాణీకరణికానికి $\exists x$, $(\exists
+x)$, $(Ex)$, $\Sigma x$, $\bigvee_x$ అనే సంకేతన భేదాలు ఉన్నాయి.
+\end{intro}
+
+\begin{explain}
+ప్రతిజ్ఞావాక్య సంయోజకాలన్నింటినీ, రెండు పరిమాణీకరణికాలనూ భాషలో
+ప్రాథమిక సంకేతాలుగా పరిగణించవచ్చు. లేదా ప్రాథమిక సంకేతాల చిన్న
+సముదాయాన్ని ఎంచుకొని, మిగతా \tetoken{తార్కిక సంయోజకాలను}{!!{operator}s} నిర్వచితమైనవిగా
+పరిగణించవచ్చు. బూలియన్ సంయోజకాల ``సత్య-ప్రమేయాత్మకంగా సంపూర్ణమైన''
+సమితుల్లో $\{ \lnot, \lor \}$, $\{ \lnot, \land \}$, $\{ \lnot,
+\lif\}$ ఉన్నాయి---వ్యక్తీకరణపరంగా సంపూర్ణమైన మొదటిస్థాయి విధేయ భాష
+కోసం వీటిలో దేనినైనా ఏదో ఒక పరిమాణీకరణికంతో కలపవచ్చు.
+
+మరో రెండు \tetoken{తార్కిక సంయోజకాలు}{!!{operator}s} మీకు పరిచయమై ఉండవచ్చు: హెన్రీ షెఫర్ పేరు
+మీద వచ్చిన షెఫర్ రేఖ~$|$, క్వైన్ కటారి అని కూడా పిలిచే పియర్స్
+బాణం~$\downarrow$. వీటికి వరుసగా ``న్యాండ్'', ``నార్'' అనే సాధారణ
+పఠనాలను ఇచ్చినప్పుడు, ఒక్కొక్క సంయోజకమే సత్య-ప్రమేయాత్మకంగా
+సంపూర్ణమైనది.
+\end{explain}
+
+\end{document}

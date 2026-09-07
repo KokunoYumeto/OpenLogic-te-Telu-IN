@@ -1,0 +1,141 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: substitution
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{ext}
+
+\olsection{విస్తారత}
+
+\begin{explain}
+కొన్నిసార్లు సంబద్ధత అని కూడా పిలిచే విస్తారతను అనౌపచారికంగా ఇలా
+చెప్పవచ్చు: \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$లో, \tetoken{ఒక చరం}{!!a{variable}} నిర్దేశం~$s$కు
+సాపేక్షంగా \tetoken{సూత్రం}{!!{formula}}~$!A$ యొక్క సంతృప్తిపై ప్రభావం చూపే అంశాలు,
+\tetoken{వ్యక్తి క్షేత్రం}{!!{domain}} యొక్క పరిమాణం, అలాగే $!A$లో నిజంగా కనిపించే భాషా అంశాలకు
+$\Struct M$, ~$s$లు చేసే నిర్దేశాలు మాత్రమే.
+
+విస్తారతకు తక్షణ పర్యవసానం ఒకటి: ఒక వాక్యం~$!A$లో కనిపించే భాషా
+అంశాలన్నింటిపై రెండు \tetoken{నిర్మాణాలు}{!!{structure}s}~$\Struct M$, ~$\Struct M'$లు
+ఏకీభవించి, వాటి వ్యక్తి క్షేత్రం ఒకటే అయితే, $!A$ సత్యమా కాదా అనే
+విషయంలో కూడా $\Struct M$, ~$\Struct M'$లు తప్పక ఏకీభవిస్తాయి.
+\end{explain}
+
+\begin{prop}[విస్తారత]
+  \ollabel{prop:extensionality}
+  $!A$ ఒక \tetoken{సూత్రం}{!!a{formula}} అనీ, $\Struct M_1$, ~$\Struct M_2$లు
+  $\Domain{M_1} = \Domain{M_2}$ గల \tetoken{నిర్మాణాలు}{!!{structure}s} అనీ, ~$s$ అనేది
+  $\Domain{M_1} = \Domain{M_2}$పై ఒక చర నిర్దేశమనీ అనుకుందాం. $!A$లో
+  కనిపించే ప్రతి \tetoken{స్థిరసంకేతం}{!!{constant}}~$c$, సంబంధ సంకేతం~$R$, \tetoken{ప్రమేయ సంకేతం}{!!{function}}~$f$కు
+  $\Assign{c}{M_1} = \Assign{c}{M_2}$,
+  $\Assign{R}{M_1}=\Assign{R}{M_2}$, అలాగే
+  $\Assign{f}{M_1} = \Assign{f}{M_2}$ అయితే,
+  $\Sat{M_1}{!A}[s]$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే
+  $\Sat{M_2}{!A}[s]$.
+\end{prop}
+
+\begin{proof}
+  మొదట ప్రతి పదానికీ $\Value{t}{M_1}[s] = \Value{t}{M_2}[s]$ అని
+  ($t$పై ఆగమనం ద్వారా) నిరూపించండి. తరువాత ఇప్పుడే నిరూపించిన వాదనను,
+  $!A$ పరమాణువుగా ఉండే ఆగమన ఆధారంలో ఉపయోగిస్తూ, ~$!A$పై ఆగమనం ద్వారా
+  ప్రతిపాదనను నిరూపించండి.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][ext]{prop:extensionality} యొక్క నిరూపణను వివరంగా
+చేయండి.
+\end{prob}
+
+\begin{cor}[\tetoken{వాక్యాలు}{!!^{sentence}s} కోసం విస్తారత]
+  \ollabel{cor:extensionality-sent}
+  $!A$ ఒక \tetoken{వాక్యం}{!!a{sentence}} అనీ, $\Struct{M_1}$, ~$\Struct{M_2}$లు
+  \olref{prop:extensionality}లో ఉన్నట్లే అనీ అనుకుందాం. అప్పుడు
+  $\Sat{M_1}{!A}$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే $\Sat{M_2}{!A}$.
+\end{cor}
+
+\begin{proof}
+\olref{prop:extensionality} అనేది \olref[ass]{cor:sat-sentence} ప్రకారం
+అనుగమిస్తుంది.
+\end{proof}
+
+అంతేకాక, ఒక పదం యొక్క విలువ, \tetoken{ఒక నిర్మాణం}{!!a{structure}} ఒక \tetoken{సూత్రాన్ని}{!!a{formula}}
+సంతృప్తిపరుస్తుందా లేదా అనేవి, దాని ఉపపదాల విలువలపైన మాత్రమే
+ఆధారపడతాయి.
+
+\begin{prop}\ollabel{prop:ext-terms}
+$\Struct M$ ఒక \tetoken{నిర్మాణం}{!!a{structure}}, ~$t$, ~$t'$లు పదాలు, ~$s$ ఒక చర
+నిర్దేశం అనుకుందాం. అప్పుడు $\Value{\Subst{t}{t'}{x}}{M}[s] =
+\Value{t}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]$.
+\end{prop}
+
+\begin{proof}
+$t$పై ఆగమనం ద్వారా నిరూపిస్తాం.
+\begin{enumerate}
+\item $t$ ఒక స్థిరసంకేతం, అంటే $t\ident c$ అయితే,
+  $\Subst{t}{t'}{x} = c$; ఇంకా $\Value{c}{M}[s] = \Assign{c}{M} =
+  \Value{c}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]$.
+
+\item $t$ అనేది $x$ కాని చరం, అంటే $t \ident y$ అయితే,
+  $\Subst{t}{t'}{x} = y$; ఇంకా
+  $\varAssign{s}{\Subst{s}{\Value{t'}{M}[s]}{x}}{x}$ కాబట్టి
+  $\Value{y}{M}[s] =
+  \Value{y}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]$.
+
+\item $t \ident x$ అయితే, $\Subst{t}{t'}{x} = t'$. కానీ
+  $\Subst{s}{\Value{t'}{M}[s]}{x}$ నిర్వచనం ప్రకారం
+  $\Value{x}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}] = \Value{t'}{M}[s]$.
+
+\item $t \ident \Atom{f}{t_1,\dots,t_n}$ అయితే మనకు:
+\begin{multline*}
+  \Value{\Subst{t}{t'}{x}}{M}[s] \\
+  \begin{aligned}[b]
+& = \Value{\Atom{f}{\Subst{t_1}{t'}{x}, \dots, \Subst{t_n}{t'}{x}}}{M}[s]\\
+& \qquad    \text{$\Subst{t}{t'}{x}$ నిర్వచనం ప్రకారం}\\
+& = \Assign{f}{M}(\Value{\Subst{t_1}{t'}{x}}{M}[s], \dots,
+    \Value{\Subst{t_n}{t'}{x}}{M}[s])\\
+    & \qquad  \text{$\Value{\Atom{f}{\dots}}{M}[s]$ నిర్వచనం ప్రకారం}\\
+& = \Assign{f}{M}(\Value{t_1}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}], \dots,
+   \Value{t_n}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}])\\
+& \qquad    \text{ఆగమన పరికల్పన ప్రకారం}\\
+& = \Value{t}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]
+    \text{$\Value{\Atom{f}{\dots}}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]$ నిర్వచనం ప్రకారం}
+  \end{aligned}
+\end{multline*}\sourcecorrection{OLTEFOLEXT-001}{మూల ప్రదర్శన మొదటి పంక్తి చివర, తరువాతి సమానతా పంక్తి ముందు ఉన్న అదనపు సమానతా చిహ్నాన్ని తొలగించాం.}
+\end{enumerate}
+\end{proof}
+
+\begin{prop}\ollabel{prop:ext-formulas} $\Struct M$ ఒక
+\tetoken{నిర్మాణం}{!!a{structure}}, ~$!A$ ఒక \tetoken{సూత్రం}{!!a{formula}}, ~$t'$ ఒక పదం, ~$s$ ఒక చర
+నిర్దేశం అనుకుందాం. అప్పుడు $\Sat{M}{\Subst{!A}{t'}{x}}[s]$ అవుతుంది
+అప్పుడే, అప్పుడు మాత్రమే
+$\Sat{M}{!A}[\Subst{s}{\Value{t'}{M}[s]}{x}]$.
+\end{prop}
+
+\begin{proof}
+వ్యాయామం.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][ext]{prop:ext-formulas}ను నిరూపించండి.
+\end{prob}
+
+\begin{explain}
+  \cref{fol:syn:ext:prop:ext-terms,fol:syn:ext:prop:ext-formulas} యొక్క
+  ఉద్దేశం ఇది. మనకు ఒక పదం~$t$ లేదా \tetoken{ఒక సూత్రం}{!!a{formula}}~$!A$, మరొక పదం~$t'$
+  ఉన్నాయనీ, $\Subst{t}{t'}{x}$ విలువను లేదా
+  $\Subst{!A}{t'}{x}$ అనేది \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$లో
+  \tetoken{ఒక చరం}{!!a{variable}} నిర్దేశం~$s$కు సాపేక్షంగా సంతృప్తమవుతుందో లేదో
+  తెలుసుకోవాలనీ అనుకుందాం. అప్పుడు ముందుగా ప్రతిస్థాపన చేసి, తరువాత
+  $\Struct{M}$, ~$s$లకు సాపేక్షంగా విలువను లేదా సంతృప్తిని పరిశీలించవచ్చు;
+  లేదా ముందుగా $\Struct{M}$లో $s$కు సాపేక్షంగా $t'$ యొక్క విలువ
+  $m = \Value{t'}{M}[s]$ను నిర్ణయించి, \tetoken{చరం}{!!{variable}} నిర్దేశాన్ని
+  $\Subst{s}{m}{x}$గా మార్చి, తరువాత $\Struct{M}$లో
+  $\Subst{s}{m}{x}$కు సాపేక్షంగా~$t$ విలువను, లేదా
+  $\Sat{M}{!A}[\Subst{s}{m}{x}]$ అవుతుందో పరిశీలించవచ్చు.
+  \Cref{fol:syn:ext:prop:ext-terms,fol:syn:ext:prop:ext-formulas} ప్రకారం,
+  మనం ఏ మార్గంలో చేసినా సమాధానం ఒకటే.
+\end{explain}
+
+\end{document}
