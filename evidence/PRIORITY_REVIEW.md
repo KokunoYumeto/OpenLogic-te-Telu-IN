@@ -1,6 +1,6 @@
 # Priority review
 
-This view contains 31 of 153 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
+This view contains 36 of 162 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
 
 Final reader pages remain pending; exact source and target file/line locators are shown.
 
@@ -313,3 +313,53 @@ Final reader pages remain pending; exact source and target file/line locators ar
 - Occurrences: OLP-0170 translation/content/first-order-logic/models-theories/theories.tex:101-105
 
 - Review question: Please double-check whether “భాగతత్త్వం (మీరియాలజీ) / భాగత్వం / భాగత్వ నిర్మాణం / క్రమేతర భాగం / క్రమ భాగం / భాగతాత్త్విక మొత్తం / సంలీనం” is idiomatic and technically standard for “mereology / parthood / parthood structure / improper part / proper part / mereological sum / fusion” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T050 — many-sorted logic / sort / type / arity / sort-restricted quantifier
+
+- Chosen rendering: బహు-రక తర్కం / రకం / టైపు / స్థానసంఖ్య (అరిటీ) / రక-పరిమాణకం
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0176 translation/content/first-order-logic/beyond/many-sorted-logic.tex:20-26
+
+- Review question: Please double-check whether “బహు-రక తర్కం / రకం / టైపు / స్థానసంఖ్య (అరిటీ) / రక-పరిమాణకం” is idiomatic and technically standard for “many-sorted logic / sort / type / arity / sort-restricted quantifier” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T051 — second-order logic / higher-order logic / comprehension schema / predicative / impredicative / full and weak semantics / categorical / finite type / functional / lambda term / application / projection / simple theory of types
+
+- Chosen rendering: ద్వితీయ-స్థాయి తర్కం / ఉన్నత-స్థాయి తర్కం / ధర్మసంగ్రహ పథకం / ప్రెడికేటివ్ / ఇంప్రెడికేటివ్ / పూర్ణ, బలహీన అర్థవిచారం / సమరూపత వరకు ఏకైకమైన (కేటగారికల్) / పరిమిత టైపు / ప్రమేయకం / లాంబ్డా పదం / ప్రయోగం / ప్రక్షేపం / సరళ టైపుల సిద్ధాంతం
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0177 translation/content/first-order-logic/beyond/second-order-logic.tex:13-27; OLP-0178 translation/content/first-order-logic/beyond/higher-order-logic.tex:22-40
+
+- Review question: Please double-check whether “ద్వితీయ-స్థాయి తర్కం / ఉన్నత-స్థాయి తర్కం / ధర్మసంగ్రహ పథకం / ప్రెడికేటివ్ / ఇంప్రెడికేటివ్ / పూర్ణ, బలహీన అర్థవిచారం / సమరూపత వరకు ఏకైకమైన (కేటగారికల్) / పరిమిత టైపు / ప్రమేయకం / లాంబ్డా పదం / ప్రయోగం / ప్రక్షేపం / సరళ టైపుల సిద్ధాంతం” is idiomatic and technically standard for “second-order logic / higher-order logic / comprehension schema / predicative / impredicative / full and weak semantics / categorical / finite type / functional / lambda term / application / projection / simple theory of types” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T052 — intuitionistic logic / classical logic / constructive reasoning / law of excluded middle / double-negation translation / BHK interpretation / Curry--Howard isomorphism / forcing / monotone assignment / state of knowledge
+
+- Chosen rendering: అంతఃప్రజ్ఞావాద తర్కం / సాంప్రదాయిక తర్కం / నిర్మాణాత్మక హేతుచింతన / బహిష్కృత మధ్యమ సూత్రం / ద్వినిషేధ అనువాదం / BHK అర్థనిర్దేశం / కరీ--హోవర్డ్ సమరూపత / ఫోర్సింగ్ సంబంధం / క్రమ-ఏకదిశ (మోనోటోన్) కేటాయింపు / జ్ఞానస్థితి
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0179 translation/content/first-order-logic/beyond/intuitionistic-logic.tex:13-17; OLP-0179 translation/content/first-order-logic/beyond/intuitionistic-logic.tex:91-104
+
+- Review question: Please double-check whether “అంతఃప్రజ్ఞావాద తర్కం / సాంప్రదాయిక తర్కం / నిర్మాణాత్మక హేతుచింతన / బహిష్కృత మధ్యమ సూత్రం / ద్వినిషేధ అనువాదం / BHK అర్థనిర్దేశం / కరీ--హోవర్డ్ సమరూపత / ఫోర్సింగ్ సంబంధం / క్రమ-ఏకదిశ (మోనోటోన్) కేటాయింపు / జ్ఞానస్థితి” is idiomatic and technically standard for “intuitionistic logic / classical logic / constructive reasoning / law of excluded middle / double-negation translation / BHK interpretation / Curry--Howard isomorphism / forcing / monotone assignment / state of knowledge” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T053 — modal logic / modality / possible world / accessibility relation / extensional / intensional / provability logic / epistemic logic / temporal logic
+
+- Chosen rendering: మోడల్ తర్కం / మోడాలిటీ / సాధ్యమైన లోకం / ప్రాప్యత సంబంధం / విస్తారాత్మక (ఎక్స్టెన్షనల్) / అంతర్భావాత్మక (ఇంటెన్షనల్) / నిరూప్యతా తర్కం / జ్ఞానమీమాంసాత్మక తర్కం / కాలిక తర్కం
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0180 translation/content/first-order-logic/beyond/modal-logics.tex:29-36; OLP-0180 translation/content/first-order-logic/beyond/modal-logics.tex:38-45
+
+- Review question: Please double-check whether “మోడల్ తర్కం / మోడాలిటీ / సాధ్యమైన లోకం / ప్రాప్యత సంబంధం / విస్తారాత్మక (ఎక్స్టెన్షనల్) / అంతర్భావాత్మక (ఇంటెన్షనల్) / నిరూప్యతా తర్కం / జ్ఞానమీమాంసాత్మక తర్కం / కాలిక తర్కం” is idiomatic and technically standard for “modal logic / modality / possible world / accessibility relation / extensional / intensional / provability logic / epistemic logic / temporal logic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T054 — fuzzy logic / probabilistic logic / default logic / defeasible reasoning / nonmonotonic logic / epistemic logic / causal logic / deontic logic
+
+- Chosen rendering: ఫజీ తర్కం / సంభావ్యతా తర్కం / డిఫాల్ట్ తర్కం / రద్దుచేయదగిన హేతుచింతన / ఏకదిశేతర తర్కం / జ్ఞానమీమాంసాత్మక తర్కం / కారణ తర్కం / కర్తవ్యాత్మక (డియాంటిక్) తర్కం
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0181 translation/content/first-order-logic/beyond/other-logics.tex:22-35
+
+- Review question: Please double-check whether “ఫజీ తర్కం / సంభావ్యతా తర్కం / డిఫాల్ట్ తర్కం / రద్దుచేయదగిన హేతుచింతన / ఏకదిశేతర తర్కం / జ్ఞానమీమాంసాత్మక తర్కం / కారణ తర్కం / కర్తవ్యాత్మక (డియాంటిక్) తర్కం” is idiomatic and technically standard for “fuzzy logic / probabilistic logic / default logic / defeasible reasoning / nonmonotonic logic / epistemic logic / causal logic / deontic logic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?

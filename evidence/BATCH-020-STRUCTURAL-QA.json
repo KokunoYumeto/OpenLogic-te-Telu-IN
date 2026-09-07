@@ -1,0 +1,1719 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-07T20:02:09.211Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Intertext prose is masked while its inline math remains checked.",
+  "units": [
+    {
+      "unit_id": "OLP-0174",
+      "source_path": "content/first-order-logic/beyond/beyond.tex",
+      "source_sha256": "59901c1d2af5fb520f86537ed3bfe163adc9ce43cad347b1ce2808f3c79f9d15",
+      "translation_sha256": "297a41b0cbb67b9cea0fe64af9cee635829331e527e7ed22410a00001ebea1c2",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport{introduction}",
+        "\\olimport{many-sorted-logic}",
+        "\\olimport{second-order-logic}",
+        "\\olimport{higher-order-logic}",
+        "\\olimport{intuitionistic-logic}",
+        "\\olimport{modal-logics}",
+        "\\olimport{other-logics}"
+      ],
+      "identifiers_target": [
+        "\\olimport{introduction}",
+        "\\olimport{many-sorted-logic}",
+        "\\olimport{second-order-logic}",
+        "\\olimport{higher-order-logic}",
+        "\\olimport{intuitionistic-logic}",
+        "\\olimport{modal-logics}",
+        "\\olimport{other-logics}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 306,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: beyond",
+          "target_start": "% Part: first-order-logic\n% Chapter: beyond"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olchapter{fol}{byd}{Beyond First-order Logic}",
+          "target_start": "\\olchapter{fol}{byd}{మొదటిస్థాయి తర్కానికి ఆవల}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{editorial}\n  This chapter, adapted from Jeremy Avigad's logic notes, gives the\n  briefest of glimpses i",
+          "target_start": "\\begin{editorial}\n  జెరెమీ అవిగాడ్ తర్కశాస్త్ర గమనికల నుంచి అనుసరించిన ఈ అధ్యాయం, ఇంకా\n  ఏయే తర్కవ్యవస్థలు ఉన్"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport{introduction}",
+          "target_start": "\\olimport{introduction}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport{many-sorted-logic}",
+          "target_start": "\\olimport{many-sorted-logic}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\olimport{second-order-logic}",
+          "target_start": "\\olimport{second-order-logic}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport{higher-order-logic}",
+          "target_start": "\\olimport{higher-order-logic}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\olimport{intuitionistic-logic}",
+          "target_start": "\\olimport{intuitionistic-logic}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\olimport{modal-logics}",
+          "target_start": "\\olimport{modal-logics}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\olimport{other-logics}",
+          "target_start": "\\olimport{other-logics}"
+        },
+        {
+          "index": 13,
+          "source_start": "\\OLEndChapterHook",
+          "target_start": "\\OLEndChapterHook"
+        },
+        {
+          "index": 14,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{fol}{byd}",
+        "\\olimport{introduction}",
+        "\\olimport{many-sorted-logic}",
+        "\\olimport{second-order-logic}",
+        "\\olimport{higher-order-logic}",
+        "\\olimport{intuitionistic-logic}",
+        "\\olimport{modal-logics}",
+        "\\olimport{other-logics}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{fol}{byd}",
+        "\\olimport{introduction}",
+        "\\olimport{many-sorted-logic}",
+        "\\olimport{second-order-logic}",
+        "\\olimport{higher-order-logic}",
+        "\\olimport{intuitionistic-logic}",
+        "\\olimport{modal-logics}",
+        "\\olimport{other-logics}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0175",
+      "source_path": "content/first-order-logic/beyond/introduction.tex",
+      "source_sha256": "859471ff2e16efdd444f4d4158f8a6c1600aae949d4d5b8f2362bac945bbf769",
+      "translation_sha256": "4a5f890b5c39bd74d83b5d8b82f6aff6cee57db2a726d667344302e37b418e14",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{byd}{int}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{byd}{int}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1742,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: beyond\n% Section: introduction",
+          "target_start": "% Part: first-order-logic\n% Chapter: beyond\n% Section: introduction"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{fol}{byd}{int}",
+          "target_start": "\\olfileid{fol}{byd}{int}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Overview}",
+          "target_start": "\\olsection{అవలోకనం}"
+        },
+        {
+          "index": 6,
+          "source_start": "First-order logic is not the only system of logic of interest: there\nare many extensions and variations of fir",
+          "target_start": "మనకు ఆసక్తికరమైన ఏకైక తర్కవ్యవస్థ మొదటిస్థాయి తర్కం కాదు:\nమొదటిస్థాయి తర్కానికి అనేక విస్తరణలు, భేదాలు ఉన్నాయి"
+        },
+        {
+          "index": 7,
+          "source_start": "No easy answers are forthcoming. The word ``logic'' is used in\ndifferent ways and in different contexts, and t",
+          "target_start": "దీనికి సులభమైన సమాధానాలు లేవు. ``తర్కం'' అనే మాటను వేర్వేరు\nసందర్భాల్లో వేర్వేరు విధాలుగా వాడుతారు; ``సత్యం'' "
+        },
+        {
+          "index": 8,
+          "source_start": "For now, it is best to leave such philosophical issues for a rainy\nday, and simply think of the systems below ",
+          "target_start": "ప్రస్తుతానికి ఇటువంటి తాత్త్విక సమస్యలను మరొక సందర్భానికి వదిలి,\nకిందివి తార్కికమైనవైనా కాకపోయినా, వివిధ రకాల "
+        },
+        {
+          "index": 9,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{byd}{int}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{byd}{int}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0176",
+      "source_path": "content/first-order-logic/beyond/many-sorted-logic.tex",
+      "source_sha256": "5a6abcd66e91868de97e0c1ec44cdf848396655cc6995adc05d6771844ecfac7",
+      "translation_sha256": "57aba22e87125b3451399ec41ec14315afbe383fe0bd00b9284837380452bf3b",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{byd}{msl}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{byd}{msl}"
+      ],
+      "tokens_source": {
+        "!!a{domain}": 4,
+        "!!a{variable}": 1,
+        "!!{derivation}s": 2,
+        "!!{domain}": 3,
+        "!!{domain}s": 2,
+        "!!{identity}": 1,
+        "!!{predicate}s": 2,
+        "!!{sentence}s": 2,
+        "!!{structure}s": 2,
+        "!!{variable}s": 1
+      },
+      "tokens_target": {
+        "!!a{domain}": 4,
+        "!!a{variable}": 1,
+        "!!{derivation}s": 2,
+        "!!{domain}": 3,
+        "!!{domain}s": 2,
+        "!!{identity}": 1,
+        "!!{predicate}s": 2,
+        "!!{sentence}s": 2,
+        "!!{structure}s": 2,
+        "!!{variable}s": 1
+      },
+      "math_source": [
+        "$a$",
+        "$b$",
+        "$c$",
+        "$x$",
+        "$y$",
+        "$z$",
+        "\\[\\lforall[a][\\lforallx][(\\Atom{\\Obj{MarriedTo}}{a,x}\\lif(\\Atom{\\Obj{DrinksWine}}{a}\\lor\\lnot\\Atom{\\Obj{EatsWurst}}{x})]]\\]",
+        "$\\Obj{German}$",
+        "$\\Obj{French}$",
+        "$\\lforall[x][!A]$",
+        "$x$",
+        "\\[\\lforall[x][(\\Atom{\\Obj{German}}{x}\\lif!A)].\\]",
+        "$\\lforall[x][\\lnot(\\Atom{\\Obj{German}}{x}\\land\\Atom{\\Obj{French}}{x})]$",
+        "$\\Atom{\\Obj{French}}{x}$"
+      ],
+      "math_target_core": [
+        "$a$",
+        "$b$",
+        "$c$",
+        "$x$",
+        "$y$",
+        "$z$",
+        "\\[\\lforall[a][\\lforall[x][(\\Atom{\\Obj{MarriedTo}}{a,x}\\lif(\\Atom{\\Obj{DrinksWine}}{a}\\lor\\lnot\\Atom{\\Obj{EatsWurst}}{x})]]\\]",
+        "$\\Obj{German}$",
+        "$\\Obj{French}$",
+        "$x$",
+        "$\\lforall[x][!A]$",
+        "\\[\\lforall[x][(\\Atom{\\Obj{German}}{x}\\lif!A)].\\]",
+        "$\\lforall[x][\\lnot(\\Atom{\\Obj{German}}{x}\\land\\Atom{\\Obj{French}}{x})]$",
+        "$\\Atom{\\Obj{French}}{x}$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "\\[\\lforall[a][\\lforallx][(\\Atom{\\Obj{MarriedTo}}{a,x}\\lif(\\Atom{\\Obj{DrinksWine}}{a}\\lor\\lnot\\Atom{\\Obj{EatsWurst}}{x})]]\\]"
+      ],
+      "math_delta_target_only": [
+        "\\[\\lforall[a][\\lforall[x][(\\Atom{\\Obj{MarriedTo}}{a,x}\\lif(\\Atom{\\Obj{DrinksWine}}{a}\\lor\\lnot\\Atom{\\Obj{EatsWurst}}{x})]]\\]"
+      ],
+      "declared_source_correction_ids": [
+        "OLTEFOLBYD-001"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2179,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: beyond\n% Section: many-sorted-logic",
+          "target_start": "% Part: first-order-logic\n% Chapter: beyond\n% Section: many-sorted-logic"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{fol}{byd}{msl}",
+          "target_start": "\\olfileid{fol}{byd}{msl}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Many-Sorted Logic}",
+          "target_start": "\\olsection{బహు-రక తర్కం}"
+        },
+        {
+          "index": 6,
+          "source_start": "In first-order logic, variables and quantifiers range over a single\n!!{domain}. But it is often useful to have",
+          "target_start": "మొదటిస్థాయి తర్కంలో చరాలు, పరిమాణకాలు ఒకే\n\\tetoken{వ్యక్తి క్షేత్రంపై}{!!{domain}} విస్తరిస్తాయి. అయితే అనేక ("
+        },
+        {
+          "index": 7,
+          "source_start": "Many-sorted logic provides this kind of framework. One starts with a\nlist of ``sorts''---the ``sort'' of an ob",
+          "target_start": "బహు-రక తర్కం ఇటువంటి చట్రాన్ని అందిస్తుంది. మొదట ``రకాల'' జాబితాను\nతీసుకుంటాం---ఒక వస్తువు యొక్క ``రకం'', అది "
+        },
+        {
+          "index": 8,
+          "source_start": "For example, to study international relations we might choose a\nlanguage with two sorts of objects, French cit",
+          "target_start": "ఉదాహరణకు, అంతర్జాతీయ సంబంధాలను అధ్యయనం చేయడానికి ఫ్రెంచ్ పౌరులు,\nజర్మన్ పౌరులు అనే రెండు రకాల వస్తువులున్న భాష"
+        },
+        {
+          "index": 9,
+          "source_start": "Many-sorted logic can be embedded in first-order logic in a natural\nway, by lumping all the objects of the man",
+          "target_start": "బహు-రక \\tetoken{వ్యక్తి క్షేత్రాలలోని}{!!{domain}s} వస్తువులన్నింటినీ ఒకే మొదటిస్థాయి\n\\tetoken{వ్యక్తి క్షేత్ర"
+        },
+        {
+          "index": 10,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{byd}{msl}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{byd}{msl}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0177",
+      "source_path": "content/first-order-logic/beyond/second-order-logic.tex",
+      "source_sha256": "944e224c99309c16e3303d6688fe0bf070e9ad8a68a1207ef6b8d6add08fe16d",
+      "translation_sha256": "0880aced16a46d7051834d99b9666aae294a89c5dfaaad54eeb630bdfce9d99c",
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{byd}{sol}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{byd}{sol}"
+      ],
+      "tokens_source": {
+        "!!a{bijection}": 1,
+        "!!a{domain}": 2,
+        "!!a{formula}": 1,
+        "!!a{structure}": 2,
+        "!!a{variable}": 1,
+        "!!{derivation}": 13,
+        "!!{domain}": 10,
+        "!!{formula}": 5,
+        "!!{formula}s": 2,
+        "!!{identity}": 1,
+        "!!{injective}": 1,
+        "!!{predicate}s": 1,
+        "!!{structure}": 7,
+        "!!{structure}s": 6,
+        "!!{surjective}": 1,
+        "!!{variable}s": 2
+      },
+      "tokens_target": {
+        "!!a{bijection}": 1,
+        "!!a{domain}": 2,
+        "!!a{formula}": 1,
+        "!!a{structure}": 2,
+        "!!a{variable}": 1,
+        "!!{derivation}": 13,
+        "!!{domain}": 10,
+        "!!{formula}": 5,
+        "!!{formula}s": 2,
+        "!!{identity}": 1,
+        "!!{injective}": 1,
+        "!!{predicate}s": 1,
+        "!!{structure}": 7,
+        "!!{structure}s": 6,
+        "!!{surjective}": 1,
+        "!!{variable}s": 2
+      },
+      "math_source": [
+        "$\\Lang{L}$",
+        "$k$",
+        "$R$",
+        "$k$",
+        "$R$",
+        "$k$",
+        "$t_1$",
+        "$t_k$",
+        "$\\Atom{R}{t_1,\\dots,t_k}$",
+        "$R$",
+        "$S$",
+        "$k$",
+        "$\\eq[R][S]$",
+        "\\[\\lforall[x_1\\dots][\\lforall[x_k][(\\Atom{R}{x_1,\\dots,x_k}\\liff\\Atom{S}{x_1,\\dots,x_k})]].\\]",
+        "$\\Lang{L}$",
+        "$\\Lang{L}$",
+        "\\[!A(R)\\Proves\\lexists[R][!A(R)]\\]",
+        "$\\Lang{L}$",
+        "$<$",
+        "\\[x<y\\Proves\\lexists[R][\\Atom{R}{x,y}]\\]",
+        "$!A$",
+        "\\[!A(x_1,\\dots,x_k)\\Proves\\lexists[R][\\Atom{R}{x_1,\\dots,x_k}]\\]",
+        "\\[\\Subst{!A}{\\lambd[\\vecx][!B(\\vecx)]}{R}\\Proves\\lexists[R][!A]\\]",
+        "$\\Subst{!A}{\\lambd[\\vecx][!B(\\vecx)]}{R}$",
+        "$\\Obj{R}{t_1,\\dots,t_k}$",
+        "$!A$",
+        "$!B(t_1,\\dots,t_k)$",
+        "\\[\\lexists[R][\\lforall[x_1,\\dots,x_k][(!A(x_1,\\dots,x_k)\\liff\\Atom{R}{x_1,\\dots,x_k})]],\\]",
+        "$!A$",
+        "$R$",
+        "$R$",
+        "$!A$",
+        "$\\Atom{R}{x_1,\\dots,x_k}$",
+        "$R$",
+        "$!A$",
+        "$k$",
+        "$k$",
+        "\\[\\lforall[R][((\\Atom{R}{\\Obj{0}}\\land\\lforall[x][(\\Atom{R}{x}\\lif\\Atom{R}{x'})])\\lif\\lforall[x][\\Atom{R}{x}])].\\]",
+        "$\\Obj0,\\Obj\\prime,+,\\times$",
+        "$<$",
+        "$\\lforall[x][\\lnotx'=\\Obj0]$",
+        "$\\lforall[x][\\lforall[y][(s(x)=s(y)\\lifx=y)]]$",
+        "$\\lforall[x][(x+\\Obj0)=x]$",
+        "$\\lforall[x][\\lforall[y][(x+y')=(x+y)']]$",
+        "$\\lforall[x][(x\\times\\Obj0)=\\Obj0]$",
+        "$\\lforall[x][\\lforall[y][(x\\timesy')=((x\\timesy)+x)]]$",
+        "$\\lforall[x][\\lforall[y][(x<y\\liff\\lexists[z][y=(x+z')])]]$",
+        "$\\Struct{N}$",
+        "$\\Struct{M}$",
+        "$f$",
+        "$\\Nat$",
+        "$\\Struct{M}$",
+        "$\\Nat$",
+        "$f(0)=\\Assign{\\Obj0}{M}$",
+        "$f(x+1)=\\Assign{\\prime}{M}(f(x))$",
+        "$\\Nat$",
+        "$\\StructM$",
+        "$f$",
+        "$f$",
+        "$P$",
+        "$\\Domain{M}$",
+        "$f$",
+        "$\\StructM$",
+        "$P$",
+        "$f$",
+        "$\\Assign{\\Obj0}{M}$",
+        "$P$",
+        "$P$",
+        "$\\Assign{\\prime}{M}$",
+        "$\\StructM$",
+        "$P$",
+        "$P$",
+        "$\\StructM$",
+        "$f$",
+        "$f$",
+        "$\\Nat$",
+        "$f$",
+        "$R$",
+        "$\\lforall[x][\\lexists![y][R(x,y)]]$",
+        "$\\StructM$",
+        "$\\StructM$",
+        "\\[\\lexists[f][(\\lforall[x][\\lforall[y][(\\eq[f(x)][f(y)]\\lif\\eq[x][y])]]\\land\\lexists[y][\\lforall[x][\\eq/[f(x)][y]]])].\\]",
+        "\\[\\lforall[P][(\\lexists[x][\\Atom{P}{x}]\\lif\\lexists[x][(\\Atom{P}{x}\\land\\lforall[y][(y<x\\lif\\lnot\\Atom{P}{y})])])].\\]",
+        "\\[\\lnot\\lexists[A][(\\lexists[x][A(x)]\\land\\lexists[y][\\lnotA(y)]\\land\\lforall[w][\\lforall[z][((\\Atom{A}{w}\\land\\lnot\\Atom{A}{z})\\lif\\lnot\\Atom{R}{w,z})]])].\\]",
+        "$\\Proves$",
+        "$\\Entails$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Delta$",
+        "$\\Gamma\\cup\\Delta\\Entails!A$",
+        "$\\Gamma\\cup\\Delta\\Proves!A$",
+        "$!A$",
+        "$\\lnot!A$",
+        "$k$",
+        "$k$",
+        "$\\Atom{\\Obj{true}_k}{R,x_1,\\dots,x_k}$",
+        "$R$",
+        "$x_1$",
+        "$x_k$",
+        "$R$",
+        "$k$",
+        "$x_1$",
+        "$x_k$"
+      ],
+      "math_target_core": [
+        "$\\Lang{L}$",
+        "$k$",
+        "$k$",
+        "$R$",
+        "$R$",
+        "$k$",
+        "$t_1$",
+        "$t_k$",
+        "$\\Atom{R}{t_1,\\dots,t_k}$",
+        "$R$",
+        "$S$",
+        "$k$",
+        "$\\eq[R][S]$",
+        "\\[\\lforall[x_1\\dots][\\lforall[x_k][(\\Atom{R}{x_1,\\dots,x_k}\\liff\\Atom{S}{x_1,\\dots,x_k})]].\\]",
+        "$\\Lang{L}$",
+        "$\\Lang{L}$",
+        "\\[!A(R)\\Proves\\lexists[R][!A(R)]\\]",
+        "$\\Lang{L}$",
+        "$<$",
+        "\\[x<y\\Proves\\lexists[R][\\Atom{R}{x,y}]\\]",
+        "$!A$",
+        "\\[!A(x_1,\\dots,x_k)\\Proves\\lexists[R][\\Atom{R}{x_1,\\dots,x_k}]\\]",
+        "\\[\\Subst{!A}{\\lambd[\\vecx][!B(\\vecx)]}{R}\\Proves\\lexists[R][!A]\\]",
+        "$\\Subst{!A}{\\lambd[\\vecx][!B(\\vecx)]}{R}$",
+        "$!A$",
+        "$\\Atom{R}{t_1,\\dots,t_k}$",
+        "$!B(t_1,\\dots,t_k)$",
+        "\\[\\lexists[R][\\lforall[x_1,\\dots,x_k][(!A(x_1,\\dots,x_k)\\liff\\Atom{R}{x_1,\\dots,x_k})]],\\]",
+        "$R$",
+        "$!A$",
+        "$!A$",
+        "$R$",
+        "$\\Atom{R}{x_1,\\dots,x_k}$",
+        "$R$",
+        "$!A$",
+        "$k$",
+        "$k$",
+        "\\[\\lforall[R][((\\Atom{R}{\\Obj{0}}\\land\\lforall[x][(\\Atom{R}{x}\\lif\\Atom{R}{x'})])\\lif\\lforall[x][\\Atom{R}{x}])].\\]",
+        "$\\Obj0,\\Obj\\prime,+,\\times$",
+        "$<$",
+        "$\\lforall[x][\\lnotx'=\\Obj0]$",
+        "$\\lforall[x][\\lforall[y][(x'=y'\\lifx=y)]]$",
+        "$\\lforall[x][(x+\\Obj0)=x]$",
+        "$\\lforall[x][\\lforall[y][(x+y')=(x+y)']]$",
+        "$\\lforall[x][(x\\times\\Obj0)=\\Obj0]$",
+        "$\\lforall[x][\\lforall[y][(x\\timesy')=((x\\timesy)+x)]]$",
+        "$\\lforall[x][\\lforall[y][(x<y\\liff\\lexists[z][y=(x+z')])]]$",
+        "$\\Struct{N}$",
+        "$\\Struct{M}$",
+        "$\\Nat$",
+        "$\\Nat$",
+        "$\\Struct{M}$",
+        "$f$",
+        "$f(0)=\\Assign{\\Obj0}{M}$",
+        "$f(x+1)=\\Assign{\\prime}{M}(f(x))$",
+        "$\\Nat$",
+        "$\\StructM$",
+        "$f$",
+        "$f$",
+        "$f$",
+        "$\\Domain{M}$",
+        "$P$",
+        "$\\StructM$",
+        "$P$",
+        "$f$",
+        "$\\Assign{\\Obj0}{M}$",
+        "$P$",
+        "$\\Assign{\\prime}{M}$",
+        "$P$",
+        "$\\StructM$",
+        "$P$",
+        "$P$",
+        "$\\StructM$",
+        "$f$",
+        "$\\Nat$",
+        "$f$",
+        "$f$",
+        "$\\lforall[x][\\lexists![y][R(x,y)]]$",
+        "$R$",
+        "$\\StructM$",
+        "$\\StructM$",
+        "\\[\\lexists[f][(\\lforall[x][\\lforall[y][(\\eq[f(x)][f(y)]\\lif\\eq[x][y])]]\\land\\lexists[y][\\lforall[x][\\eq/[f(x)][y]]])].\\]",
+        "\\[\\lforall[P][(\\lexists[x][\\Atom{P}{x}]\\lif\\lexists[x][(\\Atom{P}{x}\\land\\lforall[y][(y<x\\lif\\lnot\\Atom{P}{y})])])].\\]",
+        "\\[\\lnot\\lexists[A][(\\lexists[x][A(x)]\\land\\lexists[y][\\lnotA(y)]\\land\\lforall[w][\\lforall[z][((\\Atom{A}{w}\\land\\lnot\\Atom{A}{z})\\lif\\lnot\\Atom{R}{w,z})]])].\\]",
+        "$\\Proves$",
+        "$\\Entails$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Delta$",
+        "$\\Gamma\\cup\\Delta\\Entails!A$",
+        "$\\Gamma\\cup\\Delta\\Proves!A$",
+        "$!A$",
+        "$\\lnot!A$",
+        "$k$",
+        "$k$",
+        "$\\Atom{\\Obj{true}_k}{R,x_1,\\dots,x_k}$",
+        "$x_1$",
+        "$x_k$",
+        "$R$",
+        "$R$",
+        "$k$",
+        "$x_1$",
+        "$x_k$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$\\Obj{R}{t_1,\\dots,t_k}$",
+        "$\\lforall[x][\\lforall[y][(s(x)=s(y)\\lifx=y)]]$"
+      ],
+      "math_delta_target_only": [
+        "$\\Atom{R}{t_1,\\dots,t_k}$",
+        "$\\lforall[x][\\lforall[y][(x'=y'\\lifx=y)]]$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTEFOLBYD-002",
+        "OLTEFOLBYD-003"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 7619,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: beyond\n% Section: second-order-logic",
+          "target_start": "% Part: first-order-logic\n% Chapter: beyond\n% Section: second-order-logic"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{fol}{byd}{sol}",
+          "target_start": "\\olfileid{fol}{byd}{sol}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Second-Order logic}",
+          "target_start": "\\olsection{ద్వితీయ-స్థాయి తర్కం}"
+        },
+        {
+          "index": 6,
+          "source_start": "The language of second-order logic allows one to quantify not just\nover !!a{domain} of individuals, but over r",
+          "target_start": "ద్వితీయ-స్థాయి తర్కపు భాషలో వ్యక్తుల \\tetoken{ఒక వ్యక్తి క్షేత్రంపై}{!!a{domain}} మాత్రమే కాకుండా, ఆ\n\\tetoken{"
+        },
+        {
+          "index": 7,
+          "source_start": "The rules for second-order logic simply extend the quantifier rules to\nthe new second order variables. Here, h",
+          "target_start": "ద్వితీయ-స్థాయి తర్కపు నియమాలు పరిమాణక నియమాలను కొత్త ద్వితీయ-స్థాయి\nచరాలకు విస్తరిస్తాయి. అయితే ఇక్కడ, ఈ చరాలు"
+        },
+        {
+          "index": 8,
+          "source_start": "When logicians refer to the ``axioms of second-order logic'' they\nusually mean the minimal extension of first-",
+          "target_start": "తర్కశాస్త్రవేత్తలు ``ద్వితీయ-స్థాయి తర్కపు స్వీకృతాలు'' అని\nచెప్పినప్పుడు, సాధారణంగా ధర్మసంగ్రహ పథకంతోపాటు ద్వ"
+        },
+        {
+          "index": 9,
+          "source_start": "From the semantic point of view, one can think of a second-order\n!!{structure} as consisting of a first-order ",
+          "target_start": "అర్థపర దృక్కోణం నుంచి, భాషకు ఒక మొదటిస్థాయి \\tetoken{నిర్మాణంతో}{!!{structure}}పాటు,\nద్వితీయ-స్థాయి పరిమాణకాలు"
+        },
+        {
+          "index": 10,
+          "source_start": "To summarize, there is some ambiguity when talking about second-order\nlogic. In terms of the !!{derivation} sy",
+          "target_start": "సంగ్రహంగా, ద్వితీయ-స్థాయి తర్కం గురించి మాట్లాడేటప్పుడు కొంత\nసందిగ్ధత ఉంటుంది. \\tetoken{వ్యుత్పత్తి}{!!{deriva"
+        },
+        {
+          "index": 11,
+          "source_start": "The language of second-order logic is quite rich. One can identify\nunary relations with subsets of the !!{doma",
+          "target_start": "ద్వితీయ-స్థాయి తర్కపు భాష చాలా సమృద్ధమైనది. ఏకస్థాన సంబంధాలను\n\\tetoken{వ్యక్తి క్షేత్రం}{!!{domain}} యొక్క ఉపస"
+        },
+        {
+          "index": 12,
+          "source_start": "In set-theoretic terms, a function is just a special kind of relation;\nfor example, a unary function~$f$ can b",
+          "target_start": "సమితి-సిద్ధాంత పరంగా ప్రమేయం ఒక ప్రత్యేక రకమైన సంబంధం మాత్రమే;\nఉదాహరణకు, ఏకస్థాన ప్రమేయం~$f$ను\n$\\lforall[x][\\l"
+        },
+        {
+          "index": 13,
+          "source_start": "In addition, one can define the class of well-orderings, by adding the\nfollowing to the definition of a linear",
+          "target_start": "అంతేకాక, రేఖీయ క్రమ నిర్వచనానికి కిందిదాన్ని చేర్చి సుక్రమాల\nతరగతిని నిర్వచించవచ్చు:\n\\[\n\\lforall[P][(\\lexists["
+        },
+        {
+          "index": 14,
+          "source_start": "In short, second-order logic is much more expressive than first-order\nlogic. That's the good news; now for the",
+          "target_start": "సంక్షిప్తంగా, మొదటిస్థాయి తర్కంకంటే ద్వితీయ-స్థాయి తర్కం ఎంతో ఎక్కువ\nవ్యక్తీకరణశక్తి గలది. ఇది శుభవార్త; ఇక చె"
+        },
+        {
+          "index": 15,
+          "source_start": "On the other hand, if one is willing to give up the full second-order\nsemantics in terms of the weaker one, th",
+          "target_start": "మరోవైపు, పూర్ణ ద్వితీయ-స్థాయి అర్థవిచారాన్ని వదిలి బలహీన\nఅర్థవిచారాన్ని తీసుకోవడానికి సిద్ధమైతే, కనిష్ఠ ద్వితీ"
+        },
+        {
+          "index": 16,
+          "source_start": "The easiest way to see that the completeness theorem holds for the\nweaker semantics is to think of second-orde",
+          "target_start": "బలహీన అర్థవిచారానికి సంపూర్ణతా సిద్ధాంతం వర్తిస్తుందని చూడటానికి\nఅత్యంత సులభమైన మార్గం, ద్వితీయ-స్థాయి తర్కాన్"
+        },
+        {
+          "index": 17,
+          "source_start": "With this identification, the weak second-order semantics is essentially\nthe usual semantics for many-sorted l",
+          "target_start": "ఇలా గుర్తించినప్పుడు, బలహీన ద్వితీయ-స్థాయి అర్థవిచారం సారాంశంలో\nబహు-రక తర్కపు సాధారణ అర్థవిచారమే. బహు-రక తర్కా"
+        },
+        {
+          "index": 18,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{byd}{sol}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{byd}{sol}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0178",
+      "source_path": "content/first-order-logic/beyond/higher-order-logic.tex",
+      "source_sha256": "38ced5d3bad860479a37abcc7745229561d26bbfdbe77a5b2a1c6dece2a455b1",
+      "translation_sha256": "1c17e93ad9b17bdafbab64d044c4d9495cecc3669e31ba67ba3ef9d38f6a9974",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{byd}{hol}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{byd}{hol}"
+      ],
+      "tokens_source": {
+        "!!^{formula}s": 1,
+        "!!a{structure}": 1,
+        "!!{derivation}": 2,
+        "!!{domain}": 2,
+        "!!{formula}": 1,
+        "!!{formula}s": 1,
+        "!!{identity}": 2
+      },
+      "tokens_target": {
+        "!!^{formula}s": 1,
+        "!!a{structure}": 1,
+        "!!{derivation}": 2,
+        "!!{domain}": 2,
+        "!!{formula}": 1,
+        "!!{formula}s": 1,
+        "!!{identity}": 2
+      },
+      "math_source": [
+        "$A$",
+        "$B$",
+        "$C$",
+        "$\\sigma$",
+        "$\\tau$",
+        "$\\sigma\\to\\tau$",
+        "$\\sigma\\to\\tau$",
+        "$\\sigma$",
+        "$\\tau$",
+        "$\\Omega$",
+        "$\\Nat$",
+        "$\\Nat\\to\\Omega$",
+        "$\\Nat$",
+        "$\\Nat\\to\\Nat$",
+        "$(\\Nat\\to\\Nat)\\to\\Nat$",
+        "$\\Nat$",
+        "$\\sigma$",
+        "$\\tau$",
+        "$\\sigma\\to\\tau$",
+        "$\\sigma$",
+        "$\\tau$",
+        "$\\sigma\\times\\tau$",
+        "$\\Nat$",
+        "$\\sigma\\to\\tau$",
+        "$\\sigma$",
+        "$\\tau$",
+        "$\\sigma\\times\\tau$",
+        "$\\sigma$",
+        "$\\tau$",
+        "$\\sigma$",
+        "$x$",
+        "$y$",
+        "$z$",
+        "$\\sigma$",
+        "$\\Obj0$",
+        "$\\Nat$",
+        "$\\ObjS$",
+        "$\\Nat\\to\\Nat$",
+        "$s$",
+        "$\\sigma$",
+        "$t$",
+        "$\\Nat\\to(\\sigma\\to\\sigma)$",
+        "$\\Obj{R}_{st}$",
+        "$\\Nat\\to\\sigma$",
+        "$s$",
+        "$\\tau\\to\\sigma$",
+        "$t$",
+        "$\\tau$",
+        "$s(t)$",
+        "$\\sigma$",
+        "$s$",
+        "$\\sigma$",
+        "$x$",
+        "$\\tau$",
+        "$\\lambd[x][s]$",
+        "$\\tau\\to\\sigma$",
+        "$s$",
+        "$\\sigma$",
+        "$t$",
+        "$\\tau$",
+        "$\\tuple{s,t}$",
+        "$\\sigma\\times\\tau$",
+        "$s$",
+        "$\\sigma\\times\\tau$",
+        "$p_1(s)$",
+        "$\\sigma$",
+        "$p_2(s)$",
+        "$\\tau$",
+        "$\\Obj{R}_{st}$",
+        "\\begin{align*}\\Obj{R}_{st}(0)&=s\\\\\\Obj{R}_{st}(x+1)&=t(x,R_{st}(x)),\\end{align*}",
+        "$\\tuple{s,t}$",
+        "$s$",
+        "$t$",
+        "$p_1(s)$",
+        "$p_2(s)$",
+        "$s$",
+        "$\\lambd[x][s]$",
+        "$f$",
+        "\\[f(x)=s\\]",
+        "$x$",
+        "$\\sigma$",
+        "$\\eq[s][t]$",
+        "$\\Omega$",
+        "$\\Omega$",
+        "$\\sigma\\to\\tau$",
+        "$\\sigma$",
+        "$\\tau$",
+        "$T_\\tau$",
+        "$\\tau$",
+        "$\\Nat$"
+      ],
+      "math_target_core": [
+        "$A$",
+        "$B$",
+        "$C$",
+        "$\\sigma$",
+        "$\\tau$",
+        "$\\sigma\\to\\tau$",
+        "$\\sigma$",
+        "$\\tau$",
+        "$\\sigma\\to\\tau$",
+        "$\\Omega$",
+        "$\\Nat$",
+        "$\\Nat\\to\\Omega$",
+        "$\\Nat$",
+        "$\\Nat\\to\\Nat$",
+        "$(\\Nat\\to\\Nat)\\to\\Nat$",
+        "$\\Nat$",
+        "$\\sigma$",
+        "$\\tau$",
+        "$\\sigma\\to\\tau$",
+        "$\\sigma$",
+        "$\\tau$",
+        "$\\sigma\\times\\tau$",
+        "$\\Nat$",
+        "$\\sigma\\to\\tau$",
+        "$\\sigma$",
+        "$\\tau$",
+        "$\\sigma\\times\\tau$",
+        "$\\sigma$",
+        "$\\tau$",
+        "$\\sigma$",
+        "$\\sigma$",
+        "$x$",
+        "$y$",
+        "$z$",
+        "$\\Obj0$",
+        "$\\Nat$",
+        "$\\ObjS$",
+        "$\\Nat\\to\\Nat$",
+        "$s$",
+        "$\\sigma$",
+        "$t$",
+        "$\\Nat\\to(\\sigma\\to\\sigma)$",
+        "$\\Obj{R}_{st}$",
+        "$\\Nat\\to\\sigma$",
+        "$s$",
+        "$\\tau\\to\\sigma$",
+        "$t$",
+        "$\\tau$",
+        "$s(t)$",
+        "$\\sigma$",
+        "$s$",
+        "$\\sigma$",
+        "$x$",
+        "$\\tau$",
+        "$\\lambd[x][s]$",
+        "$\\tau\\to\\sigma$",
+        "$s$",
+        "$\\sigma$",
+        "$t$",
+        "$\\tau$",
+        "$\\tuple{s,t}$",
+        "$\\sigma\\times\\tau$",
+        "$s$",
+        "$\\sigma\\times\\tau$",
+        "$p_1(s)$",
+        "$\\sigma$",
+        "$p_2(s)$",
+        "$\\tau$",
+        "$\\Obj{R}_{st}$",
+        "\\begin{align*}\\Obj{R}_{st}(0)&=s\\\\\\Obj{R}_{st}(x+1)&=t(x,R_{st}(x)),\\end{align*}",
+        "$\\tuple{s,t}$",
+        "$s$",
+        "$t$",
+        "$p_1(s)$",
+        "$p_2(s)$",
+        "$s$",
+        "$\\tau$",
+        "$x$",
+        "$f$",
+        "$\\lambd[x][s]$",
+        "\\[f(x)=s\\]",
+        "$\\eq[s][t]$",
+        "$\\Omega$",
+        "$\\Omega$",
+        "$\\sigma$",
+        "$\\tau$",
+        "$\\sigma\\to\\tau$",
+        "$\\tau$",
+        "$T_\\tau$",
+        "$\\Nat$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$\\sigma$"
+      ],
+      "math_delta_target_only": [
+        "$\\tau$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTEFOLBYD-004"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 3720,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: beyond\n% Section: higher-order-logic",
+          "target_start": "% Part: first-order-logic\n% Chapter: beyond\n% Section: higher-order-logic"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{fol}{byd}{hol}",
+          "target_start": "\\olfileid{fol}{byd}{hol}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Higher-Order logic}",
+          "target_start": "\\olsection{ఉన్నత-స్థాయి తర్కం}"
+        },
+        {
+          "index": 6,
+          "source_start": "Passing from first-order logic to second-order logic enabled us to\ntalk about sets of objects in the first-ord",
+          "target_start": "మొదటిస్థాయి తర్కం నుంచి ద్వితీయ-స్థాయి తర్కానికి వెళ్లడం వల్ల,\nఔపచారిక భాషలోనే మొదటిస్థాయి \\tetoken{వ్యక్తి క్"
+        },
+        {
+          "index": 7,
+          "source_start": "In practice, higher-order logic is often !!{formula}ted in terms of\nfunctions instead of relations. (Modulo th",
+          "target_start": "ఆచరణలో, ఉన్నత-స్థాయి తర్కాన్ని సంబంధాలకు బదులు ప్రమేయాల ఆధారంగా\nతరచుగా \\tetoken{సూత్రంగా}{!!{formula}} రూపొంది"
+        },
+        {
+          "index": 8,
+          "source_start": "As in the case of second-order logic, one can think of higher-order\nlogic as a kind of many-sorted logic, wher",
+          "target_start": "ద్వితీయ-స్థాయి తర్కంలోలాగే, మనం పరిగణించాలనుకునే ప్రతి వస్తు టైపుకూ\nఒక రకం ఉండే బహు-రక తర్క రూపంగా ఉన్నత-స్థాయ"
+        },
+        {
+          "index": 9,
+          "source_start": "If one augments the finite type system with a type $\\Omega$ of truth\nvalues, one has to include axioms which g",
+          "target_start": "పరిమిత టైపు వ్యవస్థకు సత్యమూల్యాల టైపు~$\\Omega$ను చేరిస్తే, దాని\nవాడకాన్ని నియంత్రించే స్వీకృతాలను కూడా చేర్చా"
+        },
+        {
+          "index": 10,
+          "source_start": "As in the case of second-order logic, there are different versions of\nhigher-type semantics that one might wan",
+          "target_start": "ద్వితీయ-స్థాయి తర్కంలోలాగే, మనం వాడాలనుకునే ఉన్నత-టైపు\nఅర్థవిచారానికి వేర్వేరు రూపాలు ఉన్నాయి. పూర్ణ రూపంలో,\nట"
+        },
+        {
+          "index": 11,
+          "source_start": "Higher-type logic is attractive because it provides a framework in\nwhich we can embed a good deal of mathemati",
+          "target_start": "ఉన్నత-టైపు తర్కం ఆకర్షణీయమైనది; ఎందుకంటే గణితంలో గణనీయమైన భాగాన్ని\nసహజంగా ఇమిడ్చగల చట్రాన్ని అది అందిస్తుంది: "
+        },
+        {
+          "index": 12,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{byd}{hol}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{byd}{hol}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0179",
+      "source_path": "content/first-order-logic/beyond/intuitionistic-logic.tex",
+      "source_sha256": "063ba3b9be092a262c09554ac0377b8f2a74d4042736588b30435c95a4740e98",
+      "translation_sha256": "772b96a170597aa509b23e4d1229ce16bb961ddf7f5ca202134f15248b7e6600",
+      "source_blocks": 28,
+      "target_blocks": 28,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{byd}{il}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{byd}{il}"
+      ],
+      "tokens_source": {
+        "!!a{derivation}": 1,
+        "!!a{formula}": 1,
+        "!!a{structure}": 1,
+        "!!{element}": 1,
+        "!!{element}s": 2,
+        "!!{formula}": 3,
+        "!!{formula}s": 3,
+        "!!{structure}": 3,
+        "!!{structure}s": 2
+      },
+      "tokens_target": {
+        "!!a{derivation}": 1,
+        "!!a{formula}": 1,
+        "!!a{structure}": 1,
+        "!!{element}": 1,
+        "!!{element}s": 2,
+        "!!{formula}": 3,
+        "!!{formula}s": 3,
+        "!!{structure}": 3,
+        "!!{structure}s": 2
+      },
+      "math_source": [
+        "$x$",
+        "$x$",
+        "$x$",
+        "$x$",
+        "$x$",
+        "$7$",
+        "$9$",
+        "$x$",
+        "$x$",
+        "$\\sqrt{2}^2=2$",
+        "$a$",
+        "$b$",
+        "$a^b$",
+        "$\\sqrt{2}^{\\sqrt{2}}$",
+        "$a=b=\\sqrt{2}$",
+        "\\[(\\sqrt{2}^{\\sqrt{2}})^{\\sqrt{2}}=\\sqrt{2}^{\\sqrt{2}\\cdot\\sqrt{2}}=\\sqrt{2}^2=2,\\]",
+        "$a$",
+        "$\\sqrt{2}^{\\sqrt{2}}$",
+        "$b$",
+        "$\\sqrt2$",
+        "$a$",
+        "$b$",
+        "$a=\\sqrt{3}$",
+        "$b=\\log_34$",
+        "\\[a^b=\\sqrt{3}^{\\log_34}=3^{1/2\\cdot\\log_34}=(3^{\\log_34})^{1/2}=4^{1/2}=2,\\]",
+        "$3^{\\log_3x}=x$",
+        "$x$",
+        "$!A(x)$",
+        "$x$",
+        "$!A$",
+        "$!A$",
+        "$!B$",
+        "$!A\\land!B$",
+        "$!A$",
+        "$!B$",
+        "$!A\\lor!B$",
+        "$!A$",
+        "$!B$",
+        "$!A\\lif!B$",
+        "$!A$",
+        "$!B$",
+        "$\\lforall[x][!A(x)]$",
+        "$!A(x)$",
+        "$x$",
+        "$\\lexists[x][!A(x)]$",
+        "$x$",
+        "$!A$",
+        "$(\\lnot!A\\lif\\lfalse)\\lif!A$",
+        "$!A\\lor\\lnot!A$",
+        "$\\lnot\\lnot!A\\lif!A$",
+        "$!A^N$",
+        "$!A$",
+        "\\begin{align*}!A^N&\\ident\\lnot\\lnot!A\\quad\\\\(!A\\land!B)^N&\\ident(!A^N\\land!B^N)\\\\(!A\\lor!B)^N&\\ident\\lnot\\lnot(!A^N\\lor!B^N)\\\\(!A\\lif!B)^N&\\ident(!A^N\\lif!B^N)\\\\(\\lforall[x][!A])^N&\\ident\\lforall[x][!A^N]\\\\(\\lexists[x][!A])^N&\\ident\\lnot\\lnot\\lexists[x][!A^N]\\end{align*}",
+        "$!A\\liff!A^N$",
+        "$!A$",
+        "$!A^N$",
+        "$!A$",
+        "$!A^N$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma^N$",
+        "$!A^N$",
+        "$!A$",
+        "$!A^N$",
+        "$\\mModelM=\\tuple{W,R,V}$",
+        "$W$",
+        "$R$",
+        "$W$",
+        "$W$",
+        "$W$",
+        "$v\\gequ$",
+        "$u$",
+        "$u$",
+        "$u$",
+        "$\\mSat{M}{!A}[w]$",
+        "$\\mSat{M}{!A}[w]$",
+        "$!A$",
+        "$w$",
+        "$\\mSat{M}{\\Objp_i}[w]$",
+        "$\\Objp_i$",
+        "$w$",
+        "$\\mSat/{M}{\\lfalse}[w]$",
+        "$\\mSat{M}{(!A\\land!B)}[w]$",
+        "$\\mSat{M}{!A}[w]$",
+        "$\\mSat{M}{!B}[w]$",
+        "$\\mSat{M}{(!A\\lor!B)}[w]$",
+        "$\\mSat{M}{!A}[w]$",
+        "$\\mSat{M}{!B}[w]$",
+        "$\\mSat{M}{(!A\\lif!B)}[w]$",
+        "$w'\\geqw$",
+        "$\\mSat{M}{!A}[w']$",
+        "$\\mSat{M}{!B}[w']$",
+        "$\\lnot(p\\landq)\\lif(\\lnotp\\lor\\lnotq)$"
+      ],
+      "math_target_core": [
+        "$x$",
+        "$x$",
+        "$x$",
+        "$x$",
+        "$7$",
+        "$9$",
+        "$x$",
+        "$x$",
+        "$x$",
+        "$\\sqrt{2}^2=2$",
+        "$a^b$",
+        "$a$",
+        "$b$",
+        "$\\sqrt{2}^{\\sqrt{2}}$",
+        "$a=b=\\sqrt{2}$",
+        "\\[(\\sqrt{2}^{\\sqrt{2}})^{\\sqrt{2}}=\\sqrt{2}^{\\sqrt{2}\\cdot\\sqrt{2}}=\\sqrt{2}^2=2,\\]",
+        "$a$",
+        "$\\sqrt{2}^{\\sqrt{2}}$",
+        "$b$",
+        "$\\sqrt2$",
+        "$a$",
+        "$b$",
+        "$a=\\sqrt{3}$",
+        "$b=\\log_34$",
+        "\\[a^b=\\sqrt{3}^{\\log_34}=3^{1/2\\cdot\\log_34}=(3^{\\log_34})^{1/2}=4^{1/2}=2,\\]",
+        "$3^{\\log_3x}=x$",
+        "$!A(x)$",
+        "$x$",
+        "$x$",
+        "$!A$",
+        "$!A$",
+        "$!B$",
+        "$!A\\land!B$",
+        "$!A$",
+        "$!B$",
+        "$!A\\lor!B$",
+        "$!A$",
+        "$!B$",
+        "$!A\\lif!B$",
+        "$!A$",
+        "$!B$",
+        "$\\lforall[x][!A(x)]$",
+        "$x$",
+        "$!A(x)$",
+        "$\\lexists[x][!A(x)]$",
+        "$x$",
+        "$!A$",
+        "$(\\lnot!A\\lif\\lfalse)\\lif!A$",
+        "$!A\\lor\\lnot!A$",
+        "$\\lnot\\lnot!A\\lif!A$",
+        "$!A$",
+        "$!A^N$",
+        "\\begin{align*}!A^N&\\ident\\lnot\\lnot!A\\quad\\\\(!A\\land!B)^N&\\ident(!A^N\\land!B^N)\\\\(!A\\lor!B)^N&\\ident\\lnot\\lnot(!A^N\\lor!B^N)\\\\(!A\\lif!B)^N&\\ident(!A^N\\lif!B^N)\\\\(\\lforall[x][!A])^N&\\ident\\lforall[x][!A^N]\\\\(\\lexists[x][!A])^N&\\ident\\lnot\\lnot\\lexists[x][!A^N]\\end{align*}",
+        "$!A\\liff!A^N$",
+        "$!A$",
+        "$!A^N$",
+        "$!A$",
+        "$!A^N$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma^N$",
+        "$!A^N$",
+        "$!A$",
+        "$!A^N$",
+        "$\\mModelM=\\tuple{W,R,V}$",
+        "$W$",
+        "$W$",
+        "$R$",
+        "$W$",
+        "$W$",
+        "$v\\gequ$",
+        "$u$",
+        "$u$",
+        "$u$",
+        "$\\mSat{M}{!A}[w]$",
+        "$\\mSat{M}{!A}[w]$",
+        "$w$",
+        "$!A$",
+        "$\\mSat{M}{\\Objp_i}[w]$",
+        "$\\Objp_i$",
+        "$w$",
+        "$\\mSat/{M}{\\lfalse}[w]$",
+        "$\\mSat{M}{(!A\\land!B)}[w]$",
+        "$\\mSat{M}{!A}[w]$",
+        "$\\mSat{M}{!B}[w]$",
+        "$\\mSat{M}{(!A\\lor!B)}[w]$",
+        "$\\mSat{M}{!A}[w]$",
+        "$\\mSat{M}{!B}[w]$",
+        "$\\mSat{M}{(!A\\lif!B)}[w]$",
+        "$w'\\geqw$",
+        "$\\mSat{M}{!A}[w']$",
+        "$\\mSat{M}{!B}[w']$",
+        "$\\lnot(p\\landq)\\lif(\\lnotp\\lor\\lnotq)$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 6488,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: beyond\n% Section: intuitionistic-logic",
+          "target_start": "% Part: first-order-logic\n% Chapter: beyond\n% Section: intuitionistic-logic"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{fol}{byd}{il}",
+          "target_start": "\\olfileid{fol}{byd}{il}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Intuitionistic Logic}",
+          "target_start": "\\olsection{అంతఃప్రజ్ఞావాద తర్కం}"
+        },
+        {
+          "index": 6,
+          "source_start": "In contrast to second-order and higher-order logic, intuitionistic\nfirst-order logic represents a restriction ",
+          "target_start": "ద్వితీయ-స్థాయి, ఉన్నత-స్థాయి తర్కాలకు భిన్నంగా, అంతఃప్రజ్ఞావాద\nమొదటిస్థాయి తర్కం సాంప్రదాయిక రూపానికి ఒక పరిమి"
+        },
+        {
+          "index": 7,
+          "source_start": "Suppose someone came up to you one day and announced that they had\ndetermined a natural number~$x$, with the p",
+          "target_start": "ఒక రోజు ఎవరైనా మీ దగ్గరకు వచ్చి, కింది ధర్మం గల సహజ సంఖ్య~$x$ను\nనిర్ణయించానని ప్రకటించారనుకోండి: $x$ ప్రధాన సం"
+        },
+        {
+          "index": 8,
+          "source_start": "What is the magic value of $x$? They describe it as follows: $x$ is\nthe natural number that is equal to $7$ if",
+          "target_start": "$x$ యొక్క ఆ అద్భుత విలువ ఏమిటి? వారు దాన్ని ఇలా వివరిస్తారు: రీమాన్\nపరికల్పన సత్యమైతే $7$కు, కాకపోతే $9$కు సమా"
+        },
+        {
+          "index": 9,
+          "source_start": "Angrily, you demand your money back. From a classical point of view,\nthe description above does in fact determ",
+          "target_start": "కోపంతో మీరు చెల్లించిన డబ్బు తిరిగి ఇవ్వాలని అడుగుతారు. సాంప్రదాయిక\nదృక్కోణం నుంచి పైనున్న వివరణ నిజంగానే $x$క"
+        },
+        {
+          "index": 10,
+          "source_start": "To take another, perhaps less contrived example, consider the\nfollowing question. We know that it is possible ",
+          "target_start": "మరొక, బహుశా తక్కువ కల్పితమైన ఉదాహరణగా కింది ప్రశ్నను పరిశీలించండి.\nఒక అకరణీయ సంఖ్యను కరణీయ ఘాతానికి హెచ్చించి "
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{thm}\nThere are irrational numbers $a$ and $b$ such that $a^b$ is rational.\n\\end{thm}",
+          "target_start": "\\begin{thm}\n$a^b$ కరణీయమయ్యే అకరణీయ సంఖ్యలు $a$, $b$ ఉన్నాయి.\n\\end{thm}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{proof}\nConsider $\\sqrt{2}^{\\sqrt{2}}$. If this is rational, we are done:\nwe can let $a = b = \\sqrt{2}$.",
+          "target_start": "\\begin{proof}\n$\\sqrt{2}^{\\sqrt{2}}$ను పరిశీలించండి. ఇది కరణీయమైతే మన పని\nపూర్తయింది: $a = b = \\sqrt{2}$గా తీసు"
+        },
+        {
+          "index": 13,
+          "source_start": "Does this constitute a valid proof? Most mathematicians feel that it\ndoes. But again, there is something a lit",
+          "target_start": "ఇది చెల్లుబాటైన నిరూపణేనా? అవునని చాలామంది గణితశాస్త్రవేత్తలు\nభావిస్తారు. అయినా ఇక్కడ మళ్లీ కొంత అసంతృప్తి కలి"
+        },
+        {
+          "index": 14,
+          "source_start": "Intuitionistic logic is designed to model a kind of reasoning where\nmoves like the one in the first proof are ",
+          "target_start": "మొదటి నిరూపణలోని అడుగుల వంటివాటిని అనుమతించని హేతుచింతనను\nనమూనీకరించడానికి అంతఃప్రజ్ఞావాద తర్కాన్ని రూపొందించా"
+        },
+        {
+          "index": 15,
+          "source_start": "Formally speaking, intuitionistic first-order logic is what you get if\nyou restrict !!a{derivation} system for",
+          "target_start": "ఔపచారికంగా చెప్పాలంటే, మొదటిస్థాయి తర్కపు \\tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} వ్యవస్థను\nఒక నిర్దిష్ట విధ"
+        },
+        {
+          "index": 16,
+          "source_start": "There is an informal constructive interpretation of the intuitionist\nconnectives, usually known as the BHK int",
+          "target_start": "అంతఃప్రజ్ఞావాద సంయోజకాలకు ఒక అనౌపచారిక నిర్మాణాత్మక అర్థనిర్దేశం\nఉంది. బ్రౌవర్, హైటింగ్, కొల్మొగొరోవ్‌ల పేర్లత"
+        },
+        {
+          "index": 17,
+          "source_start": "Intuitionistic logic is often thought of as being classical logic\n``minus'' the law of the excluded middle. Th",
+          "target_start": "అంతఃప్రజ్ఞావాద తర్కాన్ని తరచుగా, బహిష్కృత మధ్యమ సూత్రాన్ని\n``తీసివేసిన'' సాంప్రదాయిక తర్కంగా భావిస్తారు. కింది"
+        },
+        {
+          "index": 18,
+          "source_start": "The first deductive systems for intuitionistic propositional\nlogic, put forth as formalizations of Brouwer's i",
+          "target_start": "బ్రౌవర్ అంతఃప్రజ్ఞావాదానికి ఔపచారిక రూపాలుగా ప్రతిపాదించిన తొలి\nఅంతఃప్రజ్ఞావాద ప్రతిజ్ఞావాక్య తర్క నిగమన వ్యవస"
+        },
+        {
+          "index": 19,
+          "source_start": "The \\emph{double-negation translation} describes an important\nrelationship between classical and intuitionist ",
+          "target_start": "\\emph{ద్వినిషేధ అనువాదం} సాంప్రదాయిక తర్కానికీ అంతఃప్రజ్ఞావాద\nతర్కానికీ మధ్య ముఖ్యమైన సంబంధాన్ని వివరిస్తుంది."
+        },
+        {
+          "index": 20,
+          "source_start": "\\begin{thm}\n\\begin{enumerate}\n\\item $!A \\liff !A^N$ is provable classically\n\\item If $!A$ is provable classica",
+          "target_start": "\\begin{thm}\n\\begin{enumerate}\n\\item $!A \\liff !A^N$ సాంప్రదాయికంగా నిరూపించదగినది.\n\\item $!A$ సాంప్రదాయికంగా న"
+        },
+        {
+          "index": 21,
+          "source_start": "We can now envision the following dialogue. Classical mathematician:\n``I've proved $!A$!'' Intuitionist mathem",
+          "target_start": "ఇప్పుడు కింది సంభాషణను ఊహించవచ్చు. సాంప్రదాయిక గణితశాస్త్రవేత్త:\n``నేను $!A$ను నిరూపించాను!'' అంతఃప్రజ్ఞావాద గ"
+        },
+        {
+          "index": 22,
+          "source_start": "Note that the above translation concerns pure logic only; it does not\naddress the question as to what the appr",
+          "target_start": "పైనున్న అనువాదం శుద్ధ తర్కానికి మాత్రమే సంబంధించినదని గమనించండి;\nసాంప్రదాయిక, అంతఃప్రజ్ఞావాద గణితాలకు తగిన \\em"
+        },
+        {
+          "index": 23,
+          "source_start": "\\begin{thm}\nIf $\\Gamma$ proves $!A$ classically, $\\Gamma^N$ proves $!A^N$\nintuitionistically.\n\\end{thm}",
+          "target_start": "\\begin{thm}\n$\\Gamma$ సాంప్రదాయికంగా $!A$ను నిరూపిస్తే, $\\Gamma^N$\nఅంతఃప్రజ్ఞావాద తర్కంలో $!A^N$ను నిరూపిస్తుంద"
+        },
+        {
+          "index": 24,
+          "source_start": "In other words, if $!A$ is provable from some hypotheses classically,\nthen $!A^N$ is provable from their doubl",
+          "target_start": "మరో మాటలో, కొన్ని పరికల్పనల నుంచి $!A$ సాంప్రదాయికంగా\nనిరూపించదగినదైతే, వాటి ద్వినిషేధ అనువాదాల నుంచి $!A^N$\nన"
+        },
+        {
+          "index": 25,
+          "source_start": "To show that a sentence or propositional !!{formula} is intuitionistically\nvalid, all you have to do is provid",
+          "target_start": "ఒక వాక్యం లేదా ప్రతిజ్ఞావాక్య \\tetoken{సూత్రం}{!!{formula}} అంతఃప్రజ్ఞావాద తర్కంలో\nచెల్లుబాటవుతుందని చూపడానికి"
+        },
+        {
+          "index": 26,
+          "source_start": "We can play the same game we did for classical logic: define the\nsemantics, and prove soundness and completene",
+          "target_start": "సాంప్రదాయిక తర్కంలో చేసిన పనినే మళ్లీ చేయవచ్చు: అర్థవిచారాన్ని\nనిర్వచించి, యథార్థతను, సంపూర్ణతను నిరూపించాలి. "
+        },
+        {
+          "index": 27,
+          "source_start": "A Kripke !!{structure}~$\\mModel M = \\tuple{W, R, V}$ for a propositional\nlanguage consists of a set~$W$, parti",
+          "target_start": "ప్రతిజ్ఞావాక్య భాషకు క్రిప్కె \\tetoken{నిర్మాణం}{!!{structure}}\n$\\mModel M = \\tuple{W, R, V}$లో ఒక సమితి~$W$, "
+        },
+        {
+          "index": 28,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{byd}{il}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{byd}{il}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0180",
+      "source_path": "content/first-order-logic/beyond/modal-logics.tex",
+      "source_sha256": "8dff5692c79c06aa452bc0e20871109f3334a9232bd18997062196e872539881",
+      "translation_sha256": "df1ede230c43c6b491e84db7bccd72476ae3489e596756511b3459dfedda9196",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{byd}{mod}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{byd}{mod}"
+      ],
+      "tokens_source": {
+        "!!a{formula}": 1,
+        "!!{derivation}": 1,
+        "!!{structure}": 2,
+        "!!{structure}s": 4
+      },
+      "tokens_target": {
+        "!!a{formula}": 1,
+        "!!{derivation}": 1,
+        "!!{structure}": 2,
+        "!!{structure}s": 4
+      },
+      "math_source": [
+        "$!A$",
+        "$\\Box!A$",
+        "$\\Box!A$",
+        "$!A$",
+        "$\\Diamond!A$",
+        "$\\lnot\\Box\\lnot!A$",
+        "$!A$",
+        "$P$",
+        "$\\Atom{R}{x,y}$",
+        "$\\Atom{R}{p,q}$",
+        "$q$",
+        "$p$",
+        "$p$",
+        "$q$",
+        "$\\Box$",
+        "$\\Diamond$",
+        "$\\Box!A$",
+        "$!A$",
+        "$\\Diamond!A$",
+        "$!A$",
+        "$\\Box!A$",
+        "$!A$",
+        "$!A$",
+        "$\\Box!A$",
+        "$!A$",
+        "$\\Diamond!A$",
+        "$!A$",
+        "$\\Log{S4}$",
+        "\\begin{align*}&\\Box(!A\\lif!B)\\lif(\\Box!A\\lif\\Box!B)\\\\&\\Box!A\\lif!A\\\\&\\Box!A\\lif\\Box\\Box!A$!A$$\\Box!A$$\\Log{S5}$&\\Diamond!A\\lif\\Box\\Diamond!A\\end{align*}",
+        "$\\Log{S4}$",
+        "$\\Log{S5}$",
+        "$\\Box!A$",
+        "$!A$"
+      ],
+      "math_target_core": [
+        "$!A$",
+        "$\\Box!A$",
+        "$!A$",
+        "$\\Box!A$",
+        "$\\Diamond!A$",
+        "$\\lnot\\Box\\lnot!A$",
+        "$!A$",
+        "$P$",
+        "$\\Atom{R}{x,y}$",
+        "$q$",
+        "$p$",
+        "$\\Atom{R}{p,q}$",
+        "$p$",
+        "$q$",
+        "$\\Box$",
+        "$\\Diamond$",
+        "$\\Box!A$",
+        "$!A$",
+        "$\\Diamond!A$",
+        "$!A$",
+        "$\\Box!A$",
+        "$!A$",
+        "$!A$",
+        "$\\Box!A$",
+        "$!A$",
+        "$\\Diamond!A$",
+        "$!A$",
+        "$\\Log{S4}$",
+        "\\begin{align*}&\\Box(!A\\lif!B)\\lif(\\Box!A\\lif\\Box!B)\\\\&\\Box!A\\lif!A\\\\&\\Box!A\\lif\\Box\\Box!A$!A$$\\Box!A$$\\Log{S5}$&\\Diamond!A\\lif\\Box\\Diamond!A\\end{align*}",
+        "$\\Log{S4}$",
+        "$\\Log{S5}$",
+        "$!A$",
+        "$\\Box!A$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2687,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: beyond\n% Section: modal-logics",
+          "target_start": "% Part: first-order-logic\n% Chapter: beyond\n% Section: modal-logics"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{fol}{byd}{mod}",
+          "target_start": "\\olfileid{fol}{byd}{mod}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Modal Logics}",
+          "target_start": "\\olsection{మోడల్ తర్కాలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "Consider the following example of a conditional sentence:\n\\begin{quote}\n  If Jeremy is alone in that room, the",
+          "target_start": "కింది సోపాధిక వాక్య ఉదాహరణను పరిశీలించండి:\n\\begin{quote}\n  జెరెమీ ఆ గదిలో ఒంటరిగా ఉంటే, అతను మద్యం మత్తులో, నగ"
+        },
+        {
+          "index": 7,
+          "source_start": "Modal logic was designed to make sense of this kind of necessity. One\nobtains modal propositional logic from o",
+          "target_start": "ఇటువంటి అవశ్యకతకు అర్థం చెప్పడానికి మోడల్ తర్కాన్ని రూపొందించారు.\nసాధారణ ప్రతిజ్ఞావాక్య తర్కానికి ఒక పెట్టె సం"
+        },
+        {
+          "index": 8,
+          "source_start": "Kripke !!{structure}s can be used to provide a semantics for modal\nlogic; in fact, Kripke first designed this ",
+          "target_start": "మోడల్ తర్కానికి అర్థవిచారం ఇవ్వడానికి క్రిప్కె \\tetoken{నిర్మాణాలను}{!!{structure}s}\nవాడవచ్చు; నిజానికి క్రిప్"
+        },
+        {
+          "index": 9,
+          "source_start": "Modal logic is sometimes called an ``intensional'' logic, as opposed\nto an ``extensional'' one. The intended s",
+          "target_start": "విస్తారాత్మక (ఎక్స్టెన్షనల్) తర్కానికి భిన్నంగా మోడల్ తర్కాన్ని\nకొన్నిసార్లు ``అంతర్భావాత్మక'' (ఇంటెన్షనల్) తర"
+        },
+        {
+          "index": 10,
+          "source_start": "One would like to augment logic with rules and axioms dealing with\nmodality. For example, the system $\\Log{S4}",
+          "target_start": "మోడాలిటీతో వ్యవహరించే నియమాలు, స్వీకృతాలను తర్కానికి చేర్చాలనుకుంటాం.\nఉదాహరణకు, $\\Log{S4}$ వ్యవస్థలో ప్రతిజ్ఞా"
+        },
+        {
+          "index": 11,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{byd}{mod}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{byd}{mod}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0181",
+      "source_path": "content/first-order-logic/beyond/other-logics.tex",
+      "source_sha256": "025f94f3d087242ea1cf63543ab32c653ca6960c89ea7c321f9805a3b14f3350",
+      "translation_sha256": "c23149d28ea7e16f54a275aef98a0dea81ef73fa28cc550ad90160ba6dfc0623",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{fol}{byd}{oth}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{fol}{byd}{oth}"
+      ],
+      "tokens_source": {
+        "!!{derivation}": 1
+      },
+      "tokens_target": {
+        "!!{derivation}": 1
+      },
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1316,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: first-order-logic\n% Chapter: beyond\n% Section: other-logics",
+          "target_start": "% Part: first-order-logic\n% Chapter: beyond\n% Section: other-logics"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{fol}{byd}{oth}",
+          "target_start": "\\olfileid{fol}{byd}{oth}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Other Logics}",
+          "target_start": "\\olsection{ఇతర తర్కాలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "As you may have gathered by now, it is not hard to design a new logic.\nYou too can create your own a syntax, m",
+          "target_start": "ఇప్పటికే మీరు గ్రహించి ఉండవచ్చు: కొత్త తర్కాన్ని రూపొందించడం కష్టం\nకాదు. మీరు కూడా మీ సొంత వాక్యనిర్మాణాన్ని స"
+        },
+        {
+          "index": 7,
+          "source_start": "Recent decades have witnessed a veritable explosion of formal logics.\nFuzzy logic is designed to model reasoni",
+          "target_start": "ఇటీవలి దశాబ్దాల్లో ఔపచారిక తర్కాలు నిజంగా విస్ఫోటకంగా విస్తరించాయి.\nఅస్పష్ట ధర్మాల గురించిన హేతుచింతనను నమూనీక"
+        },
+        {
+          "index": 8,
+          "source_start": "The list goes on and on, and the possibilities seem endless. We\nmay never attain Leibniz' dream of reducing al",
+          "target_start": "ఈ జాబితా కొనసాగుతూనే ఉంటుంది; సాధ్యతలు అంతులేనివిగా కనిపిస్తాయి.\nమానవ హేతుచింతన మొత్తాన్ని గణనకు తగ్గించాలనే ల"
+        },
+        {
+          "index": 9,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{byd}{oth}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{fol}{byd}{oth}"
+      ],
+      "protected_identifier_parity": true
+    }
+  ]
+}

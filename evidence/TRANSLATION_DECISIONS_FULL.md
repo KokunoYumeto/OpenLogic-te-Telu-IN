@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **170 of 722 source units drafted**. This readable view contains all 153 decisions and 276 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **178 of 722 source units drafted**. This readable view contains all 162 decisions and 288 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -1393,6 +1393,139 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-TE-T049-OCC-001; OLP-0170; OLP-0170-B013; source upstream/content/first-order-logic/models-theories/theories.tex:102-106 bytes 3956-4197 SHA-256 5ce32448dbe95d0b37477a6c343ae3a976bb299c955f50ae206b0f150f09ccd5; target translation/content/first-order-logic/models-theories/theories.tex:101-105 bytes 7312-7861 SHA-256 3d26fb8886139618d0a2192d1267d89c06849f50c048f3aeb08286a54951dffd; reader page pending.
+
+## te-Telu-IN-TE-T050 — many-sorted logic / sort / type / arity / sort-restricted quantifier
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: బహు-రక తర్కం / రకం / టైపు / స్థానసంఖ్య (అరిటీ) / రక-పరిమాణకం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “many-sorted logic / sort / type / arity / sort-restricted quantifier” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low for set, relation, function, variable and domain register; medium to high nomenclatural uncertainty for many-sorted and sort-restricted compounds
+
+- Rationale: TE-P008 and TE-P010--TE-P012 support sets, binary relations, functions and mappings; TE-P018, TE-P027, TE-P029 and TE-P030 support formal logic, predicates, variables, first-order language and the individuals domain. They do not directly attest the many-sorted taxonomy. The chapter's separate domains, per-sort variables and quantifiers, typed argument positions and first-order embedding control the exact senses. టైపు and అరిటీ are explicit technical borrowings used beside the descriptive రకం and k-స్థాన wording; source symbols remain formal notation
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C004:TE-P012 [checked_context_only], PDF page 319; printed page 312; Questions 37-38; Function-versus-relation explanatory register; do not copy source answers mechanically. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations.
+
+- Alternatives: leave all many-sorted terminology in English reader prose [rejected: rejected] | claim direct canon attestation for the many-sorted taxonomy [rejected: rejected]
+
+- Review question: Please double-check whether “బహు-రక తర్కం / రకం / టైపు / స్థానసంఖ్య (అరిటీ) / రక-పరిమాణకం” is idiomatic and technically standard for “many-sorted logic / sort / type / arity / sort-restricted quantifier” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T050-OCC-001; OLP-0176; OLP-0176-B007; source upstream/content/first-order-logic/beyond/many-sorted-logic.tex:19-26 bytes 543-1033 SHA-256 5a6abcd66e91868de97e0c1ec44cdf848396655cc6995adc05d6771844ecfac7; target translation/content/first-order-logic/beyond/many-sorted-logic.tex:20-26 bytes 1325-2523 SHA-256 57aba22e87125b3451399ec41ec14315afbe383fe0bd00b9284837380452bf3b; reader page pending.
+
+## te-Telu-IN-TE-T051 — second-order logic / higher-order logic / comprehension schema / predicative / impredicative / full and weak semantics / categorical / finite type / functional / lambda term / application / projection / simple theory of types
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: ద్వితీయ-స్థాయి తర్కం / ఉన్నత-స్థాయి తర్కం / ధర్మసంగ్రహ పథకం / ప్రెడికేటివ్ / ఇంప్రెడికేటివ్ / పూర్ణ, బలహీన అర్థవిచారం / సమరూపత వరకు ఏకైకమైన (కేటగారికల్) / పరిమిత టైపు / ప్రమేయకం / లాంబ్డా పదం / ప్రయోగం / ప్రక్షేపం / సరళ టైపుల సిద్ధాంతం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “second-order logic / higher-order logic / comprehension schema / predicative / impredicative / full and weak semantics / categorical / finite type / functional / lambda term / application / projection / simple theory of types” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low semantic uncertainty because definitions and displayed rules are explicit; high nomenclatural uncertainty for impredicative, predicative, categorical and typed-lambda headwords
+
+- Rationale: The passages support mathematical proof and induction, sets, functions, truth values, consequence, formal derivation, predicates, variables, the first-order domain and sentence register. They do not directly attest the second- and higher-order taxonomy. The relation-quantifier and comprehension clauses, full-versus-weak model conditions, categoricity argument and typed term-formation rules control these extensions. ప్రెడికేటివ్, ఇంప్రెడికేటివ్, కేటగారికల్, టైపు and లాంబ్డా are explicit technical borrowings; descriptive Telugu accompanies categorical and the formation rules fix the others
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P004 [checked_context_only], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C004:TE-P012 [checked_context_only], PDF page 319; printed page 312; Questions 37-38; Function-versus-relation explanatory register; do not copy source answers mechanically. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C005:TE-P033 [checked_context_only], PDF page 40; printed page 33; Inference section heading and definition; Direct inference and explanatory register; derivation headword is separately witnessed at TE-P024.
+
+- Alternatives: translate the defective source formulas literally rather than follow their declared corrections [rejected: rejected] | claim every higher-order headword as directly witnessed in the canon [rejected: rejected]
+
+- Review question: Please double-check whether “ద్వితీయ-స్థాయి తర్కం / ఉన్నత-స్థాయి తర్కం / ధర్మసంగ్రహ పథకం / ప్రెడికేటివ్ / ఇంప్రెడికేటివ్ / పూర్ణ, బలహీన అర్థవిచారం / సమరూపత వరకు ఏకైకమైన (కేటగారికల్) / పరిమిత టైపు / ప్రమేయకం / లాంబ్డా పదం / ప్రయోగం / ప్రక్షేపం / సరళ టైపుల సిద్ధాంతం” is idiomatic and technically standard for “second-order logic / higher-order logic / comprehension schema / predicative / impredicative / full and weak semantics / categorical / finite type / functional / lambda term / application / projection / simple theory of types” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T051-OCC-001; OLP-0177; OLP-0177-B006; source upstream/content/first-order-logic/beyond/second-order-logic.tex:13-28 bytes 214-1114 SHA-256 944e224c99309c16e3303d6688fe0bf070e9ad8a68a1207ef6b8d6add08fe16d; target translation/content/first-order-logic/beyond/second-order-logic.tex:13-27 bytes 252-2262 SHA-256 0880aced16a46d7051834d99b9666aae294a89c5dfaaad54eeb630bdfce9d99c; reader page pending.
+  - te-Telu-IN-TE-T051-OCC-002; OLP-0178; OLP-0178-B007; source upstream/content/first-order-logic/beyond/higher-order-logic.tex:21-38 bytes 679-1740 SHA-256 38ced5d3bad860479a37abcc7745229561d26bbfdbe77a5b2a1c6dece2a455b1; target translation/content/first-order-logic/beyond/higher-order-logic.tex:22-40 bytes 1564-3876 SHA-256 1c17e93ad9b17bdafbab64d044c4d9495cecc3669e31ba67ba3ef9d38f6a9974; reader page pending.
+
+## te-Telu-IN-TE-T052 — intuitionistic logic / classical logic / constructive reasoning / law of excluded middle / double-negation translation / BHK interpretation / Curry--Howard isomorphism / forcing / monotone assignment / state of knowledge
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: అంతఃప్రజ్ఞావాద తర్కం / సాంప్రదాయిక తర్కం / నిర్మాణాత్మక హేతుచింతన / బహిష్కృత మధ్యమ సూత్రం / ద్వినిషేధ అనువాదం / BHK అర్థనిర్దేశం / కరీ--హోవర్డ్ సమరూపత / ఫోర్సింగ్ సంబంధం / క్రమ-ఏకదిశ (మోనోటోన్) కేటాయింపు / జ్ఞానస్థితి
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “intuitionistic logic / classical logic / constructive reasoning / law of excluded middle / double-negation translation / BHK interpretation / Curry--Howard isomorphism / forcing / monotone assignment / state of knowledge” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low for broad proof, truth and consequence register; medium to high nomenclatural uncertainty for intuitionistic, BHK, Curry--Howard, forcing and monotonicity terminology
+
+- Rationale: TE-P003--TE-P004 and TE-P024--TE-P026, TE-P032--TE-P033 support theorem, proof, induction, deduction, consistency and inference; TE-P018--TE-P019, TE-P023, TE-P027, TE-P029 and TE-P031 support formal logic, truth, consequence, predicate logic, first-order language and sentence vocabulary. The BHK clauses, double-negation equations and Kripke forcing definition control the specialized intuitionistic senses. BHK is a source abbreviation; కరీ--హోవర్డ్ is an eponym; ఫోర్సింగ్ and మోనోటోన్ are explicit technical borrowings paired with explanatory Telugu
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P004 [checked_context_only], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P025 [checked_context_only], PDF page 87; printed page 80; Indirect-proof heading and worked derivation; Direct indirect-proof and formal-proof register; no direct tableau or assumption-discharge label. | TE-C005:TE-P026 [checked_context_only], PDF page 88; printed page 81; Consistency section; Direct consistency/inconsistency terminology; not direct completeness terminology. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C005:TE-P033 [checked_context_only], PDF page 40; printed page 33; Inference section heading and definition; Direct inference and explanatory register; derivation headword is separately witnessed at TE-P024.
+
+- Alternatives: leave the intuitionistic exposition in English terminology [rejected: rejected] | replace source eponyms and abbreviations with unsupported coined names [rejected: rejected]
+
+- Review question: Please double-check whether “అంతఃప్రజ్ఞావాద తర్కం / సాంప్రదాయిక తర్కం / నిర్మాణాత్మక హేతుచింతన / బహిష్కృత మధ్యమ సూత్రం / ద్వినిషేధ అనువాదం / BHK అర్థనిర్దేశం / కరీ--హోవర్డ్ సమరూపత / ఫోర్సింగ్ సంబంధం / క్రమ-ఏకదిశ (మోనోటోన్) కేటాయింపు / జ్ఞానస్థితి” is idiomatic and technically standard for “intuitionistic logic / classical logic / constructive reasoning / law of excluded middle / double-negation translation / BHK interpretation / Curry--Howard isomorphism / forcing / monotone assignment / state of knowledge” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T052-OCC-001; OLP-0179; OLP-0179-B006; source upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:13-17 bytes 217-497 SHA-256 063ba3b9be092a262c09554ac0377b8f2a74d4042736588b30435c95a4740e98; target translation/content/first-order-logic/beyond/intuitionistic-logic.tex:13-17 bytes 255-936 SHA-256 772b96a170597aa509b23e4d1229ce16bb961ddf7f5ca202134f15248b7e6600; reader page pending.
+  - te-Telu-IN-TE-T052-OCC-002; OLP-0179; OLP-0179-B016; source upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:97-112 bytes 4133-5208 SHA-256 063ba3b9be092a262c09554ac0377b8f2a74d4042736588b30435c95a4740e98; target translation/content/first-order-logic/beyond/intuitionistic-logic.tex:91-104 bytes 8633-10865 SHA-256 772b96a170597aa509b23e4d1229ce16bb961ddf7f5ca202134f15248b7e6600; reader page pending.
+
+## te-Telu-IN-TE-T053 — modal logic / modality / possible world / accessibility relation / extensional / intensional / provability logic / epistemic logic / temporal logic
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: మోడల్ తర్కం / మోడాలిటీ / సాధ్యమైన లోకం / ప్రాప్యత సంబంధం / విస్తారాత్మక (ఎక్స్టెన్షనల్) / అంతర్భావాత్మక (ఇంటెన్షనల్) / నిరూప్యతా తర్కం / జ్ఞానమీమాంసాత్మక తర్కం / కాలిక తర్కం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “modal logic / modality / possible world / accessibility relation / extensional / intensional / provability logic / epistemic logic / temporal logic” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low semantic uncertainty for box, diamond and accessibility because the source defines them; medium to high nomenclatural uncertainty for the modal subfields and intensional/extensional pair
+
+- Rationale: TE-P010 supports binary-relation language; TE-P018--TE-P019, TE-P023--TE-P024, TE-P026--TE-P027, TE-P029 and TE-P031 support formal logic, truth, consequence, proof, consistency, predicates, first-order language and sentence vocabulary. They do not directly attest modal taxonomy. The box/diamond readings, possible-world relation, Kripke frame conditions and S4/S5 clauses fix the selected senses. మోడల్ and మోడాలిటీ are established explicit technical borrowings; ఎక్స్టెన్షనల్ and ఇంటెన్షనల్ appear only in explanatory parentheses beside descriptive Telugu
+
+- Authorities checked: TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P026 [checked_context_only], PDF page 88; printed page 81; Consistency section; Direct consistency/inconsistency terminology; not direct completeness terminology. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage.
+
+- Alternatives: leave the full modal taxonomy in English reader prose [rejected: rejected] | reuse only classical-semantic terminology and obscure the possible-world distinction [rejected: rejected]
+
+- Review question: Please double-check whether “మోడల్ తర్కం / మోడాలిటీ / సాధ్యమైన లోకం / ప్రాప్యత సంబంధం / విస్తారాత్మక (ఎక్స్టెన్షనల్) / అంతర్భావాత్మక (ఇంటెన్షనల్) / నిరూప్యతా తర్కం / జ్ఞానమీమాంసాత్మక తర్కం / కాలిక తర్కం” is idiomatic and technically standard for “modal logic / modality / possible world / accessibility relation / extensional / intensional / provability logic / epistemic logic / temporal logic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T053-OCC-001; OLP-0180; OLP-0180-B007; source upstream/content/first-order-logic/beyond/modal-logics.tex:31-39 bytes 1132-1661 SHA-256 8dff5692c79c06aa452bc0e20871109f3334a9232bd18997062196e872539881; target translation/content/first-order-logic/beyond/modal-logics.tex:29-36 bytes 2244-3517 SHA-256 df1ede230c43c6b491e84db7bccd72476ae3489e596756511b3459dfedda9196; reader page pending.
+  - te-Telu-IN-TE-T053-OCC-002; OLP-0180; OLP-0180-B008; source upstream/content/first-order-logic/beyond/modal-logics.tex:41-48 bytes 1662-2173 SHA-256 8dff5692c79c06aa452bc0e20871109f3334a9232bd18997062196e872539881; target translation/content/first-order-logic/beyond/modal-logics.tex:38-45 bytes 3518-4694 SHA-256 df1ede230c43c6b491e84db7bccd72476ae3489e596756511b3459dfedda9196; reader page pending.
+
+## te-Telu-IN-TE-T054 — fuzzy logic / probabilistic logic / default logic / defeasible reasoning / nonmonotonic logic / epistemic logic / causal logic / deontic logic
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: ఫజీ తర్కం / సంభావ్యతా తర్కం / డిఫాల్ట్ తర్కం / రద్దుచేయదగిన హేతుచింతన / ఏకదిశేతర తర్కం / జ్ఞానమీమాంసాత్మక తర్కం / కారణ తర్కం / కర్తవ్యాత్మక (డియాంటిక్) తర్కం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “fuzzy logic / probabilistic logic / default logic / defeasible reasoning / nonmonotonic logic / epistemic logic / causal logic / deontic logic” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low for the stated functional distinctions; high nomenclatural uncertainty because the inspected scholarly witnesses do not directly attest these subfield names
+
+- Rationale: The cited passages support formal logic, consequence, derivation, predicates, first-order language, sentence, deduction and inference. They do not directly attest this modern nonclassical taxonomy. The source's one-sentence functional descriptions—vagueness, uncertainty, retractable conclusions, knowledge, causation and moral obligation—control the Telugu descriptive choices. ఫజీ, డిఫాల్ట్ and డియాంటిక్ are explicit technical borrowings; డియాంటిక్ is parenthetical beside the descriptive కర్తవ్యాత్మక
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C005:TE-P033 [checked_context_only], PDF page 40; printed page 33; Inference section heading and definition; Direct inference and explanatory register; derivation headword is separately witnessed at TE-P024.
+
+- Alternatives: leave the closing taxonomy in untranslated English [rejected: rejected] | coin unsupported replacements without a Telugu specialist witness [rejected: rejected]
+
+- Review question: Please double-check whether “ఫజీ తర్కం / సంభావ్యతా తర్కం / డిఫాల్ట్ తర్కం / రద్దుచేయదగిన హేతుచింతన / ఏకదిశేతర తర్కం / జ్ఞానమీమాంసాత్మక తర్కం / కారణ తర్కం / కర్తవ్యాత్మక (డియాంటిక్) తర్కం” is idiomatic and technically standard for “fuzzy logic / probabilistic logic / default logic / defeasible reasoning / nonmonotonic logic / epistemic logic / causal logic / deontic logic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T054-OCC-001; OLP-0181; OLP-0181-B007; source upstream/content/first-order-logic/beyond/other-logics.tex:22-36 bytes 706-1636 SHA-256 025f94f3d087242ea1cf63543ab32c653ca6960c89ea7c321f9805a3b14f3350; target translation/content/first-order-logic/beyond/other-logics.tex:22-35 bytes 1519-3849 SHA-256 c23149d28ea7e16f54a275aef98a0dea81ef73fa28cc550ad90160ba6dfc0623; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -4104,3 +4237,107 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEFOLMAT-001-OCC-001; OLP-0171; OLP-0171-B009; source upstream/content/first-order-logic/models-theories/expressing-relations.tex:62-64 bytes 2592-2786 SHA-256 37f0dcfda647cea12a9e3182a4e868092993f1d928faca29225f8e6efb82f87b; target translation/content/first-order-logic/models-theories/expressing-relations.tex:62-67 bytes 4980-5619 SHA-256 73957080816bd80674dc99db8954e58f1cac54fb5f233fd1ce763e1b09f837a5; reader page pending.
+
+## te-Telu-IN-OLTEFOLBYD-001 — OLTEFOLBYD-001: confirmed malformed optional quantifier argument
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: changed only the inner universal from the malformed \lforall x] to \lforall[x][...] and added an adjacent sourcecorrection disclosure
+
+- Intended sense: Repair the audited confirmed malformed optional quantifier argument at lines 37-40, displayed multinational-marriage example, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEFOLBYD-20260907:OLTEFOLBYD-001 [checked_supports], content/first-order-logic/beyond/many-sorted-logic.tex; lines 37-40, displayed multinational-marriage example; confirmed_malformed_optional_quantifier_argument; changed only the inner universal from the malformed \lforall x] to \lforall[x][...] and added an adjacent sourcecorrection disclosure.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the inner many-sorted universal now binds x with the same two optional arguments as the outer universal and that no other display symbol changed.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEFOLBYD-001-OCC-001; OLP-0176; OLP-0176-B008; source upstream/content/first-order-logic/beyond/many-sorted-logic.tex:37-40 bytes 1626-1758 SHA-256 5a6abcd66e91868de97e0c1ec44cdf848396655cc6995adc05d6771844ecfac7; target translation/content/first-order-logic/beyond/many-sorted-logic.tex:37-44 bytes 3882-4938 SHA-256 57aba22e87125b3451399ec41ec14315afbe383fe0bd00b9284837380452bf3b; reader page pending.
+
+## te-Telu-IN-OLTEFOLBYD-002 — OLTEFOLBYD-002: confirmed atomic formula constructor typo
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: replaced only \Obj with \Atom for the affected relation-variable atom and added an adjacent sourcecorrection disclosure
+
+- Intended sense: Repair the audited confirmed atomic formula constructor typo at lines 54-56, explanation of formula substitution in the comprehension rule, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEFOLBYD-20260907:OLTEFOLBYD-002 [checked_supports], content/first-order-logic/beyond/second-order-logic.tex; lines 54-56, explanation of formula substitution in the comprehension rule; confirmed_atomic_formula_constructor_typo; replaced only \Obj with \Atom for the affected relation-variable atom and added an adjacent sourcecorrection disclosure.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the comprehension explanation uses the atomic-formula constructor for R(t_1,...,t_k), consistently with the surrounding rule.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEFOLBYD-002-OCC-001; OLP-0177; OLP-0177-B007; source upstream/content/first-order-logic/beyond/second-order-logic.tex:54-56 bytes 1957-2145 SHA-256 944e224c99309c16e3303d6688fe0bf070e9ad8a68a1207ef6b8d6add08fe16d; target translation/content/first-order-logic/beyond/second-order-logic.tex:51-63 bytes 3893-5485 SHA-256 0880aced16a46d7051834d99b9666aae294a89c5dfaaad54eeb630bdfce9d99c; reader page pending.
+
+## te-Telu-IN-OLTEFOLBYD-003 — OLTEFOLBYD-003: confirmed undefined successor symbol
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: replaced the undefined s(x)=s(y) with the declared postfix-successor notation x'=y' and added an adjacent sourcecorrection disclosure
+
+- Intended sense: Repair the audited confirmed undefined successor symbol at lines 137-147, second axiom in the categorical arithmetic example, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEFOLBYD-20260907:OLTEFOLBYD-003 [checked_supports], content/first-order-logic/beyond/second-order-logic.tex; lines 137-147, second axiom in the categorical arithmetic example; confirmed_undefined_successor_symbol; replaced the undefined s(x)=s(y) with the declared postfix-successor notation x'=y' and added an adjacent sourcecorrection disclosure.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the second arithmetic axiom uses the declared postfix successor on x and y, rather than the source sentence’s undefined s.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEFOLBYD-003-OCC-001; OLP-0177; OLP-0177-B011; source upstream/content/first-order-logic/beyond/second-order-logic.tex:137-147 bytes 6553-7111 SHA-256 944e224c99309c16e3303d6688fe0bf070e9ad8a68a1207ef6b8d6add08fe16d; target translation/content/first-order-logic/beyond/second-order-logic.tex:136-148 bytes 15392-16653 SHA-256 0880aced16a46d7051834d99b9666aae294a89c5dfaaad54eeb630bdfce9d99c; reader page pending.
+
+## te-Telu-IN-OLTEFOLBYD-004 — OLTEFOLBYD-004: confirmed lambda bound variable type mismatch
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: changed only the stated type of the lambda-bound variable x from sigma to tau and added an adjacent sourcecorrection disclosure
+
+- Intended sense: Repair the audited confirmed lambda bound variable type mismatch at lines 82-89, explanation of the lambda term from item (6), preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEFOLBYD-20260907:OLTEFOLBYD-004 [checked_supports], content/first-order-logic/beyond/higher-order-logic.tex; lines 82-89, explanation of the lambda term from item (6); confirmed_lambda_bound_variable_type_mismatch; changed only the stated type of the lambda-bound variable x from sigma to tau and added an adjacent sourcecorrection disclosure.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the lambda-bound x is assigned type tau, matching formation rule (6), while s remains type sigma.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEFOLBYD-004-OCC-001; OLP-0178; OLP-0178-B008; source upstream/content/first-order-logic/beyond/higher-order-logic.tex:82-89 bytes 3827-4137 SHA-256 38ced5d3bad860479a37abcc7745229561d26bbfdbe77a5b2a1c6dece2a455b1; target translation/content/first-order-logic/beyond/higher-order-logic.tex:82-91 bytes 7321-8595 SHA-256 1c17e93ad9b17bdafbab64d044c4d9495cecc3669e31ba67ba3ef9d38f6a9974; reader page pending.

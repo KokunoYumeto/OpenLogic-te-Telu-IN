@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 170 of 722 draft units**. This view selects 131 of 153 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 178 of 722 draft units**. This view selects 140 of 162 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -273,6 +273,56 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0170; first-order-logic/models-theories/theories; translation/content/first-order-logic/models-theories/theories.tex:101-105; printed/PDF page pending
 
 - Please double-check: Please double-check whether “భాగతత్త్వం (మీరియాలజీ) / భాగత్వం / భాగత్వ నిర్మాణం / క్రమేతర భాగం / క్రమ భాగం / భాగతాత్త్విక మొత్తం / సంలీనం” is idiomatic and technically standard for “mereology / parthood / parthood structure / improper part / proper part / mereological sum / fusion” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T050 — many-sorted logic / sort / type / arity / sort-restricted quantifier
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: బహు-రక తర్కం / రకం / టైపు / స్థానసంఖ్య (అరిటీ) / రక-పరిమాణకం
+
+- Occurrences: OLP-0176; first-order-logic/beyond/many-sorted-logic; translation/content/first-order-logic/beyond/many-sorted-logic.tex:20-26; printed/PDF page pending
+
+- Please double-check: Please double-check whether “బహు-రక తర్కం / రకం / టైపు / స్థానసంఖ్య (అరిటీ) / రక-పరిమాణకం” is idiomatic and technically standard for “many-sorted logic / sort / type / arity / sort-restricted quantifier” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T051 — second-order logic / higher-order logic / comprehension schema / predicative / impredicative / full and weak semantics / categorical / finite type / functional / lambda term / application / projection / simple theory of types
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: ద్వితీయ-స్థాయి తర్కం / ఉన్నత-స్థాయి తర్కం / ధర్మసంగ్రహ పథకం / ప్రెడికేటివ్ / ఇంప్రెడికేటివ్ / పూర్ణ, బలహీన అర్థవిచారం / సమరూపత వరకు ఏకైకమైన (కేటగారికల్) / పరిమిత టైపు / ప్రమేయకం / లాంబ్డా పదం / ప్రయోగం / ప్రక్షేపం / సరళ టైపుల సిద్ధాంతం
+
+- Occurrences: OLP-0177; first-order-logic/beyond/second-order-logic; translation/content/first-order-logic/beyond/second-order-logic.tex:13-27; printed/PDF page pending; OLP-0178; first-order-logic/beyond/higher-order-logic; translation/content/first-order-logic/beyond/higher-order-logic.tex:22-40; printed/PDF page pending
+
+- Please double-check: Please double-check whether “ద్వితీయ-స్థాయి తర్కం / ఉన్నత-స్థాయి తర్కం / ధర్మసంగ్రహ పథకం / ప్రెడికేటివ్ / ఇంప్రెడికేటివ్ / పూర్ణ, బలహీన అర్థవిచారం / సమరూపత వరకు ఏకైకమైన (కేటగారికల్) / పరిమిత టైపు / ప్రమేయకం / లాంబ్డా పదం / ప్రయోగం / ప్రక్షేపం / సరళ టైపుల సిద్ధాంతం” is idiomatic and technically standard for “second-order logic / higher-order logic / comprehension schema / predicative / impredicative / full and weak semantics / categorical / finite type / functional / lambda term / application / projection / simple theory of types” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T052 — intuitionistic logic / classical logic / constructive reasoning / law of excluded middle / double-negation translation / BHK interpretation / Curry--Howard isomorphism / forcing / monotone assignment / state of knowledge
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: అంతఃప్రజ్ఞావాద తర్కం / సాంప్రదాయిక తర్కం / నిర్మాణాత్మక హేతుచింతన / బహిష్కృత మధ్యమ సూత్రం / ద్వినిషేధ అనువాదం / BHK అర్థనిర్దేశం / కరీ--హోవర్డ్ సమరూపత / ఫోర్సింగ్ సంబంధం / క్రమ-ఏకదిశ (మోనోటోన్) కేటాయింపు / జ్ఞానస్థితి
+
+- Occurrences: OLP-0179; first-order-logic/beyond/intuitionistic-logic; translation/content/first-order-logic/beyond/intuitionistic-logic.tex:13-17; printed/PDF page pending; OLP-0179; first-order-logic/beyond/intuitionistic-logic; translation/content/first-order-logic/beyond/intuitionistic-logic.tex:91-104; printed/PDF page pending
+
+- Please double-check: Please double-check whether “అంతఃప్రజ్ఞావాద తర్కం / సాంప్రదాయిక తర్కం / నిర్మాణాత్మక హేతుచింతన / బహిష్కృత మధ్యమ సూత్రం / ద్వినిషేధ అనువాదం / BHK అర్థనిర్దేశం / కరీ--హోవర్డ్ సమరూపత / ఫోర్సింగ్ సంబంధం / క్రమ-ఏకదిశ (మోనోటోన్) కేటాయింపు / జ్ఞానస్థితి” is idiomatic and technically standard for “intuitionistic logic / classical logic / constructive reasoning / law of excluded middle / double-negation translation / BHK interpretation / Curry--Howard isomorphism / forcing / monotone assignment / state of knowledge” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T053 — modal logic / modality / possible world / accessibility relation / extensional / intensional / provability logic / epistemic logic / temporal logic
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: మోడల్ తర్కం / మోడాలిటీ / సాధ్యమైన లోకం / ప్రాప్యత సంబంధం / విస్తారాత్మక (ఎక్స్టెన్షనల్) / అంతర్భావాత్మక (ఇంటెన్షనల్) / నిరూప్యతా తర్కం / జ్ఞానమీమాంసాత్మక తర్కం / కాలిక తర్కం
+
+- Occurrences: OLP-0180; first-order-logic/beyond/modal-logics; translation/content/first-order-logic/beyond/modal-logics.tex:29-36; printed/PDF page pending; OLP-0180; first-order-logic/beyond/modal-logics; translation/content/first-order-logic/beyond/modal-logics.tex:38-45; printed/PDF page pending
+
+- Please double-check: Please double-check whether “మోడల్ తర్కం / మోడాలిటీ / సాధ్యమైన లోకం / ప్రాప్యత సంబంధం / విస్తారాత్మక (ఎక్స్టెన్షనల్) / అంతర్భావాత్మక (ఇంటెన్షనల్) / నిరూప్యతా తర్కం / జ్ఞానమీమాంసాత్మక తర్కం / కాలిక తర్కం” is idiomatic and technically standard for “modal logic / modality / possible world / accessibility relation / extensional / intensional / provability logic / epistemic logic / temporal logic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T054 — fuzzy logic / probabilistic logic / default logic / defeasible reasoning / nonmonotonic logic / epistemic logic / causal logic / deontic logic
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: ఫజీ తర్కం / సంభావ్యతా తర్కం / డిఫాల్ట్ తర్కం / రద్దుచేయదగిన హేతుచింతన / ఏకదిశేతర తర్కం / జ్ఞానమీమాంసాత్మక తర్కం / కారణ తర్కం / కర్తవ్యాత్మక (డియాంటిక్) తర్కం
+
+- Occurrences: OLP-0181; first-order-logic/beyond/other-logics; translation/content/first-order-logic/beyond/other-logics.tex:22-35; printed/PDF page pending
+
+- Please double-check: Please double-check whether “ఫజీ తర్కం / సంభావ్యతా తర్కం / డిఫాల్ట్ తర్కం / రద్దుచేయదగిన హేతుచింతన / ఏకదిశేతర తర్కం / జ్ఞానమీమాంసాత్మక తర్కం / కారణ తర్కం / కర్తవ్యాత్మక (డియాంటిక్) తర్కం” is idiomatic and technically standard for “fuzzy logic / probabilistic logic / default logic / defeasible reasoning / nonmonotonic logic / epistemic logic / causal logic / deontic logic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -1313,3 +1363,43 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0171; first-order-logic/models-theories/expressing-relations; translation/content/first-order-logic/models-theories/expressing-relations.tex:62-67; printed/PDF page pending
 
 - Please double-check: Please double-check that the repaired strict-order formula gives its final v_2 the same object-language marker as the other variables, without changing any other symbol.
+
+## REV-OLTEFOLBYD-001 — OLTEFOLBYD-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: changed only the inner universal from the malformed \lforall x] to \lforall[x][...] and added an adjacent sourcecorrection disclosure
+
+- Occurrences: OLP-0176; first-order-logic/beyond/many-sorted-logic; translation/content/first-order-logic/beyond/many-sorted-logic.tex:37-44; printed/PDF page pending
+
+- Please double-check: Please double-check that the inner many-sorted universal now binds x with the same two optional arguments as the outer universal and that no other display symbol changed.
+
+## REV-OLTEFOLBYD-002 — OLTEFOLBYD-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: replaced only \Obj with \Atom for the affected relation-variable atom and added an adjacent sourcecorrection disclosure
+
+- Occurrences: OLP-0177; first-order-logic/beyond/second-order-logic; translation/content/first-order-logic/beyond/second-order-logic.tex:51-63; printed/PDF page pending
+
+- Please double-check: Please double-check that the comprehension explanation uses the atomic-formula constructor for R(t_1,...,t_k), consistently with the surrounding rule.
+
+## REV-OLTEFOLBYD-003 — OLTEFOLBYD-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: replaced the undefined s(x)=s(y) with the declared postfix-successor notation x'=y' and added an adjacent sourcecorrection disclosure
+
+- Occurrences: OLP-0177; first-order-logic/beyond/second-order-logic; translation/content/first-order-logic/beyond/second-order-logic.tex:136-148; printed/PDF page pending
+
+- Please double-check: Please double-check that the second arithmetic axiom uses the declared postfix successor on x and y, rather than the source sentence’s undefined s.
+
+## REV-OLTEFOLBYD-004 — OLTEFOLBYD-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: changed only the stated type of the lambda-bound variable x from sigma to tau and added an adjacent sourcecorrection disclosure
+
+- Occurrences: OLP-0178; first-order-logic/beyond/higher-order-logic; translation/content/first-order-logic/beyond/higher-order-logic.tex:82-91; printed/PDF page pending
+
+- Please double-check: Please double-check that the lambda-bound x is assigned type tau, matching formation rule (6), while s remains type sigma.

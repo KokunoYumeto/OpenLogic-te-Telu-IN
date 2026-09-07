@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 170 of 722 draft units**. This log contains 49 terminology/sense decisions and 104 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 178 of 722 draft units**. This log contains 54 terminology/sense decisions and 108 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1183,6 +1183,126 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: High nomenclatural uncertainty for the mereological headwords; low structural uncertainty because the displayed partial-order and sum conditions fix their mathematical roles
 
 - Please double-check: Please double-check whether “భాగతత్త్వం (మీరియాలజీ) / భాగత్వం / భాగత్వ నిర్మాణం / క్రమేతర భాగం / క్రమ భాగం / భాగతాత్త్విక మొత్తం / సంలీనం” is idiomatic and technically standard for “mereology / parthood / parthood structure / improper part / proper part / mereological sum / fusion” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T050 — many-sorted logic / sort / type / arity / sort-restricted quantifier
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: బహు-రక తర్కం / రకం / టైపు / స్థానసంఖ్య (అరిటీ) / రక-పరిమాణకం
+
+- Exact implementation: OLP-0176; first-order-logic/beyond/many-sorted-logic; content/first-order-logic/beyond/many-sorted-logic.tex:19-26 ↔ translation/content/first-order-logic/beyond/many-sorted-logic.tex:20-26 (OLP-0176-B007); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P012, PDF 319, printed 312, Questions 37-38; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P008 and TE-P010--TE-P012 support sets, binary relations, functions and mappings; TE-P018, TE-P027, TE-P029 and TE-P030 support formal logic, predicates, variables, first-order language and the individuals domain. They do not directly attest the many-sorted taxonomy. The chapter's separate domains, per-sort variables and quantifiers, typed argument positions and first-order embedding control the exact senses. టైపు and అరిటీ are explicit technical borrowings used beside the descriptive రకం and k-స్థాన wording; source symbols remain formal notation
+
+- Alternatives: descriptive బహు-రక and రక-పరిమాణకం wording with టైపు and అరిటీ disclosed as technical borrowings (chosen); leave all many-sorted terminology in English reader prose (rejected); claim direct canon attestation for the many-sorted taxonomy (rejected)
+
+- Uncertainty: Low for set, relation, function, variable and domain register; medium to high nomenclatural uncertainty for many-sorted and sort-restricted compounds
+
+- Please double-check: Please double-check whether “బహు-రక తర్కం / రకం / టైపు / స్థానసంఖ్య (అరిటీ) / రక-పరిమాణకం” is idiomatic and technically standard for “many-sorted logic / sort / type / arity / sort-restricted quantifier” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T051 — second-order logic / higher-order logic / comprehension schema / predicative / impredicative / full and weak semantics / categorical / finite type / functional / lambda term / application / projection / simple theory of types
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: ద్వితీయ-స్థాయి తర్కం / ఉన్నత-స్థాయి తర్కం / ధర్మసంగ్రహ పథకం / ప్రెడికేటివ్ / ఇంప్రెడికేటివ్ / పూర్ణ, బలహీన అర్థవిచారం / సమరూపత వరకు ఏకైకమైన (కేటగారికల్) / పరిమిత టైపు / ప్రమేయకం / లాంబ్డా పదం / ప్రయోగం / ప్రక్షేపం / సరళ టైపుల సిద్ధాంతం
+
+- Exact implementation: OLP-0177; first-order-logic/beyond/second-order-logic; content/first-order-logic/beyond/second-order-logic.tex:13-28 ↔ translation/content/first-order-logic/beyond/second-order-logic.tex:13-27 (OLP-0177-B006); printed/PDF page pending; OLP-0178; first-order-logic/beyond/higher-order-logic; content/first-order-logic/beyond/higher-order-logic.tex:21-38 ↔ translation/content/first-order-logic/beyond/higher-order-logic.tex:22-40 (OLP-0178-B007); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P012, PDF 319, printed 312, Questions 37-38; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P033, PDF 40, printed 33, Inference section heading and definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: The passages support mathematical proof and induction, sets, functions, truth values, consequence, formal derivation, predicates, variables, the first-order domain and sentence register. They do not directly attest the second- and higher-order taxonomy. The relation-quantifier and comprehension clauses, full-versus-weak model conditions, categoricity argument and typed term-formation rules control these extensions. ప్రెడికేటివ్, ఇంప్రెడికేటివ్, కేటగారికల్, టైపు and లాంబ్డా are explicit technical borrowings; descriptive Telugu accompanies categorical and the formation rules fix the others
+
+- Alternatives: definition-controlled Telugu compounds with explicit borrowings for predicative, impredicative, categorical, type and lambda terminology (chosen); translate the defective source formulas literally rather than follow their declared corrections (rejected); claim every higher-order headword as directly witnessed in the canon (rejected)
+
+- Uncertainty: Low semantic uncertainty because definitions and displayed rules are explicit; high nomenclatural uncertainty for impredicative, predicative, categorical and typed-lambda headwords
+
+- Please double-check: Please double-check whether “ద్వితీయ-స్థాయి తర్కం / ఉన్నత-స్థాయి తర్కం / ధర్మసంగ్రహ పథకం / ప్రెడికేటివ్ / ఇంప్రెడికేటివ్ / పూర్ణ, బలహీన అర్థవిచారం / సమరూపత వరకు ఏకైకమైన (కేటగారికల్) / పరిమిత టైపు / ప్రమేయకం / లాంబ్డా పదం / ప్రయోగం / ప్రక్షేపం / సరళ టైపుల సిద్ధాంతం” is idiomatic and technically standard for “second-order logic / higher-order logic / comprehension schema / predicative / impredicative / full and weak semantics / categorical / finite type / functional / lambda term / application / projection / simple theory of types” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T052 — intuitionistic logic / classical logic / constructive reasoning / law of excluded middle / double-negation translation / BHK interpretation / Curry--Howard isomorphism / forcing / monotone assignment / state of knowledge
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: అంతఃప్రజ్ఞావాద తర్కం / సాంప్రదాయిక తర్కం / నిర్మాణాత్మక హేతుచింతన / బహిష్కృత మధ్యమ సూత్రం / ద్వినిషేధ అనువాదం / BHK అర్థనిర్దేశం / కరీ--హోవర్డ్ సమరూపత / ఫోర్సింగ్ సంబంధం / క్రమ-ఏకదిశ (మోనోటోన్) కేటాయింపు / జ్ఞానస్థితి
+
+- Exact implementation: OLP-0179; first-order-logic/beyond/intuitionistic-logic; content/first-order-logic/beyond/intuitionistic-logic.tex:13-17 ↔ translation/content/first-order-logic/beyond/intuitionistic-logic.tex:13-17 (OLP-0179-B006); printed/PDF page pending; OLP-0179; first-order-logic/beyond/intuitionistic-logic; content/first-order-logic/beyond/intuitionistic-logic.tex:97-112 ↔ translation/content/first-order-logic/beyond/intuitionistic-logic.tex:91-104 (OLP-0179-B016); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P025, PDF 87, printed 80, Indirect-proof heading and worked derivation; TE-P026, PDF 88, printed 81, Consistency section; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P033, PDF 40, printed 33, Inference section heading and definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P003--TE-P004 and TE-P024--TE-P026, TE-P032--TE-P033 support theorem, proof, induction, deduction, consistency and inference; TE-P018--TE-P019, TE-P023, TE-P027, TE-P029 and TE-P031 support formal logic, truth, consequence, predicate logic, first-order language and sentence vocabulary. The BHK clauses, double-negation equations and Kripke forcing definition control the specialized intuitionistic senses. BHK is a source abbreviation; కరీ--హోవర్డ్ is an eponym; ఫోర్సింగ్ and మోనోటోన్ are explicit technical borrowings paired with explanatory Telugu
+
+- Alternatives: descriptive Telugu proof and truth register with BHK, Curry--Howard, forcing and monotone borrowings explicitly identified (chosen); leave the intuitionistic exposition in English terminology (rejected); replace source eponyms and abbreviations with unsupported coined names (rejected)
+
+- Uncertainty: Low for broad proof, truth and consequence register; medium to high nomenclatural uncertainty for intuitionistic, BHK, Curry--Howard, forcing and monotonicity terminology
+
+- Please double-check: Please double-check whether “అంతఃప్రజ్ఞావాద తర్కం / సాంప్రదాయిక తర్కం / నిర్మాణాత్మక హేతుచింతన / బహిష్కృత మధ్యమ సూత్రం / ద్వినిషేధ అనువాదం / BHK అర్థనిర్దేశం / కరీ--హోవర్డ్ సమరూపత / ఫోర్సింగ్ సంబంధం / క్రమ-ఏకదిశ (మోనోటోన్) కేటాయింపు / జ్ఞానస్థితి” is idiomatic and technically standard for “intuitionistic logic / classical logic / constructive reasoning / law of excluded middle / double-negation translation / BHK interpretation / Curry--Howard isomorphism / forcing / monotone assignment / state of knowledge” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T053 — modal logic / modality / possible world / accessibility relation / extensional / intensional / provability logic / epistemic logic / temporal logic
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: మోడల్ తర్కం / మోడాలిటీ / సాధ్యమైన లోకం / ప్రాప్యత సంబంధం / విస్తారాత్మక (ఎక్స్టెన్షనల్) / అంతర్భావాత్మక (ఇంటెన్షనల్) / నిరూప్యతా తర్కం / జ్ఞానమీమాంసాత్మక తర్కం / కాలిక తర్కం
+
+- Exact implementation: OLP-0180; first-order-logic/beyond/modal-logics; content/first-order-logic/beyond/modal-logics.tex:31-39 ↔ translation/content/first-order-logic/beyond/modal-logics.tex:29-36 (OLP-0180-B007); printed/PDF page pending; OLP-0180; first-order-logic/beyond/modal-logics; content/first-order-logic/beyond/modal-logics.tex:41-48 ↔ translation/content/first-order-logic/beyond/modal-logics.tex:38-45 (OLP-0180-B008); printed/PDF page pending
+
+- Authorities actually checked: TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P026, PDF 88, printed 81, Consistency section; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P010 supports binary-relation language; TE-P018--TE-P019, TE-P023--TE-P024, TE-P026--TE-P027, TE-P029 and TE-P031 support formal logic, truth, consequence, proof, consistency, predicates, first-order language and sentence vocabulary. They do not directly attest modal taxonomy. The box/diamond readings, possible-world relation, Kripke frame conditions and S4/S5 clauses fix the selected senses. మోడల్ and మోడాలిటీ are established explicit technical borrowings; ఎక్స్టెన్షనల్ and ఇంటెన్షనల్ appear only in explanatory parentheses beside descriptive Telugu
+
+- Alternatives: descriptive possible-world and accessibility wording with modal and intensional/extensional borrowings made explicit (chosen); leave the full modal taxonomy in English reader prose (rejected); reuse only classical-semantic terminology and obscure the possible-world distinction (rejected)
+
+- Uncertainty: Low semantic uncertainty for box, diamond and accessibility because the source defines them; medium to high nomenclatural uncertainty for the modal subfields and intensional/extensional pair
+
+- Please double-check: Please double-check whether “మోడల్ తర్కం / మోడాలిటీ / సాధ్యమైన లోకం / ప్రాప్యత సంబంధం / విస్తారాత్మక (ఎక్స్టెన్షనల్) / అంతర్భావాత్మక (ఇంటెన్షనల్) / నిరూప్యతా తర్కం / జ్ఞానమీమాంసాత్మక తర్కం / కాలిక తర్కం” is idiomatic and technically standard for “modal logic / modality / possible world / accessibility relation / extensional / intensional / provability logic / epistemic logic / temporal logic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T054 — fuzzy logic / probabilistic logic / default logic / defeasible reasoning / nonmonotonic logic / epistemic logic / causal logic / deontic logic
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: ఫజీ తర్కం / సంభావ్యతా తర్కం / డిఫాల్ట్ తర్కం / రద్దుచేయదగిన హేతుచింతన / ఏకదిశేతర తర్కం / జ్ఞానమీమాంసాత్మక తర్కం / కారణ తర్కం / కర్తవ్యాత్మక (డియాంటిక్) తర్కం
+
+- Exact implementation: OLP-0181; first-order-logic/beyond/other-logics; content/first-order-logic/beyond/other-logics.tex:22-36 ↔ translation/content/first-order-logic/beyond/other-logics.tex:22-35 (OLP-0181-B007); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P033, PDF 40, printed 33, Inference section heading and definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: The cited passages support formal logic, consequence, derivation, predicates, first-order language, sentence, deduction and inference. They do not directly attest this modern nonclassical taxonomy. The source's one-sentence functional descriptions—vagueness, uncertainty, retractable conclusions, knowledge, causation and moral obligation—control the Telugu descriptive choices. ఫజీ, డిఫాల్ట్ and డియాంటిక్ are explicit technical borrowings; డియాంటిక్ is parenthetical beside the descriptive కర్తవ్యాత్మక
+
+- Alternatives: source-controlled descriptive subfield names with fuzzy, default and deontic marked as explicit borrowings (chosen); leave the closing taxonomy in untranslated English (rejected); coin unsupported replacements without a Telugu specialist witness (rejected)
+
+- Uncertainty: Low for the stated functional distinctions; high nomenclatural uncertainty because the inspected scholarly witnesses do not directly attest these subfield names
+
+- Please double-check: Please double-check whether “ఫజీ తర్కం / సంభావ్యతా తర్కం / డిఫాల్ట్ తర్కం / రద్దుచేయదగిన హేతుచింతన / ఏకదిశేతర తర్కం / జ్ఞానమీమాంసాత్మక తర్కం / కారణ తర్కం / కర్తవ్యాత్మక (డియాంటిక్) తర్కం” is idiomatic and technically standard for “fuzzy logic / probabilistic logic / default logic / defeasible reasoning / nonmonotonic logic / epistemic logic / causal logic / deontic logic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -3679,3 +3799,99 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check that the repaired strict-order formula gives its final v_2 the same object-language marker as the other variables, without changing any other symbol.
+
+## REV-OLTEFOLBYD-001 — OLTEFOLBYD-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: changed only the inner universal from the malformed \lforall x] to \lforall[x][...] and added an adjacent sourcecorrection disclosure
+
+- Exact implementation: OLP-0176; first-order-logic/beyond/many-sorted-logic; lines 37-40, displayed multinational-marriage example ↔ translation/content/first-order-logic/beyond/many-sorted-logic.tex:37-44 (OLP-0176-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLBYD-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: changed only the inner universal from the malformed \lforall x] to \lforall[x][...] and added an adjacent sourcecorrection disclosure
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the inner many-sorted universal now binds x with the same two optional arguments as the outer universal and that no other display symbol changed.
+
+## REV-OLTEFOLBYD-002 — OLTEFOLBYD-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: replaced only \Obj with \Atom for the affected relation-variable atom and added an adjacent sourcecorrection disclosure
+
+- Exact implementation: OLP-0177; first-order-logic/beyond/second-order-logic; lines 54-56, explanation of formula substitution in the comprehension rule ↔ translation/content/first-order-logic/beyond/second-order-logic.tex:51-63 (OLP-0177-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLBYD-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: replaced only \Obj with \Atom for the affected relation-variable atom and added an adjacent sourcecorrection disclosure
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the comprehension explanation uses the atomic-formula constructor for R(t_1,...,t_k), consistently with the surrounding rule.
+
+## REV-OLTEFOLBYD-003 — OLTEFOLBYD-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: replaced the undefined s(x)=s(y) with the declared postfix-successor notation x'=y' and added an adjacent sourcecorrection disclosure
+
+- Exact implementation: OLP-0177; first-order-logic/beyond/second-order-logic; lines 137-147, second axiom in the categorical arithmetic example ↔ translation/content/first-order-logic/beyond/second-order-logic.tex:136-148 (OLP-0177-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLBYD-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: replaced the undefined s(x)=s(y) with the declared postfix-successor notation x'=y' and added an adjacent sourcecorrection disclosure
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the second arithmetic axiom uses the declared postfix successor on x and y, rather than the source sentence’s undefined s.
+
+## REV-OLTEFOLBYD-004 — OLTEFOLBYD-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: changed only the stated type of the lambda-bound variable x from sigma to tau and added an adjacent sourcecorrection disclosure
+
+- Exact implementation: OLP-0178; first-order-logic/beyond/higher-order-logic; lines 82-89, explanation of the lambda term from item (6) ↔ translation/content/first-order-logic/beyond/higher-order-logic.tex:82-91 (OLP-0178-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTEFOLBYD-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: changed only the stated type of the lambda-bound variable x from sigma to tau and added an adjacent sourcecorrection disclosure
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the lambda-bound x is assigned type tau, matching formation rule (6), while s remains type sigma.

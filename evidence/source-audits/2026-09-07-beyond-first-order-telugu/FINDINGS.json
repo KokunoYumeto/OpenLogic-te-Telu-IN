@@ -1,0 +1,82 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTEFOLBYD-20260907",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0174",
+      "OLP-0175",
+      "OLP-0176",
+      "OLP-0177",
+      "OLP-0178",
+      "OLP-0179",
+      "OLP-0180",
+      "OLP-0181"
+    ],
+    "finding_count": 4
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEFOLBYD-001",
+      "unit_id": "OLP-0176",
+      "classification": "confirmed_malformed_optional_quantifier_argument",
+      "source": {
+        "path": "content/first-order-logic/beyond/many-sorted-logic.tex",
+        "bytes": 3202,
+        "sha256": "5a6abcd66e91868de97e0c1ec44cdf848396655cc6995adc05d6771844ecfac7",
+        "locator": "lines 37-40, displayed multinational-marriage example"
+      },
+      "finding": "The inner universal is written `\lforall x]`. The macro accepts two optional bracketed arguments, so this supplies neither argument and leaves the x and closing bracket as literal mathematical material instead of binding x over the following matrix.",
+      "controlling_evidence": "The outer quantifier and the surrounding chapter use the two-argument form `\lforall[variable][matrix]`; upstream/open-logic-config.sty declares `\lforall` with two optional arguments.",
+      "required_translation_handling": "Change only the inner quantifier to `\lforall[x][...]`, preserve the displayed formula otherwise, and add an adjacent OLTEFOLBYD-001 disclosure."
+    },
+    {
+      "finding_id": "OLTEFOLBYD-002",
+      "unit_id": "OLP-0177",
+      "classification": "confirmed_atomic_formula_constructor_typo",
+      "source": {
+        "path": "content/first-order-logic/beyond/second-order-logic.tex",
+        "bytes": 12410,
+        "sha256": "944e224c99309c16e3303d6688fe0bf070e9ad8a68a1207ef6b8d6add08fe16d",
+        "locator": "lines 54-56, explanation of formula substitution in the comprehension rule"
+      },
+      "finding": "The prose writes `\Obj{R}{t_1,\dots,t_k}` for the atomic formula being replaced. `\Obj` formats one object-language symbol and does not construct an atomic formula with its arguments.",
+      "controlling_evidence": "The same section defines relation-variable atoms with `\Atom{R}{t_1,\dots,t_k}` and uses that constructor on both sides of the surrounding comprehension discussion.",
+      "required_translation_handling": "Replace only `\Obj` with `\Atom` in the affected inline formula and add an adjacent OLTEFOLBYD-002 disclosure."
+    },
+    {
+      "finding_id": "OLTEFOLBYD-003",
+      "unit_id": "OLP-0177",
+      "classification": "confirmed_undefined_successor_symbol",
+      "source": {
+        "path": "content/first-order-logic/beyond/second-order-logic.tex",
+        "bytes": 12410,
+        "sha256": "944e224c99309c16e3303d6688fe0bf070e9ad8a68a1207ef6b8d6add08fe16d",
+        "locator": "lines 137-147, second axiom in the categorical arithmetic example"
+      },
+      "finding": "The listed language contains the postfix successor symbol `\Obj\prime`, but the injectivity axiom instead uses an undefined function symbol s in `s(x)=s(y)`.",
+      "controlling_evidence": "The immediately preceding and following arithmetic axioms use postfix primes for successor, and injectivity of that declared successor is the condition needed by the following categoricity argument.",
+      "required_translation_handling": "Write the axiom as `x'=y' \lif x=y`, preserve its quantifiers, and add an adjacent OLTEFOLBYD-003 disclosure."
+    },
+    {
+      "finding_id": "OLTEFOLBYD-004",
+      "unit_id": "OLP-0178",
+      "classification": "confirmed_lambda_bound_variable_type_mismatch",
+      "source": {
+        "path": "content/first-order-logic/beyond/higher-order-logic.tex",
+        "bytes": 6173,
+        "sha256": "38ced5d3bad860479a37abcc7745229561d26bbfdbe77a5b2a1c6dece2a455b1",
+        "locator": "lines 82-89, explanation of the lambda term from item (6)"
+      },
+      "finding": "The explanation says that x has type sigma, contradicting item (6), where x has type tau, s has type sigma, and the lambda term consequently has type tau to sigma.",
+      "controlling_evidence": "The correction follows the explicit typing rule in item (6), which the prose sentence itself invokes.",
+      "required_translation_handling": "Change only the stated type of x from `\sigma` to `\tau` and add an adjacent OLTEFOLBYD-004 disclosure."
+    }
+  ]
+}
