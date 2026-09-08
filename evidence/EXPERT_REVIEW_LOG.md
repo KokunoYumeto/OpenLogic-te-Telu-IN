@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 194 of 722 draft units**. This log contains 60 terminology/sense decisions and 133 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 199 of 722 draft units**. This log contains 62 terminology/sense decisions and 142 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1447,6 +1447,54 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low semantic uncertainty because the definition and transported operations are explicit; medium nomenclatural uncertainty for computable-model compounds and decidability
 
 - Please double-check: Please double-check whether “గణనీయ నిర్మాణం / గణనీయ నమూనా / గణనీయ ప్రమేయం / నిర్ణయించదగిన సంబంధం / టెన్నెన్‌బామ్ సిద్ధాంతం” is idiomatic and technically standard for “computable structure / computable model / computable function / decidable relation / Tennenbaum's Theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T061 — interpolation theorem / interpolant / separation / inseparable / maximally inseparable pair / joint consistency theorem
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: అంతర్వేశ సిద్ధాంతం / అంతర్వేశకం (ఇంటర్‌పోలంట్) / వేరుపరచడం / వేరుపరచలేని / గరిష్ఠంగా వేరుపరచలేని జత / ఉమ్మడి అవైరుధ్య సిద్ధాంతం
+
+- Exact implementation: OLP-0199; model-theory/interpolation/introduction; content/model-theory/interpolation/introduction.tex:13-18 ↔ translation/content/model-theory/interpolation/introduction.tex:13-20 (OLP-0199-B006); printed/PDF page pending; OLP-0199; model-theory/interpolation/introduction; content/model-theory/interpolation/introduction.tex:20-25 ↔ translation/content/model-theory/interpolation/introduction.tex:22-27 (OLP-0199-B007); printed/PDF page pending; OLP-0200; model-theory/interpolation/separation; content/model-theory/interpolation/separation.tex:23-28 ↔ translation/content/model-theory/interpolation/separation.tex:25-30 (OLP-0200-B007); printed/PDF page pending; OLP-0201; model-theory/interpolation/interpolation-proof; content/model-theory/interpolation/interpolation-proof.tex:39-98 ↔ translation/content/model-theory/interpolation/interpolation-proof.tex:42-122 (OLP-0201-B010); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P026, PDF 88, printed 81, Consistency section; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P033, PDF 40, printed 33, Inference section heading and definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: The cited passages support theorem and proof exposition, sets and relations, formal logic, truth and consequence, derivation, consistency, predicates, first-order language, sentences, deduction and inference. They do not directly attest Craig interpolation or separation of sentence sets. The two entailments defining an interpolant, the shared-vocabulary clause, and the separation/inseparability definition in OLP-0199--OLP-0201 control the exact senses. ఇంటర్‌పోలంట్ is an explicit parenthetical technical borrowing beside descriptive అంతర్వేశకం; క్రేగ్ and రాబిన్సన్ are source eponyms
+
+- Alternatives: use అంతర్వేశం/అంతర్వేశకం with the established separation and consistency register, and give ఇంటర్‌పోలంట్ once as an explicit parenthetical borrowing (chosen); leave interpolation, separation and joint consistency in untranslated English prose (rejected); claim the specialized interpolation compounds as directly attested by the checked canon (rejected)
+
+- Uncertainty: Low semantic uncertainty because the defining entailments and proof construction are explicit; high nomenclatural uncertainty for interpolation and maximal-inseparability compounds
+
+- Please double-check: Please double-check whether “అంతర్వేశ సిద్ధాంతం / అంతర్వేశకం (ఇంటర్‌పోలంట్) / వేరుపరచడం / వేరుపరచలేని / గరిష్ఠంగా వేరుపరచలేని జత / ఉమ్మడి అవైరుధ్య సిద్ధాంతం” is idiomatic and technically standard for “interpolation theorem / interpolant / separation / inseparable / maximally inseparable pair / joint consistency theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T062 — definability / explicitly defines / implicitly defines / Beth definability theorem
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: moderate / standard
+
+- Chosen wording/treatment: నిర్వచనీయత / స్పష్టంగా నిర్వచిస్తుంది / అవ్యక్తంగా నిర్వచిస్తుంది / బెత్ నిర్వచనీయతా సిద్ధాంతం
+
+- Exact implementation: OLP-0202; model-theory/interpolation/definability; content/model-theory/interpolation/definability.tex:13-32 ↔ translation/content/model-theory/interpolation/definability.tex:13-34 (OLP-0202-B006); printed/PDF page pending; OLP-0202; model-theory/interpolation/definability; content/model-theory/interpolation/definability.tex:34-44 ↔ translation/content/model-theory/interpolation/definability.tex:36-48 (OLP-0202-B007); printed/PDF page pending; OLP-0202; model-theory/interpolation/definability; content/model-theory/interpolation/definability.tex:46-57 ↔ translation/content/model-theory/interpolation/definability.tex:50-62 (OLP-0202-B008); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P012, PDF 319, printed 312, Questions 37-38; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P010--TE-P012 support relation and function vocabulary; TE-P018, TE-P023, TE-P027, and TE-P029--TE-P031 support formal logic, consequence, predicates, first-order language, domains and sentences; TE-P003--TE-P004 and TE-P032 support theorem, proof and deduction prose. The witnesses do not directly attest explicit versus implicit definability. The displayed biconditional definition and the uniqueness-across-expansions condition in OLP-0202 fix those exact senses. బెత్ is the source eponym; no unexplained English technical headword remains in reader-facing prose
+
+- Alternatives: use transparent స్పష్ట and అవ్యక్త definition wording with the Beth eponym retained (chosen); leave explicit and implicit definability in untranslated English prose (rejected); collapse implicit definability into ordinary explicit definition (rejected because the theorem distinguishes them)
+
+- Uncertainty: Low semantic uncertainty because both notions are formally defined and proved equivalent; medium nomenclatural uncertainty for the explicit/implicit opposition and definability nominalization
+
+- Please double-check: Please double-check whether “నిర్వచనీయత / స్పష్టంగా నిర్వచిస్తుంది / అవ్యక్తంగా నిర్వచిస్తుంది / బెత్ నిర్వచనీయతా సిద్ధాంతం” is idiomatic and technically standard for “definability / explicitly defines / implicitly defines / Beth definability theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -4639,3 +4687,219 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check that g(n)=n-1 for n>0 is bijective onto N union {a} and yields the displayed transported operations.
+
+## REV-OLTEMODINT-001 — OLTEMODINT-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored H, the conjunction defined immediately before, in place of undefined delta; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0200; model-theory/interpolation/separation; lines 72-81, first separation lemma proof ↔ translation/content/model-theory/interpolation/separation.tex:74-94 (OLP-0200-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODINT-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored H, the conjunction defined immediately before, in place of undefined delta; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the first separation proof restores H, the conjunction defined immediately above, rather than retaining the undefined delta.
+
+## REV-OLTEMODINT-002 — OLTEMODINT-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: placed S in the existential macro's standard optional argument; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0200; model-theory/interpolation/separation; lines 92-96, second separation lemma proof hypothesis ↔ translation/content/model-theory/interpolation/separation.tex:104-114 (OLP-0200-B012); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODINT-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: placed S in the existential macro's standard optional argument; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the existential macro places S in the same optional formula argument used by every adjacent occurrence.
+
+## REV-OLTEMODINT-003 — OLTEMODINT-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: enumerated all sentences of the expanded languages required by the later maximality argument; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0201; model-theory/interpolation/interpolation-proof; lines 39-47, enumeration for the maximal-pair construction ↔ translation/content/model-theory/interpolation/interpolation-proof.tex:41-54 (OLP-0201-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODINT-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: enumerated all sentences of the expanded languages required by the later maximality argument; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the maximal-pair construction enumerates sentences of the expanded languages L-prime-1 and L-prime-2.
+
+## REV-OLTEMODINT-004 — OLTEMODINT-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: retained the shared Henkin constants when evaluating the expanded theories, then took the intended original-language reduct; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0201; model-theory/interpolation/interpolation-proof; lines 165-189, amalgamated model and final satisfaction claim ↔ translation/content/model-theory/interpolation/interpolation-proof.tex:196-231 (OLP-0201-B016); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODINT-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: retained the shared Henkin constants when evaluating the expanded theories, then took the intended original-language reduct; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the amalgamated model retains the shared new-constant interpretations while Gamma-star and Delta-star are evaluated, before taking the original-language reduct.
+
+## REV-OLTEMODINT-005 — OLTEMODINT-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: transported P's M'_1 interpretation along h rather than invoking the nonexistent M'_2 interpretation; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0201; model-theory/interpolation/interpolation-proof; lines 172-176, third clause of the amalgamated-model definition ↔ translation/content/model-theory/interpolation/interpolation-proof.tex:204-215 (OLP-0201-B016); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODINT-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: transported P's M'_1 interpretation along h rather than invoking the nonexistent M'_2 interpretation; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that a predicate exclusive to L1 is transported from its M-prime-1 interpretation, which agrees with the following tuplewise clause.
+
+## REV-OLTEMODINT-006 — OLTEMODINT-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: qualified the formula induction by transporting variable assignments along the established isomorphism; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0201; model-theory/interpolation/interpolation-proof; lines 183-189, induction on formulas ↔ translation/content/model-theory/interpolation/interpolation-proof.tex:232-247 (OLP-0201-B017); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODINT-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: qualified the formula induction by transporting variable assignments along the established isomorphism; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that formula satisfaction across the two domains is compared only after variable assignments are transported along h.
+
+## REV-OLTEMODINT-007 — OLTEMODINT-007
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored the full if-and-only-if statement proved by the two directions; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0202; model-theory/interpolation/definability; lines 66-69, Beth definability theorem statement ↔ translation/content/model-theory/interpolation/definability.tex:72-81 (OLP-0202-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODINT-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the full if-and-only-if statement proved by the two directions; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the Beth theorem is stated as the biconditional proved by its explicit-to-implicit and implicit-to-explicit directions.
+
+## REV-OLTEMODINT-008 — OLTEMODINT-008
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored the same Atom(P') constructor used in the adjacent entailments; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0202; model-theory/interpolation/definability; lines 92-101, finite conjunction entailment ↔ translation/content/model-theory/interpolation/definability.tex:104-115 (OLP-0202-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODINT-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the same Atom(P') constructor used in the adjacent entailments; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the P-prime atomic formula uses the same Atom constructor as all adjacent entailments.
+
+## REV-OLTEMODINT-009 — OLTEMODINT-009
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: supplied the two omitted no-addition stabilization clauses required by the immediately following induction; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0201; model-theory/interpolation/interpolation-proof; lines 39-59, construction of Gamma_n and Delta_n ↔ translation/content/model-theory/interpolation/interpolation-proof.tex:41-81 (OLP-0201-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODINT-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: supplied the two omitted no-addition stabilization clauses required by the immediately following induction; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that both recursive sequences explicitly remain unchanged whenever their respective addition condition fails.

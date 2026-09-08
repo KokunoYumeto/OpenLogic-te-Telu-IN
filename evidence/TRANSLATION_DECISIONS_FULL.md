@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **194 of 722 source units drafted**. This readable view contains all 193 decisions and 327 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **199 of 722 source units drafted**. This readable view contains all 204 decisions and 343 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -1689,6 +1689,63 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
   - te-Telu-IN-TE-T060-OCC-001; OLP-0197; OLP-0197-B007; source upstream/content/model-theory/models-of-arithmetic/computable-models.tex:35-40 bytes 1494-1749 SHA-256 f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89; target translation/content/model-theory/models-of-arithmetic/computable-models.tex:38-44 bytes 3125-3566 SHA-256 3226bf84c4d0cde20a3a52bd0ca2a4d7c075acb51354eb66f683eea7a8ea5e87; reader page pending.
   - te-Telu-IN-TE-T060-OCC-002; OLP-0197; OLP-0197-B013; source upstream/content/model-theory/models-of-arithmetic/computable-models.tex:119-121 bytes 4518-4618 SHA-256 f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89; target translation/content/model-theory/models-of-arithmetic/computable-models.tex:135-144 bytes 9678-10804 SHA-256 3226bf84c4d0cde20a3a52bd0ca2a4d7c075acb51354eb66f683eea7a8ea5e87; reader page pending.
+
+## te-Telu-IN-TE-T061 — interpolation theorem / interpolant / separation / inseparable / maximally inseparable pair / joint consistency theorem
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: అంతర్వేశ సిద్ధాంతం / అంతర్వేశకం (ఇంటర్‌పోలంట్) / వేరుపరచడం / వేరుపరచలేని / గరిష్ఠంగా వేరుపరచలేని జత / ఉమ్మడి అవైరుధ్య సిద్ధాంతం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “interpolation theorem / interpolant / separation / inseparable / maximally inseparable pair / joint consistency theorem” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low semantic uncertainty because the defining entailments and proof construction are explicit; high nomenclatural uncertainty for interpolation and maximal-inseparability compounds
+
+- Rationale: The cited passages support theorem and proof exposition, sets and relations, formal logic, truth and consequence, derivation, consistency, predicates, first-order language, sentences, deduction and inference. They do not directly attest Craig interpolation or separation of sentence sets. The two entailments defining an interpolant, the shared-vocabulary clause, and the separation/inseparability definition in OLP-0199--OLP-0201 control the exact senses. ఇంటర్‌పోలంట్ is an explicit parenthetical technical borrowing beside descriptive అంతర్వేశకం; క్రేగ్ and రాబిన్సన్ are source eponyms
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P004 [checked_context_only], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P026 [checked_context_only], PDF page 88; printed page 81; Consistency section; Direct consistency/inconsistency terminology; not direct completeness terminology. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C005:TE-P033 [checked_context_only], PDF page 40; printed page 33; Inference section heading and definition; Direct inference and explanatory register; derivation headword is separately witnessed at TE-P024.
+
+- Alternatives: leave interpolation, separation and joint consistency in untranslated English prose [rejected: rejected] | claim the specialized interpolation compounds as directly attested by the checked canon [rejected: rejected]
+
+- Review question: Please double-check whether “అంతర్వేశ సిద్ధాంతం / అంతర్వేశకం (ఇంటర్‌పోలంట్) / వేరుపరచడం / వేరుపరచలేని / గరిష్ఠంగా వేరుపరచలేని జత / ఉమ్మడి అవైరుధ్య సిద్ధాంతం” is idiomatic and technically standard for “interpolation theorem / interpolant / separation / inseparable / maximally inseparable pair / joint consistency theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T061-OCC-001; OLP-0199; OLP-0199-B006; source upstream/content/model-theory/interpolation/introduction.tex:13-18 bytes 204-570 SHA-256 dc7041742d24a32a13406867779feaaf6dd21db030f78d94a3e9621778846882; target translation/content/model-theory/interpolation/introduction.tex:13-20 bytes 210-1011 SHA-256 436dcaf43d2777d32ff5c3b0e6f39d4b5c22c2604d3f0988ff86a0d7e182746e; reader page pending.
+  - te-Telu-IN-TE-T061-OCC-002; OLP-0199; OLP-0199-B007; source upstream/content/model-theory/interpolation/introduction.tex:20-25 bytes 571-948 SHA-256 dc7041742d24a32a13406867779feaaf6dd21db030f78d94a3e9621778846882; target translation/content/model-theory/interpolation/introduction.tex:22-27 bytes 1012-1980 SHA-256 436dcaf43d2777d32ff5c3b0e6f39d4b5c22c2604d3f0988ff86a0d7e182746e; reader page pending.
+  - te-Telu-IN-TE-T061-OCC-003; OLP-0200; OLP-0200-B007; source upstream/content/model-theory/interpolation/separation.tex:23-28 bytes 824-1072 SHA-256 169acacd363892790848d7a4c51119a3f123f6e997e137f584fe88eea1062a6d; target translation/content/model-theory/interpolation/separation.tex:25-30 bytes 1605-2064 SHA-256 f7056cc7467bb50215f027cb5bf921855add1d6bee5a11eac748d7c0b760978c; reader page pending.
+  - te-Telu-IN-TE-T061-OCC-004; OLP-0201; OLP-0201-B010; source upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98 bytes 1380-4647 SHA-256 702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931; target translation/content/model-theory/interpolation/interpolation-proof.tex:42-122 bytes 2461-9908 SHA-256 d6de2eb462bf1eecc24e8c6375ba987d552c8e85fc16cd51eca7f0f3a0243989; reader page pending.
+
+## te-Telu-IN-TE-T062 — definability / explicitly defines / implicitly defines / Beth definability theorem
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: నిర్వచనీయత / స్పష్టంగా నిర్వచిస్తుంది / అవ్యక్తంగా నిర్వచిస్తుంది / బెత్ నిర్వచనీయతా సిద్ధాంతం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “definability / explicitly defines / implicitly defines / Beth definability theorem” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: Low semantic uncertainty because both notions are formally defined and proved equivalent; medium nomenclatural uncertainty for the explicit/implicit opposition and definability nominalization
+
+- Rationale: TE-P010--TE-P012 support relation and function vocabulary; TE-P018, TE-P023, TE-P027, and TE-P029--TE-P031 support formal logic, consequence, predicates, first-order language, domains and sentences; TE-P003--TE-P004 and TE-P032 support theorem, proof and deduction prose. The witnesses do not directly attest explicit versus implicit definability. The displayed biconditional definition and the uniqueness-across-expansions condition in OLP-0202 fix those exact senses. బెత్ is the source eponym; no unexplained English technical headword remains in reader-facing prose
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P004 [checked_context_only], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C004:TE-P012 [checked_context_only], PDF page 319; printed page 312; Questions 37-38; Function-versus-relation explanatory register; do not copy source answers mechanically. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: leave explicit and implicit definability in untranslated English prose [rejected: rejected] | collapse implicit definability into ordinary explicit definition [rejected: rejected because the theorem distinguishes them]
+
+- Review question: Please double-check whether “నిర్వచనీయత / స్పష్టంగా నిర్వచిస్తుంది / అవ్యక్తంగా నిర్వచిస్తుంది / బెత్ నిర్వచనీయతా సిద్ధాంతం” is idiomatic and technically standard for “definability / explicitly defines / implicitly defines / Beth definability theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T062-OCC-001; OLP-0202; OLP-0202-B006; source upstream/content/model-theory/interpolation/definability.tex:13-32 bytes 216-1252 SHA-256 9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29; target translation/content/model-theory/interpolation/definability.tex:13-34 bytes 253-2675 SHA-256 553a87a16a855e4f80b8baf38a753d947cce7f654014d89c4fc2024a73014942; reader page pending.
+  - te-Telu-IN-TE-T062-OCC-002; OLP-0202; OLP-0202-B007; source upstream/content/model-theory/interpolation/definability.tex:34-44 bytes 1253-1646 SHA-256 9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29; target translation/content/model-theory/interpolation/definability.tex:36-48 bytes 2676-3387 SHA-256 553a87a16a855e4f80b8baf38a753d947cce7f654014d89c4fc2024a73014942; reader page pending.
+  - te-Telu-IN-TE-T062-OCC-003; OLP-0202; OLP-0202-B008; source upstream/content/model-theory/interpolation/definability.tex:46-57 bytes 1647-2092 SHA-256 9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29; target translation/content/model-theory/interpolation/definability.tex:50-62 bytes 3388-4173 SHA-256 553a87a16a855e4f80b8baf38a753d947cce7f654014d89c4fc2024a73014942; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -5155,3 +5212,237 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEMODARI-015-OCC-001; OLP-0197; OLP-0197-B008; source upstream/content/model-theory/models-of-arithmetic/computable-models.tex:68-98 bytes 2505-3820 SHA-256 f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89; target translation/content/model-theory/models-of-arithmetic/computable-models.tex:46-91 bytes 3567-6871 SHA-256 3226bf84c4d0cde20a3a52bd0ca2a4d7c075acb51354eb66f683eea7a8ea5e87; reader page pending.
+
+## te-Telu-IN-OLTEMODINT-001 — OLTEMODINT-001: confirmed undefined formula symbol
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored H, the conjunction defined immediately before, in place of undefined delta; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed undefined formula symbol at lines 72-81, first separation lemma proof, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODINT-20260908:OLTEMODINT-001 [checked_supports], content/model-theory/interpolation/separation.tex; lines 72-81, first separation lemma proof; confirmed_undefined_formula_symbol; restored H, the conjunction defined immediately before, in place of undefined delta; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the first separation proof restores H, the conjunction defined immediately above, rather than retaining the undefined delta.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODINT-001-OCC-001; OLP-0200; OLP-0200-B010; source upstream/content/model-theory/interpolation/separation.tex:72-81 bytes 2994-3451 SHA-256 169acacd363892790848d7a4c51119a3f123f6e997e137f584fe88eea1062a6d; target translation/content/model-theory/interpolation/separation.tex:74-94 bytes 4990-6432 SHA-256 f7056cc7467bb50215f027cb5bf921855add1d6bee5a11eac748d7c0b760978c; reader page pending.
+
+## te-Telu-IN-OLTEMODINT-002 — OLTEMODINT-002: confirmed malformed quantifier call
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: placed S in the existential macro's standard optional argument; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed malformed quantifier call at lines 92-96, second separation lemma proof hypothesis, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODINT-20260908:OLTEMODINT-002 [checked_supports], content/model-theory/interpolation/separation.tex; lines 92-96, second separation lemma proof hypothesis; confirmed_malformed_quantifier_call; placed S in the existential macro's standard optional argument; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the existential macro places S in the same optional formula argument used by every adjacent occurrence.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODINT-002-OCC-001; OLP-0200; OLP-0200-B012; source upstream/content/model-theory/interpolation/separation.tex:92-96 bytes 3759-4000 SHA-256 169acacd363892790848d7a4c51119a3f123f6e997e137f584fe88eea1062a6d; target translation/content/model-theory/interpolation/separation.tex:104-114 bytes 6896-7930 SHA-256 f7056cc7467bb50215f027cb5bf921855add1d6bee5a11eac748d7c0b760978c; reader page pending.
+
+## te-Telu-IN-OLTEMODINT-003 — OLTEMODINT-003: confirmed wrong enumeration languages
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: enumerated all sentences of the expanded languages required by the later maximality argument; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed wrong enumeration languages at lines 39-47, enumeration for the maximal-pair construction, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODINT-20260908:OLTEMODINT-003 [checked_supports], content/model-theory/interpolation/interpolation-proof.tex; lines 39-47, enumeration for the maximal-pair construction; confirmed_wrong_enumeration_languages; enumerated all sentences of the expanded languages required by the later maximality argument; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the maximal-pair construction enumerates sentences of the expanded languages L-prime-1 and L-prime-2.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODINT-003-OCC-001; OLP-0201; OLP-0201-B010; source upstream/content/model-theory/interpolation/interpolation-proof.tex:39-47 bytes 1380-1918 SHA-256 702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931; target translation/content/model-theory/interpolation/interpolation-proof.tex:41-54 bytes 2460-3852 SHA-256 d6de2eb462bf1eecc24e8c6375ba987d552c8e85fc16cd51eca7f0f3a0243989; reader page pending.
+
+## te-Telu-IN-OLTEMODINT-004 — OLTEMODINT-004: confirmed missing expanded language interpretations
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: retained the shared Henkin constants when evaluating the expanded theories, then took the intended original-language reduct; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing expanded language interpretations at lines 165-189, amalgamated model and final satisfaction claim, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODINT-20260908:OLTEMODINT-004 [checked_supports], content/model-theory/interpolation/interpolation-proof.tex; lines 165-189, amalgamated model and final satisfaction claim; confirmed_missing_expanded_language_interpretations; retained the shared Henkin constants when evaluating the expanded theories, then took the intended original-language reduct; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the amalgamated model retains the shared new-constant interpretations while Gamma-star and Delta-star are evaluated, before taking the original-language reduct.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODINT-004-OCC-001; OLP-0201; OLP-0201-B016; source upstream/content/model-theory/interpolation/interpolation-proof.tex:165-189 bytes 7959-9235 SHA-256 702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931; target translation/content/model-theory/interpolation/interpolation-proof.tex:196-231 bytes 15890-19172 SHA-256 d6de2eb462bf1eecc24e8c6375ba987d552c8e85fc16cd51eca7f0f3a0243989; reader page pending.
+
+## te-Telu-IN-OLTEMODINT-005 — OLTEMODINT-005: confirmed undefined predicate interpretation
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: transported P's M'_1 interpretation along h rather than invoking the nonexistent M'_2 interpretation; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed undefined predicate interpretation at lines 172-176, third clause of the amalgamated-model definition, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODINT-20260908:OLTEMODINT-005 [checked_supports], content/model-theory/interpolation/interpolation-proof.tex; lines 172-176, third clause of the amalgamated-model definition; confirmed_undefined_predicate_interpretation; transported P's M'_1 interpretation along h rather than invoking the nonexistent M'_2 interpretation; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that a predicate exclusive to L1 is transported from its M-prime-1 interpretation, which agrees with the following tuplewise clause.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODINT-005-OCC-001; OLP-0201; OLP-0201-B016; source upstream/content/model-theory/interpolation/interpolation-proof.tex:172-176 bytes 8300-8589 SHA-256 702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931; target translation/content/model-theory/interpolation/interpolation-proof.tex:204-215 bytes 16440-17404 SHA-256 d6de2eb462bf1eecc24e8c6375ba987d552c8e85fc16cd51eca7f0f3a0243989; reader page pending.
+
+## te-Telu-IN-OLTEMODINT-006 — OLTEMODINT-006: confirmed unqualified cross domain agreement claim
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: qualified the formula induction by transporting variable assignments along the established isomorphism; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed unqualified cross domain agreement claim at lines 183-189, induction on formulas, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODINT-20260908:OLTEMODINT-006 [checked_supports], content/model-theory/interpolation/interpolation-proof.tex; lines 183-189, induction on formulas; confirmed_unqualified_cross_domain_agreement_claim; qualified the formula induction by transporting variable assignments along the established isomorphism; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that formula satisfaction across the two domains is compared only after variable assignments are transported along h.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODINT-006-OCC-001; OLP-0201; OLP-0201-B017; source upstream/content/model-theory/interpolation/interpolation-proof.tex:183-189 bytes 8823-9235 SHA-256 702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931; target translation/content/model-theory/interpolation/interpolation-proof.tex:232-247 bytes 19172-20796 SHA-256 d6de2eb462bf1eecc24e8c6375ba987d552c8e85fc16cd51eca7f0f3a0243989; reader page pending.
+
+## te-Telu-IN-OLTEMODINT-007 — OLTEMODINT-007: confirmed missing biconditional word
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored the full if-and-only-if statement proved by the two directions; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing biconditional word at lines 66-69, Beth definability theorem statement, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODINT-20260908:OLTEMODINT-007 [checked_supports], content/model-theory/interpolation/definability.tex; lines 66-69, Beth definability theorem statement; confirmed_missing_biconditional_word; restored the full if-and-only-if statement proved by the two directions; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the Beth theorem is stated as the biconditional proved by its explicit-to-implicit and implicit-to-explicit directions.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODINT-007-OCC-001; OLP-0202; OLP-0202-B010; source upstream/content/model-theory/interpolation/definability.tex:66-69 bytes 2449-2628 SHA-256 9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29; target translation/content/model-theory/interpolation/definability.tex:72-81 bytes 4734-5673 SHA-256 553a87a16a855e4f80b8baf38a753d947cce7f654014d89c4fc2024a73014942; reader page pending.
+
+## te-Telu-IN-OLTEMODINT-008 — OLTEMODINT-008: confirmed malformed atomic formula
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored the same Atom(P') constructor used in the adjacent entailments; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed malformed atomic formula at lines 92-101, finite conjunction entailment, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODINT-20260908:OLTEMODINT-008 [checked_supports], content/model-theory/interpolation/definability.tex; lines 92-101, finite conjunction entailment; confirmed_malformed_atomic_formula; restored the same Atom(P') constructor used in the adjacent entailments; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the P-prime atomic formula uses the same Atom constructor as all adjacent entailments.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODINT-008-OCC-001; OLP-0202; OLP-0202-B011; source upstream/content/model-theory/interpolation/definability.tex:92-101 bytes 3430-3937 SHA-256 9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29; target translation/content/model-theory/interpolation/definability.tex:104-115 bytes 6904-8023 SHA-256 553a87a16a855e4f80b8baf38a753d947cce7f654014d89c4fc2024a73014942; reader page pending.
+
+## te-Telu-IN-OLTEMODINT-009 — OLTEMODINT-009: confirmed incomplete recursive definition
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: supplied the two omitted no-addition stabilization clauses required by the immediately following induction; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed incomplete recursive definition at lines 39-59, construction of Gamma_n and Delta_n, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODINT-20260908:OLTEMODINT-009 [checked_supports], content/model-theory/interpolation/interpolation-proof.tex; lines 39-59, construction of Gamma_n and Delta_n; confirmed_incomplete_recursive_definition; supplied the two omitted no-addition stabilization clauses required by the immediately following induction; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that both recursive sequences explicitly remain unchanged whenever their respective addition condition fails.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODINT-009-OCC-001; OLP-0201; OLP-0201-B010; source upstream/content/model-theory/interpolation/interpolation-proof.tex:39-59 bytes 1380-2617 SHA-256 702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931; target translation/content/model-theory/interpolation/interpolation-proof.tex:41-81 bytes 2460-6670 SHA-256 d6de2eb462bf1eecc24e8c6375ba987d552c8e85fc16cd51eca7f0f3a0243989; reader page pending.

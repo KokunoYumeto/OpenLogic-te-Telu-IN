@@ -1,0 +1,149 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTEMODINT-20260908",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0198",
+      "OLP-0199",
+      "OLP-0200",
+      "OLP-0201",
+      "OLP-0202"
+    ],
+    "finding_count": 9
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEMODINT-001",
+      "unit_id": "OLP-0200",
+      "classification": "confirmed_undefined_formula_symbol",
+      "source": {
+        "path": "content/model-theory/interpolation/separation.tex",
+        "bytes": 5002,
+        "sha256": "169acacd363892790848d7a4c51119a3f123f6e997e137f584fe88eea1062a6d",
+        "locator": "lines 72-81, first separation lemma proof"
+      },
+      "finding": "The derivation suddenly concludes forall x C entails not-delta even though delta is nowhere defined in the argument.",
+      "controlling_evidence": "H was defined as the conjunction of Delta_0, the immediately preceding contraposition gives C(c/x) entails not-H, and the next step requires H entails not-forall x C.",
+      "required_translation_handling": "Restore not-H in place of not-delta and add an adjacent OLTEMODINT-001 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODINT-002",
+      "unit_id": "OLP-0200",
+      "classification": "confirmed_malformed_quantifier_call",
+      "source": {
+        "path": "content/model-theory/interpolation/separation.tex",
+        "bytes": 5002,
+        "sha256": "169acacd363892790848d7a4c51119a3f123f6e997e137f584fe88eea1062a6d",
+        "locator": "lines 92-96, second separation lemma proof hypothesis"
+      },
+      "finding": "One repeated existential formula is written as lexists[x]{S}, placing the formula outside the macro's normal optional argument.",
+      "controlling_evidence": "The lemma statement and every other occurrence in the same proof use lexists[x][S].",
+      "required_translation_handling": "Use the consistent lexists[x][S] form and add an adjacent OLTEMODINT-002 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODINT-003",
+      "unit_id": "OLP-0201",
+      "classification": "confirmed_wrong_enumeration_languages",
+      "source": {
+        "path": "content/model-theory/interpolation/interpolation-proof.tex",
+        "bytes": 9263,
+        "sha256": "702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931",
+        "locator": "lines 39-47, enumeration for the maximal-pair construction"
+      },
+      "finding": "The construction enumerates sentences of the unexpanded languages L_1 and L_2 but later claims maximal consistency in L'_1 and L'_2.",
+      "controlling_evidence": "The Henkin construction adds new constants and the maximality proof requires every sentence containing them to occur in the enumeration.",
+      "required_translation_handling": "Enumerate the sentences of L'_1 and L'_2 and add an adjacent OLTEMODINT-003 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODINT-004",
+      "unit_id": "OLP-0201",
+      "classification": "confirmed_missing_expanded_language_interpretations",
+      "source": {
+        "path": "content/model-theory/interpolation/interpolation-proof.tex",
+        "bytes": 9263,
+        "sha256": "702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931",
+        "locator": "lines 165-189, amalgamated model and final satisfaction claim"
+      },
+      "finding": "M is defined only for L_1 union L_2 and then asserted to satisfy Gamma* union Delta*, whose sentences may contain the newly added constants c_n.",
+      "controlling_evidence": "The c_n are shared by all three expanded languages and already have corresponding interpretations in M'_2; retaining those interpretations gives the required expansion, whose reduct still decides A and not-B.",
+      "required_translation_handling": "Explicitly retain the shared c_n interpretations in an L'_1 union L'_2 expansion and add an adjacent OLTEMODINT-004 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODINT-005",
+      "unit_id": "OLP-0201",
+      "classification": "confirmed_undefined_predicate_interpretation",
+      "source": {
+        "path": "content/model-theory/interpolation/interpolation-proof.tex",
+        "bytes": 9263,
+        "sha256": "702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931",
+        "locator": "lines 172-176, third clause of the amalgamated-model definition"
+      },
+      "finding": "For P in L_1 minus L_2, the source defines P^M as h(P^M'_2), although P has no interpretation in the L'_2-structure.",
+      "controlling_evidence": "The componentwise explanation immediately following the equation transports membership from P^M'_1 along h into the M_2 domain.",
+      "required_translation_handling": "Use h(P^M'_1) and add an adjacent OLTEMODINT-005 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODINT-006",
+      "unit_id": "OLP-0201",
+      "classification": "confirmed_unqualified_cross_domain_agreement_claim",
+      "source": {
+        "path": "content/model-theory/interpolation/interpolation-proof.tex",
+        "bytes": 9263,
+        "sha256": "702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931",
+        "locator": "lines 183-189, induction on formulas"
+      },
+      "finding": "The source says M agrees literally with M'_1 on formulas although their domains differ and M was built on the M_2 domain.",
+      "controlling_evidence": "The preceding isomorphism h transports M'_1 to M_2; satisfaction agrees only after variable assignments are transported along h.",
+      "required_translation_handling": "State the formula induction with h-transported assignments and add an adjacent OLTEMODINT-006 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODINT-007",
+      "unit_id": "OLP-0202",
+      "classification": "confirmed_missing_biconditional_word",
+      "source": {
+        "path": "content/model-theory/interpolation/definability.tex",
+        "bytes": 4967,
+        "sha256": "9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29",
+        "locator": "lines 66-69, Beth definability theorem statement"
+      },
+      "finding": "The theorem says 'if and only Sigma(P)' and omits the second 'if' required by the biconditional statement.",
+      "controlling_evidence": "The two preceding definitions and the proof's two directions state equivalence between implicit and explicit definability.",
+      "required_translation_handling": "Restore the full if-and-only-if wording and add an adjacent OLTEMODINT-007 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODINT-008",
+      "unit_id": "OLP-0202",
+      "classification": "confirmed_malformed_atomic_formula",
+      "source": {
+        "path": "content/model-theory/interpolation/definability.tex",
+        "bytes": 4967,
+        "sha256": "9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29",
+        "locator": "lines 92-101, finite conjunction entailment"
+      },
+      "finding": "The right side of the implication is printed as the raw symbol string P'c_1...c_n rather than as an atomic formula.",
+      "controlling_evidence": "The same implication immediately before and after this line uses Atom(P'; c_1,...,c_n).",
+      "required_translation_handling": "Restore the Atom macro application and add an adjacent OLTEMODINT-008 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODINT-009",
+      "unit_id": "OLP-0201",
+      "classification": "confirmed_incomplete_recursive_definition",
+      "source": {
+        "path": "content/model-theory/interpolation/interpolation-proof.tex",
+        "bytes": 9263,
+        "sha256": "702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931",
+        "locator": "lines 39-59, construction of Gamma_n and Delta_n"
+      },
+      "finding": "The recursive clauses say what to add when inseparability is preserved but never define either next-stage set when no addition is made.",
+      "controlling_evidence": "The source calls the sequences increasing and the induction immediately uses Gamma_{n+1}=Gamma_n and Delta_{n+1}=Delta_n in precisely those omitted cases.",
+      "required_translation_handling": "State both no-addition stabilization clauses explicitly and add an adjacent OLTEMODINT-009 disclosure."
+    }
+  ]
+}

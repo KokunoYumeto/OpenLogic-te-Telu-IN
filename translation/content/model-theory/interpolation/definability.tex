@@ -1,0 +1,147 @@
+% Part: model-theory
+% Chapter: interpolation
+% Section: definability
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{int}{def}
+
+\olsection{నిర్వచనీయతా సిద్ధాంతం}
+
+అంతర్వేశ సిద్ధాంతానికి ఒక ముఖ్యమైన అన్వయం బెత్ నిర్వచనీయతా
+సిద్ధాంతం. $n$-స్థానాల సంబంధం~$R$ను నిర్వచించడానికి, $R$ రాని,
+$n$ స్వేచ్ఛా \tetoken{చరాలు}{!!{variable}s} గల
+\tetoken{ఒక సూత్రం}{!!a{formula}}~$!C$ను ఇవ్వవచ్చు. ఇది $!C$ ద్వారా
+$R$కు ఇచ్చే \emph{స్పష్ట} నిర్వచనం. అప్పుడు $n$-స్థానాల
+\tetoken{విధేయ సంకేతం}{!!{predicate}}~$P$ను కలిగిన
+\tetoken{భాష}{!!{language}}లోని సిద్ధాంతం~$\Sigma(P)$, ఒక
+లాంఛనీకృత స్పష్ట నిర్వచనాన్ని కలిగి ఉంటే (లేదా కనీసం దాన్ని
+అనుగమింపజేస్తే), $P$ను స్పష్టంగా నిర్వచిస్తుంది అని కూడా చెప్పవచ్చు;
+అంటే,
+\[
+\Sigma(P) \Entails \lforall[x_1][\dots
+  \lforall[x_n][(\Atom{P}{x_1,\dots, x_n} \liff !C(x_1, \dots,
+    x_n))]].
+\]
+అయితే ఒక సంబంధాన్ని నిర్వచించడానికి---అంటే దాన్ని పూర్తిగా
+నిర్ణయించడానికి---స్పష్ట నిర్వచనం ఒక్కటే మార్గం కాదు. ఏ నమూనాలోనైనా
+మిగిలిన \tetoken{భాష}{!!{language}}కు ఇచ్చిన అర్థనిర్దేశం వల్లనే
+$P$ యొక్క అర్థనిర్దేశం స్థిరపడేలా కూడా ఒక సిద్ధాంతం ఉండవచ్చు. ఒక
+సిద్ధాంతం $P$ అర్థనిర్దేశాన్ని ఇలా స్థిరపరిచినప్పుడల్లా---అంటే $P$ను
+\emph{అవ్యక్తంగా నిర్వచించినప్పుడల్లా}---దాన్ని స్పష్టంగా కూడా
+నిర్వచిస్తుందని నిర్వచనీయతా సిద్ధాంతం చెబుతుంది.
+
+\begin{defn}
+\tetoken{విధేయ సంకేతం}{!!{predicate}}~$P$ను కలిగి లేని
+\tetoken{ఒక భాష}{!!a{language}}~$\Lang{L}$ అనుకుందాం.
+$\Lang{L} \cup \{P\}$లోని \tetoken{వాక్యాల}{!!{sentence}s}
+సమితి~$\Sigma(P)$, $P$ను \emph{స్పష్టంగా నిర్వచిస్తుంది} అంటే,
+కింది షరతు తీరే $\Lang{L}$కు చెందిన
+\tetoken{ఒక సూత్రం}{!!a{formula}}~$!C(x_1, \dots, x_n)$ ఉంటుంది:
+\[
+\Sigma(P) \Entails \lforall[x_1][\dots
+  \lforall[x_n][(\Atom{P}{x_1,\dots, x_n} \liff !C(x_1, \dots,
+    x_n))]].
+\]
+\end{defn}
+
+\begin{defn}
+\tetoken{విధేయ సంకేతాలు}{!!{predicate}s}~$P$, $P'$లను కలిగి లేని
+\tetoken{ఒక భాష}{!!a{language}}~$\Lang{L}$ అనుకుందాం.
+$\Lang{L} \cup \{P\}$లోని \tetoken{వాక్యాల}{!!{sentence}s}
+సమితి~$\Sigma(P)$, $P$ను \emph{అవ్యక్తంగా నిర్వచిస్తుంది} అంటే,
+\[
+\Sigma(P) \cup \Sigma(P') \Entails \lforall[x_1][\dots
+  \lforall[x_n][(\Atom{P}{x_1,\dots, x_n} \liff \Atom{P'}{x_1,\dots,
+      x_n})]],
+\]
+ఇక్కడ $\Sigma(P)$ అంతటా $P$ స్థానంలో $P'$ను ఏకరీతిగా
+ప్రతిస్థాపించడం వల్ల వచ్చేదే $\Sigma(P')$.
+\end{defn}
+
+మరో మాటలో చెప్పాలంటే, ఏ నమూనా $\Struct{M}$కైనా,
+$R, R' \subseteq \Domain{M}^n$కైనా, $\Expan{M}{R} \Entails
+\Sigma(P)$, $\Expan{M}{R'} \Entails \Sigma(P')$ రెండూ అయితే
+$R=R'$. ఇక్కడ $\Expan{M}{R}$ అనేది $\Lang{L}$ను
+$\Lang{L} \cup \{P\}$కు విస్తరించిన
+\tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M'}$; అందులో
+$\Assign{P}{M'} = R$. $\Expan{M}{R'}$ కూడా ఇలాగే ఉంటుంది.
+
+\begin{thm}[బెత్ నిర్వచనీయతా సిద్ధాంతం]
+$\Lang{L} \cup\{P\}$-
+\tetoken{సూత్రాల}{!!{formula}s} సమితి~$\Sigma(P)$, $P$ను అవ్యక్తంగా
+నిర్వచించినప్పుడు, అప్పుడు మాత్రమే $\Sigma(P)$, $P$ను స్పష్టంగా
+నిర్వచిస్తుంది.
+\sourcecorrection{OLTEMODINT-007}{ఆంగ్ల మూల సిద్ధాంత వాక్యంలో
+“if and only” తరువాత కావాల్సిన రెండవ “if” తప్పిపోయింది. ముందరి రెండు
+నిర్వచనాలు, తరువాతి రెండు దిశల నిరూపణ కోరే ద్విశరతను తెలుగులో
+పూర్తిగా పునరుద్ధరించాం.}
+\end{thm}
+
+\begin{proof}
+$\Sigma(P)$, $P$ను స్పష్టంగా నిర్వచిస్తే కింది రెండూ తీరుతాయి:
+\begin{align*}
+  \Sigma(P) & \Entails & \lforall[x_1][\dots \lforall[x_n]
+    [(\Atom{P}{x_1,\dots, x_n} \liff !C(x_1,\dots,x_n))]]\\
+  \Sigma(P') & \Entails & \lforall[x_1][\dots \lforall[x_n]
+    [(\Atom{P'}{x_1,\dots, x_n} \liff !C(x_1,\dots,x_n))]]
+\end{align*}
+అందువల్ల కావాల్సిన నిష్కర్ష వస్తుంది. తిరుగు దిశ కోసం $\Sigma(P)$,
+$P$ను అవ్యక్తంగా నిర్వచిస్తుందని అనుకుందాం. మొదట
+\tetoken{స్థిరసంకేతాలు}{!!{constant}s}~$c_1$, \dots,~$c_n$ను
+$\Lang{L}$కు చేర్చుతాం. అప్పుడు
+\[
+\Sigma(P) \cup \Sigma(P') \Entails
+\Atom{P}{c_1, \dots, c_n} \to  \Atom{P'}{c_1, \dots, c_n}.
+\]
+సంహతత్వం వల్ల $\Delta_0 \subseteq \Sigma(P)$,
+$\Delta_1 \subseteq \Sigma(P')$ అనే పరిమిత సమితులు ఉండి,
+\[
+\Delta_0 \cup \Delta_1 \Entails
+\Atom{P}{c_1, \dots, c_n} \to \Atom{P'}{c_1, \dots, c_n}.
+\]
+$!A(P) \in \Delta_0$ లేదా $!A(P') \in \Delta_1$ అయ్యే అన్ని
+\tetoken{వాక్యాల}{!!{sentence}s}~$!A(P)$ సంయోగాన్ని $!D(P)$గా;
+$!A(P) \in \Delta_0$ లేదా $!A(P') \in \Delta_1$ అయ్యే అన్ని
+\tetoken{వాక్యాల}{!!{sentence}s}~$!A(P')$ సంయోగాన్ని $!D(P')$గా
+ఉంచండి. అప్పుడు $!D(P) \land !D(P') \Entails
+\Atom{P}{c_1, \dots, c_n} \to \Atom{P'}{c_1,\dots,c_n}$.
+\sourcecorrection{OLTEMODINT-008}{ఈ అనుగమనపు చివరి పరమాణు
+సూత్రాన్ని ఆంగ్ల మూలం $P'c_1\dots c_n$గా ముడి సంకేతాల వరుసగా
+రాస్తుంది; అదే అనుగమనంలో ముందే వాడిన, వ్యాకరణపరంగా ఏర్పడిన
+$\Atom{P'}{c_1,\dots,c_n}$ రూపాన్ని పునరుద్ధరించాం.}
+ప్రతి \tetoken{విధేయ సంకేతం}{!!{predicate}} $\Entails$కు ఒక్కవైపే
+వచ్చేలా దీన్ని పునర్వ్యవస్థీకరించవచ్చు:
+\[
+!D(P) \land \Atom{P}{c_1, \dots, c_n} \Entails
+!D(P') \to \Atom{P'}{c_1, \dots, c_n}.
+\]
+క్రేగ్ అంతర్వేశ సిద్ధాంతం వల్ల $P$గానీ $P'$గానీ లేని
+\tetoken{ఒక వాక్యం}{!!a{sentence}}~$!C(c_1,\dots, c_n)$ ఉండి:
+\begin{align*}
+  !D(P) \land \Atom{P}{c_1, \dots, c_n} & \Entails !C(c_1,\dots, c_n); \\
+  !C(c_1,\dots, c_n) & \Entails !D(P') \to \Atom{P'}{c_1, \dots, c_n}.
+\end{align*}
+ఈ రెండు అనుగమనాల్లో మొదటిదాని నుంచి $!D(P) \Entails
+\Atom{P}{c_1,\dots, c_n} \lif !C(c_1,\dots, c_n)$ వస్తుంది.
+రెండవదాని విషయంలో, $\Lang{L} \cup \{P\}$-నమూనా
+$\Expan{M}{R} \Entails !A(P)$ అయినప్పుడు, అప్పుడు మాత్రమే అనురూప
+$\Lang{L} \cup \{P'\}$-నమూనా $\Expan{M}{R} \models !A(P')$ కాబట్టి,
+$!C(c_1,\dots, c_n) \Entails !D(P) \lif
+\Atom{P}{c_1,\dots, c_n}$ వస్తుంది. దీని నుంచి
+\[
+!D(P) \Entails !C(c_1,\dots,c_n) \to \Atom{P}{c_1,\dots, c_n}.
+\]
+ఈ రెండింటినీ కలిపితే $!D(P) \Entails \Atom{P}{c_1,\dots, c_n}
+\liff !C(c_1, \dots, c_n)$; ఏకదిశత, సార్వత్రీకరణ ద్వారా
+\[
+\Sigma(P) \Entails
+\lforall[x_1][\dots\lforall[x_n][(\Atom{P}{x_1,\dots, x_n} \liff
+    !C(x_1,\dots, x_n))]].
+\]
+కూడా వస్తుంది.
+\end{proof}
+
+\end{document}

@@ -1,6 +1,6 @@
 # Priority review
 
-This view contains 39 of 193 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
+This view contains 40 of 204 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
 
 Final reader pages remain pending; exact source and target file/line locators are shown.
 
@@ -393,3 +393,13 @@ Final reader pages remain pending; exact source and target file/line locators ar
 - Occurrences: OLP-0196 translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:64-77; OLP-0196 translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:111-123
 
 - Review question: Please double-check whether “ఉత్తరాధికారి / పూర్వాధికారి / అంకగణిత ఖండం / వివిక్త క్రమం / అప్రామాణిక ఖండాల క్రమం” is idiomatic and technically standard for “successor / predecessor / arithmetic block / discrete order / order of non-standard blocks” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T061 — interpolation theorem / interpolant / separation / inseparable / maximally inseparable pair / joint consistency theorem
+
+- Chosen rendering: అంతర్వేశ సిద్ధాంతం / అంతర్వేశకం (ఇంటర్‌పోలంట్) / వేరుపరచడం / వేరుపరచలేని / గరిష్ఠంగా వేరుపరచలేని జత / ఉమ్మడి అవైరుధ్య సిద్ధాంతం
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0199 translation/content/model-theory/interpolation/introduction.tex:13-20; OLP-0199 translation/content/model-theory/interpolation/introduction.tex:22-27; OLP-0200 translation/content/model-theory/interpolation/separation.tex:25-30; OLP-0201 translation/content/model-theory/interpolation/interpolation-proof.tex:42-122
+
+- Review question: Please double-check whether “అంతర్వేశ సిద్ధాంతం / అంతర్వేశకం (ఇంటర్‌పోలంట్) / వేరుపరచడం / వేరుపరచలేని / గరిష్ఠంగా వేరుపరచలేని జత / ఉమ్మడి అవైరుధ్య సిద్ధాంతం” is idiomatic and technically standard for “interpolation theorem / interpolant / separation / inseparable / maximally inseparable pair / joint consistency theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?

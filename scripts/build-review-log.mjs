@@ -120,6 +120,17 @@ locations['TE-T060']=[
  L('content/model-theory/models-of-arithmetic/computable-models.tex',35,40,38,44,'\\emph{computable}','\\emph{గణనీయం}'),
  L('content/model-theory/models-of-arithmetic/computable-models.tex',119,121,135,144,"Tennenbaum's Theorem",'టెన్నెన్‌బామ్ సిద్ధాంతం')
 ];
+locations['TE-T061']=[
+ L('content/model-theory/interpolation/introduction.tex',13,18,13,20,'\\emph{interpolant}','\\emph{అంతర్వేశకం (ఇంటర్‌పోలంట్)}'),
+ L('content/model-theory/interpolation/introduction.tex',20,25,22,27,'joint consistency','ఉమ్మడి అవైరుధ్య'),
+ L('content/model-theory/interpolation/separation.tex',23,28,25,30,'\\emph{inseparable}','\\emph{వేరుపరచలేనివి}'),
+ L('content/model-theory/interpolation/interpolation-proof.tex',39,44,42,55,'maximally inseparable','గరిష్ఠంగా వేరుపరచలేని')
+];
+locations['TE-T062']=[
+ L('content/model-theory/interpolation/definability.tex',13,18,13,19,"Beth's",'బెత్ నిర్వచనీయతా'),
+ L('content/model-theory/interpolation/definability.tex',34,44,36,48,'\\emph{explicitly defines}','\\emph{స్పష్టంగా నిర్వచిస్తుంది}'),
+ L('content/model-theory/interpolation/definability.tex',46,57,50,62,'\\emph{implicitly defines}','\\emph{అవ్యక్తంగా నిర్వచిస్తుంది}')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -165,7 +176,9 @@ alternatives['TE-T057']=['use descriptive Telugu labels with overspill and rank 
 alternatives['TE-T058']=['reuse the established number, truth, model and structure register with the standard/non-standard distinction fixed by isomorphism and numeral values (chosen)','leave standard and non-standard as unexplained English headwords (rejected)','claim direct canon attestation for the arithmetic-model taxonomy (rejected)'];
 alternatives['TE-T059']=['use ఉత్తరాధికారి, పూర్వాధికారి and the locally defined ఖండం terminology (chosen)','reuse the graph-theoretic ఉత్తరవర్తి and పూర్వవర్తి labels despite the arithmetic context (rejected)','claim direct canon attestation for arithmetic blocks (rejected)'];
 alternatives['TE-T060']=['reuse the edition’s definition-controlled గణనీయ terminology and descriptive నిర్ణయించదగిన సంబంధం (chosen)','use లెక్కించదగిన for computable and thereby collapse computability into enumerability (rejected)','omit the Tennenbaum eponym or leave the theorem statement in English (rejected)'];
-const completion='partial_194_of_722_draft_units';
+alternatives['TE-T061']=['use అంతర్వేశం/అంతర్వేశకం with the established separation and consistency register, and give ఇంటర్‌పోలంట్ once as an explicit parenthetical borrowing (chosen)','leave interpolation, separation and joint consistency in untranslated English prose (rejected)','claim the specialized interpolation compounds as directly attested by the checked canon (rejected)'];
+alternatives['TE-T062']=['use transparent స్పష్ట and అవ్యక్త definition wording with the Beth eponym retained (chosen)','leave explicit and implicit definability in untranslated English prose (rejected)','collapse implicit definability into ordinary explicit definition (rejected because the theorem distinguishes them)'];
+const completion='partial_199_of_722_draft_units';
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -303,7 +316,16 @@ const correctionQuestions={
   'OLTEMODARI-012':'Please double-check that density and endpointlessness remain general while denumerability is conditional on a countable model.',
   'OLTEMODARI-013':'Please double-check that the final set builder constrains x, the ordered pair’s first component, rather than unrelated n.',
   'OLTEMODARI-014':'Please double-check that Tennenbaum’s theorem rules out computable non-standard PA models and states uniqueness only up to isomorphism.',
-  'OLTEMODARI-015':'Please double-check that g(n)=n-1 for n>0 is bijective onto N union {a} and yields the displayed transported operations.'
+  'OLTEMODARI-015':'Please double-check that g(n)=n-1 for n>0 is bijective onto N union {a} and yields the displayed transported operations.',
+  'OLTEMODINT-001':'Please double-check that the first separation proof restores H, the conjunction defined immediately above, rather than retaining the undefined delta.',
+  'OLTEMODINT-002':'Please double-check that the existential macro places S in the same optional formula argument used by every adjacent occurrence.',
+  'OLTEMODINT-003':'Please double-check that the maximal-pair construction enumerates sentences of the expanded languages L-prime-1 and L-prime-2.',
+  'OLTEMODINT-004':'Please double-check that the amalgamated model retains the shared new-constant interpretations while Gamma-star and Delta-star are evaluated, before taking the original-language reduct.',
+  'OLTEMODINT-005':'Please double-check that a predicate exclusive to L1 is transported from its M-prime-1 interpretation, which agrees with the following tuplewise clause.',
+  'OLTEMODINT-006':'Please double-check that formula satisfaction across the two domains is compared only after variable assignments are transported along h.',
+  'OLTEMODINT-007':'Please double-check that the Beth theorem is stated as the biconditional proved by its explicit-to-implicit and implicit-to-explicit directions.',
+  'OLTEMODINT-008':'Please double-check that the P-prime atomic formula uses the same Atom constructor as all adjacent entailments.',
+  'OLTEMODINT-009':'Please double-check that both recursive sequences explicitly remain unchanged whenever their respective addition condition fails.'
 };
 const correctionRecords=corrections.map(c=>{
  const segment=ledger.find(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));
@@ -319,13 +341,13 @@ fs.writeFileSync(path.join(dataDir,'EXPERT_REVIEW_LOG.jsonl'),jsonText);
 const machine={schema:'openlogic-te-expert-review-index/2',status:'partial_no_holds',scope_completion:completion,language:'Telugu',script:'Telu',locale:'te-Telu-IN',counts:{records:records.length,terminology:termRecords.length,source_corrections:correctionRecords.length,implementation_occurrences:records.reduce((n,r)=>n+r.implementation_locations.length,0)},pagination_note:'Final printed/PDF page is deliberately null until the cited source unit is integrated into the coherent reader and final pagination is available. Source and target file/line locators are authoritative meanwhile.',records};
 const machineText=JSON.stringify(machine,null,2)+'\n';
 fs.writeFileSync(path.join(dataDir,'EXPERT_REVIEW_LOG.json'),machineText);
-const md=['# Optional expert-review log','',`Status: **partial — 194 of 722 draft units**. This log contains ${termRecords.length} terminology/sense decisions and ${correctionRecords.length} source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.`,'','Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.','',`“Attested” means only that the specifically listed native page was actually inspected for the stated scope. It does not mean a human expert endorsed the final edition. The terminology rationales below were reconstructed retrospectively from primary records and exact current files; source-correction entries come from the contemporaneous audit.`,'','Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPERT_REVIEW_LOG.json`, and line-oriented `EXPERT_REVIEW_LOG.jsonl`.',''];
+const md=['# Optional expert-review log','',`Status: **partial — 199 of 722 draft units**. This log contains ${termRecords.length} terminology/sense decisions and ${correctionRecords.length} source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.`,'','Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.','',`“Attested” means only that the specifically listed native page was actually inspected for the stated scope. It does not mean a human expert endorsed the final edition. The terminology rationales below were reconstructed retrospectively from primary records and exact current files; source-correction entries come from the contemporaneous audit.`,'','Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPERT_REVIEW_LOG.json`, and line-oriented `EXPERT_REVIEW_LOG.jsonl`.',''];
 for(const r of records){
  md.push(`## ${r.review_id} — ${r.source_term??r.finding_id}`,'',`- Status: ${r.expert_review_status}`,'',`- Locale/script: ${r.locale} / ${r.script}`,'',`- Confidence/priority: ${r.confidence} / ${r.review_priority}`,'',`- Chosen wording/treatment: ${r.chosen_wording??r.rationale}`,'',`- Exact implementation: ${r.implementation_locations.map(x=>`${x.unit_id}; ${x.section_path}; ${x.source_locator} ↔ ${x.target_locator} (${x.segment_id}); printed/PDF page ${x.final_printed_page??'pending'}`).join('; ')}`,'',`- Authorities actually checked: ${r.actual_authorities_checked.map(x=>x.passage_id?`${x.passage_id}, PDF ${x.pdf_page}, printed ${x.printed_page}, ${x.region}`:`${x.audit_id??x.source_revision}`).join('; ')}`,'',`- Not checked/not found: ${r.not_checked_or_not_found.join(' ')}`,'',`- Rationale: ${r.rationale}`,'',`- Alternatives: ${r.alternatives_considered_or_recorded.join('; ')}`,'',`- Uncertainty: ${r.uncertainty}`,'',`- Please double-check: ${r.precise_review_questions.join(' ')}`,'');
 }
 fs.writeFileSync(path.join(dataDir,'EXPERT_REVIEW_LOG.md'),md.join('\n').trimEnd()+'\n');
 const priorityRecords=records.filter(r=>r.review_priority==='high'||r.review_priority==='medium');
-const priorityMd=['# Priority optional expert-review view','',`Scope: **partial — 194 of 722 draft units**. This view selects ${priorityRecords.length} of ${records.length} open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.`,'','Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.',''];
+const priorityMd=['# Priority optional expert-review view','',`Scope: **partial — 199 of 722 draft units**. This view selects ${priorityRecords.length} of ${records.length} open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.`,'','Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.',''];
 for(const r of priorityRecords)priorityMd.push(`## ${r.review_id} — ${r.source_term??r.finding_id}`,'',`- Priority/confidence: ${r.review_priority} / ${r.confidence}`,'',`- Chosen wording/treatment: ${r.chosen_wording??r.rationale}`,'',`- Occurrences: ${r.implementation_locations.map(x=>`${x.unit_id}; ${x.section_path}; ${x.target_locator}; printed/PDF page ${x.final_printed_page??'pending'}`).join('; ')}`,'',`- Please double-check: ${r.precise_review_questions.join(' ')}`,'');
 fs.writeFileSync(path.join(dataDir,'EXPERT_REVIEW_PRIORITY.md'),priorityMd.join('\n').trimEnd()+'\n');
 const headers=['review_id','record_type','review_priority','confidence','source_term_or_finding','chosen_rendering_or_treatment','language','script','locale','unit_id','section_path','source_file','target_file','source_locator','target_locator','segment_id','final_printed_page','pagination_status','expert_review_status','please_double_check'];

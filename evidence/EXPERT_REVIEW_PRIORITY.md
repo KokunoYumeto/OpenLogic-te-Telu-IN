@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 194 of 722 draft units**. This view selects 168 of 193 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 199 of 722 draft units**. This view selects 178 of 204 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -353,6 +353,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0196; model-theory/models-of-arithmetic/models-of-pa; translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:64-77; printed/PDF page pending; OLP-0196; model-theory/models-of-arithmetic/models-of-pa; translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:111-123; printed/PDF page pending
 
 - Please double-check: Please double-check whether “ఉత్తరాధికారి / పూర్వాధికారి / అంకగణిత ఖండం / వివిక్త క్రమం / అప్రామాణిక ఖండాల క్రమం” is idiomatic and technically standard for “successor / predecessor / arithmetic block / discrete order / order of non-standard blocks” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T061 — interpolation theorem / interpolant / separation / inseparable / maximally inseparable pair / joint consistency theorem
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: అంతర్వేశ సిద్ధాంతం / అంతర్వేశకం (ఇంటర్‌పోలంట్) / వేరుపరచడం / వేరుపరచలేని / గరిష్ఠంగా వేరుపరచలేని జత / ఉమ్మడి అవైరుధ్య సిద్ధాంతం
+
+- Occurrences: OLP-0199; model-theory/interpolation/introduction; translation/content/model-theory/interpolation/introduction.tex:13-20; printed/PDF page pending; OLP-0199; model-theory/interpolation/introduction; translation/content/model-theory/interpolation/introduction.tex:22-27; printed/PDF page pending; OLP-0200; model-theory/interpolation/separation; translation/content/model-theory/interpolation/separation.tex:25-30; printed/PDF page pending; OLP-0201; model-theory/interpolation/interpolation-proof; translation/content/model-theory/interpolation/interpolation-proof.tex:42-122; printed/PDF page pending
+
+- Please double-check: Please double-check whether “అంతర్వేశ సిద్ధాంతం / అంతర్వేశకం (ఇంటర్‌పోలంట్) / వేరుపరచడం / వేరుపరచలేని / గరిష్ఠంగా వేరుపరచలేని జత / ఉమ్మడి అవైరుధ్య సిద్ధాంతం” is idiomatic and technically standard for “interpolation theorem / interpolant / separation / inseparable / maximally inseparable pair / joint consistency theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -1683,3 +1693,93 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0197; model-theory/models-of-arithmetic/computable-models; translation/content/model-theory/models-of-arithmetic/computable-models.tex:46-91; printed/PDF page pending
 
 - Please double-check: Please double-check that g(n)=n-1 for n>0 is bijective onto N union {a} and yields the displayed transported operations.
+
+## REV-OLTEMODINT-001 — OLTEMODINT-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored H, the conjunction defined immediately before, in place of undefined delta; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0200; model-theory/interpolation/separation; translation/content/model-theory/interpolation/separation.tex:74-94; printed/PDF page pending
+
+- Please double-check: Please double-check that the first separation proof restores H, the conjunction defined immediately above, rather than retaining the undefined delta.
+
+## REV-OLTEMODINT-002 — OLTEMODINT-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: placed S in the existential macro's standard optional argument; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0200; model-theory/interpolation/separation; translation/content/model-theory/interpolation/separation.tex:104-114; printed/PDF page pending
+
+- Please double-check: Please double-check that the existential macro places S in the same optional formula argument used by every adjacent occurrence.
+
+## REV-OLTEMODINT-003 — OLTEMODINT-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: enumerated all sentences of the expanded languages required by the later maximality argument; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0201; model-theory/interpolation/interpolation-proof; translation/content/model-theory/interpolation/interpolation-proof.tex:41-54; printed/PDF page pending
+
+- Please double-check: Please double-check that the maximal-pair construction enumerates sentences of the expanded languages L-prime-1 and L-prime-2.
+
+## REV-OLTEMODINT-004 — OLTEMODINT-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: retained the shared Henkin constants when evaluating the expanded theories, then took the intended original-language reduct; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0201; model-theory/interpolation/interpolation-proof; translation/content/model-theory/interpolation/interpolation-proof.tex:196-231; printed/PDF page pending
+
+- Please double-check: Please double-check that the amalgamated model retains the shared new-constant interpretations while Gamma-star and Delta-star are evaluated, before taking the original-language reduct.
+
+## REV-OLTEMODINT-005 — OLTEMODINT-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: transported P's M'_1 interpretation along h rather than invoking the nonexistent M'_2 interpretation; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0201; model-theory/interpolation/interpolation-proof; translation/content/model-theory/interpolation/interpolation-proof.tex:204-215; printed/PDF page pending
+
+- Please double-check: Please double-check that a predicate exclusive to L1 is transported from its M-prime-1 interpretation, which agrees with the following tuplewise clause.
+
+## REV-OLTEMODINT-006 — OLTEMODINT-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: qualified the formula induction by transporting variable assignments along the established isomorphism; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0201; model-theory/interpolation/interpolation-proof; translation/content/model-theory/interpolation/interpolation-proof.tex:232-247; printed/PDF page pending
+
+- Please double-check: Please double-check that formula satisfaction across the two domains is compared only after variable assignments are transported along h.
+
+## REV-OLTEMODINT-007 — OLTEMODINT-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored the full if-and-only-if statement proved by the two directions; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0202; model-theory/interpolation/definability; translation/content/model-theory/interpolation/definability.tex:72-81; printed/PDF page pending
+
+- Please double-check: Please double-check that the Beth theorem is stated as the biconditional proved by its explicit-to-implicit and implicit-to-explicit directions.
+
+## REV-OLTEMODINT-008 — OLTEMODINT-008
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored the same Atom(P') constructor used in the adjacent entailments; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0202; model-theory/interpolation/definability; translation/content/model-theory/interpolation/definability.tex:104-115; printed/PDF page pending
+
+- Please double-check: Please double-check that the P-prime atomic formula uses the same Atom constructor as all adjacent entailments.
+
+## REV-OLTEMODINT-009 — OLTEMODINT-009
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: supplied the two omitted no-addition stabilization clauses required by the immediately following induction; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0201; model-theory/interpolation/interpolation-proof; translation/content/model-theory/interpolation/interpolation-proof.tex:41-81; printed/PDF page pending
+
+- Please double-check: Please double-check that both recursive sequences explicitly remain unchanged whenever their respective addition condition fails.
