@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 187 of 722 draft units**. This view selects 152 of 175 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 194 of 722 draft units**. This view selects 168 of 193 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -343,6 +343,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0186; model-theory/basics/overspill; translation/content/model-theory/basics/overspill.tex:9-10; printed/PDF page pending; OLP-0189; model-theory/basics/partial-iso; translation/content/model-theory/basics/partial-iso.tex:120-129; printed/PDF page pending; OLP-0190; model-theory/basics/dlo; translation/content/model-theory/basics/dlo.tex:12-27; printed/PDF page pending
 
 - Please double-check: Please double-check whether “అధిప్రసరణ (ఓవర్‌స్పిల్) / పరిమాణక ర్యాంకు / n-తుల్యత / అనుసంధానం / అంత్యబిందువులు లేని సాంద్ర రేఖీయ క్రమం” is idiomatic and technically standard for “overspill / quantifier rank / n-equivalence / concatenation / dense linear order without endpoints” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T059 — successor / predecessor / arithmetic block / discrete order / order of non-standard blocks
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: ఉత్తరాధికారి / పూర్వాధికారి / అంకగణిత ఖండం / వివిక్త క్రమం / అప్రామాణిక ఖండాల క్రమం
+
+- Occurrences: OLP-0196; model-theory/models-of-arithmetic/models-of-pa; translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:64-77; printed/PDF page pending; OLP-0196; model-theory/models-of-arithmetic/models-of-pa; translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:111-123; printed/PDF page pending
+
+- Please double-check: Please double-check whether “ఉత్తరాధికారి / పూర్వాధికారి / అంకగణిత ఖండం / వివిక్త క్రమం / అప్రామాణిక ఖండాల క్రమం” is idiomatic and technically standard for “successor / predecessor / arithmetic block / discrete order / order of non-standard blocks” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -1523,3 +1533,153 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0187; model-theory/basics/isomorphism; translation/content/model-theory/basics/isomorphism.tex:137-144; printed/PDF page pending
 
 - Please double-check: Please double-check that the automorphism exercise is limited to parameter-free definability, so invariance under every automorphism is valid.
+
+## REV-OLTEMODARI-001 — OLTEMODARI-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used a^n and a^m as the two operation arguments so they belong to the declared string domain; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0192; model-theory/models-of-arithmetic/introduction; translation/content/model-theory/models-of-arithmetic/introduction.tex:12-51; printed/PDF page pending
+
+- Please double-check: Please double-check that the two operation arguments are strings a^n and a^m, while the displayed results remain a^(n+m) and a^(nm).
+
+## REV-OLTEMODARI-002 — OLTEMODARI-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: added the length-order interpretation needed to complete the L_A structure and make the stated isomorphism true; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0192; model-theory/models-of-arithmetic/introduction; translation/content/model-theory/models-of-arithmetic/introduction.tex:12-51; printed/PDF page pending
+
+- Please double-check: Please double-check that the added order on strings compares their exponents and completes exactly the claimed arithmetic-language structure.
+
+## REV-OLTEMODARI-003 — OLTEMODARI-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored x as the first argument of the binary proof predicate; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0192; model-theory/models-of-arithmetic/introduction; translation/content/model-theory/models-of-arithmetic/introduction.tex:68-89; printed/PDF page pending
+
+- Please double-check: Please double-check that x is restored as the first argument of the binary PA proof predicate in the existential witness formula.
+
+## REV-OLTEMODARI-004 — OLTEMODARI-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used range rather than domain in the surjectivity argument; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0193; model-theory/models-of-arithmetic/standard-models; translation/content/model-theory/models-of-arithmetic/standard-models.tex:162-191; printed/PDF page pending
+
+- Please double-check: Please double-check that failure of surjectivity is described as omission from the range, not the already total function domain.
+
+## REV-OLTEMODARI-005 — OLTEMODARI-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: evaluated c in the expanded structure M^c rather than its reduct M; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0194; model-theory/models-of-arithmetic/non-standard-models; translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:92-112; printed/PDF page pending
+
+- Please double-check: Please double-check that the new constant c is evaluated in the expanded structure M^c rather than the reduct M.
+
+## REV-OLTEMODARI-006 — OLTEMODARI-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: handled a finite subset with no c inequality before choosing a largest constrained numeral; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0194; model-theory/models-of-arithmetic/non-standard-models; translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:114-143; printed/PDF page pending
+
+- Please double-check: Please double-check that the finite-subset proof handles the case with no c-inequality before choosing a largest constrained numeral.
+
+## REV-OLTEMODARI-007 — OLTEMODARI-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: applied Downward Lowenheim--Skolem after compactness to obtain the asserted countable model; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0194; model-theory/models-of-arithmetic/non-standard-models; translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:114-143; printed/PDF page pending
+
+- Please double-check: Please double-check that Downward Löwenheim--Skolem is invoked after compactness to obtain the proposition’s countable model.
+
+## REV-OLTEMODARI-008 — OLTEMODARI-008
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used y=a, the only non-standard element of K, rather than nonexistent b; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0195; model-theory/models-of-arithmetic/models-of-q; translation/content/model-theory/models-of-arithmetic/models-of-q.tex:97-122; printed/PDF page pending
+
+- Please double-check: Please double-check that the last non-standard K case is y=a, since the domain contains no b.
+
+## REV-OLTEMODARI-009 — OLTEMODARI-009
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: replaced the stray y by the branch's fixed second argument a; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0195; model-theory/models-of-arithmetic/models-of-q; translation/content/model-theory/models-of-arithmetic/models-of-q.tex:146-196; printed/PDF page pending
+
+- Please double-check: Please double-check that the b-plus-a calculation ends with (b plus a)^succ rather than the source’s free y.
+
+## REV-OLTEMODARI-010 — OLTEMODARI-010
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restricted the unique-predecessor claim to x unequal to zero; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0196; model-theory/models-of-arithmetic/models-of-pa; translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:64-77; printed/PDF page pending
+
+- Please double-check: Please double-check that the unique-predecessor assertion is restricted exactly to nonzero elements.
+
+## REV-OLTEMODARI-011 — OLTEMODARI-011
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: replaced three unrelated opulus symbols by the defined model-addition nsplus; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0196; model-theory/models-of-arithmetic/models-of-pa; translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:241-251; printed/PDF page pending
+
+- Please double-check: Please double-check that all three averages use the chapter’s defined model-addition symbol nsplus rather than the unrelated opulus.
+
+## REV-OLTEMODARI-012 — OLTEMODARI-012
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: made denumerability conditional on the model being countable while retaining density and endpointlessness generally; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0196; model-theory/models-of-arithmetic/models-of-pa; translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:261-293; printed/PDF page pending
+
+- Please double-check: Please double-check that density and endpointlessness remain general while denumerability is conditional on a countable model.
+
+## REV-OLTEMODARI-013 — OLTEMODARI-013
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: constrained x, the ordered pair's first component, rather than unrelated n; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0197; model-theory/models-of-arithmetic/computable-models; translation/content/model-theory/models-of-arithmetic/computable-models.tex:46-91; printed/PDF page pending
+
+- Please double-check: Please double-check that the final set builder constrains x, the ordered pair’s first component, rather than unrelated n.
+
+## REV-OLTEMODARI-014 — OLTEMODARI-014
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: stated that every computable PA model is standard and hence isomorphic to N; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0197; model-theory/models-of-arithmetic/computable-models; translation/content/model-theory/models-of-arithmetic/computable-models.tex:135-144; printed/PDF page pending
+
+- Please double-check: Please double-check that Tennenbaum’s theorem rules out computable non-standard PA models and states uniqueness only up to isomorphism.
+
+## REV-OLTEMODARI-015 — OLTEMODARI-015
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used g(n)=n-1 for n>0, the bijection that yields the displayed transported operations; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0197; model-theory/models-of-arithmetic/computable-models; translation/content/model-theory/models-of-arithmetic/computable-models.tex:46-91; printed/PDF page pending
+
+- Please double-check: Please double-check that g(n)=n-1 for n>0 is bijective onto N union {a} and yields the displayed transported operations.

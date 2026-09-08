@@ -1,0 +1,293 @@
+% Part: first-order-logic
+% Chapter: models-of-arithmetic
+% Section: models-of-pa
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{mar}{mpa}
+\section{$\Th{PA}$ నమూనాలు}
+
+\begin{explain}
+$\Th{TA}$ యొక్క ప్రతి అప్రామాణిక నమూనా $\Th{PA}$కు కూడా అప్రామాణిక
+నమూనా. $\Th{TA}$కు, అందువల్ల $\Th{PA}$కు, అప్రామాణిక నమూనాలు
+ఉన్నాయని మనకు తెలుసు. అలాంటి అప్రామాణిక నమూనాల్లో అప్రామాణిక
+“సంఖ్యలు,” అంటే ప్రామాణిక “సంఖ్యలన్నింటికీ ఆవల” ఉండే వ్యక్తి
+క్షేత్ర \tetoken{మూలకాలు}{!!{element}s}, ఉంటాయని కూడా తెలుసు.
+కానీ అవి ఎలా అమర్చబడి ఉంటాయి? ఎన్ని ఉంటాయి? బలహీనమైన
+$\Th{Q}$ నమూనాలో ఒక్క అప్రామాణిక సంఖ్య మాత్రమే ఉండవచ్చని చూశాం.
+అయితే ఆ సరళ \tetoken{నిర్మాణాలు}{!!{structure}s}, $\Th{PA}$కు గాని
+$\Th{TA}$కు గాని నమూనాలు కావు.
+\end{explain}
+
+$\Th{PA}$ లేదా $\Th{TA}$ నమూనాల నిర్మాణాన్ని అర్థం చేసుకోవడంలో
+ముఖ్యమైనది, ఈ సిద్ధాంతాల్లో ఏ వాస్తవాలు
+\tetoken{వ్యుత్పాదించదగినవో}{!!{derivable}} చూడడం. ఉదాహరణకు,
+$\Th{PA}$ ఇప్పటికే $\lforall[x][\eq/[x][x']]$ను,
+$\lforall[x][\lforall[y][\eq[(x+y)][(y+x)]]]$ను నిరూపిస్తుంది;
+అందువల్ల ఈ \tetoken{వాక్యాలు}{!!{sentence}s} అసత్యమయ్యే సరళ
+నిర్మాణాలు $\Th{PA}$ నమూనాలు కావు.
+
+$\Struct{M}$, $\Th{PA}$కు నమూనా అనుకుందాం. అప్పుడు
+$\Th{PA}\Proves !A$ అయితే $\Sat{M}{!A}$. మళ్లీ
+$\Assign{\Obj{0}}{M}$కు $\nszero$, $\Assign{\prime}{M}$కు
+$\nssucc$, $\Assign{+}{M}$కు $\nsplus$,
+$\Assign{\times}{M}$కు $\nstimes$, $\Assign{<}{M}$కు
+$\nsless$ వాడదాం. ప్రతి \tetoken{వాక్యం}{!!{sentence}}~$!A$,
+$\nszero$, $\nssucc$, $\nsplus$, $\nstimes$, $\nsless$ల గురించి
+ఏదో షరతును ప్రకటిస్తుంది; $\Sat{M}{!A}$ అయితే ఆ షరతు తప్పక తీరాలి.
+ఉదాహరణకు $\Sat{M}{!Q_1}$, అంటే
+$\Sat{M}{\lforall[x][\lforall[y][(\eq[x'][y']\lif\eq[x][y])]]}$
+అయితే, $\nssucc$ తప్పక
+\tetoken{ఒకటి-ఒకటి}{!!{injective}} అయి ఉండాలి.
+
+\begin{prop}
+$\Struct{M}$లో $\nsless$ ఒక రేఖీయ కఠిన క్రమం; అంటే ఇది కింది
+షరతులను సంతృప్తిపరుస్తుంది:
+\begin{enumerate}
+\item ఏ $x\in\Domain{M}$కూ $x\nsless x$ కాదు.
+\item $x\nsless y$, $y\nsless z$ అయితే $x\nsless z$.
+\item ఏ $x\neq y$కైనా $x\nsless y$ లేదా $y\nsless x$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+$\Th{PA}$ వీటిని నిరూపిస్తుంది:
+\begin{enumerate}
+\item $\lforall[x][\lnot x < x]$
+\item $\lforall[x][\lforall[y][\lforall[z][((x < y \land y < z) \lif x < z)]]]$
+\item $\lforall[x][\lforall[y][((x < y \lor y < x) \lor \eq[x][y]))]]$
+\end{enumerate}
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:M-discrete} $\nszero$ అనేది $\nsless$-క్రమంలో
+$\Domain{M}$ యొక్క కనిష్ఠ \tetoken{మూలకం}{!!{element}}.
+ప్రతి $x$కూ $x\nsless x^\nssucc$; ఈ ధర్మం గల
+$\nsless$-కనిష్ఠ \tetoken{మూలకం}{!!{element}} $x^\nssucc$.
+$x\neq\nszero$ అయిన ప్రతి $x$కూ $y^\nssucc=x$ అయ్యే ఏకైక $y$
+ఉంటుంది. ($\Struct{M}$లో $y$ను $x$ యొక్క “పూర్వాధికారి” అని
+పిలిచి $^\nssucc x$గా సూచిస్తాం.)
+\sourcecorrection{OLTEMODARI-010}{$\nszero$కు పూర్వాధికారి ఉండదని
+అదే ప్రతిపాదన మొదటి వాక్యమూ, $\Th{Q}$ స్వీకృతాలూ చెబుతున్నప్పటికీ,
+ఆంగ్ల మూలం ప్రతి $x$కూ పూర్వాధికారి ఉందని అంటుంది. సరైన
+$x\neq\nszero$ పరిమితిని చేర్చాం; తరువాతి ఖండ వాదనను దాని
+అప్రామాణిక ఖండంలోని మూలకాలకే వర్తింపజేశాం.}
+\end{prop}
+
+\begin{proof}
+అభ్యాసం.
+\end{proof}
+
+\begin{prob}
+\olref[mod][mar][mpa]{prop:M-discrete}లోని $\nszero$, $\nssucc$,
+$\nsless$ ధర్మాలను నిర్ధారించే, $\Th{PA}$లో
+\tetoken{వ్యుత్పాదించదగిన}{!!{derivable}} (కాబట్టి $\Struct{N}$లో
+సత్యమైన) $\Lang{L_A}$ \tetoken{వాక్యాలను}{!!{sentence}s} కనుగొనండి.
+\end{prob}
+
+\begin{prop}
+$\Struct{M}$లోని ప్రతి ప్రామాణిక \tetoken{మూలకం}{!!{element}s},
+$\nsless$ ప్రకారం ప్రతి అప్రామాణిక
+\tetoken{మూలకం}{!!{element}s} కంటే చిన్నది.
+\end{prop}
+
+\begin{proof}
+$\Struct{M}$లోని ప్రామాణిక \tetoken{మూలకం}{!!{element}}~
+$\Value{\num{n}}{M}$కు సంక్షిప్తంగా $n$ను వాడతాం. ప్రతి
+$n\in\Nat$కూ
+$\Th{Q}$ ఈ సూత్రాన్ని నిరూపిస్తుంది:
+$\lforall[x][(x<\num{n}'\lif
+(\eq[x][\num{0}]\lor\eq[x][\num{1}]\lor\dots\lor
+\eq[x][\num{n}]))]$. $\nsless\nszero$ అయ్యే
+\tetoken{మూలకాలు}{!!{element}s} లేవు. కాబట్టి $n$ ప్రామాణికం,
+$x$ అప్రామాణికం అయితే $x\nsless n$ కాలేదు. నిర్వచనం ప్రకారం,
+అప్రామాణిక మూలకం ఏ $n\in\Nat$కూ $\Value{\num{n}}{M}$ కానిది;
+అందువల్ల $x\neq n$ కూడా. $\nsless$ రేఖీయ క్రమం కాబట్టి
+$n\nsless x$ కావాలి.
+\end{proof}
+
+\begin{prop}
+$\Domain{M}$లోని ప్రతి అప్రామాణిక
+\tetoken{మూలకం}{!!{element}}~$x$, ఈ ఉపసమితిలో ఒక మూలకం:
+\[
+\dots ^{\nssucc\nssucc\nssucc}x \nsless ^{\nssucc\nssucc}x \nsless
+^{\nssucc}x \nsless x \nsless x^{\nssucc} \nsless x^{\nssucc\nssucc}
+\nsless x^{\nssucc\nssucc\nssucc} \nsless \dots
+\]
+ఈ ఉపసమితిని $x$ యొక్క \emph{ఖండం} అని పిలిచి $[x]$గా రాస్తాం.
+దీనికి కనిష్ఠ లేదా గరిష్ఠ \tetoken{మూలకం}{!!{element}} లేదు.
+ఏదో ప్రామాణిక $n$కు $x\nsplus n=y$ లేదా $y\nsplus n=x$ అయ్యే
+$y\in\Domain{M}$ల సమితిగా దీన్ని వర్ణించవచ్చు.
+\end{prop}
+
+\begin{proof}
+$\Domain{M}$లోని ప్రతి \tetoken{మూలకం}{!!{element}}~$y$కు ఏకైక
+ఉత్తరాధికారి $y^\nssucc$, ఏకైక పూర్వాధికారి $^\nssucc y$ ఉంటాయి
+కాబట్టి అలాంటి $[x]$ ఎల్లప్పుడూ ఉంటుందని స్పష్టమే. వరుస
+\tetoken{మూలకాలు}{!!{element}s} $y$, $y^\nssucc$లకు
+$y\nsless y^\nssucc$; అలాగే $y$ కంటే $\nsless$-పెద్ద
+$\Domain{M}$ \tetoken{మూలకాలలో}{!!{element}} $y^\nssucc$ $\nsless$-కనిష్ఠం.
+ఎల్లప్పుడూ $^\nssucc y\nsless y$, $y\nsless y^\nssucc$ కాబట్టి
+$[x]$కు కనిష్ఠ లేదా గరిష్ఠ \tetoken{మూలకం}{!!{element}} లేదు.
+$y\in[x]$ అయితే $x\in[y]$; ఎందుకంటే అప్పుడు
+$y^{\nssucc\dots\nssucc}=x$ లేదా
+$x^{\nssucc\dots\nssucc}=y$. మొదటిది $n$ సార్లు $\nssucc$తో
+$y^{\nssucc\dots\nssucc}=x$ అయితే, $y\nsplus n=x$; విపర్యయమూ
+నిజమే. ఎందుకంటే $n$ అనేది $\prime$ల సంఖ్య అయితే
+$\Th{PA}\Proves\lforall[x][\eq[x^{\prime\dots\prime}][(x+\num{n})]]$.
+\end{proof}
+
+\begin{prop}
+$[x]\neq[y]$, $x\nsless y$ అయితే, ప్రతి $u\in[x]$కూ ప్రతి
+$v\in[y]$కూ $u\nsless v$.
+\end{prop}
+
+\begin{proof}
+$\Th{PA}\Proves\lforall[x][\lforall[y][(x<y\lif
+(x'<y\lor x'=y))]]$ అని గమనించండి. కాబట్టి $u\nsless v$,
+$[u]\neq[v]$ అయితే ఏ $n$కైనా $u\nsplus n^\nssucc\nsless v$.
+
+ప్రతి $u\in[x]$కు, అది $\nsless y$: పరికల్పన వల్ల $x\nsless y$.
+$u\nsless x$ అయితే సంక్రమణ ధర్మం వల్ల $u\nsless y$. $x\nsless u$,
+$u\in[x]$ అయితే ఏదో $n$కు $u=x\nsplus n^\nssucc$; అప్పుడూ ఇప్పుడే
+నిరూపించిన వాస్తవం వల్ల $u\nsless y$.
+
+ఇప్పుడు $v\in[y]$ తీసుకొని, అది $\nsless y$ అనుకుందాం; అంటే ఏదో ప్రామాణిక
+$m$కు $v\nsplus m^\nssucc=y$. $v\nsless x$ అయితే
+$y=v\nsplus m^\nssucc\nsless x$ అవుతుంది కాబట్టి అది అసంభవం.
+$x\neq v$ అని కూడా స్పష్టమే; లేకపోతే
+$x\nsplus m^\nssucc=v\nsplus m^\nssucc=y$, అందువల్ల
+$[x]=[y]$ అవుతుంది. కనుక $x\nsless v$. అయితే ప్రతి $n$కూ
+$x\nsplus n^\nssucc\nsless v$ కూడా. అందువల్ల $x\nsless u$,
+$u\in[x]$ అయితే $u\nsless v$. $u\nsless x$ అయితే సంక్రమణ ధర్మం
+వల్ల $u\nsless v$.
+
+చివరగా $y\nsless v$ అయితే, మనం చూపిన $u\nsless y$, $y\nsless v$తో సంక్రమణ
+ధర్మం వల్ల $u\nsless v$.
+\end{proof}
+
+\begin{cor}
+$[x]\neq[y]$ అయితే $[x]\cap[y]=\emptyset$.
+\end{cor}
+
+\begin{proof}
+$z\in[x]$, $x\nsless y$ అనుకుందాం. అప్పుడు ప్రతి $u\in[y]$కూ
+$z\nsless u$. $z\in[y]$ కూడా అయితే $z\nsless z$ వస్తుంది.
+$y\nsless x$ అయినప్పుడూ ఇదే విధంగా.
+\end{proof}
+
+\begin{explain}
+దీని అర్థం $\nsless$ను గౌరవించే విధంగా ఖండాలనే క్రమబద్ధం
+చేయవచ్చు: $[x]\nsless[y]$ అవడం సరిగ్గా $x\nsless y$ అయినప్పుడే;
+సమానార్థకంగా, ప్రతి $u\in[x]$కూ $v\in[y]$కూ $u\nsless v$
+అయినప్పుడే. ప్రామాణిక ఖండం $[0]$ కనిష్ఠ ఖండమని స్పష్టమే. అది ఏ
+అప్రామాణిక ఖండంతోనూ ఛేదించదు; ఏ రెండు అప్రామాణిక ఖండాలూ ఛేదించవు.
+ముఖ్యంగా, ఉత్తరాధికారులు లేదా పూర్వాధికారులను పదేపదే తీసుకోవడం ద్వారా
+వేరొక ఖండాన్ని “చేరుకోలేం.”
+\end{explain}
+
+\begin{prop}
+$x$ మరియు $y$ అప్రామాణికాలైతే $x\nsless x\nsplus y$ మరియు
+$x\nsplus y\notin[x]$.
+\end{prop}
+
+\begin{proof}
+$y$ అప్రామాణికమైతే $y\neq\nszero$.
+$\Th{PA}\Proves\lforall[x][(y\neq\Obj{0}\lif x<(x+y))]$.
+ఇప్పుడు $x\nsplus y\in[x]$ అనుకుందాం. $x\nsless x\nsplus y$
+కాబట్టి $x\nsplus n^\nssucc=x\nsplus y$ అయ్యేది. కానీ
+$\Th{PA}\Proves\lforall[x][\lforall[y][\lforall[z][(
+\eq[(x+y)][(x+z)]\lif y=z)]]]$ (సంకలన రద్దు నియమం). దీని వల్ల
+ఏదో ప్రామాణిక $n$కు $y=n^\nssucc$ అవుతుంది; కానీ $y$ అప్రామాణికమని
+అనుకున్నాం.
+\end{proof}
+
+\begin{prop}
+కనిష్ఠ అప్రామాణిక ఖండం లేదు.
+\end{prop}
+
+\begin{proof}
+$\Th{PA}\Proves\lforall[x][\lexists[y][(\eq[(y+y)][x]\lor
+\eq[(y+y)'][x])]]$; అంటే ప్రతి $x$ను $2$తో భాగించవచ్చు
+(బహుశా శేషం $1$తో). $x$ అప్రామాణికమైతే $y$ కూడా అప్రామాణికమే.
+ముందరి ప్రతిపాదన వల్ల $y\nsless y\nsplus y$,
+$y\nsplus y\notin[y]$. అలాగే
+$y\nsless(y\nsplus y)^\nssucc$,
+$(y\nsplus y)^\nssucc\notin[y]$. కానీ
+$x=y\nsplus y$ లేదా $x=(y\nsplus y)^\nssucc$; కనుక
+$y\nsless x$ మరియు $y\notin[x]$.
+\end{proof}
+
+\begin{prop}
+గరిష్ఠ ఖండం లేదు.
+\end{prop}
+
+\begin{proof}
+అభ్యాసం.
+\end{proof}
+
+\begin{prob}
+$\Th{PA}$ యొక్క అప్రామాణిక నమూనాలో గరిష్ఠ ఖండం లేదని చూపండి.
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:blocks-dense}
+ఖండాల క్రమం సాంద్రం. అంటే $x\nsless y$, $[x]\neq[y]$ అయితే,
+వాటికి రెండింటికీ భిన్నంగా వాటి మధ్య ఉండే ఒక ఖండం $[z]$ ఉంది.
+\end{prop}
+
+\begin{proof}
+$x\nsless y$ అనుకుందాం. మునుపటిలాగే $x\nsplus y$ను రెండుతో
+భాగించవచ్చు (బహుశా శేషంతో): $x\nsplus y=z\nsplus z$ లేదా
+$x\nsplus y=(z\nsplus z)^\nssucc$ అయ్యే
+$z\in\Domain{M}$ ఉంది. $z$ అనేది $x$ మరియు $y$ల “సగటు”; అందువల్ల
+$x\nsless z$, $z\nsless y$.
+\sourcecorrection{OLTEMODARI-011}{ఈ నిరూపణలో ఆంగ్ల మూలం ముందంతా
+నిర్వచించి వాడిన $\nsplus$ స్థానంలో మూడు సార్లు సంబంధం లేని
+$\oplus$ను వాడుతుంది. అదే నమూనా సంకలన క్రియను సూచించే
+$\nsplus$ను పునఃస్థాపించాం.}
+\end{proof}
+
+\begin{prob}
+\olref[mod][mar][mpa]{prop:blocks-dense}కు విపుల నిరూపణ రాయండి.
+$z$ ఉనికిని నిర్ధారించడానికి $\Th{PA}$ ఏ
+\tetoken{వాక్యాన్ని}{!!{sentence}}
+\tetoken{నిగమించాలి}{!!{derive}}? $x\nsless z$,
+$z\nsless y$ ఎందుకు? అలాగే $[x]\neq[z]$, $[z]\neq[y]$ ఎందుకు?
+\end{prob}
+
+\begin{explain}
+అందువల్ల అప్రామాణిక ఖండాలు అంత్యబిందువులు లేని సాంద్ర రేఖీయ క్రమాన్ని
+ఏర్పరుస్తాయి. నమూనా లెక్కించదగినదైతే, ఈ ఖండ క్రమం కూడా
+\tetoken{అనంతంగా లెక్కించదగిన}{!!a{denumerable}}ది; అందువల్ల అది
+పరిమేయ సంఖ్యల క్రమంలా ఉంటుంది.
+\sourcecorrection{OLTEMODARI-012}{ఆంగ్ల మూలం ఏ $\Th{PA}$ నమూనాకైనా
+అప్రామాణిక ఖండాలు అనంతంగా లెక్కించదగినవని అంటుంది; కానీ
+లెక్కించలేని నమూనాల్లో ఖండాల సమితి కూడా లెక్కించలేనిది కావచ్చు.
+తర్వాతి వాక్యం స్వయంగా లెక్కించదగిన నమూనాలకే ఫలితాన్ని
+వర్తింపజేస్తుంది. కాబట్టి లెక్కించదగినతనాన్ని ఆ సందర్భపు
+పరికల్పనగా స్పష్టంచేశాం.}
+అలాంటి ఏ రెండు
+\tetoken{అనంతంగా లెక్కించదగిన}{!!{denumerable}} క్రమాలైనా సమరూపాలని
+చూపవచ్చు. అందువల్ల నిజ అంకగణితపు ఏ రెండు
+\tetoken{లెక్కించదగిన}{!!{enumerable}} అప్రామాణిక నమూనాలు
+$\Struct{M}_1$, $\Struct{M_2}$ తీసుకున్నా, $<$, $=$ మాత్రమే గల భాషకు
+వాటి సంకుచిత రూపాలు సమరూపాలు. నిజానికి $h$ అనే సమరూపతను ఇలా
+నిర్వచించవచ్చు: $\Struct{M_1}$, $\Struct{M_2}$ల ప్రామాణిక భాగాలు
+ప్రామాణిక నమూనా $\Struct{N}$తో, అందువల్ల పరస్పరం, సమరూపాలు.
+అప్రామాణిక భాగాన్ని ఏర్పరచే ఖండాలు స్వయంగా పరిమేయ సంఖ్యల్లా
+క్రమబద్ధమై ఉంటాయి; కాబట్టి అవి సమరూపాలు. ప్రతి జత ఖండాల్లో
+యాదృచ్ఛిక మూలకాలను సరిపోల్చి, తరువాత $\Struct{M_1}$లోని $x$
+ఉత్తరాధికారి ప్రతిబింబాన్ని $\Struct{M_2}$లోని $x$ ప్రతిబింబం
+ఉత్తరాధికారిగా తీసుకోవడం ద్వారా ఖండాల సమరూపతను ఖండాల
+\emph{లోపలికి} విస్తరించవచ్చు. దీని నుంచి పూర్తి అంకగణిత భాషలో
+$\mathfrak{M}_1$, $\mathfrak{M}_2$ సమరూపాలని \emph{రాదు}
+(సమరూపత ఎల్లప్పుడూ ఒక \tetoken{భాషకు}{!!a{language}} సాపేక్షం);
+ఎందుకంటే $\Domain{M_1}$, $\Domain{M_2}$లపై సంకలనాన్ని, గుణకారాన్ని
+సమరూపం కాని విధాలుగా నిర్వచించవచ్చు. (సంపూర్ణ సిద్ధాంతపు లెక్కించదగిన
+నమూనాలు కేవలం రెండే ఉండలేవనే వోట్ ప్రసిద్ధ సిద్ధాంతం నుంచి కూడా ఇది
+వస్తుంది.)
+\end{explain}
+\end{document}

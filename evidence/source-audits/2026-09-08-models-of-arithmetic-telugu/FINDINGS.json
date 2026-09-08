@@ -1,0 +1,235 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTEMODARI-20260908",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0191",
+      "OLP-0192",
+      "OLP-0193",
+      "OLP-0194",
+      "OLP-0195",
+      "OLP-0196",
+      "OLP-0197"
+    ],
+    "finding_count": 15
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEMODARI-001",
+      "unit_id": "OLP-0192",
+      "classification": "confirmed_wrong_function_argument_sort",
+      "source": {
+        "path": "content/model-theory/models-of-arithmetic/introduction.tex",
+        "bytes": 3184,
+        "sha256": "b574af9c4ae632a5a5b121e4a404fd16d43fc60450162fe8b8bc9d0ca70ed9f6",
+        "locator": "lines 24-34, string-domain structure display"
+      },
+      "finding": "The domain is the string set {a}*, but the addition and multiplication interpretations take natural-number arguments n and m rather than strings.",
+      "controlling_evidence": "The intended isomorphism maps n to a^n, so the two function inputs must be a^n and a^m while the displayed outputs remain a^(n+m) and a^(nm).",
+      "required_translation_handling": "Use a^n and a^m as the displayed arguments and add an adjacent OLTEMODARI-001 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODARI-002",
+      "unit_id": "OLP-0192",
+      "classification": "confirmed_missing_order_interpretation",
+      "source": {
+        "path": "content/model-theory/models-of-arithmetic/introduction.tex",
+        "bytes": 3184,
+        "sha256": "b574af9c4ae632a5a5b121e4a404fd16d43fc60450162fe8b8bc9d0ca70ed9f6",
+        "locator": "lines 24-39, purported L_A structure and isomorphism claim"
+      },
+      "finding": "The source calls M an L_A-structure and says it is isomorphic to N but never interprets the predicate <.",
+      "controlling_evidence": "Interpreting a^n < a^m exactly when n<m completes the L_A-structure and makes the stated isomorphism true.",
+      "required_translation_handling": "Add only the length-order interpretation and an adjacent OLTEMODARI-002 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODARI-003",
+      "unit_id": "OLP-0192",
+      "classification": "confirmed_missing_proof_predicate_argument",
+      "source": {
+        "path": "content/model-theory/models-of-arithmetic/introduction.tex",
+        "bytes": 3184,
+        "sha256": "b574af9c4ae632a5a5b121e4a404fd16d43fc60450162fe8b8bc9d0ca70ed9f6",
+        "locator": "lines 65-70, non-standard witness for not-Con(PA)"
+      },
+      "finding": "After introducing x as the existential witness, the repeated proof predicate omits x and supplies only the contradiction code.",
+      "controlling_evidence": "The consistency formula immediately above uses the binary predicate Prf_PA(x, code(false)), and the prose calls x the Goedel number of a derivation.",
+      "required_translation_handling": "Restore x as the first proof-predicate argument and add an adjacent OLTEMODARI-003 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODARI-004",
+      "unit_id": "OLP-0193",
+      "classification": "confirmed_domain_range_word_swap",
+      "source": {
+        "path": "content/model-theory/models-of-arithmetic/standard-models.tex",
+        "bytes": 7853,
+        "sha256": "8042692c33d15f357d7099f1a247f5055734446d951eabc2d337a3ca19d629b8",
+        "locator": "lines 152-170, characterization of a suitable successor map"
+      },
+      "finding": "Failure of surjectivity is said to leave an element outside the domain of s, although s is already declared on all of M.",
+      "controlling_evidence": "Surjectivity concerns the range; the following existential predecessor sentence likewise asserts that every nonzero point is in that range.",
+      "required_translation_handling": "Use range in the Telugu reasoning and add an adjacent OLTEMODARI-004 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODARI-005",
+      "unit_id": "OLP-0194",
+      "classification": "confirmed_wrong_structure_on_new_constant",
+      "source": {
+        "path": "content/model-theory/models-of-arithmetic/non-standard-models.tex",
+        "bytes": 4664,
+        "sha256": "2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1",
+        "locator": "lines 83-98, expansion by the new constant c"
+      },
+      "finding": "The new constant c is evaluated as Assign(c,M), even though it exists only in the expanded structure M^c and is forgotten in M.",
+      "controlling_evidence": "The paragraph explicitly distinguishes the expanded model M^c from its L_A-reduct M.",
+      "required_translation_handling": "Evaluate c in M^c and add an adjacent OLTEMODARI-005 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODARI-006",
+      "unit_id": "OLP-0194",
+      "classification": "confirmed_missing_empty_constraint_case",
+      "source": {
+        "path": "content/model-theory/models-of-arithmetic/non-standard-models.tex",
+        "bytes": 4664,
+        "sha256": "2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1",
+        "locator": "lines 100-112, finite-satisfiability argument"
+      },
+      "finding": "The proof chooses the largest k with c not equal to numeral k in Gamma_0 without handling a finite subset containing no such constraint.",
+      "controlling_evidence": "If there is no c-constraint, any expansion of N suffices; assigning c the value 0 is a concrete witness.",
+      "required_translation_handling": "Add the no-constraint case before choosing k and add an adjacent OLTEMODARI-006 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODARI-007",
+      "unit_id": "OLP-0194",
+      "classification": "confirmed_missing_countability_argument",
+      "source": {
+        "path": "content/model-theory/models-of-arithmetic/non-standard-models.tex",
+        "bytes": 4664,
+        "sha256": "2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1",
+        "locator": "lines 78-113, proposition and proof conclusion"
+      },
+      "finding": "The proposition asserts an enumerable non-standard model, but the proof uses compactness only to obtain an unrestricted model.",
+      "controlling_evidence": "The expanded language is countable, so Downward Lowenheim--Skolem supplies a countable elementary submodel; the parallel frozen nonstandard-arithmetic section states this step explicitly.",
+      "required_translation_handling": "Add the Downward Lowenheim--Skolem countability step and an adjacent OLTEMODARI-007 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODARI-008",
+      "unit_id": "OLP-0195",
+      "classification": "confirmed_nonexistent_case_element",
+      "source": {
+        "path": "content/model-theory/models-of-arithmetic/models-of-q.tex",
+        "bytes": 7842,
+        "sha256": "09bdaf0730f142d22d7f8fcc6c3155cb76d851f550a90bd70b04b2de1a9855fc",
+        "locator": "lines 96-107, Q_5 case split for K"
+      },
+      "finding": "The final case split says y=b although K has domain N union {a} and contains no b.",
+      "controlling_evidence": "The displayed calculation immediately below uses y=a, which is the only non-standard case in K.",
+      "required_translation_handling": "Use y=a and add an adjacent OLTEMODARI-008 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODARI-009",
+      "unit_id": "OLP-0195",
+      "classification": "confirmed_free_variable_in_case_calculation",
+      "source": {
+        "path": "content/model-theory/models-of-arithmetic/models-of-q.tex",
+        "bytes": 7842,
+        "sha256": "09bdaf0730f142d22d7f8fcc6c3155cb76d851f550a90bd70b04b2de1a9855fc",
+        "locator": "lines 154-171, Q_5 case split for L"
+      },
+      "finding": "The b-plus-a case ends with (b plus y)^succ even though this branch fixes the second argument as a.",
+      "controlling_evidence": "The operation table gives b plus a=b and the equality chain therefore ends with (b plus a)^succ.",
+      "required_translation_handling": "Replace the stray y by a and add an adjacent OLTEMODARI-009 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODARI-010",
+      "unit_id": "OLP-0196",
+      "classification": "confirmed_missing_nonzero_predecessor_condition",
+      "source": {
+        "path": "content/model-theory/models-of-arithmetic/models-of-pa.tex",
+        "bytes": 10487,
+        "sha256": "1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4",
+        "locator": "lines 60-67, discrete-order proposition"
+      },
+      "finding": "The proposition claims every x has a predecessor, including zero, although zero is the least element and Q proves it is not a successor.",
+      "controlling_evidence": "The correct discrete arithmetic statement gives a unique predecessor exactly for x not equal to zero.",
+      "required_translation_handling": "Add the nonzero restriction and an adjacent OLTEMODARI-010 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODARI-011",
+      "unit_id": "OLP-0196",
+      "classification": "confirmed_undefined_addition_notation",
+      "source": {
+        "path": "content/model-theory/models-of-arithmetic/models-of-pa.tex",
+        "bytes": 10487,
+        "sha256": "1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4",
+        "locator": "lines 215-228, density-of-blocks proof"
+      },
+      "finding": "The proof switches three times from the chapter's defined model-addition notation nsplus to an unrelated opulus symbol.",
+      "controlling_evidence": "All preceding and following block calculations use nsplus for Assign(+,M), and the proposition concerns that same operation.",
+      "required_translation_handling": "Use nsplus in all three places and add an adjacent OLTEMODARI-011 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODARI-012",
+      "unit_id": "OLP-0196",
+      "classification": "confirmed_unrestricted_countability_claim",
+      "source": {
+        "path": "content/model-theory/models-of-arithmetic/models-of-pa.tex",
+        "bytes": 10487,
+        "sha256": "1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4",
+        "locator": "lines 238-258, order type of non-standard blocks"
+      },
+      "finding": "The source says the non-standard blocks form a denumerable order without assuming the model is countable.",
+      "controlling_evidence": "Uncountable models may have uncountably many blocks; the next sentence itself restricts the isomorphism conclusion to enumerable models.",
+      "required_translation_handling": "State density and endpointlessness generally, and denumerability only for a countable model; add an adjacent OLTEMODARI-012 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODARI-013",
+      "unit_id": "OLP-0197",
+      "classification": "confirmed_wrong_set_builder_variable",
+      "source": {
+        "path": "content/model-theory/models-of-arithmetic/computable-models.tex",
+        "bytes": 4636,
+        "sha256": "f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89",
+        "locator": "lines 42-67, repeated definition of K"
+      },
+      "finding": "The ordered-pair set builder uses pairs <x,a> but constrains an unrelated variable n to the domain.",
+      "controlling_evidence": "The earlier definition of K in OLP-0195 correctly constrains x in Domain(K).",
+      "required_translation_handling": "Replace n by x in the set-builder condition and add an adjacent OLTEMODARI-013 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODARI-014",
+      "unit_id": "OLP-0197",
+      "classification": "confirmed_literal_uniqueness_overstatement",
+      "source": {
+        "path": "content/model-theory/models-of-arithmetic/computable-models.tex",
+        "bytes": 4636,
+        "sha256": "f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89",
+        "locator": "lines 119-121, Tennenbaum theorem"
+      },
+      "finding": "The source says N is literally the only computable PA-model, but computable transports of N along nonidentity computable permutations give distinct computable copies on domain N.",
+      "controlling_evidence": "Tennenbaum's theorem rules out computable non-standard PA-models; equivalently, every computable PA-model is standard, i.e. isomorphic to N.",
+      "required_translation_handling": "State uniqueness up to isomorphism/every computable model is standard and add an adjacent OLTEMODARI-014 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODARI-015",
+      "unit_id": "OLP-0197",
+      "classification": "confirmed_nonbijective_transport_map",
+      "source": {
+        "path": "content/model-theory/models-of-arithmetic/computable-models.tex",
+        "bytes": 4636,
+        "sha256": "f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89",
+        "locator": "lines 68-98, transport of K to domain N"
+      },
+      "finding": "The claimed bijection g(0)=a and g(n)=n+1 for n>0 omits both 0 and 1 and contradicts the transported operation formulas below it.",
+      "controlling_evidence": "Using g(n)=n-1 for n>0 is a bijection N to N union {a}, sends 1 to K's zero, and yields exactly the printed x+y-1 and xy-x-y+2 pullback formulas.",
+      "required_translation_handling": "Replace n+1 by n-1 in the map and add an adjacent OLTEMODARI-015 disclosure."
+    }
+  ]
+}

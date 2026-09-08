@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **187 of 722 source units drafted**. This readable view contains all 175 decisions and 306 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **194 of 722 source units drafted**. This readable view contains all 193 decisions and 327 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -1608,6 +1608,87 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T057-OCC-001; OLP-0186; OLP-0186-B004; source upstream/content/model-theory/basics/overspill.tex:9-10 bytes 153-200 SHA-256 e45ee9f5556ac6d7e9c55c8be3d568a03a6cdbce8d1969d7c8b025bea058e99a; target translation/content/model-theory/basics/overspill.tex:9-10 bytes 153-254 SHA-256 079d4db45f95dbe3879abae4532c7e26347d57a7010414fb176560266e40e29f; reader page pending.
   - te-Telu-IN-TE-T057-OCC-002; OLP-0189; OLP-0189-B015; source upstream/content/model-theory/basics/partial-iso.tex:113-120 bytes 4363-4776 SHA-256 ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d; target translation/content/model-theory/basics/partial-iso.tex:120-129 bytes 8469-9357 SHA-256 a4a6deb43d9540768c1723d5b46b5c2525e270676a194c50233aabf8d9251500; reader page pending.
   - te-Telu-IN-TE-T057-OCC-003; OLP-0190; OLP-0190-B005; source upstream/content/model-theory/basics/dlo.tex:12-26 bytes 211-830 SHA-256 9c7bd2cbee65556d3edc1316632fa5714527901ee0aed70ee76e2c4db7c03531; target translation/content/model-theory/basics/dlo.tex:12-27 bytes 248-1154 SHA-256 155efdcc6472a9c6eeb30941ecaf447bee3b2fd96cc76fd718d4ecc9ebaf0af6; reader page pending.
+
+## te-Telu-IN-TE-T058 — standard model / non-standard model / standard number / non-standard number / standard numeral / true arithmetic / Peano arithmetic
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: ప్రామాణిక నమూనా / అప్రామాణిక నమూనా / ప్రామాణిక సంఖ్య / అప్రామాణిక సంఖ్య / ప్రామాణిక సంఖ్యాపదం / నిజ అంకగణితం / పియానో అంకగణితం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “standard model / non-standard model / standard number / non-standard number / standard numeral / true arithmetic / Peano arithmetic” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: Low semantic uncertainty because the source definitions and satisfaction formulas are explicit; medium nomenclatural uncertainty for standard/non-standard compounds and true arithmetic
+
+- Rationale: TE-P005--TE-P007 directly support natural, integer, rational and real-number exposition; TE-P018--TE-P019, TE-P023, TE-P027 and TE-P029--TE-P031 support formal logic, truth, consequence, predicates, first-order language, domains and sentences; TE-P003--TE-P004 support theorem and proof register. The witnesses do not directly attest the standard/non-standard model distinction. Isomorphism with N, numeral-value exhaustion, and satisfaction of TA, PA and Q in OLP-0192--OLP-0197 control the exact senses. పియానో is the source eponym; the formal abbreviations TA, PA and Q remain mathematical notation
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P004 [checked_context_only], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Opening paragraph and Example 1; Number terminology and native mathematical exposition | TE-C003:TE-P006 [checked_context_only], PDF page 10; printed page 36; Section 1 on real numbers; Concept-specific number class terminology | TE-C001:TE-P007 [checked_context_only], PDF page 26; printed page 16; Sections 2.1-2.2, natural and whole number sets; Telangana-specific concept witness and contrastive number convention; does not establish negative integer terminology | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage.
+
+- Alternatives: leave standard and non-standard as unexplained English headwords [rejected: rejected] | claim direct canon attestation for the arithmetic-model taxonomy [rejected: rejected]
+
+- Review question: Please double-check whether “ప్రామాణిక నమూనా / అప్రామాణిక నమూనా / ప్రామాణిక సంఖ్య / అప్రామాణిక సంఖ్య / ప్రామాణిక సంఖ్యాపదం / నిజ అంకగణితం / పియానో అంకగణితం” is idiomatic and technically standard for “standard model / non-standard model / standard number / non-standard number / standard numeral / true arithmetic / Peano arithmetic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T058-OCC-001; OLP-0192; OLP-0192-B005; source upstream/content/model-theory/models-of-arithmetic/introduction.tex:12-39 bytes 208-1476 SHA-256 b574af9c4ae632a5a5b121e4a404fd16d43fc60450162fe8b8bc9d0ca70ed9f6; target translation/content/model-theory/models-of-arithmetic/introduction.tex:12-51 bytes 214-3278 SHA-256 e8d76e729e3953bffa72e122f0b7402254a188f4834255b894d88d4dd616e139; reader page pending.
+  - te-Telu-IN-TE-T058-OCC-002; OLP-0194; OLP-0194-B006; source upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:18-24 bytes 418-748 SHA-256 2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1; target translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:19-26 bytes 676-1263 SHA-256 68198360c4d9c7050f94529f9991755f60a09447ec3fc6d4bb87a8e8ea2d4fd8; reader page pending.
+
+## te-Telu-IN-TE-T059 — successor / predecessor / arithmetic block / discrete order / order of non-standard blocks
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: ఉత్తరాధికారి / పూర్వాధికారి / అంకగణిత ఖండం / వివిక్త క్రమం / అప్రామాణిక ఖండాల క్రమం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “successor / predecessor / arithmetic block / discrete order / order of non-standard blocks” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low for the displayed successor, predecessor and block relations; medium to high nomenclatural uncertainty for arithmetic block and discrete-order labels
+
+- Rationale: TE-P005 and TE-P007 support native natural-number exposition; TE-P008, TE-P010 and TE-P016 support elements, relations, finite/infinite and equivalence; TE-P003--TE-P004 and TE-P032 support proof and induction register; TE-P027, TE-P029 and TE-P030 support first-order predicates, variables and domains. They do not directly attest arithmetic blocks. The successor/predecessor chain, finite-difference equivalence, block disjointness and quotient-order proofs in OLP-0196 fix the senses. No unexplained English reader-facing borrowing; ఖండం is definition-controlled here and is not claimed to be directly attested for this model-theoretic quotient
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P004 [checked_context_only], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Opening paragraph and Example 1; Number terminology and native mathematical exposition | TE-C001:TE-P007 [checked_context_only], PDF page 26; printed page 16; Sections 2.1-2.2, natural and whole number sets; Telangana-specific concept witness and contrastive number convention; does not establish negative integer terminology | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P016 [checked_context_only], PDF page 310; printed page 303; Questions 4-5 and answers on finite, infinite and equivalent sets; Direct finite/infinite and finite equinumerosity register. It does not establish countable infinity or the exact OpenLogic definition of enumeration; those remain controlled by the frozen source. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: reuse the graph-theoretic ఉత్తరవర్తి and పూర్వవర్తి labels despite the arithmetic context [rejected: rejected] | claim direct canon attestation for arithmetic blocks [rejected: rejected]
+
+- Review question: Please double-check whether “ఉత్తరాధికారి / పూర్వాధికారి / అంకగణిత ఖండం / వివిక్త క్రమం / అప్రామాణిక ఖండాల క్రమం” is idiomatic and technically standard for “successor / predecessor / arithmetic block / discrete order / order of non-standard blocks” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T059-OCC-001; OLP-0196; OLP-0196-B010; source upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:60-67 bytes 2298-2685 SHA-256 1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4; target translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:64-77 bytes 3883-5197 SHA-256 0a7223dbf6de9f1394fd25ee9fa12f4429f158cdda0a1e2d71f2043dc080aca2; reader page pending.
+  - te-Telu-IN-TE-T059-OCC-002; OLP-0196; OLP-0196-B015; source upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:97-108 bytes 3688-4229 SHA-256 1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4; target translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:111-123 bytes 6928-7779 SHA-256 0a7223dbf6de9f1394fd25ee9fa12f4429f158cdda0a1e2d71f2043dc080aca2; reader page pending.
+
+## te-Telu-IN-TE-T060 — computable structure / computable model / computable function / decidable relation / Tennenbaum's Theorem
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: గణనీయ నిర్మాణం / గణనీయ నమూనా / గణనీయ ప్రమేయం / నిర్ణయించదగిన సంబంధం / టెన్నెన్‌బామ్ సిద్ధాంతం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “computable structure / computable model / computable function / decidable relation / Tennenbaum's Theorem” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: Low semantic uncertainty because the definition and transported operations are explicit; medium nomenclatural uncertainty for computable-model compounds and decidability
+
+- Rationale: TE-P010--TE-P012 support relation and function language; TE-P018, TE-P023--TE-P024, TE-P027 and TE-P029--TE-P031 support formal logic, derivation, predicates, first-order language, domains and sentences; TE-T020 already records the edition's definition-controlled గణనీయత choice. The domain-N definition, transported computable operations and corrected no-computable-nonstandard-model statement in OLP-0197 control these exact senses. టెన్నెన్‌బామ్ is the source eponym; no English technical headword is left unexplained
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P004 [checked_context_only], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C004:TE-P012 [checked_context_only], PDF page 319; printed page 312; Questions 37-38; Function-versus-relation explanatory register; do not copy source answers mechanically. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage.
+
+- Alternatives: use లెక్కించదగిన for computable and thereby collapse computability into enumerability [rejected: rejected] | omit the Tennenbaum eponym or leave the theorem statement in English [rejected: rejected]
+
+- Review question: Please double-check whether “గణనీయ నిర్మాణం / గణనీయ నమూనా / గణనీయ ప్రమేయం / నిర్ణయించదగిన సంబంధం / టెన్నెన్‌బామ్ సిద్ధాంతం” is idiomatic and technically standard for “computable structure / computable model / computable function / decidable relation / Tennenbaum's Theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T060-OCC-001; OLP-0197; OLP-0197-B007; source upstream/content/model-theory/models-of-arithmetic/computable-models.tex:35-40 bytes 1494-1749 SHA-256 f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89; target translation/content/model-theory/models-of-arithmetic/computable-models.tex:38-44 bytes 3125-3566 SHA-256 3226bf84c4d0cde20a3a52bd0ca2a4d7c075acb51354eb66f683eea7a8ea5e87; reader page pending.
+  - te-Telu-IN-TE-T060-OCC-002; OLP-0197; OLP-0197-B013; source upstream/content/model-theory/models-of-arithmetic/computable-models.tex:119-121 bytes 4518-4618 SHA-256 f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89; target translation/content/model-theory/models-of-arithmetic/computable-models.tex:135-144 bytes 9678-10804 SHA-256 3226bf84c4d0cde20a3a52bd0ca2a4d7c075acb51354eb66f683eea7a8ea5e87; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -4684,3 +4765,393 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEMODBAS-010-OCC-001; OLP-0187; OLP-0187-B013; source upstream/content/model-theory/basics/isomorphism.tex:124-128 bytes 4946-5168 SHA-256 bc20c7ae117da49ae395fe60f41be8baa408de9f1e0ccb78bb4356b40626861f; target translation/content/model-theory/basics/isomorphism.tex:137-144 bytes 9178-10432 SHA-256 39d149e0e26ea0082848dda825a41f8d6fac73a7ae2a72d1516340b8ae8aec55; reader page pending.
+
+## te-Telu-IN-OLTEMODARI-001 — OLTEMODARI-001: confirmed wrong function argument sort
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used a^n and a^m as the two operation arguments so they belong to the declared string domain; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed wrong function argument sort at lines 24-34, string-domain structure display, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODARI-20260908:OLTEMODARI-001 [checked_supports], content/model-theory/models-of-arithmetic/introduction.tex; lines 24-34, string-domain structure display; confirmed_wrong_function_argument_sort; used a^n and a^m as the two operation arguments so they belong to the declared string domain; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the two operation arguments are strings a^n and a^m, while the displayed results remain a^(n+m) and a^(nm).
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODARI-001-OCC-001; OLP-0192; OLP-0192-B005; source upstream/content/model-theory/models-of-arithmetic/introduction.tex:24-34 bytes 724-1181 SHA-256 b574af9c4ae632a5a5b121e4a404fd16d43fc60450162fe8b8bc9d0ca70ed9f6; target translation/content/model-theory/models-of-arithmetic/introduction.tex:12-51 bytes 214-3278 SHA-256 e8d76e729e3953bffa72e122f0b7402254a188f4834255b894d88d4dd616e139; reader page pending.
+
+## te-Telu-IN-OLTEMODARI-002 — OLTEMODARI-002: confirmed missing order interpretation
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: added the length-order interpretation needed to complete the L_A structure and make the stated isomorphism true; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing order interpretation at lines 24-39, purported L_A structure and isomorphism claim, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODARI-20260908:OLTEMODARI-002 [checked_supports], content/model-theory/models-of-arithmetic/introduction.tex; lines 24-39, purported L_A structure and isomorphism claim; confirmed_missing_order_interpretation; added the length-order interpretation needed to complete the L_A structure and make the stated isomorphism true; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the added order on strings compares their exponents and completes exactly the claimed arithmetic-language structure.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODARI-002-OCC-001; OLP-0192; OLP-0192-B005; source upstream/content/model-theory/models-of-arithmetic/introduction.tex:24-39 bytes 724-1476 SHA-256 b574af9c4ae632a5a5b121e4a404fd16d43fc60450162fe8b8bc9d0ca70ed9f6; target translation/content/model-theory/models-of-arithmetic/introduction.tex:12-51 bytes 214-3278 SHA-256 e8d76e729e3953bffa72e122f0b7402254a188f4834255b894d88d4dd616e139; reader page pending.
+
+## te-Telu-IN-OLTEMODARI-003 — OLTEMODARI-003: confirmed missing proof predicate argument
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored x as the first argument of the binary proof predicate; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing proof predicate argument at lines 65-70, non-standard witness for not-Con(PA), preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODARI-20260908:OLTEMODARI-003 [checked_supports], content/model-theory/models-of-arithmetic/introduction.tex; lines 65-70, non-standard witness for not-Con(PA); confirmed_missing_proof_predicate_argument; restored x as the first argument of the binary proof predicate; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that x is restored as the first argument of the binary PA proof predicate in the existential witness formula.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODARI-003-OCC-001; OLP-0192; OLP-0192-B007; source upstream/content/model-theory/models-of-arithmetic/introduction.tex:65-70 bytes 2788-3168 SHA-256 b574af9c4ae632a5a5b121e4a404fd16d43fc60450162fe8b8bc9d0ca70ed9f6; target translation/content/model-theory/models-of-arithmetic/introduction.tex:68-89 bytes 4686-7143 SHA-256 e8d76e729e3953bffa72e122f0b7402254a188f4834255b894d88d4dd616e139; reader page pending.
+
+## te-Telu-IN-OLTEMODARI-004 — OLTEMODARI-004: confirmed domain range word swap
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used range rather than domain in the surjectivity argument; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed domain range word swap at lines 152-170, characterization of a suitable successor map, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODARI-20260908:OLTEMODARI-004 [checked_supports], content/model-theory/models-of-arithmetic/standard-models.tex; lines 152-170, characterization of a suitable successor map; confirmed_domain_range_word_swap; used range rather than domain in the surjectivity argument; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that failure of surjectivity is described as omission from the range, not the already total function domain.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODARI-004-OCC-001; OLP-0193; OLP-0193-B018; source upstream/content/model-theory/models-of-arithmetic/standard-models.tex:152-170 bytes 6630-7822 SHA-256 8042692c33d15f357d7099f1a247f5055734446d951eabc2d337a3ca19d629b8; target translation/content/model-theory/models-of-arithmetic/standard-models.tex:162-191 bytes 10309-13325 SHA-256 fd1ce21c27f4e4925ec171ec39da1b4f39ffad4261ccaa6d48d1bd979f72ffca; reader page pending.
+
+## te-Telu-IN-OLTEMODARI-005 — OLTEMODARI-005: confirmed wrong structure on new constant
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: evaluated c in the expanded structure M^c rather than its reduct M; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed wrong structure on new constant at lines 83-98, expansion by the new constant c, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODARI-20260908:OLTEMODARI-005 [checked_supports], content/model-theory/models-of-arithmetic/non-standard-models.tex; lines 83-98, expansion by the new constant c; confirmed_wrong_structure_on_new_constant; evaluated c in the expanded structure M^c rather than its reduct M; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the new constant c is evaluated in the expanded structure M^c rather than the reduct M.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODARI-005-OCC-001; OLP-0194; OLP-0194-B013; source upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:83-98 bytes 3124-3850 SHA-256 2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1; target translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:92-112 bytes 5936-7864 SHA-256 68198360c4d9c7050f94529f9991755f60a09447ec3fc6d4bb87a8e8ea2d4fd8; reader page pending.
+
+## te-Telu-IN-OLTEMODARI-006 — OLTEMODARI-006: confirmed missing empty constraint case
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: handled a finite subset with no c inequality before choosing a largest constrained numeral; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing empty constraint case at lines 100-112, finite-satisfiability argument, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODARI-20260908:OLTEMODARI-006 [checked_supports], content/model-theory/models-of-arithmetic/non-standard-models.tex; lines 100-112, finite-satisfiability argument; confirmed_missing_empty_constraint_case; handled a finite subset with no c inequality before choosing a largest constrained numeral; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the finite-subset proof handles the case with no c-inequality before choosing a largest constrained numeral.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODARI-006-OCC-001; OLP-0194; OLP-0194-B014; source upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-112 bytes 3851-4636 SHA-256 2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1; target translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:114-143 bytes 7865-11412 SHA-256 68198360c4d9c7050f94529f9991755f60a09447ec3fc6d4bb87a8e8ea2d4fd8; reader page pending.
+
+## te-Telu-IN-OLTEMODARI-007 — OLTEMODARI-007: confirmed missing countability argument
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: applied Downward Lowenheim--Skolem after compactness to obtain the asserted countable model; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing countability argument at lines 78-113, proposition and proof conclusion, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODARI-20260908:OLTEMODARI-007 [checked_supports], content/model-theory/models-of-arithmetic/non-standard-models.tex; lines 78-113, proposition and proof conclusion; confirmed_missing_countability_argument; applied Downward Lowenheim--Skolem after compactness to obtain the asserted countable model; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that Downward Löwenheim--Skolem is invoked after compactness to obtain the proposition’s countable model.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODARI-007-OCC-001; OLP-0194; OLP-0194-B012; source upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:78-113 bytes 2977-4648 SHA-256 2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1; target translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:114-143 bytes 7865-11412 SHA-256 68198360c4d9c7050f94529f9991755f60a09447ec3fc6d4bb87a8e8ea2d4fd8; reader page pending.
+
+## te-Telu-IN-OLTEMODARI-008 — OLTEMODARI-008: confirmed nonexistent case element
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used y=a, the only non-standard element of K, rather than nonexistent b; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed nonexistent case element at lines 96-107, Q_5 case split for K, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODARI-20260908:OLTEMODARI-008 [checked_supports], content/model-theory/models-of-arithmetic/models-of-q.tex; lines 96-107, Q_5 case split for K; confirmed_nonexistent_case_element; used y=a, the only non-standard element of K, rather than nonexistent b; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the last non-standard K case is y=a, since the domain contains no b.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODARI-008-OCC-001; OLP-0195; OLP-0195-B008; source upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:96-107 bytes 3088-3839 SHA-256 09bdaf0730f142d22d7f8fcc6c3155cb76d851f550a90bd70b04b2de1a9855fc; target translation/content/model-theory/models-of-arithmetic/models-of-q.tex:97-122 bytes 4399-6485 SHA-256 f99d4328fd2b723dace8a5089b3c36a1ba4a4ae549555632211d1c4328332376; reader page pending.
+
+## te-Telu-IN-OLTEMODARI-009 — OLTEMODARI-009: confirmed free variable in case calculation
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: replaced the stray y by the branch's fixed second argument a; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed free variable in case calculation at lines 154-171, Q_5 case split for L, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODARI-20260908:OLTEMODARI-009 [checked_supports], content/model-theory/models-of-arithmetic/models-of-q.tex; lines 154-171, Q_5 case split for L; confirmed_free_variable_in_case_calculation; replaced the stray y by the branch's fixed second argument a; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the b-plus-a calculation ends with (b plus a)^succ rather than the source’s free y.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODARI-009-OCC-001; OLP-0195; OLP-0195-B011; source upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:154-171 bytes 5348-6437 SHA-256 09bdaf0730f142d22d7f8fcc6c3155cb76d851f550a90bd70b04b2de1a9855fc; target translation/content/model-theory/models-of-arithmetic/models-of-q.tex:146-196 bytes 7857-10620 SHA-256 f99d4328fd2b723dace8a5089b3c36a1ba4a4ae549555632211d1c4328332376; reader page pending.
+
+## te-Telu-IN-OLTEMODARI-010 — OLTEMODARI-010: confirmed missing nonzero predecessor condition
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restricted the unique-predecessor claim to x unequal to zero; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing nonzero predecessor condition at lines 60-67, discrete-order proposition, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODARI-20260908:OLTEMODARI-010 [checked_supports], content/model-theory/models-of-arithmetic/models-of-pa.tex; lines 60-67, discrete-order proposition; confirmed_missing_nonzero_predecessor_condition; restricted the unique-predecessor claim to x unequal to zero; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the unique-predecessor assertion is restricted exactly to nonzero elements.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODARI-010-OCC-001; OLP-0196; OLP-0196-B010; source upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:60-67 bytes 2298-2685 SHA-256 1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4; target translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:64-77 bytes 3883-5197 SHA-256 0a7223dbf6de9f1394fd25ee9fa12f4429f158cdda0a1e2d71f2043dc080aca2; reader page pending.
+
+## te-Telu-IN-OLTEMODARI-011 — OLTEMODARI-011: confirmed undefined addition notation
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: replaced three unrelated opulus symbols by the defined model-addition nsplus; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed undefined addition notation at lines 215-228, density-of-blocks proof, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODARI-20260908:OLTEMODARI-011 [checked_supports], content/model-theory/models-of-arithmetic/models-of-pa.tex; lines 215-228, density-of-blocks proof; confirmed_undefined_addition_notation; replaced three unrelated opulus symbols by the defined model-addition nsplus; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that all three averages use the chapter’s defined model-addition symbol nsplus rather than the unrelated opulus.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODARI-011-OCC-001; OLP-0196; OLP-0196-B032; source upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:215-228 bytes 8264-8791 SHA-256 1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4; target translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:241-251 bytes 14473-15377 SHA-256 0a7223dbf6de9f1394fd25ee9fa12f4429f158cdda0a1e2d71f2043dc080aca2; reader page pending.
+
+## te-Telu-IN-OLTEMODARI-012 — OLTEMODARI-012: confirmed unrestricted countability claim
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: made denumerability conditional on the model being countable while retaining density and endpointlessness generally; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed unrestricted countability claim at lines 238-258, order type of non-standard blocks, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODARI-20260908:OLTEMODARI-012 [checked_supports], content/model-theory/models-of-arithmetic/models-of-pa.tex; lines 238-258, order type of non-standard blocks; confirmed_unrestricted_countability_claim; made denumerability conditional on the model being countable while retaining density and endpointlessness generally; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that density and endpointlessness remain general while denumerability is conditional on a countable model.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODARI-012-OCC-001; OLP-0196; OLP-0196-B035; source upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-258 bytes 9064-10458 SHA-256 1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4; target translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:261-293 bytes 15813-19814 SHA-256 0a7223dbf6de9f1394fd25ee9fa12f4429f158cdda0a1e2d71f2043dc080aca2; reader page pending.
+
+## te-Telu-IN-OLTEMODARI-013 — OLTEMODARI-013: confirmed wrong set builder variable
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: constrained x, the ordered pair's first component, rather than unrelated n; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed wrong set builder variable at lines 42-67, repeated definition of K, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODARI-20260908:OLTEMODARI-013 [checked_supports], content/model-theory/models-of-arithmetic/computable-models.tex; lines 42-67, repeated definition of K; confirmed_wrong_set_builder_variable; constrained x, the ordered pair's first component, rather than unrelated n; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the final set builder constrains x, the ordered pair’s first component, rather than unrelated n.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODARI-013-OCC-001; OLP-0197; OLP-0197-B008; source upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-67 bytes 1750-2505 SHA-256 f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89; target translation/content/model-theory/models-of-arithmetic/computable-models.tex:46-91 bytes 3567-6871 SHA-256 3226bf84c4d0cde20a3a52bd0ca2a4d7c075acb51354eb66f683eea7a8ea5e87; reader page pending.
+
+## te-Telu-IN-OLTEMODARI-014 — OLTEMODARI-014: confirmed literal uniqueness overstatement
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: stated that every computable PA model is standard and hence isomorphic to N; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed literal uniqueness overstatement at lines 119-121, Tennenbaum theorem, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODARI-20260908:OLTEMODARI-014 [checked_supports], content/model-theory/models-of-arithmetic/computable-models.tex; lines 119-121, Tennenbaum theorem; confirmed_literal_uniqueness_overstatement; stated that every computable PA model is standard and hence isomorphic to N; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that Tennenbaum’s theorem rules out computable non-standard PA models and states uniqueness only up to isomorphism.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODARI-014-OCC-001; OLP-0197; OLP-0197-B013; source upstream/content/model-theory/models-of-arithmetic/computable-models.tex:119-121 bytes 4518-4618 SHA-256 f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89; target translation/content/model-theory/models-of-arithmetic/computable-models.tex:135-144 bytes 9678-10804 SHA-256 3226bf84c4d0cde20a3a52bd0ca2a4d7c075acb51354eb66f683eea7a8ea5e87; reader page pending.
+
+## te-Telu-IN-OLTEMODARI-015 — OLTEMODARI-015: confirmed nonbijective transport map
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used g(n)=n-1 for n>0, the bijection that yields the displayed transported operations; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed nonbijective transport map at lines 68-98, transport of K to domain N, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODARI-20260908:OLTEMODARI-015 [checked_supports], content/model-theory/models-of-arithmetic/computable-models.tex; lines 68-98, transport of K to domain N; confirmed_nonbijective_transport_map; used g(n)=n-1 for n>0, the bijection that yields the displayed transported operations; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that g(n)=n-1 for n>0 is bijective onto N union {a} and yields the displayed transported operations.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODARI-015-OCC-001; OLP-0197; OLP-0197-B008; source upstream/content/model-theory/models-of-arithmetic/computable-models.tex:68-98 bytes 2505-3820 SHA-256 f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89; target translation/content/model-theory/models-of-arithmetic/computable-models.tex:46-91 bytes 3567-6871 SHA-256 3226bf84c4d0cde20a3a52bd0ca2a4d7c075acb51354eb66f683eea7a8ea5e87; reader page pending.

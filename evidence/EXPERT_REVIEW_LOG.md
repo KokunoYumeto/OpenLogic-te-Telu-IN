@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 187 of 722 draft units**. This log contains 57 terminology/sense decisions and 118 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 194 of 722 draft units**. This log contains 60 terminology/sense decisions and 133 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1375,6 +1375,78 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low semantic uncertainty because each construction is explicitly defined; high nomenclatural uncertainty for overspill and quantifier-rank headwords
 
 - Please double-check: Please double-check whether “అధిప్రసరణ (ఓవర్‌స్పిల్) / పరిమాణక ర్యాంకు / n-తుల్యత / అనుసంధానం / అంత్యబిందువులు లేని సాంద్ర రేఖీయ క్రమం” is idiomatic and technically standard for “overspill / quantifier rank / n-equivalence / concatenation / dense linear order without endpoints” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T058 — standard model / non-standard model / standard number / non-standard number / standard numeral / true arithmetic / Peano arithmetic
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: moderate / standard
+
+- Chosen wording/treatment: ప్రామాణిక నమూనా / అప్రామాణిక నమూనా / ప్రామాణిక సంఖ్య / అప్రామాణిక సంఖ్య / ప్రామాణిక సంఖ్యాపదం / నిజ అంకగణితం / పియానో అంకగణితం
+
+- Exact implementation: OLP-0192; model-theory/models-of-arithmetic/introduction; content/model-theory/models-of-arithmetic/introduction.tex:12-39 ↔ translation/content/model-theory/models-of-arithmetic/introduction.tex:12-51 (OLP-0192-B005); printed/PDF page pending; OLP-0194; model-theory/models-of-arithmetic/non-standard-models; content/model-theory/models-of-arithmetic/non-standard-models.tex:18-24 ↔ translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:19-26 (OLP-0194-B006); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P005, PDF 21, printed 9, Opening paragraph and Example 1; TE-P006, PDF 10, printed 36, Section 1 on real numbers; TE-P007, PDF 26, printed 16, Sections 2.1-2.2, natural and whole number sets; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P005--TE-P007 directly support natural, integer, rational and real-number exposition; TE-P018--TE-P019, TE-P023, TE-P027 and TE-P029--TE-P031 support formal logic, truth, consequence, predicates, first-order language, domains and sentences; TE-P003--TE-P004 support theorem and proof register. The witnesses do not directly attest the standard/non-standard model distinction. Isomorphism with N, numeral-value exhaustion, and satisfaction of TA, PA and Q in OLP-0192--OLP-0197 control the exact senses. పియానో is the source eponym; the formal abbreviations TA, PA and Q remain mathematical notation
+
+- Alternatives: reuse the established number, truth, model and structure register with the standard/non-standard distinction fixed by isomorphism and numeral values (chosen); leave standard and non-standard as unexplained English headwords (rejected); claim direct canon attestation for the arithmetic-model taxonomy (rejected)
+
+- Uncertainty: Low semantic uncertainty because the source definitions and satisfaction formulas are explicit; medium nomenclatural uncertainty for standard/non-standard compounds and true arithmetic
+
+- Please double-check: Please double-check whether “ప్రామాణిక నమూనా / అప్రామాణిక నమూనా / ప్రామాణిక సంఖ్య / అప్రామాణిక సంఖ్య / ప్రామాణిక సంఖ్యాపదం / నిజ అంకగణితం / పియానో అంకగణితం” is idiomatic and technically standard for “standard model / non-standard model / standard number / non-standard number / standard numeral / true arithmetic / Peano arithmetic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T059 — successor / predecessor / arithmetic block / discrete order / order of non-standard blocks
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: ఉత్తరాధికారి / పూర్వాధికారి / అంకగణిత ఖండం / వివిక్త క్రమం / అప్రామాణిక ఖండాల క్రమం
+
+- Exact implementation: OLP-0196; model-theory/models-of-arithmetic/models-of-pa; content/model-theory/models-of-arithmetic/models-of-pa.tex:60-67 ↔ translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:64-77 (OLP-0196-B010); printed/PDF page pending; OLP-0196; model-theory/models-of-arithmetic/models-of-pa; content/model-theory/models-of-arithmetic/models-of-pa.tex:97-108 ↔ translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:111-123 (OLP-0196-B015); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P005, PDF 21, printed 9, Opening paragraph and Example 1; TE-P007, PDF 26, printed 16, Sections 2.1-2.2, natural and whole number sets; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P016, PDF 310, printed 303, Questions 4-5 and answers on finite, infinite and equivalent sets; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P005 and TE-P007 support native natural-number exposition; TE-P008, TE-P010 and TE-P016 support elements, relations, finite/infinite and equivalence; TE-P003--TE-P004 and TE-P032 support proof and induction register; TE-P027, TE-P029 and TE-P030 support first-order predicates, variables and domains. They do not directly attest arithmetic blocks. The successor/predecessor chain, finite-difference equivalence, block disjointness and quotient-order proofs in OLP-0196 fix the senses. No unexplained English reader-facing borrowing; ఖండం is definition-controlled here and is not claimed to be directly attested for this model-theoretic quotient
+
+- Alternatives: use ఉత్తరాధికారి, పూర్వాధికారి and the locally defined ఖండం terminology (chosen); reuse the graph-theoretic ఉత్తరవర్తి and పూర్వవర్తి labels despite the arithmetic context (rejected); claim direct canon attestation for arithmetic blocks (rejected)
+
+- Uncertainty: Low for the displayed successor, predecessor and block relations; medium to high nomenclatural uncertainty for arithmetic block and discrete-order labels
+
+- Please double-check: Please double-check whether “ఉత్తరాధికారి / పూర్వాధికారి / అంకగణిత ఖండం / వివిక్త క్రమం / అప్రామాణిక ఖండాల క్రమం” is idiomatic and technically standard for “successor / predecessor / arithmetic block / discrete order / order of non-standard blocks” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T060 — computable structure / computable model / computable function / decidable relation / Tennenbaum's Theorem
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: moderate / standard
+
+- Chosen wording/treatment: గణనీయ నిర్మాణం / గణనీయ నమూనా / గణనీయ ప్రమేయం / నిర్ణయించదగిన సంబంధం / టెన్నెన్‌బామ్ సిద్ధాంతం
+
+- Exact implementation: OLP-0197; model-theory/models-of-arithmetic/computable-models; content/model-theory/models-of-arithmetic/computable-models.tex:35-40 ↔ translation/content/model-theory/models-of-arithmetic/computable-models.tex:38-44 (OLP-0197-B007); printed/PDF page pending; OLP-0197; model-theory/models-of-arithmetic/computable-models; content/model-theory/models-of-arithmetic/computable-models.tex:119-121 ↔ translation/content/model-theory/models-of-arithmetic/computable-models.tex:135-144 (OLP-0197-B013); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P012, PDF 319, printed 312, Questions 37-38; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P010--TE-P012 support relation and function language; TE-P018, TE-P023--TE-P024, TE-P027 and TE-P029--TE-P031 support formal logic, derivation, predicates, first-order language, domains and sentences; TE-T020 already records the edition's definition-controlled గణనీయత choice. The domain-N definition, transported computable operations and corrected no-computable-nonstandard-model statement in OLP-0197 control these exact senses. టెన్నెన్‌బామ్ is the source eponym; no English technical headword is left unexplained
+
+- Alternatives: reuse the edition’s definition-controlled గణనీయ terminology and descriptive నిర్ణయించదగిన సంబంధం (chosen); use లెక్కించదగిన for computable and thereby collapse computability into enumerability (rejected); omit the Tennenbaum eponym or leave the theorem statement in English (rejected)
+
+- Uncertainty: Low semantic uncertainty because the definition and transported operations are explicit; medium nomenclatural uncertainty for computable-model compounds and decidability
+
+- Please double-check: Please double-check whether “గణనీయ నిర్మాణం / గణనీయ నమూనా / గణనీయ ప్రమేయం / నిర్ణయించదగిన సంబంధం / టెన్నెన్‌బామ్ సిద్ధాంతం” is idiomatic and technically standard for “computable structure / computable model / computable function / decidable relation / Tennenbaum's Theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -4207,3 +4279,363 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check that the automorphism exercise is limited to parameter-free definability, so invariance under every automorphism is valid.
+
+## REV-OLTEMODARI-001 — OLTEMODARI-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used a^n and a^m as the two operation arguments so they belong to the declared string domain; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0192; model-theory/models-of-arithmetic/introduction; lines 24-34, string-domain structure display ↔ translation/content/model-theory/models-of-arithmetic/introduction.tex:12-51 (OLP-0192-B005); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODARI-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used a^n and a^m as the two operation arguments so they belong to the declared string domain; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the two operation arguments are strings a^n and a^m, while the displayed results remain a^(n+m) and a^(nm).
+
+## REV-OLTEMODARI-002 — OLTEMODARI-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: added the length-order interpretation needed to complete the L_A structure and make the stated isomorphism true; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0192; model-theory/models-of-arithmetic/introduction; lines 24-39, purported L_A structure and isomorphism claim ↔ translation/content/model-theory/models-of-arithmetic/introduction.tex:12-51 (OLP-0192-B005); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODARI-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: added the length-order interpretation needed to complete the L_A structure and make the stated isomorphism true; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the added order on strings compares their exponents and completes exactly the claimed arithmetic-language structure.
+
+## REV-OLTEMODARI-003 — OLTEMODARI-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored x as the first argument of the binary proof predicate; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0192; model-theory/models-of-arithmetic/introduction; lines 65-70, non-standard witness for not-Con(PA) ↔ translation/content/model-theory/models-of-arithmetic/introduction.tex:68-89 (OLP-0192-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODARI-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored x as the first argument of the binary proof predicate; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that x is restored as the first argument of the binary PA proof predicate in the existential witness formula.
+
+## REV-OLTEMODARI-004 — OLTEMODARI-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used range rather than domain in the surjectivity argument; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0193; model-theory/models-of-arithmetic/standard-models; lines 152-170, characterization of a suitable successor map ↔ translation/content/model-theory/models-of-arithmetic/standard-models.tex:162-191 (OLP-0193-B018); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODARI-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used range rather than domain in the surjectivity argument; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that failure of surjectivity is described as omission from the range, not the already total function domain.
+
+## REV-OLTEMODARI-005 — OLTEMODARI-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: evaluated c in the expanded structure M^c rather than its reduct M; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0194; model-theory/models-of-arithmetic/non-standard-models; lines 83-98, expansion by the new constant c ↔ translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:92-112 (OLP-0194-B013); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODARI-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: evaluated c in the expanded structure M^c rather than its reduct M; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the new constant c is evaluated in the expanded structure M^c rather than the reduct M.
+
+## REV-OLTEMODARI-006 — OLTEMODARI-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: handled a finite subset with no c inequality before choosing a largest constrained numeral; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0194; model-theory/models-of-arithmetic/non-standard-models; lines 100-112, finite-satisfiability argument ↔ translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:114-143 (OLP-0194-B014); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODARI-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: handled a finite subset with no c inequality before choosing a largest constrained numeral; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the finite-subset proof handles the case with no c-inequality before choosing a largest constrained numeral.
+
+## REV-OLTEMODARI-007 — OLTEMODARI-007
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: applied Downward Lowenheim--Skolem after compactness to obtain the asserted countable model; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0194; model-theory/models-of-arithmetic/non-standard-models; lines 78-113, proposition and proof conclusion ↔ translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:114-143 (OLP-0194-B014); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODARI-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: applied Downward Lowenheim--Skolem after compactness to obtain the asserted countable model; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that Downward Löwenheim--Skolem is invoked after compactness to obtain the proposition’s countable model.
+
+## REV-OLTEMODARI-008 — OLTEMODARI-008
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used y=a, the only non-standard element of K, rather than nonexistent b; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0195; model-theory/models-of-arithmetic/models-of-q; lines 96-107, Q_5 case split for K ↔ translation/content/model-theory/models-of-arithmetic/models-of-q.tex:97-122 (OLP-0195-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODARI-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used y=a, the only non-standard element of K, rather than nonexistent b; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the last non-standard K case is y=a, since the domain contains no b.
+
+## REV-OLTEMODARI-009 — OLTEMODARI-009
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: replaced the stray y by the branch's fixed second argument a; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0195; model-theory/models-of-arithmetic/models-of-q; lines 154-171, Q_5 case split for L ↔ translation/content/model-theory/models-of-arithmetic/models-of-q.tex:146-196 (OLP-0195-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODARI-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: replaced the stray y by the branch's fixed second argument a; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the b-plus-a calculation ends with (b plus a)^succ rather than the source’s free y.
+
+## REV-OLTEMODARI-010 — OLTEMODARI-010
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restricted the unique-predecessor claim to x unequal to zero; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0196; model-theory/models-of-arithmetic/models-of-pa; lines 60-67, discrete-order proposition ↔ translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:64-77 (OLP-0196-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODARI-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restricted the unique-predecessor claim to x unequal to zero; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the unique-predecessor assertion is restricted exactly to nonzero elements.
+
+## REV-OLTEMODARI-011 — OLTEMODARI-011
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: replaced three unrelated opulus symbols by the defined model-addition nsplus; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0196; model-theory/models-of-arithmetic/models-of-pa; lines 215-228, density-of-blocks proof ↔ translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:241-251 (OLP-0196-B033); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODARI-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: replaced three unrelated opulus symbols by the defined model-addition nsplus; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that all three averages use the chapter’s defined model-addition symbol nsplus rather than the unrelated opulus.
+
+## REV-OLTEMODARI-012 — OLTEMODARI-012
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: made denumerability conditional on the model being countable while retaining density and endpointlessness generally; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0196; model-theory/models-of-arithmetic/models-of-pa; lines 238-258, order type of non-standard blocks ↔ translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:261-293 (OLP-0196-B035); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODARI-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: made denumerability conditional on the model being countable while retaining density and endpointlessness generally; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that density and endpointlessness remain general while denumerability is conditional on a countable model.
+
+## REV-OLTEMODARI-013 — OLTEMODARI-013
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: constrained x, the ordered pair's first component, rather than unrelated n; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0197; model-theory/models-of-arithmetic/computable-models; lines 42-67, repeated definition of K ↔ translation/content/model-theory/models-of-arithmetic/computable-models.tex:46-91 (OLP-0197-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODARI-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: constrained x, the ordered pair's first component, rather than unrelated n; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the final set builder constrains x, the ordered pair’s first component, rather than unrelated n.
+
+## REV-OLTEMODARI-014 — OLTEMODARI-014
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: stated that every computable PA model is standard and hence isomorphic to N; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0197; model-theory/models-of-arithmetic/computable-models; lines 119-121, Tennenbaum theorem ↔ translation/content/model-theory/models-of-arithmetic/computable-models.tex:135-144 (OLP-0197-B013); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODARI-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: stated that every computable PA model is standard and hence isomorphic to N; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that Tennenbaum’s theorem rules out computable non-standard PA models and states uniqueness only up to isomorphism.
+
+## REV-OLTEMODARI-015 — OLTEMODARI-015
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used g(n)=n-1 for n>0, the bijection that yields the displayed transported operations; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0197; model-theory/models-of-arithmetic/computable-models; lines 68-98, transport of K to domain N ↔ translation/content/model-theory/models-of-arithmetic/computable-models.tex:46-91 (OLP-0197-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTEMODARI-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used g(n)=n-1 for n>0, the bijection that yields the displayed transported operations; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that g(n)=n-1 for n>0 is bijective onto N union {a} and yields the displayed transported operations.

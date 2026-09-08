@@ -1,0 +1,193 @@
+% Part: model-theory
+% Chapter: models-of-arithmetic
+% Section: standard-models
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{mar}{stm}
+\olsection{అంకగణితపు ప్రామాణిక నమూనాలు}
+
+అంకగణిత భాష $\Lang{L_A}$ సంఖ్యలను, మరింత నిర్దిష్టంగా సహజ
+సంఖ్యలను ఉద్దేశించినదని స్పష్టమే. అందువల్ల “ఆ” ప్రామాణిక
+నమూనా~$\Struct{N}$ ప్రత్యేకమైనది: మనం చర్చించదలచిన నమూనా అదే.
+అయితే తర్కశాస్త్రంలో మనకు తరచుగా నిర్మాణాత్మక ధర్మాలపైనే ఆసక్తి;
+సమరూపమైన ఏ రెండు \tetoken{నిర్మాణాలకైనా}{!!{structure}s} అవి ఒకటే.
+కాబట్టి కొంచెం విశాలంగా, $\Struct{N}$తో సమరూపమైన ప్రతి
+\tetoken{నిర్మాణాన్నీ}{!!{structure}} “ప్రామాణికం”గా పరిగణించవచ్చు.
+
+\begin{defn}
+$\Lang{L_A}$కు గల ఒక \tetoken{నిర్మాణం}{!!{structure}},
+$\Struct{N}$తో సమరూపమైతే \emph{ప్రామాణికం}.
+\end{defn}
+
+\begin{prop}
+\ollabel{prop:standard-domain} ఒక
+\tetoken{నిర్మాణం}{!!a{structure}}~$\Struct{M}$ ప్రామాణికమైతే,
+దాని వ్యక్తి క్షేత్రం ప్రామాణిక సంఖ్యాపదాల విలువల సమితి, అంటే
+\[
+\Domain{M} = \Setabs{\Value{\num{n}}{M}}{n \in \Nat}
+\]
+\end{prop}
+
+\begin{proof}
+ప్రతి $\Value{\num{n}}{M}\in\Domain{M}$ అని స్పష్టమే. ప్రతి
+$x\in\Domain{M}$ ఏదో $n$కు $\Value{\num{n}}{M}$తో సమానమని మాత్రమే
+చూపాలి. $\Struct{M}$ ప్రామాణికం కాబట్టి అది $\Struct{N}$తో
+సమరూపం. $g\colon\Nat\to\Domain{M}$ ఒక సమరూపత అనుకుందాం. అప్పుడు
+$g(n)=g(\Value{\num{n}}{N})=\Value{\num{n}}{M}$. అంతేకాక, $g$
+\tetoken{సంగ్రస్త}{!!{surjective}} కాబట్టి ప్రతి
+$x\in\Domain{M}$కూ $g(n)=x$ అయ్యే $n\in\Nat$ ఉంటుంది.
+\end{proof}
+
+\begin{explain}
+$\Lang{L_A}$కు గల నిర్మాణం~$\Struct{M}$ ప్రామాణికమైతే, దాని
+\tetoken{వ్యక్తి క్షేత్రంలోని}{!!{domain}} మూలకాలన్నింటినీ
+ప్రామాణిక సంఖ్యాపదాలు $\num{0}$, $\num{1}$, $\num{2}$, \dots,
+అంటే $\Obj{0}$, $\Obj{0}'$, $\Obj{0}''$ మొదలైన పదాలు
+పేరు పెట్టగలవు. దీని అర్థం $\Domain{M}$లోని
+\tetoken{మూలకాలు}{!!{element}s} స్వయంగా సంఖ్యలే అని కాదు;
+$\Domain{N}$లోని సంఖ్యలను ఎంచుకున్నట్లే వీటినీ ఎంచగలమని మాత్రమే.
+\end{explain}
+
+\begin{prob}
+\olref[mod][mar][stm]{prop:standard-domain} యొక్క విపర్యయం అసత్యమని
+చూపండి; అంటే
+$\Domain{M}=\Setabs{\Value{\num{n}}{M}}{n\in\Nat}$ అయినా
+$\Struct{N}$తో సమరూపం కాని ఒక
+\tetoken{నిర్మాణం}{!!a{structure}}~$\Struct{M}$కు ఉదాహరణ ఇవ్వండి.
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:thq-standard}
+$\Sat{M}{\Th{Q}}$ మరియు
+$\Domain{M}=\Setabs{\Value{\num{n}}{M}}{n\in\Nat}$ అయితే,
+$\Struct{M}$ ప్రామాణికం.
+\end{prop}
+
+\begin{proof}
+$\Struct{M}$, $\Struct{N}$తో సమరూపమని చూపాలి.
+$g(n)=\Value{\num{n}}{M}$గా నిర్వచించిన
+$g\colon\Nat\to\Domain{M}$ను పరిశీలించండి. పరికల్పన వల్ల $g$
+\tetoken{సంగ్రస్త}{!!{surjective}}. అది
+\tetoken{ఒకటి-ఒకటి}{!!{injective}} కూడా: $n\neq m$ అయినప్పుడల్లా
+$\Th{Q}\Proves\eq/[\num{n}][\num{m}]$. అందువల్ల
+$\Sat{M}{\Th{Q}}$ కనుక $n\neq m$ అయినప్పుడల్లా
+$\Sat{M}{\eq/[\num{n}][\num{m}]}$. కనుక $n\neq m$ అయితే
+$\Value{\num{n}}{M}\neq\Value{\num{m}}{M}$, అంటే $g(n)\neq g(m)$.
+
+$g$ ఒక సమరూపత అని కూడా నిర్ధారించాలి.
+\begin{enumerate}
+\item $\Assign{\Obj{0}}{N}=0$ కాబట్టి
+  $g(\Assign{\Obj{0}}{N})=g(0)$. $g$ నిర్వచనం వల్ల
+  $g(0)=\Value{\num{0}}{M}$. కానీ $\num{0}$ అనేది $\Obj{0}$;
+  యాదృచ్ఛికంగా ఒక \tetoken{స్థిరసంకేతమైన}{!!a{constant}} పదం
+  విలువను, ఆ \tetoken{నిర్మాణం}{!!{structure}} ఆ
+  \tetoken{స్థిరసంకేతానికి}{!!{constant}} కేటాయించినదే ఇస్తుంది:
+  $\Value{\Obj{0}}{M}=\Assign{\Obj{0}}{M}$. కాబట్టి అవసరమైనట్లుగా
+  $g(\Assign{\Obj{0}}{N})=\Assign{\Obj{0}}{M}$.
+\item $\Struct{N}$లో $\prime$ అనేది $\Nat$పై ఉత్తరాధికారి ప్రమేయం
+  కాబట్టి $g(\Assign{\prime}{N}(n))=g(n+1)$. $g$ నిర్వచనం వల్ల
+  $g(n+1)=\Value{\num{n+1}}{M}$. కానీ $\num{n+1}$, $\num{n}'$ ఒకే
+  పదం; కనుక $\Value{\num{n+1}}{M}=\Value{\num{n}'}{M}$. విలువ
+  ప్రమేయ నిర్వచనం వల్ల ఇది
+  $=\Assign{\prime}{M}(\Value{\num{n}}{M})$. మరి
+  $\Value{\num{n}}{M}=g(n)$ కాబట్టి
+  $g(\Assign{\prime}{N}(n))=\Assign{\prime}{M}(g(n))$.
+\item $\Struct{N}$లో $+$ అనేది $\Nat$పై సంకలన ప్రమేయం కాబట్టి
+  $g(\Assign{+}{N}(n,m))=g(n+m)$. $g$ నిర్వచనం వల్ల
+  $g(n+m)=\Value{\num{n+m}}{M}$. అయితే
+  $\Th{Q}\Proves\num{n+m}=(\num{n}+\num{m})$; కనుక
+  $\Value{\num{n+m}}{M}=\Value{\num{n}+\num{m}}{M}$.
+  విలువ ప్రమేయ నిర్వచనం వల్ల ఇది
+  $=\Assign{+}{M}(\Value{\num{n}}{M},\Value{\num{m}}{M})$.
+  $\Value{\num{n}}{M}=g(n)$, $\Value{\num{m}}{M}=g(m)$ కాబట్టి
+  $g(\Assign{+}{N}(n,m))=\Assign{+}{M}(g(n),g(m))$.
+\item $g(\Assign{\times}{N}(n,m))
+  =\Assign{\times}{M}(g(n),g(m))$: అభ్యాసం.
+\item $\tuple{n,m}\in\Assign{<}{N}$ అవడం సరిగ్గా $n<m$ అయినప్పుడే.
+  $n<m$ అయితే $\Th{Q}\Proves\num{n}<\num{m}$, అలాగే
+  $\Sat{M}{\num{n}<\num{m}}$. కనుక
+  $\tuple{\Value{\num{n}}{M},\Value{\num{m}}{M}}\in\Assign{<}{M}$,
+  అంటే $\tuple{g(n),g(m)}\in\Assign{<}{M}$. $n\not<m$ అయితే
+  $\Th{Q}\Proves\lnot\num{n}<\num{m}$, అందువల్ల
+  $\Sat/{M}{\num{n}<\num{m}}$. కనుక మునుపటిలాగే
+  $\tuple{g(n),g(m)}\notin\Assign{<}{M}$. రెండింటినీ కలిపితే,
+  $\tuple{n,m}\in\Assign{<}{N}$ అవడం సరిగ్గా
+  $\tuple{g(n),g(m)}\in\Assign{<}{M}$ అయినప్పుడే.
+\end{enumerate}
+\end{proof}
+
+\begin{explain}
+$\Lang{L_A}$కు గల మరే
+\tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M}$ అయినా
+$\num{0}$, $\num{1}$, $\num{2}$ మొదలైనవి పేరు పెట్టే
+\tetoken{మూలకాలను}{!!{element}s} కలిగి ఉంటుంది. అందువల్ల
+$\Nat$ నుంచి దాని వ్యక్తి క్షేత్రానికి చిత్రణను నిర్వచించడానికి
+$g$ అత్యంత సహజమైన మార్గం. కాబట్టి $\Struct{M}$ కనీసం
+$\num{n}$ల గురించిన కొన్ని మౌలిక వాక్యాలను $\Struct{N}$లాగే సత్యం
+చేస్తూ, $g$ ద్విగుణమైతే, $g$ సమరూపత అవడంలో ఆశ్చర్యం లేదు. నిజానికి,
+$\Domain{M}$లో $\num{n}$లు పేరు పెట్టేవి తప్ప మరే
+\tetoken{మూలకాలు}{!!{element}s} లేకపోతే, అది ఒక్కటే సమరూపత.
+\end{explain}
+
+\begin{prop}
+\ollabel{prop:thq-unique-iso} $\Struct{M}$ ప్రామాణికమైతే,
+\olref{prop:thq-standard} నిరూపణలోని $g$ మాత్రమే
+$\Struct{N}$ నుంచి $\Struct{M}$కు గల సమరూపత.
+\end{prop}
+
+\begin{proof}
+$h\colon\Nat\to\Domain{M}$ అనేది $\Struct{N}$, $\Struct{M}$ల మధ్య
+ఒక సమరూపత అనుకుందాం. $n$పై ఆగమనం ద్వారా $g=h$ అని చూపుతాం.
+$n=0$ అయితే, $g$ నిర్వచనం వల్ల
+$g(0)=\Assign{\Obj{0}}{M}$. కానీ $h$ సమరూపత కాబట్టి
+$h(0)=h(\Assign{\Obj{0}}{N})=\Assign{\Obj{0}}{M}$; కనుక
+$g(0)=h(0)$.
+
+ఇప్పుడు $n+1$ సందర్భాన్ని పరిశీలించండి. మనకు
+\begin{align*}
+  g(n+1) & = \Value{\num{n+1}}{M} \text{ $g$ నిర్వచనం వల్ల}\\
+  & = \Value{\num{n}'}{M} \text{ ఎందుకంటే $\num{n+1}\ident\num{n}'$}\\
+  & = \Assign{\prime}{M}(\Value{\num{n}}{M})
+    \text{ $\Value{t'}{M}$ నిర్వచనం వల్ల}\\
+  & = \Assign{\prime}{M}(g(n)) \text{ $g$ నిర్వచనం వల్ల}\\
+  & = \Assign{\prime}{M}(h(n)) \text{ ఆగమన పరికల్పన వల్ల}\\
+  & = h(\Assign{\prime}{N}(n)) \text{ $h$ సమరూపత కాబట్టి}\\
+  & = h(n+1)
+\end{align*}
+\end{proof}
+
+\begin{explain}
+ప్రతి \tetoken{అనంతంగా లెక్కించదగిన}{!!{denumerable}} సమితి~$M$ను
+తీసుకుంటే, $\Nat$కూ $M$కూ మధ్య ఒక \tetoken{ద్విగుణ ప్రమేయం}{!!a{bijection}}
+ఉంటుంది. కాబట్టి అటువంటి ప్రతి $M$, ఒక ప్రామాణిక నమూనా
+$\Struct{M}$కు సంభావ్య \tetoken{వ్యక్తి క్షేత్రం}{!!{domain}}.
+నిజానికి, $z\in M$ను, తగిన $s$ ప్రమేయాన్ని వరుసగా
+$\Assign{\Obj{0}}{M}$, $\Assign{\prime}{M}$గా ఎంచుకున్న వెంటనే
+$+$, $\times$, $<$ల అర్థనిర్దేశాలు కూడా నిర్ణయమైపోతాయి.
+$s\colon M\to M\setminus\{z\}$ ప్రమేయం
+\tetoken{ఒకటి-ఒకటి}{!!{injective}} మరియు
+\tetoken{సంగ్రస్త}{!!{surjective}} రెండూ అయితేనే, అది ప్రామాణిక
+నమూనా $\Struct{M}$లో $\Assign{\prime}{M}$గా తగినది. $s$ పరిధిలో $z$ ఉండకూడదు;
+లేకపోతే $\lforall[x][\eq/[\Obj 0][x']]$ అసత్యమవుతుంది. ఆ
+\tetoken{వాక్యం}{!!{sentence}} $\Struct{N}$లో సత్యం కాబట్టి
+$\Struct{M}$ కూడా దాన్ని సత్యం చేయాలి. $s$
+\tetoken{ఒకటి-ఒకటి}{!!{injective}} అయి ఉండాలి; ఎందుకంటే
+$\Struct{N}$లోని ఉత్తరాధికారి ప్రమేయం $\Assign{\prime}{N}$
+\tetoken{ఒకటి-ఒకటి}{!!{injective}}, ఆ $\Assign{\prime}{N}$ ధర్మం
+$\Struct{N}$లో సత్యమైన
+\tetoken{ఒక వాక్యం}{!!a{sentence}} ద్వారా వ్యక్తమవుతుంది.
+ఆ ప్రమేయం \tetoken{సంగ్రస్త}{!!{surjective}} అయి ఉండాలి; లేకపోతే
+ఏదో $x\in M\setminus\{z\}$, $s$ పరిధిలో ఉండదు, అంటే
+$\lforall[x][(\eq[x][\Obj 0]\lor\lexists[y][\eq[y'][x]])]$ అనే
+\tetoken{వాక్యం}{!!{sentence}} $\Struct{M}$లో అసత్యమవుతుంది---కానీ
+అది $\Struct{N}$లో సత్యం.
+\sourcecorrection{OLTEMODARI-004}{ఇక్కడ సంగ్రస్తత విఫలమైతే
+$x$, $s$ యొక్క పరిధిలో ఉండదనాలి; ఆంగ్ల మూలం పొరపాటుగా
+“వ్యక్తి క్షేత్రంలో” అంటుంది. ప్రమేయపు వ్యక్తి క్షేత్రం మొత్తం
+$M$గానే ఉన్నందున, వాదనకు అవసరమైన పరిధి అనే పదాన్ని వాడాం.}
+\end{explain}
+
+\end{document}

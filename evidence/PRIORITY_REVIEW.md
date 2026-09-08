@@ -1,6 +1,6 @@
 # Priority review
 
-This view contains 38 of 175 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
+This view contains 39 of 193 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
 
 Final reader pages remain pending; exact source and target file/line locators are shown.
 
@@ -383,3 +383,13 @@ Final reader pages remain pending; exact source and target file/line locators ar
 - Occurrences: OLP-0186 translation/content/model-theory/basics/overspill.tex:9-10; OLP-0189 translation/content/model-theory/basics/partial-iso.tex:120-129; OLP-0190 translation/content/model-theory/basics/dlo.tex:12-27
 
 - Review question: Please double-check whether “అధిప్రసరణ (ఓవర్‌స్పిల్) / పరిమాణక ర్యాంకు / n-తుల్యత / అనుసంధానం / అంత్యబిందువులు లేని సాంద్ర రేఖీయ క్రమం” is idiomatic and technically standard for “overspill / quantifier rank / n-equivalence / concatenation / dense linear order without endpoints” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T059 — successor / predecessor / arithmetic block / discrete order / order of non-standard blocks
+
+- Chosen rendering: ఉత్తరాధికారి / పూర్వాధికారి / అంకగణిత ఖండం / వివిక్త క్రమం / అప్రామాణిక ఖండాల క్రమం
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0196 translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:64-77; OLP-0196 translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:111-123
+
+- Review question: Please double-check whether “ఉత్తరాధికారి / పూర్వాధికారి / అంకగణిత ఖండం / వివిక్త క్రమం / అప్రామాణిక ఖండాల క్రమం” is idiomatic and technically standard for “successor / predecessor / arithmetic block / discrete order / order of non-standard blocks” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
