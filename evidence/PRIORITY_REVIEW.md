@@ -1,6 +1,6 @@
 # Priority review
 
-This view contains 40 of 204 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
+This view contains 41 of 227 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
 
 Final reader pages remain pending; exact source and target file/line locators are shown.
 
@@ -403,3 +403,13 @@ Final reader pages remain pending; exact source and target file/line locators ar
 - Occurrences: OLP-0199 translation/content/model-theory/interpolation/introduction.tex:13-20; OLP-0199 translation/content/model-theory/interpolation/introduction.tex:22-27; OLP-0200 translation/content/model-theory/interpolation/separation.tex:25-30; OLP-0201 translation/content/model-theory/interpolation/interpolation-proof.tex:42-122
 
 - Review question: Please double-check whether “అంతర్వేశ సిద్ధాంతం / అంతర్వేశకం (ఇంటర్‌పోలంట్) / వేరుపరచడం / వేరుపరచలేని / గరిష్ఠంగా వేరుపరచలేని జత / ఉమ్మడి అవైరుధ్య సిద్ధాంతం” is idiomatic and technically standard for “interpolation theorem / interpolant / separation / inseparable / maximally inseparable pair / joint consistency theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T063 — abstract logic / normal logic / L-monotonicity / Expansion Property / Isomorphism Property / Renaming Property / Boolean Property / Quantifier Property / Relativization Property / Lindström characterization
+
+- Chosen rendering: నైరూప్య తర్కం / సాధారణ నైరూప్య తర్కం / L-ఏకదిశత / విస్తరణ ధర్మం / సమరూపతా ధర్మం / పునర్నామకరణ ధర్మం / బూలియన్ ధర్మం / పరిమాణక ధర్మం / సాపేక్షీకరణ ధర్మం / లిండ్‌స్ట్రోమ్ లక్షణీకరణ
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0205 translation/content/model-theory/lindstrom/abstract-logics.tex:12-31; OLP-0205 translation/content/model-theory/lindstrom/abstract-logics.tex:61-162
+
+- Review question: Please double-check whether “నైరూప్య తర్కం / సాధారణ నైరూప్య తర్కం / L-ఏకదిశత / విస్తరణ ధర్మం / సమరూపతా ధర్మం / పునర్నామకరణ ధర్మం / బూలియన్ ధర్మం / పరిమాణక ధర్మం / సాపేక్షీకరణ ధర్మం / లిండ్‌స్ట్రోమ్ లక్షణీకరణ” is idiomatic and technically standard for “abstract logic / normal logic / L-monotonicity / Expansion Property / Isomorphism Property / Renaming Property / Boolean Property / Quantifier Property / Relativization Property / Lindström characterization” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?

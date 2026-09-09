@@ -20,7 +20,7 @@ Continuing concept DOI:
 GitHub, GitHub Pages, and Zenodo public bytes have been anonymously verified;
 see [PUBLICATION.md](PUBLICATION.md).
 
-One hundred ninety-nine full-unit editable drafts exist in this repository: Sets (7),
+Two hundred four full-unit editable drafts exist in this repository: Sets (7),
 Relations (9), Functions (7), Size of Sets (14), Arithmetization (8) and
 Infinite Sets (6), plus the Propositional Logic part driver and complete
 Syntax and Semantics chapter (8), the shared Proof Systems chapter (6), and
@@ -31,8 +31,8 @@ the First-Order Logic part driver plus complete Introduction chapter (11),
 complete Syntax chapter (10), complete Semantics chapter (8), complete
 Theories and Their Models chapter (7), complete Beyond First-order Logic
 chapter (8), and the Model Theory part driver plus complete Basics chapter
-(9), complete Models of Arithmetic chapter (7), and complete Interpolation
-chapter (5). All twenty-three batches have
+(9), complete Models of Arithmetic chapter (7), complete Interpolation
+chapter (5), and complete Lindström chapter (5). All twenty-four batches have
 source-aligned structural and same-agent semantic review records. The Sets
 chapter also has an offline semantic HTML reader with Telugu document metadata, native MathML,
 local fonts, accessible inline diagrams, resolved internal links, and a
@@ -42,8 +42,8 @@ Relations, Functions, Size of Sets, Arithmetization, Infinite Sets,
 Propositional Logic, Proof Systems, Sequent Calculus, Natural Deduction,
 Tableaux, Axiomatic Deduction, First-Order Completeness and First-Order
 Introduction, Syntax, Semantics, Theories and Their Models, Beyond
-First-order Logic, Model Theory Basics, Models of Arithmetic, and Interpolation
-are not yet integrated into that reader. The other 523 units and the
+First-order Logic, Model Theory Basics, Models of Arithmetic, Interpolation,
+and Lindström are not yet integrated into that reader. The other 518 units and the
 coherent full reader remain in progress; neither current chapter format
 substitutes for that remaining work.
 
@@ -78,7 +78,7 @@ twelve in Tableaux, eleven in Axiomatic Deduction, nine in First-Order
 Completeness, five in First-Order Introduction, six in First-Order Syntax,
 ten in First-Order Semantics, one in First-Order Theories and Their Models,
 four in Beyond First-order Logic, ten in Model Theory Basics, fifteen in
-Models of Arithmetic, and nine in Interpolation
+Models of Arithmetic, nine in Interpolation, and twenty-two in Lindström
 are minimally repaired and disclosed beside the affected
 Telugu claims. The frozen
 English bytes remain unchanged. The Size of Sets records adopt ten shared
@@ -117,13 +117,14 @@ and the bounded
 [Beyond First-order Logic audit](evidence/source-audits/2026-09-07-beyond-first-order-telugu/REVIEW.md),
 [Model Theory Basics audit](evidence/source-audits/2026-09-07-model-theory-basics-telugu/REVIEW.md),
 [Models of Arithmetic audit](evidence/source-audits/2026-09-08-models-of-arithmetic-telugu/REVIEW.md),
-and [Interpolation audit](evidence/source-audits/2026-09-08-interpolation-telugu/REVIEW.md).
+the [Interpolation audit](evidence/source-audits/2026-09-08-interpolation-telugu/REVIEW.md),
+and the [Lindström audit](evidence/source-audits/2026-09-08-lindstrom-telugu/REVIEW.md).
 
 The [canonical translation-decision index](evidence/START_HERE.md) exposes all
-62 current terminology/sense decisions and 142 corrections with exact
+63 current terminology/sense decisions and 164 corrections with exact
 source/target locators, aligned segment hashes, authorities actually checked,
 known evidence limits, alternatives, uncertainty, and concrete review
-questions. Its status is explicitly partial (199/722); optional expert review
+questions. Its status is explicitly partial (204/722); optional expert review
 creates no translation hold. The canonical views include a
 [full readable register](evidence/TRANSLATION_DECISIONS_FULL.md), a
 [priority view](evidence/PRIORITY_REVIEW.md), a
@@ -148,16 +149,16 @@ last-two-pass hashes; all-page visual inspection; mixed-script and Telugu
 conjunct extraction samples. The final log has zero missing glyphs,
 overfull boxes, undefined references or warnings.
 
-All 199 editable drafts pass correction-aware blank-block,
+All 204 editable drafts pass correction-aware blank-block,
 environment, source-token, protected-identifier and mathematical-form checks.
-Twenty-three same-agent semantic reviews record source-aligned reverse paraphrases and
+Twenty-four same-agent semantic reviews record source-aligned reverse paraphrases and
 their limits. Size of Sets, Arithmetization, Infinite Sets and Propositional
 Logic Syntax and Semantics, Proof Systems, Sequent Calculus, and Natural
 Deduction, Tableaux, Axiomatic Deduction, First-Order Completeness and
 First-Order Introduction, Syntax, Semantics, Theories and Their Models, and
-Beyond First-order Logic, Model Theory Basics, Models of Arithmetic, and
-Interpolation have source QA only at this checkpoint; no PDF or HTML reader
-integration is claimed for those one hundred ninety-two units.
+Beyond First-order Logic, Model Theory Basics, Models of Arithmetic,
+Interpolation, and Lindström have source QA only at this checkpoint; no PDF
+or HTML reader integration is claimed for those one hundred ninety-seven units.
 
 QA is machine/agent performed, not human or independent review. Several
 technical terms remain provisional. The PDF is not tagged. Source caveats

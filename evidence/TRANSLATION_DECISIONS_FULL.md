@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **199 of 722 source units drafted**. This readable view contains all 204 decisions and 343 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **204 of 722 source units drafted**. This readable view contains all 227 decisions and 367 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -1746,6 +1746,33 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T062-OCC-001; OLP-0202; OLP-0202-B006; source upstream/content/model-theory/interpolation/definability.tex:13-32 bytes 216-1252 SHA-256 9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29; target translation/content/model-theory/interpolation/definability.tex:13-34 bytes 253-2675 SHA-256 553a87a16a855e4f80b8baf38a753d947cce7f654014d89c4fc2024a73014942; reader page pending.
   - te-Telu-IN-TE-T062-OCC-002; OLP-0202; OLP-0202-B007; source upstream/content/model-theory/interpolation/definability.tex:34-44 bytes 1253-1646 SHA-256 9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29; target translation/content/model-theory/interpolation/definability.tex:36-48 bytes 2676-3387 SHA-256 553a87a16a855e4f80b8baf38a753d947cce7f654014d89c4fc2024a73014942; reader page pending.
   - te-Telu-IN-TE-T062-OCC-003; OLP-0202; OLP-0202-B008; source upstream/content/model-theory/interpolation/definability.tex:46-57 bytes 1647-2092 SHA-256 9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29; target translation/content/model-theory/interpolation/definability.tex:50-62 bytes 3388-4173 SHA-256 553a87a16a855e4f80b8baf38a753d947cce7f654014d89c4fc2024a73014942; reader page pending.
+
+## te-Telu-IN-TE-T063 — abstract logic / normal logic / L-monotonicity / Expansion Property / Isomorphism Property / Renaming Property / Boolean Property / Quantifier Property / Relativization Property / Lindström characterization
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: నైరూప్య తర్కం / సాధారణ నైరూప్య తర్కం / L-ఏకదిశత / విస్తరణ ధర్మం / సమరూపతా ధర్మం / పునర్నామకరణ ధర్మం / బూలియన్ ధర్మం / పరిమాణక ధర్మం / సాపేక్షీకరణ ధర్మం / లిండ్‌స్ట్రోమ్ లక్షణీకరణ
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “abstract logic / normal logic / L-monotonicity / Expansion Property / Isomorphism Property / Renaming Property / Boolean Property / Quantifier Property / Relativization Property / Lindström characterization” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low semantic uncertainty because every property is defined or used in an explicit displayed condition; high nomenclatural uncertainty for abstract-logic and Lindström labels
+
+- Rationale: The cited native pages support Telugu theorem, proof, set, relation, function, truth, consequence, consistency, predicate, first-order, quantifier, domain, sentence and inference register. They do not directly attest the abstract-logic property names or Lindström characterization. The frozen OLP-0204 definitions and OLP-0203/0207 statements fix the exact abstract-logic, normality, monotonicity, expansion, isomorphism, renaming, Boolean, quantifier, relativization and characterization senses. L- is retained as formal notation; లిండ్‌స్ట్రోమ్ is the source eponym; no unsupported English property name is left in reader-facing prose
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P004 [checked_context_only], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C004:TE-P012 [checked_context_only], PDF page 319; printed page 312; Questions 37-38; Function-versus-relation explanatory register; do not copy source answers mechanically. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P026 [checked_context_only], PDF page 88; printed page 81; Consistency section; Direct consistency/inconsistency terminology; not direct completeness terminology. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P028 [checked_context_only], PDF page 92; printed page 85; Unary predicates, binary relations and quantifier classification; Direct quantifier taxonomy and predicate/relation context. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C005:TE-P033 [checked_context_only], PDF page 40; printed page 33; Inference section heading and definition; Direct inference and explanatory register; derivation headword is separately witnessed at TE-P024.
+
+- Alternatives: leave abstract logic and the property names in English reader prose [rejected: rejected] | claim direct native attestation for every specialized property label [rejected: rejected because the frozen definitions control the exact senses]
+
+- Review question: Please double-check whether “నైరూప్య తర్కం / సాధారణ నైరూప్య తర్కం / L-ఏకదిశత / విస్తరణ ధర్మం / సమరూపతా ధర్మం / పునర్నామకరణ ధర్మం / బూలియన్ ధర్మం / పరిమాణక ధర్మం / సాపేక్షీకరణ ధర్మం / లిండ్‌స్ట్రోమ్ లక్షణీకరణ” is idiomatic and technically standard for “abstract logic / normal logic / L-monotonicity / Expansion Property / Isomorphism Property / Renaming Property / Boolean Property / Quantifier Property / Relativization Property / Lindström characterization” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T063-OCC-001; OLP-0205; OLP-0205-B005; source upstream/content/model-theory/lindstrom/abstract-logics.tex:12-22 bytes 210-796 SHA-256 5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678; target translation/content/model-theory/lindstrom/abstract-logics.tex:12-31 bytes 238-2318 SHA-256 1014f8ee8f2d77bedcd0f250e3e6247ee78067d5ee46bf2ac46407df3a3fbdab; reader page pending.
+  - te-Telu-IN-TE-T063-OCC-002; OLP-0205; OLP-0205-B008; source upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106 bytes 2149-5226 SHA-256 5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678; target translation/content/model-theory/lindstrom/abstract-logics.tex:61-162 bytes 5266-15600 SHA-256 1014f8ee8f2d77bedcd0f250e3e6247ee78067d5ee46bf2ac46407df3a3fbdab; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -5446,3 +5473,575 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEMODINT-009-OCC-001; OLP-0201; OLP-0201-B010; source upstream/content/model-theory/interpolation/interpolation-proof.tex:39-59 bytes 1380-2617 SHA-256 702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931; target translation/content/model-theory/interpolation/interpolation-proof.tex:41-81 bytes 2460-6670 SHA-256 d6de2eb462bf1eecc24e8c6375ba987d552c8e85fc16cd51eca7f0f3a0243989; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-016 — OLTEMODLIN-016: confirmed incomplete first order vocabulary description
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: expanded the ordinary first-order vocabulary to include predicate and constant symbols; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed incomplete first order vocabulary description at lines 17-21, ordinary first-order logic as an abstract logic, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-016 [checked_supports], content/model-theory/lindstrom/abstract-logics.tex; lines 17-21, ordinary first-order logic as an abstract logic; confirmed_incomplete_first_order_vocabulary_description; expanded the ordinary first-order vocabulary to include predicate and constant symbols; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that ordinary first-order sentences are described as built from all language symbols, including predicates, rather than from constants alone.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-016-OCC-001; OLP-0205; OLP-0205-B005; source upstream/content/model-theory/lindstrom/abstract-logics.tex:17-21 bytes 494-785 SHA-256 5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678; target translation/content/model-theory/lindstrom/abstract-logics.tex:25-30 bytes 1482-2307 SHA-256 1014f8ee8f2d77bedcd0f250e3e6247ee78067d5ee46bf2ac46407df3a3fbdab; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-004 — OLTEMODLIN-004: confirmed missing finite vocabulary membership
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: required finite-sublanguage membership for E; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing finite vocabulary membership at lines 55-60, Expansion Property, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-004 [checked_supports], content/model-theory/lindstrom/abstract-logics.tex; lines 55-60, Expansion Property; confirmed_missing_finite_vocabulary_membership; required finite-sublanguage membership for E; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the Expansion Property places E in L of the finite sublanguage L-prime before later proofs use that membership.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-004-OCC-001; OLP-0205; OLP-0205-B008; source upstream/content/model-theory/lindstrom/abstract-logics.tex:55-60 bytes 2471-2859 SHA-256 5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678; target translation/content/model-theory/lindstrom/abstract-logics.tex:69-81 bytes 5769-7338 SHA-256 1014f8ee8f2d77bedcd0f250e3e6247ee78067d5ee46bf2ac46407df3a3fbdab; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-001 — OLTEMODLIN-001: confirmed wrong renaming referent
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: made M-prime the renamed L-prime structure corresponding to M; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed wrong renaming referent at lines 64-71, Renaming Property, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-001 [checked_supports], content/model-theory/lindstrom/abstract-logics.tex; lines 64-71, Renaming Property; confirmed_wrong_renaming_referent; made M-prime the renamed L-prime structure corresponding to M; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the renamed L-prime structure M-prime corresponds to the original structure M, rather than to the language L.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-001-OCC-001; OLP-0205; OLP-0205-B008; source upstream/content/model-theory/lindstrom/abstract-logics.tex:64-71 bytes 3000-3519 SHA-256 5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678; target translation/content/model-theory/lindstrom/abstract-logics.tex:85-99 bytes 7510-9010 SHA-256 1014f8ee8f2d77bedcd0f250e3e6247ee78067d5ee46bf2ac46407df3a3fbdab; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-018 — OLTEMODLIN-018: confirmed undefined atomic formula closure clause
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: stated the atomic-sentence base clause explicitly; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed undefined atomic formula closure clause at lines 72-79, Boolean Property, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-018 [checked_supports], content/model-theory/lindstrom/abstract-logics.tex; lines 72-79, Boolean Property; confirmed_undefined_atomic_formula_closure_clause; stated the atomic-sentence base clause explicitly; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the Boolean Property supplies the atomic-sentence base case using constants, without presupposing semantics for open formulas.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-018-OCC-001; OLP-0205; OLP-0205-B008; source upstream/content/model-theory/lindstrom/abstract-logics.tex:72-79 bytes 3519-3970 SHA-256 5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678; target translation/content/model-theory/lindstrom/abstract-logics.tex:100-115 bytes 9010-11186 SHA-256 1014f8ee8f2d77bedcd0f250e3e6247ee78067d5ee46bf2ac46407df3a3fbdab; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-019 — OLTEMODLIN-019: confirmed wrong quantified sentence language
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: placed the quantified result F in the reduced language L-prime; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed wrong quantified sentence language at lines 80-89, Quantifier Property, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-019 [checked_supports], content/model-theory/lindstrom/abstract-logics.tex; lines 80-89, Quantifier Property; confirmed_wrong_quantified_sentence_language; placed the quantified result F in the reduced language L-prime; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that binding and removing c places the resulting sentence F in L of the reduced language L-prime.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-019-OCC-001; OLP-0205; OLP-0205-B008; source upstream/content/model-theory/lindstrom/abstract-logics.tex:80-89 bytes 3970-4372 SHA-256 5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678; target translation/content/model-theory/lindstrom/abstract-logics.tex:116-129 bytes 11186-12377 SHA-256 1014f8ee8f2d77bedcd0f250e3e6247ee78067d5ee46bf2ac46407df3a3fbdab; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-002 — OLTEMODLIN-002: confirmed undefined relation interpretation
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: defined the relativized fibre with X, the supplied interpretation of R; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed undefined relation interpretation at lines 90-104, Relativization Property, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-002 [checked_supports], content/model-theory/lindstrom/abstract-logics.tex; lines 90-104, Relativization Property; confirmed_undefined_relation_interpretation; defined the relativized fibre with X, the supplied interpretation of R; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the relativized domain uses X, the supplied interpretation of the fresh predicate R, instead of the undefined interpretation of R in the original structure.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-002-OCC-001; OLP-0205; OLP-0205-B008; source upstream/content/model-theory/lindstrom/abstract-logics.tex:90-104 bytes 4372-5199 SHA-256 5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678; target translation/content/model-theory/lindstrom/abstract-logics.tex:130-150 bytes 12377-14335 SHA-256 1014f8ee8f2d77bedcd0f250e3e6247ee78067d5ee46bf2ac46407df3a3fbdab; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-003 — OLTEMODLIN-003: confirmed missing relativized domain admissibility
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: required a nonempty fibre closed under original constant interpretations; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing relativized domain admissibility at lines 90-104, Relativization Property, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-003 [checked_supports], content/model-theory/lindstrom/abstract-logics.tex; lines 90-104, Relativization Property; confirmed_missing_relativized_domain_admissibility; required a nonempty fibre closed under original constant interpretations; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that relativization is restricted to a nonempty fibre containing every original constant interpretation, exactly as required for an induced substructure.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-003-OCC-001; OLP-0205; OLP-0205-B008; source upstream/content/model-theory/lindstrom/abstract-logics.tex:90-104 bytes 4372-5199 SHA-256 5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678; target translation/content/model-theory/lindstrom/abstract-logics.tex:151-160 bytes 14335-15573 SHA-256 1014f8ee8f2d77bedcd0f250e3e6247ee78067d5ee46bf2ac46407df3a3fbdab; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-017 — OLTEMODLIN-017: confirmed mismatched concatenation predicate symbols
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used one shared P,Q pair for both coded structures; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed mismatched concatenation predicate symbols at lines 68-86, two coded sequence structures, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-017 [checked_supports], content/model-theory/lindstrom/ls-property.tex; lines 68-86, two coded sequence structures; confirmed_mismatched_concatenation_predicate_symbols; used one shared P,Q pair for both coded structures; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that both coded sequence structures interpret the same fresh predicate symbols P and Q, so the ambient comparison has one vocabulary.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-017-OCC-001; OLP-0206; OLP-0206-B012; source upstream/content/model-theory/lindstrom/ls-property.tex:68-86 bytes 2873-3962 SHA-256 ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5; target translation/content/model-theory/lindstrom/ls-property.tex:79-87 bytes 6036-7068 SHA-256 78c7209322f7b3512b459d253dd47df908964e7f6d84ac3e9236596542a7c48f; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-021 — OLTEMODLIN-021: confirmed unprepared sort union
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: prepared disjoint tagged element and sequence sorts before coding; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed unprepared sort union at lines 59-86, element and finite-sequence sorts, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-021 [checked_supports], content/model-theory/lindstrom/ls-property.tex; lines 59-86, element and finite-sequence sorts; confirmed_unprepared_sort_union; prepared disjoint tagged element and sequence sorts before coding; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the element and finite-sequence domains are prepared as tagged disjoint sorts before their union is used.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-021-OCC-001; OLP-0206; OLP-0206-B012; source upstream/content/model-theory/lindstrom/ls-property.tex:59-86 bytes 2249-3962 SHA-256 ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5; target translation/content/model-theory/lindstrom/ls-property.tex:88-97 bytes 7068-8524 SHA-256 78c7209322f7b3512b459d253dd47df908964e7f6d84ac3e9236596542a7c48f; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-005 — OLTEMODLIN-005: confirmed misdescribed partial isomorphism code
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: coded membership of the coordinate map in the chosen partial-isomorphism family; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed misdescribed partial isomorphism code at lines 74-80, definition of the coding relation I, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-005 [checked_supports], content/model-theory/lindstrom/ls-property.tex; lines 74-80, definition of the coding relation I; confirmed_misdescribed_partial_isomorphism_code; coded membership of the coordinate map in the chosen partial-isomorphism family; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that I codes membership of the coordinate map sending each a_i to b_i in the chosen partial-isomorphism family.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-005-OCC-001; OLP-0206; OLP-0206-B013; source upstream/content/model-theory/lindstrom/ls-property.tex:74-80 bytes 3192-3628 SHA-256 ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5; target translation/content/model-theory/lindstrom/ls-property.tex:98-108 bytes 8524-9902 SHA-256 78c7209322f7b3512b459d253dd47df908964e7f6d84ac3e9236596542a7c48f; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-006 — OLTEMODLIN-006: confirmed structure symbol collision and malformed star
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: renamed the ambient coding structure K and model K-zero and repaired starred domains; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed structure symbol collision and malformed star at lines 80-118 and figure, ambient coding structure, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-006 [checked_supports], content/model-theory/lindstrom/ls-property.tex; lines 80-118 and figure, ambient coding structure; confirmed_structure_symbol_collision_and_malformed_star; renamed the ambient coding structure K and model K-zero and repaired starred domains; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that K and K-zero name the ambient coding structure and its countable model, and that both starred domains use well-formed subscripts.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-006-OCC-001; OLP-0206; OLP-0206-B013; source upstream/content/model-theory/lindstrom/ls-property.tex:80-118 bytes 3562-5431 SHA-256 ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5; target translation/content/model-theory/lindstrom/ls-property.tex:109-126 bytes 9902-11787 SHA-256 78c7209322f7b3512b459d253dd47df908964e7f6d84ac3e9236596542a7c48f; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-007 — OLTEMODLIN-007: confirmed wrong sentence classification
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: classified D-one as an abstract L-sentence and D-two as first-order; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed wrong sentence classification at lines 109-116, sentences D_1 and D_2, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-007 [checked_supports], content/model-theory/lindstrom/ls-property.tex; lines 109-116, sentences D_1 and D_2; confirmed_wrong_sentence_classification; classified D-one as an abstract L-sentence and D-two as first-order; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that D-one is an abstract L-sentence obtained by relativization and Boolean closure, while D-two alone is first-order.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-007-OCC-001; OLP-0206; OLP-0206-B015; source upstream/content/model-theory/lindstrom/ls-property.tex:109-116 bytes 4758-5295 SHA-256 ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5; target translation/content/model-theory/lindstrom/ls-property.tex:149-160 bytes 12725-14093 SHA-256 78c7209322f7b3512b459d253dd47df908964e7f6d84ac3e9236596542a7c48f; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-008 — OLTEMODLIN-008: confirmed missing lemma normality hypothesis
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: added normality to the finite-rank lemma hypothesis; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing lemma normality hypothesis at lines 13-21, finite-rank lemma, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-008 [checked_supports], content/model-theory/lindstrom/lindstrom-proof.tex; lines 13-21, finite-rank lemma; confirmed_missing_lemma_normality_hypothesis; added normality to the finite-rank lemma hypothesis; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the finite-rank lemma explicitly assumes a normal abstract logic, as required to treat its first-order D inside L.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-008-OCC-001; OLP-0207; OLP-0207-B006; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:13-21 bytes 217-652 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:15-26 bytes 302-1719 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-009 — OLTEMODLIN-009: confirmed bound formula symbol collision
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used A for the bounded first-order sentence variable; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed bound formula symbol collision at lines 24-36, construction of D_M, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-009 [checked_supports], content/model-theory/lindstrom/lindstrom-proof.tex; lines 24-36, construction of D_M; confirmed_bound_formula_symbol_collision; used A for the bounded first-order sentence variable; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that A, rather than the abstract sentence E, ranges over bounded-rank first-order sentences in the finite conjunction.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-009-OCC-001; OLP-0207; OLP-0207-B007; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:24-36 bytes 663-1444 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:30-46 bytes 1744-3612 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-020 — OLTEMODLIN-020: confirmed improper infinite conjunction and disjunction
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: selected finite representatives for the Boolean constructions; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed improper infinite conjunction and disjunction at lines 24-36, construction of D_M and D, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-020 [checked_supports], content/model-theory/lindstrom/lindstrom-proof.tex; lines 24-36, construction of D_M and D; confirmed_improper_infinite_conjunction_and_disjunction; selected finite representatives for the Boolean constructions; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the conjunctions and disjunction use one representative from each of finitely many equivalence classes, so they are genuine finite first-order formulas.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-020-OCC-001; OLP-0207; OLP-0207-B007; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:24-36 bytes 663-1444 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:47-55 bytes 3612-4721 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-010 — OLTEMODLIN-010: confirmed malformed structure subscripts
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: repaired both D-N subscripts; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed malformed structure subscripts at lines 38-44, converse direction of the lemma, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-010 [checked_supports], content/model-theory/lindstrom/lindstrom-proof.tex; lines 38-44, converse direction of the lemma; confirmed_malformed_structure_subscripts; repaired both D-N subscripts; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that both occurrences of D sub N enclose the full structure symbol N in the subscript.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-010-OCC-001; OLP-0207; OLP-0207-B008; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:38-44 bytes 1445-1856 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:57-68 bytes 4863-5812 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-011 — OLTEMODLIN-011: confirmed missing theorem normality hypothesis
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: added normality to the Lindstrom theorem hypothesis; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing theorem normality hypothesis at lines 47-52, Lindstrom theorem statement, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-011 [checked_supports], content/model-theory/lindstrom/lindstrom-proof.tex; lines 47-52, Lindstrom theorem statement; confirmed_missing_theorem_normality_hypothesis; added normality to the Lindstrom theorem hypothesis; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the Lindström theorem explicitly assumes normality in addition to compactness and the Löwenheim--Skolem property.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-011-OCC-001; OLP-0207; OLP-0207-B009; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:47-52 bytes 1869-2152 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:72-81 bytes 5876-7095 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-022 — OLTEMODLIN-022: confirmed wrong empty sequence notation
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored emptyseq notation for the empty sequence; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed wrong empty sequence notation at lines 61-69, two I_n base-tuple occurrences, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-022 [checked_supports], content/model-theory/lindstrom/lindstrom-proof.tex; lines 61-69, two I_n base-tuple occurrences; confirmed_wrong_empty_sequence_notation; restored emptyseq notation for the empty sequence; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that both base-tuple occurrences use the chapter’s empty-sequence notation emptyseq rather than the empty-set notation emptyset.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-022-OCC-001; OLP-0207; OLP-0207-B010; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:61-69 bytes 2564-3079 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:85-98 bytes 7163-8472 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-012 — OLTEMODLIN-012: confirmed unjustified structure unions
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: made the compatible-copy, rank-preserving reindexing, and tagged-sort preparations explicit; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed unjustified structure unions at lines 66-95, subsequence and union constructions, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-012 [checked_supports], content/model-theory/lindstrom/lindstrom-proof.tex; lines 66-95, subsequence and union constructions; confirmed_unjustified_structure_unions; made the compatible-copy, rank-preserving reindexing, and tagged-sort preparations explicit; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the subsequence is reindexed rank-preservingly and that compatible copies and tagged disjoint sorts make the stated unions well defined.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-012-OCC-001; OLP-0207; OLP-0207-B011; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-95 bytes 2812-4595 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:108-122 bytes 9419-11586 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-013 — OLTEMODLIN-013: confirmed ambient structure symbol collision
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: separated the ambient K and compactness model K-star from the side structures; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed ambient structure symbol collision at lines 82-109, ambient coding structure and compactness model, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-013 [checked_supports], content/model-theory/lindstrom/lindstrom-proof.tex; lines 82-109, ambient coding structure and compactness model; confirmed_ambient_structure_symbol_collision; separated the ambient K and compactness model K-star from the side structures; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that K names the ambient structure and K-star its compactness model, without colliding with the previously constructed M-star side structure.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-013-OCC-001; OLP-0207; OLP-0207-B012; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-109 bytes 3787-5319 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:88-154 bytes 7375-14370 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-014 — OLTEMODLIN-014: confirmed wrong satisfaction relation
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used the abstract satisfaction relation models-L in the coding sentence; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed wrong satisfaction relation at lines 100-105, sentence D, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-014 [checked_supports], content/model-theory/lindstrom/lindstrom-proof.tex; lines 100-105, sentence D; confirmed_wrong_satisfaction_relation; used the abstract satisfaction relation models-L in the coding sentence; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the abstract sentence E is evaluated with models-L in both M_n and N_n clauses.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-014-OCC-001; OLP-0207; OLP-0207-B013; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105 bytes 4752-5117 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:155-167 bytes 14370-15720 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.
+
+## te-Telu-IN-OLTEMODLIN-015 — OLTEMODLIN-015: confirmed missing nonstandard type
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: added the fresh constant and finite type forcing a nonstandard index; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing nonstandard type at lines 107-121, compactness step, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMODLIN-20260908:OLTEMODLIN-015 [checked_supports], content/model-theory/lindstrom/lindstrom-proof.tex; lines 107-121, compactness step; confirmed_missing_nonstandard_type; added the fresh constant and finite type forcing a nonstandard index; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the fresh constant d and the full type of numeral inequalities force its value to be a nonstandard index after compactness.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMODLIN-015-OCC-001; OLP-0207; OLP-0207-B014; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-121 bytes 5118-6017 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:169-184 bytes 15802-17406 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.

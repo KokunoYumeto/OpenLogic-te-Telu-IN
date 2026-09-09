@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 199 of 722 draft units**. This view selects 178 of 204 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 204 of 722 draft units**. This view selects 201 of 227 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -363,6 +363,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0199; model-theory/interpolation/introduction; translation/content/model-theory/interpolation/introduction.tex:13-20; printed/PDF page pending; OLP-0199; model-theory/interpolation/introduction; translation/content/model-theory/interpolation/introduction.tex:22-27; printed/PDF page pending; OLP-0200; model-theory/interpolation/separation; translation/content/model-theory/interpolation/separation.tex:25-30; printed/PDF page pending; OLP-0201; model-theory/interpolation/interpolation-proof; translation/content/model-theory/interpolation/interpolation-proof.tex:42-122; printed/PDF page pending
 
 - Please double-check: Please double-check whether “అంతర్వేశ సిద్ధాంతం / అంతర్వేశకం (ఇంటర్‌పోలంట్) / వేరుపరచడం / వేరుపరచలేని / గరిష్ఠంగా వేరుపరచలేని జత / ఉమ్మడి అవైరుధ్య సిద్ధాంతం” is idiomatic and technically standard for “interpolation theorem / interpolant / separation / inseparable / maximally inseparable pair / joint consistency theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T063 — abstract logic / normal logic / L-monotonicity / Expansion Property / Isomorphism Property / Renaming Property / Boolean Property / Quantifier Property / Relativization Property / Lindström characterization
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: నైరూప్య తర్కం / సాధారణ నైరూప్య తర్కం / L-ఏకదిశత / విస్తరణ ధర్మం / సమరూపతా ధర్మం / పునర్నామకరణ ధర్మం / బూలియన్ ధర్మం / పరిమాణక ధర్మం / సాపేక్షీకరణ ధర్మం / లిండ్‌స్ట్రోమ్ లక్షణీకరణ
+
+- Occurrences: OLP-0205; model-theory/lindstrom/abstract-logics; translation/content/model-theory/lindstrom/abstract-logics.tex:12-31; printed/PDF page pending; OLP-0205; model-theory/lindstrom/abstract-logics; translation/content/model-theory/lindstrom/abstract-logics.tex:61-162; printed/PDF page pending
+
+- Please double-check: Please double-check whether “నైరూప్య తర్కం / సాధారణ నైరూప్య తర్కం / L-ఏకదిశత / విస్తరణ ధర్మం / సమరూపతా ధర్మం / పునర్నామకరణ ధర్మం / బూలియన్ ధర్మం / పరిమాణక ధర్మం / సాపేక్షీకరణ ధర్మం / లిండ్‌స్ట్రోమ్ లక్షణీకరణ” is idiomatic and technically standard for “abstract logic / normal logic / L-monotonicity / Expansion Property / Isomorphism Property / Renaming Property / Boolean Property / Quantifier Property / Relativization Property / Lindström characterization” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -1783,3 +1793,223 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0201; model-theory/interpolation/interpolation-proof; translation/content/model-theory/interpolation/interpolation-proof.tex:41-81; printed/PDF page pending
 
 - Please double-check: Please double-check that both recursive sequences explicitly remain unchanged whenever their respective addition condition fails.
+
+## REV-OLTEMODLIN-016 — OLTEMODLIN-016
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: expanded the ordinary first-order vocabulary to include predicate and constant symbols; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0205; model-theory/lindstrom/abstract-logics; translation/content/model-theory/lindstrom/abstract-logics.tex:25-30; printed/PDF page pending
+
+- Please double-check: Please double-check that ordinary first-order sentences are described as built from all language symbols, including predicates, rather than from constants alone.
+
+## REV-OLTEMODLIN-004 — OLTEMODLIN-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: required finite-sublanguage membership for E; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0205; model-theory/lindstrom/abstract-logics; translation/content/model-theory/lindstrom/abstract-logics.tex:69-81; printed/PDF page pending
+
+- Please double-check: Please double-check that the Expansion Property places E in L of the finite sublanguage L-prime before later proofs use that membership.
+
+## REV-OLTEMODLIN-001 — OLTEMODLIN-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: made M-prime the renamed L-prime structure corresponding to M; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0205; model-theory/lindstrom/abstract-logics; translation/content/model-theory/lindstrom/abstract-logics.tex:85-99; printed/PDF page pending
+
+- Please double-check: Please double-check that the renamed L-prime structure M-prime corresponds to the original structure M, rather than to the language L.
+
+## REV-OLTEMODLIN-018 — OLTEMODLIN-018
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: stated the atomic-sentence base clause explicitly; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0205; model-theory/lindstrom/abstract-logics; translation/content/model-theory/lindstrom/abstract-logics.tex:100-115; printed/PDF page pending
+
+- Please double-check: Please double-check that the Boolean Property supplies the atomic-sentence base case using constants, without presupposing semantics for open formulas.
+
+## REV-OLTEMODLIN-019 — OLTEMODLIN-019
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: placed the quantified result F in the reduced language L-prime; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0205; model-theory/lindstrom/abstract-logics; translation/content/model-theory/lindstrom/abstract-logics.tex:116-129; printed/PDF page pending
+
+- Please double-check: Please double-check that binding and removing c places the resulting sentence F in L of the reduced language L-prime.
+
+## REV-OLTEMODLIN-002 — OLTEMODLIN-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: defined the relativized fibre with X, the supplied interpretation of R; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0205; model-theory/lindstrom/abstract-logics; translation/content/model-theory/lindstrom/abstract-logics.tex:130-150; printed/PDF page pending
+
+- Please double-check: Please double-check that the relativized domain uses X, the supplied interpretation of the fresh predicate R, instead of the undefined interpretation of R in the original structure.
+
+## REV-OLTEMODLIN-003 — OLTEMODLIN-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: required a nonempty fibre closed under original constant interpretations; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0205; model-theory/lindstrom/abstract-logics; translation/content/model-theory/lindstrom/abstract-logics.tex:151-160; printed/PDF page pending
+
+- Please double-check: Please double-check that relativization is restricted to a nonempty fibre containing every original constant interpretation, exactly as required for an induced substructure.
+
+## REV-OLTEMODLIN-017 — OLTEMODLIN-017
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used one shared P,Q pair for both coded structures; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0206; model-theory/lindstrom/ls-property; translation/content/model-theory/lindstrom/ls-property.tex:79-87; printed/PDF page pending
+
+- Please double-check: Please double-check that both coded sequence structures interpret the same fresh predicate symbols P and Q, so the ambient comparison has one vocabulary.
+
+## REV-OLTEMODLIN-021 — OLTEMODLIN-021
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: prepared disjoint tagged element and sequence sorts before coding; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0206; model-theory/lindstrom/ls-property; translation/content/model-theory/lindstrom/ls-property.tex:88-97; printed/PDF page pending
+
+- Please double-check: Please double-check that the element and finite-sequence domains are prepared as tagged disjoint sorts before their union is used.
+
+## REV-OLTEMODLIN-005 — OLTEMODLIN-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: coded membership of the coordinate map in the chosen partial-isomorphism family; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0206; model-theory/lindstrom/ls-property; translation/content/model-theory/lindstrom/ls-property.tex:98-108; printed/PDF page pending
+
+- Please double-check: Please double-check that I codes membership of the coordinate map sending each a_i to b_i in the chosen partial-isomorphism family.
+
+## REV-OLTEMODLIN-006 — OLTEMODLIN-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: renamed the ambient coding structure K and model K-zero and repaired starred domains; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0206; model-theory/lindstrom/ls-property; translation/content/model-theory/lindstrom/ls-property.tex:109-126; printed/PDF page pending
+
+- Please double-check: Please double-check that K and K-zero name the ambient coding structure and its countable model, and that both starred domains use well-formed subscripts.
+
+## REV-OLTEMODLIN-007 — OLTEMODLIN-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: classified D-one as an abstract L-sentence and D-two as first-order; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0206; model-theory/lindstrom/ls-property; translation/content/model-theory/lindstrom/ls-property.tex:149-160; printed/PDF page pending
+
+- Please double-check: Please double-check that D-one is an abstract L-sentence obtained by relativization and Boolean closure, while D-two alone is first-order.
+
+## REV-OLTEMODLIN-008 — OLTEMODLIN-008
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: added normality to the finite-rank lemma hypothesis; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:15-26; printed/PDF page pending
+
+- Please double-check: Please double-check that the finite-rank lemma explicitly assumes a normal abstract logic, as required to treat its first-order D inside L.
+
+## REV-OLTEMODLIN-009 — OLTEMODLIN-009
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used A for the bounded first-order sentence variable; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:30-46; printed/PDF page pending
+
+- Please double-check: Please double-check that A, rather than the abstract sentence E, ranges over bounded-rank first-order sentences in the finite conjunction.
+
+## REV-OLTEMODLIN-020 — OLTEMODLIN-020
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: selected finite representatives for the Boolean constructions; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:47-55; printed/PDF page pending
+
+- Please double-check: Please double-check that the conjunctions and disjunction use one representative from each of finitely many equivalence classes, so they are genuine finite first-order formulas.
+
+## REV-OLTEMODLIN-010 — OLTEMODLIN-010
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: repaired both D-N subscripts; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:57-68; printed/PDF page pending
+
+- Please double-check: Please double-check that both occurrences of D sub N enclose the full structure symbol N in the subscript.
+
+## REV-OLTEMODLIN-011 — OLTEMODLIN-011
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: added normality to the Lindstrom theorem hypothesis; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:72-81; printed/PDF page pending
+
+- Please double-check: Please double-check that the Lindström theorem explicitly assumes normality in addition to compactness and the Löwenheim--Skolem property.
+
+## REV-OLTEMODLIN-022 — OLTEMODLIN-022
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored emptyseq notation for the empty sequence; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:85-98; printed/PDF page pending
+
+- Please double-check: Please double-check that both base-tuple occurrences use the chapter’s empty-sequence notation emptyseq rather than the empty-set notation emptyset.
+
+## REV-OLTEMODLIN-012 — OLTEMODLIN-012
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: made the compatible-copy, rank-preserving reindexing, and tagged-sort preparations explicit; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:108-122; printed/PDF page pending
+
+- Please double-check: Please double-check that the subsequence is reindexed rank-preservingly and that compatible copies and tagged disjoint sorts make the stated unions well defined.
+
+## REV-OLTEMODLIN-013 — OLTEMODLIN-013
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: separated the ambient K and compactness model K-star from the side structures; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:88-154; printed/PDF page pending
+
+- Please double-check: Please double-check that K names the ambient structure and K-star its compactness model, without colliding with the previously constructed M-star side structure.
+
+## REV-OLTEMODLIN-014 — OLTEMODLIN-014
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used the abstract satisfaction relation models-L in the coding sentence; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:155-167; printed/PDF page pending
+
+- Please double-check: Please double-check that the abstract sentence E is evaluated with models-L in both M_n and N_n clauses.
+
+## REV-OLTEMODLIN-015 — OLTEMODLIN-015
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: added the fresh constant and finite type forcing a nonstandard index; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:169-184; printed/PDF page pending
+
+- Please double-check: Please double-check that the fresh constant d and the full type of numeral inequalities force its value to be a nonstandard index after compactness.

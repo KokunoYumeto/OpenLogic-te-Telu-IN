@@ -1,0 +1,331 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTEMODLIN-20260908",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0203",
+      "OLP-0204",
+      "OLP-0205",
+      "OLP-0206",
+      "OLP-0207"
+    ],
+    "finding_count": 22
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEMODLIN-022",
+      "unit_id": "OLP-0207",
+      "classification": "confirmed_wrong_empty_sequence_notation",
+      "source": {
+        "path": "content/model-theory/lindstrom/lindstrom-proof.tex",
+        "bytes": 6045,
+        "sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+        "locator": "lines 61-69, two I_n base-tuple occurrences"
+      },
+      "finding": "The proof writes the empty set as each argument of I_n, although the referenced definition uses the dedicated empty-sequence symbol.",
+      "controlling_evidence": "I_n relates equal-length finite sequences and the preceding definition writes I_n(emptyseq,emptyseq); the set-theoretic empty set is not the stipulated sequence notation.",
+      "required_translation_handling": "Use emptyseq in both occurrences and add an adjacent OLTEMODLIN-022 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-021",
+      "unit_id": "OLP-0206",
+      "classification": "confirmed_unprepared_sort_union",
+      "source": {
+        "path": "content/model-theory/lindstrom/ls-property.tex",
+        "bytes": 5656,
+        "sha256": "ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5",
+        "locator": "lines 59-86, element and finite-sequence sorts"
+      },
+      "finding": "The proof takes ordinary set unions of element and finite-sequence domains, and then of the M and N sides, without ensuring that the intended sorts are disjoint.",
+      "controlling_evidence": "The first-order coding uses unary predicates to distinguish these sorts and relativizes to each original domain; tagged isomorphic copies preserve the hypotheses and make those unions well defined without accidental overlap.",
+      "required_translation_handling": "Arrange disjoint tagged isomorphic copies of the element and sequence sorts, and of the two sides, before taking the unions; add an adjacent OLTEMODLIN-021 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-020",
+      "unit_id": "OLP-0207",
+      "classification": "confirmed_improper_infinite_conjunction_and_disjunction",
+      "source": {
+        "path": "content/model-theory/lindstrom/lindstrom-proof.tex",
+        "bytes": 6045,
+        "sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+        "locator": "lines 24-36, construction of D_M and D"
+      },
+      "finding": "The proof literally conjoins all true bounded-rank sentences and disjoins over all E-models, then calls both operations finite only 'up to logical equivalence'.",
+      "controlling_evidence": "The cited finiteness proposition supplies finitely many equivalence classes, so the legitimate finite formulas are obtained by choosing representatives of the relevant classes and distinct n-types.",
+      "required_translation_handling": "Choose one representative from each relevant equivalence class for both finite Boolean constructions and add an adjacent OLTEMODLIN-020 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-019",
+      "unit_id": "OLP-0205",
+      "classification": "confirmed_wrong_quantified_sentence_language",
+      "source": {
+        "path": "content/model-theory/lindstrom/abstract-logics.tex",
+        "bytes": 6670,
+        "sha256": "5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678",
+        "locator": "lines 80-89, Quantifier Property"
+      },
+      "finding": "After binding and removing constant c, the resulting sentence F is placed in L(L) even though its model class and the next line correctly use L-prime=L minus {c}.",
+      "controlling_evidence": "The quantifier operation eliminates the fresh constant, so F belongs to the reduced language L-prime; the displayed Mod subscript already confirms this.",
+      "required_translation_handling": "Place F in L(L-prime) and add an adjacent OLTEMODLIN-019 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-018",
+      "unit_id": "OLP-0205",
+      "classification": "confirmed_undefined_atomic_formula_closure_clause",
+      "source": {
+        "path": "content/model-theory/lindstrom/abstract-logics.tex",
+        "bytes": 6670,
+        "sha256": "5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678",
+        "locator": "lines 72-79, Boolean Property"
+      },
+      "finding": "The source says 'Similarly for atomic formulas' even though its abstract logic contains only sentences and has defined no satisfaction relation for formulas with free variables.",
+      "controlling_evidence": "The later induction embedding first-order logic requires ordinary atomic sentences, formed with constants, to be present with their usual semantics; Boolean closure then handles sentence connectives.",
+      "required_translation_handling": "State the atomic-sentence base clause explicitly and keep Boolean closure for the other connectives, with an adjacent OLTEMODLIN-018 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-017",
+      "unit_id": "OLP-0206",
+      "classification": "confirmed_mismatched_concatenation_predicate_symbols",
+      "source": {
+        "path": "content/model-theory/lindstrom/ls-property.tex",
+        "bytes": 5656,
+        "sha256": "ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5",
+        "locator": "lines 68-86, two coded sequence structures"
+      },
+      "finding": "M-star interprets new symbols P,Q, but the analogous N-star is assigned P-prime,Q-prime even though both must be structures for one shared language inside the ambient model.",
+      "controlling_evidence": "The relativization and first-order coding sentences compare the two sides in one vocabulary; the same P,Q symbols must encode S,T on M-star and S-prime,T-prime on N-star.",
+      "required_translation_handling": "Let N-star interpret the same symbols P,Q by S-prime,T-prime and add an adjacent OLTEMODLIN-017 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-016",
+      "unit_id": "OLP-0205",
+      "classification": "confirmed_incomplete_first_order_vocabulary_description",
+      "source": {
+        "path": "content/model-theory/lindstrom/abstract-logics.tex",
+        "bytes": 6670,
+        "sha256": "5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678",
+        "locator": "lines 17-21, ordinary first-order logic as an abstract logic"
+      },
+      "finding": "The source says first-order sentences are built from the constants in L, omitting the predicate symbols that its relational languages explicitly permit.",
+      "controlling_evidence": "The preceding introduction defines the chapter's languages as containing predicate symbols and individual constants, and atomic first-order formulas require the predicate vocabulary.",
+      "required_translation_handling": "Say that the sentences are built using the symbols of L and add an adjacent OLTEMODLIN-016 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-001",
+      "unit_id": "OLP-0205",
+      "classification": "confirmed_wrong_renaming_referent",
+      "source": {
+        "path": "content/model-theory/lindstrom/abstract-logics.tex",
+        "bytes": 6670,
+        "sha256": "5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678",
+        "locator": "lines 64-71, Renaming Property"
+      },
+      "finding": "The renamed structure M-prime is said to correspond to the language L rather than to the original structure M.",
+      "controlling_evidence": "The displayed biconditional compares M,E with their renamed counterparts M-prime,E-prime; a structure cannot be the renamed counterpart of a language.",
+      "required_translation_handling": "Say that M-prime is the L-prime structure corresponding to M and add an adjacent OLTEMODLIN-001 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-002",
+      "unit_id": "OLP-0205",
+      "classification": "confirmed_undefined_relation_interpretation",
+      "source": {
+        "path": "content/model-theory/lindstrom/abstract-logics.tex",
+        "bytes": 6670,
+        "sha256": "5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678",
+        "locator": "lines 90-104, Relativization Property"
+      },
+      "finding": "The domain of N invokes the interpretation of fresh R in the unexpanded L-structure M, where R has no interpretation.",
+      "controlling_evidence": "The same clause supplies X as R's interpretation in the expansion of M, so the intended fibre is defined by X(a,b_1,...,b_n).",
+      "required_translation_handling": "Define the domain by X(a,b_1,...,b_n) and add an adjacent OLTEMODLIN-002 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-003",
+      "unit_id": "OLP-0205",
+      "classification": "confirmed_missing_relativized_domain_admissibility",
+      "source": {
+        "path": "content/model-theory/lindstrom/abstract-logics.tex",
+        "bytes": 6670,
+        "sha256": "5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678",
+        "locator": "lines 90-104, Relativization Property"
+      },
+      "finding": "The property quantifies over arbitrary X and parameters while calling the resulting fibre a substructure, although the chapter permits constants and OpenLogic structures have nonempty domains.",
+      "controlling_evidence": "For a relational language with constants, a subset supports the indicated substructure only when it is nonempty and contains every original constant interpretation.",
+      "required_translation_handling": "State the nonempty-and-contains-constants admissibility condition for the fibre and add an adjacent OLTEMODLIN-003 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-004",
+      "unit_id": "OLP-0205",
+      "classification": "confirmed_missing_finite_vocabulary_membership",
+      "source": {
+        "path": "content/model-theory/lindstrom/abstract-logics.tex",
+        "bytes": 6670,
+        "sha256": "5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678",
+        "locator": "lines 55-60, Expansion Property"
+      },
+      "finding": "The property gives E a finite semantic support but omits that E belongs to the logic over that finite sublanguage, a fact used twice in the following proofs.",
+      "controlling_evidence": "Both the partial-isomorphism proof and the Lindström proof invoke this property to work with E in L(L-prime) for finite L-prime; first-order logic has the intended stronger property because every sentence has a finite vocabulary.",
+      "required_translation_handling": "Require E to belong to L(L-prime) as well as have satisfaction determined by the L-prime reduct, and add an adjacent OLTEMODLIN-004 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-005",
+      "unit_id": "OLP-0206",
+      "classification": "confirmed_misdescribed_partial_isomorphism_code",
+      "source": {
+        "path": "content/model-theory/lindstrom/ls-property.tex",
+        "bytes": 5656,
+        "sha256": "ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5",
+        "locator": "lines 74-80, definition of the coding relation I"
+      },
+      "finding": "The source calls two finite sequences 'isomorphic' and individually satisfying a back-and-forth condition, neither of which is the earlier definition of membership in a family of partial isomorphisms.",
+      "controlling_evidence": "The chosen family mathcal I already witnesses partial isomorphism; I(a,b) should hold exactly when the coordinate map a_i to b_i belongs to that family.",
+      "required_translation_handling": "Code membership of the coordinate map in mathcal I and add an adjacent OLTEMODLIN-005 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-006",
+      "unit_id": "OLP-0206",
+      "classification": "confirmed_structure_symbol_collision_and_malformed_star",
+      "source": {
+        "path": "content/model-theory/lindstrom/ls-property.tex",
+        "bytes": 5656,
+        "sha256": "ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5",
+        "locator": "lines 80-118 and figure, ambient coding structure"
+      },
+      "finding": "The ambient coding structure reuses M, thereby making the original M and M-star appear to be substructures of themselves, and the second starred-domain notation is malformed as Domain{N}*.",
+      "controlling_evidence": "The proof needs three distinct structures: the original M, its extension M-star, and an ambient structure containing the M and N sides. Its Löwenheim-Skolem model must likewise remain distinct from the internal M_0 and N_0.",
+      "required_translation_handling": "Name the ambient structure K and its enumerable model K_0, use Domain{M^*} and Domain{N^*}, update the figure/caption, and add an adjacent OLTEMODLIN-006 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-007",
+      "unit_id": "OLP-0206",
+      "classification": "confirmed_wrong_sentence_classification",
+      "source": {
+        "path": "content/model-theory/lindstrom/ls-property.tex",
+        "bytes": 5656,
+        "sha256": "ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5",
+        "locator": "lines 109-116, sentences D_1 and D_2"
+      },
+      "finding": "D_1 is called first-order even though it asserts the truth and falsity of an arbitrary abstract L-sentence by relativization.",
+      "controlling_evidence": "Relativization and Boolean closure yield an L-sentence D_1; only the structural coding assertion D_2 is first-order and is available in a normal logic.",
+      "required_translation_handling": "Classify D_1 as an L-sentence and D_2 as first-order, then add an adjacent OLTEMODLIN-007 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-008",
+      "unit_id": "OLP-0207",
+      "classification": "confirmed_missing_lemma_normality_hypothesis",
+      "source": {
+        "path": "content/model-theory/lindstrom/lindstrom-proof.tex",
+        "bytes": 6045,
+        "sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+        "locator": "lines 13-21, finite-rank lemma"
+      },
+      "finding": "The lemma treats its constructed first-order sentence D as an L-sentence with ordinary first-order semantics, but does not assume the normality that supplies that embedding.",
+      "controlling_evidence": "The preceding chapter remark establishes F less-than-or-equal-to L for normal logics and explicitly permits first-order sentences to be taken as members of every normal logic.",
+      "required_translation_handling": "Add normality to the lemma hypothesis and an adjacent OLTEMODLIN-008 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-009",
+      "unit_id": "OLP-0207",
+      "classification": "confirmed_bound_formula_symbol_collision",
+      "source": {
+        "path": "content/model-theory/lindstrom/lindstrom-proof.tex",
+        "bytes": 6045,
+        "sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+        "locator": "lines 24-36, construction of D_M"
+      },
+      "finding": "The proof reuses E for the first-order sentences conjoined into D_M, shadowing the fixed abstract sentence E.",
+      "controlling_evidence": "The chapter explicitly reserves A,B,... for first-order formulas and E,F,... for abstract sentences; using A here keeps the two roles distinct.",
+      "required_translation_handling": "Use A as the bound first-order-sentence variable and add an adjacent OLTEMODLIN-009 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-010",
+      "unit_id": "OLP-0207",
+      "classification": "confirmed_malformed_structure_subscripts",
+      "source": {
+        "path": "content/model-theory/lindstrom/lindstrom-proof.tex",
+        "bytes": 6045,
+        "sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+        "locator": "lines 38-44, converse direction of the lemma"
+      },
+      "finding": "Both occurrences of D indexed by structure N omit braces, leaving Struct{N} outside the intended subscript.",
+      "controlling_evidence": "D_M was defined with the entire structure symbol as its subscript, and these occurrences instantiate that same definition at N.",
+      "required_translation_handling": "Use D_{Struct{N}} twice and add an adjacent OLTEMODLIN-010 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-011",
+      "unit_id": "OLP-0207",
+      "classification": "confirmed_missing_theorem_normality_hypothesis",
+      "source": {
+        "path": "content/model-theory/lindstrom/lindstrom-proof.tex",
+        "bytes": 6045,
+        "sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+        "locator": "lines 47-52, Lindstrom theorem statement"
+      },
+      "finding": "The characterization assumes only Compactness and Löwenheim-Skolem, although the proof uses all the normal-logic closure properties and the parenthetical equivalence uses F less-than-or-equal-to L.",
+      "controlling_evidence": "The entire preceding section defines normality, proves F less-than-or-equal-to every normal logic, and the later proof invokes Expansion, Isomorphism, Relativization, Boolean, and Quantifier Properties.",
+      "required_translation_handling": "State that L is normal and add an adjacent OLTEMODLIN-011 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-012",
+      "unit_id": "OLP-0207",
+      "classification": "confirmed_unjustified_structure_unions",
+      "source": {
+        "path": "content/model-theory/lindstrom/lindstrom-proof.tex",
+        "bytes": 6045,
+        "sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+        "locator": "lines 66-95, subsequence and union constructions"
+      },
+      "finding": "The source forms unique minimal unions without arranging compatible overlaps, takes a subsequence without explaining why the reindexed pairs still satisfy I_n, and later combines element, sequence, and natural-number sorts without disjoint preparation.",
+      "controlling_evidence": "Isomorphic copies can share precisely the common constant interpretations and otherwise have disjoint domains; agreement on atomic sentences makes the overlap compatible. A subsequence m_n with m_n at least n retains I_n because higher back-and-forth rank implies lower rank. Tagged copies keep the coding sorts distinct.",
+      "required_translation_handling": "State the compatible-copy, rank-preserving reindexing, and tagged-sort preparation before taking the unions, then add an adjacent OLTEMODLIN-012 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-013",
+      "unit_id": "OLP-0207",
+      "classification": "confirmed_ambient_structure_symbol_collision",
+      "source": {
+        "path": "content/model-theory/lindstrom/lindstrom-proof.tex",
+        "bytes": 6045,
+        "sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+        "locator": "lines 82-109, ambient coding structure and compactness model"
+      },
+      "finding": "The ambient coding structure is named M even though M and M-star already denote the union on one side, and the compactness model M-star then collides with that earlier M-star.",
+      "controlling_evidence": "The proof needs the side structures M,M-star,N,N-star, a distinct ambient K, and a distinct compactness model K-star.",
+      "required_translation_handling": "Rename the ambient structure K and its compactness model K-star throughout and add an adjacent OLTEMODLIN-013 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-014",
+      "unit_id": "OLP-0207",
+      "classification": "confirmed_wrong_satisfaction_relation",
+      "source": {
+        "path": "content/model-theory/lindstrom/lindstrom-proof.tex",
+        "bytes": 6045,
+        "sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+        "locator": "lines 100-105, sentence D"
+      },
+      "finding": "The coding sentence asserts M_n models E and N_n does not model E with ordinary first-order satisfaction, although E is an arbitrary abstract L-sentence.",
+      "controlling_evidence": "Every other truth assertion about E in the chapter uses models_L, and Relativization is exactly what makes those abstract-satisfaction clauses expressible.",
+      "required_translation_handling": "Use models_L in both clauses and add an adjacent OLTEMODLIN-014 disclosure."
+    },
+    {
+      "finding_id": "OLTEMODLIN-015",
+      "unit_id": "OLP-0207",
+      "classification": "confirmed_missing_nonstandard_type",
+      "source": {
+        "path": "content/model-theory/lindstrom/lindstrom-proof.tex",
+        "bytes": 6045,
+        "sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+        "locator": "lines 107-121, compactness step"
+      },
+      "finding": "Compactness is applied to the single sentence D and claimed to yield a nonstandard order element, but D itself has the original standard ordered model and does not force any element above every standard numeral.",
+      "controlling_evidence": "Adding a fresh constant d and the type {bar n < d : n in Nat} yields a finitely satisfiable set: each finite fragment is realized by a sufficiently large standard number. Compactness then gives d a genuinely nonstandard value.",
+      "required_translation_handling": "Apply Compactness to D together with the fresh-constant type, identify n-star with d's value, and add an adjacent OLTEMODLIN-015 disclosure."
+    }
+  ]
+}
