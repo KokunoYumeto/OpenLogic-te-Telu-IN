@@ -130,7 +130,9 @@ for(const u of units){
  const notes=reader.footnotes.slice(fn),englishNotes=english.footnotes.slice(efn);
  if(notes.length)body+='<section class="footnotes" aria-label="పాదసూచికలు"><ol start="'+notes[0].number+'">'+notes.map(n=>'<li id="'+escapeHtml(n.id)+'">'+n.html+' <a class="footnote-back" href="#'+encodeURIComponent(n.ref)+'" aria-label="పాఠ్యంలోకి తిరిగి వెళ్ళండి">↩</a></li>').join('')+'</ol></section>';
  if(englishNotes.length)source+='<section class="footnotes" aria-label="Footnotes"><ol start="'+englishNotes[0].number+'">'+englishNotes.map(n=>'<li id="'+escapeHtml(n.id)+'">'+n.html+' <a class="footnote-back" href="#'+encodeURIComponent(n.ref)+'" aria-label="Back to text">↩</a></li>').join('')+'</ol></section>';
- const title=/\\ol(?:chapter|section)\{([^}]+)\}/.exec(u.te)?.[1];
+ const chapterTitle=/\\olchapter\{[^}]*\}\{[^}]*\}\{([^}]+)\}/.exec(u.te)?.[1];
+ const sectionTitle=/\\olsection\{([^}]+)\}/.exec(u.te)?.[1];
+ const title=chapterTitle??sectionTitle;
  if(title)sections.push({title,id:u.unit_id});
  u.html='<section class="source-unit" id="'+u.unit_id+'" data-unit-id="'+u.unit_id+'" data-translation-sha256="'+sha(u.te)+'"><p class="unit-id">'+u.unit_id+'</p><div class="telugu-text">'+body+'</div><details class="english" lang="en"><summary>Canonical English source · '+u.unit_id+'</summary>'+source+'</details></section>';
  const commandDelta=(after,before)=>Object.fromEntries(Object.entries(after).map(([k,v])=>[k,v-(before[k]??0)]).filter(([,v])=>v));

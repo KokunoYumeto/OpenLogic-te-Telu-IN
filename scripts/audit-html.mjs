@@ -9,8 +9,8 @@ const receiptArg=process.argv.find(a=>a.startsWith('--receipt='));
 if(process.argv.some(a=>a.startsWith('--')&&a!=='--pages'&&!a.startsWith('--scope=')&&!a.startsWith('--receipt=')))throw new Error('Unknown option');
 const scope=scopeArg?.slice('--scope='.length)??'sets';
 const profiles={
- sets:{start:4,end:10,slug:'sets',label:'Sets chapter, OLP-0004..OLP-0010',expectedAssets:3},
- sfr:{start:4,end:26,slug:'sfr',label:'Sets, Relations, and Functions chapters, OLP-0004..OLP-0026',expectedAssets:11}
+ sets:{start:4,end:10,slug:'sets',label:'Sets chapter, OLP-0004..OLP-0010',expectedAssets:3,chapterTitles:[[0,'సమితులు']]},
+ sfr:{start:4,end:26,slug:'sfr',label:'Sets, Relations, and Functions chapters, OLP-0004..OLP-0026',expectedAssets:11,chapterTitles:[[0,'సమితులు'],[7,'సంబంధాలు'],[16,'ప్రమేయాలు']]}
 };
 const profile=profiles[scope];
 if(!profile)throw new Error('Unknown scope '+scope);
@@ -54,6 +54,10 @@ assert(manifest.conditional_branches.every(row=>['true','false'].includes(row.se
 
 assert(/^<!doctype html>\n<html lang="te-Telu-IN">/.test(html),'Missing exact Telugu document language');
 assert(count(html,/<section class="source-unit"/g)===expectedIds.length,'Wrong source-unit count');
+const toc=/<nav aria-label="విషయ సూచిక">[\s\S]*?<ol>([\s\S]*?)<\/ol>/.exec(html)?.[1]??'';
+const tocRows=[...toc.matchAll(/<a href="#(OLP-\d{4})">([^<]+)<\/a>/g)].map(match=>({id:match[1],title:match[2]}));
+assert(tocRows.length===expectedIds.length&&tocRows.map(row=>row.id).join(',')===expectedIds.join(','),'Wrong HTML TOC coverage/order');
+for(const [index,title] of profile.chapterTitles)assert(tocRows[index]?.title===title,'Wrong chapter-driver TOC title '+expectedIds[index]);
 assert(count(html,/<details class="english" lang="en">/g)===expectedIds.length,'Wrong canonical-English disclosure count');
 assert(count(html,/<math\b/g)===teluguMath+englishMath,'Wrong rendered MathML count');
 assert(count(html,/<annotation encoding="application\/x-tex">/g)===teluguMath+englishMath,'Wrong TeX annotation count');

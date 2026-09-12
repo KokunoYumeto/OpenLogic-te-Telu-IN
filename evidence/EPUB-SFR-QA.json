@@ -1,12 +1,12 @@
 {
   "artifact": {
-    "bytes": 354650,
+    "bytes": 354646,
     "direction": "ltr",
     "filename": "openlogic-te-Telu-IN-sfr-v0.3.0.epub",
     "language": "te-Telu-IN",
     "media_type": "application/epub+zip",
     "rendition": "reflowable",
-    "sha256": "f80b6490a6975bf49e6159443013ddffa3afb4373525dab37e011a59b05c49e5"
+    "sha256": "14558fd925098e97e4657c6df39639364af25b51d4c0c5e2736817156d1732ed"
   },
   "content": {
     "bibliography_entries": 1,
@@ -423,9 +423,9 @@
   "date": "2026-09-12",
   "determinism": {
     "byte_identical": true,
-    "cold_bytes": 354650,
+    "cold_bytes": 354646,
     "cold_filename": "openlogic-te-Telu-IN-sfr-v0.3.0-cold.epub",
-    "cold_sha256": "f80b6490a6975bf49e6159443013ddffa3afb4373525dab37e011a59b05c49e5",
+    "cold_sha256": "14558fd925098e97e4657c6df39639364af25b51d4c0c5e2736817156d1732ed",
     "fixed_zip_timestamp": "2026-09-12T00:00:00Z"
   },
   "epubcheck": {
@@ -639,10 +639,10 @@
     }
   ],
   "source_identity": {
-    "html_bytes": 1034602,
+    "html_bytes": 1034665,
     "html_path": "docs/sfr/index.html",
-    "html_sha256": "bb8744b88932314057aaffbd43010fee6ca88bac2db9e503947522bc0014828b",
-    "render_manifest_sha256": "fc462e91e69aaee35e9baf6dd366970230e17ce367c1fac2cb1219a6fb9b16e4",
+    "html_sha256": "95d95c8664eceedab56f2c0402375b7adb9ef1e5c4471d1b651bdc6f428de210",
+    "render_manifest_sha256": "546f323c21c0b8a589e2afc0fbaecd73787917b51f74cff1420fa3cd95e6480b",
     "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0"
   },
   "status": "COMPLETE_PASS",

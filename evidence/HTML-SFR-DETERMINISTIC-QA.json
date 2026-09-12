@@ -1,6 +1,6 @@
 {
   "schema": "openlogic-te-html-deterministic-qa/2",
-  "generated_utc": "2026-09-12T14:14:23.638Z",
+  "generated_utc": "2026-09-12T14:17:45.797Z",
   "scope": "Sets, Relations, and Functions chapters, OLP-0004..OLP-0026",
   "directory": "docs/sfr",
   "units": 23,
@@ -12,14 +12,14 @@
   "citation_keys": 1,
   "inline_svg_instances": 6,
   "compiled_svg_instances": 16,
-  "telugu_code_points": 43601,
+  "telugu_code_points": 43625,
   "network_runtime_dependencies": 0,
   "toolchain": {
     "node": "v22.17.0",
     "package_lock_sha256": "790803e48fc7e9e678b39eefc97b1fd4bfe8561ea4baefab486ab41df462294e",
-    "builder_sha256": "2c6679bbf6ae0679557c5ac9faa9292c06901abe04c9321b399c441c9dd2f897",
+    "builder_sha256": "91ccb40a9c6dfcea122487337cda24d06be96e1c53c278f7efc9119ae97ada8b",
     "reader_sha256": "034f90fae9010bd72c2bf591b99fa163fa8706837a8a8e051e64ba1fae1a198e",
-    "auditor_sha256": "1cd5823ec5bb6d7c460a501da81212bb68e993f318659664737b0a0467e2cfa3"
+    "auditor_sha256": "1973244cb197aef66c83bb54a4a68362f25d5288e78122fbae582e6d54fef10f"
   },
   "files": [
     {
@@ -79,8 +79,8 @@
     },
     {
       "name": "index.html",
-      "bytes": 1034602,
-      "sha256": "bb8744b88932314057aaffbd43010fee6ca88bac2db9e503947522bc0014828b"
+      "bytes": 1034665,
+      "sha256": "95d95c8664eceedab56f2c0402375b7adb9ef1e5c4471d1b651bdc6f428de210"
     },
     {
       "name": "KATEX-LICENSE",
@@ -100,7 +100,7 @@
     {
       "name": "render-manifest.json",
       "bytes": 538510,
-      "sha256": "fc462e91e69aaee35e9baf6dd366970230e17ce367c1fac2cb1219a6fb9b16e4"
+      "sha256": "546f323c21c0b8a589e2afc0fbaecd73787917b51f74cff1420fa3cd95e6480b"
     }
   ],
   "status": "COMPLETE_PASS"
