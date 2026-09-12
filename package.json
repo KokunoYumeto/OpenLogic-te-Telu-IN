@@ -1,6 +1,6 @@
 {
   "name": "openlogic-te-telu-in",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "type": "module",
   "license": "CC-BY-4.0",
@@ -8,8 +8,13 @@
   "scripts": {
     "html": "node scripts/build-html.mjs",
     "html:pages": "node scripts/build-html.mjs --pages",
+    "html:sfr": "node scripts/build-html.mjs --scope=sfr",
+    "html:sfr:pages": "node scripts/build-html.mjs --scope=sfr --pages",
     "audit:html": "node scripts/audit-html.mjs",
     "audit:html:pages": "node scripts/audit-html.mjs --pages",
+    "audit:html:sfr": "node scripts/audit-html.mjs --scope=sfr",
+    "audit:html:sfr:pages": "node scripts/audit-html.mjs --scope=sfr --pages",
+    "epub:sfr": "python scripts/build-sets-epub.py",
     "evidence:reviews": "node scripts/build-review-log.mjs && node scripts/build-translation-decisions.mjs && python scripts/validate-translation-decisions.py",
     "check:sets": "node scripts/audit-batch.mjs 4 10 001"
   },

@@ -3,7 +3,12 @@ import {renderTeluguTokens} from './telugu-token-markup.mjs';
 
 export const escapeHtml = text => text.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 export function realizeTokens(text, language='te') {
-  if(language==='en') return text.replace(/!!(\^?)(a?)\{element\}(s?)/g,(_,cap,a,p)=>(a?(cap?'An ':'an '):'')+(cap&&!a?'Element':'element')+(p?'s':''));
+  if(language==='en') return text.replace(/!!(\^?)(a?)\{([^{}]+)\}(s?)/g,(_,cap,a,key,p)=>{
+    let word=key+(p?'s':'');
+    if(cap)word=word.charAt(0).toUpperCase()+word.slice(1);
+    if(a)word=(cap?'A ':'a ')+word;
+    return word;
+  });
   return renderTeluguTokens(text);
 }
 
@@ -71,11 +76,13 @@ export function parseTex(source) {
         if(env==='tagblock')arg=group();
         out.push({type:'environment',name:env,option,arg,children:parse(env),start});continue;
       }
-      const arities={documentclass:1,olchapter:3,olfileid:3,olsection:1,olimport:1,ollabel:1,olref:1,oliflabeldef:3,olasset:1,caption:1,emph:1,textit:1,textbf:1,textrm:1,footnote:1,href:2,url:1,label:1,ref:1,sourcecorrection:2};
-      if(name==='OLEndChapterHook'||name==='dots'||name==='ldots'||name==='par'){out.push({type:'command',name,args:[],options:[],start});continue;}
+      const arities={documentclass:1,olchapter:3,olfileid:3,olsection:1,olimport:1,ollabel:1,olref:1,oliflabeldef:3,olasset:1,readerdiagram:1,intertext:1,H:1,item:0,caption:1,emph:1,textit:1,textbf:1,textrm:1,footnote:1,href:2,url:1,label:1,ref:1,cref:1,sourcecorrection:2,cite:1,citealt:1,citeauthor:1,citep:1,citet:1,citeyear:1};
+      if(name==='OLEndChapterHook'||name==='dots'||name==='ldots'||name==='par'||name==='noindent'||name==='textparagraph'){out.push({type:'command',name,args:[],options:[],start});continue;}
       if(!(name in arities))throw new Error('Unsupported text command \\'+name+' at '+start);
       const options=[];space();while(source[pos]==='['){options.push(group('[',']'));space();}
-      const args=Array.from({length:arities[name]},()=>group());
+      let args;
+      try{args=Array.from({length:arities[name]},()=>group());}
+      catch(error){throw new Error('Command \\'+name+' arguments at '+start+': '+error.message,{cause:error});}
       out.push({type:'command',name,args,options,start});
     }
     if(until)throw new Error('Unclosed environment '+until);
@@ -88,19 +95,26 @@ const macros={
   '\\Setabs':'\\{#1:#2\\}', '\\Pow':'\\wp(#1)', '\\Nat':'\\mathbb{N}',
   '\\Int':'\\mathbb{Z}', '\\Rat':'\\mathbb{Q}', '\\Real':'\\mathbb{R}',
   '\\Bin':'\\mathbb{B}', '\\PosInt':'\\mathbb{Z}^{+}', '\\lif':'\\mathbin{\\rightarrow}',
-  '\\tuple':'\\langle #1\\rangle', '\\len':'\\mathrm{len}(#1)',
+  '\\liff':'\\mathbin{\\leftrightarrow}', '\\emptyseq':'\\Lambda',
+  '\\tuple':'\\langle #1\\rangle', '\\len':'\\mathrm{len}(#1)', '\\Id':'\\mathrm{Id}_{#1}',
+  '\\dom':'\\operatorname{dom}(#1)', '\\ran':'\\operatorname{ran}(#1)',
+  '\\funfromto':'{}^{#1}{#2}', '\\funimage':'#1[#2]', '\\funrestrictionto':'#1|_{#2}',
+  '\\comp':'#2\\circ #1', '\\pto':'\\rightharpoonup', '\\fdefined':'\\downarrow', '\\fundefined':'\\uparrow',
+  '\\defis':'=', '\\cardle':'#1\\preceq #2', '\\cardless':'#1\\prec #2',
+  '\\cardeq':'#1\\approx #2', '\\cardneq':'#1\\not\\approx #2',
+  '\\closureofunder':'\\mathrm{clo}_{#1}(#2)', '\\equivrep':'[#1]_{#2}', '\\equivclass':'#1/_{#2}',
   '\\nicefrac':'{#1}/{#2}', '\\shoveleft':'#1','\\shoveright':'#1'
 };
 const names={
- te:{defn:'నిర్వచనం',ex:'ఉదాహరణ',prop:'ప్రతిపాదన',thm:'సిద్ధాంతం',prob:'అభ్యాసం',proof:'నిరూపణ',figure:'పటం'},
- en:{defn:'Definition',ex:'Example',prop:'Proposition',thm:'Theorem',prob:'Exercise',proof:'Proof',figure:'Figure'}
+ te:{defn:'నిర్వచనం',ex:'ఉదాహరణ',prop:'ప్రతిపాదన',thm:'సిద్ధాంతం',lem:'ఉపసిద్ధాంతం',cor:'పర్యవసానం',prob:'అభ్యాసం',proof:'నిరూపణ',figure:'పటం'},
+ en:{defn:'Definition',ex:'Example',prop:'Proposition',thm:'Theorem',lem:'Lemma',cor:'Corollary',prob:'Exercise',proof:'Proof',figure:'Figure'}
 };
 export class Reader {
-  constructor({language='te',labels=new Map(),assets,collect=false,prefix=''}){
-    Object.assign(this,{language,labels,assets,collect,prefix});
+  constructor({language='te',labels=new Map(),assets,citationData=new Map(),collect=false,prefix=''}){
+    Object.assign(this,{language,labels,assets,citationData,collect,prefix});
     this.chapter=0;this.section=0;this.statement=0;this.problem=0;this.figure=0;
     this.identity=['','',''];this.currentRef={number:'',id:''};
-    this.math=[];this.references=[];this.conditions=[];this.commands={};this.textRuns=[];this.footnotes=[];
+    this.math=[];this.references=[];this.conditions=[];this.commands={};this.textRuns=[];this.footnotes=[];this.citationsUsed=new Set();
   }
   refKey(options,key){
     if(options.length>3)throw new Error('Too many reference options');
@@ -137,7 +151,7 @@ export class Reader {
         const chunks=n.value.replace(/~+/g,'\u00a0').replaceAll('``','“').replaceAll("''",'”').split(/(\n\s*\n)/);
         for(const chunk of chunks){if(/^\n\s*\n$/.test(chunk)){flush();}else {const value=chunk.replace(/\s*\n\s*/g,' ');paragraph+=escapeHtml(value);this.textRuns.push(value);}}
       }else if(n.type==='escaped'){
-        const values={' ':' ', ',':'\u2009',';':'\u2005','!':'', '%':'%','&':'&','_':'_','#':'#','$':'$', '{':'{','}':'}','\\':'<br>'};
+        const values={' ':' ', ',':'\u2009',';':'\u2005','!':'','-':'','/':'','@':'', '%':'%','&':'&','_':'_','#':'#','$':'$', '{':'{','}':'}','\\':'<br>'};
         if(!(n.value in values))throw new Error('Unknown escaped text '+JSON.stringify(n.value)+' near '+JSON.stringify(n.context));
         paragraph+=n.value==='\\'?'<br>':escapeHtml(values[n.value]);
         this.textRuns.push(n.value==='\\'?'\n':values[n.value]);
@@ -145,10 +159,18 @@ export class Reader {
       else if(n.type==='math'){const html=this.renderMath(n);if(n.display)block(html);else paragraph+=html;}
       else if(n.type==='environment'){
         const env=n.name;
-        if(['document','explain','digress','tagblock'].includes(env)){
+        if(['document','explain','digress','tagblock','center','quote','intro','editorial'].includes(env)){
           const body=this.renderNodes(n.children);
-          block(env==='tagblock'?'<div class="source-tag" data-source-tag="'+escapeHtml(n.arg)+'">'+body+'</div>':body);
-        }else if(['defn','ex','prop','thm','prob'].includes(env)){
+          block(env==='tagblock'?'<div class="source-tag" data-source-tag="'+escapeHtml(n.arg)+'">'+body+'</div>':env==='center'?'<div class="center">'+body+'</div>':env==='quote'?'<blockquote>'+body+'</blockquote>':env==='editorial'?'<aside class="editorial">'+body+'</aside>':env==='intro'?'<section class="introduction">'+body+'</section>':body);
+        }else if(env==='enumerate'){
+          const items=[];let current=null;
+          for(const child of n.children){
+            if(child.type==='command'&&child.name==='item'){if(current)items.push(current);current={option:child.options[0]??'',nodes:[]};}
+            else {if(!current)throw new Error('Content before first list item');current.nodes.push(child);}
+          }
+          if(current)items.push(current);
+          block('<ol>'+items.map(item=>'<li>'+(item.option?'<span class="item-label">'+this.inline(item.option)+'</span> ':'')+this.renderNodes(item.nodes)+'</li>').join('')+'</ol>');
+        }else if(['defn','ex','prop','thm','lem','cor','prob'].includes(env)){
           const count=env==='prob'?++this.problem:++this.statement;
           const number=[this.chapter,this.section,count].join('.');
           const previous=this.currentRef;this.currentRef={number,id:''};
@@ -178,8 +200,8 @@ export class Reader {
         }else if(n.name==='ollabel'||n.name==='label'){
           const key=n.name==='label'?a:this.refKey([],a);
           paragraph+=this.register(key,this.currentRef.number);
-        }else if(n.name==='olref'||n.name==='ref'){
-          const key=n.name==='ref'?a:this.refKey(n.options,a),target=this.labels.get(key);
+        }else if(n.name==='olref'||n.name==='ref'||n.name==='cref'){
+          const key=n.name==='ref'||n.name==='cref'?a:this.refKey(n.options,a),target=this.labels.get(key);
           this.references.push({key,resolved:!!target});
           if(!target&&!this.collect)throw new Error('Unresolved reference '+key);
           paragraph+='<a href="#'+encodeURIComponent(this.prefix+key)+'">'+escapeHtml(target?.number??'?')+'</a>';
@@ -190,8 +212,13 @@ export class Reader {
         }else if(['emph','textit','textbf','textrm'].includes(n.name)){
           const tag={emph:'em',textit:'i',textbf:'strong',textrm:'span'}[n.name];paragraph+='<'+tag+'>'+this.inline(a)+'</'+tag+'>';
         }else if(n.name==='olasset'){
-          if(n.options.length)throw new Error('Asset size options not implemented');
           block(this.assets(a,this.language));
+        }else if(n.name==='readerdiagram'){
+          block(this.assets(a,this.language));
+        }else if(n.name==='intertext'){
+          block('<p>'+this.inline(a)+'</p>');
+        }else if(n.name==='H'){
+          const accented=(a+'\u030b').normalize('NFC');paragraph+=escapeHtml(accented);this.textRuns.push(accented);
         }else if(n.name==='caption')block('<figcaption>'+names[this.language].figure+' '+this.currentRef.number+': '+this.inline(a)+'</figcaption>');
         else if(n.name==='footnote'){
           const number=this.footnotes.length+1,id=this.prefix+'fn-'+number,ref=this.prefix+'fnref-'+number;
@@ -200,10 +227,25 @@ export class Reader {
         }
         else if(n.name==='sourcecorrection')block('<aside class="source-correction" data-finding="'+escapeHtml(a)+'"><h4>'+(this.language==='te'?'మూల దిద్దుబాటు ':'Source correction ')+escapeHtml(a)+'</h4>'+this.inline(b)+'</aside>');
         else if(n.name==='dots'||n.name==='ldots')paragraph+='…';
+        else if(n.name==='textparagraph')paragraph+='§';
+        else if(n.name==='noindent')continue;
         else if(n.name==='par')flush();
         else if(n.name==='href'||n.name==='url'){
           if(!/^https?:\/\//.test(a))throw new Error('Unsafe hyperlink');
           paragraph+='<a href="'+escapeHtml(a)+'">'+(n.name==='url'?escapeHtml(a):this.inline(b))+'</a>';
+        }else if(['cite','citealt','citeauthor','citep','citet','citeyear'].includes(n.name)){
+          const keys=a.split(',').map(value=>value.trim()).filter(Boolean);
+          if(!keys.length)throw new Error('Empty citation');
+          const locator=n.options.length?this.inline(n.options.join('; ')):'';
+          const links=keys.map(key=>{
+            const record=this.citationData.get(key);
+            if(!record)throw new Error('Unknown bibliography key '+key);
+            this.citationsUsed.add(key);
+            const author=record.author||record.editor||key,year=record.year||'n.d.';
+            const label=n.name==='citeauthor'?author:n.name==='citeyear'?year:author+', '+year;
+            return '<a class="citation" data-citation-command="'+escapeHtml(n.name)+'" data-citation-key="'+escapeHtml(key)+'" href="#bib-'+encodeURIComponent(key)+'">'+escapeHtml(label)+'</a>';
+          }).join('; ')+(locator?', '+locator:'');
+          paragraph+=n.name==='citet'?links.replace(/, ([^,;<]+)(?=<\/a>)/,' ($1)'):n.name==='citealt'||n.name==='citeauthor'||n.name==='citeyear'?links:'('+links+')';
         }else throw new Error('Unhandled command '+n.name);
       }else throw new Error('Unknown node type');
     }

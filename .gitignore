@@ -3,6 +3,7 @@
 /release-stage/
 /.venv/
 /node_modules/
+__pycache__/
 *.log
 *.aux
 *.toc

@@ -1,0 +1,82 @@
+{
+  "conversion": "Frozen TikZ compiled under the shared TeX lock, then converted by dvisvgm with text outlined as paths; localized semantic descriptions are supplied by the HTML/EPUB renderer.",
+  "diagrams": [
+    {
+      "name": "function",
+      "snippet_index": 1,
+      "source_path": "assets/diagrams/function.tikz",
+      "source_sha256": "0f9ad6d025a743c8b90509d7507bd88bfc6934e555175adc29d36c8ce93a04c9",
+      "svg_bytes": 5418,
+      "svg_path": "editions/reader-assets/diagrams/function.svg",
+      "svg_sha256": "b4277b7eaa16590381e5e84f7ceedfb9e487f828f891de4a64aa10eb84739458"
+    },
+    {
+      "name": "surjective",
+      "snippet_index": 1,
+      "source_path": "assets/diagrams/surjective.tikz",
+      "source_sha256": "324e03fb275baee81614586cadb5243deaf801050d061b9ec33d7ccebd4a282d",
+      "svg_bytes": 4792,
+      "svg_path": "editions/reader-assets/diagrams/surjective.svg",
+      "svg_sha256": "40b02809f64c1b42f45cb1c16dccc7cc5a85829687565fe3876170a753ce6433"
+    },
+    {
+      "name": "injective",
+      "snippet_index": 1,
+      "source_path": "assets/diagrams/injective.tikz",
+      "source_sha256": "7e2a17dfe1cab68938c4eed21fe135a33c0af33895cfe386fb38f270829060c2",
+      "svg_bytes": 5899,
+      "svg_path": "editions/reader-assets/diagrams/injective.svg",
+      "svg_sha256": "e6900aff855419a576e718450b5b6031d47b0feb0d266265457edb25821090f4"
+    },
+    {
+      "name": "bijective",
+      "snippet_index": 1,
+      "source_path": "assets/diagrams/bijective.tikz",
+      "source_sha256": "c6b3bf38943e8a2ecef195c57cbe77a2e016610ebd853fca1eba044a9c6789d5",
+      "svg_bytes": 4974,
+      "svg_path": "editions/reader-assets/diagrams/bijective.svg",
+      "svg_sha256": "afd681bebfecc5d6fbf5b612728588b750134f2e709d6d0d168d13f265756c5a"
+    },
+    {
+      "name": "composition",
+      "snippet_index": 1,
+      "source_path": "assets/diagrams/composition.tikz",
+      "source_sha256": "d712231c90796b4b2987506502723cd756fa9c5b7f4111e65284d107a79d2d4b",
+      "svg_bytes": 8775,
+      "svg_path": "editions/reader-assets/diagrams/composition.svg",
+      "svg_sha256": "f5a8ea5c51546c02be6dc22b41a18ca7091cd7bbea02af3cf0e4f507091bb3bd"
+    },
+    {
+      "name": "inline-8ee505c808d2f308",
+      "snippet_index": 1,
+      "snippet_sha256": "8ee505c808d2f3084f7f42d0de55f0190e16da0f1ed9cf3ebaf6681832ad0e2e",
+      "source_path": "content/sets-functions-relations/relations/graphs.tex",
+      "source_sha256": "dec624ef4e71903b72a9f0b5fcc6a15a2e0f897f9ebe881dd9c9e21333aeee75",
+      "svg_bytes": 6151,
+      "svg_path": "editions/reader-assets/diagrams/inline-8ee505c808d2f308.svg",
+      "svg_sha256": "109d95a2e61ea90fc1e1a96f469b3cd99e17f7b2d9e951e15337a8fa9ad2ed59"
+    },
+    {
+      "name": "inline-f90ab2f746e4260f",
+      "snippet_index": 2,
+      "snippet_sha256": "f90ab2f746e4260f78e9db6c3aca1357fd81318ad0aec39e37acfa961063c761",
+      "source_path": "content/sets-functions-relations/relations/graphs.tex",
+      "source_sha256": "dec624ef4e71903b72a9f0b5fcc6a15a2e0f897f9ebe881dd9c9e21333aeee75",
+      "svg_bytes": 5301,
+      "svg_path": "editions/reader-assets/diagrams/inline-f90ab2f746e4260f.svg",
+      "svg_sha256": "bb3e0dbaf988c667f574837b068600f5fdb92865c4b7119cb0cced58b74ad0a3"
+    },
+    {
+      "name": "inline-f122123b1f5663cd",
+      "snippet_index": 1,
+      "snippet_sha256": "f122123b1f5663cddcf11087601733429738daa819bfa509887e9750efcf8e7c",
+      "source_path": "content/sets-functions-relations/relations/trees.tex",
+      "source_sha256": "a158f1ce5b84c8c3f681dd6347b22491d1b67a91e110138b9cb6833e3d9dc23c",
+      "svg_bytes": 9334,
+      "svg_path": "editions/reader-assets/diagrams/inline-f122123b1f5663cd.svg",
+      "svg_sha256": "dbe4f0471af280e26253067f14546f555fc0403cfbfbd2c81be689c85fc28174"
+    }
+  ],
+  "schema": "openlogic-te-reader-diagrams/1",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0"
+}

@@ -1,0 +1,853 @@
+{
+  "artifact": {
+    "bytes": 354650,
+    "direction": "ltr",
+    "filename": "openlogic-te-Telu-IN-sfr-v0.3.0.epub",
+    "language": "te-Telu-IN",
+    "media_type": "application/epub+zip",
+    "rendition": "reflowable",
+    "sha256": "f80b6490a6975bf49e6159443013ddffa3afb4373525dab37e011a59b05c49e5"
+  },
+  "content": {
+    "bibliography_entries": 1,
+    "canonical_english_disclosures": 23,
+    "citation_keys": [
+      "Benacerraf1965",
+      "Benacerraf1965"
+    ],
+    "compiled_svg_image_descriptors_match_html": true,
+    "compiled_svg_image_instances": 16,
+    "content_links_match_html": true,
+    "inline_svg_diagrams": 6,
+    "mathml_roots": 2512,
+    "normalized_unit_text_hashes_match_html": true,
+    "ordered_tex_annotations_match_html": true,
+    "stable_ids_match_html": true,
+    "statement_classes_match_html": true,
+    "statements": 242,
+    "svg_descriptors_and_paths_match_html": true,
+    "units": [
+      {
+        "compiled_svg_images": 0,
+        "english_mathml_roots": 0,
+        "ids": 3,
+        "links": 0,
+        "mathml_roots": 0,
+        "normalized_text_sha256": "cbb0c78245e90ca2c036860e163d95b06700cb66aa4c0c26442f54a6ca13b561",
+        "statement_classes": {},
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 0,
+        "tex_annotations": 0,
+        "unit_id": "OLP-0004"
+      },
+      {
+        "compiled_svg_images": 0,
+        "english_mathml_roots": 52,
+        "ids": 3,
+        "links": 0,
+        "mathml_roots": 104,
+        "normalized_text_sha256": "b1dc318f8ba8c14f73a303cb729e17dbedfe8947af0e06905e2408639f215fe4",
+        "statement_classes": {
+          "defn": 2,
+          "ex": 6,
+          "prob": 2,
+          "statement": 10
+        },
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 52,
+        "tex_annotations": 104,
+        "unit_id": "OLP-0005"
+      },
+      {
+        "compiled_svg_images": 0,
+        "english_mathml_roots": 65,
+        "ids": 5,
+        "links": 0,
+        "mathml_roots": 130,
+        "normalized_text_sha256": "6c44b471d89b220fd7c2bba6ed82e69863d441ba3bb2d92c40e56a6ba1e9fa60",
+        "statement_classes": {
+          "defn": 6,
+          "ex": 6,
+          "prob": 4,
+          "prop": 2,
+          "statement": 18
+        },
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 65,
+        "tex_annotations": 130,
+        "unit_id": "OLP-0006"
+      },
+      {
+        "compiled_svg_images": 0,
+        "english_mathml_roots": 26,
+        "ids": 3,
+        "links": 0,
+        "mathml_roots": 52,
+        "normalized_text_sha256": "1c022fe65394d204cde610e8a11c9edb8749c94a58b6514bdf0e4bafd1bfa877",
+        "statement_classes": {
+          "ex": 6,
+          "statement": 6
+        },
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 26,
+        "tex_annotations": 52,
+        "unit_id": "OLP-0007"
+      },
+      {
+        "compiled_svg_images": 0,
+        "english_mathml_roots": 72,
+        "ids": 9,
+        "links": 8,
+        "mathml_roots": 144,
+        "normalized_text_sha256": "8add6d509c10332e926172179d4e1ff61ca95c09fa9c09af58129dce34f0f7e3",
+        "statement_classes": {
+          "defn": 10,
+          "ex": 6,
+          "prob": 8,
+          "statement": 24
+        },
+        "svg_diagrams": 6,
+        "telugu_mathml_roots": 72,
+        "tex_annotations": 144,
+        "unit_id": "OLP-0008"
+      },
+      {
+        "compiled_svg_images": 0,
+        "english_mathml_roots": 78,
+        "ids": 7,
+        "links": 2,
+        "mathml_roots": 156,
+        "normalized_text_sha256": "31b8e36396de4da5e7df6ddcb01b23f1ac062ff67f9f14c5860e5c04ab611c07",
+        "statement_classes": {
+          "defn": 4,
+          "ex": 6,
+          "prob": 6,
+          "prop": 2,
+          "statement": 18
+        },
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 78,
+        "tex_annotations": 156,
+        "unit_id": "OLP-0009"
+      },
+      {
+        "compiled_svg_images": 0,
+        "english_mathml_roots": 34,
+        "ids": 5,
+        "links": 0,
+        "mathml_roots": 68,
+        "normalized_text_sha256": "11d623ab0e971bf8727a64a56cc009bc3ddf0f4b2c28e691ca7b48cb22e4a0a9",
+        "statement_classes": {
+          "statement": 2,
+          "thm": 2
+        },
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 34,
+        "tex_annotations": 68,
+        "unit_id": "OLP-0010"
+      },
+      {
+        "compiled_svg_images": 0,
+        "english_mathml_roots": 0,
+        "ids": 3,
+        "links": 0,
+        "mathml_roots": 0,
+        "normalized_text_sha256": "b03b6c9f56a566951e03a4381e55cdf30a4ef4c8ac2ff00a9f6e8cd77a955955",
+        "statement_classes": {},
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 0,
+        "tex_annotations": 0,
+        "unit_id": "OLP-0011"
+      },
+      {
+        "compiled_svg_images": 0,
+        "english_mathml_roots": 83,
+        "ids": 5,
+        "links": 4,
+        "mathml_roots": 166,
+        "normalized_text_sha256": "c9863bdb9720d30b457bfe8ea4e35c3a0dd2da4c35036116e2a608a91d12ddc2",
+        "statement_classes": {
+          "defn": 2,
+          "ex": 2,
+          "prob": 2,
+          "statement": 6
+        },
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 83,
+        "tex_annotations": 166,
+        "unit_id": "OLP-0012"
+      },
+      {
+        "compiled_svg_images": 0,
+        "english_mathml_roots": 23,
+        "ids": 3,
+        "links": 8,
+        "mathml_roots": 46,
+        "normalized_text_sha256": "8b5296a656549b418b99abfe1861467350fce43ecf0d43026764a5d84e7b8e82",
+        "statement_classes": {},
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 23,
+        "tex_annotations": 46,
+        "unit_id": "OLP-0013"
+      },
+      {
+        "compiled_svg_images": 0,
+        "english_mathml_roots": 47,
+        "ids": 3,
+        "links": 0,
+        "mathml_roots": 94,
+        "normalized_text_sha256": "5e1f547ef6807c02be3b0cf8e65f746b3c58be3fa1763aa35afff0c1fcc4697b",
+        "statement_classes": {
+          "defn": 14,
+          "prob": 2,
+          "statement": 16
+        },
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 47,
+        "tex_annotations": 94,
+        "unit_id": "OLP-0014"
+      },
+      {
+        "compiled_svg_images": 0,
+        "english_mathml_roots": 70,
+        "ids": 5,
+        "links": 0,
+        "mathml_roots": 140,
+        "normalized_text_sha256": "20b84efb2c04aeb3c3e2aa734c8ca8034c4739b6fd8fd28ea110ec825e098e82",
+        "statement_classes": {
+          "defn": 4,
+          "ex": 2,
+          "prob": 2,
+          "prop": 2,
+          "statement": 10
+        },
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 70,
+        "tex_annotations": 140,
+        "unit_id": "OLP-0015"
+      },
+      {
+        "compiled_svg_images": 0,
+        "english_mathml_roots": 117,
+        "ids": 13,
+        "links": 2,
+        "mathml_roots": 234,
+        "normalized_text_sha256": "c892d06d0a3c429d69f019408817aafb74c0d05b77b0a54015c97c63168355b9",
+        "statement_classes": {
+          "defn": 10,
+          "ex": 12,
+          "prob": 2,
+          "prop": 6,
+          "statement": 30
+        },
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 117,
+        "tex_annotations": 234,
+        "unit_id": "OLP-0016"
+      },
+      {
+        "compiled_svg_images": 4,
+        "english_mathml_roots": 19,
+        "ids": 3,
+        "links": 0,
+        "mathml_roots": 38,
+        "normalized_text_sha256": "67c4e9d3adfc095a1e854dbc84b7edb2695c8a22f7e4ec65a22f3dc83cbf10f9",
+        "statement_classes": {
+          "defn": 2,
+          "ex": 2,
+          "prob": 2,
+          "statement": 6
+        },
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 19,
+        "tex_annotations": 38,
+        "unit_id": "OLP-0017"
+      },
+      {
+        "compiled_svg_images": 2,
+        "english_mathml_roots": 103,
+        "ids": 3,
+        "links": 0,
+        "mathml_roots": 206,
+        "normalized_text_sha256": "a428df21fb73a6f4e31d5bb1e2621021d0e21043a91746aac02bba176145a3b6",
+        "statement_classes": {
+          "defn": 8,
+          "ex": 4,
+          "prop": 4,
+          "statement": 16
+        },
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 103,
+        "tex_annotations": 206,
+        "unit_id": "OLP-0018"
+      },
+      {
+        "compiled_svg_images": 0,
+        "english_mathml_roots": 48,
+        "ids": 5,
+        "links": 4,
+        "mathml_roots": 96,
+        "normalized_text_sha256": "31244915595cc8f17d533b6e003b5d770b0092c02ab825dae994fa6e206d0720",
+        "statement_classes": {
+          "defn": 4,
+          "ex": 4,
+          "prob": 2,
+          "statement": 10
+        },
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 48,
+        "tex_annotations": 96,
+        "unit_id": "OLP-0019"
+      },
+      {
+        "compiled_svg_images": 0,
+        "english_mathml_roots": 0,
+        "ids": 3,
+        "links": 0,
+        "mathml_roots": 0,
+        "normalized_text_sha256": "e11175ef2c45f04378ec144d91ace65431fa0059fcf597e3f4ec260687c75964",
+        "statement_classes": {},
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 0,
+        "tex_annotations": 0,
+        "unit_id": "OLP-0020"
+      },
+      {
+        "compiled_svg_images": 2,
+        "english_mathml_roots": 64,
+        "ids": 7,
+        "links": 2,
+        "mathml_roots": 131,
+        "normalized_text_sha256": "0ea9f2f8a1fe330b0982fd529885f426aa11958eb94e85b0e3f2280b632073bc",
+        "statement_classes": {
+          "defn": 2,
+          "ex": 12,
+          "statement": 14
+        },
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 67,
+        "tex_annotations": 131,
+        "unit_id": "OLP-0021"
+      },
+      {
+        "compiled_svg_images": 6,
+        "english_mathml_roots": 44,
+        "ids": 9,
+        "links": 6,
+        "mathml_roots": 88,
+        "normalized_text_sha256": "80b9e8a9bc34528d256e33c8cbf4c5f1ae67f952e59c78e345873d977d874e19",
+        "statement_classes": {
+          "defn": 6,
+          "ex": 2,
+          "statement": 8
+        },
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 44,
+        "tex_annotations": 88,
+        "unit_id": "OLP-0022"
+      },
+      {
+        "compiled_svg_images": 0,
+        "english_mathml_roots": 55,
+        "ids": 7,
+        "links": 12,
+        "mathml_roots": 112,
+        "normalized_text_sha256": "dfee78aacc182be77a1f6c3df687cf2a22d2eaf83e0a09ff66dc3b13b0f5587f",
+        "statement_classes": {
+          "defn": 4,
+          "prop": 2,
+          "statement": 6
+        },
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 57,
+        "tex_annotations": 112,
+        "unit_id": "OLP-0023"
+      },
+      {
+        "compiled_svg_images": 0,
+        "english_mathml_roots": 143,
+        "ids": 13,
+        "links": 14,
+        "mathml_roots": 291,
+        "normalized_text_sha256": "8a2c65006786bfc442cef7d3af64cb6deb9b07487864e260735b51891f90ab80",
+        "statement_classes": {
+          "defn": 2,
+          "prob": 8,
+          "prop": 10,
+          "statement": 20
+        },
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 148,
+        "tex_annotations": 291,
+        "unit_id": "OLP-0024"
+      },
+      {
+        "compiled_svg_images": 2,
+        "english_mathml_roots": 47,
+        "ids": 5,
+        "links": 6,
+        "mathml_roots": 94,
+        "normalized_text_sha256": "1c3f264417e33deb7fefd0710b92efd2df6dd3cabd617a6e060c252c593bd9f4",
+        "statement_classes": {
+          "defn": 2,
+          "ex": 2,
+          "prob": 6,
+          "statement": 10
+        },
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 47,
+        "tex_annotations": 94,
+        "unit_id": "OLP-0025"
+      },
+      {
+        "compiled_svg_images": 0,
+        "english_mathml_roots": 61,
+        "ids": 3,
+        "links": 0,
+        "mathml_roots": 122,
+        "normalized_text_sha256": "b3875baaffde9db494201a7dfc56e47ce9e596446964517f8db95aa6961c6a5d",
+        "statement_classes": {
+          "defn": 4,
+          "ex": 4,
+          "prob": 2,
+          "prop": 2,
+          "statement": 12
+        },
+        "svg_diagrams": 0,
+        "telugu_mathml_roots": 61,
+        "tex_annotations": 122,
+        "unit_id": "OLP-0026"
+      }
+    ]
+  },
+  "date": "2026-09-12",
+  "determinism": {
+    "byte_identical": true,
+    "cold_bytes": 354650,
+    "cold_filename": "openlogic-te-Telu-IN-sfr-v0.3.0-cold.epub",
+    "cold_sha256": "f80b6490a6975bf49e6159443013ddffa3afb4373525dab37e011a59b05c49e5",
+    "fixed_zip_timestamp": "2026-09-12T00:00:00Z"
+  },
+  "epubcheck": {
+    "errors": 0,
+    "fatals": 0,
+    "infos": 0,
+    "return_code": 0,
+    "ruleset": "3.3",
+    "status": "pass",
+    "tool": "EPUBCheck 5.3.0",
+    "warnings": 0
+  },
+  "schema": "openlogic-te-epub-qa/1",
+  "scope": {
+    "chapter_completeness": "three complete chapters",
+    "chapters": [
+      "Sets",
+      "Relations",
+      "Functions"
+    ],
+    "complete_edition": false,
+    "corpus_units": 722,
+    "scope_label_present_in_package": true,
+    "translated_units": 23,
+    "unit_range": "OLP-0004 through OLP-0026"
+  },
+  "source_crosswalk": [
+    {
+      "aligned_blocks": 12,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/sets/sets.tex",
+      "source_sha256": "98a8964a95d72ab3004decdef3ee74f1dd1f221dd06dfc0e6d44eff52104f277",
+      "translation_sha256": "5768f944fe7c03ca5943d7630ea9e60003d55a8b85de1ef14b392a782f3eac1f",
+      "unit_id": "OLP-0004"
+    },
+    {
+      "aligned_blocks": 15,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/sets/basics.tex",
+      "source_sha256": "232ff51f51e74fcfee836650f3c597b54bf10ba5363c648a0c05fe8222e4a865",
+      "translation_sha256": "9c53dd1f24d292aad1d5554b24ec18b39536cc488d43b0d399ecb72523218d8f",
+      "unit_id": "OLP-0005"
+    },
+    {
+      "aligned_blocks": 19,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/sets/subsets.tex",
+      "source_sha256": "63d819c246577b3bfd8ba2a933f114b58c6549bdc4fa6ea8ffa8ab07c7fed4b7",
+      "translation_sha256": "4eedc59d461127077826cb46c4399dd13b704744b716034e9f75cc5cd3c7397d",
+      "unit_id": "OLP-0006"
+    },
+    {
+      "aligned_blocks": 10,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/sets/important-sets.tex",
+      "source_sha256": "ec2115fa48ea6c6684a65bdf2f504102ca0a74b40cf88293dfc12f4ab97ada02",
+      "translation_sha256": "47489278d2033324127e26c7e808c898fdf35fdee696bc68328dcfcb660ca3d9",
+      "unit_id": "OLP-0007"
+    },
+    {
+      "aligned_blocks": 30,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/sets/unions-and-intersections.tex",
+      "source_sha256": "e556ac6add69b1e6d41123eb05be4adb15f2dc120a3782a721caeab42dbc4529",
+      "translation_sha256": "e2fefdf6eca168abf02f879ca72060350ce04f44b1897614533fe00634175c33",
+      "unit_id": "OLP-0008"
+    },
+    {
+      "aligned_blocks": 20,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/sets/pairs-and-products.tex",
+      "source_sha256": "935f1e0e90dc783a1d5cb3298a38aa8df49af8b424e7282b27dc2ab4e9d85610",
+      "translation_sha256": "4f8371a8caf75230b0936997cd38bf7814ed13113a3f535a4c59c3c07c70a942",
+      "unit_id": "OLP-0009"
+    },
+    {
+      "aligned_blocks": 15,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/sets/russells-paradox.tex",
+      "source_sha256": "aa8e94675f56112d8952b81d17968545b54c33393bfc466745edcaca30f4453a",
+      "translation_sha256": "c969836ffd90adacc77a526122e4bf2dface0663cb1decba90fabb73ff7e8768",
+      "unit_id": "OLP-0010"
+    },
+    {
+      "aligned_blocks": 14,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/relations/relations-complete.tex",
+      "source_sha256": "9720780fcf56a05f8f18c26234d7bebc24024116bb6549a151e0905845b41ef5",
+      "translation_sha256": "a68fa2effa82f3d3dc40c6273fc35a9c3a4e9b2df1a12b0399663a30ca040ed5",
+      "unit_id": "OLP-0011"
+    },
+    {
+      "aligned_blocks": 13,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/relations/relations-as-sets.tex",
+      "source_sha256": "2a67c6fb4846155e8e7cd8172fd1fb8214db96d508ceae5d70dec95d5dfcc1ff",
+      "translation_sha256": "929103a2198db1e68df87a1c862a41e1696d25d3dc01edb91d530e794cf5c304",
+      "unit_id": "OLP-0012"
+    },
+    {
+      "aligned_blocks": 9,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/relations/reflections.tex",
+      "source_sha256": "75047e8806a58c0a0c07ae2e55554d9ad2affb9d5297b1d5585ebe0b2f3de651",
+      "translation_sha256": "505479a15b596b4854ce76e92eaf72d5aea79d4869e2ff5ebf1205952f7e24e3",
+      "unit_id": "OLP-0013"
+    },
+    {
+      "aligned_blocks": 16,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/relations/special-properties.tex",
+      "source_sha256": "006f2ea0d65e5069ef1509de94dd35a477ea835c19962da22f4bef48caffbee7",
+      "translation_sha256": "fd37f7663d542bd022a5a78bde478af4986eb6d66e3691931125a4ba48695f99",
+      "unit_id": "OLP-0014"
+    },
+    {
+      "aligned_blocks": 16,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/relations/equivalence-relations.tex",
+      "source_sha256": "d9531aa5cd774c12090fbd5c9fb289181e93cf7e9a96ecf7d4fd3fcdf5d250c7",
+      "translation_sha256": "d8066a41b17bf50535fe18c2dc0d6f3fc98d628d80e6daeda70adf0880f7d8b5",
+      "unit_id": "OLP-0015"
+    },
+    {
+      "aligned_blocks": 30,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/relations/orders.tex",
+      "source_sha256": "79593789022fef31c0609b9c94856e2aef5cd5e88e92864e782bb6e6e5f4bce4",
+      "translation_sha256": "a25ff974f279ce616726ad534ae841df8e9c642f1c8b99123267d9af1fe8402b",
+      "unit_id": "OLP-0016"
+    },
+    {
+      "aligned_blocks": 10,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/relations/graphs.tex",
+      "source_sha256": "dec624ef4e71903b72a9f0b5fcc6a15a2e0f897f9ebe881dd9c9e21333aeee75",
+      "translation_sha256": "3dc4cce85e8e9ae78a8d6566ddc77dbdd8e17008a031016eda22c3d051176aa4",
+      "unit_id": "OLP-0017"
+    },
+    {
+      "aligned_blocks": 21,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/relations/trees.tex",
+      "source_sha256": "a158f1ce5b84c8c3f681dd6347b22491d1b67a91e110138b9cb6833e3d9dc23c",
+      "translation_sha256": "22cbcf51a23019057a88fe05299f1bb3a23ccd9b755acc6b120a43779131b7f2",
+      "unit_id": "OLP-0018"
+    },
+    {
+      "aligned_blocks": 21,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/relations/operations.tex",
+      "source_sha256": "73c8bdb301aca93f687a06a045533d75d30088ae711f5e1dfd577b7864f8d3d5",
+      "translation_sha256": "b4417daaffa078966a6785ad39858a42a2c62b80f2d470b6c8954e8513fba23a",
+      "unit_id": "OLP-0019"
+    },
+    {
+      "aligned_blocks": 13,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/functions/functions.tex",
+      "source_sha256": "d68bba27e593df2c17e2dc93b34256d829361b04134b4a962b997d5f4a230a59",
+      "translation_sha256": "4ffba9ba8415bd75e80f2af251e248450a94b1621283b555a35bc690b78af1db",
+      "unit_id": "OLP-0020"
+    },
+    {
+      "aligned_blocks": 21,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/functions/function-basics.tex",
+      "source_sha256": "d1fa0923e303fc49a88d4e476c319d6e91a8088de44c232dcfba5878325faea3",
+      "translation_sha256": "07591f29fbe05fcfce40b2128ba2e2ce6bf13e74f2ff6a4a1ab0ac57041ecb37",
+      "unit_id": "OLP-0021"
+    },
+    {
+      "aligned_blocks": 20,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/functions/function-kinds.tex",
+      "source_sha256": "4d30902b7c66720afabb8b079294106a685aefba0dc02ca10d9921bb554db0ac",
+      "translation_sha256": "2618ef4e96cde6580f95ec544a0cf569682924db58ab338ffdc1ab5fd5d0a3b9",
+      "unit_id": "OLP-0022"
+    },
+    {
+      "aligned_blocks": 17,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/functions/functions-relations.tex",
+      "source_sha256": "e2e46c0270c44b6f54861a4565f3829b1b5f91a7f72dca84046361e5abf622c3",
+      "translation_sha256": "57d9e1495aa72697bbb1ee2c74a8a8171806c1da93086c3d1748eb64873950d5",
+      "unit_id": "OLP-0023"
+    },
+    {
+      "aligned_blocks": 28,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/functions/inverses.tex",
+      "source_sha256": "96e36d8cd8dc4ec0e73e9507147ecfe33d7e4f368ecf46de92efb423a7d409c1",
+      "translation_sha256": "ea432cb72969199e37c907f83a7f63b2f04375a1835a1a539a7ec1a600b077b8",
+      "unit_id": "OLP-0024"
+    },
+    {
+      "aligned_blocks": 12,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/functions/composition.tex",
+      "source_sha256": "1733e9f6b7f1009f7d36cb47b3f11ec8cccc28ef173a379e4d69c3de352fcf28",
+      "translation_sha256": "4ec9e4d1115aedaaa2c020583a8d1991949b75911f834febd5082764246fb30d",
+      "unit_id": "OLP-0025"
+    },
+    {
+      "aligned_blocks": 14,
+      "editable_translation_matches_reader_input": true,
+      "source_path": "content/sets-functions-relations/functions/partial-functions.tex",
+      "source_sha256": "0f638e25ad1f565b9256846fb8b293c03663072b69a2adc5f2cfea1e94d00933",
+      "translation_sha256": "24c5d3bf1900d36b2beac0746daeb68a0ec3d83e21d313fdf71d8d3c4016ac31",
+      "unit_id": "OLP-0026"
+    }
+  ],
+  "source_identity": {
+    "html_bytes": 1034602,
+    "html_path": "docs/sfr/index.html",
+    "html_sha256": "bb8744b88932314057aaffbd43010fee6ca88bac2db9e503947522bc0014828b",
+    "render_manifest_sha256": "fc462e91e69aaee35e9baf6dd366970230e17ce367c1fac2cb1219a6fb9b16e4",
+    "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0"
+  },
+  "status": "COMPLETE_PASS",
+  "structure": {
+    "diagram_resources": [
+      {
+        "bytes": 4974,
+        "filename": "bijective.svg",
+        "local_href_references": 0,
+        "sha256": "afd681bebfecc5d6fbf5b612728588b750134f2e709d6d0d168d13f265756c5a"
+      },
+      {
+        "bytes": 8775,
+        "filename": "composition.svg",
+        "local_href_references": 0,
+        "sha256": "f5a8ea5c51546c02be6dc22b41a18ca7091cd7bbea02af3cf0e4f507091bb3bd"
+      },
+      {
+        "bytes": 5418,
+        "filename": "function.svg",
+        "local_href_references": 0,
+        "sha256": "b4277b7eaa16590381e5e84f7ceedfb9e487f828f891de4a64aa10eb84739458"
+      },
+      {
+        "bytes": 5899,
+        "filename": "injective.svg",
+        "local_href_references": 0,
+        "sha256": "e6900aff855419a576e718450b5b6031d47b0feb0d266265457edb25821090f4"
+      },
+      {
+        "bytes": 6151,
+        "filename": "inline-8ee505c808d2f308.svg",
+        "local_href_references": 0,
+        "sha256": "109d95a2e61ea90fc1e1a96f469b3cd99e17f7b2d9e951e15337a8fa9ad2ed59"
+      },
+      {
+        "bytes": 9334,
+        "filename": "inline-f122123b1f5663cd.svg",
+        "local_href_references": 0,
+        "sha256": "dbe4f0471af280e26253067f14546f555fc0403cfbfbd2c81be689c85fc28174"
+      },
+      {
+        "bytes": 5301,
+        "filename": "inline-f90ab2f746e4260f.svg",
+        "local_href_references": 0,
+        "sha256": "bb3e0dbaf988c667f574837b068600f5fdb92865c4b7119cb0cced58b74ad0a3"
+      },
+      {
+        "bytes": 4792,
+        "filename": "surjective.svg",
+        "local_href_references": 0,
+        "sha256": "40b02809f64c1b42f45cb1c16dccc7cc5a85829687565fe3876170a753ce6433"
+      }
+    ],
+    "embedded_resources": {
+      "all_local_and_resolved": true,
+      "count": 16,
+      "references": [
+        {
+          "document": "OEBPS/reader.xhtml",
+          "source": "assets/diagrams/inline-8ee505c808d2f308.svg",
+          "target": "OEBPS/assets/diagrams/inline-8ee505c808d2f308.svg"
+        },
+        {
+          "document": "OEBPS/reader.xhtml",
+          "source": "assets/diagrams/inline-f90ab2f746e4260f.svg",
+          "target": "OEBPS/assets/diagrams/inline-f90ab2f746e4260f.svg"
+        },
+        {
+          "document": "OEBPS/reader.xhtml",
+          "source": "assets/diagrams/inline-8ee505c808d2f308.svg",
+          "target": "OEBPS/assets/diagrams/inline-8ee505c808d2f308.svg"
+        },
+        {
+          "document": "OEBPS/reader.xhtml",
+          "source": "assets/diagrams/inline-f90ab2f746e4260f.svg",
+          "target": "OEBPS/assets/diagrams/inline-f90ab2f746e4260f.svg"
+        },
+        {
+          "document": "OEBPS/reader.xhtml",
+          "source": "assets/diagrams/inline-f122123b1f5663cd.svg",
+          "target": "OEBPS/assets/diagrams/inline-f122123b1f5663cd.svg"
+        },
+        {
+          "document": "OEBPS/reader.xhtml",
+          "source": "assets/diagrams/inline-f122123b1f5663cd.svg",
+          "target": "OEBPS/assets/diagrams/inline-f122123b1f5663cd.svg"
+        },
+        {
+          "document": "OEBPS/reader.xhtml",
+          "source": "assets/diagrams/function.svg",
+          "target": "OEBPS/assets/diagrams/function.svg"
+        },
+        {
+          "document": "OEBPS/reader.xhtml",
+          "source": "assets/diagrams/function.svg",
+          "target": "OEBPS/assets/diagrams/function.svg"
+        },
+        {
+          "document": "OEBPS/reader.xhtml",
+          "source": "assets/diagrams/surjective.svg",
+          "target": "OEBPS/assets/diagrams/surjective.svg"
+        },
+        {
+          "document": "OEBPS/reader.xhtml",
+          "source": "assets/diagrams/injective.svg",
+          "target": "OEBPS/assets/diagrams/injective.svg"
+        },
+        {
+          "document": "OEBPS/reader.xhtml",
+          "source": "assets/diagrams/bijective.svg",
+          "target": "OEBPS/assets/diagrams/bijective.svg"
+        },
+        {
+          "document": "OEBPS/reader.xhtml",
+          "source": "assets/diagrams/surjective.svg",
+          "target": "OEBPS/assets/diagrams/surjective.svg"
+        },
+        {
+          "document": "OEBPS/reader.xhtml",
+          "source": "assets/diagrams/injective.svg",
+          "target": "OEBPS/assets/diagrams/injective.svg"
+        },
+        {
+          "document": "OEBPS/reader.xhtml",
+          "source": "assets/diagrams/bijective.svg",
+          "target": "OEBPS/assets/diagrams/bijective.svg"
+        },
+        {
+          "document": "OEBPS/reader.xhtml",
+          "source": "assets/diagrams/composition.svg",
+          "target": "OEBPS/assets/diagrams/composition.svg"
+        },
+        {
+          "document": "OEBPS/reader.xhtml",
+          "source": "assets/diagrams/composition.svg",
+          "target": "OEBPS/assets/diagrams/composition.svg"
+        }
+      ]
+    },
+    "links": null,
+    "manifest_exact": true,
+    "mimetype_first_and_stored": true,
+    "navigation_unit_links": [
+      "reader.xhtml#OLP-0004",
+      "reader.xhtml#OLP-0005",
+      "reader.xhtml#OLP-0006",
+      "reader.xhtml#OLP-0007",
+      "reader.xhtml#OLP-0008",
+      "reader.xhtml#OLP-0009",
+      "reader.xhtml#OLP-0010",
+      "reader.xhtml#OLP-0011",
+      "reader.xhtml#OLP-0012",
+      "reader.xhtml#OLP-0013",
+      "reader.xhtml#OLP-0014",
+      "reader.xhtml#OLP-0015",
+      "reader.xhtml#OLP-0016",
+      "reader.xhtml#OLP-0017",
+      "reader.xhtml#OLP-0018",
+      "reader.xhtml#OLP-0019",
+      "reader.xhtml#OLP-0020",
+      "reader.xhtml#OLP-0021",
+      "reader.xhtml#OLP-0022",
+      "reader.xhtml#OLP-0023",
+      "reader.xhtml#OLP-0024",
+      "reader.xhtml#OLP-0025",
+      "reader.xhtml#OLP-0026"
+    ],
+    "remote_runtime_dependencies": 0,
+    "scripts": 0,
+    "spine": [
+      "title",
+      "nav",
+      "reader",
+      "about",
+      "license"
+    ],
+    "xhtml_namespace_counts": {
+      "OEBPS/about.xhtml": {
+        "mathml": 0,
+        "svg": 0,
+        "xhtml": 27
+      },
+      "OEBPS/license.xhtml": {
+        "mathml": 0,
+        "svg": 0,
+        "xhtml": 20
+      },
+      "OEBPS/nav.xhtml": {
+        "mathml": 0,
+        "svg": 0,
+        "xhtml": 75
+      },
+      "OEBPS/reader.xhtml": {
+        "mathml": 23145,
+        "svg": 70,
+        "xhtml": 6912
+      },
+      "OEBPS/title.xhtml": {
+        "mathml": 0,
+        "svg": 0,
+        "xhtml": 20
+      }
+    },
+    "zip_entries": 19
+  },
+  "version": "0.3.0-sfr-epub"
+}
