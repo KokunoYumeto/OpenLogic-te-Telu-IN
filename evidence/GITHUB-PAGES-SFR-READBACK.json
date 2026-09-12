@@ -1,0 +1,151 @@
+{
+  "schema": "openlogic-te-github-pages-readback/1",
+  "date": "2026-09-12",
+  "status": "COMPLETE_PASS",
+  "deployment": {
+    "base_url": "https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sfr/",
+    "repository": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN",
+    "workflow": "pages-build-deployment",
+    "run_id": 34698885262,
+    "run_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/actions/runs/34698885262",
+    "head_sha": "edb8270bdc778db22b785d305fcaf647cfcc361a",
+    "conclusion": "success"
+  },
+  "method": "Anonymous HTTPS GET of every file under docs/sfr followed by byte-count and SHA-256 comparison with the checked-out deployment source.",
+  "summary": {
+    "files_requested": 16,
+    "http_200": 16,
+    "byte_identical": 16,
+    "failures": 0
+  },
+  "files": [
+    {
+      "path": "assets/diagrams/bijective.svg",
+      "bytes": 4974,
+      "sha256": "afd681bebfecc5d6fbf5b612728588b750134f2e709d6d0d168d13f265756c5a",
+      "http_status": 200,
+      "content_type": "image/svg+xml",
+      "exact": true
+    },
+    {
+      "path": "assets/diagrams/composition.svg",
+      "bytes": 8775,
+      "sha256": "f5a8ea5c51546c02be6dc22b41a18ca7091cd7bbea02af3cf0e4f507091bb3bd",
+      "http_status": 200,
+      "content_type": "image/svg+xml",
+      "exact": true
+    },
+    {
+      "path": "assets/diagrams/function.svg",
+      "bytes": 5418,
+      "sha256": "b4277b7eaa16590381e5e84f7ceedfb9e487f828f891de4a64aa10eb84739458",
+      "http_status": 200,
+      "content_type": "image/svg+xml",
+      "exact": true
+    },
+    {
+      "path": "assets/diagrams/injective.svg",
+      "bytes": 5899,
+      "sha256": "e6900aff855419a576e718450b5b6031d47b0feb0d266265457edb25821090f4",
+      "http_status": 200,
+      "content_type": "image/svg+xml",
+      "exact": true
+    },
+    {
+      "path": "assets/diagrams/inline-8ee505c808d2f308.svg",
+      "bytes": 6151,
+      "sha256": "109d95a2e61ea90fc1e1a96f469b3cd99e17f7b2d9e951e15337a8fa9ad2ed59",
+      "http_status": 200,
+      "content_type": "image/svg+xml",
+      "exact": true
+    },
+    {
+      "path": "assets/diagrams/inline-f122123b1f5663cd.svg",
+      "bytes": 9334,
+      "sha256": "dbe4f0471af280e26253067f14546f555fc0403cfbfbd2c81be689c85fc28174",
+      "http_status": 200,
+      "content_type": "image/svg+xml",
+      "exact": true
+    },
+    {
+      "path": "assets/diagrams/inline-f90ab2f746e4260f.svg",
+      "bytes": 5301,
+      "sha256": "bb3e0dbaf988c667f574837b068600f5fdb92865c4b7119cb0cced58b74ad0a3",
+      "http_status": 200,
+      "content_type": "image/svg+xml",
+      "exact": true
+    },
+    {
+      "path": "assets/diagrams/surjective.svg",
+      "bytes": 4792,
+      "sha256": "40b02809f64c1b42f45cb1c16dccc7cc5a85829687565fe3876170a753ce6433",
+      "http_status": 200,
+      "content_type": "image/svg+xml",
+      "exact": true
+    },
+    {
+      "path": "fonts/NotoSerifTelugu-Bold.ttf",
+      "bytes": 332592,
+      "sha256": "c0ef9aeb5fe554daa93517e2f2e3b627ddaa1ab56bf7cc99f3059fe5a4e7cdfd",
+      "http_status": 200,
+      "content_type": "font/ttf",
+      "exact": true
+    },
+    {
+      "path": "fonts/NotoSerifTelugu-Regular.ttf",
+      "bytes": 312332,
+      "sha256": "02cf5610b0aa2dc1ab66ed8edadad207ffb86b85eea4889a0b229f041a4b4bf9",
+      "http_status": 200,
+      "content_type": "font/ttf",
+      "exact": true
+    },
+    {
+      "path": "fonts/OFL.txt",
+      "bytes": 4377,
+      "sha256": "0dab92d0544f7b233403f14b84a663bdbfa746982eda629e7f4f9ffe1b036feb",
+      "http_status": 200,
+      "content_type": "text/plain",
+      "exact": true
+    },
+    {
+      "path": "index.html",
+      "bytes": 1034665,
+      "sha256": "95d95c8664eceedab56f2c0402375b7adb9ef1e5c4471d1b651bdc6f428de210",
+      "http_status": 200,
+      "content_type": "text/html",
+      "exact": true
+    },
+    {
+      "path": "KATEX-LICENSE",
+      "bytes": 1107,
+      "sha256": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3",
+      "http_status": 200,
+      "content_type": "application/octet-stream",
+      "exact": true
+    },
+    {
+      "path": "LICENSE.md",
+      "bytes": 17068,
+      "sha256": "bb5e0179a1e9bdb55634a4303784cf73c297a1dcee27b92cd546bf398075531c",
+      "http_status": 200,
+      "content_type": "text/markdown",
+      "exact": true
+    },
+    {
+      "path": "reader.css",
+      "bytes": 4347,
+      "sha256": "ff54a566fb62a0d4cb6be5dd53ce8ff6c3209e6ae7e6d2d097615587fd30fad3",
+      "http_status": 200,
+      "content_type": "text/css",
+      "exact": true
+    },
+    {
+      "path": "render-manifest.json",
+      "bytes": 538510,
+      "sha256": "546f323c21c0b8a589e2afc0fbaecd73787917b51f74cff1420fa3cd95e6480b",
+      "http_status": 200,
+      "content_type": "application/json",
+      "exact": true
+    }
+  ]
+}

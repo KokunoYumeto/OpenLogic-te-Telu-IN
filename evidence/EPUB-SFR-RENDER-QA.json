@@ -1,0 +1,101 @@
+{
+  "schema": "openlogic-te-reader-render-qa/1",
+  "date": "2026-09-12",
+  "status": "COMPLETE_PASS",
+  "subject": {
+    "deployment_url": "https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sfr/",
+    "deployed_commit": "edb8270bdc778db22b785d305fcaf647cfcc361a",
+    "reader_scope": "OLP-0004 through OLP-0026; complete Sets, Relations, and Functions chapters; 23 of 722 corpus units",
+    "epub_filename": "openlogic-te-Telu-IN-sfr-v0.3.0.epub",
+    "epub_bytes": 354646,
+    "epub_sha256": "14558fd925098e97e4657c6df39639364af25b51d4c0c5e2736817156d1732ed"
+  },
+  "method": {
+    "surface": "deployed public GitHub Pages reader",
+    "browser": "Codex in-app Chromium browser",
+    "interaction": "visual inspection plus DOM-backed viewport, asset, overflow, disclosure, citation, and console checks",
+    "viewports": [
+      {
+        "width": 1280,
+        "height": 720,
+        "device_pixel_ratio": 2.25
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "purpose": "responsive mobile breakpoint"
+      }
+    ]
+  },
+  "automated_observations": {
+    "mathml_roots": 2512,
+    "canonical_english_disclosures": 23,
+    "compiled_svg_image_instances": 16,
+    "compiled_svg_images_complete": 16,
+    "compiled_svg_images_with_nonzero_natural_dimensions": 16,
+    "desktop": {
+      "viewport_width": 1280,
+      "document_scroll_width": 1265,
+      "body_scroll_width": 1265,
+      "horizontal_page_overflow": false
+    },
+    "mobile": {
+      "viewport_width": 390,
+      "document_scroll_width": 375,
+      "body_scroll_width": 375,
+      "horizontal_page_overflow": false,
+      "mathml_roots_outside_viewport": 0,
+      "composition_diagram_bounds": {
+        "left": 17.59722328186035,
+        "right": 357.513879776001,
+        "width": 339.9166564941406,
+        "height": 151.00694274902344
+      }
+    },
+    "console_warnings": 0,
+    "console_errors": 0
+  },
+  "visual_cases": [
+    {
+      "case": "reader masthead and table of contents",
+      "result": "pass",
+      "observed": "Telugu title and scope notice shape cleanly; the 23-entry table of contents uses the correct Telugu chapter labels సమితులు, సంబంధాలు, and ప్రమేయాలు."
+    },
+    {
+      "case": "OLP-0017 directed graph",
+      "result": "pass",
+      "observed": "Vertices, loop, arrows, surrounding Telugu prose, caption, and MathML are legible, centered, and unclipped."
+    },
+    {
+      "case": "OLP-0018 finite tree",
+      "result": "pass",
+      "observed": "Root and branch structure, labels, caption, and surrounding Telugu prose are legible and unclipped."
+    },
+    {
+      "case": "OLP-0022 function-kind diagram",
+      "result": "pass",
+      "observed": "Domain and codomain shapes, elements, arrows, caption, and adjacent definition block render cleanly."
+    },
+    {
+      "case": "OLP-0025 composition diagram",
+      "result": "pass",
+      "observed": "All three sets, solid and dashed arrows, caption, prose, and formulae remain legible at desktop and 390-pixel widths."
+    },
+    {
+      "case": "citation and bibliography navigation",
+      "result": "pass",
+      "observed": "The visible 1965 citation in OLP-0013 navigates to #bib-Benacerraf1965 and lands on the matching References entry."
+    },
+    {
+      "case": "canonical English disclosure",
+      "result": "pass",
+      "observed": "Canonical English source · OLP-0004 expands through its native details control, exposes the English heading, and reports an expanded accessibility state."
+    },
+    {
+      "case": "mobile responsive layout",
+      "result": "pass",
+      "observed": "At 390 by 844 pixels the masthead and contents reflow to one column; Telugu text, MathML, and the complex composition diagram remain inside the viewport."
+    }
+  ],
+  "finding": "No visual, interaction, asset-loading, console, or responsive-layout defect was observed in the deployed 23-unit reader."
+}

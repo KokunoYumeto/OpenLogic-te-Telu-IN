@@ -23,6 +23,7 @@ EPUB = ROOT / "output" / "release" / "openlogic-te-Telu-IN-sfr-v0.3.0.epub"
 COLD_EPUB = ROOT / "output" / "release" / "openlogic-te-Telu-IN-sfr-v0.3.0-cold.epub"
 EVIDENCE = ROOT / "evidence" / "EPUB-SFR-QA.json"
 RENDER_EVIDENCE = ROOT / "evidence" / "EPUB-SFR-RENDER-QA.json"
+PAGES_EVIDENCE = ROOT / "evidence" / "GITHUB-PAGES-SFR-READBACK.json"
 RELEASE_MANIFEST = ROOT / "output" / "release" / "release-manifest-v0.3.0.json"
 PRIOR_READBACK = ROOT / "evidence" / "ZENODO-SETS-V020-READBACK.json"
 
@@ -546,6 +547,8 @@ def build_release_manifest(artifact: dict[str, object], evidence_path: Path) -> 
     require(qa_paths[0].is_file(), "HTML reader QA evidence missing")
     if RENDER_EVIDENCE.is_file():
         qa_paths.append(RENDER_EVIDENCE)
+    if PAGES_EVIDENCE.is_file():
+        qa_paths.append(PAGES_EVIDENCE)
     return {
         "schema": "openlogic-te-release-manifest/3",
         "version": VERSION,
@@ -567,6 +570,8 @@ def build_release_manifest(artifact: dict[str, object], evidence_path: Path) -> 
             "github_pages": "https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sfr/",
             "zenodo_concept_doi": "10.5281/zenodo.22307937",
             "prior_zenodo_version_doi": "10.5281/zenodo.22309234",
+            "zenodo_version_doi": "10.5281/zenodo.22726674",
+            "zenodo_record_id": 22726674,
         },
         "artifacts": inherited + [{**artifact, "role": "new"}],
         "qa_evidence": [

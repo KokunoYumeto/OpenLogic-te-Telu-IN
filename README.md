@@ -7,14 +7,14 @@ The complete target is 722 tracked TeX units at revision
 ## Current release
 
 The current cumulative checkpoint is
-[v0.2.0-sets-html](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.2.0-sets-html).
-It adds a self-contained semantic HTML reader for the complete Sets chapter,
-OLP-0004 through OLP-0010, while preserving the twelve-page v0.1.0 PDF and
-source snapshot unchanged. This is **not the complete OpenLogic Telugu
-edition**.
+[v0.3.0-sfr-epub](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.3.0-sfr-epub).
+It adds a deterministic reflowable EPUB and a self-contained semantic HTML
+reader for the complete Sets, Relations, and Functions chapters, OLP-0004
+through OLP-0026 (23 of 722 units). All six files inherited from v0.2.0 remain
+unchanged. This is **not the complete OpenLogic Telugu edition**.
 
 Latest version DOI:
-[10.5281/zenodo.22309234](https://doi.org/10.5281/zenodo.22309234).
+[10.5281/zenodo.22726674](https://doi.org/10.5281/zenodo.22726674).
 Continuing concept DOI:
 [10.5281/zenodo.22307937](https://doi.org/10.5281/zenodo.22307937).
 GitHub, GitHub Pages, and Zenodo public bytes have been anonymously verified;
@@ -33,19 +33,15 @@ Theories and Their Models chapter (7), complete Beyond First-order Logic
 chapter (8), and the Model Theory part driver plus complete Basics chapter
 (9), complete Models of Arithmetic chapter (7), complete Interpolation
 chapter (5), and complete Lindström chapter (5). All twenty-four batches have
-source-aligned structural and same-agent semantic review records. The Sets
-chapter also has an offline semantic HTML reader with Telugu document metadata, native MathML,
-local fonts, accessible inline diagrams, resolved internal links, and a
-separately collapsible copy of each canonical English unit. Its public browser
-version is at [OpenLogic తెలుగు — సమితులు](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sets/).
-Relations, Functions, Size of Sets, Arithmetization, Infinite Sets,
-Propositional Logic, Proof Systems, Sequent Calculus, Natural Deduction,
-Tableaux, Axiomatic Deduction, First-Order Completeness and First-Order
-Introduction, Syntax, Semantics, Theories and Their Models, Beyond
-First-order Logic, Model Theory Basics, Models of Arithmetic, Interpolation,
-and Lindström are not yet integrated into that reader. The other 518 units and the
-coherent full reader remain in progress; neither current chapter format
-substitutes for that remaining work.
+source-aligned structural and same-agent semantic review records. The complete
+Sets, Relations, and Functions chapters also have an offline EPUB and semantic
+HTML reader with Telugu document metadata, native MathML, local fonts,
+accessible diagrams, resolved internal links, citations, and a separately
+collapsible copy of each canonical English unit. Its public browser version is
+at [OpenLogic తెలుగు — సమితులు, సంబంధాలు, ప్రమేయాలు](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sfr/).
+The remaining 181 editable drafts are not yet integrated into that reader. The
+other 518 units and the coherent full reader remain in progress; this bounded
+three-chapter checkpoint does not substitute for that remaining work.
 
 ## Provenance and changes
 
@@ -55,7 +51,7 @@ Original: [The Open Logic Project](https://openlogicproject.org/),
 Edition hub: [OpenLogic translations](https://github.com/KokunoYumeto/OpenLogic-translations).
 
 Changes are Telugu machine translation, provisional terminology choices,
-grammatical realization of source text tokens, a chapter-specific reader,
+grammatical realization of source text tokens, a foundations reader,
 font shaping and layout. Stable OLP identifiers, source paths, mathematical
 formulas, labels, citation keys, links and exercises are retained in the
 editable translation. The `upstream/content` mirror contains all 722 frozen
@@ -149,6 +145,14 @@ last-two-pass hashes; all-page visual inspection; mixed-script and Telugu
 conjunct extraction samples. The final log has zero missing glyphs,
 overfull boxes, undefined references or warnings.
 
+The 23-unit foundations HTML and EPUB readers pass exact source-to-reader text,
+formula-annotation, identifier, link, statement-class, citation and diagram
+crosswalks. The EPUB is byte-deterministic, reflowable EPUB 3, contains 2,512
+MathML roots and eight packaged SVG resources, and passes EPUBCheck 5.3.0 with
+zero errors or warnings. The deployed reader passed desktop and 390-pixel
+visual, interaction, asset-loading and console checks; all 16 public files were
+then read back anonymously and matched the repository byte-for-byte.
+
 All 204 editable drafts pass correction-aware blank-block,
 environment, source-token, protected-identifier and mathematical-form checks.
 Twenty-four same-agent semantic reviews record source-aligned reverse paraphrases and
@@ -158,7 +162,7 @@ Deduction, Tableaux, Axiomatic Deduction, First-Order Completeness and
 First-Order Introduction, Syntax, Semantics, Theories and Their Models, and
 Beyond First-order Logic, Model Theory Basics, Models of Arithmetic,
 Interpolation, and Lindström have source QA only at this checkpoint; no PDF
-or HTML reader integration is claimed for those one hundred ninety-seven units.
+or HTML reader integration is claimed for those one hundred eighty-one units.
 
 QA is machine/agent performed, not human or independent review. Several
 technical terms remain provisional. The PDF is not tagged. Source caveats
@@ -194,21 +198,24 @@ The released source ZIP is a frozen snapshot. The packaging script refuses
 to overwrite an existing versioned artifact when current source bytes differ;
 use a new version for later cumulative releases.
 
-## Build and audit the Sets HTML reader
+## Build and audit the foundations HTML and EPUB readers
 
 Requires Node.js 22+. Install the pinned dependency from `package-lock.json`,
 then generate and audit the self-contained output:
 
     npm ci --ignore-scripts
-    npm run html
-    npm run audit:html
+    npm run html:sfr
+    npm run audit:html:sfr
+    npm run epub:sfr
+    python scripts/audit-sets-epub.py --epubcheck-jar <path-to-epubcheck-5.3.0.jar>
 
 The renderer accepts only an explicit TeX subset and fails on unknown prose
 commands, environments, unresolved references, unbalanced groups, unsafe
 links, unsupported diagrams or invalid mathematics. KaTeX runs only at build
 time and emits MathML; the output has no client JavaScript, telemetry or
-network runtime dependency. `npm run html:pages` reproduces the tracked Pages
-tree under `docs/sets`.
+network runtime dependency. `npm run html:sfr:pages` reproduces the tracked
+Pages tree under `docs/sfr`. The EPUB builder uses that audited semantic HTML as
+its sole reader input and fixes ZIP timestamps for deterministic replay.
 
 ## License
 
