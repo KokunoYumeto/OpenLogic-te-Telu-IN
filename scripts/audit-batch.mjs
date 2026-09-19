@@ -14,18 +14,17 @@ const sha = x=>crypto.createHash('sha256').update(x).digest('hex');
 const matches = (s,re)=>[...s.matchAll(re)].map(m=>m[0]);
 const counts = a=>Object.fromEntries([...new Set(a)].sort().map(x=>[x,a.filter(y=>y===x).length]));
 const same = (a,b)=>JSON.stringify(a)===JSON.stringify(b);
-const stripText=s=>{
- let out='',i=0;
+const maskTextClauses=s=>{
+ let out='',i=0;const nested=[];
  while(i<s.length){
   const textMatch=s.slice(i).match(/^\\(intertext|text|mbox)\s*\{/);
   if(textMatch){
-   const inter=textMatch[1]==='intertext';
    i+=textMatch[0].length;let depth=1,start=i;
    while(i<s.length&&depth){if(s[i]==='{')depth++;else if(s[i]==='}')depth--;i++;}
-   if(inter)out+=matches(s.slice(start,i-1),/\$[^$]*\$/g).sort().join('');
+   nested.push(matches(s.slice(start,i-1),/\$[^$]*\$/g));
   }else out+=s[i++];
  }
- return out;
+ return {masked:out,nested};
 };
 const protectedIds=s=>{
  const arity={olfileid:3,olchapter:2,ollabel:1,olref:1,oliflabeldef:1,olimport:1,olasset:1,label:1,ref:1,cite:1,citeyear:1,documentclass:1};
@@ -72,9 +71,19 @@ for (const unit of manifest.filter(u=>u.order>=first&&u.order<=last)) {
  const structural=/\\(?:begin|end)\{[^{}]*\}/g;
  const tokens=/!!\^?a?\{[^{}]+\}s?/g;
  // Target-language prose can move around math, so compare the multiset of
- // math atoms, separately auditing whole display formulas and text clauses.
+ // math atoms. Nested inline formulas inside text/intertext/mbox clauses are
+ // checked independently of the prose order and of the surrounding display.
  const mathRe=/\$[^$]*\$|\\\[[\s\S]*?\\\]|\\begin\{(?:align\*?|multline\*?)\}[\s\S]*?\\end\{(?:align\*?|multline\*?)\}/g;
- const math = text=>matches(text,mathRe).map(x=>stripText(x).replace(/\s/g,''));
+ const normalizeMath=x=>x.replace(/\\vec\s+([A-Za-z])/g,'\\vec{$1}').replace(/\s/g,'');
+ const normalizeNested=x=>{
+  const atom=normalizeMath(x);
+  const sharedRelation=/^\$([A-Za-z](?:_[A-Za-z0-9{}]+)?),([A-Za-z](?:_[A-Za-z0-9{}]+)?)(\\in|\\notin|<=|>=|<|>|=)(.+)\$$/.exec(atom);
+  return sharedRelation?[`$${sharedRelation[1]}$`,`$${sharedRelation[2]}${sharedRelation[3]}${sharedRelation[4]}$`]:[atom];
+ };
+ const math = text=>{const {masked,nested}=maskTextClauses(text);return [
+  ...matches(masked,mathRe).map(normalizeMath),
+  ...nested.flatMap(group=>[...new Set(group.flatMap(normalizeNested))])
+ ];};
  const sm=math(s),tm=math(stripped.core);
  const sourceOnly=multisetDelta(sm,tm),targetOnly=multisetDelta(tm,sm);
  const expectedSourceOnly=declared.flatMap(c=>c.expected_core_math_delta.source_only).sort();
@@ -85,7 +94,7 @@ for (const unit of manifest.filter(u=>u.order>=first&&u.order<=last)) {
  record.protected_identifier_parity=same(record.protected_source,record.protected_target);
  output.push(record);
 }
-fs.writeFileSync(path.join(root,'build','BATCH-'+batch+'-STRUCTURAL-QA.json'),JSON.stringify({schema:'telugu-openlogic-batch-qa/1',generated_utc:new Date().toISOString(),note:'Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Intertext prose is masked while its inline math remains checked.',units:output},null,2)+'\n');
+fs.writeFileSync(path.join(root,'build','BATCH-'+batch+'-STRUCTURAL-QA.json'),JSON.stringify({schema:'telugu-openlogic-batch-qa/1',generated_utc:new Date().toISOString(),note:'Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Text/intertext/mbox prose is masked; nested inline math is compared per clause independently of language-specific word order.',units:output},null,2)+'\n');
 for(const r of output) console.log(JSON.stringify({unit:r.unit_id,blocks:[r.source_blocks,r.target_blocks],structure:r.structure_match,tokens:r.token_parity,identifiers:r.protected_identifier_parity,math:r.math_multiset_match}));
 for(const r of output.filter(x=>!x.paragraph_alignment)) console.log(JSON.stringify({unit:r.unit_id,blocks:r.blocks}));
 if(output.length!==last-first+1||output.some(r=>!r.paragraph_alignment||!r.structure_match||!r.token_parity||!r.protected_identifier_parity||!r.math_multiset_match||r.unicode_replacement_char||r.unpaired_surrogate))throw new Error('Structural QA failed');

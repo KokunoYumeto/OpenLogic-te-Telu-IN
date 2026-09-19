@@ -1,0 +1,194 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTECOMTHYREM-20260919",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0241",
+      "OLP-0242",
+      "OLP-0243",
+      "OLP-0244",
+      "OLP-0245",
+      "OLP-0247",
+      "OLP-0248",
+      "OLP-0250"
+    ],
+    "finding_count": 12
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTECOMTHY-007",
+      "unit_id": "OLP-0241",
+      "classification": "confirmed_local_prose_errors",
+      "source": {
+        "path": "content/computability/computability-theory/ce-closed-cup-cap.tex",
+        "bytes": 3131,
+        "sha256": "392c55f9b3a78a7c396fe53bcfe80e60af85d1f0ffe1e527619d2eb7c54e5e2e",
+        "locator": "lines 37-40 and 52-54, simultaneous-search explanation"
+      },
+      "finding": "The source says for looking where by looking is required, and spells trickier as tricker.",
+      "controlling_evidence": "Both surrounding constructions explicitly describe searching two enumerations and contrast the easier union enumeration with the more difficult intersection enumeration.",
+      "required_translation_handling": "Render the intended search relation and comparative meaning, and add an adjacent OLTECOMTHY-007 disclosure."
+    },
+    {
+      "finding_id": "OLTECOMTHY-008",
+      "unit_id": "OLP-0242",
+      "classification": "confirmed_complement_domain_index_swap",
+      "source": {
+        "path": "content/computability/computability-theory/complement-ce.tex",
+        "bytes": 2240,
+        "sha256": "9bc0f9cc61b6f4e68b6e95079d2966b0e05ed3c0ed1128710532e2f76258208f",
+        "locator": "lines 29-41, reverse implication"
+      },
+      "finding": "After assigning d to the domain A and e to the domain complement(A), the source characterizes membership in A by T(e,x,h(x)) and says cfind_e is the defined computation.",
+      "controlling_evidence": "The assignments immediately above require T(d,x,h(x)) and cfind_d for A; e characterizes the complement.",
+      "required_translation_handling": "Use d in both occurrences of T and in the defined-computation explanation, and add an adjacent OLTECOMTHY-008 disclosure."
+    },
+    {
+      "finding_id": "OLTECOMTHY-009",
+      "unit_id": "OLP-0242",
+      "classification": "confirmed_informal_index_pair_mismatch",
+      "source": {
+        "path": "content/computability/computability-theory/complement-ce.tex",
+        "bytes": 2240,
+        "sha256": "9bc0f9cc61b6f4e68b6e95079d2966b0e05ed3c0ed1128710532e2f76258208f",
+        "locator": "lines 44-49, informal parallel-search explanation"
+      },
+      "finding": "The informal explanation refers to indices e and f although the proof defined d for A and e for its complement.",
+      "controlling_evidence": "The immediately preceding proof fixes precisely the pair d,e and no index f is introduced.",
+      "required_translation_handling": "Use d and e consistently, associate d with A, and add an adjacent OLTECOMTHY-009 disclosure."
+    },
+    {
+      "finding_id": "OLTECOMTHY-010",
+      "unit_id": "OLP-0243",
+      "classification": "confirmed_duplicated_wording",
+      "source": {
+        "path": "content/computability/computability-theory/reducibility.tex",
+        "bytes": 3101,
+        "sha256": "f8797ad4502fbd9611f45780b5f706c1cf9b9c0ee49f44b05a9cc535bf201b1a",
+        "locator": "line 31, opening of the K example"
+      },
+      "finding": "The phrase notion of reduction notion repeats notion.",
+      "controlling_evidence": "The paragraph refers back to the single reduction method just introduced.",
+      "required_translation_handling": "Remove the accidental repetition and add an adjacent OLTECOMTHY-010 disclosure."
+    },
+    {
+      "finding_id": "OLTECOMTHY-011",
+      "unit_id": "OLP-0243",
+      "classification": "confirmed_local_spelling_error",
+      "source": {
+        "path": "content/computability/computability-theory/reducibility.tex",
+        "bytes": 3101,
+        "sha256": "f8797ad4502fbd9611f45780b5f706c1cf9b9c0ee49f44b05a9cc535bf201b1a",
+        "locator": "lines 35-37, halting-problem reference"
+      },
+      "finding": "The source says the halting problem in unsolvable rather than is unsolvable.",
+      "controlling_evidence": "The cited halting-problem theorem proves undecidability and the sentence uses that result to establish noncomputability of K.",
+      "required_translation_handling": "Render the intended copular statement and add an adjacent OLTECOMTHY-011 disclosure."
+    },
+    {
+      "finding_id": "OLTECOMTHY-012",
+      "unit_id": "OLP-0243",
+      "classification": "confirmed_pair_coordinate_reversal",
+      "source": {
+        "path": "content/computability/computability-theory/reducibility.tex",
+        "bytes": 3101,
+        "sha256": "f8797ad4502fbd9611f45780b5f706c1cf9b9c0ee49f44b05a9cc535bf201b1a",
+        "locator": "lines 39-42, equivalent definition of K_0"
+      },
+      "finding": "After defining K_0 using pairs <e,x>, the source writes the equivalent W_e characterization with the reversed pair <x,e>.",
+      "controlling_evidence": "The chapter definition K_0={<e,x>:cfind_e(x) defined} and the same displayed definition here both put the program index first.",
+      "required_translation_handling": "Use <e,x> in the W_e characterization and add an adjacent OLTECOMTHY-012 disclosure."
+    },
+    {
+      "finding_id": "OLTECOMTHY-013",
+      "unit_id": "OLP-0244",
+      "classification": "confirmed_local_spelling_errors",
+      "source": {
+        "path": "content/computability/computability-theory/prop-reduce.tex",
+        "bytes": 4000,
+        "sha256": "20795f49f8764c1062416ecda88edb34ad983a8f3643cb0878ccf64f08ede5e8",
+        "locator": "lines 14-17, transitivity introduction"
+      },
+      "finding": "The source writes first one say taht in place of first one says that.",
+      "controlling_evidence": "The proposition immediately following states transitivity of many-one reducibility.",
+      "required_translation_handling": "Render the intended introduction and add an adjacent OLTECOMTHY-013 disclosure."
+    },
+    {
+      "finding_id": "OLTECOMTHY-014",
+      "unit_id": "OLP-0244",
+      "classification": "confirmed_reduction_function_type_error",
+      "source": {
+        "path": "content/computability/computability-theory/prop-reduce.tex",
+        "bytes": 4000,
+        "sha256": "20795f49f8764c1062416ecda88edb34ad983a8f3643cb0878ccf64f08ede5e8",
+        "locator": "lines 68-70, characteristic-function exercise"
+      },
+      "finding": "The exercise types a many-one reduction as f:A to B, contrary to the chapter definition f:N to N.",
+      "controlling_evidence": "The displayed definition requires a total computable map on natural-number codes, and Char_A=Char_B composed with f is evaluated on every natural-number input.",
+      "required_translation_handling": "Type f as Nat to Nat while retaining A and B as the reduced sets, and add an adjacent OLTECOMTHY-014 disclosure."
+    },
+    {
+      "finding_id": "OLTECOMTHY-015",
+      "unit_id": "OLP-0245",
+      "classification": "confirmed_completeness_reduction_direction_reversal",
+      "source": {
+        "path": "content/computability/computability-theory/complete-ce-sets.tex",
+        "bytes": 1864,
+        "sha256": "8df21b8f708dbf50a1929c42788669af2c7e6b5ab1841eab1c4c328dc9e62030",
+        "locator": "lines 39-48, completeness proof for K and following exercise"
+      },
+      "finding": "To prove K complete the source says K reduces to K_0, and the exercise asks for that already established direction; completeness instead requires K_0 to reduce to K.",
+      "controlling_evidence": "K_0 was just proved complete, so transitivity transfers completeness to K only from K_0 <=_m K. The s-m-n construction used for K_1 also supplies this direction.",
+      "required_translation_handling": "Reverse both statements to K_0 <=_m K and add an adjacent OLTECOMTHY-015 disclosure."
+    },
+    {
+      "finding_id": "OLTECOMTHY-016",
+      "unit_id": "OLP-0247",
+      "classification": "confirmed_local_prose_error",
+      "source": {
+        "path": "content/computability/computability-theory/total.tex",
+        "bytes": 1721,
+        "sha256": "020737f92a1de1a6ce8664bcf1037021d0dc8454049e5afa6732305015c345ca",
+        "locator": "lines 34-38, algorithm computing h"
+      },
+      "finding": "The source writes the we compute where then we compute is intended.",
+      "controlling_evidence": "The sentence describes the next algorithmic step and the following formula gives exactly that partial computation.",
+      "required_translation_handling": "Render the intended procedural sequence and add an adjacent OLTECOMTHY-016 disclosure."
+    },
+    {
+      "finding_id": "OLTECOMTHY-017",
+      "unit_id": "OLP-0248",
+      "classification": "confirmed_malformed_definedness_condition",
+      "source": {
+        "path": "content/computability/computability-theory/rice-theorem.tex",
+        "bytes": 5508,
+        "sha256": "6d6ff6b882375fb44ebb79ee1ef6b2c5e5b6f0d783e8110ce23a681c6afb4b80",
+        "locator": "lines 113-119, fourth sample index set"
+      },
+      "finding": "The fourth set conjoins definedness of cfind_x(y) before introducing an if only for cfind_x(y'), leaving the intended conditional grammar malformed.",
+      "controlling_evidence": "The nontrivial index property intended by the final inequality is strict increase on pairs y<y' for which both function values are defined.",
+      "required_translation_handling": "State the condition as applying whenever y<y' and both values are defined, and add an adjacent OLTECOMTHY-017 disclosure."
+    },
+    {
+      "finding_id": "OLTECOMTHY-018",
+      "unit_id": "OLP-0250",
+      "classification": "confirmed_partiality_scope_error",
+      "source": {
+        "path": "content/computability/computability-theory/application-fixed-point.tex",
+        "bytes": 2551,
+        "sha256": "4bdbdec16af8ee62d1cf0af9b3e4b79a01a5f404c826076a10e59fe8b4228696",
+        "locator": "lines 27-36, theorem and proof opening"
+      },
+      "finding": "The theorem rules out a partial computable selector f, but the proof begins by taking only an arbitrary total computable f.",
+      "controlling_evidence": "The constructed g remains partial computable when f is partial: it simply diverges when f(x) diverges, so the fixed-point argument proves the stated stronger theorem.",
+      "required_translation_handling": "Begin with arbitrary partial computable f and add an adjacent OLTECOMTHY-018 disclosure."
+    }
+  ]
+}

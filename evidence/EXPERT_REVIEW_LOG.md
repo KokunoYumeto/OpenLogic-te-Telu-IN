@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 236 of 722 draft units**. This log contains 66 terminology/sense decisions and 186 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 248 of 722 draft units**. This log contains 67 terminology/sense decisions and 198 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1592,6 +1592,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Please double-check: Please double-check whether “గణనీయతా సిద్ధాంతం / పునరావృత్త సిద్ధాంతం / పాక్షిక గణనీయ ప్రమేయం / సార్వత్రిక పాక్షిక గణనీయ ప్రమేయం / కార్యసాధ్య లెక్కింపు / ఏకరీతి లెక్కింపు / s-m-n సిద్ధాంతం / గణనీయంగా లెక్కించదగిన / పునరావృత్తంగా లెక్కించదగిన / నిర్ణయించదగిన / అర్ధ-నిర్ణయించదగిన / అనిర్ణయనీయ” is idiomatic and technically standard for “computability theory / recursion theory / partial computable function / universal partial computable function / effective enumeration / uniform enumeration / s-m-n theorem / computably enumerable / recursively enumerable / decidable / semi-decidable / undecidable” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
+## REV-TE-T067 — non-computable set / halting set / self-halting set / closure under union and intersection / complement / many-one reduction and reducibility / one-one reducibility / Turing reducibility / complete computably enumerable set / oracle / totality / index set / Rice's theorem / fixed-point theorem / self-reference
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: గణనీయంకాని సమితి / ఆగే సమితి / స్వయంగా ఆగే సమితి / సంయోగం, ఛేదనం కింద సంవృతత / పూరకం / అనేకం-ఒకటి తగ్గింపు, తగ్గించదగినత / ఒకటి-ఒకటి తగ్గించదగినత / ట్యూరింగ్ తగ్గించదగినత / సంపూర్ణ గణనీయంగా లెక్కించదగిన సమితి / ఒరాకిల్ / సర్వనిర్వచితత్వం / సూచిక సమితి / రైస్ సిద్ధాంతం / స్థిరబిందు సిద్ధాంతం / స్వీయ-సూచన
+
+- Exact implementation: OLP-0240; computability/computability-theory/non-comp-set; content/computability/computability-theory/non-comp-set.tex:9-10 ↔ translation/content/computability/computability-theory/non-comp-set.tex:9-10 (OLP-0240-B004); printed/PDF page pending; OLP-0241; computability/computability-theory/ce-closed-cup-cap; content/computability/computability-theory/ce-closed-cup-cap.tex:11-12 ↔ translation/content/computability/computability-theory/ce-closed-cup-cap.tex:11-12 (OLP-0241-B005); printed/PDF page pending; OLP-0242; computability/computability-theory/complement-ce; content/computability/computability-theory/complement-ce.tex:9-10 ↔ translation/content/computability/computability-theory/complement-ce.tex:9-10 (OLP-0242-B004); printed/PDF page pending; OLP-0243; computability/computability-theory/reducibility; content/computability/computability-theory/reducibility.tex:50-61 ↔ translation/content/computability/computability-theory/reducibility.tex:52-63 (OLP-0243-B008); printed/PDF page pending; OLP-0245; computability/computability-theory/complete-ce-sets; content/computability/computability-theory/complete-ce-sets.tex:9-10 ↔ translation/content/computability/computability-theory/complete-ce-sets.tex:9-10 (OLP-0245-B004); printed/PDF page pending; OLP-0246; computability/computability-theory/k-1; content/computability/computability-theory/k-1.tex:30-45 ↔ translation/content/computability/computability-theory/k-1.tex:29-43 (OLP-0246-B009); printed/PDF page pending; OLP-0247; computability/computability-theory/total; content/computability/computability-theory/total.tex:9-10 ↔ translation/content/computability/computability-theory/total.tex:9-10 (OLP-0247-B004); printed/PDF page pending; OLP-0248; computability/computability-theory/rice-theorem; content/computability/computability-theory/rice-theorem.tex:23-28 ↔ translation/content/computability/computability-theory/rice-theorem.tex:23-27 (OLP-0248-B007); printed/PDF page pending; OLP-0248; computability/computability-theory/rice-theorem; content/computability/computability-theory/rice-theorem.tex:30-35 ↔ translation/content/computability/computability-theory/rice-theorem.tex:29-33 (OLP-0248-B008); printed/PDF page pending; OLP-0249; computability/computability-theory/fixed-point-thm; content/computability/computability-theory/fixed-point-thm.tex:9-10 ↔ translation/content/computability/computability-theory/fixed-point-thm.tex:9-10 (OLP-0249-B004); printed/PDF page pending; OLP-0251; computability/computability-theory/def-functions-self-reference; content/computability/computability-theory/def-functions-self-reference.tex:9-10 ↔ translation/content/computability/computability-theory/def-functions-self-reference.tex:9-10 (OLP-0251-B004); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P028, PDF 92, printed 85, Unary predicates, binary relations and quantifier classification; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P034, PDF 308, printed 301, Main point 5, Cartesian product definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P008 and TE-P034 directly support set operations, ordered pairs and Cartesian-product register; TE-P010--TE-P011 directly support relation, function, inverse and composition language; TE-P005 supports native natural-number exposition; TE-P003 and TE-P032 support proof, deduction and theorem prose; TE-P018 supports formal symbolic-logic register; TE-P028 supports property and relation contexts. The witnesses do not directly attest many-one or Turing reducibility, completeness, oracle computation, index sets, Rice's theorem, fixed points or computability-theoretic self-reference. The frozen definitions, reduction equivalences, closure constructions, diagonal arguments, s-m-n applications and fixed-point equations in OLP-0240--OLP-0251 control those exact senses; TE-T020, TE-T024, TE-T026, TE-T028, TE-T060, TE-T064, TE-T065 and TE-T066 supply the edition's earlier reversible choices. ఒరాకిల్ is an explicitly introduced technical borrowing; NP, కార్ప్, కుక్, రైస్, ట్యూరింగ్ and కరీ are source abbreviations, names or eponyms; Java and C++ are source programming-language names; no unexplained English technical headword remains in reader-facing prose
+
+- Alternatives: reuse the established set, function, relation and proof register while making each reducibility, completeness, index-set and fixed-point sense explicit from its local definition (chosen); leave the specialized computability-theory headwords in untranslated English reader prose (rejected); collapse many-one, one-one and Turing reducibility into one undifferentiated term (rejected because the definitions distinguish them); claim direct native attestation for oracle computation, Rice’s theorem or fixed points (rejected because the frozen equations and proofs control those senses)
+
+- Uncertainty: Low semantic uncertainty because reductions, completeness, index sets and fixed points are specified by explicit biconditionals, equations and proofs; medium to high nomenclatural uncertainty for the specialized reducibility, oracle and fixed-point compounds
+
+- Please double-check: Please double-check whether “గణనీయంకాని సమితి / ఆగే సమితి / స్వయంగా ఆగే సమితి / సంయోగం, ఛేదనం కింద సంవృతత / పూరకం / అనేకం-ఒకటి తగ్గింపు, తగ్గించదగినత / ఒకటి-ఒకటి తగ్గించదగినత / ట్యూరింగ్ తగ్గించదగినత / సంపూర్ణ గణనీయంగా లెక్కించదగిన సమితి / ఒరాకిల్ / సర్వనిర్వచితత్వం / సూచిక సమితి / రైస్ సిద్ధాంతం / స్థిరబిందు సిద్ధాంతం / స్వీయ-సూచన” is idiomatic and technically standard for “non-computable set / halting set / self-halting set / closure under union and intersection / complement / many-one reduction and reducibility / one-one reducibility / Turing reducibility / complete computably enumerable set / oracle / totality / index set / Rice's theorem / fixed-point theorem / self-reference” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
 ## REV-OLFUN-001 — OLFUN-001
 
 - Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
@@ -1602,7 +1626,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: corrected theorem adds nonempty A; adjacent sourcecorrection macro discloses omission, counterexample and exact condition
 
-- Exact implementation: OLP-0024; sets-functions-relations/functions/inverses; lines 62-84, injection-to-left-inverse proposition and proof ↔ translation/content/sets-functions-relations/functions/inverses.tex:64-71 (OLP-0024-B012); printed/PDF page pending
+- Exact implementation: OLP-0024; sets-functions-relations/functions/inverses; lines 62-66; mapped segment within audited scope lines 62-84, injection-to-left-inverse proposition and proof ↔ translation/content/sets-functions-relations/functions/inverses.tex:63-71 (OLP-0024-B012); printed/PDF page pending; OLP-0024; sets-functions-relations/functions/inverses; lines 68-84; mapped segment within audited scope lines 62-84, injection-to-left-inverse proposition and proof ↔ translation/content/sets-functions-relations/functions/inverses.tex:73-92 (OLP-0024-B013); printed/PDF page pending
 
 - Authorities actually checked: OLFUN-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -1674,7 +1698,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: graph described as a relation between A and B contained in A×B; adjacent sourcecorrection explains why relation on A×B is a different type
 
-- Exact implementation: OLP-0023; sets-functions-relations/functions/functions-relations; lines 24-30 and 61-64; graph definition and relation-on wording ↔ translation/content/sets-functions-relations/functions/functions-relations.tex:60-66 (OLP-0023-B012); printed/PDF page pending
+- Exact implementation: OLP-0023; sets-functions-relations/functions/functions-relations; lines 24-30; mapped segment within audited scope lines 24-30 and 61-64; graph definition and relation-on wording ↔ translation/content/sets-functions-relations/functions/functions-relations.tex:23-30 (OLP-0023-B007); printed/PDF page pending; OLP-0023; sets-functions-relations/functions/functions-relations; lines 60-76; mapped segment within audited scope lines 24-30 and 61-64; graph definition and relation-on wording ↔ translation/content/sets-functions-relations/functions/functions-relations.tex:59-79 (OLP-0023-B012); printed/PDF page pending
 
 - Authorities actually checked: OLFUN-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -1698,7 +1722,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: explicit function restriction retained; exact-counterpart claim qualified to distinguish input-only restriction from two-coordinate relation restriction
 
-- Exact implementation: OLP-0023; sets-functions-relations/functions/functions-relations; lines 78-100 plus relations/operations.tex lines 20-32 ↔ translation/content/sets-functions-relations/functions/functions-relations.tex:88-106 (OLP-0023-B016); printed/PDF page pending
+- Exact implementation: OLP-0023; sets-functions-relations/functions/functions-relations; lines 78-79; mapped segment within audited scope lines 78-100 plus relations/operations.tex lines 20-32 ↔ translation/content/sets-functions-relations/functions/functions-relations.tex:81-82 (OLP-0023-B013); printed/PDF page pending; OLP-0023; sets-functions-relations/functions/functions-relations; lines 81-85; mapped segment within audited scope lines 78-100 plus relations/operations.tex lines 20-32 ↔ translation/content/sets-functions-relations/functions/functions-relations.tex:84-87 (OLP-0023-B014); printed/PDF page pending; OLP-0023; sets-functions-relations/functions/functions-relations; lines 87-90; mapped segment within audited scope lines 78-100 plus relations/operations.tex lines 20-32 ↔ translation/content/sets-functions-relations/functions/functions-relations.tex:89-92 (OLP-0023-B015); printed/PDF page pending; OLP-0023; sets-functions-relations/functions/functions-relations; lines 92-101; mapped segment within audited scope lines 78-100 plus relations/operations.tex lines 20-32 ↔ translation/content/sets-functions-relations/functions/functions-relations.tex:94-107 (OLP-0023-B016); printed/PDF page pending
 
 - Authorities actually checked: OLFUN-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -1890,7 +1914,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: bound one output sequence name s consistently; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0034; sets-functions-relations/size-of-sets/reduction; lines 47-69, characteristic-sequence definition ↔ translation/content/sets-functions-relations/size-of-sets/reduction.tex:51-63 (OLP-0034-B011); printed/PDF page pending
+- Exact implementation: OLP-0034; sets-functions-relations/size-of-sets/reduction; lines 47-49; mapped segment within audited scope lines 47-69, characteristic-sequence definition ↔ translation/content/sets-functions-relations/size-of-sets/reduction.tex:48-50 (OLP-0034-B010); printed/PDF page pending; OLP-0034; sets-functions-relations/size-of-sets/reduction; lines 51-58; mapped segment within audited scope lines 47-69, characteristic-sequence definition ↔ translation/content/sets-functions-relations/size-of-sets/reduction.tex:52-62 (OLP-0034-B011); printed/PDF page pending; OLP-0034; sets-functions-relations/size-of-sets/reduction; lines 60-69; mapped segment within audited scope lines 47-69, characteristic-sequence definition ↔ translation/content/sets-functions-relations/size-of-sets/reduction.tex:64-72 (OLP-0034-B012); printed/PDF page pending
 
 - Authorities actually checked: OLSIZ-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -2034,7 +2058,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: bound one output string name s consistently; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0040; sets-functions-relations/size-of-sets/reduction-alt; lines 48-58, characteristic-sequence definition ↔ translation/content/sets-functions-relations/size-of-sets/reduction-alt.tex:50-56 (OLP-0040-B012); printed/PDF page pending
+- Exact implementation: OLP-0040; sets-functions-relations/size-of-sets/reduction-alt; lines 48-50; mapped segment within audited scope lines 48-58, characteristic-sequence definition ↔ translation/content/sets-functions-relations/size-of-sets/reduction-alt.tex:46-48 (OLP-0040-B011); printed/PDF page pending; OLP-0040; sets-functions-relations/size-of-sets/reduction-alt; lines 52-54; mapped segment within audited scope lines 48-58, characteristic-sequence definition ↔ translation/content/sets-functions-relations/size-of-sets/reduction-alt.tex:50-55 (OLP-0040-B012); printed/PDF page pending; OLP-0040; sets-functions-relations/size-of-sets/reduction-alt; lines 56-61; mapped segment within audited scope lines 48-58, characteristic-sequence definition ↔ translation/content/sets-functions-relations/size-of-sets/reduction-alt.tex:57-62 (OLP-0040-B013); printed/PDF page pending
 
 - Authorities actually checked: OLSIZ-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -2202,7 +2226,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: stated theorem and exercise for equivalence classes of Cauchy sequences; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0048; sets-functions-relations/arithmetization/cauchy; lines 159-171, ordered-field theorem and exercise ↔ translation/content/sets-functions-relations/arithmetization/cauchy.tex:168 (OLP-0048-B015); printed/PDF page pending
+- Exact implementation: OLP-0048; sets-functions-relations/arithmetization/cauchy; lines 149-163; mapped segment within audited scope lines 159-171, ordered-field theorem and exercise ↔ translation/content/sets-functions-relations/arithmetization/cauchy.tex:148-171 (OLP-0048-B015); printed/PDF page pending; OLP-0048; sets-functions-relations/arithmetization/cauchy; lines 165-167; mapped segment within audited scope lines 159-171, ordered-field theorem and exercise ↔ translation/content/sets-functions-relations/arithmetization/cauchy.tex:173-175 (OLP-0048-B016); printed/PDF page pending; OLP-0048; sets-functions-relations/arithmetization/cauchy; lines 169-171; mapped segment within audited scope lines 159-171, ordered-field theorem and exercise ↔ translation/content/sets-functions-relations/arithmetization/cauchy.tex:177-180 (OLP-0048-B017); printed/PDF page pending
 
 - Authorities actually checked: OLTEARITH-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -2226,7 +2250,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: stated completeness for represented classes, retained S as representative sequences, and made the q_Real comparison class-typed; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0048; sets-functions-relations/arithmetization/cauchy; lines 173-226, completeness theorem and proof ↔ translation/content/sets-functions-relations/arithmetization/cauchy.tex:189 (OLP-0048-B019); printed/PDF page pending
+- Exact implementation: OLP-0048; sets-functions-relations/arithmetization/cauchy; lines 173-174; mapped segment within audited scope lines 173-226, completeness theorem and proof ↔ translation/content/sets-functions-relations/arithmetization/cauchy.tex:182-183 (OLP-0048-B018); printed/PDF page pending; OLP-0048; sets-functions-relations/arithmetization/cauchy; lines 176-179; mapped segment within audited scope lines 173-226, completeness theorem and proof ↔ translation/content/sets-functions-relations/arithmetization/cauchy.tex:185-194 (OLP-0048-B019); printed/PDF page pending; OLP-0048; sets-functions-relations/arithmetization/cauchy; lines 181-185; mapped segment within audited scope lines 173-226, completeness theorem and proof ↔ translation/content/sets-functions-relations/arithmetization/cauchy.tex:196-203 (OLP-0048-B020); printed/PDF page pending; OLP-0048; sets-functions-relations/arithmetization/cauchy; lines 187-213; mapped segment within audited scope lines 173-226, completeness theorem and proof ↔ translation/content/sets-functions-relations/arithmetization/cauchy.tex:205-231 (OLP-0048-B021); printed/PDF page pending; OLP-0048; sets-functions-relations/arithmetization/cauchy; lines 215-224; mapped segment within audited scope lines 173-226, completeness theorem and proof ↔ translation/content/sets-functions-relations/arithmetization/cauchy.tex:233-245 (OLP-0048-B022); printed/PDF page pending; OLP-0048; sets-functions-relations/arithmetization/cauchy; lines 226-227; mapped segment within audited scope lines 173-226, completeness theorem and proof ↔ translation/content/sets-functions-relations/arithmetization/cauchy.tex:247-256 (OLP-0048-B023); printed/PDF page pending
 
 - Authorities actually checked: OLTEARITH-20260904; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -2274,7 +2298,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: bound f:A-to-A and o in A and restricted closure candidates to subsets of A; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0051; sets-functions-relations/infinite/dedekind-algebra; lines 41-76, closure definition, lemma and witness ↔ translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:52 (OLP-0051-B006); printed/PDF page pending
+- Exact implementation: OLP-0051; sets-functions-relations/infinite/dedekind-algebra; lines 41-46; mapped segment within audited scope lines 41-76, closure definition, lemma and witness ↔ translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:45-56 (OLP-0051-B006); printed/PDF page pending; OLP-0051; sets-functions-relations/infinite/dedekind-algebra; lines 48-61; mapped segment within audited scope lines 41-76, closure definition, lemma and witness ↔ translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:58-71 (OLP-0051-B007); printed/PDF page pending; OLP-0051; sets-functions-relations/infinite/dedekind-algebra; lines 63-67; mapped segment within audited scope lines 41-76, closure definition, lemma and witness ↔ translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:73-77 (OLP-0051-B008); printed/PDF page pending; OLP-0051; sets-functions-relations/infinite/dedekind-algebra; lines 69-70; mapped segment within audited scope lines 41-76, closure definition, lemma and witness ↔ translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:79-81 (OLP-0051-B009); printed/PDF page pending; OLP-0051; sets-functions-relations/infinite/dedekind-algebra; lines 72-73; mapped segment within audited scope lines 41-76, closure definition, lemma and witness ↔ translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:83-86 (OLP-0051-B010); printed/PDF page pending; OLP-0051; sets-functions-relations/infinite/dedekind-algebra; lines 75-77; mapped segment within audited scope lines 41-76, closure definition, lemma and witness ↔ translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:88-90 (OLP-0051-B011); printed/PDF page pending
 
 - Authorities actually checked: OLTEINF-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -2298,7 +2322,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: applied closure minimality to N-intersection-X, the s-closed subset supplied by the theorem condition; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0052; sets-functions-relations/infinite/dedekind-induction; lines 16-27, induction theorem and closure-minimality proof ↔ translation/content/sets-functions-relations/infinite/dedekind-induction.tex:30 (OLP-0052-B007); printed/PDF page pending
+- Exact implementation: OLP-0052; sets-functions-relations/infinite/dedekind-induction; lines 16-21; mapped segment within audited scope lines 16-27, induction theorem and closure-minimality proof ↔ translation/content/sets-functions-relations/infinite/dedekind-induction.tex:16-22 (OLP-0052-B006); printed/PDF page pending; OLP-0052; sets-functions-relations/infinite/dedekind-induction; lines 23-27; mapped segment within audited scope lines 16-27, induction theorem and closure-minimality proof ↔ translation/content/sets-functions-relations/infinite/dedekind-induction.tex:24-34 (OLP-0052-B007); printed/PDF page pending
 
 - Authorities actually checked: OLTEINF-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -2322,7 +2346,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: bound an ambient U, self-map f, base B subset U and closure candidates X subset U; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0054; sets-functions-relations/infinite/card-sb; lines 25-46, closure of a set under a function ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:34 (OLP-0054-B007); printed/PDF page pending
+- Exact implementation: OLP-0054; sets-functions-relations/infinite/card-sb; lines 25-33; mapped segment within audited scope lines 25-46, closure of a set under a function ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:25-37 (OLP-0054-B007); printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; lines 35-43; mapped segment within audited scope lines 25-46, closure of a set under a function ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:39-47 (OLP-0054-B008); printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; lines 45-47; mapped segment within audited scope lines 25-46, closure of a set under a function ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:49-51 (OLP-0054-B009); printed/PDF page pending
 
 - Authorities actually checked: OLTEINF-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -2346,7 +2370,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: replaced the malformed nested cardinal equality by B equinumerous with C; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0054; sets-functions-relations/infinite/card-sb; lines 49-53, cardinal sandwich helper conclusion ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:59 (OLP-0054-B011); printed/PDF page pending
+- Exact implementation: OLP-0054; sets-functions-relations/infinite/card-sb; lines 49-49; mapped segment within audited scope lines 49-53, cardinal sandwich helper conclusion ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:53-53 (OLP-0054-B010); printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; lines 51-53; mapped segment within audited scope lines 49-53, cardinal sandwich helper conclusion ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:55-62 (OLP-0054-B011); printed/PDF page pending
 
 - Authorities actually checked: OLTEINF-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -2370,7 +2394,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: added the missing ran(g)-subset-B direction before the source's B-subset-ran(g) direction; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0054; sets-functions-relations/infinite/card-sb; lines 55-83, range-equality proof ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:99 (OLP-0054-B015); printed/PDF page pending
+- Exact implementation: OLP-0054; sets-functions-relations/infinite/card-sb; lines 55-68; mapped segment within audited scope lines 55-83, range-equality proof ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:64-77 (OLP-0054-B012); printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; lines 70-73; mapped segment within audited scope lines 55-83, range-equality proof ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:79-83 (OLP-0054-B013); printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; lines 75-78; mapped segment within audited scope lines 55-83, range-equality proof ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:85-89 (OLP-0054-B014); printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; lines 80-83; mapped segment within audited scope lines 55-83, range-equality proof ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:91-104 (OLP-0054-B015); printed/PDF page pending
 
 - Authorities actually checked: OLTEINF-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -2586,7 +2610,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: labelled all four antecedent-order changes with LeftR{Exchange}, retaining every sequent; one adjacent sourcecorrection discloses the repeated repair
 
-- Exact implementation: OLP-0075; first-order-logic/sequent-calculus/proving-things; lines 76-90, 94-108, 110-129 and 132-151, repeated antecedent exchange labels ↔ translation/content/first-order-logic/sequent-calculus/proving-things.tex:88 (OLP-0075-B010); printed/PDF page pending
+- Exact implementation: OLP-0075; first-order-logic/sequent-calculus/proving-things; lines 76-108; mapped segment within audited scope lines 76-90, 94-108, 110-129 and 132-151, repeated antecedent exchange labels ↔ translation/content/first-order-logic/sequent-calculus/proving-things.tex:73-110 (OLP-0075-B010); printed/PDF page pending; OLP-0075; first-order-logic/sequent-calculus/proving-things; lines 110-152; mapped segment within audited scope lines 76-90, 94-108, 110-129 and 132-151, repeated antecedent exchange labels ↔ translation/content/first-order-logic/sequent-calculus/proving-things.tex:112-154 (OLP-0075-B011); printed/PDF page pending
 
 - Authorities actually checked: OLTESEQ-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -2730,7 +2754,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: labelled the not-A and A step with Elim{not}, matching the adjacent prose, defined rule and later completed tree; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0089; first-order-logic/natural-deduction/proving-things; lines 125-151, intermediate contradiction tree ↔ translation/content/first-order-logic/natural-deduction/proving-things.tex:147 (OLP-0089-B013); printed/PDF page pending
+- Exact implementation: OLP-0089; first-order-logic/natural-deduction/proving-things; lines 116-147; mapped segment within audited scope lines 125-151, intermediate contradiction tree ↔ translation/content/first-order-logic/natural-deduction/proving-things.tex:116-150 (OLP-0089-B013); printed/PDF page pending; OLP-0089; first-order-logic/natural-deduction/proving-things; lines 149-176; mapped segment within audited scope lines 125-151, intermediate contradiction tree ↔ translation/content/first-order-logic/natural-deduction/proving-things.tex:152-180 (OLP-0089-B014); printed/PDF page pending
 
 - Authorities actually checked: OLTEND-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -2802,7 +2826,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: named tableaux rather than natural deduction, as fixed by the chapter path, IDs, tag and imports; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0098; first-order-logic/tableaux/tableaux; lines 13-16, prfTab editorial scope note ↔ translation/content/first-order-logic/tableaux/tableaux.tex:17 (OLP-0098-B006); printed/PDF page pending
+- Exact implementation: OLP-0098; first-order-logic/tableaux/tableaux; lines 12-13; mapped segment within audited scope lines 13-16, prfTab editorial scope note ↔ translation/content/first-order-logic/tableaux/tableaux.tex:12-13 (OLP-0098-B005); printed/PDF page pending; OLP-0098; first-order-logic/tableaux/tableaux; lines 15-17; mapped segment within audited scope lines 13-16, prfTab editorial scope note ↔ translation/content/first-order-logic/tableaux/tableaux.tex:15-21 (OLP-0098-B006); printed/PDF page pending
 
 - Authorities actually checked: OLTETAB-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -2946,7 +2970,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: restored all eight sFmla calls to separate sign and formula arguments while preserving their signs, formulas and closures; adjacent sourcecorrection discloses the repeated repair
 
-- Exact implementation: OLP-0107; first-order-logic/tableaux/provability-propositional; lines 39-55 and 102-117, eight malformed signed-formula nodes ↔ translation/content/first-order-logic/tableaux/provability-propositional.tex:59 (OLP-0107-B009); printed/PDF page pending
+- Exact implementation: OLP-0107; first-order-logic/tableaux/provability-propositional; lines 35-73; mapped segment within audited scope lines 39-55 and 102-117, eight malformed signed-formula nodes ↔ translation/content/first-order-logic/tableaux/provability-propositional.tex:34-79 (OLP-0107-B009); printed/PDF page pending; OLP-0107; first-order-logic/tableaux/provability-propositional; lines 82-124; mapped segment within audited scope lines 39-55 and 102-117, eight malformed signed-formula nodes ↔ translation/content/first-order-logic/tableaux/provability-propositional.tex:88-131 (OLP-0107-B011); printed/PDF page pending
 
 - Authorities actually checked: OLTETAB-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -2970,7 +2994,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: used metavariable A consistently in both universal-rule premises, conclusions and semantic arguments; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0109; first-order-logic/tableaux/soundness; lines 126-156, true- and false-universal soundness cases ↔ translation/content/first-order-logic/tableaux/soundness.tex:162 (OLP-0109-B018); printed/PDF page pending
+- Exact implementation: OLP-0109; first-order-logic/tableaux/soundness; lines 126-133; mapped segment within audited scope lines 126-156, true- and false-universal soundness cases ↔ translation/content/first-order-logic/tableaux/soundness.tex:129-136 (OLP-0109-B015); printed/PDF page pending; OLP-0109; first-order-logic/tableaux/soundness; lines 135-142; mapped segment within audited scope lines 126-156, true- and false-universal soundness cases ↔ translation/content/first-order-logic/tableaux/soundness.tex:138-146 (OLP-0109-B016); printed/PDF page pending; OLP-0109; first-order-logic/tableaux/soundness; lines 144-150; mapped segment within audited scope lines 126-156, true- and false-universal soundness cases ↔ translation/content/first-order-logic/tableaux/soundness.tex:148-155 (OLP-0109-B017); printed/PDF page pending; OLP-0109; first-order-logic/tableaux/soundness; lines 152-190; mapped segment within audited scope lines 126-156, true- and false-universal soundness cases ↔ translation/content/first-order-logic/tableaux/soundness.tex:157-203 (OLP-0109-B018); printed/PDF page pending
 
 - Authorities actually checked: OLTETAB-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -3306,7 +3330,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: restored the ! formula-metavariable marker before B in all three affected formulas; adjacent sourcecorrection discloses the repeated repair
 
-- Exact implementation: OLP-0124; first-order-logic/axiomatic-deduction/soundness; lines 80, 82 and 97, universal-quantifier rule case ↔ translation/content/first-order-logic/axiomatic-deduction/soundness.tex:106 (OLP-0124-B013); printed/PDF page pending
+- Exact implementation: OLP-0124; first-order-logic/axiomatic-deduction/soundness; lines 79-85; mapped segment within audited scope lines 80, 82 and 97, universal-quantifier rule case ↔ translation/content/first-order-logic/axiomatic-deduction/soundness.tex:77-82 (OLP-0124-B012); printed/PDF page pending; OLP-0124; first-order-logic/axiomatic-deduction/soundness; lines 87-107; mapped segment within audited scope lines 80, 82 and 97, universal-quantifier rule case ↔ translation/content/first-order-logic/axiomatic-deduction/soundness.tex:84-109 (OLP-0124-B013); printed/PDF page pending
 
 - Authorities actually checked: OLTEAXD-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -3594,7 +3618,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: moved the closing bracket to the end of the universal premise in both restatements and removed each extra bracket after the conclusion; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0140; first-order-logic/introduction/first-order-logic; lines 67-84, natural-deduction and metalogical restatements of the same entailment ↔ translation/content/first-order-logic/introduction/first-order-logic.tex:74-97 (OLP-0140-B009); printed/PDF page pending
+- Exact implementation: OLP-0140; first-order-logic/introduction/first-order-logic; lines 60-73; mapped segment within audited scope lines 67-84, natural-deduction and metalogical restatements of the same entailment ↔ translation/content/first-order-logic/introduction/first-order-logic.tex:65-78 (OLP-0140-B008); printed/PDF page pending; OLP-0140; first-order-logic/introduction/first-order-logic; lines 75-86; mapped segment within audited scope lines 67-84, natural-deduction and metalogical restatements of the same entailment ↔ translation/content/first-order-logic/introduction/first-order-logic.tex:80-97 (OLP-0140-B009); printed/PDF page pending
 
 - Authorities actually checked: OLTEINT-20260906; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -3642,7 +3666,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: replaced the out-of-domain list 1,2,3 with 0,1,2, matching the declared domain and continuation; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0143; first-order-logic/introduction/satisfaction; lines 43-67, fixed domain followed by the variable-assignment example ↔ translation/content/first-order-logic/introduction/satisfaction.tex:48-78 (OLP-0143-B008); printed/PDF page pending
+- Exact implementation: OLP-0143; first-order-logic/introduction/satisfaction; lines 27-50; mapped segment within audited scope lines 43-67, fixed domain followed by the variable-assignment example ↔ translation/content/first-order-logic/introduction/satisfaction.tex:32-57 (OLP-0143-B007); printed/PDF page pending; OLP-0143; first-order-logic/introduction/satisfaction; lines 52-67; mapped segment within audited scope lines 43-67, fixed domain followed by the variable-assignment example ↔ translation/content/first-order-logic/introduction/satisfaction.tex:59-78 (OLP-0143-B008); printed/PDF page pending
 
 - Authorities actually checked: OLTEINT-20260906; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -4362,7 +4386,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: stated the fixed-free-variable formula-class lemma, retained the sentence case at k=0, and used a finite conjunction of satisfied representatives in the proof; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0189; model-theory/basics/partial-iso; lines 122-129 and 199-203, finite-rank proposition and its converse-proof use ↔ translation/content/model-theory/basics/partial-iso.tex:130-146 and 224-238 (OLP-0189-B016); printed/PDF page pending
+- Exact implementation: OLP-0189; model-theory/basics/partial-iso; lines 122-129; mapped segment within audited scope lines 122-129 and 199-203, finite-rank proposition and its converse-proof use ↔ translation/content/model-theory/basics/partial-iso.tex:131-146 (OLP-0189-B016); printed/PDF page pending; OLP-0189; model-theory/basics/partial-iso; lines 199-213; mapped segment within audited scope lines 122-129 and 199-203, finite-rank proposition and its converse-proof use ↔ translation/content/model-theory/basics/partial-iso.tex:226-243 (OLP-0189-B025); printed/PDF page pending
 
 - Authorities actually checked: OLTEMODBAS-20260907; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -4578,7 +4602,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: applied Downward Lowenheim--Skolem after compactness to obtain the asserted countable model; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0194; model-theory/models-of-arithmetic/non-standard-models; lines 78-113, proposition and proof conclusion ↔ translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:114-143 (OLP-0194-B014); printed/PDF page pending
+- Exact implementation: OLP-0194; model-theory/models-of-arithmetic/non-standard-models; lines 78-81; mapped segment within audited scope lines 78-113, proposition and proof conclusion ↔ translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:86-90 (OLP-0194-B012); printed/PDF page pending; OLP-0194; model-theory/models-of-arithmetic/non-standard-models; lines 83-98; mapped segment within audited scope lines 78-113, proposition and proof conclusion ↔ translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:92-112 (OLP-0194-B013); printed/PDF page pending; OLP-0194; model-theory/models-of-arithmetic/non-standard-models; lines 100-113; mapped segment within audited scope lines 78-113, proposition and proof conclusion ↔ translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:114-143 (OLP-0194-B014); printed/PDF page pending
 
 - Authorities actually checked: OLTEMODARI-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -4674,7 +4698,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: replaced three unrelated opulus symbols by the defined model-addition nsplus; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0196; model-theory/models-of-arithmetic/models-of-pa; lines 215-228, density-of-blocks proof ↔ translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:241-251 (OLP-0196-B033); printed/PDF page pending
+- Exact implementation: OLP-0196; model-theory/models-of-arithmetic/models-of-pa; lines 215-220; mapped segment within audited scope lines 215-228, density-of-blocks proof ↔ translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:235-239 (OLP-0196-B032); printed/PDF page pending; OLP-0196; model-theory/models-of-arithmetic/models-of-pa; lines 222-228; mapped segment within audited scope lines 215-228, density-of-blocks proof ↔ translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:241-251 (OLP-0196-B033); printed/PDF page pending
 
 - Authorities actually checked: OLTEMODARI-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -4770,7 +4794,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: used g(n)=n-1 for n>0, the bijection that yields the displayed transported operations; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0197; model-theory/models-of-arithmetic/computable-models; lines 68-98, transport of K to domain N ↔ translation/content/model-theory/models-of-arithmetic/computable-models.tex:46-91 (OLP-0197-B008); printed/PDF page pending
+- Exact implementation: OLP-0197; model-theory/models-of-arithmetic/computable-models; lines 42-75; mapped segment within audited scope lines 68-98, transport of K to domain N ↔ translation/content/model-theory/models-of-arithmetic/computable-models.tex:46-91 (OLP-0197-B008); printed/PDF page pending; OLP-0197; model-theory/models-of-arithmetic/computable-models; lines 77-98; mapped segment within audited scope lines 68-98, transport of K to domain N ↔ translation/content/model-theory/models-of-arithmetic/computable-models.tex:93-114 (OLP-0197-B009); printed/PDF page pending
 
 - Authorities actually checked: OLTEMODARI-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -4866,7 +4890,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: retained the shared Henkin constants when evaluating the expanded theories, then took the intended original-language reduct; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0201; model-theory/interpolation/interpolation-proof; lines 165-189, amalgamated model and final satisfaction claim ↔ translation/content/model-theory/interpolation/interpolation-proof.tex:196-231 (OLP-0201-B016); printed/PDF page pending
+- Exact implementation: OLP-0201; model-theory/interpolation/interpolation-proof; lines 165-181; mapped segment within audited scope lines 165-189, amalgamated model and final satisfaction claim ↔ translation/content/model-theory/interpolation/interpolation-proof.tex:197-231 (OLP-0201-B016); printed/PDF page pending; OLP-0201; model-theory/interpolation/interpolation-proof; lines 183-190; mapped segment within audited scope lines 165-189, amalgamated model and final satisfaction claim ↔ translation/content/model-theory/interpolation/interpolation-proof.tex:233-247 (OLP-0201-B017); printed/PDF page pending
 
 - Authorities actually checked: OLTEMODINT-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -5178,7 +5202,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: used one shared P,Q pair for both coded structures; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0206; model-theory/lindstrom/ls-property; lines 68-86, two coded sequence structures ↔ translation/content/model-theory/lindstrom/ls-property.tex:79-87 (OLP-0206-B013); printed/PDF page pending
+- Exact implementation: OLP-0206; model-theory/lindstrom/ls-property; lines 59-72; mapped segment within audited scope lines 68-86, two coded sequence structures ↔ translation/content/model-theory/lindstrom/ls-property.tex:61-77 (OLP-0206-B012); printed/PDF page pending; OLP-0206; model-theory/lindstrom/ls-property; lines 74-86; mapped segment within audited scope lines 68-86, two coded sequence structures ↔ translation/content/model-theory/lindstrom/ls-property.tex:79-127 (OLP-0206-B013); printed/PDF page pending
 
 - Authorities actually checked: OLTEMODLIN-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -5202,7 +5226,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: prepared disjoint tagged element and sequence sorts before coding; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0206; model-theory/lindstrom/ls-property; lines 59-86, element and finite-sequence sorts ↔ translation/content/model-theory/lindstrom/ls-property.tex:88-97 (OLP-0206-B013); printed/PDF page pending
+- Exact implementation: OLP-0206; model-theory/lindstrom/ls-property; lines 59-72; mapped segment within audited scope lines 59-86, element and finite-sequence sorts ↔ translation/content/model-theory/lindstrom/ls-property.tex:61-77 (OLP-0206-B012); printed/PDF page pending; OLP-0206; model-theory/lindstrom/ls-property; lines 74-86; mapped segment within audited scope lines 59-86, element and finite-sequence sorts ↔ translation/content/model-theory/lindstrom/ls-property.tex:79-127 (OLP-0206-B013); printed/PDF page pending
 
 - Authorities actually checked: OLTEMODLIN-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -5250,7 +5274,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: renamed the ambient coding structure K and model K-zero and repaired starred domains; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0206; model-theory/lindstrom/ls-property; lines 80-118 and figure, ambient coding structure ↔ translation/content/model-theory/lindstrom/ls-property.tex:109-126 (OLP-0206-B013); printed/PDF page pending
+- Exact implementation: OLP-0206; model-theory/lindstrom/ls-property; lines 74-86; mapped segment within audited scope lines 80-118 and figure, ambient coding structure ↔ translation/content/model-theory/lindstrom/ls-property.tex:79-127 (OLP-0206-B013); printed/PDF page pending; OLP-0206; model-theory/lindstrom/ls-property; lines 88-107; mapped segment within audited scope lines 80-118 and figure, ambient coding structure ↔ translation/content/model-theory/lindstrom/ls-property.tex:129-148 (OLP-0206-B014); printed/PDF page pending; OLP-0206; model-theory/lindstrom/ls-property; lines 109-122; mapped segment within audited scope lines 80-118 and figure, ambient coding structure ↔ translation/content/model-theory/lindstrom/ls-property.tex:150-172 (OLP-0206-B015); printed/PDF page pending
 
 - Authorities actually checked: OLTEMODLIN-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -6055,3 +6079,291 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check that the reverse range proof evaluates cfind_e at (z)_0, the input encoded by the displayed computation pair.
+
+## REV-OLTECOMTHY-007 — OLTECOMTHY-007
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: rendered the intended by-looking relation and comparative meaning; adjacent sourcecorrection discloses both local repairs
+
+- Exact implementation: OLP-0241; computability/computability-theory/ce-closed-cup-cap; lines 36-42; mapped segment within audited scope lines 37-40 and 52-54, simultaneous-search explanation ↔ translation/content/computability/computability-theory/ce-closed-cup-cap.tex:36-42 (OLP-0241-B010); printed/PDF page pending; OLP-0241; computability/computability-theory/ce-closed-cup-cap; lines 44-65; mapped segment within audited scope lines 37-40 and 52-54, simultaneous-search explanation ↔ translation/content/computability/computability-theory/ce-closed-cup-cap.tex:44-66 (OLP-0241-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTECOMTHYREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: rendered the intended by-looking relation and comparative meaning; adjacent sourcecorrection discloses both local repairs
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the closure proof repairs “for looking” and “tricker” without changing either enumeration construction.
+
+## REV-OLTECOMTHY-008 — OLTECOMTHY-008
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used d in the two T atoms and in the statement identifying the computation defined exactly on A; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0242; computability/computability-theory/complement-ce; lines 29-41, reverse implication ↔ translation/content/computability/computability-theory/complement-ce.tex:28-41 (OLP-0242-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTECOMTHYREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used d in the two T atoms and in the statement identifying the computation defined exactly on A; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the complement proof uses d, not e, in T(d,x,h(x)) because cfind_d has domain A.
+
+## REV-OLTECOMTHY-009 — OLTECOMTHY-009
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used the already defined d,e pair and associated d with A; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0242; computability/computability-theory/complement-ce; lines 44-49, informal parallel-search explanation ↔ translation/content/computability/computability-theory/complement-ce.tex:44-50 (OLP-0242-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTECOMTHYREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used the already defined d,e pair and associated d with A; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the informal parallel-search explanation consistently uses the already assigned indices d and e rather than introducing e and f.
+
+## REV-OLTECOMTHY-010 — OLTECOMTHY-010
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: removed the accidental repeated word; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0243; computability/computability-theory/reducibility; line 31, opening of the K example ↔ translation/content/computability/computability-theory/reducibility.tex:30-37 (OLP-0243-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTECOMTHYREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: removed the accidental repeated word; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that removing the duplicated word “notion” leaves the intended reducibility claim unchanged.
+
+## REV-OLTECOMTHY-011 — OLTECOMTHY-011
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: rendered the intended is-unsolvable claim; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0243; computability/computability-theory/reducibility; lines 35-37, halting-problem reference ↔ translation/content/computability/computability-theory/reducibility.tex:34-38 (OLP-0243-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTECOMTHYREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: rendered the intended is-unsolvable claim; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that “in unsolvable” is treated as the local typo “is unsolvable,” matching the cited halting result.
+
+## REV-OLTECOMTHY-012 — OLTECOMTHY-012
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: kept program index e before input x in the W_e characterization; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0243; computability/computability-theory/reducibility; lines 39-42, equivalent definition of K_0 ↔ translation/content/computability/computability-theory/reducibility.tex:39-49 (OLP-0243-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTECOMTHYREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: kept program index e before input x in the W_e characterization; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the W_e characterization of K_0 uses the ordered pair <e,x>, in the same order as its defining computation.
+
+## REV-OLTECOMTHY-013 — OLTECOMTHY-013
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: rendered the intended says-that introduction; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0244; computability/computability-theory/prop-reduce; lines 14-17, transitivity introduction ↔ translation/content/computability/computability-theory/prop-reduce.tex:12-19 (OLP-0244-B005); printed/PDF page pending
+
+- Authorities actually checked: OLTECOMTHYREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: rendered the intended says-that introduction; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the repaired sentence says the first proposition establishes transitivity of many-one reducibility.
+
+## REV-OLTECOMTHY-014 — OLTECOMTHY-014
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: typed f as Nat-to-Nat while naming A and B as the reduced sets; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0244; computability/computability-theory/prop-reduce; lines 68-70, characteristic-function exercise ↔ translation/content/computability/computability-theory/prop-reduce.tex:73-76 (OLP-0244-B013); printed/PDF page pending
+
+- Authorities actually checked: OLTECOMTHYREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: typed f as Nat-to-Nat while naming A and B as the reduced sets; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that a many-one reduction is typed f: N to N, not merely f: A to B, so the characteristic-function composition is well formed.
+
+## REV-OLTECOMTHY-015 — OLTECOMTHY-015
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: reversed both prose statements to K_0 reduces to K; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0245; computability/computability-theory/complete-ce-sets; lines 39-42; mapped segment within audited scope lines 39-48, completeness proof for K and following exercise ↔ translation/content/computability/computability-theory/complete-ce-sets.tex:40-42 (OLP-0245-B009); printed/PDF page pending; OLP-0245; computability/computability-theory/complete-ce-sets; lines 44-45; mapped segment within audited scope lines 39-48, completeness proof for K and following exercise ↔ translation/content/computability/computability-theory/complete-ce-sets.tex:44-46 (OLP-0245-B010); printed/PDF page pending; OLP-0245; computability/computability-theory/complete-ce-sets; lines 47-49; mapped segment within audited scope lines 39-48, completeness proof for K and following exercise ↔ translation/content/computability/computability-theory/complete-ce-sets.tex:48-50 (OLP-0245-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTECOMTHYREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: reversed both prose statements to K_0 reduces to K; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that completeness of K requires K_0 many-one reduces to K, and that the following exercise asks for this same direction.
+
+## REV-OLTECOMTHY-016 — OLTECOMTHY-016
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: rendered the intended procedural sequence; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0247; computability/computability-theory/total; lines 34-38, algorithm computing h ↔ translation/content/computability/computability-theory/total.tex:34-40 (OLP-0247-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTECOMTHYREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: rendered the intended procedural sequence; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the repaired procedural sentence first simulates cfind_x(x) and returns zero exactly if that computation halts.
+
+## REV-OLTECOMTHY-017 — OLTECOMTHY-017
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: made the conditional scope explicitly require both values to be defined; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0248; computability/computability-theory/rice-theorem; lines 113-119, fourth sample index set ↔ translation/content/computability/computability-theory/rice-theorem.tex:106-116 (OLP-0248-B016); printed/PDF page pending
+
+- Authorities actually checked: OLTECOMTHYREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: made the conditional scope explicitly require both values to be defined; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the fourth Rice-theorem example asserts strict increase only when both displayed function values are defined.
+
+## REV-OLTECOMTHY-018 — OLTECOMTHY-018
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: started the proof with arbitrary partial computable f, for which the same partial construction works; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0250; computability/computability-theory/application-fixed-point; lines 28-32; mapped segment within audited scope lines 27-36, theorem and proof opening ↔ translation/content/computability/computability-theory/application-fixed-point.tex:28-32 (OLP-0250-B007); printed/PDF page pending; OLP-0250; computability/computability-theory/application-fixed-point; lines 34-60; mapped segment within audited scope lines 27-36, theorem and proof opening ↔ translation/content/computability/computability-theory/application-fixed-point.tex:34-59 (OLP-0250-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTECOMTHYREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: started the proof with arbitrary partial computable f, for which the same partial construction works; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the fixed-point application begins with arbitrary partial computable f, matching the theorem and the partial construction of g.

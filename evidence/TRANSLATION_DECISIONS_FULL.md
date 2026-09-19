@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **236 of 722 source units drafted**. This readable view contains all 252 decisions and 417 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **248 of 722 source units drafted**. This readable view contains all 265 decisions and 487 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -1869,6 +1869,42 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T066-OCC-005; OLP-0238; OLP-0238-B004; source upstream/content/computability/computability-theory/ce-sets.tex:9-10 bytes 155-219 SHA-256 a4cb50deceb3d948ebf79dc5f5aad48801a5a58e633c98e7caf834098a3402a8; target translation/content/computability/computability-theory/ce-sets.tex:9-10 bytes 155-276 SHA-256 50ae36b48134bcf0375dba1ee509abea6cc77f34e7e82f38c238c5f18cfcd13c; reader page pending.
   - te-Telu-IN-TE-T066-OCC-006; OLP-0239; OLP-0239-B008; source upstream/content/computability/computability-theory/equiv-ce-defs.tex:30-43 bytes 865-1525 SHA-256 d997e01b3f6cae024d43895694771f165f9bff070b5b3b7469ddd827e2777d51; target translation/content/computability/computability-theory/equiv-ce-defs.tex:30-43 bytes 1998-3440 SHA-256 1e132490e91432439d8bf98cdf92ad974f0426e3ef685e173063b053be8d93e6; reader page pending.
 
+## te-Telu-IN-TE-T067 — non-computable set / halting set / self-halting set / closure under union and intersection / complement / many-one reduction and reducibility / one-one reducibility / Turing reducibility / complete computably enumerable set / oracle / totality / index set / Rice's theorem / fixed-point theorem / self-reference
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: గణనీయంకాని సమితి / ఆగే సమితి / స్వయంగా ఆగే సమితి / సంయోగం, ఛేదనం కింద సంవృతత / పూరకం / అనేకం-ఒకటి తగ్గింపు, తగ్గించదగినత / ఒకటి-ఒకటి తగ్గించదగినత / ట్యూరింగ్ తగ్గించదగినత / సంపూర్ణ గణనీయంగా లెక్కించదగిన సమితి / ఒరాకిల్ / సర్వనిర్వచితత్వం / సూచిక సమితి / రైస్ సిద్ధాంతం / స్థిరబిందు సిద్ధాంతం / స్వీయ-సూచన
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “non-computable set / halting set / self-halting set / closure under union and intersection / complement / many-one reduction and reducibility / one-one reducibility / Turing reducibility / complete computably enumerable set / oracle / totality / index set / Rice's theorem / fixed-point theorem / self-reference” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low semantic uncertainty because reductions, completeness, index sets and fixed points are specified by explicit biconditionals, equations and proofs; medium to high nomenclatural uncertainty for the specialized reducibility, oracle and fixed-point compounds
+
+- Rationale: TE-P008 and TE-P034 directly support set operations, ordered pairs and Cartesian-product register; TE-P010--TE-P011 directly support relation, function, inverse and composition language; TE-P005 supports native natural-number exposition; TE-P003 and TE-P032 support proof, deduction and theorem prose; TE-P018 supports formal symbolic-logic register; TE-P028 supports property and relation contexts. The witnesses do not directly attest many-one or Turing reducibility, completeness, oracle computation, index sets, Rice's theorem, fixed points or computability-theoretic self-reference. The frozen definitions, reduction equivalences, closure constructions, diagonal arguments, s-m-n applications and fixed-point equations in OLP-0240--OLP-0251 control those exact senses; TE-T020, TE-T024, TE-T026, TE-T028, TE-T060, TE-T064, TE-T065 and TE-T066 supply the edition's earlier reversible choices. ఒరాకిల్ is an explicitly introduced technical borrowing; NP, కార్ప్, కుక్, రైస్, ట్యూరింగ్ and కరీ are source abbreviations, names or eponyms; Java and C++ are source programming-language names; no unexplained English technical headword remains in reader-facing prose
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P028 [checked_context_only], PDF page 92; printed page 85; Unary predicates, binary relations and quantifier classification; Direct quantifier taxonomy and predicate/relation context. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C004:TE-P034 [checked_context_only], PDF page 308; printed page 301; Main point 5, Cartesian product definition; Direct ordered-pair and Cartesian-product terminology; singular క్రమయుగ్మం is a transparent inflection.
+
+- Alternatives: leave the specialized computability-theory headwords in untranslated English reader prose [rejected: rejected] | collapse many-one, one-one and Turing reducibility into one undifferentiated term [rejected: rejected because the definitions distinguish them] | claim direct native attestation for oracle computation, Rice’s theorem or fixed points [rejected: rejected because the frozen equations and proofs control those senses]
+
+- Review question: Please double-check whether “గణనీయంకాని సమితి / ఆగే సమితి / స్వయంగా ఆగే సమితి / సంయోగం, ఛేదనం కింద సంవృతత / పూరకం / అనేకం-ఒకటి తగ్గింపు, తగ్గించదగినత / ఒకటి-ఒకటి తగ్గించదగినత / ట్యూరింగ్ తగ్గించదగినత / సంపూర్ణ గణనీయంగా లెక్కించదగిన సమితి / ఒరాకిల్ / సర్వనిర్వచితత్వం / సూచిక సమితి / రైస్ సిద్ధాంతం / స్థిరబిందు సిద్ధాంతం / స్వీయ-సూచన” is idiomatic and technically standard for “non-computable set / halting set / self-halting set / closure under union and intersection / complement / many-one reduction and reducibility / one-one reducibility / Turing reducibility / complete computably enumerable set / oracle / totality / index set / Rice's theorem / fixed-point theorem / self-reference” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T067-OCC-001; OLP-0240; OLP-0240-B004; source upstream/content/computability/computability-theory/non-comp-set.tex:9-10 bytes 160-227 SHA-256 d6104b2bdb7763c1360dfda3f360b4db8ac8e2356315269b02664517918e4eca; target translation/content/computability/computability-theory/non-comp-set.tex:9-10 bytes 160-272 SHA-256 47da214909773189cf49e9a086de09bafca53e71512de5228d58b4bb96027350; reader page pending.
+  - te-Telu-IN-TE-T067-OCC-002; OLP-0241; OLP-0241-B005; source upstream/content/computability/computability-theory/ce-closed-cup-cap.tex:11-12 bytes 191-309 SHA-256 392c55f9b3a78a7c396fe53bcfe80e60af85d1f0ffe1e527619d2eb7c54e5e2e; target translation/content/computability/computability-theory/ce-closed-cup-cap.tex:11-12 bytes 191-431 SHA-256 ed1d9f24e2cf8b7c5d64551e428dfb2c16455e45a7a7078bd1037902ce6b5d09; reader page pending.
+  - te-Telu-IN-TE-T067-OCC-003; OLP-0242; OLP-0242-B004; source upstream/content/computability/computability-theory/complement-ce.tex:9-10 bytes 161-253 SHA-256 9bc0f9cc61b6f4e68b6e95079d2966b0e05ed3c0ed1128710532e2f76258208f; target translation/content/computability/computability-theory/complement-ce.tex:9-10 bytes 161-349 SHA-256 2bb6169f8f1fa2c10725bb823a6a34089da86908b76877c6a0dfe1db4c5a310c; reader page pending.
+  - te-Telu-IN-TE-T067-OCC-004; OLP-0243; OLP-0243-B008; source upstream/content/computability/computability-theory/reducibility.tex:50-61 bytes 2081-2578 SHA-256 f8797ad4502fbd9611f45780b5f706c1cf9b9c0ee49f44b05a9cc535bf201b1a; target translation/content/computability/computability-theory/reducibility.tex:52-63 bytes 5197-6194 SHA-256 43aed5c6710ec5e08bec293db2bf7a6dff727eea6e14700cca938ed55f9abca7; reader page pending.
+  - te-Telu-IN-TE-T067-OCC-005; OLP-0245; OLP-0245-B004; source upstream/content/computability/computability-theory/complete-ce-sets.tex:9-10 bytes 164-237 SHA-256 8df21b8f708dbf50a1929c42788669af2c7e6b5ab1841eab1c4c328dc9e62030; target translation/content/computability/computability-theory/complete-ce-sets.tex:9-10 bytes 164-307 SHA-256 b71e66083949f34e80c84fe1484e0e15060d5faf426cdd4ad255e3ac4ce5c15d; reader page pending.
+  - te-Telu-IN-TE-T067-OCC-006; OLP-0246; OLP-0246-B009; source upstream/content/computability/computability-theory/k-1.tex:30-45 bytes 637-1597 SHA-256 a2ddcee4c073868a4768ebc44c9b9634b48b4ade9fd31f37450df159f336a35a; target translation/content/computability/computability-theory/k-1.tex:29-43 bytes 1002-3086 SHA-256 8c9d4c6fa348ef935e98a93478090633f20566600eb011a7b38b7f0dda28986a; reader page pending.
+  - te-Telu-IN-TE-T067-OCC-007; OLP-0247; OLP-0247-B004; source upstream/content/computability/computability-theory/total.tex:9-10 bytes 153-214 SHA-256 020737f92a1de1a6ce8664bcf1037021d0dc8454049e5afa6732305015c345ca; target translation/content/computability/computability-theory/total.tex:9-10 bytes 153-273 SHA-256 cb3c11681c2a22ec64d9d8c631d8e3ca99614d7dfa3538e7c8db632f902d0950; reader page pending.
+  - te-Telu-IN-TE-T067-OCC-008; OLP-0248; OLP-0248-B007; source upstream/content/computability/computability-theory/rice-theorem.tex:23-28 bytes 816-1063 SHA-256 6d6ff6b882375fb44ebb79ee1ef6b2c5e5b6f0d783e8110ce23a681c6afb4b80; target translation/content/computability/computability-theory/rice-theorem.tex:23-27 bytes 1591-2094 SHA-256 98a89126ff7eff1db6b0202164b082d1ffd1b5957ffa5f66189104c2a9ed7372; reader page pending.
+  - te-Telu-IN-TE-T067-OCC-009; OLP-0248; OLP-0248-B008; source upstream/content/computability/computability-theory/rice-theorem.tex:30-35 bytes 1064-1446 SHA-256 6d6ff6b882375fb44ebb79ee1ef6b2c5e5b6f0d783e8110ce23a681c6afb4b80; target translation/content/computability/computability-theory/rice-theorem.tex:29-33 bytes 2095-2821 SHA-256 98a89126ff7eff1db6b0202164b082d1ffd1b5957ffa5f66189104c2a9ed7372; reader page pending.
+  - te-Telu-IN-TE-T067-OCC-010; OLP-0249; OLP-0249-B004; source upstream/content/computability/computability-theory/fixed-point-thm.tex:9-10 bytes 163-224 SHA-256 53820e9ac9bab541de29bbd3f329cd4b7d42b63c7be76f186ad0a118019e51c6; target translation/content/computability/computability-theory/fixed-point-thm.tex:9-10 bytes 163-259 SHA-256 00a02acf5be529885b9843dcfc2380e92b2bed679f8a559aeae5f68b44d522a2; reader page pending.
+  - te-Telu-IN-TE-T067-OCC-011; OLP-0251; OLP-0251-B004; source upstream/content/computability/computability-theory/def-functions-self-reference.tex:9-10 bytes 176-253 SHA-256 eba836e27cd1df6c051372ce7b15a85236dd9b7e601c2db9a6e1583914481e37; target translation/content/computability/computability-theory/def-functions-self-reference.tex:9-10 bytes 176-313 SHA-256 227bcc7fd7f2941322777e83ffffbe17dad6a61e78a23210ccd0bd29afb3df00; reader page pending.
+
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
 - Kind / recording mode: source_correction / contemporaneous
@@ -1893,7 +1929,8 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLFUN-001-OCC-001; OLP-0024; OLP-0024-B012; source upstream/content/sets-functions-relations/functions/inverses.tex:62-84 bytes 2459-3352 SHA-256 96e36d8cd8dc4ec0e73e9507147ecfe33d7e4f368ecf46de92efb423a7d409c1; target translation/content/sets-functions-relations/functions/inverses.tex:64-71 bytes 4939-5933 SHA-256 ea432cb72969199e37c907f83a7f63b2f04375a1835a1a539a7ec1a600b077b8; reader page pending.
+  - te-Telu-IN-OLFUN-001-OCC-001; OLP-0024; OLP-0024-B012; source upstream/content/sets-functions-relations/functions/inverses.tex:62-66 bytes 2459-2624 SHA-256 96e36d8cd8dc4ec0e73e9507147ecfe33d7e4f368ecf46de92efb423a7d409c1; target translation/content/sets-functions-relations/functions/inverses.tex:63-71 bytes 4926-5933 SHA-256 ea432cb72969199e37c907f83a7f63b2f04375a1835a1a539a7ec1a600b077b8; reader page pending.
+  - te-Telu-IN-OLFUN-001-OCC-002; OLP-0024; OLP-0024-B013; source upstream/content/sets-functions-relations/functions/inverses.tex:68-84 bytes 2625-3352 SHA-256 96e36d8cd8dc4ec0e73e9507147ecfe33d7e4f368ecf46de92efb423a7d409c1; target translation/content/sets-functions-relations/functions/inverses.tex:73-92 bytes 5934-7348 SHA-256 ea432cb72969199e37c907f83a7f63b2f04375a1835a1a539a7ec1a600b077b8; reader page pending.
 
 ## te-Telu-IN-OLFUN-002 — OLFUN-002: confirmed wording defect
 
@@ -1971,8 +2008,8 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLFUN-004-OCC-001; OLP-0023; OLP-0023-B007; source upstream/content/sets-functions-relations/functions/functions-relations.tex:24-30 bytes 712-916 SHA-256 e2e46c0270c44b6f54861a4565f3829b1b5f91a7f72dca84046361e5abf622c3; target translation/content/sets-functions-relations/functions/functions-relations.tex:60-66 bytes 3831-4622 SHA-256 57d9e1495aa72697bbb1ee2c74a8a8171806c1da93086c3d1748eb64873950d5; reader page pending.
-  - te-Telu-IN-OLFUN-004-OCC-002; OLP-0023; OLP-0023-B012; source upstream/content/sets-functions-relations/functions/functions-relations.tex:61-64 bytes 1956-2217 SHA-256 e2e46c0270c44b6f54861a4565f3829b1b5f91a7f72dca84046361e5abf622c3; target translation/content/sets-functions-relations/functions/functions-relations.tex:60-66 bytes 3831-4622 SHA-256 57d9e1495aa72697bbb1ee2c74a8a8171806c1da93086c3d1748eb64873950d5; reader page pending.
+  - te-Telu-IN-OLFUN-004-OCC-001; OLP-0023; OLP-0023-B007; source upstream/content/sets-functions-relations/functions/functions-relations.tex:24-30 bytes 712-916 SHA-256 e2e46c0270c44b6f54861a4565f3829b1b5f91a7f72dca84046361e5abf622c3; target translation/content/sets-functions-relations/functions/functions-relations.tex:23-30 bytes 1341-1712 SHA-256 57d9e1495aa72697bbb1ee2c74a8a8171806c1da93086c3d1748eb64873950d5; reader page pending.
+  - te-Telu-IN-OLFUN-004-OCC-002; OLP-0023; OLP-0023-B012; source upstream/content/sets-functions-relations/functions/functions-relations.tex:61-64 bytes 1956-2217 SHA-256 e2e46c0270c44b6f54861a4565f3829b1b5f91a7f72dca84046361e5abf622c3; target translation/content/sets-functions-relations/functions/functions-relations.tex:59-79 bytes 3815-6255 SHA-256 57d9e1495aa72697bbb1ee2c74a8a8171806c1da93086c3d1748eb64873950d5; reader page pending.
 
 ## te-Telu-IN-OLFUN-005 — OLFUN-005: confirmed explanatory inconsistency explicit definition correct
 
@@ -1998,7 +2035,10 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLFUN-005-OCC-001; OLP-0023; OLP-0023-B013; source upstream/content/sets-functions-relations/functions/functions-relations.tex:78-100 bytes 2911-3851 SHA-256 e2e46c0270c44b6f54861a4565f3829b1b5f91a7f72dca84046361e5abf622c3; target translation/content/sets-functions-relations/functions/functions-relations.tex:88-106 bytes 6771-8567 SHA-256 57d9e1495aa72697bbb1ee2c74a8a8171806c1da93086c3d1748eb64873950d5; reader page pending.
+  - te-Telu-IN-OLFUN-005-OCC-001; OLP-0023; OLP-0023-B013; source upstream/content/sets-functions-relations/functions/functions-relations.tex:78-79 bytes 2911-3005 SHA-256 e2e46c0270c44b6f54861a4565f3829b1b5f91a7f72dca84046361e5abf622c3; target translation/content/sets-functions-relations/functions/functions-relations.tex:81-82 bytes 6256-6398 SHA-256 57d9e1495aa72697bbb1ee2c74a8a8171806c1da93086c3d1748eb64873950d5; reader page pending.
+  - te-Telu-IN-OLFUN-005-OCC-002; OLP-0023; OLP-0023-B014; source upstream/content/sets-functions-relations/functions/functions-relations.tex:81-85 bytes 3006-3251 SHA-256 e2e46c0270c44b6f54861a4565f3829b1b5f91a7f72dca84046361e5abf622c3; target translation/content/sets-functions-relations/functions/functions-relations.tex:84-87 bytes 6399-6771 SHA-256 57d9e1495aa72697bbb1ee2c74a8a8171806c1da93086c3d1748eb64873950d5; reader page pending.
+  - te-Telu-IN-OLFUN-005-OCC-003; OLP-0023; OLP-0023-B015; source upstream/content/sets-functions-relations/functions/functions-relations.tex:87-90 bytes 3252-3400 SHA-256 e2e46c0270c44b6f54861a4565f3829b1b5f91a7f72dca84046361e5abf622c3; target translation/content/sets-functions-relations/functions/functions-relations.tex:89-92 bytes 6772-7041 SHA-256 57d9e1495aa72697bbb1ee2c74a8a8171806c1da93086c3d1748eb64873950d5; reader page pending.
+  - te-Telu-IN-OLFUN-005-OCC-004; OLP-0023; OLP-0023-B016; source upstream/content/sets-functions-relations/functions/functions-relations.tex:92-100 bytes 3401-3851 SHA-256 e2e46c0270c44b6f54861a4565f3829b1b5f91a7f72dca84046361e5abf622c3; target translation/content/sets-functions-relations/functions/functions-relations.tex:94-107 bytes 7042-8581 SHA-256 57d9e1495aa72697bbb1ee2c74a8a8171806c1da93086c3d1748eb64873950d5; reader page pending.
 
 ## te-Telu-IN-OLTESIZ-001 — OLTESIZ-001: confirmed wording defect
 
@@ -2206,7 +2246,9 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLSIZ-004-OCC-001; OLP-0034; OLP-0034-B010; source upstream/content/sets-functions-relations/size-of-sets/reduction.tex:47-69 bytes 1900-3025 SHA-256 0d6d2e3280698668b837cef6dcf3134b86d2a4b48831ae516e6e33e42898c79a; target translation/content/sets-functions-relations/size-of-sets/reduction.tex:51-63 bytes 4274-5593 SHA-256 9c96b50802b697307158e929dd817d923d12e1134c410043bf25b321c15a77a5; reader page pending.
+  - te-Telu-IN-OLSIZ-004-OCC-001; OLP-0034; OLP-0034-B010; source upstream/content/sets-functions-relations/size-of-sets/reduction.tex:47-49 bytes 1900-2099 SHA-256 0d6d2e3280698668b837cef6dcf3134b86d2a4b48831ae516e6e33e42898c79a; target translation/content/sets-functions-relations/size-of-sets/reduction.tex:48-50 bytes 3904-4274 SHA-256 9c96b50802b697307158e929dd817d923d12e1134c410043bf25b321c15a77a5; reader page pending.
+  - te-Telu-IN-OLSIZ-004-OCC-002; OLP-0034; OLP-0034-B011; source upstream/content/sets-functions-relations/size-of-sets/reduction.tex:51-58 bytes 2100-2612 SHA-256 0d6d2e3280698668b837cef6dcf3134b86d2a4b48831ae516e6e33e42898c79a; target translation/content/sets-functions-relations/size-of-sets/reduction.tex:52-62 bytes 4275-5592 SHA-256 9c96b50802b697307158e929dd817d923d12e1134c410043bf25b321c15a77a5; reader page pending.
+  - te-Telu-IN-OLSIZ-004-OCC-003; OLP-0034; OLP-0034-B012; source upstream/content/sets-functions-relations/size-of-sets/reduction.tex:60-69 bytes 2613-3025 SHA-256 0d6d2e3280698668b837cef6dcf3134b86d2a4b48831ae516e6e33e42898c79a; target translation/content/sets-functions-relations/size-of-sets/reduction.tex:64-72 bytes 5593-6406 SHA-256 9c96b50802b697307158e929dd817d923d12e1134c410043bf25b321c15a77a5; reader page pending.
 
 ## te-Telu-IN-OLSIZ-005 — OLSIZ-005: confirmed codomain error finite string used as infinite sequence
 
@@ -2362,7 +2404,9 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLSIZ-010-OCC-001; OLP-0040; OLP-0040-B011; source upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:48-58 bytes 1856-2437 SHA-256 f7717d8394048096cf7a65bc87a1a1ed15861cdfb8c7edb23429d5256d954d11; target translation/content/sets-functions-relations/size-of-sets/reduction-alt.tex:50-56 bytes 4292-4984 SHA-256 7db3d6a33b3233607b29f9a24765567acf1d41d34fcd2cde62b1fc9fdb0dcd3d; reader page pending.
+  - te-Telu-IN-OLSIZ-010-OCC-001; OLP-0040; OLP-0040-B011; source upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:48-50 bytes 1856-2071 SHA-256 f7717d8394048096cf7a65bc87a1a1ed15861cdfb8c7edb23429d5256d954d11; target translation/content/sets-functions-relations/size-of-sets/reduction-alt.tex:46-48 bytes 3882-4291 SHA-256 7db3d6a33b3233607b29f9a24765567acf1d41d34fcd2cde62b1fc9fdb0dcd3d; reader page pending.
+  - te-Telu-IN-OLSIZ-010-OCC-002; OLP-0040; OLP-0040-B012; source upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:52-54 bytes 2072-2240 SHA-256 f7717d8394048096cf7a65bc87a1a1ed15861cdfb8c7edb23429d5256d954d11; target translation/content/sets-functions-relations/size-of-sets/reduction-alt.tex:50-55 bytes 4292-4983 SHA-256 7db3d6a33b3233607b29f9a24765567acf1d41d34fcd2cde62b1fc9fdb0dcd3d; reader page pending.
+  - te-Telu-IN-OLSIZ-010-OCC-003; OLP-0040; OLP-0040-B013; source upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:56-58 bytes 2241-2437 SHA-256 f7717d8394048096cf7a65bc87a1a1ed15861cdfb8c7edb23429d5256d954d11; target translation/content/sets-functions-relations/size-of-sets/reduction-alt.tex:57-62 bytes 4984-5607 SHA-256 7db3d6a33b3233607b29f9a24765567acf1d41d34fcd2cde62b1fc9fdb0dcd3d; reader page pending.
 
 ## te-Telu-IN-OLTEARITH-001 — OLTEARITH-001: confirmed reversed difference in order explanation
 
@@ -2544,7 +2588,9 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEARITH-007-OCC-001; OLP-0048; OLP-0048-B015; source upstream/content/sets-functions-relations/arithmetization/cauchy.tex:159-171 bytes 7733-8079 SHA-256 35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2; target translation/content/sets-functions-relations/arithmetization/cauchy.tex:168 bytes 16510-16639 SHA-256 d7bd1194aa5bab6eb7b9d92feefc8df30f35dca17d5ec46df2c63fd08c66b995; reader page pending.
+  - te-Telu-IN-OLTEARITH-007-OCC-001; OLP-0048; OLP-0048-B015; source upstream/content/sets-functions-relations/arithmetization/cauchy.tex:159-163 bytes 7733-7947 SHA-256 35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2; target translation/content/sets-functions-relations/arithmetization/cauchy.tex:148-171 bytes 14648-17170 SHA-256 d7bd1194aa5bab6eb7b9d92feefc8df30f35dca17d5ec46df2c63fd08c66b995; reader page pending.
+  - te-Telu-IN-OLTEARITH-007-OCC-002; OLP-0048; OLP-0048-B016; source upstream/content/sets-functions-relations/arithmetization/cauchy.tex:165-167 bytes 7949-7989 SHA-256 35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2; target translation/content/sets-functions-relations/arithmetization/cauchy.tex:173-175 bytes 17171-17211 SHA-256 d7bd1194aa5bab6eb7b9d92feefc8df30f35dca17d5ec46df2c63fd08c66b995; reader page pending.
+  - te-Telu-IN-OLTEARITH-007-OCC-003; OLP-0048; OLP-0048-B017; source upstream/content/sets-functions-relations/arithmetization/cauchy.tex:169-171 bytes 7991-8079 SHA-256 35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2; target translation/content/sets-functions-relations/arithmetization/cauchy.tex:177-180 bytes 17212-17450 SHA-256 d7bd1194aa5bab6eb7b9d92feefc8df30f35dca17d5ec46df2c63fd08c66b995; reader page pending.
 
 ## te-Telu-IN-OLTEARITH-008 — OLTEARITH-008: confirmed mixed sequence and equivalence class typing
 
@@ -2570,7 +2616,12 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEARITH-008-OCC-001; OLP-0048; OLP-0048-B018; source upstream/content/sets-functions-relations/arithmetization/cauchy.tex:173-226 bytes 8081-10895 SHA-256 35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2; target translation/content/sets-functions-relations/arithmetization/cauchy.tex:189 bytes 18083-18197 SHA-256 d7bd1194aa5bab6eb7b9d92feefc8df30f35dca17d5ec46df2c63fd08c66b995; reader page pending.
+  - te-Telu-IN-OLTEARITH-008-OCC-001; OLP-0048; OLP-0048-B018; source upstream/content/sets-functions-relations/arithmetization/cauchy.tex:173-174 bytes 8081-8196 SHA-256 35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2; target translation/content/sets-functions-relations/arithmetization/cauchy.tex:182-183 bytes 17451-17734 SHA-256 d7bd1194aa5bab6eb7b9d92feefc8df30f35dca17d5ec46df2c63fd08c66b995; reader page pending.
+  - te-Telu-IN-OLTEARITH-008-OCC-002; OLP-0048; OLP-0048-B019; source upstream/content/sets-functions-relations/arithmetization/cauchy.tex:176-179 bytes 8198-8309 SHA-256 35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2; target translation/content/sets-functions-relations/arithmetization/cauchy.tex:185-194 bytes 17735-18970 SHA-256 d7bd1194aa5bab6eb7b9d92feefc8df30f35dca17d5ec46df2c63fd08c66b995; reader page pending.
+  - te-Telu-IN-OLTEARITH-008-OCC-003; OLP-0048; OLP-0048-B020; source upstream/content/sets-functions-relations/arithmetization/cauchy.tex:181-185 bytes 8311-8660 SHA-256 35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2; target translation/content/sets-functions-relations/arithmetization/cauchy.tex:196-203 bytes 18971-19886 SHA-256 d7bd1194aa5bab6eb7b9d92feefc8df30f35dca17d5ec46df2c63fd08c66b995; reader page pending.
+  - te-Telu-IN-OLTEARITH-008-OCC-004; OLP-0048; OLP-0048-B021; source upstream/content/sets-functions-relations/arithmetization/cauchy.tex:187-213 bytes 8662-9749 SHA-256 35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2; target translation/content/sets-functions-relations/arithmetization/cauchy.tex:205-231 bytes 19887-21783 SHA-256 d7bd1194aa5bab6eb7b9d92feefc8df30f35dca17d5ec46df2c63fd08c66b995; reader page pending.
+  - te-Telu-IN-OLTEARITH-008-OCC-005; OLP-0048; OLP-0048-B022; source upstream/content/sets-functions-relations/arithmetization/cauchy.tex:215-224 bytes 9751-10402 SHA-256 35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2; target translation/content/sets-functions-relations/arithmetization/cauchy.tex:233-245 bytes 21784-22789 SHA-256 d7bd1194aa5bab6eb7b9d92feefc8df30f35dca17d5ec46df2c63fd08c66b995; reader page pending.
+  - te-Telu-IN-OLTEARITH-008-OCC-006; OLP-0048; OLP-0048-B023; source upstream/content/sets-functions-relations/arithmetization/cauchy.tex:226 bytes 10404-10895 SHA-256 35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2; target translation/content/sets-functions-relations/arithmetization/cauchy.tex:247-256 bytes 22790-23759 SHA-256 d7bd1194aa5bab6eb7b9d92feefc8df30f35dca17d5ec46df2c63fd08c66b995; reader page pending.
 
 ## te-Telu-IN-OLTEINF-001 — OLTEINF-001: confirmed missing base element in minimality condition
 
@@ -2622,7 +2673,12 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEINF-002-OCC-001; OLP-0051; OLP-0051-B006; source upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:41-76 bytes 1585-3217 SHA-256 9cee716bb8cb3bfd507ed5c17bbd4477d05995af6f8f8d411087793bdaa86036; target translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:52 bytes 4195-4311 SHA-256 6c21001b9772885daf96999b0a14730bea9cda98ab7066967e6f8803a99781c5; reader page pending.
+  - te-Telu-IN-OLTEINF-002-OCC-001; OLP-0051; OLP-0051-B006; source upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:41-46 bytes 1585-1842 SHA-256 9cee716bb8cb3bfd507ed5c17bbd4477d05995af6f8f8d411087793bdaa86036; target translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:45-56 bytes 3803-4919 SHA-256 6c21001b9772885daf96999b0a14730bea9cda98ab7066967e6f8803a99781c5; reader page pending.
+  - te-Telu-IN-OLTEINF-002-OCC-002; OLP-0051; OLP-0051-B007; source upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:48-61 bytes 1844-2499 SHA-256 9cee716bb8cb3bfd507ed5c17bbd4477d05995af6f8f8d411087793bdaa86036; target translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:58-71 bytes 4920-6007 SHA-256 6c21001b9772885daf96999b0a14730bea9cda98ab7066967e6f8803a99781c5; reader page pending.
+  - te-Telu-IN-OLTEINF-002-OCC-003; OLP-0051; OLP-0051-B008; source upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:63-67 bytes 2501-2766 SHA-256 9cee716bb8cb3bfd507ed5c17bbd4477d05995af6f8f8d411087793bdaa86036; target translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:73-77 bytes 6008-6495 SHA-256 6c21001b9772885daf96999b0a14730bea9cda98ab7066967e6f8803a99781c5; reader page pending.
+  - te-Telu-IN-OLTEINF-002-OCC-004; OLP-0051; OLP-0051-B009; source upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:69-70 bytes 2768-2905 SHA-256 9cee716bb8cb3bfd507ed5c17bbd4477d05995af6f8f8d411087793bdaa86036; target translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:79-81 bytes 6496-6743 SHA-256 6c21001b9772885daf96999b0a14730bea9cda98ab7066967e6f8803a99781c5; reader page pending.
+  - te-Telu-IN-OLTEINF-002-OCC-005; OLP-0051; OLP-0051-B010; source upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:72-73 bytes 2907-3117 SHA-256 9cee716bb8cb3bfd507ed5c17bbd4477d05995af6f8f8d411087793bdaa86036; target translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:83-86 bytes 6744-7060 SHA-256 6c21001b9772885daf96999b0a14730bea9cda98ab7066967e6f8803a99781c5; reader page pending.
+  - te-Telu-IN-OLTEINF-002-OCC-006; OLP-0051; OLP-0051-B011; source upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:75-76 bytes 3119-3217 SHA-256 9cee716bb8cb3bfd507ed5c17bbd4477d05995af6f8f8d411087793bdaa86036; target translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:88-90 bytes 7061-7199 SHA-256 6c21001b9772885daf96999b0a14730bea9cda98ab7066967e6f8803a99781c5; reader page pending.
 
 ## te-Telu-IN-OLTEINF-003 — OLTEINF-003: confirmed closure minimality typing gap
 
@@ -2648,7 +2704,8 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEINF-003-OCC-001; OLP-0052; OLP-0052-B006; source upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:16-27 bytes 478-977 SHA-256 ea5f6c80d70abca6f5598de3e221c2f60524c40cbf533ae8a5336d5bb7186537; target translation/content/sets-functions-relations/infinite/dedekind-induction.tex:30 bytes 1589-1714 SHA-256 7fd385dc7fbf2700c76424e02f23ba0aed31ba7462817e79749b28b3a31864b4; reader page pending.
+  - te-Telu-IN-OLTEINF-003-OCC-001; OLP-0052; OLP-0052-B006; source upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:16-21 bytes 478-748 SHA-256 ea5f6c80d70abca6f5598de3e221c2f60524c40cbf533ae8a5336d5bb7186537; target translation/content/sets-functions-relations/infinite/dedekind-induction.tex:16-22 bytes 741-1169 SHA-256 7fd385dc7fbf2700c76424e02f23ba0aed31ba7462817e79749b28b3a31864b4; reader page pending.
+  - te-Telu-IN-OLTEINF-003-OCC-002; OLP-0052; OLP-0052-B007; source upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:23-27 bytes 750-977 SHA-256 ea5f6c80d70abca6f5598de3e221c2f60524c40cbf533ae8a5336d5bb7186537; target translation/content/sets-functions-relations/infinite/dedekind-induction.tex:24-34 bytes 1170-2222 SHA-256 7fd385dc7fbf2700c76424e02f23ba0aed31ba7462817e79749b28b3a31864b4; reader page pending.
 
 ## te-Telu-IN-OLTEINF-004 — OLTEINF-004: confirmed unbound set closure ambient type
 
@@ -2674,7 +2731,9 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEINF-004-OCC-001; OLP-0054; OLP-0054-B007; source upstream/content/sets-functions-relations/infinite/card-sb.tex:25-46 bytes 1045-1827 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:34 bytes 2698-2813 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
+  - te-Telu-IN-OLTEINF-004-OCC-001; OLP-0054; OLP-0054-B007; source upstream/content/sets-functions-relations/infinite/card-sb.tex:25-33 bytes 1045-1350 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:25-37 bytes 2149-3257 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
+  - te-Telu-IN-OLTEINF-004-OCC-002; OLP-0054; OLP-0054-B008; source upstream/content/sets-functions-relations/infinite/card-sb.tex:35-43 bytes 1352-1743 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:39-47 bytes 3258-3734 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
+  - te-Telu-IN-OLTEINF-004-OCC-003; OLP-0054; OLP-0054-B009; source upstream/content/sets-functions-relations/infinite/card-sb.tex:45-46 bytes 1745-1827 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:49-51 bytes 3735-3847 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
 
 ## te-Telu-IN-OLTEINF-005 — OLTEINF-005: confirmed malformed nested cardinality conclusion
 
@@ -2700,7 +2759,8 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEINF-005-OCC-001; OLP-0054; OLP-0054-B010; source upstream/content/sets-functions-relations/infinite/card-sb.tex:49-53 bytes 1842-2028 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:59 bytes 4166-4257 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
+  - te-Telu-IN-OLTEINF-005-OCC-001; OLP-0054; OLP-0054-B010; source upstream/content/sets-functions-relations/infinite/card-sb.tex:49 bytes 1842-1897 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:53 bytes 3848-4031 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
+  - te-Telu-IN-OLTEINF-005-OCC-002; OLP-0054; OLP-0054-B011; source upstream/content/sets-functions-relations/infinite/card-sb.tex:51-53 bytes 1899-2028 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:55-62 bytes 4032-4670 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
 
 ## te-Telu-IN-OLTEINF-006 — OLTEINF-006: confirmed missing range inclusion
 
@@ -2726,7 +2786,10 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEINF-006-OCC-001; OLP-0054; OLP-0054-B012; source upstream/content/sets-functions-relations/infinite/card-sb.tex:55-83 bytes 2030-3277 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:99 bytes 7173-7283 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
+  - te-Telu-IN-OLTEINF-006-OCC-001; OLP-0054; OLP-0054-B012; source upstream/content/sets-functions-relations/infinite/card-sb.tex:55-68 bytes 2030-2457 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:64-77 bytes 4671-5511 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
+  - te-Telu-IN-OLTEINF-006-OCC-002; OLP-0054; OLP-0054-B013; source upstream/content/sets-functions-relations/infinite/card-sb.tex:70-73 bytes 2459-2708 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:79-83 bytes 5512-5928 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
+  - te-Telu-IN-OLTEINF-006-OCC-003; OLP-0054; OLP-0054-B014; source upstream/content/sets-functions-relations/infinite/card-sb.tex:75-78 bytes 2710-2955 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:85-89 bytes 5929-6425 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
+  - te-Telu-IN-OLTEINF-006-OCC-004; OLP-0054; OLP-0054-B015; source upstream/content/sets-functions-relations/infinite/card-sb.tex:80-83 bytes 2957-3277 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:91-104 bytes 6426-7789 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
 
 ## te-Telu-IN-OLTEPLSYN-001 — OLTEPLSYN-001: confirmed malformed nested tag closure
 
@@ -2960,10 +3023,10 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTESEQ-001-OCC-001; OLP-0075; OLP-0075-B010; source upstream/content/first-order-logic/sequent-calculus/proving-things.tex:76-90 bytes 2760-3285 SHA-256 8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303; target translation/content/first-order-logic/sequent-calculus/proving-things.tex:88 bytes 5631-5759 SHA-256 14ad8bb6aee2ed2d4e4ed2eb0aaaae73e992a4dab6bfe4da39daf91fc4f01f48; reader page pending.
-  - te-Telu-IN-OLTESEQ-001-OCC-002; OLP-0075; OLP-0075-B010; source upstream/content/first-order-logic/sequent-calculus/proving-things.tex:94-108 bytes 3489-3942 SHA-256 8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303; target translation/content/first-order-logic/sequent-calculus/proving-things.tex:88 bytes 5631-5759 SHA-256 14ad8bb6aee2ed2d4e4ed2eb0aaaae73e992a4dab6bfe4da39daf91fc4f01f48; reader page pending.
-  - te-Telu-IN-OLTESEQ-001-OCC-003; OLP-0075; OLP-0075-B011; source upstream/content/first-order-logic/sequent-calculus/proving-things.tex:110-129 bytes 3943-4648 SHA-256 8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303; target translation/content/first-order-logic/sequent-calculus/proving-things.tex:88 bytes 5631-5759 SHA-256 14ad8bb6aee2ed2d4e4ed2eb0aaaae73e992a4dab6bfe4da39daf91fc4f01f48; reader page pending.
-  - te-Telu-IN-OLTESEQ-001-OCC-004; OLP-0075; OLP-0075-B011; source upstream/content/first-order-logic/sequent-calculus/proving-things.tex:132-151 bytes 4792-5412 SHA-256 8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303; target translation/content/first-order-logic/sequent-calculus/proving-things.tex:88 bytes 5631-5759 SHA-256 14ad8bb6aee2ed2d4e4ed2eb0aaaae73e992a4dab6bfe4da39daf91fc4f01f48; reader page pending.
+  - te-Telu-IN-OLTESEQ-001-OCC-001; OLP-0075; OLP-0075-B010; source upstream/content/first-order-logic/sequent-calculus/proving-things.tex:76-90 bytes 2760-3285 SHA-256 8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303; target translation/content/first-order-logic/sequent-calculus/proving-things.tex:73-110 bytes 4862-7124 SHA-256 14ad8bb6aee2ed2d4e4ed2eb0aaaae73e992a4dab6bfe4da39daf91fc4f01f48; reader page pending.
+  - te-Telu-IN-OLTESEQ-001-OCC-002; OLP-0075; OLP-0075-B010; source upstream/content/first-order-logic/sequent-calculus/proving-things.tex:94-108 bytes 3489-3942 SHA-256 8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303; target translation/content/first-order-logic/sequent-calculus/proving-things.tex:73-110 bytes 4862-7124 SHA-256 14ad8bb6aee2ed2d4e4ed2eb0aaaae73e992a4dab6bfe4da39daf91fc4f01f48; reader page pending.
+  - te-Telu-IN-OLTESEQ-001-OCC-003; OLP-0075; OLP-0075-B011; source upstream/content/first-order-logic/sequent-calculus/proving-things.tex:110-129 bytes 3943-4648 SHA-256 8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303; target translation/content/first-order-logic/sequent-calculus/proving-things.tex:112-154 bytes 7125-8971 SHA-256 14ad8bb6aee2ed2d4e4ed2eb0aaaae73e992a4dab6bfe4da39daf91fc4f01f48; reader page pending.
+  - te-Telu-IN-OLTESEQ-001-OCC-004; OLP-0075; OLP-0075-B011; source upstream/content/first-order-logic/sequent-calculus/proving-things.tex:132-151 bytes 4792-5412 SHA-256 8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303; target translation/content/first-order-logic/sequent-calculus/proving-things.tex:112-154 bytes 7125-8971 SHA-256 14ad8bb6aee2ed2d4e4ed2eb0aaaae73e992a4dab6bfe4da39daf91fc4f01f48; reader page pending.
 
 ## te-Telu-IN-OLTESEQ-002 — OLTESEQ-002: confirmed missing negation in prose sequent
 
@@ -3119,7 +3182,8 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEND-002-OCC-001; OLP-0089; OLP-0089-B013; source upstream/content/first-order-logic/natural-deduction/proving-things.tex:125-151 bytes 4406-5275 SHA-256 d39069643439c576cb5813ef635725ac09ef83257571e380b92dfa223a801ecc; target translation/content/first-order-logic/natural-deduction/proving-things.tex:147 bytes 8635-8766 SHA-256 8109a81d3301ab2a75632de9411d9d6f74d4c06d2424d7a174f8e38251e31550; reader page pending.
+  - te-Telu-IN-OLTEND-002-OCC-001; OLP-0089; OLP-0089-B013; source upstream/content/first-order-logic/natural-deduction/proving-things.tex:125-147 bytes 4406-5069 SHA-256 d39069643439c576cb5813ef635725ac09ef83257571e380b92dfa223a801ecc; target translation/content/first-order-logic/natural-deduction/proving-things.tex:116-150 bytes 7217-9096 SHA-256 8109a81d3301ab2a75632de9411d9d6f74d4c06d2424d7a174f8e38251e31550; reader page pending.
+  - te-Telu-IN-OLTEND-002-OCC-002; OLP-0089; OLP-0089-B014; source upstream/content/first-order-logic/natural-deduction/proving-things.tex:149-151 bytes 5070-5275 SHA-256 d39069643439c576cb5813ef635725ac09ef83257571e380b92dfa223a801ecc; target translation/content/first-order-logic/natural-deduction/proving-things.tex:152-180 bytes 9097-11074 SHA-256 8109a81d3301ab2a75632de9411d9d6f74d4c06d2424d7a174f8e38251e31550; reader page pending.
 
 ## te-Telu-IN-OLTEND-003 — OLTEND-003: confirmed sequent calculus term in natural deduction example
 
@@ -3197,7 +3261,8 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTETAB-001-OCC-001; OLP-0098; OLP-0098-B005; source upstream/content/first-order-logic/tableaux/tableaux.tex:13-16 bytes 236-400 SHA-256 1c6e7018e63cae3440e85d537303288261afd422b9e13bc455b99c2d206aa1b6; target translation/content/first-order-logic/tableaux/tableaux.tex:17 bytes 744-834 SHA-256 ac1fba073519d62f2bd9c3195993a08154a2800f6f2b836bc34fb62046df9856; reader page pending.
+  - te-Telu-IN-OLTETAB-001-OCC-001; OLP-0098; OLP-0098-B005; source upstream/content/first-order-logic/tableaux/tableaux.tex:13 bytes 236-293 SHA-256 1c6e7018e63cae3440e85d537303288261afd422b9e13bc455b99c2d206aa1b6; target translation/content/first-order-logic/tableaux/tableaux.tex:12-13 bytes 250-451 SHA-256 ac1fba073519d62f2bd9c3195993a08154a2800f6f2b836bc34fb62046df9856; reader page pending.
+  - te-Telu-IN-OLTETAB-001-OCC-002; OLP-0098; OLP-0098-B006; source upstream/content/first-order-logic/tableaux/tableaux.tex:15-16 bytes 296-400 SHA-256 1c6e7018e63cae3440e85d537303288261afd422b9e13bc455b99c2d206aa1b6; target translation/content/first-order-logic/tableaux/tableaux.tex:15-21 bytes 452-1290 SHA-256 ac1fba073519d62f2bd9c3195993a08154a2800f6f2b836bc34fb62046df9856; reader page pending.
 
 ## te-Telu-IN-OLTETAB-002 — OLTETAB-002: confirmed multiple formulas inside single signed formula argument
 
@@ -3353,8 +3418,8 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTETAB-007-OCC-001; OLP-0107; OLP-0107-B009; source upstream/content/first-order-logic/tableaux/provability-propositional.tex:39-55 bytes 1237-1900 SHA-256 342109e7ee29a08f322f02df997f40ca08aa60cc1388f150b7b23c0aaddd9f13; target translation/content/first-order-logic/tableaux/provability-propositional.tex:59 bytes 2363-2483 SHA-256 b836474672d5884259edfca403f4ac675f0bd059e5f9d6c8851f3ea1c8cab631; reader page pending.
-  - te-Telu-IN-OLTETAB-007-OCC-002; OLP-0107; OLP-0107-B011; source upstream/content/first-order-logic/tableaux/provability-propositional.tex:102-117 bytes 3657-4309 SHA-256 342109e7ee29a08f322f02df997f40ca08aa60cc1388f150b7b23c0aaddd9f13; target translation/content/first-order-logic/tableaux/provability-propositional.tex:59 bytes 2363-2483 SHA-256 b836474672d5884259edfca403f4ac675f0bd059e5f9d6c8851f3ea1c8cab631; reader page pending.
+  - te-Telu-IN-OLTETAB-007-OCC-001; OLP-0107; OLP-0107-B009; source upstream/content/first-order-logic/tableaux/provability-propositional.tex:39-55 bytes 1237-1900 SHA-256 342109e7ee29a08f322f02df997f40ca08aa60cc1388f150b7b23c0aaddd9f13; target translation/content/first-order-logic/tableaux/provability-propositional.tex:34-79 bytes 1391-3920 SHA-256 b836474672d5884259edfca403f4ac675f0bd059e5f9d6c8851f3ea1c8cab631; reader page pending.
+  - te-Telu-IN-OLTETAB-007-OCC-002; OLP-0107; OLP-0107-B011; source upstream/content/first-order-logic/tableaux/provability-propositional.tex:102-117 bytes 3657-4309 SHA-256 342109e7ee29a08f322f02df997f40ca08aa60cc1388f150b7b23c0aaddd9f13; target translation/content/first-order-logic/tableaux/provability-propositional.tex:88-131 bytes 4183-5977 SHA-256 b836474672d5884259edfca403f4ac675f0bd059e5f9d6c8851f3ea1c8cab631; reader page pending.
 
 ## te-Telu-IN-OLTETAB-008 — OLTETAB-008: confirmed inconsistent metavariable in universal soundness cases
 
@@ -3380,7 +3445,10 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTETAB-008-OCC-001; OLP-0109; OLP-0109-B015; source upstream/content/first-order-logic/tableaux/soundness.tex:126-156 bytes 5846-7482 SHA-256 d08c0332f74466555414fa2463a0d32e8bcf40abdf7cab4016c1c48133166a80; target translation/content/first-order-logic/tableaux/soundness.tex:162 bytes 15079-15167 SHA-256 2e9bbf188a610b6988fc28cb00b6c95f55bb14c339073a555ba7d67f0419e89f; reader page pending.
+  - te-Telu-IN-OLTETAB-008-OCC-001; OLP-0109; OLP-0109-B015; source upstream/content/first-order-logic/tableaux/soundness.tex:126-133 bytes 5846-6262 SHA-256 d08c0332f74466555414fa2463a0d32e8bcf40abdf7cab4016c1c48133166a80; target translation/content/first-order-logic/tableaux/soundness.tex:129-136 bytes 12418-13099 SHA-256 2e9bbf188a610b6988fc28cb00b6c95f55bb14c339073a555ba7d67f0419e89f; reader page pending.
+  - te-Telu-IN-OLTETAB-008-OCC-002; OLP-0109; OLP-0109-B016; source upstream/content/first-order-logic/tableaux/soundness.tex:135-142 bytes 6263-6782 SHA-256 d08c0332f74466555414fa2463a0d32e8bcf40abdf7cab4016c1c48133166a80; target translation/content/first-order-logic/tableaux/soundness.tex:138-146 bytes 13100-14053 SHA-256 2e9bbf188a610b6988fc28cb00b6c95f55bb14c339073a555ba7d67f0419e89f; reader page pending.
+  - te-Telu-IN-OLTETAB-008-OCC-003; OLP-0109; OLP-0109-B017; source upstream/content/first-order-logic/tableaux/soundness.tex:144-150 bytes 6783-7189 SHA-256 d08c0332f74466555414fa2463a0d32e8bcf40abdf7cab4016c1c48133166a80; target translation/content/first-order-logic/tableaux/soundness.tex:148-155 bytes 14054-14721 SHA-256 2e9bbf188a610b6988fc28cb00b6c95f55bb14c339073a555ba7d67f0419e89f; reader page pending.
+  - te-Telu-IN-OLTETAB-008-OCC-004; OLP-0109; OLP-0109-B018; source upstream/content/first-order-logic/tableaux/soundness.tex:152-156 bytes 7190-7482 SHA-256 d08c0332f74466555414fa2463a0d32e8bcf40abdf7cab4016c1c48133166a80; target translation/content/first-order-logic/tableaux/soundness.tex:157-203 bytes 14722-18935 SHA-256 2e9bbf188a610b6988fc28cb00b6c95f55bb14c339073a555ba7d67f0419e89f; reader page pending.
 
 ## te-Telu-IN-OLTETAB-009 — OLTETAB-009: confirmed wrong substitution instance in symmetry explanation
 
@@ -3744,9 +3812,9 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEAXD-010-OCC-001; OLP-0124; OLP-0124-B012; source upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:80 bytes 3058-3123 SHA-256 b5a11dd6a46306a767149f694f099bd9f57396013b4dfe67965e68ccae411ecb; target translation/content/first-order-logic/axiomatic-deduction/soundness.tex:106 bytes 8781-8910 SHA-256 8e0d6217b2c5eec12c04e943c6c9690069ccc5872cad2d1e6cbf6717b005bd09; reader page pending.
-  - te-Telu-IN-OLTEAXD-010-OCC-002; OLP-0124; OLP-0124-B012; source upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:82 bytes 3191-3254 SHA-256 b5a11dd6a46306a767149f694f099bd9f57396013b4dfe67965e68ccae411ecb; target translation/content/first-order-logic/axiomatic-deduction/soundness.tex:106 bytes 8781-8910 SHA-256 8e0d6217b2c5eec12c04e943c6c9690069ccc5872cad2d1e6cbf6717b005bd09; reader page pending.
-  - te-Telu-IN-OLTEAXD-010-OCC-003; OLP-0124; OLP-0124-B013; source upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:97 bytes 4025-4093 SHA-256 b5a11dd6a46306a767149f694f099bd9f57396013b4dfe67965e68ccae411ecb; target translation/content/first-order-logic/axiomatic-deduction/soundness.tex:106 bytes 8781-8910 SHA-256 8e0d6217b2c5eec12c04e943c6c9690069ccc5872cad2d1e6cbf6717b005bd09; reader page pending.
+  - te-Telu-IN-OLTEAXD-010-OCC-001; OLP-0124; OLP-0124-B012; source upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:80 bytes 3058-3123 SHA-256 b5a11dd6a46306a767149f694f099bd9f57396013b4dfe67965e68ccae411ecb; target translation/content/first-order-logic/axiomatic-deduction/soundness.tex:77-82 bytes 6140-6743 SHA-256 8e0d6217b2c5eec12c04e943c6c9690069ccc5872cad2d1e6cbf6717b005bd09; reader page pending.
+  - te-Telu-IN-OLTEAXD-010-OCC-002; OLP-0124; OLP-0124-B012; source upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:82 bytes 3191-3254 SHA-256 b5a11dd6a46306a767149f694f099bd9f57396013b4dfe67965e68ccae411ecb; target translation/content/first-order-logic/axiomatic-deduction/soundness.tex:77-82 bytes 6140-6743 SHA-256 8e0d6217b2c5eec12c04e943c6c9690069ccc5872cad2d1e6cbf6717b005bd09; reader page pending.
+  - te-Telu-IN-OLTEAXD-010-OCC-003; OLP-0124; OLP-0124-B013; source upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:97 bytes 4025-4093 SHA-256 b5a11dd6a46306a767149f694f099bd9f57396013b4dfe67965e68ccae411ecb; target translation/content/first-order-logic/axiomatic-deduction/soundness.tex:84-109 bytes 6744-9398 SHA-256 8e0d6217b2c5eec12c04e943c6c9690069ccc5872cad2d1e6cbf6717b005bd09; reader page pending.
 
 ## te-Telu-IN-OLTEAXD-011 — OLTEAXD-011: confirmed identity reflexivity claim exceeds axiom schema term scope
 
@@ -4058,7 +4126,8 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEINT-002-OCC-001; OLP-0140; OLP-0140-B008; source upstream/content/first-order-logic/introduction/first-order-logic.tex:67-84 bytes 3450-4567 SHA-256 04bfc243ce8ec9263cc7f805971d4193f93c9667a595a8bdae8a1cd1931ca4b2; target translation/content/first-order-logic/introduction/first-order-logic.tex:74-97 bytes 9259-12443 SHA-256 6813f35ad0ea64ad8f29a5bad49e9b4395e368ae29fce4c5e80e320572773504; reader page pending.
+  - te-Telu-IN-OLTEINT-002-OCC-001; OLP-0140; OLP-0140-B008; source upstream/content/first-order-logic/introduction/first-order-logic.tex:67-73 bytes 3450-3872 SHA-256 04bfc243ce8ec9263cc7f805971d4193f93c9667a595a8bdae8a1cd1931ca4b2; target translation/content/first-order-logic/introduction/first-order-logic.tex:65-78 bytes 7674-9778 SHA-256 6813f35ad0ea64ad8f29a5bad49e9b4395e368ae29fce4c5e80e320572773504; reader page pending.
+  - te-Telu-IN-OLTEINT-002-OCC-002; OLP-0140; OLP-0140-B009; source upstream/content/first-order-logic/introduction/first-order-logic.tex:75-84 bytes 3873-4567 SHA-256 04bfc243ce8ec9263cc7f805971d4193f93c9667a595a8bdae8a1cd1931ca4b2; target translation/content/first-order-logic/introduction/first-order-logic.tex:80-97 bytes 9779-12443 SHA-256 6813f35ad0ea64ad8f29a5bad49e9b4395e368ae29fce4c5e80e320572773504; reader page pending.
 
 ## te-Telu-IN-OLTEINT-003 — OLTEINT-003: confirmed predicate constant category error
 
@@ -4110,7 +4179,8 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEINT-004-OCC-001; OLP-0143; OLP-0143-B007; source upstream/content/first-order-logic/introduction/satisfaction.tex:43-67 bytes 1867-3403 SHA-256 01faa20f2f8d843d47cb7ca05e57a665ad3cd43f288b9504910a8e43bbad0c18; target translation/content/first-order-logic/introduction/satisfaction.tex:48-78 bytes 4637-8330 SHA-256 3102f9ace1a67134e3a9a1dd41da854938a5f0ecba942a501d2879727cef3497; reader page pending.
+  - te-Telu-IN-OLTEINT-004-OCC-001; OLP-0143; OLP-0143-B007; source upstream/content/first-order-logic/introduction/satisfaction.tex:43-50 bytes 1867-2366 SHA-256 01faa20f2f8d843d47cb7ca05e57a665ad3cd43f288b9504910a8e43bbad0c18; target translation/content/first-order-logic/introduction/satisfaction.tex:32-57 bytes 2857-5457 SHA-256 3102f9ace1a67134e3a9a1dd41da854938a5f0ecba942a501d2879727cef3497; reader page pending.
+  - te-Telu-IN-OLTEINT-004-OCC-002; OLP-0143; OLP-0143-B008; source upstream/content/first-order-logic/introduction/satisfaction.tex:52-67 bytes 2367-3403 SHA-256 01faa20f2f8d843d47cb7ca05e57a665ad3cd43f288b9504910a8e43bbad0c18; target translation/content/first-order-logic/introduction/satisfaction.tex:59-78 bytes 5458-8330 SHA-256 3102f9ace1a67134e3a9a1dd41da854938a5f0ecba942a501d2879727cef3497; reader page pending.
 
 ## te-Telu-IN-OLTEINT-005 — OLTEINT-005: confirmed atomic argument outside universal formula
 
@@ -4891,7 +4961,7 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEMODBAS-008-OCC-001; OLP-0189; OLP-0189-B016; source upstream/content/model-theory/basics/partial-iso.tex:122-129 bytes 4777-5185 SHA-256 ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d; target translation/content/model-theory/basics/partial-iso.tex:131-146 bytes 9358-11840 SHA-256 a4a6deb43d9540768c1723d5b46b5c2525e270676a194c50233aabf8d9251500; reader page pending.
-  - te-Telu-IN-OLTEMODBAS-008-OCC-002; OLP-0189; OLP-0189-B025; source upstream/content/model-theory/basics/partial-iso.tex:199-203 bytes 8223-8544 SHA-256 ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d; target translation/content/model-theory/basics/partial-iso.tex:131-146 bytes 9358-11840 SHA-256 a4a6deb43d9540768c1723d5b46b5c2525e270676a194c50233aabf8d9251500; reader page pending.
+  - te-Telu-IN-OLTEMODBAS-008-OCC-002; OLP-0189; OLP-0189-B025; source upstream/content/model-theory/basics/partial-iso.tex:199-203 bytes 8223-8544 SHA-256 ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d; target translation/content/model-theory/basics/partial-iso.tex:226-243 bytes 17946-20008 SHA-256 a4a6deb43d9540768c1723d5b46b5c2525e270676a194c50233aabf8d9251500; reader page pending.
 
 ## te-Telu-IN-OLTEMODBAS-009 — OLTEMODBAS-009: confirmed incomplete forth case split
 
@@ -5125,7 +5195,9 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEMODARI-007-OCC-001; OLP-0194; OLP-0194-B012; source upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:78-113 bytes 2977-4648 SHA-256 2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1; target translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:114-143 bytes 7865-11412 SHA-256 68198360c4d9c7050f94529f9991755f60a09447ec3fc6d4bb87a8e8ea2d4fd8; reader page pending.
+  - te-Telu-IN-OLTEMODARI-007-OCC-001; OLP-0194; OLP-0194-B012; source upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:78-81 bytes 2977-3123 SHA-256 2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1; target translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:86-90 bytes 5626-5935 SHA-256 68198360c4d9c7050f94529f9991755f60a09447ec3fc6d4bb87a8e8ea2d4fd8; reader page pending.
+  - te-Telu-IN-OLTEMODARI-007-OCC-002; OLP-0194; OLP-0194-B013; source upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:83-98 bytes 3124-3850 SHA-256 2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1; target translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:92-112 bytes 5936-7864 SHA-256 68198360c4d9c7050f94529f9991755f60a09447ec3fc6d4bb87a8e8ea2d4fd8; reader page pending.
+  - te-Telu-IN-OLTEMODARI-007-OCC-003; OLP-0194; OLP-0194-B014; source upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113 bytes 3851-4648 SHA-256 2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1; target translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:114-143 bytes 7865-11412 SHA-256 68198360c4d9c7050f94529f9991755f60a09447ec3fc6d4bb87a8e8ea2d4fd8; reader page pending.
 
 ## te-Telu-IN-OLTEMODARI-008 — OLTEMODARI-008: confirmed nonexistent case element
 
@@ -5229,7 +5301,8 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEMODARI-011-OCC-001; OLP-0196; OLP-0196-B032; source upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:215-228 bytes 8264-8791 SHA-256 1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4; target translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:241-251 bytes 14473-15377 SHA-256 0a7223dbf6de9f1394fd25ee9fa12f4429f158cdda0a1e2d71f2043dc080aca2; reader page pending.
+  - te-Telu-IN-OLTEMODARI-011-OCC-001; OLP-0196; OLP-0196-B032; source upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:215-220 bytes 8264-8468 SHA-256 1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4; target translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:235-239 bytes 14154-14472 SHA-256 0a7223dbf6de9f1394fd25ee9fa12f4429f158cdda0a1e2d71f2043dc080aca2; reader page pending.
+  - te-Telu-IN-OLTEMODARI-011-OCC-002; OLP-0196; OLP-0196-B033; source upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:222-228 bytes 8469-8791 SHA-256 1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4; target translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:241-251 bytes 14473-15377 SHA-256 0a7223dbf6de9f1394fd25ee9fa12f4429f158cdda0a1e2d71f2043dc080aca2; reader page pending.
 
 ## te-Telu-IN-OLTEMODARI-012 — OLTEMODARI-012: confirmed unrestricted countability claim
 
@@ -5333,7 +5406,8 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEMODARI-015-OCC-001; OLP-0197; OLP-0197-B008; source upstream/content/model-theory/models-of-arithmetic/computable-models.tex:68-98 bytes 2505-3820 SHA-256 f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89; target translation/content/model-theory/models-of-arithmetic/computable-models.tex:46-91 bytes 3567-6871 SHA-256 3226bf84c4d0cde20a3a52bd0ca2a4d7c075acb51354eb66f683eea7a8ea5e87; reader page pending.
+  - te-Telu-IN-OLTEMODARI-015-OCC-001; OLP-0197; OLP-0197-B008; source upstream/content/model-theory/models-of-arithmetic/computable-models.tex:68-75 bytes 2505-2978 SHA-256 f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89; target translation/content/model-theory/models-of-arithmetic/computable-models.tex:46-91 bytes 3567-6871 SHA-256 3226bf84c4d0cde20a3a52bd0ca2a4d7c075acb51354eb66f683eea7a8ea5e87; reader page pending.
+  - te-Telu-IN-OLTEMODARI-015-OCC-002; OLP-0197; OLP-0197-B009; source upstream/content/model-theory/models-of-arithmetic/computable-models.tex:77-98 bytes 2979-3820 SHA-256 f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89; target translation/content/model-theory/models-of-arithmetic/computable-models.tex:93-114 bytes 6872-8473 SHA-256 3226bf84c4d0cde20a3a52bd0ca2a4d7c075acb51354eb66f683eea7a8ea5e87; reader page pending.
 
 ## te-Telu-IN-OLTEMODINT-001 — OLTEMODINT-001: confirmed undefined formula symbol
 
@@ -5437,7 +5511,8 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEMODINT-004-OCC-001; OLP-0201; OLP-0201-B016; source upstream/content/model-theory/interpolation/interpolation-proof.tex:165-189 bytes 7959-9235 SHA-256 702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931; target translation/content/model-theory/interpolation/interpolation-proof.tex:196-231 bytes 15890-19172 SHA-256 d6de2eb462bf1eecc24e8c6375ba987d552c8e85fc16cd51eca7f0f3a0243989; reader page pending.
+  - te-Telu-IN-OLTEMODINT-004-OCC-001; OLP-0201; OLP-0201-B016; source upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181 bytes 7959-8822 SHA-256 702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931; target translation/content/model-theory/interpolation/interpolation-proof.tex:197-231 bytes 15891-19172 SHA-256 d6de2eb462bf1eecc24e8c6375ba987d552c8e85fc16cd51eca7f0f3a0243989; reader page pending.
+  - te-Telu-IN-OLTEMODINT-004-OCC-002; OLP-0201; OLP-0201-B017; source upstream/content/model-theory/interpolation/interpolation-proof.tex:183-189 bytes 8823-9235 SHA-256 702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931; target translation/content/model-theory/interpolation/interpolation-proof.tex:233-247 bytes 19173-20796 SHA-256 d6de2eb462bf1eecc24e8c6375ba987d552c8e85fc16cd51eca7f0f3a0243989; reader page pending.
 
 ## te-Telu-IN-OLTEMODINT-005 — OLTEMODINT-005: confirmed undefined predicate interpretation
 
@@ -5775,7 +5850,8 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEMODLIN-017-OCC-001; OLP-0206; OLP-0206-B012; source upstream/content/model-theory/lindstrom/ls-property.tex:68-86 bytes 2873-3962 SHA-256 ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5; target translation/content/model-theory/lindstrom/ls-property.tex:79-87 bytes 6036-7068 SHA-256 78c7209322f7b3512b459d253dd47df908964e7f6d84ac3e9236596542a7c48f; reader page pending.
+  - te-Telu-IN-OLTEMODLIN-017-OCC-001; OLP-0206; OLP-0206-B012; source upstream/content/model-theory/lindstrom/ls-property.tex:68-72 bytes 2873-3191 SHA-256 ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5; target translation/content/model-theory/lindstrom/ls-property.tex:61-77 bytes 4328-6035 SHA-256 78c7209322f7b3512b459d253dd47df908964e7f6d84ac3e9236596542a7c48f; reader page pending.
+  - te-Telu-IN-OLTEMODLIN-017-OCC-002; OLP-0206; OLP-0206-B013; source upstream/content/model-theory/lindstrom/ls-property.tex:74-86 bytes 3192-3962 SHA-256 ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5; target translation/content/model-theory/lindstrom/ls-property.tex:79-127 bytes 6036-11867 SHA-256 78c7209322f7b3512b459d253dd47df908964e7f6d84ac3e9236596542a7c48f; reader page pending.
 
 ## te-Telu-IN-OLTEMODLIN-021 — OLTEMODLIN-021: confirmed unprepared sort union
 
@@ -5801,7 +5877,8 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEMODLIN-021-OCC-001; OLP-0206; OLP-0206-B012; source upstream/content/model-theory/lindstrom/ls-property.tex:59-86 bytes 2249-3962 SHA-256 ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5; target translation/content/model-theory/lindstrom/ls-property.tex:88-97 bytes 7068-8524 SHA-256 78c7209322f7b3512b459d253dd47df908964e7f6d84ac3e9236596542a7c48f; reader page pending.
+  - te-Telu-IN-OLTEMODLIN-021-OCC-001; OLP-0206; OLP-0206-B012; source upstream/content/model-theory/lindstrom/ls-property.tex:59-72 bytes 2249-3191 SHA-256 ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5; target translation/content/model-theory/lindstrom/ls-property.tex:61-77 bytes 4328-6035 SHA-256 78c7209322f7b3512b459d253dd47df908964e7f6d84ac3e9236596542a7c48f; reader page pending.
+  - te-Telu-IN-OLTEMODLIN-021-OCC-002; OLP-0206; OLP-0206-B013; source upstream/content/model-theory/lindstrom/ls-property.tex:74-86 bytes 3192-3962 SHA-256 ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5; target translation/content/model-theory/lindstrom/ls-property.tex:79-127 bytes 6036-11867 SHA-256 78c7209322f7b3512b459d253dd47df908964e7f6d84ac3e9236596542a7c48f; reader page pending.
 
 ## te-Telu-IN-OLTEMODLIN-005 — OLTEMODLIN-005: confirmed misdescribed partial isomorphism code
 
@@ -5853,7 +5930,9 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEMODLIN-006-OCC-001; OLP-0206; OLP-0206-B013; source upstream/content/model-theory/lindstrom/ls-property.tex:80-118 bytes 3562-5431 SHA-256 ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5; target translation/content/model-theory/lindstrom/ls-property.tex:109-126 bytes 9902-11787 SHA-256 78c7209322f7b3512b459d253dd47df908964e7f6d84ac3e9236596542a7c48f; reader page pending.
+  - te-Telu-IN-OLTEMODLIN-006-OCC-001; OLP-0206; OLP-0206-B013; source upstream/content/model-theory/lindstrom/ls-property.tex:80-86 bytes 3562-3962 SHA-256 ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5; target translation/content/model-theory/lindstrom/ls-property.tex:79-127 bytes 6036-11867 SHA-256 78c7209322f7b3512b459d253dd47df908964e7f6d84ac3e9236596542a7c48f; reader page pending.
+  - te-Telu-IN-OLTEMODLIN-006-OCC-002; OLP-0206; OLP-0206-B014; source upstream/content/model-theory/lindstrom/ls-property.tex:88-107 bytes 3963-4757 SHA-256 ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5; target translation/content/model-theory/lindstrom/ls-property.tex:129-148 bytes 11868-12725 SHA-256 78c7209322f7b3512b459d253dd47df908964e7f6d84ac3e9236596542a7c48f; reader page pending.
+  - te-Telu-IN-OLTEMODLIN-006-OCC-003; OLP-0206; OLP-0206-B015; source upstream/content/model-theory/lindstrom/ls-property.tex:109-118 bytes 4758-5431 SHA-256 ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5; target translation/content/model-theory/lindstrom/ls-property.tex:150-172 bytes 12726-15349 SHA-256 78c7209322f7b3512b459d253dd47df908964e7f6d84ac3e9236596542a7c48f; reader page pending.
 
 ## te-Telu-IN-OLTEMODLIN-007 — OLTEMODLIN-007: confirmed wrong sentence classification
 
@@ -6720,3 +6799,319 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTECOMTHY-006-OCC-001; OLP-0239; OLP-0239-B011; source upstream/content/computability/computability-theory/equiv-ce-defs.tex:75-81 bytes 2848-3297 SHA-256 d997e01b3f6cae024d43895694771f165f9bff070b5b3b7469ddd827e2777d51; target translation/content/computability/computability-theory/equiv-ce-defs.tex:76-82 bytes 6249-7473 SHA-256 1e132490e91432439d8bf98cdf92ad974f0426e3ef685e173063b053be8d93e6; reader page pending.
+
+## te-Telu-IN-OLTECOMTHY-007 — OLTECOMTHY-007: confirmed local prose errors
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: rendered the intended by-looking relation and comparative meaning; adjacent sourcecorrection discloses both local repairs
+
+- Intended sense: Repair the audited confirmed local prose errors at lines 37-40 and 52-54, simultaneous-search explanation, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOMTHYREM-20260919:OLTECOMTHY-007 [checked_supports], content/computability/computability-theory/ce-closed-cup-cap.tex; lines 37-40 and 52-54, simultaneous-search explanation; confirmed_local_prose_errors; rendered the intended by-looking relation and comparative meaning; adjacent sourcecorrection discloses both local repairs.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the closure proof repairs “for looking” and “tricker” without changing either enumeration construction.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOMTHY-007-OCC-001; OLP-0241; OLP-0241-B010; source upstream/content/computability/computability-theory/ce-closed-cup-cap.tex:37-40 bytes 1062-1323 SHA-256 392c55f9b3a78a7c396fe53bcfe80e60af85d1f0ffe1e527619d2eb7c54e5e2e; target translation/content/computability/computability-theory/ce-closed-cup-cap.tex:36-42 bytes 1936-2696 SHA-256 ed1d9f24e2cf8b7c5d64551e428dfb2c16455e45a7a7078bd1037902ce6b5d09; reader page pending.
+  - te-Telu-IN-OLTECOMTHY-007-OCC-002; OLP-0241; OLP-0241-B011; source upstream/content/computability/computability-theory/ce-closed-cup-cap.tex:52-54 bytes 1593-1797 SHA-256 392c55f9b3a78a7c396fe53bcfe80e60af85d1f0ffe1e527619d2eb7c54e5e2e; target translation/content/computability/computability-theory/ce-closed-cup-cap.tex:44-66 bytes 2697-4804 SHA-256 ed1d9f24e2cf8b7c5d64551e428dfb2c16455e45a7a7078bd1037902ce6b5d09; reader page pending.
+
+## te-Telu-IN-OLTECOMTHY-008 — OLTECOMTHY-008: confirmed complement domain index swap
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used d in the two T atoms and in the statement identifying the computation defined exactly on A; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed complement domain index swap at lines 29-41, reverse implication, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOMTHYREM-20260919:OLTECOMTHY-008 [checked_supports], content/computability/computability-theory/complement-ce.tex; lines 29-41, reverse implication; confirmed_complement_domain_index_swap; used d in the two T atoms and in the statement identifying the computation defined exactly on A; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the complement proof uses d, not e, in T(d,x,h(x)) because cfind_d has domain A.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOMTHY-008-OCC-001; OLP-0242; OLP-0242-B008; source upstream/content/computability/computability-theory/complement-ce.tex:29-41 bytes 905-1571 SHA-256 9bc0f9cc61b6f4e68b6e95079d2966b0e05ed3c0ed1128710532e2f76258208f; target translation/content/computability/computability-theory/complement-ce.tex:28-41 bytes 1386-3133 SHA-256 2bb6169f8f1fa2c10725bb823a6a34089da86908b76877c6a0dfe1db4c5a310c; reader page pending.
+
+## te-Telu-IN-OLTECOMTHY-009 — OLTECOMTHY-009: confirmed informal index pair mismatch
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used the already defined d,e pair and associated d with A; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed informal index pair mismatch at lines 44-49, informal parallel-search explanation, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOMTHYREM-20260919:OLTECOMTHY-009 [checked_supports], content/computability/computability-theory/complement-ce.tex; lines 44-49, informal parallel-search explanation; confirmed_informal_index_pair_mismatch; used the already defined d,e pair and associated d with A; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the informal parallel-search explanation consistently uses the already assigned indices d and e rather than introducing e and f.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOMTHY-009-OCC-001; OLP-0242; OLP-0242-B009; source upstream/content/computability/computability-theory/complement-ce.tex:44-49 bytes 1584-1898 SHA-256 9bc0f9cc61b6f4e68b6e95079d2966b0e05ed3c0ed1128710532e2f76258208f; target translation/content/computability/computability-theory/complement-ce.tex:44-50 bytes 3146-4166 SHA-256 2bb6169f8f1fa2c10725bb823a6a34089da86908b76877c6a0dfe1db4c5a310c; reader page pending.
+
+## te-Telu-IN-OLTECOMTHY-010 — OLTECOMTHY-010: confirmed duplicated wording
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: removed the accidental repeated word; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed duplicated wording at line 31, opening of the K example, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOMTHYREM-20260919:OLTECOMTHY-010 [checked_supports], content/computability/computability-theory/reducibility.tex; line 31, opening of the K example; confirmed_duplicated_wording; removed the accidental repeated word; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that removing the duplicated word “notion” leaves the intended reducibility claim unchanged.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOMTHY-010-OCC-001; OLP-0243; OLP-0243-B007; source upstream/content/computability/computability-theory/reducibility.tex:31 bytes 1281-1352 SHA-256 f8797ad4502fbd9611f45780b5f706c1cf9b9c0ee49f44b05a9cc535bf201b1a; target translation/content/computability/computability-theory/reducibility.tex:30-37 bytes 2709-3461 SHA-256 43aed5c6710ec5e08bec293db2bf7a6dff727eea6e14700cca938ed55f9abca7; reader page pending.
+
+## te-Telu-IN-OLTECOMTHY-011 — OLTECOMTHY-011: confirmed local spelling error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: rendered the intended is-unsolvable claim; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed local spelling error at lines 35-37, halting-problem reference, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOMTHYREM-20260919:OLTECOMTHY-011 [checked_supports], content/computability/computability-theory/reducibility.tex; lines 35-37, halting-problem reference; confirmed_local_spelling_error; rendered the intended is-unsolvable claim; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that “in unsolvable” is treated as the local typo “is unsolvable,” matching the cited halting result.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOMTHY-011-OCC-001; OLP-0243; OLP-0243-B007; source upstream/content/computability/computability-theory/reducibility.tex:35-37 bytes 1410-1552 SHA-256 f8797ad4502fbd9611f45780b5f706c1cf9b9c0ee49f44b05a9cc535bf201b1a; target translation/content/computability/computability-theory/reducibility.tex:34-38 bytes 2793-3856 SHA-256 43aed5c6710ec5e08bec293db2bf7a6dff727eea6e14700cca938ed55f9abca7; reader page pending.
+
+## te-Telu-IN-OLTECOMTHY-012 — OLTECOMTHY-012: confirmed pair coordinate reversal
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: kept program index e before input x in the W_e characterization; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed pair coordinate reversal at lines 39-42, equivalent definition of K_0, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOMTHYREM-20260919:OLTECOMTHY-012 [checked_supports], content/computability/computability-theory/reducibility.tex; lines 39-42, equivalent definition of K_0; confirmed_pair_coordinate_reversal; kept program index e before input x in the W_e characterization; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the W_e characterization of K_0 uses the ordered pair <e,x>, in the same order as its defining computation.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOMTHY-012-OCC-001; OLP-0243; OLP-0243-B007; source upstream/content/computability/computability-theory/reducibility.tex:39-42 bytes 1609-1737 SHA-256 f8797ad4502fbd9611f45780b5f706c1cf9b9c0ee49f44b05a9cc535bf201b1a; target translation/content/computability/computability-theory/reducibility.tex:39-49 bytes 3856-5182 SHA-256 43aed5c6710ec5e08bec293db2bf7a6dff727eea6e14700cca938ed55f9abca7; reader page pending.
+
+## te-Telu-IN-OLTECOMTHY-013 — OLTECOMTHY-013: confirmed local spelling errors
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: rendered the intended says-that introduction; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed local spelling errors at lines 14-17, transitivity introduction, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOMTHYREM-20260919:OLTECOMTHY-013 [checked_supports], content/computability/computability-theory/prop-reduce.tex; lines 14-17, transitivity introduction; confirmed_local_spelling_errors; rendered the intended says-that introduction; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the repaired sentence says the first proposition establishes transitivity of many-one reducibility.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOMTHY-013-OCC-001; OLP-0244; OLP-0244-B005; source upstream/content/computability/computability-theory/prop-reduce.tex:14-17 bytes 357-609 SHA-256 20795f49f8764c1062416ecda88edb34ad983a8f3643cb0878ccf64f08ede5e8; target translation/content/computability/computability-theory/prop-reduce.tex:12-19 bytes 256-1505 SHA-256 9e0b372150541088864a64bae6c18f0d108b04f1e528ec92c08c6f9f9335e804; reader page pending.
+
+## te-Telu-IN-OLTECOMTHY-014 — OLTECOMTHY-014: confirmed reduction function type error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: typed f as Nat-to-Nat while naming A and B as the reduced sets; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed reduction function type error at lines 68-70, characteristic-function exercise, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOMTHYREM-20260919:OLTECOMTHY-014 [checked_supports], content/computability/computability-theory/prop-reduce.tex; lines 68-70, characteristic-function exercise; confirmed_reduction_function_type_error; typed f as Nat-to-Nat while naming A and B as the reduced sets; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that a many-one reduction is typed f: N to N, not merely f: A to B, so the characteristic-function composition is well formed.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOMTHY-014-OCC-001; OLP-0244; OLP-0244-B013; source upstream/content/computability/computability-theory/prop-reduce.tex:68-70 bytes 2259-2366 SHA-256 20795f49f8764c1062416ecda88edb34ad983a8f3643cb0878ccf64f08ede5e8; target translation/content/computability/computability-theory/prop-reduce.tex:73-76 bytes 4675-5456 SHA-256 9e0b372150541088864a64bae6c18f0d108b04f1e528ec92c08c6f9f9335e804; reader page pending.
+
+## te-Telu-IN-OLTECOMTHY-015 — OLTECOMTHY-015: confirmed completeness reduction direction reversal
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: reversed both prose statements to K_0 reduces to K; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed completeness reduction direction reversal at lines 39-48, completeness proof for K and following exercise, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOMTHYREM-20260919:OLTECOMTHY-015 [checked_supports], content/computability/computability-theory/complete-ce-sets.tex; lines 39-48, completeness proof for K and following exercise; confirmed_completeness_reduction_direction_reversal; reversed both prose statements to K_0 reduces to K; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that completeness of K requires K_0 many-one reduces to K, and that the following exercise asks for this same direction.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOMTHY-015-OCC-001; OLP-0245; OLP-0245-B009; source upstream/content/computability/computability-theory/complete-ce-sets.tex:39-42 bytes 1105-1305 SHA-256 8df21b8f708dbf50a1929c42788669af2c7e6b5ab1841eab1c4c328dc9e62030; target translation/content/computability/computability-theory/complete-ce-sets.tex:40-42 bytes 2285-2703 SHA-256 b71e66083949f34e80c84fe1484e0e15060d5faf426cdd4ad255e3ac4ce5c15d; reader page pending.
+  - te-Telu-IN-OLTECOMTHY-015-OCC-002; OLP-0245; OLP-0245-B010; source upstream/content/computability/computability-theory/complete-ce-sets.tex:44-45 bytes 1306-1368 SHA-256 8df21b8f708dbf50a1929c42788669af2c7e6b5ab1841eab1c4c328dc9e62030; target translation/content/computability/computability-theory/complete-ce-sets.tex:44-46 bytes 2704-3364 SHA-256 b71e66083949f34e80c84fe1484e0e15060d5faf426cdd4ad255e3ac4ce5c15d; reader page pending.
+  - te-Telu-IN-OLTECOMTHY-015-OCC-003; OLP-0245; OLP-0245-B011; source upstream/content/computability/computability-theory/complete-ce-sets.tex:47-48 bytes 1369-1416 SHA-256 8df21b8f708dbf50a1929c42788669af2c7e6b5ab1841eab1c4c328dc9e62030; target translation/content/computability/computability-theory/complete-ce-sets.tex:48-50 bytes 3365-3493 SHA-256 b71e66083949f34e80c84fe1484e0e15060d5faf426cdd4ad255e3ac4ce5c15d; reader page pending.
+
+## te-Telu-IN-OLTECOMTHY-016 — OLTECOMTHY-016: confirmed local prose error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: rendered the intended procedural sequence; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed local prose error at lines 34-38, algorithm computing h, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOMTHYREM-20260919:OLTECOMTHY-016 [checked_supports], content/computability/computability-theory/total.tex; lines 34-38, algorithm computing h; confirmed_local_prose_error; rendered the intended procedural sequence; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the repaired procedural sentence first simulates cfind_x(x) and returns zero exactly if that computation halts.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOMTHY-016-OCC-001; OLP-0247; OLP-0247-B007; source upstream/content/computability/computability-theory/total.tex:34-38 bytes 784-1133 SHA-256 020737f92a1de1a6ce8664bcf1037021d0dc8454049e5afa6732305015c345ca; target translation/content/computability/computability-theory/total.tex:34-40 bytes 1261-2298 SHA-256 cb3c11681c2a22ec64d9d8c631d8e3ca99614d7dfa3538e7c8db632f902d0950; reader page pending.
+
+## te-Telu-IN-OLTECOMTHY-017 — OLTECOMTHY-017: confirmed malformed definedness condition
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: made the conditional scope explicitly require both values to be defined; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed malformed definedness condition at lines 113-119, fourth sample index set, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOMTHYREM-20260919:OLTECOMTHY-017 [checked_supports], content/computability/computability-theory/rice-theorem.tex; lines 113-119, fourth sample index set; confirmed_malformed_definedness_condition; made the conditional scope explicitly require both values to be defined; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the fourth Rice-theorem example asserts strict increase only when both displayed function values are defined.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOMTHY-017-OCC-001; OLP-0248; OLP-0248-B016; source upstream/content/computability/computability-theory/rice-theorem.tex:113-119 bytes 5073-5415 SHA-256 6d6ff6b882375fb44ebb79ee1ef6b2c5e5b6f0d783e8110ce23a681c6afb4b80; target translation/content/computability/computability-theory/rice-theorem.tex:106-116 bytes 10269-11589 SHA-256 98a89126ff7eff1db6b0202164b082d1ffd1b5957ffa5f66189104c2a9ed7372; reader page pending.
+
+## te-Telu-IN-OLTECOMTHY-018 — OLTECOMTHY-018: confirmed partiality scope error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: started the proof with arbitrary partial computable f, for which the same partial construction works; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed partiality scope error at lines 27-36, theorem and proof opening, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOMTHYREM-20260919:OLTECOMTHY-018 [checked_supports], content/computability/computability-theory/application-fixed-point.tex; lines 27-36, theorem and proof opening; confirmed_partiality_scope_error; started the proof with arbitrary partial computable f, for which the same partial construction works; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the fixed-point application begins with arbitrary partial computable f, matching the theorem and the partial construction of g.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOMTHY-018-OCC-001; OLP-0250; OLP-0250-B007; source upstream/content/computability/computability-theory/application-fixed-point.tex:28-32 bytes 979-1178 SHA-256 4bdbdec16af8ee62d1cf0af9b3e4b79a01a5f404c826076a10e59fe8b4228696; target translation/content/computability/computability-theory/application-fixed-point.tex:28-32 bytes 1977-2331 SHA-256 d5af0796218cbb88f8626aa9c9c355ec3989d59aa9427d5197a6c36f6b3b2569; reader page pending.
+  - te-Telu-IN-OLTECOMTHY-018-OCC-002; OLP-0250; OLP-0250-B008; source upstream/content/computability/computability-theory/application-fixed-point.tex:34-36 bytes 1179-1315 SHA-256 4bdbdec16af8ee62d1cf0af9b3e4b79a01a5f404c826076a10e59fe8b4228696; target translation/content/computability/computability-theory/application-fixed-point.tex:34-59 bytes 2332-4974 SHA-256 d5af0796218cbb88f8626aa9c9c355ec3989d59aa9427d5197a6c36f6b3b2569; reader page pending.

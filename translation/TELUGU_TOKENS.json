@@ -2,7 +2,7 @@
   "schema": "openlogic-te-token-realization/1",
   "locale": "te-Telu-IN",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
-  "contract": "The English strings inside !! token markup are stable OpenLogic configuration keys, not reader-visible English. Every occurrence in the current translated scope is wrapped as \\tetoken{Telugu surface}{original key}; renderers emit only the first argument and retain the second for exact source-token identity checks. The mapping now covers the 42 keys used through OLP-0216.",
+  "contract": "The English strings inside !! token markup are stable OpenLogic configuration keys, not reader-visible English. Every occurrence in the current translated scope is wrapped as \\tetoken{Telugu surface}{original key}; renderers emit only the first argument and retain the second for exact source-token identity checks. The mapping now covers the 44 keys used through OLP-0251.",
   "article": "ఒక",
   "tokens": {
     "language": {"singular": "భాష", "plural": "భాషలు", "kind": "a_noun", "canon_passages": ["TE-P018"], "evidence": "definition-controlled academic register"},
@@ -46,6 +46,8 @@
     "surjective": {"singular": "సంగ్రస్త", "plural": "సంగ్రస్త", "kind": "adjective", "canon_passages": ["TE-P015"], "evidence": "directly attested function label"},
     "surjection": {"singular": "సంగ్రస్త ప్రమేయం", "plural": "సంగ్రస్త ప్రమేయాలు", "kind": "am_noun", "canon_passages": ["TE-P015"], "evidence": "directly attested function label"},
     "bijective": {"singular": "ద్విగుణ", "plural": "ద్విగుణ", "kind": "adjective", "canon_passages": ["TE-P015"], "evidence": "directly attested function label"},
-    "bijection": {"singular": "ద్విగుణ ప్రమేయం", "plural": "ద్విగుణ ప్రమేయాలు", "kind": "am_noun", "canon_passages": ["TE-P015"], "evidence": "directly attested function label"}
+    "bijection": {"singular": "ద్విగుణ ప్రమేయం", "plural": "ద్విగుణ ప్రమేయాలు", "kind": "am_noun", "canon_passages": ["TE-P015"], "evidence": "directly attested function label"},
+    "c.e.": {"singular": "గణనీయంగా లెక్కించదగినది", "plural": "గణనీయంగా లెక్కించదగినవి", "kind": "adjective", "canon_passages": ["TE-P005", "TE-P008", "TE-P011"], "evidence": "source abbreviation; computably-enumerable sense fixed by the chapter definitions and TE-T066--TE-T067"},
+    "computably enumerable": {"singular": "గణనీయంగా లెక్కించదగిన", "plural": "గణనీయంగా లెక్కించదగిన", "kind": "adjective", "canon_passages": ["TE-P005", "TE-P008", "TE-P011"], "evidence": "definition-controlled computability-theory adjective; predicative number is realized explicitly in each wrapper"}
   }
 }

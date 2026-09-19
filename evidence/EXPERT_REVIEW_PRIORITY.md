@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 236 of 722 draft units**. This view selects 226 of 252 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 248 of 722 draft units**. This view selects 239 of 265 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -404,13 +404,23 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Please double-check: Please double-check whether “గణనీయతా సిద్ధాంతం / పునరావృత్త సిద్ధాంతం / పాక్షిక గణనీయ ప్రమేయం / సార్వత్రిక పాక్షిక గణనీయ ప్రమేయం / కార్యసాధ్య లెక్కింపు / ఏకరీతి లెక్కింపు / s-m-n సిద్ధాంతం / గణనీయంగా లెక్కించదగిన / పునరావృత్తంగా లెక్కించదగిన / నిర్ణయించదగిన / అర్ధ-నిర్ణయించదగిన / అనిర్ణయనీయ” is idiomatic and technically standard for “computability theory / recursion theory / partial computable function / universal partial computable function / effective enumeration / uniform enumeration / s-m-n theorem / computably enumerable / recursively enumerable / decidable / semi-decidable / undecidable” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
+## REV-TE-T067 — non-computable set / halting set / self-halting set / closure under union and intersection / complement / many-one reduction and reducibility / one-one reducibility / Turing reducibility / complete computably enumerable set / oracle / totality / index set / Rice's theorem / fixed-point theorem / self-reference
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: గణనీయంకాని సమితి / ఆగే సమితి / స్వయంగా ఆగే సమితి / సంయోగం, ఛేదనం కింద సంవృతత / పూరకం / అనేకం-ఒకటి తగ్గింపు, తగ్గించదగినత / ఒకటి-ఒకటి తగ్గించదగినత / ట్యూరింగ్ తగ్గించదగినత / సంపూర్ణ గణనీయంగా లెక్కించదగిన సమితి / ఒరాకిల్ / సర్వనిర్వచితత్వం / సూచిక సమితి / రైస్ సిద్ధాంతం / స్థిరబిందు సిద్ధాంతం / స్వీయ-సూచన
+
+- Occurrences: OLP-0240; computability/computability-theory/non-comp-set; translation/content/computability/computability-theory/non-comp-set.tex:9-10; printed/PDF page pending; OLP-0241; computability/computability-theory/ce-closed-cup-cap; translation/content/computability/computability-theory/ce-closed-cup-cap.tex:11-12; printed/PDF page pending; OLP-0242; computability/computability-theory/complement-ce; translation/content/computability/computability-theory/complement-ce.tex:9-10; printed/PDF page pending; OLP-0243; computability/computability-theory/reducibility; translation/content/computability/computability-theory/reducibility.tex:52-63; printed/PDF page pending; OLP-0245; computability/computability-theory/complete-ce-sets; translation/content/computability/computability-theory/complete-ce-sets.tex:9-10; printed/PDF page pending; OLP-0246; computability/computability-theory/k-1; translation/content/computability/computability-theory/k-1.tex:29-43; printed/PDF page pending; OLP-0247; computability/computability-theory/total; translation/content/computability/computability-theory/total.tex:9-10; printed/PDF page pending; OLP-0248; computability/computability-theory/rice-theorem; translation/content/computability/computability-theory/rice-theorem.tex:23-27; printed/PDF page pending; OLP-0248; computability/computability-theory/rice-theorem; translation/content/computability/computability-theory/rice-theorem.tex:29-33; printed/PDF page pending; OLP-0249; computability/computability-theory/fixed-point-thm; translation/content/computability/computability-theory/fixed-point-thm.tex:9-10; printed/PDF page pending; OLP-0251; computability/computability-theory/def-functions-self-reference; translation/content/computability/computability-theory/def-functions-self-reference.tex:9-10; printed/PDF page pending
+
+- Please double-check: Please double-check whether “గణనీయంకాని సమితి / ఆగే సమితి / స్వయంగా ఆగే సమితి / సంయోగం, ఛేదనం కింద సంవృతత / పూరకం / అనేకం-ఒకటి తగ్గింపు, తగ్గించదగినత / ఒకటి-ఒకటి తగ్గించదగినత / ట్యూరింగ్ తగ్గించదగినత / సంపూర్ణ గణనీయంగా లెక్కించదగిన సమితి / ఒరాకిల్ / సర్వనిర్వచితత్వం / సూచిక సమితి / రైస్ సిద్ధాంతం / స్థిరబిందు సిద్ధాంతం / స్వీయ-సూచన” is idiomatic and technically standard for “non-computable set / halting set / self-halting set / closure under union and intersection / complement / many-one reduction and reducibility / one-one reducibility / Turing reducibility / complete computably enumerable set / oracle / totality / index set / Rice's theorem / fixed-point theorem / self-reference” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
 ## REV-OLFUN-001 — OLFUN-001
 
 - Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
 
 - Chosen wording/treatment: corrected theorem adds nonempty A; adjacent sourcecorrection macro discloses omission, counterexample and exact condition
 
-- Occurrences: OLP-0024; sets-functions-relations/functions/inverses; translation/content/sets-functions-relations/functions/inverses.tex:64-71; printed/PDF page pending
+- Occurrences: OLP-0024; sets-functions-relations/functions/inverses; translation/content/sets-functions-relations/functions/inverses.tex:63-71; printed/PDF page pending; OLP-0024; sets-functions-relations/functions/inverses; translation/content/sets-functions-relations/functions/inverses.tex:73-92; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the Telugu correction state the exact condition “A nonempty or B empty” and make the empty-domain counterexample immediately clear?
 
@@ -440,7 +450,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: graph described as a relation between A and B contained in A×B; adjacent sourcecorrection explains why relation on A×B is a different type
 
-- Occurrences: OLP-0023; sets-functions-relations/functions/functions-relations; translation/content/sets-functions-relations/functions/functions-relations.tex:60-66; printed/PDF page pending
+- Occurrences: OLP-0023; sets-functions-relations/functions/functions-relations; translation/content/sets-functions-relations/functions/functions-relations.tex:23-30; printed/PDF page pending; OLP-0023; sets-functions-relations/functions/functions-relations; translation/content/sets-functions-relations/functions/functions-relations.tex:59-79; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the note clearly distinguish a relation between A and B, a subset of A×B, from a relation on A×B?
 
@@ -450,7 +460,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: explicit function restriction retained; exact-counterpart claim qualified to distinguish input-only restriction from two-coordinate relation restriction
 
-- Occurrences: OLP-0023; sets-functions-relations/functions/functions-relations; translation/content/sets-functions-relations/functions/functions-relations.tex:88-106; printed/PDF page pending
+- Occurrences: OLP-0023; sets-functions-relations/functions/functions-relations; translation/content/sets-functions-relations/functions/functions-relations.tex:81-82; printed/PDF page pending; OLP-0023; sets-functions-relations/functions/functions-relations; translation/content/sets-functions-relations/functions/functions-relations.tex:84-87; printed/PDF page pending; OLP-0023; sets-functions-relations/functions/functions-relations; translation/content/sets-functions-relations/functions/functions-relations.tex:89-92; printed/PDF page pending; OLP-0023; sets-functions-relations/functions/functions-relations; translation/content/sets-functions-relations/functions/functions-relations.tex:94-107; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the note clearly distinguish input-only function restriction from two-coordinate relation restriction R∩C²?
 
@@ -530,7 +540,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: bound one output sequence name s consistently; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0034; sets-functions-relations/size-of-sets/reduction; translation/content/sets-functions-relations/size-of-sets/reduction.tex:51-63; printed/PDF page pending
+- Occurrences: OLP-0034; sets-functions-relations/size-of-sets/reduction; translation/content/sets-functions-relations/size-of-sets/reduction.tex:48-50; printed/PDF page pending; OLP-0034; sets-functions-relations/size-of-sets/reduction; translation/content/sets-functions-relations/size-of-sets/reduction.tex:52-62; printed/PDF page pending; OLP-0034; sets-functions-relations/size-of-sets/reduction; translation/content/sets-functions-relations/size-of-sets/reduction.tex:64-72; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the Telugu characteristic-sequence definition use one bound output name consistently and preserve the intended subset-to-sequence map?
 
@@ -590,7 +600,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: bound one output string name s consistently; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0040; sets-functions-relations/size-of-sets/reduction-alt; translation/content/sets-functions-relations/size-of-sets/reduction-alt.tex:50-56; printed/PDF page pending
+- Occurrences: OLP-0040; sets-functions-relations/size-of-sets/reduction-alt; translation/content/sets-functions-relations/size-of-sets/reduction-alt.tex:46-48; printed/PDF page pending; OLP-0040; sets-functions-relations/size-of-sets/reduction-alt; translation/content/sets-functions-relations/size-of-sets/reduction-alt.tex:50-55; printed/PDF page pending; OLP-0040; sets-functions-relations/size-of-sets/reduction-alt; translation/content/sets-functions-relations/size-of-sets/reduction-alt.tex:57-62; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the alternate characteristic-string definition use one bound output name consistently?
 
@@ -660,7 +670,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: stated theorem and exercise for equivalence classes of Cauchy sequences; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0048; sets-functions-relations/arithmetization/cauchy; translation/content/sets-functions-relations/arithmetization/cauchy.tex:168; printed/PDF page pending
+- Occurrences: OLP-0048; sets-functions-relations/arithmetization/cauchy; translation/content/sets-functions-relations/arithmetization/cauchy.tex:148-171; printed/PDF page pending; OLP-0048; sets-functions-relations/arithmetization/cauchy; translation/content/sets-functions-relations/arithmetization/cauchy.tex:173-175; printed/PDF page pending; OLP-0048; sets-functions-relations/arithmetization/cauchy; translation/content/sets-functions-relations/arithmetization/cauchy.tex:177-180; printed/PDF page pending
 
 - Please double-check: Please double-check: Do the ordered-field theorem and exercise state the result for equivalence classes rather than raw Cauchy sequences?
 
@@ -670,7 +680,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: stated completeness for represented classes, retained S as representative sequences, and made the q_Real comparison class-typed; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0048; sets-functions-relations/arithmetization/cauchy; translation/content/sets-functions-relations/arithmetization/cauchy.tex:189; printed/PDF page pending
+- Occurrences: OLP-0048; sets-functions-relations/arithmetization/cauchy; translation/content/sets-functions-relations/arithmetization/cauchy.tex:182-183; printed/PDF page pending; OLP-0048; sets-functions-relations/arithmetization/cauchy; translation/content/sets-functions-relations/arithmetization/cauchy.tex:185-194; printed/PDF page pending; OLP-0048; sets-functions-relations/arithmetization/cauchy; translation/content/sets-functions-relations/arithmetization/cauchy.tex:196-203; printed/PDF page pending; OLP-0048; sets-functions-relations/arithmetization/cauchy; translation/content/sets-functions-relations/arithmetization/cauchy.tex:205-231; printed/PDF page pending; OLP-0048; sets-functions-relations/arithmetization/cauchy; translation/content/sets-functions-relations/arithmetization/cauchy.tex:233-245; printed/PDF page pending; OLP-0048; sets-functions-relations/arithmetization/cauchy; translation/content/sets-functions-relations/arithmetization/cauchy.tex:247-256; printed/PDF page pending
 
 - Please double-check: Please double-check: Is S consistently a family of representative sequences while every ordered object is its represented equivalence class?
 
@@ -690,7 +700,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: bound f:A-to-A and o in A and restricted closure candidates to subsets of A; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0051; sets-functions-relations/infinite/dedekind-algebra; translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:52; printed/PDF page pending
+- Occurrences: OLP-0051; sets-functions-relations/infinite/dedekind-algebra; translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:45-56; printed/PDF page pending; OLP-0051; sets-functions-relations/infinite/dedekind-algebra; translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:58-71; printed/PDF page pending; OLP-0051; sets-functions-relations/infinite/dedekind-algebra; translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:73-77; printed/PDF page pending; OLP-0051; sets-functions-relations/infinite/dedekind-algebra; translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:79-81; printed/PDF page pending; OLP-0051; sets-functions-relations/infinite/dedekind-algebra; translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:83-86; printed/PDF page pending; OLP-0051; sets-functions-relations/infinite/dedekind-algebra; translation/content/sets-functions-relations/infinite/dedekind-algebra.tex:88-90; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the closure definition bind one ambient set A, a self-map f:A-to-A, its base point o in A and candidate subsets X of A consistently?
 
@@ -700,7 +710,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: applied closure minimality to N-intersection-X, the s-closed subset supplied by the theorem condition; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0052; sets-functions-relations/infinite/dedekind-induction; translation/content/sets-functions-relations/infinite/dedekind-induction.tex:30; printed/PDF page pending
+- Occurrences: OLP-0052; sets-functions-relations/infinite/dedekind-induction; translation/content/sets-functions-relations/infinite/dedekind-induction.tex:16-22; printed/PDF page pending; OLP-0052; sets-functions-relations/infinite/dedekind-induction; translation/content/sets-functions-relations/infinite/dedekind-induction.tex:24-34; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the induction proof apply closure minimality to N-intersection-X rather than to an arbitrary set X outside the self-map domain?
 
@@ -710,7 +720,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: bound an ambient U, self-map f, base B subset U and closure candidates X subset U; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:34; printed/PDF page pending
+- Occurrences: OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:25-37; printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:39-47; printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:49-51; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the set-closure definition bind one ambient U, a self-map on U, a base subset of U and closure candidates contained in U?
 
@@ -720,7 +730,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: replaced the malformed nested cardinal equality by B equinumerous with C; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:59; printed/PDF page pending
+- Occurrences: OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:53-53; printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:55-62; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the repaired helper proposition conclude B is equinumerous with C, without the malformed nested cardinality expression?
 
@@ -730,7 +740,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: added the missing ran(g)-subset-B direction before the source's B-subset-ran(g) direction; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:99; printed/PDF page pending
+- Occurrences: OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:64-77; printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:79-83; printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:85-89; printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:91-104; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the proof establish both inclusions needed for ran(g)=B, including the formerly missing ran(g)-subset-B direction?
 
@@ -820,7 +830,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: labelled all four antecedent-order changes with LeftR{Exchange}, retaining every sequent; one adjacent sourcecorrection discloses the repeated repair
 
-- Occurrences: OLP-0075; first-order-logic/sequent-calculus/proving-things; translation/content/first-order-logic/sequent-calculus/proving-things.tex:88; printed/PDF page pending
+- Occurrences: OLP-0075; first-order-logic/sequent-calculus/proving-things; translation/content/first-order-logic/sequent-calculus/proving-things.tex:73-110; printed/PDF page pending; OLP-0075; first-order-logic/sequent-calculus/proving-things; translation/content/first-order-logic/sequent-calculus/proving-things.tex:112-154; printed/PDF page pending
 
 - Please double-check: Please double-check: Are all four steps that change only antecedent order labelled as left exchange while every displayed sequent remains unchanged?
 
@@ -880,7 +890,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: labelled the not-A and A step with Elim{not}, matching the adjacent prose, defined rule and later completed tree; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0089; first-order-logic/natural-deduction/proving-things; translation/content/first-order-logic/natural-deduction/proving-things.tex:147; printed/PDF page pending
+- Occurrences: OLP-0089; first-order-logic/natural-deduction/proving-things; translation/content/first-order-logic/natural-deduction/proving-things.tex:116-150; printed/PDF page pending; OLP-0089; first-order-logic/natural-deduction/proving-things; translation/content/first-order-logic/natural-deduction/proving-things.tex:152-180; printed/PDF page pending
 
 - Please double-check: Please double-check that the contradiction step from not-A and A is labelled negation-elimination, matching both the defined rule and the later completed tree.
 
@@ -910,7 +920,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: named tableaux rather than natural deduction, as fixed by the chapter path, IDs, tag and imports; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0098; first-order-logic/tableaux/tableaux; translation/content/first-order-logic/tableaux/tableaux.tex:17; printed/PDF page pending
+- Occurrences: OLP-0098; first-order-logic/tableaux/tableaux; translation/content/first-order-logic/tableaux/tableaux.tex:12-13; printed/PDF page pending; OLP-0098; first-order-logic/tableaux/tableaux; translation/content/first-order-logic/tableaux/tableaux.tex:15-21; printed/PDF page pending
 
 - Please double-check: Please double-check that the scope note names tableaux, rather than natural deduction, while preserving the chapter driver and imports.
 
@@ -970,7 +980,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: restored all eight sFmla calls to separate sign and formula arguments while preserving their signs, formulas and closures; adjacent sourcecorrection discloses the repeated repair
 
-- Occurrences: OLP-0107; first-order-logic/tableaux/provability-propositional; translation/content/first-order-logic/tableaux/provability-propositional.tex:59; printed/PDF page pending
+- Occurrences: OLP-0107; first-order-logic/tableaux/provability-propositional; translation/content/first-order-logic/tableaux/provability-propositional.tex:34-79; printed/PDF page pending; OLP-0107; first-order-logic/tableaux/provability-propositional; translation/content/first-order-logic/tableaux/provability-propositional.tex:88-131; printed/PDF page pending
 
 - Please double-check: Please double-check that all eight repaired signed-formula nodes have both sign and formula arguments while leaving the displayed proof strategy unchanged.
 
@@ -980,7 +990,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: used metavariable A consistently in both universal-rule premises, conclusions and semantic arguments; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0109; first-order-logic/tableaux/soundness; translation/content/first-order-logic/tableaux/soundness.tex:162; printed/PDF page pending
+- Occurrences: OLP-0109; first-order-logic/tableaux/soundness; translation/content/first-order-logic/tableaux/soundness.tex:129-136; printed/PDF page pending; OLP-0109; first-order-logic/tableaux/soundness; translation/content/first-order-logic/tableaux/soundness.tex:138-146; printed/PDF page pending; OLP-0109; first-order-logic/tableaux/soundness; translation/content/first-order-logic/tableaux/soundness.tex:148-155; printed/PDF page pending; OLP-0109; first-order-logic/tableaux/soundness; translation/content/first-order-logic/tableaux/soundness.tex:157-203; printed/PDF page pending
 
 - Please double-check: Please double-check that the true- and false-universal soundness cases use A consistently in their premises, conclusions, and satisfaction claims.
 
@@ -1120,7 +1130,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: restored the ! formula-metavariable marker before B in all three affected formulas; adjacent sourcecorrection discloses the repeated repair
 
-- Occurrences: OLP-0124; first-order-logic/axiomatic-deduction/soundness; translation/content/first-order-logic/axiomatic-deduction/soundness.tex:106; printed/PDF page pending
+- Occurrences: OLP-0124; first-order-logic/axiomatic-deduction/soundness; translation/content/first-order-logic/axiomatic-deduction/soundness.tex:77-82; printed/PDF page pending; OLP-0124; first-order-logic/axiomatic-deduction/soundness; translation/content/first-order-logic/axiomatic-deduction/soundness.tex:84-109; printed/PDF page pending
 
 - Please double-check: Please double-check that all three repaired B occurrences in the quantifier-soundness case carry the formula-metavariable marker.
 
@@ -1240,7 +1250,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: moved the closing bracket to the end of the universal premise in both restatements and removed each extra bracket after the conclusion; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0140; first-order-logic/introduction/first-order-logic; translation/content/first-order-logic/introduction/first-order-logic.tex:74-97; printed/PDF page pending
+- Occurrences: OLP-0140; first-order-logic/introduction/first-order-logic; translation/content/first-order-logic/introduction/first-order-logic.tex:65-78; printed/PDF page pending; OLP-0140; first-order-logic/introduction/first-order-logic; translation/content/first-order-logic/introduction/first-order-logic.tex:80-97; printed/PDF page pending
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTEINT-002 is mathematically precise and idiomatic.
 
@@ -1260,7 +1270,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: replaced the out-of-domain list 1,2,3 with 0,1,2, matching the declared domain and continuation; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0143; first-order-logic/introduction/satisfaction; translation/content/first-order-logic/introduction/satisfaction.tex:48-78; printed/PDF page pending
+- Occurrences: OLP-0143; first-order-logic/introduction/satisfaction; translation/content/first-order-logic/introduction/satisfaction.tex:32-57; printed/PDF page pending; OLP-0143; first-order-logic/introduction/satisfaction; translation/content/first-order-logic/introduction/satisfaction.tex:59-78; printed/PDF page pending
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTEINT-004 is mathematically precise and idiomatic.
 
@@ -1560,7 +1570,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: stated the fixed-free-variable formula-class lemma, retained the sentence case at k=0, and used a finite conjunction of satisfied representatives in the proof; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0189; model-theory/basics/partial-iso; translation/content/model-theory/basics/partial-iso.tex:130-146 and 224-238; printed/PDF page pending
+- Occurrences: OLP-0189; model-theory/basics/partial-iso; translation/content/model-theory/basics/partial-iso.tex:131-146; printed/PDF page pending; OLP-0189; model-theory/basics/partial-iso; translation/content/model-theory/basics/partial-iso.tex:226-243; printed/PDF page pending
 
 - Please double-check: Please double-check that the strengthened fixed-variable formula-class lemma is exactly what the finite conjunction T_n^a requires.
 
@@ -1650,7 +1660,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: applied Downward Lowenheim--Skolem after compactness to obtain the asserted countable model; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0194; model-theory/models-of-arithmetic/non-standard-models; translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:114-143; printed/PDF page pending
+- Occurrences: OLP-0194; model-theory/models-of-arithmetic/non-standard-models; translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:86-90; printed/PDF page pending; OLP-0194; model-theory/models-of-arithmetic/non-standard-models; translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:92-112; printed/PDF page pending; OLP-0194; model-theory/models-of-arithmetic/non-standard-models; translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:114-143; printed/PDF page pending
 
 - Please double-check: Please double-check that Downward Löwenheim--Skolem is invoked after compactness to obtain the proposition’s countable model.
 
@@ -1690,7 +1700,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: replaced three unrelated opulus symbols by the defined model-addition nsplus; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0196; model-theory/models-of-arithmetic/models-of-pa; translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:241-251; printed/PDF page pending
+- Occurrences: OLP-0196; model-theory/models-of-arithmetic/models-of-pa; translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:235-239; printed/PDF page pending; OLP-0196; model-theory/models-of-arithmetic/models-of-pa; translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:241-251; printed/PDF page pending
 
 - Please double-check: Please double-check that all three averages use the chapter’s defined model-addition symbol nsplus rather than the unrelated opulus.
 
@@ -1730,7 +1740,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: used g(n)=n-1 for n>0, the bijection that yields the displayed transported operations; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0197; model-theory/models-of-arithmetic/computable-models; translation/content/model-theory/models-of-arithmetic/computable-models.tex:46-91; printed/PDF page pending
+- Occurrences: OLP-0197; model-theory/models-of-arithmetic/computable-models; translation/content/model-theory/models-of-arithmetic/computable-models.tex:46-91; printed/PDF page pending; OLP-0197; model-theory/models-of-arithmetic/computable-models; translation/content/model-theory/models-of-arithmetic/computable-models.tex:93-114; printed/PDF page pending
 
 - Please double-check: Please double-check that g(n)=n-1 for n>0 is bijective onto N union {a} and yields the displayed transported operations.
 
@@ -1770,7 +1780,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: retained the shared Henkin constants when evaluating the expanded theories, then took the intended original-language reduct; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0201; model-theory/interpolation/interpolation-proof; translation/content/model-theory/interpolation/interpolation-proof.tex:196-231; printed/PDF page pending
+- Occurrences: OLP-0201; model-theory/interpolation/interpolation-proof; translation/content/model-theory/interpolation/interpolation-proof.tex:197-231; printed/PDF page pending; OLP-0201; model-theory/interpolation/interpolation-proof; translation/content/model-theory/interpolation/interpolation-proof.tex:233-247; printed/PDF page pending
 
 - Please double-check: Please double-check that the amalgamated model retains the shared new-constant interpretations while Gamma-star and Delta-star are evaluated, before taking the original-language reduct.
 
@@ -1900,7 +1910,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: used one shared P,Q pair for both coded structures; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0206; model-theory/lindstrom/ls-property; translation/content/model-theory/lindstrom/ls-property.tex:79-87; printed/PDF page pending
+- Occurrences: OLP-0206; model-theory/lindstrom/ls-property; translation/content/model-theory/lindstrom/ls-property.tex:61-77; printed/PDF page pending; OLP-0206; model-theory/lindstrom/ls-property; translation/content/model-theory/lindstrom/ls-property.tex:79-127; printed/PDF page pending
 
 - Please double-check: Please double-check that both coded sequence structures interpret the same fresh predicate symbols P and Q, so the ambient comparison has one vocabulary.
 
@@ -1910,7 +1920,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: prepared disjoint tagged element and sequence sorts before coding; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0206; model-theory/lindstrom/ls-property; translation/content/model-theory/lindstrom/ls-property.tex:88-97; printed/PDF page pending
+- Occurrences: OLP-0206; model-theory/lindstrom/ls-property; translation/content/model-theory/lindstrom/ls-property.tex:61-77; printed/PDF page pending; OLP-0206; model-theory/lindstrom/ls-property; translation/content/model-theory/lindstrom/ls-property.tex:79-127; printed/PDF page pending
 
 - Please double-check: Please double-check that the element and finite-sequence domains are prepared as tagged disjoint sorts before their union is used.
 
@@ -1930,7 +1940,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: renamed the ambient coding structure K and model K-zero and repaired starred domains; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0206; model-theory/lindstrom/ls-property; translation/content/model-theory/lindstrom/ls-property.tex:109-126; printed/PDF page pending
+- Occurrences: OLP-0206; model-theory/lindstrom/ls-property; translation/content/model-theory/lindstrom/ls-property.tex:79-127; printed/PDF page pending; OLP-0206; model-theory/lindstrom/ls-property; translation/content/model-theory/lindstrom/ls-property.tex:129-148; printed/PDF page pending; OLP-0206; model-theory/lindstrom/ls-property; translation/content/model-theory/lindstrom/ls-property.tex:150-172; printed/PDF page pending
 
 - Please double-check: Please double-check that K and K-zero name the ambient coding structure and its countable model, and that both starred domains use well-formed subscripts.
 
@@ -2263,3 +2273,123 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0239; computability/computability-theory/equiv-ce-defs; translation/content/computability/computability-theory/equiv-ce-defs.tex:76-82; printed/PDF page pending
 
 - Please double-check: Please double-check that the reverse range proof evaluates cfind_e at (z)_0, the input encoded by the displayed computation pair.
+
+## REV-OLTECOMTHY-007 — OLTECOMTHY-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: rendered the intended by-looking relation and comparative meaning; adjacent sourcecorrection discloses both local repairs
+
+- Occurrences: OLP-0241; computability/computability-theory/ce-closed-cup-cap; translation/content/computability/computability-theory/ce-closed-cup-cap.tex:36-42; printed/PDF page pending; OLP-0241; computability/computability-theory/ce-closed-cup-cap; translation/content/computability/computability-theory/ce-closed-cup-cap.tex:44-66; printed/PDF page pending
+
+- Please double-check: Please double-check that the closure proof repairs “for looking” and “tricker” without changing either enumeration construction.
+
+## REV-OLTECOMTHY-008 — OLTECOMTHY-008
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used d in the two T atoms and in the statement identifying the computation defined exactly on A; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0242; computability/computability-theory/complement-ce; translation/content/computability/computability-theory/complement-ce.tex:28-41; printed/PDF page pending
+
+- Please double-check: Please double-check that the complement proof uses d, not e, in T(d,x,h(x)) because cfind_d has domain A.
+
+## REV-OLTECOMTHY-009 — OLTECOMTHY-009
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used the already defined d,e pair and associated d with A; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0242; computability/computability-theory/complement-ce; translation/content/computability/computability-theory/complement-ce.tex:44-50; printed/PDF page pending
+
+- Please double-check: Please double-check that the informal parallel-search explanation consistently uses the already assigned indices d and e rather than introducing e and f.
+
+## REV-OLTECOMTHY-010 — OLTECOMTHY-010
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: removed the accidental repeated word; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0243; computability/computability-theory/reducibility; translation/content/computability/computability-theory/reducibility.tex:30-37; printed/PDF page pending
+
+- Please double-check: Please double-check that removing the duplicated word “notion” leaves the intended reducibility claim unchanged.
+
+## REV-OLTECOMTHY-011 — OLTECOMTHY-011
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: rendered the intended is-unsolvable claim; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0243; computability/computability-theory/reducibility; translation/content/computability/computability-theory/reducibility.tex:34-38; printed/PDF page pending
+
+- Please double-check: Please double-check that “in unsolvable” is treated as the local typo “is unsolvable,” matching the cited halting result.
+
+## REV-OLTECOMTHY-012 — OLTECOMTHY-012
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: kept program index e before input x in the W_e characterization; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0243; computability/computability-theory/reducibility; translation/content/computability/computability-theory/reducibility.tex:39-49; printed/PDF page pending
+
+- Please double-check: Please double-check that the W_e characterization of K_0 uses the ordered pair <e,x>, in the same order as its defining computation.
+
+## REV-OLTECOMTHY-013 — OLTECOMTHY-013
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: rendered the intended says-that introduction; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0244; computability/computability-theory/prop-reduce; translation/content/computability/computability-theory/prop-reduce.tex:12-19; printed/PDF page pending
+
+- Please double-check: Please double-check that the repaired sentence says the first proposition establishes transitivity of many-one reducibility.
+
+## REV-OLTECOMTHY-014 — OLTECOMTHY-014
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: typed f as Nat-to-Nat while naming A and B as the reduced sets; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0244; computability/computability-theory/prop-reduce; translation/content/computability/computability-theory/prop-reduce.tex:73-76; printed/PDF page pending
+
+- Please double-check: Please double-check that a many-one reduction is typed f: N to N, not merely f: A to B, so the characteristic-function composition is well formed.
+
+## REV-OLTECOMTHY-015 — OLTECOMTHY-015
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: reversed both prose statements to K_0 reduces to K; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0245; computability/computability-theory/complete-ce-sets; translation/content/computability/computability-theory/complete-ce-sets.tex:40-42; printed/PDF page pending; OLP-0245; computability/computability-theory/complete-ce-sets; translation/content/computability/computability-theory/complete-ce-sets.tex:44-46; printed/PDF page pending; OLP-0245; computability/computability-theory/complete-ce-sets; translation/content/computability/computability-theory/complete-ce-sets.tex:48-50; printed/PDF page pending
+
+- Please double-check: Please double-check that completeness of K requires K_0 many-one reduces to K, and that the following exercise asks for this same direction.
+
+## REV-OLTECOMTHY-016 — OLTECOMTHY-016
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: rendered the intended procedural sequence; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0247; computability/computability-theory/total; translation/content/computability/computability-theory/total.tex:34-40; printed/PDF page pending
+
+- Please double-check: Please double-check that the repaired procedural sentence first simulates cfind_x(x) and returns zero exactly if that computation halts.
+
+## REV-OLTECOMTHY-017 — OLTECOMTHY-017
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: made the conditional scope explicitly require both values to be defined; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0248; computability/computability-theory/rice-theorem; translation/content/computability/computability-theory/rice-theorem.tex:106-116; printed/PDF page pending
+
+- Please double-check: Please double-check that the fourth Rice-theorem example asserts strict increase only when both displayed function values are defined.
+
+## REV-OLTECOMTHY-018 — OLTECOMTHY-018
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: started the proof with arbitrary partial computable f, for which the same partial construction works; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0250; computability/computability-theory/application-fixed-point; translation/content/computability/computability-theory/application-fixed-point.tex:28-32; printed/PDF page pending; OLP-0250; computability/computability-theory/application-fixed-point; translation/content/computability/computability-theory/application-fixed-point.tex:34-59; printed/PDF page pending
+
+- Please double-check: Please double-check that the fixed-point application begins with arbitrary partial computable f, matching the theorem and the partial construction of g.
