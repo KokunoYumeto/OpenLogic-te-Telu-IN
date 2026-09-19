@@ -1,0 +1,184 @@
+% Cumulative Telugu reader through OLP-0279.
+% English source remains frozen under upstream/; editable Telugu remains under translation/.
+\documentclass[11pt,a4paper,openany]{memoir}
+
+\newcommand*{\olpath}{upstream}
+
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}
+\newfontfamily{\telugufont}{NotoSerifTelugu-Regular.ttf}[
+  Path=fonts/,
+  Script=Telugu,
+  Language=Telugu,
+  BoldFont=NotoSerifTelugu-Bold.ttf,
+  ItalicFont=NotoSerifTelugu-Regular.ttf,
+  BoldItalicFont=NotoSerifTelugu-Bold.ttf
+]
+\usepackage[Latin,Telugu]{ucharclasses}
+\setTransitionsForLatin{\rmfamily}{}
+\setTransitionTo{Telugu}{\telugufont}
+\XeTeXgenerateactualtext=1
+
+\input{\olpath/sty/open-logic.sty}
+\input{\olpath/sty/open-logic-defer.sty}
+\includeenv{editorial}
+\problemsperchapter
+\let\cleardoublepage\clearpage
+\pagestyle{plain}
+
+% Target-only evidence wrappers. The exact English token identity stays in the
+% editable second argument but is deliberately absent from the reader surface.
+\providecommand{\tetoken}[2]{#1}
+% The canonical source writes the configurable negation token as `!\ `.
+% OLP-0058 attaches the Telugu accusative suffix to that escaped-space token;
+% defining the resulting control sequence preserves both pieces in print.
+\providecommand{\ను}{{\telugufont ను}}
+\providecommand{\MPని}{\MP{}\ను}
+\providecommand{\QRతో}{\QR{}{\telugufont తో}}
+\providecommand{\dotsను}{\dots{}\ను}
+\providecommand{\dotsకు}{\dots{}{\telugufont కు}}
+% Correction explanations remain verbatim in the editable TeX and evidence
+% ledgers. The corrected reading is rendered, while the long audit annotation
+% is omitted from running text so it remains safe inside conditionals/tables.
+\newcommand{\sourcecorrection}[2]{}
+
+\def\partname{{\telugufont భాగం}}
+\def\chaptername{{\telugufont అధ్యాయం}}
+\def\contentsname{{\telugufont విషయ సూచిక}}
+\def\figurename{{\telugufont పటం}}
+\def\proofname{{\telugufont నిరూపణ}}
+\def\theoremname{{\telugufont సిద్ధాంతం}}
+\def\lemmaname{{\telugufont ఉపసిద్ధాంతం}}
+\def\propositionname{{\telugufont ప్రతిపాదన}}
+\def\corollaryname{{\telugufont పర్యవసానం}}
+\def\definitionname{{\telugufont నిర్వచనం}}
+\def\examplename{{\telugufont ఉదాహరణ}}
+\def\problemname{{\telugufont అభ్యాసం}}
+
+\hypersetup{
+  pdftitle={OpenLogic Telugu cumulative draft through OLP-0279},
+  pdfauthor={Open Logic Project; Telugu machine translation},
+  pdfsubject={276 of 722 editable source units; provisional terminology and review notes}
+}
+\tolerance=3000
+\emergencystretch=4em
+\raggedbottom
+
+\newcounter{externalref}
+\crefname{externalref}{{\telugufont పరిధికి వెలుపల సూచన}}{{\telugufont పరిధికి వెలుపల సూచనలు}}
+\Crefname{externalref}{{\telugufont పరిధికి వెలుపల సూచన}}{{\telugufont పరిధికి వెలుపల సూచనలు}}
+
+\begin{document}
+
+\begin{titlingpage}
+\begin{raggedleft}
+{\HUGE\bfseries\sffamily\telugufont OpenLogic తెలుగు\par}
+\vskip 3ex
+{\huge\telugufont OLP-0279 వరకు సంచిత పాఠక ముసాయిదా\par}
+\vskip 4ex
+{\Large\telugufont 722 మూల విభాగాలలో 276 సంపాదించగల తెలుగు విభాగాలు\par}
+\end{raggedleft}
+
+\vfill
+
+{\telugufont
+ఇది పూర్తి గ్రంథం కాదు. అసంపూర్ణత భాగంలోని పరిచయ అధ్యాయం వరకు
+అనువాదం కొనసాగింది; తరువాతి అధ్యాయాలు ఈ సంచికలో లేవు.
+
+యంత్ర అనువాదం; మూల పాఠ్యంతో సరిపోల్చిన ఏజెంట్ సమీక్ష. మానవ లేదా
+స్వతంత్ర నిపుణుల సమీక్ష జరిగిందని ఈ సంచిక పేర్కొనదు. సాంకేతిక పదాలు
+తాత్కాలిక నిర్ణయాలు; ప్రదర్శిత నిర్వచనాలు, సూత్రాలే కచ్చితమైన అర్థాన్ని
+నిర్ణయిస్తాయి.
+
+ప్రతిజ్ఞావాక్యాత్మక, మొదటిస్థాయి సందర్భాలు పంచుకునే నిరూపణ-వ్యవస్థ
+మాడ్యూళ్లను మూల గ్రంథపు సహజ దిగుమతి క్రమంలో రెండుచోట్ల ముద్రించవచ్చు.
+}
+
+\vskip 3ex
+\small
+Source revision: \texttt{9620cc73f9c8e0ad003c514a5d3748f29611c4c0}\par
+Release ref: \texttt{v0.4.0-cumulative-olp0279}\par
+\url{https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN}
+\end{titlingpage}
+
+\frontmatter
+\chapter*{{\telugufont సంచిక గురించి}}
+{\telugufont
+Open Logic Project మూలానికి Creative Commons Attribution 4.0 International
+అనుమతి వర్తిస్తుంది. ఈ తెలుగు పాఠ్యం మూలంలో చేసిన మార్పు. మూల రచయితల
+ఆమోదం ఉందని సూచించడం లేదు. 238 మూల దిద్దుబాటు వివరణలు సంపాదించగల
+TeXలో, నిర్ణయ-సమీక్ష ఆధారాల్లో గుర్తింపులతో ఉన్నాయి; ఈ పాఠక PDFలో
+సరిచేసిన పఠనం మాత్రమే కనిపిస్తుంది.
+
+ఈ PDFలో 276 ప్రత్యేక సంపాదించగల TeX విభాగాల పరిధి ఉంది. వెబ్/EPUB
+పాఠక సంచికకు వేరే, చిన్న, విఫలమైతే మూసివేసే మార్పిడి పరిధి ఉంది;
+ఆ పరిధిని ఈ PDF సంఖ్యతో కలపకూడదు.
+}
+
+\section*{{\telugufont పరిధికి వెలుపల సూచనలు}}
+{\telugufont కింది ఎనిమిది మూల సూచనలు ఈ PDFలో ఇంకా లేని భాగాలు లేదా
+అధ్యాయాలకు వెళ్తాయి. ప్రశ్నార్థక సూచనలుగా చూపకుండా, వాటిని ఇక్కడ
+స్పష్టంగా పరిధికి వెలుపలగా గుర్తించాం.}
+\begin{enumerate}
+\item\refstepcounter{externalref}\label{his:set:limits:sec}{\telugufont చారిత్రక సమితి-సిద్ధాంత పరిమితుల విభాగం.}
+\item\refstepcounter{externalref}\label{his:set:mythology:sec}{\telugufont సమితి-సిద్ధాంత చరిత్ర/పురాణకథల విభాగం.}
+\item\refstepcounter{externalref}\label{inc:req:min:lem:less-nsucc}{\telugufont అసంపూర్ణత భాగంలోని తరువాతి అవసరాల ఉపసిద్ధాంతం.}
+\item\refstepcounter{externalref}\label{inc:req:min:lem:less-zero}{\telugufont అసంపూర్ణత భాగంలోని తరువాతి అవసరాల ఉపసిద్ధాంతం.}
+\item\refstepcounter{externalref}\label{mth:ind:idf:sec}{\telugufont ఆగమనాత్మక నిర్వచనాల పద్ధతి విభాగం.}
+\item\refstepcounter{externalref}\label{mth:ind:sti:sec}{\telugufont నిర్మాణాత్మక ఆగమన పద్ధతి విభాగం.}
+\item\refstepcounter{externalref}\label{sth:::part}{\telugufont సమితి సిద్ధాంతం భాగం.}
+\item\refstepcounter{externalref}\label{sth:ord-arithmetic::chap}{\telugufont ఆర్డినల్ అంకగణితం అధ్యాయం.}
+\end{enumerate}
+
+\tableofcontents*
+\mainmatter
+
+% OLP-0004--OLP-0054. The untranslated OLP-0003 part driver is outside
+% the editable boundary, so its Telugu part heading is supplied here.
+\olpart{sfr}{{\telugufont నైవ్ సమితి సిద్ధాంతం}}
+\let\cumulativeoriginallabel\label
+\newif\ifcumulativenatnatlabel
+\renewcommand{\label}[1]{%
+  \edef\cumulativelabelargument{#1}%
+  \def\cumulativenatnatkey{sfr:siz:red:prob:nat-nat}%
+  \ifx\cumulativelabelargument\cumulativenatnatkey
+    \ifcumulativenatnatlabel
+      \cumulativeoriginallabel{sfr:siz:red:prob:nat-nat-alt}%
+    \else
+      \global\cumulativenatnatlabeltrue
+      \cumulativeoriginallabel{#1}%
+    \fi
+  \else
+    \cumulativeoriginallabel{#1}%
+  \fi}
+\subfile{tmp/pdfs/cumulative-279/render-tree/content/sets-functions-relations/sets/sets}
+\subfile{tmp/pdfs/cumulative-279/render-tree/content/sets-functions-relations/relations/relations-complete}
+\subfile{tmp/pdfs/cumulative-279/render-tree/content/sets-functions-relations/functions/functions}
+\subfile{tmp/pdfs/cumulative-279/render-tree/content/sets-functions-relations/size-of-sets/size-of-sets-complete}
+\let\label\cumulativeoriginallabel
+\subfile{tmp/pdfs/cumulative-279/render-tree/content/sets-functions-relations/arithmetization/arithmetization}
+\subfile{tmp/pdfs/cumulative-279/render-tree/content/sets-functions-relations/infinite/infinite}
+
+% Complete translated part drivers through the end of Undecidability.
+\subfile{tmp/pdfs/cumulative-279/render-tree/content/propositional-logic/propositional-logic}
+\subfile{tmp/pdfs/cumulative-279/render-tree/content/first-order-logic/first-order-logic}
+\subfile{tmp/pdfs/cumulative-279/render-tree/content/model-theory/model-theory}
+\subfile{tmp/pdfs/cumulative-279/render-tree/content/computability/computability}
+\subfile{tmp/pdfs/cumulative-279/render-tree/content/turing-machines/turing-machines}
+
+% OLP-0274 is retained, but its imports beyond the accepted boundary are
+% suppressed. OLP-0275 then imports only the four translated intro sections.
+\begingroup
+\RenewDocumentCommand\olimport{s o m o}{}
+\subfile{tmp/pdfs/cumulative-279/render-tree/content/incompleteness/incompleteness}
+\endgroup
+\subfile{tmp/pdfs/cumulative-279/render-tree/content/incompleteness/introduction/introduction}
+
+\backmatter
+\nocite{Frege1953}
+\bibliographystyle{upstream/bib/natbib-oup}
+\bibliography{upstream/bib/open-logic}
+
+\end{document}

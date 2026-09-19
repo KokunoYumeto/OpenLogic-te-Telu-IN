@@ -14576,7 +14576,7 @@
           "target": {
             "path": "translation/content/first-order-logic/completeness/construction-of-model.tex",
             "file_id": "OLP-0132:target:te-Telu-IN",
-            "file_sha256": "8150eadb7b413b1f353857d37a0a353fea23a122991688af5b65ab7bc08de306",
+            "file_sha256": "d73cf1f0000be7e67910d11d52b49414e61927d05b2e2929ce694292cbbb65d7",
             "line_span": {
               "status": "available",
               "start": 37,
@@ -14677,7 +14677,7 @@
           "target": {
             "path": "translation/content/first-order-logic/completeness/construction-of-model.tex",
             "file_id": "OLP-0132:target:te-Telu-IN",
-            "file_sha256": "8150eadb7b413b1f353857d37a0a353fea23a122991688af5b65ab7bc08de306",
+            "file_sha256": "d73cf1f0000be7e67910d11d52b49414e61927d05b2e2929ce694292cbbb65d7",
             "line_span": {
               "status": "available",
               "start": 174,
@@ -16541,7 +16541,7 @@
           "target": {
             "path": "translation/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex",
             "file_id": "OLP-0157:target:te-Telu-IN",
-            "file_sha256": "63a14129006a17e742bebceaadb8af5bdb3cf483f970e599f1cf70d10e9d4577",
+            "file_sha256": "2d7233aa130de91cc6a94d85e3dfd56cd933c2a1ea4cf3f4f54aec70eaa6d78d",
             "line_span": {
               "status": "available",
               "start": 13,
@@ -44730,7 +44730,7 @@
           "target": {
             "path": "translation/content/first-order-logic/completeness/construction-of-model.tex",
             "file_id": "OLP-0132:target:te-Telu-IN",
-            "file_sha256": "8150eadb7b413b1f353857d37a0a353fea23a122991688af5b65ab7bc08de306",
+            "file_sha256": "d73cf1f0000be7e67910d11d52b49414e61927d05b2e2929ce694292cbbb65d7",
             "line_span": {
               "status": "available",
               "start": 84,
@@ -44852,7 +44852,7 @@
           "target": {
             "path": "translation/content/first-order-logic/completeness/construction-of-model.tex",
             "file_id": "OLP-0132:target:te-Telu-IN",
-            "file_sha256": "8150eadb7b413b1f353857d37a0a353fea23a122991688af5b65ab7bc08de306",
+            "file_sha256": "d73cf1f0000be7e67910d11d52b49414e61927d05b2e2929ce694292cbbb65d7",
             "line_span": {
               "status": "available",
               "start": 267,
@@ -44974,7 +44974,7 @@
           "target": {
             "path": "translation/content/first-order-logic/completeness/construction-of-model.tex",
             "file_id": "OLP-0132:target:te-Telu-IN",
-            "file_sha256": "8150eadb7b413b1f353857d37a0a353fea23a122991688af5b65ab7bc08de306",
+            "file_sha256": "d73cf1f0000be7e67910d11d52b49414e61927d05b2e2929ce694292cbbb65d7",
             "line_span": {
               "status": "available",
               "start": 261,
@@ -45096,7 +45096,7 @@
           "target": {
             "path": "translation/content/first-order-logic/completeness/construction-of-model.tex",
             "file_id": "OLP-0132:target:te-Telu-IN",
-            "file_sha256": "8150eadb7b413b1f353857d37a0a353fea23a122991688af5b65ab7bc08de306",
+            "file_sha256": "d73cf1f0000be7e67910d11d52b49414e61927d05b2e2929ce694292cbbb65d7",
             "line_span": {
               "status": "available",
               "start": 277,
@@ -45104,8 +45104,8 @@
             },
             "byte_span": {
               "status": "available",
-              "start": 19692,
-              "end_exclusive": 19799
+              "start": 19693,
+              "end_exclusive": 19800
             },
             "printed_page": null,
             "excerpt": "\\sourcecorrection{OLTECOM-006}{ఆంగ్ల మూలం ఇక్కడ ``కనీసం ఒక",

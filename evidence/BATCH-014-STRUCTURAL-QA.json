@@ -1,7 +1,7 @@
 {
   "schema": "telugu-openlogic-batch-qa/1",
-  "generated_utc": "2026-09-05T17:30:34.999Z",
-  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Intertext prose is masked while its inline math remains checked.",
+  "generated_utc": "2026-09-19T23:09:11.553Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Text/intertext/mbox prose is masked; nested inline math is compared per clause independently of language-specific word order.",
   "units": [
     {
       "unit_id": "OLP-0126",
@@ -177,7 +177,7 @@
       "unit_id": "OLP-0127",
       "source_path": "content/first-order-logic/completeness/introduction.tex",
       "source_sha256": "e263d8a466c6fa7457f247217e75e7d571fe5af13faf97e24472e2273a089498",
-      "translation_sha256": "5fd3174e3a09cdcd4970b99f868150a3ce43dc1a8d5e5f1c9799f2a500c2dc3e",
+      "translation_sha256": "a11a6be9d31bd7ab59b7418465da54c2ecf5e480f32711896abf7f6d26bfe757",
       "source_blocks": 10,
       "target_blocks": 10,
       "paragraph_alignment": true,
@@ -252,7 +252,7 @@
       "declared_source_correction_ids": [],
       "math_declared_source_correction_match": true,
       "math_multiset_match": true,
-      "telugu_chars": 2197,
+      "telugu_chars": 2460,
       "unicode_replacement_char": false,
       "unpaired_surrogate": false,
       "blocks": [
@@ -289,7 +289,7 @@
         {
           "index": 7,
           "source_start": "In its second formulation, it can be stated as a model existence\nresult: every consistent set of !!{sentence}s",
-          "target_start": "రెండవ సూత్రీకరణలో దాన్ని ఒక నమూనా-ఉనికి ఫలితంగా చెప్పవచ్చు: ప్రతి\nఅవైరుధ్యమైన !!{sentence}s సమితి సంతృప్తిపరచద"
+          "target_start": "రెండవ సూత్రీకరణలో దాన్ని ఒక నమూనా-ఉనికి ఫలితంగా చెప్పవచ్చు: ప్రతి\nఅవైరుధ్యమైన \\tetoken{వాక్యాలు}{!!{sentence}s"
         },
         {
           "index": 8,
@@ -299,7 +299,7 @@
         {
           "index": 9,
           "source_start": "Although the compactness theorem follows from the completeness theorem\nvia the detour through !!{derivation}s,",
-          "target_start": "సంహతత్వ సిద్ధాంతం సంపూర్ణతా సిద్ధాంతం నుంచి !!{derivation}s మీదుగా\nవెళ్లే మార్గంలో అనుగమించినప్పటికీ, దాన్ని న"
+          "target_start": "సంహతత్వ సిద్ధాంతం సంపూర్ణతా సిద్ధాంతం నుంచి \\tetoken{వ్యుత్పత్తులు}{!!{derivation}s} మీదుగా\nవెళ్లే మార్గంలో అన"
         },
         {
           "index": 10,
@@ -324,7 +324,7 @@
       "unit_id": "OLP-0128",
       "source_path": "content/first-order-logic/completeness/outline.tex",
       "source_sha256": "b3cbb5543255b168edbed2239981fa772d3a954bd5ce3dbf5bb8073e9b0525b1",
-      "translation_sha256": "e8d72b38c541b4168108481e7a95cca30b86544d29d0665aab2fb9c151b26658",
+      "translation_sha256": "278db2a1b31a632268ea635eaf79261bf5b37de9c0c54a71531e39798d7904b5",
       "source_blocks": 16,
       "target_blocks": 16,
       "paragraph_alignment": true,
@@ -677,7 +677,7 @@
       ],
       "math_declared_source_correction_match": true,
       "math_multiset_match": true,
-      "telugu_chars": 4688,
+      "telugu_chars": 5181,
       "unicode_replacement_char": false,
       "unpaired_surrogate": false,
       "blocks": [
@@ -714,12 +714,12 @@
         {
           "index": 7,
           "source_start": "If $\\Gamma$ contains only \\iftag{FOL}{atomic\n  !!{sentence}s}{!!{propositional variable}s}, it is easy to cons",
-          "target_start": "$\\Gamma$లో \\iftag{FOL}{పరమాణు !!{sentence}s}{!!{propositional variable}s}\nమాత్రమే ఉంటే, దానికి ఒక నమూనాను నిర్"
+          "target_start": "$\\Gamma$లో \\iftag{FOL}{పరమాణు \\tetoken{వాక్యాలు}{!!{sentence}s}}{\\tetoken{ప్రతిజ్ఞావాక్య చరాలు}{!!{proposition"
         },
         {
           "index": 8,
           "source_start": "Now suppose $\\Gamma$ contains some !!{formula}~$\\lnot !B$, with $!B$\natomic.  We might worry that the construc",
-          "target_start": "ఇప్పుడు~$\\Gamma$లో $\\lnot !B$ అనే ఏదో !!{formula} ఉందనీ, $!B$\nపరమాణు సూత్రమనీ అనుకుందాం. $\\iftag{FOL}{\\Struct{"
+          "target_start": "ఇప్పుడు~$\\Gamma$లో $\\lnot !B$ అనే ఏదో \\tetoken{సూత్రం}{!!{formula}} ఉందనీ, $!B$\nపరమాణు సూత్రమనీ అనుకుందాం. $\\i"
         },
         {
           "index": 9,
@@ -729,12 +729,12 @@
         {
           "index": 10,
           "source_start": "This suggests the following idea: we add additional !!{formula}s\nto~$\\Gamma$ so as to (a)~keep the resulting s",
-          "target_start": "ఇది కింది ఆలోచనను సూచిస్తుంది: (a)~ఫలిత సమితిని అవైరుధ్యంగా ఉంచేలా,\n(b)~సంభవించే ప్రతి !!{sentence}~$!A$కు ఫలి"
+          "target_start": "ఇది కింది ఆలోచనను సూచిస్తుంది: (a)~ఫలిత సమితిని అవైరుధ్యంగా ఉంచేలా,\n(b)~సంభవించే ప్రతి \\tetoken{వాక్యం}{!!{sen"
         },
         {
           "index": 11,
           "source_start": "\\iftag{FOL}{%\nThere is one wrinkle in this plan: if $\\lexists[x][!A(x)] \\in \\Gamma$\nwe would hope to be able t",
-          "target_start": "\\iftag{FOL}{%\nఈ ప్రణాళికలో ఒక చిక్కు ఉంది: $\\lexists[x][!A(x)] \\in \\Gamma$ అయితే,\nఏదో ఒక !!{constant}~$c$ను ఎం"
+          "target_start": "\\iftag{FOL}{%\nఈ ప్రణాళికలో ఒక చిక్కు ఉంది: $\\lexists[x][!A(x)] \\in \\Gamma$ అయితే,\nఏదో ఒక \\tetoken{స్థిరసంకేతం}"
         },
         {
           "index": 12,
@@ -744,17 +744,17 @@
         {
           "index": 13,
           "source_start": "Our original construction works well if we only have !!{constant}s in\nthe atomic sentences.  But the language ",
-          "target_start": "పరమాణు వాక్యాల్లో !!{constant}s మాత్రమే ఉన్నప్పుడు మన మొదటి నిర్మాణం\nచక్కగా పనిచేస్తుంది. కానీ భాషలో !!{functi"
+          "target_start": "పరమాణు వాక్యాల్లో \\tetoken{స్థిరసంకేతాలు}{!!{constant}s} మాత్రమే ఉన్నప్పుడు మన మొదటి నిర్మాణం\nచక్కగా పనిచేస్తు"
         },
         {
           "index": 14,
           "source_start": "The last piece of the puzzle is what to do with~$\\eq$.  The\n!!{predicate}~$\\eq$ has a fixed interpretation: $\\",
-          "target_start": "చివరి చిక్కు~$\\eq$ను ఏం చేయాలనేది. !!{predicate}~$\\eq$కు స్థిరమైన\nఅర్థవివరణ ఉంది: $\\Value{t}{M} = \\Value{t'}{M"
+          "target_start": "చివరి చిక్కు~$\\eq$ను ఏం చేయాలనేది. \\tetoken{విధేయ సంకేతం}{!!{predicate}}~$\\eq$కు స్థిరమైన\nఅర్థవివరణ ఉంది: $\\Va"
         },
         {
           "index": 15,
           "source_start": "So here's what we'll do. First we investigate the properties of\n!!{complete} consistent sets, in particular we",
-          "target_start": "ఇప్పుడు మనం చేయబోయేది ఇదే. మొదట !!{complete} అవైరుధ్య సమితుల ధర్మాలను\nపరిశీలిస్తాం. ప్రత్యేకంగా, !!a{complete}"
+          "target_start": "ఇప్పుడు మనం చేయబోయేది ఇదే. మొదట \\tetoken{సంపూర్ణ}{!!{complete}} అవైరుధ్య సమితుల ధర్మాలను\nపరిశీలిస్తాం. ప్రత్యే"
         },
         {
           "index": 16,
@@ -797,7 +797,7 @@
       "unit_id": "OLP-0129",
       "source_path": "content/first-order-logic/completeness/complete-consistent-sets.tex",
       "source_sha256": "6473c646a48e854478ef1388de877eb61bcd8b912179347703f86b655de0ae4f",
-      "translation_sha256": "25d2435a8fe9d58f77781c0bf3b7a0829682364b527f7426966b4c5846efd431",
+      "translation_sha256": "ecd1f1a025afe11b5f6195098f4af0bbc070971a9e94c2154e321a9b33663f5f",
       "source_blocks": 27,
       "target_blocks": 27,
       "paragraph_alignment": true,
@@ -1054,7 +1054,7 @@
       "declared_source_correction_ids": [],
       "math_declared_source_correction_match": true,
       "math_multiset_match": true,
-      "telugu_chars": 1894,
+      "telugu_chars": 2157,
       "unicode_replacement_char": false,
       "unpaired_surrogate": false,
       "blocks": [
@@ -1091,17 +1091,17 @@
         {
           "index": 7,
           "source_start": "\\begin{defn}[Complete set]\n\\ollabel{def:complete-set} A set~$\\Gamma$ of !!{sentence}s is\n\\emph{!!{complete}} i",
-          "target_start": "\\begin{defn}[సంపూర్ణ సమితి]\n\\ollabel{def:complete-set} !!{sentence}s సమితి~$\\Gamma$ను\n\\emph{!!{complete}} అంటా"
+          "target_start": "\\begin{defn}[సంపూర్ణ సమితి]\n\\ollabel{def:complete-set} \\tetoken{వాక్యాలు}{!!{sentence}s} సమితి~$\\Gamma$ను\n\\emp"
         },
         {
           "index": 8,
           "source_start": "\\begin{explain}\n!!^{complete} sets of sentences leave no questions unanswered. For\nany !!{sentence}~$!A$, $\\Ga",
-          "target_start": "\\begin{explain}\n!!^{complete} వాక్యాల సమితులు ఏ ప్రశ్ననూ సమాధానం లేకుండా వదలవు. ఏ\n!!{sentence}~$!A$కైనా, $!A$ "
+          "target_start": "\\begin{explain}\n\\tetoken{సంపూర్ణ}{!!^{complete}} వాక్యాల సమితులు ఏ ప్రశ్ననూ సమాధానం లేకుండా వదలవు. ఏ\n\\tetoken{"
         },
         {
           "index": 9,
           "source_start": "\\begin{explain}\n!!^{complete} consistent sets are important in the completeness proof\nsince we can guarantee t",
-          "target_start": "\\begin{explain}\nసంపూర్ణతా నిరూపణలో !!^{complete} అవైరుధ్య సమితులు ముఖ్యమైనవి; ఎందుకంటే\nప్రతి అవైరుధ్య !!{sente"
+          "target_start": "\\begin{explain}\nసంపూర్ణతా నిరూపణలో \\tetoken{సంపూర్ణ}{!!^{complete}} అవైరుధ్య సమితులు ముఖ్యమైనవి; ఎందుకంటే\nప్రత"
         },
         {
           "index": 10,
@@ -1111,7 +1111,7 @@
         {
           "index": 11,
           "source_start": "\\begin{prop}\n\\ollabel{prop:ccs}\nSuppose $\\Gamma$ is !!{complete} and consistent. Then:\n\\begin{enumerate}\n\\item",
-          "target_start": "\\begin{prop}\n\\ollabel{prop:ccs}\n$\\Gamma$ !!{complete}, అవైరుధ్యమైనది అనుకుందాం. అప్పుడు:\n\\begin{enumerate}\n\\it"
+          "target_start": "\\begin{prop}\n\\ollabel{prop:ccs}\n$\\Gamma$ \\tetoken{సంపూర్ణ}{!!{complete}}, అవైరుధ్యమైనది అనుకుందాం. అప్పుడు:\n\\b"
         },
         {
           "index": 12,
@@ -1131,12 +1131,12 @@
         {
           "index": 15,
           "source_start": "\\begin{proof}\nLet us suppose for all of the following that $\\Gamma$ is !!{complete} and\nconsistent.\n\\begin{enu",
-          "target_start": "\\begin{proof}\nకింద అన్నింటిలోనూ~$\\Gamma$ !!{complete}, అవైరుధ్యమైనది అని\nఅనుకుందాం.\n\\begin{enumerate}\n\\item $\\"
+          "target_start": "\\begin{proof}\nకింద అన్నింటిలోనూ~$\\Gamma$ \\tetoken{సంపూర్ణ}{!!{complete}}, అవైరుధ్యమైనది అని\nఅనుకుందాం.\n\\begin{"
         },
         {
           "index": 16,
           "source_start": "Suppose that $\\Gamma \\Proves !A$. Suppose to the contrary that $!A\n\\notin \\Gamma$. Since $\\Gamma$ is !!{comple",
-          "target_start": "$\\Gamma \\Proves !A$ అని అనుకుందాం. దీనికి విరుద్ధంగా $!A \\notin\n\\Gamma$ అని అనుకుందాం. $\\Gamma$ !!{complete} క"
+          "target_start": "$\\Gamma \\Proves !A$ అని అనుకుందాం. దీనికి విరుద్ధంగా $!A \\notin\n\\Gamma$ అని అనుకుందాం. $\\Gamma$ \\tetoken{సంపూర"
         },
         {
           "index": 17,
@@ -1171,7 +1171,7 @@
         {
           "index": 23,
           "source_start": "For the reverse direction, first consider the case where $!A \\notin\n\\Gamma$. Since $\\Gamma$ is !!{complete}, $",
-          "target_start": "తిరుగు దిశలో మొదట $!A \\notin \\Gamma$ అయ్యే సందర్భాన్ని పరిశీలిద్దాం.\n$\\Gamma$ !!{complete} కనుక $\\lnot !A \\in "
+          "target_start": "తిరుగు దిశలో మొదట $!A \\notin \\Gamma$ అయ్యే సందర్భాన్ని పరిశీలిద్దాం.\n$\\Gamma$ \\tetoken{సంపూర్ణ}{!!{complete}} "
         },
         {
           "index": 24,
@@ -1239,7 +1239,7 @@
       "unit_id": "OLP-0130",
       "source_path": "content/first-order-logic/completeness/henkin-expansions.tex",
       "source_sha256": "353b1ea300b6d916be92a5100dfa2e2f4cf9ad9f44e9506c96f028acea3b1ec8",
-      "translation_sha256": "a4f88dacdaf322a7ff2ff776aaaf5253c14a29abb4cfbb1a56adfac2e81ef268",
+      "translation_sha256": "0d3f64f37e18e8fb1b0c1ead74d1acd8d6b6071ae19ca58983bbf085469b676f",
       "source_blocks": 23,
       "target_blocks": 23,
       "paragraph_alignment": true,
@@ -1572,7 +1572,7 @@
       ],
       "math_declared_source_correction_match": true,
       "math_multiset_match": true,
-      "telugu_chars": 2884,
+      "telugu_chars": 3137,
       "unicode_replacement_char": false,
       "unpaired_surrogate": false,
       "blocks": [
@@ -1609,12 +1609,12 @@
         {
           "index": 7,
           "source_start": "\\begin{prop}\n\\ollabel{prop:lang-exp}\nIf $\\Gamma$ is consistent in $\\Lang L$ and $\\Lang L'$ is obtained from\n$\\",
-          "target_start": "\\begin{prop}\n\\ollabel{prop:lang-exp}\n$\\Lang L$లో~$\\Gamma$ అవైరుధ్యమై ఉండి, కొత్త !!{constant}s యొక్క ఒక\n!!a{de"
+          "target_start": "\\begin{prop}\n\\ollabel{prop:lang-exp}\n$\\Lang L$లో~$\\Gamma$ అవైరుధ్యమై ఉండి, కొత్త \\tetoken{స్థిరసంకేతాలు}{!!{co"
         },
         {
           "index": 8,
           "source_start": "\\begin{defn}[Saturated set]\nA set $\\Gamma$ of !!{formula}s of a language $\\Lang {L}$ is\n\\emph{saturated} iff f",
-          "target_start": "\\begin{defn}[సంతృప్తీకృత సమితి]\nఒక స్వేచ్ఛా !!{variable}~$x$ గల ప్రతి !!{formula}~$!A(x) \\in\n\\Frm[L]$కు, కింది"
+          "target_start": "\\begin{defn}[సంతృప్తీకృత సమితి]\nఒక స్వేచ్ఛా \\tetoken{చరం}{!!{variable}}~$x$ గల ప్రతి \\tetoken{సూత్రం}{!!{formu"
         },
         {
           "index": 9,
@@ -1629,12 +1629,12 @@
         {
           "index": 11,
           "source_start": "Let $c_0$ be the first !!{constant} among the $\\Obj d_i$ we added\nto~$\\Lang{L}$ which does not occur in~$!A_0(",
-          "target_start": "$!A_0(x_0)$లో సంభవించని, మనం~$\\Lang{L}$కు చేర్చిన $\\Obj d_i$లలో\nమొదటి !!{constant}ను $c_0$గా తీసుకోండి. $!D_0$"
+          "target_start": "$!A_0(x_0)$లో సంభవించని, మనం~$\\Lang{L}$కు చేర్చిన $\\Obj d_i$లలో\nమొదటి \\tetoken{స్థిరసంకేతాన్ని}{!!{constant}} "
         },
         {
           "index": 12,
           "source_start": "Now let $!D_{n}$ be the !!{formula} \\iftag{prvEx}\n{$\\lexists[x_{n}][!A_{n}(x_{n})] \\lif\n  !A_{n}(c_{n})$}{$\\ln",
-          "target_start": "ఇప్పుడు $!D_{n}$ను కింది !!{formula}గా తీసుకోండి:\n\\iftag{prvEx}\n{$\\lexists[x_{n}][!A_{n}(x_{n})] \\lif\n  !A_{n}"
+          "target_start": "ఇప్పుడు $!D_{n}$ను కింది \\tetoken{సూత్రంగా}{!!{formula}} తీసుకోండి:\n\\iftag{prvEx}\n{$\\lexists[x_{n}][!A_{n}(x_{"
         },
         {
           "index": 13,
@@ -1644,7 +1644,7 @@
         {
           "index": 14,
           "source_start": "\\begin{proof}\nGiven a consistent set of sentences~$\\Gamma$ in a language~$\\Lang{L}$,\nexpand the language by ad",
-          "target_start": "\\begin{proof}\nభాష~$\\Lang{L}$లోని అవైరుధ్య వాక్యాల సమితి~$\\Gamma$ ఇచ్చారని\nఅనుకుందాం. కొత్త !!{constant}s యొక్క"
+          "target_start": "\\begin{proof}\nభాష~$\\Lang{L}$లోని అవైరుధ్య వాక్యాల సమితి~$\\Gamma$ ఇచ్చారని\nఅనుకుందాం. కొత్త \\tetoken{స్థిరసంకేత"
         },
         {
           "index": 15,
@@ -1733,7 +1733,7 @@
       "unit_id": "OLP-0131",
       "source_path": "content/first-order-logic/completeness/lindenbaums-lemma.tex",
       "source_sha256": "096a854cefe8f47251e7ad20747bda7e3832a0272a8e38ba71d732d913a9be47",
-      "translation_sha256": "681bf3b47c0bcd3c2fb8317f341fe2da6df7f6125d9a05573d1b4b6ac7e2730b",
+      "translation_sha256": "71dadc8c0d6713d51c1abb9e4df49daa84c21faeed8c0eca4cac066204d79556",
       "source_blocks": 13,
       "target_blocks": 13,
       "paragraph_alignment": true,
@@ -1900,7 +1900,7 @@
       ],
       "math_declared_source_correction_match": true,
       "math_multiset_match": true,
-      "telugu_chars": 1510,
+      "telugu_chars": 1562,
       "unicode_replacement_char": false,
       "unpaired_surrogate": false,
       "blocks": [
@@ -1932,7 +1932,7 @@
         {
           "index": 6,
           "source_start": "\\begin{explain}\nWe now prove a lemma that shows that any consistent set of\n!!{sentence}s is contained in some ",
-          "target_start": "\\begin{explain}\nఏ అవైరుధ్య !!{sentence}s సమితైనా కేవలం అవైరుధ్యమైనదే కాక\n!!{complete} కూడా అయిన ఏదో ఒక వాక్యాల"
+          "target_start": "\\begin{explain}\nఏ అవైరుధ్య \\tetoken{వాక్యాలు}{!!{sentence}s} సమితైనా కేవలం అవైరుధ్యమైనదే కాక\n\\tetoken{సంపూర్ణ}"
         },
         {
           "index": 7,
@@ -1942,7 +1942,7 @@
         {
           "index": 8,
           "source_start": "\\begin{proof}\nLet $\\Gamma$ be consistent.  Let $!A_0$, $!A_1$,\n\\dots{} be an enumeration of all the !!{sentenc",
-          "target_start": "\\begin{proof}\n$\\Gamma$ అవైరుధ్యమని అనుకుందాం. $\\Lang L$లోని అన్ని !!{sentence}sకు\n$!A_0$, $!A_1$, \\dots{} అనే "
+          "target_start": "\\begin{proof}\n$\\Gamma$ అవైరుధ్యమని అనుకుందాం. $\\Lang L$లోని అన్ని \\tetoken{వాక్యాలకు}{!!{sentence}s}\n$!A_0$, $"
         },
         {
           "index": 9,
@@ -1962,7 +1962,7 @@
         {
           "index": 12,
           "source_start": "Every !!{sentence} of $\\Frm[L]$ appears on the list used to\ndefine~$\\Gamma^*$. If $!A_n \\notin \\Gamma^*$, then",
-          "target_start": "$\\Frm[L]$లోని ప్రతి !!{sentence} $\\Gamma^*$ను నిర్వచించడానికి\nఉపయోగించిన జాబితాలో కనిపిస్తుంది. $!A_n \\notin \\"
+          "target_start": "$\\Frm[L]$లోని ప్రతి \\tetoken{వాక్యం}{!!{sentence}} $\\Gamma^*$ను నిర్వచించడానికి\nఉపయోగించిన జాబితాలో కనిపిస్తుం"
         },
         {
           "index": 13,
@@ -1989,7 +1989,7 @@
       "unit_id": "OLP-0132",
       "source_path": "content/first-order-logic/completeness/construction-of-model.tex",
       "source_sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702",
-      "translation_sha256": "234f1785cf5fd8293a13487937293833aeb1c4488e39540d616ab1ea954735ca",
+      "translation_sha256": "d73cf1f0000be7e67910d11d52b49414e61927d05b2e2929ce694292cbbb65d7",
       "source_blocks": 30,
       "target_blocks": 30,
       "paragraph_alignment": true,
@@ -2241,7 +2241,9 @@
         "$t$",
         "$!B(t)\\in\\Gamma^*$",
         "$t$",
-        "$\\lexists[x][!B(x)]\\in\\Gamma^*$"
+        "$\\lexists[x][!B(x)]\\in\\Gamma^*$",
+        "$p\\in\\Gamma^*$",
+        "$p\\notin\\Gamma^*$"
       ],
       "math_target_core": [
         "$\\eq$",
@@ -2394,7 +2396,9 @@
         "$\\Sat{M(\\Gamma^*)}{!B(t)}$",
         "$t$",
         "$!B(t)\\in\\Gamma^*$",
-        "$\\lexists[x][!B(x)]\\in\\Gamma^*$"
+        "$\\lexists[x][!B(x)]\\in\\Gamma^*$",
+        "$p\\in\\Gamma^*$",
+        "$p\\notin\\Gamma^*$"
       ],
       "math_exact_multiset_match": false,
       "math_delta_source_only": [
@@ -2411,7 +2415,7 @@
       ],
       "math_declared_source_correction_match": true,
       "math_multiset_match": true,
-      "telugu_chars": 3820,
+      "telugu_chars": 4070,
       "unicode_replacement_char": false,
       "unpaired_surrogate": false,
       "blocks": [
@@ -2443,12 +2447,12 @@
         {
           "index": 6,
           "source_start": "\\begin{explain}\n\\iftag{FOL}{Right now we are not concerned about $\\eq$, i.e., we only\n  want to show that a co",
-          "target_start": "\\begin{explain}\n\\iftag{FOL}{ప్రస్తుతం మనకు~$\\eq$ గురించి ఆందోళన లేదు; అంటే,\n  $\\eq$ను కలిగి లేని అవైరుధ్య !!{s"
+          "target_start": "\\begin{explain}\n\\iftag{FOL}{ప్రస్తుతం మనకు~$\\eq$ గురించి ఆందోళన లేదు; అంటే,\n  $\\eq$ను కలిగి లేని అవైరుధ్య \\tet"
         },
         {
           "index": 7,
           "source_start": "\\iftag{FOL}{%\n\\begin{defn}[Term model]\n\\ollabel{defn:termmodel}\nLet $\\Gamma^*$ be !!a{complete} and consistent",
-          "target_start": "\\iftag{FOL}{%\n\\begin{defn}[పద నమూనా]\n\\ollabel{defn:termmodel}\nభాష~$\\Lang L$లోని !!{sentence}s యొక్క !!a{comple"
+          "target_start": "\\iftag{FOL}{%\n\\begin{defn}[పద నమూనా]\n\\ollabel{defn:termmodel}\nభాష~$\\Lang L$లోని \\tetoken{వాక్యాలు}{!!{sentence"
         },
         {
           "index": 8,
@@ -2463,7 +2467,7 @@
         {
           "index": 10,
           "source_start": "\\iftag{FOL}{%\n\\begin{explain}\n  \\iftag{prvEx}{!!^a{structure}~$\\Struct{M}$ may make an existentially\n    quant",
-          "target_start": "\\iftag{FOL}{%\n\\begin{explain}\n  \\iftag{prvEx}{ఏదైనా !!^a{structure}~$\\Struct{M}$, అస్తిత్వంగా\n    పరిమాణీకృత !"
+          "target_start": "\\iftag{FOL}{%\n\\begin{explain}\n  \\iftag{prvEx}{ఏదైనా \\tetoken{ఒక నిర్మాణం}{!!^a{structure}}~$\\Struct{M}$, అస్తి"
         },
         {
           "index": 11,
@@ -2635,7 +2639,7 @@
       "unit_id": "OLP-0133",
       "source_path": "content/first-order-logic/completeness/identity.tex",
       "source_sha256": "bc3391e4db38b0552ee8429b14f32124cdb7ee71e766ce17a5eaa2422126aa71",
-      "translation_sha256": "1b6e36bed459e1246d938d3047c1e592e7d63f502b7a67527e276c4b4180c365",
+      "translation_sha256": "44daccd450370a2ae565f56cff08db35973725e105c02c212e1b56584cbecc26",
       "source_blocks": 21,
       "target_blocks": 21,
       "paragraph_alignment": true,
@@ -2819,7 +2823,10 @@
         "$\\Struct{\\equivclass{M}{\\approx}}$",
         "$\\equivrep{t}{\\approx}$",
         "$\\Gamma$",
-        "$\\lforall[x][\\lforall[y][x=y]]$"
+        "$\\lforall[x][\\lforall[y][x=y]]$",
+        "$\\Struct{\\equivclass{M}{\\approx}}$",
+        "$\\equivrep{t}{\\approx}$",
+        "$\\approx$"
       ],
       "math_target_core": [
         "$\\eq$",
@@ -2942,7 +2949,10 @@
         "$\\Struct{\\equivclass{M}{\\approx}}$",
         "$\\equivrep{t}{\\approx}$",
         "$\\Gamma$",
-        "$\\lforall[x][\\lforall[y][x=y]]$"
+        "$\\lforall[x][\\lforall[y][x=y]]$",
+        "$\\Struct{\\equivclass{M}{\\approx}}$",
+        "$\\equivrep{t}{\\approx}$",
+        "$\\approx$"
       ],
       "math_exact_multiset_match": false,
       "math_delta_source_only": [
@@ -2956,7 +2966,7 @@
       ],
       "math_declared_source_correction_match": true,
       "math_multiset_match": true,
-      "telugu_chars": 1936,
+      "telugu_chars": 2102,
       "unicode_replacement_char": false,
       "unpaired_surrogate": false,
       "blocks": [
@@ -2983,12 +2993,12 @@
         {
           "index": 5,
           "source_start": "\\begin{explain}\nThe construction of the term model given in the preceding section is\nenough to establish compl",
-          "target_start": "\\begin{explain}\nముందరి విభాగంలో ఇచ్చిన పద నమూనా నిర్మాణం, $\\eq$ను కలిగి లేని\nసమితులు~$\\Gamma$కు ప్రథమక్రమ తర్క"
+          "target_start": "\\begin{explain}\nముందరి విభాగంలో ఇచ్చిన పద నమూనా నిర్మాణం, $\\eq$ను కలిగి లేని\nసమితులు~$\\Gamma$కు మొదటిస్థాయి వి"
         },
         {
           "index": 6,
           "source_start": "\\begin{defn}\n  Let $\\Gamma^*$ be a consistent and !!{complete} set of sentences\n  in~$\\Lang L$.  We define the",
-          "target_start": "\\begin{defn}\n  $\\Gamma^*$ అనేది~$\\Lang L$లోని వాక్యాల అవైరుధ్య, !!{complete}\n  సమితి అనుకుందాం. $\\Lang L$లోని "
+          "target_start": "\\begin{defn}\n  $\\Gamma^*$ అనేది~$\\Lang L$లోని వాక్యాల అవైరుధ్య, \\tetoken{సంపూర్ణ}{!!{complete}}\n  సమితి అనుకుం"
         },
         {
           "index": 7,
@@ -2998,7 +3008,7 @@
         {
           "index": 8,
           "source_start": "\\begin{proof}\nSince $\\Gamma^*$ is consistent and !!{complete}, $\\eq[t][t'] \\in\n\\Gamma^*$ iff $\\Gamma^* \\Proves",
-          "target_start": "\\begin{proof}\n$\\Gamma^*$ అవైరుధ్యమైనది, !!{complete} కనుక $\\eq[t][t'] \\in\n\\Gamma^*$ అయినప్పుడు, అప్పుడు మాత్రమ"
+          "target_start": "\\begin{proof}\n$\\Gamma^*$ అవైరుధ్యమైనది, \\tetoken{సంపూర్ణ}{!!{complete}} కనుక $\\eq[t][t'] \\in\n\\Gamma^*$ అయినప్ప"
         },
         {
           "index": 9,
@@ -3008,7 +3018,7 @@
         {
           "index": 10,
           "source_start": "\\begin{defn}\nSuppose $\\Gamma^*$ is a consistent and !!{complete} set in a\nlanguage~$\\Lang L$, $t$ is a closed ",
-          "target_start": "\\begin{defn}\n$\\Gamma^*$ అనేది భాష~$\\Lang L$లోని అవైరుధ్య, !!{complete} సమితి,\n$t$ ఒక సంవృత పదం, $\\approx$ ముంద"
+          "target_start": "\\begin{defn}\n$\\Gamma^*$ అనేది భాష~$\\Lang L$లోని అవైరుధ్య, \\tetoken{సంపూర్ణ}{!!{complete}} సమితి,\n$t$ ఒక సంవృత "
         },
         {
           "index": 11,
@@ -3058,7 +3068,7 @@
         {
           "index": 20,
           "source_start": "\\begin{digress}\nNote that while $\\Struct{M(\\Gamma^*)}$ is always !!{enumerable} and\ninfinite, $\\Struct{\\equivc",
-          "target_start": "\\begin{digress}\n$\\Struct{M(\\Gamma^*)}$ ఎల్లప్పుడూ !!{enumerable}, అనంతమైనదే అయినా,\n$\\Struct{\\equivclass{M}{\\ap"
+          "target_start": "\\begin{digress}\n$\\Struct{M(\\Gamma^*)}$ ఎల్లప్పుడూ \\tetoken{లెక్కించదగిన}{!!{enumerable}}, అనంతమైనదే అయినా,\n$\\S"
         },
         {
           "index": 21,
@@ -3103,7 +3113,7 @@
       "unit_id": "OLP-0134",
       "source_path": "content/first-order-logic/completeness/completeness-thm.tex",
       "source_sha256": "2e28c82c4787c75fc159295bf38adfb4aa5e1dff0025c237cd750bfc33964ecb",
-      "translation_sha256": "8437663e82c04f2caa8d3f7bfdf499dcaaf1d6a29cd3e6b633725848a4fe4008",
+      "translation_sha256": "eaf4a5b2115dc0250afdd4b0e14a3c88208aaf48cb68809b359a4d972fcaf119",
       "source_blocks": 16,
       "target_blocks": 16,
       "paragraph_alignment": true,
@@ -3258,7 +3268,7 @@
       "declared_source_correction_ids": [],
       "math_declared_source_correction_match": true,
       "math_multiset_match": true,
-      "telugu_chars": 1721,
+      "telugu_chars": 1840,
       "unicode_replacement_char": false,
       "unpaired_surrogate": false,
       "blocks": [
@@ -3295,7 +3305,7 @@
         {
           "index": 7,
           "source_start": "\\begin{thm}[Completeness Theorem]\n\\ollabel{thm:completeness}\nLet $\\Gamma$ be a set of !!{sentence}s.  If $\\Gam",
-          "target_start": "\\begin{thm}[సంపూర్ణతా సిద్ధాంతం]\n\\ollabel{thm:completeness}\n$\\Gamma$ ఒక !!{sentence}s సమితి అనుకుందాం. $\\Gamma"
+          "target_start": "\\begin{thm}[సంపూర్ణతా సిద్ధాంతం]\n\\ollabel{thm:completeness}\n$\\Gamma$ ఒక \\tetoken{వాక్యాలు}{!!{sentence}s} సమిత"
         },
         {
           "index": 8,
@@ -3305,7 +3315,7 @@
         {
           "index": 9,
           "source_start": "\\begin{cor}[Completeness Theorem, Second Version]\n\\ollabel{cor:completeness}\nFor all $\\Gamma$ and !!{sentence}",
-          "target_start": "\\begin{cor}[సంపూర్ణతా సిద్ధాంతం, రెండవ రూపం]\n\\ollabel{cor:completeness}\nఅన్ని~$\\Gamma$, !!{sentence}s~$!A$లకు:"
+          "target_start": "\\begin{cor}[సంపూర్ణతా సిద్ధాంతం, రెండవ రూపం]\n\\ollabel{cor:completeness}\nఅన్ని~$\\Gamma$, \\tetoken{వాక్యాలు}{!!{"
         },
         {
           "index": 10,
@@ -3330,12 +3340,12 @@
         {
           "index": 14,
           "source_start": "\\tagprob{FOL}\n\\begin{prob}\nIn order for !!a{derivation} system to be complete, its rules must be\nstrong enough",
-          "target_start": "\\tagprob{FOL}\n\\begin{prob}\nఒక !!a{derivation} వ్యవస్థ సంపూర్ణంగా ఉండాలంటే, ప్రతి\nసంతృప్తిపరచలేని సమితీ వైరుధ్య"
+          "target_start": "\\tagprob{FOL}\n\\begin{prob}\nఒక \\tetoken{వ్యుత్పత్తి}{!!a{derivation}} వ్యవస్థ సంపూర్ణంగా ఉండాలంటే, ప్రతి\nసంతృప్"
         },
         {
           "index": 15,
           "source_start": "\\tagprob{notFOL}\n\\begin{prob}\nIn order for !!a{derivation} system to be complete, its rules must be\nstrong eno",
-          "target_start": "\\tagprob{notFOL}\n\\begin{prob}\nఒక !!a{derivation} వ్యవస్థ సంపూర్ణంగా ఉండాలంటే, ప్రతి\nసంతృప్తిపరచలేని సమితీ వైరు"
+          "target_start": "\\tagprob{notFOL}\n\\begin{prob}\nఒక \\tetoken{వ్యుత్పత్తి}{!!a{derivation}} వ్యవస్థ సంపూర్ణంగా ఉండాలంటే, ప్రతి\nసంత"
         },
         {
           "index": 16,
@@ -3394,7 +3404,7 @@
       "unit_id": "OLP-0135",
       "source_path": "content/first-order-logic/completeness/compactness.tex",
       "source_sha256": "427e195e6bab0024f56954406ec4d9303573e4c2c796e8bf7446c45fcf253407",
-      "translation_sha256": "2a06f8914fa0f8f0d8cbf775c909b54ce0a2fbe428f69be873dbacb6404629c0",
+      "translation_sha256": "19f761c4eb6211938ffa7dddb5fcd3e8033127561a2b3366f9d45d324dfad3bc",
       "source_blocks": 18,
       "target_blocks": 18,
       "paragraph_alignment": true,
@@ -3753,7 +3763,7 @@
       ],
       "math_declared_source_correction_match": true,
       "math_multiset_match": true,
-      "telugu_chars": 3818,
+      "telugu_chars": 4153,
       "unicode_replacement_char": false,
       "unpaired_surrogate": false,
       "blocks": [
@@ -3785,12 +3795,12 @@
         {
           "index": 6,
           "source_start": "One important consequence of the completeness theorem is the\ncompactness theorem.  The compactness theorem sta",
-          "target_start": "సంపూర్ణతా సిద్ధాంతపు ఒక ముఖ్యమైన పరిణామం సంహతత్వ సిద్ధాంతం.\n!!{sentence}s సమితిలోని ప్రతి\n\\emph{పరిమిత} ఉపసమిత"
+          "target_start": "సంపూర్ణతా సిద్ధాంతపు ఒక ముఖ్యమైన పరిణామం సంహతత్వ సిద్ధాంతం.\n\\tetoken{వాక్యాలు}{!!{sentence}s} సమితిలోని ప్రతి\n"
         },
         {
           "index": 7,
           "source_start": "\\begin{defn}\n  A set $\\Gamma$ of !!{formula}s is \\emph{finitely satisfiable} iff every finite $\\Gamma_0 \\subse",
-          "target_start": "\\begin{defn}\n  !!{formula}s సమితి~$\\Gamma$లోని ప్రతి పరిమిత $\\Gamma_0 \\subseteq\n  \\Gamma$ సంతృప్తిపరచదగినదైతే,"
+          "target_start": "\\begin{defn}\n  \\tetoken{సూత్రాలు}{!!{formula}s} సమితి~$\\Gamma$లోని ప్రతి పరిమిత $\\Gamma_0 \\subseteq\n  \\Gamma$ "
         },
         {
           "index": 8,
@@ -3825,7 +3835,7 @@
         {
           "index": 14,
           "source_start": "\\begin{ex}\nConsider !!a{language} $\\Lang{L}$ containing the !!{predicate}~$<$,\n!!{constant}s $\\Obj{0}$, $\\Obj{",
-          "target_start": "\\begin{ex}\n!!{predicate}~$<$, !!{constant}s~$\\Obj{0}$, $\\Obj{1}$, ఇంకా\n!!{function}s~$+$, $\\times$, $-$లను కలి"
+          "target_start": "\\begin{ex}\n\\tetoken{విధేయ సంకేతం}{!!{predicate}}~$<$, \\tetoken{స్థిరసంకేతాలు}{!!{constant}s}~$\\Obj{0}$, $\\Obj{"
         },
         {
           "index": 15,
@@ -3835,12 +3845,12 @@
         {
           "index": 16,
           "source_start": "\\iftag{FOL}{\n\\begin{ex}\nWe know that first-order logic with !!{identity} can express that the\nsize of the !!{d",
-          "target_start": "\\iftag{FOL}{\n\\begin{ex}\n!!{identity} గల ప్రథమక్రమ తర్కం, !!{domain} పరిమాణానికి ఏదో ఒక కనిష్ఠ\nపరిమాణం తప్పనిసర"
+          "target_start": "\\iftag{FOL}{\n\\begin{ex}\n\\tetoken{తాదాత్మ్య విధేయం}{!!{identity}} గల మొదటిస్థాయి విధేయ తర్కం, \\tetoken{వ్యక్తి "
         },
         {
           "index": 17,
           "source_start": "So first-order logic can express infinitude. The compactness theorem\nshows that it cannot express finitude, ho",
-          "target_start": "కాబట్టి ప్రథమక్రమ తర్కం అనంతత్వాన్ని వ్యక్తం చేయగలదు. అయితే అది\nపరిమితత్వాన్ని వ్యక్తం చేయలేదని సంహతత్వ సిద్ధా"
+          "target_start": "కాబట్టి మొదటిస్థాయి విధేయ తర్కం అనంతత్వాన్ని వ్యక్తం చేయగలదు. అయితే అది\nపరిమితత్వాన్ని వ్యక్తం చేయలేదని సంహతత్"
         },
         {
           "index": 18,
@@ -3873,7 +3883,7 @@
       "unit_id": "OLP-0136",
       "source_path": "content/first-order-logic/completeness/compactness-direct.tex",
       "source_sha256": "7334d3683b1ca6356dea7526b1a53448c6d768353e720c31d766a07c67017122",
-      "translation_sha256": "2a8b74435b650496147e5e452415b5e0d13b289125a59728c1d9eff42490cea4",
+      "translation_sha256": "030fe0490de86de8efc92d62460182502b2aea5210f25ce3b85bef5e967b8cad",
       "source_blocks": 25,
       "target_blocks": 25,
       "paragraph_alignment": true,
@@ -4076,7 +4086,7 @@
       "declared_source_correction_ids": [],
       "math_declared_source_correction_match": true,
       "math_multiset_match": true,
-      "telugu_chars": 2120,
+      "telugu_chars": 2262,
       "unicode_replacement_char": false,
       "unpaired_surrogate": false,
       "blocks": [
@@ -4118,7 +4128,7 @@
         {
           "index": 8,
           "source_start": "\\begin{prop}\n\\ollabel{prop:fsat-ccs}\nSuppose $\\Gamma$ is !!{complete} and finitely satisfiable. Then:\n\\begin{e",
-          "target_start": "\\begin{prop}\n\\ollabel{prop:fsat-ccs}\n$\\Gamma$ !!{complete}, పరిమితంగా సంతృప్తిపరచదగినది అనుకుందాం. అప్పుడు:\n\\b"
+          "target_start": "\\begin{prop}\n\\ollabel{prop:fsat-ccs}\n$\\Gamma$ \\tetoken{సంపూర్ణ}{!!{complete}}, పరిమితంగా సంతృప్తిపరచదగినది అను"
         },
         {
           "index": 9,
@@ -4163,7 +4173,7 @@
         {
           "index": 17,
           "source_start": "\\begin{lem}\n\\ollabel{lem:fsat-lindenbaum} Every finitely satisfiable set~$\\Gamma$\ncan be extended to !!a{compl",
-          "target_start": "\\begin{lem}\n\\ollabel{lem:fsat-lindenbaum} ప్రతి పరిమితంగా సంతృప్తిపరచదగిన\nసమితి~$\\Gamma$ను !!a{complete}, పరిమ"
+          "target_start": "\\begin{lem}\n\\ollabel{lem:fsat-lindenbaum} ప్రతి పరిమితంగా సంతృప్తిపరచదగిన\nసమితి~$\\Gamma$ను \\tetoken{ఒక సంపూర్ణ"
         },
         {
           "index": 18,
@@ -4271,7 +4281,7 @@
       "unit_id": "OLP-0137",
       "source_path": "content/first-order-logic/completeness/downward-ls.tex",
       "source_sha256": "31e60aefb151429d7af1e982f1d44a05c4a4b37b8ea03d8163016fdf6d6058d3",
-      "translation_sha256": "0be7d2d89caf0f98785f45176d7c71898743fe55ed82d3fc6017330326722eaa",
+      "translation_sha256": "2b1a24d53d30998f7e3325ebff6614a0d2eea29c4b7f33259c350617b66680ec",
       "source_blocks": 11,
       "target_blocks": 11,
       "paragraph_alignment": true,
@@ -4360,7 +4370,7 @@
       "declared_source_correction_ids": [],
       "math_declared_source_correction_match": true,
       "math_multiset_match": true,
-      "telugu_chars": 1172,
+      "telugu_chars": 1482,
       "unicode_replacement_char": false,
       "unpaired_surrogate": false,
       "blocks": [
@@ -4387,22 +4397,22 @@
         {
           "index": 5,
           "source_start": "The L\\\"owenheim--Skolem Theorem says that if a theory has an infinite\nmodel, then it also has a model that is ",
-          "target_start": "ఒక సిద్ధాంతానికి అనంత నమూనా ఉంటే, దానికి గరిష్ఠంగా !!{denumerable}\nఅయిన నమూనా కూడా ఉంటుందని లొవెన్‌హైమ్--స్కోల"
+          "target_start": "ఒక సిద్ధాంతానికి అనంత నమూనా ఉంటే, దానికి గరిష్ఠంగా \\tetoken{అనంతంగా లెక్కించదగిన}{!!{denumerable}}\nఅయిన నమూనా "
         },
         {
           "index": 6,
           "source_start": "\\begin{thm} \n\\ollabel{thm:downward-ls} If $\\Gamma$ is consistent then it has\n!!a{enumerable} model, i.e., it i",
-          "target_start": "\\begin{thm}\n\\ollabel{thm:downward-ls} $\\Gamma$ అవైరుధ్యమైతే దానికి ఒక\n!!a{enumerable} నమూనా ఉంటుంది; అంటే, పరి"
+          "target_start": "\\begin{thm}\n\\ollabel{thm:downward-ls} $\\Gamma$ అవైరుధ్యమైతే దానికి ఒక\n\\tetoken{లెక్కించదగిన}{!!a{enumerable}} "
         },
         {
           "index": 7,
           "source_start": "\\begin{proof}\nIf $\\Gamma$ is consistent, the !!{structure}~$\\Struct M$ delivered by\nthe proof of the completen",
-          "target_start": "\\begin{proof}\n$\\Gamma$ అవైరుధ్యమైతే, సంపూర్ణతా సిద్ధాంతపు నిరూపణ ఇచ్చే\n!!{structure}~$\\Struct M$ యొక్క ప్రదేశం"
+          "target_start": "\\begin{proof}\n$\\Gamma$ అవైరుధ్యమైతే, సంపూర్ణతా సిద్ధాంతపు నిరూపణ ఇచ్చే\n\\tetoken{నిర్మాణం}{!!{structure}}~$\\Str"
         },
         {
           "index": 8,
           "source_start": "\\begin{thm}\n\\ollabel{noidentity-ls} If $\\Gamma$ is a consistent set of !!{sentence}s\nin the language of first-",
-          "target_start": "\\begin{thm}\n\\ollabel{noidentity-ls} తాదాత్మ్యం లేని ప్రథమక్రమ తర్క భాషలోని\n!!{sentence}s అవైరుధ్య సమితి~$\\Gamm"
+          "target_start": "\\begin{thm}\n\\ollabel{noidentity-ls} తాదాత్మ్యం లేని మొదటిస్థాయి విధేయ తర్క భాషలోని\n\\tetoken{వాక్యాలు}{!!{sente"
         },
         {
           "index": 9,

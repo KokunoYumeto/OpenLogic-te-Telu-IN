@@ -15,6 +15,7 @@
     "audit:html:sfr": "node scripts/audit-html.mjs --scope=sfr",
     "audit:html:sfr:pages": "node scripts/audit-html.mjs --scope=sfr --pages",
     "epub:sfr": "python scripts/build-sets-epub.py",
+    "package:cumulative": "python scripts/package-cumulative-279.py",
     "evidence:reviews": "node scripts/build-review-log.mjs && node scripts/build-translation-decisions.mjs && python scripts/validate-translation-decisions.py",
     "check:sets": "node scripts/audit-batch.mjs 4 10 001"
   },

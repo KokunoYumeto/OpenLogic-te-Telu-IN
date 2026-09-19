@@ -1,7 +1,7 @@
 {
   "schema": "telugu-openlogic-batch-qa/1",
-  "generated_utc": "2026-09-07T16:03:24.844Z",
-  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Intertext prose is masked while its inline math remains checked.",
+  "generated_utc": "2026-09-19T23:09:11.746Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Text/intertext/mbox prose is masked; nested inline math is compared per clause independently of language-specific word order.",
   "units": [
     {
       "unit_id": "OLP-0149",
@@ -2947,7 +2947,7 @@
       "unit_id": "OLP-0157",
       "source_path": "content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex",
       "source_sha256": "b04a358a03907e8e42caa4b1cee49c217db77e1ca2c742da21c6eb6d7051edde",
-      "translation_sha256": "63a14129006a17e742bebceaadb8af5bdb3cf483f970e599f1cf70d10e9d4577",
+      "translation_sha256": "2d7233aa130de91cc6a94d85e3dfd56cd933c2a1ea4cf3f4f54aec70eaa6d78d",
       "source_blocks": 19,
       "target_blocks": 19,
       "paragraph_alignment": true,

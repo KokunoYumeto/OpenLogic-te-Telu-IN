@@ -56,7 +56,7 @@
     {
       "path": "evidence/TRANSLATION_DECISIONS_FULL.md",
       "bytes": 951350,
-      "sha256": "e4adfed3fa210f1d56836b0c4df8d2df774ba1818e676d797eb1e9806b612647"
+      "sha256": "5ecebab4a54a1bdc9fe86276534e9d4e855e4c41dff406ec91c7a5ff2d11a2b0"
     },
     {
       "path": "evidence/PRIORITY_REVIEW.md",
@@ -66,12 +66,12 @@
     {
       "path": "evidence/DECISION_OCCURRENCES.csv",
       "bytes": 905537,
-      "sha256": "b92679d14f3878a5a9ffdafc2caa8a73df7d18213ca8f3e0911608da99290bbd"
+      "sha256": "1f3d98a3387294e98b3054cff83bd61ca39312abb54c12b704e3bbab941237cf"
     },
     {
       "path": "evidence/DECISIONS.json",
       "bytes": 4744139,
-      "sha256": "26d00be03313eda5a7e9f167c9c9c4138c3a3aef25665007dcbc666e7405d866"
+      "sha256": "61a1695b55aeeb6fd63badb9acd80c593bc8049b679ea1a9a278a98edcf2eddd"
     },
     {
       "path": "evidence/translation-decision.schema.json",

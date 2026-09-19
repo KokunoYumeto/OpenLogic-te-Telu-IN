@@ -1,0 +1,151 @@
+{
+  "schema": "openlogic-te-cumulative-pdf-qa/1",
+  "generated_utc": "2026-09-19T23:25:27.7767121Z",
+  "status": "COMPLETE_PASS",
+  "scope": {
+    "source_units": "OLP-0004 through OLP-0279",
+    "unique_editable_units": 276,
+    "total_manifest_units": 722,
+    "native_import_topology": true,
+    "shared_proof_modules_may_print_in_multiple_contexts": true,
+    "complete_edition": false
+  },
+  "artifact": {
+    "path": "output/pdf/openlogic-te-Telu-IN-cumulative-OLP0279.pdf",
+    "bytes": 3297226,
+    "sha256": "9ef53813446e024aa86f308da6348f6f79832d22935b0aee104343f25611ff83",
+    "pages": 515,
+    "page_size": "A4",
+    "tagged_pdf": false
+  },
+  "build": {
+    "mutex": "Global\\InterlanguageTeXSlotV1",
+    "mutex_acquired": true,
+    "mutex_timeout_ms": 30000,
+    "abandoned_mutex_recovery": false,
+    "full_process_held_under_one_mutex": true,
+    "prepare_exit_code": 0,
+    "xelatex_passes": 4,
+    "bibtex_passes": 1,
+    "all_process_exit_codes_zero": true,
+    "reproducible_last_two_pdf_passes": true,
+    "missing_character_diagnostics": 0,
+    "undefined_references": false,
+    "undefined_citations": false,
+    "overfull_diagnostics": 33,
+    "largest_overfull_points": 58.89561,
+    "build_receipt": {
+      "path": "tmp/pdfs/cumulative-279/build-receipt.json",
+      "bytes": 3367,
+      "sha256": "d55463c191c7f51126e98c7e546b55385d9571d64dc387fcbf6022b40569d7a0"
+    }
+  },
+  "text_extraction": {
+    "utf8_bytes": 2149902,
+    "utf16_code_units": 935217,
+    "telugu_code_points": 584503,
+    "unicode_replacement_characters": 0,
+    "unresolved_double_question_mark_sequences": 0,
+    "double_exclamation_sequences": 0,
+    "raw_tetoken_markers": 0,
+    "raw_sourcecorrection_markers": 0,
+    "release_reference_occurrences": 1
+  },
+  "fonts": {
+    "all_fonts_embedded_and_subset": true,
+    "noto_serif_telugu_regular_embedded_with_unicode_map": true,
+    "noto_serif_telugu_bold_embedded_with_unicode_map": true
+  },
+  "visual_review": {
+    "raster_dpi": 96,
+    "rasterized_pages": 515,
+    "contact_sheets_inspected": 11,
+    "targeted_full_pages_inspected": true,
+    "minimum_nonwhite_margin_pixels": {
+      "left": 120,
+      "right": 106,
+      "top": 166,
+      "bottom": 126
+    },
+    "overfull_content_visually_contained": true,
+    "final_rebuild_comparison": {
+      "comparison_basis": "SHA-256 equality of 96-dpi PNG page rasters",
+      "pages_compared": 515,
+      "pixel_identical_pages": 514,
+      "changed_pages": [
+        1
+      ],
+      "reason_for_change": "Title-page release reference changed from a provisional commit label to v0.4.0-cumulative-olp0279.",
+      "changed_pages_inspected_at_144_dpi": true,
+      "result": "PASS"
+    },
+    "result": "PASS"
+  },
+  "inputs": {
+    "master": {
+      "path": "editions/cumulative-279.tex",
+      "bytes": 10601,
+      "sha256": "81ff6c90def51949eafed054bd1fc6988497f14d349d41eb5dc200a7a2b32e16"
+    },
+    "prepare_script": {
+      "path": "scripts/prepare-cumulative-279.mjs",
+      "bytes": 3278,
+      "sha256": "56211ba45352df01123d21b2f5317bb71077984e7629a0862491f617d70c133b"
+    },
+    "guarded_builder": {
+      "path": "scripts/build-cumulative-279.ps1",
+      "bytes": 6463,
+      "sha256": "19dad6df126146df4a784b19bac40e73f040b42fc31e1a60ecffae536ab2d139"
+    },
+    "render_manifest": {
+      "path": "tmp/pdfs/cumulative-279/render-tree/render-manifest.json",
+      "bytes": 206649,
+      "sha256": "fab1c932cd1e6388ec7e2e4aec798dfc2179f3606bb73f39befe2575b1856320"
+    },
+    "cumulative_structural_qa": {
+      "path": "evidence/CUMULATIVE-OLP0279-STRUCTURAL-QA.json",
+      "bytes": 3130031,
+      "sha256": "e3c5cdc0c08675d90d4e55ff2da8ab791d79d744f4c07c026c99937d7308623f"
+    },
+    "translation_decision_qa": {
+      "path": "evidence/TRANSLATION_DECISION_QA.json",
+      "bytes": 2531,
+      "sha256": "4b5013b4d1d04a6ee68ff7975791c203792267541ea4aa4f918019d40a5475fa"
+    },
+    "segment_ledger": {
+      "path": "evidence/SEGMENT_CANON_USE.jsonl",
+      "records": 4381,
+      "bytes": 9754729,
+      "sha256": "444a6ab7bb07d70d4186462bd80c6a078d9aba272ee88598817d39f4bc478262"
+    }
+  },
+  "bounded_repairs": [
+    {
+      "unit_id": "OLP-0132",
+      "path": "translation/content/first-order-logic/completeness/construction-of-model.tex",
+      "sha256": "d73cf1f0000be7e67910d11d52b49414e61927d05b2e2929ce694292cbbb65d7",
+      "change": "Added one missing closing brace to a target-only source-correction note.",
+      "reader_visible_wording_changed": false,
+      "identifier_or_mathematics_changed": false
+    },
+    {
+      "unit_id": "OLP-0157",
+      "path": "translation/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex",
+      "sha256": "2d7233aa130de91cc6a94d85e3dfd56cd933c2a1ea4cf3f4f54aec70eaa6d78d",
+      "change": "Added one missing closing brace to the false branch of a target-only conditional.",
+      "reader_visible_wording_changed": false,
+      "identifier_or_mathematics_changed": false
+    }
+  ],
+  "known_follow_up": {
+    "unit_id": "OLP-0245",
+    "issue": "Retain the source exercise K to K_0; present K_0 to K separately as the exercise that completes the corrected proof.",
+    "disposition": "Scheduled for the next normal source batch and reader refresh; this frozen PDF was not rebuilt solely for the bounded follow-up."
+  },
+  "limitations": [
+    "QA is machine/agent performed, not human or independent linguistic review.",
+    "Terminology and correction notes remain provisional.",
+    "The PDF is not tagged.",
+    "The 276-unit PDF scope does not expand the separate 23-unit HTML/EPUB reader scope."
+  ]
+}

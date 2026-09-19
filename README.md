@@ -7,18 +7,20 @@ The complete target is 722 tracked TeX units at revision
 ## Current release
 
 The current cumulative checkpoint is
-[v0.3.0-sfr-epub](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.3.0-sfr-epub).
-It adds a deterministic reflowable EPUB and a self-contained semantic HTML
-reader for the complete Sets, Relations, and Functions chapters, OLP-0004
-through OLP-0026 (23 of 722 units). All six files inherited from v0.2.0 remain
-unchanged. This is **not the complete OpenLogic Telugu edition**.
+[v0.4.0-cumulative-olp0279](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.4.0-cumulative-olp0279).
+It adds a 515-page cumulative PDF and exact editable-source package for
+OLP-0004 through OLP-0279 (276 of 722 units). This is a GitHub-only release;
+the existing HTML and EPUB reader remains bounded to OLP-0004 through OLP-0026
+(23 units). This is **not the complete OpenLogic Telugu edition**.
 
 Latest version DOI:
 [10.5281/zenodo.22726674](https://doi.org/10.5281/zenodo.22726674).
 Continuing concept DOI:
 [10.5281/zenodo.22307937](https://doi.org/10.5281/zenodo.22307937).
-GitHub, GitHub Pages, and Zenodo public bytes have been anonymously verified;
-see [PUBLICATION.md](PUBLICATION.md).
+The DOI links still identify the preceding Zenodo release; no new Zenodo
+version was created for v0.4.0. Prior GitHub, GitHub Pages, and Zenodo
+publication verification is documented in [PUBLICATION.md](PUBLICATION.md);
+the v0.4.0 assets include their own manifest, checksums, and PDF QA receipt.
 
 Two hundred seventy-six full-unit editable TeX drafts form the contiguous
 OLP-0004--OLP-0279 range; the workflow cursor is 279/722. They cover the
@@ -27,11 +29,11 @@ Model Theory, Computability and Turing Machines, plus the complete introductory
 chapter of Incompleteness. All thirty-one batches have source-aligned
 structural and same-agent semantic review records.
 
-Format coverage is deliberately separate. The cumulative semantic HTML and
-EPUB readers contain OLP-0004--OLP-0026 only: 23 units, the complete Sets,
-Relations and Functions chapters. The PDF contains OLP-0004--OLP-0010 only:
-the 7-unit Sets chapter. Thus 253 current editable drafts are not yet in the
-HTML/EPUB reader, and 269 are not yet in the PDF. The public browser version is
+Format coverage is deliberately separate. The cumulative PDF contains all 276
+editable units in OLP-0004--OLP-0279. The semantic HTML and EPUB readers contain
+OLP-0004--OLP-0026 only: 23 units, the complete Sets, Relations and Functions
+chapters. Thus 253 current editable drafts are not yet in the HTML/EPUB reader.
+The public browser version is
 [OpenLogic తెలుగు — సమితులు, సంబంధాలు, ప్రమేయాలు](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sfr/).
 No editable-source cursor is presented as reader coverage, and this bounded
 release does not substitute for the unfinished full edition.
@@ -90,12 +92,12 @@ rights-restricted canon originals.
 
 ## QA and limitations
 
-The seven-unit PDF passes exact paragraph alignment, protected identifier,
-token, environment and mathematical-form checks; same-agent semantic and
-reverse-paraphrase review; four-pass guarded XeLaTeX builds with identical
-last-two-pass hashes; all-page visual inspection; mixed-script and Telugu
-conjunct extraction samples. The final log has zero missing glyphs,
-overfull boxes, undefined references or warnings.
+The 276-unit cumulative PDF passes correction-aware structural checks, a
+four-pass guarded XeLaTeX/BibTeX build with identical last-two-pass hashes,
+full-document text extraction, and all-page raster inspection. The final log
+has zero missing glyphs, undefined references or undefined citations. Its 33
+bounded overfull diagnostics (largest 58.89561 pt) were checked against the
+rendered pages and remain inside the page area.
 
 The 23-unit foundations HTML and EPUB readers pass exact source-to-reader text,
 formula-annotation, identifier, link, statement-class, citation and diagram
@@ -108,9 +110,10 @@ then read back anonymously and matched the repository byte-for-byte.
 All 276 editable TeX drafts in OLP-0004--OLP-0279 pass correction-aware
 blank-block, environment, source-token, protected-identifier and
 mathematical-form checks. Thirty-one same-agent semantic reviews record
-source-aligned reverse paraphrases and their limits. Beyond the explicit
-23-unit HTML/EPUB boundary and 7-unit PDF boundary stated above, source QA does
-not imply PDF, HTML or EPUB reader integration.
+source-aligned reverse paraphrases and their limits. The cumulative structural
+receipt is [CUMULATIVE-OLP0279-STRUCTURAL-QA.json](evidence/CUMULATIVE-OLP0279-STRUCTURAL-QA.json).
+Beyond the explicit 23-unit HTML/EPUB boundary stated above, source QA does not
+imply HTML or EPUB reader integration.
 
 QA is machine/agent performed, not human or independent review. Several
 technical terms remain provisional. The PDF is not tagged. Source caveats
@@ -122,25 +125,28 @@ ledgers with Node.js 22+, Python 3, and `jsonschema` 4.x:
 
     npm run evidence:reviews
 
-## Rebuild the Sets PDF
+## Rebuild the cumulative PDF
 
 Requires Windows, PowerShell 7.4+, Node.js 22+, and a current MiKTeX XeLaTeX
 installation with fontspec, ucharclasses, amsmath, amssymb, amsthm, xparse,
 graphicx, xcolor, TikZ, float, geometry and hyperref; Latin Modern must be
 installed. Noto Serif Telugu regular/bold and their OFL are bundled.
 
-From the source-package or repository root, run:
+From the full-source package or repository root, run:
 
-    node scripts/prepare-sets.mjs
-    node scripts/audit-batch.mjs 4 10 001
-    pwsh -File scripts/build-sets.ps1
+    pwsh -File scripts/build-cumulative-279.ps1
 
 The builder acquires the machine-wide Global\InterlanguageTeXSlotV1 mutex
 once with a 30-second limit, holds it for all four passes and immediate
 checks, disables shell escape and automatic package installation, and
 releases it in finally. A busy slot launches no TeX. The verified output is
-build/sets.pdf; a build receipt is written under build. Toolchain variation
-may change PDF bytes; replay equality is checked within each build.
+`output/pdf/openlogic-te-Telu-IN-cumulative-OLP0279.pdf`; a build receipt and
+prepared render manifest are written under `tmp/pdfs/cumulative-279`.
+Toolchain variation may change PDF bytes; replay equality is checked within
+each build.
+
+The earlier seven-unit Sets builder remains available as
+`scripts/build-sets.ps1` for reproducing the v0.2.0 PDF.
 
 The released source ZIP is a frozen snapshot. The packaging script refuses
 to overwrite an existing versioned artifact when current source bytes differ;
