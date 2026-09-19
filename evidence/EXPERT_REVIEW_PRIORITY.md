@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 224 of 722 draft units**. This view selects 219 of 245 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 236 of 722 draft units**. This view selects 226 of 252 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -393,6 +393,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0217; computability/recursive-functions/pr-relations; translation/content/computability/recursive-functions/pr-relations.tex:9-10; printed/PDF page pending; OLP-0218; computability/recursive-functions/bounded-minimization; translation/content/computability/recursive-functions/bounded-minimization.tex:9-10; printed/PDF page pending; OLP-0219; computability/recursive-functions/primes; translation/content/computability/recursive-functions/primes.tex:9-10; printed/PDF page pending; OLP-0220; computability/recursive-functions/sequences; translation/content/computability/recursive-functions/sequences.tex:26-35; printed/PDF page pending; OLP-0222; computability/recursive-functions/other-recursions; translation/content/computability/recursive-functions/other-recursions.tex:12-46; printed/PDF page pending; OLP-0224; computability/recursive-functions/partial-functions; translation/content/computability/recursive-functions/partial-functions.tex:9-10; printed/PDF page pending; OLP-0225; computability/recursive-functions/normal-form; translation/content/computability/recursive-functions/normal-form.tex:12-21; printed/PDF page pending; OLP-0226; computability/recursive-functions/halting-problem; translation/content/computability/recursive-functions/halting-problem.tex:9-10; printed/PDF page pending; OLP-0227; computability/recursive-functions/general-recursive-functions; translation/content/computability/recursive-functions/general-recursive-functions.tex:9-10; printed/PDF page pending
 
 - Please double-check: Please double-check whether “ఆదిమ పునరావృత్త సంబంధం / పరిమిత పరిమాణీకరణ / పరిమిత కనిష్ఠీకరణ / షరతు ప్రమేయం / ప్రధాన సంఖ్య / క్రమ సంకేతీకరణ / వృక్ష సంకేతీకరణ / సమకాల పునరావృత్తి / పూర్వవిలువల పునరావృత్తి / పాక్షిక పునరావృత్త ప్రమేయం / అపరిమిత అన్వేషణ / క్లీనీ నియత రూపం / సూచిక / నిలుపు సమస్య (హాల్టింగ్ సమస్య) / సక్రమ ప్రమేయం / సామాన్య పునరావృత్త ప్రమేయం” is idiomatic and technically standard for “primitive recursive relation / bounded quantification / bounded minimization / conditional function / prime number / sequence coding / tree coding / simultaneous recursion / course-of-values recursion / partial recursive function / unbounded search / Kleene normal form / index / halting problem / regular function / general recursive function” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T066 — computability theory / recursion theory / partial computable function / universal partial computable function / effective enumeration / uniform enumeration / s-m-n theorem / computably enumerable / recursively enumerable / decidable / semi-decidable / undecidable
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: గణనీయతా సిద్ధాంతం / పునరావృత్త సిద్ధాంతం / పాక్షిక గణనీయ ప్రమేయం / సార్వత్రిక పాక్షిక గణనీయ ప్రమేయం / కార్యసాధ్య లెక్కింపు / ఏకరీతి లెక్కింపు / s-m-n సిద్ధాంతం / గణనీయంగా లెక్కించదగిన / పునరావృత్తంగా లెక్కించదగిన / నిర్ణయించదగిన / అర్ధ-నిర్ణయించదగిన / అనిర్ణయనీయ
+
+- Occurrences: OLP-0228; computability/computability-theory/computability-theory; translation/content/computability/computability-theory/computability-theory.tex:8; printed/PDF page pending; OLP-0229; computability/computability-theory/introduction; translation/content/computability/computability-theory/introduction.tex:17-25; printed/PDF page pending; OLP-0232; computability/computability-theory/s-m-n; translation/content/computability/computability-theory/s-m-n.tex:9-10; printed/PDF page pending; OLP-0233; computability/computability-theory/universal-part-function; translation/content/computability/computability-theory/universal-part-function.tex:9-10; printed/PDF page pending; OLP-0238; computability/computability-theory/ce-sets; translation/content/computability/computability-theory/ce-sets.tex:9-10; printed/PDF page pending; OLP-0239; computability/computability-theory/equiv-ce-defs; translation/content/computability/computability-theory/equiv-ce-defs.tex:30-43; printed/PDF page pending
+
+- Please double-check: Please double-check whether “గణనీయతా సిద్ధాంతం / పునరావృత్త సిద్ధాంతం / పాక్షిక గణనీయ ప్రమేయం / సార్వత్రిక పాక్షిక గణనీయ ప్రమేయం / కార్యసాధ్య లెక్కింపు / ఏకరీతి లెక్కింపు / s-m-n సిద్ధాంతం / గణనీయంగా లెక్కించదగిన / పునరావృత్తంగా లెక్కించదగిన / నిర్ణయించదగిన / అర్ధ-నిర్ణయించదగిన / అనిర్ణయనీయ” is idiomatic and technically standard for “computability theory / recursion theory / partial computable function / universal partial computable function / effective enumeration / uniform enumeration / s-m-n theorem / computably enumerable / recursively enumerable / decidable / semi-decidable / undecidable” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -2193,3 +2203,63 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0226; computability/recursive-functions/halting-problem; translation/content/computability/recursive-functions/halting-problem.tex:25-44; printed/PDF page pending; OLP-0226; computability/recursive-functions/halting-problem; translation/content/computability/recursive-functions/halting-problem.tex:51-83; printed/PDF page pending
 
 - Please double-check: Please double-check that the universal indexed family removes the impossible non-index branch and that both halting values directly contradict the diagonal index equation.
+
+## REV-OLTECOMTHY-001 — OLTECOMTHY-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used e consistently as the program and machine-description index; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0232; computability/computability-theory/s-m-n; translation/content/computability/computability-theory/s-m-n.tex:31-41; printed/PDF page pending
+
+- Please double-check: Please double-check that e remains the program or machine-description index throughout the s-m-n explanation.
+
+## REV-OLTECOMTHY-002 — OLTECOMTHY-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: stated that the partial function is universal for all partial computable functions; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0234; computability/computability-theory/no-universal-function; translation/content/computability/computability-theory/no-universal-function.tex:12-15; printed/PDF page pending
+
+- Please double-check: Please double-check that the opening contrast says the partial function is universal, not total, for all partial computable functions.
+
+## REV-OLTECOMTHY-003 — OLTECOMTHY-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: attributed the zero-value definedness condition to g rather than the assumed-total h; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0235; computability/computability-theory/halting-problem; translation/content/computability/computability-theory/halting-problem.tex:67-80; printed/PDF page pending
+
+- Please double-check: Please double-check that the second halting proof attributes definedness to g and treats the assumed computable h as total.
+
+## REV-OLTECOMTHY-004 — OLTECOMTHY-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used S in the second self-membership clause; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0236; computability/computability-theory/russells-paradox; translation/content/computability/computability-theory/russells-paradox.tex:12-16; printed/PDF page pending; OLP-0236; computability/computability-theory/russells-paradox; translation/content/computability/computability-theory/russells-paradox.tex:18-20; printed/PDF page pending
+
+- Please double-check: Please double-check that Russell self-membership uses S on both sides of the biconditional and introduces no stray X.
+
+## REV-OLTECOMTHY-005 — OLTECOMTHY-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: translated the correctly spelled full title; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0239; computability/computability-theory/equiv-ce-defs; translation/content/computability/computability-theory/equiv-ce-defs.tex:11-12; printed/PDF page pending; OLP-0239; computability/computability-theory/equiv-ce-defs; translation/content/computability/computability-theory/equiv-ce-defs.tex:15-17; printed/PDF page pending
+
+- Please double-check: Please double-check that the corrected full section title simply removes the source spelling error without changing its scope.
+
+## REV-OLTECOMTHY-006 — OLTECOMTHY-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used (z)_0 as the argument whose computation code is (z)_1; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0239; computability/computability-theory/equiv-ce-defs; translation/content/computability/computability-theory/equiv-ce-defs.tex:76-82; printed/PDF page pending
+
+- Please double-check: Please double-check that the reverse range proof evaluates cfind_e at (z)_0, the input encoded by the displayed computation pair.

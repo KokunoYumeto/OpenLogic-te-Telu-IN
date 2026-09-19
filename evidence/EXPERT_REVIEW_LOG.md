@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 224 of 722 draft units**. This log contains 65 terminology/sense decisions and 180 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 236 of 722 draft units**. This log contains 66 terminology/sense decisions and 186 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1567,6 +1567,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low semantic uncertainty because the central notions are defined by explicit formulas, constructions or diagonal arguments; low nomenclatural uncertainty for prime-number and quantifier language; medium to high nomenclatural uncertainty for the specialized recursion, coding, normal-form, halting and regularity compounds
 
 - Please double-check: Please double-check whether “ఆదిమ పునరావృత్త సంబంధం / పరిమిత పరిమాణీకరణ / పరిమిత కనిష్ఠీకరణ / షరతు ప్రమేయం / ప్రధాన సంఖ్య / క్రమ సంకేతీకరణ / వృక్ష సంకేతీకరణ / సమకాల పునరావృత్తి / పూర్వవిలువల పునరావృత్తి / పాక్షిక పునరావృత్త ప్రమేయం / అపరిమిత అన్వేషణ / క్లీనీ నియత రూపం / సూచిక / నిలుపు సమస్య (హాల్టింగ్ సమస్య) / సక్రమ ప్రమేయం / సామాన్య పునరావృత్త ప్రమేయం” is idiomatic and technically standard for “primitive recursive relation / bounded quantification / bounded minimization / conditional function / prime number / sequence coding / tree coding / simultaneous recursion / course-of-values recursion / partial recursive function / unbounded search / Kleene normal form / index / halting problem / regular function / general recursive function” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T066 — computability theory / recursion theory / partial computable function / universal partial computable function / effective enumeration / uniform enumeration / s-m-n theorem / computably enumerable / recursively enumerable / decidable / semi-decidable / undecidable
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: గణనీయతా సిద్ధాంతం / పునరావృత్త సిద్ధాంతం / పాక్షిక గణనీయ ప్రమేయం / సార్వత్రిక పాక్షిక గణనీయ ప్రమేయం / కార్యసాధ్య లెక్కింపు / ఏకరీతి లెక్కింపు / s-m-n సిద్ధాంతం / గణనీయంగా లెక్కించదగిన / పునరావృత్తంగా లెక్కించదగిన / నిర్ణయించదగిన / అర్ధ-నిర్ణయించదగిన / అనిర్ణయనీయ
+
+- Exact implementation: OLP-0228; computability/computability-theory/computability-theory; content/computability/computability-theory/computability-theory.tex:8 ↔ translation/content/computability/computability-theory/computability-theory.tex:8 (OLP-0228-B004); printed/PDF page pending; OLP-0229; computability/computability-theory/introduction; content/computability/computability-theory/introduction.tex:18-27 ↔ translation/content/computability/computability-theory/introduction.tex:17-25 (OLP-0229-B006); printed/PDF page pending; OLP-0232; computability/computability-theory/s-m-n; content/computability/computability-theory/s-m-n.tex:9-10 ↔ translation/content/computability/computability-theory/s-m-n.tex:9-10 (OLP-0232-B004); printed/PDF page pending; OLP-0233; computability/computability-theory/universal-part-function; content/computability/computability-theory/universal-part-function.tex:9-10 ↔ translation/content/computability/computability-theory/universal-part-function.tex:9-10 (OLP-0233-B004); printed/PDF page pending; OLP-0238; computability/computability-theory/ce-sets; content/computability/computability-theory/ce-sets.tex:9-10 ↔ translation/content/computability/computability-theory/ce-sets.tex:9-10 (OLP-0238-B004); printed/PDF page pending; OLP-0239; computability/computability-theory/equiv-ce-defs; content/computability/computability-theory/equiv-ce-defs.tex:30-43 ↔ translation/content/computability/computability-theory/equiv-ce-defs.tex:30-43 (OLP-0239-B008); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P028, PDF 92, printed 85, Unary predicates, binary relations and quantifier classification; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P005 supports natural-number exposition; TE-P008 and TE-P010--TE-P011 directly support sets, membership, relations, functions, domain and range; TE-P028 supports relation and quantifier taxonomy; TE-P003 and TE-P032 support theorem, proof and deduction prose; TE-P018 supports formal symbolic-logic register. The witnesses do not directly attest computability theory, partial or universal computation, effective enumeration, the s-m-n theorem, computable enumerability or semi-decidability. The frozen definitions, normal-form equations, universal-family construction, diagonal proofs and range/domain characterizations in OLP-0228--OLP-0239 control those exact senses; TE-T020, TE-T024, TE-T026, TE-T028, TE-T060, TE-T064 and TE-T065 supply the edition's earlier reversible choices. s-m-n, c.e. and r.e. are retained only as source notation or explicitly identified source abbreviations; క్లీనీ, చర్చ్, ట్యూరింగ్ and రసెల్ are source names or eponyms; no unexplained English technical headword remains in reader-facing prose
+
+- Alternatives: reuse the established గణనీయత and లెక్కించదగిన registers while making the computability modifier explicit (chosen); use లెక్కించదగిన alone for computably enumerable and thereby collapse effective enumerability into ordinary countability (rejected); leave computably enumerable and semi-decidable in untranslated English prose (rejected); claim direct native attestation for s-m-n, universal computation or semi-decidability (rejected because the frozen definitions and proofs control those senses)
+
+- Uncertainty: Low semantic uncertainty because the specialized notions are defined by explicit equations, range/domain conditions or diagonal proofs; medium to high nomenclatural uncertainty for effective enumeration, computably enumerable and semi-decidable compounds
+
+- Please double-check: Please double-check whether “గణనీయతా సిద్ధాంతం / పునరావృత్త సిద్ధాంతం / పాక్షిక గణనీయ ప్రమేయం / సార్వత్రిక పాక్షిక గణనీయ ప్రమేయం / కార్యసాధ్య లెక్కింపు / ఏకరీతి లెక్కింపు / s-m-n సిద్ధాంతం / గణనీయంగా లెక్కించదగిన / పునరావృత్తంగా లెక్కించదగిన / నిర్ణయించదగిన / అర్ధ-నిర్ణయించదగిన / అనిర్ణయనీయ” is idiomatic and technically standard for “computability theory / recursion theory / partial computable function / universal partial computable function / effective enumeration / uniform enumeration / s-m-n theorem / computably enumerable / recursively enumerable / decidable / semi-decidable / undecidable” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -5887,3 +5911,147 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check that the universal indexed family removes the impossible non-index branch and that both halting values directly contradict the diagonal index equation.
+
+## REV-OLTECOMTHY-001 — OLTECOMTHY-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used e consistently as the program and machine-description index; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0232; computability/computability-theory/s-m-n; lines 31-40, program interpretation of s-m-n ↔ translation/content/computability/computability-theory/s-m-n.tex:31-41 (OLP-0232-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTECOMTHY-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used e consistently as the program and machine-description index; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that e remains the program or machine-description index throughout the s-m-n explanation.
+
+## REV-OLTECOMTHY-002 — OLTECOMTHY-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: stated that the partial function is universal for all partial computable functions; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0234; computability/computability-theory/no-universal-function; lines 12-14, opening contrast ↔ translation/content/computability/computability-theory/no-universal-function.tex:12-15 (OLP-0234-B005); printed/PDF page pending
+
+- Authorities actually checked: OLTECOMTHY-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: stated that the partial function is universal for all partial computable functions; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the opening contrast says the partial function is universal, not total, for all partial computable functions.
+
+## REV-OLTECOMTHY-003 — OLTECOMTHY-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: attributed the zero-value definedness condition to g rather than the assumed-total h; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0235; computability/computability-theory/halting-problem; lines 71-77, second diagonal proof ↔ translation/content/computability/computability-theory/halting-problem.tex:67-80 (OLP-0235-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTECOMTHY-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: attributed the zero-value definedness condition to g rather than the assumed-total h; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the second halting proof attributes definedness to g and treats the assumed computable h as total.
+
+## REV-OLTECOMTHY-004 — OLTECOMTHY-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used S in the second self-membership clause; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0236; computability/computability-theory/russells-paradox; lines 12-16; mapped segment within audited scope lines 15-20, Russell set contradiction ↔ translation/content/computability/computability-theory/russells-paradox.tex:12-16 (OLP-0236-B005); printed/PDF page pending; OLP-0236; computability/computability-theory/russells-paradox; lines 18-20; mapped segment within audited scope lines 15-20, Russell set contradiction ↔ translation/content/computability/computability-theory/russells-paradox.tex:18-20 (OLP-0236-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTECOMTHY-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used S in the second self-membership clause; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that Russell self-membership uses S on both sides of the biconditional and introduces no stray X.
+
+## REV-OLTECOMTHY-005 — OLTECOMTHY-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: translated the correctly spelled full title; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0239; computability/computability-theory/equiv-ce-defs; lines 11-12; mapped segment within audited scope lines 11-12, full section title ↔ translation/content/computability/computability-theory/equiv-ce-defs.tex:11-12 (OLP-0239-B005); printed/PDF page pending; OLP-0239; computability/computability-theory/equiv-ce-defs; lines 15-16; mapped segment within audited scope lines 11-12, full section title ↔ translation/content/computability/computability-theory/equiv-ce-defs.tex:15-17 (OLP-0239-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTECOMTHY-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: translated the correctly spelled full title; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the corrected full section title simply removes the source spelling error without changing its scope.
+
+## REV-OLTECOMTHY-006 — OLTECOMTHY-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used (z)_0 as the argument whose computation code is (z)_1; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0239; computability/computability-theory/equiv-ce-defs; lines 75-81, reverse range inclusion ↔ translation/content/computability/computability-theory/equiv-ce-defs.tex:76-82 (OLP-0239-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTECOMTHY-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used (z)_0 as the argument whose computation code is (z)_1; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the reverse range proof evaluates cfind_e at (z)_0, the input encoded by the displayed computation pair.

@@ -1,6 +1,6 @@
 # Priority review
 
-This view contains 43 of 245 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
+This view contains 44 of 252 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
 
 Final reader pages remain pending; exact source and target file/line locators are shown.
 
@@ -433,3 +433,13 @@ Final reader pages remain pending; exact source and target file/line locators ar
 - Occurrences: OLP-0217 translation/content/computability/recursive-functions/pr-relations.tex:9-10; OLP-0218 translation/content/computability/recursive-functions/bounded-minimization.tex:9-10; OLP-0219 translation/content/computability/recursive-functions/primes.tex:9-10; OLP-0220 translation/content/computability/recursive-functions/sequences.tex:26-35; OLP-0222 translation/content/computability/recursive-functions/other-recursions.tex:12-46; OLP-0224 translation/content/computability/recursive-functions/partial-functions.tex:9-10; OLP-0225 translation/content/computability/recursive-functions/normal-form.tex:12-21; OLP-0226 translation/content/computability/recursive-functions/halting-problem.tex:9-10; OLP-0227 translation/content/computability/recursive-functions/general-recursive-functions.tex:9-10
 
 - Review question: Please double-check whether “ఆదిమ పునరావృత్త సంబంధం / పరిమిత పరిమాణీకరణ / పరిమిత కనిష్ఠీకరణ / షరతు ప్రమేయం / ప్రధాన సంఖ్య / క్రమ సంకేతీకరణ / వృక్ష సంకేతీకరణ / సమకాల పునరావృత్తి / పూర్వవిలువల పునరావృత్తి / పాక్షిక పునరావృత్త ప్రమేయం / అపరిమిత అన్వేషణ / క్లీనీ నియత రూపం / సూచిక / నిలుపు సమస్య (హాల్టింగ్ సమస్య) / సక్రమ ప్రమేయం / సామాన్య పునరావృత్త ప్రమేయం” is idiomatic and technically standard for “primitive recursive relation / bounded quantification / bounded minimization / conditional function / prime number / sequence coding / tree coding / simultaneous recursion / course-of-values recursion / partial recursive function / unbounded search / Kleene normal form / index / halting problem / regular function / general recursive function” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T066 — computability theory / recursion theory / partial computable function / universal partial computable function / effective enumeration / uniform enumeration / s-m-n theorem / computably enumerable / recursively enumerable / decidable / semi-decidable / undecidable
+
+- Chosen rendering: గణనీయతా సిద్ధాంతం / పునరావృత్త సిద్ధాంతం / పాక్షిక గణనీయ ప్రమేయం / సార్వత్రిక పాక్షిక గణనీయ ప్రమేయం / కార్యసాధ్య లెక్కింపు / ఏకరీతి లెక్కింపు / s-m-n సిద్ధాంతం / గణనీయంగా లెక్కించదగిన / పునరావృత్తంగా లెక్కించదగిన / నిర్ణయించదగిన / అర్ధ-నిర్ణయించదగిన / అనిర్ణయనీయ
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0228 translation/content/computability/computability-theory/computability-theory.tex:8; OLP-0229 translation/content/computability/computability-theory/introduction.tex:17-25; OLP-0232 translation/content/computability/computability-theory/s-m-n.tex:9-10; OLP-0233 translation/content/computability/computability-theory/universal-part-function.tex:9-10; OLP-0238 translation/content/computability/computability-theory/ce-sets.tex:9-10; OLP-0239 translation/content/computability/computability-theory/equiv-ce-defs.tex:30-43
+
+- Review question: Please double-check whether “గణనీయతా సిద్ధాంతం / పునరావృత్త సిద్ధాంతం / పాక్షిక గణనీయ ప్రమేయం / సార్వత్రిక పాక్షిక గణనీయ ప్రమేయం / కార్యసాధ్య లెక్కింపు / ఏకరీతి లెక్కింపు / s-m-n సిద్ధాంతం / గణనీయంగా లెక్కించదగిన / పునరావృత్తంగా లెక్కించదగిన / నిర్ణయించదగిన / అర్ధ-నిర్ణయించదగిన / అనిర్ణయనీయ” is idiomatic and technically standard for “computability theory / recursion theory / partial computable function / universal partial computable function / effective enumeration / uniform enumeration / s-m-n theorem / computably enumerable / recursively enumerable / decidable / semi-decidable / undecidable” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?

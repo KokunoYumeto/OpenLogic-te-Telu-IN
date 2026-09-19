@@ -1,0 +1,107 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTECOMTHY-20260919",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0232",
+      "OLP-0234",
+      "OLP-0235",
+      "OLP-0236",
+      "OLP-0239"
+    ],
+    "finding_count": 6
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTECOMTHY-001",
+      "unit_id": "OLP-0232",
+      "classification": "confirmed_program_index_variable_mismatch",
+      "source": {
+        "path": "content/computability/computability-theory/s-m-n.tex",
+        "bytes": 1535,
+        "sha256": "24f3238689ed3251d63da8eb5e2daaa5cd99c8f2c29afb114d3b99183e555efc",
+        "locator": "lines 31-40, program interpretation of s-m-n"
+      },
+      "finding": "The explanation introduces e as the program index but writes the returned program as s^m_n(x,...), and the following tagged sentence likewise says to regard x as the machine description before reverting to e in the formula.",
+      "controlling_evidence": "The theorem statement and the same tagged explanation consistently apply s^m_n to the index e and fixed inputs a_0 through a_{m-1}.",
+      "required_translation_handling": "Use e as the program or machine-description index throughout and add an adjacent OLTECOMTHY-001 disclosure."
+    },
+    {
+      "finding_id": "OLTECOMTHY-002",
+      "unit_id": "OLP-0234",
+      "classification": "confirmed_universal_total_word_swap",
+      "source": {
+        "path": "content/computability/computability-theory/no-universal-function.tex",
+        "bytes": 1780,
+        "sha256": "b0d4d93239c8276120c26d25bb5caa43e9a71001ccbd1246860cb35bf9a6ebcb",
+        "locator": "lines 12-14, opening contrast"
+      },
+      "finding": "The opening sentence calls the previously constructed partial computable function total for the partial computable functions, where the contrast and following theorem require universal for them.",
+      "controlling_evidence": "The preceding section proves that Un is universal and partial; the following theorem denies a total computable function universal for all total computable functions.",
+      "required_translation_handling": "State that the partial function is universal for the partial computable functions and add an adjacent OLTECOMTHY-002 disclosure."
+    },
+    {
+      "finding_id": "OLTECOMTHY-003",
+      "unit_id": "OLP-0235",
+      "classification": "confirmed_wrong_definedness_subject",
+      "source": {
+        "path": "content/computability/computability-theory/halting-problem.tex",
+        "bytes": 3549,
+        "sha256": "7bd566448fde580f1a32b27cd9382544c05535009656f0710b2ea41135799cd7",
+        "locator": "lines 71-77, second diagonal proof"
+      },
+      "finding": "The parenthesis says h can take value zero only if h is defined, although h is assumed computable and hence total; the needed implication is that g is defined only when h(x,x)=0.",
+      "controlling_evidence": "The immediately preceding cases define g(x)=0 when h(x,x)=0 and leave g(x) undefined otherwise.",
+      "required_translation_handling": "Attribute the definedness condition to g, not h, and add an adjacent OLTECOMTHY-003 disclosure."
+    },
+    {
+      "finding_id": "OLTECOMTHY-004",
+      "unit_id": "OLP-0236",
+      "classification": "confirmed_wrong_self_membership_symbol",
+      "source": {
+        "path": "content/computability/computability-theory/russells-paradox.tex",
+        "bytes": 2712,
+        "sha256": "eb1fc81105316b076e39d9a9737473da60dcbec63583615813773d5c0649b98b",
+        "locator": "lines 15-20, Russell set contradiction"
+      },
+      "finding": "After defining S={x:x not-in x}, the source writes S in S iff X not-in S with an undefined capital X.",
+      "controlling_evidence": "Substituting S into its defining membership condition gives S in S iff S not-in S, which is the stated Russell contradiction.",
+      "required_translation_handling": "Use S not-in S and add an adjacent OLTECOMTHY-004 disclosure."
+    },
+    {
+      "finding_id": "OLTECOMTHY-005",
+      "unit_id": "OLP-0239",
+      "classification": "confirmed_title_spelling_error",
+      "source": {
+        "path": "content/computability/computability-theory/equiv-ce-defs.tex",
+        "bytes": 6176,
+        "sha256": "d997e01b3f6cae024d43895694771f165f9bff070b5b3b7469ddd827e2777d51",
+        "locator": "lines 11-12, full section title"
+      },
+      "finding": "The full section title misspells Definitions as Defininitions.",
+      "controlling_evidence": "The short title uses the correct spelling and the section proves equivalent definitions.",
+      "required_translation_handling": "Translate the correctly spelled title and add an adjacent OLTECOMTHY-005 disclosure."
+    },
+    {
+      "finding_id": "OLTECOMTHY-006",
+      "unit_id": "OLP-0239",
+      "classification": "confirmed_unbound_value_argument",
+      "source": {
+        "path": "content/computability/computability-theory/equiv-ce-defs.tex",
+        "bytes": 6176,
+        "sha256": "d997e01b3f6cae024d43895694771f165f9bff070b5b3b7469ddd827e2777d51",
+        "locator": "lines 75-81, reverse range inclusion"
+      },
+      "finding": "From T(e,(z)_0,(z)_1) and U((z)_1)=y the source concludes cfind_e(x) is defined and equals y, but x is not bound in that reverse-direction case.",
+      "controlling_evidence": "The normal-form equation applied to the displayed computation code yields cfind_e((z)_0)=U((z)_1)=y.",
+      "required_translation_handling": "Use (z)_0 as the argument of cfind_e and add an adjacent OLTECOMTHY-006 disclosure."
+    }
+  ]
+}

@@ -1,0 +1,2280 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-19T18:10:19.758Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Intertext prose is masked while its inline math remains checked.",
+  "units": [
+    {
+      "unit_id": "OLP-0228",
+      "source_path": "content/computability/computability-theory/computability-theory.tex",
+      "source_sha256": "de85020d2628f48f4e3f76cdcc1e31630f9a1e4a5f6581312c6ee4711ad3bcba",
+      "translation_sha256": "b408956bf30908eb21e025d465384a04af98c86bb5361e93d9b3444a075d1e90",
+      "source_blocks": 30,
+      "target_blocks": 30,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport{introduction}",
+        "\\olimport{coding-computations}",
+        "\\olimport{normal-form}",
+        "\\olimport{s-m-n}",
+        "\\olimport{universal-part-function}",
+        "\\olimport{no-universal-function}",
+        "\\olimport{halting-problem}",
+        "\\olimport{russells-paradox}",
+        "\\olimport{computable-sets}",
+        "\\olimport{ce-sets}",
+        "\\olimport{equiv-ce-defs}",
+        "\\olimport{non-comp-set}",
+        "\\olimport{ce-closed-cup-cap}",
+        "\\olimport{complement-ce}",
+        "\\olimport{reducibility}",
+        "\\olimport{prop-reduce}",
+        "\\olimport{complete-ce-sets}",
+        "\\olimport{k-1}",
+        "\\olimport{total}",
+        "\\olimport{rice-theorem}",
+        "\\olimport{fixed-point-thm}",
+        "\\olimport{application-fixed-point}",
+        "\\olimport{def-functions-self-reference}"
+      ],
+      "identifiers_target": [
+        "\\olimport{introduction}",
+        "\\olimport{coding-computations}",
+        "\\olimport{normal-form}",
+        "\\olimport{s-m-n}",
+        "\\olimport{universal-part-function}",
+        "\\olimport{no-universal-function}",
+        "\\olimport{halting-problem}",
+        "\\olimport{russells-paradox}",
+        "\\olimport{computable-sets}",
+        "\\olimport{ce-sets}",
+        "\\olimport{equiv-ce-defs}",
+        "\\olimport{non-comp-set}",
+        "\\olimport{ce-closed-cup-cap}",
+        "\\olimport{complement-ce}",
+        "\\olimport{reducibility}",
+        "\\olimport{prop-reduce}",
+        "\\olimport{complete-ce-sets}",
+        "\\olimport{k-1}",
+        "\\olimport{total}",
+        "\\olimport{rice-theorem}",
+        "\\olimport{fixed-point-thm}",
+        "\\olimport{application-fixed-point}",
+        "\\olimport{def-functions-self-reference}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 81,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: computability-theory",
+          "target_start": "% Part: computability\n% Chapter: computability-theory"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olchapter{cmp}{thy}{Computability Theory}",
+          "target_start": "\\olchapter{cmp}{thy}{గణనీయతా సిద్ధాంతం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{editorial}\n  Material in this chapter should be reviewed and expanded. In\n  particular, there are no ex",
+          "target_start": "\\begin{editorial}\n  ఈ అధ్యాయంలోని విషయాన్ని సమీక్షించి విస్తరించాలి. ముఖ్యంగా, ఇంకా\n  సాధనలు లేవు.\n\\end{editor"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport{introduction}",
+          "target_start": "\\olimport{introduction}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport{coding-computations}",
+          "target_start": "\\olimport{coding-computations}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\olimport{normal-form}",
+          "target_start": "\\olimport{normal-form}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport{s-m-n}",
+          "target_start": "\\olimport{s-m-n}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\olimport{universal-part-function}",
+          "target_start": "\\olimport{universal-part-function}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\olimport{no-universal-function}",
+          "target_start": "\\olimport{no-universal-function}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\olimport{halting-problem}",
+          "target_start": "\\olimport{halting-problem}"
+        },
+        {
+          "index": 13,
+          "source_start": "\\olimport{russells-paradox}",
+          "target_start": "\\olimport{russells-paradox}"
+        },
+        {
+          "index": 14,
+          "source_start": "\\olimport{computable-sets}",
+          "target_start": "\\olimport{computable-sets}"
+        },
+        {
+          "index": 15,
+          "source_start": "\\olimport{ce-sets}",
+          "target_start": "\\olimport{ce-sets}"
+        },
+        {
+          "index": 16,
+          "source_start": "\\olimport{equiv-ce-defs}",
+          "target_start": "\\olimport{equiv-ce-defs}"
+        },
+        {
+          "index": 17,
+          "source_start": "\\olimport{non-comp-set}",
+          "target_start": "\\olimport{non-comp-set}"
+        },
+        {
+          "index": 18,
+          "source_start": "\\olimport{ce-closed-cup-cap}",
+          "target_start": "\\olimport{ce-closed-cup-cap}"
+        },
+        {
+          "index": 19,
+          "source_start": "\\olimport{complement-ce}",
+          "target_start": "\\olimport{complement-ce}"
+        },
+        {
+          "index": 20,
+          "source_start": "\\olimport{reducibility}",
+          "target_start": "\\olimport{reducibility}"
+        },
+        {
+          "index": 21,
+          "source_start": "\\olimport{prop-reduce}",
+          "target_start": "\\olimport{prop-reduce}"
+        },
+        {
+          "index": 22,
+          "source_start": "\\olimport{complete-ce-sets}",
+          "target_start": "\\olimport{complete-ce-sets}"
+        },
+        {
+          "index": 23,
+          "source_start": "\\olimport{k-1}",
+          "target_start": "\\olimport{k-1}"
+        },
+        {
+          "index": 24,
+          "source_start": "\\olimport{total}",
+          "target_start": "\\olimport{total}"
+        },
+        {
+          "index": 25,
+          "source_start": "\\olimport{rice-theorem}",
+          "target_start": "\\olimport{rice-theorem}"
+        },
+        {
+          "index": 26,
+          "source_start": "\\olimport{fixed-point-thm}",
+          "target_start": "\\olimport{fixed-point-thm}"
+        },
+        {
+          "index": 27,
+          "source_start": "\\olimport{application-fixed-point}",
+          "target_start": "\\olimport{application-fixed-point}"
+        },
+        {
+          "index": 28,
+          "source_start": "\\olimport{def-functions-self-reference}",
+          "target_start": "\\olimport{def-functions-self-reference}"
+        },
+        {
+          "index": 29,
+          "source_start": "\\OLEndChapterHook",
+          "target_start": "\\OLEndChapterHook"
+        },
+        {
+          "index": 30,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{cmp}{thy}",
+        "\\olimport{introduction}",
+        "\\olimport{coding-computations}",
+        "\\olimport{normal-form}",
+        "\\olimport{s-m-n}",
+        "\\olimport{universal-part-function}",
+        "\\olimport{no-universal-function}",
+        "\\olimport{halting-problem}",
+        "\\olimport{russells-paradox}",
+        "\\olimport{computable-sets}",
+        "\\olimport{ce-sets}",
+        "\\olimport{equiv-ce-defs}",
+        "\\olimport{non-comp-set}",
+        "\\olimport{ce-closed-cup-cap}",
+        "\\olimport{complement-ce}",
+        "\\olimport{reducibility}",
+        "\\olimport{prop-reduce}",
+        "\\olimport{complete-ce-sets}",
+        "\\olimport{k-1}",
+        "\\olimport{total}",
+        "\\olimport{rice-theorem}",
+        "\\olimport{fixed-point-thm}",
+        "\\olimport{application-fixed-point}",
+        "\\olimport{def-functions-self-reference}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{cmp}{thy}",
+        "\\olimport{introduction}",
+        "\\olimport{coding-computations}",
+        "\\olimport{normal-form}",
+        "\\olimport{s-m-n}",
+        "\\olimport{universal-part-function}",
+        "\\olimport{no-universal-function}",
+        "\\olimport{halting-problem}",
+        "\\olimport{russells-paradox}",
+        "\\olimport{computable-sets}",
+        "\\olimport{ce-sets}",
+        "\\olimport{equiv-ce-defs}",
+        "\\olimport{non-comp-set}",
+        "\\olimport{ce-closed-cup-cap}",
+        "\\olimport{complement-ce}",
+        "\\olimport{reducibility}",
+        "\\olimport{prop-reduce}",
+        "\\olimport{complete-ce-sets}",
+        "\\olimport{k-1}",
+        "\\olimport{total}",
+        "\\olimport{rice-theorem}",
+        "\\olimport{fixed-point-thm}",
+        "\\olimport{application-fixed-point}",
+        "\\olimport{def-functions-self-reference}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0229",
+      "source_path": "content/computability/computability-theory/introduction.tex",
+      "source_sha256": "685a46820c472f602c8cb6fb72595377355a1cbbeb9d07cf2b98f86405086127",
+      "translation_sha256": "e916672485aa41c8ddfebd48156f1b5a51ec7d16925e489844c4ef3a36931372",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{thy}{int}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{thy}{int}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$f\\colon\\Nat\\pto\\Nat$",
+        "$f$",
+        "$f$",
+        "$R$",
+        "$\\Char{R}$",
+        "$f$",
+        "$g$",
+        "$f(x)\\fdefined$",
+        "$f$",
+        "$x$",
+        "$x$",
+        "$f$",
+        "$f(x)\\fundefined$",
+        "$f$",
+        "$x$",
+        "$f(x)\\simeqg(x)$",
+        "$f(x)$",
+        "$g(x)$",
+        "$\\fn{Un}(k,x)$",
+        "$\\cfind{k}$",
+        "$k$",
+        "$\\cfind{k}(x)\\simeq\\fn{Un}(k,x)$",
+        "$\\{k\\}$",
+        "$\\cfind{k}[n]$",
+        "$k$",
+        "$n$",
+        "$f(\\vecx,y)$",
+        "$\\umin{y}{f(\\vecx,y)}$",
+        "$\\vecx$",
+        "$y$",
+        "$f(\\vecx,y)=0$",
+        "$f(\\vecx,0)$",
+        "$f(\\vecx,y-1)$",
+        "$y$",
+        "$\\umin{y}{f(\\vecx,y)}$",
+        "$R(\\vecx,y)$",
+        "$\\umin{y}{R(\\vecx,y)}$",
+        "$y$",
+        "$R(\\vecx,y)$",
+        "$y$",
+        "$1\\tsub\\Char{R}(\\vecx,y)=0$"
+      ],
+      "math_target_core": [
+        "$f\\colon\\Nat\\pto\\Nat$",
+        "$f$",
+        "$f$",
+        "$\\Char{R}$",
+        "$R$",
+        "$f$",
+        "$g$",
+        "$x$",
+        "$f$",
+        "$x$",
+        "$f$",
+        "$f(x)\\fdefined$",
+        "$x$",
+        "$f$",
+        "$f(x)\\fundefined$",
+        "$f(x)$",
+        "$g(x)$",
+        "$f(x)\\simeqg(x)$",
+        "$\\fn{Un}(k,x)$",
+        "$k$",
+        "$\\cfind{k}$",
+        "$\\cfind{k}(x)\\simeq\\fn{Un}(k,x)$",
+        "$\\{k\\}$",
+        "$k$",
+        "$n$",
+        "$\\cfind{k}[n]$",
+        "$f(\\vecx,y)$",
+        "$f(\\vecx,y)=0$",
+        "$y$",
+        "$\\vecx$",
+        "$\\umin{y}{f(\\vecx,y)}$",
+        "$f(\\vecx,0)$",
+        "$f(\\vecx,y-1)$",
+        "$y$",
+        "$\\umin{y}{f(\\vecx,y)}$",
+        "$R(\\vecx,y)$",
+        "$R(\\vecx,y)$",
+        "$y$",
+        "$\\umin{y}{R(\\vecx,y)}$",
+        "$1\\tsub\\Char{R}(\\vecx,y)=0$",
+        "$y$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1869,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: computability-theory\n% Section: introduction",
+          "target_start": "% Part: computability\n% Chapter: computability-theory\n% Section: introduction"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{thy}{int}\n\\olsection{Introduction}",
+          "target_start": "\\olfileid{cmp}{thy}{int}\n\\olsection{పరిచయం}"
+        },
+        {
+          "index": 5,
+          "source_start": "The branch of logic known as \\emph{computability theory} deals with\nissues having to do with the computability",
+          "target_start": "తర్కశాస్త్రంలో \\emph{గణనీయతా సిద్ధాంతం}గా పిలిచే శాఖ ప్రమేయాలు,\nసమితుల గణనీయత లేదా సాపేక్ష గణనీయతకు సంబంధించిన"
+        },
+        {
+          "index": 6,
+          "source_start": "Let us call a function~$f\\colon \\Nat \\pto \\Nat$ \\emph{partial\n  computable} if it can be computed in some mode",
+          "target_start": "ఏదో ఒక గణనా నమూనాలో గణించగల $f\\colon \\Nat \\pto \\Nat$ ప్రమేయాన్ని\n\\emph{పాక్షిక గణనీయ ప్రమేయం} అంటాం. $f$ సర్వన"
+        },
+        {
+          "index": 7,
+          "source_start": "One can explore the theory of computability without having to refer to\na specific model of computation. To do ",
+          "target_start": "నిర్దిష్ట గణనా నమూనాను ప్రస్తావించకుండానే గణనీయతా సిద్ధాంతాన్ని\nఅధ్యయనం చేయవచ్చు. ఇందుకోసం సార్వత్రిక పాక్షిక "
+        },
+        {
+          "index": 8,
+          "source_start": "If $f(\\vec x, y)$ is a total or partial function, then $\\umin{y}{f\n(\\vec x, y)}$ is the function of~$\\vec x$ t",
+          "target_start": "$f(\\vec x, y)$ సర్వనిర్వచిత లేదా పాక్షిక ప్రమేయమైతే,\n$f(\\vec x, y)=0$ అయ్యే అతి చిన్న~$y$ను తిరిగి ఇచ్చే $\\vec"
+        },
+        {
+          "index": 9,
+          "source_start": "To show that a function is computable, there are\ntwo ways one can proceed:\n\\begin{enumerate}\n\\item Rigorously:",
+          "target_start": "ఒక ప్రమేయం గణనీయమని చూపడానికి రెండు విధాలుగా ముందుకు వెళ్లవచ్చు:\n\\begin{enumerate}\n\\item కచ్చితంగా: ఒక ట్యూరిం"
+        },
+        {
+          "index": 10,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{int}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{int}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0230",
+      "source_path": "content/computability/computability-theory/coding-computations.tex",
+      "source_sha256": "ee3787973d947bd45363fb67b4ad1ab1843c67c6d489d13f66fd5cec592f057e",
+      "translation_sha256": "27d5f1bc3462d659286c08cc1d7725ceca7656ed7ac760627da2ecc08a5cbcc0",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{thy}{cod}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{thy}{cod}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$s$",
+        "$e$",
+        "$x$",
+        "$s$"
+      ],
+      "math_target_core": [
+        "$e$",
+        "$x$",
+        "$s$",
+        "$s$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1206,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: computability-theory\n% Section: coding-computations",
+          "target_start": "% Part: computability\n% Chapter: computability-theory\n% Section: coding-computations"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{thy}{cod}\n\\olsection{Coding Computations}",
+          "target_start": "\\olfileid{cmp}{thy}{cod}\n\\olsection{గణనలను సంకేతీకరించడం}"
+        },
+        {
+          "index": 5,
+          "source_start": "In every model of computation, it is possible to do the following:\n\\begin{enumerate}\n\\item Describe the \\emph{",
+          "target_start": "ప్రతి గణనా నమూనాలోనూ కింది పనులు చేయవచ్చు:\n\\begin{enumerate}\n\\item గణనీయ ప్రమేయాల \\emph{నిర్వచనాలను} క్రమబద్ధం"
+        },
+        {
+          "index": 6,
+          "source_start": "Using coding, it is possible to assign to each description of a\ncomputable function a numerical \\emph{index} i",
+          "target_start": "సంకేతీకరణను వాడి, ప్రతి గణనీయ ప్రమేయ వివరణకూ ఒక సంఖ్యాత్మక\n\\emph{సూచిక}ను కేటాయించవచ్చు; ఆ సూచిక నుంచి ఆదేశాలన"
+        },
+        {
+          "index": 7,
+          "source_start": "This fundamental fact is very powerful, and allows us to prove a\nnumber of striking and important results abou",
+          "target_start": "ఈ మౌలిక వాస్తవం చాలా శక్తివంతమైనది. ఎంచుకున్న గణనా నమూనాపై ఆధారపడకుండా,\nగణనీయత గురించి అనేక ఆశ్చర్యకరమైన, ముఖ్"
+        },
+        {
+          "index": 8,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{cod}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{cod}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0231",
+      "source_path": "content/computability/computability-theory/normal-form.tex",
+      "source_sha256": "284d55b8904baa230dce3fb9f00c04412d17988b67682157a0da65bdce8bd348",
+      "translation_sha256": "6cb6fe4ced0efea764fdf5f452cfbf9ce4cb544457eb3f666bd148b621300d17",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{thy}{nfm}",
+        "\\ollabel{thm:normal-form}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{thy}{nfm}",
+        "\\ollabel{thm:normal-form}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$f$",
+        "$x$",
+        "$f(x)$",
+        "$f(x)$",
+        "$T(e,x,s)$",
+        "$U(s)$",
+        "$f$",
+        "$e$",
+        "\\[f(x)\\simeqU(\\umin{s}{T(e,x,s)})\\]",
+        "$x$",
+        "$f$",
+        "$e$",
+        "$e$",
+        "$x$",
+        "$s$",
+        "$T(e,x,s)$",
+        "$s$",
+        "$e$",
+        "$x$",
+        "$U(s)$",
+        "$s$",
+        "$T$",
+        "$U$",
+        "$T$",
+        "$U$",
+        "$T$",
+        "$U$",
+        "$U$",
+        "$\\umin{s}{T(e,x,s)}$",
+        "$e$",
+        "$x$",
+        "$U$",
+        "$\\umin{y}{f(\\vecx,y)}$",
+        "$T$",
+        "$U$",
+        "$\\cfind{0}$",
+        "$\\cfind{1}$",
+        "$\\cfind{2}$",
+        "$T$",
+        "$U$",
+        "\\[\\cfind{e}(x)\\simeqU(\\umin{s}{T(e,x,s)})\\]",
+        "$\\cfind{e}$",
+        "$0=0$",
+        "$5$"
+      ],
+      "math_target_core": [
+        "$f$",
+        "$x$",
+        "$f(x)$",
+        "$f(x)$",
+        "$T(e,x,s)$",
+        "$U(s)$",
+        "$f$",
+        "$e$",
+        "$x$",
+        "\\[f(x)\\simeqU(\\umin{s}{T(e,x,s)})\\]",
+        "$f$",
+        "$e$",
+        "$x$",
+        "$e$",
+        "$s$",
+        "$e$",
+        "$x$",
+        "$s$",
+        "$T(e,x,s)$",
+        "$s$",
+        "$U(s)$",
+        "$T$",
+        "$U$",
+        "$T$",
+        "$U$",
+        "$T$",
+        "$U$",
+        "$U$",
+        "$\\umin{s}{T(e,x,s)}$",
+        "$x$",
+        "$e$",
+        "$U$",
+        "$\\umin{y}{f(\\vecx,y)}$",
+        "$\\cfind{0}$",
+        "$\\cfind{1}$",
+        "$\\cfind{2}$",
+        "$T$",
+        "$U$",
+        "$T$",
+        "$U$",
+        "\\[\\cfind{e}(x)\\simeqU(\\umin{s}{T(e,x,s)})\\]",
+        "$\\cfind{e}$",
+        "$0=0$",
+        "$5$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2189,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: computability-theory\n% Section: normal-form",
+          "target_start": "% Part: computability\n% Chapter: computability-theory\n% Section: normal-form"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{thy}{nfm}\n\\olsection{The Normal Form Theorem}",
+          "target_start": "\\olfileid{cmp}{thy}{nfm}\n\\olsection{నియత రూప సిద్ధాంతం}"
+        },
+        {
+          "index": 5,
+          "source_start": "Suppose we can describe definitions of computable functions, and test if\nsome putative description of the comp",
+          "target_start": "గణనీయ ప్రమేయాల నిర్వచనాలను మనం వర్ణించగలమనీ, ఒక ప్రమేయాన్ని ఏదో\nఇన్‌పుట్‌పై గణించిన పూర్తి లేఖనానికి ప్రతిపాది"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{thm}[Kleene's Normal Form Theorem]\n\\ollabel{thm:normal-form}\nThere is a primitive recursive relation~$T",
+          "target_start": "\\begin{thm}[క్లీనీ నియత రూప సిద్ధాంతం]\n\\ollabel{thm:normal-form}\nకింది ధర్మం గల ఆదిమ పునరావృత్త సంబంధం~$T(e,x,"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{proof}[Proof Sketch]\nFor any model of computation one can rigorously define a description\nof the comput",
+          "target_start": "\\begin{proof}[నిరూపణ రూపురేఖ]\nఏ గణనా నమూనాకైనా, గణనీయ ప్రమేయం~$f$ యొక్క వివరణను కచ్చితంగా\nనిర్వచించి, ఆ వివరణన"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{explain}\nIn order to give a rigorous proof of the Normal Form Theorem, we would\nhave to fix a model of ",
+          "target_start": "\\begin{explain}\nనియత రూప సిద్ధాంతానికి కచ్చితమైన నిరూపణ ఇవ్వాలంటే, ఒక గణనా నమూనాను\nఎంచుకుని, గణనీయ ప్రమేయాల వి"
+        },
+        {
+          "index": 9,
+          "source_start": "It is probably best to remember the proof of the normal form theorem\nin slogan form: $\\umin{s}{T(e, x, s)}$ se",
+          "target_start": "నియత రూప సిద్ధాంతపు నిరూపణను ఒక నినాదంగా గుర్తుంచుకోవడం బహుశా ఉత్తమం:\n$\\umin{s}{T(e,x,s)}$ అనేది ఇన్‌పుట్~$x$ప"
+        },
+        {
+          "index": 10,
+          "source_start": "If the model of computation is the partial recursive functions (which\nis what Kleene originally used), it show",
+          "target_start": "గణనా నమూనా పాక్షిక పునరావృత్త ప్రమేయాలైతే (క్లీనీ మొదట వాడింది ఇదే),\nఏ ప్రమేయపు నిర్వచనానికైనా అపరిమిత అన్వేషణ"
+        },
+        {
+          "index": 11,
+          "source_start": "$T$ and $U$ can be used to define the enumeration $\\cfind{0}$,\n$\\cfind{1}$, $\\cfind{2}$, \\dots.  From now on, ",
+          "target_start": "$\\cfind{0}$, $\\cfind{1}$, $\\cfind{2}$, \\dots{} అనే లెక్కింపును\nనిర్వచించడానికి $T$, $U$లను వాడవచ్చు. ఇకపై తగిన"
+        },
+        {
+          "index": 12,
+          "source_start": "Here is another useful fact:",
+          "target_start": "మరొక ఉపయోగకరమైన వాస్తవం ఇదిగో:"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{thm}\nEvery partial computable function has infinitely many indices.\n\\end{thm}",
+          "target_start": "\\begin{thm}\nప్రతి పాక్షిక గణనీయ ప్రమేయానికి అనంతంగా అనేక సూచికలు ఉంటాయి.\n\\end{thm}"
+        },
+        {
+          "index": 14,
+          "source_start": "Again, this is intuitively clear.  Given any (description of) a\ncomputable function, one can come up with a di",
+          "target_start": "ఇది కూడా అంతర్బోధాత్మకంగా స్పష్టమే. ఒక గణనీయ ప్రమేయపు ఏ వివరణనైనా\nతీసుకుంటే, అదే ప్రమేయాన్ని (అదే ఇన్‌పుట్--అవ"
+        },
+        {
+          "index": 15,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{nfm}",
+        "\\ollabel{thm:normal-form}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{nfm}",
+        "\\ollabel{thm:normal-form}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0232",
+      "source_path": "content/computability/computability-theory/s-m-n.tex",
+      "source_sha256": "24f3238689ed3251d63da8eb5e2daaa5cd99c8f2c29afb114d3b99183e555efc",
+      "translation_sha256": "1f3ff939d886ff43691a5199f5254b8860d393ff2092aa56393f82592be332f2",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{thy}{smn}",
+        "\\ollabel{thm:s-m-n}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{thy}{smn}",
+        "\\ollabel{thm:s-m-n}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$s$",
+        "$m$",
+        "$n$",
+        "$s$",
+        "$m$",
+        "$n$",
+        "$n$",
+        "$m$",
+        "$s^m_n$",
+        "$e$",
+        "$a_0$",
+        "$a_{m-1}$",
+        "$y_0$",
+        "$y_{n-1}$",
+        "\\[\\cfind{s^m_n(e,a_0,\\dots,a_{m-1})}[n](y_0,\\dots,y_{n-1})\\simeq\\cfind{e}[m+n](a_0,\\dots,a_{m-1},y_0,\\dots,y_{n-1}).\\]",
+        "$s^m_n$",
+        "$s^m_n$",
+        "$e$",
+        "$(m+n)$",
+        "$a_0$",
+        "$a_{m-1}$",
+        "$s^m_n(x,a_0,\\dots,a_{m-1})$",
+        "$n$",
+        "$x$",
+        "$s^m_n(e,a_0,\\dots,a_{m-1})$",
+        "$y_0$",
+        "$y_{n-1}$",
+        "$a_0$",
+        "$a_{m-1}$",
+        "$e$",
+        "$s^m_n$"
+      ],
+      "math_target_core": [
+        "$s$",
+        "$m$",
+        "$n$",
+        "$s$",
+        "$m$",
+        "$n$",
+        "$n$",
+        "$m$",
+        "$e$",
+        "$a_0$",
+        "$a_{m-1}$",
+        "$y_0$",
+        "$y_{n-1}$",
+        "\\[\\cfind{s^m_n(e,a_0,\\dots,a_{m-1})}[n](y_0,\\dots,y_{n-1})\\simeq\\cfind{e}[m+n](a_0,\\dots,a_{m-1},y_0,\\dots,y_{n-1}).\\]",
+        "$s^m_n$",
+        "$s^m_n$",
+        "$(m+n)$",
+        "$e$",
+        "$a_0$",
+        "$a_{m-1}$",
+        "$s^m_n$",
+        "$n$",
+        "$s^m_n(e,a_0,\\dots,a_{m-1})$",
+        "$e$",
+        "$s^m_n(e,a_0,\\dots,a_{m-1})$",
+        "$y_0$",
+        "$y_{n-1}$",
+        "$a_0$",
+        "$a_{m-1}$",
+        "$e$",
+        "$s^m_n$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$s^m_n(x,a_0,\\dots,a_{m-1})$",
+        "$x$"
+      ],
+      "math_delta_target_only": [
+        "$e$",
+        "$s^m_n(e,a_0,\\dots,a_{m-1})$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTECOMTHY-001"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 776,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: computability-theory\n% Section: s-m-n",
+          "target_start": "% Part: computability\n% Chapter: computability-theory\n% Section: s-m-n"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{thy}{smn}\n\\olsection{The $s$-$m$-$n$ Theorem}",
+          "target_start": "\\olfileid{cmp}{thy}{smn}\n\\olsection{$s$-$m$-$n$ సిద్ధాంతం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{explain}\nThe next theorem is known as the ``$s$-$m$-$n$ theorem,'' for a reason\nthat will be clear in a",
+          "target_start": "\\begin{explain}\nతరువాతి సిద్ధాంతాన్ని ``$s$-$m$-$n$ సిద్ధాంతం'' అంటారు; దానికి కారణం\nకొద్దిసేపటిలో స్పష్టమవుతు"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{thm}\n\\ollabel{thm:s-m-n}\n  For each pair of natural numbers $n$ and~$m$, there is a primitive\n  recursi",
+          "target_start": "\\begin{thm}\n\\ollabel{thm:s-m-n}\n  ప్రతి సహజ సంఖ్యల జత $n$,~$m$కు, ప్రతి అనుక్రమం\n  $e$, $a_0$, \\dots, $a_{m-1}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{explain}\nIt is helpful to think of $s^m_n$ as acting on \\emph{programs}. That\nis, $s^m_n$ takes a progr",
+          "target_start": "\\begin{explain}\n$s^m_n$ అనేది \\emph{ప్రోగ్రాములపై} పనిచేస్తుందని భావించడం ఉపయుక్తం.\nఅంటే, ఒక $(m+n)$-స్థాన ప్ర"
+        },
+        {
+          "index": 8,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{smn}",
+        "\\ollabel{thm:s-m-n}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{smn}",
+        "\\ollabel{thm:s-m-n}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0233",
+      "source_path": "content/computability/computability-theory/universal-part-function.tex",
+      "source_sha256": "ebea87bb478e1b3f401702e1ae9d4636e6823c5df78894ad09c8ee0b7fee8e49",
+      "translation_sha256": "dc2af37183745cdd1688506cccfb7d1632afa39b203a59d595191d8ea1befeda",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{thy}{uni}",
+        "\\ollabel{thm:univ-comp}",
+        "\\olref[nfm]{thm:normal-form}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{thy}{uni}",
+        "\\ollabel{thm:univ-comp}",
+        "\\olref[nfm]{thm:normal-form}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\fn{Un}(e,x)$",
+        "$\\fn{Un}(e,x)$",
+        "$\\fn{Un}(e,x)$",
+        "$f(x)$",
+        "$e$",
+        "$f(x)\\simeq\\fn{Un}(e,x)$",
+        "$x$",
+        "$\\fn{Un}(e,x)\\simeqU(\\umin{s}{T(e,x,s)})$",
+        "$U$",
+        "$T$",
+        "$f_e$",
+        "$f_e(x)=\\fn{Un}(e,x)$",
+        "$f_0$",
+        "$f_1$",
+        "$f_2$",
+        "$f_e(x)$",
+        "$e$",
+        "$x$",
+        "$f(x,y,z)$",
+        "$3$",
+        "$g(x)\\simeqf((x)_0,(x)_1,(x)_2)$"
+      ],
+      "math_target_core": [
+        "$\\fn{Un}(e,x)$",
+        "$\\fn{Un}(e,x)$",
+        "$\\fn{Un}(e,x)$",
+        "$f(x)$",
+        "$x$",
+        "$f(x)\\simeq\\fn{Un}(e,x)$",
+        "$e$",
+        "$U$",
+        "$T$",
+        "$\\fn{Un}(e,x)\\simeqU(\\umin{s}{T(e,x,s)})$",
+        "$f_e(x)=\\fn{Un}(e,x)$",
+        "$f_e$",
+        "$f_0$",
+        "$f_1$",
+        "$f_2$",
+        "$f_e(x)$",
+        "$e$",
+        "$x$",
+        "$f(x,y,z)$",
+        "$3$",
+        "$g(x)\\simeqf((x)_0,(x)_1,(x)_2)$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 650,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: computability-theory\n% Section: universal-part-function",
+          "target_start": "% Part: computability\n% Chapter: computability-theory\n% Section: universal-part-function"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{thy}{uni}\n\\olsection{The Universal Partial Computable Function}",
+          "target_start": "\\olfileid{cmp}{thy}{uni}\n\\olsection{సార్వత్రిక పాక్షిక గణనీయ ప్రమేయం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{thm}\n\\ollabel{thm:univ-comp}\nThere is a universal partial computable function~$\\fn{Un}(e,x)$. In other\n",
+          "target_start": "\\begin{thm}\n\\ollabel{thm:univ-comp}\nసార్వత్రిక పాక్షిక గణనీయ ప్రమేయం~$\\fn{Un}(e,x)$ ఒకటి ఉంది. మరో\nవిధంగా చెప్"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{proof}\nLet $\\fn{Un}(e,x) \\simeq U(\\umin{s}{T(e,x,s)})$, where $U$ and $T$ are\nas in Kleene's normal for",
+          "target_start": "\\begin{proof}\nక్లీనీ నియత రూప సిద్ధాంతం (\\olref[nfm]{thm:normal-form})లోని $U$,\n$T$లను తీసుకుని, $\\fn{Un}(e,x)"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{explain}\nThis is just a precise way of saying that we have an effective\nenumeration of the partial comp",
+          "target_start": "\\begin{explain}\nపాక్షిక గణనీయ ప్రమేయాలకు మనకు ఒక కార్యసాధ్య లెక్కింపు ఉందని చెప్పే\nకచ్చితమైన విధానమే ఇది. $f_e"
+        },
+        {
+          "index": 8,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{uni}",
+        "\\ollabel{thm:univ-comp}",
+        "\\olref[nfm]{thm:normal-form}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{uni}",
+        "\\ollabel{thm:univ-comp}",
+        "\\olref[nfm]{thm:normal-form}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0234",
+      "source_path": "content/computability/computability-theory/no-universal-function.tex",
+      "source_sha256": "b0d4d93239c8276120c26d25bb5caa43e9a71001ccbd1246860cb35bf9a6ebcb",
+      "translation_sha256": "2d5fa6ac827a58d5224258fe99a57d80573a0d6d4cd3e05aec59ac923518b216",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{thy}{nou}",
+        "\\ollabel{thm:no-univ}",
+        "\\olref[uni]{thm:univ-comp}",
+        "\\olref{thm:no-univ}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{thy}{nou}",
+        "\\ollabel{thm:no-univ}",
+        "\\olref[uni]{thm:univ-comp}",
+        "\\olref{thm:no-univ}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\fn{Un}'(k,x)$",
+        "$f(x)$",
+        "$k$",
+        "$f(x)=\\fn{Un}'(k,x)$",
+        "$x$",
+        "$\\fn{Un}'(k,x)$",
+        "\\[d(x)=\\fn{Un}'(x,x)+1\\]",
+        "$d(k)$",
+        "$\\fn{Un}'(k,k)$",
+        "$k$",
+        "$d(x)$",
+        "$\\fn{Un}'(k,x)$",
+        "$x$",
+        "$x=k$",
+        "$\\fn{Un}$",
+        "$f(x)\\simeq\\fn{Un}(x,x)+1$",
+        "$e$",
+        "$f(x)\\simeq\\fn{Un}(e,x)$",
+        "$f(e)$"
+      ],
+      "math_target_core": [
+        "$f(x)$",
+        "$x$",
+        "$f(x)=\\fn{Un}'(k,x)$",
+        "$k$",
+        "$\\fn{Un}'(k,x)$",
+        "$\\fn{Un}'(k,x)$",
+        "\\[d(x)=\\fn{Un}'(x,x)+1\\]",
+        "$d(k)$",
+        "$\\fn{Un}'(k,k)$",
+        "$k$",
+        "$d(x)$",
+        "$\\fn{Un}'(k,x)$",
+        "$x$",
+        "$x=k$",
+        "$\\fn{Un}$",
+        "$f(x)\\simeq\\fn{Un}(x,x)+1$",
+        "$e$",
+        "$f(x)\\simeq\\fn{Un}(e,x)$",
+        "$f(e)$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [
+        "OLTECOMTHY-002"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1084,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: computability-theory\n% Section: no-universal-function",
+          "target_start": "% Part: computability\n% Chapter: computability-theory\n% Section: no-universal-function"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{thy}{nou}\n\\olsection{No Universal Computable Function}",
+          "target_start": "\\olfileid{cmp}{thy}{nou}\n\\olsection{సార్వత్రిక గణనీయ ప్రమేయం లేదు}"
+        },
+        {
+          "index": 5,
+          "source_start": "Although there is a partial computable function that is total for the\npartial computable functions, there is n",
+          "target_start": "పాక్షిక గణనీయ ప్రమేయాలన్నిటికీ సార్వత్రికమైన పాక్షిక గణనీయ ప్రమేయం\nఉన్నప్పటికీ, సర్వనిర్వచిత గణనీయ ప్రమేయాలన్న"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{thm}\n\\ollabel{thm:no-univ}\nThere is no universal computable function. In other words, any\nfunction $\\fn",
+          "target_start": "\\begin{thm}\n\\ollabel{thm:no-univ}\nసార్వత్రిక గణనీయ ప్రమేయం ఏదీ లేదు. మరో విధంగా చెప్పాలంటే, $f(x)$\nఏదైనా సర్వన"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{proof}\nThe proof is a simple diagonalization: if $\\fn{Un}'(k,x)$ were total\nand computable, then\n\\[\nd(x",
+          "target_start": "\\begin{proof}\nఇది సరళమైన వికర్ణీకరణ నిరూపణ. $\\fn{Un}'(k,x)$ సర్వనిర్వచితమూ\nగణనీయమూ అయితే,\n\\[\nd(x)=\\fn{Un}'(x,x"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{explain}\n\\olref[uni]{thm:univ-comp} above shows that we can get around this\ndiagonalization argument, b",
+          "target_start": "\\begin{explain}\nపైనున్న \\olref[uni]{thm:univ-comp}, సార్వత్రిక ప్రమేయాన్ని పాక్షికంగా\nఉండనివ్వడం అనే మూల్యం చె"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{prob}\n  To understand why the diagonalization argument in the proof of\n  \\olref{thm:no-univ} does not w",
+          "target_start": "\\begin{prob}\n  \\olref{thm:no-univ} నిరూపణలోని వికర్ణీకరణ వాదన పాక్షిక సందర్భంలో\n  ఎందుకు పనిచేయదో అర్థం చేసుకో"
+        },
+        {
+          "index": 10,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{nou}",
+        "\\ollabel{thm:no-univ}",
+        "\\olref[uni]{thm:univ-comp}",
+        "\\olref{thm:no-univ}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{nou}",
+        "\\ollabel{thm:no-univ}",
+        "\\olref[uni]{thm:univ-comp}",
+        "\\olref{thm:no-univ}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0235",
+      "source_path": "content/computability/computability-theory/halting-problem.tex",
+      "source_sha256": "7bd566448fde580f1a32b27cd9382544c05535009656f0710b2ea41135799cd7",
+      "translation_sha256": "ed04271b9525f26dfb807ee9be41e195138b5706cc11579a6f969bb61c99fada",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{thy}{hlt}",
+        "\\ollabel{thm:halting-problem}",
+        "\\olref[nou]{thm:no-univ}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{thy}{hlt}",
+        "\\ollabel{thm:halting-problem}",
+        "\\olref[nou]{thm:no-univ}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\fn{Un}(e,x)$",
+        "$e$",
+        "$x$",
+        "\\[h(e,x)=\\begin{cases}1&\\\\0&\\end{cases}\\]",
+        "$h$",
+        "$h$",
+        "\\[\\fn{Un'}(e,x)=\\begin{cases}\\fn{Un}(e,x)&\\\\0&\\end{cases}\\]",
+        "$\\fn{Un'}(e,x)$",
+        "$h$",
+        "$g$",
+        "\\begin{align*}g(0,e,x)&\\simeq0\\\\g(y+1,e,x)&\\simeq\\fn{Un}(e,x);\\end{align*}",
+        "\\[\\fn{Un'}(e,x)\\simeqg(h(e,x),e,x).\\]",
+        "$\\fn{Un'}(e,x)$",
+        "$\\fn{Un}(e,x)$",
+        "$\\fn{Un'}$",
+        "$h(e,x)$",
+        "$g$",
+        "\\[g(x)=\\begin{cases}0&\\\\\\fundefined&\\end{cases}\\]",
+        "$g$",
+        "$\\umin{y}{h(x,x)=0}$",
+        "$e$",
+        "$g(x)\\simeq\\fn{Un}(e,x)$",
+        "$x$",
+        "$g$",
+        "$e$",
+        "$g$",
+        "$h(e,e)=0$",
+        "$h$",
+        "$0$",
+        "$h$",
+        "$\\fn{Un}(e,e)$",
+        "$g(x)\\simeq\\fn{Un}(e,x)$",
+        "$x$",
+        "$g(e)$",
+        "$g(e)$",
+        "$h(e,e)\\neq0$",
+        "$h(e,e)=1$",
+        "$\\fn{Un}(e,e)$",
+        "$g(x)\\simeq\\fn{Un}(e,x)$",
+        "$g(e)$",
+        "$H$",
+        "$E$",
+        "$x$",
+        "$E$",
+        "$x$",
+        "$G$",
+        "$x$",
+        "$H$",
+        "$M_x$",
+        "$x$",
+        "$x$",
+        "$H$",
+        "$M_x$",
+        "$x$",
+        "$G$",
+        "$H$",
+        "$M_x$",
+        "$x$",
+        "$G$",
+        "$G$",
+        "$H$"
+      ],
+      "math_target_core": [
+        "$e$",
+        "$x$",
+        "$\\fn{Un}(e,x)$",
+        "\\[h(e,x)=\\begin{cases}1&\\\\0&\\end{cases}\\]",
+        "$h$",
+        "$h$",
+        "\\[\\fn{Un'}(e,x)=\\begin{cases}\\fn{Un}(e,x)&\\\\0&\\end{cases}\\]",
+        "$\\fn{Un'}(e,x)$",
+        "$h$",
+        "$g$",
+        "\\begin{align*}g(0,e,x)&\\simeq0\\\\g(y+1,e,x)&\\simeq\\fn{Un}(e,x);\\end{align*}",
+        "\\[\\fn{Un'}(e,x)\\simeqg(h(e,x),e,x).\\]",
+        "$\\fn{Un}(e,x)$",
+        "$\\fn{Un'}(e,x)$",
+        "$\\fn{Un'}$",
+        "$h(e,x)$",
+        "$g$",
+        "\\[g(x)=\\begin{cases}0&\\\\\\fundefined&\\end{cases}\\]",
+        "$g$",
+        "$\\umin{y}{h(x,x)=0}$",
+        "$e$",
+        "$x$",
+        "$g(x)\\simeq\\fn{Un}(e,x)$",
+        "$e$",
+        "$g$",
+        "$g$",
+        "$h(e,e)=0$",
+        "$g$",
+        "$h(e,e)$",
+        "$0$",
+        "$h$",
+        "$\\fn{Un}(e,e)$",
+        "$x$",
+        "$g(x)\\simeq\\fn{Un}(e,x)$",
+        "$g(e)$",
+        "$g(e)$",
+        "$h(e,e)\\neq0$",
+        "$h(e,e)=1$",
+        "$\\fn{Un}(e,e)$",
+        "$g(x)\\simeq\\fn{Un}(e,x)$",
+        "$g(e)$",
+        "$E$",
+        "$x$",
+        "$E$",
+        "$x$",
+        "$H$",
+        "$x$",
+        "$x$",
+        "$M_x$",
+        "$x$",
+        "$H$",
+        "$G$",
+        "$x$",
+        "$M_x$",
+        "$H$",
+        "$G$",
+        "$x$",
+        "$M_x$",
+        "$H$",
+        "$G$",
+        "$G$",
+        "$H$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$h$"
+      ],
+      "math_delta_target_only": [
+        "$g$",
+        "$h(e,e)$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTECOMTHY-003"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1943,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: computability-theory\n% Section: halting-problem",
+          "target_start": "% Part: computability\n% Chapter: computability-theory\n% Section: halting-problem"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{thy}{hlt}\n\\olsection{The Halting Problem}",
+          "target_start": "\\olfileid{cmp}{thy}{hlt}\n\\olsection{నిలుపు సమస్య (హాల్టింగ్ సమస్య)}"
+        },
+        {
+          "index": 5,
+          "source_start": "By construction, the universal partial computable\nfunction~$\\fn{Un}(e,x)$ is defined if and only if the comput",
+          "target_start": "నిర్మాణం ప్రకారం, సంకేతం~$e$ గల ప్రమేయపు గణన ఇన్‌పుట్~$x$కు ఒక\nవిలువను ఉత్పత్తి చేస్తే, అప్పుడే మాత్రమే సార్వత"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{thm}\n\\ollabel{thm:halting-problem}\nLet\n\\[\nh(e, x)  =\n\\begin{cases}\n1 & \\text{if\\/ $\\fn{Un}(e, x)$ is de",
+          "target_start": "\\begin{thm}\n\\ollabel{thm:halting-problem}\n\\[\nh(e,x)=\n\\begin{cases}\n1 & \\text{$\\fn{Un}(e,x)$ నిర్వచితమైతే} \\\\\n0"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{proof}\nSuppose $h$ is computable. We show that this would let us define a\nuniversal computable function",
+          "target_start": "\\begin{proof}\n$h$ గణనీయం అనుకుందాం. దాని వల్ల ఒక సార్వత్రిక గణనీయ ప్రమేయాన్ని\nనిర్వచించవచ్చని చూపుతాం. ఇలా నిర"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{proof}\nSuppose $h(e,x)$ were computable. Define the function $g$ by\n\\[\ng(x) =\n\\begin{cases}\n  0        ",
+          "target_start": "\\begin{proof}\n$h(e,x)$ గణనీయం అనుకుందాం. $g$ను ఇలా నిర్వచించండి:\n\\[\ng(x)=\n\\begin{cases}\n  0 & \\text{$h(x,x)=0$"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{tagblock}{TMs}\n\\begin{explain}\nWe can describe this argument in terms of Turing machines.  Suppose\nther",
+          "target_start": "\\begin{tagblock}{TMs}\n\\begin{explain}\nఈ వాదనను ట్యూరింగ్ యంత్రాల పరంగా వర్ణించవచ్చు. ఒక ట్యూరింగ్ యంత్రం\n$E$ య"
+        },
+        {
+          "index": 10,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{hlt}",
+        "\\ollabel{thm:halting-problem}",
+        "\\olref[nou]{thm:no-univ}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{hlt}",
+        "\\ollabel{thm:halting-problem}",
+        "\\olref[nou]{thm:no-univ}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0236",
+      "source_path": "content/computability/computability-theory/russells-paradox.tex",
+      "source_sha256": "eb1fc81105316b076e39d9a9737473da60dcbec63583615813773d5c0649b98b",
+      "translation_sha256": "e0f93b677f4b5afc7e27f865a4cf7ea53b405788960dc48f6eb5a4b68e60f989",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{thy}{rus}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{thy}{rus}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$S=\\Setabs{x}{x\\notinx}$",
+        "$S\\inS$",
+        "$X\\notinS$",
+        "$S$",
+        "$F$",
+        "$\\{0,1\\}$",
+        "\\[F(f)=\\begin{cases}1&\\\\0&\\end{cases}\\]",
+        "$F(F)=0$",
+        "$F(F)=1$",
+        "$F$",
+        "$f_0$",
+        "$f_1$",
+        "$G\\colon\\Nat\\to\\{0,1\\}$",
+        "\\[G(x)=\\begin{cases}1&\\\\0&\\end{cases}\\]",
+        "$G$",
+        "$f_k$",
+        "$k$",
+        "$G(k)=1$",
+        "$G(k)=0$",
+        "$G$",
+        "$G$",
+        "$\\Nat$",
+        "$\\Nat$",
+        "$\\Nat$",
+        "$\\Nat$"
+      ],
+      "math_target_core": [
+        "$S=\\Setabs{x}{x\\notinx}$",
+        "$S\\inS$",
+        "$S\\notinS$",
+        "$S$",
+        "$\\{0,1\\}$",
+        "$F$",
+        "\\[F(f)=\\begin{cases}1&\\\\0&\\end{cases}\\]",
+        "$F(F)=0$",
+        "$F(F)=1$",
+        "$F$",
+        "$f_0$",
+        "$f_1$",
+        "$G\\colon\\Nat\\to\\{0,1\\}$",
+        "\\[G(x)=\\begin{cases}1&\\\\0&\\end{cases}\\]",
+        "$G$",
+        "$k$",
+        "$f_k$",
+        "$G(k)=1$",
+        "$G(k)=0$",
+        "$G$",
+        "$G$",
+        "$\\Nat$",
+        "$\\Nat$",
+        "$\\Nat$",
+        "$\\Nat$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$X\\notinS$"
+      ],
+      "math_delta_target_only": [
+        "$S\\notinS$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTECOMTHY-004"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1645,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: computability-theory\n% Section: russells-paradox",
+          "target_start": "% Part: computability\n% Chapter: computability-theory\n% Section: russells-paradox"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{thy}{rus}\n\\olsection{Comparison with Russell's Paradox}",
+          "target_start": "\\olfileid{cmp}{thy}{rus}\n\\olsection{రసెల్ వైరుధ్యంతో పోలిక}"
+        },
+        {
+          "index": 5,
+          "source_start": "It is instructive to compare and contrast the arguments in\nthis section with Russell's paradox:\n\\begin{enumera",
+          "target_start": "ఈ విభాగంలోని వాదనలను రసెల్ వైరుధ్యంతో పోల్చి, వాటి సారూప్యాలూ\nభేదాలూ పరిశీలించడం ఉపయుక్తం:\n\\begin{enumerate}\n\\"
+        },
+        {
+          "index": 6,
+          "source_start": "  \\emph{Conclusion:} There is no such set~$S$. Assuming the existence of a\n  ``set of all sets'' is inconsiste",
+          "target_start": "  \\emph{ముగింపు:} అటువంటి సమితి~$S$ లేదు. ``సమితులన్నిటి సమితి''\n  ఉందని ఊహించడం సమితి సిద్ధాంతంలోని ఇతర స్వీక"
+        },
+        {
+          "index": 7,
+          "source_start": "\\item A modification of Russell's paradox: let $F$ be the ``function''\n  from the set of all functions to $\\{ ",
+          "target_start": "\\item రసెల్ వైరుధ్యపు ఒక మార్పు: ప్రమేయాలన్నిటి సమితి నుంచి\n  $\\{0,1\\}$కు వెళ్లే ``ప్రమేయం'' $F$ను ఇలా నిర్వచి"
+        },
+        {
+          "index": 8,
+          "source_start": "  \\emph{Conclusion:} $F$ is not a function. The ``set of all\n  functions'' is too big to be the domain of a fu",
+          "target_start": "  \\emph{ముగింపు:} $F$ ఒక ప్రమేయం కాదు. ``ప్రమేయాలన్నిటి సమితి'' ఒక\n  ప్రమేయానికి నిర్వచన క్షేత్రంగా ఉండటానికి "
+        },
+        {
+          "index": 9,
+          "source_start": "\\item The diagonalization argument: let $f_0$, $f_1$, \\dots be the\n  enumeration of the partial computable fun",
+          "target_start": "\\item వికర్ణీకరణ వాదన: $f_0$, $f_1$, \\dots{} అనేది పాక్షిక గణనీయ\n  ప్రమేయాల లెక్కింపు అనుకుని, $G\\colon\\Nat\\to"
+        },
+        {
+          "index": 10,
+          "source_start": "  \\emph{Conclusion:} $G$ is not computable. Note that according to the\n  axioms of set theory, $G$ is still a ",
+          "target_start": "  \\emph{ముగింపు:} $G$ గణనీయం కాదు. సమితి సిద్ధాంతపు స్వీకృతాల\n  ప్రకారం $G$ ఇప్పటికీ ఒక ప్రమేయమేనని గమనించండి;"
+        },
+        {
+          "index": 11,
+          "source_start": "That talk of partial functions, computable functions,\npartial computable functions, and so on can be confusing",
+          "target_start": "పాక్షిక ప్రమేయాలు, గణనీయ ప్రమేయాలు, పాక్షిక గణనీయ ప్రమేయాలు మొదలైన\nవాటి గురించిన మాటలు గందరగోళంగా ఉండవచ్చు. $\\"
+        },
+        {
+          "index": 12,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{rus}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{rus}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0237",
+      "source_path": "content/computability/computability-theory/computable-sets.tex",
+      "source_sha256": "d35d7afbe6eebe0a25dcd22c5b2c82b07baacb432183d0685950902900799cbe",
+      "translation_sha256": "1bd112c836365e5f6ca7aae1db4cf5f24cc545d36b9408b0585b9d7d26b0af56",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{thy}{cps}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{thy}{cps}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$S$",
+        "$S$",
+        "$\\Char{S}$",
+        "$S$",
+        "\\[\\Char{S}(x)=\\begin{cases}1&\\\\0&\\end{cases}\\]",
+        "$R(x_0,\\dots,x_{k-1})$",
+        "$1$",
+        "$0$"
+      ],
+      "math_target_core": [
+        "$S$",
+        "$\\Char{S}$",
+        "$S$",
+        "\\[\\Char{S}(x)=\\begin{cases}1&\\\\0&\\end{cases}\\]",
+        "$S$",
+        "$R(x_0,\\dots,x_{k-1})$",
+        "$1$",
+        "$0$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 634,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: computability-theory\n% Section: computable-sets",
+          "target_start": "% Part: computability\n% Chapter: computability-theory\n% Section: computable-sets"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{thy}{cps}\n\\olsection{Computable Sets}",
+          "target_start": "\\olfileid{cmp}{thy}{cps}\n\\olsection{గణనీయ సమితులు}"
+        },
+        {
+          "index": 5,
+          "source_start": "We can extend the notion of computability from computable functions to\ncomputable sets:",
+          "target_start": "గణనీయ ప్రమేయాల నుంచి గణనీయ సమితులకు గణనీయత భావనను విస్తరించవచ్చు:"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}\n  Let $S$ be a set of natural numbers. Then $S$ is \\emph{computable}\n  iff its characteristic fun",
+          "target_start": "\\begin{defn}\n  $S$ సహజ సంఖ్యల సమితి అనుకుందాం. దాని లక్షణ ప్రమేయం~$\\Char{S}$\n  గణనీయమైతే, అప్పుడే మాత్రమే $S$న"
+        },
+        {
+          "index": 7,
+          "source_start": "Computable sets and relations are also called \\emph{decidable}.\n\\end{defn}",
+          "target_start": "గణనీయ సమితులు, సంబంధాలను \\emph{నిర్ణయించదగినవి} అని కూడా అంటారు.\n\\end{defn}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{explain}\nNotice that we now have a number of notions of computability: for\npartial functions, for funct",
+          "target_start": "\\begin{explain}\nపాక్షిక ప్రమేయాలకు, ప్రమేయాలకు, సమితులకు సంబంధించిన అనేక గణనీయత\nభావనలు ఇప్పుడు మనకు ఉన్నాయని గ"
+        },
+        {
+          "index": 9,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{cps}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{cps}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0238",
+      "source_path": "content/computability/computability-theory/ce-sets.tex",
+      "source_sha256": "a4cb50deceb3d948ebf79dc5f5aad48801a5a58e633c98e7caf834098a3402a8",
+      "translation_sha256": "50ae36b48134bcf0375dba1ee509abea6cc77f34e7e82f38c238c5f18cfcd13c",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{thy}{ces}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{thy}{ces}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$S$",
+        "$f$",
+        "\\[S=\\{f(0),f(1),f(2),\\dots\\},\\]",
+        "$f$",
+        "$S$",
+        "$f$",
+        "$f$",
+        "$f(0)$",
+        "$f(1)$",
+        "$f(2)$",
+        "$S$",
+        "$f(x)=0$",
+        "$\\{0\\}$",
+        "$S$",
+        "$S$",
+        "$a$",
+        "$S$",
+        "$f$",
+        "\\[f(x)=\\begin{cases}x&\\\\a&\\end{cases}\\]",
+        "$f$",
+        "$S$",
+        "$f$"
+      ],
+      "math_target_core": [
+        "$S$",
+        "$f$",
+        "\\[S=\\{f(0),f(1),f(2),\\dots\\},\\]",
+        "$f$",
+        "$S$",
+        "$f$",
+        "$f$",
+        "$S$",
+        "$f(0)$",
+        "$f(1)$",
+        "$f(2)$",
+        "$f(x)=0$",
+        "$\\{0\\}$",
+        "$S$",
+        "$S$",
+        "$S$",
+        "$a$",
+        "$f$",
+        "\\[f(x)=\\begin{cases}x&\\\\a&\\end{cases}\\]",
+        "$f$",
+        "$S$",
+        "$f$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 846,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: computability-theory\n% Section: ce-sets",
+          "target_start": "% Part: computability\n% Chapter: computability-theory\n% Section: ce-sets"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{thy}{ces}\n\\olsection{Computably Enumerable Sets}",
+          "target_start": "\\olfileid{cmp}{thy}{ces}\n\\olsection{గణనీయంగా లెక్కించదగిన సమితులు}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{defn}\nA set is \\emph{computably enumerable} if it is empty or the range of a\ncomputable function.\n\\end{",
+          "target_start": "\\begin{defn}\nఒక సమితి శూన్య సమితి అయినా, లేదా ఒక గణనీయ ప్రమేయపు వ్యాప్తి అయినా,\nదాన్ని \\emph{గణనీయంగా లెక్కించ"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{history}\nComputably enumerable sets are also called \\emph{recursively\n  enumerable} instead. This is th",
+          "target_start": "\\begin{history}\nగణనీయంగా లెక్కించదగిన సమితులను బదులుగా \\emph{పునరావృత్తంగా\nలెక్కించదగిన సమితులు} అని కూడా అంటా"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{explain}\nYou should think about what the definition means, and why the\nterminology is appropriate. The ",
+          "target_start": "\\begin{explain}\nఈ నిర్వచనం ఏమి చెబుతుందో, ఈ పరిభాష ఎందుకు తగినదో ఆలోచించాలి. $S$\nఅనేది గణనీయ ప్రమేయం~$f$ యొక్క"
+        },
+        {
+          "index": 8,
+          "source_start": "Any computable set is computably enumerable. To see this, suppose\n$S$~is computable. If $S$ is empty, then by ",
+          "target_start": "ప్రతి గణనీయ సమితీ గణనీయంగా లెక్కించదగినదే. దీన్ని చూడటానికి, $S$\nగణనీయం అనుకుందాం. $S$ శూన్య సమితి అయితే, నిర్"
+        },
+        {
+          "index": 9,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{ces}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{ces}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0239",
+      "source_path": "content/computability/computability-theory/equiv-ce-defs.tex",
+      "source_sha256": "d997e01b3f6cae024d43895694771f165f9bff070b5b3b7469ddd827e2777d51",
+      "translation_sha256": "1e132490e91432439d8bf98cdf92ad974f0426e3ef685e173063b053be8d93e6",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{thy}{eqc}",
+        "\\ollabel{thm:ce-equiv}",
+        "\\ollabel{case:ce}",
+        "\\ollabel{case:ran-pc}",
+        "\\ollabel{case:ran-prim}",
+        "\\ollabel{case:ce-domain}",
+        "\\olref{case:ran-prim}",
+        "\\olref{case:ce}",
+        "\\olref{case:ce}",
+        "\\olref{case:ran-pc}",
+        "\\olref{case:ran-pc}",
+        "\\olref{case:ran-prim}",
+        "\\olref{thm:ce-equiv}",
+        "\\olref{case:ce}",
+        "\\olref{case:ce-domain}",
+        "\\olref{case:ce}",
+        "\\olref{case:ce-domain}",
+        "\\olref{case:ce-domain}",
+        "\\olref{case:ce}",
+        "\\olref{case:ce-domain}",
+        "\\olref{thm:ce-equiv}",
+        "\\ollabel{thm:exists-char}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{thy}{eqc}",
+        "\\ollabel{thm:ce-equiv}",
+        "\\ollabel{case:ce}",
+        "\\ollabel{case:ran-pc}",
+        "\\ollabel{case:ran-prim}",
+        "\\ollabel{case:ce-domain}",
+        "\\olref{case:ran-prim}",
+        "\\olref{case:ce}",
+        "\\olref{case:ce}",
+        "\\olref{case:ran-pc}",
+        "\\olref{case:ran-pc}",
+        "\\olref{case:ran-prim}",
+        "\\olref{thm:ce-equiv}",
+        "\\olref{case:ce}",
+        "\\olref{case:ce-domain}",
+        "\\olref{case:ce}",
+        "\\olref{case:ce-domain}",
+        "\\olref{case:ce-domain}",
+        "\\olref{case:ce}",
+        "\\olref{case:ce-domain}",
+        "\\olref{thm:ce-equiv}",
+        "\\ollabel{thm:exists-char}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$S$",
+        "$S$",
+        "$S$",
+        "$S$",
+        "$S$",
+        "$S$",
+        "$e$",
+        "\\[S=\\Setabs{x}{\\cfind{e}(x)\\fdefined}.\\]",
+        "$S$",
+        "$\\cfind{e}$",
+        "$S$",
+        "$S$",
+        "$S$",
+        "$\\cfind{e}$",
+        "$S$",
+        "$a$",
+        "$S$",
+        "\\[\\cfind{e}(x)=U(\\umin{s}{T(e,x,s)}).\\]",
+        "$\\cfind{e}(x)\\fdefined$",
+        "$=y$",
+        "$s$",
+        "$T(e,x,s)$",
+        "$U(s)=y$",
+        "$f(z)$",
+        "\\[f(z)=\\begin{cases}U((z)_1)&\\\\a&\\end{cases}\\]",
+        "$f$",
+        "$T$",
+        "$U$",
+        "$z$",
+        "$\\tuple{(z)_0,(z)_1}$",
+        "$(z)_1$",
+        "$M_e$",
+        "$(z)_0$",
+        "$f$",
+        "$a$",
+        "$S$",
+        "$f$",
+        "$y$",
+        "$y\\inS$",
+        "$f$",
+        "$y\\inS$",
+        "$y$",
+        "$\\cfind{e}$",
+        "$x$",
+        "$s$",
+        "$T(e,x,s)$",
+        "$U(s)=y$",
+        "$y=f(\\tuple{x,s})$",
+        "$y$",
+        "$f$",
+        "$y=a$",
+        "$z$",
+        "$T(e,(z)_0,(z)_1)$",
+        "$U((z)_1)=y$",
+        "$\\cfind{e}(x)\\fdefined=y$",
+        "$y$",
+        "$S$",
+        "$\\cfind{e}(x)\\fdefined=y$",
+        "$\\cfind{e}(x)$",
+        "$y$",
+        "$\\cfind{e}(x)=y$",
+        "$S$",
+        "$f$",
+        "\\[S=\\Setabs{y}{f(x)=y}.\\]",
+        "\\[g(y)=\\umin{x}{(f(x)=y)}.\\]",
+        "$g$",
+        "$g(y)$",
+        "$x$",
+        "$f(x)=y$",
+        "$g$",
+        "$f$",
+        "$F$",
+        "$S$",
+        "$G$",
+        "$S$",
+        "$F$",
+        "$S$",
+        "$\\cfind{e}$",
+        "\\[S=\\Setabs{x}{\\cfind{e}(x)\\fdefined}.\\]",
+        "$S$",
+        "$a$",
+        "$S$",
+        "$f$",
+        "\\[f(z)=\\begin{cases}(z)_0&\\\\a&\\end{cases}\\]",
+        "$x$",
+        "$f$",
+        "$\\cfind{e}(x)\\fdefined$",
+        "$x\\inS$",
+        "$M_e$",
+        "$S$",
+        "$S$",
+        "$e$",
+        "$W_e$",
+        "$\\cfind{e}$",
+        "\\[W_e=\\Setabs{x}{\\cfind{e}(x)\\fdefined}.\\]",
+        "$A$",
+        "$A=W_e$",
+        "$e$",
+        "$S$",
+        "$R(x,y)$",
+        "\\[S=\\Setabs{x}{\\lexists[y][R(x,y)]}.\\]",
+        "$S$",
+        "$e$",
+        "$S=W_e$",
+        "$e$",
+        "$S$",
+        "\\[S=\\Setabs{x}{\\lexists[y][T(e,x,y)]}.\\]",
+        "$S=\\Setabs{x}{\\lexists[y][R(x,y)]}$",
+        "$f$",
+        "\\[f(x)\\simeq\\umin{y}{R(x,y)}.\\]",
+        "$f$",
+        "$S$",
+        "$f$"
+      ],
+      "math_target_core": [
+        "$S$",
+        "$S$",
+        "$S$",
+        "$S$",
+        "$S$",
+        "$S$",
+        "$e$",
+        "\\[S=\\Setabs{x}{\\cfind{e}(x)\\fdefined}.\\]",
+        "$S$",
+        "$\\cfind{e}$",
+        "$S$",
+        "$S$",
+        "$S$",
+        "$\\cfind{e}$",
+        "$S$",
+        "$S$",
+        "$a$",
+        "\\[\\cfind{e}(x)=U(\\umin{s}{T(e,x,s)}).\\]",
+        "$T(e,x,s)$",
+        "$U(s)=y$",
+        "$s$",
+        "$\\cfind{e}(x)\\fdefined$",
+        "$=y$",
+        "$f(z)$",
+        "\\[f(z)=\\begin{cases}U((z)_1)&\\\\a&\\end{cases}\\]",
+        "$T$",
+        "$U$",
+        "$f$",
+        "$z$",
+        "$\\tuple{(z)_0,(z)_1}$",
+        "$(z)_1$",
+        "$(z)_0$",
+        "$M_e$",
+        "$f$",
+        "$a$",
+        "$S$",
+        "$f$",
+        "$y$",
+        "$y\\inS$",
+        "$f$",
+        "$y\\inS$",
+        "$y$",
+        "$\\cfind{e}$",
+        "$x$",
+        "$s$",
+        "$T(e,x,s)$",
+        "$U(s)=y$",
+        "$y=f(\\tuple{x,s})$",
+        "$y$",
+        "$f$",
+        "$y=a$",
+        "$z$",
+        "$T(e,(z)_0,(z)_1)$",
+        "$U((z)_1)=y$",
+        "$\\cfind{e}((z)_0)\\fdefined=y$",
+        "$y$",
+        "$S$",
+        "$\\cfind{e}(x)\\fdefined=y$",
+        "$\\cfind{e}(x)$",
+        "$y$",
+        "$\\cfind{e}(x)=y$",
+        "$S$",
+        "$f$",
+        "\\[S=\\Setabs{y}{f(x)=y}.\\]",
+        "\\[g(y)=\\umin{x}{(f(x)=y)}.\\]",
+        "$g$",
+        "$x$",
+        "$f(x)=y$",
+        "$g(y)$",
+        "$g$",
+        "$f$",
+        "$S$",
+        "$F$",
+        "$F$",
+        "$S$",
+        "$G$",
+        "$S$",
+        "$\\cfind{e}$",
+        "\\[S=\\Setabs{x}{\\cfind{e}(x)\\fdefined}.\\]",
+        "$S$",
+        "$S$",
+        "$a$",
+        "$f$",
+        "\\[f(z)=\\begin{cases}(z)_0&\\\\a&\\end{cases}\\]",
+        "$x$",
+        "$f$",
+        "$\\cfind{e}(x)\\fdefined$",
+        "$x\\inS$",
+        "$f$",
+        "$S$",
+        "$M_e$",
+        "$S$",
+        "$e$",
+        "$W_e$",
+        "$\\cfind{e}$",
+        "\\[W_e=\\Setabs{x}{\\cfind{e}(x)\\fdefined}.\\]",
+        "$A$",
+        "$e$",
+        "$A=W_e$",
+        "$R(x,y)$",
+        "$S$",
+        "\\[S=\\Setabs{x}{\\lexists[y][R(x,y)]}.\\]",
+        "$S$",
+        "$e$",
+        "$S=W_e$",
+        "$e$",
+        "$S$",
+        "\\[S=\\Setabs{x}{\\lexists[y][T(e,x,y)]}.\\]",
+        "$S=\\Setabs{x}{\\lexists[y][R(x,y)]}$",
+        "$f$",
+        "\\[f(x)\\simeq\\umin{y}{R(x,y)}.\\]",
+        "$f$",
+        "$S$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$\\cfind{e}(x)\\fdefined=y$"
+      ],
+      "math_delta_target_only": [
+        "$\\cfind{e}((z)_0)\\fdefined=y$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTECOMTHY-005",
+        "OLTECOMTHY-006"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 3409,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: computability-theory\n% Section: equiv-ce-defs",
+          "target_start": "% Part: computability\n% Chapter: computability-theory\n% Section: equiv-ce-defs"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{thy}{eqc}",
+          "target_start": "\\olfileid{cmp}{thy}{eqc}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection[Definitions of C. E. Sets]{Equivalent Defininitions of\n  Computably Enumerable Sets}",
+          "target_start": "\\olsection[గణనీయంగా లెక్కించదగిన సమితుల నిర్వచనలు]{గణనీయంగా\n  లెక్కించదగిన సమితుల తుల్య నిర్వచనలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "The following gives a number of important equivalent statements of\nwhat it means to be computably enumerable.",
+          "target_start": "గణనీయంగా లెక్కించదగినది కావడం అంటే ఏమిటో చెప్పే అనేక ముఖ్యమైన తుల్య\nప్రకటనలను కింద ఇస్తున్నాం.\n\\sourcecorrecti"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{thm}\n\\ollabel{thm:ce-equiv}\nLet $S$ be a set of natural numbers. Then the following are\nequivalent:\n\\be",
+          "target_start": "\\begin{thm}\n\\ollabel{thm:ce-equiv}\n$S$ సహజ సంఖ్యల సమితి అనుకుందాం. అప్పుడు కింది ప్రకటనలు తుల్యాలు:\n\\begin{enu"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{explain}\nThe first three clauses say that we can equivalently take any non-empty\ncomputably enumerable ",
+          "target_start": "\\begin{explain}\nమొదటి మూడు ఉపవాక్యాలు, ఏ శూన్యేతర గణనీయంగా లెక్కించదగిన సమితినైనా\nఒక గణనీయ ప్రమేయం, ఒక పాక్షిక"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{proof}\nSince every primitive recursive function is computable and every\ncomputable function is partial ",
+          "target_start": "\\begin{proof}\nప్రతి ఆదిమ పునరావృత్త ప్రమేయం గణనీయం; ప్రతి గణనీయ ప్రమేయం పాక్షిక\nగణనీయం. కనుక \\olref{case:ran-p"
+        },
+        {
+          "index": 10,
+          "source_start": "So, suppose $S$ is the range of the partial computable function\n$\\cfind{e}$. If $S$ is empty, we are done. Oth",
+          "target_start": "కాబట్టి $S$ అనేది పాక్షిక గణనీయ ప్రమేయం $\\cfind{e}$ యొక్క వ్యాప్తి\nఅనుకుందాం. $S$ శూన్య సమితి అయితే పని పూర్తయ"
+        },
+        {
+          "index": 11,
+          "source_start": "We need to show that $S$ is the range of~$f$, i.e., for any natural\nnumber~$y$, $y \\in S$ if and only if it is",
+          "target_start": "$S$ అనేది $f$ యొక్క వ్యాప్తి అని చూపాలి; అంటే ఏ సహజ సంఖ్య~$y$కైనా,\n$y\\in S$ అయితేనే అది $f$ వ్యాప్తిలో ఉంటుందన"
+        },
+        {
+          "index": 12,
+          "source_start": "(The notation $\\cfind{e}(x) \\fdefined = y$ means ``$\\cfind{e}(x)$ is\ndefined and equal to $y$.'' We could just",
+          "target_start": "($\\cfind{e}(x)\\fdefined=y$ అనే సంకేతం ``$\\cfind{e}(x)$ నిర్వచితమై,\nదాని విలువ $y$కు సమానం'' అని అర్థం. బదులుగా"
+        },
+        {
+          "index": 13,
+          "source_start": "To finish up the proof of \\olref{thm:ce-equiv}, it suffices to show\nthat \\olref{case:ce} and~\\olref{case:ce-do",
+          "target_start": "\\olref{thm:ce-equiv} నిరూపణను పూర్తి చేయడానికి, \\olref{case:ce},\n\\olref{case:ce-domain} తుల్యాలని చూపితే చాలు."
+        },
+        {
+          "index": 14,
+          "source_start": "Finally, to show \\olref{case:ce-domain} implies~\\olref{case:ce},\nsuppose that $S$~is the domain of the partial",
+          "target_start": "చివరగా \\olref{case:ce-domain} నుంచి~\\olref{case:ce} వస్తుందని చూపడానికి,\n$S$ అనేది పాక్షిక గణనీయ ప్రమేయం~$\\cfi"
+        },
+        {
+          "index": 15,
+          "source_start": "Clause~\\olref{case:ce-domain} of \\olref{thm:ce-equiv} provides us with\na convenient way of enumerating the com",
+          "target_start": "ఉపవాక్యం~\\olref{case:ce-domain} ద్వారా \\olref{thm:ce-equiv}, గణనీయంగా\nలెక్కించదగిన సమితులను లెక్కించడానికి అను"
+        },
+        {
+          "index": 16,
+          "source_start": "The following provides yet another characterization of the computably\nenumerable sets.",
+          "target_start": "గణనీయంగా లెక్కించదగిన సమితులకు మరొక లక్షణీకరణను కింది సిద్ధాంతం\nఇస్తుంది."
+        },
+        {
+          "index": 17,
+          "source_start": "\\begin{thm}\n\\ollabel{thm:exists-char}\nA set $S$ is computably enumerable if and only if there is a\ncomputable ",
+          "target_start": "\\begin{thm}\n\\ollabel{thm:exists-char}\nకింది సమీకరణ నెరవేరే గణనీయ సంబంధం $R(x,y)$ ఒకటి ఉంటే, అప్పుడే మాత్రమే\n$S"
+        },
+        {
+          "index": 18,
+          "source_start": "\\begin{proof}\nIn the forward direction, suppose $S$ is computably\nenumerable. Then for some $e$, $S = W_e$. Fo",
+          "target_start": "\\begin{proof}\nముందు దిశలో, $S$ గణనీయంగా లెక్కించదగినది అనుకుందాం. అప్పుడు ఏదో\n$e$కు $S=W_e$. ఈ~$e$కు $S$ను ఇలా"
+        },
+        {
+          "index": 19,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{eqc}",
+        "\\ollabel{thm:ce-equiv}",
+        "\\ollabel{case:ce}",
+        "\\ollabel{case:ran-pc}",
+        "\\ollabel{case:ran-prim}",
+        "\\ollabel{case:ce-domain}",
+        "\\olref{case:ran-prim}",
+        "\\olref{case:ce}",
+        "\\olref{case:ce}",
+        "\\olref{case:ran-pc}",
+        "\\olref{case:ran-pc}",
+        "\\olref{case:ran-prim}",
+        "\\olref{thm:ce-equiv}",
+        "\\olref{case:ce}",
+        "\\olref{case:ce-domain}",
+        "\\olref{case:ce}",
+        "\\olref{case:ce-domain}",
+        "\\olref{case:ce-domain}",
+        "\\olref{case:ce}",
+        "\\olref{case:ce-domain}",
+        "\\olref{thm:ce-equiv}",
+        "\\ollabel{thm:exists-char}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{thy}{eqc}",
+        "\\ollabel{thm:ce-equiv}",
+        "\\ollabel{case:ce}",
+        "\\ollabel{case:ran-pc}",
+        "\\ollabel{case:ran-prim}",
+        "\\ollabel{case:ce-domain}",
+        "\\olref{case:ran-prim}",
+        "\\olref{case:ce}",
+        "\\olref{case:ce}",
+        "\\olref{case:ran-pc}",
+        "\\olref{case:ran-pc}",
+        "\\olref{case:ran-prim}",
+        "\\olref{thm:ce-equiv}",
+        "\\olref{case:ce}",
+        "\\olref{case:ce-domain}",
+        "\\olref{case:ce}",
+        "\\olref{case:ce-domain}",
+        "\\olref{case:ce-domain}",
+        "\\olref{case:ce}",
+        "\\olref{case:ce-domain}",
+        "\\olref{thm:ce-equiv}",
+        "\\ollabel{thm:exists-char}"
+      ],
+      "protected_identifier_parity": true
+    }
+  ]
+}

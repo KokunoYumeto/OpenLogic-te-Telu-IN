@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **224 of 722 source units drafted**. This readable view contains all 245 decisions and 403 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **236 of 722 source units drafted**. This readable view contains all 252 decisions and 417 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -1837,6 +1837,37 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T065-OCC-007; OLP-0225; OLP-0225-B005; source upstream/content/computability/recursive-functions/normal-form.tex:12-21 bytes 220-539 SHA-256 b8c31bf729df2372640c16b1b3eb4e64256b0b59e2caaf9a7e3bb6a4f2fe93db; target translation/content/computability/recursive-functions/normal-form.tex:12-21 bytes 247-793 SHA-256 3b910d13a5c34942a5530da6262153ec6e3348c5ab5c05bf77a92354dac08bb1; reader page pending.
   - te-Telu-IN-TE-T065-OCC-008; OLP-0226; OLP-0226-B004; source upstream/content/computability/recursive-functions/halting-problem.tex:9-10 bytes 162-219 SHA-256 08569f88dbc93bf89320bc9e7ea3224dabcfc2d0af8125edf9dd22f37220483e; target translation/content/computability/recursive-functions/halting-problem.tex:9-10 bytes 162-280 SHA-256 1d1f1edcb2f53131b3e0fe4883eb00f691a977c80120b6ab82f150122050db92; reader page pending.
   - te-Telu-IN-TE-T065-OCC-009; OLP-0227; OLP-0227-B004; source upstream/content/computability/recursive-functions/general-recursive-functions.tex:9-10 bytes 174-239 SHA-256 e055df19289a2f5db360cc644656c3f6269a026cb26f9a62853a23a9ace7afcf; target translation/content/computability/recursive-functions/general-recursive-functions.tex:9-10 bytes 174-292 SHA-256 24dd0cf61b06f02ddb055eee287d7a7675ad55f1a64d7b13914e57521de0d321; reader page pending.
+
+## te-Telu-IN-TE-T066 — computability theory / recursion theory / partial computable function / universal partial computable function / effective enumeration / uniform enumeration / s-m-n theorem / computably enumerable / recursively enumerable / decidable / semi-decidable / undecidable
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: గణనీయతా సిద్ధాంతం / పునరావృత్త సిద్ధాంతం / పాక్షిక గణనీయ ప్రమేయం / సార్వత్రిక పాక్షిక గణనీయ ప్రమేయం / కార్యసాధ్య లెక్కింపు / ఏకరీతి లెక్కింపు / s-m-n సిద్ధాంతం / గణనీయంగా లెక్కించదగిన / పునరావృత్తంగా లెక్కించదగిన / నిర్ణయించదగిన / అర్ధ-నిర్ణయించదగిన / అనిర్ణయనీయ
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “computability theory / recursion theory / partial computable function / universal partial computable function / effective enumeration / uniform enumeration / s-m-n theorem / computably enumerable / recursively enumerable / decidable / semi-decidable / undecidable” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low semantic uncertainty because the specialized notions are defined by explicit equations, range/domain conditions or diagonal proofs; medium to high nomenclatural uncertainty for effective enumeration, computably enumerable and semi-decidable compounds
+
+- Rationale: TE-P005 supports natural-number exposition; TE-P008 and TE-P010--TE-P011 directly support sets, membership, relations, functions, domain and range; TE-P028 supports relation and quantifier taxonomy; TE-P003 and TE-P032 support theorem, proof and deduction prose; TE-P018 supports formal symbolic-logic register. The witnesses do not directly attest computability theory, partial or universal computation, effective enumeration, the s-m-n theorem, computable enumerability or semi-decidability. The frozen definitions, normal-form equations, universal-family construction, diagonal proofs and range/domain characterizations in OLP-0228--OLP-0239 control those exact senses; TE-T020, TE-T024, TE-T026, TE-T028, TE-T060, TE-T064 and TE-T065 supply the edition's earlier reversible choices. s-m-n, c.e. and r.e. are retained only as source notation or explicitly identified source abbreviations; క్లీనీ, చర్చ్, ట్యూరింగ్ and రసెల్ are source names or eponyms; no unexplained English technical headword remains in reader-facing prose
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P028 [checked_context_only], PDF page 92; printed page 85; Unary predicates, binary relations and quantifier classification; Direct quantifier taxonomy and predicate/relation context. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: use లెక్కించదగిన alone for computably enumerable and thereby collapse effective enumerability into ordinary countability [rejected: rejected] | leave computably enumerable and semi-decidable in untranslated English prose [rejected: rejected] | claim direct native attestation for s-m-n, universal computation or semi-decidability [rejected: rejected because the frozen definitions and proofs control those senses]
+
+- Review question: Please double-check whether “గణనీయతా సిద్ధాంతం / పునరావృత్త సిద్ధాంతం / పాక్షిక గణనీయ ప్రమేయం / సార్వత్రిక పాక్షిక గణనీయ ప్రమేయం / కార్యసాధ్య లెక్కింపు / ఏకరీతి లెక్కింపు / s-m-n సిద్ధాంతం / గణనీయంగా లెక్కించదగిన / పునరావృత్తంగా లెక్కించదగిన / నిర్ణయించదగిన / అర్ధ-నిర్ణయించదగిన / అనిర్ణయనీయ” is idiomatic and technically standard for “computability theory / recursion theory / partial computable function / universal partial computable function / effective enumeration / uniform enumeration / s-m-n theorem / computably enumerable / recursively enumerable / decidable / semi-decidable / undecidable” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T066-OCC-001; OLP-0228; OLP-0228-B004; source upstream/content/computability/computability-theory/computability-theory.tex:8 bytes 136-179 SHA-256 de85020d2628f48f4e3f76cdcc1e31630f9a1e4a5f6581312c6ee4711ad3bcba; target translation/content/computability/computability-theory/computability-theory.tex:8 bytes 136-208 SHA-256 b408956bf30908eb21e025d465384a04af98c86bb5361e93d9b3444a075d1e90; reader page pending.
+  - te-Telu-IN-TE-T066-OCC-002; OLP-0229; OLP-0229-B006; source upstream/content/computability/computability-theory/introduction.tex:18-27 bytes 514-1149 SHA-256 685a46820c472f602c8cb6fb72595377355a1cbbeb9d07cf2b98f86405086127; target translation/content/computability/computability-theory/introduction.tex:17-25 bytes 948-2214 SHA-256 e916672485aa41c8ddfebd48156f1b5a51ec7d16925e489844c4ef3a36931372; reader page pending.
+  - te-Telu-IN-TE-T066-OCC-003; OLP-0232; OLP-0232-B004; source upstream/content/computability/computability-theory/s-m-n.tex:9-10 bytes 153-214 SHA-256 24f3238689ed3251d63da8eb5e2daaa5cd99c8f2c29afb114d3b99183e555efc; target translation/content/computability/computability-theory/s-m-n.tex:9-10 bytes 153-230 SHA-256 1f3ff939d886ff43691a5199f5254b8860d393ff2092aa56393f82592be332f2; reader page pending.
+  - te-Telu-IN-TE-T066-OCC-004; OLP-0233; OLP-0233-B004; source upstream/content/computability/computability-theory/universal-part-function.tex:9-10 bytes 171-250 SHA-256 ebea87bb478e1b3f401702e1ae9d4636e6823c5df78894ad09c8ee0b7fee8e49; target translation/content/computability/computability-theory/universal-part-function.tex:9-10 bytes 171-299 SHA-256 dc2af37183745cdd1688506cccfb7d1632afa39b203a59d595191d8ea1befeda; reader page pending.
+  - te-Telu-IN-TE-T066-OCC-005; OLP-0238; OLP-0238-B004; source upstream/content/computability/computability-theory/ce-sets.tex:9-10 bytes 155-219 SHA-256 a4cb50deceb3d948ebf79dc5f5aad48801a5a58e633c98e7caf834098a3402a8; target translation/content/computability/computability-theory/ce-sets.tex:9-10 bytes 155-276 SHA-256 50ae36b48134bcf0375dba1ee509abea6cc77f34e7e82f38c238c5f18cfcd13c; reader page pending.
+  - te-Telu-IN-TE-T066-OCC-006; OLP-0239; OLP-0239-B008; source upstream/content/computability/computability-theory/equiv-ce-defs.tex:30-43 bytes 865-1525 SHA-256 d997e01b3f6cae024d43895694771f165f9bff070b5b3b7469ddd827e2777d51; target translation/content/computability/computability-theory/equiv-ce-defs.tex:30-43 bytes 1998-3440 SHA-256 1e132490e91432439d8bf98cdf92ad974f0426e3ef685e173063b053be8d93e6; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -6531,3 +6562,161 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
   - te-Telu-IN-OLTECRREM-010-OCC-001; OLP-0226; OLP-0226-B006; source upstream/content/computability/recursive-functions/halting-problem.tex:27-48 bytes 710-1627 SHA-256 08569f88dbc93bf89320bc9e7ea3224dabcfc2d0af8125edf9dd22f37220483e; target translation/content/computability/recursive-functions/halting-problem.tex:25-44 bytes 1260-2892 SHA-256 1d1f1edcb2f53131b3e0fe4883eb00f691a977c80120b6ab82f150122050db92; reader page pending.
   - te-Telu-IN-OLTECRREM-010-OCC-002; OLP-0226; OLP-0226-B008; source upstream/content/computability/recursive-functions/halting-problem.tex:55-89 bytes 1732-3196 SHA-256 08569f88dbc93bf89320bc9e7ea3224dabcfc2d0af8125edf9dd22f37220483e; target translation/content/computability/recursive-functions/halting-problem.tex:51-83 bytes 3080-6225 SHA-256 1d1f1edcb2f53131b3e0fe4883eb00f691a977c80120b6ab82f150122050db92; reader page pending.
+
+## te-Telu-IN-OLTECOMTHY-001 — OLTECOMTHY-001: confirmed program index variable mismatch
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used e consistently as the program and machine-description index; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed program index variable mismatch at lines 31-40, program interpretation of s-m-n, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOMTHY-20260919:OLTECOMTHY-001 [checked_supports], content/computability/computability-theory/s-m-n.tex; lines 31-40, program interpretation of s-m-n; confirmed_program_index_variable_mismatch; used e consistently as the program and machine-description index; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that e remains the program or machine-description index throughout the s-m-n explanation.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOMTHY-001-OCC-001; OLP-0232; OLP-0232-B007; source upstream/content/computability/computability-theory/s-m-n.tex:31-40 bytes 862-1504 SHA-256 24f3238689ed3251d63da8eb5e2daaa5cd99c8f2c29afb114d3b99183e555efc; target translation/content/computability/computability-theory/s-m-n.tex:31-41 bytes 1338-3255 SHA-256 1f3ff939d886ff43691a5199f5254b8860d393ff2092aa56393f82592be332f2; reader page pending.
+
+## te-Telu-IN-OLTECOMTHY-002 — OLTECOMTHY-002: confirmed universal total word swap
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: stated that the partial function is universal for all partial computable functions; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed universal total word swap at lines 12-14, opening contrast, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOMTHY-20260919:OLTECOMTHY-002 [checked_supports], content/computability/computability-theory/no-universal-function.tex; lines 12-14, opening contrast; confirmed_universal_total_word_swap; stated that the partial function is universal for all partial computable functions; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the opening contrast says the partial function is universal, not total, for all partial computable functions.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOMTHY-002-OCC-001; OLP-0234; OLP-0234-B005; source upstream/content/computability/computability-theory/no-universal-function.tex:12-14 bytes 240-433 SHA-256 b0d4d93239c8276120c26d25bb5caa43e9a71001ccbd1246860cb35bf9a6ebcb; target translation/content/computability/computability-theory/no-universal-function.tex:12-15 bytes 289-1464 SHA-256 2d5fa6ac827a58d5224258fe99a57d80573a0d6d4cd3e05aec59ac923518b216; reader page pending.
+
+## te-Telu-IN-OLTECOMTHY-003 — OLTECOMTHY-003: confirmed wrong definedness subject
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: attributed the zero-value definedness condition to g rather than the assumed-total h; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed wrong definedness subject at lines 71-77, second diagonal proof, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOMTHY-20260919:OLTECOMTHY-003 [checked_supports], content/computability/computability-theory/halting-problem.tex; lines 71-77, second diagonal proof; confirmed_wrong_definedness_subject; attributed the zero-value definedness condition to g rather than the assumed-total h; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the second halting proof attributes definedness to g and treats the assumed computable h as total.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOMTHY-003-OCC-001; OLP-0235; OLP-0235-B008; source upstream/content/computability/computability-theory/halting-problem.tex:71-77 bytes 1972-2451 SHA-256 7bd566448fde580f1a32b27cd9382544c05535009656f0710b2ea41135799cd7; target translation/content/computability/computability-theory/halting-problem.tex:67-80 bytes 3606-5735 SHA-256 ed04271b9525f26dfb807ee9be41e195138b5706cc11579a6f969bb61c99fada; reader page pending.
+
+## te-Telu-IN-OLTECOMTHY-004 — OLTECOMTHY-004: confirmed wrong self membership symbol
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used S in the second self-membership clause; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed wrong self membership symbol at lines 15-20, Russell set contradiction, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOMTHY-20260919:OLTECOMTHY-004 [checked_supports], content/computability/computability-theory/russells-paradox.tex; lines 15-20, Russell set contradiction; confirmed_wrong_self_membership_symbol; used S in the second self-membership clause; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that Russell self-membership uses S on both sides of the biconditional and introduces no stray X.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOMTHY-004-OCC-001; OLP-0236; OLP-0236-B005; source upstream/content/computability/computability-theory/russells-paradox.tex:15-16 bytes 350-472 SHA-256 eb1fc81105316b076e39d9a9737473da60dcbec63583615813773d5c0649b98b; target translation/content/computability/computability-theory/russells-paradox.tex:12-16 bytes 265-763 SHA-256 e0f93b677f4b5afc7e27f865a4cf7ea53b405788960dc48f6eb5a4b68e60f989; reader page pending.
+  - te-Telu-IN-OLTECOMTHY-004-OCC-002; OLP-0236; OLP-0236-B006; source upstream/content/computability/computability-theory/russells-paradox.tex:18-20 bytes 473-625 SHA-256 eb1fc81105316b076e39d9a9737473da60dcbec63583615813773d5c0649b98b; target translation/content/computability/computability-theory/russells-paradox.tex:18-20 bytes 764-1591 SHA-256 e0f93b677f4b5afc7e27f865a4cf7ea53b405788960dc48f6eb5a4b68e60f989; reader page pending.
+
+## te-Telu-IN-OLTECOMTHY-005 — OLTECOMTHY-005: confirmed title spelling error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: translated the correctly spelled full title; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed title spelling error at lines 11-12, full section title, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOMTHY-20260919:OLTECOMTHY-005 [checked_supports], content/computability/computability-theory/equiv-ce-defs.tex; lines 11-12, full section title; confirmed_title_spelling_error; translated the correctly spelled full title; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the corrected full section title simply removes the source spelling error without changing its scope.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOMTHY-005-OCC-001; OLP-0239; OLP-0239-B005; source upstream/content/computability/computability-theory/equiv-ce-defs.tex:11-12 bytes 187-283 SHA-256 d997e01b3f6cae024d43895694771f165f9bff070b5b3b7469ddd827e2777d51; target translation/content/computability/computability-theory/equiv-ce-defs.tex:11-12 bytes 187-436 SHA-256 1e132490e91432439d8bf98cdf92ad974f0426e3ef685e173063b053be8d93e6; reader page pending.
+  - te-Telu-IN-OLTECOMTHY-005-OCC-002; OLP-0239; OLP-0239-B006; source upstream/content/computability/computability-theory/equiv-ce-defs.tex:15-16 bytes 285-395 SHA-256 d997e01b3f6cae024d43895694771f165f9bff070b5b3b7469ddd827e2777d51; target translation/content/computability/computability-theory/equiv-ce-defs.tex:15-17 bytes 438-1180 SHA-256 1e132490e91432439d8bf98cdf92ad974f0426e3ef685e173063b053be8d93e6; reader page pending.
+
+## te-Telu-IN-OLTECOMTHY-006 — OLTECOMTHY-006: confirmed unbound value argument
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used (z)_0 as the argument whose computation code is (z)_1; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed unbound value argument at lines 75-81, reverse range inclusion, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECOMTHY-20260919:OLTECOMTHY-006 [checked_supports], content/computability/computability-theory/equiv-ce-defs.tex; lines 75-81, reverse range inclusion; confirmed_unbound_value_argument; used (z)_0 as the argument whose computation code is (z)_1; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the reverse range proof evaluates cfind_e at (z)_0, the input encoded by the displayed computation pair.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECOMTHY-006-OCC-001; OLP-0239; OLP-0239-B011; source upstream/content/computability/computability-theory/equiv-ce-defs.tex:75-81 bytes 2848-3297 SHA-256 d997e01b3f6cae024d43895694771f165f9bff070b5b3b7469ddd827e2777d51; target translation/content/computability/computability-theory/equiv-ce-defs.tex:76-82 bytes 6249-7473 SHA-256 1e132490e91432439d8bf98cdf92ad974f0426e3ef685e173063b053be8d93e6; reader page pending.
