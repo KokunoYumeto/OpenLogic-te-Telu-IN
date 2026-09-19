@@ -17,7 +17,7 @@ const same = (a,b)=>JSON.stringify(a)===JSON.stringify(b);
 const stripText=s=>{
  let out='',i=0;
  while(i<s.length){
-  const textMatch=s.slice(i).match(/^\\(intertext|text)\s*\{/);
+  const textMatch=s.slice(i).match(/^\\(intertext|text|mbox)\s*\{/);
   if(textMatch){
    const inter=textMatch[1]==='intertext';
    i+=textMatch[0].length;let depth=1,start=i;

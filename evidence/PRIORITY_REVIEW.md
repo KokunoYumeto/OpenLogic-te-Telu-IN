@@ -1,6 +1,6 @@
 # Priority review
 
-This view contains 42 of 234 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
+This view contains 43 of 245 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
 
 Final reader pages remain pending; exact source and target file/line locators are shown.
 
@@ -423,3 +423,13 @@ Final reader pages remain pending; exact source and target file/line locators ar
 - Occurrences: OLP-0211 translation/content/computability/recursive-functions/primitive-recursion.tex:9-10; OLP-0212 translation/content/computability/recursive-functions/composition.tex:9-10; OLP-0212 translation/content/computability/recursive-functions/composition.tex:70-90; OLP-0213 translation/content/computability/recursive-functions/pr-functions.tex:46-62; OLP-0215 translation/content/computability/recursive-functions/pr-functions-computable.tex:33-35
 
 - Review question: Please double-check whether “ఆదిమ పునరావృత్తి / ఆదిమ పునరావృత్త ప్రమేయం / సంయుక్తం / ప్రక్షేప ప్రమేయం / స్థానసంఖ్య (అరిటీ) / లక్షణ ప్రమేయం / శూన్య ప్రమేయం / ఉత్తరగామి ప్రమేయం / ఆదిమ పునరావృత్తి సంకేతనం” is idiomatic and technically standard for “primitive recursion / primitive recursive function / composition / projection function / arity / characteristic function / zero function / successor function / primitive-recursion notation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T065 — primitive recursive relation / bounded quantification / bounded minimization / conditional function / prime number / sequence coding / tree coding / simultaneous recursion / course-of-values recursion / partial recursive function / unbounded search / Kleene normal form / index / halting problem / regular function / general recursive function
+
+- Chosen rendering: ఆదిమ పునరావృత్త సంబంధం / పరిమిత పరిమాణీకరణ / పరిమిత కనిష్ఠీకరణ / షరతు ప్రమేయం / ప్రధాన సంఖ్య / క్రమ సంకేతీకరణ / వృక్ష సంకేతీకరణ / సమకాల పునరావృత్తి / పూర్వవిలువల పునరావృత్తి / పాక్షిక పునరావృత్త ప్రమేయం / అపరిమిత అన్వేషణ / క్లీనీ నియత రూపం / సూచిక / నిలుపు సమస్య (హాల్టింగ్ సమస్య) / సక్రమ ప్రమేయం / సామాన్య పునరావృత్త ప్రమేయం
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0217 translation/content/computability/recursive-functions/pr-relations.tex:9-10; OLP-0218 translation/content/computability/recursive-functions/bounded-minimization.tex:9-10; OLP-0219 translation/content/computability/recursive-functions/primes.tex:9-10; OLP-0220 translation/content/computability/recursive-functions/sequences.tex:26-35; OLP-0222 translation/content/computability/recursive-functions/other-recursions.tex:12-46; OLP-0224 translation/content/computability/recursive-functions/partial-functions.tex:9-10; OLP-0225 translation/content/computability/recursive-functions/normal-form.tex:12-21; OLP-0226 translation/content/computability/recursive-functions/halting-problem.tex:9-10; OLP-0227 translation/content/computability/recursive-functions/general-recursive-functions.tex:9-10
+
+- Review question: Please double-check whether “ఆదిమ పునరావృత్త సంబంధం / పరిమిత పరిమాణీకరణ / పరిమిత కనిష్ఠీకరణ / షరతు ప్రమేయం / ప్రధాన సంఖ్య / క్రమ సంకేతీకరణ / వృక్ష సంకేతీకరణ / సమకాల పునరావృత్తి / పూర్వవిలువల పునరావృత్తి / పాక్షిక పునరావృత్త ప్రమేయం / అపరిమిత అన్వేషణ / క్లీనీ నియత రూపం / సూచిక / నిలుపు సమస్య (హాల్టింగ్ సమస్య) / సక్రమ ప్రమేయం / సామాన్య పునరావృత్త ప్రమేయం” is idiomatic and technically standard for “primitive recursive relation / bounded quantification / bounded minimization / conditional function / prime number / sequence coding / tree coding / simultaneous recursion / course-of-values recursion / partial recursive function / unbounded search / Kleene normal form / index / halting problem / regular function / general recursive function” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?

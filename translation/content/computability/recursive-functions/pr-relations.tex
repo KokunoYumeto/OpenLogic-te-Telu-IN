@@ -1,0 +1,170 @@
+% Part: computability
+% Chapter: recursive-functions
+% Section: pr-relations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cmp}{rec}{prr}
+\olsection{ఆదిమ పునరావృత్త సంబంధాలు}
+
+
+\begin{defn}
+ఒక సంబంధం $R(\vec x)$ యొక్క లక్షణ ప్రమేయం
+\[
+\Char{R}(\vec x) = \left\{
+  \begin{array}{ll}
+  1 & \mbox{$R(\vec x)$ అయితే} \\
+  0 & \mbox{ఇతర సందర్భాల్లో}
+  \end{array}
+\right.
+\]
+ఆదిమ పునరావృత్త ప్రమేయమైతే, ఆ సంబంధాన్ని \emph{ఆదిమ పునరావృత్త
+సంబంధం} అంటాం.
+\end{defn}
+
+మరో విధంగా చెప్పాలంటే, ఆదిమ పునరావృత్త సంబంధం $R(\vec x)$ గురించి
+మాట్లాడుతున్నప్పుడు, $\Char{R}(\vec x)=1$ రూపంలోని సంబంధాన్ని
+సూచిస్తున్నాం. ఇక్కడ $\Char{R}$ ఏ ఇన్‌పుట్‌కైనా 1 లేదా 0ను
+తిరిగి ఇచ్చే ఆదిమ పునరావృత్త ప్రమేయం. ఉదాహరణకు, $x=0$ అయినప్పుడే
+నెరవేరే సంబంధం $\fn{IsZero}(x)$కు అనుగుణమైన లక్షణ ప్రమేయం
+$\Char{\fn{IsZero}}$ను ఆదిమ పునరావృత్తితో ఇలా నిర్వచించవచ్చు:
+\begin{align*}
+\Char{\fn{IsZero}}(0) & = 1,\\
+\Char{\fn{IsZero}}(x+1) & = 0.
+\end{align*}
+
+సంబంధాలను ఇతర ఆదిమ పునరావృత్త ప్రమేయాలతో సంయుక్తం చేయవచ్చని
+స్పష్టమే. అందువల్ల కిందివి కూడా ఆదిమ పునరావృత్త సంబంధాలు:
+\begin{enumerate}
+\item $\fn{IsZero}(\left|x-y\right|)$తో నిర్వచించిన సమానతా సంబంధం
+  $x=y$;
+\item $\fn{IsZero}(x\tsub y)$తో నిర్వచించిన చిన్నది-లేదా-సమానం
+  సంబంధం $x\leq y$.
+\end{enumerate}
+\sourcecorrection{OLTECRREM-001}{ఆంగ్ల మూలం $x\leq y$ను ``less-than relation'' అని పిలిచింది; ప్రదర్శిత సూత్రానికి అనుగుణంగా దాన్ని చిన్నది-లేదా-సమానం సంబంధంగా సరిచేశాం.}
+
+
+\begin{prop}
+  ఆదిమ పునరావృత్త సంబంధాల సమితి బూలియన్ క్రియల కింద సంవృతం. అంటే,
+  $P(\vec x)$, $Q(\vec x)$ ఆదిమ పునరావృత్త సంబంధాలైతే కిందివి కూడా
+  అలాంటివే:
+  \begin{enumerate}
+  \item $\lnot P(\vec x)$
+  \item $P(\vec x) \land Q(\vec x)$
+  \item $P(\vec x) \lor Q(\vec x)$
+  \item $P(\vec x) \lif Q(\vec x)$.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  $P(\vec x)$, $Q(\vec x)$ ఆదిమ పునరావృత్త సంబంధాలని, అంటే వాటి
+  లక్షణ ప్రమేయాలు $\Char{P}$, $\Char{Q}$ ఆదిమ పునరావృత్తాలని
+  అనుకుందాం. $\lnot P(\vec x)$ మొదలైన వాటి లక్షణ ప్రమేయాలు కూడా
+  ఆదిమ పునరావృత్తాలని చూపాలి.
+  \[
+  \Char{\lnot P}(\vec x) = \begin{cases}
+    0 & \text{$\Char{P}(\vec x) = 1$ అయితే}\\
+    1 & \text{ఇతర సందర్భాల్లో.}
+  \end{cases}
+  \]
+  $\Char{\lnot P}(\vec x)$ను $1\tsub\Char{P}(\vec x)$గా
+  నిర్వచించవచ్చు.
+  \[
+  \Char{P \land Q}(\vec x) = \begin{cases}
+    1 & \text{$\Char{P}(\vec x)=\Char{Q}(\vec x)=1$ అయితే}\\
+    0 & \text{ఇతర సందర్భాల్లో.}
+  \end{cases}
+  \]
+  $\Char{P\land Q}(\vec x)$ను $\Char{P}(\vec x)\cdot
+  \Char{Q}(\vec x)$గా గానీ, $\fn{min}(\Char{P}(\vec x),
+  \Char{Q}(\vec x))$గా గానీ నిర్వచించవచ్చు. అదేవిధంగా,
+  \begin{align*}
+    \Char{P \lor Q}(\vec x) & = \fn{max}(\Char{P}(\vec x), \Char{Q}(\vec x)) \text{ మరియు}\\
+    \Char{P \lif Q}(\vec x) & = \fn{max}(1 \tsub
+  \Char{P}(\vec x), \Char{Q}(\vec x)).
+  \end{align*}
+\end{proof}
+
+\begin{prop}
+  ఆదిమ పునరావృత్త సంబంధాల సమితి పరిమిత పరిమాణీకరణ కింద సంవృతం.
+  అంటే, $R(\vec x,z)$ ఆదిమ పునరావృత్త సంబంధమైతే కింది సంబంధాలు కూడా
+  అలాంటివే:
+  \begin{align*}
+    & \bforall{z < y}{R(\vec x, z)} \text{ మరియు}\\
+    & \bexists{z < y}{R(\vec x, z)}.
+  \end{align*}
+  ప్రతి $y$కన్నా చిన్న $z$కు $R(\vec x,z)$ నెరవేరినప్పుడే
+  $\bforall{z<y}{R(\vec x,z)}$ అనేది $\vec x$, $y$లకు నెరవేరుతుంది;
+  $\bexists{z<y}{R(\vec x,z)}$కు కూడా సదృశమైన అర్థమే ఉంటుంది.
+\end{prop}
+
+\begin{proof}
+  ఆనవాయితీగా, $0$కన్నా చిన్న $z$ ఏదీ లేదు అనే తేలికైన కారణంతో
+  $\bforall{z<0}{R(\vec x,z)}$ను సత్యమనీ,
+  $\bexists{z<0}{R(\vec x,z)}$ను అసత్యమనీ తీసుకుంటాం. పరిమిత
+  సార్వత్రిక పరిమాణకం ఒక పరిమిత లబ్ధంలా లేదా పునరావృత కనిష్ఠంలా
+  పనిచేస్తుంది. అంటే, $P(\vec x,y)\defiff
+  \bforall{z<y}{R(\vec x,z)}$ అయితే $\Char{P}(\vec x,y)$ను ఇలా
+  నిర్వచించవచ్చు:
+  \begin{align*}
+    \Char{P}(\vec x, 0) & = 1\\
+    \Char{P}(\vec x, y+1) & =
+    \fn{min}(\Char{P}(\vec x, y), \Char{R}(\vec x, y)).
+  \end{align*}
+  పరిమిత అస్తిత్వ పరిమాణీకరణను కూడా $\fn{max}$తో సదృశంగా
+  నిర్వచించవచ్చు. ప్రత్యామ్నాయంగా,
+  $\bexists{z<y}{R(\vec x,z)}\liff
+  \lnot\bforall{z<y}{\lnot R(\vec x,z)}$ అనే తుల్యతను ఉపయోగించి
+  పరిమిత సార్వత్రిక పరిమాణీకరణ నుంచి దాన్ని నిర్వచించవచ్చు. ఉదాహరణకు,
+  $\bexists{x\leq y}{\dots x\dots}$ రూపంలోని పరిమిత పరిమాణకం
+  $\bexists{x<y+1}{\dots x\dots}$కు తుల్యమని గమనించండి.
+\end{proof}
+
+\begin{prob}
+  మూడుస్థానిక సంబంధం $x\equiv y\mod n$ (మాడ్యులో~$n$ సమశేషత)
+  ఆదిమ పునరావృత్త సంబంధమని చూపండి.
+\end{prob}
+
+మరొక ఉపయోగకరమైన ఆదిమ పునరావృత్త ప్రమేయం షరతు ప్రమేయం
+$\fn{cond}(x,y,z)$; దాన్ని ఇలా నిర్వచిస్తాం:
+\begin{align*}
+  \fn{cond}(x,y,z) & = \begin{cases}
+  y & \text{$x=0$ అయితే} \\
+  z & \text{ఇతర సందర్భాల్లో}.
+\end{cases}
+\intertext{దీన్ని పునరావృత్తంగా ఇలా నిర్వచించవచ్చు:}
+\fn{cond}(0,y,z) & = y,\\
+\fn{cond}(x+1,y,z) & = z.
+\end{align*}
+ఆదిమ పునరావృత్త సంబంధాల ఆధారంగా సందర్భాలవారీగా ఆదిమ పునరావృత్త
+ప్రమేయాలను నిర్వచించడం సమర్థించడానికి దీన్ని వాడవచ్చు:
+
+\begin{prop}
+$g_0(\vec x)$, \dots,~$g_m(\vec x)$ ఆదిమ పునరావృత్త ప్రమేయాలు,
+$R_0(\vec x)$, \dots,~$R_{m-1}(\vec x)$ ఆదిమ పునరావృత్త సంబంధాలు
+అయితే, కింది విధంగా నిర్వచించిన ప్రమేయం $f$ కూడా ఆదిమ పునరావృత్తమే:
+\[
+f(\vec x) = \begin{cases}
+    g_0(\vec x) & \text{$R_0(\vec{x})$ అయితే} \\
+    g_1(\vec x) & \text{$R_1(\vec{x})$ అయి, $R_0(\vec{x})$ కాకపోతే} \\
+    \vdots & \\
+    g_{m-1}(\vec x) & \text{$R_{m-1}(\vec{x})$ అయి, ముందువాటిలో
+      ఏదీ కాకపోతే}
+    \\
+    g_m(\vec x) & \mbox{ఇతర సందర్భాల్లో.}
+\end{cases}
+\]
+\end{prop}
+
+\begin{proof}
+  $m = 1$ అయినప్పుడు ఇది కేవలం కింది విధంగా నిర్వచించిన ప్రమేయం:
+  \[
+  f(\vec x) = \fn{cond}(\Char{\lnot R_0}(\vec x),g_0(\vec x),g_1(\vec
+  x)).
+  \]
+  $m$ అనేది $1$కన్నా ఎక్కువ అయినప్పుడు ఈ రూపంలోని నిర్వచనాలను సంయుక్తం
+  చేస్తే సరిపోతుంది.
+\end{proof}
+\end{document}

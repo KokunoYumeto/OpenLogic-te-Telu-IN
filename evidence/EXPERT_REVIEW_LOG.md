@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 213 of 722 draft units**. This log contains 64 terminology/sense decisions and 170 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 224 of 722 draft units**. This log contains 65 terminology/sense decisions and 180 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -188,7 +188,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Exact implementation: OLP-0007; sets-functions-relations/sets/important-sets; content/sets-functions-relations/sets/important-sets.tex:12-27 ↔ translation/content/sets-functions-relations/sets/important-sets.tex:12-26 (OLP-0007-B005); printed/PDF page pending; OLP-0007; sets-functions-relations/sets/important-sets; content/sets-functions-relations/sets/important-sets.tex:12-27 ↔ translation/content/sets-functions-relations/sets/important-sets.tex:12-26 (OLP-0007-B005); printed/PDF page pending; OLP-0007; sets-functions-relations/sets/important-sets; content/sets-functions-relations/sets/important-sets.tex:40-43 ↔ translation/content/sets-functions-relations/sets/important-sets.tex:41-43 (OLP-0007-B007); printed/PDF page pending
 
-- Authorities actually checked: TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P005, PDF 21, printed 9, Opening paragraph and Example 1; TE-P007, PDF 26, printed 16, Sections 2.1-2.2, natural and whole number sets; TE-P013, PDF 85, printed 75, Integer definition and number line, section 6.4
+- Authorities actually checked: TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P007, PDF 26, printed 16, Sections 2.1-2.2, natural and whole number sets; TE-P013, PDF 85, printed 75, Integer definition and number line, section 6.4
 
 - Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
 
@@ -260,7 +260,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Exact implementation: OLP-0007; sets-functions-relations/sets/important-sets; content/sets-functions-relations/sets/important-sets.tex:45-60 ↔ translation/content/sets-functions-relations/sets/important-sets.tex:45-61 (OLP-0007-B008); printed/PDF page pending; OLP-0007; sets-functions-relations/sets/important-sets; content/sets-functions-relations/sets/important-sets.tex:62-67 ↔ translation/content/sets-functions-relations/sets/important-sets.tex:63-68 (OLP-0007-B009); printed/PDF page pending
 
-- Authorities actually checked: TE-P001, PDF 11, printed 37, Section 2, middle paragraph on sets; TE-P005, PDF 21, printed 9, Opening paragraph and Example 1; TE-P016, PDF 310, printed 303, Questions 4-5 and answers on finite, infinite and equivalent sets
+- Authorities actually checked: TE-P001, PDF 11, printed 37, Section 2, middle paragraph on sets; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P016, PDF 310, printed 303, Questions 4-5 and answers on finite, infinite and equivalent sets
 
 - Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
 
@@ -332,7 +332,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Exact implementation: OLP-0005; sets-functions-relations/sets/basics; content/sets-functions-relations/sets/basics.tex:73-92 ↔ translation/content/sets-functions-relations/sets/basics.tex:76-96 (OLP-0005-B012); printed/PDF page pending; OLP-0005; sets-functions-relations/sets/basics; content/sets-functions-relations/sets/basics.tex:73-92 ↔ translation/content/sets-functions-relations/sets/basics.tex:76-96 (OLP-0005-B012); printed/PDF page pending
 
-- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P005, PDF 21, printed 9, Opening paragraph and Example 1
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2
 
 - Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
 
@@ -620,7 +620,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Exact implementation: OLP-0029; sets-functions-relations/size-of-sets/enumerability; content/sets-functions-relations/size-of-sets/enumerability.tex:27-32 ↔ translation/content/sets-functions-relations/size-of-sets/enumerability.tex:27-32 (OLP-0029-B008); printed/PDF page pending; OLP-0038; sets-functions-relations/size-of-sets/enumerability-alt; content/sets-functions-relations/size-of-sets/enumerability-alt.tex:39-43 ↔ translation/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:39-43 (OLP-0038-B009); printed/PDF page pending
 
-- Authorities actually checked: TE-P016, PDF 310, printed 303, Questions 4-5 and answers on finite, infinite and equivalent sets; TE-P005, PDF 21, printed 9, Opening paragraph and Example 1
+- Authorities actually checked: TE-P016, PDF 310, printed 303, Questions 4-5 and answers on finite, infinite and equivalent sets; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2
 
 - Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
 
@@ -1388,7 +1388,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Exact implementation: OLP-0192; model-theory/models-of-arithmetic/introduction; content/model-theory/models-of-arithmetic/introduction.tex:12-39 ↔ translation/content/model-theory/models-of-arithmetic/introduction.tex:12-51 (OLP-0192-B005); printed/PDF page pending; OLP-0194; model-theory/models-of-arithmetic/non-standard-models; content/model-theory/models-of-arithmetic/non-standard-models.tex:18-24 ↔ translation/content/model-theory/models-of-arithmetic/non-standard-models.tex:19-26 (OLP-0194-B006); printed/PDF page pending
 
-- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P005, PDF 21, printed 9, Opening paragraph and Example 1; TE-P006, PDF 10, printed 36, Section 1 on real numbers; TE-P007, PDF 26, printed 16, Sections 2.1-2.2, natural and whole number sets; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P006, PDF 10, printed 36, Section 1 on real numbers; TE-P007, PDF 26, printed 16, Sections 2.1-2.2, natural and whole number sets; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening
 
 - Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
 
@@ -1412,7 +1412,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Exact implementation: OLP-0196; model-theory/models-of-arithmetic/models-of-pa; content/model-theory/models-of-arithmetic/models-of-pa.tex:60-67 ↔ translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:64-77 (OLP-0196-B010); printed/PDF page pending; OLP-0196; model-theory/models-of-arithmetic/models-of-pa; content/model-theory/models-of-arithmetic/models-of-pa.tex:97-108 ↔ translation/content/model-theory/models-of-arithmetic/models-of-pa.tex:111-123 (OLP-0196-B015); printed/PDF page pending
 
-- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P005, PDF 21, printed 9, Opening paragraph and Example 1; TE-P007, PDF 26, printed 16, Sections 2.1-2.2, natural and whole number sets; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P016, PDF 310, printed 303, Questions 4-5 and answers on finite, infinite and equivalent sets; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P004, PDF 19, printed 7, Theorem 1.1 and surrounding Telugu explanation; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P007, PDF 26, printed 16, Sections 2.1-2.2, natural and whole number sets; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P016, PDF 310, printed 303, Questions 4-5 and answers on finite, infinite and equivalent sets; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
 
 - Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
 
@@ -1532,7 +1532,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Exact implementation: OLP-0211; computability/recursive-functions/primitive-recursion; content/computability/recursive-functions/primitive-recursion.tex:9-10 ↔ translation/content/computability/recursive-functions/primitive-recursion.tex:9-10 (OLP-0211-B004); printed/PDF page pending; OLP-0212; computability/recursive-functions/composition; content/computability/recursive-functions/composition.tex:9-10 ↔ translation/content/computability/recursive-functions/composition.tex:9-10 (OLP-0212-B004); printed/PDF page pending; OLP-0212; computability/recursive-functions/composition; content/computability/recursive-functions/composition.tex:67-88 ↔ translation/content/computability/recursive-functions/composition.tex:70-90 (OLP-0212-B010); printed/PDF page pending; OLP-0213; computability/recursive-functions/pr-functions; content/computability/recursive-functions/pr-functions.tex:44-61 ↔ translation/content/computability/recursive-functions/pr-functions.tex:46-62 (OLP-0213-B009); printed/PDF page pending; OLP-0215; computability/recursive-functions/pr-functions-computable; content/computability/recursive-functions/pr-functions-computable.tex:32-35 ↔ translation/content/computability/recursive-functions/pr-functions-computable.tex:33-35 (OLP-0215-B006); printed/PDF page pending
 
-- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P005, PDF 21, printed 9, Opening paragraph and Example 1; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P012, PDF 319, printed 312, Questions 37-38; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P012, PDF 319, printed 312, Questions 37-38; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
 
 - Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
 
@@ -1543,6 +1543,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low semantic uncertainty because the recursive clauses, composition equation, projection equation and computation traces are explicit; medium to high nomenclatural uncertainty for primitive-recursion compounds and arity
 
 - Please double-check: Please double-check whether “ఆదిమ పునరావృత్తి / ఆదిమ పునరావృత్త ప్రమేయం / సంయుక్తం / ప్రక్షేప ప్రమేయం / స్థానసంఖ్య (అరిటీ) / లక్షణ ప్రమేయం / శూన్య ప్రమేయం / ఉత్తరగామి ప్రమేయం / ఆదిమ పునరావృత్తి సంకేతనం” is idiomatic and technically standard for “primitive recursion / primitive recursive function / composition / projection function / arity / characteristic function / zero function / successor function / primitive-recursion notation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T065 — primitive recursive relation / bounded quantification / bounded minimization / conditional function / prime number / sequence coding / tree coding / simultaneous recursion / course-of-values recursion / partial recursive function / unbounded search / Kleene normal form / index / halting problem / regular function / general recursive function
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: ఆదిమ పునరావృత్త సంబంధం / పరిమిత పరిమాణీకరణ / పరిమిత కనిష్ఠీకరణ / షరతు ప్రమేయం / ప్రధాన సంఖ్య / క్రమ సంకేతీకరణ / వృక్ష సంకేతీకరణ / సమకాల పునరావృత్తి / పూర్వవిలువల పునరావృత్తి / పాక్షిక పునరావృత్త ప్రమేయం / అపరిమిత అన్వేషణ / క్లీనీ నియత రూపం / సూచిక / నిలుపు సమస్య (హాల్టింగ్ సమస్య) / సక్రమ ప్రమేయం / సామాన్య పునరావృత్త ప్రమేయం
+
+- Exact implementation: OLP-0217; computability/recursive-functions/pr-relations; content/computability/recursive-functions/pr-relations.tex:9-10 ↔ translation/content/computability/recursive-functions/pr-relations.tex:9-10 (OLP-0217-B004); printed/PDF page pending; OLP-0218; computability/recursive-functions/bounded-minimization; content/computability/recursive-functions/bounded-minimization.tex:9-10 ↔ translation/content/computability/recursive-functions/bounded-minimization.tex:9-10 (OLP-0218-B004); printed/PDF page pending; OLP-0219; computability/recursive-functions/primes; content/computability/recursive-functions/primes.tex:9-10 ↔ translation/content/computability/recursive-functions/primes.tex:9-10 (OLP-0219-B004); printed/PDF page pending; OLP-0220; computability/recursive-functions/sequences; content/computability/recursive-functions/sequences.tex:27-36 ↔ translation/content/computability/recursive-functions/sequences.tex:26-35 (OLP-0220-B006); printed/PDF page pending; OLP-0222; computability/recursive-functions/other-recursions; content/computability/recursive-functions/other-recursions.tex:12-47 ↔ translation/content/computability/recursive-functions/other-recursions.tex:12-46 (OLP-0222-B005); printed/PDF page pending; OLP-0224; computability/recursive-functions/partial-functions; content/computability/recursive-functions/partial-functions.tex:9-10 ↔ translation/content/computability/recursive-functions/partial-functions.tex:9-10 (OLP-0224-B004); printed/PDF page pending; OLP-0225; computability/recursive-functions/normal-form; content/computability/recursive-functions/normal-form.tex:12-21 ↔ translation/content/computability/recursive-functions/normal-form.tex:12-21 (OLP-0225-B005); printed/PDF page pending; OLP-0226; computability/recursive-functions/halting-problem; content/computability/recursive-functions/halting-problem.tex:9-10 ↔ translation/content/computability/recursive-functions/halting-problem.tex:9-10 (OLP-0226-B004); printed/PDF page pending; OLP-0227; computability/recursive-functions/general-recursive-functions; content/computability/recursive-functions/general-recursive-functions.tex:9-10 ↔ translation/content/computability/recursive-functions/general-recursive-functions.tex:9-10 (OLP-0227-B004); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P012, PDF 319, printed 312, Questions 37-38; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P028, PDF 92, printed 85, Unary predicates, binary relations and quantifier classification; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P005 directly uses ప్రధాన సంఖ్యలు and ప్రధాన కారణాంకాలు and names అంకగణిత ప్రాథమిక సిద్ధాంతం in a unique-prime-factorization discussion. TE-P028 directly supports universal and existential quantifier taxonomy and relation/predicate context; TE-P010--TE-P012 support relation and function language; TE-P008 supports set, element and ordered-sequence register; TE-P003 and TE-P032 support proof and reasoning prose; TE-P018 supports formal symbolic-logic register. The witnesses do not directly attest bounded minimization, sequence/tree coding, simultaneous or course-of-values recursion, partial recursion, unbounded search, Kleene normal form, indices, the halting problem, regularity, or general recursion. The frozen definitions, recursive equations, coding constructions, diagonal arguments and theorem statements in OLP-0217--OLP-0227 control those exact senses; TE-T011, TE-T019, TE-T024, TE-T028, TE-T060 and TE-T064 supply the edition's earlier reversible choices. క్లీనీ, కాంటర్, అకెర్మాన్--పీటర్, చర్చ్--ట్యూరింగ్ and అలన్ ట్యూరింగ్ are source eponyms or names; హాల్టింగ్ appears only as an explicit parenthetical technical borrowing beside descriptive నిలుపు సమస్య; no unexplained English technical headword remains in reader-facing prose
+
+- Alternatives: reuse the directly witnessed ప్రధాన సంఖ్యలు, ప్రధాన కారణాంకాలు, quantifier, relation and function register while keeping the specialized recursion and coding compounds definition-controlled (chosen); leave the specialized headwords in untranslated English reader prose (rejected); claim direct native attestation for partial recursion, normal form, halting, regularity or general recursion (rejected because the frozen definitions and arguments control those senses); retain హాల్టింగ్ only as an explicit parenthetical borrowing beside descriptive నిలుపు సమస్య (chosen)
+
+- Uncertainty: Low semantic uncertainty because the central notions are defined by explicit formulas, constructions or diagonal arguments; low nomenclatural uncertainty for prime-number and quantifier language; medium to high nomenclatural uncertainty for the specialized recursion, coding, normal-form, halting and regularity compounds
+
+- Please double-check: Please double-check whether “ఆదిమ పునరావృత్త సంబంధం / పరిమిత పరిమాణీకరణ / పరిమిత కనిష్ఠీకరణ / షరతు ప్రమేయం / ప్రధాన సంఖ్య / క్రమ సంకేతీకరణ / వృక్ష సంకేతీకరణ / సమకాల పునరావృత్తి / పూర్వవిలువల పునరావృత్తి / పాక్షిక పునరావృత్త ప్రమేయం / అపరిమిత అన్వేషణ / క్లీనీ నియత రూపం / సూచిక / నిలుపు సమస్య (హాల్టింగ్ సమస్య) / సక్రమ ప్రమేయం / సామాన్య పునరావృత్త ప్రమేయం” is idiomatic and technically standard for “primitive recursive relation / bounded quantification / bounded minimization / conditional function / prime number / sequence coding / tree coding / simultaneous recursion / course-of-values recursion / partial recursive function / unbounded search / Kleene normal form / index / halting problem / regular function / general recursive function” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -5623,3 +5647,243 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check that the doubling construction uses const_2 rather than the unrestricted const_n, matching f(x)=2 times x and the displayed composition.
+
+## REV-OLTECRREM-001 — OLTECRREM-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: named the displayed x less-than-or-equal y relation correctly; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0217; computability/recursive-functions/pr-relations; lines 38-45, examples of primitive recursive relations ↔ translation/content/computability/recursive-functions/pr-relations.tex:38-46 (OLP-0217-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTECRREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: named the displayed x less-than-or-equal y relation correctly; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the displayed x less-than-or-equal y relation is named non-strict order rather than strict less-than.
+
+## REV-OLTECRREM-002 — OLTECRREM-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: preserved vec x as the parameter vector in the third case; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0218; computability/recursive-functions/bounded-minimization; lines 41-49, three successor-bound cases ↔ translation/content/computability/recursive-functions/bounded-minimization.tex:42-51 (OLP-0218-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTECRREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: preserved vec x as the parameter vector in the third case; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the third successor-bound case preserves the parameter vector x used by the relation and the other two cases.
+
+## REV-OLTECRREM-003 — OLTECRREM-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: described the remainder when y is divided by x; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0219; computability/recursive-functions/primes; lines 12-27, divisibility explanation ↔ translation/content/computability/recursive-functions/primes.tex:12-28 (OLP-0219-B005); printed/PDF page pending
+
+- Authorities actually checked: OLTECRREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: described the remainder when y is divided by x; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that x divides y is explained through the remainder when y is divided by x, not the reverse operation.
+
+## REV-OLTECRREM-004 — OLTECRREM-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: separated the nextPrime function name from its argument in both malformed occurrences; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0219; computability/recursive-functions/primes; lines 46-60, next-prime definition ↔ translation/content/computability/recursive-functions/primes.tex:48-65 (OLP-0219-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTECRREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: separated the nextPrime function name from its argument in both malformed occurrences; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that nextPrime is typeset as a function name followed by its argument in both repaired occurrences.
+
+## REV-OLTECRREM-005 — OLTECRREM-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: handled x=0 and x=1 directly before applying the prime-product argument at x at least 2; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0219; computability/recursive-functions/primes; lines 64-74, Euclid-bound proof ↔ translation/content/computability/recursive-functions/primes.tex:67-80 (OLP-0219-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTECRREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: handled x=0 and x=1 directly before applying the prime-product argument at x at least 2; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that x=0 and x=1 are discharged directly before the Euclid product proof assumes a largest prime at most x.
+
+## REV-OLTECRREM-006 — OLTECRREM-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: replaced the malformed empty-tuple application with the asserted sequence-to-code mapping; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0220; computability/recursive-functions/sequences; lines 27-36, uniqueness of sequence coding ↔ translation/content/computability/recursive-functions/sequences.tex:26-35 (OLP-0220-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTECRREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: replaced the malformed empty-tuple application with the asserted sequence-to-code mapping; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the repaired map explicitly sends a finite tuple to its numeric sequence code and states the injective direction correctly.
+
+## REV-OLTECRREM-007 — OLTECRREM-007
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: defined the bound at k=0 and made the bounded search inclusive; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0220; computability/recursive-functions/sequences; lines 144-154; mapped segment within audited scope lines 144-168, sequence bound and bounded-search concatenation ↔ translation/content/computability/recursive-functions/sequences.tex:144-154 (OLP-0220-B018); printed/PDF page pending; OLP-0220; computability/recursive-functions/sequences; lines 156-168; mapped segment within audited scope lines 144-168, sequence bound and bounded-search concatenation ↔ translation/content/computability/recursive-functions/sequences.tex:156-168 (OLP-0220-B019); printed/PDF page pending
+
+- Authorities actually checked: OLTECRREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: defined the bound at k=0 and made the bounded search inclusive; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the sequence bound is defined at length zero and that the bounded search includes a code equal to the proved upper bound.
+
+## REV-OLTECRREM-008 — OLTECRREM-008
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: described the cumulative construction as containing subtrees at distance at most n; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0221; computability/recursive-functions/trees; lines 37-47, intended levels of hSubtreeSeq ↔ translation/content/computability/recursive-functions/trees.tex:36-47 (OLP-0221-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTECRREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: described the cumulative construction as containing subtrees at distance at most n; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that hSubtreeSeq is described cumulatively as listing subtrees at distance at most n, matching its recurrence.
+
+## REV-OLTECRREM-009 — OLTECRREM-009
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used an empty base and added the kth entry in the k-to-k+1 step, so the length call stays in range; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0221; computability/recursive-functions/trees; lines 48-57, g_f recursion and h application ↔ translation/content/computability/recursive-functions/trees.tex:48-59 (OLP-0221-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTECRREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used an empty base and added the kth entry in the k-to-k+1 step, so the length call stays in range; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the sequence fold starts empty and appends indices 0 through k-1, so the length call never reads past the sequence.
+
+## REV-OLTECRREM-010 — OLTECRREM-010
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: removed the impossible non-index disjunct and stated the direct contradiction in each diagonal case; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0226; computability/recursive-functions/halting-problem; lines 27-48; mapped segment within audited scope lines 27-48 and 55-89, universal cfind family and diagonal proof ↔ translation/content/computability/recursive-functions/halting-problem.tex:25-44 (OLP-0226-B006); printed/PDF page pending; OLP-0226; computability/recursive-functions/halting-problem; lines 55-90; mapped segment within audited scope lines 27-48 and 55-89, universal cfind family and diagonal proof ↔ translation/content/computability/recursive-functions/halting-problem.tex:51-83 (OLP-0226-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTECRREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: removed the impossible non-index disjunct and stated the direct contradiction in each diagonal case; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the universal indexed family removes the impossible non-index branch and that both halting values directly contradict the diagonal index equation.

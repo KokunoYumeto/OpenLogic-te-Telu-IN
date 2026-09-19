@@ -1,0 +1,164 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTECRREM-20260919",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0217",
+      "OLP-0218",
+      "OLP-0219",
+      "OLP-0220",
+      "OLP-0221",
+      "OLP-0226"
+    ],
+    "finding_count": 10
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTECRREM-001",
+      "unit_id": "OLP-0217",
+      "classification": "confirmed_mislabeled_nonstrict_relation",
+      "source": {
+        "path": "content/computability/recursive-functions/pr-relations.tex",
+        "bytes": 5533,
+        "sha256": "9ab1255a55ef04404aadcde303e86a6d245f8d92c42f096de134658aebf82f97",
+        "locator": "lines 38-45, examples of primitive recursive relations"
+      },
+      "finding": "The source calls x <= y the less-than relation, although both the displayed symbol and the IsZero(x truncated-subtraction y) definition express less-than-or-equal.",
+      "controlling_evidence": "For natural numbers, truncated subtraction x truncated-subtraction y is zero exactly when x <= y; it is not zero exactly when x > y.",
+      "required_translation_handling": "Name the displayed relation less-than-or-equal and add an adjacent OLTECRREM-001 disclosure."
+    },
+    {
+      "finding_id": "OLTECRREM-002",
+      "unit_id": "OLP-0218",
+      "classification": "confirmed_wrong_vector_argument",
+      "source": {
+        "path": "content/computability/recursive-functions/bounded-minimization.tex",
+        "bytes": 2522,
+        "sha256": "682737f7312e08999a21f07a0a6859e4e0b4ed81ec5c9094789f774f1596bda6",
+        "locator": "lines 41-49, three successor-bound cases"
+      },
+      "finding": "The third case changes the parameter vector of m_R from vec x to vec z, even though z is the bound search variable and every other defining clause uses vec x.",
+      "controlling_evidence": "The proposition and the recursive definition immediately below both define m_R(vec x,y); the third case must preserve those parameters.",
+      "required_translation_handling": "Use m_R(vec x,y+1)=y+1 in the third case and add an adjacent OLTECRREM-002 disclosure."
+    },
+    {
+      "finding_id": "OLTECRREM-003",
+      "unit_id": "OLP-0219",
+      "classification": "confirmed_reversed_dividend_divisor",
+      "source": {
+        "path": "content/computability/recursive-functions/primes.tex",
+        "bytes": 3354,
+        "sha256": "76fc5fb7d628c14a52d6a8b0e9fbad24fe15fa49f170e89f8982d79043daa1b4",
+        "locator": "lines 12-27, divisibility explanation"
+      },
+      "finding": "The parenthetical explanation of x not-divides y reverses dividend and divisor by referring to the remainder when dividing x by y.",
+      "controlling_evidence": "The surrounding definition says x divides y exactly when y is an integer multiple of x, equivalently when y divided by x has remainder zero.",
+      "required_translation_handling": "Refer to the remainder when y is divided by x and add an adjacent OLTECRREM-003 disclosure."
+    },
+    {
+      "finding_id": "OLTECRREM-004",
+      "unit_id": "OLP-0219",
+      "classification": "confirmed_malformed_function_notation",
+      "source": {
+        "path": "content/computability/recursive-functions/primes.tex",
+        "bytes": 3354,
+        "sha256": "76fc5fb7d628c14a52d6a8b0e9fbad24fe15fa49f170e89f8982d79043daa1b4",
+        "locator": "lines 46-60, next-prime definition"
+      },
+      "finding": "Two occurrences put the argument x inside the function-name macro as fn{nextPrime(x)}, unlike the actual application fn{nextPrime}(x) used in the recurrence.",
+      "controlling_evidence": "The recurrence p(x+1)=nextPrime(p(x)) and the chapter-wide convention separate a function name from its parenthesized arguments.",
+      "required_translation_handling": "Use fn{nextPrime}(x) consistently and add an adjacent OLTECRREM-004 disclosure."
+    },
+    {
+      "finding_id": "OLTECRREM-005",
+      "unit_id": "OLP-0219",
+      "classification": "confirmed_missing_small_bound_cases",
+      "source": {
+        "path": "content/computability/recursive-functions/primes.tex",
+        "bytes": 3354,
+        "sha256": "76fc5fb7d628c14a52d6a8b0e9fbad24fe15fa49f170e89f8982d79043daa1b4",
+        "locator": "lines 64-74, Euclid-bound proof"
+      },
+      "finding": "The proof chooses the largest prime p_n <= x without treating x=0 or x=1, for which no such p_n exists.",
+      "controlling_evidence": "The claimed bound still holds in both omitted cases because 2 <= x!+1; the product-of-primes argument is valid after restricting it to x>=2.",
+      "required_translation_handling": "Dispatch x=0 and x=1 directly, apply the product argument for x>=2, and add an adjacent OLTECRREM-005 disclosure."
+    },
+    {
+      "finding_id": "OLTECRREM-006",
+      "unit_id": "OLP-0220",
+      "classification": "confirmed_malformed_encoding_map",
+      "source": {
+        "path": "content/computability/recursive-functions/sequences.tex",
+        "bytes": 6596,
+        "sha256": "044570a5499177a994d08baaa6109db5db40c6d69dda2d8961909cdce945b8ae",
+        "locator": "lines 27-36, uniqueness of sequence coding"
+      },
+      "finding": "The asserted injective map is printed as an empty tuple applied to (a_0,...,a_k), equated to the tuple code, rather than as a map from the input sequence to its code.",
+      "controlling_evidence": "The preceding product defines the numeric code, and the following prose explicitly says different sequences are mapped to different numbers.",
+      "required_translation_handling": "Write (a_0,...,a_k) maps-to tuple{a_0,...,a_k} and add an adjacent OLTECRREM-006 disclosure."
+    },
+    {
+      "finding_id": "OLTECRREM-007",
+      "unit_id": "OLP-0220",
+      "classification": "confirmed_invalid_sequence_bound",
+      "source": {
+        "path": "content/computability/recursive-functions/sequences.tex",
+        "bytes": 6596,
+        "sha256": "044570a5499177a994d08baaa6109db5db40c6d69dda2d8961909cdce945b8ae",
+        "locator": "lines 144-168, sequence bound and bounded-search concatenation"
+      },
+      "finding": "The bound p_{k-1}^{k(x+1)} is undefined for the empty sequence k=0, and the subsequent minimization searches strictly below a quantity proved only to be an inclusive upper bound.",
+      "controlling_evidence": "The chapter fixes 0 as the empty-sequence code, so 1 is a valid bound at k=0. For k=1 with sole element x, the code 2^{x+1} equals the stated bound, showing that strict search can omit the required code.",
+      "required_translation_handling": "Define the bound as 1 at k=0 and the displayed prime-power expression at k>0; search through values less than or equal to the bound; add an adjacent OLTECRREM-007 disclosure."
+    },
+    {
+      "finding_id": "OLTECRREM-008",
+      "unit_id": "OLP-0221",
+      "classification": "confirmed_level_description_recurrence_mismatch",
+      "source": {
+        "path": "content/computability/recursive-functions/trees.tex",
+        "bytes": 3410,
+        "sha256": "a6e3ba54bc944e81c1db72ae00f56f1dc27b3ed05c57de110585810927569277",
+        "locator": "lines 37-47, intended levels of hSubtreeSeq"
+      },
+      "finding": "The prose describes hSubtreeSeq(t,n) as containing subtrees exactly n levels from the root, but its recurrence retains the previous sequence and adds the next level, so it is cumulative.",
+      "controlling_evidence": "The base contains t, each successor value concatenates the preceding value with immediate subtrees, and the final claim uses hSubtreeSeq(t,t) as the sequence of all subtrees.",
+      "required_translation_handling": "Describe hSubtreeSeq(t,n) as containing subtrees at distance at most n and add an adjacent OLTECRREM-008 disclosure."
+    },
+    {
+      "finding_id": "OLTECRREM-009",
+      "unit_id": "OLP-0221",
+      "classification": "confirmed_off_by_one_sequence_fold",
+      "source": {
+        "path": "content/computability/recursive-functions/trees.tex",
+        "bytes": 3410,
+        "sha256": "a6e3ba54bc944e81c1db72ae00f56f1dc27b3ed05c57de110585810927569277",
+        "locator": "lines 48-57, g_f recursion and h application"
+      },
+      "finding": "The source defines g_f(s,k) using entries 0 through k inclusive and then calls it with k=len(s), which reads the out-of-range entry (s)_{len(s)} and can append a spurious value.",
+      "controlling_evidence": "Earlier the chapter states that a sequence of length k has entries 0 through k-1. A fold over its first k entries therefore needs an empty base and must add entry k at the k-to-k+1 step.",
+      "required_translation_handling": "Use g_f(s,0)=emptyseq and g_f(s,k+1)=g_f(s,k) concat f((s)_k), retain the call g_f(s,len(s)), and add an adjacent OLTECRREM-009 disclosure."
+    },
+    {
+      "finding_id": "OLTECRREM-010",
+      "unit_id": "OLP-0226",
+      "classification": "confirmed_index_family_inconsistency",
+      "source": {
+        "path": "content/computability/recursive-functions/halting-problem.tex",
+        "bytes": 3226,
+        "sha256": "08569f88dbc93bf89320bc9e7ea3224dabcfc2d0af8125edf9dd22f37220483e",
+        "locator": "lines 27-48 and 55-89, universal cfind family and diagonal proof"
+      },
+      "finding": "After defining cfind_e by a partial-recursive expression for every natural e, the source introduces an extra case in which e is not an index at all and lets that inconsistent case drive the final paragraph of the diagonal proof.",
+      "controlling_evidence": "For every e, U(mu s T(e,x,s)) is a partial recursive function (possibly nowhere defined), so e indexes that member of the universal family. With h(e,x)=1 exactly when cfind_e(x) is defined, both h(e_d,e_d)=1 and h(e_d,e_d)=0 directly contradict cfind_{e_d} approximately-equals d.",
+      "required_translation_handling": "Remove the impossible non-index disjunct, state the two direct diagonal contradictions, and add an adjacent OLTECRREM-010 disclosure."
+    }
+  ]
+}

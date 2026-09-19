@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 213 of 722 draft units**. This view selects 208 of 234 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 224 of 722 draft units**. This view selects 219 of 245 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -383,6 +383,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0211; computability/recursive-functions/primitive-recursion; translation/content/computability/recursive-functions/primitive-recursion.tex:9-10; printed/PDF page pending; OLP-0212; computability/recursive-functions/composition; translation/content/computability/recursive-functions/composition.tex:9-10; printed/PDF page pending; OLP-0212; computability/recursive-functions/composition; translation/content/computability/recursive-functions/composition.tex:70-90; printed/PDF page pending; OLP-0213; computability/recursive-functions/pr-functions; translation/content/computability/recursive-functions/pr-functions.tex:46-62; printed/PDF page pending; OLP-0215; computability/recursive-functions/pr-functions-computable; translation/content/computability/recursive-functions/pr-functions-computable.tex:33-35; printed/PDF page pending
 
 - Please double-check: Please double-check whether “ఆదిమ పునరావృత్తి / ఆదిమ పునరావృత్త ప్రమేయం / సంయుక్తం / ప్రక్షేప ప్రమేయం / స్థానసంఖ్య (అరిటీ) / లక్షణ ప్రమేయం / శూన్య ప్రమేయం / ఉత్తరగామి ప్రమేయం / ఆదిమ పునరావృత్తి సంకేతనం” is idiomatic and technically standard for “primitive recursion / primitive recursive function / composition / projection function / arity / characteristic function / zero function / successor function / primitive-recursion notation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T065 — primitive recursive relation / bounded quantification / bounded minimization / conditional function / prime number / sequence coding / tree coding / simultaneous recursion / course-of-values recursion / partial recursive function / unbounded search / Kleene normal form / index / halting problem / regular function / general recursive function
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: ఆదిమ పునరావృత్త సంబంధం / పరిమిత పరిమాణీకరణ / పరిమిత కనిష్ఠీకరణ / షరతు ప్రమేయం / ప్రధాన సంఖ్య / క్రమ సంకేతీకరణ / వృక్ష సంకేతీకరణ / సమకాల పునరావృత్తి / పూర్వవిలువల పునరావృత్తి / పాక్షిక పునరావృత్త ప్రమేయం / అపరిమిత అన్వేషణ / క్లీనీ నియత రూపం / సూచిక / నిలుపు సమస్య (హాల్టింగ్ సమస్య) / సక్రమ ప్రమేయం / సామాన్య పునరావృత్త ప్రమేయం
+
+- Occurrences: OLP-0217; computability/recursive-functions/pr-relations; translation/content/computability/recursive-functions/pr-relations.tex:9-10; printed/PDF page pending; OLP-0218; computability/recursive-functions/bounded-minimization; translation/content/computability/recursive-functions/bounded-minimization.tex:9-10; printed/PDF page pending; OLP-0219; computability/recursive-functions/primes; translation/content/computability/recursive-functions/primes.tex:9-10; printed/PDF page pending; OLP-0220; computability/recursive-functions/sequences; translation/content/computability/recursive-functions/sequences.tex:26-35; printed/PDF page pending; OLP-0222; computability/recursive-functions/other-recursions; translation/content/computability/recursive-functions/other-recursions.tex:12-46; printed/PDF page pending; OLP-0224; computability/recursive-functions/partial-functions; translation/content/computability/recursive-functions/partial-functions.tex:9-10; printed/PDF page pending; OLP-0225; computability/recursive-functions/normal-form; translation/content/computability/recursive-functions/normal-form.tex:12-21; printed/PDF page pending; OLP-0226; computability/recursive-functions/halting-problem; translation/content/computability/recursive-functions/halting-problem.tex:9-10; printed/PDF page pending; OLP-0227; computability/recursive-functions/general-recursive-functions; translation/content/computability/recursive-functions/general-recursive-functions.tex:9-10; printed/PDF page pending
+
+- Please double-check: Please double-check whether “ఆదిమ పునరావృత్త సంబంధం / పరిమిత పరిమాణీకరణ / పరిమిత కనిష్ఠీకరణ / షరతు ప్రమేయం / ప్రధాన సంఖ్య / క్రమ సంకేతీకరణ / వృక్ష సంకేతీకరణ / సమకాల పునరావృత్తి / పూర్వవిలువల పునరావృత్తి / పాక్షిక పునరావృత్త ప్రమేయం / అపరిమిత అన్వేషణ / క్లీనీ నియత రూపం / సూచిక / నిలుపు సమస్య (హాల్టింగ్ సమస్య) / సక్రమ ప్రమేయం / సామాన్య పునరావృత్త ప్రమేయం” is idiomatic and technically standard for “primitive recursive relation / bounded quantification / bounded minimization / conditional function / prime number / sequence coding / tree coding / simultaneous recursion / course-of-values recursion / partial recursive function / unbounded search / Kleene normal form / index / halting problem / regular function / general recursive function” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -2083,3 +2093,103 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0216; computability/recursive-functions/examples; translation/content/computability/recursive-functions/examples.tex:13-23; printed/PDF page pending
 
 - Please double-check: Please double-check that the doubling construction uses const_2 rather than the unrestricted const_n, matching f(x)=2 times x and the displayed composition.
+
+## REV-OLTECRREM-001 — OLTECRREM-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: named the displayed x less-than-or-equal y relation correctly; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0217; computability/recursive-functions/pr-relations; translation/content/computability/recursive-functions/pr-relations.tex:38-46; printed/PDF page pending
+
+- Please double-check: Please double-check that the displayed x less-than-or-equal y relation is named non-strict order rather than strict less-than.
+
+## REV-OLTECRREM-002 — OLTECRREM-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: preserved vec x as the parameter vector in the third case; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0218; computability/recursive-functions/bounded-minimization; translation/content/computability/recursive-functions/bounded-minimization.tex:42-51; printed/PDF page pending
+
+- Please double-check: Please double-check that the third successor-bound case preserves the parameter vector x used by the relation and the other two cases.
+
+## REV-OLTECRREM-003 — OLTECRREM-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: described the remainder when y is divided by x; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0219; computability/recursive-functions/primes; translation/content/computability/recursive-functions/primes.tex:12-28; printed/PDF page pending
+
+- Please double-check: Please double-check that x divides y is explained through the remainder when y is divided by x, not the reverse operation.
+
+## REV-OLTECRREM-004 — OLTECRREM-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: separated the nextPrime function name from its argument in both malformed occurrences; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0219; computability/recursive-functions/primes; translation/content/computability/recursive-functions/primes.tex:48-65; printed/PDF page pending
+
+- Please double-check: Please double-check that nextPrime is typeset as a function name followed by its argument in both repaired occurrences.
+
+## REV-OLTECRREM-005 — OLTECRREM-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: handled x=0 and x=1 directly before applying the prime-product argument at x at least 2; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0219; computability/recursive-functions/primes; translation/content/computability/recursive-functions/primes.tex:67-80; printed/PDF page pending
+
+- Please double-check: Please double-check that x=0 and x=1 are discharged directly before the Euclid product proof assumes a largest prime at most x.
+
+## REV-OLTECRREM-006 — OLTECRREM-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: replaced the malformed empty-tuple application with the asserted sequence-to-code mapping; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0220; computability/recursive-functions/sequences; translation/content/computability/recursive-functions/sequences.tex:26-35; printed/PDF page pending
+
+- Please double-check: Please double-check that the repaired map explicitly sends a finite tuple to its numeric sequence code and states the injective direction correctly.
+
+## REV-OLTECRREM-007 — OLTECRREM-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: defined the bound at k=0 and made the bounded search inclusive; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0220; computability/recursive-functions/sequences; translation/content/computability/recursive-functions/sequences.tex:144-154; printed/PDF page pending; OLP-0220; computability/recursive-functions/sequences; translation/content/computability/recursive-functions/sequences.tex:156-168; printed/PDF page pending
+
+- Please double-check: Please double-check that the sequence bound is defined at length zero and that the bounded search includes a code equal to the proved upper bound.
+
+## REV-OLTECRREM-008 — OLTECRREM-008
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: described the cumulative construction as containing subtrees at distance at most n; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0221; computability/recursive-functions/trees; translation/content/computability/recursive-functions/trees.tex:36-47; printed/PDF page pending
+
+- Please double-check: Please double-check that hSubtreeSeq is described cumulatively as listing subtrees at distance at most n, matching its recurrence.
+
+## REV-OLTECRREM-009 — OLTECRREM-009
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used an empty base and added the kth entry in the k-to-k+1 step, so the length call stays in range; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0221; computability/recursive-functions/trees; translation/content/computability/recursive-functions/trees.tex:48-59; printed/PDF page pending
+
+- Please double-check: Please double-check that the sequence fold starts empty and appends indices 0 through k-1, so the length call never reads past the sequence.
+
+## REV-OLTECRREM-010 — OLTECRREM-010
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: removed the impossible non-index disjunct and stated the direct contradiction in each diagonal case; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0226; computability/recursive-functions/halting-problem; translation/content/computability/recursive-functions/halting-problem.tex:25-44; printed/PDF page pending; OLP-0226; computability/recursive-functions/halting-problem; translation/content/computability/recursive-functions/halting-problem.tex:51-83; printed/PDF page pending
+
+- Please double-check: Please double-check that the universal indexed family removes the impossible non-index branch and that both halting values directly contradict the diagonal index equation.

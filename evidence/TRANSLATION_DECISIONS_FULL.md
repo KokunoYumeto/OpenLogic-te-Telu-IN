@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **213 of 722 source units drafted**. This readable view contains all 234 decisions and 382 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **224 of 722 source units drafted**. This readable view contains all 245 decisions and 403 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -202,7 +202,7 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Rationale: Use spaced forms consistently. Preserve OpenLogic Nat={0,1,2,...}; no witness-driven change to the set. Fresh current-edition integer definition confirms the selected label; recovered older binary remains absent.
 
-- Authorities checked: TE-C002:TE-P004 [checked_supports], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation | TE-C002:TE-P005 [checked_supports], PDF page 21; printed page 9; Opening paragraph and Example 1; Number terminology and native mathematical exposition | TE-C001:TE-P007 [checked_supports], PDF page 26; printed page 16; Sections 2.1-2.2, natural and whole number sets; Telangana-specific concept witness and contrastive number convention; does not establish negative integer terminology | TE-C001:TE-P013 [checked_supports], PDF page 85; printed page 75; Integer definition and number line, section 6.4; Integer/positive-integer concept evidence in the current 2021-22 edition, not fresh evidence of absent recovered 2018-19 binary. Natural-number convention remains OpenLogic's.
+- Authorities checked: TE-C002:TE-P004 [checked_supports], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation | TE-C002:TE-P005 [checked_supports], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C001:TE-P007 [checked_supports], PDF page 26; printed page 16; Sections 2.1-2.2, natural and whole number sets; Telangana-specific concept witness and contrastive number convention; does not establish negative integer terminology | TE-C001:TE-P013 [checked_supports], PDF page 85; printed page 75; Integer definition and number line, section 6.4; Integer/positive-integer concept evidence in the current 2021-22 edition, not fresh evidence of absent recovered 2018-19 binary. Natural-number convention remains OpenLogic's.
 
 - Alternatives: None separately recorded.
 
@@ -286,7 +286,7 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Rationale: TE-P016 directly contrasts పరిమిత and అపరిమిత sets through countability of their elements. The established edition wording అనంత is retained as a transparent synonym for consistency. String, sequence and alphabet remain definition-controlled provisional senses.
 
-- Authorities checked: TE-C003:TE-P001 [checked_context_only], PDF page 11; printed page 37; Section 2, middle paragraph on sets; Concept-specific evidence for set; not a definition of subset, membership or extensionality | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Opening paragraph and Example 1; Number terminology and native mathematical exposition | TE-C004:TE-P016 [checked_context_only], PDF page 310; printed page 303; Questions 4-5 and answers on finite, infinite and equivalent sets; Direct finite/infinite and finite equinumerosity register. It does not establish countable infinity or the exact OpenLogic definition of enumeration; those remain controlled by the frozen source.
+- Authorities checked: TE-C003:TE-P001 [checked_context_only], PDF page 11; printed page 37; Section 2, middle paragraph on sets; Concept-specific evidence for set; not a definition of subset, membership or extensionality | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P016 [checked_context_only], PDF page 310; printed page 303; Questions 4-5 and answers on finite, infinite and equivalent sets; Direct finite/infinite and finite equinumerosity register. It does not establish countable infinity or the exact OpenLogic definition of enumeration; those remain controlled by the frozen source.
 
 - Alternatives: None separately recorded.
 
@@ -369,7 +369,7 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Rationale: Induction appears broadly in teacher pedagogy, not yet formal induction theorem. Other exact senses not directly attested; source definitions and examples preserved.
 
-- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P004 [checked_context_only], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Opening paragraph and Example 1; Number terminology and native mathematical exposition
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P004 [checked_context_only], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition
 
 - Alternatives: None separately recorded.
 
@@ -709,7 +709,7 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Rationale: TE-P016 supplies native mathematical counting language only for finite versus infinite sets. The selected forms transparently extend that register, but every occurrence is governed by OpenLogic's precise list, surjection or bijection definition, so finite countability is not conflated with enumerability.
 
-- Authorities checked: TE-C004:TE-P016 [checked_context_only], PDF page 310; printed page 303; Questions 4-5 and answers on finite, infinite and equivalent sets; Direct finite/infinite and finite equinumerosity register. It does not establish countable infinity or the exact OpenLogic definition of enumeration; those remain controlled by the frozen source. | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Opening paragraph and Example 1; Number terminology and native mathematical exposition
+- Authorities checked: TE-C004:TE-P016 [checked_context_only], PDF page 310; printed page 303; Questions 4-5 and answers on finite, infinite and equivalent sets; Direct finite/infinite and finite equinumerosity register. It does not establish countable infinity or the exact OpenLogic definition of enumeration; those remain controlled by the frozen source. | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition
 
 - Alternatives: గణనీయ / అగణనీయ [rejected: not adopted here because of collision with computability terminology] | జాబితా చేయదగిన / చేయలేని [viable_alternative: retained as explanatory gloss]
 
@@ -1625,7 +1625,7 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Rationale: TE-P005--TE-P007 directly support natural, integer, rational and real-number exposition; TE-P018--TE-P019, TE-P023, TE-P027 and TE-P029--TE-P031 support formal logic, truth, consequence, predicates, first-order language, domains and sentences; TE-P003--TE-P004 support theorem and proof register. The witnesses do not directly attest the standard/non-standard model distinction. Isomorphism with N, numeral-value exhaustion, and satisfaction of TA, PA and Q in OLP-0192--OLP-0197 control the exact senses. పియానో is the source eponym; the formal abbreviations TA, PA and Q remain mathematical notation
 
-- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P004 [checked_context_only], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Opening paragraph and Example 1; Number terminology and native mathematical exposition | TE-C003:TE-P006 [checked_context_only], PDF page 10; printed page 36; Section 1 on real numbers; Concept-specific number class terminology | TE-C001:TE-P007 [checked_context_only], PDF page 26; printed page 16; Sections 2.1-2.2, natural and whole number sets; Telangana-specific concept witness and contrastive number convention; does not establish negative integer terminology | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage.
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P004 [checked_context_only], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C003:TE-P006 [checked_context_only], PDF page 10; printed page 36; Section 1 on real numbers; Concept-specific number class terminology | TE-C001:TE-P007 [checked_context_only], PDF page 26; printed page 16; Sections 2.1-2.2, natural and whole number sets; Telangana-specific concept witness and contrastive number convention; does not establish negative integer terminology | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage.
 
 - Alternatives: leave standard and non-standard as unexplained English headwords [rejected: rejected] | claim direct canon attestation for the arithmetic-model taxonomy [rejected: rejected]
 
@@ -1652,7 +1652,7 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Rationale: TE-P005 and TE-P007 support native natural-number exposition; TE-P008, TE-P010 and TE-P016 support elements, relations, finite/infinite and equivalence; TE-P003--TE-P004 and TE-P032 support proof and induction register; TE-P027, TE-P029 and TE-P030 support first-order predicates, variables and domains. They do not directly attest arithmetic blocks. The successor/predecessor chain, finite-difference equivalence, block disjointness and quotient-order proofs in OLP-0196 fix the senses. No unexplained English reader-facing borrowing; ఖండం is definition-controlled here and is not claimed to be directly attested for this model-theoretic quotient
 
-- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P004 [checked_context_only], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Opening paragraph and Example 1; Number terminology and native mathematical exposition | TE-C001:TE-P007 [checked_context_only], PDF page 26; printed page 16; Sections 2.1-2.2, natural and whole number sets; Telangana-specific concept witness and contrastive number convention; does not establish negative integer terminology | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P016 [checked_context_only], PDF page 310; printed page 303; Questions 4-5 and answers on finite, infinite and equivalent sets; Direct finite/infinite and finite equinumerosity register. It does not establish countable infinity or the exact OpenLogic definition of enumeration; those remain controlled by the frozen source. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P004 [checked_context_only], PDF page 19; printed page 7; Theorem 1.1 and surrounding Telugu explanation; Concept-specific theorem, proof and uniqueness usage; analogy for extensionality wording, not extensionality attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C001:TE-P007 [checked_context_only], PDF page 26; printed page 16; Sections 2.1-2.2, natural and whole number sets; Telangana-specific concept witness and contrastive number convention; does not establish negative integer terminology | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P016 [checked_context_only], PDF page 310; printed page 303; Questions 4-5 and answers on finite, infinite and equivalent sets; Direct finite/infinite and finite equinumerosity register. It does not establish countable infinity or the exact OpenLogic definition of enumeration; those remain controlled by the frozen source. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
 
 - Alternatives: reuse the graph-theoretic ఉత్తరవర్తి and పూర్వవర్తి labels despite the arithmetic context [rejected: rejected] | claim direct canon attestation for arithmetic blocks [rejected: rejected]
 
@@ -1790,7 +1790,7 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Rationale: TE-P011 directly supports the function-composition register through సంయుక్త ప్రమేయం; TE-P005 supports native natural-number exposition; TE-P008 and TE-P012 support set, element, relation and function language; TE-P003 and TE-P032 support reasoning, proof and induction prose; TE-P018 supports formal symbolic-logic register. These witnesses do not directly attest primitive recursion, primitive recursive functions, computability, projection functions or arity. The frozen recursive equations, closure clauses, stage construction, computation traces and notation definitions in OLP-0210--OLP-0216 control those exact senses; TE-T014, TE-T020, TE-T050, TE-T051 and TE-T060 provide the edition’s prior reversible choices. అరిటీ appears only as an explicit parenthetical technical borrowing beside descriptive స్థానసంఖ్య; no unexplained English technical headword remains in reader-facing prose
 
-- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Opening paragraph and Example 1; Number terminology and native mathematical exposition | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C004:TE-P012 [checked_context_only], PDF page 319; printed page 312; Questions 37-38; Function-versus-relation explanatory register; do not copy source answers mechanically. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C004:TE-P012 [checked_context_only], PDF page 319; printed page 312; Questions 37-38; Function-versus-relation explanatory register; do not copy source answers mechanically. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
 
 - Alternatives: use సంయోజనం for mathematical function composition despite the established TE-T015 decision and direct TE-P011 witness [rejected: rejected] | leave primitive recursion, projection and arity in untranslated English prose [rejected: rejected] | claim direct native attestation for the specialized recursion taxonomy [rejected: rejected because the frozen equations and definitions control those senses]
 
@@ -1803,6 +1803,40 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T064-OCC-003; OLP-0212; OLP-0212-B010; source upstream/content/computability/recursive-functions/composition.tex:67-88 bytes 2591-3429 SHA-256 a9cd5dc0f4ae4fa06879d81b829b0ae4b57473bc00b801ba6532a98dbdb1dc4a; target translation/content/computability/recursive-functions/composition.tex:70-90 bytes 5679-7160 SHA-256 e640f2ecf2c830672d95477366337cc37837c83be5c777c0e56406bfa62445a8; reader page pending.
   - te-Telu-IN-TE-T064-OCC-004; OLP-0213; OLP-0213-B009; source upstream/content/computability/recursive-functions/pr-functions.tex:44-61 bytes 1410-2205 SHA-256 893f3c79391b6a02b0af25282b921b2a06db27f5b94b4a6e0fed0c807e1e0ee1; target translation/content/computability/recursive-functions/pr-functions.tex:46-62 bytes 2725-4268 SHA-256 cc6adf42cc9b3c8daa965b49ba5c77d1ed41f2a0d7aa21844d90927e10d38795; reader page pending.
   - te-Telu-IN-TE-T064-OCC-005; OLP-0215; OLP-0215-B006; source upstream/content/computability/recursive-functions/pr-functions-computable.tex:32-35 bytes 1336-1564 SHA-256 3e21459528e5bc5a33625412ccc06cef21f44bc6c1a32b3f05bbf7d320731b3a; target translation/content/computability/recursive-functions/pr-functions-computable.tex:33-35 bytes 1942-2344 SHA-256 1506ee826a9ad09b589943b06c7f5467de9bb50c079836ba5e81f02285dfed46; reader page pending.
+
+## te-Telu-IN-TE-T065 — primitive recursive relation / bounded quantification / bounded minimization / conditional function / prime number / sequence coding / tree coding / simultaneous recursion / course-of-values recursion / partial recursive function / unbounded search / Kleene normal form / index / halting problem / regular function / general recursive function
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: ఆదిమ పునరావృత్త సంబంధం / పరిమిత పరిమాణీకరణ / పరిమిత కనిష్ఠీకరణ / షరతు ప్రమేయం / ప్రధాన సంఖ్య / క్రమ సంకేతీకరణ / వృక్ష సంకేతీకరణ / సమకాల పునరావృత్తి / పూర్వవిలువల పునరావృత్తి / పాక్షిక పునరావృత్త ప్రమేయం / అపరిమిత అన్వేషణ / క్లీనీ నియత రూపం / సూచిక / నిలుపు సమస్య (హాల్టింగ్ సమస్య) / సక్రమ ప్రమేయం / సామాన్య పునరావృత్త ప్రమేయం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “primitive recursive relation / bounded quantification / bounded minimization / conditional function / prime number / sequence coding / tree coding / simultaneous recursion / course-of-values recursion / partial recursive function / unbounded search / Kleene normal form / index / halting problem / regular function / general recursive function” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low semantic uncertainty because the central notions are defined by explicit formulas, constructions or diagonal arguments; low nomenclatural uncertainty for prime-number and quantifier language; medium to high nomenclatural uncertainty for the specialized recursion, coding, normal-form, halting and regularity compounds
+
+- Rationale: TE-P005 directly uses ప్రధాన సంఖ్యలు and ప్రధాన కారణాంకాలు and names అంకగణిత ప్రాథమిక సిద్ధాంతం in a unique-prime-factorization discussion. TE-P028 directly supports universal and existential quantifier taxonomy and relation/predicate context; TE-P010--TE-P012 support relation and function language; TE-P008 supports set, element and ordered-sequence register; TE-P003 and TE-P032 support proof and reasoning prose; TE-P018 supports formal symbolic-logic register. The witnesses do not directly attest bounded minimization, sequence/tree coding, simultaneous or course-of-values recursion, partial recursion, unbounded search, Kleene normal form, indices, the halting problem, regularity, or general recursion. The frozen definitions, recursive equations, coding constructions, diagonal arguments and theorem statements in OLP-0217--OLP-0227 control those exact senses; TE-T011, TE-T019, TE-T024, TE-T028, TE-T060 and TE-T064 supply the edition's earlier reversible choices. క్లీనీ, కాంటర్, అకెర్మాన్--పీటర్, చర్చ్--ట్యూరింగ్ and అలన్ ట్యూరింగ్ are source eponyms or names; హాల్టింగ్ appears only as an explicit parenthetical technical borrowing beside descriptive నిలుపు సమస్య; no unexplained English technical headword remains in reader-facing prose
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C004:TE-P012 [checked_context_only], PDF page 319; printed page 312; Questions 37-38; Function-versus-relation explanatory register; do not copy source answers mechanically. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P028 [checked_context_only], PDF page 92; printed page 85; Unary predicates, binary relations and quantifier classification; Direct quantifier taxonomy and predicate/relation context. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: leave the specialized headwords in untranslated English reader prose [rejected: rejected] | claim direct native attestation for partial recursion, normal form, halting, regularity or general recursion [rejected: rejected because the frozen definitions and arguments control those senses]
+
+- Review question: Please double-check whether “ఆదిమ పునరావృత్త సంబంధం / పరిమిత పరిమాణీకరణ / పరిమిత కనిష్ఠీకరణ / షరతు ప్రమేయం / ప్రధాన సంఖ్య / క్రమ సంకేతీకరణ / వృక్ష సంకేతీకరణ / సమకాల పునరావృత్తి / పూర్వవిలువల పునరావృత్తి / పాక్షిక పునరావృత్త ప్రమేయం / అపరిమిత అన్వేషణ / క్లీనీ నియత రూపం / సూచిక / నిలుపు సమస్య (హాల్టింగ్ సమస్య) / సక్రమ ప్రమేయం / సామాన్య పునరావృత్త ప్రమేయం” is idiomatic and technically standard for “primitive recursive relation / bounded quantification / bounded minimization / conditional function / prime number / sequence coding / tree coding / simultaneous recursion / course-of-values recursion / partial recursive function / unbounded search / Kleene normal form / index / halting problem / regular function / general recursive function” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T065-OCC-001; OLP-0217; OLP-0217-B004; source upstream/content/computability/recursive-functions/pr-relations.tex:9-10 bytes 159-226 SHA-256 9ab1255a55ef04404aadcde303e86a6d245f8d92c42f096de134658aebf82f97; target translation/content/computability/recursive-functions/pr-relations.tex:9-10 bytes 159-265 SHA-256 2f45347368741cd21260afcfe85944324047786ad731c9cf1590f614942f78d8; reader page pending.
+  - te-Telu-IN-TE-T065-OCC-002; OLP-0218; OLP-0218-B004; source upstream/content/computability/recursive-functions/bounded-minimization.tex:9-10 bytes 167-225 SHA-256 682737f7312e08999a21f07a0a6859e4e0b4ed81ec5c9094789f774f1596bda6; target translation/content/computability/recursive-functions/bounded-minimization.tex:9-10 bytes 167-254 SHA-256 71f6458734cd024507ca4292ccabb4d88f0377a52937eeb644cf53cfb1970872; reader page pending.
+  - te-Telu-IN-TE-T065-OCC-003; OLP-0219; OLP-0219-B004; source upstream/content/computability/recursive-functions/primes.tex:9-10 bytes 153-197 SHA-256 76fc5fb7d628c14a52d6a8b0e9fbad24fe15fa49f170e89f8982d79043daa1b4; target translation/content/computability/recursive-functions/primes.tex:9-10 bytes 153-231 SHA-256 9bb82454da738fc678aa0092c486f633d88c69169952ac2ceb88ba34304ce362; reader page pending.
+  - te-Telu-IN-TE-T065-OCC-004; OLP-0220; OLP-0220-B006; source upstream/content/computability/recursive-functions/sequences.tex:27-36 bytes 905-1376 SHA-256 044570a5499177a994d08baaa6109db5db40c6d69dda2d8961909cdce945b8ae; target translation/content/computability/recursive-functions/sequences.tex:26-35 bytes 1474-2729 SHA-256 27e4a7e5e3175a2a62ed12a713ecf26d2e845c234fda82bb2fdfc04c3ad0afce; reader page pending.
+  - te-Telu-IN-TE-T065-OCC-005; OLP-0222; OLP-0222-B005; source upstream/content/computability/recursive-functions/other-recursions.tex:12-47 bytes 218-1872 SHA-256 ecd3dc5f6ffbfcbf812e75ed5b87ed9b1f9aa49b779a9e3a6c3a6f491d691400; target translation/content/computability/recursive-functions/other-recursions.tex:12-46 bytes 251-3116 SHA-256 b387074104297ea60bd54e2108c6474dce9dd2f3f471b79ceaa9bde58d68097a; reader page pending.
+  - te-Telu-IN-TE-T065-OCC-006; OLP-0224; OLP-0224-B004; source upstream/content/computability/recursive-functions/partial-functions.tex:9-10 bytes 164-229 SHA-256 a30626b08ef610b2da04defc5b41f53ff48c62da6a30587a048278625d5f318d; target translation/content/computability/recursive-functions/partial-functions.tex:9-10 bytes 164-282 SHA-256 cb29c9593d9e7a69db5621f69e9a9bb25bc9153127d03c9ce515f6e3947e534f; reader page pending.
+  - te-Telu-IN-TE-T065-OCC-007; OLP-0225; OLP-0225-B005; source upstream/content/computability/recursive-functions/normal-form.tex:12-21 bytes 220-539 SHA-256 b8c31bf729df2372640c16b1b3eb4e64256b0b59e2caaf9a7e3bb6a4f2fe93db; target translation/content/computability/recursive-functions/normal-form.tex:12-21 bytes 247-793 SHA-256 3b910d13a5c34942a5530da6262153ec6e3348c5ab5c05bf77a92354dac08bb1; reader page pending.
+  - te-Telu-IN-TE-T065-OCC-008; OLP-0226; OLP-0226-B004; source upstream/content/computability/recursive-functions/halting-problem.tex:9-10 bytes 162-219 SHA-256 08569f88dbc93bf89320bc9e7ea3224dabcfc2d0af8125edf9dd22f37220483e; target translation/content/computability/recursive-functions/halting-problem.tex:9-10 bytes 162-280 SHA-256 1d1f1edcb2f53131b3e0fe4883eb00f691a977c80120b6ab82f150122050db92; reader page pending.
+  - te-Telu-IN-TE-T065-OCC-009; OLP-0227; OLP-0227-B004; source upstream/content/computability/recursive-functions/general-recursive-functions.tex:9-10 bytes 174-239 SHA-256 e055df19289a2f5db360cc644656c3f6269a026cb26f9a62853a23a9ace7afcf; target translation/content/computability/recursive-functions/general-recursive-functions.tex:9-10 bytes 174-292 SHA-256 24dd0cf61b06f02ddb055eee287d7a7675ad55f1a64d7b13914e57521de0d321; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -6235,3 +6269,265 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTECMPREC-006-OCC-001; OLP-0216; OLP-0216-B005; source upstream/content/computability/recursive-functions/examples.tex:13-23 bytes 236-910 SHA-256 d76450ea38acccc3c51ca125104c6e09b6b02ecbc33c11e31cfa9ce190d29c26; target translation/content/computability/recursive-functions/examples.tex:13-23 bytes 288-1915 SHA-256 8ac0fe1c1b322b48a62bc9fd27ef14d50e69bda2291ae32b1e8dbdaddcdafac4; reader page pending.
+
+## te-Telu-IN-OLTECRREM-001 — OLTECRREM-001: confirmed mislabeled nonstrict relation
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: named the displayed x less-than-or-equal y relation correctly; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed mislabeled nonstrict relation at lines 38-45, examples of primitive recursive relations, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECRREM-20260919:OLTECRREM-001 [checked_supports], content/computability/recursive-functions/pr-relations.tex; lines 38-45, examples of primitive recursive relations; confirmed_mislabeled_nonstrict_relation; named the displayed x less-than-or-equal y relation correctly; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the displayed x less-than-or-equal y relation is named non-strict order rather than strict less-than.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECRREM-001-OCC-001; OLP-0217; OLP-0217-B007; source upstream/content/computability/recursive-functions/pr-relations.tex:38-45 bytes 994-1332 SHA-256 9ab1255a55ef04404aadcde303e86a6d245f8d92c42f096de134658aebf82f97; target translation/content/computability/recursive-functions/pr-relations.tex:38-46 bytes 1707-2690 SHA-256 2f45347368741cd21260afcfe85944324047786ad731c9cf1590f614942f78d8; reader page pending.
+
+## te-Telu-IN-OLTECRREM-002 — OLTECRREM-002: confirmed wrong vector argument
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: preserved vec x as the parameter vector in the third case; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed wrong vector argument at lines 41-49, three successor-bound cases, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECRREM-20260919:OLTECRREM-002 [checked_supports], content/computability/recursive-functions/bounded-minimization.tex; lines 41-49, three successor-bound cases; confirmed_wrong_vector_argument; preserved vec x as the parameter vector in the third case; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the third successor-bound case preserves the parameter vector x used by the relation and the other two cases.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECRREM-002-OCC-001; OLP-0218; OLP-0218-B008; source upstream/content/computability/recursive-functions/bounded-minimization.tex:41-49 bytes 1473-1847 SHA-256 682737f7312e08999a21f07a0a6859e4e0b4ed81ec5c9094789f774f1596bda6; target translation/content/computability/recursive-functions/bounded-minimization.tex:42-51 bytes 2863-3862 SHA-256 71f6458734cd024507ca4292ccabb4d88f0377a52937eeb644cf53cfb1970872; reader page pending.
+
+## te-Telu-IN-OLTECRREM-003 — OLTECRREM-003: confirmed reversed dividend divisor
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: described the remainder when y is divided by x; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed reversed dividend divisor at lines 12-27, divisibility explanation, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECRREM-20260919:OLTECRREM-003 [checked_supports], content/computability/recursive-functions/primes.tex; lines 12-27, divisibility explanation; confirmed_reversed_dividend_divisor; described the remainder when y is divided by x; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that x divides y is explained through the remainder when y is divided by x, not the reverse operation.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECRREM-003-OCC-001; OLP-0219; OLP-0219-B005; source upstream/content/computability/recursive-functions/primes.tex:12-27 bytes 198-1079 SHA-256 76fc5fb7d628c14a52d6a8b0e9fbad24fe15fa49f170e89f8982d79043daa1b4; target translation/content/computability/recursive-functions/primes.tex:12-28 bytes 232-2321 SHA-256 9bb82454da738fc678aa0092c486f633d88c69169952ac2ceb88ba34304ce362; reader page pending.
+
+## te-Telu-IN-OLTECRREM-004 — OLTECRREM-004: confirmed malformed function notation
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: separated the nextPrime function name from its argument in both malformed occurrences; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed malformed function notation at lines 46-60, next-prime definition, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECRREM-20260919:OLTECRREM-004 [checked_supports], content/computability/recursive-functions/primes.tex; lines 46-60, next-prime definition; confirmed_malformed_function_notation; separated the nextPrime function name from its argument in both malformed occurrences; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that nextPrime is typeset as a function name followed by its argument in both repaired occurrences.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECRREM-004-OCC-001; OLP-0219; OLP-0219-B008; source upstream/content/computability/recursive-functions/primes.tex:46-60 bytes 1873-2457 SHA-256 76fc5fb7d628c14a52d6a8b0e9fbad24fe15fa49f170e89f8982d79043daa1b4; target translation/content/computability/recursive-functions/primes.tex:48-65 bytes 3967-5719 SHA-256 9bb82454da738fc678aa0092c486f633d88c69169952ac2ceb88ba34304ce362; reader page pending.
+
+## te-Telu-IN-OLTECRREM-005 — OLTECRREM-005: confirmed missing small bound cases
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: handled x=0 and x=1 directly before applying the prime-product argument at x at least 2; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing small bound cases at lines 64-74, Euclid-bound proof, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECRREM-20260919:OLTECRREM-005 [checked_supports], content/computability/recursive-functions/primes.tex; lines 64-74, Euclid-bound proof; confirmed_missing_small_bound_cases; handled x=0 and x=1 directly before applying the prime-product argument at x at least 2; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that x=0 and x=1 are discharged directly before the Euclid product proof assumes a largest prime at most x.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECRREM-005-OCC-001; OLP-0219; OLP-0219-B009; source upstream/content/computability/recursive-functions/primes.tex:64-74 bytes 2563-3251 SHA-256 76fc5fb7d628c14a52d6a8b0e9fbad24fe15fa49f170e89f8982d79043daa1b4; target translation/content/computability/recursive-functions/primes.tex:67-80 bytes 5720-7972 SHA-256 9bb82454da738fc678aa0092c486f633d88c69169952ac2ceb88ba34304ce362; reader page pending.
+
+## te-Telu-IN-OLTECRREM-006 — OLTECRREM-006: confirmed malformed encoding map
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: replaced the malformed empty-tuple application with the asserted sequence-to-code mapping; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed malformed encoding map at lines 27-36, uniqueness of sequence coding, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECRREM-20260919:OLTECRREM-006 [checked_supports], content/computability/recursive-functions/sequences.tex; lines 27-36, uniqueness of sequence coding; confirmed_malformed_encoding_map; replaced the malformed empty-tuple application with the asserted sequence-to-code mapping; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the repaired map explicitly sends a finite tuple to its numeric sequence code and states the injective direction correctly.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECRREM-006-OCC-001; OLP-0220; OLP-0220-B006; source upstream/content/computability/recursive-functions/sequences.tex:27-36 bytes 905-1376 SHA-256 044570a5499177a994d08baaa6109db5db40c6d69dda2d8961909cdce945b8ae; target translation/content/computability/recursive-functions/sequences.tex:26-35 bytes 1474-2729 SHA-256 27e4a7e5e3175a2a62ed12a713ecf26d2e845c234fda82bb2fdfc04c3ad0afce; reader page pending.
+
+## te-Telu-IN-OLTECRREM-007 — OLTECRREM-007: confirmed invalid sequence bound
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: defined the bound at k=0 and made the bounded search inclusive; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed invalid sequence bound at lines 144-168, sequence bound and bounded-search concatenation, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECRREM-20260919:OLTECRREM-007 [checked_supports], content/computability/recursive-functions/sequences.tex; lines 144-168, sequence bound and bounded-search concatenation; confirmed_invalid_sequence_bound; defined the bound at k=0 and made the bounded search inclusive; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the sequence bound is defined at length zero and that the bounded search includes a code equal to the proved upper bound.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECRREM-007-OCC-001; OLP-0220; OLP-0220-B018; source upstream/content/computability/recursive-functions/sequences.tex:144-154 bytes 4627-5170 SHA-256 044570a5499177a994d08baaa6109db5db40c6d69dda2d8961909cdce945b8ae; target translation/content/computability/recursive-functions/sequences.tex:144-154 bytes 8445-9748 SHA-256 27e4a7e5e3175a2a62ed12a713ecf26d2e845c234fda82bb2fdfc04c3ad0afce; reader page pending.
+  - te-Telu-IN-OLTECRREM-007-OCC-002; OLP-0220; OLP-0220-B019; source upstream/content/computability/recursive-functions/sequences.tex:156-168 bytes 5171-5824 SHA-256 044570a5499177a994d08baaa6109db5db40c6d69dda2d8961909cdce945b8ae; target translation/content/computability/recursive-functions/sequences.tex:156-168 bytes 9749-11465 SHA-256 27e4a7e5e3175a2a62ed12a713ecf26d2e845c234fda82bb2fdfc04c3ad0afce; reader page pending.
+
+## te-Telu-IN-OLTECRREM-008 — OLTECRREM-008: confirmed level description recurrence mismatch
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: described the cumulative construction as containing subtrees at distance at most n; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed level description recurrence mismatch at lines 37-47, intended levels of hSubtreeSeq, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECRREM-20260919:OLTECRREM-008 [checked_supports], content/computability/recursive-functions/trees.tex; lines 37-47, intended levels of hSubtreeSeq; confirmed_level_description_recurrence_mismatch; described the cumulative construction as containing subtrees at distance at most n; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that hSubtreeSeq is described cumulatively as listing subtrees at distance at most n, matching its recurrence.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECRREM-008-OCC-001; OLP-0221; OLP-0221-B008; source upstream/content/computability/recursive-functions/trees.tex:37-47 bytes 1461-2146 SHA-256 a6e3ba54bc944e81c1db72ae00f56f1dc27b3ed05c57de110585810927569277; target translation/content/computability/recursive-functions/trees.tex:36-47 bytes 2730-5007 SHA-256 3a357ed7d2f8fa0c766a5cb2745bbefb7717267a15248b5b088b06ad9c308f83; reader page pending.
+
+## te-Telu-IN-OLTECRREM-009 — OLTECRREM-009: confirmed off by one sequence fold
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used an empty base and added the kth entry in the k-to-k+1 step, so the length call stays in range; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed off by one sequence fold at lines 48-57, g_f recursion and h application, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECRREM-20260919:OLTECRREM-009 [checked_supports], content/computability/recursive-functions/trees.tex; lines 48-57, g_f recursion and h application; confirmed_off_by_one_sequence_fold; used an empty base and added the kth entry in the k-to-k+1 step, so the length call stays in range; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the sequence fold starts empty and appends indices 0 through k-1, so the length call never reads past the sequence.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECRREM-009-OCC-001; OLP-0221; OLP-0221-B008; source upstream/content/computability/recursive-functions/trees.tex:48-57 bytes 2146-2640 SHA-256 a6e3ba54bc944e81c1db72ae00f56f1dc27b3ed05c57de110585810927569277; target translation/content/computability/recursive-functions/trees.tex:48-59 bytes 5007-6479 SHA-256 3a357ed7d2f8fa0c766a5cb2745bbefb7717267a15248b5b088b06ad9c308f83; reader page pending.
+
+## te-Telu-IN-OLTECRREM-010 — OLTECRREM-010: confirmed index family inconsistency
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: removed the impossible non-index disjunct and stated the direct contradiction in each diagonal case; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed index family inconsistency at lines 27-48 and 55-89, universal cfind family and diagonal proof, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECRREM-20260919:OLTECRREM-010 [checked_supports], content/computability/recursive-functions/halting-problem.tex; lines 27-48 and 55-89, universal cfind family and diagonal proof; confirmed_index_family_inconsistency; removed the impossible non-index disjunct and stated the direct contradiction in each diagonal case; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the universal indexed family removes the impossible non-index branch and that both halting values directly contradict the diagonal index equation.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECRREM-010-OCC-001; OLP-0226; OLP-0226-B006; source upstream/content/computability/recursive-functions/halting-problem.tex:27-48 bytes 710-1627 SHA-256 08569f88dbc93bf89320bc9e7ea3224dabcfc2d0af8125edf9dd22f37220483e; target translation/content/computability/recursive-functions/halting-problem.tex:25-44 bytes 1260-2892 SHA-256 1d1f1edcb2f53131b3e0fe4883eb00f691a977c80120b6ab82f150122050db92; reader page pending.
+  - te-Telu-IN-OLTECRREM-010-OCC-002; OLP-0226; OLP-0226-B008; source upstream/content/computability/recursive-functions/halting-problem.tex:55-89 bytes 1732-3196 SHA-256 08569f88dbc93bf89320bc9e7ea3224dabcfc2d0af8125edf9dd22f37220483e; target translation/content/computability/recursive-functions/halting-problem.tex:51-83 bytes 3080-6225 SHA-256 1d1f1edcb2f53131b3e0fe4883eb00f691a977c80120b6ab82f150122050db92; reader page pending.

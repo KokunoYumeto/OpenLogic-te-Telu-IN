@@ -1,0 +1,2327 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-19T17:42:54.643Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Intertext prose is masked while its inline math remains checked.",
+  "units": [
+    {
+      "unit_id": "OLP-0217",
+      "source_path": "content/computability/recursive-functions/pr-relations.tex",
+      "source_sha256": "9ab1255a55ef04404aadcde303e86a6d245f8d92c42f096de134658aebf82f97",
+      "translation_sha256": "2f45347368741cd21260afcfe85944324047786ad731c9cf1590f614942f78d8",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{rec}{prr}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{rec}{prr}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$R(\\vecx)$",
+        "\\[\\Char{R}(\\vecx)=\\left\\{\\begin{array}{ll}1&\\\\0&\\end{array}\\right.\\]",
+        "$R(\\vecx)$",
+        "$\\Char{R}(\\vecx)=1$",
+        "$\\Char{R}$",
+        "$\\fn{IsZero}(x)$",
+        "$x=0$",
+        "$\\Char{\\fn{IsZero}}$",
+        "\\begin{align*}\\Char{\\fn{IsZero}}(0)&=1,\\\\\\Char{\\fn{IsZero}}(x+1)&=0.\\end{align*}",
+        "$x=y$",
+        "$\\fn{IsZero}(\\left|x-y\\right|)$",
+        "$x\\leqy$",
+        "$\\fn{IsZero}(x\\tsuby)$",
+        "$P(\\vecx)$",
+        "$Q(\\vecx)$",
+        "$\\lnotP(\\vecx)$",
+        "$P(\\vecx)\\landQ(\\vecx)$",
+        "$P(\\vecx)\\lorQ(\\vecx)$",
+        "$P(\\vecx)\\lifQ(\\vecx)$",
+        "$P(\\vecx)$",
+        "$Q(\\vecx)$",
+        "$\\Char{P}$",
+        "$\\Char{Q}$",
+        "$\\lnotP(\\vecx)$",
+        "\\[\\Char{\\lnotP}(\\vecx)=\\begin{cases}0&\\\\1&\\end{cases}\\]",
+        "$\\Char{\\lnotP}(\\vecx)$",
+        "$1\\tsub\\Char{P}(\\vecx)$",
+        "\\[\\Char{P\\landQ}(\\vecx)=\\begin{cases}1&\\\\0&\\end{cases}\\]",
+        "$\\Char{P\\landQ}(\\vecx)$",
+        "$\\Char{P}(\\vecx)\\cdot\\Char{Q}(\\vecx)$",
+        "$\\fn{min}(\\Char{P}(\\vecx),\\Char{Q}(\\vecx))$",
+        "\\begin{align*}\\Char{P\\lorQ}(\\vecx)&=\\fn{max}(\\Char{P}(\\vecx),\\Char{Q}(\\vecx))\\\\\\Char{P\\lifQ}(\\vecx)&=\\fn{max}(1\\tsub\\Char{P}(\\vecx),\\Char{Q}(\\vecx)).\\end{align*}",
+        "$R(\\vecx,z)$",
+        "\\begin{align*}&\\bforall{z<y}{R(\\vecx,z)}\\\\&\\bexists{z<y}{R(\\vecx,z)}.\\end{align*}",
+        "$\\bforall{z<y}{R(\\vecx,z)}$",
+        "$\\vecx$",
+        "$y$",
+        "$R(\\vecx,z)$",
+        "$z$",
+        "$y$",
+        "$\\bexists{z<y}{R(\\vecx,z)}$",
+        "$\\bforall{z<0}{R(\\vecx,z)}$",
+        "$z$",
+        "$0$",
+        "$\\bexists{z<0}{R(\\vecx,z)}$",
+        "$P(\\vecx,y)\\defiff\\bforall{z<y}{R(\\vecx,z)}$",
+        "$\\Char{P}(\\vecx,y)$",
+        "\\begin{align*}\\Char{P}(\\vecx,0)&=1\\\\\\Char{P}(\\vecx,y+1)&=\\fn{min}(\\Char{P}(\\vecx,y),\\Char{R}(\\vecx,y)).\\end{align*}",
+        "$\\fn{max}$",
+        "$\\bexists{z<y}{R(\\vecx,z)}\\liff\\lnot\\bforall{z<y}{\\lnotR(\\vecx,z)}$",
+        "$\\bexists{x\\leqy}{\\dotsx\\dots}$",
+        "$\\bexists{x<y+1}{\\dotsx\\dots}$",
+        "$x\\equivy\\modn$",
+        "$n$",
+        "$\\fn{cond}(x,y,z)$",
+        "\\begin{align*}\\fn{cond}(x,y,z)&=\\begin{cases}y&\\\\z&.\\end{cases}\\fn{cond}(0,y,z)&=y,\\\\\\fn{cond}(x+1,y,z)&=z.\\end{align*}",
+        "$g_0(\\vecx)$",
+        "$g_m(\\vecx)$",
+        "$R_0(\\vecx)$",
+        "$R_{m-1}(\\vecx)$",
+        "$f$",
+        "\\[f(\\vecx)=\\begin{cases}g_0(\\vecx)&\\\\g_1(\\vecx)&\\\\\\vdots&\\\\g_{m-1}(\\vecx)&\\\\g_m(\\vecx)&\\end{cases}\\]",
+        "$m=1$",
+        "\\[f(\\vecx)=\\fn{cond}(\\Char{\\lnotR_0}(\\vecx),g_0(\\vecx),g_1(\\vecx)).\\]",
+        "$m$",
+        "$1$"
+      ],
+      "math_target_core": [
+        "$R(\\vecx)$",
+        "\\[\\Char{R}(\\vecx)=\\left\\{\\begin{array}{ll}1&\\\\0&\\end{array}\\right.\\]",
+        "$R(\\vecx)$",
+        "$\\Char{R}(\\vecx)=1$",
+        "$\\Char{R}$",
+        "$x=0$",
+        "$\\fn{IsZero}(x)$",
+        "$\\Char{\\fn{IsZero}}$",
+        "\\begin{align*}\\Char{\\fn{IsZero}}(0)&=1,\\\\\\Char{\\fn{IsZero}}(x+1)&=0.\\end{align*}",
+        "$\\fn{IsZero}(\\left|x-y\\right|)$",
+        "$x=y$",
+        "$\\fn{IsZero}(x\\tsuby)$",
+        "$x\\leqy$",
+        "$P(\\vecx)$",
+        "$Q(\\vecx)$",
+        "$\\lnotP(\\vecx)$",
+        "$P(\\vecx)\\landQ(\\vecx)$",
+        "$P(\\vecx)\\lorQ(\\vecx)$",
+        "$P(\\vecx)\\lifQ(\\vecx)$",
+        "$P(\\vecx)$",
+        "$Q(\\vecx)$",
+        "$\\Char{P}$",
+        "$\\Char{Q}$",
+        "$\\lnotP(\\vecx)$",
+        "\\[\\Char{\\lnotP}(\\vecx)=\\begin{cases}0&\\\\1&\\end{cases}\\]",
+        "$\\Char{\\lnotP}(\\vecx)$",
+        "$1\\tsub\\Char{P}(\\vecx)$",
+        "\\[\\Char{P\\landQ}(\\vecx)=\\begin{cases}1&\\\\0&\\end{cases}\\]",
+        "$\\Char{P\\landQ}(\\vecx)$",
+        "$\\Char{P}(\\vecx)\\cdot\\Char{Q}(\\vecx)$",
+        "$\\fn{min}(\\Char{P}(\\vecx),\\Char{Q}(\\vecx))$",
+        "\\begin{align*}\\Char{P\\lorQ}(\\vecx)&=\\fn{max}(\\Char{P}(\\vecx),\\Char{Q}(\\vecx))\\\\\\Char{P\\lifQ}(\\vecx)&=\\fn{max}(1\\tsub\\Char{P}(\\vecx),\\Char{Q}(\\vecx)).\\end{align*}",
+        "$R(\\vecx,z)$",
+        "\\begin{align*}&\\bforall{z<y}{R(\\vecx,z)}\\\\&\\bexists{z<y}{R(\\vecx,z)}.\\end{align*}",
+        "$y$",
+        "$z$",
+        "$R(\\vecx,z)$",
+        "$\\bforall{z<y}{R(\\vecx,z)}$",
+        "$\\vecx$",
+        "$y$",
+        "$\\bexists{z<y}{R(\\vecx,z)}$",
+        "$0$",
+        "$z$",
+        "$\\bforall{z<0}{R(\\vecx,z)}$",
+        "$\\bexists{z<0}{R(\\vecx,z)}$",
+        "$P(\\vecx,y)\\defiff\\bforall{z<y}{R(\\vecx,z)}$",
+        "$\\Char{P}(\\vecx,y)$",
+        "\\begin{align*}\\Char{P}(\\vecx,0)&=1\\\\\\Char{P}(\\vecx,y+1)&=\\fn{min}(\\Char{P}(\\vecx,y),\\Char{R}(\\vecx,y)).\\end{align*}",
+        "$\\fn{max}$",
+        "$\\bexists{z<y}{R(\\vecx,z)}\\liff\\lnot\\bforall{z<y}{\\lnotR(\\vecx,z)}$",
+        "$\\bexists{x\\leqy}{\\dotsx\\dots}$",
+        "$\\bexists{x<y+1}{\\dotsx\\dots}$",
+        "$x\\equivy\\modn$",
+        "$n$",
+        "$\\fn{cond}(x,y,z)$",
+        "\\begin{align*}\\fn{cond}(x,y,z)&=\\begin{cases}y&\\\\z&.\\end{cases}\\fn{cond}(0,y,z)&=y,\\\\\\fn{cond}(x+1,y,z)&=z.\\end{align*}",
+        "$g_0(\\vecx)$",
+        "$g_m(\\vecx)$",
+        "$R_0(\\vecx)$",
+        "$R_{m-1}(\\vecx)$",
+        "$f$",
+        "\\[f(\\vecx)=\\begin{cases}g_0(\\vecx)&\\\\g_1(\\vecx)&\\\\\\vdots&\\\\g_{m-1}(\\vecx)&\\\\g_m(\\vecx)&\\end{cases}\\]",
+        "$m=1$",
+        "\\[f(\\vecx)=\\fn{cond}(\\Char{\\lnotR_0}(\\vecx),g_0(\\vecx),g_1(\\vecx)).\\]",
+        "$m$",
+        "$1$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [
+        "OLTECRREM-001"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2038,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: pr-relations",
+          "target_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: pr-relations"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{rec}{prr}\n\\olsection{Primitive Recursive Relations}",
+          "target_start": "\\olfileid{cmp}{rec}{prr}\n\\olsection{ఆదిమ పునరావృత్త సంబంధాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{defn}\nA relation $R(\\vec x)$ is said to be primitive recursive if its characteristic\nfunction,\n\\[\n\\Char",
+          "target_start": "\\begin{defn}\nఒక సంబంధం $R(\\vec x)$ యొక్క లక్షణ ప్రమేయం\n\\[\n\\Char{R}(\\vec x) = \\left\\{\n  \\begin{array}{ll}\n  1 &"
+        },
+        {
+          "index": 6,
+          "source_start": "In other words, when one speaks of a primitive recursive relation\n$R(\\vec x)$, one is referring to a relation ",
+          "target_start": "మరో విధంగా చెప్పాలంటే, ఆదిమ పునరావృత్త సంబంధం $R(\\vec x)$ గురించి\nమాట్లాడుతున్నప్పుడు, $\\Char{R}(\\vec x)=1$ రూ"
+        },
+        {
+          "index": 7,
+          "source_start": "It should be clear that one can compose relations with other primitive\nrecursive functions. So the following a",
+          "target_start": "సంబంధాలను ఇతర ఆదిమ పునరావృత్త ప్రమేయాలతో సంయుక్తం చేయవచ్చని\nస్పష్టమే. అందువల్ల కిందివి కూడా ఆదిమ పునరావృత్త సం"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{prop}\n  The set of primitive recursive relations is closed under Boolean\n  operations, that is, \n  if $",
+          "target_start": "\\begin{prop}\n  ఆదిమ పునరావృత్త సంబంధాల సమితి బూలియన్ క్రియల కింద సంవృతం. అంటే,\n  $P(\\vec x)$, $Q(\\vec x)$ ఆదిమ"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{proof}\n  Suppose $P(\\vec x)$ and $Q(\\vec x)$ are primitive recursive, i.e.,\n  their characteristic func",
+          "target_start": "\\begin{proof}\n  $P(\\vec x)$, $Q(\\vec x)$ ఆదిమ పునరావృత్త సంబంధాలని, అంటే వాటి\n  లక్షణ ప్రమేయాలు $\\Char{P}$, $\\"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{prop}\n  The set of primitive recursive relations is closed under bounded\n  quantification, i.e., if $R(",
+          "target_start": "\\begin{prop}\n  ఆదిమ పునరావృత్త సంబంధాల సమితి పరిమిత పరిమాణీకరణ కింద సంవృతం.\n  అంటే, $R(\\vec x,z)$ ఆదిమ పునరావృ"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{proof}\n  By convention, we take $\\bforall{z < 0}{R(\\vec x, z)}$ to be true\n  (for the trivial reason th",
+          "target_start": "\\begin{proof}\n  ఆనవాయితీగా, $0$కన్నా చిన్న $z$ ఏదీ లేదు అనే తేలికైన కారణంతో\n  $\\bforall{z<0}{R(\\vec x,z)}$ను స"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{prob}\n  Show that the three place relation $x \\equiv y \\mod n$ (congruence\n  modulo~$n$) is primitive r",
+          "target_start": "\\begin{prob}\n  మూడుస్థానిక సంబంధం $x\\equiv y\\mod n$ (మాడ్యులో~$n$ సమశేషత)\n  ఆదిమ పునరావృత్త సంబంధమని చూపండి.\n\\"
+        },
+        {
+          "index": 13,
+          "source_start": "Another useful primitive recursive function is the conditional\nfunction, $\\fn{cond}(x,y,z)$, defined by\n\\begin",
+          "target_start": "మరొక ఉపయోగకరమైన ఆదిమ పునరావృత్త ప్రమేయం షరతు ప్రమేయం\n$\\fn{cond}(x,y,z)$; దాన్ని ఇలా నిర్వచిస్తాం:\n\\begin{align"
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{prop}\nIf $g_0(\\vec x)$, \\dots,~$g_m(\\vec x)$ are primitive recursive functions, and $R_0(\\vec\nx)$, \\dot",
+          "target_start": "\\begin{prop}\n$g_0(\\vec x)$, \\dots,~$g_m(\\vec x)$ ఆదిమ పునరావృత్త ప్రమేయాలు,\n$R_0(\\vec x)$, \\dots,~$R_{m-1}(\\ve"
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{proof}\n  When $m = 1$, this is just the function defined by\n  \\[\n  f(\\vec x) = \\fn{cond}(\\Char{\\lnot R_",
+          "target_start": "\\begin{proof}\n  $m = 1$ అయినప్పుడు ఇది కేవలం కింది విధంగా నిర్వచించిన ప్రమేయం:\n  \\[\n  f(\\vec x) = \\fn{cond}(\\C"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{prr}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{prr}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0218",
+      "source_path": "content/computability/recursive-functions/bounded-minimization.tex",
+      "source_sha256": "682737f7312e08999a21f07a0a6859e4e0b4ed81ec5c9094789f774f1596bda6",
+      "translation_sha256": "71f6458734cd024507ca4292ccabb4d88f0377a52937eeb644cf53cfb1970872",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{rec}{bmi}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{rec}{bmi}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$P$",
+        "$P$",
+        "$0$",
+        "$1$",
+        "$2$",
+        "$P$",
+        "$R(x,z)$",
+        "$x$",
+        "$y$",
+        "$z<y$",
+        "$R(x,z)$",
+        "$R(x,0)$",
+        "$R(x,1)$",
+        "$R(x,y-1)$",
+        "$R(\\vecx,z)$",
+        "$m_R(\\vec{x},y)$",
+        "$z$",
+        "$y$",
+        "$R(\\vecx,z)$",
+        "$y$",
+        "$m_R$",
+        "\\[\\bmin{z<y}{R(\\vec{x},z)},\\]",
+        "$z<0$",
+        "$R(\\vec{x},z)$",
+        "$z<0$",
+        "$m_R(\\vecx,0)=0$",
+        "$y+1$",
+        "$z<y$",
+        "$R(\\vec{x},z)$",
+        "$m_R(\\vec{x},y+1)=m_R(\\vec{x},y)$",
+        "$z<y$",
+        "$R(\\vec{x},y)$",
+        "$m_R(\\vec{x},y+1)=y$",
+        "$z<y+1$",
+        "$R(\\vec{x},z)$",
+        "$m_R(\\vec{z},y+1)=y+1$",
+        "$m_R(\\vecx,0)$",
+        "\\begin{align*}m_R(\\vec{x},0)&=0\\\\m_R(\\vec{x},y+1)&=\\begin{cases}m_R(\\vec{x},y)&\\\\y&\\\\y+1&\\end{cases}\\end{align*}",
+        "$z<y$",
+        "$R(\\vecx,z)$",
+        "$m_R(\\vecx,y)\\neqy$",
+        "$R(\\vecx,z)$",
+        "$m'_R(\\vec{x},y)$",
+        "$z$",
+        "$y$",
+        "$R(\\vec{x},z)$",
+        "$0$",
+        "$\\Char{R}$"
+      ],
+      "math_target_core": [
+        "$P$",
+        "$P$",
+        "$P$",
+        "$0$",
+        "$1$",
+        "$2$",
+        "$R(x,z)$",
+        "$R(x,z)$",
+        "$z<y$",
+        "$x$",
+        "$y$",
+        "$R(x,0)$",
+        "$R(x,1)$",
+        "$R(x,y-1)$",
+        "$R(\\vecx,z)$",
+        "$R(\\vecx,z)$",
+        "$y$",
+        "$z$",
+        "$y$",
+        "$m_R(\\vec{x},y)$",
+        "$m_R$",
+        "\\[\\bmin{z<y}{R(\\vec{x},z)},\\]",
+        "$R(\\vec{x},z)$",
+        "$z<0$",
+        "$z<0$",
+        "$m_R(\\vecx,0)=0$",
+        "$y+1$",
+        "$R(\\vec{x},z)$",
+        "$z<y$",
+        "$m_R(\\vec{x},y+1)=m_R(\\vec{x},y)$",
+        "$z<y$",
+        "$R(\\vec{x},y)$",
+        "$m_R(\\vec{x},y+1)=y$",
+        "$R(\\vec{x},z)$",
+        "$z<y+1$",
+        "$m_R(\\vec{x},y+1)=y+1$",
+        "$m_R(\\vecx,0)$",
+        "\\begin{align*}m_R(\\vec{x},0)&=0\\\\m_R(\\vec{x},y+1)&=\\begin{cases}m_R(\\vec{x},y)&\\\\y&\\\\y+1&\\end{cases}\\end{align*}",
+        "$R(\\vecx,z)$",
+        "$z<y$",
+        "$m_R(\\vecx,y)\\neqy$",
+        "$R(\\vecx,z)$",
+        "$R(\\vec{x},z)$",
+        "$y$",
+        "$z$",
+        "$0$",
+        "$m'_R(\\vec{x},y)$",
+        "$\\Char{R}$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$m_R(\\vec{z},y+1)=y+1$"
+      ],
+      "math_delta_target_only": [
+        "$m_R(\\vec{x},y+1)=y+1$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTECRREM-002"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1193,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: bounded-minimization",
+          "target_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: bounded-minimization"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{rec}{bmi}\n\\olsection{Bounded Minimization}",
+          "target_start": "\\olfileid{cmp}{rec}{bmi}\n\\olsection{పరిమిత కనిష్ఠీకరణ}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{explain}\nIt is often useful to define a function as the least number satisfying\nsome property or relati",
+          "target_start": "\\begin{explain}\nఏదైనా ధర్మం లేదా సంబంధం~$P$ను నెరవేర్చే అతి చిన్న సంఖ్యగా ఒక\nప్రమేయాన్ని నిర్వచించడం తరచూ ఉపయో"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{prop}\nIf $R(\\vec x, z)$ is primitive recursive, so is the function\n$m_R(\\vec{x}, y)$ which returns the ",
+          "target_start": "\\begin{prop}\n$R(\\vec x, z)$ ఆదిమ పునరావృత్త సంబంధమైతే, $R(\\vec x, z)$ నెరవేరే\n$y$కన్నా చిన్న అతి చిన్న~$z$ ఉంట"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{proof}\nNote than there can be no~$z < 0$ such that $R(\\vec{x}, z)$ since\nthere is no $z < 0$ at all.  S",
+          "target_start": "\\begin{proof}\n$R(\\vec{x}, z)$ నెరవేరే $z < 0$ ఉండదు; ఎందుకంటే $z < 0$ అసలే\nలేదు. అందువల్ల $m_R(\\vec x, 0) = 0$"
+        },
+        {
+          "index": 8,
+          "source_start": "In case the bound is of the form $y + 1$ we have three cases:\n\\begin{enumerate}\n\\item There is a $z < y$ such ",
+          "target_start": "అవధి $y+1$ రూపంలో ఉన్నప్పుడు మూడు సందర్భాలు ఉన్నాయి:\n\\begin{enumerate}\n\\item $R(\\vec{x}, z)$ నెరవేరే $z < y$ ఉ"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{prob}\nSuppose $R(\\vec x, z)$ is primitive recursive. Define the function\n$m'_R(\\vec{x}, y)$ which retur",
+          "target_start": "\\begin{prob}\n$R(\\vec x, z)$ ఆదిమ పునరావృత్త సంబంధం అనుకుందాం. $R(\\vec{x}, z)$\nనెరవేరే $y$కన్నా చిన్న అతి చిన్న"
+        },
+        {
+          "index": 10,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{bmi}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{bmi}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0219",
+      "source_path": "content/computability/recursive-functions/primes.tex",
+      "source_sha256": "76fc5fb7d628c14a52d6a8b0e9fbad24fe15fa49f170e89f8982d79043daa1b4",
+      "translation_sha256": "9bb82454da738fc678aa0092c486f633d88c69169952ac2ceb88ba34304ce362",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{rec}{pri}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{rec}{pri}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$x$",
+        "$y$",
+        "$x\\midy$",
+        "$x\\midy$",
+        "$y$",
+        "$x$",
+        "$y$",
+        "$x$",
+        "$x$",
+        "$y$",
+        "$>0$",
+        "$x\\nmidy$",
+        "$x\\midy$",
+        "$z$",
+        "$x\\cdotz=y$",
+        "$z$",
+        "$\\leqy$",
+        "$x\\midy$",
+        "$z\\ley$",
+        "$x\\cdotz=y$",
+        "$x\\midy$",
+        "$=$",
+        "\\[x\\midy\\defiff\\bexists{z\\leqy}{(x\\cdotz)=y}.\\]",
+        "$x\\midy$",
+        "$x$",
+        "$0$",
+        "$1$",
+        "$1$",
+        "$y\\midx$",
+        "$y=1$",
+        "$y=x$",
+        "$x$",
+        "$y\\midx$",
+        "$y\\lex$",
+        "$y>x$",
+        "$y\\nmidx$",
+        "$\\fn{Prime}(x)$",
+        "$x$",
+        "\\[\\fn{Prime}(x)\\defiffx\\geq2\\land\\bforall{y\\leqx}{(y\\midx\\lify=1\\lory=x)}\\]",
+        "$2$",
+        "$3$",
+        "$5$",
+        "$7$",
+        "$11$",
+        "$p(x)$",
+        "$x$",
+        "$p(0)=2$",
+        "$p(1)=3$",
+        "$p(2)=5$",
+        "$p(x)$",
+        "$p_x$",
+        "$p_0=2$",
+        "$p_1=3$",
+        "$\\fn{nextPrime(x)}$",
+        "$x$",
+        "$p$",
+        "\\begin{align*}p(0)&=2\\\\p(x+1)&=\\fn{nextPrime}(p(x))\\end{align*}",
+        "$\\fn{nextPrime}(x)$",
+        "$y$",
+        "$y>x$",
+        "$y$",
+        "$x$",
+        "$\\fact{x}+1$",
+        "\\[\\fn{nextPrime(x)}=\\bmin{y\\leq\\fact{x}+1}{(y>x\\land\\fn{Prime}(y))}.\\]",
+        "$\\fn{nextPrime}(x)$",
+        "$p(x)$",
+        "$p_n$",
+        "$\\lex$",
+        "$p=p_0\\cdotp_1\\cdot\\dots\\cdotp_n$",
+        "$\\lex$",
+        "$p+1$",
+        "$x$",
+        "$p+1$",
+        "$p+1$",
+        "$q\\midp+1$",
+        "$q<p+1$",
+        "$\\lex$",
+        "$p+1$",
+        "$p$",
+        "$p_i\\lex$",
+        "$p$",
+        "$0$",
+        "$p_i\\lex$",
+        "$p+1$",
+        "$1$",
+        "$p_i\\nmidp+1$",
+        "$q$",
+        "$>x$",
+        "$<p+1$",
+        "$p\\le\\fact{x}$",
+        "$>x$",
+        "$\\le\\fact{x}+1$",
+        "$d(x,y)$"
+      ],
+      "math_target_core": [
+        "$x$",
+        "$y$",
+        "$x\\midy$",
+        "$y$",
+        "$x$",
+        "$y$",
+        "$x$",
+        "$x\\midy$",
+        "$y$",
+        "$x$",
+        "$>0$",
+        "$x\\nmidy$",
+        "$z$",
+        "$x\\cdotz=y$",
+        "$x\\midy$",
+        "$z$",
+        "$\\leqy$",
+        "$z\\ley$",
+        "$x\\cdotz=y$",
+        "$x\\midy$",
+        "$=$",
+        "$x\\midy$",
+        "\\[x\\midy\\defiff\\bexists{z\\leqy}{(x\\cdotz)=y}.\\]",
+        "$x\\midy$",
+        "$x$",
+        "$0$",
+        "$1$",
+        "$1$",
+        "$y\\midx$",
+        "$y=1$",
+        "$y=x$",
+        "$x$",
+        "$y\\lex$",
+        "$y\\midx$",
+        "$y>x$",
+        "$y\\nmidx$",
+        "$x$",
+        "$\\fn{Prime}(x)$",
+        "\\[\\fn{Prime}(x)\\defiffx\\geq2\\land\\bforall{y\\leqx}{(y\\midx\\lify=1\\lory=x)}\\]",
+        "$2$",
+        "$3$",
+        "$5$",
+        "$7$",
+        "$11$",
+        "$x$",
+        "$p(x)$",
+        "$p(0)=2$",
+        "$p(1)=3$",
+        "$p(2)=5$",
+        "$p(x)$",
+        "$p_x$",
+        "$p_0=2$",
+        "$p_1=3$",
+        "$x$",
+        "$\\fn{nextPrime}(x)$",
+        "$p$",
+        "\\begin{align*}p(0)&=2\\\\p(x+1)&=\\fn{nextPrime}(p(x))\\end{align*}",
+        "$\\fn{nextPrime}(x)$",
+        "$y>x$",
+        "$y$",
+        "$y$",
+        "$x$",
+        "$\\fact{x}+1$",
+        "\\[\\fn{nextPrime}(x)=\\bmin{y\\leq\\fact{x}+1}{(y>x\\land\\fn{Prime}(y))}.\\]",
+        "$\\fn{nextPrime}(x)$",
+        "$p(x)$",
+        "$x=0$",
+        "$x=1$",
+        "$2\\leq\\fact{x}+1$",
+        "$x\\geq2$",
+        "$p_n$",
+        "$\\lex$",
+        "$\\lex$",
+        "$p=p_0\\cdotp_1\\cdot\\dots\\cdotp_n$",
+        "$p+1$",
+        "$x$",
+        "$p+1$",
+        "$p+1$",
+        "$q<p+1$",
+        "$q\\midp+1$",
+        "$\\lex$",
+        "$p+1$",
+        "$p$",
+        "$p_i\\lex$",
+        "$p$",
+        "$0$",
+        "$p_i\\lex$",
+        "$p+1$",
+        "$1$",
+        "$p_i\\nmidp+1$",
+        "$q$",
+        "$>x$",
+        "$<p+1$",
+        "$p\\le\\fact{x}$",
+        "$>x$",
+        "$\\le\\fact{x}+1$",
+        "$d(x,y)$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$\\fn{nextPrime(x)}$",
+        "\\[\\fn{nextPrime(x)}=\\bmin{y\\leq\\fact{x}+1}{(y>x\\land\\fn{Prime}(y))}.\\]"
+      ],
+      "math_delta_target_only": [
+        "$2\\leq\\fact{x}+1$",
+        "$\\fn{nextPrime}(x)$",
+        "$x=0$",
+        "$x=1$",
+        "$x\\geq2$",
+        "\\[\\fn{nextPrime}(x)=\\bmin{y\\leq\\fact{x}+1}{(y>x\\land\\fn{Prime}(y))}.\\]"
+      ],
+      "declared_source_correction_ids": [
+        "OLTECRREM-003",
+        "OLTECRREM-004",
+        "OLTECRREM-005"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2096,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: primes",
+          "target_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: primes"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{rec}{pri}\n\\olsection{Primes}",
+          "target_start": "\\olfileid{cmp}{rec}{pri}\n\\olsection{ప్రధాన సంఖ్యలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "Bounded quantification and bounded minimization provide us with a good\ndeal of machinery to show that natural ",
+          "target_start": "సహజమైన ప్రమేయాలు, సంబంధాలు ఆదిమ పునరావృత్తాలని చూపడానికి పరిమిత\nపరిమాణీకరణ, పరిమిత కనిష్ఠీకరణ మనకు చాలా సాధనాల"
+        },
+        {
+          "index": 6,
+          "source_start": "A natural number~$x$ is \\emph{prime} if it is neither $0$ nor $1$ and\nis only divisible by $1$ and itself. In ",
+          "target_start": "సహజ సంఖ్య~$x$, $0$ గానీ $1$ గానీ కాకుండా, $1$తోనూ తనతోనూ మాత్రమే\nభాగించబడితే దాన్ని \\emph{ప్రధాన సంఖ్య} అంటాం."
+        },
+        {
+          "index": 7,
+          "source_start": "The primes are $2$, $3$, $5$, $7$, $11$, etc. Consider the function\n$p(x)$ which returns the $x$th prime in th",
+          "target_start": "ప్రధాన సంఖ్యలు $2$, $3$, $5$, $7$, $11$, మొదలైనవి. ఈ క్రమంలో\n$x$వ ప్రధాన సంఖ్యను తిరిగి ఇచ్చే ప్రమేయం $p(x)$ను"
+        },
+        {
+          "index": 8,
+          "source_start": "If we had a function\n$\\fn{nextPrime(x)}$, which returns the first prime number larger\nthan~$x$, $p$~can be eas",
+          "target_start": "$x$కన్నా పెద్దదైన మొదటి ప్రధాన సంఖ్యను తిరిగి ఇచ్చే ప్రమేయం\n$\\fn{nextPrime}(x)$ మనకు ఉంటే, $p$ను ఆదిమ పునరావృత"
+        },
+        {
+          "index": 9,
+          "source_start": "(If you're curious, here's a quick proof of Euclid's theorem. Suppose\n$p_n$ is the largest prime $\\le x$ and c",
+          "target_start": "(ఆసక్తి ఉంటే, యూక్లిడ్ ఫలితానికి సంక్షిప్త నిరూపణ ఇది. $x=0$ లేదా\n$x=1$ అయితే $2\\leq\\fact{x}+1$, కనుక వాదన తక్"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{prob}\nDefine integer division $d(x, y)$ using bounded minimization.\n\\end{prob}",
+          "target_start": "\\begin{prob}\nపరిమిత కనిష్ఠీకరణను ఉపయోగించి పూర్ణాంక భాగహారం $d(x,y)$ను\nనిర్వచించండి.\n\\end{prob}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{pri}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{pri}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0220",
+      "source_path": "content/computability/recursive-functions/sequences.tex",
+      "source_sha256": "044570a5499177a994d08baaa6109db5db40c6d69dda2d8961909cdce945b8ae",
+      "translation_sha256": "27e4a7e5e3175a2a62ed12a713ecf26d2e845c234fda82bb2fdfc04c3ad0afce",
+      "source_blocks": 25,
+      "target_blocks": 25,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{rec}{seq}",
+        "\\ollabel{prop:subseq}",
+        "\\olref[cmp][rec][seq]{prop:subseq}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{rec}{seq}",
+        "\\ollabel{prop:subseq}",
+        "\\olref[cmp][rec][seq]{prop:subseq}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\langlea_0,a_1,a_2,\\dots,a_k\\rangle$",
+        "\\[p_0^{a_0+1}\\cdotp_1^{a_1+1}\\cdotp_2^{a_2+1}\\cdot\\dots\\cdotp_k^{a_k+1}.\\]",
+        "$\\langle2,7,3\\rangle$",
+        "$\\langle2,7,3,0,0\\rangle$",
+        "$0$",
+        "$1$",
+        "$\\emptyseq$",
+        "$0$",
+        "$n\\ge2$",
+        "\\[n=p_0^{a_0}\\cdotp_1^{a_1}\\cdot\\dots\\cdotp_k^{a_k}\\]",
+        "$a_k\\ge1$",
+        "$\\tuple{}(a_0,\\dots,a_k)=\\tuple{a_0,\\dots,a_k}$",
+        "$i$",
+        "$\\len{s}$",
+        "$s$",
+        "$R(i,s)$",
+        "\\[R(i,s)p_i\\mids\\landp_{i+1}\\nmids.\\]",
+        "$R$",
+        "$s$",
+        "\\[s=p_0^{a_0+1}\\cdot\\dots\\cdotp_{k}^{a_{k}+1},\\]",
+        "$R(i,s)$",
+        "$p_i$",
+        "$p_i\\mids$",
+        "$i=k$",
+        "$s$",
+        "$i+1$",
+        "$p_i$",
+        "$s$",
+        "\\[\\len{s}=\\begin{cases}0&\\\\1+\\bmin{i<s}{R(i,s)}&\\end{cases}\\]",
+        "$i$",
+        "$R(i,s)$",
+        "$s$",
+        "$i$",
+        "$s$",
+        "$\\fn{append}(s,a)$",
+        "$a$",
+        "$s$",
+        "$\\fn{append}$",
+        "\\[\\fn{append}(s,a)=\\begin{cases}2^{a+1}&\\\\s\\cdotp_{\\len{s}}^{a+1}&\\end{cases}\\]",
+        "$\\fn{element}(s,i)$",
+        "$i$",
+        "$s$",
+        "$0$",
+        "$0$",
+        "$i$",
+        "$s$",
+        "$a$",
+        "$i$",
+        "$s$",
+        "$p_i^{a+1}$",
+        "$p_i$",
+        "$s$",
+        "$p_i^{a+1}\\mids$",
+        "$p_i^{a+2}\\nmids$",
+        "\\[\\fn{element}(s,i)=\\begin{cases}0&\\\\\\bmin{a<s}{(p_i^{a+2}\\nmids)}&\\end{cases}\\]",
+        "$(s)_i$",
+        "$\\fn{element}(s,i)$",
+        "$\\tuple{s_0,\\dots,s_k}$",
+        "\\[\\fn{append}(\\fn{append}(\\dots\\fn{append}(\\emptyseq,s_0)\\dots),s_k).\\]",
+        "$s$",
+        "$k$",
+        "$s$",
+        "$(s)_0$",
+        "$(s)_{k-1}$",
+        "$\\fn{concat}(s,t)$",
+        "$\\fn{concat}$",
+        "\\[\\fn{concat}(\\tuple{a_0,\\dots,a_k},\\tuple{b_0,\\dots,b_l})=\\tuple{a_0,\\dots,a_k,b_0,\\dots,b_l}.\\]",
+        "$\\fn{hconcat}(s,t,n)$",
+        "$n$",
+        "$t$",
+        "$s$",
+        "\\begin{align*}\\fn{hconcat}(s,t,0)&=s\\\\\\fn{hconcat}(s,t,n+1)&=\\fn{append}(\\fn{hconcat}(s,t,n),(t)_n)$\\fn{concat}$\\fn{concat}(s,t)&=\\fn{hconcat}(s,t,\\len{t}).\\end{align*}",
+        "$s\\concatt$",
+        "$\\fn{concat}(s,t)$",
+        "$s$",
+        "$k$",
+        "$x$",
+        "$s$",
+        "$k$",
+        "$p_{k-1}$",
+        "$x+1$",
+        "$s$",
+        "\\[\\fn{sequenceBound}(x,k)=p_{k-1}^{k\\cdot(x+1)},\\]",
+        "$s$",
+        "$\\fn{sequenceBound}(x,k)$",
+        "$\\fn{concat}$",
+        "\\begin{align*}\\fn{concat}(s,t)={}&\\bmin{v<\\fn{sequenceBound}(s+t,\\len{s}+\\len{t})}{}\\\\&\\quad(\\len{v}=\\len{s}+\\len{t}\\land{}\\\\&\\qquad\\bforall{i<\\len{s}}{((v)_i=(s)_i)\\land{}\\\\&\\qquad\\bforall{j<\\len{t}}{((v)_{\\len{s}+j}=(t)_j)})}\\end{align*}",
+        "$\\fn{sconcat}(s)$",
+        "\\[\\fn{sconcat}(\\tuple{s_0,\\dots,s_k})=s_0\\concat\\dots\\concats_k.\\]",
+        "$\\fn{tail}(s)$",
+        "\\begin{align*}\\fn{tail}(\\emptyseq)&=0\\\\\\fn{tail}(\\tuple{s_0,\\dots,s_{k}})&=\\tuple{s_1,\\dots,s_{k}}.\\end{align*}",
+        "$\\fn{subseq}(s,i,n)$",
+        "$s$",
+        "$n$",
+        "$i$"
+      ],
+      "math_target_core": [
+        "$\\langlea_0,a_1,a_2,\\dots,a_k\\rangle$",
+        "\\[p_0^{a_0+1}\\cdotp_1^{a_1+1}\\cdotp_2^{a_2+1}\\cdot\\dots\\cdotp_k^{a_k+1}.\\]",
+        "$\\langle2,7,3\\rangle$",
+        "$\\langle2,7,3,0,0\\rangle$",
+        "$0$",
+        "$1$",
+        "$\\emptyseq$",
+        "$0$",
+        "$n\\ge2$",
+        "$a_k\\ge1$",
+        "\\[n=p_0^{a_0}\\cdotp_1^{a_1}\\cdot\\dots\\cdotp_k^{a_k}\\]",
+        "$(a_0,\\dots,a_k)\\longmapsto\\tuple{a_0,\\dots,a_k}$",
+        "$i$",
+        "$s$",
+        "$\\len{s}$",
+        "$R(i,s)$",
+        "\\[R(i,s)p_i\\mids\\landp_{i+1}\\nmids.\\]",
+        "$R$",
+        "$s$",
+        "\\[s=p_0^{a_0+1}\\cdot\\dots\\cdotp_{k}^{a_{k}+1},\\]",
+        "$s$",
+        "$p_i$",
+        "$p_i\\mids$",
+        "$i=k$",
+        "$R(i,s)$",
+        "$p_i$",
+        "$s$",
+        "$s$",
+        "$i+1$",
+        "\\[\\len{s}=\\begin{cases}0&\\\\1+\\bmin{i<s}{R(i,s)}&\\end{cases}\\]",
+        "$s$",
+        "$R(i,s)$",
+        "$i$",
+        "$i$",
+        "$s$",
+        "$s$",
+        "$a$",
+        "$\\fn{append}(s,a)$",
+        "$\\fn{append}$",
+        "\\[\\fn{append}(s,a)=\\begin{cases}2^{a+1}&\\\\s\\cdotp_{\\len{s}}^{a+1}&\\end{cases}\\]",
+        "$s$",
+        "$i$",
+        "$0$",
+        "$i$",
+        "$s$",
+        "$0$",
+        "$\\fn{element}(s,i)$",
+        "$p_i^{a+1}$",
+        "$s$",
+        "$p_i$",
+        "$a$",
+        "$s$",
+        "$i$",
+        "$p_i^{a+1}\\mids$",
+        "$p_i^{a+2}\\nmids$",
+        "\\[\\fn{element}(s,i)=\\begin{cases}0&\\\\\\bmin{a<s}{(p_i^{a+2}\\nmids)}&\\end{cases}\\]",
+        "$\\fn{element}(s,i)$",
+        "$(s)_i$",
+        "$\\tuple{s_0,\\dots,s_k}$",
+        "\\[\\fn{append}(\\fn{append}(\\dots\\fn{append}(\\emptyseq,s_0)\\dots),s_k).\\]",
+        "$s$",
+        "$k$",
+        "$(s)_0$",
+        "$(s)_{k-1}$",
+        "$\\fn{concat}(s,t)$",
+        "$\\fn{concat}$",
+        "\\[\\fn{concat}(\\tuple{a_0,\\dots,a_k},\\tuple{b_0,\\dots,b_l})=\\tuple{a_0,\\dots,a_k,b_0,\\dots,b_l}.\\]",
+        "$t$",
+        "$n$",
+        "$s$",
+        "$\\fn{hconcat}(s,t,n)$",
+        "\\begin{align*}\\fn{hconcat}(s,t,0)&=s\\\\\\fn{hconcat}(s,t,n+1)&=\\fn{append}(\\fn{hconcat}(s,t,n),(t)_n)$\\fn{concat}$\\fn{concat}(s,t)&=\\fn{hconcat}(s,t,\\len{t}).\\end{align*}",
+        "$\\fn{concat}(s,t)$",
+        "$s\\concatt$",
+        "$s$",
+        "$k$",
+        "$x$",
+        "$s$",
+        "$k$",
+        "$p_{k-1}$",
+        "$s$",
+        "$x+1$",
+        "\\[\\fn{sequenceBound}(x,k)=p_{k-1}^{k\\cdot(x+1)},\\]",
+        "$s$",
+        "$\\fn{sequenceBound}(x,k)$",
+        "$\\fn{concat}$",
+        "\\begin{align*}\\fn{concat}(s,t)={}&\\bmin{v\\leq\\fn{sequenceBound}(s+t,\\len{s}+\\len{t})}{}\\\\&\\quad(\\len{v}=\\len{s}+\\len{t}\\land{}\\\\&\\qquad\\bforall{i<\\len{s}}{((v)_i=(s)_i)\\land{}\\\\&\\qquad\\bforall{j<\\len{t}}{((v)_{\\len{s}+j}=(t)_j)})}\\end{align*}",
+        "$\\fn{sconcat}(s)$",
+        "\\[\\fn{sconcat}(\\tuple{s_0,\\dots,s_k})=s_0\\concat\\dots\\concats_k.\\]",
+        "$\\fn{tail}(s)$",
+        "\\begin{align*}\\fn{tail}(\\emptyseq)&=0\\\\\\fn{tail}(\\tuple{s_0,\\dots,s_{k}})&=\\tuple{s_1,\\dots,s_{k}}.\\end{align*}",
+        "$s$",
+        "$i$",
+        "$n$",
+        "$\\fn{subseq}(s,i,n)$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$\\tuple{}(a_0,\\dots,a_k)=\\tuple{a_0,\\dots,a_k}$",
+        "\\begin{align*}\\fn{concat}(s,t)={}&\\bmin{v<\\fn{sequenceBound}(s+t,\\len{s}+\\len{t})}{}\\\\&\\quad(\\len{v}=\\len{s}+\\len{t}\\land{}\\\\&\\qquad\\bforall{i<\\len{s}}{((v)_i=(s)_i)\\land{}\\\\&\\qquad\\bforall{j<\\len{t}}{((v)_{\\len{s}+j}=(t)_j)})}\\end{align*}"
+      ],
+      "math_delta_target_only": [
+        "$(a_0,\\dots,a_k)\\longmapsto\\tuple{a_0,\\dots,a_k}$",
+        "\\begin{align*}\\fn{concat}(s,t)={}&\\bmin{v\\leq\\fn{sequenceBound}(s+t,\\len{s}+\\len{t})}{}\\\\&\\quad(\\len{v}=\\len{s}+\\len{t}\\land{}\\\\&\\qquad\\bforall{i<\\len{s}}{((v)_i=(s)_i)\\land{}\\\\&\\qquad\\bforall{j<\\len{t}}{((v)_{\\len{s}+j}=(t)_j)})}\\end{align*}"
+      ],
+      "declared_source_correction_ids": [
+        "OLTECRREM-006",
+        "OLTECRREM-007"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2892,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: sequences",
+          "target_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: sequences"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{rec}{seq}\n\\olsection{Sequences}",
+          "target_start": "\\olfileid{cmp}{rec}{seq}\n\\olsection{క్రమాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "The set of primitive recursive functions is remarkably robust. But we\nwill be able to do even more once we hav",
+          "target_start": "ఆదిమ పునరావృత్త ప్రమేయాల సమితి విశేషంగా దృఢమైనది. అయితే\n\\emph{క్రమాలను} నిర్వహించడానికి తగిన పద్ధతిని అభివృద్ధ"
+        },
+        {
+          "index": 6,
+          "source_start": "The reason that this coding of sequences works is the so-called\nFundamental Theorem of Arithmetic: every natur",
+          "target_start": "క్రమాల ఈ సంకేతీకరణ పనిచేయడానికి కారణం అంకగణిత ప్రాథమిక సిద్ధాంతం:\nప్రతి సహజ సంఖ్య $n\\ge2$ను $a_k\\ge1$ అయ్యేలా\n"
+        },
+        {
+          "index": 7,
+          "source_start": "We'll now show that the operations of determining the length of a\nsequence, determining its $i$th element, app",
+          "target_start": "ఒక క్రమపు పొడవును కనుగొనడం, దాని $i$వ మూలకాన్ని కనుగొనడం, క్రమం\nచివర ఒక మూలకాన్ని చేర్చడం, రెండు క్రమాలను అనుస"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{prop}\n  The function $\\len{s}$, which returns the length of the sequence\n  $s$, is primitive recursive.",
+          "target_start": "\\begin{prop}\n  క్రమం $s$ యొక్క పొడవును తిరిగి ఇచ్చే ప్రమేయం $\\len{s}$ ఆదిమ\n  పునరావృత్త ప్రమేయం.\n\\end{prop}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{proof}\n  Let $R(i, s)$ be the relation defined by\n  \\[\n  R(i, s) \\text{ iff }\n  p_i \\mid s \\land p_{i+1",
+          "target_start": "\\begin{proof}\n  సంబంధం $R(i,s)$ను ఇలా నిర్వచిద్దాం:\n  \\[\n  R(i, s) \\text{ అప్పుడే }\n  p_i \\mid s \\land p_{i+1}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{prop}\n  The function $\\fn{append}(s,a)$, which returns the result of appending $a$ to\n  the sequence $s",
+          "target_start": "\\begin{prop}\n  క్రమం $s$ చివర $a$ను చేర్చిన ఫలితాన్ని తిరిగి ఇచ్చే ప్రమేయం\n  $\\fn{append}(s,a)$ ఆదిమ పునరావృత్"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{proof}\n  $\\fn{append}$ can be defined by:\n  \\[\n  \\fn{append}(s,a) =\n  \\begin{cases}\n    2^{a+1} & \\text",
+          "target_start": "\\begin{proof}\n  $\\fn{append}$ను ఇలా నిర్వచించవచ్చు:\n  \\[\n  \\fn{append}(s,a) =\n  \\begin{cases}\n    2^{a+1} & \\t"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{prop}\n  The function $\\fn{element}(s,i)$, which returns the $i$th element of $s$\n  (where the initial e",
+          "target_start": "\\begin{prop}\n  $s$ యొక్క $i$వ మూలకాన్ని (మొదటి మూలకాన్ని $0$వది అంటాం), లేదా\n  $i$ అనేది $s$ పొడవుకన్నా ఎక్కువ"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{proof}\nNote that $a$ is the $i$th element of~$s$ iff $p_i^{a+1}$ is\nthe largest power of~$p_i$ that div",
+          "target_start": "\\begin{proof}\n$p_i^{a+1}$ అనేది $s$ను భాగించే $p_i$ యొక్క అతి పెద్ద ఘాతం\nఅయినప్పుడే $a$ అనేది $s$ యొక్క $i$వ మ"
+        },
+        {
+          "index": 14,
+          "source_start": "Instead of using the official names for the functions defined above,\nwe introduce a more compact notation. We ",
+          "target_start": "పైన నిర్వచించిన ప్రమేయాల అధికారిక పేర్లకు బదులుగా మరింత క్లుప్తమైన\nసంకేతనాన్ని ప్రవేశపెడతాం. $\\fn{element}(s,i"
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{prop}\nThe function $\\fn{concat}(s,t)$, which concatenates two\nsequences, is primitive recursive.\n\\end{p",
+          "target_start": "\\begin{prop}\nరెండు క్రమాలను అనుసంధానించే ప్రమేయం $\\fn{concat}(s,t)$ ఆదిమ\nపునరావృత్త ప్రమేయం.\n\\end{prop}"
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{proof}\n  We want a function $\\fn{concat}$ with the property that\n  \\[\n    \\fn{concat}(\\tuple{a_0, \\dots",
+          "target_start": "\\begin{proof}\n  మనకు కింది ధర్మం గల $\\fn{concat}$ ప్రమేయం కావాలి:\n  \\[\n    \\fn{concat}(\\tuple{a_0, \\dots, a_k}"
+        },
+        {
+          "index": 17,
+          "source_start": "We will write $s \\concat t$ instead of $\\fn{concat}(s,t)$.",
+          "target_start": "$\\fn{concat}(s,t)$కు బదులుగా $s\\concat t$ అని రాస్తాం."
+        },
+        {
+          "index": 18,
+          "source_start": "It will be useful for us to be able to bound the numeric code of a\nsequence in terms of its length and its lar",
+          "target_start": "ఒక క్రమపు సంఖ్యా సంకేతాన్ని దాని పొడవు, దాని అతి పెద్ద మూలకం పరంగా\nఅవధి చేయగలగడం మనకు ఉపయోగపడుతుంది. $s$ పొడవు"
+        },
+        {
+          "index": 19,
+          "source_start": "Having such a bound on sequences gives us a way of defining new\nfunctions using bounded search. For example, w",
+          "target_start": "క్రమాలపై ఇటువంటి అవధి ఉండటం వల్ల పరిమిత అన్వేషణను ఉపయోగించి కొత్త\nప్రమేయాలను నిర్వచించవచ్చు. ఉదాహరణకు, $\\fn{co"
+        },
+        {
+          "index": 20,
+          "source_start": "\\begin{prob}\nShow that there is a primitive recursive function~$\\fn{sconcat}(s)$\nwith the property that\n\\[\n\\fn",
+          "target_start": "\\begin{prob}\nకింది ధర్మం గల ఆదిమ పునరావృత్త ప్రమేయం~$\\fn{sconcat}(s)$ ఉందని\nచూపండి:\n\\[\n\\fn{sconcat}(\\tuple{s_0"
+        },
+        {
+          "index": 21,
+          "source_start": "\\begin{prob}\nShow that there is a primitive recursive function~$\\fn{tail}(s)$\nwith the property that\n\\begin{al",
+          "target_start": "\\begin{prob}\nకింది ధర్మాలు గల ఆదిమ పునరావృత్త ప్రమేయం~$\\fn{tail}(s)$ ఉందని\nచూపండి:\n\\begin{align*}\n  \\fn{tail}("
+        },
+        {
+          "index": 22,
+          "source_start": "\\begin{prop}\n  \\ollabel{prop:subseq}\n  The function $\\fn{subseq}(s, i, n)$ which returns the subsequence\n  of ",
+          "target_start": "\\begin{prop}\n  \\ollabel{prop:subseq}\n  $s$ యొక్క $i$వ మూలకం వద్ద మొదలై పొడవు~$n$ ఉన్న ఉపక్రమాన్ని తిరిగి\n  ఇచ్"
+        },
+        {
+          "index": 23,
+          "source_start": "\\begin{proof}\n  Exercise.\n\\end{proof}",
+          "target_start": "\\begin{proof}\n  అభ్యాసం.\n\\end{proof}"
+        },
+        {
+          "index": 24,
+          "source_start": "\\begin{prob}\n  Prove \\olref[cmp][rec][seq]{prop:subseq}.\n\\end{prob}",
+          "target_start": "\\begin{prob}\n  \\olref[cmp][rec][seq]{prop:subseq}ను నిరూపించండి.\n\\end{prob}"
+        },
+        {
+          "index": 25,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{seq}",
+        "\\ollabel{prop:subseq}",
+        "\\olref[cmp][rec][seq]{prop:subseq}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{seq}",
+        "\\ollabel{prop:subseq}",
+        "\\olref[cmp][rec][seq]{prop:subseq}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0221",
+      "source_path": "content/computability/recursive-functions/trees.tex",
+      "source_sha256": "a6e3ba54bc944e81c1db72ae00f56f1dc27b3ed05c57de110585810927569277",
+      "translation_sha256": "3a357ed7d2f8fa0c766a5cb2745bbefb7717267a15248b5b088b06ad9c308f83",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{rec}{tre}",
+        "\\ollabel{prop:subtreeseq}",
+        "\\olref[cmp][rec][tre]{prop:subtreeseq}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{rec}{tre}",
+        "\\ollabel{prop:subtreeseq}",
+        "\\olref[cmp][rec][tre]{prop:subtreeseq}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\tuple{k,d_1,\\dots,d_k}$",
+        "$k$",
+        "$d_1$",
+        "$d_k$",
+        "$l$",
+        "$\\tuple{0,l}$",
+        "$l_1$",
+        "$l_2$",
+        "$l_3$",
+        "$\\tuple{2,\\tuple{0,l_2},\\tuple{0,l_3},l_1}$",
+        "$\\fn{SubtreeSeq}(t)$",
+        "$t$",
+        "$\\fn{ISubtrees}(t)=\\fn{subseq}(t,1,(t)_0)$",
+        "$t$",
+        "$\\fn{hSubtreeSeq}(t,n)$",
+        "$n$",
+        "$t$",
+        "$0$",
+        "$t$",
+        "$t$",
+        "$n+1$",
+        "$t$",
+        "$n$",
+        "$n$",
+        "$f(x)$",
+        "$g_f(s,k)=f((s)_0)\\concat\\dots\\concatf((s)_k)$",
+        "\\begin{align*}g(s,0)&=f((s)_0)\\\\g(s,k+1)&=g(s,k)\\concatf((s)_{k+1})\\end{align*}",
+        "$s$",
+        "$h(s)=g_{\\fn{ISubtrees}}(s,\\len{s})$",
+        "$s$",
+        "$\\fn{hSubtreeSeq}$",
+        "\\begin{align*}\\fn{hSubtreeSeq}(t,0)&=\\tuple{t}\\\\\\fn{hSubtreeSeq}(t,n+1)&=\\fn{hSubtreeSeq}(t,n)\\concath(\\fn{hSubtreeSeq}(t,n)).\\end{align*}",
+        "$t$",
+        "$t$",
+        "$t$",
+        "$\\fn{hSubtreeSeq}(t,t)$",
+        "$\\fn{hSubtreeSeq}$"
+      ],
+      "math_target_core": [
+        "$\\tuple{k,d_1,\\dots,d_k}$",
+        "$k$",
+        "$d_1$",
+        "$d_k$",
+        "$l$",
+        "$\\tuple{0,l}$",
+        "$l_1$",
+        "$l_2$",
+        "$l_3$",
+        "$\\tuple{2,\\tuple{0,l_2},\\tuple{0,l_3},l_1}$",
+        "$t$",
+        "$\\fn{SubtreeSeq}(t)$",
+        "$\\fn{ISubtrees}(t)=\\fn{subseq}(t,1,(t)_0)$",
+        "$t$",
+        "$t$",
+        "$n$",
+        "$\\fn{hSubtreeSeq}(t,n)$",
+        "$0$",
+        "$t$",
+        "$t$",
+        "$n+1$",
+        "$t$",
+        "$n$",
+        "$f(x)$",
+        "$g_f(s,k)=f((s)_0)\\concat\\dots\\concatf((s)_{k-1})$",
+        "\\begin{align*}g_f(s,0)&=\\emptyseq\\\\g_f(s,k+1)&=g_f(s,k)\\concatf((s)_k)\\end{align*}",
+        "$s$",
+        "$h(s)=g_{\\fn{ISubtrees}}(s,\\len{s})$",
+        "$s$",
+        "$\\fn{hSubtreeSeq}$",
+        "\\begin{align*}\\fn{hSubtreeSeq}(t,0)&=\\tuple{t}\\\\\\fn{hSubtreeSeq}(t,n+1)&=\\fn{hSubtreeSeq}(t,n)\\concath(\\fn{hSubtreeSeq}(t,n)).\\end{align*}",
+        "$t$",
+        "$t$",
+        "$t$",
+        "$\\fn{hSubtreeSeq}(t,t)$",
+        "$\\fn{hSubtreeSeq}$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$g_f(s,k)=f((s)_0)\\concat\\dots\\concatf((s)_k)$",
+        "$n$",
+        "\\begin{align*}g(s,0)&=f((s)_0)\\\\g(s,k+1)&=g(s,k)\\concatf((s)_{k+1})\\end{align*}"
+      ],
+      "math_delta_target_only": [
+        "$g_f(s,k)=f((s)_0)\\concat\\dots\\concatf((s)_{k-1})$",
+        "\\begin{align*}g_f(s,0)&=\\emptyseq\\\\g_f(s,k+1)&=g_f(s,k)\\concatf((s)_k)\\end{align*}"
+      ],
+      "declared_source_correction_ids": [
+        "OLTECRREM-008",
+        "OLTECRREM-009"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2056,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: trees",
+          "target_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: trees"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{rec}{tre}\n\\olsection{Trees}",
+          "target_start": "\\olfileid{cmp}{rec}{tre}\n\\olsection{వృక్షాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "Sometimes it is useful to represent trees as natural numbers, just\nlike we can represent sequences by numbers ",
+          "target_start": "క్రమాలను సంఖ్యలతో, వాటి ధర్మాలు మరియు వాటిపై క్రియలను వాటి సంకేతాలపై\nఆదిమ పునరావృత్త సంబంధాలు, ప్రమేయాలతో సూచి"
+        },
+        {
+          "index": 6,
+          "source_start": "We code trees recursively as a sequence $\\tuple{k, d_1, \\dots, d_k}$,\nwhere $k$ is the number of immediate sub",
+          "target_start": "వృక్షాలను $\\tuple{k,d_1,\\dots,d_k}$ అనే క్రమంగా పునరావృత్తంగా\nసంకేతీకరిస్తాం. ఇక్కడ $k$ తక్షణ ఉపవృక్షాల సంఖ్య;"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{prop}\n  \\ollabel{prop:subtreeseq}\n  The function $\\fn{SubtreeSeq}(t)$, which returns the code of a\n  se",
+          "target_start": "\\begin{prop}\n  \\ollabel{prop:subtreeseq}\n  సంకేతం~$t$ గల వృక్షపు ఉపవృక్షాలన్నిటి సంకేతాలను మూలకాలుగా గల\n  క్రమ"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{proof}\n  First note that $\\fn{ISubtrees}(t) = \\fn{subseq}(t, 1, (t)_0)$ is\n  primitive recursive and re",
+          "target_start": "\\begin{proof}\n  మొదట $\\fn{ISubtrees}(t)=\\fn{subseq}(t,1,(t)_0)$ ఆదిమ పునరావృత్త\n  ప్రమేయమనీ, వృక్షం~$t$ యొక్క "
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{prob}\n  The definition of $\\fn{hSubtreeSeq}$ in the proof of\n  \\olref[cmp][rec][tre]{prop:subtreeseq} i",
+          "target_start": "\\begin{prob}\n  \\olref[cmp][rec][tre]{prop:subtreeseq} నిరూపణలోని\n  $\\fn{hSubtreeSeq}$ నిర్వచనం సాధారణంగా పునరు"
+        },
+        {
+          "index": 10,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{tre}",
+        "\\ollabel{prop:subtreeseq}",
+        "\\olref[cmp][rec][tre]{prop:subtreeseq}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{tre}",
+        "\\ollabel{prop:subtreeseq}",
+        "\\olref[cmp][rec][tre]{prop:subtreeseq}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0222",
+      "source_path": "content/computability/recursive-functions/other-recursions.tex",
+      "source_sha256": "ecd3dc5f6ffbfcbf812e75ed5b87ed9b1f9aa49b779a9e3a6c3a6f491d691400",
+      "translation_sha256": "b387074104297ea60bd54e2108c6474dce9dd2f3f471b79ceaa9bde58d68097a",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{rec}{ore}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{rec}{ore}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "\\begin{align*}h_0(\\vecx,0)&=f_0(\\vecx)\\\\h_1(\\vecx,0)&=f_1(\\vecx)\\\\h_0(\\vecx,y+1)&=g_0(\\vecx,y,h_0(\\vecx,y),h_1(\\vecx,y))\\\\h_1(\\vecx,y+1)&=g_1(\\vecx,y,h_0(\\vecx,y),h_1(\\vecx,y))\\end{align*}",
+        "$h(\\vecx,y+1)$",
+        "$h(\\vecx,0)$",
+        "$h(\\vecx,y)$",
+        "\\begin{align*}h(\\vecx,0)&=f(\\vecx)\\\\h(\\vecx,y+1)&=g(\\vecx,y,\\tuple{h(\\vecx,0),\\dots,h(\\vecx,y)}).\\end{align*}",
+        "\\[h(\\vecx,y)=g(\\vecx,y,\\tuple{h(\\vecx,0),\\dots,h(\\vecx,y-1)})\\]",
+        "$g$",
+        "$y$",
+        "$0$",
+        "$h$",
+        "\\begin{align*}h(\\vecx,y)&=\\begin{cases}g(\\vecx,y,h(\\vecx,k(\\vecx,y)))&\\\\f(\\vecx)&\\end{cases}\\end{align*}",
+        "$h$",
+        "$y$",
+        "$h$",
+        "$k$",
+        "$r(x,y)$",
+        "$x$",
+        "$y$",
+        "$y>0$",
+        "$r(x,y)$",
+        "$y$",
+        "$x=z\\timesy+r(x,y)$",
+        "$z$",
+        "$y=0$",
+        "$r(x,0)=0$",
+        "\\begin{align*}h(\\vecx,0)&=f(\\vecx)\\\\h(\\vecx,y+1)&=g(\\vecx,y,h(k(\\vecx),y))\\end{align*}"
+      ],
+      "math_target_core": [
+        "\\begin{align*}h_0(\\vecx,0)&=f_0(\\vecx)\\\\h_1(\\vecx,0)&=f_1(\\vecx)\\\\h_0(\\vecx,y+1)&=g_0(\\vecx,y,h_0(\\vecx,y),h_1(\\vecx,y))\\\\h_1(\\vecx,y+1)&=g_1(\\vecx,y,h_0(\\vecx,y),h_1(\\vecx,y))\\end{align*}",
+        "$h(\\vecx,y+1)$",
+        "$h(\\vecx,0)$",
+        "$h(\\vecx,y)$",
+        "\\begin{align*}h(\\vecx,0)&=f(\\vecx)\\\\h(\\vecx,y+1)&=g(\\vecx,y,\\tuple{h(\\vecx,0),\\dots,h(\\vecx,y)}).\\end{align*}",
+        "\\[h(\\vecx,y)=g(\\vecx,y,\\tuple{h(\\vecx,0),\\dots,h(\\vecx,y-1)})\\]",
+        "$y$",
+        "$0$",
+        "$g$",
+        "$h$",
+        "\\begin{align*}h(\\vecx,y)&=\\begin{cases}g(\\vecx,y,h(\\vecx,k(\\vecx,y)))&\\\\f(\\vecx)&\\end{cases}\\end{align*}",
+        "$k$",
+        "$h$",
+        "$y$",
+        "$h$",
+        "$r(x,y)$",
+        "$x$",
+        "$y$",
+        "$y>0$",
+        "$z$",
+        "$x=z\\timesy+r(x,y)$",
+        "$y$",
+        "$r(x,y)$",
+        "$y=0$",
+        "$r(x,0)=0$",
+        "\\begin{align*}h(\\vecx,0)&=f(\\vecx)\\\\h(\\vecx,y+1)&=g(\\vecx,y,h(k(\\vecx),y))\\end{align*}"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1068,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: other-recursions",
+          "target_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: other-recursions"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{rec}{ore}\n\\olsection{Other Recursions}",
+          "target_start": "\\olfileid{cmp}{rec}{ore}\n\\olsection{ఇతర పునరావృత్తులు}"
+        },
+        {
+          "index": 5,
+          "source_start": "Using pairing and sequencing, we can justify more exotic (and\nuseful) forms of primitive recursion. For exampl",
+          "target_start": "జతీకరణ, క్రమీకరణలను ఉపయోగించి మరింత అసాధారణమైన (ఉపయోగకరమైన)\nఆదిమ పునరావృత్త రూపాలను సమర్థించవచ్చు. ఉదాహరణకు, క"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{prob}\n  Define the remainder function $r(x,y)$ by course-of-values\n  recursion. (If $x$, $y$ are natura",
+          "target_start": "\\begin{prob}\n  శేష ప్రమేయం $r(x,y)$ను పూర్వవిలువల పునరావృత్తితో నిర్వచించండి.\n  ($x$, $y$ సహజ సంఖ్యలు, $y>0$ అ"
+        },
+        {
+          "index": 7,
+          "source_start": "You should think about how to obtain these functions using ordinary\nprimitive recursion. One final version of ",
+          "target_start": "సాధారణ ఆదిమ పునరావృత్తిని ఉపయోగించి ఈ ప్రమేయాలను ఎలా పొందాలో\nఆలోచించాలి. ఆదిమ పునరావృత్తి యొక్క చివరి రూపం మరి"
+        },
+        {
+          "index": 8,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{ore}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{ore}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0223",
+      "source_path": "content/computability/recursive-functions/non-pr-functions.tex",
+      "source_sha256": "7993ec35fabf2bf885ef199ea208a5d5fc0557ad61ea5a10fd8a90eaaf1e1567",
+      "translation_sha256": "03a4059db3667ed74db6b97790fb6c7c76e6ec2bfd74b3fc8ef8822fad1b8a7b",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{rec}{npr}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{rec}{npr}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$f_0$",
+        "$f_1$",
+        "$f_2$",
+        "$f_x$",
+        "$y$",
+        "$g(x,y)$",
+        "\\[g(x,y)=f_x(y)\\]",
+        "$f_i$",
+        "$h$",
+        "$f_i$",
+        "$i$",
+        "$h$",
+        "$g$",
+        "$g^n(x)$",
+        "$g(g(\\dotsg(x)))$",
+        "$n$",
+        "$g$",
+        "$g_0,g_1,\\dots$",
+        "$g_n$",
+        "$g_1(x)$",
+        "$2x$",
+        "$g_2(x)$",
+        "$2^x\\cdotx$",
+        "$g_3(x)$",
+        "$x$",
+        "$2$",
+        "$G(x)=g_x(x)$",
+        "$\\#(F)$",
+        "$F$",
+        "$f_i$",
+        "$i$",
+        "$i$",
+        "$0$",
+        "$g(x,y)$",
+        "$f_x(y)$",
+        "$f_x$",
+        "$g(x,y)$",
+        "$g(x,y)$",
+        "$x$",
+        "$y$",
+        "$g(x,y)$",
+        "$g(x,y)$"
+      ],
+      "math_target_core": [
+        "$f_0$",
+        "$f_1$",
+        "$f_2$",
+        "$y$",
+        "$f_x$",
+        "$g(x,y)$",
+        "\\[g(x,y)=f_x(y)\\]",
+        "$f_i$",
+        "$i$",
+        "$h$",
+        "$f_i$",
+        "$h$",
+        "$g$",
+        "$g^n(x)$",
+        "$n$",
+        "$g$",
+        "$g(g(\\dotsg(x)))$",
+        "$g_0,g_1,\\dots$",
+        "$g_n$",
+        "$g_1(x)$",
+        "$2x$",
+        "$g_2(x)$",
+        "$2^x\\cdotx$",
+        "$g_3(x)$",
+        "$x$",
+        "$2$",
+        "$G(x)=g_x(x)$",
+        "$F$",
+        "$\\#(F)$",
+        "$i$",
+        "$f_i$",
+        "$i$",
+        "$0$",
+        "$f_x$",
+        "$g(x,y)$",
+        "$f_x(y)$",
+        "$g(x,y)$",
+        "$g(x,y)$",
+        "$x$",
+        "$y$",
+        "$g(x,y)$",
+        "$g(x,y)$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2446,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: non-pr-functions",
+          "target_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: non-pr-functions"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{rec}{npr}\n\\olsection{Non-Primitive Recursive Functions}",
+          "target_start": "\\olfileid{cmp}{rec}{npr}\n\\olsection{ఆదిమ పునరావృత్తం కాని ప్రమేయాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "The primitive recursive functions do not exhaust the intuitively\ncomputable functions. It should be intuitivel",
+          "target_start": "అంతర్బోధతో గణనీయాలని భావించే ప్రమేయాలన్నీ ఆదిమ పునరావృత్త ప్రమేయాలు\nకావు. ఏకస్థానిక ఆదిమ పునరావృత్త ప్రమేయాలన్"
+        },
+        {
+          "index": 6,
+          "source_start": "One can provide more explicit examples of computable functions that\nare not primitive recursive. For example, ",
+          "target_start": "గణనీయమై, ఆదిమ పునరావృత్తం కాని ప్రమేయాలకు మరింత స్పష్టమైన ఉదాహరణలు\nఇవ్వవచ్చు. ఉదాహరణకు, $g^n(x)$ అనే సంకేతనం మ"
+        },
+        {
+          "index": 7,
+          "source_start": "Let us return to the issue of enumerating the primitive recursive\nfunctions. Remember that we have assigned sy",
+          "target_start": "ఆదిమ పునరావృత్త ప్రమేయాలను జాబితా చేసే ప్రశ్నకు తిరిగి వద్దాం. ప్రతి\nఆదిమ పునరావృత్త ప్రమేయానికి సంకేతాత్మక సం"
+        },
+        {
+          "index": 8,
+          "source_start": "(In fact, some functions, like the constant zero function, will appear\nmore than once on the list. This is not",
+          "target_start": "(నిజానికి, స్థిర శూన్య ప్రమేయం వంటి కొన్ని ప్రమేయాలు జాబితాలో\nఒకటికన్నా ఎక్కువసార్లు కనిపిస్తాయి. ఇది మన సంకేత"
+        },
+        {
+          "index": 9,
+          "source_start": "We can now take the function $g(x,y)$ to be given by $f_x(y)$, where\n$f_x$ refers to the enumeration we have j",
+          "target_start": "ఇప్పుడు $f_x$ పైన వర్ణించిన జాబితాను సూచించేలా $g(x,y)$ను $f_x(y)$తో\nతీసుకోవచ్చు. $g(x,y)$ గణనీయమని మనకు ఎలా త"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{tagblock}{TMs}\n\\begin{digress}\nYou may already be convinced that (with some work!) one can write a\nprog",
+          "target_start": "\\begin{tagblock}{TMs}\n\\begin{digress}\n(కొంత శ్రమతో!) ఈ పని చేసే ప్రోగ్రామును Java లేదా C++లో రాయవచ్చని\nమీకు ఇప"
+        },
+        {
+          "index": 11,
+          "source_start": "Of course, a more direct way to show that $g(x,y)$ is computable is to\ndescribe a Turing machine that computes",
+          "target_start": "అయితే $g(x,y)$ను గణించే ట్యూరింగ్ యంత్రాన్ని స్పష్టంగా వర్ణించడం,\nఅది గణనీయమని చూపడానికి మరింత ప్రత్యక్ష పద్ధత"
+        },
+        {
+          "index": 12,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{npr}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{npr}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0224",
+      "source_path": "content/computability/recursive-functions/partial-functions.tex",
+      "source_sha256": "a30626b08ef610b2da04defc5b41f53ff48c62da6a30587a048278625d5f318d",
+      "translation_sha256": "cb29c9593d9e7a69db5621f69e9a9bb25bc9153127d03c9ce515f6e3947e534f",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{rec}{par}",
+        "\\ollabel{defn:recursive-fn}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{rec}{par}",
+        "\\ollabel{defn:recursive-fn}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$f_0,f_1,\\dots$",
+        "$x$",
+        "$y$",
+        "$f_x(y)$",
+        "$f$",
+        "$g$",
+        "$f(x)\\fdefined$",
+        "$f$",
+        "$x$",
+        "$x$",
+        "$f$",
+        "$f(x)\\fundefined$",
+        "$f$",
+        "$x$",
+        "$f(x)\\simeqg(x)$",
+        "$f(x)$",
+        "$g(x)$",
+        "$h$",
+        "$g_0$",
+        "$g_k$",
+        "\\[h(g_0(\\vecx),\\dots,g_k(\\vecx))\\]",
+        "$g_i$",
+        "$\\vecx$",
+        "$h$",
+        "$g_0(\\vecx)$",
+        "$g_k(\\vecx)$",
+        "$=$",
+        "$\\simeq$",
+        "$f(x,\\vecz)$",
+        "$\\mux\\;f(x,\\vecz)$",
+        "$x$",
+        "$f(0,\\vecz),f(1,\\vecz),\\dots,f(x,\\vecz)$",
+        "$f(x,\\vecz)=0$",
+        "$x$",
+        "$\\mux\\;f(x,\\vecz)$",
+        "$\\mux\\;f(x,\\vecz)$",
+        "$\\mux\\;f(x,\\vecz)$",
+        "$f(0,\\vecz),f(1,\\vecz),f(2,\\vecz)$",
+        "$\\mux\\;f(x,\\vecz)$",
+        "$R(x,\\vecz)$",
+        "$\\mux\\;R(x,\\vecz)$",
+        "$\\mux\\;(1\\tsub\\Char{R}(x,\\vecz))$",
+        "$\\mux\\;R(x,\\vecz)$",
+        "$x$",
+        "$R(x,\\vecz)$",
+        "$f(x,\\vecz)$",
+        "$\\mux\\;f(x,\\vecz)$",
+        "$\\mux\\;(f(x,\\vecz)=0)$",
+        "$f(x,\\vecz)$"
+      ],
+      "math_target_core": [
+        "$x$",
+        "$y$",
+        "$f_x(y)$",
+        "$f_0,f_1,\\dots$",
+        "$f$",
+        "$g$",
+        "$x$",
+        "$f$",
+        "$x$",
+        "$f$",
+        "$f(x)\\fdefined$",
+        "$x$",
+        "$f$",
+        "$f(x)\\fundefined$",
+        "$f(x)$",
+        "$g(x)$",
+        "$f(x)\\simeqg(x)$",
+        "$h$",
+        "$g_0$",
+        "$g_k$",
+        "\\[h(g_0(\\vecx),\\dots,g_k(\\vecx))\\]",
+        "$g_i$",
+        "$\\vecx$",
+        "$h$",
+        "$g_0(\\vecx)$",
+        "$g_k(\\vecx)$",
+        "$=$",
+        "$\\simeq$",
+        "$f(x,\\vecz)$",
+        "$\\mux\\;f(x,\\vecz)$",
+        "$f(0,\\vecz),f(1,\\vecz),\\dots,f(x,\\vecz)$",
+        "$f(x,\\vecz)=0$",
+        "$x$",
+        "$x$",
+        "$\\mux\\;f(x,\\vecz)$",
+        "$\\mux\\;f(x,\\vecz)$",
+        "$\\mux\\;f(x,\\vecz)$",
+        "$f(0,\\vecz),f(1,\\vecz),f(2,\\vecz)$",
+        "$\\mux\\;f(x,\\vecz)$",
+        "$R(x,\\vecz)$",
+        "$\\mux\\;R(x,\\vecz)$",
+        "$\\mux\\;(1\\tsub\\Char{R}(x,\\vecz))$",
+        "$R(x,\\vecz)$",
+        "$x$",
+        "$\\mux\\;R(x,\\vecz)$",
+        "$f(x,\\vecz)$",
+        "$\\mux\\;f(x,\\vecz)$",
+        "$\\mux\\;(f(x,\\vecz)=0)$",
+        "$f(x,\\vecz)$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2913,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: partial-functions",
+          "target_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: partial-functions"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{rec}{par}\n\\olsection{Partial Recursive Functions}",
+          "target_start": "\\olfileid{cmp}{rec}{par}\n\\olsection{పాక్షిక పునరావృత్త ప్రమేయాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "To motivate the definition of the recursive functions, note that our\nproof that there are computable functions",
+          "target_start": "పునరావృత్త ప్రమేయాల నిర్వచనానికి ప్రేరణగా, గణనీయమై ఆదిమ పునరావృత్తం\nకాని ప్రమేయాలు ఉన్నాయని మన నిరూపణ నిజానికి"
+        },
+        {
+          "index": 6,
+          "source_start": "The way out is to allow \\emph{partial} functions to come into play. We\nwill see that it \\emph{is} possible to ",
+          "target_start": "\\emph{పాక్షిక} ప్రమేయాలను అనుమతించడమే దీనికి మార్గం. పాక్షిక గణనీయ\nప్రమేయాలను జాబితా చేయడం \\emph{సాధ్యమే} అని "
+        },
+        {
+          "index": 7,
+          "source_start": "The question is now this: what do we need to add to the primitive\nrecursive functions to obtain all the partia",
+          "target_start": "ఇప్పుడు ప్రశ్న ఇది: పాక్షిక పునరావృత్త ప్రమేయాలన్నిటినీ పొందడానికి\nఆదిమ పునరావృత్త ప్రమేయాలకు ఏమి చేర్చాలి? రె"
+        },
+        {
+          "index": 8,
+          "source_start": "The first is easy. As before, we will start with zero, successor, and\nprojections, and close under composition",
+          "target_start": "మొదటిది సులభం. ముందులాగే శూన్యం, ఉత్తరగామి, ప్రక్షేపాలతో మొదలుపెట్టి,\nసంయుక్తం, ఆదిమ పునరావృత్తి కింద సంవృతం చ"
+        },
+        {
+          "index": 9,
+          "source_start": "What we will add to the definition of the primitive recursive\nfunctions to obtain partial functions is the \\em",
+          "target_start": "పాక్షిక ప్రమేయాలను పొందడానికి ఆదిమ పునరావృత్త ప్రమేయాల నిర్వచనానికి\nమనం చేర్చేది \\emph{అపరిమిత అన్వేషణ క్రియాక"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{explain}\nNote that our definition makes no reference to\\iftag{TMs}{ Turing\n  machines, or}{} algorithms",
+          "target_start": "\\begin{explain}\nమన నిర్వచనం\\iftag{TMs}{ ట్యూరింగ్ యంత్రాలనుగానీ,}{} అల్గారిథంలనుగానీ,\nఏ నిర్దిష్ట గణనా నమూనాను"
+        },
+        {
+          "index": 11,
+          "source_start": "If $R(x,\\vec z)$ is any relation, $\\mu x \\; R(x,\\vec z)$ is defined to\nbe $\\mu x \\; (1 \\tsub \\Char{R}(x,\\vec z",
+          "target_start": "$R(x,\\vec z)$ ఏదైనా సంబంధమైతే, $\\mu x\\;R(x,\\vec z)$ను\n$\\mu x\\;(1\\tsub\\Char{R}(x,\\vec z))$గా నిర్వచిస్తాం. మరో "
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{defn}\nThe set of \\emph{partial recursive functions} is the smallest set of\npartial functions from the n",
+          "target_start": "\\begin{defn}\nసహజ సంఖ్యల నుంచి సహజ సంఖ్యలకు వెళ్లే వివిధ స్థానసంఖ్యల పాక్షిక\nప్రమేయాల్లో, శూన్యం, ఉత్తరగామి, ప్"
+        },
+        {
+          "index": 13,
+          "source_start": "Of course, some of the partial recursive functions will happen to be\ntotal, i.e., defined for every argument.",
+          "target_start": "పాక్షిక పునరావృత్త ప్రమేయాల్లో కొన్ని ప్రతి ఆర్గుమెంటు వద్ద\nనిర్వచితమై, సర్వనిర్వచిత ప్రమేయాలు అవుతాయి."
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{defn}\n\\ollabel{defn:recursive-fn}\nThe set of \\emph{recursive functions} is\nthe set of partial recursive",
+          "target_start": "\\begin{defn}\n\\ollabel{defn:recursive-fn}\nసర్వనిర్వచితమైన పాక్షిక పునరావృత్త ప్రమేయాల సమితినే\n\\emph{పునరావృత్త "
+        },
+        {
+          "index": 15,
+          "source_start": "A recursive function is sometimes called ``total recursive'' to\nemphasize that it is defined everywhere.",
+          "target_start": "పునరావృత్త ప్రమేయం ప్రతిచోటా నిర్వచితమని నొక్కి చెప్పడానికి దాన్ని\nకొన్నిసార్లు ``సర్వనిర్వచిత పునరావృత్త ప్రమ"
+        },
+        {
+          "index": 16,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{par}",
+        "\\ollabel{defn:recursive-fn}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{par}",
+        "\\ollabel{defn:recursive-fn}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0225",
+      "source_path": "content/computability/recursive-functions/normal-form.tex",
+      "source_sha256": "b8c31bf729df2372640c16b1b3eb4e64256b0b59e2caaf9a7e3bb6a4f2fe93db",
+      "translation_sha256": "3b910d13a5c34942a5530da6262153ec6e3348c5ab5c05bf77a92354dac08bb1",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{rec}{nft}",
+        "\\ollabel{thm:kleene-nf}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{rec}{nft}",
+        "\\ollabel{thm:kleene-nf}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$T(e,x,s)$",
+        "$U(s)$",
+        "$f$",
+        "$e$",
+        "\\[f(x)\\simeqU(\\umin{s}{T(e,x,s)})\\]",
+        "$x$",
+        "$e$",
+        "$f(x)\\fdefined$",
+        "$s$",
+        "$s$",
+        "$f$",
+        "$x$",
+        "$x$",
+        "$e$",
+        "$T$",
+        "$e$",
+        "$x$",
+        "$s$",
+        "$s$",
+        "$s$",
+        "$f(x)$",
+        "$s$",
+        "$e$",
+        "$x$",
+        "$e$",
+        "$\\cfind{e}$",
+        "$f$"
+      ],
+      "math_target_core": [
+        "$T(e,x,s)$",
+        "$U(s)$",
+        "$f$",
+        "$e$",
+        "$x$",
+        "\\[f(x)\\simeqU(\\umin{s}{T(e,x,s)})\\]",
+        "$e$",
+        "$f(x)\\fdefined$",
+        "$s$",
+        "$s$",
+        "$x$",
+        "$f$",
+        "$x$",
+        "$e$",
+        "$e$",
+        "$x$",
+        "$s$",
+        "$T$",
+        "$s$",
+        "$s$",
+        "$f(x)$",
+        "$s$",
+        "$e$",
+        "$x$",
+        "$e$",
+        "$f$",
+        "$\\cfind{e}$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1048,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: normal-form",
+          "target_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: normal-form"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{rec}{nft}\n\\olsection{The Normal Form Theorem}",
+          "target_start": "\\olfileid{cmp}{rec}{nft}\n\\olsection{నియత రూప సిద్ధాంతం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{thm}[Kleene's Normal Form Theorem]\n\\ollabel{thm:kleene-nf}\nThere is a primitive recursive relation $T(e",
+          "target_start": "\\begin{thm}[క్లీనీ నియత రూప సిద్ధాంతం]\n\\ollabel{thm:kleene-nf}\nకింది ధర్మం గల ఆదిమ పునరావృత్త సంబంధం $T(e,x,s)"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{explain}\nThe proof of the normal form theorem is involved, but the basic idea\nis simple.  Every partial",
+          "target_start": "\\begin{explain}\nనియత రూప సిద్ధాంతపు నిరూపణ విస్తృతమైనది, కానీ మూల భావం సరళం. ప్రతి\nపాక్షిక పునరావృత్త ప్రమేయాన"
+        },
+        {
+          "index": 7,
+          "source_start": "The normal form theorem shows that only a single unbounded search is\nrequired for the definition of any partia",
+          "target_start": "ఏ పాక్షిక పునరావృత్త ప్రమేయపు నిర్వచనానికైనా ఒకే అపరిమిత అన్వేషణ\nచాలని నియత రూప సిద్ధాంతం చూపుతుంది. ప్రాథమికం"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{nft}",
+        "\\ollabel{thm:kleene-nf}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{nft}",
+        "\\ollabel{thm:kleene-nf}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0226",
+      "source_path": "content/computability/recursive-functions/halting-problem.tex",
+      "source_sha256": "08569f88dbc93bf89320bc9e7ea3224dabcfc2d0af8125edf9dd22f37220483e",
+      "translation_sha256": "1d1f1edcb2f53131b3e0fe4883eb00f691a977c80120b6ab82f150122050db92",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{rec}{hlt}",
+        "\\ollabel{thm:halting-problem}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{rec}{hlt}",
+        "\\ollabel{thm:halting-problem}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$e$",
+        "$n$",
+        "$n$",
+        "\\[h(e,n)=\\begin{cases}1&\\\\0&\\end{cases}\\]",
+        "$e$",
+        "$f$",
+        "$e$",
+        "$f$",
+        "$e$",
+        "\\[\\cfind{e}(x)\\simeqU(\\mus\\;T(e,x,s))\\]",
+        "$f\\colon\\Nat\\to\\Nat$",
+        "$e\\in\\Nat$",
+        "$\\cfind{e}(x)\\simeqf(x)$",
+        "$x\\in\\Nat$",
+        "$f$",
+        "$e$",
+        "$h$",
+        "\\[h(e,x)=\\begin{cases}1&\\\\0&\\end{cases}\\]",
+        "$h(e,x)=0$",
+        "$\\cfind{e}(x)\\fundefined$",
+        "$e$",
+        "$h$",
+        "$h$",
+        "\\[d(y)=\\begin{cases}1&\\\\\\umin{x}{x\\neqx}&\\end{cases}\\]",
+        "$x$",
+        "$x\\neqx$",
+        "$\\umin{x}{x\\neqx}$",
+        "$d(y)\\fundefined$",
+        "$h(y,y)\\neq0$",
+        "$d(y)\\fdefined$",
+        "$\\cfind{y}(y)\\fundefined$",
+        "$y$",
+        "$d(y)\\fundefined$",
+        "$\\cfind{y}(y)\\fdefined$",
+        "$h$",
+        "$d$",
+        "$e_d$",
+        "$h(e_d,e_d)$",
+        "$0$",
+        "$1$",
+        "$h(e_d,e_d)=1$",
+        "$\\cfind{e_d}(e_d)\\fdefined$",
+        "$\\cfind{e_d}\\simeqd$",
+        "$d(e_d)$",
+        "$h(e_d,e_d)=0$",
+        "$h(e_d,e_d)\\neq1$",
+        "$h(e_d,e_d)=0$",
+        "$e_d$",
+        "$\\cfind{e_d}(e_d)\\fundefined$",
+        "$\\cfind{e_d}\\simeqd$",
+        "$d(e_d)$",
+        "$\\cfind{e_d}(e_d)\\fdefined$",
+        "$e_d$",
+        "$h$",
+        "$d$",
+        "$e_d$",
+        "$h$"
+      ],
+      "math_target_core": [
+        "$e$",
+        "$n$",
+        "$n$",
+        "\\[h(e,n)=\\begin{cases}1&\\\\0&\\end{cases}\\]",
+        "$e$",
+        "$f$",
+        "$e$",
+        "$f$",
+        "$e$",
+        "\\[\\cfind{e}(x)\\simeqU(\\mus\\;T(e,x,s))\\]",
+        "$f\\colon\\Nat\\to\\Nat$",
+        "$x\\in\\Nat$",
+        "$\\cfind{e}(x)\\simeqf(x)$",
+        "$e\\in\\Nat$",
+        "$f$",
+        "$e$",
+        "$h$",
+        "\\[h(e,x)=\\begin{cases}1&\\\\0&\\end{cases}\\]",
+        "$h(e,x)=0$",
+        "$\\cfind{e}(x)\\fundefined$",
+        "$h$",
+        "$h$",
+        "\\[d(y)=\\begin{cases}1&\\\\\\umin{x}{x\\neqx}&\\end{cases}\\]",
+        "$x\\neqx$",
+        "$x$",
+        "$\\umin{x}{x\\neqx}$",
+        "$h(y,y)\\neq0$",
+        "$d(y)\\fundefined$",
+        "$\\cfind{y}(y)\\fundefined$",
+        "$d(y)\\fdefined$",
+        "$\\cfind{y}(y)\\fdefined$",
+        "$d(y)\\fundefined$",
+        "$h$",
+        "$d$",
+        "$e_d$",
+        "$h(e_d,e_d)$",
+        "$0$",
+        "$1$",
+        "$h(e_d,e_d)=1$",
+        "$\\cfind{e_d}(e_d)\\fdefined$",
+        "$\\cfind{e_d}\\simeqd$",
+        "$h(e_d,e_d)\\neq0$",
+        "$d(e_d)\\fundefined$",
+        "$h(e_d,e_d)=0$",
+        "$\\cfind{e_d}(e_d)\\fundefined$",
+        "$d(e_d)\\fdefined$",
+        "$\\cfind{e_d}\\simeqd$",
+        "$h(e_d,e_d)$",
+        "$h$",
+        "$h$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$\\cfind{e_d}(e_d)\\fdefined$",
+        "$d$",
+        "$d(e_d)$",
+        "$d(e_d)$",
+        "$e$",
+        "$e_d$",
+        "$e_d$",
+        "$e_d$",
+        "$h(e_d,e_d)=0$",
+        "$h(e_d,e_d)\\neq1$",
+        "$y$"
+      ],
+      "math_delta_target_only": [
+        "$d(e_d)\\fdefined$",
+        "$d(e_d)\\fundefined$",
+        "$h(e_d,e_d)$",
+        "$h(e_d,e_d)\\neq0$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTECRREM-010"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1522,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: halting-problem",
+          "target_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: halting-problem"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{rec}{hlt}\n\\olsection{The Halting Problem}",
+          "target_start": "\\olfileid{cmp}{rec}{hlt}\n\\olsection{నిలుపు సమస్య (హాల్టింగ్ సమస్య)}"
+        },
+        {
+          "index": 5,
+          "source_start": "The \\emph{halting problem} in general is the problem of deciding,\ngiven the specification~$e$ (e.g., program) ",
+          "target_start": "సాధారణంగా \\emph{నిలుపు సమస్య} అంటే, ఒక గణనీయ ప్రమేయపు\nనిర్దేశం~$e$ (ఉదాహరణకు, ప్రోగ్రాము), ఒక సంఖ్య~$n$ ఇచ్చిన"
+        },
+        {
+          "index": 6,
+          "source_start": "In the context of partial recursive functions, the role of the\nspecification of a program may be played by the",
+          "target_start": "పాక్షిక పునరావృత్త ప్రమేయాల సందర్భంలో, ప్రోగ్రాము నిర్దేశపు పాత్రను\nక్లీనీ నియత రూప సిద్ధాంతంలోని సూచిక~$e$ పో"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{thm}\n\\ollabel{thm:halting-problem}\nThe halting function~$h$ is not partial recursive.\n\\end{thm}",
+          "target_start": "\\begin{thm}\n\\ollabel{thm:halting-problem}\nనిలుపు ప్రమేయం~$h$ పాక్షిక పునరావృత్త ప్రమేయం కాదు.\n\\end{thm}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{proof}\nIf $h$\nwere partial recursive, we could define\n\\[\nd(y) =\n\\begin{cases}\n1 & \\text{if $h(y, y) = 0",
+          "target_start": "\\begin{proof}\n$h$ పాక్షిక పునరావృత్త ప్రమేయమైతే, కింది ప్రమేయాన్ని నిర్వచించవచ్చు:\n\\[\nd(y) =\n\\begin{cases}\n1 &"
+        },
+        {
+          "index": 9,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{hlt}",
+        "\\ollabel{thm:halting-problem}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{hlt}",
+        "\\ollabel{thm:halting-problem}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0227",
+      "source_path": "content/computability/recursive-functions/general-recursive-functions.tex",
+      "source_sha256": "e055df19289a2f5db360cc644656c3f6269a026cb26f9a62853a23a9ace7afcf",
+      "translation_sha256": "24dd0cf61b06f02ddb055eee287d7a7675ad55f1a64d7b13914e57521de0d321",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{rec}{gen}",
+        "\\ollabel{defn:general-recursive}",
+        "\\olref{defn:general-recursive}",
+        "\\olref[par]{defn:recursive-fn}",
+        "\\olref{defn:general-recursive}",
+        "\\olref[par]{defn:recursive-fn}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{rec}{gen}",
+        "\\ollabel{defn:general-recursive}",
+        "\\olref{defn:general-recursive}",
+        "\\olref[par]{defn:recursive-fn}",
+        "\\olref{defn:general-recursive}",
+        "\\olref[par]{defn:recursive-fn}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$f(x,\\vecz)$",
+        "$\\vecz$",
+        "$x$",
+        "$f(x,\\vecz)=0$"
+      ],
+      "math_target_core": [
+        "$\\vecz$",
+        "$f(x,\\vecz)=0$",
+        "$x$",
+        "$f(x,\\vecz)$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 888,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: general-recursive-functions",
+          "target_start": "% Part: computability\n% Chapter: recursive-functions\n% Section: general-recursive-functions"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{rec}{gen}\n\\olsection{General Recursive Functions}",
+          "target_start": "\\olfileid{cmp}{rec}{gen}\n\\olsection{సామాన్య పునరావృత్త ప్రమేయాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "There is another way to obtain a set of total functions. Say a total\nfunction $f(x,\\vec z)$ is \\emph{regular} ",
+          "target_start": "సర్వనిర్వచిత ప్రమేయాల సమితిని పొందడానికి మరొక పద్ధతి ఉంది. సహజ\nసంఖ్యల ప్రతి క్రమం $\\vec z$కూ $f(x,\\vec z)=0$ అ"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}\n\\ollabel{defn:general-recursive}\nThe set of \\emph{general recursive functions} is the smallest se",
+          "target_start": "\\begin{defn}\n\\ollabel{defn:general-recursive}\nసహజ సంఖ్యల నుంచి సహజ సంఖ్యలకు వెళ్లే వివిధ స్థానసంఖ్యల ప్రమేయాల్"
+        },
+        {
+          "index": 7,
+          "source_start": "Clearly every general recursive function is total. The difference\nbetween \\olref{defn:general-recursive} and\n\\",
+          "target_start": "ప్రతి సామాన్య పునరావృత్త ప్రమేయం సర్వనిర్వచితమని స్పష్టం.\n\\olref{defn:general-recursive}, \\olref[par]{defn:rec"
+        },
+        {
+          "index": 8,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{gen}",
+        "\\ollabel{defn:general-recursive}",
+        "\\olref{defn:general-recursive}",
+        "\\olref[par]{defn:recursive-fn}",
+        "\\olref{defn:general-recursive}",
+        "\\olref[par]{defn:recursive-fn}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{rec}{gen}",
+        "\\ollabel{defn:general-recursive}",
+        "\\olref{defn:general-recursive}",
+        "\\olref[par]{defn:recursive-fn}",
+        "\\olref{defn:general-recursive}",
+        "\\olref[par]{defn:recursive-fn}"
+      ],
+      "protected_identifier_parity": true
+    }
+  ]
+}
