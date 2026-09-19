@@ -1,0 +1,277 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTETURUND-20260919",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0265",
+      "OLP-0266",
+      "OLP-0267",
+      "OLP-0269",
+      "OLP-0270",
+      "OLP-0271",
+      "OLP-0273"
+    ],
+    "finding_count": 18
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTETURUND-001",
+      "unit_id": "OLP-0265",
+      "classification": "confirmed_missing_auxiliary",
+      "source": {
+        "path": "content/turing-machines/undecidability/introduction.tex",
+        "bytes": 5095,
+        "sha256": "93d2253ac6e586e10383a07e5851584833964c1fbcffaedef10a806a09023334",
+        "locator": "lines 45-48, effective-decision paragraph"
+      },
+      "finding": "The phrase 'problems that cannot effectively decided' omits the auxiliary 'be'.",
+      "controlling_evidence": "The parallel function clause and the next sentence both distinguish functions a model cannot compute from problems it cannot decide.",
+      "required_translation_handling": "Render the intended cannot-be-effectively-decided claim and add an adjacent OLTETURUND-001 disclosure."
+    },
+    {
+      "finding_id": "OLTETURUND-002",
+      "unit_id": "OLP-0265",
+      "classification": "confirmed_duplicate_noun",
+      "source": {
+        "path": "content/turing-machines/undecidability/introduction.tex",
+        "bytes": 5095,
+        "sha256": "93d2253ac6e586e10383a07e5851584833964c1fbcffaedef10a806a09023334",
+        "locator": "lines 80-83, description-input formulation of the Halting Problem"
+      },
+      "finding": "The source asks whether '$M$ machine' would have halted, duplicating the machine noun after the already introduced symbol.",
+      "controlling_evidence": "The input contains a description of machine M and n; the predicate at issue is whether M halts on n.",
+      "required_translation_handling": "Refer simply to machine M and add an adjacent OLTETURUND-002 disclosure."
+    },
+    {
+      "finding_id": "OLTETURUND-003",
+      "unit_id": "OLP-0266",
+      "classification": "confirmed_category_error_in_exercise",
+      "source": {
+        "path": "content/turing-machines/undecidability/enumerating-tms.tex",
+        "bytes": 6946,
+        "sha256": "4c8ce821f6a0585dcd5a20f4d7d1082b439c2a21b1450cc967155a5a548f62c1",
+        "locator": "lines 145-150, final standard-machine exercise"
+      },
+      "finding": "The exercise says every Turing machine can be computed by a standard machine, treating a machine rather than its computed function as the output of computation.",
+      "controlling_evidence": "The immediately preceding theorem and proof establish that every Turing-computable function is computed by a renamed standard machine.",
+      "required_translation_handling": "Ask why every Turing-computable function is computed by a standard machine in the proposed sense and add an adjacent OLTETURUND-003 disclosure."
+    },
+    {
+      "finding_id": "OLTETURUND-004",
+      "unit_id": "OLP-0267",
+      "classification": "confirmed_sentence_fragment",
+      "source": {
+        "path": "content/turing-machines/undecidability/universal-tm.tex",
+        "bytes": 6859,
+        "sha256": "aa4bdd1cf46621152e74cecfe49f34398c6e9f29ac92473bc2835c7acfcf9ed6",
+        "locator": "lines 47-55, machine computing the number of states"
+      },
+      "finding": "The causal clause beginning 'Since the first element...' is left as a sentence fragment before a new 'So' sentence.",
+      "controlling_evidence": "The description format defined in the preceding section places the number of states in the first block.",
+      "required_translation_handling": "State the first-element fact as a complete premise and retain the erasure-and-halt conclusion; add an adjacent OLTETURUND-004 disclosure."
+    },
+    {
+      "finding_id": "OLTETURUND-005",
+      "unit_id": "OLP-0269",
+      "classification": "confirmed_function_machine_category_error",
+      "source": {
+        "path": "content/turing-machines/undecidability/decision-problem.tex",
+        "bytes": 2262,
+        "sha256": "e55cc5610483e274125f4d5caa00965ecee3b77e819218f7cb6f59e879e9bdd3",
+        "locator": "lines 28-35, reduction strategy"
+      },
+      "finding": "The source describes the numerical function h(e,w) itself as halting with output 1 or 0.",
+      "controlling_evidence": "The preceding Halting Problem section defines h by values; machines computing h are what halt and output those values.",
+      "required_translation_handling": "Give h's 1/0 value condition and reserve halting language for a hypothetical computing machine; add an adjacent OLTETURUND-005 disclosure."
+    },
+    {
+      "finding_id": "OLTETURUND-006",
+      "unit_id": "OLP-0270",
+      "classification": "confirmed_left_transition_frame_error",
+      "source": {
+        "path": "content/turing-machines/undecidability/representing-tms.tex",
+        "bytes": 8046,
+        "sha256": "9b07ae3b7dc8802daae69390c7c6ca17b1550a0c99b8d38a16732406b28a58c5",
+        "locator": "lines 139-166, nonzero left-move transition axiom"
+      },
+      "finding": "For a left move from x+1 to x, the source writes the new symbol at x+1 but invokes A(x,y), which preserves every square except destination x instead of every square except written square x+1.",
+      "controlling_evidence": "The adjacent explanation explicitly says the square written on is x+1; A's definition excludes its first argument from the preservation clauses.",
+      "required_translation_handling": "Use A(x',y) in the nonzero left-move consequent and add an adjacent OLTETURUND-006 disclosure."
+    },
+    {
+      "finding_id": "OLTETURUND-007",
+      "unit_id": "OLP-0271",
+      "classification": "confirmed_metavariable_marker_omission",
+      "source": {
+        "path": "content/turing-machines/undecidability/verification.tex",
+        "bytes": 13991,
+        "sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
+        "locator": "lines 37-42, forward-verification overview"
+      },
+      "finding": "The first occurrence in the concluding entailment chain is T(M,w), omitting the source's own ! marker for the represented sentence.",
+      "controlling_evidence": "Every surrounding occurrence and the section's definitions use !T(M,w).",
+      "required_translation_handling": "Restore !T(M,w) and add an adjacent OLTETURUND-007 disclosure."
+    },
+    {
+      "finding_id": "OLTETURUND-008",
+      "unit_id": "OLP-0271",
+      "classification": "confirmed_machine_metavariable_substitution",
+      "source": {
+        "path": "content/turing-machines/undecidability/verification.tex",
+        "bytes": 13991,
+        "sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
+        "locator": "lines 44-57, canonical-structure overview"
+      },
+      "finding": "The semantic example says T, rather than machine M, is run on input w.",
+      "controlling_evidence": "The structure is built from the configurations of M on w, while !T is the sentence true in that structure.",
+      "required_translation_handling": "Name machine M in the satisfaction condition and add an adjacent OLTETURUND-008 disclosure."
+    },
+    {
+      "finding_id": "OLTETURUND-009",
+      "unit_id": "OLP-0271",
+      "classification": "confirmed_witness_variable_and_symbol_mismatch",
+      "source": {
+        "path": "content/turing-machines/undecidability/verification.tex",
+        "bytes": 13991,
+        "sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
+        "locator": "lines 79-98, halting-configuration lemma"
+      },
+      "finding": "After choosing q and sigma and identifying their Q and S clauses, the proof switches to q' and sigma' in the premise, drops the Obj prefix once, and only then asserts that the primed pair belongs to X.",
+      "controlling_evidence": "The chosen q,sigma satisfy undefined delta(q,sigma), hence their pair belongs to X and their two configuration clauses witness E.",
+      "required_translation_handling": "Use the chosen q,sigma as the premise and distinct bound q',sigma' only in the disjunction; restore Obj and add an adjacent OLTETURUND-009 disclosure."
+    },
+    {
+      "finding_id": "OLTETURUND-010",
+      "unit_id": "OLP-0271",
+      "classification": "confirmed_induction_scope_conflict",
+      "source": {
+        "path": "content/turing-machines/undecidability/verification.tex",
+        "bytes": 13991,
+        "sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
+        "locator": "lines 107-120 and 238, configuration induction statement and conclusion"
+      },
+      "finding": "The lemma's 'has not halted after n steps' condition excludes the exact halting configuration later needed, while the proof conclusion overstates the result for every n even after a run has halted.",
+      "controlling_evidence": "C(M,w,n) is needed at the halting time k; after halting there is no successor configuration. The exact domain is times n for which the run is defined, equivalently M has not halted before step n.",
+      "required_translation_handling": "State and use the not-halted-before-n condition consistently and add an adjacent OLTETURUND-010 disclosure."
+    },
+    {
+      "finding_id": "OLTETURUND-011",
+      "unit_id": "OLP-0271",
+      "classification": "confirmed_missing_first_induction_step",
+      "source": {
+        "path": "content/turing-machines/undecidability/verification.tex",
+        "bytes": 13991,
+        "sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
+        "locator": "lines 122-125, induction step setup"
+      },
+      "finding": "The induction step assumes n>0, leaving the transition from the n=0 base case to n=1 uncovered.",
+      "controlling_evidence": "The three transition cases apply equally at n=0 and are required to establish C(M,w,1).",
+      "required_translation_handling": "Use n>=0 in the step and add an adjacent OLTETURUND-011 disclosure."
+    },
+    {
+      "finding_id": "OLTETURUND-012",
+      "unit_id": "OLP-0271",
+      "classification": "confirmed_right_transition_duplicate_symbol_clause",
+      "source": {
+        "path": "content/turing-machines/undecidability/verification.tex",
+        "bytes": 13991,
+        "sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
+        "locator": "lines 163-173, right-move successor configuration"
+      },
+      "finding": "The display includes the new symbol at square m and also the unqualified sigma_0 through sigma_k list, while the next sentence says the old sigma_m conjunct is excluded.",
+      "controlling_evidence": "A(m,n) preserves precisely the squares other than m; the transition writes sigma' at m.",
+      "required_translation_handling": "Write the unchanged conjunction with i not equal to m explicitly and add an adjacent OLTETURUND-012 disclosure."
+    },
+    {
+      "finding_id": "OLTETURUND-013",
+      "unit_id": "OLP-0271",
+      "classification": "confirmed_left_transition_verification_errors",
+      "source": {
+        "path": "content/turing-machines/undecidability/verification.tex",
+        "bytes": 13991,
+        "sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
+        "locator": "lines 201-234, left-move induction case"
+      },
+      "finding": "The proof repeats A(x,y) for a move that writes at x+1, retains q_i/q_j in a specialization otherwise using q/q', and again displays the old symbol at the written square alongside the new one.",
+      "controlling_evidence": "OLTETURUND-006 establishes the correct frame A(x',y); the active instruction is delta(q,sigma)=<q',sigma',L>; only squares other than m retain their old symbols.",
+      "required_translation_handling": "Use A(x',y), q/q', and an explicit i-not-equal-m unchanged conjunction; add an adjacent OLTETURUND-013 disclosure."
+    },
+    {
+      "finding_id": "OLTETURUND-014",
+      "unit_id": "OLP-0273",
+      "classification": "confirmed_finite_domain_bound_too_small",
+      "source": {
+        "path": "content/turing-machines/undecidability/trakhtenbrot.tex",
+        "bytes": 10991,
+        "sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
+        "locator": "lines 35-50 and 170-184, finite-model construction"
+      },
+      "finding": "The construction sets n to max(k,len(w)); a head beginning at square 1 may reach square k+1 after k steps, and folding the kth successor into the top element also falsifies B at the last real transition.",
+      "controlling_evidence": "The representation starts the head at square 1. With domain through n, capped successor n'=n and n<n in the artificial order, B(n) is false; choosing n at least k+1 leaves the k-step run below the cap.",
+      "required_translation_handling": "Use n=max(k+1,len(w)) in both occurrences and add an adjacent OLTETURUND-014 disclosure."
+    },
+    {
+      "finding_id": "OLTETURUND-015",
+      "unit_id": "OLP-0273",
+      "classification": "confirmed_exercise_symbol_and_structure_typos",
+      "source": {
+        "path": "content/turing-machines/undecidability/trakhtenbrot.tex",
+        "bytes": 10991,
+        "sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
+        "locator": "lines 68-85, finite spurious-model exercise"
+      },
+      "finding": "The sole transition enters an undefined state q rather than the only state q_0, and the successor assignment switches from structure M'' to M' at argument 1.",
+      "controlling_evidence": "The exercise explicitly specifies a one-state machine and defines every other interpretation in M''.",
+      "required_translation_handling": "Restore q_0 and M'' and add an adjacent OLTETURUND-015 disclosure."
+    },
+    {
+      "finding_id": "OLTETURUND-016",
+      "unit_id": "OLP-0273",
+      "classification": "confirmed_modified_left_transition_omissions",
+      "source": {
+        "path": "content/turing-machines/undecidability/trakhtenbrot.tex",
+        "bytes": 10991,
+        "sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
+        "locator": "lines 112-137, modified left-move transition axiom"
+      },
+      "finding": "The nonzero left-move branch alone omits B(y'), allowing a nonhalting sequence of left moves without fresh time values, and repeats the A(x,y) frame error from OLTETURUND-006.",
+      "controlling_evidence": "The following proof needs B at every successor time for every movement direction; a left move writes at x+1, so its frame is A(x',y).",
+      "required_translation_handling": "Add B(y') to the nonzero branch, use A(x',y), and add an adjacent OLTETURUND-016 disclosure."
+    },
+    {
+      "finding_id": "OLTETURUND-017",
+      "unit_id": "OLP-0273",
+      "classification": "confirmed_lemma_formula_regressions",
+      "source": {
+        "path": "content/turing-machines/undecidability/trakhtenbrot.tex",
+        "bytes": 10991,
+        "sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
+        "locator": "lines 170-190, finite-model lemma proof and exercise"
+      },
+      "finding": "The proof twice omits the ! marker on E, and the exercise additionally regresses from modified T' to the original T.",
+      "controlling_evidence": "The lemma statement is explicitly about the finite model of !T'(M,w) and !E(M,w); the added B clauses in T' are the point of the construction.",
+      "required_translation_handling": "Use !T'(M,w) and !E(M,w) throughout, retain the corrected domain bound, and add an adjacent OLTETURUND-017 disclosure."
+    },
+    {
+      "finding_id": "OLTETURUND-018",
+      "unit_id": "OLP-0273",
+      "classification": "confirmed_contrapositive_model_and_base_scope_errors",
+      "source": {
+        "path": "content/turing-machines/undecidability/trakhtenbrot.tex",
+        "bytes": 10991,
+        "sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
+        "locator": "lines 197-220, converse finite-model lemma"
+      },
+      "finding": "The proof assumes a model of original T rather than modified T', so its B consequences do not follow; it also claims B(num(0)) although no transition consequent supplies that base case.",
+      "controlling_evidence": "The lemma premise is a model of !T' and !E. For every n>0 a nonhalting run reaches n through a transition whose modified consequent supplies B(num(n)); B(num(0)) is unnecessary for pairwise distinct numerals.",
+      "required_translation_handling": "Assume a model of !T' and !E, restrict the B claim and exercise to n>0, and add an adjacent OLTETURUND-018 disclosure."
+    }
+  ]
+}

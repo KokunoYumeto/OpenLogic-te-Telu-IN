@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 260 of 722 draft units**. This log contains 68 terminology/sense decisions and 206 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 270 of 722 draft units**. This log contains 69 terminology/sense decisions and 224 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1639,6 +1639,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low semantic uncertainty because the machine, transition, configuration, computation and combination notions are defined by explicit tuples, diagrams and equations; medium to high nomenclatural uncertainty for machine-component compounds, nondeterminism and effective-procedure terminology
 
 - Please double-check: Please double-check whether “ట్యూరింగ్ యంత్రం / ట్యూరింగ్ యంత్ర గణన / గణనా నమూనా / టేపు / చదువు--వ్రాత శీర్షం / గడి / స్థితి / స్థితి రేఖాచిత్రం / స్థితివిన్యాసం / నడక / వర్ణమాల / నిర్దేశ సమితి / సంక్రమణ ప్రమేయం / ప్రారంభ స్థితి / ఆగే స్థితి / తిరస్కరణ స్థితి / ఏకాంక ప్రాతినిధ్యం / ద్విగుణక యంత్రం / క్రమశిక్షిత యంత్రం / సంయుక్త యంత్రం / అనిర్ణీత ట్యూరింగ్ యంత్రం / ప్రభావక ప్రక్రియ / చర్చ్--ట్యూరింగ్ సిద్ధాంతప్రతిపాదన / సూడోకోడ్” is idiomatic and technically standard for “Turing machine / Turing-machine computation / model of computation / tape / read-write head / square / state / state diagram / configuration / run / alphabet / instruction set / transition function / initial state / halting state / reject state / unary representation / doubler / disciplined machine / combined machine / nondeterministic Turing machine / effective procedure / Church--Turing thesis / pseudocode” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T069 — undecidability / enumeration of Turing machines / standard Turing machine / index / universal Turing machine / halting function and Halting Problem / decision problem / representation of computation / finite satisfiability / semi-decidability / Trakhtenbrot's theorem
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: అనిర్ణయనీయత / ట్యూరింగ్ యంత్రాల లెక్కింపు / ప్రామాణిక ట్యూరింగ్ యంత్రం / సూచిక / సార్వత్రిక ట్యూరింగ్ యంత్రం / ఆగే ప్రమేయం, ఆగే సమస్య / నిర్ణయ సమస్య / గణనకు మొదటిస్థాయి ప్రాతినిధ్యం / పరిమిత సంతృప్తిపరచదగినత / అర్ధ-నిర్ణయించదగినత / ట్రాఖ్టెన్‌బ్రోట్ సిద్ధాంతం
+
+- Exact implementation: OLP-0266; turing-machines/undecidability/enumerating-tms; content/turing-machines/undecidability/enumerating-tms.tex:9-10 ↔ translation/content/turing-machines/undecidability/enumerating-tms.tex:9-10 (OLP-0266-B004); printed/PDF page pending; OLP-0267; turing-machines/undecidability/universal-tm; content/turing-machines/undecidability/universal-tm.tex:24-28 ↔ translation/content/turing-machines/undecidability/universal-tm.tex:23-26 (OLP-0267-B006); printed/PDF page pending; OLP-0267; turing-machines/undecidability/universal-tm; content/turing-machines/undecidability/universal-tm.tex:59-68 ↔ translation/content/turing-machines/undecidability/universal-tm.tex:52-61 (OLP-0267-B011); printed/PDF page pending; OLP-0268; turing-machines/undecidability/halting-problem; content/turing-machines/undecidability/halting-problem.tex:36-39 ↔ translation/content/turing-machines/undecidability/halting-problem.tex:35-38 (OLP-0268-B008); printed/PDF page pending; OLP-0269; turing-machines/undecidability/decision-problem; content/turing-machines/undecidability/decision-problem.tex:9-10 ↔ translation/content/turing-machines/undecidability/decision-problem.tex:9-10 (OLP-0269-B004); printed/PDF page pending; OLP-0270; turing-machines/undecidability/representing-tms; content/turing-machines/undecidability/representing-tms.tex:9-10 ↔ translation/content/turing-machines/undecidability/representing-tms.tex:9-10 (OLP-0270-B004); printed/PDF page pending; OLP-0272; turing-machines/undecidability/unsolvability-decision-problem; content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-77 ↔ translation/content/turing-machines/undecidability/unsolvability-decision-problem.tex:71-77 (OLP-0272-B012); printed/PDF page pending; OLP-0273; turing-machines/undecidability/trakhtenbrot; content/turing-machines/undecidability/trakhtenbrot.tex:223-227 ↔ translation/content/turing-machines/undecidability/trakhtenbrot.tex:222-226 (OLP-0273-B019); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P028, PDF 92, printed 85, Unary predicates, binary relations and quantifier classification; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P034, PDF 308, printed 301, Main point 5, Cartesian product definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P005 supports native natural-number exposition; TE-P008, TE-P010--TE-P011 and TE-P034 support sets, ordered pairs, relations and functions; TE-P018, TE-P024 and TE-P028 directly support formal-logic, derivation, predicate and quantifier register; TE-P003 and TE-P032 support theorem, proof and deduction prose. The witnesses do not directly attest machine enumeration, universal machines, the Halting Problem, arithmetized computation, the decision problem, finite satisfiability or Trakhtenbrot's theorem. The frozen enumerations, universal simulation, diagonal proof, first-order representation, reduction and finite-model construction in OLP-0264--OLP-0273 control those exact senses; TE-T020, TE-T024, TE-T026, TE-T033, TE-T034 and TE-T065--TE-T068 supply the edition's earlier reversible choices. ట్యూరింగ్, చర్చ్, కాంటర్ and ట్రాఖ్టెన్‌బ్రోట్ are source names or eponyms. Formal machine symbols, indices and formula metavariables remain protected notation; no unexplained English technical headword remains in reader-facing prose
+
+- Alternatives: reuse the established machine, function, formal-logic and proof register, with universal-machine, representation and finite-model compounds fixed by the adjacent constructions (chosen); leave the specialized undecidability and finite-model vocabulary in untranslated English reader prose (rejected); collapse ordinary enumerability, machine enumeration and semi-decidability into one term (rejected because the definitions distinguish them); claim direct native attestation for universal simulation, arithmetized computation or Trakhtenbrot’s theorem (rejected because the frozen constructions and proofs control those senses)
+
+- Uncertainty: Low semantic uncertainty because each specialized notion is fixed by an explicit definition, simulation, formula scheme, reduction or proof; medium to high nomenclatural uncertainty for universal-machine, represented-computation and finite-satisfiability compounds
+
+- Please double-check: Please double-check whether “అనిర్ణయనీయత / ట్యూరింగ్ యంత్రాల లెక్కింపు / ప్రామాణిక ట్యూరింగ్ యంత్రం / సూచిక / సార్వత్రిక ట్యూరింగ్ యంత్రం / ఆగే ప్రమేయం, ఆగే సమస్య / నిర్ణయ సమస్య / గణనకు మొదటిస్థాయి ప్రాతినిధ్యం / పరిమిత సంతృప్తిపరచదగినత / అర్ధ-నిర్ణయించదగినత / ట్రాఖ్టెన్‌బ్రోట్ సిద్ధాంతం” is idiomatic and technically standard for “undecidability / enumeration of Turing machines / standard Turing machine / index / universal Turing machine / halting function and Halting Problem / decision problem / representation of computation / finite satisfiability / semi-decidability / Trakhtenbrot's theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -6583,3 +6607,435 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTETURMAC-008 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-001 — OLTETURUND-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: rendered the intended cannot-be-effectively-decided claim; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0265; turing-machines/undecidability/introduction; lines 45-48, effective-decision paragraph ↔ translation/content/turing-machines/undecidability/introduction.tex:43-51 (OLP-0265-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTETURUND-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: rendered the intended cannot-be-effectively-decided claim; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-001 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-002 — OLTETURUND-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: referred simply to machine M; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0265; turing-machines/undecidability/introduction; lines 80-83, description-input formulation of the Halting Problem ↔ translation/content/turing-machines/undecidability/introduction.tex:69-78 (OLP-0265-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTETURUND-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: referred simply to machine M; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-002 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-003 — OLTETURUND-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: asked why every Turing-computable function is computed by a standard machine; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0266; turing-machines/undecidability/enumerating-tms; lines 145-150, final standard-machine exercise ↔ translation/content/turing-machines/undecidability/enumerating-tms.tex:138-145 (OLP-0266-B018); printed/PDF page pending
+
+- Authorities actually checked: OLTETURUND-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: asked why every Turing-computable function is computed by a standard machine; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-003 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-004 — OLTETURUND-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: completed the first-element premise and retained the erasure-and-halt conclusion; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0267; turing-machines/undecidability/universal-tm; lines 47-55, machine computing the number of states ↔ translation/content/turing-machines/undecidability/universal-tm.tex:42-50 (OLP-0267-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTETURUND-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: completed the first-element premise and retained the erasure-and-halt conclusion; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-004 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-005 — OLTETURUND-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: stated h's values and reserved halting language for a computing machine; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0269; turing-machines/undecidability/decision-problem; lines 28-35, reduction strategy ↔ translation/content/turing-machines/undecidability/decision-problem.tex:27-34 (OLP-0269-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTETURUND-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: stated h's values and reserved halting language for a computing machine; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-005 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-006 — OLTETURUND-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used A(x',y) so all squares except the written origin square are preserved; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0270; turing-machines/undecidability/representing-tms; lines 139-156; mapped segment within audited scope lines 139-166, nonzero left-move transition axiom ↔ translation/content/turing-machines/undecidability/representing-tms.tex:132-147 (OLP-0270-B014); printed/PDF page pending; OLP-0270; turing-machines/undecidability/representing-tms; lines 158-178; mapped segment within audited scope lines 139-166, nonzero left-move transition axiom ↔ translation/content/turing-machines/undecidability/representing-tms.tex:149-167 (OLP-0270-B015); printed/PDF page pending
+
+- Authorities actually checked: OLTETURUND-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used A(x',y) so all squares except the written origin square are preserved; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-006 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-007 — OLTETURUND-007
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored !T(M,w); adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0271; turing-machines/undecidability/verification; lines 37-42, forward-verification overview ↔ translation/content/turing-machines/undecidability/verification.tex:31-43 (OLP-0271-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTETURUND-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored !T(M,w); adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-007 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-008 — OLTETURUND-008
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: named machine M rather than sentence metavariable T; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0271; turing-machines/undecidability/verification; lines 44-57, canonical-structure overview ↔ translation/content/turing-machines/undecidability/verification.tex:45-58 (OLP-0271-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTETURUND-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: named machine M rather than sentence metavariable T; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-008 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-009 — OLTETURUND-009
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used chosen q,sigma as the premise, distinct bound q',sigma' in the disjunction and restored Obj; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0271; turing-machines/undecidability/verification; lines 79-98, halting-configuration lemma ↔ translation/content/turing-machines/undecidability/verification.tex:80-100 (OLP-0271-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTETURUND-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used chosen q,sigma as the premise, distinct bound q',sigma' in the disjunction and restored Obj; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-009 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-010 — OLTETURUND-010
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used the exact not-halted-before-n domain of the run throughout; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0271; turing-machines/undecidability/verification; lines 107-111; mapped segment within audited scope lines 107-120 and 238, configuration induction statement and conclusion ↔ translation/content/turing-machines/undecidability/verification.tex:107-111 (OLP-0271-B013); printed/PDF page pending; OLP-0271; turing-machines/undecidability/verification; lines 113-115; mapped segment within audited scope lines 107-120 and 238, configuration induction statement and conclusion ↔ translation/content/turing-machines/undecidability/verification.tex:113-115 (OLP-0271-B014); printed/PDF page pending; OLP-0271; turing-machines/undecidability/verification; lines 117-120; mapped segment within audited scope lines 107-120 and 238, configuration induction statement and conclusion ↔ translation/content/turing-machines/undecidability/verification.tex:117-119 (OLP-0271-B015); printed/PDF page pending; OLP-0271; turing-machines/undecidability/verification; lines 236-239; mapped segment within audited scope lines 107-120 and 238, configuration induction statement and conclusion ↔ translation/content/turing-machines/undecidability/verification.tex:237-241 (OLP-0271-B027); printed/PDF page pending
+
+- Authorities actually checked: OLTETURUND-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used the exact not-halted-before-n domain of the run throughout; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-010 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-011 — OLTETURUND-011
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used n>=0 so the step covers the transition from the base case; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0271; turing-machines/undecidability/verification; lines 122-125; mapped segment within audited scope lines 122-125, induction step setup ↔ translation/content/turing-machines/undecidability/verification.tex:121-123 (OLP-0271-B016); printed/PDF page pending; OLP-0271; turing-machines/undecidability/verification; lines 132-133; mapped segment within audited scope lines 122-125, induction step setup ↔ translation/content/turing-machines/undecidability/verification.tex:130-131 (OLP-0271-B019); printed/PDF page pending
+
+- Authorities actually checked: OLTETURUND-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used n>=0 so the step covers the transition from the base case; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-011 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-012 — OLTETURUND-012
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: made the unchanged conjunction explicitly range over i not equal to m; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0271; turing-machines/undecidability/verification; lines 163-173, right-move successor configuration ↔ translation/content/turing-machines/undecidability/verification.tex:162-176 (OLP-0271-B021); printed/PDF page pending
+
+- Authorities actually checked: OLTETURUND-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: made the unchanged conjunction explicitly range over i not equal to m; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-012 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-013 — OLTETURUND-013
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used A(x',y), q/q' and excluded the old written-square conjunct; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0271; turing-machines/undecidability/verification; lines 201-234, left-move induction case ↔ translation/content/turing-machines/undecidability/verification.tex:207-245 (OLP-0271-B026); printed/PDF page pending
+
+- Authorities actually checked: OLTETURUND-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used A(x',y), q/q' and excluded the old written-square conjunct; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-013 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-014 — OLTETURUND-014
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used n=max(k+1,len(w)) in both finite-model constructions; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0273; turing-machines/undecidability/trakhtenbrot; lines 29-51; mapped segment within audited scope lines 35-50 and 170-184, finite-model construction ↔ translation/content/turing-machines/undecidability/trakhtenbrot.tex:28-51 (OLP-0273-B007); printed/PDF page pending; OLP-0273; turing-machines/undecidability/trakhtenbrot; lines 170-185; mapped segment within audited scope lines 35-50 and 170-184, finite-model construction ↔ translation/content/turing-machines/undecidability/trakhtenbrot.tex:167-183 (OLP-0273-B013); printed/PDF page pending
+
+- Authorities actually checked: OLTETURUND-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used n=max(k+1,len(w)) in both finite-model constructions; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-014 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-015 — OLTETURUND-015
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored q_0 and M'' in the one-state M'' exercise; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0273; turing-machines/undecidability/trakhtenbrot; lines 68-85, finite spurious-model exercise ↔ translation/content/turing-machines/undecidability/trakhtenbrot.tex:66-85 (OLP-0273-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTETURUND-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored q_0 and M'' in the one-state M'' exercise; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-015 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-016 — OLTETURUND-016
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: added B(y') to the nonzero branch and used A(x',y); adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0273; turing-machines/undecidability/trakhtenbrot; lines 112-137, modified left-move transition axiom ↔ translation/content/turing-machines/undecidability/trakhtenbrot.tex:112-135 (OLP-0273-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTETURUND-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: added B(y') to the nonzero branch and used A(x',y); adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-016 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-017 — OLTETURUND-017
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used !T' and !E throughout and retained the corrected finite bound; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0273; turing-machines/undecidability/trakhtenbrot; lines 170-185; mapped segment within audited scope lines 170-190, finite-model lemma proof and exercise ↔ translation/content/turing-machines/undecidability/trakhtenbrot.tex:167-183 (OLP-0273-B013); printed/PDF page pending; OLP-0273; turing-machines/undecidability/trakhtenbrot; lines 187-190; mapped segment within audited scope lines 170-190, finite-model lemma proof and exercise ↔ translation/content/turing-machines/undecidability/trakhtenbrot.tex:185-188 (OLP-0273-B014); printed/PDF page pending
+
+- Authorities actually checked: OLTETURUND-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used !T' and !E throughout and retained the corrected finite bound; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-017 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-018 — OLTETURUND-018
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: assumed a model of !T' and !E and restricted B(num(n)) to n>0; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0273; turing-machines/undecidability/trakhtenbrot; lines 197-201; mapped segment within audited scope lines 197-220, converse finite-model lemma ↔ translation/content/turing-machines/undecidability/trakhtenbrot.tex:195-199 (OLP-0273-B016); printed/PDF page pending; OLP-0273; turing-machines/undecidability/trakhtenbrot; lines 203-215; mapped segment within audited scope lines 197-220, converse finite-model lemma ↔ translation/content/turing-machines/undecidability/trakhtenbrot.tex:201-214 (OLP-0273-B017); printed/PDF page pending; OLP-0273; turing-machines/undecidability/trakhtenbrot; lines 217-221; mapped segment within audited scope lines 197-220, converse finite-model lemma ↔ translation/content/turing-machines/undecidability/trakhtenbrot.tex:216-220 (OLP-0273-B018); printed/PDF page pending
+
+- Authorities actually checked: OLTETURUND-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: assumed a model of !T' and !E and restricted B(num(n)) to n>0; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-018 is mathematically precise and idiomatic.

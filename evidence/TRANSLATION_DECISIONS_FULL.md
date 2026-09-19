@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **260 of 722 source units drafted**. This readable view contains all 274 decisions and 509 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **270 of 722 source units drafted**. This readable view contains all 293 decisions and 544 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -1940,6 +1940,39 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T068-OCC-009; OLP-0261; OLP-0261-B006; source upstream/content/turing-machines/machines-computations/combining-machines.tex:25-50 bytes 988-2313 SHA-256 02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48; target translation/content/turing-machines/machines-computations/combining-machines.tex:23-48 bytes 2109-5301 SHA-256 4c0be68bc5222e1d2373e6537351af795d26efc33c3b409c1ec4b9e08deb2795; reader page pending.
   - te-Telu-IN-TE-T068-OCC-010; OLP-0262; OLP-0262-B006; source upstream/content/turing-machines/machines-computations/variants.tex:29-39 bytes 1254-1983 SHA-256 d751ce8370fa72e3d98762ecf2f928e19b9bf1c94cc17505221da0eec922d35e; target translation/content/turing-machines/machines-computations/variants.tex:27-36 bytes 2990-4508 SHA-256 b06521b3fc6e29fe510690d890b35ea79b71a4bf94ccc2bf573e65bca812ad34; reader page pending.
   - te-Telu-IN-TE-T068-OCC-011; OLP-0263; OLP-0263-B005; source upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:12-21 bytes 227-888 SHA-256 a9073c7499f26e2ae151d434d24aa8e4a9789f84f65a43568a75aab78d49a421; target translation/content/turing-machines/machines-computations/church-turing-thesis.tex:12-19 bytes 298-1771 SHA-256 f2da4ccaf14daa353a1c30255b444b1ef91615e30ed08b020ab7535819654e2b; reader page pending.
+
+## te-Telu-IN-TE-T069 — undecidability / enumeration of Turing machines / standard Turing machine / index / universal Turing machine / halting function and Halting Problem / decision problem / representation of computation / finite satisfiability / semi-decidability / Trakhtenbrot's theorem
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: అనిర్ణయనీయత / ట్యూరింగ్ యంత్రాల లెక్కింపు / ప్రామాణిక ట్యూరింగ్ యంత్రం / సూచిక / సార్వత్రిక ట్యూరింగ్ యంత్రం / ఆగే ప్రమేయం, ఆగే సమస్య / నిర్ణయ సమస్య / గణనకు మొదటిస్థాయి ప్రాతినిధ్యం / పరిమిత సంతృప్తిపరచదగినత / అర్ధ-నిర్ణయించదగినత / ట్రాఖ్టెన్‌బ్రోట్ సిద్ధాంతం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “undecidability / enumeration of Turing machines / standard Turing machine / index / universal Turing machine / halting function and Halting Problem / decision problem / representation of computation / finite satisfiability / semi-decidability / Trakhtenbrot's theorem” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low semantic uncertainty because each specialized notion is fixed by an explicit definition, simulation, formula scheme, reduction or proof; medium to high nomenclatural uncertainty for universal-machine, represented-computation and finite-satisfiability compounds
+
+- Rationale: TE-P005 supports native natural-number exposition; TE-P008, TE-P010--TE-P011 and TE-P034 support sets, ordered pairs, relations and functions; TE-P018, TE-P024 and TE-P028 directly support formal-logic, derivation, predicate and quantifier register; TE-P003 and TE-P032 support theorem, proof and deduction prose. The witnesses do not directly attest machine enumeration, universal machines, the Halting Problem, arithmetized computation, the decision problem, finite satisfiability or Trakhtenbrot's theorem. The frozen enumerations, universal simulation, diagonal proof, first-order representation, reduction and finite-model construction in OLP-0264--OLP-0273 control those exact senses; TE-T020, TE-T024, TE-T026, TE-T033, TE-T034 and TE-T065--TE-T068 supply the edition's earlier reversible choices. ట్యూరింగ్, చర్చ్, కాంటర్ and ట్రాఖ్టెన్‌బ్రోట్ are source names or eponyms. Formal machine symbols, indices and formula metavariables remain protected notation; no unexplained English technical headword remains in reader-facing prose
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P028 [checked_context_only], PDF page 92; printed page 85; Unary predicates, binary relations and quantifier classification; Direct quantifier taxonomy and predicate/relation context. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C004:TE-P034 [checked_context_only], PDF page 308; printed page 301; Main point 5, Cartesian product definition; Direct ordered-pair and Cartesian-product terminology; singular క్రమయుగ్మం is a transparent inflection.
+
+- Alternatives: leave the specialized undecidability and finite-model vocabulary in untranslated English reader prose [rejected: rejected] | collapse ordinary enumerability, machine enumeration and semi-decidability into one term [rejected: rejected because the definitions distinguish them] | claim direct native attestation for universal simulation, arithmetized computation or Trakhtenbrot’s theorem [rejected: rejected because the frozen constructions and proofs control those senses]
+
+- Review question: Please double-check whether “అనిర్ణయనీయత / ట్యూరింగ్ యంత్రాల లెక్కింపు / ప్రామాణిక ట్యూరింగ్ యంత్రం / సూచిక / సార్వత్రిక ట్యూరింగ్ యంత్రం / ఆగే ప్రమేయం, ఆగే సమస్య / నిర్ణయ సమస్య / గణనకు మొదటిస్థాయి ప్రాతినిధ్యం / పరిమిత సంతృప్తిపరచదగినత / అర్ధ-నిర్ణయించదగినత / ట్రాఖ్టెన్‌బ్రోట్ సిద్ధాంతం” is idiomatic and technically standard for “undecidability / enumeration of Turing machines / standard Turing machine / index / universal Turing machine / halting function and Halting Problem / decision problem / representation of computation / finite satisfiability / semi-decidability / Trakhtenbrot's theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T069-OCC-001; OLP-0266; OLP-0266-B004; source upstream/content/turing-machines/undecidability/enumerating-tms.tex:9-10 bytes 159-224 SHA-256 4c8ce821f6a0585dcd5a20f4d7d1082b439c2a21b1450cc967155a5a548f62c1; target translation/content/turing-machines/undecidability/enumerating-tms.tex:9-10 bytes 159-283 SHA-256 59cf30ff7a8689de4029af3defc9c3935a1e20c240bcf1a1075b9b090dd988e6; reader page pending.
+  - te-Telu-IN-TE-T069-OCC-002; OLP-0267; OLP-0267-B006; source upstream/content/turing-machines/undecidability/universal-tm.tex:24-28 bytes 964-1139 SHA-256 aa4bdd1cf46621152e74cecfe49f34398c6e9f29ac92473bc2835c7acfcf9ed6; target translation/content/turing-machines/undecidability/universal-tm.tex:23-26 bytes 2099-2436 SHA-256 6b987ad8bcca18b6c61151ff25dd3cfceb661f473859610d00f9072660ddaf7d; reader page pending.
+  - te-Telu-IN-TE-T069-OCC-003; OLP-0267; OLP-0267-B011; source upstream/content/turing-machines/undecidability/universal-tm.tex:59-68 bytes 2735-3193 SHA-256 aa4bdd1cf46621152e74cecfe49f34398c6e9f29ac92473bc2835c7acfcf9ed6; target translation/content/turing-machines/undecidability/universal-tm.tex:52-61 bytes 6456-7442 SHA-256 6b987ad8bcca18b6c61151ff25dd3cfceb661f473859610d00f9072660ddaf7d; reader page pending.
+  - te-Telu-IN-TE-T069-OCC-004; OLP-0268; OLP-0268-B008; source upstream/content/turing-machines/undecidability/halting-problem.tex:36-39 bytes 1054-1239 SHA-256 0ddd299c7af03bdd5bb5b0e8d723caa0d1347ba41977e52429f5d43d7850be71; target translation/content/turing-machines/undecidability/halting-problem.tex:35-38 bytes 1984-2309 SHA-256 3ede1283966c6171336c4a1808ca28d8939644732a334cb6755a813f60b3e281; reader page pending.
+  - te-Telu-IN-TE-T069-OCC-005; OLP-0269; OLP-0269-B004; source upstream/content/turing-machines/undecidability/decision-problem.tex:9-10 bytes 174-232 SHA-256 e55cc5610483e274125f4d5caa00965ecee3b77e819218f7cb6f59e879e9bdd3; target translation/content/turing-machines/undecidability/decision-problem.tex:9-10 bytes 174-246 SHA-256 335d42ea03557f97b9ff3bbc55d8b94ef665e19efbab58361fbbe847e4bcb002; reader page pending.
+  - te-Telu-IN-TE-T069-OCC-006; OLP-0270; OLP-0270-B004; source upstream/content/turing-machines/undecidability/representing-tms.tex:9-10 bytes 160-226 SHA-256 9b07ae3b7dc8802daae69390c7c6ca17b1550a0c99b8d38a16732406b28a58c5; target translation/content/turing-machines/undecidability/representing-tms.tex:9-10 bytes 160-290 SHA-256 80fc7e6b6b6ce03d935e7401fe1eecd5f050c0dba120670781cca0bf20698ff3; reader page pending.
+  - te-Telu-IN-TE-T069-OCC-007; OLP-0272; OLP-0272-B012; source upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-77 bytes 3049-3373 SHA-256 c609e9a9a9dce039d6ef7063d2e604269790462b6c226eec82329128873eab6e; target translation/content/turing-machines/undecidability/unsolvability-decision-problem.tex:71-77 bytes 6932-7733 SHA-256 b0a5461a6f898cee734f75e13fda81105d3cee05b4b3f4c64d6486eacd9d3433; reader page pending.
+  - te-Telu-IN-TE-T069-OCC-008; OLP-0273; OLP-0273-B019; source upstream/content/turing-machines/undecidability/trakhtenbrot.tex:223-227 bytes 9576-9776 SHA-256 bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802; target translation/content/turing-machines/undecidability/trakhtenbrot.tex:222-226 bytes 21037-21528 SHA-256 ae1edca39ccb6d8652238554b15c52eba2c6fe1b32a789605392e2c41fc96b33; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -7362,3 +7395,480 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-OLTETURMAC-008-OCC-001; OLP-0261; OLP-0261-B010; source upstream/content/turing-machines/machines-computations/combining-machines.tex:74-78 bytes 3301-3679 SHA-256 02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48; target translation/content/turing-machines/machines-computations/combining-machines.tex:71-86 bytes 7119-8548 SHA-256 4c0be68bc5222e1d2373e6537351af795d26efc33c3b409c1ec4b9e08deb2795; reader page pending.
   - te-Telu-IN-OLTETURMAC-008-OCC-002; OLP-0261; OLP-0261-B012; source upstream/content/turing-machines/machines-computations/combining-machines.tex:97-101 bytes 4454-4818 SHA-256 02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48; target translation/content/turing-machines/machines-computations/combining-machines.tex:94-121 bytes 8805-10784 SHA-256 4c0be68bc5222e1d2373e6537351af795d26efc33c3b409c1ec4b9e08deb2795; reader page pending.
   - te-Telu-IN-OLTETURMAC-008-OCC-003; OLP-0261; OLP-0261-B013; source upstream/content/turing-machines/machines-computations/combining-machines.tex:127-131 bytes 6011-6375 SHA-256 02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48; target translation/content/turing-machines/machines-computations/combining-machines.tex:123-147 bytes 10785-12948 SHA-256 4c0be68bc5222e1d2373e6537351af795d26efc33c3b409c1ec4b9e08deb2795; reader page pending.
+
+## te-Telu-IN-OLTETURUND-001 — OLTETURUND-001: confirmed missing auxiliary
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: rendered the intended cannot-be-effectively-decided claim; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing auxiliary at lines 45-48, effective-decision paragraph, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURUND-20260919:OLTETURUND-001 [checked_supports], content/turing-machines/undecidability/introduction.tex; lines 45-48, effective-decision paragraph; confirmed_missing_auxiliary; rendered the intended cannot-be-effectively-decided claim; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURUND-001 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURUND-001-OCC-001; OLP-0265; OLP-0265-B008; source upstream/content/turing-machines/undecidability/introduction.tex:45-48 bytes 1941-2203 SHA-256 93d2253ac6e586e10383a07e5851584833964c1fbcffaedef10a806a09023334; target translation/content/turing-machines/undecidability/introduction.tex:43-51 bytes 4389-6578 SHA-256 2a96e726026ff38731c6e1bc16914eae8f7851455407c62db436f8e5a5d4468a; reader page pending.
+
+## te-Telu-IN-OLTETURUND-002 — OLTETURUND-002: confirmed duplicate noun
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: referred simply to machine M; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed duplicate noun at lines 80-83, description-input formulation of the Halting Problem, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURUND-20260919:OLTETURUND-002 [checked_supports], content/turing-machines/undecidability/introduction.tex; lines 80-83, description-input formulation of the Halting Problem; confirmed_duplicate_noun; referred simply to machine M; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURUND-002 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURUND-002-OCC-001; OLP-0265; OLP-0265-B010; source upstream/content/turing-machines/undecidability/introduction.tex:80-83 bytes 4129-4363 SHA-256 93d2253ac6e586e10383a07e5851584833964c1fbcffaedef10a806a09023334; target translation/content/turing-machines/undecidability/introduction.tex:69-78 bytes 9659-11786 SHA-256 2a96e726026ff38731c6e1bc16914eae8f7851455407c62db436f8e5a5d4468a; reader page pending.
+
+## te-Telu-IN-OLTETURUND-003 — OLTETURUND-003: confirmed category error in exercise
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: asked why every Turing-computable function is computed by a standard machine; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed category error in exercise at lines 145-150, final standard-machine exercise, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURUND-20260919:OLTETURUND-003 [checked_supports], content/turing-machines/undecidability/enumerating-tms.tex; lines 145-150, final standard-machine exercise; confirmed_category_error_in_exercise; asked why every Turing-computable function is computed by a standard machine; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURUND-003 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURUND-003-OCC-001; OLP-0266; OLP-0266-B018; source upstream/content/turing-machines/undecidability/enumerating-tms.tex:145-150 bytes 6597-6919 SHA-256 4c8ce821f6a0585dcd5a20f4d7d1082b439c2a21b1450cc967155a5a548f62c1; target translation/content/turing-machines/undecidability/enumerating-tms.tex:138-145 bytes 12106-13578 SHA-256 59cf30ff7a8689de4029af3defc9c3935a1e20c240bcf1a1075b9b090dd988e6; reader page pending.
+
+## te-Telu-IN-OLTETURUND-004 — OLTETURUND-004: confirmed sentence fragment
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: completed the first-element premise and retained the erasure-and-halt conclusion; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed sentence fragment at lines 47-55, machine computing the number of states, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURUND-20260919:OLTETURUND-004 [checked_supports], content/turing-machines/undecidability/universal-tm.tex; lines 47-55, machine computing the number of states; confirmed_sentence_fragment; completed the first-element premise and retained the erasure-and-halt conclusion; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURUND-004 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURUND-004-OCC-001; OLP-0267; OLP-0267-B009; source upstream/content/turing-machines/undecidability/universal-tm.tex:47-55 bytes 2115-2695 SHA-256 aa4bdd1cf46621152e74cecfe49f34398c6e9f29ac92473bc2835c7acfcf9ed6; target translation/content/turing-machines/undecidability/universal-tm.tex:42-50 bytes 4608-6455 SHA-256 6b987ad8bcca18b6c61151ff25dd3cfceb661f473859610d00f9072660ddaf7d; reader page pending.
+
+## te-Telu-IN-OLTETURUND-005 — OLTETURUND-005: confirmed function machine category error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: stated h's values and reserved halting language for a computing machine; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed function machine category error at lines 28-35, reduction strategy, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURUND-20260919:OLTETURUND-005 [checked_supports], content/turing-machines/undecidability/decision-problem.tex; lines 28-35, reduction strategy; confirmed_function_machine_category_error; stated h's values and reserved halting language for a computing machine; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURUND-005 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURUND-005-OCC-001; OLP-0269; OLP-0269-B007; source upstream/content/turing-machines/undecidability/decision-problem.tex:28-35 bytes 1122-1674 SHA-256 e55cc5610483e274125f4d5caa00965ecee3b77e819218f7cb6f59e879e9bdd3; target translation/content/turing-machines/undecidability/decision-problem.tex:27-34 bytes 2569-4186 SHA-256 335d42ea03557f97b9ff3bbc55d8b94ef665e19efbab58361fbbe847e4bcb002; reader page pending.
+
+## te-Telu-IN-OLTETURUND-006 — OLTETURUND-006: confirmed left transition frame error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used A(x',y) so all squares except the written origin square are preserved; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed left transition frame error at lines 139-166, nonzero left-move transition axiom, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURUND-20260919:OLTETURUND-006 [checked_supports], content/turing-machines/undecidability/representing-tms.tex; lines 139-166, nonzero left-move transition axiom; confirmed_left_transition_frame_error; used A(x',y) so all squares except the written origin square are preserved; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURUND-006 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURUND-006-OCC-001; OLP-0270; OLP-0270-B014; source upstream/content/turing-machines/undecidability/representing-tms.tex:139-156 bytes 5234-6106 SHA-256 9b07ae3b7dc8802daae69390c7c6ca17b1550a0c99b8d38a16732406b28a58c5; target translation/content/turing-machines/undecidability/representing-tms.tex:132-147 bytes 10257-11544 SHA-256 80fc7e6b6b6ce03d935e7401fe1eecd5f050c0dba120670781cca0bf20698ff3; reader page pending.
+  - te-Telu-IN-OLTETURUND-006-OCC-002; OLP-0270; OLP-0270-B015; source upstream/content/turing-machines/undecidability/representing-tms.tex:158-166 bytes 6107-6709 SHA-256 9b07ae3b7dc8802daae69390c7c6ca17b1550a0c99b8d38a16732406b28a58c5; target translation/content/turing-machines/undecidability/representing-tms.tex:149-167 bytes 11545-13977 SHA-256 80fc7e6b6b6ce03d935e7401fe1eecd5f050c0dba120670781cca0bf20698ff3; reader page pending.
+
+## te-Telu-IN-OLTETURUND-007 — OLTETURUND-007: confirmed metavariable marker omission
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored !T(M,w); adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed metavariable marker omission at lines 37-42, forward-verification overview, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURUND-20260919:OLTETURUND-007 [checked_supports], content/turing-machines/undecidability/verification.tex; lines 37-42, forward-verification overview; confirmed_metavariable_marker_omission; restored !T(M,w); adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURUND-007 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURUND-007-OCC-001; OLP-0271; OLP-0271-B007; source upstream/content/turing-machines/undecidability/verification.tex:37-42 bytes 1700-2059 SHA-256 4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660; target translation/content/turing-machines/undecidability/verification.tex:31-43 bytes 2855-4817 SHA-256 14853394c6b41b2cf6919e705e05f94fa7f0da9132c2ec9028b6b18ec5318ba9; reader page pending.
+
+## te-Telu-IN-OLTETURUND-008 — OLTETURUND-008: confirmed machine metavariable substitution
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: named machine M rather than sentence metavariable T; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed machine metavariable substitution at lines 44-57, canonical-structure overview, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURUND-20260919:OLTETURUND-008 [checked_supports], content/turing-machines/undecidability/verification.tex; lines 44-57, canonical-structure overview; confirmed_machine_metavariable_substitution; named machine M rather than sentence metavariable T; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURUND-008 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURUND-008-OCC-001; OLP-0271; OLP-0271-B008; source upstream/content/turing-machines/undecidability/verification.tex:44-57 bytes 2060-2995 SHA-256 4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660; target translation/content/turing-machines/undecidability/verification.tex:45-58 bytes 4993-7029 SHA-256 14853394c6b41b2cf6919e705e05f94fa7f0da9132c2ec9028b6b18ec5318ba9; reader page pending.
+
+## te-Telu-IN-OLTETURUND-009 — OLTETURUND-009: confirmed witness variable and symbol mismatch
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used chosen q,sigma as the premise, distinct bound q',sigma' in the disjunction and restored Obj; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed witness variable and symbol mismatch at lines 79-98, halting-configuration lemma, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURUND-20260919:OLTETURUND-009 [checked_supports], content/turing-machines/undecidability/verification.tex; lines 79-98, halting-configuration lemma; confirmed_witness_variable_and_symbol_mismatch; used chosen q,sigma as the premise, distinct bound q',sigma' in the disjunction and restored Obj; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURUND-009 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURUND-009-OCC-001; OLP-0271; OLP-0271-B011; source upstream/content/turing-machines/undecidability/verification.tex:79-98 bytes 3752-4611 SHA-256 4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660; target translation/content/turing-machines/undecidability/verification.tex:80-100 bytes 8511-10389 SHA-256 14853394c6b41b2cf6919e705e05f94fa7f0da9132c2ec9028b6b18ec5318ba9; reader page pending.
+
+## te-Telu-IN-OLTETURUND-010 — OLTETURUND-010: confirmed induction scope conflict
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used the exact not-halted-before-n domain of the run throughout; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed induction scope conflict at lines 107-120 and 238, configuration induction statement and conclusion, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURUND-20260919:OLTETURUND-010 [checked_supports], content/turing-machines/undecidability/verification.tex; lines 107-120 and 238, configuration induction statement and conclusion; confirmed_induction_scope_conflict; used the exact not-halted-before-n domain of the run throughout; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURUND-010 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURUND-010-OCC-001; OLP-0271; OLP-0271-B013; source upstream/content/turing-machines/undecidability/verification.tex:107-111 bytes 4825-4954 SHA-256 4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660; target translation/content/turing-machines/undecidability/verification.tex:107-111 bytes 10755-10927 SHA-256 14853394c6b41b2cf6919e705e05f94fa7f0da9132c2ec9028b6b18ec5318ba9; reader page pending.
+  - te-Telu-IN-OLTETURUND-010-OCC-002; OLP-0271; OLP-0271-B014; source upstream/content/turing-machines/undecidability/verification.tex:113-115 bytes 4955-5087 SHA-256 4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660; target translation/content/turing-machines/undecidability/verification.tex:113-115 bytes 10928-11214 SHA-256 14853394c6b41b2cf6919e705e05f94fa7f0da9132c2ec9028b6b18ec5318ba9; reader page pending.
+  - te-Telu-IN-OLTETURUND-010-OCC-003; OLP-0271; OLP-0271-B015; source upstream/content/turing-machines/undecidability/verification.tex:117-120 bytes 5088-5306 SHA-256 4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660; target translation/content/turing-machines/undecidability/verification.tex:117-119 bytes 11215-12494 SHA-256 14853394c6b41b2cf6919e705e05f94fa7f0da9132c2ec9028b6b18ec5318ba9; reader page pending.
+  - te-Telu-IN-OLTETURUND-010-OCC-004; OLP-0271; OLP-0271-B027; source upstream/content/turing-machines/undecidability/verification.tex:238 bytes 10712-10777 SHA-256 4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660; target translation/content/turing-machines/undecidability/verification.tex:237-241 bytes 22835-23117 SHA-256 14853394c6b41b2cf6919e705e05f94fa7f0da9132c2ec9028b6b18ec5318ba9; reader page pending.
+
+## te-Telu-IN-OLTETURUND-011 — OLTETURUND-011: confirmed missing first induction step
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used n>=0 so the step covers the transition from the base case; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing first induction step at lines 122-125, induction step setup, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURUND-20260919:OLTETURUND-011 [checked_supports], content/turing-machines/undecidability/verification.tex; lines 122-125, induction step setup; confirmed_missing_first_induction_step; used n>=0 so the step covers the transition from the base case; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURUND-011 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURUND-011-OCC-001; OLP-0271; OLP-0271-B016; source upstream/content/turing-machines/undecidability/verification.tex:122-125 bytes 5307-5529 SHA-256 4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660; target translation/content/turing-machines/undecidability/verification.tex:121-123 bytes 12495-13010 SHA-256 14853394c6b41b2cf6919e705e05f94fa7f0da9132c2ec9028b6b18ec5318ba9; reader page pending.
+  - te-Telu-IN-OLTETURUND-011-OCC-002; OLP-0271; OLP-0271-B019; source upstream/content/turing-machines/undecidability/verification.tex:132-133 bytes 5697-5785 SHA-256 4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660; target translation/content/turing-machines/undecidability/verification.tex:130-131 bytes 13177-13701 SHA-256 14853394c6b41b2cf6919e705e05f94fa7f0da9132c2ec9028b6b18ec5318ba9; reader page pending.
+
+## te-Telu-IN-OLTETURUND-012 — OLTETURUND-012: confirmed right transition duplicate symbol clause
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: made the unchanged conjunction explicitly range over i not equal to m; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed right transition duplicate symbol clause at lines 163-173, right-move successor configuration, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURUND-20260919:OLTETURUND-012 [checked_supports], content/turing-machines/undecidability/verification.tex; lines 163-173, right-move successor configuration; confirmed_right_transition_duplicate_symbol_clause; made the unchanged conjunction explicitly range over i not equal to m; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURUND-012 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURUND-012-OCC-001; OLP-0271; OLP-0271-B021; source upstream/content/turing-machines/undecidability/verification.tex:163-173 bytes 7061-7635 SHA-256 4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660; target translation/content/turing-machines/undecidability/verification.tex:162-176 bytes 15718-17865 SHA-256 14853394c6b41b2cf6919e705e05f94fa7f0da9132c2ec9028b6b18ec5318ba9; reader page pending.
+
+## te-Telu-IN-OLTETURUND-013 — OLTETURUND-013: confirmed left transition verification errors
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used A(x',y), q/q' and excluded the old written-square conjunct; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed left transition verification errors at lines 201-234, left-move induction case, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURUND-20260919:OLTETURUND-013 [checked_supports], content/turing-machines/undecidability/verification.tex; lines 201-234, left-move induction case; confirmed_left_transition_verification_errors; used A(x',y), q/q' and excluded the old written-square conjunct; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURUND-013 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURUND-013-OCC-001; OLP-0271; OLP-0271-B026; source upstream/content/turing-machines/undecidability/verification.tex:201-234 bytes 8967-10647 SHA-256 4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660; target translation/content/turing-machines/undecidability/verification.tex:207-245 bytes 20093-23291 SHA-256 14853394c6b41b2cf6919e705e05f94fa7f0da9132c2ec9028b6b18ec5318ba9; reader page pending.
+
+## te-Telu-IN-OLTETURUND-014 — OLTETURUND-014: confirmed finite domain bound too small
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used n=max(k+1,len(w)) in both finite-model constructions; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed finite domain bound too small at lines 35-50 and 170-184, finite-model construction, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURUND-20260919:OLTETURUND-014 [checked_supports], content/turing-machines/undecidability/trakhtenbrot.tex; lines 35-50 and 170-184, finite-model construction; confirmed_finite_domain_bound_too_small; used n=max(k+1,len(w)) in both finite-model constructions; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURUND-014 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURUND-014-OCC-001; OLP-0273; OLP-0273-B007; source upstream/content/turing-machines/undecidability/trakhtenbrot.tex:35-50 bytes 1505-2211 SHA-256 bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802; target translation/content/turing-machines/undecidability/trakhtenbrot.tex:28-51 bytes 2301-5428 SHA-256 ae1edca39ccb6d8652238554b15c52eba2c6fe1b32a789605392e2c41fc96b33; reader page pending.
+  - te-Telu-IN-OLTETURUND-014-OCC-002; OLP-0273; OLP-0273-B013; source upstream/content/turing-machines/undecidability/trakhtenbrot.tex:170-184 bytes 7479-8053 SHA-256 bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802; target translation/content/turing-machines/undecidability/trakhtenbrot.tex:167-183 bytes 15584-16510 SHA-256 ae1edca39ccb6d8652238554b15c52eba2c6fe1b32a789605392e2c41fc96b33; reader page pending.
+
+## te-Telu-IN-OLTETURUND-015 — OLTETURUND-015: confirmed exercise symbol and structure typos
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored q_0 and M'' in the one-state M'' exercise; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed exercise symbol and structure typos at lines 68-85, finite spurious-model exercise, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURUND-20260919:OLTETURUND-015 [checked_supports], content/turing-machines/undecidability/trakhtenbrot.tex; lines 68-85, finite spurious-model exercise; confirmed_exercise_symbol_and_structure_typos; restored q_0 and M'' in the one-state M'' exercise; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURUND-015 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURUND-015-OCC-001; OLP-0273; OLP-0273-B009; source upstream/content/turing-machines/undecidability/trakhtenbrot.tex:68-85 bytes 3157-4157 SHA-256 bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802; target translation/content/turing-machines/undecidability/trakhtenbrot.tex:66-85 bytes 7250-9355 SHA-256 ae1edca39ccb6d8652238554b15c52eba2c6fe1b32a789605392e2c41fc96b33; reader page pending.
+
+## te-Telu-IN-OLTETURUND-016 — OLTETURUND-016: confirmed modified left transition omissions
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: added B(y') to the nonzero branch and used A(x',y); adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed modified left transition omissions at lines 112-137, modified left-move transition axiom, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURUND-20260919:OLTETURUND-016 [checked_supports], content/turing-machines/undecidability/trakhtenbrot.tex; lines 112-137, modified left-move transition axiom; confirmed_modified_left_transition_omissions; added B(y') to the nonzero branch and used A(x',y); adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURUND-016 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURUND-016-OCC-001; OLP-0273; OLP-0273-B011; source upstream/content/turing-machines/undecidability/trakhtenbrot.tex:112-137 bytes 5070-6254 SHA-256 bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802; target translation/content/turing-machines/undecidability/trakhtenbrot.tex:112-135 bytes 11051-13623 SHA-256 ae1edca39ccb6d8652238554b15c52eba2c6fe1b32a789605392e2c41fc96b33; reader page pending.
+
+## te-Telu-IN-OLTETURUND-017 — OLTETURUND-017: confirmed lemma formula regressions
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used !T' and !E throughout and retained the corrected finite bound; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed lemma formula regressions at lines 170-190, finite-model lemma proof and exercise, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURUND-20260919:OLTETURUND-017 [checked_supports], content/turing-machines/undecidability/trakhtenbrot.tex; lines 170-190, finite-model lemma proof and exercise; confirmed_lemma_formula_regressions; used !T' and !E throughout and retained the corrected finite bound; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURUND-017 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURUND-017-OCC-001; OLP-0273; OLP-0273-B013; source upstream/content/turing-machines/undecidability/trakhtenbrot.tex:170-185 bytes 7479-8065 SHA-256 bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802; target translation/content/turing-machines/undecidability/trakhtenbrot.tex:167-183 bytes 15584-16510 SHA-256 ae1edca39ccb6d8652238554b15c52eba2c6fe1b32a789605392e2c41fc96b33; reader page pending.
+  - te-Telu-IN-OLTETURUND-017-OCC-002; OLP-0273; OLP-0273-B014; source upstream/content/turing-machines/undecidability/trakhtenbrot.tex:187-190 bytes 8066-8203 SHA-256 bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802; target translation/content/turing-machines/undecidability/trakhtenbrot.tex:185-188 bytes 16511-17574 SHA-256 ae1edca39ccb6d8652238554b15c52eba2c6fe1b32a789605392e2c41fc96b33; reader page pending.
+
+## te-Telu-IN-OLTETURUND-018 — OLTETURUND-018: confirmed contrapositive model and base scope errors
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: assumed a model of !T' and !E and restricted B(num(n)) to n>0; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed contrapositive model and base scope errors at lines 197-220, converse finite-model lemma, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURUND-20260919:OLTETURUND-018 [checked_supports], content/turing-machines/undecidability/trakhtenbrot.tex; lines 197-220, converse finite-model lemma; confirmed_contrapositive_model_and_base_scope_errors; assumed a model of !T' and !E and restricted B(num(n)) to n>0; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURUND-018 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURUND-018-OCC-001; OLP-0273; OLP-0273-B016; source upstream/content/turing-machines/undecidability/trakhtenbrot.tex:197-201 bytes 8339-8603 SHA-256 bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802; target translation/content/turing-machines/undecidability/trakhtenbrot.tex:195-199 bytes 17806-18356 SHA-256 ae1edca39ccb6d8652238554b15c52eba2c6fe1b32a789605392e2c41fc96b33; reader page pending.
+  - te-Telu-IN-OLTETURUND-018-OCC-002; OLP-0273; OLP-0273-B017; source upstream/content/turing-machines/undecidability/trakhtenbrot.tex:203-215 bytes 8606-9369 SHA-256 bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802; target translation/content/turing-machines/undecidability/trakhtenbrot.tex:201-214 bytes 18357-20666 SHA-256 ae1edca39ccb6d8652238554b15c52eba2c6fe1b32a789605392e2c41fc96b33; reader page pending.
+  - te-Telu-IN-OLTETURUND-018-OCC-003; OLP-0273; OLP-0273-B018; source upstream/content/turing-machines/undecidability/trakhtenbrot.tex:217-220 bytes 9370-9564 SHA-256 bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802; target translation/content/turing-machines/undecidability/trakhtenbrot.tex:216-220 bytes 20667-21036 SHA-256 ae1edca39ccb6d8652238554b15c52eba2c6fe1b32a789605392e2c41fc96b33; reader page pending.

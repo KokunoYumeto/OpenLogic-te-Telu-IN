@@ -1,0 +1,323 @@
+% Part: turing-machines
+% Chapter: undecidability
+% Section: verification
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{und}{ver}
+\olsection{ప్రాతినిధ్యాన్ని నిర్ధారించడం}
+
+\begin{explain}
+మన ప్రాతినిధ్యం పనిచేస్తుందని నిర్ధారించడానికి రెండు విషయాలను నిరూపించాలి.
+మొదట, $M$ ఇన్‌పుట్~$w$పై ఆగితే $!T(M, w) \lif !E(M, w)$ చెల్లుబాటవుతుందని
+చూపాలి. తరువాత దాని విపర్యయాన్ని చూపాలి; అంటే $!T(M, w) \lif !E(M, w)$
+చెల్లుబాటైతే, $M$ను ఇన్‌పుట్~$w$పై నడిపినప్పుడు అది నిజంగానే చివరకు
+ఆగుతుందని చూపాలి.
+
+వీటిని నిరూపించే వ్యూహాలు చాలా వేరు. మొదటి ఫలితం కోసం, మొదటిస్థాయి తర్కంలోని
+\tetoken{ఒక వాక్యం}{!!a{sentence}} (అంటే, $!T(M, w) \lif !E(M, w)$) చెల్లుబాటవుతుందని చూపాలి.
+దీనికి అత్యంత సులభమైన పద్ధతి ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}} ఇవ్వడం. అయితే మన నిరూపణ
+అన్ని $M$, $w$లకు పనిచేయాలి; కాబట్టి మనం \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} ఇవ్వవలసిన ఒకే
+\tetoken{వాక్యం}{!!{sentence}} నిజానికి లేదు, అనంతమైనన్ని ఉన్నాయి. అందువల్ల $M$,~$w$లు
+ఎలాంటివైనా, ఇన్‌పుట్~$w$పై $M$ ఆగడానికి ఎన్ని అంచెలు పట్టినా,
+$!T(M, w) \lif !E(M, w)$కు \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} ఉంటుందని ఆగమనంతో నిరూపించడమే
+మనం చేయగల ఉత్తమమైన పని.
+
+సహజంగానే, $M$ ఆగే స్థితివిన్యాసాన్ని చేరడానికి తీసుకునే అంచెల సంఖ్యపై మన
+ఆగమనం సాగుతుంది. మన ఆగమన నిరూపణలో, ఇన్‌పుట్~$w$పై $M$ నడకలోని ప్రతి
+అంచె~$n$కు $!T(M, w) \Entails !C(M, w, n)$ అని స్థాపిస్తాం; ఇక్కడ
+$!C(M, w, n)$ అనేది~$w$పై నడిచే $M$ యొక్క $n$ అంచెల తరువాతి స్థితివిన్యాసాన్ని
+సరిగా వర్ణిస్తుంది. ఇప్పుడు $M$ ఇన్‌పుట్~$w$పై, ఉదాహరణకు, $n$ అంచెల తరువాత
+ఆగితే, $!C(M, w, n)$ ఒక ఆగే స్థితివిన్యాసాన్ని వర్ణిస్తుంది. $!C(M, w, n)$
+ఒక ఆగే స్థితివిన్యాసాన్ని వర్ణించినప్పుడల్లా
+$!C(M, w, n) \Entails !E(M, w)$ అని కూడా చూపుతాం. కాబట్టి $M$ ఇన్‌పుట్~$w$పై
+ఆగితే, ఏదో ఒక~$n$కు $M$ $n$~అంచెల తరువాత ఆగే స్థితివిన్యాసంలో ఉంటుంది.
+అందువల్ల $!C(M, w, n)$ ఒక ఆగే స్థితివిన్యాసాన్ని వర్ణించే సందర్భంలో
+$!T(M, w) \Entails !C(M, w, n)$; ఆ సందర్భంలో
+$!C(M, w, n) \Entails !E(M, w)$ కూడా కనుక, మనకు
+$!T(M, w) \Entails !E(M, w)$, అంటే
+$\Entails !T(M, w) \lif !E(M, w)$, లభిస్తుంది.\sourcecorrection{OLTETURUND-007}{ఈ వాదన ముగింపులో ఆంగ్ల మూలం మొదటి సంభవంలో $!T(M,w)$లోని ఆశ్చర్యార్థక సంకేతాన్ని వదిలి $T(M,w)$ అని వ్రాసింది. అధ్యాయం అంతటా స్థిరమైన వాక్య-మెటానోటేషన్ $!T(M,w)$ను పునరుద్ధరించాం.}
+
+విపర్యయానికి వ్యూహం చాలా వేరు. ఇక్కడ $\Entails !T(M, w) \lif !E(M, w)$
+అని అనుకొని, $M$ ఇన్‌పుట్~$w$పై ఆగుతుందని నిరూపించాలి. పరికల్పన నుండి
+$!T(M, w) \Entails !E(M, w)$ అని వస్తుంది; అంటే $!T(M,w)$ సత్యమయ్యే ప్రతి
+\tetoken{నిర్మాణంలో}{!!{structure}} $!E(M,w)$ సత్యం. కాబట్టి $!T(M,w)$ సత్యమయ్యే
+\tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct{M}$ను వర్ణిస్తాం: దాని వ్యక్తి క్షేత్రం $\Nat$;
+$\Obj Q_q$, $\Obj S_\sigma$లన్నిటి అర్థనిర్దేశాలు ఇన్‌పుట్~$w$పై $M$
+నడకలోని స్థితివిన్యాసాలతో ఇవ్వబడతాయి. ఉదాహరణకు,
+$\Sat{M}{\Obj Q_q(\num{m}, \num{n})}$ అయితే, అప్పుడే మాత్రమే $M$ను ఇన్‌పుట్~$w$పై
+$n$ అంచెలు నడిపిన తరువాత అది స్థితి~$q$లో ఉండి గడి~$m$ను చదువుతుంది.
+ఇప్పుడు పరికల్పన ప్రకారం $!T(M, w) \Entails !E(M, w)$; నిర్మాణం వల్ల
+$\Sat{M}{!T(M,w)}$; కాబట్టి $\Sat{M}{!E(M,w)}$. కానీ
+$\Sat{M}{!E(M,w)}$ అయితే, అప్పుడే మాత్రమే ఏదో ఒక
+$n \in \Domain{M}=\Nat$కు, ఇన్‌పుట్~$w$పై నడిచిన $M$ $n$ అంచెల తరువాత
+ఆగే స్థితివిన్యాసంలో ఉంటుంది.\sourcecorrection{OLTETURUND-008}{నియత నిర్మాణాన్ని వివరించే ఉదాహరణలో ఆంగ్ల మూలం ``$T$, when run on input~$w$'' అని వాక్య-మెటాసంకేతాన్ని యంత్రంలా ఉపయోగించింది. ఈ పేరా అంతటా వర్ణించబడుతున్న యంత్రం~$M$నే పునరుద్ధరించాం.}
+\end{explain}
+
+\begin{defn}
+$!C(M, w, n)$ను కింది \tetoken{వాక్యంగా}{!!{sentence}} ఉంచుదాం:
+\[
+\Obj Q_q(\num{m}, \num{n}) \land \Obj S_{\sigma_0}(\num{0}, \num{n})
+\land \dots \land \Obj S_{\sigma_k}(\num{k}, \num{n}) \land
+\lforall[x][(\num{k} < x \lif \Obj S_\TMblank(x, \num{n}))]
+\]
+ఇక్కడ $q$ అనేది సమయం~$n$ వద్ద $M$ స్థితి; సమయం~$n$ వద్ద $M$ గడి~$m$ను
+చదువుతోంది; $0 \le i \le k$ అయినప్పుడు సమయం~$n$ వద్ద గడి~$i$లో
+సంకేతం~$\sigma_i$ ఉంది; ఇంకా సమయం~$0$ వద్ద టేపులో అత్యంత కుడివైపున్న
+ఖాళీ కాని గడి, లేదా $n$ అంచెల తరువాత టేపు శీర్షం సందర్శించిన అత్యంత
+కుడివైపు గడి---వీటిలో ఏది పెద్దదో అది $k$.
+\end{defn}
+
+\begin{lem}\ollabel{lem:halt-config-implies-halt}
+ఇన్‌పుట్~$w$పై నడిచే $M$ $n$ అంచెల తరువాత ఆగే స్థితివిన్యాసంలో ఉంటే,
+$!C(M, w, n) \Entails !E(M, w)$.
+\end{lem}
+
+\begin{proof}
+$M$ ఇన్‌పుట్~$w$పై $n$ అంచెల తరువాత ఆగుతుందని అనుకుందాం. కింది షరతులు
+నెరవేర్చే ఏదో ఒక స్థితి~$q$, గడి~$m$, సంకేతం~$\sigma$ ఉంటాయి:
+\begin{enumerate}
+\item $n$ అంచెల తరువాత $M$ స్థితి~$q$లో ఉండి, $\sigma$ కనిపించే గడి~$m$ను
+  చదువుతుంది.
+\item సంక్రమణ ప్రమేయం $\delta(q, \sigma)$ నిర్వచితం కాదు.
+\end{enumerate}
+$!C(M, w, n)$ ఈ స్థితివిన్యాసపు వర్ణన; అందులో
+$\Obj Q_{q}(\num{m}, \num{n})$, $\Obj S_{\sigma}(\num{m}, \num{n})$ అనే
+అంశాలు ఉంటాయి. ఈ అంశాలు కలిసి $!E(M,w)$ను అనుగమింపజేస్తాయి:
+\[
+\lexists[x][\lexists[y][(\bigvee_{\tuple{q, \sigma} \in
+      X}(\Obj Q_q(x, y) \land \Obj S_\sigma(x, y)))]]
+\]
+ఎందుకంటే
+$\Obj Q_q(\num{m}, \num{n}) \land \Obj S_\sigma(\num{m}, \num{n})
+\Entails \bigvee_{\tuple{q', \sigma'} \in X}
+(\Obj Q_{q'}(\num{m}, \num{n}) \land
+\Obj S_{\sigma'}(\num{m}, \num{n}))$, ఎందుకంటే
+$\tuple{q,\sigma} \in X$.\sourcecorrection{OLTETURUND-009}{ఈ చివరి అనుగమనంలో ఆంగ్ల మూలం ముందే ఎంచుకున్న $q,\sigma$కు బదులు కారణభాగంలో $q',\sigma'$ను వాడి, $\Obj$ ఉపసర్గను కూడా ఒకచోట వదిలింది; వెంటనే మాత్రం $\tuple{q',\sigma'}\in X$ అని చెప్పింది. స్థితివిన్యాసంలో నిజంగా ఉన్న $q,\sigma$ అంశాలను కారణభాగంగా ఉంచి, బంధిత వియోగ సూచికలను $q',\sigma'$గా వేరు చేశాం.}
+\end{proof}
+
+\begin{explain}
+కాబట్టి $M$ ఇన్‌పుట్~$w$పై ఆగితే, ఏదో ఒక~$n$కు
+$!C(M,w,n) \Entails !E(M,w)$. ఇప్పుడు నడక $n$ అంచెల వరకు నిర్వచితమైన ప్రతి
+సమయం~$n$కు $!T(M,w) \Entails !C(M,w,n)$ అని చూపుతాం.
+\end{explain}
+
+\begin{lem}
+\ollabel{lem:config}
+ప్రతి $n$కు, $M$ $n$వ అంచెకు ముందే ఆగకపోతే,
+$!T(M, w) \Entails !C(M, w, n)$.
+\end{lem}
+
+\begin{proof}
+ఆగమన ఆధారం: $n=0$ అయితే, $!C(M,w,0)$ యొక్క సంయోజ్యాలు
+$!T(M,w)$లో కూడా సంయోజ్యాలే; కాబట్టి అవి దాని నుండి అనుగమిస్తాయి.
+
+ఆగమన పరికల్పన: $M$ $n$వ అంచెకు ముందే ఆగకపోతే,
+$!T(M,w) \Entails !C(M,w,n)$. $!C(M,w,n)$ ఒక ఆగే స్థితివిన్యాసాన్ని
+వర్ణించకపోతే, $!T(M,w) \Entails !C(M,w,n+1)$ అని చూపాలి.\sourcecorrection{OLTETURUND-010}{ఆంగ్ల మూలంలోని ఉపసిద్ధాంతం ``$M$ has not halted after $n$ steps'' అని చెప్పినా, తరువాత $M$ కచ్చితంగా $n$ అంచెల వద్ద ఆగే సందర్భానికి అదే ఉపసిద్ధాంతాన్ని ఉపయోగిస్తుంది; నిరూపణ ముగింపు దాన్ని షరతులేకుండా ``any $n$''కు విస్తరిస్తుంది. ఆగే స్థితివిన్యాసాన్ని వర్ణించడానికి అవసరమైన, కచ్చితమైన షరతు---$M$ $n$వ అంచెకు ముందే ఆగకపోవడం, అంటే నడక $n$ అంచెల వరకు నిర్వచితమవడం---అని ఏకరీతిగా ఇచ్చాం.}
+
+$n \ge 0$ అనీ, $n$ అంచెల తరువాత ఇన్‌పుట్~$w$పై ప్రారంభించిన $M$ స్థితి~$q$లో
+ఉండి గడి~$m$ను చదువుతోందనీ అనుకుందాం. $n$ అంచెల తరువాత $M$ ఆగదు కనుక,
+$M$ ప్రోగ్రాములో కింది మూడు రూపాల్లో ఒకదానికి చెందిన నిర్దేశం ఉండాలి:
+
+\begin{enumerate}
+\item \ollabel{right} $\delta(q, \sigma) = \tuple{q', \sigma', \TMright}$
+
+\item \ollabel{left} $\delta(q, \sigma) = \tuple{q', \sigma', \TMleft}$
+
+\item \ollabel{stay} $\delta(q, \sigma) = \tuple{q', \sigma', \TMstay}$
+\end{enumerate}\sourcecorrection{OLTETURUND-011}{ఆగమన అంచెను ప్రారంభించే ఆంగ్ల మూలం $n>0$ అని అనవసరంగా విధించి, ఆధారం $n=0$ నుండి $n=1$కు వెళ్లే మొదటి అంచెను కప్పలేదు. ప్రతి సహజ సంఖ్యకు వర్తించే $n\ge0$గా సరిచేశాం.}
+
+ఈ మూడు సందర్భాల్లో ప్రతి దానినీ వరుసగా పరిశీలిస్తాం.
+
+\begin{enumerate}
+\item \olref{right} రూపంలో ఒక నిర్దేశం ఉందనుకుందాం.
+  \olref[rep]{defn:tm-descr}\olref[rep]{rep-right} ప్రకారం, దీనివల్ల
+\begin{align*}
+& \lforall[x][\lforall[y][((\Obj Q_{q}(x,
+  y) \land \Obj S_\sigma(x, y)) \lif {}]]\\
+& \qquad (\Obj Q_{q'}(x',
+  y') \land \Obj S_{\sigma'}(x, y') \land !A(x, y)))
+\intertext{$!T(M,w)$లో ఒక సంయోజ్యమవుతుంది. ఇది కింది \tetoken{వాక్యాన్ని}{!!{sentence}}
+  అనుగమింపజేస్తుంది (సార్వత్రిక నిదర్శనం; $x$కు $\num{m}$, $y$కు
+  $\num{n}$):}
+& (\Obj Q_{q}(\num{m}, \num{n}) \land \Obj S_{\sigma}(\num{m},
+\num{n})) \lif {}\\
+& \qquad (\Obj Q_{q'}(\num{m}', \num{n}') \land
+\Obj S_{\sigma'}(\num{m}, \num{n}') \land !A(\num{m}, \num{n})).
+\intertext{ఆగమన పరికల్పన ప్రకారం $!T(M,w) \Entails !C(M,w,n)$; అంటే,}
+& \Obj Q_q(\num{m}, \num{n}) \land \Obj S_{\sigma_0}(\num{0}, \num{n})
+\land \dots \land \Obj S_{\sigma_k}(\num{k}, \num{n}) \land \\
+& \qquad\lforall[x][(\num{k} < x \lif \Obj S_\TMblank(x, \num{n}))]\\
+\intertext{$n$ అంచెల తరువాత టేపు గడి~$m$లో $\sigma$ ఉంది కనుక, అనుగుణ
+  సంయోజ్యం $\Obj S_\sigma(\num{m},\num{n})$; అందువల్ల ఇది కిందిదాన్ని
+  అనుగమింపజేస్తుంది:}
+& \Obj Q_q(\num{m}, \num{n}) \land \Obj S_\sigma(\num{m},\num{n}).
+\intertext{ఇప్పుడు మనకు కిందిది లభిస్తుంది:}
+& \Obj Q_{q'}(\num{m}', \num{n}') \land \Obj S_{\sigma'}(\num{m},
+  \num{n}') \land {}\\
+& \qquad \bigwedge_{\substack{0\le i\le k\\i\ne m}}
+  \Obj S_{\sigma_i}(\num{i},\num{n}') \land {}\\
+& \qquad \lforall[x][(\num{k} < x \lif \Obj S_\TMblank(x, \num{n}'))].
+\end{align*}
+మొదటి వరుస ముందరి సోపాధికం యొక్క ఫలితభాగం నుండి మోడస్ పోనెన్స్ ద్వారా
+నేరుగా వస్తుంది. మధ్య వరుసలోని ప్రతి సంయోజ్యం---ఇది
+$\Obj S_{\sigma_m}(\num{m},\num{n}')$ను మినహాయిస్తుంది---$!C(M,w,n)$లోని
+అనుగుణ సంయోజ్యం, $!A(\num{m},\num{n})$ నుండి వస్తుంది.\sourcecorrection{OLTETURUND-012}{కుడి-కదలిక తరువాతి స్థితివిన్యాసాన్ని చూపే ఆంగ్ల మూలపు మధ్య వరుస $\Obj S_{\sigma_0},\dots,\Obj S_{\sigma_k}$ అన్నింటినీ ప్రదర్శించి, వెంటనే అది $m$వ సంయోజ్యాన్ని మినహాయిస్తుందని చెప్పింది. వ్రాసిన గడిపై పాతదీ కొత్తదీ రెండూ ఉన్నాయని వాక్యం చెప్పకుండా, వివరణ ఉద్దేశించినట్లుగా $i\ne m$ సంయోజ్యాలనే స్పష్టంగా ఉంచాం.}
+
+$m<k$ అయితే, \olref[rep]{prop:mlessk} ప్రకారం
+$!T(M,w) \Proves \num{m}<\num{k}$; $<$ యొక్క సంక్రమకత్వం వల్ల
+$\lforall[x][(\num{k}<x \lif \num{m}<x)]$ లభిస్తుంది. $m=k$ అయితే,
+$\lforall[x][(\num{k}<x \lif \num{m}<x)]$ తర్కం వల్లనే వస్తుంది. అప్పుడు
+చివరి వరుస $!C(M,w,n)$లోని అనుగుణ సంయోజ్యం,
+$\lforall[x][(\num{k}<x \lif \num{m}<x)]$ మరియు
+$!A(\num{m},\num{n})$ నుండి వస్తుంది. $m<k$ అయితే, ఇదే ఇప్పటికే
+$!C(M,w,n+1)$.
+
+ఇప్పుడు $m=k$ అనుకుందాం. ఈ సందర్భంలో $n+1$ అంచెల తరువాత టేపు శీర్షం
+గడి~$k+1$ను కూడా సందర్శించింది; ఇప్పుడు అదే సందర్శించిన అత్యంత కుడి గడి.
+కాబట్టి $!C(M,w,n+1)$లో $\Obj S_\TMblank(\num{k}',\num{n}')$ అనే కొత్త
+సంయోజ్యం ఉంటుంది; చివరి సంయోజ్యం
+$\lforall[x][(\num{k}'<x \lif \Obj S_\TMblank(x,\num{n}'))]$. ఈ రెండు
+\tetoken{వాక్యాలు}{!!{sentence}s} కూడా అనుగమిస్తాయని నిర్ధారించాలి.
+
+మనకు ఇప్పటికే
+$\lforall[x][(\num{k}<x \lif \Obj S_\TMblank(x,\num{n}'))]$ ఉంది.
+ప్రత్యేకించి, దీనివల్ల
+$\num{k}<\num{k}' \lif \Obj S_\TMblank(\num{k}',\num{n}')$ వస్తుంది.
+స్వీకృతం $\lforall[x][x<x']$ నుండి $\num{k}<\num{k}'$ వస్తుంది. మోడస్
+పోనెన్స్ ద్వారా $\Obj S_\TMblank(\num{k}',\num{n}')$ అనుగమిస్తుంది.
+
+అలాగే $!T(M,w) \Proves \num{k}<\num{k}'$ కనుక, $<$ సంక్రమకత్వ స్వీకృతాన్ని
+ఇప్పటికే పొందిన ఖాళీ-టేపు వాక్యంతో కలిపితే
+$\lforall[x][(\num{k}'<x \lif \Obj S_\TMblank(x,\num{n}'))]$ లభిస్తుంది.
+(దీని నిర్ధారణను అభ్యాసంగా వదిలేస్తాం.)
+
+\item \olref{left} రూపంలో ఒక నిర్దేశం ఉందనుకుందాం. అప్పుడు
+  \olref[rep]{defn:tm-descr}\olref[rep]{rep-left} ప్రకారం,
+\begin{align*}
+& \lforall[x][\lforall[y][((\Obj Q_{q}(x', y) \land \Obj
+    S_{\sigma}(x', y)) \lif {}]]\\
+& \qquad (\Obj Q_{q'}(x, y') \land \Obj
+  S_{\sigma'}(x', y') \land !A(x', y))) \land {}\\
+& \lforall[y][((\Obj Q_q(\num{0}, y) \land \Obj S_{\sigma}(\num{0},
+    y)) \lif {}]\\
+& \qquad (\Obj Q_{q'}(\num{0}, y') \land \Obj S_{\sigma'}(\num{0}, y')
+  \land !A(\num{0}, y)))
+\intertext{$!T(M,w)$లో ఒక సంయోజ్యం. $m>0$ అయితే, $l=m-1$గా ఉంచుదాం
+  (అంటే, $m=l+1$). పై \tetoken{వాక్యంలోని}{!!{sentence}} మొదటి సంయోజ్యం కిందిదాన్ని
+  అనుగమింపజేస్తుంది:}
+& (\Obj Q_q(\num{l}',\num{n}) \land
+\Obj S_\sigma(\num{l}',\num{n})) \lif {} \\
+& \qquad (\Obj Q_{q'}(\num{l},\num{n}') \land
+\Obj S_{\sigma'}(\num{l}',\num{n}') \land
+!A(\num{l}',\num{n})).
+\intertext{లేకపోతే $l=m=0$గా ఉంచి, రెండవ సంయోజ్యం అనుగమింపజేసే కింది
+  \tetoken{వాక్యాన్ని}{!!{sentence}} పరిశీలిద్దాం:}
+& ((\Obj Q_q(\num{0},\num{n}) \land
+\Obj S_\sigma(\num{0},\num{n})) \lif {}\\
+& \qquad (\Obj Q_{q'}(\num{0},\num{n}') \land
+\Obj S_{\sigma'}(\num{0},\num{n}') \land
+!A(\num{0},\num{n}))).
+\intertext{ముందటి విధంగానే, రెండు వాక్యాల్లో ఏదైనా కిందిదాన్ని
+  అనుగమింపజేస్తుంది:}
+& \Obj Q_{q'}(\num{l},\num{n}') \land
+  \Obj S_{\sigma'}(\num{m},\num{n}') \land {}\\
+& \qquad \bigwedge_{\substack{0\le i\le k\\i\ne m}}
+  \Obj S_{\sigma_i}(\num{i},\num{n}') \land {}\\
+& \qquad \lforall[x][(\num{k}<x
+  \lif \Obj S_\TMblank(x,\num{n}'))].
+\end{align*}
+(మొదటి సందర్భంలో $\num{l}' \ident \num{l+1} \ident \num{m}$;
+రెండవ సందర్భంలో $\num{l} \ident \num{0}$ అని గమనించండి.) ఇదే
+$!C(M,w,n+1)$.\sourcecorrection{OLTETURUND-013}{ఎడమ-కదలికను ఉపయోగించే ఆంగ్ల మూలపు నిర్ధారణ, నిర్వచనంలోని అదే మార్పు-మినహాయింపు దోషాన్ని $!A(x,y)$గా పునరావృతం చేసి, విశేషీకరించిన రెండవ శాఖలో సాధారణ $q,q'$కు బదులు $q_i,q_j$ను ఉంచింది; తరువాతి స్థితివిన్యాస ప్రదర్శన పాత $m$వ సంకేతాన్ని కూడా ఉంచింది. OLTETURUND-006 మరమ్మతుకు అనుగుణంగా $!A(x',y)$ను వాడి, స్థితులను $q,q'$గా ఏకరీతీకరించి, వ్రాసిన గడి~$m$ వద్ద పాత సంయోజ్యాన్ని మినహాయించాం.}
+
+\item \olref{stay} సందర్భాన్ని అభ్యాసంగా వదిలేస్తాం.
+\end{enumerate}
+$M$ $n$వ అంచెకు ముందే ఆగని ప్రతి~$n$కు
+$!T(M,w) \Entails !C(M,w,n)$ అని చూపాం.
+\end{proof}
+
+\begin{prob}
+\olref[tur][und][ver]{stay} సందర్భాన్ని
+\olref[tur][und][ver]{lem:config} నిరూపణలో పూర్తి చేయండి.
+\end{prob}
+
+\begin{prob}
+$\Obj S_{\sigma_i}(\num{i},\num{n})$, $!A(m,n)$ల నుండి
+$\Obj S_{\sigma_i}(\num{i},\num{n}')$కు \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} ఇవ్వండి
+($i\neq m$, అంటే $i<m$ లేదా $m<i$ అని అనుకోండి).
+\end{prob}
+
+\begin{prob}
+$\lforall[x][(\num{k}<x \lif \Obj S_\TMblank(x,\num{n}'))]$,
+$\lforall[x][x<x']$, మరియు
+$\lforall[x][\lforall[y][\lforall[z][((x<y \land y<z) \lif x<z)]]]$
+ల నుండి
+$\lforall[x][(\num{k}'<x \lif \Obj S_\TMblank(x,\num{n}'))]$కు
+\tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} ఇవ్వండి.
+\end{prob}
+
+\begin{lem}
+\ollabel{lem:valid-if-halt}
+$M$ ఇన్‌పుట్~$w$పై ఆగితే, $!T(M,w) \lif !E(M,w)$ చెల్లుబాటవుతుంది.
+\end{lem}
+
+\begin{proof}
+\olref{lem:config} ప్రకారం, నడకలోని ఏ సమయం~$n$కైనా, సమయం~$n$ వద్ద
+$M$ స్థితివిన్యాసపు వర్ణన~$!C(M,w,n)$ అనేది~$!T(M,w)$ నుండి అనుగమిస్తుంది.
+$M$ $k$ అంచెల తరువాత ఆగుతుందని అనుకుందాం. ఆ సమయంలో అది ఏదో ఒక
+$m\in\Nat$కు గడి~$m$ను చదువుతుంది. అప్పుడు $!C(M,w,k)$, $M$ యొక్క ఒక
+ఆగే స్థితివిన్యాసాన్ని వర్ణిస్తుంది; అంటే, $\delta(q,\sigma)$ నిర్వచితం
+కాక, $\Obj Q_q(\num{m},\num{k})$,
+$\Obj S_\sigma(\num{m},\num{k})$ రెండూ దానిలో సంయోజ్యాలుగా ఉంటాయి.
+అందువల్ల \olref{lem:halt-config-implies-halt} ప్రకారం
+$!C(M,w,k) \Entails !E(M,w)$. కానీ
+$!T(M,w) \Entails !C(M,w,k)$ కనుక, $!T(M,w) \Entails !E(M,w)$; అందువల్ల
+$!T(M,w) \lif !E(M,w)$ చెల్లుబాటవుతుంది.
+\end{proof}
+
+\begin{explain}
+మన వాదన నిర్ధారణను పూర్తి చేయడానికి విపర్యయ దిశను కూడా స్థాపించాలి:
+$!T(M,w) \lif !E(M,w)$ చెల్లుబాటైతే, ఇన్‌పుట్~$w$పై ప్రారంభించినప్పుడు
+$M$ నిజంగానే ఆగుతుంది.
+\end{explain}
+
+\begin{lem}
+\ollabel{lem:halt-if-valid}
+$\Entails !T(M,w) \lif !E(M,w)$ అయితే, $M$ ఇన్‌పుట్~$w$పై ఆగుతుంది.
+\end{lem}
+
+\begin{proof}
+వ్యక్తి క్షేత్రం~$\Nat$ అయి, $\Obj 0$ను~$0$గా, $\prime$ను ఉత్తరవర్తి
+ప్రమేయంగా, $<$ను తక్కువ-కంటే సంబంధంగా, $\Obj Q_q$,~$\Obj S_\sigma$
+విధేయ సంకేతాలను కింది విధంగా అర్థనిర్దేశం చేసే
+$\Lang L_M$-\tetoken{నిర్మాణం}{!!{structure}}~$\Struct M$ను పరిశీలించండి:
+\begin{align*}
+  \Assign{\Obj Q_q}{M} & =
+\Setabs{\tuple{m, n}}{\begin{array}{ll}\text{ఇన్‌పుట్~$w$పై ప్రారంభించిన $M$, $n$ అంచెల తరువాత}\\
+\text{స్థితి $q$లో ఉండి గడి~$m$ను చదువుతోంది}\end{array}} \\
+  \Assign{\Obj S_\sigma}{M} & = \Setabs{\tuple{m, n}}{\begin{array}{ll}
+\text{ఇన్‌పుట్~$w$పై ప్రారంభించి, $n$ అంచెల తరువాత}\\
+\text{$M$ యొక్క గడి~$m$లో సంకేతం~$\sigma$ ఉంది}\end{array}}
+\end{align*}
+మరో మాటలో, ఇన్‌పుట్~$w$పై ప్రారంభించిన $M$ వాస్తవంగా చేసే పనిని అంచె అంచెగా
+వర్ణించేలా \tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M}$ను నిర్మిస్తాం. స్పష్టంగా,
+$\Sat{M}{!T(M,w)}$. $\Entails !T(M,w) \lif !E(M,w)$ అయితే,
+$\Sat{M}{!E(M,w)}$ కూడా; అంటే,
+\[
+\Sat{M}{\lexists[x][\lexists[y][(\bigvee_{\tuple{q, \sigma} \in
+      X}(\Obj Q_q(x, y) \land \Obj S_\sigma(x, y)))]]}.
+\]
+$\Domain{M}=\Nat$ కనుక, $\delta(q,\sigma)$ నిర్వచితం కాని ఏవో $q$,~$\sigma$లకు
+$\Sat{M}{\Obj Q_q(\num{m},\num{n}) \land
+\Obj S_\sigma(\num{m},\num{n})}$ అయ్యే $m$, $n\in\Nat$ తప్పక ఉంటాయి.
+$\Struct M$ నిర్వచనం ప్రకారం, దీని అర్థం
+ఇన్‌పుట్~$w$పై ప్రారంభించిన $M$, $n$ అంచెల తరువాత స్థితి~$q$లో ఉండి
+సంకేతం~$\sigma$ను చదువుతోందనీ, సంక్రమణ ప్రమేయం నిర్వచితం కాదనీ; అంటే
+$M$ ఆగిపోయిందనీ.
+\end{proof}
+
+\end{document}

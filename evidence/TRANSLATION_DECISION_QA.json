@@ -15,20 +15,20 @@
   },
   "coverage": {
     "state": "partial",
-    "source_units": 260,
+    "source_units": 270,
     "corpus_units": 722,
     "reader_units": null
   },
   "counts": {
-    "decisions": 274,
-    "terminology": 68,
-    "source_corrections": 206,
-    "occurrences": 509,
-    "priority_urgent_or_high": 46,
-    "distinct_source_and_target_files_checked": 388,
-    "public_evidence_file_references_checked": 1272,
+    "decisions": 293,
+    "terminology": 69,
+    "source_corrections": 224,
+    "occurrences": 544,
+    "priority_urgent_or_high": 47,
+    "distinct_source_and_target_files_checked": 406,
+    "public_evidence_file_references_checked": 1369,
     "reader_locator_status": {
-      "pending": 509
+      "pending": 544
     }
   },
   "checks": {
@@ -51,27 +51,27 @@
     {
       "path": "evidence/START_HERE.md",
       "bytes": 2341,
-      "sha256": "69de78c583aa988f0bb9b819e092e4c20d9d4cf4e1efabd40a48032be01a24d3"
+      "sha256": "4cea2786823e1b214a2e10f977c03153b7f023acf68165378b512b458573f0d0"
     },
     {
       "path": "evidence/TRANSLATION_DECISIONS_FULL.md",
-      "bytes": 853639,
-      "sha256": "49655ea8dfb294ad443f2127381ed82b4c6b8c141b45edcbaf145e00097b284a"
+      "bytes": 906776,
+      "sha256": "9ced3d9d8874bfce2ec7bbee24c103fa1daf099514e31437ae10632aad1243c6"
     },
     {
       "path": "evidence/PRIORITY_REVIEW.md",
-      "bytes": 81835,
-      "sha256": "69f9867c5f7a715a2c9b40ca6801bc23f6fe76986c288def9d5e475898a4952f"
+      "bytes": 84839,
+      "sha256": "fdae97b0c3b3f5e894e9d31924ae2b3545e4124353c1706302b4b272f8ab1a16"
     },
     {
       "path": "evidence/DECISION_OCCURRENCES.csv",
-      "bytes": 795563,
-      "sha256": "a386dbc0b78bee69203f64e2b94c15edf535c438bb76079544f1a5fb9e12f004"
+      "bytes": 846964,
+      "sha256": "59eb9a37d521c35786a3bac6c65b9e3399520f9d558cbd3f2d47ba9895f8f389"
     },
     {
       "path": "evidence/DECISIONS.json",
-      "bytes": 4210716,
-      "sha256": "09900a7c2e87d5c784840320e4a38fd4ea2ca9804ee19379b2ab1b095df97284"
+      "bytes": 4485672,
+      "sha256": "563934395538b9b4a4d367fc9fa66cc4bfdcddacf27c8b4af7c6946449c8bfda"
     },
     {
       "path": "evidence/translation-decision.schema.json",

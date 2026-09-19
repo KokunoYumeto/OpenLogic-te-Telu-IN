@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 260 of 722 draft units**. This view selects 248 of 274 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 270 of 722 draft units**. This view selects 267 of 293 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -423,6 +423,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0254; turing-machines/machines-computations/introduction; translation/content/turing-machines/machines-computations/introduction.tex:12-25; printed/PDF page pending; OLP-0255; turing-machines/machines-computations/representing-tms; translation/content/turing-machines/machines-computations/representing-tms.tex:12-22; printed/PDF page pending; OLP-0256; turing-machines/machines-computations/turing-machines; translation/content/turing-machines/machines-computations/turing-machines.tex:21-32; printed/PDF page pending; OLP-0257; turing-machines/machines-computations/configuration; translation/content/turing-machines/machines-computations/configuration.tex:24-36; printed/PDF page pending; OLP-0257; turing-machines/machines-computations/configuration; translation/content/turing-machines/machines-computations/configuration.tex:82-87; printed/PDF page pending; OLP-0258; turing-machines/machines-computations/unary-numbers; translation/content/turing-machines/machines-computations/unary-numbers.tex:9-10; printed/PDF page pending; OLP-0259; turing-machines/machines-computations/halting-states; translation/content/turing-machines/machines-computations/halting-states.tex:12-15; printed/PDF page pending; OLP-0260; turing-machines/machines-computations/disciplined-machines; translation/content/turing-machines/machines-computations/disciplined-machines.tex:25-34; printed/PDF page pending; OLP-0261; turing-machines/machines-computations/combining-machines; translation/content/turing-machines/machines-computations/combining-machines.tex:23-48; printed/PDF page pending; OLP-0262; turing-machines/machines-computations/variants; translation/content/turing-machines/machines-computations/variants.tex:27-36; printed/PDF page pending; OLP-0263; turing-machines/machines-computations/church-turing-thesis; translation/content/turing-machines/machines-computations/church-turing-thesis.tex:12-19; printed/PDF page pending
 
 - Please double-check: Please double-check whether “ట్యూరింగ్ యంత్రం / ట్యూరింగ్ యంత్ర గణన / గణనా నమూనా / టేపు / చదువు--వ్రాత శీర్షం / గడి / స్థితి / స్థితి రేఖాచిత్రం / స్థితివిన్యాసం / నడక / వర్ణమాల / నిర్దేశ సమితి / సంక్రమణ ప్రమేయం / ప్రారంభ స్థితి / ఆగే స్థితి / తిరస్కరణ స్థితి / ఏకాంక ప్రాతినిధ్యం / ద్విగుణక యంత్రం / క్రమశిక్షిత యంత్రం / సంయుక్త యంత్రం / అనిర్ణీత ట్యూరింగ్ యంత్రం / ప్రభావక ప్రక్రియ / చర్చ్--ట్యూరింగ్ సిద్ధాంతప్రతిపాదన / సూడోకోడ్” is idiomatic and technically standard for “Turing machine / Turing-machine computation / model of computation / tape / read-write head / square / state / state diagram / configuration / run / alphabet / instruction set / transition function / initial state / halting state / reject state / unary representation / doubler / disciplined machine / combined machine / nondeterministic Turing machine / effective procedure / Church--Turing thesis / pseudocode” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T069 — undecidability / enumeration of Turing machines / standard Turing machine / index / universal Turing machine / halting function and Halting Problem / decision problem / representation of computation / finite satisfiability / semi-decidability / Trakhtenbrot's theorem
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: అనిర్ణయనీయత / ట్యూరింగ్ యంత్రాల లెక్కింపు / ప్రామాణిక ట్యూరింగ్ యంత్రం / సూచిక / సార్వత్రిక ట్యూరింగ్ యంత్రం / ఆగే ప్రమేయం, ఆగే సమస్య / నిర్ణయ సమస్య / గణనకు మొదటిస్థాయి ప్రాతినిధ్యం / పరిమిత సంతృప్తిపరచదగినత / అర్ధ-నిర్ణయించదగినత / ట్రాఖ్టెన్‌బ్రోట్ సిద్ధాంతం
+
+- Occurrences: OLP-0266; turing-machines/undecidability/enumerating-tms; translation/content/turing-machines/undecidability/enumerating-tms.tex:9-10; printed/PDF page pending; OLP-0267; turing-machines/undecidability/universal-tm; translation/content/turing-machines/undecidability/universal-tm.tex:23-26; printed/PDF page pending; OLP-0267; turing-machines/undecidability/universal-tm; translation/content/turing-machines/undecidability/universal-tm.tex:52-61; printed/PDF page pending; OLP-0268; turing-machines/undecidability/halting-problem; translation/content/turing-machines/undecidability/halting-problem.tex:35-38; printed/PDF page pending; OLP-0269; turing-machines/undecidability/decision-problem; translation/content/turing-machines/undecidability/decision-problem.tex:9-10; printed/PDF page pending; OLP-0270; turing-machines/undecidability/representing-tms; translation/content/turing-machines/undecidability/representing-tms.tex:9-10; printed/PDF page pending; OLP-0272; turing-machines/undecidability/unsolvability-decision-problem; translation/content/turing-machines/undecidability/unsolvability-decision-problem.tex:71-77; printed/PDF page pending; OLP-0273; turing-machines/undecidability/trakhtenbrot; translation/content/turing-machines/undecidability/trakhtenbrot.tex:222-226; printed/PDF page pending
+
+- Please double-check: Please double-check whether “అనిర్ణయనీయత / ట్యూరింగ్ యంత్రాల లెక్కింపు / ప్రామాణిక ట్యూరింగ్ యంత్రం / సూచిక / సార్వత్రిక ట్యూరింగ్ యంత్రం / ఆగే ప్రమేయం, ఆగే సమస్య / నిర్ణయ సమస్య / గణనకు మొదటిస్థాయి ప్రాతినిధ్యం / పరిమిత సంతృప్తిపరచదగినత / అర్ధ-నిర్ణయించదగినత / ట్రాఖ్టెన్‌బ్రోట్ సిద్ధాంతం” is idiomatic and technically standard for “undecidability / enumeration of Turing machines / standard Turing machine / index / universal Turing machine / halting function and Halting Problem / decision problem / representation of computation / finite satisfiability / semi-decidability / Trakhtenbrot's theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -2483,3 +2493,183 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0261; turing-machines/machines-computations/combining-machines; translation/content/turing-machines/machines-computations/combining-machines.tex:71-86; printed/PDF page pending; OLP-0261; turing-machines/machines-computations/combining-machines; translation/content/turing-machines/machines-computations/combining-machines.tex:94-121; printed/PDF page pending; OLP-0261; turing-machines/machines-computations/combining-machines; translation/content/turing-machines/machines-computations/combining-machines.tex:123-147; printed/PDF page pending
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTETURMAC-008 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-001 — OLTETURUND-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: rendered the intended cannot-be-effectively-decided claim; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0265; turing-machines/undecidability/introduction; translation/content/turing-machines/undecidability/introduction.tex:43-51; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-001 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-002 — OLTETURUND-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: referred simply to machine M; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0265; turing-machines/undecidability/introduction; translation/content/turing-machines/undecidability/introduction.tex:69-78; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-002 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-003 — OLTETURUND-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: asked why every Turing-computable function is computed by a standard machine; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0266; turing-machines/undecidability/enumerating-tms; translation/content/turing-machines/undecidability/enumerating-tms.tex:138-145; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-003 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-004 — OLTETURUND-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: completed the first-element premise and retained the erasure-and-halt conclusion; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0267; turing-machines/undecidability/universal-tm; translation/content/turing-machines/undecidability/universal-tm.tex:42-50; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-004 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-005 — OLTETURUND-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: stated h's values and reserved halting language for a computing machine; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0269; turing-machines/undecidability/decision-problem; translation/content/turing-machines/undecidability/decision-problem.tex:27-34; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-005 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-006 — OLTETURUND-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used A(x',y) so all squares except the written origin square are preserved; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0270; turing-machines/undecidability/representing-tms; translation/content/turing-machines/undecidability/representing-tms.tex:132-147; printed/PDF page pending; OLP-0270; turing-machines/undecidability/representing-tms; translation/content/turing-machines/undecidability/representing-tms.tex:149-167; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-006 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-007 — OLTETURUND-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored !T(M,w); adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0271; turing-machines/undecidability/verification; translation/content/turing-machines/undecidability/verification.tex:31-43; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-007 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-008 — OLTETURUND-008
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: named machine M rather than sentence metavariable T; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0271; turing-machines/undecidability/verification; translation/content/turing-machines/undecidability/verification.tex:45-58; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-008 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-009 — OLTETURUND-009
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used chosen q,sigma as the premise, distinct bound q',sigma' in the disjunction and restored Obj; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0271; turing-machines/undecidability/verification; translation/content/turing-machines/undecidability/verification.tex:80-100; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-009 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-010 — OLTETURUND-010
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used the exact not-halted-before-n domain of the run throughout; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0271; turing-machines/undecidability/verification; translation/content/turing-machines/undecidability/verification.tex:107-111; printed/PDF page pending; OLP-0271; turing-machines/undecidability/verification; translation/content/turing-machines/undecidability/verification.tex:113-115; printed/PDF page pending; OLP-0271; turing-machines/undecidability/verification; translation/content/turing-machines/undecidability/verification.tex:117-119; printed/PDF page pending; OLP-0271; turing-machines/undecidability/verification; translation/content/turing-machines/undecidability/verification.tex:237-241; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-010 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-011 — OLTETURUND-011
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used n>=0 so the step covers the transition from the base case; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0271; turing-machines/undecidability/verification; translation/content/turing-machines/undecidability/verification.tex:121-123; printed/PDF page pending; OLP-0271; turing-machines/undecidability/verification; translation/content/turing-machines/undecidability/verification.tex:130-131; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-011 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-012 — OLTETURUND-012
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: made the unchanged conjunction explicitly range over i not equal to m; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0271; turing-machines/undecidability/verification; translation/content/turing-machines/undecidability/verification.tex:162-176; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-012 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-013 — OLTETURUND-013
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used A(x',y), q/q' and excluded the old written-square conjunct; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0271; turing-machines/undecidability/verification; translation/content/turing-machines/undecidability/verification.tex:207-245; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-013 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-014 — OLTETURUND-014
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used n=max(k+1,len(w)) in both finite-model constructions; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0273; turing-machines/undecidability/trakhtenbrot; translation/content/turing-machines/undecidability/trakhtenbrot.tex:28-51; printed/PDF page pending; OLP-0273; turing-machines/undecidability/trakhtenbrot; translation/content/turing-machines/undecidability/trakhtenbrot.tex:167-183; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-014 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-015 — OLTETURUND-015
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored q_0 and M'' in the one-state M'' exercise; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0273; turing-machines/undecidability/trakhtenbrot; translation/content/turing-machines/undecidability/trakhtenbrot.tex:66-85; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-015 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-016 — OLTETURUND-016
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: added B(y') to the nonzero branch and used A(x',y); adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0273; turing-machines/undecidability/trakhtenbrot; translation/content/turing-machines/undecidability/trakhtenbrot.tex:112-135; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-016 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-017 — OLTETURUND-017
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used !T' and !E throughout and retained the corrected finite bound; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0273; turing-machines/undecidability/trakhtenbrot; translation/content/turing-machines/undecidability/trakhtenbrot.tex:167-183; printed/PDF page pending; OLP-0273; turing-machines/undecidability/trakhtenbrot; translation/content/turing-machines/undecidability/trakhtenbrot.tex:185-188; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-017 is mathematically precise and idiomatic.
+
+## REV-OLTETURUND-018 — OLTETURUND-018
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: assumed a model of !T' and !E and restricted B(num(n)) to n>0; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0273; turing-machines/undecidability/trakhtenbrot; translation/content/turing-machines/undecidability/trakhtenbrot.tex:195-199; printed/PDF page pending; OLP-0273; turing-machines/undecidability/trakhtenbrot; translation/content/turing-machines/undecidability/trakhtenbrot.tex:201-214; printed/PDF page pending; OLP-0273; turing-machines/undecidability/trakhtenbrot; translation/content/turing-machines/undecidability/trakhtenbrot.tex:216-220; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-018 is mathematically precise and idiomatic.
