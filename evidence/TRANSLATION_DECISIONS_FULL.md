@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **270 of 722 source units drafted**. This readable view contains all 293 decisions and 544 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **279 of 722 source units drafted**. This readable view contains all 308 decisions and 570 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -1973,6 +1973,42 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T069-OCC-006; OLP-0270; OLP-0270-B004; source upstream/content/turing-machines/undecidability/representing-tms.tex:9-10 bytes 160-226 SHA-256 9b07ae3b7dc8802daae69390c7c6ca17b1550a0c99b8d38a16732406b28a58c5; target translation/content/turing-machines/undecidability/representing-tms.tex:9-10 bytes 160-290 SHA-256 80fc7e6b6b6ce03d935e7401fe1eecd5f050c0dba120670781cca0bf20698ff3; reader page pending.
   - te-Telu-IN-TE-T069-OCC-007; OLP-0272; OLP-0272-B012; source upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:70-77 bytes 3049-3373 SHA-256 c609e9a9a9dce039d6ef7063d2e604269790462b6c226eec82329128873eab6e; target translation/content/turing-machines/undecidability/unsolvability-decision-problem.tex:71-77 bytes 6932-7733 SHA-256 b0a5461a6f898cee734f75e13fda81105d3cee05b4b3f4c64d6486eacd9d3433; reader page pending.
   - te-Telu-IN-TE-T069-OCC-008; OLP-0273; OLP-0273-B019; source upstream/content/turing-machines/undecidability/trakhtenbrot.tex:223-227 bytes 9576-9776 SHA-256 bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802; target translation/content/turing-machines/undecidability/trakhtenbrot.tex:222-226 bytes 21037-21528 SHA-256 ae1edca39ccb6d8652238554b15c52eba2c6fe1b32a789605392e2c41fc96b33; reader page pending.
+
+## te-Telu-IN-TE-T070 — incompleteness / Hilbert's program / theory / standard model of arithmetic / true arithmetic / Robinson's Q / Peano arithmetic / induction schema / complete and decidable theory / axiomatizable / computably enumerable / representation of computable functions and decidable relations / independent sentence / Gödel sentence / arithmetization of syntax / provability predicate / consistency statement / Presburger arithmetic
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: అసంపూర్ణత / హిల్బర్ట్ కార్యక్రమం / సిద్ధాంతం / అంకగణితపు ప్రామాణిక నమూనా / నిజ అంకగణితం / రాబిన్సన్ Q / పియానో అంకగణితం / ఆగమన పథకం / సంపూర్ణ, నిర్ణయించదగిన సిద్ధాంతం / స్వీకృతీకరించదగిన / గణనీయంగా లెక్కించదగిన / గణనీయ ప్రమేయాలు, నిర్ణయించదగిన సంబంధాలకు ప్రాతినిధ్యం / స్వతంత్ర వాక్యం / గ్యోడెల్ వాక్యం / వాక్యనిర్మాణపు అంకగణితీకరణ / నిరూప్యతా విధేయం / అవైరుధ్య వాక్యం / ప్రెస్‌బర్గర్ అంకగణితం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “incompleteness / Hilbert's program / theory / standard model of arithmetic / true arithmetic / Robinson's Q / Peano arithmetic / induction schema / complete and decidable theory / axiomatizable / computably enumerable / representation of computable functions and decidable relations / independent sentence / Gödel sentence / arithmetization of syntax / provability predicate / consistency statement / Presburger arithmetic” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low semantic uncertainty because the chapter explicitly defines theories, arithmetic systems, completeness, decidability, axiomatizability, computable enumerability and representation; medium to high nomenclatural uncertainty for representability, arithmetization and provability compounds pending independent native review
+
+- Rationale: TE-P005 supports native natural-number exposition; TE-P008 and TE-P010--TE-P011 support set, ordered-pair, relation and function language; TE-P018 and TE-P023--TE-P033 support formal-logic, derivation, predicate, quantifier, consistency and proof register. TE-P024, TE-P026 and TE-P027 were visually rechecked for this decision. The witnesses do not directly attest Hilbert's program, Robinson's Q, representability, arithmetization, provability predicates or Gödel's incompleteness theorems. The frozen definitions, induction scheme, diagonal argument and theorem statements in OLP-0274--OLP-0279 control those exact senses; TE-T011, TE-T020, TE-T024, TE-T028, TE-T034, TE-T047, TE-T058 and TE-T069 supply earlier reversible choices. హిల్బర్ట్, రాబిన్సన్, పియానో, గ్యోడెల్ and ప్రెస్‌బర్గర్ are source names or eponyms. Q, PA, TA, language symbols and formula metavariables remain protected formal notation; no unexplained English technical headword remains in reader-facing prose
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P026 [checked_context_only], PDF page 88; printed page 81; Consistency section; Direct consistency/inconsistency terminology; not direct completeness terminology. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P028 [checked_context_only], PDF page 92; printed page 85; Unary predicates, binary relations and quantifier classification; Direct quantifier taxonomy and predicate/relation context. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C005:TE-P033 [checked_context_only], PDF page 40; printed page 33; Inference section heading and definition; Direct inference and explanatory register; derivation headword is separately witnessed at TE-P024.
+
+- Alternatives: leave the specialized incompleteness vocabulary in untranslated English reader prose [rejected: rejected] | collapse completeness, decidability and axiomatizability into one property [rejected: rejected because the chapter distinguishes them] | claim direct native attestation for Robinson’s Q, representability, provability predicates or Gödel’s theorems [rejected: rejected because the frozen definitions and proofs control those senses]
+
+- Review question: Please double-check whether “అసంపూర్ణత / హిల్బర్ట్ కార్యక్రమం / సిద్ధాంతం / అంకగణితపు ప్రామాణిక నమూనా / నిజ అంకగణితం / రాబిన్సన్ Q / పియానో అంకగణితం / ఆగమన పథకం / సంపూర్ణ, నిర్ణయించదగిన సిద్ధాంతం / స్వీకృతీకరించదగిన / గణనీయంగా లెక్కించదగిన / గణనీయ ప్రమేయాలు, నిర్ణయించదగిన సంబంధాలకు ప్రాతినిధ్యం / స్వతంత్ర వాక్యం / గ్యోడెల్ వాక్యం / వాక్యనిర్మాణపు అంకగణితీకరణ / నిరూప్యతా విధేయం / అవైరుధ్య వాక్యం / ప్రెస్‌బర్గర్ అంకగణితం” is idiomatic and technically standard for “incompleteness / Hilbert's program / theory / standard model of arithmetic / true arithmetic / Robinson's Q / Peano arithmetic / induction schema / complete and decidable theory / axiomatizable / computably enumerable / representation of computable functions and decidable relations / independent sentence / Gödel sentence / arithmetization of syntax / provability predicate / consistency statement / Presburger arithmetic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T070-OCC-001; OLP-0276; OLP-0276-B022; source upstream/content/incompleteness/introduction/historical-background.tex:209-221 bytes 11660-12539 SHA-256 24c4a36e9f95064267c6bd001f81091cbc7f963c25e32a6d3c8630483b76d3e6; target translation/content/incompleteness/introduction/historical-background.tex:176-185 bytes 29619-31764 SHA-256 a969dc22874dde259d7fb45430fdd4bf22cb112d47092dd97374422aeb092d27; reader page pending.
+  - te-Telu-IN-TE-T070-OCC-002; OLP-0277; OLP-0277-B007; source upstream/content/incompleteness/introduction/definitions.tex:34-38 bytes 1501-1663 SHA-256 bca709e14f7652027776c1a55e484466d5fe4e2dcc91390f598d374ed70cee71; target translation/content/incompleteness/introduction/definitions.tex:31-35 bytes 3226-3536 SHA-256 58b16f26ac9802cf71315374045090585f7249234d0a79505f2ab14cef67cc6b; reader page pending.
+  - te-Telu-IN-TE-T070-OCC-003; OLP-0277; OLP-0277-B009; source upstream/content/incompleteness/introduction/definitions.tex:45-57 bytes 1930-2451 SHA-256 bca709e14f7652027776c1a55e484466d5fe4e2dcc91390f598d374ed70cee71; target translation/content/incompleteness/introduction/definitions.tex:43-55 bytes 4290-4980 SHA-256 58b16f26ac9802cf71315374045090585f7249234d0a79505f2ab14cef67cc6b; reader page pending.
+  - te-Telu-IN-TE-T070-OCC-004; OLP-0277; OLP-0277-B015; source upstream/content/incompleteness/introduction/definitions.tex:103-121 bytes 4426-5357 SHA-256 bca709e14f7652027776c1a55e484466d5fe4e2dcc91390f598d374ed70cee71; target translation/content/incompleteness/introduction/definitions.tex:99-119 bytes 9048-10727 SHA-256 58b16f26ac9802cf71315374045090585f7249234d0a79505f2ab14cef67cc6b; reader page pending.
+  - te-Telu-IN-TE-T070-OCC-005; OLP-0277; OLP-0277-B016; source upstream/content/incompleteness/introduction/definitions.tex:123-130 bytes 5358-5667 SHA-256 bca709e14f7652027776c1a55e484466d5fe4e2dcc91390f598d374ed70cee71; target translation/content/incompleteness/introduction/definitions.tex:121-131 bytes 10728-11957 SHA-256 58b16f26ac9802cf71315374045090585f7249234d0a79505f2ab14cef67cc6b; reader page pending.
+  - te-Telu-IN-TE-T070-OCC-006; OLP-0277; OLP-0277-B027; source upstream/content/incompleteness/introduction/definitions.tex:201-204 bytes 8634-8749 SHA-256 bca709e14f7652027776c1a55e484466d5fe4e2dcc91390f598d374ed70cee71; target translation/content/incompleteness/introduction/definitions.tex:200-203 bytes 18061-18423 SHA-256 58b16f26ac9802cf71315374045090585f7249234d0a79505f2ab14cef67cc6b; reader page pending.
+  - te-Telu-IN-TE-T070-OCC-007; OLP-0277; OLP-0277-B033; source upstream/content/incompleteness/introduction/definitions.tex:269-278 bytes 12099-12471 SHA-256 bca709e14f7652027776c1a55e484466d5fe4e2dcc91390f598d374ed70cee71; target translation/content/incompleteness/introduction/definitions.tex:263-273 bytes 26106-26732 SHA-256 58b16f26ac9802cf71315374045090585f7249234d0a79505f2ab14cef67cc6b; reader page pending.
+  - te-Telu-IN-TE-T070-OCC-008; OLP-0278; OLP-0278-B009; source upstream/content/incompleteness/introduction/overview.tex:39-51 bytes 1564-2424 SHA-256 4391b197866deaf9b67d1aa3ab870d0d11eb9d30e73475e56ee757a4c0fef0a0; target translation/content/incompleteness/introduction/overview.tex:40-52 bytes 4156-6028 SHA-256 0efad2f670762e7c06a9c4e131779f7a246ea7ce5b9034f785885aa58ec318c6; reader page pending.
+  - te-Telu-IN-TE-T070-OCC-009; OLP-0278; OLP-0278-B010; source upstream/content/incompleteness/introduction/overview.tex:53-65 bytes 2425-3269 SHA-256 4391b197866deaf9b67d1aa3ab870d0d11eb9d30e73475e56ee757a4c0fef0a0; target translation/content/incompleteness/introduction/overview.tex:54-65 bytes 6029-7894 SHA-256 0efad2f670762e7c06a9c4e131779f7a246ea7ce5b9034f785885aa58ec318c6; reader page pending.
+  - te-Telu-IN-TE-T070-OCC-010; OLP-0278; OLP-0278-B012; source upstream/content/incompleteness/introduction/overview.tex:84-98 bytes 4313-5296 SHA-256 4391b197866deaf9b67d1aa3ab870d0d11eb9d30e73475e56ee757a4c0fef0a0; target translation/content/incompleteness/introduction/overview.tex:85-99 bytes 10952-13182 SHA-256 0efad2f670762e7c06a9c4e131779f7a246ea7ce5b9034f785885aa58ec318c6; reader page pending.
+  - te-Telu-IN-TE-T070-OCC-011; OLP-0279; OLP-0279-B021; source upstream/content/incompleteness/introduction/undecidability.tex:127-135 bytes 5386-5990 SHA-256 ceeb4a161ad8064be0bd024febf2061d9fdfbf8b748293cb28c08c397cfa55f4; target translation/content/incompleteness/introduction/undecidability.tex:150-157 bytes 15101-16732 SHA-256 f59416b2e80c80f3422e68abb83e23a4b8315a8a95c666b6fd676a92fe643a14; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -7872,3 +7908,368 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-OLTETURUND-018-OCC-001; OLP-0273; OLP-0273-B016; source upstream/content/turing-machines/undecidability/trakhtenbrot.tex:197-201 bytes 8339-8603 SHA-256 bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802; target translation/content/turing-machines/undecidability/trakhtenbrot.tex:195-199 bytes 17806-18356 SHA-256 ae1edca39ccb6d8652238554b15c52eba2c6fe1b32a789605392e2c41fc96b33; reader page pending.
   - te-Telu-IN-OLTETURUND-018-OCC-002; OLP-0273; OLP-0273-B017; source upstream/content/turing-machines/undecidability/trakhtenbrot.tex:203-215 bytes 8606-9369 SHA-256 bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802; target translation/content/turing-machines/undecidability/trakhtenbrot.tex:201-214 bytes 18357-20666 SHA-256 ae1edca39ccb6d8652238554b15c52eba2c6fe1b32a789605392e2c41fc96b33; reader page pending.
   - te-Telu-IN-OLTETURUND-018-OCC-003; OLP-0273; OLP-0273-B018; source upstream/content/turing-machines/undecidability/trakhtenbrot.tex:217-220 bytes 9370-9564 SHA-256 bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802; target translation/content/turing-machines/undecidability/trakhtenbrot.tex:216-220 bytes 20667-21036 SHA-256 ae1edca39ccb6d8652238554b15c52eba2c6fe1b32a789605392e2c41fc96b33; reader page pending.
+
+## te-Telu-IN-OLTEINCINT-001 — OLTEINCINT-001: confirmed singular plural mismatch
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used the intended plural logical assumptions; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed singular plural mismatch at lines 51-55, Frege's logical assumptions, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEINCINT-20260920:OLTEINCINT-001 [checked_supports], content/incompleteness/introduction/historical-background.tex; lines 51-55, Frege's logical assumptions; confirmed_singular_plural_mismatch; used the intended plural logical assumptions; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEINCINT-001 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEINCINT-001-OCC-001; OLP-0276; OLP-0276-B010; source upstream/content/incompleteness/introduction/historical-background.tex:51-55 bytes 2276-2595 SHA-256 24c4a36e9f95064267c6bd001f81091cbc7f963c25e32a6d3c8630483b76d3e6; target translation/content/incompleteness/introduction/historical-background.tex:47-52 bytes 5700-7066 SHA-256 a969dc22874dde259d7fb45430fdd4bf22cb112d47092dd97374422aeb092d27; reader page pending.
+
+## te-Telu-IN-OLTEINCINT-002 — OLTEINCINT-002: confirmed missing plural inflection
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used the intended plural mathematical objects; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing plural inflection at lines 107-110, Kronecker's representation claim, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEINCINT-20260920:OLTEINCINT-002 [checked_supports], content/incompleteness/introduction/historical-background.tex; lines 107-110, Kronecker's representation claim; confirmed_missing_plural_inflection; used the intended plural mathematical objects; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEINCINT-002 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEINCINT-002-OCC-001; OLP-0276; OLP-0276-B014; source upstream/content/incompleteness/introduction/historical-background.tex:107-110 bytes 5640-5899 SHA-256 24c4a36e9f95064267c6bd001f81091cbc7f963c25e32a6d3c8630483b76d3e6; target translation/content/incompleteness/introduction/historical-background.tex:89-94 bytes 13507-14688 SHA-256 a969dc22874dde259d7fb45430fdd4bf22cb112d47092dd97374422aeb092d27; reader page pending.
+
+## te-Telu-IN-OLTEINCINT-003 — OLTEINCINT-003: confirmed subject verb agreement
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used a complete past-tense contribution claim; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed subject verb agreement at lines 117-119, Cantor and Dedekind's historical contribution, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEINCINT-20260920:OLTEINCINT-003 [checked_supports], content/incompleteness/introduction/historical-background.tex; lines 117-119, Cantor and Dedekind's historical contribution; confirmed_subject_verb_agreement; used a complete past-tense contribution claim; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEINCINT-003 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEINCINT-003-OCC-001; OLP-0276; OLP-0276-B015; source upstream/content/incompleteness/introduction/historical-background.tex:117-119 bytes 6250-6460 SHA-256 24c4a36e9f95064267c6bd001f81091cbc7f963c25e32a6d3c8630483b76d3e6; target translation/content/incompleteness/introduction/historical-background.tex:98-103 bytes 15304-16465 SHA-256 a969dc22874dde259d7fb45430fdd4bf22cb112d47092dd97374422aeb092d27; reader page pending.
+
+## te-Telu-IN-OLTEINCINT-004 — OLTEINCINT-004: confirmed overbroad incompleteness claim
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: added the controlling consistency, effective-axiomatization and strength hypotheses and limited the consistency consequence to non-provability; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed overbroad incompleteness claim at lines 203-207, summary of Gödel's incompleteness theorems, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEINCINT-20260920:OLTEINCINT-004 [checked_supports], content/incompleteness/introduction/historical-background.tex; lines 203-207, summary of Gödel's incompleteness theorems; confirmed_overbroad_incompleteness_claim; added the controlling consistency, effective-axiomatization and strength hypotheses and limited the consistency consequence to non-provability; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEINCINT-004 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEINCINT-004-OCC-001; OLP-0276; OLP-0276-B021; source upstream/content/incompleteness/introduction/historical-background.tex:203-207 bytes 11361-11659 SHA-256 24c4a36e9f95064267c6bd001f81091cbc7f963c25e32a6d3c8630483b76d3e6; target translation/content/incompleteness/introduction/historical-background.tex:167-173 bytes 27556-28669 SHA-256 a969dc22874dde259d7fb45430fdd4bf22cb112d47092dd97374422aeb092d27; reader page pending.
+
+## te-Telu-IN-OLTEINCINT-005 — OLTEINCINT-005: confirmed subject verb agreement
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: stated directly that the eight sentences are the axioms; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed subject verb agreement at lines 116-120, axioms of Robinson's Q, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEINCINT-20260920:OLTEINCINT-005 [checked_supports], content/incompleteness/introduction/definitions.tex; lines 116-120, axioms of Robinson's Q; confirmed_subject_verb_agreement; stated directly that the eight sentences are the axioms; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEINCINT-005 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEINCINT-005-OCC-001; OLP-0277; OLP-0277-B015; source upstream/content/incompleteness/introduction/definitions.tex:116-120 bytes 5146-5346 SHA-256 bca709e14f7652027776c1a55e484466d5fe4e2dcc91390f598d374ed70cee71; target translation/content/incompleteness/introduction/definitions.tex:113-119 bytes 10065-10727 SHA-256 58b16f26ac9802cf71315374045090585f7249234d0a79505f2ab14cef67cc6b; reader page pending.
+
+## te-Telu-IN-OLTEINCINT-006 — OLTEINCINT-006: confirmed induction parameter omission
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored y_1 through y_n in the base, successor and conclusion occurrences of A; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed induction parameter omission at lines 123-130, general induction schema, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEINCINT-20260920:OLTEINCINT-006 [checked_supports], content/incompleteness/introduction/definitions.tex; lines 123-130, general induction schema; confirmed_induction_parameter_omission; restored y_1 through y_n in the base, successor and conclusion occurrences of A; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEINCINT-006 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEINCINT-006-OCC-001; OLP-0277; OLP-0277-B016; source upstream/content/incompleteness/introduction/definitions.tex:123-130 bytes 5358-5667 SHA-256 bca709e14f7652027776c1a55e484466d5fe4e2dcc91390f598d374ed70cee71; target translation/content/incompleteness/introduction/definitions.tex:121-131 bytes 10728-11957 SHA-256 58b16f26ac9802cf71315374045090585f7249234d0a79505f2ab14cef67cc6b; reader page pending.
+
+## te-Telu-IN-OLTEINCINT-007 — OLTEINCINT-007: confirmed pronoun number mismatch
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used the plural possessive sense; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed pronoun number mismatch at lines 248-255, sufficient strength of theories, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEINCINT-20260920:OLTEINCINT-007 [checked_supports], content/incompleteness/introduction/definitions.tex; lines 248-255, sufficient strength of theories; confirmed_pronoun_number_mismatch; used the plural possessive sense; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEINCINT-007 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEINCINT-007-OCC-001; OLP-0277; OLP-0277-B032; source upstream/content/incompleteness/introduction/definitions.tex:248-255 bytes 10774-11315 SHA-256 bca709e14f7652027776c1a55e484466d5fe4e2dcc91390f598d374ed70cee71; target translation/content/incompleteness/introduction/definitions.tex:254-262 bytes 24614-26106 SHA-256 58b16f26ac9802cf71315374045090585f7249234d0a79505f2ab14cef67cc6b; reader page pending.
+
+## te-Telu-IN-OLTEINCINT-008 — OLTEINCINT-008: confirmed missing controlling theory phrase
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored the controlling in-Gamma phrase in the introductory sentence; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing controlling theory phrase at lines 280-288, representation of relations, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEINCINT-20260920:OLTEINCINT-008 [checked_supports], content/incompleteness/introduction/definitions.tex; lines 280-288, representation of relations; confirmed_missing_controlling_theory_phrase; restored the controlling in-Gamma phrase in the introductory sentence; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEINCINT-008 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEINCINT-008-OCC-001; OLP-0277; OLP-0277-B034; source upstream/content/incompleteness/introduction/definitions.tex:280-288 bytes 12472-12804 SHA-256 bca709e14f7652027776c1a55e484466d5fe4e2dcc91390f598d374ed70cee71; target translation/content/incompleteness/introduction/definitions.tex:275-285 bytes 26733-27936 SHA-256 58b16f26ac9802cf71315374045090585f7249234d0a79505f2ab14cef67cc6b; reader page pending.
+
+## te-Telu-IN-OLTEINCINT-009 — OLTEINCINT-009: confirmed merged verb phrases
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: stated that the proof was generalized to depend only on the isolated features; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed merged verb phrases at lines 27-30, generalization of Gödel's proof, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEINCINT-20260920:OLTEINCINT-009 [checked_supports], content/incompleteness/introduction/overview.tex; lines 27-30, generalization of Gödel's proof; confirmed_merged_verb_phrases; stated that the proof was generalized to depend only on the isolated features; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEINCINT-009 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEINCINT-009-OCC-001; OLP-0278; OLP-0278-B007; source upstream/content/incompleteness/introduction/overview.tex:27-30 bytes 1025-1294 SHA-256 4391b197866deaf9b67d1aa3ab870d0d11eb9d30e73475e56ee757a4c0fef0a0; target translation/content/incompleteness/introduction/overview.tex:25-30 bytes 2135-3605 SHA-256 0efad2f670762e7c06a9c4e131779f7a246ea7ce5b9034f785885aa58ec318c6; reader page pending.
+
+## te-Telu-IN-OLTEINCINT-010 — OLTEINCINT-010: confirmed infinitive verb form
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: preserved the raw OpenLogic token identity and rendered the correct infinitive sense; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed infinitive verb form at lines 71-76, aim of representing functions and relations, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEINCINT-20260920:OLTEINCINT-010 [checked_supports], content/incompleteness/introduction/overview.tex; lines 71-76, aim of representing functions and relations; confirmed_infinitive_verb_form; preserved the raw OpenLogic token identity and rendered the correct infinitive sense; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEINCINT-010 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEINCINT-010-OCC-001; OLP-0278; OLP-0278-B011; source upstream/content/incompleteness/introduction/overview.tex:71-76 bytes 3542-3936 SHA-256 4391b197866deaf9b67d1aa3ab870d0d11eb9d30e73475e56ee757a4c0fef0a0; target translation/content/incompleteness/introduction/overview.tex:72-82 bytes 8693-10431 SHA-256 0efad2f670762e7c06a9c4e131779f7a246ea7ce5b9034f785885aa58ec318c6; reader page pending.
+
+## te-Telu-IN-OLTEINCINT-011 — OLTEINCINT-011: confirmed subject verb agreement
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used the intended singular agreement; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed subject verb agreement at lines 13-16, arithmetization requirement, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEINCINT-20260920:OLTEINCINT-011 [checked_supports], content/incompleteness/introduction/undecidability.tex; lines 13-16, arithmetization requirement; confirmed_subject_verb_agreement; used the intended singular agreement; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEINCINT-011 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEINCINT-011-OCC-001; OLP-0279; OLP-0279-B006; source upstream/content/incompleteness/introduction/undecidability.tex:13-16 bytes 226-501 SHA-256 ceeb4a161ad8064be0bd024febf2061d9fdfbf8b748293cb28c08c397cfa55f4; target translation/content/incompleteness/introduction/undecidability.tex:13-18 bytes 270-1473 SHA-256 f59416b2e80c80f3422e68abb83e23a4b8315a8a95c666b6fd676a92fe643a14; reader page pending.
+
+## te-Telu-IN-OLTEINCINT-012 — OLTEINCINT-012: confirmed diagonal formula subscript omission
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored the subscript n in both diagonal formula occurrences; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed diagonal formula subscript omission at lines 35-41, decision procedure for the diagonal set D, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEINCINT-20260920:OLTEINCINT-012 [checked_supports], content/incompleteness/introduction/undecidability.tex; lines 35-41, decision procedure for the diagonal set D; confirmed_diagonal_formula_subscript_omission; restored the subscript n in both diagonal formula occurrences; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEINCINT-012 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEINCINT-012-OCC-001; OLP-0279; OLP-0279-B009; source upstream/content/incompleteness/introduction/undecidability.tex:35-41 bytes 1136-1595 SHA-256 ceeb4a161ad8064be0bd024febf2061d9fdfbf8b748293cb28c08c397cfa55f4; target translation/content/incompleteness/introduction/undecidability.tex:38-45 bytes 2940-4485 SHA-256 f59416b2e80c80f3422e68abb83e23a4b8315a8a95c666b6fd676a92fe643a14; reader page pending.
+
+## te-Telu-IN-OLTEINCINT-013 — OLTEINCINT-013: confirmed duplicate verb inflection
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: preserved both raw OpenLogic token identities and rendered the grammatically correct representation senses; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed duplicate verb inflection at lines 58-71, consequences for Q and stronger theories, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEINCINT-20260920:OLTEINCINT-013 [checked_supports], content/incompleteness/introduction/undecidability.tex; lines 58-71, consequences for Q and stronger theories; confirmed_duplicate_verb_inflection; preserved both raw OpenLogic token identities and rendered the grammatically correct representation senses; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEINCINT-013 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEINCINT-013-OCC-001; OLP-0279; OLP-0279-B012; source upstream/content/incompleteness/introduction/undecidability.tex:58-65 bytes 2325-2758 SHA-256 ceeb4a161ad8064be0bd024febf2061d9fdfbf8b748293cb28c08c397cfa55f4; target translation/content/incompleteness/introduction/undecidability.tex:66-74 bytes 6152-7354 SHA-256 f59416b2e80c80f3422e68abb83e23a4b8315a8a95c666b6fd676a92fe643a14; reader page pending.
+  - te-Telu-IN-OLTEINCINT-013-OCC-002; OLP-0279; OLP-0279-B013; source upstream/content/incompleteness/introduction/undecidability.tex:67-71 bytes 2759-3048 SHA-256 ceeb4a161ad8064be0bd024febf2061d9fdfbf8b748293cb28c08c397cfa55f4; target translation/content/incompleteness/introduction/undecidability.tex:76-85 bytes 7355-8898 SHA-256 f59416b2e80c80f3422e68abb83e23a4b8315a8a95c666b6fd676a92fe643a14; reader page pending.
+
+## te-Telu-IN-OLTEINCINT-014 — OLTEINCINT-014: confirmed spelling error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: rendered the intended satisfy sense; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed spelling error at lines 127-133, scope limitation and Presburger arithmetic, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEINCINT-20260920:OLTEINCINT-014 [checked_supports], content/incompleteness/introduction/undecidability.tex; lines 127-133, scope limitation and Presburger arithmetic; confirmed_spelling_error; rendered the intended satisfy sense; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEINCINT-014 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEINCINT-014-OCC-001; OLP-0279; OLP-0279-B021; source upstream/content/incompleteness/introduction/undecidability.tex:127-133 bytes 5386-5849 SHA-256 ceeb4a161ad8064be0bd024febf2061d9fdfbf8b748293cb28c08c397cfa55f4; target translation/content/incompleteness/introduction/undecidability.tex:146-152 bytes 14558-15652 SHA-256 f59416b2e80c80f3422e68abb83e23a4b8315a8a95c666b6fd676a92fe643a14; reader page pending.

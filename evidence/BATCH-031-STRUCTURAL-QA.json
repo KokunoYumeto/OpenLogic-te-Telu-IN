@@ -1,0 +1,1715 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-19T22:38:56.697Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Text/intertext/mbox prose is masked; nested inline math is compared per clause independently of language-specific word order.",
+  "units": [
+    {
+      "unit_id": "OLP-0274",
+      "source_path": "content/incompleteness/incompleteness.tex",
+      "source_sha256": "7c29ba0de58292f390228ce158f0b6e902a128a3a1a12874b3009d3f3f0799fe",
+      "translation_sha256": "6b9f2bd60b4f49fcd9c48146865f40ef2f936caa75291df08ca30a955f16cd28",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport[introduction]{introduction}",
+        "\\olimport[arithmetization-syntax]{arithmetization-syntax}",
+        "\\olimport[representability-in-q]{representability-in-q}",
+        "\\olimport[theories-computability]{theories-computability}",
+        "\\olimport[incompleteness-provability]{incompleteness-provability}"
+      ],
+      "identifiers_target": [
+        "\\olimport[introduction]{introduction}",
+        "\\olimport[arithmetization-syntax]{arithmetization-syntax}",
+        "\\olimport[representability-in-q]{representability-in-q}",
+        "\\olimport[theories-computability]{theories-computability}",
+        "\\olimport[incompleteness-provability]{incompleteness-provability}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 242,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: incompleteness",
+          "target_start": "% Part: incompleteness"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../include/open-logic-part]{subfiles}",
+          "target_start": "\\documentclass[../../include/open-logic-part]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olpart{inc}{Incompleteness}",
+          "target_start": "\\olpart{inc}{అసంపూర్ణత}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{editorial}\n Material in this part covers the incompleteness theorems. It depends\n on material in the pa",
+          "target_start": "\\begin{editorial}\n ఈ భాగంలోని విషయం అసంపూర్ణతా సిద్ధాంతాలను వివరిస్తుంది. ఇది మొదటిస్థాయి\n తర్క భాగాల్లోని విష"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport[introduction]{introduction}",
+          "target_start": "\\olimport[introduction]{introduction}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport[arithmetization-syntax]{arithmetization-syntax}",
+          "target_start": "\\olimport[arithmetization-syntax]{arithmetization-syntax}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\olimport[representability-in-q]{representability-in-q}",
+          "target_start": "\\olimport[representability-in-q]{representability-in-q}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport[theories-computability]{theories-computability}",
+          "target_start": "\\olimport[theories-computability]{theories-computability}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\olimport[incompleteness-provability]{incompleteness-provability}",
+          "target_start": "\\olimport[incompleteness-provability]{incompleteness-provability}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\OLEndPartHook",
+          "target_start": "\\OLEndPartHook"
+        },
+        {
+          "index": 12,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../include/open-logic-part]{subfiles}",
+        "\\olimport[introduction]{introduction}",
+        "\\olimport[arithmetization-syntax]{arithmetization-syntax}",
+        "\\olimport[representability-in-q]{representability-in-q}",
+        "\\olimport[theories-computability]{theories-computability}",
+        "\\olimport[incompleteness-provability]{incompleteness-provability}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../include/open-logic-part]{subfiles}",
+        "\\olimport[introduction]{introduction}",
+        "\\olimport[arithmetization-syntax]{arithmetization-syntax}",
+        "\\olimport[representability-in-q]{representability-in-q}",
+        "\\olimport[theories-computability]{theories-computability}",
+        "\\olimport[incompleteness-provability]{incompleteness-provability}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0275",
+      "source_path": "content/incompleteness/introduction/introduction.tex",
+      "source_sha256": "9cb1ffee36aa180bc54dfc20c22d078b7dd0d0d1d148ca92671adaed5f78eace",
+      "translation_sha256": "cfd76c7ca3a11d7ee3046b3baee9ab0e71f9b36aef296f410b9f708bf62a5131",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport{historical-background}",
+        "\\olimport{definitions}",
+        "\\olimport{overview}",
+        "\\olimport{undecidability}"
+      ],
+      "identifiers_target": [
+        "\\olimport{historical-background}",
+        "\\olimport{definitions}",
+        "\\olimport{overview}",
+        "\\olimport{undecidability}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 17,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: incompleteness\n% Chapter: first-incompleteness",
+          "target_start": "% Part: incompleteness\n% Chapter: first-incompleteness"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olchapter{inc}{int}{Introduction to Incompleteness}",
+          "target_start": "\\olchapter{inc}{int}{అసంపూర్ణతకు పరిచయం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olimport{historical-background}",
+          "target_start": "\\olimport{historical-background}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport{definitions}",
+          "target_start": "\\olimport{definitions}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport{overview}",
+          "target_start": "\\olimport{overview}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\olimport{undecidability}",
+          "target_start": "\\olimport{undecidability}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\OLEndChapterHook",
+          "target_start": "\\OLEndChapterHook"
+        },
+        {
+          "index": 10,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{inc}{int}",
+        "\\olimport{historical-background}",
+        "\\olimport{definitions}",
+        "\\olimport{overview}",
+        "\\olimport{undecidability}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{inc}{int}",
+        "\\olimport{historical-background}",
+        "\\olimport{definitions}",
+        "\\olimport{overview}",
+        "\\olimport{undecidability}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0276",
+      "source_path": "content/incompleteness/introduction/historical-background.tex",
+      "source_sha256": "24c4a36e9f95064267c6bd001f81091cbc7f963c25e32a6d3c8630483b76d3e6",
+      "translation_sha256": "a969dc22874dde259d7fb45430fdd4bf22cb112d47092dd97374422aeb092d27",
+      "source_blocks": 23,
+      "target_blocks": 23,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{inc}{int}{bgr}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{inc}{int}{bgr}"
+      ],
+      "tokens_source": {
+        "!!{derivation}": 3,
+        "!!{formula}s": 1
+      },
+      "tokens_target": {
+        "!!{derivation}": 3,
+        "!!{formula}s": 1
+      },
+      "math_source": [
+        "$!A\\lor\\lnot!A$",
+        "$!A\\land\\lnot!A$",
+        "$\\OCon$",
+        "$!A$",
+        "$!A$",
+        "$\\lnot!A$",
+        "$!A$"
+      ],
+      "math_target_core": [
+        "$!A\\lor\\lnot!A$",
+        "$!A\\land\\lnot!A$",
+        "$\\OCon$",
+        "$!A$",
+        "$!A$",
+        "$\\lnot!A$",
+        "$!A$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [
+        "OLTEINCINT-001",
+        "OLTEINCINT-002",
+        "OLTEINCINT-003",
+        "OLTEINCINT-004"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 9710,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: incompleteness\n% Chapter: introduction\n% Section: historical-background",
+          "target_start": "% Part: incompleteness\n% Chapter: introduction\n% Section: historical-background"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{inc}{int}{bgr}",
+          "target_start": "\\olfileid{inc}{int}{bgr}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Historical Background}",
+          "target_start": "\\olsection{చారిత్రక నేపథ్యం}"
+        },
+        {
+          "index": 6,
+          "source_start": "In this section, we will briefly discuss historical developments that\nwill help put the incompleteness theorem",
+          "target_start": "ఈ విభాగంలో అసంపూర్ణతా సిద్ధాంతాలను వాటి సందర్భంలో ఉంచడానికి తోడ్పడే చారిత్రక\nపరిణామాలను క్లుప్తంగా చర్చిస్తాం."
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{digress}\n  The phrase ``mathematical logic'' is ambiguous. One can interpret the\nword ``mathematical'' ",
+          "target_start": "\\begin{digress}\n  ``గణిత తర్కం'' అనే పదబంధానికి రెండు అర్థాలున్నాయి. ``గణితంలోని తర్కం''\n  అన్నప్పుడు మాదిరిగా"
+        },
+        {
+          "index": 8,
+          "source_start": "The study of logic began, essentially, with Aristotle, who lived\napproximately 384--322 \\textsc{bce}. His \\emp",
+          "target_start": "తర్క అధ్యయనం మౌలికంగా క్రీ.పూ. సుమారు 384--322లో జీవించిన అరిస్టాటిల్‌తో\nప్రారంభమైంది. ఆయన రచనలు \\emph{వర్గాలు"
+        },
+        {
+          "index": 9,
+          "source_start": "Aristotle's logic dominated scholastic philosophy through the middle\nages; indeed, as late as the eighteenth c",
+          "target_start": "మధ్యయుగాలంతటా పాండిత్య తత్వశాస్త్రంపై అరిస్టాటిల్ తర్కమే ఆధిపత్యం చెలాయించింది;\nపద్దెనిమిదవ శతాబ్దంలో కూడా కాం"
+        },
+        {
+          "index": 10,
+          "source_start": "The nineteenth century was a watershed for logic. In 1854 George Boole\nwrote \\emph{The Laws of Thought}, with ",
+          "target_start": "పందొమ్మిదవ శతాబ్దం తర్క చరిత్రలో కీలక మలుపు. 1854లో జార్జ్ బూల్\n\\emph{ఆలోచనా నియమాలు} రచించాడు; అందులో ఆధునిక "
+        },
+        {
+          "index": 11,
+          "source_start": "Let us now turn to developments in the foundations of mathematics. Of\ncourse, since logic plays an important r",
+          "target_start": "ఇప్పుడు గణిత పునాదులలోని పరిణామాలవైపు తిరుగుదాం. తర్కం గణితంలో ముఖ్య పాత్ర\nపోషిస్తుంది కనుక, ఇప్పుడే వివరించిన"
+        },
+        {
+          "index": 12,
+          "source_start": "Many take the birth of mathematics proper to have occurred with the\nGreeks. Euclid's \\emph{Elements}, written ",
+          "target_start": "గణితం సిసలుగా గ్రీకులతో పుట్టిందని చాలామంది భావిస్తారు. క్రీ.పూ. సుమారు 300లో\nరచించిన యూక్లిడ్ \\emph{ఎలిమెంట్స"
+        },
+        {
+          "index": 13,
+          "source_start": "Calculus was invented by Newton and Leibniz in the seventeenth\ncentury. (A fierce priority dispute raged for c",
+          "target_start": "పదిహేడవ శతాబ్దంలో న్యూటన్, లైబ్నిట్స్ కలనాన్ని ఆవిష్కరించారు. (దీనిపై శతాబ్దాల\nపాటు తీవ్రమైన ప్రాథమ్య వివాదం స"
+        },
+        {
+          "index": 14,
+          "source_start": "In the nineteenth century, mathematicians tried to address Berkeley's\ncriticisms by putting calculus on a firm",
+          "target_start": "పందొమ్మిదవ శతాబ్దంలో గణితజ్ఞులు కలనానికి మరింత దృఢమైన పునాది కల్పించి బర్క్లీ\nవిమర్శలకు సమాధానం ఇవ్వడానికి ప్ర"
+        },
+        {
+          "index": 15,
+          "source_start": "The end of the nineteenth century also brought a new boldness in dealing\nwith the infinite. Before then, infin",
+          "target_start": "పందొమ్మిదవ శతాబ్దం చివర్లో అనంతాన్ని వ్యవహరించడంలో కొత్త ధైర్యం కూడా వచ్చింది.\nఅంతకుముందు అనంత వస్తువులనూ నిర్"
+        },
+        {
+          "index": 16,
+          "source_start": "This brings us to twentieth century developments in logic and foundations.\nIn 1902 Russell discovered the para",
+          "target_start": "ఇలా మనం ఇరవయ్యవ శతాబ్దపు తర్క, పునాది పరిణామాలకు చేరుకుంటాం. 1902లో ఫ్రేగె\nతార్కిక వ్యవస్థలోని విరోధాభాసాన్ని "
+        },
+        {
+          "index": 17,
+          "source_start": "Strange days indeed!{} The program of reducing all of mathematics to\nlogic is now referred to as ``logicism,''",
+          "target_start": "నిజంగా అవి విచిత్రమైన రోజులు!{} గణితమంతటినీ తర్కానికి కుదించే కార్యక్రమాన్ని\nఇప్పుడు ``తర్కవాదం'' అంటారు; పైన "
+        },
+        {
+          "index": 18,
+          "source_start": "Hilbert's work went a long way toward accomplishing the first goal.\nIn 1899, he had done this for geometry in ",
+          "target_start": "మొదటి లక్ష్యాన్ని సాధించే దిశగా హిల్బర్ట్ కృషి చాలా ముందుకు వెళ్లింది. 1899లో\nతన ప్రసిద్ధ గ్రంథం \\emph{జ్యామిత"
+        },
+        {
+          "index": 19,
+          "source_start": "In 1921, Hilbert set out on a research project to establish the goal\nof proving these systems to be consistent",
+          "target_start": "1921లో ఈ వ్యవస్థలు అవైరుధ్యమైనవని నిరూపించే లక్ష్యంతో హిల్బర్ట్ ఒక పరిశోధనా\nకార్యక్రమాన్ని ప్రారంభించాడు. ఈ కా"
+        },
+        {
+          "index": 20,
+          "source_start": "The second aim, that the axiom systems developed would settle every\nmathematical question, can be made precise",
+          "target_start": "అభివృద్ధి చేసిన స్వీకృత వ్యవస్థలు ప్రతి గణిత ప్రశ్ననూ పరిష్కరించాలనే రెండవ\nలక్ష్యాన్ని రెండు విధాలుగా ఖచ్చితంగ"
+        },
+        {
+          "index": 21,
+          "source_start": "In 1931, G\\\"odel proved the two ``incompleteness theorems,'' which\nshowed that this program could not succeed.",
+          "target_start": "1931లో గ్యోడెల్ రెండు ``అసంపూర్ణతా సిద్ధాంతాలను'' నిరూపించి, తగినంత బలమైన,\nఅవైరుధ్యమైన, ప్రభావకంగా స్వీకృతీకరి"
+        },
+        {
+          "index": 22,
+          "source_start": "This struck a lethal blow to Hilbert's original program. However, as\nis so often the case in mathematics, it a",
+          "target_start": "ఇది హిల్బర్ట్ అసలు కార్యక్రమానికి ప్రాణాంతక దెబ్బ ఇచ్చింది. అయితే గణితంలో తరచూ\nజరిగినట్లే, ఇది ఉత్తేజకరమైన కొత"
+        },
+        {
+          "index": 23,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{int}{bgr}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{int}{bgr}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0277",
+      "source_path": "content/incompleteness/introduction/definitions.tex",
+      "source_sha256": "bca709e14f7652027776c1a55e484466d5fe4e2dcc91390f598d374ed70cee71",
+      "translation_sha256": "58b16f26ac9802cf71315374045090585f7249234d0a79505f2ab14cef67cc6b",
+      "source_blocks": 36,
+      "target_blocks": 36,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{inc}{int}{def}",
+        "\\ollabel{def:standard-model}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{inc}{int}{def}",
+        "\\ollabel{def:standard-model}"
+      ],
+      "tokens_source": {
+        "!!a{decidable}": 2,
+        "!!a{formula}": 2,
+        "!!a{sentence}": 3,
+        "!!a{surjective}": 1,
+        "!!{axiomatizability}": 1,
+        "!!{axiomatizable}": 4,
+        "!!{c.e.}": 1,
+        "!!{complete}": 2,
+        "!!{computably enumerable}": 1,
+        "!!{constant}": 1,
+        "!!{constant}s": 1,
+        "!!{decidable}": 7,
+        "!!{domain}": 1,
+        "!!{element}s": 1,
+        "!!{enumerable}": 1,
+        "!!{formula}": 4,
+        "!!{function}": 1,
+        "!!{function}s": 2,
+        "!!{predicate}": 1,
+        "!!{predicate}s": 1,
+        "!!{represents}": 3,
+        "!!{sentence}": 3,
+        "!!{sentence}s": 10,
+        "!!{structure}": 4,
+        "!!{variable}": 1
+      },
+      "tokens_target": {
+        "!!a{decidable}": 2,
+        "!!a{formula}": 2,
+        "!!a{sentence}": 3,
+        "!!a{surjective}": 1,
+        "!!{axiomatizability}": 1,
+        "!!{axiomatizable}": 4,
+        "!!{c.e.}": 1,
+        "!!{complete}": 2,
+        "!!{computably enumerable}": 1,
+        "!!{constant}": 1,
+        "!!{constant}s": 1,
+        "!!{decidable}": 7,
+        "!!{domain}": 1,
+        "!!{element}s": 1,
+        "!!{enumerable}": 1,
+        "!!{formula}": 4,
+        "!!{function}": 1,
+        "!!{function}s": 2,
+        "!!{predicate}": 1,
+        "!!{predicate}s": 1,
+        "!!{represents}": 3,
+        "!!{sentence}": 3,
+        "!!{sentence}s": 10,
+        "!!{structure}": 4,
+        "!!{variable}": 1
+      },
+      "math_source": [
+        "$\\in$",
+        "$\\Nat$",
+        "$\\LangL_A$",
+        "$\\LangL_A$",
+        "$<$",
+        "$\\Obj0$",
+        "$\\prime$",
+        "$+$",
+        "$\\times$",
+        "$\\Gamma$",
+        "$\\Gamma=\\Setabs{!A}{\\Gamma\\Entails!A}$",
+        "$\\LangL_A$",
+        "$\\Nat$",
+        "$\\StructN$",
+        "$\\DomainN=\\Nat$",
+        "$\\Assign{\\Obj0}{N}=0$",
+        "$\\Assign{\\Obj\\prime}{N}(n)=n+1$",
+        "$n\\in\\Nat$",
+        "$\\Assign{\\Obj+}{N}(n,m)=n+m$",
+        "$n,m\\in\\Nat$",
+        "$\\Assign{\\Obj\\times}{N}(n,m)=n\\cdotm$",
+        "$n,m\\in\\Nat$",
+        "$\\Assign{\\Obj<}{N}=\\Setabs{\\tuple{n,m}}{n\\in\\Nat,m\\in\\Nat,n<m}$",
+        "$\\times$",
+        "$\\cdot$",
+        "$\\times$",
+        "$\\times$",
+        "$\\Objf^2_1$",
+        "$\\cdot$",
+        "$n\\cdotm$",
+        "$n$",
+        "$m$",
+        "$x\\timesy$",
+        "$\\times$",
+        "$\\cdot$",
+        "$+$",
+        "\\[\\Th{TA}=\\Setabs{!A}{\\Sat{N}{!A}}.\\]",
+        "$\\Th{TA}$",
+        "$\\Th{TA}\\Entails!A$",
+        "$!A$",
+        "$\\Th{TA}$",
+        "$\\Sat{N}{\\Th{TA}}$",
+        "$\\Sat{N}{!A}$",
+        "$!A\\in\\Th{TA}$",
+        "$\\Gamma$",
+        "$\\Gamma_0$",
+        "$\\Gamma$",
+        "$\\Gamma_0$",
+        "$\\Gamma_0$",
+        "$\\Gamma_0$",
+        "$\\Gamma_0$",
+        "$\\Gamma_0$",
+        "$\\Gamma_0$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma_0$",
+        "$\\Gamma$",
+        "$\\Gamma_0$",
+        "\\[\\Gamma=\\Setabs{!A}{\\Gamma_0\\Entails!A}\\]",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "\\begin{align*}&\\lforall[x][\\lforall[y][(\\eq[x'][y']\\lif\\eq[x][y])]]\\tag{$!Q_1$}\\\\&\\lforall[x][\\eq/[\\Obj0][x']]\\tag{$!Q_2$}\\\\&\\lforall[x][(\\eq[x][\\Obj0]\\lor\\lexists[y][\\eq[x][y']])]\\tag{$!Q_3$}\\\\&\\lforall[x][\\eq[(x+\\Obj0)][x]]\\tag{$!Q_4$}\\\\&\\lforall[x][\\lforall[y][\\eq[(x+y')][(x+y)']]]\\tag{$!Q_5$}\\\\&\\lforall[x][\\eq[(x\\times\\Obj0)][\\Obj0]]\\tag{$!Q_6$}\\\\&\\lforall[x][\\lforall[y][\\eq[(x\\timesy')][((x\\timesy)+x)]]]\\tag{$!Q_7$}\\\\&\\lforall[x][\\lforall[y][(x<y\\liff\\lexists[z][\\eq[(z'+x)][y]])]]\\tag{$!Q_8$}\\end{align*}",
+        "$\\{!Q_1,\\dots,!Q_8\\}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "\\[\\Th{Q}=\\Setabs{!A}{\\{!Q_1,\\dots,!Q_8\\}\\Entails!A}.\\]",
+        "$!A(x)$",
+        "$\\LangL_A$",
+        "$x$",
+        "$y_1$",
+        "$y_n$",
+        "\\[\\lforall[y_1][\\dots\\lforall[y_n][((!A(\\Obj0)\\land\\lforall[x][(!A(x)\\lif!A(x'))])\\lif\\lforall[x][!A(x)])]]\\]",
+        "$\\Th{PA}$",
+        "$\\Th{Q}$",
+        "$\\Struct{N}$",
+        "$!A$",
+        "$x$",
+        "$!A(x)$",
+        "$X_{!A}$",
+        "$\\Nat$",
+        "$\\Struct{N}$",
+        "$X_{!A}$",
+        "$n\\in\\Nat$",
+        "$\\Sat{N}{!A(x)}[s]$",
+        "$s(x)=n$",
+        "\\[((!A(\\Obj0)\\land\\lforall[x][(!A(x)\\lif!A(x'))])\\lif\\lforall[x][!A(x)]).\\]",
+        "$\\Struct{N}$",
+        "$0\\inX_{!A}$",
+        "$n\\inX_{!A}$",
+        "$n+1$",
+        "$0\\inX_{!A}$",
+        "$1\\inX_{!A}$",
+        "$1\\inX_{!A}$",
+        "$2\\inX_{!A}$",
+        "$n\\in\\Nat$",
+        "$n\\inX_{!A}$",
+        "$\\lforall[x][!A(x)]$",
+        "$\\Struct{N}$",
+        "$\\Th{Q}$",
+        "$\\Th{PA}$",
+        "$\\Th{PA}$",
+        "$\\Nat$",
+        "$\\LangL_A$",
+        "$\\Th{PA}$",
+        "$\\LangL_A$",
+        "$\\Th{PA}=\\Th{TA}$",
+        "$\\Th{TA}$",
+        "$\\Nat$",
+        "$\\LangL_A$",
+        "$!A$",
+        "$\\LangL_A$",
+        "$\\Sat{N}{!A}$",
+        "$\\Sat{N}{\\lnot!A}$",
+        "$\\Th{TA}\\Entails!A$",
+        "$\\Th{TA}\\Entails\\lnot!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma\\Entails\\lnot!A$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\Proves\\lnot!A$",
+        "$\\Th{TA}$",
+        "$\\Th{PA}$",
+        "$\\Th{Q}$",
+        "$X$",
+        "$x$",
+        "$1$",
+        "$x\\inX$",
+        "$0$",
+        "$\\Th{TA}$",
+        "$\\Th{PA}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{PA}$",
+        "$\\Th{Q}$",
+        "$\\Th{PA}$",
+        "$!B$",
+        "$\\Th{PA}$",
+        "$\\Char{X}$",
+        "$\\Char{X}(!B)=1$",
+        "$!B$",
+        "$\\Th{PA}$",
+        "$=0$",
+        "$!B$",
+        "$\\Th{Q}$",
+        "$\\Char{X}(!B)=1$",
+        "$\\lforall[x][!A(x,y_1,\\dots,y_n)]$",
+        "$x$",
+        "$y_1$",
+        "$y_n$",
+        "$!A$",
+        "$!B$",
+        "$y_1$",
+        "$y_n$",
+        "$!A$",
+        "$\\lforall[x]$",
+        "\\[!A(\\Obj0,y_1,\\dots,y_n)\\land\\lforall[x][(!A(x,y_1,\\dots,y_n)\\lif!A(x',y_1,\\dots,y_n))]\\]",
+        "$!B$",
+        "$!B$",
+        "$X$",
+        "$f\\colon\\Nat\\toX$",
+        "$X$",
+        "$X$",
+        "$+$",
+        "$2$",
+        "$3$",
+        "$5$",
+        "$2+3=5$",
+        "$+$",
+        "$2$",
+        "$3$",
+        "$5$",
+        "$(\\num{2}+\\num{3})=\\num{5}$",
+        "$\\Th{Q}$",
+        "$f(x_1,x_2)$",
+        "$!A_f(x_1,x_2,y)$",
+        "$\\Lang{L_A}$",
+        "$\\Th{Q}\\Proves!A_f(\\num{n_1},\\num{n_2},\\num{m})$",
+        "$f(n_1,n_2)=m$",
+        "$\\Th{Q}$",
+        "$f$",
+        "$n_1$",
+        "$n_2$",
+        "$m$",
+        "$f$",
+        "$n_1$",
+        "$n_2$",
+        "$!A(x_1,\\dots,x_k,y)$",
+        "$f\\colon\\Nat^k\\to\\Nat$",
+        "$\\Gamma$",
+        "$f(n_1,\\dots,n_k)=m$",
+        "$\\Gamma\\Proves!A(\\num{n_1},\\dots,\\num{n_k},\\num{m})$",
+        "$\\Gamma\\Proves\\lforall[y](!A(\\num{n_1},\\dots,\\num{n_k},y)\\lify=\\num{m})$",
+        "$!A(x_1,\\dots,x_k)$",
+        "$R\\subseteq\\Nat^k$",
+        "$R(n_1,\\dots,n_k)$",
+        "$\\Gamma\\Proves!A(\\num{n_1},\\dots,\\num{n_k})$",
+        "$R(n_1,\\dots,n_k)$",
+        "$\\Gamma\\Proves\\lnot!A(\\num{n_1},\\dots,\\num{n_k})$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$"
+      ],
+      "math_target_core": [
+        "$\\in$",
+        "$\\Nat$",
+        "$\\LangL_A$",
+        "$\\LangL_A$",
+        "$<$",
+        "$\\Obj0$",
+        "$\\prime$",
+        "$+$",
+        "$\\times$",
+        "$\\Gamma$",
+        "$\\Gamma=\\Setabs{!A}{\\Gamma\\Entails!A}$",
+        "$\\Nat$",
+        "$\\LangL_A$",
+        "$\\StructN$",
+        "$\\DomainN=\\Nat$",
+        "$\\Assign{\\Obj0}{N}=0$",
+        "$n\\in\\Nat$",
+        "$\\Assign{\\Obj\\prime}{N}(n)=n+1$",
+        "$n,m\\in\\Nat$",
+        "$\\Assign{\\Obj+}{N}(n,m)=n+m$",
+        "$n,m\\in\\Nat$",
+        "$\\Assign{\\Obj\\times}{N}(n,m)=n\\cdotm$",
+        "$\\Assign{\\Obj<}{N}=\\Setabs{\\tuple{n,m}}{n\\in\\Nat,m\\in\\Nat,n<m}$",
+        "$\\times$",
+        "$\\cdot$",
+        "$\\times$",
+        "$\\times$",
+        "$\\Objf^2_1$",
+        "$\\cdot$",
+        "$n\\cdotm$",
+        "$n$",
+        "$m$",
+        "$x\\timesy$",
+        "$\\times$",
+        "$\\cdot$",
+        "$+$",
+        "\\[\\Th{TA}=\\Setabs{!A}{\\Sat{N}{!A}}.\\]",
+        "$\\Th{TA}$",
+        "$\\Th{TA}\\Entails!A$",
+        "$\\Th{TA}$",
+        "$!A$",
+        "$\\Sat{N}{\\Th{TA}}$",
+        "$\\Sat{N}{!A}$",
+        "$!A\\in\\Th{TA}$",
+        "$\\Gamma$",
+        "$\\Gamma_0$",
+        "$\\Gamma$",
+        "$\\Gamma_0$",
+        "$\\Gamma_0$",
+        "$\\Gamma_0$",
+        "$\\Gamma_0$",
+        "$\\Gamma_0$",
+        "$\\Gamma_0$",
+        "$\\Gamma$",
+        "$\\Gamma_0$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma_0$",
+        "\\[\\Gamma=\\Setabs{!A}{\\Gamma_0\\Entails!A}\\]",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "\\begin{align*}&\\lforall[x][\\lforall[y][(\\eq[x'][y']\\lif\\eq[x][y])]]\\tag{$!Q_1$}\\\\&\\lforall[x][\\eq/[\\Obj0][x']]\\tag{$!Q_2$}\\\\&\\lforall[x][(\\eq[x][\\Obj0]\\lor\\lexists[y][\\eq[x][y']])]\\tag{$!Q_3$}\\\\&\\lforall[x][\\eq[(x+\\Obj0)][x]]\\tag{$!Q_4$}\\\\&\\lforall[x][\\lforall[y][\\eq[(x+y')][(x+y)']]]\\tag{$!Q_5$}\\\\&\\lforall[x][\\eq[(x\\times\\Obj0)][\\Obj0]]\\tag{$!Q_6$}\\\\&\\lforall[x][\\lforall[y][\\eq[(x\\timesy')][((x\\timesy)+x)]]]\\tag{$!Q_7$}\\\\&\\lforall[x][\\lforall[y][(x<y\\liff\\lexists[z][\\eq[(z'+x)][y]])]]\\tag{$!Q_8$}\\end{align*}",
+        "$\\{!Q_1,\\dots,!Q_8\\}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "\\[\\Th{Q}=\\Setabs{!A}{\\{!Q_1,\\dots,!Q_8\\}\\Entails!A}.\\]",
+        "$!A(x)$",
+        "$x$",
+        "$y_1$",
+        "$y_n$",
+        "$\\LangL_A$",
+        "\\[\\lforall[y_1][\\dots\\lforall[y_n][((!A(\\Obj0,y_1,\\dots,y_n)\\land\\lforall[x][(!A(x,y_1,\\dots,y_n)\\lif!A(x',y_1,\\dots,y_n))])\\lif\\lforall[x][!A(x,y_1,\\dots,y_n)])]]\\]",
+        "$\\Th{PA}$",
+        "$\\Th{Q}$",
+        "$\\Struct{N}$",
+        "$!A$",
+        "$x$",
+        "$!A(x)$",
+        "$\\Struct{N}$",
+        "$\\Nat$",
+        "$X_{!A}$",
+        "$s(x)=n$",
+        "$\\Sat{N}{!A(x)}[s]$",
+        "$n\\in\\Nat$",
+        "$X_{!A}$",
+        "\\[((!A(\\Obj0)\\land\\lforall[x][(!A(x)\\lif!A(x'))])\\lif\\lforall[x][!A(x)]).\\]",
+        "$\\Struct{N}$",
+        "$0\\inX_{!A}$",
+        "$n\\inX_{!A}$",
+        "$n+1$",
+        "$0\\inX_{!A}$",
+        "$1\\inX_{!A}$",
+        "$1\\inX_{!A}$",
+        "$2\\inX_{!A}$",
+        "$n\\in\\Nat$",
+        "$n\\inX_{!A}$",
+        "$\\lforall[x][!A(x)]$",
+        "$\\Struct{N}$",
+        "$\\Th{Q}$",
+        "$\\Th{PA}$",
+        "$\\LangL_A$",
+        "$\\Nat$",
+        "$\\Th{PA}$",
+        "$\\LangL_A$",
+        "$\\Th{PA}$",
+        "$\\Th{PA}=\\Th{TA}$",
+        "$\\Th{TA}$",
+        "$\\Nat$",
+        "$\\LangL_A$",
+        "$!A$",
+        "$\\LangL_A$",
+        "$\\Sat{N}{!A}$",
+        "$\\Sat{N}{\\lnot!A}$",
+        "$\\Th{TA}\\Entails!A$",
+        "$\\Th{TA}\\Entails\\lnot!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma\\Entails\\lnot!A$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\Proves\\lnot!A$",
+        "$\\Th{TA}$",
+        "$\\Th{PA}$",
+        "$\\Th{Q}$",
+        "$x$",
+        "$x\\inX$",
+        "$1$",
+        "$0$",
+        "$X$",
+        "$\\Th{TA}$",
+        "$\\Th{PA}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{PA}$",
+        "$\\Th{Q}$",
+        "$\\Th{PA}$",
+        "$!B$",
+        "$\\Th{PA}$",
+        "$!B$",
+        "$\\Th{PA}$",
+        "$\\Char{X}(!B)=1$",
+        "$=0$",
+        "$\\Char{X}$",
+        "$!B$",
+        "$\\Th{Q}$",
+        "$\\Char{X}(!B)=1$",
+        "$\\lforall[x][!A(x,y_1,\\dots,y_n)]$",
+        "$x$",
+        "$y_1$",
+        "$y_n$",
+        "$!A$",
+        "$!B$",
+        "$y_1$",
+        "$y_n$",
+        "$!A$",
+        "$\\lforall[x]$",
+        "\\[!A(\\Obj0,y_1,\\dots,y_n)\\land\\lforall[x][(!A(x,y_1,\\dots,y_n)\\lif!A(x',y_1,\\dots,y_n))]\\]",
+        "$!B$",
+        "$!B$",
+        "$X$",
+        "$f\\colon\\Nat\\toX$",
+        "$X$",
+        "$X$",
+        "$2$",
+        "$3$",
+        "$+$",
+        "$5$",
+        "$2+3=5$",
+        "$2$",
+        "$3$",
+        "$+$",
+        "$5$",
+        "$(\\num{2}+\\num{3})=\\num{5}$",
+        "$\\Th{Q}$",
+        "$f(x_1,x_2)$",
+        "$\\Lang{L_A}$",
+        "$!A_f(x_1,x_2,y)$",
+        "$f(n_1,n_2)=m$",
+        "$\\Th{Q}\\Proves!A_f(\\num{n_1},\\num{n_2},\\num{m})$",
+        "$n_1$",
+        "$n_2$",
+        "$f$",
+        "$m$",
+        "$\\Th{Q}$",
+        "$n_1$",
+        "$n_2$",
+        "$f$",
+        "$f(n_1,\\dots,n_k)=m$",
+        "$!A(x_1,\\dots,x_k,y)$",
+        "$f\\colon\\Nat^k\\to\\Nat$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves!A(\\num{n_1},\\dots,\\num{n_k},\\num{m})$",
+        "$\\Gamma\\Proves\\lforall[y](!A(\\num{n_1},\\dots,\\num{n_k},y)\\lify=\\num{m})$",
+        "$!A(x_1,\\dots,x_k)$",
+        "$R\\subseteq\\Nat^k$",
+        "$\\Gamma$",
+        "$R(n_1,\\dots,n_k)$",
+        "$\\Gamma\\Proves!A(\\num{n_1},\\dots,\\num{n_k})$",
+        "$R(n_1,\\dots,n_k)$",
+        "$\\Gamma\\Proves\\lnot!A(\\num{n_1},\\dots,\\num{n_k})$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "\\[\\lforall[y_1][\\dots\\lforall[y_n][((!A(\\Obj0)\\land\\lforall[x][(!A(x)\\lif!A(x'))])\\lif\\lforall[x][!A(x)])]]\\]"
+      ],
+      "math_delta_target_only": [
+        "$\\Gamma$",
+        "\\[\\lforall[y_1][\\dots\\lforall[y_n][((!A(\\Obj0,y_1,\\dots,y_n)\\land\\lforall[x][(!A(x,y_1,\\dots,y_n)\\lif!A(x',y_1,\\dots,y_n))])\\lif\\lforall[x][!A(x,y_1,\\dots,y_n)])]]\\]"
+      ],
+      "declared_source_correction_ids": [
+        "OLTEINCINT-005",
+        "OLTEINCINT-006",
+        "OLTEINCINT-007",
+        "OLTEINCINT-008"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 7853,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: incompleteness\n% Chapter: introduction\n% Section: definitions",
+          "target_start": "% Part: incompleteness\n% Chapter: introduction\n% Section: definitions"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{inc}{int}{def}",
+          "target_start": "\\olfileid{inc}{int}{def}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Definitions}",
+          "target_start": "\\olsection{నిర్వచనలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "In order to carry out Hilbert's project of formalizing mathematics and\nshowing that such a formalization is co",
+          "target_start": "గణితాన్ని సాంకేతికీకరించి, అటువంటి సాంకేతికీకరణ అవైరుధ్యమనీ సంపూర్ణమనీ చూపాలనే\nహిల్బర్ట్ కార్యక్రమాన్ని అమలు చ"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}\nA set of !!{sentence}s~$\\Gamma$ is a \\emph{theory} if it is closed\nunder entailment, i.e., if $\\G",
+          "target_start": "\\begin{defn}\n\\tetoken{వాక్యాల}{!!{sentence}s} సమితి~$\\Gamma$ పర్యవసానం కింద సంవృతమైతే,\nఅంటే $\\Gamma = \\Setabs{"
+        },
+        {
+          "index": 8,
+          "source_start": "There are two easy ways to specify theories. One is as the set of\n!!{sentence}s true in some !!{structure}.  F",
+          "target_start": "సిద్ధాంతాలను నిర్దేశించడానికి రెండు సులభ మార్గాలున్నాయి. ఒకటి, ఏదో\n\\tetoken{నిర్మాణంలో}{!!{structure}} సత్యమైన"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{defn}\\ollabel{def:standard-model}\nThe \\emph{standard model of arithmetic} is the !!{structure}~$\\Struct",
+          "target_start": "\\begin{defn}\\ollabel{def:standard-model}\n\\emph{అంకగణితపు ప్రామాణిక నమూనా} కింది విధంగా నిర్వచించిన\n\\tetoken{ని"
+        },
+        {
+          "index": 10,
+          "source_start": "Note the difference between `$\\times$' and `$\\cdot$': $\\times$ is a\nsymbol in the language of arithmetic. Of c",
+          "target_start": "`$\\times$', `$\\cdot$'ల మధ్య తేడాను గమనించండి: $\\times$ అంకగణిత భాషలోని\nసంకేతం. అది గుణకారాన్ని గుర్తుచేయాలని ఎ"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{defn}\nThe theory of \\emph{true arithmetic} is the set of !!{sentence}s\nsatisfied in the standard model ",
+          "target_start": "\\begin{defn}\n\\emph{నిజ అంకగణిత సిద్ధాంతం} అంటే అంకగణితపు ప్రామాణిక నమూనాలో సంతృప్తమయ్యే\n\\tetoken{వాక్యాల}{!!{s"
+        },
+        {
+          "index": 12,
+          "source_start": "$\\Th{TA}$ is a theory, for whenever $\\Th{TA} \\Entails !A$, $!A$ is\nsatisfied in every !!{structure} which sati",
+          "target_start": "$\\Th{TA}$ ఒక సిద్ధాంతం. ఎందుకంటే $\\Th{TA} \\Entails !A$ అయినప్పుడల్లా,\n$\\Th{TA}$ను సంతృప్తిపరిచే ప్రతి \\tetoken"
+        },
+        {
+          "index": 13,
+          "source_start": "The other way to specify a theory~$\\Gamma$ is as the set of\n!!{sentence}s entailed by some set of sentences~$\\",
+          "target_start": "సిద్ధాంతం~$\\Gamma$ను నిర్దేశించే రెండవ మార్గం, ఏదో వాక్య సమితి~$\\Gamma_0$\nపర్యవసానంగా వచ్చే \\tetoken{వాక్యాల}{"
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{defn}\nA theory~$\\Gamma$ is \\emph{axiomatized} by~$\\Gamma_0$ iff\n\\[\n\\Gamma = \\Setabs{!A}{\\Gamma_0 \\Entai",
+          "target_start": "\\begin{defn}\nకింది షరతు నెరవేరితే, అప్పుడు మాత్రమే సిద్ధాంతం~$\\Gamma$ను~$\\Gamma_0$\n\\emph{స్వీకృతీకరిస్తుంది}:\n"
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{defn}\nThe theory $\\Th{Q}$ axiomatized by the following sentences is known\nas ``Robinson's $\\Th{Q}$'' an",
+          "target_start": "\\begin{defn}\nకింది వాక్యాలు స్వీకృతీకరించే సిద్ధాంతం~$\\Th{Q}$ను ``రాబిన్సన్~$\\Th{Q}$''\nఅంటారు; ఇది అంకగణితానిక"
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{defn}\nSuppose $!A(x)$ is !!a{formula} in $\\Lang L_A$ with free variables~$x$\nand $y_1$, \\dots, $y_n$. T",
+          "target_start": "\\begin{defn}\n$!A(x)$ అనేది స్వేచ్ఛా చరాలు $x$, $y_1$,~\\dots,~$y_n$ గల $\\Lang L_A$లోని\n\\tetoken{ఒక సూత్రం}{!!a{"
+        },
+        {
+          "index": 17,
+          "source_start": "\\emph{Peano arithmetic}~$\\Th{PA}$ is the theory axiomatized by the\naxioms of $\\Th{Q}$ together with all instan",
+          "target_start": "\\emph{పియానో అంకగణితం}~$\\Th{PA}$ అంటే, $\\Th{Q}$ స్వీకృతాలకూ ఆగమన పథకపు\nఅన్ని రూపాలకూ స్వీకృతీకరించబడిన సిద్ధాం"
+        },
+        {
+          "index": 18,
+          "source_start": "\\begin{explain}\nEvery instance of the induction schema is true in~$\\Struct{N}$. This\nis easiest to see if the ",
+          "target_start": "\\begin{explain}\nఆగమన పథకంలోని ప్రతి రూపం~$\\Struct{N}$లో సత్యం. \\tetoken{సూత్రం}{!!{formula}}~$!A$కు\nఒకే స్వేచ్"
+        },
+        {
+          "index": 19,
+          "source_start": "Both $\\Th{Q}$ and $\\Th{PA}$ are axiomatized theories.  The big\nquestion is, how strong are they? For instance,",
+          "target_start": "$\\Th{Q}$, $\\Th{PA}$ రెండూ స్వీకృతీకరించిన సిద్ధాంతాలే. అవి ఎంత బలమైనవన్నదే\nపెద్ద ప్రశ్న. ఉదాహరణకు, $\\Lang L_A$"
+        },
+        {
+          "index": 20,
+          "source_start": "Another way to put this is to ask: Is $\\Th{PA} = \\Th{TA}$?\n$\\Th{TA}$ obviously does prove (i.e., it includes) ",
+          "target_start": "దీన్నే మరో విధంగా, $\\Th{PA}=\\Th{TA}$ అవుతుందా అని అడగవచ్చు. $\\Th{TA}$\n$\\Nat$ గురించిన సత్యాలన్నిటినీ స్పష్టంగా"
+        },
+        {
+          "index": 21,
+          "source_start": "\\begin{defn}\nA theory $\\Gamma$ is \\emph{!!{complete}} iff for every\n!!{sentence}~$!A$ in its language, either ",
+          "target_start": "\\begin{defn}\nసిద్ధాంతం~$\\Gamma$ భాషలోని ప్రతి \\tetoken{వాక్యం}{!!{sentence}}~$!A$కు,\n$\\Gamma \\Entails !A$ గానీ"
+        },
+        {
+          "index": 22,
+          "source_start": "\\begin{explain}\nBy the Completeness Theorem, $\\Gamma \\Entails !A$ iff $\\Gamma \\Proves\n!A$, so $\\Gamma$ is comp",
+          "target_start": "\\begin{explain}\nసంపూర్ణతా సిద్ధాంతం ప్రకారం, $\\Gamma \\Entails !A$ అయితేనే $\\Gamma \\Proves !A$.\nకాబట్టి $\\Gamma"
+        },
+        {
+          "index": 23,
+          "source_start": "Another question we are led to ask is this: Is there a computational\nprocedure we can use to test if !!a{sente",
+          "target_start": "మనకు ఎదురయ్యే మరో ప్రశ్న: ఒక \\tetoken{వాక్యం}{!!a{sentence}} $\\Th{TA}$లో,\n$\\Th{PA}$లో, లేదా కనీసం $\\Th{Q}$లో ఉ"
+        },
+        {
+          "index": 24,
+          "source_start": "\\begin{defn}\nA set $X$ is \\emph{!!{decidable}} iff there is a computational procedure\nwhich on input~$x$ retur",
+          "target_start": "\\begin{defn}\nఇన్‌పుట్~$x$కు, $x \\in X$ అయితే~$1$, లేకపోతే~$0$ను ఇచ్చే గణనాత్మక ప్రక్రియ\nఉంటే, అప్పుడు మాత్రమే "
+        },
+        {
+          "index": 25,
+          "source_start": "So our question becomes: Is $\\Th{TA}$ ($\\Th{PA}$, $\\Th{Q}$) !!{decidable}?",
+          "target_start": "కాబట్టి మన ప్రశ్న: $\\Th{TA}$ ($\\Th{PA}$, $\\Th{Q}$)\n\\tetoken{నిర్ణయించదగినదా}{!!{decidable}}?"
+        },
+        {
+          "index": 26,
+          "source_start": "The answer to all these questions will be: no. None of these theories\nare decidable. However, this phenomenon ",
+          "target_start": "ఈ ప్రశ్నలన్నిటికీ సమాధానం: కాదు. ఈ సిద్ధాంతాల్లో ఏదీ నిర్ణయించదగినది కాదు.\nఅయితే ఈ ఘటన ఈ నిర్దిష్ట సిద్ధాంతాలక"
+        },
+        {
+          "index": 27,
+          "source_start": "\\begin{defn}\nA theory is \\emph{!!{axiomatizable}} if it is axiomatized\nby !!a{decidable} set of axioms.\n\\end{d",
+          "target_start": "\\begin{defn}\nఒక సిద్ధాంతాన్ని \\tetoken{ఒక నిర్ణయించదగిన}{!!a{decidable}} స్వీకృతాల సమితి\nస్వీకృతీకరిస్తే, ఆ సి"
+        },
+        {
+          "index": 28,
+          "source_start": "\\begin{ex}\nAny theory axiomatized by a finite set of !!{sentence}s is\n!!{axiomatizable}, since any finite set ",
+          "target_start": "\\begin{ex}\nఏ పరిమిత \\tetoken{వాక్యాల}{!!{sentence}s} సమితి అయినా\n\\tetoken{నిర్ణయించదగినది}{!!{decidable}} కనుక"
+        },
+        {
+          "index": 29,
+          "source_start": "Schematically axiomatized theories like~$\\Th{PA}$ are also\n!!{axiomatizable}. For to test if $!B$ is among the",
+          "target_start": "$\\Th{PA}$ వంటి పథకరూపంగా స్వీకృతీకరించిన సిద్ధాంతాలు కూడా\n\\tetoken{స్వీకృతీకరించదగినవే}{!!{axiomatizable}}. $!"
+        },
+        {
+          "index": 30,
+          "source_start": "In answering this question---and the more general question of which\ntheories are complete or decidable---it wi",
+          "target_start": "ఈ ప్రశ్నకు---అలాగే ఏ సిద్ధాంతాలు సంపూర్ణమో లేదా నిర్ణయించదగినవో అనే మరింత\nసాధారణ ప్రశ్నకు---సమాధానం ఇవ్వడంలో క"
+        },
+        {
+          "index": 31,
+          "source_start": "\\begin{defn}\nA set $X$ is called \\emph{!!{computably enumerable}} (!!{c.e.} for\nshort) iff it is empty or it h",
+          "target_start": "\\begin{defn}\nసమితి~$X$ ఖాళీగా ఉంటే లేదా దానికి గణనీయ లెక్కింపు ఉంటే, అప్పుడు మాత్రమే దాన్ని\n\\emph{\\tetoken{గణన"
+        },
+        {
+          "index": 32,
+          "source_start": "In addition to !!{axiomatizability}, another condition on theories to\nwhich the incompleteness theorems apply ",
+          "target_start": "\\tetoken{స్వీకృతీకరించదగినతతో}{!!{axiomatizability}} పాటు, అసంపూర్ణతా సిద్ధాంతాలు\nవర్తించే సిద్ధాంతాలపై మరో షర"
+        },
+        {
+          "index": 33,
+          "source_start": "\\begin{defn}\nA !!{formula}~$!A(x_1, \\dots, x_k, y)$ \\emph{!!{represents}} the\nfunction $f\\colon \\Nat^k \\to \\Na",
+          "target_start": "\\begin{defn}\n$f(n_1,\\dots,n_k)=m$ అయినప్పుడల్లా కింది రెండూ నెరవేరితే, అప్పుడు మాత్రమే\n\\tetoken{సూత్రం}{!!{for"
+        },
+        {
+          "index": 34,
+          "source_start": "\\begin{defn}\nA !!{formula}~$!A(x_1, \\dots, x_k)$ \\emph{!!{represents}} the\nrelation $R \\subseteq \\Nat^k$ iff,\n",
+          "target_start": "\\begin{defn}\nకింది రెండూ నెరవేరితే, అప్పుడు మాత్రమే \\tetoken{సూత్రం}{!!{formula}}\n$!A(x_1,\\dots,x_k)$ సంబంధం~$"
+        },
+        {
+          "index": 35,
+          "source_start": "A theory is ``strong enough'' for the incompleteness theorems to\napply if it !!{represents} all computable fun",
+          "target_start": "ఒక సిద్ధాంతం అన్ని గణనీయ ప్రమేయాలకూ అన్ని\n\\tetoken{నిర్ణయించదగిన}{!!{decidable}} సంబంధాలకూ\n\\tetoken{ప్రాతినిధ్"
+        },
+        {
+          "index": 36,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{int}{def}",
+        "\\ollabel{def:standard-model}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{int}{def}",
+        "\\ollabel{def:standard-model}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0278",
+      "source_path": "content/incompleteness/introduction/overview.tex",
+      "source_sha256": "4391b197866deaf9b67d1aa3ab870d0d11eb9d30e73475e56ee757a4c0fef0a0",
+      "translation_sha256": "0efad2f670762e7c06a9c4e131779f7a246ea7ce5b9034f785885aa58ec318c6",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{inc}{int}{ovr}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{inc}{int}{ovr}"
+      ],
+      "tokens_source": {
+        "!!a{derivation}": 1,
+        "!!a{formula}": 1,
+        "!!a{sentence}": 4,
+        "!!{axiomatizable}": 3,
+        "!!{complete}": 4,
+        "!!{decidable}": 5,
+        "!!{derivation}": 1,
+        "!!{derivation}s": 1,
+        "!!{formula}s": 3,
+        "!!{represents}": 3,
+        "!!{represents}s": 1,
+        "!!{sentence}": 3
+      },
+      "tokens_target": {
+        "!!a{derivation}": 1,
+        "!!a{formula}": 1,
+        "!!a{sentence}": 4,
+        "!!{axiomatizable}": 3,
+        "!!{complete}": 4,
+        "!!{decidable}": 5,
+        "!!{derivation}": 1,
+        "!!{derivation}s": 1,
+        "!!{formula}s": 3,
+        "!!{represents}": 3,
+        "!!{represents}s": 1,
+        "!!{sentence}": 3
+      },
+      "math_source": [
+        "$\\LangL_A$",
+        "$\\Gamma$",
+        "$\\LangL_A$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma\\Proves/!A$",
+        "$\\Gamma\\Proves/\\lnot!A$",
+        "$\\Gamma)$",
+        "$!G_\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$!G_\\Gamma$",
+        "$!G_\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$!G_\\Gamma$",
+        "$\\LangL_A$",
+        "$\\LangL_A$",
+        "$!A$",
+        "$\\delta$",
+        "$!A$",
+        "$\\Subst{!A}{t}{x}$",
+        "$\\LangL_A$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\LangL_A$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{PA}$",
+        "$\\OProv[\\Gamma](x)$",
+        "$\\Gamma$",
+        "$!A$",
+        "$n$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\Proves\\Prov[\\Gamma](\\num{n})$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\LangL_A$",
+        "$\\Gamma$",
+        "$\\lnot\\Prov[\\Gamma](\\num{n})$",
+        "$n$",
+        "$\\lfalse$",
+        "$\\Th{PA}$"
+      ],
+      "math_target_core": [
+        "$\\LangL_A$",
+        "$\\Gamma$",
+        "$\\LangL_A$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma\\Proves/!A$",
+        "$\\Gamma\\Proves/\\lnot!A$",
+        "$\\Gamma)$",
+        "$\\Gamma$",
+        "$!G_\\Gamma$",
+        "$\\Gamma$",
+        "$!G_\\Gamma$",
+        "$!G_\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$!G_\\Gamma$",
+        "$\\LangL_A$",
+        "$\\LangL_A$",
+        "$!A$",
+        "$\\delta$",
+        "$!A$",
+        "$\\Subst{!A}{t}{x}$",
+        "$\\LangL_A$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\LangL_A$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{PA}$",
+        "$\\Gamma$",
+        "$\\OProv[\\Gamma](x)$",
+        "$!A$",
+        "$n$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma\\Proves\\Prov[\\Gamma](\\num{n})$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\LangL_A$",
+        "$\\Gamma$",
+        "$\\lnot\\Prov[\\Gamma](\\num{n})$",
+        "$n$",
+        "$\\lfalse$",
+        "$\\Th{PA}$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [
+        "OLTEINCINT-009",
+        "OLTEINCINT-010"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 3613,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: incompleteness\n% Chapter: introduction\n% Section: overview",
+          "target_start": "% Part: incompleteness\n% Chapter: introduction\n% Section: overview"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{inc}{int}{ovr}",
+          "target_start": "\\olfileid{inc}{int}{ovr}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Overview of Incompleteness Results}",
+          "target_start": "\\olsection{అసంపూర్ణతా ఫలితాల అవలోకనం}"
+        },
+        {
+          "index": 6,
+          "source_start": "Hilbert expected that mathematics could be formalized in an\n!!{axiomatizable} theory which it would be possibl",
+          "target_start": "గణితాన్ని ఒక \\tetoken{స్వీకృతీకరించదగిన}{!!{axiomatizable}} సిద్ధాంతంలో\nసాంకేతికీకరించవచ్చనీ, ఆ సిద్ధాంతం \\tet"
+        },
+        {
+          "index": 7,
+          "source_start": "G\\\"odel's first incompleteness theorem showed that a version of\nRussell and Whitehead's \\emph{Principia Mathem",
+          "target_start": "రసెల్, వైట్‌హెడ్‌ల \\emph{ప్రిన్సిపియా మాథమాటికా}లోని ఒక రూపం\n\\tetoken{సంపూర్ణం}{!!{complete}} కాదని గ్యోడెల్ మ"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{thm}\nIf $\\Gamma$ is a consistent and !!{axiomatizable} theory in~$\\Lang\nL_A$ which !!{represents} all c",
+          "target_start": "\\begin{thm}\n$\\Gamma$ అనేది~$\\Lang L_A$లో అవైరుధ్యమైన,\n\\tetoken{స్వీకృతీకరించదగిన}{!!{axiomatizable}} సిద్ధాంతమ"
+        },
+        {
+          "index": 9,
+          "source_start": "To say that $\\Gamma$ is not !!{complete} is to say that for at least\none !!{sentence}~$!A$, $\\Gamma \\Proves/ !",
+          "target_start": "$\\Gamma$ \\tetoken{సంపూర్ణం}{!!{complete}} కాదనడం అంటే, కనీసం ఒక\n\\tetoken{వాక్యం}{!!{sentence}}~$!A$కు $\\Gamma "
+        },
+        {
+          "index": 10,
+          "source_start": "The construction in G\\\"odel's proof requires that we find a way to\nexpress in $\\Lang L_A$ the properties of an",
+          "target_start": "గ్యోడెల్ నిరూపణలోని నిర్మాణానికి, $\\Lang L_A$లోనే $\\Lang L_A$ పదాలూ\n\\tetoken{సూత్రాల}{!!{formula}s} లక్షణాలను,"
+        },
+        {
+          "index": 11,
+          "source_start": "Before we investigate how syntax can be arithmetized, however, we will\nconsider the condition that~$\\Gamma$ is",
+          "target_start": "అయితే వాక్యనిర్మాణాన్ని ఎలా అంకగణితీకరించవచ్చో పరిశీలించే ముందు, $\\Gamma$\n``తగినంత బలమైనది'' అనే షరతును---అంటే"
+        },
+        {
+          "index": 12,
+          "source_start": "The end result of the arithmetization of syntax is\n!!a{formula} $\\OProv[\\Gamma](x)$ which, via the coding of !",
+          "target_start": "వాక్యనిర్మాణపు అంకగణితీకరణ చివరికి, \\tetoken{సూత్రాలను}{!!{formula}s} సంఖ్యలుగా\nసంకేతీకరించడం ద్వారా~$\\Gamma$ "
+        },
+        {
+          "index": 13,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{int}{ovr}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{int}{ovr}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0279",
+      "source_path": "content/incompleteness/introduction/undecidability.tex",
+      "source_sha256": "ceeb4a161ad8064be0bd024febf2061d9fdfbf8b748293cb28c08c397cfa55f4",
+      "translation_sha256": "f59416b2e80c80f3422e68abb83e23a4b8315a8a95c666b6fd676a92fe643a14",
+      "source_blocks": 22,
+      "target_blocks": 22,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{inc}{int}{dec}",
+        "\\ollabel{cor:incompleteness}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{inc}{int}{dec}",
+        "\\ollabel{cor:incompleteness}"
+      ],
+      "tokens_source": {
+        "!!^{decidable}": 1,
+        "!!a{sentence}": 1,
+        "!!{axiomatizable}": 8,
+        "!!{complete}": 8,
+        "!!{computably enumerable}": 1,
+        "!!{decidable}": 23,
+        "!!{derivation}": 1,
+        "!!{derivation}s": 1,
+        "!!{derive}s": 1,
+        "!!{formula}s": 3,
+        "!!{represents}": 12,
+        "!!{represents}s": 4,
+        "!!{sentence}": 3,
+        "!!{sentence}s": 2
+      },
+      "tokens_target": {
+        "!!^{decidable}": 1,
+        "!!a{sentence}": 1,
+        "!!{axiomatizable}": 8,
+        "!!{complete}": 8,
+        "!!{computably enumerable}": 1,
+        "!!{decidable}": 23,
+        "!!{derivation}": 1,
+        "!!{derivation}s": 1,
+        "!!{derive}s": 1,
+        "!!{formula}s": 3,
+        "!!{represents}": 12,
+        "!!{represents}s": 4,
+        "!!{sentence}": 3,
+        "!!{sentence}s": 2
+      },
+      "math_source": [
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$!A_0(x)$",
+        "$!A_1(x)$",
+        "$D\\subseteq\\Nat$",
+        "\\[D=\\Setabs{n}{\\Gamma\\Proves\\lnot!A_n(\\num{n})}\\]",
+        "$D$",
+        "$n\\inD$",
+        "$!A_n(x)$",
+        "$\\lnot!A_n(\\num{n})$",
+        "$\\num{n}$",
+        "$x$",
+        "$!A_n(x)$",
+        "$!A(\\num{n})$",
+        "$\\lnot$",
+        "$\\Gamma$",
+        "$\\lnot!A(\\num{n})\\in\\Gamma$",
+        "$n\\inD$",
+        "$n\\notinD$",
+        "$D$",
+        "$\\Gamma$",
+        "$D$",
+        "$D$",
+        "$\\Gamma$",
+        "$!A_0(x)$",
+        "$!A_1(x)$",
+        "$d$",
+        "$!A_d(x)$",
+        "$D$",
+        "$\\Gamma$",
+        "$d\\notinD$",
+        "$!A_d(x)$",
+        "$D$",
+        "$\\Gamma\\Proves\\lnot!A_d(\\num{d})$",
+        "$d$",
+        "$D$",
+        "$d\\inD$",
+        "$d\\notinD$",
+        "$d\\inD$",
+        "$d\\inD$",
+        "$D$",
+        "$\\Gamma\\Proves\\lnot!A_d(\\num{d})$",
+        "$!A_d(x)$",
+        "$D$",
+        "$\\Gamma$",
+        "$\\Gamma\\Proves!A_d(\\num{d})$",
+        "$\\Gamma$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{PA}$",
+        "$\\Th{TA}$",
+        "$\\Gamma$",
+        "$!A\\in\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\lnot!A$",
+        "$\\Gamma$",
+        "$!A\\in\\Gamma$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\lnot!A$",
+        "$\\Gamma\\Proves/!A$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Th{TA}=\\Setabs{!A}{\\Sat{N}{!A}}$",
+        "$\\Th{TA}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Pres}=\\Setabs{!A\\in\\Lang{L_{A^+}}}{\\Sat{N}{!A}}$",
+        "$\\times$",
+        "$\\Obj{0}$",
+        "$\\prime$",
+        "$+$"
+      ],
+      "math_target_core": [
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$!A_0(x)$",
+        "$!A_1(x)$",
+        "$D\\subseteq\\Nat$",
+        "\\[D=\\Setabs{n}{\\Gamma\\Proves\\lnot!A_n(\\num{n})}\\]",
+        "$D$",
+        "$n\\inD$",
+        "$!A_n(x)$",
+        "$\\lnot!A_n(\\num{n})$",
+        "$!A_n(x)$",
+        "$x$",
+        "$\\num{n}$",
+        "$!A_n(\\num{n})$",
+        "$\\lnot$",
+        "$\\Gamma$",
+        "$\\lnot!A_n(\\num{n})\\in\\Gamma$",
+        "$n\\inD$",
+        "$n\\notinD$",
+        "$D$",
+        "$\\Gamma$",
+        "$D$",
+        "$\\Gamma$",
+        "$D$",
+        "$!A_0(x)$",
+        "$!A_1(x)$",
+        "$!A_d(x)$",
+        "$\\Gamma$",
+        "$D$",
+        "$d$",
+        "$d\\notinD$",
+        "$!A_d(x)$",
+        "$D$",
+        "$\\Gamma\\Proves\\lnot!A_d(\\num{d})$",
+        "$D$",
+        "$d$",
+        "$d\\inD$",
+        "$d\\notinD$",
+        "$d\\inD$",
+        "$d\\inD$",
+        "$D$",
+        "$\\Gamma\\Proves\\lnot!A_d(\\num{d})$",
+        "$!A_d(x)$",
+        "$\\Gamma$",
+        "$D$",
+        "$\\Gamma\\Proves!A_d(\\num{d})$",
+        "$\\Gamma$",
+        "$\\Th{Q}$",
+        "$\\Th{PA}$",
+        "$\\Th{TA}$",
+        "$\\Th{Q}$",
+        "$\\Gamma$",
+        "$!A\\in\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\lnot!A$",
+        "$!A\\in\\Gamma$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\lnot!A$",
+        "$\\Gamma\\Proves/!A$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Th{TA}=\\Setabs{!A}{\\Sat{N}{!A}}$",
+        "$\\Th{TA}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Pres}=\\Setabs{!A\\in\\Lang{L_{A^+}}}{\\Sat{N}{!A}}$",
+        "$\\times$",
+        "$\\Obj{0}$",
+        "$\\prime$",
+        "$+$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$!A(\\num{n})$",
+        "$\\lnot!A(\\num{n})\\in\\Gamma$"
+      ],
+      "math_delta_target_only": [
+        "$!A_n(\\num{n})$",
+        "$\\lnot!A_n(\\num{n})\\in\\Gamma$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTEINCINT-011",
+        "OLTEINCINT-012",
+        "OLTEINCINT-013",
+        "OLTEINCINT-014"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 4195,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: incompleteness\n% Chapter: introduction\n% Section: decidability",
+          "target_start": "% Part: incompleteness\n% Chapter: introduction\n% Section: decidability"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{inc}{int}{dec}",
+          "target_start": "\\olfileid{inc}{int}{dec}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Undecidability and Incompleteness}",
+          "target_start": "\\olsection{అనిర్ణయనీయత మరియు అసంపూర్ణత}"
+        },
+        {
+          "index": 6,
+          "source_start": "G\\\"odel's proof of the incompleteness theorems require arithmetization\nof syntax. But even without that we can",
+          "target_start": "అసంపూర్ణతా సిద్ధాంతాలకు గ్యోడెల్ ఇచ్చిన నిరూపణకు వాక్యనిర్మాణపు అంకగణితీకరణ\nఅవసరం. కానీ అది లేకుండానే, ఒక సిద్"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{thm}\nIf $\\Gamma$ is a consistent theory that !!{represents} every\n!!{decidable} relation, then $\\Gamma$",
+          "target_start": "\\begin{thm}\n$\\Gamma$ ప్రతి \\tetoken{నిర్ణయించదగిన}{!!{decidable}} సంబంధానికీ\n\\tetoken{ప్రాతినిధ్యం వహించే}{!!{"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{proof}\nSuppose $\\Gamma$ were !!{decidable}. We show that if $\\Gamma$\n!!{represents} every !!{decidable}",
+          "target_start": "\\begin{proof}\n$\\Gamma$ \\tetoken{నిర్ణయించదగినది}{!!{decidable}} అనుకుందాం. ప్రతి\n\\tetoken{నిర్ణయించదగిన}{!!{de"
+        },
+        {
+          "index": 9,
+          "source_start": "!!^{decidable} properties (one-place relations) are represented by\n!!{formula}s with one free variable. Let $!",
+          "target_start": "\\tetoken{నిర్ణయించదగిన}{!!^{decidable}} లక్షణాలకు (ఏకస్థానిక సంబంధాలకు) ఒక\nస్వేచ్ఛా చరం గల \\tetoken{సూత్రాలు}{"
+        },
+        {
+          "index": 10,
+          "source_start": "Since $\\Gamma$ !!{represents} all !!{decidable} properties, it\n!!{represents}~$D$.  And the !!{formula}s which",
+          "target_start": "$\\Gamma$ అన్ని \\tetoken{నిర్ణయించదగిన}{!!{decidable}} లక్షణాలకూ\n\\tetoken{ప్రాతినిధ్యం వహిస్తుంది}{!!{represent"
+        },
+        {
+          "index": 11,
+          "source_start": "Since $d \\in D$, by the definition of~$D$, $\\Gamma \\Proves \\lnot\n!A_d(\\num{d})$. On the other hand, since $!A_",
+          "target_start": "$d\\in D$ కనుక, $D$ నిర్వచనం ప్రకారం $\\Gamma\\Proves\\lnot !A_d(\\num{d})$.\nమరోవైపు, $!A_d(x)$ $\\Gamma$లో~$D$కు\n\\t"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{explain}\nThe preceding theorem shows that no consistent theory that\n!!{represents} all !!{decidable} re",
+          "target_start": "\\begin{explain}\nఅన్ని \\tetoken{నిర్ణయించదగిన}{!!{decidable}} సంబంధాలకూ\n\\tetoken{ప్రాతినిధ్యం వహించే}{!!{repres"
+        },
+        {
+          "index": 13,
+          "source_start": "We can also use this result to obtain a weak version of the first\nincompleteness theorem.  Any theory that is ",
+          "target_start": "మొదటి అసంపూర్ణతా సిద్ధాంతపు బలహీన రూపాన్ని పొందడానికి కూడా ఈ ఫలితాన్ని\nఉపయోగించవచ్చు. \\tetoken{స్వీకృతీకరించదగ"
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{thm}\nIf $\\Gamma$ is !!{axiomatizable} and !!{complete} it is !!{decidable}.\n\\end{thm}",
+          "target_start": "\\begin{thm}\n$\\Gamma$ \\tetoken{స్వీకృతీకరించదగినదీ}{!!{axiomatizable}},\n\\tetoken{సంపూర్ణమైనదీ}{!!{complete}} అయ"
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{proof}\nAny inconsistent theory is !!{decidable}, since inconsistent theories\ncontain all !!{sentence}s,",
+          "target_start": "\\begin{proof}\nప్రతి వైరుధ్య సిద్ధాంతమూ \\tetoken{నిర్ణయించదగినది}{!!{decidable}}. ఎందుకంటే\nవైరుధ్య సిద్ధాంతాలు "
+        },
+        {
+          "index": 16,
+          "source_start": "So suppose $\\Gamma$ is consistent, and furthermore is\n!!{axiomatizable}, and !!{complete}. Since $\\Gamma$ is\n!",
+          "target_start": "ఇప్పుడు $\\Gamma$ అవైరుధ్యమనీ, అదనంగా\n\\tetoken{స్వీకృతీకరించదగినదీ}{!!{axiomatizable}},\n\\tetoken{సంపూర్ణమైనదీ}{"
+        },
+        {
+          "index": 17,
+          "source_start": "\\begin{cor}\n\\ollabel{cor:incompleteness}\nIf $\\Gamma$ is consistent, !!{axiomatizable}, and !!{represents} ever",
+          "target_start": "\\begin{cor}\n\\ollabel{cor:incompleteness}\n$\\Gamma$ అవైరుధ్యమైనదీ, \\tetoken{స్వీకృతీకరించదగినదీ}{!!{axiomatizabl"
+        },
+        {
+          "index": 18,
+          "source_start": "\\begin{proof}\nIf $\\Gamma$ were !!{complete}, it would be !!{decidable} by the\nprevious theorem (since it is !!",
+          "target_start": "\\begin{proof}\n$\\Gamma$ \\tetoken{సంపూర్ణమైతే}{!!{complete}}, అది\n\\tetoken{స్వీకృతీకరించదగినదీ}{!!{axiomatizable"
+        },
+        {
+          "index": 19,
+          "source_start": "\\begin{prob}\nShow that $\\Th{TA} = \\Setabs{!A}{\\Sat{N}{!A}}$ is not\n!!{axiomatizable}. You may assume that $\\Th",
+          "target_start": "\\begin{prob}\n$\\Th{TA}=\\Setabs{!A}{\\Sat{N}{!A}}$\n\\tetoken{స్వీకృతీకరించదగినది}{!!{axiomatizable}} కాదని చూపండి."
+        },
+        {
+          "index": 20,
+          "source_start": "Once we have established that, e.g., $\\Th{Q}$, !!{represents} all\n!!{decidable} properties, the corollary tell",
+          "target_start": "ఉదాహరణకు, అన్ని \\tetoken{నిర్ణయించదగిన}{!!{decidable}} లక్షణాలకూ $\\Th{Q}$\n\\tetoken{ప్రాతినిధ్యం వహిస్తుందని}{!"
+        },
+        {
+          "index": 21,
+          "source_start": "It should be noted that not every \\emph{interesting} theory is\nincomplete or undecidable. There are many theor",
+          "target_start": "ప్రతి \\emph{ఆసక్తికర} సిద్ధాంతమూ అసంపూర్ణమో అనిర్ణయనీయమో కాదని గమనించాలి.\nఆసక్తికరమైన గణిత వాస్తవాలను వర్ణించగ"
+        },
+        {
+          "index": 22,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{int}{dec}",
+        "\\ollabel{cor:incompleteness}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{int}{dec}",
+        "\\ollabel{cor:incompleteness}"
+      ],
+      "protected_identifier_parity": true
+    }
+  ]
+}

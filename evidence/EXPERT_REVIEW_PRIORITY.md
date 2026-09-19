@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 270 of 722 draft units**. This view selects 267 of 293 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 279 of 722 draft units**. This view selects 282 of 308 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -433,6 +433,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0266; turing-machines/undecidability/enumerating-tms; translation/content/turing-machines/undecidability/enumerating-tms.tex:9-10; printed/PDF page pending; OLP-0267; turing-machines/undecidability/universal-tm; translation/content/turing-machines/undecidability/universal-tm.tex:23-26; printed/PDF page pending; OLP-0267; turing-machines/undecidability/universal-tm; translation/content/turing-machines/undecidability/universal-tm.tex:52-61; printed/PDF page pending; OLP-0268; turing-machines/undecidability/halting-problem; translation/content/turing-machines/undecidability/halting-problem.tex:35-38; printed/PDF page pending; OLP-0269; turing-machines/undecidability/decision-problem; translation/content/turing-machines/undecidability/decision-problem.tex:9-10; printed/PDF page pending; OLP-0270; turing-machines/undecidability/representing-tms; translation/content/turing-machines/undecidability/representing-tms.tex:9-10; printed/PDF page pending; OLP-0272; turing-machines/undecidability/unsolvability-decision-problem; translation/content/turing-machines/undecidability/unsolvability-decision-problem.tex:71-77; printed/PDF page pending; OLP-0273; turing-machines/undecidability/trakhtenbrot; translation/content/turing-machines/undecidability/trakhtenbrot.tex:222-226; printed/PDF page pending
 
 - Please double-check: Please double-check whether “అనిర్ణయనీయత / ట్యూరింగ్ యంత్రాల లెక్కింపు / ప్రామాణిక ట్యూరింగ్ యంత్రం / సూచిక / సార్వత్రిక ట్యూరింగ్ యంత్రం / ఆగే ప్రమేయం, ఆగే సమస్య / నిర్ణయ సమస్య / గణనకు మొదటిస్థాయి ప్రాతినిధ్యం / పరిమిత సంతృప్తిపరచదగినత / అర్ధ-నిర్ణయించదగినత / ట్రాఖ్టెన్‌బ్రోట్ సిద్ధాంతం” is idiomatic and technically standard for “undecidability / enumeration of Turing machines / standard Turing machine / index / universal Turing machine / halting function and Halting Problem / decision problem / representation of computation / finite satisfiability / semi-decidability / Trakhtenbrot's theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T070 — incompleteness / Hilbert's program / theory / standard model of arithmetic / true arithmetic / Robinson's Q / Peano arithmetic / induction schema / complete and decidable theory / axiomatizable / computably enumerable / representation of computable functions and decidable relations / independent sentence / Gödel sentence / arithmetization of syntax / provability predicate / consistency statement / Presburger arithmetic
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: అసంపూర్ణత / హిల్బర్ట్ కార్యక్రమం / సిద్ధాంతం / అంకగణితపు ప్రామాణిక నమూనా / నిజ అంకగణితం / రాబిన్సన్ Q / పియానో అంకగణితం / ఆగమన పథకం / సంపూర్ణ, నిర్ణయించదగిన సిద్ధాంతం / స్వీకృతీకరించదగిన / గణనీయంగా లెక్కించదగిన / గణనీయ ప్రమేయాలు, నిర్ణయించదగిన సంబంధాలకు ప్రాతినిధ్యం / స్వతంత్ర వాక్యం / గ్యోడెల్ వాక్యం / వాక్యనిర్మాణపు అంకగణితీకరణ / నిరూప్యతా విధేయం / అవైరుధ్య వాక్యం / ప్రెస్‌బర్గర్ అంకగణితం
+
+- Occurrences: OLP-0276; incompleteness/introduction/historical-background; translation/content/incompleteness/introduction/historical-background.tex:176-185; printed/PDF page pending; OLP-0277; incompleteness/introduction/definitions; translation/content/incompleteness/introduction/definitions.tex:31-35; printed/PDF page pending; OLP-0277; incompleteness/introduction/definitions; translation/content/incompleteness/introduction/definitions.tex:43-55; printed/PDF page pending; OLP-0277; incompleteness/introduction/definitions; translation/content/incompleteness/introduction/definitions.tex:99-119; printed/PDF page pending; OLP-0277; incompleteness/introduction/definitions; translation/content/incompleteness/introduction/definitions.tex:121-131; printed/PDF page pending; OLP-0277; incompleteness/introduction/definitions; translation/content/incompleteness/introduction/definitions.tex:200-203; printed/PDF page pending; OLP-0277; incompleteness/introduction/definitions; translation/content/incompleteness/introduction/definitions.tex:263-273; printed/PDF page pending; OLP-0278; incompleteness/introduction/overview; translation/content/incompleteness/introduction/overview.tex:40-52; printed/PDF page pending; OLP-0278; incompleteness/introduction/overview; translation/content/incompleteness/introduction/overview.tex:54-65; printed/PDF page pending; OLP-0278; incompleteness/introduction/overview; translation/content/incompleteness/introduction/overview.tex:85-99; printed/PDF page pending; OLP-0279; incompleteness/introduction/undecidability; translation/content/incompleteness/introduction/undecidability.tex:150-157; printed/PDF page pending
+
+- Please double-check: Please double-check whether “అసంపూర్ణత / హిల్బర్ట్ కార్యక్రమం / సిద్ధాంతం / అంకగణితపు ప్రామాణిక నమూనా / నిజ అంకగణితం / రాబిన్సన్ Q / పియానో అంకగణితం / ఆగమన పథకం / సంపూర్ణ, నిర్ణయించదగిన సిద్ధాంతం / స్వీకృతీకరించదగిన / గణనీయంగా లెక్కించదగిన / గణనీయ ప్రమేయాలు, నిర్ణయించదగిన సంబంధాలకు ప్రాతినిధ్యం / స్వతంత్ర వాక్యం / గ్యోడెల్ వాక్యం / వాక్యనిర్మాణపు అంకగణితీకరణ / నిరూప్యతా విధేయం / అవైరుధ్య వాక్యం / ప్రెస్‌బర్గర్ అంకగణితం” is idiomatic and technically standard for “incompleteness / Hilbert's program / theory / standard model of arithmetic / true arithmetic / Robinson's Q / Peano arithmetic / induction schema / complete and decidable theory / axiomatizable / computably enumerable / representation of computable functions and decidable relations / independent sentence / Gödel sentence / arithmetization of syntax / provability predicate / consistency statement / Presburger arithmetic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -2673,3 +2683,143 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0273; turing-machines/undecidability/trakhtenbrot; translation/content/turing-machines/undecidability/trakhtenbrot.tex:195-199; printed/PDF page pending; OLP-0273; turing-machines/undecidability/trakhtenbrot; translation/content/turing-machines/undecidability/trakhtenbrot.tex:201-214; printed/PDF page pending; OLP-0273; turing-machines/undecidability/trakhtenbrot; translation/content/turing-machines/undecidability/trakhtenbrot.tex:216-220; printed/PDF page pending
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-018 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-001 — OLTEINCINT-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used the intended plural logical assumptions; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0276; incompleteness/introduction/historical-background; translation/content/incompleteness/introduction/historical-background.tex:47-52; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-001 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-002 — OLTEINCINT-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used the intended plural mathematical objects; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0276; incompleteness/introduction/historical-background; translation/content/incompleteness/introduction/historical-background.tex:89-94; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-002 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-003 — OLTEINCINT-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used a complete past-tense contribution claim; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0276; incompleteness/introduction/historical-background; translation/content/incompleteness/introduction/historical-background.tex:98-103; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-003 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-004 — OLTEINCINT-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: added the controlling consistency, effective-axiomatization and strength hypotheses and limited the consistency consequence to non-provability; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0276; incompleteness/introduction/historical-background; translation/content/incompleteness/introduction/historical-background.tex:167-173; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-004 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-005 — OLTEINCINT-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: stated directly that the eight sentences are the axioms; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0277; incompleteness/introduction/definitions; translation/content/incompleteness/introduction/definitions.tex:113-119; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-005 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-006 — OLTEINCINT-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored y_1 through y_n in the base, successor and conclusion occurrences of A; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0277; incompleteness/introduction/definitions; translation/content/incompleteness/introduction/definitions.tex:121-131; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-006 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-007 — OLTEINCINT-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used the plural possessive sense; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0277; incompleteness/introduction/definitions; translation/content/incompleteness/introduction/definitions.tex:254-262; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-007 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-008 — OLTEINCINT-008
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored the controlling in-Gamma phrase in the introductory sentence; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0277; incompleteness/introduction/definitions; translation/content/incompleteness/introduction/definitions.tex:275-285; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-008 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-009 — OLTEINCINT-009
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: stated that the proof was generalized to depend only on the isolated features; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0278; incompleteness/introduction/overview; translation/content/incompleteness/introduction/overview.tex:25-30; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-009 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-010 — OLTEINCINT-010
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: preserved the raw OpenLogic token identity and rendered the correct infinitive sense; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0278; incompleteness/introduction/overview; translation/content/incompleteness/introduction/overview.tex:72-82; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-010 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-011 — OLTEINCINT-011
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used the intended singular agreement; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0279; incompleteness/introduction/undecidability; translation/content/incompleteness/introduction/undecidability.tex:13-18; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-011 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-012 — OLTEINCINT-012
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored the subscript n in both diagonal formula occurrences; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0279; incompleteness/introduction/undecidability; translation/content/incompleteness/introduction/undecidability.tex:38-45; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-012 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-013 — OLTEINCINT-013
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: preserved both raw OpenLogic token identities and rendered the grammatically correct representation senses; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0279; incompleteness/introduction/undecidability; translation/content/incompleteness/introduction/undecidability.tex:66-74; printed/PDF page pending; OLP-0279; incompleteness/introduction/undecidability; translation/content/incompleteness/introduction/undecidability.tex:76-85; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-013 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-014 — OLTEINCINT-014
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: rendered the intended satisfy sense; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0279; incompleteness/introduction/undecidability; translation/content/incompleteness/introduction/undecidability.tex:146-152; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-014 is mathematically precise and idiomatic.

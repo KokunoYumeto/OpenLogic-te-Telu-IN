@@ -1,0 +1,218 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTEINCINT-20260920",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0276",
+      "OLP-0277",
+      "OLP-0278",
+      "OLP-0279"
+    ],
+    "finding_count": 14
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEINCINT-001",
+      "unit_id": "OLP-0276",
+      "classification": "confirmed_singular_plural_mismatch",
+      "source": {
+        "path": "content/incompleteness/introduction/historical-background.tex",
+        "bytes": 12555,
+        "sha256": "24c4a36e9f95064267c6bd001f81091cbc7f963c25e32a6d3c8630483b76d3e6",
+        "locator": "lines 51-55, Frege's logical assumptions"
+      },
+      "finding": "The source says arithmetic is derived from a singular 'purely logical assumption' and immediately refers back to plural assumptions.",
+      "controlling_evidence": "Frege's system uses multiple logical principles, and the following sentence explicitly names 'these assumptions'.",
+      "required_translation_handling": "Use the intended plural logical assumptions and add an adjacent OLTEINCINT-001 disclosure."
+    },
+    {
+      "finding_id": "OLTEINCINT-002",
+      "unit_id": "OLP-0276",
+      "classification": "confirmed_missing_plural_inflection",
+      "source": {
+        "path": "content/incompleteness/introduction/historical-background.tex",
+        "bytes": 12555,
+        "sha256": "24c4a36e9f95064267c6bd001f81091cbc7f963c25e32a6d3c8630483b76d3e6",
+        "locator": "lines 107-110, Kronecker's representation claim"
+      },
+      "finding": "The phrase 'all mathematical object' lacks the plural ending required by 'all'.",
+      "controlling_evidence": "The historical claim concerns mathematical objects generally, represented in terms of the integers.",
+      "required_translation_handling": "Render the intended plural 'all mathematical objects' and add an adjacent OLTEINCINT-002 disclosure."
+    },
+    {
+      "finding_id": "OLTEINCINT-003",
+      "unit_id": "OLP-0276",
+      "classification": "confirmed_subject_verb_agreement",
+      "source": {
+        "path": "content/incompleteness/introduction/historical-background.tex",
+        "bytes": 12555,
+        "sha256": "24c4a36e9f95064267c6bd001f81091cbc7f963c25e32a6d3c8630483b76d3e6",
+        "locator": "lines 117-119, Cantor and Dedekind's historical contribution"
+      },
+      "finding": "The source writes 'Work ... help to introduce' with a singular head noun and a present-tense plural verb for a completed historical development.",
+      "controlling_evidence": "The paragraph narrates nineteenth-century work that helped introduce the now-standard set-theoretic view.",
+      "required_translation_handling": "Use a grammatically complete past-tense contribution claim and add an adjacent OLTEINCINT-003 disclosure."
+    },
+    {
+      "finding_id": "OLTEINCINT-004",
+      "unit_id": "OLP-0276",
+      "classification": "confirmed_overbroad_incompleteness_claim",
+      "source": {
+        "path": "content/incompleteness/introduction/historical-background.tex",
+        "bytes": 12555,
+        "sha256": "24c4a36e9f95064267c6bd001f81091cbc7f963c25e32a6d3c8630483b76d3e6",
+        "locator": "lines 203-207, summary of Gödel's incompleteness theorems"
+      },
+      "finding": "The source says without qualification that no axiom system for mathematics is complete and that its consistency sentence can neither be proved nor refuted.",
+      "controlling_evidence": "The chapter's later theorems require consistency, effective axiomatization and sufficient arithmetic strength; the second theorem establishes non-provability of the appropriate consistency statement, not the blanket two-sided claim made here.",
+      "required_translation_handling": "Qualify the claim by the theorem's controlling hypotheses, state incompleteness for such systems, and limit the consistency consequence to non-provability; add an adjacent OLTEINCINT-004 disclosure."
+    },
+    {
+      "finding_id": "OLTEINCINT-005",
+      "unit_id": "OLP-0277",
+      "classification": "confirmed_subject_verb_agreement",
+      "source": {
+        "path": "content/incompleteness/introduction/definitions.tex",
+        "bytes": 14156,
+        "sha256": "bca709e14f7652027776c1a55e484466d5fe4e2dcc91390f598d374ed70cee71",
+        "locator": "lines 116-120, axioms of Robinson's Q"
+      },
+      "finding": "The source writes 'The set ... are the axioms', mismatching the singular grammatical subject and plural verb.",
+      "controlling_evidence": "The intended mathematical content is that the eight displayed sentences are the axioms whose consequences form Q.",
+      "required_translation_handling": "State directly that the eight sentences are the axioms and add an adjacent OLTEINCINT-005 disclosure."
+    },
+    {
+      "finding_id": "OLTEINCINT-006",
+      "unit_id": "OLP-0277",
+      "classification": "confirmed_induction_parameter_omission",
+      "source": {
+        "path": "content/incompleteness/introduction/definitions.tex",
+        "bytes": 14156,
+        "sha256": "bca709e14f7652027776c1a55e484466d5fe4e2dcc91390f598d374ed70cee71",
+        "locator": "lines 123-130, general induction schema"
+      },
+      "finding": "The definition says A has free parameters y_1 through y_n, but omits them from every occurrence of A in the displayed general induction instance.",
+      "controlling_evidence": "The outer universal quantifiers bind those parameters, and the later mechanical recognition test describes the correctly parameterized schema.",
+      "required_translation_handling": "Restore y_1 through y_n in the base, successor and conclusion occurrences of A, preserve the outer quantifiers, and add an adjacent OLTEINCINT-006 disclosure."
+    },
+    {
+      "finding_id": "OLTEINCINT-007",
+      "unit_id": "OLP-0277",
+      "classification": "confirmed_pronoun_number_mismatch",
+      "source": {
+        "path": "content/incompleteness/introduction/definitions.tex",
+        "bytes": 14156,
+        "sha256": "bca709e14f7652027776c1a55e484466d5fe4e2dcc91390f598d374ed70cee71",
+        "locator": "lines 248-255, sufficient strength of theories"
+      },
+      "finding": "The plural subject 'the theories in question' is followed by the singular possessive 'its theorems'.",
+      "controlling_evidence": "Each theory under discussion is required to include the relevant basic sentences among its own theorems.",
+      "required_translation_handling": "Use the plural possessive sense and add an adjacent OLTEINCINT-007 disclosure."
+    },
+    {
+      "finding_id": "OLTEINCINT-008",
+      "unit_id": "OLP-0277",
+      "classification": "confirmed_missing_controlling_theory_phrase",
+      "source": {
+        "path": "content/incompleteness/introduction/definitions.tex",
+        "bytes": 14156,
+        "sha256": "bca709e14f7652027776c1a55e484466d5fe4e2dcc91390f598d374ed70cee71",
+        "locator": "lines 280-288, representation of relations"
+      },
+      "finding": "Unlike the immediately preceding function definition, the introductory sentence for relation representation omits 'in Γ' even though both defining clauses are Γ-provability conditions.",
+      "controlling_evidence": "Representation is relative to a theory; the two clauses and all subsequent uses explicitly supply Γ.",
+      "required_translation_handling": "Restore 'in Γ' in the introductory sentence and add an adjacent OLTEINCINT-008 disclosure."
+    },
+    {
+      "finding_id": "OLTEINCINT-009",
+      "unit_id": "OLP-0278",
+      "classification": "confirmed_merged_verb_phrases",
+      "source": {
+        "path": "content/incompleteness/introduction/overview.tex",
+        "bytes": 5312,
+        "sha256": "4391b197866deaf9b67d1aa3ab870d0d11eb9d30e73475e56ee757a4c0fef0a0",
+        "locator": "lines 27-30, generalization of Gödel's proof"
+      },
+      "finding": "The phrase 'to generalize Gödel's proof to apply make it depend' merges two incompatible verb constructions.",
+      "controlling_evidence": "The preceding sentence asks which theory features suffice, and the next sentence states the resulting general theorem.",
+      "required_translation_handling": "State that the proof was generalized so as to depend only on those features and add an adjacent OLTEINCINT-009 disclosure."
+    },
+    {
+      "finding_id": "OLTEINCINT-010",
+      "unit_id": "OLP-0278",
+      "classification": "confirmed_infinitive_verb_form",
+      "source": {
+        "path": "content/incompleteness/introduction/overview.tex",
+        "bytes": 5312,
+        "sha256": "4391b197866deaf9b67d1aa3ab870d0d11eb9d30e73475e56ee757a4c0fef0a0",
+        "locator": "lines 71-76, aim of representing functions and relations"
+      },
+      "finding": "The source has 'our aim is to !!{represents}s', placing a malformed third-person marked form after an infinitive.",
+      "controlling_evidence": "The object is to represent the functions and relations in a theory of arithmetic.",
+      "required_translation_handling": "Preserve the raw OpenLogic token identity for audit parity, render the correct infinitive sense, and add an adjacent OLTEINCINT-010 disclosure."
+    },
+    {
+      "finding_id": "OLTEINCINT-011",
+      "unit_id": "OLP-0279",
+      "classification": "confirmed_subject_verb_agreement",
+      "source": {
+        "path": "content/incompleteness/introduction/undecidability.tex",
+        "bytes": 6006,
+        "sha256": "ceeb4a161ad8064be0bd024febf2061d9fdfbf8b748293cb28c08c397cfa55f4",
+        "locator": "lines 13-16, arithmetization requirement"
+      },
+      "finding": "The singular subject 'Gödel's proof' is followed by the plural verb 'require'.",
+      "controlling_evidence": "The sentence means that Gödel's proof requires arithmetization of syntax.",
+      "required_translation_handling": "Render the intended singular agreement and add an adjacent OLTEINCINT-011 disclosure."
+    },
+    {
+      "finding_id": "OLTEINCINT-012",
+      "unit_id": "OLP-0279",
+      "classification": "confirmed_diagonal_formula_subscript_omission",
+      "source": {
+        "path": "content/incompleteness/introduction/undecidability.tex",
+        "bytes": 6006,
+        "sha256": "ceeb4a161ad8064be0bd024febf2061d9fdfbf8b748293cb28c08c397cfa55f4",
+        "locator": "lines 35-41, decision procedure for the diagonal set D"
+      },
+      "finding": "After constructing the diagonal sentence from A_n(x), the source twice drops the subscript n and writes A(num(n)).",
+      "controlling_evidence": "D is defined using the nth formula A_n, and the preceding sentence explicitly computes A_n(x) before diagonal substitution.",
+      "required_translation_handling": "Restore A_n(num(n)) in both places and add an adjacent OLTEINCINT-012 disclosure."
+    },
+    {
+      "finding_id": "OLTEINCINT-013",
+      "unit_id": "OLP-0279",
+      "classification": "confirmed_duplicate_verb_inflection",
+      "source": {
+        "path": "content/incompleteness/introduction/undecidability.tex",
+        "bytes": 6006,
+        "sha256": "ceeb4a161ad8064be0bd024febf2061d9fdfbf8b748293cb28c08c397cfa55f4",
+        "locator": "lines 58-71, consequences for Q and stronger theories"
+      },
+      "finding": "The source twice uses the already inflected token '!!{represents}s' in constructions that supply another agreement marker or require an uninflected complement.",
+      "controlling_evidence": "The intended claims are that Q represents every decidable relation and that certain axiomatizable theories represent every decidable property.",
+      "required_translation_handling": "Preserve both raw OpenLogic token identities for audit parity, render the correct representation sense, and add an adjacent OLTEINCINT-013 disclosure."
+    },
+    {
+      "finding_id": "OLTEINCINT-014",
+      "unit_id": "OLP-0279",
+      "classification": "confirmed_spelling_error",
+      "source": {
+        "path": "content/incompleteness/introduction/undecidability.tex",
+        "bytes": 6006,
+        "sha256": "ceeb4a161ad8064be0bd024febf2061d9fdfbf8b748293cb28c08c397cfa55f4",
+        "locator": "lines 127-133, scope limitation and Presburger arithmetic"
+      },
+      "finding": "The source spells 'satisfy' as 'satisify'.",
+      "controlling_evidence": "The sentence says that some interesting theories do not satisfy Gödel's hypotheses and then gives Presburger arithmetic as an example.",
+      "required_translation_handling": "Render the intended 'satisfy' sense and add an adjacent OLTEINCINT-014 disclosure."
+    }
+  ]
+}

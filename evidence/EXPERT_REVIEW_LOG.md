@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 270 of 722 draft units**. This log contains 69 terminology/sense decisions and 224 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 279 of 722 draft units**. This log contains 70 terminology/sense decisions and 238 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1663,6 +1663,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low semantic uncertainty because each specialized notion is fixed by an explicit definition, simulation, formula scheme, reduction or proof; medium to high nomenclatural uncertainty for universal-machine, represented-computation and finite-satisfiability compounds
 
 - Please double-check: Please double-check whether “అనిర్ణయనీయత / ట్యూరింగ్ యంత్రాల లెక్కింపు / ప్రామాణిక ట్యూరింగ్ యంత్రం / సూచిక / సార్వత్రిక ట్యూరింగ్ యంత్రం / ఆగే ప్రమేయం, ఆగే సమస్య / నిర్ణయ సమస్య / గణనకు మొదటిస్థాయి ప్రాతినిధ్యం / పరిమిత సంతృప్తిపరచదగినత / అర్ధ-నిర్ణయించదగినత / ట్రాఖ్టెన్‌బ్రోట్ సిద్ధాంతం” is idiomatic and technically standard for “undecidability / enumeration of Turing machines / standard Turing machine / index / universal Turing machine / halting function and Halting Problem / decision problem / representation of computation / finite satisfiability / semi-decidability / Trakhtenbrot's theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T070 — incompleteness / Hilbert's program / theory / standard model of arithmetic / true arithmetic / Robinson's Q / Peano arithmetic / induction schema / complete and decidable theory / axiomatizable / computably enumerable / representation of computable functions and decidable relations / independent sentence / Gödel sentence / arithmetization of syntax / provability predicate / consistency statement / Presburger arithmetic
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: అసంపూర్ణత / హిల్బర్ట్ కార్యక్రమం / సిద్ధాంతం / అంకగణితపు ప్రామాణిక నమూనా / నిజ అంకగణితం / రాబిన్సన్ Q / పియానో అంకగణితం / ఆగమన పథకం / సంపూర్ణ, నిర్ణయించదగిన సిద్ధాంతం / స్వీకృతీకరించదగిన / గణనీయంగా లెక్కించదగిన / గణనీయ ప్రమేయాలు, నిర్ణయించదగిన సంబంధాలకు ప్రాతినిధ్యం / స్వతంత్ర వాక్యం / గ్యోడెల్ వాక్యం / వాక్యనిర్మాణపు అంకగణితీకరణ / నిరూప్యతా విధేయం / అవైరుధ్య వాక్యం / ప్రెస్‌బర్గర్ అంకగణితం
+
+- Exact implementation: OLP-0276; incompleteness/introduction/historical-background; content/incompleteness/introduction/historical-background.tex:209-221 ↔ translation/content/incompleteness/introduction/historical-background.tex:176-185 (OLP-0276-B022); printed/PDF page pending; OLP-0277; incompleteness/introduction/definitions; content/incompleteness/introduction/definitions.tex:34-38 ↔ translation/content/incompleteness/introduction/definitions.tex:31-35 (OLP-0277-B007); printed/PDF page pending; OLP-0277; incompleteness/introduction/definitions; content/incompleteness/introduction/definitions.tex:45-57 ↔ translation/content/incompleteness/introduction/definitions.tex:43-55 (OLP-0277-B009); printed/PDF page pending; OLP-0277; incompleteness/introduction/definitions; content/incompleteness/introduction/definitions.tex:103-121 ↔ translation/content/incompleteness/introduction/definitions.tex:99-119 (OLP-0277-B015); printed/PDF page pending; OLP-0277; incompleteness/introduction/definitions; content/incompleteness/introduction/definitions.tex:123-130 ↔ translation/content/incompleteness/introduction/definitions.tex:121-131 (OLP-0277-B016); printed/PDF page pending; OLP-0277; incompleteness/introduction/definitions; content/incompleteness/introduction/definitions.tex:201-204 ↔ translation/content/incompleteness/introduction/definitions.tex:200-203 (OLP-0277-B027); printed/PDF page pending; OLP-0277; incompleteness/introduction/definitions; content/incompleteness/introduction/definitions.tex:269-278 ↔ translation/content/incompleteness/introduction/definitions.tex:263-273 (OLP-0277-B033); printed/PDF page pending; OLP-0278; incompleteness/introduction/overview; content/incompleteness/introduction/overview.tex:39-51 ↔ translation/content/incompleteness/introduction/overview.tex:40-52 (OLP-0278-B009); printed/PDF page pending; OLP-0278; incompleteness/introduction/overview; content/incompleteness/introduction/overview.tex:53-65 ↔ translation/content/incompleteness/introduction/overview.tex:54-65 (OLP-0278-B010); printed/PDF page pending; OLP-0278; incompleteness/introduction/overview; content/incompleteness/introduction/overview.tex:84-98 ↔ translation/content/incompleteness/introduction/overview.tex:85-99 (OLP-0278-B012); printed/PDF page pending; OLP-0279; incompleteness/introduction/undecidability; content/incompleteness/introduction/undecidability.tex:127-135 ↔ translation/content/incompleteness/introduction/undecidability.tex:150-157 (OLP-0279-B021); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P026, PDF 88, printed 81, Consistency section; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P028, PDF 92, printed 85, Unary predicates, binary relations and quantifier classification; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P033, PDF 40, printed 33, Inference section heading and definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P005 supports native natural-number exposition; TE-P008 and TE-P010--TE-P011 support set, ordered-pair, relation and function language; TE-P018 and TE-P023--TE-P033 support formal-logic, derivation, predicate, quantifier, consistency and proof register. TE-P024, TE-P026 and TE-P027 were visually rechecked for this decision. The witnesses do not directly attest Hilbert's program, Robinson's Q, representability, arithmetization, provability predicates or Gödel's incompleteness theorems. The frozen definitions, induction scheme, diagonal argument and theorem statements in OLP-0274--OLP-0279 control those exact senses; TE-T011, TE-T020, TE-T024, TE-T028, TE-T034, TE-T047, TE-T058 and TE-T069 supply earlier reversible choices. హిల్బర్ట్, రాబిన్సన్, పియానో, గ్యోడెల్ and ప్రెస్‌బర్గర్ are source names or eponyms. Q, PA, TA, language symbols and formula metavariables remain protected formal notation; no unexplained English technical headword remains in reader-facing prose
+
+- Alternatives: reuse the established number, theory, axiom, derivation, consistency and proof register, with incompleteness, representability and arithmetization compounds fixed by the adjacent definitions and theorems (chosen); leave the specialized incompleteness vocabulary in untranslated English reader prose (rejected); collapse completeness, decidability and axiomatizability into one property (rejected because the chapter distinguishes them); claim direct native attestation for Robinson’s Q, representability, provability predicates or Gödel’s theorems (rejected because the frozen definitions and proofs control those senses)
+
+- Uncertainty: Low semantic uncertainty because the chapter explicitly defines theories, arithmetic systems, completeness, decidability, axiomatizability, computable enumerability and representation; medium to high nomenclatural uncertainty for representability, arithmetization and provability compounds pending independent native review
+
+- Please double-check: Please double-check whether “అసంపూర్ణత / హిల్బర్ట్ కార్యక్రమం / సిద్ధాంతం / అంకగణితపు ప్రామాణిక నమూనా / నిజ అంకగణితం / రాబిన్సన్ Q / పియానో అంకగణితం / ఆగమన పథకం / సంపూర్ణ, నిర్ణయించదగిన సిద్ధాంతం / స్వీకృతీకరించదగిన / గణనీయంగా లెక్కించదగిన / గణనీయ ప్రమేయాలు, నిర్ణయించదగిన సంబంధాలకు ప్రాతినిధ్యం / స్వతంత్ర వాక్యం / గ్యోడెల్ వాక్యం / వాక్యనిర్మాణపు అంకగణితీకరణ / నిరూప్యతా విధేయం / అవైరుధ్య వాక్యం / ప్రెస్‌బర్గర్ అంకగణితం” is idiomatic and technically standard for “incompleteness / Hilbert's program / theory / standard model of arithmetic / true arithmetic / Robinson's Q / Peano arithmetic / induction schema / complete and decidable theory / axiomatizable / computably enumerable / representation of computable functions and decidable relations / independent sentence / Gödel sentence / arithmetization of syntax / provability predicate / consistency statement / Presburger arithmetic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -7039,3 +7063,339 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTETURUND-018 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-001 — OLTEINCINT-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used the intended plural logical assumptions; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0276; incompleteness/introduction/historical-background; lines 51-55, Frege's logical assumptions ↔ translation/content/incompleteness/introduction/historical-background.tex:47-52 (OLP-0276-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTEINCINT-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used the intended plural logical assumptions; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-001 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-002 — OLTEINCINT-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used the intended plural mathematical objects; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0276; incompleteness/introduction/historical-background; lines 107-110, Kronecker's representation claim ↔ translation/content/incompleteness/introduction/historical-background.tex:89-94 (OLP-0276-B014); printed/PDF page pending
+
+- Authorities actually checked: OLTEINCINT-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used the intended plural mathematical objects; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-002 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-003 — OLTEINCINT-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used a complete past-tense contribution claim; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0276; incompleteness/introduction/historical-background; lines 117-119, Cantor and Dedekind's historical contribution ↔ translation/content/incompleteness/introduction/historical-background.tex:98-103 (OLP-0276-B015); printed/PDF page pending
+
+- Authorities actually checked: OLTEINCINT-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used a complete past-tense contribution claim; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-003 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-004 — OLTEINCINT-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: added the controlling consistency, effective-axiomatization and strength hypotheses and limited the consistency consequence to non-provability; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0276; incompleteness/introduction/historical-background; lines 203-207, summary of Gödel's incompleteness theorems ↔ translation/content/incompleteness/introduction/historical-background.tex:167-173 (OLP-0276-B021); printed/PDF page pending
+
+- Authorities actually checked: OLTEINCINT-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: added the controlling consistency, effective-axiomatization and strength hypotheses and limited the consistency consequence to non-provability; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-004 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-005 — OLTEINCINT-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: stated directly that the eight sentences are the axioms; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0277; incompleteness/introduction/definitions; lines 116-120, axioms of Robinson's Q ↔ translation/content/incompleteness/introduction/definitions.tex:113-119 (OLP-0277-B015); printed/PDF page pending
+
+- Authorities actually checked: OLTEINCINT-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: stated directly that the eight sentences are the axioms; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-005 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-006 — OLTEINCINT-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored y_1 through y_n in the base, successor and conclusion occurrences of A; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0277; incompleteness/introduction/definitions; lines 123-130, general induction schema ↔ translation/content/incompleteness/introduction/definitions.tex:121-131 (OLP-0277-B016); printed/PDF page pending
+
+- Authorities actually checked: OLTEINCINT-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored y_1 through y_n in the base, successor and conclusion occurrences of A; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-006 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-007 — OLTEINCINT-007
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used the plural possessive sense; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0277; incompleteness/introduction/definitions; lines 248-255, sufficient strength of theories ↔ translation/content/incompleteness/introduction/definitions.tex:254-262 (OLP-0277-B032); printed/PDF page pending
+
+- Authorities actually checked: OLTEINCINT-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used the plural possessive sense; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-007 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-008 — OLTEINCINT-008
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored the controlling in-Gamma phrase in the introductory sentence; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0277; incompleteness/introduction/definitions; lines 280-288, representation of relations ↔ translation/content/incompleteness/introduction/definitions.tex:275-285 (OLP-0277-B034); printed/PDF page pending
+
+- Authorities actually checked: OLTEINCINT-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the controlling in-Gamma phrase in the introductory sentence; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-008 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-009 — OLTEINCINT-009
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: stated that the proof was generalized to depend only on the isolated features; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0278; incompleteness/introduction/overview; lines 27-30, generalization of Gödel's proof ↔ translation/content/incompleteness/introduction/overview.tex:25-30 (OLP-0278-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTEINCINT-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: stated that the proof was generalized to depend only on the isolated features; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-009 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-010 — OLTEINCINT-010
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: preserved the raw OpenLogic token identity and rendered the correct infinitive sense; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0278; incompleteness/introduction/overview; lines 71-76, aim of representing functions and relations ↔ translation/content/incompleteness/introduction/overview.tex:72-82 (OLP-0278-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTEINCINT-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: preserved the raw OpenLogic token identity and rendered the correct infinitive sense; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-010 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-011 — OLTEINCINT-011
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used the intended singular agreement; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0279; incompleteness/introduction/undecidability; lines 13-16, arithmetization requirement ↔ translation/content/incompleteness/introduction/undecidability.tex:13-18 (OLP-0279-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTEINCINT-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used the intended singular agreement; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-011 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-012 — OLTEINCINT-012
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored the subscript n in both diagonal formula occurrences; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0279; incompleteness/introduction/undecidability; lines 35-41, decision procedure for the diagonal set D ↔ translation/content/incompleteness/introduction/undecidability.tex:38-45 (OLP-0279-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTEINCINT-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the subscript n in both diagonal formula occurrences; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-012 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-013 — OLTEINCINT-013
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: preserved both raw OpenLogic token identities and rendered the grammatically correct representation senses; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0279; incompleteness/introduction/undecidability; lines 58-65; mapped segment within audited scope lines 58-71, consequences for Q and stronger theories ↔ translation/content/incompleteness/introduction/undecidability.tex:66-74 (OLP-0279-B012); printed/PDF page pending; OLP-0279; incompleteness/introduction/undecidability; lines 67-72; mapped segment within audited scope lines 58-71, consequences for Q and stronger theories ↔ translation/content/incompleteness/introduction/undecidability.tex:76-85 (OLP-0279-B013); printed/PDF page pending
+
+- Authorities actually checked: OLTEINCINT-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: preserved both raw OpenLogic token identities and rendered the grammatically correct representation senses; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-013 is mathematically precise and idiomatic.
+
+## REV-OLTEINCINT-014 — OLTEINCINT-014
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: rendered the intended satisfy sense; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0279; incompleteness/introduction/undecidability; lines 127-133, scope limitation and Presburger arithmetic ↔ translation/content/incompleteness/introduction/undecidability.tex:146-152 (OLP-0279-B021); printed/PDF page pending
+
+- Authorities actually checked: OLTEINCINT-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: rendered the intended satisfy sense; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-014 is mathematically precise and idiomatic.

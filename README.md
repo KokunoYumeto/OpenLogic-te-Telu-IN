@@ -20,28 +20,21 @@ Continuing concept DOI:
 GitHub, GitHub Pages, and Zenodo public bytes have been anonymously verified;
 see [PUBLICATION.md](PUBLICATION.md).
 
-Two hundred four full-unit editable drafts exist in this repository: Sets (7),
-Relations (9), Functions (7), Size of Sets (14), Arithmetization (8) and
-Infinite Sets (6), plus the Propositional Logic part driver and complete
-Syntax and Semantics chapter (8), the shared Proof Systems chapter (6), and
-the shared Sequent Calculus chapter (15), the shared Natural Deduction
-chapter (14), the shared Tableaux chapter (14), the shared Axiomatic
-Deduction chapter (14), the shared First-Order Completeness chapter (12), and
-the First-Order Logic part driver plus complete Introduction chapter (11),
-complete Syntax chapter (10), complete Semantics chapter (8), complete
-Theories and Their Models chapter (7), complete Beyond First-order Logic
-chapter (8), and the Model Theory part driver plus complete Basics chapter
-(9), complete Models of Arithmetic chapter (7), complete Interpolation
-chapter (5), and complete Lindström chapter (5). All twenty-four batches have
-source-aligned structural and same-agent semantic review records. The complete
-Sets, Relations, and Functions chapters also have an offline EPUB and semantic
-HTML reader with Telugu document metadata, native MathML, local fonts,
-accessible diagrams, resolved internal links, citations, and a separately
-collapsible copy of each canonical English unit. Its public browser version is
-at [OpenLogic తెలుగు — సమితులు, సంబంధాలు, ప్రమేయాలు](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sfr/).
-The remaining 181 editable drafts are not yet integrated into that reader. The
-other 518 units and the coherent full reader remain in progress; this bounded
-three-chapter checkpoint does not substitute for that remaining work.
+Two hundred seventy-six full-unit editable TeX drafts form the contiguous
+OLP-0004--OLP-0279 range; the workflow cursor is 279/722. They cover the
+Sets, Relations and Functions material, Propositional and First-Order Logic,
+Model Theory, Computability and Turing Machines, plus the complete introductory
+chapter of Incompleteness. All thirty-one batches have source-aligned
+structural and same-agent semantic review records.
+
+Format coverage is deliberately separate. The cumulative semantic HTML and
+EPUB readers contain OLP-0004--OLP-0026 only: 23 units, the complete Sets,
+Relations and Functions chapters. The PDF contains OLP-0004--OLP-0010 only:
+the 7-unit Sets chapter. Thus 253 current editable drafts are not yet in the
+HTML/EPUB reader, and 269 are not yet in the PDF. The public browser version is
+[OpenLogic తెలుగు — సమితులు, సంబంధాలు, ప్రమేయాలు](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sfr/).
+No editable-source cursor is presented as reader coverage, and this bounded
+release does not substitute for the unfinished full edition.
 
 ## Provenance and changes
 
@@ -67,61 +60,19 @@ particular, the original zero-inclusive natural-number convention is kept.
 Original rights-restricted Telugu books and their page images are **not**
 redistributed here.
 
-Five confirmed source issues in Functions, fourteen in Size of Sets, eight
-in Arithmetization, six in Infinite Sets, four in Propositional Logic and four
-in Proof Systems, five in Sequent Calculus, four in Natural Deduction,
-twelve in Tableaux, eleven in Axiomatic Deduction, nine in First-Order
-Completeness, five in First-Order Introduction, six in First-Order Syntax,
-ten in First-Order Semantics, one in First-Order Theories and Their Models,
-four in Beyond First-order Logic, ten in Model Theory Basics, fifteen in
-Models of Arithmetic, nine in Interpolation, and twenty-two in Lindström
-are minimally repaired and disclosed beside the affected
-Telugu claims. The frozen
-English bytes remain unchanged. The Size of Sets records adopt ten shared
-OLSIZ findings and four additional deterministic OLTESIZ findings. A proposed
-eleventh OLSIZ table finding was formally retracted after byte inspection
-confirmed that the source already contains the correct row break plus
-`\hline`; no correction was applied for it. See
-[SOURCE_CORRECTIONS.jsonl](evidence/SOURCE_CORRECTIONS.jsonl), the shared
-[Size of Sets audit](evidence/source-audits/2026-09-04-size-of-sets-shared/REVIEW.md),
-the bounded
-[Arithmetization audit](evidence/source-audits/2026-09-04-arithmetization-telugu/REVIEW.md),
-and the bounded
-[Infinite Sets audit](evidence/source-audits/2026-09-05-infinite-telugu/REVIEW.md),
-and the bounded
-[Propositional Syntax and Semantics audit](evidence/source-audits/2026-09-05-propositional-syntax-telugu/REVIEW.md),
-and the bounded
-[Proof Systems audit](evidence/source-audits/2026-09-05-proof-systems-telugu/REVIEW.md),
-and the bounded
-[Sequent Calculus audit](evidence/source-audits/2026-09-05-sequent-calculus-telugu/REVIEW.md),
-and the bounded
-[Natural Deduction audit](evidence/source-audits/2026-09-05-natural-deduction-telugu/REVIEW.md),
-and the bounded
-[Tableaux audit](evidence/source-audits/2026-09-05-tableaux-telugu/REVIEW.md),
-and the bounded
-[Axiomatic Deduction audit](evidence/source-audits/2026-09-05-axiomatic-deduction-telugu/REVIEW.md),
-and the bounded
-[First-Order Completeness audit](evidence/source-audits/2026-09-05-completeness-telugu/REVIEW.md),
-and the bounded
-[First-Order Introduction audit](evidence/source-audits/2026-09-06-introduction-telugu/REVIEW.md),
-[First-Order Syntax audit](evidence/source-audits/2026-09-07-syntax-telugu/REVIEW.md),
-[initial First-Order Semantics audit](evidence/source-audits/2026-09-07-semantics-telugu/REVIEW.md),
-[Satisfaction audit](evidence/source-audits/2026-09-07-satisfaction-telugu/REVIEW.md),
-[Variable Assignments audit](evidence/source-audits/2026-09-07-assignments-telugu/REVIEW.md),
-[Extensionality audit](evidence/source-audits/2026-09-07-extensionality-telugu/REVIEW.md),
-[Theories and Their Models audit](evidence/source-audits/2026-09-07-models-theories-telugu/REVIEW.md),
-[Beyond First-order Logic audit](evidence/source-audits/2026-09-07-beyond-first-order-telugu/REVIEW.md),
-[Model Theory Basics audit](evidence/source-audits/2026-09-07-model-theory-basics-telugu/REVIEW.md),
-[Models of Arithmetic audit](evidence/source-audits/2026-09-08-models-of-arithmetic-telugu/REVIEW.md),
-the [Interpolation audit](evidence/source-audits/2026-09-08-interpolation-telugu/REVIEW.md),
-the [Lindström audit](evidence/source-audits/2026-09-08-lindstrom-telugu/REVIEW.md),
-and the [Recursive Functions audit](evidence/source-audits/2026-09-19-recursive-functions-telugu/REVIEW.md).
+The correction ledger records 238 confirmed source issues that are minimally
+repaired and disclosed beside the affected Telugu claims. The frozen English
+bytes remain unchanged. Each correction is bound to a bounded audit, an exact
+source hash, target locator and declared mathematical delta. See
+[SOURCE_CORRECTIONS.jsonl](evidence/SOURCE_CORRECTIONS.jsonl), the
+[source-audit directory](evidence/source-audits/), and the current
+[Incompleteness introduction audit](evidence/source-audits/2026-09-20-incompleteness-introduction-telugu/REVIEW.md).
 
 The [canonical translation-decision index](evidence/START_HERE.md) exposes all
-64 current terminology/sense decisions and 170 corrections with exact
+70 current terminology/sense decisions and 238 corrections with exact
 source/target locators, aligned segment hashes, authorities actually checked,
 known evidence limits, alternatives, uncertainty, and concrete review
-questions. Its status is explicitly partial (213/722); optional expert review
+questions. Its status is explicitly partial (279/722); optional expert review
 creates no translation hold. The canonical views include a
 [full readable register](evidence/TRANSLATION_DECISIONS_FULL.md), a
 [priority view](evidence/PRIORITY_REVIEW.md), a
@@ -154,17 +105,12 @@ zero errors or warnings. The deployed reader passed desktop and 390-pixel
 visual, interaction, asset-loading and console checks; all 16 public files were
 then read back anonymously and matched the repository byte-for-byte.
 
-All 213 editable drafts pass correction-aware blank-block,
-environment, source-token, protected-identifier and mathematical-form checks.
-Twenty-five same-agent semantic reviews record source-aligned reverse paraphrases and
-their limits. Size of Sets, Arithmetization, Infinite Sets and Propositional
-Logic Syntax and Semantics, Proof Systems, Sequent Calculus, and Natural
-Deduction, Tableaux, Axiomatic Deduction, First-Order Completeness and
-First-Order Introduction, Syntax, Semantics, Theories and Their Models, and
-Beyond First-order Logic, Model Theory Basics, Models of Arithmetic,
-Interpolation, Lindström, and the current Recursive Functions opening have
-source QA only at this checkpoint; no PDF or HTML reader integration is
-claimed for those one hundred ninety units.
+All 276 editable TeX drafts in OLP-0004--OLP-0279 pass correction-aware
+blank-block, environment, source-token, protected-identifier and
+mathematical-form checks. Thirty-one same-agent semantic reviews record
+source-aligned reverse paraphrases and their limits. Beyond the explicit
+23-unit HTML/EPUB boundary and 7-unit PDF boundary stated above, source QA does
+not imply PDF, HTML or EPUB reader integration.
 
 QA is machine/agent performed, not human or independent review. Several
 technical terms remain provisional. The PDF is not tagged. Source caveats
