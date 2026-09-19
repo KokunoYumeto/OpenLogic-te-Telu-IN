@@ -17,9 +17,10 @@ const same = (a,b)=>JSON.stringify(a)===JSON.stringify(b);
 const stripText=s=>{
  let out='',i=0;
  while(i<s.length){
-  if(s.startsWith('\\text{',i)||s.startsWith('\\intertext{',i)){
-   const inter=s.startsWith('\\intertext{',i);
-   i+=inter?11:6;let depth=1,start=i;
+  const textMatch=s.slice(i).match(/^\\(intertext|text)\s*\{/);
+  if(textMatch){
+   const inter=textMatch[1]==='intertext';
+   i+=textMatch[0].length;let depth=1,start=i;
    while(i<s.length&&depth){if(s[i]==='{')depth++;else if(s[i]==='}')depth--;i++;}
    if(inter)out+=matches(s.slice(start,i-1),/\$[^$]*\$/g).sort().join('');
   }else out+=s[i++];

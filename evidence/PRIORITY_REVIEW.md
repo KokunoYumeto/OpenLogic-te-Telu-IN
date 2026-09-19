@@ -1,6 +1,6 @@
 # Priority review
 
-This view contains 41 of 227 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
+This view contains 42 of 234 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
 
 Final reader pages remain pending; exact source and target file/line locators are shown.
 
@@ -413,3 +413,13 @@ Final reader pages remain pending; exact source and target file/line locators ar
 - Occurrences: OLP-0205 translation/content/model-theory/lindstrom/abstract-logics.tex:12-31; OLP-0205 translation/content/model-theory/lindstrom/abstract-logics.tex:61-162
 
 - Review question: Please double-check whether “నైరూప్య తర్కం / సాధారణ నైరూప్య తర్కం / L-ఏకదిశత / విస్తరణ ధర్మం / సమరూపతా ధర్మం / పునర్నామకరణ ధర్మం / బూలియన్ ధర్మం / పరిమాణక ధర్మం / సాపేక్షీకరణ ధర్మం / లిండ్‌స్ట్రోమ్ లక్షణీకరణ” is idiomatic and technically standard for “abstract logic / normal logic / L-monotonicity / Expansion Property / Isomorphism Property / Renaming Property / Boolean Property / Quantifier Property / Relativization Property / Lindström characterization” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T064 — primitive recursion / primitive recursive function / composition / projection function / arity / characteristic function / zero function / successor function / primitive-recursion notation
+
+- Chosen rendering: ఆదిమ పునరావృత్తి / ఆదిమ పునరావృత్త ప్రమేయం / సంయుక్తం / ప్రక్షేప ప్రమేయం / స్థానసంఖ్య (అరిటీ) / లక్షణ ప్రమేయం / శూన్య ప్రమేయం / ఉత్తరగామి ప్రమేయం / ఆదిమ పునరావృత్తి సంకేతనం
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0211 translation/content/computability/recursive-functions/primitive-recursion.tex:9-10; OLP-0212 translation/content/computability/recursive-functions/composition.tex:9-10; OLP-0212 translation/content/computability/recursive-functions/composition.tex:70-90; OLP-0213 translation/content/computability/recursive-functions/pr-functions.tex:46-62; OLP-0215 translation/content/computability/recursive-functions/pr-functions-computable.tex:33-35
+
+- Review question: Please double-check whether “ఆదిమ పునరావృత్తి / ఆదిమ పునరావృత్త ప్రమేయం / సంయుక్తం / ప్రక్షేప ప్రమేయం / స్థానసంఖ్య (అరిటీ) / లక్షణ ప్రమేయం / శూన్య ప్రమేయం / ఉత్తరగామి ప్రమేయం / ఆదిమ పునరావృత్తి సంకేతనం” is idiomatic and technically standard for “primitive recursion / primitive recursive function / composition / projection function / arity / characteristic function / zero function / successor function / primitive-recursion notation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?

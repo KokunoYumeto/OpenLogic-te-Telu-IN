@@ -1,0 +1,198 @@
+% Part: computability
+% Chapter: recursive-functions
+% Section: examples
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cmp}{rec}{exa}
+\olsection{ఆదిమ పునరావృత్త ప్రమేయాల ఉదాహరణలు}
+
+
+ఆదిమ పునరావృత్త ప్రమేయాలకు కొన్ని ఉదాహరణలు ఇప్పటికే ఉన్నాయి:
+కూడిక, గుణకార ప్రమేయాలు~$\Add$, $\Mult$. తాదాత్మ్య ప్రమేయం
+$\fn{id}(x)=x$ కేవలం~$\Proj{1}{0}$ కనుక అది ఆదిమ పునరావృత్త
+ప్రమేయం. స్థిర ప్రమేయాలు $\fn{const}_n(x)=n$ కూడా ఆదిమ పునరావృత్త
+ప్రమేయాలే; ఎందుకంటే $\Zero$, $\Succ$ల వరుస సంయుక్తాలతో వాటిని
+నిర్వచించవచ్చు. ఆదిమ పునరావృత్త నిర్వచనాల్లో స్థిరాంకాలను వాడాలంటే
+ఇది ఉపయోగపడుతుంది. ఉదాహరణకు $f(x)=2\cdot x$ను నిర్వచించాలంటే,
+$\fn{const}_2(x)$, గుణకారం నుంచి సంయుక్తం ద్వారా
+$f(x)=\Mult(\fn{const}_2(x),\Proj{1}{0}(x))$గా పొందవచ్చు. ఇకపై ఈ
+పద్ధతిని ఉపయోగిస్తాం.
+\sourcecorrection{OLTECMPREC-006}{ఆంగ్ల మూలం $f(x)=2\cdot x$ నిర్మాణానికి సాధారణ $\fn{const}_n$ను పేర్కొంది; వెంటనే ఇచ్చిన సమీకరణకు అనుగుణంగా అవసరమైన $\fn{const}_2$గా సరిచేశాం.}
+
+\begin{prop}
+  ఘాతాంక ప్రమేయం $\fn{exp}(x,y)=x^y$ ఆదిమ పునరావృత్త ప్రమేయం.
+\end{prop}
+
+\begin{proof}
+  $\fn{exp}$ను ఆదిమ పునరావృత్తంగా ఇలా నిర్వచించవచ్చు:
+  \begin{align*}
+    \fn{exp}(x, 0) & = 1\\
+    \fn{exp}(x, y+1) & = \Mult(x, \fn{exp}(x,y)).
+    \intertext{ఖచ్చితంగా చెప్పాలంటే, ఇది ఆదిమ పునరావృత్త ప్రమేయాల
+      నుంచి ఇచ్చిన పునరావృత్త నిర్వచనం కాదు. నియమబద్ధమైన రూపం ఇలా
+      ఉంటుంది:}
+    \fn{exp}(x, 0) & = f(x)\\
+    \fn{exp}(x, y+1) & = g(x, y, \fn{exp}(x,y)).
+    \intertext{ఇక్కడ}
+    f(x) & = \Succ(\Zero(x)) = 1\\
+    g(x, y, z) & = \Mult(\Proj{3}{0}(x, y, z), \Proj{3}{2}(x, y, z)) = x \cdot z
+  \end{align*}
+  కనుక $f$, $g$లను ఆదిమ పునరావృత్త ప్రమేయాల నుంచి సంయుక్తం ద్వారా
+  నిర్వచించాం.
+\end{proof}
+
+\begin{prop}
+  కింది విధంగా నిర్వచించిన పూర్వగామి ప్రమేయం $\fn{pred}(y)$ ఆదిమ
+  పునరావృత్త ప్రమేయం:
+  \[
+  \fn{pred}(y) = \begin{cases}
+    0 & \text{$y=0$ అయితే}\\
+    y-1 & \text{ఇతర సందర్భాల్లో.}
+  \end{cases}
+  \]
+\end{prop}
+
+\begin{proof}
+ గమనించండి:
+ \begin{align*}
+   \fn{pred}(0) & = 0 \text{ మరియు}\\
+   \fn{pred}(y+1) & = y.
+ \end{align*}
+ ఇది దాదాపు ఆదిమ పునరావృత్త నిర్వచనమే. అయితే ఖచ్చితంగా చూస్తే,
+ ఆదిమ పునరావృత్త నిర్వచన నమూనా కనీసం ఒక అదనపు ఆర్గుమెంటు~$x$ను
+ కోరుతుంది కనుక ఇది ఆ నమూనాలో ఇమడదు. $\fn{pred}(y+1)$ నిర్వచనంలో
+ $\fn{pred}(y)$ను అసలు వాడకపోవడం కూడా విచిత్రమే. కానీ మొదట
+ $\fn{pred}'(x,y)$ను ఇలా నిర్వచించవచ్చు:
+ \begin{align*}
+   \fn{pred}'(x, 0) & = \Zero(x) = 0,\\
+   \fn{pred}'(x, y+1) & = \Proj{3}{1}(x, y, \fn{pred'}(x, y)) = y.
+ \end{align*}
+తరువాత దాని నుంచి సంయుక్తం ద్వారా, ఉదాహరణకు
+$\fn{pred}(x)=\fn{pred}'(\Zero(x),\Proj{1}{0}(x))$గా $\fn{pred}$ను
+నిర్వచించవచ్చు.
+\end{proof}
+
+\begin{prop}
+  క్రమగుణిత ప్రమేయం $\fn{fac}(x)=\fact{x}=1\cdot2\cdot3
+  \cdot\dots\cdot x$ ఆదిమ పునరావృత్త ప్రమేయం.
+\end{prop}
+
+\begin{proof}
+  సహజమైన ఆదిమ పునరావృత్త నిర్వచనం ఇది:
+  \begin{align*}
+    \fn{fac}(0) &= 1\\
+    \fn{fac}(y+1) & = \fn{fac}(y) \cdot (y+1).
+    \intertext{నియమబద్ధంగా, మొదట ద్విస్థానిక ప్రమేయం $h$ను
+      నిర్వచించాలి:}
+    h(x, 0) & = \fn{const}_1(x)\\
+    h(x, y+1) & = g(x, y, h(x, y))
+    \intertext{ఇక్కడ $g(x,y,z)=\Mult(\Proj{3}{2}(x,y,z),
+      \Succ(\Proj{3}{1}(x,y,z)))$గా తీసుకొని, తరువాత}
+    \fn{fac}(y) & = h(\Proj{1}{0}(y), \Proj{1}{0}(y)) = h(y,y).
+  \end{align*}
+  అని తీసుకోవాలి. ఇకపై ఇంత నియమబద్ధమైన సంయుక్త, ఆదిమ పునరావృత్త
+  వివరాలన్నిటినీ ప్రతిసారీ ఇవ్వం.
+\end{proof}
+
+\begin{prop}
+  కింది విధంగా నిర్వచించిన కత్తిరించిన వ్యవకలనం $x\tsub y$ ఆదిమ
+  పునరావృత్త ప్రమేయం:
+  \[
+  x \tsub y = \begin{cases}
+    0 & \text{$x<y$ అయితే}\\
+    x-y & \text{ఇతర సందర్భాల్లో.}
+  \end{cases}
+  \]
+\end{prop}
+
+\begin{proof}
+  మనకు:
+  \begin{align*}
+    x \tsub 0 & = x\\
+    x \tsub (y+1) & = \fn{pred}(x \tsub y)
+  \end{align*}
+\end{proof}
+
+\begin{prop}
+ $x$, $y$ల మధ్య దూరం $\left|x-y\right|$ ఆదిమ పునరావృత్త ప్రమేయం.
+\end{prop}
+
+\begin{proof}
+  $\left|x-y\right|=(x\tsub y)+(y\tsub x)$. కనుక ఆదిమ పునరావృత్త
+  ప్రమేయాలైన $+$, $\tsub$ల నుంచి సంయుక్తం ద్వారా దూరాన్ని
+  నిర్వచించవచ్చు.
+\end{proof}
+
+\begin{prop}
+  $x$, $y$ల గరిష్ఠం $\fn{max}(x,y)$ ఆదిమ పునరావృత్త ప్రమేయం.
+\end{prop}
+
+\begin{proof}
+  $+$, $\tsub$ల నుంచి సంయుక్తం ద్వారా $\fn{max}(x,y)$ను
+  \[
+\fn{max}(x,y) \defis x + (y \tsub x).
+  \]
+  అని నిర్వచించవచ్చు. $x$ గరిష్ఠమైతే, అంటే $x\ge y$ అయితే,
+  $y\tsub x=0$; కనుక $x+(y\tsub x)=x+0=x$. $y$ గరిష్ఠమైతే,
+  $y\tsub x=y-x$; కనుక $x+(y\tsub x)=x+(y-x)=y$.
+\end{proof}
+
+\begin{prop}
+  \ollabel{prop:min-pr}
+  $x$, $y$ల కనిష్ఠం $\fn{min}(x,y)$ ఆదిమ పునరావృత్త ప్రమేయం.
+\end{prop}
+
+\begin{proof}
+  అభ్యాసం.
+\end{proof}
+
+\begin{prob}
+  \olref[cmp][rec][exa]{prop:min-pr}ను నిరూపించండి.
+\end{prob}
+
+\begin{prob}
+\[
+f(x, y) =
+2^{(2^{\iddots^{2^{x}}})}\raisebox{1ex}{\bigg\rbrace}
+\raisebox{1ex}{\text{$y$ సంఖ్యలో $2$లు}}
+\]
+ప్రమేయం ఆదిమ పునరావృత్త ప్రమేయమని చూపండి.
+\end{prob}
+
+\begin{prob}
+పూర్ణాంక భాగహార ప్రమేయం $d(x,y)=\lfloor x/y\rfloor$ (అంటే దశాంశ
+బిందువు తరువాతి భాగమంతా విస్మరించే భాగహారం) ఆదిమ పునరావృత్త
+ప్రమేయమని చూపండి. $y=0$ అయినప్పుడు $d(x,y)=0$గా నిర్దేశిస్తాం.
+ఆదిమ పునరావృత్తి, సంయుక్తం ఉపయోగించి $d$కు స్పష్టమైన నిర్వచనం ఇవ్వండి.
+\end{prob}
+
+\begin{prop}
+ఆదిమ పునరావృత్త ప్రమేయాల సమితి కింది రెండు క్రియల కింద సంవృతం:
+\begin{enumerate}
+\item పరిమిత మొత్తాలు: $f(\vec x,z)$ ఆదిమ పునరావృత్త ప్రమేయమైతే,
+కింది ప్రమేయం కూడా అలాంటిదే:
+\[
+g(\vec x, y) \defis \sum_{z = 0}^y f(\vec x, z).
+\]
+\item పరిమిత లబ్ధాలు: $f(\vec x,z)$ ఆదిమ పునరావృత్త ప్రమేయమైతే,
+కింది ప్రమేయం కూడా అలాంటిదే:
+\[
+h(\vec x, y) \defis \prod_{z = 0}^y f(\vec x, z).
+\]
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+ఉదాహరణకు, పరిమిత మొత్తాలను కింది సమీకరణాలతో పునరావృత్తంగా
+నిర్వచించవచ్చు:
+\begin{align*}
+  g(\vec x, 0) & = f(\vec x, 0)\\
+  g(\vec x, y+1) & = g(\vec x, y) + f(\vec x, y+1).
+\end{align*}
+\end{proof}
+
+
+\end{document}

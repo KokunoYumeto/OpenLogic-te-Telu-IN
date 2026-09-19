@@ -114,13 +114,14 @@ and the bounded
 [Model Theory Basics audit](evidence/source-audits/2026-09-07-model-theory-basics-telugu/REVIEW.md),
 [Models of Arithmetic audit](evidence/source-audits/2026-09-08-models-of-arithmetic-telugu/REVIEW.md),
 the [Interpolation audit](evidence/source-audits/2026-09-08-interpolation-telugu/REVIEW.md),
-and the [Lindström audit](evidence/source-audits/2026-09-08-lindstrom-telugu/REVIEW.md).
+the [Lindström audit](evidence/source-audits/2026-09-08-lindstrom-telugu/REVIEW.md),
+and the [Recursive Functions audit](evidence/source-audits/2026-09-19-recursive-functions-telugu/REVIEW.md).
 
 The [canonical translation-decision index](evidence/START_HERE.md) exposes all
-63 current terminology/sense decisions and 164 corrections with exact
+64 current terminology/sense decisions and 170 corrections with exact
 source/target locators, aligned segment hashes, authorities actually checked,
 known evidence limits, alternatives, uncertainty, and concrete review
-questions. Its status is explicitly partial (204/722); optional expert review
+questions. Its status is explicitly partial (213/722); optional expert review
 creates no translation hold. The canonical views include a
 [full readable register](evidence/TRANSLATION_DECISIONS_FULL.md), a
 [priority view](evidence/PRIORITY_REVIEW.md), a
@@ -153,16 +154,17 @@ zero errors or warnings. The deployed reader passed desktop and 390-pixel
 visual, interaction, asset-loading and console checks; all 16 public files were
 then read back anonymously and matched the repository byte-for-byte.
 
-All 204 editable drafts pass correction-aware blank-block,
+All 213 editable drafts pass correction-aware blank-block,
 environment, source-token, protected-identifier and mathematical-form checks.
-Twenty-four same-agent semantic reviews record source-aligned reverse paraphrases and
+Twenty-five same-agent semantic reviews record source-aligned reverse paraphrases and
 their limits. Size of Sets, Arithmetization, Infinite Sets and Propositional
 Logic Syntax and Semantics, Proof Systems, Sequent Calculus, and Natural
 Deduction, Tableaux, Axiomatic Deduction, First-Order Completeness and
 First-Order Introduction, Syntax, Semantics, Theories and Their Models, and
 Beyond First-order Logic, Model Theory Basics, Models of Arithmetic,
-Interpolation, and Lindström have source QA only at this checkpoint; no PDF
-or HTML reader integration is claimed for those one hundred eighty-one units.
+Interpolation, Lindström, and the current Recursive Functions opening have
+source QA only at this checkpoint; no PDF or HTML reader integration is
+claimed for those one hundred ninety units.
 
 QA is machine/agent performed, not human or independent review. Several
 technical terms remain provisional. The PDF is not tagged. Source caveats

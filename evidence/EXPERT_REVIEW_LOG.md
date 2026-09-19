@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 204 of 722 draft units**. This log contains 63 terminology/sense decisions and 164 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 213 of 722 draft units**. This log contains 64 terminology/sense decisions and 170 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1519,6 +1519,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low semantic uncertainty because every property is defined or used in an explicit displayed condition; high nomenclatural uncertainty for abstract-logic and Lindström labels
 
 - Please double-check: Please double-check whether “నైరూప్య తర్కం / సాధారణ నైరూప్య తర్కం / L-ఏకదిశత / విస్తరణ ధర్మం / సమరూపతా ధర్మం / పునర్నామకరణ ధర్మం / బూలియన్ ధర్మం / పరిమాణక ధర్మం / సాపేక్షీకరణ ధర్మం / లిండ్‌స్ట్రోమ్ లక్షణీకరణ” is idiomatic and technically standard for “abstract logic / normal logic / L-monotonicity / Expansion Property / Isomorphism Property / Renaming Property / Boolean Property / Quantifier Property / Relativization Property / Lindström characterization” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T064 — primitive recursion / primitive recursive function / composition / projection function / arity / characteristic function / zero function / successor function / primitive-recursion notation
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: ఆదిమ పునరావృత్తి / ఆదిమ పునరావృత్త ప్రమేయం / సంయుక్తం / ప్రక్షేప ప్రమేయం / స్థానసంఖ్య (అరిటీ) / లక్షణ ప్రమేయం / శూన్య ప్రమేయం / ఉత్తరగామి ప్రమేయం / ఆదిమ పునరావృత్తి సంకేతనం
+
+- Exact implementation: OLP-0211; computability/recursive-functions/primitive-recursion; content/computability/recursive-functions/primitive-recursion.tex:9-10 ↔ translation/content/computability/recursive-functions/primitive-recursion.tex:9-10 (OLP-0211-B004); printed/PDF page pending; OLP-0212; computability/recursive-functions/composition; content/computability/recursive-functions/composition.tex:9-10 ↔ translation/content/computability/recursive-functions/composition.tex:9-10 (OLP-0212-B004); printed/PDF page pending; OLP-0212; computability/recursive-functions/composition; content/computability/recursive-functions/composition.tex:67-88 ↔ translation/content/computability/recursive-functions/composition.tex:70-90 (OLP-0212-B010); printed/PDF page pending; OLP-0213; computability/recursive-functions/pr-functions; content/computability/recursive-functions/pr-functions.tex:44-61 ↔ translation/content/computability/recursive-functions/pr-functions.tex:46-62 (OLP-0213-B009); printed/PDF page pending; OLP-0215; computability/recursive-functions/pr-functions-computable; content/computability/recursive-functions/pr-functions-computable.tex:32-35 ↔ translation/content/computability/recursive-functions/pr-functions-computable.tex:33-35 (OLP-0215-B006); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P005, PDF 21, printed 9, Opening paragraph and Example 1; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P012, PDF 319, printed 312, Questions 37-38; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P011 directly supports the function-composition register through సంయుక్త ప్రమేయం; TE-P005 supports native natural-number exposition; TE-P008 and TE-P012 support set, element, relation and function language; TE-P003 and TE-P032 support reasoning, proof and induction prose; TE-P018 supports formal symbolic-logic register. These witnesses do not directly attest primitive recursion, primitive recursive functions, computability, projection functions or arity. The frozen recursive equations, closure clauses, stage construction, computation traces and notation definitions in OLP-0210--OLP-0216 control those exact senses; TE-T014, TE-T020, TE-T050, TE-T051 and TE-T060 provide the edition’s prior reversible choices. అరిటీ appears only as an explicit parenthetical technical borrowing beside descriptive స్థానసంఖ్య; no unexplained English technical headword remains in reader-facing prose
+
+- Alternatives: reuse the directly witnessed సంయుక్త function register and the edition’s definition-controlled recursive/computable terminology (chosen); use సంయోజనం for mathematical function composition despite the established TE-T015 decision and direct TE-P011 witness (rejected); leave primitive recursion, projection and arity in untranslated English prose (rejected); claim direct native attestation for the specialized recursion taxonomy (rejected because the frozen equations and definitions control those senses)
+
+- Uncertainty: Low semantic uncertainty because the recursive clauses, composition equation, projection equation and computation traces are explicit; medium to high nomenclatural uncertainty for primitive-recursion compounds and arity
+
+- Please double-check: Please double-check whether “ఆదిమ పునరావృత్తి / ఆదిమ పునరావృత్త ప్రమేయం / సంయుక్తం / ప్రక్షేప ప్రమేయం / స్థానసంఖ్య (అరిటీ) / లక్షణ ప్రమేయం / శూన్య ప్రమేయం / ఉత్తరగామి ప్రమేయం / ఆదిమ పునరావృత్తి సంకేతనం” is idiomatic and technically standard for “primitive recursion / primitive recursive function / composition / projection function / arity / characteristic function / zero function / successor function / primitive-recursion notation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -5455,3 +5479,147 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check that the fresh constant d and the full type of numeral inequalities force its value to be a nonstandard index after compactness.
+
+## REV-OLTECMPREC-001 — OLTECMPREC-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored the forward dependency from h(x) to h(x+1); adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0211; computability/recursive-functions/primitive-recursion; lines 15-24, motivating induction through successive arguments ↔ translation/content/computability/recursive-functions/primitive-recursion.tex:22-25 (OLP-0211-B005); printed/PDF page pending
+
+- Authorities actually checked: OLTECMPREC-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the forward dependency from h(x) to h(x+1); adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the motivating recursion proceeds from h(x) to h(x+1), consistently with every adjacent example and defining equation.
+
+## REV-OLTECMPREC-002 — OLTECMPREC-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored n-1 as the final argument index of the n-place function h; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0212; computability/recursive-functions/composition; lines 20-27, computability explanation after the composition display ↔ translation/content/computability/recursive-functions/composition.tex:24-29 (OLP-0212-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTECMPREC-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored n-1 as the final argument index of the n-place function h; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the composed n-place function h retains arguments x_0 through x_{n-1}, while k continues to count the inner functions supplied to f.
+
+## REV-OLTECMPREC-003 — OLTECMPREC-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: rendered the title with the primitive-recursive-function meaning used throughout the section; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0213; computability/recursive-functions/pr-functions; lines 9-10, section identifier and title ↔ translation/content/computability/recursive-functions/pr-functions.tex:10-11 (OLP-0213-B004); printed/PDF page pending
+
+- Authorities actually checked: OLTECMPREC-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: rendered the title with the primitive-recursive-function meaning used throughout the section; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the repaired title denotes primitive recursive functions, not functions named “primitive recursion.”
+
+## REV-OLTECMPREC-004 — OLTECMPREC-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: made the construction cumulative by retaining S_i inside S_{i+1}; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0213; computability/recursive-functions/pr-functions; lines 69-79, stage construction of the primitive recursive functions ↔ translation/content/computability/recursive-functions/pr-functions.tex:69-79 (OLP-0213-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTECMPREC-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: made the construction cumulative by retaining S_i inside S_{i+1}; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that every stage S_{i+1} retains S_i and adds the one-step compositions and primitive recursions, so the union is the intended closure.
+
+## REV-OLTECMPREC-005 — OLTECMPREC-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored n as the projection arity symbol used by the adjacent definition; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0212; computability/recursive-functions/composition; lines 34-39, definition and naming of projection functions ↔ translation/content/computability/recursive-functions/composition.tex:37-42 (OLP-0212-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTECMPREC-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored n as the projection arity symbol used by the adjacent definition; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the projection family is indexed by its n argument places in the naming sentence, matching the adjacent definition.
+
+## REV-OLTECMPREC-006 — OLTECMPREC-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used const_2 in the doubling construction, matching the stated function and displayed composition; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0216; computability/recursive-functions/examples; lines 13-23, construction of f(x)=2 times x ↔ translation/content/computability/recursive-functions/examples.tex:13-23 (OLP-0216-B005); printed/PDF page pending
+
+- Authorities actually checked: OLTECMPREC-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used const_2 in the doubling construction, matching the stated function and displayed composition; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the doubling construction uses const_2 rather than the unrestricted const_n, matching f(x)=2 times x and the displayed composition.

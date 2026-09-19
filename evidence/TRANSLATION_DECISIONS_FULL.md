@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **204 of 722 source units drafted**. This readable view contains all 227 decisions and 371 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **213 of 722 source units drafted**. This readable view contains all 234 decisions and 382 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -1773,6 +1773,36 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
   - te-Telu-IN-TE-T063-OCC-001; OLP-0205; OLP-0205-B005; source upstream/content/model-theory/lindstrom/abstract-logics.tex:12-22 bytes 210-796 SHA-256 5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678; target translation/content/model-theory/lindstrom/abstract-logics.tex:12-31 bytes 238-2318 SHA-256 1014f8ee8f2d77bedcd0f250e3e6247ee78067d5ee46bf2ac46407df3a3fbdab; reader page pending.
   - te-Telu-IN-TE-T063-OCC-002; OLP-0205; OLP-0205-B008; source upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106 bytes 2149-5226 SHA-256 5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678; target translation/content/model-theory/lindstrom/abstract-logics.tex:61-162 bytes 5266-15600 SHA-256 1014f8ee8f2d77bedcd0f250e3e6247ee78067d5ee46bf2ac46407df3a3fbdab; reader page pending.
+
+## te-Telu-IN-TE-T064 — primitive recursion / primitive recursive function / composition / projection function / arity / characteristic function / zero function / successor function / primitive-recursion notation
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: ఆదిమ పునరావృత్తి / ఆదిమ పునరావృత్త ప్రమేయం / సంయుక్తం / ప్రక్షేప ప్రమేయం / స్థానసంఖ్య (అరిటీ) / లక్షణ ప్రమేయం / శూన్య ప్రమేయం / ఉత్తరగామి ప్రమేయం / ఆదిమ పునరావృత్తి సంకేతనం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “primitive recursion / primitive recursive function / composition / projection function / arity / characteristic function / zero function / successor function / primitive-recursion notation” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low semantic uncertainty because the recursive clauses, composition equation, projection equation and computation traces are explicit; medium to high nomenclatural uncertainty for primitive-recursion compounds and arity
+
+- Rationale: TE-P011 directly supports the function-composition register through సంయుక్త ప్రమేయం; TE-P005 supports native natural-number exposition; TE-P008 and TE-P012 support set, element, relation and function language; TE-P003 and TE-P032 support reasoning, proof and induction prose; TE-P018 supports formal symbolic-logic register. These witnesses do not directly attest primitive recursion, primitive recursive functions, computability, projection functions or arity. The frozen recursive equations, closure clauses, stage construction, computation traces and notation definitions in OLP-0210--OLP-0216 control those exact senses; TE-T014, TE-T020, TE-T050, TE-T051 and TE-T060 provide the edition’s prior reversible choices. అరిటీ appears only as an explicit parenthetical technical borrowing beside descriptive స్థానసంఖ్య; no unexplained English technical headword remains in reader-facing prose
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Opening paragraph and Example 1; Number terminology and native mathematical exposition | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C004:TE-P012 [checked_context_only], PDF page 319; printed page 312; Questions 37-38; Function-versus-relation explanatory register; do not copy source answers mechanically. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: use సంయోజనం for mathematical function composition despite the established TE-T015 decision and direct TE-P011 witness [rejected: rejected] | leave primitive recursion, projection and arity in untranslated English prose [rejected: rejected] | claim direct native attestation for the specialized recursion taxonomy [rejected: rejected because the frozen equations and definitions control those senses]
+
+- Review question: Please double-check whether “ఆదిమ పునరావృత్తి / ఆదిమ పునరావృత్త ప్రమేయం / సంయుక్తం / ప్రక్షేప ప్రమేయం / స్థానసంఖ్య (అరిటీ) / లక్షణ ప్రమేయం / శూన్య ప్రమేయం / ఉత్తరగామి ప్రమేయం / ఆదిమ పునరావృత్తి సంకేతనం” is idiomatic and technically standard for “primitive recursion / primitive recursive function / composition / projection function / arity / characteristic function / zero function / successor function / primitive-recursion notation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T064-OCC-001; OLP-0211; OLP-0211-B004; source upstream/content/computability/recursive-functions/primitive-recursion.tex:9-10 bytes 166-223 SHA-256 97d3f46ebb20b4b14aea28616d16869c138c56b6a2b4128e378f8f35cef806af; target translation/content/computability/recursive-functions/primitive-recursion.tex:9-10 bytes 166-250 SHA-256 5bb38a50e4af8115022732f9eff13fd5b8af3a7dfcbbe7c7ed301012981a8d8b; reader page pending.
+  - te-Telu-IN-TE-T064-OCC-002; OLP-0212; OLP-0212-B004; source upstream/content/computability/recursive-functions/composition.tex:9-10 bytes 158-207 SHA-256 a9cd5dc0f4ae4fa06879d81b829b0ae4b57473bc00b801ba6532a98dbdb1dc4a; target translation/content/computability/recursive-functions/composition.tex:9-10 bytes 158-220 SHA-256 e640f2ecf2c830672d95477366337cc37837c83be5c777c0e56406bfa62445a8; reader page pending.
+  - te-Telu-IN-TE-T064-OCC-003; OLP-0212; OLP-0212-B010; source upstream/content/computability/recursive-functions/composition.tex:67-88 bytes 2591-3429 SHA-256 a9cd5dc0f4ae4fa06879d81b829b0ae4b57473bc00b801ba6532a98dbdb1dc4a; target translation/content/computability/recursive-functions/composition.tex:70-90 bytes 5679-7160 SHA-256 e640f2ecf2c830672d95477366337cc37837c83be5c777c0e56406bfa62445a8; reader page pending.
+  - te-Telu-IN-TE-T064-OCC-004; OLP-0213; OLP-0213-B009; source upstream/content/computability/recursive-functions/pr-functions.tex:44-61 bytes 1410-2205 SHA-256 893f3c79391b6a02b0af25282b921b2a06db27f5b94b4a6e0fed0c807e1e0ee1; target translation/content/computability/recursive-functions/pr-functions.tex:46-62 bytes 2725-4268 SHA-256 cc6adf42cc9b3c8daa965b49ba5c77d1ed41f2a0d7aa21844d90927e10d38795; reader page pending.
+  - te-Telu-IN-TE-T064-OCC-005; OLP-0215; OLP-0215-B006; source upstream/content/computability/recursive-functions/pr-functions-computable.tex:32-35 bytes 1336-1564 SHA-256 3e21459528e5bc5a33625412ccc06cef21f44bc6c1a32b3f05bbf7d320731b3a; target translation/content/computability/recursive-functions/pr-functions-computable.tex:33-35 bytes 1942-2344 SHA-256 1506ee826a9ad09b589943b06c7f5467de9bb50c079836ba5e81f02285dfed46; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -6049,3 +6079,159 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEMODLIN-015-OCC-001; OLP-0207; OLP-0207-B014; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-121 bytes 5118-6017 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:169-184 bytes 15802-17406 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.
+
+## te-Telu-IN-OLTECMPREC-001 — OLTECMPREC-001: confirmed reversed recursive direction
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored the forward dependency from h(x) to h(x+1); adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed reversed recursive direction at lines 15-24, motivating induction through successive arguments, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECMPREC-20260919:OLTECMPREC-001 [checked_supports], content/computability/recursive-functions/primitive-recursion.tex; lines 15-24, motivating induction through successive arguments; confirmed_reversed_recursive_direction; restored the forward dependency from h(x) to h(x+1); adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the motivating recursion proceeds from h(x) to h(x+1), consistently with every adjacent example and defining equation.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECMPREC-001-OCC-001; OLP-0211; OLP-0211-B005; source upstream/content/computability/recursive-functions/primitive-recursion.tex:15-24 bytes 420-1096 SHA-256 97d3f46ebb20b4b14aea28616d16869c138c56b6a2b4128e378f8f35cef806af; target translation/content/computability/recursive-functions/primitive-recursion.tex:22-25 bytes 1736-2505 SHA-256 5bb38a50e4af8115022732f9eff13fd5b8af3a7dfcbbe7c7ed301012981a8d8b; reader page pending.
+
+## te-Telu-IN-OLTECMPREC-002 — OLTECMPREC-002: confirmed wrong argument index
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored n-1 as the final argument index of the n-place function h; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed wrong argument index at lines 20-27, computability explanation after the composition display, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECMPREC-20260919:OLTECMPREC-002 [checked_supports], content/computability/recursive-functions/composition.tex; lines 20-27, computability explanation after the composition display; confirmed_wrong_argument_index; restored n-1 as the final argument index of the n-place function h; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the composed n-place function h retains arguments x_0 through x_{n-1}, while k continues to count the inner functions supplied to f.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECMPREC-002-OCC-001; OLP-0212; OLP-0212-B006; source upstream/content/computability/recursive-functions/composition.tex:20-27 bytes 672-1037 SHA-256 a9cd5dc0f4ae4fa06879d81b829b0ae4b57473bc00b801ba6532a98dbdb1dc4a; target translation/content/computability/recursive-functions/composition.tex:24-29 bytes 1383-2191 SHA-256 e640f2ecf2c830672d95477366337cc37837c83be5c777c0e56406bfa62445a8; reader page pending.
+
+## te-Telu-IN-OLTECMPREC-003 — OLTECMPREC-003: confirmed malformed section title
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: rendered the title with the primitive-recursive-function meaning used throughout the section; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed malformed section title at lines 9-10, section identifier and title, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECMPREC-20260919:OLTECMPREC-003 [checked_supports], content/computability/recursive-functions/pr-functions.tex; lines 9-10, section identifier and title; confirmed_malformed_section_title; rendered the title with the primitive-recursive-function meaning used throughout the section; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the repaired title denotes primitive recursive functions, not functions named “primitive recursion.”
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECMPREC-003-OCC-001; OLP-0213; OLP-0213-B004; source upstream/content/computability/recursive-functions/pr-functions.tex:9-10 bytes 159-226 SHA-256 893f3c79391b6a02b0af25282b921b2a06db27f5b94b4a6e0fed0c807e1e0ee1; target translation/content/computability/recursive-functions/pr-functions.tex:10-11 bytes 184-670 SHA-256 cc6adf42cc9b3c8daa965b49ba5c77d1ed41f2a0d7aa21844d90927e10d38795; reader page pending.
+
+## te-Telu-IN-OLTECMPREC-004 — OLTECMPREC-004: confirmed non cumulative stage definition
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: made the construction cumulative by retaining S_i inside S_{i+1}; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed non cumulative stage definition at lines 69-79, stage construction of the primitive recursive functions, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECMPREC-20260919:OLTECMPREC-004 [checked_supports], content/computability/recursive-functions/pr-functions.tex; lines 69-79, stage construction of the primitive recursive functions; confirmed_non_cumulative_stage_definition; made the construction cumulative by retaining S_i inside S_{i+1}; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that every stage S_{i+1} retains S_i and adds the one-step compositions and primitive recursions, so the union is the intended closure.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECMPREC-004-OCC-001; OLP-0213; OLP-0213-B011; source upstream/content/computability/recursive-functions/pr-functions.tex:69-79 bytes 2440-2968 SHA-256 893f3c79391b6a02b0af25282b921b2a06db27f5b94b4a6e0fed0c807e1e0ee1; target translation/content/computability/recursive-functions/pr-functions.tex:69-79 bytes 4725-6369 SHA-256 cc6adf42cc9b3c8daa965b49ba5c77d1ed41f2a0d7aa21844d90927e10d38795; reader page pending.
+
+## te-Telu-IN-OLTECMPREC-005 — OLTECMPREC-005: confirmed projection arity symbol mismatch
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored n as the projection arity symbol used by the adjacent definition; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed projection arity symbol mismatch at lines 34-39, definition and naming of projection functions, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECMPREC-20260919:OLTECMPREC-005 [checked_supports], content/computability/recursive-functions/composition.tex; lines 34-39, definition and naming of projection functions; confirmed_projection_arity_symbol_mismatch; restored n as the projection arity symbol used by the adjacent definition; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the projection family is indexed by its n argument places in the naming sentence, matching the adjacent definition.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECMPREC-005-OCC-001; OLP-0212; OLP-0212-B007; source upstream/content/computability/recursive-functions/composition.tex:34-39 bytes 1375-1576 SHA-256 a9cd5dc0f4ae4fa06879d81b829b0ae4b57473bc00b801ba6532a98dbdb1dc4a; target translation/content/computability/recursive-functions/composition.tex:37-42 bytes 3075-3751 SHA-256 e640f2ecf2c830672d95477366337cc37837c83be5c777c0e56406bfa62445a8; reader page pending.
+
+## te-Telu-IN-OLTECMPREC-006 — OLTECMPREC-006: confirmed wrong constant function subscript
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used const_2 in the doubling construction, matching the stated function and displayed composition; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed wrong constant function subscript at lines 13-23, construction of f(x)=2 times x, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTECMPREC-20260919:OLTECMPREC-006 [checked_supports], content/computability/recursive-functions/examples.tex; lines 13-23, construction of f(x)=2 times x; confirmed_wrong_constant_function_subscript; used const_2 in the doubling construction, matching the stated function and displayed composition; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the doubling construction uses const_2 rather than the unrestricted const_n, matching f(x)=2 times x and the displayed composition.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTECMPREC-006-OCC-001; OLP-0216; OLP-0216-B005; source upstream/content/computability/recursive-functions/examples.tex:13-23 bytes 236-910 SHA-256 d76450ea38acccc3c51ca125104c6e09b6b02ecbc33c11e31cfa9ce190d29c26; target translation/content/computability/recursive-functions/examples.tex:13-23 bytes 288-1915 SHA-256 8ac0fe1c1b322b48a62bc9fd27ef14d50e69bda2291ae32b1e8dbdaddcdafac4; reader page pending.

@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 204 of 722 draft units**. This view selects 201 of 227 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 213 of 722 draft units**. This view selects 208 of 234 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -373,6 +373,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0205; model-theory/lindstrom/abstract-logics; translation/content/model-theory/lindstrom/abstract-logics.tex:12-31; printed/PDF page pending; OLP-0205; model-theory/lindstrom/abstract-logics; translation/content/model-theory/lindstrom/abstract-logics.tex:61-162; printed/PDF page pending
 
 - Please double-check: Please double-check whether “నైరూప్య తర్కం / సాధారణ నైరూప్య తర్కం / L-ఏకదిశత / విస్తరణ ధర్మం / సమరూపతా ధర్మం / పునర్నామకరణ ధర్మం / బూలియన్ ధర్మం / పరిమాణక ధర్మం / సాపేక్షీకరణ ధర్మం / లిండ్‌స్ట్రోమ్ లక్షణీకరణ” is idiomatic and technically standard for “abstract logic / normal logic / L-monotonicity / Expansion Property / Isomorphism Property / Renaming Property / Boolean Property / Quantifier Property / Relativization Property / Lindström characterization” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T064 — primitive recursion / primitive recursive function / composition / projection function / arity / characteristic function / zero function / successor function / primitive-recursion notation
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: ఆదిమ పునరావృత్తి / ఆదిమ పునరావృత్త ప్రమేయం / సంయుక్తం / ప్రక్షేప ప్రమేయం / స్థానసంఖ్య (అరిటీ) / లక్షణ ప్రమేయం / శూన్య ప్రమేయం / ఉత్తరగామి ప్రమేయం / ఆదిమ పునరావృత్తి సంకేతనం
+
+- Occurrences: OLP-0211; computability/recursive-functions/primitive-recursion; translation/content/computability/recursive-functions/primitive-recursion.tex:9-10; printed/PDF page pending; OLP-0212; computability/recursive-functions/composition; translation/content/computability/recursive-functions/composition.tex:9-10; printed/PDF page pending; OLP-0212; computability/recursive-functions/composition; translation/content/computability/recursive-functions/composition.tex:70-90; printed/PDF page pending; OLP-0213; computability/recursive-functions/pr-functions; translation/content/computability/recursive-functions/pr-functions.tex:46-62; printed/PDF page pending; OLP-0215; computability/recursive-functions/pr-functions-computable; translation/content/computability/recursive-functions/pr-functions-computable.tex:33-35; printed/PDF page pending
+
+- Please double-check: Please double-check whether “ఆదిమ పునరావృత్తి / ఆదిమ పునరావృత్త ప్రమేయం / సంయుక్తం / ప్రక్షేప ప్రమేయం / స్థానసంఖ్య (అరిటీ) / లక్షణ ప్రమేయం / శూన్య ప్రమేయం / ఉత్తరగామి ప్రమేయం / ఆదిమ పునరావృత్తి సంకేతనం” is idiomatic and technically standard for “primitive recursion / primitive recursive function / composition / projection function / arity / characteristic function / zero function / successor function / primitive-recursion notation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -2013,3 +2023,63 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:169-184; printed/PDF page pending
 
 - Please double-check: Please double-check that the fresh constant d and the full type of numeral inequalities force its value to be a nonstandard index after compactness.
+
+## REV-OLTECMPREC-001 — OLTECMPREC-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored the forward dependency from h(x) to h(x+1); adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0211; computability/recursive-functions/primitive-recursion; translation/content/computability/recursive-functions/primitive-recursion.tex:22-25; printed/PDF page pending
+
+- Please double-check: Please double-check that the motivating recursion proceeds from h(x) to h(x+1), consistently with every adjacent example and defining equation.
+
+## REV-OLTECMPREC-002 — OLTECMPREC-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored n-1 as the final argument index of the n-place function h; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0212; computability/recursive-functions/composition; translation/content/computability/recursive-functions/composition.tex:24-29; printed/PDF page pending
+
+- Please double-check: Please double-check that the composed n-place function h retains arguments x_0 through x_{n-1}, while k continues to count the inner functions supplied to f.
+
+## REV-OLTECMPREC-003 — OLTECMPREC-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: rendered the title with the primitive-recursive-function meaning used throughout the section; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0213; computability/recursive-functions/pr-functions; translation/content/computability/recursive-functions/pr-functions.tex:10-11; printed/PDF page pending
+
+- Please double-check: Please double-check that the repaired title denotes primitive recursive functions, not functions named “primitive recursion.”
+
+## REV-OLTECMPREC-004 — OLTECMPREC-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: made the construction cumulative by retaining S_i inside S_{i+1}; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0213; computability/recursive-functions/pr-functions; translation/content/computability/recursive-functions/pr-functions.tex:69-79; printed/PDF page pending
+
+- Please double-check: Please double-check that every stage S_{i+1} retains S_i and adds the one-step compositions and primitive recursions, so the union is the intended closure.
+
+## REV-OLTECMPREC-005 — OLTECMPREC-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored n as the projection arity symbol used by the adjacent definition; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0212; computability/recursive-functions/composition; translation/content/computability/recursive-functions/composition.tex:37-42; printed/PDF page pending
+
+- Please double-check: Please double-check that the projection family is indexed by its n argument places in the naming sentence, matching the adjacent definition.
+
+## REV-OLTECMPREC-006 — OLTECMPREC-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used const_2 in the doubling construction, matching the stated function and displayed composition; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0216; computability/recursive-functions/examples; translation/content/computability/recursive-functions/examples.tex:13-23; printed/PDF page pending
+
+- Please double-check: Please double-check that the doubling construction uses const_2 rather than the unrestricted const_n, matching f(x)=2 times x and the displayed composition.

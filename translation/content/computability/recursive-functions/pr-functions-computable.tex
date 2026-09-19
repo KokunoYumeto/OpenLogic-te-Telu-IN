@@ -1,0 +1,41 @@
+% Part: computability
+% Chapter: recursive-functions
+% Section: pr-functions-computable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cmp}{rec}{cmp}
+\olsection{ఆదిమ పునరావృత్త ప్రమేయాలు గణనీయమైనవి}
+
+ప్రమేయం $h$ను కింది ఆదిమ పునరావృత్తి ద్వారా నిర్వచించామనుకుందాం:
+\begin{eqnarray*}
+h(\vec x, 0)     & = & f(\vec x) \\
+h(\vec x, y + 1) & = & g(\vec x, y, h(\vec x, y))
+\end{eqnarray*}
+అలాగే $f$, $g$ ప్రమేయాలు గణనీయమైనవని అనుకుందాం. ($x_0$, \dots,
+$x_{k-1}$లకు సంక్షిప్తంగా $\vec x$ను వాడుతున్నాం.) అప్పుడు
+$h(\vec x,0)$ కేవలం $f(\vec x)$; అది గణనీయమని అనుకున్నాం కనుక
+$h(\vec x,1)$ను స్పష్టంగానే గణించవచ్చు. $1=0+1$ కనుక
+$h(\vec x,1)$ను కూడా గణించవచ్చు; అది
+\begin{align*}
+ h(\vec x, 1) & = g(\vec x, 0, h(\vec x, 0)) =  g(\vec x, 0, f(\vec x)).
+\intertext{ఇదే విధంగా కొనసాగించి కింది వాటిని గణించవచ్చు:}
+h(\vec x, 2) & = g(\vec x, 1, h(\vec x, 1)) = g(\vec x, 1, g(\vec x, 0, f(\vec x)))\\
+h(\vec x, 3) & = g(\vec x, 2, h(\vec x, 2)) = g(\vec x, 2, g(\vec x, 1, g(\vec x, 0, f(\vec x))))\\
+h(\vec x, 4) & = g(\vec x, 3, h(\vec x, 3)) = g(\vec x, 3, g(\vec x, 2, g(\vec x, 1, g(\vec x, 0, f(\vec x)))))\\
+& \vdots
+\end{align*}
+కనుక సాధారణంగా $h(\vec x,y)$ను గణించడానికి, $h(\vec x,0)$,
+$h(\vec x,1)$, \dots{}లను వరుసగా గణిస్తూ $h(\vec x,y)$ను చేరాలి.
+
+ఈ విధంగా $f$, $g$ గణనీయమైతే, ఆదిమ పునరావృత్త నిర్వచనం ఒక కొత్త
+గణనీయ ప్రమేయాన్ని ఇస్తుంది. $f$, $g_i$లు గణనీయమైతే, వాటి సంయుక్తం
+కూడా గణనీయ ప్రమేయాన్నే ఇస్తుంది.
+
+ప్రాథమిక ప్రమేయాలు $\Zero$, $\Succ$, $\Proj{n}{i}$ గణనీయమైనవి;
+సంయుక్తం, ఆదిమ పునరావృత్తి గణనీయ ప్రమేయాల నుంచి గణనీయ ప్రమేయాలనే
+ఇస్తాయి. అందువల్ల ప్రతి ఆదిమ పునరావృత్త ప్రమేయం గణనీయమైనది.
+
+\end{document}
