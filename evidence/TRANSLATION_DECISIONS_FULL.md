@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **248 of 722 source units drafted**. This readable view contains all 265 decisions and 487 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **260 of 722 source units drafted**. This readable view contains all 274 decisions and 509 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -1905,6 +1905,42 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T067-OCC-010; OLP-0249; OLP-0249-B004; source upstream/content/computability/computability-theory/fixed-point-thm.tex:9-10 bytes 163-224 SHA-256 53820e9ac9bab541de29bbd3f329cd4b7d42b63c7be76f186ad0a118019e51c6; target translation/content/computability/computability-theory/fixed-point-thm.tex:9-10 bytes 163-259 SHA-256 00a02acf5be529885b9843dcfc2380e92b2bed679f8a559aeae5f68b44d522a2; reader page pending.
   - te-Telu-IN-TE-T067-OCC-011; OLP-0251; OLP-0251-B004; source upstream/content/computability/computability-theory/def-functions-self-reference.tex:9-10 bytes 176-253 SHA-256 eba836e27cd1df6c051372ce7b15a85236dd9b7e601c2db9a6e1583914481e37; target translation/content/computability/computability-theory/def-functions-self-reference.tex:9-10 bytes 176-313 SHA-256 227bcc7fd7f2941322777e83ffffbe17dad6a61e78a23210ccd0bd29afb3df00; reader page pending.
 
+## te-Telu-IN-TE-T068 — Turing machine / Turing-machine computation / model of computation / tape / read-write head / square / state / state diagram / configuration / run / alphabet / instruction set / transition function / initial state / halting state / reject state / unary representation / doubler / disciplined machine / combined machine / nondeterministic Turing machine / effective procedure / Church--Turing thesis / pseudocode
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: ట్యూరింగ్ యంత్రం / ట్యూరింగ్ యంత్ర గణన / గణనా నమూనా / టేపు / చదువు--వ్రాత శీర్షం / గడి / స్థితి / స్థితి రేఖాచిత్రం / స్థితివిన్యాసం / నడక / వర్ణమాల / నిర్దేశ సమితి / సంక్రమణ ప్రమేయం / ప్రారంభ స్థితి / ఆగే స్థితి / తిరస్కరణ స్థితి / ఏకాంక ప్రాతినిధ్యం / ద్విగుణక యంత్రం / క్రమశిక్షిత యంత్రం / సంయుక్త యంత్రం / అనిర్ణీత ట్యూరింగ్ యంత్రం / ప్రభావక ప్రక్రియ / చర్చ్--ట్యూరింగ్ సిద్ధాంతప్రతిపాదన / సూడోకోడ్
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “Turing machine / Turing-machine computation / model of computation / tape / read-write head / square / state / state diagram / configuration / run / alphabet / instruction set / transition function / initial state / halting state / reject state / unary representation / doubler / disciplined machine / combined machine / nondeterministic Turing machine / effective procedure / Church--Turing thesis / pseudocode” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low semantic uncertainty because the machine, transition, configuration, computation and combination notions are defined by explicit tuples, diagrams and equations; medium to high nomenclatural uncertainty for machine-component compounds, nondeterminism and effective-procedure terminology
+
+- Rationale: TE-P005 was visually rechecked for native natural-number exposition; TE-P008, TE-P010--TE-P011 and TE-P034 were rechecked for sets, ordered pairs, relations, functions, inverse and composition; TE-P003 and TE-P032 were rechecked for procedural explanation, deduction and proof register; TE-P018 supports formal symbolic-logic prose. These witnesses do not directly attest Turing-machine hardware metaphors, configurations, transition programs, disciplined or nondeterministic machines, effective procedures or the Church--Turing thesis. The frozen state diagrams, tape conventions, transition tuples, configuration sequences, unary input/output definitions and equivalence claim in OLP-0252--OLP-0263 control those exact senses; TE-T011, TE-T020, TE-T024, TE-T028, TE-T064--TE-T067 supply earlier reversible choices. ట్యూరింగ్ is the source eponym; టేపు and సూడోకోడ్ are explicit technical borrowings in explanatory contexts. State symbols, movement letters and machine names remain protected formal notation; no unexplained English technical headword remains in reader-facing prose
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P028 [checked_context_only], PDF page 92; printed page 85; Unary predicates, binary relations and quantifier classification; Direct quantifier taxonomy and predicate/relation context. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C004:TE-P034 [checked_context_only], PDF page 308; printed page 301; Main point 5, Cartesian product definition; Direct ordered-pair and Cartesian-product terminology; singular క్రమయుగ్మం is a transparent inflection.
+
+- Alternatives: leave the specialized machine vocabulary in untranslated English reader prose [rejected: rejected] | collapse state, configuration and run into one undifferentiated term [rejected: rejected because the definitions distinguish them] | claim direct native attestation for Turing-machine components, nondeterminism or the Church--Turing thesis [rejected: rejected because the frozen definitions and equivalence claim control those senses]
+
+- Review question: Please double-check whether “ట్యూరింగ్ యంత్రం / ట్యూరింగ్ యంత్ర గణన / గణనా నమూనా / టేపు / చదువు--వ్రాత శీర్షం / గడి / స్థితి / స్థితి రేఖాచిత్రం / స్థితివిన్యాసం / నడక / వర్ణమాల / నిర్దేశ సమితి / సంక్రమణ ప్రమేయం / ప్రారంభ స్థితి / ఆగే స్థితి / తిరస్కరణ స్థితి / ఏకాంక ప్రాతినిధ్యం / ద్విగుణక యంత్రం / క్రమశిక్షిత యంత్రం / సంయుక్త యంత్రం / అనిర్ణీత ట్యూరింగ్ యంత్రం / ప్రభావక ప్రక్రియ / చర్చ్--ట్యూరింగ్ సిద్ధాంతప్రతిపాదన / సూడోకోడ్” is idiomatic and technically standard for “Turing machine / Turing-machine computation / model of computation / tape / read-write head / square / state / state diagram / configuration / run / alphabet / instruction set / transition function / initial state / halting state / reject state / unary representation / doubler / disciplined machine / combined machine / nondeterministic Turing machine / effective procedure / Church--Turing thesis / pseudocode” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T068-OCC-001; OLP-0254; OLP-0254-B005; source upstream/content/turing-machines/machines-computations/introduction.tex:12-27 bytes 216-1256 SHA-256 659e790a468190fba86918ca1d865510a30e7ab97b629aed7e5491b8cfac75b3; target translation/content/turing-machines/machines-computations/introduction.tex:12-25 bytes 220-2768 SHA-256 b601d28a22d1e2221335962117950211f0a6c235817125cb1e95fabd9f90423f; reader page pending.
+  - te-Telu-IN-TE-T068-OCC-002; OLP-0255; OLP-0255-B005; source upstream/content/turing-machines/machines-computations/representing-tms.tex:12-23 bytes 234-887 SHA-256 099ee6e5370880ce3164bdeeb6fe36a06d2387228fa2ce4df943cb88ed6f3afd; target translation/content/turing-machines/machines-computations/representing-tms.tex:12-22 bytes 298-1590 SHA-256 74be4153d2e9733f2dc993159e0bf52b20db9317dd8acbfc0c6aa3e02f7b104a; reader page pending.
+  - te-Telu-IN-TE-T068-OCC-003; OLP-0256; OLP-0256-B006; source upstream/content/turing-machines/machines-computations/turing-machines.tex:22-35 bytes 670-1222 SHA-256 20d13655358fa780af8f9a2e4994c101c1495ecce098512c28a60293ee239a65; target translation/content/turing-machines/machines-computations/turing-machines.tex:21-32 bytes 1281-2197 SHA-256 f6e29a08c87fe20d02605afb36959ee15f733efe539f638acd58176fe643c3d6; reader page pending.
+  - te-Telu-IN-TE-T068-OCC-004; OLP-0257; OLP-0257-B006; source upstream/content/turing-machines/machines-computations/configuration.tex:25-38 bytes 912-1563 SHA-256 8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b; target translation/content/turing-machines/machines-computations/configuration.tex:24-36 bytes 1949-3162 SHA-256 4ed2bde12121ccf5736b3ff284c8a37aed23eb69b4657f9f6df7e3db44819dcb; reader page pending.
+  - te-Telu-IN-TE-T068-OCC-005; OLP-0257; OLP-0257-B011; source upstream/content/turing-machines/machines-computations/configuration.tex:84-87 bytes 3190-3415 SHA-256 8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b; target translation/content/turing-machines/machines-computations/configuration.tex:82-87 bytes 6734-8083 SHA-256 4ed2bde12121ccf5736b3ff284c8a37aed23eb69b4657f9f6df7e3db44819dcb; reader page pending.
+  - te-Telu-IN-TE-T068-OCC-006; OLP-0258; OLP-0258-B004; source upstream/content/turing-machines/machines-computations/unary-numbers.tex:9-10 bytes 164-233 SHA-256 c1e405708a0c2a3ff77377f136b2d94703174a4a23eefa25a9f6555a13cfcba3; target translation/content/turing-machines/machines-computations/unary-numbers.tex:9-10 bytes 164-279 SHA-256 b8fecc31f6494b32db733a08f3daaf71e9b733cd5c5c88c3a661a1e6a72e9123; reader page pending.
+  - te-Telu-IN-TE-T068-OCC-007; OLP-0259; OLP-0259-B005; source upstream/content/turing-machines/machines-computations/halting-states.tex:12-16 bytes 218-434 SHA-256 bc10eb130811dbd6f527c85e683a03b97f771c7f5ff0f64d5a39f040144799bf; target translation/content/turing-machines/machines-computations/halting-states.tex:12-15 bytes 238-702 SHA-256 9b93847bee801e9e145749f494b6feecab342094a7ef624ca2fa8c6e93a63e83; reader page pending.
+  - te-Telu-IN-TE-T068-OCC-008; OLP-0260; OLP-0260-B006; source upstream/content/turing-machines/machines-computations/disciplined-machines.tex:27-35 bytes 1047-1428 SHA-256 b90ae0706db20b57872c40cdbd28e8ecb3d9aa98bbab8f18974ca235e4607aaa; target translation/content/turing-machines/machines-computations/disciplined-machines.tex:25-34 bytes 2038-2901 SHA-256 01d22a97e48eb06a0cbd3a26fade9db32b6d09e38748b76dd042e97b4f1ab549; reader page pending.
+  - te-Telu-IN-TE-T068-OCC-009; OLP-0261; OLP-0261-B006; source upstream/content/turing-machines/machines-computations/combining-machines.tex:25-50 bytes 988-2313 SHA-256 02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48; target translation/content/turing-machines/machines-computations/combining-machines.tex:23-48 bytes 2109-5301 SHA-256 4c0be68bc5222e1d2373e6537351af795d26efc33c3b409c1ec4b9e08deb2795; reader page pending.
+  - te-Telu-IN-TE-T068-OCC-010; OLP-0262; OLP-0262-B006; source upstream/content/turing-machines/machines-computations/variants.tex:29-39 bytes 1254-1983 SHA-256 d751ce8370fa72e3d98762ecf2f928e19b9bf1c94cc17505221da0eec922d35e; target translation/content/turing-machines/machines-computations/variants.tex:27-36 bytes 2990-4508 SHA-256 b06521b3fc6e29fe510690d890b35ea79b71a4bf94ccc2bf573e65bca812ad34; reader page pending.
+  - te-Telu-IN-TE-T068-OCC-011; OLP-0263; OLP-0263-B005; source upstream/content/turing-machines/machines-computations/church-turing-thesis.tex:12-21 bytes 227-888 SHA-256 a9073c7499f26e2ae151d434d24aa8e4a9789f84f65a43568a75aab78d49a421; target translation/content/turing-machines/machines-computations/church-turing-thesis.tex:12-19 bytes 298-1771 SHA-256 f2da4ccaf14daa353a1c30255b444b1ef91615e30ed08b020ab7535819654e2b; reader page pending.
+
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
 - Kind / recording mode: source_correction / contemporaneous
@@ -2731,36 +2767,36 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEINF-004-OCC-001; OLP-0054; OLP-0054-B007; source upstream/content/sets-functions-relations/infinite/card-sb.tex:25-33 bytes 1045-1350 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:25-37 bytes 2149-3257 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
-  - te-Telu-IN-OLTEINF-004-OCC-002; OLP-0054; OLP-0054-B008; source upstream/content/sets-functions-relations/infinite/card-sb.tex:35-43 bytes 1352-1743 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:39-47 bytes 3258-3734 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
-  - te-Telu-IN-OLTEINF-004-OCC-003; OLP-0054; OLP-0054-B009; source upstream/content/sets-functions-relations/infinite/card-sb.tex:45-46 bytes 1745-1827 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:49-51 bytes 3735-3847 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
+  - te-Telu-IN-OLTEINF-004-OCC-001; OLP-0054; OLP-0054-B007; source upstream/content/sets-functions-relations/infinite/card-sb.tex:25-33 bytes 1045-1350 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:25-37 bytes 2149-3257 SHA-256 ff981a69795074460a689ce26ab28b083f07a867d03eb5702022afdc310ea6db; reader page pending.
+  - te-Telu-IN-OLTEINF-004-OCC-002; OLP-0054; OLP-0054-B008; source upstream/content/sets-functions-relations/infinite/card-sb.tex:35-43 bytes 1352-1743 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:39-47 bytes 3258-3734 SHA-256 ff981a69795074460a689ce26ab28b083f07a867d03eb5702022afdc310ea6db; reader page pending.
+  - te-Telu-IN-OLTEINF-004-OCC-003; OLP-0054; OLP-0054-B009; source upstream/content/sets-functions-relations/infinite/card-sb.tex:45-46 bytes 1745-1827 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:49-51 bytes 3735-3847 SHA-256 ff981a69795074460a689ce26ab28b083f07a867d03eb5702022afdc310ea6db; reader page pending.
 
-## te-Telu-IN-OLTEINF-005 — OLTEINF-005: confirmed malformed nested cardinality conclusion
+## te-Telu-IN-OLTEINF-005 — OLTEINF-005: historical confirmed malformed nested cardinality conclusion classification (rejected false positive)
 
 - Kind / recording mode: source_correction / contemporaneous
 
-- Chosen rendering or treatment: replaced the malformed nested cardinal equality by B equinumerous with C; adjacent sourcecorrection discloses the repair
+- Chosen rendering or treatment: presents the valid source chain as the two explicit comparisons A equinumerous with B and B equinumerous with C for readability; the adjacent sourcecorrection discloses the equivalent notation and rejects the prior error classification
 
-- Intended sense: Repair the audited confirmed malformed nested cardinality conclusion at lines 49-53, cardinal sandwich helper conclusion, preserving unaffected notation and argument structure.
+- Intended sense: Preserve the valid source construction at lines 49-53, cardinal sandwich helper conclusion, present its equivalent explicit notation for readability, and record that the historical error classification was rejected as a false positive.
 
 - Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
 
 - Confidence / provisional / priority: high / false / normal
 
-- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+- Confidence reason: The notation expansion and the proof establish mathematical equivalence, and the cited consolidation review rejects the former defect claim; only specialist assessment of Telugu qualification phrasing remains useful.
 
-- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+- Rationale: A later consolidation review established that the nested source notation is valid because \cardeq takes two mandatory arguments. The historical audit claim remains traceable, while the target gives the equivalent two explicit comparisons and its adjacent note records the rejected-false-positive disposition.
 
-- Authorities checked: OLTEINF-20260905:OLTEINF-005 [checked_supports], content/sets-functions-relations/infinite/card-sb.tex; lines 49-53, cardinal sandwich helper conclusion; confirmed_malformed_nested_cardinality_conclusion; replaced the malformed nested cardinal equality by B equinumerous with C; adjacent sourcecorrection discloses the repair.
+- Authorities checked: OLTEINF-20260905:OLTEINF-005 [checked_supports], content/sets-functions-relations/infinite/card-sb.tex; lines 49-53, cardinal sandwich helper conclusion; Historical classification confirmed_malformed_nested_cardinality_conclusion, superseded by rejected_false_positive; presents the valid source chain as the two explicit comparisons A equinumerous with B and B equinumerous with C for readability; the adjacent sourcecorrection discloses the equivalent notation and rejects the prior error classification.
 
-- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+- Alternatives: Retain the valid nested cardinality construction verbatim. [viable_alternative: It is mathematically valid, but the two explicit comparisons are clearer in the Telugu target.]
 
-- Review question: Please double-check: Does the repaired helper proposition conclude B is equinumerous with C, without the malformed nested cardinality expression?
+- Review question: Please double-check that the qualified note correctly explains the valid nested cardinality chain and that the two explicit target comparisons are mathematically equivalent without retaining the rejected source-error claim.
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEINF-005-OCC-001; OLP-0054; OLP-0054-B010; source upstream/content/sets-functions-relations/infinite/card-sb.tex:49 bytes 1842-1897 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:53 bytes 3848-4031 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
-  - te-Telu-IN-OLTEINF-005-OCC-002; OLP-0054; OLP-0054-B011; source upstream/content/sets-functions-relations/infinite/card-sb.tex:51-53 bytes 1899-2028 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:55-62 bytes 4032-4670 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
+  - te-Telu-IN-OLTEINF-005-OCC-001; OLP-0054; OLP-0054-B010; source upstream/content/sets-functions-relations/infinite/card-sb.tex:49 bytes 1842-1897 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:53 bytes 3848-4031 SHA-256 ff981a69795074460a689ce26ab28b083f07a867d03eb5702022afdc310ea6db; reader page pending.
+  - te-Telu-IN-OLTEINF-005-OCC-002; OLP-0054; OLP-0054-B011; source upstream/content/sets-functions-relations/infinite/card-sb.tex:51-53 bytes 1899-2028 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:55-64 bytes 4032-4993 SHA-256 ff981a69795074460a689ce26ab28b083f07a867d03eb5702022afdc310ea6db; reader page pending.
 
 ## te-Telu-IN-OLTEINF-006 — OLTEINF-006: confirmed missing range inclusion
 
@@ -2786,10 +2822,10 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEINF-006-OCC-001; OLP-0054; OLP-0054-B012; source upstream/content/sets-functions-relations/infinite/card-sb.tex:55-68 bytes 2030-2457 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:64-77 bytes 4671-5511 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
-  - te-Telu-IN-OLTEINF-006-OCC-002; OLP-0054; OLP-0054-B013; source upstream/content/sets-functions-relations/infinite/card-sb.tex:70-73 bytes 2459-2708 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:79-83 bytes 5512-5928 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
-  - te-Telu-IN-OLTEINF-006-OCC-003; OLP-0054; OLP-0054-B014; source upstream/content/sets-functions-relations/infinite/card-sb.tex:75-78 bytes 2710-2955 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:85-89 bytes 5929-6425 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
-  - te-Telu-IN-OLTEINF-006-OCC-004; OLP-0054; OLP-0054-B015; source upstream/content/sets-functions-relations/infinite/card-sb.tex:80-83 bytes 2957-3277 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:91-104 bytes 6426-7789 SHA-256 5b4ca9f2e75112e3298ccb088e0ab34fd6f5ee4355cf02b9f1c8d8cb19c68630; reader page pending.
+  - te-Telu-IN-OLTEINF-006-OCC-001; OLP-0054; OLP-0054-B012; source upstream/content/sets-functions-relations/infinite/card-sb.tex:55-68 bytes 2030-2457 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:66-79 bytes 4994-5834 SHA-256 ff981a69795074460a689ce26ab28b083f07a867d03eb5702022afdc310ea6db; reader page pending.
+  - te-Telu-IN-OLTEINF-006-OCC-002; OLP-0054; OLP-0054-B013; source upstream/content/sets-functions-relations/infinite/card-sb.tex:70-73 bytes 2459-2708 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:81-85 bytes 5835-6251 SHA-256 ff981a69795074460a689ce26ab28b083f07a867d03eb5702022afdc310ea6db; reader page pending.
+  - te-Telu-IN-OLTEINF-006-OCC-003; OLP-0054; OLP-0054-B014; source upstream/content/sets-functions-relations/infinite/card-sb.tex:75-78 bytes 2710-2955 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:87-91 bytes 6252-6748 SHA-256 ff981a69795074460a689ce26ab28b083f07a867d03eb5702022afdc310ea6db; reader page pending.
+  - te-Telu-IN-OLTEINF-006-OCC-004; OLP-0054; OLP-0054-B015; source upstream/content/sets-functions-relations/infinite/card-sb.tex:80-83 bytes 2957-3277 SHA-256 88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9; target translation/content/sets-functions-relations/infinite/card-sb.tex:93-106 bytes 6749-8112 SHA-256 ff981a69795074460a689ce26ab28b083f07a867d03eb5702022afdc310ea6db; reader page pending.
 
 ## te-Telu-IN-OLTEPLSYN-001 — OLTEPLSYN-001: confirmed malformed nested tag closure
 
@@ -7115,3 +7151,214 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
   - te-Telu-IN-OLTECOMTHY-018-OCC-001; OLP-0250; OLP-0250-B007; source upstream/content/computability/computability-theory/application-fixed-point.tex:28-32 bytes 979-1178 SHA-256 4bdbdec16af8ee62d1cf0af9b3e4b79a01a5f404c826076a10e59fe8b4228696; target translation/content/computability/computability-theory/application-fixed-point.tex:28-32 bytes 1977-2331 SHA-256 d5af0796218cbb88f8626aa9c9c355ec3989d59aa9427d5197a6c36f6b3b2569; reader page pending.
   - te-Telu-IN-OLTECOMTHY-018-OCC-002; OLP-0250; OLP-0250-B008; source upstream/content/computability/computability-theory/application-fixed-point.tex:34-36 bytes 1179-1315 SHA-256 4bdbdec16af8ee62d1cf0af9b3e4b79a01a5f404c826076a10e59fe8b4228696; target translation/content/computability/computability-theory/application-fixed-point.tex:34-59 bytes 2332-4974 SHA-256 d5af0796218cbb88f8626aa9c9c355ec3989d59aa9427d5197a6c36f6b3b2569; reader page pending.
+
+## te-Telu-IN-OLTETURMAC-001 — OLTETURMAC-001: confirmed state label mismatch
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: named q_0 explicitly in the inconsistent sentence; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed state label mismatch at lines 82-92, first traced configuration, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURMAC-20260919:OLTETURMAC-001 [checked_supports], content/turing-machines/machines-computations/representing-tms.tex; lines 82-92, first traced configuration; confirmed_state_label_mismatch; named q_0 explicitly in the inconsistent sentence; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURMAC-001 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURMAC-001-OCC-001; OLP-0255; OLP-0255-B014; source upstream/content/turing-machines/machines-computations/representing-tms.tex:82-92 bytes 3387-3977 SHA-256 099ee6e5370880ce3164bdeeb6fe36a06d2387228fa2ce4df943cb88ed6f3afd; target translation/content/turing-machines/machines-computations/representing-tms.tex:83-89 bytes 6296-7645 SHA-256 74be4153d2e9733f2dc993159e0bf52b20db9317dd8acbfc0c6aa3e02f7b104a; reader page pending.
+
+## te-Telu-IN-OLTETURMAC-002 — OLTETURMAC-002: confirmed undefined direction variable
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used D and stated its three allowed values; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed undefined direction variable at lines 42-44, tape-end preservation convention, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURMAC-20260919:OLTETURMAC-002 [checked_supports], content/turing-machines/machines-computations/turing-machines.tex; lines 42-44, tape-end preservation convention; confirmed_undefined_direction_variable; used D and stated its three allowed values; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURMAC-002 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURMAC-002-OCC-001; OLP-0256; OLP-0256-B007; source upstream/content/turing-machines/machines-computations/turing-machines.tex:42-44 bytes 1515-1711 SHA-256 20d13655358fa780af8f9a2e4994c101c1495ecce098512c28a60293ee239a65; target translation/content/turing-machines/machines-computations/turing-machines.tex:39-45 bytes 2984-4315 SHA-256 f6e29a08c87fe20d02605afb36959ee15f733efe539f638acd58176fe643c3d6; reader page pending.
+
+## te-Telu-IN-OLTETURMAC-003 — OLTETURMAC-003: confirmed malformed adjacency phrase
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: stated that input begins immediately to the right of the left-end marker; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed malformed adjacency phrase at lines 58-60, concatenation explanation, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURMAC-20260919:OLTETURMAC-003 [checked_supports], content/turing-machines/machines-computations/configuration.tex; lines 58-60, concatenation explanation; confirmed_malformed_adjacency_phrase; stated that input begins immediately to the right of the left-end marker; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURMAC-003 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURMAC-003-OCC-001; OLP-0257; OLP-0257-B009; source upstream/content/turing-machines/machines-computations/configuration.tex:58-60 bytes 2297-2423 SHA-256 8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b; target translation/content/turing-machines/machines-computations/configuration.tex:55-58 bytes 4712-5558 SHA-256 4ed2bde12121ccf5736b3ff284c8a37aed23eb69b4657f9f6df7e3db44819dcb; reader page pending.
+
+## te-Telu-IN-OLTETURMAC-004 — OLTETURMAC-004: confirmed halting run definition conflict
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: allowed finite or infinite runs and applied the one-step condition only where a successor is present; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed halting run definition conflict at lines 84-91, run and halting definitions, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURMAC-20260919:OLTETURMAC-004 [checked_supports], content/turing-machines/machines-computations/configuration.tex; lines 84-91, run and halting definitions; confirmed_halting_run_definition_conflict; allowed finite or infinite runs and applied the one-step condition only where a successor is present; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURMAC-004 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURMAC-004-OCC-001; OLP-0257; OLP-0257-B011; source upstream/content/turing-machines/machines-computations/configuration.tex:84-87 bytes 3190-3415 SHA-256 8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b; target translation/content/turing-machines/machines-computations/configuration.tex:82-87 bytes 6734-8083 SHA-256 4ed2bde12121ccf5736b3ff284c8a37aed23eb69b4657f9f6df7e3db44819dcb; reader page pending.
+  - te-Telu-IN-OLTETURMAC-004-OCC-002; OLP-0257; OLP-0257-B012; source upstream/content/turing-machines/machines-computations/configuration.tex:89-91 bytes 3416-3621 SHA-256 8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b; target translation/content/turing-machines/machines-computations/configuration.tex:89-95 bytes 8084-8768 SHA-256 4ed2bde12121ccf5736b3ff284c8a37aed23eb69b4657f9f6df7e3db44819dcb; reader page pending.
+
+## te-Telu-IN-OLTETURMAC-005 — OLTETURMAC-005: confirmed adder loop target error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: retargeted the q_0 stroke loop to q_0; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed adder loop target error at lines 55-59, addition-machine state diagram, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURMAC-20260919:OLTETURMAC-005 [checked_supports], content/turing-machines/machines-computations/unary-numbers.tex; lines 55-59, addition-machine state diagram; confirmed_adder_loop_target_error; retargeted the q_0 stroke loop to q_0; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURMAC-005 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURMAC-005-OCC-001; OLP-0258; OLP-0258-B010; source upstream/content/turing-machines/machines-computations/unary-numbers.tex:55-59 bytes 2031-2408 SHA-256 c1e405708a0c2a3ff77377f136b2d94703174a4a23eefa25a9f6555a13cfcba3; target translation/content/turing-machines/machines-computations/unary-numbers.tex:53-62 bytes 3564-4832 SHA-256 b8fecc31f6494b32db733a08f3daaf71e9b733cd5c5c88c3a661a1e6a72e9123; reader page pending.
+
+## te-Telu-IN-OLTETURMAC-006 — OLTETURMAC-006: confirmed copied adder loop target error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: retargeted the copied q_0 stroke loop to q_0; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed copied adder loop target error at lines 66-70, disciplined addition-machine diagram, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURMAC-20260919:OLTETURMAC-006 [checked_supports], content/turing-machines/machines-computations/disciplined-machines.tex; lines 66-70, disciplined addition-machine diagram; confirmed_copied_adder_loop_target_error; retargeted the copied q_0 stroke loop to q_0; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURMAC-006 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURMAC-006-OCC-001; OLP-0260; OLP-0260-B010; source upstream/content/turing-machines/machines-computations/disciplined-machines.tex:66-70 bytes 2827-3190 SHA-256 b90ae0706db20b57872c40cdbd28e8ecb3d9aa98bbab8f18974ca235e4607aaa; target translation/content/turing-machines/machines-computations/disciplined-machines.tex:63-74 bytes 5316-6591 SHA-256 01d22a97e48eb06a0cbd3a26fade9db32b6d09e38748b76dd042e97b4f1ab549; reader page pending.
+
+## te-Telu-IN-OLTETURMAC-007 — OLTETURMAC-007: confirmed overlapping transition cases
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restricted the first case to defined component transitions; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed overlapping transition cases at lines 37-43, definition of delta double-prime, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURMAC-20260919:OLTETURMAC-007 [checked_supports], content/turing-machines/machines-computations/combining-machines.tex; lines 37-43, definition of delta double-prime; confirmed_overlapping_transition_cases; restricted the first case to defined component transitions; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURMAC-007 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURMAC-007-OCC-001; OLP-0261; OLP-0261-B006; source upstream/content/turing-machines/machines-computations/combining-machines.tex:37-43 bytes 1673-1932 SHA-256 02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48; target translation/content/turing-machines/machines-computations/combining-machines.tex:35-43 bytes 3413-4480 SHA-256 4c0be68bc5222e1d2373e6537351af795d26efc33c3b409c1ec4b9e08deb2795; reader page pending.
+
+## te-Telu-IN-OLTETURMAC-008 — OLTETURMAC-008: confirmed triplicated adder loop target error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: retargeted all three copied q_0 stroke loops to q_0; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed triplicated adder loop target error at lines 74-78, 97-101 and 127-131, three addition-stage diagrams, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETURMAC-20260919:OLTETURMAC-008 [checked_supports], content/turing-machines/machines-computations/combining-machines.tex; lines 74-78, 97-101 and 127-131, three addition-stage diagrams; confirmed_triplicated_adder_loop_target_error; retargeted all three copied q_0 stroke loops to q_0; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTETURMAC-008 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETURMAC-008-OCC-001; OLP-0261; OLP-0261-B010; source upstream/content/turing-machines/machines-computations/combining-machines.tex:74-78 bytes 3301-3679 SHA-256 02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48; target translation/content/turing-machines/machines-computations/combining-machines.tex:71-86 bytes 7119-8548 SHA-256 4c0be68bc5222e1d2373e6537351af795d26efc33c3b409c1ec4b9e08deb2795; reader page pending.
+  - te-Telu-IN-OLTETURMAC-008-OCC-002; OLP-0261; OLP-0261-B012; source upstream/content/turing-machines/machines-computations/combining-machines.tex:97-101 bytes 4454-4818 SHA-256 02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48; target translation/content/turing-machines/machines-computations/combining-machines.tex:94-121 bytes 8805-10784 SHA-256 4c0be68bc5222e1d2373e6537351af795d26efc33c3b409c1ec4b9e08deb2795; reader page pending.
+  - te-Telu-IN-OLTETURMAC-008-OCC-003; OLP-0261; OLP-0261-B013; source upstream/content/turing-machines/machines-computations/combining-machines.tex:127-131 bytes 6011-6375 SHA-256 02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48; target translation/content/turing-machines/machines-computations/combining-machines.tex:123-147 bytes 10785-12948 SHA-256 4c0be68bc5222e1d2373e6537351af795d26efc33c3b409c1ec4b9e08deb2795; reader page pending.

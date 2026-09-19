@@ -1,0 +1,75 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: halting-states
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{hal}
+\olsection{ఆగే స్థితులు}
+
+\begin{explain}
+అమలు చేయడానికి నిర్దేశమేదీ లేనప్పుడే మన యంత్రాలు ఆగుతాయని నిర్వచించినప్పటికీ,
+ట్యూరింగ్ యంత్రాల సాధారణ ప్రాతినిధ్యాల్లో $h \in Q$ అయ్యే ప్రత్యేక
+\emph{ఆగే స్థితి}~$h$ ఉంటుంది.
+
+ఆగే స్థితి వెనుక ఉన్న భావన సరళమైనది: యంత్రం తన పనిని పూర్తిచేసినప్పుడు
+(ఇన్‌పుట్‌ను అంగీకరించడానికి సిద్ధమైనప్పుడు లేదా అవుట్‌పుట్ వ్రాయడం
+ముగించినప్పుడు), అది ఆగే స్థితి~$h$లోకి వెళ్లి అక్కడ ఆగుతుంది. కొన్ని
+యంత్రాల్లో రెండు ఆగే స్థితులు ఉంటాయి: ఒకటి ఇన్‌పుట్‌ను అంగీకరిస్తుంది, మరొకటి
+దాన్ని తిరస్కరిస్తుంది.
+\end{explain}
+
+\begin{ex}\emph{ఆగే స్థితులు}.
+ఈ భావనను స్పష్టం చేయడానికి, సరి యంత్రంలో ఒక మార్పుతో మొదలుపెడదాం. ఇన్‌పుట్
+సరిసంఖ్య అయినప్పుడు యంత్రం స్థితి~$q_0$లో ఆగడానికి బదులుగా, యంత్రాన్ని ఒక
+ఆగే స్థితిలోకి పంపే నిర్దేశాన్ని చేర్చవచ్చు.
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial, state]         (A)                     {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [below of=A] {$h$};
+
+  \path (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{R}} (B)
+             edge node {\TMtrans{\TMblank}{\TMblank}{N}} (C)
+        (B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{R}} (B)
+            edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{R}} (A);
+\end{tikzpicture}
+\]
+
+ఈ ఉదాహరణను మరింత విస్తరిద్దాం. ఇన్‌పుట్ బేసి అని యంత్రం నిర్ణయించినప్పుడు
+అది ఎన్నటికీ ఆగదు. చక్రీయ నిర్దేశాన్ని తిరస్కరణ స్థితి~$r$లోకి వెళ్లే
+నిర్దేశంతో మార్చి, యంత్రంలో ఒక \emph{తిరస్కరణ} స్థితిని చేర్చవచ్చు.
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)                     {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [below of=A] {$h$};
+  \node[state]         (D) [below of=B] {$r$};
+
+  \path (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{R}} (B)
+             edge node {\TMtrans{\TMblank}{\TMblank}{N}} (C)
+        (B) edge node {\TMtrans{\TMblank}{\TMblank}{N}} (D)
+            edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{R}} (A);
+\end{tikzpicture}
+\]
+\end{ex}
+
+\begin{explain}
+యంత్రం కొన్ని ఇన్‌పుట్‌లను ఎప్పుడు అంగీకరిస్తుందో లేదా తిరస్కరిస్తుందో స్పష్టంగా
+చూపే ఇలాంటి సందర్భాల్లో, ప్రత్యేక ఆగే స్థితిని చేర్చడం ప్రయోజనకరం. అయితే,
+ప్రత్యేక ఆగే స్థితిని చేర్చడం వల్ల అదనపు గణన సామర్థ్యమేదీ రాదని గమనించడం
+ముఖ్యం. అదే విధంగా, ఆగడానికి తక్కువ ఆచారబద్ధమైన భావనకు దాని సొంత ప్రయోజనాలు
+ఉన్నాయి. ఈ అధ్యాయంలో ఇంతవరకు ఉపయోగించిన ఆగడం యొక్క నిర్వచనం
+\emph{ఆగే సమస్య} నిరూపణను అంతర్బోధాత్మకంగానూ సులభంగా ప్రదర్శించగలిగేలా
+చేస్తుంది. ఈ కారణంగా మన మొదటి నిర్వచనాన్నే కొనసాగిస్తాం.
+\end{explain}
+
+\end{document}

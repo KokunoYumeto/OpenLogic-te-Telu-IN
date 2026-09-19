@@ -1,0 +1,167 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: combining-machines
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{cmb}
+\olsection{ట్యూరింగ్ యంత్రాలను కలపడం}
+
+\begin{explain}
+ఇంతవరకు మనం చూసిన ట్యూరింగ్ యంత్రాల ఉదాహరణలు చాలా సరళమైనవి. కానీ నిజానికి,
+ఏ ఆధునిక ప్రోగ్రామింగ్ భాషతో పరిష్కరించగల ఏ సమస్యనైనా ట్యూరింగ్ యంత్రాలతో
+కూడా పరిష్కరించవచ్చు. మరింత సంక్లిష్టమైన ట్యూరింగ్ యంత్రాలను నిర్మించడానికి,
+యంత్రాలను కలపగలమని మనకు మనమే నమ్మకం కలిగించుకోవడం ముఖ్యం. అప్పుడు ప్రక్రియను
+సరళమైన భాగాలుగా విడగొట్టి, మరింత సంక్లిష్ట సమస్యలను పరిష్కరించే యంత్రాలను
+నిర్మించవచ్చు. సంక్లిష్ట సమస్యను దాని భాగాలుగా విభజించడానికి సహజమైన పద్ధతిని
+కనుగొనగలిగితే, సమస్యను అనేక దశల్లో ఎదుర్కొనవచ్చు: అనేక సరళ ట్యూరింగ్
+యంత్రాలను నిర్మించి, వాటిని ఒకే సమస్య-పరిష్కార యంత్రంగా కలపవచ్చు. తరువాతి
+విభాగంలో ఆగే సమస్యను ఎదుర్కొనేటప్పుడు ఈ విషయం ప్రత్యేకంగా ముఖ్యం.
+
+ట్యూరింగ్ యంత్రాలు $M = \tuple{Q, \Sigma, q_0, \delta}$,
+~$M' = \tuple{Q', \Sigma', q_0', \delta'}$లను ఎలా కలుపుతాం? $M$ ఆగిన
+తరువాతి టేపు స్థితివిన్యాసాన్ని ఇప్పుడు యంత్రం~$M'$ నడకకు ఇన్‌పుట్
+స్థితివిన్యాసంగా ఉపయోగిస్తాం. ఇలా చేసే ఒకే ట్యూరింగ్ యంత్రం $M \frown M'$ను
+పొందడానికి కింది విధంగా చేయండి:
+\begin{enumerate}
+    \item $M$, $M'$లకు ఏ స్థితీ ఉమ్మడిగా లేకుండా ($Q \cap Q' = \emptyset$)
+    $M'$ యొక్క అన్ని స్థితులు~$Q'$కు మళ్లీ సంఖ్యలు (లేదా పేర్లు) ఇవ్వండి.
+    \item $M \frown M'$ యొక్క స్థితులు $Q \cup Q'$.
+    \item టేపు వర్ణమాల $\Sigma \cup \Sigma'$.
+    \item ప్రారంభ స్థితి~$q_0$.
+    \item సంక్రమణ ప్రమేయం కింది విధంగా ఇచ్చిన ప్రమేయం $\delta''$:
+    \[\delta''(q,\sigma) =
+    \begin{cases}
+      \delta(q,\sigma) & \text{$q \in Q$, $\delta(q,\sigma)$ నిర్వచితమైతే}\\
+      \delta'(q,\sigma) & \text{$q \in Q'$ అయితే}\\
+      \tuple{q_0', \sigma, \TMstay} & \text{$q \in Q$, అలాగే
+      $\delta(q,\sigma)$ నిర్వచితం కాకపోతే}
+    \end{cases}\]
+\end{enumerate}
+\sourcecorrection{OLTETURMAC-007}{ఆంగ్ల మూలంలోని $\delta''$ నిర్వచనంలో మొదటి సందర్భం $q\in Q$ అని మాత్రమే ఉండి, మూడవ ``$q\in Q$, $\delta(q,\sigma)$ నిర్వచితం కాదు'' సందర్భంతో అతివ్యాప్తి చెందింది. తరువాతి వివరణ నిర్దేశించినట్లుగా, మొదటి సందర్భానికి $\delta(q,\sigma)$ నిర్వచితమనే షరతును చేర్చి సందర్భాలను విడదీశాం.}
+ఫలితంగా వచ్చే యంత్రం స్థితి $q \in Q$లో ఉన్నప్పుడు $M$ యొక్క నిర్దేశాలను,
+స్థితి~$q \in Q'$లో ఉన్నప్పుడు $M'$ యొక్క నిర్దేశాలను ఉపయోగిస్తుంది. అది
+స్థితి $q \in Q$లో ఉండి, $M$కు సంక్రమణ లేని సంకేతం~$\sigma$ను చదువుతుంటే
+(అంటే $M$ ఆగిపోయి ఉండేది), $M'$ యొక్క ప్రారంభ స్థితిలోకి వెళుతుంది (టేపు
+విషయాన్ని, శీర్షం స్థానాన్ని యథాతథంగా ఉంచుతుంది).
+
+యంత్రం~$M$ క్రమశిక్షితమైనది కాకపోతే, $M$ ఆగినప్పుడు టేపు శీర్షం ఎక్కడ ఉందో
+మనకు తెలియదని గమనించండి; అందువల్ల $M$ యొక్క ఆగే స్థితివిన్యాసంలో శీర్షం
+గడి~$1$ను చదువుతూ ఉండనవసరం లేదు. యంత్రాలను కలిపేటప్పుడు దీన్ని గుర్తుంచుకోవడం
+ముఖ్యం.
+\end{explain}
+
+\begin{ex}
+\emph{యంత్రాలను కలపడం:} పొడవులు $n$, $m$ అయిన రెండు $\TMstroke$ల దిమ్మలతో
+కూడిన ఇన్‌పుట్‌పై ప్రారంభించినప్పుడు, టేపుపై $2(m+n)$ $\TMstroke$ల ఒకే
+దిమ్మతో ఆగే యంత్రాన్ని రూపొందిస్తాం. ఈ యంత్రాన్ని నిర్మించడానికి, మనకు ఇప్పటికే
+తెలిసిన కూడిక యంత్రం, ద్విగుణక యంత్రం అనే రెండు యంత్రాలను కలపవచ్చు. కూడిక
+యంత్రానికి స్థితి రేఖాచిత్రం గీయడంతో మొదలుపెడదాం.
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [right of=B] {$q_2$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A)
+        (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge [loop above] node {\TMtrans{\TMstroke}{\TMblank}{\TMstay}} (C);
+\end{tikzpicture}
+\]
+స్థితి~$q_2$లో ఆగడానికి బదులుగా, అవుట్‌పుట్‌ను ద్విగుణీకరించడానికి పనిని
+కొనసాగించాలి. ద్విగుణక యంత్రం ఇన్‌పుట్‌లోని మొదటి గీతను చెరిపి, వేరుగా ఉన్న
+అవుట్‌పుట్‌లో రెండు గీతలను వ్రాస్తుందని గుర్తుచేసుకోండి. టేపు శీర్షం కూడిక
+యంత్రపు అవుట్‌పుట్‌లోని మొదటి గీతను చదువుతోందని నిర్ధారించడానికి ఒక నిర్దేశాన్ని
+చేర్చుదాం.
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [right of=B] {$q_2$};
+  \node[state]         (D) [below left of=C] {$q_3$};
+  \node[state]         (E) [below left of=D] {$q_4$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A)
+        (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (D)
+        (D) edge [loop left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (D)
+            edge node[left, xshift=-2mm] {\TMtrans{\TMendtape}{\TMendtape}{\TMright}} (E);
+\end{tikzpicture}
+\]
+ఇప్పుడు ఇన్‌పుట్‌ను ద్విగుణీకరించడం సులభం---స్థితి~$q_4$కు ద్విగుణక యంత్రాన్ని
+కలిపితే చాలు. దీనికోసం ద్విగుణక యంత్రపు స్థితులకు మళ్లీ పేర్లు ఇచ్చి, అవి
+~$q_0$ వద్ద కాక~$q_4$ వద్ద మొదలయ్యేలా చేయాలి---ఈ విధంగా రెండు ప్రారంభ
+స్థితులు ఏర్పడవు. చివరి రేఖాచిత్రం \olref{fig:combined}లో ఉన్నట్లుగా ఉండాలి.
+\begin{figure}
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+  \node[initial,state] (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [right of=B] {$q_2$};
+  \node[state]         (D) [below left of=C] {$q_3$};
+  \node[state]         (E) [below left of=D] {$q_4$};
+  \node[state]         (2) [right of=E] {$q_5$};
+  \node[state]         (3) [right of=2] {$q_6$};
+  \node[state]         (4) [below of=3] {$q_7$};
+  \node[state]         (5) [left of=4]  {$q_8$};
+  \node[state]         (6) [left of=5]  {$q_9$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A)
+        (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (D)
+        (D) edge [loop left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (D)
+            edge node[left, xshift=-2mm] {\TMtrans{\TMendtape}{\TMendtape}{\TMright}} (E)
+    (E) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMright}} (2)
+    (2) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (2)
+      edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (3)
+    (3) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (3)
+        edge node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (4)
+    (4) edge [loop below] node {\TMtrans{\TMblank}{\TMstroke}{\TMleft}} (4)
+        edge node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+    (5) edge [loop below]  node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (6)
+    (6) edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (6)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (E);
+\end{tikzpicture}
+\]
+\caption{కూడిక, ద్విగుణక యంత్రాలను కలపడం}
+\ollabel{fig:combined}
+\end{figure}
+\sourcecorrection{OLTETURMAC-008}{ఆంగ్ల మూలం కూడిక యంత్రాన్ని ఈ ఉదాహరణలో మూడుసార్లు పునర్వాడుతూ, ప్రతి సారి స్థితి $q_0$ వద్ద $\TMstroke$ బాణాన్ని స్వీయ-చక్రంగా అలంకరించినా లక్ష్యాన్ని $q_1$గా ఇచ్చింది. కూడిక దశ మొదటి ఇన్‌పుట్ దిమ్మను పూర్తిగా దాటేందుకు మూడు లక్ష్యాలనూ $q_0$గా సరిచేశాం.}
+\end{ex}
+
+\begin{prop}
+    $M$, $M'$లు క్రమశిక్షితమైనవై, వరుసగా ప్రమేయాలు $f\colon
+    \Nat^k \to \Nat$, $f'\colon \Nat \to \Nat$లను గణిస్తే,
+    $M \frown M'$ క్రమశిక్షితమైనది, అలాగే~$\comp{f}{f'}$ను గణిస్తుంది.
+\end{prop}
+
+\begin{proof}
+    $M$ క్రమశిక్షితమైనది కనుక, అవుట్‌పుట్~$f(n_1,\dots,n_k) = m$తో
+    ఆగినప్పుడు శీర్షం గడి~$1$ను చదువుతూ ఉంటుంది. ఇప్పుడు~$M'$ యొక్క ప్రారంభ
+    స్థితిలోకి వెళితే, యంత్రం అవుట్‌పుట్ $f'(m)$తో, మళ్లీ గడి~$1$ను చదువుతూ
+    ఆగుతుంది. \olref[dis]{defn:disciplined}లోని ఇతర షరతులు కూడా నెరవేరుతాయి.
+\end{proof}
+
+\begin{prob}
+    \cref{tur:mac:dis:prob:disc-succ}లోని యంత్రం~$M$ను తీసుకుని
+    $M \frown M$ను నిర్మించడం ద్వారా $f(x) = x+2$ను గణించే క్రమశిక్షిత
+    ట్యూరింగ్ యంత్రాన్ని ఇవ్వండి.
+\end{prob}
+\end{document}

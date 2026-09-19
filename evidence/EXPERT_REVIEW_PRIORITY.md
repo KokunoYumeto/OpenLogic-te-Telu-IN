@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 248 of 722 draft units**. This view selects 239 of 265 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 260 of 722 draft units**. This view selects 248 of 274 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -414,6 +414,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Please double-check: Please double-check whether “గణనీయంకాని సమితి / ఆగే సమితి / స్వయంగా ఆగే సమితి / సంయోగం, ఛేదనం కింద సంవృతత / పూరకం / అనేకం-ఒకటి తగ్గింపు, తగ్గించదగినత / ఒకటి-ఒకటి తగ్గించదగినత / ట్యూరింగ్ తగ్గించదగినత / సంపూర్ణ గణనీయంగా లెక్కించదగిన సమితి / ఒరాకిల్ / సర్వనిర్వచితత్వం / సూచిక సమితి / రైస్ సిద్ధాంతం / స్థిరబిందు సిద్ధాంతం / స్వీయ-సూచన” is idiomatic and technically standard for “non-computable set / halting set / self-halting set / closure under union and intersection / complement / many-one reduction and reducibility / one-one reducibility / Turing reducibility / complete computably enumerable set / oracle / totality / index set / Rice's theorem / fixed-point theorem / self-reference” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
+## REV-TE-T068 — Turing machine / Turing-machine computation / model of computation / tape / read-write head / square / state / state diagram / configuration / run / alphabet / instruction set / transition function / initial state / halting state / reject state / unary representation / doubler / disciplined machine / combined machine / nondeterministic Turing machine / effective procedure / Church--Turing thesis / pseudocode
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: ట్యూరింగ్ యంత్రం / ట్యూరింగ్ యంత్ర గణన / గణనా నమూనా / టేపు / చదువు--వ్రాత శీర్షం / గడి / స్థితి / స్థితి రేఖాచిత్రం / స్థితివిన్యాసం / నడక / వర్ణమాల / నిర్దేశ సమితి / సంక్రమణ ప్రమేయం / ప్రారంభ స్థితి / ఆగే స్థితి / తిరస్కరణ స్థితి / ఏకాంక ప్రాతినిధ్యం / ద్విగుణక యంత్రం / క్రమశిక్షిత యంత్రం / సంయుక్త యంత్రం / అనిర్ణీత ట్యూరింగ్ యంత్రం / ప్రభావక ప్రక్రియ / చర్చ్--ట్యూరింగ్ సిద్ధాంతప్రతిపాదన / సూడోకోడ్
+
+- Occurrences: OLP-0254; turing-machines/machines-computations/introduction; translation/content/turing-machines/machines-computations/introduction.tex:12-25; printed/PDF page pending; OLP-0255; turing-machines/machines-computations/representing-tms; translation/content/turing-machines/machines-computations/representing-tms.tex:12-22; printed/PDF page pending; OLP-0256; turing-machines/machines-computations/turing-machines; translation/content/turing-machines/machines-computations/turing-machines.tex:21-32; printed/PDF page pending; OLP-0257; turing-machines/machines-computations/configuration; translation/content/turing-machines/machines-computations/configuration.tex:24-36; printed/PDF page pending; OLP-0257; turing-machines/machines-computations/configuration; translation/content/turing-machines/machines-computations/configuration.tex:82-87; printed/PDF page pending; OLP-0258; turing-machines/machines-computations/unary-numbers; translation/content/turing-machines/machines-computations/unary-numbers.tex:9-10; printed/PDF page pending; OLP-0259; turing-machines/machines-computations/halting-states; translation/content/turing-machines/machines-computations/halting-states.tex:12-15; printed/PDF page pending; OLP-0260; turing-machines/machines-computations/disciplined-machines; translation/content/turing-machines/machines-computations/disciplined-machines.tex:25-34; printed/PDF page pending; OLP-0261; turing-machines/machines-computations/combining-machines; translation/content/turing-machines/machines-computations/combining-machines.tex:23-48; printed/PDF page pending; OLP-0262; turing-machines/machines-computations/variants; translation/content/turing-machines/machines-computations/variants.tex:27-36; printed/PDF page pending; OLP-0263; turing-machines/machines-computations/church-turing-thesis; translation/content/turing-machines/machines-computations/church-turing-thesis.tex:12-19; printed/PDF page pending
+
+- Please double-check: Please double-check whether “ట్యూరింగ్ యంత్రం / ట్యూరింగ్ యంత్ర గణన / గణనా నమూనా / టేపు / చదువు--వ్రాత శీర్షం / గడి / స్థితి / స్థితి రేఖాచిత్రం / స్థితివిన్యాసం / నడక / వర్ణమాల / నిర్దేశ సమితి / సంక్రమణ ప్రమేయం / ప్రారంభ స్థితి / ఆగే స్థితి / తిరస్కరణ స్థితి / ఏకాంక ప్రాతినిధ్యం / ద్విగుణక యంత్రం / క్రమశిక్షిత యంత్రం / సంయుక్త యంత్రం / అనిర్ణీత ట్యూరింగ్ యంత్రం / ప్రభావక ప్రక్రియ / చర్చ్--ట్యూరింగ్ సిద్ధాంతప్రతిపాదన / సూడోకోడ్” is idiomatic and technically standard for “Turing machine / Turing-machine computation / model of computation / tape / read-write head / square / state / state diagram / configuration / run / alphabet / instruction set / transition function / initial state / halting state / reject state / unary representation / doubler / disciplined machine / combined machine / nondeterministic Turing machine / effective procedure / Church--Turing thesis / pseudocode” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
 ## REV-OLFUN-001 — OLFUN-001
 
 - Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
@@ -728,11 +738,11 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
 
-- Chosen wording/treatment: replaced the malformed nested cardinal equality by B equinumerous with C; adjacent sourcecorrection discloses the repair
+- Chosen wording/treatment: presents the valid source chain as the two explicit comparisons A equinumerous with B and B equinumerous with C for readability; the adjacent sourcecorrection discloses the equivalent notation and rejects the prior error classification
 
-- Occurrences: OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:53-53; printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:55-62; printed/PDF page pending
+- Occurrences: OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:53-53; printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:55-64; printed/PDF page pending
 
-- Please double-check: Please double-check: Does the repaired helper proposition conclude B is equinumerous with C, without the malformed nested cardinality expression?
+- Please double-check: Please double-check that the qualified note correctly explains the valid nested cardinality chain and that the two explicit target comparisons are mathematically equivalent without retaining the rejected source-error claim.
 
 ## REV-OLTEINF-006 — OLTEINF-006
 
@@ -740,7 +750,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: added the missing ran(g)-subset-B direction before the source's B-subset-ran(g) direction; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:64-77; printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:79-83; printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:85-89; printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:91-104; printed/PDF page pending
+- Occurrences: OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:66-79; printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:81-85; printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:87-91; printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; translation/content/sets-functions-relations/infinite/card-sb.tex:93-106; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the proof establish both inclusions needed for ran(g)=B, including the formerly missing ran(g)-subset-B direction?
 
@@ -2393,3 +2403,83 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0250; computability/computability-theory/application-fixed-point; translation/content/computability/computability-theory/application-fixed-point.tex:28-32; printed/PDF page pending; OLP-0250; computability/computability-theory/application-fixed-point; translation/content/computability/computability-theory/application-fixed-point.tex:34-59; printed/PDF page pending
 
 - Please double-check: Please double-check that the fixed-point application begins with arbitrary partial computable f, matching the theorem and the partial construction of g.
+
+## REV-OLTETURMAC-001 — OLTETURMAC-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: named q_0 explicitly in the inconsistent sentence; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0255; turing-machines/machines-computations/representing-tms; translation/content/turing-machines/machines-computations/representing-tms.tex:83-89; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURMAC-001 is mathematically precise and idiomatic.
+
+## REV-OLTETURMAC-002 — OLTETURMAC-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used D and stated its three allowed values; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0256; turing-machines/machines-computations/turing-machines; translation/content/turing-machines/machines-computations/turing-machines.tex:39-45; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURMAC-002 is mathematically precise and idiomatic.
+
+## REV-OLTETURMAC-003 — OLTETURMAC-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: stated that input begins immediately to the right of the left-end marker; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0257; turing-machines/machines-computations/configuration; translation/content/turing-machines/machines-computations/configuration.tex:55-58; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURMAC-003 is mathematically precise and idiomatic.
+
+## REV-OLTETURMAC-004 — OLTETURMAC-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: allowed finite or infinite runs and applied the one-step condition only where a successor is present; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0257; turing-machines/machines-computations/configuration; translation/content/turing-machines/machines-computations/configuration.tex:82-87; printed/PDF page pending; OLP-0257; turing-machines/machines-computations/configuration; translation/content/turing-machines/machines-computations/configuration.tex:89-95; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURMAC-004 is mathematically precise and idiomatic.
+
+## REV-OLTETURMAC-005 — OLTETURMAC-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: retargeted the q_0 stroke loop to q_0; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0258; turing-machines/machines-computations/unary-numbers; translation/content/turing-machines/machines-computations/unary-numbers.tex:53-62; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURMAC-005 is mathematically precise and idiomatic.
+
+## REV-OLTETURMAC-006 — OLTETURMAC-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: retargeted the copied q_0 stroke loop to q_0; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0260; turing-machines/machines-computations/disciplined-machines; translation/content/turing-machines/machines-computations/disciplined-machines.tex:63-74; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURMAC-006 is mathematically precise and idiomatic.
+
+## REV-OLTETURMAC-007 — OLTETURMAC-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restricted the first case to defined component transitions; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0261; turing-machines/machines-computations/combining-machines; translation/content/turing-machines/machines-computations/combining-machines.tex:35-43; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURMAC-007 is mathematically precise and idiomatic.
+
+## REV-OLTETURMAC-008 — OLTETURMAC-008
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: retargeted all three copied q_0 stroke loops to q_0; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0261; turing-machines/machines-computations/combining-machines; translation/content/turing-machines/machines-computations/combining-machines.tex:71-86; printed/PDF page pending; OLP-0261; turing-machines/machines-computations/combining-machines; translation/content/turing-machines/machines-computations/combining-machines.tex:94-121; printed/PDF page pending; OLP-0261; turing-machines/machines-computations/combining-machines; translation/content/turing-machines/machines-computations/combining-machines.tex:123-147; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURMAC-008 is mathematically precise and idiomatic.

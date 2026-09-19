@@ -48,7 +48,7 @@ const edition = Object.freeze({
 });
 
 const artifactRefs = {
-  terms: publicArtifact('TERM_DECISIONS.jsonl', 'partial-248-of-722'),
+  terms: publicArtifact('TERM_DECISIONS.jsonl', 'partial-260-of-722'),
   passages: publicArtifact('CANON_PASSAGES.jsonl', 'consulted-passage-index'),
   corrections: publicArtifact('SOURCE_CORRECTIONS.jsonl', 'applied-source-corrections')
 };
@@ -270,10 +270,16 @@ const correctionDecisions = corrections.map(correction => {
   const sourceRanges = proseRanges(correction.source_locator, segment.source_start_line, segment.source_end_line);
   const targetRange = fileRange(correction.target_locator, segment.target_start_line, segment.target_end_line);
   const decisionId = `te-Telu-IN-${correction.finding_id}`;
-  const intendedSense = `Repair the audited ${correction.classification.replaceAll('_', ' ')} at ${correction.source_locator}, preserving unaffected notation and argument structure.`;
+  const qualified = correction.qualification?.disposition === 'rejected_false_positive';
+  const intendedSense = qualified
+    ? `Preserve the valid source construction at ${correction.source_locator}, present its equivalent explicit notation for readability, and record that the historical error classification was rejected as a false positive.`
+    : `Repair the audited ${correction.classification.replaceAll('_', ' ')} at ${correction.source_locator}, preserving unaffected notation and argument structure.`;
   const reviewArtifact = auditArtifact(correction.audit_review_sha256, 'REVIEW.md', correction.audit_id);
   const findingsArtifact = auditArtifact(correction.audit_findings_sha256, 'FINDINGS.json', correction.finding_id);
-  const evidenceRefs = uniqueArtifacts([artifactRefs.corrections, reviewArtifact, findingsArtifact]);
+  const qualificationArtifact = correction.qualification?.review_path
+    ? publicArtifact(correction.qualification.review_path.replace(/^evidence\//u, ''), correction.qualification.disposition)
+    : null;
+  const evidenceRefs = uniqueArtifacts([artifactRefs.corrections, reviewArtifact, findingsArtifact, ...(qualificationArtifact ? [qualificationArtifact] : [])]);
   const mappedOccurrences = linkedSegments.length === 1
     ? sourceRanges.map(sourceRange => {
         const alignedSegment = ledger.find(item =>
@@ -308,10 +314,14 @@ const correctionDecisions = corrections.map(correction => {
     record_kind: 'source_correction',
     recording_mode: 'contemporaneous',
     edition,
-    source_term_or_construction: `${correction.finding_id}: ${correction.classification.replaceAll('_', ' ')}`,
+    source_term_or_construction: qualified
+      ? `${correction.finding_id}: historical ${correction.classification.replaceAll('_', ' ')} classification (rejected false positive)`
+      : `${correction.finding_id}: ${correction.classification.replaceAll('_', ' ')}`,
     intended_sense: intendedSense,
     chosen_rendering: correction.body_treatment,
-    rationale: `The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.`,
+    rationale: qualified
+      ? `A later consolidation review established that the nested source notation is valid because \\cardeq takes two mandatory arguments. The historical audit claim remains traceable, while the target gives the equivalent two explicit comparisons and its adjacent note records the rejected-false-positive disposition.`
+      : `The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.`,
     authorities_checked: [{
       authority_id: `${correction.audit_id}:${correction.finding_id}`,
       citation: `Bounded OpenLogic source audit ${correction.audit_id}, finding ${correction.finding_id}`,
@@ -320,19 +330,29 @@ const correctionDecisions = corrections.map(correction => {
       source_sha256: correction.source_sha256,
       passage_sha256: correction.audit_findings_sha256,
       status: 'checked_supports',
-      note: `${correction.classification}; ${correction.body_treatment}.`
+      note: qualified
+        ? `Historical classification ${correction.classification}, superseded by ${correction.qualification.disposition}; ${correction.body_treatment}.`
+        : `${correction.classification}; ${correction.body_treatment}.`
     }],
-    alternatives: [{
+    alternatives: qualified ? [{
+      rendering: 'Retain the valid nested cardinality construction verbatim.',
+      disposition: 'viable_alternative',
+      reason: 'It is mathematically valid, but the two explicit comparisons are clearer in the Telugu target.'
+    }] : [{
       rendering: 'Translate the defective source wording or formula verbatim.',
       disposition: 'rejected',
       reason: 'That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.'
     }],
     confidence: 'high',
-    confidence_reason: 'The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.',
+    confidence_reason: qualified
+      ? 'The notation expansion and the proof establish mathematical equivalence, and the cited consolidation review rejects the former defect claim; only specialist assessment of Telugu qualification phrasing remains useful.'
+      : 'The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.',
     provisional: false,
     review_priority: 'normal',
     expert_review_useful: true,
-    expert_review_reason: 'Optional specialist review can improve the clarity of the Telugu disclosure without reopening the source-fixed mathematical repair.',
+    expert_review_reason: qualified
+      ? 'Optional specialist review can improve the clarity of the Telugu qualification without reopening the consolidation review’s mathematical disposition.'
+      : 'Optional specialist review can improve the clarity of the Telugu disclosure without reopening the source-fixed mathematical repair.',
     please_double_check_question: questionFor(record),
     occurrences: mappedOccurrences.map(({alignedSegment, sourceRange, targetRange: mappedTargetRange}, index) => {
       return {
@@ -381,7 +401,7 @@ const canonical = {
     doi: null,
     source_revision: '9620cc73f9c8e0ad003c514a5d3748f29611c4c0',
     coverage_state: 'partial',
-    source_units: 248,
+    source_units: 260,
     reader_units: null
   },
   generator: {
@@ -399,7 +419,7 @@ const byteLabel = span => span.status === 'available' ? `${span.start}-${span.en
 const full = [
   '# Full translation-decision register',
   '',
-  `Edition: **${edition.language_tag} / ${edition.script} / ${edition.register_or_variant}**. Coverage: **248 of 722 source units drafted**. This readable view contains all ${decisions.length} decisions and ${occurrenceCount} recorded occurrences.`,
+  `Edition: **${edition.language_tag} / ${edition.script} / ${edition.register_or_variant}**. Coverage: **260 of 722 source units drafted**. This readable view contains all ${decisions.length} decisions and ${occurrenceCount} recorded occurrences.`,
   '',
   'Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.',
   ''
@@ -504,7 +524,7 @@ fs.writeFileSync(path.join(dataDir, 'DECISION_OCCURRENCES.csv'), csv);
 
 const startHere = `# Start here: Telugu translation decisions
 
-Status: **partial — 248 of 722 source units drafted**. The canonical register currently contains **${decisions.length} decisions** (${termDecisions.length} terminology/sense decisions and ${correctionDecisions.length} source-correction decisions) with **${occurrenceCount} concrete occurrences**.
+Status: **partial — 260 of 722 source units drafted**. The canonical register currently contains **${decisions.length} decisions** (${termDecisions.length} terminology/sense decisions and ${correctionDecisions.length} source-correction decisions) with **${occurrenceCount} concrete occurrences**.
 
 Use these views:
 

@@ -1,0 +1,136 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTETURMAC-20260919",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0255",
+      "OLP-0256",
+      "OLP-0257",
+      "OLP-0258",
+      "OLP-0260",
+      "OLP-0261"
+    ],
+    "finding_count": 8
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTETURMAC-001",
+      "unit_id": "OLP-0255",
+      "classification": "confirmed_state_label_mismatch",
+      "source": {
+        "path": "content/turing-machines/machines-computations/representing-tms.tex",
+        "bytes": 12902,
+        "sha256": "099ee6e5370880ce3164bdeeb6fe36a06d2387228fa2ce4df943cb88ed6f3afd",
+        "locator": "lines 82-92, first traced configuration"
+      },
+      "finding": "The source first says the machine starts in q_0, then calls the same state state one even though the displayed subscript and applicable transition are q_0.",
+      "controlling_evidence": "The preceding sentence, displayed configuration and transition delta(q_0,stroke) all identify the initial state as q_0.",
+      "required_translation_handling": "Name q_0 explicitly in the inconsistent sentence and add an adjacent OLTETURMAC-001 disclosure."
+    },
+    {
+      "finding_id": "OLTETURMAC-002",
+      "unit_id": "OLP-0256",
+      "classification": "confirmed_undefined_direction_variable",
+      "source": {
+        "path": "content/turing-machines/machines-computations/turing-machines.tex",
+        "bytes": 2356,
+        "sha256": "20d13655358fa780af8f9a2e4994c101c1495ecce098512c28a60293ee239a65",
+        "locator": "lines 42-44, tape-end preservation convention"
+      },
+      "finding": "The transition tuple uses an otherwise undefined x in its direction coordinate.",
+      "controlling_evidence": "The formal definition immediately above names the direction coordinate D and restricts it to left, right or stay.",
+      "required_translation_handling": "Use D and state its three allowed values; add an adjacent OLTETURMAC-002 disclosure."
+    },
+    {
+      "finding_id": "OLTETURMAC-003",
+      "unit_id": "OLP-0257",
+      "classification": "confirmed_malformed_adjacency_phrase",
+      "source": {
+        "path": "content/turing-machines/machines-computations/configuration.tex",
+        "bytes": 4110,
+        "sha256": "8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b",
+        "locator": "lines 58-60, concatenation explanation"
+      },
+      "finding": "The source says the input begins immediately to the left end marker, omitting the spatial relation and conflicting with the displayed concatenation.",
+      "controlling_evidence": "The initial configuration is end-marker concatenated with I, and the preceding paragraph places input on squares to the marker's right.",
+      "required_translation_handling": "Say the input begins immediately to the right of the left-end marker and add an adjacent OLTETURMAC-003 disclosure."
+    },
+    {
+      "finding_id": "OLTETURMAC-004",
+      "unit_id": "OLP-0257",
+      "classification": "confirmed_halting_run_definition_conflict",
+      "source": {
+        "path": "content/turing-machines/machines-computations/configuration.tex",
+        "bytes": 4110,
+        "sha256": "8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b",
+        "locator": "lines 84-91, run and halting definitions"
+      },
+      "finding": "A run is introduced as a sequence in which every C_i yields C_(i+1), but the next sentence requires a final C_k whose transition is undefined; the literal first condition excludes every halting run.",
+      "controlling_evidence": "The intended definition must admit finite runs ending at the undefined transition used to define halting, as well as infinite nonhalting runs.",
+      "required_translation_handling": "Allow finite or infinite sequences and require the one-step condition only where the successor belongs to the sequence; add an adjacent OLTETURMAC-004 disclosure."
+    },
+    {
+      "finding_id": "OLTETURMAC-005",
+      "unit_id": "OLP-0258",
+      "classification": "confirmed_adder_loop_target_error",
+      "source": {
+        "path": "content/turing-machines/machines-computations/unary-numbers.tex",
+        "bytes": 10550,
+        "sha256": "c1e405708a0c2a3ff77377f136b2d94703174a4a23eefa25a9f6555a13cfcba3",
+        "locator": "lines 55-59, addition-machine state diagram"
+      },
+      "finding": "The q_0 transition on a stroke is styled as a loop but targets q_1 rather than q_0.",
+      "controlling_evidence": "To add the two unary blocks, q_0 must traverse the complete first block before its blank transition writes the joining stroke and enters q_1; targeting q_1 after the first stroke does not compute addition.",
+      "required_translation_handling": "Retarget the loop to q_0 and add an adjacent OLTETURMAC-005 disclosure."
+    },
+    {
+      "finding_id": "OLTETURMAC-006",
+      "unit_id": "OLP-0260",
+      "classification": "confirmed_copied_adder_loop_target_error",
+      "source": {
+        "path": "content/turing-machines/machines-computations/disciplined-machines.tex",
+        "bytes": 4130,
+        "sha256": "b90ae0706db20b57872c40cdbd28e8ecb3d9aa98bbab8f18974ca235e4607aaa",
+        "locator": "lines 66-70, disciplined addition-machine diagram"
+      },
+      "finding": "The disciplined version repeats the addition-machine q_0 stroke loop with target q_1.",
+      "controlling_evidence": "The discipline extension changes the cleanup and halting behavior, not the invariant that q_0 scans the complete first unary block.",
+      "required_translation_handling": "Retarget the copied loop to q_0 and add an adjacent OLTETURMAC-006 disclosure."
+    },
+    {
+      "finding_id": "OLTETURMAC-007",
+      "unit_id": "OLP-0261",
+      "classification": "confirmed_overlapping_transition_cases",
+      "source": {
+        "path": "content/turing-machines/machines-computations/combining-machines.tex",
+        "bytes": 8221,
+        "sha256": "02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48",
+        "locator": "lines 37-43, definition of delta double-prime"
+      },
+      "finding": "The first piecewise case applies whenever q is in Q, overlapping the third case where q is in Q and delta(q,sigma) is undefined.",
+      "controlling_evidence": "The explanatory paragraph says to use M's instruction when it exists and enter M-prime's start state exactly when M has no transition.",
+      "required_translation_handling": "Restrict the first case to defined delta(q,sigma), leaving the third case for undefined transitions, and add an adjacent OLTETURMAC-007 disclosure."
+    },
+    {
+      "finding_id": "OLTETURMAC-008",
+      "unit_id": "OLP-0261",
+      "classification": "confirmed_triplicated_adder_loop_target_error",
+      "source": {
+        "path": "content/turing-machines/machines-computations/combining-machines.tex",
+        "bytes": 8221,
+        "sha256": "02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48",
+        "locator": "lines 74-78, 97-101 and 127-131, three addition-stage diagrams"
+      },
+      "finding": "All three copies style the q_0 stroke transition as a loop while targeting q_1.",
+      "controlling_evidence": "Each diagram implements the same addition stage, which must keep q_0 while traversing the first input block and enter q_1 only on its separating blank.",
+      "required_translation_handling": "Retarget all three loops to q_0 and add an adjacent OLTETURMAC-008 disclosure."
+    }
+  ]
+}

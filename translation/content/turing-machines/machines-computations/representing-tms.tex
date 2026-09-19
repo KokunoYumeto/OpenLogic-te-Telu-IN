@@ -1,0 +1,283 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: representing-tms
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{rep}
+\olsection{ట్యూరింగ్ యంత్రాలకు ప్రాతినిధ్యం}
+
+\begin{explain}
+ట్యూరింగ్ యంత్రాలను \emph{స్థితి రేఖాచిత్రాల}తో దృశ్యరూపంలో చూపవచ్చు.
+బాణాలతో కలిపిన స్థితి గడులతో ఈ రేఖాచిత్రాలు ఏర్పడతాయి. సహజంగానే, ప్రతి
+స్థితి గడి యంత్రపు ఒక స్థితికి ప్రాతినిధ్యం వహిస్తుంది. ప్రతి బాణం ఆ స్థితి
+నుండి అమలు చేయగల ఒక నిర్దేశానికి ప్రాతినిధ్యం వహిస్తుంది; ఆ నిర్దేశపు
+వివరాలను సంబంధిత బాణం పైనా కిందా వ్రాస్తారు. $q_0$, $q_1$ అనే రెండు అంతర్గత
+స్థితులు, ఒకే నిర్దేశం ఉన్న కింది యంత్రాన్ని పరిశీలించండి:
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]   (A)              {$q_0$};
+  \node[state]   (B) [right of=A] {$q_1$};
+
+  \path (A) edge  node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (B);
+\end{tikzpicture}
+\]
+ట్యూరింగ్ యంత్రానికి చదువు--వ్రాత శీర్షమూ, దానిపై ఇన్‌పుట్ వ్రాసి ఉన్న
+టేపూ ఉంటాయని గుర్తుచేసుకోండి. ఈ నిర్దేశాన్ని ఇలా చదవవచ్చు: \emph{స్థితి
+$q_0$లో ఒక~$\TMblank$ను చదువుతుంటే, ఒక~$\TMstroke$ను వ్రాసి, కుడికి కదిలి,
+స్థితి $q_1$కు వెళ్లాలి}. ఇది $\tuple{q_0, \TMblank}$ను
+$\tuple{q_1, \TMstroke, \TMright}$కు పంపే సంక్రమణ ప్రమేయానికి సమానం.
+\end{explain}
+
+\begin{ex}
+\emph{సరి యంత్రం}: టేపుపై సరి సంఖ్యలో $\TMstroke$లు ఉంటే, అప్పుడే మాత్రమే
+కింది ట్యూరింగ్ యంత్రం ఆగుతుంది (టేపుపై మొదటి $\TMblank$కు ముందు అన్ని
+$\TMstroke$లు వస్తాయని ఊహించాం).
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+
+  \path (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (B)
+            edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A);
+\end{tikzpicture}
+\]
+
+ఈ స్థితి రేఖాచిత్రం కింది సంక్రమణ ప్రమేయానికి అనుగుణంగా ఉంటుంది:
+\begin{align*}
+\delta(q_0, \TMstroke) & = \tuple{q_1, \TMstroke, \TMright},\\
+\delta(q_1, \TMstroke) & = \tuple{q_0, \TMstroke, \TMright},\\
+\delta(q_1, \TMblank)  & = \tuple{q_1, \TMblank, \TMright}
+\end{align*}
+\end{ex}
+
+\begin{explain}
+ఇన్‌పుట్‌లో సరి సంఖ్యలో గీతలు ఉన్నప్పుడే పై యంత్రం ఆగుతుంది. లేకపోతే యంత్రం
+(సిద్ధాంతపరంగా) అనంతకాలం పనిచేస్తూనే ఉంటుంది. ఏ యంత్రం, ఇన్‌పుట్ ఇచ్చినా,
+అవుట్‌పుట్‌ను నిర్ణయించడానికి ఆ యంత్రపు \emph{స్థితివిన్యాసాలను} వరుసగా
+అనుసరించవచ్చు. స్థితివిన్యాసాలకు ఆచారబద్ధ నిర్వచనాన్ని తరువాత ఇస్తాం.
+ప్రస్తుతానికి, యంత్రం పనిచేసే సమయంలో ఏ క్షణంలోనైనా దాని స్థితిని చూపే
+రేఖాచిత్రాల వరుసగా స్థితివిన్యాసాలను అంతర్బోధాత్మకంగా భావించవచ్చు.
+స్థితివిన్యాసాలు టేపు విషయం, యంత్రపు స్థితి, చదువు--వ్రాత శీర్షం ఉన్న స్థానాన్ని
+చూపుతాయి.
+
+సరి యంత్రాన్ని నాలుగు $\TMstroke$ల ఇన్‌పుట్‌తో ప్రారంభించినప్పుడు దాని
+స్థితివిన్యాసాలను అనుసరిద్దాం. ఈ సందర్భంలో యంత్రం ఆగుతుందని ఆశిస్తాం. తరువాత
+మూడు $\TMstroke$ల ఇన్‌పుట్‌పై యంత్రాన్ని నడుపుతాం; అప్పుడు అది ఎప్పటికీ
+నడుస్తుంది.
+
+యంత్రం స్థితి~$q_0$లో, అత్యంత ఎడమ $\TMstroke$ను చదువుతూ ప్రారంభమవుతుంది.
+యంత్రపు ప్రారంభ స్థితివిన్యాసాన్ని ఇలా చూపవచ్చు:
+\[
+\TMendtape \TMstroke_0 \TMstroke \TMstroke \TMstroke \TMblank \ldots
+\]
+పై స్థితివిన్యాసం సూటిగా ఉంది. కనిపిస్తున్నట్లుగా, యంత్రం స్థితి~$q_0$లో
+అత్యంత ఎడమ $\TMstroke$ను చదువుతూ ప్రారంభమవుతుంది. మొదటి $\TMstroke$పై ఉన్న
+స్థితి పేరు యొక్క ఉపలిపి దీనిని సూచిస్తుంది. ఈ బిందువులో వర్తించే నిర్దేశం
+$\delta(q_0, \TMstroke) = \tuple{q_1, \TMstroke, \TMright}$; కాబట్టి యంత్రం
+టేపుపై కుడికి కదిలి స్థితి~$q_1$కు మారుతుంది.
+\sourcecorrection{OLTETURMAC-001}{ఆంగ్ల మూలం ఈ స్థితివిన్యాసంలో యంత్రం ``state one''లో మొదలవుతుందని చెప్పింది; కానీ ముందరి వాక్యం, గీతపైని ఉపలిపి, వర్తించే నిర్దేశం అన్నీ ప్రారంభ స్థితి $q_0$ అని చూపుతున్నాయి. అందుకు అనుగుణంగా $q_0$గా స్పష్టం చేశాం.}
+\[
+\TMendtape \TMstroke \TMstroke_1 \TMstroke \TMstroke \TMblank \ldots
+\]
+యంత్రం ఇప్పుడు స్థితి~$q_1$లో ఒక~$\TMstroke$ను చదువుతోంది కనుక,
+$\delta(q_1, \TMstroke) = \tuple{q_0, \TMstroke, \TMright}$ అనే నిర్దేశాన్ని
+``అనుసరించాలి.'' దీని ఫలితంగా వచ్చే స్థితివిన్యాసం
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke_0 \TMstroke \TMblank \ldots
+\]
+యంత్రం కొనసాగేకొద్దీ, నియమాలు మళ్లీ అదే క్రమంలో వర్తించి కింది రెండు
+స్థితివిన్యాసాలు వస్తాయి:
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke \TMstroke_1 \TMblank \ldots
+\]
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke \TMstroke \TMblank_0 \ldots
+\]
+యంత్రం ఇప్పుడు స్థితి~$q_0$లో ఒక~$\TMblank$ను చదువుతోంది. స్థితి రేఖాచిత్రాన్ని
+బట్టి, అమలు చేయడానికి నిర్దేశమేదీ లేదని సులభంగా చూడవచ్చు; అందువల్ల యంత్రం
+ఆగిపోయింది. అంటే ఇన్‌పుట్ అంగీకరించబడింది.
+
+తరువాత యంత్రాన్ని మూడు $\TMstroke$ల ఇన్‌పుట్‌తో ప్రారంభిద్దాం. అవే నిర్దేశాలు
+అమలవుతాయి కనుక మొదటి కొన్ని స్థితివిన్యాసాలు పోలి ఉంటాయి; టేపు ఇన్‌పుట్‌లో
+మాత్రమే చిన్న తేడా ఉంటుంది:
+\[
+\TMendtape \TMstroke_0 \TMstroke \TMstroke \TMblank \ldots
+\]
+\[
+\TMendtape \TMstroke \TMstroke_1 \TMstroke \TMblank \ldots
+\]
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke_0 \TMblank \ldots
+\]
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke \TMblank_1 \ldots
+\]
+యంత్రం ఇప్పుడు అన్ని $\TMstroke$లను దాటి వెళ్లి, స్థితి~$q_1$లో ఒక~$\TMblank$ను
+చదువుతోంది. రేఖాచిత్రంలో చూపినట్లుగా $\delta(q_1, \TMblank) =
+\tuple{q_1, \TMblank, \TMright}$ రూపంలోని నిర్దేశం ఉంది. టేపు కుడివైపు
+అనంతంగా $\TMblank$లతో నిండి ఉంటుంది కనుక, యంత్రం స్థితి~$q_1$లోనే ఉండి ఇంకా
+ఇంకా కుడికి కదులుతూ ఈ నిర్దేశాన్ని \emph{ఎప్పటికీ} అమలు చేస్తూనే ఉంటుంది.
+యంత్రం ఎన్నటికీ ఆగదు; ఇన్‌పుట్‌ను అంగీకరించదు.
+\end{explain}
+
+\begin{explain}
+అన్ని యంత్రాలూ ఆగవని గమనించడం ముఖ్యం. ఆగడం అంటే యంత్రానికి అమలు చేయడానికి
+నిర్దేశాలు అయిపోవడమే అయితే, ప్రతి స్థితిలో ప్రతి సంకేతానికి ఒక నిష్క్రమణ బాణం
+ఉండేలా చేయడం ద్వారా ఎన్నటికీ ఆగని యంత్రాన్ని నిర్మించవచ్చు. $q_0$లో ఒక
+$\TMblank$ను చదివే సందర్భానికి ఒక నిర్దేశాన్ని చేర్చి, సరి యంత్రం అనంతకాలం
+నడిచేలా మార్చవచ్చు.
+\end{explain}
+
+\begin{ex}
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+
+  \path
+  (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+      edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (A)
+  (B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (B)
+      edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A);
+\end{tikzpicture}
+\]
+\end{ex}
+
+\begin{explain}
+ట్యూరింగ్ యంత్రాలకు ప్రాతినిధ్యం వహించడానికి యంత్ర పట్టికలు మరొక పద్ధతి.
+యంత్ర పట్టికల్లో టేపు వర్ణమాలను $x$-అక్షంపైనా, యంత్ర స్థితుల సమితిని
+$y$-అక్షంపైనా చూపుతారు. పట్టికలో ప్రతి స్థితి, సంకేతం కలిసే గడిలో నిర్దేశపు
+మిగిలిన భాగాన్ని---కొత్త స్థితి, కొత్త సంకేతం, కదలిక దిశను---వ్రాస్తారు.
+యంత్రం ఏ స్థితిలో, ఏ సంకేతానికి ఆగుతుందో నిర్ణయించడం యంత్ర పట్టికలతో సులభం.
+పట్టికలో ఖాళీ ఉన్న ప్రతి చోటూ యంత్రం ఆగగల ఒక బిందువు. యంత్రం ఆగే బిందువులు
+ఎల్లప్పుడూ వెంటనే స్పష్టంగా కనిపించని స్థితి రేఖాచిత్రాలు, నిర్దేశ సమితులకు
+భిన్నంగా, యంత్ర పట్టికలోని ఖాళీలను కనుగొని ఏ ఆగే బిందువునైనా వెంటనే
+గుర్తించవచ్చు.
+\end{explain}
+
+\begin{ex}
+సరి యంత్రానికి యంత్ర పట్టిక:
+\[
+\centering
+\begin{tabular}{lllll}
+\cline{2-4}
+\multicolumn{1}{l|}{}      & \multicolumn{1}{c|}{$\TMblank$}
+& \multicolumn{1}{c|}{$\TMstroke$}     & \multicolumn{1}{c|}{$\TMendtape$}   &  \\ \cline{1-4}
+\multicolumn{1}{|l|}{$q_0$} & \multicolumn{1}{l|}{}
+& \multicolumn{1}{l|}{\TMtrans{\TMstroke}{q_1}{\TMright}} &
+\multicolumn{1}{l|}{\phantom{\TMtrans{\TMstroke}{q_1}{\TMright}}} &  \\ \cline{1-4}
+\multicolumn{1}{|l|}{$q_1$} & \multicolumn{1}{l|}{\TMtrans{\TMblank}{q_1}{\TMright}}
+& \multicolumn{1}{l|}{\TMtrans{\TMstroke}{q_0}{\TMright}} &
+\multicolumn{1}{l|}{\phantom{\TMtrans{\TMstroke}{q_1}{\TMright}}} &  \\ \cline{1-4}
+\end{tabular}
+\]
+మనకు కనిపిస్తున్నట్లుగా, యంత్రం స్థితి~$q_0$లో ఒక~$\TMblank$ను చదివేటప్పుడు
+ఆగుతుంది.
+\end{ex}
+
+\begin{explain}
+ఇంతవరకు ఇన్‌పుట్‌ను చదివి అంగీకరించే యంత్రాలను మాత్రమే పరిశీలించాం. అయితే,
+ట్యూరింగ్ యంత్రాలు చదవగలవు, వ్రాయగలవు కూడా. అలాంటి యంత్రానికి (ఇలాంటివి
+చాలాచాలా ఉన్నప్పటికీ) ఒక ఉదాహరణ \emph{ద్విగుణక యంత్రం}. టేపుపై $n$
+$\TMstroke$ల దిమ్మతో ప్రారంభించినప్పుడు, ద్విగుణక యంత్రం $2n$ $\TMstroke$ల
+దిమ్మను అవుట్‌పుట్‌గా ఇస్తుంది.
+\end{explain}
+
+\begin{ex}
+  \ollabel{ex:doubler} ద్విగుణక యంత్రాన్ని నిర్మించే ముందు సమస్యను పరిష్కరించే
+  ఒక \emph{వ్యూహాన్ని} రూపొందించడం ముఖ్యం. మనం రూపొందించిన యంత్రం తాను ఎన్ని
+  $\TMstroke$లను చదివిందో జ్ఞాపకం ఉంచుకోలేదు కనుక, టేపుపై ఉన్న అన్ని
+  $\TMstroke$లను గుర్తుపెట్టుకునే పద్ధతి కావాలి. ఒక~$\TMblank$తో అవుట్‌పుట్‌ను
+  ఇన్‌పుట్ నుండి వేరు చేయడం అలాంటి ఒక పద్ధతి. అప్పుడు యంత్రం ఇన్‌పుట్‌లోని
+  మొదటి $\TMstroke$ను చెరిపి, మిగిలిన ఇన్‌పుట్ మీదుగా వెళ్లి, ఒక $\TMblank$ను
+  వదిలి, రెండు కొత్త $\TMstroke$లను వ్రాయగలదు. తరువాత యంత్రం వెనక్కి వెళ్లి
+  ఇన్‌పుట్‌లోని రెండవ $\TMstroke$ను కనుగొని దానిని కూడా ద్విగుణీకరిస్తుంది.
+  ఇన్‌పుట్‌లోని ప్రతి ఒక్క $\TMstroke$కు అవుట్‌పుట్‌లో రెండు $\TMstroke$లను
+  వ్రాస్తుంది. యంత్రం ముందుకు సాగేకొద్దీ ఇన్‌పుట్‌ను చెరిపివేయడం వల్ల ఏ
+  $\TMstroke$నూ విడిచిపెట్టలేదనీ, దేనినీ రెండుసార్లు ద్విగుణీకరించలేదనీ
+  నిర్ధారించవచ్చు. ఇన్‌పుట్ మొత్తం చెరిగిపోయినప్పుడు టేపుపై $2n$
+  $\TMstroke$లు మిగులుతాయి. ఫలితంగా వచ్చే ట్యూరింగ్ యంత్రపు స్థితి
+  రేఖాచిత్రాన్ని \olref{fig:doubler}లో చూపాం.
+  \begin{figure}
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (1)              {$q_0$};
+  \node[state]         (2) [right of=1] {$q_1$};
+  \node[state]         (3) [right of=2] {$q_2$};
+  \node[state]         (4) [below of=3] {$q_3$};
+  \node[state]         (5) [left of=4]  {$q_4$};
+  \node[state]         (6) [left of=5]  {$q_5$};
+
+  \path (1) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMright}} (2)
+    (2) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (2)
+      edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (3)
+    (3) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (3)
+        edge node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (4)
+    (4) edge [loop below] node {\TMtrans{\TMblank}{\TMstroke}{\TMleft}} (4)
+        edge node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+    (5) edge [loop below]  node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (6)
+    (6) edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (6)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (1);
+\end{tikzpicture}
+\]
+\caption{ఒక ద్విగుణక యంత్రం}
+\ollabel{fig:doubler}
+\end{figure}
+\end{ex}
+
+\begin{prob}
+ఏదైనా ఒక ఇన్‌పుట్‌ను ఎంచుకుని, \olref[tur][mac][rep]{ex:doubler}లోని ద్విగుణక
+యంత్రపు స్థితివిన్యాసాలను వరుసగా అనుసరించండి.
+\end{prob}
+
+\begin{prob}
+$\{\TMendtape,\TMblank, A, B\}$ అనే వర్ణమాల గల ఒక ట్యూరింగ్ యంత్రాన్ని
+రూపొందించండి. $A$ల సంఖ్య $B$ల సంఖ్యకు సమానమై, \emph{అలాగే} అన్ని $A$లు
+అన్ని $B$లకు ముందు వచ్చే ఏ $A$, $B$ల సంకేతమాలనైనా అది అంగీకరించాలి, అంటే
+దానిపై ఆగాలి. $A$ల సంఖ్య $B$ల సంఖ్యకు సమానం కాని లేదా అన్ని $A$లు అన్ని
+$B$లకు ముందు రాని ఏ సంకేతమాలనైనా అది తిరస్కరించాలి, అంటే దానిపై ఆగకూడదు.
+(ఉదాహరణకు, యంత్రం $AABB$, $AAABBB$లను అంగీకరించాలి; కానీ $AAB$,
+$AABBAABB$ రెండింటినీ తిరస్కరించాలి.)
+\end{prob}
+
+\begin{prob}
+$\{\TMendtape,\TMblank, A, B\}$ అనే వర్ణమాల గల ఒక ట్యూరింగ్ యంత్రాన్ని
+రూపొందించండి. $A$, $B$లతో కూడిన ఏ సంకేతమాల~$\alpha$నైనా ఇన్‌పుట్‌గా తీసుకుని,
+దానిని నకలు చేసి $\alpha\alpha$ రూపంలోని అవుట్‌పుట్‌ను ఉత్పత్తి చేయాలి.
+(ఉదాహరణకు, ఇన్‌పుట్ $ABBA$ అయితే అవుట్‌పుట్ $ABBAABBA$ కావాలి.)
+\end{prob}
+
+\begin{prob}
+\emph{వర్ణక్రమంలో ఉందా?}: $\{\TMendtape,\TMblank, A, B\}$ అనే వర్ణమాల గల
+ఒక ట్యూరింగ్ యంత్రాన్ని రూపొందించండి. $A$, $B$ల పరిమిత క్రమాన్ని ఇన్‌పుట్‌గా
+ఇచ్చినప్పుడు, అన్ని $A$లు అన్ని $B$లకు ఎడమవైపు ఉన్నాయో లేదో అది తనిఖీ చేయాలి.
+ఇన్‌పుట్ సంకేతమాలను టేపుపై అలాగే ఉంచి, సంకేతమాల ``వర్ణక్రమంలో'' ఉంటే ఆగాలి;
+లేకపోతే ఎప్పటికీ చక్రంలో తిరగాలి.
+\end{prob}
+
+\begin{prob}
+\emph{వర్ణక్రమీకరణ యంత్రం}: $\{\TMendtape,\TMblank, A, B\}$ అనే వర్ణమాల గల
+ఒక ట్యూరింగ్ యంత్రాన్ని రూపొందించండి. $A$, $B$ల పరిమిత క్రమాన్ని ఇన్‌పుట్‌గా
+తీసుకుని, అన్ని $A$లు అన్ని $B$లకు ఎడమవైపు ఉండేలా వాటిని పునర్వ్యవస్థీకరించాలి.
+(ఉదాహరణకు, $BABAA$ అనే క్రమం $AAABB$ కావాలి; $ABBABB$ అనే క్రమం $AABBBB$
+కావాలి.)
+\end{prob}
+
+\end{document}

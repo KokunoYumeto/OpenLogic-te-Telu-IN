@@ -1,0 +1,2511 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-19T20:12:00.919Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Text/intertext/mbox prose is masked; nested inline math is compared per clause independently of language-specific word order.",
+  "units": [
+    {
+      "unit_id": "OLP-0252",
+      "source_path": "content/turing-machines/turing-machines.tex",
+      "source_sha256": "6180cf9de2eefc91d202d374a0f24e3003f5df485a8a7567e48cf50b45c0d8fd",
+      "translation_sha256": "c03c123a864be99edabc2d6f3b8415acd280a7f6974bff9164e1e473ea9fa896",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport[machines-computations]{machines-computations}",
+        "\\olimport[undecidability]{undecidability}"
+      ],
+      "identifiers_target": [
+        "\\olimport[machines-computations]{machines-computations}",
+        "\\olimport[undecidability]{undecidability}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 17,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: turing-machines",
+          "target_start": "% Part: turing-machines"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../include/open-logic-part]{subfiles}",
+          "target_start": "\\documentclass[../../include/open-logic-part]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olpart{tur}{Turing Machines}",
+          "target_start": "\\olpart{tur}{ట్యూరింగ్ యంత్రాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olimport[machines-computations]{machines-computations}",
+          "target_start": "\\olimport[machines-computations]{machines-computations}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport[undecidability]{undecidability}",
+          "target_start": "\\olimport[undecidability]{undecidability}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\OLEndPartHook",
+          "target_start": "\\OLEndPartHook"
+        },
+        {
+          "index": 8,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../include/open-logic-part]{subfiles}",
+        "\\olimport[machines-computations]{machines-computations}",
+        "\\olimport[undecidability]{undecidability}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../include/open-logic-part]{subfiles}",
+        "\\olimport[machines-computations]{machines-computations}",
+        "\\olimport[undecidability]{undecidability}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0253",
+      "source_path": "content/turing-machines/machines-computations/machines-computations.tex",
+      "source_sha256": "332d13fb67f673b5deab98c30a94f50bfb7152187a2e9ab6b6e8d438174415c1",
+      "translation_sha256": "3714141f88c3b45108d5f0c18a76350b9cc0ff20584a41f24dbef89dcdce0e43",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport{introduction}",
+        "\\olimport{representing-tms}",
+        "\\olimport{turing-machines}",
+        "\\olimport{configuration}",
+        "\\olimport{unary-numbers}",
+        "\\olimport{halting-states}",
+        "\\olimport{disciplined-machines}",
+        "\\olimport{combining-machines}",
+        "\\olimport{variants}",
+        "\\olimport{church-turing-thesis}"
+      ],
+      "identifiers_target": [
+        "\\olimport{introduction}",
+        "\\olimport{representing-tms}",
+        "\\olimport{turing-machines}",
+        "\\olimport{configuration}",
+        "\\olimport{unary-numbers}",
+        "\\olimport{halting-states}",
+        "\\olimport{disciplined-machines}",
+        "\\olimport{combining-machines}",
+        "\\olimport{variants}",
+        "\\olimport{church-turing-thesis}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 19,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: turing-machines\n% Chapter: machines-computations",
+          "target_start": "% Part: turing-machines\n% Chapter: machines-computations"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olchapter{tur}{mac}{Turing Machine Computations}",
+          "target_start": "\\olchapter{tur}{mac}{ట్యూరింగ్ యంత్ర గణనలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olimport{introduction}",
+          "target_start": "\\olimport{introduction}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport{representing-tms}",
+          "target_start": "\\olimport{representing-tms}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport{turing-machines}",
+          "target_start": "\\olimport{turing-machines}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\olimport{configuration}",
+          "target_start": "\\olimport{configuration}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport{unary-numbers}",
+          "target_start": "\\olimport{unary-numbers}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\olimport{halting-states}",
+          "target_start": "\\olimport{halting-states}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\olimport{disciplined-machines}",
+          "target_start": "\\olimport{disciplined-machines}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\olimport{combining-machines}",
+          "target_start": "\\olimport{combining-machines}"
+        },
+        {
+          "index": 13,
+          "source_start": "\\olimport{variants}",
+          "target_start": "\\olimport{variants}"
+        },
+        {
+          "index": 14,
+          "source_start": "\\olimport{church-turing-thesis}",
+          "target_start": "\\olimport{church-turing-thesis}"
+        },
+        {
+          "index": 15,
+          "source_start": "\\OLEndChapterHook",
+          "target_start": "\\OLEndChapterHook"
+        },
+        {
+          "index": 16,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{tur}{mac}",
+        "\\olimport{introduction}",
+        "\\olimport{representing-tms}",
+        "\\olimport{turing-machines}",
+        "\\olimport{configuration}",
+        "\\olimport{unary-numbers}",
+        "\\olimport{halting-states}",
+        "\\olimport{disciplined-machines}",
+        "\\olimport{combining-machines}",
+        "\\olimport{variants}",
+        "\\olimport{church-turing-thesis}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{tur}{mac}",
+        "\\olimport{introduction}",
+        "\\olimport{representing-tms}",
+        "\\olimport{turing-machines}",
+        "\\olimport{configuration}",
+        "\\olimport{unary-numbers}",
+        "\\olimport{halting-states}",
+        "\\olimport{disciplined-machines}",
+        "\\olimport{combining-machines}",
+        "\\olimport{variants}",
+        "\\olimport{church-turing-thesis}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0254",
+      "source_path": "content/turing-machines/machines-computations/introduction.tex",
+      "source_sha256": "659e790a468190fba86918ca1d865510a30e7ab97b629aed7e5491b8cfac75b3",
+      "translation_sha256": "b601d28a22d1e2221335962117950211f0a6c235817125cb1e95fabd9f90423f",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{tur}{mac}{int}",
+        "\\olref{fig:tm}",
+        "\\olasset{\\olpath/assets/diagrams/turing-machine.tikz}",
+        "\\ollabel{fig:tm}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{tur}{mac}{int}",
+        "\\olref{fig:tm}",
+        "\\olasset{\\olpath/assets/diagrams/turing-machine.tikz}",
+        "\\ollabel{fig:tm}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\Nat$",
+        "$\\Nat$",
+        "$\\TMendtape$",
+        "$\\TMblank$",
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "$\\TMendtape$",
+        "$q$",
+        "$\\sigma$",
+        "$\\tuple{q',\\sigma',D}$",
+        "$q$",
+        "$\\sigma$",
+        "$\\sigma'$",
+        "$D$",
+        "$\\TMleft$",
+        "$\\TMright$",
+        "$\\TMstay$",
+        "$q'$",
+        "$\\TMendtape$",
+        "$1$",
+        "$0$",
+        "$1$",
+        "$1$",
+        "$q_1$",
+        "$1$",
+        "$q_1$",
+        "$\\tuple{q_1,1}$",
+        "$\\tuple{q_2,0,\\TMstay}$",
+        "$1$",
+        "$0$",
+        "$q_2$",
+        "$\\tuple{q_3,0,\\TMright}$",
+        "$\\tuple{q_2,0}$",
+        "$0$",
+        "$0$",
+        "$q_3$",
+        "$q_n$",
+        "$\\sigma$",
+        "$\\tuple{q_n,\\sigma}$",
+        "$\\tuple{q_n,\\sigma}$",
+        "$h$"
+      ],
+      "math_target_core": [
+        "$\\Nat$",
+        "$\\Nat$",
+        "$\\TMendtape$",
+        "$\\TMblank$",
+        "$\\TMstroke$",
+        "$\\TMendtape$",
+        "$\\TMblank$",
+        "$q$",
+        "$\\sigma$",
+        "$\\tuple{q',\\sigma',D}$",
+        "$q$",
+        "$\\sigma$",
+        "$\\sigma'$",
+        "$D$",
+        "$\\TMleft$",
+        "$\\TMright$",
+        "$\\TMstay$",
+        "$q'$",
+        "$\\TMendtape$",
+        "$1$",
+        "$0$",
+        "$1$",
+        "$1$",
+        "$q_1$",
+        "$q_1$",
+        "$1$",
+        "$\\tuple{q_1,1}$",
+        "$\\tuple{q_2,0,\\TMstay}$",
+        "$1$",
+        "$0$",
+        "$q_2$",
+        "$\\tuple{q_2,0}$",
+        "$\\tuple{q_3,0,\\TMright}$",
+        "$0$",
+        "$0$",
+        "$q_3$",
+        "$q_n$",
+        "$\\sigma$",
+        "$\\tuple{q_n,\\sigma}$",
+        "$\\tuple{q_n,\\sigma}$",
+        "$h$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 4401,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: turing-machines \n% Chapter: machines-computations \n% Section: introduction",
+          "target_start": "% Part: turing-machines\n% Chapter: machines-computations\n% Section: introduction"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{tur}{mac}{int}\n\\olsection{Introduction}",
+          "target_start": "\\olfileid{tur}{mac}{int}\n\\olsection{పరిచయం}"
+        },
+        {
+          "index": 5,
+          "source_start": "What does it mean for a function, say, from $\\Nat$ to $\\Nat$ to be\n\\emph{computable}? Among the first answers,",
+          "target_start": "$\\Nat$ నుండి $\\Nat$కు వెళ్లే ఒక ప్రమేయం, ఉదాహరణకు,\n\\emph{గణనీయం} కావడం అంటే ఏమిటి? దీనికి మొదట వచ్చిన సమాధానాల"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{explain}\nIt is perhaps best to think of a Turing\nmachine as a program for a special kind of imaginary m",
+          "target_start": "\\begin{explain}\nఒక ప్రత్యేక రకమైన ఊహాత్మక యంత్రాంగానికి ప్రోగ్రాముగా ట్యూరింగ్ యంత్రాన్ని\nభావించడం బహుశా ఉత్తమ"
+        },
+        {
+          "index": 7,
+          "source_start": "For instance, consider the situation in \\olref{fig:tm}.\n\\begin{figure}\n  \\olasset{\\olpath/assets/diagrams/turi",
+          "target_start": "ఉదాహరణకు, \\olref{fig:tm}లోని పరిస్థితిని పరిశీలించండి.\n\\begin{figure}\n  \\olasset{\\olpath/assets/diagrams/turin"
+        },
+        {
+          "index": 8,
+          "source_start": "We say that the machine \\emph{halts} when it encounters some state,\n$q_n$, and symbol, $\\sigma$ such that ther",
+          "target_start": "ఏదైనా స్థితి $q_n$, సంకేతం $\\sigma$ ఎదురై, $\\tuple{q_n, \\sigma}$కు ఎలాంటి\nనిర్దేశమూ లేకపోతే, అంటే ఇన్‌పుట్ $\\t"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{digress}\nThe beauty of Turing's paper, ``On computable numbers,'' is that he\npresents not only a formal",
+          "target_start": "\\begin{digress}\nట్యూరింగ్ రాసిన ``గణనీయ సంఖ్యల గురించి'' అనే వ్యాసపు అందం ఏమిటంటే, అతడు\nఒక ఆచారబద్ధ నిర్వచనాన్"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{history}\nAlan Turing invented Turing machines in 1936. While his interest at\nthe time was the decidabil",
+          "target_start": "\\begin{history}\nఅలన్ ట్యూరింగ్ 1936లో ట్యూరింగ్ యంత్రాలను ఆవిష్కరించాడు. అప్పట్లో అతని\nఆసక్తి ప్రథమ-శ్రేణి తర్"
+        },
+        {
+          "index": 11,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{tur}{mac}{int}",
+        "\\olref{fig:tm}",
+        "\\olasset{\\olpath/assets/diagrams/turing-machine.tikz}",
+        "\\ollabel{fig:tm}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{tur}{mac}{int}",
+        "\\olref{fig:tm}",
+        "\\olasset{\\olpath/assets/diagrams/turing-machine.tikz}",
+        "\\ollabel{fig:tm}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0255",
+      "source_path": "content/turing-machines/machines-computations/representing-tms.tex",
+      "source_sha256": "099ee6e5370880ce3164bdeeb6fe36a06d2387228fa2ce4df943cb88ed6f3afd",
+      "translation_sha256": "74be4153d2e9733f2dc993159e0bf52b20db9317dd8acbfc0c6aa3e02f7b104a",
+      "source_blocks": 31,
+      "target_blocks": 31,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{tur}{mac}{rep}",
+        "\\ollabel{ex:doubler}",
+        "\\olref{fig:doubler}",
+        "\\ollabel{fig:doubler}",
+        "\\olref[tur][mac][rep]{ex:doubler}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{tur}{mac}{rep}",
+        "\\ollabel{ex:doubler}",
+        "\\olref{fig:doubler}",
+        "\\ollabel{fig:doubler}",
+        "\\olref[tur][mac][rep]{ex:doubler}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$q_0$",
+        "$q_1$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMright}}(B);\\end{tikzpicture}\\]",
+        "$\\TMblank$",
+        "$q_0$",
+        "$\\TMstroke$",
+        "$q_1$",
+        "$\\tuple{q_0,\\TMblank}$",
+        "$\\tuple{q_1,\\TMstroke,\\TMright}$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\path(A)edge[bendleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)(B)edge[loopabove]node{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(B)edge[bendleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(A);\\end{tikzpicture}\\]",
+        "\\begin{align*}\\delta(q_0,\\TMstroke)&=\\tuple{q_1,\\TMstroke,\\TMright},\\\\\\delta(q_1,\\TMstroke)&=\\tuple{q_0,\\TMstroke,\\TMright},\\\\\\delta(q_1,\\TMblank)&=\\tuple{q_1,\\TMblank,\\TMright}\\end{align*}",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$q_0$",
+        "$\\TMstroke$",
+        "\\[\\TMendtape\\TMstroke_0\\TMstroke\\TMstroke\\TMstroke\\TMblank\\ldots\\]",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\delta(q_0,\\TMstroke)=\\tuple{q_1,\\TMstroke,\\TMright}$",
+        "$q_1$",
+        "\\[\\TMendtape\\TMstroke\\TMstroke_1\\TMstroke\\TMstroke\\TMblank\\ldots\\]",
+        "$q_1$",
+        "$\\TMstroke$",
+        "$\\delta(q_1,\\TMstroke)=\\tuple{q_0,\\TMstroke,\\TMright}$",
+        "\\[\\TMendtape\\TMstroke\\TMstroke\\TMstroke_0\\TMstroke\\TMblank\\ldots\\]",
+        "\\[\\TMendtape\\TMstroke\\TMstroke\\TMstroke\\TMstroke_1\\TMblank\\ldots\\]",
+        "\\[\\TMendtape\\TMstroke\\TMstroke\\TMstroke\\TMstroke\\TMblank_0\\ldots\\]",
+        "$q_0$",
+        "$\\TMblank$",
+        "$\\TMstroke$",
+        "\\[\\TMendtape\\TMstroke_0\\TMstroke\\TMstroke\\TMblank\\ldots\\]",
+        "\\[\\TMendtape\\TMstroke\\TMstroke_1\\TMstroke\\TMblank\\ldots\\]",
+        "\\[\\TMendtape\\TMstroke\\TMstroke\\TMstroke_0\\TMblank\\ldots\\]",
+        "\\[\\TMendtape\\TMstroke\\TMstroke\\TMstroke\\TMblank_1\\ldots\\]",
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "$q_1$",
+        "$\\delta(q_1,\\TMblank)=\\tuple{q_1,\\TMblank,\\TMright}$",
+        "$\\TMblank$",
+        "$q_1$",
+        "$\\TMblank$",
+        "$q_0$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\path(A)edge[bendleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edge[loopabove]node{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(A)(B)edge[loopabove]node{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(B)edge[bendleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(A);\\end{tikzpicture}\\]",
+        "$x$",
+        "$y$",
+        "\\[\\centering\\begin{tabular}{lllll}\\cline{2-4}\\multicolumn{1}{l|}{}&\\multicolumn{1}{c|}{$\\TMblank$}&\\multicolumn{1}{c|}{$\\TMstroke$}&\\multicolumn{1}{c|}{$\\TMendtape$}&\\\\\\cline{1-4}\\multicolumn{1}{|l|}{$q_0$}&\\multicolumn{1}{l|}{}&\\multicolumn{1}{l|}{\\TMtrans{\\TMstroke}{q_1}{\\TMright}}&\\multicolumn{1}{l|}{\\phantom{\\TMtrans{\\TMstroke}{q_1}{\\TMright}}}&\\\\\\cline{1-4}\\multicolumn{1}{|l|}{$q_1$}&\\multicolumn{1}{l|}{\\TMtrans{\\TMblank}{q_1}{\\TMright}}&\\multicolumn{1}{l|}{\\TMtrans{\\TMstroke}{q_0}{\\TMright}}&\\multicolumn{1}{l|}{\\phantom{\\TMtrans{\\TMstroke}{q_1}{\\TMright}}}&\\\\\\cline{1-4}\\end{tabular}\\]",
+        "$\\TMblank$",
+        "$q_0$",
+        "$n$",
+        "$\\TMstroke$",
+        "$2n$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$2n$",
+        "$\\TMstroke$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](1){$q_0$};\\node[state](2)[rightof=1]{$q_1$};\\node[state](3)[rightof=2]{$q_2$};\\node[state](4)[belowof=3]{$q_3$};\\node[state](5)[leftof=4]{$q_4$};\\node[state](6)[leftof=5]{$q_5$};\\path(1)edgenode{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMright}}(2)(2)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(2)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(3)(3)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(3)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMright}}(4)(4)edge[loopbelow]node{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMleft}}(4)edgenode{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(5)(5)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(5)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(6)(6)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(6)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(1);\\end{tikzpicture}\\]",
+        "$\\{\\TMendtape,\\TMblank,A,B\\}$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$AABB$",
+        "$AAABBB$",
+        "$AAB$",
+        "$AABBAABB$",
+        "$\\{\\TMendtape,\\TMblank,A,B\\}$",
+        "$\\alpha$",
+        "$A$",
+        "$B$",
+        "$\\alpha\\alpha$",
+        "$ABBA$",
+        "$ABBAABBA$",
+        "$\\{\\TMendtape,\\TMblank,A,B\\}$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$\\{\\TMendtape,\\TMblank,A,B\\}$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$BABAA$",
+        "$AAABB$",
+        "$ABBABB$",
+        "$AABBBB$"
+      ],
+      "math_target_core": [
+        "$q_0$",
+        "$q_1$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMright}}(B);\\end{tikzpicture}\\]",
+        "$q_0$",
+        "$\\TMblank$",
+        "$\\TMstroke$",
+        "$q_1$",
+        "$\\tuple{q_0,\\TMblank}$",
+        "$\\tuple{q_1,\\TMstroke,\\TMright}$",
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "$\\TMstroke$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\path(A)edge[bendleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)(B)edge[loopabove]node{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(B)edge[bendleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(A);\\end{tikzpicture}\\]",
+        "\\begin{align*}\\delta(q_0,\\TMstroke)&=\\tuple{q_1,\\TMstroke,\\TMright},\\\\\\delta(q_1,\\TMstroke)&=\\tuple{q_0,\\TMstroke,\\TMright},\\\\\\delta(q_1,\\TMblank)&=\\tuple{q_1,\\TMblank,\\TMright}\\end{align*}",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$q_0$",
+        "$\\TMstroke$",
+        "\\[\\TMendtape\\TMstroke_0\\TMstroke\\TMstroke\\TMstroke\\TMblank\\ldots\\]",
+        "$q_0$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\delta(q_0,\\TMstroke)=\\tuple{q_1,\\TMstroke,\\TMright}$",
+        "$q_1$",
+        "\\[\\TMendtape\\TMstroke\\TMstroke_1\\TMstroke\\TMstroke\\TMblank\\ldots\\]",
+        "$q_1$",
+        "$\\TMstroke$",
+        "$\\delta(q_1,\\TMstroke)=\\tuple{q_0,\\TMstroke,\\TMright}$",
+        "\\[\\TMendtape\\TMstroke\\TMstroke\\TMstroke_0\\TMstroke\\TMblank\\ldots\\]",
+        "\\[\\TMendtape\\TMstroke\\TMstroke\\TMstroke\\TMstroke_1\\TMblank\\ldots\\]",
+        "\\[\\TMendtape\\TMstroke\\TMstroke\\TMstroke\\TMstroke\\TMblank_0\\ldots\\]",
+        "$q_0$",
+        "$\\TMblank$",
+        "$\\TMstroke$",
+        "\\[\\TMendtape\\TMstroke_0\\TMstroke\\TMstroke\\TMblank\\ldots\\]",
+        "\\[\\TMendtape\\TMstroke\\TMstroke_1\\TMstroke\\TMblank\\ldots\\]",
+        "\\[\\TMendtape\\TMstroke\\TMstroke\\TMstroke_0\\TMblank\\ldots\\]",
+        "\\[\\TMendtape\\TMstroke\\TMstroke\\TMstroke\\TMblank_1\\ldots\\]",
+        "$\\TMstroke$",
+        "$q_1$",
+        "$\\TMblank$",
+        "$\\delta(q_1,\\TMblank)=\\tuple{q_1,\\TMblank,\\TMright}$",
+        "$\\TMblank$",
+        "$q_1$",
+        "$q_0$",
+        "$\\TMblank$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\path(A)edge[bendleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edge[loopabove]node{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(A)(B)edge[loopabove]node{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(B)edge[bendleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(A);\\end{tikzpicture}\\]",
+        "$x$",
+        "$y$",
+        "\\[\\centering\\begin{tabular}{lllll}\\cline{2-4}\\multicolumn{1}{l|}{}&\\multicolumn{1}{c|}{$\\TMblank$}&\\multicolumn{1}{c|}{$\\TMstroke$}&\\multicolumn{1}{c|}{$\\TMendtape$}&\\\\\\cline{1-4}\\multicolumn{1}{|l|}{$q_0$}&\\multicolumn{1}{l|}{}&\\multicolumn{1}{l|}{\\TMtrans{\\TMstroke}{q_1}{\\TMright}}&\\multicolumn{1}{l|}{\\phantom{\\TMtrans{\\TMstroke}{q_1}{\\TMright}}}&\\\\\\cline{1-4}\\multicolumn{1}{|l|}{$q_1$}&\\multicolumn{1}{l|}{\\TMtrans{\\TMblank}{q_1}{\\TMright}}&\\multicolumn{1}{l|}{\\TMtrans{\\TMstroke}{q_0}{\\TMright}}&\\multicolumn{1}{l|}{\\phantom{\\TMtrans{\\TMstroke}{q_1}{\\TMright}}}&\\\\\\cline{1-4}\\end{tabular}\\]",
+        "$q_0$",
+        "$\\TMblank$",
+        "$n$",
+        "$\\TMstroke$",
+        "$2n$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$2n$",
+        "$\\TMstroke$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](1){$q_0$};\\node[state](2)[rightof=1]{$q_1$};\\node[state](3)[rightof=2]{$q_2$};\\node[state](4)[belowof=3]{$q_3$};\\node[state](5)[leftof=4]{$q_4$};\\node[state](6)[leftof=5]{$q_5$};\\path(1)edgenode{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMright}}(2)(2)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(2)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(3)(3)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(3)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMright}}(4)(4)edge[loopbelow]node{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMleft}}(4)edgenode{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(5)(5)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(5)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(6)(6)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(6)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(1);\\end{tikzpicture}\\]",
+        "$\\{\\TMendtape,\\TMblank,A,B\\}$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$AABB$",
+        "$AAABBB$",
+        "$AAB$",
+        "$AABBAABB$",
+        "$\\{\\TMendtape,\\TMblank,A,B\\}$",
+        "$A$",
+        "$B$",
+        "$\\alpha$",
+        "$\\alpha\\alpha$",
+        "$ABBA$",
+        "$ABBAABBA$",
+        "$\\{\\TMendtape,\\TMblank,A,B\\}$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$\\{\\TMendtape,\\TMblank,A,B\\}$",
+        "$A$",
+        "$B$",
+        "$A$",
+        "$B$",
+        "$BABAA$",
+        "$AAABB$",
+        "$ABBABB$",
+        "$AABBBB$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [
+        "$q_0$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTETURMAC-001"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 5283,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: turing-machines\n% Chapter: machines-computations\n% Section: representing-tms",
+          "target_start": "% Part: turing-machines\n% Chapter: machines-computations\n% Section: representing-tms"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{tur}{mac}{rep}\n\\olsection{Representing Turing Machines}",
+          "target_start": "\\olfileid{tur}{mac}{rep}\n\\olsection{ట్యూరింగ్ యంత్రాలకు ప్రాతినిధ్యం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{explain}\nTuring machines can be represented visually by \\emph{state diagrams}. \nThe diagrams are compos",
+          "target_start": "\\begin{explain}\nట్యూరింగ్ యంత్రాలను \\emph{స్థితి రేఖాచిత్రాల}తో దృశ్యరూపంలో చూపవచ్చు.\nబాణాలతో కలిపిన స్థితి గడ"
+        },
+        {
+          "index": 6,
+          "source_start": "  \\node[initial,state]   (A)              {$q_0$};\n  \\node[state]   (B) [right of=A] {$q_1$};",
+          "target_start": "  \\node[initial,state]   (A)              {$q_0$};\n  \\node[state]   (B) [right of=A] {$q_1$};"
+        },
+        {
+          "index": 7,
+          "source_start": "  \\path (A) edge  node {\\TMtrans{\\TMblank}{\\TMstroke}{\\TMright}} (B);\n\\end{tikzpicture}\n\\]\nRecall that the Tur",
+          "target_start": "  \\path (A) edge  node {\\TMtrans{\\TMblank}{\\TMstroke}{\\TMright}} (B);\n\\end{tikzpicture}\n\\]\nట్యూరింగ్ యంత్రానిక"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{ex}\n\\emph{Even Machine}: The following Turing machine halts if, and only\nif, there are an even number o",
+          "target_start": "\\begin{ex}\n\\emph{సరి యంత్రం}: టేపుపై సరి సంఖ్యలో $\\TMstroke$లు ఉంటే, అప్పుడే మాత్రమే\nకింది ట్యూరింగ్ యంత్రం ఆగ"
+        },
+        {
+          "index": 9,
+          "source_start": "  \\node[initial,state]         (A)              {$q_0$};\n  \\node[state]         (B) [right of=A] {$q_1$};",
+          "target_start": "  \\node[initial,state]         (A)              {$q_0$};\n  \\node[state]         (B) [right of=A] {$q_1$};"
+        },
+        {
+          "index": 10,
+          "source_start": "  \\path (A) edge [bend left] node {\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}} (B)\n        (B) edge [loop above]",
+          "target_start": "  \\path (A) edge [bend left] node {\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}} (B)\n        (B) edge [loop above]"
+        },
+        {
+          "index": 11,
+          "source_start": "The state diagram corresponds to the following transition function:\n\\begin{align*}\n\\delta(q_0, \\TMstroke) & = ",
+          "target_start": "ఈ స్థితి రేఖాచిత్రం కింది సంక్రమణ ప్రమేయానికి అనుగుణంగా ఉంటుంది:\n\\begin{align*}\n\\delta(q_0, \\TMstroke) & = \\tu"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{explain}\nThe above machine halts only when the input is an even number of strokes.\nOtherwise, the machi",
+          "target_start": "\\begin{explain}\nఇన్‌పుట్‌లో సరి సంఖ్యలో గీతలు ఉన్నప్పుడే పై యంత్రం ఆగుతుంది. లేకపోతే యంత్రం\n(సిద్ధాంతపరంగా) అన"
+        },
+        {
+          "index": 13,
+          "source_start": "Let us trace through the configurations of the even machine if it is\nstarted with an input of four $\\TMstroke$",
+          "target_start": "సరి యంత్రాన్ని నాలుగు $\\TMstroke$ల ఇన్‌పుట్‌తో ప్రారంభించినప్పుడు దాని\nస్థితివిన్యాసాలను అనుసరిద్దాం. ఈ సందర్భ"
+        },
+        {
+          "index": 14,
+          "source_start": "The machine starts in state~$q_0$, scanning the leftmost~$\\TMstroke$.\nWe can represent the initial state of th",
+          "target_start": "యంత్రం స్థితి~$q_0$లో, అత్యంత ఎడమ $\\TMstroke$ను చదువుతూ ప్రారంభమవుతుంది.\nయంత్రపు ప్రారంభ స్థితివిన్యాసాన్ని ఇల"
+        },
+        {
+          "index": 15,
+          "source_start": "Suppose next we start the machine with an input of three\n$\\TMstroke$'s. The first few configurations are simil",
+          "target_start": "తరువాత యంత్రాన్ని మూడు $\\TMstroke$ల ఇన్‌పుట్‌తో ప్రారంభిద్దాం. అవే నిర్దేశాలు\nఅమలవుతాయి కనుక మొదటి కొన్ని స్థి"
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{explain}\nIt is important to note that not all machines will halt. If halting\nmeans that the machine run",
+          "target_start": "\\begin{explain}\nఅన్ని యంత్రాలూ ఆగవని గమనించడం ముఖ్యం. ఆగడం అంటే యంత్రానికి అమలు చేయడానికి\nనిర్దేశాలు అయిపోవడమే"
+        },
+        {
+          "index": 17,
+          "source_start": "\\begin{ex}\n\\[\n\\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,\n                    se",
+          "target_start": "\\begin{ex}\n\\[\n\\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,\n                    se"
+        },
+        {
+          "index": 18,
+          "source_start": "  \\node[initial,state] (A)              {$q_0$};\n  \\node[state]         (B) [right of=A] {$q_1$};",
+          "target_start": "  \\node[initial,state] (A)              {$q_0$};\n  \\node[state]         (B) [right of=A] {$q_1$};"
+        },
+        {
+          "index": 19,
+          "source_start": "  \\path\n  (A) edge [bend left] node {\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}} (B)\n      edge [loop above] nod",
+          "target_start": "  \\path\n  (A) edge [bend left] node {\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}} (B)\n      edge [loop above] nod"
+        },
+        {
+          "index": 20,
+          "source_start": "\\begin{explain}\nMachine tables are another way of representing Turing\nmachines. Machine tables have the tape a",
+          "target_start": "\\begin{explain}\nట్యూరింగ్ యంత్రాలకు ప్రాతినిధ్యం వహించడానికి యంత్ర పట్టికలు మరొక పద్ధతి.\nయంత్ర పట్టికల్లో టేపు"
+        },
+        {
+          "index": 21,
+          "source_start": "\\begin{ex}\nThe machine table for the even machine is:\n\\[\n\\centering\n\\begin{tabular}{lllll}\n\\cline{2-4}\n\\multic",
+          "target_start": "\\begin{ex}\nసరి యంత్రానికి యంత్ర పట్టిక:\n\\[\n\\centering\n\\begin{tabular}{lllll}\n\\cline{2-4}\n\\multicolumn{1}{l|}{}"
+        },
+        {
+          "index": 22,
+          "source_start": "\\begin{explain}\nSo far we have only considered machines that read and accept input.\nHowever, Turing machines h",
+          "target_start": "\\begin{explain}\nఇంతవరకు ఇన్‌పుట్‌ను చదివి అంగీకరించే యంత్రాలను మాత్రమే పరిశీలించాం. అయితే,\nట్యూరింగ్ యంత్రాలు "
+        },
+        {
+          "index": 23,
+          "source_start": "\\begin{ex}\n  \\ollabel{ex:doubler} Before building a doubler machine, it is\n  important to come up with a \\emph",
+          "target_start": "\\begin{ex}\n  \\ollabel{ex:doubler} ద్విగుణక యంత్రాన్ని నిర్మించే ముందు సమస్యను పరిష్కరించే\n  ఒక \\emph{వ్యూహాన్న"
+        },
+        {
+          "index": 24,
+          "source_start": "  \\node[initial,state] (1)              {$q_0$};\n  \\node[state]         (2) [right of=1] {$q_1$};\n  \\node[stat",
+          "target_start": "  \\node[initial,state] (1)              {$q_0$};\n  \\node[state]         (2) [right of=1] {$q_1$};\n  \\node[stat"
+        },
+        {
+          "index": 25,
+          "source_start": "  \\path (1) edge node {\\TMtrans{\\TMstroke}{\\TMblank}{\\TMright}} (2)\n    (2) edge [loop above] node {\\TMtrans{\\",
+          "target_start": "  \\path (1) edge node {\\TMtrans{\\TMstroke}{\\TMblank}{\\TMright}} (2)\n    (2) edge [loop above] node {\\TMtrans{\\"
+        },
+        {
+          "index": 26,
+          "source_start": "\\begin{prob}\nChoose an arbitrary input and trace through the configurations of the\ndoubler machine in \\olref[t",
+          "target_start": "\\begin{prob}\nఏదైనా ఒక ఇన్‌పుట్‌ను ఎంచుకుని, \\olref[tur][mac][rep]{ex:doubler}లోని ద్విగుణక\nయంత్రపు స్థితివిన్య"
+        },
+        {
+          "index": 27,
+          "source_start": "\\begin{prob}\nDesign a Turing-machine with alphabet $\\{\\TMendtape,\\TMblank, A, B\\}$\nthat accepts, i.e., halts o",
+          "target_start": "\\begin{prob}\n$\\{\\TMendtape,\\TMblank, A, B\\}$ అనే వర్ణమాల గల ఒక ట్యూరింగ్ యంత్రాన్ని\nరూపొందించండి. $A$ల సంఖ్య $"
+        },
+        {
+          "index": 28,
+          "source_start": "\\begin{prob}\nDesign a Turing-machine with alphabet $\\{\\TMendtape,\\TMblank, A, B\\}$\nthat takes as input any str",
+          "target_start": "\\begin{prob}\n$\\{\\TMendtape,\\TMblank, A, B\\}$ అనే వర్ణమాల గల ఒక ట్యూరింగ్ యంత్రాన్ని\nరూపొందించండి. $A$, $B$లతో "
+        },
+        {
+          "index": 29,
+          "source_start": "\\begin{prob}\n\\emph{Alphabetical?:} Design a Turing-machine with alphabet\n$\\{\\TMendtape,\\TMblank, A, B\\}$ that ",
+          "target_start": "\\begin{prob}\n\\emph{వర్ణక్రమంలో ఉందా?}: $\\{\\TMendtape,\\TMblank, A, B\\}$ అనే వర్ణమాల గల\nఒక ట్యూరింగ్ యంత్రాన్ని "
+        },
+        {
+          "index": 30,
+          "source_start": "\\begin{prob}\n\\emph{Alphabetizer:} Design a Turing-machine with alphabet\n$\\{\\TMendtape,\\TMblank, A, B\\}$ that t",
+          "target_start": "\\begin{prob}\n\\emph{వర్ణక్రమీకరణ యంత్రం}: $\\{\\TMendtape,\\TMblank, A, B\\}$ అనే వర్ణమాల గల\nఒక ట్యూరింగ్ యంత్రాన్న"
+        },
+        {
+          "index": 31,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{tur}{mac}{rep}",
+        "\\ollabel{ex:doubler}",
+        "\\olref{fig:doubler}",
+        "\\ollabel{fig:doubler}",
+        "\\olref[tur][mac][rep]{ex:doubler}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{tur}{mac}{rep}",
+        "\\ollabel{ex:doubler}",
+        "\\olref{fig:doubler}",
+        "\\ollabel{fig:doubler}",
+        "\\olref[tur][mac][rep]{ex:doubler}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0256",
+      "source_path": "content/turing-machines/machines-computations/turing-machines.tex",
+      "source_sha256": "20d13655358fa780af8f9a2e4994c101c1495ecce098512c28a60293ee239a65",
+      "translation_sha256": "f6e29a08c87fe20d02605afb36959ee15f733efe539f638acd58176fe643c3d6",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{tur}{mac}{tur}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{tur}{mac}{tur}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$M$",
+        "$\\langleQ,\\Sigma,q_0,\\delta\\rangle$",
+        "$Q$",
+        "$\\Sigma$",
+        "$\\TMendtape$",
+        "$\\TMblank$",
+        "$q_0\\inQ$",
+        "$\\delta\\colonQ\\times\\Sigma\\ptoQ\\times\\Sigma\\times\\{\\TMleft,\\TMright,\\TMstay\\}$",
+        "$\\delta$",
+        "$M$",
+        "$\\TMendtape$",
+        "$\\delta(q,\\TMendtape)=\\tuple{q',\\TMendtape,x}$",
+        "$\\delta(q,\\TMendtape)$",
+        "$\\TMendtape$",
+        "$\\tuple{Q,\\Sigma,q_0,\\delta}$",
+        "\\begin{align*}Q&=\\{q_0,q_1\\}\\\\\\Sigma&=\\{\\TMendtape,\\TMblank,\\TMstroke\\},\\\\\\delta(q_0,\\TMstroke)&=\\tuple{q_1,\\TMstroke,\\TMright},\\\\\\delta(q_1,\\TMstroke)&=\\tuple{q_0,\\TMstroke,\\TMright},\\\\\\delta(q_1,\\TMblank)&=\\tuple{q_1,\\TMblank,\\TMright}.\\end{align*}"
+      ],
+      "math_target_core": [
+        "$M$",
+        "$\\langleQ,\\Sigma,q_0,\\delta\\rangle$",
+        "$Q$",
+        "$\\TMendtape$",
+        "$\\TMblank$",
+        "$\\Sigma$",
+        "$q_0\\inQ$",
+        "$\\delta\\colonQ\\times\\Sigma\\ptoQ\\times\\Sigma\\times\\{\\TMleft,\\TMright,\\TMstay\\}$",
+        "$\\delta$",
+        "$M$",
+        "$\\TMendtape$",
+        "$\\delta(q,\\TMendtape)$",
+        "$\\delta(q,\\TMendtape)=\\tuple{q',\\TMendtape,D}$",
+        "$D\\in\\{\\TMleft,\\TMright,\\TMstay\\}$",
+        "$\\TMendtape$",
+        "$\\tuple{Q,\\Sigma,q_0,\\delta}$",
+        "\\begin{align*}Q&=\\{q_0,q_1\\}\\\\\\Sigma&=\\{\\TMendtape,\\TMblank,\\TMstroke\\},\\\\\\delta(q_0,\\TMstroke)&=\\tuple{q_1,\\TMstroke,\\TMright},\\\\\\delta(q_1,\\TMstroke)&=\\tuple{q_0,\\TMstroke,\\TMright},\\\\\\delta(q_1,\\TMblank)&=\\tuple{q_1,\\TMblank,\\TMright}.\\end{align*}"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$\\delta(q,\\TMendtape)=\\tuple{q',\\TMendtape,x}$"
+      ],
+      "math_delta_target_only": [
+        "$D\\in\\{\\TMleft,\\TMright,\\TMstay\\}$",
+        "$\\delta(q,\\TMendtape)=\\tuple{q',\\TMendtape,D}$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTETURMAC-002"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1161,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: turing-machines\n% Chapter: machines-computations\n% Section: turing-machines",
+          "target_start": "% Part: turing-machines\n% Chapter: machines-computations\n% Section: turing-machines"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{tur}{mac}{tur}\n\\olsection{Turing Machines}",
+          "target_start": "\\olfileid{tur}{mac}{tur}\n\\olsection{ట్యూరింగ్ యంత్రాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{explain}\nThe formal definition of what constitutes a Turing machine looks\nabstract, but is actually sim",
+          "target_start": "\\begin{explain}\nదేనిని ట్యూరింగ్ యంత్రం అనాలో చెప్పే ఆచారబద్ధ నిర్వచనం అమూర్తంగా\nకనిపిస్తుంది; కానీ నిజానికి అ"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}[Turing machine]\nA \\emph{Turing machine} $M$ is a tuple $\\langle Q, \\Sigma, q_0,\n\\delta\\rangle$ co",
+          "target_start": "\\begin{defn}[ట్యూరింగ్ యంత్రం]\n\\emph{ట్యూరింగ్ యంత్రం} $M$ అనేది కింది వాటితో కూడిన\n$\\langle Q, \\Sigma, q_0, \\"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{explain}\nWe assume that the tape is infinite in one direction only. For this\nreason it is useful to des",
+          "target_start": "\\begin{explain}\nటేపు ఒకే దిశలో అనంతంగా ఉంటుందని ఊహిస్తాం. అందువల్ల టేపు యొక్క ఎడమ చివర\nగుర్తుగా ప్రత్యేక సంకేత"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{ex}\n\\emph{Even Machine:} The even machine is formally\nthe quadruple $\\tuple{Q, \\Sigma, q_0, \\delta}$ wh",
+          "target_start": "\\begin{ex}\n\\emph{సరి యంత్రం:} ఆచారబద్ధంగా సరి యంత్రం\n$\\tuple{Q, \\Sigma, q_0, \\delta}$ అనే చతుష్టయం; ఇక్కడ\n\\beg"
+        },
+        {
+          "index": 9,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{tur}{mac}{tur}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{tur}{mac}{tur}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0257",
+      "source_path": "content/turing-machines/machines-computations/configuration.tex",
+      "source_sha256": "8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b",
+      "translation_sha256": "4ed2bde12121ccf5736b3ff284c8a37aed23eb69b4657f9f6df7e3db44819dcb",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{cmp}{tur}{con}",
+        "\\ollabel{defn:run-output}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{cmp}{tur}{con}",
+        "\\ollabel{defn:run-output}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$M$",
+        "$M=\\tuple{Q,\\Sigma,q_0,\\delta}$",
+        "$\\tuple{C,m,q}$",
+        "$C\\in\\Sigma^*$",
+        "$\\Sigma$",
+        "$m\\in\\Nat$",
+        "$<\\len{C}$",
+        "$q\\inQ$",
+        "$C$",
+        "$m$",
+        "$0$",
+        "$q$",
+        "$q_0$",
+        "$M$",
+        "$I\\in\\Sigma^*$",
+        "\\[\\tuple{\\TMendtape\\frownI,1,q_0}.\\]",
+        "$\\frown$",
+        "$\\tuple{C,m,q}$",
+        "$\\tuple{C',m',q'}$",
+        "$M$",
+        "$m$",
+        "$C$",
+        "$\\sigma$",
+        "$M$",
+        "$\\delta(q,\\sigma)=\\tuple{q',\\sigma',D}$",
+        "$m$",
+        "$C'$",
+        "$\\sigma'$",
+        "$D=L$",
+        "$m'=m-1$",
+        "$m>0$",
+        "$m'=0$",
+        "$D=R$",
+        "$m'=m+1$",
+        "$D=N$",
+        "$m'=m$",
+        "$m'=\\len{C}$",
+        "$\\len{C'}=\\len{C}+1$",
+        "$m'$",
+        "$C'$",
+        "$\\TMblank$",
+        "$\\len{C'}=\\len{C}$",
+        "$i$",
+        "$i<\\len{C}$",
+        "$i\\neqm$",
+        "$C'(i)=C(i)$",
+        "$M$",
+        "$I$",
+        "$C_i$",
+        "$M$",
+        "$C_0$",
+        "$M$",
+        "$I$",
+        "$C_i$",
+        "$C_{i+1}$",
+        "$M$",
+        "$I$",
+        "$k$",
+        "$C_k=\\tuple{C,m,q}$",
+        "$m$",
+        "$C$",
+        "$\\sigma$",
+        "$\\delta(q,\\sigma)$",
+        "$M$",
+        "$I$",
+        "$O$",
+        "$O$",
+        "$\\TMblank$",
+        "$C=\\TMendtape\\concatO\\concat\\TMblank^j$",
+        "$j\\in\\Nat$",
+        "$\\TMblank^j$",
+        "$j$",
+        "$\\TMblank$",
+        "$O$",
+        "$M$",
+        "$\\TMblank$",
+        "$k$",
+        "$\\TMblank$",
+        "$\\TMendtape$",
+        "$O$"
+      ],
+      "math_target_core": [
+        "$M$",
+        "$M=\\tuple{Q,\\Sigma,q_0,\\delta}$",
+        "$\\tuple{C,m,q}$",
+        "$C\\in\\Sigma^*$",
+        "$\\Sigma$",
+        "$m\\in\\Nat$",
+        "$<\\len{C}$",
+        "$q\\inQ$",
+        "$C$",
+        "$m$",
+        "$0$",
+        "$q$",
+        "$q_0$",
+        "$I\\in\\Sigma^*$",
+        "$M$",
+        "\\[\\tuple{\\TMendtape\\frownI,1,q_0}.\\]",
+        "$\\frown$",
+        "$M$",
+        "$\\tuple{C,m,q}$",
+        "$\\tuple{C',m',q'}$",
+        "$C$",
+        "$m$",
+        "$\\sigma$",
+        "$M$",
+        "$\\delta(q,\\sigma)=\\tuple{q',\\sigma',D}$",
+        "$C'$",
+        "$m$",
+        "$\\sigma'$",
+        "$D=L$",
+        "$m>0$",
+        "$m'=m-1$",
+        "$m'=0$",
+        "$D=R$",
+        "$m'=m+1$",
+        "$D=N$",
+        "$m'=m$",
+        "$m'=\\len{C}$",
+        "$\\len{C'}=\\len{C}+1$",
+        "$C'$",
+        "$m'$",
+        "$\\TMblank$",
+        "$\\len{C'}=\\len{C}$",
+        "$i<\\len{C}$",
+        "$i\\neqm$",
+        "$i$",
+        "$C'(i)=C(i)$",
+        "$I$",
+        "$M$",
+        "$M$",
+        "$C_i$",
+        "$C_0$",
+        "$I$",
+        "$M$",
+        "$C_{i+1}$",
+        "$i$",
+        "$C_i$",
+        "$C_{i+1}$",
+        "$C_k=\\tuple{C,m,q}$",
+        "$C$",
+        "$m$",
+        "$\\sigma$",
+        "$\\delta(q,\\sigma)$",
+        "$M$",
+        "$I$",
+        "$k$",
+        "$I$",
+        "$M$",
+        "$O$",
+        "$O$",
+        "$\\TMblank$",
+        "$j\\in\\Nat$",
+        "$C=\\TMendtape\\concatO\\concat\\TMblank^j$",
+        "$\\TMblank^j$",
+        "$j$",
+        "$\\TMblank$",
+        "$M$",
+        "$O$",
+        "$\\TMblank$",
+        "$k$",
+        "$\\TMendtape$",
+        "$\\TMblank$",
+        "$O$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [
+        "$C_{i+1}$",
+        "$i$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTETURMAC-003",
+        "OLTETURMAC-004"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2364,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: machines-computations\n% Section: configuration",
+          "target_start": "% Part: computability\n% Chapter: machines-computations\n% Section: configuration"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{cmp}{tur}{con}\n\\olsection{Configurations and Computations}",
+          "target_start": "\\olfileid{cmp}{tur}{con}\n\\olsection{స్థితివిన్యాసాలు, గణనలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{explain}\nRecall tracing through the configurations of the even machine earlier.\nThe imaginary mechanism",
+          "target_start": "\\begin{explain}\nఇంతకుముందు సరి యంత్రపు స్థితివిన్యాసాలను వరుసగా అనుసరించిన సంగతి\nగుర్తుచేసుకోండి. టేపు, చదువు-"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}[Configuration]\nA \\emph{configuration} of Turing machine $M = \\tuple{Q, \\Sigma, q_0,\n\\delta}$ is a",
+          "target_start": "\\begin{defn}[స్థితివిన్యాసం]\nట్యూరింగ్ యంత్రం $M = \\tuple{Q, \\Sigma, q_0, \\delta}$ యొక్క\n\\emph{స్థితివిన్యాసం}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{explain}\nThe potential input for a Turing machine is a sequence of symbols,\nusually a sequence that enc",
+          "target_start": "\\begin{explain}\nట్యూరింగ్ యంత్రానికి సాధ్యమైన ఇన్‌పుట్ ఒక సంకేతాల క్రమం; సాధారణంగా అది ఏదో\nఒక రూపంలో సంఖ్యను స"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{defn}[Initial configuration]\nThe \\emph{initial configuration} of $M$ for input $I \\in \\Sigma^*$ is\n\\[\n\\",
+          "target_start": "\\begin{defn}[ప్రారంభ స్థితివిన్యాసం]\nఇన్‌పుట్ $I \\in \\Sigma^*$కు $M$ యొక్క \\emph{ప్రారంభ స్థితివిన్యాసం}\n\\[\n\\t"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{explain}\nThe~$\\frown$ symbol is for \\emph{concatenation}---the input string\nbegins immediately to the l",
+          "target_start": "\\begin{explain}\n$\\frown$ సంకేతం \\emph{అనుసంధానాన్ని} సూచిస్తుంది---ఇన్‌పుట్ సంకేతమాల ఎడమ\nచివరి గుర్తుకు వెంటనే"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{defn}\nWe say that a configuration $\\tuple{C, m, q}$ \\emph{yields the\nconfiguration $\\tuple{C', m', q'}$",
+          "target_start": "\\begin{defn}\n(యంత్రం~$M$ ప్రకారం) స్థితివిన్యాసం $\\tuple{C, m, q}$\n\\emph{ఒక అంచెలో స్థితివిన్యాసం $\\tuple{C', "
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{defn}\\ollabel{defn:run-output}\nA \\emph{run of $M$ on input~$I$} is a sequence $C_i$ of configurations\no",
+          "target_start": "\\begin{defn}\\ollabel{defn:run-output}\n\\emph{ఇన్‌పుట్~$I$పై $M$ యొక్క నడక} అనేది $M$ యొక్క పరిమిత లేదా అనంత\nస్థ"
+        },
+        {
+          "index": 12,
+          "source_start": "We say that $M$ \\emph{halts on input $I$ after $k$ steps} if $C_k =\n\\tuple{C, m, q}$, the $m$th symbol of~$C$ ",
+          "target_start": "$C_k = \\tuple{C, m, q}$ అయి, $C$ యొక్క $m$వ సంకేతం~$\\sigma$ అయి,\n$\\delta(q, \\sigma)$ నిర్వచితం కాకపోతే, $M$ \\e"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{explain}\nAccording to this definition, the output~$O$ of~$M$ always \nends in a symbol other than~$\\TMbl",
+          "target_start": "\\begin{explain}\nఈ నిర్వచనం ప్రకారం, $M$ యొక్క అవుట్‌పుట్~$O$ ఎల్లప్పుడూ $\\TMblank$ కాని\nసంకేతంతో ముగుస్తుంది; "
+        },
+        {
+          "index": 14,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{tur}{con}",
+        "\\ollabel{defn:run-output}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{cmp}{tur}{con}",
+        "\\ollabel{defn:run-output}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0258",
+      "source_path": "content/turing-machines/machines-computations/unary-numbers.tex",
+      "source_sha256": "c1e405708a0c2a3ff77377f136b2d94703174a4a23eefa25a9f6555a13cfcba3",
+      "translation_sha256": "b8fecc31f6494b32db733a08f3daaf71e9b733cd5c5c88c3a661a1e6a72e9123",
+      "source_blocks": 23,
+      "target_blocks": 23,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{tur}{mac}{una}",
+        "\\ollabel{ex:adder}",
+        "\\ollabel{fig:adder}",
+        "\\olref[tur][mac][una]{ex:adder}",
+        "\\olref[rep]{ex:doubler}",
+        "\\olref{fig:doubler-disc}",
+        "\\olref[rep]{ex:doubler}",
+        "\\ollabel{fig:doubler-disc}",
+        "\\ollabel{ex:mover}",
+        "\\olref{fig:mover}",
+        "\\ollabel{fig:mover}",
+        "\\olref[tur][mac][una]{ex:mover}",
+        "\\olref[tur][mac][una]{fig:doubler-disc}",
+        "\\olref[tur][mac][una]{fig:mover}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{tur}{mac}{una}",
+        "\\ollabel{ex:adder}",
+        "\\ollabel{fig:adder}",
+        "\\olref[tur][mac][una]{ex:adder}",
+        "\\olref[rep]{ex:doubler}",
+        "\\olref{fig:doubler-disc}",
+        "\\olref[rep]{ex:doubler}",
+        "\\ollabel{fig:doubler-disc}",
+        "\\ollabel{ex:mover}",
+        "\\olref{fig:mover}",
+        "\\ollabel{fig:mover}",
+        "\\olref[tur][mac][una]{ex:mover}",
+        "\\olref[tur][mac][una]{fig:doubler-disc}",
+        "\\olref[tur][mac][una]{fig:mover}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\TMstroke$",
+        "$n\\in\\Nat$",
+        "$\\TMstroke^n$",
+        "$n=0$",
+        "$n$",
+        "$\\TMstroke$",
+        "$M$",
+        "$f\\colon\\Nat^k\\to\\Nat$",
+        "$M$",
+        "\\[\\TMstroke^{n_1}\\TMblank\\TMstroke^{n_2}\\TMblank\\dots\\TMblank\\TMstroke^{n_k}\\]",
+        "$\\TMstroke^{f(n_1,\\dots,n_k)}$",
+        "$M$",
+        "$f\\colon\\Nat^k\\to\\Nat^m$",
+        "$f(n,m)=n+m$",
+        "$\\TMstroke$",
+        "$n$",
+        "$m$",
+        "$n+m$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "$\\TMblank$",
+        "$\\TMstroke$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[rightof=B]{$q_2$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}}(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(C)(C)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMstay}}(C);\\end{tikzpicture}\\]",
+        "$f(x,y)=x+y$",
+        "$\\tuple{3,2}$",
+        "$0+0$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "$\\TMstroke$",
+        "$f(x)=2x$",
+        "$f(x)=2x$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](0){$q_0$};\\node[state](1)[aboveof=0]{$q_1$};\\node[state](2)[aboveof=1]{$q_2$};\\node[state](3)[rightof=2]{$q_3$};\\node[state](4)[belowof=3]{$q_4$};\\node[state](5)[belowof=4]{$q_5$};\\node[state](6)[aboverightof=4]{$q_6$};\\node[state](7)[belowof=6]{$q_7$};\\node[state](8)[belowof=7]{$q_8$};\\path(0)edgenode{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMright}}(1)%(0)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMstay}}(h)(1)edge[loopleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(1)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(2)(2)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(2)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMleft}}(3)(3)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(3)edgenode[left]{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(4)(4)edgenode[left]{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(5)(5)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(5)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMright}}(0)(4)edgenode[sloped]{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMright}}(6)(6)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMright}}(7)(7)edge[loopright]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(7)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(8)(8)edge[loopright]node{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMstay}}(8);\\end{tikzpicture}\\]",
+        "$f(x)=2x$",
+        "$f(x)=2x$",
+        "$\\TMblank$",
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMendtape$",
+        "$q_6$",
+        "$\\delta(q_0,\\TMblank)=\\tuple{q_6,\\TMblank,\\TMstay}$",
+        "$q_0$",
+        "$q_6$",
+        "$\\TMtrans{\\TMblank}{\\TMblank}{\\TMstay}$",
+        "$x=0$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](6){$q_6$};\\node[state](7)[rightof=6]{$q_7$};\\node[state](8)[rightof=7]{$q_8$};\\node[state](9)[belowof=8]{$q_9$};\\node[state](10)[leftof=9]{$q_{10}$};\\node[state](11)[leftof=10]{$q_{11}$};\\node[state](12)[belowof=11]{$q_{12}$};\\node[state](13)[rightof=12]{$q_{13}$};\\node[state](14)[rightof=13]{$q_{14}$};\\path(6)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(7)(7)edge[loopabove]node{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(7)edgenode{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(8)(8)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(8)edgenode{\\TMtrans{\\TMblank}{\\TMendtape}{\\TMleft}}(9)(9)edge[loopright]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(9)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(10)(10)edgenode[above]{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMleft}}(11)(11)edge[loopabove]node{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(11)edgenode[left]{\\begin{tabular}{@{}l@{}}\\TMtrans{\\TMendtape}{\\TMendtape}{\\TMright}\\\\\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}\\end{tabular}}(12)(12)edgenode[]{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMright}}(13)(13)edge[loopbelow]node{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(13)edgenode[sloped]{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMleft}}(11)(13)edgenode{\\TMtrans{\\TMendtape}{\\TMblank}{\\TMstay}}(14);\\end{tikzpicture}\\]",
+        "$\\TMstroke$",
+        "$x=0$",
+        "$2x=0$",
+        "$n$",
+        "$m$",
+        "$n>m$",
+        "$f(n,m)=n-m$",
+        "\\[\\fn{equality}(n,m)=\\begin{cases}&\\\\&\\end{cases}\\]",
+        "$n$",
+        "$m\\in\\PosInt$",
+        "$\\min(x,y)$",
+        "$x$",
+        "$y$",
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "$\\min$",
+        "$\\min(3,5)=3$",
+        "$\\min(20,16)=16$",
+        "$\\min(4,4)=4$",
+        "$M$",
+        "$f\\colon\\Nat^k\\pto\\Nat$",
+        "$M$",
+        "$\\TMstroke^{n_1}\\concat\\TMblank\\concat\\dots\\concat\\TMblank\\concat\\TMstroke^{n_k}$",
+        "$\\TMstroke^{m}$",
+        "$f(n_1,\\dots,n_k)=m$",
+        "$M$",
+        "$\\TMstroke$",
+        "$f(n_1,\\dots,n_k)$",
+        "$n=m$",
+        "$n\\neqm$"
+      ],
+      "math_target_core": [
+        "$\\TMstroke$",
+        "$n\\in\\Nat$",
+        "$n=0$",
+        "$\\TMstroke^n$",
+        "$n$",
+        "$\\TMstroke$",
+        "$M$",
+        "\\[\\TMstroke^{n_1}\\TMblank\\TMstroke^{n_2}\\TMblank\\dots\\TMblank\\TMstroke^{n_k}\\]",
+        "$\\TMstroke^{f(n_1,\\dots,n_k)}$",
+        "$M$",
+        "$f\\colon\\Nat^k\\to\\Nat$",
+        "$M$",
+        "$f\\colon\\Nat^k\\to\\Nat^m$",
+        "$f(n,m)=n+m$",
+        "$n$",
+        "$m$",
+        "$\\TMstroke$",
+        "$n+m$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "$\\TMblank$",
+        "$\\TMstroke$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[rightof=B]{$q_2$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}}(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(A)(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(C)(C)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMstay}}(C);\\end{tikzpicture}\\]",
+        "$f(x,y)=x+y$",
+        "$\\tuple{3,2}$",
+        "$0+0$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "$f(x)=2x$",
+        "$f(x)=2x$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](0){$q_0$};\\node[state](1)[aboveof=0]{$q_1$};\\node[state](2)[aboveof=1]{$q_2$};\\node[state](3)[rightof=2]{$q_3$};\\node[state](4)[belowof=3]{$q_4$};\\node[state](5)[belowof=4]{$q_5$};\\node[state](6)[aboverightof=4]{$q_6$};\\node[state](7)[belowof=6]{$q_7$};\\node[state](8)[belowof=7]{$q_8$};\\path(0)edgenode{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMright}}(1)%(0)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMstay}}(h)(1)edge[loopleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(1)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(2)(2)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(2)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMleft}}(3)(3)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(3)edgenode[left]{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(4)(4)edgenode[left]{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(5)(5)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(5)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMright}}(0)(4)edgenode[sloped]{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMright}}(6)(6)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMright}}(7)(7)edge[loopright]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(7)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(8)(8)edge[loopright]node{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMstay}}(8);\\end{tikzpicture}\\]",
+        "$f(x)=2x$",
+        "$f(x)=2x$",
+        "$\\TMblank$",
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "$\\TMstroke$",
+        "$\\TMstroke$",
+        "$\\TMendtape$",
+        "$q_6$",
+        "$\\delta(q_0,\\TMblank)=\\tuple{q_6,\\TMblank,\\TMstay}$",
+        "$\\TMtrans{\\TMblank}{\\TMblank}{\\TMstay}$",
+        "$q_0$",
+        "$q_6$",
+        "$x=0$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](6){$q_6$};\\node[state](7)[rightof=6]{$q_7$};\\node[state](8)[rightof=7]{$q_8$};\\node[state](9)[belowof=8]{$q_9$};\\node[state](10)[leftof=9]{$q_{10}$};\\node[state](11)[leftof=10]{$q_{11}$};\\node[state](12)[belowof=11]{$q_{12}$};\\node[state](13)[rightof=12]{$q_{13}$};\\node[state](14)[rightof=13]{$q_{14}$};\\path(6)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(7)(7)edge[loopabove]node{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(7)edgenode{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(8)(8)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(8)edgenode{\\TMtrans{\\TMblank}{\\TMendtape}{\\TMleft}}(9)(9)edge[loopright]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(9)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(10)(10)edgenode[above]{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMleft}}(11)(11)edge[loopabove]node{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(11)edgenode[left]{\\begin{tabular}{@{}l@{}}\\TMtrans{\\TMendtape}{\\TMendtape}{\\TMright}\\\\\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}\\end{tabular}}(12)(12)edgenode[]{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMright}}(13)(13)edge[loopbelow]node{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(13)edgenode[sloped]{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMleft}}(11)(13)edgenode{\\TMtrans{\\TMendtape}{\\TMblank}{\\TMstay}}(14);\\end{tikzpicture}\\]",
+        "$\\TMstroke$",
+        "$x=0$",
+        "$2x=0$",
+        "$n>m$",
+        "$n$",
+        "$m$",
+        "$f(n,m)=n-m$",
+        "\\[\\fn{equality}(n,m)=\\begin{cases}&\\\\&\\end{cases}\\]",
+        "$n$",
+        "$m\\in\\PosInt$",
+        "$x$",
+        "$y$",
+        "$\\TMblank$",
+        "$\\TMstroke$",
+        "$\\min(x,y)$",
+        "$\\min$",
+        "$\\min(3,5)=3$",
+        "$\\min(20,16)=16$",
+        "$\\min(4,4)=4$",
+        "$M$",
+        "$f\\colon\\Nat^k\\pto\\Nat$",
+        "$f(n_1,\\dots,n_k)=m$",
+        "$M$",
+        "$\\TMstroke^{n_1}\\concat\\TMblank\\concat\\dots\\concat\\TMblank\\concat\\TMstroke^{n_k}$",
+        "$\\TMstroke^{m}$",
+        "$f(n_1,\\dots,n_k)$",
+        "$M$",
+        "$\\TMstroke$",
+        "$n=m$",
+        "$n\\neqm$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[rightof=B]{$q_2$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}}(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(C)(C)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMstay}}(C);\\end{tikzpicture}\\]"
+      ],
+      "math_delta_target_only": [
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[rightof=B]{$q_2$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}}(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(A)(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(C)(C)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMstay}}(C);\\end{tikzpicture}\\]"
+      ],
+      "declared_source_correction_ids": [
+        "OLTETURMAC-005"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 3175,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: turing-machines\n% Chapter: machines-computations\n% Section: unary-numbers",
+          "target_start": "% Part: turing-machines\n% Chapter: machines-computations\n% Section: unary-numbers"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{tur}{mac}{una}\n\\olsection{Unary Representation of Numbers}",
+          "target_start": "\\olfileid{tur}{mac}{una}\n\\olsection{సంఖ్యలకు ఏకాంక ప్రాతినిధ్యం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{explain}\nTuring machines work on sequences of symbols written on their tape.\nDepending on the alphabet ",
+          "target_start": "\\begin{explain}\nట్యూరింగ్ యంత్రాలు తమ టేపుపై వ్రాసిన సంకేతాల క్రమాలపై పనిచేస్తాయి. ట్యూరింగ్\nయంత్రం ఉపయోగించే "
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}[Computation]\nA Turing machine~$M$ \\emph{computes} the function $f\\colon \\Nat^k \\to \\Nat$ iff\n$M$~",
+          "target_start": "\\begin{defn}[గణన]\nట్యూరింగ్ యంత్రం~$M$ కింది ఇన్‌పుట్‌పై ఆగి\n\\[\n\\TMstroke^{n_1} \\TMblank \\TMstroke^{n_2} \\TMbl"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{prob}\n  Give a definition for when a Turing machine~$M$ computes the\n  function $f\\colon \\Nat^k \\to \\Na",
+          "target_start": "\\begin{prob}\n  ట్యూరింగ్ యంత్రం~$M$ ప్రమేయం $f\\colon \\Nat^k \\to \\Nat^m$ను గణించడం\n  ఎప్పుడో చెప్పే నిర్వచనాన్న"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{ex}\\ollabel{ex:adder}\n\\emph{Addition:}\nLet's build a machine that computes the function $f(n,m) = n + m",
+          "target_start": "\\begin{ex}\\ollabel{ex:adder}\n\\emph{కూడిక:}\n$f(n,m) = n + m$ అనే ప్రమేయాన్ని గణించే యంత్రాన్ని నిర్మిద్దాం. టేప"
+        },
+        {
+          "index": 9,
+          "source_start": "  \\node[initial,state]         (A)              {$q_0$};\n  \\node[state]         (B) [right of=A] {$q_1$};\n  \\n",
+          "target_start": "  \\node[initial,state]         (A)              {$q_0$};\n  \\node[state]         (B) [right of=A] {$q_1$};\n  \\n"
+        },
+        {
+          "index": 10,
+          "source_start": "  \\path (A) edge node {\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}} (B)\n           edge [loop above] node {\\TMtrans",
+          "target_start": "  \\path (A) edge node {\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}} (B)\n           edge [loop above] node {\\TMtrans"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{prob}\nTrace through the configurations of the machine from\n\\olref[tur][mac][una]{ex:adder} for input~$\\",
+          "target_start": "\\begin{prob}\nఇన్‌పుట్~$\\tuple{3,2}$కు \\olref[tur][mac][una]{ex:adder}లోని యంత్రపు\nస్థితివిన్యాసాలను వరుసగా అను"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{explain}\nIn \\olref[rep]{ex:doubler}, we gave an example of a Turing machine\nthat takes as input a seque",
+          "target_start": "\\begin{explain}\n\\olref[rep]{ex:doubler}లో $\\TMstroke$ల క్రమాన్ని ఇన్‌పుట్‌గా తీసుకుని,\nటేపుపై దానికి రెండింతల "
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{ex}\nThe machine in \\olref{fig:doubler-disc} computes the function $f(x) =\n2x$. Instead of erasing the i",
+          "target_start": "\\begin{ex}\n\\olref{fig:doubler-disc}లోని యంత్రం $f(x) = 2x$ ప్రమేయాన్ని గణిస్తుంది.\n\\olref[rep]{ex:doubler}లోని"
+        },
+        {
+          "index": 14,
+          "source_start": "  \\node[initial,state] (0)              {$q_0$};\n  \\node[state]         (1) [above of=0] {$q_1$};\n  \\node[stat",
+          "target_start": "  \\node[initial,state] (0)              {$q_0$};\n  \\node[state]         (1) [above of=0] {$q_1$};\n  \\node[stat"
+        },
+        {
+          "index": 15,
+          "source_start": "  \\path (0) edge node {\\TMtrans{\\TMstroke}{\\TMblank}{\\TMright}} (1)\n%    (0) edge node {\\TMtrans{\\TMblank}{\\TM",
+          "target_start": "  \\path (0) edge node {\\TMtrans{\\TMstroke}{\\TMblank}{\\TMright}} (1)\n%    (0) edge node {\\TMtrans{\\TMblank}{\\TM"
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{ex}\\ollabel{ex:mover}\nA second possibility for computing $f(x) = 2x$ is to keep the original\ndoubler ma",
+          "target_start": "\\begin{ex}\\ollabel{ex:mover}\n$f(x) = 2x$ను గణించడానికి రెండవ అవకాశం: మొదటి ద్విగుణక యంత్రాన్నే ఉంచి,\nద్విగుణీక"
+        },
+        {
+          "index": 17,
+          "source_start": "\\begin{prob}\nIn \\olref[tur][mac][una]{ex:mover} we described a machine consisting\nof a combination of the doub",
+          "target_start": "\\begin{prob}\n\\olref[tur][mac][una]{ex:mover}లో, \\olref[tur][mac][una]{fig:doubler-disc}లోని\nద్విగుణక యంత్రం, \\"
+        },
+        {
+          "index": 18,
+          "source_start": "\\begin{prob}\n\\emph{Subtraction:} Design a Turing machine that when given an input\nof two non-empty strings of ",
+          "target_start": "\\begin{prob}\n\\emph{తీసివేత:} $n > m$ అయ్యే పొడవులు $n$, $m$ గల, ఖాళీ కాని రెండు\nగీతల సంకేతమాలలను ఇన్‌పుట్‌గా ఇ"
+        },
+        {
+          "index": 19,
+          "source_start": "\\begin{prob}\n\\emph{Equality:} Design a Turing machine to compute the following function:\n\\[\n\\fn{equality}(n,m)",
+          "target_start": "\\begin{prob}\n\\emph{సమానత్వం:} కింది ప్రమేయాన్ని గణించే ట్యూరింగ్ యంత్రాన్ని రూపొందించండి:\n\\[\n\\fn{equality}(n,m"
+        },
+        {
+          "index": 20,
+          "source_start": "\\begin{prob}\nDesign a Turing machine to compute the function $\\min(x,y)$ where $x$\nand $y$ are positive intege",
+          "target_start": "\\begin{prob}\n$x$, $y$లు టేపుపై ఒక $\\TMblank$తో వేరుచేసిన $\\TMstroke$ల సంకేతమాలలతో\nసూచించిన ధన పూర్ణ సంఖ్యలైతే,"
+        },
+        {
+          "index": 21,
+          "source_start": "The function $\\min$ selects the smallest value from its arguments, so\n$\\min(3,5)=3$, $\\min(20,16)=16$, and $\\m",
+          "target_start": "$\\min$ ప్రమేయం తన పరామితుల్లో అతి చిన్న విలువను ఎంచుకుంటుంది; అందువల్ల\n$\\min(3,5)=3$, $\\min(20,16)=16$, $\\min("
+        },
+        {
+          "index": 22,
+          "source_start": "\\begin{defn}\n  A Turing machine~$M$ computes the partial function $f\\colon \\Nat^k\n  \\pto \\Nat$ iff, \n  \\begin{",
+          "target_start": "\\begin{defn}\n  కింది షరతులు నెరవేరితే, అప్పుడే మాత్రమే ట్యూరింగ్ యంత్రం~$M$ పాక్షిక ప్రమేయం\n  $f\\colon \\Nat^k "
+        },
+        {
+          "index": 23,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{tur}{mac}{una}",
+        "\\ollabel{ex:adder}",
+        "\\ollabel{fig:adder}",
+        "\\olref[tur][mac][una]{ex:adder}",
+        "\\olref[rep]{ex:doubler}",
+        "\\olref{fig:doubler-disc}",
+        "\\olref[rep]{ex:doubler}",
+        "\\ollabel{fig:doubler-disc}",
+        "\\ollabel{ex:mover}",
+        "\\olref{fig:mover}",
+        "\\ollabel{fig:mover}",
+        "\\olref[tur][mac][una]{ex:mover}",
+        "\\olref[tur][mac][una]{fig:doubler-disc}",
+        "\\olref[tur][mac][una]{fig:mover}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{tur}{mac}{una}",
+        "\\ollabel{ex:adder}",
+        "\\ollabel{fig:adder}",
+        "\\olref[tur][mac][una]{ex:adder}",
+        "\\olref[rep]{ex:doubler}",
+        "\\olref{fig:doubler-disc}",
+        "\\olref[rep]{ex:doubler}",
+        "\\ollabel{fig:doubler-disc}",
+        "\\ollabel{ex:mover}",
+        "\\olref{fig:mover}",
+        "\\ollabel{fig:mover}",
+        "\\olref[tur][mac][una]{ex:mover}",
+        "\\olref[tur][mac][una]{fig:doubler-disc}",
+        "\\olref[tur][mac][una]{fig:mover}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0259",
+      "source_path": "content/turing-machines/machines-computations/halting-states.tex",
+      "source_sha256": "bc10eb130811dbd6f527c85e683a03b97f771c7f5ff0f64d5a39f040144799bf",
+      "translation_sha256": "9b93847bee801e9e145749f494b6feecab342094a7ef624ca2fa8c6e93a63e83",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{tur}{mac}{hal}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{tur}{mac}{hal}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$h$",
+        "$h\\inQ$",
+        "$h$",
+        "$q_0$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[belowof=A]{$h$};\\path(A)edge[bendleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{R}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{N}}(C)(B)edge[loopabove]node{\\TMtrans{\\TMblank}{\\TMblank}{R}}(B)edge[bendleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{R}}(A);\\end{tikzpicture}\\]",
+        "$r$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[belowof=A]{$h$};\\node[state](D)[belowof=B]{$r$};\\path(A)edge[bendleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{R}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{N}}(C)(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{N}}(D)edge[bendleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{R}}(A);\\end{tikzpicture}\\]"
+      ],
+      "math_target_core": [
+        "$h\\inQ$",
+        "$h$",
+        "$h$",
+        "$q_0$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[belowof=A]{$h$};\\path(A)edge[bendleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{R}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{N}}(C)(B)edge[loopabove]node{\\TMtrans{\\TMblank}{\\TMblank}{R}}(B)edge[bendleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{R}}(A);\\end{tikzpicture}\\]",
+        "$r$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[belowof=A]{$h$};\\node[state](D)[belowof=B]{$r$};\\path(A)edge[bendleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{R}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{N}}(C)(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{N}}(D)edge[bendleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{R}}(A);\\end{tikzpicture}\\]"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1166,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: turing-machines\n% Chapter: machines-computations\n% Section: halting-states",
+          "target_start": "% Part: turing-machines\n% Chapter: machines-computations\n% Section: halting-states"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{tur}{mac}{hal}\n\\olsection{Halting States}",
+          "target_start": "\\olfileid{tur}{mac}{hal}\n\\olsection{ఆగే స్థితులు}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{explain}\nAlthough we have defined our machines to halt only when there\nis no instruction to carry out, ",
+          "target_start": "\\begin{explain}\nఅమలు చేయడానికి నిర్దేశమేదీ లేనప్పుడే మన యంత్రాలు ఆగుతాయని నిర్వచించినప్పటికీ,\nట్యూరింగ్ యంత్రా"
+        },
+        {
+          "index": 6,
+          "source_start": "The idea behind a halting state is simple: when the machine has\nfinished operation (it is ready to accept inpu",
+          "target_start": "ఆగే స్థితి వెనుక ఉన్న భావన సరళమైనది: యంత్రం తన పనిని పూర్తిచేసినప్పుడు\n(ఇన్‌పుట్‌ను అంగీకరించడానికి సిద్ధమైనప్"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{ex}\\emph{Halting States}.\nTo elucidate this concept, let us begin with an alteration of the\neven machin",
+          "target_start": "\\begin{ex}\\emph{ఆగే స్థితులు}.\nఈ భావనను స్పష్టం చేయడానికి, సరి యంత్రంలో ఒక మార్పుతో మొదలుపెడదాం. ఇన్‌పుట్\nసరిస"
+        },
+        {
+          "index": 8,
+          "source_start": "  \\node[initial, state]         (A)                     {$q_0$};\n  \\node[state]         (B) [right of=A] {$q_1",
+          "target_start": "  \\node[initial, state]         (A)                     {$q_0$};\n  \\node[state]         (B) [right of=A] {$q_1"
+        },
+        {
+          "index": 9,
+          "source_start": "  \\path (A) edge [bend left] node {\\TMtrans{\\TMstroke}{\\TMstroke}{R}} (B)\n  \t    edge node {\\TMtrans{\\TMblank}",
+          "target_start": "  \\path (A) edge [bend left] node {\\TMtrans{\\TMstroke}{\\TMstroke}{R}} (B)\n             edge node {\\TMtrans{\\TM"
+        },
+        {
+          "index": 10,
+          "source_start": "Let us further expand the example. When the machine determines that the input\nis odd, it never halts. We can a",
+          "target_start": "ఈ ఉదాహరణను మరింత విస్తరిద్దాం. ఇన్‌పుట్ బేసి అని యంత్రం నిర్ణయించినప్పుడు\nఅది ఎన్నటికీ ఆగదు. చక్రీయ నిర్దేశాన్"
+        },
+        {
+          "index": 11,
+          "source_start": "  \\node[initial,state]         (A)                     {$q_0$};\n  \\node[state]         (B) [right of=A] {$q_1$",
+          "target_start": "  \\node[initial,state]         (A)                     {$q_0$};\n  \\node[state]         (B) [right of=A] {$q_1$"
+        },
+        {
+          "index": 12,
+          "source_start": "  \\path (A) edge [bend left] node {\\TMtrans{\\TMstroke}{\\TMstroke}{R}} (B)\n  \t    edge node {\\TMtrans{\\TMblank}",
+          "target_start": "  \\path (A) edge [bend left] node {\\TMtrans{\\TMstroke}{\\TMstroke}{R}} (B)\n             edge node {\\TMtrans{\\TM"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{explain}\nAdding a dedicated halting state can be advantageous in cases like\nthis, where it makes explic",
+          "target_start": "\\begin{explain}\nయంత్రం కొన్ని ఇన్‌పుట్‌లను ఎప్పుడు అంగీకరిస్తుందో లేదా తిరస్కరిస్తుందో స్పష్టంగా\nచూపే ఇలాంటి స"
+        },
+        {
+          "index": 14,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{tur}{mac}{hal}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{tur}{mac}{hal}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0260",
+      "source_path": "content/turing-machines/machines-computations/disciplined-machines.tex",
+      "source_sha256": "b90ae0706db20b57872c40cdbd28e8ecb3d9aa98bbab8f18974ca235e4607aaa",
+      "translation_sha256": "01d22a97e48eb06a0cbd3a26fade9db32b6d09e38748b76dd042e97b4f1ab549",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{tur}{mac}{dis}",
+        "\\olref[hal]{sec}",
+        "\\ollabel{defn:disciplined}",
+        "\\olref{fig:adder-disc}",
+        "\\olref[una]{ex:adder}",
+        "\\ollabel{fig:adder-disc}",
+        "\\ollabel{prop:disciplined}",
+        "\\label{tur:mac:dis:prob:disc-succ}",
+        "\\label{tur:mac:dis:prob:copier}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{tur}{mac}{dis}",
+        "\\olref[hal]{sec}",
+        "\\ollabel{defn:disciplined}",
+        "\\olref{fig:adder-disc}",
+        "\\olref[una]{ex:adder}",
+        "\\ollabel{fig:adder-disc}",
+        "\\ollabel{prop:disciplined}",
+        "\\label{tur:mac:dis:prob:disc-succ}",
+        "\\label{tur:mac:dis:prob:copier}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$h$",
+        "$h$",
+        "$0$",
+        "$0$",
+        "$0$",
+        "$1$",
+        "$M$",
+        "$h$",
+        "$1$",
+        "$\\TMendtape$",
+        "$0$",
+        "$0$",
+        "$h$",
+        "$\\delta(q,\\sigma)=\\tuple{h,\\sigma,N}$",
+        "$\\tuple{q,\\sigma}$",
+        "$\\delta$",
+        "$M$",
+        "$M'$",
+        "$1$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[belowrightof=B]{$q_2$};\\node[state](D)[belowleftof=C]{$q_3$};\\node[state](H)[leftof=D]{$h$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}}(B)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)(B)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(C)(C)edgenode{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMleft}}(D)(D)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(D)edgenode{\\TMtrans{\\TMendtape}{\\TMendtape}{\\TMright}}(H);\\end{tikzpicture}\\]",
+        "$M$",
+        "$M'$",
+        "$O$",
+        "$M$",
+        "$O$",
+        "$M$",
+        "$f\\colon\\Nat^n\\to\\Nat$",
+        "$f(x)=x+1$",
+        "$\\TMstroke^n$",
+        "$\\TMstroke^n\\concat\\TMblank\\concat\\TMstroke^n$"
+      ],
+      "math_target_core": [
+        "$h$",
+        "$h$",
+        "$0$",
+        "$0$",
+        "$0$",
+        "$1$",
+        "$M$",
+        "$h$",
+        "$1$",
+        "$0$",
+        "$\\TMendtape$",
+        "$0$",
+        "$h$",
+        "$\\delta$",
+        "$\\tuple{q,\\sigma}$",
+        "$\\delta(q,\\sigma)=\\tuple{h,\\sigma,N}$",
+        "$M$",
+        "$M'$",
+        "$1$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[belowrightof=B]{$q_2$};\\node[state](D)[belowleftof=C]{$q_3$};\\node[state](H)[leftof=D]{$h$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}}(B)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(A)(B)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(C)(C)edgenode{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMleft}}(D)(D)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(D)edgenode{\\TMtrans{\\TMendtape}{\\TMendtape}{\\TMright}}(H);\\end{tikzpicture}\\]",
+        "$M$",
+        "$M$",
+        "$O$",
+        "$O$",
+        "$M$",
+        "$M'$",
+        "$f\\colon\\Nat^n\\to\\Nat$",
+        "$f(x)=x+1$",
+        "$\\TMstroke^n$",
+        "$\\TMstroke^n\\concat\\TMblank\\concat\\TMstroke^n$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[belowrightof=B]{$q_2$};\\node[state](D)[belowleftof=C]{$q_3$};\\node[state](H)[leftof=D]{$h$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}}(B)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)(B)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(C)(C)edgenode{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMleft}}(D)(D)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(D)edgenode{\\TMtrans{\\TMendtape}{\\TMendtape}{\\TMright}}(H);\\end{tikzpicture}\\]"
+      ],
+      "math_delta_target_only": [
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[belowrightof=B]{$q_2$};\\node[state](D)[belowleftof=C]{$q_3$};\\node[state](H)[leftof=D]{$h$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}}(B)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(A)(B)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(C)(C)edgenode{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMleft}}(D)(D)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(D)edgenode{\\TMtrans{\\TMendtape}{\\TMendtape}{\\TMright}}(H);\\end{tikzpicture}\\]"
+      ],
+      "declared_source_correction_ids": [
+        "OLTETURMAC-006"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1835,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: turing-machines\n% Chapter: machines-computations\n% Section: well-behaved-machines",
+          "target_start": "% Part: turing-machines\n% Chapter: machines-computations\n% Section: well-behaved-machines"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{tur}{mac}{dis}\n\\olsection{Disciplined Machines}",
+          "target_start": "\\olfileid{tur}{mac}{dis}\n\\olsection{క్రమశిక్షిత యంత్రాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{explain}\nIn section \\olref[hal]{sec}, we considered Turing machines that have a\nsingle, designated halt",
+          "target_start": "\\begin{explain}\nవిభాగం \\olref[hal]{sec}లో, నిర్దేశిత ఏకైక ఆగే స్థితి~$h$ గల ట్యూరింగ్\nయంత్రాలను పరిశీలించాం---"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}\\ollabel{defn:disciplined}\nA Turing machine~$M$ is \\emph{disciplined} iff\n\\begin{enumerate}\n    \\i",
+          "target_start": "\\begin{defn}\\ollabel{defn:disciplined}\nట్యూరింగ్ యంత్రం~$M$ కింది షరతులను నెరవేరిస్తే, అప్పుడే మాత్రమే అది\n\\em"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{explain}\nWe have already discussed that any Turing machine can be changed into\none with the same behavi",
+          "target_start": "\\begin{explain}\nఏ ట్యూరింగ్ యంత్రాన్నైనా అదే ప్రవర్తన కలిగి, నిర్దేశిత ఆగే స్థితి గల యంత్రంగా\nమార్చవచ్చని ఇప్ప"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{ex}\n    In \\olref{fig:adder-disc}, we turn the addition machine\n    from \\olref[una]{ex:adder} into a d",
+          "target_start": "\\begin{ex}\n    \\olref{fig:adder-disc}లో, \\olref[una]{ex:adder}లోని కూడిక యంత్రాన్ని\n    క్రమశిక్షిత యంత్రంగా మ"
+        },
+        {
+          "index": 9,
+          "source_start": "  \\node[initial,state]         (A)              {$q_0$};\n  \\node[state]         (B) [right of=A] {$q_1$};\n  \\n",
+          "target_start": "  \\node[initial,state]         (A)              {$q_0$};\n  \\node[state]         (B) [right of=A] {$q_1$};\n  \\n"
+        },
+        {
+          "index": 10,
+          "source_start": "  \\path (A) edge node {\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}} (B)\n           edge [loop below] node {\\TMtrans",
+          "target_start": "  \\path (A) edge node {\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}} (B)\n           edge [loop below] node {\\TMtrans"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{prop}\\ollabel{prop:disciplined} For every Turing machine~$M$,\nthere is a disciplined Turing machine~$M'",
+          "target_start": "\\begin{prop}\\ollabel{prop:disciplined} ప్రతి ట్యూరింగ్ యంత్రం~$M$కు,\n$M$ అవుట్‌పుట్~$O$తో ఆగితే అవుట్‌పుట్~$O$"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{prob}\\label{tur:mac:dis:prob:disc-succ}\nGive a disciplined machine that computes $f(x) = x+1$.\n\\end{pro",
+          "target_start": "\\begin{prob}\\label{tur:mac:dis:prob:disc-succ}\n$f(x) = x+1$ను గణించే క్రమశిక్షిత యంత్రాన్ని ఇవ్వండి.\n\\end{prob"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{prob}\\label{tur:mac:dis:prob:copier}\nFind a disciplined machine which, when started on input $\\TMstroke",
+          "target_start": "\\begin{prob}\\label{tur:mac:dis:prob:copier}\nఇన్‌పుట్ $\\TMstroke^n$పై ప్రారంభించినప్పుడు అవుట్‌పుట్\n$\\TMstroke^"
+        },
+        {
+          "index": 14,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{tur}{mac}{dis}",
+        "\\olref[hal]{sec}",
+        "\\ollabel{defn:disciplined}",
+        "\\olref{fig:adder-disc}",
+        "\\olref[una]{ex:adder}",
+        "\\ollabel{fig:adder-disc}",
+        "\\ollabel{prop:disciplined}",
+        "\\label{tur:mac:dis:prob:disc-succ}",
+        "\\label{tur:mac:dis:prob:copier}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{tur}{mac}{dis}",
+        "\\olref[hal]{sec}",
+        "\\ollabel{defn:disciplined}",
+        "\\olref{fig:adder-disc}",
+        "\\olref[una]{ex:adder}",
+        "\\ollabel{fig:adder-disc}",
+        "\\ollabel{prop:disciplined}",
+        "\\label{tur:mac:dis:prob:disc-succ}",
+        "\\label{tur:mac:dis:prob:copier}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0261",
+      "source_path": "content/turing-machines/machines-computations/combining-machines.tex",
+      "source_sha256": "02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48",
+      "translation_sha256": "4c0be68bc5222e1d2373e6537351af795d26efc33c3b409c1ec4b9e08deb2795",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{tur}{mac}{cmb}",
+        "\\olref{fig:combined}",
+        "\\ollabel{fig:combined}",
+        "\\olref[dis]{defn:disciplined}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{tur}{mac}{cmb}",
+        "\\olref{fig:combined}",
+        "\\ollabel{fig:combined}",
+        "\\olref[dis]{defn:disciplined}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$M=\\tuple{Q,\\Sigma,q_0,\\delta}$",
+        "$M'=\\tuple{Q',\\Sigma',q_0',\\delta'}$",
+        "$M$",
+        "$M'$",
+        "$M\\frownM'$",
+        "$Q'$",
+        "$M'$",
+        "$M$",
+        "$M'$",
+        "$Q\\capQ'=\\emptyset$",
+        "$M\\frownM'$",
+        "$Q\\cupQ'$",
+        "$\\Sigma\\cup\\Sigma'$",
+        "$q_0$",
+        "$\\delta''$",
+        "\\[\\delta''(q,\\sigma)=\\begin{cases}\\delta(q,\\sigma)&\\\\\\delta'(q,\\sigma)&\\\\\\tuple{q_0',\\sigma,\\TMstay}&\\end{cases}\\]",
+        "$M$",
+        "$q\\inQ$",
+        "$M'$",
+        "$q\\inQ'$",
+        "$q\\inQ$",
+        "$\\sigma$",
+        "$M$",
+        "$M$",
+        "$M'$",
+        "$M$",
+        "$M$",
+        "$M$",
+        "$1$",
+        "$\\TMstroke$",
+        "$n$",
+        "$m$",
+        "$2(m+n)$",
+        "$\\TMstroke$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[rightof=B]{$q_2$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}}(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(C)(C)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMstay}}(C);\\end{tikzpicture}\\]",
+        "$q_2$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[rightof=B]{$q_2$};\\node[state](D)[belowleftof=C]{$q_3$};\\node[state](E)[belowleftof=D]{$q_4$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}}(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(C)(C)edgenode{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMleft}}(D)(D)edge[loopleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(D)edgenode[left,xshift=-2mm]{\\TMtrans{\\TMendtape}{\\TMendtape}{\\TMright}}(E);\\end{tikzpicture}\\]",
+        "$q_4$",
+        "$q_4$",
+        "$q_0$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[rightof=B]{$q_2$};\\node[state](D)[belowleftof=C]{$q_3$};\\node[state](E)[belowleftof=D]{$q_4$};\\node[state](2)[rightof=E]{$q_5$};\\node[state](3)[rightof=2]{$q_6$};\\node[state](4)[belowof=3]{$q_7$};\\node[state](5)[leftof=4]{$q_8$};\\node[state](6)[leftof=5]{$q_9$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}}(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(C)(C)edgenode{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMleft}}(D)(D)edge[loopleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(D)edgenode[left,xshift=-2mm]{\\TMtrans{\\TMendtape}{\\TMendtape}{\\TMright}}(E)(E)edgenode{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMright}}(2)(2)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(2)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(3)(3)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(3)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMright}}(4)(4)edge[loopbelow]node{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMleft}}(4)edgenode{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(5)(5)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(5)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(6)(6)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(6)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(E);\\end{tikzpicture}\\]",
+        "$M$",
+        "$M'$",
+        "$f\\colon\\Nat^k\\to\\Nat$",
+        "$f'\\colon\\Nat\\to\\Nat$",
+        "$M\\frownM'$",
+        "$\\comp{f}{f'}$",
+        "$M$",
+        "$f(n_1,\\dots,n_k)=m$",
+        "$1$",
+        "$M'$",
+        "$f'(m)$",
+        "$1$",
+        "$f(x)=x+2$",
+        "$M$",
+        "$M\\frownM$",
+        "$q\\inQ$",
+        "$q\\inQ'$",
+        "$q\\inQ$",
+        "$\\delta(q,\\sigma)$"
+      ],
+      "math_target_core": [
+        "$M=\\tuple{Q,\\Sigma,q_0,\\delta}$",
+        "$M'=\\tuple{Q',\\Sigma',q_0',\\delta'}$",
+        "$M$",
+        "$M'$",
+        "$M\\frownM'$",
+        "$M$",
+        "$M'$",
+        "$Q\\capQ'=\\emptyset$",
+        "$M'$",
+        "$Q'$",
+        "$M\\frownM'$",
+        "$Q\\cupQ'$",
+        "$\\Sigma\\cup\\Sigma'$",
+        "$q_0$",
+        "$\\delta''$",
+        "\\[\\delta''(q,\\sigma)=\\begin{cases}\\delta(q,\\sigma)&\\\\\\delta'(q,\\sigma)&\\\\\\tuple{q_0',\\sigma,\\TMstay}&\\end{cases}\\]",
+        "$q\\inQ$",
+        "$M$",
+        "$q\\inQ'$",
+        "$M'$",
+        "$q\\inQ$",
+        "$M$",
+        "$\\sigma$",
+        "$M$",
+        "$M'$",
+        "$M$",
+        "$M$",
+        "$M$",
+        "$1$",
+        "$n$",
+        "$m$",
+        "$\\TMstroke$",
+        "$2(m+n)$",
+        "$\\TMstroke$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[rightof=B]{$q_2$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}}(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(A)(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(C)(C)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMstay}}(C);\\end{tikzpicture}\\]",
+        "$q_2$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[rightof=B]{$q_2$};\\node[state](D)[belowleftof=C]{$q_3$};\\node[state](E)[belowleftof=D]{$q_4$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}}(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(A)(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(C)(C)edgenode{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMleft}}(D)(D)edge[loopleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(D)edgenode[left,xshift=-2mm]{\\TMtrans{\\TMendtape}{\\TMendtape}{\\TMright}}(E);\\end{tikzpicture}\\]",
+        "$q_4$",
+        "$q_0$",
+        "$q_4$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[rightof=B]{$q_2$};\\node[state](D)[belowleftof=C]{$q_3$};\\node[state](E)[belowleftof=D]{$q_4$};\\node[state](2)[rightof=E]{$q_5$};\\node[state](3)[rightof=2]{$q_6$};\\node[state](4)[belowof=3]{$q_7$};\\node[state](5)[leftof=4]{$q_8$};\\node[state](6)[leftof=5]{$q_9$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}}(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(A)(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(C)(C)edgenode{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMleft}}(D)(D)edge[loopleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(D)edgenode[left,xshift=-2mm]{\\TMtrans{\\TMendtape}{\\TMendtape}{\\TMright}}(E)(E)edgenode{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMright}}(2)(2)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(2)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(3)(3)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(3)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMright}}(4)(4)edge[loopbelow]node{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMleft}}(4)edgenode{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(5)(5)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(5)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(6)(6)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(6)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(E);\\end{tikzpicture}\\]",
+        "$M$",
+        "$M'$",
+        "$f\\colon\\Nat^k\\to\\Nat$",
+        "$f'\\colon\\Nat\\to\\Nat$",
+        "$M\\frownM'$",
+        "$\\comp{f}{f'}$",
+        "$M$",
+        "$f(n_1,\\dots,n_k)=m$",
+        "$1$",
+        "$M'$",
+        "$f'(m)$",
+        "$1$",
+        "$M$",
+        "$M\\frownM$",
+        "$f(x)=x+2$",
+        "$q\\inQ$",
+        "$\\delta(q,\\sigma)$",
+        "$q\\inQ'$",
+        "$q\\inQ$",
+        "$\\delta(q,\\sigma)$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[rightof=B]{$q_2$};\\node[state](D)[belowleftof=C]{$q_3$};\\node[state](E)[belowleftof=D]{$q_4$};\\node[state](2)[rightof=E]{$q_5$};\\node[state](3)[rightof=2]{$q_6$};\\node[state](4)[belowof=3]{$q_7$};\\node[state](5)[leftof=4]{$q_8$};\\node[state](6)[leftof=5]{$q_9$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}}(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(C)(C)edgenode{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMleft}}(D)(D)edge[loopleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(D)edgenode[left,xshift=-2mm]{\\TMtrans{\\TMendtape}{\\TMendtape}{\\TMright}}(E)(E)edgenode{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMright}}(2)(2)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(2)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(3)(3)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(3)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMright}}(4)(4)edge[loopbelow]node{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMleft}}(4)edgenode{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(5)(5)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(5)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(6)(6)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(6)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(E);\\end{tikzpicture}\\]",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[rightof=B]{$q_2$};\\node[state](D)[belowleftof=C]{$q_3$};\\node[state](E)[belowleftof=D]{$q_4$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}}(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(C)(C)edgenode{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMleft}}(D)(D)edge[loopleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(D)edgenode[left,xshift=-2mm]{\\TMtrans{\\TMendtape}{\\TMendtape}{\\TMright}}(E);\\end{tikzpicture}\\]",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[rightof=B]{$q_2$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}}(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(C)(C)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMstay}}(C);\\end{tikzpicture}\\]"
+      ],
+      "math_delta_target_only": [
+        "$\\delta(q,\\sigma)$",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[rightof=B]{$q_2$};\\node[state](D)[belowleftof=C]{$q_3$};\\node[state](E)[belowleftof=D]{$q_4$};\\node[state](2)[rightof=E]{$q_5$};\\node[state](3)[rightof=2]{$q_6$};\\node[state](4)[belowof=3]{$q_7$};\\node[state](5)[leftof=4]{$q_8$};\\node[state](6)[leftof=5]{$q_9$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}}(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(A)(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(C)(C)edgenode{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMleft}}(D)(D)edge[loopleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(D)edgenode[left,xshift=-2mm]{\\TMtrans{\\TMendtape}{\\TMendtape}{\\TMright}}(E)(E)edgenode{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMright}}(2)(2)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(2)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(3)(3)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(3)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMright}}(4)(4)edge[loopbelow]node{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMleft}}(4)edgenode{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(5)(5)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(5)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(6)(6)edge[loopbelow]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(6)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMright}}(E);\\end{tikzpicture}\\]",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[rightof=B]{$q_2$};\\node[state](D)[belowleftof=C]{$q_3$};\\node[state](E)[belowleftof=D]{$q_4$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}}(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(A)(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(C)(C)edgenode{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMleft}}(D)(D)edge[loopleft]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMleft}}(D)edgenode[left,xshift=-2mm]{\\TMtrans{\\TMendtape}{\\TMendtape}{\\TMright}}(E);\\end{tikzpicture}\\]",
+        "\\[\\begin{tikzpicture}[->,>=stealth',shorten>=1pt,auto,nodedistance=2.8cm,semithick]\\tikzstyle{everystate}=[fill=none,draw=black,text=black]\\node[initial,state](A){$q_0$};\\node[state](B)[rightof=A]{$q_1$};\\node[state](C)[rightof=B]{$q_2$};\\path(A)edgenode{\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}}(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(A)(B)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMstroke}{\\TMright}}(B)edgenode{\\TMtrans{\\TMblank}{\\TMblank}{\\TMleft}}(C)(C)edge[loopabove]node{\\TMtrans{\\TMstroke}{\\TMblank}{\\TMstay}}(C);\\end{tikzpicture}\\]"
+      ],
+      "declared_source_correction_ids": [
+        "OLTETURMAC-007",
+        "OLTETURMAC-008"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2851,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: turing-machines\n% Chapter: machines-computations\n% Section: combining-machines",
+          "target_start": "% Part: turing-machines\n% Chapter: machines-computations\n% Section: combining-machines"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{tur}{mac}{cmb}\n\\olsection{Combining Turing Machines}",
+          "target_start": "\\olfileid{tur}{mac}{cmb}\n\\olsection{ట్యూరింగ్ యంత్రాలను కలపడం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{explain}\nThe examples of Turing machines we have seen so far have been fairly\nsimple in nature. But in ",
+          "target_start": "\\begin{explain}\nఇంతవరకు మనం చూసిన ట్యూరింగ్ యంత్రాల ఉదాహరణలు చాలా సరళమైనవి. కానీ నిజానికి,\nఏ ఆధునిక ప్రోగ్రామి"
+        },
+        {
+          "index": 6,
+          "source_start": "How do we combine Turing machines $M = \\tuple{Q, \\Sigma, q_0, \\delta}$\nand~$M' = \\tuple{Q', \\Sigma', q_0', \\de",
+          "target_start": "ట్యూరింగ్ యంత్రాలు $M = \\tuple{Q, \\Sigma, q_0, \\delta}$,\n~$M' = \\tuple{Q', \\Sigma', q_0', \\delta'}$లను ఎలా కలు"
+        },
+        {
+          "index": 7,
+          "source_start": "Note that unless the machine~$M$ is disciplined, we don't know where\nthe tape head is when $M$~halts, so the h",
+          "target_start": "యంత్రం~$M$ క్రమశిక్షితమైనది కాకపోతే, $M$ ఆగినప్పుడు టేపు శీర్షం ఎక్కడ ఉందో\nమనకు తెలియదని గమనించండి; అందువల్ల $"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{ex}\n\\emph{Combining Machines:} We'll design a machine which, when started\non input consisting of two bl",
+          "target_start": "\\begin{ex}\n\\emph{యంత్రాలను కలపడం:} పొడవులు $n$, $m$ అయిన రెండు $\\TMstroke$ల దిమ్మలతో\nకూడిన ఇన్‌పుట్‌పై ప్రారంభ"
+        },
+        {
+          "index": 9,
+          "source_start": "  \\node[initial,state] (A)              {$q_0$};\n  \\node[state]         (B) [right of=A] {$q_1$};\n  \\node[stat",
+          "target_start": "  \\node[initial,state] (A)              {$q_0$};\n  \\node[state]         (B) [right of=A] {$q_1$};\n  \\node[stat"
+        },
+        {
+          "index": 10,
+          "source_start": "  \\path (A) edge node {\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}} (B)\n            edge [loop above] node {\\TMtran",
+          "target_start": "  \\path (A) edge node {\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}} (B)\n            edge [loop above] node {\\TMtran"
+        },
+        {
+          "index": 11,
+          "source_start": "  \\node[initial,state] (A)              {$q_0$};\n  \\node[state]         (B) [right of=A] {$q_1$};\n  \\node[stat",
+          "target_start": "  \\node[initial,state] (A)              {$q_0$};\n  \\node[state]         (B) [right of=A] {$q_1$};\n  \\node[stat"
+        },
+        {
+          "index": 12,
+          "source_start": "  \\path (A) edge node {\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}} (B)\n            edge [loop above] node {\\TMtran",
+          "target_start": "  \\path (A) edge node {\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}} (B)\n            edge [loop above] node {\\TMtran"
+        },
+        {
+          "index": 13,
+          "source_start": "  \\path (A) edge node {\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}} (B)\n            edge [loop above] node {\\TMtran",
+          "target_start": "  \\path (A) edge node {\\TMtrans{\\TMblank}{\\TMstroke}{\\TMstay}} (B)\n            edge [loop above] node {\\TMtran"
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{prop}\n    If $M$ and $M'$ are disciplined and compute the functions $f\\colon\n    \\Nat^k \\to \\Nat$ and $",
+          "target_start": "\\begin{prop}\n    $M$, $M'$లు క్రమశిక్షితమైనవై, వరుసగా ప్రమేయాలు $f\\colon\n    \\Nat^k \\to \\Nat$, $f'\\colon \\Nat "
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{proof}\n    Since $M$ is disciplined, when it halts with\n    output~$f(n_1,\\dots,n_k) = m$, the head is ",
+          "target_start": "\\begin{proof}\n    $M$ క్రమశిక్షితమైనది కనుక, అవుట్‌పుట్~$f(n_1,\\dots,n_k) = m$తో\n    ఆగినప్పుడు శీర్షం గడి~$1$"
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{prob}\n    Give a disciplined Turing machine computing $f(x) = x+2$ by taking\n    the machine~$M$ from \\",
+          "target_start": "\\begin{prob}\n    \\cref{tur:mac:dis:prob:disc-succ}లోని యంత్రం~$M$ను తీసుకుని\n    $M \\frown M$ను నిర్మించడం ద్వ"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{tur}{mac}{cmb}",
+        "\\olref{fig:combined}",
+        "\\ollabel{fig:combined}",
+        "\\olref[dis]{defn:disciplined}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{tur}{mac}{cmb}",
+        "\\olref{fig:combined}",
+        "\\ollabel{fig:combined}",
+        "\\olref[dis]{defn:disciplined}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0262",
+      "source_path": "content/turing-machines/machines-computations/variants.tex",
+      "source_sha256": "d751ce8370fa72e3d98762ecf2f928e19b9bf1c94cc17505221da0eec922d35e",
+      "translation_sha256": "b06521b3fc6e29fe510690d890b35ea79b71a4bf94ccc2bf573e65bca812ad34",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{tur}{mac}{var}",
+        "\\olref[hal]{sec}",
+        "\\olref[una]{ex:mover}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{tur}{mac}{var}",
+        "\\olref[hal]{sec}",
+        "\\olref[una]{ex:mover}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "$\\TMstay$",
+        "$q$",
+        "$\\sigma$",
+        "$\\delta(q,\\sigma)$",
+        "$\\tuple{q,\\sigma}$",
+        "$\\tuple{q',\\sigma',D}$",
+        "$\\tuple{q,\\sigma,q',\\sigma',D}$",
+        "$\\tuple{q,\\sigma,q'',\\sigma'',D'}$",
+        "$0$",
+        "$\\delta(q,\\TMendtape)=\\tuple{q',\\sigma,\\TMleft}$",
+        "$\\TMendtape$",
+        "$\\TMendtape$",
+        "$0$",
+        "$\\TMendtape'$",
+        "$\\TMblank$",
+        "$\\TMendtape$",
+        "$1$",
+        "$2$"
+      ],
+      "math_target_core": [
+        "$\\TMstroke$",
+        "$\\TMblank$",
+        "$\\TMstay$",
+        "$q$",
+        "$\\sigma$",
+        "$\\delta(q,\\sigma)$",
+        "$\\tuple{q,\\sigma}$",
+        "$\\tuple{q',\\sigma',D}$",
+        "$\\tuple{q,\\sigma,q',\\sigma',D}$",
+        "$\\tuple{q,\\sigma,q'',\\sigma'',D'}$",
+        "$0$",
+        "$\\delta(q,\\TMendtape)=\\tuple{q',\\sigma,\\TMleft}$",
+        "$\\TMendtape$",
+        "$0$",
+        "$\\TMendtape$",
+        "$\\TMendtape'$",
+        "$\\TMblank$",
+        "$\\TMendtape$",
+        "$1$",
+        "$2$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 3093,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: turing-machines\n% Chapter: machines-computations\n% Section: variants",
+          "target_start": "% Part: turing-machines\n% Chapter: machines-computations\n% Section: variants"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{tur}{mac}{var}\n\\olsection{Variants of Turing Machines}",
+          "target_start": "\\olfileid{tur}{mac}{var}\n\\olsection{ట్యూరింగ్ యంత్రాల రూపాంతరాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "There are in fact many possible ways to define Turing machines, of\nwhich ours is only one.  In some ways, our ",
+          "target_start": "ట్యూరింగ్ యంత్రాలను నిర్వచించడానికి నిజానికి అనేక సాధ్యమైన పద్ధతులు ఉన్నాయి;\nమనది వాటిలో ఒకటి మాత్రమే. కొన్ని "
+        },
+        {
+          "index": 6,
+          "source_start": "This last relaxation of the definition is particularly interesting.\nIn our definition, when the machine is in ",
+          "target_start": "నిర్వచనానికి చేసిన ఈ చివరి సడలింపు ప్రత్యేకంగా ఆసక్తికరమైనది. మన నిర్వచనంలో,\nయంత్రం స్థితి~$q$లో సంకేతం~$\\sigm"
+        },
+        {
+          "index": 7,
+          "source_start": "There are also different conventions for when a Turing machine halts:\nwe say it halts when the transition func",
+          "target_start": "ట్యూరింగ్ యంత్రం ఎప్పుడు ఆగుతుందనే విషయంలో కూడా వేర్వేరు సంప్రదాయాలు ఉన్నాయి:\nసంక్రమణ ప్రమేయం నిర్వచితం కానప్ప"
+        },
+        {
+          "index": 8,
+          "source_start": "There are also different ways of representing numbers (and hence the\ninput-output function computed by a Turin",
+          "target_start": "సంఖ్యలకు ప్రాతినిధ్యం వహించే పద్ధతులు (తద్వారా ట్యూరింగ్ యంత్రం గణించే\nఇన్‌పుట్--అవుట్‌పుట్ ప్రమేయాలు) కూడా వే"
+        },
+        {
+          "index": 9,
+          "source_start": "Now here is an interesting fact: none of these variations matters as\nto which functions are Turing computable.",
+          "target_start": "ఇప్పుడు ఒక ఆసక్తికరమైన వాస్తవం: ఏ ప్రమేయాలు ట్యూరింగ్-గణనీయాలు అనే విషయంలో\nఈ రూపాంతరాల్లో ఏదీ తేడా కలిగించదు. "
+        },
+        {
+          "index": 10,
+          "source_start": "We won't go into the details of verifying this. Here's just one\nexample: we gain no additional computing power",
+          "target_start": "దీనిని నిర్ధారించే వివరాల్లోకి మనం వెళ్లం. ఒకే ఉదాహరణ ఇక్కడ ఉంది: రెండు\nదిశల్లో అనంతమైన టేపును లేదా అనేక టేపుల"
+        },
+        {
+          "index": 11,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{tur}{mac}{var}",
+        "\\olref[hal]{sec}",
+        "\\olref[una]{ex:mover}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{tur}{mac}{var}",
+        "\\olref[hal]{sec}",
+        "\\olref[una]{ex:mover}"
+      ],
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0263",
+      "source_path": "content/turing-machines/machines-computations/church-turing-thesis.tex",
+      "source_sha256": "a9073c7499f26e2ae151d434d24aa8e4a9789f84f65a43568a75aab78d49a421",
+      "translation_sha256": "f2da4ccaf14daa353a1c30255b444b1ef91615e30ed08b020ab7535819654e2b",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{tur}{mac}{ctt}"
+      ],
+      "identifiers_target": [
+        "\\olfileid{tur}{mac}{ctt}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1542,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: computability\n% Chapter: tm-computations\n% Section: church-turing-thesis",
+          "target_start": "% Part: computability\n% Chapter: tm-computations\n% Section: church-turing-thesis"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{tur}{mac}{ctt}\n\\olsection{The Church--Turing Thesis}",
+          "target_start": "\\olfileid{tur}{mac}{ctt}\n\\olsection{చర్చ్--ట్యూరింగ్ సిద్ధాంతప్రతిపాదన}"
+        },
+        {
+          "index": 5,
+          "source_start": "Turing machines are supposed to be a precise replacement for the\nconcept of an effective procedure. Turing tho",
+          "target_start": "ప్రభావక ప్రక్రియ అనే భావనకు కచ్చితమైన ప్రత్యామ్నాయంగా ట్యూరింగ్ యంత్రాలు\nఉద్దేశించబడ్డాయి. ప్రభావక ప్రక్రియ భా"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}[Church--Turing thesis]\nThe \\emph{Church--Turing Thesis} states that anything computable via\nan ef",
+          "target_start": "\\begin{defn}[చర్చ్--ట్యూరింగ్ సిద్ధాంతప్రతిపాదన]\nప్రభావక ప్రక్రియతో గణించగల ఏదైనా ట్యూరింగ్-గణనీయం అని\n\\emph{చ"
+        },
+        {
+          "index": 7,
+          "source_start": "The Church--Turing thesis is appealed to in two ways.  The first kind\nof use of the Church--Turing thesis is a",
+          "target_start": "చర్చ్--ట్యూరింగ్ సిద్ధాంతప్రతిపాదనను రెండు విధాలుగా ఆశ్రయిస్తారు. మొదటి రకమైన\nవాడకం బద్ధకానికి ఒక సాకు. ఏదో ఒక"
+        },
+        {
+          "index": 8,
+          "source_start": "The other use of the Church--Turing thesis is more philosophically\ninteresting.  It can be shown that there ar",
+          "target_start": "చర్చ్--ట్యూరింగ్ సిద్ధాంతప్రతిపాదన యొక్క రెండవ వాడకం తాత్త్వికంగా మరింత\nఆసక్తికరమైనది. ట్యూరింగ్ యంత్రాలు గణిం"
+        },
+        {
+          "index": 9,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{tur}{mac}{ctt}"
+      ],
+      "protected_target": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{tur}{mac}{ctt}"
+      ],
+      "protected_identifier_parity": true
+    }
+  ]
+}

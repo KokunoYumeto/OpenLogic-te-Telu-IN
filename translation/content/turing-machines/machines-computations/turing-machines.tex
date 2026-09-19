@@ -1,0 +1,60 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: turing-machines
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{tur}
+\olsection{ట్యూరింగ్ యంత్రాలు}
+
+\begin{explain}
+దేనిని ట్యూరింగ్ యంత్రం అనాలో చెప్పే ఆచారబద్ధ నిర్వచనం అమూర్తంగా
+కనిపిస్తుంది; కానీ నిజానికి అది సరళమైనదే: ట్యూరింగ్ యంత్రపు పనితీరును
+నిర్దేశించడానికి అవసరమైన సమాచారమంతటినీ ఒకే గణిత నిర్మాణంలో అది కూర్చుతుంది.
+ఈ సమాచారంలో (1) యంత్రం ఏ స్థితుల్లో ఉండగలదు, (2) టేపుపై ఏ సంకేతాలకు అనుమతి
+ఉంది, (3) యంత్రం ఏ స్థితిలో ప్రారంభం కావాలి, (4) యంత్రపు నిర్దేశ సమితి ఏమిటి
+అనేవి ఉంటాయి.
+\end{explain}
+
+\begin{defn}[ట్యూరింగ్ యంత్రం]
+\emph{ట్యూరింగ్ యంత్రం} $M$ అనేది కింది వాటితో కూడిన
+$\langle Q, \Sigma, q_0, \delta\rangle$ అనే జతక్రమం:
+\begin{enumerate}
+\item పరిమిత \emph{స్థితుల} సమితి~$Q$,
+\item $\TMendtape$, $\TMblank$లను కలిగి ఉండే పరిమిత \emph{వర్ణమాల} $\Sigma$,
+\item ఒక \emph{ప్రారంభ స్థితి}~$q_0 \in Q$,
+\item పరిమిత \emph{నిర్దేశ సమితి}~$\delta\colon Q \times \Sigma
+  \pto Q \times \Sigma \times \{\TMleft, \TMright, \TMstay\}$.
+\end{enumerate}
+పాక్షిక ప్రమేయం~$\delta$ను $M$ యొక్క \emph{సంక్రమణ ప్రమేయం} అని కూడా అంటారు.
+\end{defn}
+
+\begin{explain}
+టేపు ఒకే దిశలో అనంతంగా ఉంటుందని ఊహిస్తాం. అందువల్ల టేపు యొక్క ఎడమ చివర
+గుర్తుగా ప్రత్యేక సంకేతం~$\TMendtape$ను నిర్దేశించడం ఉపయోగకరం. ట్యూరింగ్ యంత్ర
+ప్రోగ్రాములు టేపు నుండి ``బయటకు వెళ్లే ప్రమాదంలో'' ఎప్పుడు ఉన్నాయో తెలుసుకోవడం
+దీనితో సులభమవుతుంది. ఈ సంకేతంపై మరొకటి ఎన్నటికీ వ్రాయరాదని, అంటే
+$\delta(q,\TMendtape)$ నిర్వచితమైతే
+$\delta(q,\TMendtape) = \tuple{q', \TMendtape, D}$ అని ఊహించవచ్చు; ఇక్కడ
+$D \in \{\TMleft,\TMright,\TMstay\}$. కొన్ని
+పాఠ్యపుస్తకాలు ఇలా చేస్తాయి; మనం చేయం. మీ ట్యూరింగ్ యంత్రాన్ని నిర్మించేటప్పుడు
+అది $\TMendtape$పై ఎన్నటికీ మరొకటి వ్రాయకుండా జాగ్రత్తపడవచ్చు. అంతేకాకుండా,
+అలా వ్రాయడానికి అనుమతించడం ఉపయోగకరమైన వెసులుబాటును ఇచ్చే సందర్భాలూ ఉన్నాయి.
+\sourcecorrection{OLTETURMAC-002}{ఆంగ్ల మూలం టేపు-అంత సంకేతాన్ని కాపాడే త్రయంలో దిశను నిర్వచించని $x$తో సూచించింది. ఈ అధ్యాయం అంతటా దిశకు వాడిన $D$ను పునరుద్ధరించి, దాని మూడు సాధ్యమైన విలువలను స్పష్టం చేశాం.}
+\end{explain}
+
+\begin{ex}
+\emph{సరి యంత్రం:} ఆచారబద్ధంగా సరి యంత్రం
+$\tuple{Q, \Sigma, q_0, \delta}$ అనే చతుష్టయం; ఇక్కడ
+\begin{align*}
+Q & = \{ q_0, q_1 \} \\
+\Sigma & = \{ \TMendtape, \TMblank, \TMstroke \}, \\
+\delta(q_0, \TMstroke) & = \tuple{q_1, \TMstroke, \TMright},\\
+\delta(q_1, \TMstroke) & = \tuple{q_0, \TMstroke, \TMright},\\
+\delta(q_1, \TMblank)  & = \tuple{q_1, \TMblank, \TMright}.
+\end{align*}
+\end{ex}
+
+\end{document}

@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 248 of 722 draft units**. This log contains 67 terminology/sense decisions and 198 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 260 of 722 draft units**. This log contains 68 terminology/sense decisions and 206 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1616,6 +1616,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Please double-check: Please double-check whether “గణనీయంకాని సమితి / ఆగే సమితి / స్వయంగా ఆగే సమితి / సంయోగం, ఛేదనం కింద సంవృతత / పూరకం / అనేకం-ఒకటి తగ్గింపు, తగ్గించదగినత / ఒకటి-ఒకటి తగ్గించదగినత / ట్యూరింగ్ తగ్గించదగినత / సంపూర్ణ గణనీయంగా లెక్కించదగిన సమితి / ఒరాకిల్ / సర్వనిర్వచితత్వం / సూచిక సమితి / రైస్ సిద్ధాంతం / స్థిరబిందు సిద్ధాంతం / స్వీయ-సూచన” is idiomatic and technically standard for “non-computable set / halting set / self-halting set / closure under union and intersection / complement / many-one reduction and reducibility / one-one reducibility / Turing reducibility / complete computably enumerable set / oracle / totality / index set / Rice's theorem / fixed-point theorem / self-reference” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
+## REV-TE-T068 — Turing machine / Turing-machine computation / model of computation / tape / read-write head / square / state / state diagram / configuration / run / alphabet / instruction set / transition function / initial state / halting state / reject state / unary representation / doubler / disciplined machine / combined machine / nondeterministic Turing machine / effective procedure / Church--Turing thesis / pseudocode
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: ట్యూరింగ్ యంత్రం / ట్యూరింగ్ యంత్ర గణన / గణనా నమూనా / టేపు / చదువు--వ్రాత శీర్షం / గడి / స్థితి / స్థితి రేఖాచిత్రం / స్థితివిన్యాసం / నడక / వర్ణమాల / నిర్దేశ సమితి / సంక్రమణ ప్రమేయం / ప్రారంభ స్థితి / ఆగే స్థితి / తిరస్కరణ స్థితి / ఏకాంక ప్రాతినిధ్యం / ద్విగుణక యంత్రం / క్రమశిక్షిత యంత్రం / సంయుక్త యంత్రం / అనిర్ణీత ట్యూరింగ్ యంత్రం / ప్రభావక ప్రక్రియ / చర్చ్--ట్యూరింగ్ సిద్ధాంతప్రతిపాదన / సూడోకోడ్
+
+- Exact implementation: OLP-0254; turing-machines/machines-computations/introduction; content/turing-machines/machines-computations/introduction.tex:12-27 ↔ translation/content/turing-machines/machines-computations/introduction.tex:12-25 (OLP-0254-B005); printed/PDF page pending; OLP-0255; turing-machines/machines-computations/representing-tms; content/turing-machines/machines-computations/representing-tms.tex:12-23 ↔ translation/content/turing-machines/machines-computations/representing-tms.tex:12-22 (OLP-0255-B005); printed/PDF page pending; OLP-0256; turing-machines/machines-computations/turing-machines; content/turing-machines/machines-computations/turing-machines.tex:22-35 ↔ translation/content/turing-machines/machines-computations/turing-machines.tex:21-32 (OLP-0256-B006); printed/PDF page pending; OLP-0257; turing-machines/machines-computations/configuration; content/turing-machines/machines-computations/configuration.tex:25-38 ↔ translation/content/turing-machines/machines-computations/configuration.tex:24-36 (OLP-0257-B006); printed/PDF page pending; OLP-0257; turing-machines/machines-computations/configuration; content/turing-machines/machines-computations/configuration.tex:84-87 ↔ translation/content/turing-machines/machines-computations/configuration.tex:82-87 (OLP-0257-B011); printed/PDF page pending; OLP-0258; turing-machines/machines-computations/unary-numbers; content/turing-machines/machines-computations/unary-numbers.tex:9-10 ↔ translation/content/turing-machines/machines-computations/unary-numbers.tex:9-10 (OLP-0258-B004); printed/PDF page pending; OLP-0259; turing-machines/machines-computations/halting-states; content/turing-machines/machines-computations/halting-states.tex:12-16 ↔ translation/content/turing-machines/machines-computations/halting-states.tex:12-15 (OLP-0259-B005); printed/PDF page pending; OLP-0260; turing-machines/machines-computations/disciplined-machines; content/turing-machines/machines-computations/disciplined-machines.tex:27-35 ↔ translation/content/turing-machines/machines-computations/disciplined-machines.tex:25-34 (OLP-0260-B006); printed/PDF page pending; OLP-0261; turing-machines/machines-computations/combining-machines; content/turing-machines/machines-computations/combining-machines.tex:25-50 ↔ translation/content/turing-machines/machines-computations/combining-machines.tex:23-48 (OLP-0261-B006); printed/PDF page pending; OLP-0262; turing-machines/machines-computations/variants; content/turing-machines/machines-computations/variants.tex:29-39 ↔ translation/content/turing-machines/machines-computations/variants.tex:27-36 (OLP-0262-B006); printed/PDF page pending; OLP-0263; turing-machines/machines-computations/church-turing-thesis; content/turing-machines/machines-computations/church-turing-thesis.tex:12-21 ↔ translation/content/turing-machines/machines-computations/church-turing-thesis.tex:12-19 (OLP-0263-B005); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P028, PDF 92, printed 85, Unary predicates, binary relations and quantifier classification; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P034, PDF 308, printed 301, Main point 5, Cartesian product definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P005 was visually rechecked for native natural-number exposition; TE-P008, TE-P010--TE-P011 and TE-P034 were rechecked for sets, ordered pairs, relations, functions, inverse and composition; TE-P003 and TE-P032 were rechecked for procedural explanation, deduction and proof register; TE-P018 supports formal symbolic-logic prose. These witnesses do not directly attest Turing-machine hardware metaphors, configurations, transition programs, disciplined or nondeterministic machines, effective procedures or the Church--Turing thesis. The frozen state diagrams, tape conventions, transition tuples, configuration sequences, unary input/output definitions and equivalence claim in OLP-0252--OLP-0263 control those exact senses; TE-T011, TE-T020, TE-T024, TE-T028, TE-T064--TE-T067 supply earlier reversible choices. ట్యూరింగ్ is the source eponym; టేపు and సూడోకోడ్ are explicit technical borrowings in explanatory contexts. State symbols, movement letters and machine names remain protected formal notation; no unexplained English technical headword remains in reader-facing prose
+
+- Alternatives: use transparent Telugu compounds for the machine, transition, configuration and effective-procedure vocabulary, with exact senses fixed by the adjacent tuples, diagrams and definitions (chosen); leave the specialized machine vocabulary in untranslated English reader prose (rejected); collapse state, configuration and run into one undifferentiated term (rejected because the definitions distinguish them); claim direct native attestation for Turing-machine components, nondeterminism or the Church--Turing thesis (rejected because the frozen definitions and equivalence claim control those senses)
+
+- Uncertainty: Low semantic uncertainty because the machine, transition, configuration, computation and combination notions are defined by explicit tuples, diagrams and equations; medium to high nomenclatural uncertainty for machine-component compounds, nondeterminism and effective-procedure terminology
+
+- Please double-check: Please double-check whether “ట్యూరింగ్ యంత్రం / ట్యూరింగ్ యంత్ర గణన / గణనా నమూనా / టేపు / చదువు--వ్రాత శీర్షం / గడి / స్థితి / స్థితి రేఖాచిత్రం / స్థితివిన్యాసం / నడక / వర్ణమాల / నిర్దేశ సమితి / సంక్రమణ ప్రమేయం / ప్రారంభ స్థితి / ఆగే స్థితి / తిరస్కరణ స్థితి / ఏకాంక ప్రాతినిధ్యం / ద్విగుణక యంత్రం / క్రమశిక్షిత యంత్రం / సంయుక్త యంత్రం / అనిర్ణీత ట్యూరింగ్ యంత్రం / ప్రభావక ప్రక్రియ / చర్చ్--ట్యూరింగ్ సిద్ధాంతప్రతిపాదన / సూడోకోడ్” is idiomatic and technically standard for “Turing machine / Turing-machine computation / model of computation / tape / read-write head / square / state / state diagram / configuration / run / alphabet / instruction set / transition function / initial state / halting state / reject state / unary representation / doubler / disciplined machine / combined machine / nondeterministic Turing machine / effective procedure / Church--Turing thesis / pseudocode” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
 ## REV-OLFUN-001 — OLFUN-001
 
 - Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
@@ -2362,27 +2386,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 ## REV-OLTEINF-005 — OLTEINF-005
 
-- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+- Status: historical_error_classification_rejected_equivalent_notation_qa_passed_disclosure_wording_open_for_optional_review_no_hold
 
 - Locale/script: te-Telu-IN / Telu
 
 - Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
 
-- Chosen wording/treatment: replaced the malformed nested cardinal equality by B equinumerous with C; adjacent sourcecorrection discloses the repair
+- Chosen wording/treatment: presents the valid source chain as the two explicit comparisons A equinumerous with B and B equinumerous with C for readability; the adjacent sourcecorrection discloses the equivalent notation and rejects the prior error classification
 
-- Exact implementation: OLP-0054; sets-functions-relations/infinite/card-sb; lines 49-49; mapped segment within audited scope lines 49-53, cardinal sandwich helper conclusion ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:53-53 (OLP-0054-B010); printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; lines 51-53; mapped segment within audited scope lines 49-53, cardinal sandwich helper conclusion ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:55-62 (OLP-0054-B011); printed/PDF page pending
+- Exact implementation: OLP-0054; sets-functions-relations/infinite/card-sb; lines 49-49; mapped segment within audited scope lines 49-53, cardinal sandwich helper conclusion ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:53-53 (OLP-0054-B010); printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; lines 51-53; mapped segment within audited scope lines 49-53, cardinal sandwich helper conclusion ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:55-64 (OLP-0054-B011); printed/PDF page pending
 
-- Authorities actually checked: OLTEINF-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+- Authorities actually checked: OLTEINF-20260905; undefined; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
-- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+- Not checked/not found: No independent human subject expert has reviewed the Telugu qualification wording yet; the equivalent notation and false-positive disposition were checked by the consolidation review and correction-aware structural QA.
 
-- Rationale: replaced the malformed nested cardinal equality by B equinumerous with C; adjacent sourcecorrection discloses the repair
+- Rationale: presents the valid source chain as the two explicit comparisons A equinumerous with B and B equinumerous with C for readability; the adjacent sourcecorrection discloses the equivalent notation and rejects the prior error classification
 
-- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+- Alternatives: Retain the valid nested cardinality construction verbatim (viable, but the explicit pair is clearer in the target).; Present the two equivalent explicit comparisons and disclose the rejected historical classification (chosen).
 
-- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+- Uncertainty: Low for mathematical equivalence and the rejected-false-positive disposition; optional review remains useful for the clarity of its Telugu qualification.
 
-- Please double-check: Please double-check: Does the repaired helper proposition conclude B is equinumerous with C, without the malformed nested cardinality expression?
+- Please double-check: Please double-check that the qualified note correctly explains the valid nested cardinality chain and that the two explicit target comparisons are mathematically equivalent without retaining the rejected source-error claim.
 
 ## REV-OLTEINF-006 — OLTEINF-006
 
@@ -2394,7 +2418,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: added the missing ran(g)-subset-B direction before the source's B-subset-ran(g) direction; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0054; sets-functions-relations/infinite/card-sb; lines 55-68; mapped segment within audited scope lines 55-83, range-equality proof ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:64-77 (OLP-0054-B012); printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; lines 70-73; mapped segment within audited scope lines 55-83, range-equality proof ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:79-83 (OLP-0054-B013); printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; lines 75-78; mapped segment within audited scope lines 55-83, range-equality proof ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:85-89 (OLP-0054-B014); printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; lines 80-83; mapped segment within audited scope lines 55-83, range-equality proof ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:91-104 (OLP-0054-B015); printed/PDF page pending
+- Exact implementation: OLP-0054; sets-functions-relations/infinite/card-sb; lines 55-68; mapped segment within audited scope lines 55-83, range-equality proof ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:66-79 (OLP-0054-B012); printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; lines 70-73; mapped segment within audited scope lines 55-83, range-equality proof ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:81-85 (OLP-0054-B013); printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; lines 75-78; mapped segment within audited scope lines 55-83, range-equality proof ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:87-91 (OLP-0054-B014); printed/PDF page pending; OLP-0054; sets-functions-relations/infinite/card-sb; lines 80-83; mapped segment within audited scope lines 55-83, range-equality proof ↔ translation/content/sets-functions-relations/infinite/card-sb.tex:93-106 (OLP-0054-B015); printed/PDF page pending
 
 - Authorities actually checked: OLTEINF-20260905; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -6367,3 +6391,195 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check that the fixed-point application begins with arbitrary partial computable f, matching the theorem and the partial construction of g.
+
+## REV-OLTETURMAC-001 — OLTETURMAC-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: named q_0 explicitly in the inconsistent sentence; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0255; turing-machines/machines-computations/representing-tms; lines 82-92, first traced configuration ↔ translation/content/turing-machines/machines-computations/representing-tms.tex:83-89 (OLP-0255-B014); printed/PDF page pending
+
+- Authorities actually checked: OLTETURMAC-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: named q_0 explicitly in the inconsistent sentence; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURMAC-001 is mathematically precise and idiomatic.
+
+## REV-OLTETURMAC-002 — OLTETURMAC-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used D and stated its three allowed values; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0256; turing-machines/machines-computations/turing-machines; lines 42-44, tape-end preservation convention ↔ translation/content/turing-machines/machines-computations/turing-machines.tex:39-45 (OLP-0256-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTETURMAC-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used D and stated its three allowed values; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURMAC-002 is mathematically precise and idiomatic.
+
+## REV-OLTETURMAC-003 — OLTETURMAC-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: stated that input begins immediately to the right of the left-end marker; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0257; turing-machines/machines-computations/configuration; lines 58-60, concatenation explanation ↔ translation/content/turing-machines/machines-computations/configuration.tex:55-58 (OLP-0257-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTETURMAC-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: stated that input begins immediately to the right of the left-end marker; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURMAC-003 is mathematically precise and idiomatic.
+
+## REV-OLTETURMAC-004 — OLTETURMAC-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: allowed finite or infinite runs and applied the one-step condition only where a successor is present; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0257; turing-machines/machines-computations/configuration; lines 84-87; mapped segment within audited scope lines 84-91, run and halting definitions ↔ translation/content/turing-machines/machines-computations/configuration.tex:82-87 (OLP-0257-B011); printed/PDF page pending; OLP-0257; turing-machines/machines-computations/configuration; lines 89-95; mapped segment within audited scope lines 84-91, run and halting definitions ↔ translation/content/turing-machines/machines-computations/configuration.tex:89-95 (OLP-0257-B012); printed/PDF page pending
+
+- Authorities actually checked: OLTETURMAC-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: allowed finite or infinite runs and applied the one-step condition only where a successor is present; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURMAC-004 is mathematically precise and idiomatic.
+
+## REV-OLTETURMAC-005 — OLTETURMAC-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: retargeted the q_0 stroke loop to q_0; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0258; turing-machines/machines-computations/unary-numbers; lines 55-59, addition-machine state diagram ↔ translation/content/turing-machines/machines-computations/unary-numbers.tex:53-62 (OLP-0258-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTETURMAC-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: retargeted the q_0 stroke loop to q_0; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURMAC-005 is mathematically precise and idiomatic.
+
+## REV-OLTETURMAC-006 — OLTETURMAC-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: retargeted the copied q_0 stroke loop to q_0; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0260; turing-machines/machines-computations/disciplined-machines; lines 66-70, disciplined addition-machine diagram ↔ translation/content/turing-machines/machines-computations/disciplined-machines.tex:63-74 (OLP-0260-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTETURMAC-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: retargeted the copied q_0 stroke loop to q_0; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURMAC-006 is mathematically precise and idiomatic.
+
+## REV-OLTETURMAC-007 — OLTETURMAC-007
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restricted the first case to defined component transitions; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0261; turing-machines/machines-computations/combining-machines; lines 37-43, definition of delta double-prime ↔ translation/content/turing-machines/machines-computations/combining-machines.tex:35-43 (OLP-0261-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTETURMAC-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restricted the first case to defined component transitions; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURMAC-007 is mathematically precise and idiomatic.
+
+## REV-OLTETURMAC-008 — OLTETURMAC-008
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: retargeted all three copied q_0 stroke loops to q_0; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0261; turing-machines/machines-computations/combining-machines; lines 74-89; mapped segment within audited scope lines 74-78, 97-101 and 127-131, three addition-stage diagrams ↔ translation/content/turing-machines/machines-computations/combining-machines.tex:71-86 (OLP-0261-B010); printed/PDF page pending; OLP-0261; turing-machines/machines-computations/combining-machines; lines 97-125; mapped segment within audited scope lines 74-78, 97-101 and 127-131, three addition-stage diagrams ↔ translation/content/turing-machines/machines-computations/combining-machines.tex:94-121 (OLP-0261-B012); printed/PDF page pending; OLP-0261; turing-machines/machines-computations/combining-machines; lines 127-150; mapped segment within audited scope lines 74-78, 97-101 and 127-131, three addition-stage diagrams ↔ translation/content/turing-machines/machines-computations/combining-machines.tex:123-147 (OLP-0261-B013); printed/PDF page pending
+
+- Authorities actually checked: OLTETURMAC-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: retargeted all three copied q_0 stroke loops to q_0; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTETURMAC-008 is mathematically precise and idiomatic.

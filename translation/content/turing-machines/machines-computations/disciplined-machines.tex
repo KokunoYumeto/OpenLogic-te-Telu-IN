@@ -1,0 +1,95 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: well-behaved-machines
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{dis}
+\olsection{క్రమశిక్షిత యంత్రాలు}
+
+\begin{explain}
+విభాగం \olref[hal]{sec}లో, నిర్దేశిత ఏకైక ఆగే స్థితి~$h$ గల ట్యూరింగ్
+యంత్రాలను పరిశీలించాం---అలాంటి యంత్రాలు అసలు ఆగితే, స్థితి~$h$లోనే ఆగుతాయని
+హామీ ఉంటుంది. ఈ విధంగా, ఏకైక ఆగే స్థితి గల యంత్రాలు మనం సాధారణంగా అనుమతించే
+ట్యూరింగ్ యంత్రాల కంటే మరింత ``క్రమశిక్షితమైనవి.'' ట్యూరింగ్ యంత్రాల ప్రవర్తనపై
+ఇతర నియంత్రణలను కూడా విధించవచ్చు. ఉదాహరణకు, ట్యూరింగ్ యంత్రాలు గడి~$0$పైని
+టేపు-అంత గుర్తును చెరపడాన్నిగానీ, గడి~$0$ నుండి ఎడమకు కదలడానికి
+ప్రయత్నించడాన్నిగానీ మనం నిషేధించలేదు. (ఈ సందర్భంలో శీర్షం గడి~$0$పైనే
+ఉంటుందని మన నిర్వచనం చెబుతుంది; ఇతర నిర్వచనాల్లో యంత్రం ఆగుతుంది.) అలాగే,
+ఒక ట్యూరింగ్ యంత్రం అసలు ఆగితే గడి~$1$పై ఆగుతుందని ఊహించగలగడం కొన్నిసార్లు
+కోరదగినది.
+\end{explain}
+
+\begin{defn}\ollabel{defn:disciplined}
+ట్యూరింగ్ యంత్రం~$M$ కింది షరతులను నెరవేరిస్తే, అప్పుడే మాత్రమే అది
+\emph{క్రమశిక్షితమైనది}:
+\begin{enumerate}
+    \item దానికి నిర్దేశిత ఏకైక ఆగే స్థితి~$h$ ఉంటుంది,
+    \item అది అసలు ఆగితే, గడి~$1$ను చదువుతుండగా ఆగుతుంది,
+    \item గడి~$0$పైని $\TMendtape$ సంకేతాన్ని ఎన్నటికీ చెరపదు, అలాగే
+    \item గడి~$0$ నుండి ఎడమకు కదలడానికి ఎన్నటికీ ప్రయత్నించదు.
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+ఏ ట్యూరింగ్ యంత్రాన్నైనా అదే ప్రవర్తన కలిగి, నిర్దేశిత ఆగే స్థితి గల యంత్రంగా
+మార్చవచ్చని ఇప్పటికే చర్చించాం. దీనికోసం కొత్త స్థితి~$h$ను చేర్చి, మొదటి
+$\delta$ నిర్వచితం కాని ప్రతి జత $\tuple{q,\sigma}$కు
+$\delta(q, \sigma) = \tuple{h, \sigma, N}$ అనే నిర్దేశాన్ని చేరిస్తే చాలు.
+నిరూపించడం శ్రమతో కూడుకున్నప్పటికీ, ఏ ట్యూరింగ్ యంత్రం~$M$నైనా అవే
+ఇన్‌పుట్‌లపై ఆగి, అదే అవుట్‌పుట్‌ను ఇచ్చే క్రమశిక్షిత ట్యూరింగ్ యంత్రం~$M'$గా
+మార్చవచ్చనేది నిజం. ఉదాహరణకు, ట్యూరింగ్ యంత్రం ఆగినప్పుడు గడి~$1$పై లేకపోతే,
+శీర్షం టేపు-అంత గుర్తును కనుగొనే వరకు ఎడమకు కదిలి, తరువాత ఒక గడి కుడికి కదిలి,
+అప్పుడు ఆగేలా కొన్ని నిర్దేశాలను చేర్చవచ్చు. ఇతర షరతులను ఎలా నిర్వహించవచ్చో
+ఆలోచించే పనిని మీకే వదిలేస్తాం.
+\end{explain}
+
+\begin{ex}
+    \olref{fig:adder-disc}లో, \olref[una]{ex:adder}లోని కూడిక యంత్రాన్ని
+    క్రమశిక్షిత యంత్రంగా మారుస్తాం.
+    \begin{figure}\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [below right of=B] {$q_2$};
+  \node[state]         (D) [below left of=C] {$q_3$};
+  \node[state]         (H) [left of=D] {$h$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+           edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A)
+        (B) edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (D)
+        (D) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (D)
+        edge node {\TMtrans{\TMendtape}{\TMendtape}{\TMright}} (H);
+\end{tikzpicture}
+\]\caption{ఒక క్రమశిక్షిత కూడిక యంత్రం}
+\ollabel{fig:adder-disc}
+\end{figure}
+\sourcecorrection{OLTETURMAC-006}{ఆంగ్ల మూలం ఇక్కడ పునర్వాడిన కూడిక యంత్రంలోనూ స్థితి $q_0$ వద్ద $\TMstroke$ నిర్దేశాన్ని స్వీయ-చక్రంగా అలంకరించి లక్ష్యాన్ని $q_1$గా ఇచ్చింది. మొదటి ఇన్‌పుట్ దిమ్మను పూర్తిగా దాటే ఉద్దేశిత ప్రవర్తన కోసం లక్ష్యాన్ని $q_0$గా సరిచేశాం.}
+\end{ex}
+
+\begin{prop}\ollabel{prop:disciplined} ప్రతి ట్యూరింగ్ యంత్రం~$M$కు,
+$M$ అవుట్‌పుట్~$O$తో ఆగితే అవుట్‌పుట్~$O$తో ఆగే, $M$ ఆగకపోతే ఆగని
+క్రమశిక్షిత ట్యూరింగ్ యంత్రం~$M'$ ఒకటి ఉంటుంది. ప్రత్యేకించి, ట్యూరింగ్
+యంత్రంతో గణించగల ఏ ప్రమేయం $f\colon\Nat^n \to \Nat$నైనా క్రమశిక్షిత
+ట్యూరింగ్ యంత్రంతో కూడా గణించవచ్చు.
+\end{prop}
+
+\begin{prob}\label{tur:mac:dis:prob:disc-succ}
+$f(x) = x+1$ను గణించే క్రమశిక్షిత యంత్రాన్ని ఇవ్వండి.
+\end{prob}
+
+
+\begin{prob}\label{tur:mac:dis:prob:copier}
+ఇన్‌పుట్ $\TMstroke^n$పై ప్రారంభించినప్పుడు అవుట్‌పుట్
+$\TMstroke^n \concat \TMblank \concat \TMstroke^n$ను ఉత్పత్తి చేసే
+క్రమశిక్షిత యంత్రాన్ని కనుగొనండి.
+\end{prob}
+
+\end{document}
