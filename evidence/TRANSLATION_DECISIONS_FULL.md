@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **204 of 722 source units drafted**. This readable view contains all 227 decisions and 367 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **204 of 722 source units drafted**. This readable view contains all 227 decisions and 371 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -5940,7 +5940,8 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEMODLIN-022-OCC-001; OLP-0207; OLP-0207-B010; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:61-69 bytes 2564-3079 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:85-98 bytes 7163-8472 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.
+  - te-Telu-IN-OLTEMODLIN-022-OCC-001; OLP-0207; OLP-0207-B010; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:61-64 bytes 2564-2811 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:85-100 bytes 7163-8741 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.
+  - te-Telu-IN-OLTEMODLIN-022-OCC-002; OLP-0207; OLP-0207-B011; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-69 bytes 2812-3079 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:102-131 bytes 8742-12497 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.
 
 ## te-Telu-IN-OLTEMODLIN-012 — OLTEMODLIN-012: confirmed unjustified structure unions
 
@@ -5966,7 +5967,8 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEMODLIN-012-OCC-001; OLP-0207; OLP-0207-B011; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-95 bytes 2812-4595 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:108-122 bytes 9419-11586 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.
+  - te-Telu-IN-OLTEMODLIN-012-OCC-001; OLP-0207; OLP-0207-B011; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:66-80 bytes 2812-3786 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:102-131 bytes 8742-12497 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.
+  - te-Telu-IN-OLTEMODLIN-012-OCC-002; OLP-0207; OLP-0207-B012; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-95 bytes 3787-4595 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:133-152 bytes 12498-14274 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.
 
 ## te-Telu-IN-OLTEMODLIN-013 — OLTEMODLIN-013: confirmed ambient structure symbol collision
 
@@ -5992,7 +5994,9 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Occurrences:
 
-  - te-Telu-IN-OLTEMODLIN-013-OCC-001; OLP-0207; OLP-0207-B012; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-109 bytes 3787-5319 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:88-154 bytes 7375-14370 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.
+  - te-Telu-IN-OLTEMODLIN-013-OCC-001; OLP-0207; OLP-0207-B012; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98 bytes 3787-4751 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:133-152 bytes 12498-14274 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.
+  - te-Telu-IN-OLTEMODLIN-013-OCC-002; OLP-0207; OLP-0207-B013; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:100-105 bytes 4752-5117 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:154-171 bytes 14275-16194 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.
+  - te-Telu-IN-OLTEMODLIN-013-OCC-003; OLP-0207; OLP-0207-B014; source upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-109 bytes 5118-5319 SHA-256 a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9; target translation/content/model-theory/lindstrom/lindstrom-proof.tex:173-203 bytes 16195-19067 SHA-256 c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817; reader page pending.
 
 ## te-Telu-IN-OLTEMODLIN-014 — OLTEMODLIN-014: confirmed wrong satisfaction relation
 

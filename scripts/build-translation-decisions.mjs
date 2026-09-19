@@ -261,12 +261,47 @@ const correctionDecisions = corrections.map(correction => {
   const location = record.implementation_locations[0];
   const segment = segments[location.segment_id];
   if (!segment) throw new Error(`Missing segment ${location.segment_id}`);
+  const linkedSegments = ledger.filter(item =>
+    item.unit_id === correction.unit_id &&
+    item.source_path === correction.source_path &&
+    item.source_corrections?.includes(correction.finding_id)
+  );
+  if (!linkedSegments.length) throw new Error(`Missing correction links for ${correction.finding_id}`);
   const sourceRanges = proseRanges(correction.source_locator, segment.source_start_line, segment.source_end_line);
   const targetRange = fileRange(correction.target_locator, segment.target_start_line, segment.target_end_line);
   const decisionId = `te-Telu-IN-${correction.finding_id}`;
   const intendedSense = `Repair the audited ${correction.classification.replaceAll('_', ' ')} at ${correction.source_locator}, preserving unaffected notation and argument structure.`;
   const reviewArtifact = auditArtifact(correction.audit_review_sha256, 'REVIEW.md', correction.audit_id);
   const findingsArtifact = auditArtifact(correction.audit_findings_sha256, 'FINDINGS.json', correction.finding_id);
+  const evidenceRefs = uniqueArtifacts([artifactRefs.corrections, reviewArtifact, findingsArtifact]);
+  const mappedOccurrences = linkedSegments.length === 1
+    ? sourceRanges.map(sourceRange => {
+        const alignedSegment = ledger.find(item =>
+          item.unit_id === correction.unit_id &&
+          item.source_path === correction.source_path &&
+          item.source_start_line <= sourceRange.start &&
+          item.source_end_line >= sourceRange.start
+        ) ?? segment;
+        return {alignedSegment, sourceRange, targetRange};
+      })
+    : linkedSegments.flatMap(alignedSegment => {
+        const intersections = sourceRanges.flatMap(range => {
+          const start = Math.max(range.start, alignedSegment.source_start_line);
+          const end = Math.min(range.end, alignedSegment.source_end_line);
+          return start <= end ? [{start, end}] : [];
+        });
+        const mappedSourceRanges = intersections.length
+          ? intersections
+          : [{start: alignedSegment.source_start_line, end: alignedSegment.source_end_line}];
+        return mappedSourceRanges.map(sourceRange => ({
+          alignedSegment,
+          sourceRange,
+          targetRange: {
+            start: alignedSegment.target_start_line,
+            end: alignedSegment.target_end_line,
+          },
+        }));
+      });
   return {
     decision_id: decisionId,
     supersedes: [],
@@ -299,13 +334,7 @@ const correctionDecisions = corrections.map(correction => {
     expert_review_useful: true,
     expert_review_reason: 'Optional specialist review can improve the clarity of the Telugu disclosure without reopening the source-fixed mathematical repair.',
     please_double_check_question: questionFor(record),
-    occurrences: sourceRanges.map((sourceRange, index) => {
-      const alignedSegment = ledger.find(item =>
-        item.unit_id === correction.unit_id &&
-        item.source_path === correction.source_path &&
-        item.source_start_line <= sourceRange.start &&
-        item.source_end_line >= sourceRange.start
-      ) ?? segment;
+    occurrences: mappedOccurrences.map(({alignedSegment, sourceRange, targetRange: mappedTargetRange}, index) => {
       return {
         occurrence_id: `${decisionId}-OCC-${String(index + 1).padStart(3, '0')}`,
         unit_id: correction.unit_id,
@@ -325,14 +354,16 @@ const correctionDecisions = corrections.map(correction => {
         target: locateLines({
           repoPath: location.target_file,
           fileId: `${correction.unit_id}:target:te-Telu-IN`,
-          expectedSha: location.translation_unit_sha256,
-          ...targetRange,
+          expectedSha: alignedSegment.translation_unit_sha256,
+          ...mappedTargetRange,
           term: correction.finding_id,
           intendedSense,
-          context: correction.target_locator
+          context: linkedSegments.length === 1
+            ? correction.target_locator
+            : `${correction.target_locator}; mapped segment ${alignedSegment.segment_id}`
         }),
         reader_locator: readerPending(),
-        evidence_refs: uniqueArtifacts([artifactRefs.corrections, reviewArtifact, findingsArtifact])
+        evidence_refs: evidenceRefs
       };
     })
   };

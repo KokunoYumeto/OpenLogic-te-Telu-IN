@@ -355,12 +355,28 @@ const correctionQuestions={
   'OLTEMODLIN-022':'Please double-check that both base-tuple occurrences use the chapter’s empty-sequence notation emptyseq rather than the empty-set notation emptyset.'
 };
 const correctionRecords=corrections.map(c=>{
- const segment=ledger.find(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));
- if(!segment)throw new Error('Missing correction segment '+c.finding_id);
+ const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));
+ if(!segments.length)throw new Error('Missing correction segment '+c.finding_id);
  const sourcePath=c.source_path,targetPath=c.target_locator.replace(/^translation\//,'').replace(/:\d.*$/,'');
+ const targetFile=`translation/${targetPath}`;
+ const locations=segments.map(segment=>({
+  unit_id:c.unit_id,
+  section_path:sourcePath.replace(/^content\//,'').replace(/\.tex$/,''),
+  source_file:sourcePath,
+  target_file:targetFile,
+  segment_id:segment.segment_id,
+  source_locator:segments.length===1?c.source_locator:`lines ${segment.source_start_line}-${segment.source_end_line}; mapped segment within audited scope ${c.source_locator}`,
+  target_locator:segments.length===1?c.target_locator:`${targetFile}:${segment.target_start_line}-${segment.target_end_line}`,
+  source_unit_sha256:c.source_sha256,
+  translation_unit_sha256:segment.translation_unit_sha256,
+  source_segment_sha256:segment.source_segment_sha256,
+  translation_segment_sha256:segment.translation_segment_sha256,
+  final_printed_page:null,
+  pagination_status:'pending_coherent_reader_pagination'
+ }));
  const rawQuestion=correctionQuestions[c.finding_id]??`whether the Telugu disclosure for ${c.finding_id} is mathematically precise and idiomatic.`;
  const question=/^Please double-check/i.test(rawQuestion)?rawQuestion:`Please double-check: ${rawQuestion}`;
- return {review_id:'REV-'+c.finding_id,record_type:'source_correction_decision',scope_completion:completion,language:'Telugu',script:'Telu',locale:'te-Telu-IN',finding_id:c.finding_id,classification:c.classification,confidence:'high_mathematical_repair_moderate_disclosure_wording',review_priority:'medium',expert_review_status:'mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold',implementation_locations:[{unit_id:c.unit_id,section_path:sourcePath.replace(/^content\//,'').replace(/\.tex$/,''),source_file:sourcePath,target_file:`translation/${targetPath}`,segment_id:segment.segment_id,source_locator:c.source_locator,target_locator:c.target_locator,source_unit_sha256:c.source_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'}],actual_authorities_checked:[{audit_id:c.audit_id,audit_review_sha256:c.audit_review_sha256,audit_findings_sha256:c.audit_findings_sha256},{source_revision:'9620cc73f9c8e0ad003c514a5d3748f29611c4c0',source_path:c.source_path,source_sha256:c.source_sha256}],not_checked_or_not_found:['No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.'],rationale:c.body_treatment,alternatives_considered_or_recorded:['Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).','Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).'],uncertainty:'Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.',rationale_phase:'Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.',precise_review_questions:[question],translation_hold:false,status:c.status};
+ return {review_id:'REV-'+c.finding_id,record_type:'source_correction_decision',scope_completion:completion,language:'Telugu',script:'Telu',locale:'te-Telu-IN',finding_id:c.finding_id,classification:c.classification,confidence:'high_mathematical_repair_moderate_disclosure_wording',review_priority:'medium',expert_review_status:'mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold',implementation_locations:locations,actual_authorities_checked:[{audit_id:c.audit_id,audit_review_sha256:c.audit_review_sha256,audit_findings_sha256:c.audit_findings_sha256},{source_revision:'9620cc73f9c8e0ad003c514a5d3748f29611c4c0',source_path:c.source_path,source_sha256:c.source_sha256}],not_checked_or_not_found:['No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.'],rationale:c.body_treatment,alternatives_considered_or_recorded:['Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).','Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).'],uncertainty:'Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.',rationale_phase:'Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.',precise_review_questions:[question],translation_hold:false,status:c.status};
 });
 const records=[...termRecords,...correctionRecords];
 const jsonText=records.map(x=>JSON.stringify(x)).join('\n')+'\n';

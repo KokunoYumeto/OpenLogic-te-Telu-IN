@@ -23,8 +23,8 @@
   },
   "generator": {
     "path_or_uri": "scripts/build-translation-decisions.mjs",
-    "bytes": 25972,
-    "sha256": "da71597ee737101a449e10cdcbdfe21c59f239549d7ff03f46f06a5ba26e0754",
+    "bytes": 27471,
+    "sha256": "06fe33bbaa611714429c2197d1f6d8a5f1bc742b5f5fe5120fe661ebf7527c67",
     "version_or_ref": "canonical-schema-adapter-v1"
   },
   "decisions": [
@@ -44735,15 +44735,15 @@
             "line_span": {
               "status": "available",
               "start": 61,
-              "end": 69
+              "end": 64
             },
             "byte_span": {
               "status": "available",
               "start": 2564,
-              "end_exclusive": 3079
+              "end_exclusive": 2811
             },
             "printed_page": null,
-            "excerpt": "follows. Since we are working in a finite, purely relational\n!!{language}, by \\olref[bas][pis]{thm:b-n-f} we can replace the statement\nthat $\\Struct{M} \\equiv_n \\Struct{N}$ by the corresponding algebraic\nstatement that $I_n(\\emptyset,\\emptyset)$.\n\nGiven $!E$, suppose towards a contradiction that for each $n$ there\nare !!{structure}s $\\Struct{M}_n$ and $\\Struct{N}_n$ such that\n$I_n(\\emptyset, \\emptyset)$, but (say) $\\Struct{M}_n \\models_L !E$\nwhereas $\\Struct{N}_n \\not\\models_L !E$. By the Isomorphism Property",
+            "excerpt": "follows. Since we are working in a finite, purely relational\n!!{language}, by \\olref[bas][pis]{thm:b-n-f} we can replace the statement\nthat $\\Struct{M} \\equiv_n \\Struct{N}$ by the corresponding algebraic\nstatement that $I_n(\\emptyset,\\emptyset)$.",
             "term": "OLTEMODLIN-022",
             "intended_sense": "Repair the audited confirmed wrong empty sequence notation at lines 61-69, two I_n base-tuple occurrences, preserving unaffected notation and argument structure.",
             "context": "lines 61-69, two I_n base-tuple occurrences"
@@ -44755,18 +44755,90 @@
             "line_span": {
               "status": "available",
               "start": 85,
-              "end": 98
+              "end": 100
             },
             "byte_span": {
               "status": "available",
               "start": 7163,
-              "end_exclusive": 8472
+              "end_exclusive": 8741
             },
             "printed_page": null,
-            "excerpt": "\\begin{proof}\n\\olref{lem:lindstrom} వల్ల, ప్రతి $!E\\in L(\\Lang{L})$కు, ఏ రెండు\n\\tetoken{నిర్మాణాలు}{!!{structure}s} $\\Struct{M}$, $\\Struct{N}$లకైనా\n  $\\Struct{M}\\equiv_n\\Struct{N}$ అయినప్పుడు $\\Struct{M}$, $\\Struct{N}$లు\n  $!E$ విషయంలో ఏకీభవించే\n$n\\in\\Nat$ ఉందని చూపడం చాలు. అప్పుడు $!E$ మొదటిస్థాయి\n\\tetoken{వాక్యానికి}{!!{sentence}} తుల్యం; దాంతో\n$\\tuple{L,\\models_L}\\le\\tuple{F,\\models}$ వస్తుంది. పరిమిత, శుద్ధ\nసంబంధాత్మక \\tetoken{భాష}{!!{language}}~$\\Lang{L}$లో పనిచేస్తున్నందున,\n\\olref[bas][pis]{thm:b-n-f} ప్రకారం\n$\\Struct{M}\\equiv_n\\Struct{N}$ అనే మాటను\n$I_n(\\emptyseq,\\emptyseq)$ అనే బీజగణిత వాక్యంతో మార్చవచ్చు.\n\\sourcecorrection{OLTEMODLIN-022}{పాక్షిక-సమరూపత అధ్యాయంలోని\nనిర్వచనం ఖాళీ అనుక్రమానికి ప్రత్యేక గుర్తు $\\emptyseq$ను వాడుతుంది.",
+            "excerpt": "\\begin{proof}\n\\olref{lem:lindstrom} వల్ల, ప్రతి $!E\\in L(\\Lang{L})$కు, ఏ రెండు\n\\tetoken{నిర్మాణాలు}{!!{structure}s} $\\Struct{M}$, $\\Struct{N}$లకైనా\n  $\\Struct{M}\\equiv_n\\Struct{N}$ అయినప్పుడు $\\Struct{M}$, $\\Struct{N}$లు\n  $!E$ విషయంలో ఏకీభవించే\n$n\\in\\Nat$ ఉందని చూపడం చాలు. అప్పుడు $!E$ మొదటిస్థాయి\n\\tetoken{వాక్యానికి}{!!{sentence}} తుల్యం; దాంతో\n$\\tuple{L,\\models_L}\\le\\tuple{F,\\models}$ వస్తుంది. పరిమిత, శుద్ధ\nసంబంధాత్మక \\tetoken{భాష}{!!{language}}~$\\Lang{L}$లో పనిచేస్తున్నందున,\n\\olref[bas][pis]{thm:b-n-f} ప్రకారం\n$\\Struct{M}\\equiv_n\\Struct{N}$ అనే మాటను\n$I_n(\\emptyseq,\\emptyseq)$ అనే బీజగణిత వాక్యంతో మార్చవచ్చు.\n\\sourcecorrection{OLTEMODLIN-022}{పాక్షిక-సమరూపత అధ్యాయంలోని\nనిర్వచనం ఖాళీ అనుక్రమానికి ప్రత్యేక గుర్తు $\\emptyseq$ను వాడుతుంది.\nఆంగ్ల మూలం ఇక్కడ రెండు వాదాలుగా సమితి-ఖాళీ $\\emptyset$ను రాసింది;\nనిర్వచనంతో సరిపడే $\\emptyseq$ను పునరుద్ధరించాం.}",
             "term": "OLTEMODLIN-022",
             "intended_sense": "Repair the audited confirmed wrong empty sequence notation at lines 61-69, two I_n base-tuple occurrences, preserving unaffected notation and argument structure.",
-            "context": "translation/content/model-theory/lindstrom/lindstrom-proof.tex:85-98"
+            "context": "translation/content/model-theory/lindstrom/lindstrom-proof.tex:85-98; mapped segment OLP-0207-B010"
+          },
+          "reader_locator": {
+            "status": "pending",
+            "reason": "The cited unit is not yet integrated into the coherent full reader; no printed or assembled PDF page is guessed."
+          },
+          "evidence_refs": [
+            {
+              "path_or_uri": "evidence/SOURCE_CORRECTIONS.jsonl",
+              "bytes": 164621,
+              "sha256": "2da0f60cd5404a07c71b9295e9f3948b2f4487a816ab83ac11f9c8b737377ee4",
+              "version_or_ref": "applied-source-corrections"
+            },
+            {
+              "path_or_uri": "evidence/source-audits/2026-09-08-lindstrom-telugu/REVIEW.md",
+              "bytes": 2458,
+              "sha256": "891f6dac48a165b85cae42f6e5155ca441c88972731002af17dc772858d66910",
+              "version_or_ref": "OLTEMODLIN-20260908"
+            },
+            {
+              "path_or_uri": "evidence/source-audits/2026-09-08-lindstrom-telugu/FINDINGS.json",
+              "bytes": 21938,
+              "sha256": "cc6511259eca3ff50c9b55c2db2967679cfc902dc8da3cad66bf3e889ac3f920",
+              "version_or_ref": "OLTEMODLIN-022"
+            }
+          ]
+        },
+        {
+          "occurrence_id": "te-Telu-IN-OLTEMODLIN-022-OCC-002",
+          "unit_id": "OLP-0207",
+          "semantic_unit_id": "OLP-0207-B011",
+          "part_title": null,
+          "chapter_title": null,
+          "section_title": "model-theory/lindstrom/lindstrom-proof",
+          "source": {
+            "path": "upstream/content/model-theory/lindstrom/lindstrom-proof.tex",
+            "file_id": "OLP-0207:source",
+            "file_sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+            "line_span": {
+              "status": "available",
+              "start": 66,
+              "end": 69
+            },
+            "byte_span": {
+              "status": "available",
+              "start": 2812,
+              "end_exclusive": 3079
+            },
+            "printed_page": null,
+            "excerpt": "Given $!E$, suppose towards a contradiction that for each $n$ there\nare !!{structure}s $\\Struct{M}_n$ and $\\Struct{N}_n$ such that\n$I_n(\\emptyset, \\emptyset)$, but (say) $\\Struct{M}_n \\models_L !E$\nwhereas $\\Struct{N}_n \\not\\models_L !E$. By the Isomorphism Property",
+            "term": "OLTEMODLIN-022",
+            "intended_sense": "Repair the audited confirmed wrong empty sequence notation at lines 61-69, two I_n base-tuple occurrences, preserving unaffected notation and argument structure.",
+            "context": "lines 61-69, two I_n base-tuple occurrences"
+          },
+          "target": {
+            "path": "translation/content/model-theory/lindstrom/lindstrom-proof.tex",
+            "file_id": "OLP-0207:target:te-Telu-IN",
+            "file_sha256": "c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817",
+            "line_span": {
+              "status": "available",
+              "start": 102,
+              "end": 131
+            },
+            "byte_span": {
+              "status": "available",
+              "start": 8742,
+              "end_exclusive": 12497
+            },
+            "printed_page": null,
+            "excerpt": "ఇప్పుడు $!E$ను స్థిరపరచి, వైరుధ్యం కోసం, ప్రతి $n$కు\n\\tetoken{నిర్మాణాలు}{!!{structure}s} $\\Struct{M}_n$,\n$\\Struct{N}_n$ ఉండి $I_n(\\emptyseq,\\emptyseq)$ అయినా,\n$\\Struct{M}_n\\models_L!E$, $\\Struct{N}_n\\not\\models_L!E$ అవుతాయని\nఅనుకుందాం. సమరూపతా ధర్మం వల్ల అన్ని $\\Struct{M}_n$లు భాషలోని\nస్థిరసంకేతాలకు ఒకే మూలకాలను అర్థనిర్దేశాలుగా ఇస్తాయని అనుకోవచ్చు.\nపరిమిత భాషలో పరమాణు \\tetoken{వాక్యాల}{!!{sentence}s} సంఖ్య\nపరిమితమే; కాబట్టి \\tetoken{వాక్యాల}{!!{sentence}s} విషయంలో అవన్నీ\nఒకే సత్యతా విలువలు ఇచ్చే ఉపక్రమాన్ని ఎంచుకోవచ్చు. సూచికలను మళ్లీ\nపేరుపెట్టి, ముందటి $\\Struct{M}$ల ఉపక్రమం నుంచి ఎంచుకున్న ఉపక్రమంలో\nఅసలు ర్యాంకు కనీసం కొత్త సూచికకు\nసమానమని కూడా అనుకుందాం; ఎందుకంటే $I_m$ అయితే $m\\ge n$కు $I_n$\nవస్తుంది. ఇప్పుడు \\tetoken{నిర్మాణం}{!!{structure}}~$\\Struct{M}$ను\nఅన్ని $\\Struct{M}_n$ల సమ్మేళనంగా తీసుకోండి: ప్రతి $\\Struct{M}_n$ను\nఉపనిర్మాణంగా కలిగిన అనన్య కనిష్ఠ నిర్మాణం. స్థిరసంకేతాల సామ్యమైన\nఅర్థనిర్దేశాలు, పరమాణు వాక్యాలపై ఏకీభవన వల్ల ఈ సమ్మేళనం బాగా\nనిర్వచితం. \\sourcecorrection{OLTEMODLIN-012}{ఆంగ్ల మూలం\nఉపక్రమం, సంయుక్త మూలకాల సముదాయాల అనుకూలత, వాటి కనిష్ఠ సమ్మేళనాలను\nనేరుగా తీసుకుంటుంది. ర్యాంకు తగ్గే ధర్మంతో ఉపక్రమాన్ని మళ్లీ\nసూచికీకరించడం, స్థిరసంకేతాల వద్ద మాత్రమే సమానీకరణతో మిగతా\nమూలకాలను వియుక్తంగా ట్యాగ్‌చేయడం, పరమాణు వాక్యాలపై ఏకీభవనతో\nసంబంధాల సమ్మేళనం బాగా నిర్వచితం కావడం, తరువాతి పరిసర నిర్మాణంలో\nమూలకాలు, అనుక్రమాలు, ప్రకృత సంఖ్యల రకాలను పరస్పరం వియుక్తంగా\nట్యాగ్‌చేయడం కూడా స్పష్టం చేశాం.}\n\\olref[lsp]{thm:abstract-p-isom}లోని నిర్మాణాన్ని అనుసరించి,\n$\\Struct{M}$ను, $\\Domain{M}\\cup\\Domain{M}^{<\\omega}$ అనే\n\\tetoken{వ్యక్తి క్షేత్రం}{!!{domain}} గల, అనుసంధాన\nవిధేయ సంకేతాలు $P$, $Q$ను చేర్చిన\n\\tetoken{భాష}{!!{language}}లోని విస్తరణ $\\Struct{M}^*$గా\nనిర్మించండి.",
+            "term": "OLTEMODLIN-022",
+            "intended_sense": "Repair the audited confirmed wrong empty sequence notation at lines 61-69, two I_n base-tuple occurrences, preserving unaffected notation and argument structure.",
+            "context": "translation/content/model-theory/lindstrom/lindstrom-proof.tex:85-98; mapped segment OLP-0207-B011"
           },
           "reader_locator": {
             "status": "pending",
@@ -44857,15 +44929,15 @@
             "line_span": {
               "status": "available",
               "start": 66,
-              "end": 95
+              "end": 80
             },
             "byte_span": {
               "status": "available",
               "start": 2812,
-              "end_exclusive": 4595
+              "end_exclusive": 3786
             },
             "printed_page": null,
-            "excerpt": "Given $!E$, suppose towards a contradiction that for each $n$ there\nare !!{structure}s $\\Struct{M}_n$ and $\\Struct{N}_n$ such that\n$I_n(\\emptyset, \\emptyset)$, but (say) $\\Struct{M}_n \\models_L !E$\nwhereas $\\Struct{N}_n \\not\\models_L !E$. By the Isomorphism Property\nwe can assume that all the $\\Struct{M}_n$'s interpret the constants of\nthe language by the same objects; furthermore, since there are only\nfinitely many atomic !!{sentence}s in the language, we may also assume\nthat they satisfy the same atomic !!{sentence}s (we can take a\nsubsequence of the $\\Struct{M}$'s otherwise). Let $\\Struct{M}$ be the\nunion of all the $\\Struct{M}_n$'s, i.e., the unique minimal\n!!{structure} having each $\\Struct{M}_n$ as a substructure.  As in the\nproof of \\olref[lsp]{thm:abstract-p-isom}, let $\\Struct{M}^*$ be the\nextension of $\\Struct{M}$ with !!{domain} $\\Domain{M} \\cup\n\\Domain{M}^{<\\omega}$, in the expanded !!{language} comprising the\nconcatenation predicates $P$ and~$Q$.\n\nSimilarly, define $\\Struct{N}_n$, $\\Struct{N}$ and $\\Struct{N}^*$. Now\nlet $\\Struct{M}$ be the !!{structure} whose !!{domain} comprises the\n!!{domain}s of $\\Struct{M}^*$ and $\\Struct{N}^*$ as well as the natural\nnumbers~$\\Nat$ along with their natural ordering~$\\le$, in the\n!!{language} with extra predicates representing the !!{domain}s\n$\\Domain{M}$, $\\Domain{N}$, $\\Domain{M}^{<\\omega}$ and\n$\\Domain{N}^{<\\omega}$ as well as predicates coding the domains of\n$\\Struct{M}_n$ and $\\Struct{N}_n$ in the sense that:\n\\begin{align*}\n  \\Domain{M_n} & = \\Setabs{a \\in \\Domain{M}}{R(a, n)}; & \n  \\Domain{N_n} & = \\Setabs{a \\in \\Domain{N}}{S(a,n)}; \\\\\n  \\Domain{M}^{<\\omega}_n & = \\Setabs{a \\in \\Domain{M}^{<\\omega}}{R(a,n)}; &\n  \\Domain{N}^{<\\omega}_n & = \\Setabs{a \\in \\Domain{N}^{<\\omega}}{S(a,n)}. \n\\end{align*}",
+            "excerpt": "Given $!E$, suppose towards a contradiction that for each $n$ there\nare !!{structure}s $\\Struct{M}_n$ and $\\Struct{N}_n$ such that\n$I_n(\\emptyset, \\emptyset)$, but (say) $\\Struct{M}_n \\models_L !E$\nwhereas $\\Struct{N}_n \\not\\models_L !E$. By the Isomorphism Property\nwe can assume that all the $\\Struct{M}_n$'s interpret the constants of\nthe language by the same objects; furthermore, since there are only\nfinitely many atomic !!{sentence}s in the language, we may also assume\nthat they satisfy the same atomic !!{sentence}s (we can take a\nsubsequence of the $\\Struct{M}$'s otherwise). Let $\\Struct{M}$ be the\nunion of all the $\\Struct{M}_n$'s, i.e., the unique minimal\n!!{structure} having each $\\Struct{M}_n$ as a substructure.  As in the\nproof of \\olref[lsp]{thm:abstract-p-isom}, let $\\Struct{M}^*$ be the\nextension of $\\Struct{M}$ with !!{domain} $\\Domain{M} \\cup\n\\Domain{M}^{<\\omega}$, in the expanded !!{language} comprising the\nconcatenation predicates $P$ and~$Q$.",
             "term": "OLTEMODLIN-012",
             "intended_sense": "Repair the audited confirmed unjustified structure unions at lines 66-95, subsequence and union constructions, preserving unaffected notation and argument structure.",
             "context": "lines 66-95, subsequence and union constructions"
@@ -44876,19 +44948,91 @@
             "file_sha256": "c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817",
             "line_span": {
               "status": "available",
-              "start": 108,
-              "end": 122
+              "start": 102,
+              "end": 131
             },
             "byte_span": {
               "status": "available",
-              "start": 9419,
-              "end_exclusive": 11586
+              "start": 8742,
+              "end_exclusive": 12497
             },
             "printed_page": null,
-            "excerpt": "పరిమిత భాషలో పరమాణు \\tetoken{వాక్యాల}{!!{sentence}s} సంఖ్య\nపరిమితమే; కాబట్టి \\tetoken{వాక్యాల}{!!{sentence}s} విషయంలో అవన్నీ\nఒకే సత్యతా విలువలు ఇచ్చే ఉపక్రమాన్ని ఎంచుకోవచ్చు. సూచికలను మళ్లీ\nపేరుపెట్టి, ముందటి $\\Struct{M}$ల ఉపక్రమం నుంచి ఎంచుకున్న ఉపక్రమంలో\nఅసలు ర్యాంకు కనీసం కొత్త సూచికకు\nసమానమని కూడా అనుకుందాం; ఎందుకంటే $I_m$ అయితే $m\\ge n$కు $I_n$\nవస్తుంది. ఇప్పుడు \\tetoken{నిర్మాణం}{!!{structure}}~$\\Struct{M}$ను\nఅన్ని $\\Struct{M}_n$ల సమ్మేళనంగా తీసుకోండి: ప్రతి $\\Struct{M}_n$ను\nఉపనిర్మాణంగా కలిగిన అనన్య కనిష్ఠ నిర్మాణం. స్థిరసంకేతాల సామ్యమైన\nఅర్థనిర్దేశాలు, పరమాణు వాక్యాలపై ఏకీభవన వల్ల ఈ సమ్మేళనం బాగా\nనిర్వచితం. \\sourcecorrection{OLTEMODLIN-012}{ఆంగ్ల మూలం\nఉపక్రమం, సంయుక్త మూలకాల సముదాయాల అనుకూలత, వాటి కనిష్ఠ సమ్మేళనాలను\nనేరుగా తీసుకుంటుంది. ర్యాంకు తగ్గే ధర్మంతో ఉపక్రమాన్ని మళ్లీ\nసూచికీకరించడం, స్థిరసంకేతాల వద్ద మాత్రమే సమానీకరణతో మిగతా\nమూలకాలను వియుక్తంగా ట్యాగ్‌చేయడం, పరమాణు వాక్యాలపై ఏకీభవనతో",
+            "excerpt": "ఇప్పుడు $!E$ను స్థిరపరచి, వైరుధ్యం కోసం, ప్రతి $n$కు\n\\tetoken{నిర్మాణాలు}{!!{structure}s} $\\Struct{M}_n$,\n$\\Struct{N}_n$ ఉండి $I_n(\\emptyseq,\\emptyseq)$ అయినా,\n$\\Struct{M}_n\\models_L!E$, $\\Struct{N}_n\\not\\models_L!E$ అవుతాయని\nఅనుకుందాం. సమరూపతా ధర్మం వల్ల అన్ని $\\Struct{M}_n$లు భాషలోని\nస్థిరసంకేతాలకు ఒకే మూలకాలను అర్థనిర్దేశాలుగా ఇస్తాయని అనుకోవచ్చు.\nపరిమిత భాషలో పరమాణు \\tetoken{వాక్యాల}{!!{sentence}s} సంఖ్య\nపరిమితమే; కాబట్టి \\tetoken{వాక్యాల}{!!{sentence}s} విషయంలో అవన్నీ\nఒకే సత్యతా విలువలు ఇచ్చే ఉపక్రమాన్ని ఎంచుకోవచ్చు. సూచికలను మళ్లీ\nపేరుపెట్టి, ముందటి $\\Struct{M}$ల ఉపక్రమం నుంచి ఎంచుకున్న ఉపక్రమంలో\nఅసలు ర్యాంకు కనీసం కొత్త సూచికకు\nసమానమని కూడా అనుకుందాం; ఎందుకంటే $I_m$ అయితే $m\\ge n$కు $I_n$\nవస్తుంది. ఇప్పుడు \\tetoken{నిర్మాణం}{!!{structure}}~$\\Struct{M}$ను\nఅన్ని $\\Struct{M}_n$ల సమ్మేళనంగా తీసుకోండి: ప్రతి $\\Struct{M}_n$ను\nఉపనిర్మాణంగా కలిగిన అనన్య కనిష్ఠ నిర్మాణం. స్థిరసంకేతాల సామ్యమైన\nఅర్థనిర్దేశాలు, పరమాణు వాక్యాలపై ఏకీభవన వల్ల ఈ సమ్మేళనం బాగా\nనిర్వచితం. \\sourcecorrection{OLTEMODLIN-012}{ఆంగ్ల మూలం\nఉపక్రమం, సంయుక్త మూలకాల సముదాయాల అనుకూలత, వాటి కనిష్ఠ సమ్మేళనాలను\nనేరుగా తీసుకుంటుంది. ర్యాంకు తగ్గే ధర్మంతో ఉపక్రమాన్ని మళ్లీ\nసూచికీకరించడం, స్థిరసంకేతాల వద్ద మాత్రమే సమానీకరణతో మిగతా\nమూలకాలను వియుక్తంగా ట్యాగ్‌చేయడం, పరమాణు వాక్యాలపై ఏకీభవనతో\nసంబంధాల సమ్మేళనం బాగా నిర్వచితం కావడం, తరువాతి పరిసర నిర్మాణంలో\nమూలకాలు, అనుక్రమాలు, ప్రకృత సంఖ్యల రకాలను పరస్పరం వియుక్తంగా\nట్యాగ్‌చేయడం కూడా స్పష్టం చేశాం.}\n\\olref[lsp]{thm:abstract-p-isom}లోని నిర్మాణాన్ని అనుసరించి,\n$\\Struct{M}$ను, $\\Domain{M}\\cup\\Domain{M}^{<\\omega}$ అనే\n\\tetoken{వ్యక్తి క్షేత్రం}{!!{domain}} గల, అనుసంధాన\nవిధేయ సంకేతాలు $P$, $Q$ను చేర్చిన\n\\tetoken{భాష}{!!{language}}లోని విస్తరణ $\\Struct{M}^*$గా\nనిర్మించండి.",
             "term": "OLTEMODLIN-012",
             "intended_sense": "Repair the audited confirmed unjustified structure unions at lines 66-95, subsequence and union constructions, preserving unaffected notation and argument structure.",
-            "context": "translation/content/model-theory/lindstrom/lindstrom-proof.tex:108-122"
+            "context": "translation/content/model-theory/lindstrom/lindstrom-proof.tex:108-122; mapped segment OLP-0207-B011"
+          },
+          "reader_locator": {
+            "status": "pending",
+            "reason": "The cited unit is not yet integrated into the coherent full reader; no printed or assembled PDF page is guessed."
+          },
+          "evidence_refs": [
+            {
+              "path_or_uri": "evidence/SOURCE_CORRECTIONS.jsonl",
+              "bytes": 164621,
+              "sha256": "2da0f60cd5404a07c71b9295e9f3948b2f4487a816ab83ac11f9c8b737377ee4",
+              "version_or_ref": "applied-source-corrections"
+            },
+            {
+              "path_or_uri": "evidence/source-audits/2026-09-08-lindstrom-telugu/REVIEW.md",
+              "bytes": 2458,
+              "sha256": "891f6dac48a165b85cae42f6e5155ca441c88972731002af17dc772858d66910",
+              "version_or_ref": "OLTEMODLIN-20260908"
+            },
+            {
+              "path_or_uri": "evidence/source-audits/2026-09-08-lindstrom-telugu/FINDINGS.json",
+              "bytes": 21938,
+              "sha256": "cc6511259eca3ff50c9b55c2db2967679cfc902dc8da3cad66bf3e889ac3f920",
+              "version_or_ref": "OLTEMODLIN-012"
+            }
+          ]
+        },
+        {
+          "occurrence_id": "te-Telu-IN-OLTEMODLIN-012-OCC-002",
+          "unit_id": "OLP-0207",
+          "semantic_unit_id": "OLP-0207-B012",
+          "part_title": null,
+          "chapter_title": null,
+          "section_title": "model-theory/lindstrom/lindstrom-proof",
+          "source": {
+            "path": "upstream/content/model-theory/lindstrom/lindstrom-proof.tex",
+            "file_id": "OLP-0207:source",
+            "file_sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+            "line_span": {
+              "status": "available",
+              "start": 82,
+              "end": 95
+            },
+            "byte_span": {
+              "status": "available",
+              "start": 3787,
+              "end_exclusive": 4595
+            },
+            "printed_page": null,
+            "excerpt": "Similarly, define $\\Struct{N}_n$, $\\Struct{N}$ and $\\Struct{N}^*$. Now\nlet $\\Struct{M}$ be the !!{structure} whose !!{domain} comprises the\n!!{domain}s of $\\Struct{M}^*$ and $\\Struct{N}^*$ as well as the natural\nnumbers~$\\Nat$ along with their natural ordering~$\\le$, in the\n!!{language} with extra predicates representing the !!{domain}s\n$\\Domain{M}$, $\\Domain{N}$, $\\Domain{M}^{<\\omega}$ and\n$\\Domain{N}^{<\\omega}$ as well as predicates coding the domains of\n$\\Struct{M}_n$ and $\\Struct{N}_n$ in the sense that:\n\\begin{align*}\n  \\Domain{M_n} & = \\Setabs{a \\in \\Domain{M}}{R(a, n)}; & \n  \\Domain{N_n} & = \\Setabs{a \\in \\Domain{N}}{S(a,n)}; \\\\\n  \\Domain{M}^{<\\omega}_n & = \\Setabs{a \\in \\Domain{M}^{<\\omega}}{R(a,n)}; &\n  \\Domain{N}^{<\\omega}_n & = \\Setabs{a \\in \\Domain{N}^{<\\omega}}{S(a,n)}. \n\\end{align*}",
+            "term": "OLTEMODLIN-012",
+            "intended_sense": "Repair the audited confirmed unjustified structure unions at lines 66-95, subsequence and union constructions, preserving unaffected notation and argument structure.",
+            "context": "lines 66-95, subsequence and union constructions"
+          },
+          "target": {
+            "path": "translation/content/model-theory/lindstrom/lindstrom-proof.tex",
+            "file_id": "OLP-0207:target:te-Telu-IN",
+            "file_sha256": "c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817",
+            "line_span": {
+              "status": "available",
+              "start": 133,
+              "end": 152
+            },
+            "byte_span": {
+              "status": "available",
+              "start": 12498,
+              "end_exclusive": 14274
+            },
+            "printed_page": null,
+            "excerpt": "అలాగే $\\Struct{N}_n$, $\\Struct{N}$, $\\Struct{N}^*$లను నిర్వచించండి.\nఇప్పుడు \\tetoken{నిర్మాణం}{!!{structure}}~$\\Struct{K}$ను తీసుకుందాం:\nదాని \\tetoken{వ్యక్తి క్షేత్రం}{!!{domain}} అనేది $\\Struct{M}^*$,\n$\\Struct{N}^*$ల \\tetoken{వ్యక్తి క్షేత్రాల}{!!{domain}s}, అలాగే\nప్రకృత సంఖ్యలు $\\Nat$; $\\Nat$పై సహజ క్రమం $\\le$ ఉంటుంది. దాని\n\\tetoken{భాష}{!!{language}}లో $\\Domain{M}$, $\\Domain{N}$,\n$\\Domain{M}^{<\\omega}$, $\\Domain{N}^{<\\omega}$లను, అలాగే\n$\\Struct{M}_n$, $\\Struct{N}_n$ల క్షేత్రాలను గుర్తించే\n\\tetoken{వ్యక్తి క్షేత్రాల}{!!{domain}s} సూచకాలు ఉంటాయి; అవి\n\\begin{align*}\n  \\Domain{M_n} & = \\Setabs{a \\in \\Domain{M}}{R(a,n)}; &\n  \\Domain{N_n} & = \\Setabs{a \\in \\Domain{N}}{S(a,n)}; \\\\\n  \\Domain{M}^{<\\omega}_n & = \\Setabs{a \\in \\Domain{M}^{<\\omega}}{R(a,n)}; &\n  \\Domain{N}^{<\\omega}_n & = \\Setabs{a \\in \\Domain{N}^{<\\omega}}{S(a,n)}.\n\\end{align*}\nఅని నిర్వచించబడతాయి. వియుక్త ట్యాగ్‌లతో అన్ని నాలుగు రకాలు\nపరస్పరం కలవకుండా ఎంచుకున్నామని భావించండి.\nఈ \\tetoken{నిర్మాణం}{!!{structure}}~$\\Struct{K}$కు మరో\nత్రిస్థాన సంబంధం $J$ ఉంటుంది; $J(n,\\mathbf{a},\\mathbf{b})$ అవుతుంది\nఅప్పుడే $I_n(\\mathbf{a},\\mathbf{b})$.",
+            "term": "OLTEMODLIN-012",
+            "intended_sense": "Repair the audited confirmed unjustified structure unions at lines 66-95, subsequence and union constructions, preserving unaffected notation and argument structure.",
+            "context": "translation/content/model-theory/lindstrom/lindstrom-proof.tex:108-122; mapped segment OLP-0207-B012"
           },
           "reader_locator": {
             "status": "pending",
@@ -44979,15 +45123,15 @@
             "line_span": {
               "status": "available",
               "start": 82,
-              "end": 109
+              "end": 98
             },
             "byte_span": {
               "status": "available",
               "start": 3787,
-              "end_exclusive": 5319
+              "end_exclusive": 4751
             },
             "printed_page": null,
-            "excerpt": "Similarly, define $\\Struct{N}_n$, $\\Struct{N}$ and $\\Struct{N}^*$. Now\nlet $\\Struct{M}$ be the !!{structure} whose !!{domain} comprises the\n!!{domain}s of $\\Struct{M}^*$ and $\\Struct{N}^*$ as well as the natural\nnumbers~$\\Nat$ along with their natural ordering~$\\le$, in the\n!!{language} with extra predicates representing the !!{domain}s\n$\\Domain{M}$, $\\Domain{N}$, $\\Domain{M}^{<\\omega}$ and\n$\\Domain{N}^{<\\omega}$ as well as predicates coding the domains of\n$\\Struct{M}_n$ and $\\Struct{N}_n$ in the sense that:\n\\begin{align*}\n  \\Domain{M_n} & = \\Setabs{a \\in \\Domain{M}}{R(a, n)}; & \n  \\Domain{N_n} & = \\Setabs{a \\in \\Domain{N}}{S(a,n)}; \\\\\n  \\Domain{M}^{<\\omega}_n & = \\Setabs{a \\in \\Domain{M}^{<\\omega}}{R(a,n)}; &\n  \\Domain{N}^{<\\omega}_n & = \\Setabs{a \\in \\Domain{N}^{<\\omega}}{S(a,n)}. \n\\end{align*}\nThe !!{structure}~$\\Struct{M}$ also has a ternary relation $J$ such\nthat $J(n, \\mathbf{a}, \\mathbf{b})$ holds if and only if\n$I_n(\\mathbf{a}, \\mathbf{b})$.\n\nNow there is !!a{sentence}~$!D$ in the !!{language}~$\\Lang{L}$ augmented\nby $R$, $S$, $J$, etc., saying that $\\le$ is a discrete linear ordering\nwith first but no last element and such that $\\Struct{M}_n \\models\n!E$, $\\Struct{N}_n \\not\\models !E$, and for each $n$ in the\nordering, $J(n, \\mathbf{a}, \\mathbf{b})$ holds if and only if\n$I_n(\\mathbf{a}, \\mathbf{b})$.\n\nUsing the Compactness Property, we can find a model $\\Struct{M}^*$ of\n$!D$ in which the ordering contains a non-standard element~$n^*$. In\nparticular then $\\Struct{M^*}$ will contain sub!!{structure}s",
+            "excerpt": "Similarly, define $\\Struct{N}_n$, $\\Struct{N}$ and $\\Struct{N}^*$. Now\nlet $\\Struct{M}$ be the !!{structure} whose !!{domain} comprises the\n!!{domain}s of $\\Struct{M}^*$ and $\\Struct{N}^*$ as well as the natural\nnumbers~$\\Nat$ along with their natural ordering~$\\le$, in the\n!!{language} with extra predicates representing the !!{domain}s\n$\\Domain{M}$, $\\Domain{N}$, $\\Domain{M}^{<\\omega}$ and\n$\\Domain{N}^{<\\omega}$ as well as predicates coding the domains of\n$\\Struct{M}_n$ and $\\Struct{N}_n$ in the sense that:\n\\begin{align*}\n  \\Domain{M_n} & = \\Setabs{a \\in \\Domain{M}}{R(a, n)}; & \n  \\Domain{N_n} & = \\Setabs{a \\in \\Domain{N}}{S(a,n)}; \\\\\n  \\Domain{M}^{<\\omega}_n & = \\Setabs{a \\in \\Domain{M}^{<\\omega}}{R(a,n)}; &\n  \\Domain{N}^{<\\omega}_n & = \\Setabs{a \\in \\Domain{N}^{<\\omega}}{S(a,n)}. \n\\end{align*}\nThe !!{structure}~$\\Struct{M}$ also has a ternary relation $J$ such\nthat $J(n, \\mathbf{a}, \\mathbf{b})$ holds if and only if\n$I_n(\\mathbf{a}, \\mathbf{b})$.",
             "term": "OLTEMODLIN-013",
             "intended_sense": "Repair the audited confirmed ambient structure symbol collision at lines 82-109, ambient coding structure and compactness model, preserving unaffected notation and argument structure.",
             "context": "lines 82-109, ambient coding structure and compactness model"
@@ -44998,19 +45142,163 @@
             "file_sha256": "c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817",
             "line_span": {
               "status": "available",
-              "start": 88,
-              "end": 154
+              "start": 133,
+              "end": 152
             },
             "byte_span": {
               "status": "available",
-              "start": 7375,
-              "end_exclusive": 14370
+              "start": 12498,
+              "end_exclusive": 14274
             },
             "printed_page": null,
-            "excerpt": "$\\Struct{M}\\equiv_n\\Struct{N}$ అయినప్పుడు $\\Struct{M}$, $\\Struct{N}$లు\n  $!E$ విషయంలో ఏకీభవించే\n$n\\in\\Nat$ ఉందని చూపడం చాలు. అప్పుడు $!E$ మొదటిస్థాయి\n\\tetoken{వాక్యానికి}{!!{sentence}} తుల్యం; దాంతో\n$\\tuple{L,\\models_L}\\le\\tuple{F,\\models}$ వస్తుంది. పరిమిత, శుద్ధ\nసంబంధాత్మక \\tetoken{భాష}{!!{language}}~$\\Lang{L}$లో పనిచేస్తున్నందున,\n\\olref[bas][pis]{thm:b-n-f} ప్రకారం\n$\\Struct{M}\\equiv_n\\Struct{N}$ అనే మాటను\n$I_n(\\emptyseq,\\emptyseq)$ అనే బీజగణిత వాక్యంతో మార్చవచ్చు.\n\\sourcecorrection{OLTEMODLIN-022}{పాక్షిక-సమరూపత అధ్యాయంలోని\nనిర్వచనం ఖాళీ అనుక్రమానికి ప్రత్యేక గుర్తు $\\emptyseq$ను వాడుతుంది.\nఆంగ్ల మూలం ఇక్కడ రెండు వాదాలుగా సమితి-ఖాళీ $\\emptyset$ను రాసింది;\nనిర్వచనంతో సరిపడే $\\emptyseq$ను పునరుద్ధరించాం.}\n\nఇప్పుడు $!E$ను స్థిరపరచి, వైరుధ్యం కోసం, ప్రతి $n$కు\n\\tetoken{నిర్మాణాలు}{!!{structure}s} $\\Struct{M}_n$,\n$\\Struct{N}_n$ ఉండి $I_n(\\emptyseq,\\emptyseq)$ అయినా,\n$\\Struct{M}_n\\models_L!E$, $\\Struct{N}_n\\not\\models_L!E$ అవుతాయని\nఅనుకుందాం. సమరూపతా ధర్మం వల్ల అన్ని $\\Struct{M}_n$లు భాషలోని\nస్థిరసంకేతాలకు ఒకే మూలకాలను అర్థనిర్దేశాలుగా ఇస్తాయని అనుకోవచ్చు.\nపరిమిత భాషలో పరమాణు \\tetoken{వాక్యాల}{!!{sentence}s} సంఖ్య\nపరిమితమే; కాబట్టి \\tetoken{వాక్యాల}{!!{sentence}s} విషయంలో అవన్నీ\nఒకే సత్యతా విలువలు ఇచ్చే ఉపక్రమాన్ని ఎంచుకోవచ్చు. సూచికలను మళ్లీ\nపేరుపెట్టి, ముందటి $\\Struct{M}$ల ఉపక్రమం నుంచి ఎంచుకున్న ఉపక్రమంలో\nఅసలు ర్యాంకు కనీసం కొత్త సూచికకు\nసమానమని కూడా అనుకుందాం; ఎందుకంటే $I_m$ అయితే $m\\ge n$కు $I_n$\nవస్తుంది. ఇప్పుడు \\tetoken{నిర్మాణం}{!!{structure}}~$\\Struct{M}$ను\nఅన్ని $\\Struct{M}_n$ల సమ్మేళనంగా తీసుకోండి: ప్రతి $\\Struct{M}_n$ను\nఉపనిర్మాణంగా కలిగిన అనన్య కనిష్ఠ నిర్మాణం. స్థిరసంకేతాల సామ్యమైన\nఅర్థనిర్దేశాలు, పరమాణు వాక్యాలపై ఏకీభవన వల్ల ఈ సమ్మేళనం బాగా\nనిర్వచితం. \\sourcecorrection{OLTEMODLIN-012}{ఆంగ్ల మూలం\nఉపక్రమం, సంయుక్త మూలకాల సముదాయాల అనుకూలత, వాటి కనిష్ఠ సమ్మేళనాలను\nనేరుగా తీసుకుంటుంది. ర్యాంకు తగ్గే ధర్మంతో ఉపక్రమాన్ని మళ్లీ\nసూచికీకరించడం, స్థిరసంకేతాల వద్ద మాత్రమే సమానీకరణతో మిగతా\nమూలకాలను వియుక్తంగా ట్యాగ్‌చేయడం, పరమాణు వాక్యాలపై ఏకీభవనతో\nసంబంధాల సమ్మేళనం బాగా నిర్వచితం కావడం, తరువాతి పరిసర నిర్మాణంలో\nమూలకాలు, అనుక్రమాలు, ప్రకృత సంఖ్యల రకాలను పరస్పరం వియుక్తంగా\nట్యాగ్‌చేయడం కూడా స్పష్టం చేశాం.}\n\\olref[lsp]{thm:abstract-p-isom}లోని నిర్మాణాన్ని అనుసరించి,\n$\\Struct{M}$ను, $\\Domain{M}\\cup\\Domain{M}^{<\\omega}$ అనే\n\\tetoken{వ్యక్తి క్షేత్రం}{!!{domain}} గల, అనుసంధాన\nవిధేయ సంకేతాలు $P$, $Q$ను చేర్చిన\n\\tetoken{భాష}{!!{language}}లోని విస్తరణ $\\Struct{M}^*$గా\nనిర్మించండి.\n\nఅలాగే $\\Struct{N}_n$, $\\Struct{N}$, $\\Struct{N}^*$లను నిర్వచించండి.\nఇప్పుడు \\tetoken{నిర్మాణం}{!!{structure}}~$\\Struct{K}$ను తీసుకుందాం:\nదాని \\tetoken{వ్యక్తి క్షేత్రం}{!!{domain}} అనేది $\\Struct{M}^*$,\n$\\Struct{N}^*$ల \\tetoken{వ్యక్తి క్షేత్రాల}{!!{domain}s}, అలాగే\nప్రకృత సంఖ్యలు $\\Nat$; $\\Nat$పై సహజ క్రమం $\\le$ ఉంటుంది. దాని\n\\tetoken{భాష}{!!{language}}లో $\\Domain{M}$, $\\Domain{N}$,\n$\\Domain{M}^{<\\omega}$, $\\Domain{N}^{<\\omega}$లను, అలాగే\n$\\Struct{M}_n$, $\\Struct{N}_n$ల క్షేత్రాలను గుర్తించే\n\\tetoken{వ్యక్తి క్షేత్రాల}{!!{domain}s} సూచకాలు ఉంటాయి; అవి\n\\begin{align*}\n  \\Domain{M_n} & = \\Setabs{a \\in \\Domain{M}}{R(a,n)}; &\n  \\Domain{N_n} & = \\Setabs{a \\in \\Domain{N}}{S(a,n)}; \\\\\n  \\Domain{M}^{<\\omega}_n & = \\Setabs{a \\in \\Domain{M}^{<\\omega}}{R(a,n)}; &\n  \\Domain{N}^{<\\omega}_n & = \\Setabs{a \\in \\Domain{N}^{<\\omega}}{S(a,n)}.\n\\end{align*}\nఅని నిర్వచించబడతాయి. వియుక్త ట్యాగ్‌లతో అన్ని నాలుగు రకాలు\nపరస్పరం కలవకుండా ఎంచుకున్నామని భావించండి.\nఈ \\tetoken{నిర్మాణం}{!!{structure}}~$\\Struct{K}$కు మరో\nత్రిస్థాన సంబంధం $J$ ఉంటుంది; $J(n,\\mathbf{a},\\mathbf{b})$ అవుతుంది\nఅప్పుడే $I_n(\\mathbf{a},\\mathbf{b})$.\n\n\\sourcecorrection{OLTEMODLIN-013}{ఆంగ్ల మూలం ఇక్కడ పరిసర",
+            "excerpt": "అలాగే $\\Struct{N}_n$, $\\Struct{N}$, $\\Struct{N}^*$లను నిర్వచించండి.\nఇప్పుడు \\tetoken{నిర్మాణం}{!!{structure}}~$\\Struct{K}$ను తీసుకుందాం:\nదాని \\tetoken{వ్యక్తి క్షేత్రం}{!!{domain}} అనేది $\\Struct{M}^*$,\n$\\Struct{N}^*$ల \\tetoken{వ్యక్తి క్షేత్రాల}{!!{domain}s}, అలాగే\nప్రకృత సంఖ్యలు $\\Nat$; $\\Nat$పై సహజ క్రమం $\\le$ ఉంటుంది. దాని\n\\tetoken{భాష}{!!{language}}లో $\\Domain{M}$, $\\Domain{N}$,\n$\\Domain{M}^{<\\omega}$, $\\Domain{N}^{<\\omega}$లను, అలాగే\n$\\Struct{M}_n$, $\\Struct{N}_n$ల క్షేత్రాలను గుర్తించే\n\\tetoken{వ్యక్తి క్షేత్రాల}{!!{domain}s} సూచకాలు ఉంటాయి; అవి\n\\begin{align*}\n  \\Domain{M_n} & = \\Setabs{a \\in \\Domain{M}}{R(a,n)}; &\n  \\Domain{N_n} & = \\Setabs{a \\in \\Domain{N}}{S(a,n)}; \\\\\n  \\Domain{M}^{<\\omega}_n & = \\Setabs{a \\in \\Domain{M}^{<\\omega}}{R(a,n)}; &\n  \\Domain{N}^{<\\omega}_n & = \\Setabs{a \\in \\Domain{N}^{<\\omega}}{S(a,n)}.\n\\end{align*}\nఅని నిర్వచించబడతాయి. వియుక్త ట్యాగ్‌లతో అన్ని నాలుగు రకాలు\nపరస్పరం కలవకుండా ఎంచుకున్నామని భావించండి.\nఈ \\tetoken{నిర్మాణం}{!!{structure}}~$\\Struct{K}$కు మరో\nత్రిస్థాన సంబంధం $J$ ఉంటుంది; $J(n,\\mathbf{a},\\mathbf{b})$ అవుతుంది\nఅప్పుడే $I_n(\\mathbf{a},\\mathbf{b})$.",
             "term": "OLTEMODLIN-013",
             "intended_sense": "Repair the audited confirmed ambient structure symbol collision at lines 82-109, ambient coding structure and compactness model, preserving unaffected notation and argument structure.",
-            "context": "translation/content/model-theory/lindstrom/lindstrom-proof.tex:88-154"
+            "context": "translation/content/model-theory/lindstrom/lindstrom-proof.tex:88-154; mapped segment OLP-0207-B012"
+          },
+          "reader_locator": {
+            "status": "pending",
+            "reason": "The cited unit is not yet integrated into the coherent full reader; no printed or assembled PDF page is guessed."
+          },
+          "evidence_refs": [
+            {
+              "path_or_uri": "evidence/SOURCE_CORRECTIONS.jsonl",
+              "bytes": 164621,
+              "sha256": "2da0f60cd5404a07c71b9295e9f3948b2f4487a816ab83ac11f9c8b737377ee4",
+              "version_or_ref": "applied-source-corrections"
+            },
+            {
+              "path_or_uri": "evidence/source-audits/2026-09-08-lindstrom-telugu/REVIEW.md",
+              "bytes": 2458,
+              "sha256": "891f6dac48a165b85cae42f6e5155ca441c88972731002af17dc772858d66910",
+              "version_or_ref": "OLTEMODLIN-20260908"
+            },
+            {
+              "path_or_uri": "evidence/source-audits/2026-09-08-lindstrom-telugu/FINDINGS.json",
+              "bytes": 21938,
+              "sha256": "cc6511259eca3ff50c9b55c2db2967679cfc902dc8da3cad66bf3e889ac3f920",
+              "version_or_ref": "OLTEMODLIN-013"
+            }
+          ]
+        },
+        {
+          "occurrence_id": "te-Telu-IN-OLTEMODLIN-013-OCC-002",
+          "unit_id": "OLP-0207",
+          "semantic_unit_id": "OLP-0207-B013",
+          "part_title": null,
+          "chapter_title": null,
+          "section_title": "model-theory/lindstrom/lindstrom-proof",
+          "source": {
+            "path": "upstream/content/model-theory/lindstrom/lindstrom-proof.tex",
+            "file_id": "OLP-0207:source",
+            "file_sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+            "line_span": {
+              "status": "available",
+              "start": 100,
+              "end": 105
+            },
+            "byte_span": {
+              "status": "available",
+              "start": 4752,
+              "end_exclusive": 5117
+            },
+            "printed_page": null,
+            "excerpt": "Now there is !!a{sentence}~$!D$ in the !!{language}~$\\Lang{L}$ augmented\nby $R$, $S$, $J$, etc., saying that $\\le$ is a discrete linear ordering\nwith first but no last element and such that $\\Struct{M}_n \\models\n!E$, $\\Struct{N}_n \\not\\models !E$, and for each $n$ in the\nordering, $J(n, \\mathbf{a}, \\mathbf{b})$ holds if and only if\n$I_n(\\mathbf{a}, \\mathbf{b})$.",
+            "term": "OLTEMODLIN-013",
+            "intended_sense": "Repair the audited confirmed ambient structure symbol collision at lines 82-109, ambient coding structure and compactness model, preserving unaffected notation and argument structure.",
+            "context": "lines 82-109, ambient coding structure and compactness model"
+          },
+          "target": {
+            "path": "translation/content/model-theory/lindstrom/lindstrom-proof.tex",
+            "file_id": "OLP-0207:target:te-Telu-IN",
+            "file_sha256": "c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817",
+            "line_span": {
+              "status": "available",
+              "start": 154,
+              "end": 171
+            },
+            "byte_span": {
+              "status": "available",
+              "start": 14275,
+              "end_exclusive": 16194
+            },
+            "printed_page": null,
+            "excerpt": "\\sourcecorrection{OLTEMODLIN-013}{ఆంగ్ల మూలం ఇక్కడ పరిసర\nనిర్మాణానికీ $\\Struct{M}$ అనే పేరే పెట్టి, తరువాత దాని నమూనాకూ\n$\\Struct{M}^*$ అనే పేరే వాడుతుంది; ఇది ముందే నిర్మించిన వైపు\n$\\Struct{M}^*$తో ఢీకొంటుంది. పరిసర నిర్మాణాన్ని $\\Struct{K}$గా,\nసంహతత్వ నమూనాను $\\Struct{K}^*$గా వేరు చేశాం.}\nఇప్పుడు $\\Lang{L}$ను $R$, $S$, $J$ మొదలైన సంకేతాలతో విస్తరించిన\nభాషలో, $\\le$ అనేది మొదటి మూలకం ఉన్నా చివరి మూలకం లేని వివిక్త\nరేఖీయ క్రమమని, ప్రతి $n$కు $\\Struct{M}_n\\models_L!E$,\n$\\Struct{N}_n\\not\\models_L!E$ అని, ఇంకా\n$J(n,\\mathbf{a},\\mathbf{b})$ అవుతుంది అప్పుడే\n$I_n(\\mathbf{a},\\mathbf{b})$ అని చెప్పే\n\\tetoken{ఒక వాక్యం}{!!a{sentence}}~$!D$ ఉంది. ఇది\n\\tetoken{భాషలో}{!!{language}} నైరూప్య తర్కపు వాక్యంగా\nసాపేక్షీకరణతో నిర్మించబడుతుంది.\n\\sourcecorrection{OLTEMODLIN-014}{ఆంగ్ల మూలం యథేచ్ఛ\nఅమూర్త $!E$కు $\\models$ అనే సాధారణ మొదటిస్థాయి సంతృప్తి సంకేతాన్ని\nవాడుతుంది. ఇక్కడ సరైన సంబంధం $\\models_L$; దానిని $\\Struct{M}_n$\nమరియు $\\Struct{N}_n$ రెండింటి వద్ద స్పష్టం చేశాం.}",
+            "term": "OLTEMODLIN-013",
+            "intended_sense": "Repair the audited confirmed ambient structure symbol collision at lines 82-109, ambient coding structure and compactness model, preserving unaffected notation and argument structure.",
+            "context": "translation/content/model-theory/lindstrom/lindstrom-proof.tex:88-154; mapped segment OLP-0207-B013"
+          },
+          "reader_locator": {
+            "status": "pending",
+            "reason": "The cited unit is not yet integrated into the coherent full reader; no printed or assembled PDF page is guessed."
+          },
+          "evidence_refs": [
+            {
+              "path_or_uri": "evidence/SOURCE_CORRECTIONS.jsonl",
+              "bytes": 164621,
+              "sha256": "2da0f60cd5404a07c71b9295e9f3948b2f4487a816ab83ac11f9c8b737377ee4",
+              "version_or_ref": "applied-source-corrections"
+            },
+            {
+              "path_or_uri": "evidence/source-audits/2026-09-08-lindstrom-telugu/REVIEW.md",
+              "bytes": 2458,
+              "sha256": "891f6dac48a165b85cae42f6e5155ca441c88972731002af17dc772858d66910",
+              "version_or_ref": "OLTEMODLIN-20260908"
+            },
+            {
+              "path_or_uri": "evidence/source-audits/2026-09-08-lindstrom-telugu/FINDINGS.json",
+              "bytes": 21938,
+              "sha256": "cc6511259eca3ff50c9b55c2db2967679cfc902dc8da3cad66bf3e889ac3f920",
+              "version_or_ref": "OLTEMODLIN-013"
+            }
+          ]
+        },
+        {
+          "occurrence_id": "te-Telu-IN-OLTEMODLIN-013-OCC-003",
+          "unit_id": "OLP-0207",
+          "semantic_unit_id": "OLP-0207-B014",
+          "part_title": null,
+          "chapter_title": null,
+          "section_title": "model-theory/lindstrom/lindstrom-proof",
+          "source": {
+            "path": "upstream/content/model-theory/lindstrom/lindstrom-proof.tex",
+            "file_id": "OLP-0207:source",
+            "file_sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+            "line_span": {
+              "status": "available",
+              "start": 107,
+              "end": 109
+            },
+            "byte_span": {
+              "status": "available",
+              "start": 5118,
+              "end_exclusive": 5319
+            },
+            "printed_page": null,
+            "excerpt": "Using the Compactness Property, we can find a model $\\Struct{M}^*$ of\n$!D$ in which the ordering contains a non-standard element~$n^*$. In\nparticular then $\\Struct{M^*}$ will contain sub!!{structure}s",
+            "term": "OLTEMODLIN-013",
+            "intended_sense": "Repair the audited confirmed ambient structure symbol collision at lines 82-109, ambient coding structure and compactness model, preserving unaffected notation and argument structure.",
+            "context": "lines 82-109, ambient coding structure and compactness model"
+          },
+          "target": {
+            "path": "translation/content/model-theory/lindstrom/lindstrom-proof.tex",
+            "file_id": "OLP-0207:target:te-Telu-IN",
+            "file_sha256": "c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817",
+            "line_span": {
+              "status": "available",
+              "start": 173,
+              "end": 203
+            },
+            "byte_span": {
+              "status": "available",
+              "start": 16195,
+              "end_exclusive": 19067
+            },
+            "printed_page": null,
+            "excerpt": "ఇప్పుడు ఈ $!D$తో కలిసి కొత్త స్థిరసంకేతం $d$ను తీసుకొని\n\\[\n\\Delta=\\{\\overline{n}<d:n\\in\\Nat\\}\n\\]\nఅని ఉంచండి. ప్రతి పరిమిత ఉపసమితి $!D\\cup\\Delta_0$కు,\nముందటి ప్రమాణ నమూనా $\\Struct{K}$లో $d$ను $\\Delta_0$లోని అన్ని\nసంఖ్యలకన్నా పెద్దదైన ప్రమాణ సంఖ్యగా అర్థనిర్దేశం చేస్తే నమూనా\nఉంటుంది. కాబట్టి సంహతత్వ ధర్మం వల్ల $!D\\cup\\Delta$కు\nఒక నమూనా $\\Struct{K}^*$ ఉంది; అందులో $d$ విలువను $n^*$గా\nరాస్తే, $n^*$ ప్రతి ప్రమాణ సంఖ్యకన్నా పెద్దది, అంటే అప్రామాణికం.\n\\sourcecorrection{OLTEMODLIN-015}{ఒక్క $!D$కు నమూనా తీసుకుంటే\nప్రమాణ క్రమమే నమూనాగా ఉండగలదు; దాంతో అప్రామాణిక $n^*$\nస్వయంగా రావడం లేదు. కొత్త స్థిరసంకేతం $d$తో\n$\\{\\overline n<d:n\\in\\Nat\\}$ రకాన్ని చేర్చాం. ప్రతి పరిమిత భాగం\nప్రమాణ పెద్ద సంఖ్యతో సంతృప్తిపరచబడుతుంది; సంహతత్వం తరువాత లభించే\n$d$ విలువే కావలసిన అప్రామాణిక సూచిక.}\nఅప్పుడు $\\Struct{K}^*$లో $\\Struct{M_{n^*}}$,\n$\\Struct{N_{n^*}}$ అనే ఉప\\-\\tetoken{నిర్మాణాలు}{!!{structure}s} ఉండి\n$\\Struct{M_{n^*}}\\models_L!E$, $\\Struct{N_{n^*}}\\not\\models_L!E$.\nకానీ $\\Domain{M_{n^*}}$, $\\Domain{N_{n^*}}$లలోని $k$-పొడవు\nఅనుక్రమాల జతకు ఈ $\\mathcal{I}$లో $\\tuple{\\mathbf{a},\\mathbf{b}}\\in\\mathcal{I}$ అవుతుంది\nఅప్పుడే $J(n^*-k,\\mathbf{a},\\mathbf{b})$ అని ఉంచండి; ఇక్కడ $k$ అనేది\n$\\mathbf{a}$, $\\mathbf{b}$ల పొడవు. ప్రతి ప్రమాణ $k$కు\n$n^*-k>0$ కాబట్టి\n$\\mathcal{I}$ పాక్షిక సమరూపతా ముందుకు-వెనుకకు ధర్మాన్ని\nనెరవేరుస్తుంది; అందువల్ల\n$\\Struct{M_{n^*}}\\simeq_p\\Struct{N_{n^*}}$. కానీ\n\\olref[lsp]{thm:abstract-p-isom} ప్రకారం $\\Struct{M_{n^*}}$,\n$\\Struct{N_{n^*}}$లు $L$-వాక్య తుల్యాలు,\nఇది వైరుధ్యం.\n\\end{proof}",
+            "term": "OLTEMODLIN-013",
+            "intended_sense": "Repair the audited confirmed ambient structure symbol collision at lines 82-109, ambient coding structure and compactness model, preserving unaffected notation and argument structure.",
+            "context": "translation/content/model-theory/lindstrom/lindstrom-proof.tex:88-154; mapped segment OLP-0207-B014"
           },
           "reader_locator": {
             "status": "pending",

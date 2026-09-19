@@ -1970,7 +1970,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: restored emptyseq notation for the empty sequence; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:85-98; printed/PDF page pending
+- Occurrences: OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:85-100; printed/PDF page pending; OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:102-131; printed/PDF page pending
 
 - Please double-check: Please double-check that both base-tuple occurrences use the chapter’s empty-sequence notation emptyseq rather than the empty-set notation emptyset.
 
@@ -1980,7 +1980,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: made the compatible-copy, rank-preserving reindexing, and tagged-sort preparations explicit; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:108-122; printed/PDF page pending
+- Occurrences: OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:102-131; printed/PDF page pending; OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:133-152; printed/PDF page pending
 
 - Please double-check: Please double-check that the subsequence is reindexed rank-preservingly and that compatible copies and tagged disjoint sorts make the stated unions well defined.
 
@@ -1990,7 +1990,7 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Chosen wording/treatment: separated the ambient K and compactness model K-star from the side structures; adjacent sourcecorrection discloses the repair
 
-- Occurrences: OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:88-154; printed/PDF page pending
+- Occurrences: OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:133-152; printed/PDF page pending; OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:154-171; printed/PDF page pending; OLP-0207; model-theory/lindstrom/lindstrom-proof; translation/content/model-theory/lindstrom/lindstrom-proof.tex:173-203; printed/PDF page pending
 
 - Please double-check: Please double-check that K names the ambient structure and K-star its compactness model, without colliding with the previously constructed M-star side structure.
 

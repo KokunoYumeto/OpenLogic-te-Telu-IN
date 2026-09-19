@@ -19,8 +19,44 @@ const normalize = value => value.replace(/\r\n/g, '\n');
 const manifest = fs.readFileSync(path.join(root, 'evidence', 'SOURCE_MANIFEST.jsonl'), 'utf8')
   .trim().split(/\r?\n/).map(JSON.parse);
 const manifestByUnit = new Map(manifest.map(unit => [unit.unit_id, unit]));
+const correctionsPath = path.join(path.dirname(ledgerPath), 'SOURCE_CORRECTIONS.jsonl');
+const corrections = fs.readFileSync(correctionsPath, 'utf8')
+  .trim().split(/\r?\n/).map(JSON.parse)
+  .filter(correction => correction.status.startsWith('applied'));
+const correctionsByUnit = new Map();
+for (const correction of corrections) {
+  const unitCorrections = correctionsByUnit.get(correction.unit_id) ?? [];
+  unitCorrections.push(correction);
+  correctionsByUnit.set(correction.unit_id, unitCorrections);
+}
 const originalLines = fs.readFileSync(ledgerPath, 'utf8').trim().split(/\r?\n/);
 const records = originalLines.map(JSON.parse);
+
+function sourceRanges(locator) {
+  const match = locator?.match(/^lines?\s+((?:\d+(?:-\d+)?(?:\s*(?:,\s*|and\s+))?)+)/iu);
+  if (!match) return [];
+  return [...match[1].matchAll(/(\d+)(?:-(\d+))?/gu)].map(item => ({
+    start: Number(item[1]),
+    end: Number(item[2] ?? item[1]),
+  }));
+}
+
+function correctionIdsForBlock(unit, sourceBlock, targetBlock) {
+  const macroIds = new Set(
+    [...targetBlock.block.matchAll(/\\sourcecorrection\{([^{}]+)\}/gu)].map(match => match[1]),
+  );
+  const unitCorrections = correctionsByUnit.get(unit.unit_id) ?? [];
+  const mappedIds = unitCorrections
+    .filter(correction => {
+      if (macroIds.has(correction.finding_id)) return true;
+      if (correction.source_path !== unit.source_path) return false;
+      return sourceRanges(correction.source_locator).some(range =>
+        range.start <= sourceBlock.endLine && sourceBlock.startLine <= range.end,
+      );
+    })
+    .map(correction => correction.finding_id);
+  return [...new Set([...mappedIds, ...macroIds])];
+}
 
 function blocksWithSpans(raw) {
   const normalized = normalize(raw);
@@ -65,7 +101,7 @@ for (let order = first; order <= last; order += 1) {
       target_end_line: targetBlocks[i].endLine,
       source_segment_sha256: sha(sourceBlocks[i].block),
       translation_segment_sha256: sha(targetBlocks[i].block),
-      source_corrections: [...targetBlocks[i].block.matchAll(/\\sourcecorrection\{([^{}]+)\}/gu)].map(match => match[1]),
+      source_corrections: correctionIdsForBlock(unit, sourceBlocks[i], targetBlocks[i]),
     };
     const nextLine = JSON.stringify(refreshed);
     if (nextLine !== originalLines[recordIndex]) changed.push({ recordIndex, oldLine: originalLines[recordIndex], nextLine });

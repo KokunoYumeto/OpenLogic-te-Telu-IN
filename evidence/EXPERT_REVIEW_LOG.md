@@ -5346,7 +5346,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: restored emptyseq notation for the empty sequence; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0207; model-theory/lindstrom/lindstrom-proof; lines 61-69, two I_n base-tuple occurrences ↔ translation/content/model-theory/lindstrom/lindstrom-proof.tex:85-98 (OLP-0207-B010); printed/PDF page pending
+- Exact implementation: OLP-0207; model-theory/lindstrom/lindstrom-proof; lines 54-64; mapped segment within audited scope lines 61-69, two I_n base-tuple occurrences ↔ translation/content/model-theory/lindstrom/lindstrom-proof.tex:85-100 (OLP-0207-B010); printed/PDF page pending; OLP-0207; model-theory/lindstrom/lindstrom-proof; lines 66-80; mapped segment within audited scope lines 61-69, two I_n base-tuple occurrences ↔ translation/content/model-theory/lindstrom/lindstrom-proof.tex:102-131 (OLP-0207-B011); printed/PDF page pending
 
 - Authorities actually checked: OLTEMODLIN-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -5370,7 +5370,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: made the compatible-copy, rank-preserving reindexing, and tagged-sort preparations explicit; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0207; model-theory/lindstrom/lindstrom-proof; lines 66-95, subsequence and union constructions ↔ translation/content/model-theory/lindstrom/lindstrom-proof.tex:108-122 (OLP-0207-B011); printed/PDF page pending
+- Exact implementation: OLP-0207; model-theory/lindstrom/lindstrom-proof; lines 66-80; mapped segment within audited scope lines 66-95, subsequence and union constructions ↔ translation/content/model-theory/lindstrom/lindstrom-proof.tex:102-131 (OLP-0207-B011); printed/PDF page pending; OLP-0207; model-theory/lindstrom/lindstrom-proof; lines 82-98; mapped segment within audited scope lines 66-95, subsequence and union constructions ↔ translation/content/model-theory/lindstrom/lindstrom-proof.tex:133-152 (OLP-0207-B012); printed/PDF page pending
 
 - Authorities actually checked: OLTEMODLIN-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
@@ -5394,7 +5394,7 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Chosen wording/treatment: separated the ambient K and compactness model K-star from the side structures; adjacent sourcecorrection discloses the repair
 
-- Exact implementation: OLP-0207; model-theory/lindstrom/lindstrom-proof; lines 82-109, ambient coding structure and compactness model ↔ translation/content/model-theory/lindstrom/lindstrom-proof.tex:88-154 (OLP-0207-B013); printed/PDF page pending
+- Exact implementation: OLP-0207; model-theory/lindstrom/lindstrom-proof; lines 82-98; mapped segment within audited scope lines 82-109, ambient coding structure and compactness model ↔ translation/content/model-theory/lindstrom/lindstrom-proof.tex:133-152 (OLP-0207-B012); printed/PDF page pending; OLP-0207; model-theory/lindstrom/lindstrom-proof; lines 100-105; mapped segment within audited scope lines 82-109, ambient coding structure and compactness model ↔ translation/content/model-theory/lindstrom/lindstrom-proof.tex:154-171 (OLP-0207-B013); printed/PDF page pending; OLP-0207; model-theory/lindstrom/lindstrom-proof; lines 107-122; mapped segment within audited scope lines 82-109, ambient coding structure and compactness model ↔ translation/content/model-theory/lindstrom/lindstrom-proof.tex:173-203 (OLP-0207-B014); printed/PDF page pending
 
 - Authorities actually checked: OLTEMODLIN-20260908; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 

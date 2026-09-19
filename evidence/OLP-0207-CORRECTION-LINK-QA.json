@@ -1,0 +1,119 @@
+{
+  "schema": "openlogic-provenance-link-qa/1",
+  "status": "pass_bounded_evidence_only",
+  "date": "2026-09-19",
+  "base_public_commit": "972e4371e92ce70a494d51364f6bfd7b82cab701",
+  "trigger": {
+    "kind": "manager_replay",
+    "scope": "OLP-0207-B012",
+    "evidence_bytes": 16831,
+    "evidence_sha256": "e102d5ea0c9c85ce903c2ebdfa3396a1baaca23093e7bc42d3c5774e5c8ce616"
+  },
+  "scope": {
+    "unit_id": "OLP-0207",
+    "segment_id": "OLP-0207-B012",
+    "correction_kind": "occurrence-link repair",
+    "translation_restarted": false,
+    "reader_built": false,
+    "tex_invoked": false,
+    "whole_corpus_rerun": false
+  },
+  "unchanged_content": {
+    "source": {
+      "path": "upstream/content/model-theory/lindstrom/lindstrom-proof.tex",
+      "bytes": 6045,
+      "sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+      "matches_base_commit": true
+    },
+    "translation": {
+      "path": "translation/content/model-theory/lindstrom/lindstrom-proof.tex",
+      "bytes": 19083,
+      "sha256": "c3ee6421f777b5c1c9e66f6037e95da4c02f88f7cea8c9660b98e8689a2c3817",
+      "matches_base_commit": true
+    },
+    "requested_segment": {
+      "source_line_span": [82, 98],
+      "target_line_span": [133, 152],
+      "source_segment_sha256": "7bf78512433737e503712446447286381363dfbd36f54e75bcf6296b93dba0bf",
+      "translation_segment_sha256": "e9133e108603d5b061373ec546f370ffa5904b87cbf1d87442dd9d71eb7113af",
+      "canon_passage_retained": "TE-P030"
+    }
+  },
+  "mapper_policy": {
+    "script": "scripts/refresh-segment-ledger.mjs",
+    "script_bytes": 6237,
+    "script_sha256": "6deffd1fccf06bdce2c7de9b030bcc877bb084b9e5f62f21237cd83761f56baf",
+    "disclosure_macro_block_is_linked": true,
+    "every_block_overlapping_an_explicit_audited_source_line_range_is_linked": true,
+    "unparsed_prose_locators_do_not_create_speculative_span_links": true,
+    "refresh_command": "node scripts/refresh-segment-ledger.mjs 207 207 --write",
+    "idempotent_second_pass_changed_records": 0
+  },
+  "ledger": {
+    "path": "evidence/SEGMENT_CANON_USE.jsonl",
+    "records": 3338,
+    "previous_git_blob": "732bb4b78be0c2510c511791a0939a8abccea95c",
+    "current_git_blob": "dbc07067dc6e41623f59ef2664ba50bac053e2ab",
+    "bytes": 7035702,
+    "sha256": "962102cf43d745b426dbe7182ffc23129c0bfffd6d32267620315fb6d4f76fe5",
+    "changed_records": 3,
+    "links": [
+      {
+        "segment_id": "OLP-0207-B011",
+        "before": ["OLTEMODLIN-012"],
+        "after": ["OLTEMODLIN-022", "OLTEMODLIN-012"],
+        "reason": "The audited lines 61-69 include the second repaired empty-sequence occurrence in this block."
+      },
+      {
+        "segment_id": "OLP-0207-B012",
+        "before": [],
+        "after": ["OLTEMODLIN-012", "OLTEMODLIN-013"],
+        "reason": "This block contains the tagged-disjoint-sort preparation and the ambient M-to-K rename."
+      },
+      {
+        "segment_id": "OLP-0207-B014",
+        "before": ["OLTEMODLIN-015"],
+        "after": ["OLTEMODLIN-013", "OLTEMODLIN-015"],
+        "reason": "The audited lines 82-109 reach the compactness-model rename in source lines 107-109."
+      }
+    ]
+  },
+  "dependent_evidence": {
+    "expert_review": {
+      "implementation_occurrences": 363,
+      "json_path": "evidence/EXPERT_REVIEW_LOG.json",
+      "json_bytes": 1159085,
+      "json_sha256": "d6b2cfb6d2cc0c1adfb9d4f4aaf92bf2ae7abea48e88fd5a77432026bc004693",
+      "csv_path": "evidence/EXPERT_REVIEW_OCCURRENCES.csv",
+      "csv_bytes": 478568,
+      "csv_sha256": "3e32e6a26236b093f60458ec5f7efacc99d25ddfe8d33ea13fd43289044b514f"
+    },
+    "translation_decisions": {
+      "decisions": 227,
+      "source_corrections": 164,
+      "occurrences": 371,
+      "json_path": "evidence/DECISIONS.json",
+      "json_bytes": 3187239,
+      "json_sha256": "a267f2c2678c26986cf2530f3d704612b18cecd085279874d6d0c1862d2a5b3e",
+      "csv_path": "evidence/DECISION_OCCURRENCES.csv",
+      "csv_bytes": 553907,
+      "csv_sha256": "2379298ede3b4b8156c8e2fd963f969f3cfc0163ae8393ce90fe1eb7620840cc"
+    },
+    "qa": {
+      "path": "evidence/TRANSLATION_DECISION_QA.json",
+      "bytes": 2530,
+      "sha256": "d3711d35ef0ae5acc5ee84c57de4d337347272fd45ab81f590b1deb69610d53a"
+    }
+  },
+  "checks": {
+    "requested_links_exact": true,
+    "same_unit_sibling_links_supported_by_audited_ranges": true,
+    "source_and_translation_hashes_unchanged": true,
+    "source_and_target_segment_hashes_unchanged": true,
+    "correction_ids_already_exist_and_remain_applied_qa_pass": true,
+    "decision_schema_validation": true,
+    "decision_occurrence_csv_reconciled": true,
+    "reader_scope_unchanged": true,
+    "result": "pass"
+  }
+}
