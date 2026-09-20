@@ -1,0 +1,38 @@
+% Part: second-order-logic
+% Chapter: syntax-and-semantics
+% Section: semantic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{syn}{sem}
+\olsection{అర్థపర భావనలు}
+
+\begin{explain}
+\emph{చెల్లుబాటుతనం}, \emph{అనుగమనం}, \emph{సంతృప్తిపరచదగినతనం}
+అనే కేంద్ర తార్కిక భావనలను ద్వితీయ-స్థాయి తర్కానికి మొదటిస్థాయి
+తర్కంలోలాగే నిర్వచిస్తాం; అయితే ఆధారమైన సంతృప్తి సంబంధం ఇప్పుడు
+ద్వితీయ-స్థాయి \tetoken{సూత్రాలకు}{!!{formula}s} సంబంధించినది. వాస్తవానికి, ద్వితీయ-స్థాయి
+\tetoken{వాక్యం}{!!{sentence}} అంటే విధేయ, ప్రమేయ చరాలతో సహా అన్ని చరాలూ బద్ధమైన
+\tetoken{ఒక సూత్రమే}{!!a{formula}}.
+\end{explain}
+
+\begin{defn}[చెల్లుబాటుతనం]
+ఒక వాక్యం~$!A$ \emph{చెల్లుబాటు అవుతుంది}, $\Entails !A$, అప్పుడే,
+అప్పుడు మాత్రమే ప్రతి \tetoken{నిర్మాణం}{!!{structure}}~$\Struct M$కు $\Sat{M}{!A}$.
+\end{defn}
+
+\begin{defn}[అర్థపర అనుగమనం]
+వాక్యాల సమితి~$\Gamma$ నుంచి వాక్యం~$!A$ \emph{అనుగమిస్తుంది},
+$\Gamma \Entails !A$, అప్పుడే, అప్పుడు మాత్రమే $\Sat{M}{\Gamma}$
+అయ్యే ప్రతి \tetoken{నిర్మాణం}{!!{structure}}~$\Struct M$కు $\Sat{M}{!A}$.
+\end{defn}
+
+\begin{defn}[సంతృప్తిపరచదగినతనం]
+ఏదో ఒక \tetoken{నిర్మాణం}{!!{structure}}~$\Struct M$కు $\Sat{M}{\Gamma}$ అయితే,
+వాక్యాల సమితి~$\Gamma$ \emph{సంతృప్తిపరచదగినది}. $\Gamma$
+సంతృప్తిపరచదగినది కాకపోతే దాన్ని \emph{సంతృప్తిపరచదగనిది} అంటాం.
+\end{defn}
+
+\end{document}

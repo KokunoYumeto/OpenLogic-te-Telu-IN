@@ -1,0 +1,104 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTESOLSYN-20260921",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0326",
+      "OLP-0329"
+    ],
+    "finding_count": 6
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTESOLSYN-001",
+      "unit_id": "OLP-0326",
+      "classification": "confirmed_relation_assignment_cases_omitted",
+      "source": {
+        "path": "content/second-order-logic/syntax-and-semantics/satisfaction.tex",
+        "bytes": 8679,
+        "sha256": "be2351bde2b55b0a7446cfdfd60c62f6939a1061ffa900d9a5939305c403bfc7",
+        "locator": "lines 37-40, explanation following the second-order assignment definition"
+      },
+      "finding": "The explanation omits both relation assignments: a structure's predicate-symbol-to-relation case and an assignment's relation-variable-to-relation case.",
+      "controlling_evidence": "The immediately preceding definition includes relation variables and the surrounding first-order semantics assigns relations to predicate symbols; terms and atomic formulas require both cases.",
+      "required_translation_handling": "State both omitted relation cases and add an adjacent OLTESOLSYN-001 disclosure."
+    },
+    {
+      "finding_id": "OLTESOLSYN-002",
+      "unit_id": "OLP-0326",
+      "classification": "confirmed_structure_relation_symbol_collision_in_substitution",
+      "source": {
+        "path": "content/second-order-logic/syntax-and-semantics/satisfaction.tex",
+        "bytes": 8679,
+        "sha256": "be2351bde2b55b0a7446cfdfd60c62f6939a1061ffa900d9a5939305c403bfc7",
+        "locator": "lines 65-88, definition of relation-variable substitution"
+      },
+      "finding": "The definition uses M both for the structure and for the relation value, producing M as an element of its own structure-relative powerset notation.",
+      "controlling_evidence": "A relation-variable value must be an n-place relation R on the fixed domain of structure M, exactly as the neighboring object and function substitution clauses distinguish their assigned values from the structure.",
+      "required_translation_handling": "Rename the relation value to R throughout that clause and add an adjacent OLTESOLSYN-002 disclosure."
+    },
+    {
+      "finding_id": "OLTESOLSYN-003",
+      "unit_id": "OLP-0326",
+      "classification": "confirmed_structure_relation_symbol_collision_in_satisfaction",
+      "source": {
+        "path": "content/second-order-logic/syntax-and-semantics/satisfaction.tex",
+        "bytes": 8679,
+        "sha256": "be2351bde2b55b0a7446cfdfd60c62f6939a1061ffa900d9a5939305c403bfc7",
+        "locator": "lines 90-116, universal and existential relation-quantifier satisfaction clauses"
+      },
+      "finding": "Both relation-quantifier clauses use M for the fixed structure and for the quantified relation, obscuring which object is supplied to the relation variable.",
+      "controlling_evidence": "The clauses range over every or at least one relation R contained in the n-fold domain of the fixed structure M, while satisfaction remains evaluated in M.",
+      "required_translation_handling": "Rename the quantified relation to R in both clauses and add an adjacent OLTESOLSYN-003 disclosure."
+    },
+    {
+      "finding_id": "OLTESOLSYN-004",
+      "unit_id": "OLP-0326",
+      "classification": "confirmed_structure_subset_symbol_collision_in_example",
+      "source": {
+        "path": "content/second-order-logic/syntax-and-semantics/satisfaction.tex",
+        "bytes": 8679,
+        "sha256": "be2351bde2b55b0a7446cfdfd60c62f6939a1061ffa900d9a5939305c403bfc7",
+        "locator": "lines 181-182, concluding subset choice in the second satisfaction example"
+      },
+      "finding": "The example uses M simultaneously for the structure and for a proper subset of its domain.",
+      "controlling_evidence": "The same example already names the quantified subset N, so its conclusion requires N to be a proper subset of the domain of structure M.",
+      "required_translation_handling": "Use N for the proper subset throughout the concluding choice and add an adjacent OLTESOLSYN-004 disclosure."
+    },
+    {
+      "finding_id": "OLTESOLSYN-005",
+      "unit_id": "OLP-0329",
+      "classification": "confirmed_structure_subset_symbol_collision_in_forward_proof",
+      "source": {
+        "path": "content/second-order-logic/syntax-and-semantics/inf-count.tex",
+        "bytes": 5495,
+        "sha256": "26b10cbda98d193ed98437efd26dd2b759a818f49656ff465962fd69452bd4f8",
+        "locator": "lines 93-102, forward direction of the Count proposition"
+      },
+      "finding": "The forward proof uses M for both the fixed structure and an arbitrary subset of its domain throughout the relation assignment.",
+      "controlling_evidence": "The proof must quantify over an arbitrary subset S of the domain of structure M and show that closure under the enumerating successor function forces S to equal that domain.",
+      "required_translation_handling": "Rename the arbitrary subset to S throughout the argument and add an adjacent OLTESOLSYN-005 disclosure."
+    },
+    {
+      "finding_id": "OLTESOLSYN-006",
+      "unit_id": "OLP-0329",
+      "classification": "confirmed_structure_subset_symbol_collision_in_reverse_proof",
+      "source": {
+        "path": "content/second-order-logic/syntax-and-semantics/inf-count.tex",
+        "bytes": 5495,
+        "sha256": "26b10cbda98d193ed98437efd26dd2b759a818f49656ff465962fd69452bd4f8",
+        "locator": "lines 104-122, reverse direction of the Count proposition"
+      },
+      "finding": "The reverse proof uses M both for the fixed structure and for the subset consisting of the finite iterates of f from m.",
+      "controlling_evidence": "The proof defines a distinct orbit subset S inside the domain of structure M, verifies the antecedent under the assignment X mapped to S, and then derives S equal to the domain.",
+      "required_translation_handling": "Rename the orbit subset to S throughout the argument and add an adjacent OLTESOLSYN-006 disclosure."
+    }
+  ]
+}

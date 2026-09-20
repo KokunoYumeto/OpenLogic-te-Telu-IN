@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 318 of 722 draft units**. This view selects 318 of 344 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 326 of 722 draft units**. This view selects 325 of 351 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -483,6 +483,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0312; incompleteness/incompleteness-provability/incompleteness-provability; translation/content/incompleteness/incompleteness-provability/incompleteness-provability.tex:8; printed/PDF page pending; OLP-0313; incompleteness/incompleteness-provability/introduction; translation/content/incompleteness/incompleteness-provability/introduction.tex:50-58; printed/PDF page pending; OLP-0314; incompleteness/incompleteness-provability/fixed-point-lemma; translation/content/incompleteness/incompleteness-provability/fixed-point-lemma.tex:11; printed/PDF page pending; OLP-0315; incompleteness/incompleteness-provability/first-incompleteness-thm; translation/content/incompleteness/incompleteness-provability/first-incompleteness-thm.tex:11; printed/PDF page pending; OLP-0316; incompleteness/incompleteness-provability/rosser-thm; translation/content/incompleteness/incompleteness-provability/rosser-thm.tex:11; printed/PDF page pending; OLP-0317; incompleteness/incompleteness-provability/godels-paper; translation/content/incompleteness/incompleteness-provability/godels-paper.tex:11; printed/PDF page pending; OLP-0318; incompleteness/incompleteness-provability/provability-conditions; translation/content/incompleteness/incompleteness-provability/provability-conditions.tex:11; printed/PDF page pending; OLP-0319; incompleteness/incompleteness-provability/second-incompleteness-thm; translation/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:11; printed/PDF page pending; OLP-0320; incompleteness/incompleteness-provability/lob-thm; translation/content/incompleteness/incompleteness-provability/lob-thm.tex:11; printed/PDF page pending; OLP-0321; incompleteness/incompleteness-provability/tarski-thm; translation/content/incompleteness/incompleteness-provability/tarski-thm.tex:11; printed/PDF page pending
 
 - Please double-check: Please double-check whether “అసంపూర్ణత మరియు నిరూపణీయత / స్థిరబిందు ఉపసిద్ధాంతం / వికర్ణీకరణ / గ్యోడెల్ వాక్యం / నిరూపణ సంబంధం మరియు దానికి ప్రాతినిధ్యం వహించే నిరూపణ సూత్రం / నిరూపణీయత విధేయం / ఖండన / రాసర్ నిరూపణీయత / పియానో అంకగణితం / వ్యుత్పాద్యతా షరతులు / అవైరుధ్య ప్రకటన / ప్రతిబింబ సూత్రం / లోబ్ సిద్ధాంతం / ప్రమాణ నమూనాలో నిర్వచనీయత / అంకగణితపు సత్య వాక్యాల సిద్ధాంతం / సత్యపు నిర్వచనాతీతత / ఉద్దేశిత అర్థనిర్దేశం / నిలుపుదల సంబంధం” is idiomatic and technically standard for “incompleteness and provability / fixed-point lemma / diagonalization / Goedel sentence / proof relation and representing proof formula / provability predicate / refutation / Rosser provability / Peano arithmetic / derivability conditions / consistency statement / reflection principle / Loeb's theorem / definability in the standard model / true arithmetic / undefinability of truth / intended interpretation / halting relation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T075 — second-order logic / relation and function variable / standard semantics / variable assignment / x-variant / second-order term and formula / validity / semantic entailment / satisfiability / expressive power / definable relation / transitive closure / Dedekind infinite / enumerable and denumerable domain
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: ద్వితీయ-స్థాయి తర్కం / సంబంధ చరం మరియు ప్రమేయ చరం / ప్రామాణిక అర్థవిచారం / చర నిర్దేశం / x-భేదరూపం / ద్వితీయ-స్థాయి పదం మరియు సూత్రం / చెల్లుబాటుతనం / అర్థపర అనుగమనం / సంతృప్తిపరచదగినతనం / వ్యక్తీకరణశక్తి / నిర్వచించదగిన సంబంధం / సంక్రమణ సంవృతి / డెడెకిండ్ అనంతం / లెక్కించదగిన మరియు అనంతంగా లెక్కించదగిన వ్యక్తి క్షేత్రం
+
+- Occurrences: OLP-0322; second-order-logic/second-order-logic; translation/content/second-order-logic/second-order-logic.tex:7; printed/PDF page pending; OLP-0323; second-order-logic/syntax-and-semantics/syntax-and-semantics; translation/content/second-order-logic/syntax-and-semantics/syntax-and-semantics.tex:8; printed/PDF page pending; OLP-0324; second-order-logic/syntax-and-semantics/introduction; translation/content/second-order-logic/syntax-and-semantics/introduction.tex:30-58; printed/PDF page pending; OLP-0325; second-order-logic/syntax-and-semantics/terms-formulas; translation/content/second-order-logic/syntax-and-semantics/terms-formulas.tex:50-57; printed/PDF page pending; OLP-0326; second-order-logic/syntax-and-semantics/satisfaction; translation/content/second-order-logic/syntax-and-semantics/satisfaction.tex:96-107; printed/PDF page pending; OLP-0327; second-order-logic/syntax-and-semantics/semantic-notions; translation/content/second-order-logic/syntax-and-semantics/semantic-notions.tex:21-24; printed/PDF page pending; OLP-0328; second-order-logic/syntax-and-semantics/expressive-power; translation/content/second-order-logic/syntax-and-semantics/expressive-power.tex:65-82; printed/PDF page pending; OLP-0329; second-order-logic/syntax-and-semantics/inf-count; translation/content/second-order-logic/syntax-and-semantics/inf-count.tex:14-43; printed/PDF page pending
+
+- Please double-check: Please double-check whether “ద్వితీయ-స్థాయి తర్కం / సంబంధ చరం మరియు ప్రమేయ చరం / ప్రామాణిక అర్థవిచారం / చర నిర్దేశం / x-భేదరూపం / ద్వితీయ-స్థాయి పదం మరియు సూత్రం / చెల్లుబాటుతనం / అర్థపర అనుగమనం / సంతృప్తిపరచదగినతనం / వ్యక్తీకరణశక్తి / నిర్వచించదగిన సంబంధం / సంక్రమణ సంవృతి / డెడెకిండ్ అనంతం / లెక్కించదగిన మరియు అనంతంగా లెక్కించదగిన వ్యక్తి క్షేత్రం” is idiomatic and technically standard for “second-order logic / relation and function variable / standard semantics / variable assignment / x-variant / second-order term and formula / validity / semantic entailment / satisfiability / expressive power / definable relation / transitive closure / Dedekind infinite / enumerable and denumerable domain” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -3183,3 +3193,63 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0320; incompleteness/incompleteness-provability/lob-thm; translation/content/incompleteness/incompleteness-provability/lob-thm.tex:118-120; printed/PDF page pending
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTEINP-005 is mathematically precise and idiomatic.
+
+## REV-OLTESOLSYN-001 — OLTESOLSYN-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored the predicate-symbol-to-relation and relation-variable-to-relation cases omitted by the prose summary; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0326; second-order-logic/syntax-and-semantics/satisfaction; translation/content/second-order-logic/syntax-and-semantics/satisfaction.tex:37-43; printed/PDF page pending
+
+- Please double-check: Please double-check that the prose summary explicitly includes predicate-symbol-to-relation and relation-variable-to-relation assignments.
+
+## REV-OLTESOLSYN-002 — OLTESOLSYN-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: kept M for the structure and renamed the relation value to R throughout the relation-variable substitution clause; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0326; second-order-logic/syntax-and-semantics/satisfaction; translation/content/second-order-logic/syntax-and-semantics/satisfaction.tex:69-93; printed/PDF page pending
+
+- Please double-check: Please double-check that R consistently denotes the relation value while M remains the fixed structure in the substitution definition.
+
+## REV-OLTESOLSYN-003 — OLTESOLSYN-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: kept M for the fixed structure and renamed the quantified relation to R in both relation-quantifier clauses; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0326; second-order-logic/syntax-and-semantics/satisfaction; translation/content/second-order-logic/syntax-and-semantics/satisfaction.tex:96-126; printed/PDF page pending
+
+- Please double-check: Please double-check that R consistently denotes the quantified relation in both second-order relation-quantifier satisfaction clauses.
+
+## REV-OLTESOLSYN-004 — OLTESOLSYN-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: kept M for the structure and used the example's existing N for its proper subset; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0326; second-order-logic/syntax-and-semantics/satisfaction; translation/content/second-order-logic/syntax-and-semantics/satisfaction.tex:187-197; printed/PDF page pending
+
+- Please double-check: Please double-check that N, already used for the example subset, consistently replaces the source collision with the structure symbol M.
+
+## REV-OLTESOLSYN-005 — OLTESOLSYN-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: kept M for the structure and renamed the arbitrary subset to S throughout the forward argument; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0329; second-order-logic/syntax-and-semantics/inf-count; translation/content/second-order-logic/syntax-and-semantics/inf-count.tex:98-110; printed/PDF page pending
+
+- Please double-check: Please double-check that S denotes the arbitrary subset throughout the forward Count proof while M remains the structure.
+
+## REV-OLTESOLSYN-006 — OLTESOLSYN-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: kept M for the structure and renamed the orbit subset to S throughout the reverse argument; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0329; second-order-logic/syntax-and-semantics/inf-count; translation/content/second-order-logic/syntax-and-semantics/inf-count.tex:112-133; printed/PDF page pending
+
+- Please double-check: Please double-check that S denotes the orbit subset throughout the reverse Count proof while M remains the structure.

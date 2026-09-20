@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **318 of 722 source units drafted**. This readable view contains all 344 decisions and 639 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **326 of 722 source units drafted**. This readable view contains all 351 decisions and 653 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2144,6 +2144,39 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T074-OCC-008; OLP-0319; OLP-0319-B005; source upstream/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:11 bytes 206-252 SHA-256 8b96ecc610effe58fb1c422015965d42725f9f3832a00558e2b15753861a55fe; target translation/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:11 bytes 206-293 SHA-256 d38cdfdc7cdb2f146d0c1780d370e32dafc9d9f071a6ef74e7d000662892fc26; reader page pending.
   - te-Telu-IN-TE-T074-OCC-009; OLP-0320; OLP-0320-B005; source upstream/content/incompleteness/incompleteness-provability/lob-thm.tex:11 bytes 188-216 SHA-256 7b95df7ebaf50f218a71b706c3189750dd9499bb66f2b725dcbf3dec778fd73f; target translation/content/incompleteness/incompleteness-provability/lob-thm.tex:11 bytes 188-241 SHA-256 e29c8abd9c0e1cf41f1359a563527c1e29661a6733afe668a310781d01f7e080; reader page pending.
   - te-Telu-IN-TE-T074-OCC-010; OLP-0321; OLP-0321-B005; source upstream/content/incompleteness/incompleteness-provability/tarski-thm.tex:11 bytes 188-228 SHA-256 f967d78857eb1d7c618a36065f6506072ade75b3f30fefe3dc4728be74da2226; target translation/content/incompleteness/incompleteness-provability/tarski-thm.tex:11 bytes 188-256 SHA-256 52227785fb8f73f22d21b518db8b81928141b38d58ebd598c472d620e01e17c8; reader page pending.
+
+## te-Telu-IN-TE-T075 — second-order logic / relation and function variable / standard semantics / variable assignment / x-variant / second-order term and formula / validity / semantic entailment / satisfiability / expressive power / definable relation / transitive closure / Dedekind infinite / enumerable and denumerable domain
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: ద్వితీయ-స్థాయి తర్కం / సంబంధ చరం మరియు ప్రమేయ చరం / ప్రామాణిక అర్థవిచారం / చర నిర్దేశం / x-భేదరూపం / ద్వితీయ-స్థాయి పదం మరియు సూత్రం / చెల్లుబాటుతనం / అర్థపర అనుగమనం / సంతృప్తిపరచదగినతనం / వ్యక్తీకరణశక్తి / నిర్వచించదగిన సంబంధం / సంక్రమణ సంవృతి / డెడెకిండ్ అనంతం / లెక్కించదగిన మరియు అనంతంగా లెక్కించదగిన వ్యక్తి క్షేత్రం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “second-order logic / relation and function variable / standard semantics / variable assignment / x-variant / second-order term and formula / validity / semantic entailment / satisfiability / expressive power / definable relation / transitive closure / Dedekind infinite / enumerable and denumerable domain” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low semantic uncertainty because the specialized notions are fixed by explicit formation, assignment, satisfaction and definability clauses and by proved characterizations; medium to high nomenclatural uncertainty for standard second-order semantics, x-variant, expressive-power and transitive-closure compounds pending independent native specialist review
+
+- Rationale: TE-P005 supplies Andhra Pradesh native number and countability prose. TE-P008, TE-P010--TE-P011 and TE-P034 supply the distinct school-mathematics set, ordered-pair, relation and function register. TE-P003 and TE-P032 support mathematical definition, theorem and proof prose. TE-P018--TE-P019 and TE-P024--TE-P033 directly support formal logic, truth values, formulas, sentences, predicates, variables, quantifiers, first-order scope, individual domains, derivations and semantic consequence in the pre-bifurcation logic witness retained through its Telangana-hosted copy. The witnesses do not directly attest full standard second-order semantics, second-order relation/function variables, expressive power, transitive closure or Dedekind infinitude. The frozen formation clauses, assignment and satisfaction definitions, semantic definitions, identity and transitive-closure examples, and Inf/Count characterizations in OLP-0322--OLP-0329 control those exact senses; TE-T034, TE-T047, TE-T051, TE-T058, TE-T061 and TE-T070--TE-T074 supply earlier reversible choices. డెడెకిండ్ is the source eponym. SOL, n-place notation, formula and relation metavariables, Inf, Fin and Count remain protected formal notation; no unexplained English technical headword remains in reader-facing prose
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P025 [checked_context_only], PDF page 87; printed page 80; Indirect-proof heading and worked derivation; Direct indirect-proof and formal-proof register; no direct tableau or assumption-discharge label. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P028 [checked_context_only], PDF page 92; printed page 85; Unary predicates, binary relations and quantifier classification; Direct quantifier taxonomy and predicate/relation context. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C005:TE-P033 [checked_context_only], PDF page 40; printed page 33; Inference section heading and definition; Direct inference and explanatory register; derivation headword is separately witnessed at TE-P024. | TE-C004:TE-P034 [checked_context_only], PDF page 308; printed page 301; Main point 5, Cartesian product definition; Direct ordered-pair and Cartesian-product terminology; singular క్రమయుగ్మం is a transparent inflection.
+
+- Alternatives: leave the specialized second-order semantics and expressive-power headwords in untranslated English reader prose [rejected: rejected] | collapse relations, functions, relation variables and function variables into one undifferentiated category [rejected: rejected because the typing clauses distinguish them] | claim direct native attestation for standard second-order semantics, transitive closure or Dedekind infinitude [rejected: rejected because the frozen definitions, examples and proofs control those senses]
+
+- Review question: Please double-check whether “ద్వితీయ-స్థాయి తర్కం / సంబంధ చరం మరియు ప్రమేయ చరం / ప్రామాణిక అర్థవిచారం / చర నిర్దేశం / x-భేదరూపం / ద్వితీయ-స్థాయి పదం మరియు సూత్రం / చెల్లుబాటుతనం / అర్థపర అనుగమనం / సంతృప్తిపరచదగినతనం / వ్యక్తీకరణశక్తి / నిర్వచించదగిన సంబంధం / సంక్రమణ సంవృతి / డెడెకిండ్ అనంతం / లెక్కించదగిన మరియు అనంతంగా లెక్కించదగిన వ్యక్తి క్షేత్రం” is idiomatic and technically standard for “second-order logic / relation and function variable / standard semantics / variable assignment / x-variant / second-order term and formula / validity / semantic entailment / satisfiability / expressive power / definable relation / transitive closure / Dedekind infinite / enumerable and denumerable domain” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T075-OCC-001; OLP-0322; OLP-0322-B004; source upstream/content/second-order-logic/second-order-logic.tex:7 bytes 103-136 SHA-256 08ba516c543622df9df6ffecc8250ae6641be5f470e04620c0159e6e107059b8; target translation/content/second-order-logic/second-order-logic.tex:7 bytes 103-174 SHA-256 af7250593a18dfa33dd02eac00d9c7f5c122d6abb3fa915a5e20b8c605adbc15; reader page pending.
+  - te-Telu-IN-TE-T075-OCC-002; OLP-0323; OLP-0323-B004; source upstream/content/second-order-logic/syntax-and-semantics/syntax-and-semantics.tex:8 bytes 141-184 SHA-256 b2c044a8b12eeee888e31f3e2615d7cd891f472e362e0328239b4c8cd8680aea; target translation/content/second-order-logic/syntax-and-semantics/syntax-and-semantics.tex:8 bytes 141-250 SHA-256 3a4558a756f6b0f56a96b523716b42030003225d42d25eafe0a8a9924f1f6889; reader page pending.
+  - te-Telu-IN-TE-T075-OCC-003; OLP-0324; OLP-0324-B007; source upstream/content/second-order-logic/syntax-and-semantics/introduction.tex:31-59 bytes 1282-3066 SHA-256 3c27def372f8059cbdaf8ef1862ee6bcce1fddce4f68279b91b6d4f4adfbe417; target translation/content/second-order-logic/syntax-and-semantics/introduction.tex:30-58 bytes 3116-6884 SHA-256 29dc44fe0cfe681c67c88a219e04665e1403c0e32ab09f1ba24c6349534cfdfb; reader page pending.
+  - te-Telu-IN-TE-T075-OCC-004; OLP-0325; OLP-0325-B011; source upstream/content/second-order-logic/syntax-and-semantics/terms-formulas.tex:50-57 bytes 2098-2439 SHA-256 51a8beeec221c52bb2487535e4160c8c0ce89a5c5170d7715afeed0f75d48347; target translation/content/second-order-logic/syntax-and-semantics/terms-formulas.tex:50-57 bytes 4578-5131 SHA-256 cc66943e4a9b0329d867583a7509d6710f1b1f317184621c11442f932a7ff311; reader page pending.
+  - te-Telu-IN-TE-T075-OCC-005; OLP-0326; OLP-0326-B012; source upstream/content/second-order-logic/syntax-and-semantics/satisfaction.tex:90-99 bytes 3271-3760 SHA-256 be2351bde2b55b0a7446cfdfd60c62f6939a1061ffa900d9a5939305c403bfc7; target translation/content/second-order-logic/syntax-and-semantics/satisfaction.tex:96-107 bytes 7867-8758 SHA-256 c0250609b9c974f963ce181b2fdada2c7b387f9569289a535fdc61017acdf745; reader page pending.
+  - te-Telu-IN-TE-T075-OCC-006; OLP-0327; OLP-0327-B006; source upstream/content/second-order-logic/syntax-and-semantics/semantic-notions.tex:21-24 bytes 659-796 SHA-256 750b84b8cbcff34c3b6ff660e91a77382a26504250d74aa04ee77ce48a0cd066; target translation/content/second-order-logic/syntax-and-semantics/semantic-notions.tex:21-24 bytes 1204-1545 SHA-256 5b495165682321391f0f8d38cac8ed14190a335cb8a4958a1601b52accde8ca2; reader page pending.
+  - te-Telu-IN-TE-T075-OCC-007; OLP-0328; OLP-0328-B009; source upstream/content/second-order-logic/syntax-and-semantics/expressive-power.tex:64-81 bytes 2678-3640 SHA-256 5aab9a8bdfe16664fae99111703d09c6d0f6e91ae1be3d9afb19784cd5d53cbf; target translation/content/second-order-logic/syntax-and-semantics/expressive-power.tex:65-82 bytes 6151-7862 SHA-256 82aba36e2cf3926dc21ffc7f46921ddfa068062a5709b7269bf0f2ca13ba7f63; reader page pending.
+  - te-Telu-IN-TE-T075-OCC-008; OLP-0329; OLP-0329-B006; source upstream/content/second-order-logic/syntax-and-semantics/inf-count.tex:14-42 bytes 278-1863 SHA-256 26b10cbda98d193ed98437efd26dd2b759a818f49656ff465962fd69452bd4f8; target translation/content/second-order-logic/syntax-and-semantics/inf-count.tex:14-43 bytes 314-3926 SHA-256 0b6f3a4e819e1f321b24255794c8aede6fd096dc463845f5b091abca65763e6c; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -9242,3 +9275,159 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEINP-005-OCC-001; OLP-0320; OLP-0320-B011; source upstream/content/incompleteness/incompleteness-provability/lob-thm.tex:117 bytes 5658-5724 SHA-256 7b95df7ebaf50f218a71b706c3189750dd9499bb66f2b725dcbf3dec778fd73f; target translation/content/incompleteness/incompleteness-provability/lob-thm.tex:118-120 bytes 10592-11080 SHA-256 e29c8abd9c0e1cf41f1359a563527c1e29661a6733afe668a310781d01f7e080; reader page pending.
+
+## te-Telu-IN-OLTESOLSYN-001 — OLTESOLSYN-001: confirmed relation assignment cases omitted
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored the predicate-symbol-to-relation and relation-variable-to-relation cases omitted by the prose summary; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed relation assignment cases omitted at lines 37-40, explanation following the second-order assignment definition, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTESOLSYN-20260921:OLTESOLSYN-001 [checked_supports], content/second-order-logic/syntax-and-semantics/satisfaction.tex; lines 37-40, explanation following the second-order assignment definition; confirmed_relation_assignment_cases_omitted; restored the predicate-symbol-to-relation and relation-variable-to-relation cases omitted by the prose summary; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the prose summary explicitly includes predicate-symbol-to-relation and relation-variable-to-relation assignments.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTESOLSYN-001-OCC-001; OLP-0326; OLP-0326-B008; source upstream/content/second-order-logic/syntax-and-semantics/satisfaction.tex:37-40 bytes 1282-1515 SHA-256 be2351bde2b55b0a7446cfdfd60c62f6939a1061ffa900d9a5939305c403bfc7; target translation/content/second-order-logic/syntax-and-semantics/satisfaction.tex:37-43 bytes 2311-3974 SHA-256 c0250609b9c974f963ce181b2fdada2c7b387f9569289a535fdc61017acdf745; reader page pending.
+
+## te-Telu-IN-OLTESOLSYN-002 — OLTESOLSYN-002: confirmed structure relation symbol collision in substitution
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: kept M for the structure and renamed the relation value to R throughout the relation-variable substitution clause; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed structure relation symbol collision in substitution at lines 65-88, definition of relation-variable substitution, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTESOLSYN-20260921:OLTESOLSYN-002 [checked_supports], content/second-order-logic/syntax-and-semantics/satisfaction.tex; lines 65-88, definition of relation-variable substitution; confirmed_structure_relation_symbol_collision_in_substitution; kept M for the structure and renamed the relation value to R throughout the relation-variable substitution clause; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that R consistently denotes the relation value while M remains the fixed structure in the substitution definition.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTESOLSYN-002-OCC-001; OLP-0326; OLP-0326-B011; source upstream/content/second-order-logic/syntax-and-semantics/satisfaction.tex:65-88 bytes 2355-3270 SHA-256 be2351bde2b55b0a7446cfdfd60c62f6939a1061ffa900d9a5939305c403bfc7; target translation/content/second-order-logic/syntax-and-semantics/satisfaction.tex:69-93 bytes 5664-7855 SHA-256 c0250609b9c974f963ce181b2fdada2c7b387f9569289a535fdc61017acdf745; reader page pending.
+
+## te-Telu-IN-OLTESOLSYN-003 — OLTESOLSYN-003: confirmed structure relation symbol collision in satisfaction
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: kept M for the fixed structure and renamed the quantified relation to R in both relation-quantifier clauses; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed structure relation symbol collision in satisfaction at lines 90-116, universal and existential relation-quantifier satisfaction clauses, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTESOLSYN-20260921:OLTESOLSYN-003 [checked_supports], content/second-order-logic/syntax-and-semantics/satisfaction.tex; lines 90-116, universal and existential relation-quantifier satisfaction clauses; confirmed_structure_relation_symbol_collision_in_satisfaction; kept M for the fixed structure and renamed the quantified relation to R in both relation-quantifier clauses; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that R consistently denotes the quantified relation in both second-order relation-quantifier satisfaction clauses.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTESOLSYN-003-OCC-001; OLP-0326; OLP-0326-B012; source upstream/content/second-order-logic/syntax-and-semantics/satisfaction.tex:90-116 bytes 3271-4303 SHA-256 be2351bde2b55b0a7446cfdfd60c62f6939a1061ffa900d9a5939305c403bfc7; target translation/content/second-order-logic/syntax-and-semantics/satisfaction.tex:96-126 bytes 7867-10062 SHA-256 c0250609b9c974f963ce181b2fdada2c7b387f9569289a535fdc61017acdf745; reader page pending.
+
+## te-Telu-IN-OLTESOLSYN-004 — OLTESOLSYN-004: confirmed structure subset symbol collision in example
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: kept M for the structure and used the example's existing N for its proper subset; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed structure subset symbol collision in example at lines 181-182, concluding subset choice in the second satisfaction example, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTESOLSYN-20260921:OLTESOLSYN-004 [checked_supports], content/second-order-logic/syntax-and-semantics/satisfaction.tex; lines 181-182, concluding subset choice in the second satisfaction example; confirmed_structure_subset_symbol_collision_in_example; kept M for the structure and used the example's existing N for its proper subset; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that N, already used for the example subset, consistently replaces the source collision with the structure symbol M.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTESOLSYN-004-OCC-001; OLP-0326; OLP-0326-B020; source upstream/content/second-order-logic/syntax-and-semantics/satisfaction.tex:181-182 bytes 7453-7601 SHA-256 be2351bde2b55b0a7446cfdfd60c62f6939a1061ffa900d9a5939305c403bfc7; target translation/content/second-order-logic/syntax-and-semantics/satisfaction.tex:187-197 bytes 15425-16723 SHA-256 c0250609b9c974f963ce181b2fdada2c7b387f9569289a535fdc61017acdf745; reader page pending.
+
+## te-Telu-IN-OLTESOLSYN-005 — OLTESOLSYN-005: confirmed structure subset symbol collision in forward proof
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: kept M for the structure and renamed the arbitrary subset to S throughout the forward argument; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed structure subset symbol collision in forward proof at lines 93-102, forward direction of the Count proposition, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTESOLSYN-20260921:OLTESOLSYN-005 [checked_supports], content/second-order-logic/syntax-and-semantics/inf-count.tex; lines 93-102, forward direction of the Count proposition; confirmed_structure_subset_symbol_collision_in_forward_proof; kept M for the structure and renamed the arbitrary subset to S throughout the forward argument; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that S denotes the arbitrary subset throughout the forward Count proof while M remains the structure.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTESOLSYN-005-OCC-001; OLP-0329; OLP-0329-B011; source upstream/content/second-order-logic/syntax-and-semantics/inf-count.tex:93-102 bytes 3767-4339 SHA-256 26b10cbda98d193ed98437efd26dd2b759a818f49656ff465962fd69452bd4f8; target translation/content/second-order-logic/syntax-and-semantics/inf-count.tex:98-110 bytes 7850-9270 SHA-256 0b6f3a4e819e1f321b24255794c8aede6fd096dc463845f5b091abca65763e6c; reader page pending.
+
+## te-Telu-IN-OLTESOLSYN-006 — OLTESOLSYN-006: confirmed structure subset symbol collision in reverse proof
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: kept M for the structure and renamed the orbit subset to S throughout the reverse argument; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed structure subset symbol collision in reverse proof at lines 104-122, reverse direction of the Count proposition, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTESOLSYN-20260921:OLTESOLSYN-006 [checked_supports], content/second-order-logic/syntax-and-semantics/inf-count.tex; lines 104-122, reverse direction of the Count proposition; confirmed_structure_subset_symbol_collision_in_reverse_proof; kept M for the structure and renamed the orbit subset to S throughout the reverse argument; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that S denotes the orbit subset throughout the reverse Count proof while M remains the structure.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTESOLSYN-006-OCC-001; OLP-0329; OLP-0329-B012; source upstream/content/second-order-logic/syntax-and-semantics/inf-count.tex:104-122 bytes 4340-5180 SHA-256 26b10cbda98d193ed98437efd26dd2b759a818f49656ff465962fd69452bd4f8; target translation/content/second-order-logic/syntax-and-semantics/inf-count.tex:112-133 bytes 9271-11313 SHA-256 0b6f3a4e819e1f321b24255794c8aede6fd096dc463845f5b091abca65763e6c; reader page pending.

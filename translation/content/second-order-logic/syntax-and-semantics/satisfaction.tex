@@ -1,0 +1,225 @@
+% Part: second-order-logic
+% Chapter: syntax-and-semantics
+% Section: satisfaction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{syn}{sat}
+
+\olsection{సంతృప్తి}
+
+\begin{explain}
+ద్వితీయ-స్థాయి \tetoken{సూత్రాలకు}{!!{formula}s} సంతృప్తి సంబంధం~$\Sat{M}{!A}[s]$ను
+నిర్వచించడానికి, ద్వితీయ-స్థాయి \tetoken{చరాలను}{!!{variable}s} చేర్చేలా నిర్వచనాలను
+విస్తరించాలి. మొదటిస్థాయి తర్కంలో ఉన్న \tetoken{ఒక నిర్మాణం}{!!a{structure}} అనే భావనే
+ద్వితీయ-స్థాయి తర్కంలోనూ ఉంటుంది. తేడా చర నిర్దేశాలు~$s$లో మాత్రమే:
+ఇవి ఇప్పుడు మొదటిస్థాయి \tetoken{చరాలకే}{!!{variable}s} కాకుండా ద్వితీయ-స్థాయి
+\tetoken{చరాలకు}{!!{variable}s} కూడా విలువలను ఇవ్వాలి.
+\end{explain}
+
+\begin{defn}[చర నిర్దేశం]
+\tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct{M}$ కోసం \emph{చర నిర్దేశం}~$s$ అనేది కింది
+వాటిలో ప్రతి దానినీ ఇలా పంపే ప్రమేయం:
+\begin{enumerate}
+\item ప్రతి వస్తు \tetoken{చరం}{!!{variable}}~$\Obj{v_i}$ను~$\Domain M$లోని ఒక మూలకానికి;
+  అంటే $s(\Obj{v_i}) \in \Domain{M}$;
+\item ప్రతి $n$-స్థాన సంబంధ చరం~$\Obj{V_i^n}$ను~$\Domain{M}$పై ఒక
+  $n$-స్థాన సంబంధానికి; అంటే $s(\Obj{V_i^n}) \subseteq \Domain{M}^n$;
+\item ప్రతి $n$-స్థాన ప్రమేయ చరం~$\Obj{u_i^n}$ను $\Domain{M}$ నుంచి
+  $\Domain{M}$కు ఒక $n$-స్థాన ప్రమేయానికి; అంటే
+  $s(\Obj{u_i^n})\colon \Domain{M}^n \to \Domain{M}$.
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+\tetoken{ఒక నిర్మాణం}{!!^a{structure}} ప్రతి \tetoken{స్థిరసంకేతానికి}{!!{constant}} \tetoken{ఒక విలువను}{!!a{value}}, ప్రతి
+\tetoken{ప్రమేయ సంకేతానికి}{!!{function}} ఒక ప్రమేయాన్ని, ప్రతి విధేయ సంకేతానికి ఒక
+సంబంధాన్ని నిర్దేశిస్తుంది; ద్వితీయ-స్థాయి చర నిర్దేశం ప్రతి వస్తు,
+సంబంధ, ప్రమేయ చరానికి వరుసగా ఒక వస్తువు, సంబంధం, ప్రమేయాన్ని
+నిర్దేశిస్తుంది. అవి కలసి ప్రతి పదానికి ఒక విలువను నిర్దేశించడానికి
+వీలు కల్పిస్తాయి.
+\sourcecorrection{OLTESOLSYN-001}{ఆంగ్ల మూలం నిర్మాణం విధేయ సంకేతాలకు సంబంధాలను, ద్వితీయ-స్థాయి చర నిర్దేశం సంబంధ చరాలకు సంబంధాలను నిర్దేశిస్తాయనే రెండు అవసరమైన సందర్భాలను ఈ వివరణలో విడిచిపెట్టింది; వెంటనే ముందున్న పూర్తి చర-నిర్దేశ నిర్వచనానికి అనుగుణంగా వాటిని చేర్చాం.}
+\end{explain}
+
+\begin{defn}[ఒక పదపు \usetoken{S}{value}]
+$t$ అనేది భాష~$\Lang L$లోని పదం, $\Struct M$ అనేది~$\Lang L$కు
+\tetoken{ఒక నిర్మాణం}{!!a{structure}}, $s$ అనేది~$\Struct M$ కోసం \tetoken{ఒక చరం}{!!a{variable}} నిర్దేశం
+అయితే, \emph{\tetoken{విలువ}{!!{value}}}~$\Value{t}{M}[s]$ను మొదటిస్థాయి పదాలకు
+నిర్వచించినట్లే, కింది నిబంధనను కూడా చేర్చి నిర్వచిస్తాం:
+\begin{quote}
+\indcase{t}{\Atom{u}{t_1, \ldots, t_n}}{
+\[
+\Value{\indfrm}{M}[s] = s(u)(\Value{t_1}{M}[s], \ldots,
+\Value{t_n}{M}[s]).
+\]}
+\end{quote}
+\end{defn}
+
+\begin{defn}[$x$-భేదరూపం]
+$s$ అనేది \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$ కోసం \tetoken{ఒక చరం}{!!a{variable}} నిర్దేశం అయితే,
+$x$కు ఏమి నిర్దేశిస్తుందనే విషయంలో మాత్రమే గరిష్ఠంగా $s$తో భేదించే
+$\Struct M$ కోసం ఏ \tetoken{చరం}{!!{variable}} నిర్దేశం~$s'$నైనా $s$ యొక్క
+\emph{$x$-భేదరూపం} అంటాం. $s'$ అనేది $s$ యొక్క $x$-భేదరూపమైతే
+$\varAssign{s'}{s}{x}$ అని రాస్తాం. (ద్వితీయ-స్థాయి చరాలు $X$ లేదా
+$u$కు కూడా ఇదే విధంగా నిర్వచిస్తాం.)
+\end{defn}
+
+\begin{defn}
+  $s$ అనేది \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$ కోసం \tetoken{ఒక చరం}{!!a{variable}} నిర్దేశం,
+  $m \in \Domain{M}$ అయితే, $\Subst{s}{m}{x}$ అనే నిర్దేశం కింది
+  విధంగా నిర్వచించిన \tetoken{చరం}{!!{variable}} నిర్దేశం:
+  \[\Subst{s}{m}{y} = \begin{cases}
+    m & y \ident x \text{ అయితే}\\
+    s(y) & \text{లేకపోతే},
+  \end{cases}\]
+  $X$ ఒక $n$-స్థాన సంబంధ \tetoken{చరం}{!!{variable}}, $R \subseteq
+  \Domain{M}^n$ అయితే, $\Subst{s}{R}{X}$ అనే \tetoken{చరం}{!!{variable}} నిర్దేశాన్ని
+  కింది విధంగా నిర్వచిస్తాం:
+  \[\Subst{s}{R}{y} = \begin{cases}
+    R & y \ident X \text{ అయితే}\\
+    s(y) & \text{లేకపోతే}.
+  \end{cases}\]
+  $u$ ఒక $n$-స్థాన ప్రమేయ \tetoken{చరం}{!!{variable}}, $f\colon \Domain{M}^n
+  \to \Domain{M}$ అయితే, $\Subst{s}{f}{u}$ అనే \tetoken{చరం}{!!{variable}} నిర్దేశాన్ని
+  కింది విధంగా నిర్వచిస్తాం:
+  \[\Subst{s}{f}{y} = \begin{cases}
+    f & y \ident u \text{ అయితే}\\
+    s(y) & \text{లేకపోతే}.
+  \end{cases}\]
+  ప్రతి సందర్భంలోనూ $y$ ఏ మొదటిస్థాయి లేదా ద్వితీయ-స్థాయి
+  \tetoken{చరమైనా}{!!{variable}} కావచ్చు.
+  \sourcecorrection{OLTESOLSYN-002}{ఆంగ్ల మూలం నిర్మాణాన్ని సూచించే $M$నే సంబంధ విలువకు కూడా వాడి $M\subseteq\Domain{M}^n$ అని రాసింది. రెండు వస్తువులు కలిసిపోకుండా సంబంధ విలువను $R$గా మార్చి, అదే మార్పును సంబంధ-చర ప్రతిస్థాపన అంతటా చేశాం.}
+\end{defn}
+
+\begin{defn}[సంతృప్తి]
+ద్వితీయ-స్థాయి \tetoken{సూత్రాలు}{!!{formula}s}~$!A$ కోసం సంతృప్తి నిర్వచనం,
+\olref[fol][syn][sat]{defn:satisfaction}లోని నిర్వచనంలాగే ఉంటుంది;
+దానికి కిందివి చేర్చాలి:
+\begin{enumerate}
+\item \indcase{!A}{\Atom{X^n}{t_1, \dots, t_n}}{$\Sat{M}{\indfrm}[s]$
+  అవుతుంది అప్పుడే, అప్పుడు మాత్రమే $\langle \Value{t_1}{M}[s], \dots,
+  \Value{t_n}{M}[s] \rangle \in s(X^n)$.}
+\tagitem{prvAll}{%
+  \indcase{!A}{\lforall[X][!B]}{$\Sat{M}{\indfrm}[s]$ అవుతుంది
+  అప్పుడే, అప్పుడు మాత్రమే ప్రతి $R \subseteq \Domain{M}^n$కు
+  $\Sat{M}{!B}[\Subst{s}{R}{X}]$.}}{}
+
+\tagitem{prvEx}{%
+  \indcase{!A}{\lexists[X][!B]}{$\Sat{M}{\indfrm}[s]$ అవుతుంది
+  అప్పుడే, అప్పుడు మాత్రమే కనీసం ఒక $R \subseteq \Domain{M}^n$కు
+  $\Sat{M}{!B}[\Subst{s}{R}{X}]$.}}{}
+
+\tagitem{prvAll}{%
+  \indcase{!A}{\lforall[u][!B]}{$\Sat{M}{\indfrm}[s]$ అవుతుంది
+  అప్పుడే, అప్పుడు మాత్రమే ప్రతి
+  $f\colon \Domain{M}^n \to \Domain{M}$కు
+  $\Sat{M}{!B}[\Subst{s}{f}{u}]$.}}{}
+
+\tagitem{prvEx}{%
+  \indcase{!A}{\lexists[u][!B]}{$\Sat{M}{\indfrm}[s]$ అవుతుంది
+  అప్పుడే, అప్పుడు మాత్రమే కనీసం ఒక
+  $f\colon \Domain{M}^n \to \Domain{M}$కు
+  $\Sat{M}{!B}[\Subst{s}{f}{u}]$.}}{}
+\end{enumerate}
+\sourcecorrection{OLTESOLSYN-003}{ద్వితీయ-స్థాయి సంబంధ పరిమాణకాల రెండు నిబంధనల్లోనూ ఆంగ్ల మూలం నిర్మాణం $M$, పరిమాణీకరించే సంబంధం రెండింటికీ $M$నే వాడింది. నిర్మాణాన్ని $M$గానే ఉంచి సంబంధాన్ని $R$గా మార్చాం.}
+\end{defn}
+
+\begin{ex}
+  \tetoken{సూత్రం}{!!{formula}}~$\lforall[z][(\Atom{X}{z} \liff \lnot
+    \Atom{Y}{z})]$ను పరిగణించండి. ఇందులో ద్వితీయ-స్థాయి పరిమాణకాలు
+  లేవు; కానీ ద్వితీయ-స్థాయి \tetoken{చరాలు}{!!{variable}s} $X$,~$Y$ ఉన్నాయి (ఇక్కడ అవి
+  ఏకస్థానమైనవని అర్థం చేసుకోవాలి). దీనికి అనురూపమైన మొదటిస్థాయి
+  \tetoken{వాక్యం}{!!{sentence}} $\lforall[z][(\Atom{P}{z} \liff \lnot \Atom{R}{z})]$,
+  $P$ యొక్క అర్థనిర్దేశం కిందికి వచ్చేది $R$ యొక్క అర్థనిర్దేశం
+  కిందికి రాదనీ, విపర్యయంగా కూడా అలాగే ఉంటుందనీ చెబుతుంది.
+  \tetoken{ఒక నిర్మాణంలో}{!!a{structure}}, \tetoken{ఒక విధేయ సంకేతం}{!!a{predicate}}~$P$ యొక్క అర్థనిర్దేశాన్ని
+  $\Assign{P}{M}$ ఇస్తుంది. కానీ $X$,~$Y$లాంటి ద్వితీయ-స్థాయి
+  \tetoken{చరాల}{!!{variable}s} అర్థనిర్దేశాన్ని \tetoken{నిర్మాణం}{!!{structure}} కాకుండా \tetoken{ఒక చరం}{!!a{variable}} నిర్దేశం
+  ఇస్తుంది. ద్వితీయ-స్థాయి \tetoken{సూత్రం}{!!{formula}} ఒక \tetoken{వాక్యం}{!!a{sentence}} కాదు (దానిలో
+  స్వేచ్ఛా \tetoken{చరాలు}{!!{variable}s} $X$,~$Y$ ఉన్నాయి) కాబట్టి, అది
+  \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct{M}$తోపాటు \tetoken{ఒక చరం}{!!a{variable}} నిర్దేశం~$s$కు
+  సాపేక్షంగా మాత్రమే సంతృప్తమవుతుంది.
+
+  $s(X)$లోని \tetoken{మూలకాలు}{!!{element}s} $s(Y)$లో \tetoken{మూలకాలు}{!!{element}s} కానప్పుడు,
+  విపర్యయంగా కూడా అలాగే ఉన్నప్పుడు, అంటే $s(Y) = \Domain{M}
+  \setminus s(X)$ అయినప్పుడు, $\Sat{M}{\lforall[z][(\Atom{X}{z}
+  \liff \lnot \Atom{Y}{z})]}[s]$. ఉదాహరణకు, $\Domain{M} = \{1,
+  2, 3\}$గా తీసుకోండి. ఇందులో \tetoken{విధేయ సంకేతాలు}{!!{predicate}s}, \tetoken{ప్రమేయ సంకేతాలు}{!!{function}s},
+  \tetoken{స్థిరసంకేతాలు}{!!{constant}s} ఏవీ లేవు కాబట్టి, $\Struct{M}$ యొక్క వ్యక్తి క్షేత్రం
+  మాత్రమే సంబంధితమైనది. ఇప్పుడు $s_1(X) = \{1, 2\}$,
+  $s_1(Y) = \{3\}$ అయితే, $\Sat{M}{\lforall[z][(\Atom{X}{z}
+      \liff \lnot \Atom{Y}{z})]}[s_1]$.
+
+  దీనికి భిన్నంగా, $s_2(X) = \{1, 2\}$, $s_2(Y) = \{2, 3\}$ అయితే,
+  $\Sat/{M}{\lforall[z][(\Atom{X}{z} \liff \lnot
+      \Atom{Y}{z})]}[s_2]$. దీనికి కారణం,
+  $2 \in \Subst{s_2}{2}{z}(X)$ కాబట్టి
+  $\Sat{M}{\Atom{X}{z}}[\Subst{s_2}{2}{z}]$; కానీ $2 \in
+  \Subst{s_2}{2}{z}(Y)$ కూడా కాబట్టి
+  $\Sat/{M}{\lnot \Atom{Y}{z}}[\Subst{s_2}{2}{z}]$.
+\end{ex}
+
+\begin{ex}
+  $\Sat{M}{\lexists[Y][(\lexists[y][\Atom{Y}{y}] \land
+  \lforall[z][(\Atom{X}{z} \liff \lnot \Atom{Y}{z})])]}[s]$ అవుతుంది,
+  $N \subseteq \Domain{M}$ అయ్యే ఏదో ఒక సంబంధానికి
+  $\Sat{M}{(\lexists[y][\Atom{Y}{y}] \land \lforall[z][(\Atom{X}{z}
+  \liff \lnot \Atom{Y}{z})])}[\Subst{s}{N}{Y}]$ అయితే. మునుపటి
+  ఉదాహరణలోలాగే, $N \neq \emptyset$ (దానివల్ల
+  $\Sat{M}{\lexists[y][\Atom{Y}{y}]}[\Subst{s}{N}{Y}]$), అలాగే
+  $N = \Domain{M} \setminus s(X)$ అయ్యే సంబంధానికి ఇది జరుగుతుంది. మరోలా
+  చెప్పాలంటే, $\Domain{M} \setminus s(X)$ ఖాళీ కానప్పుడు, అంటే
+  $s(X) \neq \Domain{M}$ అయినప్పుడు, అప్పుడు మాత్రమే
+  $\Sat{M}{\lexists[Y][(\lexists[y][\Atom{Y}{y}] \land
+  \lforall[z][(\Atom{X}{z} \liff \lnot \Atom{Y}{z})])]}[s]$.
+  కాబట్టి, ఉదాహరణకు $\Domain{M} = \{1, 2, 3\}$,
+  $s(X) = \{1, 2\}$ అయితే \tetoken{సూత్రం}{!!{formula}} సంతృప్తమవుతుంది; కానీ
+  $s(X) = \{1, 2, 3\} = \Domain{M}$ అయితే సంతృప్తం కాదు.
+
+  $s(X) = \Domain{M}$ అయినప్పుడల్లా \tetoken{సూత్రం}{!!{formula}} సంతృప్తం కాదు కాబట్టి,
+  కింది \tetoken{వాక్యం}{!!{sentence}}
+  \[
+  \lforall[X][\lexists[Y][(\lexists[y][\Atom{Y}{y}] \land
+      \lforall[z][(\Atom{X}{z} \liff \lnot \Atom{Y}{z})])]]
+  \]
+  ఎప్పుడూ సంతృప్తం కాదు: ఏ \tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M}$లోనైనా,
+  $s(X) = \Domain{M}$ అనే నిర్దేశం ఆ \tetoken{వాక్యాన్ని}{!!{sentence}} అసత్యం చేస్తుంది.
+  మరోవైపు, కింది వాక్యం
+  \[
+  \lexists[X][\lexists[Y][(\lexists[y][\Atom{Y}{y}] \land
+      \lforall[z][(\Atom{X}{z} \liff \lnot \Atom{Y}{z})])]]
+  \]
+  ఏ నిర్దేశం~$s$కు సాపేక్షంగానైనా సంతృప్తమవుతుంది; ఎందుకంటే
+  $N \subseteq \Domain{M}$ కానీ $N \neq \Domain{M}$ అయ్యే ఉపసమితిని
+  ఎల్లప్పుడూ కనుగొనవచ్చు (ఉదా., $N = \emptyset$).
+  \sourcecorrection{OLTESOLSYN-004}{ఈ ఉదాహరణ చివరలో ఆంగ్ల మూలం నిర్మాణం $M$, దాని యథార్థ ఉపసమితి రెండింటికీ $M$నే వాడింది. నిర్మాణాన్ని $M$గానే ఉంచి ఉపసమితిని, ఈ ఉదాహరణలో ముందే వాడిన $N$గా రాశాం.}
+\end{ex}
+
+\begin{ex}
+  ప్రతి $1$-స్థాన సంబంధం, అంటే ప్రతి ధర్మం, ప్రతి వస్తువుకూ వర్తిస్తుందని
+  ద్వితీయ-స్థాయి \tetoken{వాక్యం}{!!{sentence}}~$\lforall[X][\lforall[y][X(y)]]$
+  చెబుతుంది. ఇది ఎన్నడూ సత్యం కాదని స్పష్టం; ఎందుకంటే ప్రతి~$\Struct{M}$లో
+  $s(X) = \emptyset$, $s(y) = a \in \Domain{M}$ అయ్యే చర నిర్దేశం~$s$కు
+  $\Sat/{M}{X(y)}[s]$. దీనివల్ల $!A \lif
+  \lforall[X][\lforall[y][X(y)]]$ అనేది ద్వితీయ-స్థాయి తర్కంలో
+  $\lnot !A$కు సమానార్థకమని తెలుస్తుంది; అంటే $\Sat{M}{!A \lif
+  \lforall[X][\lforall[y][X(y)]]}$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే
+  $\Sat{M}{\lnot !A}$. మరోలా చెప్పాలంటే, ద్వితీయ-స్థాయి తర్కంలో
+  $\lforall$,~$\lif$లను ఉపయోగించి $\lnot$ను నిర్వచించవచ్చు.
+\end{ex}
+
+\begin{prob}
+  ద్వితీయ-స్థాయి తర్కంలో $\lforall$,~$\lif$లు ఇతర సంయోజకాలను
+  నిర్వచించగలవని చూపండి:
+  \begin{enumerate}
+    \item ద్వితీయ-స్థాయి తర్కంలో $!A \land !B$ అనేది
+    $\lforall[X][(!A \lif (!B \lif \lforall[x][X(x)])\lif
+    \lforall[x][X(x)])]$కు సమానార్థకమని నిరూపించండి.
+    \item $\lforall$, $\lif$లను మాత్రమే ఉపయోగించి $!A \lor !B$కు
+    సమానార్థకమైన ఒక ద్వితీయ-స్థాయి సూత్రాన్ని కనుగొనండి.
+  \end{enumerate}
+\end{prob}
+
+\end{document}

@@ -256,6 +256,16 @@ locations['TE-T074']=[
  L('content/incompleteness/incompleteness-provability/lob-thm.tex',11,11,11,11,'L\\"ob\'s Theorem','లోబ్ సిద్ధాంతం'),
  L('content/incompleteness/incompleteness-provability/tarski-thm.tex',11,11,11,11,'The Undefinability of Truth','సత్యపు నిర్వచనాతీతత')
 ];
+locations['TE-T075']=[
+ L('content/second-order-logic/second-order-logic.tex',7,7,7,7,'Second-order Logic','ద్వితీయ-స్థాయి తర్కం'),
+ L('content/second-order-logic/syntax-and-semantics/syntax-and-semantics.tex',8,8,8,8,'Syntax and Semantics','వాక్యనిర్మాణం మరియు అర్థవిచారం'),
+ L('content/second-order-logic/syntax-and-semantics/introduction.tex',38,41,36,39,'\\emph{standard} semantics','\\emph{ప్రామాణిక} అర్థవిచారం'),
+ L('content/second-order-logic/syntax-and-semantics/terms-formulas.tex',50,55,50,56,'Second-order Terms','ద్వితీయ-స్థాయి పదాలు'),
+ L('content/second-order-logic/syntax-and-semantics/satisfaction.tex',90,99,96,107,'Satisfaction','సంతృప్తి'),
+ L('content/second-order-logic/syntax-and-semantics/semantic-notions.tex',21,24,21,24,'Validity','చెల్లుబాటుతనం'),
+ L('content/second-order-logic/syntax-and-semantics/expressive-power.tex',68,74,69,75,'transitive closure','సంక్రమణ సంవృతి'),
+ L('content/second-order-logic/syntax-and-semantics/inf-count.tex',14,19,14,19,'(Dedekind) infinite','(డెడెకిండ్) అనంతం')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -315,6 +325,7 @@ alternatives['TE-T071']=['reuse the established number, sequence, function, rela
 alternatives['TE-T072']=['reuse the established number, function, relation, formula, proof and Q-theory register while making the beta, Sunzi, closure and arithmetical-hierarchy senses explicit from the adjacent definitions (chosen)','leave the specialized representability vocabulary in untranslated English reader prose (rejected)','collapse representability, computability and definability into one property (rejected because the chapter proves precise implications and equivalences)','claim direct native attestation for Q-representability, beta coding, Sunzi’s theorem or the Delta_0/Sigma_1/Pi_1 hierarchy (rejected because the frozen definitions and proofs control those senses)'];
 alternatives['TE-T073']=['reuse the established theory, consistency, completeness, computability, separation and formal-logic register while fixing c.e.-completeness, omega-consistency, inseparability and interpretation from the adjacent definitions (chosen)','leave the specialized computability and incompleteness headwords in untranslated English reader prose (rejected)','collapse consistency, omega-consistency, completeness, decidability and axiomatizability into one property (rejected because the chapter distinguishes them)','claim direct native attestation for c.e.-complete theories, computable inseparability or proof-theoretic interpretation (rejected because the frozen reductions and theorems control those senses)'];
 alternatives['TE-T074']=['reuse the established truth, formula, sentence, derivation and consistency register, with fixed-point, arithmetized provability, reflection and undefinability senses fixed by the adjacent constructions (chosen)','leave the specialized incompleteness and provability headwords in untranslated English reader prose (rejected)','collapse truth, provability and derivability into one undifferentiated notion (rejected because the chapter distinguishes them)','claim direct canon attestation for the fixed-point lemma or the Rosser, L\u00f6b and Tarski theorems (rejected because the frozen definitions and proofs control those senses)'];
+alternatives['TE-T075']=['reuse the established set, relation, function, formula, sentence and semantic-consequence register while fixing the second-order extensions from the adjacent formation and satisfaction clauses (chosen)','leave the specialized second-order semantics and expressive-power headwords in untranslated English reader prose (rejected)','collapse relations, functions, relation variables and function variables into one undifferentiated category (rejected because the typing clauses distinguish them)','claim direct native attestation for standard second-order semantics, transitive closure or Dedekind infinitude (rejected because the frozen definitions, examples and proofs control those senses)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -331,7 +342,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-20 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T074 record the Batch 025--Batch 035 consultations performed during reconciliation.';
+const phase='Evidence reconstruction through 2026-09-21 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T075 record the Batch 025--Batch 036 consultations performed during reconciliation.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -546,6 +557,12 @@ const correctionQuestions={
   ,'OLTETCP-001':'Please double-check that the first-incompleteness proof retains computable axiomatizability rather than weakening the premise to mere axiomatization.'
   ,'OLTETCP-002':'Please double-check that the universal-relation argument uses the Goedel code of the one-variable formula D_S(u).'
   ,'OLTETCP-003':'Please double-check that the first ZFC corollary excludes consistent decidable extensions, since an inconsistent extension is decidable.'
+  ,'OLTESOLSYN-001':'Please double-check that the prose summary explicitly includes predicate-symbol-to-relation and relation-variable-to-relation assignments.'
+  ,'OLTESOLSYN-002':'Please double-check that R consistently denotes the relation value while M remains the fixed structure in the substitution definition.'
+  ,'OLTESOLSYN-003':'Please double-check that R consistently denotes the quantified relation in both second-order relation-quantifier satisfaction clauses.'
+  ,'OLTESOLSYN-004':'Please double-check that N, already used for the example subset, consistently replaces the source collision with the structure symbol M.'
+  ,'OLTESOLSYN-005':'Please double-check that S denotes the arbitrary subset throughout the forward Count proof while M remains the structure.'
+  ,'OLTESOLSYN-006':'Please double-check that S denotes the orbit subset throughout the reverse Count proof while M remains the structure.'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

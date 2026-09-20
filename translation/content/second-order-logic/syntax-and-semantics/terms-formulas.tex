@@ -1,0 +1,89 @@
+% Part: second-order-logic
+% Chapter: syntax-and-semantics
+% Section: terms-formulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{syn}{frm}
+
+\olsection{పదాలు మరియు \printtoken{P}{formula}}
+
+మొదటిస్థాయి తర్కంలోలాగే, ద్వితీయ-స్థాయి తర్కపు వ్యక్తీకరణలను
+\emph{\tetoken{చరాలు}{!!{variable}s}}, \emph{\tetoken{స్థిరసంకేతాలు}{!!{constant}s}}, \emph{\tetoken{విధేయ సంకేతాలు}{!!{predicate}s}},
+కొన్నిసార్లు \emph{\tetoken{ప్రమేయ సంకేతాలతో}{!!{function}s}} కూడిన ప్రాథమిక పదజాలం నుంచి
+నిర్మిస్తాం. వాటితోపాటు తార్కిక సంయోజకాలు, పరిమాణకాలు, కుండలీకరణ
+చిహ్నాలు, విరామచిహ్నాల వంటి సంకేతాలను ఉపయోగించి \emph{పదాలు},
+\emph{\tetoken{సూత్రాలను}{!!{formula}s}} నిర్మిస్తాం. వస్తువుల చరాలతోపాటు ద్వితీయ-స్థాయి
+తర్కంలో సంబంధాలు, ప్రమేయాలకు చరాలు కూడా ఉండటం, వాటిపై పరిమాణీకరణను
+అనుమతించడమే తేడా. కాబట్టి ద్వితీయ-స్థాయి తర్కపు తార్కిక సంకేతాలు
+మొదటిస్థాయి తర్కపు సంకేతాలతోపాటు కిందివి:
+
+\begin{enumerate}
+\item ప్రతి అరిటీ~$n$కు ద్వితీయ-స్థాయి సంబంధ
+  \tetoken{చరాల}{!!{variable}s} \tetoken{అనంతంగా లెక్కించదగిన}{!!{denumerable}s} సమితి: $\Obj V_0^n$,
+  $\Obj V_1^n$, $\Obj V_2^n$, \dots
+\item ద్వితీయ-స్థాయి ప్రమేయ \tetoken{చరాల}{!!{variable}s}
+  \tetoken{అనంతంగా లెక్కించదగిన}{!!{denumerable}s} సమితి: $\Obj u_0^n$, $\Obj u_1^n$,
+  $\Obj u_2^n$, \dots
+\end{enumerate}
+
+మొదటిస్థాయి చరాలు~$\Obj v_i$కి $x$, $y$, $z$లను అధిచరాలుగా
+ఉపయోగించినట్లే, $\Obj V_i^n$కు $X$, $Y$, $Z$ మొదలైన వాటిని,
+మరియు~$\Obj u_i^n$కు $u$, $v$ మొదలైన వాటిని అధిచరాలుగా ఉపయోగిస్తాం.
+
+\begin{explain}
+ద్వితీయ-స్థాయి భాషలోని తార్కికేతర సంకేతాలను మొదటిస్థాయి భాషలోలాగే,
+దాని \tetoken{స్థిరసంకేతాలు}{!!{constant}s}, \tetoken{ప్రమేయ సంకేతాలు}{!!{function}s}, \tetoken{విధేయ సంకేతాలను}{!!{predicate}s} జాబితా
+చేయడం ద్వారా నిర్దేశిస్తాం.
+
+మొదటిస్థాయి తర్కంలో సాధారణంగా \tetoken{తాదాత్మ్య విధేయం}{!!{identity}}~$\eq$ను చేర్చుతాం.
+మొదటిస్థాయి తర్కంలో, భాష~$\Lang{L}$ యొక్క తార్కికేతర సంకేతాలు మనం
+ఆసక్తికరమైన దేనినైనా వ్యక్తం చేయడానికి కీలకం. తార్కికేతర సంకేతాలేవీ
+వాడని \tetoken{వాక్యాలు}{!!{sentence}s} ఉండవచ్చు; కానీ~$\eq$ మాత్రమే ఉంటే ఆసక్తికరమైనది
+చెప్పడం కష్టం. ద్వితీయ-స్థాయి తర్కంలో సంబంధ, ప్రమేయ చరాలు అపరిమితంగా
+అందుబాటులో ఉంటాయి కాబట్టి, ప్రత్యేక తార్కికేతర సంకేతాల నిల్వ లేకుండానే
+మొదటిస్థాయి భాషలో చెప్పగల ప్రతిదానినీ చెప్పవచ్చు.
+\end{explain}
+
+\begin{defn}[ద్వితీయ-స్థాయి పదాలు]
+~$\Lang L$ యొక్క \emph{ద్వితీయ-స్థాయి పదాల} సమితి~$\TrmSOL[L]$ను,
+\olref[fol][syn][frm]{defn:terms}కు కింది నిబంధనను చేర్చి నిర్వచిస్తాం:
+\begin{enumerate}
+\item $u$ ఒక $n$-స్థాన ప్రమేయ చరం, $t_1$, \dots, $t_n$లు పదాలు
+  అయితే, $\Atom{u}{t_1, \ldots, t_n}$ ఒక పదం.
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+అందువల్ల, ద్వితీయ-స్థాయి పదం మొదటిస్థాయి పదంలాగే కనిపిస్తుంది; అయితే
+మొదటిస్థాయి పదంలో \tetoken{ఒక ప్రమేయ సంకేతం}{!!a{function}}~$\Obj{f^n_i}$ ఉండే స్థానంలో,
+ద్వితీయ-స్థాయి పదంలో ప్రమేయ చరం~$\Obj{u^n_i}$ ఉండవచ్చు.
+\end{explain}
+
+\begin{defn}[ద్వితీయ-స్థాయి \usetoken{s}{formula}]
+భాష~$\Lang L$ యొక్క \emph{ద్వితీయ-స్థాయి \tetoken{సూత్రాల}{!!{formula}s}}
+సమితి~$\FrmSOL[L]$ను,
+\olref[fol][syn][frm]{defn:formulas}కు కింది నిబంధనలను చేర్చి
+నిర్వచిస్తాం:
+\begin{enumerate}
+\item $X$ ఒక $n$-స్థాన విధేయ చరం, $t_1$, \dots, $t_n$లు
+  $\Lang L$ యొక్క ద్వితీయ-స్థాయి పదాలు అయితే,
+  $\Atom{X}{t_1,\ldots, t_n}$ ఒక పరమాణు \tetoken{సూత్రం}{!!{formula}}.
+
+\tagitem{prvAll}{$!A$ \tetoken{ఒక సూత్రం}{!!a{formula}}, $u$ ఒక ప్రమేయ చరం అయితే,
+  $\lforall[u][!A]$ \tetoken{ఒక సూత్రం}{!!a{formula}}.}{}
+
+\tagitem{prvAll}{$!A$ \tetoken{ఒక సూత్రం}{!!a{formula}}, $X$ ఒక విధేయ చరం అయితే,
+  $\lforall[X][!A]$ \tetoken{ఒక సూత్రం}{!!a{formula}}.}{}
+
+\tagitem{prvEx}{$!A$ \tetoken{ఒక సూత్రం}{!!a{formula}}, $u$ ఒక ప్రమేయ చరం అయితే,
+  $\lexists[u][!A]$ \tetoken{ఒక సూత్రం}{!!a{formula}}.}{}
+
+\tagitem{prvEx}{$!A$ \tetoken{ఒక సూత్రం}{!!a{formula}}, $X$ ఒక విధేయ చరం అయితే,
+  $\lexists[X][!A]$ \tetoken{ఒక సూత్రం}{!!a{formula}}.}{}
+\end{enumerate}
+\end{defn}
+
+\end{document}

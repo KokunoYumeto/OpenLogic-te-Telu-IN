@@ -1,0 +1,144 @@
+% Part: second-order-logic
+% Chapter: syntax-and-semantics
+% Section: size-of-domain
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{syn}{siz}
+
+\olsection{అనంతమైన, \usetoken{S}{enumerable}
+  \usetoken{P}{domain}లను వివరించడం}
+
+సమితి~$M$ (డెడెకిండ్) అనంతం అవుతుంది అప్పుడే, అప్పుడు మాత్రమే
+\tetoken{సంగ్రస్త}{!!{surjective}} కాని \tetoken{ఒకటి-ఒకటి}{!!a{injective}} ప్రమేయం~$f\colon M \to M$ ఒకటి
+ఉంటుంది; అంటే $\ran{f} \neq M$. మొదటిస్థాయి తర్కంలో, ఒక ఏకస్థాన
+\tetoken{ప్రమేయ సంకేతం}{!!{function}}~$f$ను పరిగణించి, \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct{M}$లో దానికి
+నిర్దేశించిన ప్రమేయం~$\Assign{f}{M}$ \tetoken{ఒకటి-ఒకటి}{!!{injective}} అనీ,
+$\ran{f} \neq \Domain{M}$ అనీ ఇలా చెప్పవచ్చు:
+\[
+\lforall[x][\lforall[y][(\eq[f(x)][f(y)] \to \eq[x][y])]] \land
+\lexists[y][\lforall[x][\eq/[y][f(x)]]].
+\]
+$\Struct{M}$ ఈ \tetoken{వాక్యాన్ని}{!!{sentence}} సంతృప్తిపరిస్తే, $\Assign{f}{M}:
+\Domain{M} \to \Domain{M}$ \tetoken{ఒకటి-ఒకటి}{!!{injective}}; కాబట్టి $\Domain{M}$
+అనంతం కావాలి. $\Domain{M}$ అనంతమైతే, అందువల్ల అటువంటి ప్రమేయం
+ఉంటే, $\Assign{f}{M}$ను ఆ ప్రమేయంగా తీసుకోవచ్చు; అప్పుడు $\Struct{M}$
+ఆ \tetoken{వాక్యాన్ని}{!!{sentence}} సంతృప్తిపరుస్తుంది. అయితే, ఈ ప్రయోజనం కోసం ఉపయోగించే
+తార్కికేతర సంకేతం~$f$ మన భాషలో ఉండాలని ఇది కోరుతుంది. ద్వితీయ-స్థాయి
+తర్కంలో, అటువంటి ప్రమేయం \emph{ఉందని} నేరుగా చెప్పవచ్చు. అప్పుడు~$f$
+అవసరం ఉండదు; శుద్ధ ద్వితీయ-స్థాయి తర్కంలో కింది \tetoken{వాక్యం}{!!{sentence}} లభిస్తుంది:
+\[
+\fn{Inf} \ident \lexists[u][(\lforall[x][\lforall[y][(\eq[u(x)][u(y)]
+      \lif \eq[x][y])]] \land \lexists[y][\lforall[x][\eq/[y][u(x)]]])].
+\]
+$\Sat{M}{\fn{Inf}}$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే $\Domain{M}$
+అనంతం. తరువాత $\fn{Fin} \ident \lnot \fn{Inf}$ అని నిర్వచించవచ్చు;
+$\Sat{M}{\fn{Fin}}$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే $\Domain{M}$
+పరిమితం. శుద్ధ మొదటిస్థాయి తర్కంలోని ఏ ఒక్క \tetoken{వాక్యమూ}{!!{sentence}}
+\tetoken{వ్యక్తి క్షేత్రం}{!!{domain}} అనంతమని వ్యక్తం చేయలేదు; అయితే వాటి అనంత సమితి ఒకటి
+వ్యక్తం చేయగలదు. ఒక \tetoken{నిర్మాణంలో}{!!a{structure}} దాని వ్యక్తి క్షేత్రం పరిమితమైనప్పుడు,
+అప్పుడు మాత్రమే సంతృప్తమయ్యే శుద్ధ మొదటిస్థాయి తర్క
+\tetoken{వాక్యాల}{!!{sentence}s} సమితి ఏదీ లేదు.
+
+\begin{prop}
+$\Sat{M}{\fn{Inf}}$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే $\Domain{M}$
+అనంతం.
+\end{prop}
+
+\begin{proof}
+$\Sat{M}{\fn{Inf}}$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే ఏదో ఒక~$s$కు
+  $\Sat{M}{\lforall[x][\lforall[y][(\eq[u(x)][u(y)] \lif \eq[x][y])]]
+    \land \lexists[y][\lforall[x][\eq/[y][u(x)]]]}[s]$.
+  అది జరిగితే, $s(u)$ \tetoken{ఒకటి-ఒకటి}{!!a{injective}} ప్రమేయం; ఏదో ఒక $y
+  \in \Domain{M}$, ~$s(u)$ వ్యాప్తిలో ఉండదు. విపర్యయంగా,
+  $\ran{f} \neq \Domain{M}$ అయ్యే \tetoken{ఒకటి-ఒకటి}{!!a{injective}} ప్రమేయం
+  $f\colon \Domain{M} \to \Domain{M}$ ఉంటే, $s(u) = f$ అటువంటి చర
+  నిర్దేశం.
+\end{proof}
+
+సమితి~$M$ యొక్క \tetoken{మూలకాల}{!!{element}s} జాబితా
+\[
+m_0, m_1, m_2, \dots
+\]
+పునరుక్తులు లేకుండా (అయితే బహుశా పరిమితంగా) ఉంటే, ఆ సమితిని
+\tetoken{లెక్కించదగినది}{!!{enumerable}} అంటాం. \tetoken{ఒక మూలకం}{!!a{element}}~$z \in M$, ఒక ప్రమేయం
+$f\colon M \to M$ ఉండి, $z$, $f(z)$, $f(f(z))$, \dots, అనేవి
+$M$ యొక్క అన్ని \tetoken{మూలకాలు}{!!{element}s} అయినప్పుడు, అప్పుడు మాత్రమే అటువంటి
+జాబితా ఉంటుంది. జాబితా ఉంటే, $z = m_0$, $f(m_k) = m_{k+1}$గా
+(లేదా జాబితాలో $m_k$ చివరి \tetoken{మూలకం}{!!{element}} అయితే $f(m_k) = m_k$గా)
+తీసుకుంటే, కావలసిన \tetoken{మూలకం}{!!{element}}, ప్రమేయం లభిస్తాయి. మరోవైపు, అటువంటి
+$z$,~$f$ ఉంటే, $z$, $f(z)$, $f(f(z))$, \dots, అనేది~$M$ యొక్క
+జాబితా; కాబట్టి $M$ \tetoken{లెక్కించదగినది}{!!{enumerable}}. ఒక \tetoken{నిర్మాణంలో}{!!a{structure}}, ఆ
+\tetoken{నిర్మాణం}{!!{structure}} \tetoken{లెక్కించదగినదైనప్పుడు}{!!{enumerable}}, అప్పుడు మాత్రమే సత్యమయ్యే \tetoken{వాక్యాన్ని}{!!{sentence}}
+ఉత్పత్తి చేయడానికి ద్వితీయ-స్థాయి తర్కంలో $z$,~$f$ల అస్తిత్వాన్ని
+ఇలా వ్యక్తం చేయవచ్చు:
+\[
+\fn{Count} \ident
+\lexists[z][\lexists[u][\lforall[X][((X(z) \land
+      \lforall[x][(X(x) \lif X(u(x)))]) \lif \lforall[x][X(x)])]]]
+\]
+
+\begin{prop}
+$\Sat{M}{\fn{Count}}$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే $\Domain{M}$
+\tetoken{లెక్కించదగినది}{!!{enumerable}}.
+\end{prop}
+
+\begin{proof}
+$\Domain{M}$ \tetoken{లెక్కించదగినది}{!!{enumerable}} అనుకుందాం; $m_0$, $m_1$, \dots,
+ఒక జాబితా అనుకుందాం. పునరుక్తులను తొలగించడం ద్వారా ఏ $m_k$ కూడా
+రెండుసార్లు రాకుండా హామీ ఇవ్వవచ్చు. $f(m_k) = m_{k+1}$గా
+నిర్వచించి, $s(z) = m_0$, $s(u) = f$గా తీసుకుందాం. కిందిది
+సత్యమని చూపుతాం:
+\[
+\Sat{M}{\lforall[X][((X(z) \land \lforall[x][(X(x) \lif X(u(x)))])
+    \lif \lforall[x][X(x)])]}[s]
+\]
+$S \subseteq \Domain{M}$ యాదృచ్ఛికం అనుకుందాం. ఇంకా,
+$\Sat{M}{(X(z) \land \lforall[x][(X(x) \lif
+X(u(x)))])}[\Subst{s}{S}{X}]$ అనుకుందాం. అప్పుడు
+$\Subst{s}{S}{X}(z) \in S$; $x \in S$ అయినప్పుడల్లా
+$(\Subst{s}{S}{X}(u))(x) \in S$ కూడా. మరోలా చెప్పాలంటే,
+$\varAssign{\Subst{s}{S}{X}}{s}{X}$ కాబట్టి $m_0 \in S$; $x \in S$
+అయితే $f(x) \in S$. అందువల్ల $m_0 \in S$, $m_1 = f(m_0) \in S$,
+$m_2 = f(f(m_0)) \in S$, ఇలాగే మిగతావీ. కాబట్టి
+$S = \Domain{M}$; అందువల్ల
+$\Sat{M}{\lforall[x][X(x)]}[\Subst{s}{S}{X}]$. $S \subseteq
+\Domain{M}$ యాదృచ్ఛికం కాబట్టి నిరూపణ పూర్తయింది:
+$\Sat{M}{\fn{Count}}$.
+\sourcecorrection{OLTESOLSYN-005}{ముందుకు దిశలో ఆంగ్ల మూలం నిర్మాణం $M$, దాని యాదృచ్ఛిక ఉపసమితి రెండింటికీ $M$నే వాడింది. నిర్మాణాన్ని $M$గానే ఉంచి ఉపసమితిని $S$గా మార్చి, ఆ పేరును సంబంధ-చర ప్రతిస్థాపనలన్నింటిలో అనుసరించాం.}
+
+ఇప్పుడు $\Sat{M}{\fn{Count}}$, అంటే ఏదో ఒక~$s$కు
+\[
+\Sat{M}{\lforall[X][((X(z) \land \lforall[x][(X(x) \lif X(u(x)))])
+    \lif \lforall[x][X(x)])]}[s]
+\]
+అని అనుకుందాం. $m = s(z)$, $f = s(u)$గా తీసుకొని,
+$S = \{m, f(m), f(f(m)), \dots\}$ను పరిగణించండి. ఇలా నిర్వచించిన
+$S$ స్పష్టంగా \tetoken{లెక్కించదగినది}{!!{enumerable}}. అప్పుడు ఊహ ప్రకారం
+\[
+\Sat{M}{(X(z) \land \lforall[x][(X(x) \lif X(u(x)))])
+    \lif \lforall[x][X(x)]}[\Subst{s}{S}{X}]
+\]
+అంతేకాక, $S \ni m = \Subst{s}{S}{X}(z)$ కాబట్టి
+$\Sat{M}{X(z)}[\Subst{s}{S}{X}]$; $x \in S$ అయినప్పుడల్లా
+$f(x) \in S$ కూడా కాబట్టి
+$\Sat{M}{\lforall[x][(X(x) \lif
+X(u(x))) ]}[\Subst{s}{S}{X}]$. పూర్వపక్షం, సోపాధికం రెండూ
+సంతృప్తమయ్యాయి కాబట్టి, పర్యవసానం కూడా సంతృప్తమవాలి:
+$\Sat{M}{\lforall[x][X(x)]}[\Subst{s}{S}{X}]$. కానీ దాని అర్థం
+$S = \Domain{M}$. కాబట్టి నిర్వచనం ప్రకారం $S$ లెక్కించదగినది కనుక
+$\Domain{M}$ కూడా \tetoken{లెక్కించదగినది}{!!{enumerable}}.
+\sourcecorrection{OLTESOLSYN-006}{వెనుకకు దిశలో ఆంగ్ల మూలం నిర్మాణం $M$, దాని ఒక నిర్దిష్ట ఉపసమితి రెండింటికీ $M$నే వాడింది. నిర్మాణాన్ని $M$గానే ఉంచి, $m$ యొక్క $f$-పునరావృతాల సమితిని $S$గా మార్చి, ఆ పేరును ప్రతిస్థాపనలన్నింటిలో అనుసరించాం.}
+\end{proof}
+
+\begin{prob}
+\tetoken{వాక్యం}{!!{sentence}} $\fn{Inf} \land \fn{Count}$ సరిగ్గా
+\tetoken{అనంతంగా లెక్కించదగిన}{!!{denumerable}} వ్యక్తి క్షేత్రాలన్నింటిలో, వాటిలో మాత్రమే
+సత్యం. $\fn{Count}$ నిర్వచనాన్ని సవరించి, వ్యక్తి క్షేత్రం
+\tetoken{అనంతంగా లెక్కించదగినది}{!!{denumerable}} అని నేరుగా వ్యక్తం చేసే వేరొక
+\tetoken{వాక్యంగా}{!!{sentence}} దాన్ని మార్చండి; అది అలా చేస్తుందని నిరూపించండి.
+\end{prob}
+
+\end{document}

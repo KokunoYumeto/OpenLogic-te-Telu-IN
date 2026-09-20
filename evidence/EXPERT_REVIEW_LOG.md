@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 318 of 722 draft units**. This log contains 74 terminology/sense decisions and 270 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 326 of 722 draft units**. This log contains 75 terminology/sense decisions and 276 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1783,6 +1783,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low semantic uncertainty because the new compounds are fixed by explicit definitions and displayed proofs; medium to high nomenclatural uncertainty for diagonalization, arithmetized provability, reflection and truth-undefinability compounds pending independent native specialist review
 
 - Please double-check: Please double-check whether “అసంపూర్ణత మరియు నిరూపణీయత / స్థిరబిందు ఉపసిద్ధాంతం / వికర్ణీకరణ / గ్యోడెల్ వాక్యం / నిరూపణ సంబంధం మరియు దానికి ప్రాతినిధ్యం వహించే నిరూపణ సూత్రం / నిరూపణీయత విధేయం / ఖండన / రాసర్ నిరూపణీయత / పియానో అంకగణితం / వ్యుత్పాద్యతా షరతులు / అవైరుధ్య ప్రకటన / ప్రతిబింబ సూత్రం / లోబ్ సిద్ధాంతం / ప్రమాణ నమూనాలో నిర్వచనీయత / అంకగణితపు సత్య వాక్యాల సిద్ధాంతం / సత్యపు నిర్వచనాతీతత / ఉద్దేశిత అర్థనిర్దేశం / నిలుపుదల సంబంధం” is idiomatic and technically standard for “incompleteness and provability / fixed-point lemma / diagonalization / Goedel sentence / proof relation and representing proof formula / provability predicate / refutation / Rosser provability / Peano arithmetic / derivability conditions / consistency statement / reflection principle / Loeb's theorem / definability in the standard model / true arithmetic / undefinability of truth / intended interpretation / halting relation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T075 — second-order logic / relation and function variable / standard semantics / variable assignment / x-variant / second-order term and formula / validity / semantic entailment / satisfiability / expressive power / definable relation / transitive closure / Dedekind infinite / enumerable and denumerable domain
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: ద్వితీయ-స్థాయి తర్కం / సంబంధ చరం మరియు ప్రమేయ చరం / ప్రామాణిక అర్థవిచారం / చర నిర్దేశం / x-భేదరూపం / ద్వితీయ-స్థాయి పదం మరియు సూత్రం / చెల్లుబాటుతనం / అర్థపర అనుగమనం / సంతృప్తిపరచదగినతనం / వ్యక్తీకరణశక్తి / నిర్వచించదగిన సంబంధం / సంక్రమణ సంవృతి / డెడెకిండ్ అనంతం / లెక్కించదగిన మరియు అనంతంగా లెక్కించదగిన వ్యక్తి క్షేత్రం
+
+- Exact implementation: OLP-0322; second-order-logic/second-order-logic; content/second-order-logic/second-order-logic.tex:7 ↔ translation/content/second-order-logic/second-order-logic.tex:7 (OLP-0322-B004); printed/PDF page pending; OLP-0323; second-order-logic/syntax-and-semantics/syntax-and-semantics; content/second-order-logic/syntax-and-semantics/syntax-and-semantics.tex:8 ↔ translation/content/second-order-logic/syntax-and-semantics/syntax-and-semantics.tex:8 (OLP-0323-B004); printed/PDF page pending; OLP-0324; second-order-logic/syntax-and-semantics/introduction; content/second-order-logic/syntax-and-semantics/introduction.tex:31-59 ↔ translation/content/second-order-logic/syntax-and-semantics/introduction.tex:30-58 (OLP-0324-B007); printed/PDF page pending; OLP-0325; second-order-logic/syntax-and-semantics/terms-formulas; content/second-order-logic/syntax-and-semantics/terms-formulas.tex:50-57 ↔ translation/content/second-order-logic/syntax-and-semantics/terms-formulas.tex:50-57 (OLP-0325-B011); printed/PDF page pending; OLP-0326; second-order-logic/syntax-and-semantics/satisfaction; content/second-order-logic/syntax-and-semantics/satisfaction.tex:90-99 ↔ translation/content/second-order-logic/syntax-and-semantics/satisfaction.tex:96-107 (OLP-0326-B012); printed/PDF page pending; OLP-0327; second-order-logic/syntax-and-semantics/semantic-notions; content/second-order-logic/syntax-and-semantics/semantic-notions.tex:21-24 ↔ translation/content/second-order-logic/syntax-and-semantics/semantic-notions.tex:21-24 (OLP-0327-B006); printed/PDF page pending; OLP-0328; second-order-logic/syntax-and-semantics/expressive-power; content/second-order-logic/syntax-and-semantics/expressive-power.tex:64-81 ↔ translation/content/second-order-logic/syntax-and-semantics/expressive-power.tex:65-82 (OLP-0328-B009); printed/PDF page pending; OLP-0329; second-order-logic/syntax-and-semantics/inf-count; content/second-order-logic/syntax-and-semantics/inf-count.tex:14-42 ↔ translation/content/second-order-logic/syntax-and-semantics/inf-count.tex:14-43 (OLP-0329-B006); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P025, PDF 87, printed 80, Indirect-proof heading and worked derivation; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P028, PDF 92, printed 85, Unary predicates, binary relations and quantifier classification; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P033, PDF 40, printed 33, Inference section heading and definition; TE-P034, PDF 308, printed 301, Main point 5, Cartesian product definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P005 supplies Andhra Pradesh native number and countability prose. TE-P008, TE-P010--TE-P011 and TE-P034 supply the distinct school-mathematics set, ordered-pair, relation and function register. TE-P003 and TE-P032 support mathematical definition, theorem and proof prose. TE-P018--TE-P019 and TE-P024--TE-P033 directly support formal logic, truth values, formulas, sentences, predicates, variables, quantifiers, first-order scope, individual domains, derivations and semantic consequence in the pre-bifurcation logic witness retained through its Telangana-hosted copy. The witnesses do not directly attest full standard second-order semantics, second-order relation/function variables, expressive power, transitive closure or Dedekind infinitude. The frozen formation clauses, assignment and satisfaction definitions, semantic definitions, identity and transitive-closure examples, and Inf/Count characterizations in OLP-0322--OLP-0329 control those exact senses; TE-T034, TE-T047, TE-T051, TE-T058, TE-T061 and TE-T070--TE-T074 supply earlier reversible choices. డెడెకిండ్ is the source eponym. SOL, n-place notation, formula and relation metavariables, Inf, Fin and Count remain protected formal notation; no unexplained English technical headword remains in reader-facing prose
+
+- Alternatives: reuse the established set, relation, function, formula, sentence and semantic-consequence register while fixing the second-order extensions from the adjacent formation and satisfaction clauses (chosen); leave the specialized second-order semantics and expressive-power headwords in untranslated English reader prose (rejected); collapse relations, functions, relation variables and function variables into one undifferentiated category (rejected because the typing clauses distinguish them); claim direct native attestation for standard second-order semantics, transitive closure or Dedekind infinitude (rejected because the frozen definitions, examples and proofs control those senses)
+
+- Uncertainty: Low semantic uncertainty because the specialized notions are fixed by explicit formation, assignment, satisfaction and definability clauses and by proved characterizations; medium to high nomenclatural uncertainty for standard second-order semantics, x-variant, expressive-power and transitive-closure compounds pending independent native specialist review
+
+- Please double-check: Please double-check whether “ద్వితీయ-స్థాయి తర్కం / సంబంధ చరం మరియు ప్రమేయ చరం / ప్రామాణిక అర్థవిచారం / చర నిర్దేశం / x-భేదరూపం / ద్వితీయ-స్థాయి పదం మరియు సూత్రం / చెల్లుబాటుతనం / అర్థపర అనుగమనం / సంతృప్తిపరచదగినతనం / వ్యక్తీకరణశక్తి / నిర్వచించదగిన సంబంధం / సంక్రమణ సంవృతి / డెడెకిండ్ అనంతం / లెక్కించదగిన మరియు అనంతంగా లెక్కించదగిన వ్యక్తి క్షేత్రం” is idiomatic and technically standard for “second-order logic / relation and function variable / standard semantics / variable assignment / x-variant / second-order term and formula / validity / semantic entailment / satisfiability / expressive power / definable relation / transitive closure / Dedekind infinite / enumerable and denumerable domain” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -8263,3 +8287,147 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTEINP-005 is mathematically precise and idiomatic.
+
+## REV-OLTESOLSYN-001 — OLTESOLSYN-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored the predicate-symbol-to-relation and relation-variable-to-relation cases omitted by the prose summary; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0326; second-order-logic/syntax-and-semantics/satisfaction; lines 37-40, explanation following the second-order assignment definition ↔ translation/content/second-order-logic/syntax-and-semantics/satisfaction.tex:37-43 (OLP-0326-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTESOLSYN-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the predicate-symbol-to-relation and relation-variable-to-relation cases omitted by the prose summary; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the prose summary explicitly includes predicate-symbol-to-relation and relation-variable-to-relation assignments.
+
+## REV-OLTESOLSYN-002 — OLTESOLSYN-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: kept M for the structure and renamed the relation value to R throughout the relation-variable substitution clause; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0326; second-order-logic/syntax-and-semantics/satisfaction; lines 65-88, definition of relation-variable substitution ↔ translation/content/second-order-logic/syntax-and-semantics/satisfaction.tex:69-93 (OLP-0326-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTESOLSYN-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: kept M for the structure and renamed the relation value to R throughout the relation-variable substitution clause; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that R consistently denotes the relation value while M remains the fixed structure in the substitution definition.
+
+## REV-OLTESOLSYN-003 — OLTESOLSYN-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: kept M for the fixed structure and renamed the quantified relation to R in both relation-quantifier clauses; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0326; second-order-logic/syntax-and-semantics/satisfaction; lines 90-116, universal and existential relation-quantifier satisfaction clauses ↔ translation/content/second-order-logic/syntax-and-semantics/satisfaction.tex:96-126 (OLP-0326-B015); printed/PDF page pending
+
+- Authorities actually checked: OLTESOLSYN-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: kept M for the fixed structure and renamed the quantified relation to R in both relation-quantifier clauses; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that R consistently denotes the quantified relation in both second-order relation-quantifier satisfaction clauses.
+
+## REV-OLTESOLSYN-004 — OLTESOLSYN-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: kept M for the structure and used the example's existing N for its proper subset; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0326; second-order-logic/syntax-and-semantics/satisfaction; lines 181-182, concluding subset choice in the second satisfaction example ↔ translation/content/second-order-logic/syntax-and-semantics/satisfaction.tex:187-197 (OLP-0326-B020); printed/PDF page pending
+
+- Authorities actually checked: OLTESOLSYN-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: kept M for the structure and used the example's existing N for its proper subset; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that N, already used for the example subset, consistently replaces the source collision with the structure symbol M.
+
+## REV-OLTESOLSYN-005 — OLTESOLSYN-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: kept M for the structure and renamed the arbitrary subset to S throughout the forward argument; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0329; second-order-logic/syntax-and-semantics/inf-count; lines 93-102, forward direction of the Count proposition ↔ translation/content/second-order-logic/syntax-and-semantics/inf-count.tex:98-110 (OLP-0329-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTESOLSYN-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: kept M for the structure and renamed the arbitrary subset to S throughout the forward argument; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that S denotes the arbitrary subset throughout the forward Count proof while M remains the structure.
+
+## REV-OLTESOLSYN-006 — OLTESOLSYN-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: kept M for the structure and renamed the orbit subset to S throughout the reverse argument; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0329; second-order-logic/syntax-and-semantics/inf-count; lines 104-122, reverse direction of the Count proposition ↔ translation/content/second-order-logic/syntax-and-semantics/inf-count.tex:112-133 (OLP-0329-B012); printed/PDF page pending
+
+- Authorities actually checked: OLTESOLSYN-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: kept M for the structure and renamed the orbit subset to S throughout the reverse argument; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that S denotes the orbit subset throughout the reverse Count proof while M remains the structure.
