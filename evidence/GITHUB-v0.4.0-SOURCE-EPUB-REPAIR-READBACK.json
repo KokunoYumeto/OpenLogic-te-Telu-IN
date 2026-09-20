@@ -1,12 +1,13 @@
 {
   "schema": "openlogic-te-github-public-readback/1",
-  "checked_at": "2026-09-20T03:56:18.508Z",
+  "checked_at": "2026-09-20T19:15:44.672Z",
   "status": "COMPLETE_PASS",
   "transport": {
     "anonymous": true,
     "authorization_header_sent": false,
     "inventory_url": "https://api.github.com/repos/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tags/v0.4.0-cumulative-olp0279",
-    "downloads": "public browser_download_url values returned by the anonymous inventory"
+    "downloads": "public browser_download_url values returned by the anonymous inventory",
+    "expected_bytes_source": "local sealed release staging directory; no authenticated API values used as expected content"
   },
   "release": {
     "tag": "v0.4.0-cumulative-olp0279",
@@ -14,7 +15,7 @@
     "public_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.4.0-cumulative-olp0279",
     "draft": false,
     "prerelease": false,
-    "asset_count": 15
+    "asset_count": 16
   },
   "notes": {
     "required_link_order": [
@@ -26,23 +27,23 @@
     "observed_positions": {
       "openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.pdf": 523,
       "openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.tex": 720,
-      "openlogic-te-Telu-IN-cumulative-OLP0279-build-source-v0.4.0.zip": 980,
-      "openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.epub": 1192
+      "openlogic-te-Telu-IN-cumulative-OLP0279-build-source-v0.4.0.zip": 983,
+      "openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.epub": 1195
     },
     "order_status": "PASS",
     "primary_hashes_present": true
   },
-  "repaired_assets_expected": 8,
-  "all_release_assets_downloaded": 15,
+  "repaired_assets_expected": 16,
+  "all_release_assets_downloaded": 16,
   "assets": [
     {
       "name": "CUMULATIVE-OLP0279-EPUB-QA.json",
       "public_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.4.0-cumulative-olp0279/CUMULATIVE-OLP0279-EPUB-QA.json",
       "content_type": "application/json",
       "inventory_bytes": 271353,
-      "inventory_digest": "sha256:616d85c51b372a5f70f7290bda9fd1fc7e94953cfa7a6ea1ce2cb11ddd56cf61",
+      "inventory_digest": "sha256:5cf74738fda814a107beff866994c82694393ed41c1024642b3d8ea7edf11659",
       "observed_bytes": 271353,
-      "observed_sha256": "616d85c51b372a5f70f7290bda9fd1fc7e94953cfa7a6ea1ce2cb11ddd56cf61",
+      "observed_sha256": "5cf74738fda814a107beff866994c82694393ed41c1024642b3d8ea7edf11659",
       "expected_repair_artifact": true,
       "status": "PASS"
     },
@@ -50,10 +51,10 @@
       "name": "CUMULATIVE-OLP0279-EPUB-RENDER-QA.json",
       "public_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.4.0-cumulative-olp0279/CUMULATIVE-OLP0279-EPUB-RENDER-QA.json",
       "content_type": "application/json",
-      "inventory_bytes": 5959,
-      "inventory_digest": "sha256:2cab3ad4267a0115d2854568c8ef16bd31df534795adfe28284a9453c59c96cd",
-      "observed_bytes": 5959,
-      "observed_sha256": "2cab3ad4267a0115d2854568c8ef16bd31df534795adfe28284a9453c59c96cd",
+      "inventory_bytes": 8026,
+      "inventory_digest": "sha256:0f227bfbf779b5b01aed1a588c9b145267fefc503cc576fe4e4f3f09f64a938f",
+      "observed_bytes": 8026,
+      "observed_sha256": "0f227bfbf779b5b01aed1a588c9b145267fefc503cc576fe4e4f3f09f64a938f",
       "expected_repair_artifact": true,
       "status": "PASS"
     },
@@ -61,10 +62,10 @@
       "name": "CUMULATIVE-OLP0279-SOURCE-REPAIR-QA.json",
       "public_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.4.0-cumulative-olp0279/CUMULATIVE-OLP0279-SOURCE-REPAIR-QA.json",
       "content_type": "application/json",
-      "inventory_bytes": 5797,
-      "inventory_digest": "sha256:4fd0c71845bb36926c77ee4632a0a187cb435731a21e549e843685441a8dcc37",
-      "observed_bytes": 5797,
-      "observed_sha256": "4fd0c71845bb36926c77ee4632a0a187cb435731a21e549e843685441a8dcc37",
+      "inventory_bytes": 15919,
+      "inventory_digest": "sha256:b4251e7482e16ccfca883568f92039b308a92935037d8831025d3f1dd6fd2f48",
+      "observed_bytes": 15919,
+      "observed_sha256": "b4251e7482e16ccfca883568f92039b308a92935037d8831025d3f1dd6fd2f48",
       "expected_repair_artifact": true,
       "status": "PASS"
     },
@@ -72,10 +73,10 @@
       "name": "openlogic-te-Telu-IN-cumulative-OLP0279-build-source-v0.4.0.zip",
       "public_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.4.0-cumulative-olp0279/openlogic-te-Telu-IN-cumulative-OLP0279-build-source-v0.4.0.zip",
       "content_type": "application/zip",
-      "inventory_bytes": 1311983,
-      "inventory_digest": "sha256:7d22f70e1deb6ba6f23473ef1ecaad4817a096662611ff95660f4e45df79e65d",
-      "observed_bytes": 1311983,
-      "observed_sha256": "7d22f70e1deb6ba6f23473ef1ecaad4817a096662611ff95660f4e45df79e65d",
+      "inventory_bytes": 8519449,
+      "inventory_digest": "sha256:1d33fd3caf8045b9cc8928aa31924a8098866315731d52d49d1a3b0c76f34159",
+      "observed_bytes": 8519449,
+      "observed_sha256": "1d33fd3caf8045b9cc8928aa31924a8098866315731d52d49d1a3b0c76f34159",
       "expected_repair_artifact": true,
       "status": "PASS"
     },
@@ -87,17 +88,17 @@
       "inventory_digest": "sha256:f085db849a73df551d0b21cf1805b129b0739688b1a519719d173367d72be48c",
       "observed_bytes": 5608,
       "observed_sha256": "f085db849a73df551d0b21cf1805b129b0739688b1a519719d173367d72be48c",
-      "expected_repair_artifact": false,
+      "expected_repair_artifact": true,
       "status": "PASS"
     },
     {
       "name": "openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.epub",
       "public_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.4.0-cumulative-olp0279/openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.epub",
       "content_type": "application/epub+zip",
-      "inventory_bytes": 1844059,
-      "inventory_digest": "sha256:fce845469d300ce4a86a4f7b909387976582c735ee0b881215537ab5ccc64b3e",
-      "observed_bytes": 1844059,
-      "observed_sha256": "fce845469d300ce4a86a4f7b909387976582c735ee0b881215537ab5ccc64b3e",
+      "inventory_bytes": 1843911,
+      "inventory_digest": "sha256:ec89b21391bad7bbd986ae7ddfeec2c9c54636ad078f1eeada4869efe4563cc5",
+      "observed_bytes": 1843911,
+      "observed_sha256": "ec89b21391bad7bbd986ae7ddfeec2c9c54636ad078f1eeada4869efe4563cc5",
       "expected_repair_artifact": true,
       "status": "PASS"
     },
@@ -131,7 +132,7 @@
       "inventory_digest": "sha256:13315680928327cbb5d0816b92bf3cf138ddd612a9d7762dde866e7b61ad4c30",
       "observed_bytes": 1201141,
       "observed_sha256": "13315680928327cbb5d0816b92bf3cf138ddd612a9d7762dde866e7b61ad4c30",
-      "expected_repair_artifact": false,
+      "expected_repair_artifact": true,
       "status": "PASS"
     },
     {
@@ -142,7 +143,7 @@
       "inventory_digest": "sha256:9387e975413c1d75d77e2d2d35b8210359ef2fe6f07135b111add5631cc5efcd",
       "observed_bytes": 6043339,
       "observed_sha256": "9387e975413c1d75d77e2d2d35b8210359ef2fe6f07135b111add5631cc5efcd",
-      "expected_repair_artifact": false,
+      "expected_repair_artifact": true,
       "status": "PASS"
     },
     {
@@ -153,7 +154,7 @@
       "inventory_digest": "sha256:d7af4140075f56433ad5673f652ad6f756d0b0cedb842ee2ddfbcaa2d7dab692",
       "observed_bytes": 408533,
       "observed_sha256": "d7af4140075f56433ad5673f652ad6f756d0b0cedb842ee2ddfbcaa2d7dab692",
-      "expected_repair_artifact": false,
+      "expected_repair_artifact": true,
       "status": "PASS"
     },
     {
@@ -164,39 +165,50 @@
       "inventory_digest": "sha256:14558fd925098e97e4657c6df39639364af25b51d4c0c5e2736817156d1732ed",
       "observed_bytes": 354646,
       "observed_sha256": "14558fd925098e97e4657c6df39639364af25b51d4c0c5e2736817156d1732ed",
-      "expected_repair_artifact": false,
+      "expected_repair_artifact": true,
       "status": "PASS"
     },
     {
       "name": "release-manifest-v0.4.0.json",
       "public_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.4.0-cumulative-olp0279/release-manifest-v0.4.0.json",
       "content_type": "application/json",
-      "inventory_bytes": 2881,
-      "inventory_digest": "sha256:7d49c3599ff4eda6d16b83d4925d24439b72e30094c9ea793f951e395901ad98",
-      "observed_bytes": 2881,
-      "observed_sha256": "7d49c3599ff4eda6d16b83d4925d24439b72e30094c9ea793f951e395901ad98",
-      "expected_repair_artifact": false,
+      "inventory_bytes": 6347,
+      "inventory_digest": "sha256:a4212952e0666a8a440fd07d7cd02478e5c422a51d1ebb5c11df08b05b92799b",
+      "observed_bytes": 6347,
+      "observed_sha256": "a4212952e0666a8a440fd07d7cd02478e5c422a51d1ebb5c11df08b05b92799b",
+      "expected_repair_artifact": true,
       "status": "PASS"
     },
     {
       "name": "SHA256SUMS-v0.4.0.txt",
       "public_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.4.0-cumulative-olp0279/SHA256SUMS-v0.4.0.txt",
       "content_type": "text/plain; charset=utf-8",
-      "inventory_bytes": 769,
-      "inventory_digest": "sha256:f107a3cebacd5f9845542e5fc3c98cd054e646afe7878a381df2b013863c04c2",
-      "observed_bytes": 769,
-      "observed_sha256": "f107a3cebacd5f9845542e5fc3c98cd054e646afe7878a381df2b013863c04c2",
-      "expected_repair_artifact": false,
+      "inventory_bytes": 1630,
+      "inventory_digest": "sha256:7c79e32f4f5f0e25e0902844b2f6c1d6ab272d6b8180920ce3830bf50b2bd6fe",
+      "observed_bytes": 1630,
+      "observed_sha256": "7c79e32f4f5f0e25e0902844b2f6c1d6ab272d6b8180920ce3830bf50b2bd6fe",
+      "expected_repair_artifact": true,
+      "status": "PASS"
+    },
+    {
+      "name": "SOURCE-PAIRINGS-v0.4.0.json",
+      "public_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.4.0-cumulative-olp0279/SOURCE-PAIRINGS-v0.4.0.json",
+      "content_type": "application/json",
+      "inventory_bytes": 2888,
+      "inventory_digest": "sha256:73f86ae43e365b937a93ab59047ee89b54c7bf447de7ce28c65fff5ecb1ca530",
+      "observed_bytes": 2888,
+      "observed_sha256": "73f86ae43e365b937a93ab59047ee89b54c7bf447de7ce28c65fff5ecb1ca530",
+      "expected_repair_artifact": true,
       "status": "PASS"
     },
     {
       "name": "SOURCE-REPAIR-v0.4.0.json",
       "public_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.4.0-cumulative-olp0279/SOURCE-REPAIR-v0.4.0.json",
       "content_type": "application/json",
-      "inventory_bytes": 892,
-      "inventory_digest": "sha256:42dd5bd5b201e6a67669dfe666d7a1d4da15b7842e410fc942ccaf20b886006f",
-      "observed_bytes": 892,
-      "observed_sha256": "42dd5bd5b201e6a67669dfe666d7a1d4da15b7842e410fc942ccaf20b886006f",
+      "inventory_bytes": 1694,
+      "inventory_digest": "sha256:e721e878d12650e54e6cedaa62e4d29f877bb3bafb062dceea395bec21985d7c",
+      "observed_bytes": 1694,
+      "observed_sha256": "e721e878d12650e54e6cedaa62e4d29f877bb3bafb062dceea395bec21985d7c",
       "expected_repair_artifact": true,
       "status": "PASS"
     }
