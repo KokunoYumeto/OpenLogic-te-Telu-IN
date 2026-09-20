@@ -1,134 +1,112 @@
 {
-  "schema": "openlogic-te-cumulative-source-repair-qa/1",
+  "schema": "openlogic-te-source-repair-qa/2",
   "date": "2026-09-20",
   "status": "COMPLETE_PASS",
-  "lineage": {
-    "repository_commit": "2892803b925b0330bca6200df21ce27b68208cdd",
-    "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
-    "release_tag": "v0.4.0-cumulative-olp0279",
-    "scope": "OLP-0004 through OLP-0279",
-    "unique_editable_units": 276,
-    "inlined_occurrences": 328,
-    "repeated_occurrences": 52
+  "scope": "OLP-0004 through OLP-0279; 276 of 722 units; packaging and deterministic rebuild QA, not full linguistic certification",
+  "manager_findings_repaired": {
+    "balanced_bibtex_fields": true,
+    "human_title_omits_raw_sha": true,
+    "technical_about_provenance_retained": true,
+    "exact_epub_rebuild_source_present": true,
+    "legacy_23_unit_source_pairings_retained": true
   },
-  "release_artifacts": {
-    "published_pdf": {
-      "filename": "openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.pdf",
-      "bytes": 3297226,
-      "sha256": "9ef53813446e024aa86f308da6348f6f79832d22935b0aee104343f25611ff83",
-      "unchanged_by_repair": true
+  "source_companion": {
+    "filename": "openlogic-te-Telu-IN-cumulative-OLP0279-build-source-v0.4.0.zip",
+    "bytes": 8519449,
+    "sha256": "1d33fd3caf8045b9cc8928aa31924a8098866315731d52d49d1a3b0c76f34159",
+    "entries": 1386,
+    "hashes_verified": 1385,
+    "translation_units": 276,
+    "frozen_source_units": 722,
+    "epub_builder_present": true,
+    "offline_node_dependencies_present": true
+  },
+  "released_epub": {
+    "filename": "openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.epub",
+    "bytes": 1843911,
+    "sha256": "ec89b21391bad7bbd986ae7ddfeec2c9c54636ad078f1eeada4869efe4563cc5",
+    "cold_rebuild_byte_identical": true
+  },
+  "sealed_html": {
+    "path": "output/html/cumulative-279/index.html",
+    "bytes": 14494675,
+    "sha256": "77cd0b2b2aa6ad7dcbea83e71a912565734c140f7e2a1c5fcb833e13f0cc0e61"
+  },
+  "sealed_render_manifest": {
+    "path": "output/html/cumulative-279/render-manifest.json",
+    "bytes": 7167125,
+    "sha256": "cb8b6464deb640773c79cac6578926de5245aacb52a06c0956c03bcfb8b29944"
+  },
+  "source_pairings": {
+    "filename": "SOURCE-PAIRINGS-v0.4.0.json",
+    "pairs": 4,
+    "legacy_html_retained": true,
+    "legacy_epub_retained": true
+  },
+  "commands": [
+    {
+      "command": [
+        "node",
+        "scripts/test-bibliography.mjs"
+      ],
+      "exit_code": 0,
+      "output": "{\"status\":\"pass\",\"records\":141,\"checked\":[{\"key\":\"Cantor1892\",\"title\":\"Uber eine elementare Frage der Mannigfaltigkeitslehre\"},{\"key\":\"EwaldSieg2013\",\"title\":\"David Hilbert's Lectures on the Foundations of Arithmetic and Logic 1917--1933\"},{\"key\":\"KatzKatz2012\",\"title\":\"Stevin Numbers and Reality\"},{\"key\":\"Frege1884\",\"title\":\"Die Grundlagen der Arithmetik: Eine logisch mathematische Untersuchung uber den Begriff der Zahl\"},{\"key\":\"Magnus2021\",\"title\":\"Forall x: Calgary. An Introduction to Formal Logic\"}]}"
     },
-    "direct_latex": {
-      "filename": "openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.tex",
-      "bytes": 4156367,
-      "sha256": "a3f996cf1f963cf4283cb82cc433cce7c11bad6a37c5bd7284666b12526f07bf"
+    {
+      "command": [
+        "node",
+        "scripts/build-html.mjs",
+        "--scope=cumulative279"
+      ],
+      "exit_code": 0,
+      "output": "{\"units\":276,\"math\":16555,\"english_math\":15815,\"figures\":0,\"references\":610,\"html_sha256\":\"77cd0b2b2aa6ad7dcbea83e71a912565734c140f7e2a1c5fcb833e13f0cc0e61\"}"
     },
-    "assembly_receipt": {
-      "filename": "openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0-ASSEMBLY.json",
-      "bytes": 65337,
-      "sha256": "2e8781bac1dcb8ed101c39946e05025537d5f8a142e21577cf05fd239b0d21b2"
+    {
+      "command": [
+        "node",
+        "scripts/audit-html.mjs",
+        "--scope=cumulative279"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"schema\": \"openlogic-te-html-deterministic-qa/2\",\n  \"generated_utc\": \"2026-09-20T15:52:18.754Z\",\n  \"scope\": \"Cumulative reader, OLP-0004..OLP-0279\",\n  \"directory\": \"output/html/cumulative-279\",\n  \"units\": 276,\n  \"aligned_blocks\": 4381,\n  \"linguistic_blocks\": 2743,\n  \"telugu_mathml\": 16555,\n  \"english_mathml\": 15815,\n  \"internal_references\": 1202,\n  \"out_of_scope_references\": 18,\n  \"citation_keys\": 12,\n  \"inline_svg_instances\": 6,\n  \"compiled_svg_instances\": 58,\n  \"telugu_code_points\": 581845,\n  \"network_runtime_dependencies\": 0,\n  \"toolchain\": {\n    \"node\": \"v22.17.0\",\n    \"package_lock_sha256\": \"790803e48fc7e9e678b39eefc97b1fd4bfe8561ea4baefab486ab41df462294e\",\n    \"builder_sha256\": \"fed18ef7e4e3b9c52be0447fd05ed4461eb42bfef7dd147cae8bf219b7c752c6\",\n    \"reader_sha256\": \"a44e95f8aea92d0a54bab7c8addfa07e98b1a78153fdc71a46d34304d908b592\",\n    \"auditor_sha256\": \"c0a0fb7c58dd576f61100743c66ea14da6510781dc4b51eba204e9d26a7a25e1\"\n  },\n  \"files\": [\n    {\n      \"name\": \"assets/diagrams/bijective.svg\",\n      \"bytes\": 4974,\n      \"sha256\": \"afd681bebfecc5d6fbf5b612728588b750134f2e709d6d0d168d13f265756c5a\"\n    },\n    {\n      \"name\": \"assets/diagrams/composition.svg\",\n      \"bytes\": 8775,\n      \"sha256\": \"f5a8ea5c51546c02be6dc22b41a18ca7091cd7bbea02af3cf0e4f507091bb3bd\"\n    },\n    {\n      \"name\": \"assets/diagrams/function.svg\",\n      \"bytes\": 5418,\n      \"sha256\": \"b4277b7eaa16590381e5e84f7ceedfb9e487f828f891de4a64aa10eb84739458\"\n    },\n    {\n      \"name\": \"assets/diagrams/injective.svg\",\n      \"bytes\": 5899,\n      \"sha256\": \"e6900aff855419a576e718450b5b6031d47b0feb0d266265457edb25821090f4\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-1182ea7b3b818fa0.svg\",\n      \"bytes\": 35996,\n      \"sha256\": \"ca5e0d44cf224362587ca81d9aff31a53d6b681f5c1bbc785fb7815a72d9561e\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-1367279b55b94fa8.svg\",\n      \"bytes\": 32758,\n      \"sha256\": \"b713c5e942412e4b9607013975e6c917e7498f4516c1ade4b1e9551c42ff3f21\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-2ebc9e8e28538a71.svg\",\n      \"bytes\": 50021,\n      \"sha256\": \"3b4141bdff563ce3f1cf82d82c83aed645e84ef6a7c00f47225888547bbe88de\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-3a76ea1bbd4af6cd.svg\",\n      \"bytes\": 32758,\n      \"sha256\": \"b713c5e942412e4b9607013975e6c917e7498f4516c1ade4b1e9551c42ff3f21\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-3d2123bbad7a5cf8.svg\",\n      \"bytes\": 120369,\n      \"sha256\": \"b8b766b48ef5b7d5a4264c8de1eb1206878d2acba547d752a933aa7bd2b009aa\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-42fddcb28cffb78c.svg\",\n      \"bytes\": 22239,\n      \"sha256\": \"b2715d683bc78e4daeafa0a530da8a2f8a1fd113c9e14c82d9ca8a10c46babdc\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-49f4aead9c87b5fd.svg\",\n      \"bytes\": 30009,\n      \"sha256\": \"373763db2a179c4862d52b08ed983e3909449140068c82da2a4cb19a2fa73bc1\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-5c069ebcc45d78fe.svg\",\n      \"bytes\": 18080,\n      \"sha256\": \"ec514fe086b2269d80d5b6c68b0cdd92ceda9b744e627c10c274885ce808fd9a\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-5faec00560b227a0.svg\",\n      \"bytes\": 24504,\n      \"sha256\": \"f533990b8e19f908da73056682b5963022400cd0dbd28ca7d75991337ab41777\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-61f74a97cc29551d.svg\",\n      \"bytes\": 107022,\n      \"sha256\": \"700bef382b736c34a9e5aed6faebe1c22d08ab4a252ce92cefc92badd6a565c8\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-651160f8c92af250.svg\",\n      \"bytes\": 120369,\n      \"sha256\": \"b8b766b48ef5b7d5a4264c8de1eb1206878d2acba547d752a933aa7bd2b009aa\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-67bc14ded3614a59.svg\",\n      \"bytes\": 6326,\n      \"sha256\": \"648ea07509941535c0d0c587a461ea6d23cd1d6912ee2a33cffb3dc5a1e3d456\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-71f7148b6e6f49fc.svg\",\n      \"bytes\": 103321,\n      \"sha256\": \"61aedc73ba7303b49abcd6f1499be4779b3fde399710670cce0653e5664723f2\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-79a096459714bd19.svg\",\n      \"bytes\": 4792,\n      \"sha256\": \"ee7915de5ac46d6ccdc7b085e935e5cbcaa1e26574004a7c191b38bc52e013eb\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-7a6545219f0922fe.svg\",\n      \"bytes\": 51276,\n      \"sha256\": \"baa464c67fa6f3d51c37ba574aac55b7399436c29cff79199f0502ac950293f8\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-8428d3ec0ddf755f.svg\",\n      \"bytes\": 35996,\n      \"sha256\": \"ca5e0d44cf224362587ca81d9aff31a53d6b681f5c1bbc785fb7815a72d9561e\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-8471fff7cb6fda42.svg\",\n      \"bytes\": 26117,\n      \"sha256\": \"f5cc1ebb5e83dd030fe373371d3862e58e3195922c460943ee811828afa0c992\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-8ee505c808d2f308.svg\",\n      \"bytes\": 6151,\n      \"sha256\": \"109d95a2e61ea90fc1e1a96f469b3cd99e17f7b2d9e951e15337a8fa9ad2ed59\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-a1aa286509570cf7.svg\",\n      \"bytes\": 74452,\n      \"sha256\": \"ce6a095697258c69b90c4d0f9bb20e8bd32ade983ba788534b82a883cc578459\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-ade23c264c5e1ec2.svg\",\n      \"bytes\": 32021,\n      \"sha256\": \"172a68ae1de675d24225c8bbe4293f5866f11c099c7e42480aad24ad643f8b34\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-adfd8b1868d5aea1.svg\",\n      \"bytes\": 22239,\n      \"sha256\": \"b2715d683bc78e4daeafa0a530da8a2f8a1fd113c9e14c82d9ca8a10c46babdc\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-b79a7f9b9d4a35d6.svg\",\n      \"bytes\": 6326,\n      \"sha256\": \"648ea07509941535c0d0c587a461ea6d23cd1d6912ee2a33cffb3dc5a1e3d456\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-ba899555b080387d.svg\",\n      \"bytes\": 32021,\n      \"sha256\": \"172a68ae1de675d24225c8bbe4293f5866f11c099c7e42480aad24ad643f8b34\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-c2f5ecdb15cb158d.svg\",\n      \"bytes\": 4792,\n      \"sha256\": \"ee7915de5ac46d6ccdc7b085e935e5cbcaa1e26574004a7c191b38bc52e013eb\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-c3caaee3d74203c5.svg\",\n      \"bytes\": 35996,\n      \"sha256\": \"ca5e0d44cf224362587ca81d9aff31a53d6b681f5c1bbc785fb7815a72d9561e\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-c7f8d298d81e2450.svg\",\n      \"bytes\": 14466,\n      \"sha256\": \"f28a20ca50b5efe08122fbfff538d530876653fafacf666e0c8d06cc495363a0\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-d9931388ff4ffbdb.svg\",\n      \"bytes\": 51276,\n      \"sha256\": \"baa464c67fa6f3d51c37ba574aac55b7399436c29cff79199f0502ac950293f8\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-e8653a45ed3d19d5.svg\",\n      \"bytes\": 35996,\n      \"sha256\": \"ca5e0d44cf224362587ca81d9aff31a53d6b681f5c1bbc785fb7815a72d9561e\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-efc0b65c00b93e59.svg\",\n      \"bytes\": 24837,\n      \"sha256\": \"ee8c6be95ccb72a17d9dc8e9bc3dc1c524f288c7c4d7582d2eda1164781d2966\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-f122123b1f5663cd.svg\",\n      \"bytes\": 9334,\n      \"sha256\": \"dbe4f0471af280e26253067f14546f555fc0403cfbfbd2c81be689c85fc28174\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-f154b16dc94f735d.svg\",\n      \"bytes\": 50021,\n      \"sha256\": \"3b4141bdff563ce3f1cf82d82c83aed645e84ef6a7c00f47225888547bbe88de\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-f90ab2f746e4260f.svg\",\n      \"bytes\": 5301,\n      \"sha256\": \"bb3e0dbaf988c667f574837b068600f5fdb92865c4b7119cb0cced58b74ad0a3\"\n    },\n    {\n      \"name\": \"assets/diagrams/inline-fe28d4a13e84757f.svg\",\n      \"bytes\": 18891,\n      \"sha256\": \"0deffd4cb67d503f9cce7a7fe7c7274820135fd7fff44becbe4ff3c76587c04e\"\n    },\n    {\n      \"name\": \"assets/diagrams/surjective.svg\",\n      \"bytes\": 4792,\n      \"sha256\": \"40b02809f64c1b42f45cb1c16dccc7cc5a85829687565fe3876170a753ce6433\"\n    },\n    {\n      \"name\": \"assets/diagrams/turing-machine.svg\",\n      \"bytes\": 34419,\n      \"sha256\": \"bacfd6059a6c76a851b234c5a6d86cdeb737062637df92b1dc5ab9e3bbae02f5\"\n    },\n    {\n      \"name\": \"fonts/NotoSerifTelugu-Bold.ttf\",\n      \"bytes\": 332592,\n      \"sha256\": \"c0ef9aeb5fe554daa93517e2f2e3b627ddaa1ab56bf7cc99f3059fe5a4e7cdfd\"\n    },\n    {\n      \"name\": \"fonts/NotoSerifTelugu-Regular.ttf\",\n      \"bytes\": 312332,\n      \"sha256\": \"02cf5610b0aa2dc1ab66ed8edadad207ffb86b85eea4889a0b229f041a4b4bf9\"\n    },\n    {\n      \"name\": \"fonts/OFL.txt\",\n      \"bytes\": 4377,\n      \"sha256\": \"0dab92d0544f7b233403f14b84a663bdbfa746982eda629e7f4f9ffe1b036feb\"\n    },\n    {\n      \"name\": \"index.html\",\n      \"bytes\": 14494675,\n      \"sha256\": \"77cd0b2b2aa6ad7dcbea83e71a912565734c140f7e2a1c5fcb833e13f0cc0e61\"\n    },\n    {\n      \"name\": \"KATEX-LICENSE\",\n      \"bytes\": 1107,\n      \"sha256\": \"766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3\"\n    },\n    {\n      \"name\": \"LICENSE.md\",\n      \"bytes\": 17068,\n      \"sha256\": \"bb5e0179a1e9bdb55634a4303784cf73c297a1dcee27b92cd546bf398075531c\"\n    },\n    {\n      \"name\": \"reader.css\",\n      \"bytes\": 5116,\n      \"sha256\": \"123161e2758e368dda8e163f87fdcce2a995b605d22e21b120cf1f6cbb12ae37\"\n    },\n    {\n      \"name\": \"render-manifest.json\",\n      \"bytes\": 7167125,\n      \"sha256\": \"cb8b6464deb640773c79cac6578926de5245aacb52a06c0956c03bcfb8b29944\"\n    }\n  ],\n  \"status\": \"COMPLETE_PASS\"\n}"
     },
-    "build_source_zip": {
-      "filename": "openlogic-te-Telu-IN-cumulative-OLP0279-build-source-v0.4.0.zip",
-      "bytes": 1311983,
-      "sha256": "7d22f70e1deb6ba6f23473ef1ecaad4817a096662611ff95660f4e45df79e65d",
-      "entries": 55,
-      "checksummed_entries": 54
+    {
+      "command": [
+        "python",
+        "scripts/build-sets-epub.py",
+        "--profile",
+        "cumulative279"
+      ],
+      "exit_code": 0,
+      "output": "{\"schema\": \"openlogic-te-epub-build/1\", \"version\": \"0.4.0-cumulative-olp0279-epub\", \"profile\": \"cumulative279\", \"source_scope\": \"Cumulative reader through OLP-0279, OLP-0004�OLP-0279 (276 of 722 units); not the complete Telugu edition\", \"complete_edition\": false, \"source_html_sha256\": \"77cd0b2b2aa6ad7dcbea83e71a912565734c140f7e2a1c5fcb833e13f0cc0e61\", \"source_manifest_sha256\": \"cb8b6464deb640773c79cac6578926de5245aacb52a06c0956c03bcfb8b29944\", \"repository_head_at_build\": \"2892803b925b0330bca6200df21ce27b68208cdd\", \"upstream_revision\": \"9620cc73f9c8e0ad003c514a5d3748f29611c4c0\", \"identifier\": \"urn:uuid:58646357-1e1f-5990-8768-cfe00676abfc\", \"filename\": \"openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.epub\", \"bytes\": 1843911, \"sha256\": \"ec89b21391bad7bbd986ae7ddfeec2c9c54636ad078f1eeada4869efe4563cc5\", \"entries\": 50}"
     },
-    "source_repair_manifest": {
-      "filename": "SOURCE-REPAIR-v0.4.0.json",
-      "bytes": 892,
-      "sha256": "42dd5bd5b201e6a67669dfe666d7a1d4da15b7842e410fc942ccaf20b886006f"
+    {
+      "command": [
+        "python",
+        "scripts/build-sets-epub.py",
+        "--profile",
+        "cumulative279",
+        "--output",
+        "output/release/openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0-cold.epub",
+        "--unpacked",
+        "output/epub-cumulative-279/cold-unpacked"
+      ],
+      "exit_code": 0,
+      "output": "{\"schema\": \"openlogic-te-epub-build/1\", \"version\": \"0.4.0-cumulative-olp0279-epub\", \"profile\": \"cumulative279\", \"source_scope\": \"Cumulative reader through OLP-0279, OLP-0004�OLP-0279 (276 of 722 units); not the complete Telugu edition\", \"complete_edition\": false, \"source_html_sha256\": \"77cd0b2b2aa6ad7dcbea83e71a912565734c140f7e2a1c5fcb833e13f0cc0e61\", \"source_manifest_sha256\": \"cb8b6464deb640773c79cac6578926de5245aacb52a06c0956c03bcfb8b29944\", \"repository_head_at_build\": \"2892803b925b0330bca6200df21ce27b68208cdd\", \"upstream_revision\": \"9620cc73f9c8e0ad003c514a5d3748f29611c4c0\", \"identifier\": \"urn:uuid:58646357-1e1f-5990-8768-cfe00676abfc\", \"filename\": \"openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0-cold.epub\", \"bytes\": 1843911, \"sha256\": \"ec89b21391bad7bbd986ae7ddfeec2c9c54636ad078f1eeada4869efe4563cc5\", \"entries\": 50}"
+    },
+    {
+      "command": [
+        "python",
+        "scripts/audit-sets-epub.py",
+        "--profile",
+        "cumulative279",
+        "--epubcheck-jar",
+        "C:\\interlanguage-task-state\\openlogic-te-Telu-IN\\tools\\epubcheck-5.4.0\\epubcheck-5.4.0\\epubcheck.jar"
+      ],
+      "exit_code": 0,
+      "output": "{\"status\": \"COMPLETE_PASS\", \"artifact\": {\"filename\": \"openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.epub\", \"bytes\": 1843911, \"sha256\": \"ec89b21391bad7bbd986ae7ddfeec2c9c54636ad078f1eeada4869efe4563cc5\", \"media_type\": \"application/epub+zip\", \"rendition\": \"reflowable\", \"language\": \"te-Telu-IN\", \"direction\": \"ltr\"}, \"evidence\": \"CUMULATIVE-OLP0279-EPUB-QA.json\", \"release_manifest\": null}"
     }
-  },
-  "assembly": {
-    "recorded_fls": {
-      "bytes": 292295,
-      "sha256": "e57f37b7ec59e60def6ce1fc7762e9462eaade4f46bddb825994ae46d0983291"
-    },
-    "traversal_sha256": "68137b887081b1ccdaf5c64657614595d9d65ea426b3de96a5a4e5bbea643207",
-    "source_subfile_commands_remaining": 0,
-    "source_olimport_commands_remaining": 0,
-    "active_conditional_import_wrappers_evaluated": 28,
-    "reason_for_wrapper_evaluation": "The recorded traversal already identifies the selected imports. Removing only their empty-false conditional wrappers keeps imported verbatim material out of macro arguments while preserving unit text and order.",
-    "deterministic_rebuild": {
-      "direct_latex_sha256": "a3f996cf1f963cf4283cb82cc433cce7c11bad6a37c5bd7284666b12526f07bf",
-      "assembly_receipt_sha256": "2e8781bac1dcb8ed101c39946e05025537d5f8a142e21577cf05fd239b0d21b2",
-      "build_source_zip_sha256": "7d22f70e1deb6ba6f23473ef1ecaad4817a096662611ff95660f4e45df79e65d"
-    }
-  },
-  "cold_companion_build": {
-    "fresh_archive_extraction": true,
-    "contents_sha256_rows_verified": 54,
-    "mutex": "Global\\InterlanguageTeXSlotV1",
-    "mutex_acquired": true,
-    "commands": [
-      "xelatex-1",
-      "bibtex",
-      "xelatex-2",
-      "xelatex-3",
-      "xelatex-4",
-      "xelatex-5"
-    ],
-    "all_exit_codes": 0,
-    "converged_xelatex_pass": 5,
-    "maximum_xelatex_passes": 6,
-    "reproducible_last_two_passes": true,
-    "pages": 515,
-    "missing_characters": 0,
-    "undefined_references": false,
-    "undefined_citations": false,
-    "pdf": {
-      "bytes": 3297224,
-      "sha256": "8c691560cdc558d8b388ede2a80e1220647aff496daad30b2a396b58fa6d88f4"
-    },
-    "receipt": {
-      "bytes": 1380,
-      "sha256": "43e5a15c9a7d68ab819e622acab8dcb0e17855a740f1d25489719a5aafdf1297"
-    }
-  },
-  "content_equivalence": {
-    "layout_text": {
-      "tool": "pdftotext 24.04.0",
-      "bytes_per_output": 2324602,
-      "sha256_per_output": "c192740ac85e3443f4d0c8ea0e2df418fc76f6eccd9547e924f4b77ecb243b54",
-      "published_vs_cold_flattened_byte_identical": true,
-      "published_vs_exact_master_byte_identical": true
-    },
-    "page_rasters": {
-      "tool": "pdftoppm 26.07.0",
-      "format": "PNG",
-      "color_mode": "grayscale",
-      "dpi": 72,
-      "pages_compared": 515,
-      "published_vs_cold_flattened_byte_identical_pages": 515,
-      "published_vs_exact_master_byte_identical_pages": 515,
-      "mismatches": 0
-    },
-    "container_hash_note": "The public PDF, exact-checkout master replay, and standalone flattened replay have separately recorded PDF container hashes. Equality is established at extracted text and every rendered page; the public PDF bytes remain unchanged."
-  },
-  "regression": {
-    "legacy_sfr_epub": {
-      "filename": "openlogic-te-Telu-IN-sfr-v0.3.0.epub",
-      "rebuilt_bytes": 354646,
-      "published_bytes": 354646,
-      "rebuilt_sha256": "14558fd925098e97e4657c6df39639364af25b51d4c0c5e2736817156d1732ed",
-      "published_sha256": "14558fd925098e97e4657c6df39639364af25b51d4c0c5e2736817156d1732ed",
-      "byte_identical": true,
-      "known_epubcheck_5_4_0_result": "2 RSC-005 errors for legacy aria-label attributes; preserved to keep the already-published v0.3.0 bytes reproducible"
-    },
-    "cumulative_epub": {
-      "filename": "openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.epub",
-      "bytes": 1844059,
-      "sha256": "fce845469d300ce4a86a4f7b909387976582c735ee0b881215537ab5ccc64b3e",
-      "normal_and_cold_builds_byte_identical": true,
-      "epubcheck": "EPUBCheck 5.4.0; EPUB 3.4 rules; 0 fatals, 0 errors, 0 warnings, 0 infos",
-      "qa_receipt_sha256": "616d85c51b372a5f70f7290bda9fd1fc7e94953cfa7a6ea1ce2cb11ddd56cf61",
-      "render_qa_receipt_sha256": "2cab3ad4267a0115d2854568c8ef16bd31df534795adfe28284a9453c59c96cd"
-    }
-  },
-  "limitations": [
-    "This evidence verifies the frozen v0.4.0 OLP-0279 checkpoint and does not claim completion of the 722-unit Telugu edition.",
-    "The 72 dpi raster comparison is a complete all-page equivalence check, not a replacement for the separately recorded higher-resolution visual inspection of representative and high-risk pages."
-  ]
+  ],
+  "tex_runs": 0,
+  "network_fetches": 0
 }

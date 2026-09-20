@@ -1,12 +1,12 @@
 {
   "artifact": {
-    "bytes": 1844059,
+    "bytes": 1843911,
     "direction": "ltr",
     "filename": "openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.epub",
     "language": "te-Telu-IN",
     "media_type": "application/epub+zip",
     "rendition": "reflowable",
-    "sha256": "fce845469d300ce4a86a4f7b909387976582c735ee0b881215537ab5ccc64b3e"
+    "sha256": "ec89b21391bad7bbd986ae7ddfeec2c9c54636ad078f1eeada4869efe4563cc5"
   },
   "content": {
     "bibliography_entries": 1,
@@ -591,7 +591,7 @@
         "ids": 7,
         "links": 8,
         "mathml_roots": 122,
-        "normalized_text_sha256": "f92e9a6472ac374922016c42592264bc31bff99201a31a1aea2f3239df17d29c",
+        "normalized_text_sha256": "61b46dd69acdca6ab48bf8eaaffa9a4f853d374e755cfdcc64fb34bf498a68e1",
         "statement_classes": {
           "defn": 2,
           "prob": 4,
@@ -609,7 +609,7 @@
         "ids": 5,
         "links": 18,
         "mathml_roots": 211,
-        "normalized_text_sha256": "a71cc96a7d0936abe2ed292916320b302f8789087a76ec0ca83f2eebbe3e1c82",
+        "normalized_text_sha256": "3f08869ddf368d25a312882835153142f2dd87ccdc511b549ad8d7072d75f477",
         "statement_classes": {
           "defn": 4,
           "prob": 2,
@@ -627,7 +627,7 @@
         "ids": 9,
         "links": 6,
         "mathml_roots": 34,
-        "normalized_text_sha256": "4c8ae767441234c31f250bf13ffaccd3b0f4c408c1c198464409a34f977bf570",
+        "normalized_text_sha256": "4140f49fc00a7136c226d5b855ffbeaee9c5320a969a9d19e4f61e3b47467776",
         "statement_classes": {
           "statement": 2,
           "thm": 2
@@ -742,7 +742,7 @@
         "ids": 9,
         "links": 10,
         "mathml_roots": 80,
-        "normalized_text_sha256": "6ee49bd2151abcc0968988cf79a5c0f6c3579e8212b041c7ef6eb618c31955b0",
+        "normalized_text_sha256": "cef1d558f987a74f0c8cf105f591a5f1670261ef63e146df2aa699c7c06abd21",
         "statement_classes": {
           "statement": 2,
           "thm": 2
@@ -775,7 +775,7 @@
         "ids": 3,
         "links": 12,
         "mathml_roots": 8,
-        "normalized_text_sha256": "e4bb32bd632c2084bebc6b59075382bd75705f4cddb77a64755fa04423148c07",
+        "normalized_text_sha256": "786d770e8ef73c7dc4afdbf164993d2a169fb870d79e3eda0a2abdd1c99089b1",
         "statement_classes": {},
         "svg_diagrams": 0,
         "telugu_mathml_roots": 4,
@@ -805,7 +805,7 @@
         "ids": 15,
         "links": 20,
         "mathml_roots": 264,
-        "normalized_text_sha256": "1781c60cf291d50b37186607d1b93390f40080b9541760eab9db8e5857bfd9cd",
+        "normalized_text_sha256": "d4b52c3629d5a154c9ae29b0d25ad8a8c3a0e272344c6b6aef3f1251f6f4c17d",
         "statement_classes": {
           "defn": 2,
           "prob": 4,
@@ -836,7 +836,7 @@
         "ids": 5,
         "links": 4,
         "mathml_roots": 24,
-        "normalized_text_sha256": "356fbf3bc2933cfb4a1e289260618a0125f41c484e16d8f7748c2ac69aa13d9b",
+        "normalized_text_sha256": "db5544b4a98ee82a33402820f39133501f551eef736ac95b5920f47df94dcd84",
         "statement_classes": {
           "defn": 2,
           "statement": 2
@@ -870,7 +870,7 @@
         "ids": 7,
         "links": 6,
         "mathml_roots": 50,
-        "normalized_text_sha256": "ade029d5a457b62a299e3a036e487b729836e2ca815ec4dda92813aaa9ed86d5",
+        "normalized_text_sha256": "09ae91edf7c4c696b269377439cf6fc90df4c19adf1ba65a4d2e6d819e431701",
         "statement_classes": {
           "cor": 2,
           "statement": 4,
@@ -887,7 +887,7 @@
         "ids": 7,
         "links": 22,
         "mathml_roots": 26,
-        "normalized_text_sha256": "3aa1e01c61e068b24bb4a8105b32f9a8eb4bf2b73974546158376d21d685a366",
+        "normalized_text_sha256": "12794b8675d4a238af043f694ec9a621dd74fd40ee9449e5aaaf0ed0cc7cd06e",
         "statement_classes": {},
         "svg_diagrams": 0,
         "telugu_mathml_roots": 13,
@@ -900,7 +900,7 @@
         "ids": 13,
         "links": 14,
         "mathml_roots": 184,
-        "normalized_text_sha256": "20de06ecefbc22f339e12df828dce7734da41880a48bf56bb3c8a64c885670d1",
+        "normalized_text_sha256": "92ab94b01291ca567659d720f9b174bb25efeb624b1b198b454dcbb9be2fde6d",
         "statement_classes": {
           "lem": 2,
           "prop": 2,
@@ -2280,7 +2280,7 @@
         "ids": 7,
         "links": 6,
         "mathml_roots": 68,
-        "normalized_text_sha256": "d632fb616e0334b1667bc1432c2c9e233340a51714c6ecaf4e0946831838f1c5",
+        "normalized_text_sha256": "90aae0167206bf970f2f092258b7dbecc5a588a07d4cfad70af46279791d40c6",
         "statement_classes": {},
         "svg_diagrams": 0,
         "telugu_mathml_roots": 34,
@@ -2513,7 +2513,7 @@
         "ids": 21,
         "links": 16,
         "mathml_roots": 292,
-        "normalized_text_sha256": "9afe87ce0e42ca459fafed1f5dc8a274da04e52ae65e158e2a8db2286c719ec8",
+        "normalized_text_sha256": "8aebd13ae6a0072751d1e76d694c6f0173a1f88375e5bd87251012c7758fb57c",
         "statement_classes": {
           "defn": 8,
           "ex": 6,
@@ -4472,9 +4472,9 @@
   "date": "2026-09-20",
   "determinism": {
     "byte_identical": true,
-    "cold_bytes": 1844059,
+    "cold_bytes": 1843911,
     "cold_filename": "openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0-cold.epub",
-    "cold_sha256": "fce845469d300ce4a86a4f7b909387976582c735ee0b881215537ab5ccc64b3e",
+    "cold_sha256": "ec89b21391bad7bbd986ae7ddfeec2c9c54636ad078f1eeada4869efe4563cc5",
     "fixed_zip_timestamp": "2026-09-20T00:00:00Z"
   },
   "epubcheck": {
@@ -6706,10 +6706,10 @@
     }
   ],
   "source_identity": {
-    "html_bytes": 14494774,
+    "html_bytes": 14494675,
     "html_path": "output/html/cumulative-279/index.html",
-    "html_sha256": "539745faf37e8d16f7645c9757c9473da243a87b9627034c861f25f527855697",
-    "render_manifest_sha256": "23165973763dcc702f8ed83d9be5b612d31d99d5d830f3498fe8729b44c03c8b",
+    "html_sha256": "77cd0b2b2aa6ad7dcbea83e71a912565734c140f7e2a1c5fcb833e13f0cc0e61",
+    "render_manifest_sha256": "cb8b6464deb640773c79cac6578926de5245aacb52a06c0956c03bcfb8b29944",
     "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0"
   },
   "status": "COMPLETE_PASS",

@@ -48,8 +48,8 @@ PROFILES = {
         "date": "2026-09-20",
         "zip_timestamp": (2026, 9, 20, 0, 0, 0),
         "timestamp_iso": "2026-09-20T00:00:00Z",
-        "html_sha256": "539745faf37e8d16f7645c9757c9473da243a87b9627034c861f25f527855697",
-        "manifest_sha256": "23165973763dcc702f8ed83d9be5b612d31d99d5d830f3498fe8729b44c03c8b",
+        "html_sha256": "77cd0b2b2aa6ad7dcbea83e71a912565734c140f7e2a1c5fcb833e13f0cc0e61",
+        "manifest_sha256": "cb8b6464deb640773c79cac6578926de5245aacb52a06c0956c03bcfb8b29944",
         "units": tuple(f"OLP-{number:04d}" for number in range(4, 280)),
         "unit_range": "OLP-0004 through OLP-0279",
         "source_path": "output/html/cumulative-279/index.html",
@@ -494,9 +494,23 @@ def audit_epub(epub: Path, cold_epub: Path, epubcheck_jar: Path) -> tuple[dict[s
     require(len(source_bibliographies) == len(output_bibliographies) == 1, "bibliography count mismatch")
     require(text_sha(source_bibliographies[0]) == text_sha(output_bibliographies[0]), "bibliography text changed during packaging")
     require(link_values(source_bibliographies[0]) == link_values(output_bibliographies[0]), "bibliography links changed during packaging")
+    bibliography_text = normalized("".join(output_bibliographies[0].itertext()))
+    expected_bibliography_titles = (
+        "Uber eine elementare Frage der Mannigfaltigkeitslehre",
+        "David Hilbert's Lectures on the Foundations of Arithmetic and Logic 1917--1933",
+        "Stevin Numbers and Reality",
+        "Die Grundlagen der Arithmetik: Eine logisch mathematische Untersuchung uber den Begriff der Zahl",
+        "Forall x: Calgary. An Introduction to Formal Logic",
+    )
+    require(all(title in bibliography_text for title in expected_bibliography_titles), "nested-brace bibliography fixture missing or truncated")
+    reader_text = normalized("".join(output.getroot().itertext()))
+    require("Magnus et al., 2021" in reader_text, "multi-author citation was not compacted for reflow")
     title_text = normalized("".join(documents["OEBPS/title.xhtml"].getroot().itertext()))
     require(f"722 మూల విభాగాలలో {len(EXPECTED_UNITS)}" in title_text, "title-page scope disclosure missing")
     require("పూర్తి OpenLogic తెలుగు గ్రంథం కాదు" in title_text, "incomplete-edition disclosure missing")
+    require(EXPECTED_HTML_SHA256 not in title_text, "technical source SHA leaked into reader-facing title page")
+    about_text = normalized("".join(documents["OEBPS/about.xhtml"].getroot().itertext()))
+    require(EXPECTED_HTML_SHA256 in about_text, "technical source SHA missing from provenance page")
 
     render_manifest = json.loads(SOURCE_MANIFEST.read_text(encoding="utf-8"))
     source_crosswalk = audit_source_crosswalk(render_manifest)

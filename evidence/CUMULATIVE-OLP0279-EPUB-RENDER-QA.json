@@ -1,115 +1,174 @@
 {
-  "schema": "openlogic-te-epub-render-qa/1",
+  "schema": "openlogic-te-epub-render-qa/2",
   "date": "2026-09-20",
   "status": "COMPLETE_PASS",
   "subject": {
     "filename": "openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.epub",
-    "bytes": 1844059,
-    "sha256": "fce845469d300ce4a86a4f7b909387976582c735ee0b881215537ab5ccc64b3e",
+    "bytes": 1843911,
+    "sha256": "ec89b21391bad7bbd986ae7ddfeec2c9c54636ad078f1eeada4869efe4563cc5",
     "scope": "OLP-0004 through OLP-0279; 276 of 722 corpus units",
     "immutable_source_commit": "2892803b925b0330bca6200df21ce27b68208cdd",
-    "reader_xhtml_bytes": 14436281,
-    "reader_xhtml_sha256": "0e0950db60560a49112a9871875552dc247a896ba146c2fd1f6ebac65f9bcffa",
-    "reader_css_bytes": 5615,
-    "reader_css_sha256": "4052f3951aaa11d8e40d447cd7e3e9fd544b6df992a5546e5a8b024f81e91cba"
+    "reader_xhtml_bytes": 14436182,
+    "reader_xhtml_sha256": "fb14368e88b063a68bd9846cc4af133eaf64bb906f0e8fa3e37f7002c05e240d",
+    "reader_css_bytes": 5638,
+    "reader_css_sha256": "2d2320686e66dab4c4944df443304450ebbe2ed79801285aabda6839cb54deb9"
   },
   "validation_receipt": {
     "path": "evidence/CUMULATIVE-OLP0279-EPUB-QA.json",
-    "sha256": "616d85c51b372a5f70f7290bda9fd1fc7e94953cfa7a6ea1ce2cb11ddd56cf61",
-    "epubcheck": "EPUBCheck 5.4.0",
-    "epub_ruleset": "3.4",
-    "fatals": 0,
-    "errors": 0,
-    "warnings": 0,
-    "infos": 0,
+    "sha256": "5cf74738fda814a107beff866994c82694393ed41c1024642b3d8ea7edf11659",
+    "epubcheck": {
+      "errors": 0,
+      "fatals": 0,
+      "infos": 0,
+      "return_code": 0,
+      "ruleset": "3.4",
+      "status": "pass",
+      "tool": "EPUBCheck 5.4.0",
+      "warnings": 0
+    },
     "internal_links": 1580,
     "fragment_targets": 1567,
     "all_links_resolved": true
   },
-  "method": {
+  "delta_binding": {
+    "previous_public_epub_sha256": "fce845469d300ce4a86a4f7b909387976582c735ee0b881215537ab5ccc64b3e",
+    "source_units_compared": 276,
+    "source_units_identical_after_citation_label_normalization": 276,
+    "raw_changed_units": [
+      "OLP-0035",
+      "OLP-0036",
+      "OLP-0037",
+      "OLP-0044",
+      "OLP-0046",
+      "OLP-0048",
+      "OLP-0050",
+      "OLP-0052",
+      "OLP-0053",
+      "OLP-0054",
+      "OLP-0140",
+      "OLP-0156"
+    ],
+    "change_explanation": "The 12 raw-changed units are exactly the units containing citations. Their labels now use compact family-name forms; OLP-0140's six-author Magnus record becomes Magnus et al., 2021. No translated prose, English source, mathematics, statements, figures, diagrams, IDs, or targets changed.",
+    "prior_full_sample_render_receipt_sha256": "2cab3ad4267a0115d2854568c8ef16bd31df534795adfe28284a9453c59c96cd"
+  },
+  "targeted_render": {
+    "schema": "openlogic-te-targeted-epub-render/1",
     "renderer": "calibre ebook-convert 9.11.0",
     "rasterizer": "Poppler pdftoppm 26.07.0",
-    "contact_sheet_tool": "ImageMagick 7.1.2-22 Q16 x64",
-    "reader_sample": {
-      "description": "Eleven representative production sections were retained from the exact unpacked reader.xhtml; no reader content was rewritten. The production stylesheet, fonts, and SVG resources were copied unchanged beside the sample before rendering.",
-      "selected_units": [
-        "OLP-0004",
-        "OLP-0021",
-        "OLP-0140",
-        "OLP-0153",
-        "OLP-0154",
-        "OLP-0164",
-        "OLP-0216",
-        "OLP-0254",
-        "OLP-0261",
-        "OLP-0266",
-        "OLP-0279"
-      ],
-      "sample_xhtml_sha256": "0ad23d9ed1b050a657e9193d0f7e7c32830aca7c22d4524bf96cb80179533a3b",
-      "rendered_pdf_pages": 57,
-      "rendered_pdf_sha256": "cc5225810d120761feaf8b806cc66ead905e86f3912074e04d21f298072b9d95",
-      "inspected_pages": [2, 8, 9, 18, 21, 29, 35, 39, 41, 46, 50, 53, 57],
-      "contact_sheet_sha256": [
-        "ffc04f4e2655a48bcb2641914bc92c8f8b3383b0136c1e0eb446ebf20f5183c5",
-        "50e63271468c2a942aabd0a307974affe3f818b39440e237bf381d6724757ae5"
-      ]
-    },
-    "front_matter": {
-      "description": "The exact title and navigation XHTML were rendered with their link destinations neutralized only in temporary QA copies, preventing the renderer from recursively loading the 14 MB reader. The full package's original destinations were checked separately by the validation receipt.",
-      "title_pdf_pages": 3,
-      "title_pdf_sha256": "111c9fd8a99328747560799747148cc3c258edae609c1ebfaf398e53b1d5025b",
-      "title_contact_sheet_sha256": "bc7a329e82854f7101eba965502f65f88d7f9233b95d08e0cc45f8a3c4a4a898",
-      "navigation_pdf_pages": 38,
-      "navigation_pdf_sha256": "ead94548079fe7a505004dacf3a3a72f29160ba69267635d8af417a570785646",
-      "navigation_inspected_pages": [1, 19, 38],
-      "navigation_page_png_sha256": [
-        "fb8e715f8f3f988b8a27e9dca0d6ddfae8d78973d0fe77b627c87efdc4af184f",
-        "ec832c3b133a46a506d9d9f86a2bd5a3ca06e160fdb968840e01bf4f56b26bed",
-        "b44e1a727a0483ef406e71abcfc2eb37e8a6c09e10529abe05561dc26cc32090"
-      ]
+    "artifacts": {
+      "title": {
+        "source_sha256": "acd3688815ec8e2887e5cbfef6c4463c979c7200bf6ce512a979edb2a4c43f40",
+        "pdf": {
+          "path": "C:\\interlanguage-task-state\\openlogic-te-Telu-IN\\release-repair-v0.4.0-2892803\\tmp\\v040-epub-targeted-render\\title.pdf",
+          "bytes": 73347,
+          "sha256": "faa851004072321ba16df12b63866222de378f4a2413d6cbe446f27ff6685ac1"
+        },
+        "pages": [
+          {
+            "path": "C:\\interlanguage-task-state\\openlogic-te-Telu-IN\\release-repair-v0.4.0-2892803\\tmp\\v040-epub-targeted-render\\title-1.png",
+            "bytes": 14401,
+            "sha256": "7850765801f42a7c2567d2c0bcad52053380b86750c3a0ab01bbec74937e12e0"
+          },
+          {
+            "path": "C:\\interlanguage-task-state\\openlogic-te-Telu-IN\\release-repair-v0.4.0-2892803\\tmp\\v040-epub-targeted-render\\title-2.png",
+            "bytes": 66417,
+            "sha256": "68713be6960dfdb5adb94fd95766513fecb61c10311139ba6db78da5aeaed1f3"
+          },
+          {
+            "path": "C:\\interlanguage-task-state\\openlogic-te-Telu-IN\\release-repair-v0.4.0-2892803\\tmp\\v040-epub-targeted-render\\title-3.png",
+            "bytes": 142979,
+            "sha256": "3e4570d33537d399a98b82ff5ae4c94585ecf7468df45470322af9f3bf5265be"
+          }
+        ]
+      },
+      "about": {
+        "source_sha256": "8ecdbca4f515ff9f47aaed6b11e2744815abd5a09d0973a8a43207df4c57343e",
+        "pdf": {
+          "path": "C:\\interlanguage-task-state\\openlogic-te-Telu-IN\\release-repair-v0.4.0-2892803\\tmp\\v040-epub-targeted-render\\about.pdf",
+          "bytes": 65856,
+          "sha256": "8d097018db2b6038e366269e59cfc8efa8bea567138e46238571448b93834255"
+        },
+        "pages": [
+          {
+            "path": "C:\\interlanguage-task-state\\openlogic-te-Telu-IN\\release-repair-v0.4.0-2892803\\tmp\\v040-epub-targeted-render\\about-1.png",
+            "bytes": 305455,
+            "sha256": "1ca1b5ff7105aa0cd2e2a4a78f48a3452f6c635be73e2f0eb066a323ae3a4ac1"
+          },
+          {
+            "path": "C:\\interlanguage-task-state\\openlogic-te-Telu-IN\\release-repair-v0.4.0-2892803\\tmp\\v040-epub-targeted-render\\about-2.png",
+            "bytes": 112597,
+            "sha256": "1959cc9481df208af2c3d59076b6e7e71199935717ba6b87d9d94cde96d266e6"
+          },
+          {
+            "path": "C:\\interlanguage-task-state\\openlogic-te-Telu-IN\\release-repair-v0.4.0-2892803\\tmp\\v040-epub-targeted-render\\about-3.png",
+            "bytes": 99541,
+            "sha256": "ea80e015d129a260d4d854bb10d790e3aab12a26004ccf2cc762382695692c25"
+          }
+        ]
+      },
+      "bibliography": {
+        "source_sha256": "39d94b8c7c187d3541a898f7c82502c4c8e67a8c30f8443c37896f5fe7f60b0f",
+        "pdf": {
+          "path": "C:\\interlanguage-task-state\\openlogic-te-Telu-IN\\release-repair-v0.4.0-2892803\\tmp\\v040-epub-targeted-render\\bibliography.pdf",
+          "bytes": 69826,
+          "sha256": "22f148b13461d68ed584e03b891e3cf8960f2fa2047fbc0e06a63774dfb93f8a"
+        },
+        "pages": [
+          {
+            "path": "C:\\interlanguage-task-state\\openlogic-te-Telu-IN\\release-repair-v0.4.0-2892803\\tmp\\v040-epub-targeted-render\\bibliography-1.png",
+            "bytes": 291026,
+            "sha256": "173d55acfd90be4d1a90c08a9b87787da798996d9b2854c873b2366d55b51059"
+          },
+          {
+            "path": "C:\\interlanguage-task-state\\openlogic-te-Telu-IN\\release-repair-v0.4.0-2892803\\tmp\\v040-epub-targeted-render\\bibliography-2.png",
+            "bytes": 34109,
+            "sha256": "0a6e45aff5b53b76a32aaf385b9ce0580dd837c9bcfcf9bd6269b1c40e126e15"
+          }
+        ]
+      },
+      "citation": {
+        "source_sha256": "556bb8ff8ae4177a638207979c7e9c1c8b3f4e62419bbdf46f3fd1afb389cd10",
+        "pdf": {
+          "path": "C:\\interlanguage-task-state\\openlogic-te-Telu-IN\\release-repair-v0.4.0-2892803\\tmp\\v040-epub-targeted-render\\citation.pdf",
+          "bytes": 60331,
+          "sha256": "852f41e512c7dcc5cd69f35e1198022dda3c6e99c8f9d997b1a856c68c6be82f"
+        },
+        "pages": [
+          {
+            "path": "C:\\interlanguage-task-state\\openlogic-te-Telu-IN\\release-repair-v0.4.0-2892803\\tmp\\v040-epub-targeted-render\\citation-1.png",
+            "bytes": 116869,
+            "sha256": "70ed0af4d6fa673ed2fc7fa44b9d81ada39d8d196d4485fdf80124a6c75e4753"
+          }
+        ]
+      }
     }
   },
   "visual_cases": [
     {
-      "case": "title, scope disclosure, and incomplete-edition notice",
+      "case": "title and partial-edition scope",
       "result": "pass",
-      "observed": "The Telugu title, 276-of-722 scope, partial-edition notice, provenance hash, and navigation links are legible and unclipped. Calibre paginates the reflowable title document across three pages without losing content."
+      "observed": "The Telugu title, 276-of-722 scope, partial-edition notice, version, and navigation labels are legible and unclipped; no raw SHA appears."
     },
     {
-      "case": "276-unit table of contents",
+      "case": "technical provenance placement",
       "result": "pass",
-      "observed": "The outer list occupies one full-width column; the unit list uses two readable columns and returns to one column under the narrow-screen media rule. Early, middle, final, and landmark entries are present and legible."
+      "observed": "The full frozen-source revision and semantic-HTML SHA remain legible on the About page."
     },
     {
-      "case": "Telugu shaping and bilingual hierarchy",
+      "case": "nested-brace bibliography titles",
       "result": "pass",
-      "observed": "Telugu shaping, headings, body copy, statement blocks, correction callouts, footnote markers, and collapsed canonical-English controls render consistently in early, middle, and final units."
+      "observed": "Cantor1892, EwaldSieg2013, KatzKatz2012, Frege1884, and Magnus2021 render with complete titles and no exposed LaTeX command."
     },
     {
-      "case": "EPUB-normalized MathML operator wrappers",
+      "case": "multi-author citation reflow",
       "result": "pass",
-      "observed": "OLP-0153 renders the primed binary operator as (B′ ∗′ C′); OLP-0164 renders the composite satisfaction relation; OLP-0216 renders truncated subtraction with its overdot and preserved binary spacing. Inline formulae do not acquire individual scroll controls."
+      "observed": "The Telugu and English OLP-0140 footnotes render Magnus et al., 2021 on one unclipped page with normal link wrapping."
     },
     {
-      "case": "Figure 15.5 caption promotion",
+      "case": "unchanged reader body",
       "result": "pass",
-      "observed": "The main-operator table, Telugu caption, stable target, and adjacent source-correction callout remain in a valid and visually coherent figure container."
-    },
-    {
-      "case": "wide display mathematics",
-      "result": "pass",
-      "observed": "Piecewise definitions, recursive equations, and long machine encodings remain readable; on-screen block formulae retain horizontal overflow support while print export suppresses inline overflow controls."
-    },
-    {
-      "case": "compiled diagrams and machine schematics",
-      "result": "pass",
-      "observed": "The combined adder/doubler state graph, standard machine variants, and tape/configuration schematic are sharp, centered, labeled, and unclipped alongside their Telugu captions and prose."
-    },
-    {
-      "case": "final unit",
-      "result": "pass",
-      "observed": "OLP-0279 opens and closes cleanly, including correction callouts, theorem notation, and the canonical-English disclosure."
+      "observed": "All 276 source units are byte-equivalent to the previous public EPUB after citation-label normalization; the 12 raw-changed units are exactly those containing citation labels."
     }
   ],
-  "finding": "No missing content, unreadable Telugu shaping, malformed normalized operator, clipped sampled diagram, overlapping block, or unresolved visual-layout defect was observed in the final cumulative EPUB."
+  "finding": "No clipped text, exposed bibliography markup, misplaced technical provenance, or changed reader-body content was observed in the repaired EPUB delta."
 }

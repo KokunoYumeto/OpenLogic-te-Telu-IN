@@ -48,8 +48,8 @@ PROFILES = {
         "version": "0.4.0-cumulative-olp0279-epub",
         "modified": "2026-09-20T00:00:00Z",
         "zip_timestamp": (2026, 9, 20, 0, 0, 0),
-        "html_sha256": "539745faf37e8d16f7645c9757c9473da243a87b9627034c861f25f527855697",
-        "manifest_sha256": "23165973763dcc702f8ed83d9be5b612d31d99d5d830f3498fe8729b44c03c8b",
+        "html_sha256": "77cd0b2b2aa6ad7dcbea83e71a912565734c140f7e2a1c5fcb833e13f0cc0e61",
+        "manifest_sha256": "cb8b6464deb640773c79cac6578926de5245aacb52a06c0956c03bcfb8b29944",
         "units": tuple(f"OLP-{number:04d}" for number in range(4, 280)),
         "title": "OLP-0279 వరకు సంచిత తెలుగు పాఠ్యం",
         "lead": "276 సంపాదించగల పాఠ్య విభాగాలు",
@@ -426,7 +426,28 @@ def serialize(root: etree._Element) -> bytes:
 
 
 def repository_head() -> str:
-    return subprocess.check_output(["git", "-C", str(ROOT), "rev-parse", "HEAD"], text=True, encoding="utf-8").strip()
+    try:
+        result = subprocess.run(
+            ["git", "-C", str(ROOT), "rev-parse", "HEAD"],
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            encoding="utf-8",
+        )
+        commit = result.stdout.strip()
+    except (OSError, subprocess.CalledProcessError):
+        provenance_path = ROOT / "REBUILD-SOURCE.json"
+        if not provenance_path.is_file():
+            raise RuntimeError(
+                "Git commit is unavailable and REBUILD-SOURCE.json is absent; "
+                "the EPUB provenance cannot be established"
+            )
+        provenance = json.loads(provenance_path.read_text(encoding="utf-8"))
+        commit = provenance.get("repository_commit", "")
+    if len(commit) != 40 or any(character not in "0123456789abcdef" for character in commit.lower()):
+        raise RuntimeError(f"Invalid repository provenance commit: {commit!r}")
+    return commit.lower()
 
 
 def build_title_page() -> bytes:
@@ -440,7 +461,7 @@ def build_title_page() -> bytes:
     append(notice, "h2", "పాక్షిక సంచిక")
     append(notice, "p", SCOPE_TE)
     append(notice, "p", "యంత్ర అనువాదం; మూల పాఠ్యంతో సరిపోల్చిన ఏజెంట్ సమీక్ష. మానవ లేదా స్వతంత్ర భాషా సమీక్ష జరిగిందని పేర్కొనడం లేదు.")
-    append(main, "p", f"EPUB సంచిక {VERSION} · పాఠక మూల SHA-256 {EXPECTED_HTML_SHA256}", class_="unit-id")
+    append(main, "p", f"EPUB సంచిక {VERSION}", class_="unit-id")
     links = append(main, "p")
     link = append(links, "a", "విషయ సూచికకు వెళ్లండి", href="nav.xhtml")
     link.tail = " · "

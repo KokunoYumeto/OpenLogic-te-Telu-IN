@@ -548,7 +548,10 @@ export class Reader {
             const record=this.citationData.get(key);
             if(!record)throw new Error('Unknown bibliography key '+key);
             this.citationsUsed.add(key);
-            const author=record.author||record.editor||key,year=record.year||'n.d.';
+            const contributors=(record.author||record.editor||key).split(/\s+and\s+/u).map(value=>value.trim()).filter(Boolean);
+            const family=value=>value.includes(',')?value.split(',',1)[0].trim():value.split(/\s+/u).at(-1);
+            const author=contributors.length>2?family(contributors[0])+' et al.':contributors.length===2?family(contributors[0])+' and '+family(contributors[1]):family(contributors[0]??key);
+            const year=record.year||'n.d.';
             const label=n.name==='citeauthor'?author:n.name==='citeyear'?year:author+', '+year;
             return '<a class="citation" data-citation-command="'+escapeHtml(n.name)+'" data-citation-key="'+escapeHtml(key)+'" href="#bib-'+encodeURIComponent(key)+'">'+escapeHtml(label)+'</a>';
           }).join('; ')+(locator?', '+locator:'');

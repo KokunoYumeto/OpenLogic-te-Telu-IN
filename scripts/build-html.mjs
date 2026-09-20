@@ -3,6 +3,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import {parseTex,realizeTokens,Reader,escapeHtml} from './tex-reader.mjs';
 import {defaultTagsFromConfig,projectSelectiveTex} from './tag-projector.mjs';
+import {parseBibliography} from './bibtex-reader.mjs';
 const root=path.resolve(import.meta.dirname,'..');
 const publishPages=process.argv.includes('--pages');
 const scopeArg=process.argv.find(a=>a.startsWith('--scope='));
@@ -20,20 +21,7 @@ const sha=x=>crypto.createHash('sha256').update(x).digest('hex');
 const selectiveConfig=fs.readFileSync(path.join(root,'upstream/open-logic-config.sty'),'utf8');
 const defaultTags=defaultTagsFromConfig(selectiveConfig);
 const jsonl=name=>fs.readFileSync(path.join(root,'evidence',name),'utf8').trim().split(/\r?\n/).map(JSON.parse);
-function bibliography(){
- const source=fs.readFileSync(path.join(root,'upstream/bib/open-logic.bib'),'utf8'),records=new Map();
- for(const start of source.matchAll(/@[A-Za-z]+\s*\{([^,]+),/g)){
-  let i=start.index+start[0].length,depth=1;
-  while(i<source.length&&depth){if(source[i]==='{')depth++;else if(source[i]==='}')depth--;i++;}
-  const body=source.slice(start.index+start[0].length,i-1),field=name=>{
-   const match=new RegExp('(?:^|\\n)\\s*'+name+'\\s*=\\s*\\{([^\\n}]*)\\}','i').exec(body);
-   return match?.[1].replace(/[{}]/g,'').replace(/\\["'^`~=.^uvHckbdtr]\s*\{?([A-Za-z])\}?/g,'$1').replace(/~/g,' ').trim()??'';
-  };
-  records.set(start[1],{key:start[1],author:field('author'),editor:field('editor'),year:field('year'),title:field('title')});
- }
- return records;
-}
-const citationData=bibliography();
+const citationData=parseBibliography(fs.readFileSync(path.join(root,'upstream/bib/open-logic.bib'),'utf8'));
 const allManifest=jsonl('SOURCE_MANIFEST.jsonl');
 const manifest=allManifest.filter(u=>u.order>=profile.start&&u.order<=profile.end);
 if(manifest.length!==profile.end-profile.start+1)throw new Error('Missing scoped units');
