@@ -31,7 +31,7 @@ passes all 337 units in OLP-0004--OLP-0340, covering 5,263 aligned blocks. All
 3,257 linguistic rows have nonempty consulted-canon evidence, while all 2,006
 structural rows have none. The cumulative token check finds 4,092 markers over
 all 49 used keys, zero changed units, zero unmapped keys, and mapping SHA-256
-9ac6a25fa527b4661d819f720666304defa479c507c5ed5981856db1844e7a4a.
+376247c7c2de3a7591ac9a06a668c8047e09114f1b341c1b0ba5d5e2794a9b36.
 
 ## Reverse-paraphrase check
 
