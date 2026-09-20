@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 297 of 722 draft units**. This log contains 72 terminology/sense decisions and 262 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 308 of 722 draft units**. This log contains 73 terminology/sense decisions and 265 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1735,6 +1735,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low semantic uncertainty because every specialized notion is fixed by explicit equations, definitions and proofs; medium to high nomenclatural uncertainty for Q-representability, beta coding and arithmetical-hierarchy compounds pending independent native review
 
 - Please double-check: Please double-check whether “Qలో ప్రాతినిధ్యయోగ్యత / ప్రాతినిధ్య సూత్రం / బీటా ప్రమేయ ఉపపత్తి / పరస్పర ప్రధాన / మాడ్యులో సమానశేష / గరిష్ఠ సామాన్య భాజకం / కనిష్ఠ సామాన్య గుణిజం / సున్‌జి సిద్ధాంతం (చైనీయ శేష సిద్ధాంతం) / ఆదిమ పునరావృత్తి అనుకరణ / సక్రమ కనిష్ఠీకరణ / ప్రాతినిధ్యం చేయదగిన ప్రాథమిక ప్రమేయాలు / సంయుక్తం కింద సంవృతత / సంబంధాల ప్రాతినిధ్యం / Delta_0, Sigma_1, Pi_1 సూత్రాలు / పరిమిత అస్తిత్వ, సార్వత్రిక సూత్రాలు / సంవృత పదం / Sigma_1 సంపూర్ణత” is idiomatic and technically standard for “representability in Q / representing formula / beta function lemma / relatively prime / congruent modulo / greatest common divisor / least common multiple / Sunzi's theorem (Chinese Remainder Theorem) / simulation of primitive recursion / regular minimization / basic representable functions / closure under composition / representation of relations / Delta_0, Sigma_1 and Pi_1 formulas / bounded existential and universal formulas / closed term / Sigma_1 completeness” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T073 — theories and computability / deductively closed theory / c.e.-complete theory / omega-consistency / universal computable relation / consistent extension / computably axiomatizable theory / complete theory / computable inseparability / provable and refutable sentences / interpretation of a theory / consistent decidable extension
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: సిద్ధాంతాలు మరియు గణనీయత / నిగమన పరంగా సంవృతమైన సిద్ధాంతం / గ.లె.-సంపూర్ణ సిద్ధాంతం / omega-అవైరుధ్యం / సార్వత్రిక గణనీయ సంబంధం / అవైరుధ్య విస్తరణ / స్వీకృతీకరించదగిన సిద్ధాంతం / సంపూర్ణ సిద్ధాంతం / గణనీయంగా వేరుపరచలేనితనం / నిరూపించదగిన, ఖండించదగిన వాక్యాలు / ఒక సిద్ధాంతాన్ని అర్థనిర్దేశం చేయడం / అవైరుధ్యమైన నిర్ణయించదగిన విస్తరణ
+
+- Exact implementation: OLP-0301; incompleteness/theories-computability/theories-computability; content/incompleteness/theories-computability/theories-computability.tex:15 ↔ translation/content/incompleteness/theories-computability/theories-computability.tex:14 (OLP-0301-B005); printed/PDF page pending; OLP-0303; incompleteness/theories-computability/q-is-ce; content/incompleteness/theories-computability/q-is-ce.tex:11 ↔ translation/content/incompleteness/theories-computability/q-is-ce.tex:11 (OLP-0303-B005); printed/PDF page pending; OLP-0304; incompleteness/theories-computability/oconsis-ext-of-q-undec; content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex:11 ↔ translation/content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex:11 (OLP-0304-B005); printed/PDF page pending; OLP-0305; incompleteness/theories-computability/extensions-of-q-not-decidable; content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex:24-29 ↔ translation/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex:23-27 (OLP-0305-B007); printed/PDF page pending; OLP-0306; incompleteness/theories-computability/computably-axiomatizable; content/incompleteness/theories-computability/computably-axiomatizable.tex:13-18 ↔ translation/content/incompleteness/theories-computability/computably-axiomatizable.tex:13-17 (OLP-0306-B006); printed/PDF page pending; OLP-0309; incompleteness/theories-computability/inseparability; content/incompleteness/theories-computability/inseparability.tex:11-12 ↔ translation/content/incompleteness/theories-computability/inseparability.tex:11-12 (OLP-0309-B005); printed/PDF page pending; OLP-0311; incompleteness/theories-computability/interpretability; content/incompleteness/theories-computability/interpretability.tex:11 ↔ translation/content/incompleteness/theories-computability/interpretability.tex:11 (OLP-0311-B005); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P025, PDF 87, printed 80, Indirect-proof heading and worked derivation; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P028, PDF 92, printed 85, Unary predicates, binary relations and quantifier classification; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P033, PDF 40, printed 33, Inference section heading and definition; TE-P034, PDF 308, printed 301, Main point 5, Cartesian product definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P003 and TE-P032 support native proof, theorem, induction and deduction prose; TE-P005 supports Andhra Pradesh natural-number exposition; TE-P008, TE-P010--TE-P011 and TE-P034 support pre-bifurcation set, ordered-pair, relation and function usage; TE-P018 and TE-P024--TE-P029 plus TE-P033 directly support formal logic, derivations, predicates, quantifiers, first-order language, inference and consistency register. The witnesses do not directly attest c.e.-complete theories, omega-consistency, universal computable relations, computable inseparability or proof-theoretic interpretation between theories. The frozen definitions, reductions, diagonal arguments, separation construction and interpretability theorem in OLP-0301--OLP-0311 control those exact senses; TE-T034, TE-T047, TE-T058, TE-T061, TE-T066--TE-T067 and TE-T070--TE-T072 supply earlier reversible choices. క్లీనీ, గ్యోడెల్, జెర్మెలో--ఫ్రెంకెల్ and ప్రెస్‌బర్గర్ are source names or eponyms. omega, Q, ZFC, c.e., Gödel-code notation and formula metavariables remain protected formal notation; no unexplained English technical headword remains in reader-facing prose
+
+- Alternatives: reuse the established theory, consistency, completeness, computability, separation and formal-logic register while fixing c.e.-completeness, omega-consistency, inseparability and interpretation from the adjacent definitions (chosen); leave the specialized computability and incompleteness headwords in untranslated English reader prose (rejected); collapse consistency, omega-consistency, completeness, decidability and axiomatizability into one property (rejected because the chapter distinguishes them); claim direct native attestation for c.e.-complete theories, computable inseparability or proof-theoretic interpretation (rejected because the frozen reductions and theorems control those senses)
+
+- Uncertainty: Low semantic uncertainty because the specialized notions are fixed by explicit definitions, reductions and proofs; medium to high nomenclatural uncertainty for omega-consistency, computable inseparability and theory-interpretation compounds pending independent native specialist review
+
+- Please double-check: Please double-check whether “సిద్ధాంతాలు మరియు గణనీయత / నిగమన పరంగా సంవృతమైన సిద్ధాంతం / గ.లె.-సంపూర్ణ సిద్ధాంతం / omega-అవైరుధ్యం / సార్వత్రిక గణనీయ సంబంధం / అవైరుధ్య విస్తరణ / స్వీకృతీకరించదగిన సిద్ధాంతం / సంపూర్ణ సిద్ధాంతం / గణనీయంగా వేరుపరచలేనితనం / నిరూపించదగిన, ఖండించదగిన వాక్యాలు / ఒక సిద్ధాంతాన్ని అర్థనిర్దేశం చేయడం / అవైరుధ్యమైన నిర్ణయించదగిన విస్తరణ” is idiomatic and technically standard for “theories and computability / deductively closed theory / c.e.-complete theory / omega-consistency / universal computable relation / consistent extension / computably axiomatizable theory / complete theory / computable inseparability / provable and refutable sentences / interpretation of a theory / consistent decidable extension” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -8023,3 +8047,75 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check that the zero-member bounded-universal expansion is described as an empty conjunction.
+
+## REV-OLTETCP-001 — OLTETCP-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: rendered the intended computable-axiomatizability requirement while retaining the source token identity; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0308; incompleteness/theories-computability/first-incompleteness; lines 20-23, proof of first incompleteness statement ↔ translation/content/incompleteness/theories-computability/first-incompleteness.tex:19-23 (OLP-0308-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTETCP-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: rendered the intended computable-axiomatizability requirement while retaining the source token identity; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the first-incompleteness proof retains computable axiomatizability rather than weakening the premise to mere axiomatization.
+
+## REV-OLTETCP-002 — OLTETCP-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: replaced the numeral-substituted hash expression with the Goedel code of the one-variable representing formula; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0309; incompleteness/theories-computability/inseparability; line 45, universal-relation conclusion ↔ translation/content/incompleteness/theories-computability/inseparability.tex:46 (OLP-0309-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTETCP-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: replaced the numeral-substituted hash expression with the Goedel code of the one-variable representing formula; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the universal-relation argument uses the Goedel code of the one-variable formula D_S(u).
+
+## REV-OLTETCP-003 — OLTETCP-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored the theorem's consistency qualification in the ZFC corollary; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0311; incompleteness/theories-computability/interpretability; lines 20-25 and 36-38, interpretability theorem and first ZFC corollary ↔ translation/content/incompleteness/theories-computability/interpretability.tex:34-36 (OLP-0311-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTETCP-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the theorem's consistency qualification in the ZFC corollary; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the first ZFC corollary excludes consistent decidable extensions, since an inconsistent extension is decidable.

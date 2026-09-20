@@ -1,0 +1,39 @@
+% Part: incompleteness
+% Chapter: theories-computability
+% Section: complete-decidable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{tcp}{cdc}
+
+\olsection{\printtoken{S}{axiomatizable} సంపూర్ణ సిద్ధాంతాలు నిర్ణయించదగినవి}
+
+ప్రతి వాక్యం~$!A$కు $!A$ గానీ $\lnot !A$ గానీ నిరూపించదగినదైతే, ఆ
+సిద్ధాంతాన్ని {\em సంపూర్ణం} అంటాం.
+
+\begin{lem}
+సిద్ధాంతం~$\Th{T}$ సంపూర్ణమూ \tetoken{స్వీకృతీకరించదగినదీ}{!!{axiomatizable}} అనుకుందాం. అప్పుడు
+$\Th{T}$ నిర్ణయించదగినది.
+\end{lem}
+
+\begin{proof}
+$\Th{T}$ సంపూర్ణమనీ, $A$ గణనీయ స్వీకృతాల సమితి అనీ అనుకుందాం.
+$\Th{T}$ వైరుధ్యమైనదైతే అది స్పష్టంగా గణనీయం. (అల్గోరిథం: ``అవును అని
+చెప్పు.'') కాబట్టి $\Th{T}$ అవైరుధ్యమైనది కూడా అని అనుకోవచ్చు.
+
+ఒక వాక్యం~$!A$, $\Th{T}$లో ఉందో లేదో నిర్ణయించడానికి, $\Th{T}$ నుంచి
+$!A$కు \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} కోసం, $\lnot !A$కు \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} కోసం ఏకకాలంలో
+వెతకండి. $\Th{T}$ సంపూర్ణం కనుక వాటిలో ఒకటి తప్పక దొరుకుతుంది; $\Th{T}$
+అవైరుధ్యమైనది కనుక, $\lnot !A$కు \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} దొరికితే $!A$కు
+\tetoken{వ్యుత్పత్తి}{!!{derivation}} ఏదీ ఉండదు.
+
+వేరే మాటల్లో, $\Th{T}$ \tetoken{గ.లె.}{!!{c.e.}} అని మనకు ఇప్పటికే తెలుసు. కాబట్టి మనం
+ముందు నిరూపించిన ఒక సిద్ధాంతం వల్ల, $\Th{T}$ యొక్క పూరకం కూడా
+\tetoken{గ.లె.}{!!{c.e.}} అని చూపితే చాలు. కానీ \tetoken{ఒక సూత్రం}{!!a{formula}}~$!A$, $\Th{\bar T}$లో ఉన్నప్పుడు,
+అప్పుడు మాత్రమే $\lnot !A$, $\Th{T}$లో ఉంటుంది; అందువల్ల
+$\Th{\bar T} \leq_m \Th{T}$.
+\end{proof}
+
+\end{document}

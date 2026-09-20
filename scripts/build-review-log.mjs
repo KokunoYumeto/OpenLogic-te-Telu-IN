@@ -235,6 +235,15 @@ locations['TE-T072']=[
  L('content/incompleteness/representability-in-q/representing-relations.tex',11,18,11,19,'Representing Relations','సంబంధాలకు ప్రాతినిధ్యం'),
  L('content/incompleteness/representability-in-q/sigma1-completeness.tex',10,29,10,29,'completeness','సంపూర్ణత')
 ];
+locations['TE-T073']=[
+ L('content/incompleteness/theories-computability/theories-computability.tex',15,15,14,14,'Theories and Computability','సిద్ధాంతాలు మరియు గణనీయత'),
+ L('content/incompleteness/theories-computability/q-is-ce.tex',11,11,11,11,'c.e.}-Complete','c.e.}-సంపూర్ణం'),
+ L('content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex',11,11,11,11,'\\omega$-Consistent','\\omega$-అవైరుధ్య'),
+ L('content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex',23,26,23,26,'universal computable relation','సార్వత్రిక గణనీయ'),
+ L('content/incompleteness/theories-computability/computably-axiomatizable.tex',13,18,13,17,'\\emph{!!{axiomatizable}}','\\emph{\\tetoken{స్వీకృతీకరించదగినది}'),
+ L('content/incompleteness/theories-computability/inseparability.tex',11,12,11,12,'Inseparable','వేరుపరచలేనివి'),
+ L('content/incompleteness/theories-computability/interpretability.tex',11,11,11,11,'Interpretable','అర్థనిర్దేశం చేయగల')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -292,6 +301,7 @@ alternatives['TE-T069']=['reuse the established machine, function, formal-logic 
 alternatives['TE-T070']=['reuse the established number, theory, axiom, derivation, consistency and proof register, with incompleteness, representability and arithmetization compounds fixed by the adjacent definitions and theorems (chosen)','leave the specialized incompleteness vocabulary in untranslated English reader prose (rejected)','collapse completeness, decidability and axiomatizability into one property (rejected because the chapter distinguishes them)','claim direct native attestation for Robinson’s Q, representability, provability predicates or Gödel’s theorems (rejected because the frozen definitions and proofs control those senses)'];
 alternatives['TE-T071']=['reuse the established number, sequence, function, relation, formula, derivation and proof register, with Gödel coding, formation-sequence and proof-predicate compounds fixed by the adjacent definitions and tuple layouts (chosen)','leave the specialized coding and proof-verification vocabulary in untranslated English reader prose (rejected)','collapse symbol, sequence, term, formula and proof codes into one undifferentiated notion (rejected because the definitions distinguish their constructors and tests)','claim direct native attestation for Gödel numbering, formation-sequence bounds or primitive-recursive proof verification (rejected because the frozen definitions, recursions and predicates control those senses)'];
 alternatives['TE-T072']=['reuse the established number, function, relation, formula, proof and Q-theory register while making the beta, Sunzi, closure and arithmetical-hierarchy senses explicit from the adjacent definitions (chosen)','leave the specialized representability vocabulary in untranslated English reader prose (rejected)','collapse representability, computability and definability into one property (rejected because the chapter proves precise implications and equivalences)','claim direct native attestation for Q-representability, beta coding, Sunzi’s theorem or the Delta_0/Sigma_1/Pi_1 hierarchy (rejected because the frozen definitions and proofs control those senses)'];
+alternatives['TE-T073']=['reuse the established theory, consistency, completeness, computability, separation and formal-logic register while fixing c.e.-completeness, omega-consistency, inseparability and interpretation from the adjacent definitions (chosen)','leave the specialized computability and incompleteness headwords in untranslated English reader prose (rejected)','collapse consistency, omega-consistency, completeness, decidability and axiomatizability into one property (rejected because the chapter distinguishes them)','claim direct native attestation for c.e.-complete theories, computable inseparability or proof-theoretic interpretation (rejected because the frozen reductions and theorems control those senses)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -308,7 +318,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-20 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T072 record the Batch 025--Batch 033 consultations performed during reconciliation.';
+const phase='Evidence reconstruction through 2026-09-20 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T073 record the Batch 025--Batch 034 consultations performed during reconciliation.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -520,6 +530,9 @@ const correctionQuestions={
   ,'OLTEREQ-008':'Please double-check that the second closed term is equated with numeral m rather than numeral n.'
   ,'OLTEREQ-009':'Please double-check that both successor-versus-zero contradictions cite Q2 rather than Q3.'
   ,'OLTEREQ-010':'Please double-check that the zero-member bounded-universal expansion is described as an empty conjunction.'
+  ,'OLTETCP-001':'Please double-check that the first-incompleteness proof retains computable axiomatizability rather than weakening the premise to mere axiomatization.'
+  ,'OLTETCP-002':'Please double-check that the universal-relation argument uses the Goedel code of the one-variable formula D_S(u).'
+  ,'OLTETCP-003':'Please double-check that the first ZFC corollary excludes consistent decidable extensions, since an inconsistent extension is decidable.'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

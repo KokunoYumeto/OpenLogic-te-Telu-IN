@@ -1,0 +1,52 @@
+% Part: incompleteness
+% Chapter: theories-computability
+% Section: q-is-ce
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{tcp}{qce}
+
+\olsection{$\Th{Q}$ \printtoken{S}{c.e.}-సంపూర్ణం}
+
+
+\begin{thm}
+$\Th{Q}$ \tetoken{గణనీయంగా లెక్కించదగినది}{!!{c.e.}}, కాని నిర్ణయించదగినది కాదు. నిజానికి అది ఒక
+  సంపూర్ణ \tetoken{గణనీయంగా లెక్కించదగిన}{!!{c.e.}} సమితి.
+\end{thm}
+
+\begin{proof}
+$\Th{Q}$ \tetoken{గణనీయంగా లెక్కించదగినది}{!!{c.e.}} అని చూడటం కష్టం కాదు. ఎందుకంటే $y$ అనేది
+$\Th{Q}$లో ఏదో నిరూపణ~$x$ గల వాక్యపు సంకేతమైనప్పుడు, అటువంటి $y$ల సమితి అది:
+\[
+Q = \Setabs{y}{\lexists[x][\Prf[\Th{Q}](x,y)]}.
+\]
+$\Prf[\Th{Q}](x,y)$ గణనీయమని (నిజానికి ఆదిమ పునరావృత్తమని) మనకు తెలుసు;
+పైన ఉన్న రూపంలో రాయగల ప్రతి సమితీ గ.లె.
+
+అది ఒక సంపూర్ణ గ.లె. సమితి అనడం $K \leq_m Q$ అనడానికి సమానం; ఇక్కడ
+$K = \Setabs{x}{!A_x(x) \downarrow}$. కాబట్టి $K$ను~$\Th{Q}$కు
+తగ్గించదగినదని చూపుదాం. క్లీనీ విధేయం~$T(e,x,s)$ ఆదిమ పునరావృత్తం కనుక,
+అది $\Th{Q}$లో, ఉదాహరణకు $!A_T$ చేత, ప్రాతినిధ్యం చేయదగినది. అప్పుడు ప్రతి
+$x$కు
+\begin{align*}
+x \in K & \lif \lexists[s][T(x,x,s)] \\
+& \lif \lexists[s][(\Th{Q} \Proves !A_T(\num x,\num x, \num s))]
+  \\
+& \lif \Th{Q} \Proves \lexists[s][!A_T(\num x, \num x, s)].
+\end{align*}
+తిరుగుగా, $\Th{Q} \Proves \lexists[s][!A_T(\num x, \num x, s)]$ అయితే,
+ఏదో సహజ సంఖ్య~$n$కు $!A_T(\num x, \num x, \num n)$ సూత్రం సత్యమై ఉండాలి.
+$T(x,x,n)$ అసత్యమైతే, $!A_T$ అనేది~$T$కు ప్రాతినిధ్యం వహిస్తుంది కనుక
+$\Th{Q}$, $\lnot !A_T(\num x, \num x, \num n)$ను నిరూపించేది. కానీ అప్పుడు
+$\Th{Q}$ ఒక అసత్య సూత్రాన్ని నిరూపిస్తుంది; ఇది వైరుధ్యం. కాబట్టి
+$T(x,x,n)$ సత్యమై ఉండాలి; దాని వల్ల $!A_x(x) \downarrow$.
+
+సంక్షిప్తంగా, ప్రతి $x$కు, $x$ అనేది~$K$లో ఉన్నప్పుడు, అప్పుడు మాత్రమే
+$\Th{Q}$, $\lexists[s][T(\num x,\num x,s)]$ను నిరూపిస్తుంది. కాబట్టి $x$ను
+$\lexists[s][T(\num x, \num x, s)]$ వాక్యానికి (ఒక సంకేతానికి) పంపే
+ప్రమేయం~$f$, $K$ నుంచి~$\Th{Q}$కు ఒక తగ్గింపు.
+\end{proof}
+
+\end{document}

@@ -1,0 +1,49 @@
+% Part: incompleteness
+% Chapter: theories-computability
+% Section: inseparability
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{tcp}{ins}
+
+\olsection{$\Th{Q}$లో నిరూపించదగిన, ఖండించదగిన వాక్యాలు గణనీయంగా
+  వేరుపరచలేనివి}
+
+
+$\Th{\bar Q}$ అంటే, వాటి {\em నిషేధాలు} $\Th{Q}$లో నిరూపించదగిన వాక్యాల
+సమితి అనుకుందాం; అంటే $\Th{\bar Q} = \Setabs{!A}{\Th{Q} \Proves
+  \lnot !A}$. వియుక్త సమితులు $A$,~$B$లకు $A \subseteq C$, $B \subseteq
+\Complement{C}$ అయ్యే గణనీయ సమితి~$C$ ఏదీ లేకపోతే వాటిని గణనీయంగా
+వేరుపరచలేనివి అంటారని గుర్తుంచుకోండి.
+
+\begin{lem}
+$\Th{Q}$, $\Th{\bar Q}$ గణనీయంగా వేరుపరచలేనివి.
+\end{lem}
+
+\begin{proof}
+$\Th{Q} \subseteq C$, $\Th{\bar Q} \subseteq \Complement{C}$ అయ్యే గణనీయ
+సమితి~$C$ ఉందని అనుకుందాం. $R(x,y)$ను కింది సంబంధంగా తీసుకుందాం:
+\begin{quote}
+$x$ అనేది $!D(u)$ అనే సూత్రాన్ని సంకేతీకరిస్తుంది; $!D(\num y)$ అనేది
+$C$లో ఉంటుంది.
+\end{quote}
+$R(x,y)$ ఒక సార్వత్రిక గణనీయ సంబంధమని చూపి వైరుధ్యాన్ని పొందుతాం.
+
+$S(y)$ గణనీయమనీ, దానికి $\Th{Q}$లో $!D_S(u)$ ప్రాతినిధ్యం వహిస్తుందనీ
+అనుకుందాం. అప్పుడు
+\begin{eqnarray*}
+S(\num n) & \lif & \Th{Q} \Proves !D_S(\num n) \\
+& \lif & !D_S(\num n) \in C
+\end{eqnarray*}
+మరియు
+\begin{eqnarray*}
+\lnot S(\num n) & \lif & \Th{Q} \Proves \lnot !D_S(\num n) \\
+& \lif & !D_S(\num n) \in \Th{\bar Q} \\
+& \lif & !D_S(\num n) \not\in C
+\end{eqnarray*}
+కాబట్టి $S(y)$, $R(\Gn{!D_S(u)},y)$కు సమానం.\sourcecorrection{OLTETCP-002}{ఆంగ్ల మూలం చివరి సంకేతాన్ని $\#(!D_S(\num u))$గా రాసింది. అదే నిర్మాణాన్ని ముందరి విభాగం $\Gn{!D_S(u)}$గా ఇస్తుంది; $R$ మొదటి ఆర్గ్యుమెంటుకు ఒక స్వేచ్ఛా చరం గల సూత్రపు గ్యోడెల్ సంకేతమే కావాలి, సంఖ్యాపదాన్ని కలిపిన వ్యక్తీకరణ కాదు. అందువల్ల ముందరి నియంత్రక రూపాన్ని వాడాం.}
+\end{proof}
+
+\end{document}

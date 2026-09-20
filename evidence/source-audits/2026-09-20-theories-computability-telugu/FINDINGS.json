@@ -1,0 +1,63 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTETCP-20260920",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0308",
+      "OLP-0309",
+      "OLP-0311"
+    ],
+    "finding_count": 3
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTETCP-001",
+      "unit_id": "OLP-0308",
+      "classification": "confirmed_axiomatizability_requirement_mismatch",
+      "source": {
+        "path": "content/incompleteness/theories-computability/first-incompleteness.tex",
+        "bytes": 1681,
+        "sha256": "6d136f51b1d58f3d8831a237dd21b65a146381874e9549c7e504080264df82bd",
+        "locator": "lines 20-23, proof of first incompleteness statement"
+      },
+      "finding": "The proof changes the theorem's computable axiomatizability hypothesis to mere axiomatization before claiming decidability.",
+      "controlling_evidence": "The theorem assumes axiomatizability, and the immediately preceding lemma proves decidability from completeness plus a computable set of axioms. Mere axiomatization does not imply decidability.",
+      "required_translation_handling": "Retain the source token identity, render the intended computable-axiomatizability sense, and add an adjacent OLTETCP-001 disclosure."
+    },
+    {
+      "finding_id": "OLTETCP-002",
+      "unit_id": "OLP-0309",
+      "classification": "confirmed_malformed_formula_code",
+      "source": {
+        "path": "content/incompleteness/theories-computability/inseparability.tex",
+        "bytes": 1445,
+        "sha256": "d9da8fc6073ab195b526966775f35c67384af226328d0e98531a7a8b111c6ff8",
+        "locator": "line 45, universal-relation conclusion"
+      },
+      "finding": "The final reduction uses the malformed expression #(!D_S(numeral u)) as the code in R's first argument.",
+      "controlling_evidence": "R was defined to take the code of a one-free-variable formula D(u), and the identical construction in the preceding consistent-extension proof uses Gn{!D_S(u)}.",
+      "required_translation_handling": "Use Gn{!D_S(u)} and add an adjacent OLTETCP-002 disclosure."
+    },
+    {
+      "finding_id": "OLTETCP-003",
+      "unit_id": "OLP-0311",
+      "classification": "confirmed_missing_consistency_hypothesis",
+      "source": {
+        "path": "content/incompleteness/theories-computability/interpretability.tex",
+        "bytes": 2721,
+        "sha256": "180003bb40b9c0d66d6e9805dba9989e14b350ad857b45e35479923bb712a966",
+        "locator": "lines 20-25 and 36-38, interpretability theorem and first ZFC corollary"
+      },
+      "finding": "The theorem excludes decidable consistent extensions, but the corollary drops consistency and therefore also purports to exclude inconsistent extensions.",
+      "controlling_evidence": "The theorem explicitly requires a consistent extension. An inconsistent extension proves every sentence and is decidable, so the unqualified corollary is false.",
+      "required_translation_handling": "Restore the consistency qualification in the ZFC corollary and add an adjacent OLTETCP-003 disclosure."
+    }
+  ]
+}

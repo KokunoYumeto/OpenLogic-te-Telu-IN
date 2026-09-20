@@ -1,0 +1,37 @@
+% Part: incompleteness
+% Chapter: theories-computability
+% Section: computably-axiomatizable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{tcp}{cax}
+
+\olsection{\printtoken{S}{axiomatizable} సిద్ధాంతాలు}
+
+ఒక సిద్ధాంతం~$\Th{T}$కు గణనీయ స్వీకృతాల సమితి~$A$ ఉంటే, దాన్ని
+\emph{\tetoken{స్వీకృతీకరించదగినది}{!!{axiomatizable}}} అంటాం. ($A$ అనేది $\Th{T}$కు స్వీకృతాల సమితి
+అనడం అంటే $T = \Setabs{!A}{A \Proves !A}$.) సహజ సంఖ్యల యొక్క ప్రతి
+``సమంజసమైన'' స్వీకృతీకరణకూ ఈ ధర్మం ఉంటుంది. ముఖ్యంగా, పరిమిత స్వీకృతాల
+సమితి గల ప్రతి సిద్ధాంతమూ \tetoken{స్వీకృతీకరించదగినది}{!!{axiomatizable}}.
+
+\begin{lem}
+$\Th{T}$ \tetoken{స్వీకృతీకరించదగినది}{!!{axiomatizable}} అనుకుందాం. అప్పుడు $\Th{T}$
+\tetoken{గణనీయంగా లెక్కించదగినది}{!!{computably
+enumerable}}.
+\end{lem}
+
+\begin{proof}
+$A$ అనేది $\Th{T}$కు గణనీయ స్వీకృతాల సమితి అని అనుకుందాం. $!A \in T$
+అవుతుందో తెలుసుకోవడానికి, ఆ స్వీకృతాల నుంచి $!A$కు \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} కోసం
+వెతకండి.
+
+కొద్దిగా భిన్నంగా చెప్పాలంటే, $A$లో $!B_1$, \dots, $!B_k$ అనే పరిమిత
+స్వీకృతాల జాబితీ, మొదటిస్థాయి తర్కంలో $(!B_1 \land \dots \land !B_k) \lif
+!A$కు \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} ఉన్నప్పుడు, అప్పుడు మాత్రమే $!A$, $\Th{T}$లో ఉంటుంది.
+కాని ``\dots జరిగేలా ఏదో \dots ఉంది'' అనే రూపంలో నిర్వచనం గల ప్రతి సమితీ,
+రెండవ ``\dots'' గణనీయమైనదైతే, \tetoken{గ.లె.}{!!{c.e.}} అని మనకు ఇప్పటికే తెలుసు.
+\end{proof}
+
+\end{document}

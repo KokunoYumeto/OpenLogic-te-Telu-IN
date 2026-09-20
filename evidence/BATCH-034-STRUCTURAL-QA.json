@@ -1,0 +1,1897 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-20T21:02:45.066Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Text/intertext/mbox prose is masked; nested inline math is compared per clause independently of language-specific word order.",
+  "units": [
+    {
+      "unit_id": "OLP-0301",
+      "source_path": "content/incompleteness/theories-computability/theories-computability.tex",
+      "source_sha256": "7ad40d40de21a99732a88044dbcad5e27bc167251fec630bd668d70b02562e7d",
+      "translation_sha256": "6f7259a6c417a80370230b0662d87584e3f28c65316b86b7399a325fcdf33e30",
+      "source_blocks": 17,
+      "target_blocks": 17,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport{introduction}",
+        "\\olimport{q-is-ce}",
+        "\\olimport{oconsis-ext-of-q-undec}",
+        "\\olimport{extensions-of-q-not-decidable}",
+        "\\olimport{computably-axiomatizable}",
+        "\\olimport{complete-decidable}",
+        "\\olimport{first-incompleteness}",
+        "\\olimport{inseparability}",
+        "\\olimport{consis-with-q}",
+        "\\olimport{interpretability}"
+      ],
+      "identifiers_target_core": [
+        "\\olimport{introduction}",
+        "\\olimport{q-is-ce}",
+        "\\olimport{oconsis-ext-of-q-undec}",
+        "\\olimport{extensions-of-q-not-decidable}",
+        "\\olimport{computably-axiomatizable}",
+        "\\olimport{complete-decidable}",
+        "\\olimport{first-incompleteness}",
+        "\\olimport{inseparability}",
+        "\\olimport{consis-with-q}",
+        "\\olimport{interpretability}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 215,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: incompleteness\n% Chapter: theories-computability",
+          "target_start": "% Part: incompleteness\n% Chapter: theories-computability"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\begin{editorial}\n  This chapter depends on material in the chapter on computability\n  theory, but can be left",
+          "target_start": "\\begin{editorial}\n  ఈ అధ్యాయం గణనీయతా సిద్ధాంత అధ్యాయంలోని విషయంపై ఆధారపడుతుంది; ఆ విషయాన్ని\n  బోధించకపోతే దీన"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olchapter{inc}{tcp}{Theories and Computability}",
+          "target_start": "\\olchapter{inc}{tcp}{సిద్ధాంతాలు మరియు గణనీయత}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport{introduction}",
+          "target_start": "\\olimport{introduction}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport{q-is-ce}",
+          "target_start": "\\olimport{q-is-ce}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\olimport{oconsis-ext-of-q-undec}",
+          "target_start": "\\olimport{oconsis-ext-of-q-undec}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport{extensions-of-q-not-decidable}",
+          "target_start": "\\olimport{extensions-of-q-not-decidable}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\olimport{computably-axiomatizable}",
+          "target_start": "\\olimport{computably-axiomatizable}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\olimport{complete-decidable}",
+          "target_start": "\\olimport{complete-decidable}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\olimport{first-incompleteness}",
+          "target_start": "\\olimport{first-incompleteness}"
+        },
+        {
+          "index": 13,
+          "source_start": "\\olimport{inseparability}",
+          "target_start": "\\olimport{inseparability}"
+        },
+        {
+          "index": 14,
+          "source_start": "\\olimport{consis-with-q}",
+          "target_start": "\\olimport{consis-with-q}"
+        },
+        {
+          "index": 15,
+          "source_start": "\\olimport{interpretability}",
+          "target_start": "\\olimport{interpretability}"
+        },
+        {
+          "index": 16,
+          "source_start": "\\OLEndChapterHook",
+          "target_start": "\\OLEndChapterHook"
+        },
+        {
+          "index": 17,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{inc}{tcp}",
+        "\\olimport{introduction}",
+        "\\olimport{q-is-ce}",
+        "\\olimport{oconsis-ext-of-q-undec}",
+        "\\olimport{extensions-of-q-not-decidable}",
+        "\\olimport{computably-axiomatizable}",
+        "\\olimport{complete-decidable}",
+        "\\olimport{first-incompleteness}",
+        "\\olimport{inseparability}",
+        "\\olimport{consis-with-q}",
+        "\\olimport{interpretability}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{inc}{tcp}",
+        "\\olimport{introduction}",
+        "\\olimport{q-is-ce}",
+        "\\olimport{oconsis-ext-of-q-undec}",
+        "\\olimport{extensions-of-q-not-decidable}",
+        "\\olimport{computably-axiomatizable}",
+        "\\olimport{complete-decidable}",
+        "\\olimport{first-incompleteness}",
+        "\\olimport{inseparability}",
+        "\\olimport{consis-with-q}",
+        "\\olimport{interpretability}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0302",
+      "source_path": "content/incompleteness/theories-computability/introduction.tex",
+      "source_sha256": "6279aee1c9f721738aea943abd540619f8b8719601bd1507ed8feebfba56ee3b",
+      "translation_sha256": "4ad39534ba4a4449ad5461f473e5929f53f4630a1a63605f92d9d9b89aabc50d",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{inc}{tcp}{int}",
+        "\\olref[req][int]{defn:representable-fn}",
+        "\\olref[req][rel]{defn:representing-relations}",
+        "\\olref[req][int]{thm:representable-iff-comp}",
+        "\\olref[req][rel]{thm:representing-rels}",
+        "\\olref[req][int]{sec}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{inc}{tcp}{int}",
+        "\\olref[req][int]{defn:representable-fn}",
+        "\\olref[req][rel]{defn:representing-relations}",
+        "\\olref[req][int]{thm:representable-iff-comp}",
+        "\\olref[req][rel]{thm:representing-rels}",
+        "\\olref[req][int]{sec}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$T$",
+        "$!A$",
+        "$!A$",
+        "$T$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$!A$",
+        "$\\Gn{!A}$",
+        "$!A$"
+      ],
+      "math_target_core": [
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$T$",
+        "$!A$",
+        "$!A$",
+        "$T$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$!A$",
+        "$!A$",
+        "$\\Gn{!A}$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 750,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: incompleteness\n% Chapter: theories-computability\n% Section: introduction",
+          "target_start": "% Part: incompleteness\n% Chapter: theories-computability\n% Section: introduction"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{inc}{tcp}{int}",
+          "target_start": "\\olfileid{inc}{tcp}{int}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Introduction}",
+          "target_start": "\\olsection{పరిచయం}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{editorial}\nThis section should be rewritten.  \n\\end{editorial}",
+          "target_start": "\\begin{editorial}\nఈ విభాగాన్ని తిరిగి రాయాలి.\n\\end{editorial}"
+        },
+        {
+          "index": 7,
+          "source_start": "We have the following:\n\\begin{enumerate}\n\\item A definition of what it means for a function to be representabl",
+          "target_start": "మనకు ఇప్పటికే కిందివి ఉన్నాయి:\n\\begin{enumerate}\n\\item ఒక ప్రమేయం~$\\Th{Q}$లో ప్రాతినిధ్యం చేయదగినది అనడం అంటే "
+        },
+        {
+          "index": 8,
+          "source_start": "A {\\em theory} is a set of sentences that is deductively closed, that\nis, with the property that whenever $T$ ",
+          "target_start": "ఒక {\\em సిద్ధాంతం} అంటే నిగమన పరంగా సంవృతమైన వాక్యాల సమితి; అంటే $T$\n$!A$ను నిరూపించినప్పుడల్లా $!A$, $T$లో ఉం"
+        },
+        {
+          "index": 9,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{tcp}{int}",
+        "\\olref[req][int]{defn:representable-fn}",
+        "\\olref[req][rel]{defn:representing-relations}",
+        "\\olref[req][int]{thm:representable-iff-comp}",
+        "\\olref[req][rel]{thm:representing-rels}",
+        "\\olref[req][int]{sec}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{tcp}{int}",
+        "\\olref[req][int]{defn:representable-fn}",
+        "\\olref[req][rel]{defn:representing-relations}",
+        "\\olref[req][int]{thm:representable-iff-comp}",
+        "\\olref[req][rel]{thm:representing-rels}",
+        "\\olref[req][int]{sec}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0303",
+      "source_path": "content/incompleteness/theories-computability/q-is-ce.tex",
+      "source_sha256": "26919c5d76e83e2084a4b157b7991d7a4f798c61973106e903f93812432122a4",
+      "translation_sha256": "77b476a6f169cb022699f752783353cf286bed52dc811c8521a7b50ff29cc46b",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{inc}{tcp}{qce}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{inc}{tcp}{qce}"
+      ],
+      "tokens_source": {
+        "!!{c.e.}": 3
+      },
+      "tokens_target": {
+        "!!{c.e.}": 3
+      },
+      "math_source": [
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$y$",
+        "$x$",
+        "$y$",
+        "$\\Th{Q}$",
+        "\\[Q=\\Setabs{y}{\\lexists[x][\\Prf[\\Th{Q}](x,y)]}.\\]",
+        "$\\Prf[\\Th{Q}](x,y)$",
+        "$K\\leq_mQ$",
+        "$K=\\Setabs{x}{!A_x(x)\\downarrow}$",
+        "$K$",
+        "$\\Th{Q}$",
+        "$T(e,x,s)$",
+        "$\\Th{Q}$",
+        "$!A_T$",
+        "$x$",
+        "\\begin{align*}x\\inK&\\lif\\lexists[s][T(x,x,s)]\\\\&\\lif\\lexists[s][(\\Th{Q}\\Proves!A_T(\\numx,\\numx,\\nums))]\\\\&\\lif\\Th{Q}\\Proves\\lexists[s][!A_T(\\numx,\\numx,s)].\\end{align*}",
+        "$\\Th{Q}\\Proves\\lexists[s][!A_T(\\numx,\\numx,s)]$",
+        "$n$",
+        "$!A_T(\\numx,\\numx,\\numn)$",
+        "$T(x,x,n)$",
+        "$\\Th{Q}$",
+        "$\\lnot!A_T(\\numx,\\numx,\\numn)$",
+        "$!A_T$",
+        "$T$",
+        "$\\Th{Q}$",
+        "$T(x,x,n)$",
+        "$!A_x(x)\\downarrow$",
+        "$x$",
+        "$x$",
+        "$K$",
+        "$\\Th{Q}$",
+        "$\\lexists[s][T(\\numx,\\numx,s)]$",
+        "$f$",
+        "$x$",
+        "$\\lexists[s][T(\\numx,\\numx,s)]$",
+        "$K$",
+        "$\\Th{Q}$"
+      ],
+      "math_target_core": [
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$y$",
+        "$\\Th{Q}$",
+        "$x$",
+        "$y$",
+        "\\[Q=\\Setabs{y}{\\lexists[x][\\Prf[\\Th{Q}](x,y)]}.\\]",
+        "$\\Prf[\\Th{Q}](x,y)$",
+        "$K\\leq_mQ$",
+        "$K=\\Setabs{x}{!A_x(x)\\downarrow}$",
+        "$K$",
+        "$\\Th{Q}$",
+        "$T(e,x,s)$",
+        "$\\Th{Q}$",
+        "$!A_T$",
+        "$x$",
+        "\\begin{align*}x\\inK&\\lif\\lexists[s][T(x,x,s)]\\\\&\\lif\\lexists[s][(\\Th{Q}\\Proves!A_T(\\numx,\\numx,\\nums))]\\\\&\\lif\\Th{Q}\\Proves\\lexists[s][!A_T(\\numx,\\numx,s)].\\end{align*}",
+        "$\\Th{Q}\\Proves\\lexists[s][!A_T(\\numx,\\numx,s)]$",
+        "$n$",
+        "$!A_T(\\numx,\\numx,\\numn)$",
+        "$T(x,x,n)$",
+        "$!A_T$",
+        "$T$",
+        "$\\Th{Q}$",
+        "$\\lnot!A_T(\\numx,\\numx,\\numn)$",
+        "$\\Th{Q}$",
+        "$T(x,x,n)$",
+        "$!A_x(x)\\downarrow$",
+        "$x$",
+        "$x$",
+        "$K$",
+        "$\\Th{Q}$",
+        "$\\lexists[s][T(\\numx,\\numx,s)]$",
+        "$x$",
+        "$\\lexists[s][T(\\numx,\\numx,s)]$",
+        "$f$",
+        "$K$",
+        "$\\Th{Q}$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 732,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: incompleteness\n% Chapter: theories-computability\n% Section: q-is-ce",
+          "target_start": "% Part: incompleteness\n% Chapter: theories-computability\n% Section: q-is-ce"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{inc}{tcp}{qce}",
+          "target_start": "\\olfileid{inc}{tcp}{qce}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{$\\Th{Q}$ is \\printtoken{S}{c.e.}-Complete}",
+          "target_start": "\\olsection{$\\Th{Q}$ \\printtoken{S}{c.e.}-సంపూర్ణం}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{thm}\n$\\Th{Q}$ is !!{c.e.} but not decidable. In fact, it is a complete\n  !!{c.e.} set.\n\\end{thm}",
+          "target_start": "\\begin{thm}\n$\\Th{Q}$ \\tetoken{గణనీయంగా లెక్కించదగినది}{!!{c.e.}}, కాని నిర్ణయించదగినది కాదు. నిజానికి అది ఒక\n "
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{proof}\nIt is not hard to see that $\\Th{Q}$ is !!{c.e.}, since it is the set of\n(codes for) sentences $y",
+          "target_start": "\\begin{proof}\n$\\Th{Q}$ \\tetoken{గణనీయంగా లెక్కించదగినది}{!!{c.e.}} అని చూడటం కష్టం కాదు. ఎందుకంటే $y$ అనేది\n$\\"
+        },
+        {
+          "index": 8,
+          "source_start": "Saying that it is a complete c.e.\\ set is equivalent to saying that $K\n\\leq_m Q$, where $K = \\Setabs{x}{!A_x(x",
+          "target_start": "అది ఒక సంపూర్ణ గ.లె. సమితి అనడం $K \\leq_m Q$ అనడానికి సమానం; ఇక్కడ\n$K = \\Setabs{x}{!A_x(x) \\downarrow}$. కాబట్"
+        },
+        {
+          "index": 9,
+          "source_start": "In short, we have that for every $x$, $x$ is in $K$ if and only if\n$\\Th{Q}$ proves $\\lexists[s][T(\\num x,\\num ",
+          "target_start": "సంక్షిప్తంగా, ప్రతి $x$కు, $x$ అనేది~$K$లో ఉన్నప్పుడు, అప్పుడు మాత్రమే\n$\\Th{Q}$, $\\lexists[s][T(\\num x,\\num x,"
+        },
+        {
+          "index": 10,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{tcp}{qce}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{tcp}{qce}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0304",
+      "source_path": "content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex",
+      "source_sha256": "141abd39d6939f679a6ee519dd4d9782a870650b8d94fdceff9f5b0e29cd8265",
+      "translation_sha256": "428c89f2ea293d5626dfdf35d5d8f7ce89ae95d6d2ee17c27e7e867082607f94",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{inc}{tcp}{oqn}",
+        "\\ollabel{thm:oconsis-q}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{inc}{tcp}{oqn}",
+        "\\ollabel{thm:oconsis-q}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\omega$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\omega$",
+        "$\\omega$",
+        "$\\Th{T}$",
+        "$\\omega$",
+        "$\\lexists[x][!A(x)]$",
+        "$\\Th{T}$",
+        "$\\lnot!A(\\num0)$",
+        "$\\lnot!A(\\num1)$",
+        "$\\lnot!A(\\num2)$",
+        "$\\Th{T}$",
+        "$\\lexists[x][!A(x)]$",
+        "$\\Th{T}$",
+        "$\\omega$",
+        "$\\Th{Q}$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$\\Th{Q}$",
+        "$\\Th{T}$",
+        "$x\\inK$",
+        "$\\Th{T}$",
+        "$\\lexists[s][!A_T(\\numx,\\numx,s)]$",
+        "$\\Th{T}$",
+        "$\\lexists[s][!A_T(\\numx,\\numx,s)]$",
+        "$x$",
+        "$K$",
+        "$x$",
+        "$x$",
+        "$!A_T$",
+        "$T$",
+        "$\\Th{T}$",
+        "$\\lnot!A_T(\\numx,\\numx,\\num0)$",
+        "$\\lnot!A_T(\\numx,\\numx,\\num1)$",
+        "$\\Th{T}$",
+        "$\\omega$"
+      ],
+      "math_target_core": [
+        "$\\Th{Q}$",
+        "$\\omega$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\omega$",
+        "$\\omega$",
+        "$\\Th{T}$",
+        "$\\omega$",
+        "$\\lexists[x][!A(x)]$",
+        "$\\Th{T}$",
+        "$\\lnot!A(\\num0)$",
+        "$\\lnot!A(\\num1)$",
+        "$\\lnot!A(\\num2)$",
+        "$\\Th{T}$",
+        "$\\lexists[x][!A(x)]$",
+        "$\\Th{Q}$",
+        "$\\omega$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$\\Th{Q}$",
+        "$\\Th{T}$",
+        "$x\\inK$",
+        "$\\Th{T}$",
+        "$\\lexists[s][!A_T(\\numx,\\numx,s)]$",
+        "$\\Th{T}$",
+        "$\\lexists[s][!A_T(\\numx,\\numx,s)]$",
+        "$x$",
+        "$K$",
+        "$x$",
+        "$x$",
+        "$!A_T$",
+        "$T$",
+        "$\\Th{T}$",
+        "$\\lnot!A_T(\\numx,\\numx,\\num0)$",
+        "$\\lnot!A_T(\\numx,\\numx,\\num1)$",
+        "$\\Th{T}$",
+        "$\\omega$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 916,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: incompleteness\n% Chapter: theories-computability\n% Section: oconsis-ext-of-q-undec",
+          "target_start": "% Part: incompleteness\n% Chapter: theories-computability\n% Section: oconsis-ext-of-q-undec"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{inc}{tcp}{oqn}",
+          "target_start": "\\olfileid{inc}{tcp}{oqn}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{$\\omega$-Consistent Extensions of $\\Th{Q}$ are Undecidable}",
+          "target_start": "\\olsection{$\\Th{Q}$ యొక్క $\\omega$-అవైరుధ్య విస్తరణలు అనిర్ణయనీయాలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{explain}\nThe proof that $\\Th{Q}$ is c.e.-complete relied on the fact that any\nsentence provable in $\\Th",
+          "target_start": "\\begin{explain}\n$\\Th{Q}$ గ.లె.-సంపూర్ణమనే నిరూపణ, $\\Th{Q}$లో నిరూపించదగిన ప్రతి వాక్యమూ\nసహజ సంఖ్యల విషయంలో ``స"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}\n\\ollabel{thm:oconsis-q}\nA theory $\\Th{T}$ is $\\omega$-consistent if the following holds: if\n$\\lex",
+          "target_start": "\\begin{defn}\n\\ollabel{thm:oconsis-q}\nకిందిది నెరవేరితే సిద్ధాంతం~$\\Th{T}$ను $\\omega$-అవైరుధ్యమైనది అంటాం:\n$\\le"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{thm}\n  Let $\\Th{T}$ be any $\\omega$-consistent theory that includes $\\Th{Q}$. Then\n  $\\Th{T}$ is not de",
+          "target_start": "\\begin{thm}\n  $\\Th{Q}$ను కలిగి ఉన్న ఏ $\\omega$-అవైరుధ్య సిద్ధాంతమైనా $\\Th{T}$గా\n  తీసుకోండి. అప్పుడు $\\Th{T}$ "
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{proof}\nIf $\\Th{T}$ includes $\\Th{Q}$, then $\\Th{T}$ represents the computable\nfunctions and relations. ",
+          "target_start": "\\begin{proof}\n$\\Th{T}$, $\\Th{Q}$ను కలిగి ఉంటే, గణనీయ ప్రమేయాలు, సంబంధాలకు $\\Th{T}$\nప్రాతినిధ్యం వహిస్తుంది. ము"
+        },
+        {
+          "index": 10,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{tcp}{oqn}",
+        "\\ollabel{thm:oconsis-q}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{tcp}{oqn}",
+        "\\ollabel{thm:oconsis-q}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0305",
+      "source_path": "content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex",
+      "source_sha256": "d81d5befab583c377a6a51acfffda6e2c4db3ba39aef1852fda6a88443c8547b",
+      "translation_sha256": "d224842bac54d9d4d294337746d0ac345680f608580856979d0eefc6ea58e3bb",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{inc}{tcp}{cqn}",
+        "\\olref[oqn]{thm:oconsis-q}",
+        "\\olref{undefinability:truth:section}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{inc}{tcp}{cqn}",
+        "\\olref[oqn]{thm:oconsis-q}",
+        "\\olref{undefinability:truth:section}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\Th{Q}$",
+        "$!A$",
+        "$\\lnot!A$",
+        "$!A$",
+        "$\\omega$",
+        "$\\omega$",
+        "$R(x,y)$",
+        "$S(y)$",
+        "$k$",
+        "$y$",
+        "$S(y)$",
+        "$R(k,y)$",
+        "$R(x,y)$",
+        "$S(y)$",
+        "$\\lnotR(y,y)$",
+        "$S(y)$",
+        "$k$",
+        "$S(y)$",
+        "$R(k,y)$",
+        "$S(k)$",
+        "$R(k,k)$",
+        "$\\lnotR(k,k)$",
+        "$\\Th{T}$",
+        "$\\Th{Q}$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$\\Th{Q}$",
+        "$\\Th{T}$",
+        "$R(x,y)$",
+        "$x$",
+        "$!D(u)$",
+        "$\\Th{T}$",
+        "$!D(\\numy)$",
+        "$\\Th{T}$",
+        "$R$",
+        "$R$",
+        "$S(y)$",
+        "$\\Th{Q}$",
+        "$\\Th{T}$",
+        "$!D_S(u)$",
+        "$n$",
+        "$y$",
+        "$S(y)$",
+        "$R(\\Gn{!D_S(u)},y)$",
+        "$R$",
+        "$\\Setabs{!A}{\\Sat{\\Nat}{!A}}$",
+        "$\\Th{T}$"
+      ],
+      "math_target_core": [
+        "$\\Th{Q}$",
+        "$!A$",
+        "$!A$",
+        "$\\lnot!A$",
+        "$\\omega$",
+        "$\\omega$",
+        "$R(x,y)$",
+        "$S(y)$",
+        "$y$",
+        "$S(y)$",
+        "$R(k,y)$",
+        "$k$",
+        "$R(x,y)$",
+        "$S(y)$",
+        "$\\lnotR(y,y)$",
+        "$S(y)$",
+        "$k$",
+        "$S(y)$",
+        "$R(k,y)$",
+        "$S(k)$",
+        "$R(k,k)$",
+        "$\\lnotR(k,k)$",
+        "$\\Th{Q}$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$\\Th{Q}$",
+        "$\\Th{T}$",
+        "$R(x,y)$",
+        "$x$",
+        "$!D(u)$",
+        "$\\Th{T}$",
+        "$!D(\\numy)$",
+        "$\\Th{T}$",
+        "$R$",
+        "$R$",
+        "$S(y)$",
+        "$\\Th{Q}$",
+        "$\\Th{T}$",
+        "$!D_S(u)$",
+        "$n$",
+        "$y$",
+        "$S(y)$",
+        "$R(\\Gn{!D_S(u)},y)$",
+        "$R$",
+        "$\\Setabs{!A}{\\Sat{\\Nat}{!A}}$",
+        "$\\Th{T}$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1307,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: incompleteness\n% Chapter: theories-computability\n% Section: extensions-of-q-not-decidable",
+          "target_start": "% Part: incompleteness\n% Chapter: theories-computability\n% Section: extensions-of-q-not-decidable"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{inc}{tcp}{cqn}",
+          "target_start": "\\olfileid{inc}{tcp}{cqn}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Consistent Extensions of $\\Th{Q}$ are Undecidable}",
+          "target_start": "\\olsection{$\\Th{Q}$ యొక్క అవైరుధ్య విస్తరణలు అనిర్ణయనీయాలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{explain}\nRemember that a theory is \\emph{consistent} if it does not prove both\n$!A$ and $\\lnot !A$ for ",
+          "target_start": "\\begin{explain}\nఏ సూత్రం~$!A$కైనా $!A$, $\\lnot !A$ రెండింటినీ నిరూపించకపోతే సిద్ధాంతం\n\\emph{అవైరుధ్యమైనది} అని"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{lem}\nThere is no ``universal computable relation.'' That is, there is no\nbinary computable relation $R(",
+          "target_start": "\\begin{lem}\n``సార్వత్రిక గణనీయ సంబంధం'' ఏదీ లేదు. అంటే, కింది ధర్మం గల ద్విస్థానిక గణనీయ\nసంబంధం~$R(x,y)$ ఏదీ ల"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{proof}\nSuppose $R(x,y)$ is a universal computable relation. Let $S(y)$\nbe the relation $\\lnot R(y,y)$. ",
+          "target_start": "\\begin{proof}\n$R(x,y)$ ఒక సార్వత్రిక గణనీయ సంబంధమని అనుకుందాం. $S(y)$ను $\\lnot R(y,y)$\nసంబంధంగా తీసుకుందాం. $S"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{thm}\nLet $\\Th{T}$ be any consistent theory that includes $\\Th{Q}$. Then\n$\\Th{T}$ is not decidable.\n\\end",
+          "target_start": "\\begin{thm}\n$\\Th{Q}$ను కలిగి ఉన్న ఏ అవైరుధ్య సిద్ధాంతమైనా $\\Th{T}$గా తీసుకోండి. అప్పుడు\n$\\Th{T}$ నిర్ణయించదగిన"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{proof}\nSuppose $\\Th{T}$ is a consistent, decidable\nextension of $\\Th{Q}$. We will obtain a contradictio",
+          "target_start": "\\begin{proof}\n$\\Th{T}$ అనేది $\\Th{Q}$ యొక్క అవైరుధ్యమైన, నిర్ణయించదగిన విస్తరణ అని\nఅనుకుందాం. $\\Th{T}$ను ఉపయోగ"
+        },
+        {
+          "index": 11,
+          "source_start": "Let $R(x,y)$ hold if and only if\n\\begin{quote}\n$x$ codes a formula $!D(u)$, and $\\Th{T}$ proves $!D(\\num y)$.\n",
+          "target_start": "$R(x,y)$ కిందిది జరిగినప్పుడు, అప్పుడు మాత్రమే వర్తించనివ్వండి:\n\\begin{quote}\n$x$ అనేది $!D(u)$ అనే సూత్రాన్ని"
+        },
+        {
+          "index": 12,
+          "source_start": "Let ``true arithmetic'' be the theory $\\Setabs{!A}{ \\Sat{\\Nat}{!A}}$,\nthat is, the set of sentences in the lan",
+          "target_start": "``నిజ అంకగణితం'' అంటే $\\Setabs{!A}{ \\Sat{\\Nat}{!A}}$ అనే సిద్ధాంతం;\nఅంటే ప్రామాణిక అర్థనిర్దేశంలో సత్యమైన అంకగ"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{cor}\nTrue arithmetic is not decidable.\n\\end{cor}",
+          "target_start": "\\begin{cor}\nనిజ అంకగణితం నిర్ణయించదగినది కాదు.\n\\end{cor}"
+        },
+        {
+          "index": 14,
+          "source_start": "%In Section~\\olref{undefinability:truth:section} we will state a stronger\n%result, due to Tarski.",
+          "target_start": "%In Section~\\olref{undefinability:truth:section} we will state a stronger\n%result, due to Tarski."
+        },
+        {
+          "index": 15,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{tcp}{cqn}",
+        "\\olref[oqn]{thm:oconsis-q}",
+        "\\olref{undefinability:truth:section}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{tcp}{cqn}",
+        "\\olref[oqn]{thm:oconsis-q}",
+        "\\olref{undefinability:truth:section}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0306",
+      "source_path": "content/incompleteness/theories-computability/computably-axiomatizable.tex",
+      "source_sha256": "cefc4b7c268be41dd32831fc2258102ef090194ef6bb7df234ad618b0ddda19d",
+      "translation_sha256": "01ae8b68f8085e3b95e6b5b957aaa67dccbe9c83e0e92ceedc3cc48dd9f41ec0",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{inc}{tcp}{cax}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{inc}{tcp}{cax}"
+      ],
+      "tokens_source": {
+        "!!a{derivation}": 2,
+        "!!{axiomatizable}": 3,
+        "!!{c.e.}": 1,
+        "!!{computably\nenumerable}": 1
+      },
+      "tokens_target": {
+        "!!a{derivation}": 2,
+        "!!{axiomatizable}": 3,
+        "!!{c.e.}": 1,
+        "!!{computably\nenumerable}": 1
+      },
+      "math_source": [
+        "$\\Th{T}$",
+        "$A$",
+        "$A$",
+        "$\\Th{T}$",
+        "$T=\\Setabs{!A}{A\\Proves!A}$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$A$",
+        "$\\Th{T}$",
+        "$!A\\inT$",
+        "$!A$",
+        "$!A$",
+        "$\\Th{T}$",
+        "$!B_1$",
+        "$!B_k$",
+        "$A$",
+        "$(!B_1\\land\\dots\\land!B_k)\\lif!A$"
+      ],
+      "math_target_core": [
+        "$\\Th{T}$",
+        "$A$",
+        "$A$",
+        "$\\Th{T}$",
+        "$T=\\Setabs{!A}{A\\Proves!A}$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$A$",
+        "$\\Th{T}$",
+        "$!A\\inT$",
+        "$!A$",
+        "$A$",
+        "$!B_1$",
+        "$!B_k$",
+        "$(!B_1\\land\\dots\\land!B_k)\\lif!A$",
+        "$!A$",
+        "$\\Th{T}$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 588,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: incompleteness\n% Chapter: theories-computability\n% Section: computably-axiomatizable",
+          "target_start": "% Part: incompleteness\n% Chapter: theories-computability\n% Section: computably-axiomatizable"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{inc}{tcp}{cax}",
+          "target_start": "\\olfileid{inc}{tcp}{cax}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{\\printtoken{S}{axiomatizable} Theories}",
+          "target_start": "\\olsection{\\printtoken{S}{axiomatizable} సిద్ధాంతాలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "A theory $\\Th{T}$ is said to be \\emph{!!{axiomatizable}} if it has a\ncomputable set of axioms~$A$. (Saying tha",
+          "target_start": "ఒక సిద్ధాంతం~$\\Th{T}$కు గణనీయ స్వీకృతాల సమితి~$A$ ఉంటే, దాన్ని\n\\emph{\\tetoken{స్వీకృతీకరించదగినది}{!!{axiomati"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{lem}\nSuppose $\\Th{T}$ is !!{axiomatizable}. Then $\\Th{T}$ is !!{computably\nenumerable}.\n\\end{lem}",
+          "target_start": "\\begin{lem}\n$\\Th{T}$ \\tetoken{స్వీకృతీకరించదగినది}{!!{axiomatizable}} అనుకుందాం. అప్పుడు $\\Th{T}$\n\\tetoken{గణన"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{proof}\nSuppose $A$ is a computable set of axioms for $\\Th{T}$. To determine\nif $!A \\in T$, just search ",
+          "target_start": "\\begin{proof}\n$A$ అనేది $\\Th{T}$కు గణనీయ స్వీకృతాల సమితి అని అనుకుందాం. $!A \\in T$\nఅవుతుందో తెలుసుకోవడానికి, ఆ"
+        },
+        {
+          "index": 9,
+          "source_start": "Put slightly differently, $!A$ is in $\\Th{T}$ if and only if there is\na finite list of axioms $!B_1$, \\dots, $",
+          "target_start": "కొద్దిగా భిన్నంగా చెప్పాలంటే, $A$లో $!B_1$, \\dots, $!B_k$ అనే పరిమిత\nస్వీకృతాల జాబితీ, మొదటిస్థాయి తర్కంలో $(!"
+        },
+        {
+          "index": 10,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{tcp}{cax}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{tcp}{cax}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0307",
+      "source_path": "content/incompleteness/theories-computability/complete-decidable.tex",
+      "source_sha256": "9e43a7335031abc7140dbc38c31a0dbd1d2be1495eeaced93ece2f1739c0067c",
+      "translation_sha256": "50804d849ba20d871b7f4128a34e3d1dcb3ebc055e916393f6bc253f9c6ccb51",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{inc}{tcp}{cdc}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{inc}{tcp}{cdc}"
+      ],
+      "tokens_source": {
+        "!!a{derivation}": 3,
+        "!!a{formula}": 1,
+        "!!{axiomatizable}": 1,
+        "!!{c.e.}": 2,
+        "!!{derivation}": 1
+      },
+      "tokens_target": {
+        "!!a{derivation}": 3,
+        "!!a{formula}": 1,
+        "!!{axiomatizable}": 1,
+        "!!{c.e.}": 2,
+        "!!{derivation}": 1
+      },
+      "math_source": [
+        "$!A$",
+        "$!A$",
+        "$\\lnot!A$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$A$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$!A$",
+        "$\\Th{T}$",
+        "$!A$",
+        "$\\Th{T}$",
+        "$\\lnot!A$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$\\lnot!A$",
+        "$!A$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$!A$",
+        "$\\Th{\\barT}$",
+        "$\\lnot!A$",
+        "$\\Th{T}$",
+        "$\\Th{\\barT}\\leq_m\\Th{T}$"
+      ],
+      "math_target_core": [
+        "$!A$",
+        "$!A$",
+        "$\\lnot!A$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$A$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$!A$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$!A$",
+        "$\\lnot!A$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$\\lnot!A$",
+        "$!A$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$!A$",
+        "$\\Th{\\barT}$",
+        "$\\lnot!A$",
+        "$\\Th{T}$",
+        "$\\Th{\\barT}\\leq_m\\Th{T}$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 648,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: incompleteness\n% Chapter: theories-computability\n% Section: complete-decidable",
+          "target_start": "% Part: incompleteness\n% Chapter: theories-computability\n% Section: complete-decidable"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{inc}{tcp}{cdc}",
+          "target_start": "\\olfileid{inc}{tcp}{cdc}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{\\printtoken{S}{axiomatizable} Complete Theories are Decidable}",
+          "target_start": "\\olsection{\\printtoken{S}{axiomatizable} సంపూర్ణ సిద్ధాంతాలు నిర్ణయించదగినవి}"
+        },
+        {
+          "index": 6,
+          "source_start": "A theory is said to be {\\em complete} if for every sentence $!A$,\neither $!A$ or $\\lnot !A$ is provable.",
+          "target_start": "ప్రతి వాక్యం~$!A$కు $!A$ గానీ $\\lnot !A$ గానీ నిరూపించదగినదైతే, ఆ\nసిద్ధాంతాన్ని {\\em సంపూర్ణం} అంటాం."
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{lem}\nSuppose a theory $\\Th{T}$ is complete and !!{axiomatizable}. Then\n$\\Th{T}$ is decidable.\n\\end{lem}",
+          "target_start": "\\begin{lem}\nసిద్ధాంతం~$\\Th{T}$ సంపూర్ణమూ \\tetoken{స్వీకృతీకరించదగినదీ}{!!{axiomatizable}} అనుకుందాం. అప్పుడు\n$"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{proof}\nSuppose $\\Th{T}$ is complete and $A$ is a computable set of axioms.\nIf $\\Th{T}$ is inconsistent,",
+          "target_start": "\\begin{proof}\n$\\Th{T}$ సంపూర్ణమనీ, $A$ గణనీయ స్వీకృతాల సమితి అనీ అనుకుందాం.\n$\\Th{T}$ వైరుధ్యమైనదైతే అది స్పష్ట"
+        },
+        {
+          "index": 9,
+          "source_start": "To decide whether or not a sentence $!A$ is in~$\\Th{T}$,\nsimultaneously search for !!a{derivation} of~$!A$ fro",
+          "target_start": "ఒక వాక్యం~$!A$, $\\Th{T}$లో ఉందో లేదో నిర్ణయించడానికి, $\\Th{T}$ నుంచి\n$!A$కు \\tetoken{ఒక వ్యుత్పత్తి}{!!a{deriv"
+        },
+        {
+          "index": 10,
+          "source_start": "Put in different terms, we already know that $\\Th{T}$ is !!{c.e.}; so\nby a theorem we proved before, it suffic",
+          "target_start": "వేరే మాటల్లో, $\\Th{T}$ \\tetoken{గ.లె.}{!!{c.e.}} అని మనకు ఇప్పటికే తెలుసు. కాబట్టి మనం\nముందు నిరూపించిన ఒక సిద"
+        },
+        {
+          "index": 11,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{tcp}{cdc}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{tcp}{cdc}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0308",
+      "source_path": "content/incompleteness/theories-computability/first-incompleteness.tex",
+      "source_sha256": "6d136f51b1d58f3d8831a237dd21b65a146381874e9549c7e504080264df82bd",
+      "translation_sha256": "f1f7656946a03408602ce24629efe570ec5d19f179cff16c8b67336bdd53196e",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{inc}{tcp}{inc}",
+        "\\ollabel{thm:first-incompleteness}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{inc}{tcp}{inc}",
+        "\\ollabel{thm:first-incompleteness}"
+      ],
+      "tokens_source": {
+        "!!^{axiomatizable}": 1,
+        "!!{axiomatizability}": 1,
+        "!!{axiomatizable}": 2,
+        "!!{axiomatized}": 1
+      },
+      "tokens_target": {
+        "!!^{axiomatizable}": 1,
+        "!!{axiomatizability}": 1,
+        "!!{axiomatizable}": 2,
+        "!!{axiomatized}": 1
+      },
+      "math_source": [
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{T}$",
+        "$\\omega$",
+        "$\\Th{Q}$",
+        "$\\{\\eq/[0][0]\\}$"
+      ],
+      "math_target_core": [
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{T}$",
+        "$\\omega$",
+        "$\\Th{Q}$",
+        "$\\{\\eq/[0][0]\\}$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [
+        "OLTETCP-001"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1146,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: incompleteness\n% Chapter: theories-computability\n% Section: first-incompleteness",
+          "target_start": "% Part: incompleteness\n% Chapter: theories-computability\n% Section: first-incompleteness"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{inc}{tcp}{inc}",
+          "target_start": "\\olfileid{inc}{tcp}{inc}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{$\\Th{Q}$ has no Complete, Consistent, !!^{axiomatizable}\n  Extensions}",
+          "target_start": "\\olsection{$\\Th{Q}$కు సంపూర్ణమైన, అవైరుధ్యమైన,\n  \\tetoken{స్వీకృతీకరించదగిన}{!!^{axiomatizable}} విస్తరణలు లేవ"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{thm}\n\\ollabel{thm:first-incompleteness}\nThere is no complete, consistent, !!{axiomatizable} extension o",
+          "target_start": "\\begin{thm}\n\\ollabel{thm:first-incompleteness}\n$\\Th{Q}$కు సంపూర్ణమైన, అవైరుధ్యమైన, \\tetoken{స్వీకృతీకరించదగిన}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{proof}\nWe already know that there is no consistent, decidable extension of\n$\\Th{Q}$. But if $\\Th{T}$ is",
+          "target_start": "\\begin{proof}\n$\\Th{Q}$కు అవైరుధ్యమైన, నిర్ణయించదగిన విస్తరణ ఏదీ లేదని మనకు ఇప్పటికే\nతెలుసు. కానీ $\\Th{T}$ సంపూ"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{explain}\nThis theorems is not that far from G\\\"odel's original 1931 formulation\nof the First Incomplete",
+          "target_start": "\\begin{explain}\nఈ సిద్ధాంతం గ్యోడెల్ 1931లో ఇచ్చిన మొదటి అసంపూర్ణతా సిద్ధాంతపు అసలు\nసూత్రీకరణకు చాలా దూరంలో లే"
+        },
+        {
+          "index": 9,
+          "source_start": "The theorem says you can't have it all, namely, completeness,\nconsistency, and !!{axiomatizability}. If you gi",
+          "target_start": "సంపూర్ణత, అవైరుధ్యం, \\tetoken{స్వీకృతీకరించదగినత}{!!{axiomatizability}}---ఈ మూడూ ఒకేసారి ఉండలేవని\nసిద్ధాంతం చె"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{tcp}{inc}",
+        "\\ollabel{thm:first-incompleteness}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{tcp}{inc}",
+        "\\ollabel{thm:first-incompleteness}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0309",
+      "source_path": "content/incompleteness/theories-computability/inseparability.tex",
+      "source_sha256": "d9da8fc6073ab195b526966775f35c67384af226328d0e98531a7a8b111c6ff8",
+      "translation_sha256": "ef01a33f1d757a94d5fba360036e7feaae1786ffd558977598acfd093258707a",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{inc}{tcp}{ins}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{inc}{tcp}{ins}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\Th{Q}$",
+        "$\\Th{\\barQ}$",
+        "$\\Th{Q}$",
+        "$\\Th{\\barQ}=\\Setabs{!A}{\\Th{Q}\\Proves\\lnot!A}$",
+        "$A$",
+        "$B$",
+        "$C$",
+        "$A\\subseteqC$",
+        "$B\\subseteq\\Complement{C}$",
+        "$\\Th{Q}$",
+        "$\\Th{\\barQ}$",
+        "$C$",
+        "$\\Th{Q}\\subseteqC$",
+        "$\\Th{\\barQ}\\subseteq\\Complement{C}$",
+        "$R(x,y)$",
+        "$x$",
+        "$!D(u)$",
+        "$!D(\\numy)$",
+        "$C$",
+        "$R(x,y)$",
+        "$S(y)$",
+        "$!D_S(u)$",
+        "$\\Th{Q}$",
+        "$S(y)$",
+        "$R(\\#(!D_S(\\numu)),y)$"
+      ],
+      "math_target_core": [
+        "$\\Th{Q}$",
+        "$\\Th{\\barQ}$",
+        "$\\Th{Q}$",
+        "$\\Th{\\barQ}=\\Setabs{!A}{\\Th{Q}\\Proves\\lnot!A}$",
+        "$A$",
+        "$B$",
+        "$A\\subseteqC$",
+        "$B\\subseteq\\Complement{C}$",
+        "$C$",
+        "$\\Th{Q}$",
+        "$\\Th{\\barQ}$",
+        "$\\Th{Q}\\subseteqC$",
+        "$\\Th{\\barQ}\\subseteq\\Complement{C}$",
+        "$C$",
+        "$R(x,y)$",
+        "$x$",
+        "$!D(u)$",
+        "$!D(\\numy)$",
+        "$C$",
+        "$R(x,y)$",
+        "$S(y)$",
+        "$\\Th{Q}$",
+        "$!D_S(u)$",
+        "$S(y)$",
+        "$R(\\Gn{!D_S(u)},y)$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$R(\\#(!D_S(\\numu)),y)$"
+      ],
+      "math_delta_target_only": [
+        "$R(\\Gn{!D_S(u)},y)$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTETCP-002"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 644,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: incompleteness\n% Chapter: theories-computability\n% Section: inseparability",
+          "target_start": "% Part: incompleteness\n% Chapter: theories-computability\n% Section: inseparability"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{inc}{tcp}{ins}",
+          "target_start": "\\olfileid{inc}{tcp}{ins}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Sentences Provable and Refutable in $\\Th{Q}$ are Computably\n  Inseparable}",
+          "target_start": "\\olsection{$\\Th{Q}$లో నిరూపించదగిన, ఖండించదగిన వాక్యాలు గణనీయంగా\n  వేరుపరచలేనివి}"
+        },
+        {
+          "index": 6,
+          "source_start": "Let $\\Th{\\bar Q}$ be the set of sentences whose {\\em negations} are\nprovable in $\\Th{Q}$, i.e., $\\Th{\\bar Q} =",
+          "target_start": "$\\Th{\\bar Q}$ అంటే, వాటి {\\em నిషేధాలు} $\\Th{Q}$లో నిరూపించదగిన వాక్యాల\nసమితి అనుకుందాం; అంటే $\\Th{\\bar Q} = \\"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{lem}\n$\\Th{Q}$ and $\\Th{\\bar Q}$ are computably inseparable. \n\\end{lem}",
+          "target_start": "\\begin{lem}\n$\\Th{Q}$, $\\Th{\\bar Q}$ గణనీయంగా వేరుపరచలేనివి.\n\\end{lem}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{proof}\nSuppose $C$ is a computable set such that $\\Th{Q} \\subseteq C$ and\n$\\Th{\\bar Q} \\subseteq \\Compl",
+          "target_start": "\\begin{proof}\n$\\Th{Q} \\subseteq C$, $\\Th{\\bar Q} \\subseteq \\Complement{C}$ అయ్యే గణనీయ\nసమితి~$C$ ఉందని అనుకుంద"
+        },
+        {
+          "index": 9,
+          "source_start": "Suppose $S(y)$ is computable, represented by $!D_S(u)$ in $\\Th{Q}$. Then\n\\begin{eqnarray*}\nS(\\num n) & \\lif & ",
+          "target_start": "$S(y)$ గణనీయమనీ, దానికి $\\Th{Q}$లో $!D_S(u)$ ప్రాతినిధ్యం వహిస్తుందనీ\nఅనుకుందాం. అప్పుడు\n\\begin{eqnarray*}\nS(\\"
+        },
+        {
+          "index": 10,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{tcp}{ins}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{tcp}{ins}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0310",
+      "source_path": "content/incompleteness/theories-computability/consis-with-q.tex",
+      "source_sha256": "990cb27b8ea30898025f22704de1d8c790213d7e4439d43744f4e005722375ea",
+      "translation_sha256": "f689330d4ef991940e2acec68a8cb6bd7c6829827a8909ae5af3ae01e7a04c16",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{inc}{tcp}{con}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{inc}{tcp}{con}"
+      ],
+      "tokens_source": {
+        "!!a{derivation}": 1
+      },
+      "tokens_target": {
+        "!!a{derivation}": 1
+      },
+      "math_source": [
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{T}$",
+        "$\\Th{Q}$",
+        "$\\Th{T}\\cup\\Th{Q}$",
+        "$\\Th{T}$",
+        "$\\Th{Q}$",
+        "$!Q_1$",
+        "$!Q_8$",
+        "$!E=!Q_1\\land\\dots\\land!Q_8$",
+        "$\\Th{T}$",
+        "$\\Th{Q}$",
+        "\\[C=\\Setabs{!A}{\\Th{T}\\Proves!E\\lif!A}.\\]",
+        "$C$",
+        "$\\Th{Q}$",
+        "$\\Th{\\barQ}$",
+        "$!A$",
+        "$\\Th{Q}$",
+        "$!A$",
+        "$\\Th{Q}$",
+        "$!E\\lif!A$",
+        "$!A$",
+        "$C$",
+        "$!A$",
+        "$\\Th{\\barQ}$",
+        "$!E\\lif\\lnot!A$",
+        "$\\Th{T}$",
+        "$!E\\lif!A$",
+        "$\\Th{T}$",
+        "$\\lnot!E$",
+        "$\\Th{T}\\cup\\Th{Q}$",
+        "$\\Th{T}\\cup\\Th{Q}$",
+        "$\\Th{T}$",
+        "$!E\\lif!A$",
+        "$!A$",
+        "$C$",
+        "$!A$",
+        "$\\Th{Q}$",
+        "$C$",
+        "$!A$",
+        "$\\Th{\\barQ}$",
+        "$\\Complement{C}$",
+        "$C$",
+        "$\\Setabs{!A}{}$",
+        "$\\emptyset$",
+        "$\\Th{Q}$",
+        "$!A$"
+      ],
+      "math_target_core": [
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$\\Th{T}$",
+        "$\\Th{Q}$",
+        "$\\Th{T}\\cup\\Th{Q}$",
+        "$\\Th{T}$",
+        "$\\Th{Q}$",
+        "$!Q_1$",
+        "$!Q_8$",
+        "$!E=!Q_1\\land\\dots\\land!Q_8$",
+        "$\\Th{T}$",
+        "$\\Th{Q}$",
+        "\\[C=\\Setabs{!A}{\\Th{T}\\Proves!E\\lif!A}.\\]",
+        "$C$",
+        "$\\Th{Q}$",
+        "$\\Th{\\barQ}$",
+        "$!A$",
+        "$\\Th{Q}$",
+        "$\\Th{Q}$",
+        "$!A$",
+        "$!E\\lif!A$",
+        "$!A$",
+        "$C$",
+        "$!A$",
+        "$\\Th{\\barQ}$",
+        "$!E\\lif\\lnot!A$",
+        "$\\Th{T}$",
+        "$!E\\lif!A$",
+        "$\\Th{T}$",
+        "$\\lnot!E$",
+        "$\\Th{T}\\cup\\Th{Q}$",
+        "$\\Th{T}\\cup\\Th{Q}$",
+        "$\\Th{T}$",
+        "$!E\\lif!A$",
+        "$!A$",
+        "$C$",
+        "$!A$",
+        "$\\Th{Q}$",
+        "$C$",
+        "$!A$",
+        "$\\Th{\\barQ}$",
+        "$\\Complement{C}$",
+        "$C$",
+        "$\\Setabs{!A}{}$",
+        "$\\emptyset$",
+        "$\\Th{Q}$",
+        "$!A$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1045,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: incompleteness\n% Chapter: theories-computability\n% Section: consis-with-q",
+          "target_start": "% Part: incompleteness\n% Chapter: theories-computability\n% Section: consis-with-q"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{inc}{tcp}{con}",
+          "target_start": "\\olfileid{inc}{tcp}{con}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Theories Consistent with $\\Th{Q}$ are Undecidable}",
+          "target_start": "\\olsection{$\\Th{Q}$తో అవైరుధ్యంగా ఉన్న సిద్ధాంతాలు అనిర్ణయనీయాలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "The following theorem says that not only is $\\Th{Q}$ undecidable, but, in\nfact, any theory that does not disag",
+          "target_start": "కింది సిద్ధాంతం $\\Th{Q}$ మాత్రమే అనిర్ణయనీయం కాదనీ, నిజానికి $\\Th{Q}$తో\nవిభేదించని ప్రతి సిద్ధాంతమూ అనిర్ణయనీయ"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{thm}\nLet $\\Th{T}$ be any theory in the language of arithmetic that is\nconsistent with $\\Th{Q}$ (i.e., $",
+          "target_start": "\\begin{thm}\nఅంకగణిత భాషలోని సిద్ధాంతం~$\\Th{T}$, $\\Th{Q}$తో అవైరుధ్యంగా ఉందనుకుందాం\n(అంటే $\\Th{T} \\cup \\Th{Q}$ "
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{proof}\nRemember that $\\Th{Q}$ has a finite set of axioms, $!Q_1$, \\dots,\n$!Q_8$. We can even replace th",
+          "target_start": "\\begin{proof}\n$\\Th{Q}$కు $!Q_1$, \\dots, $!Q_8$ అనే పరిమిత స్వీకృతాల సమితి ఉందని\nగుర్తుంచుకోండి. వీటి స్థానంలో "
+        },
+        {
+          "index": 9,
+          "source_start": "Suppose $\\Th{T}$ is a decidable theory consistent with~$\\Th{Q}$. Let\n\\[\nC = \\Setabs{!A}{\\Th{T} \\Proves !E \\lif",
+          "target_start": "$\\Th{T}$ అనేది~$\\Th{Q}$తో అవైరుధ్యంగా ఉన్న నిర్ణయించదగిన సిద్ధాంతం అని\nఅనుకుందాం. కిందిదాన్ని తీసుకుందాం:\n\\[\nC"
+        },
+        {
+          "index": 10,
+          "source_start": "On the other hand, if $!A$ is in $\\Th{\\bar Q}$, then there is a proof\nof $!E \\lif \\lnot !A$ in first-order log",
+          "target_start": "మరోవైపు, $!A$, $\\Th{\\bar Q}$లో ఉంటే, మొదటిస్థాయి తర్కంలో $!E \\lif\n\\lnot !A$కు ఒక నిరూపణ ఉంటుంది. $\\Th{T}$ కూడా"
+        },
+        {
+          "index": 11,
+          "source_start": "We've shown that if $!A$ is in $\\Th{Q}$, then it is in $C$, and if\n$!A$ is in $\\Th{\\bar Q}$, then it is in $\\C",
+          "target_start": "$!A$, $\\Th{Q}$లో ఉంటే $C$లో ఉంటుందనీ, $!A$, $\\Th{\\bar Q}$లో ఉంటే\n$\\Complement{C}$లో ఉంటుందనీ చూపాం. కాబట్టి $C"
+        },
+        {
+          "index": 12,
+          "source_start": "This theorem is very powerful. For example, it implies:",
+          "target_start": "ఈ సిద్ధాంతం చాలా శక్తిమంతమైనది. ఉదాహరణకు, దీని నుంచి కిందిది అనుగమిస్తుంది:"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{cor}\n  First-order logic for the language of arithmetic (that is, the set\n  $\\Setabs{!A}{\\text{$!A$ is ",
+          "target_start": "\\begin{cor}\n  అంకగణిత భాషకు మొదటిస్థాయి తర్కం (అంటే\n  $\\Setabs{!A}{\\text{$!A$ మొదటిస్థాయి తర్కంలో నిరూపించదగిన"
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{proof}\nFirst-order logic is the set of consequences of $\\emptyset$,\nwhich is consistent with~$\\Th{Q}$.\n",
+          "target_start": "\\begin{proof}\nమొదటిస్థాయి తర్కం ఖాళీ సమితి~$\\emptyset$ యొక్క పర్యవసానాల సమితి;\nఅది~$\\Th{Q}$తో అవైరుధ్యంగా ఉంటు"
+        },
+        {
+          "index": 15,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{tcp}{con}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{tcp}{con}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0311",
+      "source_path": "content/incompleteness/theories-computability/interpretability.tex",
+      "source_sha256": "180003bb40b9c0d66d6e9805dba9989e14b350ad857b45e35479923bb712a966",
+      "translation_sha256": "fdd96d08b7cb93c525f26c655c150d9db44e7901fc4327844a4c5ded86039779",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{inc}{tcp}{itp}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{inc}{tcp}{itp}"
+      ],
+      "tokens_source": {
+        "!!{axiomatizable}": 1,
+        "!!{formula}s": 1
+      },
+      "tokens_target": {
+        "!!{axiomatizable}": 1,
+        "!!{formula}s": 1
+      },
+      "math_source": [
+        "$\\Th{Q}$",
+        "$\\Lang{L_1}$",
+        "$\\Lang{L_2}$",
+        "$\\Lang{L_1}$",
+        "$\\Lang{L_2}$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$\\Th{Q}$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$\\Th{Q}$",
+        "$\\Th{T}$",
+        "$\\Th{Q}$",
+        "$\\Th{\\barQ}$",
+        "$\\Th{ZFC}$",
+        "$\\Th{ZFC}$",
+        "$\\Th{Q}$",
+        "$\\Th{ZFC}$",
+        "$\\Th{ZFC}$",
+        "$\\Th{ZFC}$",
+        "$\\in$",
+        "$\\Obj0$",
+        "$'$",
+        "$+$",
+        "$\\times$",
+        "$<$",
+        "$<$",
+        "$+$",
+        "$\\times$",
+        "$'$",
+        "$\\Obj0$",
+        "$'$",
+        "$\\times$",
+        "$\\Obj0$",
+        "$'$",
+        "$+$"
+      ],
+      "math_target_core": [
+        "$\\Th{Q}$",
+        "$\\Lang{L_1}$",
+        "$\\Lang{L_2}$",
+        "$\\Lang{L_1}$",
+        "$\\Lang{L_2}$",
+        "$\\Th{T}$",
+        "$\\Th{Q}$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$\\Th{Q}$",
+        "$\\Th{T}$",
+        "$\\Th{T}$",
+        "$\\Th{Q}$",
+        "$\\Th{\\barQ}$",
+        "$\\Th{ZFC}$",
+        "$\\Th{ZFC}$",
+        "$\\Th{Q}$",
+        "$\\Th{ZFC}$",
+        "$\\Th{ZFC}$",
+        "$\\Th{ZFC}$",
+        "$\\in$",
+        "$\\Obj0$",
+        "$'$",
+        "$+$",
+        "$\\times$",
+        "$<$",
+        "$<$",
+        "$\\times$",
+        "$'$",
+        "$+$",
+        "$\\Obj0$",
+        "$'$",
+        "$\\times$",
+        "$\\Obj0$",
+        "$'$",
+        "$+$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [
+        "OLTETCP-003"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1804,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: incompleteness\n% Chapter: theories-computability\n% Section: intepretability",
+          "target_start": "% Part: incompleteness\n% Chapter: theories-computability\n% Section: intepretability"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{inc}{tcp}{itp}",
+          "target_start": "\\olfileid{inc}{tcp}{itp}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Theories in which $\\Th{Q}$ is Interpretable are Undecidable}",
+          "target_start": "\\olsection{$\\Th{Q}$ను అర్థనిర్దేశం చేయగల సిద్ధాంతాలు అనిర్ణయనీయాలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "We can strengthen these results even more. Informally, an\ninterpretation of a language $\\Lang{L_1}$ in another",
+          "target_start": "ఈ ఫలితాలను ఇంకా బలపరచవచ్చు. అనౌపచారికంగా చెప్పాలంటే, ఒక భాష\n$\\Lang{L_1}$ను మరొక భాష~$\\Lang{L_2}$లో అర్థనిర్దేశ"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{thm}\n  Suppose $\\Th{T}$ is a theory in a language in which one can\n  interpret the language of arithmet",
+          "target_start": "\\begin{thm}\n  అంకగణిత భాషను అర్థనిర్దేశం చేయగల భాషలోని సిద్ధాంతం~$\\Th{T}$ను\n  పరిగణించండి; ఆ అర్థనిర్దేశంలోని "
+        },
+        {
+          "index": 8,
+          "source_start": "The proof is just a small modification of the proof of the last\ntheorem; one could use a counterexample to get",
+          "target_start": "ఈ నిరూపణ ముందటి సిద్ధాంత నిరూపణకు చేసిన చిన్న మార్పు మాత్రమే; ఒక\nప్రతివాద ఉదాహరణను ఉపయోగించి $\\Th{Q}$, $\\Th{\\b"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{cor}\nThere is no decidable extension of $\\Th{ZFC}$.\n\\end{cor}",
+          "target_start": "\\begin{cor}\n$\\Th{ZFC}$కు అవైరుధ్యమైన, నిర్ణయించదగిన విస్తరణ ఏదీ లేదు.\\sourcecorrection{OLTETCP-003}{ఆంగ్ల మూలం"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{cor}\nThere is no complete, consistent, computably !!{axiomatizable} extension of\n$\\Th{ZFC}$. \n\\end{cor}",
+          "target_start": "\\begin{cor}\n$\\Th{ZFC}$కు సంపూర్ణమైన, అవైరుధ్యమైన, గణనీయంగా\n\\tetoken{స్వీకృతీకరించదగిన}{!!{axiomatizable}} విస్"
+        },
+        {
+          "index": 11,
+          "source_start": "The language of $\\Th{ZFC}$ has only a single binary relation,\n$\\in$. (In fact, you don't even need equality.) ",
+          "target_start": "$\\Th{ZFC}$ భాషలో ఒకే ద్విస్థానిక సంబంధం~$\\in$ మాత్రమే ఉంది. (నిజానికి\nసర్వసమానత కూడా అవసరం లేదు.) కాబట్టి మనకు"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{cor}\nFirst-order logic for any language with a binary relation symbol is\nundecidable.\n\\end{cor}",
+          "target_start": "\\begin{cor}\nద్విస్థానిక సంబంధ సంకేతం గల ఏ భాషకైనా మొదటిస్థాయి తర్కం అనిర్ణయనీయం.\n\\end{cor}"
+        },
+        {
+          "index": 13,
+          "source_start": "This result extends to any language with two unary function symbols,\nsince one can use these to simulate a bin",
+          "target_start": "ఈ ఫలితం రెండు ఏకస్థానిక ప్రమేయ సంకేతాలు గల ప్రతి భాషకూ విస్తరిస్తుంది;\nఎందుకంటే వాటితో ఒక ద్విస్థానిక సంబంధ సం"
+        },
+        {
+          "index": 14,
+          "source_start": "One more bit of trivia. We know that the set of sentences in the\nlanguage $\\Obj 0$, $'$, $+$, $\\times$, $<$ tr",
+          "target_start": "ఇంకొక చిన్న విశేషం. ప్రామాణిక నమూనాలో సత్యమైన $\\Obj 0$, $'$, $+$,\n$\\times$, $<$ భాషలోని వాక్యాల సమితి అనిర్ణయన"
+        },
+        {
+          "index": 15,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{tcp}{itp}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{inc}{tcp}{itp}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    }
+  ]
+}

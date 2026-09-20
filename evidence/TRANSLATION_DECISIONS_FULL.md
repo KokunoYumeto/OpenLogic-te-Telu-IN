@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **297 of 722 source units drafted**. This readable view contains all 334 decisions and 613 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **308 of 722 source units drafted**. This readable view contains all 338 decisions and 624 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2077,6 +2077,38 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T072-OCC-004; OLP-0296; OLP-0296-B004; source upstream/content/incompleteness/representability-in-q/minimization-representable.tex:9-10 bytes 176-263 SHA-256 396bbd36dbb04280e2521c9fb1af6b07ef3084e0205917c22eb308362f035e94; target translation/content/incompleteness/representability-in-q/minimization-representable.tex:9-10 bytes 176-340 SHA-256 839209250cc87d66cff1a7edacc5ff3567111e6789ccaa41ac3a1b567dcf2a8b; reader page pending.
   - te-Telu-IN-TE-T072-OCC-005; OLP-0298; OLP-0298-B005; source upstream/content/incompleteness/representability-in-q/representing-relations.tex:11 bytes 198-233 SHA-256 97b0cb4406cc953b30d2006dc7e27ef8262a6f82e8926186eefbdb0a5602ef55; target translation/content/incompleteness/representability-in-q/representing-relations.tex:11 bytes 198-291 SHA-256 9575eb5d81509672545f69018411d8be2642fc90608d5fdd8283ac640fea5cc7; reader page pending.
   - te-Telu-IN-TE-T072-OCC-006; OLP-0300; OLP-0300-B004; source upstream/content/incompleteness/representability-in-q/sigma1-completeness.tex:9-10 bytes 169-256 SHA-256 9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d; target translation/content/incompleteness/representability-in-q/sigma1-completeness.tex:9-10 bytes 169-268 SHA-256 88db2e18b64d55eefbf53ba9332704a9ba80e6aa0622e47e09bacc3eff59d5cd; reader page pending.
+
+## te-Telu-IN-TE-T073 — theories and computability / deductively closed theory / c.e.-complete theory / omega-consistency / universal computable relation / consistent extension / computably axiomatizable theory / complete theory / computable inseparability / provable and refutable sentences / interpretation of a theory / consistent decidable extension
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: సిద్ధాంతాలు మరియు గణనీయత / నిగమన పరంగా సంవృతమైన సిద్ధాంతం / గ.లె.-సంపూర్ణ సిద్ధాంతం / omega-అవైరుధ్యం / సార్వత్రిక గణనీయ సంబంధం / అవైరుధ్య విస్తరణ / స్వీకృతీకరించదగిన సిద్ధాంతం / సంపూర్ణ సిద్ధాంతం / గణనీయంగా వేరుపరచలేనితనం / నిరూపించదగిన, ఖండించదగిన వాక్యాలు / ఒక సిద్ధాంతాన్ని అర్థనిర్దేశం చేయడం / అవైరుధ్యమైన నిర్ణయించదగిన విస్తరణ
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “theories and computability / deductively closed theory / c.e.-complete theory / omega-consistency / universal computable relation / consistent extension / computably axiomatizable theory / complete theory / computable inseparability / provable and refutable sentences / interpretation of a theory / consistent decidable extension” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low semantic uncertainty because the specialized notions are fixed by explicit definitions, reductions and proofs; medium to high nomenclatural uncertainty for omega-consistency, computable inseparability and theory-interpretation compounds pending independent native specialist review
+
+- Rationale: TE-P003 and TE-P032 support native proof, theorem, induction and deduction prose; TE-P005 supports Andhra Pradesh natural-number exposition; TE-P008, TE-P010--TE-P011 and TE-P034 support pre-bifurcation set, ordered-pair, relation and function usage; TE-P018 and TE-P024--TE-P029 plus TE-P033 directly support formal logic, derivations, predicates, quantifiers, first-order language, inference and consistency register. The witnesses do not directly attest c.e.-complete theories, omega-consistency, universal computable relations, computable inseparability or proof-theoretic interpretation between theories. The frozen definitions, reductions, diagonal arguments, separation construction and interpretability theorem in OLP-0301--OLP-0311 control those exact senses; TE-T034, TE-T047, TE-T058, TE-T061, TE-T066--TE-T067 and TE-T070--TE-T072 supply earlier reversible choices. క్లీనీ, గ్యోడెల్, జెర్మెలో--ఫ్రెంకెల్ and ప్రెస్‌బర్గర్ are source names or eponyms. omega, Q, ZFC, c.e., Gödel-code notation and formula metavariables remain protected formal notation; no unexplained English technical headword remains in reader-facing prose
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P025 [checked_context_only], PDF page 87; printed page 80; Indirect-proof heading and worked derivation; Direct indirect-proof and formal-proof register; no direct tableau or assumption-discharge label. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P028 [checked_context_only], PDF page 92; printed page 85; Unary predicates, binary relations and quantifier classification; Direct quantifier taxonomy and predicate/relation context. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C005:TE-P033 [checked_context_only], PDF page 40; printed page 33; Inference section heading and definition; Direct inference and explanatory register; derivation headword is separately witnessed at TE-P024. | TE-C004:TE-P034 [checked_context_only], PDF page 308; printed page 301; Main point 5, Cartesian product definition; Direct ordered-pair and Cartesian-product terminology; singular క్రమయుగ్మం is a transparent inflection.
+
+- Alternatives: leave the specialized computability and incompleteness headwords in untranslated English reader prose [rejected: rejected] | collapse consistency, omega-consistency, completeness, decidability and axiomatizability into one property [rejected: rejected because the chapter distinguishes them] | claim direct native attestation for c.e.-complete theories, computable inseparability or proof-theoretic interpretation [rejected: rejected because the frozen reductions and theorems control those senses]
+
+- Review question: Please double-check whether “సిద్ధాంతాలు మరియు గణనీయత / నిగమన పరంగా సంవృతమైన సిద్ధాంతం / గ.లె.-సంపూర్ణ సిద్ధాంతం / omega-అవైరుధ్యం / సార్వత్రిక గణనీయ సంబంధం / అవైరుధ్య విస్తరణ / స్వీకృతీకరించదగిన సిద్ధాంతం / సంపూర్ణ సిద్ధాంతం / గణనీయంగా వేరుపరచలేనితనం / నిరూపించదగిన, ఖండించదగిన వాక్యాలు / ఒక సిద్ధాంతాన్ని అర్థనిర్దేశం చేయడం / అవైరుధ్యమైన నిర్ణయించదగిన విస్తరణ” is idiomatic and technically standard for “theories and computability / deductively closed theory / c.e.-complete theory / omega-consistency / universal computable relation / consistent extension / computably axiomatizable theory / complete theory / computable inseparability / provable and refutable sentences / interpretation of a theory / consistent decidable extension” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T073-OCC-001; OLP-0301; OLP-0301-B005; source upstream/content/incompleteness/theories-computability/theories-computability.tex:15 bytes 413-462 SHA-256 7ad40d40de21a99732a88044dbcad5e27bc167251fec630bd668d70b02562e7d; target translation/content/incompleteness/theories-computability/theories-computability.tex:14 bytes 790-881 SHA-256 6f7259a6c417a80370230b0662d87584e3f28c65316b86b7399a325fcdf33e30; reader page pending.
+  - te-Telu-IN-TE-T073-OCC-002; OLP-0303; OLP-0303-B005; source upstream/content/incompleteness/theories-computability/q-is-ce.tex:11 bytes 184-238 SHA-256 26919c5d76e83e2084a4b157b7991d7a4f798c61973106e903f93812432122a4; target translation/content/incompleteness/theories-computability/q-is-ce.tex:11 bytes 184-251 SHA-256 77b476a6f169cb022699f752783353cf286bed52dc811c8521a7b50ff29cc46b; reader page pending.
+  - te-Telu-IN-TE-T073-OCC-003; OLP-0304; OLP-0304-B005; source upstream/content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex:11 bytes 199-270 SHA-256 141abd39d6939f679a6ee519dd4d9782a870650b8d94fdceff9f5b0e29cd8265; target translation/content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex:11 bytes 199-338 SHA-256 428c89f2ea293d5626dfdf35d5d8f7ce89ae95d6d2ee17c27e7e867082607f94; reader page pending.
+  - te-Telu-IN-TE-T073-OCC-004; OLP-0305; OLP-0305-B007; source upstream/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex:24-29 bytes 821-1116 SHA-256 d81d5befab583c377a6a51acfffda6e2c4db3ba39aef1852fda6a88443c8547b; target translation/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex:23-27 bytes 1636-2132 SHA-256 d224842bac54d9d4d294337746d0ac345680f608580856979d0eefc6ea58e3bb; reader page pending.
+  - te-Telu-IN-TE-T073-OCC-005; OLP-0306; OLP-0306-B006; source upstream/content/incompleteness/theories-computability/computably-axiomatizable.tex:13-18 bytes 253-599 SHA-256 cefc4b7c268be41dd32831fc2258102ef090194ef6bb7df234ad618b0ddda19d; target translation/content/incompleteness/theories-computability/computably-axiomatizable.tex:13-17 bytes 278-1080 SHA-256 01ae8b68f8085e3b95e6b5b957aaa67dccbe9c83e0e92ceedc3cc48dd9f41ec0; reader page pending.
+  - te-Telu-IN-TE-T073-OCC-006; OLP-0309; OLP-0309-B005; source upstream/content/incompleteness/theories-computability/inseparability.tex:11-12 bytes 191-277 SHA-256 d9da8fc6073ab195b526966775f35c67384af226328d0e98531a7a8b111c6ff8; target translation/content/incompleteness/theories-computability/inseparability.tex:11-12 bytes 191-379 SHA-256 ef01a33f1d757a94d5fba360036e7feaae1786ffd558977598acfd093258707a; reader page pending.
+  - te-Telu-IN-TE-T073-OCC-007; OLP-0311; OLP-0311-B005; source upstream/content/incompleteness/theories-computability/interpretability.tex:11 bytes 192-264 SHA-256 180003bb40b9c0d66d6e9805dba9989e14b350ad857b45e35479923bb712a966; target translation/content/incompleteness/theories-computability/interpretability.tex:11 bytes 192-346 SHA-256 fdd96d08b7cb93c525f26c655c150d9db44e7901fc4327844a4c5ded86039779; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -8966,3 +8998,82 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEREQ-010-OCC-001; OLP-0300; OLP-0300-B021; source upstream/content/incompleteness/representability-in-q/sigma1-completeness.tex:163-169 bytes 6041-6400 SHA-256 9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d; target translation/content/incompleteness/representability-in-q/sigma1-completeness.tex:153-164 bytes 9961-11356 SHA-256 88db2e18b64d55eefbf53ba9332704a9ba80e6aa0622e47e09bacc3eff59d5cd; reader page pending.
+
+## te-Telu-IN-OLTETCP-001 — OLTETCP-001: confirmed axiomatizability requirement mismatch
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: rendered the intended computable-axiomatizability requirement while retaining the source token identity; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed axiomatizability requirement mismatch at lines 20-23, proof of first incompleteness statement, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETCP-20260920:OLTETCP-001 [checked_supports], content/incompleteness/theories-computability/first-incompleteness.tex; lines 20-23, proof of first incompleteness statement; confirmed_axiomatizability_requirement_mismatch; rendered the intended computable-axiomatizability requirement while retaining the source token identity; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the first-incompleteness proof retains computable axiomatizability rather than weakening the premise to mere axiomatization.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETCP-001-OCC-001; OLP-0308; OLP-0308-B007; source upstream/content/incompleteness/theories-computability/first-incompleteness.tex:20-23 bytes 413-577 SHA-256 6d136f51b1d58f3d8831a237dd21b65a146381874e9549c7e504080264df82bd; target translation/content/incompleteness/theories-computability/first-incompleteness.tex:19-23 bytes 684-1690 SHA-256 f1f7656946a03408602ce24629efe570ec5d19f179cff16c8b67336bdd53196e; reader page pending.
+
+## te-Telu-IN-OLTETCP-002 — OLTETCP-002: confirmed malformed formula code
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: replaced the numeral-substituted hash expression with the Goedel code of the one-variable representing formula; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed malformed formula code at line 45, universal-relation conclusion, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETCP-20260920:OLTETCP-002 [checked_supports], content/incompleteness/theories-computability/inseparability.tex; line 45, universal-relation conclusion; confirmed_malformed_formula_code; replaced the numeral-substituted hash expression with the Goedel code of the one-variable representing formula; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the universal-relation argument uses the Goedel code of the one-variable formula D_S(u).
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETCP-002-OCC-001; OLP-0309; OLP-0309-B009; source upstream/content/incompleteness/theories-computability/inseparability.tex:45 bytes 1364-1417 SHA-256 d9da8fc6073ab195b526966775f35c67384af226328d0e98531a7a8b111c6ff8; target translation/content/incompleteness/theories-computability/inseparability.tex:46 bytes 2225-3001 SHA-256 ef01a33f1d757a94d5fba360036e7feaae1786ffd558977598acfd093258707a; reader page pending.
+
+## te-Telu-IN-OLTETCP-003 — OLTETCP-003: confirmed missing consistency hypothesis
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored the theorem's consistency qualification in the ZFC corollary; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing consistency hypothesis at lines 20-25 and 36-38, interpretability theorem and first ZFC corollary, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTETCP-20260920:OLTETCP-003 [checked_supports], content/incompleteness/theories-computability/interpretability.tex; lines 20-25 and 36-38, interpretability theorem and first ZFC corollary; confirmed_missing_consistency_hypothesis; restored the theorem's consistency qualification in the ZFC corollary; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the first ZFC corollary excludes consistent decidable extensions, since an inconsistent extension is decidable.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTETCP-003-OCC-001; OLP-0311; OLP-0311-B007; source upstream/content/incompleteness/theories-computability/interpretability.tex:20-25 bytes 601-950 SHA-256 180003bb40b9c0d66d6e9805dba9989e14b350ad857b45e35479923bb712a966; target translation/content/incompleteness/theories-computability/interpretability.tex:34-36 bytes 2870-3804 SHA-256 fdd96d08b7cb93c525f26c655c150d9db44e7901fc4327844a4c5ded86039779; reader page pending.
+  - te-Telu-IN-OLTETCP-003-OCC-002; OLP-0311; OLP-0311-B009; source upstream/content/incompleteness/theories-computability/interpretability.tex:36-38 bytes 1424-1493 SHA-256 180003bb40b9c0d66d6e9805dba9989e14b350ad857b45e35479923bb712a966; target translation/content/incompleteness/theories-computability/interpretability.tex:34-36 bytes 2870-3804 SHA-256 fdd96d08b7cb93c525f26c655c150d9db44e7901fc4327844a4c5ded86039779; reader page pending.

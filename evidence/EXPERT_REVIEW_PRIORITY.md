@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 297 of 722 draft units**. This view selects 308 of 334 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 308 of 722 draft units**. This view selects 312 of 338 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -463,6 +463,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0289; incompleteness/representability-in-q/representability-in-q; translation/content/incompleteness/representability-in-q/representability-in-q.tex:8; printed/PDF page pending; OLP-0292; incompleteness/representability-in-q/beta-function; translation/content/incompleteness/representability-in-q/beta-function.tex:9-10; printed/PDF page pending; OLP-0292; incompleteness/representability-in-q/beta-function; translation/content/incompleteness/representability-in-q/beta-function.tex:38-44; printed/PDF page pending; OLP-0296; incompleteness/representability-in-q/minimization-representable; translation/content/incompleteness/representability-in-q/minimization-representable.tex:9-10; printed/PDF page pending; OLP-0298; incompleteness/representability-in-q/representing-relations; translation/content/incompleteness/representability-in-q/representing-relations.tex:11; printed/PDF page pending; OLP-0300; incompleteness/representability-in-q/sigma1-completeness; translation/content/incompleteness/representability-in-q/sigma1-completeness.tex:9-10; printed/PDF page pending
 
 - Please double-check: Please double-check whether “Qలో ప్రాతినిధ్యయోగ్యత / ప్రాతినిధ్య సూత్రం / బీటా ప్రమేయ ఉపపత్తి / పరస్పర ప్రధాన / మాడ్యులో సమానశేష / గరిష్ఠ సామాన్య భాజకం / కనిష్ఠ సామాన్య గుణిజం / సున్‌జి సిద్ధాంతం (చైనీయ శేష సిద్ధాంతం) / ఆదిమ పునరావృత్తి అనుకరణ / సక్రమ కనిష్ఠీకరణ / ప్రాతినిధ్యం చేయదగిన ప్రాథమిక ప్రమేయాలు / సంయుక్తం కింద సంవృతత / సంబంధాల ప్రాతినిధ్యం / Delta_0, Sigma_1, Pi_1 సూత్రాలు / పరిమిత అస్తిత్వ, సార్వత్రిక సూత్రాలు / సంవృత పదం / Sigma_1 సంపూర్ణత” is idiomatic and technically standard for “representability in Q / representing formula / beta function lemma / relatively prime / congruent modulo / greatest common divisor / least common multiple / Sunzi's theorem (Chinese Remainder Theorem) / simulation of primitive recursion / regular minimization / basic representable functions / closure under composition / representation of relations / Delta_0, Sigma_1 and Pi_1 formulas / bounded existential and universal formulas / closed term / Sigma_1 completeness” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T073 — theories and computability / deductively closed theory / c.e.-complete theory / omega-consistency / universal computable relation / consistent extension / computably axiomatizable theory / complete theory / computable inseparability / provable and refutable sentences / interpretation of a theory / consistent decidable extension
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: సిద్ధాంతాలు మరియు గణనీయత / నిగమన పరంగా సంవృతమైన సిద్ధాంతం / గ.లె.-సంపూర్ణ సిద్ధాంతం / omega-అవైరుధ్యం / సార్వత్రిక గణనీయ సంబంధం / అవైరుధ్య విస్తరణ / స్వీకృతీకరించదగిన సిద్ధాంతం / సంపూర్ణ సిద్ధాంతం / గణనీయంగా వేరుపరచలేనితనం / నిరూపించదగిన, ఖండించదగిన వాక్యాలు / ఒక సిద్ధాంతాన్ని అర్థనిర్దేశం చేయడం / అవైరుధ్యమైన నిర్ణయించదగిన విస్తరణ
+
+- Occurrences: OLP-0301; incompleteness/theories-computability/theories-computability; translation/content/incompleteness/theories-computability/theories-computability.tex:14; printed/PDF page pending; OLP-0303; incompleteness/theories-computability/q-is-ce; translation/content/incompleteness/theories-computability/q-is-ce.tex:11; printed/PDF page pending; OLP-0304; incompleteness/theories-computability/oconsis-ext-of-q-undec; translation/content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex:11; printed/PDF page pending; OLP-0305; incompleteness/theories-computability/extensions-of-q-not-decidable; translation/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex:23-27; printed/PDF page pending; OLP-0306; incompleteness/theories-computability/computably-axiomatizable; translation/content/incompleteness/theories-computability/computably-axiomatizable.tex:13-17; printed/PDF page pending; OLP-0309; incompleteness/theories-computability/inseparability; translation/content/incompleteness/theories-computability/inseparability.tex:11-12; printed/PDF page pending; OLP-0311; incompleteness/theories-computability/interpretability; translation/content/incompleteness/theories-computability/interpretability.tex:11; printed/PDF page pending
+
+- Please double-check: Please double-check whether “సిద్ధాంతాలు మరియు గణనీయత / నిగమన పరంగా సంవృతమైన సిద్ధాంతం / గ.లె.-సంపూర్ణ సిద్ధాంతం / omega-అవైరుధ్యం / సార్వత్రిక గణనీయ సంబంధం / అవైరుధ్య విస్తరణ / స్వీకృతీకరించదగిన సిద్ధాంతం / సంపూర్ణ సిద్ధాంతం / గణనీయంగా వేరుపరచలేనితనం / నిరూపించదగిన, ఖండించదగిన వాక్యాలు / ఒక సిద్ధాంతాన్ని అర్థనిర్దేశం చేయడం / అవైరుధ్యమైన నిర్ణయించదగిన విస్తరణ” is idiomatic and technically standard for “theories and computability / deductively closed theory / c.e.-complete theory / omega-consistency / universal computable relation / consistent extension / computably axiomatizable theory / complete theory / computable inseparability / provable and refutable sentences / interpretation of a theory / consistent decidable extension” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -3083,3 +3093,33 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0300; incompleteness/representability-in-q/sigma1-completeness; translation/content/incompleteness/representability-in-q/sigma1-completeness.tex:153-164; printed/PDF page pending
 
 - Please double-check: Please double-check that the zero-member bounded-universal expansion is described as an empty conjunction.
+
+## REV-OLTETCP-001 — OLTETCP-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: rendered the intended computable-axiomatizability requirement while retaining the source token identity; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0308; incompleteness/theories-computability/first-incompleteness; translation/content/incompleteness/theories-computability/first-incompleteness.tex:19-23; printed/PDF page pending
+
+- Please double-check: Please double-check that the first-incompleteness proof retains computable axiomatizability rather than weakening the premise to mere axiomatization.
+
+## REV-OLTETCP-002 — OLTETCP-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: replaced the numeral-substituted hash expression with the Goedel code of the one-variable representing formula; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0309; incompleteness/theories-computability/inseparability; translation/content/incompleteness/theories-computability/inseparability.tex:46; printed/PDF page pending
+
+- Please double-check: Please double-check that the universal-relation argument uses the Goedel code of the one-variable formula D_S(u).
+
+## REV-OLTETCP-003 — OLTETCP-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored the theorem's consistency qualification in the ZFC corollary; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0311; incompleteness/theories-computability/interpretability; translation/content/incompleteness/theories-computability/interpretability.tex:34-36; printed/PDF page pending
+
+- Please double-check: Please double-check that the first ZFC corollary excludes consistent decidable extensions, since an inconsistent extension is decidable.
