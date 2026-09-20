@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **326 of 722 source units drafted**. This readable view contains all 351 decisions and 653 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **332 of 722 source units drafted**. This readable view contains all 356 decisions and 666 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2177,6 +2177,40 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T075-OCC-006; OLP-0327; OLP-0327-B006; source upstream/content/second-order-logic/syntax-and-semantics/semantic-notions.tex:21-24 bytes 659-796 SHA-256 750b84b8cbcff34c3b6ff660e91a77382a26504250d74aa04ee77ce48a0cd066; target translation/content/second-order-logic/syntax-and-semantics/semantic-notions.tex:21-24 bytes 1204-1545 SHA-256 5b495165682321391f0f8d38cac8ed14190a335cb8a4958a1601b52accde8ca2; reader page pending.
   - te-Telu-IN-TE-T075-OCC-007; OLP-0328; OLP-0328-B009; source upstream/content/second-order-logic/syntax-and-semantics/expressive-power.tex:64-81 bytes 2678-3640 SHA-256 5aab9a8bdfe16664fae99111703d09c6d0f6e91ae1be3d9afb19784cd5d53cbf; target translation/content/second-order-logic/syntax-and-semantics/expressive-power.tex:65-82 bytes 6151-7862 SHA-256 82aba36e2cf3926dc21ffc7f46921ddfa068062a5709b7269bf0f2ca13ba7f63; reader page pending.
   - te-Telu-IN-TE-T075-OCC-008; OLP-0329; OLP-0329-B006; source upstream/content/second-order-logic/syntax-and-semantics/inf-count.tex:14-42 bytes 278-1863 SHA-256 26b10cbda98d193ed98437efd26dd2b759a818f49656ff465962fd69452bd4f8; target translation/content/second-order-logic/syntax-and-semantics/inf-count.tex:14-43 bytes 314-3926 SHA-256 0b6f3a4e819e1f321b24255794c8aede6fd096dc463845f5b091abca65763e6c; reader page pending.
+
+## te-Telu-IN-TE-T076 — metatheory of second-order logic / second-order Peano arithmetic / second-order induction axiom / categorical / second-order logic not axiomatizable / finitely satisfiable / failure of compactness / failure of the Downward and Upward Lowenheim--Skolem theorems
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: ద్వితీయ-స్థాయి తర్కపు అధిసిద్ధాంతం / ద్వితీయ-స్థాయి పియానో అంకగణితం / ద్వితీయ-స్థాయి ఆగమన స్వీకృతం / సమరూపత వరకు ఏకైకమైన (కేటగారికల్) / ద్వితీయ-స్థాయి తర్కం స్వీకృతీకరించదగినది కాదు / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ వైఫల్యం / అధోముఖ, ఊర్ధ్వముఖ లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతాల వైఫల్యం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “metatheory of second-order logic / second-order Peano arithmetic / second-order induction axiom / categorical / second-order logic not axiomatizable / finitely satisfiable / failure of compactness / failure of the Downward and Upward Lowenheim--Skolem theorems” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low semantic uncertainty because the specialized claims are fixed by explicit axioms, reductions, countermodels and proofs; medium to high nomenclatural uncertainty for second-order metatheory, categoricity, compactness failure and the upward/downward Lowenheim--Skolem compounds pending independent native specialist review
+
+- Rationale: TE-P005 supplies Andhra Pradesh natural-number and arithmetic exposition. TE-P008, TE-P010--TE-P011 and TE-P034 supply the distinct school-mathematics set, relation and function register. TE-P003 and TE-P032 support induction, theorem and proof prose. TE-P018--TE-P019 and TE-P024--TE-P033 support formal logic, truth, sentences, variables, quantifiers, first-order scope, individual domains, derivation and inference in the pre-bifurcation logic witness retained through its Telangana-hosted copy. These witnesses do not directly attest second-order Peano arithmetic, categoricity, finite satisfiability, non-axiomatizability or failure of compactness and the two Lowenheim--Skolem directions. The induction axiom, categoricity proof, true-arithmetic reduction, finite-subset counterexample and Count/Inf models in OLP-0330--OLP-0335 control those exact senses; TE-T041, TE-T047, TE-T051, TE-T058, TE-T066, TE-T070 and TE-T075 supply the edition's earlier reversible choices. పియానో and లొవెన్‌హైమ్--స్కోలెమ్ are source eponyms; కేటగారికల్ is retained only beside the descriptive Telugu wording already fixed by TE-T051. PA, PA², Q, Inf, Count and formula metavariables remain protected formal notation; no unexplained English technical headword remains in reader-facing prose
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P025 [checked_context_only], PDF page 87; printed page 80; Indirect-proof heading and worked derivation; Direct indirect-proof and formal-proof register; no direct tableau or assumption-discharge label. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P028 [checked_context_only], PDF page 92; printed page 85; Unary predicates, binary relations and quantifier classification; Direct quantifier taxonomy and predicate/relation context. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C005:TE-P033 [checked_context_only], PDF page 40; printed page 33; Inference section heading and definition; Direct inference and explanatory register; derivation headword is separately witnessed at TE-P024. | TE-C004:TE-P034 [checked_context_only], PDF page 308; printed page 301; Main point 5, Cartesian product definition; Direct ordered-pair and Cartesian-product terminology; singular క్రమయుగ్మం is a transparent inflection.
+
+- Alternatives: leave the specialized metatheory and model-size headwords in untranslated English reader prose [rejected: rejected] | collapse undecidability, non-axiomatizability, non-compactness and Lowenheim--Skolem failure into one undifferentiated limitation [rejected: rejected because the proofs distinguish them] | claim direct native attestation for second-order categoricity or the upward and downward Lowenheim--Skolem compounds [rejected: rejected because the frozen axioms and countermodels control those senses]
+
+- Review question: Please double-check whether “ద్వితీయ-స్థాయి తర్కపు అధిసిద్ధాంతం / ద్వితీయ-స్థాయి పియానో అంకగణితం / ద్వితీయ-స్థాయి ఆగమన స్వీకృతం / సమరూపత వరకు ఏకైకమైన (కేటగారికల్) / ద్వితీయ-స్థాయి తర్కం స్వీకృతీకరించదగినది కాదు / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ వైఫల్యం / అధోముఖ, ఊర్ధ్వముఖ లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతాల వైఫల్యం” is idiomatic and technically standard for “metatheory of second-order logic / second-order Peano arithmetic / second-order induction axiom / categorical / second-order logic not axiomatizable / finitely satisfiable / failure of compactness / failure of the Downward and Upward Lowenheim--Skolem theorems” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T076-OCC-001; OLP-0330; OLP-0330-B004; source upstream/content/second-order-logic/metatheory/metatheory.tex:8 bytes 131-186 SHA-256 4da3e8e4537a2a8ebf7870903b03ee5a09945b1fc8d9bded72d3009c60377afe; target translation/content/second-order-logic/metatheory/metatheory.tex:8 bytes 131-250 SHA-256 99c0a2cebf48e7e76b812e2e0fb2177754c8653a13d21c1a109558bf2d175de2; reader page pending.
+  - te-Telu-IN-TE-T076-OCC-002; OLP-0332; OLP-0332-B005; source upstream/content/second-order-logic/metatheory/second-order-arithmetic.tex:11 bytes 192-228 SHA-256 a09f150a63d364e758adf2547e5237108b76d6ea7f08d23fe9373792b71bea0d; target translation/content/second-order-logic/metatheory/second-order-arithmetic.tex:11 bytes 192-270 SHA-256 2b2fc9bbf7fb9628a3b6bd3dc1b09c9015cb08d9b36f8fb522ea7ca1c875dfbf; reader page pending.
+  - te-Telu-IN-TE-T076-OCC-003; OLP-0332; OLP-0332-B006; source upstream/content/second-order-logic/metatheory/second-order-arithmetic.tex:13-42 bytes 229-1688 SHA-256 a09f150a63d364e758adf2547e5237108b76d6ea7f08d23fe9373792b71bea0d; target translation/content/second-order-logic/metatheory/second-order-arithmetic.tex:13-41 bytes 271-2785 SHA-256 2b2fc9bbf7fb9628a3b6bd3dc1b09c9015cb08d9b36f8fb522ea7ca1c875dfbf; reader page pending.
+  - te-Telu-IN-TE-T076-OCC-004; OLP-0332; OLP-0332-B012; source upstream/content/second-order-logic/metatheory/second-order-arithmetic.tex:81-84 bytes 3235-3336 SHA-256 a09f150a63d364e758adf2547e5237108b76d6ea7f08d23fe9373792b71bea0d; target translation/content/second-order-logic/metatheory/second-order-arithmetic.tex:81-84 bytes 5301-5464 SHA-256 2b2fc9bbf7fb9628a3b6bd3dc1b09c9015cb08d9b36f8fb522ea7ca1c875dfbf; reader page pending.
+  - te-Telu-IN-TE-T076-OCC-005; OLP-0333; OLP-0333-B005; source upstream/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:11 bytes 204-256 SHA-256 d145a2ab03186358310a7f917ed7aa9eb49e95efbb80c3a2e8356be818d25108; target translation/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:11 bytes 204-344 SHA-256 77159aaf8ac3423ac123a8aa54448b5fc7ef1e263492723c2dbd1eb3d09869ce; reader page pending.
+  - te-Telu-IN-TE-T076-OCC-006; OLP-0334; OLP-0334-B006; source upstream/content/second-order-logic/metatheory/compactness.tex:13-24 bytes 227-908 SHA-256 6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267; target translation/content/second-order-logic/metatheory/compactness.tex:13-24 bytes 291-1824 SHA-256 6abcbda3b3259657dad0d99019023604abc8ecc7b2ba77150d41671ba2c5b215; reader page pending.
+  - te-Telu-IN-TE-T076-OCC-007; OLP-0334; OLP-0334-B008; source upstream/content/second-order-logic/metatheory/compactness.tex:33-36 bytes 1137-1224 SHA-256 6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267; target translation/content/second-order-logic/metatheory/compactness.tex:33-37 bytes 2474-3090 SHA-256 6abcbda3b3259657dad0d99019023604abc8ecc7b2ba77150d41671ba2c5b215; reader page pending.
+  - te-Telu-IN-TE-T076-OCC-008; OLP-0335; OLP-0335-B006; source upstream/content/second-order-logic/metatheory/loewenheim-skolem.tex:13-22 bytes 254-801 SHA-256 997505d0bb8de8bbc170192327c4ea5182773179e818d9ab41381471c30c5cff; target translation/content/second-order-logic/metatheory/loewenheim-skolem.tex:13-24 bytes 387-1897 SHA-256 ea976e59ff2f15d1dd1aa5c446b24f9de687b841601acb5583d42ca41968182a; reader page pending.
+  - te-Telu-IN-TE-T076-OCC-009; OLP-0335; OLP-0335-B006; source upstream/content/second-order-logic/metatheory/loewenheim-skolem.tex:13-22 bytes 254-801 SHA-256 997505d0bb8de8bbc170192327c4ea5182773179e818d9ab41381471c30c5cff; target translation/content/second-order-logic/metatheory/loewenheim-skolem.tex:13-24 bytes 387-1897 SHA-256 ea976e59ff2f15d1dd1aa5c446b24f9de687b841601acb5583d42ca41968182a; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -9431,3 +9465,107 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTESOLSYN-006-OCC-001; OLP-0329; OLP-0329-B012; source upstream/content/second-order-logic/syntax-and-semantics/inf-count.tex:104-122 bytes 4340-5180 SHA-256 26b10cbda98d193ed98437efd26dd2b759a818f49656ff465962fd69452bd4f8; target translation/content/second-order-logic/syntax-and-semantics/inf-count.tex:112-133 bytes 9271-11313 SHA-256 0b6f3a4e819e1f321b24255794c8aede6fd096dc463845f5b091abca65763e6c; reader page pending.
+
+## te-Telu-IN-OLTESOLMET-001 — OLTESOLMET-001: confirmed bound variable mismatch in addition definition
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used the universally quantified w in both argument positions of the successor-recursion equation; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed bound variable mismatch in addition definition at lines 116-125, second-order definition of addition, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTESOLMET-20260921:OLTESOLMET-001 [checked_supports], content/second-order-logic/metatheory/second-order-arithmetic.tex; lines 116-125, second-order definition of addition; confirmed_bound_variable_mismatch_in_addition_definition; used the universally quantified w in both argument positions of the successor-recursion equation; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that w, the universally quantified variable, occurs in both argument positions of the addition recursion equation.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTESOLMET-001-OCC-001; OLP-0332; OLP-0332-B017; source upstream/content/second-order-logic/metatheory/second-order-arithmetic.tex:116-125 bytes 4631-5053 SHA-256 a09f150a63d364e758adf2547e5237108b76d6ea7f08d23fe9373792b71bea0d; target translation/content/second-order-logic/metatheory/second-order-arithmetic.tex:116-127 bytes 8041-9385 SHA-256 2b2fc9bbf7fb9628a3b6bd3dc1b09c9015cb08d9b36f8fb522ea7ca1c875dfbf; reader page pending.
+
+## te-Telu-IN-OLTESOLMET-002 — OLTESOLMET-002: confirmed malformed satisfaction formula
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: closed the satisfaction macro's formula argument after the complete conditional; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed malformed satisfaction formula at lines 29-34, reduction from true arithmetic to pure second-order validity, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTESOLMET-20260921:OLTESOLMET-002 [checked_supports], content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex; lines 29-34, reduction from true arithmetic to pure second-order validity; confirmed_malformed_satisfaction_formula; closed the satisfaction macro's formula argument after the complete conditional; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the repaired satisfaction expression closes its formula argument after the complete conditional P implies A.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTESOLMET-002-OCC-001; OLP-0333; OLP-0333-B009; source upstream/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:29-34 bytes 643-1029 SHA-256 d145a2ab03186358310a7f917ed7aa9eb49e95efbb80c3a2e8356be818d25108; target translation/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:30-37 bytes 1235-2324 SHA-256 77159aaf8ac3423ac123a8aa54448b5fc7ef1e263492723c2dbd1eb3d09869ce; reader page pending.
+
+## te-Telu-IN-OLTESOLMET-003 — OLTESOLMET-003: confirmed duplicate theorem label
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: replaced the duplicated undecidability label with the unique descriptive non-compactness label; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed duplicate theorem label at lines 33-36, theorem that second-order logic is not compact, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTESOLMET-20260921:OLTESOLMET-003 [checked_supports], content/second-order-logic/metatheory/compactness.tex; lines 33-36, theorem that second-order logic is not compact; confirmed_duplicate_theorem_label; replaced the duplicated undecidability label with the unique descriptive non-compactness label; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the non-compactness theorem has the unique label thm:sol-not-compact rather than the preceding undecidability label.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTESOLMET-003-OCC-001; OLP-0334; OLP-0334-B008; source upstream/content/second-order-logic/metatheory/compactness.tex:33-36 bytes 1137-1224 SHA-256 6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267; target translation/content/second-order-logic/metatheory/compactness.tex:33-37 bytes 2474-3090 SHA-256 6abcbda3b3259657dad0d99019023604abc8ecc7b2ba77150d41671ba2c5b215; reader page pending.
+
+## te-Telu-IN-OLTESOLMET-004 — OLTESOLMET-004: confirmed finite subset membership error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: bounded the cardinality indices occurring in the finite subset Gamma_0 rather than making the false claim that the full Gamma omits all larger indices; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed finite subset membership error at lines 55-59, finite-satisfiability argument, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTESOLMET-20260921:OLTESOLMET-004 [checked_supports], content/second-order-logic/metatheory/compactness.tex; lines 55-59, finite-satisfiability argument; confirmed_finite_subset_membership_error; bounded the cardinality indices occurring in the finite subset Gamma_0 rather than making the false claim that the full Gamma omits all larger indices; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the finite-satisfiability proof bounds the indices occurring in Gamma_0 rather than claiming the full Gamma omits larger bounds.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTESOLMET-004-OCC-001; OLP-0334; OLP-0334-B009; source upstream/content/second-order-logic/metatheory/compactness.tex:55-59 bytes 1807-2079 SHA-256 6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267; target translation/content/second-order-logic/metatheory/compactness.tex:55-64 bytes 4137-5640 SHA-256 6abcbda3b3259657dad0d99019023604abc8ecc7b2ba77150d41671ba2c5b215; reader page pending.

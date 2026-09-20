@@ -1,0 +1,73 @@
+% Part: second-order-logic
+% Chapter: metatheory
+% Section: compactness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{met}{com}
+
+\olsection{ద్వితీయ-స్థాయి తర్కం సంహతమైనది కాదు}
+
+\begin{explain}
+ఒక వాక్యాల సమితి~$\Gamma$లోని ప్రతి పరిమిత ఉపసమితి
+సంతృప్తిపరచదగినదైతే, దాన్ని \emph{పరిమితంగా సంతృప్తిపరచదగినది}
+అందాం. ఒక \tetoken{వాక్యాల}{!!{sentence}s} సమితి~$\Gamma$ పరిమితంగా
+సంతృప్తిపరచదగినదైతే, అది సంతృప్తిపరచదగినదే అనే ధర్మం మొదటిస్థాయి
+తర్కానికి ఉంది. ఈ ధర్మాన్ని \emph{సంహతత్వం} అంటారు. అనుగమనంతో కూడిన
+దీనికి సమానార్థక రూపం ఒకటి ఉంది: $\Gamma \Entails !A$ అయితే,
+ఏదో పరిమిత ఉపసమితి~$\Gamma_0 \subseteq \Gamma$కు ఇప్పటికే
+$\Gamma_0 \Entails !A$. ఈ రూపంలో ఇది సంపూర్ణతా సిద్ధాంతపు తక్షణ
+ఉపసిద్ధాంతం: $\Gamma \Entails !A$ అయితే, సంపూర్ణత వల్ల $\Gamma
+\Proves !A$. కానీ ఒక \tetoken{వ్యుత్పత్తి}{!!{derivation}}~$\Gamma$లోని పరిమిత
+సంఖ్యలో \tetoken{వాక్యాలను}{!!{sentence}s} మాత్రమే ఉపయోగించగలదు.
+
+ద్వితీయ-స్థాయి తర్కానికి సంహతత్వం నిజం కాదు. పరిమితంగా
+సంతృప్తిపరచదగినవే కాని సంతృప్తిపరచదగినవి కాని ద్వితీయ-స్థాయి
+\tetoken{వాక్యాల}{!!{sentence}s} సమితులు ఉన్నాయి; అలాగే ఏ పరిమిత ఉపసమితీ
+$!A$ను అనుగమింపజేయకపోయినా, $!A$ను అనుగమింపజేసే సమితులు ఉన్నాయి.
+\end{explain}
+
+
+\begin{thm}
+\ollabel{thm:sol-not-compact}
+ద్వితీయ-స్థాయి తర్కం సంహతమైనది కాదు.
+\sourcecorrection{OLTESOLMET-003}{ఆంగ్ల మూలం ఈ సంహతత్వ సిద్ధాంతానికి ముందటి అనిర్ణయనీయతా సిద్ధాంతపు \texttt{thm:sol-undecidable} లేబుల్‌నే మళ్లీ వాడింది. ప్రత్యేకమైన, విషయానుగుణమైన \texttt{thm:sol-not-compact} లేబుల్‌ను ఇచ్చాం.}
+\end{thm}
+
+\begin{proof}
+ఈ సూత్రాన్ని గుర్తుచేసుకోండి:
+\[
+\fn{Inf} \ident \lexists[u][(\lforall[x][\lforall[y][(\eq[u(x)][u(y)]
+      \lif \eq[x][y])]] \land \lexists[y][\lforall[x][\eq/[y][u(x)]]])]
+\]
+ఇది \tetoken{ఒక నిర్మాణంలో}{!!a{structure}} సంతృప్తిపరచబడితేనే దాని వ్యక్తి క్షేత్రం
+అనంతమైనది. వ్యక్తి క్షేత్రంలో కనీసం $n$ \tetoken{మూలకాలు}{!!{element}s} ఉన్నాయని
+ప్రకటించే వాక్యం $!A^{\ge n}$ అనుకుందాం; ఉదాహరణకు,
+\[
+!A^{\ge n} \ident \lexists[x_1][\dots\lexists[x_n][(\eq/[x_1][x_2]
+    \land \eq/[x_1][x_3] \land \dots \land \eq/[x_{n-1}][x_n])]].
+\]
+ఈ \tetoken{వాక్యాల}{!!{sentence}s} సమితిని పరిశీలించండి:
+\[
+\Gamma = \{\lnot \fn{Inf}, !A^{\ge 1}, !A^{\ge 2}, !A^{\ge 3}, \dots\}.
+\]
+ఇది పరిమితంగా సంతృప్తిపరచదగినది. ఎందుకంటే ఏ పరిమిత ఉపసమితి~$\Gamma_0
+\subseteq \Gamma$కు అయినా, $n>k$ అయితే $!A^{\ge n} \in \Gamma_0$
+కాని విధంగా ఏదో ధన పూర్ణసంఖ్య~$k$ ఉంటుంది. $\Domain{M}$లో $k$
+\tetoken{మూలకాలు}{!!{element}s} ఉంటే, $\Sat{M}{\Gamma_0}$. కానీ $\Gamma$
+సంతృప్తిపరచదగినది కాదు: $\Sat{M}{\lnot \fn{Inf}}$ అయితే
+$\Domain{M}$ పరిమితంగా, దాని పరిమాణం ఏదో~$k$గా ఉండాలి. అప్పుడు
+$\Sat/{M}{!A^{\ge k+1}}$.
+\sourcecorrection{OLTESOLMET-004}{పరిమిత ఉపసమితి $\Gamma_0$ గురించి నిరూపిస్తున్నప్పుడు, ఆంగ్ల మూలం $!A^{\ge k}$, $!A^{\ge n}$ల సభ్యత్వాన్ని పొరపాటుగా మొత్తం $\Gamma$లో పరీక్షించింది; కానీ $\Gamma$లో ప్రతి $!A^{\ge n}$ ఉంటుంది. పరిమితమైన $\Gamma_0$లో కనిపించే దిగువ-పరిమాణ వాక్యాల సూచికలకు ఒక ఎగువ హద్దు $k$ను ఎంచుకునే సరైన వాదనను ఇచ్చాం.}
+\end{proof}
+
+\begin{prob}
+$\Gamma \Entails !A$ అయ్యే, కానీ ప్రతి పరిమిత ఉపసమితి~$\Gamma_0
+\subseteq \Gamma$కు $\Gamma_0 \Entails/ !A$ అయ్యే సమితి~$\Gamma$,
+\tetoken{వాక్యం}{!!a{sentence}}~$!A$లకు ఒక ఉదాహరణ ఇవ్వండి.
+\end{prob}
+
+
+\end{document}

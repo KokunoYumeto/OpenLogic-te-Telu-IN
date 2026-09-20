@@ -266,6 +266,17 @@ locations['TE-T075']=[
  L('content/second-order-logic/syntax-and-semantics/expressive-power.tex',68,74,69,75,'transitive closure','సంక్రమణ సంవృతి'),
  L('content/second-order-logic/syntax-and-semantics/inf-count.tex',14,19,14,19,'(Dedekind) infinite','(డెడెకిండ్) అనంతం')
 ];
+locations['TE-T076']=[
+ L('content/second-order-logic/metatheory/metatheory.tex',8,8,8,8,'Metatheory of Second-order Logic','ద్వితీయ-స్థాయి తర్కపు అధిసిద్ధాంతం'),
+ L('content/second-order-logic/metatheory/second-order-arithmetic.tex',11,11,11,11,'Second-order Arithmetic','ద్వితీయ-స్థాయి అంకగణితం'),
+ L('content/second-order-logic/metatheory/second-order-arithmetic.tex',31,34,31,33,'induction axiom','ఆగమన స్వీకృతం'),
+ L('content/second-order-logic/metatheory/second-order-arithmetic.tex',81,84,81,84,'isomorphic','సమరూపమైనవి'),
+ L('content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex',11,11,11,11,'not Axiomatizable','స్వీకృతీకరించదగినది కాదు'),
+ L('content/second-order-logic/metatheory/compactness.tex',13,18,13,18,'finitely satisfiable','పరిమితంగా సంతృప్తిపరచదగినది'),
+ L('content/second-order-logic/metatheory/compactness.tex',33,36,33,37,'not compact','సంహతమైనది కాదు'),
+ L('content/second-order-logic/metatheory/loewenheim-skolem.tex',13,18,13,19,'Downward','అధోముఖ'),
+ L('content/second-order-logic/metatheory/loewenheim-skolem.tex',19,21,19,23,'Upward','ఊర్ధ్వముఖ')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -326,6 +337,7 @@ alternatives['TE-T072']=['reuse the established number, function, relation, form
 alternatives['TE-T073']=['reuse the established theory, consistency, completeness, computability, separation and formal-logic register while fixing c.e.-completeness, omega-consistency, inseparability and interpretation from the adjacent definitions (chosen)','leave the specialized computability and incompleteness headwords in untranslated English reader prose (rejected)','collapse consistency, omega-consistency, completeness, decidability and axiomatizability into one property (rejected because the chapter distinguishes them)','claim direct native attestation for c.e.-complete theories, computable inseparability or proof-theoretic interpretation (rejected because the frozen reductions and theorems control those senses)'];
 alternatives['TE-T074']=['reuse the established truth, formula, sentence, derivation and consistency register, with fixed-point, arithmetized provability, reflection and undefinability senses fixed by the adjacent constructions (chosen)','leave the specialized incompleteness and provability headwords in untranslated English reader prose (rejected)','collapse truth, provability and derivability into one undifferentiated notion (rejected because the chapter distinguishes them)','claim direct canon attestation for the fixed-point lemma or the Rosser, L\u00f6b and Tarski theorems (rejected because the frozen definitions and proofs control those senses)'];
 alternatives['TE-T075']=['reuse the established set, relation, function, formula, sentence and semantic-consequence register while fixing the second-order extensions from the adjacent formation and satisfaction clauses (chosen)','leave the specialized second-order semantics and expressive-power headwords in untranslated English reader prose (rejected)','collapse relations, functions, relation variables and function variables into one undifferentiated category (rejected because the typing clauses distinguish them)','claim direct native attestation for standard second-order semantics, transitive closure or Dedekind infinitude (rejected because the frozen definitions, examples and proofs control those senses)'];
+alternatives['TE-T076']=['reuse the established arithmetic, induction, axiomatizability, compactness and Lowenheim--Skolem register while fixing the second-order failures from the adjacent axioms, reductions and countermodels (chosen)','leave the specialized metatheory and model-size headwords in untranslated English reader prose (rejected)','collapse undecidability, non-axiomatizability, non-compactness and Lowenheim--Skolem failure into one undifferentiated limitation (rejected because the proofs distinguish them)','claim direct native attestation for second-order categoricity or the upward and downward Lowenheim--Skolem compounds (rejected because the frozen axioms and countermodels control those senses)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -342,7 +354,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-21 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T075 record the Batch 025--Batch 036 consultations performed during reconciliation.';
+const phase='Evidence reconstruction through 2026-09-21 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T076 record the Batch 025--Batch 037 consultations performed during reconciliation.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -563,6 +575,10 @@ const correctionQuestions={
   ,'OLTESOLSYN-004':'Please double-check that N, already used for the example subset, consistently replaces the source collision with the structure symbol M.'
   ,'OLTESOLSYN-005':'Please double-check that S denotes the arbitrary subset throughout the forward Count proof while M remains the structure.'
   ,'OLTESOLSYN-006':'Please double-check that S denotes the orbit subset throughout the reverse Count proof while M remains the structure.'
+  ,'OLTESOLMET-001':'Please double-check that w, the universally quantified variable, occurs in both argument positions of the addition recursion equation.'
+  ,'OLTESOLMET-002':'Please double-check that the repaired satisfaction expression closes its formula argument after the complete conditional P implies A.'
+  ,'OLTESOLMET-003':'Please double-check that the non-compactness theorem has the unique label thm:sol-not-compact rather than the preceding undecidability label.'
+  ,'OLTESOLMET-004':'Please double-check that the finite-satisfiability proof bounds the indices occurring in Gamma_0 rather than claiming the full Gamma omits larger bounds.'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 326 of 722 draft units**. This log contains 75 terminology/sense decisions and 276 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 332 of 722 draft units**. This log contains 76 terminology/sense decisions and 280 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1807,6 +1807,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low semantic uncertainty because the specialized notions are fixed by explicit formation, assignment, satisfaction and definability clauses and by proved characterizations; medium to high nomenclatural uncertainty for standard second-order semantics, x-variant, expressive-power and transitive-closure compounds pending independent native specialist review
 
 - Please double-check: Please double-check whether “ద్వితీయ-స్థాయి తర్కం / సంబంధ చరం మరియు ప్రమేయ చరం / ప్రామాణిక అర్థవిచారం / చర నిర్దేశం / x-భేదరూపం / ద్వితీయ-స్థాయి పదం మరియు సూత్రం / చెల్లుబాటుతనం / అర్థపర అనుగమనం / సంతృప్తిపరచదగినతనం / వ్యక్తీకరణశక్తి / నిర్వచించదగిన సంబంధం / సంక్రమణ సంవృతి / డెడెకిండ్ అనంతం / లెక్కించదగిన మరియు అనంతంగా లెక్కించదగిన వ్యక్తి క్షేత్రం” is idiomatic and technically standard for “second-order logic / relation and function variable / standard semantics / variable assignment / x-variant / second-order term and formula / validity / semantic entailment / satisfiability / expressive power / definable relation / transitive closure / Dedekind infinite / enumerable and denumerable domain” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T076 — metatheory of second-order logic / second-order Peano arithmetic / second-order induction axiom / categorical / second-order logic not axiomatizable / finitely satisfiable / failure of compactness / failure of the Downward and Upward Lowenheim--Skolem theorems
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: ద్వితీయ-స్థాయి తర్కపు అధిసిద్ధాంతం / ద్వితీయ-స్థాయి పియానో అంకగణితం / ద్వితీయ-స్థాయి ఆగమన స్వీకృతం / సమరూపత వరకు ఏకైకమైన (కేటగారికల్) / ద్వితీయ-స్థాయి తర్కం స్వీకృతీకరించదగినది కాదు / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ వైఫల్యం / అధోముఖ, ఊర్ధ్వముఖ లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతాల వైఫల్యం
+
+- Exact implementation: OLP-0330; second-order-logic/metatheory/metatheory; content/second-order-logic/metatheory/metatheory.tex:8 ↔ translation/content/second-order-logic/metatheory/metatheory.tex:8 (OLP-0330-B004); printed/PDF page pending; OLP-0332; second-order-logic/metatheory/second-order-arithmetic; content/second-order-logic/metatheory/second-order-arithmetic.tex:11 ↔ translation/content/second-order-logic/metatheory/second-order-arithmetic.tex:11 (OLP-0332-B005); printed/PDF page pending; OLP-0332; second-order-logic/metatheory/second-order-arithmetic; content/second-order-logic/metatheory/second-order-arithmetic.tex:13-42 ↔ translation/content/second-order-logic/metatheory/second-order-arithmetic.tex:13-41 (OLP-0332-B006); printed/PDF page pending; OLP-0332; second-order-logic/metatheory/second-order-arithmetic; content/second-order-logic/metatheory/second-order-arithmetic.tex:81-84 ↔ translation/content/second-order-logic/metatheory/second-order-arithmetic.tex:81-84 (OLP-0332-B012); printed/PDF page pending; OLP-0333; second-order-logic/metatheory/undecidability-and-axiomatizability; content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:11 ↔ translation/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:11 (OLP-0333-B005); printed/PDF page pending; OLP-0334; second-order-logic/metatheory/compactness; content/second-order-logic/metatheory/compactness.tex:13-24 ↔ translation/content/second-order-logic/metatheory/compactness.tex:13-24 (OLP-0334-B006); printed/PDF page pending; OLP-0334; second-order-logic/metatheory/compactness; content/second-order-logic/metatheory/compactness.tex:33-36 ↔ translation/content/second-order-logic/metatheory/compactness.tex:33-37 (OLP-0334-B008); printed/PDF page pending; OLP-0335; second-order-logic/metatheory/loewenheim-skolem; content/second-order-logic/metatheory/loewenheim-skolem.tex:13-22 ↔ translation/content/second-order-logic/metatheory/loewenheim-skolem.tex:13-24 (OLP-0335-B006); printed/PDF page pending; OLP-0335; second-order-logic/metatheory/loewenheim-skolem; content/second-order-logic/metatheory/loewenheim-skolem.tex:13-22 ↔ translation/content/second-order-logic/metatheory/loewenheim-skolem.tex:13-24 (OLP-0335-B006); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P025, PDF 87, printed 80, Indirect-proof heading and worked derivation; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P028, PDF 92, printed 85, Unary predicates, binary relations and quantifier classification; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P033, PDF 40, printed 33, Inference section heading and definition; TE-P034, PDF 308, printed 301, Main point 5, Cartesian product definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P005 supplies Andhra Pradesh natural-number and arithmetic exposition. TE-P008, TE-P010--TE-P011 and TE-P034 supply the distinct school-mathematics set, relation and function register. TE-P003 and TE-P032 support induction, theorem and proof prose. TE-P018--TE-P019 and TE-P024--TE-P033 support formal logic, truth, sentences, variables, quantifiers, first-order scope, individual domains, derivation and inference in the pre-bifurcation logic witness retained through its Telangana-hosted copy. These witnesses do not directly attest second-order Peano arithmetic, categoricity, finite satisfiability, non-axiomatizability or failure of compactness and the two Lowenheim--Skolem directions. The induction axiom, categoricity proof, true-arithmetic reduction, finite-subset counterexample and Count/Inf models in OLP-0330--OLP-0335 control those exact senses; TE-T041, TE-T047, TE-T051, TE-T058, TE-T066, TE-T070 and TE-T075 supply the edition's earlier reversible choices. పియానో and లొవెన్‌హైమ్--స్కోలెమ్ are source eponyms; కేటగారికల్ is retained only beside the descriptive Telugu wording already fixed by TE-T051. PA, PA², Q, Inf, Count and formula metavariables remain protected formal notation; no unexplained English technical headword remains in reader-facing prose
+
+- Alternatives: reuse the established arithmetic, induction, axiomatizability, compactness and Lowenheim--Skolem register while fixing the second-order failures from the adjacent axioms, reductions and countermodels (chosen); leave the specialized metatheory and model-size headwords in untranslated English reader prose (rejected); collapse undecidability, non-axiomatizability, non-compactness and Lowenheim--Skolem failure into one undifferentiated limitation (rejected because the proofs distinguish them); claim direct native attestation for second-order categoricity or the upward and downward Lowenheim--Skolem compounds (rejected because the frozen axioms and countermodels control those senses)
+
+- Uncertainty: Low semantic uncertainty because the specialized claims are fixed by explicit axioms, reductions, countermodels and proofs; medium to high nomenclatural uncertainty for second-order metatheory, categoricity, compactness failure and the upward/downward Lowenheim--Skolem compounds pending independent native specialist review
+
+- Please double-check: Please double-check whether “ద్వితీయ-స్థాయి తర్కపు అధిసిద్ధాంతం / ద్వితీయ-స్థాయి పియానో అంకగణితం / ద్వితీయ-స్థాయి ఆగమన స్వీకృతం / సమరూపత వరకు ఏకైకమైన (కేటగారికల్) / ద్వితీయ-స్థాయి తర్కం స్వీకృతీకరించదగినది కాదు / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ వైఫల్యం / అధోముఖ, ఊర్ధ్వముఖ లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతాల వైఫల్యం” is idiomatic and technically standard for “metatheory of second-order logic / second-order Peano arithmetic / second-order induction axiom / categorical / second-order logic not axiomatizable / finitely satisfiable / failure of compactness / failure of the Downward and Upward Lowenheim--Skolem theorems” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -8431,3 +8455,99 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check that S denotes the orbit subset throughout the reverse Count proof while M remains the structure.
+
+## REV-OLTESOLMET-001 — OLTESOLMET-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used the universally quantified w in both argument positions of the successor-recursion equation; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0332; second-order-logic/metatheory/second-order-arithmetic; lines 116-125, second-order definition of addition ↔ translation/content/second-order-logic/metatheory/second-order-arithmetic.tex:116-127 (OLP-0332-B017); printed/PDF page pending
+
+- Authorities actually checked: OLTESOLMET-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used the universally quantified w in both argument positions of the successor-recursion equation; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that w, the universally quantified variable, occurs in both argument positions of the addition recursion equation.
+
+## REV-OLTESOLMET-002 — OLTESOLMET-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: closed the satisfaction macro's formula argument after the complete conditional; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0333; second-order-logic/metatheory/undecidability-and-axiomatizability; lines 29-34, reduction from true arithmetic to pure second-order validity ↔ translation/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:30-37 (OLP-0333-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTESOLMET-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: closed the satisfaction macro's formula argument after the complete conditional; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the repaired satisfaction expression closes its formula argument after the complete conditional P implies A.
+
+## REV-OLTESOLMET-003 — OLTESOLMET-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: replaced the duplicated undecidability label with the unique descriptive non-compactness label; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0334; second-order-logic/metatheory/compactness; lines 33-36, theorem that second-order logic is not compact ↔ translation/content/second-order-logic/metatheory/compactness.tex:33-37 (OLP-0334-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTESOLMET-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: replaced the duplicated undecidability label with the unique descriptive non-compactness label; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the non-compactness theorem has the unique label thm:sol-not-compact rather than the preceding undecidability label.
+
+## REV-OLTESOLMET-004 — OLTESOLMET-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: bounded the cardinality indices occurring in the finite subset Gamma_0 rather than making the false claim that the full Gamma omits all larger indices; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0334; second-order-logic/metatheory/compactness; lines 55-59, finite-satisfiability argument ↔ translation/content/second-order-logic/metatheory/compactness.tex:55-64 (OLP-0334-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTESOLMET-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: bounded the cardinality indices occurring in the finite subset Gamma_0 rather than making the false claim that the full Gamma omits all larger indices; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the finite-satisfiability proof bounds the indices occurring in Gamma_0 rather than claiming the full Gamma omits larger bounds.

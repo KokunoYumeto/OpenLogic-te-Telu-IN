@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 326 of 722 draft units**. This view selects 325 of 351 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 332 of 722 draft units**. This view selects 330 of 356 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -493,6 +493,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0322; second-order-logic/second-order-logic; translation/content/second-order-logic/second-order-logic.tex:7; printed/PDF page pending; OLP-0323; second-order-logic/syntax-and-semantics/syntax-and-semantics; translation/content/second-order-logic/syntax-and-semantics/syntax-and-semantics.tex:8; printed/PDF page pending; OLP-0324; second-order-logic/syntax-and-semantics/introduction; translation/content/second-order-logic/syntax-and-semantics/introduction.tex:30-58; printed/PDF page pending; OLP-0325; second-order-logic/syntax-and-semantics/terms-formulas; translation/content/second-order-logic/syntax-and-semantics/terms-formulas.tex:50-57; printed/PDF page pending; OLP-0326; second-order-logic/syntax-and-semantics/satisfaction; translation/content/second-order-logic/syntax-and-semantics/satisfaction.tex:96-107; printed/PDF page pending; OLP-0327; second-order-logic/syntax-and-semantics/semantic-notions; translation/content/second-order-logic/syntax-and-semantics/semantic-notions.tex:21-24; printed/PDF page pending; OLP-0328; second-order-logic/syntax-and-semantics/expressive-power; translation/content/second-order-logic/syntax-and-semantics/expressive-power.tex:65-82; printed/PDF page pending; OLP-0329; second-order-logic/syntax-and-semantics/inf-count; translation/content/second-order-logic/syntax-and-semantics/inf-count.tex:14-43; printed/PDF page pending
 
 - Please double-check: Please double-check whether “ద్వితీయ-స్థాయి తర్కం / సంబంధ చరం మరియు ప్రమేయ చరం / ప్రామాణిక అర్థవిచారం / చర నిర్దేశం / x-భేదరూపం / ద్వితీయ-స్థాయి పదం మరియు సూత్రం / చెల్లుబాటుతనం / అర్థపర అనుగమనం / సంతృప్తిపరచదగినతనం / వ్యక్తీకరణశక్తి / నిర్వచించదగిన సంబంధం / సంక్రమణ సంవృతి / డెడెకిండ్ అనంతం / లెక్కించదగిన మరియు అనంతంగా లెక్కించదగిన వ్యక్తి క్షేత్రం” is idiomatic and technically standard for “second-order logic / relation and function variable / standard semantics / variable assignment / x-variant / second-order term and formula / validity / semantic entailment / satisfiability / expressive power / definable relation / transitive closure / Dedekind infinite / enumerable and denumerable domain” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T076 — metatheory of second-order logic / second-order Peano arithmetic / second-order induction axiom / categorical / second-order logic not axiomatizable / finitely satisfiable / failure of compactness / failure of the Downward and Upward Lowenheim--Skolem theorems
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: ద్వితీయ-స్థాయి తర్కపు అధిసిద్ధాంతం / ద్వితీయ-స్థాయి పియానో అంకగణితం / ద్వితీయ-స్థాయి ఆగమన స్వీకృతం / సమరూపత వరకు ఏకైకమైన (కేటగారికల్) / ద్వితీయ-స్థాయి తర్కం స్వీకృతీకరించదగినది కాదు / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ వైఫల్యం / అధోముఖ, ఊర్ధ్వముఖ లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతాల వైఫల్యం
+
+- Occurrences: OLP-0330; second-order-logic/metatheory/metatheory; translation/content/second-order-logic/metatheory/metatheory.tex:8; printed/PDF page pending; OLP-0332; second-order-logic/metatheory/second-order-arithmetic; translation/content/second-order-logic/metatheory/second-order-arithmetic.tex:11; printed/PDF page pending; OLP-0332; second-order-logic/metatheory/second-order-arithmetic; translation/content/second-order-logic/metatheory/second-order-arithmetic.tex:13-41; printed/PDF page pending; OLP-0332; second-order-logic/metatheory/second-order-arithmetic; translation/content/second-order-logic/metatheory/second-order-arithmetic.tex:81-84; printed/PDF page pending; OLP-0333; second-order-logic/metatheory/undecidability-and-axiomatizability; translation/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:11; printed/PDF page pending; OLP-0334; second-order-logic/metatheory/compactness; translation/content/second-order-logic/metatheory/compactness.tex:13-24; printed/PDF page pending; OLP-0334; second-order-logic/metatheory/compactness; translation/content/second-order-logic/metatheory/compactness.tex:33-37; printed/PDF page pending; OLP-0335; second-order-logic/metatheory/loewenheim-skolem; translation/content/second-order-logic/metatheory/loewenheim-skolem.tex:13-24; printed/PDF page pending; OLP-0335; second-order-logic/metatheory/loewenheim-skolem; translation/content/second-order-logic/metatheory/loewenheim-skolem.tex:13-24; printed/PDF page pending
+
+- Please double-check: Please double-check whether “ద్వితీయ-స్థాయి తర్కపు అధిసిద్ధాంతం / ద్వితీయ-స్థాయి పియానో అంకగణితం / ద్వితీయ-స్థాయి ఆగమన స్వీకృతం / సమరూపత వరకు ఏకైకమైన (కేటగారికల్) / ద్వితీయ-స్థాయి తర్కం స్వీకృతీకరించదగినది కాదు / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ వైఫల్యం / అధోముఖ, ఊర్ధ్వముఖ లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతాల వైఫల్యం” is idiomatic and technically standard for “metatheory of second-order logic / second-order Peano arithmetic / second-order induction axiom / categorical / second-order logic not axiomatizable / finitely satisfiable / failure of compactness / failure of the Downward and Upward Lowenheim--Skolem theorems” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -3253,3 +3263,43 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0329; second-order-logic/syntax-and-semantics/inf-count; translation/content/second-order-logic/syntax-and-semantics/inf-count.tex:112-133; printed/PDF page pending
 
 - Please double-check: Please double-check that S denotes the orbit subset throughout the reverse Count proof while M remains the structure.
+
+## REV-OLTESOLMET-001 — OLTESOLMET-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used the universally quantified w in both argument positions of the successor-recursion equation; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0332; second-order-logic/metatheory/second-order-arithmetic; translation/content/second-order-logic/metatheory/second-order-arithmetic.tex:116-127; printed/PDF page pending
+
+- Please double-check: Please double-check that w, the universally quantified variable, occurs in both argument positions of the addition recursion equation.
+
+## REV-OLTESOLMET-002 — OLTESOLMET-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: closed the satisfaction macro's formula argument after the complete conditional; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0333; second-order-logic/metatheory/undecidability-and-axiomatizability; translation/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:30-37; printed/PDF page pending
+
+- Please double-check: Please double-check that the repaired satisfaction expression closes its formula argument after the complete conditional P implies A.
+
+## REV-OLTESOLMET-003 — OLTESOLMET-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: replaced the duplicated undecidability label with the unique descriptive non-compactness label; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0334; second-order-logic/metatheory/compactness; translation/content/second-order-logic/metatheory/compactness.tex:33-37; printed/PDF page pending
+
+- Please double-check: Please double-check that the non-compactness theorem has the unique label thm:sol-not-compact rather than the preceding undecidability label.
+
+## REV-OLTESOLMET-004 — OLTESOLMET-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: bounded the cardinality indices occurring in the finite subset Gamma_0 rather than making the false claim that the full Gamma omits all larger indices; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0334; second-order-logic/metatheory/compactness; translation/content/second-order-logic/metatheory/compactness.tex:55-64; printed/PDF page pending
+
+- Please double-check: Please double-check that the finite-satisfiability proof bounds the indices occurring in Gamma_0 rather than claiming the full Gamma omits larger bounds.

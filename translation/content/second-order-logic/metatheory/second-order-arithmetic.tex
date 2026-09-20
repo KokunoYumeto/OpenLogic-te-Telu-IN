@@ -1,0 +1,134 @@
+% Part: second-order-logic
+% Chapter: metatheory
+% Section: second-order-arithmetic
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{met}{spa}
+
+\olsection{ద్వితీయ-స్థాయి అంకగణితం}
+
+పియానో అంకగణిత సిద్ధాంతం $\Th{PA}$లో~$\Th{Q}$ యొక్క ఎనిమిది
+స్వీకృతాలు,
+\begin{align*}
+& \lforall[x][\eq/[x'][\Obj 0]]\\
+& \lforall[x][\lforall[y][(\eq[x'][y'] \lif \eq[x][y])]]\\
+& \lforall[x][(\eq[x][\Obj 0] \lor \lexists[y][\eq[x][y']])]\\
+& \lforall[x][\eq[(x + \Obj 0)][x]]\\
+& \lforall[x][\lforall[y][\eq[(x + y')][(x + y)']]]\\
+& \lforall[x][\eq[(x \times \Obj 0)][\Obj 0]]\\
+& \lforall[x][\lforall[y][\eq[(x \times y')][((x \times y) + x)]]]\\
+& \lforall[x][\lforall[y][(x < y \liff \lexists[z][\eq[(z' + x)][y]])]]\\
+\intertext{తో పాటు కింది రూపంలోని అన్ని వాక్యాలు ఉంటాయని గుర్తుచేసుకోండి:}
+& (!A(\Obj 0) \land \lforall[x][(!A(x) \lif !A(x'))]) \lif \lforall[x][!A(x)].
+\end{align*}
+చివరిది ఒక “పథకం,” అంటే అంకగణిత భాషలో ప్రతి
+\tetoken{సూత్రం}{!!{formula}}~$!A(x)$కు ఒకటి చొప్పున అనంత సంఖ్యలో
+\tetoken{వాక్యాలను}{!!{sentence}s} ఉత్పత్తి చేసే నమూనా. ఈ పథకాన్ని (మొదటిస్థాయి)
+\emph{ఆగమన స్వీకృత పథకం} అంటాం.
+\emph{ద్వితీయ-స్థాయి} పియానో అంకగణితం~$\Th{PA^2}$లో ఆగమనాన్ని
+ఒకే వాక్యంగా చెప్పవచ్చు. పైనున్న మొదటి ఎనిమిది స్వీకృతాలతో పాటు
+కింది (ద్వితీయ-స్థాయి) \emph{ఆగమన స్వీకృతం} కలిపితే $\Th{PA^2}$:
+\[
+\lforall[X][((X(\Obj 0) \land \lforall[x][(X(x) \lif X(x'))]) \lif \lforall[x][X(x)])].
+\]
+\tetoken{వ్యక్తి క్షేత్రపు}{!!{domain}} ఒక ఉపసమితి~$X$లో
+$\Assign{\Obj{0}}{M}$ ఉండి, ఏ~$x \in \Domain{M}$తో పాటు
+$\Assign{\prime}{M}(x)$ కూడా అందులో ఉంటే (అంటే, అది “ఉత్తరసంఖ్య
+కింద సంవృతమైతే”), \tetoken{వ్యక్తి క్షేత్రంలో}{!!{domain}} ఉన్నదంతా దానిలో
+ఉంటుందని (అంటే, $X = \Domain{M})$ అని ఇది చెబుతుంది.
+
+ఆగమన స్వీకృతాన్ని సంతృప్తిపరిచే ఏ \tetoken{నిర్మాణంలోనైనా}{!!{structure}}, స్వీకృతాలు
+ఉండాలని కోరే \tetoken{మూలకాలు}{!!{element}s} మాత్రమే $\Domain{M}$లో ఉంటాయని,
+అంటే $n \in \Nat$కు~$\num{n}$ విలువలు మాత్రమే ఉంటాయని అది హామీ
+ఇస్తుంది. $\Th{PA^2}$ నమూనాలో ప్రామాణికం కాని సంఖ్యలు ఉండవు.
+
+\begin{thm}
+\ollabel{thm:sol-pa-standard}
+$\Sat{M}{\Th{PA^2}}$ అయితే, $\Domain{M} =
+\Setabs{\Value{\num{n}}{M}}{n \in \Nat}$.
+\end{thm}
+
+\begin{proof}
+$N = \Setabs{\Value{\num{n}}{M}}{n \in \Nat}$ అందాం; ఇంకా
+$\Sat{M}{\Th{PA^2}}$ అనుకుందాం. సహజంగానే, ప్రతి $n \in \Nat$కు
+$\Value{\num{n}}{M} \in \Domain{M}$; కనుక $N \subseteq \Domain{M}$.
+
+ఇప్పుడు ఎదురు దిశలో చేర్పును పరిశీలిద్దాం. $s(X) = N$ అయ్యే చర
+నిర్దేశం~$s$ను తీసుకోండి. పరికల్పన ప్రకారం,
+\begin{align*}
+\Sat{M}{\lforall[X][((X(\Obj 0) \land \lforall[x][(X(x)
+      \lif X(x'))]) \lif \lforall[x][X(x)])]}, & \text{ కాబట్టి}\\
+\Sat{M}{(X(\Obj 0) \land \lforall[x][(X(x) \lif X(x'))]) \lif
+  \lforall[x][X(x)]}[s]. &
+\end{align*}
+ఈ నియమితంలోని పూర్వపక్షాన్ని పరిశీలించండి. $\Value{\Obj{0}}{M} \in
+N$ కాబట్టి $\Sat{M}{X(\Obj{0})}[s]$. రెండవ సంయోజకం
+$\lforall[x][(X(x) \lif X(x'))]$ కూడా సంతృప్తిపరచబడుతుంది. ఎందుకంటే
+$x \in N$ అనుకుందాం. $N$ నిర్వచనం ప్రకారం, ఏదో~$n$కు
+$x = \Value{\num{n}}{M}$. అప్పుడు
+$\Assign{\prime}{M}(x) = \Value{\num{n+1}}{M} \in N$. కాబట్టి
+$\Assign{\prime}{M}(x) \in N$.
+
+మనకు $\Sat{M}{X(\Obj 0) \land \lforall[x][(X(x) \lif X(x'))]}[s]$
+వచ్చింది. పర్యవసానంగా, $\Sat{M}{\lforall[x][X(x)]}[s]$. కానీ దాని
+అర్థం ప్రతి $x \in \Domain{M}$కు $x \in s(X) = N$. కాబట్టి
+$\Domain{M} \subseteq N$.
+\end{proof}
+
+\begin{cor}
+\ollabel{cor:sol-pa-categorical}
+$\Th{PA^2}$ యొక్క ఏ రెండు నమూనాలైనా సమరూపమైనవి.
+\end{cor}
+
+\begin{proof}
+\olref{thm:sol-pa-standard} ప్రకారం, $\Th{PA^2}$ యొక్క ఏ నమూనా
+వ్యక్తి క్షేత్రమైనా $\Value{\num{n}}{M}$లతో పూర్తిగా నిండుతుంది. అటువంటి
+ప్రతి నమూనా~$\Th{Q}$కు కూడా ఒక నమూనా. \olref[mod][mar][stm]{prop:thq-standard}
+ప్రకారం, అటువంటి ప్రతి నమూనా ప్రామాణికమైనది, అంటే~$\Struct{N}$కు సమరూపమైనది.
+\end{proof}
+
+పైన $\Th{PA^2}$ను మొదటి ఎనిమిది అంకగణిత స్వీకృతాలు, ద్వితీయ-స్థాయి
+ఆగమన స్వీకృతం కలిగిన సిద్ధాంతంగా నిర్వచించాం. నిజానికి, ద్వితీయ-స్థాయి
+తర్కపు వ్యక్తీకరణశక్తి వల్ల, ద్వితీయ-స్థాయి పియానో అంకగణితానికి
+అంకగణిత స్వీకృతాలలో \emph{మొదటి రెండు}, వాటితో పాటు ఆగమనం మాత్రమే
+అవసరం.
+
+\begin{prop}\ollabel{prop:sol-pa-definable}
+మొదటి రెండు అంకగణిత స్వీకృతాలు (ఉత్తరసంఖ్య స్వీకృతాలు), ద్వితీయ-స్థాయి
+ఆగమన స్వీకృతం కలిగిన ద్వితీయ-స్థాయి సిద్ధాంతం $\Th{PA^{2\dagger}}$
+అనుకుందాం. అప్పుడు $\le$, $+$, $\times$లు $\Th{PA^{2\dagger}}$లో
+నిర్వచించదగినవి.
+\end{prop}
+
+\begin{proof}
+$\le$ నిర్వచించదగినదని చూపడానికి, $\Sat{N}{!A_\le(\num n, \num m)}$
+అయితేనే $n \le m$ అయ్యే సూత్రం~$!A_\le(x, y)$ను కనుగొనాలి. ఈ
+సూత్రాన్ని పరిశీలించండి:
+\[
+!B(x, Y) \ident Y(x) \land \lforall[y][(Y(y) \lif Y(y'))]
+\]
+$Y \subseteq \Nat$ అనే సమితి $!B(\num n, Y)$ను సంతృప్తిపరిస్తేనే
+$\Setabs{m}{n \le m} \subseteq Y$ అవుతుందనేది స్పష్టం. కాబట్టి
+$!A_\le(x, y) \ident \lforall[Y][(!B(x, Y) \lif Y(y))]$గా తీసుకోవచ్చు.
+
+కూడిక నిర్వచించదగినదని చూడటానికి, $u(0)=k$, అన్ని $n$లకు
+$u(n')=u(n)'$, ఇంకా $m = u(l)$ అయ్యే ప్రమేయం $u$ ఒకటి ఉంటేనే
+$k+l=m$ అవుతుందని గమనించండి. ఈ సమానార్థకతను ఉపయోగించి
+$\Th{PA^{2\dagger}}$లో కూడికను కింది సూత్రంతో నిర్వచించవచ్చు:
+\[
+!A_+(x,y,z) \ident \lexists[u][(u(\Obj 0)=x \land \lforall[w][u(w')=u
+ (w)'] \land u(y)=z)]
+\]
+\sourcecorrection{OLTESOLMET-001}{కూడికను నిర్వచించే ఆంగ్ల మూల సూత్రంలో పరిమాణీకరించిన చరం $w$ అయినప్పటికీ, దాని పరిధిలో $u(x')=u(x)'$ అని రాసింది. ఆగమన దశ అన్ని విలువలకు వర్తించాలనే వెంటనే ముందున్న వివరణకు అనుగుణంగా రెండుచోట్లా $x$ను $w$గా మార్చాం.}
+$\Sat{N}{!A_+(\num k, \num l, \num m)}$ అయితేనే $k+l=m$
+అవుతుందనేది స్పష్టంగా ఉండాలి.
+\end{proof}
+
+\begin{prob}
+\olref[sol][met][spa]{prop:sol-pa-definable} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+
+\end{document}

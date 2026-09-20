@@ -1,0 +1,1104 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-20T22:48:38.106Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Text/intertext/mbox prose is masked; nested inline math is compared per clause independently of language-specific word order.",
+  "units": [
+    {
+      "unit_id": "OLP-0330",
+      "source_path": "content/second-order-logic/metatheory/metatheory.tex",
+      "source_sha256": "4da3e8e4537a2a8ebf7870903b03ee5a09945b1fc8d9bded72d3009c60377afe",
+      "translation_sha256": "99c0a2cebf48e7e76b812e2e0fb2177754c8653a13d21c1a109558bf2d175de2",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport{introduction}",
+        "\\olimport{second-order-arithmetic}",
+        "\\olimport{undecidability-and-axiomatizability}",
+        "\\olimport{compactness}",
+        "\\olimport{loewenheim-skolem}"
+      ],
+      "identifiers_target_core": [
+        "\\olimport{introduction}",
+        "\\olimport{second-order-arithmetic}",
+        "\\olimport{undecidability-and-axiomatizability}",
+        "\\olimport{compactness}",
+        "\\olimport{loewenheim-skolem}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 31,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: second-order-logic\n% Chapter: metatheory",
+          "target_start": "% Part: second-order-logic\n% Chapter: metatheory"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olchapter{sol}{met}{Metatheory of Second-order Logic}",
+          "target_start": "\\olchapter{sol}{met}{ద్వితీయ-స్థాయి తర్కపు అధిసిద్ధాంతం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olimport{introduction}",
+          "target_start": "\\olimport{introduction}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport{second-order-arithmetic}",
+          "target_start": "\\olimport{second-order-arithmetic}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport{undecidability-and-axiomatizability}",
+          "target_start": "\\olimport{undecidability-and-axiomatizability}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\olimport{compactness}",
+          "target_start": "\\olimport{compactness}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport{loewenheim-skolem}",
+          "target_start": "\\olimport{loewenheim-skolem}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\OLEndChapterHook",
+          "target_start": "\\OLEndChapterHook"
+        },
+        {
+          "index": 11,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{sol}{met}",
+        "\\olimport{introduction}",
+        "\\olimport{second-order-arithmetic}",
+        "\\olimport{undecidability-and-axiomatizability}",
+        "\\olimport{compactness}",
+        "\\olimport{loewenheim-skolem}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{sol}{met}",
+        "\\olimport{introduction}",
+        "\\olimport{second-order-arithmetic}",
+        "\\olimport{undecidability-and-axiomatizability}",
+        "\\olimport{compactness}",
+        "\\olimport{loewenheim-skolem}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0331",
+      "source_path": "content/second-order-logic/metatheory/introduction.tex",
+      "source_sha256": "413d8f1950ae13bf318f29e071b196cbc1971aa378d2aa94ac79e1342baf6e2c",
+      "translation_sha256": "a2cf6801fe057d97f4c90c37f99a919ce52c6173d7295a86f61b66748c246857",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sol}{met}{int}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{sol}{met}{int}"
+      ],
+      "tokens_source": {
+        "!!a{denumerable}": 1,
+        "!!a{derivability}": 1,
+        "!!{computably\n  enumerable}": 2,
+        "!!{derivation}s": 1,
+        "!!{derive}": 1,
+        "!!{domain}s": 1,
+        "!!{sentence}": 3,
+        "!!{sentence}s": 3
+      },
+      "tokens_target": {
+        "!!a{denumerable}": 1,
+        "!!a{derivability}": 1,
+        "!!{computably\n  enumerable}": 2,
+        "!!{derivation}s": 1,
+        "!!{derive}": 1,
+        "!!{domain}s": 1,
+        "!!{sentence}": 3,
+        "!!{sentence}s": 3
+      },
+      "math_source": [
+        "$\\Proves$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma\\Proves!A$",
+        "$f\\colon\\Nat\\to\\Sent[L]$",
+        "$f$",
+        "$\\Lang{L}$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$"
+      ],
+      "math_target_core": [
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Proves$",
+        "$f$",
+        "$\\Lang{L}$",
+        "$f\\colon\\Nat\\to\\Sent[L]$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1308,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: second-order-logic\n% Chapter: metatheory\n% Section: introduction",
+          "target_start": "% Part: second-order-logic\n% Chapter: metatheory\n% Section: introduction"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sol}{met}{int}",
+          "target_start": "\\olfileid{sol}{met}{int}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Introduction}",
+          "target_start": "\\olsection{పరిచయం}"
+        },
+        {
+          "index": 6,
+          "source_start": "First-order logic has a number of nice properties. We know it is not\ndecidable, but at least it is axiomatizab",
+          "target_start": "మొదటిస్థాయి తర్కానికి అనేక చక్కని ధర్మాలు ఉన్నాయి. అది నిర్ణయించదగినది\nకాదని మనకు తెలుసు; కానీ కనీసం అది స్వీక"
+        },
+        {
+          "index": 7,
+          "source_start": "First-order logic also has two more properties: it is compact (if\nevery finite subset of a set~$\\Gamma$ of !!{",
+          "target_start": "మొదటిస్థాయి తర్కానికి మరో రెండు ధర్మాలు కూడా ఉన్నాయి: అది సంహతమైనది\n(ఒక \\tetoken{వాక్యాల}{!!{sentence}s} సమితి"
+        },
+        {
+          "index": 8,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sol}{met}{int}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sol}{met}{int}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0332",
+      "source_path": "content/second-order-logic/metatheory/second-order-arithmetic.tex",
+      "source_sha256": "a09f150a63d364e758adf2547e5237108b76d6ea7f08d23fe9373792b71bea0d",
+      "translation_sha256": "2b2fc9bbf7fb9628a3b6bd3dc1b09c9015cb08d9b36f8fb522ea7ca1c875dfbf",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sol}{met}{spa}",
+        "\\ollabel{thm:sol-pa-standard}",
+        "\\ollabel{cor:sol-pa-categorical}",
+        "\\olref{thm:sol-pa-standard}",
+        "\\olref[mod][mar][stm]{prop:thq-standard}",
+        "\\ollabel{prop:sol-pa-definable}",
+        "\\olref[sol][met][spa]{prop:sol-pa-definable}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{sol}{met}{spa}",
+        "\\ollabel{thm:sol-pa-standard}",
+        "\\ollabel{cor:sol-pa-categorical}",
+        "\\olref{thm:sol-pa-standard}",
+        "\\olref[mod][mar][stm]{prop:thq-standard}",
+        "\\ollabel{prop:sol-pa-definable}",
+        "\\olref[sol][met][spa]{prop:sol-pa-definable}"
+      ],
+      "tokens_source": {
+        "!!{domain}": 2,
+        "!!{element}s": 1,
+        "!!{formula}": 1,
+        "!!{sentence}s": 1,
+        "!!{structure}": 1
+      },
+      "tokens_target": {
+        "!!{domain}": 2,
+        "!!{element}s": 1,
+        "!!{formula}": 1,
+        "!!{sentence}s": 1,
+        "!!{structure}": 1
+      },
+      "math_source": [
+        "$\\Th{PA}$",
+        "$\\Th{Q}$",
+        "\\begin{align*}&\\lforall[x][\\eq/[x'][\\Obj0]]\\\\&\\lforall[x][\\lforall[y][(\\eq[x'][y']\\lif\\eq[x][y])]]\\\\&\\lforall[x][(\\eq[x][\\Obj0]\\lor\\lexists[y][\\eq[x][y']])]\\\\&\\lforall[x][\\eq[(x+\\Obj0)][x]]\\\\&\\lforall[x][\\lforall[y][\\eq[(x+y')][(x+y)']]]\\\\&\\lforall[x][\\eq[(x\\times\\Obj0)][\\Obj0]]\\\\&\\lforall[x][\\lforall[y][\\eq[(x\\timesy')][((x\\timesy)+x)]]]\\\\&\\lforall[x][\\lforall[y][(x<y\\liff\\lexists[z][\\eq[(z'+x)][y]])]]\\\\&(!A(\\Obj0)\\land\\lforall[x][(!A(x)\\lif!A(x'))])\\lif\\lforall[x][!A(x)].\\end{align*}",
+        "$!A(x)$",
+        "$\\Th{PA^2}$",
+        "$\\Th{PA^2}$",
+        "\\[\\lforall[X][((X(\\Obj0)\\land\\lforall[x][(X(x)\\lifX(x'))])\\lif\\lforall[x][X(x)])].\\]",
+        "$X$",
+        "$\\Assign{\\Obj{0}}{M}$",
+        "$x\\in\\Domain{M}$",
+        "$\\Assign{\\prime}{M}(x)$",
+        "$X=\\Domain{M})$",
+        "$\\Domain{M}$",
+        "$\\num{n}$",
+        "$n\\in\\Nat$",
+        "$\\Th{PA^2}$",
+        "$\\Sat{M}{\\Th{PA^2}}$",
+        "$\\Domain{M}=\\Setabs{\\Value{\\num{n}}{M}}{n\\in\\Nat}$",
+        "$N=\\Setabs{\\Value{\\num{n}}{M}}{n\\in\\Nat}$",
+        "$\\Sat{M}{\\Th{PA^2}}$",
+        "$n\\in\\Nat$",
+        "$\\Value{\\num{n}}{M}\\in\\Domain{M}$",
+        "$N\\subseteq\\Domain{M}$",
+        "$s$",
+        "$s(X)=N$",
+        "\\begin{align*}\\Sat{M}{\\lforall[X][((X(\\Obj0)\\land\\lforall[x][(X(x)\\lifX(x'))])\\lif\\lforall[x][X(x)])]},&\\\\\\Sat{M}{(X(\\Obj0)\\land\\lforall[x][(X(x)\\lifX(x'))])\\lif\\lforall[x][X(x)]}[s].&\\end{align*}",
+        "$\\Value{\\Obj{0}}{M}\\inN$",
+        "$\\Sat{M}{X(\\Obj{0})}[s]$",
+        "$\\lforall[x][(X(x)\\lifX(x'))]$",
+        "$x\\inN$",
+        "$N$",
+        "$x=\\Value{\\num{n}}{M}$",
+        "$n$",
+        "$\\Assign{\\prime}{M}(x)=\\Value{\\num{n+1}}{M}\\inN$",
+        "$\\Assign{\\prime}{M}(x)\\inN$",
+        "$\\Sat{M}{X(\\Obj0)\\land\\lforall[x][(X(x)\\lifX(x'))]}[s]$",
+        "$\\Sat{M}{\\lforall[x][X(x)]}[s]$",
+        "$x\\in\\Domain{M}$",
+        "$x\\ins(X)=N$",
+        "$\\Domain{M}\\subseteqN$",
+        "$\\Th{PA^2}$",
+        "$\\Th{PA^2}$",
+        "$\\Value{\\num{n}}{M}$",
+        "$\\Th{Q}$",
+        "$\\Struct{N}$",
+        "$\\Th{PA^2}$",
+        "$\\Th{PA^{2\\dagger}}$",
+        "$\\le$",
+        "$+$",
+        "$\\times$",
+        "$\\Th{PA^{2\\dagger}}$",
+        "$\\le$",
+        "$!A_\\le(x,y)$",
+        "$\\Sat{N}{!A_\\le(\\numn,\\numm)}$",
+        "$n\\lem$",
+        "\\[!B(x,Y)\\identY(x)\\land\\lforall[y][(Y(y)\\lifY(y'))]\\]",
+        "$!B(\\numn,Y)$",
+        "$Y\\subseteq\\Nat$",
+        "$\\Setabs{m}{n\\lem}\\subseteqY$",
+        "$!A_\\le(x,y)\\ident\\lforall[Y][(!B(x,Y)\\lifY(y))]$",
+        "$k+l=m$",
+        "$u$",
+        "$u(0)=k$",
+        "$u(n')=u(n)'$",
+        "$n$",
+        "$m=u(l)$",
+        "$\\Th{PA^{2\\dagger}}$",
+        "\\[!A_+(x,y,z)\\ident\\lexists[u][(u(\\Obj0)=x\\land\\lforall[w][u(x')=u(x)']\\landu(y)=z)]\\]",
+        "$\\Sat{N}{!A_+(\\numk,\\numl,\\numm)}$",
+        "$k+l=m$"
+      ],
+      "math_target_core": [
+        "$\\Th{PA}$",
+        "$\\Th{Q}$",
+        "\\begin{align*}&\\lforall[x][\\eq/[x'][\\Obj0]]\\\\&\\lforall[x][\\lforall[y][(\\eq[x'][y']\\lif\\eq[x][y])]]\\\\&\\lforall[x][(\\eq[x][\\Obj0]\\lor\\lexists[y][\\eq[x][y']])]\\\\&\\lforall[x][\\eq[(x+\\Obj0)][x]]\\\\&\\lforall[x][\\lforall[y][\\eq[(x+y')][(x+y)']]]\\\\&\\lforall[x][\\eq[(x\\times\\Obj0)][\\Obj0]]\\\\&\\lforall[x][\\lforall[y][\\eq[(x\\timesy')][((x\\timesy)+x)]]]\\\\&\\lforall[x][\\lforall[y][(x<y\\liff\\lexists[z][\\eq[(z'+x)][y]])]]\\\\&(!A(\\Obj0)\\land\\lforall[x][(!A(x)\\lif!A(x'))])\\lif\\lforall[x][!A(x)].\\end{align*}",
+        "$!A(x)$",
+        "$\\Th{PA^2}$",
+        "$\\Th{PA^2}$",
+        "\\[\\lforall[X][((X(\\Obj0)\\land\\lforall[x][(X(x)\\lifX(x'))])\\lif\\lforall[x][X(x)])].\\]",
+        "$X$",
+        "$\\Assign{\\Obj{0}}{M}$",
+        "$x\\in\\Domain{M}$",
+        "$\\Assign{\\prime}{M}(x)$",
+        "$X=\\Domain{M})$",
+        "$\\Domain{M}$",
+        "$n\\in\\Nat$",
+        "$\\num{n}$",
+        "$\\Th{PA^2}$",
+        "$\\Sat{M}{\\Th{PA^2}}$",
+        "$\\Domain{M}=\\Setabs{\\Value{\\num{n}}{M}}{n\\in\\Nat}$",
+        "$N=\\Setabs{\\Value{\\num{n}}{M}}{n\\in\\Nat}$",
+        "$\\Sat{M}{\\Th{PA^2}}$",
+        "$n\\in\\Nat$",
+        "$\\Value{\\num{n}}{M}\\in\\Domain{M}$",
+        "$N\\subseteq\\Domain{M}$",
+        "$s(X)=N$",
+        "$s$",
+        "\\begin{align*}\\Sat{M}{\\lforall[X][((X(\\Obj0)\\land\\lforall[x][(X(x)\\lifX(x'))])\\lif\\lforall[x][X(x)])]},&\\\\\\Sat{M}{(X(\\Obj0)\\land\\lforall[x][(X(x)\\lifX(x'))])\\lif\\lforall[x][X(x)]}[s].&\\end{align*}",
+        "$\\Value{\\Obj{0}}{M}\\inN$",
+        "$\\Sat{M}{X(\\Obj{0})}[s]$",
+        "$\\lforall[x][(X(x)\\lifX(x'))]$",
+        "$x\\inN$",
+        "$N$",
+        "$n$",
+        "$x=\\Value{\\num{n}}{M}$",
+        "$\\Assign{\\prime}{M}(x)=\\Value{\\num{n+1}}{M}\\inN$",
+        "$\\Assign{\\prime}{M}(x)\\inN$",
+        "$\\Sat{M}{X(\\Obj0)\\land\\lforall[x][(X(x)\\lifX(x'))]}[s]$",
+        "$\\Sat{M}{\\lforall[x][X(x)]}[s]$",
+        "$x\\in\\Domain{M}$",
+        "$x\\ins(X)=N$",
+        "$\\Domain{M}\\subseteqN$",
+        "$\\Th{PA^2}$",
+        "$\\Th{PA^2}$",
+        "$\\Value{\\num{n}}{M}$",
+        "$\\Th{Q}$",
+        "$\\Struct{N}$",
+        "$\\Th{PA^2}$",
+        "$\\Th{PA^{2\\dagger}}$",
+        "$\\le$",
+        "$+$",
+        "$\\times$",
+        "$\\Th{PA^{2\\dagger}}$",
+        "$\\le$",
+        "$\\Sat{N}{!A_\\le(\\numn,\\numm)}$",
+        "$n\\lem$",
+        "$!A_\\le(x,y)$",
+        "\\[!B(x,Y)\\identY(x)\\land\\lforall[y][(Y(y)\\lifY(y'))]\\]",
+        "$Y\\subseteq\\Nat$",
+        "$!B(\\numn,Y)$",
+        "$\\Setabs{m}{n\\lem}\\subseteqY$",
+        "$!A_\\le(x,y)\\ident\\lforall[Y][(!B(x,Y)\\lifY(y))]$",
+        "$u(0)=k$",
+        "$n$",
+        "$u(n')=u(n)'$",
+        "$m=u(l)$",
+        "$u$",
+        "$k+l=m$",
+        "$\\Th{PA^{2\\dagger}}$",
+        "\\[!A_+(x,y,z)\\ident\\lexists[u][(u(\\Obj0)=x\\land\\lforall[w][u(w')=u(w)']\\landu(y)=z)]\\]",
+        "$\\Sat{N}{!A_+(\\numk,\\numl,\\numm)}$",
+        "$k+l=m$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "\\[!A_+(x,y,z)\\ident\\lexists[u][(u(\\Obj0)=x\\land\\lforall[w][u(x')=u(x)']\\landu(y)=z)]\\]"
+      ],
+      "math_delta_target_only": [
+        "\\[!A_+(x,y,z)\\ident\\lexists[u][(u(\\Obj0)=x\\land\\lforall[w][u(w')=u(w)']\\landu(y)=z)]\\]"
+      ],
+      "declared_source_correction_ids": [
+        "OLTESOLMET-001"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2016,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: second-order-logic\n% Chapter: metatheory\n% Section: second-order-arithmetic",
+          "target_start": "% Part: second-order-logic\n% Chapter: metatheory\n% Section: second-order-arithmetic"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sol}{met}{spa}",
+          "target_start": "\\olfileid{sol}{met}{spa}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Second-order Arithmetic}",
+          "target_start": "\\olsection{ద్వితీయ-స్థాయి అంకగణితం}"
+        },
+        {
+          "index": 6,
+          "source_start": "Recall that the theory $\\Th{PA}$ of Peano arithmetic includes the\neight axioms of~$\\Th{Q}$,\n\\begin{align*}\n& \\",
+          "target_start": "పియానో అంకగణిత సిద్ధాంతం $\\Th{PA}$లో~$\\Th{Q}$ యొక్క ఎనిమిది\nస్వీకృతాలు,\n\\begin{align*}\n& \\lforall[x][\\eq/[x']["
+        },
+        {
+          "index": 7,
+          "source_start": "The induction axiom guarantees that any !!{structure} satisfying it\ncontains only those !!{element}s of~$\\Doma",
+          "target_start": "ఆగమన స్వీకృతాన్ని సంతృప్తిపరిచే ఏ \\tetoken{నిర్మాణంలోనైనా}{!!{structure}}, స్వీకృతాలు\nఉండాలని కోరే \\tetoken{మూ"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{thm}\n\\ollabel{thm:sol-pa-standard}\nIf $\\Sat{M}{\\Th{PA^2}}$ then $\\Domain{M} =\n\\Setabs{\\Value{\\num{n}}{M",
+          "target_start": "\\begin{thm}\n\\ollabel{thm:sol-pa-standard}\n$\\Sat{M}{\\Th{PA^2}}$ అయితే, $\\Domain{M} =\n\\Setabs{\\Value{\\num{n}}{M}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{proof}\nLet $N = \\Setabs{\\Value{\\num{n}}{M}}{n \\in \\Nat}$, and suppose\n$\\Sat{M}{\\Th{PA^2}}$. Of course, ",
+          "target_start": "\\begin{proof}\n$N = \\Setabs{\\Value{\\num{n}}{M}}{n \\in \\Nat}$ అందాం; ఇంకా\n$\\Sat{M}{\\Th{PA^2}}$ అనుకుందాం. సహజంగా"
+        },
+        {
+          "index": 10,
+          "source_start": "Now for inclusion in the other direction. Consider a variable\nassignment $s$ with $s(X) = N$. By assumption,\n\\",
+          "target_start": "ఇప్పుడు ఎదురు దిశలో చేర్పును పరిశీలిద్దాం. $s(X) = N$ అయ్యే చర\nనిర్దేశం~$s$ను తీసుకోండి. పరికల్పన ప్రకారం,\n\\be"
+        },
+        {
+          "index": 11,
+          "source_start": "We have that $\\Sat{M}{X(\\Obj 0) \\land \\lforall[x][(X(x) \\lif X(x'))]}[s]$.\nConsequently, $\\Sat{M}{\\lforall[x][",
+          "target_start": "మనకు $\\Sat{M}{X(\\Obj 0) \\land \\lforall[x][(X(x) \\lif X(x'))]}[s]$\nవచ్చింది. పర్యవసానంగా, $\\Sat{M}{\\lforall[x]["
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{cor}\n\\ollabel{cor:sol-pa-categorical}\nAny two models of~$\\Th{PA^2}$ are isomorphic.\n\\end{cor}",
+          "target_start": "\\begin{cor}\n\\ollabel{cor:sol-pa-categorical}\n$\\Th{PA^2}$ యొక్క ఏ రెండు నమూనాలైనా సమరూపమైనవి.\n\\end{cor}"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{proof}\nBy \\olref{thm:sol-pa-standard}, the domain of any model of $\\Th{PA^2}$\nis exhausted by $\\Value{\\",
+          "target_start": "\\begin{proof}\n\\olref{thm:sol-pa-standard} ప్రకారం, $\\Th{PA^2}$ యొక్క ఏ నమూనా\nవ్యక్తి క్షేత్రమైనా $\\Value{\\num{"
+        },
+        {
+          "index": 14,
+          "source_start": "Above we defined $\\Th{PA^2}$ as the theory that contains the first eight \narithmetical axioms plus the second-",
+          "target_start": "పైన $\\Th{PA^2}$ను మొదటి ఎనిమిది అంకగణిత స్వీకృతాలు, ద్వితీయ-స్థాయి\nఆగమన స్వీకృతం కలిగిన సిద్ధాంతంగా నిర్వచించా"
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{prop}\\ollabel{prop:sol-pa-definable}\nLet $\\Th{PA^{2\\dagger}}$ be the second-order theory containing the",
+          "target_start": "\\begin{prop}\\ollabel{prop:sol-pa-definable}\nమొదటి రెండు అంకగణిత స్వీకృతాలు (ఉత్తరసంఖ్య స్వీకృతాలు), ద్వితీయ-స్"
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{proof}\nTo show that $\\le$ is definable, we have to find a formula~$!A_\\le(x, y)$\nsuch that $\\Sat{N}{!A_",
+          "target_start": "\\begin{proof}\n$\\le$ నిర్వచించదగినదని చూపడానికి, $\\Sat{N}{!A_\\le(\\num n, \\num m)}$\nఅయితేనే $n \\le m$ అయ్యే సూత్"
+        },
+        {
+          "index": 17,
+          "source_start": "To see that addition is definable observe that $k+l=m$ iff there is a\nfunction $u$ such that $u(0)=k$, $u(n')=",
+          "target_start": "కూడిక నిర్వచించదగినదని చూడటానికి, $u(0)=k$, అన్ని $n$లకు\n$u(n')=u(n)'$, ఇంకా $m = u(l)$ అయ్యే ప్రమేయం $u$ ఒకటి"
+        },
+        {
+          "index": 18,
+          "source_start": "\\begin{prob}\nComplete the proof of \\olref[sol][met][spa]{prop:sol-pa-definable}.\n\\end{prob}",
+          "target_start": "\\begin{prob}\n\\olref[sol][met][spa]{prop:sol-pa-definable} నిరూపణను పూర్తి చేయండి.\n\\end{prob}"
+        },
+        {
+          "index": 19,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sol}{met}{spa}",
+        "\\ollabel{thm:sol-pa-standard}",
+        "\\ollabel{cor:sol-pa-categorical}",
+        "\\olref{thm:sol-pa-standard}",
+        "\\olref[mod][mar][stm]{prop:thq-standard}",
+        "\\ollabel{prop:sol-pa-definable}",
+        "\\olref[sol][met][spa]{prop:sol-pa-definable}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sol}{met}{spa}",
+        "\\ollabel{thm:sol-pa-standard}",
+        "\\ollabel{cor:sol-pa-categorical}",
+        "\\olref{thm:sol-pa-standard}",
+        "\\olref[mod][mar][stm]{prop:thq-standard}",
+        "\\ollabel{prop:sol-pa-definable}",
+        "\\olref[sol][met][spa]{prop:sol-pa-definable}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0333",
+      "source_path": "content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex",
+      "source_sha256": "d145a2ab03186358310a7f917ed7aa9eb49e95efbb80c3a2e8356be818d25108",
+      "translation_sha256": "77159aaf8ac3423ac123a8aa54448b5fc7ef1e263492723c2dbd1eb3d09869ce",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sol}{met}{nax}",
+        "\\ollabel{thm:sol-undecidable}",
+        "\\ollabel{cor:sol-not-axiomatizable}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{sol}{met}{nax}",
+        "\\ollabel{thm:sol-undecidable}",
+        "\\ollabel{cor:sol-not-axiomatizable}"
+      ],
+      "tokens_source": {
+        "!!a{sentence}": 1,
+        "!!{derivation}": 1,
+        "!!{formula}": 1,
+        "!!{sentence}": 2,
+        "!!{sentence}s": 2
+      },
+      "tokens_target": {
+        "!!a{sentence}": 1,
+        "!!{derivation}": 1,
+        "!!{formula}": 1,
+        "!!{sentence}": 2,
+        "!!{sentence}s": 2
+      },
+      "math_source": [
+        "$!A$",
+        "$\\Sat{N}{!A}$",
+        "$\\Th{PA^2}\\Entails!A$",
+        "$!P$",
+        "$\\Th{PA^2}$",
+        "$\\Th{PA^2}\\Entails!A$",
+        "$\\Entails!P\\lif!A$",
+        "$\\Sat{M}{!P\\lif!A$",
+        "$\\lforall[z][\\lforall[u][\\lforall[u'][\\lforall[u''][\\lforall[L][(!P'\\lif!A')]]]]]$",
+        "$\\Obj{0}$",
+        "$z$",
+        "$\\prime$",
+        "$u$",
+        "$+$",
+        "$\\times$",
+        "$u'$",
+        "$u''$",
+        "$<$",
+        "$L$",
+        "$\\Th{PA^2}\\Entails!A$",
+        "$\\Sat{N}{!A}$",
+        "$f\\colon\\Nat\\to\\Sent[L_A]$",
+        "$\\Struct{N}$",
+        "$\\Th{Q}$",
+        "$!B_f(x,y)$",
+        "$\\lexists[x][!B_f(x,y)]$",
+        "$\\Struct{N}$"
+      ],
+      "math_target_core": [
+        "$!A$",
+        "$\\Sat{N}{!A}$",
+        "$\\Th{PA^2}\\Entails!A$",
+        "$\\Th{PA^2}$",
+        "$!P$",
+        "$\\Th{PA^2}\\Entails!A$",
+        "$\\Entails!P\\lif!A$",
+        "$\\Sat{M}{!P\\lif!A}$",
+        "$\\Obj{0}$",
+        "$z$",
+        "$\\prime$",
+        "$u$",
+        "$+$",
+        "$\\times$",
+        "$u'$",
+        "$u''$",
+        "$<$",
+        "$L$",
+        "$\\lforall[z][\\lforall[u][\\lforall[u'][\\lforall[u''][\\lforall[L][(!P'\\lif!A')]]]]]$",
+        "$\\Th{PA^2}\\Entails!A$",
+        "$\\Sat{N}{!A}$",
+        "$\\Struct{N}$",
+        "$f\\colon\\Nat\\to\\Sent[L_A]$",
+        "$\\Th{Q}$",
+        "$!B_f(x,y)$",
+        "$\\lexists[x][!B_f(x,y)]$",
+        "$\\Struct{N}$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$\\Sat{M}{!P\\lif!A$"
+      ],
+      "math_delta_target_only": [
+        "$\\Sat{M}{!P\\lif!A}$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTESOLMET-002"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1044,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: second-order-logic\n% Chapter: metatheory\n% Section: undecidability-and-axiomatizability",
+          "target_start": "% Part: second-order-logic\n% Chapter: metatheory\n% Section: undecidability-and-axiomatizability"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sol}{met}{nax}",
+          "target_start": "\\olfileid{sol}{met}{nax}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Second-order Logic is not Axiomatizable}",
+          "target_start": "\\olsection{ద్వితీయ-స్థాయి తర్కం స్వీకృతీకరించదగినది కాదు}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{thm}\n\\ollabel{thm:sol-undecidable}\nSecond-order logic is undecidable.\n\\end{thm}",
+          "target_start": "\\begin{thm}\n\\ollabel{thm:sol-undecidable}\nద్వితీయ-స్థాయి తర్కం అనిర్ణయనీయమైనది.\n\\end{thm}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{proof}\nA first-order !!{sentence} is valid in first-order logic iff it is\nvalid in second-order logic, ",
+          "target_start": "\\begin{proof}\nఒక మొదటిస్థాయి \\tetoken{వాక్యం}{!!{sentence}} మొదటిస్థాయి తర్కంలో\nచెల్లుబాటైతేనే అది ద్వితీయ-స్థ"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{thm}\n\\ollabel{cor:sol-not-axiomatizable}\nThere is no sound and complete !!{derivation} system for secon",
+          "target_start": "\\begin{thm}\n\\ollabel{cor:sol-not-axiomatizable}\nద్వితీయ-స్థాయి తర్కానికి నిర్దుష్టమైన, సంపూర్ణమైన \\tetoken{వ్య"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{proof}\nLet $!A$ be !!a{sentence} in the language of arithmetic.  $\\Sat{N}{!A}$\niff $\\Th{PA^2} \\Entails ",
+          "target_start": "\\begin{proof}\n$!A$ అంకగణిత భాషలోని \\tetoken{ఒక వాక్యం}{!!a{sentence}} అనుకుందాం.\n$\\Sat{N}{!A}$ అయితేనే $\\Th{PA"
+        },
+        {
+          "index": 10,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sol}{met}{nax}",
+        "\\ollabel{thm:sol-undecidable}",
+        "\\ollabel{cor:sol-not-axiomatizable}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sol}{met}{nax}",
+        "\\ollabel{thm:sol-undecidable}",
+        "\\ollabel{cor:sol-not-axiomatizable}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0334",
+      "source_path": "content/second-order-logic/metatheory/compactness.tex",
+      "source_sha256": "6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267",
+      "translation_sha256": "6abcbda3b3259657dad0d99019023604abc8ecc7b2ba77150d41671ba2c5b215",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sol}{met}{com}",
+        "\\ollabel{thm:sol-undecidable}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{sol}{met}{com}",
+        "\\ollabel{thm:sol-not-compact}"
+      ],
+      "tokens_source": {
+        "!!a{sentence}": 1,
+        "!!a{structure}": 1,
+        "!!{derivation}": 1,
+        "!!{element}s": 2,
+        "!!{sentence}s": 4
+      },
+      "tokens_target": {
+        "!!a{sentence}": 1,
+        "!!a{structure}": 1,
+        "!!{derivation}": 1,
+        "!!{element}s": 2,
+        "!!{sentence}s": 4
+      },
+      "math_source": [
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma_0\\Entails!A$",
+        "$\\Gamma_0\\subseteq\\Gamma$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$!A$",
+        "\\[\\fn{Inf}\\ident\\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land\\lexists[y][\\lforall[x][\\eq/[y][u(x)]]])]\\]",
+        "$!A^{\\gen}$",
+        "$n$",
+        "\\[!A^{\\gen}\\ident\\lexists[x_1][\\dots\\lexists[x_n][(\\eq/[x_1][x_2]\\land\\eq/[x_1][x_3]\\land\\dots\\land\\eq/[x_{n-1}][x_n])]].\\]",
+        "\\[\\Gamma=\\{\\lnot\\fn{Inf},!A^{\\ge1},!A^{\\ge2},!A^{\\ge3},\\dots\\}.\\]",
+        "$\\Gamma_0\\subseteq\\Gamma$",
+        "$k$",
+        "$!A^{\\gek}\\in\\Gamma$",
+        "$!A^{\\gen}\\in\\Gamma$",
+        "$n>k$",
+        "$\\Domain{M}$",
+        "$k$",
+        "$\\Sat{M}{\\Gamma_0}$",
+        "$\\Gamma$",
+        "$\\Sat{M}{\\lnot\\fn{Inf}}$",
+        "$\\Domain{M}$",
+        "$k$",
+        "$\\Sat/{M}{!A^{\\gek+1}}$",
+        "$\\Gamma$",
+        "$!A$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma_0\\subseteq\\Gamma$",
+        "$\\Gamma_0\\Entails/!A$"
+      ],
+      "math_target_core": [
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma_0\\subseteq\\Gamma$",
+        "$\\Gamma_0\\Entails!A$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma\\Proves!A$",
+        "$\\Gamma$",
+        "$!A$",
+        "$!A$",
+        "\\[\\fn{Inf}\\ident\\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land\\lexists[y][\\lforall[x][\\eq/[y][u(x)]]])]\\]",
+        "$n$",
+        "$!A^{\\gen}$",
+        "\\[!A^{\\gen}\\ident\\lexists[x_1][\\dots\\lexists[x_n][(\\eq/[x_1][x_2]\\land\\eq/[x_1][x_3]\\land\\dots\\land\\eq/[x_{n-1}][x_n])]].\\]",
+        "\\[\\Gamma=\\{\\lnot\\fn{Inf},!A^{\\ge1},!A^{\\ge2},!A^{\\ge3},\\dots\\}.\\]",
+        "$\\Gamma_0\\subseteq\\Gamma$",
+        "$n>k$",
+        "$!A^{\\gen}\\in\\Gamma_0$",
+        "$k$",
+        "$\\Domain{M}$",
+        "$k$",
+        "$\\Sat{M}{\\Gamma_0}$",
+        "$\\Gamma$",
+        "$\\Sat{M}{\\lnot\\fn{Inf}}$",
+        "$\\Domain{M}$",
+        "$k$",
+        "$\\Sat/{M}{!A^{\\gek+1}}$",
+        "$\\Gamma\\Entails!A$",
+        "$\\Gamma_0\\subseteq\\Gamma$",
+        "$\\Gamma_0\\Entails/!A$",
+        "$\\Gamma$",
+        "$!A$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$!A^{\\gek}\\in\\Gamma$",
+        "$!A^{\\gen}\\in\\Gamma$"
+      ],
+      "math_delta_target_only": [
+        "$!A^{\\gen}\\in\\Gamma_0$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTESOLMET-003",
+        "OLTESOLMET-004"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1387,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: second-order-logic\n% Chapter: metatheory\n% Section: compactness",
+          "target_start": "% Part: second-order-logic\n% Chapter: metatheory\n% Section: compactness"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sol}{met}{com}",
+          "target_start": "\\olfileid{sol}{met}{com}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Second-order Logic is not Compact}",
+          "target_start": "\\olsection{ద్వితీయ-స్థాయి తర్కం సంహతమైనది కాదు}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{explain}\nCall a set of sentences~$\\Gamma$ \\emph{finitely satisfiable} if every\none of its finite subset",
+          "target_start": "\\begin{explain}\nఒక వాక్యాల సమితి~$\\Gamma$లోని ప్రతి పరిమిత ఉపసమితి\nసంతృప్తిపరచదగినదైతే, దాన్ని \\emph{పరిమితంగా"
+        },
+        {
+          "index": 7,
+          "source_start": "Compactness is not true for second-order logic. There are sets of\nsecond-order !!{sentence}s that are finitely",
+          "target_start": "ద్వితీయ-స్థాయి తర్కానికి సంహతత్వం నిజం కాదు. పరిమితంగా\nసంతృప్తిపరచదగినవే కాని సంతృప్తిపరచదగినవి కాని ద్వితీయ-స"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{thm}\n\\ollabel{thm:sol-undecidable}\nSecond-order logic is not compact.\n\\end{thm}",
+          "target_start": "\\begin{thm}\n\\ollabel{thm:sol-not-compact}\nద్వితీయ-స్థాయి తర్కం సంహతమైనది కాదు.\n\\sourcecorrection{OLTESOLMET-00"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{proof}\nRecall that \n\\[\n\\fn{Inf} \\ident \\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\n      \\lif",
+          "target_start": "\\begin{proof}\nఈ సూత్రాన్ని గుర్తుచేసుకోండి:\n\\[\n\\fn{Inf} \\ident \\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)]"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{prob}\nGive an example of a set~$\\Gamma$ and !!a{sentence}~$!A$ so that\n$\\Gamma \\Entails !A$ but for eve",
+          "target_start": "\\begin{prob}\n$\\Gamma \\Entails !A$ అయ్యే, కానీ ప్రతి పరిమిత ఉపసమితి~$\\Gamma_0\n\\subseteq \\Gamma$కు $\\Gamma_0 \\En"
+        },
+        {
+          "index": 11,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sol}{met}{com}",
+        "\\ollabel{thm:sol-undecidable}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sol}{met}{com}",
+        "\\ollabel{thm:sol-not-compact}"
+      ],
+      "protected_identifier_exact_match": false,
+      "protected_identifier_delta_source_only": [
+        "\\ollabel{thm:sol-undecidable}"
+      ],
+      "protected_identifier_delta_target_only": [
+        "\\ollabel{thm:sol-not-compact}"
+      ],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0335",
+      "source_path": "content/second-order-logic/metatheory/loewenheim-skolem.tex",
+      "source_sha256": "997505d0bb8de8bbc170192327c4ea5182773179e818d9ab41381471c30c5cff",
+      "translation_sha256": "ea976e59ff2f15d1dd1aa5c446b24f9de687b841601acb5583d42ca41968182a",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sol}{met}{lst}",
+        "\\ollabel{thm:sol-no-ls}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{sol}{met}{lst}",
+        "\\ollabel{thm:sol-no-ls}"
+      ],
+      "tokens_source": {
+        "!!a{denumerable}": 1,
+        "!!a{enumerable}": 1,
+        "!!a{nonenumerable}": 1,
+        "!!a{structure}": 1,
+        "!!{denumerable}": 1,
+        "!!{domain}": 1,
+        "!!{enumerable}": 4,
+        "!!{nonenumerable}": 4,
+        "!!{sentence}s": 5,
+        "!!{structure}": 1,
+        "!!{structure}s": 1
+      },
+      "tokens_target": {
+        "!!a{denumerable}": 1,
+        "!!a{enumerable}": 1,
+        "!!a{nonenumerable}": 1,
+        "!!a{structure}": 1,
+        "!!{denumerable}": 1,
+        "!!{domain}": 1,
+        "!!{enumerable}": 4,
+        "!!{nonenumerable}": 4,
+        "!!{sentence}s": 5,
+        "!!{structure}": 1,
+        "!!{structure}s": 1
+      },
+      "math_source": [
+        "\\[\\fn{Count}\\ident\\lexists[z][\\lexists[u][\\lforall[X][((X(z)\\land\\lforall[x][(X(x)\\lifX(u(x)))])\\lif\\lforall[x][X(x)])]]]\\]",
+        "$\\Struct{M}$",
+        "$\\Domain{M}$",
+        "$\\lnot\\fn{Count}$",
+        "$\\Struct{M}$",
+        "$\\Domain{M}$",
+        "$\\Pow{\\Nat}$",
+        "$\\Real$",
+        "$\\lnot\\fn{Count}$",
+        "$\\fn{Count}\\land\\fn{Inf}$",
+        "$\\Nat$",
+        "$\\Struct{M}$",
+        "$\\Domain{M}$"
+      ],
+      "math_target_core": [
+        "\\[\\fn{Count}\\ident\\lexists[z][\\lexists[u][\\lforall[X][((X(z)\\land\\lforall[x][(X(x)\\lifX(u(x)))])\\lif\\lforall[x][X(x)])]]]\\]",
+        "$\\Struct{M}$",
+        "$\\Domain{M}$",
+        "$\\lnot\\fn{Count}$",
+        "$\\Struct{M}$",
+        "$\\Domain{M}$",
+        "$\\Pow{\\Nat}$",
+        "$\\Real$",
+        "$\\lnot\\fn{Count}$",
+        "$\\fn{Count}\\land\\fn{Inf}$",
+        "$\\Nat$",
+        "$\\Domain{M}$",
+        "$\\Struct{M}$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 939,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: second-order-logic\n% Chapter: metatheory\n% Section: compactness",
+          "target_start": "% Part: second-order-logic\n% Chapter: metatheory\n% Section: compactness"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sol}{met}{lst}",
+          "target_start": "\\olfileid{sol}{met}{lst}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{The L\\\"owenheim--Skolem Theorem Fails for Second-order Logic}",
+          "target_start": "\\olsection{ద్వితీయ-స్థాయి తర్కానికి లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతం విఫలమవుతుంది}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{explain}\nThe (Downward) L\\\"owenheim--Skolem Theorem states that every set of\n!!{sentence}s with an infi",
+          "target_start": "\\begin{explain}\nఅనంత నమూనా గల ప్రతి \\tetoken{వాక్యాల}{!!{sentence}s} సమితికీ\n\\tetoken{ఒక లెక్కించదగిన}{!!a{enu"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{thm}\n\\ollabel{thm:sol-no-ls} The L\\\"owenheim--Skolem Theorem fails for\nsecond-order logic: There are !!",
+          "target_start": "\\begin{thm}\n\\ollabel{thm:sol-no-ls} ద్వితీయ-స్థాయి తర్కానికి లొవెన్‌హైమ్--స్కోలెమ్\nసిద్ధాంతం విఫలమవుతుంది: అనం"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{proof}\nRecall that \n\\[\n\\fn{Count} \\ident \\lexists[z][\\lexists[u][\\lforall[X][((X(z) \\land\n      \\lforal",
+          "target_start": "\\begin{proof}\nఈ సూత్రాన్ని గుర్తుచేసుకోండి:\n\\[\n\\fn{Count} \\ident \\lexists[z][\\lexists[u][\\lforall[X][((X(z) \\l"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{thm}\nThere are !!{sentence}s with !!{denumerable} but no\n!!{nonenumerable} models.\n\\end{thm}",
+          "target_start": "\\begin{thm}\n\\tetoken{అనంతంగా లెక్కించదగిన}{!!{denumerable}} నమూనాలు ఉండి,\n\\tetoken{లెక్కించలేని}{!!{nonenumera"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{proof}\n$\\fn{Count} \\land \\fn{Inf}$ is true in $\\Nat$ but not in any\n  !!{structure}~$\\Struct{M}$ with $",
+          "target_start": "\\begin{proof}\n$\\fn{Count} \\land \\fn{Inf}$, $\\Nat$లో సత్యం; కానీ $\\Domain{M}$\n\\tetoken{లెక్కించలేనిదిగా}{!!{non"
+        },
+        {
+          "index": 11,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sol}{met}{lst}",
+        "\\ollabel{thm:sol-no-ls}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sol}{met}{lst}",
+        "\\ollabel{thm:sol-no-ls}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    }
+  ]
+}

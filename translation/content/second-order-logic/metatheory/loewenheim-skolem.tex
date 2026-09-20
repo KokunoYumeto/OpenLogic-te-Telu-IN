@@ -1,0 +1,61 @@
+% Part: second-order-logic
+% Chapter: metatheory
+% Section: compactness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{met}{lst}
+
+\olsection{ద్వితీయ-స్థాయి తర్కానికి లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతం విఫలమవుతుంది}
+
+\begin{explain}
+అనంత నమూనా గల ప్రతి \tetoken{వాక్యాల}{!!{sentence}s} సమితికీ
+\tetoken{ఒక లెక్కించదగిన}{!!a{enumerable}} నమూనా ఉంటుందని (అధోముఖ)
+లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతం చెబుతుంది. అది కూడా సంపూర్ణతా సిద్ధాంతపు
+పరిణామమే: అవైరుధ్యమైన ఏ \tetoken{వాక్యాల}{!!{sentence}s} సమితికైనా సంపూర్ణత
+నిరూపణ ఒక నమూనాను ఉత్పత్తి చేస్తుంది; ఆ నమూనా
+\tetoken{లెక్కించదగినది}{!!{enumerable}}. ఒక \tetoken{వాక్యాల}{!!{sentence}s} సమితికి
+\tetoken{ఒక అనంతంగా లెక్కించదగిన}{!!a{denumerable}} నమూనా ఉంటే, దానికి
+\tetoken{ఒక లెక్కించలేని}{!!a{nonenumerable}} నమూనా కూడా ఉంటుందని హామీ ఇచ్చే
+ఊర్ధ్వముఖ లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతం కూడా ఉంది. ఈ రెండు సిద్ధాంతాలూ
+ద్వితీయ-స్థాయి తర్కంలో విఫలమవుతాయి.
+\end{explain}
+
+
+\begin{thm}
+\ollabel{thm:sol-no-ls} ద్వితీయ-స్థాయి తర్కానికి లొవెన్‌హైమ్--స్కోలెమ్
+సిద్ధాంతం విఫలమవుతుంది: అనంత నమూనాలు ఉండి,
+\tetoken{లెక్కించదగిన}{!!{enumerable}} నమూనాలు లేని \tetoken{వాక్యాలు}{!!{sentence}s} ఉన్నాయి.
+\end{thm}
+
+\begin{proof}
+ఈ సూత్రాన్ని గుర్తుచేసుకోండి:
+\[
+\fn{Count} \ident \lexists[z][\lexists[u][\lforall[X][((X(z) \land
+      \lforall[x][(X(x) \lif X(u(x)))]) \lif \lforall[x][X(x)])]]]
+\]
+ఇది \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct{M}$లో సత్యమైతేనే
+$\Domain{M}$ \tetoken{లెక్కించదగినది}{!!{enumerable}}; అందువల్ల
+$\lnot\fn{Count}$,~$\Struct{M}$లో సత్యమైతేనే $\Domain{M}$
+\tetoken{లెక్కించలేనిది}{!!{nonenumerable}}. అలాంటి
+\tetoken{నిర్మాణాలు}{!!{structure}s} ఉన్నాయి---\tetoken{వ్యక్తి క్షేత్రంగా}{!!{domain}}
+ఏదైనా \tetoken{లెక్కించలేని}{!!{nonenumerable}} సమితిని తీసుకోండి; ఉదాహరణకు,
+$\Pow{\Nat}$ లేదా~$\Real$. కాబట్టి $\lnot \fn{Count}$కు అనంత నమూనాలు
+ఉన్నాయి, కానీ \tetoken{లెక్కించదగిన}{!!{enumerable}} నమూనాలు లేవు.
+\end{proof}
+
+\begin{thm}
+\tetoken{అనంతంగా లెక్కించదగిన}{!!{denumerable}} నమూనాలు ఉండి,
+\tetoken{లెక్కించలేని}{!!{nonenumerable}} నమూనాలు లేని \tetoken{వాక్యాలు}{!!{sentence}s} ఉన్నాయి.
+\end{thm}
+
+\begin{proof}
+$\fn{Count} \land \fn{Inf}$, $\Nat$లో సత్యం; కానీ $\Domain{M}$
+\tetoken{లెక్కించలేనిదిగా}{!!{nonenumerable}} ఉన్న ఏ
+\tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M}$లోనూ సత్యం కాదు.
+\end{proof}
+
+
+\end{document}

@@ -1,0 +1,77 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTESOLMET-20260921",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0332",
+      "OLP-0333",
+      "OLP-0334"
+    ],
+    "finding_count": 4
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTESOLMET-001",
+      "unit_id": "OLP-0332",
+      "classification": "confirmed_bound_variable_mismatch_in_addition_definition",
+      "source": {
+        "path": "content/second-order-logic/metatheory/second-order-arithmetic.tex",
+        "bytes": 5174,
+        "sha256": "a09f150a63d364e758adf2547e5237108b76d6ea7f08d23fe9373792b71bea0d",
+        "locator": "lines 116-125, second-order definition of addition"
+      },
+      "finding": "The displayed formula universally quantifies w but writes the recursion equation with x, leaving w unused and x free in the step clause.",
+      "controlling_evidence": "The immediately preceding equivalence requires u(n') = u(n)' for every n, so the quantified variable w must occur in both positions of the displayed step equation.",
+      "required_translation_handling": "Replace x by w in both occurrences of the recursion equation and add an adjacent OLTESOLMET-001 disclosure."
+    },
+    {
+      "finding_id": "OLTESOLMET-002",
+      "unit_id": "OLP-0333",
+      "classification": "confirmed_malformed_satisfaction_formula",
+      "source": {
+        "path": "content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex",
+        "bytes": 1875,
+        "sha256": "d145a2ab03186358310a7f917ed7aa9eb49e95efbb80c3a2e8356be818d25108",
+        "locator": "lines 29-34, reduction from true arithmetic to pure second-order validity"
+      },
+      "finding": "The satisfaction expression lacks the closing brace for its formula argument.",
+      "controlling_evidence": "The sentence immediately identifies the formula as P implies A, and the surrounding equivalence requires satisfaction of that complete conditional in M.",
+      "required_translation_handling": "Close the second argument after A and add an adjacent OLTESOLMET-002 disclosure."
+    },
+    {
+      "finding_id": "OLTESOLMET-003",
+      "unit_id": "OLP-0334",
+      "classification": "confirmed_duplicate_theorem_label",
+      "source": {
+        "path": "content/second-order-logic/metatheory/compactness.tex",
+        "bytes": 2406,
+        "sha256": "6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267",
+        "locator": "lines 33-36, theorem that second-order logic is not compact"
+      },
+      "finding": "The theorem repeats thm:sol-undecidable, the protected label already assigned to the preceding chapter's undecidability theorem.",
+      "controlling_evidence": "The theorem states failure of compactness, while the existing label belongs to a different theorem and duplicate labels prevent a unique reference target.",
+      "required_translation_handling": "Use the unique descriptive label thm:sol-not-compact and add an adjacent OLTESOLMET-003 disclosure."
+    },
+    {
+      "finding_id": "OLTESOLMET-004",
+      "unit_id": "OLP-0334",
+      "classification": "confirmed_finite_subset_membership_error",
+      "source": {
+        "path": "content/second-order-logic/metatheory/compactness.tex",
+        "bytes": 2406,
+        "sha256": "6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267",
+        "locator": "lines 55-59, finite-satisfiability argument"
+      },
+      "finding": "The proof claims that no A-at-least-n sentence with n greater than k belongs to Gamma, even though Gamma explicitly contains every such sentence.",
+      "controlling_evidence": "Only the selected finite subset Gamma_0 has bounded cardinality indices; choosing k above all indices that occur in Gamma_0 makes a k-element domain satisfy Gamma_0.",
+      "required_translation_handling": "State the bound for membership in Gamma_0, not Gamma, and add an adjacent OLTESOLMET-004 disclosure."
+    }
+  ]
+}
