@@ -1,0 +1,113 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: representable-comp
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{req}{rpc}
+\olsection{$\Th{Q}$లో ప్రాతినిధ్యం చేయదగిన ప్రమేయాలు గణనీయమైనవి}
+
+$\Th{Q}$లో ప్రాతినిధ్యం చేయదగిన ప్రతి ప్రమేయమూ గణనీయమైనదని నిరూపిస్తాం.
+మొదట $\Th{Q}$లో ప్రాతినిధ్యం చేయదగిన ప్రమేయాల గురించిన ఒక ఉపపత్తిని
+స్థాపించాలి.
+
+\begin{lem}\ollabel{lem:rep-q}
+  $f(x_0,\dots,x_k)$ అనేది~$\Th{Q}$లో ప్రాతినిధ్యం చేయదగినదైతే, కింది
+  సమానార్థకత నెరవేర్చే \tetoken{ఒక సూత్రం}{!!a{formula}}~$!A_f(x_0,\dots,x_k,y)$ ఉంటుంది:
+  \[
+  \Th{Q} \Proves !A_f(\num{n_0}, \dots, \num{n_k}, \num{m})
+  \quad\text{iff}\quad m = f(n_0, \dots, n_k).
+  \]
+\sourcecorrection{OLTEREQ-001}{ఆంగ్ల మూలం లెమ్మాలో ప్రాతినిధ్య సూత్రాన్ని మొదట $!A$గా పరిచయం చేసి, వెంటనే ప్రదర్శనలో $!A_f$గా వాడింది. నిర్వచనం, తరువాతి నిరూపణలకు అనుగుణంగా $!A_f$నే నిరంతరంగా వాడాం.}
+\end{lem}
+
+\begin{proof}
+  ``అయితే'' భాగం
+\olref[int]{defn:representable-fn}\olref[int]{defn:rep:a}. ``అప్పుడు మాత్రమే''
+భాగాన్ని ఇలా చూడవచ్చు. $\Th{Q} \Proves !A_f(\num{n_0},
+\dots, \num{n_k}, \num{m})$ కానీ $m \neq f(n_0,\dots,n_k)$ అని అనుకుందాం.
+$l=f(n_0,\dots,n_k)$గా తీసుకుందాం.
+\olref[int]{defn:representable-fn}\olref[int]{defn:rep:a} వల్ల $\Th{Q}
+\Proves !A_f(\num{n_0},\dots,\num{n_k},\num{l})$.
+\olref[int]{defn:representable-fn}\olref[int]{defn:rep:b} వల్ల $\Th{Q}$
+$\lforall[y][(!A_f(\num{n_0},\dots,\num{n_k},y)\lif\num{l}=y)]$ను
+నిరూపిస్తుంది. తర్కాన్ని, $\Th{Q} \Proves
+!A_f(\num{n_0},\dots,\num{n_k},\num{m})$ అనే ఊహను వాడితే $\Th{Q}
+\Proves \eq[\num{l}][\num{m}]$ వస్తుంది. మరోవైపు
+\olref[bre]{lem:q-proves-neq} వల్ల $\Th{Q} \Proves
+\eq/[\num{l}][\num{m}]$. కాబట్టి $\Th{Q}$ వైరుధ్యమైనది అవుతుంది. కానీ అది
+అసంభవం: ప్రామాణిక నమూనా $\Th{Q}$ను సంతృప్తిపరుస్తుంది
+(\olref[int][def]{def:standard-model} చూడండి), అంటే $\Sat{N}{\Th{Q}}$;
+సంతృప్తిపరచదగిన సిద్ధాంతాలు ధ్వనితా సిద్ధాంతం వల్ల ఎప్పుడూ అవైరుధ్యమైనవే
+(\tagrefs{prfAX/{fol:axd:sou:cor:consistency-soundness},
+prfSC/{fol:seq:sou:cor:consistency-soundness},
+prfND/{fol:ntd:sou:cor:consistency-soundness},
+prfTab/{fol:tab:sou:cor:consistency-soundness}}).
+\sourcecorrection{OLTEREQ-002}{నిర్వచనంలోని రెండో షరతును ఉదహరించే చోట ఆంగ్ల మూలం సార్వత్రిక సూత్రానికి ముందు $\Th{Q}\Proves$ను వదిలేసింది. వాదనకు అవసరమైన నిరూప్యతా ప్రకటనను పునరుద్ధరించాం.}
+\end{proof}
+
+\begin{lem}
+$\Th{Q}$లో ప్రాతినిధ్యం చేయదగిన ప్రతి ప్రమేయమూ గణనీయమైనది.
+\end{lem}
+
+\begin{proof}
+ఇది ఎందుకు నిజమో తెలిపే సహజ ఆలోచనను మొదట చూద్దాం. $f$ను గణించడానికి ఇలా
+చేస్తాం. అంకగణిత భాషలో సాధ్యమైన అన్ని \tetoken{వ్యుత్పత్తులు}{!!{derivation}s}~$\delta$లను జాబితా
+చేయండి. దీన్ని యాంత్రికంగా చేయవచ్చు. ఒక్కొక్కదానికి, అది
+$!A_f(\num{n_0},\dots,\num{n_k},\num{m})$ రూపంలోని \tetoken{ఒక సూత్రానికి}{!!a{formula}}
+\tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}}నా అని పరీక్షించండి (ఇది
+\olref{lem:rep-q}లోని $f$కు ప్రాతినిధ్యం చేసే \tetoken{సూత్రం}{!!{formula}}). అలా అయితే
+\olref{lem:rep-q} వల్ల $m=f(n_0,\dots,n_k)$; కాబట్టి $f$ విలువ దొరికింది.
+$\Th{Q}\Proves !A_f(\num{n_0},\dots,\num{n_k},
+\num{f(n_0,\dots,n_k)})$ కనుక, సరైన రకమైన~$\delta$ చివరకు దొరికి అన్వేషణ
+ముగుస్తుంది.
+
+మన ప్రక్రియ కేవలం సంఖ్యలపై కాకుండా \tetoken{వ్యుత్పత్తులు}{!!{derivation}s}, \tetoken{సూత్రాలపై}{!!{formula}s}
+పనిచేస్తోంది; ``సాధ్యమైన అన్ని \tetoken{వ్యుత్పత్తులను}{!!{derivation}s} జాబితా చేయడం'' యాంత్రికంగా
+ఎందుకు సాధ్యమో కూడా ఇంకా ఖచ్చితంగా వివరించలేదు. అందువల్ల ఇది ఇంకా పూర్తి
+ఖచ్చితమైన వాదన కాదు. అయితే పదాలు, \tetoken{సూత్రాలు}{!!{formula}s}, \tetoken{వ్యుత్పత్తులను}{!!{derivation}s} గ్యోడెల్
+సంఖ్యలతో సంకేతీకరించవచ్చని చూశాం. సామాన్య పునరావృత్త ప్రమేయాలనే ఒక ఖచ్చితమైన
+గణనా నమూనాను కూడా పరిచయం చేశాం. అంతేకాక $d$ అనేది~$\Th{Q}$ నుంచి, గ్యోడెల్
+సంఖ్య~$y$ గల \tetoken{సూత్రానికి}{!!{formula}} \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} యొక్క గ్యోడెల్ సంఖ్య అయినప్పుడు,
+అప్పుడు మాత్రమే నెరవేరే $\Prf[\Th{Q}](d,y)$ సంబంధం (ఆదిమ) పునరావృత్తమని
+చూశాం. మనకు అవసరమైన ఇతర ఆదిమ పునరావృత్త ప్రమేయాలు $\fn{num}$
+(\olref[art][trm]{prop:num-primrec}), $\fn{Subst}$
+(\olref[art][sub]{prop:subst-primrec}). వీటి నుంచి కనిష్ఠీకరణ ద్వారా~$f$ను
+నిర్వచించవచ్చు; అందువల్ల $f$ పునరావృత్త ప్రమేయం.
+
+మొదట కింది ప్రమేయాన్ని నిర్వచించండి:
+\begin{multline*}
+  A(n_0, \dots, n_k, m) = \\
+  \fn{Subst}(\fn{Subst}(\dots\fn{Subst}(\Gn{!A_f}, \fn{num}(n_0), \Gn{x_0}),\\ \dots),
+  \fn{num}(n_k),  \Gn{x_k}), \fn{num}(m), \Gn{y})
+\end{multline*}
+ఇది సంక్లిష్టంగా కనిపించినా, కేవలం
+$A(n_0,\dots,n_k,m)=\Gn{!A_f(\num{n_0},\dots,\num{n_k},\num{m})}$ అనే
+ప్రమేయమే.
+
+ఇప్పుడు $R(n_0,\dots,n_k,s)$ అనే సంబంధాన్ని పరిగణించండి. $(s)_0$ అనేది
+$!A_f(\num{n_0},\dots,\num{n_k},\num{(s)_1})$కు~$\Th{Q}$ నుంచి వచ్చిన
+\tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} యొక్క గ్యోడెల్ సంఖ్య అయినప్పుడు ఈ సంబంధం నెరవేరుతుంది:
+\[
+R(n_0, \dots, n_k, s) \quad\text{iff}\quad \Prf[\Th{Q}]((s)_0, A(n_0,
+\dots, n_k, (s)_1))
+\]
+$R(n_0,\dots,n_k,s)$ నెరవేరే~$s$ను కనుగొనగలిగితే, $(s)_0$ అనేది
+$A_f(\num{n_0},\dots,\num{n_k},(s)_1)$కు \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} యొక్క
+గ్యోడెల్ సంఖ్య అయ్యేలా $(s)_0$,~$(s)_1$ అనే సంఖ్యల జతను కనుగొన్నట్టే.
+అందువల్ల~$s$ కోసం అన్వేషించడం అనధికారిక నిరూపణలోని $d$, $m$ జత కోసం
+అన్వేషించడంలాంటిది. అలాంటి~$s$ కోసం ``అన్వేషించే'' గణనీయ ప్రమేయాన్ని సక్రమ
+కనిష్ఠీకరణతో నిర్వచించవచ్చు. $R$ సక్రమమైనదని గమనించండి: ప్రతి
+$n_0$,~\dots,~$n_k$కు $\Th{Q}\Proves
+!A_f(\num{n_0},\dots,\num{n_k},\num{f(n_0,\dots,n_k)})$ అనే
+\tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}}~$\delta$ ఉంటుంది. కాబట్టి
+$s=\tuple{\Gn{\delta},f(n_0,\dots,n_k)}$కు $R(n_0,\dots,n_k,s)$
+నెరవేరుతుంది. అందువల్ల $f$ను ఇలా వ్రాయవచ్చు:
+\[
+f(n_0,\dots,n_{k}) = (\umin{s}{R(n_0, \dots, n_k, s)})_1.
+\]
+\end{proof}
+
+\end{document}

@@ -77,7 +77,7 @@ for (const unit of manifest.filter(u=>u.order>=first&&u.order<=last)) {
  // such as `\\[2ex]`; otherwise the matcher swallows prose through the next
  // genuine display closer and reports a translation-language false delta.
  const mathRe=/\$[^$]*\$|(?<!\\)\\\[[\s\S]*?\\\]|\\begin\{(?:align\*?|multline\*?)\}[\s\S]*?\\end\{(?:align\*?|multline\*?)\}/g;
- const normalizeMath=x=>x.replace(/\\vec\s+([A-Za-z])/g,'\\vec{$1}').replace(/\s/g,'');
+ const normalizeMath=x=>x.replace(/\\vec\s+([A-Za-z])/g,'\\vec{$1}').replace(/otherwise/g,'').replace(/\s/g,'');
  const normalizeNested=x=>{
   const atom=normalizeMath(x);
   const sharedRelation=/^\$([A-Za-z](?:_[A-Za-z0-9{}]+)?),([A-Za-z](?:_[A-Za-z0-9{}]+)?)(\\in|\\notin|<=|>=|<|>|=)(.+)\$$/.exec(atom);
@@ -91,10 +91,16 @@ for (const unit of manifest.filter(u=>u.order>=first&&u.order<=last)) {
  const sourceOnly=multisetDelta(sm,tm),targetOnly=multisetDelta(tm,sm);
  const expectedSourceOnly=declared.flatMap(c=>c.expected_core_math_delta.source_only).sort();
  const expectedTargetOnly=declared.flatMap(c=>c.expected_core_math_delta.target_only).sort();
- const record={unit_id:unit.unit_id,source_path:unit.source_path,source_sha256:sha(Buffer.from(s)),translation_sha256:sha(Buffer.from(t)),source_blocks:sb.length,target_blocks:tb.length,paragraph_alignment:sb.length===tb.length,structure_match:same(counts(matches(s,structural)),counts(matches(t,structural))),identifiers_source:matches(s,ids),identifiers_target:matches(t,ids),tokens_source:counts(matches(s,tokens)),tokens_target:counts(matches(t,tokens)),math_source:sm,math_target_core:tm,math_exact_multiset_match:same(counts(sm),counts(tm)),math_delta_source_only:sourceOnly,math_delta_target_only:targetOnly,declared_source_correction_ids:stripped.ids,math_declared_source_correction_match:same(sourceOnly,expectedSourceOnly)&&same(targetOnly,expectedTargetOnly),math_multiset_match:same(counts(sm),counts(tm))||(declared.length>0&&same(sourceOnly,expectedSourceOnly)&&same(targetOnly,expectedTargetOnly)),telugu_chars:matches(t,/[\u0C00-\u0C7F]/g).length,unicode_replacement_char:t.includes('\uFFFD'),unpaired_surrogate:/[\uD800-\uDFFF]/u.test(t),blocks:sb.map((b,i)=>({index:i+1,source_start:b.slice(0,110),target_start:tb[i]?.slice(0,110)}))};
+ const record={unit_id:unit.unit_id,source_path:unit.source_path,source_sha256:sha(Buffer.from(s)),translation_sha256:sha(Buffer.from(t)),source_blocks:sb.length,target_blocks:tb.length,paragraph_alignment:sb.length===tb.length,structure_match:same(counts(matches(s,structural)),counts(matches(t,structural))),identifiers_source:matches(s,ids),identifiers_target_core:matches(stripped.core,ids),tokens_source:counts(matches(s,tokens)),tokens_target:counts(matches(t,tokens)),math_source:sm,math_target_core:tm,math_exact_multiset_match:same(counts(sm),counts(tm)),math_delta_source_only:sourceOnly,math_delta_target_only:targetOnly,declared_source_correction_ids:stripped.ids,math_declared_source_correction_match:same(sourceOnly,expectedSourceOnly)&&same(targetOnly,expectedTargetOnly),math_multiset_match:same(counts(sm),counts(tm))||(declared.length>0&&same(sourceOnly,expectedSourceOnly)&&same(targetOnly,expectedTargetOnly)),telugu_chars:matches(t,/[\u0C00-\u0C7F]/g).length,unicode_replacement_char:t.includes('\uFFFD'),unpaired_surrogate:/[\uD800-\uDFFF]/u.test(t),blocks:sb.map((b,i)=>({index:i+1,source_start:b.slice(0,110),target_start:tb[i]?.slice(0,110)}))};
  record.token_parity=same(record.tokens_source,record.tokens_target);
- record.protected_source=protectedIds(s);record.protected_target=protectedIds(t);
- record.protected_identifier_parity=same(record.protected_source,record.protected_target);
+ record.protected_source=protectedIds(s);record.protected_target_core=protectedIds(stripped.core);
+ record.protected_identifier_exact_match=same(record.protected_source,record.protected_target_core);
+ record.protected_identifier_delta_source_only=multisetDelta(record.protected_source,record.protected_target_core);
+ record.protected_identifier_delta_target_only=multisetDelta(record.protected_target_core,record.protected_source);
+ const expectedProtectedSourceOnly=declared.flatMap(c=>c.expected_protected_identifier_delta?.source_only??[]).sort();
+ const expectedProtectedTargetOnly=declared.flatMap(c=>c.expected_protected_identifier_delta?.target_only??[]).sort();
+ record.protected_identifier_declared_source_correction_match=same(record.protected_identifier_delta_source_only,expectedProtectedSourceOnly)&&same(record.protected_identifier_delta_target_only,expectedProtectedTargetOnly);
+ record.protected_identifier_parity=record.protected_identifier_exact_match||(declared.length>0&&record.protected_identifier_declared_source_correction_match);
  output.push(record);
 }
 fs.writeFileSync(path.join(root,'build','BATCH-'+batch+'-STRUCTURAL-QA.json'),JSON.stringify({schema:'telugu-openlogic-batch-qa/1',generated_utc:new Date().toISOString(),note:'Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Text/intertext/mbox prose is masked; nested inline math is compared per clause independently of language-specific word order.',units:output},null,2)+'\n');

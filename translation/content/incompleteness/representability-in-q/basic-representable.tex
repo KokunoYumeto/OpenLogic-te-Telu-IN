@@ -1,0 +1,228 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: basic-representable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{req}{bre}
+\olsection{ప్రాథమిక ప్రమేయాలు~$\Th{Q}$లో ప్రాతినిధ్యం చేయదగినవి}
+
+మొదట ప్రాథమిక ప్రమేయాలన్నీ~$\Th{Q}$లో ప్రాతినిధ్యం చేయదగినవని చూపాలి.
+చివరికి ప్రతి $k$-స్థానిక ప్రాథమిక ప్రమేయం $f(x_0,\dots,x_{k-1})$కు
+ప్రాతినిధ్యం చేసే \tetoken{ఒక సూత్రం}{!!a{formula}}~$!A_f(x_0,\dots,x_{k-1},y)$ను ఎలా
+కేటాయించాలో చూపాలి.
+
+శూన్యం, ఉత్తరగామి, కూడిక, గుణకారం, సర్వసమానతకు లక్షణ ప్రమేయం, ప్రక్షేపాలను
+ప్రాతినిధ్యం చేయగలం. ప్రతి సందర్భంలో తగిన ప్రాతినిధ్య సూత్రం పూర్తిగా
+సూటియైనదే. ఉదాహరణకు, శూన్యానికి $y=\Obj 0$, ఉత్తరగామికి
+\tetoken{సూత్రం}{!!{formula}}~$x_0'=y$, కూడికకు \tetoken{సూత్రం}{!!{formula}}~$(x_0+x_1)=y$ ప్రాతినిధ్యం చేస్తాయి. సంబంధిత
+\tetoken{వాక్యాలను}{!!{sentence}s} $\Th{Q}$ నిరూపించగలదని చూపడమే అసలు పని. ఉదాహరణకు, పై
+\tetoken{సూత్రం}{!!{formula}} కూడికకు ప్రాతినిధ్యం చేస్తుందని అనడం అంటే ప్రతి సహజ సంఖ్యల జత
+$m$, $n$కు $\Th{Q}$ కింది వాటిని నిరూపిస్తుందని చూపడం:
+\begin{align*}
+& \eq[\num n + \num m][\num {n+m}] \text{ మరియు}\\
+& \lforall[y][(\eq[(\num n + \num m)][y] \lif \eq[y][\num{n+m}])].
+\end{align*}
+
+\begin{prop}
+\ollabel{prop:rep-zero}
+శూన్య ప్రమేయం $\Zero(x)=0$కు~$\Th{Q}$లో
+$!A_{\Zero}(x,y)\ident\eq[y][\Obj 0]$ ప్రాతినిధ్యం చేస్తుంది.
+\end{prop}
+
+\begin{prop}
+\ollabel{prop:rep-succ}
+ఉత్తరగామి ప్రమేయం $\Succ(x)=x+1$కు~$\Th{Q}$లో
+$!A_{\Succ}(x,y)\ident\eq[y][x']$ ప్రాతినిధ్యం చేస్తుంది.
+\end{prop}
+
+\begin{prop}
+\ollabel{prop:rep-proj}
+ప్రక్షేప ప్రమేయం $\Proj{n}{i}(x_0,\dots,x_{n-1})=x_i$కు~$\Th{Q}$లో
+\[!A_{\Proj{n}{i}}(x_0, \dots, x_{n-1}, y) \ident \eq[y][x_i].\]
+ప్రాతినిధ్యం చేస్తుంది.
+\end{prop}
+
+\begin{prob}
+$\eq[y][\Obj 0]$, $\eq[y][x']$, $\eq[y][x_i]$లు వరుసగా $\Zero$, $\Succ$,
+$\Proj{n}{i}$లకు ప్రాతినిధ్యం చేస్తాయని నిరూపించండి.
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:rep-id}
+$=$ యొక్క లక్షణ ప్రమేయం
+\[
+\Char{=}(x_0, x_1) =
+\begin{cases}
+  1 & x_0=x_1 \text{ అయితే}\\
+  0 & \text{లేకపోతే}
+\end{cases}
+\]
+కు~$\Th{Q}$లో కింది సూత్రం ప్రాతినిధ్యం చేస్తుంది:
+\[
+  !A_{\Char{=}}(x_0, x_1, y) \ident (\eq[x_0][x_1] \land \eq[y][\num{1}]) \lor (\eq/[x_0][x_1] \land
+\eq[y][\num{0}]).
+\]
+\end{prop}
+
+ఈ నిరూపణకు కింది ఉపపత్తి అవసరం.
+
+\begin{lem}
+\ollabel{lem:q-proves-neq} సహజ సంఖ్యలు $n$, $m$లకు $n\neq m$ అయితే,
+$\Th{Q}\Proves\eq/[\num n][\num m]$.
+\end{lem}
+
+\begin{proof}
+ప్రతి $m$కూ $n\neq m$ అయితే $Q\Proves\eq/[\num n][\num m]$ అని
+$n$పై ఆగమనంతో చూపండి.
+
+ప్రాథమిక సందర్భంలో $n=0$. $m$ అనేది~$0$ కాకపోతే, ఏదో సహజ సంఖ్య~$k$కు
+$m=k+1$. $\lforall[x][\eq/[0][x']]$ అని చెప్పే ఒక స్వీకృతం మనకు ఉంది.
+ఒక పరిమాణక స్వీకృతంతో $x$ స్థానంలో $\num k$ను పెట్టి
+$\eq/[0][\num k']$ అని నిష్కర్షించవచ్చు. కానీ $\num k'$ అనేది $\num m$.
+
+ఆగమన మెట్టులో వాదన $n$కు నిజమని అనుకుని $n+1$ను పరిగణిస్తాం. $m$ ఏ సహజ
+సంఖ్యైనా కావచ్చు. రెండు అవకాశాలున్నాయి: $m=0$, లేదా ఏదో~$k$కు $m=k+1$.
+మొదటి సందర్భాన్ని పైన చెప్పినట్లే నిర్వహించవచ్చు. రెండో సందర్భంలో
+$n+1\neq k+1$ అనుకుందాం. అప్పుడు $n\neq k$. $n$కు ఆగమన పరికల్పన వల్ల
+$\Th{Q}\Proves\eq/[\num n][\num k]$. మనకు
+$\lforall[x][\lforall[y][\eq[x'][y']\lif\eq[x][y]]]$ అనే స్వీకృతం ఉంది.
+ఒక పరిమాణక స్వీకృతాన్ని వాడి
+$\eq[\num n'][\num k']\lif\eq[\num n][\num k]$ పొందుతాం. ప్రతిజ్ఞా తర్కంతో
+$\Th{Q}$లో $\eq/[\num n][\num k]\lif\eq/[\num n'][\num k']$ అని
+నిష్కర్షించవచ్చు. మోడస్ పోనెన్స్‌తో $\eq/[\num n'][\num k']$ వస్తుంది.
+$\num k'$ అనేది $\num m$ కనుక మనకు కావలసింది ఇదే.
+\end{proof}
+
+\begin{explain}
+ఈ ఉపపత్తి ఎక్కువేమీ చెప్పదని గమనించండి. సారాంశంగా, వేర్వేరు సంఖ్యాపదాలు
+వేర్వేరు వస్తువులను సూచిస్తాయని $\Th{Q}$ నిరూపించగలదని చెబుతుంది. ఉదాహరణకు,
+$0''\neq0'''$ అని $\Th{Q}$ నిరూపిస్తుంది. కానీ ఇది సాధారణంగా నెరవేరుతుందని
+చూపడానికి కొంత జాగ్రత్త అవసరం. మనం ఆగమనాన్ని వాడుతున్నప్పటికీ, అది
+$\Th{Q}$కు \emph{వెలుపల} చేసే ఆగమనమని కూడా గమనించండి.
+\end{explain}
+
+\begin{proof}[\olref{prop:rep-id} నిరూపణ]
+$n=m$ అయితే $\num{n}$, $\num{m}$ ఒకే పదం; $\Char{=}(n,m)=1$.
+అయితే $\Th{Q}\Proves(\eq[\num{n}][\num{m}]\land
+\eq[\num{1}][\num{1}])$ కనుక, అది
+$!A_{\Char{=}}(\num{n},\num{m},\num{1})$ను నిరూపిస్తుంది. $n\neq m$ అయితే
+$\Char{=}(n,m)=0$. \olref{lem:q-proves-neq} వల్ల
+$\Th{Q}\Proves\eq/[\num{n}][\num{m}]$; కాబట్టి
+$(\eq/[\num{n}][\num{m}]\land\Obj 0=\Obj 0)$ కూడా నిరూపిస్తుంది. అందువల్ల
+$\Th{Q}\Proves !A_{\Char{=}}(\num{n},\num{m},\num{0})$.
+
+రెండో భాగానికి కూడా రెండు సందర్భాలున్నాయి. $n=m$ అయితే
+$\Th{Q}\Proves\lforall[y][(!A_{\Char{=}}(\num{n},\num{m},y)
+\lif\eq[y][\num{1}])]$ అని చూపాలి. అనధికారికంగా వాదిద్దాం.
+$!A_{\Char{=}}(\num{n},\num{m},y)$, అంటే
+\[
+(\eq[\num{n}][\num{n}] \land \eq[y][\num{1}]) \lor
+(\eq/[\num{n}][\num{n}] \land \eq[y][\num{0}])
+\]
+అని అనుకుందాం. ఎడమ వికల్పాంగం తర్కం వల్ల $\eq[y][\num{1}]$ను ఇస్తుంది;
+కుడి వికల్పాంగం తర్కంతో నిరూపించదగిన $\eq[\num{n}][\num{n}]$కు విరుద్ధం.
+
+మరోవైపు $n\neq m$ అనుకుందాం. అప్పుడు
+$!A_{\Char{=}}(\num{n},\num{m},y)$ అనేది
+\[
+(\eq[\num{n}][\num{m}] \land \eq[y][\num{1}]) \lor
+(\eq/[\num{n}][\num{m}] \land \eq[y][\num{0}])
+\]
+అవుతుంది. ఇక్కడ ఎడమ వికల్పాంగం, \olref{lem:q-proves-neq} వల్ల $\Th{Q}$లో
+నిరూపించదగిన $\eq/[\num{n}][\num{m}]$కు విరుద్ధం; కుడి వికల్పాంగం
+$\eq[y][\num{0}]$ను ఇస్తుంది.
+\sourcecorrection{OLTEREQ-004}{ఆంగ్ల మూలం లక్షణ ప్రమేయాన్ని $!A_{\Char{=}}$గా నిర్వచించిన తరువాత నిరూపణలో $\Char=(n,m)$, $!A_=$ అనే అసంగత సంక్షిప్త రూపాలకు మారింది. నిర్వచించిన $\Char{=}$, $!A_{\Char{=}}$ సంకేతనాలనే నిరంతరంగా వాడాం.}
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:rep-add}
+కూడిక ప్రమేయం $\Add(x_0,x_1)=x_0+x_1$కు~$\Th{Q}$లో
+\[
+  !A_{\Add}(x_0, x_1, y) \ident \eq[y][(x_0 + x_1)].
+\]
+ప్రాతినిధ్యం చేస్తుంది.
+\end{prop}
+
+\begin{lem}
+\ollabel{lem:q-proves-add}
+$\Th{Q} \Proves \eq[(\num{n} + \num{m})][\num{n+m}]$.
+\end{lem}
+
+\begin{proof}
+దీన్ని $m$పై ఆగమనంతో నిరూపిస్తాం. $m=0$ అయితే
+$\Th{Q}\Proves\eq[(\num{n}+\Obj 0)][\num{n}]$ అని చూపాలి. ఇది
+$!Q_4$ స్వీకృతం వల్ల వస్తుంది. ఇప్పుడు వాదన $m$కు నిజమని అనుకుని $m+1$కు,
+అంటే $\Th{Q}\Proves\eq[(\num{n}+\num{m+1})][\num{n+m+1}]$ అని
+నిరూపిద్దాం. $\num{m+1}$ అనేది $\num{m}'$, $\num{n+m+1}$ అనేది
+$\num{n+m}'$ అని గమనించండి. $!Q_5$ వల్ల
+$\Th{Q}\Proves\eq[(\num{n}+\num{m}')][(\num{n}+\num{m})']$.
+ఆగమన పరికల్పన వల్ల
+$\Th{Q}\Proves\eq[(\num{n}+\num{m})][\num{n+m}]$. కాబట్టి
+$\Th{Q}\Proves\eq[(\num{n}+\num{m}')][\num{n+m}']$.
+\end{proof}
+
+\begin{proof}[\olref{prop:rep-add} నిరూపణ]
+$\Add$కు ప్రాతినిధ్యం చేసే \tetoken{సూత్రం}{!!{formula}}~$!A_\Add(x_0,x_1,y)$ అనేది
+$\eq[y][(x_0+x_1)]$. మొదట $\Add(n,m)=k$ అయితే
+$\Th{Q}\Proves !A_\Add(\num{n},\num{m},\num{k})$, అంటే
+$\Th{Q}\Proves\eq[\num{k}][(\num{n}+\num{m})]$ అని చూపుతాం. కానీ
+$k=n+m$ కనుక $\num{k}$ అనేది $\num{n+m}$నే; \olref{lem:q-proves-add}లో
+$\Th{Q}\Proves\eq[(\num{n}+\num{m})][\num{n+m}]$ అని ఇప్పటికే చూపాం.
+
+$\Add(n,m)=k$ అయితే
+\[
+\Th{Q} \Proves \lforall[y][(!A_\Add(\num{n}, \num{m}, y) \lif
+  \eq[y][\num{k}])].
+\]
+అని కూడా చూపాలి. $\eq[(\num{n}+\num{m})][y]$ ఉందని అనుకుందాం. ఎందుకంటే
+\[
+\Th{Q} \Proves \eq[(\num{n}+\num{m})][\num{n+m}],
+\]
+ఎడమ వైపును $\num{n+m}$తో ప్రతిస్థాపించి, ఏ~$y$కైనా
+$\eq[\num{n+m}][y]$ను పొందవచ్చు.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:rep-mult}
+గుణకార ప్రమేయం $\Mult(x_0,x_1)=x_0\cdot x_1$కు~$\Th{Q}$లో
+\[
+  !A_{\Mult}(x_0, x_1, y) \ident y = (x_0 \times x_1).
+\]
+ప్రాతినిధ్యం చేస్తుంది.
+\end{prop}
+
+\begin{proof} సాధన. \end{proof}
+
+\begin{lem}
+\ollabel{lem:q-proves-mult}
+$\Th{Q} \Proves \eq[(\num{n} \times \num{m})][\num{n \cdot m}]$.
+\end{lem}
+
+\begin{proof} సాధన. \end{proof}
+
+\begin{prob}
+\olref[inc][req][bre]{lem:q-proves-mult}ను నిరూపించండి.
+\end{prob}
+
+\begin{prob}
+\olref[inc][req][bre]{lem:q-proves-mult}ను వాడి
+\olref[inc][req][bre]{prop:rep-mult}ను నిరూపించండి.
+\end{prob}
+
+\begin{explain}
+  అంకగణిత భాషలోని ప్రమేయ సంకేతానికి $\times$ను, సంఖ్యలపై సాధారణ గుణకార
+  క్రియకు $\cdot$ను వాడతామని గుర్తుంచుకోండి. అందువల్ల $\cdot$ అనేది సంఖ్యలను
+  సూచించే వ్యక్తీకరణల మధ్య (ఉదాహరణకు $m\cdot n$లో) రావచ్చు; $\times$ మాత్రం
+  అంకగణిత భాషలోని పదాల మధ్య మాత్రమే (ఉదాహరణకు
+  $(\num{m}\times\num{n})$లో) వస్తుంది. ఇంకా గందరగోళం కలిగించే విషయం ఏమిటంటే,
+  \tetoken{ప్రమేయ సంకేతానికి}{!!{function}}, కూడిక క్రియకు రెండింటికీ $+$నే వాడతాం. అది పదాల మధ్య---
+  ఉదాహరణకు $(\num{n}+\num{m})$లో---వచ్చినప్పుడు అంకగణిత భాషలోని
+  $2$-స్థానిక \tetoken{ప్రమేయ సంకేతం}{!!{function}}; సంఖ్యల మధ్య---ఉదాహరణకు $n+m$లో---వచ్చినప్పుడు
+  కూడిక క్రియ. $\num{n+m}$ సందర్భమూ ఇందులోకే వస్తుంది: ఇది $n+m$ సంఖ్యకు
+  అనుగుణమైన ప్రామాణిక సంఖ్యాపదం.
+\end{explain}
+
+\end{document}

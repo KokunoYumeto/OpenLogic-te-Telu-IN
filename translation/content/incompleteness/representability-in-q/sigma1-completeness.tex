@@ -1,0 +1,278 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: sigma1-completeness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{inp}{s1c}
+\olsection{\texorpdfstring{$\Sigma_1$}{Sigma-1} సంపూర్ణత}
+
+$\Th{Q}$, దాని అవైరుధ్యమైన స్వీకృతీకరించదగిన విస్తరణలు అసంపూర్ణమైనప్పటికీ,
+సంఖ్యాపదాల గురించిన అనేక ప్రాథమిక వాస్తవాలను $\Th{Q}$ నిరూపిస్తుందని చూశాం.
+నిజానికి దీనిని గణనీయంగా విస్తరించవచ్చు. $\Th{Q}$లో నిరూపించగల విషయాల
+పరిధిని అర్థం చేసుకోవడానికి $\Delta_0$, $\Sigma_1$, $\Pi_1$ \tetoken{సూత్రాలు}{!!{formula}s}
+భావాలను పరిచయం చేస్తాం. స్థూలంగా, ఒక $\Sigma_1$ \tetoken{సూత్రం}{!!{formula}} అనేది
+$\lexists[x][!B(x)]$ రూపంలో ఉంటుంది; ఇక్కడ $!B$ను ప్రతిజ్ఞా సంయోజకాలు,
+పరిమిత పరిమాణకాలతో మాత్రమే నిర్మిస్తారు. $!A$ అనేది~$\Struct{N}$లో సత్యమైన
+$\Sigma_1$ \tetoken{వాక్యం}{!!{sentence}} అయితే $\Th{Q}\Proves !A$ అని చూపుతాం
+(\olref{thm:sigma1-completeness}).
+
+\begin{defn}
+\ollabel{defn:bd-quant}
+\emph{పరిమిత అస్తిత్వ \tetoken{సూత్రం}{!!{formula}}} అంటే
+$\lexists[x][(x<t\land !A(x))]$ రూపంలోని సూత్రం; ఇక్కడ $t$ ఏ పదమైనా కావచ్చు.
+దీన్ని ఆనవాయితీగా $\bexists{x<t}{!A(x)}$ అని వ్రాస్తాం.
+%
+\emph{పరిమిత సార్వత్రిక \tetoken{సూత్రం}{!!{formula}}} అంటే
+$\lforall[x][(x<t\lif !A(x))]$ రూపంలోని సూత్రం; ఇక్కడ $t$ ఏ పదమైనా కావచ్చు.
+దీన్ని ఆనవాయితీగా $\bforall{x<t}{!A(x)}$ అని వ్రాస్తాం.
+\end{defn}
+
+\begin{defn}
+\ollabel{defn:delta0-sigma1-pi1-frm}
+పరమాణు \tetoken{సూత్రాలు}{!!{formula}s} నుంచి ప్రతిజ్ఞా సంయోజకాలు, పరిమిత పరిమాణీకరణ మాత్రమే వాడి
+నిర్మించిన \tetoken{సూత్రం}{!!{formula}}~$!B$ను $\Delta_0$ అంటాం.
+%
+$!B$ అనేది $\Delta_0$ కాగా $!A\ident\lexists[x][!B(x)]$ అయితే,
+\tetoken{సూత్రం}{!!{formula}}~$!A$ను $\Sigma_1$ అంటాం.
+%
+$!B$ అనేది $\Delta_0$ కాగా $!A\ident\lforall[x][!B(x)]$ అయితే,
+\tetoken{సూత్రం}{!!{formula}}~$!A$ను $\Pi_1$ అంటాం.
+\end{defn}
+
+\begin{lem}
+\ollabel{lem:q-proves-clterm-id} $t$ ఒక సంవృత పదమనీ,
+$\Value{t}{N}=n$ అనీ అనుకుందాం. అప్పుడు $\Th{Q}\Proves\eq[t][\num n]$.
+\end{lem}
+
+\begin{proof}
+$t$ సంక్లిష్టతపై ఆగమనంతో దీన్ని నిరూపిస్తాం. ప్రాథమిక సందర్భంలో
+$\Value{\Obj 0}{N}=0$; $\num0\ident\Obj0$ కనుక
+$\Th{Q}\Proves\eq[\Obj0][\num0]$.
+%
+ఆగమన సందర్భానికి $t_1$, $t_2$లు
+$\Value{t_1}{N}=n_1$, $\Value{t_2}{N}=n_2$ అయ్యే పదాలనీ,
+$\Th{Q}\Proves\eq[t_1][\num n_1]$, $\Th{Q}\Proves\eq[t_2][\num n_2]$
+అనీ అనుకుందాం.
+
+అప్పుడు $\Value{(t_1')}{N}=n_1+1$. ఆగమన పరికల్పనకూ
+$\eq[\num{n_1}'][\num{n_1}']$ అనే \tetoken{సూత్రానికీ}{!!{formula}} మొదటిస్థాయి సర్వసమానతా
+నియమాలను వర్తింపజేస్తే $\Th{Q}\Proves\eq[t_1'][{\num n_1}']$;
+సంఖ్యాపదాల నిర్వచనం వల్ల $\Th{Q}\Proves\eq[t_1'][\num{n_1+1}]$.
+
+మొత్తాలకు
+\[
+      \Value{(t_1 + t_2)}{N}
+    = \Value{t_1}{N} + \Value{t_2}{N}
+    = n_1 + n_2.
+\]
+ఆగమన పరికల్పన, సర్వసమానతా నియమాల వల్ల
+$\Th{Q}\Proves\eq[t_1+t_2][\num{n_1}+t_2]$; ఆ నియమాలను రెండోసారి
+వర్తింపజేస్తే $\Th{Q}\Proves\eq[t_1+t_2][\num{n_1}+\num{n_2}]$.
+\olref[inc][req][bre]{lem:q-proves-add} వల్ల
+$\Th{Q}\Proves\eq[\num{n_1}+\num{n_2}][\num{n_1+n_2}]$; కాబట్టి
+$\Th{Q}\Proves\eq[t_1+t_2][\num{n_1+n_2}]$.
+
+$\times$కు కూడా \olref[inc][req][bre]{lem:q-proves-mult}ను వాడి ఇలాంటి
+వాదనే పనిచేస్తుంది.
+%
+ఇవి అంకగణితంలోని సంవృత పదాలన్నింటినీ పూర్తిచేస్తాయి. కాబట్టి
+$\Value{t}{N}=n$ అయ్యే ప్రతి సంవృత పదం~$t$కు
+$\Th{Q}\Proves\eq[t][\num n]$.
+\end{proof}
+
+\begin{prob}
+\olref{lem:q-proves-clterm-id} నిరూపణలో $\times$కు సంబంధించిన భాగాన్ని
+వివరంగా నిరూపించండి.
+\end{prob}
+
+\begin{lem}
+\ollabel{lem:atomic-completeness}
+$t_1$, $t_2$ సంవృత పదాలని అనుకుందాం. అప్పుడు
+\begin{enumerate}
+\item $\Value{t_1}{N}=\Value{t_2}{N}$ అయితే
+    $\Th{Q}\Proves\eq[t_1][t_2]$.
+\item $\Value{t_1}{N}\neq\Value{t_2}{N}$ అయితే
+    $\Th{Q}\Proves\eq/[t_1][t_2]$.
+\item $\Value{t_1}{N}<\Value{t_2}{N}$ అయితే
+    $\Th{Q}\Proves t_1<t_2$.
+\item $\Value{t_2}{N}\leq\Value{t_1}{N}$ అయితే
+    $\Th{Q}\Proves\lnot(t_1<t_2)$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+$t_1$, $t_2$లు ఇచ్చినప్పుడు $n=\Value{t_1}{N}$,
+$m=\Value{t_2}{N}$గా స్థిరపరుచుకుందాం.
+
+$!A\ident t_1=t_2$ అనుకుందాం. \olref{lem:q-proves-clterm-id} వల్ల
+$\Th{Q}\Proves\eq[t_1][\num n]$, $\Th{Q}\Proves\eq[t_2][\num m]$.
+$n=m$ అయితే $\Th{Q}\Proves\eq[\num n][\num m]$; సర్వసమానతా సంక్రమణ
+వల్ల $\Th{Q}\Proves\eq[t_1][t_2]$. $n\neq m$ అయితే
+$\Th{Q}\Proves\eq/[\num n][\num m]$; మళ్లీ సర్వసమానతా సంక్రమణ వల్ల
+$\Th{Q}\Proves\eq/[t_1][t_2]$.
+\sourcecorrection{OLTEREQ-008}{ఆంగ్ల మూలం $n=\Value{t_1}{N}$, $m=\Value{t_2}{N}$గా స్థిరపరచిన వెంటనే రెండో పదాన్నీ $\num n$తో సమానం చేసింది. తరువాతి $n=m$, $n\neq m$ సందర్భాలకు అవసరమైనట్లుగా $t_2$ను $\num m$తో సమానం చేశాం.}
+
+ఇప్పుడు $!A\ident t_1<t_2$గా తీసుకుందాం. రెండు సందర్భాల్లోనూ
+$x<y\liff\lexists[z][\eq[z'+x][y]]$ అని అన్ని $x,y$లకు చెప్పే $!Q_8$
+స్వీకృతాన్ని వాడతాం.
+
+$\Sat{N}{t_1<t_2}$ అనుకుందాం. అప్పుడు $n+k+1=m$ అయ్యే ఏదో $k\in\Nat$
+ఉంటుంది. \olref{lem:q-proves-clterm-id} వల్ల
+$\Th{Q}\Proves\eq[t_1][\num n]$, $\Th{Q}\Proves\eq[t_2][\num m]$;
+ఈ ఉపపత్తి మొదటి భాగం వల్ల
+$\Th{Q}\Proves\eq[\num n+{\num k}'][\num m]$. సర్వసమానతా సంక్రమణ వల్ల
+$\Th{Q}\Proves\eq[{\num k}'+t_1][t_2]$; కాబట్టి
+$\Th{Q}\Proves\lexists[z][\eq[z'+t_1][t_2]]$. $!Q_8$లోని కుడి-నుంచి-ఎడమకు
+దిశ వల్ల $\Th{Q}\Proves t_1<t_2$.
+
+దానికి బదులు $\Sat/{N}{t_1<t_2}$, అంటే $m\leq n$ అనుకుందాం.
+%
+$\Th{Q}$లో పనిచేస్తూ $t_1<t_2$ అని ఊహిద్దాం. $!Q_8$లోని
+ఎడమ-నుంచి-కుడికి దిశ వల్ల $\eq[z'+t_1][t_2]$ అయ్యే ఏదో~$z$ ఉంటుంది.
+$\Th{Q}\Proves\eq[t_1][\num n]$, $\Th{Q}\Proves\eq[t_2][\num m]$ కనుక
+$\eq[z'+\num n][\num m]$.
+%
+$m$పై వెలుపలి ఆగమనాన్ని $!Q_5$తో వాడితే
+$\eq[z'+\num{n-m}][\Obj 0]$. $m=n$ అయితే $\eq/[z'][\Obj 0]$; ఇది
+$!Q_2$ వల్ల వైరుధ్యం. $m<n$ అయితే $!Q_5$ను మళ్లీ వాడి
+$\eq[(z'+\num{n-m-1})'][\Obj 0]$; ఇది కూడా $!Q_2$ వల్ల వైరుధ్యం. కాబట్టి
+$\Th{Q}\Proves\lnot(t_1<t_2)$.
+\sourcecorrection{OLTEREQ-009}{ఆంగ్ల మూలం చివరి రెండు ఉత్తరగామి--శూన్య వైరుధ్యాలను $!Q_3$కు ఆపాదించింది. శూన్యం ఏ ఉత్తరగామికీ సమానం కాదని నేరుగా చెప్పేది $!Q_2$ కనుక, ఆ రెండు సూచనలను $!Q_2$గా సరిచేశాం.}
+\end{proof}
+
+\begin{lem}
+\ollabel{lem:bounded-quant-equiv}
+$!A$ ఒక \tetoken{సూత్రం}{!!a{formula}}, $t$ ఒక సంవృత పదం, $k=\Value{t}{N}$ అనుకుందాం.
+అప్పుడు
+\begin{enumerate}
+\item $\Th{Q}\Proves\bforall{x<t}{!A(x)}$ అయినప్పుడు, అప్పుడు మాత్రమే
+    $\Th{Q}\Proves !A(\num0)\land\dots\land !A(\num{k-1})$.
+\item $\Th{Q}\Proves\bexists{x<t}{!A(x)}$ అయినప్పుడు, అప్పుడు మాత్రమే
+    $\Th{Q}\Proves !A(\num0)\lor\dots\lor !A(\num{k-1})$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+    పరిమిత సార్వత్రిక పరిమాణక సందర్భాన్ని నిరూపిస్తాం.
+    $\Value{t}{N}=0$ అయితే సమానార్థకతలోని ఎడమ వైపు~$\Th{Q}$లో
+    నిరూపించదగినది; ఎందుకంటే \olref[inc][req][min]{lem:less-zero} వల్ల
+    $x<\num0$ అయ్యే సంఖ్య ఏదీ లేదు. అదేవిధంగా, శూన్య సంధానాన్ని
+    $\ltrue$గానే తీసుకోవచ్చు; అది కూడా~$\Th{Q}$లో నిరూపించదగినది.
+    \sourcecorrection{OLTEREQ-010}{పరిమిత సార్వత్రిక సందర్భపు $k=0$ ఆధారంలో ఆంగ్ల మూలం కుడి వైపును ``శూన్య వికల్పం'' అని పిలిచింది. ప్రదర్శనలోని $\land$కు, సత్యమైన $\ltrue$ విలువకు అనుగుణంగా దాన్ని శూన్య సంధానం అని సరిచేశాం.}
+    %
+    కాబట్టి ఏదో సహజ సంఖ్య~$k$కు $\Value{t}{N}=k+1$ అని అనుకుందాం.
+    \olref{lem:q-proves-clterm-id} వల్ల
+    $\bforall{x<\num{k+1}}{!A(x)}$ రూపంలోని \tetoken{ఒక సూత్రంతో}{!!a{formula}} పనిచేస్తున్నామని
+    అనుకోవచ్చు.
+
+    $\Th{Q}\Proves\bforall{x<\num{k+1}}{!A(x)}$ అనుకుని $n\leq k$గా
+    తీసుకోండి. \olref{lem:atomic-completeness} వల్ల
+    $\Th{Q}\Proves\num n<\num{k+1}$ కనుక, తర్కం వల్ల
+    $\Th{Q}\Proves !A(\num n)$. ప్రతి $n\leq k$కు ఈ వాస్తవాన్ని $k+1$
+    సార్లు వర్తింపజేస్తే, కావలసినట్లుగా
+    $\Th{Q}\Proves !A(\num0)\land\dots\land !A(\num k)$.
+
+    మరో దిశ కోసం $\Th{Q}\Proves
+    !A(\num0)\land\dots\land !A(\num k)$ అనుకుందాం. $\Th{Q}$లో పనిచేస్తూ
+    $x<\num{k+1}$ అనుకుందాం. \olref[inc][req][min]{lem:less-nsucc} వల్ల
+    $x=\num0\lor\dots\lor x=\num k$. కాబట్టి తర్కం వల్ల $!A(x)$;
+    అందువల్ల $\bforall{x<\num{k+1}}{!A(x)}$ అనే సార్వత్రిక ప్రకటన వస్తుంది.
+
+    పరిమిత అస్తిత్వ పరిమాణిత \tetoken{సూత్రాలకు}{!!{formula}s} సమానార్థకత నిరూపణ కూడా ఇలాంటిదే.
+\end{proof}
+
+\begin{prob}
+\olref{lem:bounded-quant-equiv}లో అస్తిత్వ సందర్భానికి వివరమైన నిరూపణ ఇవ్వండి.
+\end{prob}
+
+\begin{lem}
+\ollabel{lem:delta0-completeness}
+$!A$ అనేది~$\Struct{N}$లో సత్యమైన $\Delta_0$ \tetoken{వాక్యం}{!!{sentence}} అయితే,
+$\Th{Q}\Proves !A$.
+\end{lem}
+
+\begin{proof}
+\tetoken{సూత్రం}{!!{formula}} సంక్లిష్టతపై ఆగమనంతో నిరూపిస్తాం.
+%
+ప్రాథమిక సందర్భం \olref{lem:atomic-completeness} వల్ల వస్తుంది; కాబట్టి ఆగమన
+మెట్టుకు వెళ్దాం. సరళత కోసం నిషేధ సందర్భాన్ని, నిషేధం వర్తించే \tetoken{సూత్రం}{!!{formula}}
+నిర్మాణాన్ని బట్టి ఉపసందర్భాలుగా విభజిస్తాం.
+
+\begin{enumerate}
+\item $(!A\land !B)$ అనేది~$\Struct{N}$లో సత్యమని అనుకుందాం. అప్పుడు
+$!A$, $!B$ రెండూ~$\Struct{N}$లో సత్యం. ఆగమన పరికల్పన వల్ల
+$\Th{Q}\Proves !A$, $\Th{Q}\Proves !B$; కాబట్టి తర్కం వల్ల
+$\Th{Q}\Proves(!A\land !B)$.
+%
+\item $\lnot(!A\land !B)$ అనేది~$\Struct{N}$లో సత్యమని అనుకుందాం. అప్పుడు
+$\lnot !A$ లేదా $\lnot !B$~$\Struct{N}$లో సత్యం. సాధారణతకు భంగం లేకుండా
+మొదటిది సత్యమని అనుకుందాం. ఆగమన పరికల్పన వల్ల
+$\Th{Q}\Proves\lnot !A$; కాబట్టి తర్కం వల్ల
+$\Th{Q}\Proves\lnot(!A\land !B)$.
+%
+\item $(!A\lor !B)$ అనేది~$\Struct{N}$లో సత్యమని అనుకుందాం. అప్పుడు
+$!A$ అనేది~$\Struct{N}$లో సత్యం లేదా $!B$ అనేది~$\Struct{N}$లో సత్యం.
+సాధారణతకు భంగం లేకుండా మొదటిది
+సత్యమని అనుకుందాం. ఆగమన పరికల్పన వల్ల $\Th{Q}\Proves !A$; కాబట్టి
+$\Th{Q}\Proves(!A\lor !B)$.
+%
+\item $\lnot(!A\lor !B)$ అనేది~$\Struct{N}$లో సత్యమని అనుకుందాం. అప్పుడు
+$\lnot !A$, $\lnot !B$ రెండూ~$\Struct{N}$లో సత్యం. ఆగమన పరికల్పన వల్ల
+$\Th{Q}\Proves\lnot !A$, $\Th{Q}\Proves\lnot !B$. పర్యవసానంగా తర్కం వల్ల
+$\Th{Q}\Proves\lnot(!A\lor !B)$.
+%
+\item $\bforall{x<t}{!A(x)}$ అనేది~$\Struct{N}$లో సత్యమని అనుకుందాం; ఇక్కడ
+$t$ ఒక సంవృత పదం, $k=\Value{t}{N}$. ప్రతి $n<\Value{t}{N}$కూ
+$!A(\num n)$ అనేది~$\Struct{N}$లో సత్యమైతే, ఆగమన పరికల్పన, తర్కం వల్ల
+$\Th{Q}\Proves !A(\num0)\land\dots\land !A(\num{k-1})$.
+\olref{lem:bounded-quant-equiv} వల్ల
+$\Th{Q}\Proves\bforall{x<t}{!A(x)}$.
+%
+\item $\bexists{x<t}{!A(x)}$ రూపంలోని \tetoken{ఒక వాక్యం}{!!a{sentence}} అయిన పరిమిత అస్తిత్వ
+పరిమాణక సందర్భం, పరిమిత సార్వత్రిక పరిమాణక సందర్భంలాంటిదే.
+%
+\item $\lnot\bforall{x<t}{!A(x)}$ అనేది~$\Struct{N}$లో సత్యమని అనుకుందాం;
+ఇక్కడ $t$ సంవృత పదం. ఈ \tetoken{వాక్యం}{!!{sentence}},
+$\bexists{x<t}{\lnot !A(x)}$ అనే \tetoken{వాక్యానికి}{!!{sentence}} సమానం; ఆ సమానార్థకతను
+$\Th{Q}$లో వ్యుత్పత్తి చేయవచ్చు. కాబట్టి పరిమిత అస్తిత్వ పరిమాణకాలకు ఇచ్చిన
+వాదనను వర్తింపజేయవచ్చు.
+%
+\item అదేవిధంగా, $\lnot\bexists{x<t}!A(x)$ అనేది~$\Struct{N}$లో సత్యమని
+అనుకుందాం; ఇక్కడ $t$ సంవృత పదం. ఈ \tetoken{వాక్యం}{!!{sentence}}, $\Th{Q}$లో
+$\bforall{x<t}{\lnot !A(x)}$కు సమానం. కాబట్టి పరిమిత సార్వత్రిక
+పరిమాణకాలకు ఇచ్చిన వాదనను వర్తింపజేయవచ్చు.
+%
+\item చివరగా $\lnot !A$ అనేది~$\Struct{N}$లో సత్యమని అనుకుందాం. మిగిలిన
+సందర్భాలు: $!A$ పరమాణు సూత్రం కావడం, లేదా ఏదో $\Delta_0$ \tetoken{వాక్యం}{!!{sentence}}~$!B$కు
+$\lnot !A\ident\lnot\lnot !B$ కావడం. $!A$ పరమాణు సూత్రమైతే
+\olref{lem:atomic-completeness} వల్ల $\Th{Q}\Proves\lnot !A$.
+$\lnot !A\ident\lnot\lnot !B$ అయితే, తర్కం వల్ల అది~$\Th{Q}$లో~$!B$కు
+నిరూపణీయంగా సమానం. $\lnot !A$ అనేది~$\Struct{N}$లో సత్యం కనుక అదీ
+$\Struct{N}$లో సత్యం. కాబట్టి ఆగమన పరికల్పన వల్ల
+$\Th{Q}\Proves\lnot !A$.
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+\olref{lem:delta0-completeness}లో అస్తిత్వ సందర్భానికి వివరమైన నిరూపణ ఇవ్వండి.
+\end{prob}
+
+\begin{thm}
+\ollabel{thm:sigma1-completeness}
+$!A$ అనేది~$\Struct{N}$లో సత్యమైన $\Sigma_1$ \tetoken{వాక్యం}{!!{sentence}} అయితే,
+$\Th{Q}\Proves !A$.
+\end{thm}
+
+\begin{proof}
+$\lexists{x}!A(x)$ అనేది~$\Struct{N}$లో సత్యమైన $\Sigma_1$ \tetoken{వాక్యం}{!!{sentence}}
+అయితే, $s(x)=n$, $\Sat{N}{!A(x)}[s]$ అయ్యే ఒక సహజ సంఖ్య~$n$, ఒక చర
+కేటాయింపు~$s$ ఉంటాయి. సంతృప్తి సంబంధం గురించిన ప్రామాణిక వాస్తవాల వల్ల
+$\Sat{N}{!A(\num n)}$. కానీ $!A(\num n)$ ఒక $\Delta_0$ \tetoken{సూత్రం}{!!{formula}}; కాబట్టి
+\olref{lem:delta0-completeness} వల్ల $\Th{Q}\Proves !A(\num n)$; అందువల్ల
+తర్కం వల్ల $\Th{Q}\Proves\lexists[x][!A(x)]$ కూడా.
+\end{proof}
+
+\end{document}

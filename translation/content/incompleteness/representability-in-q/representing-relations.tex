@@ -1,0 +1,63 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: representing-relations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{req}{rel}
+
+\olsection{సంబంధాలకు ప్రాతినిధ్యం చేయడం}
+
+ఒక \emph{సంబంధం} ప్రాతినిధ్యం చేయదగినది అనడం అంటే ఏమిటో చెప్పుకుందాం.
+
+\begin{defn}
+\ollabel{defn:representing-relations} సహజ సంఖ్యలపై సంబంధం
+$R(x_0,\dots,x_k)$ను కింది షరతు నెరవేరితే~$\Th{Q}$లో
+\emph{ప్రాతినిధ్యం చేయదగినది} అంటాం: $R(n_0,\dots,n_k)$ సత్యమైనప్పుడల్లా
+$\Th{Q}$ అనేది $!A_R(\num{n_0},\dots,\num{n_k})$ను, $R(n_0,\dots,n_k)$ అసత్యమైనప్పుడల్లా
+$\Th{Q}$ అనేది $\lnot !A_R(\num{n_0},\dots,\num{n_k})$ను నిరూపించేలా ఒక
+సూత్రం $!A_R(x_0,\dots,x_k)$ ఉండాలి.
+\end{defn}
+
+\begin{thm}
+\ollabel{thm:representing-rels} ఒక సంబంధం~$\Th{Q}$లో ప్రాతినిధ్యం
+చేయదగినదైతే, అప్పుడు మాత్రమే అది గణనీయమైనది.
+\end{thm}
+
+\begin{proof}
+ముందుకు దిశ కోసం $R(x_0,\dots,x_k)$కు సూత్రం
+$!A_R(x_0,\dots,x_k)$ ప్రాతినిధ్యం చేస్తుందని అనుకుందాం. $R$ను గణించే
+క్రమవిధానం ఇది: $n_0$,~\dots,~$n_k$ నివేశంపై
+$!A_R(\num{n_0},\dots,\num{n_k})$ నిరూపణ కోసం, దాని నిషేధం
+$\lnot !A_R(\num{n_0},\dots,\num{n_k})$ నిరూపణ కోసం ఏకకాలంలో అన్వేషించండి.
+మన పరికల్పన వల్ల అన్వేషణ వాటిలో ఒకదాన్ని తప్పక కనుగొంటుంది. మొదటిదైతే
+``అవును'' అని, లేకపోతే ``కాదు'' అని నివేదించండి.
+
+మరో దిశలో $R(x_0,\dots,x_k)$ గణనీయమైనదని అనుకుందాం. నిర్వచనం ప్రకారం దీని
+అర్థం లక్షణ ప్రమేయం $\Char{R}(x_0,\dots,x_k)$ గణనీయమైనదని.
+\olref[int]{thm:representable-iff-comp} వల్ల $\Char{R}$కు ఏదో సూత్రం
+$!A_{\Char{R}}(x_0,\dots,x_k,y)$ ప్రాతినిధ్యం చేస్తుంది.
+$!A_R(x_0,\dots,x_k)$ను $!A_{\Char{R}}(x_0,\dots,x_k,\num{1})$గా
+తీసుకోండి. ఏ $n_0$,~\dots,~$n_k$లకైనా $R(n_0,\dots,n_k)$ సత్యమైతే
+$\Char{R}(n_0,\dots,n_k)=1$; అప్పుడు $\Th{Q}$ అనేది
+$!A_{\Char{R}}(\num{n_0},\dots,\num{n_k},\num{1})$ను, అందువల్ల
+$!A_R(\num{n_0},\dots,\num{n_k})$ను నిరూపిస్తుంది. మరోవైపు
+$R(n_0,\dots,n_k)$ అసత్యమైతే $\Char{R}(n_0,\dots,n_k)=0$. దీని అర్థం
+$\Th{Q}$ కిందిదాన్ని నిరూపిస్తుంది:
+\[
+\lforall[y][(!A_{\Char{R}}(\num{n_0}, \dots, \num{n_k}, y) \lif y =
+  \num{0})].
+\]
+$\Th{Q}$ అనేది $\eq/[\num{0}][\num{1}]$ను నిరూపిస్తుంది కనుక,
+$\Th{Q}$ అనేది $\lnot !A_{\Char{R}}(\num{n_0},\dots,\num{n_k},\num{1})$ను,
+అందువల్ల $\Th{Q}$ అనేది $\lnot !A_R(\num{n_0},\dots,\num{n_k})$ను కూడా నిరూపిస్తుంది.
+\end{proof}
+
+\begin{prob}
+$R$ అనేది~$\Th{Q}$లో ప్రాతినిధ్యం చేయదగినదైతే, $\Char{R}$ కూడా అలాంటిదేనని
+చూపండి.
+\end{prob}
+
+\end{document}

@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 279 of 722 draft units**. This log contains 71 terminology/sense decisions and 252 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 297 of 722 draft units**. This log contains 72 terminology/sense decisions and 262 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1711,6 +1711,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low semantic uncertainty because every specialized notion is fixed by an explicit coding definition, tuple position, primitive recursion or proof-checking predicate; medium to high nomenclatural uncertainty for arithmetization, formation-sequence and proof-predicate compounds pending independent native review
 
 - Please double-check: Please double-check whether “వాక్యనిర్మాణపు అంకగణితీకరణ / సంకేత సంకేతీకరణ / క్రమ సంకేతీకరణ / సంకేతసంఖ్య / గ్యోడెల్ సంఖ్య / గ్యోడెల్ సంఖ్యీకరణ / నిర్మాణ క్రమం / ఆదిమ పునరావృత్త వాక్యనిర్మాణ సంబంధం / ప్రతిస్థాపన / వ్యుత్పత్తి సంకేతసంఖ్య / అంత్య-సీక్వెంట్ / అంత్య-సూత్రం / ఉపసంహరణ చీటీ / తక్షణ ఉపవ్యుత్పత్తి / నిరూపణ విధేయం / సీక్వెంట్ కలనం / సహజ నిగమనం / స్వీకృతాధారిత వ్యుత్పత్తి” is idiomatic and technically standard for “arithmetization of syntax / symbol coding / sequence coding / code / Gödel number / Gödel numbering / formation sequence / primitive recursive syntactic relation / substitution / proof code / end-sequent / end-formula / discharge label / immediate subderivation / proof predicate / sequent calculus / natural deduction / axiomatic derivation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T072 — representability in Q / representing formula / beta function lemma / relatively prime / congruent modulo / greatest common divisor / least common multiple / Sunzi's theorem (Chinese Remainder Theorem) / simulation of primitive recursion / regular minimization / basic representable functions / closure under composition / representation of relations / Delta_0, Sigma_1 and Pi_1 formulas / bounded existential and universal formulas / closed term / Sigma_1 completeness
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: Qలో ప్రాతినిధ్యయోగ్యత / ప్రాతినిధ్య సూత్రం / బీటా ప్రమేయ ఉపపత్తి / పరస్పర ప్రధాన / మాడ్యులో సమానశేష / గరిష్ఠ సామాన్య భాజకం / కనిష్ఠ సామాన్య గుణిజం / సున్‌జి సిద్ధాంతం (చైనీయ శేష సిద్ధాంతం) / ఆదిమ పునరావృత్తి అనుకరణ / సక్రమ కనిష్ఠీకరణ / ప్రాతినిధ్యం చేయదగిన ప్రాథమిక ప్రమేయాలు / సంయుక్తం కింద సంవృతత / సంబంధాల ప్రాతినిధ్యం / Delta_0, Sigma_1, Pi_1 సూత్రాలు / పరిమిత అస్తిత్వ, సార్వత్రిక సూత్రాలు / సంవృత పదం / Sigma_1 సంపూర్ణత
+
+- Exact implementation: OLP-0289; incompleteness/representability-in-q/representability-in-q; content/incompleteness/representability-in-q/representability-in-q.tex:8 ↔ translation/content/incompleteness/representability-in-q/representability-in-q.tex:8 (OLP-0289-B004); printed/PDF page pending; OLP-0292; incompleteness/representability-in-q/beta-function; content/incompleteness/representability-in-q/beta-function.tex:9-10 ↔ translation/content/incompleteness/representability-in-q/beta-function.tex:9-10 (OLP-0292-B004); printed/PDF page pending; OLP-0292; incompleteness/representability-in-q/beta-function; content/incompleteness/representability-in-q/beta-function.tex:39-46 ↔ translation/content/incompleteness/representability-in-q/beta-function.tex:38-44 (OLP-0292-B008); printed/PDF page pending; OLP-0296; incompleteness/representability-in-q/minimization-representable; content/incompleteness/representability-in-q/minimization-representable.tex:9-10 ↔ translation/content/incompleteness/representability-in-q/minimization-representable.tex:9-10 (OLP-0296-B004); printed/PDF page pending; OLP-0298; incompleteness/representability-in-q/representing-relations; content/incompleteness/representability-in-q/representing-relations.tex:11 ↔ translation/content/incompleteness/representability-in-q/representing-relations.tex:11 (OLP-0298-B005); printed/PDF page pending; OLP-0300; incompleteness/representability-in-q/sigma1-completeness; content/incompleteness/representability-in-q/sigma1-completeness.tex:9-10 ↔ translation/content/incompleteness/representability-in-q/sigma1-completeness.tex:9-10 (OLP-0300-B004); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P025, PDF 87, printed 80, Indirect-proof heading and worked derivation; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P028, PDF 92, printed 85, Unary predicates, binary relations and quantifier classification; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P033, PDF 40, printed 33, Inference section heading and definition; TE-P034, PDF 308, printed 301, Main point 5, Cartesian product definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P005 supports native natural-number exposition; TE-P008, TE-P010--TE-P011 and TE-P034 support sequences, ordered tuples, relations and functions; TE-P003 and TE-P032 support theorem, proof and deduction prose; TE-P018 and TE-P024--TE-P029 support formal logic, formulas, derivations, predicates and quantifiers. The witnesses do not directly attest representability in Q, beta-function coding, Sunzi's or the Chinese Remainder Theorem, closure of representable functions, or the Delta_0/Sigma_1/Pi_1 hierarchy. The frozen definitions, beta construction, primitive-recursion simulation, closure proofs, representability conditions and completeness induction in OLP-0289--OLP-0300 control those exact senses; TE-T064, TE-T065, TE-T070 and TE-T071 supply the edition's earlier reversible choices. సున్‌జి, చైనీయ, రాబిన్సన్ and గ్యోడెల్ are source names, geographic adjectives or eponyms. Q, Delta_0, Sigma_1, Pi_1 and formula/function metavariables remain protected notation; no unexplained English technical headword remains in reader-facing prose
+
+- Alternatives: reuse the established number, function, relation, formula, proof and Q-theory register while making the beta, Sunzi, closure and arithmetical-hierarchy senses explicit from the adjacent definitions (chosen); leave the specialized representability vocabulary in untranslated English reader prose (rejected); collapse representability, computability and definability into one property (rejected because the chapter proves precise implications and equivalences); claim direct native attestation for Q-representability, beta coding, Sunzi’s theorem or the Delta_0/Sigma_1/Pi_1 hierarchy (rejected because the frozen definitions and proofs control those senses)
+
+- Uncertainty: Low semantic uncertainty because every specialized notion is fixed by explicit equations, definitions and proofs; medium to high nomenclatural uncertainty for Q-representability, beta coding and arithmetical-hierarchy compounds pending independent native review
+
+- Please double-check: Please double-check whether “Qలో ప్రాతినిధ్యయోగ్యత / ప్రాతినిధ్య సూత్రం / బీటా ప్రమేయ ఉపపత్తి / పరస్పర ప్రధాన / మాడ్యులో సమానశేష / గరిష్ఠ సామాన్య భాజకం / కనిష్ఠ సామాన్య గుణిజం / సున్‌జి సిద్ధాంతం (చైనీయ శేష సిద్ధాంతం) / ఆదిమ పునరావృత్తి అనుకరణ / సక్రమ కనిష్ఠీకరణ / ప్రాతినిధ్యం చేయదగిన ప్రాథమిక ప్రమేయాలు / సంయుక్తం కింద సంవృతత / సంబంధాల ప్రాతినిధ్యం / Delta_0, Sigma_1, Pi_1 సూత్రాలు / పరిమిత అస్తిత్వ, సార్వత్రిక సూత్రాలు / సంవృత పదం / Sigma_1 సంపూర్ణత” is idiomatic and technically standard for “representability in Q / representing formula / beta function lemma / relatively prime / congruent modulo / greatest common divisor / least common multiple / Sunzi's theorem (Chinese Remainder Theorem) / simulation of primitive recursion / regular minimization / basic representable functions / closure under composition / representation of relations / Delta_0, Sigma_1 and Pi_1 formulas / bounded existential and universal formulas / closed term / Sigma_1 completeness” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -7759,3 +7783,243 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check that the unary Correct call in the LK Deriv definition is closed before the bounded-universal body is closed.
+
+## REV-OLTEREQ-001 — OLTEREQ-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used A_f consistently in the lemma; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0291; incompleteness/representability-in-q/representable-comp; lines 16-23, representability lemma ↔ translation/content/incompleteness/representability-in-q/representable-comp.tex:16-23 (OLP-0291-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTEREQ-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used A_f consistently in the lemma; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the representing formula is named A_f consistently in the lemma.
+
+## REV-OLTEREQ-002 — OLTEREQ-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored the Th(Q) proves prefix before the universal formula; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0291; incompleteness/representability-in-q/representable-comp; lines 31-38, use of representability clause (b) ↔ translation/content/incompleteness/representability-in-q/representable-comp.tex:40-48 (OLP-0291-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTEREQ-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the Th(Q) proves prefix before the universal formula; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the restored Th(Q)-proves prefix makes the use of representability clause (b) explicit.
+
+## REV-OLTEREQ-003 — OLTEREQ-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used h(vector x,y) from the defining equations; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0293; incompleteness/representability-in-q/prim-rec; lines 12-19, primitive-recursion introduction ↔ translation/content/incompleteness/representability-in-q/prim-rec.tex:12-20 (OLP-0293-B005); printed/PDF page pending
+
+- Authorities actually checked: OLTEREQ-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used h(vector x,y) from the defining equations; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the primitive-recursion prose uses h(vector x,y), matching the displayed defining equations.
+
+## REV-OLTEREQ-004 — OLTEREQ-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used the defined Char{=} and A_{Char{=}} notation throughout; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0294; incompleteness/representability-in-q/basic-representable; lines 56-68 and 110-124, equality characteristic function ↔ translation/content/incompleteness/representability-in-q/basic-representable.tex:112-137 (OLP-0294-B020); printed/PDF page pending
+
+- Authorities actually checked: OLTEREQ-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used the defined Char{=} and A_{Char{=}} notation throughout; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the equality characteristic-function notation is consistently Char{=} and A_{Char{=}}.
+
+## REV-OLTEREQ-005 — OLTEREQ-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: placed all g_i and A_f conjuncts inside the balanced existential scope; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0295; incompleteness/representability-in-q/composition-representable; lines 74-88, generalized composition proposition ↔ translation/content/incompleteness/representability-in-q/composition-representable.tex:74-91 (OLP-0295-B012); printed/PDF page pending
+
+- Authorities actually checked: OLTEREQ-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: placed all g_i and A_f conjuncts inside the balanced existential scope; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that every g_i conjunct and the A_f conjunct lie inside the balanced existential scope.
+
+## REV-OLTEREQ-006 — OLTEREQ-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: replaced the first duplicated prop:rep2 reference with prop:rep1; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0295; incompleteness/representability-in-q/composition-representable; lines 95-99, composition exercise ↔ translation/content/incompleteness/representability-in-q/composition-representable.tex:96-102 (OLP-0295-B014); printed/PDF page pending
+
+- Authorities actually checked: OLTEREQ-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: replaced the first duplicated prop:rep2 reference with prop:rep1; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the two composition exercises now refer to prop:rep1 and prop:rep2 respectively.
+
+## REV-OLTEREQ-007 — OLTEREQ-007
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: added the successor-of-hypothesis equation and both Q5 rewrites while retaining step5 and step6; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0296; incompleteness/representability-in-q/minimization-representable; lines 51-62, successor/addition induction step ↔ translation/content/incompleteness/representability-in-q/minimization-representable.tex:49-62 (OLP-0296-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTEREQ-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: added the successor-of-hypothesis equation and both Q5 rewrites while retaining step5 and step6; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the repaired induction step uses the successor of the induction hypothesis and the two required Q5 rewrites.
+
+## REV-OLTEREQ-008 — OLTEREQ-008
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: equated t_2 with numeral m; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0300; incompleteness/representability-in-q/sigma1-completeness; lines 111-121, atomic equality completeness ↔ translation/content/incompleteness/representability-in-q/sigma1-completeness.tex:109-116 (OLP-0300-B016); printed/PDF page pending
+
+- Authorities actually checked: OLTEREQ-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: equated t_2 with numeral m; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the second closed term is equated with numeral m rather than numeral n.
+
+## REV-OLTEREQ-009 — OLTEREQ-009
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: cited Q2 for both successor-versus-zero contradictions; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0300; incompleteness/representability-in-q/sigma1-completeness; lines 137-149, non-less-than case ↔ translation/content/incompleteness/representability-in-q/sigma1-completeness.tex:130-143 (OLP-0300-B019); printed/PDF page pending
+
+- Authorities actually checked: OLTEREQ-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: cited Q2 for both successor-versus-zero contradictions; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that both successor-versus-zero contradictions cite Q2 rather than Q3.
+
+## REV-OLTEREQ-010 — OLTEREQ-010
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: called the zero-member universal expansion an empty conjunction; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0300; incompleteness/representability-in-q/sigma1-completeness; lines 163-169, bounded-universal base case ↔ translation/content/incompleteness/representability-in-q/sigma1-completeness.tex:153-164 (OLP-0300-B021); printed/PDF page pending
+
+- Authorities actually checked: OLTEREQ-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: called the zero-member universal expansion an empty conjunction; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the zero-member bounded-universal expansion is described as an empty conjunction.

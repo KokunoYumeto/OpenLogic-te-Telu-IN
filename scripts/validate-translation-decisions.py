@@ -63,10 +63,18 @@ def main() -> None:
     decisions = register["decisions"]
     term_records = jsonl(data_dir / "TERM_DECISIONS.jsonl")
     correction_records = [item for item in jsonl(data_dir / "SOURCE_CORRECTIONS.jsonl") if item["status"].startswith("applied")]
+    source_manifest = jsonl(data_dir / "SOURCE_MANIFEST.jsonl")
+    expected_source_units = sum(
+        (repo / "translation" / Path(str(item["source_path"]))).is_file()
+        for item in source_manifest
+    )
     if len(decisions) != len(term_records) + len(correction_records):
         raise ValueError("Decision count does not match the primary ledgers")
-    if register["edition_release"]["source_units"] != 279:
-        raise ValueError("Edition coverage is not the expected 279 source units")
+    if register["edition_release"]["source_units"] != expected_source_units:
+        raise ValueError(
+            "Edition coverage does not match translated files in SOURCE_MANIFEST.jsonl: "
+            f"{register['edition_release']['source_units']} != {expected_source_units}"
+        )
     generator = register["generator"]
     generator_path = repo / Path(generator["path_or_uri"])
     generator_bytes = generator_path.read_bytes()

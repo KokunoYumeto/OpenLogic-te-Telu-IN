@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **279 of 722 source units drafted**. This readable view contains all 323 decisions and 596 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **297 of 722 source units drafted**. This readable view contains all 334 decisions and 613 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2046,6 +2046,37 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T071-OCC-010; OLP-0287; OLP-0287-B005; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:12-22 bytes 247-852 SHA-256 06044a4b70f61e07629055bfc3cfb7a940ce5ccfc09efe1a5473e9c5e3af3d47; target translation/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:12-24 bytes 261-1773 SHA-256 582c5872374acf75f4f432ee664a5e92f9bef34d621d4d5e6891ab94ed6bf655; reader page pending.
   - te-Telu-IN-TE-T071-OCC-011; OLP-0287; OLP-0287-B005; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:12-22 bytes 247-852 SHA-256 06044a4b70f61e07629055bfc3cfb7a940ce5ccfc09efe1a5473e9c5e3af3d47; target translation/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:12-24 bytes 261-1773 SHA-256 582c5872374acf75f4f432ee664a5e92f9bef34d621d4d5e6891ab94ed6bf655; reader page pending.
   - te-Telu-IN-TE-T071-OCC-012; OLP-0288; OLP-0288-B004; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:9-10 bytes 163-235 SHA-256 6498fe743671727c99bee3ff39efb8e83bf46be470a8c2b613b62a8757c3e4eb; target translation/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:9-10 bytes 163-265 SHA-256 0d1dcd92c3d4b41387d8f79e705093ded73cec02e437baf78c60711acdccc46e; reader page pending.
+
+## te-Telu-IN-TE-T072 — representability in Q / representing formula / beta function lemma / relatively prime / congruent modulo / greatest common divisor / least common multiple / Sunzi's theorem (Chinese Remainder Theorem) / simulation of primitive recursion / regular minimization / basic representable functions / closure under composition / representation of relations / Delta_0, Sigma_1 and Pi_1 formulas / bounded existential and universal formulas / closed term / Sigma_1 completeness
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: Qలో ప్రాతినిధ్యయోగ్యత / ప్రాతినిధ్య సూత్రం / బీటా ప్రమేయ ఉపపత్తి / పరస్పర ప్రధాన / మాడ్యులో సమానశేష / గరిష్ఠ సామాన్య భాజకం / కనిష్ఠ సామాన్య గుణిజం / సున్‌జి సిద్ధాంతం (చైనీయ శేష సిద్ధాంతం) / ఆదిమ పునరావృత్తి అనుకరణ / సక్రమ కనిష్ఠీకరణ / ప్రాతినిధ్యం చేయదగిన ప్రాథమిక ప్రమేయాలు / సంయుక్తం కింద సంవృతత / సంబంధాల ప్రాతినిధ్యం / Delta_0, Sigma_1, Pi_1 సూత్రాలు / పరిమిత అస్తిత్వ, సార్వత్రిక సూత్రాలు / సంవృత పదం / Sigma_1 సంపూర్ణత
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “representability in Q / representing formula / beta function lemma / relatively prime / congruent modulo / greatest common divisor / least common multiple / Sunzi's theorem (Chinese Remainder Theorem) / simulation of primitive recursion / regular minimization / basic representable functions / closure under composition / representation of relations / Delta_0, Sigma_1 and Pi_1 formulas / bounded existential and universal formulas / closed term / Sigma_1 completeness” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low semantic uncertainty because every specialized notion is fixed by explicit equations, definitions and proofs; medium to high nomenclatural uncertainty for Q-representability, beta coding and arithmetical-hierarchy compounds pending independent native review
+
+- Rationale: TE-P005 supports native natural-number exposition; TE-P008, TE-P010--TE-P011 and TE-P034 support sequences, ordered tuples, relations and functions; TE-P003 and TE-P032 support theorem, proof and deduction prose; TE-P018 and TE-P024--TE-P029 support formal logic, formulas, derivations, predicates and quantifiers. The witnesses do not directly attest representability in Q, beta-function coding, Sunzi's or the Chinese Remainder Theorem, closure of representable functions, or the Delta_0/Sigma_1/Pi_1 hierarchy. The frozen definitions, beta construction, primitive-recursion simulation, closure proofs, representability conditions and completeness induction in OLP-0289--OLP-0300 control those exact senses; TE-T064, TE-T065, TE-T070 and TE-T071 supply the edition's earlier reversible choices. సున్‌జి, చైనీయ, రాబిన్సన్ and గ్యోడెల్ are source names, geographic adjectives or eponyms. Q, Delta_0, Sigma_1, Pi_1 and formula/function metavariables remain protected notation; no unexplained English technical headword remains in reader-facing prose
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P025 [checked_context_only], PDF page 87; printed page 80; Indirect-proof heading and worked derivation; Direct indirect-proof and formal-proof register; no direct tableau or assumption-discharge label. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P028 [checked_context_only], PDF page 92; printed page 85; Unary predicates, binary relations and quantifier classification; Direct quantifier taxonomy and predicate/relation context. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C005:TE-P033 [checked_context_only], PDF page 40; printed page 33; Inference section heading and definition; Direct inference and explanatory register; derivation headword is separately witnessed at TE-P024. | TE-C004:TE-P034 [checked_context_only], PDF page 308; printed page 301; Main point 5, Cartesian product definition; Direct ordered-pair and Cartesian-product terminology; singular క్రమయుగ్మం is a transparent inflection.
+
+- Alternatives: leave the specialized representability vocabulary in untranslated English reader prose [rejected: rejected] | collapse representability, computability and definability into one property [rejected: rejected because the chapter proves precise implications and equivalences] | claim direct native attestation for Q-representability, beta coding, Sunzi’s theorem or the Delta_0/Sigma_1/Pi_1 hierarchy [rejected: rejected because the frozen definitions and proofs control those senses]
+
+- Review question: Please double-check whether “Qలో ప్రాతినిధ్యయోగ్యత / ప్రాతినిధ్య సూత్రం / బీటా ప్రమేయ ఉపపత్తి / పరస్పర ప్రధాన / మాడ్యులో సమానశేష / గరిష్ఠ సామాన్య భాజకం / కనిష్ఠ సామాన్య గుణిజం / సున్‌జి సిద్ధాంతం (చైనీయ శేష సిద్ధాంతం) / ఆదిమ పునరావృత్తి అనుకరణ / సక్రమ కనిష్ఠీకరణ / ప్రాతినిధ్యం చేయదగిన ప్రాథమిక ప్రమేయాలు / సంయుక్తం కింద సంవృతత / సంబంధాల ప్రాతినిధ్యం / Delta_0, Sigma_1, Pi_1 సూత్రాలు / పరిమిత అస్తిత్వ, సార్వత్రిక సూత్రాలు / సంవృత పదం / Sigma_1 సంపూర్ణత” is idiomatic and technically standard for “representability in Q / representing formula / beta function lemma / relatively prime / congruent modulo / greatest common divisor / least common multiple / Sunzi's theorem (Chinese Remainder Theorem) / simulation of primitive recursion / regular minimization / basic representable functions / closure under composition / representation of relations / Delta_0, Sigma_1 and Pi_1 formulas / bounded existential and universal formulas / closed term / Sigma_1 completeness” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T072-OCC-001; OLP-0289; OLP-0289-B004; source upstream/content/incompleteness/representability-in-q/representability-in-q.tex:8 bytes 138-189 SHA-256 6715dd11caaa6921c31b7cc305ac46ff98763c3a924626870473543ab5551100; target translation/content/incompleteness/representability-in-q/representability-in-q.tex:8 bytes 138-227 SHA-256 8c612f5d29b2a5aa388c1e49549ab836983c29e545b88b4158afdaeccdbe2e9c; reader page pending.
+  - te-Telu-IN-TE-T072-OCC-002; OLP-0292; OLP-0292-B004; source upstream/content/incompleteness/representability-in-q/beta-function.tex:9-10 bytes 163-224 SHA-256 041d2d3510e2d838d1631634a22a8d5eeb0fb5942df402382cafab3d82b6f5d0; target translation/content/incompleteness/representability-in-q/beta-function.tex:9-10 bytes 163-254 SHA-256 697ed0412f3db970ec964b59da87445c3efaf27d27553c89ef2816307e65daba; reader page pending.
+  - te-Telu-IN-TE-T072-OCC-003; OLP-0292; OLP-0292-B008; source upstream/content/incompleteness/representability-in-q/beta-function.tex:39-46 bytes 1577-2076 SHA-256 041d2d3510e2d838d1631634a22a8d5eeb0fb5942df402382cafab3d82b6f5d0; target translation/content/incompleteness/representability-in-q/beta-function.tex:38-44 bytes 3183-4376 SHA-256 697ed0412f3db970ec964b59da87445c3efaf27d27553c89ef2816307e65daba; reader page pending.
+  - te-Telu-IN-TE-T072-OCC-004; OLP-0296; OLP-0296-B004; source upstream/content/incompleteness/representability-in-q/minimization-representable.tex:9-10 bytes 176-263 SHA-256 396bbd36dbb04280e2521c9fb1af6b07ef3084e0205917c22eb308362f035e94; target translation/content/incompleteness/representability-in-q/minimization-representable.tex:9-10 bytes 176-340 SHA-256 839209250cc87d66cff1a7edacc5ff3567111e6789ccaa41ac3a1b567dcf2a8b; reader page pending.
+  - te-Telu-IN-TE-T072-OCC-005; OLP-0298; OLP-0298-B005; source upstream/content/incompleteness/representability-in-q/representing-relations.tex:11 bytes 198-233 SHA-256 97b0cb4406cc953b30d2006dc7e27ef8262a6f82e8926186eefbdb0a5602ef55; target translation/content/incompleteness/representability-in-q/representing-relations.tex:11 bytes 198-291 SHA-256 9575eb5d81509672545f69018411d8be2642fc90608d5fdd8283ac640fea5cc7; reader page pending.
+  - te-Telu-IN-TE-T072-OCC-006; OLP-0300; OLP-0300-B004; source upstream/content/incompleteness/representability-in-q/sigma1-completeness.tex:9-10 bytes 169-256 SHA-256 9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d; target translation/content/incompleteness/representability-in-q/sigma1-completeness.tex:9-10 bytes 169-268 SHA-256 88db2e18b64d55eefbf53ba9332704a9ba80e6aa0622e47e09bacc3eff59d5cd; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -8674,3 +8705,264 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEART-014-OCC-001; OLP-0286; OLP-0286-B021; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:240-247 bytes 9641-9950 SHA-256 841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b; target translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:244-249 bytes 17466-17957 SHA-256 dc8dfef5116ae6e2e4ccd445f010c74f85173360aec30717a493acef505ed611; reader page pending.
+
+## te-Telu-IN-OLTEREQ-001 — OLTEREQ-001: confirmed formula name inconsistency
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used A_f consistently in the lemma; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed formula name inconsistency at lines 16-23, representability lemma, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEREQ-20260920:OLTEREQ-001 [checked_supports], content/incompleteness/representability-in-q/representable-comp.tex; lines 16-23, representability lemma; confirmed_formula_name_inconsistency; used A_f consistently in the lemma; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the representing formula is named A_f consistently in the lemma.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEREQ-001-OCC-001; OLP-0291; OLP-0291-B006; source upstream/content/incompleteness/representability-in-q/representable-comp.tex:16-23 bytes 417-682 SHA-256 d5b487962fa2cdb7c4aa920366ccd501d5b83c9e9308861906906b802cd856ef; target translation/content/incompleteness/representability-in-q/representable-comp.tex:16-23 bytes 731-1633 SHA-256 527dd1ec99d55ffc0c10395303820e190b6a1a3fe3a3632658355848a79e3d59; reader page pending.
+
+## te-Telu-IN-OLTEREQ-002 — OLTEREQ-002: confirmed missing provability prefix
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored the Th(Q) proves prefix before the universal formula; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing provability prefix at lines 31-38, use of representability clause (b), preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEREQ-20260920:OLTEREQ-002 [checked_supports], content/incompleteness/representability-in-q/representable-comp.tex; lines 31-38, use of representability clause (b); confirmed_missing_provability_prefix; restored the Th(Q) proves prefix before the universal formula; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the restored Th(Q)-proves prefix makes the use of representability clause (b) explicit.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEREQ-002-OCC-001; OLP-0291; OLP-0291-B007; source upstream/content/incompleteness/representability-in-q/representable-comp.tex:31-38 bytes 938-1387 SHA-256 d5b487962fa2cdb7c4aa920366ccd501d5b83c9e9308861906906b802cd856ef; target translation/content/incompleteness/representability-in-q/representable-comp.tex:40-48 bytes 2652-3863 SHA-256 527dd1ec99d55ffc0c10395303820e190b6a1a3fe3a3632658355848a79e3d59; reader page pending.
+
+## te-Telu-IN-OLTEREQ-003 — OLTEREQ-003: confirmed argument vector typo
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used h(vector x,y) from the defining equations; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed argument vector typo at lines 12-19, primitive-recursion introduction, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEREQ-20260920:OLTEREQ-003 [checked_supports], content/incompleteness/representability-in-q/prim-rec.tex; lines 12-19, primitive-recursion introduction; confirmed_argument_vector_typo; used h(vector x,y) from the defining equations; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the primitive-recursion prose uses h(vector x,y), matching the displayed defining equations.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEREQ-003-OCC-001; OLP-0293; OLP-0293-B005; source upstream/content/incompleteness/representability-in-q/prim-rec.tex:12-19 bytes 227-593 SHA-256 ec7c33837767fa024b45506d818a6601efa0523abef7c474881281d6c7e969a9; target translation/content/incompleteness/representability-in-q/prim-rec.tex:12-20 bytes 280-1359 SHA-256 7bb89d083bc6dde82416321234bc5926d93e6554fff1f170da55d342c7de8181; reader page pending.
+
+## te-Telu-IN-OLTEREQ-004 — OLTEREQ-004: confirmed characteristic function notation inconsistency
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used the defined Char{=} and A_{Char{=}} notation throughout; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed characteristic function notation inconsistency at lines 56-68 and 110-124, equality characteristic function, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEREQ-20260920:OLTEREQ-004 [checked_supports], content/incompleteness/representability-in-q/basic-representable.tex; lines 56-68 and 110-124, equality characteristic function; confirmed_characteristic_function_notation_inconsistency; used the defined Char{=} and A_{Char{=}} notation throughout; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the equality characteristic-function notation is consistently Char{=} and A_{Char{=}}.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEREQ-004-OCC-001; OLP-0294; OLP-0294-B011; source upstream/content/incompleteness/representability-in-q/basic-representable.tex:56-68 bytes 1960-2248 SHA-256 0bc250900584465d2c4b4db0dc26dbad8b6b23ed808586d9080afe9f91255b32; target translation/content/incompleteness/representability-in-q/basic-representable.tex:112-137 bytes 7237-9359 SHA-256 54b1e74487ceccde2fd17bd768c7985b7e371a98fac04882532148a64397322b; reader page pending.
+  - te-Telu-IN-OLTEREQ-004-OCC-002; OLP-0294; OLP-0294-B018; source upstream/content/incompleteness/representability-in-q/basic-representable.tex:110-124 bytes 3981-4739 SHA-256 0bc250900584465d2c4b4db0dc26dbad8b6b23ed808586d9080afe9f91255b32; target translation/content/incompleteness/representability-in-q/basic-representable.tex:112-137 bytes 7237-9359 SHA-256 54b1e74487ceccde2fd17bd768c7985b7e371a98fac04882532148a64397322b; reader page pending.
+
+## te-Telu-IN-OLTEREQ-005 — OLTEREQ-005: confirmed malformed quantifier scope
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: placed all g_i and A_f conjuncts inside the balanced existential scope; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed malformed quantifier scope at lines 74-88, generalized composition proposition, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEREQ-20260920:OLTEREQ-005 [checked_supports], content/incompleteness/representability-in-q/composition-representable.tex; lines 74-88, generalized composition proposition; confirmed_malformed_quantifier_scope; placed all g_i and A_f conjuncts inside the balanced existential scope; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that every g_i conjunct and the A_f conjunct lie inside the balanced existential scope.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEREQ-005-OCC-001; OLP-0295; OLP-0295-B012; source upstream/content/incompleteness/representability-in-q/composition-representable.tex:74-88 bytes 2638-3180 SHA-256 7dc6295f9eb46462918d4b261094f0e6fe0c6bae7d7aeac12603e45c0afd9bf6; target translation/content/incompleteness/representability-in-q/composition-representable.tex:74-91 bytes 4333-5947 SHA-256 f6994a8543c7c09fa1ed503eee65ea7c4eaa18b8a7afe87487668f422ac7f329; reader page pending.
+
+## te-Telu-IN-OLTEREQ-006 — OLTEREQ-006: confirmed duplicate cross reference
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: replaced the first duplicated prop:rep2 reference with prop:rep1; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed duplicate cross reference at lines 95-99, composition exercise, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEREQ-20260920:OLTEREQ-006 [checked_supports], content/incompleteness/representability-in-q/composition-representable.tex; lines 95-99, composition exercise; confirmed_duplicate_cross_reference; replaced the first duplicated prop:rep2 reference with prop:rep1; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the two composition exercises now refer to prop:rep1 and prop:rep2 respectively.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEREQ-006-OCC-001; OLP-0295; OLP-0295-B014; source upstream/content/incompleteness/representability-in-q/composition-representable.tex:95-99 bytes 3229-3433 SHA-256 7dc6295f9eb46462918d4b261094f0e6fe0c6bae7d7aeac12603e45c0afd9bf6; target translation/content/incompleteness/representability-in-q/composition-representable.tex:96-102 bytes 5987-6806 SHA-256 f6994a8543c7c09fa1ed503eee65ea7c4eaa18b8a7afe87487668f422ac7f329; reader page pending.
+
+## te-Telu-IN-OLTEREQ-007 — OLTEREQ-007: confirmed invalid induction step
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: added the successor-of-hypothesis equation and both Q5 rewrites while retaining step5 and step6; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed invalid induction step at lines 51-62, successor/addition induction step, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEREQ-20260920:OLTEREQ-007 [checked_supports], content/incompleteness/representability-in-q/minimization-representable.tex; lines 51-62, successor/addition induction step; confirmed_invalid_induction_step; added the successor-of-hypothesis equation and both Q5 rewrites while retaining step5 and step6; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the repaired induction step uses the successor of the induction hypothesis and the two required Q5 rewrites.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEREQ-007-OCC-001; OLP-0296; OLP-0296-B008; source upstream/content/incompleteness/representability-in-q/minimization-representable.tex:51-62 bytes 1719-2304 SHA-256 396bbd36dbb04280e2521c9fb1af6b07ef3084e0205917c22eb308362f035e94; target translation/content/incompleteness/representability-in-q/minimization-representable.tex:49-62 bytes 2873-4553 SHA-256 839209250cc87d66cff1a7edacc5ff3567111e6789ccaa41ac3a1b567dcf2a8b; reader page pending.
+
+## te-Telu-IN-OLTEREQ-008 — OLTEREQ-008: confirmed closed term value typo
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: equated t_2 with numeral m; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed closed term value typo at lines 111-121, atomic equality completeness, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEREQ-20260920:OLTEREQ-008 [checked_supports], content/incompleteness/representability-in-q/sigma1-completeness.tex; lines 111-121, atomic equality completeness; confirmed_closed_term_value_typo; equated t_2 with numeral m; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the second closed term is equated with numeral m rather than numeral n.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEREQ-008-OCC-001; OLP-0300; OLP-0300-B015; source upstream/content/incompleteness/representability-in-q/sigma1-completeness.tex:111-121 bytes 3876-4375 SHA-256 9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d; target translation/content/incompleteness/representability-in-q/sigma1-completeness.tex:109-116 bytes 6331-7238 SHA-256 88db2e18b64d55eefbf53ba9332704a9ba80e6aa0622e47e09bacc3eff59d5cd; reader page pending.
+
+## te-Telu-IN-OLTEREQ-009 — OLTEREQ-009: confirmed axiom reference error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: cited Q2 for both successor-versus-zero contradictions; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed axiom reference error at lines 137-149, non-less-than case, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEREQ-20260920:OLTEREQ-009 [checked_supports], content/incompleteness/representability-in-q/sigma1-completeness.tex; lines 137-149, non-less-than case; confirmed_axiom_reference_error; cited Q2 for both successor-versus-zero contradictions; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that both successor-versus-zero contradictions cite Q2 rather than Q3.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEREQ-009-OCC-001; OLP-0300; OLP-0300-B019; source upstream/content/incompleteness/representability-in-q/sigma1-completeness.tex:137-149 bytes 5028-5637 SHA-256 9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d; target translation/content/incompleteness/representability-in-q/sigma1-completeness.tex:130-143 bytes 8185-9544 SHA-256 88db2e18b64d55eefbf53ba9332704a9ba80e6aa0622e47e09bacc3eff59d5cd; reader page pending.
+
+## te-Telu-IN-OLTEREQ-010 — OLTEREQ-010: confirmed connective name error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: called the zero-member universal expansion an empty conjunction; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed connective name error at lines 163-169, bounded-universal base case, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEREQ-20260920:OLTEREQ-010 [checked_supports], content/incompleteness/representability-in-q/sigma1-completeness.tex; lines 163-169, bounded-universal base case; confirmed_connective_name_error; called the zero-member universal expansion an empty conjunction; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the zero-member bounded-universal expansion is described as an empty conjunction.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEREQ-010-OCC-001; OLP-0300; OLP-0300-B021; source upstream/content/incompleteness/representability-in-q/sigma1-completeness.tex:163-169 bytes 6041-6400 SHA-256 9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d; target translation/content/incompleteness/representability-in-q/sigma1-completeness.tex:153-164 bytes 9961-11356 SHA-256 88db2e18b64d55eefbf53ba9332704a9ba80e6aa0622e47e09bacc3eff59d5cd; reader page pending.

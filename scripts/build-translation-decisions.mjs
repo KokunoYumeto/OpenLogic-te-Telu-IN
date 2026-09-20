@@ -33,6 +33,10 @@ const ledger = readJsonl('SEGMENT_CANON_USE.jsonl');
 const segments = Object.fromEntries(ledger.map(item => [item.segment_id, item]));
 const legacy = JSON.parse(fs.readFileSync(path.join(dataDir, 'EXPERT_REVIEW_LOG.json'), 'utf8')).records;
 const legacyById = Object.fromEntries(legacy.map(item => [item.review_id, item]));
+const sourceManifest = readJsonl('SOURCE_MANIFEST.jsonl');
+const sourceUnitTotal = sourceManifest.length;
+const draftedSourceUnits = sourceManifest.filter(item => fs.existsSync(path.join(root, 'translation', ...slash(item.source_path).split('/')))).length;
+const coverageVersion = `partial-${draftedSourceUnits}-of-${sourceUnitTotal}`;
 
 const edition = Object.freeze({
   edition_id: 'openlogic-te-Telu-IN',
@@ -48,7 +52,7 @@ const edition = Object.freeze({
 });
 
 const artifactRefs = {
-  terms: publicArtifact('TERM_DECISIONS.jsonl', 'partial-279-of-722'),
+  terms: publicArtifact('TERM_DECISIONS.jsonl', coverageVersion),
   passages: publicArtifact('CANON_PASSAGES.jsonl', 'consulted-passage-index'),
   corrections: publicArtifact('SOURCE_CORRECTIONS.jsonl', 'applied-source-corrections')
 };
@@ -401,7 +405,7 @@ const canonical = {
     doi: null,
     source_revision: '9620cc73f9c8e0ad003c514a5d3748f29611c4c0',
     coverage_state: 'partial',
-    source_units: 279,
+    source_units: draftedSourceUnits,
     reader_units: null
   },
   generator: {
@@ -419,7 +423,7 @@ const byteLabel = span => span.status === 'available' ? `${span.start}-${span.en
 const full = [
   '# Full translation-decision register',
   '',
-  `Edition: **${edition.language_tag} / ${edition.script} / ${edition.register_or_variant}**. Coverage: **279 of 722 source units drafted**. This readable view contains all ${decisions.length} decisions and ${occurrenceCount} recorded occurrences.`,
+  `Edition: **${edition.language_tag} / ${edition.script} / ${edition.register_or_variant}**. Coverage: **${draftedSourceUnits} of ${sourceUnitTotal} source units drafted**. This readable view contains all ${decisions.length} decisions and ${occurrenceCount} recorded occurrences.`,
   '',
   'Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.',
   ''
@@ -524,7 +528,7 @@ fs.writeFileSync(path.join(dataDir, 'DECISION_OCCURRENCES.csv'), csv);
 
 const startHere = `# Start here: Telugu translation decisions
 
-Status: **partial — 279 of 722 source units drafted**. The canonical register currently contains **${decisions.length} decisions** (${termDecisions.length} terminology/sense decisions and ${correctionDecisions.length} source-correction decisions) with **${occurrenceCount} concrete occurrences**.
+Status: **partial — ${draftedSourceUnits} of ${sourceUnitTotal} source units drafted**. The canonical register currently contains **${decisions.length} decisions** (${termDecisions.length} terminology/sense decisions and ${correctionDecisions.length} source-correction decisions) with **${occurrenceCount} concrete occurrences**.
 
 Use these views:
 

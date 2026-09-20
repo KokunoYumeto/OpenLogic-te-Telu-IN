@@ -1,0 +1,235 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: minimization-representable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{req}{min}
+\olsection{సక్రమ కనిష్ఠీకరణ~$\Th{Q}$లో ప్రాతినిధ్యం చేయదగినది}
+
+అపరిమిత అన్వేషణను పరిగణిద్దాం. $g(x,z)$ సక్రమమైనదనీ,~$\Th{Q}$లో
+\tetoken{సూత్రం}{!!{formula}}~$!A_g(x,z,y)$ దానికి ప్రాతినిధ్యం చేస్తుందనీ అనుకుందాం.
+$f$ను $f(z)=\umin{x}{[g(x,z)=0]}$గా నిర్వచించారనుకుందాం. $f$కు ప్రాతినిధ్యం
+చేసే \tetoken{ఒక సూత్రం}{!!a{formula}}~$!A_f(z,y)$ను కనుగొనాలి. $f(z)$ విలువ అనేది (a)
+$g(x,z)=0$ను నెరవేర్చే, (b) అలాంటి వాటిలో కనిష్ఠమైన సంఖ్య~$x$; అంటే ప్రతి
+$w<x$కూ $g(w,z)\neq0$. కాబట్టి కింది సూత్రం సహజమైన ఎంపిక:
+\[
+!A_f(z,y) \ident !A_g(y, z, \Obj 0) \land \lforall[w][(w < y \lif \lnot
+  !A_g(w, z, \Obj 0))].
+\]
+సాధారణ సందర్భంలో $z$ స్థానంలో $z_0$,~\dots,~$z_k$లను పెట్టాలి.
+
+ఈ నిరూపణకూ $\Th{Q}$ నిరూపించగలిగిన విషయాల గురించిన కొన్ని ఉపపత్తులు
+అవసరం.
+
+\begin{lem}
+\ollabel{lem:succ} ప్రతి \tetoken{స్థిరసంకేతం}{!!{constant}}~$a$కు, ప్రతి సహజ సంఖ్య~$n$కు
+\[
+\Th{Q} \Proves \eq[(a' + \num n)][(a + \num n)'].
+\]
+\end{lem}
+
+\begin{proof}
+ఎప్పటిలాగే $n$పై ఆగమనంతో నిరూపిస్తాం. ప్రాథమిక సందర్భంలో $n=0$; అప్పుడు
+$\Th{Q}$ అనేది $\eq[(a'+\Obj 0)][(a+\Obj 0)']$ను నిరూపిస్తుందని చూపాలి.
+మనకు ఇవి ఉన్నాయి:
+\begin{align}
+  \Th{Q} & \Proves \eq[(a' + \Obj 0)][a'] \quad \text{$Q_4$ స్వీకృతం వల్ల}
+  \ollabel{step1}\\
+  \Th{Q} & \Proves  \eq[(a + \Obj 0)][a] \quad \text{$Q_4$ స్వీకృతం వల్ల}
+  \ollabel{step2} \\
+  \Th{Q} & \Proves \eq[(a + \Obj 0)'][a'] \quad \text{\olref{step2} వల్ల}
+  \ollabel{step3} \\
+  \Th{Q} & \Proves \eq[(a' + \Obj 0)][(a + \Obj 0)'] \quad
+  \text{\olref{step1}, \olref{step3} వల్ల.}\notag
+\end{align}
+ఆగమన మెట్టులో $\Th{Q}\Proves\eq[(a'+\num n)][(a+\num n)']$ అని ఇప్పటికే
+చూపామని అనుకోవచ్చు. $\num{n+1}$ అనేది $\num{n}'$ కనుక,
+$\Th{Q}$ అనేది $\eq[(a'+\num{n}')][(a+\num{n}')']$ను నిరూపిస్తుందని
+చూపాలి. మనకు ఇవి ఉన్నాయి:
+\begin{align}
+  \Th{Q} & \Proves \eq[(a' + \num n')][(a' + \num n)']
+  \quad \text{$!Q_5$ స్వీకృతం వల్ల} \ollabel{step5}\\
+  \Th{Q} & \Proves \eq[(a' + \num n)'][(a + \num n)'']
+  \quad \text{ఆగమన పరికల్పన, సర్వసమానతా తర్కం వల్ల} \ollabel{step6}\\
+  \Th{Q} & \Proves \eq[(a + \num n')'][(a + \num n)'']
+  \quad \text{$!Q_5$, సర్వసమానతా తర్కం వల్ల}\\
+  \Th{Q} & \Proves \eq[(a' + \num n')][(a + \num n')']
+  \quad \text{\olref{step5}, \olref{step6}, ముందరి సమీకరణం వల్ల.}\notag
+\end{align}
+\sourcecorrection{OLTEREQ-007}{ఆంగ్ల మూలంలోని ఆగమన మెట్టు లక్ష్య సమీకరణాన్నే ``ఆగమన పరికల్పన''గా రెండో పంక్తిలో ప్రకటించి, నిజమైన పరికల్పన నుంచి దానిని పొందడానికి కావలసిన $!Q_5$ సమానతను వదిలేసింది. నిజమైన పరికల్పనకు ఉత్తరగాములను తీసుకుని, $!Q_5$ను రెండు వైపులా వాడే మధ్యవర్తి సమీకరణాలను స్పష్టంగా ఇచ్చాం.}
+\end{proof}
+
+$\Th{Q}$ అనేది $\lforall[x][\lforall[y][(x'+y)=(x+y)']]$ను
+నిరూపిస్తుందని చెప్పడం కంటే ఇది బలహీనమైనదని మళ్లీ గుర్తుచేయాలి. ఈ
+\tetoken{వాక్యం}{!!{sentence}}~$\Struct{N}$లో సత్యమైనప్పటికీ, $\Th{Q}$ దాన్ని నిరూపించదు.
+
+\begin{lem}
+\ollabel{lem:less-zero}
+$\Th{Q} \Proves \lforall[x][\lnot x < \Obj 0]$.
+\end{lem}
+
+\begin{proof}
+నిరూపణను అనధికారికంగా ఇస్తాం (అంటే సాంకేతిక \tetoken{వ్యుత్పత్తిని}{!!{derivation}} ఎలా నిర్మించాలో
+సూచనలు మాత్రమే ఇస్తాం).
+
+ఏదైనా~$a$కు $\lnot a<\Obj 0$ అని నిరూపించాలి. $<$ నిర్వచనం వల్ల
+$\Th{Q}$లో $\lnot\lexists[y][\eq[(y'+a)][\Obj 0]]$ను నిరూపించాలి.
+$\lexists[y][\eq[(y'+a)][\Obj 0]]$ అని ఊహించి వైరుధ్యాన్ని నిరూపిద్దాం.
+$\eq[(b'+a)][\Obj 0]$ అనుకుందాం. $!Q_3$ వల్ల
+$\eq[a][\Obj 0]\lor\lexists[y][\eq[a][y']]$. సందర్భాలను వేరు చేస్తాం.
+
+సందర్భం 1: $\eq[a][\Obj 0]$. $\eq[(b'+a)][\Obj 0]$ నుంచి
+$\eq[(b'+\Obj 0)][\Obj 0]$ వస్తుంది. $\Th{Q}$లోని $!Q_4$ స్వీకృతం వల్ల
+$\eq[(b'+\Obj 0)][b']$, కాబట్టి $\eq[b'][\Obj 0]$. కానీ $!Q_2$ స్వీకృతం
+వల్ల $\eq/[b'][\Obj 0]$ కూడా వస్తుంది; ఇది వైరుధ్యం.
+
+సందర్భం 2: ఏదో~$c$కు $\eq[a][c']$. అప్పుడు
+$\eq[(b'+c')][\Obj 0]$. $!Q_5$ స్వీకృతం వల్ల
+$\eq[(b'+c)'][\Obj 0]$; ఇది మళ్లీ $Q_2$ స్వీకృతానికి విరుద్ధం.
+\end{proof}
+
+\begin{lem}
+\ollabel{lem:less-nsucc}
+ప్రతి సహజ సంఖ్య~$n$కు
+\[
+  \Th{Q} \Proves
+  \lforall[x][(x < \num {n+1} \lif (\eq[x][\Obj 0] \lor \dots \lor
+    \eq[x][\num n]))].
+\]
+\end{lem}
+
+\begin{proof}
+$n$పై ఆగమనం వాడతాం. $n=0$ అయిన ప్రాథమిక సందర్భాన్ని పరిగణిద్దాం. ఏదైనా~$a$కు
+$a<\num 1\lif\eq[a][\Obj 0]$ అని చూపాలి. $a<\num 1$ అనుకుందాం. అప్పుడు
+$<$ను నిర్వచించే స్వీకృతం వల్ల $\lexists[y][\eq[(y'+a)][\Obj 0']]$
+($\num 1\ident\Obj 0'$ కనుక) వస్తుంది.
+
+ఈ ధర్మం $b$కు ఉందని, అంటే $\eq[(b'+a)][\Obj 0']$ అని అనుకుందాం.
+$\eq[a][\Obj 0]$ అని చూపాలి. $!Q_3$ వల్ల $\eq[a][\Obj 0]$, లేదా ఏదో~$c$కు
+$\eq[a][c']$. మొదటి సందర్భంలో చూపాల్సిందేమీ లేదు. కాబట్టి $\eq[a][c']$
+అనుకుందాం. అప్పుడు $\eq[(b'+c')][\Obj 0']$. $\Th{Q}$లోని $!Q_5$ వల్ల
+$\eq[(b'+c)'][\Obj 0']$. $!Q_1$ వల్ల $\eq[(b'+c)][\Obj 0]$. కానీ $!Q_8$
+వల్ల దీని అర్థం $c<\Obj 0$; ఇది \olref{lem:less-zero}కు విరుద్ధం.
+
+ఇప్పుడు ఆగమన మెట్టు. $n$ సందర్భాన్ని అనుకుని $n+1$ సందర్భాన్ని నిరూపిస్తాం.
+$a<\num{n+2}$ అనుకుందాం. $!Q_3$ను మళ్లీ వాడి రెండు సందర్భాలను వేరు చేయవచ్చు:
+$\eq[a][\Obj 0]$, లేదా ఏదో~$b$కు $\eq[a][b']$. మొదటి సందర్భంలో
+$\eq[a][\Obj 0]\lor\dots\lor\eq[a][\num{n+1}]$ తక్షణమే వస్తుంది. రెండో
+సందర్భంలో $b'<\num{n+2}$, అంటే $b'<\num{n+1}'$. $!Q_8$ వల్ల ఏదో~$c$కు
+$\eq[(c'+b')][\num{n+1}']$. $!Q_5$ వల్ల
+$\eq[(c'+b)'][\num{n+1}']$. $!Q_1$ వల్ల
+$\eq[(c'+b)][\num{n+1}]$; అందువల్ల $!Q_8$ వల్ల $b<\num{n+1}$.
+ఆగమన పరికల్పన వల్ల $\eq[b][\Obj 0]\lor\dots\lor\eq[b][\num{n}]$.
+తర్కంతో దీని నుంచి $\eq[b'][\Obj 0']\lor\dots\lor\eq[b'][\num{n}']$;
+$\eq[a][b']$ కనుక $\eq[a][\num{1}]\lor\dots\lor\eq[a][\num{n+1}]$ వస్తుంది.
+\end{proof}
+
+\begin{lem}
+  \ollabel{lem:trichotomy} ప్రతి సహజ సంఖ్య~$m$కు
+  \[
+  \Th{Q} \Proves
+  \lforall[y][((y < \num{m} \lor \num{m} < y) \lor \eq[y][\num{m}])].
+  \]
+\end{lem}
+
+\begin{proof}
+$m$పై ఆగమనం. మొదట $m=0$ సందర్భాన్ని పరిగణించండి. $!Q_3$ వల్ల
+$\Th{Q}\Proves\lforall[y][(\eq[y][\Obj 0]\lor
+\lexists[z][\eq[y][z']])]$. $a$ ఏదైనా అనుకుందాం. అప్పుడు
+$\eq[a][\Obj 0]$, లేదా ఏదో~$b$కు $\eq[a][b']$. మొదటి సందర్భంలో
+$(a<\Obj 0\lor\Obj 0<a)\lor\eq[a][\Obj 0]$ కూడా ఉంటుంది. కానీ
+$\eq[a][b']$ అయితే, $\eq$ తర్కం వల్ల
+$\eq[(b'+\Obj 0)][(a+\Obj 0)]$. $!Q_4$ వల్ల $\eq[(a+\Obj 0)][a]$;
+కాబట్టి $\eq[(b'+\Obj 0)][a]$, అందువల్ల
+$\lexists[z][\eq[(z'+\Obj 0)][a]]$. $!Q_8$లోని $<$ నిర్వచనం వల్ల
+$\Obj 0<a$. $\Obj 0<a$ అయితే $(\Obj 0<a\lor a<\Obj 0)\lor
+\eq[a][\Obj 0]$ కూడా వస్తుంది.
+
+ఇప్పుడు
+\begin{align*}
+  \Th{Q} & \Proves \lforall[y][((y < \num{m} \lor \num{m} < y) \lor
+    \eq[y][\num{m}])]
+  \intertext{అని అనుకుని, కిందిదాన్ని చూపాలనుకుందాం:}
+  \Th{Q} & \Proves \lforall[y][((y < \num{m+1} \lor \num{m+1} < y) \lor
+    \eq[y][\num{m+1}])]
+\end{align*}
+$a$ ఏదైనా అనుకుందాం. $!Q_3$ వల్ల $\eq[a][\Obj 0]$, లేదా ఏదో~$b$కు
+$\eq[a][b']$. మొదటి సందర్భంలో $!Q_4$ వల్ల
+$\eq[\num{m}'+a][\num{m+1}]$; కాబట్టి $!Q_8$ వల్ల $a<\num{m+1}$.
+
+ఇప్పుడు రెండో సందర్భం $\eq[a][b']$ను పరిగణించండి. ఆగమన పరికల్పన వల్ల
+$(b<\num{m}\lor\num{m}<b)\lor\eq[b][\num{m}]$.
+
+మొదటి వికల్పాంగం $b<\num{m}$ అనేది $!Q_8$ వల్ల
+$\lexists[z][\eq[(z'+b)][\num{m}]]$కు సమానం. $c$కు ఈ ధర్మం ఉందని అనుకుందాం.
+$\eq[(c'+b)][\num{m}]$ అయితే $\eq[(c'+b)'][\num{m}']$ కూడా. $!Q_5$ వల్ల
+$\eq[(c'+b)'][(c'+b')]$. అందువల్ల $\eq[(c'+b')][\num{m}']$.
+$c'$పై అస్తిత్వ సామాన్యీకరణ చేసి, $\num{m}'\ident\num{m+1}$ అని గుర్తుంచుకుని
+$\lexists[u][\eq[(u'+b')][\num{m+1}]]$ పొందుతాం. అందువల్ల
+$b<\num{m}$ అయితే $b'<\num{m+1}$, కాబట్టి $a<\num{m+1}$.
+
+ఇప్పుడు $\num{m}<b$, అంటే $\lexists[z][\eq[(z'+\num{m})][b]]$ అనుకుందాం.
+$c$ అలాంటి~$z$, అంటే $\eq[(c'+\num{m})][b]$ అనుకుందాం. తర్కం వల్ల
+$\eq[(c'+\num{m})'][b']$. $!Q_5$ వల్ల $\eq[(c'+\num{m}')][b']$.
+$\eq[a][b']$, $\num{m}'\ident\num{m+1}$ కనుక
+$\eq[(c'+\num{m+1})][a]$. $!Q_8$ వల్ల $\num{m+1}<a$.
+
+చివరగా $\eq[b][\num{m}]$ అనుకుందాం. తర్కం వల్ల $\eq[b'][\num{m}']$;
+కాబట్టి $\eq[a][\num{m+1}]$.
+
+అందువల్ల $m$, $b$లకు సంబంధించిన సందర్భంలోని ప్రతి వికల్పాంగం నుంచి
+$m+1$, $a$లకు సంబంధించిన అనుగుణ వికల్పాంగాన్ని పొందవచ్చు.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:rep-minimization}
+$!A_g(x,z,y)$ అనేది~$g(x,z)$కు~$\Th{Q}$లో ప్రాతినిధ్యం చేస్తే,
+\[
+!A_f(z,y) \ident !A_g(y, z, \Obj 0) \land \lforall[w][(w < y \lif \lnot
+  !A_g(w, z, \Obj 0))]
+\]
+అనేది $f(z)=\umin{x}{[g(x,z)=0]}$కు ప్రాతినిధ్యం చేస్తుంది.
+\end{prop}
+
+\begin{proof}
+మొదట $f(n)=m$ అయితే $\Th{Q}\Proves !A_f(\num n,\num m)$, అంటే
+\begin{align}
+  \Th{Q} & \Proves !A_g(\num{m}, \num{n}, \Obj 0) \land \lforall[w][(w <
+    \num{m} \lif \lnot !A_g(w, \num{n}, \Obj 0))]. \notag
+  \intertext{$!A_g(x,z,y)$ అనేది $g(x,z)$కు ప్రాతినిధ్యం చేస్తుంది; అలాగే
+  $f(n)=m$ అయితే $g(m,n)=0$ కనుక}
+\Th{Q} & \Proves !A_g(\num{m}, \num{n}, \Obj 0). \notag
+\intertext{$f(n)=m$ అయితే ప్రతి $k<m$కూ $g(k,n)\neq0$. కాబట్టి}
+\Th{Q} & \Proves \lnot !A_g(\num{k}, \num{n}, \Obj 0). \notag
+\intertext{అందువల్ల}
+\Th{Q} & \Proves \lforall[w][(w < \num{m} \lif \lnot
+  !A_g(w, \num{n}, \Obj 0))]. \ollabel{rep-less}
+\end{align}
+అని చూపుతాం. $m=0$ అయితే \olref{lem:less-zero} వల్ల, లేకపోతే
+\olref{lem:less-nsucc} వల్ల చివరి పంక్తి వస్తుంది.
+
+ఇప్పుడు $f(n)=m$ అయితే $\Th{Q}\Proves
+\lforall[y][(!A_f(\num{n},y)\lif\eq[y][\num{m}])]$ అని చూపుదాం. మళ్లీ
+అనధికారికంగా వాదించి, సాంకేతికీకరణను పాఠకునికి వదిలేస్తాం.
+
+$!A_f(\num{n},b)$ అనుకుందాం. దీని నుంచి (a)
+$!A_g(b,\num{n},\Obj 0)$, (b)
+$\lforall[w][(w<b\lif\lnot !A_g(w,\num{n},\Obj 0))]$ వస్తాయి.
+\olref{lem:trichotomy} వల్ల $(b<\num{m}\lor\num{m}<b)\lor
+\eq[b][\num{m}]$. $b<\num{m}$, $\num{m}<b$ రెండూ వైరుధ్యానికి దారితీస్తాయని
+చూపుతాం.
+
+$\num{m}<b$ అయితే (b) నుంచి $\lnot !A_g(\num{m},\num{n},\Obj 0)$ వస్తుంది.
+కానీ $m=f(n)$ కనుక $g(m,n)=0$; $!A_g$ అనేది~$g$కు ప్రాతినిధ్యం చేస్తుంది
+కనుక $\Th{Q}\Proves !A_g(\num{m},\num{n},\Obj 0)$. ఇది వైరుధ్యం.
+
+ఇప్పుడు $b<\num{m}$ అనుకుందాం. \olref{rep-less} వల్ల
+$\Th{Q}\Proves\lforall[w][(w<\num{m}\lif
+\lnot !A_g(w,\num{n},\Obj 0))]$ కనుక, $\lnot !A_g(b,\num{n},\Obj 0)$
+వస్తుంది. ఇది మళ్లీ (a)కు విరుద్ధం.
+\end{proof}
+
+\end{document}

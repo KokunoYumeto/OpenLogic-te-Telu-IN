@@ -18,8 +18,8 @@ examples, exercises, rule tables, proof trees, displayed formulas, tuple
 positions, labels, references, protected source identities and all locally
 disclosed source corrections were checked in context. This is a same-agent
 semantic review, not independent specialist certification. OLP-0289,
-`content/incompleteness/requirements/requirements.tex`, is the next unresolved
-unit. The accepted editable translation scope is 288/722 units, with 434 units
+`content/incompleteness/representability-in-q/representability-in-q.tex`, is the next unresolved
+unit. The accepted editable translation scope is 285/722 units, with 437 units
 remaining.
 
 The bounded structural audit passes 9/9 units with 152/152 aligned blocks,
@@ -134,5 +134,5 @@ replacement characters, unpaired surrogates or trailing whitespace.
 
 No TeX, BibTeX, Biber or `latexmk` process was started while preparing this
 source checkpoint. This review establishes editable-source coverage only; it
-does not silently equate that 288-unit boundary with the separately versioned
+does not silently equate that 285-unit boundary with the separately versioned
 HTML/EPUB or PDF reader boundaries.

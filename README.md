@@ -22,19 +22,20 @@ version was created for v0.4.0. Prior GitHub, GitHub Pages, and Zenodo
 publication verification is documented in [PUBLICATION.md](PUBLICATION.md);
 the v0.4.0 assets include their own manifest, checksums, and PDF QA receipt.
 
-Two hundred eighty-five full-unit editable TeX drafts form the contiguous
-OLP-0004--OLP-0288 range; the workflow cursor is 288/722. They cover the
+Two hundred ninety-seven full-unit editable TeX drafts form the contiguous
+OLP-0004--OLP-0300 range; editable coverage is 297/722 and the next manifest
+cursor is OLP-0301. They cover the
 Sets, Relations and Functions material, Propositional and First-Order Logic,
 Model Theory, Computability and Turing Machines, plus the complete introductory
-chapter of Incompleteness and the complete Arithmetization of Syntax chapter.
-All thirty-two batches have source-aligned structural and same-agent semantic
-review records.
+chapter of Incompleteness, the complete Arithmetization of Syntax chapter and
+the complete Representability in Q chapter. All thirty-three batches have
+source-aligned structural and same-agent semantic review records.
 
 Format coverage is deliberately separate. The current cumulative PDF contains
 276 editable units in OLP-0004--OLP-0279. The semantic HTML and EPUB readers
 contain OLP-0004--OLP-0026 only: 23 units, the complete Sets, Relations and
-Functions chapters. Thus 262 current editable drafts are not yet in the
-HTML/EPUB reader, and the newest nine are not yet in the cumulative PDF.
+Functions chapters. Thus 274 current editable drafts are not yet in that
+23-unit reader, and the newest 21 are not yet in the cumulative PDF.
 The public browser version is
 [OpenLogic తెలుగు — సమితులు, సంబంధాలు, ప్రమేయాలు](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sfr/).
 No editable-source cursor is presented as reader coverage, and this bounded
@@ -73,10 +74,10 @@ source hash, target locator and declared mathematical delta. See
 [Arithmetization of Syntax audit](evidence/source-audits/2026-09-20-arithmetization-syntax-telugu/REVIEW.md).
 
 The [canonical translation-decision index](evidence/START_HERE.md) exposes all
-71 current terminology/sense decisions and 252 corrections with exact
+72 current terminology/sense decisions and 262 corrections with exact
 source/target locators, aligned segment hashes, authorities actually checked,
 known evidence limits, alternatives, uncertainty, and concrete review
-questions. Its status is explicitly partial (288/722); optional expert review
+questions. Its status is explicitly partial (297/722); optional expert review
 creates no translation hold. The canonical views include a
 [full readable register](evidence/TRANSLATION_DECISIONS_FULL.md), a
 [priority view](evidence/PRIORITY_REVIEW.md), a
@@ -109,11 +110,11 @@ zero errors or warnings. The deployed reader passed desktop and 390-pixel
 visual, interaction, asset-loading and console checks; all 16 public files were
 then read back anonymously and matched the repository byte-for-byte.
 
-All 285 editable TeX drafts in OLP-0004--OLP-0288 pass correction-aware
+All 297 editable TeX drafts in OLP-0004--OLP-0300 pass correction-aware
 blank-block, environment, source-token, protected-identifier and
-mathematical-form checks. Thirty-two same-agent semantic reviews record
+mathematical-form checks. Thirty-three same-agent semantic reviews record
 source-aligned reverse paraphrases and their limits. The cumulative structural
-receipt is [CUMULATIVE-OLP0288-STRUCTURAL-QA.json](evidence/CUMULATIVE-OLP0288-STRUCTURAL-QA.json).
+receipt is [CUMULATIVE-OLP0300-STRUCTURAL-QA.json](evidence/CUMULATIVE-OLP0300-STRUCTURAL-QA.json).
 Beyond the explicit 23-unit HTML/EPUB boundary stated above, source QA does not
 imply HTML or EPUB reader integration.
 

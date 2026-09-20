@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 279 of 722 draft units**. This view selects 297 of 323 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 297 of 722 draft units**. This view selects 308 of 334 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -453,6 +453,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0280; incompleteness/arithmetization-syntax/arithmetization-syntax; translation/content/incompleteness/arithmetization-syntax/arithmetization-syntax.tex:8; printed/PDF page pending; OLP-0281; incompleteness/arithmetization-syntax/introduction; translation/content/incompleteness/arithmetization-syntax/introduction.tex:28-41; printed/PDF page pending; OLP-0282; incompleteness/arithmetization-syntax/coding-symbols; translation/content/incompleteness/arithmetization-syntax/coding-symbols.tex:9-10; printed/PDF page pending; OLP-0283; incompleteness/arithmetization-syntax/coding-terms; translation/content/incompleteness/arithmetization-syntax/coding-terms.tex:41-57; printed/PDF page pending; OLP-0284; incompleteness/arithmetization-syntax/coding-formulas; translation/content/incompleteness/arithmetization-syntax/coding-formulas.tex:9-10; printed/PDF page pending; OLP-0285; incompleteness/arithmetization-syntax/substitution; translation/content/incompleteness/arithmetization-syntax/substitution.tex:9-10; printed/PDF page pending; OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:12-21; printed/PDF page pending; OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:255-261; printed/PDF page pending; OLP-0287; incompleteness/arithmetization-syntax/proofs-in-nd; translation/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:9-10; printed/PDF page pending; OLP-0287; incompleteness/arithmetization-syntax/proofs-in-nd; translation/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:12-24; printed/PDF page pending; OLP-0287; incompleteness/arithmetization-syntax/proofs-in-nd; translation/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:12-24; printed/PDF page pending; OLP-0288; incompleteness/arithmetization-syntax/proofs-in-ax; translation/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:9-10; printed/PDF page pending
 
 - Please double-check: Please double-check whether “వాక్యనిర్మాణపు అంకగణితీకరణ / సంకేత సంకేతీకరణ / క్రమ సంకేతీకరణ / సంకేతసంఖ్య / గ్యోడెల్ సంఖ్య / గ్యోడెల్ సంఖ్యీకరణ / నిర్మాణ క్రమం / ఆదిమ పునరావృత్త వాక్యనిర్మాణ సంబంధం / ప్రతిస్థాపన / వ్యుత్పత్తి సంకేతసంఖ్య / అంత్య-సీక్వెంట్ / అంత్య-సూత్రం / ఉపసంహరణ చీటీ / తక్షణ ఉపవ్యుత్పత్తి / నిరూపణ విధేయం / సీక్వెంట్ కలనం / సహజ నిగమనం / స్వీకృతాధారిత వ్యుత్పత్తి” is idiomatic and technically standard for “arithmetization of syntax / symbol coding / sequence coding / code / Gödel number / Gödel numbering / formation sequence / primitive recursive syntactic relation / substitution / proof code / end-sequent / end-formula / discharge label / immediate subderivation / proof predicate / sequent calculus / natural deduction / axiomatic derivation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T072 — representability in Q / representing formula / beta function lemma / relatively prime / congruent modulo / greatest common divisor / least common multiple / Sunzi's theorem (Chinese Remainder Theorem) / simulation of primitive recursion / regular minimization / basic representable functions / closure under composition / representation of relations / Delta_0, Sigma_1 and Pi_1 formulas / bounded existential and universal formulas / closed term / Sigma_1 completeness
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: Qలో ప్రాతినిధ్యయోగ్యత / ప్రాతినిధ్య సూత్రం / బీటా ప్రమేయ ఉపపత్తి / పరస్పర ప్రధాన / మాడ్యులో సమానశేష / గరిష్ఠ సామాన్య భాజకం / కనిష్ఠ సామాన్య గుణిజం / సున్‌జి సిద్ధాంతం (చైనీయ శేష సిద్ధాంతం) / ఆదిమ పునరావృత్తి అనుకరణ / సక్రమ కనిష్ఠీకరణ / ప్రాతినిధ్యం చేయదగిన ప్రాథమిక ప్రమేయాలు / సంయుక్తం కింద సంవృతత / సంబంధాల ప్రాతినిధ్యం / Delta_0, Sigma_1, Pi_1 సూత్రాలు / పరిమిత అస్తిత్వ, సార్వత్రిక సూత్రాలు / సంవృత పదం / Sigma_1 సంపూర్ణత
+
+- Occurrences: OLP-0289; incompleteness/representability-in-q/representability-in-q; translation/content/incompleteness/representability-in-q/representability-in-q.tex:8; printed/PDF page pending; OLP-0292; incompleteness/representability-in-q/beta-function; translation/content/incompleteness/representability-in-q/beta-function.tex:9-10; printed/PDF page pending; OLP-0292; incompleteness/representability-in-q/beta-function; translation/content/incompleteness/representability-in-q/beta-function.tex:38-44; printed/PDF page pending; OLP-0296; incompleteness/representability-in-q/minimization-representable; translation/content/incompleteness/representability-in-q/minimization-representable.tex:9-10; printed/PDF page pending; OLP-0298; incompleteness/representability-in-q/representing-relations; translation/content/incompleteness/representability-in-q/representing-relations.tex:11; printed/PDF page pending; OLP-0300; incompleteness/representability-in-q/sigma1-completeness; translation/content/incompleteness/representability-in-q/sigma1-completeness.tex:9-10; printed/PDF page pending
+
+- Please double-check: Please double-check whether “Qలో ప్రాతినిధ్యయోగ్యత / ప్రాతినిధ్య సూత్రం / బీటా ప్రమేయ ఉపపత్తి / పరస్పర ప్రధాన / మాడ్యులో సమానశేష / గరిష్ఠ సామాన్య భాజకం / కనిష్ఠ సామాన్య గుణిజం / సున్‌జి సిద్ధాంతం (చైనీయ శేష సిద్ధాంతం) / ఆదిమ పునరావృత్తి అనుకరణ / సక్రమ కనిష్ఠీకరణ / ప్రాతినిధ్యం చేయదగిన ప్రాథమిక ప్రమేయాలు / సంయుక్తం కింద సంవృతత / సంబంధాల ప్రాతినిధ్యం / Delta_0, Sigma_1, Pi_1 సూత్రాలు / పరిమిత అస్తిత్వ, సార్వత్రిక సూత్రాలు / సంవృత పదం / Sigma_1 సంపూర్ణత” is idiomatic and technically standard for “representability in Q / representing formula / beta function lemma / relatively prime / congruent modulo / greatest common divisor / least common multiple / Sunzi's theorem (Chinese Remainder Theorem) / simulation of primitive recursion / regular minimization / basic representable functions / closure under composition / representation of relations / Delta_0, Sigma_1 and Pi_1 formulas / bounded existential and universal formulas / closed term / Sigma_1 completeness” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -2973,3 +2983,103 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:244-249; printed/PDF page pending
 
 - Please double-check: Please double-check that the unary Correct call in the LK Deriv definition is closed before the bounded-universal body is closed.
+
+## REV-OLTEREQ-001 — OLTEREQ-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used A_f consistently in the lemma; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0291; incompleteness/representability-in-q/representable-comp; translation/content/incompleteness/representability-in-q/representable-comp.tex:16-23; printed/PDF page pending
+
+- Please double-check: Please double-check that the representing formula is named A_f consistently in the lemma.
+
+## REV-OLTEREQ-002 — OLTEREQ-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored the Th(Q) proves prefix before the universal formula; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0291; incompleteness/representability-in-q/representable-comp; translation/content/incompleteness/representability-in-q/representable-comp.tex:40-48; printed/PDF page pending
+
+- Please double-check: Please double-check that the restored Th(Q)-proves prefix makes the use of representability clause (b) explicit.
+
+## REV-OLTEREQ-003 — OLTEREQ-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used h(vector x,y) from the defining equations; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0293; incompleteness/representability-in-q/prim-rec; translation/content/incompleteness/representability-in-q/prim-rec.tex:12-20; printed/PDF page pending
+
+- Please double-check: Please double-check that the primitive-recursion prose uses h(vector x,y), matching the displayed defining equations.
+
+## REV-OLTEREQ-004 — OLTEREQ-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used the defined Char{=} and A_{Char{=}} notation throughout; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0294; incompleteness/representability-in-q/basic-representable; translation/content/incompleteness/representability-in-q/basic-representable.tex:112-137; printed/PDF page pending
+
+- Please double-check: Please double-check that the equality characteristic-function notation is consistently Char{=} and A_{Char{=}}.
+
+## REV-OLTEREQ-005 — OLTEREQ-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: placed all g_i and A_f conjuncts inside the balanced existential scope; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0295; incompleteness/representability-in-q/composition-representable; translation/content/incompleteness/representability-in-q/composition-representable.tex:74-91; printed/PDF page pending
+
+- Please double-check: Please double-check that every g_i conjunct and the A_f conjunct lie inside the balanced existential scope.
+
+## REV-OLTEREQ-006 — OLTEREQ-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: replaced the first duplicated prop:rep2 reference with prop:rep1; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0295; incompleteness/representability-in-q/composition-representable; translation/content/incompleteness/representability-in-q/composition-representable.tex:96-102; printed/PDF page pending
+
+- Please double-check: Please double-check that the two composition exercises now refer to prop:rep1 and prop:rep2 respectively.
+
+## REV-OLTEREQ-007 — OLTEREQ-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: added the successor-of-hypothesis equation and both Q5 rewrites while retaining step5 and step6; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0296; incompleteness/representability-in-q/minimization-representable; translation/content/incompleteness/representability-in-q/minimization-representable.tex:49-62; printed/PDF page pending
+
+- Please double-check: Please double-check that the repaired induction step uses the successor of the induction hypothesis and the two required Q5 rewrites.
+
+## REV-OLTEREQ-008 — OLTEREQ-008
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: equated t_2 with numeral m; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0300; incompleteness/representability-in-q/sigma1-completeness; translation/content/incompleteness/representability-in-q/sigma1-completeness.tex:109-116; printed/PDF page pending
+
+- Please double-check: Please double-check that the second closed term is equated with numeral m rather than numeral n.
+
+## REV-OLTEREQ-009 — OLTEREQ-009
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: cited Q2 for both successor-versus-zero contradictions; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0300; incompleteness/representability-in-q/sigma1-completeness; translation/content/incompleteness/representability-in-q/sigma1-completeness.tex:130-143; printed/PDF page pending
+
+- Please double-check: Please double-check that both successor-versus-zero contradictions cite Q2 rather than Q3.
+
+## REV-OLTEREQ-010 — OLTEREQ-010
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: called the zero-member universal expansion an empty conjunction; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0300; incompleteness/representability-in-q/sigma1-completeness; translation/content/incompleteness/representability-in-q/sigma1-completeness.tex:153-164; printed/PDF page pending
+
+- Please double-check: Please double-check that the zero-member bounded-universal expansion is described as an empty conjunction.

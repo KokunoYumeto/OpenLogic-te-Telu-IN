@@ -1,0 +1,164 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTEREQ-20260920",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0291",
+      "OLP-0293",
+      "OLP-0294",
+      "OLP-0295",
+      "OLP-0296",
+      "OLP-0300"
+    ],
+    "finding_count": 10
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEREQ-001",
+      "unit_id": "OLP-0291",
+      "classification": "confirmed_formula_name_inconsistency",
+      "source": {
+        "path": "content/incompleteness/representability-in-q/representable-comp.tex",
+        "bytes": 4929,
+        "sha256": "d5b487962fa2cdb7c4aa920366ccd501d5b83c9e9308861906906b802cd856ef",
+        "locator": "lines 16-23, representability lemma"
+      },
+      "finding": "The lemma introduces the representing formula as A but its displayed claim and the proof consistently use A_f.",
+      "controlling_evidence": "The definition of representability cited in the proof and every later occurrence in the proof use the function-indexed formula A_f.",
+      "required_translation_handling": "Use A_f consistently in the lemma and add an adjacent OLTEREQ-001 disclosure."
+    },
+    {
+      "finding_id": "OLTEREQ-002",
+      "unit_id": "OLP-0291",
+      "classification": "confirmed_missing_provability_prefix",
+      "source": {
+        "path": "content/incompleteness/representability-in-q/representable-comp.tex",
+        "bytes": 4929,
+        "sha256": "d5b487962fa2cdb7c4aa920366ccd501d5b83c9e9308861906906b802cd856ef",
+        "locator": "lines 31-38, use of representability clause (b)"
+      },
+      "finding": "The proof quotes the universal uniqueness formula without the preceding Th(Q) proves assertion required by the cited representability clause.",
+      "controlling_evidence": "The next inference combines that theorem with another theorem of Q; clause (b) of the referenced definition is itself a provability condition.",
+      "required_translation_handling": "Restore the Th(Q) proves prefix and add an adjacent OLTEREQ-002 disclosure."
+    },
+    {
+      "finding_id": "OLTEREQ-003",
+      "unit_id": "OLP-0293",
+      "classification": "confirmed_argument_vector_typo",
+      "source": {
+        "path": "content/incompleteness/representability-in-q/prim-rec.tex",
+        "bytes": 2010,
+        "sha256": "ec7c33837767fa024b45506d818a6601efa0523abef7c474881281d6c7e969a9",
+        "locator": "lines 12-19, primitive-recursion introduction"
+      },
+      "finding": "The prose names the recursively defined function h(x, vector z), but the defining equations immediately use h(vector x, y).",
+      "controlling_evidence": "Both primitive-recursion equations and the rest of the construction require the parameter vector x and recursion argument y.",
+      "required_translation_handling": "Use h(vector x,y) in the introductory sentence and add an adjacent OLTEREQ-003 disclosure."
+    },
+    {
+      "finding_id": "OLTEREQ-004",
+      "unit_id": "OLP-0294",
+      "classification": "confirmed_characteristic_function_notation_inconsistency",
+      "source": {
+        "path": "content/incompleteness/representability-in-q/basic-representable.tex",
+        "bytes": 8388,
+        "sha256": "0bc250900584465d2c4b4db0dc26dbad8b6b23ed808586d9080afe9f91255b32",
+        "locator": "lines 56-68 and 110-124, equality characteristic function"
+      },
+      "finding": "After defining the equality characteristic function and its representing formula with Char{=} notation, the proof switches to malformed Char= and A_= spellings.",
+      "controlling_evidence": "The proposition and displayed definition establish Char{=} and A_{Char{=}} as the local notation, and the proof addresses that same function and formula.",
+      "required_translation_handling": "Use the defined Char{=} and A_{Char{=}} notation throughout the proof and add an adjacent OLTEREQ-004 disclosure."
+    },
+    {
+      "finding_id": "OLTEREQ-005",
+      "unit_id": "OLP-0295",
+      "classification": "confirmed_malformed_quantifier_scope",
+      "source": {
+        "path": "content/incompleteness/representability-in-q/composition-representable.tex",
+        "bytes": 3449,
+        "sha256": "7dc6295f9eb46462918d4b261094f0e6fe0c6bae7d7aeac12603e45c0afd9bf6",
+        "locator": "lines 74-88, generalized composition proposition"
+      },
+      "finding": "The generalized representing formula contains malformed quantifier syntax and closes its quantifier brackets before the final g and f conjuncts.",
+      "controlling_evidence": "The one-place construction proved immediately above existentially quantifies every intermediate value around the conjunction of its g and f formulas; the generalized proposition requires the same scope for y_0 through y_(k-1).",
+      "required_translation_handling": "Put every g_i formula and A_f in one conjunction within the y_0 through y_(k-1) existential scope, balance the delimiters, and add an adjacent OLTEREQ-005 disclosure."
+    },
+    {
+      "finding_id": "OLTEREQ-006",
+      "unit_id": "OLP-0295",
+      "classification": "confirmed_duplicate_cross_reference",
+      "source": {
+        "path": "content/incompleteness/representability-in-q/composition-representable.tex",
+        "bytes": 3449,
+        "sha256": "7dc6295f9eb46462918d4b261094f0e6fe0c6bae7d7aeac12603e45c0afd9bf6",
+        "locator": "lines 95-99, composition exercise"
+      },
+      "finding": "The exercise cites prop:rep2 twice as two proof guides.",
+      "controlling_evidence": "The two distinct propositions immediately preceding it are prop:rep1 and prop:rep2, and their proofs establish the two required representability clauses.",
+      "required_translation_handling": "Cite prop:rep1 and prop:rep2, preserve prop:rep-composition, and add an adjacent OLTEREQ-006 disclosure."
+    },
+    {
+      "finding_id": "OLTEREQ-007",
+      "unit_id": "OLP-0296",
+      "classification": "confirmed_invalid_induction_step",
+      "source": {
+        "path": "content/incompleteness/representability-in-q/minimization-representable.tex",
+        "bytes": 9799,
+        "sha256": "396bbd36dbb04280e2521c9fb1af6b07ef3084e0205917c22eb308362f035e94",
+        "locator": "lines 51-62, successor/addition induction step"
+      },
+      "finding": "The displayed induction step labels the target equation itself as the induction hypothesis and then combines it with a differently shaped Q5 equation, so the conclusion does not follow from the stated lines.",
+      "controlling_evidence": "The actual induction hypothesis is a'+num(n)= (a+num(n))'. Taking successors preserves it; Q5 rewrites addition by a successor on each side, yielding the required equation.",
+      "required_translation_handling": "Supply the successor-of-hypothesis equation and the two Q5 rewrites while retaining the original step5 and step6 protected labels, and add an adjacent OLTEREQ-007 disclosure."
+    },
+    {
+      "finding_id": "OLTEREQ-008",
+      "unit_id": "OLP-0300",
+      "classification": "confirmed_closed_term_value_typo",
+      "source": {
+        "path": "content/incompleteness/representability-in-q/sigma1-completeness.tex",
+        "bytes": 11579,
+        "sha256": "9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d",
+        "locator": "lines 111-121, atomic equality completeness"
+      },
+      "finding": "After fixing n as the value of t_1 and m as the value of t_2, the proof says that t_2 equals numeral n.",
+      "controlling_evidence": "The closed-term lemma gives t_2=numeral m, and the following equal and unequal cases compare n with m.",
+      "required_translation_handling": "Use numeral m for t_2 and add an adjacent OLTEREQ-008 disclosure."
+    },
+    {
+      "finding_id": "OLTEREQ-009",
+      "unit_id": "OLP-0300",
+      "classification": "confirmed_axiom_reference_error",
+      "source": {
+        "path": "content/incompleteness/representability-in-q/sigma1-completeness.tex",
+        "bytes": 11579,
+        "sha256": "9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d",
+        "locator": "lines 137-149, non-less-than case"
+      },
+      "finding": "The final two contradictions between a successor and zero are attributed to Q3.",
+      "controlling_evidence": "Q2 states that zero is not a successor; Q3 is the zero-or-successor decomposition and does not itself yield either displayed contradiction.",
+      "required_translation_handling": "Cite Q2 for both successor-versus-zero contradictions and add an adjacent OLTEREQ-009 disclosure."
+    },
+    {
+      "finding_id": "OLTEREQ-010",
+      "unit_id": "OLP-0300",
+      "classification": "confirmed_connective_name_error",
+      "source": {
+        "path": "content/incompleteness/representability-in-q/sigma1-completeness.tex",
+        "bytes": 11579,
+        "sha256": "9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d",
+        "locator": "lines 163-169, bounded-universal base case"
+      },
+      "finding": "In the bounded-universal case the right side is a conjunction, but the base case calls its zero-member instance an empty disjunction while assigning it truth.",
+      "controlling_evidence": "The preceding displayed equivalence uses conjunction for the universal case; an empty conjunction has truth as its neutral value.",
+      "required_translation_handling": "Call it an empty conjunction and add an adjacent OLTEREQ-010 disclosure."
+    }
+  ]
+}

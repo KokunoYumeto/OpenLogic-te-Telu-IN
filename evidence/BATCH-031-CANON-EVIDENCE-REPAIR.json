@@ -1,0 +1,61 @@
+{
+  "schema": "openlogic-te-canon-evidence-repair/1",
+  "repair_date": "2026-09-20",
+  "batch": "031",
+  "reason": "Three linguistic segment rows were initially emitted without the native passages actually consulted. This receipt records a fresh retrospective visual rereading and the exact ledger repair; it does not rewrite the original consultation as contemporaneous.",
+  "method": {
+    "native_page_inspection": "full-page visual rereading",
+    "ocr_used_as_authority": false,
+    "page_images_committed": false,
+    "page_image_retention": "rights-restricted local canon evidence"
+  },
+  "pages": [
+    {
+      "passage_id": "TE-P018",
+      "pdf_page": 77,
+      "local_page_image": "C:\\interlanguage-task-state\\openlogic-te-Telu-IN\\canon\\pages\\tarkam1986-180dpi\\page-077.png",
+      "image_sha256": "875d978599c87b55b19a55503b9ea81971101d1da061be38a612ce05cb64fce3",
+      "finding": "Supports broad symbolic, formal and propositional-logic register; does not directly attest incompleteness."
+    },
+    {
+      "passage_id": "TE-P024",
+      "pdf_page": 86,
+      "local_page_image": "C:\\interlanguage-task-state\\openlogic-te-Telu-IN\\canon\\pages\\tarkam1986-180dpi\\page-086.png",
+      "image_sha256": "26f29a4eecafa1a61d863c3adc71ee343ee9009e18d8505f2b9436b52abe3186",
+      "finding": "Supports native formal-derivation and proof register."
+    },
+    {
+      "passage_id": "TE-P029",
+      "pdf_page": 94,
+      "local_page_image": "C:\\interlanguage-task-state\\openlogic-te-Telu-IN\\canon\\pages\\tarkam1986-180dpi\\page-094.png",
+      "image_sha256": "01ddfe6445e93e93b9a16a7d84ebd3d257e5b9a34c1356263b2c8cb3aee68989",
+      "finding": "Supports native first-order predicate-logic register."
+    }
+  ],
+  "segments": [
+    {
+      "segment_id": "OLP-0274-B004",
+      "canon_passages_added": ["TE-P018"],
+      "scope": "part title Incompleteness",
+      "evidence_limit": "TE-P018 does not directly attest the specialized title; the frozen title and TE-T070 remain controlling."
+    },
+    {
+      "segment_id": "OLP-0274-B005",
+      "canon_passages_added": ["TE-P018", "TE-P024", "TE-P029"],
+      "scope": "part-driver editorial paragraph",
+      "evidence_limit": "The pages support broad formal-logic, derivation/proof and predicate-logic register, not Hilbert, Robinson Q, representability, arithmetization or incompleteness terminology; the source and TE-T070 remain controlling."
+    },
+    {
+      "segment_id": "OLP-0275-B004",
+      "canon_passages_added": ["TE-P018"],
+      "scope": "chapter title Introduction to Incompleteness",
+      "evidence_limit": "TE-P018 does not directly attest the specialized chapter title; the frozen title and TE-T070 remain controlling."
+    }
+  ],
+  "result": {
+    "repaired_rows": 3,
+    "batch_031_linguistic_rows": 77,
+    "batch_031_linguistic_rows_with_nonempty_canon_passages_after_repair": 77,
+    "status": "COMPLETE_PASS"
+  }
+}

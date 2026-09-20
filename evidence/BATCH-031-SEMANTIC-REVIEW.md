@@ -21,7 +21,7 @@ locally disclosed source corrections were checked in context. This is a
 same-agent semantic review, not independent specialist certification.
 OLP-0280, `content/incompleteness/arithmetization-syntax/arithmetization-syntax.tex`,
 is the next unresolved unit. The accepted editable translation scope is
-279/722 units, with 443 units remaining.
+276/722 units, with 446 units remaining.
 
 The bounded structural audit passes 6/6 units with 116/116 aligned blocks,
 exact environment counts, protected identifiers, OpenLogic token identities
@@ -82,13 +82,19 @@ TE-T024, TE-T028, TE-T034, TE-T047, TE-T058 and TE-T069 continue to control the
 edition's earlier function, formal-logic, derivation, axiom, model and
 computability terminology.
 
-Every linguistic segment records the passages actually consulted. TE-P005
-supports native natural-number exposition; TE-P008 and TE-P010--TE-P011
-support sets, relations and functions; TE-P018 and TE-P023--TE-P033 support
-formal logic, consequence, derivation, consistency, predicate, quantifier and
-proof register. The preserved page images for TE-P024, TE-P026 and TE-P027
-were visually rechecked during this batch. OCR was not substituted for those
-readings.
+The initial ledger emission left `canon_passages` empty on three of the 77
+linguistic rows: OLP-0274-B004, OLP-0274-B005 and OLP-0275-B004. On
+2026-09-20, after the original Batch 031 record, TE-P018, TE-P024 and TE-P029
+were freshly reread as complete native page images and those rows were repaired
+with an explicitly retrospective consultation phase. OCR was not used as
+authority. `BATCH-031-CANON-EVIDENCE-REPAIR.json` records the exact page-image
+hashes, segment mapping and evidence limits. All 77 linguistic rows now record
+nonempty passages actually consulted. TE-P005 supports native natural-number
+exposition; TE-P008 and TE-P010--TE-P011 support sets, relations and functions;
+TE-P018 and TE-P023--TE-P033 support formal logic, consequence, derivation,
+consistency, predicate, quantifier and proof register. The preserved page
+images for TE-P024, TE-P026 and TE-P027 were visually rechecked during the
+original batch; the repair adds the separately documented fresh rereading.
 
 The witnesses do not directly attest Hilbert's program, Robinson's Q,
 representability, arithmetization, provability predicates or Gödel's
@@ -127,5 +133,5 @@ replacement characters, unpaired surrogates or trailing whitespace.
 
 No TeX, BibTeX, Biber or `latexmk` process was started while preparing this
 source checkpoint. This review establishes editable-source coverage only; it
-does not silently equate that 279-unit boundary with the separately versioned
+does not silently equate that 276-unit boundary with the separately versioned
 HTML/EPUB or PDF reader boundaries.

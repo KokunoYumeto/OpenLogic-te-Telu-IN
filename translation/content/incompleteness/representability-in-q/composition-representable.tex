@@ -1,0 +1,105 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: composition-representable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{req}{cmp}
+\olsection{సంయుక్తం~$\Th{Q}$లో ప్రాతినిధ్యం చేయదగినది}
+
+$h$ను ఇలా నిర్వచించారని అనుకుందాం:
+\[
+h(x_0,\dots,x_{l-1}) = f(g_0(x_0,\dots,x_{l-1}), \dots,
+g_{k-1}(x_0,\dots,x_{l-1})).
+\]
+ఇక్కడ $f$, $g_0$,~\dots,~$g_{k-1}$ ప్రమేయాలకు వరుసగా ప్రాతినిధ్యం చేసే
+\tetoken{సూత్రాలు}{!!{formula}s} $!A_f,!A_{g_0},\dots,!A_{g_{k-1}}$లను ఇప్పటికే కనుగొన్నాం.
+$h$కు ప్రాతినిధ్యం చేసే \tetoken{ఒక సూత్రం}{!!a{formula}}~$!A_h$ను కనుగొనాలి.
+
+అన్ని ప్రమేయాలూ $1$-స్థానికమైన $h(x)=f(g(x))$ అనే సరళ సందర్భంతో
+మొదలుపెడదాం. $!A_f(y,z)$ అనేది~$f$కు, $!A_g(x,y)$ అనేది~$g$కు
+ప్రాతినిధ్యం చేస్తే, $h$కు ప్రాతినిధ్యం చేసే \tetoken{ఒక సూత్రం}{!!a{formula}}~$!A_h(x,z)$
+కావాలి. $z=f(y)$, $y=g(x)$ రెండూ నెరవేర్చే ఒక~$y$ ఉన్నప్పుడు, అప్పుడు మాత్రమే
+$h(x)=z$ అని గమనించండి. ($h(x)=z$ అయితే $g(x)$ అలాంటి~$y$; అలాంటి~$y$
+ఉంటే $y=g(x)$, $z=f(y)$ కనుక $z=f(g(x))$.) అందువల్ల
+$\lexists[y][(!A_g(x,y)\land !A_f(y,z))]$ను $!A_h(x,z)$కు మంచి అభ్యర్థిగా
+తీసుకోవచ్చు. $\Th{Q}$ సంబంధిత \tetoken{సూత్రాలను}{!!{formula}s} నిరూపిస్తుందని మాత్రమే
+ధృవీకరించాలి.
+
+\begin{prop}
+\ollabel{prop:rep1}
+$h(n)=m$ అయితే $\Th{Q}\Proves !A_h(\num{n},\num{m})$.
+\end{prop}
+
+\begin{proof}
+$h(n)=m$, అంటే $f(g(n))=m$ అనుకుందాం. $k=g(n)$గా తీసుకోండి. అప్పుడు
+\begin{align*}
+  \Th{Q} & \Proves !A_g(\num{n}, \num{k})
+  \intertext{$!A_g$ అనేది~$g$కు ప్రాతినిధ్యం చేస్తుంది కనుక; అలాగే}
+  \Th{Q} & \Proves !A_f(\num{k}, \num{m})
+  \intertext{$!A_f$ అనేది~$f$కు ప్రాతినిధ్యం చేస్తుంది కనుక. అందువల్ల}
+  \Th{Q} & \Proves !A_g(\num{n}, \num{k}) \land !A_f(\num{k}, \num{m})
+  \intertext{మరియు పర్యవసానంగా}
+  \Th{Q} & \Proves \lexists[y][(!A_g(\num{n}, y) \land !A_f(y, \num{m}))],
+\end{align*}
+అంటే $\Th{Q}\Proves !A_h(\num{n},\num{m})$.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:rep2}
+$h(n)=m$ అయితే $\Th{Q}\Proves\lforall[z][(!A_h(\num{n},z)\lif
+z=\num{m})]$.
+\end{prop}
+
+\begin{proof}
+$h(n)=m$, అంటే $f(g(n))=m$ అనుకుందాం. $k=g(n)$గా తీసుకోండి. అప్పుడు
+\begin{align*}
+  \Th{Q} & \Proves \lforall[y][(!A_g(\num{n}, y) \lif \eq[y][\num{k}])]
+  \intertext{$!A_g$ అనేది~$g$కు ప్రాతినిధ్యం చేస్తుంది కనుక; అలాగే}
+  \Th{Q} & \Proves \lforall[z][(!A_f(\num{k}, z) \lif \eq[z][\num{m}])]
+  \intertext{$!A_f$ అనేది~$f$కు ప్రాతినిధ్యం చేస్తుంది కనుక. కొద్దిపాటి
+    తర్కాన్ని వాడి కిందిదీ వస్తుందని చూపవచ్చు:}
+  \Th{Q} & \Proves \lforall[z][(\lexists[y][(!A_g(\num{n}, y) \land
+      !A_f(y, z))] \lif \eq[z][\num{m}])].
+\end{align*}
+అంటే $\Th{Q}\Proves\lforall[y][(!A_h(\num n,y)\lif\eq[y][\num m])]$.
+\end{proof}
+
+$f$, $g_i$ల స్థానసంఖ్య $1$కంటే ఎక్కువగా ఉండే సంక్లిష్ట సందర్భంలోనూ ఇదే
+ఆలోచన పనిచేస్తుంది.
+
+\begin{prop}
+\ollabel{prop:rep-composition}
+$!A_f(y_0,\dots,y_{k-1},z)$ అనేది~$f(y_0,\dots,y_{k-1})$కు~$\Th{Q}$లో
+ప్రాతినిధ్యం చేస్తుందనీ, $!A_{g_i}(x_0,\dots,x_{l-1},y)$ అనేది
+$g_i(x_0,\dots,x_{l-1})$కు~$\Th{Q}$లో ప్రాతినిధ్యం చేస్తుందనీ అనుకుందాం.
+అప్పుడు
+\begin{multline*}
+  \lexists[y_0][\dots\lexists[y_{k-1}][(!A_{g_0}(x_0,\dots,x_{l-1},y_0) \land
+      \dots \land {}\\
+  !A_{g_{k-1}}(x_0,\dots,x_{l-1},y_{k-1}) \land
+  !A_f(y_0,\dots,y_{k-1},z))]\dots]
+\end{multline*}
+అనే సూత్రం
+\[
+h(x_0, \dots, x_{l-1}) = f(g_0(x_0, \dots, x_{l-1}), \dots, g_{k-1}(x_0,
+\dots, x_{l-1})).
+\]
+కు ప్రాతినిధ్యం చేస్తుంది.
+\sourcecorrection{OLTEREQ-005}{ఆంగ్ల మూలంలోని సాధారణ సంయుక్త ప్రాతినిధ్య సూత్రంలో పరిమాణక గూళ్ల మూసివేతకు ముందే సంధానంలోని చివరి రెండు సూత్రాలు బయటపడి, కుండలీకరణ అసమతుల్యమైంది. ప్రతిపాదనకు ముందు ఇచ్చిన ఏకస్థానిక నమూనా నిర్దేశించేలా అన్ని $g_i$ సూత్రాలనూ $A_f$నూ ఒకే సంధానంలో, $y_0,\dots,y_{k-1}$ అస్తిత్వ పరిమాణకాల పరిధిలో ఉంచాం.}
+\end{prop}
+
+\begin{proof}
+సాధన.
+\end{proof}
+
+\begin{prob}
+\olref[inc][req][cmp]{prop:rep1},
+\olref[inc][req][cmp]{prop:rep2} నిరూపణలను మార్గదర్శకంగా తీసుకుని,
+\olref[inc][req][cmp]{prop:rep-composition} నిరూపణను వివరంగా చేయండి.
+\sourcecorrection{OLTEREQ-006}{ఆంగ్ల మూలంలోని సమస్య మార్గదర్శకాలుగా $\olref[inc][req][cmp]{prop:rep2}$నే రెండుసార్లు సూచించింది. వెంటనే ముందున్న రెండు వేర్వేరు నిరూపణలను ఉద్దేశించినందున మొదటి సూచనను $\olref[inc][req][cmp]{prop:rep1}$గా పునరుద్ధరించాం.}
+\end{prob}
+
+\end{document}
