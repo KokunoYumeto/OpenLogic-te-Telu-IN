@@ -24,6 +24,7 @@ $receipt = [ordered]@{
     acquired = $false
     abandoned_recovery = $false
     commands = @()
+    pdf_pass_hashes = @()
     status = 'not_started'
 }
 
@@ -59,11 +60,21 @@ try {
     $texArgs = @('--disable-installer', '-no-shell-escape', '-interaction=nonstopmode', '-halt-on-error', '-file-line-error', '-recorder', "-output-directory=$buildPath", 'editions/cumulative-279.tex')
     Invoke-CapturedProcess -FilePath $xePath -Arguments $texArgs -Name 'xelatex-1' -WorkingDirectory $repoPath
     Invoke-CapturedProcess -FilePath $bibPath -Arguments @((Join-Path $buildPath 'cumulative-279')) -Name 'bibtex' -WorkingDirectory $repoPath
-    Invoke-CapturedProcess -FilePath $xePath -Arguments $texArgs -Name 'xelatex-2' -WorkingDirectory $repoPath
-    Invoke-CapturedProcess -FilePath $xePath -Arguments $texArgs -Name 'xelatex-3' -WorkingDirectory $repoPath
-    $thirdHash = (Get-FileHash -LiteralPath (Join-Path $buildPath 'cumulative-279.pdf')).Hash.ToLowerInvariant()
-    Invoke-CapturedProcess -FilePath $xePath -Arguments $texArgs -Name 'xelatex-4' -WorkingDirectory $repoPath
-    $fourthHash = (Get-FileHash -LiteralPath (Join-Path $buildPath 'cumulative-279.pdf')).Hash.ToLowerInvariant()
+    $pdfPath = Join-Path $buildPath 'cumulative-279.pdf'
+    $previousHash = $null
+    $finalHash = $null
+    $convergedPass = $null
+    $maximumPasses = 6
+    for ($pass = 2; $pass -le $maximumPasses; $pass++) {
+        Invoke-CapturedProcess -FilePath $xePath -Arguments $texArgs -Name "xelatex-$pass" -WorkingDirectory $repoPath
+        $finalHash = (Get-FileHash -LiteralPath $pdfPath).Hash.ToLowerInvariant()
+        $receipt.pdf_pass_hashes += [ordered]@{ pass = $pass; sha256 = $finalHash }
+        if ($null -ne $previousHash -and $previousHash -eq $finalHash) {
+            $convergedPass = $pass
+            break
+        }
+        $previousHash = $finalHash
+    }
 
     $texLogPath = Join-Path $buildPath 'cumulative-279.log'
     $profilePath = [Environment]::GetFolderPath('UserProfile')
@@ -73,8 +84,10 @@ try {
     $receipt.overfull_boxes = @([regex]::Matches($safeTexLog, 'Overfull[^\r\n]*') | ForEach-Object Value)
     $receipt.undefined_references = $safeTexLog.Contains('There were undefined references')
     $receipt.undefined_citations = $safeTexLog.Contains('There were undefined citations')
-    $receipt.reproducible_last_two_passes = ($thirdHash -eq $fourthHash)
-    $receipt.pdf_sha256 = $fourthHash
+    $receipt.maximum_xelatex_passes = $maximumPasses
+    $receipt.converged_xelatex_pass = $convergedPass
+    $receipt.reproducible_last_two_passes = ($null -ne $convergedPass)
+    $receipt.pdf_sha256 = $finalHash
     $receipt.render_manifest_sha256 = (Get-FileHash -LiteralPath (Join-Path $buildPath 'render-tree\render-manifest.json')).Hash.ToLowerInvariant()
     if ($receipt.missing_characters.Count -or $receipt.undefined_references -or $receipt.undefined_citations -or -not $receipt.reproducible_last_two_passes) {
         $receipt.status = 'qa_failed'

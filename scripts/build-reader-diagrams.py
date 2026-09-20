@@ -1,4 +1,4 @@
-"""Compile the frozen SFR TikZ diagrams to deterministic, local SVG assets.
+"""Compile frozen cumulative-reader TikZ diagrams to deterministic SVG assets.
 
 This is a maintainer step, not part of ordinary HTML/EPUB reading. It obtains
 the shared Interlanguage TeX slot before invoking pdfLaTeX or dvisvgm.
@@ -31,11 +31,11 @@ EXTERNAL = (
     "assets/diagrams/injective.tikz",
     "assets/diagrams/bijective.tikz",
     "assets/diagrams/composition.tikz",
+    "assets/diagrams/turing-machine.tikz",
 )
-INLINE_UNITS = (
-    "content/sets-functions-relations/relations/graphs.tex",
-    "content/sets-functions-relations/relations/trees.tex",
-)
+SOURCE_MANIFEST = ROOT / "evidence" / "SOURCE_MANIFEST.jsonl"
+SCOPE_START = 4
+SCOPE_END = 279
 TIKZ_RE = re.compile(r"\\begin\{tikzpicture\}[\s\S]*?\\end\{tikzpicture\}")
 
 
@@ -57,6 +57,15 @@ def wrapper(snippet: str) -> str:
 \definecolor{oldiagcolorC}{rgb}{0.68,0.19,0.25}
 \definecolor{oldiagcolorD}{HTML}{1973ba}
 \definecolor{oldiagcolorE}{HTML}{4d6f39}
+\newcommand{\Struct}[1]{\mathfrak{#1}}
+\newcommand{\formula}[1]{\mathit{#1}}
+\newcommand{\TMendtape}{\triangleright}
+\newcommand{\TMblank}{0}
+\newcommand{\TMstroke}{1}
+\newcommand{\TMright}{R}
+\newcommand{\TMleft}{L}
+\newcommand{\TMstay}{N}
+\newcommand{\TMtrans}[3]{\ensuremath{#1, #2, #3}}
 \begin{document}
 """ + snippet + "\n\\end{document}\n"
 
@@ -87,6 +96,11 @@ def compile_svg(name: str, snippet: str) -> bytes:
         errors="replace",
     )
     require(latex.returncode == 0, f"pdfLaTeX failed for {name}:\n{latex.stdout[-4000:]}")
+    log = (work / "diagram.log").read_text(encoding="utf-8", errors="replace")
+    require(
+        not re.search(r"! LaTeX Error|Undefined control sequence|Missing character:", log),
+        f"TeX log validation failed for {name}:\n{log[-4000:]}",
+    )
     raw_svg = work / "diagram.raw.svg"
     convert = subprocess.run(
         ["dvisvgm", "--pdf", "--no-fonts", "--exact-bbox", "--bbox=min", "--output=" + str(raw_svg), "diagram.pdf"],
@@ -121,34 +135,61 @@ class TeXSlot:
 def inputs() -> list[dict[str, object]]:
     records: list[dict[str, object]] = []
     for relative in EXTERNAL:
-        payload = (UPSTREAM / relative).read_text(encoding="utf-8")
+        payload_bytes = (UPSTREAM / relative).read_bytes()
+        payload = payload_bytes.decode("utf-8")
         require(payload.count("\\begin{tikzpicture}") == 1, f"unexpected external TikZ shape: {relative}")
         records.append(
             {
                 "name": Path(relative).stem,
+                "kind": "external_tikz",
                 "source_path": relative,
-                "source_sha256": sha256(payload.encode("utf-8")),
+                "source_sha256": sha256(payload_bytes),
                 "snippet_index": 1,
                 "snippet": payload,
             }
         )
-    for relative in INLINE_UNITS:
-        payload = (UPSTREAM / relative).read_text(encoding="utf-8")
-        snippets = TIKZ_RE.findall(payload)
-        require(bool(snippets), f"missing inline TikZ: {relative}")
-        for index, snippet in enumerate(snippets, 1):
-            digest = sha256(snippet.encode("utf-8"))
-            records.append(
-                {
-                    "name": "inline-" + digest[:16],
+    manifest_rows = [
+        json.loads(line)
+        for line in SOURCE_MANIFEST.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    ]
+    scope_rows = [row for row in manifest_rows if SCOPE_START <= int(row["order"]) <= SCOPE_END]
+    require(len(scope_rows) == SCOPE_END - SCOPE_START + 1, "cumulative diagram scope is incomplete")
+    inline: dict[str, dict[str, object]] = {}
+    for row in scope_rows:
+        relative = str(row["source_path"])
+        for language, base in (("en", UPSTREAM), ("te", ROOT / "translation")):
+            payload_bytes = (base / relative).read_bytes()
+            payload = payload_bytes.decode("utf-8")
+            for index, match in enumerate(TIKZ_RE.finditer(payload), 1):
+                snippet = match.group(0)
+                digest = sha256(snippet.encode("utf-8"))
+                name = "inline-" + digest[:16]
+                occurrence = {
+                    "language": language,
+                    "unit_id": row["unit_id"],
                     "source_path": relative,
-                    "source_sha256": sha256(payload.encode("utf-8")),
+                    "source_sha256": sha256(payload_bytes),
                     "snippet_index": index,
-                    "snippet_sha256": digest,
-                    "snippet": snippet,
                 }
-            )
-    require(len(records) == 8, f"unexpected diagram count: {len(records)}")
+                if name in inline:
+                    require(inline[name]["snippet_sha256"] == digest, f"diagram digest-prefix collision: {name}")
+                    inline[name]["occurrences"].append(occurrence)
+                else:
+                    inline[name] = {
+                        "name": name,
+                        "kind": "inline_tikz",
+                        "snippet_sha256": digest,
+                        "occurrences": [occurrence],
+                        "snippet": snippet,
+                    }
+    records.extend(inline[name] for name in sorted(inline))
+    require(len(inline) == 33, f"unexpected unique inline diagram count: {len(inline)}")
+    require(
+        sum(len(record["occurrences"]) for record in inline.values()) == 46,
+        "unexpected inline diagram occurrence count",
+    )
+    require(len(records) == 39, f"unexpected total diagram count: {len(records)}")
     require(len({row["name"] for row in records}) == len(records), "duplicate diagram name")
     return records
 
@@ -157,9 +198,10 @@ def main() -> None:
     records = inputs()
     BUILD.mkdir(parents=True, exist_ok=True)
     OUTPUT.mkdir(parents=True, exist_ok=True)
-    for stale_name in ("inline-67bc14ded3614a59.svg", "inline-adfd8b1868d5aea1.svg"):
-        stale = OUTPUT / stale_name
-        if stale.is_file():
+    target_names = {f"{record['name']}.svg" for record in records}
+    for stale in OUTPUT.glob("*.svg"):
+        require(stale.parent.resolve() == OUTPUT.resolve(), "unsafe stale-diagram target")
+        if stale.name not in target_names:
             stale.unlink()
     with TeXSlot():
         for record in records:
@@ -170,8 +212,9 @@ def main() -> None:
             record["svg_bytes"] = len(rendered)
             record["svg_sha256"] = sha256(rendered)
     manifest = {
-        "schema": "openlogic-te-reader-diagrams/1",
+        "schema": "openlogic-te-reader-diagrams/2",
         "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+        "scope": "OLP-0004 through OLP-0279, Telugu and canonical English reader projections",
         "conversion": "Frozen TikZ compiled under the shared TeX lock, then converted by dvisvgm with text outlined as paths; localized semantic descriptions are supplied by the HTML/EPUB renderer.",
         "diagrams": records,
     }

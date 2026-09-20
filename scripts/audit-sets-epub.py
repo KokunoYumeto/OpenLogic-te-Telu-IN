@@ -1,4 +1,4 @@
-"""Fail-closed audit for the deterministic Telugu foundations EPUB checkpoint."""
+"""Fail-closed audit for deterministic Telugu EPUB reader checkpoints."""
 
 from __future__ import annotations
 
@@ -17,44 +17,89 @@ from lxml import etree, html
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE_HTML = ROOT / "docs" / "sfr" / "index.html"
-SOURCE_MANIFEST = ROOT / "docs" / "sfr" / "render-manifest.json"
-EPUB = ROOT / "output" / "release" / "openlogic-te-Telu-IN-sfr-v0.3.0.epub"
-COLD_EPUB = ROOT / "output" / "release" / "openlogic-te-Telu-IN-sfr-v0.3.0-cold.epub"
-EVIDENCE = ROOT / "evidence" / "EPUB-SFR-QA.json"
 RENDER_EVIDENCE = ROOT / "evidence" / "EPUB-SFR-RENDER-QA.json"
 PAGES_EVIDENCE = ROOT / "evidence" / "GITHUB-PAGES-SFR-READBACK.json"
-RELEASE_MANIFEST = ROOT / "output" / "release" / "release-manifest-v0.3.0.json"
 PRIOR_READBACK = ROOT / "evidence" / "ZENODO-SETS-V020-READBACK.json"
-
-VERSION = "0.3.0-sfr-epub"
-DATE = "2026-09-12"
-EXPECTED_HTML_SHA256 = "95d95c8664eceedab56f2c0402375b7adb9ef1e5c4471d1b651bdc6f428de210"
-EXPECTED_MANIFEST_SHA256 = "546f323c21c0b8a589e2afc0fbaecd73787917b51f74cff1420fa3cd95e6480b"
-EXPECTED_UNITS = tuple(f"OLP-{number:04d}" for number in range(4, 27))
-EXPECTED_DIAGRAMS = {
-    "bijective.svg",
-    "composition.svg",
-    "function.svg",
-    "injective.svg",
-    "inline-8ee505c808d2f308.svg",
-    "inline-f122123b1f5663cd.svg",
-    "inline-f90ab2f746e4260f.svg",
-    "surjective.svg",
+PROFILES = {
+    "sfr": {
+        "source_dir": ROOT / "docs" / "sfr",
+        "epub": ROOT / "output" / "release" / "openlogic-te-Telu-IN-sfr-v0.3.0.epub",
+        "cold_epub": ROOT / "output" / "release" / "openlogic-te-Telu-IN-sfr-v0.3.0-cold.epub",
+        "evidence": ROOT / "evidence" / "EPUB-SFR-QA.json",
+        "release_manifest": ROOT / "output" / "release" / "release-manifest-v0.3.0.json",
+        "version": "0.3.0-sfr-epub",
+        "date": "2026-09-12",
+        "zip_timestamp": (2026, 9, 12, 0, 0, 0),
+        "timestamp_iso": "2026-09-12T00:00:00Z",
+        "html_sha256": "95d95c8664eceedab56f2c0402375b7adb9ef1e5c4471d1b651bdc6f428de210",
+        "manifest_sha256": "546f323c21c0b8a589e2afc0fbaecd73787917b51f74cff1420fa3cd95e6480b",
+        "units": tuple(f"OLP-{number:04d}" for number in range(4, 27)),
+        "unit_range": "OLP-0004 through OLP-0026",
+        "source_path": "docs/sfr/index.html",
+        "build_release_manifest": True,
+    },
+    "cumulative279": {
+        "source_dir": ROOT / "output" / "html" / "cumulative-279",
+        "epub": ROOT / "output" / "release" / "openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.epub",
+        "cold_epub": ROOT / "output" / "release" / "openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0-cold.epub",
+        "evidence": ROOT / "evidence" / "CUMULATIVE-OLP0279-EPUB-QA.json",
+        "release_manifest": None,
+        "version": "0.4.0-cumulative-olp0279-epub",
+        "date": "2026-09-20",
+        "zip_timestamp": (2026, 9, 20, 0, 0, 0),
+        "timestamp_iso": "2026-09-20T00:00:00Z",
+        "html_sha256": "539745faf37e8d16f7645c9757c9473da243a87b9627034c861f25f527855697",
+        "manifest_sha256": "23165973763dcc702f8ed83d9be5b612d31d99d5d830f3498fe8729b44c03c8b",
+        "units": tuple(f"OLP-{number:04d}" for number in range(4, 280)),
+        "unit_range": "OLP-0004 through OLP-0279",
+        "source_path": "output/html/cumulative-279/index.html",
+        "build_release_manifest": False,
+    },
 }
-EXPECTED_ENTRIES = {
-    "mimetype",
-    "META-INF/container.xml",
-    "OEBPS/package.opf",
-    "OEBPS/title.xhtml",
-    "OEBPS/nav.xhtml",
-    "OEBPS/reader.xhtml",
-    "OEBPS/about.xhtml",
-    "OEBPS/license.xhtml",
-    "OEBPS/reader.css",
-    "OEBPS/fonts/NotoSerifTelugu-Regular.ttf",
-    "OEBPS/fonts/NotoSerifTelugu-Bold.ttf",
-} | {f"OEBPS/assets/diagrams/{name}" for name in EXPECTED_DIAGRAMS}
+
+
+def configure_profile(name: str) -> None:
+    profile = PROFILES[name]
+    global PROFILE_NAME, SOURCE_HTML, SOURCE_MANIFEST, EPUB, COLD_EPUB, EVIDENCE
+    global RELEASE_MANIFEST, VERSION, DATE, ZIP_TIMESTAMP, TIMESTAMP_ISO
+    global EXPECTED_HTML_SHA256, EXPECTED_MANIFEST_SHA256, EXPECTED_UNITS
+    global EXPECTED_DIAGRAMS, EXPECTED_ENTRIES, UNIT_RANGE, SOURCE_PATH_LABEL
+    global BUILD_RELEASE_MANIFEST
+    PROFILE_NAME = name
+    source_dir = profile["source_dir"]
+    SOURCE_HTML = source_dir / "index.html"
+    SOURCE_MANIFEST = source_dir / "render-manifest.json"
+    EPUB = profile["epub"]
+    COLD_EPUB = profile["cold_epub"]
+    EVIDENCE = profile["evidence"]
+    RELEASE_MANIFEST = profile["release_manifest"]
+    VERSION = profile["version"]
+    DATE = profile["date"]
+    ZIP_TIMESTAMP = profile["zip_timestamp"]
+    TIMESTAMP_ISO = profile["timestamp_iso"]
+    EXPECTED_HTML_SHA256 = profile["html_sha256"]
+    EXPECTED_MANIFEST_SHA256 = profile["manifest_sha256"]
+    EXPECTED_UNITS = profile["units"]
+    EXPECTED_DIAGRAMS = {path.name for path in (source_dir / "assets" / "diagrams").glob("*.svg")}
+    EXPECTED_ENTRIES = {
+        "mimetype",
+        "META-INF/container.xml",
+        "OEBPS/package.opf",
+        "OEBPS/title.xhtml",
+        "OEBPS/nav.xhtml",
+        "OEBPS/reader.xhtml",
+        "OEBPS/about.xhtml",
+        "OEBPS/license.xhtml",
+        "OEBPS/reader.css",
+        "OEBPS/fonts/NotoSerifTelugu-Regular.ttf",
+        "OEBPS/fonts/NotoSerifTelugu-Bold.ttf",
+    } | {f"OEBPS/assets/diagrams/{diagram}" for diagram in EXPECTED_DIAGRAMS}
+    UNIT_RANGE = profile["unit_range"]
+    SOURCE_PATH_LABEL = profile["source_path"]
+    BUILD_RELEASE_MANIFEST = profile["build_release_manifest"]
+
+
+configure_profile("sfr")
 
 XHTML_NS = "http://www.w3.org/1999/xhtml"
 MATHML_NS = "http://www.w3.org/1998/Math/MathML"
@@ -86,6 +131,7 @@ def json_bytes(value: object) -> bytes:
 def original_document() -> html.HtmlElement:
     payload = SOURCE_HTML.read_bytes()
     require(sha256(payload) == EXPECTED_HTML_SHA256, "source HTML digest mismatch")
+    require(sha256(SOURCE_MANIFEST.read_bytes()) == EXPECTED_MANIFEST_SHA256, "source render-manifest digest mismatch")
     parser = html.HTMLParser(encoding="utf-8", recover=True, huge_tree=True)
     return html.document_fromstring(payload, parser=parser)
 
@@ -182,6 +228,33 @@ def audit_links(documents: dict[str, etree._ElementTree], names: set[str]) -> di
         name: set(document.xpath("//@id"))
         for name, document in documents.items()
     }
+    internal = 0
+    external = 0
+    checked_fragments = 0
+    for name, document in documents.items():
+        ids = document.xpath("//@id")
+        require(len(ids) == len(set(ids)), f"duplicate IDs in {name}")
+        for element in document.xpath("//*[local-name()='a' and @href]"):
+            href = element.get("href") or ""
+            split = urlsplit(href)
+            if split.scheme in {"http", "https", "mailto"}:
+                external += 1
+                continue
+            require(not split.scheme and not split.netloc, f"unsupported link scheme in {name}: {href}")
+            target_name = posixpath.normpath(posixpath.join(posixpath.dirname(name), unquote(split.path))) if split.path else name
+            require(target_name in names, f"missing local link target from {name}: {href}")
+            internal += 1
+            if split.fragment:
+                require(target_name in anchors, f"fragment targets non-XHTML resource: {href}")
+                fragment = unquote(split.fragment)
+                require(fragment in anchors[target_name], f"missing fragment target from {name}: {href}")
+                checked_fragments += 1
+    return {
+        "internal_links": internal,
+        "external_links": external,
+        "fragment_targets": checked_fragments,
+        "all_resolved": True,
+    }
 
 
 def audit_embedded_resources(documents: dict[str, etree._ElementTree], names: set[str]) -> dict[str, object]:
@@ -222,33 +295,6 @@ def audit_svg_resources(blobs: dict[str, bytes]) -> list[dict[str, object]]:
         )
     require({row["filename"] for row in rows} == EXPECTED_DIAGRAMS, "diagram resource inventory mismatch")
     return rows
-    internal = 0
-    external = 0
-    checked_fragments = 0
-    for name, document in documents.items():
-        ids = document.xpath("//@id")
-        require(len(ids) == len(set(ids)), f"duplicate IDs in {name}")
-        for element in document.xpath("//*[local-name()='a' and @href]"):
-            href = element.get("href") or ""
-            split = urlsplit(href)
-            if split.scheme in {"http", "https", "mailto"}:
-                external += 1
-                continue
-            require(not split.scheme and not split.netloc, f"unsupported link scheme in {name}: {href}")
-            target_name = posixpath.normpath(posixpath.join(posixpath.dirname(name), unquote(split.path))) if split.path else name
-            require(target_name in names, f"missing local link target from {name}: {href}")
-            internal += 1
-            if split.fragment:
-                require(target_name in anchors, f"fragment targets non-XHTML resource: {href}")
-                fragment = unquote(split.fragment)
-                require(fragment in anchors[target_name], f"missing fragment target from {name}: {href}")
-                checked_fragments += 1
-    return {
-        "internal_links": internal,
-        "external_links": external,
-        "fragment_targets": checked_fragments,
-        "all_resolved": True,
-    }
 
 
 def audit_source_crosswalk(render_manifest: dict) -> list[dict[str, object]]:
@@ -280,6 +326,17 @@ def audit_source_crosswalk(render_manifest: dict) -> list[dict[str, object]]:
 
 def run_epubcheck(epub: Path, jar: Path) -> dict[str, object]:
     require(jar.is_file(), "EPUBCheck jar not found")
+    version_result = subprocess.run(
+        ["java", "-jar", str(jar), "--version"],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+    )
+    require(version_result.returncode == 0, f"EPUBCheck version query failed:\n{version_result.stdout}")
+    tool_match = re.search(r"EPUBCheck v?([0-9.]+)", version_result.stdout)
+    require(tool_match is not None, f"unrecognized EPUBCheck version output: {version_result.stdout!r}")
     result = subprocess.run(
         ["java", "-jar", str(jar), str(epub)],
         stdout=subprocess.PIPE,
@@ -294,7 +351,7 @@ def run_epubcheck(epub: Path, jar: Path) -> dict[str, object]:
     require("0 fatals / 0 errors / 0 warnings" in output, f"EPUBCheck message summary is not clean:\n{output}")
     version_match = re.search(r"EPUB version ([0-9.]+) rules", output)
     return {
-        "tool": "EPUBCheck 5.3.0",
+        "tool": "EPUBCheck " + tool_match.group(1),
         "ruleset": version_match.group(1) if version_match else "3.3",
         "return_code": result.returncode,
         "fatals": 0,
@@ -324,7 +381,7 @@ def audit_epub(epub: Path, cold_epub: Path, epubcheck_jar: Path) -> tuple[dict[s
         require(names[0] == "mimetype", "mimetype is not the first ZIP entry")
         require(infos[0].compress_type == zipfile.ZIP_STORED, "mimetype must be stored without compression")
         require(archive.read("mimetype") == b"application/epub+zip", "invalid mimetype payload")
-        require(all(info.date_time == (2026, 9, 12, 0, 0, 0) for info in infos), "non-deterministic ZIP timestamp")
+        require(all(info.date_time == ZIP_TIMESTAMP for info in infos), "non-deterministic ZIP timestamp")
         blobs = {name: archive.read(name) for name in names}
 
     container = xml_document(blobs["META-INF/container.xml"], "container.xml")
@@ -337,7 +394,7 @@ def audit_epub(epub: Path, cold_epub: Path, epubcheck_jar: Path) -> tuple[dict[s
     languages = opf.xpath("//dc:language/text()", namespaces={"dc": DC_NS})
     require(languages == ["te-Telu-IN"], "OPF language metadata mismatch")
     descriptions = opf.xpath("//opf:meta[@property='schema:description']/text()", namespaces={"opf": OPF_NS})
-    require(len(descriptions) == 1 and "23 of 722" in descriptions[0] and "Not the complete" in descriptions[0], "OPF scope disclosure missing")
+    require(len(descriptions) == 1 and f"{len(EXPECTED_UNITS)} of 722" in descriptions[0] and "Not the complete" in descriptions[0], "OPF scope disclosure missing")
     require(opf.xpath("string(//opf:meta[@property='rendition:layout'])", namespaces={"opf": OPF_NS}) == "reflowable", "OPF is not reflowable")
     features = set(opf.xpath("//opf:meta[@property='schema:accessibilityFeature']/text()", namespaces={"opf": OPF_NS}))
     require({"MathML", "tableOfContents", "structuralNavigation", "alternativeText"}.issubset(features), "accessibility metadata incomplete")
@@ -351,7 +408,7 @@ def audit_epub(epub: Path, cold_epub: Path, epubcheck_jar: Path) -> tuple[dict[s
     require(set((manifest_by_id["reader"].get("properties") or "").split()) == {"mathml", "svg"}, "reader manifest properties mismatch")
     require((manifest_by_id["nav"].get("properties") or "") == "nav", "navigation property missing")
     diagram_items = [item for item in manifest_items if item.get("media-type") == "image/svg+xml"]
-    require(len(diagram_items) == 8, "OPF diagram resource count mismatch")
+    require(len(diagram_items) == len(EXPECTED_DIAGRAMS), "OPF diagram resource count mismatch")
     require(all(not item.get("properties") for item in diagram_items), "standalone SVG resources must not declare content properties")
     spine = opf.xpath("//opf:spine/opf:itemref/@idref", namespaces={"opf": OPF_NS})
     require(spine == ["title", "nav", "reader", "about", "license"], "spine order mismatch")
@@ -423,22 +480,22 @@ def audit_epub(epub: Path, cold_epub: Path, epubcheck_jar: Path) -> tuple[dict[s
     all_svg = output.xpath("//*[local-name()='svg']")
     all_images = output.xpath("//*[local-name()='img']")
     all_statements = output.xpath("//*[local-name()='article' and contains(concat(' ',normalize-space(@class),' '),' statement ')]")
-    require(len(all_math) == 2512, "unexpected total MathML root count")
-    require(len(all_svg) == 6, "unexpected total SVG count")
-    require(len(all_images) == 16, "unexpected compiled SVG image count")
-    require(len(all_statements) == 242, "unexpected statement count")
-    require(len(output.xpath("//*[local-name()='details' and contains(concat(' ',normalize-space(@class),' '),' english ')]")) == 23, "canonical English disclosure count mismatch")
+    require(len(all_math) == len(source.xpath("//*[local-name()='math']")), "unexpected total MathML root count")
+    require(len(all_svg) == len(source.xpath("//*[local-name()='svg']")), "unexpected total SVG count")
+    require(len(all_images) == len(source.xpath("//*[local-name()='img']")), "unexpected compiled SVG image count")
+    require(len(all_statements) == len(source.xpath("//*[local-name()='article' and contains(concat(' ',normalize-space(@class),' '),' statement ')]")), "unexpected statement count")
+    require(len(output.xpath("//*[local-name()='details' and contains(concat(' ',normalize-space(@class),' '),' english ')]")) == len(EXPECTED_UNITS), "canonical English disclosure count mismatch")
     require(all(svg.get("role") == "img" and svg.get("aria-label") and svg.xpath("string(.//*[local-name()='title'][1])") == svg.get("aria-label") for svg in all_svg), "SVG descriptions incomplete")
     require(all(image.get("src") and image.get("alt") and "reader-diagram" in (image.get("class") or "").split() for image in all_images), "compiled SVG descriptions incomplete")
     citation_keys = output.xpath("//*[contains(concat(' ',normalize-space(@class),' '),' citation ')]/@data-citation-key")
-    require(citation_keys == ["Benacerraf1965", "Benacerraf1965"], "citation key coverage mismatch")
+    require(citation_keys == source.xpath("//*[contains(concat(' ',normalize-space(@class),' '),' citation ')]/@data-citation-key"), "citation key coverage mismatch")
     source_bibliographies = source.xpath("//*[@id='bibliography']")
     output_bibliographies = output.xpath("//*[@id='bibliography']")
     require(len(source_bibliographies) == len(output_bibliographies) == 1, "bibliography count mismatch")
     require(text_sha(source_bibliographies[0]) == text_sha(output_bibliographies[0]), "bibliography text changed during packaging")
     require(link_values(source_bibliographies[0]) == link_values(output_bibliographies[0]), "bibliography links changed during packaging")
     title_text = normalized("".join(documents["OEBPS/title.xhtml"].getroot().itertext()))
-    require("722 మూల విభాగాలలో 23" in title_text, "title-page scope disclosure missing")
+    require(f"722 మూల విభాగాలలో {len(EXPECTED_UNITS)}" in title_text, "title-page scope disclosure missing")
     require("పూర్తి OpenLogic తెలుగు గ్రంథం కాదు" in title_text, "incomplete-edition disclosure missing")
 
     render_manifest = json.loads(SOURCE_MANIFEST.read_text(encoding="utf-8"))
@@ -458,16 +515,14 @@ def audit_epub(epub: Path, cold_epub: Path, epubcheck_jar: Path) -> tuple[dict[s
         "version": VERSION,
         "date": DATE,
         "scope": {
-            "unit_range": "OLP-0004 through OLP-0026",
-            "translated_units": 23,
+            "unit_range": UNIT_RANGE,
+            "translated_units": len(EXPECTED_UNITS),
             "corpus_units": 722,
-            "chapters": ["Sets", "Relations", "Functions"],
-            "chapter_completeness": "three complete chapters",
             "complete_edition": False,
             "scope_label_present_in_package": True,
         },
         "source_identity": {
-            "html_path": "docs/sfr/index.html",
+            "html_path": SOURCE_PATH_LABEL,
             "html_bytes": SOURCE_HTML.stat().st_size,
             "html_sha256": EXPECTED_HTML_SHA256,
             "render_manifest_sha256": EXPECTED_MANIFEST_SHA256,
@@ -479,7 +534,7 @@ def audit_epub(epub: Path, cold_epub: Path, epubcheck_jar: Path) -> tuple[dict[s
             "cold_bytes": len(cold_payload),
             "cold_sha256": sha256(cold_payload),
             "byte_identical": True,
-            "fixed_zip_timestamp": "2026-09-12T00:00:00Z",
+            "fixed_zip_timestamp": TIMESTAMP_ISO,
         },
         "epubcheck": epubcheck,
         "structure": {
@@ -508,7 +563,7 @@ def audit_epub(epub: Path, cold_epub: Path, epubcheck_jar: Path) -> tuple[dict[s
             "inline_svg_diagrams": len(all_svg),
             "compiled_svg_image_instances": len(all_images),
             "statements": len(all_statements),
-            "canonical_english_disclosures": 23,
+            "canonical_english_disclosures": len(EXPECTED_UNITS),
             "citation_keys": citation_keys,
             "bibliography_entries": 1,
         },
@@ -588,21 +643,29 @@ def build_release_manifest(artifact: dict[str, object], evidence_path: Path) -> 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--epub", type=Path, default=EPUB)
-    parser.add_argument("--cold-epub", type=Path, default=COLD_EPUB)
+    parser.add_argument("--profile", choices=sorted(PROFILES), default="sfr")
+    parser.add_argument("--epub", type=Path)
+    parser.add_argument("--cold-epub", type=Path)
     parser.add_argument("--epubcheck-jar", type=Path, required=True)
-    parser.add_argument("--evidence", type=Path, default=EVIDENCE)
-    parser.add_argument("--release-manifest", type=Path, default=RELEASE_MANIFEST)
+    parser.add_argument("--evidence", type=Path)
+    parser.add_argument("--release-manifest", type=Path)
     arguments = parser.parse_args()
-    evidence, artifact = audit_epub(arguments.epub.resolve(), arguments.cold_epub.resolve(), arguments.epubcheck_jar.resolve())
-    evidence_path = arguments.evidence.resolve()
+    configure_profile(arguments.profile)
+    epub = (arguments.epub or EPUB).resolve()
+    cold_epub = (arguments.cold_epub or COLD_EPUB).resolve()
+    evidence, artifact = audit_epub(epub, cold_epub, arguments.epubcheck_jar.resolve())
+    evidence_path = (arguments.evidence or EVIDENCE).resolve()
     require(evidence_path.parent == (ROOT / "evidence").resolve(), "unsafe evidence output")
     evidence_path.write_bytes(json_bytes(evidence))
-    release_manifest = build_release_manifest(artifact, evidence_path)
-    manifest_path = arguments.release_manifest.resolve()
-    require(manifest_path.parent == (ROOT / "output" / "release").resolve(), "unsafe release-manifest output")
-    manifest_path.write_bytes(json_bytes(release_manifest))
-    print(json.dumps({"status": evidence["status"], "artifact": artifact, "evidence": evidence_path.name, "release_manifest": manifest_path.name}, ensure_ascii=False))
+    manifest_name = None
+    if BUILD_RELEASE_MANIFEST:
+        manifest_path = (arguments.release_manifest or RELEASE_MANIFEST).resolve()
+        require(manifest_path.parent == (ROOT / "output" / "release").resolve(), "unsafe release-manifest output")
+        manifest_path.write_bytes(json_bytes(build_release_manifest(artifact, evidence_path)))
+        manifest_name = manifest_path.name
+    else:
+        require(arguments.release_manifest is None, "this profile does not emit a publication manifest")
+    print(json.dumps({"status": evidence["status"], "artifact": artifact, "evidence": evidence_path.name, "release_manifest": manifest_name}, ensure_ascii=False))
 
 
 if __name__ == "__main__":

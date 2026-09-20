@@ -1,0 +1,115 @@
+{
+  "schema": "openlogic-te-epub-render-qa/1",
+  "date": "2026-09-20",
+  "status": "COMPLETE_PASS",
+  "subject": {
+    "filename": "openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.epub",
+    "bytes": 1844059,
+    "sha256": "fce845469d300ce4a86a4f7b909387976582c735ee0b881215537ab5ccc64b3e",
+    "scope": "OLP-0004 through OLP-0279; 276 of 722 corpus units",
+    "immutable_source_commit": "2892803b925b0330bca6200df21ce27b68208cdd",
+    "reader_xhtml_bytes": 14436281,
+    "reader_xhtml_sha256": "0e0950db60560a49112a9871875552dc247a896ba146c2fd1f6ebac65f9bcffa",
+    "reader_css_bytes": 5615,
+    "reader_css_sha256": "4052f3951aaa11d8e40d447cd7e3e9fd544b6df992a5546e5a8b024f81e91cba"
+  },
+  "validation_receipt": {
+    "path": "evidence/CUMULATIVE-OLP0279-EPUB-QA.json",
+    "sha256": "616d85c51b372a5f70f7290bda9fd1fc7e94953cfa7a6ea1ce2cb11ddd56cf61",
+    "epubcheck": "EPUBCheck 5.4.0",
+    "epub_ruleset": "3.4",
+    "fatals": 0,
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "internal_links": 1580,
+    "fragment_targets": 1567,
+    "all_links_resolved": true
+  },
+  "method": {
+    "renderer": "calibre ebook-convert 9.11.0",
+    "rasterizer": "Poppler pdftoppm 26.07.0",
+    "contact_sheet_tool": "ImageMagick 7.1.2-22 Q16 x64",
+    "reader_sample": {
+      "description": "Eleven representative production sections were retained from the exact unpacked reader.xhtml; no reader content was rewritten. The production stylesheet, fonts, and SVG resources were copied unchanged beside the sample before rendering.",
+      "selected_units": [
+        "OLP-0004",
+        "OLP-0021",
+        "OLP-0140",
+        "OLP-0153",
+        "OLP-0154",
+        "OLP-0164",
+        "OLP-0216",
+        "OLP-0254",
+        "OLP-0261",
+        "OLP-0266",
+        "OLP-0279"
+      ],
+      "sample_xhtml_sha256": "0ad23d9ed1b050a657e9193d0f7e7c32830aca7c22d4524bf96cb80179533a3b",
+      "rendered_pdf_pages": 57,
+      "rendered_pdf_sha256": "cc5225810d120761feaf8b806cc66ead905e86f3912074e04d21f298072b9d95",
+      "inspected_pages": [2, 8, 9, 18, 21, 29, 35, 39, 41, 46, 50, 53, 57],
+      "contact_sheet_sha256": [
+        "ffc04f4e2655a48bcb2641914bc92c8f8b3383b0136c1e0eb446ebf20f5183c5",
+        "50e63271468c2a942aabd0a307974affe3f818b39440e237bf381d6724757ae5"
+      ]
+    },
+    "front_matter": {
+      "description": "The exact title and navigation XHTML were rendered with their link destinations neutralized only in temporary QA copies, preventing the renderer from recursively loading the 14 MB reader. The full package's original destinations were checked separately by the validation receipt.",
+      "title_pdf_pages": 3,
+      "title_pdf_sha256": "111c9fd8a99328747560799747148cc3c258edae609c1ebfaf398e53b1d5025b",
+      "title_contact_sheet_sha256": "bc7a329e82854f7101eba965502f65f88d7f9233b95d08e0cc45f8a3c4a4a898",
+      "navigation_pdf_pages": 38,
+      "navigation_pdf_sha256": "ead94548079fe7a505004dacf3a3a72f29160ba69267635d8af417a570785646",
+      "navigation_inspected_pages": [1, 19, 38],
+      "navigation_page_png_sha256": [
+        "fb8e715f8f3f988b8a27e9dca0d6ddfae8d78973d0fe77b627c87efdc4af184f",
+        "ec832c3b133a46a506d9d9f86a2bd5a3ca06e160fdb968840e01bf4f56b26bed",
+        "b44e1a727a0483ef406e71abcfc2eb37e8a6c09e10529abe05561dc26cc32090"
+      ]
+    }
+  },
+  "visual_cases": [
+    {
+      "case": "title, scope disclosure, and incomplete-edition notice",
+      "result": "pass",
+      "observed": "The Telugu title, 276-of-722 scope, partial-edition notice, provenance hash, and navigation links are legible and unclipped. Calibre paginates the reflowable title document across three pages without losing content."
+    },
+    {
+      "case": "276-unit table of contents",
+      "result": "pass",
+      "observed": "The outer list occupies one full-width column; the unit list uses two readable columns and returns to one column under the narrow-screen media rule. Early, middle, final, and landmark entries are present and legible."
+    },
+    {
+      "case": "Telugu shaping and bilingual hierarchy",
+      "result": "pass",
+      "observed": "Telugu shaping, headings, body copy, statement blocks, correction callouts, footnote markers, and collapsed canonical-English controls render consistently in early, middle, and final units."
+    },
+    {
+      "case": "EPUB-normalized MathML operator wrappers",
+      "result": "pass",
+      "observed": "OLP-0153 renders the primed binary operator as (B′ ∗′ C′); OLP-0164 renders the composite satisfaction relation; OLP-0216 renders truncated subtraction with its overdot and preserved binary spacing. Inline formulae do not acquire individual scroll controls."
+    },
+    {
+      "case": "Figure 15.5 caption promotion",
+      "result": "pass",
+      "observed": "The main-operator table, Telugu caption, stable target, and adjacent source-correction callout remain in a valid and visually coherent figure container."
+    },
+    {
+      "case": "wide display mathematics",
+      "result": "pass",
+      "observed": "Piecewise definitions, recursive equations, and long machine encodings remain readable; on-screen block formulae retain horizontal overflow support while print export suppresses inline overflow controls."
+    },
+    {
+      "case": "compiled diagrams and machine schematics",
+      "result": "pass",
+      "observed": "The combined adder/doubler state graph, standard machine variants, and tape/configuration schematic are sharp, centered, labeled, and unclipped alongside their Telugu captions and prose."
+    },
+    {
+      "case": "final unit",
+      "result": "pass",
+      "observed": "OLP-0279 opens and closes cleanly, including correction callouts, theorem notation, and the canonical-English disclosure."
+    }
+  ],
+  "finding": "No missing content, unreadable Telugu shaping, malformed normalized operator, clipped sampled diagram, overlapping block, or unresolved visual-layout defect was observed in the final cumulative EPUB."
+}

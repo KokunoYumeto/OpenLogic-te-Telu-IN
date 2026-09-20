@@ -1,0 +1,134 @@
+{
+  "schema": "openlogic-te-cumulative-source-repair-qa/1",
+  "date": "2026-09-20",
+  "status": "COMPLETE_PASS",
+  "lineage": {
+    "repository_commit": "2892803b925b0330bca6200df21ce27b68208cdd",
+    "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "release_tag": "v0.4.0-cumulative-olp0279",
+    "scope": "OLP-0004 through OLP-0279",
+    "unique_editable_units": 276,
+    "inlined_occurrences": 328,
+    "repeated_occurrences": 52
+  },
+  "release_artifacts": {
+    "published_pdf": {
+      "filename": "openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.pdf",
+      "bytes": 3297226,
+      "sha256": "9ef53813446e024aa86f308da6348f6f79832d22935b0aee104343f25611ff83",
+      "unchanged_by_repair": true
+    },
+    "direct_latex": {
+      "filename": "openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.tex",
+      "bytes": 4156367,
+      "sha256": "a3f996cf1f963cf4283cb82cc433cce7c11bad6a37c5bd7284666b12526f07bf"
+    },
+    "assembly_receipt": {
+      "filename": "openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0-ASSEMBLY.json",
+      "bytes": 65337,
+      "sha256": "2e8781bac1dcb8ed101c39946e05025537d5f8a142e21577cf05fd239b0d21b2"
+    },
+    "build_source_zip": {
+      "filename": "openlogic-te-Telu-IN-cumulative-OLP0279-build-source-v0.4.0.zip",
+      "bytes": 1311983,
+      "sha256": "7d22f70e1deb6ba6f23473ef1ecaad4817a096662611ff95660f4e45df79e65d",
+      "entries": 55,
+      "checksummed_entries": 54
+    },
+    "source_repair_manifest": {
+      "filename": "SOURCE-REPAIR-v0.4.0.json",
+      "bytes": 892,
+      "sha256": "42dd5bd5b201e6a67669dfe666d7a1d4da15b7842e410fc942ccaf20b886006f"
+    }
+  },
+  "assembly": {
+    "recorded_fls": {
+      "bytes": 292295,
+      "sha256": "e57f37b7ec59e60def6ce1fc7762e9462eaade4f46bddb825994ae46d0983291"
+    },
+    "traversal_sha256": "68137b887081b1ccdaf5c64657614595d9d65ea426b3de96a5a4e5bbea643207",
+    "source_subfile_commands_remaining": 0,
+    "source_olimport_commands_remaining": 0,
+    "active_conditional_import_wrappers_evaluated": 28,
+    "reason_for_wrapper_evaluation": "The recorded traversal already identifies the selected imports. Removing only their empty-false conditional wrappers keeps imported verbatim material out of macro arguments while preserving unit text and order.",
+    "deterministic_rebuild": {
+      "direct_latex_sha256": "a3f996cf1f963cf4283cb82cc433cce7c11bad6a37c5bd7284666b12526f07bf",
+      "assembly_receipt_sha256": "2e8781bac1dcb8ed101c39946e05025537d5f8a142e21577cf05fd239b0d21b2",
+      "build_source_zip_sha256": "7d22f70e1deb6ba6f23473ef1ecaad4817a096662611ff95660f4e45df79e65d"
+    }
+  },
+  "cold_companion_build": {
+    "fresh_archive_extraction": true,
+    "contents_sha256_rows_verified": 54,
+    "mutex": "Global\\InterlanguageTeXSlotV1",
+    "mutex_acquired": true,
+    "commands": [
+      "xelatex-1",
+      "bibtex",
+      "xelatex-2",
+      "xelatex-3",
+      "xelatex-4",
+      "xelatex-5"
+    ],
+    "all_exit_codes": 0,
+    "converged_xelatex_pass": 5,
+    "maximum_xelatex_passes": 6,
+    "reproducible_last_two_passes": true,
+    "pages": 515,
+    "missing_characters": 0,
+    "undefined_references": false,
+    "undefined_citations": false,
+    "pdf": {
+      "bytes": 3297224,
+      "sha256": "8c691560cdc558d8b388ede2a80e1220647aff496daad30b2a396b58fa6d88f4"
+    },
+    "receipt": {
+      "bytes": 1380,
+      "sha256": "43e5a15c9a7d68ab819e622acab8dcb0e17855a740f1d25489719a5aafdf1297"
+    }
+  },
+  "content_equivalence": {
+    "layout_text": {
+      "tool": "pdftotext 24.04.0",
+      "bytes_per_output": 2324602,
+      "sha256_per_output": "c192740ac85e3443f4d0c8ea0e2df418fc76f6eccd9547e924f4b77ecb243b54",
+      "published_vs_cold_flattened_byte_identical": true,
+      "published_vs_exact_master_byte_identical": true
+    },
+    "page_rasters": {
+      "tool": "pdftoppm 26.07.0",
+      "format": "PNG",
+      "color_mode": "grayscale",
+      "dpi": 72,
+      "pages_compared": 515,
+      "published_vs_cold_flattened_byte_identical_pages": 515,
+      "published_vs_exact_master_byte_identical_pages": 515,
+      "mismatches": 0
+    },
+    "container_hash_note": "The public PDF, exact-checkout master replay, and standalone flattened replay have separately recorded PDF container hashes. Equality is established at extracted text and every rendered page; the public PDF bytes remain unchanged."
+  },
+  "regression": {
+    "legacy_sfr_epub": {
+      "filename": "openlogic-te-Telu-IN-sfr-v0.3.0.epub",
+      "rebuilt_bytes": 354646,
+      "published_bytes": 354646,
+      "rebuilt_sha256": "14558fd925098e97e4657c6df39639364af25b51d4c0c5e2736817156d1732ed",
+      "published_sha256": "14558fd925098e97e4657c6df39639364af25b51d4c0c5e2736817156d1732ed",
+      "byte_identical": true,
+      "known_epubcheck_5_4_0_result": "2 RSC-005 errors for legacy aria-label attributes; preserved to keep the already-published v0.3.0 bytes reproducible"
+    },
+    "cumulative_epub": {
+      "filename": "openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.epub",
+      "bytes": 1844059,
+      "sha256": "fce845469d300ce4a86a4f7b909387976582c735ee0b881215537ab5ccc64b3e",
+      "normal_and_cold_builds_byte_identical": true,
+      "epubcheck": "EPUBCheck 5.4.0; EPUB 3.4 rules; 0 fatals, 0 errors, 0 warnings, 0 infos",
+      "qa_receipt_sha256": "616d85c51b372a5f70f7290bda9fd1fc7e94953cfa7a6ea1ce2cb11ddd56cf61",
+      "render_qa_receipt_sha256": "2cab3ad4267a0115d2854568c8ef16bd31df534795adfe28284a9453c59c96cd"
+    }
+  },
+  "limitations": [
+    "This evidence verifies the frozen v0.4.0 OLP-0279 checkpoint and does not claim completion of the 722-unit Telugu edition.",
+    "The 72 dpi raster comparison is a complete all-page equivalence check, not a replacement for the separately recorded higher-resolution visual inspection of representative and high-risk pages."
+  ]
+}

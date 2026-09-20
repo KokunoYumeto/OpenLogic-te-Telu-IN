@@ -10,7 +10,8 @@ if(process.argv.some(a=>a.startsWith('--')&&a!=='--pages'&&!a.startsWith('--scop
 const scope=scopeArg?.slice('--scope='.length)??'sets';
 const profiles={
  sets:{start:4,end:10,slug:'sets',label:'Sets chapter, OLP-0004..OLP-0010',expectedAssets:3,chapterTitles:[[0,'సమితులు']]},
- sfr:{start:4,end:26,slug:'sfr',label:'Sets, Relations, and Functions chapters, OLP-0004..OLP-0026',expectedAssets:11,chapterTitles:[[0,'సమితులు'],[7,'సంబంధాలు'],[16,'ప్రమేయాలు']]}
+ sfr:{start:4,end:26,slug:'sfr',label:'Sets, Relations, and Functions chapters, OLP-0004..OLP-0026',expectedAssets:11,chapterTitles:[[0,'సమితులు'],[7,'సంబంధాలు'],[16,'ప్రమేయాలు']]},
+ cumulative279:{start:4,end:279,slug:'cumulative-279',label:'Cumulative reader, OLP-0004..OLP-0279',expectedAssets:null,chapterTitles:[[0,'సమితులు']]}
 };
 const profile=profiles[scope];
 if(!profile)throw new Error('Unknown scope '+scope);
@@ -47,8 +48,10 @@ for(const [index,unit] of manifest.units.entries()){
 const teluguMath=manifest.units.reduce((sum,row)=>sum+row.math_expressions,0);
 const englishMath=manifest.units.reduce((sum,row)=>sum+row.english_math_expressions,0);
 assert(manifest.math.length===teluguMath&&manifest.english_math.length===englishMath,'Formula inventory mismatch');
-assert(manifest.assets.length===profile.expectedAssets,'Asset inventory mismatch');
-assert(manifest.references.length===manifest.english_references.length&&manifest.references.every(row=>row.resolved)&&manifest.english_references.every(row=>row.resolved),'Unresolved reference');
+if(profile.expectedAssets!==null)assert(manifest.assets.length===profile.expectedAssets,'Asset inventory mismatch');
+const referenceValid=row=>row.resolved||row.known_missing;
+assert(manifest.references.length===manifest.english_references.length&&manifest.references.every(referenceValid)&&manifest.english_references.every(referenceValid),'Unknown reference');
+assert(manifest.references.filter(row=>row.known_missing).length===manifest.english_references.filter(row=>row.known_missing).length,'Out-of-scope reference mismatch');
 assert(manifest.conditional_branches.length===manifest.english_conditional_branches.length,'Conditional projection count mismatch');
 assert(manifest.conditional_branches.every(row=>['true','false'].includes(row.selected))&&manifest.english_conditional_branches.every(row=>['true','false'].includes(row.selected)),'Invalid conditional projection');
 
@@ -63,13 +66,14 @@ assert(count(html,/<math\b/g)===teluguMath+englishMath,'Wrong rendered MathML co
 assert(count(html,/<annotation encoding="application\/x-tex">/g)===teluguMath+englishMath,'Wrong TeX annotation count');
 assert(count(html,/<svg class="set-diagram" role="img"/g)===6,'Wrong inline SVG count');
 const compiledAssets=manifest.assets.filter(row=>row.svg_path);
-assert(count(html,/<img class="reader-diagram"/g)===compiledAssets.length*2,'Wrong compiled SVG instance count');
+const compiledSvgInstances=compiledAssets.reduce((sum,row)=>sum+(row.kind==='inline_tikz'?row.occurrences.length:2),0);
+assert(count(html,/<img class="reader-diagram"/g)===compiledSvgInstances,'Wrong compiled SVG instance count');
 assert([...html.matchAll(/<img class="reader-diagram"[^>]*>/g)].every(match=>/\salt="[^"]+"/.test(match[0])),'Diagram alternative text missing');
-assert(!/<script\b|<iframe\b|<object\b|<embed\b|\son\w+\s*=|<merror\b|katex-error|\ufffd|!!|\\tecase\b/i.test(html),'Forbidden/unresolved output marker');
+assert(!/<script\b|<iframe\b|<object\b|<embed\b|\son\w+\s*=|<merror\b|katex-error|diagram-pending|\ufffd|!!|\\tecase\b/i.test(html),'Forbidden/unresolved output marker');
 assert(!/@import\b|url\(\s*['"]?https?:|expression\s*\(/i.test(css),'CSS contains remote or executable dependency');
 assert(css.includes('@media(max-width:640px)')&&css.includes('@media print'),'Responsive/print rules missing');
 assert(count(html,/src="https?:/gi)===0&&count(html,/<link[^>]+href="https?:/gi)===0,'Remote runtime asset found');
-assert(count(html,/[ఀ-౿]/g)>(scope==='sets'?9000:25000),'Unexpectedly little Telugu text');
+assert(count(html,/[ఀ-౿]/g)>(scope==='sets'?9000:scope==='sfr'?25000:500000),'Unexpectedly little Telugu text');
 
 const ids=[...html.matchAll(/\sid="([^"]+)"/g)].map(match=>match[1]);
 assert(new Set(ids).size===ids.length,'Duplicate HTML id');
@@ -104,6 +108,6 @@ function collect(directory,prefix=''){
 }
 collect(dir);
 const files=fileNames.map(name=>({name,bytes:read(name).length,sha256:sha(read(name))}));
-const result={schema:'openlogic-te-html-deterministic-qa/2',generated_utc:new Date().toISOString(),scope:profile.label,directory:(pages?'docs/':'output/html/')+profile.slug,units:expectedIds.length,aligned_blocks:segmentLedger.length,linguistic_blocks:segmentLedger.filter(row=>row.classification==='translated_linguistic_segment').length,telugu_mathml:teluguMath,english_mathml:englishMath,internal_references:manifest.references.length+manifest.english_references.length,citation_keys:manifest.citation_keys.length,inline_svg_instances:6,compiled_svg_instances:compiledAssets.length*2,telugu_code_points:count(html,/[ఀ-౿]/g),network_runtime_dependencies:0,toolchain:{node:process.version,package_lock_sha256:sha(fs.readFileSync(path.join(root,'package-lock.json'))),builder_sha256:sha(fs.readFileSync(path.join(root,'scripts/build-html.mjs'))),reader_sha256:sha(fs.readFileSync(path.join(root,'scripts/tex-reader.mjs'))),auditor_sha256:sha(fs.readFileSync(path.join(root,'scripts/audit-html.mjs')))},files,status:'COMPLETE_PASS'};
+const result={schema:'openlogic-te-html-deterministic-qa/2',generated_utc:new Date().toISOString(),scope:profile.label,directory:(pages?'docs/':'output/html/')+profile.slug,units:expectedIds.length,aligned_blocks:segmentLedger.length,linguistic_blocks:segmentLedger.filter(row=>row.classification==='translated_linguistic_segment').length,telugu_mathml:teluguMath,english_mathml:englishMath,internal_references:manifest.references.filter(row=>row.resolved).length+manifest.english_references.filter(row=>row.resolved).length,out_of_scope_references:manifest.references.filter(row=>row.known_missing).length+manifest.english_references.filter(row=>row.known_missing).length,citation_keys:manifest.citation_keys.length,inline_svg_instances:6,compiled_svg_instances:compiledSvgInstances,telugu_code_points:count(html,/[ఀ-౿]/g),network_runtime_dependencies:0,toolchain:{node:process.version,package_lock_sha256:sha(fs.readFileSync(path.join(root,'package-lock.json'))),builder_sha256:sha(fs.readFileSync(path.join(root,'scripts/build-html.mjs'))),reader_sha256:sha(fs.readFileSync(path.join(root,'scripts/tex-reader.mjs'))),auditor_sha256:sha(fs.readFileSync(path.join(root,'scripts/audit-html.mjs')))},files,status:'COMPLETE_PASS'};
 if(receiptArg){const target=path.resolve(receiptArg.slice(10));fs.mkdirSync(path.dirname(target),{recursive:true});fs.writeFileSync(target,JSON.stringify(result,null,2)+'\n');}
 console.log(JSON.stringify(result,null,2));
