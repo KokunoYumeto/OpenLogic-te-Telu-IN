@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **279 of 722 source units drafted**. This readable view contains all 308 decisions and 570 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **279 of 722 source units drafted**. This readable view contains all 323 decisions and 596 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -1897,7 +1897,7 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T067-OCC-002; OLP-0241; OLP-0241-B005; source upstream/content/computability/computability-theory/ce-closed-cup-cap.tex:11-12 bytes 191-309 SHA-256 392c55f9b3a78a7c396fe53bcfe80e60af85d1f0ffe1e527619d2eb7c54e5e2e; target translation/content/computability/computability-theory/ce-closed-cup-cap.tex:11-12 bytes 191-431 SHA-256 ed1d9f24e2cf8b7c5d64551e428dfb2c16455e45a7a7078bd1037902ce6b5d09; reader page pending.
   - te-Telu-IN-TE-T067-OCC-003; OLP-0242; OLP-0242-B004; source upstream/content/computability/computability-theory/complement-ce.tex:9-10 bytes 161-253 SHA-256 9bc0f9cc61b6f4e68b6e95079d2966b0e05ed3c0ed1128710532e2f76258208f; target translation/content/computability/computability-theory/complement-ce.tex:9-10 bytes 161-349 SHA-256 2bb6169f8f1fa2c10725bb823a6a34089da86908b76877c6a0dfe1db4c5a310c; reader page pending.
   - te-Telu-IN-TE-T067-OCC-004; OLP-0243; OLP-0243-B008; source upstream/content/computability/computability-theory/reducibility.tex:50-61 bytes 2081-2578 SHA-256 f8797ad4502fbd9611f45780b5f706c1cf9b9c0ee49f44b05a9cc535bf201b1a; target translation/content/computability/computability-theory/reducibility.tex:52-63 bytes 5197-6194 SHA-256 43aed5c6710ec5e08bec293db2bf7a6dff727eea6e14700cca938ed55f9abca7; reader page pending.
-  - te-Telu-IN-TE-T067-OCC-005; OLP-0245; OLP-0245-B004; source upstream/content/computability/computability-theory/complete-ce-sets.tex:9-10 bytes 164-237 SHA-256 8df21b8f708dbf50a1929c42788669af2c7e6b5ab1841eab1c4c328dc9e62030; target translation/content/computability/computability-theory/complete-ce-sets.tex:9-10 bytes 164-307 SHA-256 b71e66083949f34e80c84fe1484e0e15060d5faf426cdd4ad255e3ac4ce5c15d; reader page pending.
+  - te-Telu-IN-TE-T067-OCC-005; OLP-0245; OLP-0245-B004; source upstream/content/computability/computability-theory/complete-ce-sets.tex:9-10 bytes 164-237 SHA-256 8df21b8f708dbf50a1929c42788669af2c7e6b5ab1841eab1c4c328dc9e62030; target translation/content/computability/computability-theory/complete-ce-sets.tex:9-10 bytes 164-307 SHA-256 6886561a0269e49868aacb0ac997f9354b7a94aacaea49327fd5975c23e803cc; reader page pending.
   - te-Telu-IN-TE-T067-OCC-006; OLP-0246; OLP-0246-B009; source upstream/content/computability/computability-theory/k-1.tex:30-45 bytes 637-1597 SHA-256 a2ddcee4c073868a4768ebc44c9b9634b48b4ade9fd31f37450df159f336a35a; target translation/content/computability/computability-theory/k-1.tex:29-43 bytes 1002-3086 SHA-256 8c9d4c6fa348ef935e98a93478090633f20566600eb011a7b38b7f0dda28986a; reader page pending.
   - te-Telu-IN-TE-T067-OCC-007; OLP-0247; OLP-0247-B004; source upstream/content/computability/computability-theory/total.tex:9-10 bytes 153-214 SHA-256 020737f92a1de1a6ce8664bcf1037021d0dc8454049e5afa6732305015c345ca; target translation/content/computability/computability-theory/total.tex:9-10 bytes 153-273 SHA-256 cb3c11681c2a22ec64d9d8c631d8e3ca99614d7dfa3538e7c8db632f902d0950; reader page pending.
   - te-Telu-IN-TE-T067-OCC-008; OLP-0248; OLP-0248-B007; source upstream/content/computability/computability-theory/rice-theorem.tex:23-28 bytes 816-1063 SHA-256 6d6ff6b882375fb44ebb79ee1ef6b2c5e5b6f0d783e8110ce23a681c6afb4b80; target translation/content/computability/computability-theory/rice-theorem.tex:23-27 bytes 1591-2094 SHA-256 98a89126ff7eff1db6b0202164b082d1ffd1b5957ffa5f66189104c2a9ed7372; reader page pending.
@@ -2009,6 +2009,43 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T070-OCC-009; OLP-0278; OLP-0278-B010; source upstream/content/incompleteness/introduction/overview.tex:53-65 bytes 2425-3269 SHA-256 4391b197866deaf9b67d1aa3ab870d0d11eb9d30e73475e56ee757a4c0fef0a0; target translation/content/incompleteness/introduction/overview.tex:54-65 bytes 6029-7894 SHA-256 0efad2f670762e7c06a9c4e131779f7a246ea7ce5b9034f785885aa58ec318c6; reader page pending.
   - te-Telu-IN-TE-T070-OCC-010; OLP-0278; OLP-0278-B012; source upstream/content/incompleteness/introduction/overview.tex:84-98 bytes 4313-5296 SHA-256 4391b197866deaf9b67d1aa3ab870d0d11eb9d30e73475e56ee757a4c0fef0a0; target translation/content/incompleteness/introduction/overview.tex:85-99 bytes 10952-13182 SHA-256 0efad2f670762e7c06a9c4e131779f7a246ea7ce5b9034f785885aa58ec318c6; reader page pending.
   - te-Telu-IN-TE-T070-OCC-011; OLP-0279; OLP-0279-B021; source upstream/content/incompleteness/introduction/undecidability.tex:127-135 bytes 5386-5990 SHA-256 ceeb4a161ad8064be0bd024febf2061d9fdfbf8b748293cb28c08c397cfa55f4; target translation/content/incompleteness/introduction/undecidability.tex:150-157 bytes 15101-16732 SHA-256 f59416b2e80c80f3422e68abb83e23a4b8315a8a95c666b6fd676a92fe643a14; reader page pending.
+
+## te-Telu-IN-TE-T071 — arithmetization of syntax / symbol coding / sequence coding / code / Gödel number / Gödel numbering / formation sequence / primitive recursive syntactic relation / substitution / proof code / end-sequent / end-formula / discharge label / immediate subderivation / proof predicate / sequent calculus / natural deduction / axiomatic derivation
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: వాక్యనిర్మాణపు అంకగణితీకరణ / సంకేత సంకేతీకరణ / క్రమ సంకేతీకరణ / సంకేతసంఖ్య / గ్యోడెల్ సంఖ్య / గ్యోడెల్ సంఖ్యీకరణ / నిర్మాణ క్రమం / ఆదిమ పునరావృత్త వాక్యనిర్మాణ సంబంధం / ప్రతిస్థాపన / వ్యుత్పత్తి సంకేతసంఖ్య / అంత్య-సీక్వెంట్ / అంత్య-సూత్రం / ఉపసంహరణ చీటీ / తక్షణ ఉపవ్యుత్పత్తి / నిరూపణ విధేయం / సీక్వెంట్ కలనం / సహజ నిగమనం / స్వీకృతాధారిత వ్యుత్పత్తి
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “arithmetization of syntax / symbol coding / sequence coding / code / Gödel number / Gödel numbering / formation sequence / primitive recursive syntactic relation / substitution / proof code / end-sequent / end-formula / discharge label / immediate subderivation / proof predicate / sequent calculus / natural deduction / axiomatic derivation” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low semantic uncertainty because every specialized notion is fixed by an explicit coding definition, tuple position, primitive recursion or proof-checking predicate; medium to high nomenclatural uncertainty for arithmetization, formation-sequence and proof-predicate compounds pending independent native review
+
+- Rationale: TE-P005 supports native natural-number exposition; TE-P008, TE-P010--TE-P011 and TE-P034 support sequences, ordered tuples, relations and functions; TE-P018 and TE-P024--TE-P033 support formula, sentence, derivation, proof-system and proof register. These witnesses do not directly attest Gödel numbering, arithmetized syntax, formation-sequence bounds, recursive proof verification or proof predicates. The frozen symbol and sequence codes, tuple layouts, substitution recursion and LK, natural-deduction and axiomatic proof checks in OLP-0280--OLP-0288 control those exact senses; TE-T020, TE-T024, TE-T028, TE-T033, TE-T034 and TE-T070 supply the edition's earlier reversible choices. గ్యోడెల్ is the source eponym; LK, QR, rule symbols, formula metavariables and predicate names remain protected formal notation. సీక్వెంట్ is an established explicitly contextualized technical borrowing; no unexplained English technical headword remains in reader-facing prose
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P025 [checked_context_only], PDF page 87; printed page 80; Indirect-proof heading and worked derivation; Direct indirect-proof and formal-proof register; no direct tableau or assumption-discharge label. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P028 [checked_context_only], PDF page 92; printed page 85; Unary predicates, binary relations and quantifier classification; Direct quantifier taxonomy and predicate/relation context. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C005:TE-P033 [checked_context_only], PDF page 40; printed page 33; Inference section heading and definition; Direct inference and explanatory register; derivation headword is separately witnessed at TE-P024. | TE-C004:TE-P034 [checked_context_only], PDF page 308; printed page 301; Main point 5, Cartesian product definition; Direct ordered-pair and Cartesian-product terminology; singular క్రమయుగ్మం is a transparent inflection.
+
+- Alternatives: leave the specialized coding and proof-verification vocabulary in untranslated English reader prose [rejected: rejected] | collapse symbol, sequence, term, formula and proof codes into one undifferentiated notion [rejected: rejected because the definitions distinguish their constructors and tests] | claim direct native attestation for Gödel numbering, formation-sequence bounds or primitive-recursive proof verification [rejected: rejected because the frozen definitions, recursions and predicates control those senses]
+
+- Review question: Please double-check whether “వాక్యనిర్మాణపు అంకగణితీకరణ / సంకేత సంకేతీకరణ / క్రమ సంకేతీకరణ / సంకేతసంఖ్య / గ్యోడెల్ సంఖ్య / గ్యోడెల్ సంఖ్యీకరణ / నిర్మాణ క్రమం / ఆదిమ పునరావృత్త వాక్యనిర్మాణ సంబంధం / ప్రతిస్థాపన / వ్యుత్పత్తి సంకేతసంఖ్య / అంత్య-సీక్వెంట్ / అంత్య-సూత్రం / ఉపసంహరణ చీటీ / తక్షణ ఉపవ్యుత్పత్తి / నిరూపణ విధేయం / సీక్వెంట్ కలనం / సహజ నిగమనం / స్వీకృతాధారిత వ్యుత్పత్తి” is idiomatic and technically standard for “arithmetization of syntax / symbol coding / sequence coding / code / Gödel number / Gödel numbering / formation sequence / primitive recursive syntactic relation / substitution / proof code / end-sequent / end-formula / discharge label / immediate subderivation / proof predicate / sequent calculus / natural deduction / axiomatic derivation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T071-OCC-001; OLP-0280; OLP-0280-B004; source upstream/content/incompleteness/arithmetization-syntax/arithmetization-syntax.tex:8 bytes 139-187 SHA-256 0105ed979c80e2ec23fcf8db78959e1d4161ade92513858b02dffb87034a9436; target translation/content/incompleteness/arithmetization-syntax/arithmetization-syntax.tex:8 bytes 139-238 SHA-256 884e9501d153d8d19f76b55fb875d9ae1a45c52ca8c2e50a019d157ae7791966; reader page pending.
+  - te-Telu-IN-TE-T071-OCC-002; OLP-0281; OLP-0281-B006; source upstream/content/incompleteness/arithmetization-syntax/introduction.tex:30-43 bytes 1339-2229 SHA-256 12b6779f25c86d92821b6f2dbd9acd095d934a7d22438493d5f043b9c5526c96; target translation/content/incompleteness/arithmetization-syntax/introduction.tex:28-41 bytes 2960-5195 SHA-256 b3ea4f8d4f4e998bb6582a22e93992d3d51232965587ea84aa612e0b995c88af; reader page pending.
+  - te-Telu-IN-TE-T071-OCC-003; OLP-0282; OLP-0282-B004; source upstream/content/incompleteness/arithmetization-syntax/coding-symbols.tex:9-10 bytes 165-217 SHA-256 bef2c4a725e39661d3534b411cccf9fd5f21bca5e08c401a07a7b32e403fa2d3; target translation/content/incompleteness/arithmetization-syntax/coding-symbols.tex:9-10 bytes 165-252 SHA-256 af4d85bf745ea9d59f3e866519d8440d316ecdd73aaa626099889ce7c54435b4; reader page pending.
+  - te-Telu-IN-TE-T071-OCC-004; OLP-0283; OLP-0283-B008; source upstream/content/incompleteness/arithmetization-syntax/coding-terms.tex:43-58 bytes 1656-2499 SHA-256 8b7fe6f274da5f46458440ad1e2abb4549f983738a7edd9ae90ae994df19200a; target translation/content/incompleteness/arithmetization-syntax/coding-terms.tex:41-57 bytes 3049-4897 SHA-256 c4eb329d1256df380fe5957c40088a2d41978639da53c08fbd10fa1fa16464a5; reader page pending.
+  - te-Telu-IN-TE-T071-OCC-005; OLP-0284; OLP-0284-B004; source upstream/content/incompleteness/arithmetization-syntax/coding-formulas.tex:9-10 bytes 166-234 SHA-256 b8658dcae853e6a0e1321e127effe853874900cc16270e1cc25ab03c8f37b8be; target translation/content/incompleteness/arithmetization-syntax/coding-formulas.tex:9-10 bytes 166-255 SHA-256 4685d0a50b950d68adf76e049432a2c9e1f18132997acfd59efed491a8dd951f; reader page pending.
+  - te-Telu-IN-TE-T071-OCC-006; OLP-0285; OLP-0285-B004; source upstream/content/incompleteness/arithmetization-syntax/substitution.tex:9-10 bytes 163-213 SHA-256 66c0850ca95d870ba9fbb680abc3b9bbc9a80d98615be0c1a3fe3c3c0d8bbf62; target translation/content/incompleteness/arithmetization-syntax/substitution.tex:9-10 bytes 163-234 SHA-256 c177c6fe5c0340b818c50b4539a9934c2835736b085d749693381e1ff052e5ba; reader page pending.
+  - te-Telu-IN-TE-T071-OCC-007; OLP-0286; OLP-0286-B005; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:12-20 bytes 240-697 SHA-256 841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b; target translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:12-21 bytes 243-1465 SHA-256 dc8dfef5116ae6e2e4ccd445f010c74f85173360aec30717a493acef505ed611; reader page pending.
+  - te-Telu-IN-TE-T071-OCC-008; OLP-0286; OLP-0286-B022; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:251-257 bytes 9964-10280 SHA-256 841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b; target translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:255-261 bytes 18940-19525 SHA-256 dc8dfef5116ae6e2e4ccd445f010c74f85173360aec30717a493acef505ed611; reader page pending.
+  - te-Telu-IN-TE-T071-OCC-009; OLP-0287; OLP-0287-B004; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:9-10 bytes 163-246 SHA-256 06044a4b70f61e07629055bfc3cfb7a940ce5ccfc09efe1a5473e9c5e3af3d47; target translation/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:9-10 bytes 163-260 SHA-256 582c5872374acf75f4f432ee664a5e92f9bef34d621d4d5e6891ab94ed6bf655; reader page pending.
+  - te-Telu-IN-TE-T071-OCC-010; OLP-0287; OLP-0287-B005; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:12-22 bytes 247-852 SHA-256 06044a4b70f61e07629055bfc3cfb7a940ce5ccfc09efe1a5473e9c5e3af3d47; target translation/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:12-24 bytes 261-1773 SHA-256 582c5872374acf75f4f432ee664a5e92f9bef34d621d4d5e6891ab94ed6bf655; reader page pending.
+  - te-Telu-IN-TE-T071-OCC-011; OLP-0287; OLP-0287-B005; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:12-22 bytes 247-852 SHA-256 06044a4b70f61e07629055bfc3cfb7a940ce5ccfc09efe1a5473e9c5e3af3d47; target translation/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:12-24 bytes 261-1773 SHA-256 582c5872374acf75f4f432ee664a5e92f9bef34d621d4d5e6891ab94ed6bf655; reader page pending.
+  - te-Telu-IN-TE-T071-OCC-012; OLP-0288; OLP-0288-B004; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:9-10 bytes 163-235 SHA-256 6498fe743671727c99bee3ff39efb8e83bf46be470a8c2b613b62a8757c3e4eb; target translation/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:9-10 bytes 163-265 SHA-256 0d1dcd92c3d4b41387d8f79e705093ded73cec02e437baf78c60711acdccc46e; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -7114,13 +7151,13 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
   - te-Telu-IN-OLTECOMTHY-014-OCC-001; OLP-0244; OLP-0244-B013; source upstream/content/computability/computability-theory/prop-reduce.tex:68-70 bytes 2259-2366 SHA-256 20795f49f8764c1062416ecda88edb34ad983a8f3643cb0878ccf64f08ede5e8; target translation/content/computability/computability-theory/prop-reduce.tex:73-76 bytes 4675-5456 SHA-256 9e0b372150541088864a64bae6c18f0d108b04f1e528ec92c08c6f9f9335e804; reader page pending.
 
-## te-Telu-IN-OLTECOMTHY-015 — OLTECOMTHY-015: confirmed completeness reduction direction reversal
+## te-Telu-IN-OLTECOMTHY-015 — OLTECOMTHY-015: confirmed completeness proof direction insufficient exercise valid
 
 - Kind / recording mode: source_correction / contemporaneous
 
-- Chosen rendering or treatment: reversed both prose statements to K_0 reduces to K; adjacent sourcecorrection discloses the repair
+- Chosen rendering or treatment: used K_0 reduces to K in the proof; retained the valid source exercise K reduces to K_0; added a separately labelled exercise for K_0 reduces to K; adjacent sourcecorrection discloses the distinction
 
-- Intended sense: Repair the audited confirmed completeness reduction direction reversal at lines 39-48, completeness proof for K and following exercise, preserving unaffected notation and argument structure.
+- Intended sense: Repair the audited confirmed completeness proof direction insufficient exercise valid at lines 44-49, insufficient final direction in the completeness proof for K and the independently valid following exercise, preserving unaffected notation and argument structure.
 
 - Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
 
@@ -7130,17 +7167,16 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
 
-- Authorities checked: OLTECOMTHYREM-20260919:OLTECOMTHY-015 [checked_supports], content/computability/computability-theory/complete-ce-sets.tex; lines 39-48, completeness proof for K and following exercise; confirmed_completeness_reduction_direction_reversal; reversed both prose statements to K_0 reduces to K; adjacent sourcecorrection discloses the repair.
+- Authorities checked: OLTECOMTHYREM-20260919:OLTECOMTHY-015 [checked_supports], content/computability/computability-theory/complete-ce-sets.tex; lines 44-49, insufficient final direction in the completeness proof for K and the independently valid following exercise; confirmed_completeness_proof_direction_insufficient_exercise_valid; used K_0 reduces to K in the proof; retained the valid source exercise K reduces to K_0; added a separately labelled exercise for K_0 reduces to K; adjacent sourcecorrection discloses the distinction.
 
 - Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
 
-- Review question: Please double-check that completeness of K requires K_0 many-one reduces to K, and that the following exercise asks for this same direction.
+- Review question: Please double-check that the proof uses K_0 many-one reduces to K, that the valid original exercise K reduces to K_0 is retained, and that the reverse direction appears only as a separately labelled added exercise completing the proof.
 
 - Occurrences:
 
-  - te-Telu-IN-OLTECOMTHY-015-OCC-001; OLP-0245; OLP-0245-B009; source upstream/content/computability/computability-theory/complete-ce-sets.tex:39-42 bytes 1105-1305 SHA-256 8df21b8f708dbf50a1929c42788669af2c7e6b5ab1841eab1c4c328dc9e62030; target translation/content/computability/computability-theory/complete-ce-sets.tex:40-42 bytes 2285-2703 SHA-256 b71e66083949f34e80c84fe1484e0e15060d5faf426cdd4ad255e3ac4ce5c15d; reader page pending.
-  - te-Telu-IN-OLTECOMTHY-015-OCC-002; OLP-0245; OLP-0245-B010; source upstream/content/computability/computability-theory/complete-ce-sets.tex:44-45 bytes 1306-1368 SHA-256 8df21b8f708dbf50a1929c42788669af2c7e6b5ab1841eab1c4c328dc9e62030; target translation/content/computability/computability-theory/complete-ce-sets.tex:44-46 bytes 2704-3364 SHA-256 b71e66083949f34e80c84fe1484e0e15060d5faf426cdd4ad255e3ac4ce5c15d; reader page pending.
-  - te-Telu-IN-OLTECOMTHY-015-OCC-003; OLP-0245; OLP-0245-B011; source upstream/content/computability/computability-theory/complete-ce-sets.tex:47-48 bytes 1369-1416 SHA-256 8df21b8f708dbf50a1929c42788669af2c7e6b5ab1841eab1c4c328dc9e62030; target translation/content/computability/computability-theory/complete-ce-sets.tex:48-50 bytes 3365-3493 SHA-256 b71e66083949f34e80c84fe1484e0e15060d5faf426cdd4ad255e3ac4ce5c15d; reader page pending.
+  - te-Telu-IN-OLTECOMTHY-015-OCC-001; OLP-0245; OLP-0245-B010; source upstream/content/computability/computability-theory/complete-ce-sets.tex:44-45 bytes 1306-1368 SHA-256 8df21b8f708dbf50a1929c42788669af2c7e6b5ab1841eab1c4c328dc9e62030; target translation/content/computability/computability-theory/complete-ce-sets.tex:44-46 bytes 2704-3697 SHA-256 6886561a0269e49868aacb0ac997f9354b7a94aacaea49327fd5975c23e803cc; reader page pending.
+  - te-Telu-IN-OLTECOMTHY-015-OCC-002; OLP-0245; OLP-0245-B011; source upstream/content/computability/computability-theory/complete-ce-sets.tex:47-49 bytes 1369-1427 SHA-256 8df21b8f708dbf50a1929c42788669af2c7e6b5ab1841eab1c4c328dc9e62030; target translation/content/computability/computability-theory/complete-ce-sets.tex:48-52 bytes 3698-4067 SHA-256 6886561a0269e49868aacb0ac997f9354b7a94aacaea49327fd5975c23e803cc; reader page pending.
 
 ## te-Telu-IN-OLTECOMTHY-016 — OLTECOMTHY-016: confirmed local prose error
 
@@ -8273,3 +8309,368 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEINCINT-014-OCC-001; OLP-0279; OLP-0279-B021; source upstream/content/incompleteness/introduction/undecidability.tex:127-133 bytes 5386-5849 SHA-256 ceeb4a161ad8064be0bd024febf2061d9fdfbf8b748293cb28c08c397cfa55f4; target translation/content/incompleteness/introduction/undecidability.tex:146-152 bytes 14558-15652 SHA-256 f59416b2e80c80f3422e68abb83e23a4b8315a8a95c666b6fd676a92fe643a14; reader page pending.
+
+## te-Telu-IN-OLTEART-001 — OLTEART-001: confirmed subject number agreement error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: rendered one arithmetized substitution function with singular agreement; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed subject number agreement error at lines 62-71, arithmetized substitution-function explanation, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEART-20260920:OLTEART-001 [checked_supports], content/incompleteness/arithmetization-syntax/introduction.tex; lines 62-71, arithmetized substitution-function explanation; confirmed_subject_number_agreement_error; rendered one arithmetized substitution function with singular agreement; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the arithmetized substitution construction is singular throughout and maps the three input codes k, l and m to the output code n.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEART-001-OCC-001; OLP-0281; OLP-0281-B008; source upstream/content/incompleteness/arithmetization-syntax/introduction.tex:62-71 bytes 3286-3942 SHA-256 12b6779f25c86d92821b6f2dbd9acd095d934a7d22438493d5f043b9c5526c96; target translation/content/incompleteness/arithmetization-syntax/introduction.tex:60-67 bytes 7786-9384 SHA-256 b3ea4f8d4f4e998bb6582a22e93992d3d51232965587ea84aa612e0b995c88af; reader page pending.
+
+## te-Telu-IN-OLTEART-002 — OLTEART-002: confirmed missing index quantifier
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: quantified j together with n and z in formation clause (3); adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing index quantifier at lines 60-78, formation-sequence clause (3), preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEART-20260920:OLTEART-002 [checked_supports], content/incompleteness/arithmetization-syntax/coding-terms.tex; lines 60-78, formation-sequence clause (3); confirmed_missing_index_quantifier; quantified j together with n and z in formation clause (3); adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the term-formation clause explicitly quantifies the function-symbol index j together with n and z.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEART-002-OCC-001; OLP-0283; OLP-0283-B009; source upstream/content/incompleteness/arithmetization-syntax/coding-terms.tex:60-78 bytes 2500-3399 SHA-256 8b7fe6f274da5f46458440ad1e2abb4549f983738a7edd9ae90ae994df19200a; target translation/content/incompleteness/arithmetization-syntax/coding-terms.tex:63-74 bytes 5471-6684 SHA-256 c4eb329d1256df380fe5957c40088a2d41978639da53c08fbd10fa1fa16464a5; reader page pending.
+
+## te-Telu-IN-OLTEART-003 — OLTEART-003: confirmed formation sequence bound error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: replaced the false sequence-code-below-x claim with the bounded formation-sequence argument from the term proof; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed formation sequence bound error at lines 46-53, proof that Frm is primitive recursive, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEART-20260920:OLTEART-003 [checked_supports], content/incompleteness/arithmetization-syntax/coding-formulas.tex; lines 46-53, proof that Frm is primitive recursive; confirmed_formation_sequence_bound_error; replaced the false sequence-code-below-x claim with the bounded formation-sequence argument from the term proof; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the formula-formation proof uses the valid bounded sequence-code argument from the term proof rather than claiming that the whole sequence code is below its final formula code.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEART-003-OCC-001; OLP-0284; OLP-0284-B009; source upstream/content/incompleteness/arithmetization-syntax/coding-formulas.tex:46-53 bytes 1290-1655 SHA-256 b8658dcae853e6a0e1321e127effe853874900cc16270e1cc25ab03c8f37b8be; target translation/content/incompleteness/arithmetization-syntax/coding-formulas.tex:47-55 bytes 1970-3150 SHA-256 4685d0a50b950d68adf76e049432a2c9e1f18132997acfd59efed491a8dd951f; reader page pending.
+
+## te-Telu-IN-OLTEART-004 — OLTEART-004: confirmed extra parentheses in godel codes
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: removed the unmatched right parenthesis from the expanded initial-sequent code; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed extra parentheses in godel codes at lines 78-90, expanded Gödel code in the LK example, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEART-20260920:OLTEART-004 [checked_supports], content/incompleteness/arithmetization-syntax/proofs-in-lk.tex; lines 78-90, expanded Gödel code in the LK example; confirmed_extra_parentheses_in_godel_codes; removed the unmatched right parenthesis from the expanded initial-sequent code; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that both repaired LK Gödel codes have balanced parentheses and agree with the displayed conclusion and the definition of p_0.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEART-004-OCC-001; OLP-0286; OLP-0286-B010; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:78-90 bytes 2730-3442 SHA-256 841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b; target translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:86-91 bytes 4833-5233 SHA-256 dc8dfef5116ae6e2e4ccd445f010c74f85173360aec30717a493acef505ed611; reader page pending.
+
+## te-Telu-IN-OLTEART-005 — OLTEART-005: confirmed function name inconsistency
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used EndSequent for the projection definition and all later calls; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed function name inconsistency at lines 93-105 and subsequent formulas, end-sequent projection, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEART-20260920:OLTEART-005 [checked_supports], content/incompleteness/arithmetization-syntax/proofs-in-lk.tex; lines 93-105 and subsequent formulas, end-sequent projection; confirmed_function_name_inconsistency; used EndSequent for the projection definition and all later calls; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that EndSequent is the single projection name used in its definition and every subsequent rule and proof predicate.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEART-005-OCC-001; OLP-0286; OLP-0286-B011; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:93-105 bytes 3452-4176 SHA-256 841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b; target translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:94-102 bytes 5883-6784 SHA-256 dc8dfef5116ae6e2e4ccd445f010c74f85173360aec30717a493acef505ed611; reader page pending.
+
+## te-Telu-IN-OLTEART-006 — OLTEART-006: confirmed predicate name inconsistency
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: called the defined InitSeq predicate in Correct(p); adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed predicate name inconsistency at lines 119-133 and 204-211, initial-sequent predicate, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEART-20260920:OLTEART-006 [checked_supports], content/incompleteness/arithmetization-syntax/proofs-in-lk.tex; lines 119-133 and 204-211, initial-sequent predicate; confirmed_predicate_name_inconsistency; called the defined InitSeq predicate in Correct(p); adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the final LK correctness formula calls the defined InitSeq predicate rather than an undefined InitialSeq predicate.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEART-006-OCC-001; OLP-0286; OLP-0286-B013; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:119-133 bytes 4651-5328 SHA-256 841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b; target translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:201-209 bytes 14254-14550 SHA-256 dc8dfef5116ae6e2e4ccd445f010c74f85173360aec30717a493acef505ed611; reader page pending.
+  - te-Telu-IN-OLTEART-006-OCC-002; OLP-0286; OLP-0286-B018; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:204-211 bytes 8343-8674 SHA-256 841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b; target translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:201-209 bytes 14254-14550 SHA-256 dc8dfef5116ae6e2e4ccd445f010c74f85173360aec30717a493acef505ed611; reader page pending.
+
+## te-Telu-IN-OLTEART-007 — OLTEART-007: confirmed local variable name typo
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: referred to p rather than undefined d in the explanation; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed local variable name typo at lines 204-214, explanation of Correct(p), preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEART-20260920:OLTEART-007 [checked_supports], content/incompleteness/arithmetization-syntax/proofs-in-lk.tex; lines 204-214, explanation of Correct(p); confirmed_local_variable_name_typo; referred to p rather than undefined d in the explanation; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the explanation of Correct refers to the end-sequent of p, matching the displayed formula and proposition.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEART-007-OCC-001; OLP-0286; OLP-0286-B018; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:204-214 bytes 8343-8844 SHA-256 841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b; target translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:210-213 bytes 14550-14731 SHA-256 dc8dfef5116ae6e2e4ccd445f010c74f85173360aec30717a493acef505ed611; reader page pending.
+
+## te-Telu-IN-OLTEART-008 — OLTEART-008: confirmed derivation code variable mismatch
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used p consistently in the proposition, proof sentence and subtree formula; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed derivation code variable mismatch at lines 235-247, primitive-recursiveness of Deriv, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEART-20260920:OLTEART-008 [checked_supports], content/incompleteness/arithmetization-syntax/proofs-in-lk.tex; lines 235-247, primitive-recursiveness of Deriv; confirmed_derivation_code_variable_mismatch; used p consistently in the proposition, proof sentence and subtree formula; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the primitive-recursiveness proof calls Deriv(p), consistently with its quantified subtree formula and proposition.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEART-008-OCC-001; OLP-0286; OLP-0286-B020; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:235-247 bytes 9473-9950 SHA-256 841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b; target translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:235-245 bytes 17010-17813 SHA-256 dc8dfef5116ae6e2e4ccd445f010c74f85173360aec30717a493acef505ed611; reader page pending.
+
+## te-Telu-IN-OLTEART-009 — OLTEART-009: confirmed proof formula variable mismatch
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: equated the sole right-side formula code with y rather than the derivation code x; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed proof formula variable mismatch at lines 266-282, right side of the end-sequent, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEART-20260920:OLTEART-009 [checked_supports], content/incompleteness/arithmetization-syntax/proofs-in-lk.tex; lines 266-282, right side of the end-sequent; confirmed_proof_formula_variable_mismatch; equated the sole right-side formula code with y rather than the derivation code x; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the sole right-side formula code is equated with y, the Gödel number of A, rather than x, the derivation code.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEART-009-OCC-001; OLP-0286; OLP-0286-B024; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:266-282 bytes 10604-11561 SHA-256 841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b; target translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:264-273 bytes 19540-20652 SHA-256 dc8dfef5116ae6e2e4ccd445f010c74f85173360aec30717a493acef505ed611; reader page pending.
+
+## te-Telu-IN-OLTEART-010 — OLTEART-010: confirmed boolean scope parenthesization error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: scoped the sentence test over the complete disjunction of rule and assumption cases; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed boolean scope parenthesization error at lines 217-227, definition of Correct(d), preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEART-20260920:OLTEART-010 [checked_supports], content/incompleteness/arithmetization-syntax/proofs-in-nd.tex; lines 217-227, definition of Correct(d); confirmed_boolean_scope_parenthesization_error; scoped the sentence test over the complete disjunction of rule and assumption cases; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that Sent(EndFmla(d)) is conjoined with the complete disjunction of every natural-deduction correctness case.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEART-010-OCC-001; OLP-0287; OLP-0287-B020; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:217-227 bytes 9199-9676 SHA-256 06044a4b70f61e07629055bfc3cfb7a940ce5ccfc09efe1a5473e9c5e3af3d47; target translation/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:217-225 bytes 15518-16708 SHA-256 582c5872374acf75f4f432ee664a5e92f9bef34d621d4d5e6891ab94ed6bf655; reader page pending.
+
+## te-Telu-IN-OLTEART-011 — OLTEART-011: confirmed subderivation tuple index error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: indexed immediate subderivation codes at j+1 after the arity field; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed subderivation tuple index error at lines 287-301, immediate-subderivation relation, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEART-20260920:OLTEART-011 [checked_supports], content/incompleteness/arithmetization-syntax/proofs-in-nd.tex; lines 287-301, immediate-subderivation relation; confirmed_subderivation_tuple_index_error; indexed immediate subderivation codes at j+1 after the arity field; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that Subderiv searches tuple positions j+1 for j below the recorded arity, thereby covering exactly positions 1 through (d-prime)_0.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEART-011-OCC-001; OLP-0287; OLP-0287-B027; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:287-301 bytes 12022-12898 SHA-256 06044a4b70f61e07629055bfc3cfb7a940ce5ccfc09efe1a5473e9c5e3af3d47; target translation/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:287-297 bytes 21424-23017 SHA-256 582c5872374acf75f4f432ee664a5e92f9bef34d621d4d5e6891ab94ed6bf655; reader page pending.
+
+## te-Telu-IN-OLTEART-012 — OLTEART-012: confirmed unbound preceding line index and local variable typo
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: quantified j below i and described the constant code c as bounded by line j; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed unbound preceding line index and local variable typo at lines 110-140, QR_1 test, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEART-20260920:OLTEART-012 [checked_supports], content/incompleteness/arithmetization-syntax/proofs-in-ax.tex; lines 110-140, QR_1 test; confirmed_unbound_preceding_line_index_and_local_variable_typo; quantified j below i and described the constant code c as bounded by line j; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the QR_1 test existentially binds a preceding-line index j<i and that the bounded symbol is c, the constant appearing on that line.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEART-012-OCC-001; OLP-0288; OLP-0288-B010; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:110-140 bytes 4383-5939 SHA-256 6498fe743671727c99bee3ff39efb8e83bf46be470a8c2b613b62a8757c3e4eb; target translation/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:115-139 bytes 8360-10217 SHA-256 0d1dcd92c3d4b41387d8f79e705093ded73cec02e437baf78c60711acdccc46e; reader page pending.
+
+## te-Telu-IN-OLTEART-013 — OLTEART-013: confirmed recursive call name error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: called hCond(s,y,n) in the recursive clause rather than undefined three-argument Cond; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed recursive call name error at lines 195-204, primitive recursion defining hCond, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEART-20260920:OLTEART-013 [checked_supports], content/incompleteness/arithmetization-syntax/proofs-in-ax.tex; lines 195-204, primitive recursion defining hCond; confirmed_recursive_call_name_error; called hCond(s,y,n) in the recursive clause rather than undefined three-argument Cond; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the recursive hCond clause calls hCond(s,y,n), while Cond remains only the two-argument wrapper introduced afterwards.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEART-013-OCC-001; OLP-0288; OLP-0288-B016; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:195-204 bytes 8407-8923 SHA-256 6498fe743671727c99bee3ff39efb8e83bf46be470a8c2b613b62a8757c3e4eb; target translation/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:205-215 bytes 16760-17593 SHA-256 0d1dcd92c3d4b41387d8f79e705093ded73cec02e437baf78c60711acdccc46e; reader page pending.
+
+## te-Telu-IN-OLTEART-014 — OLTEART-014: confirmed missing predicate call parenthesis
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: closed the Correct predicate call in the bounded-universal matrix; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed missing predicate call parenthesis at lines 240-247, displayed definition of Deriv, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEART-20260920:OLTEART-014 [checked_supports], content/incompleteness/arithmetization-syntax/proofs-in-lk.tex; lines 240-247, displayed definition of Deriv; confirmed_missing_predicate_call_parenthesis; closed the Correct predicate call in the bounded-universal matrix; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the unary Correct call in the LK Deriv definition is closed before the bounded-universal body is closed.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEART-014-OCC-001; OLP-0286; OLP-0286-B021; source upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:240-247 bytes 9641-9950 SHA-256 841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b; target translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:244-249 bytes 17466-17957 SHA-256 dc8dfef5116ae6e2e4ccd445f010c74f85173360aec30717a493acef505ed611; reader page pending.

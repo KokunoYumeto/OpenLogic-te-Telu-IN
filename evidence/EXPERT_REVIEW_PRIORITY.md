@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 279 of 722 draft units**. This view selects 282 of 308 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 279 of 722 draft units**. This view selects 297 of 323 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -443,6 +443,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0276; incompleteness/introduction/historical-background; translation/content/incompleteness/introduction/historical-background.tex:176-185; printed/PDF page pending; OLP-0277; incompleteness/introduction/definitions; translation/content/incompleteness/introduction/definitions.tex:31-35; printed/PDF page pending; OLP-0277; incompleteness/introduction/definitions; translation/content/incompleteness/introduction/definitions.tex:43-55; printed/PDF page pending; OLP-0277; incompleteness/introduction/definitions; translation/content/incompleteness/introduction/definitions.tex:99-119; printed/PDF page pending; OLP-0277; incompleteness/introduction/definitions; translation/content/incompleteness/introduction/definitions.tex:121-131; printed/PDF page pending; OLP-0277; incompleteness/introduction/definitions; translation/content/incompleteness/introduction/definitions.tex:200-203; printed/PDF page pending; OLP-0277; incompleteness/introduction/definitions; translation/content/incompleteness/introduction/definitions.tex:263-273; printed/PDF page pending; OLP-0278; incompleteness/introduction/overview; translation/content/incompleteness/introduction/overview.tex:40-52; printed/PDF page pending; OLP-0278; incompleteness/introduction/overview; translation/content/incompleteness/introduction/overview.tex:54-65; printed/PDF page pending; OLP-0278; incompleteness/introduction/overview; translation/content/incompleteness/introduction/overview.tex:85-99; printed/PDF page pending; OLP-0279; incompleteness/introduction/undecidability; translation/content/incompleteness/introduction/undecidability.tex:150-157; printed/PDF page pending
 
 - Please double-check: Please double-check whether “అసంపూర్ణత / హిల్బర్ట్ కార్యక్రమం / సిద్ధాంతం / అంకగణితపు ప్రామాణిక నమూనా / నిజ అంకగణితం / రాబిన్సన్ Q / పియానో అంకగణితం / ఆగమన పథకం / సంపూర్ణ, నిర్ణయించదగిన సిద్ధాంతం / స్వీకృతీకరించదగిన / గణనీయంగా లెక్కించదగిన / గణనీయ ప్రమేయాలు, నిర్ణయించదగిన సంబంధాలకు ప్రాతినిధ్యం / స్వతంత్ర వాక్యం / గ్యోడెల్ వాక్యం / వాక్యనిర్మాణపు అంకగణితీకరణ / నిరూప్యతా విధేయం / అవైరుధ్య వాక్యం / ప్రెస్‌బర్గర్ అంకగణితం” is idiomatic and technically standard for “incompleteness / Hilbert's program / theory / standard model of arithmetic / true arithmetic / Robinson's Q / Peano arithmetic / induction schema / complete and decidable theory / axiomatizable / computably enumerable / representation of computable functions and decidable relations / independent sentence / Gödel sentence / arithmetization of syntax / provability predicate / consistency statement / Presburger arithmetic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T071 — arithmetization of syntax / symbol coding / sequence coding / code / Gödel number / Gödel numbering / formation sequence / primitive recursive syntactic relation / substitution / proof code / end-sequent / end-formula / discharge label / immediate subderivation / proof predicate / sequent calculus / natural deduction / axiomatic derivation
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: వాక్యనిర్మాణపు అంకగణితీకరణ / సంకేత సంకేతీకరణ / క్రమ సంకేతీకరణ / సంకేతసంఖ్య / గ్యోడెల్ సంఖ్య / గ్యోడెల్ సంఖ్యీకరణ / నిర్మాణ క్రమం / ఆదిమ పునరావృత్త వాక్యనిర్మాణ సంబంధం / ప్రతిస్థాపన / వ్యుత్పత్తి సంకేతసంఖ్య / అంత్య-సీక్వెంట్ / అంత్య-సూత్రం / ఉపసంహరణ చీటీ / తక్షణ ఉపవ్యుత్పత్తి / నిరూపణ విధేయం / సీక్వెంట్ కలనం / సహజ నిగమనం / స్వీకృతాధారిత వ్యుత్పత్తి
+
+- Occurrences: OLP-0280; incompleteness/arithmetization-syntax/arithmetization-syntax; translation/content/incompleteness/arithmetization-syntax/arithmetization-syntax.tex:8; printed/PDF page pending; OLP-0281; incompleteness/arithmetization-syntax/introduction; translation/content/incompleteness/arithmetization-syntax/introduction.tex:28-41; printed/PDF page pending; OLP-0282; incompleteness/arithmetization-syntax/coding-symbols; translation/content/incompleteness/arithmetization-syntax/coding-symbols.tex:9-10; printed/PDF page pending; OLP-0283; incompleteness/arithmetization-syntax/coding-terms; translation/content/incompleteness/arithmetization-syntax/coding-terms.tex:41-57; printed/PDF page pending; OLP-0284; incompleteness/arithmetization-syntax/coding-formulas; translation/content/incompleteness/arithmetization-syntax/coding-formulas.tex:9-10; printed/PDF page pending; OLP-0285; incompleteness/arithmetization-syntax/substitution; translation/content/incompleteness/arithmetization-syntax/substitution.tex:9-10; printed/PDF page pending; OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:12-21; printed/PDF page pending; OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:255-261; printed/PDF page pending; OLP-0287; incompleteness/arithmetization-syntax/proofs-in-nd; translation/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:9-10; printed/PDF page pending; OLP-0287; incompleteness/arithmetization-syntax/proofs-in-nd; translation/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:12-24; printed/PDF page pending; OLP-0287; incompleteness/arithmetization-syntax/proofs-in-nd; translation/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:12-24; printed/PDF page pending; OLP-0288; incompleteness/arithmetization-syntax/proofs-in-ax; translation/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:9-10; printed/PDF page pending
+
+- Please double-check: Please double-check whether “వాక్యనిర్మాణపు అంకగణితీకరణ / సంకేత సంకేతీకరణ / క్రమ సంకేతీకరణ / సంకేతసంఖ్య / గ్యోడెల్ సంఖ్య / గ్యోడెల్ సంఖ్యీకరణ / నిర్మాణ క్రమం / ఆదిమ పునరావృత్త వాక్యనిర్మాణ సంబంధం / ప్రతిస్థాపన / వ్యుత్పత్తి సంకేతసంఖ్య / అంత్య-సీక్వెంట్ / అంత్య-సూత్రం / ఉపసంహరణ చీటీ / తక్షణ ఉపవ్యుత్పత్తి / నిరూపణ విధేయం / సీక్వెంట్ కలనం / సహజ నిగమనం / స్వీకృతాధారిత వ్యుత్పత్తి” is idiomatic and technically standard for “arithmetization of syntax / symbol coding / sequence coding / code / Gödel number / Gödel numbering / formation sequence / primitive recursive syntactic relation / substitution / proof code / end-sequent / end-formula / discharge label / immediate subderivation / proof predicate / sequent calculus / natural deduction / axiomatic derivation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -2388,11 +2398,11 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 
 - Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
 
-- Chosen wording/treatment: reversed both prose statements to K_0 reduces to K; adjacent sourcecorrection discloses the repair
+- Chosen wording/treatment: used K_0 reduces to K in the proof; retained the valid source exercise K reduces to K_0; added a separately labelled exercise for K_0 reduces to K; adjacent sourcecorrection discloses the distinction
 
-- Occurrences: OLP-0245; computability/computability-theory/complete-ce-sets; translation/content/computability/computability-theory/complete-ce-sets.tex:40-42; printed/PDF page pending; OLP-0245; computability/computability-theory/complete-ce-sets; translation/content/computability/computability-theory/complete-ce-sets.tex:44-46; printed/PDF page pending; OLP-0245; computability/computability-theory/complete-ce-sets; translation/content/computability/computability-theory/complete-ce-sets.tex:48-50; printed/PDF page pending
+- Occurrences: OLP-0245; computability/computability-theory/complete-ce-sets; translation/content/computability/computability-theory/complete-ce-sets.tex:44-46; printed/PDF page pending; OLP-0245; computability/computability-theory/complete-ce-sets; translation/content/computability/computability-theory/complete-ce-sets.tex:48-52; printed/PDF page pending
 
-- Please double-check: Please double-check that completeness of K requires K_0 many-one reduces to K, and that the following exercise asks for this same direction.
+- Please double-check: Please double-check that the proof uses K_0 many-one reduces to K, that the valid original exercise K reduces to K_0 is retained, and that the reverse direction appears only as a separately labelled added exercise completing the proof.
 
 ## REV-OLTECOMTHY-016 — OLTECOMTHY-016
 
@@ -2823,3 +2833,143 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0279; incompleteness/introduction/undecidability; translation/content/incompleteness/introduction/undecidability.tex:146-152; printed/PDF page pending
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-014 is mathematically precise and idiomatic.
+
+## REV-OLTEART-001 — OLTEART-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: rendered one arithmetized substitution function with singular agreement; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0281; incompleteness/arithmetization-syntax/introduction; translation/content/incompleteness/arithmetization-syntax/introduction.tex:60-67; printed/PDF page pending
+
+- Please double-check: Please double-check that the arithmetized substitution construction is singular throughout and maps the three input codes k, l and m to the output code n.
+
+## REV-OLTEART-002 — OLTEART-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: quantified j together with n and z in formation clause (3); adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0283; incompleteness/arithmetization-syntax/coding-terms; translation/content/incompleteness/arithmetization-syntax/coding-terms.tex:63-74; printed/PDF page pending
+
+- Please double-check: Please double-check that the term-formation clause explicitly quantifies the function-symbol index j together with n and z.
+
+## REV-OLTEART-003 — OLTEART-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: replaced the false sequence-code-below-x claim with the bounded formation-sequence argument from the term proof; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0284; incompleteness/arithmetization-syntax/coding-formulas; translation/content/incompleteness/arithmetization-syntax/coding-formulas.tex:47-55; printed/PDF page pending
+
+- Please double-check: Please double-check that the formula-formation proof uses the valid bounded sequence-code argument from the term proof rather than claiming that the whole sequence code is below its final formula code.
+
+## REV-OLTEART-004 — OLTEART-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: removed the unmatched right parenthesis from the expanded initial-sequent code; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:86-91; printed/PDF page pending
+
+- Please double-check: Please double-check that both repaired LK Gödel codes have balanced parentheses and agree with the displayed conclusion and the definition of p_0.
+
+## REV-OLTEART-005 — OLTEART-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used EndSequent for the projection definition and all later calls; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:94-102; printed/PDF page pending
+
+- Please double-check: Please double-check that EndSequent is the single projection name used in its definition and every subsequent rule and proof predicate.
+
+## REV-OLTEART-006 — OLTEART-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: called the defined InitSeq predicate in Correct(p); adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:201-209; printed/PDF page pending
+
+- Please double-check: Please double-check that the final LK correctness formula calls the defined InitSeq predicate rather than an undefined InitialSeq predicate.
+
+## REV-OLTEART-007 — OLTEART-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: referred to p rather than undefined d in the explanation; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:210-213; printed/PDF page pending
+
+- Please double-check: Please double-check that the explanation of Correct refers to the end-sequent of p, matching the displayed formula and proposition.
+
+## REV-OLTEART-008 — OLTEART-008
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used p consistently in the proposition, proof sentence and subtree formula; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:235-245; printed/PDF page pending
+
+- Please double-check: Please double-check that the primitive-recursiveness proof calls Deriv(p), consistently with its quantified subtree formula and proposition.
+
+## REV-OLTEART-009 — OLTEART-009
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: equated the sole right-side formula code with y rather than the derivation code x; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:264-273; printed/PDF page pending
+
+- Please double-check: Please double-check that the sole right-side formula code is equated with y, the Gödel number of A, rather than x, the derivation code.
+
+## REV-OLTEART-010 — OLTEART-010
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: scoped the sentence test over the complete disjunction of rule and assumption cases; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0287; incompleteness/arithmetization-syntax/proofs-in-nd; translation/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:217-225; printed/PDF page pending
+
+- Please double-check: Please double-check that Sent(EndFmla(d)) is conjoined with the complete disjunction of every natural-deduction correctness case.
+
+## REV-OLTEART-011 — OLTEART-011
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: indexed immediate subderivation codes at j+1 after the arity field; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0287; incompleteness/arithmetization-syntax/proofs-in-nd; translation/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:287-297; printed/PDF page pending
+
+- Please double-check: Please double-check that Subderiv searches tuple positions j+1 for j below the recorded arity, thereby covering exactly positions 1 through (d-prime)_0.
+
+## REV-OLTEART-012 — OLTEART-012
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: quantified j below i and described the constant code c as bounded by line j; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0288; incompleteness/arithmetization-syntax/proofs-in-ax; translation/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:115-139; printed/PDF page pending
+
+- Please double-check: Please double-check that the QR_1 test existentially binds a preceding-line index j<i and that the bounded symbol is c, the constant appearing on that line.
+
+## REV-OLTEART-013 — OLTEART-013
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: called hCond(s,y,n) in the recursive clause rather than undefined three-argument Cond; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0288; incompleteness/arithmetization-syntax/proofs-in-ax; translation/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:205-215; printed/PDF page pending
+
+- Please double-check: Please double-check that the recursive hCond clause calls hCond(s,y,n), while Cond remains only the two-argument wrapper introduced afterwards.
+
+## REV-OLTEART-014 — OLTEART-014
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: closed the Correct predicate call in the bounded-universal matrix; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:244-249; printed/PDF page pending
+
+- Please double-check: Please double-check that the unary Correct call in the LK Deriv definition is closed before the bounded-universal body is closed.

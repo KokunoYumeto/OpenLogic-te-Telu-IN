@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 279 of 722 draft units**. This log contains 70 terminology/sense decisions and 238 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 279 of 722 draft units**. This log contains 71 terminology/sense decisions and 252 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1687,6 +1687,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low semantic uncertainty because the chapter explicitly defines theories, arithmetic systems, completeness, decidability, axiomatizability, computable enumerability and representation; medium to high nomenclatural uncertainty for representability, arithmetization and provability compounds pending independent native review
 
 - Please double-check: Please double-check whether “అసంపూర్ణత / హిల్బర్ట్ కార్యక్రమం / సిద్ధాంతం / అంకగణితపు ప్రామాణిక నమూనా / నిజ అంకగణితం / రాబిన్సన్ Q / పియానో అంకగణితం / ఆగమన పథకం / సంపూర్ణ, నిర్ణయించదగిన సిద్ధాంతం / స్వీకృతీకరించదగిన / గణనీయంగా లెక్కించదగిన / గణనీయ ప్రమేయాలు, నిర్ణయించదగిన సంబంధాలకు ప్రాతినిధ్యం / స్వతంత్ర వాక్యం / గ్యోడెల్ వాక్యం / వాక్యనిర్మాణపు అంకగణితీకరణ / నిరూప్యతా విధేయం / అవైరుధ్య వాక్యం / ప్రెస్‌బర్గర్ అంకగణితం” is idiomatic and technically standard for “incompleteness / Hilbert's program / theory / standard model of arithmetic / true arithmetic / Robinson's Q / Peano arithmetic / induction schema / complete and decidable theory / axiomatizable / computably enumerable / representation of computable functions and decidable relations / independent sentence / Gödel sentence / arithmetization of syntax / provability predicate / consistency statement / Presburger arithmetic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T071 — arithmetization of syntax / symbol coding / sequence coding / code / Gödel number / Gödel numbering / formation sequence / primitive recursive syntactic relation / substitution / proof code / end-sequent / end-formula / discharge label / immediate subderivation / proof predicate / sequent calculus / natural deduction / axiomatic derivation
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: వాక్యనిర్మాణపు అంకగణితీకరణ / సంకేత సంకేతీకరణ / క్రమ సంకేతీకరణ / సంకేతసంఖ్య / గ్యోడెల్ సంఖ్య / గ్యోడెల్ సంఖ్యీకరణ / నిర్మాణ క్రమం / ఆదిమ పునరావృత్త వాక్యనిర్మాణ సంబంధం / ప్రతిస్థాపన / వ్యుత్పత్తి సంకేతసంఖ్య / అంత్య-సీక్వెంట్ / అంత్య-సూత్రం / ఉపసంహరణ చీటీ / తక్షణ ఉపవ్యుత్పత్తి / నిరూపణ విధేయం / సీక్వెంట్ కలనం / సహజ నిగమనం / స్వీకృతాధారిత వ్యుత్పత్తి
+
+- Exact implementation: OLP-0280; incompleteness/arithmetization-syntax/arithmetization-syntax; content/incompleteness/arithmetization-syntax/arithmetization-syntax.tex:8 ↔ translation/content/incompleteness/arithmetization-syntax/arithmetization-syntax.tex:8 (OLP-0280-B004); printed/PDF page pending; OLP-0281; incompleteness/arithmetization-syntax/introduction; content/incompleteness/arithmetization-syntax/introduction.tex:30-43 ↔ translation/content/incompleteness/arithmetization-syntax/introduction.tex:28-41 (OLP-0281-B006); printed/PDF page pending; OLP-0282; incompleteness/arithmetization-syntax/coding-symbols; content/incompleteness/arithmetization-syntax/coding-symbols.tex:9-10 ↔ translation/content/incompleteness/arithmetization-syntax/coding-symbols.tex:9-10 (OLP-0282-B004); printed/PDF page pending; OLP-0283; incompleteness/arithmetization-syntax/coding-terms; content/incompleteness/arithmetization-syntax/coding-terms.tex:43-58 ↔ translation/content/incompleteness/arithmetization-syntax/coding-terms.tex:41-57 (OLP-0283-B008); printed/PDF page pending; OLP-0284; incompleteness/arithmetization-syntax/coding-formulas; content/incompleteness/arithmetization-syntax/coding-formulas.tex:9-10 ↔ translation/content/incompleteness/arithmetization-syntax/coding-formulas.tex:9-10 (OLP-0284-B004); printed/PDF page pending; OLP-0285; incompleteness/arithmetization-syntax/substitution; content/incompleteness/arithmetization-syntax/substitution.tex:9-10 ↔ translation/content/incompleteness/arithmetization-syntax/substitution.tex:9-10 (OLP-0285-B004); printed/PDF page pending; OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:12-20 ↔ translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:12-21 (OLP-0286-B005); printed/PDF page pending; OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:251-257 ↔ translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:255-261 (OLP-0286-B022); printed/PDF page pending; OLP-0287; incompleteness/arithmetization-syntax/proofs-in-nd; content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:9-10 ↔ translation/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:9-10 (OLP-0287-B004); printed/PDF page pending; OLP-0287; incompleteness/arithmetization-syntax/proofs-in-nd; content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:12-22 ↔ translation/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:12-24 (OLP-0287-B005); printed/PDF page pending; OLP-0287; incompleteness/arithmetization-syntax/proofs-in-nd; content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:12-22 ↔ translation/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:12-24 (OLP-0287-B005); printed/PDF page pending; OLP-0288; incompleteness/arithmetization-syntax/proofs-in-ax; content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:9-10 ↔ translation/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:9-10 (OLP-0288-B004); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P025, PDF 87, printed 80, Indirect-proof heading and worked derivation; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P028, PDF 92, printed 85, Unary predicates, binary relations and quantifier classification; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P033, PDF 40, printed 33, Inference section heading and definition; TE-P034, PDF 308, printed 301, Main point 5, Cartesian product definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P005 supports native natural-number exposition; TE-P008, TE-P010--TE-P011 and TE-P034 support sequences, ordered tuples, relations and functions; TE-P018 and TE-P024--TE-P033 support formula, sentence, derivation, proof-system and proof register. These witnesses do not directly attest Gödel numbering, arithmetized syntax, formation-sequence bounds, recursive proof verification or proof predicates. The frozen symbol and sequence codes, tuple layouts, substitution recursion and LK, natural-deduction and axiomatic proof checks in OLP-0280--OLP-0288 control those exact senses; TE-T020, TE-T024, TE-T028, TE-T033, TE-T034 and TE-T070 supply the edition's earlier reversible choices. గ్యోడెల్ is the source eponym; LK, QR, rule symbols, formula metavariables and predicate names remain protected formal notation. సీక్వెంట్ is an established explicitly contextualized technical borrowing; no unexplained English technical headword remains in reader-facing prose
+
+- Alternatives: reuse the established number, sequence, function, relation, formula, derivation and proof register, with Gödel coding, formation-sequence and proof-predicate compounds fixed by the adjacent definitions and tuple layouts (chosen); leave the specialized coding and proof-verification vocabulary in untranslated English reader prose (rejected); collapse symbol, sequence, term, formula and proof codes into one undifferentiated notion (rejected because the definitions distinguish their constructors and tests); claim direct native attestation for Gödel numbering, formation-sequence bounds or primitive-recursive proof verification (rejected because the frozen definitions, recursions and predicates control those senses)
+
+- Uncertainty: Low semantic uncertainty because every specialized notion is fixed by an explicit coding definition, tuple position, primitive recursion or proof-checking predicate; medium to high nomenclatural uncertainty for arithmetization, formation-sequence and proof-predicate compounds pending independent native review
+
+- Please double-check: Please double-check whether “వాక్యనిర్మాణపు అంకగణితీకరణ / సంకేత సంకేతీకరణ / క్రమ సంకేతీకరణ / సంకేతసంఖ్య / గ్యోడెల్ సంఖ్య / గ్యోడెల్ సంఖ్యీకరణ / నిర్మాణ క్రమం / ఆదిమ పునరావృత్త వాక్యనిర్మాణ సంబంధం / ప్రతిస్థాపన / వ్యుత్పత్తి సంకేతసంఖ్య / అంత్య-సీక్వెంట్ / అంత్య-సూత్రం / ఉపసంహరణ చీటీ / తక్షణ ఉపవ్యుత్పత్తి / నిరూపణ విధేయం / సీక్వెంట్ కలనం / సహజ నిగమనం / స్వీకృతాధారిత వ్యుత్పత్తి” is idiomatic and technically standard for “arithmetization of syntax / symbol coding / sequence coding / code / Gödel number / Gödel numbering / formation sequence / primitive recursive syntactic relation / substitution / proof code / end-sequent / end-formula / discharge label / immediate subderivation / proof predicate / sequent calculus / natural deduction / axiomatic derivation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -6352,21 +6376,21 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 
 - Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
 
-- Chosen wording/treatment: reversed both prose statements to K_0 reduces to K; adjacent sourcecorrection discloses the repair
+- Chosen wording/treatment: used K_0 reduces to K in the proof; retained the valid source exercise K reduces to K_0; added a separately labelled exercise for K_0 reduces to K; adjacent sourcecorrection discloses the distinction
 
-- Exact implementation: OLP-0245; computability/computability-theory/complete-ce-sets; lines 39-42; mapped segment within audited scope lines 39-48, completeness proof for K and following exercise ↔ translation/content/computability/computability-theory/complete-ce-sets.tex:40-42 (OLP-0245-B009); printed/PDF page pending; OLP-0245; computability/computability-theory/complete-ce-sets; lines 44-45; mapped segment within audited scope lines 39-48, completeness proof for K and following exercise ↔ translation/content/computability/computability-theory/complete-ce-sets.tex:44-46 (OLP-0245-B010); printed/PDF page pending; OLP-0245; computability/computability-theory/complete-ce-sets; lines 47-49; mapped segment within audited scope lines 39-48, completeness proof for K and following exercise ↔ translation/content/computability/computability-theory/complete-ce-sets.tex:48-50 (OLP-0245-B011); printed/PDF page pending
+- Exact implementation: OLP-0245; computability/computability-theory/complete-ce-sets; lines 44-45; mapped segment within audited scope lines 44-49, insufficient final direction in the completeness proof for K and the independently valid following exercise ↔ translation/content/computability/computability-theory/complete-ce-sets.tex:44-46 (OLP-0245-B010); printed/PDF page pending; OLP-0245; computability/computability-theory/complete-ce-sets; lines 47-49; mapped segment within audited scope lines 44-49, insufficient final direction in the completeness proof for K and the independently valid following exercise ↔ translation/content/computability/computability-theory/complete-ce-sets.tex:48-52 (OLP-0245-B011); printed/PDF page pending
 
 - Authorities actually checked: OLTECOMTHYREM-20260919; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
 
 - Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
 
-- Rationale: reversed both prose statements to K_0 reduces to K; adjacent sourcecorrection discloses the repair
+- Rationale: used K_0 reduces to K in the proof; retained the valid source exercise K reduces to K_0; added a separately labelled exercise for K_0 reduces to K; adjacent sourcecorrection discloses the distinction
 
 - Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
 
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
-- Please double-check: Please double-check that completeness of K requires K_0 many-one reduces to K, and that the following exercise asks for this same direction.
+- Please double-check: Please double-check that the proof uses K_0 many-one reduces to K, that the valid original exercise K reduces to K_0 is retained, and that the reverse direction appears only as a separately labelled added exercise completing the proof.
 
 ## REV-OLTECOMTHY-016 — OLTECOMTHY-016
 
@@ -7399,3 +7423,339 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTEINCINT-014 is mathematically precise and idiomatic.
+
+## REV-OLTEART-001 — OLTEART-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: rendered one arithmetized substitution function with singular agreement; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0281; incompleteness/arithmetization-syntax/introduction; lines 62-71, arithmetized substitution-function explanation ↔ translation/content/incompleteness/arithmetization-syntax/introduction.tex:60-67 (OLP-0281-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTEART-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: rendered one arithmetized substitution function with singular agreement; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the arithmetized substitution construction is singular throughout and maps the three input codes k, l and m to the output code n.
+
+## REV-OLTEART-002 — OLTEART-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: quantified j together with n and z in formation clause (3); adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0283; incompleteness/arithmetization-syntax/coding-terms; lines 60-78, formation-sequence clause (3) ↔ translation/content/incompleteness/arithmetization-syntax/coding-terms.tex:63-74 (OLP-0283-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTEART-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: quantified j together with n and z in formation clause (3); adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the term-formation clause explicitly quantifies the function-symbol index j together with n and z.
+
+## REV-OLTEART-003 — OLTEART-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: replaced the false sequence-code-below-x claim with the bounded formation-sequence argument from the term proof; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0284; incompleteness/arithmetization-syntax/coding-formulas; lines 46-53, proof that Frm is primitive recursive ↔ translation/content/incompleteness/arithmetization-syntax/coding-formulas.tex:47-55 (OLP-0284-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTEART-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: replaced the false sequence-code-below-x claim with the bounded formation-sequence argument from the term proof; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the formula-formation proof uses the valid bounded sequence-code argument from the term proof rather than claiming that the whole sequence code is below its final formula code.
+
+## REV-OLTEART-004 — OLTEART-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: removed the unmatched right parenthesis from the expanded initial-sequent code; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; lines 78-90, expanded Gödel code in the LK example ↔ translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:86-91 (OLP-0286-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTEART-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: removed the unmatched right parenthesis from the expanded initial-sequent code; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that both repaired LK Gödel codes have balanced parentheses and agree with the displayed conclusion and the definition of p_0.
+
+## REV-OLTEART-005 — OLTEART-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used EndSequent for the projection definition and all later calls; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; lines 93-105 and subsequent formulas, end-sequent projection ↔ translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:94-102 (OLP-0286-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTEART-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used EndSequent for the projection definition and all later calls; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that EndSequent is the single projection name used in its definition and every subsequent rule and proof predicate.
+
+## REV-OLTEART-006 — OLTEART-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: called the defined InitSeq predicate in Correct(p); adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; lines 119-133 and 204-211, initial-sequent predicate ↔ translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:201-209 (OLP-0286-B018); printed/PDF page pending
+
+- Authorities actually checked: OLTEART-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: called the defined InitSeq predicate in Correct(p); adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the final LK correctness formula calls the defined InitSeq predicate rather than an undefined InitialSeq predicate.
+
+## REV-OLTEART-007 — OLTEART-007
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: referred to p rather than undefined d in the explanation; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; lines 204-214, explanation of Correct(p) ↔ translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:210-213 (OLP-0286-B018); printed/PDF page pending
+
+- Authorities actually checked: OLTEART-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: referred to p rather than undefined d in the explanation; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the explanation of Correct refers to the end-sequent of p, matching the displayed formula and proposition.
+
+## REV-OLTEART-008 — OLTEART-008
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used p consistently in the proposition, proof sentence and subtree formula; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; lines 235-247, primitive-recursiveness of Deriv ↔ translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:235-245 (OLP-0286-B021); printed/PDF page pending
+
+- Authorities actually checked: OLTEART-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used p consistently in the proposition, proof sentence and subtree formula; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the primitive-recursiveness proof calls Deriv(p), consistently with its quantified subtree formula and proposition.
+
+## REV-OLTEART-009 — OLTEART-009
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: equated the sole right-side formula code with y rather than the derivation code x; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; lines 266-282, right side of the end-sequent ↔ translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:264-273 (OLP-0286-B024); printed/PDF page pending
+
+- Authorities actually checked: OLTEART-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: equated the sole right-side formula code with y rather than the derivation code x; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the sole right-side formula code is equated with y, the Gödel number of A, rather than x, the derivation code.
+
+## REV-OLTEART-010 — OLTEART-010
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: scoped the sentence test over the complete disjunction of rule and assumption cases; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0287; incompleteness/arithmetization-syntax/proofs-in-nd; lines 217-227, definition of Correct(d) ↔ translation/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:217-225 (OLP-0287-B020); printed/PDF page pending
+
+- Authorities actually checked: OLTEART-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: scoped the sentence test over the complete disjunction of rule and assumption cases; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that Sent(EndFmla(d)) is conjoined with the complete disjunction of every natural-deduction correctness case.
+
+## REV-OLTEART-011 — OLTEART-011
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: indexed immediate subderivation codes at j+1 after the arity field; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0287; incompleteness/arithmetization-syntax/proofs-in-nd; lines 287-301, immediate-subderivation relation ↔ translation/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:287-297 (OLP-0287-B027); printed/PDF page pending
+
+- Authorities actually checked: OLTEART-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: indexed immediate subderivation codes at j+1 after the arity field; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that Subderiv searches tuple positions j+1 for j below the recorded arity, thereby covering exactly positions 1 through (d-prime)_0.
+
+## REV-OLTEART-012 — OLTEART-012
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: quantified j below i and described the constant code c as bounded by line j; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0288; incompleteness/arithmetization-syntax/proofs-in-ax; lines 110-140, QR_1 test ↔ translation/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:115-139 (OLP-0288-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTEART-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: quantified j below i and described the constant code c as bounded by line j; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the QR_1 test existentially binds a preceding-line index j<i and that the bounded symbol is c, the constant appearing on that line.
+
+## REV-OLTEART-013 — OLTEART-013
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: called hCond(s,y,n) in the recursive clause rather than undefined three-argument Cond; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0288; incompleteness/arithmetization-syntax/proofs-in-ax; lines 195-204, primitive recursion defining hCond ↔ translation/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:205-215 (OLP-0288-B016); printed/PDF page pending
+
+- Authorities actually checked: OLTEART-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: called hCond(s,y,n) in the recursive clause rather than undefined three-argument Cond; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the recursive hCond clause calls hCond(s,y,n), while Cond remains only the two-argument wrapper introduced afterwards.
+
+## REV-OLTEART-014 — OLTEART-014
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: closed the Correct predicate call in the bounded-universal matrix; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0286; incompleteness/arithmetization-syntax/proofs-in-lk; lines 240-247, displayed definition of Deriv ↔ translation/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:244-249 (OLP-0286-B021); printed/PDF page pending
+
+- Authorities actually checked: OLTEART-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: closed the Correct predicate call in the bounded-universal matrix; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the unary Correct call in the LK Deriv definition is closed before the bounded-universal body is closed.

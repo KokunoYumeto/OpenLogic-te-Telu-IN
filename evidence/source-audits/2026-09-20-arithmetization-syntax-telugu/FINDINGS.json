@@ -1,0 +1,220 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTEART-20260920",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0281",
+      "OLP-0283",
+      "OLP-0284",
+      "OLP-0286",
+      "OLP-0287",
+      "OLP-0288"
+    ],
+    "finding_count": 14
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEART-001",
+      "unit_id": "OLP-0281",
+      "classification": "confirmed_subject_number_agreement_error",
+      "source": {
+        "path": "content/incompleteness/arithmetization-syntax/introduction.tex",
+        "bytes": 5133,
+        "sha256": "12b6779f25c86d92821b6f2dbd9acd095d934a7d22438493d5f043b9c5526c96",
+        "locator": "lines 62-71, arithmetized substitution-function explanation"
+      },
+      "finding": "The source says the arithmetized substitution functions maps, combining a plural noun with a singular verb although the passage describes one mapping.",
+      "controlling_evidence": "The preceding and following sentences call the construction a single mapping and this function, with inputs k,l,m and output n.",
+      "required_translation_handling": "Render one arithmetized substitution function with singular agreement and add an adjacent OLTEART-001 disclosure."
+    },
+    {
+      "finding_id": "OLTEART-002",
+      "unit_id": "OLP-0283",
+      "classification": "confirmed_missing_index_quantifier",
+      "source": {
+        "path": "content/incompleteness/arithmetization-syntax/coding-terms.tex",
+        "bytes": 4658,
+        "sha256": "8b7fe6f274da5f46458440ad1e2abb4549f983738a7edd9ae90ae994df19200a",
+        "locator": "lines 60-78, formation-sequence clause (3)"
+      },
+      "finding": "Clause (3) introduces n and z but uses the unbound function-symbol index j in f_j^n.",
+      "controlling_evidence": "The next paragraph explicitly lists j among the indices bounded below y, and the earlier prose formulation quantifies the function-symbol index.",
+      "required_translation_handling": "Quantify j together with n and z in clause (3), and add an adjacent OLTEART-002 disclosure."
+    },
+    {
+      "finding_id": "OLTEART-003",
+      "unit_id": "OLP-0284",
+      "classification": "confirmed_formation_sequence_bound_error",
+      "source": {
+        "path": "content/incompleteness/arithmetization-syntax/coding-formulas.tex",
+        "bytes": 2725,
+        "sha256": "b8658dcae853e6a0e1321e127effe853874900cc16270e1cc25ab03c8f37b8be",
+        "locator": "lines 46-53, proof that Frm is primitive recursive"
+      },
+      "finding": "The proof says the code of the entire formula-formation sequence is less than the code x of the final formula.",
+      "controlling_evidence": "Under the chapter's prime-power sequence coding, a sequence code need not be below one of its entries. The immediately preceding term proof instead bounds every subexpression code by x, the sequence length by len(x), and the sequence code by p_(k-1)^(k(x+1)).",
+      "required_translation_handling": "Use the valid bounded-formation-sequence argument from the term proof and add an adjacent OLTEART-003 disclosure."
+    },
+    {
+      "finding_id": "OLTEART-004",
+      "unit_id": "OLP-0286",
+      "classification": "confirmed_extra_parentheses_in_godel_codes",
+      "source": {
+        "path": "content/incompleteness/arithmetization-syntax/proofs-in-lk.tex",
+        "bytes": 11602,
+        "sha256": "841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b",
+        "locator": "lines 78-90, compact and expanded Gödel codes in the LK example"
+      },
+      "finding": "The compact tuple writes the conclusion code as Gn{Sequent (A and B) implies A)} and the expanded tuple writes the initial-sequent code as Gn{A Sequent A)}, each with an unmatched extra right parenthesis.",
+      "controlling_evidence": "The displayed derivation gives the conclusion without that trailing parenthesis, and the same example defines p_0 immediately above as the code of A Sequent A without the other parenthesis.",
+      "required_translation_handling": "Remove both unmatched parentheses in the compact and expanded codes and add an adjacent OLTEART-004 disclosure."
+    },
+    {
+      "finding_id": "OLTEART-005",
+      "unit_id": "OLP-0286",
+      "classification": "confirmed_function_name_inconsistency",
+      "source": {
+        "path": "content/incompleteness/arithmetization-syntax/proofs-in-lk.tex",
+        "bytes": 11602,
+        "sha256": "841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b",
+        "locator": "lines 93-105 and subsequent formulas, end-sequent projection"
+      },
+      "finding": "The projection is introduced as EndSeq but every subsequent use in the section calls it EndSequent.",
+      "controlling_evidence": "All rule-correctness formulas and the proof predicate consistently use EndSequent with the same intended projection.",
+      "required_translation_handling": "Use EndSequent at the definition and throughout, and add an adjacent OLTEART-005 disclosure."
+    },
+    {
+      "finding_id": "OLTEART-006",
+      "unit_id": "OLP-0286",
+      "classification": "confirmed_predicate_name_inconsistency",
+      "source": {
+        "path": "content/incompleteness/arithmetization-syntax/proofs-in-lk.tex",
+        "bytes": 11602,
+        "sha256": "841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b",
+        "locator": "lines 119-133 and 204-211, initial-sequent predicate"
+      },
+      "finding": "The proof defines InitSeq but the final Correct formula calls the undefined InitialSeq.",
+      "controlling_evidence": "Both positions describe the same test for an initial sequent, and no separate InitialSeq predicate is introduced.",
+      "required_translation_handling": "Call the defined InitSeq predicate in the Correct formula and add an adjacent OLTEART-006 disclosure."
+    },
+    {
+      "finding_id": "OLTEART-007",
+      "unit_id": "OLP-0286",
+      "classification": "confirmed_local_variable_name_typo",
+      "source": {
+        "path": "content/incompleteness/arithmetization-syntax/proofs-in-lk.tex",
+        "bytes": 11602,
+        "sha256": "841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b",
+        "locator": "lines 204-214, explanation of Correct(p)"
+      },
+      "finding": "The prose says the first line checks the end-sequent of d although the displayed definition and the entire proposition use p.",
+      "controlling_evidence": "The first line is Sequent(EndSequent(p)); d is not the derivation-code variable in this passage.",
+      "required_translation_handling": "Refer to p in the explanation and add an adjacent OLTEART-007 disclosure."
+    },
+    {
+      "finding_id": "OLTEART-008",
+      "unit_id": "OLP-0286",
+      "classification": "confirmed_derivation_code_variable_mismatch",
+      "source": {
+        "path": "content/incompleteness/arithmetization-syntax/proofs-in-lk.tex",
+        "bytes": 11602,
+        "sha256": "841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b",
+        "locator": "lines 235-247, primitive-recursiveness of Deriv"
+      },
+      "finding": "The proposition and displayed subtree formula use p, but the proof sentence switches without definition to Deriv(d).",
+      "controlling_evidence": "The quantified formula checks SubtreeSeq(p), and p is the proposition's code for the derivation pi.",
+      "required_translation_handling": "Use p consistently in the proof sentence and add an adjacent OLTEART-008 disclosure."
+    },
+    {
+      "finding_id": "OLTEART-009",
+      "unit_id": "OLP-0286",
+      "classification": "confirmed_proof_formula_variable_mismatch",
+      "source": {
+        "path": "content/incompleteness/arithmetization-syntax/proofs-in-lk.tex",
+        "bytes": 11602,
+        "sha256": "841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b",
+        "locator": "lines 266-282, right side of the end-sequent"
+      },
+      "finding": "The intermediate test equates the sole right-side formula code with x, the derivation code, instead of y, the Gödel number of A.",
+      "controlling_evidence": "The proposition assigns x to the derivation and y to A, and the final displayed Prf definition correctly uses y.",
+      "required_translation_handling": "Use y in the intermediate equality and add an adjacent OLTEART-009 disclosure."
+    },
+    {
+      "finding_id": "OLTEART-010",
+      "unit_id": "OLP-0287",
+      "classification": "confirmed_boolean_scope_parenthesization_error",
+      "source": {
+        "path": "content/incompleteness/arithmetization-syntax/proofs-in-nd.tex",
+        "bytes": 14091,
+        "sha256": "06044a4b70f61e07629055bfc3cfb7a940ce5ccfc09efe1a5473e9c5e3af3d47",
+        "locator": "lines 217-227, definition of Correct(d)"
+      },
+      "finding": "The conjunction with Sent(EndFmla(d)) is not parenthesized over the full disjunction of rule and assumption cases.",
+      "controlling_evidence": "With ordinary conjunction precedence it constrains only the first rule case, while the following prose says the first line ensures that the end-formula is a sentence for Correct(d) generally.",
+      "required_translation_handling": "Enclose the complete disjunction in brackets under the sentence test and add an adjacent OLTEART-010 disclosure."
+    },
+    {
+      "finding_id": "OLTEART-011",
+      "unit_id": "OLP-0287",
+      "classification": "confirmed_subderivation_tuple_index_error",
+      "source": {
+        "path": "content/incompleteness/arithmetization-syntax/proofs-in-nd.tex",
+        "bytes": 14091,
+        "sha256": "06044a4b70f61e07629055bfc3cfb7a940ce5ccfc09efe1a5473e9c5e3af3d47",
+        "locator": "lines 287-301, immediate-subderivation relation"
+      },
+      "finding": "Subderiv(d,d') searches tuple positions j below the arity (d')_0, thereby including position 0 and omitting the last immediate subderivation.",
+      "controlling_evidence": "The coding definition stores the arity in tuple position 0 and immediate subderivation codes in positions 1 through (d')_0.",
+      "required_translation_handling": "Compare d with tuple position j+1 for j below (d')_0 and add an adjacent OLTEART-011 disclosure."
+    },
+    {
+      "finding_id": "OLTEART-012",
+      "unit_id": "OLP-0288",
+      "classification": "confirmed_unbound_preceding_line_index_and_local_variable_typo",
+      "source": {
+        "path": "content/incompleteness/arithmetization-syntax/proofs-in-ax.tex",
+        "bytes": 9400,
+        "sha256": "6498fe743671727c99bee3ff39efb8e83bf46be470a8c2b613b62a8757c3e4eb",
+        "locator": "lines 110-140, QR_1 test"
+      },
+      "finding": "The displayed QR_1 definition uses (d)_j without quantifying j, despite requiring a preceding line j<i; the lead-in also says the code of a rather than c is bounded by line j.",
+      "controlling_evidence": "The enumerated condition explicitly introduces a line j<i containing B implies A(c), and c is the constant embedded in that line.",
+      "required_translation_handling": "Add a bounded existential j<i, describe c as bounded by line j, and add an adjacent OLTEART-012 disclosure."
+    },
+    {
+      "finding_id": "OLTEART-013",
+      "unit_id": "OLP-0288",
+      "classification": "confirmed_recursive_call_name_error",
+      "source": {
+        "path": "content/incompleteness/arithmetization-syntax/proofs-in-ax.tex",
+        "bytes": 9400,
+        "sha256": "6498fe743671727c99bee3ff39efb8e83bf46be470a8c2b613b62a8757c3e4eb",
+        "locator": "lines 195-204, primitive recursion defining hCond"
+      },
+      "finding": "The recursive clause for hCond calls Cond with three arguments even though Cond is subsequently defined with two arguments.",
+      "controlling_evidence": "Primitive recursion requires the preceding hCond(s,y,n) value; the base and final clauses establish hCond as the three-argument auxiliary and Cond as its two-argument wrapper.",
+      "required_translation_handling": "Call hCond(s,y,n) in the recursive clause and add an adjacent OLTEART-013 disclosure."
+    },
+    {
+      "finding_id": "OLTEART-014",
+      "unit_id": "OLP-0286",
+      "classification": "confirmed_missing_predicate_call_parenthesis",
+      "source": {
+        "path": "content/incompleteness/arithmetization-syntax/proofs-in-lk.tex",
+        "bytes": 11602,
+        "sha256": "841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b",
+        "locator": "lines 240-247, displayed definition of Deriv"
+      },
+      "finding": "The displayed bounded universal closes the tuple index but omits the right parenthesis that closes the Correct predicate call.",
+      "controlling_evidence": "Correct is unary throughout the section, and the intended matrix is Correct((SubtreeSeq(p))_i).",
+      "required_translation_handling": "Close the Correct predicate call before closing the bounded-quantifier body and add an adjacent OLTEART-014 disclosure."
+    }
+  ]
+}

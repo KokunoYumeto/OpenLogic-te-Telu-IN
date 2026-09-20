@@ -22,17 +22,19 @@ version was created for v0.4.0. Prior GitHub, GitHub Pages, and Zenodo
 publication verification is documented in [PUBLICATION.md](PUBLICATION.md);
 the v0.4.0 assets include their own manifest, checksums, and PDF QA receipt.
 
-Two hundred seventy-six full-unit editable TeX drafts form the contiguous
-OLP-0004--OLP-0279 range; the workflow cursor is 279/722. They cover the
+Two hundred eighty-five full-unit editable TeX drafts form the contiguous
+OLP-0004--OLP-0288 range; the workflow cursor is 288/722. They cover the
 Sets, Relations and Functions material, Propositional and First-Order Logic,
 Model Theory, Computability and Turing Machines, plus the complete introductory
-chapter of Incompleteness. All thirty-one batches have source-aligned
-structural and same-agent semantic review records.
+chapter of Incompleteness and the complete Arithmetization of Syntax chapter.
+All thirty-two batches have source-aligned structural and same-agent semantic
+review records.
 
-Format coverage is deliberately separate. The cumulative PDF contains all 276
-editable units in OLP-0004--OLP-0279. The semantic HTML and EPUB readers contain
-OLP-0004--OLP-0026 only: 23 units, the complete Sets, Relations and Functions
-chapters. Thus 253 current editable drafts are not yet in the HTML/EPUB reader.
+Format coverage is deliberately separate. The current cumulative PDF contains
+276 editable units in OLP-0004--OLP-0279. The semantic HTML and EPUB readers
+contain OLP-0004--OLP-0026 only: 23 units, the complete Sets, Relations and
+Functions chapters. Thus 262 current editable drafts are not yet in the
+HTML/EPUB reader, and the newest nine are not yet in the cumulative PDF.
 The public browser version is
 [OpenLogic తెలుగు — సమితులు, సంబంధాలు, ప్రమేయాలు](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sfr/).
 No editable-source cursor is presented as reader coverage, and this bounded
@@ -62,19 +64,19 @@ particular, the original zero-inclusive natural-number convention is kept.
 Original rights-restricted Telugu books and their page images are **not**
 redistributed here.
 
-The correction ledger records 238 confirmed source issues that are minimally
+The correction ledger records 252 confirmed source issues that are minimally
 repaired and disclosed beside the affected Telugu claims. The frozen English
 bytes remain unchanged. Each correction is bound to a bounded audit, an exact
 source hash, target locator and declared mathematical delta. See
 [SOURCE_CORRECTIONS.jsonl](evidence/SOURCE_CORRECTIONS.jsonl), the
 [source-audit directory](evidence/source-audits/), and the current
-[Incompleteness introduction audit](evidence/source-audits/2026-09-20-incompleteness-introduction-telugu/REVIEW.md).
+[Arithmetization of Syntax audit](evidence/source-audits/2026-09-20-arithmetization-syntax-telugu/REVIEW.md).
 
 The [canonical translation-decision index](evidence/START_HERE.md) exposes all
-70 current terminology/sense decisions and 238 corrections with exact
+71 current terminology/sense decisions and 252 corrections with exact
 source/target locators, aligned segment hashes, authorities actually checked,
 known evidence limits, alternatives, uncertainty, and concrete review
-questions. Its status is explicitly partial (279/722); optional expert review
+questions. Its status is explicitly partial (288/722); optional expert review
 creates no translation hold. The canonical views include a
 [full readable register](evidence/TRANSLATION_DECISIONS_FULL.md), a
 [priority view](evidence/PRIORITY_REVIEW.md), a
@@ -107,11 +109,11 @@ zero errors or warnings. The deployed reader passed desktop and 390-pixel
 visual, interaction, asset-loading and console checks; all 16 public files were
 then read back anonymously and matched the repository byte-for-byte.
 
-All 276 editable TeX drafts in OLP-0004--OLP-0279 pass correction-aware
+All 285 editable TeX drafts in OLP-0004--OLP-0288 pass correction-aware
 blank-block, environment, source-token, protected-identifier and
-mathematical-form checks. Thirty-one same-agent semantic reviews record
+mathematical-form checks. Thirty-two same-agent semantic reviews record
 source-aligned reverse paraphrases and their limits. The cumulative structural
-receipt is [CUMULATIVE-OLP0279-STRUCTURAL-QA.json](evidence/CUMULATIVE-OLP0279-STRUCTURAL-QA.json).
+receipt is [CUMULATIVE-OLP0288-STRUCTURAL-QA.json](evidence/CUMULATIVE-OLP0288-STRUCTURAL-QA.json).
 Beyond the explicit 23-unit HTML/EPUB boundary stated above, source QA does not
 imply HTML or EPUB reader integration.
 

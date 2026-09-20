@@ -1,0 +1,111 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: coding-symbols
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{cod}
+\olsection{సంకేతాల సంకేతీకరణ}
+
+మొదటి-స్థాయి తర్కశాస్త్రపు ప్రాథమిక భాష~$\Lang L$ ఈ సంకేతాలను వాడుతుంది:
+\[
+\lfalse \quad \lnot \quad \lor \quad \land \quad \lif \quad \lforall
+\quad \lexists \quad \eq \quad ( \quad ) \quad ,
+\]
+వీటితో పాటు \tetoken{లెక్కించదగిన}{!!{enumerable}} చరాలూ
+\tetoken{స్థిరసంకేతాల}{!!{constant}s} సమితులూ, ఏ స్థానసంఖ్యకైనా చెందిన
+\tetoken{ప్రమేయ సంకేతాల}{!!{function}s}, \tetoken{విధేయ సంకేతాల}{!!{predicate}s}
+\tetoken{లెక్కించదగిన}{!!{enumerable}} సమితులూ ఉంటాయి. ప్రతి సంకేతానికీ దాని
+సంకేతసంఖ్యగా ఒక అద్వితీయ సంఖ్య వచ్చేలా, వేర్వేరు ఏ రెండు సంకేతాలకూ ఒకే
+సంఖ్య రాకుండా, వాటికి \emph{సంకేతసంఖ్యలు} కేటాయించవచ్చు. అన్ని సంకేతాల
+సమితి \tetoken{లెక్కించదగినది}{!!{enumerable}} కనుక దానికీ సహజ సంఖ్యల
+సమితికీ మధ్య \tetoken{ఒక ద్విగుణ ప్రమేయం}{!!a{bijection}} ఉంటుంది; అందువల్ల
+ఇది సాధ్యమని మనకు తెలుసు. కానీ ఒక సంకేతాన్ని (అలాగే దాని గురించి కొంత
+సమాచారాన్ని, ఉదాహరణకు \tetoken{ఒక ప్రమేయ సంకేతం}{!!a{function}} యొక్క
+స్థానసంఖ్యను) దాని సంకేతసంఖ్య నుంచి గణనీయ విధంగా తిరిగి పొందగలమని కూడా
+నిర్ధారించుకోవాలి. దీనికి అనేక మార్గాలు ఉండవచ్చు. ఆదిమ పునరావృత్త ప్రమేయాలను
+వాడే ఒక మార్గం ఇదిగో. ($\tuple{n_0, \dots, n_k}$ అనేది $n_0$, \dots,
+$n_k$ సంఖ్యల క్రమాన్ని సంకేతీకరించే సంఖ్య అని గుర్తుంచుకోండి.)
+
+\begin{defn}
+$s$ అనేది~$\Lang L$ యొక్క ఒక సంకేతం అయితే, దాని \emph{సంకేతసంఖ్య}~$\scode s$ను
+ఇలా నిర్వచిద్దాం:
+\begin{enumerate}
+\item $s$ తార్కిక సంకేతాలలో ఒకటైతే, కింది పట్టిక $\scode s$ను ఇస్తుంది:
+\[
+\begin{array}{cccccccccc}
+  \lfalse & \lnot & \lor & \land & \lif & \lforall \\
+\tuple{0, 0} & \tuple{0, 1} & \tuple{0, 2} & \tuple{0, 3} &
+\tuple{0, 4} & \tuple{0, 5} \\
+\lexists & \eq & ( & ) & ,\\
+\tuple{0, 6} & \tuple{0, 7} &
+\tuple{0, 8} & \tuple{0, 9} & \tuple{0, 10}
+\end{array}
+\]
+\item $s$ అనేది $i$-వ చరం~$\Obj v_i$ అయితే, $\scode s = \tuple{1, i}$.
+\item $s$ అనేది $i$-వ \tetoken{స్థిరసంకేతం}{!!{constant}}~$\Obj c_i$ అయితే,
+  $\scode s = \tuple{2, i}$.
+\item $s$ అనేది $i$-వ $n$-స్థానిక \tetoken{ప్రమేయ సంకేతం}{!!{function}}
+  ~$\Obj f_i^n$ అయితే, $\scode s = \tuple{3, n, i}$.
+\item $s$ అనేది $i$-వ $n$-స్థానిక \tetoken{విధేయ సంకేతం}{!!{predicate}}
+  ~$\Obj P_i^n$ అయితే, $\scode s = \tuple{4, n, i}$.
+\end{enumerate}
+\end{defn}
+
+\begin{prop}
+కింది సంబంధాలు ఆదిమ పునరావృత్తాలు:
+\begin{enumerate}
+\item ఏదో~$i$కు $x$ అనేది~$\Obj f^n_i$ సంకేతసంఖ్య అయితేనే
+  $\fn{Fn}(x, n)$; అంటే, $x$ ఒక $n$-స్థానిక
+  \tetoken{ప్రమేయ సంకేతపు}{!!{function}} సంకేతసంఖ్య.
+\item ఏదో~$i$కు $x$ అనేది~$\Obj P^n_i$ సంకేతసంఖ్య అయితే లేదా $x$ అనేది
+  $\eq$ సంకేతసంఖ్య అయి $n = 2$ అయితేనే $\fn{Pred}(x, n)$; అంటే, $x$ ఒక
+  $n$-స్థానిక \tetoken{విధేయ సంకేతపు}{!!{predicate}} సంకేతసంఖ్య.
+\end{enumerate}
+\end{prop}
+
+\begin{defn}
+$s_0, \dots, s_{n-1}$ ఒక సంకేతాల క్రమమైతే, దాని \emph{గ్యోడెల్ సంఖ్య}
+$\tuple{\scode{s_0}, \dots, \scode{s_{n-1}}}$.
+\end{defn}
+
+\begin{explain}
+\emph{సంకేతసంఖ్యలు}, \emph{గ్యోడెల్ సంఖ్యలు} వేర్వేరు విషయాలని గమనించండి.
+ఉదాహరణకు, చరం~$\Obj v_5$కు $\scode{\Obj v_5} = \tuple{1, 5} =
+2^2\cdot 3^6$ అనే సంకేతసంఖ్య ఉంది. కానీ పదంగా పరిగణించిన చరం~$\Obj v_5$
+కూడా (పొడవు~$1$ గల) సంకేతాల క్రమమే. \emph{పదం}~$\Obj v_5$ యొక్క
+\emph{గ్యోడెల్ సంఖ్య}~$\Gn{\Obj v_5}$ అనేది $\tuple{\scode{\Obj v_5}} =
+2^{\scode{\Obj v_5} + 1} = 2^{2^2\cdot 3^6 + 1}$.
+\end{explain}
+
+\begin{ex}
+$k_0$, \dots, $k_{n-1}$ ఒక సంఖ్యల క్రమమైతే, ప్రధాన-సంఖ్యా ఘాత
+సంకేతీకరణలో ఆ క్రమపు సంకేతసంఖ్య $\tuple{k_0, \dots, k_{n-1}}$ ఇదని
+గుర్తుంచుకోండి:
+\[
+2^{k_0+1}\cdot3^{k_1+1}\cdot \dots \cdot p_{n-1}^{k_{n-1}+1},
+\]
+ఇక్కడ $p_i$ అనేది $i$-వ ప్రధాన సంఖ్య ($p_0 = 2$తో మొదలవుతుంది). కాబట్టి,
+ఉదాహరణకు, సూత్రం $\eq[\Obj v_0][\Obj 0]$, లేదా మరింత స్పష్టంగా
+${\eq}(\Obj v_0,\Obj c_0)$, ఈ గ్యోడెల్ సంఖ్యను కలిగి ఉంటుంది:
+\[
+\tuple{\scode{\eq},\scode{(},\scode{\Obj v_0},\scode{,}, \scode{\Obj
+    c_0},\scode{)}}.
+\]
+ఇక్కడ $\scode{\eq}$ అనేది $\tuple{0,7} = 2^{0+1}\cdot
+3^{7+1}$, $\scode{\Obj v_0}$ అనేది $\tuple{1,0} = 2^{1+1}\cdot3^{0+1}$,
+మొదలైనవి. అందువల్ల $\Gn{=(\Obj v_0,\Obj c_0)}$ ఇది:
+\begin{multline*}
+2^{\scode{=} + 1}\cdot 3^{\scode{(}+1}\cdot 5^{\scode{\Obj v_0}+1}
+\cdot 7^{\scode{,} + 1} \cdot 11^{\scode{\Obj c_0}+1} \cdot
+13^{\scode{)}+1} = \\
+2^{2^1\cdot 3^8 + 1}\cdot 3^{2^1\cdot 3^9+1}\cdot 5^{2^2\cdot 3^1+1}
+\cdot 7^{2^1\cdot 3^{11} + 1} \cdot 11^{2^3\cdot3^1+1} \cdot
+13^{2^1\cdot3^{10}+1} = \\
+2^{13\,123}\cdot 3^{39\,367}\cdot 5^{13}\cdot 7^{354\,295}\cdot11^{25}\cdot13^{118\,099}.
+\end{multline*}
+\end{ex}
+
+\end{document}

@@ -13,12 +13,16 @@ not an independent certification. Full source reading found twelve local
 defects. Five are prose or spelling defects; seven affect a variable, pair order,
 function type, reduction direction, definedness condition or partiality scope.
 The Telugu target uses the intended mathematics, discloses every repair next
-to its passage, and leaves all upstream bytes unchanged.
+to its passage, and leaves all upstream bytes unchanged. A later bounded
+review refined OLTECOMTHY-015: only the proof's final direction is insufficient.
+The source exercise $K\leq_m K_0$ is valid and is retained; a separately
+labelled added exercise asks for the reverse reduction needed by the proof.
 
 The most consequential repairs preserve the proof invariants: `d` remains the
 index whose domain is `A`; `K_0` keeps program index `e` before input `x`; a
 many-one reduction remains a total map from natural-number codes to
-natural-number codes; completeness of `K` is obtained from `K_0 <=_m K`; the
+natural-number codes; completeness of `K` is obtained from `K_0 <=_m K`, while
+the valid source exercise `K <=_m K_0` remains present; the
 fourth Rice-theorem example compares two defined values; and the fixed-point
 application starts with arbitrary partial computable `f`, as its theorem
 requires.
@@ -29,7 +33,8 @@ displayed equations, the lambda-calculus tag block and protected identifiers.
 The bounded structural pass has equal block counts for all 160 source/target
 blocks, with environment, original text-token and protected-identifier parity.
 The only mathematical-form differences are the disclosed index, pair-order and
-function-type repairs.
+function-type repairs and the disclosed, target-only added exercise completing
+the corrected `K`-completeness proof.
 
 Native Telugu pages were visually rechecked for natural-number, set-operation,
 function, relation, composition, theorem and proof register. Those witnesses do

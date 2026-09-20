@@ -1,6 +1,6 @@
 {
   "schema": "telugu-openlogic-batch-qa/1",
-  "generated_utc": "2026-09-19T19:03:02.982Z",
+  "generated_utc": "2026-09-19T23:46:32.503Z",
   "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Text/intertext/mbox prose is masked; nested inline math is compared per clause independently of language-specific word order.",
   "units": [
     {
@@ -1213,7 +1213,7 @@
       "unit_id": "OLP-0245",
       "source_path": "content/computability/computability-theory/complete-ce-sets.tex",
       "source_sha256": "8df21b8f708dbf50a1929c42788669af2c7e6b5ab1841eab1c4c328dc9e62030",
-      "translation_sha256": "b71e66083949f34e80c84fe1484e0e15060d5faf426cdd4ad255e3ac4ce5c15d",
+      "translation_sha256": "6886561a0269e49868aacb0ac997f9354b7a94aacaea49327fd5975c23e803cc",
       "source_blocks": 13,
       "target_blocks": 13,
       "paragraph_alignment": true,
@@ -1287,18 +1287,23 @@
         "$K_1$",
         "$K_0$",
         "$K$",
+        "$K$",
+        "$K_0$",
         "$K_0$",
         "$K$"
       ],
-      "math_exact_multiset_match": true,
+      "math_exact_multiset_match": false,
       "math_delta_source_only": [],
-      "math_delta_target_only": [],
+      "math_delta_target_only": [
+        "$K$",
+        "$K_0$"
+      ],
       "declared_source_correction_ids": [
         "OLTECOMTHY-015"
       ],
       "math_declared_source_correction_match": true,
       "math_multiset_match": true,
-      "telugu_chars": 1136,
+      "telugu_chars": 1307,
       "unicode_replacement_char": false,
       "unpaired_surrogate": false,
       "blocks": [
@@ -1355,7 +1360,7 @@
         {
           "index": 11,
           "source_start": "\\begin{prob}\nGive a reduction of $K$ to $K_0$.\n\\end{prob}",
-          "target_start": "\\begin{prob}\n$K_0$ను $K$కు తగ్గించే ప్రమేయాన్ని ఇవ్వండి.\n\\end{prob}"
+          "target_start": "\\begin{prob}\n$K$ను $K_0$కు తగ్గించే ప్రమేయాన్ని ఇవ్వండి.\n\\textbf{అదనపు అభ్యాసం (సరిచేసిన నిరూపణను పూర్తిచేసేది"
         },
         {
           "index": 12,

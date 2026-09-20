@@ -1,0 +1,101 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: coding-formulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{frm}
+\olsection{\printtoken{P}{formula} సంకేతీకరణ}
+
+$\fn{Term}(x)$ సంబంధాన్ని ఆదిమ పునరావృత్తంగా నిర్వచించిన తరువాత, దాన్ని
+ఉపయోగించి \tetoken{సూత్రాల}{!!{formula}s} కోసం అనురూపమైన $\fn{Frm}(x)$
+సంబంధాన్ని ఆదిమ పునరావృత్తంగా నిర్వచించవచ్చు.
+
+\begin{prop}
+$x$ ఒక పరమాణు \tetoken{సూత్రానికి}{!!{formula}} గ్యోడెల్ సంఖ్య అయితేనే
+నిలిచే $\fn{Atom}(x)$ సంబంధం ఆదిమ పునరావృత్తం.
+\end{prop}
+
+\begin{proof}
+క్రింది వాటిలో ఒకటి నిలిచినప్పుడే $x$ ఒక పరమాణు
+\tetoken{సూత్రానికి}{!!{formula}} గ్యోడెల్ సంఖ్య:
+\begin{enumerate}
+\item $n$, $j<x$, $z<x$ ఉన్నాయి; ప్రతి $i<n$కి $\fn{Term}((z)_i)$, ఇంకా
+  $x=$
+\[
+\Gn{\Obj P^n_j(} \concat \fn{flatten}(z) \concat \Gn{)}.
+\]
+\item $z_1,z_2<x$ ఉన్నాయి; $\fn{Term}(z_1)$, $\fn{Term}(z_2)$, ఇంకా
+  $x=$
+\[
+\Gn{{\eq}(} \concat z_1 \concat \Gn{,} \concat z_2 \concat{\Gn{)}}.
+\]
+  \tagitem{prvFalse}{$x = \Gn{\lfalse}$.}{}
+  \tagitem{prvTrue}{$x = \Gn{\ltrue}$.}{}
+\end{enumerate}
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:frm-primrec}
+$x$ ఒక \tetoken{సూత్రానికి}{!!a{formula}} గ్యోడెల్ సంఖ్య అయితేనే నిలిచే
+$\fn{Frm}(x)$ సంబంధం ఆదిమ పునరావృత్తం.
+\end{prop}
+
+\begin{proof}
+సంకేతాల క్రమం~$s$ ఒక \tetoken{సూత్రం}{!!a{formula}} కావడానికి అవసరమైనదీ,
+సరిపడేదీ ఏమిటంటే, పరమాణు \tetoken{సూత్రాల}{!!{formula}s} నుంచి నిర్మాణ
+నియమాల ప్రకారం $s$ ఎలా ఏర్పడిందో నమోదు చేసే $s_0$, \dots,
+$s_{k-1}=s$ అనే \tetoken{సూత్రాల}{!!{formula}} నిర్మాణ క్రమం ఉండటం.
+ఈ సూత్రం~$s$కు సంకేతసంఖ్య~$x$ అనుకుందాం. ప్రతి $s_i$ యొక్క సంకేతసంఖ్య
+$\leq x$; అంతేకాక $k\leq\len{x}$. నిర్మాణ క్రమం
+$\tuple{s_0,\dots,s_{k-1}}$.
+అందువల్ల, పదాల సందర్భంలోని వాదనలాగే, అటువంటి నిర్మాణ క్రమపు సంకేతసంఖ్యను
+$p_{k-1}^{k(x+1)}$తో పరిమితం చేసి, ఈ సంబంధాన్ని పరిమిత పరిమాణీకరణతో
+ఆదిమ పునరావృత్తంగా నిర్వచించవచ్చు.
+\sourcecorrection{OLTEART-003}{ఆంగ్ల మూలం నిర్మాణ క్రమం మొత్తపు సంకేతసంఖ్య కూడా $s$ యొక్క సంకేతసంఖ్య~$x$కంటే తక్కువని చెబుతుంది; ఇక్కడ ఉపయోగించిన ప్రధాన-సంఖ్యా ఘాత క్రమ సంకేతీకరణలో అది సాధారణంగా నిజం కాదు. పదాల నిరూపణలో ఇచ్చిన సరైన పరిమితి వాదనను ఇక్కడ అనుసరించాం.}
+\end{proof}
+
+\begin{prob}
+\olref[inc][art][frm]{prop:frm-primrec}కు,
+\olref[inc][art][trm]{prop:term-primrec} మొదటి నిరూపణ పద్ధతిలోనే సవివర
+నిరూపణ ఇవ్వండి.
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:freeocc-primrec}
+గ్యోడెల్ సంఖ్య~$x$ గల సూత్రంలోని $i$-వ సంకేతం, గ్యోడెల్ సంఖ్య~$z$ గల
+చరానికి స్వేచ్ఛా ఘటన అయితేనే నిలిచే
+$\fn{FreeOcc}(x,z,i)$ సంబంధం ఆదిమ పునరావృత్తం.
+\end{prop}
+
+\begin{proof}
+అభ్యాసం.
+\end{proof}
+
+\begin{prob}
+\olref[inc][art][frm]{prop:freeocc-primrec}ను నిరూపించండి. ఒక
+\tetoken{సూత్రం}{!!a{formula}}లోని ఏ ఉపతంత్రి కూడా
+\tetoken{ఒక సూత్రమైతే}{!!a{formula}}, అది ఆ సూత్రానికి
+ఉప-\tetoken{సూత్రం}{!!{formula}} అవుతుందనే
+వాస్తవాన్ని ఉపయోగించవచ్చు.
+\end{prob}
+
+\begin{prop}
+$x$ ఒక \tetoken{వాక్యానికి}{!!a{sentence}} గ్యోడెల్ సంఖ్య అయితేనే నిలిచే
+$\fn{Sent}(x)$ ధర్మం ఆదిమ పునరావృత్తం.
+\end{prop}
+
+\begin{proof}
+\tetoken{వాక్యం}{!!{sentence}} అంటే \tetoken{చరాల}{!!{variable}s}
+స్వేచ్ఛా ఘటనలు లేని \tetoken{సూత్రం}{!!a{formula}}. కాబట్టి
+$\fn{Sent}(x)$ నిలవడానికి అవసరమైనదీ, సరిపడేదీ
+\begin{multline*}
+\bforall{i<\len{x}}{\bforall{z<x}{}}\\
+(\bexists{j<z}{z=\Gn{\Obj v_j}} \lif \lnot\fn{FreeOcc}(x,z,i)).
+\end{multline*}
+\end{proof}
+
+
+\end{document}

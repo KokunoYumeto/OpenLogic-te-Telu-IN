@@ -1,0 +1,55 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: substitution
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{sub}
+\olsection{ప్రతిస్థాపన}
+
+\tetoken{ఒక సూత్రం}{!!a{formula}}~$!A$లోని
+\tetoken{ఒక చరం}{!!a{variable}}~$u$ యొక్క స్వేచ్ఛా ఘటనలన్నిటినీ పదం~$t$తో
+మార్చే క్రియను ప్రతిస్థాపన అంటామని గుర్తుచేసుకోండి; దాన్ని
+$\Subst{!A}{t}{u}$ అని రాస్తాం. \tetoken{చరాలు}{!!{variable}s},
+\tetoken{సూత్రాలు}{!!{formula}s}, పదాల గ్యోడెల్ సంఖ్యలపై నిర్వహించినప్పుడు
+ఈ క్రియ ఆదిమ పునరావృత్తం.
+
+\begin{prop}\ollabel{prop:subst-primrec}
+క్రింది ధర్మం గల ఆదిమ పునరావృత్త ప్రమేయం $\fn{Subst}(x,y,z)$ ఉంది:
+\[
+\fn{Subst}(\Gn{!A}, \Gn{t}, \Gn{u}) = \Gn{\Subst{!A}{t}{u}}.
+\]
+\end{prop}
+
+\begin{proof}
+ఆదిమ పునరావృత్తం ద్వారా $\fn{hSubst}$ ప్రమేయాన్ని ఇలా నిర్వచించవచ్చు:
+\begin{multline*}
+\begin{aligned}
+\fn{hSubst}(x, y, z, 0) & = \emptyseq \\
+\fn{hSubst}(x, y, z, i+1) & =
+\end{aligned}\\
+\begin{cases}
+\fn{hSubst}(x, y, z, i) \concat y & \text{$\fn{FreeOcc}(x,z,i)$ అయితే} \\
+\fn{append}(\fn{hSubst}(x, y, z, i), (x)_{i}) & \text{లేకపోతే.}
+\end{cases}
+\end{multline*}
+ఇప్పుడు $\fn{Subst}(x,y,z)$ను $\fn{hSubst}(x,y,z,\len{x})$గా
+నిర్వచించవచ్చు.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:free-for}
+గ్యోడెల్ సంఖ్య~$x$ గల సూత్రంలో, గ్యోడెల్ సంఖ్య~$z$ గల చరానికి గ్యోడెల్
+సంఖ్య~$y$ గల పదం \tetoken{ప్రతిస్థాపనకు స్వేచ్ఛగా}{!!{free for}}
+ఉంటేనే నిలిచే $\fn{FreeFor}(x,y,z)$ సంబంధం ఆదిమ పునరావృత్తం.
+\end{prop}
+
+\begin{proof} అభ్యాసం. \end{proof}
+
+\begin{prob}
+\olref[inc][art][sub]{prop:free-for}ను నిరూపించండి.
+\end{prob}
+
+\end{document}

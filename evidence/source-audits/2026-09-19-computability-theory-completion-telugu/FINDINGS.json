@@ -137,16 +137,16 @@
     {
       "finding_id": "OLTECOMTHY-015",
       "unit_id": "OLP-0245",
-      "classification": "confirmed_completeness_reduction_direction_reversal",
+      "classification": "confirmed_completeness_proof_direction_insufficient_exercise_valid",
       "source": {
         "path": "content/computability/computability-theory/complete-ce-sets.tex",
         "bytes": 1864,
         "sha256": "8df21b8f708dbf50a1929c42788669af2c7e6b5ab1841eab1c4c328dc9e62030",
-        "locator": "lines 39-48, completeness proof for K and following exercise"
+        "locator": "lines 44-49, completeness proof for K and following exercise"
       },
-      "finding": "To prove K complete the source says K reduces to K_0, and the exercise asks for that already established direction; completeness instead requires K_0 to reduce to K.",
-      "controlling_evidence": "K_0 was just proved complete, so transitivity transfers completeness to K only from K_0 <=_m K. The s-m-n construction used for K_1 also supplies this direction.",
-      "required_translation_handling": "Reverse both statements to K_0 <=_m K and add an adjacent OLTECOMTHY-015 disclosure."
+      "finding": "To prove K complete the proof says only that K reduces to K_0, an already established direction that is insufficient for the claimed conclusion. The following exercise asking for K to reduce to K_0 is nevertheless a valid standalone exercise, witnessed directly by x mapping to <x,x>.",
+      "controlling_evidence": "K_0 was just proved complete, so transitivity transfers completeness to K only from K_0 <=_m K. The s-m-n construction supplies this required direction. Independently, x is in K exactly when <x,x> is in K_0, so the source exercise K <=_m K_0 must not be classified as erroneous.",
+      "required_translation_handling": "Use K_0 <=_m K in the proof, retain the original K <=_m K_0 exercise, add a separately labelled target exercise for K_0 <=_m K to complete the repaired proof, and disclose the distinction adjacent to OLTECOMTHY-015."
     },
     {
       "finding_id": "OLTECOMTHY-016",

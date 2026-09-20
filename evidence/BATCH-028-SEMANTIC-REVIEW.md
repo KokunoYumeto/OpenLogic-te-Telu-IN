@@ -61,8 +61,11 @@ unmapped keys, and mapping SHA-256
 - **OLP-0245 — complete computably enumerable sets.** A complete c.e. set is
   itself c.e. and receives a many-one reduction from every c.e. set. `K_0`,
   `K_1` and `K` are complete; for the last claim the required direction is
-  `K_0 \leq_m K`. The closing historical note preserves the existence of
-  intermediate c.e. sets established independently by Friedberg and Muchnik.
+  `K_0 \leq_m K`. The original exercise `K \leq_m K_0` is independently
+  valid and remains present; a separately labelled added exercise asks for
+  the reverse direction that completes the repaired proof. The closing
+  historical note preserves the existence of intermediate c.e. sets
+  established independently by Friedberg and Muchnik.
 - **OLP-0246 — the `K_1` example.** `K_1` contains indices halting on input
   zero and is c.e. but non-computable. The oracle explanation and formal
   s-m-n construction both transform a question about an arbitrary pair in
@@ -131,8 +134,9 @@ OLTECOMTHY-007--OLTECOMTHY-018. They repair two local prose errors in the
 closure proof; restore the `d`/`e` index assignments in the complement proof
 and explanation; remove a duplicated word and correct a typo in the
 reducibility introduction; restore the ordered pair `\tuple{e,x}`; repair a
-transitivity sentence; type a reduction as `\Nat\to\Nat`; reverse the
-mistaken completeness reduction to `K_0 \leq_m K`; repair a procedural typo;
+transitivity sentence; type a reduction as `\Nat\to\Nat`; replace the
+insufficient final proof direction by `K_0 \leq_m K` while retaining the valid
+source exercise in the other direction; repair a procedural typo;
 make the strict-increase condition require both values to be defined; and
 extend the final fixed-point application from total computable `f` to the
 partial computable scope stated by its theorem. Every repair has an adjacent

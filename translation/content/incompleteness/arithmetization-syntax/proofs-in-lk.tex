@@ -1,0 +1,292 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: proofs-in-lk
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{plk}
+\olsection{$\Log{LK}$లో \usetoken{P}{derivation}}
+
+\begin{explain}
+\tetoken{వ్యుత్పత్తులను}{!!{derivation}s} అంకగణితీకరించాలంటే,
+\tetoken{వ్యుత్పత్తులను}{!!{derivation}s} సంఖ్యలుగా ప్రాతినిధ్యం చేయాలి.
+\tetoken{వ్యుత్పత్తులు}{!!{derivation}s}
+సీక్వెంట్ల వృక్షాలు, ప్రతి నిగమనానికీ ఒక గుర్తింపు చీటీ కూడా ఉంటుంది కనుక,
+పునరావృత్త ప్రాతినిధ్యమే అత్యంత సహజమైన పద్ధతి. ఒక
+\tetoken{వ్యుత్పత్తిని}{!!{derivation}} అంత్య-సీక్వెంట్, గుర్తింపు చీటీ,
+చివరి నిగమనపు పూర్వాధారాలకు దారితీసే ఉప-\tetoken{వ్యుత్పత్తుల}{!!{derivation}s}
+ప్రాతినిధ్యాలు అనే భాగాలు గల క్రమిత సమూహంగా ప్రాతినిధ్యం చేస్తాం.
+\end{explain}
+
+\begin{defn}
+$\Gamma$ అనేది \tetoken{వాక్యాల}{!!{sentence}s} పరిమిత క్రమం,
+$\Gamma=\tuple{!A_1,\dots,!A_n}$ అయితే,
+$\Gn{\Gamma}=\tuple{\Gn{!A_1},\dots,\Gn{!A_n}}$.
+
+$\Gamma\Sequent\Delta$ ఒక సీక్వెంట్ అయితే, $\Gamma\Sequent\Delta$ యొక్క
+గ్యోడెల్ సంఖ్య
+\[
+\Gn{\Gamma \Sequent \Delta}=\tuple{\Gn{\Gamma},\Gn{\Delta}}
+\]
+
+$\pi$ అనేది $\Log{LK}$లో \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} అయితే,
+$\Gn{\pi}$ను ఇలా నిర్వచిస్తాం:
+\begin{enumerate}
+\item $\pi$లో ప్రారంభ సీక్వెంట్ $\Gamma\Sequent\Delta$ మాత్రమే ఉంటే,
+  $\Gn{\pi}$ అనేది
+  \[
+    \tuple{0,\Gn{\Gamma\Sequent\Delta}}.
+  \]
+\item $\pi$ ఒకటి లేదా రెండు పూర్వాధారాలు గల నిగమనంతో ముగిసి,
+  $\Gamma\Sequent\Delta$ దాని నిష్కర్షగా ఉంటే, $\pi_1$, $\pi_2$లు చివరి
+  నిగమనపు పూర్వాధారాల వద్ద ముగిసే తక్షణ ఉపనిరూపణలు అయితే, వరుసగా
+  $\Gn{\pi}$ అనేది
+  \begin{align*}
+    & \tuple{1,\Gn{\pi_1},\Gn{\Gamma\Sequent\Delta},k}\text{ లేదా}\\
+    & \tuple{2,\Gn{\pi_1},\Gn{\pi_2},\Gn{\Gamma\Sequent\Delta},k},
+  \end{align*}
+  చివరి నిగమనంలో వాడిన నియమాన్ని బట్టి $k$ను ఈ పట్టిక ఇస్తుంది:
+
+  \begin{tabular}{lccccccc}
+    \text{నియమం:} & \LeftR{\Weakening} & \RightR{\Weakening} &
+    \LeftR{\Contraction} & \RightR{\Contraction} &
+    \LeftR{\Exchange} & \RightR{\Exchange} \\
+    $k$: & 1 & 2 & 3 & 4 & 5 & 6 \\[2ex]
+    \text{నియమం:} & \LeftR{\lnot} & \RightR{\lnot} &
+    \LeftR{\land} & \RightR{\land} &
+    \LeftR{\lor} & \RightR{\lor} \\
+    $k$: & 7 & 8 & 9 & 10 & 11 & 12 \\[2ex]
+    \text{నియమం:} & \LeftR{\lif} & \RightR{\lif} &
+    \LeftR{\lforall} & \RightR{\lforall} &
+    \LeftR{\lexists} & \RightR{\lexists} \\
+    $k$: & 13 & 14 & 15 & 16 & 17 & 18 \\[2ex]
+    \text{నియమం:} & \Cut & = \\
+    $k$: & 19 & 20
+  \end{tabular}
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+  ఈ అతి సరళమైన \tetoken{వ్యుత్పత్తిని}{!!{derivation}} పరిగణించండి:
+  \begin{prooftree}
+    \Axiom$!A \fCenter !A$
+    \RightLabel{\LeftR{\land}}
+    \UnaryInf$!A \land !B \fCenter !A$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\fCenter (!A \land !B) \lif !A$
+  \end{prooftree}
+  ప్రారంభ సీక్వెంట్ గ్యోడెల్ సంఖ్య
+  $p_0=\tuple{0,\Gn{!A\Sequent !A}}$ అవుతుంది. $\LeftR{\land}$ నిష్కర్షతో
+  ముగిసే \tetoken{వ్యుత్పత్తి}{!!{derivation}} గ్యోడెల్ సంఖ్య
+  $p_1=\tuple{1,p_0,\Gn{!A\land !B\Sequent !A},9}$ అవుతుంది
+  ($\LeftR{\land}$కు ఒక పూర్వాధారం ఉంది కనుక $1$; నిష్కర్ష
+  $!A\land !B\Sequent !A$ యొక్క గ్యోడెల్ సంఖ్య; $\LeftR{\land}$ను
+  సంకేతీకరించే సంఖ్య $9$). అప్పుడు మొత్తం
+  \tetoken{వ్యుత్పత్తి}{!!{derivation}} గ్యోడెల్ సంఖ్య
+  $\tuple{1,p_1,\Gn{\Sequent(!A\land !B)\lif !A},14}$, అంటే
+  \[
+  \tuple{1,\tuple{1,\tuple{0,\Gn{!A\Sequent !A}},\Gn{!A\land !B\Sequent !A},9},
+    \Gn{\Sequent(!A\land !B)\lif !A},14}.
+  \]
+  \sourcecorrection{OLTEART-004}{ఆంగ్ల మూలంలోని సంక్షిప్త గ్యోడెల్ సంకేతంలో $\Gn{\Sequent(!A\land !B)\lif !A)}$ వద్ద, విస్తరించిన క్రమిత సమూహంలో $\Gn{!A\Sequent !A)}$ వద్ద అదనపు కుడి కుండలీకరణ గుర్తులు ఉన్నాయి. పక్కనే ఇచ్చిన నిరూపణ నిష్కర్షకు, ముందే నిర్వచించిన $p_0$కు అనుగుణంగా వాటిని తొలగించాం.}
+\end{ex}
+
+\begin{explain}
+\tetoken{వ్యుత్పత్తుల}{!!{derivation}s} ప్రాతినిధ్యాన్ని నిర్ణయించిన తరువాత,
+అటువంటి \tetoken{వ్యుత్పత్తులను}{!!{derivation}s} ఆదిమ పునరావృత్తంగా
+మార్చగలమనీ, వాటి ముఖ్య ధర్మాలు, సంబంధాలను అలాగే వ్యక్తీకరించగలమనీ చూపాలి.
+కొన్ని క్రియలు సరళమైనవి: ఉదాహరణకు,
+\tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} గ్యోడెల్ సంఖ్య~$p$ ఇస్తే,
+$\fn{EndSequent}(p)=(p)_{(p)_0+1}$ దాని అంత్య-సీక్వెంట్ గ్యోడెల్ సంఖ్యను,
+$\fn{LastRule}(p)=(p)_{(p)_0+2}$ దాని చివరి నియమపు సంకేతసంఖ్యను ఇస్తాయి.
+\sourcecorrection{OLTEART-005}{ఆంగ్ల మూలం ఇక్కడ ప్రమేయాన్ని $\fn{EndSeq}$గా నిర్వచించి, మిగతా విభాగమంతా $\fn{EndSequent}$గా ఉపయోగిస్తుంది. ఒకే ప్రమేయం కోసం తరువాత స్థిరంగా వాడిన $\fn{EndSequent}$ పేరును ఇక్కడ కూడా ఇచ్చాం.}
+$\fn{Sequent}(s)$ ధర్మాన్ని
+\[
+  \len{s}=2\land\bforall{i<\len{(s)_0}+\len{(s)_1}}{\fn{Sent}(((s)_0\concat(s)_1)_i)}
+\]
+అని నిర్వచిస్తే, \tetoken{వాక్యాలతో}{!!{sentence}s} కూడిన సీక్వెంట్‌కు
+$s$కు అది నిలవడానికి అవసరమైనదీ, సరిపడేదీ $s$ గ్యోడెల్ సంఖ్య కావడం.
+కొన్ని క్రియలు మరింత కష్టం.
+వాటిని ఎలా చేయాలో కనీసం రూపురేఖలుగా చూద్దాం. ``$\pi$ అనేది $\Gamma$ నుంచి
+$!A$ యొక్క \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}}'' అనే సంబంధం
+$\pi$, $!A$ల గ్యోడెల్ సంఖ్యల ఆదిమ పునరావృత్త సంబంధమని చూపడమే లక్ష్యం.
+\end{explain}
+
+\begin{prop}\ollabel{prop:followsby}
+  గ్యోడెల్ సంఖ్య~$p$ గల \tetoken{వ్యుత్పత్తి}{!!{derivation}}~$\pi$లోని
+  చివరి నిగమనం సరైనదైతేనే నిలిచే $\fn{Correct}(p)$ ధర్మం ఆదిమ పునరావృత్తం.
+\end{prop}
+
+\begin{proof}
+  $\Gamma\Sequent\Delta$ ప్రారంభ సీక్వెంట్ కావడానికి అవసరమైనదీ,
+  సరిపడేదీ: ఏదో \tetoken{ఒక వాక్యం}{!!a{sentence}}~$!A$ ఉండి
+  $\Gamma\Sequent\Delta$ అనేది $!A\Sequent !A$ కావడం, లేదా ఏదో పదం~$t$
+  ఉండి $\Gamma\Sequent\Delta$ అనేది $\emptyset\Sequent\eq[t][t]$ కావడం.
+  గ్యోడెల్ సంఖ్యల పరంగా,
+  క్రింది షరతు నెరవేరినప్పుడే $\fn{InitSeq}(s)$ నిలుస్తుంది:
+  \begin{align*}
+  \bexists{x<s}{}(\fn{Sent}(x)&\land
+  s=\tuple{\tuple{x},\tuple{x}})
+  \lor{}\\
+  \bexists{t<s}{}(\fn{Term}(t)&\land
+  s=\tuple{0,\tuple{\Gn{{\eq}(}\concat t\concat\Gn{,}\concat t\concat\Gn{)}}}).
+  \end{align*}
+
+  ప్రతి నిగమన నియమం~$R$కి $\fn{FollowsBy}_R(p)$ సంబంధం ఆదిమ పునరావృత్తమని
+  కూడా చూపాలి. $p$ అనేది \tetoken{వ్యుత్పత్తి}{!!{derivation}}~$\pi$కి
+  గ్యోడెల్ సంఖ్యగా ఉండి, $\pi$ యొక్క అంత్య-సీక్వెంట్ దాని తక్షణ
+  ఉప-\tetoken{వ్యుత్పత్తుల}{!!{derivation}s} నుంచి $R$ను సరిగా
+  వర్తింపజేయడం వల్ల వచ్చినప్పుడే $\fn{FollowsBy}_R(p)$ నిలుస్తుంది.
+
+  సరళమైన సందర్భం \RightR{\land} నియమం. $\pi$ సరైన
+  $\RightR{\land}$ నిగమనంతో ముగిస్తే అది ఇలా ఉంటుంది:
+  \begin{prooftree}
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma \fCenter \Delta, !A$
+
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$\Gamma \fCenter \Delta, !B$
+
+    \RightLabel{\RightR\land}
+    \BinaryInf$\Gamma \fCenter \Delta, !A \land !B$
+  \end{prooftree}
+  కాబట్టి, $\Gamma$, $\Delta$ అనే \tetoken{వాక్యాల}{!!{sentence}s} క్రమాలు,
+  $!A$, $!B$ అనే రెండు \tetoken{వాక్యాలు}{!!{sentence}s} ఉండి,
+  $\pi_1$ అంత్య-సీక్వెంట్ $\Gamma\Sequent\Delta,!A$,
+  $\pi_2$ అంత్య-సీక్వెంట్ $\Gamma\Sequent\Delta,!B$, $\pi$ అంత్య-సీక్వెంట్
+  $\Gamma\Sequent\Delta,!A\land !B$ అయితేనే
+  \tetoken{వ్యుత్పత్తి}{!!{derivation}}~$\pi$లోని చివరి నిగమనం
+  $\RightR{\land}$ యొక్క సరైన వర్తింపు. దీన్ని గ్యోడెల్ సంఖ్యలలోకి
+  అనువదిస్తే చాలు. $s=\Gn{\Gamma\Sequent\Delta}$ అయితే
+  $(s)_0=\Gn{\Gamma}$, $(s)_1=\Gn{\Delta}$. అందువల్ల
+  $\fn{FollowsBy}_{\RightR{\land}}(p)$ నిలవడానికి అవసరమైనదీ, సరిపడేదీ
+\begin{align*}
+& \bexists{g<p}{\bexists{d<p}{\bexists{a<p}{\bexists{b<p}{\quad}}}}\\
+& \qquad \fn{EndSequent}(p)=
+  \tuple{g,d\concat
+    \tuple{\Gn{(}\concat a\concat\Gn{\land}\concat b\concat\Gn{)}}}\land{}\\
+& \qquad \fn{EndSequent}((p)_1)=\tuple{g,d\concat\tuple{a}}\land{}\\
+& \qquad \fn{EndSequent}((p)_2)=\tuple{g,d\concat\tuple{b}}\land{}\\
+& \qquad (p)_0=2\land\fn{LastRule}(p)=10.
+\end{align*}
+వరుస పంక్తులు ఇలా చెబుతాయి: ``గ్యోడెల్ సంఖ్య~$g$ గల క్రమం~($\Gamma$),
+గ్యోడెల్ సంఖ్య~$d$ గల క్రమం~($\Delta$), గ్యోడెల్ సంఖ్య~$a$ గల
+\tetoken{ఒక సూత్రం}{!!a{formula}}~($!A$), గ్యోడెల్ సంఖ్య~$b$ గల
+\tetoken{ఒక సూత్రం}{!!a{formula}}~($!B$) ఉన్నాయి''; ``$\pi$ అంత్య-సీక్వెంట్
+$\Gamma\Sequent\Delta,!A\land !B$''; ``$\pi_1$ అంత్య-సీక్వెంట్
+$\Gamma\Sequent\Delta,!A$''; ``$\pi_2$ అంత్య-సీక్వెంట్
+$\Gamma\Sequent\Delta,!B$''; ``$\pi$కి రెండు తక్షణ ఉపవ్యుత్పత్తులు ఉన్నాయి,
+చివరి నిగమన నియమం $\RightR\land$ (దాని సంఖ్య~$10$).''
+
+$\pi$లోని చివరి నిగమనం $\RightR\lexists$ యొక్క సరైన వర్తింపు కావడానికి
+అవసరమైనదీ, సరిపడేదీ: $\Gamma$, $\Delta$ క్రమాలు,
+\tetoken{ఒక సూత్రం}{!!a{formula}}~$!A$, చరం~$x$, పదం~$t$ ఉండి,
+$\pi$ అంత్య-సీక్వెంట్ $\Gamma\Sequent\Delta,\lexists[x][!A]$ కావడం,
+$\pi_1$ అంత్య-సీక్వెంట్ $\Gamma\Sequent\Delta,\Subst{!A}{t}{x}$ కావడం.
+కాబట్టి గ్యోడెల్ సంఖ్యల పరంగా $\fn{FollowsBy}_{\RightR\lexists}(p)$
+నిలవడానికి అవసరమైనదీ, సరిపడేదీ
+\begin{align*}
+  & \bexists{g<p}{\bexists{d<p}{\bexists{a<p}{\bexists{x<p}{\bexists{t<p}{\quad}}}}}\\
+  & \qquad \fn{EndSequent}(p)=
+  \tuple{
+    g,
+    d\concat\tuple{\Gn{\lexists}\concat x\concat a}
+  }\land{}\\
+  & \qquad \fn{EndSequent}((p)_1)=
+  \tuple{
+    g,
+    d\concat\tuple{\fn{Subst}(a,t,x)}
+  }\land{}\\
+  & \qquad (p)_0=1\land\fn{LastRule}(p)=18.
+\end{align*}
+తరువాత $\fn{Correct}(p)$ను ఇలా నిర్వచిస్తాం:
+\begin{multline*}
+  \fn{Sequent}(\fn{EndSequent}(p))\land{}\\
+  [(\fn{LastRule}(p)=1\land
+  \fn{FollowsBy}_{\LeftR\Weakening}(p))\lor\dots\lor{}\\
+  (\fn{LastRule}(p)=20\land\fn{FollowsBy}_{\eq}(p))\lor{}\\
+  (p)_0=0\land\fn{InitSeq}(\fn{EndSequent}(p))]
+\end{multline*}
+\sourcecorrection{OLTEART-006}{ఆంగ్ల మూలం ప్రారంభ సీక్వెంట్ పరీక్షను $\fn{InitSeq}$గా నిర్వచించి, చివరి సూత్రంలో $\fn{InitialSeq}$గా పిలుస్తుంది. నిర్వచించిన $\fn{InitSeq}$ పేరును స్థిరంగా వాడాం.}
+మొదటి పంక్తి $p$ యొక్క అంత్య-సీక్వెంట్ నిజంగా
+\tetoken{వాక్యాలతో}{!!{sentence}s} కూడిన సీక్వెంట్ అని నిర్ధారిస్తుంది.
+చివరి పంక్తి $p$ కేవలం ప్రారంభ సీక్వెంట్ అయిన సందర్భాన్ని కలుపుతుంది.
+\sourcecorrection{OLTEART-007}{ఆంగ్ల మూలంలోని ఈ వివరణ మొదటి పంక్తి ``$d$ యొక్క అంత్య-సీక్వెంట్''ను పరీక్షిస్తుందని అంటుంది; సూత్రం, ఈ విభాగపు చరం రెండూ $p$ను వాడుతున్నందున దాన్ని $p$గా సరిచేశాం.}
+\end{proof}
+
+\begin{prob}
+  \olref[inc][art][plk]{prop:followsby}లోలాగే ఈ ధర్మాలను నిర్వచించండి:
+  \begin{enumerate}
+  \item $\fn{FollowsBy}_{\Cut}(p)$,
+  \item $\fn{FollowsBy}_{\LeftR\lif}(p)$,
+  \item $\fn{FollowsBy}_{\eq}(p)$,
+  \item $\fn{FollowsBy}_{\RightR{\lforall}}(p)$.
+  \end{enumerate}
+  చివరిదానికి, గ్యోడెల్ సంఖ్య~$p$ గల
+  \tetoken{వ్యుత్పత్తి}{!!{derivation}} యొక్క చివరి నిగమనం ఐగెన్ చరరాశి
+  షరతును నెరవేరుస్తుందా, అంటే $\RightR{\lforall}$ యొక్క ఐగెన్
+  చరరాశి~$a$ అంత్య-సీక్వెంట్‌లో కనిపించదా అని ఆదిమ పునరావృత్తంగా
+  పరీక్షించగలమని కూడా చూపాలి.
+\end{prob}
+
+\begin{prop}
+  \ollabel{prop:deriv}
+  $p$ సరైన \tetoken{వ్యుత్పత్తి}{!!{derivation}}~$\pi$ యొక్క గ్యోడెల్ సంఖ్య
+  అయితే నిలిచే $\fn{Deriv}(p)$ సంబంధం ఆదిమ పునరావృత్తం.
+\end{prop}
+
+\begin{proof}
+  \tetoken{ఒక వ్యుత్పత్తి}{!!^a{derivation}}~$\pi$లోని ప్రతి నిగమనం ఒక
+  నియమపు సరైన వర్తింపు అయితే, అంటే దాని ప్రతి ఉప-\tetoken{వ్యుత్పత్తి}{!!{derivation}s}
+  సరైన నిగమనంతో ముగిస్తే, $\pi$ సరైనది. కాబట్టి $\fn{Deriv}(p)$ నిలవడానికి
+  అవసరమైనదీ, సరిపడేదీ
+  \[
+  \bforall{i<\len{\fn{SubtreeSeq}(p)}}{\fn{Correct}((\fn{SubtreeSeq}(p))_i)}.
+  \]
+  \sourcecorrection{OLTEART-014}{ఆంగ్ల మూలంలోని ప్రదర్శిత సూత్రంలో $\fn{Correct}$ ఆర్గుమెంటును ముగించే కుడి కుండలీకరణ గుర్తు లేదు. విధేయ అన్వయాన్ని సరిగ్గా ముగించే గుర్తును చేర్చాం.}
+  \sourcecorrection{OLTEART-008}{ఆంగ్ల మూలంలోని ప్రతిపాదన $\fn{Deriv}(p)$ను పేర్కొన్నప్పటికీ, నిరూపణ వాక్యం ఒక్కసారిగా $\fn{Deriv}(d)$కు మారి, వెంటనే వచ్చే సూత్రం మళ్లీ $p$ను వాడుతుంది. ప్రతిపాదన, సూత్రానికి అనుగుణంగా నిరూపణ వాక్యంలోనూ $p$ను వాడాం.}
+\end{proof}
+
+
+\begin{prop}
+$\Gamma$ అనేది \tetoken{వాక్యాల}{!!{sentence}s} ఆదిమ పునరావృత్త సమితి
+అనుకుందాం. ``ఏదో పరిమిత $\Gamma_0\subseteq\Gamma$కు
+$\Gamma_0\Sequent !A$ యొక్క \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}}~$\pi$
+సంకేతసంఖ్య $x$, $!A$ గ్యోడెల్ సంఖ్య $y$'' అని వ్యక్తీకరించే
+$\Prf[\Gamma](x,y)$ సంబంధం ఆదిమ పునరావృత్తం.
+\end{prop}
+
+\begin{proof}
+``$y\in\Gamma$''ను ఆదిమ పునరావృత్త విధేయం $R_\Gamma(y)$ ఇస్తుందని
+అనుకుందాం. $y$ ఒక వాక్యం~$!A$ గ్యోడెల్ సంఖ్యగా, $x$ అంత్య-సీక్వెంట్
+$\Gamma_0\Sequent !A$ గల $\Log{LK}$-\tetoken{వ్యుత్పత్తి}{!!{derivation}}
+సంకేతసంఖ్యగా ఉన్నప్పుడే నిలిచే $\Prf[\Gamma](x,y)$ ఆదిమ పునరావృత్తమని
+చూపాలి.
+
+మునుపటి ప్రతిపాదన ప్రకారం, $x$ అనేది $\Log{LK}$లో సరైన
+\tetoken{వ్యుత్పత్తి}{!!{derivation}}~$\pi$ సంకేతసంఖ్య అయినప్పుడే నిలిచే
+$\fn{Deriv}(x)$ ధర్మం ఆదిమ పునరావృత్తం. $x$ అటువంటి సంకేతసంఖ్య అయితే,
+$\fn{EndSequent}(x)$ అనేది $\pi$ అంత్య-సీక్వెంట్ సంకేతసంఖ్య;
+కాబట్టి $(\fn{EndSequent}(x))_0$ అంత్య-సీక్వెంట్ ఎడమ వైపు సంకేతసంఖ్య,
+$(\fn{EndSequent}(x))_1$ కుడి వైపు సంకేతసంఖ్య. అందువల్ల ``$\pi$
+అంత్య-సీక్వెంట్ కుడి వైపు $!A$'' అని
+$\len{(\fn{EndSequent}(x))_1}=1\land((\fn{EndSequent}(x))_1)_0=y$
+గా వ్యక్తీకరించవచ్చు.
+\sourcecorrection{OLTEART-009}{ఆంగ్ల మూలం ఈ మధ్యంతర సమీకరణలో కుడి వైపు ఏకైక సూత్రపు గ్యోడెల్ సంఖ్యను $x$తో సమానం చేస్తుంది; $x$ వ్యుత్పత్తి సంకేతసంఖ్య, $y$నే $!A$ గ్యోడెల్ సంఖ్య. వెంటనే వచ్చే తుది నిర్వచనానికి అనుగుణంగా $y$గా సరిచేశాం.}
+$\pi$ అంత్య-సీక్వెంట్ ఎడమ వైపు సహజంగానే పరిమితం; దానిలోని ప్రతి వాక్యం
+$\Gamma$లో ఉందని మాత్రమే వ్యక్తీకరించాలి. కాబట్టి $\Prf[\Gamma](x,y)$ను
+ఇలా నిర్వచించవచ్చు:
+\begin{align*}
+\Prf[\Gamma](x,y)\defiff{}&
+\fn{Deriv}(x)\land{}\\
+&\bforall{i<
+  \len{(\fn{EndSequent}(x))_0}}{R_\Gamma(((\fn{EndSequent}(x))_0)_i)}\land{}\\
+&\len{(\fn{EndSequent}(x))_1}=1\land((\fn{EndSequent}(x))_1)_0=y.
+\end{align*}
+\end{proof}
+
+\end{document}

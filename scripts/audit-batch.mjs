@@ -73,7 +73,10 @@ for (const unit of manifest.filter(u=>u.order>=first&&u.order<=last)) {
  // Target-language prose can move around math, so compare the multiset of
  // math atoms. Nested inline formulas inside text/intertext/mbox clauses are
  // checked independently of the prose order and of the surrounding display.
- const mathRe=/\$[^$]*\$|\\\[[\s\S]*?\\\]|\\begin\{(?:align\*?|multline\*?)\}[\s\S]*?\\end\{(?:align\*?|multline\*?)\}/g;
+ // A display opener must not be the second backslash in a tabular row break
+ // such as `\\[2ex]`; otherwise the matcher swallows prose through the next
+ // genuine display closer and reports a translation-language false delta.
+ const mathRe=/\$[^$]*\$|(?<!\\)\\\[[\s\S]*?\\\]|\\begin\{(?:align\*?|multline\*?)\}[\s\S]*?\\end\{(?:align\*?|multline\*?)\}/g;
  const normalizeMath=x=>x.replace(/\\vec\s+([A-Za-z])/g,'\\vec{$1}').replace(/\s/g,'');
  const normalizeNested=x=>{
   const atom=normalizeMath(x);

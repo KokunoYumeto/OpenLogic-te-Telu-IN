@@ -1,0 +1,336 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: proofs-in-nd
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{pnd}
+\olsection{సహజ నిగమనంలో \usetoken{P}{derivation}}
+
+\begin{explain}
+\tetoken{వ్యుత్పత్తులను}{!!{derivation}s} అంకగణితీకరించాలంటే,
+\tetoken{వ్యుత్పత్తులను}{!!{derivation}s} సంఖ్యలుగా ప్రాతినిధ్యం చేయాలి.
+\tetoken{వ్యుత్పత్తులు}{!!{derivation}s}
+\tetoken{సూత్రాల}{!!{formula}s} వృక్షాలు, ప్రతి నిగమనానికీ ఒకటి లేదా రెండు
+గుర్తింపు చీటీలు ఉంటాయి కనుక, పునరావృత్త ప్రాతినిధ్యమే అత్యంత సహజమైన
+పద్ధతి. ఒక \tetoken{వ్యుత్పత్తిని}{!!{derivation}} చివరి నిగమనపు
+పూర్వాధారాలకు దారితీసే తక్షణ ఉప-\tetoken{వ్యుత్పత్తుల}{!!{derivation}s}
+సంఖ్య, ఆ ఉప-\tetoken{వ్యుత్పత్తుల}{!!{derivation}s} ప్రాతినిధ్యాలు,
+అంత్య-\tetoken{సూత్రం}{!!{formula}}, చివరి నిగమనపు ఉపసంహరణ చీటీ, చివరి
+నిగమనం రకాన్ని సూచించే సంఖ్య అనే భాగాలు గల క్రమిత సమూహంగా ప్రాతినిధ్యం
+చేస్తాం.
+\end{explain}
+
+\begin{defn}
+  $\delta$ సహజ నిగమనంలో \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} అయితే,
+  $\Gn{\delta}$ను ఆగమనాత్మకంగా ఇలా నిర్వచిస్తాం:
+  \begin{enumerate}
+  \item
+    $\delta$లో పరికల్పన~$!A$ మాత్రమే ఉంటే, $\Gn{\delta}$ అనేది
+    $\tuple{0,\Gn{!A},n}$. అది \tetoken{ఉపసంహరించని}{!!{undischarged}}
+    పరికల్పన అయితే సంఖ్య~$n$ అనేది~$0$; లేకపోతే అది సంఖ్యా చీటీ.
+  \item
+    $\delta$ సున్నా, ఒకటి, రెండు లేదా మూడు పూర్వాధారాలు గల నిగమనంతో ముగిస్తే,
+    వరుసగా $\Gn{\delta}$ అనేది
+    \begin{align*}
+      & \tuple{0,\Gn{!A},n,k},\\
+      & \tuple{1,\Gn{\delta_1},\Gn{!A},n,k},\\
+      & \tuple{2,\Gn{\delta_1},\Gn{\delta_2},\Gn{!A},n,k},\text{ లేదా}\\
+      & \tuple{3,\Gn{\delta_1},\Gn{\delta_2},\Gn{\delta_3},\Gn{!A},n,k},
+    \end{align*}
+    ఇక్కడ $\delta_1$, $\delta_2$, $\delta_3$లు $\delta$లోని చివరి నిగమనపు
+    పూర్వాధారం లేదా పూర్వాధారాల వద్ద ముగిసే
+    ఉప-\tetoken{వ్యుత్పత్తులు}{!!{derivation}s}; $!A$ అనేది $\delta$లోని ఆ చివరి నిగమనపు
+    నిష్కర్ష; $n$ చివరి నిగమనపు ఉపసంహరణ చీటీ (నిగమనం ఏ పరికల్పననూ
+    ఉపసంహరించకపోతే $0$); చివరి నిగమనంలో వాడిన నియమాన్ని బట్టి $k$ను ఈ
+    పట్టిక ఇస్తుంది.
+
+    \begin{tabular}{lccccccc}
+      \text{నియమం:} & \Intro{\land} & \Elim{\land} & \Intro{\lor} & \Elim{\lor} \\
+      $k$: & 1 & 2 & 3 & 4 \\[1.5ex]
+      \text{నియమం:} & \Intro{\lif} & \Elim{\lif} & \Intro{\lnot} & \Elim{\lnot} \\
+      $k$: & 5 & 6 & 7 & 8 \\[1.5ex]
+      \text{నియమం:} & \FalseInt & \FalseCl & \Intro{\lforall} & \Elim{\lforall} \\
+      $k$: & 9 & 10 & 11 & 12 \\[1.5ex]
+      \text{నియమం:} & \Intro{\lexists} & \Elim{\lexists} & \Intro{\eq} & \Elim{\eq} \\
+      $k$: & 13 & 14 & 15 & 16
+    \end{tabular}
+  \end{enumerate}
+\end{defn}
+
+\begin{ex}
+  ఈ అతి సరళమైన \tetoken{వ్యుత్పత్తిని}{!!{derivation}} పరిగణించండి:
+  \begin{prooftree}
+    \AxiomC{$\Discharge{!A \land !B}{1}$}
+    \RightLabel{\Elim{\land}}
+    \UnaryInfC{$!A$}
+    \DischargeRule{\Intro{\lif}}{1}
+    \UnaryInfC{$(!A \land !B) \lif !A$}
+  \end{prooftree}
+  పరికల్పన గ్యోడెల్ సంఖ్య $d_0=\tuple{0,\Gn{!A\land !B},1}$.
+  $\Elim{\land}$ నిష్కర్షతో ముగిసే
+  \tetoken{వ్యుత్పత్తి}{!!{derivation}} గ్యోడెల్ సంఖ్య
+  $d_1=\tuple{1,d_0,\Gn{!A},0,2}$ అవుతుంది
+  ($\Elim{\land}$కు ఒక పూర్వాధారం ఉంది కనుక $1$; నిష్కర్ష~$!A$ యొక్క
+  గ్యోడెల్ సంఖ్య; ఏ పరికల్పనా ఉపసంహరించబడలేదు కనుక $0$;
+  $\Elim{\land}$ను సంకేతీకరించే సంఖ్య $2$). అప్పుడు మొత్తం
+  \tetoken{వ్యుత్పత్తి}{!!{derivation}} గ్యోడెల్ సంఖ్య
+  $\tuple{1,d_1,\Gn{((!A\land !B)\lif !A)},1,5}$, అంటే
+  \[
+  \tuple{1,\tuple{1,\tuple{0,\Gn{(!A\land !B)},1},\Gn{!A},0,2},
+    \Gn{((!A\land !B)\lif !A)},1,5}.
+  \]
+\end{ex}
+
+\begin{explain}
+\tetoken{వ్యుత్పత్తుల}{!!{derivation}s} ప్రాతినిధ్యాన్ని నిర్ణయించిన తరువాత,
+అటువంటి \tetoken{వ్యుత్పత్తుల}{!!{derivation}s} గ్యోడెల్ సంఖ్యలను ఆదిమ
+పునరావృత్తంగా మార్చగలమనీ, వాటి ముఖ్య ధర్మాలు, సంబంధాలను అలాగే వ్యక్తీకరించగలమనీ
+చూపాలి. కొన్ని క్రియలు సరళమైనవి: ఉదాహరణకు,
+\tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} గ్యోడెల్ సంఖ్య~$d$ ఇస్తే,
+$\fn{EndFmla}(d)=(d)_{(d)_0+1}$ దాని అంత్య-\tetoken{సూత్రం}{!!{formula}}
+గ్యోడెల్ సంఖ్యను, $\fn{DischargeLabel}(d)=(d)_{(d)_0+2}$ ఉపసంహరణ
+చీటీని, $\fn{LastRule}(d)=(d)_{(d)_0+3}$ చివరి నిగమనం రకాన్ని సూచించే
+సంఖ్యను ఇస్తాయి. కొన్ని క్రియలు మరింత కష్టం. వాటిని ఎలా చేయాలో కనీసం
+రూపురేఖలుగా చూద్దాం. ``$\delta$ అనేది $\Gamma$ నుంచి $!A$ యొక్క
+\tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}}'' అనే సంబంధం $\delta$, $!A$ల
+గ్యోడెల్ సంఖ్యల ఆదిమ పునరావృత్త సంబంధమని చూపడమే లక్ష్యం.
+\end{explain}
+
+\begin{prop}
+  క్రింది సంబంధాలు ఆదిమ పునరావృత్తం:
+  \begin{enumerate}
+  \item $!A$ అనేది $\delta$లో చీటీ~$n$తో పరికల్పనగా కనిపిస్తుంది.
+  \item $\delta$లో చీటీ~$n$ గల పరికల్పనలన్నీ $!A$ రూపంలోనే ఉన్నాయి
+    (అంటే $\delta$లో చీటీ~$n$తో పరికల్పన~$!A$ను
+    \tetoken{ఉపసంహరించవచ్చు}{!!{discharge}}).
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \tetoken{సూత్రాల}{!!{formula}s} గ్యోడెల్ సంఖ్యలకూ,
+  \tetoken{వ్యుత్పత్తుల}{!!{derivation}s} గ్యోడెల్ సంఖ్యలకూ మధ్య అనురూపమైన
+  సంబంధాలు ఆదిమ పునరావృత్తమని చూపాలి.
+  \begin{enumerate}
+  \item గ్యోడెల్ సంఖ్య~$d$ గల \tetoken{వ్యుత్పత్తిలో}{!!{derivation}}
+    చీటీ~$n$ గల పరికల్పన గ్యోడెల్ సంఖ్య $x$ అయినప్పుడు నిలిచే
+    $\fn{Assum}(x,d,n)$ ఆదిమ పునరావృత్తమని చూపాలి. గ్యోడెల్ సంఖ్య
+    $\tuple{0,x,n}$ గల \tetoken{వ్యుత్పత్తి}{!!{derivation}} అనేది $d$కు
+    ఉప-\tetoken{వ్యుత్పత్తి}{!!{derivation}} అయినప్పుడే ఇది జరుగుతుంది.
+    మన \tetoken{వ్యుత్పత్తుల}{!!{derivation}s} సంకేతీకరణ
+    \olref[cmp][rec][tre]{sec}లో ప్రవేశపెట్టిన వృక్ష సంకేతీకరణకు ఒక ప్రత్యేక
+    సందర్భం. కాబట్టి ఆదిమ పునరావృత్త ప్రమేయం $\fn{SubtreeSeq}(d)$,
+    $d$ యొక్క అన్ని ఉప-\tetoken{వ్యుత్పత్తుల}{!!{derivation}s} గ్యోడెల్
+    సంఖ్యల క్రమాన్ని ఇస్తుంది (దాని పొడవు గరిష్ఠంగా $d$). అందువల్ల
+    \[
+    \fn{Assum}(x,d,n)\defiff\bexists{i<d}{(\fn{SubtreeSeq}(d))_i=
+      \tuple{0,x,n}}.
+    \]
+    అని నిర్వచించవచ్చు.
+  \item గ్యోడెల్ సంఖ్య~$d$ గల \tetoken{వ్యుత్పత్తిలో}{!!{derivation}}
+    చీటీ~$n$ గల పరికల్పనలన్నీ గ్యోడెల్ సంఖ్య~$x$ గల
+    \tetoken{సూత్రమే}{!!{formula}} అయితే నిలిచే $\fn{Discharge}(x,d,n)$
+    ఆదిమ పునరావృత్తమని చూపాలి. ఈ సంబంధం
+    $\bforall{y<d}{(\fn{Assum}(y,d,n)\lif y=x)}$ అయినప్పుడే నిలుస్తుంది.
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}
+  \ollabel{prop:followsby}
+  గ్యోడెల్ సంఖ్య~$d$ గల \tetoken{వ్యుత్పత్తి}{!!{derivation}}~$\delta$లోని
+  చివరి నిగమనం సరైనదైతేనే నిలిచే $\fn{Correct}(d)$ ధర్మం ఆదిమ పునరావృత్తం.
+\end{prop}
+
+\begin{proof}
+  ప్రతి నిగమన నియమం~$R$కి $\fn{FollowsBy}_R(d)$ సంబంధం ఆదిమ పునరావృత్తమని
+  చూపాలి. $d$ అనేది \tetoken{వ్యుత్పత్తి}{!!{derivation}}~$\delta$ గ్యోడెల్
+  సంఖ్యగా ఉండి, $\delta$ అంత్య-\tetoken{సూత్రం}{!!{formula}} దాని తక్షణ
+  ఉప-\tetoken{వ్యుత్పత్తుల}{!!{derivation}s} నుంచి $R$ను సరిగా
+  వర్తింపజేయడం వల్ల వచ్చినప్పుడే $\fn{FollowsBy}_R(d)$ నిలుస్తుంది.
+
+  సరళమైన సందర్భం \Intro{\land} నియమం. $\delta$ సరైన
+  $\Intro{\land}$ నిగమనంతో ముగిస్తే అది ఇలా ఉంటుంది:
+  \begin{prooftree}
+    \AxiomC{}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!A$}
+
+    \AxiomC{}
+    \RightLabel{$\delta_2$}
+    \DeduceC{$!B$}
+
+    \RightLabel{\Intro\land}
+    \BinaryInfC{$!A\land !B$}
+  \end{prooftree}
+  అప్పుడు $\delta$ గ్యోడెల్ సంఖ్య~$d$ అనేది
+  $\tuple{2,d_1,d_2,\Gn{(!A\land !B)},0,k}$; ఇక్కడ
+  $\fn{EndFmla}(d_1)=\Gn{!A}$, $\fn{EndFmla}(d_2)=\Gn{!B}$, $n=0$,
+  $k=1$. కాబట్టి $\fn{FollowsBy}_{\Intro\land}(d)$ను ఇలా నిర్వచించవచ్చు:
+  \begin{multline*}
+    (d)_0=2\land\fn{DischargeLabel}(d)=0\land\fn{LastRule}(d)=1\land{}\\
+    \fn{EndFmla}(d)={}\\
+    \Gn{(}\concat\fn{EndFmla}((d)_1)\concat\Gn{\land}
+    \concat\fn{EndFmla}((d)_2)\concat\Gn{)}.
+  \end{multline*}
+
+  మరొక సరళమైన ఉదాహరణ $\Intro\eq$ నియమం. దీనికి పూర్వాధారాలు లేవు కనుక,
+  పరికల్పనల మాదిరిగానే $(d)_0=0$. దీనికి ఉపసంహరణ చీటీ కూడా లేదు;
+  అంటే $n=0$. అయితే, ఏదో మూసిన పదం~$t$కి $!A$ అనేది $\eq[t][t]$ రూపంలో
+  ఉండాలి. ఇక్కడ ఆదిమ పునరావృత్త నిర్వచనం
+  \begin{multline*}
+    (d)_0=0\land\fn{DischargeLabel}(d)=0\land{}\\
+    \bexists{t<d}{(\fn{ClTerm}(t)\land
+      \fn{EndFmla}(d)={}\\
+      \Gn{{\eq}(}\concat t\concat\Gn{,}\concat t\concat\Gn{)})}.
+  \end{multline*}
+
+  మరింత క్లిష్టమైన ఉదాహరణగా, $\fn{FollowsBy}_{\Intro{\lif}}(d)$ ఎప్పుడు
+  నిలుస్తుందో చూద్దాం. $\delta$ అంత్య-\tetoken{సూత్రం}{!!{formula}}
+  $(!A\lif !B)$ రూపంలో ఉండి, $\delta_1$ అంత్య-\tetoken{సూత్రం}{!!{formula}}
+  $!B$గా, $\delta$లో చీటీ~$n$ గల ప్రతి పరికల్పనా $!A$ రూపంలో ఉన్నప్పుడే
+  అది నిలుస్తుంది. దీన్ని ఆదిమ పునరావృత్తంగా ఇలా వ్యక్తీకరించవచ్చు:
+  \begin{multline*}
+    (d)_0=1\land{}\\
+    \bexists{a<d}{(\fn{Discharge}(a,(d)_1,\fn{DischargeLabel}(d))\land{}}\\
+      \fn{EndFmla}(d)=(\Gn{(}\concat a\concat\Gn{\lif}
+      \concat\fn{EndFmla}((d)_1)\concat\Gn{)}))
+  \end{multline*}
+  ($a$ను $!A$ గ్యోడెల్ సంఖ్యగా భావించండి.)
+
+  ఇంకొక ఉదాహరణగా \Intro{\lexists}ను పరిగణించండి. ఇక్కడ,
+  \tetoken{ఒక సూత్రం}{!!a{formula}}~$!A$, మూసిన పదం~$t$,
+  \tetoken{ఒక చరం}{!!a{variable}}~$x$ ఉండి, $\Subst{!A}{t}{x}$ అనేది
+  \tetoken{వ్యుత్పత్తి}{!!{derivation}}~$\delta_1$ అంత్య-
+  \tetoken{సూత్రం}{!!{formula}}గా, $\lexists[x][!A]$ చివరి నిగమనపు
+  నిష్కర్షగా ఉన్నప్పుడే $\delta$లోని చివరి నిగమనం సరైనది. కాబట్టి
+  $\fn{FollowsBy}_{\Intro{\lexists}}(d)$ నిలవడానికి అవసరమైనదీ, సరిపడేదీ
+  \begin{multline*}
+    (d)_0=1\land\fn{DischargeLabel}(d)=0\land{}\\
+    \bexists{a<d}{\bexists{x<d}{\bexists{t<d}{
+          (\fn{ClTerm}(t)\land\fn{Var}(x)\land{}}}}\\
+    \fn{Subst}(a,t,x)=\fn{EndFmla}((d)_1)\land
+    \fn{EndFmla}(d)=(\Gn{\lexists}\concat x\concat a)).
+  \end{multline*}
+
+  తరువాత $\fn{Correct}(d)$ను ఇలా నిర్వచిస్తాం:
+  \begin{multline*}
+    \fn{Sent}(\fn{EndFmla}(d))\land{}\\
+    [(\fn{LastRule}(d)=1\land
+    \fn{FollowsBy}_{\Intro\land}(d))\lor\dots\lor{}\\
+    (\fn{LastRule}(d)=16\land\fn{FollowsBy}_{\Elim\eq}(d))\lor{}\\
+    \bexists{n<d}{\bexists{x<d}{(d=\tuple{0,x,n})}}].
+  \end{multline*}
+  \sourcecorrection{OLTEART-010}{ఆంగ్ల మూలంలోని $\fn{Correct}(d)$ సూత్రం మొత్తం వికల్పాన్ని కుండలీకరించలేదు; సాధారణ సంధి-వికల్ప ప్రాధాన్యతలో $\fn{Sent}$ పరీక్ష మొదటి నియమ సందర్భానికే వర్తిస్తుంది. వివరణ ఉద్దేశించినట్లుగా, ప్రతి నియమ సందర్భానికీ మరియు పరికల్పన సందర్భానికీ అంత్యసూత్రం వాక్యమని పరీక్షించేలా చతురస్ర కుండలీకరణలు చేర్చాం.}
+  మొదటి పంక్తి $d$ అంత్య-\tetoken{సూత్రం}{!!{formula}} ఒక వాక్యమని
+  నిర్ధారిస్తుంది. చివరి పంక్తి $d$ కేవలం పరికల్పన అయిన సందర్భాన్ని కలుపుతుంది.
+\end{proof}
+
+\begin{prob}
+  \olref[inc][art][pnd]{prop:followsby}లోలాగే ఈ ధర్మాలను నిర్వచించండి:
+  \begin{enumerate}
+  \item $\fn{FollowsBy}_{\Elim{\lif}}(d)$,
+  \item $\fn{FollowsBy}_{\Elim{\eq}}(d)$,
+  \item $\fn{FollowsBy}_{\Elim{\lor}}(d)$,
+  \item $\fn{FollowsBy}_{\Intro{\lforall}}(d)$.
+  \end{enumerate}
+  చివరిదానికి, గ్యోడెల్ సంఖ్య~$d$ గల
+  \tetoken{వ్యుత్పత్తి}{!!{derivation}} యొక్క చివరి నిగమనం ఐగెన్ చరరాశి
+  షరతును నెరవేరుస్తుందా, అంటే $\Intro{\lforall}$ నిగమనం యొక్క ఐగెన్
+  చరరాశి~$a$ అనేది $d$ అంత్య-\tetoken{సూత్రం}{!!{formula}}లో గానీ,
+  $d$లోని తెరచిన పరికల్పనలో గానీ కనిపించదా అని ఆదిమ పునరావృత్తంగా
+  పరీక్షించగలమని కూడా చూపాలి. దీని కోసం
+  \olref[inc][art][pnd]{prop:openassum}లోని ఆదిమ పునరావృత్త విధేయం
+  $\fn{OpenAssum}$ను ఉపయోగించవచ్చు.
+\end{prob}
+
+\begin{prop}
+  \ollabel{prop:deriv}
+  $d$ సరైన \tetoken{వ్యుత్పత్తి}{!!{derivation}}~$\delta$ గ్యోడెల్ సంఖ్య
+  అయితే నిలిచే $\fn{Deriv}(d)$ సంబంధం ఆదిమ పునరావృత్తం.
+\end{prop}
+
+\begin{proof}
+  \tetoken{ఒక వ్యుత్పత్తి}{!!^a{derivation}}~$\delta$లోని ప్రతి నిగమనం
+  ఒక నియమపు సరైన వర్తింపు అయితే, అంటే దాని ప్రతి
+  ఉప-\tetoken{వ్యుత్పత్తులు}{!!{derivation}s} సరైన నిగమనంతో ముగిస్తే,
+  $\delta$ సరైనది. కాబట్టి $\fn{Deriv}(d)$ నిలవడానికి అవసరమైనదీ, సరిపడేదీ
+  \[
+  \bforall{i<\len{\fn{SubtreeSeq}(d)}}{\fn{Correct}((\fn{SubtreeSeq}(d))_i)}
+  \]
+\end{proof}
+
+\begin{prop}
+  \ollabel{prop:openassum} గ్యోడెల్ సంఖ్య~$d$ గల
+  \tetoken{వ్యుత్పత్తి}{!!{derivation}}~$\delta$లో
+  \tetoken{ఉపసంహరించని}{!!a{undischarged}} పరికల్పన~$!A$ గ్యోడెల్
+  సంఖ్య $z$ అయితే నిలిచే $\fn{OpenAssum}(z,d)$ సంబంధం ఆదిమ పునరావృత్తం.
+\end{prop}
+
+\begin{proof}
+  ఒక పరికల్పన ఘటన చీటీ~$n$తో $\delta$లోని, ఉపసంహరణ చీటీ~$n$ గల నియమంతో
+  ముగిసే ఉప-\tetoken{వ్యుత్పత్తి}{!!{derivation}}లో కనిపిస్తే అది
+  \tetoken{ఉపసంహరించబడింది}{!!{discharged}}. కాబట్టి $\delta$లో దాని
+  ఘటనలలో కనీసం ఒకటి \tetoken{ఉపసంహరించబడకపోతే}{!!{discharged}},
+  $!A$ అనేది $\delta$లో \tetoken{ఉపసంహరించని}{!!a{undischarged}}
+  పరికల్పన. ఇక్కడ జాగ్రత్త అవసరం: $\delta$లో $!A$కు
+  \tetoken{ఉపసంహరించిన}{!!{discharged}},
+  \tetoken{ఉపసంహరించని}{!!{undischarged}} ఘటనలు రెండూ ఉండవచ్చు.
+
+  $\delta_0=\delta$, $\delta_k$ అనేది ఏదో~$n$కు పరికల్పన
+  $\Discharge{!A}{n}$, ప్రతి $\delta_{i+1}$ అనేది $\delta_i$కి తక్షణ
+  ఉప-\tetoken{వ్యుత్పత్తి}{!!{derivation}} అయ్యే $\delta_0$, \dots,
+  $\delta_k$ క్రమాన్ని పరిగణించండి. ఏ $\delta_i$ కూడా ఉపసంహరణ చీటీ~$n$
+  గల నిగమనంతో ముగియని అటువంటి క్రమం ఉంటే, $!A$ అనేది $\delta$లో
+  \tetoken{ఉపసంహరించని}{!!a{undischarged}} పరికల్పన.
+
+  ఆదిమ పునరావృత్త ప్రమేయం $\fn{SubtreeSeq}(d)$, $\delta$ యొక్క అన్ని
+  ఉప-\tetoken{వ్యుత్పత్తుల}{!!{derivation}s} గ్యోడెల్ సంఖ్యల క్రమాన్ని
+  ఇస్తుంది. $\delta$ ఉప-\tetoken{వ్యుత్పత్తుల}{!!{derivation}s} గ్యోడెల్
+  సంఖ్యల ఏ క్రమమైనా దానికి ఉపక్రమం. ఉపక్రమంగా ఉండటం ఆదిమ పునరావృత్త
+  సంబంధం: $\fn{Subseq}(s,s')$ నిలవడానికి అవసరమైనదీ, సరిపడేదీ
+  $\bforall{i<\len{s}}{\lexists[j<\len{s'}][(s)_i=(s')_j]}$.
+  తక్షణ ఉప-\tetoken{వ్యుత్పత్తి}{!!{derivation}}గా ఉండటం కూడా అలాంటిదే:
+  $\fn{Subderiv}(d,d')$ నిలవడానికి అవసరమైనదీ, సరిపడేదీ
+  $\bexists{j<(d')_0}{d=(d')_{j+1}}$.
+  \sourcecorrection{OLTEART-011}{ఆంగ్ల మూలంలోని తక్షణ ఉపవ్యుత్పత్తి పరీక్ష $d=(d')_j$ను వాడుతుంది. కానీ $(d')_0$ అనేది పూర్వాధారాల సంఖ్య; ఉపవ్యుత్పత్తి సంకేతాలు స్థానాలు $1$ నుంచి $(d')_0$ వరకూ ఉంటాయి. అందువల్ల సూచికను $j+1$గా సరిచేశాం.}
+  కాబట్టి $\fn{OpenAssum}(z,d)$ను ఇలా నిర్వచించవచ్చు:
+  \begin{multline*}
+    \bexists{s<\fn{SubtreeSeq}(d)}{(\fn{Subseq}(s,\fn{SubtreeSeq}(d))
+      \land(s)_0=d\land{}}\\
+    \bexists{n<d}{((s)_{\len{s}\tsub 1}=\tuple{0,z,n}\land{}}\\
+      \bforall{i<(\len{s}\tsub 1)}{(\fn{Subderiv}((s)_{i+1},(s)_i)\land{}}\\
+      \fn{DischargeLabel}((s)_i)\neq n))).
+  \end{multline*}
+\end{proof}
+
+\begin{prop}
+  \ollabel{prop:prf-prim-rec}
+  $\Gamma$ అనేది \tetoken{వాక్యాల}{!!{sentence}s} ఆదిమ పునరావృత్త సమితి
+  అనుకుందాం. ``$\Gamma$లోని \tetoken{ఉపసంహరించని}{!!{undischarged}}
+  పరికల్పనల నుంచి $!A$ యొక్క \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}}
+  ~$\delta$ సంకేతసంఖ్య $x$, $!A$ గ్యోడెల్ సంఖ్య $y$'' అని వ్యక్తీకరించే
+  $\Prf[\Gamma](x,y)$ సంబంధం ఆదిమ పునరావృత్తం.
+\end{prop}
+
+\begin{proof}
+  ``$y\in\Gamma$''ను ఆదిమ పునరావృత్త విధేయం $R_\Gamma(y)$ ఇస్తుందని
+  అనుకుందాం. $y$ ఒక వాక్యం~$!A$ గ్యోడెల్ సంఖ్యగా, $x$ అంత్య-
+  \tetoken{సూత్రం}{!!{formula}}~$!A$ గల, \tetoken{ఉపసంహరించని}{!!{undischarged}}
+  పరికల్పనలన్నీ $\Gamma$లో ఉండే సహజ నిగమన
+  \tetoken{వ్యుత్పత్తి}{!!{derivation}} సంకేతసంఖ్యగా ఉన్నప్పుడే నిలిచే
+  $\Prf[\Gamma](x,y)$ ఆదిమ పునరావృత్తమని చూపాలి.
+
+  \olref{prop:deriv} ప్రకారం, $x$ సహజ నిగమనంలో సరైన
+  \tetoken{వ్యుత్పత్తి}{!!{derivation}}~$\delta$ గ్యోడెల్ సంఖ్య అయితేనే
+  నిలిచే $\fn{Deriv}(x)$ ధర్మం ఆదిమ పునరావృత్తం. కాబట్టి
+  $\Prf[\Gamma](x,y)$ను ఇలా నిర్వచించవచ్చు:
+  \begin{align*}
+    \Prf[\Gamma](x,y)\defiff{}
+    &\fn{Deriv}(x)\land\fn{EndFmla}(x)=y\land{}\\
+    &\bforall{z<x}{(\fn{OpenAssum}(z,x)\lif R_\Gamma(z))}.
+  \end{align*}
+\end{proof}
+
+\end{document}

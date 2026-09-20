@@ -210,6 +210,20 @@ locations['TE-T070']=[
  L('content/incompleteness/introduction/overview.tex',84,90,85,90,'provability','నిరూప్యతా విధేయం'),
  L('content/incompleteness/introduction/undecidability.tex',131,134,152,155,'Presburger arithmetic','ప్రెస్‌బర్గర్ అంకగణితం')
 ];
+locations['TE-T071']=[
+ L('content/incompleteness/arithmetization-syntax/arithmetization-syntax.tex',8,8,8,8,'Arithmetization of Syntax','వాక్యనిర్మాణపు అంకగణితీకరణ'),
+ L('content/incompleteness/arithmetization-syntax/introduction.tex',39,42,37,41,'G\\"odel numbering','గ్యోడెల్ సంఖ్యీకరణ'),
+ L('content/incompleteness/arithmetization-syntax/coding-symbols.tex',10,10,10,10,'Coding Symbols','సంకేతాల సంకేతీకరణ'),
+ L('content/incompleteness/arithmetization-syntax/coding-terms.tex',45,48,43,47,'formation rules','నిర్మాణ నియమాలు'),
+ L('content/incompleteness/arithmetization-syntax/coding-formulas.tex',10,10,10,10,'Coding \\printtoken{P}{formula}','సంకేతీకరణ'),
+ L('content/incompleteness/arithmetization-syntax/substitution.tex',10,10,10,10,'Substitution','ప్రతిస్థాపన'),
+ L('content/incompleteness/arithmetization-syntax/proofs-in-lk.tex',17,19,18,20,'end-sequent','అంత్య-సీక్వెంట్'),
+ L('content/incompleteness/arithmetization-syntax/proofs-in-lk.tex',251,255,258,262,'the relation $\\Prf[\\Gamma](x, y)$','సంబంధం'),
+ L('content/incompleteness/arithmetization-syntax/proofs-in-nd.tex',10,10,10,10,'Natural Deduction','సహజ నిగమనం'),
+ L('content/incompleteness/arithmetization-syntax/proofs-in-nd.tex',17,21,18,23,'immediate sub-!!{derivation}s','తక్షణ ఉప-'),
+ L('content/incompleteness/arithmetization-syntax/proofs-in-nd.tex',20,21,21,22,'discharge label','ఉపసంహరణ చీటీ'),
+ L('content/incompleteness/arithmetization-syntax/proofs-in-ax.tex',10,10,10,10,'Axiomatic \\usetoken{P}{derivation}','స్వీకృతాధారిత')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -265,7 +279,8 @@ alternatives['TE-T067']=['reuse the established set, function, relation and proo
 alternatives['TE-T068']=['use transparent Telugu compounds for the machine, transition, configuration and effective-procedure vocabulary, with exact senses fixed by the adjacent tuples, diagrams and definitions (chosen)','leave the specialized machine vocabulary in untranslated English reader prose (rejected)','collapse state, configuration and run into one undifferentiated term (rejected because the definitions distinguish them)','claim direct native attestation for Turing-machine components, nondeterminism or the Church--Turing thesis (rejected because the frozen definitions and equivalence claim control those senses)'];
 alternatives['TE-T069']=['reuse the established machine, function, formal-logic and proof register, with universal-machine, representation and finite-model compounds fixed by the adjacent constructions (chosen)','leave the specialized undecidability and finite-model vocabulary in untranslated English reader prose (rejected)','collapse ordinary enumerability, machine enumeration and semi-decidability into one term (rejected because the definitions distinguish them)','claim direct native attestation for universal simulation, arithmetized computation or Trakhtenbrot’s theorem (rejected because the frozen constructions and proofs control those senses)'];
 alternatives['TE-T070']=['reuse the established number, theory, axiom, derivation, consistency and proof register, with incompleteness, representability and arithmetization compounds fixed by the adjacent definitions and theorems (chosen)','leave the specialized incompleteness vocabulary in untranslated English reader prose (rejected)','collapse completeness, decidability and axiomatizability into one property (rejected because the chapter distinguishes them)','claim direct native attestation for Robinson’s Q, representability, provability predicates or Gödel’s theorems (rejected because the frozen definitions and proofs control those senses)'];
-const completion='partial_279_of_722_draft_units';
+alternatives['TE-T071']=['reuse the established number, sequence, function, relation, formula, derivation and proof register, with Gödel coding, formation-sequence and proof-predicate compounds fixed by the adjacent definitions and tuple layouts (chosen)','leave the specialized coding and proof-verification vocabulary in untranslated English reader prose (rejected)','collapse symbol, sequence, term, formula and proof codes into one undifferentiated notion (rejected because the definitions distinguish their constructors and tests)','claim direct native attestation for Gödel numbering, formation-sequence bounds or primitive-recursive proof verification (rejected because the frozen definitions, recursions and predicates control those senses)'];
+const completion='partial_288_of_722_draft_units';
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -281,7 +296,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-20 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T070 record the Batch 025--Batch 031 consultations performed during reconciliation.';
+const phase='Evidence reconstruction through 2026-09-20 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T071 record the Batch 025--Batch 032 consultations performed during reconciliation.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -465,10 +480,24 @@ const correctionQuestions={
   'OLTECOMTHY-012':'Please double-check that the W_e characterization of K_0 uses the ordered pair <e,x>, in the same order as its defining computation.',
   'OLTECOMTHY-013':'Please double-check that the repaired sentence says the first proposition establishes transitivity of many-one reducibility.',
   'OLTECOMTHY-014':'Please double-check that a many-one reduction is typed f: N to N, not merely f: A to B, so the characteristic-function composition is well formed.',
-  'OLTECOMTHY-015':'Please double-check that completeness of K requires K_0 many-one reduces to K, and that the following exercise asks for this same direction.',
+  'OLTECOMTHY-015':'Please double-check that the proof uses K_0 many-one reduces to K, that the valid original exercise K reduces to K_0 is retained, and that the reverse direction appears only as a separately labelled added exercise completing the proof.',
   'OLTECOMTHY-016':'Please double-check that the repaired procedural sentence first simulates cfind_x(x) and returns zero exactly if that computation halts.',
   'OLTECOMTHY-017':'Please double-check that the fourth Rice-theorem example asserts strict increase only when both displayed function values are defined.',
   'OLTECOMTHY-018':'Please double-check that the fixed-point application begins with arbitrary partial computable f, matching the theorem and the partial construction of g.'
+  ,'OLTEART-001':'Please double-check that the arithmetized substitution construction is singular throughout and maps the three input codes k, l and m to the output code n.'
+  ,'OLTEART-002':'Please double-check that the term-formation clause explicitly quantifies the function-symbol index j together with n and z.'
+  ,'OLTEART-003':'Please double-check that the formula-formation proof uses the valid bounded sequence-code argument from the term proof rather than claiming that the whole sequence code is below its final formula code.'
+  ,'OLTEART-004':'Please double-check that both repaired LK Gödel codes have balanced parentheses and agree with the displayed conclusion and the definition of p_0.'
+  ,'OLTEART-005':'Please double-check that EndSequent is the single projection name used in its definition and every subsequent rule and proof predicate.'
+  ,'OLTEART-006':'Please double-check that the final LK correctness formula calls the defined InitSeq predicate rather than an undefined InitialSeq predicate.'
+  ,'OLTEART-007':'Please double-check that the explanation of Correct refers to the end-sequent of p, matching the displayed formula and proposition.'
+  ,'OLTEART-008':'Please double-check that the primitive-recursiveness proof calls Deriv(p), consistently with its quantified subtree formula and proposition.'
+  ,'OLTEART-009':'Please double-check that the sole right-side formula code is equated with y, the Gödel number of A, rather than x, the derivation code.'
+  ,'OLTEART-010':'Please double-check that Sent(EndFmla(d)) is conjoined with the complete disjunction of every natural-deduction correctness case.'
+  ,'OLTEART-011':'Please double-check that Subderiv searches tuple positions j+1 for j below the recorded arity, thereby covering exactly positions 1 through (d-prime)_0.'
+  ,'OLTEART-012':'Please double-check that the QR_1 test existentially binds a preceding-line index j<i and that the bounded symbol is c, the constant appearing on that line.'
+  ,'OLTEART-013':'Please double-check that the recursive hCond clause calls hCond(s,y,n), while Cond remains only the two-argument wrapper introduced afterwards.'
+  ,'OLTEART-014':'Please double-check that the unary Correct call in the LK Deriv definition is closed before the bounded-universal body is closed.'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));
