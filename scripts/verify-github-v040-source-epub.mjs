@@ -10,44 +10,33 @@ const apiUrl = `https://api.github.com/repos/${owner}/${repository}/releases/tag
 const option = name => process.argv.find(value => value.startsWith(`--${name}=`))?.slice(name.length + 3);
 const outputPath = path.resolve(option('output') ?? 'evidence/GITHUB-v0.4.0-SOURCE-EPUB-REPAIR-READBACK.json');
 const downloadRoot = path.resolve(option('download-root') ?? 'tmp/public-readback-v0.4.0-source-epub');
+const expectedRoot = path.resolve(option('expected-root') ?? 'output/release');
 const sha256 = payload => crypto.createHash('sha256').update(payload).digest('hex');
 const requireValue = (condition, message) => {
   if (!condition) throw new Error(message);
 };
 
-const expected = new Map(Object.entries({
-  'openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.pdf': {
-    bytes: 3297226,
-    sha256: '9ef53813446e024aa86f308da6348f6f79832d22935b0aee104343f25611ff83',
-  },
-  'openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.tex': {
-    bytes: 4156367,
-    sha256: 'a3f996cf1f963cf4283cb82cc433cce7c11bad6a37c5bd7284666b12526f07bf',
-  },
-  'openlogic-te-Telu-IN-cumulative-OLP0279-build-source-v0.4.0.zip': {
-    bytes: 1311983,
-    sha256: '7d22f70e1deb6ba6f23473ef1ecaad4817a096662611ff95660f4e45df79e65d',
-  },
-  'openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.epub': {
-    bytes: 1844059,
-    sha256: 'fce845469d300ce4a86a4f7b909387976582c735ee0b881215537ab5ccc64b3e',
-  },
-  'SOURCE-REPAIR-v0.4.0.json': {
-    bytes: 892,
-    sha256: '42dd5bd5b201e6a67669dfe666d7a1d4da15b7842e410fc942ccaf20b886006f',
-  },
-  'CUMULATIVE-OLP0279-SOURCE-REPAIR-QA.json': {
-    bytes: 5797,
-    sha256: '4fd0c71845bb36926c77ee4632a0a187cb435731a21e549e843685441a8dcc37',
-  },
-  'CUMULATIVE-OLP0279-EPUB-QA.json': {
-    bytes: 271353,
-    sha256: '616d85c51b372a5f70f7290bda9fd1fc7e94953cfa7a6ea1ce2cb11ddd56cf61',
-  },
-  'CUMULATIVE-OLP0279-EPUB-RENDER-QA.json': {
-    bytes: 5959,
-    sha256: '2cab3ad4267a0115d2854568c8ef16bd31df534795adfe28284a9453c59c96cd',
-  },
+const expectedNames = [
+  'CUMULATIVE-OLP0279-EPUB-QA.json',
+  'CUMULATIVE-OLP0279-EPUB-RENDER-QA.json',
+  'CUMULATIVE-OLP0279-SOURCE-REPAIR-QA.json',
+  'SHA256SUMS-v0.4.0.txt',
+  'SOURCE-PAIRINGS-v0.4.0.json',
+  'SOURCE-REPAIR-v0.4.0.json',
+  'openlogic-te-Telu-IN-cumulative-OLP0279-QA.json',
+  'openlogic-te-Telu-IN-cumulative-OLP0279-build-source-v0.4.0.zip',
+  'openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.epub',
+  'openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.pdf',
+  'openlogic-te-Telu-IN-cumulative-OLP0279-v0.4.0.tex',
+  'openlogic-te-Telu-IN-editable-OLP0279-v0.4.0.zip',
+  'openlogic-te-Telu-IN-full-source-v0.4.0.zip',
+  'openlogic-te-Telu-IN-sfr-html-OLP0026-v0.4.0.zip',
+  'openlogic-te-Telu-IN-sfr-v0.3.0.epub',
+  'release-manifest-v0.4.0.json',
+];
+const expected = new Map(expectedNames.map(name => {
+  const payload = fs.readFileSync(path.join(expectedRoot, name));
+  return [name, {bytes: payload.length, sha256: sha256(payload)}];
 }));
 
 const publicHeaders = {
@@ -75,6 +64,9 @@ requireValue(requiredOrder.every((name, index) => index === 0 || bodyPositions[r
 for (const name of requiredOrder) {
   requireValue(body.includes(expected.get(name).sha256), `Release notes omit SHA-256 for ${name}`);
 }
+requireValue(body.includes('SOURCE-PAIRINGS-v0.4.0.json'), 'Release notes omit the source-pairing inventory');
+requireValue(body.includes('openlogic-te-Telu-IN-sfr-v0.3.0.epub'), 'Release notes omit the retained legacy 23-unit EPUB');
+requireValue(body.includes('openlogic-te-Telu-IN-sfr-html-OLP0026-v0.4.0.zip'), 'Release notes omit the retained legacy 23-unit HTML package');
 
 fs.mkdirSync(downloadRoot, {recursive: true});
 const assets = [];
@@ -120,6 +112,7 @@ const result = {
     authorization_header_sent: false,
     inventory_url: apiUrl,
     downloads: 'public browser_download_url values returned by the anonymous inventory',
+    expected_bytes_source: 'local sealed release staging directory; no authenticated API values used as expected content',
   },
   release: {
     tag: release.tag_name,
