@@ -1,6 +1,6 @@
 # Priority review
 
-This view contains 54 of 356 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
+This view contains 55 of 364 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
 
 Final reader pages remain pending; exact source and target file/line locators are shown.
 
@@ -543,3 +543,13 @@ Final reader pages remain pending; exact source and target file/line locators ar
 - Occurrences: OLP-0330 translation/content/second-order-logic/metatheory/metatheory.tex:8; OLP-0332 translation/content/second-order-logic/metatheory/second-order-arithmetic.tex:11; OLP-0332 translation/content/second-order-logic/metatheory/second-order-arithmetic.tex:13-41; OLP-0332 translation/content/second-order-logic/metatheory/second-order-arithmetic.tex:81-84; OLP-0333 translation/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:11; OLP-0334 translation/content/second-order-logic/metatheory/compactness.tex:13-24; OLP-0334 translation/content/second-order-logic/metatheory/compactness.tex:33-37; OLP-0335 translation/content/second-order-logic/metatheory/loewenheim-skolem.tex:13-24; OLP-0335 translation/content/second-order-logic/metatheory/loewenheim-skolem.tex:13-24
 
 - Review question: Please double-check whether “ద్వితీయ-స్థాయి తర్కపు అధిసిద్ధాంతం / ద్వితీయ-స్థాయి పియానో అంకగణితం / ద్వితీయ-స్థాయి ఆగమన స్వీకృతం / సమరూపత వరకు ఏకైకమైన (కేటగారికల్) / ద్వితీయ-స్థాయి తర్కం స్వీకృతీకరించదగినది కాదు / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ వైఫల్యం / అధోముఖ, ఊర్ధ్వముఖ లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతాల వైఫల్యం” is idiomatic and technically standard for “metatheory of second-order logic / second-order Peano arithmetic / second-order induction axiom / categorical / second-order logic not axiomatizable / finitely satisfiable / failure of compactness / failure of the Downward and Upward Lowenheim--Skolem theorems” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T077 — second-order logic and set theory / comparing sets / cardinalities of sets / relation-coded power set / aleph-zero and aleph-one / cardinality of the continuum / Continuum Hypothesis
+
+- Chosen rendering: ద్వితీయ-స్థాయి తర్కం మరియు సమితి సిద్ధాంతం / సమితులను పోల్చడం / సమితుల పరిమాణాలు / సంబంధం ద్వారా సంకేతీకరించిన ఘాత సమితి / అలెఫ్-సున్నా మరియు అలెఫ్-ఒకటి / అవిచ్ఛిన్న సమితి పరిమాణం / అవిచ్ఛిన్న సమితి పరికల్పన
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0336 translation/content/second-order-logic/sol-and-set-theory/sol-and-set-theory.tex:8; OLP-0338 translation/content/second-order-logic/sol-and-set-theory/comparing-sets.tex:11; OLP-0339 translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:11; OLP-0339 translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:48-68; OLP-0340 translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:11; OLP-0340 translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:49-56; OLP-0340 translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:97-111; OLP-0340 translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:147-152
+
+- Review question: Please double-check whether “ద్వితీయ-స్థాయి తర్కం మరియు సమితి సిద్ధాంతం / సమితులను పోల్చడం / సమితుల పరిమాణాలు / సంబంధం ద్వారా సంకేతీకరించిన ఘాత సమితి / అలెఫ్-సున్నా మరియు అలెఫ్-ఒకటి / అవిచ్ఛిన్న సమితి పరిమాణం / అవిచ్ఛిన్న సమితి పరికల్పన” is idiomatic and technically standard for “second-order logic and set theory / comparing sets / cardinalities of sets / relation-coded power set / aleph-zero and aleph-one / cardinality of the continuum / Continuum Hypothesis” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?

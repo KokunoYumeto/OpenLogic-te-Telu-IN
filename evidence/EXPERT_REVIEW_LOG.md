@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 332 of 722 draft units**. This log contains 76 terminology/sense decisions and 280 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 337 of 722 draft units**. This log contains 77 terminology/sense decisions and 287 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1831,6 +1831,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low semantic uncertainty because the specialized claims are fixed by explicit axioms, reductions, countermodels and proofs; medium to high nomenclatural uncertainty for second-order metatheory, categoricity, compactness failure and the upward/downward Lowenheim--Skolem compounds pending independent native specialist review
 
 - Please double-check: Please double-check whether “ద్వితీయ-స్థాయి తర్కపు అధిసిద్ధాంతం / ద్వితీయ-స్థాయి పియానో అంకగణితం / ద్వితీయ-స్థాయి ఆగమన స్వీకృతం / సమరూపత వరకు ఏకైకమైన (కేటగారికల్) / ద్వితీయ-స్థాయి తర్కం స్వీకృతీకరించదగినది కాదు / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ వైఫల్యం / అధోముఖ, ఊర్ధ్వముఖ లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతాల వైఫల్యం” is idiomatic and technically standard for “metatheory of second-order logic / second-order Peano arithmetic / second-order induction axiom / categorical / second-order logic not axiomatizable / finitely satisfiable / failure of compactness / failure of the Downward and Upward Lowenheim--Skolem theorems” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T077 — second-order logic and set theory / comparing sets / cardinalities of sets / relation-coded power set / aleph-zero and aleph-one / cardinality of the continuum / Continuum Hypothesis
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: ద్వితీయ-స్థాయి తర్కం మరియు సమితి సిద్ధాంతం / సమితులను పోల్చడం / సమితుల పరిమాణాలు / సంబంధం ద్వారా సంకేతీకరించిన ఘాత సమితి / అలెఫ్-సున్నా మరియు అలెఫ్-ఒకటి / అవిచ్ఛిన్న సమితి పరిమాణం / అవిచ్ఛిన్న సమితి పరికల్పన
+
+- Exact implementation: OLP-0336; second-order-logic/sol-and-set-theory/sol-and-set-theory; content/second-order-logic/sol-and-set-theory/sol-and-set-theory.tex:8 ↔ translation/content/second-order-logic/sol-and-set-theory/sol-and-set-theory.tex:8 (OLP-0336-B004); printed/PDF page pending; OLP-0338; second-order-logic/sol-and-set-theory/comparing-sets; content/second-order-logic/sol-and-set-theory/comparing-sets.tex:11 ↔ translation/content/second-order-logic/sol-and-set-theory/comparing-sets.tex:11 (OLP-0338-B005); printed/PDF page pending; OLP-0339; second-order-logic/sol-and-set-theory/cardinalities; content/second-order-logic/sol-and-set-theory/cardinalities.tex:11 ↔ translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:11 (OLP-0339-B005); printed/PDF page pending; OLP-0339; second-order-logic/sol-and-set-theory/cardinalities; content/second-order-logic/sol-and-set-theory/cardinalities.tex:42-57 ↔ translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:48-68 (OLP-0339-B009); printed/PDF page pending; OLP-0340; second-order-logic/sol-and-set-theory/power-of-continuum; content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:11 ↔ translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:11 (OLP-0340-B005); printed/PDF page pending; OLP-0340; second-order-logic/sol-and-set-theory/power-of-continuum; content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:45-49 ↔ translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:49-56 (OLP-0340-B009); printed/PDF page pending; OLP-0340; second-order-logic/sol-and-set-theory/power-of-continuum; content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:88-99 ↔ translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:97-111 (OLP-0340-B013); printed/PDF page pending; OLP-0340; second-order-logic/sol-and-set-theory/power-of-continuum; content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:131-135 ↔ translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:147-152 (OLP-0340-B017); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P025, PDF 87, printed 80, Indirect-proof heading and worked derivation; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P028, PDF 92, printed 85, Unary predicates, binary relations and quantifier classification; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P033, PDF 40, printed 33, Inference section heading and definition; TE-P034, PDF 308, printed 301, Main point 5, Cartesian product definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P005 supplies Andhra Pradesh number and arithmetic exposition. TE-P008, TE-P010--TE-P011 and TE-P034 supply the distinct school-mathematics set, subset, power-set, relation and function register. TE-P003 and TE-P032 support mathematical definition, theorem and proof prose. TE-P018--TE-P019 and TE-P024--TE-P033 support formal logic, formulas, sentences, variables, quantifiers, individual domains, derivation and inference in the pre-bifurcation logic witness retained through its Telangana-hosted copy. These witnesses do not directly attest relation-coded power sets, the aleph hierarchy, continuum cardinality or the Continuum Hypothesis. The subset-comparison formulas, corrected Inf, Count and Aleph_1 definitions, coding relation, corrected Pow and Cont formulas, and CH/NCH characterizations in OLP-0336--OLP-0340 control those exact senses; TE-T005, TE-T014, TE-T027, TE-T028, TE-T051, TE-T075 and TE-T076 supply the edition's earlier reversible choices. కాంటర్ and ష్రోడర్--బెర్న్‌స్టైన్ are source eponyms; అలెఫ్ is the conventional name of the cardinal symbol. X, Y, Z, R, Inf, Count, Pow, Cont, CH, NCH and cardinal notation remain protected formal notation; no unexplained English technical headword remains in reader-facing prose
+
+- Alternatives: reuse the established set, subset, power-set, relation, function, equinumerosity and cardinality register while fixing relation coding, aleph levels and the continuum from the adjacent corrected formulas (chosen); leave the specialized set-theoretic headwords in untranslated English reader prose (rejected); collapse ordinary cardinality, aleph-one and continuum cardinality into one undifferentiated size notion (rejected because the definitions distinguish them); claim direct native attestation for relation-coded power sets, the aleph hierarchy or the Continuum Hypothesis (rejected because the corrected definitions and cardinality arguments control those senses)
+
+- Uncertainty: Low semantic uncertainty because the specialized notions are fixed by explicit corrected definitions, formulas and cardinality arguments; medium to high nomenclatural uncertainty for relation-coded power sets, the aleph hierarchy, continuum cardinality and the Continuum Hypothesis pending independent native specialist review
+
+- Please double-check: Please double-check whether “ద్వితీయ-స్థాయి తర్కం మరియు సమితి సిద్ధాంతం / సమితులను పోల్చడం / సమితుల పరిమాణాలు / సంబంధం ద్వారా సంకేతీకరించిన ఘాత సమితి / అలెఫ్-సున్నా మరియు అలెఫ్-ఒకటి / అవిచ్ఛిన్న సమితి పరిమాణం / అవిచ్ఛిన్న సమితి పరికల్పన” is idiomatic and technically standard for “second-order logic and set theory / comparing sets / cardinalities of sets / relation-coded power set / aleph-zero and aleph-one / cardinality of the continuum / Continuum Hypothesis” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -8551,3 +8575,171 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check that the finite-satisfiability proof bounds the indices occurring in Gamma_0 rather than claiming the full Gamma omits larger bounds.
+
+## REV-OLTESOLSET-001 — OLTESOLSET-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: made u an injective non-surjective self-map of X by adding range containment and restricting injectivity to X; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0339; second-order-logic/sol-and-set-theory/cardinalities; lines 20-29, definition of Inf(X) ↔ translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:20-32 (OLP-0339-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTESOLSET-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: made u an injective non-surjective self-map of X by adding range containment and restricting injectivity to X; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that Inf(X) now describes an injective non-surjective self-map of X, with range containment and injectivity both restricted to X.
+
+## REV-OLTESOLSET-002 — OLTESOLSET-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: added the enumerable empty case, restricted induction sets Y to subsets of X, and balanced the formula; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0339; second-order-logic/sol-and-set-theory/cardinalities; lines 31-40, definition of Count(X) ↔ translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:34-46 (OLP-0339-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTESOLSET-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: added the enumerable empty case, restricted induction sets Y to subsets of X, and balanced the formula; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that Count(X) includes the empty set, restricts induction sets Y to subsets of X, and has balanced delimiters.
+
+## REV-OLTESOLSET-003 — OLTESOLSET-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: closed the Y(x)-conditional before the second universal quantifier's closing bracket; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0340; second-order-logic/sol-and-set-theory/power-of-continuum; lines 51-67, definition of Pow(Y,R,X) ↔ translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:62-76 (OLP-0340-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTESOLSET-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: closed the Y(x)-conditional before the second universal quantifier's closing bracket; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the Y(x)-conditional in Pow(Y,R,X) closes before the second universal quantifier closes.
+
+## REV-OLTESOLSET-004 — OLTESOLSET-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: identified s(X), rather than the bound variable s(Z), as the set whose subsets are coded; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0340; second-order-logic/sol-and-set-theory/power-of-continuum; lines 113-120, proof that Cont(Y) expresses continuum size ↔ translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:125-135 (OLP-0340-B015); printed/PDF page pending
+
+- Authorities actually checked: OLTESOLSET-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: identified s(X), rather than the bound variable s(Z), as the set whose subsets are coded; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the Cont(Y) proof refers to subsets of the controlling base set s(X), not the bound variable s(Z).
+
+## REV-OLTESOLSET-005 — OLTESOLSET-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: added the universal range-in-Y clause so u is a bijection from the whole domain onto Y; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0340; second-order-logic/sol-and-set-theory/power-of-continuum; lines 123-129, characterization of a continuum-sized domain ↔ translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:137-145 (OLP-0340-B016); printed/PDF page pending
+
+- Authorities actually checked: OLTESOLSET-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: added the universal range-in-Y clause so u is a bijection from the whole domain onto Y; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the domain-to-Y witness has all values in Y, making it a bijection from the whole domain onto Y.
+
+## REV-OLTESOLSET-006 — OLTESOLSET-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restricted injectivity to arguments in X so the three clauses express a bijection from X onto Y without imposing a condition on the complements; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0338; second-order-logic/sol-and-set-theory/comparing-sets; lines 46-58, definition of equinumerosity ↔ translation/content/second-order-logic/sol-and-set-theory/comparing-sets.tex:49-64 (OLP-0338-B012); printed/PDF page pending
+
+- Authorities actually checked: OLTESOLSET-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restricted injectivity to arguments in X so the three clauses express a bijection from X onto Y without imposing a condition on the complements; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that the equinumerosity formula restricts injectivity to arguments in X, so it imposes no condition on the complements of X and Y.
+
+## REV-OLTESOLSET-007 — OLTESOLSET-007
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restricted the small-subset condition to proper subsets and required X itself to be infinite as well as not of size aleph-zero; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0339; second-order-logic/sol-and-set-theory/cardinalities; lines 49-57, definition of Aleph_1(X) ↔ translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:55-68 (OLP-0339-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTESOLSET-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restricted the small-subset condition to proper subsets and required X itself to be infinite as well as not of size aleph-zero; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check that Aleph_1(X) quantifies over proper subsets and also requires X itself to be infinite and not of size aleph-zero.

@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **332 of 722 source units drafted**. This readable view contains all 356 decisions and 666 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **337 of 722 source units drafted**. This readable view contains all 364 decisions and 681 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2211,6 +2211,39 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T076-OCC-007; OLP-0334; OLP-0334-B008; source upstream/content/second-order-logic/metatheory/compactness.tex:33-36 bytes 1137-1224 SHA-256 6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267; target translation/content/second-order-logic/metatheory/compactness.tex:33-37 bytes 2474-3090 SHA-256 6abcbda3b3259657dad0d99019023604abc8ecc7b2ba77150d41671ba2c5b215; reader page pending.
   - te-Telu-IN-TE-T076-OCC-008; OLP-0335; OLP-0335-B006; source upstream/content/second-order-logic/metatheory/loewenheim-skolem.tex:13-22 bytes 254-801 SHA-256 997505d0bb8de8bbc170192327c4ea5182773179e818d9ab41381471c30c5cff; target translation/content/second-order-logic/metatheory/loewenheim-skolem.tex:13-24 bytes 387-1897 SHA-256 ea976e59ff2f15d1dd1aa5c446b24f9de687b841601acb5583d42ca41968182a; reader page pending.
   - te-Telu-IN-TE-T076-OCC-009; OLP-0335; OLP-0335-B006; source upstream/content/second-order-logic/metatheory/loewenheim-skolem.tex:13-22 bytes 254-801 SHA-256 997505d0bb8de8bbc170192327c4ea5182773179e818d9ab41381471c30c5cff; target translation/content/second-order-logic/metatheory/loewenheim-skolem.tex:13-24 bytes 387-1897 SHA-256 ea976e59ff2f15d1dd1aa5c446b24f9de687b841601acb5583d42ca41968182a; reader page pending.
+
+## te-Telu-IN-TE-T077 — second-order logic and set theory / comparing sets / cardinalities of sets / relation-coded power set / aleph-zero and aleph-one / cardinality of the continuum / Continuum Hypothesis
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: ద్వితీయ-స్థాయి తర్కం మరియు సమితి సిద్ధాంతం / సమితులను పోల్చడం / సమితుల పరిమాణాలు / సంబంధం ద్వారా సంకేతీకరించిన ఘాత సమితి / అలెఫ్-సున్నా మరియు అలెఫ్-ఒకటి / అవిచ్ఛిన్న సమితి పరిమాణం / అవిచ్ఛిన్న సమితి పరికల్పన
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “second-order logic and set theory / comparing sets / cardinalities of sets / relation-coded power set / aleph-zero and aleph-one / cardinality of the continuum / Continuum Hypothesis” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low semantic uncertainty because the specialized notions are fixed by explicit corrected definitions, formulas and cardinality arguments; medium to high nomenclatural uncertainty for relation-coded power sets, the aleph hierarchy, continuum cardinality and the Continuum Hypothesis pending independent native specialist review
+
+- Rationale: TE-P005 supplies Andhra Pradesh number and arithmetic exposition. TE-P008, TE-P010--TE-P011 and TE-P034 supply the distinct school-mathematics set, subset, power-set, relation and function register. TE-P003 and TE-P032 support mathematical definition, theorem and proof prose. TE-P018--TE-P019 and TE-P024--TE-P033 support formal logic, formulas, sentences, variables, quantifiers, individual domains, derivation and inference in the pre-bifurcation logic witness retained through its Telangana-hosted copy. These witnesses do not directly attest relation-coded power sets, the aleph hierarchy, continuum cardinality or the Continuum Hypothesis. The subset-comparison formulas, corrected Inf, Count and Aleph_1 definitions, coding relation, corrected Pow and Cont formulas, and CH/NCH characterizations in OLP-0336--OLP-0340 control those exact senses; TE-T005, TE-T014, TE-T027, TE-T028, TE-T051, TE-T075 and TE-T076 supply the edition's earlier reversible choices. కాంటర్ and ష్రోడర్--బెర్న్‌స్టైన్ are source eponyms; అలెఫ్ is the conventional name of the cardinal symbol. X, Y, Z, R, Inf, Count, Pow, Cont, CH, NCH and cardinal notation remain protected formal notation; no unexplained English technical headword remains in reader-facing prose
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P025 [checked_context_only], PDF page 87; printed page 80; Indirect-proof heading and worked derivation; Direct indirect-proof and formal-proof register; no direct tableau or assumption-discharge label. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P028 [checked_context_only], PDF page 92; printed page 85; Unary predicates, binary relations and quantifier classification; Direct quantifier taxonomy and predicate/relation context. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C005:TE-P033 [checked_context_only], PDF page 40; printed page 33; Inference section heading and definition; Direct inference and explanatory register; derivation headword is separately witnessed at TE-P024. | TE-C004:TE-P034 [checked_context_only], PDF page 308; printed page 301; Main point 5, Cartesian product definition; Direct ordered-pair and Cartesian-product terminology; singular క్రమయుగ్మం is a transparent inflection.
+
+- Alternatives: leave the specialized set-theoretic headwords in untranslated English reader prose [rejected: rejected] | collapse ordinary cardinality, aleph-one and continuum cardinality into one undifferentiated size notion [rejected: rejected because the definitions distinguish them] | claim direct native attestation for relation-coded power sets, the aleph hierarchy or the Continuum Hypothesis [rejected: rejected because the corrected definitions and cardinality arguments control those senses]
+
+- Review question: Please double-check whether “ద్వితీయ-స్థాయి తర్కం మరియు సమితి సిద్ధాంతం / సమితులను పోల్చడం / సమితుల పరిమాణాలు / సంబంధం ద్వారా సంకేతీకరించిన ఘాత సమితి / అలెఫ్-సున్నా మరియు అలెఫ్-ఒకటి / అవిచ్ఛిన్న సమితి పరిమాణం / అవిచ్ఛిన్న సమితి పరికల్పన” is idiomatic and technically standard for “second-order logic and set theory / comparing sets / cardinalities of sets / relation-coded power set / aleph-zero and aleph-one / cardinality of the continuum / Continuum Hypothesis” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T077-OCC-001; OLP-0336; OLP-0336-B004; source upstream/content/second-order-logic/sol-and-set-theory/sol-and-set-theory.tex:8 bytes 139-195 SHA-256 304f9bcabacf05d66b95b6cdcc38a3fa4fe9b633248dfae7cd4247af62da5316; target translation/content/second-order-logic/sol-and-set-theory/sol-and-set-theory.tex:8 bytes 139-278 SHA-256 729395e2c78bc3aaa8b1488668eaf667458aacc5074b8c840ca9f0322f8b36b2; reader page pending.
+  - te-Telu-IN-TE-T077-OCC-002; OLP-0338; OLP-0338-B005; source upstream/content/second-order-logic/sol-and-set-theory/comparing-sets.tex:11 bytes 185-212 SHA-256 d64defa142c5d31762b286b3e9c94fbe278e6462d8f417388b2405383e73b330; target translation/content/second-order-logic/sol-and-set-theory/comparing-sets.tex:11 bytes 185-244 SHA-256 36b09277507cdcb60c3935ac9b83994e4285c9ab126b9e531235de0baca674dc; reader page pending.
+  - te-Telu-IN-TE-T077-OCC-003; OLP-0339; OLP-0339-B005; source upstream/content/second-order-logic/sol-and-set-theory/cardinalities.tex:11 bytes 184-218 SHA-256 2383760cd26cb2fa42f968483e74a90dfd4a1e5de3361d21322508282bf588b6; target translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:11 bytes 184-243 SHA-256 3e49f8df16c5acdc81b4964f9374961193888d04dc0449da987c696d14a604dc; reader page pending.
+  - te-Telu-IN-TE-T077-OCC-004; OLP-0339; OLP-0339-B009; source upstream/content/second-order-logic/sol-and-set-theory/cardinalities.tex:42-57 bytes 1147-2193 SHA-256 2383760cd26cb2fa42f968483e74a90dfd4a1e5de3361d21322508282bf588b6; target translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:48-68 bytes 3777-7182 SHA-256 3e49f8df16c5acdc81b4964f9374961193888d04dc0449da987c696d14a604dc; reader page pending.
+  - te-Telu-IN-TE-T077-OCC-005; OLP-0340; OLP-0340-B005; source upstream/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:11 bytes 189-228 SHA-256 386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990; target translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:11 bytes 189-270 SHA-256 78f51416f510cd966c6c401d40da54dc51f43a3307a1fbd13e38ca9450af418e; reader page pending.
+  - te-Telu-IN-TE-T077-OCC-006; OLP-0340; OLP-0340-B009; source upstream/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:45-49 bytes 1875-2218 SHA-256 386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990; target translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:49-56 bytes 4025-4942 SHA-256 78f51416f510cd966c6c401d40da54dc51f43a3307a1fbd13e38ca9450af418e; reader page pending.
+  - te-Telu-IN-TE-T077-OCC-007; OLP-0340; OLP-0340-B013; source upstream/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:88-99 bytes 3426-4143 SHA-256 386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990; target translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:97-111 bytes 7631-9540 SHA-256 78f51416f510cd966c6c401d40da54dc51f43a3307a1fbd13e38ca9450af418e; reader page pending.
+  - te-Telu-IN-TE-T077-OCC-008; OLP-0340; OLP-0340-B017; source upstream/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:131-135 bytes 5335-5527 SHA-256 386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990; target translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:147-152 bytes 12959-13364 SHA-256 78f51416f510cd966c6c401d40da54dc51f43a3307a1fbd13e38ca9450af418e; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -9569,3 +9602,185 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTESOLMET-004-OCC-001; OLP-0334; OLP-0334-B009; source upstream/content/second-order-logic/metatheory/compactness.tex:55-59 bytes 1807-2079 SHA-256 6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267; target translation/content/second-order-logic/metatheory/compactness.tex:55-64 bytes 4137-5640 SHA-256 6abcbda3b3259657dad0d99019023604abc8ecc7b2ba77150d41671ba2c5b215; reader page pending.
+
+## te-Telu-IN-OLTESOLSET-001 — OLTESOLSET-001: confirmed infinite subset formula missing range and relative injectivity
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: made u an injective non-surjective self-map of X by adding range containment and restricting injectivity to X; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed infinite subset formula missing range and relative injectivity at lines 20-29, definition of Inf(X), preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTESOLSET-20260921:OLTESOLSET-001 [checked_supports], content/second-order-logic/sol-and-set-theory/cardinalities.tex; lines 20-29, definition of Inf(X); confirmed_infinite_subset_formula_missing_range_and_relative_injectivity; made u an injective non-surjective self-map of X by adding range containment and restricting injectivity to X; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that Inf(X) now describes an injective non-surjective self-map of X, with range containment and injectivity both restricted to X.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTESOLSET-001-OCC-001; OLP-0339; OLP-0339-B007; source upstream/content/second-order-logic/sol-and-set-theory/cardinalities.tex:20-29 bytes 467-799 SHA-256 2383760cd26cb2fa42f968483e74a90dfd4a1e5de3361d21322508282bf588b6; target translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:20-32 bytes 910-2342 SHA-256 3e49f8df16c5acdc81b4964f9374961193888d04dc0449da987c696d14a604dc; reader page pending.
+
+## te-Telu-IN-OLTESOLSET-002 — OLTESOLSET-002: confirmed enumerable subset formula scope empty case and delimiter errors
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: added the enumerable empty case, restricted induction sets Y to subsets of X, and balanced the formula; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed enumerable subset formula scope empty case and delimiter errors at lines 31-40, definition of Count(X), preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTESOLSET-20260921:OLTESOLSET-002 [checked_supports], content/second-order-logic/sol-and-set-theory/cardinalities.tex; lines 31-40, definition of Count(X); confirmed_enumerable_subset_formula_scope_empty_case_and_delimiter_errors; added the enumerable empty case, restricted induction sets Y to subsets of X, and balanced the formula; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that Count(X) includes the empty set, restricts induction sets Y to subsets of X, and has balanced delimiters.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTESOLSET-002-OCC-001; OLP-0339; OLP-0339-B008; source upstream/content/second-order-logic/sol-and-set-theory/cardinalities.tex:31-40 bytes 800-1146 SHA-256 2383760cd26cb2fa42f968483e74a90dfd4a1e5de3361d21322508282bf588b6; target translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:34-46 bytes 2343-3776 SHA-256 3e49f8df16c5acdc81b4964f9374961193888d04dc0449da987c696d14a604dc; reader page pending.
+
+## te-Telu-IN-OLTESOLSET-003 — OLTESOLSET-003: confirmed power set coding formula missing delimiter
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: closed the Y(x)-conditional before the second universal quantifier's closing bracket; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed power set coding formula missing delimiter at lines 51-67, definition of Pow(Y,R,X), preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTESOLSET-20260921:OLTESOLSET-003 [checked_supports], content/second-order-logic/sol-and-set-theory/power-of-continuum.tex; lines 51-67, definition of Pow(Y,R,X); confirmed_power_set_coding_formula_missing_delimiter; closed the Y(x)-conditional before the second universal quantifier's closing bracket; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the Y(x)-conditional in Pow(Y,R,X) closes before the second universal quantifier closes.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTESOLSET-003-OCC-001; OLP-0340; OLP-0340-B010; source upstream/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:51-67 bytes 2219-2771 SHA-256 386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990; target translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:62-76 bytes 5056-6467 SHA-256 78f51416f510cd966c6c401d40da54dc51f43a3307a1fbd13e38ca9450af418e; reader page pending.
+
+## te-Telu-IN-OLTESOLSET-004 — OLTESOLSET-004: confirmed wrong base set in continuum coding proof
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: identified s(X), rather than the bound variable s(Z), as the set whose subsets are coded; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed wrong base set in continuum coding proof at lines 113-120, proof that Cont(Y) expresses continuum size, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTESOLSET-20260921:OLTESOLSET-004 [checked_supports], content/second-order-logic/sol-and-set-theory/power-of-continuum.tex; lines 113-120, proof that Cont(Y) expresses continuum size; confirmed_wrong_base_set_in_continuum_coding_proof; identified s(X), rather than the bound variable s(Z), as the set whose subsets are coded; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the Cont(Y) proof refers to subsets of the controlling base set s(X), not the bound variable s(Z).
+
+- Occurrences:
+
+  - te-Telu-IN-OLTESOLSET-004-OCC-001; OLP-0340; OLP-0340-B015; source upstream/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:113-120 bytes 4519-4972 SHA-256 386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990; target translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:125-135 bytes 9992-11670 SHA-256 78f51416f510cd966c6c401d40da54dc51f43a3307a1fbd13e38ca9450af418e; reader page pending.
+
+## te-Telu-IN-OLTESOLSET-005 — OLTESOLSET-005: confirmed domain continuum bijection missing range condition
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: added the universal range-in-Y clause so u is a bijection from the whole domain onto Y; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed domain continuum bijection missing range condition at lines 123-129, characterization of a continuum-sized domain, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTESOLSET-20260921:OLTESOLSET-005 [checked_supports], content/second-order-logic/sol-and-set-theory/power-of-continuum.tex; lines 123-129, characterization of a continuum-sized domain; confirmed_domain_continuum_bijection_missing_range_condition; added the universal range-in-Y clause so u is a bijection from the whole domain onto Y; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the domain-to-Y witness has all values in Y, making it a bijection from the whole domain onto Y.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTESOLSET-005-OCC-001; OLP-0340; OLP-0340-B016; source upstream/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:123-129 bytes 4985-5334 SHA-256 386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990; target translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:137-145 bytes 11671-12958 SHA-256 78f51416f510cd966c6c401d40da54dc51f43a3307a1fbd13e38ca9450af418e; reader page pending.
+
+## te-Telu-IN-OLTESOLSET-006 — OLTESOLSET-006: confirmed equinumerosity formula injectivity not restricted to source set
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restricted injectivity to arguments in X so the three clauses express a bijection from X onto Y without imposing a condition on the complements; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed equinumerosity formula injectivity not restricted to source set at lines 46-58, definition of equinumerosity, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTESOLSET-20260921:OLTESOLSET-006 [checked_supports], content/second-order-logic/sol-and-set-theory/comparing-sets.tex; lines 46-58, definition of equinumerosity; confirmed_equinumerosity_formula_injectivity_not_restricted_to_source_set; restricted injectivity to arguments in X so the three clauses express a bijection from X onto Y without imposing a condition on the complements; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that the equinumerosity formula restricts injectivity to arguments in X, so it imposes no condition on the complements of X and Y.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTESOLSET-006-OCC-001; OLP-0338; OLP-0338-B011; source upstream/content/second-order-logic/sol-and-set-theory/comparing-sets.tex:46-58 bytes 1255-1704 SHA-256 d64defa142c5d31762b286b3e9c94fbe278e6462d8f417388b2405383e73b330; target translation/content/second-order-logic/sol-and-set-theory/comparing-sets.tex:49-64 bytes 2173-3922 SHA-256 36b09277507cdcb60c3935ac9b83994e4285c9ab126b9e531235de0baca674dc; reader page pending.
+
+## te-Telu-IN-OLTESOLSET-007 — OLTESOLSET-007: confirmed aleph one formula nonproper subset and finite case errors
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restricted the small-subset condition to proper subsets and required X itself to be infinite as well as not of size aleph-zero; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed aleph one formula nonproper subset and finite case errors at lines 49-57, definition of Aleph_1(X), preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTESOLSET-20260921:OLTESOLSET-007 [checked_supports], content/second-order-logic/sol-and-set-theory/cardinalities.tex; lines 49-57, definition of Aleph_1(X); confirmed_aleph_one_formula_nonproper_subset_and_finite_case_errors; restricted the small-subset condition to proper subsets and required X itself to be infinite as well as not of size aleph-zero; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check that Aleph_1(X) quantifies over proper subsets and also requires X itself to be infinite and not of size aleph-zero.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTESOLSET-007-OCC-001; OLP-0339; OLP-0339-B009; source upstream/content/second-order-logic/sol-and-set-theory/cardinalities.tex:49-57 bytes 1604-2193 SHA-256 2383760cd26cb2fa42f968483e74a90dfd4a1e5de3361d21322508282bf588b6; target translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:55-68 bytes 4995-7182 SHA-256 3e49f8df16c5acdc81b4964f9374961193888d04dc0449da987c696d14a604dc; reader page pending.

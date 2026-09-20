@@ -1,0 +1,119 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTESOLSET-20260921",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0338",
+      "OLP-0339",
+      "OLP-0340"
+    ],
+    "finding_count": 7
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTESOLSET-001",
+      "unit_id": "OLP-0339",
+      "classification": "confirmed_infinite_subset_formula_missing_range_and_relative_injectivity",
+      "source": {
+        "path": "content/second-order-logic/sol-and-set-theory/cardinalities.tex",
+        "bytes": 2480,
+        "sha256": "2383760cd26cb2fa42f968483e74a90dfd4a1e5de3361d21322508282bf588b6",
+        "locator": "lines 20-29, definition of Inf(X)"
+      },
+      "finding": "The formula requires u to be injective on the whole structure but neither maps X into X nor restricts injectivity to X, so a finite X inside a larger domain can satisfy it.",
+      "controlling_evidence": "Dedekind infinitude of X requires an injective non-surjective self-map of X: values of arguments in X remain in X, equality of such values forces equality of the X-arguments, and at least one element of X is omitted.",
+      "required_translation_handling": "State all three subset-relative clauses and add an adjacent OLTESOLSET-001 disclosure."
+    },
+    {
+      "finding_id": "OLTESOLSET-002",
+      "unit_id": "OLP-0339",
+      "classification": "confirmed_enumerable_subset_formula_scope_empty_case_and_delimiter_errors",
+      "source": {
+        "path": "content/second-order-logic/sol-and-set-theory/cardinalities.tex",
+        "bytes": 2480,
+        "sha256": "2383760cd26cb2fa42f968483e74a90dfd4a1e5de3361d21322508282bf588b6",
+        "locator": "lines 31-40, definition of Count(X)"
+      },
+      "finding": "The formula omits the enumerable empty set, quantifies the induction set Y over the whole domain rather than subsets of X, and closes its final bracket and parenthesis in the wrong order.",
+      "controlling_evidence": "The edition's enumerable-set definition includes the empty set. For nonempty X, a base point and self-map enumerate X exactly when no proper subset Y of X contains the base point and is closed under that map.",
+      "required_translation_handling": "Add the empty alternative, require Y to be a subset of X in the induction antecedent, balance the expression, and add an adjacent OLTESOLSET-002 disclosure."
+    },
+    {
+      "finding_id": "OLTESOLSET-003",
+      "unit_id": "OLP-0340",
+      "classification": "confirmed_power_set_coding_formula_missing_delimiter",
+      "source": {
+        "path": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
+        "bytes": 6256,
+        "sha256": "386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990",
+        "locator": "lines 51-67, definition of Pow(Y,R,X)"
+      },
+      "finding": "The second universal clause closes the quantifier brackets without closing the conditional that begins with Y(x).",
+      "controlling_evidence": "The accompanying prose says that every x in Y codes a subset of X, which is the complete conditional Y(x) implies the universal coding condition.",
+      "required_translation_handling": "Close the outer conditional before the x-quantifier bracket and add an adjacent OLTESOLSET-003 disclosure."
+    },
+    {
+      "finding_id": "OLTESOLSET-004",
+      "unit_id": "OLP-0340",
+      "classification": "confirmed_wrong_base_set_in_continuum_coding_proof",
+      "source": {
+        "path": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
+        "bytes": 6256,
+        "sha256": "386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990",
+        "locator": "lines 113-120, proof that Cont(Y) expresses continuum size"
+      },
+      "finding": "The proof says the coding association targets subsets of s(Z), although Z is only a bound variable and X is the base set whose power set is coded.",
+      "controlling_evidence": "Both Pow(Y,R,X) and the preceding sentences consistently identify s(X) as the base set and its subsets as the coded objects.",
+      "required_translation_handling": "Replace s(Z) by s(X) in the proof explanation and add an adjacent OLTESOLSET-004 disclosure."
+    },
+    {
+      "finding_id": "OLTESOLSET-005",
+      "unit_id": "OLP-0340",
+      "classification": "confirmed_domain_continuum_bijection_missing_range_condition",
+      "source": {
+        "path": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
+        "bytes": 6256,
+        "sha256": "386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990",
+        "locator": "lines 123-129, characterization of a continuum-sized domain"
+      },
+      "finding": "The proposed witness u is injective and every element of Y is in its range, but the formula never requires the range of u to lie in Y; the identity function therefore satisfies the weak clauses for arbitrary Y.",
+      "controlling_evidence": "Equality between the domain cardinality and the continuum-coded set Y requires a bijection from the entire domain onto Y, so every u(x) must belong to Y in addition to injectivity and surjectivity onto Y.",
+      "required_translation_handling": "Add the missing universal range-in-Y clause and an adjacent OLTESOLSET-005 disclosure."
+    },
+    {
+      "finding_id": "OLTESOLSET-006",
+      "unit_id": "OLP-0338",
+      "classification": "confirmed_equinumerosity_formula_injectivity_not_restricted_to_source_set",
+      "source": {
+        "path": "content/second-order-logic/sol-and-set-theory/comparing-sets.tex",
+        "bytes": 2564,
+        "sha256": "d64defa142c5d31762b286b3e9c94fbe278e6462d8f417388b2405383e73b330",
+        "locator": "lines 46-58, definition of equinumerosity"
+      },
+      "finding": "The formula requires u to be injective on the entire structure domain. Equinumerous subsets X and Y can have complements of different sizes, so a bijection from X onto Y need not extend to an injective total endofunction of the domain.",
+      "controlling_evidence": "A bijection from X onto Y requires range containment for arguments in X, injectivity only between arguments in X, and surjectivity from X onto Y; values on elements outside X are irrelevant.",
+      "required_translation_handling": "Restrict the injectivity antecedent to X(x) and X(y), and add an adjacent OLTESOLSET-006 disclosure."
+    },
+    {
+      "finding_id": "OLTESOLSET-007",
+      "unit_id": "OLP-0339",
+      "classification": "confirmed_aleph_one_formula_nonproper_subset_and_finite_case_errors",
+      "source": {
+        "path": "content/second-order-logic/sol-and-set-theory/cardinalities.tex",
+        "bytes": 2480,
+        "sha256": "2383760cd26cb2fa42f968483e74a90dfd4a1e5de3361d21322508282bf588b6",
+        "locator": "lines 49-57, definition of Aleph_1(X)"
+      },
+      "finding": "The universal condition includes Y = X, which forces any satisfying X to be finite or of size aleph-zero, while the final conjunct excludes the latter; consequently finite sets satisfy the formula and an aleph-one-sized set does not.",
+      "controlling_evidence": "A set has size aleph-one exactly when it is infinite and not of size aleph-zero while every proper subset is finite or of size aleph-zero.",
+      "required_translation_handling": "Restrict the universal condition to proper subsets, add infinitude of X, and add an adjacent OLTESOLSET-007 disclosure."
+    }
+  ]
+}

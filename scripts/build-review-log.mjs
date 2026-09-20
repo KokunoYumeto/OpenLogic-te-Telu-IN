@@ -277,6 +277,16 @@ locations['TE-T076']=[
  L('content/second-order-logic/metatheory/loewenheim-skolem.tex',13,18,13,19,'Downward','అధోముఖ'),
  L('content/second-order-logic/metatheory/loewenheim-skolem.tex',19,21,19,23,'Upward','ఊర్ధ్వముఖ')
 ];
+locations['TE-T077']=[
+ L('content/second-order-logic/sol-and-set-theory/sol-and-set-theory.tex',8,8,8,8,'Second-order Logic and Set Theory','ద్వితీయ-స్థాయి తర్కం మరియు సమితి సిద్ధాంతం'),
+ L('content/second-order-logic/sol-and-set-theory/comparing-sets.tex',11,11,11,11,'Comparing Sets','సమితులను పోల్చడం'),
+ L('content/second-order-logic/sol-and-set-theory/cardinalities.tex',11,11,11,11,'Cardinalities of Sets','సమితుల పరిమాణాలు'),
+ L('content/second-order-logic/sol-and-set-theory/cardinalities.tex',42,57,48,69,"Cantor's Theorem",'కాంటర్ సిద్ధాంతం'),
+ L('content/second-order-logic/sol-and-set-theory/power-of-continuum.tex',11,11,11,11,'The Power of the Continuum','అవిచ్ఛిన్న సమితి పరిమాణం'),
+ L('content/second-order-logic/sol-and-set-theory/power-of-continuum.tex',45,49,49,56,'$R$-code','సంకేతీకరించగలదు'),
+ L('content/second-order-logic/sol-and-set-theory/power-of-continuum.tex',88,98,97,110,'The size of','అవిచ్ఛిన్న సమితి పరిమాణం'),
+ L('content/second-order-logic/sol-and-set-theory/power-of-continuum.tex',131,139,147,156,'Continuum Hypothesis','అవిచ్ఛిన్న సమితి పరికల్పన')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -338,6 +348,7 @@ alternatives['TE-T073']=['reuse the established theory, consistency, completenes
 alternatives['TE-T074']=['reuse the established truth, formula, sentence, derivation and consistency register, with fixed-point, arithmetized provability, reflection and undefinability senses fixed by the adjacent constructions (chosen)','leave the specialized incompleteness and provability headwords in untranslated English reader prose (rejected)','collapse truth, provability and derivability into one undifferentiated notion (rejected because the chapter distinguishes them)','claim direct canon attestation for the fixed-point lemma or the Rosser, L\u00f6b and Tarski theorems (rejected because the frozen definitions and proofs control those senses)'];
 alternatives['TE-T075']=['reuse the established set, relation, function, formula, sentence and semantic-consequence register while fixing the second-order extensions from the adjacent formation and satisfaction clauses (chosen)','leave the specialized second-order semantics and expressive-power headwords in untranslated English reader prose (rejected)','collapse relations, functions, relation variables and function variables into one undifferentiated category (rejected because the typing clauses distinguish them)','claim direct native attestation for standard second-order semantics, transitive closure or Dedekind infinitude (rejected because the frozen definitions, examples and proofs control those senses)'];
 alternatives['TE-T076']=['reuse the established arithmetic, induction, axiomatizability, compactness and Lowenheim--Skolem register while fixing the second-order failures from the adjacent axioms, reductions and countermodels (chosen)','leave the specialized metatheory and model-size headwords in untranslated English reader prose (rejected)','collapse undecidability, non-axiomatizability, non-compactness and Lowenheim--Skolem failure into one undifferentiated limitation (rejected because the proofs distinguish them)','claim direct native attestation for second-order categoricity or the upward and downward Lowenheim--Skolem compounds (rejected because the frozen axioms and countermodels control those senses)'];
+alternatives['TE-T077']=['reuse the established set, subset, power-set, relation, function, equinumerosity and cardinality register while fixing relation coding, aleph levels and the continuum from the adjacent corrected formulas (chosen)','leave the specialized set-theoretic headwords in untranslated English reader prose (rejected)','collapse ordinary cardinality, aleph-one and continuum cardinality into one undifferentiated size notion (rejected because the definitions distinguish them)','claim direct native attestation for relation-coded power sets, the aleph hierarchy or the Continuum Hypothesis (rejected because the corrected definitions and cardinality arguments control those senses)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -354,7 +365,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-21 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T076 record the Batch 025--Batch 037 consultations performed during reconciliation.';
+const phase='Evidence reconstruction through 2026-09-21 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T077 record the Batch 025--Batch 038 consultations performed during reconciliation.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -579,6 +590,13 @@ const correctionQuestions={
   ,'OLTESOLMET-002':'Please double-check that the repaired satisfaction expression closes its formula argument after the complete conditional P implies A.'
   ,'OLTESOLMET-003':'Please double-check that the non-compactness theorem has the unique label thm:sol-not-compact rather than the preceding undecidability label.'
   ,'OLTESOLMET-004':'Please double-check that the finite-satisfiability proof bounds the indices occurring in Gamma_0 rather than claiming the full Gamma omits larger bounds.'
+  ,'OLTESOLSET-001':'Please double-check that Inf(X) now describes an injective non-surjective self-map of X, with range containment and injectivity both restricted to X.'
+  ,'OLTESOLSET-002':'Please double-check that Count(X) includes the empty set, restricts induction sets Y to subsets of X, and has balanced delimiters.'
+  ,'OLTESOLSET-003':'Please double-check that the Y(x)-conditional in Pow(Y,R,X) closes before the second universal quantifier closes.'
+  ,'OLTESOLSET-004':'Please double-check that the Cont(Y) proof refers to subsets of the controlling base set s(X), not the bound variable s(Z).'
+  ,'OLTESOLSET-005':'Please double-check that the domain-to-Y witness has all values in Y, making it a bijection from the whole domain onto Y.'
+  ,'OLTESOLSET-006':'Please double-check that the equinumerosity formula restricts injectivity to arguments in X, so it imposes no condition on the complements of X and Y.'
+  ,'OLTESOLSET-007':'Please double-check that Aleph_1(X) quantifies over proper subsets and also requires X itself to be infinite and not of size aleph-zero.'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

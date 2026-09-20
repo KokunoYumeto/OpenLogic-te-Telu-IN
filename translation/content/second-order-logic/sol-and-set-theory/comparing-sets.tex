@@ -1,0 +1,88 @@
+% Part: second-order-logic
+% Chapter: sol-and-sets
+% Section: comparing-sets
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{set}{cmp}
+
+\olsection{సమితులను పోల్చడం}
+
+\begin{prop}
+\tetoken{సూత్రం}{!!{formula}} $\lforall[x][(X(x) \lif Y(x))]$ ఉపసమితి
+సంబంధాన్ని నిర్వచిస్తుంది; అంటే
+$\Sat{M}{\lforall[x][(X(x) \lif Y(x))]}[s]$ అయితేనే $s(X)
+\subseteq s(Y)$.
+\end{prop}
+
+\begin{prop}
+\tetoken{సూత్రం}{!!{formula}} $\lforall[x][(X(x) \liff Y(x))]$ సమితులపై
+తాదాత్మ్య సంబంధాన్ని నిర్వచిస్తుంది; అంటే
+$\Sat{M}{\lforall[x][(X(x) \liff Y(x))]}[s]$ అయితేనే
+$s(X) = s(Y)$.
+\end{prop}
+
+\begin{prop}
+\tetoken{సూత్రం}{!!{formula}} $\lexists[x][X(x)]$ శూన్యేతరం అనే ధర్మాన్ని
+నిర్వచిస్తుంది; అంటే $\Sat{M}{\lexists[x][X(x)]}[s]$ అయితేనే
+$s(X) \neq \emptyset$.
+\end{prop}
+
+$X$ సమితి $Y$ సమితిని పరిమాణంలో మించకపోవడం,
+$\cardle{X}{Y}$, అంటే \tetoken{ఒకటి-ఒకటి ప్రమేయం}{!!a{injective}}
+$f\colon X \to Y$ ఉండటం. ఒక ప్రమేయం ఒకటి-ఒకటి అని, అలాగే~$X$లోని
+ప్రవేశాలకు దాని విలువలు~$Y$లో ఉన్నాయని వ్యక్తం చేయగలం కాబట్టి,
+వ్యక్తి క్షేత్రపు ఉపసమితులపై పరిమాణంలో మించని సంబంధాన్ని కూడా
+నిర్వచించవచ్చు.
+
+\begin{prop}
+ఈ సూత్రం
+\[
+\lexists[u][(\lforall[x][(X(x) \lif Y(u(x)))] \land \lforall[x][\lforall[y][(\eq[u(x)][u(y)] \lif
+      \eq[x][y])]])]
+\]
+పరిమాణంలో మించని సంబంధాన్ని నిర్వచిస్తుంది.
+\end{prop}
+
+రెండు సమితులు ఒకే పరిమాణం గలవి, లేదా “సమసంఖ్యాకాలు,”
+$\cardeq{X}{Y}$, అంటే \tetoken{ఒక ద్విగుణ ప్రమేయం}{!!a{bijective}}
+$f\colon X \to Y$ ఉండటం.
+
+\begin{prop}
+ఈ సూత్రం
+\begin{multline*}
+  \lexists[u][(\lforall[x][(X(x) \lif Y(u(x)))] \land {}\\
+    \lforall[x][\lforall[y][((X(x) \land X(y) \land
+      \eq[u(x)][u(y)]) \lif \eq[x][y])]]
+  \land {} \\\lforall[y][(Y(y) \lif \lexists[x][(X(x)
+      \land \eq[y][u(x)])])])]
+\end{multline*}
+సమసంఖ్యాక సంబంధాన్ని నిర్వచిస్తుంది.
+\sourcecorrection{OLTESOLSET-006}{ఆంగ్ల మూలంలోని సమసంఖ్యాకత సూత్రం $u$ను మొత్తం వ్యక్తి క్షేత్రంపై ఒకటి-ఒకటిగా కోరింది. $X$, $Y$లకు ఒకే పరిమాణం ఉన్నా వాటి పూరకాలకు వేర్వేరు పరిమాణాలు ఉండవచ్చు కాబట్టి, $X$ నుంచి $Y$కు ఉన్న ద్విగుణ ప్రమేయం మొత్తం వ్యక్తి క్షేత్రంపై ఒకటి-ఒకటి ప్రమేయంగా విస్తరించకపోవచ్చు. ఒకటి-ఒకటితన నిబంధనను $X$ ప్రవేశాలకు పరిమితం చేశాం; మిగతా రెండు నిబంధనలు $u$ను $X$ నుంచి $Y$పైకి ద్విగుణ ప్రమేయంగా చేస్తాయి.}
+\end{prop}
+
+ఈ \tetoken{సూత్రాలను}{!!{formula}s} వరుసగా $X \subseteq Y$,
+$X = Y$, $X \neq \emptyset$, $\cardle{X}{Y}$, ఇంకా
+$\cardeq{X}{Y}$ అని సంక్షిప్తంగా రాస్తాం. (సమితులు $X$, $Y$ గురించి
+అనధికారికంగా మాట్లాడేటప్పుడు కూడా ఇదే సంజ్ఞామానాన్ని వాడతాం కాబట్టి
+ఇది కొంత గందరగోళంగా ఉండవచ్చు---కానీ ఇక్కడ ఈ సంజ్ఞామానం ఏకస్థాన
+సంబంధ చరాలు $X$,~$Y$ ఉన్న ద్వితీయ-స్థాయి తర్క
+\tetoken{సూత్రాలకు}{!!{formula}s} సంక్షిప్త రూపం.)
+
+\begin{prop}
+\tetoken{వాక్యం}{!!{sentence}} $\lforall[X][\lforall[Y][((\cardle{X}{Y} \land
+    \cardle{Y}{X}) \lif \cardeq{X}{Y})]]$ చెల్లుబాటవుతుంది.
+\end{prop}
+
+\begin{proof}
+ఏ ఉపసమితులు $X \subseteq \Domain{M}$, $Y \subseteq \Domain{M}$కైనా
+$\cardle{X}{Y}$, $\cardle{Y}{X}$ అయితే $\cardeq{X}{Y}$ అయ్యే
+పక్షంలో, \tetoken{వాక్యం}{!!{sentence}} \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct{M}$లో
+సంతృప్తిపరచబడుతుంది. కానీ ఇది \emph{ఏ} సమితులు $X$, $Y$కైనా
+వర్తిస్తుంది---ఇదే ష్రోడర్--బెర్న్‌స్టైన్ సిద్ధాంతం.
+\end{proof}
+
+
+\end{document}

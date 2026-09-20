@@ -1,0 +1,960 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-20T23:42:53.677Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Text/intertext/mbox prose is masked; nested inline math is compared per clause independently of language-specific word order.",
+  "units": [
+    {
+      "unit_id": "OLP-0336",
+      "source_path": "content/second-order-logic/sol-and-set-theory/sol-and-set-theory.tex",
+      "source_sha256": "304f9bcabacf05d66b95b6cdcc38a3fa4fe9b633248dfae7cd4247af62da5316",
+      "translation_sha256": "729395e2c78bc3aaa8b1488668eaf667458aacc5074b8c840ca9f0322f8b36b2",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport{introduction}",
+        "\\olimport{comparing-sets}",
+        "\\olimport{cardinalities}",
+        "\\olimport{power-of-continuum}"
+      ],
+      "identifiers_target_core": [
+        "\\olimport{introduction}",
+        "\\olimport{comparing-sets}",
+        "\\olimport{cardinalities}",
+        "\\olimport{power-of-continuum}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 291,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: second-order-logic\n% Chapter: sol-and-set-theory",
+          "target_start": "% Part: second-order-logic\n% Chapter: sol-and-set-theory"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olchapter{sol}{set}{Second-order Logic and Set Theory}",
+          "target_start": "\\olchapter{sol}{set}{ద్వితీయ-స్థాయి తర్కం మరియు సమితి సిద్ధాంతం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{editorial}\nThis section deals with coding powersets and the continuum in\nsecond-order logic. The result",
+          "target_start": "\\begin{editorial}\nఈ విభాగం ద్వితీయ-స్థాయి తర్కంలో ఘాత సమితులను, అవిచ్ఛిన్న సమితిని\nసంకేతీకరించడం గురించి చర్చి"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport{introduction}",
+          "target_start": "\\olimport{introduction}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport{comparing-sets}",
+          "target_start": "\\olimport{comparing-sets}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\olimport{cardinalities}",
+          "target_start": "\\olimport{cardinalities}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport{power-of-continuum}",
+          "target_start": "\\olimport{power-of-continuum}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\OLEndChapterHook",
+          "target_start": "\\OLEndChapterHook"
+        },
+        {
+          "index": 11,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{sol}{set}",
+        "\\olimport{introduction}",
+        "\\olimport{comparing-sets}",
+        "\\olimport{cardinalities}",
+        "\\olimport{power-of-continuum}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{sol}{set}",
+        "\\olimport{introduction}",
+        "\\olimport{comparing-sets}",
+        "\\olimport{cardinalities}",
+        "\\olimport{power-of-continuum}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0337",
+      "source_path": "content/second-order-logic/sol-and-set-theory/introduction.tex",
+      "source_sha256": "3da2e59a89619b402e35fc14fb67b2c94584e503450b6253d22deca5f456331d",
+      "translation_sha256": "51408eb38715c4608021c28c734c4e0c0abd62826de4990ecc756e38a77949bb",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sol}{set}{int}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{sol}{set}{int}"
+      ],
+      "tokens_source": {
+        "!!{predicate}": 1
+      },
+      "tokens_target": {
+        "!!{predicate}": 1
+      },
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 479,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: second-order-logic\n% Chapter: sol-and-sets\n% Section: introduction",
+          "target_start": "% Part: second-order-logic\n% Chapter: sol-and-sets\n% Section: introduction"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sol}{set}{int}",
+          "target_start": "\\olfileid{sol}{set}{int}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Introduction}",
+          "target_start": "\\olsection{పరిచయం}"
+        },
+        {
+          "index": 6,
+          "source_start": "Since second-order logic can quantify over subsets of the domain as\nwell as functions, it is to be expected th",
+          "target_start": "ద్వితీయ-స్థాయి తర్కంలో ప్రమేయాలతో పాటు వ్యక్తి క్షేత్రపు ఉపసమితులపై\nకూడా పరిమాణీకరించవచ్చు కాబట్టి, సమితి సిద్"
+        },
+        {
+          "index": 7,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sol}{set}{int}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sol}{set}{int}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0338",
+      "source_path": "content/second-order-logic/sol-and-set-theory/comparing-sets.tex",
+      "source_sha256": "d64defa142c5d31762b286b3e9c94fbe278e6462d8f417388b2405383e73b330",
+      "translation_sha256": "36b09277507cdcb60c3935ac9b83994e4285c9ab126b9e531235de0baca674dc",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sol}{set}{cmp}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{sol}{set}{cmp}"
+      ],
+      "tokens_source": {
+        "!!a{bijective}": 1,
+        "!!a{injective}": 1,
+        "!!a{structure}": 1,
+        "!!{formula}": 3,
+        "!!{formula}s": 2,
+        "!!{sentence}": 2
+      },
+      "tokens_target": {
+        "!!a{bijective}": 1,
+        "!!a{injective}": 1,
+        "!!a{structure}": 1,
+        "!!{formula}": 3,
+        "!!{formula}s": 2,
+        "!!{sentence}": 2
+      },
+      "math_source": [
+        "$\\lforall[x][(X(x)\\lifY(x))]$",
+        "$\\Sat{M}{\\lforall[x][(X(x)\\lifY(x))]}[s]$",
+        "$s(X)\\subseteqs(Y)$",
+        "$\\lforall[x][(X(x)\\liffY(x))]$",
+        "$\\Sat{M}{\\lforall[x][(X(x)\\liffY(x))]}[s]$",
+        "$s(X)=s(Y)$",
+        "$\\lexists[x][X(x)]$",
+        "$\\Sat{M}{\\lexists[x][X(x)]}[s]$",
+        "$s(X)\\neq\\emptyset$",
+        "$X$",
+        "$Y$",
+        "$\\cardle{X}{Y}$",
+        "$f\\colonX\\toY$",
+        "$X$",
+        "$Y$",
+        "\\[\\lexists[u][(\\lforall[x][(X(x)\\lifY(u(x)))]\\land\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]])]\\]",
+        "$\\cardeq{X}{Y}$",
+        "$f\\colonX\\toY$",
+        "\\begin{multline*}\\lexists[u][(\\lforall[x][(X(x)\\lifY(u(x)))]\\land{}\\\\\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[y][(Y(y)\\lif\\lexists[x][(X(x)\\land\\eq[y][u(x)])])])]\\end{multline*}",
+        "$X\\subseteqY$",
+        "$X=Y$",
+        "$X\\neq\\emptyset$",
+        "$\\cardle{X}{Y}$",
+        "$\\cardeq{X}{Y}$",
+        "$X$",
+        "$Y$",
+        "$X$",
+        "$Y$",
+        "$\\lforall[X][\\lforall[Y][((\\cardle{X}{Y}\\land\\cardle{Y}{X})\\lif\\cardeq{X}{Y})]]$",
+        "$\\Struct{M}$",
+        "$X\\subseteq\\Domain{M}$",
+        "$Y\\subseteq\\Domain{M}$",
+        "$\\cardle{X}{Y}$",
+        "$\\cardle{Y}{X}$",
+        "$\\cardeq{X}{Y}$",
+        "$X$",
+        "$Y$"
+      ],
+      "math_target_core": [
+        "$\\lforall[x][(X(x)\\lifY(x))]$",
+        "$\\Sat{M}{\\lforall[x][(X(x)\\lifY(x))]}[s]$",
+        "$s(X)\\subseteqs(Y)$",
+        "$\\lforall[x][(X(x)\\liffY(x))]$",
+        "$\\Sat{M}{\\lforall[x][(X(x)\\liffY(x))]}[s]$",
+        "$s(X)=s(Y)$",
+        "$\\lexists[x][X(x)]$",
+        "$\\Sat{M}{\\lexists[x][X(x)]}[s]$",
+        "$s(X)\\neq\\emptyset$",
+        "$X$",
+        "$Y$",
+        "$\\cardle{X}{Y}$",
+        "$f\\colonX\\toY$",
+        "$X$",
+        "$Y$",
+        "\\[\\lexists[u][(\\lforall[x][(X(x)\\lifY(u(x)))]\\land\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]])]\\]",
+        "$\\cardeq{X}{Y}$",
+        "$f\\colonX\\toY$",
+        "\\begin{multline*}\\lexists[u][(\\lforall[x][(X(x)\\lifY(u(x)))]\\land{}\\\\\\lforall[x][\\lforall[y][((X(x)\\landX(y)\\land\\eq[u(x)][u(y)])\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[y][(Y(y)\\lif\\lexists[x][(X(x)\\land\\eq[y][u(x)])])])]\\end{multline*}",
+        "$X\\subseteqY$",
+        "$X=Y$",
+        "$X\\neq\\emptyset$",
+        "$\\cardle{X}{Y}$",
+        "$\\cardeq{X}{Y}$",
+        "$X$",
+        "$Y$",
+        "$X$",
+        "$Y$",
+        "$\\lforall[X][\\lforall[Y][((\\cardle{X}{Y}\\land\\cardle{Y}{X})\\lif\\cardeq{X}{Y})]]$",
+        "$X\\subseteq\\Domain{M}$",
+        "$Y\\subseteq\\Domain{M}$",
+        "$\\cardle{X}{Y}$",
+        "$\\cardle{Y}{X}$",
+        "$\\cardeq{X}{Y}$",
+        "$\\Struct{M}$",
+        "$X$",
+        "$Y$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "\\begin{multline*}\\lexists[u][(\\lforall[x][(X(x)\\lifY(u(x)))]\\land{}\\\\\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[y][(Y(y)\\lif\\lexists[x][(X(x)\\land\\eq[y][u(x)])])])]\\end{multline*}"
+      ],
+      "math_delta_target_only": [
+        "\\begin{multline*}\\lexists[u][(\\lforall[x][(X(x)\\lifY(u(x)))]\\land{}\\\\\\lforall[x][\\lforall[y][((X(x)\\landX(y)\\land\\eq[u(x)][u(y)])\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[y][(Y(y)\\lif\\lexists[x][(X(x)\\land\\eq[y][u(x)])])])]\\end{multline*}"
+      ],
+      "declared_source_correction_ids": [
+        "OLTESOLSET-006"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1212,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: second-order-logic\n% Chapter: sol-and-sets\n% Section: comparing-sets",
+          "target_start": "% Part: second-order-logic\n% Chapter: sol-and-sets\n% Section: comparing-sets"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sol}{set}{cmp}",
+          "target_start": "\\olfileid{sol}{set}{cmp}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Comparing Sets}",
+          "target_start": "\\olsection{సమితులను పోల్చడం}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{prop}\nThe !!{formula} $\\lforall[x][(X(x) \\lif Y(x))]$ defines the subset\nrelation, i.e., $\\Sat{M}{\\lfor",
+          "target_start": "\\begin{prop}\n\\tetoken{సూత్రం}{!!{formula}} $\\lforall[x][(X(x) \\lif Y(x))]$ ఉపసమితి\nసంబంధాన్ని నిర్వచిస్తుంది; "
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{prop}\nThe !!{formula} $\\lforall[x][(X(x) \\liff Y(x))]$ defines the identity\nrelation on sets, i.e., $\\S",
+          "target_start": "\\begin{prop}\n\\tetoken{సూత్రం}{!!{formula}} $\\lforall[x][(X(x) \\liff Y(x))]$ సమితులపై\nతాదాత్మ్య సంబంధాన్ని నిర్"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{prop}\nThe !!{formula} $\\lexists[x][X(x)]$ defines the property of being\nnon-empty, i.e., $\\Sat{M}{\\lexi",
+          "target_start": "\\begin{prop}\n\\tetoken{సూత్రం}{!!{formula}} $\\lexists[x][X(x)]$ శూన్యేతరం అనే ధర్మాన్ని\nనిర్వచిస్తుంది; అంటే $\\"
+        },
+        {
+          "index": 9,
+          "source_start": "A set~$X$ is no larger than a set~$Y$, $\\cardle{X}{Y}$, iff there is\n!!a{injective} function $f\\colon X \\to Y$",
+          "target_start": "$X$ సమితి $Y$ సమితిని పరిమాణంలో మించకపోవడం,\n$\\cardle{X}{Y}$, అంటే \\tetoken{ఒకటి-ఒకటి ప్రమేయం}{!!a{injective}}\n"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{prop}\nThe formula\n\\[\n\\lexists[u][(\\lforall[x][(X(x) \\lif Y(u(x)))] \\land \\lforall[x][\\lforall[y][(\\eq[u",
+          "target_start": "\\begin{prop}\nఈ సూత్రం\n\\[\n\\lexists[u][(\\lforall[x][(X(x) \\lif Y(u(x)))] \\land \\lforall[x][\\lforall[y][(\\eq[u(x)"
+        },
+        {
+          "index": 11,
+          "source_start": "Two sets are the same size, or ``equinumerous,'' $\\cardeq{X}{Y}$, iff\nthere is !!a{bijective} function~$f\\colo",
+          "target_start": "రెండు సమితులు ఒకే పరిమాణం గలవి, లేదా “సమసంఖ్యాకాలు,”\n$\\cardeq{X}{Y}$, అంటే \\tetoken{ఒక ద్విగుణ ప్రమేయం}{!!a{bi"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{prop}\nThe formula\n\\begin{multline*}\n  \\lexists[u][(\\lforall[x][(X(x) \\lif Y(u(x)))] \\land {}\\\\\n    \\lfo",
+          "target_start": "\\begin{prop}\nఈ సూత్రం\n\\begin{multline*}\n  \\lexists[u][(\\lforall[x][(X(x) \\lif Y(u(x)))] \\land {}\\\\\n    \\lforal"
+        },
+        {
+          "index": 13,
+          "source_start": "We will abbreviate these !!{formula}s, respectively, as $X \\subseteq Y$,\n$X = Y$, $X \\neq \\emptyset$, $\\cardle",
+          "target_start": "ఈ \\tetoken{సూత్రాలను}{!!{formula}s} వరుసగా $X \\subseteq Y$,\n$X = Y$, $X \\neq \\emptyset$, $\\cardle{X}{Y}$, ఇంకా"
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{prop}\nThe !!{sentence} $\\lforall[X][\\lforall[Y][((\\cardle{X}{Y} \\land\n    \\cardle{Y}{X}) \\lif \\cardeq{X",
+          "target_start": "\\begin{prop}\n\\tetoken{వాక్యం}{!!{sentence}} $\\lforall[X][\\lforall[Y][((\\cardle{X}{Y} \\land\n    \\cardle{Y}{X}) "
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{proof}\nThe !!{sentence} is satisfied in !!a{structure}~$\\Struct{M}$ if, for\nany subsets $X \\subseteq \\D",
+          "target_start": "\\begin{proof}\nఏ ఉపసమితులు $X \\subseteq \\Domain{M}$, $Y \\subseteq \\Domain{M}$కైనా\n$\\cardle{X}{Y}$, $\\cardle{Y}{"
+        },
+        {
+          "index": 16,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sol}{set}{cmp}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sol}{set}{cmp}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0339",
+      "source_path": "content/second-order-logic/sol-and-set-theory/cardinalities.tex",
+      "source_sha256": "2383760cd26cb2fa42f968483e74a90dfd4a1e5de3361d21322508282bf588b6",
+      "translation_sha256": "3e49f8df16c5acdc81b4964f9374961193888d04dc0449da987c696d14a604dc",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sol}{set}{crd}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{sol}{set}{crd}"
+      ],
+      "tokens_source": {
+        "!!{denumerable}": 1,
+        "!!{enumerable}": 3,
+        "!!{nonenumerable}": 3
+      },
+      "tokens_target": {
+        "!!{denumerable}": 1,
+        "!!{enumerable}": 3,
+        "!!{nonenumerable}": 3
+      },
+      "math_source": [
+        "$\\Domain{M}$",
+        "$\\fn{Inf}(X)\\ident$",
+        "\\begin{multline*}\\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lexists[y][(X(y)\\land\\lforall[x][(X(x)\\lif\\eq/[y][u(x)])]])]\\end{multline*}",
+        "$s$",
+        "$s(X)$",
+        "$\\fn{Count}(X)\\ident$",
+        "\\begin{multline*}\\lexists[z][\\lexists[u][(X(z)\\land\\lforall[x][(X(x)\\lifX(u(x)))]\\land{}\\\\\\lforall[Y][((Y(z)\\land\\lforall[x][(Y(x)\\lifY(u(x)))])\\lifX=Y])]])\\end{multline*}",
+        "$s$",
+        "$s(X)$",
+        "$\\aleph_0$",
+        "$\\aleph_1$",
+        "$\\aleph_0$",
+        "$X$",
+        "$\\aleph_0$",
+        "$\\fn{Aleph}_0(X)\\liff\\fn{Inf}(X)\\land\\fn{Count}(X)$",
+        "$X$",
+        "$\\aleph_1$",
+        "$\\aleph_0$",
+        "$\\aleph_0$",
+        "$\\fn{Aleph_1}(X)\\ident\\lforall[Y][(Y\\subseteqX\\lif(\\lnot\\fn{Inf}(Y)\\lor\\fn{Aleph}_0(Y)))]\\land\\lnot\\fn{Aleph}_0(X)$",
+        "$\\aleph_2$",
+        "$\\Pow{\\Nat}$",
+        "$\\Real$"
+      ],
+      "math_target_core": [
+        "$\\Domain{M}$",
+        "$\\fn{Inf}(X)\\ident$",
+        "\\begin{multline*}\\lexists[u][(\\lforall[x][(X(x)\\lifX(u(x)))]\\land{}\\\\\\lforall[x][\\lforall[y][((X(x)\\landX(y)\\land\\eq[u(x)][u(y)])\\lif\\eq[x][y])]]\\land{}\\\\\\lexists[y][(X(y)\\land\\lforall[x][(X(x)\\lif\\eq/[y][u(x)])])])]\\end{multline*}",
+        "$s$",
+        "$s(X)$",
+        "$\\fn{Count}(X)\\ident$",
+        "\\begin{multline*}(\\lnot\\lexists[x][X(x)]\\lor\\lexists[z][\\lexists[u][(X(z)\\land\\lforall[x][(X(x)\\lifX(u(x)))]\\land{}\\\\\\lforall[Y][((Y\\subseteqX\\landY(z)\\land\\lforall[x][(Y(x)\\lifY(u(x)))])\\lifX=Y)])]]))\\end{multline*}",
+        "$s$",
+        "$s(X)$",
+        "$\\aleph_0$",
+        "$\\aleph_1$",
+        "$\\aleph_0$",
+        "$X$",
+        "$\\aleph_0$",
+        "$\\fn{Aleph}_0(X)\\liff\\fn{Inf}(X)\\land\\fn{Count}(X)$",
+        "$X$",
+        "$\\aleph_0$",
+        "$\\aleph_0$",
+        "$\\aleph_1$",
+        "$\\fn{Aleph_1}(X)\\ident\\lforall[Y][((Y\\subseteqX\\land\\lnot(X=Y))\\lif(\\lnot\\fn{Inf}(Y)\\lor\\fn{Aleph}_0(Y)))]\\land\\fn{Inf}(X)\\land\\lnot\\fn{Aleph}_0(X)$",
+        "$\\aleph_2$",
+        "$\\Pow{\\Nat}$",
+        "$\\Real$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$\\fn{Aleph_1}(X)\\ident\\lforall[Y][(Y\\subseteqX\\lif(\\lnot\\fn{Inf}(Y)\\lor\\fn{Aleph}_0(Y)))]\\land\\lnot\\fn{Aleph}_0(X)$",
+        "\\begin{multline*}\\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lexists[y][(X(y)\\land\\lforall[x][(X(x)\\lif\\eq/[y][u(x)])]])]\\end{multline*}",
+        "\\begin{multline*}\\lexists[z][\\lexists[u][(X(z)\\land\\lforall[x][(X(x)\\lifX(u(x)))]\\land{}\\\\\\lforall[Y][((Y(z)\\land\\lforall[x][(Y(x)\\lifY(u(x)))])\\lifX=Y])]])\\end{multline*}"
+      ],
+      "math_delta_target_only": [
+        "$\\fn{Aleph_1}(X)\\ident\\lforall[Y][((Y\\subseteqX\\land\\lnot(X=Y))\\lif(\\lnot\\fn{Inf}(Y)\\lor\\fn{Aleph}_0(Y)))]\\land\\fn{Inf}(X)\\land\\lnot\\fn{Aleph}_0(X)$",
+        "\\begin{multline*}(\\lnot\\lexists[x][X(x)]\\lor\\lexists[z][\\lexists[u][(X(z)\\land\\lforall[x][(X(x)\\lifX(u(x)))]\\land{}\\\\\\lforall[Y][((Y\\subseteqX\\landY(z)\\land\\lforall[x][(Y(x)\\lifY(u(x)))])\\lifX=Y)])]]))\\end{multline*}",
+        "\\begin{multline*}\\lexists[u][(\\lforall[x][(X(x)\\lifX(u(x)))]\\land{}\\\\\\lforall[x][\\lforall[y][((X(x)\\landX(y)\\land\\eq[u(x)][u(y)])\\lif\\eq[x][y])]]\\land{}\\\\\\lexists[y][(X(y)\\land\\lforall[x][(X(x)\\lif\\eq/[y][u(x)])])])]\\end{multline*}"
+      ],
+      "declared_source_correction_ids": [
+        "OLTESOLSET-001",
+        "OLTESOLSET-002",
+        "OLTESOLSET-007"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1926,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: second-order-logic\n% Chapter: sol-and-sets\n% Section: cardinalities",
+          "target_start": "% Part: second-order-logic\n% Chapter: sol-and-sets\n% Section: cardinalities"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sol}{set}{crd}",
+          "target_start": "\\olfileid{sol}{set}{crd}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Cardinalities of Sets}",
+          "target_start": "\\olsection{సమితుల పరిమాణాలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{explain}\nJust as we can express that the domain is finite or infinite,\n!!{enumerable} or !!{nonenumerab",
+          "target_start": "\\begin{explain}\nవ్యక్తి క్షేత్రం పరిమితమా, అనంతమా,\n\\tetoken{లెక్కించదగినదా}{!!{enumerable}}, \\tetoken{లెక్కించ"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{prop}\nThe formula $\\fn{Inf}(X) \\ident$\n\\begin{multline*}\n\\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)",
+          "target_start": "\\begin{prop}\nసూత్రం $\\fn{Inf}(X) \\ident$\n\\begin{multline*}\n\\lexists[u][(\\lforall[x][(X(x) \\lif X(u(x)))] \\land"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{prop}\nThe formula $\\fn{Count}(X) \\ident $\n\\begin{multline*}\n\\lexists[z][\\lexists[u][(X(z) \\land \n    \\l",
+          "target_start": "\\begin{prop}\nసూత్రం $\\fn{Count}(X) \\ident $\n\\begin{multline*}\n(\\lnot \\lexists[x][X(x)] \\lor\n\\lexists[z][\\lexis"
+        },
+        {
+          "index": 9,
+          "source_start": "We know from Cantor's Theorem that there are !!{nonenumerable} sets,\nand in fact, that there are infinitely ma",
+          "target_start": "\\tetoken{లెక్కించలేని}{!!{nonenumerable}} సమితులు ఉన్నాయని, నిజానికి అనంత పరిమాణాల వేర్వేరు\nస్థాయులు అనంతంగా ఉ"
+        },
+        {
+          "index": 10,
+          "source_start": "There is one size of special interest, the so-called cardinality of\nthe continuum.  It is the size of $\\Pow{\\N",
+          "target_start": "ప్రత్యేక ఆసక్తి గల ఒక పరిమాణం ఉంది; దాన్ని అవిచ్ఛిన్న సమితి\nకార్డినాలిటీ అంటారు. అది $\\Pow{\\Nat}$ పరిమాణం; సమా"
+        },
+        {
+          "index": 11,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sol}{set}{crd}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sol}{set}{crd}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0340",
+      "source_path": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
+      "source_sha256": "386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990",
+      "translation_sha256": "78f51416f510cd966c6c401d40da54dc51f43a3307a1fbd13e38ca9450af418e",
+      "source_blocks": 21,
+      "target_blocks": 21,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{sol}{set}{pow}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{sol}{set}{pow}"
+      ],
+      "tokens_source": {
+        "!!a{denumerable}": 2,
+        "!!a{element}": 1,
+        "!!a{enumerable}": 2,
+        "!!a{formula}": 1,
+        "!!{denumerable}": 1,
+        "!!{domain}": 5,
+        "!!{element}s": 6,
+        "!!{formula}": 3,
+        "!!{injective}": 3,
+        "!!{nonenumerable}": 2
+      },
+      "tokens_target": {
+        "!!a{denumerable}": 2,
+        "!!a{element}": 1,
+        "!!a{enumerable}": 2,
+        "!!a{formula}": 1,
+        "!!{denumerable}": 1,
+        "!!{domain}": 5,
+        "!!{element}s": 6,
+        "!!{formula}": 3,
+        "!!{injective}": 3,
+        "!!{nonenumerable}": 2
+      },
+      "math_source": [
+        "$X$",
+        "$P$",
+        "$P$",
+        "$X$",
+        "$\\cardle{P}{X}$",
+        "$P$",
+        "$X$",
+        "$P$",
+        "$X$",
+        "$\\lforall[Y][(P(Y)\\liffY\\subseteqX)]$",
+        "$P(Y)$",
+        "$P$",
+        "$R$",
+        "$R$",
+        "$x$",
+        "$R$",
+        "$\\Setabs{y\\in\\Domain{M}}{R(x,y)}$",
+        "$x$",
+        "$Z\\subseteq\\Pow{\\Domain{M}}$",
+        "$\\Domain{M}$",
+        "$\\Domain{M}$",
+        "$Z$",
+        "$R\\subseteq\\Domain{M}^2$",
+        "$Y\\inZ$",
+        "$x$",
+        "$R$",
+        "$R\\subseteq\\Domain{M}^2$",
+        "$x$",
+        "$R$",
+        "$\\Setabs{y\\in\\Domain{M}}{R(x,y)}$",
+        "$x\\in\\Domain{M}$",
+        "$R$",
+        "$Z\\subseteq\\Domain{M}$",
+        "$Y\\subseteq\\Domain{M}$",
+        "$Y$",
+        "$Y$",
+        "$R$",
+        "$\\Pow{X}$",
+        "$Z\\subseteqX$",
+        "$x\\inY$",
+        "$R$",
+        "$Z$",
+        "$x\\inY$",
+        "$R$",
+        "$Z\\subseteqX$",
+        "\\[\\fn{Codes}(x,R,Z)\\ident\\lforall[y][(Z(y)\\liffR(x,y))]\\]",
+        "$s(x)$",
+        "$s(R)$",
+        "$s(Z)$",
+        "\\begin{multline*}\\fn{Pow}(Y,R,X)\\ident\\\\\\lforall[Z][(Z\\subseteqX\\lif\\lexists[x][(Y(x)\\land\\fn{Codes}(x,R,Z))])]\\land{}\\\\\\lforall[x][(Y(x)\\lif\\lforall[Z][(\\fn{Codes}(x,R,Z)\\lifZ\\subseteqX)]]\\end{multline*}",
+        "$s(Y)$",
+        "$s(R)$",
+        "$s(X)$",
+        "$s(Y)$",
+        "$s(R)$",
+        "$s(X)$",
+        "$X$",
+        "$X$",
+        "\\begin{multline*}\\lforall[X][\\lforall[Y][\\lforall[R][(\\fn{Pow}(Y,R,X)\\lif\\\\\\lnot\\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[x][(Y(x)\\lifX(u(x)))])])]]]\\end{multline*}",
+        "$\\aleph_0$",
+        "$\\Pow{\\Nat}$",
+        "$\\Real$",
+        "$Y$",
+        "$X$",
+        "$\\aleph_0$",
+        "$\\Real$",
+        "$\\Pow{X}$",
+        "$\\cardle{\\Real}{\\Domain{M}}$",
+        "\\begin{multline*}\\fn{Cont}(Y)\\ident\\lexists[X][\\lexists[R][((\\fn{Aleph}_0(X)\\land\\fn{Pow}(Y,R,X))\\land\\\\\\lforall[x][\\lforall[y][((Y(x)\\land{}Y(y)\\land\\lforall[z][R(x,z)\\liffR(y,z)])\\lif\\eq[x][y])]])]]\\end{multline*}",
+        "$\\cardeq{s(Y)}{\\Real}$",
+        "$\\fn{Pow}(Y,R,X)$",
+        "$s(Y)$",
+        "$s(R)$",
+        "$s(X)$",
+        "$\\fn{Aleph}_0(X)$",
+        "$s(Y)$",
+        "$s(Y)$",
+        "$X$",
+        "$s(Y)$",
+        "$s(Z)$",
+        "$s(R)$",
+        "$\\cardeq{\\Domain{M}}{\\Real}$",
+        "\\begin{multline*}\\Sat{M}{\\lexists[X][\\lexists[Y][\\lexists[R][(\\fn{Aleph}_0(X)\\land\\fn{Pow}(Y,R,X)\\land\\\\\\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[y][(Y(y)\\lif\\lexists[x][\\eq[y][u(x)]])])])]]]}.\\end{multline*}",
+        "$\\Pow{\\Nat}$",
+        "$\\aleph_1$",
+        "\\[\\fn{CH}\\ident\\lforall[X][(\\fn{Aleph}_1(X)\\liff\\fn{Cont}(X))]\\]",
+        "$\\lnot\\fn{CH}$",
+        "$\\aleph_1$",
+        "$\\fn{CH}$",
+        "\\[\\fn{NCH}\\ident\\lforall[X][(\\fn{Cont}(X)\\lif\\lexists[Y][(Y\\subseteqX\\land\\lnot\\fn{Count}(Y)\\land\\lnot\\cardeq{X}{Y})])]\\]"
+      ],
+      "math_target_core": [
+        "$X$",
+        "$P$",
+        "$P$",
+        "$X$",
+        "$\\cardle{P}{X}$",
+        "$P$",
+        "$X$",
+        "$P$",
+        "$X$",
+        "$\\lforall[Y][(P(Y)\\liffY\\subseteqX)]$",
+        "$P(Y)$",
+        "$P$",
+        "$R$",
+        "$R$",
+        "$x$",
+        "$R$",
+        "$\\Setabs{y\\in\\Domain{M}}{R(x,y)}$",
+        "$x$",
+        "$Z\\subseteq\\Pow{\\Domain{M}}$",
+        "$\\Domain{M}$",
+        "$Z$",
+        "$\\Domain{M}$",
+        "$Y\\inZ$",
+        "$x$",
+        "$R$",
+        "$R\\subseteq\\Domain{M}^2$",
+        "$R\\subseteq\\Domain{M}^2$",
+        "$x$",
+        "$R$",
+        "$\\Setabs{y\\in\\Domain{M}}{R(x,y)}$",
+        "$x\\in\\Domain{M}$",
+        "$R$",
+        "$Z\\subseteq\\Domain{M}$",
+        "$Y\\subseteq\\Domain{M}$",
+        "$Y$",
+        "$Y$",
+        "$R$",
+        "$\\Pow{X}$",
+        "$Z\\subseteqX$",
+        "$R$",
+        "$Z$",
+        "$x\\inY$",
+        "$x\\inY$",
+        "$R$",
+        "$Z\\subseteqX$",
+        "\\[\\fn{Codes}(x,R,Z)\\ident\\lforall[y][(Z(y)\\liffR(x,y))]\\]",
+        "$s(x)$",
+        "$s(R)$",
+        "$s(Z)$",
+        "\\begin{multline*}\\fn{Pow}(Y,R,X)\\ident\\\\\\lforall[Z][(Z\\subseteqX\\lif\\lexists[x][(Y(x)\\land\\fn{Codes}(x,R,Z))])]\\land{}\\\\\\lforall[x][(Y(x)\\lif\\lforall[Z][(\\fn{Codes}(x,R,Z)\\lifZ\\subseteqX)])]\\end{multline*}",
+        "$s(Y)$",
+        "$s(R)$",
+        "$s(X)$",
+        "$s(Y)$",
+        "$s(R)$",
+        "$s(X)$",
+        "$X$",
+        "$X$",
+        "\\begin{multline*}\\lforall[X][\\lforall[Y][\\lforall[R][(\\fn{Pow}(Y,R,X)\\lif\\\\\\lnot\\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[x][(Y(x)\\lifX(u(x)))])])]]]\\end{multline*}",
+        "$\\aleph_0$",
+        "$\\Pow{\\Nat}$",
+        "$\\Real$",
+        "$\\aleph_0$",
+        "$X$",
+        "$Y$",
+        "$\\Real$",
+        "$\\Pow{X}$",
+        "$\\cardle{\\Real}{\\Domain{M}}$",
+        "\\begin{multline*}\\fn{Cont}(Y)\\ident\\lexists[X][\\lexists[R][((\\fn{Aleph}_0(X)\\land\\fn{Pow}(Y,R,X))\\land\\\\\\lforall[x][\\lforall[y][((Y(x)\\land{}Y(y)\\land\\lforall[z][R(x,z)\\liffR(y,z)])\\lif\\eq[x][y])]])]]\\end{multline*}",
+        "$\\cardeq{s(Y)}{\\Real}$",
+        "$\\fn{Pow}(Y,R,X)$",
+        "$s(Y)$",
+        "$s(R)$",
+        "$s(X)$",
+        "$\\fn{Aleph}_0(X)$",
+        "$s(Y)$",
+        "$s(Y)$",
+        "$X$",
+        "$s(R)$",
+        "$s(Y)$",
+        "$s(X)$",
+        "$\\cardeq{\\Domain{M}}{\\Real}$",
+        "\\begin{multline*}\\Sat{M}{\\lexists[X][\\lexists[Y][\\lexists[R][(\\fn{Aleph}_0(X)\\land\\fn{Pow}(Y,R,X)\\land\\\\\\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[x][Y(u(x))]\\land{}\\\\\\lforall[y][(Y(y)\\lif\\lexists[x][\\eq[y][u(x)]])])])]]]}.\\end{multline*}",
+        "$\\Pow{\\Nat}$",
+        "$\\aleph_1$",
+        "\\[\\fn{CH}\\ident\\lforall[X][(\\fn{Aleph}_1(X)\\liff\\fn{Cont}(X))]\\]",
+        "$\\lnot\\fn{CH}$",
+        "$\\aleph_1$",
+        "$\\fn{CH}$",
+        "\\[\\fn{NCH}\\ident\\lforall[X][(\\fn{Cont}(X)\\lif\\lexists[Y][(Y\\subseteqX\\land\\lnot\\fn{Count}(Y)\\land\\lnot\\cardeq{X}{Y})])]\\]"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$s(Z)$",
+        "\\begin{multline*}\\Sat{M}{\\lexists[X][\\lexists[Y][\\lexists[R][(\\fn{Aleph}_0(X)\\land\\fn{Pow}(Y,R,X)\\land\\\\\\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[y][(Y(y)\\lif\\lexists[x][\\eq[y][u(x)]])])])]]]}.\\end{multline*}",
+        "\\begin{multline*}\\fn{Pow}(Y,R,X)\\ident\\\\\\lforall[Z][(Z\\subseteqX\\lif\\lexists[x][(Y(x)\\land\\fn{Codes}(x,R,Z))])]\\land{}\\\\\\lforall[x][(Y(x)\\lif\\lforall[Z][(\\fn{Codes}(x,R,Z)\\lifZ\\subseteqX)]]\\end{multline*}"
+      ],
+      "math_delta_target_only": [
+        "$s(X)$",
+        "\\begin{multline*}\\Sat{M}{\\lexists[X][\\lexists[Y][\\lexists[R][(\\fn{Aleph}_0(X)\\land\\fn{Pow}(Y,R,X)\\land\\\\\\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[x][Y(u(x))]\\land{}\\\\\\lforall[y][(Y(y)\\lif\\lexists[x][\\eq[y][u(x)]])])])]]]}.\\end{multline*}",
+        "\\begin{multline*}\\fn{Pow}(Y,R,X)\\ident\\\\\\lforall[Z][(Z\\subseteqX\\lif\\lexists[x][(Y(x)\\land\\fn{Codes}(x,R,Z))])]\\land{}\\\\\\lforall[x][(Y(x)\\lif\\lforall[Z][(\\fn{Codes}(x,R,Z)\\lifZ\\subseteqX)])]\\end{multline*}"
+      ],
+      "declared_source_correction_ids": [
+        "OLTESOLSET-003",
+        "OLTESOLSET-004",
+        "OLTESOLSET-005"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 3561,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: second-order-logic\n% Chapter: sol-and-sets\n% Section: power-of-continuum",
+          "target_start": "% Part: second-order-logic\n% Chapter: sol-and-sets\n% Section: power-of-continuum"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{sol}{set}{pow}",
+          "target_start": "\\olfileid{sol}{set}{pow}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{The Power of the Continuum}",
+          "target_start": "\\olsection{అవిచ్ఛిన్న సమితి పరిమాణం}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{explain}\nIn second-order logic we can quantify over subsets of the !!{domain},\nbut not over sets of sub",
+          "target_start": "\\begin{explain}\nద్వితీయ-స్థాయి తర్కంలో \\tetoken{వ్యక్తి క్షేత్రపు}{!!{domain}} ఉపసమితులపై\nపరిమాణీకరించవచ్చు; క"
+        },
+        {
+          "index": 7,
+          "source_start": "We can, however, \\emph{simulate} quantification over sets of sets, if\nthe domain is large enough.  The idea is",
+          "target_start": "అయితే, వ్యక్తి క్షేత్రం తగినంత పెద్దదైతే, సమితుల సమితులపై\nపరిమాణీకరణను \\emph{అనుకరించవచ్చు}. ద్విస్థాన సంబంధం~"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{defn}\nIf $R \\subseteq \\Domain{M}^2$, then \\emph{$x$ $R$-codes} $\\Setabs{y\n  \\in \\Domain{M}}{R(x, y)}$.\n",
+          "target_start": "\\begin{defn}\n$R \\subseteq \\Domain{M}^2$ అయితే, \\emph{$x$, $R$ ద్వారా\nసంకేతీకరించేది} $\\Setabs{y\n  \\in \\Domain{"
+        },
+        {
+          "index": 9,
+          "source_start": "If !!a{element}~$x \\in \\Domain{M}$ $R$-codes a set $Z \\subseteq\n\\Domain{M}$, then a set $Y \\subseteq \\Domain{M",
+          "target_start": "\\tetoken{ఒక మూలకం}{!!a{element}}~$x \\in \\Domain{M}$, $R$ ద్వారా\n$Z \\subseteq \\Domain{M}$ను సంకేతీకరిస్తే, $Y \\"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{prop}\nThe !!{formula}\n  \\[\n  \\fn{Codes}(x, R, Z) \\ident \\lforall[y][(Z(y) \\liff\n    R(x, y))]\n  \\]\nexpr",
+          "target_start": "\\begin{prop}\n\\tetoken{సూత్రం}{!!{formula}}\n  \\[\n  \\fn{Codes}(x, R, Z) \\ident \\lforall[y][(Z(y) \\liff\n    R(x, "
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{explain}\nWith this trick, we can express statements about the power set by\nquantifying over the codes o",
+          "target_start": "\\begin{explain}\nఈ ఉపాయంతో, ఉపసమితులపైనే పరిమాణీకరించకుండా వాటి సంకేతాలపై\nపరిమాణీకరించి ఘాత సమితి గురించిన ప్రక"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{prop}\nThe sentence\n\\begin{multline*}\n  \\lforall[X][\\lforall[Y][\\lforall[R][(\\fn{Pow}(Y, R, X) \\lif \\\\\n ",
+          "target_start": "\\begin{prop}\nఈ వాక్యం\n\\begin{multline*}\n  \\lforall[X][\\lforall[Y][\\lforall[R][(\\fn{Pow}(Y, R, X) \\lif \\\\\n     "
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{explain}\nThe power set of !!a{denumerable} set is !!{nonenumerable}, and so its\ncardinality is larger t",
+          "target_start": "\\begin{explain}\n\\tetoken{అనంతంగా లెక్కించదగిన}{!!a{denumerable}} సమితి ఘాత సమితి\n\\tetoken{లెక్కించలేనిది}{!!{n"
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{prop}\nIf $\\cardle{\\Real}{\\Domain{M}}$, then the !!{formula}\n\\begin{multline*}\n\\fn{Cont}(Y) \\ident \n\\lex",
+          "target_start": "\\begin{prop}\n$\\cardle{\\Real}{\\Domain{M}}$ అయితే, \\tetoken{సూత్రం}{!!{formula}}\n\\begin{multline*}\n\\fn{Cont}(Y) "
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{proof}\n  $\\fn{Pow}(Y, R, X)$ expresses that $s(Y)$ $s(R)$-codes the power set\n  of~$s(X)$, which $\\fn{A",
+          "target_start": "\\begin{proof}\n  $\\fn{Pow}(Y, R, X)$ అనేది $s(Y)$, $s(R)$ ద్వారా~$s(X)$ ఘాత\n  సమితిని సంకేతీకరిస్తుందని వ్యక్తం"
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{prop}\n$\\cardeq{\\Domain{M}}{\\Real}$ iff\n\\begin{multline*}\n  \\Sat{M}{\\lexists[X][\\lexists[Y][\\lexists[R][",
+          "target_start": "\\begin{prop}\n$\\cardeq{\\Domain{M}}{\\Real}$ అయితేనే\n\\begin{multline*}\n  \\Sat{M}{\\lexists[X][\\lexists[Y][\\lexists"
+        },
+        {
+          "index": 17,
+          "source_start": "\\begin{explain}\nThe Continuum Hypothesis is the statement that the size of the\ncontinuum is the first !!{nonen",
+          "target_start": "\\begin{explain}\nఅవిచ్ఛిన్న సమితి పరిమాణం మొదటి\n\\tetoken{లెక్కించలేని}{!!{nonenumerable}} కార్డినాలిటీ, అంటే\n$\\"
+        },
+        {
+          "index": 18,
+          "source_start": "\\begin{prop}\nThe Continuum Hypothesis is true iff \\[\\fn{CH} \\ident\n\\lforall[X][(\\fn{Aleph}_1(X) \\liff \\fn{Cont",
+          "target_start": "\\begin{prop}\nఅవిచ్ఛిన్న సమితి పరికల్పన సత్యమైతేనే \\[\\fn{CH} \\ident\n\\lforall[X][(\\fn{Aleph}_1(X) \\liff \\fn{Cont"
+        },
+        {
+          "index": 19,
+          "source_start": "Note that it isn't true that $\\lnot \\fn{CH}$ is valid iff the\nContinuum Hypothesis is false. In !!a{enumerable",
+          "target_start": "$\\lnot \\fn{CH}$ చెల్లుబాటైతేనే అవిచ్ఛిన్న సమితి పరికల్పన అసత్యమని\nచెప్పడం నిజం కాదని గమనించండి. \\tetoken{ఒక లె"
+        },
+        {
+          "index": 20,
+          "source_start": "\\begin{prop}\nThe Continuum Hypothesis is false iff \\[\\fn{NCH} \\ident\n\\lforall[X][(\\fn{Cont}(X) \\lif \\lexists[Y",
+          "target_start": "\\begin{prop}\nఅవిచ్ఛిన్న సమితి పరికల్పన అసత్యమైతేనే \\[\\fn{NCH} \\ident\n\\lforall[X][(\\fn{Cont}(X) \\lif \\lexists[Y"
+        },
+        {
+          "index": 21,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sol}{set}{pow}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{sol}{set}{pow}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    }
+  ]
+}

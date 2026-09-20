@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 332 of 722 draft units**. This view selects 330 of 356 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 337 of 722 draft units**. This view selects 338 of 364 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -503,6 +503,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0330; second-order-logic/metatheory/metatheory; translation/content/second-order-logic/metatheory/metatheory.tex:8; printed/PDF page pending; OLP-0332; second-order-logic/metatheory/second-order-arithmetic; translation/content/second-order-logic/metatheory/second-order-arithmetic.tex:11; printed/PDF page pending; OLP-0332; second-order-logic/metatheory/second-order-arithmetic; translation/content/second-order-logic/metatheory/second-order-arithmetic.tex:13-41; printed/PDF page pending; OLP-0332; second-order-logic/metatheory/second-order-arithmetic; translation/content/second-order-logic/metatheory/second-order-arithmetic.tex:81-84; printed/PDF page pending; OLP-0333; second-order-logic/metatheory/undecidability-and-axiomatizability; translation/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:11; printed/PDF page pending; OLP-0334; second-order-logic/metatheory/compactness; translation/content/second-order-logic/metatheory/compactness.tex:13-24; printed/PDF page pending; OLP-0334; second-order-logic/metatheory/compactness; translation/content/second-order-logic/metatheory/compactness.tex:33-37; printed/PDF page pending; OLP-0335; second-order-logic/metatheory/loewenheim-skolem; translation/content/second-order-logic/metatheory/loewenheim-skolem.tex:13-24; printed/PDF page pending; OLP-0335; second-order-logic/metatheory/loewenheim-skolem; translation/content/second-order-logic/metatheory/loewenheim-skolem.tex:13-24; printed/PDF page pending
 
 - Please double-check: Please double-check whether “ద్వితీయ-స్థాయి తర్కపు అధిసిద్ధాంతం / ద్వితీయ-స్థాయి పియానో అంకగణితం / ద్వితీయ-స్థాయి ఆగమన స్వీకృతం / సమరూపత వరకు ఏకైకమైన (కేటగారికల్) / ద్వితీయ-స్థాయి తర్కం స్వీకృతీకరించదగినది కాదు / పరిమితంగా సంతృప్తిపరచదగిన / సంహతత్వ వైఫల్యం / అధోముఖ, ఊర్ధ్వముఖ లొవెన్‌హైమ్--స్కోలెమ్ సిద్ధాంతాల వైఫల్యం” is idiomatic and technically standard for “metatheory of second-order logic / second-order Peano arithmetic / second-order induction axiom / categorical / second-order logic not axiomatizable / finitely satisfiable / failure of compactness / failure of the Downward and Upward Lowenheim--Skolem theorems” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T077 — second-order logic and set theory / comparing sets / cardinalities of sets / relation-coded power set / aleph-zero and aleph-one / cardinality of the continuum / Continuum Hypothesis
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: ద్వితీయ-స్థాయి తర్కం మరియు సమితి సిద్ధాంతం / సమితులను పోల్చడం / సమితుల పరిమాణాలు / సంబంధం ద్వారా సంకేతీకరించిన ఘాత సమితి / అలెఫ్-సున్నా మరియు అలెఫ్-ఒకటి / అవిచ్ఛిన్న సమితి పరిమాణం / అవిచ్ఛిన్న సమితి పరికల్పన
+
+- Occurrences: OLP-0336; second-order-logic/sol-and-set-theory/sol-and-set-theory; translation/content/second-order-logic/sol-and-set-theory/sol-and-set-theory.tex:8; printed/PDF page pending; OLP-0338; second-order-logic/sol-and-set-theory/comparing-sets; translation/content/second-order-logic/sol-and-set-theory/comparing-sets.tex:11; printed/PDF page pending; OLP-0339; second-order-logic/sol-and-set-theory/cardinalities; translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:11; printed/PDF page pending; OLP-0339; second-order-logic/sol-and-set-theory/cardinalities; translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:48-68; printed/PDF page pending; OLP-0340; second-order-logic/sol-and-set-theory/power-of-continuum; translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:11; printed/PDF page pending; OLP-0340; second-order-logic/sol-and-set-theory/power-of-continuum; translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:49-56; printed/PDF page pending; OLP-0340; second-order-logic/sol-and-set-theory/power-of-continuum; translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:97-111; printed/PDF page pending; OLP-0340; second-order-logic/sol-and-set-theory/power-of-continuum; translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:147-152; printed/PDF page pending
+
+- Please double-check: Please double-check whether “ద్వితీయ-స్థాయి తర్కం మరియు సమితి సిద్ధాంతం / సమితులను పోల్చడం / సమితుల పరిమాణాలు / సంబంధం ద్వారా సంకేతీకరించిన ఘాత సమితి / అలెఫ్-సున్నా మరియు అలెఫ్-ఒకటి / అవిచ్ఛిన్న సమితి పరిమాణం / అవిచ్ఛిన్న సమితి పరికల్పన” is idiomatic and technically standard for “second-order logic and set theory / comparing sets / cardinalities of sets / relation-coded power set / aleph-zero and aleph-one / cardinality of the continuum / Continuum Hypothesis” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -3303,3 +3313,73 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0334; second-order-logic/metatheory/compactness; translation/content/second-order-logic/metatheory/compactness.tex:55-64; printed/PDF page pending
 
 - Please double-check: Please double-check that the finite-satisfiability proof bounds the indices occurring in Gamma_0 rather than claiming the full Gamma omits larger bounds.
+
+## REV-OLTESOLSET-001 — OLTESOLSET-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: made u an injective non-surjective self-map of X by adding range containment and restricting injectivity to X; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0339; second-order-logic/sol-and-set-theory/cardinalities; translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:20-32; printed/PDF page pending
+
+- Please double-check: Please double-check that Inf(X) now describes an injective non-surjective self-map of X, with range containment and injectivity both restricted to X.
+
+## REV-OLTESOLSET-002 — OLTESOLSET-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: added the enumerable empty case, restricted induction sets Y to subsets of X, and balanced the formula; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0339; second-order-logic/sol-and-set-theory/cardinalities; translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:34-46; printed/PDF page pending
+
+- Please double-check: Please double-check that Count(X) includes the empty set, restricts induction sets Y to subsets of X, and has balanced delimiters.
+
+## REV-OLTESOLSET-003 — OLTESOLSET-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: closed the Y(x)-conditional before the second universal quantifier's closing bracket; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0340; second-order-logic/sol-and-set-theory/power-of-continuum; translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:62-76; printed/PDF page pending
+
+- Please double-check: Please double-check that the Y(x)-conditional in Pow(Y,R,X) closes before the second universal quantifier closes.
+
+## REV-OLTESOLSET-004 — OLTESOLSET-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: identified s(X), rather than the bound variable s(Z), as the set whose subsets are coded; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0340; second-order-logic/sol-and-set-theory/power-of-continuum; translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:125-135; printed/PDF page pending
+
+- Please double-check: Please double-check that the Cont(Y) proof refers to subsets of the controlling base set s(X), not the bound variable s(Z).
+
+## REV-OLTESOLSET-005 — OLTESOLSET-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: added the universal range-in-Y clause so u is a bijection from the whole domain onto Y; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0340; second-order-logic/sol-and-set-theory/power-of-continuum; translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:137-145; printed/PDF page pending
+
+- Please double-check: Please double-check that the domain-to-Y witness has all values in Y, making it a bijection from the whole domain onto Y.
+
+## REV-OLTESOLSET-006 — OLTESOLSET-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restricted injectivity to arguments in X so the three clauses express a bijection from X onto Y without imposing a condition on the complements; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0338; second-order-logic/sol-and-set-theory/comparing-sets; translation/content/second-order-logic/sol-and-set-theory/comparing-sets.tex:49-64; printed/PDF page pending
+
+- Please double-check: Please double-check that the equinumerosity formula restricts injectivity to arguments in X, so it imposes no condition on the complements of X and Y.
+
+## REV-OLTESOLSET-007 — OLTESOLSET-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restricted the small-subset condition to proper subsets and required X itself to be infinite as well as not of size aleph-zero; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0339; second-order-logic/sol-and-set-theory/cardinalities; translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:55-68; printed/PDF page pending
+
+- Please double-check: Please double-check that Aleph_1(X) quantifies over proper subsets and also requires X itself to be infinite and not of size aleph-zero.
