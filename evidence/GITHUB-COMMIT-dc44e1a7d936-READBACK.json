@@ -1,0 +1,29 @@
+{
+  "schema": "openlogic-te-commit-readback/1",
+  "checked_at": "2026-09-20T23:46:56.896Z",
+  "commit": "dc44e1a7d93681d8141265bd0f1b47ab1ce0dd34",
+  "anonymous": true,
+  "authorization_header_sent": false,
+  "file_count": 2,
+  "files": [
+    {
+      "path": "evidence/BATCH-038-SEMANTIC-REVIEW.md",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/dc44e1a7d93681d8141265bd0f1b47ab1ce0dd34/evidence/BATCH-038-SEMANTIC-REVIEW.md",
+      "bytes": 6390,
+      "sha256": "a7a66143e6d4b7de1885545c50ff43cf1c60afc955c790d17c7fbd7341ddd6a8",
+      "expected_bytes": 6390,
+      "expected_sha256": "a7a66143e6d4b7de1885545c50ff43cf1c60afc955c790d17c7fbd7341ddd6a8",
+      "match": true
+    },
+    {
+      "path": "translation/TELUGU_TOKENS.json",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/dc44e1a7d93681d8141265bd0f1b47ab1ce0dd34/translation/TELUGU_TOKENS.json",
+      "bytes": 13270,
+      "sha256": "376247c7c2de3a7591ac9a06a668c8047e09114f1b341c1b0ba5d5e2794a9b36",
+      "expected_bytes": 13270,
+      "expected_sha256": "376247c7c2de3a7591ac9a06a668c8047e09114f1b341c1b0ba5d5e2794a9b36",
+      "match": true
+    }
+  ],
+  "status": "COMPLETE_PASS"
+}
