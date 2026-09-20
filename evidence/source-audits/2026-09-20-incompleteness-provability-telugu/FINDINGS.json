@@ -1,0 +1,91 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTEINP-20260920",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0318",
+      "OLP-0319",
+      "OLP-0320"
+    ],
+    "finding_count": 5
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEINP-001",
+      "unit_id": "OLP-0318",
+      "classification": "confirmed_formula_representation_symbol_mismatch",
+      "source": {
+        "path": "content/incompleteness/incompleteness-provability/provability-conditions.tex",
+        "bytes": 3335,
+        "sha256": "09473b12608d6bb9393a45c7af241bc76669ad37c92b36d25d6e097cefe69f11",
+        "locator": "lines 32-35, definition of the represented provability formula"
+      },
+      "finding": "The prose defines OPrf as the formula representing the proof relation, but the immediately following definition of OProv quantifies the unrepresented relation symbol Prf instead.",
+      "controlling_evidence": "The preceding sentence and every later derivability condition use the object-language formula OPrf/OProv; the semantic relation Prf is not the formula that can occur inside arithmetic.",
+      "required_translation_handling": "Use OPrf in the OProv definition and add an adjacent OLTEINP-001 disclosure."
+    },
+    {
+      "finding_id": "OLTEINP-002",
+      "unit_id": "OLP-0319",
+      "classification": "confirmed_provability_macro_omission",
+      "source": {
+        "path": "content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex",
+        "bytes": 5656,
+        "sha256": "8b96ecc610effe58fb1c422015965d42725f9f3832a00558e2b15753861a55fe",
+        "locator": "lines 41-43, informal second-incompleteness argument"
+      },
+      "finding": "The formula drops the O prefix from the object-language provability predicate and writes Prov where the chapter has defined OProv.",
+      "controlling_evidence": "The preceding display, the Goedel fixed-point equivalence, and all formal proof lines use OProv for the representing formula.",
+      "required_translation_handling": "Restore OProv and add an adjacent OLTEINP-002 disclosure."
+    },
+    {
+      "finding_id": "OLTEINP-003",
+      "unit_id": "OLP-0319",
+      "classification": "confirmed_formula_marker_omission",
+      "source": {
+        "path": "content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex",
+        "bytes": 5656,
+        "sha256": "8b96ecc610effe58fb1c422015965d42725f9f3832a00558e2b15753861a55fe",
+        "locator": "lines 89-94, explanation of the P2 substitution"
+      },
+      "finding": "The second P2 instantiation writes gn{G}, omitting the formula marker used by the displayed proof and every other occurrence gn{!G}.",
+      "controlling_evidence": "Line G2-6 is obtained by substituting the formula OProv(gn{!G}); the displayed formulas retain the marked metavariable throughout.",
+      "required_translation_handling": "Use gn{!G} and add an adjacent OLTEINP-003 disclosure."
+    },
+    {
+      "finding_id": "OLTEINP-004",
+      "unit_id": "OLP-0319",
+      "classification": "confirmed_theory_identifier_mismatch",
+      "source": {
+        "path": "content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex",
+        "bytes": 5656,
+        "sha256": "8b96ecc610effe58fb1c422015965d42725f9f3832a00558e2b15753861a55fe",
+        "locator": "lines 98-102, abstract second incompleteness theorem"
+      },
+      "finding": "The conclusion writes OCon[T] even though the theorem fixes the theory as Th{T} and uses that notation in the associated provability predicate.",
+      "controlling_evidence": "The chapter consistently parameterizes both OProv and OCon by the same theory object Th{T}; bare T is not the displayed theory macro here.",
+      "required_translation_handling": "Use OCon[Th{T}] and add an adjacent OLTEINP-004 disclosure."
+    },
+    {
+      "finding_id": "OLTEINP-005",
+      "unit_id": "OLP-0320",
+      "classification": "confirmed_incomplete_proof_reference_chain",
+      "source": {
+        "path": "content/incompleteness/incompleteness-provability/lob-thm.tex",
+        "bytes": 7205,
+        "sha256": "7b95df7ebaf50f218a71b706c3189750dd9499bb66f2b725dcbf3dec778fd73f",
+        "locator": "line 117, final inference in the proof of Loeb's theorem"
+      },
+      "finding": "The final inference cites L-8 and L-12 only, but L-12 yields Prov(D), whereas L-8 requires Prov(A); the bridge from Prov(D) to Prov(A) is L-7.",
+      "controlling_evidence": "L-7 states Prov(D) implies Prov(A), L-8 states Prov(A) implies A, and L-12 supplies Prov(D), so all three are required for the displayed conclusion A.",
+      "required_translation_handling": "Cite L-7, L-8, and L-12 and add an adjacent OLTEINP-005 disclosure."
+    }
+  ]
+}

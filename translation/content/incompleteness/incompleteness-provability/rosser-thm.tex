@@ -1,0 +1,141 @@
+% Part: incompleteness
+% Chapter: incompleteness-provability
+% Section: rosser-thm
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{inp}{ros}
+
+\olsection{రాసర్ సిద్ధాంతం}
+
+``$\omega$-అవైరుధ్యమైనది'' అనే షరతు స్థానంలో కేవలం ``అవైరుధ్యమైనది'' అని
+పెట్టే మరింత బలమైన ఫలితం రావడానికి గ్యోడెల్ నిరూపణను మార్చగలమా? రాసర్
+కనుగొన్న ఒక ఉపాయంతో సమాధానం ``అవును.'' $\OProv[\Th{T}](y)$కు బదులు
+``మార్చిన'' \tetoken{వ్యుత్పాద్యత}{!!{derivability}} విధేయం $\ORProv_T(y)$ను వాడటమే రాసర్
+ఉపాయం.
+
+\begin{thm}
+\ollabel{thm:rosser}
+$\Th{T}$ అనేది $\Th{Q}$ను విస్తరించే ఏ అవైరుధ్యమైన,
+\tetoken{స్వీకృతీకరించదగిన}{!!{axiomatizable}} సిద్ధాంతమైనా సరే. అప్పుడు $\Th{T}$ సంపూర్ణం కాదు.
+\end{thm}
+
+\begin{proof}
+$\OProv[\Th{T}](y)$ను $\lexists[x][\OPrf[\Th{T}](x,y)]$గా నిర్వచించామని
+గుర్తుచేసుకోండి; ఇక్కడ $\OPrf[\Th{T}](x,y)$ అనేది, $x$ గ్యోడెల్ సంఖ్య~$y$
+గల \tetoken{వాక్యపు}{!!{sentence}} \tetoken{ఒక వ్యుత్పత్తికి}{!!a{derivation}} గ్యోడెల్ సంఖ్య అయితే, అప్పుడు మాత్రమే
+నిజమయ్యే నిర్ణయించదగిన సంబంధానికి ప్రాతినిధ్యం వహిస్తుంది. $x$ అనేది గ్యోడెల్
+సంఖ్య~$y$ గల వాక్యపు \emph{ఖండన}కు గ్యోడెల్ సంఖ్య అయితే, అప్పుడు మాత్రమే
+$x$, $y$ల మధ్య నిజమయ్యే సంబంధం కూడా నిర్ణయించదగినదే. $\fn{not}(x)$ కింది
+విధంగా పనిచేసే ఆదిమ పునరావర్తన ప్రమేయం అనుకుందాం: $x$ అనేది సూత్రం $!A$కు
+సంకేతమైతే, $\fn{not}(x)$ అనేది $\lnot !A$కు సంకేతం. అప్పుడు
+$\Refut[\Th{T}](x,y)$ నిజమవడం, $\Prf[\Th{T}](x,\fn{not}(y))$ నిజమవడం
+సమానార్థకం. దానికి $\ORefut[\Th{T}](x,y)$ ప్రాతినిధ్యం వహించనివ్వండి.
+అప్పుడు $\Th{T} \Proves \lnot !A$ అయి, $\delta$ దానికి అనుగుణమైన
+\tetoken{వ్యుత్పత్తి}{!!{derivation}} అయితే, $\Th{Q} \Proves
+\ORefut[\Th{T}](\gn{\delta},\gn{!A})$. $\ORProv[\Th{T}](y)$ను ఇలా
+నిర్వచిస్తాం:
+\[
+\lexists[x][(\OPrf[\Th{T}](x,y) \land \lforall[z][(z < x \lif \lnot
+  \ORefut[\Th{T}](z,y))])].
+\]
+స్థూలంగా, $\ORProv[\Th{T}](y)$ అంటే ``$\Th{T}$లో $y$కు ఒక నిరూపణ ఉంది,
+అలాగే $y$కు దానికంటే చిన్న ఖండన లేదు.'' $\Th{T}$ అవైరుధ్యమైనదని
+అనుకుంటే, $\ORProv[\Th{T}](y)$ మరియు $\OProv[\Th{T}](y)$ ఒకే సంఖ్యలకు
+నిజమవుతాయి; కానీ $\Th{T}$లోని \emph{నిరూపణీయత} దృష్టిలో (సత్యానికీ
+నిరూపణీయతకూ తేడా ఉందని ఇప్పుడు మనకు తెలుసు!) వాటికి వేర్వేరు లక్షణాలు
+ఉన్నాయి. $\Th{T}$ \emph{వైరుధ్యమైనదైతే}, అవి ఒకే సంఖ్యలకు నిజం \emph{కావు}!{}
+($\ORProv[\Th{T}](y)$ను తరచుగా ``$y$ రాసర్-నిరూపణీయమైనది'' అని చదువుతారు.
+ఇప్పుడే చర్చించినట్లు, రాసర్ నిరూపణీయత అనేది ప్రత్యేక రకం నిరూపణీయత కాదు---
+వైరుధ్య సిద్ధాంతాల్లో నిరూపణీయమైనప్పటికీ రాసర్-నిరూపణీయం కాని
+\tetoken{వాక్యాలు}{!!{sentence}s} ఉన్నాయి---కాబట్టి ఈ పేరు గందరగోళం కలిగించవచ్చు. దాన్ని తప్పించేందుకు
+``$y$ ష్మూవబుల్'' అని కూడా చదవవచ్చు.)
+
+స్థిరబిందు ఉపసిద్ధాంతం ప్రకారం కింది షరతును తృప్తిపరచే సూత్రం
+$!R_\Th{T}$ ఉంటుంది:
+\begin{equation}
+  \Th{Q} \Proves !R_\Th{T} \liff \lnot \ORProv[\Th{T}](\gn{!R_\Th{T}}).
+  \ollabel{RT}
+\end{equation}
+\olref[1in]{thm:first-incompleteness} నిరూపణకు భిన్నంగా, ఇక్కడ $\Th{T}$
+అవైరుధ్యమైనదైతే $\Th{T}$ అనేది $!R_\Th{T}$ను \tetoken{నిగమించదని}{!!{derive}}, అలాగే
+$\Th{T}$ అనేది $\lnot !R_\Th{T}$ను కూడా \tetoken{నిగమించదని}{!!{derive}} మనం వాదిస్తాం. (అంటే
+$\omega$-అవైరుధ్యాన్ని ఊహించాల్సిన అవసరం లేదు.)
+
+మొదట $\Th{T} \Proves/ !R_{\Th{T}}$ అని చూపుదాం. అలా కాదని అనుకుందాం;
+అప్పుడు~$T$ నుంచి $!R_{\Th{T}}$కు \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} ఉంటుంది. దాని గ్యోడెల్
+సంఖ్యను $n$ అనుకుందాం. $\OPrf[\Th{T}]$ అనేది $\Prf[\Th{T}]$కు
+$\Th{Q}$లో ప్రాతినిధ్యం వహిస్తుంది కాబట్టి,
+$\Th{Q} \Proves \OPrf[\Th{T}](\num{n},\gn{!R_{\Th{T}}})$. ఇంకా ప్రతి
+$k<n$కు, $\Th{T}$ అవైరుధ్యమైనది కాబట్టి, $k$ అనేది $\lnot !R_{\Th{T}}$
+యొక్క \tetoken{ఒక వ్యుత్పత్తికి}{!!a{derivation}} గ్యోడెల్ సంఖ్య కాదు. కాబట్టి ప్రతి $k<n$కు,
+$\Th{Q} \Proves \lnot \ORefut[\Th{T}](\num{k},\gn{!R_{\Th{T}}})$.
+\olref[req][min]{lem:less-nsucc} ప్రకారం,
+$\Th{Q} \Proves \lforall[z][(z < \num{n} \lif \lnot
+\ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))]$. అందువల్ల
+\[
+\Th{Q} \Proves \lexists[x][(\OPrf[\Th{T}](x,\gn{!R_{\Th{T}}}) \land \lforall[z][(z
+    < x \lif \lnot \ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))])],
+\]
+కానీ అది $\ORProv[\Th{T}](\gn{!R_{\Th{T}}})$యే. \olref{RT} ప్రకారం
+$\Th{Q} \Proves \lnot !R_{\Th{T}}$. $\Th{T}$ అనేది $\Th{Q}$ను
+విస్తరిస్తుంది కాబట్టి, $\Th{T} \Proves \lnot !R_{\Th{T}}$ కూడా.
+$\Th{T} \Proves !R_{\Th{T}}$ అని ఊహించాం కనుక, $\Th{T}$ వైరుధ్యమవుతుంది;
+ఇది సిద్ధాంతపు పరికల్పనకు విరుద్ధం.
+
+ఇప్పుడు $\Th{T} \Proves/ \lnot !R_{\Th{T}}$ అని చూపుదాం. మళ్లీ అలా
+కాదని అనుకుందాం; $\lnot !R_{\Th{T}}$ యొక్క \tetoken{ఒక వ్యుత్పత్తికి}{!!a{derivation}} గ్యోడెల్
+సంఖ్య $n$ అనుకుందాం. అప్పుడు $\Refut[\Th{T}](n,\Gn{!R_{\Th{T}}})$
+నిజం; $\ORefut[\Th{T}]$ అనేది $\Refut[\Th{T}]$కు $\Th{Q}$లో
+ప్రాతినిధ్యం వహిస్తుంది కాబట్టి,
+$\Th{Q} \Proves \ORefut[\Th{T}](\num{n},\gn{!R_{\Th{T}}})$. అప్పుడు
+$\Th{T}$ అనేది $!R_{\Th{T}}$ను కూడా \tetoken{నిగమించి}{!!{derive}} వైరుధ్యమవుతుందని మళ్లీ
+చూపుతాం. ఎందుకంటే
+\begin{align*}
+\Th{Q} & \Proves !R_{\Th{T}} \liff \lnot \ORProv[\Th{T}](\gn{!R_{\Th{T}}}),
+\intertext{$\Th{T}$ అనేది~$\Th{Q}$ను విస్తరిస్తుంది కాబట్టి, కింది దాన్ని చూపితే చాలు:}
+\Th{Q} & \Proves \lnot \ORProv[\Th{T}](\gn{!R_{\Th{T}}}).
+\end{align*}
+\tetoken{వాక్యం}{!!{sentence}} $\lnot \ORProv[\Th{T}](\gn{!R_{\Th{T}}})$, అంటే
+\begin{align*}
+  \lnot & \lexists[x][(\OPrf[\Th{T}](x,\gn{!R_{\Th{T}}}) \land
+    \lforall[z][(z < x \lif \lnot \ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))])],
+  \intertext{తార్కికంగా కింది దానికి సమానార్థకం:}
+  & \lforall[x][(\OPrf[\Th{T}](x,\gn{!R_{\Th{T}}}) \lif
+    \lexists[z][(z < x \land \ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))])].
+\end{align*}
+$\Th{Q}$ ఏమి \tetoken{నిగమిస్తుందో}{!!{derive}s} తెలిపే వాస్తవాలను వాడుతూ అనధికారికంగా
+వాదిద్దాం. $x$ ఏకపక్షమైనదనీ, $\OPrf[\Th{T}](x,\gn{!R_{\Th{T}}})$ అనీ
+అనుకుందాం. $\Th{T} \Proves/ !R_{\Th{T}}$ అని ఇప్పటికే తెలుసు; కాబట్టి ప్రతి
+$k$కు $\Th{Q} \Proves \lnot \OPrf[\Th{T}](\num{k},\gn{!R_{\Th{T}}})$.
+అందువల్ల ప్రతి $k$కు $\eq/[x][\num{k}]$ వస్తుంది. ప్రత్యేకించి మనకు (a)
+$\eq/[x][\num{n}]$ ఉంది. అలాగే
+$\lnot(\eq[x][\num{0}] \lor \eq[x][\num{1}] \lor \dots \lor
+\eq[x][\num{n-1}])$ ఉంది; కనుక \olref[req][min]{lem:less-nsucc} ప్రకారం
+(b) $\lnot(x < \num{n})$. \olref[req][min]{lem:trichotomy} ప్రకారం
+$\num{n} < x$. ఇంకా
+$\Th{Q} \Proves \ORefut[\Th{T}](\num{n},\gn{!R_{\Th{T}}})$ కాబట్టి,
+$\num{n} < x \land \ORefut[\Th{T}](\num{n},\gn{!R_{\Th{T}}})$ వస్తుంది;
+దాని నుంచి $\lexists[z][(z < x \land
+\ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))]$. $x$ ఏకపక్షమైనది కాబట్టి, కోరినట్లు
+\[
+\lforall[x][(\OPrf[\Th{T}](x,\gn{!R_{\Th{T}}}) \lif
+  \lexists[z][(z < x \land \ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))])].
+\]
+వస్తుంది.
+\end{proof}
+
+\begin{prob}
+$A$, $B$ అనే రెండు సహజ సంఖ్యల సమితులకు $A \subseteq X$, $B \subseteq
+\Complement{X}$ అయ్యే \tetoken{నిర్ణయించదగిన}{!!{decidable}} సమితి~$X$ ఏదీ లేకపోతే, వాటిని
+\emph{గణనీయంగా వేరుపరచలేనివి} అంటాం ($\Complement{X}$ అనేది~$X$ యొక్క పూరకం
+$\Nat \setminus X$). $\Th{T}$ అనేది $\Th{Q}$కు అవైరుధ్యమైన,
+\tetoken{స్వీకృతీకరించదగిన}{!!{axiomatizable}} విస్తరణ అనుకుందాం. $A$ అనేది $\Th{T}$లో
+నిరూపణీయమైన \tetoken{వాక్యాల}{!!{sentence}s} గ్యోడెల్ సంఖ్యల సమితి, $B$ అనేది $\Th{T}$లో
+ఖండించదగిన వాక్యాల గ్యోడెల్ సంఖ్యల సమితి అనుకుందాం. $A$, $B$ గణనీయంగా
+వేరుపరచలేనివని నిరూపించండి.
+\end{prob}
+
+\end{document}

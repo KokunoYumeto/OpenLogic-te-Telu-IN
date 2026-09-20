@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 308 of 722 draft units**. This log contains 73 terminology/sense decisions and 265 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 318 of 722 draft units**. This log contains 74 terminology/sense decisions and 270 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1759,6 +1759,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low semantic uncertainty because the specialized notions are fixed by explicit definitions, reductions and proofs; medium to high nomenclatural uncertainty for omega-consistency, computable inseparability and theory-interpretation compounds pending independent native specialist review
 
 - Please double-check: Please double-check whether “సిద్ధాంతాలు మరియు గణనీయత / నిగమన పరంగా సంవృతమైన సిద్ధాంతం / గ.లె.-సంపూర్ణ సిద్ధాంతం / omega-అవైరుధ్యం / సార్వత్రిక గణనీయ సంబంధం / అవైరుధ్య విస్తరణ / స్వీకృతీకరించదగిన సిద్ధాంతం / సంపూర్ణ సిద్ధాంతం / గణనీయంగా వేరుపరచలేనితనం / నిరూపించదగిన, ఖండించదగిన వాక్యాలు / ఒక సిద్ధాంతాన్ని అర్థనిర్దేశం చేయడం / అవైరుధ్యమైన నిర్ణయించదగిన విస్తరణ” is idiomatic and technically standard for “theories and computability / deductively closed theory / c.e.-complete theory / omega-consistency / universal computable relation / consistent extension / computably axiomatizable theory / complete theory / computable inseparability / provable and refutable sentences / interpretation of a theory / consistent decidable extension” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T074 — incompleteness and provability / fixed-point lemma / diagonalization / Goedel sentence / proof relation and representing proof formula / provability predicate / refutation / Rosser provability / Peano arithmetic / derivability conditions / consistency statement / reflection principle / Loeb's theorem / definability in the standard model / true arithmetic / undefinability of truth / intended interpretation / halting relation
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: అసంపూర్ణత మరియు నిరూపణీయత / స్థిరబిందు ఉపసిద్ధాంతం / వికర్ణీకరణ / గ్యోడెల్ వాక్యం / నిరూపణ సంబంధం మరియు దానికి ప్రాతినిధ్యం వహించే నిరూపణ సూత్రం / నిరూపణీయత విధేయం / ఖండన / రాసర్ నిరూపణీయత / పియానో అంకగణితం / వ్యుత్పాద్యతా షరతులు / అవైరుధ్య ప్రకటన / ప్రతిబింబ సూత్రం / లోబ్ సిద్ధాంతం / ప్రమాణ నమూనాలో నిర్వచనీయత / అంకగణితపు సత్య వాక్యాల సిద్ధాంతం / సత్యపు నిర్వచనాతీతత / ఉద్దేశిత అర్థనిర్దేశం / నిలుపుదల సంబంధం
+
+- Exact implementation: OLP-0312; incompleteness/incompleteness-provability/incompleteness-provability; content/incompleteness/incompleteness-provability/incompleteness-provability.tex:8 ↔ translation/content/incompleteness/incompleteness-provability/incompleteness-provability.tex:8 (OLP-0312-B004); printed/PDF page pending; OLP-0313; incompleteness/incompleteness-provability/introduction; content/incompleteness/incompleteness-provability/introduction.tex:53-63 ↔ translation/content/incompleteness/incompleteness-provability/introduction.tex:50-58 (OLP-0313-B009); printed/PDF page pending; OLP-0314; incompleteness/incompleteness-provability/fixed-point-lemma; content/incompleteness/incompleteness-provability/fixed-point-lemma.tex:11 ↔ translation/content/incompleteness/incompleteness-provability/fixed-point-lemma.tex:11 (OLP-0314-B005); printed/PDF page pending; OLP-0315; incompleteness/incompleteness-provability/first-incompleteness-thm; content/incompleteness/incompleteness-provability/first-incompleteness-thm.tex:11 ↔ translation/content/incompleteness/incompleteness-provability/first-incompleteness-thm.tex:11 (OLP-0315-B005); printed/PDF page pending; OLP-0316; incompleteness/incompleteness-provability/rosser-thm; content/incompleteness/incompleteness-provability/rosser-thm.tex:11 ↔ translation/content/incompleteness/incompleteness-provability/rosser-thm.tex:11 (OLP-0316-B005); printed/PDF page pending; OLP-0317; incompleteness/incompleteness-provability/godels-paper; content/incompleteness/incompleteness-provability/godels-paper.tex:11 ↔ translation/content/incompleteness/incompleteness-provability/godels-paper.tex:11 (OLP-0317-B005); printed/PDF page pending; OLP-0318; incompleteness/incompleteness-provability/provability-conditions; content/incompleteness/incompleteness-provability/provability-conditions.tex:11 ↔ translation/content/incompleteness/incompleteness-provability/provability-conditions.tex:11 (OLP-0318-B005); printed/PDF page pending; OLP-0319; incompleteness/incompleteness-provability/second-incompleteness-thm; content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:11 ↔ translation/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:11 (OLP-0319-B005); printed/PDF page pending; OLP-0320; incompleteness/incompleteness-provability/lob-thm; content/incompleteness/incompleteness-provability/lob-thm.tex:11 ↔ translation/content/incompleteness/incompleteness-provability/lob-thm.tex:11 (OLP-0320-B005); printed/PDF page pending; OLP-0321; incompleteness/incompleteness-provability/tarski-thm; content/incompleteness/incompleteness-provability/tarski-thm.tex:11 ↔ translation/content/incompleteness/incompleteness-provability/tarski-thm.tex:11 (OLP-0321-B005); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P025, PDF 87, printed 80, Indirect-proof heading and worked derivation; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P028, PDF 92, printed 85, Unary predicates, binary relations and quantifier classification; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P033, PDF 40, printed 33, Inference section heading and definition; TE-P034, PDF 308, printed 301, Main point 5, Cartesian product definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P005 supplies Andhra Pradesh native natural-number exposition. TE-P008, TE-P010--TE-P011 and TE-P034 supply set, ordered-pair, relation and function usage from the distinct school-mathematics witness. TE-P003 and TE-P032 support proof, induction, deduction and theorem prose. TE-P018--TE-P019 and TE-P024--TE-P033 directly support formal logic, truth values, derivations, proofs, predicates, quantifiers, first-order scope, individual domain, sentence distinctions and inference in the pre-bifurcation logic witness retained through its Telangana-hosted copy. These witnesses do not directly attest fixed points, diagonalization, arithmetized proof predicates, Rosser provability, the Hilbert derivability conditions, reflection, Loeb's theorem or Tarski undefinability. The frozen definitions, fixed-point construction, Goedel and Rosser proofs, P1--P3 derivations, reflection argument and standard-model truth proof in OLP-0312--OLP-0321 control those exact senses; TE-T034, TE-T047, TE-T058, TE-T061, TE-T066--TE-T067 and TE-T070--TE-T073 supply the edition's earlier reversible choices. గ్యోడెల్, రాసర్, పియానో, లోబ్, టార్స్కీ, క్వైన్, ఎపిమెనిడీస్ and హిల్బర్ట్ are source names or eponyms. PA, Q, T, N, omega, Goedel-code notation and formula/proof metavariables remain protected notation; no unexplained English technical headword remains in reader-facing prose
+
+- Alternatives: reuse the established truth, formula, sentence, derivation and consistency register, with fixed-point, arithmetized provability, reflection and undefinability senses fixed by the adjacent constructions (chosen); leave the specialized incompleteness and provability headwords in untranslated English reader prose (rejected); collapse truth, provability and derivability into one undifferentiated notion (rejected because the chapter distinguishes them); claim direct canon attestation for the fixed-point lemma or the Rosser, Löb and Tarski theorems (rejected because the frozen definitions and proofs control those senses)
+
+- Uncertainty: Low semantic uncertainty because the new compounds are fixed by explicit definitions and displayed proofs; medium to high nomenclatural uncertainty for diagonalization, arithmetized provability, reflection and truth-undefinability compounds pending independent native specialist review
+
+- Please double-check: Please double-check whether “అసంపూర్ణత మరియు నిరూపణీయత / స్థిరబిందు ఉపసిద్ధాంతం / వికర్ణీకరణ / గ్యోడెల్ వాక్యం / నిరూపణ సంబంధం మరియు దానికి ప్రాతినిధ్యం వహించే నిరూపణ సూత్రం / నిరూపణీయత విధేయం / ఖండన / రాసర్ నిరూపణీయత / పియానో అంకగణితం / వ్యుత్పాద్యతా షరతులు / అవైరుధ్య ప్రకటన / ప్రతిబింబ సూత్రం / లోబ్ సిద్ధాంతం / ప్రమాణ నమూనాలో నిర్వచనీయత / అంకగణితపు సత్య వాక్యాల సిద్ధాంతం / సత్యపు నిర్వచనాతీతత / ఉద్దేశిత అర్థనిర్దేశం / నిలుపుదల సంబంధం” is idiomatic and technically standard for “incompleteness and provability / fixed-point lemma / diagonalization / Goedel sentence / proof relation and representing proof formula / provability predicate / refutation / Rosser provability / Peano arithmetic / derivability conditions / consistency statement / reflection principle / Loeb's theorem / definability in the standard model / true arithmetic / undefinability of truth / intended interpretation / halting relation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -8119,3 +8143,123 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check that the first ZFC corollary excludes consistent decidable extensions, since an inconsistent extension is decidable.
+
+## REV-OLTEINP-001 — OLTEINP-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: replaced the external relation symbol with the object-language representing formula in the definition of OProv; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0318; incompleteness/incompleteness-provability/provability-conditions; lines 32-35, definition of the represented provability formula ↔ translation/content/incompleteness/incompleteness-provability/provability-conditions.tex:31-34 (OLP-0318-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTEINP-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: replaced the external relation symbol with the object-language representing formula in the definition of OProv; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINP-001 is mathematically precise and idiomatic.
+
+## REV-OLTEINP-002 — OLTEINP-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored the object-language OProv formula used by the fixed-point equivalence; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0319; incompleteness/incompleteness-provability/second-incompleteness-thm; lines 41-43, informal second-incompleteness argument ↔ translation/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:42 (OLP-0319-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTEINP-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the object-language OProv formula used by the fixed-point equivalence; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINP-002 is mathematically precise and idiomatic.
+
+## REV-OLTEINP-003 — OLTEINP-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored the marked formula metavariable in the Goedel numeral used by the P2 substitution; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0319; incompleteness/incompleteness-provability/second-incompleteness-thm; lines 89-94, explanation of the P2 substitution ↔ translation/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:93 (OLP-0319-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTEINP-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the marked formula metavariable in the Goedel numeral used by the P2 substitution; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINP-003 is mathematically precise and idiomatic.
+
+## REV-OLTEINP-004 — OLTEINP-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: parameterized the consistency predicate by the same theory object used in the theorem and its provability predicate; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0319; incompleteness/incompleteness-provability/second-incompleteness-thm; lines 98-102, abstract second incompleteness theorem ↔ translation/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:102 (OLP-0319-B013); printed/PDF page pending
+
+- Authorities actually checked: OLTEINP-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: parameterized the consistency predicate by the same theory object used in the theorem and its provability predicate; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINP-004 is mathematically precise and idiomatic.
+
+## REV-OLTEINP-005 — OLTEINP-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: added the missing L-7 bridge from provability of D to provability of A in the final justification; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0320; incompleteness/incompleteness-provability/lob-thm; line 117, final inference in the proof of Loeb's theorem ↔ translation/content/incompleteness/incompleteness-provability/lob-thm.tex:118-120 (OLP-0320-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTEINP-20260920; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: added the missing L-7 bridge from provability of D to provability of A in the final justification; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINP-005 is mathematically precise and idiomatic.

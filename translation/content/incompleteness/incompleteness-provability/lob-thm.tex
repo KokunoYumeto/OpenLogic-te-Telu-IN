@@ -1,0 +1,156 @@
+% Part: incompleteness
+% Chapter: incompleteness-provability
+% Section: lob-thm
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{inp}{lob}
+
+\olsection{లోబ్ సిద్ధాంతం}
+
+సిద్ధాంతం~$\Th{T}$కు గ్యోడెల్ వాక్యం అనేది $\lnot
+\OProv[\Th{T}](y)$కు స్థిరబిందువు; అంటే కింది షరతును తృప్తిపరచే
+\tetoken{ఒక వాక్యం}{!!a{sentence}}~$!G$:
+\[
+\Th{T} \Proves \lnot \OProv[\Th{T}](\gn{!G}) \liff !G.
+\]
+అది \tetoken{వ్యుత్పాదించదగినది}{!!{derivable}} కాదు. ఎందుకంటే $\Th{T} \Proves !G$ అయితే,
+(a) \tetoken{వ్యుత్పాద్యత}{!!{derivability}} షరతు~(1) ప్రకారం
+$\Th{T} \Proves \OProv[\Th{T}](\gn{!G})$; ఇంకా (b)
+$\Th{T} \Proves !G$ను, $\Th{T} \Proves \lnot \OProv[\Th{T}](\gn{!G})
+\liff !G$ను కలిపితే $\Th{T} \Proves \lnot \OProv[\Th{T}](\gn{!G})$;
+కాబట్టి $\Th{T}$ వైరుధ్యమవుతుంది. ఇప్పుడు $\OProv[\Th{T}](y)$కు
+స్థిరబిందువు స్థితి ఏమిటని అడగడం సహజం; అంటే కింది షరతు గల
+\tetoken{ఒక వాక్యం}{!!a{sentence}}~$!H$:
+\[
+\Th{T} \Proves \OProv[\Th{T}](\gn{!H}) \liff !H.
+\]
+అది \tetoken{వ్యుత్పాదించదగినదైతే}{!!{derivable}}, షరతు~(1) ప్రకారం
+$\Th{T} \Proves \OProv[\Th{T}](\gn{!H})$; కానీ పైనున్న సమానార్థకతకు
+మోడస్ పోనెన్స్‌ను అన్వయించినా అదే నిర్ధారణ వస్తుంది. కాబట్టి గ్యోడెల్ వాక్యం
+విషయంలోని అదే వాదనతో $\Th{T}$ వైరుధ్యమని రావడం లేదు. దీనివల్ల $\Th{T}$
+నిజంగా~$!H$ను \tetoken{నిగమిస్తుందని}{!!{derive}} మాత్రం తేలదు.
+
+ఈ ప్రశ్నను కొంచెం సాధారణీకరిస్తే ముందుకు వెళ్లవచ్చు. స్థిరబిందు సమానార్థకతలో
+ఎడమ నుంచి కుడి దిశ $\OProv[\Th{T}](\gn{!H}) \lif !H$ అనేది
+\emph{ప్రతిబింబ సూత్రం} అనే సాధారణ పథకానికి ఒక నిదర్శనం:
+$\OProv[\Th{T}](\gn{!A}) \lif !A$. ఒక అర్థంలో, $\Th{T}$ తాను ఏమి
+\tetoken{నిగమించగలదో}{!!{derive}} ``ప్రతిబింబించగలదని'' ఇది వ్యక్తం చేస్తుంది కాబట్టి ఆ పేరు;
+ప్రాథమికంగా, ఏ~$!A$కైనా ``$\Th{T}$ అనేది~$!A$ను \tetoken{నిగమించగలిగితే}{!!{derive}},
+$!A$ సత్యం'' అని చెబుతుంది. ఇది ధ్వన్యమైన సిద్ధాంతాలకు మాత్రమే సత్యం;
+అందువల్ల సాధారణంగా సిద్ధాంతాలు దాని ప్రతి నిదర్శనాన్నీ
+\tetoken{నిగమించవని}{!!{derive}} సూచిస్తుంది. అయితే (తగినంత బలంగా ఉండి,
+\tetoken{వ్యుత్పాద్యత}{!!{derivability}} షరతులను తృప్తిపరచే) సిద్ధాంతం ఏ నిదర్శనాలను
+\tetoken{నిగమించగలదు}{!!{derive}}? $!A$ స్వయంగా \tetoken{వ్యుత్పాదించదగినదిగా}{!!{derivable}} ఉన్నవన్నీ తప్పకుండా.
+అంతే అని తదుపరి ఫలితం చూపుతుంది.
+
+\begin{thm}\ollabel{thm:lob}
+$\Th{T}$ అనేది $\Th{Q}$ను విస్తరించే \tetoken{ఒక స్వీకృతీకరించదగిన}{!!a{axiomatizable}}
+సిద్ధాంతం అనుకుందాం; ఇంకా $\OProv[\Th{T}](y)$ అనేది
+\olref[2in]{sec}లోని P1--P3 షరతులను తృప్తిపరచే సూత్రం అనుకుందాం.
+$\Th{T}$ అనేది $\OProv[\Th{T}](\gn{!A}) \lif !A$ను
+\tetoken{నిగమిస్తే}{!!{derive}s}, నిజానికి $\Th{T}$ అనేది $!A$ను \tetoken{నిగమిస్తుంది}{!!{derive}s}.
+\end{thm}
+
+మరో విధంగా చెప్పాలంటే, $\Th{T} \Proves/ !A$ అయితే,
+$\Th{T} \Proves/ \OProv[\Th{T}](\gn{!A}) \lif !A$. ఈ ఫలితాన్ని లోబ్
+సిద్ధాంతం అంటారు.
+
+\begin{explain}
+లోబ్ సిద్ధాంతపు నిరూపణకు మార్గదర్శకమైన ఆలోచన శాంటా క్లాజ్ ఉన్నాడని చెప్పే
+ఒక చమత్కార నిరూపణ. (ఆ నిర్ధారణ మీకు నచ్చకపోతే, మీకు నచ్చిన మరే నిర్ధారణనైనా
+దాని స్థానంలో పెట్టుకోవచ్చు.) అది ఇలా ఉంది:
+\begin{enumerate}
+\item $X$ అనేది ``$X$ సత్యమైతే, శాంటా క్లాజ్ ఉన్నాడు'' అనే వాక్యం అనుకుందాం.
+\item $X$ సత్యమని అనుకుందాం.
+\item అప్పుడు అది చెప్పేది నిజమవుతుంది; అంటే: $X$ సత్యమైతే, శాంటా క్లాజ్
+  ఉన్నాడు.
+\item $X$ సత్యమని ఊహిస్తున్నాం కాబట్టి, (2), (3)ల నుంచి మోడస్ పోనెన్స్ ద్వారా
+  శాంటా క్లాజ్ ఉన్నాడని నిర్ధారించవచ్చు.
+\item (2)లోని ``$X$ సత్యం'' అనే పరికల్పన నుంచి (4)లోని ``శాంటా క్లాజ్
+  ఉన్నాడు''ను విజయవంతంగా నిగమించాం. సోపాధిక నిరూపణ ద్వారా ``$X$ సత్యమైతే,
+  శాంటా క్లాజ్ ఉన్నాడు'' అని చూపాం.
+\item కానీ ఇదే వాక్యం~$X$. కాబట్టి $X$ సత్యమని చూపాం.
+\item అయితే పైన (2)--(4)లోని వాదన ప్రకారం, శాంటా క్లాజ్ ఉన్నాడు.
+\end{enumerate}
+ఈ ఆలోచనలో ``సత్యం'' స్థానంలో ``\tetoken{వ్యుత్పాదించదగినది}{!!{derivable}}''ని, ``శాంటా క్లాజ్
+ఉన్నాడు'' స్థానంలో~$!A$ను పెట్టి అధికారికీకరిస్తే లోబ్ సిద్ధాంతపు నిరూపణ
+వస్తుంది. $\OProv[\Th{T}](y) \lif !A$ అనే \tetoken{సూత్రానికి}{!!{formula}} స్థిరబిందు
+ఉపసిద్ధాంతాన్ని అన్వయించడమే ఉపాయం. దాని స్థిరబిందువు పైనున్న రూపురేఖలోని
+వాక్యం~$X$కు అనుగుణంగా ఉంటుంది.
+\end{explain}
+
+\begin{proof}[\olref{thm:lob} నిరూపణ]
+$!A$ అనేది $\Th{T}$, $\OProv[\Th{T}](\gn{!A}) \lif !A$ను
+\tetoken{నిగమించే}{!!{derive}s} \tetoken{ఒక వాక్యం}{!!a{sentence}} అనుకుందాం. $!B(y)$ అనేది
+$\OProv[\Th{T}](y) \lif !A$ అనే \tetoken{సూత్రం}{!!{formula}} అనుకుందాం. స్థిరబిందు
+ఉపసిద్ధాంతాన్ని వాడి, $\Th{T}$ అనేది $!D \liff !B(\gn{!D})$ను
+\tetoken{నిగమించే}{!!{derive}s} \tetoken{ఒక వాక్యం}{!!a{sentence}}~$!D$ను కనుగొనండి. అప్పుడు కింది వాటిలో
+ప్రతిదీ $\Th{T}$లో \tetoken{వ్యుత్పాదించదగినది}{!!{derivable}}:
+\begin{align}
+  & !D \liff (\OProv[\Th{T}](\gn{!D}) \lif !A) \ollabel{L-1}\\
+  & \qquad \text{$!D$ అనేది~$!B(y)$కు స్థిరబిందువు}\notag \\
+  & !D \lif (\OProv[\Th{T}](\gn{!D}) \lif !A) \ollabel{L-2}\\
+  & \qquad\text{\olref{L-1} నుంచి}\notag\\
+  & \OProv[\Th{T}](\gn{!D \lif (\OProv[\Th{T}](\gn{!D}) \lif !A)}) \ollabel{L-3}\\
+  & \qquad \text{\olref{L-2} నుంచి షరతు P1 ద్వారా}\notag \\
+  & \OProv[\Th{T}](\gn{!D}) \lif \OProv[\Th{T}](\gn{\OProv[\Th{T}](\gn{!D}) \lif !A})
+  \ollabel{L-4}\\
+  &\qquad \text{\olref{L-3} నుంచి షరతు P2ను వాడి}\notag \\
+  & \OProv[\Th{T}](\gn{!D}) \lif (\OProv[\Th{T}](\gn{\OProv[\Th{T}](\gn{!D})}) \lif \OProv[\Th{T}](\gn{!A})) \ollabel{L-5}\\
+  &\qquad \text{\olref{L-4} నుంచి P2ను మళ్లీ వాడి} \notag\\
+& \OProv[\Th{T}](\gn{!D}) \lif \OProv[\Th{T}](\gn{\OProv[\Th{T}](\gn{!D})}) \ollabel{L-6}\\
+  & \qquad\text{\tetoken{వ్యుత్పాద్యత}{!!{derivability}} షరతు P3 ద్వారా} \notag\\
+  & \OProv[\Th{T}](\gn{!D}) \lif \OProv[\Th{T}](\gn{!A}) \ollabel{L-7} \\
+  &\qquad\text{\olref{L-5}, \olref{L-6}ల నుంచి}\notag\\
+  & \OProv[\Th{T}](\gn{!A}) \lif !A \ollabel{L-8}\\
+  &\qquad\text{సిద్ధాంతపు పరికల్పన ద్వారా} \notag\\
+  & \OProv[\Th{T}](\gn{!D}) \lif !A \ollabel{L-9}\\
+  &\qquad\text{\olref{L-7}, \olref{L-8}ల నుంచి}\notag\\
+  & (\OProv[\Th{T}](\gn{!D}) \lif !A) \lif !D \ollabel{L-10}\\
+  & \qquad \text{\olref{L-1} నుంచి}\notag \\
+  & !D \ollabel{L-11}\\
+  & \qquad\text{\olref{L-9}, \olref{L-10}ల నుంచి}\notag \\
+  & \OProv[\Th{T}](\gn{!D}) \ollabel{L-12}\\
+  & \qquad\text{\olref{L-11} నుంచి షరతు~P1 ద్వారా}\notag \\
+  & !A \qquad\qquad\text{\olref{L-7}, \olref{L-8}, \olref{L-12}ల నుంచి}\notag
+\end{align}
+\sourcecorrection{OLTEINP-005}{ఆంగ్ల మూలం చివరి $!A$ అడుగుకు \olref{L-8}, \olref{L-12}లను మాత్రమే సూచించింది; $\OProv(\gn{!D})$ నుంచి $\OProv(\gn{!A})$కు తీసుకెళ్లే అవసరమైన \olref{L-7}ను కూడా ఇక్కడ పేర్కొన్నాం.}
+\end{proof}
+
+లోబ్ సిద్ధాంతం చేతిలో ఉన్నప్పుడు, (P1)--(P3) షరతులను తృప్తిపరచే
+\tetoken{ఒక వ్యుత్పాద్యత}{!!a{derivability}} విధేయం ఉన్న సిద్ధాంతాలకు రెండవ అసంపూర్ణతా సిద్ధాంతపు
+చిన్న నిరూపణ వస్తుంది: $\Th{T} \Proves
+\OProv[\Th{T}](\gn{\lfalse}) \lif \lfalse$ అయితే,
+$\Th{T} \Proves \lfalse$. $\Th{T}$ అవైరుధ్యమైనదైతే,
+$\Th{T} \Proves/ \lfalse$. కాబట్టి
+$\Th{T} \Proves/ \OProv[\Th{T}](\gn{\lfalse}) \lif \lfalse$, అంటే
+$\Th{T} \Proves/ \OCon[\Th{T}]$. $\OProv[\Th{T}](x)$ స్థిరబిందువు~$!H$
+\tetoken{వ్యుత్పాదించదగినదని}{!!{derivable}} చూపేందుకు కూడా దీన్ని అన్వయించవచ్చు. ఎందుకంటే
+\begin{align*}
+  \Th{T} & \Proves \OProv[\Th{T}](\gn{!H}) \liff !H\\
+  \intertext{కాబట్టి ప్రత్యేకించి}
+    \Th{T} & \Proves \OProv[\Th{T}](\gn{!H}) \lif !H
+\end{align*}
+అందువల్ల లోబ్ సిద్ధాంతం ప్రకారం $\Th{T} \Proves !H$.
+
+% Going in the other direction, for homework I
+% may ask you to work through a short proof of L\"ob's theorem, using
+% the second incompleteness theorem instead of the fixed-point lemma.
+
+\begin{prob}
+$\Th{T}$ ఒక గణనీయంగా స్వీకృతీకరించబడిన సిద్ధాంతం అనుకుందాం; ఇంకా
+$\OProv[\Th{T}]$ అనేది $\Th{T}$కు \tetoken{ఒక వ్యుత్పాద్యత}{!!a{derivability}} విధేయం అనుకుందాం.
+కింది నాలుగు ప్రకటనలను పరిశీలించండి:
+\begin{enumerate}
+\item $T \Proves !A$ అయితే, $T \Proves \OProv[\Th{T}](\gn{!A})$.
+\item $T \Proves !A \lif \OProv[\Th{T}](\gn{!A})$.
+\item $T \Proves \OProv[\Th{T}](\gn{!A})$ అయితే, $T \Proves !A$.
+\item $T \Proves \OProv[\Th{T}](\gn{!A}) \lif !A$
+\end{enumerate}
+వీటిలో ప్రతి ప్రకటన ఏ షరతుల కింద నిజం?
+\end{prob}
+
+\end{document}

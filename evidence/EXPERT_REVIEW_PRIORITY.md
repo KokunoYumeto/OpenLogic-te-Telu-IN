@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 308 of 722 draft units**. This view selects 312 of 338 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 318 of 722 draft units**. This view selects 318 of 344 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -473,6 +473,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0301; incompleteness/theories-computability/theories-computability; translation/content/incompleteness/theories-computability/theories-computability.tex:14; printed/PDF page pending; OLP-0303; incompleteness/theories-computability/q-is-ce; translation/content/incompleteness/theories-computability/q-is-ce.tex:11; printed/PDF page pending; OLP-0304; incompleteness/theories-computability/oconsis-ext-of-q-undec; translation/content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex:11; printed/PDF page pending; OLP-0305; incompleteness/theories-computability/extensions-of-q-not-decidable; translation/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex:23-27; printed/PDF page pending; OLP-0306; incompleteness/theories-computability/computably-axiomatizable; translation/content/incompleteness/theories-computability/computably-axiomatizable.tex:13-17; printed/PDF page pending; OLP-0309; incompleteness/theories-computability/inseparability; translation/content/incompleteness/theories-computability/inseparability.tex:11-12; printed/PDF page pending; OLP-0311; incompleteness/theories-computability/interpretability; translation/content/incompleteness/theories-computability/interpretability.tex:11; printed/PDF page pending
 
 - Please double-check: Please double-check whether “సిద్ధాంతాలు మరియు గణనీయత / నిగమన పరంగా సంవృతమైన సిద్ధాంతం / గ.లె.-సంపూర్ణ సిద్ధాంతం / omega-అవైరుధ్యం / సార్వత్రిక గణనీయ సంబంధం / అవైరుధ్య విస్తరణ / స్వీకృతీకరించదగిన సిద్ధాంతం / సంపూర్ణ సిద్ధాంతం / గణనీయంగా వేరుపరచలేనితనం / నిరూపించదగిన, ఖండించదగిన వాక్యాలు / ఒక సిద్ధాంతాన్ని అర్థనిర్దేశం చేయడం / అవైరుధ్యమైన నిర్ణయించదగిన విస్తరణ” is idiomatic and technically standard for “theories and computability / deductively closed theory / c.e.-complete theory / omega-consistency / universal computable relation / consistent extension / computably axiomatizable theory / complete theory / computable inseparability / provable and refutable sentences / interpretation of a theory / consistent decidable extension” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T074 — incompleteness and provability / fixed-point lemma / diagonalization / Goedel sentence / proof relation and representing proof formula / provability predicate / refutation / Rosser provability / Peano arithmetic / derivability conditions / consistency statement / reflection principle / Loeb's theorem / definability in the standard model / true arithmetic / undefinability of truth / intended interpretation / halting relation
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: అసంపూర్ణత మరియు నిరూపణీయత / స్థిరబిందు ఉపసిద్ధాంతం / వికర్ణీకరణ / గ్యోడెల్ వాక్యం / నిరూపణ సంబంధం మరియు దానికి ప్రాతినిధ్యం వహించే నిరూపణ సూత్రం / నిరూపణీయత విధేయం / ఖండన / రాసర్ నిరూపణీయత / పియానో అంకగణితం / వ్యుత్పాద్యతా షరతులు / అవైరుధ్య ప్రకటన / ప్రతిబింబ సూత్రం / లోబ్ సిద్ధాంతం / ప్రమాణ నమూనాలో నిర్వచనీయత / అంకగణితపు సత్య వాక్యాల సిద్ధాంతం / సత్యపు నిర్వచనాతీతత / ఉద్దేశిత అర్థనిర్దేశం / నిలుపుదల సంబంధం
+
+- Occurrences: OLP-0312; incompleteness/incompleteness-provability/incompleteness-provability; translation/content/incompleteness/incompleteness-provability/incompleteness-provability.tex:8; printed/PDF page pending; OLP-0313; incompleteness/incompleteness-provability/introduction; translation/content/incompleteness/incompleteness-provability/introduction.tex:50-58; printed/PDF page pending; OLP-0314; incompleteness/incompleteness-provability/fixed-point-lemma; translation/content/incompleteness/incompleteness-provability/fixed-point-lemma.tex:11; printed/PDF page pending; OLP-0315; incompleteness/incompleteness-provability/first-incompleteness-thm; translation/content/incompleteness/incompleteness-provability/first-incompleteness-thm.tex:11; printed/PDF page pending; OLP-0316; incompleteness/incompleteness-provability/rosser-thm; translation/content/incompleteness/incompleteness-provability/rosser-thm.tex:11; printed/PDF page pending; OLP-0317; incompleteness/incompleteness-provability/godels-paper; translation/content/incompleteness/incompleteness-provability/godels-paper.tex:11; printed/PDF page pending; OLP-0318; incompleteness/incompleteness-provability/provability-conditions; translation/content/incompleteness/incompleteness-provability/provability-conditions.tex:11; printed/PDF page pending; OLP-0319; incompleteness/incompleteness-provability/second-incompleteness-thm; translation/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:11; printed/PDF page pending; OLP-0320; incompleteness/incompleteness-provability/lob-thm; translation/content/incompleteness/incompleteness-provability/lob-thm.tex:11; printed/PDF page pending; OLP-0321; incompleteness/incompleteness-provability/tarski-thm; translation/content/incompleteness/incompleteness-provability/tarski-thm.tex:11; printed/PDF page pending
+
+- Please double-check: Please double-check whether “అసంపూర్ణత మరియు నిరూపణీయత / స్థిరబిందు ఉపసిద్ధాంతం / వికర్ణీకరణ / గ్యోడెల్ వాక్యం / నిరూపణ సంబంధం మరియు దానికి ప్రాతినిధ్యం వహించే నిరూపణ సూత్రం / నిరూపణీయత విధేయం / ఖండన / రాసర్ నిరూపణీయత / పియానో అంకగణితం / వ్యుత్పాద్యతా షరతులు / అవైరుధ్య ప్రకటన / ప్రతిబింబ సూత్రం / లోబ్ సిద్ధాంతం / ప్రమాణ నమూనాలో నిర్వచనీయత / అంకగణితపు సత్య వాక్యాల సిద్ధాంతం / సత్యపు నిర్వచనాతీతత / ఉద్దేశిత అర్థనిర్దేశం / నిలుపుదల సంబంధం” is idiomatic and technically standard for “incompleteness and provability / fixed-point lemma / diagonalization / Goedel sentence / proof relation and representing proof formula / provability predicate / refutation / Rosser provability / Peano arithmetic / derivability conditions / consistency statement / reflection principle / Loeb's theorem / definability in the standard model / true arithmetic / undefinability of truth / intended interpretation / halting relation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -3123,3 +3133,53 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0311; incompleteness/theories-computability/interpretability; translation/content/incompleteness/theories-computability/interpretability.tex:34-36; printed/PDF page pending
 
 - Please double-check: Please double-check that the first ZFC corollary excludes consistent decidable extensions, since an inconsistent extension is decidable.
+
+## REV-OLTEINP-001 — OLTEINP-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: replaced the external relation symbol with the object-language representing formula in the definition of OProv; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0318; incompleteness/incompleteness-provability/provability-conditions; translation/content/incompleteness/incompleteness-provability/provability-conditions.tex:31-34; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINP-001 is mathematically precise and idiomatic.
+
+## REV-OLTEINP-002 — OLTEINP-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored the object-language OProv formula used by the fixed-point equivalence; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0319; incompleteness/incompleteness-provability/second-incompleteness-thm; translation/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:42; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINP-002 is mathematically precise and idiomatic.
+
+## REV-OLTEINP-003 — OLTEINP-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored the marked formula metavariable in the Goedel numeral used by the P2 substitution; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0319; incompleteness/incompleteness-provability/second-incompleteness-thm; translation/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:93; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINP-003 is mathematically precise and idiomatic.
+
+## REV-OLTEINP-004 — OLTEINP-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: parameterized the consistency predicate by the same theory object used in the theorem and its provability predicate; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0319; incompleteness/incompleteness-provability/second-incompleteness-thm; translation/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:102; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINP-004 is mathematically precise and idiomatic.
+
+## REV-OLTEINP-005 — OLTEINP-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: added the missing L-7 bridge from provability of D to provability of A in the final justification; adjacent sourcecorrection discloses the repair
+
+- Occurrences: OLP-0320; incompleteness/incompleteness-provability/lob-thm; translation/content/incompleteness/incompleteness-provability/lob-thm.tex:118-120; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTEINP-005 is mathematically precise and idiomatic.

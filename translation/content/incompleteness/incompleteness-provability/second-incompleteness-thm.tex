@@ -1,0 +1,128 @@
+% Part: incompleteness
+% Chapter: incompleteness-provability
+% Section: second-incompleteness-thm
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{inp}{2in}
+
+\olsection{రెండవ అసంపూర్ణతా సిద్ధాంతం}
+
+$\Th{PA}$ తన స్వంత అవైరుధ్యాన్ని నిరూపించదనే ప్రకటనను ఎలా వ్యక్తం చేయాలి?
+$\Th{PA}$ వైరుధ్యమైనదని చెప్పడం అంటే $\Th{PA} \Proves \eq[0][1]$ అని
+చెప్పడమే. అందువల్ల అవైరుధ్య ప్రకటన $\OCon[\Th{PA}]$ను
+$\lnot \OProv[\Th{PA}](\gn{\eq[0][1]})$ అనే \tetoken{వాక్యంగా}{!!{sentence}} తీసుకోవచ్చు;
+అప్పుడు కింది సిద్ధాంతం కావలసిన పనిని చేస్తుంది:
+
+\begin{thm}
+\ollabel{thm:second-incompleteness}
+$\Th{PA}$ అవైరుధ్యమైనదని అనుకుందాం. అప్పుడు $\Th{PA}$ అనేది
+$\OCon[\Th{PA}]$ను \tetoken{నిగమించదు}{!!{derive}}.
+\end{thm}
+
+ఈ సిద్ధాంతం $\OCon[\Th{PA}]$కు ఎంచుకున్న ప్రత్యేక ప్రాతినిధ్యంపై (అంటే
+$\OProv[\Th{PA}](y)$కు ఎంచుకున్న ప్రత్యేక ప్రాతినిధ్యంపై) ఆధారపడుతుందని
+గమనించడం ముఖ్యం. $\OProv[\Th{PA}](y)$ ప్రాతినిధ్యం మూడు
+\tetoken{వ్యుత్పాద్యత}{!!{derivability}} షరతులను తృప్తిపరుస్తుందనే విషయాన్ని మాత్రమే మనం వాడతాం;
+కాబట్టి ఈ లక్షణాలు గల \tetoken{వ్యుత్పాద్యత}{!!a{derivability}} విధేయం ఉన్న ఏ సిద్ధాంతానికైనా ఈ
+సిద్ధాంతం సాధారణీకరించబడుతుంది.
+
+ఈ సిద్ధాంతం మంచి చమత్కారపు ముగింపులా అనుసరిస్తుంది కాబట్టి, గ్యోడెల్ ఇచ్చిన
+వాదన రూపురేఖలను చదవడం ఉపయుక్తం. అది ఇలా సాగుతుంది.
+\olref[1in]{thm:first-incompleteness} నిరూపణలో నిర్మించిన గ్యోడెల్ వాక్యం
+$!G_\Th{PA}$గా ఉండనివ్వండి.
+``$\Th{PA}$ అవైరుధ్యమైనదైతే, $\Th{PA}$ అనేది $!G_\Th{PA}$ను
+\tetoken{నిగమించదు}{!!{derive}}'' అని మనం చూపాం. దీన్ని $\Th{PA}$లోనే అధికారికీకరిస్తే,
+\[
+\OCon[\Th{PA}] \lif \lnot \OProv[\Th{PA}](\gn{!G_\Th{PA}}).
+\]
+కు ఒక నిరూపణ వస్తుంది. ఇప్పుడు $\Th{PA}$ అనేది $\OCon[\Th{PA}]$ను
+\tetoken{నిగమిస్తుందని}{!!{derive}s} అనుకుందాం. అప్పుడు అది
+$\lnot \OProv[\Th{PA}](\gn{!G_\Th{PA}})$ను \tetoken{నిగమిస్తుంది}{!!{derive}s}.\sourcecorrection{OLTEINP-002}{ఆంగ్ల మూలంలోని ఈ వాక్యం ప్రాతినిధ్య సూత్రానికి ముందు ఉండాల్సిన $\mathrm{O}$ను వదిలి $\Prov$ అని రాసింది; అధ్యాయం అంతటా నిర్వచించిన $\OProv$నే ఇక్కడ నిలిపాం.}
+కానీ $!G_\Th{PA}$ గ్యోడెల్ వాక్యం కాబట్టి, ఇది $!G_\Th{PA}$కు సమానార్థకం.
+అందువల్ల $\Th{PA}$ అనేది $!G_\Th{PA}$ను \tetoken{నిగమిస్తుంది}{!!{derive}s}.
+
+కానీ $\Th{PA}$ అవైరుధ్యమైనదైతే అది $!G_\Th{PA}$ను
+\tetoken{నిగమించదని}{!!{derive}} మనకు తెలుసు!{} కాబట్టి $\Th{PA}$ అవైరుధ్యమైనదైతే,
+$\OCon[\Th{PA}]$ను అది \tetoken{నిగమించలేదు}{!!{derive}}.
+
+వాదనను మరింత నిర్దిష్టంగా చేయడానికి, $!G_\Th{PA}$ను~$\Th{PA}$కు గ్యోడెల్
+వాక్యంగా తీసుకుని, $\Th{PA}$ అనేది $\OCon[\Th{PA}] \lif !G_\Th{PA}$ను
+\tetoken{నిగమిస్తుందని}{!!{derive}s} చూపేందుకు \tetoken{వ్యుత్పాద్యత}{!!{derivability}} షరతులు (P1)--(P3)ను
+వాడతాం. దీనివల్ల $\Th{PA}$ అనేది $\OCon[\Th{PA}]$ను
+\tetoken{నిగమించదని}{!!{derive}} తేలుతుంది. $\Th{PA}$లో జరిగే నిరూపణ రూపురేఖ ఇది.
+(సరళత కోసం $\Th{PA}$ అధోలిపులను వదిలేస్తాం.)
+\begin{align}
+& !G \liff \lnot \OProv(\gn{!G}) \ollabel{G2-1}\\
+& \qquad\text{$!G$ ఒక గ్యోడెల్ వాక్యం}\notag \\
+& !G \lif \lnot \OProv(\gn{!G}) \ollabel{G2-2}\\
+  & \qquad\text{\olref{G2-1} నుంచి} \notag\\
+& !G \lif
+  (\OProv(\gn{!G}) \lif \lfalse) \ollabel{G2-3}\\
+  & \qquad\text{\olref{G2-2} నుంచి తర్కం ద్వారా}\notag\\
+& \OProv(\gn{
+    !G \lif
+    (\OProv(\gn{!G}) \lif \lfalse)
+  }) \ollabel{G2-4}\\
+  & \qquad\text{\olref{G2-3} నుంచి షరతు P1 ద్వారా} \notag\\
+& \OProv(\gn{!G}) \lif
+  \OProv(\gn{
+    (\OProv(\gn{!G}) \lif \lfalse)
+    }) \ollabel{G2-5}\\
+  & \qquad\text{\olref{G2-4} నుంచి షరతు P2 ద్వారా} \notag\\
+& \OProv(\gn{!G}) \lif (\OProv(\gn{\OProv(\gn{!G})}) \lif \OProv(\gn{\lfalse})) \ollabel{G2-6}\\
+  & \qquad\text{\olref{G2-5} నుంచి షరతు P2 మరియు తర్కం ద్వారా} \notag\\
+& \OProv(\gn{!G}) \lif
+  \OProv(\gn{\OProv(\gn{!G})}) \ollabel{G2-7}\\
+   & \qquad\text{P3 ద్వారా} \notag\\
+& \OProv(\gn{!G}) \lif \OProv(\gn{\lfalse}) \ollabel{G2-8}\\
+  & \qquad \text{\olref{G2-6}, \olref{G2-7}ల నుంచి తర్కం ద్వారా}\notag\\
+& \OCon \lif \lnot \OProv(\gn{!G}) \ollabel{G2-9}\\
+  & \qquad\text{\olref{G2-8} విపర్యయనం మరియు $\OCon \ident \lnot \OProv(\gn{\lfalse})$}\notag \\
+& \OCon \lif !G \notag\\
+  & \qquad\text{\olref{G2-1}, \olref{G2-9}ల నుంచి తర్కం ద్వారా}\notag
+\end{align}
+పైన వాడిన తర్కం ప్రతిజ్ఞాత్మక తర్కంలోని ప్రాథమిక వాస్తవాలే. ఉదాహరణకు,
+\olref{G2-3}లో $\Proves \lnot!A \liff (!A\lif \lfalse)$ను,
+\olref{G2-8}లో $!A \lif (!B \lif !C), !A \lif !B \Proves !A \lif !C$ను
+వాడాం. \olref{G2-5}, \olref{G2-6}లలో షరతు~P2ను వాడటం
+$\OProv(\gn{!A \lif !B}) \lif
+(\OProv(\gn{!A}) \lif \OProv(\gn{!B}))$ అనే P2 నిదర్శనాలపై ఆధారపడుతుంది.
+మొదటిదానిలో $!A \ident !G$, $!B \ident \OProv(\gn{!G}) \lif \lfalse$;
+రెండవదానిలో $!A \ident \OProv(\gn{!G})$, $!B \ident \lfalse$.\sourcecorrection{OLTEINP-003}{ఆంగ్ల మూలంలోని రెండవ ప్రతిస్థాపన $\gn{G}$ అని ఆశ్చర్యార్థక సూత్ర-చిహ్నాన్ని వదిలింది; ప్రదర్శిత P2 నిదర్శనానికి సరిపడే $\gn{!G}$ను ఇక్కడ నిలిపాం.}
+
+రెండవ అసంపూర్ణతా సిద్ధాంతపు మరింత అమూర్త రూపం ఇది:
+
+\begin{thm}
+\ollabel{thm:second-incompleteness-gen} $\Th{T}$ అనేది $\Th{Q}$ను విస్తరించే
+ఏ అవైరుధ్యమైన, \tetoken{స్వీకృతీకరించబడిన}{!!{axiomatized}} సిద్ధాంతమైనా సరే; ఇంకా
+$\OProv[\Th{T}](y)$ అనేది~$\Th{T}$కు \tetoken{వ్యుత్పాద్యత}{!!{derivability}} షరతులు P1--P3ను
+తృప్తిపరచే ఏ సూత్రమైనా సరే. అప్పుడు $\Th{T}$ అనేది
+$\OCon[\Th{T}]$ను \tetoken{నిగమించదు}{!!{derive}}.\sourcecorrection{OLTEINP-004}{ఆంగ్ల మూల నిర్ధారణలో $\OCon[T]$ అని సిద్ధాంత సంకేతపు $\Th{T}$ రూపాన్ని వదిలింది; అదే వాక్యంలో స్థిరపరచిన సిద్ధాంతాన్ని సూచించే $\OCon[\Th{T}]$ను ఇక్కడ నిలిపాం.}
+\end{thm}
+
+\begin{prob}
+$\Th{PA}$ అనేది $!G_{\Th{PA}} \lif \OCon[\Th{PA}]$ను
+\tetoken{నిగమిస్తుందని}{!!{derive}s} చూపండి.
+\end{prob}
+
+\begin{digress}
+ఈ కథలోని నీతి ఏమిటంటే, గణితానికి సంబంధించిన ఏ ``సమంజసమైన'' అవైరుధ్య
+సిద్ధాంతమూ తన స్వంత అవైరుధ్య ప్రకటనను \tetoken{నిగమించలేదు}{!!{derive}}. $\Th{T}$ అనేది
+$\Th{Q}$ను, హిల్బర్ట్ చెప్పిన ``పరిసమాప్త'' తర్కాన్ని (అది ఏదైనా సరే)
+కలిగి ఉన్న గణిత సిద్ధాంతం అనుకుందాం. అప్పుడు మొత్తం $\Th{T}$ కూడా $\Th{T}$
+అవైరుధ్య ప్రకటనను \tetoken{నిగమించలేదు}{!!{derive}}; అందువల్ల మరింతగా, దాని పరిసమాప్త
+ఖండం కూడా~$\Th{T}$ అవైరుధ్య ప్రకటనను \tetoken{నిగమించలేదు}{!!{derive}}. ఆ అర్థంలో
+``మొత్తం గణితం'' కోసం పరిసమాప్త అవైరుధ్య నిరూపణ ఉండదు.
+
+``పరిసమాప్త'' అనే పదానికి అర్థం చెప్పడంలో కొంత వెసులుబాటు ఉంది. హిల్బర్ట్
+అధికారికీకరించాలని కోరుకున్న గణిత రకాల వెలుపల, మనం ``పరిసమాప్తం''గా భావించే
+ఏదైనా ఉండవచ్చని గ్యోడెల్ 1931 పత్రంలో ఒప్పుకున్నాడు. కానీ గ్యోడెల్ ఉదారంగా
+వ్యవహరించాడు; సమంజసంగా పరిసమాప్తం అనదగినప్పటికీ, ఉదాహరణకు ఎంపికా స్వీకృతంతో
+కూడిన జెర్మెలో--ఫ్రెంకెల్ సమితి సిద్ధాంతం $\Th{ZFC}$లో అధికారికీకరించలేని
+దాన్ని ఎలా కనుగొనగలమో నేడు ఊహించడం కష్టం.
+\end{digress}
+
+\end{document}

@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **308 of 722 source units drafted**. This readable view contains all 338 decisions and 624 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **318 of 722 source units drafted**. This readable view contains all 344 decisions and 639 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2109,6 +2109,41 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T073-OCC-005; OLP-0306; OLP-0306-B006; source upstream/content/incompleteness/theories-computability/computably-axiomatizable.tex:13-18 bytes 253-599 SHA-256 cefc4b7c268be41dd32831fc2258102ef090194ef6bb7df234ad618b0ddda19d; target translation/content/incompleteness/theories-computability/computably-axiomatizable.tex:13-17 bytes 278-1080 SHA-256 01ae8b68f8085e3b95e6b5b957aaa67dccbe9c83e0e92ceedc3cc48dd9f41ec0; reader page pending.
   - te-Telu-IN-TE-T073-OCC-006; OLP-0309; OLP-0309-B005; source upstream/content/incompleteness/theories-computability/inseparability.tex:11-12 bytes 191-277 SHA-256 d9da8fc6073ab195b526966775f35c67384af226328d0e98531a7a8b111c6ff8; target translation/content/incompleteness/theories-computability/inseparability.tex:11-12 bytes 191-379 SHA-256 ef01a33f1d757a94d5fba360036e7feaae1786ffd558977598acfd093258707a; reader page pending.
   - te-Telu-IN-TE-T073-OCC-007; OLP-0311; OLP-0311-B005; source upstream/content/incompleteness/theories-computability/interpretability.tex:11 bytes 192-264 SHA-256 180003bb40b9c0d66d6e9805dba9989e14b350ad857b45e35479923bb712a966; target translation/content/incompleteness/theories-computability/interpretability.tex:11 bytes 192-346 SHA-256 fdd96d08b7cb93c525f26c655c150d9db44e7901fc4327844a4c5ded86039779; reader page pending.
+
+## te-Telu-IN-TE-T074 — incompleteness and provability / fixed-point lemma / diagonalization / Goedel sentence / proof relation and representing proof formula / provability predicate / refutation / Rosser provability / Peano arithmetic / derivability conditions / consistency statement / reflection principle / Loeb's theorem / definability in the standard model / true arithmetic / undefinability of truth / intended interpretation / halting relation
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: అసంపూర్ణత మరియు నిరూపణీయత / స్థిరబిందు ఉపసిద్ధాంతం / వికర్ణీకరణ / గ్యోడెల్ వాక్యం / నిరూపణ సంబంధం మరియు దానికి ప్రాతినిధ్యం వహించే నిరూపణ సూత్రం / నిరూపణీయత విధేయం / ఖండన / రాసర్ నిరూపణీయత / పియానో అంకగణితం / వ్యుత్పాద్యతా షరతులు / అవైరుధ్య ప్రకటన / ప్రతిబింబ సూత్రం / లోబ్ సిద్ధాంతం / ప్రమాణ నమూనాలో నిర్వచనీయత / అంకగణితపు సత్య వాక్యాల సిద్ధాంతం / సత్యపు నిర్వచనాతీతత / ఉద్దేశిత అర్థనిర్దేశం / నిలుపుదల సంబంధం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “incompleteness and provability / fixed-point lemma / diagonalization / Goedel sentence / proof relation and representing proof formula / provability predicate / refutation / Rosser provability / Peano arithmetic / derivability conditions / consistency statement / reflection principle / Loeb's theorem / definability in the standard model / true arithmetic / undefinability of truth / intended interpretation / halting relation” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: Low semantic uncertainty because the new compounds are fixed by explicit definitions and displayed proofs; medium to high nomenclatural uncertainty for diagonalization, arithmetized provability, reflection and truth-undefinability compounds pending independent native specialist review
+
+- Rationale: TE-P005 supplies Andhra Pradesh native natural-number exposition. TE-P008, TE-P010--TE-P011 and TE-P034 supply set, ordered-pair, relation and function usage from the distinct school-mathematics witness. TE-P003 and TE-P032 support proof, induction, deduction and theorem prose. TE-P018--TE-P019 and TE-P024--TE-P033 directly support formal logic, truth values, derivations, proofs, predicates, quantifiers, first-order scope, individual domain, sentence distinctions and inference in the pre-bifurcation logic witness retained through its Telangana-hosted copy. These witnesses do not directly attest fixed points, diagonalization, arithmetized proof predicates, Rosser provability, the Hilbert derivability conditions, reflection, Loeb's theorem or Tarski undefinability. The frozen definitions, fixed-point construction, Goedel and Rosser proofs, P1--P3 derivations, reflection argument and standard-model truth proof in OLP-0312--OLP-0321 control those exact senses; TE-T034, TE-T047, TE-T058, TE-T061, TE-T066--TE-T067 and TE-T070--TE-T073 supply the edition's earlier reversible choices. గ్యోడెల్, రాసర్, పియానో, లోబ్, టార్స్కీ, క్వైన్, ఎపిమెనిడీస్ and హిల్బర్ట్ are source names or eponyms. PA, Q, T, N, omega, Goedel-code notation and formula/proof metavariables remain protected notation; no unexplained English technical headword remains in reader-facing prose
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P025 [checked_context_only], PDF page 87; printed page 80; Indirect-proof heading and worked derivation; Direct indirect-proof and formal-proof register; no direct tableau or assumption-discharge label. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P028 [checked_context_only], PDF page 92; printed page 85; Unary predicates, binary relations and quantifier classification; Direct quantifier taxonomy and predicate/relation context. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C005:TE-P033 [checked_context_only], PDF page 40; printed page 33; Inference section heading and definition; Direct inference and explanatory register; derivation headword is separately witnessed at TE-P024. | TE-C004:TE-P034 [checked_context_only], PDF page 308; printed page 301; Main point 5, Cartesian product definition; Direct ordered-pair and Cartesian-product terminology; singular క్రమయుగ్మం is a transparent inflection.
+
+- Alternatives: leave the specialized incompleteness and provability headwords in untranslated English reader prose [rejected: rejected] | collapse truth, provability and derivability into one undifferentiated notion [rejected: rejected because the chapter distinguishes them] | claim direct canon attestation for the fixed-point lemma or the Rosser, Löb and Tarski theorems [rejected: rejected because the frozen definitions and proofs control those senses]
+
+- Review question: Please double-check whether “అసంపూర్ణత మరియు నిరూపణీయత / స్థిరబిందు ఉపసిద్ధాంతం / వికర్ణీకరణ / గ్యోడెల్ వాక్యం / నిరూపణ సంబంధం మరియు దానికి ప్రాతినిధ్యం వహించే నిరూపణ సూత్రం / నిరూపణీయత విధేయం / ఖండన / రాసర్ నిరూపణీయత / పియానో అంకగణితం / వ్యుత్పాద్యతా షరతులు / అవైరుధ్య ప్రకటన / ప్రతిబింబ సూత్రం / లోబ్ సిద్ధాంతం / ప్రమాణ నమూనాలో నిర్వచనీయత / అంకగణితపు సత్య వాక్యాల సిద్ధాంతం / సత్యపు నిర్వచనాతీతత / ఉద్దేశిత అర్థనిర్దేశం / నిలుపుదల సంబంధం” is idiomatic and technically standard for “incompleteness and provability / fixed-point lemma / diagonalization / Goedel sentence / proof relation and representing proof formula / provability predicate / refutation / Rosser provability / Peano arithmetic / derivability conditions / consistency statement / reflection principle / Loeb's theorem / definability in the standard model / true arithmetic / undefinability of truth / intended interpretation / halting relation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T074-OCC-001; OLP-0312; OLP-0312-B004; source upstream/content/incompleteness/incompleteness-provability/incompleteness-provability.tex:8 bytes 137-190 SHA-256 0f9f91331dc384bcae2953a10d927ce1d39bb922693ea6eec054e48abeffab4c; target translation/content/incompleteness/incompleteness-provability/incompleteness-provability.tex:8 bytes 137-231 SHA-256 88df400e20d55441e6049c1c9b81fa083fbc8ffb53a930bcbe56dd9fb0afc877; reader page pending.
+  - te-Telu-IN-TE-T074-OCC-002; OLP-0313; OLP-0313-B009; source upstream/content/incompleteness/incompleteness-provability/introduction.tex:53-63 bytes 2628-3335 SHA-256 85c5bd1864d412e461a0b7b8c3184db0af1c58940e21facdad02a4c86f56ef6c; target translation/content/incompleteness/incompleteness-provability/introduction.tex:50-58 bytes 6502-8048 SHA-256 05771affac84fd6f790c764d74cc311aeec99e14345a402585ecd27f472c539c; reader page pending.
+  - te-Telu-IN-TE-T074-OCC-003; OLP-0314; OLP-0314-B005; source upstream/content/incompleteness/incompleteness-provability/fixed-point-lemma.tex:11 bytes 198-232 SHA-256 3e54d996af60656fa17a41135421c3d0e4d00e13cf8562a968f4af0f6c67337f; target translation/content/incompleteness/incompleteness-provability/fixed-point-lemma.tex:11 bytes 198-275 SHA-256 e04c27f2383c209c2d95ebdbe1f0debdd70016c3473c539ebaf4bccc4493f90a; reader page pending.
+  - te-Telu-IN-TE-T074-OCC-004; OLP-0315; OLP-0315-B005; source upstream/content/incompleteness/incompleteness-provability/first-incompleteness-thm.tex:11 bytes 205-250 SHA-256 076a28d62623cf636f5ca0b13b86a3e765b760caa6f69bedac3c2265d86d4950; target translation/content/incompleteness/incompleteness-provability/first-incompleteness-thm.tex:11 bytes 205-292 SHA-256 c7b456d5ad38d2aa8320d3e3c8b6725c6af720bd26ce4ca0d9cdd1202cab3346; reader page pending.
+  - te-Telu-IN-TE-T074-OCC-005; OLP-0316; OLP-0316-B005; source upstream/content/incompleteness/incompleteness-provability/rosser-thm.tex:11 bytes 191-220 SHA-256 3c59d5c743202651c9d749cdee809bc8daaf013aa0a0d23719760205601ad55f; target translation/content/incompleteness/incompleteness-provability/rosser-thm.tex:11 bytes 191-247 SHA-256 a3212f20a8d9903b1d11077f86e2a5b641d1ae63716e14335bcefa6ea3992597; reader page pending.
+  - te-Telu-IN-TE-T074-OCC-006; OLP-0317; OLP-0317-B005; source upstream/content/incompleteness/incompleteness-provability/godels-paper.tex:11 bytes 193-246 SHA-256 4e6444ba77091bc73d2e62d8f45030250ef27d3049d1c88a49b4995ee2d11f23; target translation/content/incompleteness/incompleteness-provability/godels-paper.tex:11 bytes 193-302 SHA-256 88c8786acf94d27b96887e16443cd634160a3f46be97fd427875e872235c8c2f; reader page pending.
+  - te-Telu-IN-TE-T074-OCC-007; OLP-0318; OLP-0318-B005; source upstream/content/incompleteness/incompleteness-provability/provability-conditions.tex:11 bytes 203-271 SHA-256 09473b12608d6bb9393a45c7af241bc76669ad37c92b36d25d6e097cefe69f11; target translation/content/incompleteness/incompleteness-provability/provability-conditions.tex:11 bytes 203-277 SHA-256 3b1e9090860321f70bd4b69985ec22370c7c5d8978e0343e7ec79902a1acfef4; reader page pending.
+  - te-Telu-IN-TE-T074-OCC-008; OLP-0319; OLP-0319-B005; source upstream/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:11 bytes 206-252 SHA-256 8b96ecc610effe58fb1c422015965d42725f9f3832a00558e2b15753861a55fe; target translation/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:11 bytes 206-293 SHA-256 d38cdfdc7cdb2f146d0c1780d370e32dafc9d9f071a6ef74e7d000662892fc26; reader page pending.
+  - te-Telu-IN-TE-T074-OCC-009; OLP-0320; OLP-0320-B005; source upstream/content/incompleteness/incompleteness-provability/lob-thm.tex:11 bytes 188-216 SHA-256 7b95df7ebaf50f218a71b706c3189750dd9499bb66f2b725dcbf3dec778fd73f; target translation/content/incompleteness/incompleteness-provability/lob-thm.tex:11 bytes 188-241 SHA-256 e29c8abd9c0e1cf41f1359a563527c1e29661a6733afe668a310781d01f7e080; reader page pending.
+  - te-Telu-IN-TE-T074-OCC-010; OLP-0321; OLP-0321-B005; source upstream/content/incompleteness/incompleteness-provability/tarski-thm.tex:11 bytes 188-228 SHA-256 f967d78857eb1d7c618a36065f6506072ade75b3f30fefe3dc4728be74da2226; target translation/content/incompleteness/incompleteness-provability/tarski-thm.tex:11 bytes 188-256 SHA-256 52227785fb8f73f22d21b518db8b81928141b38d58ebd598c472d620e01e17c8; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -9077,3 +9112,133 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
   - te-Telu-IN-OLTETCP-003-OCC-001; OLP-0311; OLP-0311-B007; source upstream/content/incompleteness/theories-computability/interpretability.tex:20-25 bytes 601-950 SHA-256 180003bb40b9c0d66d6e9805dba9989e14b350ad857b45e35479923bb712a966; target translation/content/incompleteness/theories-computability/interpretability.tex:34-36 bytes 2870-3804 SHA-256 fdd96d08b7cb93c525f26c655c150d9db44e7901fc4327844a4c5ded86039779; reader page pending.
   - te-Telu-IN-OLTETCP-003-OCC-002; OLP-0311; OLP-0311-B009; source upstream/content/incompleteness/theories-computability/interpretability.tex:36-38 bytes 1424-1493 SHA-256 180003bb40b9c0d66d6e9805dba9989e14b350ad857b45e35479923bb712a966; target translation/content/incompleteness/theories-computability/interpretability.tex:34-36 bytes 2870-3804 SHA-256 fdd96d08b7cb93c525f26c655c150d9db44e7901fc4327844a4c5ded86039779; reader page pending.
+
+## te-Telu-IN-OLTEINP-001 — OLTEINP-001: confirmed formula representation symbol mismatch
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: replaced the external relation symbol with the object-language representing formula in the definition of OProv; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed formula representation symbol mismatch at lines 32-35, definition of the represented provability formula, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEINP-20260920:OLTEINP-001 [checked_supports], content/incompleteness/incompleteness-provability/provability-conditions.tex; lines 32-35, definition of the represented provability formula; confirmed_formula_representation_symbol_mismatch; replaced the external relation symbol with the object-language representing formula in the definition of OProv; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEINP-001 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEINP-001-OCC-001; OLP-0318; OLP-0318-B007; source upstream/content/incompleteness/incompleteness-provability/provability-conditions.tex:32-35 bytes 1262-1502 SHA-256 09473b12608d6bb9393a45c7af241bc76669ad37c92b36d25d6e097cefe69f11; target translation/content/incompleteness/incompleteness-provability/provability-conditions.tex:31-34 bytes 2756-3557 SHA-256 3b1e9090860321f70bd4b69985ec22370c7c5d8978e0343e7ec79902a1acfef4; reader page pending.
+
+## te-Telu-IN-OLTEINP-002 — OLTEINP-002: confirmed provability macro omission
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored the object-language OProv formula used by the fixed-point equivalence; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed provability macro omission at lines 41-43, informal second-incompleteness argument, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEINP-20260920:OLTEINP-002 [checked_supports], content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex; lines 41-43, informal second-incompleteness argument; confirmed_provability_macro_omission; restored the object-language OProv formula used by the fixed-point equivalence; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEINP-002 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEINP-002-OCC-001; OLP-0319; OLP-0319-B009; source upstream/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:41-43 bytes 1580-1732 SHA-256 8b96ecc610effe58fb1c422015965d42725f9f3832a00558e2b15753861a55fe; target translation/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:42 bytes 3230-3354 SHA-256 d38cdfdc7cdb2f146d0c1780d370e32dafc9d9f071a6ef74e7d000662892fc26; reader page pending.
+
+## te-Telu-IN-OLTEINP-003 — OLTEINP-003: confirmed formula marker omission
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored the marked formula metavariable in the Goedel numeral used by the P2 substitution; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed formula marker omission at lines 89-94, explanation of the P2 substitution, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEINP-20260920:OLTEINP-003 [checked_supports], content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex; lines 89-94, explanation of the P2 substitution; confirmed_formula_marker_omission; restored the marked formula metavariable in the Goedel numeral used by the P2 substitution; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEINP-003 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEINP-003-OCC-001; OLP-0319; OLP-0319-B011; source upstream/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:89-94 bytes 3772-4160 SHA-256 8b96ecc610effe58fb1c422015965d42725f9f3832a00558e2b15753861a55fe; target translation/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:93 bytes 7503-7595 SHA-256 d38cdfdc7cdb2f146d0c1780d370e32dafc9d9f071a6ef74e7d000662892fc26; reader page pending.
+
+## te-Telu-IN-OLTEINP-004 — OLTEINP-004: confirmed theory identifier mismatch
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: parameterized the consistency predicate by the same theory object used in the theorem and its provability predicate; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed theory identifier mismatch at lines 98-102, abstract second incompleteness theorem, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEINP-20260920:OLTEINP-004 [checked_supports], content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex; lines 98-102, abstract second incompleteness theorem; confirmed_theory_identifier_mismatch; parameterized the consistency predicate by the same theory object used in the theorem and its provability predicate; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEINP-004 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEINP-004-OCC-001; OLP-0319; OLP-0319-B013; source upstream/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:98-102 bytes 4240-4515 SHA-256 8b96ecc610effe58fb1c422015965d42725f9f3832a00558e2b15753861a55fe; target translation/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:102 bytes 8661-8782 SHA-256 d38cdfdc7cdb2f146d0c1780d370e32dafc9d9f071a6ef74e7d000662892fc26; reader page pending.
+
+## te-Telu-IN-OLTEINP-005 — OLTEINP-005: confirmed incomplete proof reference chain
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: added the missing L-7 bridge from provability of D to provability of A in the final justification; adjacent sourcecorrection discloses the repair
+
+- Intended sense: Repair the audited confirmed incomplete proof reference chain at line 117, final inference in the proof of Loeb's theorem, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEINP-20260920:OLTEINP-005 [checked_supports], content/incompleteness/incompleteness-provability/lob-thm.tex; line 117, final inference in the proof of Loeb's theorem; confirmed_incomplete_proof_reference_chain; added the missing L-7 bridge from provability of D to provability of A in the final justification; adjacent sourcecorrection discloses the repair.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTEINP-005 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEINP-005-OCC-001; OLP-0320; OLP-0320-B011; source upstream/content/incompleteness/incompleteness-provability/lob-thm.tex:117 bytes 5658-5724 SHA-256 7b95df7ebaf50f218a71b706c3189750dd9499bb66f2b725dcbf3dec778fd73f; target translation/content/incompleteness/incompleteness-provability/lob-thm.tex:118-120 bytes 10592-11080 SHA-256 e29c8abd9c0e1cf41f1359a563527c1e29661a6733afe668a310781d01f7e080; reader page pending.
