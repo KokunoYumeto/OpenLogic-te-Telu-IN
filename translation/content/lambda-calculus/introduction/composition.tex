@@ -1,0 +1,29 @@
+% Part: lambda-calculus
+% Chapter: introduction
+% Section: composition
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{int}{com}
+\olsection{\usetoken{S}{lambda definable} ప్రమేయాలు సంయుక్తం కింద సంవృతమైనవి}
+
+\begin{lem}
+\tetoken{లాంబ్డాతో నిర్వచించదగిన}{!!{lambda definable}} ప్రమేయాలు సంయుక్తం కింద సంవృతమైనవి.
+\end{lem}
+
+\begin{proof}
+$f$ను $h$, $g_0,$ \dots,~$g_{k-1}$ల నుంచి సంయుక్తం ద్వారా
+నిర్వచించారని అనుకుందాం. $h$, $g_0$, \dots,~$g_{k-1}$లు వరుసగా
+$H$, $G_0$, \dots,~$G_{k-1}$లచే \tetoken{లాంబ్డాతో నిర్వచించబడిన}{!!{lambda defined}}వని అనుకుంటే,
+పదం~$F$ను కనుగొనాలి; అది $f$ను \tetoken{లాంబ్డాతో నిర్వచిస్తుంది}{!!{lambda define}s}. కానీ $F$ను కేవలం
+\[
+F(x_0, \dots, x_{l-1}) = H(G_0(x_0, \dots, x_{l-1}),
+\dots, G_{k-1}(x_0, \dots, x_{l-1})).
+\]
+ద్వారా నిర్వచించవచ్చు. మరో మాటలో, లాంబ్డా కలనశాస్త్ర భాష సంయుక్తానికి
+ప్రాతినిధ్యం వహించడానికి చక్కగా సరిపోతుంది.
+\end{proof}
+
+\end{document}

@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 344 of 722 draft units**. This log contains 78 terminology/sense decisions and 288 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 352 of 722 draft units**. This log contains 79 terminology/sense decisions and 296 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1879,6 +1879,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low semantic uncertainty because the specialized notions are fixed by explicit formation and reduction rules, examples and a confluence theorem; medium to high nomenclatural uncertainty for abstraction, redex/contractum, Church--Rosser and Currying terminology pending independent native specialist review
 
 - Please double-check: Please double-check whether “లాంబ్డా కలనశాస్త్రం / లాంబ్డా అమూర్తీకరణ / ప్రయోగం / శుద్ధ, టైపులేని లాంబ్డా కలనశాస్త్రం / బద్ధ, స్వేచ్ఛా చరం / ఆల్ఫా-తుల్యత / ప్రతిస్థాపన / బీటా-సంకోచనం / రెడెక్స్ / సంకోచిత ఫలితం (కాంట్రాక్టమ్) / బీటా-తగ్గింపు, నియత రూపం / చర్చ్--రోసర్ లక్షణం / బీటా-తుల్యత / కరీకరణ” is idiomatic and technically standard for “lambda calculus / lambda abstraction / application / pure and untyped lambda calculus / bound and free variable / alpha-equivalence / substitution / beta-contraction / redex / contractum / beta-reduction and normal form / Church--Rosser property / beta-equivalence / Currying” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T079 — lambda-definable arithmetical function / Church numeral and iterator / closure under composition and primitive recursion / fixed-point combinator / minimization
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: లాంబ్డాతో నిర్వచించదగిన అంకగణిత ప్రమేయం / చర్చ్ సంఖ్యాంకం, పునరావర్తకం / సంయుక్తం, ఆదిమ పునరావృత్తి కింద సంవృతత / స్థిరబిందు సంయోజకం / కనిష్ఠీకరణ
+
+- Exact implementation: OLP-0348; lambda-calculus/introduction/lambda-definability; content/lambda-calculus/introduction/lambda-definability.tex:18-22 ↔ translation/content/lambda-calculus/introduction/lambda-definability.tex:17-21 (OLP-0348-B006); printed/PDF page pending; OLP-0348; lambda-calculus/introduction/lambda-definability; content/lambda-calculus/introduction/lambda-definability.tex:29-39 ↔ translation/content/lambda-calculus/introduction/lambda-definability.tex:28-41 (OLP-0348-B008); printed/PDF page pending; OLP-0351; lambda-calculus/introduction/basic-pr-lambda; content/lambda-calculus/introduction/basic-pr-lambda.tex:20-25 ↔ translation/content/lambda-calculus/introduction/basic-pr-lambda.tex:20-25 (OLP-0351-B007); printed/PDF page pending; OLP-0352; lambda-calculus/introduction/composition; content/lambda-calculus/introduction/composition.tex:12-14 ↔ translation/content/lambda-calculus/introduction/composition.tex:12-14 (OLP-0352-B005); printed/PDF page pending; OLP-0353; lambda-calculus/introduction/primitive-recursion; content/lambda-calculus/introduction/primitive-recursion.tex:74-76 ↔ translation/content/lambda-calculus/introduction/primitive-recursion.tex:77-79 (OLP-0353-B012); printed/PDF page pending; OLP-0354; lambda-calculus/introduction/fixed-point-combinator; content/lambda-calculus/introduction/fixed-point-combinator.tex:12-38 ↔ translation/content/lambda-calculus/introduction/fixed-point-combinator.tex:12-37 (OLP-0354-B005); printed/PDF page pending; OLP-0355; lambda-calculus/introduction/minimization; content/lambda-calculus/introduction/minimization.tex:9-10 ↔ translation/content/lambda-calculus/introduction/minimization.tex:9-10 (OLP-0355-B004); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P025, PDF 87, printed 80, Indirect-proof heading and worked derivation; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P033, PDF 40, printed 33, Inference section heading and definition; TE-P034, PDF 308, printed 301, Main point 5, Cartesian product definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P005 supplies native natural-number and arithmetic exposition. TE-P008, TE-P010--TE-P011 and TE-P034 directly support sets, ordered pairs, relations, functions, arguments, inverse and composition. TE-P003, TE-P024--TE-P025 and TE-P032--TE-P033 support mathematical definition, formal derivation, theorem, proof and inference prose. TE-P018, TE-P027 and TE-P029 support formal-logic, term, variable, scope and bound-variable register in the pre-bifurcation logic witness retained through its Telangana-hosted copy. These witnesses do not directly attest Church numerals, lambda-definability, fixed-point combinators or the lambda encodings of recursion and minimization. The corrected lambda-definability clause, reduction-tree search, initial-function encodings, composition term, corrected pair-iteration construction, fixed-point reductions and corrected minimization search in OLP-0348--OLP-0355 control those exact senses; TE-T011, TE-T064--TE-T067, TE-T074 and TE-T078 supply the edition's earlier reversible choices. లాంబ్డా is an explicit technical borrowing; చర్చ్, క్లీనీ, కరీ and ట్యూరింగ్ are source eponyms. Y, D, F, G, H, T, Church-numeral notation and lambda syntax remain protected formal notation; no unexplained English technical headword remains in reader-facing prose
+
+- Alternatives: reuse the established natural-number, function, composition, primitive-recursion, minimization, term, reduction and proof register while fixing Church numerals, lambda-definability and fixed points from the adjacent corrected constructions (chosen); leave the specialized lambda-computability vocabulary in untranslated English reader prose (rejected); collapse ordinary computability, lambda-definability and primitive recursiveness into one property (rejected because the theorem and closure proof distinguish them); claim direct native attestation for Church numerals, iterators or fixed-point combinators (rejected because the explicit definitions and reductions control those senses)
+
+- Uncertainty: Low semantic uncertainty because the specialized notions are fixed by explicit definitions, reductions and corrected constructions; medium to high nomenclatural uncertainty for Church numeral, lambda-definability, iterator and fixed-point-combinator terminology pending independent native specialist review
+
+- Please double-check: Please double-check whether “లాంబ్డాతో నిర్వచించదగిన అంకగణిత ప్రమేయం / చర్చ్ సంఖ్యాంకం, పునరావర్తకం / సంయుక్తం, ఆదిమ పునరావృత్తి కింద సంవృతత / స్థిరబిందు సంయోజకం / కనిష్ఠీకరణ” is idiomatic and technically standard for “lambda-definable arithmetical function / Church numeral and iterator / closure under composition and primitive recursion / fixed-point combinator / minimization” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -8383,6 +8407,198 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check that the prose summary explicitly includes predicate-symbol-to-relation and relation-variable-to-relation assignments.
+
+## REV-OLTELAMCOMP-001 — OLTELAMCOMP-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: described f as a k-ary partial function from N^k to N; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0348; lambda-calculus/introduction/lambda-definability; lines 29-32, definition of lambda-definability ↔ translation/content/lambda-calculus/introduction/lambda-definability.tex:29-40 (OLP-0348-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMCOMP-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: described f as a k-ary partial function from N^k to N; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMCOMP-001 is mathematically precise and idiomatic.
+
+## REV-OLTELAMCOMP-002 — OLTELAMCOMP-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: replaced the comma after F with application spacing; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0348; lambda-calculus/introduction/lambda-definability; lines 37-38, undefined branch of the lambda-definability definition ↔ translation/content/lambda-calculus/introduction/lambda-definability.tex:35-40 (OLP-0348-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMCOMP-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: replaced the comma after F with application spacing; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMCOMP-002 is mathematically precise and idiomatic.
+
+## REV-OLTELAMCOMP-003 — OLTELAMCOMP-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: named the sought result term F rather than reusing H; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0353; lambda-calculus/introduction/primitive-recursion; lines 12-20, initial primitive-recursion setup ↔ translation/content/lambda-calculus/introduction/primitive-recursion.tex:12-22 (OLP-0353-B005); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMCOMP-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: named the sought result term F rather than reusing H; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMCOMP-003 is mathematically precise and idiomatic.
+
+## REV-OLTELAMCOMP-004 — OLTELAMCOMP-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored x as the first argument of h; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0353; lambda-calculus/introduction/primitive-recursion; lines 17-20, defining equations for f ↔ translation/content/lambda-calculus/introduction/primitive-recursion.tex:17-22 (OLP-0353-B005); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMCOMP-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored x as the first argument of h; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMCOMP-004 is mathematically precise and idiomatic.
+
+## REV-OLTELAMCOMP-005 — OLTELAMCOMP-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: replaced v(u,z-vector) by v(z-vector); adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0353; lambda-calculus/introduction/primitive-recursion; lines 32-39, absorption of the extra parameters ↔ translation/content/lambda-calculus/introduction/primitive-recursion.tex:34-43 (OLP-0353-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMCOMP-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: replaced v(u,z-vector) by v(z-vector); adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMCOMP-005 is mathematically precise and idiomatic.
+
+## REV-OLTELAMCOMP-006 — OLTELAMCOMP-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used the established successor term Succ in T; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0353; lambda-calculus/introduction/primitive-recursion; lines 96-103, definition and verification of T ↔ translation/content/lambda-calculus/introduction/primitive-recursion.tex:102-111 (OLP-0353-B014); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMCOMP-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used the established successor term Succ in T; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMCOMP-006 is mathematically precise and idiomatic.
+
+## REV-OLTELAMCOMP-007 — OLTELAMCOMP-007
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: invoked the stated lambda-definability assumption rather than an unavailable primitive-recursiveness premise; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0355; lambda-calculus/introduction/minimization; lines 33-36, start of the detailed minimization construction ↔ translation/content/lambda-calculus/introduction/minimization.tex:33-42 (OLP-0355-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMCOMP-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: invoked the stated lambda-definability assumption rather than an unavailable primitive-recursiveness premise; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMCOMP-007 is mathematically precise and idiomatic.
+
+## REV-OLTELAMCOMP-008 — OLTELAMCOMP-008
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: replaced all four uses of undefined S by the established successor term Succ; adjacent sourcecorrection discloses the repair
+
+- Exact implementation: OLP-0355; lambda-calculus/introduction/minimization; lines 36-61, fixed-point definition and verification of H ↔ translation/content/lambda-calculus/introduction/minimization.tex:36-66 (OLP-0355-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMCOMP-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: replaced all four uses of undefined S by the established successor term Succ; adjacent sourcecorrection discloses the repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMCOMP-008 is mathematically precise and idiomatic.
 
 ## REV-OLTESOLSYN-002 — OLTESOLSYN-002
 

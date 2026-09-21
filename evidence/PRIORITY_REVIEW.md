@@ -1,6 +1,6 @@
 # Priority review
 
-This view contains 56 of 366 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
+This view contains 57 of 375 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
 
 Final reader pages remain pending; exact source and target file/line locators are shown.
 
@@ -563,3 +563,13 @@ Final reader pages remain pending; exact source and target file/line locators ar
 - Occurrences: OLP-0341 translation/content/lambda-calculus/lambda-calculus.tex:7; OLP-0343 translation/content/lambda-calculus/introduction/overview.tex:31-35; OLP-0343 translation/content/lambda-calculus/introduction/overview.tex:45-56; OLP-0344 translation/content/lambda-calculus/introduction/syntax.tex:12-22; OLP-0344 translation/content/lambda-calculus/introduction/syntax.tex:57-67; OLP-0345 translation/content/lambda-calculus/introduction/reduction.tex:12-19; OLP-0345 translation/content/lambda-calculus/introduction/reduction.tex:26-38; OLP-0346 translation/content/lambda-calculus/introduction/church-rosser.tex:9-10; OLP-0346 translation/content/lambda-calculus/introduction/church-rosser.tex:29-36; OLP-0347 translation/content/lambda-calculus/introduction/currying.tex:9-10
 
 - Review question: Please double-check whether “లాంబ్డా కలనశాస్త్రం / లాంబ్డా అమూర్తీకరణ / ప్రయోగం / శుద్ధ, టైపులేని లాంబ్డా కలనశాస్త్రం / బద్ధ, స్వేచ్ఛా చరం / ఆల్ఫా-తుల్యత / ప్రతిస్థాపన / బీటా-సంకోచనం / రెడెక్స్ / సంకోచిత ఫలితం (కాంట్రాక్టమ్) / బీటా-తగ్గింపు, నియత రూపం / చర్చ్--రోసర్ లక్షణం / బీటా-తుల్యత / కరీకరణ” is idiomatic and technically standard for “lambda calculus / lambda abstraction / application / pure and untyped lambda calculus / bound and free variable / alpha-equivalence / substitution / beta-contraction / redex / contractum / beta-reduction and normal form / Church--Rosser property / beta-equivalence / Currying” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T079 — lambda-definable arithmetical function / Church numeral and iterator / closure under composition and primitive recursion / fixed-point combinator / minimization
+
+- Chosen rendering: లాంబ్డాతో నిర్వచించదగిన అంకగణిత ప్రమేయం / చర్చ్ సంఖ్యాంకం, పునరావర్తకం / సంయుక్తం, ఆదిమ పునరావృత్తి కింద సంవృతత / స్థిరబిందు సంయోజకం / కనిష్ఠీకరణ
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0348 translation/content/lambda-calculus/introduction/lambda-definability.tex:17-21; OLP-0348 translation/content/lambda-calculus/introduction/lambda-definability.tex:28-41; OLP-0351 translation/content/lambda-calculus/introduction/basic-pr-lambda.tex:20-25; OLP-0352 translation/content/lambda-calculus/introduction/composition.tex:12-14; OLP-0353 translation/content/lambda-calculus/introduction/primitive-recursion.tex:77-79; OLP-0354 translation/content/lambda-calculus/introduction/fixed-point-combinator.tex:12-37; OLP-0355 translation/content/lambda-calculus/introduction/minimization.tex:9-10
+
+- Review question: Please double-check whether “లాంబ్డాతో నిర్వచించదగిన అంకగణిత ప్రమేయం / చర్చ్ సంఖ్యాంకం, పునరావర్తకం / సంయుక్తం, ఆదిమ పునరావృత్తి కింద సంవృతత / స్థిరబిందు సంయోజకం / కనిష్ఠీకరణ” is idiomatic and technically standard for “lambda-definable arithmetical function / Church numeral and iterator / closure under composition and primitive recursion / fixed-point combinator / minimization” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?

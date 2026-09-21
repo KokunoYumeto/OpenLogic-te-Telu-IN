@@ -1,0 +1,138 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTELAMCOMP-20260921",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0348",
+      "OLP-0349",
+      "OLP-0350",
+      "OLP-0351",
+      "OLP-0352",
+      "OLP-0353",
+      "OLP-0354",
+      "OLP-0355"
+    ],
+    "finding_count": 8
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTELAMCOMP-001",
+      "unit_id": "OLP-0348",
+      "classification": "confirmed_arity_and_domain_mismatch_in_lambda_definability",
+      "source": {
+        "path": "content/lambda-calculus/introduction/lambda-definability.tex",
+        "bytes": 1892,
+        "sha256": "fefc26aa72359b62bcc486490e018cb534d6e24aad01cadde4672b5cd99b244a",
+        "locator": "lines 29-32, definition of lambda-definability"
+      },
+      "finding": "The displayed function has k arguments but is called n-ary and is assigned the one-dimensional domain N rather than N^k.",
+      "controlling_evidence": "The function is written f(x_0,...,x_{k-1}), and the defining reduction immediately quantifies over the k inputs n_0,...,n_{k-1}; therefore its arity is k and its domain is N^k.",
+      "required_translation_handling": "Describe f as a k-ary partial function from N^k to N and add an adjacent OLTELAMCOMP-001 disclosure."
+    },
+    {
+      "finding_id": "OLTELAMCOMP-002",
+      "unit_id": "OLP-0348",
+      "classification": "confirmed_application_punctuation_error_in_undefined_case",
+      "source": {
+        "path": "content/lambda-calculus/introduction/lambda-definability.tex",
+        "bytes": 1892,
+        "sha256": "fefc26aa72359b62bcc486490e018cb534d6e24aad01cadde4672b5cd99b244a",
+        "locator": "lines 37-38, undefined branch of the lambda-definability definition"
+      },
+      "finding": "The undefined branch writes F, followed by the first numeral, inserting punctuation where the same term must be applied to all k numeral arguments.",
+      "controlling_evidence": "The defined branch directly above is F applied to the same sequence of Church numerals, and the normal-form condition must concern that identical application term.",
+      "required_translation_handling": "Replace the comma after F with application spacing and add an adjacent OLTELAMCOMP-002 disclosure."
+    },
+    {
+      "finding_id": "OLTELAMCOMP-003",
+      "unit_id": "OLP-0353",
+      "classification": "confirmed_result_term_name_collision_in_primitive_recursion_setup",
+      "source": {
+        "path": "content/lambda-calculus/introduction/primitive-recursion.tex",
+        "bytes": 5062,
+        "sha256": "04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350",
+        "locator": "lines 12-20, initial primitive-recursion setup"
+      },
+      "finding": "After reserving H as the lambda term defining the step function h, the prose asks for another term H defining f; the construction that follows consistently calls the required result term F.",
+      "controlling_evidence": "The next paragraph explicitly seeks F, and the rest of the section defines and verifies F as the term satisfying the primitive-recursion equations.",
+      "required_translation_handling": "Name the sought result term F and add an adjacent OLTELAMCOMP-003 disclosure."
+    },
+    {
+      "finding_id": "OLTELAMCOMP-004",
+      "unit_id": "OLP-0353",
+      "classification": "confirmed_wrong_first_argument_in_primitive_recursion_equation",
+      "source": {
+        "path": "content/lambda-calculus/introduction/primitive-recursion.tex",
+        "bytes": 5062,
+        "sha256": "04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350",
+        "locator": "lines 17-20, defining equations for f"
+      },
+      "finding": "The step equation passes z as the first argument of h even though z already denotes the vector of extra parameters and x is the recursion index.",
+      "controlling_evidence": "Every subsequent recursion equation passes n as the first argument of H, and the verified target equation is F(n+1)=H(n,F(n)); the intended first argument is therefore x.",
+      "required_translation_handling": "Restore x as the first argument of h and add an adjacent OLTELAMCOMP-004 disclosure."
+    },
+    {
+      "finding_id": "OLTELAMCOMP-005",
+      "unit_id": "OLP-0353",
+      "classification": "confirmed_spurious_recursion_index_in_lifted_step_term",
+      "source": {
+        "path": "content/lambda-calculus/introduction/primitive-recursion.tex",
+        "bytes": 5062,
+        "sha256": "04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350",
+        "locator": "lines 32-39, absorption of the extra parameters"
+      },
+      "finding": "The lifted step term applies v to both u and the parameter vector, although v represents the function F(n) of the absorbed extra parameters alone.",
+      "controlling_evidence": "The construction defines F(n) as a lambda abstraction over z, so at the next step its prior value must be recovered as v(z); passing u again would add an unintended argument.",
+      "required_translation_handling": "Replace v(u,z-vector) by v(z-vector) and add an adjacent OLTELAMCOMP-005 disclosure."
+    },
+    {
+      "finding_id": "OLTELAMCOMP-006",
+      "unit_id": "OLP-0353",
+      "classification": "confirmed_undefined_successor_term_in_pair_transition",
+      "source": {
+        "path": "content/lambda-calculus/introduction/primitive-recursion.tex",
+        "bytes": 5062,
+        "sha256": "04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350",
+        "locator": "lines 96-103, definition and verification of T"
+      },
+      "finding": "The transition term uses S for successor, but no such lambda term is introduced; the preceding section defines the successor lambda term as Succ.",
+      "controlling_evidence": "Replacing S by the previously defined Succ makes the first component reduce from the numeral n to the numeral n+1 exactly as the following verification states.",
+      "required_translation_handling": "Use the established successor term \\fn{Succ} and add an adjacent OLTELAMCOMP-006 disclosure."
+    },
+    {
+      "finding_id": "OLTELAMCOMP-007",
+      "unit_id": "OLP-0355",
+      "classification": "confirmed_unsupported_primitive_recursive_premise_in_minimization_proof",
+      "source": {
+        "path": "content/lambda-calculus/introduction/minimization.tex",
+        "bytes": 2208,
+        "sha256": "e0fbbc26c033f303410498fec8dd8dda3d610e0ced8df38d1de1189a8d590bf1",
+        "locator": "lines 33-36, start of the detailed minimization construction"
+      },
+      "finding": "The proof says f is primitive recursive, but the lemma assumes only that f is lambda-definable; primitive recursiveness is neither available nor needed.",
+      "controlling_evidence": "The lemma's hypothesis directly supplies a lambda term F defining f, which is the sole property used by the remaining construction.",
+      "required_translation_handling": "Invoke the stated lambda-definability assumption instead and add an adjacent OLTELAMCOMP-007 disclosure."
+    },
+    {
+      "finding_id": "OLTELAMCOMP-008",
+      "unit_id": "OLP-0355",
+      "classification": "confirmed_undefined_successor_term_in_minimization_construction",
+      "source": {
+        "path": "content/lambda-calculus/introduction/minimization.tex",
+        "bytes": 2208,
+        "sha256": "e0fbbc26c033f303410498fec8dd8dda3d610e0ced8df38d1de1189a8d590bf1",
+        "locator": "lines 36-61, fixed-point definition and verification of H"
+      },
+      "finding": "The fixed-point construction repeatedly uses S for successor, but no term S is defined; the chapter's established successor lambda term is Succ.",
+      "controlling_evidence": "The search must advance from numeral n to numeral n+1, and the earlier basic-functions lemma defines precisely that operation by \\fn{Succ}.",
+      "required_translation_handling": "Replace all four uses of the undefined S in this construction with the established successor term \\fn{Succ} and add an adjacent OLTELAMCOMP-008 disclosure."
+    }
+  ]
+}

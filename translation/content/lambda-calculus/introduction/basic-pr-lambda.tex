@@ -1,0 +1,33 @@
+% Part: lambda-calculus
+% Chapter: introduction
+% Section: basic-pr-lambda
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{int}{bas}
+\olsection{ప్రాథమిక ఆదిమ పునరావృత్త ప్రమేయాలు \usetoken{S}{lambda definable}}
+
+\begin{lem}
+$\Zero$, $\Succ$, $\Proj{n}{i}$ ప్రమేయాలు \tetoken{లాంబ్డాతో నిర్వచించదగిన}{!!{lambda definable}}వి.
+\end{lem}
+
+\begin{proof}
+$\Zero$ అంటే కేవలం
+$\lambd[x][\lambd[y][y]]$.
+
+ఉత్తరగామి ప్రమేయం~$\Succ$ను
+$\fn{Succ}(u) = \lambd[x][\lambd[y][x(uxy)]]$ ద్వారా నిర్వచిస్తాం.
+ఇది ఎందుకు పనిచేస్తుందో ఆలోచించాలి: పునరావర్తకంగా భావించిన ప్రతి
+సంఖ్యాంకం~$\num{n}$కు, ప్రతి ప్రమేయం~$f$కు,
+$\fn{Succ}(\num{n},f)$ అనేది ఇన్‌పుట్~$y$పై $y$తో మొదలుపెట్టి $f$ను
+$n$ సార్లు ప్రయోగించి, ఆ తరువాత మరోసారి ప్రయోగించే ప్రమేయం.
+
+ప్రక్షేపాల గురించి చెప్పడానికి ఏమీ లేదు: $\fn{Proj}^n_i(x_0, \dots,
+x_{n-1}) = x_i$. మరో మాటలో, మన సంకేత సంప్రదాయాల ప్రకారం
+$\fn{Proj}^n_i$ అనేది $\lambd[x_0][\dots \lambd[x_{n-1}][x_i]]$
+అనే లాంబ్డా పదం.
+\end{proof}
+
+\end{document}

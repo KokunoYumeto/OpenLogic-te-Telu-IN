@@ -1,0 +1,1312 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-21T00:48:39.457Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Text/intertext/mbox prose is masked; nested inline math is compared per clause independently of language-specific word order.",
+  "units": [
+    {
+      "unit_id": "OLP-0348",
+      "source_path": "content/lambda-calculus/introduction/lambda-definability.tex",
+      "source_sha256": "fefc26aa72359b62bcc486490e018cb534d6e24aad01cadde4672b5cd99b244a",
+      "translation_sha256": "f41ff043e4b9b8a76b0ade015fca16c8e8a8713fcc6cfbcfc794af3e2bce90ec",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{int}{rep}",
+        "\\ollabel{thm:lambda-def}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{int}{rep}",
+        "\\ollabel{thm:lambda-def}"
+      ],
+      "tokens_source": {
+        "!!{lambda defined}": 1,
+        "!!{lambda define}s": 1
+      },
+      "tokens_target": {
+        "!!{lambda defined}": 1,
+        "!!{lambda define}s": 1
+      },
+      "math_source": [
+        "$n$",
+        "$\\num{n}$",
+        "$\\lambd[x][\\lambd[y][(x(x(x(\\dotsx(y)))))]]$",
+        "$n$",
+        "$x$",
+        "$\\num{n}$",
+        "$f$",
+        "$\\num{n}$",
+        "$y$",
+        "$f^n(y)$",
+        "$f(x_0,\\dots,x_{k-1})$",
+        "$n$",
+        "$\\Nat$",
+        "$\\Nat$",
+        "$\\lambd$",
+        "$F$",
+        "$f$",
+        "$n_0$",
+        "$n_{k-1}$",
+        "\\[F\\,\\num{n_0}\\,\\num{n_1}\\dots\\num{n_{k-1}}\\red\\num{f(n_0,n_1,\\dots,n_{k-1})}\\]",
+        "$f(n_0,\\dots,n_{k-1})$",
+        "$F,\\num{n_0}\\,\\num{n_1}\\dots\\num{n_{k-1}}$",
+        "$f$"
+      ],
+      "math_target_core": [
+        "$n$",
+        "$\\num{n}$",
+        "$\\lambd[x][\\lambd[y][(x(x(x(\\dotsx(y)))))]]$",
+        "$n$",
+        "$x$",
+        "$\\num{n}$",
+        "$f$",
+        "$y$",
+        "$f^n(y)$",
+        "$\\num{n}$",
+        "$f(x_0,\\dots,x_{k-1})$",
+        "$\\Nat^k$",
+        "$\\Nat$",
+        "$k$",
+        "$n_0$",
+        "$n_{k-1}$",
+        "$f(n_0,\\dots,n_{k-1})$",
+        "\\[F\\,\\num{n_0}\\,\\num{n_1}\\dots\\num{n_{k-1}}\\red\\num{f(n_0,n_1,\\dots,n_{k-1})}\\]",
+        "$F\\,\\num{n_0}\\,\\num{n_1}\\dots\\num{n_{k-1}}$",
+        "$\\lambd$",
+        "$F$",
+        "$f$",
+        "$f$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$F,\\num{n_0}\\,\\num{n_1}\\dots\\num{n_{k-1}}$",
+        "$\\Nat$",
+        "$n$"
+      ],
+      "math_delta_target_only": [
+        "$F\\,\\num{n_0}\\,\\num{n_1}\\dots\\num{n_{k-1}}$",
+        "$\\Nat^k$",
+        "$k$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTELAMCOMP-001",
+        "OLTELAMCOMP-002"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1218,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: lambda-definability",
+          "target_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: lambda-definability"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{int}{rep}\n\\olsection{\\usetoken{S}{lambda definable} Arithmetical Functions}",
+          "target_start": "\\olfileid{lam}{int}{rep}\n\\olsection{\\usetoken{S}{lambda definable} అంకగణిత ప్రమేయాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "How can the lambda calculus serve as a model of computation? At first,\nit is not even clear how to make sense ",
+          "target_start": "లాంబ్డా కలనశాస్త్రం గణనా నమూనాగా ఎలా పనిచేయగలదు? మొదట చూసినప్పుడు,\nఈ ప్రశ్నకు అర్థం ఎలా ఇవ్వాలో కూడా స్పష్టంగా"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}\nFor each natural number~$n$, define the \\emph{Church numeral}\n$\\num{n}$ to be the lambda term $\\l",
+          "target_start": "\\begin{defn}\nప్రతి సహజ సంఖ్య~$n$కు, \\emph{చర్చ్ సంఖ్యాంకం} $\\num{n}$ను లాంబ్డా\nపదం $\\lambd[x][\\lambd[y][(x(x(x"
+        },
+        {
+          "index": 7,
+          "source_start": "The terms $\\num{n}$ are ``iterators'': on input $f$, $\\num{n}$ returns\nthe function mapping $y$ to $f^n(y)$. N",
+          "target_start": "$\\num{n}$ పదాలు ``పునరావర్తకాలు'': $f$ను ఇన్‌పుట్‌గా ఇస్తే,\n$y$ను $f^n(y)$కు పంపే ప్రమేయాన్ని $\\num{n}$ తిరిగి"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{defn}\nLet $f(x_0, \\dots, x_{k-1})$ be an $n$-ary partial function from $\\Nat$\nto $\\Nat$. We say a $\\lam",
+          "target_start": "\\begin{defn}\n$f(x_0, \\dots, x_{k-1})$ అనేది $\\Nat^k$ నుండి $\\Nat$కు వెళ్లే\n$k$-స్థానిక పాక్షిక ప్రమేయం అనుకుంద"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{thm}\n\\ollabel{thm:lambda-def}\nA function $f$ is a partial computable function if and only if it is\n!!{l",
+          "target_start": "\\begin{thm}\n\\ollabel{thm:lambda-def}\nప్రమేయం~$f$ పాక్షిక గణనీయ ప్రమేయమైతేనే, అప్పుడే మాత్రమే అది ఒక\nలాంబ్డా పద"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{explain}\nThis theorem is somewhat striking. As a model of computation, the\nlambda calculus is a rather ",
+          "target_start": "\\begin{explain}\nఈ సిద్ధాంతం కొంత ఆశ్చర్యకరమైనది. గణనా నమూనాగా లాంబ్డా కలనశాస్త్రం\nచాలా సరళమైన కలనశాస్త్రం; ఇంద"
+        },
+        {
+          "index": 11,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{rep}",
+        "\\ollabel{thm:lambda-def}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{rep}",
+        "\\ollabel{thm:lambda-def}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0349",
+      "source_path": "content/lambda-calculus/introduction/lambda-computable.tex",
+      "source_sha256": "20e9d844a65445b937ae3cf5547d1a336428f25a1fcc69813dcb186101918a5b",
+      "translation_sha256": "bc9331417071386f6448596a8b3190adee42372908125fbaae7192ddfc5fb376",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{int}{cmp}",
+        "\\ollabel{thm:lambda-computable}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{int}{cmp}",
+        "\\ollabel{thm:lambda-computable}"
+      ],
+      "tokens_source": {
+        "!!{lambda defined}": 2
+      },
+      "tokens_target": {
+        "!!{lambda defined}": 2
+      },
+      "math_source": [
+        "$f$",
+        "$f$",
+        "$X$",
+        "$f$",
+        "$m_0$",
+        "$m_{n-1}$",
+        "$X\\numm_0\\ldots\\numm_{n-1}$",
+        "$\\fn{IsASubterm}$",
+        "$\\fn{Substitute}$",
+        "$\\fn{ReducesToInOneStep}$",
+        "$\\fn{ReductionSequence}$",
+        "$\\fn{Numeral}$",
+        "$f(m_0,\\dots,m_{n-1})$",
+        "$X\\num{m_0}\\dots\\num{m_{n-1}}$"
+      ],
+      "math_target_core": [
+        "$f$",
+        "$f$",
+        "$X$",
+        "$f$",
+        "$m_0$",
+        "$m_{n-1}$",
+        "$X\\numm_0\\ldots\\numm_{n-1}$",
+        "$\\fn{IsASubterm}$",
+        "$\\fn{Substitute}$",
+        "$\\fn{ReducesToInOneStep}$",
+        "$\\fn{ReductionSequence}$",
+        "$\\fn{Numeral}$",
+        "$f(m_0,\\dots,m_{n-1})$",
+        "$X\\num{m_0}\\dots\\num{m_{n-1}}$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 857,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: lambda-computable",
+          "target_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: lambda-computable"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{int}{cmp}\n\\olsection{\\usetoken{S}{lambda definable} Functions are Computable}",
+          "target_start": "\\olfileid{lam}{int}{cmp}\n\\olsection{\\usetoken{S}{lambda definable} ప్రమేయాలు గణనీయమైనవి}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{thm}\n\\ollabel{thm:lambda-computable}\nIf a partial function $f$ is !!{lambda defined} by a lambda term, ",
+          "target_start": "\\begin{thm}\n\\ollabel{thm:lambda-computable}\nపాక్షిక ప్రమేయం~$f$ ఒక లాంబ్డా పదంచే \\tetoken{లాంబ్డాతో నిర్వచించబ"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{proof}\nSuppose a function~$f$ is !!{lambda defined} by a lambda term~$X$. Let us\ndescribe an informal p",
+          "target_start": "\\begin{proof}\nప్రమేయం~$f$ లాంబ్డా పదం~$X$చే \\tetoken{లాంబ్డాతో నిర్వచించబడిన}{!!{lambda defined}}దని అనుకుందాం"
+        },
+        {
+          "index": 7,
+          "source_start": "An appeal to Church's thesis tells us that this function is\ncomputable. A better way to prove the theorem woul",
+          "target_start": "చర్చ్ సిద్ధాంతప్రతిపాదనను ఆశ్రయిస్తే ఈ ప్రమేయం గణనీయమని తెలుస్తుంది.\nఈ సిద్ధాంతాన్ని నిరూపించడానికి మెరుగైన మా"
+        },
+        {
+          "index": 8,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{cmp}",
+        "\\ollabel{thm:lambda-computable}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{cmp}",
+        "\\ollabel{thm:lambda-computable}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0350",
+      "source_path": "content/lambda-calculus/introduction/computable-lambda.tex",
+      "source_sha256": "dc8ed2fba6b292e6a4e46bd081300c14b388a8109cbe617cee7a4e513d73743c",
+      "translation_sha256": "649d33beb51b4c525d2a2f3a823f30d169dcd6261cb7784288da3d547d1fec9d",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{int}{lrp}",
+        "\\ollabel{thm:computable-lambda}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{int}{lrp}",
+        "\\ollabel{thm:computable-lambda}"
+      ],
+      "tokens_source": {
+        "!!{lambda definable}": 4,
+        "!!{lambda defined}": 3
+      },
+      "tokens_target": {
+        "!!{lambda definable}": 4,
+        "!!{lambda defined}": 3
+      },
+      "math_source": [
+        "$f$",
+        "$F$",
+        "$M(x,y,z)$",
+        "$Mxyz$",
+        "$M$",
+        "$M(x,y)$",
+        "$M(x,y,z,w)$",
+        "$M$",
+        "$M$",
+        "$M(x,y,z)=\\dots$",
+        "$M$",
+        "$M=\\lambd[x][\\lambd[y][\\lambd[z][\\dots]]]$"
+      ],
+      "math_target_core": [
+        "$f$",
+        "$F$",
+        "$Mxyz$",
+        "$M(x,y,z)$",
+        "$M$",
+        "$M(x,y)$",
+        "$M(x,y,z,w)$",
+        "$M$",
+        "$M$",
+        "$M=\\lambd[x][\\lambd[y][\\lambd[z][\\dots]]]$",
+        "$M(x,y,z)=\\dots$",
+        "$M$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 999,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: computable-lambda",
+          "target_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: computable-lambda"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{int}{lrp}\n\\olsection{Computable Functions are \\usetoken{S}{lambda definable}}",
+          "target_start": "\\olfileid{lam}{int}{lrp}\n\\olsection{గణనీయ ప్రమేయాలు \\usetoken{S}{lambda definable}}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{thm}\n\\ollabel{thm:computable-lambda}\nEvery computable partial function is !!{lambda definable}.\n\\end{th",
+          "target_start": "\\begin{thm}\n\\ollabel{thm:computable-lambda}\nప్రతి గణనీయ పాక్షిక ప్రమేయం \\tetoken{లాంబ్డాతో నిర్వచించదగిన}{!!{l"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{proof}\nWe need to show that every partial computable function~$f$ is\n!!{lambda defined} by a lambda ter",
+          "target_start": "\\begin{proof}\nప్రతి పాక్షిక గణనీయ ప్రమేయం~$f$ లాంబ్డా పదం~$F$చే \\tetoken{లాంబ్డాతో నిర్వచించబడిన}{!!{lambda de"
+        },
+        {
+          "index": 7,
+          "source_start": "We will use a more conventional notation to make the rest of the proof\nmore readable. For example, we will wri",
+          "target_start": "మిగిలిన నిరూపణను మరింత చదవదగినదిగా చేయడానికి ఎక్కువగా వాడుకలో ఉన్న\nసంకేతనాన్ని ఉపయోగిస్తాం. ఉదాహరణకు, $Mxyz$కు"
+        },
+        {
+          "index": 8,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{lrp}",
+        "\\ollabel{thm:computable-lambda}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{lrp}",
+        "\\ollabel{thm:computable-lambda}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0351",
+      "source_path": "content/lambda-calculus/introduction/basic-pr-lambda.tex",
+      "source_sha256": "a763e494e2c1d8863885e8a3f68cef4a9b9cfeb1c59d0de0c1f9a198fdaed862",
+      "translation_sha256": "7a0788ad4fb09cb39cd2582d3d03a1089462dc3f4cafaa720c2f257496619d26",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{int}{bas}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{int}{bas}"
+      ],
+      "tokens_source": {
+        "!!{lambda definable}": 1
+      },
+      "tokens_target": {
+        "!!{lambda definable}": 1
+      },
+      "math_source": [
+        "$\\Zero$",
+        "$\\Succ$",
+        "$\\Proj{n}{i}$",
+        "$\\Zero$",
+        "$\\lambd[x][\\lambd[y][y]]$",
+        "$\\Succ$",
+        "$\\fn{Succ}(u)=\\lambd[x][\\lambd[y][x(uxy)]]$",
+        "$\\num{n}$",
+        "$f$",
+        "$\\fn{Succ}(\\num{n},f)$",
+        "$y$",
+        "$f$",
+        "$n$",
+        "$y$",
+        "$\\fn{Proj}^n_i(x_0,\\dots,x_{n-1})=x_i$",
+        "$\\fn{Proj}^n_i$",
+        "$\\lambd[x_0][\\dots\\lambd[x_{n-1}][x_i]]$"
+      ],
+      "math_target_core": [
+        "$\\Zero$",
+        "$\\Succ$",
+        "$\\Proj{n}{i}$",
+        "$\\Zero$",
+        "$\\lambd[x][\\lambd[y][y]]$",
+        "$\\Succ$",
+        "$\\fn{Succ}(u)=\\lambd[x][\\lambd[y][x(uxy)]]$",
+        "$\\num{n}$",
+        "$f$",
+        "$\\fn{Succ}(\\num{n},f)$",
+        "$y$",
+        "$y$",
+        "$f$",
+        "$n$",
+        "$\\fn{Proj}^n_i(x_0,\\dots,x_{n-1})=x_i$",
+        "$\\fn{Proj}^n_i$",
+        "$\\lambd[x_0][\\dots\\lambd[x_{n-1}][x_i]]$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 352,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: basic-pr-lambda",
+          "target_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: basic-pr-lambda"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{int}{bas}\n\\olsection{The Basic Primitive Recursive Functions are \\usetoken{S}{lambda definable}",
+          "target_start": "\\olfileid{lam}{int}{bas}\n\\olsection{ప్రాథమిక ఆదిమ పునరావృత్త ప్రమేయాలు \\usetoken{S}{lambda definable}}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{lem}\nThe functions $\\Zero$, $\\Succ$, and $\\Proj{n}{i}$ are !!{lambda definable}.\n\\end{lem}",
+          "target_start": "\\begin{lem}\n$\\Zero$, $\\Succ$, $\\Proj{n}{i}$ ప్రమేయాలు \\tetoken{లాంబ్డాతో నిర్వచించదగిన}{!!{lambda definable}}వ"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{proof}\n$\\Zero$ is just\n$\\lambd[x][\\lambd[y][y]]$.",
+          "target_start": "\\begin{proof}\n$\\Zero$ అంటే కేవలం\n$\\lambd[x][\\lambd[y][y]]$."
+        },
+        {
+          "index": 7,
+          "source_start": "The successor function~$\\Succ$, is\ndefined by $\\fn{Succ}(u) = \\lambd[x][\\lambd[y][x(uxy)]]$. You should\nthink ",
+          "target_start": "ఉత్తరగామి ప్రమేయం~$\\Succ$ను\n$\\fn{Succ}(u) = \\lambd[x][\\lambd[y][x(uxy)]]$ ద్వారా నిర్వచిస్తాం.\nఇది ఎందుకు పనిచ"
+        },
+        {
+          "index": 8,
+          "source_start": "There is nothing to say about projections: $\\fn{Proj}^n_i(x_0, \\dots,\nx_{n-1}) = x_i$. In other words, by our ",
+          "target_start": "ప్రక్షేపాల గురించి చెప్పడానికి ఏమీ లేదు: $\\fn{Proj}^n_i(x_0, \\dots,\nx_{n-1}) = x_i$. మరో మాటలో, మన సంకేత సంప్ర"
+        },
+        {
+          "index": 9,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{bas}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{bas}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0352",
+      "source_path": "content/lambda-calculus/introduction/composition.tex",
+      "source_sha256": "cb8cd3db3bf994933f1de1eeb3a9f99e108b3699ea8d53f7218f9861ea3e2b61",
+      "translation_sha256": "ed3a1dc3d3aa2e29a08c67777cb00810e4034d985c1d6ef23b007675ad805286",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{int}{com}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{int}{com}"
+      ],
+      "tokens_source": {
+        "!!{lambda definable}": 1,
+        "!!{lambda defined}": 1,
+        "!!{lambda define}s": 1
+      },
+      "tokens_target": {
+        "!!{lambda definable}": 1,
+        "!!{lambda defined}": 1,
+        "!!{lambda define}s": 1
+      },
+      "math_source": [
+        "$f$",
+        "$h$",
+        "$g_0,$",
+        "$g_{k-1}$",
+        "$h$",
+        "$g_0$",
+        "$g_{k-1}$",
+        "$H$",
+        "$G_0$",
+        "$G_{k-1}$",
+        "$F$",
+        "$f$",
+        "$F$",
+        "\\[F(x_0,\\dots,x_{l-1})=H(G_0(x_0,\\dots,x_{l-1}),\\dots,G_{k-1}(x_0,\\dots,x_{l-1})).\\]"
+      ],
+      "math_target_core": [
+        "$f$",
+        "$h$",
+        "$g_0,$",
+        "$g_{k-1}$",
+        "$h$",
+        "$g_0$",
+        "$g_{k-1}$",
+        "$H$",
+        "$G_0$",
+        "$G_{k-1}$",
+        "$F$",
+        "$f$",
+        "$F$",
+        "\\[F(x_0,\\dots,x_{l-1})=H(G_0(x_0,\\dots,x_{l-1}),\\dots,G_{k-1}(x_0,\\dots,x_{l-1})).\\]"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 324,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: composition",
+          "target_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: composition"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{int}{com}\n\\olsection{The \\usetoken{S}{lambda definable} Functions are Closed under Composition}",
+          "target_start": "\\olfileid{lam}{int}{com}\n\\olsection{\\usetoken{S}{lambda definable} ప్రమేయాలు సంయుక్తం కింద సంవృతమైనవి}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{lem}\nThe !!{lambda definable} functions are closed under composition.\n\\end{lem}",
+          "target_start": "\\begin{lem}\n\\tetoken{లాంబ్డాతో నిర్వచించదగిన}{!!{lambda definable}} ప్రమేయాలు సంయుక్తం కింద సంవృతమైనవి.\n\\end{l"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{proof}\nSuppose $f$ is defined by composition from $h$, $g_0,$\n\\dots,~$g_{k-1}$. Assuming $h$, $g_0$, \\d",
+          "target_start": "\\begin{proof}\n$f$ను $h$, $g_0,$ \\dots,~$g_{k-1}$ల నుంచి సంయుక్తం ద్వారా\nనిర్వచించారని అనుకుందాం. $h$, $g_0$, \\"
+        },
+        {
+          "index": 7,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{com}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{com}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0353",
+      "source_path": "content/lambda-calculus/introduction/primitive-recursion.tex",
+      "source_sha256": "04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350",
+      "translation_sha256": "91a43cebe82c7268bb87c5eb8f24d0a15e3a374d15cd76a71110a50e9fdc8290",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{int}{pr}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{int}{pr}"
+      ],
+      "tokens_source": {
+        "!!{lambda definable}": 1,
+        "!!{lambda define}": 2,
+        "!!{lambda define}s": 1
+      },
+      "tokens_target": {
+        "!!{lambda definable}": 1,
+        "!!{lambda define}": 2,
+        "!!{lambda define}s": 1
+      },
+      "math_source": [
+        "$G$",
+        "$H$",
+        "$g$",
+        "$h$",
+        "$H$",
+        "$f$",
+        "\\begin{align*}f(0,\\vec{z})&=g(\\vec{z})\\\\f(x+1,\\vec{z})&=h(z,f(x,\\vec{z}),\\vec{z}).\\end{align*}",
+        "$G'$",
+        "$H'$",
+        "$F$",
+        "\\begin{align*}F(\\num{0},\\vec{z})&\\equivG(\\vec{z})\\\\F(\\overline{n+1},\\vec{z})&\\equivH(\\num{n},F(\\num{n},\\vec{z}),\\vec{z})\\end{align*}",
+        "$n$",
+        "$G'$",
+        "$H'$",
+        "$g$",
+        "$h$",
+        "$\\num{\\vec{m}}$",
+        "$\\vec{z}$",
+        "$F(\\num{n+1},\\num{\\vec{m}})$",
+        "$F$",
+        "\\begin{align*}F(\\num0)&\\equivG\\\\F(\\overline{n+1})&\\equivH(\\num{n},F(\\num{n}))G&=\\lambd[\\vec{z}][G'(\\vec{z})]\\\\H(u,v)&=\\lambd[\\vec{z}][H'(u,v(u,\\vec{z}),\\vec{z})].\\end{align*}",
+        "$\\vec{z}$",
+        "$F$",
+        "$D$",
+        "$M$",
+        "$N$",
+        "$D(M,N)(\\num{0})\\redM$",
+        "$D(M,N)(\\num{1})\\redN$",
+        "$K$",
+        "\\[K(y)=\\lambd[x][y].\\]",
+        "$K$",
+        "$\\lambd[y][\\lambd[x][y]]$",
+        "$M$",
+        "$K(M)$",
+        "$M$",
+        "$D(x,y,z)$",
+        "$D(x,y,z)=z(K(y))x$",
+        "\\begin{align*}D(M,N,\\num0)&\\red\\num0(K(N))M\\redM\\\\D(M,N,\\num1)&\\red\\num1(K(N))M\\redK(N)M\\redN,\\end{align*}",
+        "$D(M,N)$",
+        "$\\tuple{M,N}$",
+        "$P$",
+        "$P(\\num0)$",
+        "$P(\\num1)$",
+        "$(P)_0$",
+        "$(P)_1$",
+        "$G$",
+        "$H$",
+        "$F$",
+        "\\begin{align*}F(\\num{0})&\\equivG\\\\F(\\num{n+1})&\\equivH(\\num{n},F(\\num{n}))\\end{align*}",
+        "$n$",
+        "\\[\\tuple{\\num0,F(\\num0)},\\tuple{\\num1,F(\\num1)},\\dots,\\]",
+        "$\\tuple{\\num0,G}$",
+        "$\\tuple{\\num{n},F(\\num{n})}$",
+        "$\\tuple{\\num{n+1},F(\\num{n+1})}$",
+        "$\\tuple{\\num{n+1},H(\\num{n},F(\\num{n}))}$",
+        "$T$",
+        "$T(u)$",
+        "\\[T(u)=\\tuple{S((u)_0),H((u)_0,(u)_1)}.\\]",
+        "$n$",
+        "\\[T(\\tuple{\\num{n},M})\\red\\tuple{\\num{n+1},H(\\num{n},M)}.\\]",
+        "$G$",
+        "$H$",
+        "$F(u)$",
+        "\\[F(u)=(u(T,\\tuple{\\num0,G}))_1.\\]",
+        "$\\num{n}$",
+        "$F$",
+        "$T$",
+        "$n$",
+        "$\\tuple{\\num0,G}$",
+        "$\\num{0}(T,\\tuple{\\num0,G})\\equiv\\tuple{\\num{0},G}$",
+        "$F(\\num{0})\\equivG$",
+        "$n$",
+        "$\\num{n+1}(T,\\tuple{\\num{0},G})\\equiv\\tuple{\\num{n+1},F(\\num{n+1})}$",
+        "$F(\\num{n+1})\\equivH(\\num{n},F(\\num{n}))$",
+        "\\begin{align*}F(\\num{n+1})&\\red(\\num{n+1}(T,\\tuple{\\num0,G}))_1\\\\&\\equiv(T(\\num{n}(T,\\tuple{\\num0,G})))_1\\\\&\\equiv(T(\\tuple{\\num{n},F(\\num{n})}))_1\\\\&\\equiv(\\tuple{\\num{n+1},H(\\num{n},F(\\num{n}))})_1\\\\&\\equivH(\\num{n},F(\\num{n})).\\end{align*}",
+        "\\begin{align*}\\num{n+1}(T,\\tuple{\\num0,G})&\\equivT(\\num{n}(T,\\tuple{\\num0,G}))\\\\&\\equivT(\\tuple{\\num{n},F(\\num{n})})\\\\&\\equiv\\tuple{\\num{n+1},H(\\num{n},F(\\num{n}))}\\\\&\\equiv\\tuple{\\num{n+1},F(\\num{n+1})}.\\end{align*}",
+        "$F(\\num0)\\equivG$",
+        "$n$",
+        "$F(\\num{n+1})\\equivH(\\numn,F(\\num{n}))$",
+        "$n$"
+      ],
+      "math_target_core": [
+        "$G$",
+        "$H$",
+        "$g$",
+        "$h$",
+        "$f$",
+        "$F$",
+        "\\begin{align*}f(0,\\vec{z})&=g(\\vec{z})\\\\f(x+1,\\vec{z})&=h(x,f(x,\\vec{z}),\\vec{z}).\\end{align*}",
+        "$G'$",
+        "$H'$",
+        "$n$",
+        "$F$",
+        "\\begin{align*}F(\\num{0},\\vec{z})&\\equivG(\\vec{z})\\\\F(\\overline{n+1},\\vec{z})&\\equivH(\\num{n},F(\\num{n},\\vec{z}),\\vec{z})\\end{align*}",
+        "$G'$",
+        "$H'$",
+        "$g$",
+        "$h$",
+        "$\\vec{z}$",
+        "$\\num{\\vec{m}}$",
+        "$F(\\num{n+1},\\num{\\vec{m}})$",
+        "$n$",
+        "$F$",
+        "\\begin{align*}F(\\num0)&\\equivG\\\\F(\\overline{n+1})&\\equivH(\\num{n},F(\\num{n}))G&=\\lambd[\\vec{z}][G'(\\vec{z})]\\\\H(u,v)&=\\lambd[\\vec{z}][H'(u,v(\\vec{z}),\\vec{z})].\\end{align*}",
+        "$\\vec{z}$",
+        "$F$",
+        "$M$",
+        "$N$",
+        "$D(M,N)(\\num{0})\\redM$",
+        "$D(M,N)(\\num{1})\\redN$",
+        "$D$",
+        "$K$",
+        "\\[K(y)=\\lambd[x][y].\\]",
+        "$K$",
+        "$\\lambd[y][\\lambd[x][y]]$",
+        "$M$",
+        "$K(M)$",
+        "$M$",
+        "$D(x,y,z)$",
+        "$D(x,y,z)=z(K(y))x$",
+        "\\begin{align*}D(M,N,\\num0)&\\red\\num0(K(N))M\\redM\\\\D(M,N,\\num1)&\\red\\num1(K(N))M\\redK(N)M\\redN,\\end{align*}",
+        "$D(M,N)$",
+        "$\\tuple{M,N}$",
+        "$P$",
+        "$P(\\num0)$",
+        "$P(\\num1)$",
+        "$(P)_0$",
+        "$(P)_1$",
+        "$G$",
+        "$H$",
+        "$n$",
+        "\\begin{align*}F(\\num{0})&\\equivG\\\\F(\\num{n+1})&\\equivH(\\num{n},F(\\num{n}))\\end{align*}",
+        "$F$",
+        "\\[\\tuple{\\num0,F(\\num0)},\\tuple{\\num1,F(\\num1)},\\dots,\\]",
+        "$\\tuple{\\num0,G}$",
+        "$\\tuple{\\num{n},F(\\num{n})}$",
+        "$\\tuple{\\num{n+1},F(\\num{n+1})}$",
+        "$\\tuple{\\num{n+1},H(\\num{n},F(\\num{n}))}$",
+        "$T$",
+        "$T(u)$",
+        "\\[T(u)=\\tuple{\\fn{Succ}((u)_0),H((u)_0,(u)_1)}.\\]",
+        "$n$",
+        "\\[T(\\tuple{\\num{n},M})\\red\\tuple{\\num{n+1},H(\\num{n},M)}.\\]",
+        "$G$",
+        "$H$",
+        "$F(u)$",
+        "\\[F(u)=(u(T,\\tuple{\\num0,G}))_1.\\]",
+        "$\\num{n}$",
+        "$F$",
+        "$T$",
+        "$\\tuple{\\num0,G}$",
+        "$n$",
+        "$\\num{0}(T,\\tuple{\\num0,G})\\equiv\\tuple{\\num{0},G}$",
+        "$F(\\num{0})\\equivG$",
+        "$n$",
+        "$\\num{n+1}(T,\\tuple{\\num{0},G})\\equiv\\tuple{\\num{n+1},F(\\num{n+1})}$",
+        "$F(\\num{n+1})\\equivH(\\num{n},F(\\num{n}))$",
+        "\\begin{align*}F(\\num{n+1})&\\red(\\num{n+1}(T,\\tuple{\\num0,G}))_1\\\\&\\equiv(T(\\num{n}(T,\\tuple{\\num0,G})))_1\\\\&\\equiv(T(\\tuple{\\num{n},F(\\num{n})}))_1\\\\&\\equiv(\\tuple{\\num{n+1},H(\\num{n},F(\\num{n}))})_1\\\\&\\equivH(\\num{n},F(\\num{n})).\\end{align*}",
+        "\\begin{align*}\\num{n+1}(T,\\tuple{\\num0,G})&\\equivT(\\num{n}(T,\\tuple{\\num0,G}))\\\\&\\equivT(\\tuple{\\num{n},F(\\num{n})})\\\\&\\equiv\\tuple{\\num{n+1},H(\\num{n},F(\\num{n}))}\\\\&\\equiv\\tuple{\\num{n+1},F(\\num{n+1})}.\\end{align*}",
+        "$F(\\num0)\\equivG$",
+        "$n$",
+        "$F(\\num{n+1})\\equivH(\\numn,F(\\num{n}))$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$H$",
+        "\\[T(u)=\\tuple{S((u)_0),H((u)_0,(u)_1)}.\\]",
+        "\\begin{align*}F(\\num0)&\\equivG\\\\F(\\overline{n+1})&\\equivH(\\num{n},F(\\num{n}))G&=\\lambd[\\vec{z}][G'(\\vec{z})]\\\\H(u,v)&=\\lambd[\\vec{z}][H'(u,v(u,\\vec{z}),\\vec{z})].\\end{align*}",
+        "\\begin{align*}f(0,\\vec{z})&=g(\\vec{z})\\\\f(x+1,\\vec{z})&=h(z,f(x,\\vec{z}),\\vec{z}).\\end{align*}"
+      ],
+      "math_delta_target_only": [
+        "$F$",
+        "\\[T(u)=\\tuple{\\fn{Succ}((u)_0),H((u)_0,(u)_1)}.\\]",
+        "\\begin{align*}F(\\num0)&\\equivG\\\\F(\\overline{n+1})&\\equivH(\\num{n},F(\\num{n}))G&=\\lambd[\\vec{z}][G'(\\vec{z})]\\\\H(u,v)&=\\lambd[\\vec{z}][H'(u,v(\\vec{z}),\\vec{z})].\\end{align*}",
+        "\\begin{align*}f(0,\\vec{z})&=g(\\vec{z})\\\\f(x+1,\\vec{z})&=h(x,f(x,\\vec{z}),\\vec{z}).\\end{align*}"
+      ],
+      "declared_source_correction_ids": [
+        "OLTELAMCOMP-003",
+        "OLTELAMCOMP-004",
+        "OLTELAMCOMP-005",
+        "OLTELAMCOMP-006"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2502,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: primitive-recursion",
+          "target_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: primitive-recursion"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{int}{pr}\n\\olsection{\\usetoken{S}{lambda definable} Functions are Closed under Primitive Recursi",
+          "target_start": "\\olfileid{lam}{int}{pr}\n\\olsection{\\usetoken{S}{lambda definable} ప్రమేయాలు ఆదిమ పునరావృత్తి కింద సంవృతమైనవి}"
+        },
+        {
+          "index": 5,
+          "source_start": "When it comes to primitive recursion, we finally need to do some\nwork. We will have to proceed in stages. As b",
+          "target_start": "ఆదిమ పునరావృత్తి విషయానికి వచ్చేసరికి, చివరకు మనం కొంత పని చేయాలి.\nదశలవారీగా ముందుకు సాగాలి. మునుపటిలాగే, $G$,"
+        },
+        {
+          "index": 6,
+          "source_start": "But for this, it suffices to find a term~$F$ satisfying\n\\begin{align*}\nF(\\num 0) & \\equiv G \\\\\nF(\\overline {n+",
+          "target_start": "కానీ ఇందుకు ప్రతి సహజ సంఖ్య~$n$కు కింది సమీకరణాలను నెరవేర్చే పదం~$F$ను\nకనుగొంటే సరిపోతుంది:\n\\begin{align*}\nF(\\"
+        },
+        {
+          "index": 7,
+          "source_start": "Before we define the term $F$, we need a mechanism for handling\nordered pairs. This is provided by the next le",
+          "target_start": "$F$ పదాన్ని నిర్వచించే ముందు, క్రమయుగ్మాలను నిర్వహించే యంత్రాంగం\nఅవసరం. తరువాతి ఉపసిద్ధాంతం దాన్ని అందిస్తుంది"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{lem}\nThere is a lambda term $D$ such that for each pair of lambda terms $M$\nand~$N$, $D(M,N)(\\num{0}) \\",
+          "target_start": "\\begin{lem}\nలాంబ్డా పదాల ప్రతి జత $M$,~$N$కు $D(M,N)(\\num{0}) \\red M$ మరియు\n$D(M,N)(\\num{1}) \\red N$ అయ్యేలా ఒ"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{proof}\nFirst, define the lambda term $K$ by\n\\[\nK(y) = \\lambd[x][y].\n\\]\nIn other words, $K$ is the term ",
+          "target_start": "\\begin{proof}\nమొదట, లాంబ్డా పదం~$K$ను కింది విధంగా నిర్వచించండి:\n\\[\nK(y) = \\lambd[x][y].\n\\]\nమరో మాటలో, $K$ అనే"
+        },
+        {
+          "index": 10,
+          "source_start": "Now define $D(x,y,z)$ by $D(x,y,z) = z (K(y))x$. Then we have\n\\begin{align*}\nD(M,N,\\num 0) & \\red \\num 0 (K(N)",
+          "target_start": "ఇప్పుడు $D(x,y,z)$ను $D(x,y,z) = z (K(y))x$ ద్వారా నిర్వచించండి.\nఅప్పుడు మనకు కావలసినట్లుగానే\n\\begin{align*}\nD"
+        },
+        {
+          "index": 11,
+          "source_start": "The idea is that $D(M,N)$ represents the pair $\\tuple{M, N}$, and if\n$P$ is assumed to represent such a pair, ",
+          "target_start": "$D(M,N)$ అనేది $\\tuple{M, N}$ జతకు ప్రాతినిధ్యం వహిస్తుందనేది భావన.\n$P$ అలాంటి జతకు ప్రాతినిధ్యం వహిస్తుందని అ"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{lem}\nThe !!{lambda definable} functions are closed under primitive recursion.\n\\end{lem}",
+          "target_start": "\\begin{lem}\n\\tetoken{లాంబ్డాతో నిర్వచించదగిన}{!!{lambda definable}} ప్రమేయాలు ఆదిమ పునరావృత్తి కింద సంవృతమైనవి"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{proof}\nWe need to show that given any terms, $G$ and $H$, we can find a term\n$F$ such that\n\\begin{align",
+          "target_start": "\\begin{proof}\nఏ పదాలు $G$,~$H$ ఇచ్చినా, ప్రతి సహజ సంఖ్య~$n$కు\n\\begin{align*}\nF(\\num{0}) & \\equiv G \\\\\nF(\\num{n"
+        },
+        {
+          "index": 14,
+          "source_start": "The details are as follows. Define $T(u)$ by\n\\[\nT(u) = \\tuple{S((u)_0), H((u)_0,(u)_1)}.\n\\]\nNow it is easy to ",
+          "target_start": "వివరాలు ఇవి. $T(u)$ను కింది విధంగా నిర్వచించండి:\n\\[\nT(u) = \\tuple{\\fn{Succ}((u)_0), H((u)_0,(u)_1)}.\n\\]\n\\sourc"
+        },
+        {
+          "index": 15,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{pr}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{pr}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0354",
+      "source_path": "content/lambda-calculus/introduction/fixed-point-combinator.tex",
+      "source_sha256": "632b1f356b9a9b2147e82bc3b39a3442220ab78ffbede6baa28390cf1b759327",
+      "translation_sha256": "12867f9e1b288bff1998013d435c7179b0f52e2ff83c49667e9fbcb74e006c00",
+      "source_blocks": 6,
+      "target_blocks": 6,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{int}{fix}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{int}{fix}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$g$",
+        "$k$",
+        "$k$",
+        "$\\beta$",
+        "$gk$",
+        "\\[\\fn{diag}(x)=xx\\]",
+        "\\[l(x)=g(\\fn{diag}(x))\\]",
+        "$l$",
+        "$\\lambd[x][g(xx)]$",
+        "$k$",
+        "$ll$",
+        "\\begin{align*}k&=(\\lambd[x][g(xx)])(\\lambd[x][g(xx)])\\\\&\\redg((\\lambd[x][g(xx)])(\\lambd[x][g(xx)]))\\\\&=gk.\\end{align*}",
+        "\\[Y=\\lambd[g][((\\lambd[x][g(xx)])(\\lambd[x][g(xx)]))]\\]",
+        "$Yg$",
+        "$g(Yg)$",
+        "$Yg\\equiv_\\betag(Yg)$",
+        "\\[Y=(\\lambd[xg][g(xxg)])(\\lambd[xg][g(xxg)])\\]",
+        "$Yg$",
+        "$g(Yg)$",
+        "$Y$"
+      ],
+      "math_target_core": [
+        "$g$",
+        "$k$",
+        "$k$",
+        "$gk$",
+        "$\\beta$",
+        "\\[\\fn{diag}(x)=xx\\]",
+        "\\[l(x)=g(\\fn{diag}(x))\\]",
+        "$l$",
+        "$\\lambd[x][g(xx)]$",
+        "$k$",
+        "$ll$",
+        "\\begin{align*}k&=(\\lambd[x][g(xx)])(\\lambd[x][g(xx)])\\\\&\\redg((\\lambd[x][g(xx)])(\\lambd[x][g(xx)]))\\\\&=gk.\\end{align*}",
+        "\\[Y=\\lambd[g][((\\lambd[x][g(xx)])(\\lambd[x][g(xx)]))]\\]",
+        "$Yg$",
+        "$g(Yg)$",
+        "$Yg\\equiv_\\betag(Yg)$",
+        "\\[Y=(\\lambd[xg][g(xxg)])(\\lambd[xg][g(xxg)])\\]",
+        "$Yg$",
+        "$g(Yg)$",
+        "$Y$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 338,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: fixed-point-combinator",
+          "target_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: fixed-point-combinator"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{int}{fix}\n\\olsection{Fixed-Point Combinators}",
+          "target_start": "\\olfileid{lam}{int}{fix}\n\\olsection{స్థిరబిందు సంయోజకాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "Suppose you have a lambda term $g$, and you want another term $k$ with\nthe property that $k$ is $\\beta$-equiva",
+          "target_start": "మీ దగ్గర లాంబ్డా పదం~$g$ ఉందనీ, మరొక పదం~$k$ కావాలనీ, ఆ $k$ అనేది\n$gk$కు $\\beta$-తుల్యం కావాలనీ అనుకుందాం. మన "
+        },
+        {
+          "index": 6,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{fix}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{fix}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0355",
+      "source_path": "content/lambda-calculus/introduction/minimization.tex",
+      "source_sha256": "e0fbbc26c033f303410498fec8dd8dda3d610e0ced8df38d1de1189a8d590bf1",
+      "translation_sha256": "80f3c9cc2ffeabb14109ed5c3d67a11a29fc7449cb6970c11d2c79b2181de0a5",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{int}{min}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{int}{min}"
+      ],
+      "tokens_source": {
+        "!!{lambda definable}": 2,
+        "!!{lambda defined}": 1,
+        "!!{lambda define}": 1,
+        "!!{lambda define}s": 1
+      },
+      "tokens_target": {
+        "!!{lambda definable}": 2,
+        "!!{lambda defined}": 1,
+        "!!{lambda define}": 1,
+        "!!{lambda define}s": 1
+      },
+      "math_source": [
+        "$f(x,y)$",
+        "$g$",
+        "\\[g(x)\\simeq\\umin{y}{f(x,y)}.\\]",
+        "$g$",
+        "$x$",
+        "$Y$",
+        "$h_x(n)$",
+        "$y$",
+        "$n$",
+        "$g(x)$",
+        "$h_x(0)$",
+        "$h_x$",
+        "\\[h_x(n)\\simeq\\begin{cases}n&\\\\h_x(n+1)&\\end{cases}\\]",
+        "$f$",
+        "$F$",
+        "$D$",
+        "$D(M,N,\\bar{0})\\redM$",
+        "$D(M,N,\\bar{1})\\redN$",
+        "$x$",
+        "$h_x$",
+        "$H$",
+        "$x$",
+        "\\[H(\\num{n})\\equivD(\\num{n},H(S(\\num{n})),F(x,\\num{n})).\\]",
+        "$Y$",
+        "$U$",
+        "\\[\\lambd[h][\\lambd[z][D(z,(h(Sz)),F(x,z))]],\\]",
+        "$H$",
+        "$YU$",
+        "$H$",
+        "$x$",
+        "$H$",
+        "$Y$",
+        "\\[H=YU\\equivU(YU)=U(H).\\]",
+        "$n$",
+        "\\begin{align*}H(\\num{n})&\\equivU(H,\\num{n})\\\\&\\redD(\\num{n},H(S(\\num{n})),F(x,\\num{n})),\\end{align*}",
+        "$\\num{m}$",
+        "$x$",
+        "$\\num{n}$",
+        "$F(\\num{m},\\num{n})$",
+        "$\\num{0}$",
+        "$H(S(\\num{n}))$",
+        "$F(\\num{m},\\num{n})$",
+        "$G$",
+        "$\\lambd[x][H(\\num0)]$",
+        "$G$",
+        "$g$",
+        "$m$",
+        "$G(\\numm)$",
+        "$\\overline{g(m)}$",
+        "$g(m)$",
+        "$f(x,n)=0$"
+      ],
+      "math_target_core": [
+        "$f(x,y)$",
+        "$g$",
+        "\\[g(x)\\simeq\\umin{y}{f(x,y)}.\\]",
+        "$g$",
+        "$x$",
+        "$n$",
+        "$y$",
+        "$h_x(n)$",
+        "$Y$",
+        "$g(x)$",
+        "$h_x(0)$",
+        "$h_x$",
+        "\\[h_x(n)\\simeq\\begin{cases}n&\\\\h_x(n+1)&\\end{cases}\\]",
+        "$f$",
+        "$F$",
+        "$D(M,N,\\bar{0})\\redM$",
+        "$D(M,N,\\bar{1})\\redN$",
+        "$D$",
+        "$x$",
+        "$h_x$",
+        "$x$",
+        "$H$",
+        "\\[H(\\num{n})\\equivD(\\num{n},H(\\fn{Succ}(\\num{n})),F(x,\\num{n})).\\]",
+        "$Y$",
+        "$U$",
+        "\\[\\lambd[h][\\lambd[z][D(z,(h(\\fn{Succ}z)),F(x,z))]],\\]",
+        "$H$",
+        "$YU$",
+        "$H$",
+        "$x$",
+        "$H$",
+        "$Y$",
+        "\\[H=YU\\equivU(YU)=U(H).\\]",
+        "$n$",
+        "\\begin{align*}H(\\num{n})&\\equivU(H,\\num{n})\\\\&\\redD(\\num{n},H(\\fn{Succ}(\\num{n})),F(x,\\num{n})),\\end{align*}",
+        "$x$",
+        "$\\num{m}$",
+        "$F(\\num{m},\\num{n})$",
+        "$\\num{0}$",
+        "$\\num{n}$",
+        "$F(\\num{m},\\num{n})$",
+        "$H(\\fn{Succ}(\\num{n}))$",
+        "$G$",
+        "$\\lambd[x][H(\\num0)]$",
+        "$G$",
+        "$g$",
+        "$m$",
+        "$g(m)$",
+        "$G(\\numm)$",
+        "$\\overline{g(m)}$",
+        "$f(x,n)=0$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$H(S(\\num{n}))$",
+        "\\[H(\\num{n})\\equivD(\\num{n},H(S(\\num{n})),F(x,\\num{n})).\\]",
+        "\\[\\lambd[h][\\lambd[z][D(z,(h(Sz)),F(x,z))]],\\]",
+        "\\begin{align*}H(\\num{n})&\\equivU(H,\\num{n})\\\\&\\redD(\\num{n},H(S(\\num{n})),F(x,\\num{n})),\\end{align*}"
+      ],
+      "math_delta_target_only": [
+        "$H(\\fn{Succ}(\\num{n}))$",
+        "\\[H(\\num{n})\\equivD(\\num{n},H(\\fn{Succ}(\\num{n})),F(x,\\num{n})).\\]",
+        "\\[\\lambd[h][\\lambd[z][D(z,(h(\\fn{Succ}z)),F(x,z))]],\\]",
+        "\\begin{align*}H(\\num{n})&\\equivU(H,\\num{n})\\\\&\\redD(\\num{n},H(\\fn{Succ}(\\num{n})),F(x,\\num{n})),\\end{align*}"
+      ],
+      "declared_source_correction_ids": [
+        "OLTELAMCOMP-007",
+        "OLTELAMCOMP-008"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1351,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: minimization",
+          "target_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: minimization"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{int}{min}\n\\olsection{The \\usetoken{S}{lambda definable} Functions are Closed under Minimization",
+          "target_start": "\\olfileid{lam}{int}{min}\n\\olsection{\\usetoken{S}{lambda definable} ప్రమేయాలు కనిష్ఠీకరణ కింద సంవృతమైనవి}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{lem}\nSuppose $f(x,y)$ is !!{lambda definable}. Let $g$ be defined by\n\\[\ng(x) \\simeq \\umin{y}{f(x,y)}.\n\\",
+          "target_start": "\\begin{lem}\n$f(x,y)$ అనేది \\tetoken{లాంబ్డాతో నిర్వచించదగిన}{!!{lambda definable}}దని అనుకుందాం. $g$ను\n\\[\ng(x)"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{proof}\nThe idea is roughly as follows. Given $x$, we will use the fixed-point\nlambda term $Y$ to define",
+          "target_start": "\\begin{proof}\nస్థూలంగా భావన ఇలా ఉంటుంది. $x$ ఇచ్చినప్పుడు, $n$ వద్ద మొదలుపెట్టి\nఒక~$y$ కోసం అన్వేషించే ప్రమేయం"
+        },
+        {
+          "index": 7,
+          "source_start": "Here are the details. Since $f$ is primitive recursive, it is\n!!{lambda defined} by some term $F$. Remember th",
+          "target_start": "వివరాలు ఇవి. పరికల్పన ప్రకారం $f$ ఒక పదం~$F$చే \\tetoken{లాంబ్డాతో నిర్వచించబడిన}{!!{lambda defined}}ది.\n$D(M, "
+        },
+        {
+          "index": 8,
+          "source_start": "By the definition of $Y$, we have\n\\[\nH = YU \\equiv U(YU) = U(H).\n\\]\nIn particular, for each natural number~$n$",
+          "target_start": "$Y$ నిర్వచనం ప్రకారం,\n\\[\nH = YU \\equiv U(YU) = U(H).\n\\]\nప్రత్యేకంగా, ప్రతి సహజ సంఖ్య~$n$కు,\n\\begin{align*}\nH(\\"
+        },
+        {
+          "index": 9,
+          "source_start": "To finish off the proof, let $G$ be $\\lambd[x][H(\\num 0)]$. Then $G$\n!!{lambda define}s~$g$; in other words, f",
+          "target_start": "నిరూపణను ముగించడానికి, $G$ను $\\lambd[x][H(\\num 0)]$గా తీసుకోండి.\nఅప్పుడు $G$ ప్రమేయం~$g$ను \\tetoken{లాంబ్డాతో "
+        },
+        {
+          "index": 10,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{min}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{min}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    }
+  ]
+}
