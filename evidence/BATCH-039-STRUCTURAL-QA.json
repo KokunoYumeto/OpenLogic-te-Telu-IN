@@ -1,0 +1,1161 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-21T00:16:31.010Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Text/intertext/mbox prose is masked; nested inline math is compared per clause independently of language-specific word order.",
+  "units": [
+    {
+      "unit_id": "OLP-0341",
+      "source_path": "content/lambda-calculus/lambda-calculus.tex",
+      "source_sha256": "55f3d4f5216c89a10fcbf8a214d658099485999fefd9391402994dea1881cec3",
+      "translation_sha256": "9fbd7b11b1fb38f7b4f7adbbb323177f32f5d2b34846b864f852620d35ef0f78",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport[introduction]{introduction}",
+        "\\olimport[syntax]{syntax}",
+        "\\olimport[church-rosser]{church-rosser}",
+        "\\olimport[lambda-definability]{lambda-definability}"
+      ],
+      "identifiers_target_core": [
+        "\\olimport[introduction]{introduction}",
+        "\\olimport[syntax]{syntax}",
+        "\\olimport[church-rosser]{church-rosser}",
+        "\\olimport[lambda-definability]{lambda-definability}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 303,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus",
+          "target_start": "% Part: lambda-calculus"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../include/open-logic-part]{subfiles}",
+          "target_start": "\\documentclass[../../include/open-logic-part]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olpart{lam}{The Lambda Calculus}",
+          "target_start": "\\olpart{lam}{లాంబ్డా కలనశాస్త్రం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{editorial}\nThis part deals with the lambda calculus. The introduction chapter is\nbased on Jeremy Avigad",
+          "target_start": "\\begin{editorial}\nఈ భాగం లాంబ్డా కలనశాస్త్రాన్ని పరిశీలిస్తుంది. పరిచయ అధ్యాయం జెరెమీ\nఅవిగాడ్ గమనికలపై ఆధారపడి"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport[introduction]{introduction}",
+          "target_start": "\\olimport[introduction]{introduction}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport[syntax]{syntax}",
+          "target_start": "\\olimport[syntax]{syntax}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\olimport[church-rosser]{church-rosser}",
+          "target_start": "\\olimport[church-rosser]{church-rosser}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport[lambda-definability]{lambda-definability}",
+          "target_start": "\\olimport[lambda-definability]{lambda-definability}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\OLEndPartHook",
+          "target_start": "\\OLEndPartHook"
+        },
+        {
+          "index": 11,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../include/open-logic-part]{subfiles}",
+        "\\olimport[introduction]{introduction}",
+        "\\olimport[syntax]{syntax}",
+        "\\olimport[church-rosser]{church-rosser}",
+        "\\olimport[lambda-definability]{lambda-definability}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../include/open-logic-part]{subfiles}",
+        "\\olimport[introduction]{introduction}",
+        "\\olimport[syntax]{syntax}",
+        "\\olimport[church-rosser]{church-rosser}",
+        "\\olimport[lambda-definability]{lambda-definability}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0342",
+      "source_path": "content/lambda-calculus/introduction/introduction.tex",
+      "source_sha256": "6988c2c02fea28c8ff52a0d0fa77a51efceb656455a10f50c3fd702a4a09a5fc",
+      "translation_sha256": "bca4dd703ae86ed8566e9c15f7a289673b0f6de6db6b5c9582c79e9e948123c0",
+      "source_blocks": 20,
+      "target_blocks": 20,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport{overview}",
+        "\\olimport{syntax}",
+        "\\olimport{reduction}",
+        "\\olimport{church-rosser}",
+        "\\olimport{currying}",
+        "\\olimport{lambda-definability}",
+        "\\olimport{lambda-computable}",
+        "\\olimport{computable-lambda}",
+        "\\olimport{basic-pr-lambda}",
+        "\\olimport{composition}",
+        "\\olimport{primitive-recursion}",
+        "\\olimport{fixed-point-combinator}",
+        "\\olimport{minimization}"
+      ],
+      "identifiers_target_core": [
+        "\\olimport{overview}",
+        "\\olimport{syntax}",
+        "\\olimport{reduction}",
+        "\\olimport{church-rosser}",
+        "\\olimport{currying}",
+        "\\olimport{lambda-definability}",
+        "\\olimport{lambda-computable}",
+        "\\olimport{computable-lambda}",
+        "\\olimport{basic-pr-lambda}",
+        "\\olimport{composition}",
+        "\\olimport{primitive-recursion}",
+        "\\olimport{fixed-point-combinator}",
+        "\\olimport{minimization}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 187,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: introduction",
+          "target_start": "% Part: lambda-calculus\n% Chapter: introduction"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olchapter{lam}{int}{Introduction}",
+          "target_start": "\\olchapter{lam}{int}{పరిచయం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{editorial}\nThis chapter consists of Jeremy's original concise notes on the lambda\ncalculus. The section",
+          "target_start": "\\begin{editorial}\nఈ అధ్యాయంలో లాంబ్డా కలనశాస్త్రంపై జెరెమీ మొదట రాసిన సంక్షిప్త గమనికలు\nఉన్నాయి. విభాగాలను కలప"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport{overview}",
+          "target_start": "\\olimport{overview}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport{syntax}",
+          "target_start": "\\olimport{syntax}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\olimport{reduction}",
+          "target_start": "\\olimport{reduction}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport{church-rosser}",
+          "target_start": "\\olimport{church-rosser}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\olimport{currying}",
+          "target_start": "\\olimport{currying}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\olimport{lambda-definability}",
+          "target_start": "\\olimport{lambda-definability}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\olimport{lambda-computable}",
+          "target_start": "\\olimport{lambda-computable}"
+        },
+        {
+          "index": 13,
+          "source_start": "\\olimport{computable-lambda}",
+          "target_start": "\\olimport{computable-lambda}"
+        },
+        {
+          "index": 14,
+          "source_start": "\\olimport{basic-pr-lambda}",
+          "target_start": "\\olimport{basic-pr-lambda}"
+        },
+        {
+          "index": 15,
+          "source_start": "\\olimport{composition}",
+          "target_start": "\\olimport{composition}"
+        },
+        {
+          "index": 16,
+          "source_start": "\\olimport{primitive-recursion}",
+          "target_start": "\\olimport{primitive-recursion}"
+        },
+        {
+          "index": 17,
+          "source_start": "\\olimport{fixed-point-combinator}",
+          "target_start": "\\olimport{fixed-point-combinator}"
+        },
+        {
+          "index": 18,
+          "source_start": "\\olimport{minimization}",
+          "target_start": "\\olimport{minimization}"
+        },
+        {
+          "index": 19,
+          "source_start": "\\OLEndChapterHook",
+          "target_start": "\\OLEndChapterHook"
+        },
+        {
+          "index": 20,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{lam}{int}",
+        "\\olimport{overview}",
+        "\\olimport{syntax}",
+        "\\olimport{reduction}",
+        "\\olimport{church-rosser}",
+        "\\olimport{currying}",
+        "\\olimport{lambda-definability}",
+        "\\olimport{lambda-computable}",
+        "\\olimport{computable-lambda}",
+        "\\olimport{basic-pr-lambda}",
+        "\\olimport{composition}",
+        "\\olimport{primitive-recursion}",
+        "\\olimport{fixed-point-combinator}",
+        "\\olimport{minimization}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{lam}{int}",
+        "\\olimport{overview}",
+        "\\olimport{syntax}",
+        "\\olimport{reduction}",
+        "\\olimport{church-rosser}",
+        "\\olimport{currying}",
+        "\\olimport{lambda-definability}",
+        "\\olimport{lambda-computable}",
+        "\\olimport{computable-lambda}",
+        "\\olimport{basic-pr-lambda}",
+        "\\olimport{composition}",
+        "\\olimport{primitive-recursion}",
+        "\\olimport{fixed-point-combinator}",
+        "\\olimport{minimization}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0343",
+      "source_path": "content/lambda-calculus/introduction/overview.tex",
+      "source_sha256": "cfb967d6315533157e73f6dbbf027a36082188da17e9324aa6f08c957070853a",
+      "translation_sha256": "091b1a3baf5ac00ce7733e7375f9cf1ef9bbb1e4e1696c1a6940c3735702f085",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{int}{ovr}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{int}{ovr}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$f$",
+        "$f(x)=x+3$",
+        "$f$",
+        "$\\lambd[x][(x+3)]$",
+        "$\\lambd[x][(x+3)]$",
+        "$x$",
+        "$\\lambd[y][(y+3)]$",
+        "$g(x,y)$",
+        "$k$",
+        "$\\lambd[x][g(x,k)]$",
+        "$x$",
+        "$g(x,k)$",
+        "$f$",
+        "$f(2)$",
+        "\\[(\\lambd[x][(x+3)])(2)\\]",
+        "$2+3$",
+        "$F$",
+        "$F(F)$"
+      ],
+      "math_target_core": [
+        "$f(x)=x+3$",
+        "$f$",
+        "$f$",
+        "$\\lambd[x][(x+3)]$",
+        "$\\lambd[x][(x+3)]$",
+        "$x$",
+        "$\\lambd[y][(y+3)]$",
+        "$g(x,y)$",
+        "$k$",
+        "$x$",
+        "$g(x,k)$",
+        "$\\lambd[x][g(x,k)]$",
+        "$f$",
+        "$f(2)$",
+        "\\[(\\lambd[x][(x+3)])(2)\\]",
+        "$2+3$",
+        "$F$",
+        "$F(F)$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2035,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: overview",
+          "target_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: overview"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{int}{ovr}\n\\olsection{Overview}",
+          "target_start": "\\olfileid{lam}{int}{ovr}\n\\olsection{అవలోకనం}"
+        },
+        {
+          "index": 5,
+          "source_start": "The lambda calculus was originally designed by Alonzo Church in the\nearly 1930s as a basis for constructive lo",
+          "target_start": "లాంబ్డా కలనశాస్త్రాన్ని అలోంజో చర్చ్ 1930ల తొలినాళ్లలో నిర్మాణాత్మక\nతర్కానికి పునాదిగా మొదట రూపొందించారు; గణనీ"
+        },
+        {
+          "index": 6,
+          "source_start": "Lambda notation is a convenient way of referring to a function\ndirectly by a symbolic expression which defines",
+          "target_start": "ఒక ప్రమేయానికి పేరు పెట్టి నిర్వచించడానికి బదులు, దాన్ని నిర్వచించే\nసాంకేతిక వ్యక్తీకరణతో నేరుగా సూచించడానికి "
+        },
+        {
+          "index": 7,
+          "source_start": "This way of defining a function from a symbolic expression is known as\n\\emph{lambda abstraction}. The flip sid",
+          "target_start": "సాంకేతిక వ్యక్తీకరణ నుంచి ప్రమేయాన్ని ఇలా నిర్వచించడాన్ని\n\\emph{లాంబ్డా అమూర్తీకరణ} అంటారు. లాంబ్డా అమూర్తీకరణ"
+        },
+        {
+          "index": 8,
+          "source_start": "What happens when you combine lambda abstraction with application?\nThen the resulting expression can be simpli",
+          "target_start": "లాంబ్డా అమూర్తీకరణను ప్రయోగంతో కలిపితే ఏమవుతుంది? అమూర్తీకరించిన\nచరం స్థానంలో ప్రయోగించబడే పదాన్ని ``ప్రవేశపెట"
+        },
+        {
+          "index": 9,
+          "source_start": "Up to this point, we have done nothing but introduce new notations for\nconventional notions. The lambda calcul",
+          "target_start": "ఇప్పటివరకు మనం సాంప్రదాయ భావనలకు కొత్త సంకేతనాలను ప్రవేశపెట్టడం తప్ప\nమరేమీ చేయలేదు. అయితే లాంబ్డా కలనశాస్త్రం "
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{digress}\nThere is also a \\emph{typed} lambda calculus, which is an important\nvariation on the untyped v",
+          "target_start": "\\begin{digress}\nటైపులేని రూపానికి ముఖ్యమైన భేదరూపమైన \\emph{టైపుగల} లాంబ్డా\nకలనశాస్త్రం కూడా ఉంది. అనేక విధాలుగ"
+        },
+        {
+          "index": 11,
+          "source_start": "Research on the lambda calculus has proved to be central in\ntheoretical computer science, and in the design of",
+          "target_start": "లాంబ్డా కలనశాస్త్రంపై పరిశోధన సైద్ధాంతిక కంప్యూటర్ శాస్త్రంలోనూ,\nప్రోగ్రామింగ్ భాషల రూపకల్పనలోనూ కేంద్రస్థానంల"
+        },
+        {
+          "index": 12,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{ovr}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{ovr}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0344",
+      "source_path": "content/lambda-calculus/introduction/syntax.tex",
+      "source_sha256": "fce80dba497fdd924804265f8a34b90f3eeef16f2f285a7816b6aba7185674ca",
+      "translation_sha256": "8cd63598133f6414da0b141d3423dae1af274a1c949f5e63c2eda09d5a7539df",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{int}{syn}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{int}{syn}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$x$",
+        "$y$",
+        "$z$",
+        "$a$",
+        "$b$",
+        "$c$",
+        "$M$",
+        "$N$",
+        "$(MN)$",
+        "$M$",
+        "$x$",
+        "$(\\lambd[x][M])$",
+        "$(MN)$",
+        "$(\\lambd[x][M])$",
+        "$\\lambd$",
+        "$M$",
+        "$N$",
+        "$\\lambd$",
+        "$M$",
+        "$N$",
+        "$P$",
+        "$Q$",
+        "$MNPQ$",
+        "$(((MN)P)Q)$",
+        "$\\lambd[x][MNP]$",
+        "$(\\lambd[x][((MN)P)])$",
+        "$\\lambd[xyz][M]$",
+        "$\\lambd[x][\\lambd[y][\\lambd[z][M]]]$",
+        "\\[\\lambd[xy][xxyx\\lambd[z][xz]]\\]",
+        "\\[\\lambd[x][\\lambd[y][((((xx)y)x)(\\lambd[z][(xz)]))]].\\]",
+        "$\\alpha$",
+        "$\\lambd[x][x]$",
+        "$\\lambd[y][y]$",
+        "$M$",
+        "$N$",
+        "$\\lambd$",
+        "\\[(\\lambd[z][yz])x\\]",
+        "$y$",
+        "$x$",
+        "$z$"
+      ],
+      "math_target_core": [
+        "$x$",
+        "$y$",
+        "$z$",
+        "$a$",
+        "$b$",
+        "$c$",
+        "$M$",
+        "$N$",
+        "$(MN)$",
+        "$M$",
+        "$x$",
+        "$(\\lambd[x][M])$",
+        "$(MN)$",
+        "$(\\lambd[x][M])$",
+        "$\\lambd$",
+        "$\\lambd$",
+        "$M$",
+        "$N$",
+        "$M$",
+        "$N$",
+        "$P$",
+        "$Q$",
+        "$MNPQ$",
+        "$(((MN)P)Q)$",
+        "$\\lambd[x][MNP]$",
+        "$(\\lambd[x][((MN)P)])$",
+        "$\\lambd[xyz][M]$",
+        "$\\lambd[x][\\lambd[y][\\lambd[z][M]]]$",
+        "\\[\\lambd[xy][xxyx\\lambd[z][xz]]\\]",
+        "\\[\\lambd[x][\\lambd[y][((((xx)y)x)(\\lambd[z][(xz)]))]].\\]",
+        "$\\alpha$",
+        "$\\lambd[x][x]$",
+        "$\\lambd[y][y]$",
+        "$M$",
+        "$N$",
+        "$\\lambd$",
+        "\\[(\\lambd[z][yz])x\\]",
+        "$y$",
+        "$x$",
+        "$z$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1248,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: syntax",
+          "target_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: syntax"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{int}{syn}\n\\olsection{The Syntax of the Lambda Calculus}",
+          "target_start": "\\olfileid{lam}{int}{syn}\n\\olsection{లాంబ్డా కలనశాస్త్ర వాక్యనిర్మాణం}"
+        },
+        {
+          "index": 5,
+          "source_start": "One starts with a sequence of variables $x$, $y$, $z$,~\\dots and some\nconstant symbols $a$, $b$, $c$,~\\dots. T",
+          "target_start": "$x$, $y$, $z$,~\\dots అనే చరాల క్రమంతోనూ, $a$, $b$, $c$,~\\dots\nఅనే కొన్ని స్థిరసంకేతాలతోనూ ప్రారంభిస్తాం. పదాల "
+        },
+        {
+          "index": 6,
+          "source_start": "The system without any constants at all is called the \\emph{pure}\nlambda calculus. We'll mainly be working in ",
+          "target_start": "స్థిరసంకేతాలే లేని వ్యవస్థను \\emph{శుద్ధ} లాంబ్డా కలనశాస్త్రం అంటారు.\nమనం ప్రధానంగా శుద్ధ $\\lambd$-కలనశాస్త్రం"
+        },
+        {
+          "index": 7,
+          "source_start": "We will follow a few notational conventions:",
+          "target_start": "మనం కొన్ని సంకేతన సంప్రదాయాలను పాటిస్తాం:"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{conv}\n\\begin{enumerate}\n\\item When parentheses are left out, application takes place from left\n  to rig",
+          "target_start": "\\begin{conv}\n\\begin{enumerate}\n\\item కుండలీకరణలను విడిచిపెట్టినప్పుడు, ప్రయోగం ఎడమ నుంచి కుడికి\n  జరుగుతుంది. "
+        },
+        {
+          "index": 9,
+          "source_start": "For example,\n\\[\n\\lambd[xy][xxyx \\lambd[z][xz]]\n\\]\nabbreviates\n\\[\n\\lambd[x][\\lambd[y][((((xx)y)x)(\\lambd[z][(xz",
+          "target_start": "ఉదాహరణకు,\n\\[\n\\lambd[xy][xxyx \\lambd[z][xz]]\n\\]\nఅనేది\n\\[\n\\lambd[x][\\lambd[y][((((xx)y)x)(\\lambd[z][(xz)]))]].\n\\"
+        },
+        {
+          "index": 10,
+          "source_start": "Two terms that differ only in the names of the bound variables are\ncalled $\\alpha$-equivalent; for example, $\\",
+          "target_start": "బద్ధ చరాల పేర్లలో మాత్రమే భేదమున్న రెండు పదాలను $\\alpha$-తుల్యమైనవి\nఅంటాం; ఉదాహరణకు, $\\lambd[x][x]$, $\\lambd[y"
+        },
+        {
+          "index": 11,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{syn}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{syn}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0345",
+      "source_path": "content/lambda-calculus/introduction/reduction.tex",
+      "source_sha256": "974b487078982e551afa7213faf54e35b1dcc37a3f1d38b7a42cc4f34c6322d6",
+      "translation_sha256": "7d36d6426e25999f86404891c58435e16981eac78dac757a7b56d49dbbd8d274",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{int}{red}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{int}{red}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$M$",
+        "$N$",
+        "$x$",
+        "$\\Subst{M}{N}{x}$",
+        "$N$",
+        "$x$",
+        "$M$",
+        "$M$",
+        "$N$",
+        "\\[\\Subst{(\\lambd[w][xxw])}{yyz}{x}=\\lambd[w][(yyz)(yyz)w].\\]",
+        "$[N/x]M$",
+        "$[x/N]M$",
+        "$M[x/N]$",
+        "$(\\lambd[x][M])N$",
+        "$\\Subst{M}{N}{x}$",
+        "$\\beta$",
+        "$(\\lambd[x][M])N$",
+        "$\\Subst{M}{N}{x}$",
+        "$P$",
+        "$P'$",
+        "$\\beta$",
+        "$P$",
+        "$\\beta$",
+        "$P'$",
+        "$P\\redoneP'$",
+        "$P$",
+        "$P'$",
+        "$P$",
+        "$\\beta$",
+        "$P'$",
+        "$P\\redP'$",
+        "$\\beta$",
+        "$\\beta$",
+        "$\\beta$",
+        "$\\beta$",
+        "\\begin{align*}(\\lambd[x][xxy])\\lambd[z][z]&\\redone(\\lambd[z][z])(\\lambd[z][z])y\\\\&\\redone(\\lambd[z][z])y\\\\&\\redoney.\\end{align*}",
+        "\\begin{align*}(\\lambd[x][xxy])(\\lambd[x][xxy])&\\redone(\\lambd[x][xxy])(\\lambd[x][xxy])y\\\\&\\redone(\\lambd[x][xxy])(\\lambd[x][xxy])yy\\\\&\\redone\\dots\\end{align*}",
+        "\\[(\\lambd[x][xx])(\\lambd[x][xx])\\redone(\\lambd[x][xx])(\\lambd[x][xx]).\\]",
+        "\\[(\\lambd[x][(\\lambd[y][yx])z)]v\\redone(\\lambd[y][yv])z\\]",
+        "\\[(\\lambd[x][(\\lambd[y][yx])z)]v\\redone(\\lambd[x][zx])v\\]",
+        "$zv$"
+      ],
+      "math_target_core": [
+        "$M$",
+        "$N$",
+        "$x$",
+        "$N$",
+        "$M$",
+        "$M$",
+        "$x$",
+        "$N$",
+        "$\\Subst{M}{N}{x}$",
+        "\\[\\Subst{(\\lambd[w][xxw])}{yyz}{x}=\\lambd[w][(yyz)(yyz)w].\\]",
+        "$[N/x]M$",
+        "$[x/N]M$",
+        "$M[x/N]$",
+        "$(\\lambd[x][M])N$",
+        "$\\Subst{M}{N}{x}$",
+        "$\\beta$",
+        "$(\\lambd[x][M])N$",
+        "$\\Subst{M}{N}{x}$",
+        "$P$",
+        "$\\beta$",
+        "$P'$",
+        "$P$",
+        "$P'$",
+        "$\\beta$",
+        "$P\\redoneP'$",
+        "$P$",
+        "$P'$",
+        "$P$",
+        "$P'$",
+        "$\\beta$",
+        "$P\\redP'$",
+        "$\\beta$",
+        "$\\beta$",
+        "$\\beta$",
+        "$\\beta$",
+        "\\begin{align*}(\\lambd[x][xxy])\\lambd[z][z]&\\redone(\\lambd[z][z])(\\lambd[z][z])y\\\\&\\redone(\\lambd[z][z])y\\\\&\\redoney.\\end{align*}",
+        "\\begin{align*}(\\lambd[x][xxy])(\\lambd[x][xxy])&\\redone(\\lambd[x][xxy])(\\lambd[x][xxy])y\\\\&\\redone(\\lambd[x][xxy])(\\lambd[x][xxy])yy\\\\&\\redone\\dots\\end{align*}",
+        "\\[(\\lambd[x][xx])(\\lambd[x][xx])\\redone(\\lambd[x][xx])(\\lambd[x][xx]).\\]",
+        "\\[(\\lambd[x][(\\lambd[y][yx])z)]v\\redone(\\lambd[y][yv])z\\]",
+        "\\[(\\lambd[x][(\\lambd[y][yx])z)]v\\redone(\\lambd[x][zx])v\\]",
+        "$zv$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1161,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: reduction",
+          "target_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: reduction"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{int}{red}\n\\olsection{Reduction of Lambda Terms}",
+          "target_start": "\\olfileid{lam}{int}{red}\n\\olsection{లాంబ్డా పదాల తగ్గింపు}"
+        },
+        {
+          "index": 5,
+          "source_start": "What can one do with lambda terms? Simplify them. If $M$ and $N$ are\nany lambda terms and $x$ is any variable,",
+          "target_start": "లాంబ్డా పదాలతో ఏమి చేయవచ్చు? వాటిని సరళీకరించవచ్చు. $M$, $N$\nఏవైనా లాంబ్డా పదాలూ, $x$ ఏదైనా చరమూ అయితే, ప్రతిస"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{digress}\nAlternative notations for substitution are $[N/x]M$, $[x/N]M$, and\nalso $M[x/N]$. Beware!\n\\end",
+          "target_start": "\\begin{digress}\nప్రతిస్థాపనకు ఇతర సంకేతనాలు $[N/x]M$, $[x/N]M$, అలాగే $M[x/N]$.\nజాగ్రత్త!\n\\end{digress}"
+        },
+        {
+          "index": 7,
+          "source_start": "Intuitively, $(\\lambd[x][M])N$ and $\\Subst{M}{N}{x}$ have the same\nmeaning; the act of replacing the first ter",
+          "target_start": "అంతర్బోధ ప్రకారం, $(\\lambd[x][M])N$, $\\Subst{M}{N}{x}$లకు ఒకే\nఅర్థం ఉంటుంది; మొదటి పదాన్ని రెండవదానితో మార్చే "
+        },
+        {
+          "index": 8,
+          "source_start": "Let us consider some examples.\n\\begin{enumerate}\n\\item We have\n\\begin{align*}\n(\\lambd[x][xxy]) \\lambd[z][z] & ",
+          "target_start": "కొన్ని ఉదాహరణలను పరిశీలిద్దాం.\n\\begin{enumerate}\n\\item మనకు\n\\begin{align*}\n(\\lambd[x][xxy]) \\lambd[z][z] & \\re"
+        },
+        {
+          "index": 9,
+          "source_start": "The final outcome in the last example is not a coincidence, but rather\nillustrates a deep and important proper",
+          "target_start": "చివరి ఉదాహరణలోని అంతిమ ఫలితం యాదృచ్ఛికం కాదు; అది లాంబ్డా\nకలనశాస్త్రంలోని ``చర్చ్--రోసర్ లక్షణం'' అనే లోతైన, మ"
+        },
+        {
+          "index": 10,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{red}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{red}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0346",
+      "source_path": "content/lambda-calculus/introduction/church-rosser.tex",
+      "source_sha256": "6c6e2b92cf64a4352de9fe746fc9bbac51c02c79351e9c97ddea3b4c3991b6dc",
+      "translation_sha256": "f6ff4d97a217dd348599784042dccf067b450fcb4be309eb012c9fd46b0cd607",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{int}{cr}",
+        "\\ollabel{thm:church-rosser}",
+        "\\olref{thm:church-rosser}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{int}{cr}",
+        "\\ollabel{thm:church-rosser}",
+        "\\olref{thm:church-rosser}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$M$",
+        "$N_1$",
+        "$N_2$",
+        "$M\\redN_1$",
+        "$M\\redN_2$",
+        "$P$",
+        "$N_1\\redP$",
+        "$N_2\\redP$",
+        "$M$",
+        "$M\\redN_1$",
+        "$M\\redN_2$",
+        "$P$",
+        "$N_1$",
+        "$N_2$",
+        "$P$",
+        "$N_1$",
+        "$N_2$",
+        "$N_1\\identP\\identN_2$",
+        "$M$",
+        "$N$",
+        "$\\beta$",
+        "$P$",
+        "$M\\redP$",
+        "$N\\redP$",
+        "$M\\equal[\\beta]N$",
+        "$\\equal[\\beta]$",
+        "$M$",
+        "$N$",
+        "$M\\redN$",
+        "$N\\redM$",
+        "$M\\equal[\\beta]N$",
+        "$\\equal[\\beta]$"
+      ],
+      "math_target_core": [
+        "$M$",
+        "$N_1$",
+        "$N_2$",
+        "$M\\redN_1$",
+        "$M\\redN_2$",
+        "$N_1\\redP$",
+        "$N_2\\redP$",
+        "$P$",
+        "$M$",
+        "$M\\redN_1$",
+        "$M\\redN_2$",
+        "$N_1$",
+        "$N_2$",
+        "$P$",
+        "$P$",
+        "$N_1$",
+        "$N_2$",
+        "$N_1\\identP\\identN_2$",
+        "$M$",
+        "$N$",
+        "$M\\redP$",
+        "$N\\redP$",
+        "$P$",
+        "$\\beta$",
+        "$M\\equal[\\beta]N$",
+        "$\\equal[\\beta]$",
+        "$M$",
+        "$N$",
+        "$M\\redN$",
+        "$N\\redM$",
+        "$M\\equal[\\beta]N$",
+        "$\\equal[\\beta]$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 432,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: church-rosser",
+          "target_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: church-rosser"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{int}{cr}\n\\olsection{The Church--Rosser Property}",
+          "target_start": "\\olfileid{lam}{int}{cr}\n\\olsection{చర్చ్--రోసర్ లక్షణం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{thm}\n\\ollabel{thm:church-rosser}\nLet $M$, $N_1$, and $N_2$ be terms, such that $M \\red N_1$ and $M \\red",
+          "target_start": "\\begin{thm}\n\\ollabel{thm:church-rosser}\n$M$, $N_1$, $N_2$ పదాలై, $M \\red N_1$, $M \\red N_2$ అనుకుందాం.\nఅప్పుడు"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{cor}\nSuppose $M$ can be reduced to normal form. Then this normal form is\nunique.\n\\end{cor}",
+          "target_start": "\\begin{cor}\n$M$ను నియత రూపానికి తగ్గించవచ్చని అనుకుందాం. అప్పుడు ఈ నియత రూపం\nఏకైకం.\n\\end{cor}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{proof}\nIf $M \\red N_1$ and $M \\red N_2$, by the previous theorem there is a\nterm~$P$ such that $N_1$ an",
+          "target_start": "\\begin{proof}\n$M \\red N_1$, $M \\red N_2$ అయితే, ముందున్న సిద్ధాంతం ప్రకారం $N_1$,\n$N_2$ రెండూ~$P$కు తగ్గేలా ఒక"
+        },
+        {
+          "index": 8,
+          "source_start": "Finally, we will say that two terms $M$ and~$N$ are\n\\emph{$\\beta$-equivalent}, or just \\emph{equivalent}, if t",
+          "target_start": "చివరిగా, రెండు పదాలు $M$,~$N$ ఒకే పదానికి తగ్గితే, అంటే $M \\red P$,\n$N \\red P$ అయ్యే ఏదో $P$ ఉంటే, వాటిని \\emp"
+        },
+        {
+          "index": 9,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{cr}",
+        "\\ollabel{thm:church-rosser}",
+        "\\olref{thm:church-rosser}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{cr}",
+        "\\ollabel{thm:church-rosser}",
+        "\\olref{thm:church-rosser}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0347",
+      "source_path": "content/lambda-calculus/introduction/currying.tex",
+      "source_sha256": "218fab4af4b5c2a49ffe9e7d4ffdc6bb2dd1f88046b71dad2097b5de62b1f5f9",
+      "translation_sha256": "e56f027b0c13fe16f6678e5815c92e034950766dea47a3284ce96f6a589be964",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{rep}{cur}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{rep}{cur}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\lambd$",
+        "$\\lambd[x][M]$",
+        "$\\lambd$",
+        "$\\lambd[x][M]$",
+        "$+$",
+        "$\\lambd$",
+        "$2$",
+        "$\\lambd$",
+        "$\\lambd[(x,y)][(x+y)]$",
+        "$f_x(y)$",
+        "$\\lambd[y][(x+y)]$",
+        "$x$",
+        "$y$",
+        "$x$",
+        "$x$",
+        "$g$",
+        "$\\lambd[x][f_x]$",
+        "$x$",
+        "$g(x)$",
+        "$f_x$",
+        "$g$",
+        "$x$",
+        "$y$",
+        "$(g(x))y=f_x(y)=x+y$",
+        "$g$",
+        "$\\lambd$",
+        "$f(x,y)=x$",
+        "$\\lambd[x][\\lambd[y][x]]$",
+        "$x$",
+        "$\\lambd[y][x]$",
+        "$\\lambd[y][x]$",
+        "$y$",
+        "$x$",
+        "$\\lambd[x][\\lambd[y][x]]$",
+        "\\begin{align*}(\\lambd[x][\\lambd[y][x]])MN\\bredone&(\\lambd[y][M])N\\\\\\bredone&M\\end{align*}",
+        "$x_1$",
+        "$x_n$",
+        "$N$",
+        "$\\lambd[x_1][\\lambd[x_2][\\ldots\\lambd[x_n][N]]]$",
+        "$n$",
+        "\\begin{multline*}(\\lambd[x_1][\\lambd[x_2][\\ldots\\lambd[x_n][N]]])M_1\\dotsM_n\\bredone\\\\\\begin{aligned}\\bredone{}&(\\Subst{(\\lambd[x_2][\\ldots\\lambd[x_n][N]])}{M_1}{x_1})M_2\\dotsM_n\\\\\\eqs{}&(\\lambd[x_2][\\ldots\\lambd[x_n][\\Subst{N}{M_1}{x_1}]])M_2\\dotsM_n\\\\\\vdots&\\\\\\bredone{}&\\Subst{\\Subst{P}{M_1}{x_1}\\ldots}{M_n}{x_n}\\end{aligned}\\end{multline*}",
+        "$M_i$",
+        "$x_i$"
+      ],
+      "math_target_core": [
+        "$\\lambd$",
+        "$\\lambd[x][M]$",
+        "$\\lambd$",
+        "$\\lambd[x][M]$",
+        "$\\lambd$",
+        "$+$",
+        "$2$",
+        "$\\lambd$",
+        "$\\lambd[(x,y)][(x+y)]$",
+        "$y$",
+        "$x$",
+        "$\\lambd[y][(x+y)]$",
+        "$f_x(y)$",
+        "$x$",
+        "$x$",
+        "$\\lambd[x][f_x]$",
+        "$g$",
+        "$x$",
+        "$g(x)$",
+        "$f_x$",
+        "$g$",
+        "$x$",
+        "$y$",
+        "$(g(x))y=f_x(y)=x+y$",
+        "$g$",
+        "$\\lambd$",
+        "$f(x,y)=x$",
+        "$\\lambd[x][\\lambd[y][x]]$",
+        "$x$",
+        "$\\lambd[y][x]$",
+        "$\\lambd[y][x]$",
+        "$y$",
+        "$x$",
+        "$\\lambd[x][\\lambd[y][x]]$",
+        "\\begin{align*}(\\lambd[x][\\lambd[y][x]])MN\\bredone&(\\lambd[y][M])N\\\\\\bredone&M\\end{align*}",
+        "$N$",
+        "$x_1$",
+        "$x_n$",
+        "$\\lambd[x_1][\\lambd[x_2][\\ldots\\lambd[x_n][N]]]$",
+        "$n$",
+        "\\begin{multline*}(\\lambd[x_1][\\lambd[x_2][\\ldots\\lambd[x_n][N]]])M_1\\dotsM_n\\\\\\begin{aligned}\\bredone{}&(\\Subst{(\\lambd[x_2][\\ldots\\lambd[x_n][N]])}{M_1}{x_1})M_2\\dotsM_n\\\\\\eqs{}&(\\lambd[x_2][\\ldots\\lambd[x_n][\\Subst{N}{M_1}{x_1}]])M_2\\dotsM_n\\\\\\vdots&\\\\\\bredone{}&\\Subst{\\Subst{N}{M_1}{x_1}\\ldots}{M_n}{x_n}\\end{aligned}\\end{multline*}",
+        "$x_i$",
+        "$M_i$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "\\begin{multline*}(\\lambd[x_1][\\lambd[x_2][\\ldots\\lambd[x_n][N]]])M_1\\dotsM_n\\bredone\\\\\\begin{aligned}\\bredone{}&(\\Subst{(\\lambd[x_2][\\ldots\\lambd[x_n][N]])}{M_1}{x_1})M_2\\dotsM_n\\\\\\eqs{}&(\\lambd[x_2][\\ldots\\lambd[x_n][\\Subst{N}{M_1}{x_1}]])M_2\\dotsM_n\\\\\\vdots&\\\\\\bredone{}&\\Subst{\\Subst{P}{M_1}{x_1}\\ldots}{M_n}{x_n}\\end{aligned}\\end{multline*}"
+      ],
+      "math_delta_target_only": [
+        "\\begin{multline*}(\\lambd[x_1][\\lambd[x_2][\\ldots\\lambd[x_n][N]]])M_1\\dotsM_n\\\\\\begin{aligned}\\bredone{}&(\\Subst{(\\lambd[x_2][\\ldots\\lambd[x_n][N]])}{M_1}{x_1})M_2\\dotsM_n\\\\\\eqs{}&(\\lambd[x_2][\\ldots\\lambd[x_n][\\Subst{N}{M_1}{x_1}]])M_2\\dotsM_n\\\\\\vdots&\\\\\\bredone{}&\\Subst{\\Subst{N}{M_1}{x_1}\\ldots}{M_n}{x_n}\\end{aligned}\\end{multline*}"
+      ],
+      "declared_source_correction_ids": [
+        "OLTELAMINT-001"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1893,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: representability\n% Section: currying",
+          "target_start": "% Part: lambda-calculus\n% Chapter: representability\n% Section: currying"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{rep}{cur} \n\\olsection{Currying}",
+          "target_start": "\\olfileid{lam}{rep}{cur}\n\\olsection{కరీకరణ}"
+        },
+        {
+          "index": 5,
+          "source_start": "A $\\lambd$-abstract $\\lambd[x][M]$ represents a function of one\nargument, which is quite a limitation when we ",
+          "target_start": "ఒక $\\lambd$-అమూర్తీకరణ $\\lambd[x][M]$ ఒకే ఆర్గ్యుమెంట్ గల\nప్రమేయాన్ని సూచిస్తుంది. అనేక ఆర్గ్యుమెంట్లను స్వీకర"
+        },
+        {
+          "index": 6,
+          "source_start": "Let's consider an example. We'll pretend for a moment that we have a\n$+$ operation in the $\\lambd$-calculus. T",
+          "target_start": "ఒక ఉదాహరణను పరిశీలిద్దాం. $\\lambd$-కలనశాస్త్రంలో మనకు $+$ పరిక్రియ\nఉన్నట్లు కాసేపు ఊహిద్దాం. కూడిక ప్రమేయం $2$"
+        },
+        {
+          "index": 7,
+          "source_start": "Here is an example properly in the syntax of the $\\lambd$-calculus.\nHow do we represent the function $f(x,y) =",
+          "target_start": "ఇప్పుడు $\\lambd$-కలనశాస్త్ర వాక్యనిర్మాణంలోనే ఒక ఉదాహరణ చూద్దాం.\n$f(x,y) = x$ ప్రమేయాన్ని ఎలా సూచించాలి? రెండు"
+        },
+        {
+          "index": 8,
+          "source_start": "In general, to write a function with parameters $x_1$, \\dots,~$x_n$\ndefined by some term~$N$, we can write\n$\\l",
+          "target_start": "సాధారణంగా, ఏదో పదం~$N$ ద్వారా నిర్వచించిన $x_1$, \\dots,~$x_n$\nపరామితులు గల ప్రమేయాన్ని రాయడానికి\n$\\lambd[x_1]["
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{rep}{cur}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{rep}{cur}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    }
+  ]
+}

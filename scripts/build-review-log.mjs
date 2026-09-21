@@ -287,6 +287,18 @@ locations['TE-T077']=[
  L('content/second-order-logic/sol-and-set-theory/power-of-continuum.tex',88,98,97,110,'The size of','అవిచ్ఛిన్న సమితి పరిమాణం'),
  L('content/second-order-logic/sol-and-set-theory/power-of-continuum.tex',131,139,147,156,'Continuum Hypothesis','అవిచ్ఛిన్న సమితి పరికల్పన')
 ];
+locations['TE-T078']=[
+ L('content/lambda-calculus/lambda-calculus.tex',7,7,7,7,'The Lambda Calculus','లాంబ్డా కలనశాస్త్రం'),
+ L('content/lambda-calculus/introduction/overview.tex',34,35,32,35,'lambda abstraction','లాంబ్డా అమూర్తీకరణ'),
+ L('content/lambda-calculus/introduction/overview.tex',55,58,53,56,'untyped','టైపులేని'),
+ L('content/lambda-calculus/introduction/syntax.tex',22,27,21,27,'applications','ప్రయోగాలు'),
+ L('content/lambda-calculus/introduction/syntax.tex',59,64,57,62,'alpha','తుల్యమైనవి'),
+ L('content/lambda-calculus/introduction/reduction.tex',13,23,12,24,'substituting','ప్రతిస్థాపన'),
+ L('content/lambda-calculus/introduction/reduction.tex',26,37,26,38,'\\beta$-contraction','\\beta$-సంకోచనం'),
+ L('content/lambda-calculus/introduction/church-rosser.tex',10,10,10,10,'Church--Rosser Property','చర్చ్--రోసర్ లక్షణం'),
+ L('content/lambda-calculus/introduction/church-rosser.tex',29,38,29,36,'equivalent','తుల్యమైనవి'),
+ L('content/lambda-calculus/introduction/currying.tex',10,18,10,18,'Currying','కరీకరణ')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -349,6 +361,7 @@ alternatives['TE-T074']=['reuse the established truth, formula, sentence, deriva
 alternatives['TE-T075']=['reuse the established set, relation, function, formula, sentence and semantic-consequence register while fixing the second-order extensions from the adjacent formation and satisfaction clauses (chosen)','leave the specialized second-order semantics and expressive-power headwords in untranslated English reader prose (rejected)','collapse relations, functions, relation variables and function variables into one undifferentiated category (rejected because the typing clauses distinguish them)','claim direct native attestation for standard second-order semantics, transitive closure or Dedekind infinitude (rejected because the frozen definitions, examples and proofs control those senses)'];
 alternatives['TE-T076']=['reuse the established arithmetic, induction, axiomatizability, compactness and Lowenheim--Skolem register while fixing the second-order failures from the adjacent axioms, reductions and countermodels (chosen)','leave the specialized metatheory and model-size headwords in untranslated English reader prose (rejected)','collapse undecidability, non-axiomatizability, non-compactness and Lowenheim--Skolem failure into one undifferentiated limitation (rejected because the proofs distinguish them)','claim direct native attestation for second-order categoricity or the upward and downward Lowenheim--Skolem compounds (rejected because the frozen axioms and countermodels control those senses)'];
 alternatives['TE-T077']=['reuse the established set, subset, power-set, relation, function, equinumerosity and cardinality register while fixing relation coding, aleph levels and the continuum from the adjacent corrected formulas (chosen)','leave the specialized set-theoretic headwords in untranslated English reader prose (rejected)','collapse ordinary cardinality, aleph-one and continuum cardinality into one undifferentiated size notion (rejected because the definitions distinguish them)','claim direct native attestation for relation-coded power sets, the aleph hierarchy or the Continuum Hypothesis (rejected because the corrected definitions and cardinality arguments control those senses)'];
+alternatives['TE-T078']=['reuse the established term, variable, substitution, function, argument, composition, equivalence and proof register while fixing lambda abstraction, reduction and confluence from the adjacent rules and theorem (chosen)','leave the specialized lambda-calculus vocabulary in untranslated English reader prose (rejected)','collapse alpha-equivalence, beta-reduction and beta-equivalence into one undifferentiated relation (rejected because the definitions distinguish them)','claim direct native attestation for redex, contractum, Church--Rosser or Currying (rejected because the frozen formation clauses, reductions and theorem control those senses)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -365,7 +378,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-21 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T077 record the Batch 025--Batch 038 consultations performed during reconciliation.';
+const phase='Evidence reconstruction through 2026-09-21 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T078 record the Batch 025--Batch 039 consultations performed during reconciliation.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);

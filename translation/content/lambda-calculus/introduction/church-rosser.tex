@@ -1,0 +1,38 @@
+% Part: lambda-calculus
+% Chapter: introduction
+% Section: church-rosser
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{int}{cr}
+\olsection{చర్చ్--రోసర్ లక్షణం}
+
+\begin{thm}
+\ollabel{thm:church-rosser}
+$M$, $N_1$, $N_2$ పదాలై, $M \red N_1$, $M \red N_2$ అనుకుందాం.
+అప్పుడు $N_1 \red P$, $N_2 \red P$ అయ్యే పదం $P$ ఒకటి ఉంటుంది.
+\end{thm}
+
+\begin{cor}
+$M$ను నియత రూపానికి తగ్గించవచ్చని అనుకుందాం. అప్పుడు ఈ నియత రూపం
+ఏకైకం.
+\end{cor}
+
+\begin{proof}
+$M \red N_1$, $M \red N_2$ అయితే, ముందున్న సిద్ధాంతం ప్రకారం $N_1$,
+$N_2$ రెండూ~$P$కు తగ్గేలా ఒక పదం~$P$ ఉంటుంది. $N_1$,~$N_2$ రెండూ
+నియత రూపంలో ఉంటే, $N_1 \ident P \ident N_2$ అయినప్పుడే ఇది సాధ్యం.
+\end{proof}
+
+చివరిగా, రెండు పదాలు $M$,~$N$ ఒకే పదానికి తగ్గితే, అంటే $M \red P$,
+$N \red P$ అయ్యే ఏదో $P$ ఉంటే, వాటిని \emph{$\beta$-తుల్యమైనవి}
+లేదా కేవలం \emph{తుల్యమైనవి} అంటాం. దీన్ని $M \equal[\beta] N$ అని
+రాస్తాం. $\equal[\beta]$ ఒక తుల్యతా సంబంధమనీ, అంతేకాక ప్రతి $M$,
+ప్రతి~$N$కు $M \red N$ లేదా $N \red M$ అయితే $M \equal[\beta] N$
+అనీ \olref{thm:church-rosser}ను ఉపయోగించి తనిఖీ చేయవచ్చు. (నిజానికి,
+ఈ లక్షణం గల \emph{అత్యల్ప} తుల్యతా సంబంధం $\equal[\beta]$ అని
+చూపవచ్చు.)
+
+\end{document}

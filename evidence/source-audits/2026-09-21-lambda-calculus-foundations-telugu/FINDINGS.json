@@ -1,0 +1,39 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTELAMINT-20260921",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": [
+      "OLP-0341",
+      "OLP-0342",
+      "OLP-0343",
+      "OLP-0344",
+      "OLP-0345",
+      "OLP-0346",
+      "OLP-0347"
+    ],
+    "finding_count": 1
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTELAMINT-001",
+      "unit_id": "OLP-0347",
+      "classification": "confirmed_currying_reduction_chain_and_body_variable_errors",
+      "source": {
+        "path": "content/lambda-calculus/introduction/currying.tex",
+        "bytes": 3104,
+        "sha256": "218fab4af4b5c2a49ffe9e7d4ffdc6bb2dd1f88046b71dad2097b5de62b1f5f9",
+        "locator": "lines 51-68, general n-argument Currying reduction"
+      },
+      "finding": "The displayed reduction ends its opening line with a beta-reduction arrow and begins the next line with another arrow, producing two consecutive relation symbols with no intervening term. Its final line then substitutes into an undefined P although the function body introduced immediately above is N.",
+      "controlling_evidence": "Successive beta contractions of the explicitly displayed abstraction begin with one reduction arrow before the first reduct and culminate in capture-avoiding substitution of every M_i for x_i in the stated body N; the prose immediately following the display confirms that the final expression is the body of the function definition.",
+      "required_translation_handling": "Remove the orphaned first-line reduction arrow, replace P by N in the final nested substitution, and add one adjacent OLTELAMINT-001 disclosure covering the coupled display repair."
+    }
+  ]
+}

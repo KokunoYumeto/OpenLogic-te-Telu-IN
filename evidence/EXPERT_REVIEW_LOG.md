@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 337 of 722 draft units**. This log contains 77 terminology/sense decisions and 287 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 344 of 722 draft units**. This log contains 78 terminology/sense decisions and 288 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1855,6 +1855,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low semantic uncertainty because the specialized notions are fixed by explicit corrected definitions, formulas and cardinality arguments; medium to high nomenclatural uncertainty for relation-coded power sets, the aleph hierarchy, continuum cardinality and the Continuum Hypothesis pending independent native specialist review
 
 - Please double-check: Please double-check whether “ద్వితీయ-స్థాయి తర్కం మరియు సమితి సిద్ధాంతం / సమితులను పోల్చడం / సమితుల పరిమాణాలు / సంబంధం ద్వారా సంకేతీకరించిన ఘాత సమితి / అలెఫ్-సున్నా మరియు అలెఫ్-ఒకటి / అవిచ్ఛిన్న సమితి పరిమాణం / అవిచ్ఛిన్న సమితి పరికల్పన” is idiomatic and technically standard for “second-order logic and set theory / comparing sets / cardinalities of sets / relation-coded power set / aleph-zero and aleph-one / cardinality of the continuum / Continuum Hypothesis” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T078 — lambda calculus / lambda abstraction / application / pure and untyped lambda calculus / bound and free variable / alpha-equivalence / substitution / beta-contraction / redex / contractum / beta-reduction and normal form / Church--Rosser property / beta-equivalence / Currying
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: mixed_provisional / high
+
+- Chosen wording/treatment: లాంబ్డా కలనశాస్త్రం / లాంబ్డా అమూర్తీకరణ / ప్రయోగం / శుద్ధ, టైపులేని లాంబ్డా కలనశాస్త్రం / బద్ధ, స్వేచ్ఛా చరం / ఆల్ఫా-తుల్యత / ప్రతిస్థాపన / బీటా-సంకోచనం / రెడెక్స్ / సంకోచిత ఫలితం (కాంట్రాక్టమ్) / బీటా-తగ్గింపు, నియత రూపం / చర్చ్--రోసర్ లక్షణం / బీటా-తుల్యత / కరీకరణ
+
+- Exact implementation: OLP-0341; lambda-calculus/lambda-calculus; content/lambda-calculus/lambda-calculus.tex:7 ↔ translation/content/lambda-calculus/lambda-calculus.tex:7 (OLP-0341-B004); printed/PDF page pending; OLP-0343; lambda-calculus/introduction/overview; content/lambda-calculus/introduction/overview.tex:33-37 ↔ translation/content/lambda-calculus/introduction/overview.tex:31-35 (OLP-0343-B007); printed/PDF page pending; OLP-0343; lambda-calculus/introduction/overview; content/lambda-calculus/introduction/overview.tex:47-58 ↔ translation/content/lambda-calculus/introduction/overview.tex:45-56 (OLP-0343-B009); printed/PDF page pending; OLP-0344; lambda-calculus/introduction/syntax; content/lambda-calculus/introduction/syntax.tex:12-23 ↔ translation/content/lambda-calculus/introduction/syntax.tex:12-22 (OLP-0344-B005); printed/PDF page pending; OLP-0344; lambda-calculus/introduction/syntax; content/lambda-calculus/introduction/syntax.tex:59-70 ↔ translation/content/lambda-calculus/introduction/syntax.tex:57-67 (OLP-0344-B010); printed/PDF page pending; OLP-0345; lambda-calculus/introduction/reduction; content/lambda-calculus/introduction/reduction.tex:12-19 ↔ translation/content/lambda-calculus/introduction/reduction.tex:12-19 (OLP-0345-B005); printed/PDF page pending; OLP-0345; lambda-calculus/introduction/reduction; content/lambda-calculus/introduction/reduction.tex:26-38 ↔ translation/content/lambda-calculus/introduction/reduction.tex:26-38 (OLP-0345-B007); printed/PDF page pending; OLP-0346; lambda-calculus/introduction/church-rosser; content/lambda-calculus/introduction/church-rosser.tex:9-10 ↔ translation/content/lambda-calculus/introduction/church-rosser.tex:9-10 (OLP-0346-B004); printed/PDF page pending; OLP-0346; lambda-calculus/introduction/church-rosser; content/lambda-calculus/introduction/church-rosser.tex:30-38 ↔ translation/content/lambda-calculus/introduction/church-rosser.tex:29-36 (OLP-0346-B008); printed/PDF page pending; OLP-0347; lambda-calculus/introduction/currying; content/lambda-calculus/introduction/currying.tex:9-10 ↔ translation/content/lambda-calculus/introduction/currying.tex:9-10 (OLP-0347-B004); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P025, PDF 87, printed 80, Indirect-proof heading and worked derivation; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P033, PDF 40, printed 33, Inference section heading and definition; TE-P034, PDF 308, printed 301, Main point 5, Cartesian product definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P005 supplies native natural-number exposition. TE-P008, TE-P010--TE-P011 and TE-P034 directly support sets, ordered pairs, relations, functions, arguments, inverse and composition. TE-P003, TE-P024--TE-P025 and TE-P032--TE-P033 support mathematical definition, formal derivation, theorem, proof and inference prose. TE-P018, TE-P027 and TE-P029 support formal-logic, term, variable, scope and bound-variable register in the pre-bifurcation logic witness retained through its Telangana-hosted copy. These witnesses do not directly attest lambda abstraction, alpha-equivalence, beta-contraction, redex, contractum, Church--Rosser confluence or Currying. The frozen formation clauses, capture-avoiding substitution description, reduction examples, Church--Rosser theorem and corrected multi-argument Currying display in OLP-0341--OLP-0347 control those exact senses; TE-T011, TE-T051, TE-T065--TE-T068 and TE-T074 supply the edition's earlier reversible choices. లాంబ్డా, ఆల్ఫా, బీటా, రెడెక్స్, కాంట్రాక్టమ్ and కరీకరణ are explicit technical borrowings, with సంకోచిత ఫలితం supplied alongside కాంట్రాక్టమ్; చర్చ్--రోసర్ is the source eponym. LISP and personal names are source proper names; protected lambda notation and metavariables remain unchanged.
+
+- Alternatives: reuse the established term, variable, substitution, function, argument, composition, equivalence and proof register while fixing lambda abstraction, reduction and confluence from the adjacent rules and theorem (chosen); leave the specialized lambda-calculus vocabulary in untranslated English reader prose (rejected); collapse alpha-equivalence, beta-reduction and beta-equivalence into one undifferentiated relation (rejected because the definitions distinguish them); claim direct native attestation for redex, contractum, Church--Rosser or Currying (rejected because the frozen formation clauses, reductions and theorem control those senses)
+
+- Uncertainty: Low semantic uncertainty because the specialized notions are fixed by explicit formation and reduction rules, examples and a confluence theorem; medium to high nomenclatural uncertainty for abstraction, redex/contractum, Church--Rosser and Currying terminology pending independent native specialist review
+
+- Please double-check: Please double-check whether “లాంబ్డా కలనశాస్త్రం / లాంబ్డా అమూర్తీకరణ / ప్రయోగం / శుద్ధ, టైపులేని లాంబ్డా కలనశాస్త్రం / బద్ధ, స్వేచ్ఛా చరం / ఆల్ఫా-తుల్యత / ప్రతిస్థాపన / బీటా-సంకోచనం / రెడెక్స్ / సంకోచిత ఫలితం (కాంట్రాక్టమ్) / బీటా-తగ్గింపు, నియత రూపం / చర్చ్--రోసర్ లక్షణం / బీటా-తుల్యత / కరీకరణ” is idiomatic and technically standard for “lambda calculus / lambda abstraction / application / pure and untyped lambda calculus / bound and free variable / alpha-equivalence / substitution / beta-contraction / redex / contractum / beta-reduction and normal form / Church--Rosser property / beta-equivalence / Currying” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -8743,3 +8767,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check that Aleph_1(X) quantifies over proper subsets and also requires X itself to be infinite and not of size aleph-zero.
+
+## REV-OLTELAMINT-001 — OLTELAMINT-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: removed the orphaned first-line beta-reduction arrow and restored N as the body receiving the final nested substitutions; adjacent sourcecorrection discloses the coupled repair
+
+- Exact implementation: OLP-0347; lambda-calculus/introduction/currying; lines 51-68, general n-argument Currying reduction ↔ translation/content/lambda-calculus/introduction/currying.tex:53-70 (OLP-0347-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMINT-20260921; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: removed the orphaned first-line beta-reduction arrow and restored N as the body receiving the final nested substitutions; adjacent sourcecorrection discloses the coupled repair
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMINT-001 is mathematically precise and idiomatic.

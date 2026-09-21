@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 337 of 722 draft units**. This view selects 338 of 364 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 344 of 722 draft units**. This view selects 340 of 366 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -513,6 +513,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0336; second-order-logic/sol-and-set-theory/sol-and-set-theory; translation/content/second-order-logic/sol-and-set-theory/sol-and-set-theory.tex:8; printed/PDF page pending; OLP-0338; second-order-logic/sol-and-set-theory/comparing-sets; translation/content/second-order-logic/sol-and-set-theory/comparing-sets.tex:11; printed/PDF page pending; OLP-0339; second-order-logic/sol-and-set-theory/cardinalities; translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:11; printed/PDF page pending; OLP-0339; second-order-logic/sol-and-set-theory/cardinalities; translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:48-68; printed/PDF page pending; OLP-0340; second-order-logic/sol-and-set-theory/power-of-continuum; translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:11; printed/PDF page pending; OLP-0340; second-order-logic/sol-and-set-theory/power-of-continuum; translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:49-56; printed/PDF page pending; OLP-0340; second-order-logic/sol-and-set-theory/power-of-continuum; translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:97-111; printed/PDF page pending; OLP-0340; second-order-logic/sol-and-set-theory/power-of-continuum; translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:147-152; printed/PDF page pending
 
 - Please double-check: Please double-check whether “ద్వితీయ-స్థాయి తర్కం మరియు సమితి సిద్ధాంతం / సమితులను పోల్చడం / సమితుల పరిమాణాలు / సంబంధం ద్వారా సంకేతీకరించిన ఘాత సమితి / అలెఫ్-సున్నా మరియు అలెఫ్-ఒకటి / అవిచ్ఛిన్న సమితి పరిమాణం / అవిచ్ఛిన్న సమితి పరికల్పన” is idiomatic and technically standard for “second-order logic and set theory / comparing sets / cardinalities of sets / relation-coded power set / aleph-zero and aleph-one / cardinality of the continuum / Continuum Hypothesis” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T078 — lambda calculus / lambda abstraction / application / pure and untyped lambda calculus / bound and free variable / alpha-equivalence / substitution / beta-contraction / redex / contractum / beta-reduction and normal form / Church--Rosser property / beta-equivalence / Currying
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: లాంబ్డా కలనశాస్త్రం / లాంబ్డా అమూర్తీకరణ / ప్రయోగం / శుద్ధ, టైపులేని లాంబ్డా కలనశాస్త్రం / బద్ధ, స్వేచ్ఛా చరం / ఆల్ఫా-తుల్యత / ప్రతిస్థాపన / బీటా-సంకోచనం / రెడెక్స్ / సంకోచిత ఫలితం (కాంట్రాక్టమ్) / బీటా-తగ్గింపు, నియత రూపం / చర్చ్--రోసర్ లక్షణం / బీటా-తుల్యత / కరీకరణ
+
+- Occurrences: OLP-0341; lambda-calculus/lambda-calculus; translation/content/lambda-calculus/lambda-calculus.tex:7; printed/PDF page pending; OLP-0343; lambda-calculus/introduction/overview; translation/content/lambda-calculus/introduction/overview.tex:31-35; printed/PDF page pending; OLP-0343; lambda-calculus/introduction/overview; translation/content/lambda-calculus/introduction/overview.tex:45-56; printed/PDF page pending; OLP-0344; lambda-calculus/introduction/syntax; translation/content/lambda-calculus/introduction/syntax.tex:12-22; printed/PDF page pending; OLP-0344; lambda-calculus/introduction/syntax; translation/content/lambda-calculus/introduction/syntax.tex:57-67; printed/PDF page pending; OLP-0345; lambda-calculus/introduction/reduction; translation/content/lambda-calculus/introduction/reduction.tex:12-19; printed/PDF page pending; OLP-0345; lambda-calculus/introduction/reduction; translation/content/lambda-calculus/introduction/reduction.tex:26-38; printed/PDF page pending; OLP-0346; lambda-calculus/introduction/church-rosser; translation/content/lambda-calculus/introduction/church-rosser.tex:9-10; printed/PDF page pending; OLP-0346; lambda-calculus/introduction/church-rosser; translation/content/lambda-calculus/introduction/church-rosser.tex:29-36; printed/PDF page pending; OLP-0347; lambda-calculus/introduction/currying; translation/content/lambda-calculus/introduction/currying.tex:9-10; printed/PDF page pending
+
+- Please double-check: Please double-check whether “లాంబ్డా కలనశాస్త్రం / లాంబ్డా అమూర్తీకరణ / ప్రయోగం / శుద్ధ, టైపులేని లాంబ్డా కలనశాస్త్రం / బద్ధ, స్వేచ్ఛా చరం / ఆల్ఫా-తుల్యత / ప్రతిస్థాపన / బీటా-సంకోచనం / రెడెక్స్ / సంకోచిత ఫలితం (కాంట్రాక్టమ్) / బీటా-తగ్గింపు, నియత రూపం / చర్చ్--రోసర్ లక్షణం / బీటా-తుల్యత / కరీకరణ” is idiomatic and technically standard for “lambda calculus / lambda abstraction / application / pure and untyped lambda calculus / bound and free variable / alpha-equivalence / substitution / beta-contraction / redex / contractum / beta-reduction and normal form / Church--Rosser property / beta-equivalence / Currying” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -3383,3 +3393,13 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0339; second-order-logic/sol-and-set-theory/cardinalities; translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:55-68; printed/PDF page pending
 
 - Please double-check: Please double-check that Aleph_1(X) quantifies over proper subsets and also requires X itself to be infinite and not of size aleph-zero.
+
+## REV-OLTELAMINT-001 — OLTELAMINT-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: removed the orphaned first-line beta-reduction arrow and restored N as the body receiving the final nested substitutions; adjacent sourcecorrection discloses the coupled repair
+
+- Occurrences: OLP-0347; lambda-calculus/introduction/currying; translation/content/lambda-calculus/introduction/currying.tex:53-70; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMINT-001 is mathematically precise and idiomatic.

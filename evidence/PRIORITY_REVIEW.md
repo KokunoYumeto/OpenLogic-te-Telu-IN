@@ -1,6 +1,6 @@
 # Priority review
 
-This view contains 55 of 364 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
+This view contains 56 of 366 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
 
 Final reader pages remain pending; exact source and target file/line locators are shown.
 
@@ -553,3 +553,13 @@ Final reader pages remain pending; exact source and target file/line locators ar
 - Occurrences: OLP-0336 translation/content/second-order-logic/sol-and-set-theory/sol-and-set-theory.tex:8; OLP-0338 translation/content/second-order-logic/sol-and-set-theory/comparing-sets.tex:11; OLP-0339 translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:11; OLP-0339 translation/content/second-order-logic/sol-and-set-theory/cardinalities.tex:48-68; OLP-0340 translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:11; OLP-0340 translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:49-56; OLP-0340 translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:97-111; OLP-0340 translation/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:147-152
 
 - Review question: Please double-check whether “ద్వితీయ-స్థాయి తర్కం మరియు సమితి సిద్ధాంతం / సమితులను పోల్చడం / సమితుల పరిమాణాలు / సంబంధం ద్వారా సంకేతీకరించిన ఘాత సమితి / అలెఫ్-సున్నా మరియు అలెఫ్-ఒకటి / అవిచ్ఛిన్న సమితి పరిమాణం / అవిచ్ఛిన్న సమితి పరికల్పన” is idiomatic and technically standard for “second-order logic and set theory / comparing sets / cardinalities of sets / relation-coded power set / aleph-zero and aleph-one / cardinality of the continuum / Continuum Hypothesis” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-TE-T078 — lambda calculus / lambda abstraction / application / pure and untyped lambda calculus / bound and free variable / alpha-equivalence / substitution / beta-contraction / redex / contractum / beta-reduction and normal form / Church--Rosser property / beta-equivalence / Currying
+
+- Chosen rendering: లాంబ్డా కలనశాస్త్రం / లాంబ్డా అమూర్తీకరణ / ప్రయోగం / శుద్ధ, టైపులేని లాంబ్డా కలనశాస్త్రం / బద్ధ, స్వేచ్ఛా చరం / ఆల్ఫా-తుల్యత / ప్రతిస్థాపన / బీటా-సంకోచనం / రెడెక్స్ / సంకోచిత ఫలితం (కాంట్రాక్టమ్) / బీటా-తగ్గింపు, నియత రూపం / చర్చ్--రోసర్ లక్షణం / బీటా-తుల్యత / కరీకరణ
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0341 translation/content/lambda-calculus/lambda-calculus.tex:7; OLP-0343 translation/content/lambda-calculus/introduction/overview.tex:31-35; OLP-0343 translation/content/lambda-calculus/introduction/overview.tex:45-56; OLP-0344 translation/content/lambda-calculus/introduction/syntax.tex:12-22; OLP-0344 translation/content/lambda-calculus/introduction/syntax.tex:57-67; OLP-0345 translation/content/lambda-calculus/introduction/reduction.tex:12-19; OLP-0345 translation/content/lambda-calculus/introduction/reduction.tex:26-38; OLP-0346 translation/content/lambda-calculus/introduction/church-rosser.tex:9-10; OLP-0346 translation/content/lambda-calculus/introduction/church-rosser.tex:29-36; OLP-0347 translation/content/lambda-calculus/introduction/currying.tex:9-10
+
+- Review question: Please double-check whether “లాంబ్డా కలనశాస్త్రం / లాంబ్డా అమూర్తీకరణ / ప్రయోగం / శుద్ధ, టైపులేని లాంబ్డా కలనశాస్త్రం / బద్ధ, స్వేచ్ఛా చరం / ఆల్ఫా-తుల్యత / ప్రతిస్థాపన / బీటా-సంకోచనం / రెడెక్స్ / సంకోచిత ఫలితం (కాంట్రాక్టమ్) / బీటా-తగ్గింపు, నియత రూపం / చర్చ్--రోసర్ లక్షణం / బీటా-తుల్యత / కరీకరణ” is idiomatic and technically standard for “lambda calculus / lambda abstraction / application / pure and untyped lambda calculus / bound and free variable / alpha-equivalence / substitution / beta-contraction / redex / contractum / beta-reduction and normal form / Church--Rosser property / beta-equivalence / Currying” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
