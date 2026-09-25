@@ -1,0 +1,258 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-25T03:26:47.630Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Text/intertext/mbox prose is masked; nested inline math is compared per clause independently of language-specific word order.",
+  "units": [
+    {
+      "unit_id": "OLP-0363",
+      "source_path": "content/lambda-calculus/syntax/de-bruijn.tex",
+      "source_sha256": "7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35",
+      "translation_sha256": "d5815059f8d7c3239f55dc9c1fc23c20e816190038d3666ca42f39ac486ed90c",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{syn}{deb}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{syn}{deb}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\alpha$",
+        "$\\alpha$",
+        "$\\alpha$",
+        "$\\lambd[x][M]$",
+        "$x$",
+        "$x$",
+        "$M$",
+        "$\\lambd[x][\\lambd[y][yx]]$",
+        "$x$",
+        "$y$",
+        "$yx$",
+        "$y$",
+        "$\\lambd[y]$",
+        "$x$",
+        "$\\lambd[x]$",
+        "$0\\,1$",
+        "$yx$",
+        "$\\lambd[][\\lambd[][01]]$",
+        "$n$",
+        "$n$",
+        "$PQ$",
+        "$P$",
+        "$Q$",
+        "$\\lambd[][N]$",
+        "$N$",
+        "\\begin{align*}F_\\Gamma(x)&=\\Gamma(x)\\\\F_\\Gamma(PQ)&=F_\\Gamma(P)F_\\Gamma(Q)\\\\F_\\Gamma(\\lambd[x][N])&=\\lambd[][F_{x,\\Gamma}(N)]\\end{align*}",
+        "$\\Gamma$",
+        "$\\Gamma(x)$",
+        "$x$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$x,y,z$",
+        "$\\Gamma(x)$",
+        "$0$",
+        "$\\Gamma(z)$",
+        "$2$",
+        "$x,\\Gamma$",
+        "$x$",
+        "$\\Gamma$",
+        "$\\Gamma$",
+        "$w,\\Gamma$",
+        "$w,x,y,z$",
+        "\\begin{align*}G_\\Gamma(n)&=\\Gamma[n]\\\\G_\\Gamma(PQ)&=G_\\Gamma(P)G_\\Gamma(Q)\\\\G_\\Gamma(\\lambd[][N])&=\\lambd[x][G_{x,\\Gamma}(N)]\\end{align*}",
+        "$\\Gamma$",
+        "$\\Gamma[n]$",
+        "$n$",
+        "$\\Gamma$",
+        "$x,y,z$",
+        "$\\Gamma[1]$",
+        "$y$",
+        "$x$",
+        "$\\Gamma$",
+        "$M\\aconvoneM'$",
+        "$\\Gamma$",
+        "$\\FV{M}$",
+        "$F_\\Gamma(M)\\eqsF_\\Gamma(M')$"
+      ],
+      "math_target_core": [
+        "$\\alpha$",
+        "$\\alpha$",
+        "$\\alpha$",
+        "$\\lambd[x][M]$",
+        "$x$",
+        "$M$",
+        "$x$",
+        "$\\lambd[x][\\lambd[y][yx]]$",
+        "$x$",
+        "$y$",
+        "$yx$",
+        "$y$",
+        "$\\lambd[y]$",
+        "$x$",
+        "$\\lambd[x]$",
+        "$yx$",
+        "$0\\,1$",
+        "$\\lambd[][\\lambd[][0\\,1]]$",
+        "$n$",
+        "$n$",
+        "$PQ$",
+        "$P$",
+        "$Q$",
+        "$\\lambd[][N]$",
+        "$N$",
+        "\\begin{align*}F_\\Gamma(x)&=\\Gamma(x)\\\\F_\\Gamma(PQ)&=F_\\Gamma(P)F_\\Gamma(Q)\\\\F_\\Gamma(\\lambd[x][N])&=\\lambd[][F_{x,\\Gamma}(N)]\\end{align*}",
+        "$\\Gamma$",
+        "$\\Gamma(x)$",
+        "$\\Gamma$",
+        "$x$",
+        "$\\Gamma$",
+        "$x,y,z$",
+        "$\\Gamma(x)$",
+        "$0$",
+        "$\\Gamma(z)$",
+        "$2$",
+        "$x,\\Gamma$",
+        "$\\Gamma$",
+        "$x$",
+        "$\\Gamma$",
+        "$w,\\Gamma$",
+        "$w,x,y,z$",
+        "\\begin{align*}G_\\Gamma(n)&=\\Gamma[n]\\\\G_\\Gamma(PQ)&=G_\\Gamma(P)G_\\Gamma(Q)\\\\G_\\Gamma(\\lambd[][N])&=\\lambd[x][G_{x,\\Gamma}(N)]\\end{align*}",
+        "$\\Gamma$",
+        "$\\Gamma[n]$",
+        "$n$",
+        "$\\Gamma$",
+        "$x,y,z$",
+        "$\\Gamma[1]$",
+        "$y$",
+        "$x$",
+        "$\\Gamma$",
+        "$n$",
+        "$G_\\Gamma(n)$",
+        "$M\\aconvoneM'$",
+        "$\\Gamma$",
+        "$\\FV{M}$",
+        "$F_\\Gamma(M)\\eqsF_\\Gamma(M')$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$\\lambd[][\\lambd[][01]]$"
+      ],
+      "math_delta_target_only": [
+        "$G_\\Gamma(n)$",
+        "$\\lambd[][\\lambd[][0\\,1]]$",
+        "$n$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTELAMDEB-001",
+        "OLTELAMDEB-002",
+        "OLTELAMDEB-003"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1989,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: syntax\n% Section: de-bruijn",
+          "target_start": "% Part: lambda-calculus\n% Chapter: syntax\n% Section: de-bruijn"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{syn}{deb}",
+          "target_start": "\\olfileid{lam}{syn}{deb}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{The De Bruijn Index}",
+          "target_start": "\\olsection{డి బ్రూయిన్ సూచిక}"
+        },
+        {
+          "index": 6,
+          "source_start": "$\\alpha$-Equivalence is very natural, as terms that are\n$\\alpha$-equivalent ``mean the same.'' In fact, it is ",
+          "target_start": "$\\alpha$-తుల్యత సహజమైన భావన: $\\alpha$-తుల్య పదాలకు ఒకే\nఅర్థం ఉంటుంది. ఒకదానిగా మరొకటి $\\alpha$-పరివర్తనం చెందగ"
+        },
+        {
+          "index": 7,
+          "source_start": "When we write $\\lambd[x][M]$, we explicitly state that $x$ is the\nparameter of the function, so that we can us",
+          "target_start": "$\\lambd[x][M]$ అని రాస్తే, ప్రమేయపు పరామితి~$x$ అని స్పష్టంగా\nచెబుతున్నాం; కాబట్టి $M$లో $x$తో ఆ పరామితిని సూచ"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{defn}\n  De Bruijn terms are inductively defines as follows:\n  \\begin{enumerate}\n  \\item $n$, where $n$ ",
+          "target_start": "\\begin{defn}\n  డి బ్రూయిన్ పదాలను ఆగమన పద్ధతిలో ఇలా నిర్వచిస్తాం:\n  \\begin{enumerate}\n  \\item $n$, ఇక్కడ $n$ ఏ"
+        },
+        {
+          "index": 9,
+          "source_start": "A formalized translation from ordinary lambda terms to De Bruijn\nindexed terms is as follows:\n\\begin{defn}\n  \\",
+          "target_start": "సాధారణ లాంబ్డా పదాల నుంచి డి బ్రూయిన్ సూచికలతో కూడిన పదాలకు\nఒక ఆచారబద్ధ అనువాదం ఇలా ఉంటుంది:\n\\begin{defn}\n  \\b"
+        },
+        {
+          "index": 10,
+          "source_start": "  $x,\\Gamma$ denotes the list resulted from pushing $x$ to the head of\n  $\\Gamma$; for instance, continuing th",
+          "target_start": "  $x,\\Gamma$ అంటే $\\Gamma$ తలలో $x$ను చేర్చి పొందిన జాబితా.\n  ఉదాహరణకు పైన ఉన్న $\\Gamma$కే కొనసాగింపుగా\n  $w,\\"
+        },
+        {
+          "index": 11,
+          "source_start": "Recovering a standard lambda term from a de Bruijn term is done as\nfollows:",
+          "target_start": "డి బ్రూయిన్ పదం నుంచి సాధారణ లాంబ్డా పదాన్ని తిరిగి ఇలా పొందుతాం:"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{defn}\n  \\begin{align*}\n    G_\\Gamma(n) &= \\Gamma[n] \\\\\n    G_\\Gamma(PQ) &= G_\\Gamma(P) G_\\Gamma(Q) \\\\\n ",
+          "target_start": "\\begin{defn}\n  \\begin{align*}\n    G_\\Gamma(n) &= \\Gamma[n] \\\\\n    G_\\Gamma(PQ) &= G_\\Gamma(P) G_\\Gamma(Q) \\\\\n "
+        },
+        {
+          "index": 13,
+          "source_start": "  The variable $x$ in last equation is chosen to be any variable that\n  not in $\\Gamma$.\n\\end{defn}",
+          "target_start": "  చివరి సమీకరణంలో $x$ను $\\Gamma$లో లేని ఏ చరంగానైనా\n  ఎంచుకుంటాం. అలాగే $n$ జాబితా పరిధిలో లేని చోట\n  $G_\\Gamm"
+        },
+        {
+          "index": 14,
+          "source_start": "Here we give some results without proving them:",
+          "target_start": "నిరూపణలు ఇవ్వకుండా కొన్ని ఫలితాలను ఇక్కడ పేర్కొంటాం:"
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{prop}\n  If $M \\aconvone M'$, and $\\Gamma$ is any list containing $\\FV{M}$, then\n  $F_\\Gamma(M) \\eqs F_\\",
+          "target_start": "\\begin{prop}\n  $M \\aconvone M'$, $\\Gamma$ అనేది $\\FV{M}$లోని\n  చరాలన్నీ ఉన్న ఏ జాబితా అయినా, అప్పుడు\n  $F_\\Gam"
+        },
+        {
+          "index": 16,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{syn}{deb}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{syn}{deb}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    }
+  ]
+}

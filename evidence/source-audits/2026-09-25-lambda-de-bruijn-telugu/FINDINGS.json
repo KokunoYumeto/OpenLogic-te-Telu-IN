@@ -1,0 +1,46 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTELAMDEB-20260925",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": ["OLP-0363"],
+    "finding_count": 3
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "source_file": {
+    "path": "content/lambda-calculus/syntax/de-bruijn.tex",
+    "bytes": 2956,
+    "sha256": "7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTELAMDEB-001",
+      "classification": "garbled_english_binder_explanation_and_ambiguous_index_application",
+      "source_locator": "lines 19-29, nested abstraction example",
+      "finding": "బాహ్య, అంతర అమూర్తీకరణల గురించి మూల ఆంగ్ల వాక్యాలు వ్యాకరణపరంగా చెడిపోయాయి; అదే ఉదాహరణ ఉపపదాన్ని 0, 1 మధ్య ఖాళీతో చూపి మొత్తం పదంలో 01గా కలిపి చూపుతుంది.",
+      "controlling_evidence": "lambda x.lambda y.(y x)లో yకు సూచిక 0, xకు సూచిక 1; ఉపపదంలోని రెండు సంఖ్యా సూచికలు ప్రయోగంతో కలుస్తాయి, ఒకే 01 అనే సూచిక కాదు.",
+      "required_translation_handling": "బాహ్య అమూర్తీకరణ xను, అంతర అమూర్తీకరణ yను బంధిస్తాయని సహజ తెలుగు వాక్యంతో ఇవ్వాలి; మొత్తం పదంలో 0, 1లను విడదీసి మూల సంకేత భేదాన్ని ప్రకటించాలి."
+    },
+    {
+      "finding_id": "OLTELAMDEB-002",
+      "classification": "unspecified_first_occurrence_for_shadowed_variable",
+      "source_locator": "lines 42-55, F_Gamma definition and pushed context",
+      "finding": "Gamma(x)ను జాబితాలో x స్థానమని మాత్రమే మూలం చెబుతుంది. x,Gammaలో అదే చరం పాత Gammaలోనూ ఉంటే ఒకటి కంటే ఎక్కువ స్థానాలు ఉంటాయి.",
+      "controlling_evidence": "లోపలి lambda x బాహ్య lambda xను కప్పినప్పుడు కొత్తగా తలలో చేర్చిన xకు సూచిక 0 కావాలి; అందుకే తొలి/కనిష్ఠ సూచిక ఘటన అవసరం.",
+      "required_translation_handling": "Gamma(x)గా తొలి ఘటన స్థానాన్ని తీసుకుంటామని స్పష్టంచేసి మూలంలో అది చెప్పలేదని ప్రకటించాలి."
+    },
+    {
+      "finding_id": "OLTELAMDEB-003",
+      "classification": "reverse_map_partial_for_out_of_range_indices",
+      "source_locator": "lines 31-37 and 61-73, unrestricted grammar versus G_Gamma definition",
+      "finding": "నిర్మాణ నియమం ప్రతి సహజ సంఖ్యను డి బ్రూయిన్ పదంగా అనుమతిస్తుంది; కానీ G_Gamma(n)=Gamma[n] అనేది n జాబితా పొడవుకంటే తక్కువగా ఉన్నప్పుడే నిర్వచితం.",
+      "controlling_evidence": "Gamma[n] అనేది nవ స్థానంలోని చరం; జాబితాలో ఆ స్థానం లేకపోతే అది నిర్వచితం కాదు.",
+      "required_translation_handling": "G_Gamma పాక్షికమని, తగిన సూచికలున్న పదాలకే తిరుగు అనువాదం వర్తిస్తుందని ప్రకటించాలి; మూల సమీకరణం అలాగే ఉంచాలి."
+    }
+  ]
+}

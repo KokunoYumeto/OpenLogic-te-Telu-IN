@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **359 of 722 source units drafted**. This readable view contains all 396 decisions and 742 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **360 of 722 source units drafted**. This readable view contains all 400 decisions and 750 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2403,6 +2403,35 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T082-OCC-002; OLP-0362; OLP-0362-B007; source upstream/content/lambda-calculus/syntax/alpha.tex:29-37 bytes 910-1233 SHA-256 f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda; target translation/content/lambda-calculus/syntax/alpha.tex:29-37 bytes 2127-2592 SHA-256 8c842c4303c45fb1fd2cad5daf82ced84ace967c1d55af2e2e68785e3ee148bb; reader page pending.
   - te-Telu-IN-TE-T082-OCC-003; OLP-0362; OLP-0362-B012; source upstream/content/lambda-calculus/syntax/alpha.tex:72-75 bytes 2623-2805 SHA-256 f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda; target translation/content/lambda-calculus/syntax/alpha.tex:73-76 bytes 4800-5112 SHA-256 8c842c4303c45fb1fd2cad5daf82ced84ace967c1d55af2e2e68785e3ee148bb; reader page pending.
   - te-Telu-IN-TE-T082-OCC-004; OLP-0362; OLP-0362-B019; source upstream/content/lambda-calculus/syntax/alpha.tex:116-145 bytes 4275-5404 SHA-256 f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda; target translation/content/lambda-calculus/syntax/alpha.tex:120-153 bytes 7832-10120 SHA-256 8c842c4303c45fb1fd2cad5daf82ced84ace967c1d55af2e2e68785e3ee148bb; reader page pending.
+
+## te-Telu-IN-TE-T083 — De Bruijn index / indexed nameless term / context list / nearest binder / reverse translation partiality
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: డి బ్రూయిన్ సూచిక / పేరులేని సూచికా పదం / చరాల సందర్భ జాబితా / దగ్గరి బంధకం / పాక్షిక తిరుగు అనువాదం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “De Bruijn index / indexed nameless term / context list / nearest binder / reverse translation partiality” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: సూచికల గణన ఉదాహరణతో స్పష్టం; డి బ్రూయిన్, సందర్భ జాబితా అనే తెలుగు నామాల్లో మధ్యస్థ అనిశ్చితి ఉంది. జాబితా-పొడవు మించిన సూచికలపై G నిర్వచితం కాదు అనే పరిమితిని తప్పక ఉంచాలి.
+
+- Rationale: TE-P027లో చరాలు, పదాలు; TE-P029లో బద్ధ చరం, పరిధి; TE-P008లో సమితి, ప్రమేయం; TE-P003, TE-P032లో నిర్వచనం, ఆగమన వివరణ ప్రత్యక్షంగా ఉన్నాయి. ఈ పేజీలు డి బ్రూయిన్ సూచికలను నేరుగా బోధించవు. OLP-0363లోని F, G సమీకరణాలు, 0/1 ఉదాహరణ ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి. OLTELAMDEB-001–003లో మూల సంకేత అస్పష్టత, సందర్భ జాబితా, తిరుగు పటం పరిధి స్పష్టంచేయబడ్డాయి; TE-T078, TE-T080–082 గత లాంబ్డా పదజాలంతో స్థిరత్వాన్ని ఇస్తాయి. డి బ్రూయిన్ అనేది మూలంలో ఉన్న వ్యక్తి పేరు; F, G, Γ, n మరియు λలు గణిత సంకేతాలు, వాటిని అనువదించలేదు.
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: స్థానిక పదం, చరం, బంధనం, ప్రమేయ భాషతో మూల F/G సమీకరణాలను కలిపి డి బ్రూయిన్ సూచికకు వివరణ ఇవ్వడం [viable_alternative: ఎంపిక] | 01ను ఒకే సంఖ్యా సూచికగా చదవడం [viable_alternative: తిరస్కరణ] | Gammaలో పలుసార్లు వచ్చే చరానికి ఏ స్థానమైనా తీసుకోవడం [viable_alternative: తిరస్కరణ] | పరిధికి బయట సూచికలకూ G నిర్వచితమని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “డి బ్రూయిన్ సూచిక / పేరులేని సూచికా పదం / చరాల సందర్భ జాబితా / దగ్గరి బంధకం / పాక్షిక తిరుగు అనువాదం” is idiomatic and technically standard for “De Bruijn index / indexed nameless term / context list / nearest binder / reverse translation partiality” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T083-OCC-001; OLP-0363; OLP-0363-B005; source upstream/content/lambda-calculus/syntax/de-bruijn.tex:11 bytes 171-203 SHA-256 7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35; target translation/content/lambda-calculus/syntax/de-bruijn.tex:11 bytes 171-231 SHA-256 d5815059f8d7c3239f55dc9c1fc23c20e816190038d3666ca42f39ac486ed90c; reader page pending.
+  - te-Telu-IN-TE-T083-OCC-002; OLP-0363; OLP-0363-B008; source upstream/content/lambda-calculus/syntax/de-bruijn.tex:31-38 bytes 1266-1540 SHA-256 7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35; target translation/content/lambda-calculus/syntax/de-bruijn.tex:33-40 bytes 3198-3684 SHA-256 d5815059f8d7c3239f55dc9c1fc23c20e816190038d3666ca42f39ac486ed90c; reader page pending.
+  - te-Telu-IN-TE-T083-OCC-003; OLP-0363; OLP-0363-B009; source upstream/content/lambda-calculus/syntax/de-bruijn.tex:40-51 bytes 1541-2034 SHA-256 7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35; target translation/content/lambda-calculus/syntax/de-bruijn.tex:42-56 bytes 3685-5443 SHA-256 d5815059f8d7c3239f55dc9c1fc23c20e816190038d3666ca42f39ac486ed90c; reader page pending.
+  - te-Telu-IN-TE-T083-OCC-004; OLP-0363; OLP-0363-B012; source upstream/content/lambda-calculus/syntax/de-bruijn.tex:61-69 bytes 2291-2656 SHA-256 7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35; target translation/content/lambda-calculus/syntax/de-bruijn.tex:65-73 bytes 5891-6404 SHA-256 d5815059f8d7c3239f55dc9c1fc23c20e816190038d3666ca42f39ac486ed90c; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -10645,3 +10674,82 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTELAMALP-007-OCC-001; OLP-0362; OLP-0362-B037; source upstream/content/lambda-calculus/syntax/alpha.tex:270-276 bytes 9726-10053 SHA-256 f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda; target translation/content/lambda-calculus/syntax/alpha.tex:291 bytes 19619-20456 SHA-256 8c842c4303c45fb1fd2cad5daf82ced84ace967c1d55af2e2e68785e3ee148bb; reader page pending.
+
+## te-Telu-IN-OLTELAMDEB-001 — OLTELAMDEB-001: garbled english binder explanation and ambiguous index application
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: rephrased garbled English binder prose and distinguished the two zero and one indices inside the whole term, with adjacent disclosure
+
+- Intended sense: Repair the audited garbled english binder explanation and ambiguous index application at lines 19-29, nested abstraction example, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMDEB-20260925:OLTELAMDEB-001 [checked_supports], content/lambda-calculus/syntax/de-bruijn.tex; lines 19-29, nested abstraction example; garbled_english_binder_explanation_and_ambiguous_index_application; rephrased garbled English binder prose and distinguished the two zero and one indices inside the whole term, with adjacent disclosure.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: మొత్తం పదంలోని రెండు సంఖ్యా సూచికలు 0, 1ల ప్రయోగమేనని, ఒక్క 01 సూచిక కాదని స్పష్టమా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMDEB-001-OCC-001; OLP-0363; OLP-0363-B007; source upstream/content/lambda-calculus/syntax/de-bruijn.tex:19-29 bytes 504-1265 SHA-256 7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35; target translation/content/lambda-calculus/syntax/de-bruijn.tex:31 bytes 2372-3197 SHA-256 d5815059f8d7c3239f55dc9c1fc23c20e816190038d3666ca42f39ac486ed90c; reader page pending.
+
+## te-Telu-IN-OLTELAMDEB-002 — OLTELAMDEB-002: unspecified first occurrence for shadowed variable
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: specified the first occurrence in a shadowing context, with adjacent disclosure
+
+- Intended sense: Repair the audited unspecified first occurrence for shadowed variable at lines 42-55, F_Gamma definition and pushed context, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMDEB-20260925:OLTELAMDEB-002 [checked_supports], content/lambda-calculus/syntax/de-bruijn.tex; lines 42-55, F_Gamma definition and pushed context; unspecified_first_occurrence_for_shadowed_variable; specified the first occurrence in a shadowing context, with adjacent disclosure.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: ఒకే చరం సందర్భ జాబితాలో పలుసార్లు ఉంటే దగ్గరి బంధకానికి చెందిన తొలి ఘటన స్థానం తీసుకోవడం సరిగ్గా వివరించబడిందా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMDEB-002-OCC-001; OLP-0363; OLP-0363-B009; source upstream/content/lambda-calculus/syntax/de-bruijn.tex:42-55 bytes 1635-2202 SHA-256 7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35; target translation/content/lambda-calculus/syntax/de-bruijn.tex:56 bytes 4722-5443 SHA-256 d5815059f8d7c3239f55dc9c1fc23c20e816190038d3666ca42f39ac486ed90c; reader page pending.
+
+## te-Telu-IN-OLTELAMDEB-003 — OLTELAMDEB-003: reverse map partial for out of range indices
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: specified the partial domain of the inverse map G for out-of-range indices, with adjacent disclosure
+
+- Intended sense: Repair the audited reverse map partial for out of range indices at lines 31-37 and 61-73, unrestricted grammar versus G_Gamma definition, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMDEB-20260925:OLTELAMDEB-003 [checked_supports], content/lambda-calculus/syntax/de-bruijn.tex; lines 31-37 and 61-73, unrestricted grammar versus G_Gamma definition; reverse_map_partial_for_out_of_range_indices; specified the partial domain of the inverse map G for out-of-range indices, with adjacent disclosure.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: జాబితా పరిధి మించిన సూచికలపై G తిరుగు పటం నిర్వచితం కాదని, మూల సమీకరణం మారలేదని స్పష్టమా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMDEB-003-OCC-001; OLP-0363; OLP-0363-B008; source upstream/content/lambda-calculus/syntax/de-bruijn.tex:31-37 bytes 1266-1529 SHA-256 7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35; target translation/content/lambda-calculus/syntax/de-bruijn.tex:79 bytes 6901-7442 SHA-256 d5815059f8d7c3239f55dc9c1fc23c20e816190038d3666ca42f39ac486ed90c; reader page pending.
+  - te-Telu-IN-OLTELAMDEB-003-OCC-002; OLP-0363; OLP-0363-B012; source upstream/content/lambda-calculus/syntax/de-bruijn.tex:61-73 bytes 2291-2757 SHA-256 7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35; target translation/content/lambda-calculus/syntax/de-bruijn.tex:79 bytes 6901-7442 SHA-256 d5815059f8d7c3239f55dc9c1fc23c20e816190038d3666ca42f39ac486ed90c; reader page pending.

@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 359 of 722 draft units**. This log contains 82 terminology/sense decisions and 314 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 360 of 722 draft units**. This log contains 83 terminology/sense decisions and 317 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1975,6 +1975,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: నిర్వచనాల ఆధారంగా ప్రాథమిక భావార్థం స్పష్టం; ఆల్ఫా-పరివర్తనం, అనుకూలత్వం అనే ప్రత్యేక తెలుగు నామాల్లో మధ్యస్థ అనిశ్చితి ఉంది. చివరి ప్రతిస్థాపన సిద్ధాంతపు మూల నిరూపణ అసంపూర్ణం; దాన్ని పదజాల నిర్ణయం నిరూపించదు.
 
 - Please double-check: Please double-check whether “ఆల్ఫా-పరివర్తనం / ఆల్ఫా-తుల్యత / బద్ధ చరం పేరు మార్పు / అనుకూల సంబంధం / స్వప్రావర్తక, సౌష్టవ, సంక్రమణ సంబంధం / వ్యుత్పత్తి” is idiomatic and technically standard for “alpha-conversion / alpha-equivalence / one-step bound-variable renaming / compatible relation / reflexive, symmetric and transitive relation / derivation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T083 — De Bruijn index / indexed nameless term / context list / nearest binder / reverse translation partiality
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: డి బ్రూయిన్ సూచిక / పేరులేని సూచికా పదం / చరాల సందర్భ జాబితా / దగ్గరి బంధకం / పాక్షిక తిరుగు అనువాదం
+
+- Exact implementation: OLP-0363; lambda-calculus/syntax/de-bruijn; content/lambda-calculus/syntax/de-bruijn.tex:11 ↔ translation/content/lambda-calculus/syntax/de-bruijn.tex:11 (OLP-0363-B005); printed/PDF page pending; OLP-0363; lambda-calculus/syntax/de-bruijn; content/lambda-calculus/syntax/de-bruijn.tex:31-38 ↔ translation/content/lambda-calculus/syntax/de-bruijn.tex:33-40 (OLP-0363-B008); printed/PDF page pending; OLP-0363; lambda-calculus/syntax/de-bruijn; content/lambda-calculus/syntax/de-bruijn.tex:40-51 ↔ translation/content/lambda-calculus/syntax/de-bruijn.tex:42-56 (OLP-0363-B009); printed/PDF page pending; OLP-0363; lambda-calculus/syntax/de-bruijn; content/lambda-calculus/syntax/de-bruijn.tex:61-69 ↔ translation/content/lambda-calculus/syntax/de-bruijn.tex:65-73 (OLP-0363-B012); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P027లో చరాలు, పదాలు; TE-P029లో బద్ధ చరం, పరిధి; TE-P008లో సమితి, ప్రమేయం; TE-P003, TE-P032లో నిర్వచనం, ఆగమన వివరణ ప్రత్యక్షంగా ఉన్నాయి. ఈ పేజీలు డి బ్రూయిన్ సూచికలను నేరుగా బోధించవు. OLP-0363లోని F, G సమీకరణాలు, 0/1 ఉదాహరణ ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి. OLTELAMDEB-001–003లో మూల సంకేత అస్పష్టత, సందర్భ జాబితా, తిరుగు పటం పరిధి స్పష్టంచేయబడ్డాయి; TE-T078, TE-T080–082 గత లాంబ్డా పదజాలంతో స్థిరత్వాన్ని ఇస్తాయి. డి బ్రూయిన్ అనేది మూలంలో ఉన్న వ్యక్తి పేరు; F, G, Γ, n మరియు λలు గణిత సంకేతాలు, వాటిని అనువదించలేదు.
+
+- Alternatives: స్థానిక పదం, చరం, బంధనం, ప్రమేయ భాషతో మూల F/G సమీకరణాలను కలిపి డి బ్రూయిన్ సూచికకు వివరణ ఇవ్వడం (ఎంపిక); 01ను ఒకే సంఖ్యా సూచికగా చదవడం (తిరస్కరణ); Gammaలో పలుసార్లు వచ్చే చరానికి ఏ స్థానమైనా తీసుకోవడం (తిరస్కరణ); పరిధికి బయట సూచికలకూ G నిర్వచితమని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: సూచికల గణన ఉదాహరణతో స్పష్టం; డి బ్రూయిన్, సందర్భ జాబితా అనే తెలుగు నామాల్లో మధ్యస్థ అనిశ్చితి ఉంది. జాబితా-పొడవు మించిన సూచికలపై G నిర్వచితం కాదు అనే పరిమితిని తప్పక ఉంచాలి.
+
+- Please double-check: Please double-check whether “డి బ్రూయిన్ సూచిక / పేరులేని సూచికా పదం / చరాల సందర్భ జాబితా / దగ్గరి బంధకం / పాక్షిక తిరుగు అనువాదం” is idiomatic and technically standard for “De Bruijn index / indexed nameless term / context list / nearest binder / reverse translation partiality” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -9511,3 +9535,75 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: ఉపసిద్ధాంతంలో రెండవ జతకు ఆల్ఫా-తుల్యత, నిర్వచితత్వం పరికల్పనలు రెండూ పునరుద్ధరించబడ్డాయా?
+
+## REV-OLTELAMDEB-001 — OLTELAMDEB-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: rephrased garbled English binder prose and distinguished the two zero and one indices inside the whole term, with adjacent disclosure
+
+- Exact implementation: OLP-0363; lambda-calculus/syntax/de-bruijn; lines 19-29, nested abstraction example ↔ translation/content/lambda-calculus/syntax/de-bruijn.tex:31 (OLP-0363-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMDEB-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: rephrased garbled English binder prose and distinguished the two zero and one indices inside the whole term, with adjacent disclosure
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: మొత్తం పదంలోని రెండు సంఖ్యా సూచికలు 0, 1ల ప్రయోగమేనని, ఒక్క 01 సూచిక కాదని స్పష్టమా?
+
+## REV-OLTELAMDEB-002 — OLTELAMDEB-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: specified the first occurrence in a shadowing context, with adjacent disclosure
+
+- Exact implementation: OLP-0363; lambda-calculus/syntax/de-bruijn; lines 42-55, F_Gamma definition and pushed context ↔ translation/content/lambda-calculus/syntax/de-bruijn.tex:56 (OLP-0363-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMDEB-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: specified the first occurrence in a shadowing context, with adjacent disclosure
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: ఒకే చరం సందర్భ జాబితాలో పలుసార్లు ఉంటే దగ్గరి బంధకానికి చెందిన తొలి ఘటన స్థానం తీసుకోవడం సరిగ్గా వివరించబడిందా?
+
+## REV-OLTELAMDEB-003 — OLTELAMDEB-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: specified the partial domain of the inverse map G for out-of-range indices, with adjacent disclosure
+
+- Exact implementation: OLP-0363; lambda-calculus/syntax/de-bruijn; lines 31-37 and 61-73, unrestricted grammar versus G_Gamma definition ↔ translation/content/lambda-calculus/syntax/de-bruijn.tex:79 (OLP-0363-B013); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMDEB-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: specified the partial domain of the inverse map G for out-of-range indices, with adjacent disclosure
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: జాబితా పరిధి మించిన సూచికలపై G తిరుగు పటం నిర్వచితం కాదని, మూల సమీకరణం మారలేదని స్పష్టమా?

@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 359 of 722 draft units**. This view selects 367 of 396 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 360 of 722 draft units**. This view selects 370 of 400 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -3673,3 +3673,33 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0362; lambda-calculus/syntax/alpha; translation/content/lambda-calculus/syntax/alpha.tex:291; printed/PDF page pending
 
 - Please double-check: Please double-check: ఉపసిద్ధాంతంలో రెండవ జతకు ఆల్ఫా-తుల్యత, నిర్వచితత్వం పరికల్పనలు రెండూ పునరుద్ధరించబడ్డాయా?
+
+## REV-OLTELAMDEB-001 — OLTELAMDEB-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: rephrased garbled English binder prose and distinguished the two zero and one indices inside the whole term, with adjacent disclosure
+
+- Occurrences: OLP-0363; lambda-calculus/syntax/de-bruijn; translation/content/lambda-calculus/syntax/de-bruijn.tex:31; printed/PDF page pending
+
+- Please double-check: Please double-check: మొత్తం పదంలోని రెండు సంఖ్యా సూచికలు 0, 1ల ప్రయోగమేనని, ఒక్క 01 సూచిక కాదని స్పష్టమా?
+
+## REV-OLTELAMDEB-002 — OLTELAMDEB-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: specified the first occurrence in a shadowing context, with adjacent disclosure
+
+- Occurrences: OLP-0363; lambda-calculus/syntax/de-bruijn; translation/content/lambda-calculus/syntax/de-bruijn.tex:56; printed/PDF page pending
+
+- Please double-check: Please double-check: ఒకే చరం సందర్భ జాబితాలో పలుసార్లు ఉంటే దగ్గరి బంధకానికి చెందిన తొలి ఘటన స్థానం తీసుకోవడం సరిగ్గా వివరించబడిందా?
+
+## REV-OLTELAMDEB-003 — OLTELAMDEB-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: specified the partial domain of the inverse map G for out-of-range indices, with adjacent disclosure
+
+- Occurrences: OLP-0363; lambda-calculus/syntax/de-bruijn; translation/content/lambda-calculus/syntax/de-bruijn.tex:79; printed/PDF page pending
+
+- Please double-check: Please double-check: జాబితా పరిధి మించిన సూచికలపై G తిరుగు పటం నిర్వచితం కాదని, మూల సమీకరణం మారలేదని స్పష్టమా?

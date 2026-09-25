@@ -331,6 +331,12 @@ locations['TE-T082']=[
  L('content/lambda-calculus/syntax/alpha.tex',72,75,73,76,'reflexitive','స్వప్రావర్తక'),
  L('content/lambda-calculus/syntax/alpha.tex',116,118,120,123,'!!{derivation}','వ్యుత్పత్తి')
 ];
+locations['TE-T083']=[
+ L('content/lambda-calculus/syntax/de-bruijn.tex',11,11,11,11,'De Bruijn Index','డి బ్రూయిన్ సూచిక'),
+ L('content/lambda-calculus/syntax/de-bruijn.tex',31,37,33,40,'De Bruijn terms','డి బ్రూయిన్ పదాలను'),
+ L('content/lambda-calculus/syntax/de-bruijn.tex',48,51,50,56,'\\Gamma(x)','\\Gamma(x)'),
+ L('content/lambda-calculus/syntax/de-bruijn.tex',61,69,65,74,'G_\\Gamma(n)','G_\\Gamma(n)')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -398,6 +404,7 @@ alternatives['TE-T079']=['reuse the established natural-number, function, compos
 alternatives['TE-T080']=['reuse the inspected native term, variable, scope, function, set and induction register while the lambda formation clauses fix the specialist senses (chosen)','leave unique readability, parameter and combinator in English reader prose (rejected)','claim the native witnesses directly attest lambda parameter and combinator usage (rejected; the source definitions fix those senses)','treat scope as the whole ambient term N (rejected because the binder scope is its body M)'];
 alternatives['TE-T081']=['ఇప్పటికే వాడుతున్న ప్రతిస్థాపన, పరిధి, చరం, సమితి, ఆగమన భాషను మూలంలోని పాక్షిక నియమంతో అనుసంధానించడం (ఎంపిక)','నిర్వచనంలో లేని x=y అమూర్తీకరణ సందర్భానికి ఫలితాన్ని నిశ్శబ్దంగా చేర్చడం (తిరస్కరణ)','స్థానిక పేజీలు ప్రత్యేక లాంబ్డా ప్రతిస్థాపనను నేరుగా స్థాపిస్తాయని పేర్కొనడం (తిరస్కరణ)','ఇంగ్లీషు substitution, capture పదాలను పాఠక గద్యంలో వివరణ లేకుండా వదలడం (తిరస్కరణ)'];
 alternatives['TE-T082']=['గత పదం, చరం, సంబంధం, నిరూపణ భాషలో ఆల్ఫా-పరివర్తనం, ఆల్ఫా-తుల్యతను మూల నిర్వచనాలతో నియంత్రించడం (ఎంపిక)','ఆల్ఫా-మార్పును బీటా-తగ్గింపుతో కలపడం (తిరస్కరణ)','స్థానిక పేజీలు ప్రత్యేక ఆల్ఫా నామాలను నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ)','అసంపూర్ణ మూల నిరూపణను పూర్తి నిరూపణగా ప్రకటించడం (తిరస్కరణ)'];
+alternatives['TE-T083']=['స్థానిక పదం, చరం, బంధనం, ప్రమేయ భాషతో మూల F/G సమీకరణాలను కలిపి డి బ్రూయిన్ సూచికకు వివరణ ఇవ్వడం (ఎంపిక)','01ను ఒకే సంఖ్యా సూచికగా చదవడం (తిరస్కరణ)','Gammaలో పలుసార్లు వచ్చే చరానికి ఏ స్థానమైనా తీసుకోవడం (తిరస్కరణ)','పరిధికి బయట సూచికలకూ G నిర్వచితమని చెప్పడం (తిరస్కరణ)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -414,7 +421,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-25 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T082 record the Batch 025--Batch 043 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-25 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T083 record the Batch 025--Batch 044 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -653,6 +660,9 @@ const correctionQuestions={
   ,'OLTELAMALP-005':'రెండో ప్రతిస్థాపన నిర్వచితమన్న మూల వాదనలో ఖాళీని ఇచ్చిన ఉదాహరణ సరిగ్గా చూపుతుందా? దానికి పూర్తి నిర్మాణాత్మక నిరూపణ ఏమిటి?'
   ,'OLTELAMALP-006':'మూల గణనలో సమానత్వానికి బదులుగా ఏ ఆల్ఫా-తుల్యత దశలు కావాలి? సాధారణ M-double-primeను ఎలా కవర్ చేస్తారు?'
   ,'OLTELAMALP-007':'ఉపసిద్ధాంతంలో రెండవ జతకు ఆల్ఫా-తుల్యత, నిర్వచితత్వం పరికల్పనలు రెండూ పునరుద్ధరించబడ్డాయా?'
+  ,'OLTELAMDEB-001':'మొత్తం పదంలోని రెండు సంఖ్యా సూచికలు 0, 1ల ప్రయోగమేనని, ఒక్క 01 సూచిక కాదని స్పష్టమా?'
+  ,'OLTELAMDEB-002':'ఒకే చరం సందర్భ జాబితాలో పలుసార్లు ఉంటే దగ్గరి బంధకానికి చెందిన తొలి ఘటన స్థానం తీసుకోవడం సరిగ్గా వివరించబడిందా?'
+  ,'OLTELAMDEB-003':'జాబితా పరిధి మించిన సూచికలపై G తిరుగు పటం నిర్వచితం కాదని, మూల సమీకరణం మారలేదని స్పష్టమా?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));
