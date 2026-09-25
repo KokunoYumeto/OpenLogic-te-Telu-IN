@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **365 of 722 source units drafted**. This readable view contains all 407 decisions and 765 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **366 of 722 source units drafted**. This readable view contains all 410 decisions and 772 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2544,6 +2544,36 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T087-OCC-001; OLP-0365; OLP-0365-B015; source upstream/content/lambda-calculus/syntax/beta.tex:88-98 bytes 2994-3611 SHA-256 42355f0467bb8d19038e3cadd4b5f0d2ce58720cbed3130cb74f86f7be4fc0dd; target translation/content/lambda-calculus/syntax/beta.tex:91-101 bytes 5597-6923 SHA-256 49384edc65445b364ec361383baf707104be843710718a7b899738faef1451bd; reader page pending.
   - te-Telu-IN-TE-T087-OCC-002; OLP-0365; OLP-0365-B015; source upstream/content/lambda-calculus/syntax/beta.tex:88-98 bytes 2994-3611 SHA-256 42355f0467bb8d19038e3cadd4b5f0d2ce58720cbed3130cb74f86f7be4fc0dd; target translation/content/lambda-calculus/syntax/beta.tex:91-101 bytes 5597-6923 SHA-256 49384edc65445b364ec361383baf707104be843710718a7b899738faef1451bd; reader page pending.
   - te-Telu-IN-TE-T087-OCC-003; OLP-0365; OLP-0365-B015; source upstream/content/lambda-calculus/syntax/beta.tex:88-98 bytes 2994-3611 SHA-256 42355f0467bb8d19038e3cadd4b5f0d2ce58720cbed3130cb74f86f7be4fc0dd; target translation/content/lambda-calculus/syntax/beta.tex:91-101 bytes 5597-6923 SHA-256 49384edc65445b364ec361383baf707104be843710718a7b899738faef1451bd; reader page pending.
+
+## te-Telu-IN-TE-T088 — eta-contraction / beta-eta reduction / eta-equivalence / extensionality of lambda terms
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: ఏటా-సంకోచనం / బీటా-ఏటా తగ్గింపు / ఏటా-తుల్యత / లాంబ్డా పదాల విస్తారత
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “eta-contraction / beta-eta reduction / eta-equivalence / extensionality of lambda terms” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: మూల ఏటా/విస్తారతా నియమాల గణిత ఉద్దేశం స్పష్టం; కానీ ఏటా-పరివర్తనం, విస్తారత అనే తెలుగు తలపదాలకు ప్రత్యేక స్థానిక ప్రత్యక్ష ధృవీకరణ లేదు. షరతు మూల తుల్యతా నియమంలో మళ్లీ లేకపోవడం వల్ల నిర్వచన పఠనం జాగ్రత్తగా నమోదైంది.
+
+- Rationale: TE-P008లో ప్రమేయం, దాని ఆర్గ్యుమెంట్/నిర్వచన పరిధి సంబంధాన్ని; TE-P027లో పదం, చరం; TE-P029లో పరిధి, బద్ధ చరం; TE-P032లో సిద్ధాంత-నిరూపణ శైలిని ప్రత్యక్షంగా చూశాం. ఈ స్థానిక పేజీలు ఏటా-సంకోచనం లేదా లాంబ్డా పదాల విస్తారతా నియమాన్ని బోధించవు. OLP-0366లోని x స్వేచ్ఛా-చర షరతు, ఏటా/విస్తారత నియమాలు, సమానత్వ సిద్ధాంతం ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి. TE-T046లో మొదటి-స్థాయి అర్థసంబంధ విస్తారతకు వాడిన తలపదాన్ని ఇక్కడ వేరు నియమంతో నిర్వచించి వాడాం; రెండింటి నియమాలు ఒకటేనని అనలేదు. TE-T078లోని బీటా పదజాలాన్ని కొనసాగించాం. OLTELAMETA-001–002 మూల నిర్వచన-సంకేత అస్పష్టతలను పక్కనే ప్రకటిస్తాయి. η, β గణిత గ్రీకు సంకేతాలు; ఏటా, బీటా వాటి తెలుగు ధ్వన్యనుకరణలు. M, N, f, x, FV, సంబంధ మాక్రోలు యథాతథం. \ext మూల నియమ మాక్రో, ఆంగ్ల పదం కాదు.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: మునుపటి బీటా పదజాలంతో ఏటా-సంకోచనం/తగ్గింపు, వేరు నిర్వచించిన లాంబ్డా పదాల విస్తారత [viable_alternative: ఎంపిక] | మొదటి-స్థాయి అర్థసంబంధ విస్తారత, లాంబ్డా విస్తారత ఒకే నియమమని ప్రకటించడం [viable_alternative: తిరస్కరణ] | ఏటా-తుల్యతా నియమాన్ని స్వేచ్ఛా-చర షరతు లేకుండా అన్ని పదాలపై వర్తింపజేయడం [viable_alternative: తిరస్కరణ] | సూత్రం మారకుండా లోపించిన షరతును పక్కన స్పష్టంగా చెప్పడం [viable_alternative: ఎంపిక]
+
+- Review question: Please double-check whether “ఏటా-సంకోచనం / బీటా-ఏటా తగ్గింపు / ఏటా-తుల్యత / లాంబ్డా పదాల విస్తారత” is idiomatic and technically standard for “eta-contraction / beta-eta reduction / eta-equivalence / extensionality of lambda terms” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T088-OCC-001; OLP-0366; OLP-0366-B004; source upstream/content/lambda-calculus/syntax/eta.tex:9-10 bytes 139-194 SHA-256 a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978; target translation/content/lambda-calculus/syntax/eta.tex:9-10 bytes 139-211 SHA-256 4d4950317b29b9482b33f0ced2507c734790608b38a9e9c78a2f7b70f766d5f7; reader page pending.
+  - te-Telu-IN-TE-T088-OCC-002; OLP-0366; OLP-0366-B006; source upstream/content/lambda-calculus/syntax/eta.tex:18-25 bytes 517-796 SHA-256 a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978; target translation/content/lambda-calculus/syntax/eta.tex:19-26 bytes 883-1253 SHA-256 4d4950317b29b9482b33f0ced2507c734790608b38a9e9c78a2f7b70f766d5f7; reader page pending.
+  - te-Telu-IN-TE-T088-OCC-003; OLP-0366; OLP-0366-B007; source upstream/content/lambda-calculus/syntax/eta.tex:27-35 bytes 797-1254 SHA-256 a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978; target translation/content/lambda-calculus/syntax/eta.tex:28-36 bytes 1254-2007 SHA-256 4d4950317b29b9482b33f0ced2507c734790608b38a9e9c78a2f7b70f766d5f7; reader page pending.
+  - te-Telu-IN-TE-T088-OCC-004; OLP-0366; OLP-0366-B010; source upstream/content/lambda-calculus/syntax/eta.tex:47-48 bytes 1465-1554 SHA-256 a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978; target translation/content/lambda-calculus/syntax/eta.tex:51-52 bytes 3269-3477 SHA-256 4d4950317b29b9482b33f0ced2507c734790608b38a9e9c78a2f7b70f766d5f7; reader page pending.
+  - te-Telu-IN-TE-T088-OCC-005; OLP-0366; OLP-0366-B013; source upstream/content/lambda-calculus/syntax/eta.tex:62-63 bytes 1963-2052 SHA-256 a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978; target translation/content/lambda-calculus/syntax/eta.tex:65-66 bytes 4252-4466 SHA-256 4d4950317b29b9482b33f0ced2507c734790608b38a9e9c78a2f7b70f766d5f7; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -10943,3 +10973,55 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTELAMBETA-001-OCC-001; OLP-0365; OLP-0365-B004; source upstream/content/lambda-calculus/syntax/beta.tex:9 bytes 146-171 SHA-256 42355f0467bb8d19038e3cadd4b5f0d2ce58720cbed3130cb74f86f7be4fc0dd; target translation/content/lambda-calculus/syntax/beta.tex:11 bytes 216-795 SHA-256 49384edc65445b364ec361383baf707104be843710718a7b899738faef1451bd; reader page pending.
+
+## te-Telu-IN-OLTELAMETA-001 — OLTELAMETA-001: eta equivalence schema omits freshness condition
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: declared and restored the already-stated free-variable condition beside the eta-equivalence rule without changing the formula
+
+- Intended sense: Repair the audited eta equivalence schema omits freshness condition at lines 18-24 eta contraction condition; lines 39-44 eta equivalence rule; lines 81-84 theorem proof, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMETA-20260925:OLTELAMETA-001 [checked_supports], content/lambda-calculus/syntax/eta.tex; lines 18-24 eta contraction condition; lines 39-44 eta equivalence rule; lines 81-84 theorem proof; eta_equivalence_schema_omits_freshness_condition; declared and restored the already-stated free-variable condition beside the eta-equivalence rule without changing the formula.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: ఏటా-తుల్యతా సమీకరణంలో f ఏ పదమైనా సూచించవచ్చని, కానీ x ఆ పదంలో స్వేచ్ఛగా ఉండకూడదనే షరతు పూర్వ సంకోచన నిర్వచనానికీ తరువాతి నిరూపణకీ సరిపోతుందా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMETA-001-OCC-001; OLP-0366; OLP-0366-B006; source upstream/content/lambda-calculus/syntax/eta.tex:18-24 bytes 517-785 SHA-256 a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978; target translation/content/lambda-calculus/syntax/eta.tex:48 bytes 2504-3257 SHA-256 4d4950317b29b9482b33f0ced2507c734790608b38a9e9c78a2f7b70f766d5f7; reader page pending.
+
+## te-Telu-IN-OLTELAMETA-002 — OLTELAMETA-002: inconsistent ext rule notation in proof
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: normalized two proof occurrences to the defined ext macro, with adjacent Telugu disclosure
+
+- Intended sense: Repair the audited inconsistent ext rule notation in proof at line 71 $ext$ and line 82 $\equal[ext]$, versus lines 51, 55, 66 and 72-84 using \ext, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMETA-20260925:OLTELAMETA-002 [checked_supports], content/lambda-calculus/syntax/eta.tex; line 71 $ext$ and line 82 $\equal[ext]$, versus lines 51, 55, 66 and 72-84 using \ext; inconsistent_ext_rule_notation_in_proof; normalized two proof occurrences to the defined ext macro, with adjacent Telugu disclosure.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: నిరూపణలో ext మాక్రోను ఒకే విధంగా వాడటం నిర్వచన, సిద్ధాంత సంకేతాలతో సరిపోతుందా; సంబంధం యొక్క భావాన్ని మార్చలేదా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMETA-002-OCC-001; OLP-0366; OLP-0366-B015; source upstream/content/lambda-calculus/syntax/eta.tex:71 bytes 2203-2270 SHA-256 a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978; target translation/content/lambda-calculus/syntax/eta.tex:79 bytes 5099-5651 SHA-256 4d4950317b29b9482b33f0ced2507c734790608b38a9e9c78a2f7b70f766d5f7; reader page pending.

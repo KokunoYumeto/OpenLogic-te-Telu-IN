@@ -1,0 +1,38 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTELAMETA-20260925",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": ["OLP-0366"],
+    "finding_count": 2
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "source_file": {
+    "path": "content/lambda-calculus/syntax/eta.tex",
+    "bytes": 2962,
+    "sha256": "a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTELAMETA-001",
+      "classification": "eta_equivalence_schema_omits_freshness_condition",
+      "source_locator": "lines 18-24 eta contraction condition; lines 39-44 eta equivalence rule; lines 81-84 theorem proof",
+      "finding": "మూల \u005ceta-సంకోచన నియమానికి x పదం Mలో స్వేచ్ఛగా లేకపోవాలి; తరువాతి తుల్యతా నియమం \u005clambd[x][f x] \u005cequal f పక్కన అదే షరతు కనిపించదు. సిద్ధాంత నిరూపణ ఏ Mకైనా ఆ షరతుతోనే నియమాన్ని వాడుతుంది.",
+      "controlling_evidence": "The immediately preceding contraction definition explicitly says x notin FV(M). The later proof invokes the eta step for arbitrary M subject to x notin FV(M), which requires the equivalence rule to have that generalized conditional sense. If f were a fixed distinct variable, the displayed rule alone would be too narrow for the proof; if f ranged over arbitrary terms without freshness, the rule would be too broad.",
+      "required_translation_handling": "Keep the frozen formula, but explicitly state beside it that f denotes a term with x notin FV(f); disclose that the source did not repeat the condition. Do not claim this note adds a new proof."
+    },
+    {
+      "finding_id": "OLTELAMETA-002",
+      "classification": "inconsistent_ext_rule_notation_in_proof",
+      "source_locator": "line 71 $ext$ and line 82 $\\equal[ext]$, versus lines 51, 55, 66 and 72-84 using \\ext",
+      "finding": "విస్తారత నియమానికి మూల నిర్వచనంలో \u005cext అనే సంకేతం ఉన్నా, నిరూపణలో రెండుచోట్ల దాని స్థానంలో సాధారణ ext అక్షరాలు ఉన్నాయి.",
+      "controlling_evidence": "The frozen macro declaration in upstream/open-logic-config.sty defines \\ext as mathit{ext}. The section's definition and theorem consistently use \\equal[\\ext]; only these two proof occurrences lose the macro.",
+      "required_translation_handling": "Use the defined \\ext notation in those two target proof occurrences and disclose the normalization nearby. Preserve all other proof formulas and the English source."
+    }
+  ]
+}

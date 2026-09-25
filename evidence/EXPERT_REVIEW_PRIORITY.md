@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 365 of 722 draft units**. This view selects 373 of 407 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 366 of 722 draft units**. This view selects 375 of 410 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -3733,3 +3733,23 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0365; lambda-calculus/syntax/beta; translation/content/lambda-calculus/syntax/beta.tex:11; printed/PDF page pending
 
 - Please double-check: Please double-check: వాక్యనిర్మాణ అధ్యాయ డ్రైవరు దిగుమతి చేసే బీటా విభాగపు ఫైలు గుర్తింపులో intకు బదులు syn అవసరమని మూల పథం, డ్రైవరు, పక్క విభాగాల ఆధారాలు చూపుతున్నాయా?
+
+## REV-OLTELAMETA-001 — OLTELAMETA-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: declared and restored the already-stated free-variable condition beside the eta-equivalence rule without changing the formula
+
+- Occurrences: OLP-0366; lambda-calculus/syntax/eta; translation/content/lambda-calculus/syntax/eta.tex:48; printed/PDF page pending
+
+- Please double-check: Please double-check: ఏటా-తుల్యతా సమీకరణంలో f ఏ పదమైనా సూచించవచ్చని, కానీ x ఆ పదంలో స్వేచ్ఛగా ఉండకూడదనే షరతు పూర్వ సంకోచన నిర్వచనానికీ తరువాతి నిరూపణకీ సరిపోతుందా?
+
+## REV-OLTELAMETA-002 — OLTELAMETA-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: normalized two proof occurrences to the defined ext macro, with adjacent Telugu disclosure
+
+- Occurrences: OLP-0366; lambda-calculus/syntax/eta; translation/content/lambda-calculus/syntax/eta.tex:79; printed/PDF page pending
+
+- Please double-check: Please double-check: నిరూపణలో ext మాక్రోను ఒకే విధంగా వాడటం నిర్వచన, సిద్ధాంత సంకేతాలతో సరిపోతుందా; సంబంధం యొక్క భావాన్ని మార్చలేదా?

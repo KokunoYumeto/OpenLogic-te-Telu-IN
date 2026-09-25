@@ -1,0 +1,297 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-25T04:27:58.316Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Text/intertext/mbox prose is masked; nested inline math is compared per clause independently of language-specific word order.",
+  "units": [
+    {
+      "unit_id": "OLP-0366",
+      "source_path": "content/lambda-calculus/syntax/eta.tex",
+      "source_sha256": "a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978",
+      "translation_sha256": "4d4950317b29b9482b33f0ced2507c734790608b38a9e9c78a2f7b70f766d5f7",
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{syn}{eta}",
+        "\\olref[fv]{sec}",
+        "\\ollabel{defn:beredone}",
+        "\\ollabel{defn:bered}",
+        "\\ollabel{defn:bered3}",
+        "\\ollabel{defn:bered4}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{syn}{eta}",
+        "\\olref[fv]{sec}",
+        "\\ollabel{defn:beredone}",
+        "\\ollabel{defn:bered}",
+        "\\ollabel{defn:bered3}",
+        "\\ollabel{defn:bered4}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\eta$",
+        "$\\lambda$",
+        "$\\lambd[x][(fx)]$",
+        "$f$",
+        "$f$",
+        "$\\lambd[x][(fx)]N$",
+        "$fN$",
+        "$fN$",
+        "$\\eta$",
+        "$\\eta$",
+        "$\\eta$",
+        "$\\eredone$",
+        "$\\eta$",
+        "$\\eredone$",
+        "\\[\\lambd[x][Mx]\\eredoneMx\\notinFV(M)\\]",
+        "$\\beta\\eta$",
+        "$\\bered$",
+        "$\\beta\\eta$",
+        "$\\bered$",
+        "$\\bredone$",
+        "$\\eredone$",
+        "$M\\bredoneN$",
+        "$M\\beredN$",
+        "$M\\eredoneN$",
+        "$M\\beredN$",
+        "$\\equal$",
+        "$\\eta$",
+        "\\[\\lambd[x][fx]\\equalf\\]",
+        "$\\equal[\\eta]$",
+        "$\\eta$",
+        "$\\equal$",
+        "$Mx\\equalNx$",
+        "$M\\equalN$",
+        "$x\\notinFV(MN)$",
+        "$\\equal[\\ext]$",
+        "$\\eta$",
+        "$M\\equal[\\ext]N$",
+        "$M\\equal[\\eta]N$",
+        "$\\equal[\\eta]$",
+        "$ext$",
+        "$\\equal[\\eta]$",
+        "$\\equal[\\eta]$",
+        "$\\equal[\\ext]$",
+        "$M\\equal[\\ext]N$",
+        "$M\\equal[\\eta]N$",
+        "$\\equal[\\eta]$",
+        "$M\\equalN$",
+        "$Mx\\equal[\\eta]Nx$",
+        "$\\lambd[x][Mx]\\equal[\\eta]\\lambd[x][Nx]$",
+        "$\\equal$",
+        "$\\eta$",
+        "$M\\equal[\\eta]N$",
+        "$\\eta$",
+        "$\\equal[ext]$",
+        "$\\lambd[x][Mx]$",
+        "$M$",
+        "$x\\notinFV(M)$",
+        "$(\\lambd[x][Mx])x\\equal[\\ext]Mx$",
+        "$\\lambd[x][Mx]\\equal[\\ext]M$"
+      ],
+      "math_target_core": [
+        "$\\eta$",
+        "$\\lambda$",
+        "$\\lambd[x][(fx)]$",
+        "$f$",
+        "$f$",
+        "$\\lambd[x][(fx)]N$",
+        "$fN$",
+        "$fN$",
+        "$\\eta$",
+        "$\\eta$",
+        "$\\eta$",
+        "$\\eredone$",
+        "$\\eta$",
+        "$\\eredone$",
+        "\\[\\lambd[x][Mx]\\eredoneMx\\notinFV(M)\\]",
+        "$\\beta\\eta$",
+        "$\\bered$",
+        "$\\beta\\eta$",
+        "$\\bered$",
+        "$\\bredone$",
+        "$\\eredone$",
+        "$M\\bredoneN$",
+        "$M\\beredN$",
+        "$M\\eredoneN$",
+        "$M\\beredN$",
+        "$\\equal$",
+        "$\\eta$",
+        "\\[\\lambd[x][fx]\\equalf\\]",
+        "$f$",
+        "$x$",
+        "$x\\notinFV(f)$",
+        "$\\equal[\\eta]$",
+        "$\\eta$",
+        "$\\equal$",
+        "$Mx\\equalNx$",
+        "$M\\equalN$",
+        "$x\\notinFV(MN)$",
+        "$\\equal[\\ext]$",
+        "$\\eta$",
+        "$M\\equal[\\ext]N$",
+        "$M\\equal[\\eta]N$",
+        "$\\equal[\\eta]$",
+        "$\\ext$",
+        "$\\equal[\\eta]$",
+        "$\\equal[\\eta]$",
+        "$\\equal[\\ext]$",
+        "$M\\equal[\\ext]N$",
+        "$M\\equal[\\eta]N$",
+        "$\\equal[\\eta]$",
+        "$M\\equalN$",
+        "$Mx\\equal[\\eta]Nx$",
+        "$\\equal$",
+        "$\\lambd[x][Mx]\\equal[\\eta]\\lambd[x][Nx]$",
+        "$\\eta$",
+        "$M\\equal[\\eta]N$",
+        "$\\eta$",
+        "$\\equal[\\ext]$",
+        "$x\\notinFV(M)$",
+        "$\\lambd[x][Mx]$",
+        "$M$",
+        "$(\\lambd[x][Mx])x\\equal[\\ext]Mx$",
+        "$\\lambd[x][Mx]\\equal[\\ext]M$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$\\equal[ext]$",
+        "$ext$"
+      ],
+      "math_delta_target_only": [
+        "$\\equal[\\ext]$",
+        "$\\ext$",
+        "$f$",
+        "$x$",
+        "$x\\notinFV(f)$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTELAMETA-001",
+        "OLTELAMETA-002"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1555,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: syntax\n% Section: eta",
+          "target_start": "% Part: lambda-calculus\n% Chapter: syntax\n% Section: eta"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{syn}{eta}\n\\olsection{$\\eta$-conversion}",
+          "target_start": "\\olfileid{lam}{syn}{eta}\n\\olsection{$\\eta$-పరివర్తనం}"
+        },
+        {
+          "index": 5,
+          "source_start": "There is another relation on $\\lambda$ terms. In \\olref[fv]{sec} we\nused the example $\\lambd[x][(fx)]$, which ",
+          "target_start": "$\\lambda$-పదాలపై మరొక సంబంధం ఉంది. \\olref[fv]{sec}లో\n$\\lambd[x][(fx)]$ అనే ఉదాహరణను వాడాం: అది ఒక ఆర్గ్యుమెంటు"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}[$\\eta$-contraction, $\\eredone$]\n  \\ollabel{defn:beredone}\n  \\emph{$\\eta$-contraction} ($\\eredone$",
+          "target_start": "\\begin{defn}[$\\eta$-సంకోచనం, $\\eredone$]\n  \\ollabel{defn:beredone}\n  \\emph{$\\eta$-సంకోచనం} ($\\eredone$) అనేది "
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}[$\\beta\\eta$-reduction, $\\bered$] \\ollabel{defn:bered}\n  \\emph{$\\beta\\eta$-reduction} ($\\bered$) i",
+          "target_start": "\\begin{defn}[$\\beta\\eta$-తగ్గింపు, $\\bered$] \\ollabel{defn:bered}\n  \\emph{$\\beta\\eta$-తగ్గింపు} ($\\bered$) అనే"
+        },
+        {
+          "index": 8,
+          "source_start": "\\end{defn}",
+          "target_start": "\\end{defn}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{defn}\n  We extend the equivalence relation $\\equal$ with the $\\eta$-conversion rule:\n  \\[\n  \\lambd[x][f",
+          "target_start": "\\begin{defn}\n  $\\equal$ తుల్యతా సంబంధానికి $\\eta$-పరివర్తన నియమాన్ని చేర్చుతాం:\n  \\[\n  \\lambd[x][f x] \\equal f"
+        },
+        {
+          "index": 10,
+          "source_start": "$\\eta$-equivalence is important because it is related to extensionality\nof lambda terms:",
+          "target_start": "$\\eta$-తుల్యత ముఖ్యమైనది; ఎందుకంటే అది లాంబ్డా పదాల\nవిస్తారతతో సంబంధం కలిగి ఉంది:"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{defn}[Extensionality]\n  We extend the equivalence relation $\\equal$ with the (\\ext) rule:\n  \\begin{cent",
+          "target_start": "\\begin{defn}[విస్తారత]\n  $\\equal$ తుల్యతా సంబంధానికి (\\ext) నియమాన్ని చేర్చుతాం:\n  \\begin{center}\n  $Mx \\equal"
+        },
+        {
+          "index": 12,
+          "source_start": "Roughly speaking, the rule states that two terms, viewed as functions,\nshould be considered equal if they beha",
+          "target_start": "స్థూలంగా, పదాలను ప్రమేయాలుగా చూసినప్పుడు ఒకే ఆర్గ్యుమెంటుపై\nవాటి ప్రవర్తన ఒకటే అయితే వాటిని సమానంగా పరిగణించాల"
+        },
+        {
+          "index": 13,
+          "source_start": "We now prove that the $\\eta$ rule provides exactly the extensionality,\nand nothing else.",
+          "target_start": "ఇప్పుడు $\\eta$ నియమం విస్తారతను, అంతకంటే ఎక్కువ ఏదీ కాకుండా,\nఇస్తుందని నిరూపిద్దాం."
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{thm}\n  $M \\equal[\\ext] N$ if and only if $M \\equal[\\eta] N$.\n\\end{thm}",
+          "target_start": "\\begin{thm}\n  $M \\equal[\\ext] N$ కావడానికి అవసరమూ సరిపడేదీ\n  $M \\equal[\\eta] N$ కావడమే.\n\\end{thm}"
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{proof}\n  First we prove that $\\equal[\\eta]$ is closed under the\n  extensionality rule. That is, $ext$ r",
+          "target_start": "\\begin{proof}\n  మొదట $\\equal[\\eta]$ సంబంధం విస్తారత నియమం కింద\n  మూసి ఉందని నిరూపిస్తాం. అంటే $\\ext$ నియమం\n  $"
+        },
+        {
+          "index": 16,
+          "source_start": "  To prove $\\equal[\\eta]$ is closed under \\ext, note that for any $M\n  \\equal N$ derived by the \\ext{} rule, w",
+          "target_start": "  $\\equal[\\eta]$ సంబంధం \\ext{} కింద మూసి ఉందని\n  చూపడానికి, \\ext{} నియమం ద్వారా $M \\equal N$ పొందే\n  దశలో పూర్"
+        },
+        {
+          "index": 17,
+          "source_start": "  Similarly we prove that the $\\eta$ rule is contained in\n  $\\equal[ext]$. For any $\\lambd[x][Mx]$ and $M$ wit",
+          "target_start": "  అదే విధంగా $\\eta$ నియమం $\\equal[\\ext]$లో ఉందని\n  చూపుదాం. $x \\notin FV(M)$ అయ్యే ఏ\n  $\\lambd[x][Mx]$, $M$లకై"
+        },
+        {
+          "index": 18,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{syn}{eta}",
+        "\\olref[fv]{sec}",
+        "\\ollabel{defn:beredone}",
+        "\\ollabel{defn:bered}",
+        "\\ollabel{defn:bered3}",
+        "\\ollabel{defn:bered4}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{syn}{eta}",
+        "\\olref[fv]{sec}",
+        "\\ollabel{defn:beredone}",
+        "\\ollabel{defn:bered}",
+        "\\ollabel{defn:bered3}",
+        "\\ollabel{defn:bered4}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    }
+  ]
+}

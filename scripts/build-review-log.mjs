@@ -357,6 +357,13 @@ locations['TE-T087']=[
  L('content/lambda-calculus/syntax/beta.tex',92,93,95,97,'left-most','అత్యంత ఎడమవైపు'),
  L('content/lambda-calculus/syntax/beta.tex',94,96,97,100,'normal form','నియత రూపానికి')
 ];
+locations['TE-T088']=[
+ L('content/lambda-calculus/syntax/eta.tex',10,10,10,10,'$\\eta$-conversion','$\\eta$-పరివర్తనం'),
+ L('content/lambda-calculus/syntax/eta.tex',18,24,19,25,'$\\eta$-contraction','$\\eta$-సంకోచనం'),
+ L('content/lambda-calculus/syntax/eta.tex',27,35,28,35,'$\\beta\\eta$-reduction','$\\beta\\eta$-తగ్గింపు'),
+ L('content/lambda-calculus/syntax/eta.tex',47,55,51,60,'extensionality','విస్తారత'),
+ L('content/lambda-calculus/syntax/eta.tex',62,66,65,70,'extensionality','విస్తారతను')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -429,6 +436,7 @@ alternatives['TE-T084']=['ఆచారబద్ధ అధితర్కం, ఆ
 alternatives['TE-T085']=['అనౌపచారిక సమితి సిద్ధాంతం అనే అర్థవివరణను శీర్షిక, పరిచయం రెండింటిలో వాడడం (ఎంపిక)','naiveని అమాయక అనే సాధారణ విశేషణంగా అనువదించడం (తిరస్కరణ)','మూలంలో లేని సంపూర్ణ స్వీకృతిక సమితి సిద్ధాంత పరిధిని శీర్షికలో చేర్చడం (తిరస్కరణ)'];
 alternatives['TE-T086']=['ఆల్ఫా-తుల్యతా వర్గం, ప్రతినిధి, వర్గాలపైకి దింపడం అనే నిర్వచన-నియంత్రిత వివరణ (ఎంపిక)','మూల వర్గ ప్రతిస్థాపన ఫలితాన్ని ముడి ప్రతినిధి పదంతో సమానమని మౌనంగా చెప్పడం (తిరస్కరణ)','మూల నిరూపణ ఖాళీలున్నా వర్గ చర్య ప్రతినిధి-స్వతంత్రమని ఈ దశలో పూర్తి నిరూపితంగా ప్రకటించడం (తిరస్కరణ)','అన్ని quotient చర్యలకు ప్రత్యక్ష స్థానిక తెలుగు సాక్ష్యం ఉందని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T087']=['మునుపటి బీటా-సంకోచనం/తగ్గింపు పదజాలంతో సహజ వ్యూహం, అత్యంత ఎడమవైపు రెడెక్స్ అనే స్థాన-నియంత్రిత వివరణ (ఎంపిక)','ఎడమవైపు అని మాత్రమే చెప్పి రెడెక్స్ మొదలయ్యే స్థానం అనే మూల నియమాన్ని వదలడం (తిరస్కరణ)','సహజ వ్యూహం ఏ పదాన్నైనా తప్పక నియత రూపానికి తీసుకెళ్తుందని చెప్పడం (తిరస్కరణ; మూల వాదన నియత రూపం ఉన్నప్పుడు మాత్రమే)','స్థానిక పేజీలు బీటా వ్యూహాన్ని నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T088']=['మునుపటి బీటా పదజాలంతో ఏటా-సంకోచనం/తగ్గింపు, వేరు నిర్వచించిన లాంబ్డా పదాల విస్తారత (ఎంపిక)','మొదటి-స్థాయి అర్థసంబంధ విస్తారత, లాంబ్డా విస్తారత ఒకే నియమమని ప్రకటించడం (తిరస్కరణ)','ఏటా-తుల్యతా నియమాన్ని స్వేచ్ఛా-చర షరతు లేకుండా అన్ని పదాలపై వర్తింపజేయడం (తిరస్కరణ)','సూత్రం మారకుండా లోపించిన షరతును పక్కన స్పష్టంగా చెప్పడం (ఎంపిక)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -445,7 +453,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-25 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T087 record the Batch 025--Batch 047 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-25 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T088 record the Batch 025--Batch 048 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -690,6 +698,8 @@ const correctionQuestions={
   ,'OLTELAMTR-001':'వర్గంపై ప్రతిస్థాపన ఫలితం ముడి పదం కాదు, ఆ పదాన్ని కలిగి ఉన్న ఆల్ఫా-తుల్యతా వర్గమని తెలుగు గద్యం స్పష్టంచేస్తుందా?'
   ,'OLTELAMTR-002':'పూర్వ ఉపసిద్ధాంతంపై ఆధార సూచనను నిలిపి, OLTELAMALP-005–006 మూల నిరూపణ ఖాళీలు ఇంకా తెరిచే ఉన్నాయని స్పష్టంగా ప్రకటించామా?'
   ,'OLTELAMBETA-001':'వాక్యనిర్మాణ అధ్యాయ డ్రైవరు దిగుమతి చేసే బీటా విభాగపు ఫైలు గుర్తింపులో intకు బదులు syn అవసరమని మూల పథం, డ్రైవరు, పక్క విభాగాల ఆధారాలు చూపుతున్నాయా?'
+  ,'OLTELAMETA-001':'ఏటా-తుల్యతా సమీకరణంలో f ఏ పదమైనా సూచించవచ్చని, కానీ x ఆ పదంలో స్వేచ్ఛగా ఉండకూడదనే షరతు పూర్వ సంకోచన నిర్వచనానికీ తరువాతి నిరూపణకీ సరిపోతుందా?'
+  ,'OLTELAMETA-002':'నిరూపణలో ext మాక్రోను ఒకే విధంగా వాడటం నిర్వచన, సిద్ధాంత సంకేతాలతో సరిపోతుందా; సంబంధం యొక్క భావాన్ని మార్చలేదా?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

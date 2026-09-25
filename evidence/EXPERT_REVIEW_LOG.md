@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 365 of 722 draft units**. This log contains 87 terminology/sense decisions and 320 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 366 of 722 draft units**. This log contains 88 terminology/sense decisions and 322 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2095,6 +2095,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: మూల నిర్వచనం నియమాన్ని స్పష్టంచేస్తుంది; సహజ వ్యూహం, రెడెక్స్ అనే పేర్లకు మధ్యస్థ నామకరణ అనిశ్చితి ఉంది. ఈ విభాగం వ్యూహం నియత రూపం చేరుతుందనే వాదనకు స్వతంత్ర నిరూపణ ఇవ్వదు; పాఠ్యంలో తరువాతి చర్చ ఆధారంగా చెప్పినట్లు మాత్రమే ఉంచాం.
 
 - Please double-check: Please double-check whether “సహజ తగ్గింపు వ్యూహం / అత్యంత ఎడమవైపు రెడెక్స్ / నియత రూపాన్ని చేరే వ్యూహం” is idiomatic and technically standard for “natural reduction strategy / left-most redex / normalizing strategy” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T088 — eta-contraction / beta-eta reduction / eta-equivalence / extensionality of lambda terms
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: ఏటా-సంకోచనం / బీటా-ఏటా తగ్గింపు / ఏటా-తుల్యత / లాంబ్డా పదాల విస్తారత
+
+- Exact implementation: OLP-0366; lambda-calculus/syntax/eta; content/lambda-calculus/syntax/eta.tex:9-10 ↔ translation/content/lambda-calculus/syntax/eta.tex:9-10 (OLP-0366-B004); printed/PDF page pending; OLP-0366; lambda-calculus/syntax/eta; content/lambda-calculus/syntax/eta.tex:18-25 ↔ translation/content/lambda-calculus/syntax/eta.tex:19-26 (OLP-0366-B006); printed/PDF page pending; OLP-0366; lambda-calculus/syntax/eta; content/lambda-calculus/syntax/eta.tex:27-35 ↔ translation/content/lambda-calculus/syntax/eta.tex:28-36 (OLP-0366-B007); printed/PDF page pending; OLP-0366; lambda-calculus/syntax/eta; content/lambda-calculus/syntax/eta.tex:47-48 ↔ translation/content/lambda-calculus/syntax/eta.tex:51-52 (OLP-0366-B010); printed/PDF page pending; OLP-0366; lambda-calculus/syntax/eta; content/lambda-calculus/syntax/eta.tex:62-63 ↔ translation/content/lambda-calculus/syntax/eta.tex:65-66 (OLP-0366-B013); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P008లో ప్రమేయం, దాని ఆర్గ్యుమెంట్/నిర్వచన పరిధి సంబంధాన్ని; TE-P027లో పదం, చరం; TE-P029లో పరిధి, బద్ధ చరం; TE-P032లో సిద్ధాంత-నిరూపణ శైలిని ప్రత్యక్షంగా చూశాం. ఈ స్థానిక పేజీలు ఏటా-సంకోచనం లేదా లాంబ్డా పదాల విస్తారతా నియమాన్ని బోధించవు. OLP-0366లోని x స్వేచ్ఛా-చర షరతు, ఏటా/విస్తారత నియమాలు, సమానత్వ సిద్ధాంతం ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి. TE-T046లో మొదటి-స్థాయి అర్థసంబంధ విస్తారతకు వాడిన తలపదాన్ని ఇక్కడ వేరు నియమంతో నిర్వచించి వాడాం; రెండింటి నియమాలు ఒకటేనని అనలేదు. TE-T078లోని బీటా పదజాలాన్ని కొనసాగించాం. OLTELAMETA-001–002 మూల నిర్వచన-సంకేత అస్పష్టతలను పక్కనే ప్రకటిస్తాయి. η, β గణిత గ్రీకు సంకేతాలు; ఏటా, బీటా వాటి తెలుగు ధ్వన్యనుకరణలు. M, N, f, x, FV, సంబంధ మాక్రోలు యథాతథం. \ext మూల నియమ మాక్రో, ఆంగ్ల పదం కాదు.
+
+- Alternatives: మునుపటి బీటా పదజాలంతో ఏటా-సంకోచనం/తగ్గింపు, వేరు నిర్వచించిన లాంబ్డా పదాల విస్తారత (ఎంపిక); మొదటి-స్థాయి అర్థసంబంధ విస్తారత, లాంబ్డా విస్తారత ఒకే నియమమని ప్రకటించడం (తిరస్కరణ); ఏటా-తుల్యతా నియమాన్ని స్వేచ్ఛా-చర షరతు లేకుండా అన్ని పదాలపై వర్తింపజేయడం (తిరస్కరణ); సూత్రం మారకుండా లోపించిన షరతును పక్కన స్పష్టంగా చెప్పడం (ఎంపిక)
+
+- Uncertainty: మూల ఏటా/విస్తారతా నియమాల గణిత ఉద్దేశం స్పష్టం; కానీ ఏటా-పరివర్తనం, విస్తారత అనే తెలుగు తలపదాలకు ప్రత్యేక స్థానిక ప్రత్యక్ష ధృవీకరణ లేదు. షరతు మూల తుల్యతా నియమంలో మళ్లీ లేకపోవడం వల్ల నిర్వచన పఠనం జాగ్రత్తగా నమోదైంది.
+
+- Please double-check: Please double-check whether “ఏటా-సంకోచనం / బీటా-ఏటా తగ్గింపు / ఏటా-తుల్యత / లాంబ్డా పదాల విస్తారత” is idiomatic and technically standard for “eta-contraction / beta-eta reduction / eta-equivalence / extensionality of lambda terms” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -9775,3 +9799,51 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: వాక్యనిర్మాణ అధ్యాయ డ్రైవరు దిగుమతి చేసే బీటా విభాగపు ఫైలు గుర్తింపులో intకు బదులు syn అవసరమని మూల పథం, డ్రైవరు, పక్క విభాగాల ఆధారాలు చూపుతున్నాయా?
+
+## REV-OLTELAMETA-001 — OLTELAMETA-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: declared and restored the already-stated free-variable condition beside the eta-equivalence rule without changing the formula
+
+- Exact implementation: OLP-0366; lambda-calculus/syntax/eta; lines 18-24 eta contraction condition; lines 39-44 eta equivalence rule; lines 81-84 theorem proof ↔ translation/content/lambda-calculus/syntax/eta.tex:48 (OLP-0366-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMETA-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: declared and restored the already-stated free-variable condition beside the eta-equivalence rule without changing the formula
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: ఏటా-తుల్యతా సమీకరణంలో f ఏ పదమైనా సూచించవచ్చని, కానీ x ఆ పదంలో స్వేచ్ఛగా ఉండకూడదనే షరతు పూర్వ సంకోచన నిర్వచనానికీ తరువాతి నిరూపణకీ సరిపోతుందా?
+
+## REV-OLTELAMETA-002 — OLTELAMETA-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: normalized two proof occurrences to the defined ext macro, with adjacent Telugu disclosure
+
+- Exact implementation: OLP-0366; lambda-calculus/syntax/eta; line 71 $ext$ and line 82 $\equal[ext]$, versus lines 51, 55, 66 and 72-84 using \ext ↔ translation/content/lambda-calculus/syntax/eta.tex:79 (OLP-0366-B015); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMETA-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: normalized two proof occurrences to the defined ext macro, with adjacent Telugu disclosure
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: నిరూపణలో ext మాక్రోను ఒకే విధంగా వాడటం నిర్వచన, సిద్ధాంత సంకేతాలతో సరిపోతుందా; సంబంధం యొక్క భావాన్ని మార్చలేదా?
