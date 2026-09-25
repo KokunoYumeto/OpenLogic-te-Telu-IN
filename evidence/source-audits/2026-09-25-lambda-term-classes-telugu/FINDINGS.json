@@ -1,0 +1,38 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTELAMTR-20260925",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": ["OLP-0364"],
+    "finding_count": 2
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "source_file": {
+    "path": "content/lambda-calculus/syntax/term-revisited.tex",
+    "bytes": 3530,
+    "sha256": "6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTELAMTR-001",
+      "classification": "class_substitution_result_stated_as_raw_representative_term",
+      "source_locator": "lines 48-53, def:sub",
+      "finding": "వర్గాలపై ప్రతిస్థాపనను నిర్వచిస్తానంటూ మూలం కుడివైపు ఒక ముడి ప్రతినిధి పదాన్నే ఇస్తుంది; ఆ పదం స్వయంగా తుల్యతా వర్గం కాదు.",
+      "controlling_evidence": "అదే ఫైలులో 18-21 పంక్తుల్లో M, Rలు వర్గాలని, 23-25లో rep(M), rep(R)లు ఆ వర్గాల మూలకాలైన పదాలని వేరు చేస్తుంది. 31-33 పంక్తుల్లో అమూర్తీకరణ, ప్రయోగాలకు పదాన్ని కలిగి ఉన్న వర్గమని సరిగ్గా చెబుతుంది; 50-52లో ఆ వర్గానికి బదులు పదమే వస్తుంది.",
+      "required_translation_handling": "కుడివైపు మూల గణిత సంకేతాన్ని మార్చకుండా, తెలుగు గద్యంలో ఫలితం ఆ ప్రతిస్థాపిత పదాన్ని కలిగి ఉన్న ఆల్ఫా-తుల్యతా వర్గమని స్పష్టంచేసి మూల రకం భేదాన్ని పక్కనే ప్రకటించాలి."
+    },
+    {
+      "finding_id": "OLTELAMTR-002",
+      "classification": "well_definedness_claim_depends_on_upstream_unproved_corollary",
+      "source_locator": "line 55, dependency on alpha.tex cor:sub and thm:sub",
+      "finding": "వర్గపు ప్రతిస్థాపన ప్రతినిధి ఎంపికపై ఆధారపడదనే వాదనకు మూలం cor:subను చూపుతుంది; ఆ ఉపసిద్ధాంతానికి ఆధారమైన సిద్ధాంతపు మూల నిరూపణలో ఇప్పటికే OLTELAMALP-005–006 ఖాళీలు నమోదయ్యాయి.",
+      "controlling_evidence": "alpha.tex 225-264 పంక్తుల్లో thm:sub నిరూపణ అమూర్తీకరణ సందర్భపు నిర్వచితత్వాన్ని హామీ ఇవ్వదు, ఏకత్వ దశల్లో సమానత్వం బదులు ఆల్ఫా-తుల్యత మాత్రమే వస్తుంది. cor:sub 270-280 ఆ సిద్ధాంతం నుంచి వెంటనే వస్తుందని చెబుతుంది. ఈ విభాగం line 55 దానిపైనే ఆధారపడుతుంది.",
+      "required_translation_handling": "మూల ఆధార సూచనను నిలిపి, దాని నిరూపణ పెండింగ్‌లో ఉందని ప్రకటించాలి. ఈ పనిలో కొత్త పూర్తి నిరూపణ ఇచ్చినట్లు లేదా well-definedness స్వతంత్రంగా ధృవీకరించినట్లు చెప్పరాదు."
+    }
+  ]
+}

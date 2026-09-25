@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **363 of 722 source units drafted**. This readable view contains all 402 decisions and 754 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **364 of 722 source units drafted**. This readable view contains all 405 decisions and 761 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2486,6 +2486,36 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
   - te-Telu-IN-TE-T085-OCC-001; OLP-0003; OLP-0003-B004; source upstream/content/sets-functions-relations/sets-functions-relations-complete.tex:7 bytes 118-151 SHA-256 f5eb4b8801890604b79298e46a8327f34ca3bb9ed673d798ec3436d349f22926; target translation/content/sets-functions-relations/sets-functions-relations-complete.tex:7 bytes 118-204 SHA-256 0a02bfdade8fd10b0e0ca1b5e6e2e3cb1af1dc7237bc736103a40998ddfc1fe8; reader page pending.
   - te-Telu-IN-TE-T085-OCC-002; OLP-0003; OLP-0003-B005; source upstream/content/sets-functions-relations/sets-functions-relations-complete.tex:9-14 bytes 152-456 SHA-256 f5eb4b8801890604b79298e46a8327f34ca3bb9ed673d798ec3436d349f22926; target translation/content/sets-functions-relations/sets-functions-relations-complete.tex:9-14 bytes 205-793 SHA-256 0a02bfdade8fd10b0e0ca1b5e6e2e3cb1af1dc7237bc736103a40998ddfc1fe8; reader page pending.
+
+## te-Telu-IN-TE-T086 — alpha-equivalence class / representative / well-defined class operation / projection to Lambda-terms
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: ఆల్ఫా-తుల్యతా వర్గం / ప్రతినిధి / ప్రతినిధి ఎంపికపై ఆధారపడని వర్గ చర్య / లాంబ్డా వర్గాలపైకి దింపడం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “alpha-equivalence class / representative / well-defined class operation / projection to Lambda-terms” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: ఆల్ఫా-తుల్యతా వర్గం, ప్రతినిధి పదాలు నిర్వచనపరంగా స్పష్టం; వర్గాలపైకి దింపడం అనే quotient-map వివరణకు మధ్యస్థ భాషా అనిశ్చితి ఉంది. ప్రతినిధి ఎంపికపై స్వాతంత్ర్యం మూల నిరూపణ ఖాళీ వల్ల ఇక్కడ స్వతంత్రంగా నిర్ధారించబడలేదు.
+
+- Rationale: TE-P008లో సమితి/సంబంధానికి సాధారణ గణిత గద్యాన్ని, TE-P027, TE-P029లో చరం/పరిధి/బద్ధ చరానికి సంబంధించిన పాఠ్యాన్ని, TE-P003, TE-P032లో నిర్వచన శైలిని ప్రత్యక్షంగా చూశాం. ఈ పేజీలు ఆల్ఫా-తుల్యతా భాగవర్గం, ప్రతినిధి ఎంపిక స్వాతంత్ర్యం, భాగపటం దింపడం అనే ప్రత్యేక భావాలను నేరుగా బోధించవు. OLP-0364లోని వర్గ నిర్వచనాలు, OLP-0362లోని ఆల్ఫా సంబంధం వాటి అర్థాన్ని నియంత్రిస్తాయి. OLTELAMTR-001లో ప్రతిస్థాపన ఫలితపు పదం/వర్గం రకం స్పష్టం; OLTELAMTR-002లో ఆధార నిరూపణ ఖాళీ ప్రకటించబడింది. α, λ, Λ, FV, Subst, rep గణిత సంకేతాలు యథాతథం; ప్రత్యేక తెలుగు నామానికి నేర సాక్ష్యమని వాటిని చూపలేదు.
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: ఆల్ఫా-తుల్యతా వర్గం, ప్రతినిధి, వర్గాలపైకి దింపడం అనే నిర్వచన-నియంత్రిత వివరణ [viable_alternative: ఎంపిక] | మూల వర్గ ప్రతిస్థాపన ఫలితాన్ని ముడి ప్రతినిధి పదంతో సమానమని మౌనంగా చెప్పడం [viable_alternative: తిరస్కరణ] | మూల నిరూపణ ఖాళీలున్నా వర్గ చర్య ప్రతినిధి-స్వతంత్రమని ఈ దశలో పూర్తి నిరూపితంగా ప్రకటించడం [viable_alternative: తిరస్కరణ] | అన్ని quotient చర్యలకు ప్రత్యక్ష స్థానిక తెలుగు సాక్ష్యం ఉందని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “ఆల్ఫా-తుల్యతా వర్గం / ప్రతినిధి / ప్రతినిధి ఎంపికపై ఆధారపడని వర్గ చర్య / లాంబ్డా వర్గాలపైకి దింపడం” is idiomatic and technically standard for “alpha-equivalence class / representative / well-defined class operation / projection to Lambda-terms” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T086-OCC-001; OLP-0364; OLP-0364-B004; source upstream/content/lambda-calculus/syntax/term-revisited.tex:9-10 bytes 156-230 SHA-256 6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67; target translation/content/lambda-calculus/syntax/term-revisited.tex:9-10 bytes 156-286 SHA-256 dcaf5d784da4b75f8529b2aa0c09707aad03f7aa53ea105f3db78f0e69eb7bd8; reader page pending.
+  - te-Telu-IN-TE-T086-OCC-002; OLP-0364; OLP-0364-B007; source upstream/content/lambda-calculus/syntax/term-revisited.tex:23-25 bytes 831-983 SHA-256 6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67; target translation/content/lambda-calculus/syntax/term-revisited.tex:24-26 bytes 1448-1825 SHA-256 dcaf5d784da4b75f8529b2aa0c09707aad03f7aa53ea105f3db78f0e69eb7bd8; reader page pending.
+  - te-Telu-IN-TE-T086-OCC-003; OLP-0364; OLP-0364-B008; source upstream/content/lambda-calculus/syntax/term-revisited.tex:27-35 bytes 984-1299 SHA-256 6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67; target translation/content/lambda-calculus/syntax/term-revisited.tex:28-36 bytes 1826-2425 SHA-256 dcaf5d784da4b75f8529b2aa0c09707aad03f7aa53ea105f3db78f0e69eb7bd8; reader page pending.
+  - te-Telu-IN-TE-T086-OCC-004; OLP-0364; OLP-0364-B012; source upstream/content/lambda-calculus/syntax/term-revisited.tex:48-53 bytes 1644-1928 SHA-256 6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67; target translation/content/lambda-calculus/syntax/term-revisited.tex:49-56 bytes 3181-4274 SHA-256 dcaf5d784da4b75f8529b2aa0c09707aad03f7aa53ea105f3db78f0e69eb7bd8; reader page pending.
+  - te-Telu-IN-TE-T086-OCC-005; OLP-0364; OLP-0364-B018; source upstream/content/lambda-calculus/syntax/term-revisited.tex:83-92 bytes 3036-3530 SHA-256 6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67; target translation/content/lambda-calculus/syntax/term-revisited.tex:87-96 bytes 7076-8116 SHA-256 dcaf5d784da4b75f8529b2aa0c09707aad03f7aa53ea105f3db78f0e69eb7bd8; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -10807,3 +10837,55 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
   - te-Telu-IN-OLTELAMDEB-003-OCC-001; OLP-0363; OLP-0363-B008; source upstream/content/lambda-calculus/syntax/de-bruijn.tex:31-37 bytes 1266-1529 SHA-256 7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35; target translation/content/lambda-calculus/syntax/de-bruijn.tex:79 bytes 6901-7442 SHA-256 d5815059f8d7c3239f55dc9c1fc23c20e816190038d3666ca42f39ac486ed90c; reader page pending.
   - te-Telu-IN-OLTELAMDEB-003-OCC-002; OLP-0363; OLP-0363-B012; source upstream/content/lambda-calculus/syntax/de-bruijn.tex:61-73 bytes 2291-2757 SHA-256 7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35; target translation/content/lambda-calculus/syntax/de-bruijn.tex:79 bytes 6901-7442 SHA-256 d5815059f8d7c3239f55dc9c1fc23c20e816190038d3666ca42f39ac486ed90c; reader page pending.
+
+## te-Telu-IN-OLTELAMTR-001 — OLTELAMTR-001: class substitution result stated as raw representative term
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: made the quotient-class result type explicit in Telugu prose while preserving the source formula and adding an adjacent disclosure
+
+- Intended sense: Repair the audited class substitution result stated as raw representative term at lines 48-53, def:sub, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMTR-20260925:OLTELAMTR-001 [checked_supports], content/lambda-calculus/syntax/term-revisited.tex; lines 48-53, def:sub; class_substitution_result_stated_as_raw_representative_term; made the quotient-class result type explicit in Telugu prose while preserving the source formula and adding an adjacent disclosure.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: వర్గంపై ప్రతిస్థాపన ఫలితం ముడి పదం కాదు, ఆ పదాన్ని కలిగి ఉన్న ఆల్ఫా-తుల్యతా వర్గమని తెలుగు గద్యం స్పష్టంచేస్తుందా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMTR-001-OCC-001; OLP-0364; OLP-0364-B012; source upstream/content/lambda-calculus/syntax/term-revisited.tex:48-53 bytes 1644-1928 SHA-256 6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67; target translation/content/lambda-calculus/syntax/term-revisited.tex:55 bytes 3718-4263 SHA-256 dcaf5d784da4b75f8529b2aa0c09707aad03f7aa53ea105f3db78f0e69eb7bd8; reader page pending.
+
+## te-Telu-IN-OLTELAMTR-002 — OLTELAMTR-002: well definedness claim depends on upstream unproved corollary
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: retained the upstream corollary reference and disclosed its unresolved inherited theorem-proof gaps rather than asserting independent well-definedness
+
+- Intended sense: Repair the audited well definedness claim depends on upstream unproved corollary at line 55, dependency on alpha.tex cor:sub and thm:sub, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMTR-20260925:OLTELAMTR-002 [checked_supports], content/lambda-calculus/syntax/term-revisited.tex; line 55, dependency on alpha.tex cor:sub and thm:sub; well_definedness_claim_depends_on_upstream_unproved_corollary; retained the upstream corollary reference and disclosed its unresolved inherited theorem-proof gaps rather than asserting independent well-definedness.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: పూర్వ ఉపసిద్ధాంతంపై ఆధార సూచనను నిలిపి, OLTELAMALP-005–006 మూల నిరూపణ ఖాళీలు ఇంకా తెరిచే ఉన్నాయని స్పష్టంగా ప్రకటించామా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMTR-002-OCC-001; OLP-0364; OLP-0364-B013; source upstream/content/lambda-calculus/syntax/term-revisited.tex:55 bytes 1929-1989 SHA-256 6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67; target translation/content/lambda-calculus/syntax/term-revisited.tex:60 bytes 4464-5158 SHA-256 dcaf5d784da4b75f8529b2aa0c09707aad03f7aa53ea105f3db78f0e69eb7bd8; reader page pending.

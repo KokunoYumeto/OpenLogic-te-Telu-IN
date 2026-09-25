@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 363 of 722 draft units**. This view selects 370 of 402 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 364 of 722 draft units**. This view selects 372 of 405 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -3703,3 +3703,23 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0363; lambda-calculus/syntax/de-bruijn; translation/content/lambda-calculus/syntax/de-bruijn.tex:79; printed/PDF page pending
 
 - Please double-check: Please double-check: జాబితా పరిధి మించిన సూచికలపై G తిరుగు పటం నిర్వచితం కాదని, మూల సమీకరణం మారలేదని స్పష్టమా?
+
+## REV-OLTELAMTR-001 — OLTELAMTR-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: made the quotient-class result type explicit in Telugu prose while preserving the source formula and adding an adjacent disclosure
+
+- Occurrences: OLP-0364; lambda-calculus/syntax/term-revisited; translation/content/lambda-calculus/syntax/term-revisited.tex:55; printed/PDF page pending
+
+- Please double-check: Please double-check: వర్గంపై ప్రతిస్థాపన ఫలితం ముడి పదం కాదు, ఆ పదాన్ని కలిగి ఉన్న ఆల్ఫా-తుల్యతా వర్గమని తెలుగు గద్యం స్పష్టంచేస్తుందా?
+
+## REV-OLTELAMTR-002 — OLTELAMTR-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: retained the upstream corollary reference and disclosed its unresolved inherited theorem-proof gaps rather than asserting independent well-definedness
+
+- Occurrences: OLP-0364; lambda-calculus/syntax/term-revisited; translation/content/lambda-calculus/syntax/term-revisited.tex:60; printed/PDF page pending
+
+- Please double-check: Please double-check: పూర్వ ఉపసిద్ధాంతంపై ఆధార సూచనను నిలిపి, OLTELAMALP-005–006 మూల నిరూపణ ఖాళీలు ఇంకా తెరిచే ఉన్నాయని స్పష్టంగా ప్రకటించామా?

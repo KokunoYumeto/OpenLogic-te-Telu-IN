@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 363 of 722 draft units**. This log contains 85 terminology/sense decisions and 317 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 364 of 722 draft units**. This log contains 86 terminology/sense decisions and 319 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2047,6 +2047,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Naiveకి అనౌపచారిక అనే అనువాదం అర్థపరంగా ఉపయుక్తమైనా ఆచారబద్ధ స్వీకృతీకరణతో ఖచ్చితమైన తేడా పాఠ్యంలో వచ్చినప్పుడల్లా మూల నిర్వచనం చూసి సమీక్షించాలి. శీర్షిక, ఉపోద్ఘాతం రెండింటిలో ఒకే రూపం వాడాం.
 
 - Please double-check: Please double-check whether “అనౌపచారిక సమితి సిద్ధాంతం / ప్రాథమిక అనౌపచారిక సమితి సిద్ధాంతం” is idiomatic and technically standard for “Naive Set Theory / basic naive set theory” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T086 — alpha-equivalence class / representative / well-defined class operation / projection to Lambda-terms
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: ఆల్ఫా-తుల్యతా వర్గం / ప్రతినిధి / ప్రతినిధి ఎంపికపై ఆధారపడని వర్గ చర్య / లాంబ్డా వర్గాలపైకి దింపడం
+
+- Exact implementation: OLP-0364; lambda-calculus/syntax/term-revisited; content/lambda-calculus/syntax/term-revisited.tex:9-10 ↔ translation/content/lambda-calculus/syntax/term-revisited.tex:9-10 (OLP-0364-B004); printed/PDF page pending; OLP-0364; lambda-calculus/syntax/term-revisited; content/lambda-calculus/syntax/term-revisited.tex:23-25 ↔ translation/content/lambda-calculus/syntax/term-revisited.tex:24-26 (OLP-0364-B007); printed/PDF page pending; OLP-0364; lambda-calculus/syntax/term-revisited; content/lambda-calculus/syntax/term-revisited.tex:27-35 ↔ translation/content/lambda-calculus/syntax/term-revisited.tex:28-36 (OLP-0364-B008); printed/PDF page pending; OLP-0364; lambda-calculus/syntax/term-revisited; content/lambda-calculus/syntax/term-revisited.tex:48-53 ↔ translation/content/lambda-calculus/syntax/term-revisited.tex:49-56 (OLP-0364-B012); printed/PDF page pending; OLP-0364; lambda-calculus/syntax/term-revisited; content/lambda-calculus/syntax/term-revisited.tex:83-92 ↔ translation/content/lambda-calculus/syntax/term-revisited.tex:87-96 (OLP-0364-B018); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P008లో సమితి/సంబంధానికి సాధారణ గణిత గద్యాన్ని, TE-P027, TE-P029లో చరం/పరిధి/బద్ధ చరానికి సంబంధించిన పాఠ్యాన్ని, TE-P003, TE-P032లో నిర్వచన శైలిని ప్రత్యక్షంగా చూశాం. ఈ పేజీలు ఆల్ఫా-తుల్యతా భాగవర్గం, ప్రతినిధి ఎంపిక స్వాతంత్ర్యం, భాగపటం దింపడం అనే ప్రత్యేక భావాలను నేరుగా బోధించవు. OLP-0364లోని వర్గ నిర్వచనాలు, OLP-0362లోని ఆల్ఫా సంబంధం వాటి అర్థాన్ని నియంత్రిస్తాయి. OLTELAMTR-001లో ప్రతిస్థాపన ఫలితపు పదం/వర్గం రకం స్పష్టం; OLTELAMTR-002లో ఆధార నిరూపణ ఖాళీ ప్రకటించబడింది. α, λ, Λ, FV, Subst, rep గణిత సంకేతాలు యథాతథం; ప్రత్యేక తెలుగు నామానికి నేర సాక్ష్యమని వాటిని చూపలేదు.
+
+- Alternatives: ఆల్ఫా-తుల్యతా వర్గం, ప్రతినిధి, వర్గాలపైకి దింపడం అనే నిర్వచన-నియంత్రిత వివరణ (ఎంపిక); మూల వర్గ ప్రతిస్థాపన ఫలితాన్ని ముడి ప్రతినిధి పదంతో సమానమని మౌనంగా చెప్పడం (తిరస్కరణ); మూల నిరూపణ ఖాళీలున్నా వర్గ చర్య ప్రతినిధి-స్వతంత్రమని ఈ దశలో పూర్తి నిరూపితంగా ప్రకటించడం (తిరస్కరణ); అన్ని quotient చర్యలకు ప్రత్యక్ష స్థానిక తెలుగు సాక్ష్యం ఉందని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: ఆల్ఫా-తుల్యతా వర్గం, ప్రతినిధి పదాలు నిర్వచనపరంగా స్పష్టం; వర్గాలపైకి దింపడం అనే quotient-map వివరణకు మధ్యస్థ భాషా అనిశ్చితి ఉంది. ప్రతినిధి ఎంపికపై స్వాతంత్ర్యం మూల నిరూపణ ఖాళీ వల్ల ఇక్కడ స్వతంత్రంగా నిర్ధారించబడలేదు.
+
+- Please double-check: Please double-check whether “ఆల్ఫా-తుల్యతా వర్గం / ప్రతినిధి / ప్రతినిధి ఎంపికపై ఆధారపడని వర్గ చర్య / లాంబ్డా వర్గాలపైకి దింపడం” is idiomatic and technically standard for “alpha-equivalence class / representative / well-defined class operation / projection to Lambda-terms” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -9655,3 +9679,51 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: జాబితా పరిధి మించిన సూచికలపై G తిరుగు పటం నిర్వచితం కాదని, మూల సమీకరణం మారలేదని స్పష్టమా?
+
+## REV-OLTELAMTR-001 — OLTELAMTR-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: made the quotient-class result type explicit in Telugu prose while preserving the source formula and adding an adjacent disclosure
+
+- Exact implementation: OLP-0364; lambda-calculus/syntax/term-revisited; lines 48-53, def:sub ↔ translation/content/lambda-calculus/syntax/term-revisited.tex:55 (OLP-0364-B012); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMTR-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: made the quotient-class result type explicit in Telugu prose while preserving the source formula and adding an adjacent disclosure
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: వర్గంపై ప్రతిస్థాపన ఫలితం ముడి పదం కాదు, ఆ పదాన్ని కలిగి ఉన్న ఆల్ఫా-తుల్యతా వర్గమని తెలుగు గద్యం స్పష్టంచేస్తుందా?
+
+## REV-OLTELAMTR-002 — OLTELAMTR-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: retained the upstream corollary reference and disclosed its unresolved inherited theorem-proof gaps rather than asserting independent well-definedness
+
+- Exact implementation: OLP-0364; lambda-calculus/syntax/term-revisited; line 55, dependency on alpha.tex cor:sub and thm:sub ↔ translation/content/lambda-calculus/syntax/term-revisited.tex:60 (OLP-0364-B013); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMTR-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: retained the upstream corollary reference and disclosed its unresolved inherited theorem-proof gaps rather than asserting independent well-definedness
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: పూర్వ ఉపసిద్ధాంతంపై ఆధార సూచనను నిలిపి, OLTELAMALP-005–006 మూల నిరూపణ ఖాళీలు ఇంకా తెరిచే ఉన్నాయని స్పష్టంగా ప్రకటించామా?

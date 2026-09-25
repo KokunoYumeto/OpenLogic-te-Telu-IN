@@ -1,6 +1,6 @@
 # Priority review
 
-This view contains 57 of 402 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
+This view contains 57 of 405 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
 
 Final reader pages remain pending; exact source and target file/line locators are shown.
 
