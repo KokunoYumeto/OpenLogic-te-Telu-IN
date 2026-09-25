@@ -337,6 +337,14 @@ locations['TE-T083']=[
  L('content/lambda-calculus/syntax/de-bruijn.tex',48,51,50,56,'\\Gamma(x)','\\Gamma(x)'),
  L('content/lambda-calculus/syntax/de-bruijn.tex',61,69,65,74,'G_\\Gamma(n)','G_\\Gamma(n)')
 ];
+locations['TE-T084']=[
+ L('content/open-logic-about.tex',5,9,5,10,'formal meta-logic','ఆచారబద్ధ అధితర్కం'),
+ L('content/open-logic-about.tex',5,9,5,10,'formal methods','ఆచారబద్ధ పద్ధతులపై')
+];
+locations['TE-T085']=[
+ L('content/sets-functions-relations/sets-functions-relations-complete.tex',7,7,7,7,'Na\\"ive Set Theory','అనౌపచారిక సమితి సిద్ధాంతం'),
+ L('content/sets-functions-relations/sets-functions-relations-complete.tex',9,14,9,14,'basic naive set','ప్రాథమిక అనౌపచారిక సమితి సిద్ధాంతానికి')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -405,6 +413,8 @@ alternatives['TE-T080']=['reuse the inspected native term, variable, scope, func
 alternatives['TE-T081']=['ఇప్పటికే వాడుతున్న ప్రతిస్థాపన, పరిధి, చరం, సమితి, ఆగమన భాషను మూలంలోని పాక్షిక నియమంతో అనుసంధానించడం (ఎంపిక)','నిర్వచనంలో లేని x=y అమూర్తీకరణ సందర్భానికి ఫలితాన్ని నిశ్శబ్దంగా చేర్చడం (తిరస్కరణ)','స్థానిక పేజీలు ప్రత్యేక లాంబ్డా ప్రతిస్థాపనను నేరుగా స్థాపిస్తాయని పేర్కొనడం (తిరస్కరణ)','ఇంగ్లీషు substitution, capture పదాలను పాఠక గద్యంలో వివరణ లేకుండా వదలడం (తిరస్కరణ)'];
 alternatives['TE-T082']=['గత పదం, చరం, సంబంధం, నిరూపణ భాషలో ఆల్ఫా-పరివర్తనం, ఆల్ఫా-తుల్యతను మూల నిర్వచనాలతో నియంత్రించడం (ఎంపిక)','ఆల్ఫా-మార్పును బీటా-తగ్గింపుతో కలపడం (తిరస్కరణ)','స్థానిక పేజీలు ప్రత్యేక ఆల్ఫా నామాలను నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ)','అసంపూర్ణ మూల నిరూపణను పూర్తి నిరూపణగా ప్రకటించడం (తిరస్కరణ)'];
 alternatives['TE-T083']=['స్థానిక పదం, చరం, బంధనం, ప్రమేయ భాషతో మూల F/G సమీకరణాలను కలిపి డి బ్రూయిన్ సూచికకు వివరణ ఇవ్వడం (ఎంపిక)','01ను ఒకే సంఖ్యా సూచికగా చదవడం (తిరస్కరణ)','Gammaలో పలుసార్లు వచ్చే చరానికి ఏ స్థానమైనా తీసుకోవడం (తిరస్కరణ)','పరిధికి బయట సూచికలకూ G నిర్వచితమని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T084']=['ఆచారబద్ధ అధితర్కం, ఆచారబద్ధ పద్ధతులు అనే వేర్వేరు తాత్కాలిక పదకూర్పులు (ఎంపిక)','meta-logicను పరిచయ ఆచారబద్ధ తర్కానికే సమానంగా చూపడం (తిరస్కరణ)','రెండు శాస్త్రాలకు వివరణ లేకుండా ఆంగ్ల నామాలనే పాఠక గద్యంలో వదలడం (తిరస్కరణ)'];
+alternatives['TE-T085']=['అనౌపచారిక సమితి సిద్ధాంతం అనే అర్థవివరణను శీర్షిక, పరిచయం రెండింటిలో వాడడం (ఎంపిక)','naiveని అమాయక అనే సాధారణ విశేషణంగా అనువదించడం (తిరస్కరణ)','మూలంలో లేని సంపూర్ణ స్వీకృతిక సమితి సిద్ధాంత పరిధిని శీర్షికలో చేర్చడం (తిరస్కరణ)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -421,7 +431,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-25 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T083 record the Batch 025--Batch 044 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-25 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T085 record the Batch 025--Batch 045 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);

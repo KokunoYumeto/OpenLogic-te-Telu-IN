@@ -1,8 +1,431 @@
 {
   "schema": "telugu-openlogic-batch-qa/1",
-  "generated_utc": "2026-09-25T03:26:36.473Z",
+  "generated_utc": "2026-09-25T03:39:46.733Z",
   "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Text/intertext/mbox prose is masked; nested inline math is compared per clause independently of language-specific word order.",
   "units": [
+    {
+      "unit_id": "OLP-0001",
+      "source_path": "content/open-logic-about.tex",
+      "source_sha256": "f1212d77679b9080a2cbf1ba03f9b71f0993db10b1b28464c423652f95b5fd33",
+      "translation_sha256": "9bea9b82310c8e7cc326407336578737538af53c187d15b5ef6356f1b1c99461",
+      "source_blocks": 4,
+      "target_blocks": 4,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [],
+      "identifiers_target_core": [],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1027,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "\\chapter*{About the Open Logic Project}\n\\addcontentsline{toc}{chapter}{About the Open Logic Project}",
+          "target_start": "\\chapter*{ఓపెన్ లాజిక్ ప్రాజెక్ట్ గురించి}\n\\addcontentsline{toc}{chapter}{ఓపెన్ లాజిక్ ప్రాజెక్ట్ గురించి}"
+        },
+        {
+          "index": 2,
+          "source_start": "The \\textit{Open Logic Text} is an open-source, collaborative textbook\nof formal meta-logic and formal methods",
+          "target_start": "\\textit{Open Logic Text} అనేది ఆచారబద్ధ అధితర్కం, ఆచారబద్ధ పద్ధతులపై\nబహిరంగ మూలాలతో, సహకారంతో రూపొందుతున్న పాఠ"
+        },
+        {
+          "index": 3,
+          "source_start": "Coverage of some topics currently included may\nnot yet be complete, and many sections still require substantia",
+          "target_start": "ప్రస్తుతం చేర్చిన కొన్ని అంశాల వివరణ ఇంకా పూర్తికాకపోవచ్చు;\nఅనేక విభాగాలకు గణనీయమైన సవరణ అవసరం. భవిష్యత్తులో మ"
+        },
+        {
+          "index": 4,
+          "source_start": "The project operates in the spirit of open source. Not only is the\ntext freely available, we provide the LaTeX",
+          "target_start": "ఈ ప్రాజెక్ట్ బహిరంగ మూలాల స్ఫూర్తితో నడుస్తుంది. పాఠ్యం ఉచితంగా\nఅందుబాటులో ఉండటమే కాక, దాని LaTeX మూలాన్ని క్ర"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [],
+      "protected_target_core": [],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0002",
+      "source_path": "content/content.tex",
+      "source_sha256": "c0399669611ed01993ceb58beba2458d7a7b48102089d3a521ccb4c6d4624baa",
+      "translation_sha256": "e0535ad449a56e20b0a9eef559a22b4f23109ee4e3fb239dc8160baf0fb93477",
+      "source_blocks": 26,
+      "target_blocks": 26,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport[sets-functions-relations]{sets-functions-relations-complete}",
+        "\\olimport[propositional-logic]{propositional-logic}",
+        "\\olimport[first-order-logic]{first-order-logic}",
+        "\\olimport[model-theory]{model-theory}",
+        "\\olimport[computability]{computability}",
+        "\\olimport[turing-machines]{turing-machines}",
+        "\\olimport[incompleteness]{incompleteness}",
+        "\\olimport[second-order-logic]{second-order-logic}",
+        "\\olimport[lambda-calculus]{lambda-calculus}",
+        "\\olimport[many-valued-logic]{many-valued-logic}",
+        "\\olimport[normal-modal-logic]{normal-modal-logic}",
+        "\\olimport[applied-modal-logic]{applied-modal-logic}",
+        "\\olimport[intuitionistic-logic]{intuitionistic-logic}",
+        "\\olimport[counterfactuals]{counterfactuals}",
+        "\\olimport[set-theory]{set-theory}",
+        "\\olimport[methods]{methods}",
+        "\\olimport[history]{history}",
+        "\\olimport[reference]{reference}"
+      ],
+      "identifiers_target_core": [
+        "\\olimport[sets-functions-relations]{sets-functions-relations-complete}",
+        "\\olimport[propositional-logic]{propositional-logic}",
+        "\\olimport[first-order-logic]{first-order-logic}",
+        "\\olimport[model-theory]{model-theory}",
+        "\\olimport[computability]{computability}",
+        "\\olimport[turing-machines]{turing-machines}",
+        "\\olimport[incompleteness]{incompleteness}",
+        "\\olimport[second-order-logic]{second-order-logic}",
+        "\\olimport[lambda-calculus]{lambda-calculus}",
+        "\\olimport[many-valued-logic]{many-valued-logic}",
+        "\\olimport[normal-modal-logic]{normal-modal-logic}",
+        "\\olimport[applied-modal-logic]{applied-modal-logic}",
+        "\\olimport[intuitionistic-logic]{intuitionistic-logic}",
+        "\\olimport[counterfactuals]{counterfactuals}",
+        "\\olimport[set-theory]{set-theory}",
+        "\\olimport[methods]{methods}",
+        "\\olimport[history]{history}",
+        "\\olimport[reference]{reference}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 953,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% open-logic.tex\n% compiles to produce complete text using open-logic-dev style",
+          "target_start": "% open-logic.tex\n% open-logic-dev శైలితో మొత్తం పాఠ్యాన్ని నిర్మిస్తుంది"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../include/open-logic-part]{subfiles}",
+          "target_start": "\\documentclass[../include/open-logic-part]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\clearpage",
+          "target_start": "\\clearpage"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{editorial}\nThis file loads all content included in the Open Logic Project.\nEditorial notes like this, i",
+          "target_start": "\\begin{editorial}\nఈ ఫైలు ఓపెన్ లాజిక్ ప్రాజెక్ట్‌లో చేర్చిన మొత్తం విషయాన్ని లోడ్\nచేస్తుంది. ఇలాంటివి చూపించిన"
+        },
+        {
+          "index": 6,
+          "source_start": "The Open Logic Project provides many mechanisms by which a text can be\ngenerate which is more appropriate for ",
+          "target_start": "బోధనకు లేదా స్వయంగా అధ్యయనానికి మరింత అనుకూలమైన పాఠ్యాన్ని\nతయారుచేసే అనేక విధానాలు ఓపెన్ లాజిక్ ప్రాజెక్ట్‌లో "
+        },
+        {
+          "index": 7,
+          "source_start": "To find PDFs more suitable for teaching and studying, have a look at\nthe \\href{http://builds.openlogicproject.",
+          "target_start": "బోధన, అధ్యయనానికి మరింత అనుకూలమైన PDFల కోసం\n\\href{http://builds.openlogicproject.org/}{OLP వెబ్‌సైటులోని నమూనా"
+        },
+        {
+          "index": 8,
+          "source_start": "\\olimport[sets-functions-relations]{sets-functions-relations-complete}",
+          "target_start": "\\olimport[sets-functions-relations]{sets-functions-relations-complete}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport[propositional-logic]{propositional-logic}",
+          "target_start": "\\olimport[propositional-logic]{propositional-logic}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\olimport[first-order-logic]{first-order-logic}",
+          "target_start": "\\olimport[first-order-logic]{first-order-logic}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\olimport[model-theory]{model-theory}",
+          "target_start": "\\olimport[model-theory]{model-theory}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\olimport[computability]{computability}",
+          "target_start": "\\olimport[computability]{computability}"
+        },
+        {
+          "index": 13,
+          "source_start": "\\olimport[turing-machines]{turing-machines}",
+          "target_start": "\\olimport[turing-machines]{turing-machines}"
+        },
+        {
+          "index": 14,
+          "source_start": "\\olimport[incompleteness]{incompleteness}",
+          "target_start": "\\olimport[incompleteness]{incompleteness}"
+        },
+        {
+          "index": 15,
+          "source_start": "\\olimport[second-order-logic]{second-order-logic}",
+          "target_start": "\\olimport[second-order-logic]{second-order-logic}"
+        },
+        {
+          "index": 16,
+          "source_start": "\\olimport[lambda-calculus]{lambda-calculus}",
+          "target_start": "\\olimport[lambda-calculus]{lambda-calculus}"
+        },
+        {
+          "index": 17,
+          "source_start": "\\olimport[many-valued-logic]{many-valued-logic}",
+          "target_start": "\\olimport[many-valued-logic]{many-valued-logic}"
+        },
+        {
+          "index": 18,
+          "source_start": "\\olimport[normal-modal-logic]{normal-modal-logic}",
+          "target_start": "\\olimport[normal-modal-logic]{normal-modal-logic}"
+        },
+        {
+          "index": 19,
+          "source_start": "\\olimport[applied-modal-logic]{applied-modal-logic}",
+          "target_start": "\\olimport[applied-modal-logic]{applied-modal-logic}"
+        },
+        {
+          "index": 20,
+          "source_start": "\\olimport[intuitionistic-logic]{intuitionistic-logic}",
+          "target_start": "\\olimport[intuitionistic-logic]{intuitionistic-logic}"
+        },
+        {
+          "index": 21,
+          "source_start": "\\olimport[counterfactuals]{counterfactuals}",
+          "target_start": "\\olimport[counterfactuals]{counterfactuals}"
+        },
+        {
+          "index": 22,
+          "source_start": "\\olimport[set-theory]{set-theory}",
+          "target_start": "\\olimport[set-theory]{set-theory}"
+        },
+        {
+          "index": 23,
+          "source_start": "\\olimport[methods]{methods}",
+          "target_start": "\\olimport[methods]{methods}"
+        },
+        {
+          "index": 24,
+          "source_start": "\\olimport[history]{history}",
+          "target_start": "\\olimport[history]{history}"
+        },
+        {
+          "index": 25,
+          "source_start": "\\olimport[reference]{reference}",
+          "target_start": "\\olimport[reference]{reference}"
+        },
+        {
+          "index": 26,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../include/open-logic-part]{subfiles}",
+        "\\olimport[sets-functions-relations]{sets-functions-relations-complete}",
+        "\\olimport[propositional-logic]{propositional-logic}",
+        "\\olimport[first-order-logic]{first-order-logic}",
+        "\\olimport[model-theory]{model-theory}",
+        "\\olimport[computability]{computability}",
+        "\\olimport[turing-machines]{turing-machines}",
+        "\\olimport[incompleteness]{incompleteness}",
+        "\\olimport[second-order-logic]{second-order-logic}",
+        "\\olimport[lambda-calculus]{lambda-calculus}",
+        "\\olimport[many-valued-logic]{many-valued-logic}",
+        "\\olimport[normal-modal-logic]{normal-modal-logic}",
+        "\\olimport[applied-modal-logic]{applied-modal-logic}",
+        "\\olimport[intuitionistic-logic]{intuitionistic-logic}",
+        "\\olimport[counterfactuals]{counterfactuals}",
+        "\\olimport[set-theory]{set-theory}",
+        "\\olimport[methods]{methods}",
+        "\\olimport[history]{history}",
+        "\\olimport[reference]{reference}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../include/open-logic-part]{subfiles}",
+        "\\olimport[sets-functions-relations]{sets-functions-relations-complete}",
+        "\\olimport[propositional-logic]{propositional-logic}",
+        "\\olimport[first-order-logic]{first-order-logic}",
+        "\\olimport[model-theory]{model-theory}",
+        "\\olimport[computability]{computability}",
+        "\\olimport[turing-machines]{turing-machines}",
+        "\\olimport[incompleteness]{incompleteness}",
+        "\\olimport[second-order-logic]{second-order-logic}",
+        "\\olimport[lambda-calculus]{lambda-calculus}",
+        "\\olimport[many-valued-logic]{many-valued-logic}",
+        "\\olimport[normal-modal-logic]{normal-modal-logic}",
+        "\\olimport[applied-modal-logic]{applied-modal-logic}",
+        "\\olimport[intuitionistic-logic]{intuitionistic-logic}",
+        "\\olimport[counterfactuals]{counterfactuals}",
+        "\\olimport[set-theory]{set-theory}",
+        "\\olimport[methods]{methods}",
+        "\\olimport[history]{history}",
+        "\\olimport[reference]{reference}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0003",
+      "source_path": "content/sets-functions-relations/sets-functions-relations-complete.tex",
+      "source_sha256": "f5eb4b8801890604b79298e46a8327f34ca3bb9ed673d798ec3436d349f22926",
+      "translation_sha256": "0a02bfdade8fd10b0e0ca1b5e6e2e3cb1af1dc7237bc736103a40998ddfc1fe8",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport[sets]{sets}",
+        "\\olimport[relations]{relations-complete}",
+        "\\olimport[functions]{functions}",
+        "\\olimport[size-of-sets]{size-of-sets-complete}",
+        "\\olimport[arithmetization]{arithmetization}",
+        "\\olimport[infinite]{infinite}"
+      ],
+      "identifiers_target_core": [
+        "\\olimport[sets]{sets}",
+        "\\olimport[relations]{relations-complete}",
+        "\\olimport[functions]{functions}",
+        "\\olimport[size-of-sets]{size-of-sets-complete}",
+        "\\olimport[arithmetization]{arithmetization}",
+        "\\olimport[infinite]{infinite}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 186,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: sets-functions-relations-complete",
+          "target_start": "% Part: sets-functions-relations-complete"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../include/open-logic-part]{subfiles}",
+          "target_start": "\\documentclass[../../include/open-logic-part]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olpart{sfr}{Na\\\"ive Set Theory}",
+          "target_start": "\\olpart{sfr}{అనౌపచారిక సమితి సిద్ధాంతం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\begin{editorial}\n  The material in this part is an introduction to basic naive set\n  theory. With the inclusi",
+          "target_start": "\\begin{editorial}\n  ఈ భాగం ప్రాథమిక అనౌపచారిక సమితి సిద్ధాంతానికి పరిచయం.\n  టిమ్ బటన్ రచించిన \\emph{Open Set T"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport[sets]{sets}",
+          "target_start": "\\olimport[sets]{sets}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport[relations]{relations-complete}",
+          "target_start": "\\olimport[relations]{relations-complete}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\olimport[functions]{functions}",
+          "target_start": "\\olimport[functions]{functions}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport[size-of-sets]{size-of-sets-complete}",
+          "target_start": "\\olimport[size-of-sets]{size-of-sets-complete}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\olimport[arithmetization]{arithmetization}",
+          "target_start": "\\olimport[arithmetization]{arithmetization}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\olimport[infinite]{infinite}",
+          "target_start": "\\olimport[infinite]{infinite}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\OLEndPartHook\n\\end{document}",
+          "target_start": "\\OLEndPartHook\n\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../include/open-logic-part]{subfiles}",
+        "\\olimport[sets]{sets}",
+        "\\olimport[relations]{relations-complete}",
+        "\\olimport[functions]{functions}",
+        "\\olimport[size-of-sets]{size-of-sets-complete}",
+        "\\olimport[arithmetization]{arithmetization}",
+        "\\olimport[infinite]{infinite}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../include/open-logic-part]{subfiles}",
+        "\\olimport[sets]{sets}",
+        "\\olimport[relations]{relations-complete}",
+        "\\olimport[functions]{functions}",
+        "\\olimport[size-of-sets]{size-of-sets-complete}",
+        "\\olimport[arithmetization]{arithmetization}",
+        "\\olimport[infinite]{infinite}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
     {
       "unit_id": "OLP-0004",
       "source_path": "content/sets-functions-relations/sets/sets.tex",

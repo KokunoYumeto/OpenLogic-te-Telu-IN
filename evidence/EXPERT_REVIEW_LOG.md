@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 360 of 722 draft units**. This log contains 83 terminology/sense decisions and 317 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 363 of 722 draft units**. This log contains 85 terminology/sense decisions and 317 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1999,6 +1999,54 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: సూచికల గణన ఉదాహరణతో స్పష్టం; డి బ్రూయిన్, సందర్భ జాబితా అనే తెలుగు నామాల్లో మధ్యస్థ అనిశ్చితి ఉంది. జాబితా-పొడవు మించిన సూచికలపై G నిర్వచితం కాదు అనే పరిమితిని తప్పక ఉంచాలి.
 
 - Please double-check: Please double-check whether “డి బ్రూయిన్ సూచిక / పేరులేని సూచికా పదం / చరాల సందర్భ జాబితా / దగ్గరి బంధకం / పాక్షిక తిరుగు అనువాదం” is idiomatic and technically standard for “De Bruijn index / indexed nameless term / context list / nearest binder / reverse translation partiality” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T084 — formal meta-logic / formal methods
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: ఆచారబద్ధ అధితర్కం / ఆచారబద్ధ పద్ధతులు
+
+- Exact implementation: OLP-0001; open-logic-about; content/open-logic-about.tex:5-9 ↔ translation/content/open-logic-about.tex:5-10 (OLP-0001-B002); printed/PDF page pending; OLP-0001; open-logic-about; content/open-logic-about.tex:5-9 ↔ translation/content/open-logic-about.tex:5-10 (OLP-0001-B002); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P027, TE-P032లో ఆచారబద్ధ తర్కం, చరం, నిరూపణ వంటి సాధారణ రిజిస్టర్‌ను; TE-P003లో పాఠ్య వివరణ శైలిని ప్రత్యక్షంగా చూశాం. ఆ పేజీలు అధితర్కం అనే ప్రత్యేక నామానికి గానీ Open Logic Project చరిత్రకు గానీ ప్రత్యక్ష సాక్ష్యం కావు. OLP-0001 మూలంలోని formal meta-logicను తర్కాన్ని పరిశీలించే అధ్యయనంగా, formal methodsను దాని నుంచి వేరు పద్ధతులుగా ఉంచే తాత్కాలిక పదకూర్పు ఎంచుకున్నాం. Open Logic Text అనేది మూల గ్రంథ నామం; దాని పేరును యథాతథంగా ఉంచాం.
+
+- Alternatives: ఆచారబద్ధ అధితర్కం, ఆచారబద్ధ పద్ధతులు అనే వేర్వేరు తాత్కాలిక పదకూర్పులు (ఎంపిక); meta-logicను పరిచయ ఆచారబద్ధ తర్కానికే సమానంగా చూపడం (తిరస్కరణ); రెండు శాస్త్రాలకు వివరణ లేకుండా ఆంగ్ల నామాలనే పాఠక గద్యంలో వదలడం (తిరస్కరణ)
+
+- Uncertainty: అధితర్కం నామానికి మధ్యస్థ అనిశ్చితి ఉంది; స్థిర తెలుగు అధితార్కిక పాఠ్యసాక్ష్యం ఇంకా కనుగొనలేదు. మూలంలోని intermediate level, non-mathematical audience, rigor అనే తేడాలను మార్చలేదు.
+
+- Please double-check: Please double-check whether “ఆచారబద్ధ అధితర్కం / ఆచారబద్ధ పద్ధతులు” is idiomatic and technically standard for “formal meta-logic / formal methods” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T085 — Naive Set Theory / basic naive set theory
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: అనౌపచారిక సమితి సిద్ధాంతం / ప్రాథమిక అనౌపచారిక సమితి సిద్ధాంతం
+
+- Exact implementation: OLP-0003; sets-functions-relations/sets-functions-relations-complete; content/sets-functions-relations/sets-functions-relations-complete.tex:7 ↔ translation/content/sets-functions-relations/sets-functions-relations-complete.tex:7 (OLP-0003-B004); printed/PDF page pending; OLP-0003; sets-functions-relations/sets-functions-relations-complete; content/sets-functions-relations/sets-functions-relations-complete.tex:9-14 ↔ translation/content/sets-functions-relations/sets-functions-relations-complete.tex:9-14 (OLP-0003-B005); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P008లో సమితి, సమితి భావన, గణిత వివరణను; TE-P003, TE-P032లో పరిచయ/నిర్వచన శైలిని ప్రత్యక్షంగా చూశాం. ఈ పేజీలు naive set theory అనే ప్రత్యేక ఆంగ్ల శీర్షికకు ప్రత్యక్ష తెలుగు సమానార్థాన్ని ఇవ్వవు. OLP-0003 మూలం basic naive set theoryని పరిచయంగా చెబుతుంది; అందుకు అనౌపచారిక అనే అర్థవివరణను తాత్కాలికంగా ఎంచుకున్నాం. Tim Button యొక్క Open Set Theory సరైన గ్రంథ నామంగానే నిలిచింది. Tim Button వ్యక్తి పేరు; Open Set Theory గ్రంథ నామం; OLP మూల సంక్షిప్త రూపం. ఇవి పదజాల సాక్ష్యాలుగా పరిగణించలేదు.
+
+- Alternatives: అనౌపచారిక సమితి సిద్ధాంతం అనే అర్థవివరణను శీర్షిక, పరిచయం రెండింటిలో వాడడం (ఎంపిక); naiveని అమాయక అనే సాధారణ విశేషణంగా అనువదించడం (తిరస్కరణ); మూలంలో లేని సంపూర్ణ స్వీకృతిక సమితి సిద్ధాంత పరిధిని శీర్షికలో చేర్చడం (తిరస్కరణ)
+
+- Uncertainty: Naiveకి అనౌపచారిక అనే అనువాదం అర్థపరంగా ఉపయుక్తమైనా ఆచారబద్ధ స్వీకృతీకరణతో ఖచ్చితమైన తేడా పాఠ్యంలో వచ్చినప్పుడల్లా మూల నిర్వచనం చూసి సమీక్షించాలి. శీర్షిక, ఉపోద్ఘాతం రెండింటిలో ఒకే రూపం వాడాం.
+
+- Please double-check: Please double-check whether “అనౌపచారిక సమితి సిద్ధాంతం / ప్రాథమిక అనౌపచారిక సమితి సిద్ధాంతం” is idiomatic and technically standard for “Naive Set Theory / basic naive set theory” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 

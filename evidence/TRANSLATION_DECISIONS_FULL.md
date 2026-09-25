@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **360 of 722 source units drafted**. This readable view contains all 400 decisions and 750 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **363 of 722 source units drafted**. This readable view contains all 402 decisions and 754 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2432,6 +2432,60 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T083-OCC-002; OLP-0363; OLP-0363-B008; source upstream/content/lambda-calculus/syntax/de-bruijn.tex:31-38 bytes 1266-1540 SHA-256 7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35; target translation/content/lambda-calculus/syntax/de-bruijn.tex:33-40 bytes 3198-3684 SHA-256 d5815059f8d7c3239f55dc9c1fc23c20e816190038d3666ca42f39ac486ed90c; reader page pending.
   - te-Telu-IN-TE-T083-OCC-003; OLP-0363; OLP-0363-B009; source upstream/content/lambda-calculus/syntax/de-bruijn.tex:40-51 bytes 1541-2034 SHA-256 7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35; target translation/content/lambda-calculus/syntax/de-bruijn.tex:42-56 bytes 3685-5443 SHA-256 d5815059f8d7c3239f55dc9c1fc23c20e816190038d3666ca42f39ac486ed90c; reader page pending.
   - te-Telu-IN-TE-T083-OCC-004; OLP-0363; OLP-0363-B012; source upstream/content/lambda-calculus/syntax/de-bruijn.tex:61-69 bytes 2291-2656 SHA-256 7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35; target translation/content/lambda-calculus/syntax/de-bruijn.tex:65-73 bytes 5891-6404 SHA-256 d5815059f8d7c3239f55dc9c1fc23c20e816190038d3666ca42f39ac486ed90c; reader page pending.
+
+## te-Telu-IN-TE-T084 — formal meta-logic / formal methods
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: ఆచారబద్ధ అధితర్కం / ఆచారబద్ధ పద్ధతులు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “formal meta-logic / formal methods” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: అధితర్కం నామానికి మధ్యస్థ అనిశ్చితి ఉంది; స్థిర తెలుగు అధితార్కిక పాఠ్యసాక్ష్యం ఇంకా కనుగొనలేదు. మూలంలోని intermediate level, non-mathematical audience, rigor అనే తేడాలను మార్చలేదు.
+
+- Rationale: TE-P027, TE-P032లో ఆచారబద్ధ తర్కం, చరం, నిరూపణ వంటి సాధారణ రిజిస్టర్‌ను; TE-P003లో పాఠ్య వివరణ శైలిని ప్రత్యక్షంగా చూశాం. ఆ పేజీలు అధితర్కం అనే ప్రత్యేక నామానికి గానీ Open Logic Project చరిత్రకు గానీ ప్రత్యక్ష సాక్ష్యం కావు. OLP-0001 మూలంలోని formal meta-logicను తర్కాన్ని పరిశీలించే అధ్యయనంగా, formal methodsను దాని నుంచి వేరు పద్ధతులుగా ఉంచే తాత్కాలిక పదకూర్పు ఎంచుకున్నాం. Open Logic Text అనేది మూల గ్రంథ నామం; దాని పేరును యథాతథంగా ఉంచాం.
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: ఆచారబద్ధ అధితర్కం, ఆచారబద్ధ పద్ధతులు అనే వేర్వేరు తాత్కాలిక పదకూర్పులు [viable_alternative: ఎంపిక] | meta-logicను పరిచయ ఆచారబద్ధ తర్కానికే సమానంగా చూపడం [viable_alternative: తిరస్కరణ] | రెండు శాస్త్రాలకు వివరణ లేకుండా ఆంగ్ల నామాలనే పాఠక గద్యంలో వదలడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “ఆచారబద్ధ అధితర్కం / ఆచారబద్ధ పద్ధతులు” is idiomatic and technically standard for “formal meta-logic / formal methods” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T084-OCC-001; OLP-0001; OLP-0001-B002; source upstream/content/open-logic-about.tex:5-9 bytes 103-422 SHA-256 f1212d77679b9080a2cbf1ba03f9b71f0993db10b1b28464c423652f95b5fd33; target translation/content/open-logic-about.tex:5-10 bytes 221-1162 SHA-256 9bea9b82310c8e7cc326407336578737538af53c187d15b5ef6356f1b1c99461; reader page pending.
+  - te-Telu-IN-TE-T084-OCC-002; OLP-0001; OLP-0001-B002; source upstream/content/open-logic-about.tex:5-9 bytes 103-422 SHA-256 f1212d77679b9080a2cbf1ba03f9b71f0993db10b1b28464c423652f95b5fd33; target translation/content/open-logic-about.tex:5-10 bytes 221-1162 SHA-256 9bea9b82310c8e7cc326407336578737538af53c187d15b5ef6356f1b1c99461; reader page pending.
+
+## te-Telu-IN-TE-T085 — Naive Set Theory / basic naive set theory
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: అనౌపచారిక సమితి సిద్ధాంతం / ప్రాథమిక అనౌపచారిక సమితి సిద్ధాంతం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “Naive Set Theory / basic naive set theory” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: Naiveకి అనౌపచారిక అనే అనువాదం అర్థపరంగా ఉపయుక్తమైనా ఆచారబద్ధ స్వీకృతీకరణతో ఖచ్చితమైన తేడా పాఠ్యంలో వచ్చినప్పుడల్లా మూల నిర్వచనం చూసి సమీక్షించాలి. శీర్షిక, ఉపోద్ఘాతం రెండింటిలో ఒకే రూపం వాడాం.
+
+- Rationale: TE-P008లో సమితి, సమితి భావన, గణిత వివరణను; TE-P003, TE-P032లో పరిచయ/నిర్వచన శైలిని ప్రత్యక్షంగా చూశాం. ఈ పేజీలు naive set theory అనే ప్రత్యేక ఆంగ్ల శీర్షికకు ప్రత్యక్ష తెలుగు సమానార్థాన్ని ఇవ్వవు. OLP-0003 మూలం basic naive set theoryని పరిచయంగా చెబుతుంది; అందుకు అనౌపచారిక అనే అర్థవివరణను తాత్కాలికంగా ఎంచుకున్నాం. Tim Button యొక్క Open Set Theory సరైన గ్రంథ నామంగానే నిలిచింది. Tim Button వ్యక్తి పేరు; Open Set Theory గ్రంథ నామం; OLP మూల సంక్షిప్త రూపం. ఇవి పదజాల సాక్ష్యాలుగా పరిగణించలేదు.
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: అనౌపచారిక సమితి సిద్ధాంతం అనే అర్థవివరణను శీర్షిక, పరిచయం రెండింటిలో వాడడం [viable_alternative: ఎంపిక] | naiveని అమాయక అనే సాధారణ విశేషణంగా అనువదించడం [viable_alternative: తిరస్కరణ] | మూలంలో లేని సంపూర్ణ స్వీకృతిక సమితి సిద్ధాంత పరిధిని శీర్షికలో చేర్చడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “అనౌపచారిక సమితి సిద్ధాంతం / ప్రాథమిక అనౌపచారిక సమితి సిద్ధాంతం” is idiomatic and technically standard for “Naive Set Theory / basic naive set theory” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T085-OCC-001; OLP-0003; OLP-0003-B004; source upstream/content/sets-functions-relations/sets-functions-relations-complete.tex:7 bytes 118-151 SHA-256 f5eb4b8801890604b79298e46a8327f34ca3bb9ed673d798ec3436d349f22926; target translation/content/sets-functions-relations/sets-functions-relations-complete.tex:7 bytes 118-204 SHA-256 0a02bfdade8fd10b0e0ca1b5e6e2e3cb1af1dc7237bc736103a40998ddfc1fe8; reader page pending.
+  - te-Telu-IN-TE-T085-OCC-002; OLP-0003; OLP-0003-B005; source upstream/content/sets-functions-relations/sets-functions-relations-complete.tex:9-14 bytes 152-456 SHA-256 f5eb4b8801890604b79298e46a8327f34ca3bb9ed673d798ec3436d349f22926; target translation/content/sets-functions-relations/sets-functions-relations-complete.tex:9-14 bytes 205-793 SHA-256 0a02bfdade8fd10b0e0ca1b5e6e2e3cb1af1dc7237bc736103a40998ddfc1fe8; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
