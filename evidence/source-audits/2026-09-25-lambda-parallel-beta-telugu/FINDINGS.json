@@ -1,0 +1,46 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTELAMCRPB-20260925",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": ["OLP-0369"],
+    "finding_count": 3
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "source_file": {
+    "path": "content/lambda-calculus/church-rosser/parallel-beta-reduction.tex",
+    "bytes": 6191,
+    "sha256": "37905b8d25e97bb2554d4df43321bbcefd55816a7d89fe85279c4119a7871f52"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTELAMCRPB-001",
+      "classification": "parallel_abstraction_rule_has_ordinary_beta_premise",
+      "source_locator": "lines 16-25, especially line 20; corroboration lines 83-90 and 113-118",
+      "finding": "సమాంతర తగ్గింపు ఆగమన నిర్వచనంలోని అమూర్తీకరణ నియమానికి మూలం N xrightarrow{beta} N' అని ఇస్తుంది. తరువాతి నిరూపణలు అదే నియమానికి N bredpar N'ను పూర్వాపేక్షగా వాడుతున్నాయి; λx.x స్వప్రతిఫలకత్వానికీ ఆ పూర్వాపేక్ష అవసరం.",
+      "controlling_evidence": "Rule 2 is the only abstraction-congruence rule. The reflexivity theorem for an abstraction with an irreducible body cannot follow from the printed ordinary-beta premise, and the lemma proofs explicitly instantiate rule 2 with a parallel-reduction premise.",
+      "required_translation_handling": "Use N \\bredpar N' in rule 2; place an adjacent source-correction disclosure. Do not modify the frozen English source or other rules."
+    },
+    {
+      "finding_id": "OLTELAMCRPB-002",
+      "classification": "substitution_lemma_abstraction_case_missing_prime",
+      "source_locator": "lines 75-90, especially line 89",
+      "finding": "ప్రతిస్థాపన ఉపసిద్ధాంతపు అమూర్తీకరణ సందర్భంలో చివరి విప్పిన సూత్రం కుడివైపు R అని ఉంది; లక్ష్యానికి అనుగుణంగా R' కావాలి.",
+      "controlling_evidence": "The lemma conclusion at lines 75-76 and the immediately preceding unexpanded goal at lines 86-87 both substitute R' on the right. The induction hypothesis also takes R bredpar R'.",
+      "required_translation_handling": "Use R' in the right-hand expanded substitution at the indicated occurrence and disclose the change adjacent to the formula."
+    },
+    {
+      "finding_id": "OLTELAMCRPB-003",
+      "classification": "substitution_composition_proof_gap_disclosed",
+      "source_locator": "lines 92-98, in context of the partial substitution in syntax/substitution.tex and alpha-class descent in syntax/alpha.tex",
+      "finding": "మూలం అంతర్భాగ ప్రతిస్థాపనల సమానార్థకతను, బద్ధ చరాన్ని తాజా ప్రతినిధిగా ఎంచుకోవడాన్ని, అన్ని ప్రతిస్థాపనల నిర్వచితత్వాన్ని వివరించకుండా 'i.e.' అంటుంది. పూర్వ ఆల్ఫా-వర్గ ప్రతిస్థాపన నిరూపణలో OLTELAMALP-005–006 ఖాళీలు ఇంకా ఉన్నాయి.",
+      "controlling_evidence": "The raw-term substitution definition is partial when a binder clashes with the replaced variable or with a free variable of the substituting term. The displayed case-4 interchange needs fresh representatives and a justified composition law; neither appears in the printed proof.",
+      "required_translation_handling": "Preserve both printed formulas and the exercise while marking the final implication as the source's argument rather than an independently completed proof; disclose the exact missing side conditions adjacent to the case."
+    }
+  ]
+}

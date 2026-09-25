@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 368 of 722 draft units**. This view selects 377 of 413 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 369 of 722 draft units**. This view selects 380 of 417 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -3773,3 +3773,33 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0368; lambda-calculus/church-rosser/definitions-and-properties; translation/content/lambda-calculus/church-rosser/definitions-and-properties.tex:91; printed/PDF page pending
 
 - Please double-check: Please double-check: జాలక సరిహద్దు నిర్వచనాల నుంచి N_{m,0}=P_m, N_{0,n}=Q_n అని వస్తుందని, మూల P/Q పేర్లను అంతకుమించి ఏదీ మార్చకుండా సరిచేశామా?
+
+## REV-OLTELAMCRPB-001 — OLTELAMCRPB-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored the parallel premise of abstraction-congruence, with adjacent Telugu disclosure
+
+- Occurrences: OLP-0369; lambda-calculus/church-rosser/parallel-beta-reduction; translation/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:23; printed/PDF page pending
+
+- Please double-check: Please double-check: అమూర్తీకరణ నియమపు పూర్వాపేక్ష సమాంతర తగ్గింపే అని, స్వప్రతిఫలకత్వం మరియు తరువాతి ఆగమన వాదనలతో సరిపోతుందని స్పష్టమా?
+
+## REV-OLTELAMCRPB-002 — OLTELAMCRPB-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored R-prime in the right-hand expanded substitution, with adjacent Telugu disclosure
+
+- Occurrences: OLP-0369; lambda-calculus/church-rosser/parallel-beta-reduction; translation/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:97; printed/PDF page pending
+
+- Please double-check: Please double-check: ప్రతిస్థాపన ఉపసిద్ధాంతపు రెండవ సందర్భంలో కుడివైపు R-prime పునరుద్ధరణ ఉపసిద్ధాంత లక్ష్యంతో సరిపోతుందా?
+
+## REV-OLTELAMCRPB-003 — OLTELAMCRPB-003
+
+- Priority/confidence: high / source_proof_gap_disclosed_not_repaired
+
+- Chosen wording/treatment: retained the displayed source formulas but disclosed missing freshness, definedness and substitution-interchange justification; no complete proof claimed
+
+- Occurrences: OLP-0369; lambda-calculus/church-rosser/parallel-beta-reduction; translation/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:110; printed/PDF page pending
+
+- Please double-check: Please double-check: నాలుగవ సందర్భానికి అవసరమైన తాజా ప్రతినిధులు, ప్రతిస్థాపనల నిర్వచితత్వం, మార్పిడి నియమం మూలంలో నిరూపించలేదనే పరిమితి తగినంత స్పష్టమా?

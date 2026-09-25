@@ -62,7 +62,9 @@ def main() -> None:
 
     decisions = register["decisions"]
     term_records = jsonl(data_dir / "TERM_DECISIONS.jsonl")
-    correction_records = [item for item in jsonl(data_dir / "SOURCE_CORRECTIONS.jsonl") if item["status"].startswith("applied")]
+    correction_records = [item for item in jsonl(data_dir / "SOURCE_CORRECTIONS.jsonl")
+                          if item["status"].startswith("applied") or
+                          item["status"] == "source_proof_gap_disclosed_structural_qa_pass"]
     source_manifest = jsonl(data_dir / "SOURCE_MANIFEST.jsonl")
     expected_source_units = sum(
         (repo / "translation" / Path(str(item["source_path"]))).is_file()

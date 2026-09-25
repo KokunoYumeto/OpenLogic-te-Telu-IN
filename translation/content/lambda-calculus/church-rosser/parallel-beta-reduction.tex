@@ -1,0 +1,176 @@
+% Part: lambda-calculus
+% Chapter: church-rosser
+% Section: parallel-beta-reduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{cr}{pb}
+
+\olsection{సమాంతర $\beta$-తగ్గింపు}
+
+ఇక్కడ \emph{సమాంతర $\beta$-తగ్గింపు} అనే భావాన్ని పరిచయం చేసి,
+దానికి చర్చ్--రోసర్ లక్షణం ఉందని నిరూపిస్తాం.
+
+\begin{defn}[సమాంతర $\beta$-తగ్గింపు, $\bredpar$] \ollabel{defn:bredpar}
+  పదాలపై సమాంతర తగ్గింపును ($\bredpar$) ఆగమన పద్ధతిలో ఇలా
+  నిర్వచిస్తాం:
+  \begin{enumerate}
+    \item \ollabel{defn:bredpar1} $x \bredpar x$.
+    \item \ollabel{defn:bredpar2} $N \bredpar N'$ అయితే $\lambd[x][N] \bredpar
+      \lambd[x][N']$.
+      \sourcecorrection{OLTELAMCRPB-001}{మూలంలోని ఈ నియమం పూర్వాపేక్షలో $N \xrightarrow{\beta} N'$ అని ఉంది. కానీ సమాంతర తగ్గింపు ఆగమన నిర్వచనంలో, అలాగే కింది \olref{thm:refl}, \olref{lem:comp}, \olref{lem:cont} నిరూపణల్లో, అవసరమైనది $N \bredpar N'$. మూలంలో లేని ఆ సమాంతర పూర్వాపేక్షను స్పష్టంగా పునరుద్ధరించాం; స్థిర ఆంగ్ల మూలాన్ని మార్చలేదు.}
+    \item \ollabel{defn:bredpar3} $P \bredpar P'$, $Q \bredpar Q'$ అయితే $PQ \bredpar
+      P'Q'$.
+    \item \ollabel{defn:bredpar4} $N \bredpar N'$, $Q \bredpar Q'$ అయితే
+      $(\lambd[x][N])Q \bredpar \Subst{N'}{Q'}{x}$.
+  \end{enumerate}
+\end{defn}
+
+సమాంతర $\beta$-తగ్గింపులో ఒక పదంలోని ఎన్ని రెడెక్స్‌లనైనా
+ఒకే దశలో సంకోచించవచ్చు. అయితే అసలు పదంలో ఉన్న రెడెక్స్‌లనే
+సంకోచించవచ్చు; ఆ దశలో కొత్తగా ఏర్పడిన $\beta$-రెడెక్స్‌లను అదే
+దశలో సంకోచించలేం. అందుకే ఇది $\beta$-తగ్గింపుకన్నా భిన్నం.
+ఉదాహరణకు, $(\lambd[f][fx])(\lambd[y][y])$ను సమాంతర
+$\beta$-తగ్గింపులో అదే పదంగా ఉంచవచ్చు లేదా
+$(\lambd[y][y])x$కు తగ్గించవచ్చు; ఒకే దశలో~$x$కు
+తగ్గించలేం. ఎందుకంటే ఆ రెడెక్స్ మొదటి సమాంతర తగ్గింపు
+తరువాతే ఏర్పడుతుంది. అయితే రెండవ సమాంతర $\beta$-తగ్గింపు దశలో
+$x$ వస్తుంది; సాధారణ $\beta$-తగ్గింపులో కూడా పదం~$x$కు
+తగ్గుతుంది.
+
+\begin{thm}\ollabel{thm:refl}
+  $M \bredpar M$.
+\end{thm}
+
+\begin{proof}
+  సాధన.
+\end{proof}
+
+\begin{prob}
+  \olref[lam][cr][pb]{thm:refl}ను నిరూపించండి.
+\end{prob}
+
+\begin{defn}[$\beta$-సంపూర్ణ వికాసం]\ollabel{defn:bcd}
+  $M$ పదం యొక్క \emph{$\beta$-సంపూర్ణ వికాసం}~$\bcd{M}$ను
+  ఆగమన పద్ధతిలో ఇలా నిర్వచిస్తాం:
+  \begin{align}
+    \bcd{x} &= x \ollabel{defn:bcd1} \\
+    \bcd{(\lambd[x][N])} &= \lambd[x][\bcd{N}] \ollabel{defn:bcd2}\\
+    \bcd{(PQ)} &= \bcd{P}\bcd{Q} && \text{$P$ ఒక $\lambd$-అమూర్తీకరణ కాకపోతే}
+    \ollabel{defn:bcd3} \\
+    \bcd{((\lambd[x][N])Q)} &= \Subst{\bcd{N}}{\bcd{Q}}{x} \ollabel{defn:bcd4}
+  \end{align}
+\end{defn}
+
+పదం యొక్క $\beta$-సంపూర్ణ వికాసం, దాని పేరుకు తగినట్లే,
+“సంపూర్ణ సమాంతర తగ్గింపు.” సమాంతర $\beta$-తగ్గింపులో
+ఒక రెడెక్స్‌ను సంకోచించకుండా వదలవచ్చు; సంపూర్ణ వికాసంలో
+మాత్రం అసలు పదంలోని $\beta$-రెడెక్స్‌లన్నిటినీ సంకోచించాలి.
+కాబట్టి $(\lambd[f][fx])(\lambd[y][y])$ యొక్క
+సంపూర్ణ వికాసం $(\lambd[y][y])x$; అసలు పదం కాదు.
+
+\begin{editorial}
+  ఈ నిర్వచనానికి ఒక సమస్య ఉంది: ($\lambd$-)పదాలపై
+  ప్రమేయాలను పునరావృతంగా ఎలా నిర్వచించాలో ఇంకా పరిచయం
+  చేయలేదు. దీన్ని తరువాత సరిచేస్తాం.
+\end{editorial}
+
+\begin{lem}\ollabel{lem:comp}
+  $M \bredpar M'$, $R \bredpar R'$ అయితే,
+  $\Subst{M}{R}{y} \bredpar \Subst{M'}{R'}{y}$.
+\end{lem}
+
+\begin{proof}
+  $M \bredpar M'$ యొక్క \tetoken{వ్యుత్పత్తి}{!!{derivation}}పై
+  ఆగమన పద్ధతిలో నిరూపిస్తాం.
+  \begin{enumerate}
+    \item చివరి దశ \olref{defn:bredpar1}: సాధన.
+    \item చివరి దశ \olref{defn:bredpar2}: అప్పుడు $M$ అనేది
+      $\lambd[x][N]$, $M'$ అనేది $\lambd[x][N']$;
+      ఇక్కడ $N \bredpar N'$. మనం నిరూపించవలసింది
+      $\Subst{(\lambd[x][N])}{R}{y} \bredpar
+      \Subst{(\lambd[x][N'])}{R'}{y}$, అంటే
+      $\lambd[x][\Subst{N}{R}{y}] \bredpar
+      \lambd[x][\Subst{N'}{R'}{y}]$.
+      \sourcecorrection{OLTELAMCRPB-002}{మూలంలోని ఈ విప్పిన సూత్రం కుడివైపు $\Subst{N'}{R}{y}$ అని రాస్తుంది. ఉపసిద్ధాంతపు లక్ష్యం, అదే వాక్యంలోని విప్పకముందు సూత్రం, ఆగమన పరికల్పన అన్నీ కుడివైపు $R'$ కావాలని నిర్ధారిస్తున్నాయి; ఇక్కడ ఆ సూచికను సరిచేశాం.}
+      ఇది \olref{defn:bredpar2}, ఆగమన పరికల్పనల నుంచి
+      వెంటనే వస్తుంది.
+    \item చివరి దశ \olref{defn:bredpar3}: సాధన.
+    \item చివరి దశ \olref{defn:bredpar4}: $M$ అనేది
+      $(\lambd[x][N])Q$, $M'$ అనేది $\Subst{N'}{Q'}{x}$.
+      మనం నిరూపించవలసింది
+      $\Subst{((\lambd[x][N])Q)}{R}{y} \bredpar
+      \Subst{\Subst{N'}{Q'}{x}}{R'}{y}$, అంటే
+      $(\lambd[x][\Subst{N}{R}{y}])\Subst{Q}{R}{y} \bredpar
+      \Subst{\Subst{N'}{R'}{y}}{\Subst{Q'}{R'}{y}}{x}$.
+      మూలం దీన్ని \olref{defn:bredpar4}, ఆగమన పరికల్పనల
+      ఫలితంగా పేర్కొంటుంది.
+      \sourcecorrection{OLTELAMCRPB-003}{మూలం ఈ రెండు సూత్రాలను “అంటే” అని సమానార్థకంగా చూపి, చివరి నిర్ధారణకు అవసరమైన ప్రతిస్థాపనల నిర్వచితత్వం, బద్ధ చరం $x$కు తాజా ప్రతినిధి ఎంపిక, ప్రతిస్థాపనల మార్పిడి సమర్థనను ఇవ్వలేదు. మునుపటి పాక్షిక ప్రతిస్థాపన, ఆల్ఫా-వర్గ నిర్మాణాల్లో OLTELAMALP-005–006 ఖాళీలూ తెరిచే ఉన్నాయి. ఈ నిరూపణ దశను మూల వాదనగా మాత్రమే ఉంచాం; పూర్తి నిరూపణగా ధ్రువీకరించడం లేదు.}
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][cr][pb]{lem:comp} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+
+\begin{lem}\ollabel{lem:cont}
+  $M \bredpar M'$ అయితే $M' \bredpar \bcd{M}$.
+\end{lem}
+\begin{proof}
+  $M \bredpar M'$ యొక్క \tetoken{వ్యుత్పత్తి}{!!{derivation}}పై
+  ఆగమన పద్ధతిలో నిరూపిస్తాం.
+  \begin{enumerate}
+    \item చివరి నియమం \olref{defn:bredpar1}: సాధన.
+    \item చివరి నియమం \olref{defn:bredpar2}: $M$ అనేది
+      $\lambd[x][N]$, $M'$ అనేది $\lambd[x][N']$;
+      ఇక్కడ $N \bredpar N'$. మనం చూపవలసింది
+      $\lambd[x][N'] \bredpar
+      \bcd{(\lambd[x][N])}$; అంటే \olref{defn:bcd2}
+      ప్రకారం $\lambd[x][N'] \bredpar
+      \lambd[x][\bcd{N}]$. ఇది \olref{defn:bredpar2},
+      ఆగమన పరికల్పనల నుంచి వస్తుంది.
+    \item చివరి నియమం \olref{defn:bredpar3}: $M$ అనేది
+      $PQ$, $M'$ అనేది $P'Q'$; ఇక్కడ $P$, $Q$, $P'$, $Q'$
+      కొన్ని పదాలు, $P \bredpar P'$, $Q \bredpar Q'$.
+      ఆగమన పరికల్పన ప్రకారం $P' \bredpar \bcd{P}$,
+      $Q' \bredpar \bcd{Q}$.
+      \begin{enumerate}
+        \item $P$ అనేది ఏవో $x$, $N$లకు $\lambd[x][N]$
+          అయితే, $P'$ ఏదో $N'$కు $\lambd[x][N']$ అవుతుంది;
+          ఇక్కడ $N \bredpar N'$. ఆగమన పరికల్పన ప్రకారం
+          $N' \bredpar \bcd{N}$, $Q' \bredpar \bcd{Q}$.
+          అప్పుడు \olref{defn:bredpar4} ప్రకారం
+          $(\lambd[x][N'])Q' \bredpar
+          \Subst{\bcd{N}}{\bcd{Q}}{x}$.
+        \item $P$ ఒక $\lambd$-అమూర్తీకరణ కాకపోతే,
+          \olref{defn:bredpar3} ప్రకారం $P'Q' \bredpar
+          \bcd{P}\bcd{Q}$; \olref{defn:bcd3} ప్రకారం
+          కుడివైపు పదమే $\bcd{PQ}$.
+      \end{enumerate}
+    \item చివరి నియమం \olref{defn:bredpar4}: $M$ అనేది
+      $(\lambd[x][N])Q$; $M'$ అనేది $\Subst{N'}{Q'}{x}$.
+      ఇక్కడ $x$, $N$, $Q$, $N'$, $Q'$ తగిన చరం,
+      పదాలు; $N \bredpar N'$, $Q \bredpar Q'$.
+      ఆగమన పరికల్పన ప్రకారం $N' \bredpar \bcd{N}$,
+      $Q' \bredpar \bcd{Q}$. \olref{lem:comp} ప్రకారం
+      $\Subst{N'}{Q'}{x} \bredpar
+      \Subst{\bcd{N}}{\bcd{Q}}{x}$; కుడివైపు పదం
+      సరిగ్గా $\bcd{((\lambd[x][N])Q)}$.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][cr][pb]{lem:cont} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+
+\begin{thm}\ollabel{thm:cr}
+  $\bredpar$కు చర్చ్--రోసర్ లక్షణం ఉంది.
+\end{thm}
+
+\begin{proof}
+  \olref{lem:cont} నుంచి నేరుగా వస్తుంది.
+\end{proof}
+
+\end{document}

@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 368 of 722 draft units**. This log contains 89 terminology/sense decisions and 324 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 369 of 722 draft units**. This log contains 90 terminology/sense decisions and 327 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2143,6 +2143,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: గణిత షరతులు మూల నిర్వచనం, జాలక వాదనలో నిర్దిష్టం. కానీ చర్చ్--రోసర్ అనే విదేశీ వ్యక్తి పేరుకు, జాలకం అనే ఉపమానానికి ప్రత్యక్ష స్థానిక లాంబ్డా-కలనశాస్త్ర సాక్ష్యం లేదు; నామకరణం తాత్కాలికం. ఈ విభాగం ప్రతి పదానికి నియత రూపం ఉందని చెప్పదు.
 
 - Please double-check: Please double-check whether “చర్చ్--రోసర్ లక్షణం / నియత రూపపు అనన్యత / తగ్గింపు మార్గాలను కలిపే జాలకం” is idiomatic and technically standard for “Church--Rosser property / unique normal form / grid of joining reductions” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T090 — parallel beta-reduction / beta-complete development / substitution-composition derivation
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: సమాంతర బీటా-తగ్గింపు / బీటా-సంపూర్ణ వికాసం / ప్రతిస్థాపన-సంయోజన వ్యుత్పత్తి
+
+- Exact implementation: OLP-0369; lambda-calculus/church-rosser/parallel-beta-reduction; content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:11 ↔ translation/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:11 (OLP-0369-B005); printed/PDF page pending; OLP-0369; lambda-calculus/church-rosser/parallel-beta-reduction; content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:16-27 ↔ translation/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:16-29 (OLP-0369-B007); printed/PDF page pending; OLP-0369; lambda-calculus/church-rosser/parallel-beta-reduction; content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:51-61 ↔ translation/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:55-65 (OLP-0369-B012); printed/PDF page pending; OLP-0369; lambda-calculus/church-rosser/parallel-beta-reduction; content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:79-100 ↔ translation/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:85-112 (OLP-0369-B016); printed/PDF page pending; OLP-0369; lambda-calculus/church-rosser/parallel-beta-reduction; content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:106-141 ↔ translation/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:118-162 (OLP-0369-B018); printed/PDF page pending
+
+- Authorities actually checked: TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P025, PDF 87, printed 80, Indirect-proof heading and worked derivation; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P024–025లో వ్యుత్పత్తి, నిరూపణ దశల తెలుగు నిర్మాణాన్ని; TE-P027లో పదం/చరం వివరణను; TE-P029, TE-P032లో ఆగమన వాదన, సిద్ధాంత-నిరూపణ గద్యాన్ని ప్రత్యక్షంగా చూశాం. ఏ పేజీ సమాంతర బీటా-తగ్గింపునో సంపూర్ణ వికాసాన్నో నేరుగా నిర్వచించదు. OLP-0369లోని నాలుగు నియమాలూ సంపూర్ణ వికాసపు నాలుగు సమీకరణాలూ ఆ ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి. గత TE-T078, TE-T087, TE-T089తో తగ్గింపు, రెడెక్స్, చర్చ్--రోసర్ పదజాలాన్ని కొనసాగించాం. OLTELAMCRPB-001–003 దిద్దుబాట్లు, నిరూపణ ఖాళీని పక్కనే ప్రకటిస్తున్నాయి. బీటా, రెడెక్స్, చర్చ్--రోసర్ మునుపటి బదిలీ పదాలు; β, M, N, P, Q, R, సంబంధ/ప్రతిస్థాపన మాక్రోలు గణిత గుర్తింపులుగా యథాతథం.
+
+- Alternatives: నాలుగు నియమాల ప్రత్యేక అర్థాన్ని నిలిపే సమాంతర బీటా-తగ్గింపు, బీటా-సంపూర్ణ వికాసం అనే వివరణాత్మక పదాలు (ఎంపిక); స్థానిక పేజీలు ఈ ప్రత్యేక లాంబ్డా భావాలను నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ); మూలంలోని సాధారణ బీటా పూర్వాపేక్షను సమాంతర నియమంలో నిశ్శబ్దంగా ఉంచడం (తిరస్కరణ); ప్రతిస్థాపన నిరూపణ ఖాళీని పూర్తి నిరూపణగా చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: సమాంతర, సంపూర్ణ వికాసం అనే ప్రత్యేక లాంబ్డా-కలనశాస్త్ర పదాలకు ప్రత్యక్ష స్థానిక సాక్ష్యం లేదు; నామకరణం తాత్కాలికం. ప్రతిస్థాపన-సంయోజన ఉపసిద్ధాంతపు పూర్తి నిరూపణ మూలంలో లేదు, ఈ అనువాదం దానిని పూరించలేదు.
+
+- Please double-check: Please double-check whether “సమాంతర బీటా-తగ్గింపు / బీటా-సంపూర్ణ వికాసం / ప్రతిస్థాపన-సంయోజన వ్యుత్పత్తి” is idiomatic and technically standard for “parallel beta-reduction / beta-complete development / substitution-composition derivation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -9919,3 +9943,75 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: జాలక సరిహద్దు నిర్వచనాల నుంచి N_{m,0}=P_m, N_{0,n}=Q_n అని వస్తుందని, మూల P/Q పేర్లను అంతకుమించి ఏదీ మార్చకుండా సరిచేశామా?
+
+## REV-OLTELAMCRPB-001 — OLTELAMCRPB-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored the parallel premise of abstraction-congruence, with adjacent Telugu disclosure
+
+- Exact implementation: OLP-0369; lambda-calculus/church-rosser/parallel-beta-reduction; lines 16-25, especially line 20; corroboration lines 83-90 and 113-118 ↔ translation/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:23 (OLP-0369-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMCRPB-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the parallel premise of abstraction-congruence, with adjacent Telugu disclosure
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: అమూర్తీకరణ నియమపు పూర్వాపేక్ష సమాంతర తగ్గింపే అని, స్వప్రతిఫలకత్వం మరియు తరువాతి ఆగమన వాదనలతో సరిపోతుందని స్పష్టమా?
+
+## REV-OLTELAMCRPB-002 — OLTELAMCRPB-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored R-prime in the right-hand expanded substitution, with adjacent Telugu disclosure
+
+- Exact implementation: OLP-0369; lambda-calculus/church-rosser/parallel-beta-reduction; lines 75-90, especially line 89 ↔ translation/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:97 (OLP-0369-B016); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMCRPB-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored R-prime in the right-hand expanded substitution, with adjacent Telugu disclosure
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: ప్రతిస్థాపన ఉపసిద్ధాంతపు రెండవ సందర్భంలో కుడివైపు R-prime పునరుద్ధరణ ఉపసిద్ధాంత లక్ష్యంతో సరిపోతుందా?
+
+## REV-OLTELAMCRPB-003 — OLTELAMCRPB-003
+
+- Status: source_proof_gap_disclosed_structural_qa_passed_full_proof_pending_no_translation_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: source_proof_gap_disclosed_not_repaired / high
+
+- Chosen wording/treatment: retained the displayed source formulas but disclosed missing freshness, definedness and substitution-interchange justification; no complete proof claimed
+
+- Exact implementation: OLP-0369; lambda-calculus/church-rosser/parallel-beta-reduction; lines 92-98, in context of the partial substitution in syntax/substitution.tex and alpha-class descent in syntax/alpha.tex ↔ translation/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:110 (OLP-0369-B016); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMCRPB-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: మూల సిద్ధాంతానికి పూర్తి స్వతంత్ర నిరూపణ ఇంకా నమోదు కాలేదు; నిర్మాణాత్మక QA నిరూపణను ధృవీకరించదు.
+
+- Rationale: retained the displayed source formulas but disclosed missing freshness, definedness and substitution-interchange justification; no complete proof claimed
+
+- Alternatives: మూల నిరూపణలోని అన్యాయ దశను నిరూపితంగా ప్రకటించడం (తిరస్కరణ); మూల దశను పరిశీలన కోసం ఉంచి ఖాళీని పక్కనే ప్రకటించడం (ఎంపిక); బలపరిచిన ఆగమన పరికల్పనతో పూర్తి నిరూపణను తరువాతి సమీక్షలో ఇవ్వడం (ఇంకా చేయలేదు)
+
+- Uncertainty: మూల వాదనలో నిరూపణ ఖాళీ నిర్ధారితమైనది; పూర్తి సిద్ధాంత నిరూపణ ఇంకా లేదు.
+
+- Please double-check: Please double-check: నాలుగవ సందర్భానికి అవసరమైన తాజా ప్రతినిధులు, ప్రతిస్థాపనల నిర్వచితత్వం, మార్పిడి నియమం మూలంలో నిరూపించలేదనే పరిమితి తగినంత స్పష్టమా?

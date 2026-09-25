@@ -7,7 +7,7 @@ if(process.argv.some(a=>a.startsWith('--')&&!a.startsWith('--data-dir=')))throw 
 const dataDir=dataArg?path.resolve(dataArg.slice(11)):path.join(root,'evidence');
 const jsonl=name=>fs.readFileSync(path.join(dataDir,name),'utf8').trim().split(/\r?\n/).map(JSON.parse);
 const terms=jsonl('TERM_DECISIONS.jsonl'),passages=Object.fromEntries(jsonl('CANON_PASSAGES.jsonl').map(x=>[x.passage_id,x]));
-const corrections=jsonl('SOURCE_CORRECTIONS.jsonl').filter(c=>c.status.startsWith('applied')),ledger=jsonl('SEGMENT_CANON_USE.jsonl');
+const corrections=jsonl('SOURCE_CORRECTIONS.jsonl').filter(c=>c.status.startsWith('applied')||c.status==='source_proof_gap_disclosed_structural_qa_pass'),ledger=jsonl('SEGMENT_CANON_USE.jsonl');
 const sourceManifest=jsonl('SOURCE_MANIFEST.jsonl');
 const sourceUnitTotal=sourceManifest.length;
 const draftedSourceUnits=sourceManifest.filter(item=>fs.existsSync(path.join(root,'translation',...item.source_path.replaceAll('\\','/').split('/')))).length;
@@ -370,6 +370,13 @@ locations['TE-T089']=[
  L('content/lambda-calculus/church-rosser/definitions-and-properties.tex',35,43,38,46,'normal form','నియత రూపం'),
  L('content/lambda-calculus/church-rosser/definitions-and-properties.tex',63,65,67,70,'grid','జాలకాన్ని')
 ];
+locations['TE-T090']=[
+ L('content/lambda-calculus/church-rosser/parallel-beta-reduction.tex',11,11,11,11,'Parallel $\\beta$-reduction','సమాంతర $\\beta$-తగ్గింపు'),
+ L('content/lambda-calculus/church-rosser/parallel-beta-reduction.tex',16,20,16,21,'Parallel reduction','సమాంతర తగ్గింపును'),
+ L('content/lambda-calculus/church-rosser/parallel-beta-reduction.tex',51,53,55,57,'$\\beta$-complete development','$\\beta$-సంపూర్ణ వికాసం'),
+ L('content/lambda-calculus/church-rosser/parallel-beta-reduction.tex',79,80,85,87,'!!{derivation}','!!{derivation}'),
+ L('content/lambda-calculus/church-rosser/parallel-beta-reduction.tex',107,110,118,125,'!!{derivation}','!!{derivation}')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -444,6 +451,7 @@ alternatives['TE-T086']=['ఆల్ఫా-తుల్యతా వర్గం,
 alternatives['TE-T087']=['మునుపటి బీటా-సంకోచనం/తగ్గింపు పదజాలంతో సహజ వ్యూహం, అత్యంత ఎడమవైపు రెడెక్స్ అనే స్థాన-నియంత్రిత వివరణ (ఎంపిక)','ఎడమవైపు అని మాత్రమే చెప్పి రెడెక్స్ మొదలయ్యే స్థానం అనే మూల నియమాన్ని వదలడం (తిరస్కరణ)','సహజ వ్యూహం ఏ పదాన్నైనా తప్పక నియత రూపానికి తీసుకెళ్తుందని చెప్పడం (తిరస్కరణ; మూల వాదన నియత రూపం ఉన్నప్పుడు మాత్రమే)','స్థానిక పేజీలు బీటా వ్యూహాన్ని నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T088']=['మునుపటి బీటా పదజాలంతో ఏటా-సంకోచనం/తగ్గింపు, వేరు నిర్వచించిన లాంబ్డా పదాల విస్తారత (ఎంపిక)','మొదటి-స్థాయి అర్థసంబంధ విస్తారత, లాంబ్డా విస్తారత ఒకే నియమమని ప్రకటించడం (తిరస్కరణ)','ఏటా-తుల్యతా నియమాన్ని స్వేచ్ఛా-చర షరతు లేకుండా అన్ని పదాలపై వర్తింపజేయడం (తిరస్కరణ)','సూత్రం మారకుండా లోపించిన షరతును పక్కన స్పష్టంగా చెప్పడం (ఎంపిక)'];
 alternatives['TE-T089']=['చర్చ్--రోసర్ అనే మూల పేరుతో, రెండు మార్గాలకు ఉమ్మడి దిగువ పదం అనే నిర్వచనంతో లక్షణాన్ని ఇవ్వడం (ఎంపిక)','ప్రతి పదం తప్పక నియత రూపానికి చేరుతుందని చర్చ్--రోసర్ లక్షణం నుంచి తేల్చడం (తిరస్కరణ)','జాలకాన్ని అలంకార రూపకంగా మాత్రమే తీసుకుని N సూచికల వరుస/నిలువు అర్థాన్ని వదలడం (తిరస్కరణ)','జాలక అంచులలో మూలంలో లేని P,Q పేర్లను నిర్వచించకుండా కొనసాగించడం (తిరస్కరణ)'];
+alternatives['TE-T090']=['నాలుగు నియమాల ప్రత్యేక అర్థాన్ని నిలిపే సమాంతర బీటా-తగ్గింపు, బీటా-సంపూర్ణ వికాసం అనే వివరణాత్మక పదాలు (ఎంపిక)','స్థానిక పేజీలు ఈ ప్రత్యేక లాంబ్డా భావాలను నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ)','మూలంలోని సాధారణ బీటా పూర్వాపేక్షను సమాంతర నియమంలో నిశ్శబ్దంగా ఉంచడం (తిరస్కరణ)','ప్రతిస్థాపన నిరూపణ ఖాళీని పూర్తి నిరూపణగా చెప్పడం (తిరస్కరణ)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -460,7 +468,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-25 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T089 record the Batch 025--Batch 049 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-25 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T090 record the Batch 025--Batch 050 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -709,6 +717,9 @@ const correctionQuestions={
   ,'OLTELAMETA-002':'నిరూపణలో ext మాక్రోను ఒకే విధంగా వాడటం నిర్వచన, సిద్ధాంత సంకేతాలతో సరిపోతుందా; సంబంధం యొక్క భావాన్ని మార్చలేదా?'
   ,'OLTELAMCRDAP-001':'రెండు తగ్గింపు మార్గాలు తిరిగి కలవడమనే లక్షణం తుది విలువ ఉనికిని కాదు, ఏదైనా ఉంటే దాని అనన్యతను మాత్రమే ఇస్తుందని మొదటి వివరణ స్పష్టంచేస్తుందా?'
   ,'OLTELAMCRDAP-002':'జాలక సరిహద్దు నిర్వచనాల నుంచి N_{m,0}=P_m, N_{0,n}=Q_n అని వస్తుందని, మూల P/Q పేర్లను అంతకుమించి ఏదీ మార్చకుండా సరిచేశామా?'
+  ,'OLTELAMCRPB-001':'అమూర్తీకరణ నియమపు పూర్వాపేక్ష సమాంతర తగ్గింపే అని, స్వప్రతిఫలకత్వం మరియు తరువాతి ఆగమన వాదనలతో సరిపోతుందని స్పష్టమా?'
+  ,'OLTELAMCRPB-002':'ప్రతిస్థాపన ఉపసిద్ధాంతపు రెండవ సందర్భంలో కుడివైపు R-prime పునరుద్ధరణ ఉపసిద్ధాంత లక్ష్యంతో సరిపోతుందా?'
+  ,'OLTELAMCRPB-003':'నాలుగవ సందర్భానికి అవసరమైన తాజా ప్రతినిధులు, ప్రతిస్థాపనల నిర్వచితత్వం, మార్పిడి నియమం మూలంలో నిరూపించలేదనే పరిమితి తగినంత స్పష్టమా?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));
@@ -733,7 +744,7 @@ const correctionRecords=corrections.map(c=>{
  const rawQuestion=correctionQuestions[c.finding_id]??`whether the Telugu disclosure for ${c.finding_id} is mathematically precise and idiomatic.`;
  const question=/^Please double-check/i.test(rawQuestion)?rawQuestion:`Please double-check: ${rawQuestion}`;
  const qualified=c.qualification?.disposition==='rejected_false_positive';
- const unresolvedProof=['OLTELAMALP-005','OLTELAMALP-006'].includes(c.finding_id);
+ const unresolvedProof=['OLTELAMALP-005','OLTELAMALP-006','OLTELAMCRPB-003'].includes(c.finding_id);
  return {review_id:'REV-'+c.finding_id,record_type:'source_correction_decision',scope_completion:completion,language:'Telugu',script:'Telu',locale:'te-Telu-IN',finding_id:c.finding_id,classification:c.classification,...(c.qualification?{qualification:c.qualification}:{}),confidence:unresolvedProof?'source_proof_gap_disclosed_not_repaired':'high_mathematical_repair_moderate_disclosure_wording',review_priority:unresolvedProof?'high':'medium',expert_review_status:unresolvedProof?'source_proof_gap_disclosed_structural_qa_passed_full_proof_pending_no_translation_hold':qualified?'historical_error_classification_rejected_equivalent_notation_qa_passed_disclosure_wording_open_for_optional_review_no_hold':'mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold',implementation_locations:locations,actual_authorities_checked:[{audit_id:c.audit_id,audit_review_sha256:c.audit_review_sha256,audit_findings_sha256:c.audit_findings_sha256},...(qualified?[{qualification_review_sha256:c.qualification.consolidation_review_sha256,disposition:c.qualification.disposition,review_path:c.qualification.review_path}]:[]),{source_revision:'9620cc73f9c8e0ad003c514a5d3748f29611c4c0',source_path:c.source_path,source_sha256:c.source_sha256}],not_checked_or_not_found:[unresolvedProof?'మూల సిద్ధాంతానికి పూర్తి స్వతంత్ర నిరూపణ ఇంకా నమోదు కాలేదు; నిర్మాణాత్మక QA నిరూపణను ధృవీకరించదు.':qualified?'No independent human subject expert has reviewed the Telugu qualification wording yet; the equivalent notation and false-positive disposition were checked by the consolidation review and correction-aware structural QA.':'No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.'],rationale:c.body_treatment,alternatives_considered_or_recorded:unresolvedProof?['మూల నిరూపణలోని అన్యాయ దశను నిరూపితంగా ప్రకటించడం (తిరస్కరణ)','మూల దశను పరిశీలన కోసం ఉంచి ఖాళీని పక్కనే ప్రకటించడం (ఎంపిక)','బలపరిచిన ఆగమన పరికల్పనతో పూర్తి నిరూపణను తరువాతి సమీక్షలో ఇవ్వడం (ఇంకా చేయలేదు)']:qualified?['Retain the valid nested cardinality construction verbatim (viable, but the explicit pair is clearer in the target).','Present the two equivalent explicit comparisons and disclose the rejected historical classification (chosen).']:['Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).','Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).'],uncertainty:unresolvedProof?'మూల వాదనలో నిరూపణ ఖాళీ నిర్ధారితమైనది; పూర్తి సిద్ధాంత నిరూపణ ఇంకా లేదు.':qualified?'Low for mathematical equivalence and the rejected-false-positive disposition; optional review remains useful for the clarity of its Telugu qualification.':'Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.',rationale_phase:unresolvedProof?'మూల పాఠ్యాన్ని నేరుగా పరిశీలించి నిరూపణ ఖాళీని అనువాదంలో ప్రకటించాం; నిర్మాణాత్మక QA సూత్రాల సంరక్షణను మాత్రమే పరీక్షించింది.':qualified?'Historical audit record retained and qualified by the 2026-09-19 consolidation review, followed by correction-aware batch QA.':'Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.',precise_review_questions:[question],translation_hold:false,status:c.status};
 });
 const records=[...termRecords,...correctionRecords];

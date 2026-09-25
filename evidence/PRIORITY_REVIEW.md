@@ -1,6 +1,6 @@
 # Priority review
 
-This view contains 57 of 413 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
+This view contains 60 of 417 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
 
 Final reader pages remain pending; exact source and target file/line locators are shown.
 
@@ -573,3 +573,33 @@ Final reader pages remain pending; exact source and target file/line locators ar
 - Occurrences: OLP-0348 translation/content/lambda-calculus/introduction/lambda-definability.tex:17-21; OLP-0348 translation/content/lambda-calculus/introduction/lambda-definability.tex:28-41; OLP-0351 translation/content/lambda-calculus/introduction/basic-pr-lambda.tex:20-25; OLP-0352 translation/content/lambda-calculus/introduction/composition.tex:12-14; OLP-0353 translation/content/lambda-calculus/introduction/primitive-recursion.tex:77-79; OLP-0354 translation/content/lambda-calculus/introduction/fixed-point-combinator.tex:12-37; OLP-0355 translation/content/lambda-calculus/introduction/minimization.tex:9-10
 
 - Review question: Please double-check whether “లాంబ్డాతో నిర్వచించదగిన అంకగణిత ప్రమేయం / చర్చ్ సంఖ్యాంకం, పునరావర్తకం / సంయుక్తం, ఆదిమ పునరావృత్తి కింద సంవృతత / స్థిరబిందు సంయోజకం / కనిష్ఠీకరణ” is idiomatic and technically standard for “lambda-definable arithmetical function / Church numeral and iterator / closure under composition and primitive recursion / fixed-point combinator / minimization” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## te-Telu-IN-OLTELAMALP-005 — OLTELAMALP-005: unproved definedness in alpha safe substitution construction
+
+- Chosen rendering: explicitly flagged unproved nested-substitution definedness and supplied a counterexample to the source argument; theorem proof remains open
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0362 translation/content/lambda-calculus/syntax/alpha.tex:262
+
+- Review question: Please double-check: రెండో ప్రతిస్థాపన నిర్వచితమన్న మూల వాదనలో ఖాళీని ఇచ్చిన ఉదాహరణ సరిగ్గా చూపుతుందా? దానికి పూర్తి నిర్మాణాత్మక నిరూపణ ఏమిటి?
+
+## te-Telu-IN-OLTELAMALP-006 — OLTELAMALP-006: invalid equalities and incomplete uniqueness scope
+
+- Chosen rendering: preserved source display for inspection and explicitly flagged unjustified equalities and incomplete uniqueness scope; theorem proof remains open
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0362 translation/content/lambda-calculus/syntax/alpha.tex:276
+
+- Review question: Please double-check: మూల గణనలో సమానత్వానికి బదులుగా ఏ ఆల్ఫా-తుల్యత దశలు కావాలి? సాధారణ M-double-primeను ఎలా కవర్ చేస్తారు?
+
+## te-Telu-IN-OLTELAMCRPB-003 — OLTELAMCRPB-003: substitution composition proof gap disclosed
+
+- Chosen rendering: retained the displayed source formulas but disclosed missing freshness, definedness and substitution-interchange justification; no complete proof claimed
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0369 translation/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:110
+
+- Review question: Please double-check: నాలుగవ సందర్భానికి అవసరమైన తాజా ప్రతినిధులు, ప్రతిస్థాపనల నిర్వచితత్వం, మార్పిడి నియమం మూలంలో నిరూపించలేదనే పరిమితి తగినంత స్పష్టమా?
