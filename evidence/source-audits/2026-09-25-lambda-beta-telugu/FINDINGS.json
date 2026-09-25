@@ -1,0 +1,36 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTELAMBETA-20260925",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": ["OLP-0365"],
+    "finding_count": 1
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "source_file": {
+    "path": "content/lambda-calculus/syntax/beta.tex",
+    "bytes": 4784,
+    "sha256": "42355f0467bb8d19038e3cadd4b5f0d2ce58720cbed3130cb74f86f7be4fc0dd"
+  },
+  "controlling_driver": {
+    "path": "content/lambda-calculus/syntax/syntax.tex",
+    "unit_id": "OLP-0356",
+    "bytes": 420,
+    "sha256": "8d4b46380a30f99e21a4eff935d0e8b3a5c23655709070cdd8aa5c63be62327e"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTELAMBETA-001",
+      "classification": "wrong_chapter_component_in_beta_section_file_id",
+      "source_locator": "line 9, beta.tex file ID, versus syntax.tex lines 8 and 26",
+      "finding": "syntax/beta.texను \u005colchapter{lam}{syn} గల వాక్యనిర్మాణ అధ్యాయం దిగుమతి చేస్తుంది; కానీ విభాగపు \u005colfileid{lam}{int}{bet}లో మధ్య అధ్యాయ సంకేతం intగా ఉంది.",
+      "controlling_evidence": "స్థిర source manifest OLP-0356లో syntax/syntax.tex దిగుమతులలో syntax/beta.tex ఉంది. డ్రైవరు \u005colchapter{lam}{syn}{Syntax}ను ప్రకటిస్తుంది. ఇతర పక్క విభాగాలు lam/syn సంకేతం వాడతాయి; beta.tex మాత్రమే lam/int/bet అంటుంది.",
+      "required_translation_handling": "తెలుగు లక్ష్యంలో విభాగపు ఫైలు గుర్తింపును lam/syn/betగా సవరించి, మూల భేదాన్ని పక్కనే ప్రకటించాలి. స్థిర ఆంగ్ల మూలం, మూల పథం, సూత్రాలు మార్చకూడదు."
+    }
+  ]
+}

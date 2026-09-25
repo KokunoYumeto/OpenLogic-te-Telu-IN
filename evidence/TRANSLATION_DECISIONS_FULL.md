@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **364 of 722 source units drafted**. This readable view contains all 405 decisions and 761 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **365 of 722 source units drafted**. This readable view contains all 407 decisions and 765 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2516,6 +2516,34 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T086-OCC-003; OLP-0364; OLP-0364-B008; source upstream/content/lambda-calculus/syntax/term-revisited.tex:27-35 bytes 984-1299 SHA-256 6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67; target translation/content/lambda-calculus/syntax/term-revisited.tex:28-36 bytes 1826-2425 SHA-256 dcaf5d784da4b75f8529b2aa0c09707aad03f7aa53ea105f3db78f0e69eb7bd8; reader page pending.
   - te-Telu-IN-TE-T086-OCC-004; OLP-0364; OLP-0364-B012; source upstream/content/lambda-calculus/syntax/term-revisited.tex:48-53 bytes 1644-1928 SHA-256 6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67; target translation/content/lambda-calculus/syntax/term-revisited.tex:49-56 bytes 3181-4274 SHA-256 dcaf5d784da4b75f8529b2aa0c09707aad03f7aa53ea105f3db78f0e69eb7bd8; reader page pending.
   - te-Telu-IN-TE-T086-OCC-005; OLP-0364; OLP-0364-B018; source upstream/content/lambda-calculus/syntax/term-revisited.tex:83-92 bytes 3036-3530 SHA-256 6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67; target translation/content/lambda-calculus/syntax/term-revisited.tex:87-96 bytes 7076-8116 SHA-256 dcaf5d784da4b75f8529b2aa0c09707aad03f7aa53ea105f3db78f0e69eb7bd8; reader page pending.
+
+## te-Telu-IN-TE-T087 — natural reduction strategy / left-most redex / normalizing strategy
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: సహజ తగ్గింపు వ్యూహం / అత్యంత ఎడమవైపు రెడెక్స్ / నియత రూపాన్ని చేరే వ్యూహం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “natural reduction strategy / left-most redex / normalizing strategy” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: మూల నిర్వచనం నియమాన్ని స్పష్టంచేస్తుంది; సహజ వ్యూహం, రెడెక్స్ అనే పేర్లకు మధ్యస్థ నామకరణ అనిశ్చితి ఉంది. ఈ విభాగం వ్యూహం నియత రూపం చేరుతుందనే వాదనకు స్వతంత్ర నిరూపణ ఇవ్వదు; పాఠ్యంలో తరువాతి చర్చ ఆధారంగా చెప్పినట్లు మాత్రమే ఉంచాం.
+
+- Rationale: TE-P027లో పదం, చరం; TE-P029లో పరిధి, బద్ధ చరం; TE-P003, TE-P032లో వివరణ, నిరూపణ గద్య శైలిని ప్రత్యక్షంగా చూశాం. ఈ పేజీలు బీటా-సంకోచనం, రెడెక్స్ లేదా సహజ తగ్గింపు వ్యూహాన్ని నేరుగా బోధించవు. OLP-0365లోని ఒక్క-దశ నియమం, ఎడమవైపు రెడెక్స్ స్థాన నిర్వచనం, నియత రూపాన్ని చేరే iff వాదన ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి. TE-T078లోని స్థాపిత బీటా-సంకోచనం/తగ్గింపు/నియత రూపం పదజాలాన్ని కొనసాగించాం; OLTELAMBETA-001 మూల ఫైలు-గుర్తింపు భేదానికే చెందినది, వ్యూహానికి సాక్ష్యం కాదు. బీటా, రెడెక్స్ సాంకేతిక స్వీకరణలు; చర్చ్--రోసర్ మూల వ్యక్తి పేర్లు. β, λ, M, N, P, Q, x, y మరియు తగ్గింపు బాణాలు గణిత సంకేతాలుగా యథాతథం.
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: మునుపటి బీటా-సంకోచనం/తగ్గింపు పదజాలంతో సహజ వ్యూహం, అత్యంత ఎడమవైపు రెడెక్స్ అనే స్థాన-నియంత్రిత వివరణ [viable_alternative: ఎంపిక] | ఎడమవైపు అని మాత్రమే చెప్పి రెడెక్స్ మొదలయ్యే స్థానం అనే మూల నియమాన్ని వదలడం [viable_alternative: తిరస్కరణ] | సహజ వ్యూహం ఏ పదాన్నైనా తప్పక నియత రూపానికి తీసుకెళ్తుందని చెప్పడం [viable_alternative: తిరస్కరణ; మూల వాదన నియత రూపం ఉన్నప్పుడు మాత్రమే] | స్థానిక పేజీలు బీటా వ్యూహాన్ని నేరుగా స్థాపిస్తాయని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “సహజ తగ్గింపు వ్యూహం / అత్యంత ఎడమవైపు రెడెక్స్ / నియత రూపాన్ని చేరే వ్యూహం” is idiomatic and technically standard for “natural reduction strategy / left-most redex / normalizing strategy” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T087-OCC-001; OLP-0365; OLP-0365-B015; source upstream/content/lambda-calculus/syntax/beta.tex:88-98 bytes 2994-3611 SHA-256 42355f0467bb8d19038e3cadd4b5f0d2ce58720cbed3130cb74f86f7be4fc0dd; target translation/content/lambda-calculus/syntax/beta.tex:91-101 bytes 5597-6923 SHA-256 49384edc65445b364ec361383baf707104be843710718a7b899738faef1451bd; reader page pending.
+  - te-Telu-IN-TE-T087-OCC-002; OLP-0365; OLP-0365-B015; source upstream/content/lambda-calculus/syntax/beta.tex:88-98 bytes 2994-3611 SHA-256 42355f0467bb8d19038e3cadd4b5f0d2ce58720cbed3130cb74f86f7be4fc0dd; target translation/content/lambda-calculus/syntax/beta.tex:91-101 bytes 5597-6923 SHA-256 49384edc65445b364ec361383baf707104be843710718a7b899738faef1451bd; reader page pending.
+  - te-Telu-IN-TE-T087-OCC-003; OLP-0365; OLP-0365-B015; source upstream/content/lambda-calculus/syntax/beta.tex:88-98 bytes 2994-3611 SHA-256 42355f0467bb8d19038e3cadd4b5f0d2ce58720cbed3130cb74f86f7be4fc0dd; target translation/content/lambda-calculus/syntax/beta.tex:91-101 bytes 5597-6923 SHA-256 49384edc65445b364ec361383baf707104be843710718a7b899738faef1451bd; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -10889,3 +10917,29 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTELAMTR-002-OCC-001; OLP-0364; OLP-0364-B013; source upstream/content/lambda-calculus/syntax/term-revisited.tex:55 bytes 1929-1989 SHA-256 6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67; target translation/content/lambda-calculus/syntax/term-revisited.tex:60 bytes 4464-5158 SHA-256 dcaf5d784da4b75f8529b2aa0c09707aad03f7aa53ea105f3db78f0e69eb7bd8; reader page pending.
+
+## te-Telu-IN-OLTELAMBETA-001 — OLTELAMBETA-001: wrong chapter component in beta section file id
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: repaired the section file ID chapter component from int to syn to match its importing syntax chapter, with adjacent Telugu disclosure
+
+- Intended sense: Repair the audited wrong chapter component in beta section file id at line 9, beta.tex file ID, versus syntax.tex lines 8 and 26, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMBETA-20260925:OLTELAMBETA-001 [checked_supports], content/lambda-calculus/syntax/beta.tex; line 9, beta.tex file ID, versus syntax.tex lines 8 and 26; wrong_chapter_component_in_beta_section_file_id; repaired the section file ID chapter component from int to syn to match its importing syntax chapter, with adjacent Telugu disclosure.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: వాక్యనిర్మాణ అధ్యాయ డ్రైవరు దిగుమతి చేసే బీటా విభాగపు ఫైలు గుర్తింపులో intకు బదులు syn అవసరమని మూల పథం, డ్రైవరు, పక్క విభాగాల ఆధారాలు చూపుతున్నాయా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMBETA-001-OCC-001; OLP-0365; OLP-0365-B004; source upstream/content/lambda-calculus/syntax/beta.tex:9 bytes 146-171 SHA-256 42355f0467bb8d19038e3cadd4b5f0d2ce58720cbed3130cb74f86f7be4fc0dd; target translation/content/lambda-calculus/syntax/beta.tex:11 bytes 216-795 SHA-256 49384edc65445b364ec361383baf707104be843710718a7b899738faef1451bd; reader page pending.

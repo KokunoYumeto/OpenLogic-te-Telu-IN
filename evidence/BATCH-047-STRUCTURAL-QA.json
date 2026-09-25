@@ -1,0 +1,330 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-25T04:13:36.020Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Text/intertext/mbox prose is masked; nested inline math is compared per clause independently of language-specific word order.",
+  "units": [
+    {
+      "unit_id": "OLP-0365",
+      "source_path": "content/lambda-calculus/syntax/beta.tex",
+      "source_sha256": "42355f0467bb8d19038e3cadd4b5f0d2ce58720cbed3130cb74f86f7be4fc0dd",
+      "translation_sha256": "49384edc65445b364ec361383baf707104be843710718a7b899738faef1451bd",
+      "source_blocks": 20,
+      "target_blocks": 20,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{int}{bet}",
+        "\\ollabel{defn:betacontr}",
+        "\\ollabel{prob:def}",
+        "\\olref[lam][syn][alp]{defn:aconvone}",
+        "\\ollabel{defn:betared}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{syn}{bet}",
+        "\\ollabel{defn:betacontr}",
+        "\\ollabel{prob:def}",
+        "\\olref[lam][syn][alp]{defn:aconvone}",
+        "\\ollabel{defn:betared}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\beta$",
+        "$(\\lambd[m][(\\lambd[y][y])m])$",
+        "$\\lambd[m][m]$",
+        "$\\beta$",
+        "$\\beta$",
+        "$\\bredone$",
+        "$\\beta$",
+        "$\\bredone$",
+        "\\[(\\lambd[x][N])Q\\bredone\\Subst{N}{Q}{x}\\]",
+        "$P$",
+        "$\\beta$",
+        "$Q$",
+        "$P\\bredoneQ$",
+        "$(\\lambd[x][N])Q$",
+        "$\\beta$",
+        "$\\beta$",
+        "$\\bred$",
+        "$\\beta$",
+        "$\\bred$",
+        "$\\bredone$",
+        "$P$",
+        "$\\beta$",
+        "$Q$",
+        "$P\\bredQ$",
+        "$\\redone$",
+        "$\\bredone$",
+        "$\\red$",
+        "$\\bred$",
+        "$M\\bredN$",
+        "$M$",
+        "$N$",
+        "$\\beta$",
+        "$\\beta$",
+        "$\\beta$",
+        "$\\beta$",
+        "$M\\bredN$",
+        "$N$",
+        "$\\beta$",
+        "$N$",
+        "$M$",
+        "\\begin{align*}(\\lambd[x][xxy])\\lambd[z][z]&\\redone(\\lambd[z][z])(\\lambd[z][z])y\\\\&\\redone(\\lambd[z][z])y\\\\&\\redoney\\end{align*}",
+        "\\begin{align*}(\\lambd[x][xxy])(\\lambd[x][xxy])&\\redone(\\lambd[x][xxy])(\\lambd[x][xxy])y\\\\&\\redone(\\lambd[x][xxy])(\\lambd[x][xxy])yy\\\\&\\redone\\dots\\end{align*}",
+        "\\[(\\lambd[x][xx])(\\lambd[x][xx])\\redone(\\lambd[x][xx])(\\lambd[x][xx])\\]",
+        "\\[(\\lambd[x][(\\lambd[y][yx])z])v\\redone(\\lambd[y][yv])z\\]",
+        "\\[(\\lambd[x][(\\lambd[y][yx])z])v\\redone(\\lambd[x][zx])v\\]",
+        "$zv$",
+        "$\\beta$",
+        "$\\beta$",
+        "$\\equal$",
+        "$\\beta$",
+        "$\\equal$",
+        "$M\\equalM$",
+        "$M\\equalN$",
+        "$N\\equalM$",
+        "$M\\equalN$",
+        "$N\\equalO$",
+        "$M\\equalO$",
+        "$M\\equalN$",
+        "$PM\\equalPN$",
+        "$M\\equalN$",
+        "$MQ\\equalNQ$",
+        "$M\\equalN$",
+        "$\\lambd[x][M]\\equal\\lambd[x][N]$",
+        "$(\\lambd[x][N])Q\\equal\\Subst{N}{Q}{x}$",
+        "$\\beta$",
+        "$\\beta$",
+        "$\\beta$",
+        "$\\beta$",
+        "$\\beta$",
+        "$M$",
+        "$\\beta$",
+        "$N$",
+        "$N$",
+        "$\\beta$",
+        "$M$",
+        "$\\equal[X]$",
+        "$X$"
+      ],
+      "math_target_core": [
+        "$\\beta$",
+        "$(\\lambd[m][(\\lambd[y][y])m])$",
+        "$\\lambd[m][m]$",
+        "$\\beta$",
+        "$\\beta$",
+        "$\\bredone$",
+        "$\\beta$",
+        "$\\bredone$",
+        "\\[(\\lambd[x][N])Q\\bredone\\Subst{N}{Q}{x}\\]",
+        "$P\\bredoneQ$",
+        "$P$",
+        "$Q$",
+        "$\\beta$",
+        "$(\\lambd[x][N])Q$",
+        "$\\beta$",
+        "$\\beta$",
+        "$\\bred$",
+        "$\\beta$",
+        "$\\bred$",
+        "$\\bredone$",
+        "$P\\bredQ$",
+        "$P$",
+        "$Q$",
+        "$\\beta$",
+        "$\\bredone$",
+        "$\\redone$",
+        "$\\bred$",
+        "$\\red$",
+        "$M\\bredN$",
+        "$M$",
+        "$\\beta$",
+        "$N$",
+        "$\\beta$",
+        "$\\beta$",
+        "$\\beta$",
+        "$M\\bredN$",
+        "$N$",
+        "$\\beta$",
+        "$N$",
+        "$M$",
+        "\\begin{align*}(\\lambd[x][xxy])\\lambd[z][z]&\\redone(\\lambd[z][z])(\\lambd[z][z])y\\\\&\\redone(\\lambd[z][z])y\\\\&\\redoney\\end{align*}",
+        "\\begin{align*}(\\lambd[x][xxy])(\\lambd[x][xxy])&\\redone(\\lambd[x][xxy])(\\lambd[x][xxy])y\\\\&\\redone(\\lambd[x][xxy])(\\lambd[x][xxy])yy\\\\&\\redone\\dots\\end{align*}",
+        "\\[(\\lambd[x][xx])(\\lambd[x][xx])\\redone(\\lambd[x][xx])(\\lambd[x][xx])\\]",
+        "\\[(\\lambd[x][(\\lambd[y][yx])z])v\\redone(\\lambd[y][yv])z\\]",
+        "\\[(\\lambd[x][(\\lambd[y][yx])z])v\\redone(\\lambd[x][zx])v\\]",
+        "$zv$",
+        "$\\beta$",
+        "$\\beta$",
+        "$\\equal$",
+        "$\\beta$",
+        "$\\equal$",
+        "$M\\equalM$",
+        "$M\\equalN$",
+        "$N\\equalM$",
+        "$M\\equalN$",
+        "$N\\equalO$",
+        "$M\\equalO$",
+        "$M\\equalN$",
+        "$PM\\equalPN$",
+        "$M\\equalN$",
+        "$MQ\\equalNQ$",
+        "$M\\equalN$",
+        "$\\lambd[x][M]\\equal\\lambd[x][N]$",
+        "$(\\lambd[x][N])Q\\equal\\Subst{N}{Q}{x}$",
+        "$\\beta$",
+        "$\\beta$",
+        "$\\beta$",
+        "$\\beta$",
+        "$\\beta$",
+        "$M$",
+        "$N$",
+        "$\\beta$",
+        "$N$",
+        "$M$",
+        "$\\beta$",
+        "$\\equal[X]$",
+        "$X$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [
+        "OLTELAMBETA-001"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2187,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: beta",
+          "target_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: beta"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{int}{bet}\n\\olsection{$\\beta$-reduction}",
+          "target_start": "\\olfileid{lam}{syn}{bet}\n\\olsection{$\\beta$-తగ్గింపు}\n\\sourcecorrection{OLTELAMBETA-001}{మూల ఫైలు beta.texను వ"
+        },
+        {
+          "index": 5,
+          "source_start": "When we see $(\\lambd[m][(\\lambd[y][y]) m])$, it is natural to\nconjecture that it has some connection with $\\la",
+          "target_start": "$(\\lambd[m][(\\lambd[y][y]) m])$ను చూసినప్పుడు దానికి\n$\\lambd[m][m]$తో ఏదో సంబంధం ఉందని అనిపిస్తుంది: మొదటి పదా"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}[$\\beta$-contraction, $\\bredone$] \\ollabel{defn:betacontr}\n  \\emph{The $\\beta$-contraction} ($\\bre",
+          "target_start": "\\begin{defn}[$\\beta$-సంకోచనం, $\\bredone$] \\ollabel{defn:betacontr}\n  \\emph{$\\beta$-సంకోచనం} ($\\bredone$) అనేది"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{prob} \\ollabel{prob:def}\n  Spell out the equivalent inductive definitions of $\\beta$-contraction as we\n",
+          "target_start": "\\begin{prob} \\ollabel{prob:def}\n  \\olref[lam][syn][alp]{defn:aconvone}లో బద్ధ చరం పేరు మార్పుకు\n  ఇచ్చినట్లుగా"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{defn}[$\\beta$-reduction, $\\bred$] \\ollabel{defn:betared}\n  \\emph{$\\beta$-reduction} ($\\bred$) is the sm",
+          "target_start": "\\begin{defn}[$\\beta$-తగ్గింపు, $\\bred$] \\ollabel{defn:betared}\n  \\emph{$\\beta$-తగ్గింపు} ($\\bred$) అనేది $\\bre"
+        },
+        {
+          "index": 9,
+          "source_start": "We will write $\\redone$ instead of $\\bredone$, and $\\red$ instead of\n$\\bred$ when context is clear.",
+          "target_start": "సందర్భం స్పష్టంగా ఉన్నప్పుడు $\\bredone$కు బదులు $\\redone$,\n$\\bred$కు బదులు $\\red$ అని రాస్తాం."
+        },
+        {
+          "index": 10,
+          "source_start": "Informally speaking, $M \\bred N$  if and only if $M$ can be changed to\n$N$ by zero or several steps of $\\beta$",
+          "target_start": "అనౌపచారికంగా, $M \\bred N$ అనేది $M$ నుంచి సున్నా లేదా\nకొన్ని $\\beta$-సంకోచన దశలతో $N$ను పొందగలిగినప్పుడే నిజం."
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{defn}[$\\beta$-normal]\nA term that cannot be $\\beta$-contracted any further is said to be\n\\emph{$\\beta$-",
+          "target_start": "\\begin{defn}[$\\beta$-నియతమైనది]\nఇకపై $\\beta$-సంకోచనం చేయలేని పదాన్ని\n\\emph{$\\beta$-నియతమైనది} అంటాం.\n\\end{defn"
+        },
+        {
+          "index": 12,
+          "source_start": "If $M \\bred N$ and $N$ is $\\beta$-normal, then we say $N$ is a\n\\emph{normal form} of~$M$. One may ask if the n",
+          "target_start": "$M \\bred N$ అయ్యి $N$ $\\beta$-నియతమైతే, $N$ను $M$ యొక్క\n\\emph{నియత రూపం} అంటాం. ఒక పదపు నియత రూపం అనన్యమేనా అన"
+        },
+        {
+          "index": 13,
+          "source_start": "Let us consider some examples.\n\\begin{enumerate}\n\\item We have\n\\begin{align*}\n(\\lambd[x][xxy]) \\lambd[z][z] & ",
+          "target_start": "కొన్ని ఉదాహరణలను పరిశీలిద్దాం.\n\\begin{enumerate}\n\\item మనకు\n\\begin{align*}\n(\\lambd[x][xxy]) \\lambd[z][z] & \\re"
+        },
+        {
+          "index": 14,
+          "source_start": "The final outcome in the last example is not a coincidence, but rather\nillustrates a deep and important proper",
+          "target_start": "చివరి ఉదాహరణలోని అంతిమ ఫలితం యాదృచ్ఛికం కాదు.\nఅది లాంబ్డా కలనశాస్త్రంలోని “చర్చ్--రోసర్ లక్షణం”\nఅనే లోతైన, ముఖ"
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{digress}\n  In general, there is more than one way to $\\beta$-reduce a term,\n  thus many reduction strat",
+          "target_start": "\\begin{digress}\n  సాధారణంగా ఒక పదాన్ని $\\beta$-తగ్గించడానికి ఒకటి కంటే\n  ఎక్కువ మార్గాలుంటాయి. అందువల్ల అనేక త"
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{defn}[$\\beta$-equivalence, $\\equal$]\n  \\emph{$\\beta$-Equivalence} ($\\equal$) is the relation inductivel",
+          "target_start": "\\begin{defn}[$\\beta$-తుల్యత, $\\equal$]\n  \\emph{$\\beta$-తుల్యత} ($\\equal$) అనేది కింది విధంగా\n  ఆగమన పద్ధతిలో న"
+        },
+        {
+          "index": 17,
+          "source_start": "The first three rules make the relation an equivalence relation; the\nnext three make it compatible; the last e",
+          "target_start": "మొదటి మూడు నియమాలు దీన్ని తుల్యతా సంబంధంగా చేస్తాయి;\nతరువాతి మూడు అనుకూల సంబంధంగా చేస్తాయి; చివరి నియమం\nదీనిలో"
+        },
+        {
+          "index": 18,
+          "source_start": "Informally speaking, two terms are $\\beta$-equivalent if and only if\none of them can be changed to the other i",
+          "target_start": "అనౌపచారికంగా, రెండు పదాలు $\\beta$-తుల్యాలు కావడానికి,\nఒకదాన్ని సున్నా లేదా కొన్ని $\\beta$-సంకోచన లేదా\nతిరుగు $"
+        },
+        {
+          "index": 19,
+          "source_start": "Besides the above rules, we will extend the relation with more\nrules, and denote the extended equivalence rela",
+          "target_start": "పై నియమాలకు మరిన్ని నియమాలను చేర్చి ఈ సంబంధాన్ని\nవిస్తరిస్తాం. అలా విస్తరించిన తుల్యతా సంబంధాన్ని\n$\\equal[X]$ "
+        },
+        {
+          "index": 20,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{int}{bet}",
+        "\\ollabel{defn:betacontr}",
+        "\\ollabel{prob:def}",
+        "\\olref[lam][syn][alp]{defn:aconvone}",
+        "\\ollabel{defn:betared}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{syn}{bet}",
+        "\\ollabel{defn:betacontr}",
+        "\\ollabel{prob:def}",
+        "\\olref[lam][syn][alp]{defn:aconvone}",
+        "\\ollabel{defn:betared}"
+      ],
+      "protected_identifier_exact_match": false,
+      "protected_identifier_delta_source_only": [
+        "\\olfileid{lam}{int}{bet}"
+      ],
+      "protected_identifier_delta_target_only": [
+        "\\olfileid{lam}{syn}{bet}"
+      ],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    }
+  ]
+}

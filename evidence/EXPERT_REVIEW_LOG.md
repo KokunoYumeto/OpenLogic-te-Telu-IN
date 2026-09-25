@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 364 of 722 draft units**. This log contains 86 terminology/sense decisions and 319 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 365 of 722 draft units**. This log contains 87 terminology/sense decisions and 320 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2071,6 +2071,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: ఆల్ఫా-తుల్యతా వర్గం, ప్రతినిధి పదాలు నిర్వచనపరంగా స్పష్టం; వర్గాలపైకి దింపడం అనే quotient-map వివరణకు మధ్యస్థ భాషా అనిశ్చితి ఉంది. ప్రతినిధి ఎంపికపై స్వాతంత్ర్యం మూల నిరూపణ ఖాళీ వల్ల ఇక్కడ స్వతంత్రంగా నిర్ధారించబడలేదు.
 
 - Please double-check: Please double-check whether “ఆల్ఫా-తుల్యతా వర్గం / ప్రతినిధి / ప్రతినిధి ఎంపికపై ఆధారపడని వర్గ చర్య / లాంబ్డా వర్గాలపైకి దింపడం” is idiomatic and technically standard for “alpha-equivalence class / representative / well-defined class operation / projection to Lambda-terms” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T087 — natural reduction strategy / left-most redex / normalizing strategy
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: సహజ తగ్గింపు వ్యూహం / అత్యంత ఎడమవైపు రెడెక్స్ / నియత రూపాన్ని చేరే వ్యూహం
+
+- Exact implementation: OLP-0365; lambda-calculus/syntax/beta; content/lambda-calculus/syntax/beta.tex:88-98 ↔ translation/content/lambda-calculus/syntax/beta.tex:91-101 (OLP-0365-B015); printed/PDF page pending; OLP-0365; lambda-calculus/syntax/beta; content/lambda-calculus/syntax/beta.tex:88-98 ↔ translation/content/lambda-calculus/syntax/beta.tex:91-101 (OLP-0365-B015); printed/PDF page pending; OLP-0365; lambda-calculus/syntax/beta; content/lambda-calculus/syntax/beta.tex:88-98 ↔ translation/content/lambda-calculus/syntax/beta.tex:91-101 (OLP-0365-B015); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P027లో పదం, చరం; TE-P029లో పరిధి, బద్ధ చరం; TE-P003, TE-P032లో వివరణ, నిరూపణ గద్య శైలిని ప్రత్యక్షంగా చూశాం. ఈ పేజీలు బీటా-సంకోచనం, రెడెక్స్ లేదా సహజ తగ్గింపు వ్యూహాన్ని నేరుగా బోధించవు. OLP-0365లోని ఒక్క-దశ నియమం, ఎడమవైపు రెడెక్స్ స్థాన నిర్వచనం, నియత రూపాన్ని చేరే iff వాదన ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి. TE-T078లోని స్థాపిత బీటా-సంకోచనం/తగ్గింపు/నియత రూపం పదజాలాన్ని కొనసాగించాం; OLTELAMBETA-001 మూల ఫైలు-గుర్తింపు భేదానికే చెందినది, వ్యూహానికి సాక్ష్యం కాదు. బీటా, రెడెక్స్ సాంకేతిక స్వీకరణలు; చర్చ్--రోసర్ మూల వ్యక్తి పేర్లు. β, λ, M, N, P, Q, x, y మరియు తగ్గింపు బాణాలు గణిత సంకేతాలుగా యథాతథం.
+
+- Alternatives: మునుపటి బీటా-సంకోచనం/తగ్గింపు పదజాలంతో సహజ వ్యూహం, అత్యంత ఎడమవైపు రెడెక్స్ అనే స్థాన-నియంత్రిత వివరణ (ఎంపిక); ఎడమవైపు అని మాత్రమే చెప్పి రెడెక్స్ మొదలయ్యే స్థానం అనే మూల నియమాన్ని వదలడం (తిరస్కరణ); సహజ వ్యూహం ఏ పదాన్నైనా తప్పక నియత రూపానికి తీసుకెళ్తుందని చెప్పడం (తిరస్కరణ; మూల వాదన నియత రూపం ఉన్నప్పుడు మాత్రమే); స్థానిక పేజీలు బీటా వ్యూహాన్ని నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: మూల నిర్వచనం నియమాన్ని స్పష్టంచేస్తుంది; సహజ వ్యూహం, రెడెక్స్ అనే పేర్లకు మధ్యస్థ నామకరణ అనిశ్చితి ఉంది. ఈ విభాగం వ్యూహం నియత రూపం చేరుతుందనే వాదనకు స్వతంత్ర నిరూపణ ఇవ్వదు; పాఠ్యంలో తరువాతి చర్చ ఆధారంగా చెప్పినట్లు మాత్రమే ఉంచాం.
+
+- Please double-check: Please double-check whether “సహజ తగ్గింపు వ్యూహం / అత్యంత ఎడమవైపు రెడెక్స్ / నియత రూపాన్ని చేరే వ్యూహం” is idiomatic and technically standard for “natural reduction strategy / left-most redex / normalizing strategy” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -9727,3 +9751,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: పూర్వ ఉపసిద్ధాంతంపై ఆధార సూచనను నిలిపి, OLTELAMALP-005–006 మూల నిరూపణ ఖాళీలు ఇంకా తెరిచే ఉన్నాయని స్పష్టంగా ప్రకటించామా?
+
+## REV-OLTELAMBETA-001 — OLTELAMBETA-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: repaired the section file ID chapter component from int to syn to match its importing syntax chapter, with adjacent Telugu disclosure
+
+- Exact implementation: OLP-0365; lambda-calculus/syntax/beta; line 9, beta.tex file ID, versus syntax.tex lines 8 and 26 ↔ translation/content/lambda-calculus/syntax/beta.tex:11 (OLP-0365-B004); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMBETA-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: repaired the section file ID chapter component from int to syn to match its importing syntax chapter, with adjacent Telugu disclosure
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: వాక్యనిర్మాణ అధ్యాయ డ్రైవరు దిగుమతి చేసే బీటా విభాగపు ఫైలు గుర్తింపులో intకు బదులు syn అవసరమని మూల పథం, డ్రైవరు, పక్క విభాగాల ఆధారాలు చూపుతున్నాయా?

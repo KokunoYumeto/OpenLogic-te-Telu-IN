@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 364 of 722 draft units**. This view selects 372 of 405 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 365 of 722 draft units**. This view selects 373 of 407 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -3723,3 +3723,13 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0364; lambda-calculus/syntax/term-revisited; translation/content/lambda-calculus/syntax/term-revisited.tex:60; printed/PDF page pending
 
 - Please double-check: Please double-check: పూర్వ ఉపసిద్ధాంతంపై ఆధార సూచనను నిలిపి, OLTELAMALP-005–006 మూల నిరూపణ ఖాళీలు ఇంకా తెరిచే ఉన్నాయని స్పష్టంగా ప్రకటించామా?
+
+## REV-OLTELAMBETA-001 — OLTELAMBETA-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: repaired the section file ID chapter component from int to syn to match its importing syntax chapter, with adjacent Telugu disclosure
+
+- Occurrences: OLP-0365; lambda-calculus/syntax/beta; translation/content/lambda-calculus/syntax/beta.tex:11; printed/PDF page pending
+
+- Please double-check: Please double-check: వాక్యనిర్మాణ అధ్యాయ డ్రైవరు దిగుమతి చేసే బీటా విభాగపు ఫైలు గుర్తింపులో intకు బదులు syn అవసరమని మూల పథం, డ్రైవరు, పక్క విభాగాల ఆధారాలు చూపుతున్నాయా?
