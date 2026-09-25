@@ -3,9 +3,118 @@
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "scope": "23 of 722 units; complete Sets, Relations, and Functions chapters; not full edition",
   "profile": "sfr",
-  "html_sha256": "95d95c8664eceedab56f2c0402375b7adb9ef1e5c4471d1b651bdc6f428de210",
+  "html_sha256": "dc68f3630fef72440ec12d0fbaa11e77098b734c7ae68be9d30ed0bd9cfd8103",
   "katex_version": "0.18.5",
   "math_output": "native MathML; no client JavaScript or remote runtime dependencies",
+  "selective_config_sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724",
+  "selective_defaults": {
+    "cmplCCS": true,
+    "cmplMCS": true,
+    "compsci": true,
+    "defAll": false,
+    "defAnd": false,
+    "defBox": false,
+    "defDiamond": false,
+    "defEx": false,
+    "defFalse": false,
+    "defIf": false,
+    "defIff": false,
+    "defNot": false,
+    "defOr": false,
+    "defTrue": false,
+    "FOL": true,
+    "lambda": true,
+    "limitClause": true,
+    "math": true,
+    "notcmplCCS": false,
+    "notcmplMCS": false,
+    "notcompsci": false,
+    "notdefAll": true,
+    "notdefAnd": true,
+    "notdefBox": true,
+    "notdefDiamond": true,
+    "notdefEx": true,
+    "notdefFalse": true,
+    "notdefIf": true,
+    "notdefIff": true,
+    "notdefNot": true,
+    "notdefOr": true,
+    "notdefTrue": true,
+    "notFOL": false,
+    "notlambda": false,
+    "notlimitClause": false,
+    "notmath": false,
+    "notnovice": false,
+    "notphil": false,
+    "notprfAX": false,
+    "notprfND": false,
+    "notprfSC": false,
+    "notprfTab": false,
+    "notprobAll": true,
+    "notprobAnd": true,
+    "notprobBox": true,
+    "notprobDiamond": true,
+    "notprobEx": true,
+    "notprobIf": true,
+    "notprobIff": true,
+    "notprobNot": true,
+    "notprobOr": true,
+    "notprvAll": false,
+    "notprvAnd": false,
+    "notprvBox": false,
+    "notprvDiamond": false,
+    "notprvEx": false,
+    "notprvFalse": false,
+    "notprvIf": false,
+    "notprvIff": false,
+    "notprvNot": false,
+    "notprvOr": false,
+    "notprvTrue": false,
+    "nottagTrue": false,
+    "notTMs": false,
+    "novice": true,
+    "phil": true,
+    "prfAX": true,
+    "prfND": true,
+    "prfSC": true,
+    "prfTab": true,
+    "probAll": false,
+    "probAnd": false,
+    "probBox": false,
+    "probDiamond": false,
+    "probEx": false,
+    "probIf": false,
+    "probIff": false,
+    "probNot": false,
+    "probOr": false,
+    "prvAll": true,
+    "prvAnd": true,
+    "prvBox": true,
+    "prvDiamond": true,
+    "prvEx": true,
+    "prvFalse": true,
+    "prvIf": true,
+    "prvIff": true,
+    "prvNot": true,
+    "prvOr": true,
+    "prvTrue": true,
+    "tagTrue": true,
+    "TMs": true
+  },
+  "reader_source_projection_repairs": [
+    {
+      "unit_id": "OLP-0140",
+      "language": "en",
+      "kind": "balanced_notation_delimiters",
+      "description": "The frozen English source has three split quantifier expressions with a missing closing bracket and a corresponding surplus bracket. The semantic reader balances those delimiters without changing the immutable source bytes."
+    },
+    {
+      "unit_id": "OLP-0271",
+      "language": "te",
+      "kind": "standalone_object_font_command",
+      "description": "A Telugu source-correction note names the object-font command in mathematics without its required argument. The semantic reader displays the command name in object font without changing the immutable source bytes."
+    }
+  ],
   "units": [
     {
       "unit_id": "OLP-0004",
@@ -120,17 +229,17 @@
       "source_path": "content/sets-functions-relations/sets/basics.tex",
       "source_sha256": "232ff51f51e74fcfee836650f3c597b54bf10ba5363c648a0c05fe8222e4a865",
       "translation_sha256": "9c53dd1f24d292aad1d5554b24ec18b39536cc488d43b0d399ecb72523218d8f",
-      "render_sha256": "11b368fbd1816a1e928b8e9101960f75055316fe159be5c4c2ca2ecefd3ce35a",
+      "render_sha256": "9781d096b9f163b2f97a90f94d41b7534976acb91a8ddcea08410ef5d5583f9a",
       "aligned_blocks": 15,
       "linguistic_blocks": 11,
       "math_expressions": 52,
       "english_math_expressions": 52,
-      "telugu_text_runs": 119,
-      "telugu_text_characters": 2701,
-      "telugu_text_runs_sha256": "d16e9c4e60d94306b91f2d1514527e0eab35ed976d859eb82b08b54fcf15a64d",
-      "english_text_runs": 119,
-      "english_text_characters": 2721,
-      "english_text_runs_sha256": "a5c3f7ff3c83b3b890de611d80624c6d5fcefd701007c180a46d5aa25a937daf",
+      "telugu_text_runs": 113,
+      "telugu_text_characters": 2689,
+      "telugu_text_runs_sha256": "0cbb610818f82d6d4e8ef05fd6d89ad576af81668eaf23fc57bdf6ef0abd217f",
+      "english_text_runs": 113,
+      "english_text_characters": 2710,
+      "english_text_runs_sha256": "8d2b707b2a00e7840f7a5ffce628424246f6fa4974c5ae5c92c524bbd47bcc1f",
       "telugu_commands": {
         "documentclass": 1,
         "olfileid": 1,
@@ -470,17 +579,17 @@
       "source_path": "content/sets-functions-relations/sets/important-sets.tex",
       "source_sha256": "ec2115fa48ea6c6684a65bdf2f504102ca0a74b40cf88293dfc12f4ab97ada02",
       "translation_sha256": "47489278d2033324127e26c7e808c898fdf35fdee696bc68328dcfcb660ca3d9",
-      "render_sha256": "287b74c2e4da0a789043a3b54e19b4076bfdfbb149e82f24874122b4c8455782",
+      "render_sha256": "bde94cec423a5daa1da63346e5050f8cd02c913bc5b0b25298a6a052018545a9",
       "aligned_blocks": 10,
       "linguistic_blocks": 6,
       "math_expressions": 26,
       "english_math_expressions": 26,
-      "telugu_text_runs": 62,
-      "telugu_text_characters": 1263,
-      "telugu_text_runs_sha256": "0de3605142c4315d41b25875a36ae826df7fff006104a6a3c8c700e3f3df082c",
-      "english_text_runs": 62,
-      "english_text_characters": 1368,
-      "english_text_runs_sha256": "4bcaeabf018da00141a6756bb342674231addcca529b603d778d36c546c05025",
+      "telugu_text_runs": 60,
+      "telugu_text_characters": 1259,
+      "telugu_text_runs_sha256": "9c97e221e5663a3fe6050ef9e80e75c2aadd22d075faf77ee4c60d37cc1c18ed",
+      "english_text_runs": 60,
+      "english_text_characters": 1364,
+      "english_text_runs_sha256": "375618748c8c77fcd96d0d4059649cf9a68ac6d2a179eec5ae791e45438d614b",
       "telugu_commands": {
         "documentclass": 1,
         "olfileid": 1,
@@ -1076,17 +1185,17 @@
       "source_path": "content/sets-functions-relations/sets/russells-paradox.tex",
       "source_sha256": "aa8e94675f56112d8952b81d17968545b54c33393bfc466745edcaca30f4453a",
       "translation_sha256": "c969836ffd90adacc77a526122e4bf2dface0663cb1decba90fabb73ff7e8768",
-      "render_sha256": "d87b198e4ad08d8016e7c827c858b549bc6f90a3f3e9fa283f8026685ab9396f",
+      "render_sha256": "115cf3963794dca6f8c6ee021368b072fc4d71951db55771274024e059a80824",
       "aligned_blocks": 15,
       "linguistic_blocks": 11,
       "math_expressions": 34,
       "english_math_expressions": 34,
-      "telugu_text_runs": 90,
-      "telugu_text_characters": 2565,
-      "telugu_text_runs_sha256": "da89c03dfc23a11349d5959e8adacde93d3975c0c9b32e4ec675916ed52e1d00",
-      "english_text_runs": 93,
-      "english_text_characters": 2748,
-      "english_text_runs_sha256": "b1ca765c3134d460f43728fde74685a0c013b3be1c88ce237af00dc3bd8a9aab",
+      "telugu_text_runs": 88,
+      "telugu_text_characters": 2561,
+      "telugu_text_runs_sha256": "e3e155eb4f5dd20c94d48f49ceba8666b28d8f7df5ed5970b53108534eca8604",
+      "english_text_runs": 91,
+      "english_text_characters": 2744,
+      "english_text_runs_sha256": "2f3700ee0c04b78c97cdbc1f8c97f0c2b73818ef672875bbace907ea28d5a8ea",
       "telugu_commands": {
         "documentclass": 1,
         "olfileid": 1,
@@ -4187,11 +4296,25 @@
       "conversion": "Exact source Bezier/control/line coordinates and stroke styles; native downward SVG y axis matches original TikZ negative y scale."
     },
     {
+      "kind": "inline_tikz",
       "name": "inline-8ee505c808d2f308",
-      "snippet_index": 1,
+      "occurrences": [
+        {
+          "language": "en",
+          "snippet_index": 1,
+          "source_path": "content/sets-functions-relations/relations/graphs.tex",
+          "source_sha256": "dec624ef4e71903b72a9f0b5fcc6a15a2e0f897f9ebe881dd9c9e21333aeee75",
+          "unit_id": "OLP-0017"
+        },
+        {
+          "language": "te",
+          "snippet_index": 1,
+          "source_path": "content/sets-functions-relations/relations/graphs.tex",
+          "source_sha256": "3dc4cce85e8e9ae78a8d6566ddc77dbdd8e17008a031016eda22c3d051176aa4",
+          "unit_id": "OLP-0017"
+        }
+      ],
       "snippet_sha256": "8ee505c808d2f3084f7f42d0de55f0190e16da0f1ed9cf3ebaf6681832ad0e2e",
-      "source_path": "content/sets-functions-relations/relations/graphs.tex",
-      "source_sha256": "dec624ef4e71903b72a9f0b5fcc6a15a2e0f897f9ebe881dd9c9e21333aeee75",
       "svg_bytes": 6151,
       "svg_path": "editions/reader-assets/diagrams/inline-8ee505c808d2f308.svg",
       "svg_sha256": "109d95a2e61ea90fc1e1a96f469b3cd99e17f7b2d9e951e15337a8fa9ad2ed59",
@@ -4200,11 +4323,25 @@
       "description_en": "Directed graph with vertices V = {1,2,3,4} and edges (1,1), (1,2), (1,3), and (2,3)."
     },
     {
+      "kind": "inline_tikz",
       "name": "inline-f90ab2f746e4260f",
-      "snippet_index": 2,
+      "occurrences": [
+        {
+          "language": "en",
+          "snippet_index": 2,
+          "source_path": "content/sets-functions-relations/relations/graphs.tex",
+          "source_sha256": "dec624ef4e71903b72a9f0b5fcc6a15a2e0f897f9ebe881dd9c9e21333aeee75",
+          "unit_id": "OLP-0017"
+        },
+        {
+          "language": "te",
+          "snippet_index": 2,
+          "source_path": "content/sets-functions-relations/relations/graphs.tex",
+          "source_sha256": "3dc4cce85e8e9ae78a8d6566ddc77dbdd8e17008a031016eda22c3d051176aa4",
+          "unit_id": "OLP-0017"
+        }
+      ],
       "snippet_sha256": "f90ab2f746e4260f78e9db6c3aca1357fd81318ad0aec39e37acfa961063c761",
-      "source_path": "content/sets-functions-relations/relations/graphs.tex",
-      "source_sha256": "dec624ef4e71903b72a9f0b5fcc6a15a2e0f897f9ebe881dd9c9e21333aeee75",
       "svg_bytes": 5301,
       "svg_path": "editions/reader-assets/diagrams/inline-f90ab2f746e4260f.svg",
       "svg_sha256": "bb3e0dbaf988c667f574837b068600f5fdb92865c4b7119cb0cced58b74ad0a3",
@@ -4213,11 +4350,25 @@
       "description_en": "A distinct graph with the same edges but only the vertices V-prime = {1,2,3}."
     },
     {
+      "kind": "inline_tikz",
       "name": "inline-f122123b1f5663cd",
-      "snippet_index": 1,
+      "occurrences": [
+        {
+          "language": "en",
+          "snippet_index": 1,
+          "source_path": "content/sets-functions-relations/relations/trees.tex",
+          "source_sha256": "a158f1ce5b84c8c3f681dd6347b22491d1b67a91e110138b9cb6833e3d9dc23c",
+          "unit_id": "OLP-0018"
+        },
+        {
+          "language": "te",
+          "snippet_index": 1,
+          "source_path": "content/sets-functions-relations/relations/trees.tex",
+          "source_sha256": "22cbcf51a23019057a88fe05299f1bb3a23ccd9b755acc6b120a43779131b7f2",
+          "unit_id": "OLP-0018"
+        }
+      ],
       "snippet_sha256": "f122123b1f5663cddcf11087601733429738daa819bfa509887e9750efcf8e7c",
-      "source_path": "content/sets-functions-relations/relations/trees.tex",
-      "source_sha256": "a158f1ce5b84c8c3f681dd6347b22491d1b67a91e110138b9cb6833e3d9dc23c",
       "svg_bytes": 9334,
       "svg_path": "editions/reader-assets/diagrams/inline-f122123b1f5663cd.svg",
       "svg_sha256": "dbe4f0471af280e26253067f14546f555fc0403cfbfbd2c81be689c85fc28174",
@@ -4226,6 +4377,7 @@
       "description_en": "Finite tree: the bottom root r branches upward to a and b, and a branches to c, d, and e."
     },
     {
+      "kind": "external_tikz",
       "name": "function",
       "snippet_index": 1,
       "source_path": "assets/diagrams/function.tikz",
@@ -4238,6 +4390,7 @@
       "description_en": "Function diagram: each argument in the domain has an arrow to its corresponding value in the codomain."
     },
     {
+      "kind": "external_tikz",
       "name": "surjective",
       "snippet_index": 1,
       "source_path": "assets/diagrams/surjective.tikz",
@@ -4250,6 +4403,7 @@
       "description_en": "Surjective function diagram: every codomain element is reached by at least one arrow."
     },
     {
+      "kind": "external_tikz",
       "name": "injective",
       "snippet_index": 1,
       "source_path": "assets/diagrams/injective.tikz",
@@ -4262,6 +4416,7 @@
       "description_en": "Injective function diagram: arrows from distinct arguments reach distinct values."
     },
     {
+      "kind": "external_tikz",
       "name": "bijective",
       "snippet_index": 1,
       "source_path": "assets/diagrams/bijective.tikz",
@@ -4274,6 +4429,7 @@
       "description_en": "Bijective function diagram: every codomain element is reached by exactly one domain element."
     },
     {
+      "kind": "external_tikz",
       "name": "composition",
       "snippet_index": 1,
       "source_path": "assets/diagrams/composition.tikz",
@@ -4976,256 +5132,382 @@
       }
     ]
   ],
+  "duplicate_labels": [],
+  "english_duplicate_labels": [],
   "references": [
     {
       "key": "sfr:set:bas:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:set:uni:fig:union",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:set:uni:fig:intersection",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:set:uni:difference",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:set:pai:wienerkuratowski",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:set:imp:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:set:pai:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:rel:set:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:rel:set:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:set:pai:wienerkuratowski",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:rel:ord:prop:partialtostrict",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:rel:ord:prop:stricttopartial",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:rel:ord:prop:partialtostrict",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:bas:fig:function",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:kin:fig:surjective",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:kin:fig:injective",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:kin:fig:bijective",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:rel:prop:graph-function",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:rel:ref:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:rel:ops:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:rel:ops:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:inv:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:cmp:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:inv:prop:bijection-inverse",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:kin:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:inv:prop:bijection-inverse",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:inv:prop:left-right",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:inv:prop:left-right",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:inv:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:rel:ops:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:cmp:fig:composition",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     }
   ],
   "english_references": [
     {
       "key": "sfr:set:bas:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:set:uni:fig:union",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:set:uni:fig:intersection",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:set:uni:difference",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:set:pai:wienerkuratowski",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:set:imp:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:set:pai:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:rel:set:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:rel:set:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:set:pai:wienerkuratowski",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:rel:ord:prop:partialtostrict",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:rel:ord:prop:stricttopartial",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:rel:ord:prop:partialtostrict",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:bas:fig:function",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:kin:fig:surjective",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:kin:fig:injective",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:kin:fig:bijective",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:rel:prop:graph-function",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:rel:ref:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:rel:ops:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:rel:ops:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:inv:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:cmp:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:inv:prop:bijection-inverse",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:kin:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:inv:prop:bijection-inverse",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:inv:prop:left-right",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:inv:prop:left-right",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:inv:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:rel:ops:sec",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     },
     {
       "key": "sfr:fun:cmp:fig:composition",
-      "resolved": true
+      "resolved": true,
+      "known_missing": false,
+      "context": "prose"
     }
   ],
   "conditional_branches": [
@@ -20449,6 +20731,6 @@
     "H": 3,
     "footnote": 1
   },
-  "parser_policy": "Unknown commands/environments or math errors fail closed; all ordinary text parsed and rendered. Conditional projection follows available labels. Inline TikZ and approved frozen diagram assets are source-hash-bound to local SVG projections with localized semantic descriptions; citation commands retain keys and locators and link to local bibliography entries.",
+  "parser_policy": "Unknown commands/environments, unknown reference labels, or math errors fail closed; all ordinary text is parsed and rendered. References to canonical labels that are unavailable in this bounded reader scope are rendered as explicit external-reference markers and retained in the receipt. Upstream selective tags are projected with the exact frozen default configuration, any-active list semantics, inverse not-tags, tagged lists/references, and conditional problem blocks before parsing, including inside mathematics. Conditional label projection follows available labels. Evident frozen-source delimiter defects listed in reader_source_projection_repairs are balanced only in the semantic projection; source bytes remain unchanged. Repeated labels in alternative source units keep the first canonical target and receive unique duplicate anchors, with every occurrence recorded. Inline TikZ and approved frozen diagram assets are source-hash-bound to local SVG projections with localized semantic descriptions; citation commands retain keys and locators and link to local bibliography entries.",
   "status": "deterministic_qa_pending"
 }

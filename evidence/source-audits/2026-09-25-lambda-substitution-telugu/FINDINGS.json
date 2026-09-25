@@ -1,0 +1,78 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTELAMSUB-20260925",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": ["OLP-0361"],
+    "finding_count": 7
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "source_file": {
+    "path": "content/lambda-calculus/syntax/substitution.tex",
+    "bytes": 6399,
+    "sha256": "8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTELAMSUB-001",
+      "classification": "formal_definition_and_prose_mismatch",
+      "source_locator": "lines 28-40, partial substitution rule and bound-variable example",
+      "finding": "అమూర్తీకరణ నియమం బంధక చరం, ప్రతిస్థాపించాల్సిన చరం ఒకటే అయిన సందర్భాన్ని నిర్వచించదు; తరువాతి వివరణ మాత్రం ప్రతిస్థాపన ఫలితంగా అమూర్తీకరణ మారదని చెబుతుంది.",
+      "controlling_evidence": "నియమం నాలుగులో x భిన్నం y అనేది అవసరమైన పరికల్పన; లేకపోతే undefined అని స్పష్టంగా ఉంది. తరువాతి ఆల్ఫా-మార్పిడి విభాగమూ ఈ పాక్షిక ప్రతిస్థాపనపై ఆధారపడుతుంది.",
+      "required_translation_handling": "మూల నియమాన్ని మార్చకుండా, కోరుకున్న అనౌపచారిక ఫలితాన్నీ, ప్రస్తుత నిర్వచనంలో ఆ సందర్భం నిర్వచితం కాదన్న విషయాన్నీ వేరుచేయాలి."
+    },
+    {
+      "finding_id": "OLTELAMSUB-002",
+      "classification": "local_english_verb_agreement_error",
+      "source_locator": "lines 48-51, function discarding its argument",
+      "finding": "మూలంలోని 'accepts an argument, drop it, and returns'లో drop క్రియారూపం మిగిలిన క్రియలకు సరిపోదు.",
+      "controlling_evidence": "అదే వాక్యంలో function అనేది ఏకవచన కర్త; accepts, returns అనే క్రియలు దానితో ఏకీభవిస్తున్నాయి.",
+      "required_translation_handling": "ఆర్గ్యుమెంటును పట్టించుకోకుండా పరిసర చరాన్ని ఇచ్చే భావాన్ని సహజ తెలుగు క్రియారూపంతో ఇవ్వాలి."
+    },
+    {
+      "finding_id": "OLTELAMSUB-003",
+      "classification": "wrong_variable_in_no_free_occurrence_proof",
+      "source_locator": "lines 72-76, proof of thm:notinfv",
+      "finding": "నిరూపణ ఈ సందర్భంలో నిర్వచించని Q గురించి x స్వేచ్ఛగా లేదని చెబుతుంది; అవసరమైనది P గురించి అదే పరికల్పన.",
+      "controlling_evidence": "M అనేది lambda y.P, x భిన్నం y, x స్వేచ్ఛగా Mలో లేదు; కాబట్టి x స్వేచ్ఛగా Pలో లేదు. ఆగమన పరికల్పన Pకు వర్తిస్తుంది.",
+      "required_translation_handling": "Q స్థానంలో Pను, దాని అనుసంధానాన్ని పునరుద్ధరించాలి."
+    },
+    {
+      "finding_id": "OLTELAMSUB-004",
+      "classification": "stray_parenthesis_in_theorem_hypothesis",
+      "source_locator": "lines 95-97, statement of thm:infv",
+      "finding": "x స్వేచ్ఛా చరాల సమితికి చెందినదని తెలిపే సూత్రంలో అదనపు ముగింపు కుండలీకరణం ఉంది.",
+      "controlling_evidence": "సిద్ధాంతపు మిగిలిన ప్రకటన, తరువాతి నిరూపణ రెండూ x in FV(M)నే అవసరపడుతున్నాయి.",
+      "required_translation_handling": "అదనపు కుండలీకరణాన్ని తొలగించాలి."
+    },
+    {
+      "finding_id": "OLTELAMSUB-005",
+      "classification": "wrong_substitution_variable_in_application_case",
+      "source_locator": "lines 104-108, application case of thm:infv",
+      "finding": "PQకు చేసే మొదటి ప్రతిస్థాపనలో మూలం yను వాడింది; సిద్ధాంతమూ విస్తరించిన సూత్రమూ xను వాడుతున్నాయి.",
+      "controlling_evidence": "సిద్ధాంతపు నిర్దేశిత ప్రతిస్థాపన Subst(PQ,N,x); నిర్వచనంలోని ప్రయోగ నియమం దాన్ని P, Q రెండింటికి xతోనే వర్తింపజేస్తుంది.",
+      "required_translation_handling": "మొదటి ప్రతిస్థాపన చివరి చరాన్ని xగా పునరుద్ధరించాలి."
+    },
+    {
+      "finding_id": "OLTELAMSUB-006",
+      "classification": "swapped_variables_in_abstraction_case_hypothesis",
+      "source_locator": "lines 109-113, abstraction case of thm:infv",
+      "finding": "మూలం y in FV(lambda x.P) అంటుంది; కేసు పరికల్పన x in FV(lambda y.P), తద్వారా x in FV(P).",
+      "controlling_evidence": "స్వేచ్ఛా చరాల అమూర్తీకరణ నిర్వచనం FV(lambda y.P)=FV(P) minus {y}; ఇక్కడ x భిన్నం y.",
+      "required_translation_handling": "సరైన అమూర్తీకరణ, చరాలను పరికల్పనకు అనుగుణంగా ఇవ్వాలి."
+    },
+    {
+      "finding_id": "OLTELAMSUB-007",
+      "classification": "invalid_set_algebra_in_abstraction_case",
+      "source_locator": "lines 114-125, display in proof of thm:infv",
+      "finding": "ఆగమన దశలో తప్పు సమితుల నుంచి తప్పు చరాలను తీసివేసింది, ఒక కుండలీకరణం మూసుకోలేదు; తరువాతి కారణంలో x notin FV(N) అని ఉంది, కానీ అవసరమైనది y notin FV(N).",
+      "controlling_evidence": "ఆగమన పరికల్పన FV(Subst(P,N,x))=(FV(P) minus {x}) union FV(N); దాని నుంచి {y} తీసివేసి, నిర్వచనంలోని y notin FV(N) ఉపయోగిస్తే తుదిసూత్రం వస్తుంది.",
+      "required_translation_handling": "ఆగమన సమీకరణాన్ని, తరువాతి సమితి గణనను, కారణంగా పేర్కొన్న చరాన్ని సరిచేయాలి."
+    }
+  ]
+}

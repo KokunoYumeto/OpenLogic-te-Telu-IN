@@ -1,0 +1,199 @@
+% Part: lambda-calculus
+% Chapter: syntax
+% Section: substitution
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{syn}{sub}
+\olsection{ప్రతిస్థాపన}
+
+\begin{explain}
+స్వేచ్ఛా చరాలు పరిసరంలోని చరాలకు సూచనలు. కనుక స్వేచ్ఛా చరం
+స్థానంలో ఒక నిర్దిష్ట విలువను ఉపయోగించడం అర్థవంతమే. ఉదాహరణకు,
+$\lambd[x][f x]$లోని $f$ను తాదాత్మ్య ప్రమేయమైన
+$\lambd[y][y]$ వంటి నిర్దిష్ట పదంతో మార్చాలనుకోవచ్చు. అప్పుడు
+$\lambd[x][(\lambd[y][y]) x]$ వస్తుంది. స్వేచ్ఛా చరాలను లాంబ్డా
+పదాలతో ఇలా మార్చే ప్రక్రియను ప్రతిస్థాపన అంటాం.
+\end{explain}
+
+\begin{defn}[ప్రతిస్థాపన] \ollabel{defn:substitution}
+  పదం~$M$లో చరం~$x$కు బదులుగా పదం~$N$ను
+  \emph{ప్రతిస్థాపించడం}, $\Subst{M}{N}{x}$, ఇలా ఆగమన
+  పద్ధతిలో నిర్వచించబడుతుంది:
+  \begin{enumerate}
+    \item $\Subst{x}{N}{x} = N$. \ollabel{defn:substitution-1}
+    \item $x \neq y$ అయితే $\Subst{y}{N}{x}  = y$.
+      \ollabel{defn:substitution-2}
+    \item $\Subst{PQ}{N}{x}  = (\Subst{P}{N}{x}) (\Subst{Q}{N}{x})$.
+      \ollabel{def:substitution-3}
+    \item $x \neq y$, $y \notin \FV{N}$ అయినప్పుడు
+      $\Subst{(\lambd[y][P])}{N}{x} =
+      \lambd[y][\Subst{P}{N}{x}]$; లేకపోతే ఈ పాక్షిక
+      ప్రతిస్థాపన నిర్వచితం కాదు.
+      \ollabel{defn:substitution-4}
+  \end{enumerate}
+\end{defn}
+
+\begin{explain}
+\olref{defn:substitution}\olref{defn:substitution-4}లో $x
+\neq y$ అని కోరడానికి కారణం, $M$లో చరం~$x$ యొక్క
+\emph{బద్ధ} ఘటనలను~$N$తో మార్చకూడదనుకోవడమే. ఉదాహరణకు,
+$\Subst{\lambd[x][x]}{y}{x}$ను పరిశీలిస్తే, మనం కోరుకునేది
+$\lambd[x][y]$ కాదు, $\lambd[x][x]$. అయితే పైన ఇచ్చిన
+పాక్షిక నిర్వచనంలో రెండు చరాలూ ఒకటే అయిన అమూర్తీకరణ సందర్భానికి నియమం
+లేదు; అందువల్ల ఈ ప్రతిస్థాపన అక్కడ నిర్వచితం కాదు.
+\sourcecorrection{OLTELAMSUB-001}{మూల వివరణ $\Subst{\lambd[x][x]}{y}{x}$ ఫలితం $\lambd[x][x]$ అని చెబుతుంది; కానీ మూలంలోని నాలుగవ నియమం $x=y$ సందర్భాన్ని నిర్వచించకుండా వదులుతుంది. ఉద్దేశించిన అనౌపచారిక ఫలితాన్నీ, ఇక్కడి పాక్షిక నిర్వచనం నిజంగా ఇచ్చే నిర్వచనలేమినీ వేరుచేశాం; మూల నియమాన్ని మౌనంగా మార్చలేదు.}
+
+$\lambd[y][P]$లో~$x$కు బదులుగా~$N$ను ప్రతిస్థాపించేటప్పుడు
+$y \notin \FV{N}$ అని కూడా కోరుతాం. ఉదాహరణకు,
+$\lambd[y][x]$లో $x$ స్థానంలో $y$ను,
+అంటే $\Subst{\lambd[y][x]}{y}{x}$ను, ప్రతిస్థాపించలేం;
+అలా చేస్తే $\lambd[y][y]$ వస్తుంది. అది ఆర్గ్యుమెంటును
+తీసుకుని దానినే తిరిగి ఇచ్చే ప్రమేయాన్ని సూచిస్తుంది. కానీ
+$\lambd[y][x]$ మాత్రం ఎప్పుడూ పదం~$x$ను (లేదా $x$ సూచించే
+విలువను) తిరిగి ఇచ్చే ప్రమేయం. కనుక నిజంగా మనకు కావలసిన ఫలితం,
+ఒక ఆర్గ్యుమెంటును తీసుకుని దానిని వదిలేసి, పరిసరంలోని చరం~$y$
+విలువను ఇచ్చే ప్రమేయం. దీన్ని సరిగా చేయాలంటే ముందుగా
+బద్ధ చరం~$y$కు వేరే “పేరు” పెట్టాలి.
+\sourcecorrection{OLTELAMSUB-002}{మూలంలోని 'drop it' క్రియారూపాన్ని తెలుగు వాక్యంలో సహజంగా “దానిని వదిలేసి” అని ఇచ్చాం; ప్రమేయం ఆర్గ్యుమెంటును పట్టించుకోదన్న అర్థాన్ని అలాగే ఉంచాం.}
+\end{explain}
+
+\begin{prob}
+  కింది ప్రతిస్థాపనల ఫలితాలు ఏమిటి?
+  \begin{enumerate}
+  \item $\Subst{\lambd[y][x(\lambd[w][vwx])]}{(uv)}{x}$
+  \item $\Subst{\lambd[y][x(\lambd[x][x])]}{(\lambd[y][xy])}{x}$
+  \item $\Subst{y(\lambd[v][xv])}{(\lambd[y][vy])}{x}$
+  \end{enumerate}
+\end{prob}
+
+\begin{thm} \ollabel{thm:notinfv}
+  $x \notin \FV{M}$ అయితే, ఎడమవైపు నిర్వచితంగా ఉన్న
+  సందర్భంలో $\FV{\Subst{M}{N}{x}} = \FV{M}$.
+\end{thm}
+
+\begin{proof}
+  $M$ నిర్మాణంపై ఆగమన పద్ధతిలో నిరూపిస్తాం.
+  \begin{enumerate}
+  \item $M$ ఒక చరం: సాధన.
+  \item $M$ రూపం $(PQ)$: సాధన.
+  \item $M$ రూపం $\lambd[y][P]$. ఇక్కడ
+    $\Subst{\lambd[y][P]}{N}{x}$ నిర్వచితం కనుక అది
+    $\lambd[y][\Subst{P}{N}{x}]$ అయి ఉండాలి. అందువల్ల
+    $\Subst{P}{N}{x}$ నిర్వచితం; అలాగే $x \neq y$.
+    $x \notin \FV{\lambd[y][P]}$ కనుక
+    $x \notin \FV{P}$. అప్పుడు:
+    \sourcecorrection{OLTELAMSUB-003}{మూల నిరూపణలో $Q$కు ఇక్కడ నిర్వచనమే లేకపోయినా $x \notin \FV{Q}$ అని ఉంది. ఆగమన పరికల్పనను $P$కు వర్తింపజేయడానికి అవసరమైన, ముందరి ప్రమేయాల నుంచి వచ్చే $x \notin \FV{P}$ను పునరుద్ధరించాం.}
+    \begin{multline*}
+      \FV{\Subst{\lambd[y][P]}{N}{x}} = \\
+    \begin{aligned}
+      & = \FV{\lambd[y][\Subst{P}{N}{x}]} &&
+      \text{\olref{defn:substitution-4} ప్రకారం}\\
+      & = \FV{\Subst{P}{N}{x}} \setminus \{y\} &&
+      \text{\olref[fv]{def:fv}\olref[fv]{def:fv2} ప్రకారం}\\
+      & = \FV{P} \setminus \{y\} && \text{ఆగమన పరికల్పన ప్రకారం} \\
+      & = \FV{\lambd[y][P]} && \text{\olref[fv]{def:fv}\olref[fv]{def:fv2} ప్రకారం}
+    \end{aligned}
+    \end{multline*}
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][sub]{thm:notinfv} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+
+\begin{thm} \ollabel{thm:infv}
+  $x \in \FV{M}$ అయితే, ప్రతిస్థాపన నిర్వచితంగా ఉన్న
+  సందర్భంలో $\FV{\Subst{M}{N}{x}} = (\FV{M} \setminus
+  \{x\}) \cup \FV{N}$.
+  \sourcecorrection{OLTELAMSUB-004}{మూలంలోని $x \in \FV{M})$లో అదనపు ముగింపు కుండలీకరణం ఉంది; ఇక్కడ $x \in \FV{M}$గా సరిచేశాం.}
+\end{thm}
+
+\begin{proof}
+  $M$ నిర్మాణంపై ఆగమన పద్ధతిలో నిరూపిస్తాం.
+  \begin{enumerate}
+  \item $M$ ఒక చరం: సాధన.
+  \item $M$ రూపం $PQ$. $\Subst{(PQ)}{N}{x}$
+    నిర్వచితం కనుక అది
+    $(\Subst{P}{N}{x})(\Subst{Q}{N}{x})$ అయి ఉండాలి;
+    రెండు ప్రతిస్థాపనలూ నిర్వచితమే. అంతేకాక
+    $x \in \FV{PQ}$ కనుక $x \in \FV{P}$ లేదా
+    $x \in \FV{Q}$, లేదా రెండూ. మిగిలినది సాధన.
+    \sourcecorrection{OLTELAMSUB-005}{మూలంలోని ఈ సందర్భంలో మొదటి ప్రతిస్థాపనకు చివరి చరంగా $y$ ఉంది; తరువాతి సూత్రం, సిద్ధాంతపు ప్రకటన రెండూ $x$ను ఉపయోగిస్తున్నందున దాన్ని $x$గా పునరుద్ధరించాం.}
+  \item $M$ రూపం $\lambd[y][P]$.
+    $\Subst{\lambd[y][P]}{N}{x}$ నిర్వచితం కనుక అది
+    $\lambd[y][\Subst{P}{N}{x}]$ అయి ఉండాలి; ఇక్కడ
+    $\Subst{P}{N}{x}$ నిర్వచితం, $x \neq y$,
+    $y \notin \FV{N}$. ఇంకా $x \in
+    \FV{\lambd[y][P]}$ కనుక $x \in \FV{P}$. ఇప్పుడు:
+    \sourcecorrection{OLTELAMSUB-006}{మూలం ఈ చోట $y \in \FV{\lambd[x][P]}$ అని తారుమారు చరాలను వాడింది. సిద్ధాంతపు పరికల్పన $x \in \FV{\lambd[y][P]}$; $x \neq y$ కనుక $x \in \FV{P}$ వస్తుంది.}
+    \begin{multline*}
+      \FV{\Subst{(\lambd[y][P])}{N}{x}} = \\
+      \begin{aligned}
+      & = \FV{\lambd[y][\Subst{P}{N}{x}]} \\
+      & = \FV{\Subst{P}{N}{x}} \setminus \{y\} \\
+      & = ((\FV{P} \setminus \{x\}) \cup \FV{N}) \setminus \{y\}
+       && \text{ఆగమన పరికల్పన ప్రకారం} \\
+      & = (\FV{P} \setminus \{x, y\}) \cup \FV{N}
+       && \text{$y \notin \FV{N}$ కనుక} \\
+      & = (\FV{\lambd[y][P]} \setminus \{x\}) \cup \FV{N}
+      \end{aligned}
+      \end{multline*}
+    \sourcecorrection{OLTELAMSUB-007}{మూలంలోని ఆగమన దశలో $\FV{P}$ నుంచి $y$ను, $\FV{N}$ నుంచి $x$ను తీసివేసిన తప్పుడు సమితి వ్యక్తీకరణతో పాటు మూసుకాని కుండలీకరణం ఉంది; తదుపరి కారణంగా $x \notin \FV{N}$ అని కూడా తప్పుగా ఇచ్చింది. ఆగమన పరికల్పనను ముందుగా $P$కు వర్తింపజేసి, నిర్వచనంలో అవసరమైన $y \notin \FV{N}$తో సరైన సమితి గణనను చూపాం.}
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][sub]{thm:infv} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+
+\begin{thm}\ollabel{thm:clr}
+  ప్రతిస్థాపన నిర్వచితమై, $x \notin \FV{N}$ అయితే,
+  $x \notin \FV{\Subst{M}{N}{x}}$.
+\end{thm}
+
+\begin{proof}
+  సాధన.
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][sub]{thm:clr}ను నిరూపించండి.
+\end{prob}
+
+
+\begin{thm}\ollabel{thm:inv}
+  $\Subst{M}{y}{x}$ నిర్వచితమై,
+  $y \notin \FV{M}$ అయితే
+  $\Subst{\Subst{M}{y}{x}}{x}{y} = M$.
+\end{thm}
+
+\begin{proof}
+  $M$ నిర్మాణంపై ఆగమన పద్ధతిలో నిరూపిస్తాం.
+  \begin{enumerate}
+  \item $M$ చరం~$z$: సాధన.
+  \item $M$ రూపం $(PQ)$. అప్పుడు:
+    \begin{align*}
+      \Subst{\Subst{(PQ)}{y}{x}}{x}{y}
+      &=\Subst{((\Subst{P}{y}{x})(\Subst{Q}{y}{x}))}{x}{y} \\
+      &= (\Subst{\Subst{P}{y}{x}}{x}{y})(\Subst{\Subst{Q}{y}{x}}{x}{y}) \\
+      &= (PQ) \text{ ఆగమన పరికల్పన ప్రకారం}
+    \end{align*}
+  \item $M$ రూపం $\lambd[z][N]$.
+    $\Subst{\lambd[z][N]}{y}{x}$ నిర్వచితం కనుక
+    $z \neq y$ అని తెలుసు. కాబట్టి:
+    \begin{align*}
+      \Subst{\Subst{(\lambd[z][N])}{y}{x}}{x}{y}\\
+      & = \Subst{(\lambd[z][\Subst{N}{y}{x}])}{x}{y} \\
+      & = \lambd[z][\Subst{\Subst{N}{y}{x}}{x}{y}] \\
+      &= \lambd[z][N] \text{ ఆగమన పరికల్పన ప్రకారం}
+    \end{align*}
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][sub]{thm:inv} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+
+\end{document}

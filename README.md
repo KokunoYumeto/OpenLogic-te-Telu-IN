@@ -1,3 +1,111 @@
+# OpenLogic తెలుగు — తెలుగు పాఠకుల మార్గదర్శి (te-Telu-IN)
+
+ఇది [ఓపెన్ లాజిక్ ప్రాజెక్ట్](https://openlogicproject.org/) పాఠ్యానికి
+రూపొందుతున్న తెలుగు యంత్రానువాదం. స్థిరపరిచిన
+[మూల సంచిక](https://github.com/OpenLogicProject/OpenLogic/tree/9620cc73f9c8e0ad003c514a5d3748f29611c4c0)
+లోని 722 TeX ఫైళ్లన్నిటినీ అనువదించి ఒక సమగ్ర పాఠక సంచికగా ఇవ్వడమే
+లక్ష్యం. ప్రస్తుతం పూర్తి సంచిక సిద్ధం కాలేదు; ఈ దిగువ పరిధులను
+ఒకదానితో మరొకటి కలపకండి.
+
+## చదవడం, దింపుకోవడం
+
+- [ప్రస్తుత GitHub విడుదల](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.4.0-cumulative-olp0279)
+  వద్ద OLP-0004–OLP-0279 వరకు 276/722 భాగాల 515-పేజీల PDF,
+  ప్రవాహానికి అనుగుణమైన EPUB, నేరుగా దింపుకోదగిన సమీకృత LaTeX
+  ఫైలు, పూర్తి సవరించదగిన మూల-వృక్ష ZIP ఉన్నాయి. PDFతోపాటు దానికి
+  సరిపడే మూల ఫైళ్లను అదే విడుదలలో ఉంచాం.
+- [వెబ్‌లో చదివే తెలుగు సంచిక](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sfr/)
+  ఇంకా OLP-0004–OLP-0026 వరకే, అంటే 23/722 భాగాలు.
+- ఈ నిల్వలో నేరుగా సవరించదగిన తెలుగు TeX ముసాయిదాలు
+  OLP-0004–OLP-0361 వరకు వరుసగా 358/722 ఉన్నాయి. ఇవన్నీ
+  ప్రస్తుత PDF, EPUB లేదా వెబ్ పాఠ్యంలో ఉన్నాయని అర్థం కాదు.
+  తదుపరి అనువదించాల్సినది OLP-0362; ఇంకా 364 ఫైళ్లు మిగిలాయి.
+- [తాజా Zenodo సంచిక DOI](https://doi.org/10.5281/zenodo.22726674),
+  [కొనసాగే సంచికల DOI](https://doi.org/10.5281/zenodo.22307937)
+  మునుపటి Zenodo విడుదలను సూచిస్తాయి. ప్రస్తుత GitHub v0.4.0కు
+  కొత్త Zenodo సంచిక సృష్టించలేదు.
+
+## మూలం, అనువాదం, పరిమితులు
+
+ఆంగ్ల మూలంలోని 722 ఫైళ్ల బైట్లు మారకుండా ఈ నిల్వలోని upstream/content
+వృక్షంలో భద్రపరచబడ్డాయి. మూల రచయితలు, సహకారుల వివరాలు
+[ఇక్కడ](https://openlogicproject.org/people/) ఉన్నాయి. తెలుగు
+సంచికకు మూల రచయితల ఆమోదం ఉందని చెప్పడం లేదు. గణిత నిర్వచనలు,
+సూత్రాలు, లేబుళ్లు, ఉదాహరణలు, సాధనలు, సూచనలు నిలిపి,
+అవసరమైన మూలపాఠ దోషాలను తెలుగు వాక్యం పక్కనే ప్రకటిస్తున్నాం.
+మూల ఆంగ్ల ఫైళ్లను సరిచేయడం లేదు.
+
+స్థానిక ఆంధ్రప్రదేశ్, తెలంగాణ, ఉమ్మడి ఆంధ్రప్రదేశ్ తెలుగు గ్రంథాల
+నిజమైన పేజీలను చూసి పదజాలం, శైలికి ఆధారాలు నమోదు చేశాం.
+వాటి [మూలాల సూచీ](evidence/CANON_SOURCES.jsonl),
+[పేజీల సూచీ](evidence/CANON_PASSAGES.jsonl) ఉన్నాయి.
+పేజీని చూసినంత మాత్రాన ప్రత్యేక లాంబ్డా కలనశాస్త్ర పదానికి
+నేరుగా సాక్ష్యం దొరికిందని చెప్పడం లేదు; ఆ భావానికి స్థిర
+మూలపాఠ నిర్వచనమే ఆధారం. కాపీరైట్ పరిమితులున్న అసలు పుస్తకాలను,
+వాటి పేజీ చిత్రాలను ఇక్కడ పంచడం లేదు.
+
+ప్రస్తుత [పదజాల నిర్ణయాలు](evidence/TERM_DECISIONS.jsonl) 81;
+[ప్రకటిత మూల దోష సవరణలు](evidence/SOURCE_CORRECTIONS.jsonl) 307.
+[తెలుగు నిర్ణయాల మార్గదర్శి](evidence/START_HERE.te.md)లో 388 నిర్ణయాలు,
+731 అమలు స్థానాలు ఉన్నాయి. తుది పేజీ సంఖ్యలు సమగ్ర పాఠక
+సంచిక ముద్రణ తరువాతే నిర్ణయించగలం; ఇప్పటికి ఫైలు, విభాగం,
+పంక్తి, అనుసంధానిత ఖండం ద్వారా ఖచ్చితమైన స్థానాలు ఉన్నాయి.
+[ఈ బృందపు తెలుగు పరిశీలన](evidence/BATCH-042-SEMANTIC-REVIEW.md),
+[మూల దోష పరిశీలన](evidence/source-audits/2026-09-25-lambda-substitution-telugu/REVIEW.md)
+ప్రతిస్థాపన విభాగంలోని నిర్ణయాలను వివరించాయి. మునుపటి నిర్ణయ
+నమోదుల్లో ఆంగ్లం ఇంకా ఉంది; వాటి పూర్తి తెలుగు రూపం పనిలో ఉంది.
+
+OLP-0004–OLP-0361 వరకు 358/358 ఫైళ్లు మూల-లక్ష్య ఖండాలు,
+TeX నిర్మాణాలు, మూల పదసంకేతాలు, స్థిర గుర్తింపులు,
+ప్రకటిత సవరణలను పరిగణనలోకి తీసుకున్న గణిత రూపాల
+[నిర్మాణ తనిఖీ](evidence/CUMULATIVE-OLP0361-STRUCTURAL-QA.json)
+దాటాయి. 5,508 అనుసంధానిత ఖండాల్లో 3,486 అనువాద
+భాషా ఖండాలు; వాటికి చదివిన తెలుగు పేజీల సూచనలు ఉన్నాయి.
+మిగిలిన 2,022 ఖండాలు నిర్మాణాత్మకమైనవి. పాత వర్గీకరణలో
+పాఠకులకు కనిపించే 110 ఖండాలను పొరపాటున నిర్మాణాత్మకంగా
+చూపిన విషయం [ఇక్కడ](evidence/SEGMENT-CLASSIFICATION-REPAIR-20260925.json)
+సరిచేశాం; మూల లేదా అనువాద బైట్లు మారలేదు.
+
+ఈ తనిఖీలు యంత్రం, ఇదే Codex ఏజెంట్ చేసినవి; స్వతంత్ర మానవ
+భాషా లేదా గణిత నిపుణ ధృవీకరణ కాదు. కొన్ని ప్రత్యేక పదాలు
+తాత్కాలిక ఎంపికలే. PDF ఇంకా యాక్సెసిబిలిటీ ట్యాగులతో
+లేదు. ప్రస్తుత PDF/EPUBకు ప్రత్యేకంగా నాలుగు-పాస్ TeX నిర్మాణం,
+గ్రంథసూచి/సూచనల తనిఖీ, అన్ని పేజీల చిత్రాల పరిశీలన చేశాం.
+పూర్తి 722-భాగాల పాఠక సంచిక ఇంకా నిర్మించబడలేదు. నిర్వాహకుడి
+వేరైన తెలుగు-మూలాధార సమీక్ష OLP-0004–OLP-0148 వరకే;
+ఈ 358 ముసాయిదాలకు ఆ ధృవీకరణను విస్తరించి చెప్పడం లేదు.
+
+## AI పని వెల్లడింపు, పునర్నిర్మాణం, హక్కులు
+
+ఈ పనిలో OLP-0004–OLP-0355 తెలుగు అనువాదం, సవరణలు,
+సంపాదక పనిని OpenAI Codex — GPT-5.6 Sol, Ultra effort చేసింది;
+OLP-0356–OLP-0361పై అదే పనిని OpenAI Codex — GPT-6 Sol,
+Ultra effort చేసింది. ఇవి మానవ సంపాదకత్వం లేదా సమీక్ష
+అని అర్థం కాదు. ఖచ్చితమైన మోడల్, శ్రమ స్థాయి ఈ పనికి
+చెందిన స్థానిక కార్య-సందర్భ నమోదుతో తనిఖీ చేశాం.
+
+పూర్తి మూలం, నిర్మాణ సూచనలు విడుదలలో ఉన్నాయి.
+ప్రస్తుత 276-భాగాల PDFను మళ్లీ నిర్మించాలంటే Windows,
+PowerShell 7.4+, Node.js 22+, XeLaTeX/MiKTeX, అవసరమైన TeX
+ప్యాకేజీలు కావాలి. నిల్వ మూలం నుంచి ఈ ఆదేశం నడుస్తుంది:
+
+    pwsh -File scripts/build-cumulative-279.ps1
+
+నిర్మాణం యంత్రవ్యాప్త TeX మ్యూటెక్స్‌ను పట్టుకుని నాలుగు
+పాస్‌లు, వెంటనే జరిగే లాగ్ తనిఖీలన్నీ పూర్తయ్యాక విడుస్తుంది.
+పునర్నిర్మాణంలో సాధనాల సంచిక వల్ల PDF బైట్లు మారవచ్చు.
+ఈ పాఠ్యం, అనువాదం తగిన మేరకు
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) కింద;
+Noto Serif Telugu ఫాంటుకు వేరుగా
+[SIL OFL 1.1](fonts/OFL.txt) వర్తిస్తుంది.
+[హక్కులు, భాగాల వివరాలు](ATTRIBUTION.md) చూడండి.
+
+## Additional English information
+
+The English account below is supplementary; the Telugu guide above gives
+the access links, coverage, provenance, review status, AI attribution,
+rebuild command, and licensing information without requiring English.
+
 # OpenLogic తెలుగు (te-Telu-IN)
 
 An in-progress Telugu machine translation of the Open Logic Project.
@@ -25,9 +133,9 @@ The repaired v0.4.0 release has 16 public assets; its cumulative EPUB and
 source companions, manifest, checksums, and QA records were downloaded
 anonymously and verified byte-for-byte.
 
-Three hundred fifty-seven full-unit editable TeX drafts form the contiguous
-OLP-0004--OLP-0360 range; editable coverage is 357/722 and the next manifest
-cursor is OLP-0361. They cover the
+Three hundred fifty-eight full-unit editable TeX drafts form the contiguous
+OLP-0004--OLP-0361 range; editable coverage is 358/722 and the next manifest
+cursor is OLP-0362. They cover the
 Sets, Relations and Functions material, Propositional and First-Order Logic,
 Model Theory, Computability and Turing Machines, plus the complete introductory
 chapter of Incompleteness, the complete Arithmetization of Syntax chapter and
@@ -35,15 +143,15 @@ the complete Representability in Q, Theories and Computability, and
 Incompleteness and Provability chapters, followed by the complete Second-order
 Logic part: its driver and its Syntax and Semantics, Metatheory, and
 Second-order Logic and Set Theory chapters, followed by the Lambda Calculus
-part driver and its complete Introduction chapter, plus the first five units
-of its Syntax chapter. All forty-one batches have
+part driver and its complete Introduction chapter, plus the first six units
+of its Syntax chapter. All forty-two batches have
 source-aligned structural and same-agent semantic review records.
 
 Format coverage is deliberately separate. The current cumulative PDF and EPUB
 contain 276 editable units in OLP-0004--OLP-0279. The deployed semantic HTML
 reader contains OLP-0004--OLP-0026 only: 23 units, the complete Sets, Relations
-and Functions chapters. Thus 334 current editable drafts are not yet in that
-23-unit HTML reader, and the newest 81 are not yet in the cumulative PDF or
+and Functions chapters. Thus 335 current editable drafts are not yet in that
+23-unit HTML reader, and the newest 82 are not yet in the cumulative PDF or
 EPUB.
 The public browser version is
 [OpenLogic తెలుగు — సమితులు, సంబంధాలు, ప్రమేయాలు](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sfr/).
@@ -74,20 +182,20 @@ particular, the original zero-inclusive natural-number convention is kept.
 Original rights-restricted Telugu books and their page images are **not**
 redistributed here.
 
-The correction ledger records 300 confirmed source issues that are minimally
+The correction ledger records 307 confirmed source issues that are minimally
 repaired and disclosed beside the affected Telugu claims. The frozen English
 bytes remain unchanged. Each correction is bound to a bounded audit, an exact
 source hash, target locator and declared mathematical delta. See
 [SOURCE_CORRECTIONS.jsonl](evidence/SOURCE_CORRECTIONS.jsonl), the
 [source-audit directory](evidence/source-audits/), and the current
-[Lambda syntax foundations audit](evidence/source-audits/2026-09-25-lambda-syntax-foundations-telugu/REVIEW.md).
+[Lambda substitution audit](evidence/source-audits/2026-09-25-lambda-substitution-telugu/REVIEW.md).
 
 The [canonical translation-decision index](evidence/START_HERE.md) exposes all
-80 current terminology/sense decisions and 300 corrections across 720
+81 current terminology/sense decisions and 307 corrections across 731
 implementation occurrences, with exact
 source/target locators, aligned segment hashes, authorities actually checked,
 known evidence limits, alternatives, uncertainty, and concrete review
-questions. Its status is explicitly partial (357/722); optional expert review
+questions. Its status is explicitly partial (358/722); optional expert review
 creates no translation hold. The canonical views include a
 [full readable register](evidence/TRANSLATION_DECISIONS_FULL.md), a
 [priority view](evidence/PRIORITY_REVIEW.md), a
@@ -120,14 +228,14 @@ zero errors or warnings. The deployed reader passed desktop and 390-pixel
 visual, interaction, asset-loading and console checks; all 16 public files were
 then read back anonymously and matched the repository byte-for-byte.
 
-All 357 editable TeX drafts in OLP-0004--OLP-0360 pass correction-aware
+All 358 editable TeX drafts in OLP-0004--OLP-0361 pass correction-aware
 blank-block, environment, source-token, protected-identifier and
-mathematical-form checks. Forty-one same-agent semantic reviews record
+mathematical-form checks. Forty-two same-agent semantic reviews record
 source-aligned reverse paraphrases and their limits. The cumulative structural
-receipt is [CUMULATIVE-OLP0360-STRUCTURAL-QA.json](evidence/CUMULATIVE-OLP0360-STRUCTURAL-QA.json).
+receipt is [CUMULATIVE-OLP0361-STRUCTURAL-QA.json](evidence/CUMULATIVE-OLP0361-STRUCTURAL-QA.json).
 The [segment classification repair](evidence/SEGMENT-CLASSIFICATION-REPAIR-20260925.json)
 reclassified 110 previously mislabelled reader-visible blocks without changing
-source or translation bytes; all 5,486 aligned blocks retain exact hashes.
+source or translation bytes; all 5,508 current aligned blocks retain exact hashes.
 Beyond the explicit reader boundaries stated above, source QA does not imply
 PDF, EPUB, or HTML reader integration.
 
@@ -135,6 +243,12 @@ QA is machine/agent performed, not human or independent review. Several
 technical terms remain provisional. The PDF is not tagged. Source caveats
 and terminology uncertainty are retained in the public evidence directory.
 Checks on this chapter do not establish completion or QA of the whole corpus.
+
+In this task, OpenAI Codex — GPT-5.6 Sol, Ultra effort produced the editable
+Telugu translation and corrections through OLP-0355; OpenAI Codex — GPT-6 Sol,
+Ultra effort produced OLP-0356--OLP-0361. This is AI work, not human editing
+or independent specialist review. The model/effort ranges were verified from
+the local task context record.
 
 The decision views can be regenerated and schema-validated from the tracked
 ledgers with Node.js 22+, Python 3, and `jsonschema` 4.x:

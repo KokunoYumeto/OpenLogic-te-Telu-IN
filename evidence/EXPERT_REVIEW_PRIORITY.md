@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 357 of 722 draft units**. This view selects 353 of 380 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 358 of 722 draft units**. This view selects 360 of 388 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -3533,3 +3533,73 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0359; lambda-calculus/syntax/abbreviated-syntax; translation/content/lambda-calculus/syntax/abbreviated-syntax.tex:23-25; printed/PDF page pending
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMSYN-004 is mathematically precise and idiomatic.
+
+## REV-OLTELAMSUB-001 — OLTELAMSUB-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: preserved partial rule and separated intended informal result from formally undefined example beside the text
+
+- Occurrences: OLP-0361; lambda-calculus/syntax/substitution; translation/content/lambda-calculus/syntax/substitution.tex:38-47; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMSUB-001 is mathematically precise and idiomatic.
+
+## REV-OLTELAMSUB-002 — OLTELAMSUB-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: rendered the argument-discarding action with idiomatic Telugu verb agreement beside the text
+
+- Occurrences: OLP-0361; lambda-calculus/syntax/substitution; translation/content/lambda-calculus/syntax/substitution.tex:54-60; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMSUB-002 is mathematically precise and idiomatic.
+
+## REV-OLTELAMSUB-003 — OLTELAMSUB-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: replaced undefined Q with P and stated the deduction from the theorem premise
+
+- Occurrences: OLP-0361; lambda-calculus/syntax/substitution; translation/content/lambda-calculus/syntax/substitution.tex:82-88; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMSUB-003 is mathematically precise and idiomatic.
+
+## REV-OLTELAMSUB-004 — OLTELAMSUB-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: removed the stray parenthesis from x in FV(M) with adjacent disclosure
+
+- Occurrences: OLP-0361; lambda-calculus/syntax/substitution; translation/content/lambda-calculus/syntax/substitution.tex:107-111; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMSUB-004 is mathematically precise and idiomatic.
+
+## REV-OLTELAMSUB-005 — OLTELAMSUB-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored substitution for x throughout the application case with adjacent disclosure
+
+- Occurrences: OLP-0361; lambda-calculus/syntax/substitution; translation/content/lambda-calculus/syntax/substitution.tex:118-124; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMSUB-005 is mathematically precise and idiomatic.
+
+## REV-OLTELAMSUB-006 — OLTELAMSUB-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored x in FV(lambda y.P) and x in FV(P) with adjacent disclosure
+
+- Occurrences: OLP-0361; lambda-calculus/syntax/substitution; translation/content/lambda-calculus/syntax/substitution.tex:125-131; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMSUB-006 is mathematically precise and idiomatic.
+
+## REV-OLTELAMSUB-007 — OLTELAMSUB-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: recomputed the inductive set equation and binding-variable deletion with adjacent disclosure
+
+- Occurrences: OLP-0361; lambda-calculus/syntax/substitution; translation/content/lambda-calculus/syntax/substitution.tex:132-144; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMSUB-007 is mathematically precise and idiomatic.

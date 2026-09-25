@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **357 of 722 source units drafted**. This readable view contains all 380 decisions and 720 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **358 of 722 source units drafted**. This readable view contains all 388 decisions and 731 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2345,6 +2345,35 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T080-OCC-007; OLP-0360; OLP-0360-B009; source upstream/content/lambda-calculus/syntax/free-variables.tex:51-53 bytes 2131-2294 SHA-256 5443d1f42424315debd308ca068a3f74dde17a2045bc0b71cb94c6d70d53990c; target translation/content/lambda-calculus/syntax/free-variables.tex:52-54 bytes 4322-4655 SHA-256 e815b83860f5eb5df75041379a0be0e08e248f8127b06582c2cca08013a5cd3e; reader page pending.
   - te-Telu-IN-TE-T080-OCC-008; OLP-0360; OLP-0360-B012; source upstream/content/lambda-calculus/syntax/free-variables.tex:75-83 bytes 3087-3578 SHA-256 5443d1f42424315debd308ca068a3f74dde17a2045bc0b71cb94c6d70d53990c; target translation/content/lambda-calculus/syntax/free-variables.tex:79-86 bytes 5791-6805 SHA-256 e815b83860f5eb5df75041379a0be0e08e248f8127b06582c2cca08013a5cd3e; reader page pending.
   - te-Telu-IN-TE-T080-OCC-009; OLP-0360; OLP-0360-B014; source upstream/content/lambda-calculus/syntax/free-variables.tex:94-97 bytes 4052-4191 SHA-256 5443d1f42424315debd308ca068a3f74dde17a2045bc0b71cb94c6d70d53990c; target translation/content/lambda-calculus/syntax/free-variables.tex:96-99 bytes 7746-7992 SHA-256 e815b83860f5eb5df75041379a0be0e08e248f8127b06582c2cca08013a5cd3e; reader page pending.
+
+## te-Telu-IN-TE-T081 — partial substitution / free-variable preservation and replacement / variable capture / bound-variable renaming / inductive hypothesis
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: పాక్షిక ప్రతిస్థాపన / స్వేచ్ఛా చరాల సంరక్షణ, మార్పు / అనుకోని చర బంధనం / బద్ధ చరానికి పేరు మార్పు / ఆగమన పరికల్పన
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “partial substitution / free-variable preservation and replacement / variable capture / bound-variable renaming / inductive hypothesis” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: నియమాలు, సరిచేసిన సమితి గణన ఆధారంగా భావార్థ అనిశ్చితి తక్కువ; ప్రతిస్థాపన, అనుకోని చర బంధనం అనే ప్రత్యేక తెలుగు నామకరణంలో మధ్యస్థ అనిశ్చితి ఉంది. నిపుణ సమీక్ష తరువాత మార్చవచ్చు; అది ఉత్పత్తికి అడ్డంకి కాదు.
+
+- Rationale: TE-P027లో పదం, చరం; TE-P029లో పరిధి, బద్ధ చరం; TE-P003, TE-P032లో నిరూపణ, ఆగమన శైలి; TE-P008లో సమితి, ప్రమేయ పదజాలం ప్రత్యక్షంగా ఉన్నాయి. ఈ పేజీలు లాంబ్డా ప్రతిస్థాపన యొక్క నాలుగు నియమాలను గానీ చరపట్టివేత నివారణను గానీ నేరుగా స్థాపించవు. OLP-0361 మూల నియమం, స్వేచ్ఛా చరాల నిర్వచనం, OLTELAMSUB-001–007 పరిశీలన ప్రత్యేక అర్థాలను నియంత్రిస్తాయి; TE-T078/TE-T080 గత పదజాలంతో స్థిరత్వాన్ని ఇస్తాయి. లాంబ్డా, ఆర్గ్యుమెంట్ సాంకేతిక స్వీకరణలు. M, N, P, Q, x, y, z, FV, Subst మరియు సూచికలు గణిత సంకేతాలు; వాటిని మార్చలేదు.
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: ఇప్పటికే వాడుతున్న ప్రతిస్థాపన, పరిధి, చరం, సమితి, ఆగమన భాషను మూలంలోని పాక్షిక నియమంతో అనుసంధానించడం [viable_alternative: ఎంపిక] | నిర్వచనంలో లేని x=y అమూర్తీకరణ సందర్భానికి ఫలితాన్ని నిశ్శబ్దంగా చేర్చడం [viable_alternative: తిరస్కరణ] | స్థానిక పేజీలు ప్రత్యేక లాంబ్డా ప్రతిస్థాపనను నేరుగా స్థాపిస్తాయని పేర్కొనడం [viable_alternative: తిరస్కరణ] | ఇంగ్లీషు substitution, capture పదాలను పాఠక గద్యంలో వివరణ లేకుండా వదలడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “పాక్షిక ప్రతిస్థాపన / స్వేచ్ఛా చరాల సంరక్షణ, మార్పు / అనుకోని చర బంధనం / బద్ధ చరానికి పేరు మార్పు / ఆగమన పరికల్పన” is idiomatic and technically standard for “partial substitution / free-variable preservation and replacement / variable capture / bound-variable renaming / inductive hypothesis” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T081-OCC-001; OLP-0361; OLP-0361-B004; source upstream/content/lambda-calculus/syntax/substitution.tex:9-10 bytes 148-198 SHA-256 8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd; target translation/content/lambda-calculus/syntax/substitution.tex:9-10 bytes 148-219 SHA-256 59476e96447d80a9d6b73e457aa596849079675327238d1ff93f7e24b6b0d751; reader page pending.
+  - te-Telu-IN-TE-T081-OCC-002; OLP-0361; OLP-0361-B006; source upstream/content/lambda-calculus/syntax/substitution.tex:21-33 bytes 626-1270 SHA-256 8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd; target translation/content/lambda-calculus/syntax/substitution.tex:21-37 bytes 1069-2030 SHA-256 59476e96447d80a9d6b73e457aa596849079675327238d1ff93f7e24b6b0d751; reader page pending.
+  - te-Telu-IN-TE-T081-OCC-003; OLP-0361; OLP-0361-B011; source upstream/content/lambda-calculus/syntax/substitution.tex:68-89 bytes 2685-3577 SHA-256 8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd; target translation/content/lambda-calculus/syntax/substitution.tex:77-101 bytes 5886-7581 SHA-256 59476e96447d80a9d6b73e457aa596849079675327238d1ff93f7e24b6b0d751; reader page pending.
+  - te-Telu-IN-TE-T081-OCC-004; OLP-0361; OLP-0361-B013; source upstream/content/lambda-calculus/syntax/substitution.tex:95-98 bytes 3663-3831 SHA-256 8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd; target translation/content/lambda-calculus/syntax/substitution.tex:107-112 bytes 7708-8189 SHA-256 59476e96447d80a9d6b73e457aa596849079675327238d1ff93f7e24b6b0d751; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -10223,3 +10252,185 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTELAMSYN-004-OCC-001; OLP-0359; OLP-0359-B006; source upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:22-24 bytes 714-879 SHA-256 89683422a361faf74ad312ab557f265f94eb9541fcc3bd3fadbfaf1437bd9c46; target translation/content/lambda-calculus/syntax/abbreviated-syntax.tex:23-25 bytes 1533-1950 SHA-256 07b4bdb5fac9c1befe28f5a7d0b6ce34855a3b228b56496cc1f25b2a21ce0b1b; reader page pending.
+
+## te-Telu-IN-OLTELAMSUB-001 — OLTELAMSUB-001: formal definition and prose mismatch
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: preserved partial rule and separated intended informal result from formally undefined example beside the text
+
+- Intended sense: Repair the audited formal definition and prose mismatch at lines 28-40, partial substitution rule and bound-variable example, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMSUB-20260925:OLTELAMSUB-001 [checked_supports], content/lambda-calculus/syntax/substitution.tex; lines 28-40, partial substitution rule and bound-variable example; formal_definition_and_prose_mismatch; preserved partial rule and separated intended informal result from formally undefined example beside the text.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTELAMSUB-001 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMSUB-001-OCC-001; OLP-0361; OLP-0361-B006; source upstream/content/lambda-calculus/syntax/substitution.tex:28-40 bytes 1035-1601 SHA-256 8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd; target translation/content/lambda-calculus/syntax/substitution.tex:38-47 bytes 2030-3563 SHA-256 59476e96447d80a9d6b73e457aa596849079675327238d1ff93f7e24b6b0d751; reader page pending.
+
+## te-Telu-IN-OLTELAMSUB-002 — OLTELAMSUB-002: local english verb agreement error
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: rendered the argument-discarding action with idiomatic Telugu verb agreement beside the text
+
+- Intended sense: Repair the audited local english verb agreement error at lines 48-51, function discarding its argument, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMSUB-20260925:OLTELAMSUB-002 [checked_supports], content/lambda-calculus/syntax/substitution.tex; lines 48-51, function discarding its argument; local_english_verb_agreement_error; rendered the argument-discarding action with idiomatic Telugu verb agreement beside the text.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTELAMSUB-002 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMSUB-002-OCC-001; OLP-0361; OLP-0361-B008; source upstream/content/lambda-calculus/syntax/substitution.tex:48-51 bytes 2005-2235 SHA-256 8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd; target translation/content/lambda-calculus/syntax/substitution.tex:54-60 bytes 4064-5324 SHA-256 59476e96447d80a9d6b73e457aa596849079675327238d1ff93f7e24b6b0d751; reader page pending.
+
+## te-Telu-IN-OLTELAMSUB-003 — OLTELAMSUB-003: wrong variable in no free occurrence proof
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: replaced undefined Q with P and stated the deduction from the theorem premise
+
+- Intended sense: Repair the audited wrong variable in no free occurrence proof at lines 72-76, proof of thm:notinfv, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMSUB-20260925:OLTELAMSUB-003 [checked_supports], content/lambda-calculus/syntax/substitution.tex; lines 72-76, proof of thm:notinfv; wrong_variable_in_no_free_occurrence_proof; replaced undefined Q with P and stated the deduction from the theorem premise.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTELAMSUB-003 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMSUB-003-OCC-001; OLP-0361; OLP-0361-B011; source upstream/content/lambda-calculus/syntax/substitution.tex:72-76 bytes 2796-3078 SHA-256 8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd; target translation/content/lambda-calculus/syntax/substitution.tex:82-88 bytes 6121-6989 SHA-256 59476e96447d80a9d6b73e457aa596849079675327238d1ff93f7e24b6b0d751; reader page pending.
+
+## te-Telu-IN-OLTELAMSUB-004 — OLTELAMSUB-004: stray parenthesis in theorem hypothesis
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: removed the stray parenthesis from x in FV(M) with adjacent disclosure
+
+- Intended sense: Repair the audited stray parenthesis in theorem hypothesis at lines 95-97, statement of thm:infv, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMSUB-20260925:OLTELAMSUB-004 [checked_supports], content/lambda-calculus/syntax/substitution.tex; lines 95-97, statement of thm:infv; stray_parenthesis_in_theorem_hypothesis; removed the stray parenthesis from x in FV(M) with adjacent disclosure.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTELAMSUB-004 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMSUB-004-OCC-001; OLP-0361; OLP-0361-B013; source upstream/content/lambda-calculus/syntax/substitution.tex:95-97 bytes 3663-3821 SHA-256 8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd; target translation/content/lambda-calculus/syntax/substitution.tex:107-111 bytes 7708-8179 SHA-256 59476e96447d80a9d6b73e457aa596849079675327238d1ff93f7e24b6b0d751; reader page pending.
+
+## te-Telu-IN-OLTELAMSUB-005 — OLTELAMSUB-005: wrong substitution variable in application case
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored substitution for x throughout the application case with adjacent disclosure
+
+- Intended sense: Repair the audited wrong substitution variable in application case at lines 104-108, application case of thm:infv, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMSUB-20260925:OLTELAMSUB-005 [checked_supports], content/lambda-calculus/syntax/substitution.tex; lines 104-108, application case of thm:infv; wrong_substitution_variable_in_application_case; restored substitution for x throughout the application case with adjacent disclosure.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTELAMSUB-005 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMSUB-005-OCC-001; OLP-0361; OLP-0361-B014; source upstream/content/lambda-calculus/syntax/substitution.tex:104-108 bytes 3943-4224 SHA-256 8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd; target translation/content/lambda-calculus/syntax/substitution.tex:118-124 bytes 8378-9268 SHA-256 59476e96447d80a9d6b73e457aa596849079675327238d1ff93f7e24b6b0d751; reader page pending.
+
+## te-Telu-IN-OLTELAMSUB-006 — OLTELAMSUB-006: swapped variables in abstraction case hypothesis
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored x in FV(lambda y.P) and x in FV(P) with adjacent disclosure
+
+- Intended sense: Repair the audited swapped variables in abstraction case hypothesis at lines 109-113, abstraction case of thm:infv, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMSUB-20260925:OLTELAMSUB-006 [checked_supports], content/lambda-calculus/syntax/substitution.tex; lines 109-113, abstraction case of thm:infv; swapped_variables_in_abstraction_case_hypothesis; restored x in FV(lambda y.P) and x in FV(P) with adjacent disclosure.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTELAMSUB-006 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMSUB-006-OCC-001; OLP-0361; OLP-0361-B014; source upstream/content/lambda-calculus/syntax/substitution.tex:109-113 bytes 4224-4511 SHA-256 8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd; target translation/content/lambda-calculus/syntax/substitution.tex:125-131 bytes 9268-9970 SHA-256 59476e96447d80a9d6b73e457aa596849079675327238d1ff93f7e24b6b0d751; reader page pending.
+
+## te-Telu-IN-OLTELAMSUB-007 — OLTELAMSUB-007: invalid set algebra in abstraction case
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: recomputed the inductive set equation and binding-variable deletion with adjacent disclosure
+
+- Intended sense: Repair the audited invalid set algebra in abstraction case at lines 114-125, display in proof of thm:infv, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMSUB-20260925:OLTELAMSUB-007 [checked_supports], content/lambda-calculus/syntax/substitution.tex; lines 114-125, display in proof of thm:infv; invalid_set_algebra_in_abstraction_case; recomputed the inductive set equation and binding-variable deletion with adjacent disclosure.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTELAMSUB-007 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMSUB-007-OCC-001; OLP-0361; OLP-0361-B014; source upstream/content/lambda-calculus/syntax/substitution.tex:114-125 bytes 4511-4984 SHA-256 8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd; target translation/content/lambda-calculus/syntax/substitution.tex:132-144 bytes 9970-11227 SHA-256 59476e96447d80a9d6b73e457aa596849079675327238d1ff93f7e24b6b0d751; reader page pending.

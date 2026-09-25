@@ -319,6 +319,12 @@ locations['TE-T080']=[
  L('content/lambda-calculus/syntax/free-variables.tex',75,92,79,94,'environment','పరిసర'),
  L('content/lambda-calculus/syntax/free-variables.tex',94,97,96,99,'combinator','సంయోజకం')
 ];
+locations['TE-T081']=[
+ L('content/lambda-calculus/syntax/substitution.tex',10,10,10,10,'Substitution','ప్రతిస్థాపన'),
+ L('content/lambda-calculus/syntax/substitution.tex',21,30,21,35,'Substitution','ప్రతిస్థాపన'),
+ L('content/lambda-calculus/syntax/substitution.tex',68,76,77,88,'induction on the formation','ఆగమన పద్ధతిలో నిరూపిస్తాం'),
+ L('content/lambda-calculus/syntax/substitution.tex',95,101,107,115,'\\FV{\\Subst{M}{N}{x}}','\\FV{\\Subst{M}{N}{x}}')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -384,6 +390,7 @@ alternatives['TE-T077']=['reuse the established set, subset, power-set, relation
 alternatives['TE-T078']=['reuse the established term, variable, substitution, function, argument, composition, equivalence and proof register while fixing lambda abstraction, reduction and confluence from the adjacent rules and theorem (chosen)','leave the specialized lambda-calculus vocabulary in untranslated English reader prose (rejected)','collapse alpha-equivalence, beta-reduction and beta-equivalence into one undifferentiated relation (rejected because the definitions distinguish them)','claim direct native attestation for redex, contractum, Church--Rosser or Currying (rejected because the frozen formation clauses, reductions and theorem control those senses)'];
 alternatives['TE-T079']=['reuse the established natural-number, function, composition, primitive-recursion, minimization, term, reduction and proof register while fixing Church numerals, lambda-definability and fixed points from the adjacent corrected constructions (chosen)','leave the specialized lambda-computability vocabulary in untranslated English reader prose (rejected)','collapse ordinary computability, lambda-definability and primitive recursiveness into one property (rejected because the theorem and closure proof distinguish them)','claim direct native attestation for Church numerals, iterators or fixed-point combinators (rejected because the explicit definitions and reductions control those senses)'];
 alternatives['TE-T080']=['reuse the inspected native term, variable, scope, function, set and induction register while the lambda formation clauses fix the specialist senses (chosen)','leave unique readability, parameter and combinator in English reader prose (rejected)','claim the native witnesses directly attest lambda parameter and combinator usage (rejected; the source definitions fix those senses)','treat scope as the whole ambient term N (rejected because the binder scope is its body M)'];
+alternatives['TE-T081']=['ఇప్పటికే వాడుతున్న ప్రతిస్థాపన, పరిధి, చరం, సమితి, ఆగమన భాషను మూలంలోని పాక్షిక నియమంతో అనుసంధానించడం (ఎంపిక)','నిర్వచనంలో లేని x=y అమూర్తీకరణ సందర్భానికి ఫలితాన్ని నిశ్శబ్దంగా చేర్చడం (తిరస్కరణ)','స్థానిక పేజీలు ప్రత్యేక లాంబ్డా ప్రతిస్థాపనను నేరుగా స్థాపిస్తాయని పేర్కొనడం (తిరస్కరణ)','ఇంగ్లీషు substitution, capture పదాలను పాఠక గద్యంలో వివరణ లేకుండా వదలడం (తిరస్కరణ)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -400,7 +407,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-25 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T080 record the Batch 025--Batch 041 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-25 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T081 record the Batch 025--Batch 042 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
