@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 358 of 722 draft units**. This view selects 360 of 388 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 359 of 722 draft units**. This view selects 367 of 396 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -3603,3 +3603,73 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0361; lambda-calculus/syntax/substitution; translation/content/lambda-calculus/syntax/substitution.tex:132-144; printed/PDF page pending
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMSUB-007 is mathematically precise and idiomatic.
+
+## REV-OLTELAMALP-001 — OLTELAMALP-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: added x unequal y to initial definition with adjacent disclosure
+
+- Occurrences: OLP-0362; lambda-calculus/syntax/alpha; translation/content/lambda-calculus/syntax/alpha.tex:26; printed/PDF page pending
+
+- Please double-check: Please double-check: మొదటి పేరు మార్పు నిర్వచనంలో x, y భిన్నం అనే షరతు తరువాతి రెండు నిర్వచనాలతో ఏకరూపతను తెస్తుందా?
+
+## REV-OLTELAMALP-002 — OLTELAMALP-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: preserved duplicate pair and disclosed it without inventing a replacement
+
+- Occurrences: OLP-0362; lambda-calculus/syntax/alpha; translation/content/lambda-calculus/syntax/alpha.tex:113; printed/PDF page pending
+
+- Please double-check: Please double-check: పునరుక్త అభ్యాస జతను ఊహతో మార్చకుండా ఉంచినట్టు స్పష్టమా?
+
+## REV-OLTELAMALP-003 — OLTELAMALP-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored FV notation and inserted the missing set step and side condition
+
+- Occurrences: OLP-0362; lambda-calculus/syntax/alpha; translation/content/lambda-calculus/syntax/alpha.tex:149; printed/PDF page pending
+
+- Please double-check: Please double-check: స్వేచ్ఛా-చరాల నిరూపణలో సరిచేసిన FV సంకేతాలు, రెండవ సందర్భపు మధ్య దశ సరైనవా?
+
+## REV-OLTELAMALP-004 — OLTELAMALP-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored x as the variable absent after substitution, with adjacent explanation
+
+- Occurrences: OLP-0362; lambda-calculus/syntax/alpha; translation/content/lambda-calculus/syntax/alpha.tex:179; printed/PDF page pending
+
+- Please double-check: Please double-check: తిరుగు పేరు మార్పుకు అవసరమైనది ప్రతిస్థాపన తరువాత x స్వేచ్ఛగా లేకపోవడమేనని స్పష్టమా?
+
+## REV-OLTELAMALP-005 — OLTELAMALP-005
+
+- Priority/confidence: high / source_proof_gap_disclosed_not_repaired
+
+- Chosen wording/treatment: explicitly flagged unproved nested-substitution definedness and supplied a counterexample to the source argument; theorem proof remains open
+
+- Occurrences: OLP-0362; lambda-calculus/syntax/alpha; translation/content/lambda-calculus/syntax/alpha.tex:262; printed/PDF page pending
+
+- Please double-check: Please double-check: రెండో ప్రతిస్థాపన నిర్వచితమన్న మూల వాదనలో ఖాళీని ఇచ్చిన ఉదాహరణ సరిగ్గా చూపుతుందా? దానికి పూర్తి నిర్మాణాత్మక నిరూపణ ఏమిటి?
+
+## REV-OLTELAMALP-006 — OLTELAMALP-006
+
+- Priority/confidence: high / source_proof_gap_disclosed_not_repaired
+
+- Chosen wording/treatment: preserved source display for inspection and explicitly flagged unjustified equalities and incomplete uniqueness scope; theorem proof remains open
+
+- Occurrences: OLP-0362; lambda-calculus/syntax/alpha; translation/content/lambda-calculus/syntax/alpha.tex:276; printed/PDF page pending
+
+- Please double-check: Please double-check: మూల గణనలో సమానత్వానికి బదులుగా ఏ ఆల్ఫా-తుల్యత దశలు కావాలి? సాధారణ M-double-primeను ఎలా కవర్ చేస్తారు?
+
+## REV-OLTELAMALP-007 — OLTELAMALP-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored R-double-prime alpha R and definedness of the second pair, while disclosing the upstream proof gap
+
+- Occurrences: OLP-0362; lambda-calculus/syntax/alpha; translation/content/lambda-calculus/syntax/alpha.tex:291; printed/PDF page pending
+
+- Please double-check: Please double-check: ఉపసిద్ధాంతంలో రెండవ జతకు ఆల్ఫా-తుల్యత, నిర్వచితత్వం పరికల్పనలు రెండూ పునరుద్ధరించబడ్డాయా?

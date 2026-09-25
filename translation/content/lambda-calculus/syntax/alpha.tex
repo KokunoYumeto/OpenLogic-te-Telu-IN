@@ -1,0 +1,298 @@
+% Part: lambda-calculus
+% Chapter: syntax
+% Section: alpha
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{syn}{alp}
+\olsection{$\alpha$-పరివర్తనం}
+
+$\lambd[x][x]$, $\lambd[y][y]$ల మధ్య సంబంధం ఏమిటి? రెండూ తాదాత్మ్య
+ప్రమేయాన్నే సూచిస్తాయి. కానీ వాక్యనిర్మాణ పరంగా అవి వేర్వేరు పదాలు.
+వాటి మధ్య భేదం బద్ధ చరం పేరులో మాత్రమే ఉంది; ఒకదానిలో ఆ పేరును
+మార్చితే మరొకటి వస్తుంది. దీనిని \emph{$\alpha$-పరివర్తనం} అంటారు.
+
+\begin{defn}[బద్ధ చరం పేరు మార్పు, $\aconvone$]
+  $M$ పదంలో $\lambd[x][N]$ అనే ఘటన ఉండి, $x\neq y$,
+  $y \notin \FV{N}$, అలాగే $\Subst{N}{y}{x}$ నిర్వచితమైతే,
+  ఆ ఘటన స్థానంలో
+  \begin{equation*}
+    \lambd[y][\Subst{N}{y}{x}]
+  \end{equation*}
+  ఉంచి పొందిన పదం $M'$ అనుకుందాం. ఈ చర్యను \emph{బద్ధ చరం పేరు మార్పు}
+  అంటాం; $M \redone[\alpha] M'$ అని రాస్తాం.
+  \sourcecorrection{OLTELAMALP-001}{మూలంలోని మొదటి నిర్వచనం $x=y$ను నిషేధించదు. అలా అయితే స్వేచ్ఛా చరం కాని $x$ కోసం తాదాత్మ్య దశ కూడా సాధ్యమవుతుంది; కానీ తరువాతి రెండు సమాన నిర్వచనాలు $x\neq y$ను స్పష్టంగా కోరుతాయి. మూడు నిర్వచనాల ఉద్దేశిత ఏకరూపత కోసం ఈ షరతును ఇక్కడ వెల్లడించాం.}
+\end{defn}
+
+\begin{defn}[సంబంధపు అనుకూలత్వం]
+  పదాలపై సంబంధం $R$ కింది షరతులను తీరుస్తే దానిని
+  \emph{అనుకూలమైనది} అంటాం:
+  \begin{enumerate}
+  \item $R N N'$ అయితే $R \lambd[x][N] \lambd[x][N']$.
+  \item $R P P'$ అయితే $R (PQ) (P'Q)$.
+  \item $R Q Q'$ అయితే $R (PQ) (PQ')$.
+  \end{enumerate}
+\end{defn}
+
+ఇప్పుడు నిర్వచనాన్ని మరో విధంగా చెప్పవచ్చు:
+\begin{defn}[బద్ధ చరం పేరు మార్పు, $\aconvone$]
+  \emph{బద్ధ చరం పేరు మార్పు} ($\redone[\alpha]$) అనేది
+  పదాలపై కింది షరతును తీర్చే కనిష్ఠ అనుకూల సంబంధం:
+  \begin{align*}
+    &\lambd[x][N] \redone[\alpha] \lambd[y][\Subst{N}{y}{x}] && \text{$x \neq y$, $y \notin \FV{N}$ అయితే} \\
+    & &&\text{మరియు $\Subst{N}{y}{x}$ నిర్వచితమైతే.}
+  \end{align*}
+\end{defn}
+
+ఇక్కడ “కనిష్ఠ” అంటే, అనుకూలత్వం మరియు అదనపు షరతు తప్పనిసరి
+చేసే జతలే సంబంధంలో ఉంటాయి; ఇతర జతలు ఉండవు. అందువల్ల ఈ సంబంధాన్ని
+కింది విధంగానూ నిర్వచించవచ్చు:
+
+\begin{defn}[బద్ధ చరం పేరు మార్పు, $\aconvone$] \ollabel{defn:aconvone}
+  \emph{బద్ధ చరం పేరు మార్పు} ($\aconvone$) ఆగమన పద్ధతిలో ఇలా
+  నిర్వచించబడుతుంది:
+  \begin{enumerate}
+  \item $N \aconvone N'$ అయితే $\lambd[x][N] \aconvone
+    \lambd[x][N']$. \ollabel{defn:aconvone1}
+  \item $P \aconvone P'$ అయితే $(PQ) \aconvone (P'Q)$.
+    \ollabel{defn:aconvone2}
+  \item $Q \aconvone Q'$ అయితే $(PQ) \aconvone (PQ')$.
+    \ollabel{defn:aconvone3}
+  \item $x \neq y$, $y \notin \FV{N}$, $\Subst{N}{y}{x}$ నిర్వచితం
+    అయితే $\lambd[x][N] \redone[\alpha]
+    \lambd[y][\Subst{N}{y}{x}]$.
+    \ollabel{defn:aconvone4}
+  \end{enumerate}
+\end{defn}
+
+ఈ నిర్వచనాలు సమానమైనవి; దాని నిరూపణను అభ్యాసంగా వదిలేస్తున్నాం.
+ఇకపై ఆగమన నిర్వచనాన్నే ఉపయోగిస్తాం.
+
+\begin{defn}[$\alpha$-పరివర్తనం, $\aconv$]
+  \emph{$\alpha$-పరివర్తనం} ($\aconv$) అనేది $\aconvone$ను
+  కలిగి ఉండే పదాలపై కనిష్ఠ స్వప్రావర్తక, సంక్రమణ సంబంధం.
+\end{defn}
+
+పైన చెప్పినట్లే, “కనిష్ఠ” అంటే సంక్రమణ, స్వప్రావర్తకత్వం,
+$\aconvone$ వల్ల తప్పనిసరయ్యే జతలు మాత్రమే ఉండడం. దీనికి సమానమైన
+నిర్వచనం ఇలా ఉంది:
+
+\begin{defn}[$\alpha$-పరివర్తనం, $\aconv$] \ollabel{defn:aconv}
+  \emph{$\alpha$-పరివర్తనం} ($\aconv$) ఆగమన పద్ధతిలో ఇలా
+  నిర్వచించబడుతుంది:
+  \begin{enumerate}
+  \item $P \aconv Q$, $Q \aconv R$ అయితే $P \aconv R$.
+    \ollabel{defn:aconv1}
+  \item $P \aconvone Q$ అయితే $P \aconv Q$.
+    \ollabel{defn:aconv2}
+  \item $P \aconv P$. \ollabel{defn:aconv3}
+  \end{enumerate}
+\end{defn}
+
+\begin{ex}
+  $\lambd[x][f x]$ పదం $\lambd[y][f y]$గా $\alpha$-పరివర్తనం
+  చెందుతుంది; తిరుగుదిశలోనూ అలాగే. అనౌపచారికంగా చూస్తే, రెండూ
+  ఆర్గ్యుమెంటును తీసుకుని, దానికి $f$ను ప్రయోగించి ఫలితాన్ని ఇచ్చే
+  ప్రమేయాలు; ఇక్కడ $f$ పరిసరంలోని చరం.
+
+  $\lambd[x][f x]$ పదం $\lambd[x][g x]$గా $\alpha$-పరివర్తనం
+  చెందదు. అవి వరుసగా పరిసరంలోని $f$, $g$ చరాలను సూచిస్తాయి.
+  $f$, $g$ వేర్వేరుగా ఉన్న పరిసరాల్లో ఈ ప్రమేయాల ప్రవర్తన
+  వేర్వేరుగా ఉంటుంది.
+\end{ex}
+
+\begin{prob}
+  కింది పదాల జతలు $\alpha$-పరివర్తనీయమైనవా?
+  \begin{enumerate}
+  \item $\lambd[x][\lambd[y][x]]$ మరియు $\lambd[y][\lambd[x][y]]$.
+  \item $\lambd[x][\lambd[y][x]]$ మరియు $\lambd[c][\lambd[b][a]]$.
+  \item $\lambd[x][\lambd[y][x]]$ మరియు $\lambd[c][\lambd[b][a]]$.
+  \end{enumerate}
+  \sourcecorrection{OLTELAMALP-002}{మూల అభ్యాసంలోని రెండవ, మూడవ జతలు అక్షరాలా ఒకటే. ఉద్దేశించిన వేరే మూడవ జతకు ఆధారం లేదు కాబట్టి పునరుక్తిని యథాతథంగా ఉంచి గుర్తించాం.}
+\end{prob}
+
+\begin{lem}\ollabel{lem:fv-one}
+  $P \aconvone Q$ అయితే $\FV{P} = \FV{Q}$.
+\end{lem}
+
+\begin{proof}
+  $P \aconvone Q$ యొక్క \tetoken{వ్యుత్పత్తి}{!!{derivation}}
+  నిర్మాణంపై ఆగమన పద్ధతిలో నిరూపిస్తాం.
+  \begin{enumerate}
+  \item చివరి నియమం \olref{defn:aconvone4} అయితే,
+    $P$ రూపం $\lambd[x][N]$; $Q$ రూపం
+    $\lambd[y][\Subst{N}{y}{x}]$. ఇక్కడ $x \neq y$,
+    $y \notin \FV{N}$, $\Subst{N}{y}{x}$ నిర్వచితం.
+    $x \in \FV{N}$ అవుతుందో లేదో బట్టి రెండు సందర్భాలు:
+    \begin{enumerate}
+    \item $x \in \FV{N}$ అయితే:
+      \begin{align*}
+        \FV{\lambd[y][\Subst{N}{y}{x}]} &=
+        \FV{\Subst{N}{y}{x}} \setminus \{y\} \\
+        & = ((\FV{N} \setminus \{x\}) \cup \{y\}) \setminus \{y\}
+         && \text{\olref[sub]{thm:infv} ప్రకారం} \\
+        & = \FV{N} \setminus \{x\} \\
+        & = \FV{\lambd[x][N]}
+      \end{align*}
+    \item $x \notin \FV{N}$ అయితే:
+      \begin{align*}
+        \FV{\lambd[y][\Subst{N}{y}{x}]}
+        & = \FV{\Subst{N}{y}{x}} \setminus \{y\} \\
+        & = \FV{N} \setminus \{y\}
+         && \text{\olref[sub]{thm:notinfv} ప్రకారం} \\
+        & = \FV{N} \setminus \{x\}
+         && \text{$x \notin \FV{N}$, $y \notin \FV{N}$ కనుక} \\
+        & = \FV{\lambd[x][N]}.
+      \end{align*}
+      \sourcecorrection{OLTELAMALP-003}{మూలంలోని రెండు ఉపసందర్భాల్లో $FV(N)$, $FV\{\cdot\}$ అనే అసంపూర్ణ స్వేచ్ఛా-చర సంకేతాలు ఉన్నాయి. రెండవ సందర్భంలో ప్రతిస్థాపన సిద్ధాంతం నేరుగా $\FV{N}\setminus\{x\}$ను ఇవ్వదు; ముందుగా $\FV{N}\setminus\{y\}$ వస్తుంది. $x,y$ రెండూ $\FV{N}$లో లేవన్న కారణంతో అవసరమైన మధ్య దశను చేర్చాం.}
+    \end{enumerate}
+  \item మిగిలిన మూడు సందర్భాలను అభ్యాసాలుగా వదిలేస్తున్నాం.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][alp]{lem:fv-one} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+
+\begin{lem}\ollabel{lem:inv}
+  $P \aconvone Q$ అయితే $Q \aconvone P$.
+\end{lem}
+
+\begin{proof}
+  $P \aconvone Q$ యొక్క \tetoken{వ్యుత్పత్తి}{!!{derivation}}
+  నిర్మాణంపై ఆగమన పద్ధతిలో నిరూపిస్తాం.
+  \begin{enumerate}
+  \item చివరి నియమం \olref{defn:aconvone4} అయితే,
+    $P$ రూపం $\lambd[x][N]$; $Q$ రూపం
+    $\lambd[y][\Subst{N}{y}{x}]$. ఇక్కడ $x \neq y$,
+    $y \notin \FV{N}$, $\Subst{N}{y}{x}$ నిర్వచితం.
+    ముందుగా \olref[sub]{thm:clr} ప్రకారం
+    $x \notin \FV{\Subst{N}{y}{x}}$.
+    \olref[sub]{thm:inv} ప్రకారం
+    $\Subst{\Subst{N}{y}{x}}{x}{y}$ నిర్వచితం మాత్రమే కాక
+    $N$కు సమానం కూడా. అందువల్ల \olref{defn:aconvone4} ప్రకారం
+    $\lambd[y][\Subst{N}{y}{x}]
+    \aconvone \lambd[x][\Subst{\Subst{N}{y}{x}}{x}{y}] =
+    \lambd[x][N]$.
+    \sourcecorrection{OLTELAMALP-004}{మూల నిరూపణ $y \notin \FV{\Subst{N}{y}{x}}$ అని తప్పుగా చెబుతుంది: $x$ను $y$తో మార్చినప్పుడు $y$ స్వేచ్ఛగా రావచ్చు. తిరుగు పేరు మార్పుకు అవసరమైనది $x \notin \FV{\Subst{N}{y}{x}}$; $x\neq y$ కాబట్టి \olref[sub]{thm:clr} దానినే ఇస్తుంది.}
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][alp]{lem:inv} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+
+\begin{thm}
+  $\alpha$-పరివర్తనం పదాలపై తుల్యత సంబంధం; అంటే అది
+  స్వప్రావర్తకం, సౌష్టవం కలది, సంక్రమణం కలది.
+\end{thm}
+
+\begin{proof}
+  \begin{enumerate}
+  \item ప్రతి పదం $M$కు, బద్ధ చరాల పేర్లను \emph{సున్నా}
+    సార్లు మార్చి $M$ నుంచే $M$ను పొందవచ్చు.
+  \item $\alpha$-పరివర్తనంలోని బద్ధ చరాల పేరు మార్పుల క్రమంతో $P$ నుంచి $Q$ వస్తే,
+    \olref{lem:inv} ప్రకారం వాటిని తిరుగు క్రమంలో వెనక్కి
+    మార్చి $Q$ నుంచి $P$ను పొందవచ్చు.
+  \item $\alpha$-పరివర్తనంలోని ఒక పేరు మార్పుల క్రమంతో $P$ నుంచి $Q$, మరొకదానితో
+    $Q$ నుంచి $R$ వస్తే, మొదటి క్రమం తరువాత రెండవదాన్ని
+    అమలు చేసి $P$ నుంచి $R$ను పొందవచ్చు.
+  \end{enumerate}
+\end{proof}
+
+ఇకపై $M$ నుంచి $N$కు $\alpha$-పరివర్తనం సాధ్యమైతే, అప్పుడు మాత్రమే,
+$M$, $N$లను \emph{$\alpha$-తుల్యమైనవి} అని పిలిచి $M \aeq N$
+అని రాస్తాం. ఇప్పుడే నిరూపించినట్లు, ఇది $N$ నుంచి $M$కు
+$\alpha$-పరివర్తనం సాధ్యమవడానికి సమానమే.
+
+\begin{thm}\ollabel{thm:fv}
+  $M \aeq N$ అయితే $\FV{M} = \FV{N}$.
+\end{thm}
+
+\begin{proof}
+  ఇది \olref{lem:fv-one} నుంచి వెంటనే వస్తుంది.
+\end{proof}
+
+\begin{lem}\ollabel{lem:sub:R}
+  $R \aeq R'$, $\Subst{M}{R}{y}$ నిర్వచితం అయితే,
+  $\Subst{M}{R'}{y}$ కూడా నిర్వచితం; అది
+  $\Subst{M}{R}{y}$కు $\alpha$-తుల్యం.
+\end{lem}
+
+\begin{proof}
+  అభ్యాసం.
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][alp]{lem:sub:R}ను నిరూపించండి.
+\end{prob}
+
+\olref[sub]{sec}లో చూసినట్లుగా, కొన్ని సందర్భాల్లో ప్రతిస్థాపన
+నిర్వచితం కాదు. అయితే పదాలపై $\alpha$-పరివర్తనం చేసి బద్ధ చరాల
+పేర్లు మార్చితే ప్రతిస్థాపనను నిర్వచితంగా చేయవచ్చు. ఫలితం
+$\alpha$-తుల్యతను సంరక్షిస్తుందని కింది సిద్ధాంతం చెబుతుంది:
+
+\begin{thm}\ollabel{thm:sub}
+  ఏ $M$, $R$, $y$లకైనా, $M \aeq M'$ మరియు
+  $\Subst{M'}{R}{y}$ నిర్వచితం అయ్యే $M'$ ఒకటి ఉంటుంది.
+  ఇంకా $M'' \aeq M$, $R''$ ఉండి
+  $\Subst{M''}{R''}{y}$ నిర్వచితమై $R'' \aeq R$ అయితే,
+  $\Subst{M'}{R}{y} \aeq \Subst{M''}{R''}{y}$.
+\end{thm}
+
+\begin{proof}
+  $M$ నిర్మాణంపై ఆగమన పద్ధతిలో:
+  \begin{enumerate}
+  \item $M$ చరం~$z$: అభ్యాసం.
+  \item $M$ రూపం $\lambd[x][N]$ అనుకుందాం. $x$, $y$లకు
+    భిన్నంగా, $z \notin \FV{N}$, $z \notin \FV{R}$ అయ్యే
+    చరం~$z$ను ఎంచుకుందాం. ఆగమన పరికల్పన ప్రకారం,
+    $N' \aeq N$ మరియు $\Subst{N'}{z}{x}$ నిర్వచితం
+    అయ్యే $N'$ ఉంది. అప్పుడు \olref{defn:aconvone}\olref{defn:aconvone1}
+    ప్రకారం $\lambd[x][N] \aeq \lambd[x][N']$ కూడా.
+    ఇప్పుడు \olref{defn:aconvone}\olref{defn:aconvone4} ప్రకారం
+    $\lambd[x][N'] \aeq \lambd[z][\Subst{N'}{z}{x}]$.
+    ఎందుకంటే $z \ne x$, $z \notin \FV{N'}$,
+    $\Subst{N'}{z}{x}$ నిర్వచితం. చివరిగా
+    $\Subst{\lambd[z][\Subst{N'}{z}{x}]}{R}{y}$
+    నిర్వచితం అని మూల నిరూపణ వాదిస్తుంది; కారణంగా
+    $z \neq y$, $z \notin \FV{R}$లను చూపుతుంది.
+    \sourcecorrection{OLTELAMALP-005}{ఇక్కడ మూల నిరూపణలో ఖాళీ ఉంది: బాహ్య అమూర్తీకరణకు $z\neq y$, $z\notin\FV{R}$ సరిపోతాయి, కానీ లోపలి $\Subst{\Subst{N'}{z}{x}}{R}{y}$ కూడా నిర్వచితమని అవి హామీ ఇవ్వవు. ఉదాహరణకు $N'=\lambd[y][x]$ అయితే మొదటి ప్రతిస్థాపన నిర్వచితం కావచ్చు, రెండవది అదే $y$ బంధకం వద్ద ఆగిపోతుంది. అదనపు చర-తాజాతన నిర్మాణం కావాలి; మూలం దాన్ని ఇవ్వలేదు. సిద్ధాంతాన్ని నిరూపితమైందని ఈ గమనికతో చెప్పడం లేదు.}
+
+    అంతేకాక, అదే షరతులు తీర్చే మరో $N''$, $R''$ ఉంటే,
+    మూలంలో కింది గణన ఉంది:
+    \begin{multline*}
+      \Subst{(\lambd[z][\Subst{N''}{z}{x}])}{R''}{y} =\\
+    \begin{aligned}
+      &= \lambd[z][\Subst{\Subst{N''}{z}{x}}{R''}{y}] \\
+      &= \lambd[z][\Subst{\Subst{N''}{z}{x}}{R}{y}] && \text{\olref{lem:sub:R} ప్రకారం}\\
+      &=\lambd[z][\Subst{\Subst{N'}{z}{x}}{R}{y}]
+      && \text{ఆగమన పరికల్పన ప్రకారం}\\
+      &=\Subst{(\lambd[z][\Subst{N'}{z}{x}])}{R}{y}
+    \end{aligned}
+    \end{multline*}
+    \sourcecorrection{OLTELAMALP-006}{ఈ మూల గణన సాధారణ ఏకత్వ నిరూపణ కాదు. \olref{lem:sub:R} సమానత్వం కాక $\alpha$-తుల్యతను మాత్రమే ఇస్తుంది; ఆగమన పరికల్పన నుంచి తదుపరి సమానత్వమూ వెంటనే రాదు. అంతేకాక ఇది ఒకే బాహ్య పేరు $z$ గల ప్రత్యేక రూపాలనే పోల్చుతుంది, సిద్ధాంతంలోని ఏ $M''\aeq M$నైనా కాదు. మూల సూత్రాలను పరిశీలన కోసం యథాతథంగా ఉంచి, ఈ నిరూపణ ఖాళీని స్పష్టంగా గుర్తించాం.}
+  \item $M$ రూపం $(PQ)$: అభ్యాసం.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][alp]{thm:sub} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+
+\begin{cor}\ollabel{cor:sub}
+  ఏ $M$, $R$, $y$లకైనా, $M' \aeq M$, $R \aeq R'$,
+  $\Subst{M'}{R'}{y}$ నిర్వచితం అయ్యే $M'$, $R'$ జత ఉంది.
+  ఇంకా $M'' \aeq M$, $R'' \aeq R$ ఉండి
+  $\Subst{M''}{R''}{y}$ నిర్వచితమైతే,
+  $\Subst{M'}{R'}{y} \aeq \Subst{M''}{R''}{y}$.
+  \sourcecorrection{OLTELAMALP-007}{మూల ఉపసిద్ధాంతపు రెండవ భాగం $R''\aeq R$ షరతును వదిలి, రెండవ జత ప్రతిస్థాపన నిర్వచితమని చెప్పాల్సిన చోట మొదటి జతను మళ్లీ పేర్కొంటుంది. వెంటనే పైనున్న సిద్ధాంతం నుంచి ఉపసిద్ధాంతం రావాలంటే ఆ రెండు షరతులూ అవసరం; వాటిని పునరుద్ధరించాం. అయితే మూల సిద్ధాంతపు నిరూపణలో OLTELAMALP-005–006లో గుర్తించిన ఖాళీలు ఇంకా ఉన్నాయి.}
+\end{cor}
+
+\begin{proof}
+  ఇది \olref{thm:sub} నుంచి వెంటనే వస్తుంది.
+\end{proof}
+
+\end{document}

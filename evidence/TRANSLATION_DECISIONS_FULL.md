@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **358 of 722 source units drafted**. This readable view contains all 388 decisions and 731 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **359 of 722 source units drafted**. This readable view contains all 396 decisions and 742 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2374,6 +2374,35 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T081-OCC-002; OLP-0361; OLP-0361-B006; source upstream/content/lambda-calculus/syntax/substitution.tex:21-33 bytes 626-1270 SHA-256 8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd; target translation/content/lambda-calculus/syntax/substitution.tex:21-37 bytes 1069-2030 SHA-256 59476e96447d80a9d6b73e457aa596849079675327238d1ff93f7e24b6b0d751; reader page pending.
   - te-Telu-IN-TE-T081-OCC-003; OLP-0361; OLP-0361-B011; source upstream/content/lambda-calculus/syntax/substitution.tex:68-89 bytes 2685-3577 SHA-256 8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd; target translation/content/lambda-calculus/syntax/substitution.tex:77-101 bytes 5886-7581 SHA-256 59476e96447d80a9d6b73e457aa596849079675327238d1ff93f7e24b6b0d751; reader page pending.
   - te-Telu-IN-TE-T081-OCC-004; OLP-0361; OLP-0361-B013; source upstream/content/lambda-calculus/syntax/substitution.tex:95-98 bytes 3663-3831 SHA-256 8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd; target translation/content/lambda-calculus/syntax/substitution.tex:107-112 bytes 7708-8189 SHA-256 59476e96447d80a9d6b73e457aa596849079675327238d1ff93f7e24b6b0d751; reader page pending.
+
+## te-Telu-IN-TE-T082 — alpha-conversion / alpha-equivalence / one-step bound-variable renaming / compatible relation / reflexive, symmetric and transitive relation / derivation
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: ఆల్ఫా-పరివర్తనం / ఆల్ఫా-తుల్యత / బద్ధ చరం పేరు మార్పు / అనుకూల సంబంధం / స్వప్రావర్తక, సౌష్టవ, సంక్రమణ సంబంధం / వ్యుత్పత్తి
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “alpha-conversion / alpha-equivalence / one-step bound-variable renaming / compatible relation / reflexive, symmetric and transitive relation / derivation” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: నిర్వచనాల ఆధారంగా ప్రాథమిక భావార్థం స్పష్టం; ఆల్ఫా-పరివర్తనం, అనుకూలత్వం అనే ప్రత్యేక తెలుగు నామాల్లో మధ్యస్థ అనిశ్చితి ఉంది. చివరి ప్రతిస్థాపన సిద్ధాంతపు మూల నిరూపణ అసంపూర్ణం; దాన్ని పదజాల నిర్ణయం నిరూపించదు.
+
+- Rationale: TE-P027లో పదం, చరం; TE-P029లో పరిధి, బద్ధ చరం; TE-P008లో సమితి, సంబంధం, ప్రమేయం; TE-P003, TE-P032లో నిర్వచనం, ఆగమన నిరూపణ భాష ప్రత్యక్షంగా ఉన్నాయి. ఈ పేజీలు ఆల్ఫా-పరివర్తనం, ఆల్ఫా-తుల్యత, అనుకూల సంబంధం అనే ప్రత్యేక లాంబ్డా నామాలను నేరుగా స్థాపించవు. OLP-0362లోని ఏక-దశ, అనుకూలత్వం, స్వప్రావర్తక-సంక్రమణ నియమాలు వాటి ఖచ్చిత భావాన్ని నియంత్రిస్తాయి; TE-T078, TE-T081 గత పదజాలంతో స్థిరత్వాన్ని ఇస్తాయి. OLTELAMALP-001–007 మూల లోపాలు, నిరూపణ ఖాళీలను విడిగా ప్రకటిస్తాయి. ఆల్ఫా అనేది గ్రీకు సంకేతపు సాంకేతిక స్వీకరణ; అసలు గణితంలో $\alpha$, FV, Subst, బద్ధ చర సంకేతాలు యథాతథం.
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: గత పదం, చరం, సంబంధం, నిరూపణ భాషలో ఆల్ఫా-పరివర్తనం, ఆల్ఫా-తుల్యతను మూల నిర్వచనాలతో నియంత్రించడం [viable_alternative: ఎంపిక] | ఆల్ఫా-మార్పును బీటా-తగ్గింపుతో కలపడం [viable_alternative: తిరస్కరణ] | స్థానిక పేజీలు ప్రత్యేక ఆల్ఫా నామాలను నేరుగా స్థాపిస్తాయని చెప్పడం [viable_alternative: తిరస్కరణ] | అసంపూర్ణ మూల నిరూపణను పూర్తి నిరూపణగా ప్రకటించడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “ఆల్ఫా-పరివర్తనం / ఆల్ఫా-తుల్యత / బద్ధ చరం పేరు మార్పు / అనుకూల సంబంధం / స్వప్రావర్తక, సౌష్టవ, సంక్రమణ సంబంధం / వ్యుత్పత్తి” is idiomatic and technically standard for “alpha-conversion / alpha-equivalence / one-step bound-variable renaming / compatible relation / reflexive, symmetric and transitive relation / derivation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T082-OCC-001; OLP-0362; OLP-0362-B004; source upstream/content/lambda-calculus/syntax/alpha.tex:9-10 bytes 141-198 SHA-256 f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda; target translation/content/lambda-calculus/syntax/alpha.tex:9-10 bytes 141-215 SHA-256 8c842c4303c45fb1fd2cad5daf82ced84ace967c1d55af2e2e68785e3ee148bb; reader page pending.
+  - te-Telu-IN-TE-T082-OCC-002; OLP-0362; OLP-0362-B007; source upstream/content/lambda-calculus/syntax/alpha.tex:29-37 bytes 910-1233 SHA-256 f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda; target translation/content/lambda-calculus/syntax/alpha.tex:29-37 bytes 2127-2592 SHA-256 8c842c4303c45fb1fd2cad5daf82ced84ace967c1d55af2e2e68785e3ee148bb; reader page pending.
+  - te-Telu-IN-TE-T082-OCC-003; OLP-0362; OLP-0362-B012; source upstream/content/lambda-calculus/syntax/alpha.tex:72-75 bytes 2623-2805 SHA-256 f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda; target translation/content/lambda-calculus/syntax/alpha.tex:73-76 bytes 4800-5112 SHA-256 8c842c4303c45fb1fd2cad5daf82ced84ace967c1d55af2e2e68785e3ee148bb; reader page pending.
+  - te-Telu-IN-TE-T082-OCC-004; OLP-0362; OLP-0362-B019; source upstream/content/lambda-calculus/syntax/alpha.tex:116-145 bytes 4275-5404 SHA-256 f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda; target translation/content/lambda-calculus/syntax/alpha.tex:120-153 bytes 7832-10120 SHA-256 8c842c4303c45fb1fd2cad5daf82ced84ace967c1d55af2e2e68785e3ee148bb; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -10434,3 +10463,185 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTELAMSUB-007-OCC-001; OLP-0361; OLP-0361-B014; source upstream/content/lambda-calculus/syntax/substitution.tex:114-125 bytes 4511-4984 SHA-256 8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd; target translation/content/lambda-calculus/syntax/substitution.tex:132-144 bytes 9970-11227 SHA-256 59476e96447d80a9d6b73e457aa596849079675327238d1ff93f7e24b6b0d751; reader page pending.
+
+## te-Telu-IN-OLTELAMALP-001 — OLTELAMALP-001: first alpha step definition allows identity unlike later equivalent definitions
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: added x unequal y to initial definition with adjacent disclosure
+
+- Intended sense: Repair the audited first alpha step definition allows identity unlike later equivalent definitions at lines 18-27 versus lines 40-67, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMALP-20260925:OLTELAMALP-001 [checked_supports], content/lambda-calculus/syntax/alpha.tex; lines 18-27 versus lines 40-67; first_alpha_step_definition_allows_identity_unlike_later_equivalent_definitions; added x unequal y to initial definition with adjacent disclosure.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: మొదటి పేరు మార్పు నిర్వచనంలో x, y భిన్నం అనే షరతు తరువాతి రెండు నిర్వచనాలతో ఏకరూపతను తెస్తుందా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMALP-001-OCC-001; OLP-0362; OLP-0362-B006; source upstream/content/lambda-calculus/syntax/alpha.tex:18-27 bytes 525-909 SHA-256 f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda; target translation/content/lambda-calculus/syntax/alpha.tex:26 bytes 1451-2115 SHA-256 8c842c4303c45fb1fd2cad5daf82ced84ace967c1d55af2e2e68785e3ee148bb; reader page pending.
+
+## te-Telu-IN-OLTELAMALP-002 — OLTELAMALP-002: duplicate exercise pair without recoverable intended alternative
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: preserved duplicate pair and disclosed it without inventing a replacement
+
+- Intended sense: Repair the audited duplicate exercise pair without recoverable intended alternative at lines 103-110, exercise items 2 and 3, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMALP-20260925:OLTELAMALP-002 [checked_supports], content/lambda-calculus/syntax/alpha.tex; lines 103-110, exercise items 2 and 3; duplicate_exercise_pair_without_recoverable_intended_alternative; preserved duplicate pair and disclosed it without inventing a replacement.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: పునరుక్త అభ్యాస జతను ఊహతో మార్చకుండా ఉంచినట్టు స్పష్టమా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMALP-002-OCC-001; OLP-0362; OLP-0362-B017; source upstream/content/lambda-calculus/syntax/alpha.tex:103-110 bytes 3875-4186 SHA-256 f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda; target translation/content/lambda-calculus/syntax/alpha.tex:113 bytes 7333-7724 SHA-256 8c842c4303c45fb1fd2cad5daf82ced84ace967c1d55af2e2e68785e3ee148bb; reader page pending.
+
+## te-Telu-IN-OLTELAMALP-003 — OLTELAMALP-003: malformed free variable notation and missing set step
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored FV notation and inserted the missing set step and side condition
+
+- Intended sense: Repair the audited malformed free variable notation and missing set step at lines 125-140, proof of lem:fv-one, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMALP-20260925:OLTELAMALP-003 [checked_supports], content/lambda-calculus/syntax/alpha.tex; lines 125-140, proof of lem:fv-one; malformed_free_variable_notation_and_missing_set_step; restored FV notation and inserted the missing set step and side condition.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: స్వేచ్ఛా-చరాల నిరూపణలో సరిచేసిన FV సంకేతాలు, రెండవ సందర్భపు మధ్య దశ సరైనవా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMALP-003-OCC-001; OLP-0362; OLP-0362-B019; source upstream/content/lambda-calculus/syntax/alpha.tex:125-140 bytes 4669-5281 SHA-256 f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda; target translation/content/lambda-calculus/syntax/alpha.tex:149 bytes 9264-9918 SHA-256 8c842c4303c45fb1fd2cad5daf82ced84ace967c1d55af2e2e68785e3ee148bb; reader page pending.
+
+## te-Telu-IN-OLTELAMALP-004 — OLTELAMALP-004: wrong variable in inverse alpha step proof
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored x as the variable absent after substitution, with adjacent explanation
+
+- Intended sense: Repair the audited wrong variable in inverse alpha step proof at lines 161-166, proof of lem:inv, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMALP-20260925:OLTELAMALP-004 [checked_supports], content/lambda-calculus/syntax/alpha.tex; lines 161-166, proof of lem:inv; wrong_variable_in_inverse_alpha_step_proof; restored x as the variable absent after substitution, with adjacent explanation.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: తిరుగు పేరు మార్పుకు అవసరమైనది ప్రతిస్థాపన తరువాత x స్వేచ్ఛగా లేకపోవడమేనని స్పష్టమా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMALP-004-OCC-001; OLP-0362; OLP-0362-B022; source upstream/content/lambda-calculus/syntax/alpha.tex:161-166 bytes 5845-6206 SHA-256 f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda; target translation/content/lambda-calculus/syntax/alpha.tex:179 bytes 11308-11800 SHA-256 8c842c4303c45fb1fd2cad5daf82ced84ace967c1d55af2e2e68785e3ee148bb; reader page pending.
+
+## te-Telu-IN-OLTELAMALP-005 — OLTELAMALP-005: unproved definedness in alpha safe substitution construction
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: explicitly flagged unproved nested-substitution definedness and supplied a counterexample to the source argument; theorem proof remains open
+
+- Intended sense: Repair the audited unproved definedness in alpha safe substitution construction at lines 236-246, abstraction case of thm:sub, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMALP-20260925:OLTELAMALP-005 [checked_supports], content/lambda-calculus/syntax/alpha.tex; lines 236-246, abstraction case of thm:sub; unproved_definedness_in_alpha_safe_substitution_construction; explicitly flagged unproved nested-substitution definedness and supplied a counterexample to the source argument; theorem proof remains open.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: రెండో ప్రతిస్థాపన నిర్వచితమన్న మూల వాదనలో ఖాళీని ఇచ్చిన ఉదాహరణ సరిగ్గా చూపుతుందా? దానికి పూర్తి నిర్మాణాత్మక నిరూపణ ఏమిటి?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMALP-005-OCC-001; OLP-0362; OLP-0362-B034; source upstream/content/lambda-calculus/syntax/alpha.tex:236-246 bytes 8361-9041 SHA-256 f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda; target translation/content/lambda-calculus/syntax/alpha.tex:262 bytes 16620-17542 SHA-256 8c842c4303c45fb1fd2cad5daf82ced84ace967c1d55af2e2e68785e3ee148bb; reader page pending.
+
+## te-Telu-IN-OLTELAMALP-006 — OLTELAMALP-006: invalid equalities and incomplete uniqueness scope
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: preserved source display for inspection and explicitly flagged unjustified equalities and incomplete uniqueness scope; theorem proof remains open
+
+- Intended sense: Repair the audited invalid equalities and incomplete uniqueness scope at lines 248-261, displayed uniqueness chain in thm:sub, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMALP-20260925:OLTELAMALP-006 [checked_supports], content/lambda-calculus/syntax/alpha.tex; lines 248-261, displayed uniqueness chain in thm:sub; invalid_equalities_and_incomplete_uniqueness_scope; preserved source display for inspection and explicitly flagged unjustified equalities and incomplete uniqueness scope; theorem proof remains open.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: మూల గణనలో సమానత్వానికి బదులుగా ఏ ఆల్ఫా-తుల్యత దశలు కావాలి? సాధారణ M-double-primeను ఎలా కవర్ చేస్తారు?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMALP-006-OCC-001; OLP-0362; OLP-0362-B035; source upstream/content/lambda-calculus/syntax/alpha.tex:248-261 bytes 9042-9567 SHA-256 f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda; target translation/content/lambda-calculus/syntax/alpha.tex:276 bytes 18196-19056 SHA-256 8c842c4303c45fb1fd2cad5daf82ced84ace967c1d55af2e2e68785e3ee148bb; reader page pending.
+
+## te-Telu-IN-OLTELAMALP-007 — OLTELAMALP-007: missing hypothesis and wrong definedness pair in corollary
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored R-double-prime alpha R and definedness of the second pair, while disclosing the upstream proof gap
+
+- Intended sense: Repair the audited missing hypothesis and wrong definedness pair in corollary at lines 270-276, cor:sub, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMALP-20260925:OLTELAMALP-007 [checked_supports], content/lambda-calculus/syntax/alpha.tex; lines 270-276, cor:sub; missing_hypothesis_and_wrong_definedness_pair_in_corollary; restored R-double-prime alpha R and definedness of the second pair, while disclosing the upstream proof gap.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: ఉపసిద్ధాంతంలో రెండవ జతకు ఆల్ఫా-తుల్యత, నిర్వచితత్వం పరికల్పనలు రెండూ పునరుద్ధరించబడ్డాయా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMALP-007-OCC-001; OLP-0362; OLP-0362-B037; source upstream/content/lambda-calculus/syntax/alpha.tex:270-276 bytes 9726-10053 SHA-256 f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda; target translation/content/lambda-calculus/syntax/alpha.tex:291 bytes 19619-20456 SHA-256 8c842c4303c45fb1fd2cad5daf82ced84ace967c1d55af2e2e68785e3ee148bb; reader page pending.

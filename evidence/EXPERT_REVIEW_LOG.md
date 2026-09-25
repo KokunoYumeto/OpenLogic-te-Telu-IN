@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 358 of 722 draft units**. This log contains 81 terminology/sense decisions and 307 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 359 of 722 draft units**. This log contains 82 terminology/sense decisions and 314 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1951,6 +1951,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: నియమాలు, సరిచేసిన సమితి గణన ఆధారంగా భావార్థ అనిశ్చితి తక్కువ; ప్రతిస్థాపన, అనుకోని చర బంధనం అనే ప్రత్యేక తెలుగు నామకరణంలో మధ్యస్థ అనిశ్చితి ఉంది. నిపుణ సమీక్ష తరువాత మార్చవచ్చు; అది ఉత్పత్తికి అడ్డంకి కాదు.
 
 - Please double-check: Please double-check whether “పాక్షిక ప్రతిస్థాపన / స్వేచ్ఛా చరాల సంరక్షణ, మార్పు / అనుకోని చర బంధనం / బద్ధ చరానికి పేరు మార్పు / ఆగమన పరికల్పన” is idiomatic and technically standard for “partial substitution / free-variable preservation and replacement / variable capture / bound-variable renaming / inductive hypothesis” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T082 — alpha-conversion / alpha-equivalence / one-step bound-variable renaming / compatible relation / reflexive, symmetric and transitive relation / derivation
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: ఆల్ఫా-పరివర్తనం / ఆల్ఫా-తుల్యత / బద్ధ చరం పేరు మార్పు / అనుకూల సంబంధం / స్వప్రావర్తక, సౌష్టవ, సంక్రమణ సంబంధం / వ్యుత్పత్తి
+
+- Exact implementation: OLP-0362; lambda-calculus/syntax/alpha; content/lambda-calculus/syntax/alpha.tex:9-10 ↔ translation/content/lambda-calculus/syntax/alpha.tex:9-10 (OLP-0362-B004); printed/PDF page pending; OLP-0362; lambda-calculus/syntax/alpha; content/lambda-calculus/syntax/alpha.tex:29-37 ↔ translation/content/lambda-calculus/syntax/alpha.tex:29-37 (OLP-0362-B007); printed/PDF page pending; OLP-0362; lambda-calculus/syntax/alpha; content/lambda-calculus/syntax/alpha.tex:72-75 ↔ translation/content/lambda-calculus/syntax/alpha.tex:73-76 (OLP-0362-B012); printed/PDF page pending; OLP-0362; lambda-calculus/syntax/alpha; content/lambda-calculus/syntax/alpha.tex:116-145 ↔ translation/content/lambda-calculus/syntax/alpha.tex:120-153 (OLP-0362-B019); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P027లో పదం, చరం; TE-P029లో పరిధి, బద్ధ చరం; TE-P008లో సమితి, సంబంధం, ప్రమేయం; TE-P003, TE-P032లో నిర్వచనం, ఆగమన నిరూపణ భాష ప్రత్యక్షంగా ఉన్నాయి. ఈ పేజీలు ఆల్ఫా-పరివర్తనం, ఆల్ఫా-తుల్యత, అనుకూల సంబంధం అనే ప్రత్యేక లాంబ్డా నామాలను నేరుగా స్థాపించవు. OLP-0362లోని ఏక-దశ, అనుకూలత్వం, స్వప్రావర్తక-సంక్రమణ నియమాలు వాటి ఖచ్చిత భావాన్ని నియంత్రిస్తాయి; TE-T078, TE-T081 గత పదజాలంతో స్థిరత్వాన్ని ఇస్తాయి. OLTELAMALP-001–007 మూల లోపాలు, నిరూపణ ఖాళీలను విడిగా ప్రకటిస్తాయి. ఆల్ఫా అనేది గ్రీకు సంకేతపు సాంకేతిక స్వీకరణ; అసలు గణితంలో $\alpha$, FV, Subst, బద్ధ చర సంకేతాలు యథాతథం.
+
+- Alternatives: గత పదం, చరం, సంబంధం, నిరూపణ భాషలో ఆల్ఫా-పరివర్తనం, ఆల్ఫా-తుల్యతను మూల నిర్వచనాలతో నియంత్రించడం (ఎంపిక); ఆల్ఫా-మార్పును బీటా-తగ్గింపుతో కలపడం (తిరస్కరణ); స్థానిక పేజీలు ప్రత్యేక ఆల్ఫా నామాలను నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ); అసంపూర్ణ మూల నిరూపణను పూర్తి నిరూపణగా ప్రకటించడం (తిరస్కరణ)
+
+- Uncertainty: నిర్వచనాల ఆధారంగా ప్రాథమిక భావార్థం స్పష్టం; ఆల్ఫా-పరివర్తనం, అనుకూలత్వం అనే ప్రత్యేక తెలుగు నామాల్లో మధ్యస్థ అనిశ్చితి ఉంది. చివరి ప్రతిస్థాపన సిద్ధాంతపు మూల నిరూపణ అసంపూర్ణం; దాన్ని పదజాల నిర్ణయం నిరూపించదు.
+
+- Please double-check: Please double-check whether “ఆల్ఫా-పరివర్తనం / ఆల్ఫా-తుల్యత / బద్ధ చరం పేరు మార్పు / అనుకూల సంబంధం / స్వప్రావర్తక, సౌష్టవ, సంక్రమణ సంబంధం / వ్యుత్పత్తి” is idiomatic and technically standard for “alpha-conversion / alpha-equivalence / one-step bound-variable renaming / compatible relation / reflexive, symmetric and transitive relation / derivation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -9319,3 +9343,171 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMSUB-007 is mathematically precise and idiomatic.
+
+## REV-OLTELAMALP-001 — OLTELAMALP-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: added x unequal y to initial definition with adjacent disclosure
+
+- Exact implementation: OLP-0362; lambda-calculus/syntax/alpha; lines 18-27 versus lines 40-67 ↔ translation/content/lambda-calculus/syntax/alpha.tex:26 (OLP-0362-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMALP-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: added x unequal y to initial definition with adjacent disclosure
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: మొదటి పేరు మార్పు నిర్వచనంలో x, y భిన్నం అనే షరతు తరువాతి రెండు నిర్వచనాలతో ఏకరూపతను తెస్తుందా?
+
+## REV-OLTELAMALP-002 — OLTELAMALP-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: preserved duplicate pair and disclosed it without inventing a replacement
+
+- Exact implementation: OLP-0362; lambda-calculus/syntax/alpha; lines 103-110, exercise items 2 and 3 ↔ translation/content/lambda-calculus/syntax/alpha.tex:113 (OLP-0362-B017); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMALP-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: preserved duplicate pair and disclosed it without inventing a replacement
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: పునరుక్త అభ్యాస జతను ఊహతో మార్చకుండా ఉంచినట్టు స్పష్టమా?
+
+## REV-OLTELAMALP-003 — OLTELAMALP-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored FV notation and inserted the missing set step and side condition
+
+- Exact implementation: OLP-0362; lambda-calculus/syntax/alpha; lines 125-140, proof of lem:fv-one ↔ translation/content/lambda-calculus/syntax/alpha.tex:149 (OLP-0362-B019); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMALP-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored FV notation and inserted the missing set step and side condition
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: స్వేచ్ఛా-చరాల నిరూపణలో సరిచేసిన FV సంకేతాలు, రెండవ సందర్భపు మధ్య దశ సరైనవా?
+
+## REV-OLTELAMALP-004 — OLTELAMALP-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored x as the variable absent after substitution, with adjacent explanation
+
+- Exact implementation: OLP-0362; lambda-calculus/syntax/alpha; lines 161-166, proof of lem:inv ↔ translation/content/lambda-calculus/syntax/alpha.tex:179 (OLP-0362-B022); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMALP-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored x as the variable absent after substitution, with adjacent explanation
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: తిరుగు పేరు మార్పుకు అవసరమైనది ప్రతిస్థాపన తరువాత x స్వేచ్ఛగా లేకపోవడమేనని స్పష్టమా?
+
+## REV-OLTELAMALP-005 — OLTELAMALP-005
+
+- Status: source_proof_gap_disclosed_structural_qa_passed_full_proof_pending_no_translation_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: source_proof_gap_disclosed_not_repaired / high
+
+- Chosen wording/treatment: explicitly flagged unproved nested-substitution definedness and supplied a counterexample to the source argument; theorem proof remains open
+
+- Exact implementation: OLP-0362; lambda-calculus/syntax/alpha; lines 236-246, abstraction case of thm:sub ↔ translation/content/lambda-calculus/syntax/alpha.tex:262 (OLP-0362-B034); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMALP-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: మూల సిద్ధాంతానికి పూర్తి స్వతంత్ర నిరూపణ ఇంకా నమోదు కాలేదు; నిర్మాణాత్మక QA నిరూపణను ధృవీకరించదు.
+
+- Rationale: explicitly flagged unproved nested-substitution definedness and supplied a counterexample to the source argument; theorem proof remains open
+
+- Alternatives: మూల నిరూపణలోని అన్యాయ దశను నిరూపితంగా ప్రకటించడం (తిరస్కరణ); మూల దశను పరిశీలన కోసం ఉంచి ఖాళీని పక్కనే ప్రకటించడం (ఎంపిక); బలపరిచిన ఆగమన పరికల్పనతో పూర్తి నిరూపణను తరువాతి సమీక్షలో ఇవ్వడం (ఇంకా చేయలేదు)
+
+- Uncertainty: మూల వాదనలో నిరూపణ ఖాళీ నిర్ధారితమైనది; పూర్తి సిద్ధాంత నిరూపణ ఇంకా లేదు.
+
+- Please double-check: Please double-check: రెండో ప్రతిస్థాపన నిర్వచితమన్న మూల వాదనలో ఖాళీని ఇచ్చిన ఉదాహరణ సరిగ్గా చూపుతుందా? దానికి పూర్తి నిర్మాణాత్మక నిరూపణ ఏమిటి?
+
+## REV-OLTELAMALP-006 — OLTELAMALP-006
+
+- Status: source_proof_gap_disclosed_structural_qa_passed_full_proof_pending_no_translation_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: source_proof_gap_disclosed_not_repaired / high
+
+- Chosen wording/treatment: preserved source display for inspection and explicitly flagged unjustified equalities and incomplete uniqueness scope; theorem proof remains open
+
+- Exact implementation: OLP-0362; lambda-calculus/syntax/alpha; lines 248-261, displayed uniqueness chain in thm:sub ↔ translation/content/lambda-calculus/syntax/alpha.tex:276 (OLP-0362-B035); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMALP-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: మూల సిద్ధాంతానికి పూర్తి స్వతంత్ర నిరూపణ ఇంకా నమోదు కాలేదు; నిర్మాణాత్మక QA నిరూపణను ధృవీకరించదు.
+
+- Rationale: preserved source display for inspection and explicitly flagged unjustified equalities and incomplete uniqueness scope; theorem proof remains open
+
+- Alternatives: మూల నిరూపణలోని అన్యాయ దశను నిరూపితంగా ప్రకటించడం (తిరస్కరణ); మూల దశను పరిశీలన కోసం ఉంచి ఖాళీని పక్కనే ప్రకటించడం (ఎంపిక); బలపరిచిన ఆగమన పరికల్పనతో పూర్తి నిరూపణను తరువాతి సమీక్షలో ఇవ్వడం (ఇంకా చేయలేదు)
+
+- Uncertainty: మూల వాదనలో నిరూపణ ఖాళీ నిర్ధారితమైనది; పూర్తి సిద్ధాంత నిరూపణ ఇంకా లేదు.
+
+- Please double-check: Please double-check: మూల గణనలో సమానత్వానికి బదులుగా ఏ ఆల్ఫా-తుల్యత దశలు కావాలి? సాధారణ M-double-primeను ఎలా కవర్ చేస్తారు?
+
+## REV-OLTELAMALP-007 — OLTELAMALP-007
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored R-double-prime alpha R and definedness of the second pair, while disclosing the upstream proof gap
+
+- Exact implementation: OLP-0362; lambda-calculus/syntax/alpha; lines 270-276, cor:sub ↔ translation/content/lambda-calculus/syntax/alpha.tex:291 (OLP-0362-B037); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMALP-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored R-double-prime alpha R and definedness of the second pair, while disclosing the upstream proof gap
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: ఉపసిద్ధాంతంలో రెండవ జతకు ఆల్ఫా-తుల్యత, నిర్వచితత్వం పరికల్పనలు రెండూ పునరుద్ధరించబడ్డాయా?

@@ -1,0 +1,78 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTELAMALP-20260925",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": ["OLP-0362"],
+    "finding_count": 7
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "source_file": {
+    "path": "content/lambda-calculus/syntax/alpha.tex",
+    "bytes": 10131,
+    "sha256": "f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTELAMALP-001",
+      "classification": "first_alpha_step_definition_allows_identity_unlike_later_equivalent_definitions",
+      "source_locator": "lines 18-27 versus lines 40-67",
+      "finding": "మొదటి పేరు మార్పు నిర్వచనం x=yను నిషేధించదు; తరువాతి రెండు సమాన నిర్వచనాలు x భిన్నం y అని కోరుతాయి.",
+      "controlling_evidence": "x=y, x స్వేచ్ఛగా Nలో లేకపోతే మొదటి నిర్వచనం మార్పులేని lambda పదాన్ని అనుమతిస్తుంది; తరువాతి కనిష్ఠ సంబంధానికి ఆ నియమం లేదు.",
+      "required_translation_handling": "మొదటి నిర్వచనంలో x భిన్నం yను వెల్లడించి, మూల భేదాన్ని పక్కనే ప్రకటించాలి."
+    },
+    {
+      "finding_id": "OLTELAMALP-002",
+      "classification": "duplicate_exercise_pair_without_recoverable_intended_alternative",
+      "source_locator": "lines 103-110, exercise items 2 and 3",
+      "finding": "రెండవ, మూడవ అభ్యాస జతలు అక్షరాలా ఒకటే.",
+      "controlling_evidence": "ఫైల్లో రెండు item పంక్తులూ ఒకే సూత్రాలను ఇస్తాయి; ఉద్దేశించిన ప్రత్యామ్నాయ జతకు మూల ఆధారం లేదు.",
+      "required_translation_handling": "పునరుక్తిని మార్చకుండా ఉంచి పక్కనే గమనిక చేర్చాలి."
+    },
+    {
+      "finding_id": "OLTELAMALP-003",
+      "classification": "malformed_free_variable_notation_and_missing_set_step",
+      "source_locator": "lines 125-140, proof of lem:fv-one",
+      "finding": "FV(N), FV{...} సంకేతాలు అసంపూర్ణం; x స్వేచ్ఛగా లేని సందర్భంలో ప్రతిస్థాపన సిద్ధాంతం నేరుగా మూలంలోని రెండవ సమానత్వాన్ని ఇవ్వదు.",
+      "controlling_evidence": "FV(lambda y.T)=FV(T) minus {y}; x,y రెండూ FV(N)లో లేనప్పుడు మాత్రమే FV(N) minus {y}=FV(N) minus {x}.",
+      "required_translation_handling": "సరైన FV సంకేతాలు, అవసరమైన మధ్య దశ, దాని పరికల్పనను చేర్చాలి."
+    },
+    {
+      "finding_id": "OLTELAMALP-004",
+      "classification": "wrong_variable_in_inverse_alpha_step_proof",
+      "source_locator": "lines 161-166, proof of lem:inv",
+      "finding": "మూలం ప్రతిస్థాపన తరువాత y స్వేచ్ఛగా ఉండదని చెబుతుంది; y స్వేచ్ఛగా రావచ్చు. తిరుగు మార్పుకు అవసరమైనది x స్వేచ్ఛగా లేకపోవడం.",
+      "controlling_evidence": "x భిన్నం y కనుక replacement yలో x స్వేచ్ఛగా లేదు; thm:clr ఇస్తున్నది x notin FV(Subst(N,y,x)).",
+      "required_translation_handling": "yకు బదులుగా xను పునరుద్ధరించి కారణాన్ని వివరించాలి."
+    },
+    {
+      "finding_id": "OLTELAMALP-005",
+      "classification": "unproved_definedness_in_alpha_safe_substitution_construction",
+      "source_locator": "lines 236-246, abstraction case of thm:sub",
+      "finding": "Subst(N',z,x) నిర్వచితం అన్న ఆగమన పరికల్పన, దాని ఫలితంలో Rను yకి ప్రతిస్థాపించడం నిర్వచితమని హామీ ఇవ్వదు.",
+      "controlling_evidence": "N'=lambda y.x తీసుకుంటే మొదటి ప్రతిస్థాపన సాధ్యమైనా వచ్చిన lambda y.zలో y స్థానంలో ప్రతిస్థాపన మూలంలోని పాక్షిక నియమంతో నిర్వచితం కాదు.",
+      "required_translation_handling": "మూల వాదనను నిరూపిత దశగా వినిపించకుండా, అదనపు బద్ధ-చర తాజాతన నిర్మాణం కావాలని గుర్తించాలి."
+    },
+    {
+      "finding_id": "OLTELAMALP-006",
+      "classification": "invalid_equalities_and_incomplete_uniqueness_scope",
+      "source_locator": "lines 248-261, displayed uniqueness chain in thm:sub",
+      "finding": "lem:sub:R కేవలం ఆల్ఫా-తుల్యత ఇస్తుంది, సమానత్వం కాదు; తదుపరి సమానత్వం కూడా ఆగమన పరికల్పన నుంచి రాదు. ఒకే z గల ప్రత్యేక రూపాల పోలిక సాధారణ M''ను కవర్ చేయదు.",
+      "controlling_evidence": "lem:sub:R ప్రకటన, thm:subలో ఏ M'' alpha M అన్న సాధారణ పరికల్పన, మరియు మూల గణనలో ఒకే zను వాడిన తీరు.",
+      "required_translation_handling": "మూల గణనను పరిశీలన కోసం ఉంచి, అది సరైన పూర్తి నిరూపణ కాదని స్పష్టంగా పేర్కొనాలి; ఆధారంలేని కొత్త సమానత్వాన్ని ప్రతిపాదించకూడదు."
+    },
+    {
+      "finding_id": "OLTELAMALP-007",
+      "classification": "missing_hypothesis_and_wrong_definedness_pair_in_corollary",
+      "source_locator": "lines 270-276, cor:sub",
+      "finding": "రెండవ జతలో R'' alpha R షరతు లేదు; నిర్వచితంగా ఉండాల్సిన రెండవ ప్రతిస్థాపన స్థానంలో మూలం మొదటిదాన్ని మళ్లీ రాసింది.",
+      "controlling_evidence": "ఉపసిద్ధాంతం thm:sub నుంచి రావాలంటే రెండు ప్రత్యామ్నాయ ప్రతిస్థాపనల పదాలు, ప్రతిస్థాపకాలు ఆల్ఫా-తుల్యాలు మరియు రెండూ నిర్వచితాలు కావాలి.",
+      "required_translation_handling": "R'' alpha R, Subst(M'',R'',y) నిర్వచితం అనే రెండు పరికల్పనలను పునరుద్ధరించి మూల నిరూపణ ఖాళీ మిగిలి ఉందని గుర్తించాలి."
+    }
+  ]
+}
