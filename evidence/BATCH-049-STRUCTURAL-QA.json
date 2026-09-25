@@ -1,0 +1,359 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-25T04:41:32.097Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Text/intertext/mbox prose is masked; nested inline math is compared per clause independently of language-specific word order.",
+  "units": [
+    {
+      "unit_id": "OLP-0367",
+      "source_path": "content/lambda-calculus/church-rosser/church-rosser.tex",
+      "source_sha256": "f9a7362d873c4feed67ac0350ebb3c3cf3ddfd6046c4a7d0ef55e7086038ddf5",
+      "translation_sha256": "2afb78a75c8a204d22384636ccc7070d22771e48dc2e152d4ccc61a1985c0d36",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport{definitions-and-properties}",
+        "\\olimport{parallel-beta-reduction}",
+        "\\olimport{beta-reduction}",
+        "\\olimport{parallel-beta-eta-reduction}",
+        "\\olimport{beta-eta-reduction}"
+      ],
+      "identifiers_target_core": [
+        "\\olimport{definitions-and-properties}",
+        "\\olimport{parallel-beta-reduction}",
+        "\\olimport{beta-reduction}",
+        "\\olimport{parallel-beta-eta-reduction}",
+        "\\olimport{beta-eta-reduction}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 16,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: church-rosser",
+          "target_start": "% Part: lambda-calculus\n% Chapter: church-rosser"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olchapter{lam}{cr}{The Church--Rosser Property}",
+          "target_start": "\\olchapter{lam}{cr}{చర్చ్--రోసర్ లక్షణం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olimport{definitions-and-properties}\n\\olimport{parallel-beta-reduction}\n\\olimport{beta-reduction}\n\\olimport{p",
+          "target_start": "\\olimport{definitions-and-properties}\n\\olimport{parallel-beta-reduction}\n\\olimport{beta-reduction}\n\\olimport{p"
+        },
+        {
+          "index": 6,
+          "source_start": "\\OLEndChapterHook",
+          "target_start": "\\OLEndChapterHook"
+        },
+        {
+          "index": 7,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{lam}{cr}",
+        "\\olimport{definitions-and-properties}",
+        "\\olimport{parallel-beta-reduction}",
+        "\\olimport{beta-reduction}",
+        "\\olimport{parallel-beta-eta-reduction}",
+        "\\olimport{beta-eta-reduction}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{lam}{cr}",
+        "\\olimport{definitions-and-properties}",
+        "\\olimport{parallel-beta-reduction}",
+        "\\olimport{beta-reduction}",
+        "\\olimport{parallel-beta-eta-reduction}",
+        "\\olimport{beta-eta-reduction}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0368",
+      "source_path": "content/lambda-calculus/church-rosser/definitions-and-properties.tex",
+      "source_sha256": "8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f",
+      "translation_sha256": "6a126314a17d1c2a08a286a385afe7f433b310be8fc7905aeae013b87eb8b2db",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{cr}{dap}",
+        "\\ollabel{thm:str}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{cr}{dap}",
+        "\\ollabel{thm:str}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\xredone$",
+        "$M\\xredoneP$",
+        "$M\\xredoneQ$",
+        "$N$",
+        "$P\\xredoneN$",
+        "$Q\\xredoneN$",
+        "$4\\times(1+2)+3$",
+        "$4\\times3+3$",
+        "$1+2$",
+        "$3$",
+        "$4\\times1+4\\times2+3$",
+        "$4\\times(1+2)$",
+        "$12+3$",
+        "$\\xredone$",
+        "$\\beta$",
+        "$M$",
+        "$P$",
+        "$Q$",
+        "$N$",
+        "$P$",
+        "$Q$",
+        "$P$",
+        "$Q$",
+        "$P$",
+        "$Q$",
+        "$N$",
+        "$P$",
+        "$Q$",
+        "$N$",
+        "$4\\times(1+2)+3$",
+        "$15$",
+        "$\\xredone$",
+        "$\\xred$",
+        "$\\xredone$",
+        "$\\xred$",
+        "\\begin{align*}M&\\xredoneP_1\\xredone\\dots\\xredoneP_m\\\\M&\\xredoneQ_1\\xredone\\dots\\xredoneQ_n.\\end{align*}",
+        "$N$",
+        "$m+1$",
+        "$n+1$",
+        "$N_{i,j}$",
+        "$i$",
+        "$j$",
+        "$N$",
+        "$N_{i,j}\\xredoneN_{i+1,j}$",
+        "$N_{i,j}\\xredoneN_{i,j+1}$",
+        "\\begin{align*}N_{0,0}&=M\\\\N_{i,0}&=P_i&&1\\lei\\lem\\\\N_{0,j}&=Q_j&&1\\lej\\len\\\\N_{i,j}&=R\\end{align*}",
+        "$R$",
+        "$N_{i-1,j}\\xredoneR$",
+        "$N_{i,j-1}\\xredoneR$",
+        "$\\xredone$",
+        "$N_{m,0}\\xredone\\dots\\xredoneN_{m,n}$",
+        "$N_{0,n}\\xredone\\dots\\xredoneN_{m,n}$",
+        "$N_{m,0}$",
+        "$P$",
+        "$N_{0,n}$",
+        "$Q$",
+        "$\\xred$"
+      ],
+      "math_target_core": [
+        "$\\xredone$",
+        "$M\\xredoneP$",
+        "$M\\xredoneQ$",
+        "$P\\xredoneN$",
+        "$Q\\xredoneN$",
+        "$N$",
+        "$4\\times(1+2)+3$",
+        "$1+2$",
+        "$3$",
+        "$4\\times3+3$",
+        "$4\\times(1+2)$",
+        "$4\\times1+4\\times2+3$",
+        "$12+3$",
+        "$\\xredone$",
+        "$\\beta$",
+        "$M$",
+        "$P$",
+        "$Q$",
+        "$P$",
+        "$Q$",
+        "$N$",
+        "$P$",
+        "$Q$",
+        "$P$",
+        "$Q$",
+        "$N$",
+        "$P$",
+        "$Q$",
+        "$N$",
+        "$4\\times(1+2)+3$",
+        "$15$",
+        "$\\xredone$",
+        "$\\xred$",
+        "$\\xredone$",
+        "$\\xred$",
+        "\\begin{align*}M&\\xredoneP_1\\xredone\\dots\\xredoneP_m\\\\M&\\xredoneQ_1\\xredone\\dots\\xredoneQ_n.\\end{align*}",
+        "$m+1$",
+        "$n+1$",
+        "$N$",
+        "$i$",
+        "$j$",
+        "$N_{i,j}$",
+        "$N_{i,j}\\xredoneN_{i+1,j}$",
+        "$N_{i,j}\\xredoneN_{i,j+1}$",
+        "$N$",
+        "\\begin{align*}N_{0,0}&=M\\\\N_{i,0}&=P_i&&1\\lei\\lem\\\\N_{0,j}&=Q_j&&1\\lej\\len\\\\N_{i,j}&=R\\end{align*}",
+        "$R$",
+        "$N_{i-1,j}\\xredoneR$",
+        "$N_{i,j-1}\\xredoneR$",
+        "$\\xredone$",
+        "$N_{m,0}\\xredone\\dots\\xredoneN_{m,n}$",
+        "$N_{0,n}\\xredone\\dots\\xredoneN_{m,n}$",
+        "$N_{m,0}$",
+        "$P_m$",
+        "$N_{0,n}$",
+        "$Q_n$",
+        "$\\xred$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$P$",
+        "$Q$"
+      ],
+      "math_delta_target_only": [
+        "$P_m$",
+        "$Q_n$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTELAMCRDAP-001",
+        "OLTELAMCRDAP-002"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1907,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: church-rosser\n% Section: definitions-and-properties",
+          "target_start": "% Part: lambda-calculus\n% Chapter: church-rosser\n% Section: definitions-and-properties"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{cr}{dap}",
+          "target_start": "\\olfileid{lam}{cr}{dap}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olsection{Definition and Properties}",
+          "target_start": "\\olsection{నిర్వచనం మరియు లక్షణాలు}"
+        },
+        {
+          "index": 6,
+          "source_start": "In this chapter we introduce the concept of Church--Rosser property and\nsome common properties of this propert",
+          "target_start": "ఈ అధ్యాయంలో చర్చ్--రోసర్ లక్షణం అనే భావాన్ని, దానికి\nసంబంధించిన కొన్ని సాధారణ లక్షణాలను పరిచయం చేస్తాం."
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}[Church--Rosser property, CR] A relation $\\xredone$ on\n  terms is said to satisfy the \\emph{Church",
+          "target_start": "\\begin{defn}[చర్చ్--రోసర్ లక్షణం, CR] పదాలపై $\\xredone$\n  అనే సంబంధం\n  \\emph{చర్చ్--రోసర్ లక్షణాన్ని} తీరుస్తు"
+        },
+        {
+          "index": 8,
+          "source_start": "We can view the lambda calculus as a model of computation in which\nterms in normal form are ``values'' and a r",
+          "target_start": "లాంబ్డా కలనశాస్త్రాన్ని ఒక గణన నమూనాగా చూడవచ్చు: అందులో\nనియత రూపంలోని పదాలు “విలువలు”; పదాలపై తగ్గింపు సంబంధం\n"
+        },
+        {
+          "index": 9,
+          "source_start": "To take an example from elementary algebra, there's more than one way\nto calculate $4 \\times (1+2) + 3$. It ca",
+          "target_start": "ప్రాథమిక బీజగణితం నుంచి ఉదాహరణగా $4 \\times (1+2) + 3$ను\nలెక్కించడానికి ఒకటి కంటే ఎక్కువ మార్గాలున్నాయి. ముందుగ"
+        },
+        {
+          "index": 10,
+          "source_start": "If we take $\\xredone$ to be $\\beta$-reduction, we easily see that a\nconsequence of the Church--Rosser property",
+          "target_start": "$\\xredone$ను $\\beta$-తగ్గింపుగా తీసుకుంటే, చర్చ్--రోసర్\nలక్షణం వల్ల ఒక పదానికి నియత రూపం ఉంటే అది అనన్యమని\nసుల"
+        },
+        {
+          "index": 11,
+          "source_start": "In viewing the lambda calculus as a model of computation, then, the\nnormal form of a term can be thought of as",
+          "target_start": "లాంబ్డా కలనశాస్త్రాన్ని గణన నమూనాగా చూసినప్పుడు, ఒక\nపదం నుంచి ప్రారంభమైన గణనకు దాని నియత రూపం “తుది\nఫలితం”గా భ"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{thm} \\ollabel{thm:str}\n  If a relation $\\xredone$ satisfies the Church--Rosser property, and $\\xred$ is",
+          "target_start": "\\begin{thm} \\ollabel{thm:str}\n  $\\xredone$ సంబంధం చర్చ్--రోసర్ లక్షణాన్ని తీర్చి,\n  $\\xred$ అనేది $\\xredone$ను"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{proof}\n  Suppose \n  \\begin{align*}\n    M & \\xredone P_1 \\xredone \\dots \\xredone P_m \\text{ and}\\\\\n    M",
+          "target_start": "\\begin{proof}\n  కింది రెండు తగ్గింపు క్రమాలున్నాయని అనుకుందాం:\n  \\begin{align*}\n    M & \\xredone P_1 \\xredone "
+        },
+        {
+          "index": 14,
+          "source_start": "  We construct $N$ in such a way that $N_{i,j} \\xredone N_{i+1,j}$ and\n  $N_{i,j} \\xredone N_{i,j+1}$. It is d",
+          "target_start": "  $N_{i,j} \\xredone N_{i+1,j}$,\n  $N_{i,j} \\xredone N_{i,j+1}$ అయ్యేలా $N$ను నిర్మిస్తాం.\n  నిర్వచనం ఇది:\n  \\b"
+        },
+        {
+          "index": 15,
+          "source_start": "  Now we have $N_{m,0} \\xredone \\dots \\xredone N_{m,n}$ and $N_{0,n}\n  \\xredone \\dots \\xredone N_{m,n}$. Note ",
+          "target_start": "  ఇప్పుడు $N_{m,0} \\xredone \\dots \\xredone N_{m,n}$,\n  $N_{0,n} \\xredone \\dots \\xredone N_{m,n}$ ఉన్నాయి.\n  $N"
+        },
+        {
+          "index": 16,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{cr}{dap}",
+        "\\ollabel{thm:str}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{cr}{dap}",
+        "\\ollabel{thm:str}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 366 of 722 draft units**. This view selects 375 of 410 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 368 of 722 draft units**. This view selects 377 of 413 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -3753,3 +3753,23 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0366; lambda-calculus/syntax/eta; translation/content/lambda-calculus/syntax/eta.tex:79; printed/PDF page pending
 
 - Please double-check: Please double-check: నిరూపణలో ext మాక్రోను ఒకే విధంగా వాడటం నిర్వచన, సిద్ధాంత సంకేతాలతో సరిపోతుందా; సంబంధం యొక్క భావాన్ని మార్చలేదా?
+
+## REV-OLTELAMCRDAP-001 — OLTELAMCRDAP-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: qualified the explanatory uniqueness claim as conditional on a final value existing, with adjacent Telugu disclosure
+
+- Occurrences: OLP-0368; lambda-calculus/church-rosser/definitions-and-properties; translation/content/lambda-calculus/church-rosser/definitions-and-properties.tex:29; printed/PDF page pending
+
+- Please double-check: Please double-check: రెండు తగ్గింపు మార్గాలు తిరిగి కలవడమనే లక్షణం తుది విలువ ఉనికిని కాదు, ఏదైనా ఉంటే దాని అనన్యతను మాత్రమే ఇస్తుందని మొదటి వివరణ స్పష్టంచేస్తుందా?
+
+## REV-OLTELAMCRDAP-002 — OLTELAMCRDAP-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: corrected the two undefined terminal endpoint names to P_m and Q_n, with adjacent Telugu disclosure
+
+- Occurrences: OLP-0368; lambda-calculus/church-rosser/definitions-and-properties; translation/content/lambda-calculus/church-rosser/definitions-and-properties.tex:91; printed/PDF page pending
+
+- Please double-check: Please double-check: జాలక సరిహద్దు నిర్వచనాల నుంచి N_{m,0}=P_m, N_{0,n}=Q_n అని వస్తుందని, మూల P/Q పేర్లను అంతకుమించి ఏదీ మార్చకుండా సరిచేశామా?

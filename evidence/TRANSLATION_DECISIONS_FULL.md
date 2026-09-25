@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **366 of 722 source units drafted**. This readable view contains all 410 decisions and 772 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **368 of 722 source units drafted**. This readable view contains all 413 decisions and 778 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2574,6 +2574,35 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T088-OCC-003; OLP-0366; OLP-0366-B007; source upstream/content/lambda-calculus/syntax/eta.tex:27-35 bytes 797-1254 SHA-256 a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978; target translation/content/lambda-calculus/syntax/eta.tex:28-36 bytes 1254-2007 SHA-256 4d4950317b29b9482b33f0ced2507c734790608b38a9e9c78a2f7b70f766d5f7; reader page pending.
   - te-Telu-IN-TE-T088-OCC-004; OLP-0366; OLP-0366-B010; source upstream/content/lambda-calculus/syntax/eta.tex:47-48 bytes 1465-1554 SHA-256 a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978; target translation/content/lambda-calculus/syntax/eta.tex:51-52 bytes 3269-3477 SHA-256 4d4950317b29b9482b33f0ced2507c734790608b38a9e9c78a2f7b70f766d5f7; reader page pending.
   - te-Telu-IN-TE-T088-OCC-005; OLP-0366; OLP-0366-B013; source upstream/content/lambda-calculus/syntax/eta.tex:62-63 bytes 1963-2052 SHA-256 a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978; target translation/content/lambda-calculus/syntax/eta.tex:65-66 bytes 4252-4466 SHA-256 4d4950317b29b9482b33f0ced2507c734790608b38a9e9c78a2f7b70f766d5f7; reader page pending.
+
+## te-Telu-IN-TE-T089 — Church--Rosser property / unique normal form / grid of joining reductions
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: చర్చ్--రోసర్ లక్షణం / నియత రూపపు అనన్యత / తగ్గింపు మార్గాలను కలిపే జాలకం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “Church--Rosser property / unique normal form / grid of joining reductions” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: గణిత షరతులు మూల నిర్వచనం, జాలక వాదనలో నిర్దిష్టం. కానీ చర్చ్--రోసర్ అనే విదేశీ వ్యక్తి పేరుకు, జాలకం అనే ఉపమానానికి ప్రత్యక్ష స్థానిక లాంబ్డా-కలనశాస్త్ర సాక్ష్యం లేదు; నామకరణం తాత్కాలికం. ఈ విభాగం ప్రతి పదానికి నియత రూపం ఉందని చెప్పదు.
+
+- Rationale: TE-P003, TE-P032లో కారణం, నిరూపణ, సిద్ధాంత గద్యాన్ని; TE-P008లో ప్రమేయం/ఆర్గ్యుమెంట్ పదజాలాన్ని; TE-P027లో పదం, చరం, తర్కశాస్త్ర వివరణను ప్రత్యక్షంగా చూశాం. ఏ పేజీ చర్చ్--రోసర్ లక్షణం, నియతీకరణ లేదా గణిత జాలక పద్ధతిని నేరుగా బోధించదు. OLP-0368లోని రెండు తగ్గింపు మార్గాలకు ఉమ్మడి దిగువ పదం ఉనికి అనే నిర్వచనమే ప్రత్యేక అర్థాన్ని నియంత్రిస్తుంది; మూల బీటా విభాగంలోని TE-T078, TE-T087 ఎంపికలతో నియత రూపం/తగ్గింపు పదజాలాన్ని కొనసాగించాం. OLTELAMCRDAP-001–002 మూల అతివ్యాప్తి, పేరులేని అంచు పదాలను పక్కనే ప్రకటిస్తాయి. చర్చ్, రోసర్ మూల వ్యక్తి పేర్ల ధ్వన్యనుకరణ; CR, M, N, P_i, Q_j, సంబంధ మాక్రోలు గణిత గుర్తింపులుగా యథాతథం.
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: చర్చ్--రోసర్ అనే మూల పేరుతో, రెండు మార్గాలకు ఉమ్మడి దిగువ పదం అనే నిర్వచనంతో లక్షణాన్ని ఇవ్వడం [viable_alternative: ఎంపిక] | ప్రతి పదం తప్పక నియత రూపానికి చేరుతుందని చర్చ్--రోసర్ లక్షణం నుంచి తేల్చడం [viable_alternative: తిరస్కరణ] | జాలకాన్ని అలంకార రూపకంగా మాత్రమే తీసుకుని N సూచికల వరుస/నిలువు అర్థాన్ని వదలడం [viable_alternative: తిరస్కరణ] | జాలక అంచులలో మూలంలో లేని P,Q పేర్లను నిర్వచించకుండా కొనసాగించడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “చర్చ్--రోసర్ లక్షణం / నియత రూపపు అనన్యత / తగ్గింపు మార్గాలను కలిపే జాలకం” is idiomatic and technically standard for “Church--Rosser property / unique normal form / grid of joining reductions” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T089-OCC-001; OLP-0367; OLP-0367-B004; source upstream/content/lambda-calculus/church-rosser/church-rosser.tex:8 bytes 131-180 SHA-256 f9a7362d873c4feed67ac0350ebb3c3cf3ddfd6046c4a7d0ef55e7086038ddf5; target translation/content/lambda-calculus/church-rosser/church-rosser.tex:8 bytes 131-204 SHA-256 2afb78a75c8a204d22384636ccc7070d22771e48dc2e152d4ccc61a1985c0d36; reader page pending.
+  - te-Telu-IN-TE-T089-OCC-002; OLP-0368; OLP-0368-B007; source upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:16-20 bytes 347-612 SHA-256 8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f; target translation/content/lambda-calculus/church-rosser/definitions-and-properties.tex:16-22 bytes 552-1043 SHA-256 6a126314a17d1c2a08a286a385afe7f433b310be8fc7905aeae013b87eb8b2db; reader page pending.
+  - te-Telu-IN-TE-T089-OCC-003; OLP-0368; OLP-0368-B010; source upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:35-43 bytes 1278-1844 SHA-256 8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f; target translation/content/lambda-calculus/church-rosser/definitions-and-properties.tex:38-46 bytes 3105-4092 SHA-256 6a126314a17d1c2a08a286a385afe7f433b310be8fc7905aeae013b87eb8b2db; reader page pending.
+  - te-Telu-IN-TE-T089-OCC-004; OLP-0368; OLP-0368-B013; source upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:57-65 bytes 2424-2775 SHA-256 8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f; target translation/content/lambda-calculus/church-rosser/definitions-and-properties.tex:61-70 bytes 5090-5765 SHA-256 6a126314a17d1c2a08a286a385afe7f433b310be8fc7905aeae013b87eb8b2db; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -11025,3 +11054,55 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTELAMETA-002-OCC-001; OLP-0366; OLP-0366-B015; source upstream/content/lambda-calculus/syntax/eta.tex:71 bytes 2203-2270 SHA-256 a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978; target translation/content/lambda-calculus/syntax/eta.tex:79 bytes 5099-5651 SHA-256 4d4950317b29b9482b33f0ced2507c734790608b38a9e9c78a2f7b70f766d5f7; reader page pending.
+
+## te-Telu-IN-OLTELAMCRDAP-001 — OLTELAMCRDAP-001: church rosser does not assert existence of normal value
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: qualified the explanatory uniqueness claim as conditional on a final value existing, with adjacent Telugu disclosure
+
+- Intended sense: Repair the audited church rosser does not assert existence of normal value at lines 22-26, contrasted with lines 35-49, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMCRDAP-20260925:OLTELAMCRDAP-001 [checked_supports], content/lambda-calculus/church-rosser/definitions-and-properties.tex; lines 22-26, contrasted with lines 35-49; church_rosser_does_not_assert_existence_of_normal_value; qualified the explanatory uniqueness claim as conditional on a final value existing, with adjacent Telugu disclosure.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: రెండు తగ్గింపు మార్గాలు తిరిగి కలవడమనే లక్షణం తుది విలువ ఉనికిని కాదు, ఏదైనా ఉంటే దాని అనన్యతను మాత్రమే ఇస్తుందని మొదటి వివరణ స్పష్టంచేస్తుందా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMCRDAP-001-OCC-001; OLP-0368; OLP-0368-B008; source upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:22-26 bytes 613-944 SHA-256 8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f; target translation/content/lambda-calculus/church-rosser/definitions-and-properties.tex:29 bytes 1726-2452 SHA-256 6a126314a17d1c2a08a286a385afe7f433b310be8fc7905aeae013b87eb8b2db; reader page pending.
+
+## te-Telu-IN-OLTELAMCRDAP-002 — OLTELAMCRDAP-002: undefined endpoint abbreviations in grid proof
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: corrected the two undefined terminal endpoint names to P_m and Q_n, with adjacent Telugu disclosure
+
+- Intended sense: Repair the audited undefined endpoint abbreviations in grid proof at lines 57-82, especially 58-61, 69-72, 80-82, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMCRDAP-20260925:OLTELAMCRDAP-002 [checked_supports], content/lambda-calculus/church-rosser/definitions-and-properties.tex; lines 57-82, especially 58-61, 69-72, 80-82; undefined_endpoint_abbreviations_in_grid_proof; corrected the two undefined terminal endpoint names to P_m and Q_n, with adjacent Telugu disclosure.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: జాలక సరిహద్దు నిర్వచనాల నుంచి N_{m,0}=P_m, N_{0,n}=Q_n అని వస్తుందని, మూల P/Q పేర్లను అంతకుమించి ఏదీ మార్చకుండా సరిచేశామా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMCRDAP-002-OCC-001; OLP-0368; OLP-0368-B013; source upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:57-82 bytes 2424-3463 SHA-256 8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f; target translation/content/lambda-calculus/church-rosser/definitions-and-properties.tex:91 bytes 6813-7521 SHA-256 6a126314a17d1c2a08a286a385afe7f433b310be8fc7905aeae013b87eb8b2db; reader page pending.

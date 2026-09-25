@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 366 of 722 draft units**. This log contains 88 terminology/sense decisions and 322 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 368 of 722 draft units**. This log contains 89 terminology/sense decisions and 324 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2119,6 +2119,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: మూల ఏటా/విస్తారతా నియమాల గణిత ఉద్దేశం స్పష్టం; కానీ ఏటా-పరివర్తనం, విస్తారత అనే తెలుగు తలపదాలకు ప్రత్యేక స్థానిక ప్రత్యక్ష ధృవీకరణ లేదు. షరతు మూల తుల్యతా నియమంలో మళ్లీ లేకపోవడం వల్ల నిర్వచన పఠనం జాగ్రత్తగా నమోదైంది.
 
 - Please double-check: Please double-check whether “ఏటా-సంకోచనం / బీటా-ఏటా తగ్గింపు / ఏటా-తుల్యత / లాంబ్డా పదాల విస్తారత” is idiomatic and technically standard for “eta-contraction / beta-eta reduction / eta-equivalence / extensionality of lambda terms” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T089 — Church--Rosser property / unique normal form / grid of joining reductions
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: చర్చ్--రోసర్ లక్షణం / నియత రూపపు అనన్యత / తగ్గింపు మార్గాలను కలిపే జాలకం
+
+- Exact implementation: OLP-0367; lambda-calculus/church-rosser/church-rosser; content/lambda-calculus/church-rosser/church-rosser.tex:8 ↔ translation/content/lambda-calculus/church-rosser/church-rosser.tex:8 (OLP-0367-B004); printed/PDF page pending; OLP-0368; lambda-calculus/church-rosser/definitions-and-properties; content/lambda-calculus/church-rosser/definitions-and-properties.tex:16-20 ↔ translation/content/lambda-calculus/church-rosser/definitions-and-properties.tex:16-22 (OLP-0368-B007); printed/PDF page pending; OLP-0368; lambda-calculus/church-rosser/definitions-and-properties; content/lambda-calculus/church-rosser/definitions-and-properties.tex:35-43 ↔ translation/content/lambda-calculus/church-rosser/definitions-and-properties.tex:38-46 (OLP-0368-B010); printed/PDF page pending; OLP-0368; lambda-calculus/church-rosser/definitions-and-properties; content/lambda-calculus/church-rosser/definitions-and-properties.tex:57-65 ↔ translation/content/lambda-calculus/church-rosser/definitions-and-properties.tex:61-70 (OLP-0368-B013); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P003, TE-P032లో కారణం, నిరూపణ, సిద్ధాంత గద్యాన్ని; TE-P008లో ప్రమేయం/ఆర్గ్యుమెంట్ పదజాలాన్ని; TE-P027లో పదం, చరం, తర్కశాస్త్ర వివరణను ప్రత్యక్షంగా చూశాం. ఏ పేజీ చర్చ్--రోసర్ లక్షణం, నియతీకరణ లేదా గణిత జాలక పద్ధతిని నేరుగా బోధించదు. OLP-0368లోని రెండు తగ్గింపు మార్గాలకు ఉమ్మడి దిగువ పదం ఉనికి అనే నిర్వచనమే ప్రత్యేక అర్థాన్ని నియంత్రిస్తుంది; మూల బీటా విభాగంలోని TE-T078, TE-T087 ఎంపికలతో నియత రూపం/తగ్గింపు పదజాలాన్ని కొనసాగించాం. OLTELAMCRDAP-001–002 మూల అతివ్యాప్తి, పేరులేని అంచు పదాలను పక్కనే ప్రకటిస్తాయి. చర్చ్, రోసర్ మూల వ్యక్తి పేర్ల ధ్వన్యనుకరణ; CR, M, N, P_i, Q_j, సంబంధ మాక్రోలు గణిత గుర్తింపులుగా యథాతథం.
+
+- Alternatives: చర్చ్--రోసర్ అనే మూల పేరుతో, రెండు మార్గాలకు ఉమ్మడి దిగువ పదం అనే నిర్వచనంతో లక్షణాన్ని ఇవ్వడం (ఎంపిక); ప్రతి పదం తప్పక నియత రూపానికి చేరుతుందని చర్చ్--రోసర్ లక్షణం నుంచి తేల్చడం (తిరస్కరణ); జాలకాన్ని అలంకార రూపకంగా మాత్రమే తీసుకుని N సూచికల వరుస/నిలువు అర్థాన్ని వదలడం (తిరస్కరణ); జాలక అంచులలో మూలంలో లేని P,Q పేర్లను నిర్వచించకుండా కొనసాగించడం (తిరస్కరణ)
+
+- Uncertainty: గణిత షరతులు మూల నిర్వచనం, జాలక వాదనలో నిర్దిష్టం. కానీ చర్చ్--రోసర్ అనే విదేశీ వ్యక్తి పేరుకు, జాలకం అనే ఉపమానానికి ప్రత్యక్ష స్థానిక లాంబ్డా-కలనశాస్త్ర సాక్ష్యం లేదు; నామకరణం తాత్కాలికం. ఈ విభాగం ప్రతి పదానికి నియత రూపం ఉందని చెప్పదు.
+
+- Please double-check: Please double-check whether “చర్చ్--రోసర్ లక్షణం / నియత రూపపు అనన్యత / తగ్గింపు మార్గాలను కలిపే జాలకం” is idiomatic and technically standard for “Church--Rosser property / unique normal form / grid of joining reductions” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -9847,3 +9871,51 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: నిరూపణలో ext మాక్రోను ఒకే విధంగా వాడటం నిర్వచన, సిద్ధాంత సంకేతాలతో సరిపోతుందా; సంబంధం యొక్క భావాన్ని మార్చలేదా?
+
+## REV-OLTELAMCRDAP-001 — OLTELAMCRDAP-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: qualified the explanatory uniqueness claim as conditional on a final value existing, with adjacent Telugu disclosure
+
+- Exact implementation: OLP-0368; lambda-calculus/church-rosser/definitions-and-properties; lines 22-26, contrasted with lines 35-49 ↔ translation/content/lambda-calculus/church-rosser/definitions-and-properties.tex:29 (OLP-0368-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMCRDAP-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: qualified the explanatory uniqueness claim as conditional on a final value existing, with adjacent Telugu disclosure
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: రెండు తగ్గింపు మార్గాలు తిరిగి కలవడమనే లక్షణం తుది విలువ ఉనికిని కాదు, ఏదైనా ఉంటే దాని అనన్యతను మాత్రమే ఇస్తుందని మొదటి వివరణ స్పష్టంచేస్తుందా?
+
+## REV-OLTELAMCRDAP-002 — OLTELAMCRDAP-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: corrected the two undefined terminal endpoint names to P_m and Q_n, with adjacent Telugu disclosure
+
+- Exact implementation: OLP-0368; lambda-calculus/church-rosser/definitions-and-properties; lines 57-82, especially 58-61, 69-72, 80-82 ↔ translation/content/lambda-calculus/church-rosser/definitions-and-properties.tex:91 (OLP-0368-B015); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMCRDAP-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: corrected the two undefined terminal endpoint names to P_m and Q_n, with adjacent Telugu disclosure
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: జాలక సరిహద్దు నిర్వచనాల నుంచి N_{m,0}=P_m, N_{0,n}=Q_n అని వస్తుందని, మూల P/Q పేర్లను అంతకుమించి ఏదీ మార్చకుండా సరిచేశామా?
