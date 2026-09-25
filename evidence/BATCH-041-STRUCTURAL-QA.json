@@ -1,0 +1,1101 @@
+{
+  "schema": "telugu-openlogic-batch-qa/1",
+  "generated_utc": "2026-09-25T01:31:24.017Z",
+  "note": "Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Text/intertext/mbox prose is masked; nested inline math is compared per clause independently of language-specific word order.",
+  "units": [
+    {
+      "unit_id": "OLP-0356",
+      "source_path": "content/lambda-calculus/syntax/syntax.tex",
+      "source_sha256": "8d4b46380a30f99e21a4eff935d0e8b3a5c23655709070cdd8aa5c63be62327e",
+      "translation_sha256": "915f234bd9795e01579e78ba51605f33a8968effe59575b9f385f5e4a9ffd727",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olimport{terms}",
+        "\\olimport{unique-readability}",
+        "\\olimport{abbreviated-syntax}",
+        "\\olimport{free-variables}",
+        "\\olimport{substitution}",
+        "\\olimport{alpha}",
+        "\\olimport{de-bruijn}",
+        "\\olimport{term-revisited}",
+        "\\olimport{beta}",
+        "\\olimport{eta}"
+      ],
+      "identifiers_target_core": [
+        "\\olimport{terms}",
+        "\\olimport{unique-readability}",
+        "\\olimport{abbreviated-syntax}",
+        "\\olimport{free-variables}",
+        "\\olimport{substitution}",
+        "\\olimport{alpha}",
+        "\\olimport{de-bruijn}",
+        "\\olimport{term-revisited}",
+        "\\olimport{beta}",
+        "\\olimport{eta}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [],
+      "math_target_core": [],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 13,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: syntax",
+          "target_start": "% Part: lambda-calculus\n% Chapter: syntax"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-chapter]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olchapter{lam}{syn}{Syntax}",
+          "target_start": "\\olchapter{lam}{syn}{వాక్యనిర్మాణం}"
+        },
+        {
+          "index": 5,
+          "source_start": "\\olimport{terms}",
+          "target_start": "\\olimport{terms}"
+        },
+        {
+          "index": 6,
+          "source_start": "\\olimport{unique-readability}",
+          "target_start": "\\olimport{unique-readability}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\olimport{abbreviated-syntax}",
+          "target_start": "\\olimport{abbreviated-syntax}"
+        },
+        {
+          "index": 8,
+          "source_start": "\\olimport{free-variables}",
+          "target_start": "\\olimport{free-variables}"
+        },
+        {
+          "index": 9,
+          "source_start": "\\olimport{substitution}",
+          "target_start": "\\olimport{substitution}"
+        },
+        {
+          "index": 10,
+          "source_start": "\\olimport{alpha}",
+          "target_start": "\\olimport{alpha}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\olimport{de-bruijn}",
+          "target_start": "\\olimport{de-bruijn}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\olimport{term-revisited}",
+          "target_start": "\\olimport{term-revisited}"
+        },
+        {
+          "index": 13,
+          "source_start": "\\olimport{beta}",
+          "target_start": "\\olimport{beta}"
+        },
+        {
+          "index": 14,
+          "source_start": "\\olimport{eta}",
+          "target_start": "\\olimport{eta}"
+        },
+        {
+          "index": 15,
+          "source_start": "\\OLEndChapterHook",
+          "target_start": "\\OLEndChapterHook"
+        },
+        {
+          "index": 16,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{lam}{syn}",
+        "\\olimport{terms}",
+        "\\olimport{unique-readability}",
+        "\\olimport{abbreviated-syntax}",
+        "\\olimport{free-variables}",
+        "\\olimport{substitution}",
+        "\\olimport{alpha}",
+        "\\olimport{de-bruijn}",
+        "\\olimport{term-revisited}",
+        "\\olimport{beta}",
+        "\\olimport{eta}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-chapter]{subfiles}",
+        "\\olchapter{lam}{syn}",
+        "\\olimport{terms}",
+        "\\olimport{unique-readability}",
+        "\\olimport{abbreviated-syntax}",
+        "\\olimport{free-variables}",
+        "\\olimport{substitution}",
+        "\\olimport{alpha}",
+        "\\olimport{de-bruijn}",
+        "\\olimport{term-revisited}",
+        "\\olimport{beta}",
+        "\\olimport{eta}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0357",
+      "source_path": "content/lambda-calculus/syntax/terms.tex",
+      "source_sha256": "145fce509501861988851ee8a42591b3ec7e2acd4f570f34004c5c459b491ecb",
+      "translation_sha256": "99ecefd1f74efdc848cbbda02f73393b8f1eb13ea285d592c882a7291c26ee4e",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{syn}{trm}",
+        "\\ollabel{defn:term}",
+        "\\ollabel{defn:term-var}",
+        "\\ollabel{defn:term-abs}",
+        "\\ollabel{defn:term-app}",
+        "\\olref{defn:term-abs}",
+        "\\olref{defn:term-app}",
+        "\\olref{defn:term}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{syn}{trm}",
+        "\\ollabel{defn:term}",
+        "\\ollabel{defn:term-var}",
+        "\\ollabel{defn:term-abs}",
+        "\\ollabel{defn:term-app}",
+        "\\olref{defn:term-abs}",
+        "\\olref{defn:term-app}",
+        "\\olref{defn:term}"
+      ],
+      "tokens_source": {
+        "!!{parameter}": 2
+      },
+      "tokens_target": {
+        "!!{parameter}": 2
+      },
+      "math_source": [
+        "$\\Obj{v_0}$",
+        "$\\Obj{v_1}$",
+        "$\\lambd$",
+        "$x$",
+        "$y$",
+        "$z$",
+        "$M$",
+        "$N$",
+        "$P$",
+        "$x$",
+        "$x$",
+        "$x$",
+        "$M$",
+        "$(\\lambd[x][M])$",
+        "$M$",
+        "$N$",
+        "$(MN)$",
+        "$(\\lambd[x][M])$",
+        "$x$",
+        "$\\lambd[x]$",
+        "$(MN)$",
+        "$(\\lambd[x][((\\lambd[x][x])(\\lambd[x][(xx)]))])$",
+        "$(\\lambd[x][((\\lambd[x][x])(\\lambd[x][(xx)]))])$",
+        "$x$",
+        "$((\\lambd[x][x])(\\lambd[x][(xx)]))$",
+        "$(\\lambd[g][(\\lambd[x][(g(xx))])(\\lambd[x][(g(xx))])])$"
+      ],
+      "math_target_core": [
+        "$\\Obj{v_0}$",
+        "$\\Obj{v_1}$",
+        "$\\lambd$",
+        "$x$",
+        "$y$",
+        "$z$",
+        "$M$",
+        "$N$",
+        "$P$",
+        "$x$",
+        "$x$",
+        "$x$",
+        "$M$",
+        "$(\\lambd[x][M])$",
+        "$M$",
+        "$N$",
+        "$(MN)$",
+        "$(\\lambd[x][M])$",
+        "$\\lambd[x]$",
+        "$x$",
+        "$(MN)$",
+        "$(\\lambd[x][((\\lambd[x][x])(\\lambd[x][(xx)]))])$",
+        "$(\\lambd[x][((\\lambd[x][x])(\\lambd[x][(xx)]))])$",
+        "$x$",
+        "$((\\lambd[x][x])(\\lambd[x][(xx)]))$",
+        "$(\\lambd[g][(\\lambd[x][(g(xx))])(\\lambd[x][(g(xx))])])$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [
+        "OLTELAMSYN-001",
+        "OLTELAMSYN-002"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 945,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: syntax\n% Section: terms",
+          "target_start": "% Part: lambda-calculus\n% Chapter: syntax\n% Section: terms"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{syn}{trm}\n\\olsection{Terms}",
+          "target_start": "\\olfileid{lam}{syn}{trm}\n\\olsection{పదాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "The terms of the lambda calculus are built up inductively from an\ninfinite supply of variables $\\Obj{v_0}$, $\\",
+          "target_start": "లాంబ్డా కలనశాస్త్రపు పదాలను అనంతంగా లభించే చరాలు $\\Obj{v_0}$,\n$\\Obj{v_1}$, \\dots, ``$\\lambd$'' అనే సంకేతం, కుం"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}[Terms] \\ollabel{defn:term}\nThe set of \\emph{terms} of the lambda calculus is defined inductively ",
+          "target_start": "\\begin{defn}[పదాలు] \\ollabel{defn:term}\nలాంబ్డా కలనశాస్త్రపు \\emph{పదాల} సమితిని ఆగమన పద్ధతిలో ఇలా నిర్వచిస్తా"
+        },
+        {
+          "index": 7,
+          "source_start": "If a term $(\\lambd[x][M])$ is formed according to\n\\olref{defn:term-abs} we say it is the result of an\n\\emph{ab",
+          "target_start": "పదం $(\\lambd[x][M])$ను \\olref{defn:term-abs} ప్రకారం నిర్మిస్తే,\nఅది \\emph{అమూర్తీకరణ} ఫలితమని అంటాం; $\\lambd["
+        },
+        {
+          "index": 8,
+          "source_start": "The terms defined above are fully parenthesized. This can get rather\ncumbersome, as the term\n$(\\lambd[x][((\\la",
+          "target_start": "పైన నిర్వచించిన పదాల్లో అన్ని కుండలీకరణ చిహ్నాలూ స్పష్టంగా ఉంటాయి.\nపదం $(\\lambd[x][((\\lambd[x][x])(\\lambd[x][("
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{prob}\nDescribe the formation of $(\\lambd[g][(\\lambd[x][(g (x x))])\n  (\\lambd[x][(g (x x))])])$.\n\\end{pr",
+          "target_start": "\\begin{prob}\n$(\\lambd[g][(\\lambd[x][(g (x x))])\n  (\\lambd[x][(g (x x))])])$ ఎలా నిర్మించబడిందో వివరించండి.\n\\en"
+        },
+        {
+          "index": 10,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{syn}{trm}",
+        "\\ollabel{defn:term}",
+        "\\ollabel{defn:term-var}",
+        "\\ollabel{defn:term-abs}",
+        "\\ollabel{defn:term-app}",
+        "\\olref{defn:term-abs}",
+        "\\olref{defn:term-app}",
+        "\\olref{defn:term}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{syn}{trm}",
+        "\\ollabel{defn:term}",
+        "\\ollabel{defn:term-var}",
+        "\\ollabel{defn:term-abs}",
+        "\\ollabel{defn:term-app}",
+        "\\olref{defn:term-abs}",
+        "\\olref{defn:term-app}",
+        "\\olref{defn:term}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0358",
+      "source_path": "content/lambda-calculus/syntax/unique-readability.tex",
+      "source_sha256": "a11a3822afc6fd0e95f81b2040023d553f0682b5b099b7c75511d4b2a720b7f7",
+      "translation_sha256": "5fe4b956f796555e90704de9e59751671e1aba3e403500fcf8136ae0ade5cf6c",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{syn}{unq}",
+        "\\olref[trm]{defn:term}",
+        "\\ollabel{lem:term-start}",
+        "\\olref[trm]{defn:term}",
+        "\\olref[trm]{defn:term-var}",
+        "\\olref[trm]{defn:term-abs}",
+        "\\olref[trm]{defn:term-app}",
+        "\\ollabel{lem:app-start}",
+        "\\olref{lem:term-start}",
+        "\\ollabel{lem:initial}",
+        "\\olref[lam][syn][unq]{lem:initial}",
+        "\\ollabel{prop:unq}",
+        "\\olref[trm]{defn:term}",
+        "\\olref[trm]{defn:term-var}",
+        "\\olref[trm]{defn:term}",
+        "\\olref[trm]{defn:term-var}",
+        "\\olref{lem:app-start}",
+        "\\olref[trm]{defn:term}",
+        "\\olref[trm]{defn:term-var}",
+        "\\olref{lem:term-start}",
+        "\\olref{lem:initial}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{syn}{unq}",
+        "\\olref[trm]{defn:term}",
+        "\\ollabel{lem:term-start}",
+        "\\olref[trm]{defn:term}",
+        "\\olref[trm]{defn:term-var}",
+        "\\olref[trm]{defn:term-abs}",
+        "\\olref[trm]{defn:term-app}",
+        "\\ollabel{lem:app-start}",
+        "\\olref{lem:term-start}",
+        "\\ollabel{lem:initial}",
+        "\\olref[lam][syn][unq]{lem:initial}",
+        "\\ollabel{prop:unq}",
+        "\\olref[trm]{defn:term}",
+        "\\olref[trm]{defn:term-var}",
+        "\\olref[trm]{defn:term}",
+        "\\olref[trm]{defn:term-var}",
+        "\\olref{lem:app-start}",
+        "\\olref[trm]{defn:term}",
+        "\\olref[trm]{defn:term-var}",
+        "\\olref{lem:term-start}",
+        "\\olref{lem:initial}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$M$",
+        "$(PQ)$",
+        "$P$",
+        "$M$",
+        "$M$",
+        "$x$",
+        "$x$",
+        "$M$",
+        "$M$",
+        "$M$",
+        "$(\\lambd[x][N])$",
+        "$x$",
+        "$N$",
+        "$M$",
+        "$N$",
+        "$N$",
+        "$M$",
+        "$(PQ)$",
+        "$P$",
+        "$Q$",
+        "$P$",
+        "$\\lambd$",
+        "$(PQ)$",
+        "$M$",
+        "$(P'Q')$",
+        "$P$",
+        "$P'$",
+        "$P$",
+        "$Q$",
+        "$P$",
+        "$Q$",
+        "$M$",
+        "$x$",
+        "$x$",
+        "$M$",
+        "$(\\lambd[x][N])$",
+        "$x$",
+        "$N$",
+        "$M$",
+        "$(PQ)$",
+        "$P$",
+        "$Q$",
+        "$M$"
+      ],
+      "math_target_core": [
+        "$M$",
+        "$(PQ)$",
+        "$P$",
+        "$M$",
+        "$M$",
+        "$x$",
+        "$x$",
+        "$M$",
+        "$M$",
+        "$M$",
+        "$(\\lambd[x][N])$",
+        "$x$",
+        "$N$",
+        "$M$",
+        "$N$",
+        "$N$",
+        "$M$",
+        "$(PQ)$",
+        "$P$",
+        "$Q$",
+        "$P$",
+        "$\\lambd$",
+        "$(PQ)$",
+        "$M$",
+        "$(P'Q')$",
+        "$P$",
+        "$P'$",
+        "$P$",
+        "$Q$",
+        "$P$",
+        "$Q$",
+        "$M$",
+        "$x$",
+        "$x$",
+        "$M$",
+        "$(\\lambd[x][N])$",
+        "$x$",
+        "$N$",
+        "$M$",
+        "$(PQ)$",
+        "$P$",
+        "$Q$",
+        "$M$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 1709,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: unique-readability",
+          "target_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: unique-readability"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{syn}{unq}\n\\olsection{Unique Readability}",
+          "target_start": "\\olfileid{lam}{syn}{unq}\n\\olsection{ఏకార్థ పఠనీయత}"
+        },
+        {
+          "index": 5,
+          "source_start": "We may wonder if for each term there is a unique way of forming it,\nand there is.  For each lambda term there ",
+          "target_start": "ప్రతి పదాన్ని నిర్మించడానికి ఒకే మార్గం ఉందా అని అడగవచ్చు; నిజంగానే\nఉంది. ప్రతి లాంబ్డా పదాన్ని నిర్మించడానికీ"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{lem}\\ollabel{lem:term-start}\nA term starts with either a variable or a parenthesis.\n\\end{lem}",
+          "target_start": "\\begin{lem}\\ollabel{lem:term-start}\nపదం ఒక చరంతో లేదా ఎడమ కుండలీకరణ చిహ్నంతో మొదలవుతుంది.\n\\end{lem}"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{proof}\nSomething counts as a term only if it is constructed according to\n\\olref[trm]{defn:term}. If it ",
+          "target_start": "\\begin{proof}\n\\olref[trm]{defn:term} ప్రకారం నిర్మించినదే పదం అవుతుంది.\n\\olref[trm]{defn:term-var} ఫలితమైతే అద"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{lem}\\ollabel{lem:app-start}\nThe result of an application starts with either two parentheses or a\nparent",
+          "target_start": "\\begin{lem}\\ollabel{lem:app-start}\nప్రయోగం ఫలితం రెండు ఎడమ కుండలీకరణ చిహ్నాలతో లేదా ఒక ఎడమ\nకుండలీకరణ చిహ్నం తర"
+        },
+        {
+          "index": 9,
+          "source_start": "\\begin{proof}\nIf $M$ is the result of an application, it is of the form $(PQ)$, so\nit begins with a parenthesi",
+          "target_start": "\\begin{proof}\n$M$ ప్రయోగం ఫలితమైతే, అది $(PQ)$ రూపంలో ఉంటుంది; కాబట్టి ఎడమ\nకుండలీకరణ చిహ్నంతో మొదలవుతుంది. $P$"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{lem}\\ollabel{lem:initial}\nNo proper initial part of a term is itself a term.\n\\end{lem}",
+          "target_start": "\\begin{lem}\\ollabel{lem:initial}\nఒక పదం యొక్క ఏ నిజ ఆద్యఖండమూ స్వయంగా పదం కాదు.\n\\end{lem}"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{prob}\nProve \\olref[lam][syn][unq]{lem:initial} by induction on the length\nof terms.\n\\end{prob}",
+          "target_start": "\\begin{prob}\nపదాల పొడవుపై ఆగమనం ద్వారా\n\\olref[lam][syn][unq]{lem:initial}ను నిరూపించండి.\n\\end{prob}"
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{prop}[Unique Readability] \\ollabel{prop:unq}\nThere is a unique formation for each term. In other words,",
+          "target_start": "\\begin{prop}[ఏకార్థ పఠనీయత] \\ollabel{prop:unq}\nప్రతి పదానికి ఒక్కటే నిర్మాణం ఉంటుంది. మరో మాటలో, ఒక నిర్మాణం ద"
+        },
+        {
+          "index": 13,
+          "source_start": "\\begin{proof}\n  We prove this by induction on the formation of terms. \n  \\begin{enumerate}\n    \\item $M$ is of",
+          "target_start": "\\begin{proof}\n  పదాల నిర్మాణంపై ఆగమనం ద్వారా నిరూపిస్తాం.\n  \\begin{enumerate}\n    \\item $M$ అనేది $x$ రూపంలో ఉ"
+        },
+        {
+          "index": 14,
+          "source_start": "A more readable paraphrase of the above proposition is as follows:\n\\begin{prop}\n  A term $M$ can only be one o",
+          "target_start": "పైనున్న ప్రతిపాదనను మరింత సులభంగా ఇలా చెప్పవచ్చు:\n\\begin{prop}\n  పదం~$M$ కింది రూపాల్లో ఒకదానిలో మాత్రమే ఉండగల"
+        },
+        {
+          "index": 15,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{syn}{unq}",
+        "\\olref[trm]{defn:term}",
+        "\\ollabel{lem:term-start}",
+        "\\olref[trm]{defn:term}",
+        "\\olref[trm]{defn:term-var}",
+        "\\olref[trm]{defn:term-abs}",
+        "\\olref[trm]{defn:term-app}",
+        "\\ollabel{lem:app-start}",
+        "\\olref{lem:term-start}",
+        "\\ollabel{lem:initial}",
+        "\\olref[lam][syn][unq]{lem:initial}",
+        "\\ollabel{prop:unq}",
+        "\\olref[trm]{defn:term}",
+        "\\olref[trm]{defn:term-var}",
+        "\\olref[trm]{defn:term}",
+        "\\olref[trm]{defn:term-var}",
+        "\\olref{lem:app-start}",
+        "\\olref[trm]{defn:term}",
+        "\\olref[trm]{defn:term-var}",
+        "\\olref{lem:term-start}",
+        "\\olref{lem:initial}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{syn}{unq}",
+        "\\olref[trm]{defn:term}",
+        "\\ollabel{lem:term-start}",
+        "\\olref[trm]{defn:term}",
+        "\\olref[trm]{defn:term-var}",
+        "\\olref[trm]{defn:term-abs}",
+        "\\olref[trm]{defn:term-app}",
+        "\\ollabel{lem:app-start}",
+        "\\olref{lem:term-start}",
+        "\\ollabel{lem:initial}",
+        "\\olref[lam][syn][unq]{lem:initial}",
+        "\\ollabel{prop:unq}",
+        "\\olref[trm]{defn:term}",
+        "\\olref[trm]{defn:term-var}",
+        "\\olref[trm]{defn:term}",
+        "\\olref[trm]{defn:term-var}",
+        "\\olref{lem:app-start}",
+        "\\olref[trm]{defn:term}",
+        "\\olref[trm]{defn:term-var}",
+        "\\olref{lem:term-start}",
+        "\\olref{lem:initial}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0359",
+      "source_path": "content/lambda-calculus/syntax/abbreviated-syntax.tex",
+      "source_sha256": "89683422a361faf74ad312ab557f265f94eb9541fcc3bd3fadbfaf1437bd9c46",
+      "translation_sha256": "07b4bdb5fac9c1befe28f5a7d0b6ce34855a3b228b56496cc1f25b2a21ce0b1b",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{syn}{abb}",
+        "\\olref[trm]{defn:term}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{syn}{abb}",
+        "\\olref[trm]{defn:term}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$M$",
+        "$N$",
+        "$P$",
+        "$Q$",
+        "$MNPQ$",
+        "$(((MN)P)Q)$",
+        "$\\lambd[x][MNP]$",
+        "$(\\lambd[x][MNP])$",
+        "$\\lambd[xyz][M]$",
+        "$\\lambd[x][\\lambd[y][\\lambd[z][M]]]$",
+        "\\[\\lambd[xy][xxyx\\lambd[z][xz]]\\]",
+        "\\[(\\lambd[x][(\\lambd[y][((((xx)y)x)(\\lambd[z][(xz)]))])]).\\]",
+        "$\\lambd[g][(\\lambd[x][g(xx)])\\lambd[x][g(xx)]]$"
+      ],
+      "math_target_core": [
+        "$M$",
+        "$N$",
+        "$P$",
+        "$Q$",
+        "$MNPQ$",
+        "$(((MN)P)Q)$",
+        "$\\lambd[x][MNP]$",
+        "$(\\lambd[x][MNP])$",
+        "$\\lambd[xyz][M]$",
+        "$\\lambd[x][\\lambd[y][\\lambd[z][M]]]$",
+        "\\[\\lambd[xy][xxyx\\lambd[z][xz]]\\]",
+        "\\[(\\lambd[x][(\\lambd[y][((((xx)y)x)(\\lambd[z][(xz)]))])]).\\]",
+        "$\\lambd[g][(\\lambd[x][g(xx)])\\lambd[x][g(xx)]]$"
+      ],
+      "math_exact_multiset_match": true,
+      "math_delta_source_only": [],
+      "math_delta_target_only": [],
+      "declared_source_correction_ids": [
+        "OLTELAMSYN-004"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 621,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: syntax\n% Section: abbreviated-syntax",
+          "target_start": "% Part: lambda-calculus\n% Chapter: syntax\n% Section: abbreviated-syntax"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{syn}{abb}\n\\olsection{Abbreviated Syntax}",
+          "target_start": "\\olfileid{lam}{syn}{abb}\n\\olsection{సంక్షిప్త వాక్యనిర్మాణం}"
+        },
+        {
+          "index": 5,
+          "source_start": "Terms as defined in \\olref[trm]{defn:term} are sometimes cumbersome to\nwrite, so it is useful to introduce a m",
+          "target_start": "\\olref[trm]{defn:term}లో నిర్వచించిన విధంగా పదాలను రాయడం కొన్నిసార్లు\nక్లిష్టమవుతుంది; అందుకే మరింత సంక్షిప్త "
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{enumerate}\n\\item When parentheses are left out, application takes place from left\n  to right. For examp",
+          "target_start": "\\begin{enumerate}\n\\item కుండలీకరణలను వదిలినప్పుడు ప్రయోగం ఎడమ నుంచి కుడికి జరుగుతుంది.\n  ఉదాహరణకు, $M$, $N$, $"
+        },
+        {
+          "index": 7,
+          "source_start": "For example,\n\\[\n\\lambd[xy][xxyx \\lambd[z][xz]]\n\\]\nabbreviates\n\\[\n(\\lambd[x][(\\lambd[y][((((xx)y)x)(\\lambd[z][(",
+          "target_start": "ఉదాహరణకు,\n\\[\n\\lambd[xy][xxyx \\lambd[z][xz]]\n\\]\nఅనేది\n\\[\n(\\lambd[x][(\\lambd[y][((((xx)y)x)(\\lambd[z][(xz)]))])]"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{prob}\nExpand the abbreviated term $\\lambd[g][(\\lambd[x][g (x x)])\n  \\lambd[x][g (x x)]]$.\n\\end{prob}",
+          "target_start": "\\begin{prob}\n$\\lambd[g][(\\lambd[x][g (x x)])\n  \\lambd[x][g (x x)]]$ అనే సంక్షిప్త పదాన్ని పూర్తి రూపంలో రాయండి"
+        },
+        {
+          "index": 9,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{syn}{abb}",
+        "\\olref[trm]{defn:term}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{syn}{abb}",
+        "\\olref[trm]{defn:term}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    },
+    {
+      "unit_id": "OLP-0360",
+      "source_path": "content/lambda-calculus/syntax/free-variables.tex",
+      "source_sha256": "5443d1f42424315debd308ca068a3f74dde17a2045bc0b71cb94c6d70d53990c",
+      "translation_sha256": "e815b83860f5eb5df75041379a0be0e08e248f8127b06582c2cca08013a5cd3e",
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "paragraph_alignment": true,
+      "structure_match": true,
+      "identifiers_source": [
+        "\\olfileid{lam}{syn}{fv}",
+        "\\ollabel{def:fv}",
+        "\\ollabel{def:fv1}",
+        "\\ollabel{def:fv2}",
+        "\\ollabel{def:fv3}",
+        "\\ollabel{lem:fv}",
+        "\\ollabel{lem:fv-abs}",
+        "\\ollabel{lem:fv-app}",
+        "\\olref[lam][syn][fv]{lem:fv}"
+      ],
+      "identifiers_target_core": [
+        "\\olfileid{lam}{syn}{fv}",
+        "\\ollabel{def:fv}",
+        "\\ollabel{def:fv1}",
+        "\\ollabel{def:fv2}",
+        "\\ollabel{def:fv3}",
+        "\\ollabel{lem:fv}",
+        "\\ollabel{lem:fv-abs}",
+        "\\ollabel{lem:fv-app}",
+        "\\olref[lam][syn][fv]{lem:fv}"
+      ],
+      "tokens_source": {},
+      "tokens_target": {},
+      "math_source": [
+        "$\\lambd[x][M]$",
+        "$M$",
+        "$x$",
+        "$x$",
+        "$M$",
+        "$M$",
+        "$\\lambd[x][N]$",
+        "$x$",
+        "$N$",
+        "$\\lambd[x][N]$",
+        "$\\lambd[x][M]$",
+        "$\\lambd[x]$",
+        "$\\lambd[x][M]$",
+        "$x$",
+        "$M$",
+        "$x$",
+        "$M$",
+        "$\\lambd[x][M]$",
+        "$N$",
+        "$N$",
+        "$\\lambd[x]$",
+        "$x$",
+        "$M$",
+        "$\\lambd[x]$",
+        "$x$",
+        "$\\lambd[x][M]$",
+        "$\\lambd[x]$",
+        "$x$",
+        "$M$",
+        "$\\lambd[x][xy]$",
+        "$x$",
+        "$y$",
+        "$\\lambd[x]$",
+        "$x$",
+        "$\\lambd[x]$",
+        "$y$",
+        "$\\lambd[y]$",
+        "$\\lambd[x][xx]$",
+        "$x$",
+        "$\\lambd[x]$",
+        "$xx$",
+        "$((\\lambd[x][xx])x)$",
+        "$x$",
+        "$\\lambd[x]$",
+        "$\\lambd[x][(\\lambd[x][x])x]$",
+        "$\\lambd[x]$",
+        "$(\\lambd[x][x])x$",
+        "$\\lambd[x]$",
+        "$x$",
+        "$(\\lambd[x][x])x$",
+        "$x$",
+        "$x$",
+        "$\\lambd[x][(\\lambd[x][x])x]$",
+        "$\\lambd[x]$",
+        "$\\lambd[x]$",
+        "$P$",
+        "$\\FV{P}$",
+        "$\\FV{x}=\\{x\\}$",
+        "$\\FV{\\lambd[x][N]}=\\FV{N}\\setminus\\{x\\}$",
+        "$\\FV{PQ}=\\FV{P}\\cup\\FV{Q}$",
+        "$\\lambd[g]$",
+        "$\\lambd[x]$",
+        "$\\lambd[g][(\\lambd[x][g(xx)])\\lambd[x][g(xx)]]$",
+        "$\\lambd[g][(\\lambd[x][g(xx)])\\lambd[x][g(xx)]]$",
+        "$\\FV{\\lambd[x][(\\lambd[y][(\\lambd[z][xy])z])y]}$",
+        "$\\lambd[x][fx]$",
+        "$x$",
+        "$f$",
+        "$f$",
+        "$f$",
+        "$\\lambd[f][\\lambd[x][fx]]$",
+        "$f$",
+        "$f$",
+        "$f$",
+        "$y\\neqx$",
+        "$y\\in\\FV{\\lambd[x][N]}$",
+        "$y\\in\\FV{N}$",
+        "$y\\in\\FV{PQ}$",
+        "$y\\in\\FV{P}$",
+        "$y\\in\\FV{Q}$"
+      ],
+      "math_target_core": [
+        "$\\lambd[x][M]$",
+        "$x$",
+        "$M$",
+        "$M$",
+        "$x$",
+        "$M$",
+        "$\\lambd[x][N]$",
+        "$N$",
+        "$x$",
+        "$\\lambd[x][N]$",
+        "$\\lambd[x][M]$",
+        "$\\lambd[x][M]$",
+        "$\\lambd[x]$",
+        "$M$",
+        "$x$",
+        "$M$",
+        "$x$",
+        "$N$",
+        "$\\lambd[x][M]$",
+        "$M$",
+        "$\\lambd[x]$",
+        "$M$",
+        "$x$",
+        "$\\lambd[x]$",
+        "$\\lambd[x][M]$",
+        "$x$",
+        "$\\lambd[x]$",
+        "$M$",
+        "$x$",
+        "$\\lambd[x][xy]$",
+        "$x$",
+        "$y$",
+        "$\\lambd[x]$",
+        "$x$",
+        "$\\lambd[x]$",
+        "$y$",
+        "$\\lambd[y]$",
+        "$\\lambd[x][xx]$",
+        "$x$",
+        "$\\lambd[x]$",
+        "$xx$",
+        "$((\\lambd[x][xx])x)$",
+        "$x$",
+        "$\\lambd[x]$",
+        "$\\lambd[x][(\\lambd[x][x])x]$",
+        "$\\lambd[x]$",
+        "$(\\lambd[x][x])x$",
+        "$\\lambd[x]$",
+        "$x$",
+        "$(\\lambd[x][x])x$",
+        "$x$",
+        "$\\lambd[x][(\\lambd[x][x])x]$",
+        "$x$",
+        "$\\lambd[x]$",
+        "$\\lambd[x]$",
+        "$P$",
+        "$\\FV{P}$",
+        "$\\FV{x}=\\{x\\}$",
+        "$\\FV{\\lambd[x][N]}=\\FV{N}\\setminus\\{x\\}$",
+        "$\\FV{PQ}=\\FV{P}\\cup\\FV{Q}$",
+        "$\\lambd[g][(\\lambd[x][g(xx)])\\lambd[x][g(xx)]]$",
+        "$\\lambd[g]$",
+        "$\\lambd[x]$",
+        "$\\lambd[g][(\\lambd[x][g(xx)])\\lambd[x][g(xx)]]$",
+        "$\\FV{\\lambd[x][(\\lambd[y][(\\lambd[z][xy])z])y]}$",
+        "$x$",
+        "$f$",
+        "$\\lambd[x][fx]$",
+        "$f$",
+        "$f$",
+        "$\\lambd[f][\\lambd[x][fx]]$",
+        "$f$",
+        "$f$",
+        "$f$",
+        "$y\\neqx$",
+        "$y\\in\\FV{\\lambd[x][N]}$",
+        "$y\\in\\FV{N}$",
+        "$y\\in\\FV{PQ}$",
+        "$y\\in\\FV{P}$",
+        "$y\\in\\FV{Q}$"
+      ],
+      "math_exact_multiset_match": false,
+      "math_delta_source_only": [
+        "$N$"
+      ],
+      "math_delta_target_only": [
+        "$M$"
+      ],
+      "declared_source_correction_ids": [
+        "OLTELAMSYN-003"
+      ],
+      "math_declared_source_correction_match": true,
+      "math_multiset_match": true,
+      "telugu_chars": 2076,
+      "unicode_replacement_char": false,
+      "unpaired_surrogate": false,
+      "blocks": [
+        {
+          "index": 1,
+          "source_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: free-variables",
+          "target_start": "% Part: lambda-calculus\n% Chapter: introduction\n% Section: free-variables"
+        },
+        {
+          "index": 2,
+          "source_start": "\\documentclass[../../../include/open-logic-section]{subfiles}",
+          "target_start": "\\documentclass[../../../include/open-logic-section]{subfiles}"
+        },
+        {
+          "index": 3,
+          "source_start": "\\begin{document}",
+          "target_start": "\\begin{document}"
+        },
+        {
+          "index": 4,
+          "source_start": "\\olfileid{lam}{syn}{fv}\n\\olsection{Free Variables}",
+          "target_start": "\\olfileid{lam}{syn}{fv}\n\\olsection{స్వేచ్ఛా చరాలు}"
+        },
+        {
+          "index": 5,
+          "source_start": "Lambda calculus is about functions, and lambda abstraction is how\nfunctions arise. Intuitively, $\\lambd[x][M]$",
+          "target_start": "లాంబ్డా కలనశాస్త్రం ప్రమేయాలకు సంబంధించినది; లాంబ్డా అమూర్తీకరణ\nద్వారానే ఇక్కడ ప్రమేయాలు ఏర్పడతాయి. సహజార్థంలో"
+        },
+        {
+          "index": 6,
+          "source_start": "\\begin{defn}[Scope]\nIf $\\lambd[x][M]$ occurs inside a term~$N$, then the corresponding\noccurrence of~$N$ is th",
+          "target_start": "\\begin{defn}[పరిధి]\nపదం~$N$లో $\\lambd[x][M]$ సంభవిస్తే, దాని శరీరమైన $M$ యొక్క అనుగుణ\nఘటనే ఆ $\\lambd[x]$ యొక్క"
+        },
+        {
+          "index": 7,
+          "source_start": "\\begin{defn}[Free and bound occurrence]\n  An occurrence of variable $x$ in a term~$M$ is \\emph{free} if it is\n",
+          "target_start": "\\begin{defn}[స్వేచ్ఛా, బద్ధ ఘటన]\n  పదం~$M$లో చరం~$x$ యొక్క ఒక ఘటన ఏ $\\lambd[x]$ పరిధిలోనూ\n  లేకపోతే అది \\emph{"
+        },
+        {
+          "index": 8,
+          "source_start": "\\begin{ex}\n  In $\\lambd[x][x y]$, both $x$ and $y$ are in the scope of $\\lambd[x]$,\n  so $x$ is bound by $\\lam",
+          "target_start": "\\begin{ex}\n  $\\lambd[x][x y]$లో $x$, $y$ రెండూ $\\lambd[x]$ పరిధిలో ఉన్నాయి;\n  అందువల్ల $x$ను $\\lambd[x]$ బంధిస"
+        },
+        {
+          "index": 9,
+          "source_start": "For a term $P$, we can check all variable occurrences in it and get a\nset of free variables. This set is denot",
+          "target_start": "పదం~$P$లోని అన్ని చర ఘటనలను పరిశీలిస్తే, స్వేచ్ఛా చరాల సమితి\nలభిస్తుంది. ఆ సమితిని $\\FV{P}$తో సూచిస్తాం; దానిక"
+        },
+        {
+          "index": 10,
+          "source_start": "\\begin{defn}[Free variables of a term] \\ollabel{def:fv}\n  The set of \\emph{free variables} of a term is define",
+          "target_start": "\\begin{defn}[పదం యొక్క స్వేచ్ఛా చరాలు] \\ollabel{def:fv}\n  పదం యొక్క \\emph{స్వేచ్ఛా చరాల} సమితిని ఆగమన పద్ధతిలో"
+        },
+        {
+          "index": 11,
+          "source_start": "\\begin{prob}\n  \\begin{enumerate}\n  \\item Identify the scopes of $\\lambd[g]$ and the two $\\lambd[x]$ in\n    thi",
+          "target_start": "\\begin{prob}\n  \\begin{enumerate}\n  \\item $\\lambd[g][(\\lambd[x][g (x x)]) \\lambd[x][g (x x)]]$\n    అనే పదంలోని "
+        },
+        {
+          "index": 12,
+          "source_start": "\\begin{explain}\nA free variable is like a reference to the outside world (the\n\\emph{environment}), and a term ",
+          "target_start": "\\begin{explain}\nస్వేచ్ఛా చరం బయటి ప్రపంచానికి (\\emph{పరిసరానికి}) ఉన్న సూచన\nవంటిది. స్వేచ్ఛా చరాలు గల పదాన్ని "
+        },
+        {
+          "index": 13,
+          "source_start": "If we apply abstraction to this term, we get $\\lambd[f][\\lambd[x][f\n    x]]$. This term is no longer dependent",
+          "target_start": "ఈ పదంపై అమూర్తీకరణ ప్రయోగిస్తే $\\lambd[f][\\lambd[x][f\n    x]]$ వస్తుంది. ఈ పదం ఇక పరిసరంలోని $f$ చరంపై ఆధారపడద"
+        },
+        {
+          "index": 14,
+          "source_start": "\\begin{defn}[Closed term, combinator]\n  A term with no free variables is called a \\emph{closed term}, or a\n  \\",
+          "target_start": "\\begin{defn}[సంవృత పదం, సంయోజకం]\n  స్వేచ్ఛా చరాలు లేని పదాన్ని \\emph{సంవృత పదం} లేదా\n  \\emph{సంయోజకం} అంటాం.\n\\"
+        },
+        {
+          "index": 15,
+          "source_start": "\\begin{lem}\\ollabel{lem:fv}\n  \\begin{enumerate}\n    \\item \\ollabel{lem:fv-abs} If $y \\neq x$, then $y \\in\n    ",
+          "target_start": "\\begin{lem}\\ollabel{lem:fv}\n  \\begin{enumerate}\n    \\item \\ollabel{lem:fv-abs} $y \\neq x$ అయితే, $y \\in\n      "
+        },
+        {
+          "index": 16,
+          "source_start": "\\begin{proof}\n  Exercise.\n\\end{proof}",
+          "target_start": "\\begin{proof}\n  సాధన.\n\\end{proof}"
+        },
+        {
+          "index": 17,
+          "source_start": "\\begin{prob}\n  Prove \\olref[lam][syn][fv]{lem:fv}.\n\\end{prob}",
+          "target_start": "\\begin{prob}\n  \\olref[lam][syn][fv]{lem:fv}ను నిరూపించండి.\n\\end{prob}"
+        },
+        {
+          "index": 18,
+          "source_start": "\\end{document}",
+          "target_start": "\\end{document}"
+        }
+      ],
+      "token_parity": true,
+      "protected_source": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{syn}{fv}",
+        "\\ollabel{def:fv}",
+        "\\ollabel{def:fv1}",
+        "\\ollabel{def:fv2}",
+        "\\ollabel{def:fv3}",
+        "\\ollabel{lem:fv}",
+        "\\ollabel{lem:fv-abs}",
+        "\\ollabel{lem:fv-app}",
+        "\\olref[lam][syn][fv]{lem:fv}"
+      ],
+      "protected_target_core": [
+        "\\documentclass[../../../include/open-logic-section]{subfiles}",
+        "\\olfileid{lam}{syn}{fv}",
+        "\\ollabel{def:fv}",
+        "\\ollabel{def:fv1}",
+        "\\ollabel{def:fv2}",
+        "\\ollabel{def:fv3}",
+        "\\ollabel{lem:fv}",
+        "\\ollabel{lem:fv-abs}",
+        "\\ollabel{lem:fv-app}",
+        "\\olref[lam][syn][fv]{lem:fv}"
+      ],
+      "protected_identifier_exact_match": true,
+      "protected_identifier_delta_source_only": [],
+      "protected_identifier_delta_target_only": [],
+      "protected_identifier_declared_source_correction_match": true,
+      "protected_identifier_parity": true
+    }
+  ]
+}

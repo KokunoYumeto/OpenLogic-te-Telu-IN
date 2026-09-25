@@ -1,0 +1,73 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTELAMSYN-20260925",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": ["OLP-0356", "OLP-0357", "OLP-0358", "OLP-0359", "OLP-0360"],
+    "finding_count": 4
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTELAMSYN-001",
+      "unit_id": "OLP-0357",
+      "classification": "confirmed_local_spelling_error_in_metavariable_designation",
+      "source": {
+        "path": "content/lambda-calculus/syntax/terms.tex",
+        "bytes": 1973,
+        "sha256": "145fce509501861988851ee8a42591b3ec7e2acd4f570f34004c5c459b491ecb",
+        "locator": "line 15, metavariables for terms"
+      },
+      "finding": "The verb 'desginate' is a misspelling of 'designate'.",
+      "controlling_evidence": "The sentence pairs x, y, z as names for variables with M, N, P as names for terms; both clauses use the same designate sense.",
+      "required_translation_handling": "Translate the intended designation of term metavariables and disclose OLTELAMSYN-001 adjacent to the passage."
+    },
+    {
+      "finding_id": "OLTELAMSYN-002",
+      "unit_id": "OLP-0357",
+      "classification": "confirmed_local_spelling_error_in_parenthesis_example",
+      "source": {
+        "path": "content/lambda-calculus/syntax/terms.tex",
+        "bytes": 1973,
+        "sha256": "145fce509501861988851ee8a42591b3ec7e2acd4f570f34004c5c459b491ecb",
+        "locator": "lines 35-37, fully parenthesized example"
+      },
+      "finding": "The verb 'demnostrates' is a misspelling of 'demonstrates'.",
+      "controlling_evidence": "The following example explicitly illustrates how cumbersome full parenthesization can be; no change to the displayed term is needed.",
+      "required_translation_handling": "Translate the intended 'shows/demonstrates' sense, preserve the exact term and disclose OLTELAMSYN-002 adjacent to the passage."
+    },
+    {
+      "finding_id": "OLTELAMSYN-003",
+      "unit_id": "OLP-0360",
+      "classification": "confirmed_scope_body_misreference",
+      "source": {
+        "path": "content/lambda-calculus/syntax/free-variables.tex",
+        "bytes": 4582,
+        "sha256": "5443d1f42424315debd308ca068a3f74dde17a2045bc0b71cb94c6d70d53990c",
+        "locator": "lines 22-25, definition of scope"
+      },
+      "finding": "After specifying an occurrence of lambda x.M inside N, the source calls the corresponding occurrence of N the scope of lambda x. The abstraction's body M is the scope.",
+      "controlling_evidence": "The formation clause for abstraction is lambda x.M, and the same section's nested examples identify each body's occurrence rather than the whole ambient term as the binder's scope.",
+      "required_translation_handling": "Use the corresponding occurrence of M within N and disclose OLTELAMSYN-003 adjacent to the definition."
+    },
+    {
+      "finding_id": "OLTELAMSYN-004",
+      "unit_id": "OLP-0359",
+      "classification": "confirmed_local_preposition_typo_in_example_introduction",
+      "source": {
+        "path": "content/lambda-calculus/syntax/abbreviated-syntax.tex",
+        "bytes": 1290,
+        "sha256": "89683422a361faf74ad312ab557f265f94eb9541fcc3bd3fadbfaf1437bd9c46",
+        "locator": "lines 22-24, second abbreviation convention"
+      },
+      "finding": "The sentence says 'From example' where the context requires 'For example'.",
+      "controlling_evidence": "The same item immediately gives a concrete lambda abstraction whose widest scope is being illustrated.",
+      "required_translation_handling": "Use the intended example introducer and disclose OLTELAMSYN-004 adjacent to the convention."
+    }
+  ]
+}

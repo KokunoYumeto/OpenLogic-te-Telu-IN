@@ -1,0 +1,53 @@
+% Part: lambda-calculus
+% Chapter: syntax
+% Section: terms
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{syn}{trm}
+\olsection{పదాలు}
+
+లాంబ్డా కలనశాస్త్రపు పదాలను అనంతంగా లభించే చరాలు $\Obj{v_0}$,
+$\Obj{v_1}$, \dots, ``$\lambd$'' అనే సంకేతం, కుండలీకరణ చిహ్నాల
+నుంచి ఆగమన పద్ధతిలో నిర్మిస్తాం. చరాలను సూచించడానికి $x$, $y$, $z$,
+\dots{}లను, పదాలను సూచించడానికి $M$, $N$, $P$, \dots{}లను వాడతాం.
+\sourcecorrection{OLTELAMSYN-001}{ఆంగ్ల మూలంలో పదాలను సూచించే వాక్యంలో ``desginate'' అని ఉంది. సందర్భం నిర్ణయించే ``designate'' అర్థాన్ని అనువదించాం.}
+
+\begin{defn}[పదాలు] \ollabel{defn:term}
+లాంబ్డా కలనశాస్త్రపు \emph{పదాల} సమితిని ఆగమన పద్ధతిలో ఇలా నిర్వచిస్తాం:
+\begin{enumerate}
+  \item \ollabel{defn:term-var} $x$ ఒక చరం అయితే, $x$ ఒక పదం.
+  \item \ollabel{defn:term-abs} $x$ ఒక చరమూ, $M$ ఒక పదమూ అయితే,
+    $(\lambd[x][M])$ ఒక పదం.
+  \item \ollabel{defn:term-app} $M$, $N$ రెండూ పదాలైతే,
+    $(MN)$ ఒక పదం.
+\end{enumerate}
+\end{defn}
+
+పదం $(\lambd[x][M])$ను \olref{defn:term-abs} ప్రకారం నిర్మిస్తే,
+అది \emph{అమూర్తీకరణ} ఫలితమని అంటాం; $\lambd[x]$లోని $x$ను
+\emph{\tetoken{పరామితి}{!!{parameter}}} అంటాం.
+\olref{defn:term-app} ప్రకారం ఏర్పడిన పదం $(MN)$ ఒక
+\emph{ప్రయోగం} ఫలితం.
+
+పైన నిర్వచించిన పదాల్లో అన్ని కుండలీకరణ చిహ్నాలూ స్పష్టంగా ఉంటాయి.
+పదం $(\lambd[x][((\lambd[x][x])(\lambd[x][(xx)]))])$ చూపినట్లు, ఇలా
+రాయడం కొంత క్లిష్టమవుతుంది.
+\sourcecorrection{OLTELAMSYN-002}{ఆంగ్ల మూలంలో ``demnostrates'' అనే అక్షరక్రమ దోషం ఉంది. ఆ పదం ఉద్దేశించిన ``demonstrates'' అర్థాన్ని అనువదించాం.}
+కుండలీకరణలను వదిలివేయడానికి కొన్ని సంప్రదాయాలను ప్రవేశపెడతాం.
+అయితే, అధికారిక నిర్వచనం వల్ల \olref{defn:term} ప్రకారం ఒక పదం
+ఎలా నిర్మించబడిందో సులభంగా గుర్తించవచ్చు. ఉదాహరణకు,
+$(\lambd[x][((\lambd[x][x])(\lambd[x][(xx)]))])$ నిర్మాణంలోని చివరి
+దశ, \tetoken{పరామితి}{!!{parameter}}~$x$ గల అమూర్తీకరణ అయి ఉండాలి.
+అది $((\lambd[x][x])(\lambd[x][(xx)]))$ అనే పదంపై అమూర్తీకరణ
+చేయడం వల్ల వస్తుంది; ఆ పదం రెండు పదాల ప్రయోగం. ఆ రెండింటిలో ప్రతి
+పదమూ అమూర్తీకరణ ఫలితమే; ఇదే విధంగా నిర్మాణాన్ని వెనక్కి అనుసరించవచ్చు.
+
+\begin{prob}
+$(\lambd[g][(\lambd[x][(g (x x))])
+  (\lambd[x][(g (x x))])])$ ఎలా నిర్మించబడిందో వివరించండి.
+\end{prob}
+
+\end{document}

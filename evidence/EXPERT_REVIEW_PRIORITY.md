@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 352 of 722 draft units**. This view selects 349 of 375 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 357 of 722 draft units**. This view selects 353 of 380 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -3493,3 +3493,43 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0347; lambda-calculus/introduction/currying; translation/content/lambda-calculus/introduction/currying.tex:53-70; printed/PDF page pending
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMINT-001 is mathematically precise and idiomatic.
+
+## REV-OLTELAMSYN-001 — OLTELAMSYN-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: translated the intended designate sense; adjacent sourcecorrection discloses the source spelling error
+
+- Occurrences: OLP-0357; lambda-calculus/syntax/terms; translation/content/lambda-calculus/syntax/terms.tex:12-16; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMSYN-001 is mathematically precise and idiomatic.
+
+## REV-OLTELAMSYN-002 — OLTELAMSYN-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: translated the intended demonstrates sense and preserved the example term; adjacent sourcecorrection discloses the source spelling error
+
+- Occurrences: OLP-0357; lambda-calculus/syntax/terms; translation/content/lambda-calculus/syntax/terms.tex:35-38; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMSYN-002 is mathematically precise and idiomatic.
+
+## REV-OLTELAMSYN-003 — OLTELAMSYN-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used the occurrence of M as the scope of lambda x and disclosed the repair adjacent to the definition
+
+- Occurrences: OLP-0360; lambda-calculus/syntax/free-variables; translation/content/lambda-calculus/syntax/free-variables.tex:22-26; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMSYN-003 is mathematically precise and idiomatic.
+
+## REV-OLTELAMSYN-004 — OLTELAMSYN-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: used the intended for-example sense; adjacent sourcecorrection discloses the wording error
+
+- Occurrences: OLP-0359; lambda-calculus/syntax/abbreviated-syntax; translation/content/lambda-calculus/syntax/abbreviated-syntax.tex:23-25; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMSYN-004 is mathematically precise and idiomatic.

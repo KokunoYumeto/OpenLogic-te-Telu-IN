@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 352 of 722 draft units**. This log contains 79 terminology/sense decisions and 296 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 357 of 722 draft units**. This log contains 80 terminology/sense decisions and 300 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -1903,6 +1903,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low semantic uncertainty because the specialized notions are fixed by explicit definitions, reductions and corrected constructions; medium to high nomenclatural uncertainty for Church numeral, lambda-definability, iterator and fixed-point-combinator terminology pending independent native specialist review
 
 - Please double-check: Please double-check whether “లాంబ్డాతో నిర్వచించదగిన అంకగణిత ప్రమేయం / చర్చ్ సంఖ్యాంకం, పునరావర్తకం / సంయుక్తం, ఆదిమ పునరావృత్తి కింద సంవృతత / స్థిరబిందు సంయోజకం / కనిష్ఠీకరణ” is idiomatic and technically standard for “lambda-definable arithmetical function / Church numeral and iterator / closure under composition and primitive recursion / fixed-point combinator / minimization” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T080 — lambda-calculus term and formation / abstraction parameter / unique readability / abbreviated syntax / application association and widest abstraction scope / free and bound occurrence / scope of abstraction / free-variable set / environment / closed term and combinator
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: moderate / standard
+
+- Chosen wording/treatment: లాంబ్డా కలనశాస్త్రపు పదం, నిర్మాణం / అమూర్తీకరణ పరామితి / ఏకార్థ పఠనీయత / సంక్షిప్త వాక్యనిర్మాణం / ఎడమ నుంచి కుడికి ప్రయోగ క్రమం, అమూర్తీకరణకు విస్తృత పరిధి / స్వేచ్ఛా, బద్ధ ఘటన / అమూర్తీకరణ పరిధి / స్వేచ్ఛా చరాల సమితి / పరిసరం / సంవృత పదం, సంయోజకం
+
+- Exact implementation: OLP-0356; lambda-calculus/syntax/syntax; content/lambda-calculus/syntax/syntax.tex:8 ↔ translation/content/lambda-calculus/syntax/syntax.tex:8 (OLP-0356-B004); printed/PDF page pending; OLP-0357; lambda-calculus/syntax/terms; content/lambda-calculus/syntax/terms.tex:9-10 ↔ translation/content/lambda-calculus/syntax/terms.tex:9-10 (OLP-0357-B004); printed/PDF page pending; OLP-0357; lambda-calculus/syntax/terms; content/lambda-calculus/syntax/terms.tex:29-33 ↔ translation/content/lambda-calculus/syntax/terms.tex:29-33 (OLP-0357-B007); printed/PDF page pending; OLP-0358; lambda-calculus/syntax/unique-readability; content/lambda-calculus/syntax/unique-readability.tex:9-10 ↔ translation/content/lambda-calculus/syntax/unique-readability.tex:9-10 (OLP-0358-B004); printed/PDF page pending; OLP-0359; lambda-calculus/syntax/abbreviated-syntax; content/lambda-calculus/syntax/abbreviated-syntax.tex:12-16 ↔ translation/content/lambda-calculus/syntax/abbreviated-syntax.tex:12-16 (OLP-0359-B005); printed/PDF page pending; OLP-0360; lambda-calculus/syntax/free-variables; content/lambda-calculus/syntax/free-variables.tex:22-25 ↔ translation/content/lambda-calculus/syntax/free-variables.tex:22-26 (OLP-0360-B006); printed/PDF page pending; OLP-0360; lambda-calculus/syntax/free-variables; content/lambda-calculus/syntax/free-variables.tex:51-53 ↔ translation/content/lambda-calculus/syntax/free-variables.tex:52-54 (OLP-0360-B009); printed/PDF page pending; OLP-0360; lambda-calculus/syntax/free-variables; content/lambda-calculus/syntax/free-variables.tex:75-83 ↔ translation/content/lambda-calculus/syntax/free-variables.tex:79-86 (OLP-0360-B012); printed/PDF page pending; OLP-0360; lambda-calculus/syntax/free-variables; content/lambda-calculus/syntax/free-variables.tex:94-97 ↔ translation/content/lambda-calculus/syntax/free-variables.tex:96-99 (OLP-0360-B014); printed/PDF page pending
+
+- Authorities actually checked: TE-P003, PDF 4, printed 30, Reason-giving and proofs subsection; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P027 directly shows formal terms and individual variables; TE-P029 directly shows formal scope and binding. TE-P003 and TE-P032 support induction, proof and explanatory construction register. TE-P008 and TE-P011 support set and function wording. Their native pages were visually inspected for this batch. They do not directly attest lambda-term formation, parameter, unique readability, combinator or abbreviated lambda syntax. The three formation clauses, uniqueness argument, association/scope conventions, inductive free-variable equations, corrected scope definition and environment example in OLP-0356--OLP-0360 fix the specialized senses; TE-T078 supplies the preceding lambda terminology. OLTELAMSYN-001--004 document source defects rather than language evidence. లాంబ్డా and పరామితి are transparent technical borrowings or inherited technical forms; the latter is provisional in this exact abstraction role. M, N, P, x, y, z, lambda notation and FV remain protected formal notation; raw parameter token key is hidden from readers by the Telugu wrapper.
+
+- Alternatives: reuse the inspected native term, variable, scope, function, set and induction register while the lambda formation clauses fix the specialist senses (chosen); leave unique readability, parameter and combinator in English reader prose (rejected); claim the native witnesses directly attest lambda parameter and combinator usage (rejected; the source definitions fix those senses); treat scope as the whole ambient term N (rejected because the binder scope is its body M)
+
+- Uncertainty: Low semantic uncertainty because formation, scope and free-variable conditions are explicit; medium nomenclatural uncertainty for parameter, unique-readability and combinator choices pending independent native specialist review
+
+- Please double-check: Please double-check whether “లాంబ్డా కలనశాస్త్రపు పదం, నిర్మాణం / అమూర్తీకరణ పరామితి / ఏకార్థ పఠనీయత / సంక్షిప్త వాక్యనిర్మాణం / ఎడమ నుంచి కుడికి ప్రయోగ క్రమం, అమూర్తీకరణకు విస్తృత పరిధి / స్వేచ్ఛా, బద్ధ ఘటన / అమూర్తీకరణ పరిధి / స్వేచ్ఛా చరాల సమితి / పరిసరం / సంవృత పదం, సంయోజకం” is idiomatic and technically standard for “lambda-calculus term and formation / abstraction parameter / unique readability / abbreviated syntax / application association and widest abstraction scope / free and bound occurrence / scope of abstraction / free-variable set / environment / closed term and combinator” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -9007,3 +9031,99 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMINT-001 is mathematically precise and idiomatic.
+
+## REV-OLTELAMSYN-001 — OLTELAMSYN-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: translated the intended designate sense; adjacent sourcecorrection discloses the source spelling error
+
+- Exact implementation: OLP-0357; lambda-calculus/syntax/terms; line 15, metavariables for terms ↔ translation/content/lambda-calculus/syntax/terms.tex:12-16 (OLP-0357-B005); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMSYN-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: translated the intended designate sense; adjacent sourcecorrection discloses the source spelling error
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMSYN-001 is mathematically precise and idiomatic.
+
+## REV-OLTELAMSYN-002 — OLTELAMSYN-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: translated the intended demonstrates sense and preserved the example term; adjacent sourcecorrection discloses the source spelling error
+
+- Exact implementation: OLP-0357; lambda-calculus/syntax/terms; lines 35-37, fully parenthesized example ↔ translation/content/lambda-calculus/syntax/terms.tex:35-38 (OLP-0357-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMSYN-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: translated the intended demonstrates sense and preserved the example term; adjacent sourcecorrection discloses the source spelling error
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMSYN-002 is mathematically precise and idiomatic.
+
+## REV-OLTELAMSYN-003 — OLTELAMSYN-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used the occurrence of M as the scope of lambda x and disclosed the repair adjacent to the definition
+
+- Exact implementation: OLP-0360; lambda-calculus/syntax/free-variables; lines 22-25, definition of scope ↔ translation/content/lambda-calculus/syntax/free-variables.tex:22-26 (OLP-0360-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMSYN-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used the occurrence of M as the scope of lambda x and disclosed the repair adjacent to the definition
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMSYN-003 is mathematically precise and idiomatic.
+
+## REV-OLTELAMSYN-004 — OLTELAMSYN-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: used the intended for-example sense; adjacent sourcecorrection discloses the wording error
+
+- Exact implementation: OLP-0359; lambda-calculus/syntax/abbreviated-syntax; lines 22-24, second abbreviation convention ↔ translation/content/lambda-calculus/syntax/abbreviated-syntax.tex:23-25 (OLP-0359-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMSYN-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: used the intended for-example sense; adjacent sourcecorrection discloses the wording error
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMSYN-004 is mathematically precise and idiomatic.

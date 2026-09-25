@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **352 of 722 source units drafted**. This readable view contains all 375 decisions and 707 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **357 of 722 source units drafted**. This readable view contains all 380 decisions and 720 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2311,6 +2311,40 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T079-OCC-005; OLP-0353; OLP-0353-B012; source upstream/content/lambda-calculus/introduction/primitive-recursion.tex:74-76 bytes 2584-2679 SHA-256 04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350; target translation/content/lambda-calculus/introduction/primitive-recursion.tex:77-79 bytes 6630-6872 SHA-256 91a43cebe82c7268bb87c5eb8f24d0a15e3a374d15cd76a71110a50e9fdc8290; reader page pending.
   - te-Telu-IN-TE-T079-OCC-006; OLP-0354; OLP-0354-B005; source upstream/content/lambda-calculus/introduction/fixed-point-combinator.tex:12-38 bytes 226-1072 SHA-256 632b1f356b9a9b2147e82bc3b39a3442220ab78ffbede6baa28390cf1b759327; target translation/content/lambda-calculus/introduction/fixed-point-combinator.tex:12-37 bytes 261-1706 SHA-256 12867f9e1b288bff1998013d435c7179b0f52e2ff83c49667e9fbcb74e006c00; reader page pending.
   - te-Telu-IN-TE-T079-OCC-007; OLP-0355; OLP-0355-B004; source upstream/content/lambda-calculus/introduction/minimization.tex:9-10 bytes 154-266 SHA-256 e0fbbc26c033f303410498fec8dd8dda3d610e0ced8df38d1de1189a8d590bf1; target translation/content/lambda-calculus/introduction/minimization.tex:9-10 bytes 154-325 SHA-256 80f3c9cc2ffeabb14109ed5c3d67a11a29fc7449cb6970c11d2c79b2181de0a5; reader page pending.
+
+## te-Telu-IN-TE-T080 — lambda-calculus term and formation / abstraction parameter / unique readability / abbreviated syntax / application association and widest abstraction scope / free and bound occurrence / scope of abstraction / free-variable set / environment / closed term and combinator
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: లాంబ్డా కలనశాస్త్రపు పదం, నిర్మాణం / అమూర్తీకరణ పరామితి / ఏకార్థ పఠనీయత / సంక్షిప్త వాక్యనిర్మాణం / ఎడమ నుంచి కుడికి ప్రయోగ క్రమం, అమూర్తీకరణకు విస్తృత పరిధి / స్వేచ్ఛా, బద్ధ ఘటన / అమూర్తీకరణ పరిధి / స్వేచ్ఛా చరాల సమితి / పరిసరం / సంవృత పదం, సంయోజకం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “lambda-calculus term and formation / abstraction parameter / unique readability / abbreviated syntax / application association and widest abstraction scope / free and bound occurrence / scope of abstraction / free-variable set / environment / closed term and combinator” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: Low semantic uncertainty because formation, scope and free-variable conditions are explicit; medium nomenclatural uncertainty for parameter, unique-readability and combinator choices pending independent native specialist review
+
+- Rationale: TE-P027 directly shows formal terms and individual variables; TE-P029 directly shows formal scope and binding. TE-P003 and TE-P032 support induction, proof and explanatory construction register. TE-P008 and TE-P011 support set and function wording. Their native pages were visually inspected for this batch. They do not directly attest lambda-term formation, parameter, unique readability, combinator or abbreviated lambda syntax. The three formation clauses, uniqueness argument, association/scope conventions, inductive free-variable equations, corrected scope definition and environment example in OLP-0356--OLP-0360 fix the specialized senses; TE-T078 supplies the preceding lambda terminology. OLTELAMSYN-001--004 document source defects rather than language evidence. లాంబ్డా and పరామితి are transparent technical borrowings or inherited technical forms; the latter is provisional in this exact abstraction role. M, N, P, x, y, z, lambda notation and FV remain protected formal notation; raw parameter token key is hidden from readers by the Telugu wrapper.
+
+- Authorities checked: TE-C003:TE-P003 [checked_context_only], PDF page 4; printed page 30; Reason-giving and proofs subsection; Native proof/explanation register; broad induction usage, not full formal induction theorem attestation | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: leave unique readability, parameter and combinator in English reader prose [rejected: rejected] | claim the native witnesses directly attest lambda parameter and combinator usage [rejected: rejected; the source definitions fix those senses] | treat scope as the whole ambient term N [rejected: rejected because the binder scope is its body M]
+
+- Review question: Please double-check whether “లాంబ్డా కలనశాస్త్రపు పదం, నిర్మాణం / అమూర్తీకరణ పరామితి / ఏకార్థ పఠనీయత / సంక్షిప్త వాక్యనిర్మాణం / ఎడమ నుంచి కుడికి ప్రయోగ క్రమం, అమూర్తీకరణకు విస్తృత పరిధి / స్వేచ్ఛా, బద్ధ ఘటన / అమూర్తీకరణ పరిధి / స్వేచ్ఛా చరాల సమితి / పరిసరం / సంవృత పదం, సంయోజకం” is idiomatic and technically standard for “lambda-calculus term and formation / abstraction parameter / unique readability / abbreviated syntax / application association and widest abstraction scope / free and bound occurrence / scope of abstraction / free-variable set / environment / closed term and combinator” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T080-OCC-001; OLP-0356; OLP-0356-B004; source upstream/content/lambda-calculus/syntax/syntax.tex:8 bytes 124-153 SHA-256 8d4b46380a30f99e21a4eff935d0e8b3a5c23655709070cdd8aa5c63be62327e; target translation/content/lambda-calculus/syntax/syntax.tex:8 bytes 124-186 SHA-256 915f234bd9795e01579e78ba51605f33a8968effe59575b9f385f5e4a9ffd727; reader page pending.
+  - te-Telu-IN-TE-T080-OCC-002; OLP-0357; OLP-0357-B004; source upstream/content/lambda-calculus/syntax/terms.tex:9-10 bytes 141-184 SHA-256 145fce509501861988851ee8a42591b3ec7e2acd4f570f34004c5c459b491ecb; target translation/content/lambda-calculus/syntax/terms.tex:9-10 bytes 141-194 SHA-256 99ecefd1f74efdc848cbbda02f73393b8f1eb13ea285d592c882a7291c26ee4e; reader page pending.
+  - te-Telu-IN-TE-T080-OCC-003; OLP-0357; OLP-0357-B007; source upstream/content/lambda-calculus/syntax/terms.tex:29-33 bytes 899-1179 SHA-256 145fce509501861988851ee8a42591b3ec7e2acd4f570f34004c5c459b491ecb; target translation/content/lambda-calculus/syntax/terms.tex:29-33 bytes 1665-2102 SHA-256 99ecefd1f74efdc848cbbda02f73393b8f1eb13ea285d592c882a7291c26ee4e; reader page pending.
+  - te-Telu-IN-TE-T080-OCC-004; OLP-0358; OLP-0358-B004; source upstream/content/lambda-calculus/syntax/unique-readability.tex:9-10 bytes 160-216 SHA-256 a11a3822afc6fd0e95f81b2040023d553f0682b5b099b7c75511d4b2a720b7f7; target translation/content/lambda-calculus/syntax/unique-readability.tex:9-10 bytes 160-235 SHA-256 5fe4b956f796555e90704de9e59751671e1aba3e403500fcf8136ae0ade5cf6c; reader page pending.
+  - te-Telu-IN-TE-T080-OCC-005; OLP-0359; OLP-0359-B005; source upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:12-16 bytes 211-522 SHA-256 89683422a361faf74ad312ab557f265f94eb9541fcc3bd3fadbfaf1437bd9c46; target translation/content/lambda-calculus/syntax/abbreviated-syntax.tex:12-16 bytes 260-1009 SHA-256 07b4bdb5fac9c1befe28f5a7d0b6ce34855a3b228b56496cc1f25b2a21ce0b1b; reader page pending.
+  - te-Telu-IN-TE-T080-OCC-006; OLP-0360; OLP-0360-B006; source upstream/content/lambda-calculus/syntax/free-variables.tex:22-25 bytes 809-965 SHA-256 5443d1f42424315debd308ca068a3f74dde17a2045bc0b71cb94c6d70d53990c; target translation/content/lambda-calculus/syntax/free-variables.tex:22-26 bytes 1542-2331 SHA-256 e815b83860f5eb5df75041379a0be0e08e248f8127b06582c2cca08013a5cd3e; reader page pending.
+  - te-Telu-IN-TE-T080-OCC-007; OLP-0360; OLP-0360-B009; source upstream/content/lambda-calculus/syntax/free-variables.tex:51-53 bytes 2131-2294 SHA-256 5443d1f42424315debd308ca068a3f74dde17a2045bc0b71cb94c6d70d53990c; target translation/content/lambda-calculus/syntax/free-variables.tex:52-54 bytes 4322-4655 SHA-256 e815b83860f5eb5df75041379a0be0e08e248f8127b06582c2cca08013a5cd3e; reader page pending.
+  - te-Telu-IN-TE-T080-OCC-008; OLP-0360; OLP-0360-B012; source upstream/content/lambda-calculus/syntax/free-variables.tex:75-83 bytes 3087-3578 SHA-256 5443d1f42424315debd308ca068a3f74dde17a2045bc0b71cb94c6d70d53990c; target translation/content/lambda-calculus/syntax/free-variables.tex:79-86 bytes 5791-6805 SHA-256 e815b83860f5eb5df75041379a0be0e08e248f8127b06582c2cca08013a5cd3e; reader page pending.
+  - te-Telu-IN-TE-T080-OCC-009; OLP-0360; OLP-0360-B014; source upstream/content/lambda-calculus/syntax/free-variables.tex:94-97 bytes 4052-4191 SHA-256 5443d1f42424315debd308ca068a3f74dde17a2045bc0b71cb94c6d70d53990c; target translation/content/lambda-calculus/syntax/free-variables.tex:96-99 bytes 7746-7992 SHA-256 e815b83860f5eb5df75041379a0be0e08e248f8127b06582c2cca08013a5cd3e; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -10085,3 +10119,107 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTELAMINT-001-OCC-001; OLP-0347; OLP-0347-B008; source upstream/content/lambda-calculus/introduction/currying.tex:51-68 bytes 2311-3088 SHA-256 218fab4af4b5c2a49ffe9e7d4ffdc6bb2dd1f88046b71dad2097b5de62b1f5f9; target translation/content/lambda-calculus/introduction/currying.tex:53-70 bytes 5266-7170 SHA-256 e56f027b0c13fe16f6678e5815c92e034950766dea47a3284ce96f6a589be964; reader page pending.
+
+## te-Telu-IN-OLTELAMSYN-001 — OLTELAMSYN-001: confirmed local spelling error in metavariable designation
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: translated the intended designate sense; adjacent sourcecorrection discloses the source spelling error
+
+- Intended sense: Repair the audited confirmed local spelling error in metavariable designation at line 15, metavariables for terms, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMSYN-20260925:OLTELAMSYN-001 [checked_supports], content/lambda-calculus/syntax/terms.tex; line 15, metavariables for terms; confirmed_local_spelling_error_in_metavariable_designation; translated the intended designate sense; adjacent sourcecorrection discloses the source spelling error.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTELAMSYN-001 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMSYN-001-OCC-001; OLP-0357; OLP-0357-B005; source upstream/content/lambda-calculus/syntax/terms.tex:15 bytes 390-461 SHA-256 145fce509501861988851ee8a42591b3ec7e2acd4f570f34004c5c459b491ecb; target translation/content/lambda-calculus/syntax/terms.tex:12-16 bytes 195-1043 SHA-256 99ecefd1f74efdc848cbbda02f73393b8f1eb13ea285d592c882a7291c26ee4e; reader page pending.
+
+## te-Telu-IN-OLTELAMSYN-002 — OLTELAMSYN-002: confirmed local spelling error in parenthesis example
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: translated the intended demonstrates sense and preserved the example term; adjacent sourcecorrection discloses the source spelling error
+
+- Intended sense: Repair the audited confirmed local spelling error in parenthesis example at lines 35-37, fully parenthesized example, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMSYN-20260925:OLTELAMSYN-002 [checked_supports], content/lambda-calculus/syntax/terms.tex; lines 35-37, fully parenthesized example; confirmed_local_spelling_error_in_parenthesis_example; translated the intended demonstrates sense and preserved the example term; adjacent sourcecorrection discloses the source spelling error.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTELAMSYN-002 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMSYN-002-OCC-001; OLP-0357; OLP-0357-B008; source upstream/content/lambda-calculus/syntax/terms.tex:35-37 bytes 1180-1344 SHA-256 145fce509501861988851ee8a42591b3ec7e2acd4f570f34004c5c459b491ecb; target translation/content/lambda-calculus/syntax/terms.tex:35-38 bytes 2103-2737 SHA-256 99ecefd1f74efdc848cbbda02f73393b8f1eb13ea285d592c882a7291c26ee4e; reader page pending.
+
+## te-Telu-IN-OLTELAMSYN-003 — OLTELAMSYN-003: confirmed scope body misreference
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used the occurrence of M as the scope of lambda x and disclosed the repair adjacent to the definition
+
+- Intended sense: Repair the audited confirmed scope body misreference at lines 22-25, definition of scope, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMSYN-20260925:OLTELAMSYN-003 [checked_supports], content/lambda-calculus/syntax/free-variables.tex; lines 22-25, definition of scope; confirmed_scope_body_misreference; used the occurrence of M as the scope of lambda x and disclosed the repair adjacent to the definition.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTELAMSYN-003 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMSYN-003-OCC-001; OLP-0360; OLP-0360-B006; source upstream/content/lambda-calculus/syntax/free-variables.tex:22-25 bytes 809-965 SHA-256 5443d1f42424315debd308ca068a3f74dde17a2045bc0b71cb94c6d70d53990c; target translation/content/lambda-calculus/syntax/free-variables.tex:22-26 bytes 1542-2331 SHA-256 e815b83860f5eb5df75041379a0be0e08e248f8127b06582c2cca08013a5cd3e; reader page pending.
+
+## te-Telu-IN-OLTELAMSYN-004 — OLTELAMSYN-004: confirmed local preposition typo in example introduction
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: used the intended for-example sense; adjacent sourcecorrection discloses the wording error
+
+- Intended sense: Repair the audited confirmed local preposition typo in example introduction at lines 22-24, second abbreviation convention, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMSYN-20260925:OLTELAMSYN-004 [checked_supports], content/lambda-calculus/syntax/abbreviated-syntax.tex; lines 22-24, second abbreviation convention; confirmed_local_preposition_typo_in_example_introduction; used the intended for-example sense; adjacent sourcecorrection discloses the wording error.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTELAMSYN-004 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMSYN-004-OCC-001; OLP-0359; OLP-0359-B006; source upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:22-24 bytes 714-879 SHA-256 89683422a361faf74ad312ab557f265f94eb9541fcc3bd3fadbfaf1437bd9c46; target translation/content/lambda-calculus/syntax/abbreviated-syntax.tex:23-25 bytes 1533-1950 SHA-256 07b4bdb5fac9c1befe28f5a7d0b6ce34855a3b228b56496cc1f25b2a21ce0b1b; reader page pending.

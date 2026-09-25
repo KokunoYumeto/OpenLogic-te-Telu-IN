@@ -308,6 +308,17 @@ locations['TE-T079']=[
  L('content/lambda-calculus/introduction/fixed-point-combinator.tex',28,38,27,37,"Curry's combinator",'కరీ సంయోజకం'),
  L('content/lambda-calculus/introduction/minimization.tex',10,18,10,18,'Closed under Minimization','కనిష్ఠీకరణ కింద సంవృతమైనవి')
 ];
+locations['TE-T080']=[
+ L('content/lambda-calculus/syntax/syntax.tex',8,8,8,8,'Syntax','వాక్యనిర్మాణం'),
+ L('content/lambda-calculus/syntax/terms.tex',10,18,10,20,'Terms','పదాలు'),
+ L('content/lambda-calculus/syntax/terms.tex',29,33,29,33,'!!{parameter}','పరామితి'),
+ L('content/lambda-calculus/syntax/unique-readability.tex',10,16,10,16,'Unique Readability','ఏకార్థ పఠనీయత'),
+ L('content/lambda-calculus/syntax/abbreviated-syntax.tex',12,16,12,17,'abbreviated terms','సంక్షిప్త పదాలు'),
+ L('content/lambda-calculus/syntax/free-variables.tex',22,25,22,26,'scope','పరిధి'),
+ L('content/lambda-calculus/syntax/free-variables.tex',51,62,52,64,'free variables','స్వేచ్ఛా చరాల'),
+ L('content/lambda-calculus/syntax/free-variables.tex',75,92,79,94,'environment','పరిసర'),
+ L('content/lambda-calculus/syntax/free-variables.tex',94,97,96,99,'combinator','సంయోజకం')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -372,6 +383,7 @@ alternatives['TE-T076']=['reuse the established arithmetic, induction, axiomatiz
 alternatives['TE-T077']=['reuse the established set, subset, power-set, relation, function, equinumerosity and cardinality register while fixing relation coding, aleph levels and the continuum from the adjacent corrected formulas (chosen)','leave the specialized set-theoretic headwords in untranslated English reader prose (rejected)','collapse ordinary cardinality, aleph-one and continuum cardinality into one undifferentiated size notion (rejected because the definitions distinguish them)','claim direct native attestation for relation-coded power sets, the aleph hierarchy or the Continuum Hypothesis (rejected because the corrected definitions and cardinality arguments control those senses)'];
 alternatives['TE-T078']=['reuse the established term, variable, substitution, function, argument, composition, equivalence and proof register while fixing lambda abstraction, reduction and confluence from the adjacent rules and theorem (chosen)','leave the specialized lambda-calculus vocabulary in untranslated English reader prose (rejected)','collapse alpha-equivalence, beta-reduction and beta-equivalence into one undifferentiated relation (rejected because the definitions distinguish them)','claim direct native attestation for redex, contractum, Church--Rosser or Currying (rejected because the frozen formation clauses, reductions and theorem control those senses)'];
 alternatives['TE-T079']=['reuse the established natural-number, function, composition, primitive-recursion, minimization, term, reduction and proof register while fixing Church numerals, lambda-definability and fixed points from the adjacent corrected constructions (chosen)','leave the specialized lambda-computability vocabulary in untranslated English reader prose (rejected)','collapse ordinary computability, lambda-definability and primitive recursiveness into one property (rejected because the theorem and closure proof distinguish them)','claim direct native attestation for Church numerals, iterators or fixed-point combinators (rejected because the explicit definitions and reductions control those senses)'];
+alternatives['TE-T080']=['reuse the inspected native term, variable, scope, function, set and induction register while the lambda formation clauses fix the specialist senses (chosen)','leave unique readability, parameter and combinator in English reader prose (rejected)','claim the native witnesses directly attest lambda parameter and combinator usage (rejected; the source definitions fix those senses)','treat scope as the whole ambient term N (rejected because the binder scope is its body M)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -388,7 +400,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-21 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T079 record the Batch 025--Batch 040 consultations performed during reconciliation.';
+const phase='Evidence reconstruction through 2026-09-25 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T080 record the Batch 025--Batch 041 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);

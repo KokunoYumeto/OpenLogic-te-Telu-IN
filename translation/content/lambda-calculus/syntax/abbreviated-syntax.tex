@@ -1,0 +1,46 @@
+% Part: lambda-calculus
+% Chapter: syntax
+% Section: abbreviated-syntax
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{syn}{abb}
+\olsection{సంక్షిప్త వాక్యనిర్మాణం}
+
+\olref[trm]{defn:term}లో నిర్వచించిన విధంగా పదాలను రాయడం కొన్నిసార్లు
+క్లిష్టమవుతుంది; అందుకే మరింత సంక్షిప్త వాక్యనిర్మాణాన్ని ప్రవేశపెట్టడం
+ఉపయోగకరం. సంక్షిప్త సంకేతనంలోని పదాలకూ ఏకార్థ పఠనం ఉండేలా జాగ్రత్త
+పడాలి. విస్తృతంగా వాడే ఒక రూపాన్ని \emph{సంక్షిప్త పదాలు} అంటారు.
+దాని నియమాలు ఇవి:
+
+\begin{enumerate}
+\item కుండలీకరణలను వదిలినప్పుడు ప్రయోగం ఎడమ నుంచి కుడికి జరుగుతుంది.
+  ఉదాహరణకు, $M$, $N$, $P$,~$Q$ పదాలైతే, $MNPQ$ అనేది
+  $(((MN)P)Q)$కు సంక్షిప్త రూపం.
+\item కుండలీకరణలను వదిలినప్పుడు లాంబ్డా అమూర్తీకరణకు సాధ్యమైనంత
+  విస్తృత పరిధి ఇస్తాం. ఉదాహరణకు, $\lambd[x][MNP]$ను
+  $(\lambd[x][MNP])$గా చదువుతాం.
+  \sourcecorrection{OLTELAMSYN-004}{ఆంగ్ల మూలం ఇక్కడ ``From example'' అని రాసింది; సందర్భానికి తగిన ``For example'' అర్థాన్ని అనువదించాం.}
+\item ఒకే లాంబ్డాతో అనేక చరాలను అమూర్తీకరించవచ్చు. ఉదాహరణకు,
+  $\lambd[xyz][M]$ అనేది $\lambd[x][\lambd[y][\lambd[z][M]]]$కు
+  సంక్షిప్త రూపం.
+\end{enumerate}
+
+ఉదాహరణకు,
+\[
+\lambd[xy][xxyx \lambd[z][xz]]
+\]
+అనేది
+\[
+(\lambd[x][(\lambd[y][((((xx)y)x)(\lambd[z][(xz)]))])]).
+\]
+కు సంక్షిప్త రూపం.
+
+\begin{prob}
+$\lambd[g][(\lambd[x][g (x x)])
+  \lambd[x][g (x x)]]$ అనే సంక్షిప్త పదాన్ని పూర్తి రూపంలో రాయండి.
+\end{prob}
+
+\end{document}
