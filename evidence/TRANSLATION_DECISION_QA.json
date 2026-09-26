@@ -15,7 +15,7 @@
   },
   "coverage": {
     "state": "partial",
-    "source_units": 421,
+    "source_units": 422,
     "corpus_units": 722,
     "reader_units": null
   },
@@ -23,12 +23,12 @@
     "decisions": 504,
     "terminology": 114,
     "source_corrections": 390,
-    "occurrences": 1027,
+    "occurrences": 1030,
     "priority_urgent_or_high": 70,
-    "distinct_source_and_target_files_checked": 678,
-    "public_evidence_file_references_checked": 2506,
+    "distinct_source_and_target_files_checked": 680,
+    "public_evidence_file_references_checked": 2512,
     "reader_locator_status": {
-      "pending": 1027
+      "pending": 1030
     }
   },
   "checks": {
@@ -51,12 +51,12 @@
     {
       "path": "evidence/START_HERE.md",
       "bytes": 2343,
-      "sha256": "fb5b42e8ede94b73c9ec50684295a3e24bfe1c2eb086daee5a2ef637845289ea"
+      "sha256": "27edbf97a04ea03dfa86793c4e92ce60e7b367550dae0fa0f6d1edce6b7ccd74"
     },
     {
       "path": "evidence/TRANSLATION_DECISIONS_FULL.md",
-      "bytes": 1737768,
-      "sha256": "66fadced6f4184f50b03c24d794d60502cb7f9c4051b19603e812be041f40ec3"
+      "bytes": 1739016,
+      "sha256": "6dd9991ed6749caade79b800fa84c5ddd8ab69d517ea4e34cef02a01ea03c7ff"
     },
     {
       "path": "evidence/PRIORITY_REVIEW.md",
@@ -65,13 +65,13 @@
     },
     {
       "path": "evidence/DECISION_OCCURRENCES.csv",
-      "bytes": 1803918,
-      "sha256": "6b290abe4b889af6ab9796e657c4c84aebe5de41ef748054db57548f919d3d55"
+      "bytes": 1809627,
+      "sha256": "e4be63b6999c7598695f16fbb8ab7e44a18010e683425aaf61030608b82bef5c"
     },
     {
       "path": "evidence/DECISIONS.json",
-      "bytes": 8692536,
-      "sha256": "7afecfdc52f9e36e52013381980ab4982426a2e0682a01886c05251f4da59949"
+      "bytes": 8709457,
+      "sha256": "0b1fb45bcad1f46dc290664861000ec4875e95edfbdeda47ad67ae3d2cee2a4a"
     },
     {
       "path": "evidence/translation-decision.schema.json",

@@ -592,7 +592,10 @@ locations['TE-T113']=[
  L('content/normal-modal-logic/frame-definability/introduction.tex',25,30,28,37,'non-reflexive','స్వావర్తనం కాని'),
  L('content/normal-modal-logic/frame-definability/introduction.tex',44,48,58,64,'frames','చట్రాలు'),
  L('content/normal-modal-logic/frame-definability/introduction.tex',49,53,64,72,'based on','ఆధారపడే'),
- L('content/normal-modal-logic/frame-definability/introduction.tex',55,57,74,78,'correspondence','అనురూపతా')
+ L('content/normal-modal-logic/frame-definability/introduction.tex',55,57,74,78,'correspondence','అనురూపతా'),
+ L('content/normal-modal-logic/frame-definability/frames.tex',14,17,14,19,'frame','చట్రం'),
+ L('content/normal-modal-logic/frame-definability/frames.tex',21,23,23,26,'valid in','చెల్లుబాటు'),
+ L('content/normal-modal-logic/frame-definability/frames.tex',25,27,28,31,'valid in','చెల్లుబాటు')
 ];
 locations['TE-T114']=[
  L('content/normal-modal-logic/frame-definability/properties-accessibility.tex',11,11,11,11,'Properties of Accessibility Relations','ప్రాప్యత సంబంధాల ధర్మాలు'),
