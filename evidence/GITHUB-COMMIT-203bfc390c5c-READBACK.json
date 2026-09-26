@@ -1,0 +1,47 @@
+{
+  "schema": "openlogic-te-commit-readback/1",
+  "checked_at": "2026-09-26T04:12:05.815Z",
+  "commit": "203bfc390c5ca811ee8dd87cfd664e29743285f6",
+  "anonymous": true,
+  "authorization_header_sent": false,
+  "file_count": 4,
+  "files": [
+    {
+      "path": "README.md",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/203bfc390c5ca811ee8dd87cfd664e29743285f6/README.md",
+      "bytes": 25089,
+      "sha256": "15ff79ec5dd2d6599e44d4f0f47f3045963dfd37ab21dc55540421be272445a9",
+      "expected_bytes": 25089,
+      "expected_sha256": "15ff79ec5dd2d6599e44d4f0f47f3045963dfd37ab21dc55540421be272445a9",
+      "match": true
+    },
+    {
+      "path": "evidence/BATCH-059-SEMANTIC-REVIEW.md",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/203bfc390c5ca811ee8dd87cfd664e29743285f6/evidence/BATCH-059-SEMANTIC-REVIEW.md",
+      "bytes": 8624,
+      "sha256": "f2135b089874bcbeeeac50b0550630a17ee3ff8dcf13a067f326ec7ce6fe14a5",
+      "expected_bytes": 8624,
+      "expected_sha256": "f2135b089874bcbeeeac50b0550630a17ee3ff8dcf13a067f326ec7ce6fe14a5",
+      "match": true
+    },
+    {
+      "path": "evidence/CUMULATIVE-OLP0388-STRUCTURAL-QA.json",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/203bfc390c5ca811ee8dd87cfd664e29743285f6/evidence/CUMULATIVE-OLP0388-STRUCTURAL-QA.json",
+      "bytes": 4344294,
+      "sha256": "a6a7d762be1b05cf6b830690fb8111aa681494fd140144058eaee4e1003b8a6c",
+      "expected_bytes": 4344294,
+      "expected_sha256": "a6a7d762be1b05cf6b830690fb8111aa681494fd140144058eaee4e1003b8a6c",
+      "match": true
+    },
+    {
+      "path": "evidence/START_HERE.te.md",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/203bfc390c5ca811ee8dd87cfd664e29743285f6/evidence/START_HERE.te.md",
+      "bytes": 29723,
+      "sha256": "fc14e80a8762795522f8bc3041a623c7403436767d5bb5cfd2861a6ff57da724",
+      "expected_bytes": 29723,
+      "expected_sha256": "fc14e80a8762795522f8bc3041a623c7403436767d5bb5cfd2861a6ff57da724",
+      "match": true
+    }
+  ],
+  "status": "COMPLETE_PASS"
+}
