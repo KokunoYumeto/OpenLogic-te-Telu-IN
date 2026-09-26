@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **379 of 722 source units drafted**. This readable view contains all 448 decisions and 849 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **382 of 722 source units drafted**. This readable view contains all 454 decisions and 865 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2847,6 +2847,68 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T097-OCC-005; OLP-0379; OLP-0379-B010; source upstream/content/lambda-calculus/lambda-definability/fixpoints.tex:65-71 bytes 2739-2891 SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93; target translation/content/lambda-calculus/lambda-definability/fixpoints.tex:71-77 bytes 7449-7610 SHA-256 35bbd9b20c01d829c8a95f6d0836f48e7bb402cc7bfc30add5c2cb82a4751f51; reader page pending.
   - te-Telu-IN-TE-T097-OCC-006; OLP-0379; OLP-0379-B014; source upstream/content/lambda-calculus/lambda-definability/fixpoints.tex:102-107 bytes 3835-4197 SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93; target translation/content/lambda-calculus/lambda-definability/fixpoints.tex:113-118 bytes 9872-10484 SHA-256 35bbd9b20c01d829c8a95f6d0836f48e7bb402cc7bfc30add5c2cb82a4751f51; reader page pending.
   - te-Telu-IN-TE-T097-OCC-007; OLP-0379; OLP-0379-B017; source upstream/content/lambda-calculus/lambda-definability/fixpoints.tex:157-173 bytes 6149-6904 SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93; target translation/content/lambda-calculus/lambda-definability/fixpoints.tex:169-190 bytes 13002-14881 SHA-256 35bbd9b20c01d829c8a95f6d0836f48e7bb402cc7bfc30add5c2cb82a4751f51; reader page pending.
+
+## te-Telu-IN-TE-T098 — regular minimization / general recursive function / partial recursive function / unbounded search / undefined value / normal form
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: సక్రమ కనిష్ఠీకరణ / సామాన్య పునరావృత్త ప్రమేయం / పాక్షిక పునరావృత్త ప్రమేయం / అపరిమిత అన్వేషణ / నిర్వచితం కాని విలువ / నియత రూపం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “regular minimization / general recursive function / partial recursive function / unbounded search / undefined value / normal form” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: సాధారణ ప్రమేయం, సంఖ్యల, నిరూపణ శైలికి స్థానిక ఆధారం ఉంది; సక్రమత, పాక్షికత, నియత రూపం పేర్లు ఈ పేజీలలో ప్రత్యక్షంగా లేవు. నిర్వచిత/అనిర్వచిత భేదం మూల ప్రతిదృష్టాంతం, పూర్వ తెలుగు వాడుకతో నియంత్రితమైన తాత్కాలిక ఎంపిక.
+
+- Rationale: TE-P005లో సహజ సంఖ్యలు, ప్రధాన సంఖ్యల గద్యం; TE-P011లో ప్రమేయం, సంయుక్తం; TE-P027లో పదాల తర్క శైలి; TE-P032లో నిరూపణ గద్యం ప్రత్యక్షంగా చూశాం. ఇవి సక్రమ కనిష్ఠీకరణ, పాక్షిక పునరావృత్తి లేదా లాంబ్డా నియత రూపాన్ని నేరుగా స్థాపించవు. TE-T065, TE-T078, TE-T079, TE-T097 పూర్వ నిర్ణయాలు, OLP-0380–0381 స్థిర మూల నిర్వచనాలు, OLTELAMLDFMIN-001–003 ప్రకటిత సవరణలు ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి. లాంబ్డా ప్రత్యేక గణిత బదిలీ; F, G, H, Y, Search, IsZero, Succ మరియు TeX గణిత సూచనలు గుర్తింపులుగా యథాతథం.
+
+- Authorities checked: TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: TE-T065, TE-T078, TE-T079లోని సక్రమత, పాక్షిక పునరావృత్తి, నియత రూపం పదజాలాన్ని OLP-0380–0381 మూల నిర్వచనాలు, ప్రతిదృష్టాంతంతో కొనసాగించడం [viable_alternative: ఎంపిక] | పాక్షిక ప్రమేయం నిర్వచితం కాని చోట తప్పనిసరిగా F(Gx)కు నియత రూపం ఉండదని ఊహించడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ పేజీలు లాంబ్డా పాక్షికతను నేరుగా బోధిస్తాయని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “సక్రమ కనిష్ఠీకరణ / సామాన్య పునరావృత్త ప్రమేయం / పాక్షిక పునరావృత్త ప్రమేయం / అపరిమిత అన్వేషణ / నిర్వచితం కాని విలువ / నియత రూపం” is idiomatic and technically standard for “regular minimization / general recursive function / partial recursive function / unbounded search / undefined value / normal form” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T098-OCC-001; OLP-0380; OLP-0380-B004; source upstream/content/lambda-calculus/lambda-definability/minimization.tex:9-10 bytes 161-211 SHA-256 4da3bef314009bbd93701e19fa66ff1bd7dc718427fa1ddd06d223b2aaf9b7f6; target translation/content/lambda-calculus/lambda-definability/minimization.tex:9-10 bytes 161-229 SHA-256 914c04dee0a698908ad5e7af724b2ea87cb9b51d6d8f90648d2cf9b00e9ace16; reader page pending.
+  - te-Telu-IN-TE-T098-OCC-002; OLP-0380; OLP-0380-B005; source upstream/content/lambda-calculus/lambda-definability/minimization.tex:12-17 bytes 212-601 SHA-256 4da3bef314009bbd93701e19fa66ff1bd7dc718427fa1ddd06d223b2aaf9b7f6; target translation/content/lambda-calculus/lambda-definability/minimization.tex:12-21 bytes 230-1319 SHA-256 914c04dee0a698908ad5e7af724b2ea87cb9b51d6d8f90648d2cf9b00e9ace16; reader page pending.
+  - te-Telu-IN-TE-T098-OCC-003; OLP-0380; OLP-0380-B006; source upstream/content/lambda-calculus/lambda-definability/minimization.tex:19-26 bytes 602-829 SHA-256 4da3bef314009bbd93701e19fa66ff1bd7dc718427fa1ddd06d223b2aaf9b7f6; target translation/content/lambda-calculus/lambda-definability/minimization.tex:23-31 bytes 1320-1772 SHA-256 914c04dee0a698908ad5e7af724b2ea87cb9b51d6d8f90648d2cf9b00e9ace16; reader page pending.
+  - te-Telu-IN-TE-T098-OCC-004; OLP-0381; OLP-0381-B004; source upstream/content/lambda-calculus/lambda-definability/partial-recursive-functions.tex:9-10 bytes 176-276 SHA-256 a74678e3cced4a3650d799dae58d106964e63ddd9fd71b739a51531ef73325f0; target translation/content/lambda-calculus/lambda-definability/partial-recursive-functions.tex:9-10 bytes 176-325 SHA-256 2b81e0ac046ae817732305ec1a7c2bf180086d9a48832a9aa960a09383ec82c6; reader page pending.
+  - te-Telu-IN-TE-T098-OCC-005; OLP-0381; OLP-0381-B005; source upstream/content/lambda-calculus/lambda-definability/partial-recursive-functions.tex:12-17 bytes 277-638 SHA-256 a74678e3cced4a3650d799dae58d106964e63ddd9fd71b739a51531ef73325f0; target translation/content/lambda-calculus/lambda-definability/partial-recursive-functions.tex:12-18 bytes 326-1288 SHA-256 2b81e0ac046ae817732305ec1a7c2bf180086d9a48832a9aa960a09383ec82c6; reader page pending.
+  - te-Telu-IN-TE-T098-OCC-006; OLP-0381; OLP-0381-B006; source upstream/content/lambda-calculus/lambda-definability/partial-recursive-functions.tex:19-29 bytes 639-1362 SHA-256 a74678e3cced4a3650d799dae58d106964e63ddd9fd71b739a51531ef73325f0; target translation/content/lambda-calculus/lambda-definability/partial-recursive-functions.tex:20-35 bytes 1289-3098 SHA-256 2b81e0ac046ae817732305ec1a7c2bf180086d9a48832a9aa960a09383ec82c6; reader page pending.
+
+## te-Telu-IN-TE-T099 — arithmetization / Gödel number / power-of-primes sequence coding / normalization / Church numeral / converse theorem
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: అంకీకరణ / గోడెల్ సంఖ్య / ప్రధాన సంఖ్యల ఘాతాల ద్వారా శ్రేణి సంకేతీకరణ / నియత రూపం పొందడం / చర్చ్ సంఖ్యాంకం / విలోమ సిద్ధాంతం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “arithmetization / Gödel number / power-of-primes sequence coding / normalization / Church numeral / converse theorem” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: సాధారణ అంకగణిత/ప్రమేయ/నిరూపణ నమోదు స్థానికంగా కనిపిస్తుంది. అంకీకరణ, గోడెల్ సంఖ్య, సామాన్యీకరణ ప్రత్యేక నామకరణం మూల గణిత నిర్మాణం మరియు పూర్వ వాడుక ఆధారంగా తాత్కాలికం; మూలం నిరూపణ రూపురేఖలనే ఇస్తుంది.
+
+- Rationale: TE-P005 ప్రధాన సంఖ్య, సంఖ్యా అంకగణిత గద్యానికి; TE-P011 ప్రమేయానికి; TE-P027 పదాల తర్క శైలికి; TE-P032 సిద్ధాంత/నిరూపణ గద్యానికి ప్రత్యక్ష ఆధారం. ఇవి గోడెల్ అంకీకరణను లేదా చర్చ్ సంఖ్యాంకాల నియత రూపాన్ని నేరుగా బోధించవు. TE-T065, TE-T078, TE-T079 పూర్వ నిర్ణయాలు, OLP-0382 మూలంలోని toChurch–normalize–fromChurch క్రమం, OLTELAMLDFLDR-001 ప్రకటిత గుర్తింపు సవరణ ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి. గోడెల్, చర్చ్ మూల వ్యక్తి పేర్ల ధ్వన్యనుకరణ; normalize, toChurch, fromChurch, Gn, F, n_i రక్షిత గణిత/కోడ్ గుర్తింపులుగా యథాతథం.
+
+- Authorities checked: TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: గోడెల్ అంకీకరణ–నియత రూపం–చర్చ్ సంఖ్యాంక మార్పిడిని మూల రూపురేఖల పరిమితిలో తెలుగులో వివరించడం [viable_alternative: ఎంపిక] | మూల నిరూపణ రూపురేఖలను పూర్తి నిర్మాణాత్మక నిరూపణగా ప్రకటించడం [viable_alternative: తిరస్కరణ] | గోడెల్ పేరు లేదా కోడ్ ప్రమేయాల గుర్తింపులను అనువదించి మూల అనుసంధానం పోగొట్టడం [viable_alternative: తిరస్కరణ] | స్థానిక ప్రధాన సంఖ్యల పేజీ గోడెల్ సంకేతీకరణను నేరుగా ధృవీకరిస్తుందని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “అంకీకరణ / గోడెల్ సంఖ్య / ప్రధాన సంఖ్యల ఘాతాల ద్వారా శ్రేణి సంకేతీకరణ / నియత రూపం పొందడం / చర్చ్ సంఖ్యాంకం / విలోమ సిద్ధాంతం” is idiomatic and technically standard for “arithmetization / Gödel number / power-of-primes sequence coding / normalization / Church numeral / converse theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T099-OCC-001; OLP-0382; OLP-0382-B004; source upstream/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:9-10 bytes 175-267 SHA-256 ff6f9c3dbe4c11e42b9528b74afa11ecc68978c3c76211000b8e8f279ad1db07; target translation/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:9-11 bytes 175-849 SHA-256 ee7bf997c34abc008097479f8ac7c162c9995d603b27853c07ce85f1ba57ebe6; reader page pending.
+  - te-Telu-IN-TE-T099-OCC-002; OLP-0382; OLP-0382-B007; source upstream/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:21-30 bytes 565-1182 SHA-256 ff6f9c3dbe4c11e42b9528b74afa11ecc68978c3c76211000b8e8f279ad1db07; target translation/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:25-36 bytes 1654-3152 SHA-256 ee7bf997c34abc008097479f8ac7c162c9995d603b27853c07ce85f1ba57ebe6; reader page pending.
+  - te-Telu-IN-TE-T099-OCC-003; OLP-0382; OLP-0382-B007; source upstream/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:21-30 bytes 565-1182 SHA-256 ff6f9c3dbe4c11e42b9528b74afa11ecc68978c3c76211000b8e8f279ad1db07; target translation/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:25-36 bytes 1654-3152 SHA-256 ee7bf997c34abc008097479f8ac7c162c9995d603b27853c07ce85f1ba57ebe6; reader page pending.
+  - te-Telu-IN-TE-T099-OCC-004; OLP-0382; OLP-0382-B007; source upstream/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:21-30 bytes 565-1182 SHA-256 ff6f9c3dbe4c11e42b9528b74afa11ecc68978c3c76211000b8e8f279ad1db07; target translation/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:25-36 bytes 1654-3152 SHA-256 ee7bf997c34abc008097479f8ac7c162c9995d603b27853c07ce85f1ba57ebe6; reader page pending.
+  - te-Telu-IN-TE-T099-OCC-005; OLP-0382; OLP-0382-B007; source upstream/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:21-30 bytes 565-1182 SHA-256 ff6f9c3dbe4c11e42b9528b74afa11ecc68978c3c76211000b8e8f279ad1db07; target translation/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:25-36 bytes 1654-3152 SHA-256 ee7bf997c34abc008097479f8ac7c162c9995d603b27853c07ce85f1ba57ebe6; reader page pending.
+  - te-Telu-IN-TE-T099-OCC-006; OLP-0382; OLP-0382-B008; source upstream/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:32-44 bytes 1183-1951 SHA-256 ff6f9c3dbe4c11e42b9528b74afa11ecc68978c3c76211000b8e8f279ad1db07; target translation/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:38-53 bytes 3153-4762 SHA-256 ee7bf997c34abc008097479f8ac7c162c9995d603b27853c07ce85f1ba57ebe6; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -12052,3 +12114,107 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTELAMLDFPIX-005-OCC-001; OLP-0379; OLP-0379-B017; source upstream/content/lambda-calculus/lambda-definability/fixpoints.tex:157-173 bytes 6149-6904 SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93; target translation/content/lambda-calculus/lambda-definability/fixpoints.tex:178 bytes 13608-14245 SHA-256 35bbd9b20c01d829c8a95f6d0836f48e7bb402cc7bfc30add5c2cb82a4751f51; reader page pending.
+
+## te-Telu-IN-OLTELAMLDFMIN-001 — OLTELAMLDFMIN-001: minimization result named h instead of g
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: ప్రతినిధి పదం $H$ను నిలిపి, నిరూపణ గద్యాన్నీ చివరి ఫలితాన్నీ $g$తో సరిపోల్చి పక్కనే ప్రకటించాలి.
+
+- Intended sense: Repair the audited minimization result named h instead of g at minimization.tex lines 19-35 and 53-54, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMLDFEND-20260926:OLTELAMLDFMIN-001 [checked_supports], content/lambda-calculus/lambda-definability/minimization.tex; minimization.tex lines 19-35 and 53-54; minimization_result_named_h_instead_of_g; ప్రతినిధి పదం $H$ను నిలిపి, నిరూపణ గద్యాన్నీ చివరి ఫలితాన్నీ $g$తో సరిపోల్చి పక్కనే ప్రకటించాలి..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTELAMLDFMIN-001 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMLDFMIN-001-OCC-001; OLP-0380; OLP-0380-B007; source upstream/content/lambda-calculus/lambda-definability/minimization.tex:28-42 bytes 830-1610 SHA-256 4da3bef314009bbd93701e19fa66ff1bd7dc718427fa1ddd06d223b2aaf9b7f6; target translation/content/lambda-calculus/lambda-definability/minimization.tex:43 bytes 2488-3106 SHA-256 914c04dee0a698908ad5e7af724b2ea87cb9b51d6d8f90648d2cf9b00e9ace16; reader page pending.
+
+## te-Telu-IN-OLTELAMLDFMIN-002 — OLTELAMLDFMIN-002: search recursive call omits function argument and closing parenthesis
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: శూన్యం కాని శాఖను $(g\,f\,\vec x(\fn{Succ}\,y))$గా చేసి కుండలీకరణాన్ని మూయాలి; సూత్ర సవరణను పక్కనే ప్రకటించాలి.
+
+- Intended sense: Repair the audited search recursive call omits function argument and closing parenthesis at minimization.tex lines 32-35, especially line 34, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMLDFEND-20260926:OLTELAMLDFMIN-002 [checked_supports], content/lambda-calculus/lambda-definability/minimization.tex; minimization.tex lines 32-35, especially line 34; search_recursive_call_omits_function_argument_and_closing_parenthesis; శూన్యం కాని శాఖను $(g\,f\,\vec x(\fn{Succ}\,y))$గా చేసి కుండలీకరణాన్ని మూయాలి; సూత్ర సవరణను పక్కనే ప్రకటించాలి..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTELAMLDFMIN-002 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMLDFMIN-002-OCC-001; OLP-0380; OLP-0380-B007; source upstream/content/lambda-calculus/lambda-definability/minimization.tex:28-42 bytes 830-1610 SHA-256 4da3bef314009bbd93701e19fa66ff1bd7dc718427fa1ddd06d223b2aaf9b7f6; target translation/content/lambda-calculus/lambda-definability/minimization.tex:44 bytes 3106-3753 SHA-256 914c04dee0a698908ad5e7af724b2ea87cb9b51d6d8f90648d2cf9b00e9ace16; reader page pending.
+
+## te-Telu-IN-OLTELAMLDFMIN-003 — OLTELAMLDFMIN-003: search operator called intrinsically self referencing
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: $\fn{Search}$ పునరావృత్త దశను తీసుకునే పదమని, స్వీయ-సూచన $Y\,\fn{Search}$లో ఏర్పడుతుందని వేరు చేసి పక్కనే ప్రకటించాలి.
+
+- Intended sense: Repair the audited search operator called intrinsically self referencing at minimization.tex lines 37-40, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMLDFEND-20260926:OLTELAMLDFMIN-003 [checked_supports], content/lambda-calculus/lambda-definability/minimization.tex; minimization.tex lines 37-40; search_operator_called_intrinsically_self_referencing; $\fn{Search}$ పునరావృత్త దశను తీసుకునే పదమని, స్వీయ-సూచన $Y\,\fn{Search}$లో ఏర్పడుతుందని వేరు చేసి పక్కనే ప్రకటించాలి..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTELAMLDFMIN-003 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMLDFMIN-003-OCC-001; OLP-0380; OLP-0380-B007; source upstream/content/lambda-calculus/lambda-definability/minimization.tex:28-42 bytes 830-1610 SHA-256 4da3bef314009bbd93701e19fa66ff1bd7dc718427fa1ddd06d223b2aaf9b7f6; target translation/content/lambda-calculus/lambda-definability/minimization.tex:48 bytes 4185-4779 SHA-256 914c04dee0a698908ad5e7af724b2ea87cb9b51d6d8f90648d2cf9b00e9ace16; reader page pending.
+
+## te-Telu-IN-OLTELAMLDFLDR-001 — OLTELAMLDFLDR-001: lambda definability file id transposed
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: $\olfileid{lam}{ldf}{ldr}$గా సరిచేసి, రక్షిత గుర్తింపు మార్పును పక్కనే ప్రకటించాలి.
+
+- Intended sense: Repair the audited lambda definability file id transposed at lambda-definable-recursive.tex line 9; compare sibling sections' olfileid identifiers, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMLDFEND-20260926:OLTELAMLDFLDR-001 [checked_supports], content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex; lambda-definable-recursive.tex line 9; compare sibling sections' olfileid identifiers; lambda_definability_file_id_transposed; $\olfileid{lam}{ldf}{ldr}$గా సరిచేసి, రక్షిత గుర్తింపు మార్పును పక్కనే ప్రకటించాలి..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTELAMLDFLDR-001 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMLDFLDR-001-OCC-001; OLP-0382; OLP-0382-B004; source upstream/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:9-10 bytes 175-267 SHA-256 ff6f9c3dbe4c11e42b9528b74afa11ecc68978c3c76211000b8e8f279ad1db07; target translation/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:10 bytes 200-732 SHA-256 ee7bf997c34abc008097479f8ac7c162c9995d603b27853c07ce85f1ba57ebe6; reader page pending.

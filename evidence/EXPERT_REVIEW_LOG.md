@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 379 of 722 draft units**. This log contains 97 terminology/sense decisions and 351 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 382 of 722 draft units**. This log contains 99 terminology/sense decisions and 355 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2335,6 +2335,54 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: సాధారణ ప్రమేయం, అంకగణిత/నిరూపణ శైలికి స్థానిక ఆధారం ఉంది. క్రమగుణిత, లాంబ్డా స్థిరబిందు నామకరణానికి ఈ పేజీల్లో ప్రత్యక్ష సాక్ష్యం లేదు; మూల నిర్వచనాలు, పూర్వ స్థిర తెలుగు వాడుక ఆధారంగా తాత్కాలిక ఎంపిక.
 
 - Please double-check: Please double-check whether “క్రమగుణిత ప్రమేయం / పునరావృత్త స్వీయ-సూచన / స్థిరబిందువు / Y-సంయోజకం / బీటా-తుల్యత / నియత రూపం” is idiomatic and technically standard for “factorial / recursive self-reference / fixpoint / Y-combinator / beta-equivalence / normal form” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T098 — regular minimization / general recursive function / partial recursive function / unbounded search / undefined value / normal form
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: సక్రమ కనిష్ఠీకరణ / సామాన్య పునరావృత్త ప్రమేయం / పాక్షిక పునరావృత్త ప్రమేయం / అపరిమిత అన్వేషణ / నిర్వచితం కాని విలువ / నియత రూపం
+
+- Exact implementation: OLP-0380; lambda-calculus/lambda-definability/minimization; content/lambda-calculus/lambda-definability/minimization.tex:9-10 ↔ translation/content/lambda-calculus/lambda-definability/minimization.tex:9-10 (OLP-0380-B004); printed/PDF page pending; OLP-0380; lambda-calculus/lambda-definability/minimization; content/lambda-calculus/lambda-definability/minimization.tex:12-17 ↔ translation/content/lambda-calculus/lambda-definability/minimization.tex:12-21 (OLP-0380-B005); printed/PDF page pending; OLP-0380; lambda-calculus/lambda-definability/minimization; content/lambda-calculus/lambda-definability/minimization.tex:19-26 ↔ translation/content/lambda-calculus/lambda-definability/minimization.tex:23-31 (OLP-0380-B006); printed/PDF page pending; OLP-0381; lambda-calculus/lambda-definability/partial-recursive-functions; content/lambda-calculus/lambda-definability/partial-recursive-functions.tex:9-10 ↔ translation/content/lambda-calculus/lambda-definability/partial-recursive-functions.tex:9-10 (OLP-0381-B004); printed/PDF page pending; OLP-0381; lambda-calculus/lambda-definability/partial-recursive-functions; content/lambda-calculus/lambda-definability/partial-recursive-functions.tex:12-17 ↔ translation/content/lambda-calculus/lambda-definability/partial-recursive-functions.tex:12-18 (OLP-0381-B005); printed/PDF page pending; OLP-0381; lambda-calculus/lambda-definability/partial-recursive-functions; content/lambda-calculus/lambda-definability/partial-recursive-functions.tex:19-29 ↔ translation/content/lambda-calculus/lambda-definability/partial-recursive-functions.tex:20-35 (OLP-0381-B006); printed/PDF page pending
+
+- Authorities actually checked: TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P005లో సహజ సంఖ్యలు, ప్రధాన సంఖ్యల గద్యం; TE-P011లో ప్రమేయం, సంయుక్తం; TE-P027లో పదాల తర్క శైలి; TE-P032లో నిరూపణ గద్యం ప్రత్యక్షంగా చూశాం. ఇవి సక్రమ కనిష్ఠీకరణ, పాక్షిక పునరావృత్తి లేదా లాంబ్డా నియత రూపాన్ని నేరుగా స్థాపించవు. TE-T065, TE-T078, TE-T079, TE-T097 పూర్వ నిర్ణయాలు, OLP-0380–0381 స్థిర మూల నిర్వచనాలు, OLTELAMLDFMIN-001–003 ప్రకటిత సవరణలు ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి. లాంబ్డా ప్రత్యేక గణిత బదిలీ; F, G, H, Y, Search, IsZero, Succ మరియు TeX గణిత సూచనలు గుర్తింపులుగా యథాతథం.
+
+- Alternatives: TE-T065, TE-T078, TE-T079లోని సక్రమత, పాక్షిక పునరావృత్తి, నియత రూపం పదజాలాన్ని OLP-0380–0381 మూల నిర్వచనాలు, ప్రతిదృష్టాంతంతో కొనసాగించడం (ఎంపిక); పాక్షిక ప్రమేయం నిర్వచితం కాని చోట తప్పనిసరిగా F(Gx)కు నియత రూపం ఉండదని ఊహించడం (తిరస్కరణ); స్థానిక సాధారణ పేజీలు లాంబ్డా పాక్షికతను నేరుగా బోధిస్తాయని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: సాధారణ ప్రమేయం, సంఖ్యల, నిరూపణ శైలికి స్థానిక ఆధారం ఉంది; సక్రమత, పాక్షికత, నియత రూపం పేర్లు ఈ పేజీలలో ప్రత్యక్షంగా లేవు. నిర్వచిత/అనిర్వచిత భేదం మూల ప్రతిదృష్టాంతం, పూర్వ తెలుగు వాడుకతో నియంత్రితమైన తాత్కాలిక ఎంపిక.
+
+- Please double-check: Please double-check whether “సక్రమ కనిష్ఠీకరణ / సామాన్య పునరావృత్త ప్రమేయం / పాక్షిక పునరావృత్త ప్రమేయం / అపరిమిత అన్వేషణ / నిర్వచితం కాని విలువ / నియత రూపం” is idiomatic and technically standard for “regular minimization / general recursive function / partial recursive function / unbounded search / undefined value / normal form” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T099 — arithmetization / Gödel number / power-of-primes sequence coding / normalization / Church numeral / converse theorem
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: అంకీకరణ / గోడెల్ సంఖ్య / ప్రధాన సంఖ్యల ఘాతాల ద్వారా శ్రేణి సంకేతీకరణ / నియత రూపం పొందడం / చర్చ్ సంఖ్యాంకం / విలోమ సిద్ధాంతం
+
+- Exact implementation: OLP-0382; lambda-calculus/lambda-definability/lambda-definable-recursive; content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:9-10 ↔ translation/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:9-11 (OLP-0382-B004); printed/PDF page pending; OLP-0382; lambda-calculus/lambda-definability/lambda-definable-recursive; content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:21-30 ↔ translation/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:25-36 (OLP-0382-B007); printed/PDF page pending; OLP-0382; lambda-calculus/lambda-definability/lambda-definable-recursive; content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:21-30 ↔ translation/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:25-36 (OLP-0382-B007); printed/PDF page pending; OLP-0382; lambda-calculus/lambda-definability/lambda-definable-recursive; content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:21-30 ↔ translation/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:25-36 (OLP-0382-B007); printed/PDF page pending; OLP-0382; lambda-calculus/lambda-definability/lambda-definable-recursive; content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:21-30 ↔ translation/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:25-36 (OLP-0382-B007); printed/PDF page pending; OLP-0382; lambda-calculus/lambda-definability/lambda-definable-recursive; content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:32-44 ↔ translation/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:38-53 (OLP-0382-B008); printed/PDF page pending
+
+- Authorities actually checked: TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P005 ప్రధాన సంఖ్య, సంఖ్యా అంకగణిత గద్యానికి; TE-P011 ప్రమేయానికి; TE-P027 పదాల తర్క శైలికి; TE-P032 సిద్ధాంత/నిరూపణ గద్యానికి ప్రత్యక్ష ఆధారం. ఇవి గోడెల్ అంకీకరణను లేదా చర్చ్ సంఖ్యాంకాల నియత రూపాన్ని నేరుగా బోధించవు. TE-T065, TE-T078, TE-T079 పూర్వ నిర్ణయాలు, OLP-0382 మూలంలోని toChurch–normalize–fromChurch క్రమం, OLTELAMLDFLDR-001 ప్రకటిత గుర్తింపు సవరణ ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి. గోడెల్, చర్చ్ మూల వ్యక్తి పేర్ల ధ్వన్యనుకరణ; normalize, toChurch, fromChurch, Gn, F, n_i రక్షిత గణిత/కోడ్ గుర్తింపులుగా యథాతథం.
+
+- Alternatives: గోడెల్ అంకీకరణ–నియత రూపం–చర్చ్ సంఖ్యాంక మార్పిడిని మూల రూపురేఖల పరిమితిలో తెలుగులో వివరించడం (ఎంపిక); మూల నిరూపణ రూపురేఖలను పూర్తి నిర్మాణాత్మక నిరూపణగా ప్రకటించడం (తిరస్కరణ); గోడెల్ పేరు లేదా కోడ్ ప్రమేయాల గుర్తింపులను అనువదించి మూల అనుసంధానం పోగొట్టడం (తిరస్కరణ); స్థానిక ప్రధాన సంఖ్యల పేజీ గోడెల్ సంకేతీకరణను నేరుగా ధృవీకరిస్తుందని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: సాధారణ అంకగణిత/ప్రమేయ/నిరూపణ నమోదు స్థానికంగా కనిపిస్తుంది. అంకీకరణ, గోడెల్ సంఖ్య, సామాన్యీకరణ ప్రత్యేక నామకరణం మూల గణిత నిర్మాణం మరియు పూర్వ వాడుక ఆధారంగా తాత్కాలికం; మూలం నిరూపణ రూపురేఖలనే ఇస్తుంది.
+
+- Please double-check: Please double-check whether “అంకీకరణ / గోడెల్ సంఖ్య / ప్రధాన సంఖ్యల ఘాతాల ద్వారా శ్రేణి సంకేతీకరణ / నియత రూపం పొందడం / చర్చ్ సంఖ్యాంకం / విలోమ సిద్ధాంతం” is idiomatic and technically standard for “arithmetization / Gödel number / power-of-primes sequence coding / normalization / Church numeral / converse theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -10759,3 +10807,99 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: చర్చ్ సంయోజకం బీటా-తుల్యతను మాత్రమే ఇస్తుందనే పోలికలో Y_Cను వాడి, ట్యూరింగ్ Y ముందుకు తగ్గుతుందనే సిద్ధాంతాన్ని నిలిపామా?
+
+## REV-OLTELAMLDFMIN-001 — OLTELAMLDFMIN-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: ప్రతినిధి పదం $H$ను నిలిపి, నిరూపణ గద్యాన్నీ చివరి ఫలితాన్నీ $g$తో సరిపోల్చి పక్కనే ప్రకటించాలి.
+
+- Exact implementation: OLP-0380; lambda-calculus/lambda-definability/minimization; minimization.tex lines 19-35 and 53-54 ↔ translation/content/lambda-calculus/lambda-definability/minimization.tex:43 (OLP-0380-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMLDFEND-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: ప్రతినిధి పదం $H$ను నిలిపి, నిరూపణ గద్యాన్నీ చివరి ఫలితాన్నీ $g$తో సరిపోల్చి పక్కనే ప్రకటించాలి.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMLDFMIN-001 is mathematically precise and idiomatic.
+
+## REV-OLTELAMLDFMIN-002 — OLTELAMLDFMIN-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: శూన్యం కాని శాఖను $(g\,f\,\vec x(\fn{Succ}\,y))$గా చేసి కుండలీకరణాన్ని మూయాలి; సూత్ర సవరణను పక్కనే ప్రకటించాలి.
+
+- Exact implementation: OLP-0380; lambda-calculus/lambda-definability/minimization; minimization.tex lines 32-35, especially line 34 ↔ translation/content/lambda-calculus/lambda-definability/minimization.tex:44 (OLP-0380-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMLDFEND-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: శూన్యం కాని శాఖను $(g\,f\,\vec x(\fn{Succ}\,y))$గా చేసి కుండలీకరణాన్ని మూయాలి; సూత్ర సవరణను పక్కనే ప్రకటించాలి.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMLDFMIN-002 is mathematically precise and idiomatic.
+
+## REV-OLTELAMLDFMIN-003 — OLTELAMLDFMIN-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: $\fn{Search}$ పునరావృత్త దశను తీసుకునే పదమని, స్వీయ-సూచన $Y\,\fn{Search}$లో ఏర్పడుతుందని వేరు చేసి పక్కనే ప్రకటించాలి.
+
+- Exact implementation: OLP-0380; lambda-calculus/lambda-definability/minimization; minimization.tex lines 37-40 ↔ translation/content/lambda-calculus/lambda-definability/minimization.tex:48 (OLP-0380-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMLDFEND-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: $\fn{Search}$ పునరావృత్త దశను తీసుకునే పదమని, స్వీయ-సూచన $Y\,\fn{Search}$లో ఏర్పడుతుందని వేరు చేసి పక్కనే ప్రకటించాలి.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMLDFMIN-003 is mathematically precise and idiomatic.
+
+## REV-OLTELAMLDFLDR-001 — OLTELAMLDFLDR-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: $\olfileid{lam}{ldf}{ldr}$గా సరిచేసి, రక్షిత గుర్తింపు మార్పును పక్కనే ప్రకటించాలి.
+
+- Exact implementation: OLP-0382; lambda-calculus/lambda-definability/lambda-definable-recursive; lambda-definable-recursive.tex line 9; compare sibling sections' olfileid identifiers ↔ translation/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:10 (OLP-0382-B004); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMLDFEND-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: $\olfileid{lam}{ldf}{ldr}$గా సరిచేసి, రక్షిత గుర్తింపు మార్పును పక్కనే ప్రకటించాలి.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMLDFLDR-001 is mathematically precise and idiomatic.

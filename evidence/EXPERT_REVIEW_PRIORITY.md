@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 379 of 722 draft units**. This view selects 404 of 448 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 382 of 722 draft units**. This view selects 408 of 454 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4043,3 +4043,43 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0379; lambda-calculus/lambda-definability/fixpoints; translation/content/lambda-calculus/lambda-definability/fixpoints.tex:178; printed/PDF page pending
 
 - Please double-check: Please double-check: చర్చ్ సంయోజకం బీటా-తుల్యతను మాత్రమే ఇస్తుందనే పోలికలో Y_Cను వాడి, ట్యూరింగ్ Y ముందుకు తగ్గుతుందనే సిద్ధాంతాన్ని నిలిపామా?
+
+## REV-OLTELAMLDFMIN-001 — OLTELAMLDFMIN-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రతినిధి పదం $H$ను నిలిపి, నిరూపణ గద్యాన్నీ చివరి ఫలితాన్నీ $g$తో సరిపోల్చి పక్కనే ప్రకటించాలి.
+
+- Occurrences: OLP-0380; lambda-calculus/lambda-definability/minimization; translation/content/lambda-calculus/lambda-definability/minimization.tex:43; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMLDFMIN-001 is mathematically precise and idiomatic.
+
+## REV-OLTELAMLDFMIN-002 — OLTELAMLDFMIN-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: శూన్యం కాని శాఖను $(g\,f\,\vec x(\fn{Succ}\,y))$గా చేసి కుండలీకరణాన్ని మూయాలి; సూత్ర సవరణను పక్కనే ప్రకటించాలి.
+
+- Occurrences: OLP-0380; lambda-calculus/lambda-definability/minimization; translation/content/lambda-calculus/lambda-definability/minimization.tex:44; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMLDFMIN-002 is mathematically precise and idiomatic.
+
+## REV-OLTELAMLDFMIN-003 — OLTELAMLDFMIN-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: $\fn{Search}$ పునరావృత్త దశను తీసుకునే పదమని, స్వీయ-సూచన $Y\,\fn{Search}$లో ఏర్పడుతుందని వేరు చేసి పక్కనే ప్రకటించాలి.
+
+- Occurrences: OLP-0380; lambda-calculus/lambda-definability/minimization; translation/content/lambda-calculus/lambda-definability/minimization.tex:48; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMLDFMIN-003 is mathematically precise and idiomatic.
+
+## REV-OLTELAMLDFLDR-001 — OLTELAMLDFLDR-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: $\olfileid{lam}{ldf}{ldr}$గా సరిచేసి, రక్షిత గుర్తింపు మార్పును పక్కనే ప్రకటించాలి.
+
+- Occurrences: OLP-0382; lambda-calculus/lambda-definability/lambda-definable-recursive; translation/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:10; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMLDFLDR-001 is mathematically precise and idiomatic.

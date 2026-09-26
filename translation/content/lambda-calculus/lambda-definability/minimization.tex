@@ -1,0 +1,86 @@
+% Part: lambda-calculus
+% Chapter: lambda-definability
+% Section: minimization
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{ldf}{min}
+\olsection{కనిష్ఠీకరణ}
+
+సామాన్య పునరావృత్త ప్రమేయాలు అంటే ప్రాథమిక ప్రమేయాలైన
+$\Zero$, $\Succ$, $\Proj{n}{i}$ల నుంచి సంయుక్తం,
+ఆదిమ పునరావృత్తి, సక్రమ ప్రమేయాలపై కనిష్ఠీకరణ ద్వారా
+పొందగల ప్రమేయాలు. సామాన్య పునరావృత్త ప్రమేయాలన్నీ
+\tetoken{లాంబ్డాతో నిర్వచించదగినవి}{!!{lambda definable}}
+అని చూపాలంటే, \tetoken{లాంబ్డాతో నిర్వచించదగిన}{!!a{lambda
+  definable}} సక్రమ ప్రమేయం నుంచి సక్రమ కనిష్ఠీకరణ ద్వారా
+నిర్వచించిన ప్రతి ప్రమేయం కూడా
+\tetoken{లాంబ్డాతో నిర్వచించదగినదని}{!!{lambda definable}}
+చూపాలి.
+
+\begin{lem}
+  \ollabel{lem:min} $f(x_1, \dots, x_k, y)$ సక్రమమై,
+  \tetoken{లాంబ్డాతో నిర్వచించదగినదైతే}{!!{lambda definable}},
+  \[
+  g(x_1, \dots, x_k) = \umin{y}{f(x_1,\dots,x_k, y) = 0}
+  \]
+  ద్వారా నిర్వచించిన~$g$ కూడా
+  \tetoken{లాంబ్డాతో నిర్వచించదగినది}{!!{lambda definable}}.
+\end{lem}
+
+\begin{proof}
+  సక్రమ ప్రమేయం $f(\vec x, y)$ను లాంబ్డా పదం~$F$
+  $\lambda$-తో నిర్వచిస్తుందని అనుకుందాం. $g$ను
+  \tetoken{లాంబ్డాతో నిర్వచించడానికి}{!!{lambda define}}
+  ఒక అన్వేషణ ప్రమేయాన్నీ స్థిరబిందు సంయోజకాన్నీ వాడతాం:
+  \begin{align*}
+    \fn{Search} & \ident \lambd[g][\lambd[f\,\vec{x}\,y][
+        \fn{IsZero} (f\, \vec{x}\, y)\, y\, (g\, f\, \vec{x} (\fn{Succ}\, y))]]\\
+    H & \ident \lambd[\vec x][(Y \, \fn{Search}) F\, \vec{x}\, \num{0}],
+  \end{align*}
+  \sourcecorrection{OLTELAMLDFMIN-001}{లెమ్మా కనిష్ఠీకరణ ఫలితాన్ని $g$గా ప్రకటించినా ఆంగ్ల మూల నిరూపణ ప్రారంభంలో నిర్వచించాల్సినదాన్ని $h$ అని, చివరి ఫలితంలో $h(n_1,\dots,n_k)$ అని వ్రాసింది. ప్రతినిధి పదం $H$ను నిలిపి, అది సూచించే ప్రమేయాన్ని రెండు చోట్లా $g$గా సరిచేశాం.}
+  \sourcecorrection{OLTELAMLDFMIN-002}{మూల $\fn{Search}$లో పునరావృత్త పిలుపు $g\,\vec x(\fn{Succ}\,y)$ అని ఉండి, $g$కు అవసరమైన $f$ ఆర్గ్యుమెంటును వదిలింది; అంతేకాక ఆ పిలుపు బయటి కుండలీకరణం మూయలేదు. $Y\,\fn{Search}$కు $F$, $\vec x$, $y$ వరుసగా ఇచ్చే కింది సూత్రానికి అనుగుణంగా $g\,f\,\vec x(\fn{Succ}\,y)$గా చేసి కుండలీకరణాన్ని మూశాం.}
+  ఇక్కడ $Y$ ఏ స్థిరబిందు సంయోజకమైనా కావచ్చు. స్థూలంగా,
+  $\fn{Search}$ పునరావృత్త దశను తీసుకునే పదం; దానికి
+  స్థిరబిందు సంయోజకాన్ని ప్రయోగించినప్పుడు స్వీయ-సూచన లభిస్తుంది.
+  \sourcecorrection{OLTELAMLDFMIN-003}{ఆంగ్ల మూలం $\fn{Search}$ స్వయంగా స్వీయ-సూచన ప్రమేయమని పేర్కొంది. దాని శరీరంలో తన పేరు లేదు; పునరావృత్త పిలుపు $g$ అనే పరామితి ద్వారా జరుగుతుంది. $Y\,\fn{Search}$ అనే స్థిరబిందువే ఆ పరామితికి స్వీయ-సూచనను ఇస్తుందని స్పష్టంచేశాం.}
+  $y$ వద్ద మొదలుపెట్టి $f\, \vec x\, y$ సున్నా అవుతుందో
+  పరీక్షిస్తుంది: అవుతే~$y$ను తిరిగి ఇస్తుంది; కాకపోతే
+  $\fn{Succ}\, y$తో తదుపరి దశను పిలుస్తుంది. అందువల్ల
+  $(Y \, \fn{Search}) F
+  \num{n_1}\dots\num{n_k}\,\num{0}$ అనేది $f(n_1,
+  \dots, n_k, m) = 0$ అయ్యే కనిష్ఠ~$m$ను తిరిగి ఇస్తుంది.
+
+  ప్రత్యేకంగా, ఇది గమనించండి:
+  \begin{align*}
+    (Y \, \fn{Search}) F \num{n_1}
+    \dots\num{n_k}\, \num{m} & \red \num{m}
+    \intertext{$f(n_1, \dots,
+      n_k, m) = 0$ అయితే; లేకపోతే}
+    & \red (Y \, \fn{Search}) F\, \num{n_1} \dots\num{n_k}\, \num{m+1}
+    \intertext{$f$ సక్రమం కనుక ఏదో $y$కి $f(n_1, \dots, n_k, y)
+      = 0$ అవుతుంది; అందువల్ల}
+    (Y \, \fn{Search}) F \num{n_1} \dots\num{n_k}\,\num{0}
+    & \red \num{g(n_1, \dots, n_k)}.
+    \end{align*}
+\end{proof}
+
+
+\begin{prop}
+  ప్రతి సామాన్య పునరావృత్త ప్రమేయం
+  \tetoken{లాంబ్డాతో నిర్వచించదగినది}{!!{lambda definable}}.
+\end{prop}
+
+\begin{proof}
+ \olref[prf]{lem:basic} ప్రకారం ప్రాథమిక ప్రమేయాలన్నీ
+ \tetoken{లాంబ్డాతో నిర్వచించదగినవి}{!!{lambda definable}};
+ \olref[prf]{lem:comp}, \olref[prf]{lem:prim},
+ \olref{lem:min} ప్రకారం
+ \tetoken{లాంబ్డాతో నిర్వచించదగిన}{!!{lambda definable}}
+ ప్రమేయాలు సంయుక్తం, ఆదిమ పునరావృత్తి,
+ సక్రమ ప్రమేయాలపై కనిష్ఠీకరణ కింద సంవృతమైనవి.
+\end{proof}
+
+\end{document}

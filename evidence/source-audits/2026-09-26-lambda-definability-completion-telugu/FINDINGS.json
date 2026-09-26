@@ -1,0 +1,73 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTELAMLDFEND-20260926",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": ["OLP-0380", "OLP-0381", "OLP-0382"],
+    "finding_count": 4
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "source_files": [
+    {
+      "unit_id": "OLP-0380",
+      "path": "content/lambda-calculus/lambda-definability/minimization.tex",
+      "bytes": 2488,
+      "sha256": "4da3bef314009bbd93701e19fa66ff1bd7dc718427fa1ddd06d223b2aaf9b7f6"
+    },
+    {
+      "unit_id": "OLP-0381",
+      "path": "content/lambda-calculus/lambda-definability/partial-recursive-functions.tex",
+      "bytes": 1832,
+      "sha256": "a74678e3cced4a3650d799dae58d106964e63ddd9fd71b739a51531ef73325f0"
+    },
+    {
+      "unit_id": "OLP-0382",
+      "path": "content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex",
+      "bytes": 1967,
+      "sha256": "ff6f9c3dbe4c11e42b9528b74afa11ecc68978c3c76211000b8e8f279ad1db07"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "OLTELAMLDFMIN-001",
+      "unit_id": "OLP-0380",
+      "classification": "minimization_result_named_h_instead_of_g",
+      "source_locator": "minimization.tex lines 19-35 and 53-54",
+      "finding": "లెమ్మా కనిష్ఠీకరణతో పొందే ప్రమేయాన్ని $g$గా నిర్వచిస్తుంది; నిరూపణ ప్రారంభం మాత్రం $h$ను నిర్వచిస్తామని, ముగింపు $\\num{h(n_1,\\dots,n_k)}$ అని చెబుతాయి.",
+      "controlling_evidence": "లెమ్మాలో $g(x_1,\\dots,x_k)=\\umin{y}{f(x_1,\\dots,x_k,y)=0}$; నిర్మించిన ప్రతినిధి పదం పెద్ద అక్షరం $H$ అయినా అది సూచించే ప్రమేయం అదే $g$.",
+      "required_translation_handling": "ప్రతినిధి పదం $H$ను నిలిపి, నిరూపణ గద్యాన్నీ చివరి ఫలితాన్నీ $g$తో సరిపోల్చి పక్కనే ప్రకటించాలి."
+    },
+    {
+      "finding_id": "OLTELAMLDFMIN-002",
+      "unit_id": "OLP-0380",
+      "classification": "search_recursive_call_omits_function_argument_and_closing_parenthesis",
+      "source_locator": "minimization.tex lines 32-35, especially line 34",
+      "finding": "మూల $\\fn{Search}$లో పునరావృత్త పిలుపు $(g\\,\\vec x(\\fn{Succ}\\,y)$గా ఉంది: పునరావృత్త సహాయక పదానికి $f$ ఆర్గ్యుమెంటు లేదు; పిలుపు బయటి కుండలీకరణం కూడా మూయలేదు.",
+      "controlling_evidence": "$\\fn{Search}$ శరీరం $g$తో పాటు $f,\\vec x,y$లను తీసుకుంటుంది; $H$లో $(Y\\,\\fn{Search})F\\,\\vec x\\,\\num{0}$ను వాడుతుంది. శూన్యం కాని శాఖలో అదే $f$ను మళ్లీ ఇవ్వకుండా తరువాతి $y$ వద్ద పరీక్ష కొనసాగదు.",
+      "required_translation_handling": "శూన్యం కాని శాఖను $(g\\,f\\,\\vec x(\\fn{Succ}\\,y))$గా చేసి కుండలీకరణాన్ని మూయాలి; సూత్ర సవరణను పక్కనే ప్రకటించాలి."
+    },
+    {
+      "finding_id": "OLTELAMLDFMIN-003",
+      "unit_id": "OLP-0380",
+      "classification": "search_operator_called_intrinsically_self_referencing",
+      "source_locator": "minimization.tex lines 37-40",
+      "finding": "మూలం $\\fn{Search}$ను నేరుగా స్వీయ-సూచన ప్రమేయమంటుంది. దాని శరీరంలో తన పేరు లేదు; పునరావృత్త పిలుపు పరామితి $g$ ద్వారా ఉంటుంది.",
+      "controlling_evidence": "$Y$ స్థిరబిందు సంయోజకాన్ని $\\fn{Search}$కు ప్రయోగించి $(Y\\,\\fn{Search})$ను ఏర్పరిచిన తరువాతే పునరావృత్త పరామితి ఆ పదానికే తిరిగి సూచిస్తుంది. ఈ తేడా ముందరి OLP-0379 స్థిరబిందు నిర్మాణంతో సరిపోతుంది.",
+      "required_translation_handling": "$\\fn{Search}$ పునరావృత్త దశను తీసుకునే పదమని, స్వీయ-సూచన $Y\\,\\fn{Search}$లో ఏర్పడుతుందని వేరు చేసి పక్కనే ప్రకటించాలి."
+    },
+    {
+      "finding_id": "OLTELAMLDFLDR-001",
+      "unit_id": "OLP-0382",
+      "classification": "lambda_definability_file_id_transposed",
+      "source_locator": "lambda-definable-recursive.tex line 9; compare sibling sections' olfileid identifiers",
+      "finding": "మూలం ఈ విభాగానికి $\\olfileid{lam}{dfl}{ldr}$ అని పెట్టింది; అదే అధ్యాయంలోని ఇతర విభాగాల్లో మధ్య గుర్తింపు $ldf$.",
+      "controlling_evidence": "అధ్యాయంలోని OLP-0374–0381 విభాగాల $\\olfileid$లలో, ముఖ్యంగా ముందరి రెండు విభాగాల్లో, $lam/ldf$ ఏకరీతి ఉంది. $dfl$ ఆ రెండు అక్షరాల స్థాన మార్పు; స్వతంత్ర అధ్యాయ గుర్తింపు కాదు.",
+      "required_translation_handling": "$\\olfileid{lam}{ldf}{ldr}$గా సరిచేసి, రక్షిత గుర్తింపు మార్పును పక్కనే ప్రకటించాలి."
+    }
+  ]
+}

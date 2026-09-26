@@ -430,6 +430,22 @@ locations['TE-T097']=[
  L('content/lambda-calculus/lambda-definability/fixpoints.tex',102,107,113,118,'normal form','నియత రూపంలో'),
  L('content/lambda-calculus/lambda-definability/fixpoints.tex',157,164,168,178,"Church's combinator",'చర్చ్ సంయోజకం')
 ];
+locations['TE-T098']=[
+ L('content/lambda-calculus/lambda-definability/minimization.tex',10,10,10,10,'Minimization','కనిష్ఠీకరణ'),
+ L('content/lambda-calculus/lambda-definability/minimization.tex',12,17,12,21,'regular minimization','సక్రమ ప్రమేయాలపై కనిష్ఠీకరణ'),
+ L('content/lambda-calculus/lambda-definability/minimization.tex',19,25,23,31,'regular','సక్రమమై'),
+ L('content/lambda-calculus/lambda-definability/partial-recursive-functions.tex',10,10,10,10,'Partial Recursive Functions','పాక్షిక పునరావృత్త ప్రమేయాలు'),
+ L('content/lambda-calculus/lambda-definability/partial-recursive-functions.tex',12,17,12,18,'unbounded','అపరిమిత'),
+ L('content/lambda-calculus/lambda-definability/partial-recursive-functions.tex',25,29,29,35,'normal form','నియత రూపం')
+];
+locations['TE-T099']=[
+ L('content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex',10,10,11,11,'Functions are Recursive','ప్రమేయాలు పునరావృత్తమైనవి'),
+ L('content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex',22,24,26,29,'arithmetize','అంకీకరిస్తాం'),
+ L('content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex',22,24,26,29,'power-of-primes','ప్రధాన సంఖ్యల'),
+ L('content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex',25,30,29,36,'\\fn{normalize}(t)','\\fn{normalize}(t)'),
+ L('content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex',28,30,33,36,'\\fn{toChurch}','\\fn{toChurch}'),
+ L('content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex',32,43,38,52,'\\fn{fromChurch}','\\fn{fromChurch}')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -512,6 +528,8 @@ alternatives['TE-T094']=['TE-P034లో ప్రత్యక్షంగా ఉ
 alternatives['TE-T095']=['పూర్వ సత్యమూల్యం, సంయోగం, వికల్పం పదాలను సూత్రాల ఎంపిక-ప్రమేయ అర్థంతో కొనసాగించడం (ఎంపిక)','సత్యమూల్యపు లాంబ్డా సంకేతీకరణకు ప్రత్యక్ష స్థానిక సాక్ష్యం ఉందని చెప్పడం (తిరస్కరణ)','బహిష్కార వికల్పాన్ని కనీసం ఒకటి నిజమైన సందర్భంతో కలపడం (తిరస్కరణ)','సంబంధపు స్థానం n/k అసమానతను దాచడం (తిరస్కరణ)'];
 alternatives['TE-T096']=['TE-T064, TE-T079, TE-T094లోని ఆదిమ పునరావృత్తి, సంయుక్తం, క్రమయుగ్మం రూపాలను ఈ దశ-స్థితి నిర్మాణంలో నిలపడం (ఎంపిక)','దశ ప్రమేయం g బదులు n+1-స్థానిక hనే n+2 ఆర్గ్యుమెంట్లకు ప్రయోగించడం (తిరస్కరణ)','స్థానిక పేజీలు చర్చ్ పునరావర్తక లాంబ్డా పదాన్ని నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ)','ఆగమన స్థితిలో సూచిక, విలువ అవయవాల క్రమాన్ని మార్చడం (తిరస్కరణ)'];
 alternatives['TE-T097']=['పూర్వ క్రమగుణిత ప్రమేయం, స్థిరబిందువు, సంయోజకం, బీటా-తుల్యత, నియత రూపం వాడుకను మూల ట్యూరింగ్/చర్చ్ తగ్గింపుల భేదంతో కొనసాగించడం (ఎంపిక)','ఒకే సంఖ్యాప్రమేయాన్ని సూచించడం నుంచి పదాల బీటా-తుల్యతను తేల్చడం (తిరస్కరణ)','చర్చ్, ట్యూరింగ్ సంయోజకాల్లో ఏది ముందుకు తగ్గుతుందో కలపడం (తిరస్కరణ)','స్థానిక సాధారణ పేజీలు లాంబ్డా స్థిరబిందు సిద్ధాంతాన్ని నేరుగా బోధిస్తాయని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T098']=['TE-T065, TE-T078, TE-T079లోని సక్రమత, పాక్షిక పునరావృత్తి, నియత రూపం పదజాలాన్ని OLP-0380–0381 మూల నిర్వచనాలు, ప్రతిదృష్టాంతంతో కొనసాగించడం (ఎంపిక)','పాక్షిక ప్రమేయం నిర్వచితం కాని చోట తప్పనిసరిగా F(Gx)కు నియత రూపం ఉండదని ఊహించడం (తిరస్కరణ)','స్థానిక సాధారణ పేజీలు లాంబ్డా పాక్షికతను నేరుగా బోధిస్తాయని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T099']=['గోడెల్ అంకీకరణ–నియత రూపం–చర్చ్ సంఖ్యాంక మార్పిడిని మూల రూపురేఖల పరిమితిలో తెలుగులో వివరించడం (ఎంపిక)','మూల నిరూపణ రూపురేఖలను పూర్తి నిర్మాణాత్మక నిరూపణగా ప్రకటించడం (తిరస్కరణ)','గోడెల్ పేరు లేదా కోడ్ ప్రమేయాల గుర్తింపులను అనువదించి మూల అనుసంధానం పోగొట్టడం (తిరస్కరణ)','స్థానిక ప్రధాన సంఖ్యల పేజీ గోడెల్ సంకేతీకరణను నేరుగా ధృవీకరిస్తుందని చెప్పడం (తిరస్కరణ)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -528,7 +546,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T097 record the Batch 025--Batch 056 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T099 record the Batch 025--Batch 057 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);

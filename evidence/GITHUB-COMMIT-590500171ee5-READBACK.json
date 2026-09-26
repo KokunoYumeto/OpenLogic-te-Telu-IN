@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-commit-readback/1",
+  "checked_at": "2026-09-26T03:16:57.918Z",
+  "commit": "590500171ee5b31235ceba97fccb2afacc1a00de",
+  "anonymous": true,
+  "authorization_header_sent": false,
+  "file_count": 1,
+  "files": [
+    {
+      "path": "evidence/GITHUB-COMMIT-ffcf3da3b55d-READBACK.json",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/590500171ee5b31235ceba97fccb2afacc1a00de/evidence/GITHUB-COMMIT-ffcf3da3b55d-READBACK.json",
+      "bytes": 12482,
+      "sha256": "2270ede950de3264bb39d9bd98ae3c5f5bf6803e8f02ba1eccf19b05e3e718a9",
+      "expected_bytes": 12482,
+      "expected_sha256": "2270ede950de3264bb39d9bd98ae3c5f5bf6803e8f02ba1eccf19b05e3e718a9",
+      "match": true
+    }
+  ],
+  "status": "COMPLETE_PASS"
+}
