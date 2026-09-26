@@ -1,0 +1,119 @@
+{
+  "schema": "openlogic-te-commit-readback/1",
+  "checked_at": "2026-09-26T18:49:03.426Z",
+  "commit": "55ccac2826f1d97107c378e537d29d9c2ef179e9",
+  "anonymous": true,
+  "authorization_header_sent": false,
+  "file_count": 12,
+  "files": [
+    {
+      "path": "evidence/GITHUB-COMMIT-77ffb3660fac-READBACK.json",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/55ccac2826f1d97107c378e537d29d9c2ef179e9/evidence/GITHUB-COMMIT-77ffb3660fac-READBACK.json",
+      "bytes": 1293,
+      "sha256": "61405b6ce0fc16f71e18a5b52851e7809dbd3406099a9c6736707090d448739c",
+      "expected_bytes": 1293,
+      "expected_sha256": "61405b6ce0fc16f71e18a5b52851e7809dbd3406099a9c6736707090d448739c",
+      "match": true
+    },
+    {
+      "path": "evidence/SEGMENT_CANON_USE.jsonl",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/55ccac2826f1d97107c378e537d29d9c2ef179e9/evidence/SEGMENT_CANON_USE.jsonl",
+      "bytes": 14524466,
+      "sha256": "47797c28da0f17ae0f1a4b027ee67ebd4fcf8c9433db9ec2f833f299a0c54564",
+      "expected_bytes": 14524466,
+      "expected_sha256": "47797c28da0f17ae0f1a4b027ee67ebd4fcf8c9433db9ec2f833f299a0c54564",
+      "match": true
+    },
+    {
+      "path": "evidence/SOURCE_CORRECTIONS.jsonl",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/55ccac2826f1d97107c378e537d29d9c2ef179e9/evidence/SOURCE_CORRECTIONS.jsonl",
+      "bytes": 392631,
+      "sha256": "d49ea5868e04341f278b8ffdc59d1ff6dff746b90f2c3a0708f7b5f4cc097beb",
+      "expected_bytes": 392631,
+      "expected_sha256": "d49ea5868e04341f278b8ffdc59d1ff6dff746b90f2c3a0708f7b5f4cc097beb",
+      "match": true
+    },
+    {
+      "path": "evidence/TERM_DECISIONS.jsonl",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/55ccac2826f1d97107c378e537d29d9c2ef179e9/evidence/TERM_DECISIONS.jsonl",
+      "bytes": 186943,
+      "sha256": "47dfad34b8a0b27d1db101f3c27143452dfd4d473971569a553ecc9a12446158",
+      "expected_bytes": 186943,
+      "expected_sha256": "47dfad34b8a0b27d1db101f3c27143452dfd4d473971569a553ecc9a12446158",
+      "match": true
+    },
+    {
+      "path": "evidence/source-audits/2026-09-26-kleene-three-valued-telugu/FINDINGS.json",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/55ccac2826f1d97107c378e537d29d9c2ef179e9/evidence/source-audits/2026-09-26-kleene-three-valued-telugu/FINDINGS.json",
+      "bytes": 3565,
+      "sha256": "8d2a2aa821c61ce202974cd2043efedb63303c9eae3f009ad6c63a146cb227c1",
+      "expected_bytes": 3565,
+      "expected_sha256": "8d2a2aa821c61ce202974cd2043efedb63303c9eae3f009ad6c63a146cb227c1",
+      "match": true
+    },
+    {
+      "path": "evidence/source-audits/2026-09-26-kleene-three-valued-telugu/REVIEW.md",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/55ccac2826f1d97107c378e537d29d9c2ef179e9/evidence/source-audits/2026-09-26-kleene-three-valued-telugu/REVIEW.md",
+      "bytes": 1555,
+      "sha256": "e9763acddee7e97229713ed6d76e882d0c5b3b1805133563d409b668f7a6f43f",
+      "expected_bytes": 1555,
+      "expected_sha256": "e9763acddee7e97229713ed6d76e882d0c5b3b1805133563d409b668f7a6f43f",
+      "match": true
+    },
+    {
+      "path": "evidence/source-audits/2026-09-26-multiple-designation-telugu/FINDINGS.json",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/55ccac2826f1d97107c378e537d29d9c2ef179e9/evidence/source-audits/2026-09-26-multiple-designation-telugu/FINDINGS.json",
+      "bytes": 5832,
+      "sha256": "2642299b08f2d7272f3af1f52d3eccf6322fcc4b700ab7a2f958058fdb7db54e",
+      "expected_bytes": 5832,
+      "expected_sha256": "2642299b08f2d7272f3af1f52d3eccf6322fcc4b700ab7a2f958058fdb7db54e",
+      "match": true
+    },
+    {
+      "path": "evidence/source-audits/2026-09-26-multiple-designation-telugu/REVIEW.md",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/55ccac2826f1d97107c378e537d29d9c2ef179e9/evidence/source-audits/2026-09-26-multiple-designation-telugu/REVIEW.md",
+      "bytes": 2294,
+      "sha256": "4a192c104ec73992a1d7f186cbc63b245b8a24d07349f39729c903bcfb7b43a7",
+      "expected_bytes": 2294,
+      "expected_sha256": "4a192c104ec73992a1d7f186cbc63b245b8a24d07349f39729c903bcfb7b43a7",
+      "match": true
+    },
+    {
+      "path": "scripts/add-batch062-evidence.mjs",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/55ccac2826f1d97107c378e537d29d9c2ef179e9/scripts/add-batch062-evidence.mjs",
+      "bytes": 13262,
+      "sha256": "f784bfb6dec125cf537287c631a444cbb9cf31fc79e5e87dc6f34fd112cdff97",
+      "expected_bytes": 13262,
+      "expected_sha256": "f784bfb6dec125cf537287c631a444cbb9cf31fc79e5e87dc6f34fd112cdff97",
+      "match": true
+    },
+    {
+      "path": "translation/content/many-valued-logic/three-valued-logics/goedel.tex",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/55ccac2826f1d97107c378e537d29d9c2ef179e9/translation/content/many-valued-logic/three-valued-logics/goedel.tex",
+      "bytes": 5953,
+      "sha256": "cf5d69090b1fee83d2f8602b6ed6ce02c238478a8636bc3cd7c250995117673a",
+      "expected_bytes": 5953,
+      "expected_sha256": "cf5d69090b1fee83d2f8602b6ed6ce02c238478a8636bc3cd7c250995117673a",
+      "match": true
+    },
+    {
+      "path": "translation/content/many-valued-logic/three-valued-logics/kleene.tex",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/55ccac2826f1d97107c378e537d29d9c2ef179e9/translation/content/many-valued-logic/three-valued-logics/kleene.tex",
+      "bytes": 12379,
+      "sha256": "42ef46da6352a1a039d37e4ed6228146b08b9ef7e90a33937484a67e1feb9453",
+      "expected_bytes": 12379,
+      "expected_sha256": "42ef46da6352a1a039d37e4ed6228146b08b9ef7e90a33937484a67e1feb9453",
+      "match": true
+    },
+    {
+      "path": "translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/55ccac2826f1d97107c378e537d29d9c2ef179e9/translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex",
+      "bytes": 17740,
+      "sha256": "18672add254fa3a5f854b6d92f87d48664ef26e2e0983003eaf675f0b7149195",
+      "expected_bytes": 17740,
+      "expected_sha256": "18672add254fa3a5f854b6d92f87d48664ef26e2e0983003eaf675f0b7149195",
+      "match": true
+    }
+  ],
+  "status": "COMPLETE_PASS"
+}

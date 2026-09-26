@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 394 of 722 draft units**. This view selects 415 of 465 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 397 of 722 draft units**. This view selects 423 of 474 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4153,3 +4153,83 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:282; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the modal counterexample evaluate to False for p=Undef by the printed conjunction, Diamond and negation tables, with its non-tautology conclusion preserved?
+
+## REV-OLTEMVLKLE-001 — OLTEMVLKLE-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: బలమైన క్లీని మాత్రికను చరాలు, నాలుగు పట్టిక సంయోజకాల ఉపభాషకు పరిమితం చేసి, అసత్య స్థిరాంకం లేదని నిర్వచనం పక్కన ప్రకటించాం.
+
+- Occurrences: OLP-0395; many-valued-logic/three-valued-logics/kleene; translation/content/many-valued-logic/three-valued-logics/kleene.tex:97; printed/PDF page pending
+
+- Please double-check: Please double-check: Is strong Kleene logic explicitly restricted to the variable-generated four-connective language, so the no-tautology theorem does not silently include a falsity constant?
+
+## REV-OLTEMVLKLE-002 — OLTEMVLKLE-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: బలహీనమైన క్లీని మాత్రికకూ అదే ఉపభాష పరిమితిని పేర్కొని, అసత్య స్థిరాంకాన్ని చేర్చలేదని నిర్వచనం పక్కన ప్రకటించాం.
+
+- Occurrences: OLP-0395; many-valued-logic/three-valued-logics/kleene; translation/content/many-valued-logic/three-valued-logics/kleene.tex:151; printed/PDF page pending
+
+- Please double-check: Please double-check: Is weak Kleene logic given the same explicit language restriction, with all four printed truth tables unchanged?
+
+## REV-OLTEMVLMUL-001 — OLTEMVLMUL-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: వైరుధ్యాభాస తర్క భాషను నాలుగు సంయోజకాల చర-ఆధారిత ఉపభాషగా స్పష్టం చేసి అసత్య స్థిరాంకం లేదని పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0397; many-valued-logic/three-valued-logics/multiple-designation; translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:34; printed/PDF page pending
+
+- Please double-check: Please double-check: Does LP inherit only the strong-Kleene four-connective language, without silently assigning a truth value to the missing falsity constant?
+
+## REV-OLTEMVLMUL-002 — OLTEMVLMUL-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: హాల్డెన్ భాషను నాలుగు సంయోజకాల ఉపభాషకు అదనపు ఏకస్థానిక సంయోజకం చేర్చినదిగా స్పష్టం చేసి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0397; many-valued-logic/three-valued-logics/multiple-designation; translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:66; printed/PDF page pending
+
+- Please double-check: Please double-check: Does Hallden extend the weak-Kleene four-connective fragment by plus while leaving the absent falsity constant unassigned?
+
+## REV-OLTEMVLMUL-003 — OLTEMVLMUL-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సర్వసత్యాల సమానత్వాన్ని రెండు తర్కాల ఉమ్మడి నాలుగు సంయోజకాల భాషకే పరిమితం చేసి ప్రతిపాదన పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0397; many-valued-logic/three-valued-logics/multiple-designation; translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:81; printed/PDF page pending
+
+- Please double-check: Please double-check: Is equality of LP and classical tautologies stated for their common four-connective language, as the proof requires?
+
+## REV-OLTEMVLMUL-004 — OLTEMVLMUL-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: చరానికి రెండు కేటాయింపుల్లో వేర్వేరు విలువలు రావచ్చని చూపి, కావలసిన అసత్య సత్య సంరక్షణలను మాత్రమే నిరూపించి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0397; many-valued-logic/three-valued-logics/multiple-designation; translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:137; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the induction base avoid equating v and v-prime on Undef and prove only preservation of definite False and True values?
+
+## REV-OLTEMVLMUL-005 — OLTEMVLMUL-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సంయోగ నిరూపణలో అసత్య, సత్య సందర్భాల రెండవ భాగాన్ని మొదటి భాగపు పునరావృతం నుంచి సరైన రెండవ భాగానికి మార్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0397; many-valued-logic/three-valued-logics/multiple-designation; translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:183; printed/PDF page pending
+
+- Please double-check: Please double-check: Do the false and true conjunction cases use B and C respectively, matching the strong Kleene table and their inductive conclusions?
+
+## REV-OLTEMVLMUL-006 — OLTEMVLMUL-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సర్వసత్యాల సమానత్వ వాదాన్ని సాధారణ నాలుగు సంయోజకాల భాషకే పరిమితం చేసి అదనపు సంచాలక భేదాన్ని పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0397; many-valued-logic/three-valued-logics/multiple-designation; translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:226; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the shared-tautology claim scoped to the common four-connective language rather than treating Hallden plus-formulas as classical formulas?

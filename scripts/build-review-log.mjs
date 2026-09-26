@@ -503,6 +503,20 @@ locations['TE-T103']=[
  L('content/many-valued-logic/three-valued-logics/lukasiewicz.tex',222,223,258,260,'possible','సాధ్యం'),
  L('content/many-valued-logic/three-valued-logics/lukasiewicz.tex',231,240,270,283,'modal logic','మోడల్ తర్కపు')
 ];
+locations['TE-T104']=[
+ L('content/many-valued-logic/three-valued-logics/kleene.tex',11,11,11,11,'Kleene logics','క్లీని తర్కాలు'),
+ L('content/many-valued-logic/three-valued-logics/kleene.tex',15,17,13,18,'undefined','నిర్వచితం కాదు'),
+ L('content/many-valued-logic/three-valued-logics/kleene.tex',31,35,35,40,'in parallel','సమాంతరంగా'),
+ L('content/many-valued-logic/three-valued-logics/kleene.tex',46,46,53,54,'Strong Kleene logic','బలమైన క్లీని తర్కం'),
+ L('content/many-valued-logic/three-valued-logics/kleene.tex',90,90,107,108,'Weak Kleene logic','బలహీనమైన క్లీని తర్కం'),
+ L('content/many-valued-logic/three-valued-logics/goedel.tex',11,11,11,11,'G\\"odel logics','గోడెల్ తర్కాలు'),
+ L('content/many-valued-logic/three-valued-logics/goedel.tex',13,15,13,18,'intuitionistic logic','అంతర్బోధవాద తర్కంలో'),
+ L('content/many-valued-logic/three-valued-logics/multiple-designation.tex',20,20,22,23,'logic of paradox','వైరుధ్యాభాస తర్కం'),
+ L('content/many-valued-logic/three-valued-logics/multiple-designation.tex',31,31,43,44,'logic of nonsense','అర్థరహిత తర్కం'),
+ L('content/many-valued-logic/three-valued-logics/multiple-designation.tex',141,142,220,223,'paraconsistent','విస్ఫోటనరహిత'),
+ L('content/many-valued-logic/three-valued-logics/multiple-designation.tex',162,162,251,255,'R-Mingle','ఆర్-మింగిల్'),
+ L('content/many-valued-logic/three-valued-logics/multiple-designation.tex',22,23,25,28,'standard propositional language','ఉపభాష')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -591,6 +605,7 @@ alternatives['TE-T100']=['TE-P019లో ప్రత్యక్షంగా క
 alternatives['TE-T101']=['స్థానసంఖ్యను n-స్థానిక సంయోజకంగా, మాత్రికను మూల నిర్వచించిన భాష–V–V^+–సత్యమూల్య ప్రమేయాల నిర్మాణంగా చదవడం (ఎంపిక)','మాత్రికను కేవలం సంఖ్యల దీర్ఘచతురస్ర పట్టికగా చదవడం (తిరస్కరణ)','గుణిత తర్కం, నిర్ణీతత్వ సంచాలకం పేర్లకు స్థానిక ద్విమూల్య తర్క పేజీలే నేరుగా సాక్ష్యమని ప్రకటించడం (తిరస్కరణ)','మూల n, 0, 1, 2 స్థానసంఖ్యలను వదిలేయడం (తిరస్కరణ)'];
 alternatives['TE-T102']=['కేటాయింపు, మూల్యాంకనం, సంతృప్తి, అనుగమనం అనే వేరు సంబంధాలను మూల మాత్రిక నిర్వచనాలకు అనుగుణంగా విడదీయడం; నాలుగు సంయోజకాలతో చరాల నుంచి నిర్మించిన సాధారణ భాగానికే పోలిక ఫలితాన్ని పరిమితం చేయడం (ఎంపిక)','కేటాయింపునే సూత్రాల సమితి అనుగమనానికి ఎడమ పదంగా చదవడం (తిరస్కరణ; మూల సంబంధానికి రకం సరిపోదు)','నాలుగు సంయోజకాల పరికల్పనల నుంచే భాషలోని అన్ని స్థిరాంకాలు, అదనపు సంయోజకాల విలువలూ నియంత్రితమవుతాయని ఊహించడం (తిరస్కరణ; ప్రతిదృష్టాంతం ఉంది)','స్థానిక ద్విమూల్య పేజీలు బహుమూల్య సంతృప్తి, ఉపతర్కం ప్రత్యేక పదజాలాన్ని నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T103']=['సత్యమూల్యం, సత్య పట్టిక, ప్రమేయం, ఫలితానికి ప్రత్యక్ష స్థానిక పేజీల వాడుకను; అనిర్ణీత మూడవ విలువ, భవిష్యత్ ఆధారిత వాక్యం, మోడల్ సాధ్యత/అనివార్యతకు స్థిర మూల పట్టికలు, TE-T053/100/102 అర్థ నియంత్రణను వేరుగా నమోదు చేయడం (ఎంపిక)','స్థానిక ద్విమూల్య పట్టికలే లూకాసియెవిచ్ మూడు-విలువల లేదా మోడల్ పదాలకు ప్రత్యక్ష సాక్ష్యమని చెప్పడం (తిరస్కరణ)','సాధ్యమే కాని తప్పనిసరి కాదు అనే చారిత్రక ఉపయోగాన్ని నేటి సాధారణ సాధ్యతతో ఒకటిగా చదవడం (తిరస్కరణ; మూల పాదటిప్పణి భేదం చెబుతుంది)','నాలుగు ముద్రిత పట్టికలే అసత్య స్థిరాంక విలువను నిర్బంధిస్తాయని ఊహించి దాని సంపాదకీయ చేర్పును దాచడం (తిరస్కరణ)'];
+alternatives['TE-T104']=['TE-T032/100/101/102/103లోని సత్యమూల్యం, మాత్రిక, వికల్పం, సర్వసత్యం, అనుగమనం పదాలను కొనసాగించి ప్రత్యేక మూడు-విలువల వ్యవస్థల పేర్లు, విస్ఫోటనరహిత భావం మూల నిర్వచనాలకు కట్టుబడి తాత్కాలికంగా ఇవ్వడం (ఎంపిక)','స్థానిక ద్విమూల్య పేజీలు క్లీని, గోడెల్, LP, హాల్డెన్, ఆర్-మింగిల్ వ్యవస్థలను నేరుగా బోధిస్తాయని చెప్పడం (తిరస్కరణ)','అసత్య స్థిరాంకానికి మూలంలో లేని విలువను మౌనంగా చేర్చి క్లీని సర్వసత్యాలు లేవనే వాదం నిలుస్తుందని ఊహించడం (తిరస్కరణ)','విస్ఫోటనరహితతను అన్ని వైరుధ్యాలనుంచి అన్ని ముగింపులు వస్తాయని పొరబడడం (తిరస్కరణ)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -607,7 +622,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T103 record the Batch 025--Batch 061 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T104 record the Batch 025--Batch 062 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -659,6 +674,14 @@ const correctionQuestions={
  'OLTEMVLLUK-002':'Does the standard L_0 matrix explicitly interpret its falsity constant as False, while disclosing that the four printed tables alone do not force this editorial completion?',
  'OLTEMVLLUK-003':'Was only the unmatched last parenthesis removed from the first non-tautology exercise formula?',
  'OLTEMVLLUK-004':'Does the modal counterexample evaluate to False for p=Undef by the printed conjunction, Diamond and negation tables, with its non-tautology conclusion preserved?',
+ 'OLTEMVLKLE-001':'Is strong Kleene logic explicitly restricted to the variable-generated four-connective language, so the no-tautology theorem does not silently include a falsity constant?',
+ 'OLTEMVLKLE-002':'Is weak Kleene logic given the same explicit language restriction, with all four printed truth tables unchanged?',
+ 'OLTEMVLMUL-001':'Does LP inherit only the strong-Kleene four-connective language, without silently assigning a truth value to the missing falsity constant?',
+ 'OLTEMVLMUL-002':'Does Hallden extend the weak-Kleene four-connective fragment by plus while leaving the absent falsity constant unassigned?',
+ 'OLTEMVLMUL-003':'Is equality of LP and classical tautologies stated for their common four-connective language, as the proof requires?',
+ 'OLTEMVLMUL-004':'Does the induction base avoid equating v and v-prime on Undef and prove only preservation of definite False and True values?',
+ 'OLTEMVLMUL-005':'Do the false and true conjunction cases use B and C respectively, matching the strong Kleene table and their inductive conclusions?',
+ 'OLTEMVLMUL-006':'Is the shared-tautology claim scoped to the common four-connective language rather than treating Hallden plus-formulas as classical formulas?',
  'OLTEPLSYN-002':'Does the material-conditional abbreviation read exactly as not A or B after removal of the source’s unmatched closing parenthesis?',
  'OLTEPLSYN-003':'Does the formation-sequence proof use syntactic identity, rather than semantic equivalence, for literal identity of symbol strings?',
  'OLTEPLSYN-004':'Does Local Determination unambiguously restrict agreement to variables occurring in the one fixed formula A?',

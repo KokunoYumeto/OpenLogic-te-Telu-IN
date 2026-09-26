@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **394 of 722 source units drafted**. This readable view contains all 465 decisions and 922 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **397 of 722 source units drafted**. This readable view contains all 474 decisions and 942 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3058,6 +3058,43 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T103-OCC-013; OLP-0394; OLP-0394-B019; source upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:201-223 bytes 8536-9240 SHA-256 fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a; target translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:235-260 bytes 15304-16465 SHA-256 8d58323053847a3488e3f0d8eed84f03461d6e5e7e07d79cb44234df3b23d076; reader page pending.
   - te-Telu-IN-TE-T103-OCC-014; OLP-0394; OLP-0394-B019; source upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:201-223 bytes 8536-9240 SHA-256 fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a; target translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:235-260 bytes 15304-16465 SHA-256 8d58323053847a3488e3f0d8eed84f03461d6e5e7e07d79cb44234df3b23d076; reader page pending.
   - te-Telu-IN-TE-T103-OCC-015; OLP-0394; OLP-0394-B021; source upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:231-240 bytes 9450-10051 SHA-256 fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a; target translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:270-287 bytes 16765-18439 SHA-256 8d58323053847a3488e3f0d8eed84f03461d6e5e7e07d79cb44234df3b23d076; reader page pending.
+
+## te-Telu-IN-TE-T104 — strong/weak Kleene logic / undefined or unknown truth value / parallel evaluation / Gödel logic / intuitionistic logic / logic of paradox / logic of nonsense / paraconsistent / explosion / 3-valued R-Mingle / common connective fragment
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: బలమైన/బలహీనమైన క్లీని తర్కం / నిర్వచితం కాని లేదా తెలియని సత్యమూల్యం / సమాంతర గణన / గోడెల్ తర్కం / అంతర్బోధవాద తర్కం / వైరుధ్యాభాస తర్కం / అర్థరహిత తర్కం / విస్ఫోటనరహిత / విస్ఫోటన సూత్రం / మూడు-విలువల ఆర్-మింగిల్ / సాధారణ సంయోజక భాగం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “strong/weak Kleene logic / undefined or unknown truth value / parallel evaluation / Gödel logic / intuitionistic logic / logic of paradox / logic of nonsense / paraconsistent / explosion / 3-valued R-Mingle / common connective fragment” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: సాధారణ ప్రతిజ్ఞావాక్య తర్కం, సత్యమూల్యం, నిషేధం, సంయోగం, వికల్పం, సత్య పట్టిక, ఫలిత భావనకు ప్రత్యక్ష స్థానిక ఆధారం ఉంది. బలమైన/బలహీనమైన క్లీని, గోడెల్, అంతర్బోధవాద, వైరుధ్యాభాస, అర్థరహిత, విస్ఫోటనరహిత, ఆర్-మింగిల్ అనే ప్రత్యేక నామాలు ఈ స్థానిక పేజీల్లో నేరుగా లేవు; మూల నిర్వచనాలకు కట్టుబడి తాత్కాలికంగా వాడుతున్నాం. LP, Hallden భాషా పరిధి సంపాదకీయంగా స్పష్టం చేయబడింది; మూడు నిరూపణ సవరణలు మూల గణితానికి కట్టుబడి ఉన్నాయి.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, సంయోజకాల పరిధి; TE-P019లో సత్యతావిలువ, నిషేధం, సంయోగ పట్టిక; TE-P020లో వియోజక పట్టిక; TE-P023లో ఫలిత సంబంధం, సత్య పట్టిక; TE-P011లో ప్రమేయం అనే గణిత వాడుక పేజీ చిత్రాల్లో ప్రత్యక్షంగా చూశాం. ఈ పేజీలు Kleene, Gödel, LP, Hallden, R-Mingle లేదా పరవైరుధ్య తర్కాల ప్రత్యేక నిర్వచనాలను ఇవ్వవు. OLP-0395–0397 స్థిర మూల మాత్రికలు, నిరూపణలు, TE-T032/100/101/102/103 పూర్వ స్థిర పదజాలం ఆ ప్రత్యేక అర్థాలను నియంత్రిస్తాయి. ఎనిమిది ప్రకటిత సవరణలకు స్థానిక పదజాలం కాదు, మూల భాష నిర్వచనాలు, సత్య పట్టికలు, నిరూపణలే ఆధారం. క్లీని, గోడెల్, హాల్డెన్, ఆర్-మింగిల్ పేర్లు గుర్తించదగిన శాస్త్రీయ నామాలుగా తెలుగు లిపిలో ఉన్నాయి. True, False, Undef, L_0, V, V^+, LP and logic macros protected notation; ordinary explanatory prose is Telugu.
+
+- Authorities checked: TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P020 [checked_context_only], PDF page 79; printed page 72; Disjunction heading and truth-table discussion; Direct disjunction and truth-table register; compound operator labels remain definition-controlled. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately.
+
+- Alternatives: TE-T032/100/101/102/103లోని సత్యమూల్యం, మాత్రిక, వికల్పం, సర్వసత్యం, అనుగమనం పదాలను కొనసాగించి ప్రత్యేక మూడు-విలువల వ్యవస్థల పేర్లు, విస్ఫోటనరహిత భావం మూల నిర్వచనాలకు కట్టుబడి తాత్కాలికంగా ఇవ్వడం [viable_alternative: ఎంపిక] | స్థానిక ద్విమూల్య పేజీలు క్లీని, గోడెల్, LP, హాల్డెన్, ఆర్-మింగిల్ వ్యవస్థలను నేరుగా బోధిస్తాయని చెప్పడం [viable_alternative: తిరస్కరణ] | అసత్య స్థిరాంకానికి మూలంలో లేని విలువను మౌనంగా చేర్చి క్లీని సర్వసత్యాలు లేవనే వాదం నిలుస్తుందని ఊహించడం [viable_alternative: తిరస్కరణ] | విస్ఫోటనరహితతను అన్ని వైరుధ్యాలనుంచి అన్ని ముగింపులు వస్తాయని పొరబడడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “బలమైన/బలహీనమైన క్లీని తర్కం / నిర్వచితం కాని లేదా తెలియని సత్యమూల్యం / సమాంతర గణన / గోడెల్ తర్కం / అంతర్బోధవాద తర్కం / వైరుధ్యాభాస తర్కం / అర్థరహిత తర్కం / విస్ఫోటనరహిత / విస్ఫోటన సూత్రం / మూడు-విలువల ఆర్-మింగిల్ / సాధారణ సంయోజక భాగం” is idiomatic and technically standard for “strong/weak Kleene logic / undefined or unknown truth value / parallel evaluation / Gödel logic / intuitionistic logic / logic of paradox / logic of nonsense / paraconsistent / explosion / 3-valued R-Mingle / common connective fragment” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T104-OCC-001; OLP-0395; OLP-0395-B005; source upstream/content/many-valued-logic/three-valued-logics/kleene.tex:11 bytes 183-209 SHA-256 0b632552858c410d3670357a0df7071cb5a3c5bd285681e86988ed07263852d7; target translation/content/many-valued-logic/three-valued-logics/kleene.tex:11 bytes 183-236 SHA-256 42ef46da6352a1a039d37e4ed6228146b08b9ef7e90a33937484a67e1feb9453; reader page pending.
+  - te-Telu-IN-TE-T104-OCC-002; OLP-0395; OLP-0395-B006; source upstream/content/many-valued-logic/three-valued-logics/kleene.tex:13-17 bytes 210-537 SHA-256 0b632552858c410d3670357a0df7071cb5a3c5bd285681e86988ed07263852d7; target translation/content/many-valued-logic/three-valued-logics/kleene.tex:13-18 bytes 237-955 SHA-256 42ef46da6352a1a039d37e4ed6228146b08b9ef7e90a33937484a67e1feb9453; reader page pending.
+  - te-Telu-IN-TE-T104-OCC-003; OLP-0395; OLP-0395-B009; source upstream/content/many-valued-logic/three-valued-logics/kleene.tex:31-40 bytes 1188-1841 SHA-256 0b632552858c410d3670357a0df7071cb5a3c5bd285681e86988ed07263852d7; target translation/content/many-valued-logic/three-valued-logics/kleene.tex:35-46 bytes 2174-3411 SHA-256 42ef46da6352a1a039d37e4ed6228146b08b9ef7e90a33937484a67e1feb9453; reader page pending.
+  - te-Telu-IN-TE-T104-OCC-004; OLP-0395; OLP-0395-B011; source upstream/content/many-valued-logic/three-valued-logics/kleene.tex:45-87 bytes 1976-3435 SHA-256 0b632552858c410d3670357a0df7071cb5a3c5bd285681e86988ed07263852d7; target translation/content/many-valued-logic/three-valued-logics/kleene.tex:52-104 bytes 3761-6311 SHA-256 42ef46da6352a1a039d37e4ed6228146b08b9ef7e90a33937484a67e1feb9453; reader page pending.
+  - te-Telu-IN-TE-T104-OCC-005; OLP-0395; OLP-0395-B012; source upstream/content/many-valued-logic/three-valued-logics/kleene.tex:89-131 bytes 3436-4897 SHA-256 0b632552858c410d3670357a0df7071cb5a3c5bd285681e86988ed07263852d7; target translation/content/many-valued-logic/three-valued-logics/kleene.tex:106-157 bytes 6312-8772 SHA-256 42ef46da6352a1a039d37e4ed6228146b08b9ef7e90a33937484a67e1feb9453; reader page pending.
+  - te-Telu-IN-TE-T104-OCC-006; OLP-0396; OLP-0396-B005; source upstream/content/many-valued-logic/three-valued-logics/goedel.tex:11 bytes 183-210 SHA-256 1075b4d66085bb613bcaf0ef498cf8b3705b84d9dfd3dfedf648847b39be9542; target translation/content/many-valued-logic/three-valued-logics/goedel.tex:11 bytes 183-236 SHA-256 cf5d69090b1fee83d2f8602b6ed6ce02c238478a8636bc3cd7c250995117673a; reader page pending.
+  - te-Telu-IN-TE-T104-OCC-007; OLP-0396; OLP-0396-B006; source upstream/content/many-valued-logic/three-valued-logics/goedel.tex:13-15 bytes 211-407 SHA-256 1075b4d66085bb613bcaf0ef498cf8b3705b84d9dfd3dfedf648847b39be9542; target translation/content/many-valued-logic/three-valued-logics/goedel.tex:13-18 bytes 237-842 SHA-256 cf5d69090b1fee83d2f8602b6ed6ce02c238478a8636bc3cd7c250995117673a; reader page pending.
+  - te-Telu-IN-TE-T104-OCC-008; OLP-0397; OLP-0397-B007; source upstream/content/many-valued-logic/three-valued-logics/multiple-designation.tex:19-28 bytes 560-988 SHA-256 4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f; target translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:21-40 bytes 998-2416 SHA-256 18672add254fa3a5f854b6d92f87d48664ef26e2e0983003eaf675f0b7149195; reader page pending.
+  - te-Telu-IN-TE-T104-OCC-009; OLP-0397; OLP-0397-B008; source upstream/content/many-valued-logic/three-valued-logics/multiple-designation.tex:30-49 bytes 989-1679 SHA-256 4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f; target translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:42-72 bytes 2417-4252 SHA-256 18672add254fa3a5f854b6d92f87d48664ef26e2e0983003eaf675f0b7149195; reader page pending.
+  - te-Telu-IN-TE-T104-OCC-010; OLP-0397; OLP-0397-B018; source upstream/content/many-valued-logic/three-valued-logics/multiple-designation.tex:139-144 bytes 5693-6041 SHA-256 4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f; target translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:217-232 bytes 12540-13895 SHA-256 18672add254fa3a5f854b6d92f87d48664ef26e2e0983003eaf675f0b7149195; reader page pending.
+  - te-Telu-IN-TE-T104-OCC-011; OLP-0397; OLP-0397-B021; source upstream/content/many-valued-logic/three-valued-logics/multiple-designation.tex:161-170 bytes 6506-6981 SHA-256 4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f; target translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:251-265 bytes 14562-15394 SHA-256 18672add254fa3a5f854b6d92f87d48664ef26e2e0983003eaf675f0b7149195; reader page pending.
+  - te-Telu-IN-TE-T104-OCC-012; OLP-0397; OLP-0397-B007; source upstream/content/many-valued-logic/three-valued-logics/multiple-designation.tex:19-28 bytes 560-988 SHA-256 4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f; target translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:21-40 bytes 998-2416 SHA-256 18672add254fa3a5f854b6d92f87d48664ef26e2e0983003eaf675f0b7149195; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -12550,3 +12587,211 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEMVLLUK-004-OCC-001; OLP-0394; OLP-0394-B021; source upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:231-240 bytes 9450-10051 SHA-256 fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a; target translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:282 bytes 17838-17905 SHA-256 8d58323053847a3488e3f0d8eed84f03461d6e5e7e07d79cb44234df3b23d076; reader page pending.
+
+## te-Telu-IN-OLTEMVLKLE-001 — OLTEMVLKLE-001: strong kleene standard language constant conflicts with no tautology theorem
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: బలమైన క్లీని మాత్రికను చరాలు, నాలుగు పట్టిక సంయోజకాల ఉపభాషకు పరిమితం చేసి, అసత్య స్థిరాంకం లేదని నిర్వచనం పక్కన ప్రకటించాం.
+
+- Intended sense: Repair the audited strong kleene standard language constant conflicts with no tautology theorem at kleene.tex lines 45-87; compare no-tautology proof lines 132-147 and OLP-0386/0388, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLKLE-20260926:OLTEMVLKLE-001 [checked_supports], content/many-valued-logic/three-valued-logics/kleene.tex; kleene.tex lines 45-87; compare no-tautology proof lines 132-147 and OLP-0386/0388; strong_kleene_standard_language_constant_conflicts_with_no_tautology_theorem; బలమైన క్లీని మాత్రికను చరాలు, నాలుగు పట్టిక సంయోజకాల ఉపభాషకు పరిమితం చేసి, అసత్య స్థిరాంకం లేదని నిర్వచనం పక్కన ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Is strong Kleene logic explicitly restricted to the variable-generated four-connective language, so the no-tautology theorem does not silently include a falsity constant?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLKLE-001-OCC-001; OLP-0395; OLP-0395-B011; source upstream/content/many-valued-logic/three-valued-logics/kleene.tex:45-87 bytes 1976-3435 SHA-256 0b632552858c410d3670357a0df7071cb5a3c5bd285681e86988ed07263852d7; target translation/content/many-valued-logic/three-valued-logics/kleene.tex:97 bytes 5606-5669 SHA-256 42ef46da6352a1a039d37e4ed6228146b08b9ef7e90a33937484a67e1feb9453; reader page pending.
+
+## te-Telu-IN-OLTEMVLKLE-002 — OLTEMVLKLE-002: weak kleene standard language constant conflicts with no tautology theorem
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: బలహీనమైన క్లీని మాత్రికకూ అదే ఉపభాష పరిమితిని పేర్కొని, అసత్య స్థిరాంకాన్ని చేర్చలేదని నిర్వచనం పక్కన ప్రకటించాం.
+
+- Intended sense: Repair the audited weak kleene standard language constant conflicts with no tautology theorem at kleene.tex lines 89-130; compare no-tautology proof lines 132-147 and OLP-0386/0388, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLKLE-20260926:OLTEMVLKLE-002 [checked_supports], content/many-valued-logic/three-valued-logics/kleene.tex; kleene.tex lines 89-130; compare no-tautology proof lines 132-147 and OLP-0386/0388; weak_kleene_standard_language_constant_conflicts_with_no_tautology_theorem; బలహీనమైన క్లీని మాత్రికకూ అదే ఉపభాష పరిమితిని పేర్కొని, అసత్య స్థిరాంకాన్ని చేర్చలేదని నిర్వచనం పక్కన ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Is weak Kleene logic given the same explicit language restriction, with all four printed truth tables unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLKLE-002-OCC-001; OLP-0395; OLP-0395-B012; source upstream/content/many-valued-logic/three-valued-logics/kleene.tex:89-131 bytes 3436-4897 SHA-256 0b632552858c410d3670357a0df7071cb5a3c5bd285681e86988ed07263852d7; target translation/content/many-valued-logic/three-valued-logics/kleene.tex:151 bytes 8170-8249 SHA-256 42ef46da6352a1a039d37e4ed6228146b08b9ef7e90a33937484a67e1feb9453; reader page pending.
+
+## te-Telu-IN-OLTEMVLMUL-001 — OLTEMVLMUL-001: lp standard language omits falsity constant
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: వైరుధ్యాభాస తర్క భాషను నాలుగు సంయోజకాల చర-ఆధారిత ఉపభాషగా స్పష్టం చేసి అసత్య స్థిరాంకం లేదని పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited lp standard language omits falsity constant at multiple-designation.tex lines 19-28, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLMUL-20260926:OLTEMVLMUL-001 [checked_supports], content/many-valued-logic/three-valued-logics/multiple-designation.tex; multiple-designation.tex lines 19-28; lp_standard_language_omits_falsity_constant; వైరుధ్యాభాస తర్క భాషను నాలుగు సంయోజకాల చర-ఆధారిత ఉపభాషగా స్పష్టం చేసి అసత్య స్థిరాంకం లేదని పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does LP inherit only the strong-Kleene four-connective language, without silently assigning a truth value to the missing falsity constant?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLMUL-001-OCC-001; OLP-0397; OLP-0397-B007; source upstream/content/many-valued-logic/three-valued-logics/multiple-designation.tex:19-28 bytes 560-988 SHA-256 4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f; target translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:34 bytes 1867-1930 SHA-256 18672add254fa3a5f854b6d92f87d48664ef26e2e0983003eaf675f0b7149195; reader page pending.
+
+## te-Telu-IN-OLTEMVLMUL-002 — OLTEMVLMUL-002: hallden standard language omits falsity constant
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: హాల్డెన్ భాషను నాలుగు సంయోజకాల ఉపభాషకు అదనపు ఏకస్థానిక సంయోజకం చేర్చినదిగా స్పష్టం చేసి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited hallden standard language omits falsity constant at multiple-designation.tex lines 30-48, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLMUL-20260926:OLTEMVLMUL-002 [checked_supports], content/many-valued-logic/three-valued-logics/multiple-designation.tex; multiple-designation.tex lines 30-48; hallden_standard_language_omits_falsity_constant; హాల్డెన్ భాషను నాలుగు సంయోజకాల ఉపభాషకు అదనపు ఏకస్థానిక సంయోజకం చేర్చినదిగా స్పష్టం చేసి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does Hallden extend the weak-Kleene four-connective fragment by plus while leaving the absent falsity constant unassigned?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLMUL-002-OCC-001; OLP-0397; OLP-0397-B008; source upstream/content/many-valued-logic/three-valued-logics/multiple-designation.tex:30-49 bytes 989-1679 SHA-256 4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f; target translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:66 bytes 3669-3732 SHA-256 18672add254fa3a5f854b6d92f87d48664ef26e2e0983003eaf675f0b7149195; reader page pending.
+
+## te-Telu-IN-OLTEMVLMUL-003 — OLTEMVLMUL-003: lp tautology equality needs common language scope
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: సర్వసత్యాల సమానత్వాన్ని రెండు తర్కాల ఉమ్మడి నాలుగు సంయోజకాల భాషకే పరిమితం చేసి ప్రతిపాదన పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited lp tautology equality needs common language scope at multiple-designation.tex lines 54-56, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLMUL-20260926:OLTEMVLMUL-003 [checked_supports], content/many-valued-logic/three-valued-logics/multiple-designation.tex; multiple-designation.tex lines 54-56; lp_tautology_equality_needs_common_language_scope; సర్వసత్యాల సమానత్వాన్ని రెండు తర్కాల ఉమ్మడి నాలుగు సంయోజకాల భాషకే పరిమితం చేసి ప్రతిపాదన పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Is equality of LP and classical tautologies stated for their common four-connective language, as the proof requires?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLMUL-003-OCC-001; OLP-0397; OLP-0397-B010; source upstream/content/many-valued-logic/three-valued-logics/multiple-designation.tex:54-56 bytes 1785-1931 SHA-256 4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f; target translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:81 bytes 4774-4821 SHA-256 18672add254fa3a5f854b6d92f87d48664ef26e2e0983003eaf675f0b7149195; reader page pending.
+
+## te-Telu-IN-OLTEMVLMUL-004 — OLTEMVLMUL-004: lp induction base false assignment equality
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: చరానికి రెండు కేటాయింపుల్లో వేర్వేరు విలువలు రావచ్చని చూపి, కావలసిన అసత్య సత్య సంరక్షణలను మాత్రమే నిరూపించి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited lp induction base false assignment equality at multiple-designation.tex lines 86-89, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLMUL-20260926:OLTEMVLMUL-004 [checked_supports], content/many-valued-logic/three-valued-logics/multiple-designation.tex; multiple-designation.tex lines 86-89; lp_induction_base_false_assignment_equality; చరానికి రెండు కేటాయింపుల్లో వేర్వేరు విలువలు రావచ్చని చూపి, కావలసిన అసత్య సత్య సంరక్షణలను మాత్రమే నిరూపించి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the induction base avoid equating v and v-prime on Undef and prove only preservation of definite False and True values?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLMUL-004-OCC-001; OLP-0397; OLP-0397-B012; source upstream/content/many-valued-logic/three-valued-logics/multiple-designation.tex:73-89 bytes 2818-3457 SHA-256 4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f; target translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:137 bytes 8077-8131 SHA-256 18672add254fa3a5f854b6d92f87d48664ef26e2e0983003eaf675f0b7149195; reader page pending.
+
+## te-Telu-IN-OLTEMVLMUL-005 — OLTEMVLMUL-005: lp conjunction induction repeats first conjunct
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: సంయోగ నిరూపణలో అసత్య, సత్య సందర్భాల రెండవ భాగాన్ని మొదటి భాగపు పునరావృతం నుంచి సరైన రెండవ భాగానికి మార్చి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited lp conjunction induction repeats first conjunct at multiple-designation.tex lines 105-119, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLMUL-20260926:OLTEMVLMUL-005 [checked_supports], content/many-valued-logic/three-valued-logics/multiple-designation.tex; multiple-designation.tex lines 105-119; lp_conjunction_induction_repeats_first_conjunct; సంయోగ నిరూపణలో అసత్య, సత్య సందర్భాల రెండవ భాగాన్ని మొదటి భాగపు పునరావృతం నుంచి సరైన రెండవ భాగానికి మార్చి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Do the false and true conjunction cases use B and C respectively, matching the strong Kleene table and their inductive conclusions?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLMUL-005-OCC-001; OLP-0397; OLP-0397-B014; source upstream/content/many-valued-logic/three-valued-logics/multiple-designation.tex:104-119 bytes 4144-4991 SHA-256 4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f; target translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:183 bytes 10730-10797 SHA-256 18672add254fa3a5f854b6d92f87d48664ef26e2e0983003eaf675f0b7149195; reader page pending.
+
+## te-Telu-IN-OLTEMVLMUL-006 — OLTEMVLMUL-006: shared tautologies claim needs common language scope
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: సర్వసత్యాల సమానత్వ వాదాన్ని సాధారణ నాలుగు సంయోజకాల భాషకే పరిమితం చేసి అదనపు సంచాలక భేదాన్ని పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited shared tautologies claim needs common language scope at multiple-designation.tex lines 139-144, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLMUL-20260926:OLTEMVLMUL-006 [checked_supports], content/many-valued-logic/three-valued-logics/multiple-designation.tex; multiple-designation.tex lines 139-144; shared_tautologies_claim_needs_common_language_scope; సర్వసత్యాల సమానత్వ వాదాన్ని సాధారణ నాలుగు సంయోజకాల భాషకే పరిమితం చేసి అదనపు సంచాలక భేదాన్ని పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Is the shared-tautology claim scoped to the common four-connective language rather than treating Hallden plus-formulas as classical formulas?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLMUL-006-OCC-001; OLP-0397; OLP-0397-B018; source upstream/content/many-valued-logic/three-valued-logics/multiple-designation.tex:139-144 bytes 5693-6041 SHA-256 4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f; target translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:226 bytes 13275-13325 SHA-256 18672add254fa3a5f854b6d92f87d48664ef26e2e0983003eaf675f0b7149195; reader page pending.

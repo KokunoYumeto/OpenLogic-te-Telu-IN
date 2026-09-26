@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 394 of 722 draft units**. This log contains 103 terminology/sense decisions and 362 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 397 of 722 draft units**. This log contains 104 terminology/sense decisions and 370 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2479,6 +2479,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: సత్యతావిలువ, ప్రతిజ్ఞావాక్య సంయోజకం, పట్టిక, ప్రమేయం, ఫలితం అనే సాధారణ పదజాలానికి ప్రత్యక్ష సాక్ష్యం ఉంది. మూడు-విలువల అనిర్ణీత స్థితి, చారిత్రక భావంలో సాధ్యమే కాని తప్పనిసరి కాని భవిష్యత్తు వాక్యం, మోడల్ సాధ్యత/అనివార్యత నామాలకు ఇక్కడ ప్రత్యక్ష స్థానిక సాక్ష్యం లేదు; మూల వ్యాఖ్యానం, పట్టికలకే వాటిని కట్టుబడి తాత్కాలికంగా వాడుతున్నాం. మూలంలో మిగిలిన అసత్య స్థిరాంక విలువను Falseగా చేర్చడం ఒక స్పష్టమైన సంపాదకీయ ఎంపిక; నాలుగు ముద్రిత పట్టికల నుంచి అది తప్పనిసరిగా రాదు.
 
 - Please double-check: Please double-check whether “మూడు-విలువల తర్కం / అనిర్ణీతం / భవిష్యత్తుపై ఆధారపడిన వాక్యం / Łukasiewicz తర్కం / సత్యమూల్య ప్రమేయం / నిర్దేశిత విలువ / సర్వసత్యం / సాధ్యం / తప్పనిసరి / మోడల్ తర్కం” is idiomatic and technically standard for “three-valued logic / undetermined / future contingent / Łukasiewicz logic / truth function / designated value / tautology / possible / necessary / modal logic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T104 — strong/weak Kleene logic / undefined or unknown truth value / parallel evaluation / Gödel logic / intuitionistic logic / logic of paradox / logic of nonsense / paraconsistent / explosion / 3-valued R-Mingle / common connective fragment
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: బలమైన/బలహీనమైన క్లీని తర్కం / నిర్వచితం కాని లేదా తెలియని సత్యమూల్యం / సమాంతర గణన / గోడెల్ తర్కం / అంతర్బోధవాద తర్కం / వైరుధ్యాభాస తర్కం / అర్థరహిత తర్కం / విస్ఫోటనరహిత / విస్ఫోటన సూత్రం / మూడు-విలువల ఆర్-మింగిల్ / సాధారణ సంయోజక భాగం
+
+- Exact implementation: OLP-0395; many-valued-logic/three-valued-logics/kleene; content/many-valued-logic/three-valued-logics/kleene.tex:11 ↔ translation/content/many-valued-logic/three-valued-logics/kleene.tex:11 (OLP-0395-B005); printed/PDF page pending; OLP-0395; many-valued-logic/three-valued-logics/kleene; content/many-valued-logic/three-valued-logics/kleene.tex:13-17 ↔ translation/content/many-valued-logic/three-valued-logics/kleene.tex:13-18 (OLP-0395-B006); printed/PDF page pending; OLP-0395; many-valued-logic/three-valued-logics/kleene; content/many-valued-logic/three-valued-logics/kleene.tex:31-40 ↔ translation/content/many-valued-logic/three-valued-logics/kleene.tex:35-46 (OLP-0395-B009); printed/PDF page pending; OLP-0395; many-valued-logic/three-valued-logics/kleene; content/many-valued-logic/three-valued-logics/kleene.tex:45-87 ↔ translation/content/many-valued-logic/three-valued-logics/kleene.tex:52-104 (OLP-0395-B011); printed/PDF page pending; OLP-0395; many-valued-logic/three-valued-logics/kleene; content/many-valued-logic/three-valued-logics/kleene.tex:89-131 ↔ translation/content/many-valued-logic/three-valued-logics/kleene.tex:106-157 (OLP-0395-B012); printed/PDF page pending; OLP-0396; many-valued-logic/three-valued-logics/goedel; content/many-valued-logic/three-valued-logics/goedel.tex:11 ↔ translation/content/many-valued-logic/three-valued-logics/goedel.tex:11 (OLP-0396-B005); printed/PDF page pending; OLP-0396; many-valued-logic/three-valued-logics/goedel; content/many-valued-logic/three-valued-logics/goedel.tex:13-15 ↔ translation/content/many-valued-logic/three-valued-logics/goedel.tex:13-18 (OLP-0396-B006); printed/PDF page pending; OLP-0397; many-valued-logic/three-valued-logics/multiple-designation; content/many-valued-logic/three-valued-logics/multiple-designation.tex:19-28 ↔ translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:21-40 (OLP-0397-B007); printed/PDF page pending; OLP-0397; many-valued-logic/three-valued-logics/multiple-designation; content/many-valued-logic/three-valued-logics/multiple-designation.tex:30-49 ↔ translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:42-72 (OLP-0397-B008); printed/PDF page pending; OLP-0397; many-valued-logic/three-valued-logics/multiple-designation; content/many-valued-logic/three-valued-logics/multiple-designation.tex:139-144 ↔ translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:217-232 (OLP-0397-B018); printed/PDF page pending; OLP-0397; many-valued-logic/three-valued-logics/multiple-designation; content/many-valued-logic/three-valued-logics/multiple-designation.tex:161-170 ↔ translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:251-265 (OLP-0397-B021); printed/PDF page pending; OLP-0397; many-valued-logic/three-valued-logics/multiple-designation; content/many-valued-logic/three-valued-logics/multiple-designation.tex:19-28 ↔ translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:21-40 (OLP-0397-B007); printed/PDF page pending
+
+- Authorities actually checked: TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P020, PDF 79, printed 72, Disjunction heading and truth-table discussion; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, సంయోజకాల పరిధి; TE-P019లో సత్యతావిలువ, నిషేధం, సంయోగ పట్టిక; TE-P020లో వియోజక పట్టిక; TE-P023లో ఫలిత సంబంధం, సత్య పట్టిక; TE-P011లో ప్రమేయం అనే గణిత వాడుక పేజీ చిత్రాల్లో ప్రత్యక్షంగా చూశాం. ఈ పేజీలు Kleene, Gödel, LP, Hallden, R-Mingle లేదా పరవైరుధ్య తర్కాల ప్రత్యేక నిర్వచనాలను ఇవ్వవు. OLP-0395–0397 స్థిర మూల మాత్రికలు, నిరూపణలు, TE-T032/100/101/102/103 పూర్వ స్థిర పదజాలం ఆ ప్రత్యేక అర్థాలను నియంత్రిస్తాయి. ఎనిమిది ప్రకటిత సవరణలకు స్థానిక పదజాలం కాదు, మూల భాష నిర్వచనాలు, సత్య పట్టికలు, నిరూపణలే ఆధారం. క్లీని, గోడెల్, హాల్డెన్, ఆర్-మింగిల్ పేర్లు గుర్తించదగిన శాస్త్రీయ నామాలుగా తెలుగు లిపిలో ఉన్నాయి. True, False, Undef, L_0, V, V^+, LP and logic macros protected notation; ordinary explanatory prose is Telugu.
+
+- Alternatives: TE-T032/100/101/102/103లోని సత్యమూల్యం, మాత్రిక, వికల్పం, సర్వసత్యం, అనుగమనం పదాలను కొనసాగించి ప్రత్యేక మూడు-విలువల వ్యవస్థల పేర్లు, విస్ఫోటనరహిత భావం మూల నిర్వచనాలకు కట్టుబడి తాత్కాలికంగా ఇవ్వడం (ఎంపిక); స్థానిక ద్విమూల్య పేజీలు క్లీని, గోడెల్, LP, హాల్డెన్, ఆర్-మింగిల్ వ్యవస్థలను నేరుగా బోధిస్తాయని చెప్పడం (తిరస్కరణ); అసత్య స్థిరాంకానికి మూలంలో లేని విలువను మౌనంగా చేర్చి క్లీని సర్వసత్యాలు లేవనే వాదం నిలుస్తుందని ఊహించడం (తిరస్కరణ); విస్ఫోటనరహితతను అన్ని వైరుధ్యాలనుంచి అన్ని ముగింపులు వస్తాయని పొరబడడం (తిరస్కరణ)
+
+- Uncertainty: సాధారణ ప్రతిజ్ఞావాక్య తర్కం, సత్యమూల్యం, నిషేధం, సంయోగం, వికల్పం, సత్య పట్టిక, ఫలిత భావనకు ప్రత్యక్ష స్థానిక ఆధారం ఉంది. బలమైన/బలహీనమైన క్లీని, గోడెల్, అంతర్బోధవాద, వైరుధ్యాభాస, అర్థరహిత, విస్ఫోటనరహిత, ఆర్-మింగిల్ అనే ప్రత్యేక నామాలు ఈ స్థానిక పేజీల్లో నేరుగా లేవు; మూల నిర్వచనాలకు కట్టుబడి తాత్కాలికంగా వాడుతున్నాం. LP, Hallden భాషా పరిధి సంపాదకీయంగా స్పష్టం చేయబడింది; మూడు నిరూపణ సవరణలు మూల గణితానికి కట్టుబడి ఉన్నాయి.
+
+- Please double-check: Please double-check whether “బలమైన/బలహీనమైన క్లీని తర్కం / నిర్వచితం కాని లేదా తెలియని సత్యమూల్యం / సమాంతర గణన / గోడెల్ తర్కం / అంతర్బోధవాద తర్కం / వైరుధ్యాభాస తర్కం / అర్థరహిత తర్కం / విస్ఫోటనరహిత / విస్ఫోటన సూత్రం / మూడు-విలువల ఆర్-మింగిల్ / సాధారణ సంయోజక భాగం” is idiomatic and technically standard for “strong/weak Kleene logic / undefined or unknown truth value / parallel evaluation / Gödel logic / intuitionistic logic / logic of paradox / logic of nonsense / paraconsistent / explosion / 3-valued R-Mingle / common connective fragment” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -11167,3 +11191,195 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Does the modal counterexample evaluate to False for p=Undef by the printed conjunction, Diamond and negation tables, with its non-tautology conclusion preserved?
+
+## REV-OLTEMVLKLE-001 — OLTEMVLKLE-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: బలమైన క్లీని మాత్రికను చరాలు, నాలుగు పట్టిక సంయోజకాల ఉపభాషకు పరిమితం చేసి, అసత్య స్థిరాంకం లేదని నిర్వచనం పక్కన ప్రకటించాం.
+
+- Exact implementation: OLP-0395; many-valued-logic/three-valued-logics/kleene; kleene.tex lines 45-87; compare no-tautology proof lines 132-147 and OLP-0386/0388 ↔ translation/content/many-valued-logic/three-valued-logics/kleene.tex:97 (OLP-0395-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLKLE-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: బలమైన క్లీని మాత్రికను చరాలు, నాలుగు పట్టిక సంయోజకాల ఉపభాషకు పరిమితం చేసి, అసత్య స్థిరాంకం లేదని నిర్వచనం పక్కన ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Is strong Kleene logic explicitly restricted to the variable-generated four-connective language, so the no-tautology theorem does not silently include a falsity constant?
+
+## REV-OLTEMVLKLE-002 — OLTEMVLKLE-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: బలహీనమైన క్లీని మాత్రికకూ అదే ఉపభాష పరిమితిని పేర్కొని, అసత్య స్థిరాంకాన్ని చేర్చలేదని నిర్వచనం పక్కన ప్రకటించాం.
+
+- Exact implementation: OLP-0395; many-valued-logic/three-valued-logics/kleene; kleene.tex lines 89-130; compare no-tautology proof lines 132-147 and OLP-0386/0388 ↔ translation/content/many-valued-logic/three-valued-logics/kleene.tex:151 (OLP-0395-B012); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLKLE-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: బలహీనమైన క్లీని మాత్రికకూ అదే ఉపభాష పరిమితిని పేర్కొని, అసత్య స్థిరాంకాన్ని చేర్చలేదని నిర్వచనం పక్కన ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Is weak Kleene logic given the same explicit language restriction, with all four printed truth tables unchanged?
+
+## REV-OLTEMVLMUL-001 — OLTEMVLMUL-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: వైరుధ్యాభాస తర్క భాషను నాలుగు సంయోజకాల చర-ఆధారిత ఉపభాషగా స్పష్టం చేసి అసత్య స్థిరాంకం లేదని పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0397; many-valued-logic/three-valued-logics/multiple-designation; multiple-designation.tex lines 19-28 ↔ translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:34 (OLP-0397-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLMUL-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: వైరుధ్యాభాస తర్క భాషను నాలుగు సంయోజకాల చర-ఆధారిత ఉపభాషగా స్పష్టం చేసి అసత్య స్థిరాంకం లేదని పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does LP inherit only the strong-Kleene four-connective language, without silently assigning a truth value to the missing falsity constant?
+
+## REV-OLTEMVLMUL-002 — OLTEMVLMUL-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: హాల్డెన్ భాషను నాలుగు సంయోజకాల ఉపభాషకు అదనపు ఏకస్థానిక సంయోజకం చేర్చినదిగా స్పష్టం చేసి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0397; many-valued-logic/three-valued-logics/multiple-designation; multiple-designation.tex lines 30-48 ↔ translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:66 (OLP-0397-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLMUL-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: హాల్డెన్ భాషను నాలుగు సంయోజకాల ఉపభాషకు అదనపు ఏకస్థానిక సంయోజకం చేర్చినదిగా స్పష్టం చేసి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does Hallden extend the weak-Kleene four-connective fragment by plus while leaving the absent falsity constant unassigned?
+
+## REV-OLTEMVLMUL-003 — OLTEMVLMUL-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: సర్వసత్యాల సమానత్వాన్ని రెండు తర్కాల ఉమ్మడి నాలుగు సంయోజకాల భాషకే పరిమితం చేసి ప్రతిపాదన పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0397; many-valued-logic/three-valued-logics/multiple-designation; multiple-designation.tex lines 54-56 ↔ translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:81 (OLP-0397-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLMUL-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: సర్వసత్యాల సమానత్వాన్ని రెండు తర్కాల ఉమ్మడి నాలుగు సంయోజకాల భాషకే పరిమితం చేసి ప్రతిపాదన పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Is equality of LP and classical tautologies stated for their common four-connective language, as the proof requires?
+
+## REV-OLTEMVLMUL-004 — OLTEMVLMUL-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: చరానికి రెండు కేటాయింపుల్లో వేర్వేరు విలువలు రావచ్చని చూపి, కావలసిన అసత్య సత్య సంరక్షణలను మాత్రమే నిరూపించి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0397; many-valued-logic/three-valued-logics/multiple-designation; multiple-designation.tex lines 86-89 ↔ translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:137 (OLP-0397-B012); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLMUL-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: చరానికి రెండు కేటాయింపుల్లో వేర్వేరు విలువలు రావచ్చని చూపి, కావలసిన అసత్య సత్య సంరక్షణలను మాత్రమే నిరూపించి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the induction base avoid equating v and v-prime on Undef and prove only preservation of definite False and True values?
+
+## REV-OLTEMVLMUL-005 — OLTEMVLMUL-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: సంయోగ నిరూపణలో అసత్య, సత్య సందర్భాల రెండవ భాగాన్ని మొదటి భాగపు పునరావృతం నుంచి సరైన రెండవ భాగానికి మార్చి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0397; many-valued-logic/three-valued-logics/multiple-designation; multiple-designation.tex lines 105-119 ↔ translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:183 (OLP-0397-B014); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLMUL-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: సంయోగ నిరూపణలో అసత్య, సత్య సందర్భాల రెండవ భాగాన్ని మొదటి భాగపు పునరావృతం నుంచి సరైన రెండవ భాగానికి మార్చి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Do the false and true conjunction cases use B and C respectively, matching the strong Kleene table and their inductive conclusions?
+
+## REV-OLTEMVLMUL-006 — OLTEMVLMUL-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: సర్వసత్యాల సమానత్వ వాదాన్ని సాధారణ నాలుగు సంయోజకాల భాషకే పరిమితం చేసి అదనపు సంచాలక భేదాన్ని పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0397; many-valued-logic/three-valued-logics/multiple-designation; multiple-designation.tex lines 139-144 ↔ translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:226 (OLP-0397-B018); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLMUL-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: సర్వసత్యాల సమానత్వ వాదాన్ని సాధారణ నాలుగు సంయోజకాల భాషకే పరిమితం చేసి అదనపు సంచాలక భేదాన్ని పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Is the shared-tautology claim scoped to the common four-connective language rather than treating Hallden plus-formulas as classical formulas?
