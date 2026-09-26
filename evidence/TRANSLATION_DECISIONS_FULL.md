@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **401 of 722 source units drafted**. This readable view contains all 479 decisions and 957 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **406 of 722 source units drafted**. This readable view contains all 483 decisions and 968 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3131,6 +3131,39 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T105-OCC-009; OLP-0401; OLP-0401-B007; source upstream/content/many-valued-logic/infinite-valued-logics/goedel.tex:17-40 bytes 325-1212 SHA-256 5d2ee265f4bec099c01297f7e6d605c3c0100e59a96cce2cf9636ec9fb9e186b; target translation/content/many-valued-logic/infinite-valued-logics/goedel.tex:18-52 bytes 457-2324 SHA-256 94f553c7cc3aa02f552248219b6320fe4afd7e0b7091b6225e623d18efc0aff4; reader page pending.
   - te-Telu-IN-TE-T105-OCC-010; OLP-0401; OLP-0401-B014; source upstream/content/many-valued-logic/infinite-valued-logics/goedel.tex:101-115 bytes 2732-3581 SHA-256 5d2ee265f4bec099c01297f7e6d605c3c0100e59a96cce2cf9636ec9fb9e186b; target translation/content/many-valued-logic/infinite-valued-logics/goedel.tex:119-143 bytes 4179-5673 SHA-256 94f553c7cc3aa02f552248219b6320fe4afd7e0b7091b6225e623d18efc0aff4; reader page pending.
   - te-Telu-IN-TE-T105-OCC-011; OLP-0401; OLP-0401-B014; source upstream/content/many-valued-logic/infinite-valued-logics/goedel.tex:101-115 bytes 2732-3581 SHA-256 5d2ee265f4bec099c01297f7e6d605c3c0100e59a96cce2cf9636ec9fb9e186b; target translation/content/many-valued-logic/infinite-valued-logics/goedel.tex:119-143 bytes 4179-5673 SHA-256 94f553c7cc3aa02f552248219b6320fe4afd7e0b7091b6225e623d18efc0aff4; reader page pending.
+
+## te-Telu-IN-TE-T106 — n-sided sequent calculus / initial sequent / designated-value position / derivation and theorem / structural weakening, contraction, exchange and cut / three-valued logical rules
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: n-వైపుల సీక్వెంట్ కలనం / ప్రారంభ సీక్వెంట్ / నిర్దేశిత సత్యమూల్యపు స్థానం / వ్యుత్పత్తి, సిద్ధాంతం / నిర్మాణాత్మక బలహీనీకరణ, సంకోచనం, మార్పిడి, కట్ / మూడు-విలువల తార్కిక నియమాలు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “n-sided sequent calculus / initial sequent / designated-value position / derivation and theorem / structural weakening, contraction, exchange and cut / three-valued logical rules” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: సీక్వెంట్ అరువు, n-వైపుల సంకేతం, నిర్దేశిత స్థానాలు, నిర్దిష్ట బహు-విలువల నియమాలకు స్థానిక పేజీలలో ప్రత్యక్ష సాక్ష్యం లేదు; ఎంపిక తాత్కాలికం. స్థానిక ద్విమూల్య ఫలిత వివరణను మూడు-విలువల నియమాలకు గణిత ప్రమాణంగా వాడలేదు. OLTEMVLSEQ-001–003 సవరణలు స్థిర మూలంలోని సమీప ప్రదర్శనలు, స్థానం-i నియమాలపై ఆధారపడతాయి.
+
+- Rationale: TE-P019–P020లో సత్యతావిలువ, సంయోజక/వియోజక పట్టికలు; TE-P023లో ఫలిత సంబంధం; TE-P024లో నియమ గుర్తులతో ఫలిత వ్యుత్పత్తి; TE-P031లో వాక్యం–ప్రతిజ్ఞావాక్య భేదం; TE-P033లో అనుమాన వివరణ పేజీ చిత్రాలను ప్రత్యక్షంగా చూశాం. ఇవి బహు-విలువల n-వైపుల సీక్వెంట్లను నేరుగా స్థాపించవు. TE-T020/034/035/036లోని పూర్వ అనువాద ప్రయోగాన్ని కొనసాగిస్తూ, OLP-0402–0406 స్థిర సీక్వెంట్ నిర్వచనాలు, మూడు-విలువల నియమ చిత్రాలే ప్రత్యేక అర్థాన్ని నియంత్రిస్తున్నాయి. సీక్వెంట్, కట్, లూకాసియెవిచ్, క్లీని, గోడెల్ ముందరి గుర్తించదగిన బదిలీలు; LK, L, n, Gamma/Pi/Delta, False/Undef/True and rule macros protected mathematical notation.
+
+- Authorities checked: TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P020 [checked_context_only], PDF page 79; printed page 72; Disjunction heading and truth-table discussion; Direct disjunction and truth-table register; compound operator labels remain definition-controlled. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage. | TE-C005:TE-P033 [checked_context_only], PDF page 40; printed page 33; Inference section heading and definition; Direct inference and explanatory register; derivation headword is separately witnessed at TE-P024.
+
+- Alternatives: TE-P019/020 సత్యతావిలువ, TE-P024 వ్యుత్పత్తి, TE-P033 అనుమానం అనే ప్రత్యక్ష వాడుకను TE-T035/036 సీక్వెంట్ పదాలతో కొనసాగించి, n-వైపుల ప్రత్యేక రూపాన్ని స్థిర మూల నిర్వచనంతో నియంత్రించడం [viable_alternative: ఎంపిక] | సీక్వెంట్‌కు స్థానిక పేజీలలో కనబడని ఒక స్వదేశీ సాంకేతిక పదాన్ని స్థిరపడినదిగా ప్రకటించడం [viable_alternative: తిరస్కరణ] | ద్విమూల్య స్థానిక ఫలిత నిర్వచనం మూడు-విలువల నియమాలను నేరుగా నిరూపిస్తుందని ఊహించడం [viable_alternative: తిరస్కరణ] | నియమ చిత్రాల్లోని మూడు-విలువల స్థానాలను గద్య సరళీకరణ కోసం మార్చడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “n-వైపుల సీక్వెంట్ కలనం / ప్రారంభ సీక్వెంట్ / నిర్దేశిత సత్యమూల్యపు స్థానం / వ్యుత్పత్తి, సిద్ధాంతం / నిర్మాణాత్మక బలహీనీకరణ, సంకోచనం, మార్పిడి, కట్ / మూడు-విలువల తార్కిక నియమాలు” is idiomatic and technically standard for “n-sided sequent calculus / initial sequent / designated-value position / derivation and theorem / structural weakening, contraction, exchange and cut / three-valued logical rules” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T106-OCC-001; OLP-0402; OLP-0402-B004; source upstream/content/many-valued-logic/sequent-calculus/sequent-calculus.tex:8 bytes 139-178 SHA-256 28775295786cbfede3893029fdd6742f84bb12ada787a5e5f61faba049c113e6; target translation/content/many-valued-logic/sequent-calculus/sequent-calculus.tex:8 bytes 136-199 SHA-256 be805876ca99051d2c47ee2d452ac1f2afba695cbfc3c1d22c1866be4a5697ce; reader page pending.
+  - te-Telu-IN-TE-T106-OCC-002; OLP-0403; OLP-0403-B006; source upstream/content/many-valued-logic/sequent-calculus/introduction.tex:13-18 bytes 212-589 SHA-256 d34708177650e4673f957d0b6ecdc9f210e4d65987e47f0694077c3d21ce63ef; target translation/content/many-valued-logic/sequent-calculus/introduction.tex:13-18 bytes 218-1122 SHA-256 f6c489d011ac08ead20cd7b52079a7b1dc91de27d3ee25da09fb3c3bebd22c0e; reader page pending.
+  - te-Telu-IN-TE-T106-OCC-003; OLP-0404; OLP-0404-B007; source upstream/content/many-valued-logic/sequent-calculus/rules-and-proofs.tex:16-23 bytes 338-583 SHA-256 edaed42989f5e52e48f2d3a4c28b822e99df5c7fad3861cf31005e23791240a3; target translation/content/many-valued-logic/sequent-calculus/rules-and-proofs.tex:16-28 bytes 478-1303 SHA-256 9d4f562676c982a5fba5afb88e409222ada929de1d7d42d515db0e909b1849dc; reader page pending.
+  - te-Telu-IN-TE-T106-OCC-004; OLP-0404; OLP-0404-B010; source upstream/content/many-valued-logic/sequent-calculus/rules-and-proofs.tex:36-42 bytes 1051-1470 SHA-256 edaed42989f5e52e48f2d3a4c28b822e99df5c7fad3861cf31005e23791240a3; target translation/content/many-valued-logic/sequent-calculus/rules-and-proofs.tex:46-57 bytes 2281-3266 SHA-256 9d4f562676c982a5fba5afb88e409222ada929de1d7d42d515db0e909b1849dc; reader page pending.
+  - te-Telu-IN-TE-T106-OCC-005; OLP-0405; OLP-0405-B005; source upstream/content/many-valued-logic/sequent-calculus/structural-rules.tex:11 bytes 191-220 SHA-256 4acc6c8de469ff1e6aed5a5c65878c818fe79f9b14f8882b5031c45179375261; target translation/content/many-valued-logic/sequent-calculus/structural-rules.tex:11 bytes 190-261 SHA-256 dbbaa79605045d53194bbedd5ec1dcbc38af9e41afb3dabcec4f0900c28c3d01; reader page pending.
+  - te-Telu-IN-TE-T106-OCC-006; OLP-0406; OLP-0406-B005; source upstream/content/many-valued-logic/sequent-calculus/propositional-rules.tex:11 bytes 193-245 SHA-256 7ec37019c2bc225b2cd247dbee140a3ba8e39b319c8e5c49e5b635dc669659e7; target translation/content/many-valued-logic/sequent-calculus/propositional-rules.tex:11 bytes 193-323 SHA-256 5bd72cc29464d67496c96c24f5aa6ed5affa03919497cf318b65ef7ece668dfa; reader page pending.
+  - te-Telu-IN-TE-T106-OCC-007; OLP-0406; OLP-0406-B022; source upstream/content/many-valued-logic/sequent-calculus/propositional-rules.tex:141 bytes 4466-4521 SHA-256 7ec37019c2bc225b2cd247dbee140a3ba8e39b319c8e5c49e5b635dc669659e7; target translation/content/many-valued-logic/sequent-calculus/propositional-rules.tex:149-150 bytes 5493-5615 SHA-256 5bd72cc29464d67496c96c24f5aa6ed5affa03919497cf318b65ef7ece668dfa; reader page pending.
+  - te-Telu-IN-TE-T106-OCC-008; OLP-0406; OLP-0406-B026; source upstream/content/many-valued-logic/sequent-calculus/propositional-rules.tex:190-233 bytes 6169-7922 SHA-256 7ec37019c2bc225b2cd247dbee140a3ba8e39b319c8e5c49e5b635dc669659e7; target translation/content/many-valued-logic/sequent-calculus/propositional-rules.tex:200-244 bytes 7320-9140 SHA-256 5bd72cc29464d67496c96c24f5aa6ed5affa03919497cf318b65ef7ece668dfa; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -12935,3 +12968,81 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEMVLINF-004-OCC-001; OLP-0401; OLP-0401-B007; source upstream/content/many-valued-logic/infinite-valued-logics/goedel.tex:17-40 bytes 325-1212 SHA-256 5d2ee265f4bec099c01297f7e6d605c3c0100e59a96cce2cf9636ec9fb9e186b; target translation/content/many-valued-logic/infinite-valued-logics/goedel.tex:47 bytes 1825-1894 SHA-256 94f553c7cc3aa02f552248219b6320fe4afd7e0b7091b6225e623d18efc0aff4; reader page pending.
+
+## te-Telu-IN-OLTEMVLSEQ-001 — OLTEMVLSEQ-001: left sequent index conflicts with semantic formula
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: సీక్వెంట్ ఎడమ చివరి సూచికను దానికి సరిపడే సంయోగం ప్రకారం mగా సరిచేసి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited left sequent index conflicts with semantic formula at introduction.tex lines 20-26, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLSEQ-20260926:OLTEMVLSEQ-001 [checked_supports], content/many-valued-logic/sequent-calculus/introduction.tex; introduction.tex lines 20-26; left_sequent_index_conflicts_with_semantic_formula; సీక్వెంట్ ఎడమ చివరి సూచికను దానికి సరిపడే సంయోగం ప్రకారం mగా సరిచేసి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the left sequent list now end at A_m, matching its conjunction, while the right list still ends at B_n?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLSEQ-001-OCC-001; OLP-0403; OLP-0403-B007; source upstream/content/many-valued-logic/sequent-calculus/introduction.tex:20-32 bytes 590-1177 SHA-256 d34708177650e4673f957d0b6ecdc9f210e4d65987e47f0694077c3d21ce63ef; target translation/content/many-valued-logic/sequent-calculus/introduction.tex:27 bytes 1536-1611 SHA-256 f6c489d011ac08ead20cd7b52079a7b1dc91de27d3ee25da09fb3c3bebd22c0e; reader page pending.
+
+## te-Telu-IN-OLTEMVLSEQ-002 — OLTEMVLSEQ-002: valuation argument missing in initial sequent explanation
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: ప్రారంభ సీక్వెంట్ మూల్యాంకనంలో తప్పిపోయిన v ఆర్గ్యుమెంట్‌ను చేర్చి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited valuation argument missing in initial sequent explanation at introduction.tex lines 27-32, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLSEQ-20260926:OLTEMVLSEQ-002 [checked_supports], content/many-valued-logic/sequent-calculus/introduction.tex; introduction.tex lines 27-32; valuation_argument_missing_in_initial_sequent_explanation; ప్రారంభ సీక్వెంట్ మూల్యాంకనంలో తప్పిపోయిన v ఆర్గ్యుమెంట్‌ను చేర్చి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Was the missing valuation argument v restored only to the second initial-sequent evaluation, leaving its truth condition intact?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLSEQ-002-OCC-001; OLP-0403; OLP-0403-B007; source upstream/content/many-valued-logic/sequent-calculus/introduction.tex:20-32 bytes 590-1177 SHA-256 d34708177650e4673f957d0b6ecdc9f210e4d65987e47f0694077c3d21ce63ef; target translation/content/many-valued-logic/sequent-calculus/introduction.tex:40 bytes 2801-2886 SHA-256 f6c489d011ac08ead20cd7b52079a7b1dc91de27d3ee25da09fb3c3bebd22c0e; reader page pending.
+
+## te-Telu-IN-OLTEMVLSEQ-003 — OLTEMVLSEQ-003: general n side definition uses first index for every position
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: ప్రతి స్థానాన్ని సూచించేందుకు Gamma_1 స్థానంలో Gamma_i రాసి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited general n side definition uses first index for every position at rules-and-proofs.tex lines 16-23, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLSEQ-20260926:OLTEMVLSEQ-003 [checked_supports], content/many-valued-logic/sequent-calculus/rules-and-proofs.tex; rules-and-proofs.tex lines 16-23; general_n_side_definition_uses_first_index_for_every_position; ప్రతి స్థానాన్ని సూచించేందుకు Gamma_1 స్థానంలో Gamma_i రాసి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does each Gamma_i correctly quantify over all n sides, consistent with the displayed sequent and later position-i rules?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLSEQ-003-OCC-001; OLP-0404; OLP-0404-B007; source upstream/content/many-valued-logic/sequent-calculus/rules-and-proofs.tex:16-23 bytes 338-583 SHA-256 edaed42989f5e52e48f2d3a4c28b822e99df5c7fad3861cf31005e23791240a3; target translation/content/many-valued-logic/sequent-calculus/rules-and-proofs.tex:24 bytes 943-1006 SHA-256 9d4f562676c982a5fba5afb88e409222ada929de1d7d42d515db0e909b1849dc; reader page pending.

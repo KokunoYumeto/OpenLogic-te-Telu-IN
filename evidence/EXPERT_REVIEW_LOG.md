@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 401 of 722 draft units**. This log contains 105 terminology/sense decisions and 374 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 406 of 722 draft units**. This log contains 106 terminology/sense decisions and 377 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2527,6 +2527,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: కరణీయ, వాస్తవ, సమితి, సత్యతావిలువ, సంయోజకం, ప్రమేయం, ఫలితం అనే సాధారణ పదజాలానికి ప్రత్యక్ష స్థానిక సాక్ష్యం ఉంది. ఫజీ అనే అరువు, అనంత-విలువల సోపాధిక ప్రమేయాలు, గోడెల్--డమ్మెట్ పథక నామాలు మూల నిర్వచన ఆధారిత తాత్కాలిక ఎంపికలు. ఆ పేజీలు OLTEMVLINF-001–004 గణిత సవరణలకు ఆధారం కావు; స్థిర మూల సమితి వివరణ, ఐదు-విలువల ఉదాహరణ, మాత్రిక పోలిక, TeX స్థితే ఆధారం.
 
 - Please double-check: Please double-check whether “అనంత-విలువల తర్కం / కరణీయ, వాస్తవ సంఖ్యల సత్యమూల్య సమితులు / పరిమిత m-విలువల సమీపనం / ఫజీ తర్కం / Łukasiewicz సోపాధికం / గోడెల్ సోపాధికం / గోడెల్--డమ్మెట్ తర్కం / రేఖీయత పథకం” is idiomatic and technically standard for “infinite-valued logic / rational and real truth-value sets / finite m-valued approximation / fuzzy logic / Łukasiewicz implication / Gödel implication / Gödel-Dummett logic / linearity schema” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T106 — n-sided sequent calculus / initial sequent / designated-value position / derivation and theorem / structural weakening, contraction, exchange and cut / three-valued logical rules
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: n-వైపుల సీక్వెంట్ కలనం / ప్రారంభ సీక్వెంట్ / నిర్దేశిత సత్యమూల్యపు స్థానం / వ్యుత్పత్తి, సిద్ధాంతం / నిర్మాణాత్మక బలహీనీకరణ, సంకోచనం, మార్పిడి, కట్ / మూడు-విలువల తార్కిక నియమాలు
+
+- Exact implementation: OLP-0402; many-valued-logic/sequent-calculus/sequent-calculus; content/many-valued-logic/sequent-calculus/sequent-calculus.tex:8 ↔ translation/content/many-valued-logic/sequent-calculus/sequent-calculus.tex:8 (OLP-0402-B004); printed/PDF page pending; OLP-0403; many-valued-logic/sequent-calculus/introduction; content/many-valued-logic/sequent-calculus/introduction.tex:13-18 ↔ translation/content/many-valued-logic/sequent-calculus/introduction.tex:13-18 (OLP-0403-B006); printed/PDF page pending; OLP-0404; many-valued-logic/sequent-calculus/rules-and-proofs; content/many-valued-logic/sequent-calculus/rules-and-proofs.tex:16-23 ↔ translation/content/many-valued-logic/sequent-calculus/rules-and-proofs.tex:16-28 (OLP-0404-B007); printed/PDF page pending; OLP-0404; many-valued-logic/sequent-calculus/rules-and-proofs; content/many-valued-logic/sequent-calculus/rules-and-proofs.tex:36-42 ↔ translation/content/many-valued-logic/sequent-calculus/rules-and-proofs.tex:46-57 (OLP-0404-B010); printed/PDF page pending; OLP-0405; many-valued-logic/sequent-calculus/structural-rules; content/many-valued-logic/sequent-calculus/structural-rules.tex:11 ↔ translation/content/many-valued-logic/sequent-calculus/structural-rules.tex:11 (OLP-0405-B005); printed/PDF page pending; OLP-0406; many-valued-logic/sequent-calculus/propositional-rules; content/many-valued-logic/sequent-calculus/propositional-rules.tex:11 ↔ translation/content/many-valued-logic/sequent-calculus/propositional-rules.tex:11 (OLP-0406-B005); printed/PDF page pending; OLP-0406; many-valued-logic/sequent-calculus/propositional-rules; content/many-valued-logic/sequent-calculus/propositional-rules.tex:141 ↔ translation/content/many-valued-logic/sequent-calculus/propositional-rules.tex:149-150 (OLP-0406-B022); printed/PDF page pending; OLP-0406; many-valued-logic/sequent-calculus/propositional-rules; content/many-valued-logic/sequent-calculus/propositional-rules.tex:190-233 ↔ translation/content/many-valued-logic/sequent-calculus/propositional-rules.tex:200-244 (OLP-0406-B026); printed/PDF page pending
+
+- Authorities actually checked: TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P020, PDF 79, printed 72, Disjunction heading and truth-table discussion; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening; TE-P033, PDF 40, printed 33, Inference section heading and definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P019–P020లో సత్యతావిలువ, సంయోజక/వియోజక పట్టికలు; TE-P023లో ఫలిత సంబంధం; TE-P024లో నియమ గుర్తులతో ఫలిత వ్యుత్పత్తి; TE-P031లో వాక్యం–ప్రతిజ్ఞావాక్య భేదం; TE-P033లో అనుమాన వివరణ పేజీ చిత్రాలను ప్రత్యక్షంగా చూశాం. ఇవి బహు-విలువల n-వైపుల సీక్వెంట్లను నేరుగా స్థాపించవు. TE-T020/034/035/036లోని పూర్వ అనువాద ప్రయోగాన్ని కొనసాగిస్తూ, OLP-0402–0406 స్థిర సీక్వెంట్ నిర్వచనాలు, మూడు-విలువల నియమ చిత్రాలే ప్రత్యేక అర్థాన్ని నియంత్రిస్తున్నాయి. సీక్వెంట్, కట్, లూకాసియెవిచ్, క్లీని, గోడెల్ ముందరి గుర్తించదగిన బదిలీలు; LK, L, n, Gamma/Pi/Delta, False/Undef/True and rule macros protected mathematical notation.
+
+- Alternatives: TE-P019/020 సత్యతావిలువ, TE-P024 వ్యుత్పత్తి, TE-P033 అనుమానం అనే ప్రత్యక్ష వాడుకను TE-T035/036 సీక్వెంట్ పదాలతో కొనసాగించి, n-వైపుల ప్రత్యేక రూపాన్ని స్థిర మూల నిర్వచనంతో నియంత్రించడం (ఎంపిక); సీక్వెంట్‌కు స్థానిక పేజీలలో కనబడని ఒక స్వదేశీ సాంకేతిక పదాన్ని స్థిరపడినదిగా ప్రకటించడం (తిరస్కరణ); ద్విమూల్య స్థానిక ఫలిత నిర్వచనం మూడు-విలువల నియమాలను నేరుగా నిరూపిస్తుందని ఊహించడం (తిరస్కరణ); నియమ చిత్రాల్లోని మూడు-విలువల స్థానాలను గద్య సరళీకరణ కోసం మార్చడం (తిరస్కరణ)
+
+- Uncertainty: సీక్వెంట్ అరువు, n-వైపుల సంకేతం, నిర్దేశిత స్థానాలు, నిర్దిష్ట బహు-విలువల నియమాలకు స్థానిక పేజీలలో ప్రత్యక్ష సాక్ష్యం లేదు; ఎంపిక తాత్కాలికం. స్థానిక ద్విమూల్య ఫలిత వివరణను మూడు-విలువల నియమాలకు గణిత ప్రమాణంగా వాడలేదు. OLTEMVLSEQ-001–003 సవరణలు స్థిర మూలంలోని సమీప ప్రదర్శనలు, స్థానం-i నియమాలపై ఆధారపడతాయి.
+
+- Please double-check: Please double-check whether “n-వైపుల సీక్వెంట్ కలనం / ప్రారంభ సీక్వెంట్ / నిర్దేశిత సత్యమూల్యపు స్థానం / వ్యుత్పత్తి, సిద్ధాంతం / నిర్మాణాత్మక బలహీనీకరణ, సంకోచనం, మార్పిడి, కట్ / మూడు-విలువల తార్కిక నియమాలు” is idiomatic and technically standard for “n-sided sequent calculus / initial sequent / designated-value position / derivation and theorem / structural weakening, contraction, exchange and cut / three-valued logical rules” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -11503,3 +11527,75 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Were only the two nested dollar delimiters removed from Gödel negation cases, with numeric outputs and conditions unchanged?
+
+## REV-OLTEMVLSEQ-001 — OLTEMVLSEQ-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: సీక్వెంట్ ఎడమ చివరి సూచికను దానికి సరిపడే సంయోగం ప్రకారం mగా సరిచేసి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0403; many-valued-logic/sequent-calculus/introduction; introduction.tex lines 20-26 ↔ translation/content/many-valued-logic/sequent-calculus/introduction.tex:27 (OLP-0403-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLSEQ-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: సీక్వెంట్ ఎడమ చివరి సూచికను దానికి సరిపడే సంయోగం ప్రకారం mగా సరిచేసి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the left sequent list now end at A_m, matching its conjunction, while the right list still ends at B_n?
+
+## REV-OLTEMVLSEQ-002 — OLTEMVLSEQ-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: ప్రారంభ సీక్వెంట్ మూల్యాంకనంలో తప్పిపోయిన v ఆర్గ్యుమెంట్‌ను చేర్చి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0403; many-valued-logic/sequent-calculus/introduction; introduction.tex lines 27-32 ↔ translation/content/many-valued-logic/sequent-calculus/introduction.tex:40 (OLP-0403-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLSEQ-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: ప్రారంభ సీక్వెంట్ మూల్యాంకనంలో తప్పిపోయిన v ఆర్గ్యుమెంట్‌ను చేర్చి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Was the missing valuation argument v restored only to the second initial-sequent evaluation, leaving its truth condition intact?
+
+## REV-OLTEMVLSEQ-003 — OLTEMVLSEQ-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: ప్రతి స్థానాన్ని సూచించేందుకు Gamma_1 స్థానంలో Gamma_i రాసి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0404; many-valued-logic/sequent-calculus/rules-and-proofs; rules-and-proofs.tex lines 16-23 ↔ translation/content/many-valued-logic/sequent-calculus/rules-and-proofs.tex:24 (OLP-0404-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLSEQ-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: ప్రతి స్థానాన్ని సూచించేందుకు Gamma_1 స్థానంలో Gamma_i రాసి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does each Gamma_i correctly quantify over all n sides, consistent with the displayed sequent and later position-i rules?

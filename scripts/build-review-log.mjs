@@ -530,6 +530,16 @@ locations['TE-T105']=[
  L('content/many-valued-logic/infinite-valued-logics/goedel.tex',112,115,137,144,'schema','పథకాన్ని'),
  L('content/many-valued-logic/infinite-valued-logics/goedel.tex',114,115,140,144,'Dummett','డమ్మెట్')
 ];
+locations['TE-T106']=[
+ L('content/many-valued-logic/sequent-calculus/sequent-calculus.tex',8,8,8,8,'Sequent Calculus','సీక్వెంట్ కలనం'),
+ L('content/many-valued-logic/sequent-calculus/introduction.tex',13,18,13,18,'sequent calculus','సీక్వెంట్ కలనం'),
+ L('content/many-valued-logic/sequent-calculus/rules-and-proofs.tex',16,22,16,23,'n$-sided sequent','వైపుల సీక్వెంట్'),
+ L('content/many-valued-logic/sequent-calculus/rules-and-proofs.tex',36,42,46,57,'logical rule','తార్కిక నియమం'),
+ L('content/many-valued-logic/sequent-calculus/structural-rules.tex',11,11,11,11,'Structural Rules','నిర్మాణాత్మక నియమాలు'),
+ L('content/many-valued-logic/sequent-calculus/propositional-rules.tex',11,11,11,11,'Propositional Rules','ప్రతిజ్ఞావాక్య నియమాలు'),
+ L('content/many-valued-logic/sequent-calculus/propositional-rules.tex',141,141,149,150,'strong Kleene logic','బలమైన క్లీని తర్కంలో'),
+ L('content/many-valued-logic/sequent-calculus/propositional-rules.tex',232,232,242,243,'Example','ఉదాహరణ')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -620,6 +630,7 @@ alternatives['TE-T102']=['కేటాయింపు, మూల్యాంక�
 alternatives['TE-T103']=['సత్యమూల్యం, సత్య పట్టిక, ప్రమేయం, ఫలితానికి ప్రత్యక్ష స్థానిక పేజీల వాడుకను; అనిర్ణీత మూడవ విలువ, భవిష్యత్ ఆధారిత వాక్యం, మోడల్ సాధ్యత/అనివార్యతకు స్థిర మూల పట్టికలు, TE-T053/100/102 అర్థ నియంత్రణను వేరుగా నమోదు చేయడం (ఎంపిక)','స్థానిక ద్విమూల్య పట్టికలే లూకాసియెవిచ్ మూడు-విలువల లేదా మోడల్ పదాలకు ప్రత్యక్ష సాక్ష్యమని చెప్పడం (తిరస్కరణ)','సాధ్యమే కాని తప్పనిసరి కాదు అనే చారిత్రక ఉపయోగాన్ని నేటి సాధారణ సాధ్యతతో ఒకటిగా చదవడం (తిరస్కరణ; మూల పాదటిప్పణి భేదం చెబుతుంది)','నాలుగు ముద్రిత పట్టికలే అసత్య స్థిరాంక విలువను నిర్బంధిస్తాయని ఊహించి దాని సంపాదకీయ చేర్పును దాచడం (తిరస్కరణ)'];
 alternatives['TE-T104']=['TE-T032/100/101/102/103లోని సత్యమూల్యం, మాత్రిక, వికల్పం, సర్వసత్యం, అనుగమనం పదాలను కొనసాగించి ప్రత్యేక మూడు-విలువల వ్యవస్థల పేర్లు, విస్ఫోటనరహిత భావం మూల నిర్వచనాలకు కట్టుబడి తాత్కాలికంగా ఇవ్వడం (ఎంపిక)','స్థానిక ద్విమూల్య పేజీలు క్లీని, గోడెల్, LP, హాల్డెన్, ఆర్-మింగిల్ వ్యవస్థలను నేరుగా బోధిస్తాయని చెప్పడం (తిరస్కరణ)','అసత్య స్థిరాంకానికి మూలంలో లేని విలువను మౌనంగా చేర్చి క్లీని సర్వసత్యాలు లేవనే వాదం నిలుస్తుందని ఊహించడం (తిరస్కరణ)','విస్ఫోటనరహితతను అన్ని వైరుధ్యాలనుంచి అన్ని ముగింపులు వస్తాయని పొరబడడం (తిరస్కరణ)'];
 alternatives['TE-T105']=['TE-P006 కరణీయ/వాస్తవ, TE-P008 సమితి, TE-P019 సత్యతావిలువ, TE-P011 ప్రమేయం పదాలను సంచిక స్థిర వాడుకతో కొనసాగించి, ఫజీ, అనంత-విలువల తర్కం, గోడెల్--డమ్మెట్ పథకాన్ని మూల నిర్వచనానికి కట్టుబడి తాత్కాలికంగా వాడటం (ఎంపిక)','TE-P007లో సహజ సంఖ్యలు ఒకటితో మొదలయ్యే స్థానిక సంప్రదాయాన్ని సున్నాతో మొదలయ్యే OpenLogic Natపై రుద్దడం (తిరస్కరణ)','స్థానిక ద్విమూల్య తర్క పేజీలు ఫజీ లేదా గోడెల్--డమ్మెట్ ప్రత్యేక భావాలను నేరుగా ధృవీకరిస్తాయని చెప్పడం (తిరస్కరణ)','ముద్రిత V_m పరిమితి, అసత్య స్థిరాంక లోపాలను దాచడం (తిరస్కరణ)'];
+alternatives['TE-T106']=['TE-P019/020 సత్యతావిలువ, TE-P024 వ్యుత్పత్తి, TE-P033 అనుమానం అనే ప్రత్యక్ష వాడుకను TE-T035/036 సీక్వెంట్ పదాలతో కొనసాగించి, n-వైపుల ప్రత్యేక రూపాన్ని స్థిర మూల నిర్వచనంతో నియంత్రించడం (ఎంపిక)','సీక్వెంట్‌కు స్థానిక పేజీలలో కనబడని ఒక స్వదేశీ సాంకేతిక పదాన్ని స్థిరపడినదిగా ప్రకటించడం (తిరస్కరణ)','ద్విమూల్య స్థానిక ఫలిత నిర్వచనం మూడు-విలువల నియమాలను నేరుగా నిరూపిస్తుందని ఊహించడం (తిరస్కరణ)','నియమ చిత్రాల్లోని మూడు-విలువల స్థానాలను గద్య సరళీకరణ కోసం మార్చడం (తిరస్కరణ)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -636,7 +647,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T105 record the Batch 025--Batch 063 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T106 record the Batch 025--Batch 064 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -700,6 +711,9 @@ const correctionQuestions={
  'OLTEMVLINF-002':'Does V_m now have exactly m evenly spaced values from zero through one for each m at least two, matching the printed V_5 example?',
  'OLTEMVLINF-003':'Is the falsity constant valued zero explicitly and disclosed as an editorial completion needed for the standard-language comparison?',
  'OLTEMVLINF-004':'Were only the two nested dollar delimiters removed from Gödel negation cases, with numeric outputs and conditions unchanged?',
+ 'OLTEMVLSEQ-001':'Does the left sequent list now end at A_m, matching its conjunction, while the right list still ends at B_n?',
+ 'OLTEMVLSEQ-002':'Was the missing valuation argument v restored only to the second initial-sequent evaluation, leaving its truth condition intact?',
+ 'OLTEMVLSEQ-003':'Does each Gamma_i correctly quantify over all n sides, consistent with the displayed sequent and later position-i rules?',
  'OLTEPLSYN-002':'Does the material-conditional abbreviation read exactly as not A or B after removal of the source’s unmatched closing parenthesis?',
  'OLTEPLSYN-003':'Does the formation-sequence proof use syntactic identity, rather than semantic equivalence, for literal identity of symbol strings?',
  'OLTEPLSYN-004':'Does Local Determination unambiguously restrict agreement to variables occurring in the one fixed formula A?',

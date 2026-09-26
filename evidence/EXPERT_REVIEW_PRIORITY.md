@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 401 of 722 draft units**. This view selects 427 of 479 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 406 of 722 draft units**. This view selects 430 of 483 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4273,3 +4273,33 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0401; many-valued-logic/infinite-valued-logics/goedel; translation/content/many-valued-logic/infinite-valued-logics/goedel.tex:47; printed/PDF page pending
 
 - Please double-check: Please double-check: Were only the two nested dollar delimiters removed from Gödel negation cases, with numeric outputs and conditions unchanged?
+
+## REV-OLTEMVLSEQ-001 — OLTEMVLSEQ-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సీక్వెంట్ ఎడమ చివరి సూచికను దానికి సరిపడే సంయోగం ప్రకారం mగా సరిచేసి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0403; many-valued-logic/sequent-calculus/introduction; translation/content/many-valued-logic/sequent-calculus/introduction.tex:27; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the left sequent list now end at A_m, matching its conjunction, while the right list still ends at B_n?
+
+## REV-OLTEMVLSEQ-002 — OLTEMVLSEQ-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రారంభ సీక్వెంట్ మూల్యాంకనంలో తప్పిపోయిన v ఆర్గ్యుమెంట్‌ను చేర్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0403; many-valued-logic/sequent-calculus/introduction; translation/content/many-valued-logic/sequent-calculus/introduction.tex:40; printed/PDF page pending
+
+- Please double-check: Please double-check: Was the missing valuation argument v restored only to the second initial-sequent evaluation, leaving its truth condition intact?
+
+## REV-OLTEMVLSEQ-003 — OLTEMVLSEQ-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రతి స్థానాన్ని సూచించేందుకు Gamma_1 స్థానంలో Gamma_i రాసి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0404; many-valued-logic/sequent-calculus/rules-and-proofs; translation/content/many-valued-logic/sequent-calculus/rules-and-proofs.tex:24; printed/PDF page pending
+
+- Please double-check: Please double-check: Does each Gamma_i correctly quantify over all n sides, consistent with the displayed sequent and later position-i rules?

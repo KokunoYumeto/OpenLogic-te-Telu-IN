@@ -1,0 +1,119 @@
+{
+  "schema": "openlogic-te-commit-readback/1",
+  "checked_at": "2026-09-26T19:31:06.826Z",
+  "commit": "831cdef668eda764a7f799cd41bdfde1724c2d8a",
+  "anonymous": true,
+  "authorization_header_sent": false,
+  "file_count": 12,
+  "files": [
+    {
+      "path": "evidence/GITHUB-COMMIT-49409ccb8a7d-READBACK.json",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/831cdef668eda764a7f799cd41bdfde1724c2d8a/evidence/GITHUB-COMMIT-49409ccb8a7d-READBACK.json",
+      "bytes": 783,
+      "sha256": "fb3c4ef351a5397904358695bd9ce297131f39463a3db7d731e97ee50ee450dc",
+      "expected_bytes": 783,
+      "expected_sha256": "fb3c4ef351a5397904358695bd9ce297131f39463a3db7d731e97ee50ee450dc",
+      "match": true
+    },
+    {
+      "path": "evidence/SEGMENT_CANON_USE.jsonl",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/831cdef668eda764a7f799cd41bdfde1724c2d8a/evidence/SEGMENT_CANON_USE.jsonl",
+      "bytes": 14737478,
+      "sha256": "82a3199fe121a9b97222084e6099b24520cf0c97f9f1769dca1e5976164133d7",
+      "expected_bytes": 14737478,
+      "expected_sha256": "82a3199fe121a9b97222084e6099b24520cf0c97f9f1769dca1e5976164133d7",
+      "match": true
+    },
+    {
+      "path": "evidence/SOURCE_CORRECTIONS.jsonl",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/831cdef668eda764a7f799cd41bdfde1724c2d8a/evidence/SOURCE_CORRECTIONS.jsonl",
+      "bytes": 401527,
+      "sha256": "dbd973158530590fe6cf6253e338345d094bdaf0d421918b3b47070bcac6114b",
+      "expected_bytes": 401527,
+      "expected_sha256": "dbd973158530590fe6cf6253e338345d094bdaf0d421918b3b47070bcac6114b",
+      "match": true
+    },
+    {
+      "path": "evidence/TERM_DECISIONS.jsonl",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/831cdef668eda764a7f799cd41bdfde1724c2d8a/evidence/TERM_DECISIONS.jsonl",
+      "bytes": 193854,
+      "sha256": "a4d46d1c3c98d7a23559b67279f56b037d7293ddc8591fa2e9e068a28f07f813",
+      "expected_bytes": 193854,
+      "expected_sha256": "a4d46d1c3c98d7a23559b67279f56b037d7293ddc8591fa2e9e068a28f07f813",
+      "match": true
+    },
+    {
+      "path": "evidence/source-audits/2026-09-26-many-valued-sequent-telugu/FINDINGS.json",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/831cdef668eda764a7f799cd41bdfde1724c2d8a/evidence/source-audits/2026-09-26-many-valued-sequent-telugu/FINDINGS.json",
+      "bytes": 3644,
+      "sha256": "98853157a1778148533bf088c727125390c8905394d5d3e4843cf5d37f2382eb",
+      "expected_bytes": 3644,
+      "expected_sha256": "98853157a1778148533bf088c727125390c8905394d5d3e4843cf5d37f2382eb",
+      "match": true
+    },
+    {
+      "path": "evidence/source-audits/2026-09-26-many-valued-sequent-telugu/REVIEW.md",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/831cdef668eda764a7f799cd41bdfde1724c2d8a/evidence/source-audits/2026-09-26-many-valued-sequent-telugu/REVIEW.md",
+      "bytes": 2890,
+      "sha256": "d4aa48659f115c8f778daebab81655e79e06fca1ef9a1e219d8e4aea38498bb8",
+      "expected_bytes": 2890,
+      "expected_sha256": "d4aa48659f115c8f778daebab81655e79e06fca1ef9a1e219d8e4aea38498bb8",
+      "match": true
+    },
+    {
+      "path": "scripts/add-batch064-evidence.mjs",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/831cdef668eda764a7f799cd41bdfde1724c2d8a/scripts/add-batch064-evidence.mjs",
+      "bytes": 11711,
+      "sha256": "a20c59d65c0d7ae3a0817f14b2dbee3c87cb7b76d3713bf02f39a7d7aa43b2b4",
+      "expected_bytes": 11711,
+      "expected_sha256": "a20c59d65c0d7ae3a0817f14b2dbee3c87cb7b76d3713bf02f39a7d7aa43b2b4",
+      "match": true
+    },
+    {
+      "path": "translation/content/many-valued-logic/sequent-calculus/introduction.tex",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/831cdef668eda764a7f799cd41bdfde1724c2d8a/translation/content/many-valued-logic/sequent-calculus/introduction.tex",
+      "bytes": 6284,
+      "sha256": "f6c489d011ac08ead20cd7b52079a7b1dc91de27d3ee25da09fb3c3bebd22c0e",
+      "expected_bytes": 6284,
+      "expected_sha256": "f6c489d011ac08ead20cd7b52079a7b1dc91de27d3ee25da09fb3c3bebd22c0e",
+      "match": true
+    },
+    {
+      "path": "translation/content/many-valued-logic/sequent-calculus/propositional-rules.tex",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/831cdef668eda764a7f799cd41bdfde1724c2d8a/translation/content/many-valued-logic/sequent-calculus/propositional-rules.tex",
+      "bytes": 9156,
+      "sha256": "5bd72cc29464d67496c96c24f5aa6ed5affa03919497cf318b65ef7ece668dfa",
+      "expected_bytes": 9156,
+      "expected_sha256": "5bd72cc29464d67496c96c24f5aa6ed5affa03919497cf318b65ef7ece668dfa",
+      "match": true
+    },
+    {
+      "path": "translation/content/many-valued-logic/sequent-calculus/rules-and-proofs.tex",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/831cdef668eda764a7f799cd41bdfde1724c2d8a/translation/content/many-valued-logic/sequent-calculus/rules-and-proofs.tex",
+      "bytes": 6357,
+      "sha256": "9d4f562676c982a5fba5afb88e409222ada929de1d7d42d515db0e909b1849dc",
+      "expected_bytes": 6357,
+      "expected_sha256": "9d4f562676c982a5fba5afb88e409222ada929de1d7d42d515db0e909b1849dc",
+      "match": true
+    },
+    {
+      "path": "translation/content/many-valued-logic/sequent-calculus/sequent-calculus.tex",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/831cdef668eda764a7f799cd41bdfde1724c2d8a/translation/content/many-valued-logic/sequent-calculus/sequent-calculus.tex",
+      "bytes": 349,
+      "sha256": "be805876ca99051d2c47ee2d452ac1f2afba695cbfc3c1d22c1866be4a5697ce",
+      "expected_bytes": 349,
+      "expected_sha256": "be805876ca99051d2c47ee2d452ac1f2afba695cbfc3c1d22c1866be4a5697ce",
+      "match": true
+    },
+    {
+      "path": "translation/content/many-valued-logic/sequent-calculus/structural-rules.tex",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/831cdef668eda764a7f799cd41bdfde1724c2d8a/translation/content/many-valued-logic/sequent-calculus/structural-rules.tex",
+      "bytes": 2373,
+      "sha256": "dbbaa79605045d53194bbedd5ec1dcbc38af9e41afb3dabcec4f0900c28c3d01",
+      "expected_bytes": 2373,
+      "expected_sha256": "dbbaa79605045d53194bbedd5ec1dcbc38af9e41afb3dabcec4f0900c28c3d01",
+      "match": true
+    }
+  ],
+  "status": "COMPLETE_PASS"
+}
