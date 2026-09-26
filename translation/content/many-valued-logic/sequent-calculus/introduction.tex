@@ -1,0 +1,106 @@
+% Part: many-valued-logic
+% Chapter: sequent-calculus
+% Section: introduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{seq}{int}
+
+\olsection{పరిచయం}
+
+సాంప్రదాయిక తర్కంలోని సీక్వెంట్ కలనం సమర్థమైన, సరళమైన
+\tetoken{వ్యుత్పత్తి}{!!{derivation}} వ్యవస్థ. ఒక బహు-విలువల తర్కం
+పరిమిత సంఖ్యలో సత్యమూల్యాలు గల మాత్రికచే నిర్వచించబడితే,
+అంటే $V$ పరిమిత సమితి అయితే, దానికి సీక్వెంట్ కలనం ఇవ్వవచ్చు.
+ఎలా ఇవ్వాలనే ఆలోచన సాంప్రదాయిక సందర్భంలో సీక్వెంట్ల
+అర్థాలను, నిగమన నియమాల రూపాన్ని పరిశీలించడం నుంచి వస్తుంది.
+
+ఒక సీక్వెంట్‌ను ఈ విధంగా గుర్తుచేసుకుందాం:
+\begin{align*}
+    !A_1, \dots, !A_m & \Sequent !B_1, \dots, !B_n
+\intertext{దీనిని కింది \tetoken{సూత్రంగా}{!!{formula}} అర్థం చేసుకోవచ్చు:}
+    (!A_1 \land \cdots \land !A_m) & \lif (!B_1 \lor \cdots \lor
+!B_n)
+\end{align*}
+\sourcecorrection{OLTEMVLSEQ-001}{ఆంగ్ల మూలంలోని
+సీక్వెంట్ ఎడమవైపు చివరి సూచిక $n$గా ఉంది; వెంటనే
+ఇచ్చిన దానికి సరిపడే సూత్రంలో అది $m$.
+రెండు వైపుల సంఖ్యలను వేరుగా చూపడానికి
+సీక్వెంట్‌లోని చివరి ఎడమ సూచికను $m$గా సరిచేశాం.}
+మరో మాటలో, \tetoken{సత్యమూల్య కేటాయింపు}{!!^a{valuation}}~$\pAssign{v}$
+సీక్వెంట్ $\Gamma \Sequent \Delta$ను \emph{సంతృప్తిపరుస్తుంది},
+ఏదో $!A \in \Gamma$కు $\pValue{v}(!A) = \False$
+లేదా ఏదో $!A \in \Delta$కు $\pValue{v}(!A) = \True$
+అయితే, అప్పుడు మాత్రమే. ఈ అర్థం ప్రకారం ప్రారంభ
+సీక్వెంట్లు $!A \Sequent !A$ ఎప్పుడూ సంతృప్తిపడతాయి:
+$\pValue v(!A) = \True$ లేదా $\pValue v(!A) =
+\False$ తప్పనిసరిగా ఉంటుంది.
+\sourcecorrection{OLTEMVLSEQ-002}{చివరి మూల సమీకరణలో
+$\pValue$కు కేటాయింపు $v$ ఆర్గ్యుమెంట్ తప్పిపోయింది.
+అదే పేరాలోని ముందరి రెండు మూల్యాంకనాల
+మాదిరిగా దాన్ని చేర్చాం; సత్య షరతు మారలేదు.}
+
+$\Gamma$, $\Delta$ అనే పక్క సూత్రాలను చూపకుండా,
+$\Log{LK}$లోని సోపాధికానికి నిగమన నియమాలు ఇవి:
+
+\begin{defish}
+    \Axiom$ \fCenter !A$
+    \Axiom$ !B \fCenter $
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$ !A \lif !B \fCenter $
+    \DisplayProof
+    \hfill
+    \Axiom$ !A \fCenter !B$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$ \fCenter !A \lif !B $
+    \DisplayProof
+\end{defish}
+
+సీక్వెంట్‌కు పైన చెప్పిన అర్థపర వివరణను
+వర్తింపజేస్తే, $\LeftR{\lif}$ నియమం ఇలా
+చెబుతుందని చదవవచ్చు: $\pValue v(!A) = \True$,
+$\pValue v(!B) = \False$ అయితే
+$\pValue v(!A \lif !B) = \False$.
+అదేవిధంగా, $\RightR{\lif}$ నియమం
+$\pValue v(!A) = \False$ లేదా
+$\pValue v(!B) = \True$ అయితే
+$\pValue v(!A \lif !B) = \True$ అని
+చెబుతుంది. నిజానికి ఈ రెండు షరతులూ
+ద్విదిశ షరతులే. $\LeftR{\land}$,
+$\RightR{\lor}$ నియమాల ప్రామాణిక
+రూపాల్లో వాటికి సరిపోలే షరతులు
+ద్విదిశ షరతులు కావు. అయితే,
+అలా అయ్యే ప్రత్యామ్నాయ నియమరూపాలు ఇవి:
+
+\begin{defish}
+    \Axiom$!A, !B, \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\land}}
+    \UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+    \DisplayProof
+    \hfill
+    \Axiom$ \Gamma \fCenter \Delta, !A, !B$
+    \RightLabel{\RightR{\lor}}
+    \UnaryInf$ \Gamma \fCenter \Delta, !A \lor !B$
+    \DisplayProof
+\end{defish}
+
+ఈ ప్రాథమిక ఆలోచనను $n$-విలువల తర్కానికి
+వర్తింపజేస్తే, రెండు స్థానాలకు బదులు $n$
+స్థానాలున్న సీక్వెంట్ కలనం వస్తుంది;
+ప్రతి సత్యమూల్యానికి ఒక స్థానం ఉంటుంది.
+$V = \{\False, \Undef, \True\}$ గల
+మూడు-విలువల తర్కంలో సీక్వెంట్
+$\Gamma \mid \Pi \mid \Delta$ రూపంలో ఉంటుంది.
+\tetoken{సత్యమూల్య కేటాయింపు}{!!a{valuation}}~$\pAssign v$
+దాన్ని సంతృప్తిపరుస్తుంది, ఏదో
+$!A \in \Gamma$కు $\pValue{v}(!A) = \False$
+లేదా ఏదో $!A \in \Delta$కు
+$\pValue{v}(!A) = \True$ లేదా ఏదో
+$!A \in \Pi$కు $\pValue{v}(!A) = \Undef$
+అయితే, అప్పుడు మాత్రమే. అందువల్ల
+ప్రారంభ సీక్వెంట్లు $!A \mid !A \mid !A$
+ఎప్పుడూ సంతృప్తిపడతాయి.
+
+\end{document}

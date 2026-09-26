@@ -1,0 +1,115 @@
+% Part: many-valued-logic
+% Chapter: sequent-calculus
+% Section: rules-and-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{seq}{rul}
+
+\olsection{నియమాలు, \usetoken{P}{derivation}}
+
+కింది చర్చలో $\Gamma, \Delta, \Pi, \Lambda$లు
+\tetoken{వాక్యాల}{!!{sentence}s} పరిమిత క్రమాలను సూచిస్తాయని అనుకుందాం.
+
+\begin{defn}[సీక్వెంట్]
+\emph{$n$-వైపుల సీక్వెంట్} అంటే కింది రూపంలోని వ్యక్తీకరణ:
+\[
+\Gamma_1 \nSequent \dots \nSequent \Gamma_n
+\]
+ఇక్కడ ప్రతి $\Gamma_i$ భాష~$\Lang L$లోని
+\tetoken{వాక్యాల}{!!{sentence}s} పరిమిత క్రమం;
+అది శూన్యంగా కూడా ఉండవచ్చు.
+\sourcecorrection{OLTEMVLSEQ-003}{ఆంగ్ల మూలం
+ప్రతి స్థానానికి $\Gamma_1$ అని రాసింది.
+$n$-వైపుల సీక్వెంట్‌లో ఏ స్థానాన్నైనా
+సూచించేందుకు ఇక్కడ $\Gamma_i$గా సరిచేశాం.}
+\end{defn}
+
+\begin{defn}[ప్రారంభ సీక్వెంట్]
+\emph{$n$-వైపుల ప్రారంభ సీక్వెంట్} అంటే,
+భాషలోని ఏ \tetoken{వాక్యం}{!!{sentence}} $!A$కైనా
+$!A \nSequent \dots \nSequent !A$
+రూపంలో ఉండే $n$-వైపుల సీక్వెంట్.
+
+భాషలో $0$-స్థానిక సంయోజకం~$\star$,
+అంటే ప్రతిజ్ఞావాక్య స్థిరాంకం కూడా ఉంటే,
+$\dots \nSequent \star \nSequent \dots$
+అనే సీక్వెంట్‌నూ ప్రారంభ సీక్వెంట్‌గా
+తీసుకుంటాం. ఇందులో $\star$,
+$\tf{\star} \in V$కు సంబంధించిన
+సత్యమూల్యపు స్థానంలో ఉంటుంది;
+ఇతర స్థానాలు శూన్యంగా ఉంటాయి.
+\end{defn}
+
+$n$-విలువల తర్కం~$\Log{L}$లోని ప్రతి
+సంయోజకానికి, $\Log{L}$లో ఆ సంయోజకం
+పొందగల ప్రతి సత్యమూల్యానికి ఒక
+తార్కిక నియమం ఉంటుంది. $\Log{L}$కు
+చెందిన $n$-వైపుల సీక్వెంట్ కలనంలో
+\tetoken{వ్యుత్పత్తులు}{!!^{derivation}s}
+సీక్వెంట్ల వృక్షాలు. వాటి ఎగువన
+ఉన్న సీక్వెంట్లు ప్రారంభ సీక్వెంట్లు;
+ఒక సీక్వెంట్ మరొకటి లేదా మరికొన్నింటి
+కింద ఉంటే, అది $\Log{L}$ సంయోజకాల
+నిగమన నియమాన్ని సరిగ్గా వర్తింపజేసి
+వాటి నుంచి రావాలి.
+
+\begin{defn}[సిద్ధాంతాలు]
+ఒక $n$-విలువల తర్కం~$\Log{L}$లో
+\tetoken{వాక్యం}{!!^a{sentence}}~$!A$
+\emph{సిద్ధాంతం} అవుతుంది,
+$\Log{L}$లోని ప్రతి నిర్దేశిత
+సత్యమూల్యానికి సంబంధించిన
+స్థానంలో $!A$ ఉన్న $n$-వైపుల
+సీక్వెంట్‌కు \tetoken{వ్యుత్పత్తి}{!!a{derivation}}
+ఉంటే, అప్పుడు మాత్రమే.
+$!A$ సిద్ధాంతమైతే
+$\Proves[\Log{L}] !A$ అనీ, కాకపోతే
+$\Proves/[\Log{L}] !A$ అనీ రాస్తాం.
+\end{defn}
+
+\begin{defn}[\tetoken{వ్యుత్పాద్యత}{!!^{derivability}}]
+$n$-విలువల తర్కం~$\Log{L}$లో
+\tetoken{వాక్యాల}{!!{sentence}s} సమితి~$\Gamma$
+నుంచి \tetoken{వాక్యం}{!!^a{sentence}}~$!A$
+\emph{\tetoken{వ్యుత్పాదించదగినది}{!!{derivable}}}
+అని, $\Gamma \Proves[\Log{L}] !A$ అని అంటాం,
+కింది షరతు నెరవేరితే, అప్పుడు మాత్రమే:
+పరిమిత ఉపసమితి
+$\Gamma_0 \subseteq \Gamma$ ఒకటి,
+$\Gamma_0$లోని \tetoken{వాక్యాల}{!!{sentence}s}
+క్రమం $\Gamma_0'$ ఒకటి ఉండి,
+కింది సీక్వెంట్‌కు
+\tetoken{వ్యుత్పత్తి}{!!a{derivation}}
+ఉండాలి:
+\[ \Lambda_1 \nSequent \dots \nSequent \Lambda_n \]
+ఇక్కడ స్థానం $i$ ఒక నిర్దేశిత
+సత్యమూల్యానికి సంబంధించినదైతే
+$\Lambda_i$ అనేది $!A$;
+లేకపోతే $\Gamma_0'$.
+$!A$ను $\Gamma$ నుంచి
+\tetoken{వ్యుత్పాదించలేకపోతే}{!!{derivable}}
+$\Gamma \Proves/ !A$ అని రాస్తాం.
+\end{defn}
+
+ఉదాహరణకు, $3$-విలువల \L ukasiewicz
+తర్కానికి $3$-వైపుల సీక్వెంట్ కలనం
+ఉంది. $3$-వైపుల $\Gamma \nSequent \Pi \nSequent
+\Delta$ అనే సీక్వెంట్‌లో $\Gamma$,
+$\False$కు; $\Delta$, $\True$కు;
+$\Pi$, $\Undef$కు సంబంధించినవి.
+స్వీకృతాలు $!A \nSequent !A \nSequent !A$.
+$\True$ ఒక్కటే నిర్దేశితమైనందున,
+$\Gamma \Proves[\LogLuk[3]] !A$ అవుతుంది,
+$\Gamma \nSequent \Gamma \nSequent !A$
+అనే సీక్వెంట్‌కు
+\tetoken{వ్యుత్పత్తి}{!!a{derivation}} ఉంటే,
+అప్పుడు మాత్రమే. ($\Undef$ కూడా
+నిర్దేశితమైతే, $\Gamma \nSequent !A
+\nSequent !A$కు
+\tetoken{వ్యుత్పత్తి}{!!a{derivation}}
+అవసరమయ్యేది.)
+
+\end{document}
