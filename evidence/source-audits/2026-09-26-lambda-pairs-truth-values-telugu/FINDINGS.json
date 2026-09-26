@@ -1,0 +1,40 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTELAMLDFPAIRTRUTH-20260926",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": ["OLP-0376", "OLP-0377"],
+    "finding_count": 1
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "source_files": [
+    {
+      "unit_id": "OLP-0376",
+      "path": "content/lambda-calculus/lambda-definability/pairs.tex",
+      "bytes": 1745,
+      "sha256": "4d2fd1df669f4a9a40328ebd0a7fcea1e38576e6b32acc5a5692626b934032cb"
+    },
+    {
+      "unit_id": "OLP-0377",
+      "path": "content/lambda-calculus/lambda-definability/truth-values.tex",
+      "bytes": 3170,
+      "sha256": "c59cf879d08ccb846c28886a957ffee1a5256157e9a160af104606743eb9006c"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "OLTELAMLDFTVR-001",
+      "unit_id": "OLP-0377",
+      "classification": "relation_arity_declared_n_but_application_uses_k_arguments",
+      "source_locator": "truth-values.tex lines 24-33, especially lines 25 and 28-31",
+      "finding": "మూల నిర్వచనం సంబంధాన్ని $R\\subseteq\\Nat^n$గా ప్రకటించినా, రెండు తగ్గింపు సూత్రాలు మరియు నిజత్వ షరతు $n_1,\\dots,n_k$ అనే $k$ ఆర్గ్యుమెంట్లను వాడుతున్నాయి.",
+      "controlling_evidence": "రెండు తగ్గింపు సూత్రాల్లో ఒక్కొక్కటికి k చర్చ్ సంఖ్యాంక ఆర్గ్యుమెంట్లు ఉన్నాయి; మధ్య నిజత్వ షరతు R(n_1,...,n_k). ఈ ఇన్‌పుట్లపై పరీక్షించే సంబంధం k-స్థానికం కాబట్టి ప్రకటించిన విస్తృతి Nat^k కావాలి. ఇతర సూత్రం మారాల్సిన అవసరం లేదు.",
+      "required_translation_handling": "ప్రకటించిన ఘాతాన్ని మాత్రమే Nat^n నుంచి Nat^kకు మార్చి, రెండు ప్రయోగ సూత్రాలు, నిజత్వ షరతును నిలిపి, నిర్వచనం పక్కనే స్థాన సవరణను ప్రకటించాలి."
+    }
+  ]
+}

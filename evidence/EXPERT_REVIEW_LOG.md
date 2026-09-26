@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 375 of 722 draft units**. This log contains 93 terminology/sense decisions and 343 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 377 of 722 draft units**. This log contains 95 terminology/sense decisions and 344 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2239,6 +2239,54 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: ప్రత్యక్ష స్థానిక లాంబ్డా-కలనశాస్త్ర సాక్ష్యం లేదు; సంఖ్యాంకం, నిర్వచనీయత, సంఖ్యల సంకేతీకరణ పదాలు తాత్కాలికం. స్థానిక పేజీ TE-P007 సున్నాను సహజ సంఖ్యలలో చేర్చదు; OpenLogic \Nat సంప్రదాయం సున్నాను చేర్చుతుంది, కాబట్టి మూల గణిత సంప్రదాయాన్ని నిలిపాం.
 
 - Please double-check: Please double-check whether “లాంబ్డాతో నిర్వచనీయత / చర్చ్ సంఖ్యాంకం / సహజ సంఖ్యలపై ప్రమేయం / ఉత్తరగామి, సంకలనం, గుణకారం, ఘాతాంకన సంకేతీకరణలు” is idiomatic and technically standard for “lambda definability / Church numeral / natural-number function / successor, addition, multiplication and exponentiation encodings” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T094 — Church-encoded ordered pair / first and second projection / predecessor / subtraction
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: లాంబ్డాలో సంకేతీకరించిన క్రమయుగ్మం / మొదటి, రెండవ అవయవ ఎంపిక / పూర్వవర్తి / తీసివేత
+
+- Exact implementation: OLP-0376; lambda-calculus/lambda-definability/pairs; content/lambda-calculus/lambda-definability/pairs.tex:9-10 ↔ translation/content/lambda-calculus/lambda-definability/pairs.tex:9-10 (OLP-0376-B004); printed/PDF page pending; OLP-0376; lambda-calculus/lambda-definability/pairs; content/lambda-calculus/lambda-definability/pairs.tex:12-17 ↔ translation/content/lambda-calculus/lambda-definability/pairs.tex:12-18 (OLP-0376-B005); printed/PDF page pending; OLP-0376; lambda-calculus/lambda-definability/pairs; content/lambda-calculus/lambda-definability/pairs.tex:38-47 ↔ translation/content/lambda-calculus/lambda-definability/pairs.tex:40-51 (OLP-0376-B008); printed/PDF page pending; OLP-0376; lambda-calculus/lambda-definability/pairs; content/lambda-calculus/lambda-definability/pairs.tex:49-52 ↔ translation/content/lambda-calculus/lambda-definability/pairs.tex:53-57 (OLP-0376-B009); printed/PDF page pending
+
+- Authorities actually checked: TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P034, PDF 308, printed 301, Main point 5, Cartesian product definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P034లో క్రమయుగ్మం, TE-P010లో సంబంధంలో క్రమయుగ్మాల వాడుక, TE-P011లో ప్రమేయం, TE-P005లో సహజ సంఖ్యల అంకగణిత గద్యం, TE-P032లో నిరూపణ శైలిని ప్రత్యక్షంగా చూశాం. ఇవి చర్చ్ క్రమయుగ్మ సంకేతీకరణ లేదా లాంబ్డా పూర్వవర్తిని నేరుగా స్థాపించవు. OLP-0376లోని Pair/Fst/Snd నిర్వచనాలు, జత స్థితిని పునరావర్తించే Pred, Sub సూత్రాలే ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి; TE-T012, TE-T019, TE-T079, TE-T093 ఎంపికలను కొనసాగిస్తున్నాం. లాంబ్డా పూర్వ ప్రత్యేక బదిలీ; M, N, Pair, Fst, Snd, Pred, Sub, \tuple, \num, \fn గుర్తింపులుగా యథాతథం.
+
+- Alternatives: TE-P034లో ప్రత్యక్షంగా ఉన్న క్రమయుగ్మం పదాన్ని లాంబ్డా జతకు వర్తింపజేసి Fst/Snd సూత్రాలతో క్రమాన్ని నిలపడం (ఎంపిక); క్రమిత జత అనే అస్థిర పర్యాయాన్ని తిరిగి తెచ్చుకోవడం (తిరస్కరణ); స్థానిక పేజీ చర్చ్ జత సంకేతీకరణను నేరుగా బోధిస్తుందని చెప్పడం (తిరస్కరణ); Predలో మొదటి, రెండవ అవయవాల క్రమాన్ని మార్చడం (తిరస్కరణ)
+
+- Uncertainty: క్రమయుగ్మం స్థానికంగా ప్రత్యక్షం; లాంబ్డా-సంకేతీకరణ, మొదటి/రెండవ అవయవ ఎంపిక, పూర్వవర్తి పదాల ప్రత్యేక నామకరణం తాత్కాలికం. OpenLogic సహజ సంఖ్యల్లో సున్నాను చేర్చే సంప్రదాయం మూలం ప్రకారమే.
+
+- Please double-check: Please double-check whether “లాంబ్డాలో సంకేతీకరించిన క్రమయుగ్మం / మొదటి, రెండవ అవయవ ఎంపిక / పూర్వవర్తి / తీసివేత” is idiomatic and technically standard for “Church-encoded ordered pair / first and second projection / predecessor / subtraction” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T095 — Church truth-value selector / lambda-definable relation / zero test / negation, conjunction and disjunction
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: చర్చ్ సత్యమూల్య ఎంపిక ప్రమేయం / లాంబ్డాతో నిర్వచించదగిన సంబంధం / సున్నా పరీక్ష / నిషేధం, సంయోగం, వికల్పం
+
+- Exact implementation: OLP-0377; lambda-calculus/lambda-definability/truth-values; content/lambda-calculus/lambda-definability/truth-values.tex:9-10 ↔ translation/content/lambda-calculus/lambda-definability/truth-values.tex:9-10 (OLP-0377-B004); printed/PDF page pending; OLP-0377; lambda-calculus/lambda-definability/truth-values; content/lambda-calculus/lambda-definability/truth-values.tex:18-22 ↔ translation/content/lambda-calculus/lambda-definability/truth-values.tex:19-24 (OLP-0377-B006); printed/PDF page pending; OLP-0377; lambda-calculus/lambda-definability/truth-values; content/lambda-calculus/lambda-definability/truth-values.tex:24-33 ↔ translation/content/lambda-calculus/lambda-definability/truth-values.tex:26-37 (OLP-0377-B007); printed/PDF page pending; OLP-0377; lambda-calculus/lambda-definability/truth-values; content/lambda-calculus/lambda-definability/truth-values.tex:48-66 ↔ translation/content/lambda-calculus/lambda-definability/truth-values.tex:53-73 (OLP-0377-B009); printed/PDF page pending; OLP-0377; lambda-calculus/lambda-definability/truth-values; content/lambda-calculus/lambda-definability/truth-values.tex:72-76 ↔ translation/content/lambda-calculus/lambda-definability/truth-values.tex:79-86 (OLP-0377-B011); printed/PDF page pending
+
+- Authorities actually checked: TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P020, PDF 79, printed 72, Disjunction heading and truth-table discussion
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P010లో సంబంధం, TE-P018లో ప్రతిజ్ఞాత్మక తర్క పరిధి, TE-P019లో సత్యతావిలువ, నిషేధం, సంయోజక పట్టిక, TE-P020లో వియోజక సత్య షరతులను ప్రత్యక్షంగా చూశాం. పూర్వ TE-T032, TE-T033లతో సత్యమూల్యం, సంయోగం, వికల్పం రూపాలను స్థిరంగా వాడుతున్నాం. ఏ స్థానిక పేజీ చర్చ్ ఎంపిక ప్రమేయం లేదా లాంబ్డా-నిర్వచనీయ సంబంధాన్ని నేరుగా బోధించదు; OLP-0377 true/false/IsZero/Not/And పదాలే ప్రత్యేక భావాన్ని నియంత్రిస్తాయి. OLTELAMLDFTVR-001 సంబంధపు స్థానం సవరణను ప్రకటిస్తుంది. లాంబ్డా పూర్వ సాంకేతిక బదిలీ; R, M, N, IsZero, Not, And, Or, Xor, \Nat, \num, \fn గణిత గుర్తింపులుగా యథాతథం.
+
+- Alternatives: పూర్వ సత్యమూల్యం, సంయోగం, వికల్పం పదాలను సూత్రాల ఎంపిక-ప్రమేయ అర్థంతో కొనసాగించడం (ఎంపిక); సత్యమూల్యపు లాంబ్డా సంకేతీకరణకు ప్రత్యక్ష స్థానిక సాక్ష్యం ఉందని చెప్పడం (తిరస్కరణ); బహిష్కార వికల్పాన్ని కనీసం ఒకటి నిజమైన సందర్భంతో కలపడం (తిరస్కరణ); సంబంధపు స్థానం n/k అసమానతను దాచడం (తిరస్కరణ)
+
+- Uncertainty: నిషేధ/సంయోగ/వికల్ప సత్య షరతులకు స్థానిక తర్క పేజీలు ప్రత్యక్ష ఆధారం. సత్యమూల్యాన్ని రెండు-ఆర్గ్యుమెంట్ల లాంబ్డా ఎంపిక ప్రమేయంగా సూచించే ప్రత్యేక నామకరణం తాత్కాలికం; Xorకు వివరించిన అభ్యాస షరతే ఖచ్చిత అర్థం.
+
+- Please double-check: Please double-check whether “చర్చ్ సత్యమూల్య ఎంపిక ప్రమేయం / లాంబ్డాతో నిర్వచించదగిన సంబంధం / సున్నా పరీక్ష / నిషేధం, సంయోగం, వికల్పం” is idiomatic and technically standard for “Church truth-value selector / lambda-definable relation / zero test / negation, conjunction and disjunction” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -10471,3 +10519,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: ప్రత్యామ్నాయ గుణకార పదంలో Add b పునరుద్ధరణ రెండవ ఆర్గ్యుమెంటును వాడి n mను ఇస్తుందా?
+
+## REV-OLTELAMLDFTVR-001 — OLTELAMLDFTVR-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: ప్రకటించిన సంబంధపు స్థానాన్ని మాత్రమే Nat^n నుంచి Nat^kకు మార్చి, రెండు k-ఆర్గ్యుమెంట్ల సూత్రాలు, నిజత్వ షరతును నిలిపి పక్కనే సవరణను ప్రకటించాం
+
+- Exact implementation: OLP-0377; lambda-calculus/lambda-definability/truth-values; truth-values.tex lines 24-33, especially lines 25 and 28-31 ↔ translation/content/lambda-calculus/lambda-definability/truth-values.tex:37 (OLP-0377-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMLDFPAIRTRUTH-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: ప్రకటించిన సంబంధపు స్థానాన్ని మాత్రమే Nat^n నుంచి Nat^kకు మార్చి, రెండు k-ఆర్గ్యుమెంట్ల సూత్రాలు, నిజత్వ షరతును నిలిపి పక్కనే సవరణను ప్రకటించాం
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: సంబంధపు రెండు ప్రయోగాల్లో k ఆర్గ్యుమెంట్లు ఉండగా ప్రకటించిన ఘాతం మాత్రమే Nat^kగా మార్చి, ఆ స్థాన సవరణను స్పష్టంగా చెప్పామా?

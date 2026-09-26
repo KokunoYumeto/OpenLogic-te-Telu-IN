@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **375 of 722 source units drafted**. This readable view contains all 436 decisions and 817 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **377 of 722 source units drafted**. This readable view contains all 439 decisions and 827 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2723,6 +2723,65 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T093-OCC-005; OLP-0375; OLP-0375-B009; source upstream/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:56-59 bytes 1962-2066 SHA-256 1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24; target translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:60-63 bytes 3568-3770 SHA-256 9a1de0ca213ef92c2d61c150b852edce25f341cdc2f3346665cf3259877402a9; reader page pending.
   - te-Telu-IN-TE-T093-OCC-006; OLP-0375; OLP-0375-B011; source upstream/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:89-95 bytes 3369-3534 SHA-256 1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24; target translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:96-102 bytes 6848-7124 SHA-256 9a1de0ca213ef92c2d61c150b852edce25f341cdc2f3346665cf3259877402a9; reader page pending.
   - te-Telu-IN-TE-T093-OCC-007; OLP-0375; OLP-0375-B016; source upstream/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:125-136 bytes 4449-4860 SHA-256 1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24; target translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:137-149 bytes 9643-10388 SHA-256 9a1de0ca213ef92c2d61c150b852edce25f341cdc2f3346665cf3259877402a9; reader page pending.
+
+## te-Telu-IN-TE-T094 — Church-encoded ordered pair / first and second projection / predecessor / subtraction
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: లాంబ్డాలో సంకేతీకరించిన క్రమయుగ్మం / మొదటి, రెండవ అవయవ ఎంపిక / పూర్వవర్తి / తీసివేత
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “Church-encoded ordered pair / first and second projection / predecessor / subtraction” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: క్రమయుగ్మం స్థానికంగా ప్రత్యక్షం; లాంబ్డా-సంకేతీకరణ, మొదటి/రెండవ అవయవ ఎంపిక, పూర్వవర్తి పదాల ప్రత్యేక నామకరణం తాత్కాలికం. OpenLogic సహజ సంఖ్యల్లో సున్నాను చేర్చే సంప్రదాయం మూలం ప్రకారమే.
+
+- Rationale: TE-P034లో క్రమయుగ్మం, TE-P010లో సంబంధంలో క్రమయుగ్మాల వాడుక, TE-P011లో ప్రమేయం, TE-P005లో సహజ సంఖ్యల అంకగణిత గద్యం, TE-P032లో నిరూపణ శైలిని ప్రత్యక్షంగా చూశాం. ఇవి చర్చ్ క్రమయుగ్మ సంకేతీకరణ లేదా లాంబ్డా పూర్వవర్తిని నేరుగా స్థాపించవు. OLP-0376లోని Pair/Fst/Snd నిర్వచనాలు, జత స్థితిని పునరావర్తించే Pred, Sub సూత్రాలే ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి; TE-T012, TE-T019, TE-T079, TE-T093 ఎంపికలను కొనసాగిస్తున్నాం. లాంబ్డా పూర్వ ప్రత్యేక బదిలీ; M, N, Pair, Fst, Snd, Pred, Sub, \tuple, \num, \fn గుర్తింపులుగా యథాతథం.
+
+- Authorities checked: TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C004:TE-P034 [checked_context_only], PDF page 308; printed page 301; Main point 5, Cartesian product definition; Direct ordered-pair and Cartesian-product terminology; singular క్రమయుగ్మం is a transparent inflection.
+
+- Alternatives: TE-P034లో ప్రత్యక్షంగా ఉన్న క్రమయుగ్మం పదాన్ని లాంబ్డా జతకు వర్తింపజేసి Fst/Snd సూత్రాలతో క్రమాన్ని నిలపడం [viable_alternative: ఎంపిక] | క్రమిత జత అనే అస్థిర పర్యాయాన్ని తిరిగి తెచ్చుకోవడం [viable_alternative: తిరస్కరణ] | స్థానిక పేజీ చర్చ్ జత సంకేతీకరణను నేరుగా బోధిస్తుందని చెప్పడం [viable_alternative: తిరస్కరణ] | Predలో మొదటి, రెండవ అవయవాల క్రమాన్ని మార్చడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “లాంబ్డాలో సంకేతీకరించిన క్రమయుగ్మం / మొదటి, రెండవ అవయవ ఎంపిక / పూర్వవర్తి / తీసివేత” is idiomatic and technically standard for “Church-encoded ordered pair / first and second projection / predecessor / subtraction” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T094-OCC-001; OLP-0376; OLP-0376-B004; source upstream/content/lambda-calculus/lambda-definability/pairs.tex:9-10 bytes 154-213 SHA-256 4d2fd1df669f4a9a40328ebd0a7fcea1e38576e6b32acc5a5692626b934032cb; target translation/content/lambda-calculus/lambda-definability/pairs.tex:9-10 bytes 154-275 SHA-256 c7589731a6048195aa7c2183d5e12c63cd3091d84281da7a40a24c46bfbc0baf; reader page pending.
+  - te-Telu-IN-TE-T094-OCC-002; OLP-0376; OLP-0376-B005; source upstream/content/lambda-calculus/lambda-definability/pairs.tex:12-17 bytes 214-350 SHA-256 4d2fd1df669f4a9a40328ebd0a7fcea1e38576e6b32acc5a5692626b934032cb; target translation/content/lambda-calculus/lambda-definability/pairs.tex:12-18 bytes 276-508 SHA-256 c7589731a6048195aa7c2183d5e12c63cd3091d84281da7a40a24c46bfbc0baf; reader page pending.
+  - te-Telu-IN-TE-T094-OCC-003; OLP-0376; OLP-0376-B008; source upstream/content/lambda-calculus/lambda-definability/pairs.tex:38-47 bytes 1013-1604 SHA-256 4d2fd1df669f4a9a40328ebd0a7fcea1e38576e6b32acc5a5692626b934032cb; target translation/content/lambda-calculus/lambda-definability/pairs.tex:40-51 bytes 1967-3121 SHA-256 c7589731a6048195aa7c2183d5e12c63cd3091d84281da7a40a24c46bfbc0baf; reader page pending.
+  - te-Telu-IN-TE-T094-OCC-004; OLP-0376; OLP-0376-B009; source upstream/content/lambda-calculus/lambda-definability/pairs.tex:49-52 bytes 1605-1725 SHA-256 4d2fd1df669f4a9a40328ebd0a7fcea1e38576e6b32acc5a5692626b934032cb; target translation/content/lambda-calculus/lambda-definability/pairs.tex:53-57 bytes 3122-3349 SHA-256 c7589731a6048195aa7c2183d5e12c63cd3091d84281da7a40a24c46bfbc0baf; reader page pending.
+
+## te-Telu-IN-TE-T095 — Church truth-value selector / lambda-definable relation / zero test / negation, conjunction and disjunction
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: చర్చ్ సత్యమూల్య ఎంపిక ప్రమేయం / లాంబ్డాతో నిర్వచించదగిన సంబంధం / సున్నా పరీక్ష / నిషేధం, సంయోగం, వికల్పం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “Church truth-value selector / lambda-definable relation / zero test / negation, conjunction and disjunction” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: నిషేధ/సంయోగ/వికల్ప సత్య షరతులకు స్థానిక తర్క పేజీలు ప్రత్యక్ష ఆధారం. సత్యమూల్యాన్ని రెండు-ఆర్గ్యుమెంట్ల లాంబ్డా ఎంపిక ప్రమేయంగా సూచించే ప్రత్యేక నామకరణం తాత్కాలికం; Xorకు వివరించిన అభ్యాస షరతే ఖచ్చిత అర్థం.
+
+- Rationale: TE-P010లో సంబంధం, TE-P018లో ప్రతిజ్ఞాత్మక తర్క పరిధి, TE-P019లో సత్యతావిలువ, నిషేధం, సంయోజక పట్టిక, TE-P020లో వియోజక సత్య షరతులను ప్రత్యక్షంగా చూశాం. పూర్వ TE-T032, TE-T033లతో సత్యమూల్యం, సంయోగం, వికల్పం రూపాలను స్థిరంగా వాడుతున్నాం. ఏ స్థానిక పేజీ చర్చ్ ఎంపిక ప్రమేయం లేదా లాంబ్డా-నిర్వచనీయ సంబంధాన్ని నేరుగా బోధించదు; OLP-0377 true/false/IsZero/Not/And పదాలే ప్రత్యేక భావాన్ని నియంత్రిస్తాయి. OLTELAMLDFTVR-001 సంబంధపు స్థానం సవరణను ప్రకటిస్తుంది. లాంబ్డా పూర్వ సాంకేతిక బదిలీ; R, M, N, IsZero, Not, And, Or, Xor, \Nat, \num, \fn గణిత గుర్తింపులుగా యథాతథం.
+
+- Authorities checked: TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P020 [checked_context_only], PDF page 79; printed page 72; Disjunction heading and truth-table discussion; Direct disjunction and truth-table register; compound operator labels remain definition-controlled.
+
+- Alternatives: పూర్వ సత్యమూల్యం, సంయోగం, వికల్పం పదాలను సూత్రాల ఎంపిక-ప్రమేయ అర్థంతో కొనసాగించడం [viable_alternative: ఎంపిక] | సత్యమూల్యపు లాంబ్డా సంకేతీకరణకు ప్రత్యక్ష స్థానిక సాక్ష్యం ఉందని చెప్పడం [viable_alternative: తిరస్కరణ] | బహిష్కార వికల్పాన్ని కనీసం ఒకటి నిజమైన సందర్భంతో కలపడం [viable_alternative: తిరస్కరణ] | సంబంధపు స్థానం n/k అసమానతను దాచడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “చర్చ్ సత్యమూల్య ఎంపిక ప్రమేయం / లాంబ్డాతో నిర్వచించదగిన సంబంధం / సున్నా పరీక్ష / నిషేధం, సంయోగం, వికల్పం” is idiomatic and technically standard for “Church truth-value selector / lambda-definable relation / zero test / negation, conjunction and disjunction” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T095-OCC-001; OLP-0377; OLP-0377-B004; source upstream/content/lambda-calculus/lambda-definability/truth-values.tex:9-10 bytes 161-225 SHA-256 c59cf879d08ccb846c28886a957ffee1a5256157e9a160af104606743eb9006c; target translation/content/lambda-calculus/lambda-definability/truth-values.tex:9-10 bytes 161-276 SHA-256 38ccfff43ab960e0a3fc0105db7c192dd59a696b5c7f0884f1eb07f12f707de7; reader page pending.
+  - te-Telu-IN-TE-T095-OCC-002; OLP-0377; OLP-0377-B006; source upstream/content/lambda-calculus/lambda-definability/truth-values.tex:18-22 bytes 415-721 SHA-256 c59cf879d08ccb846c28886a957ffee1a5256157e9a160af104606743eb9006c; target translation/content/lambda-calculus/lambda-definability/truth-values.tex:19-24 bytes 577-1293 SHA-256 38ccfff43ab960e0a3fc0105db7c192dd59a696b5c7f0884f1eb07f12f707de7; reader page pending.
+  - te-Telu-IN-TE-T095-OCC-003; OLP-0377; OLP-0377-B007; source upstream/content/lambda-calculus/lambda-definability/truth-values.tex:24-33 bytes 722-1028 SHA-256 c59cf879d08ccb846c28886a957ffee1a5256157e9a160af104606743eb9006c; target translation/content/lambda-calculus/lambda-definability/truth-values.tex:26-37 bytes 1294-2498 SHA-256 38ccfff43ab960e0a3fc0105db7c192dd59a696b5c7f0884f1eb07f12f707de7; reader page pending.
+  - te-Telu-IN-TE-T095-OCC-004; OLP-0377; OLP-0377-B009; source upstream/content/lambda-calculus/lambda-definability/truth-values.tex:48-66 bytes 1660-2756 SHA-256 c59cf879d08ccb846c28886a957ffee1a5256157e9a160af104606743eb9006c; target translation/content/lambda-calculus/lambda-definability/truth-values.tex:53-73 bytes 3787-5845 SHA-256 38ccfff43ab960e0a3fc0105db7c192dd59a696b5c7f0884f1eb07f12f707de7; reader page pending.
+  - te-Telu-IN-TE-T095-OCC-005; OLP-0377; OLP-0377-B011; source upstream/content/lambda-calculus/lambda-definability/truth-values.tex:72-76 bytes 2952-3154 SHA-256 c59cf879d08ccb846c28886a957ffee1a5256157e9a160af104606743eb9006c; target translation/content/lambda-calculus/lambda-definability/truth-values.tex:79-86 bytes 6267-6914 SHA-256 38ccfff43ab960e0a3fc0105db7c192dd59a696b5c7f0884f1eb07f12f707de7; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -11720,3 +11779,29 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTELAMLDFARF-003-OCC-001; OLP-0375; OLP-0375-B015; source upstream/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:117-123 bytes 4283-4448 SHA-256 1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24; target translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:133 bytes 8806-9533 SHA-256 9a1de0ca213ef92c2d61c150b852edce25f341cdc2f3346665cf3259877402a9; reader page pending.
+
+## te-Telu-IN-OLTELAMLDFTVR-001 — OLTELAMLDFTVR-001: relation arity declared n but application uses k arguments
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: ప్రకటించిన సంబంధపు స్థానాన్ని మాత్రమే Nat^n నుంచి Nat^kకు మార్చి, రెండు k-ఆర్గ్యుమెంట్ల సూత్రాలు, నిజత్వ షరతును నిలిపి పక్కనే సవరణను ప్రకటించాం
+
+- Intended sense: Repair the audited relation arity declared n but application uses k arguments at truth-values.tex lines 24-33, especially lines 25 and 28-31, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMLDFPAIRTRUTH-20260926:OLTELAMLDFTVR-001 [checked_supports], content/lambda-calculus/lambda-definability/truth-values.tex; truth-values.tex lines 24-33, especially lines 25 and 28-31; relation_arity_declared_n_but_application_uses_k_arguments; ప్రకటించిన సంబంధపు స్థానాన్ని మాత్రమే Nat^n నుంచి Nat^kకు మార్చి, రెండు k-ఆర్గ్యుమెంట్ల సూత్రాలు, నిజత్వ షరతును నిలిపి పక్కనే సవరణను ప్రకటించాం.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: సంబంధపు రెండు ప్రయోగాల్లో k ఆర్గ్యుమెంట్లు ఉండగా ప్రకటించిన ఘాతం మాత్రమే Nat^kగా మార్చి, ఆ స్థాన సవరణను స్పష్టంగా చెప్పామా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMLDFTVR-001-OCC-001; OLP-0377; OLP-0377-B007; source upstream/content/lambda-calculus/lambda-definability/truth-values.tex:24-33 bytes 722-1028 SHA-256 c59cf879d08ccb846c28886a957ffee1a5256157e9a160af104606743eb9006c; target translation/content/lambda-calculus/lambda-definability/truth-values.tex:37 bytes 1916-2498 SHA-256 38ccfff43ab960e0a3fc0105db7c192dd59a696b5c7f0884f1eb07f12f707de7; reader page pending.

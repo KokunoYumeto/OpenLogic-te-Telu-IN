@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 375 of 722 draft units**. This view selects 396 of 436 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 377 of 722 draft units**. This view selects 397 of 439 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -3963,3 +3963,13 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0375; lambda-calculus/lambda-definability/arithmetical-functions; translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:133; printed/PDF page pending
 
 - Please double-check: Please double-check: ప్రత్యామ్నాయ గుణకార పదంలో Add b పునరుద్ధరణ రెండవ ఆర్గ్యుమెంటును వాడి n mను ఇస్తుందా?
+
+## REV-OLTELAMLDFTVR-001 — OLTELAMLDFTVR-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రకటించిన సంబంధపు స్థానాన్ని మాత్రమే Nat^n నుంచి Nat^kకు మార్చి, రెండు k-ఆర్గ్యుమెంట్ల సూత్రాలు, నిజత్వ షరతును నిలిపి పక్కనే సవరణను ప్రకటించాం
+
+- Occurrences: OLP-0377; lambda-calculus/lambda-definability/truth-values; translation/content/lambda-calculus/lambda-definability/truth-values.tex:37; printed/PDF page pending
+
+- Please double-check: Please double-check: సంబంధపు రెండు ప్రయోగాల్లో k ఆర్గ్యుమెంట్లు ఉండగా ప్రకటించిన ఘాతం మాత్రమే Nat^kగా మార్చి, ఆ స్థాన సవరణను స్పష్టంగా చెప్పామా?
