@@ -1,0 +1,289 @@
+% Part: many-valued-logic
+% Chapter: three-valued-logics
+% Section: lukasiewicz
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{thr}{luk}
+
+\olsection{\L ukasiewicz తర్కం}
+
+బహుమూల్య తర్కానికి ప్రచురితమైన తొలి సవివర ప్రతిపాదనల్లో
+ఒకదాన్ని పోలిష్ తత్వవేత్త యాన్‌ \L ukasiewicz 1921లో ఇచ్చాడు.
+అరిస్టాటిల్ సముద్రయుద్ధ సమస్య అతనికి ప్రేరణ: “రేపు
+సముద్రయుద్ధం జరుగుతుంది” అనే వాక్యం \emph{ఈ రోజు}
+నిజమూ కాదనీ అబద్ధమూ కాదనీ అనిపిస్తుంది; దాని సత్యమూల్యం
+ఇంకా నిర్ణయించబడలేదు. ఇటువంటి “భవిష్యత్తుపై ఆధారపడిన”
+వాక్యాలకు మూడవ సత్యమూల్యాన్ని ప్రవేశపెట్టాలని
+\L ukasiewicz ప్రతిపాదించాడు.
+\begin{quote}
+వచ్చే ఏడాది ఒక నిర్దిష్ట సమయంలో, ఉదాహరణకు డిసెంబరు
+21న మధ్యాహ్నం, నేను వార్సాలో ఉంటాననే విషయం ప్రస్తుతం
+అనుకూలంగానీ ప్రతికూలంగానీ నిర్ణయించబడలేదని వైరుధ్యం
+లేకుండా ఊహించవచ్చు. కనుక ఆ సమయంలో నేను వార్సాలో
+ఉండడం సాధ్యమే, కాని తప్పనిసరి కాదు. ఈ పరికల్పనపై,
+“వచ్చే ఏడాది డిసెంబరు 21న మధ్యాహ్నం నేను వార్సాలో
+ఉంటాను” అనే ప్రతిపాదన ప్రస్తుతం నిజమూ కాదు, అబద్ధమూ
+కాదు. అది ఇప్పుడు నిజమైతే, భవిష్యత్తులో నేను వార్సాలో
+ఉండడం తప్పనిసరి కావాలి; అది పరికల్పనకు విరుద్ధం.
+మరోవైపు అది ఇప్పుడు అబద్ధమైతే, భవిష్యత్తులో నేను
+వార్సాలో ఉండడం అసాధ్యం కావాలి; అదీ పరికల్పనకు
+విరుద్ధం. అందువల్ల ఈ ప్రతిపాదన ప్రస్తుతం నిజమూ
+అబద్ధమూ కాదు; “0” లేదా అసత్యం, “1” లేదా సత్యం
+రెండింటికీ భిన్నమైన మూడవ విలువ దానికి ఉండాలి.
+ఆ విలువను “$\frac{1}{2}$”తో సూచించవచ్చు. అది
+“సాధ్యమైనది”ని సూచించి, “నిజమైనది”, “అబద్ధమైనది”
+పక్కన మూడవ విలువగా చేరుతుంది.
+\end{quote}
+\L ukasiewicz మూడవ సత్యమూల్యానికి మనం $\Undef$ను
+వాడతాం.\footnote{\L ukasiewicz ఇక్కడ “సాధ్యం” అనే పదాన్ని
+నేడు అసాధారణమైన అర్థంలో, అంటే సాధ్యమే కాని తప్పనిసరి
+కాదు అనే అర్థంలో వాడాడు.}
+
+$\lnot$, $\land$, $\lor$ సంయోజకాల సత్యమూల్య ప్రమేయాలను
+ఈ వ్యాఖ్యానం నుంచి నిర్ణయించడం తేలిక. భవిష్యత్తుపై
+ఆధారపడిన వాక్యానికి నిషేధమూ అలాంటి వాక్యమే; అందువల్ల
+$\tf{\lnot}(\Undef) = \Undef$. సంయోగంలో ఒక భాగం
+అనిర్ణీతమై, మరొకటి నిజమైతే సంయోగమూ అనిర్ణీతమే:
+మొదటి భాగం తరువాత ఎలా తేలుతుందో బట్టి సంయోగం
+నిజమో అబద్ధమో కావచ్చు. కాబట్టి \[
+    \tf{\land}(\True, \Undef) =
+\tf{\land}(\Undef, \True) =
+\Undef.
+\]
+కానీ మరొక భాగం అబద్ధమైతే సంయోగం నిజం కాజాలదు;
+అందువల్ల \[\tf{\land}(\False, \Undef) =
+\tf{\land}(\Undef, \False) = \False.\]
+\sourcecorrection{OLTEMVLLUK-001}{ఆంగ్ల మూలంలో ఈ
+రెండవ సమీకరణలో ఒకే ఆర్గ్యుమెంట్ల క్రమం రెండుసార్లు
+వచ్చింది. కింది సంయోగ పట్టికకు అనుగుణంగా రెండవ
+సంభవంలో క్రమాన్ని తిరగవేశాం.}
+మిగతా విలువల్లో, రెండు ఆర్గ్యుమెంట్లూ $\True$ లేదా
+$\False$ వంటి నిర్ణీత సత్యమూల్యాలైతే, ఫలితం
+సాంప్రదాయిక తర్కంలోలాగే ఉంటుంది.
+
+సోపాధిక సంయోజకం విషయంలో కొంత క్లిష్టత ఉంది.
+$q$ భవిష్యత్తుపై ఆధారపడిన వాక్యమనుకుందాం.
+$p$ అబద్ధమైతే, $q$ తరువాత ఎలా తేలినా $p \lif q$
+నిజమే; కాబట్టి $\tf{\lif}(\False, \Undef) = \True$.
+$p$ నిజమైతే, $q$ ఎలా తేలినా $q \lif p$ నిజమే;
+కాబట్టి $\tf{\lif}(\Undef, \True) = \True$.
+$p$ నిజమైతే $p \lif q$ నిజమో అబద్ధమో కావచ్చు;
+అందువల్ల $\tf{\lif}(\True, \Undef) = \Undef$.
+అలాగే $p$ అబద్ధమైతే $q \lif p$ నిజమో అబద్ధమో
+కావచ్చు; అందువల్ల $\tf{\lif}(\Undef, \False) = \Undef$.
+$p$, $q$ రెండూ భవిష్యత్తుపై ఆధారపడిన వాక్యాలుగా
+ఉన్న సందర్భం మిగులుతుంది. మొదటి ప్రేరణ ప్రకారం
+దానికి నిజానికి $\Undef$ ఇవ్వాలి. అయితే అలా చేస్తే
+$!A \lif !A$ \emph{సర్వసత్యం కాదు}. $!A \lor \lnot !A$,
+$\lnot(!A \land \lnot !A)$లను వదులుకోవడానికి
+\L ukasiewiczకు ఇబ్బంది లేదు; కానీ $!A \lif !A$ను
+వదులుకోవడానికి వెనుకంజ వేశాడు. అందుకే
+$\tf{\lif}(\Undef, \Undef) = \True$గా నిర్దేశించాడు.
+
+\begin{defn}\ollabel{def:lukasiewicz}
+మూడు-విలువల \L ukasiewicz తర్కం కింది మాత్రికతో
+నిర్వచించబడుతుంది:
+\begin{enumerate}
+  \item $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$
+  సంయోజకాలు గల ప్రామాణిక ప్రతిజ్ఞావాక్య భాష $\Lang L_0$.
+  \item సత్యమూల్యాల సమితి $V = \{\True, \Undef, \False\}$.
+  \item $\True$ మాత్రమే నిర్దేశిత విలువ; అంటే
+  $V^+ = \{\True\}$.
+  \item $\lfalse$కు $\tf{\lfalse} = \False$.
+  మిగిలిన సత్యమూల్య ప్రమేయాలను కింది పట్టికలు ఇస్తాయి:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}$ & \\
+      \hline
+      $\True$ & $\False$ \\
+      $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogLuk[3]]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\False$\\
+      $\False$ & $\False$ & $\False$ & $\False$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogLuk[3]]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\True$ & $\True$ \\
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogLuk[3]]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\True$ & $\True$ & $\Undef$  \\
+      $\False$ & $\True$ & $\True$ & $\True$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\sourcecorrection{OLTEMVLLUK-002}{ఆంగ్ల మూలం ప్రామాణిక
+భాషను పేర్కొన్నా, దానిలోని శూన్యస్థానిక అసత్య స్థిరాంకానికి
+విలువ ఇవ్వలేదు. పూర్వ ప్రామాణిక మాత్రిక, తరువాతి మూడు-విలువల
+గోడెల్ మాత్రికల్లోని నియమానికి అనుగుణంగా అసత్య విలువను
+ఇక్కడ సంపాదకీయంగా స్పష్టం చేశాం. నాలుగు పట్టికలు
+మాత్రమే ఆ విలువను నిర్బంధించవు.}
+\end{defn}
+
+సులభంగా గమనించగలిగినట్లు, $\lnot$, $\land$,
+$\lor$ మాత్రమే కలిగిన \tetoken{సూత్రం}{!!{formula}}~$!A$లోని
+అన్ని \tetoken{ప్రతిజ్ఞావాక్య చరాలకు}{!!{propositional variable}s}
+$\Undef$ కేటాయిస్తే, ఆ సూత్రపు సత్యమూల్యమూ $\Undef$.
+అందువల్ల ఉదాహరణకు సాంప్రదాయిక సర్వసత్యాలు
+$p \lor \lnot p$, $\lnot(p \land \lnot p)$
+అనేవి $\LogLuk[3]$లో సర్వసత్యాలు కావు;
+$\pAssign v(p) = \Undef$ అయినప్పుడు
+$\pValue{v}(!A) = \Undef$.
+
+సూత్రంలోని ప్రతిజ్ఞావాక్య చరాలకు $\pAssign v(p) =
+\True$ లేదా $\False$ కేటాయించే
+\tetoken{సత్యమూల్య కేటాయింపుల్లో}{!!{valuation}s},
+$\pValue v(!A)$ సాంప్రదాయిక సత్యమూల్యంతో సరిపోతుంది.
+
+\begin{prop}
+  $!A$లోని అన్ని $p$లకు $\pAssign v(p) \in
+  \{\True, \False\}$ అయితే,
+  $\pValue v(!A)[\LogLuk[3]] = \pValue v(!A)[\LogCL]$.
+\end{prop}
+
+\begin{prob}\label{mvl:thr:luk:prob:luk-iff}
+  $\LogLuk[3]$లో $\pValue v(!A \liff !B) =
+  \pValue v((!A \lif !B) \land (!B \lif
+  !A))$ అని నిర్వచించామనుకుందాం. అప్పుడు
+  $\liff$ సత్య పట్టిక ఏమిటి?
+\end{prob}
+
+చాలా సాంప్రదాయిక సర్వసత్యాలు \LogLuk[3]లోనూ
+సర్వసత్యాలే; ఉదాహరణకు $\lnot p \lif (p \lif q)$.
+సాంప్రదాయిక తర్కంలోలాగే దీనిని సత్య పట్టికతో
+తనిఖీ చేయవచ్చు:
+\begin{center}
+\begin{tabular}{cc|cccccc}
+  $p$ & $q$ & $\lnot$ & $p$ & $\lif$ & $\smash{(}p$ & $\lif$ & $q\smash{)}$ \\ \hline
+  \True & \True & \False & \True & \True & \True & \True & \True \\
+  \True & \Undef & \False & \True & \True & \True & \Undef & \Undef \\
+  \True & \False & \False & \True & \True & \True & \False & \False \\
+  \Undef & \True & \Undef & \Undef & \True & \Undef & \True & \True \\
+  \Undef & \Undef & \Undef & \Undef & \True & \Undef & \True & \Undef \\
+  \Undef & \False & \Undef & \Undef & \True & \Undef & \Undef & \False \\
+  \False & \True & \True & \False & \True & \False & \True & \True \\
+  \False & \Undef & \True & \False & \True & \False & \True & \Undef \\
+  \False & \False & \True & \False & \True & \False & \True & \False \\
+\end{tabular}
+\end{center}
+
+\begin{prob}
+  \LogLuk[3]లో కిందివి సర్వసత్యాలని చూపండి:
+  \begin{enumerate}
+    \item $p \lif (q \lif p)$
+    \item\label{mvl:thr:luk:prob:luk-taut-2} $\lnot(p \land q) \liff (\lnot p \lor \lnot q)$
+    \item\label{mvl:thr:luk:prob:luk-taut-3} $\lnot(p \lor q) \liff (\lnot p \land \lnot q)$
+  \end{enumerate}
+  (\olref[mvl][thr][luk]{prob:luk-taut-2},
+  \olref[mvl][thr][luk]{prob:luk-taut-3}లలో
+  $!A \liff !B$ను $(!A \lif !B) \land (!B \lif !A)$కు
+  సంక్షిప్త రూపంగా తీసుకోండి, లేదా
+  \olref[mvl][thr][luk]{prob:luk-iff}కు మీ సమాధానాన్ని వాడండి.)
+\end{prob}
+
+\begin{prob}
+  కింది సాంప్రదాయిక సర్వసత్యాలు \LogLuk[3]లో
+  సర్వసత్యాలు కావని చూపండి:
+  \begin{enumerate}
+    \item $(\lnot p \land p) \lif q$
+    \item $((p \lif q) \lif p) \lif p$
+    \item $(p \lif (p \lif q)) \lif (p \lif q)$
+  \end{enumerate}
+  \sourcecorrection{OLTEMVLLUK-003}{మొదటి సూత్రం
+  చివర ఉన్న జతలేని ముగింపు కుండలీకరణను మాత్రమే
+  తొలగించాం; సంయోజకాలు, ఉపసూత్రాలు మారలేదు.}
+\end{prob}
+
+అన్ని సాంప్రదాయిక సర్వసత్యాలూ $\LogLuk[3]$లో
+సర్వసత్యాలు కాకపోయినా, ప్రతి
+\tetoken{సత్యమూల్య కేటాయింపులోనూ}{!!{valuation}}
+అవి కనీసం $\True$ లేదా $\Undef$ విలువలను
+పొందుతాయనుకోవచ్చు. అలా కాదు. ప్రతిదృష్టాంతం:
+\[
+  \lnot(p \lif \lnot p) \lor \lnot(\lnot p \lif p)
+\]
+$p$కు $\Undef$ అయితే దీని విలువ $\False$.
+
+\begin{prob}
+  \L ukasiewicz తర్కంలో కింది సంబంధాల్లో ఏవి
+  నిలుస్తాయి? ప్రతిదానికీ సత్య పట్టిక ఇవ్వండి.
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $\lnot\lnot p \Entails p$
+    \item $p \land q \Entails p$
+    \item $p \Entails p \land p$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+
+\L ukasiewicz తన మూడు-విలువల వ్యవస్థ ఆధారంగా
+సంభావ్యత తర్కాన్ని నిర్మించాలని ఆశించాడు.
+దానికోసం “$!A$ సాధ్యం” అనే ఏకస్థానిక
+సంయోజకం $\Diamond !A$ను, దానికి అనుగుణంగా
+“$!A$ తప్పనిసరి” అనే $\Box !A$ను
+ప్రవేశపెట్టాడు:
+\begin{center}
+  \begin{tabular}{c|c}
+    $\tf{\Diamond}$ & \\
+    \hline
+    $\True$ & $\True$ \\
+    $\Undef$ & $\True$ \\
+    $\False$ & $\False$
+  \end{tabular}
+  \quad
+  \begin{tabular}{c|c}
+    $\tf{\Box}$ & \\
+    \hline
+    $\True$ & $\True$ \\
+    $\Undef$ & $\False$ \\
+    $\False$ & $\False$
+  \end{tabular}
+\end{center}
+మరో మాటలో చెప్పాలంటే, $p$ ఇప్పటికే అబద్ధమని
+నిర్ణయించబడకపోతేనే అది సాధ్యం; ఇప్పటికే నిజమని
+నిర్ణయించబడితేనే $p$ తప్పనిసరి.
+
+\begin{prob}
+  $\Box$, $\Diamond$ల సత్య పట్టికలను చేర్చి
+విస్తరించిన~\LogLuk[3]లో
+  $\Box p \liff \lnot\Diamond \lnot p$,
+  $\Diamond p \liff
+  \lnot \Box \lnot p$ సర్వసత్యాలని చూపండి.
+\end{prob}
+
+కానీ ప్రతిపాదిత ఈ మోడల్ తర్కపు లోపాలు త్వరలోనే
+స్పష్టమయ్యాయి. విషయాలు ఎలా తేలినా
+$p \land \lnot p$ నిజం కాజాలదు. కనుక అది
+ఇప్పుడు అనిర్ణీతంగా ఉండినా, అసాధ్యమైనదిగా
+లెక్కించాలి; అంటే $\lnot \Diamond(p
+\land \lnot p)$ సర్వసత్యం కావాలి. అయితే
+$\pAssign v(p) = \Undef$ అయితే
+$\pValue v(\lnot \Diamond(p \land \lnot p)) =
+\False$. సంభావ్యత, అనివార్యత వంటి మోడల్
+భేదాలను వ్యక్తీకరించడానికి రెండు సత్యమూల్యాలు
+సరిపోవని \L ukasiewicz చెప్పింది సరైనప్పటికీ,
+మూడవ సత్యమూల్యాన్ని చేర్చడమూ సరిపోదు.
+\sourcecorrection{OLTEMVLLUK-004}{ఆంగ్ల మూలం ఈ
+చివరి విలువను అనిర్ణీతంగా ఇచ్చింది. పట్టికల
+ప్రకారం చరం అనిర్ణీతమైతే దాని నిషేధం,
+వాటి సంయోగం అనిర్ణీతం; సాధ్యత సంచాలకం
+ఆ సంయోగానికి సత్యం, బయటి నిషేధం అసత్యం
+ఇస్తాయి. అందుకే చివరి విలువను సరిచేశాం.}
+
+\end{document}

@@ -1,0 +1,75 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTEMVLLUK-20260926",
+  "created_utc": "2026-09-26T17:55:58Z",
+  "status": "confirmed_against_frozen_source_and_controlling_matrix_truth_tables",
+  "scope": {
+    "chapter": "Many-valued Logic — Three-valued Logics",
+    "unit_ids": ["OLP-0394"],
+    "finding_count": 4
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEMVLLUK-001",
+      "unit_id": "OLP-0394",
+      "classification": "duplicated_conjunction_argument_order_in_symmetric_case",
+      "source": {
+        "path": "content/many-valued-logic/three-valued-logics/lukasiewicz.tex",
+        "bytes": 10066,
+        "sha256": "fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a",
+        "locator": "lines 54-55"
+      },
+      "finding": "The display for false conjoined with undetermined repeats tf{land}(False,Undef) in both slots instead of giving the two argument orders, unlike the preceding true-and-undetermined display.",
+      "controlling_evidence": "The immediately preceding display gives both orders for true and undetermined. The conjunction truth table in this same file gives False for both the (False,Undef) and (Undef,False) entries.",
+      "required_translation_handling": "Use tf{land}(Undef,False) in the second slot and disclose the single argument-order repair next to the display."
+    },
+    {
+      "finding_id": "OLTEMVLLUK-002",
+      "unit_id": "OLP-0394",
+      "classification": "standard_language_matrix_omits_zero_place_falsity_value",
+      "source": {
+        "path": "content/many-valued-logic/three-valued-logics/lukasiewicz.tex",
+        "bytes": 10066,
+        "sha256": "fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a",
+        "locator": "matrix definition lines 77-120; valuation proposition lines 128-134"
+      },
+      "finding": "The matrix names standard language L_0, which the chapter defined with the zero-place falsity connective, but lists only the four other connectives and gives no truth function for falsity. Under the earlier matrix definition, this leaves a language connective uninterpreted and makes the later agreement proposition ungrounded for formulas containing falsity.",
+      "controlling_evidence": "OLP-0386 explicitly defines L_0 to include zero-place lfalse; OLP-0388 requires a truth function for every language connective and gives lfalse value False in the classical matrix. OLP-0396 explicitly gives lfalse value False for the three-valued Gödel matrix. The printed four Łukasiewicz tables alone do not force the omitted constant's value.",
+      "required_translation_handling": "Editorially complete the intended standard-language matrix by listing lfalse and explicitly setting tf{lfalse}=False before the four tables; disclose that this is a convention-based completion, not a value proved by the printed Łukasiewicz tables. Preserve the later whole-language agreement proposition with that completed matrix. Reaudit analogous omissions in subsequent three-valued matrices."
+    },
+    {
+      "finding_id": "OLTEMVLLUK-003",
+      "unit_id": "OLP-0394",
+      "classification": "unmatched_closing_parenthesis_in_exercise_formula",
+      "source": {
+        "path": "content/many-valued-logic/three-valued-logics/lukasiewicz.tex",
+        "bytes": 10066,
+        "sha256": "fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a",
+        "locator": "line 175"
+      },
+      "finding": "The first formula in the exercise has one unmatched closing parenthesis after q.",
+      "controlling_evidence": "Deleting that final parenthesis gives (not p and p) conditional q, which is a classical tautology as the exercise says, and can fail designatedness in the supplied three-valued table; no operand or connective changes.",
+      "required_translation_handling": "Delete only the unmatched final right parenthesis and disclose the typographic correction next to the exercise."
+    },
+    {
+      "finding_id": "OLTEMVLLUK-004",
+      "unit_id": "OLP-0394",
+      "classification": "modal_counterexample_has_wrong_evaluated_truth_value",
+      "source": {
+        "path": "content/many-valued-logic/three-valued-logics/lukasiewicz.tex",
+        "bytes": 10066,
+        "sha256": "fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a",
+        "locator": "lines 231-240"
+      },
+      "finding": "The final sentence says not-Diamond(p and not p) has value Undef when p is Undef, but the printed conjunction, Diamond and negation tables give False.",
+      "controlling_evidence": "For p=Undef, not p=Undef and p and not p=Undef. The added Diamond table sends Undef to True; the negation table sends True to False. Thus not-Diamond(p and not p)=False, still not designated and still a counterexample to the hoped-for tautology.",
+      "required_translation_handling": "Replace the displayed final value Undef by False and disclose the table calculation adjacent to the paragraph, preserving the philosophical conclusion."
+    }
+  ]
+}
