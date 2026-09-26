@@ -1,0 +1,164 @@
+{
+  "schema": "openlogic-te-commit-readback/1",
+  "checked_at": "2026-09-26T19:52:23.423Z",
+  "commit": "2fc8d039b1216286670d2681d61636dbe41024f9",
+  "anonymous": true,
+  "authorization_header_sent": false,
+  "file_count": 17,
+  "files": [
+    {
+      "path": "README.md",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/2fc8d039b1216286670d2681d61636dbe41024f9/README.md",
+      "bytes": 26708,
+      "sha256": "b5b8e037adaec4389868ebba9e945ff60b760d14d1d1ddc942aa951e9cb056e0",
+      "expected_bytes": 26708,
+      "expected_sha256": "b5b8e037adaec4389868ebba9e945ff60b760d14d1d1ddc942aa951e9cb056e0",
+      "match": true
+    },
+    {
+      "path": "evidence/BATCH-065-SEMANTIC-REVIEW.md",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/2fc8d039b1216286670d2681d61636dbe41024f9/evidence/BATCH-065-SEMANTIC-REVIEW.md",
+      "bytes": 8069,
+      "sha256": "ace6cd92da085cc3e5acbf8f84aaf44c0545315b28b4d3210016c40e578ed204",
+      "expected_bytes": 8069,
+      "expected_sha256": "ace6cd92da085cc3e5acbf8f84aaf44c0545315b28b4d3210016c40e578ed204",
+      "match": true
+    },
+    {
+      "path": "evidence/CUMULATIVE-OLP0410-STRUCTURAL-QA.json",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/2fc8d039b1216286670d2681d61636dbe41024f9/evidence/CUMULATIVE-OLP0410-STRUCTURAL-QA.json",
+      "bytes": 4569633,
+      "sha256": "e3b454eaf484d16365a92e46fc186e746dc1381a52a597222b715a9c865fe938",
+      "expected_bytes": 4569633,
+      "expected_sha256": "e3b454eaf484d16365a92e46fc186e746dc1381a52a597222b715a9c865fe938",
+      "match": true
+    },
+    {
+      "path": "evidence/DECISIONS.json",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/2fc8d039b1216286670d2681d61636dbe41024f9/evidence/DECISIONS.json",
+      "bytes": 8234561,
+      "sha256": "19b83b198a04bca637cbb6ab1b1390b9f9dc45a402662f69078d948604ee548a",
+      "expected_bytes": 8234561,
+      "expected_sha256": "19b83b198a04bca637cbb6ab1b1390b9f9dc45a402662f69078d948604ee548a",
+      "match": true
+    },
+    {
+      "path": "evidence/DECISION_OCCURRENCES.csv",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/2fc8d039b1216286670d2681d61636dbe41024f9/evidence/DECISION_OCCURRENCES.csv",
+      "bytes": 1706278,
+      "sha256": "9ea310744ce94b945efaff9d61e95d41f2248c9f0f67ec659c708796d0a21c6b",
+      "expected_bytes": 1706278,
+      "expected_sha256": "9ea310744ce94b945efaff9d61e95d41f2248c9f0f67ec659c708796d0a21c6b",
+      "match": true
+    },
+    {
+      "path": "evidence/EXPERT_REVIEW_LOG.json",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/2fc8d039b1216286670d2681d61636dbe41024f9/evidence/EXPERT_REVIEW_LOG.json",
+      "bytes": 2800271,
+      "sha256": "2e710cbf518eb1b36d75a4c6e3071dcb8e26f547eeb3a1f13cde44d885102f43",
+      "expected_bytes": 2800271,
+      "expected_sha256": "2e710cbf518eb1b36d75a4c6e3071dcb8e26f547eeb3a1f13cde44d885102f43",
+      "match": true
+    },
+    {
+      "path": "evidence/EXPERT_REVIEW_LOG.jsonl",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/2fc8d039b1216286670d2681d61636dbe41024f9/evidence/EXPERT_REVIEW_LOG.jsonl",
+      "bytes": 2393542,
+      "sha256": "16745f5ab4f41926b5ac3fd18a70d286ab4210767a0292a339a2cf1a58df9a91",
+      "expected_bytes": 2393542,
+      "expected_sha256": "16745f5ab4f41926b5ac3fd18a70d286ab4210767a0292a339a2cf1a58df9a91",
+      "match": true
+    },
+    {
+      "path": "evidence/EXPERT_REVIEW_LOG.md",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/2fc8d039b1216286670d2681d61636dbe41024f9/evidence/EXPERT_REVIEW_LOG.md",
+      "bytes": 1215018,
+      "sha256": "e6978718703372945fc28bd5f9f91987bbb642befdc1b3c0547540a855e3772f",
+      "expected_bytes": 1215018,
+      "expected_sha256": "e6978718703372945fc28bd5f9f91987bbb642befdc1b3c0547540a855e3772f",
+      "match": true
+    },
+    {
+      "path": "evidence/EXPERT_REVIEW_OCCURRENCES.csv",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/2fc8d039b1216286670d2681d61636dbe41024f9/evidence/EXPERT_REVIEW_OCCURRENCES.csv",
+      "bytes": 1530012,
+      "sha256": "ed13cc19c7dd62809d78e4303910042df7c10d2b97a59d099f70962c4ed5029a",
+      "expected_bytes": 1530012,
+      "expected_sha256": "ed13cc19c7dd62809d78e4303910042df7c10d2b97a59d099f70962c4ed5029a",
+      "match": true
+    },
+    {
+      "path": "evidence/EXPERT_REVIEW_PRIORITY.md",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/2fc8d039b1216286670d2681d61636dbe41024f9/evidence/EXPERT_REVIEW_PRIORITY.md",
+      "bytes": 392537,
+      "sha256": "72320185fd8a609446e69ff3093f4209029c8863062b2ac7a5cca558c5e17d88",
+      "expected_bytes": 392537,
+      "expected_sha256": "72320185fd8a609446e69ff3093f4209029c8863062b2ac7a5cca558c5e17d88",
+      "match": true
+    },
+    {
+      "path": "evidence/GITHUB-COMMIT-e13607aba9d8-READBACK.json",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/2fc8d039b1216286670d2681d61636dbe41024f9/evidence/GITHUB-COMMIT-e13607aba9d8-READBACK.json",
+      "bytes": 6080,
+      "sha256": "35b0e55f6f875eefd20087c85ed552bac249a7ba6d731919892a0db09b4b5080",
+      "expected_bytes": 6080,
+      "expected_sha256": "35b0e55f6f875eefd20087c85ed552bac249a7ba6d731919892a0db09b4b5080",
+      "match": true
+    },
+    {
+      "path": "evidence/PRIORITY_REVIEW.md",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/2fc8d039b1216286670d2681d61636dbe41024f9/evidence/PRIORITY_REVIEW.md",
+      "bytes": 128549,
+      "sha256": "04db8efad4533a592cf8a7deac09f3e57b4e54e0c97819979e8eb21f6c521c8d",
+      "expected_bytes": 128549,
+      "expected_sha256": "04db8efad4533a592cf8a7deac09f3e57b4e54e0c97819979e8eb21f6c521c8d",
+      "match": true
+    },
+    {
+      "path": "evidence/START_HERE.md",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/2fc8d039b1216286670d2681d61636dbe41024f9/evidence/START_HERE.md",
+      "bytes": 2342,
+      "sha256": "287ecc07396756bb29676930fffb75f13fa40bf0bf07a2d84fdd62477748f11f",
+      "expected_bytes": 2342,
+      "expected_sha256": "287ecc07396756bb29676930fffb75f13fa40bf0bf07a2d84fdd62477748f11f",
+      "match": true
+    },
+    {
+      "path": "evidence/START_HERE.te.md",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/2fc8d039b1216286670d2681d61636dbe41024f9/evidence/START_HERE.te.md",
+      "bytes": 40047,
+      "sha256": "9bd01902381f297002d4aaef382a32fa097dbff1d3e18290e0a7f035ed9cf31c",
+      "expected_bytes": 40047,
+      "expected_sha256": "9bd01902381f297002d4aaef382a32fa097dbff1d3e18290e0a7f035ed9cf31c",
+      "match": true
+    },
+    {
+      "path": "evidence/TRANSLATION_DECISIONS_FULL.md",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/2fc8d039b1216286670d2681d61636dbe41024f9/evidence/TRANSLATION_DECISIONS_FULL.md",
+      "bytes": 1645660,
+      "sha256": "a452cf308a926fceb150eae784da9678023d937f7701d9cf52b3575757d80b4b",
+      "expected_bytes": 1645660,
+      "expected_sha256": "a452cf308a926fceb150eae784da9678023d937f7701d9cf52b3575757d80b4b",
+      "match": true
+    },
+    {
+      "path": "evidence/TRANSLATION_DECISION_QA.json",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/2fc8d039b1216286670d2681d61636dbe41024f9/evidence/TRANSLATION_DECISION_QA.json",
+      "bytes": 2535,
+      "sha256": "c8b91f9a134ed813adb8b790f5b3cc8ca9ee89172c638dcaf385d8c7f1f7aa68",
+      "expected_bytes": 2535,
+      "expected_sha256": "c8b91f9a134ed813adb8b790f5b3cc8ca9ee89172c638dcaf385d8c7f1f7aa68",
+      "match": true
+    },
+    {
+      "path": "scripts/build-review-log.mjs",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/2fc8d039b1216286670d2681d61636dbe41024f9/scripts/build-review-log.mjs",
+      "bytes": 197520,
+      "sha256": "b7f03ae7170a6e9292913bea251343a73af67cfb34f22ecdd3a6f4a14d52af21",
+      "expected_bytes": 197520,
+      "expected_sha256": "b7f03ae7170a6e9292913bea251343a73af67cfb34f22ecdd3a6f4a14d52af21",
+      "match": true
+    }
+  ],
+  "status": "COMPLETE_PASS"
+}
