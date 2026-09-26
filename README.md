@@ -22,8 +22,9 @@
   తదుపరి అనువదించాల్సినది OLP-0415; ఇంకా 308 ఫైళ్లు మిగిలాయి.
 - [తాజా Zenodo సంచిక DOI](https://doi.org/10.5281/zenodo.22726674),
   [కొనసాగే సంచికల DOI](https://doi.org/10.5281/zenodo.22307937)
-  మునుపటి Zenodo విడుదలను సూచిస్తాయి. ప్రస్తుత GitHub v0.4.0కు
-  కొత్త Zenodo సంచిక సృష్టించలేదు.
+  ప్రస్తుత v0.4.0 మధ్యంతర విడుదలనే సూచిస్తాయి. Zenodoలోనూ
+  276-భాగాల PDF/EPUB, వాటికి సరిపడే LaTeX/నిర్మాణ-మూలం ఉన్నాయి;
+  ఇది 722-భాగాల పూర్తి పాఠ్యం కాదు.
 
 ## మూలం, అనువాదం, పరిమితులు
 
@@ -130,16 +131,18 @@ The current cumulative checkpoint is
 [v0.4.0-cumulative-olp0279](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.4.0-cumulative-olp0279).
 It provides a 515-page cumulative PDF, a reflowable cumulative EPUB, and exact
 editable/build-source packages for OLP-0004 through OLP-0279 (276 of 722
-units). This is a GitHub-only release; the deployed semantic HTML reader
-remains bounded to OLP-0004 through OLP-0026 (23 units). This is **not the
+units). It is also preserved in the existing Zenodo concept. The deployed
+semantic HTML reader remains bounded to OLP-0004 through OLP-0026 (23 units).
+This is **not the
 complete OpenLogic Telugu edition**.
 
 Latest version DOI:
 [10.5281/zenodo.22726674](https://doi.org/10.5281/zenodo.22726674).
 Continuing concept DOI:
 [10.5281/zenodo.22307937](https://doi.org/10.5281/zenodo.22307937).
-The DOI links still identify the preceding Zenodo release; no new Zenodo
-version was created for v0.4.0. Prior GitHub, GitHub Pages, and Zenodo
+The version DOI now identifies the v0.4.0 mirror: 20 public files, including
+six unchanged inherited files, with the cumulative PDF as Zenodo's preview.
+GitHub, GitHub Pages, and Zenodo
 publication verification is documented in [PUBLICATION.md](PUBLICATION.md).
 The repaired v0.4.0 release has 16 public assets; its cumulative EPUB and
 source companions, manifest, checksums, and QA records were downloaded

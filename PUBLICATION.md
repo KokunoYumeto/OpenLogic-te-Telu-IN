@@ -1,4 +1,24 @@
-# Verified publication checkpoint: 2026-09-04
+# Verified publication checkpoints
+
+## Current v0.4.0 cumulative mirror — 2026-09-26
+
+The [GitHub v0.4.0 release](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.4.0-cumulative-olp0279)
+is now mirrored in the existing [Zenodo concept](https://doi.org/10.5281/zenodo.22307937)
+as [version DOI 10.5281/zenodo.22726674](https://doi.org/10.5281/zenodo.22726674).
+Its 515-page cumulative PDF and EPUB cover OLP-0004--OLP-0279 (276/722
+units); the direct TeX, exact build-source ZIP, editable ZIP, and full-source
+snapshot are paired with them. The deployed semantic HTML reader remains at
+23/722 units, and this is not the complete Telugu edition.
+
+The new version preserves all six files from the published v0.2.0 record and
+the two files already staged in its unpublished v0.3.0 draft; 12 additional
+release assets were uploaded. All 20 public files were downloaded anonymously
+and matched by filename, byte count and SHA-256. Zenodo's public preview is
+the pertinent cumulative PDF. See the [sanitized readback receipt](evidence/ZENODO-V040-MIRROR-READBACK.json).
+Three detailed QA JSONs remain on GitHub rather than being duplicated in
+Zenodo. Neither the archived version files nor their public access changed.
+
+## Historical v0.2.0 checkpoint — 2026-09-04
 
 This cumulative v0.2.0 checkpoint provides a semantic reader for the complete
 Sets chapter (7/722 units) and editable Telugu drafts through OLP-0026 (23/722
