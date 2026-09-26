@@ -1,0 +1,128 @@
+{
+  "schema": "openlogic-te-commit-readback/1",
+  "checked_at": "2026-09-26T20:13:39.873Z",
+  "commit": "8999cd94c7909c2ee068fc508ad566f8ed5053d1",
+  "anonymous": true,
+  "authorization_header_sent": false,
+  "file_count": 13,
+  "files": [
+    {
+      "path": "evidence/BATCH-066-MODAL-SEMANTIC-CHECK.json",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/8999cd94c7909c2ee068fc508ad566f8ed5053d1/evidence/BATCH-066-MODAL-SEMANTIC-CHECK.json",
+      "bytes": 2570,
+      "sha256": "02e8d82978732df0cae567fec78beacba47fc173d015c0befeffd01737cf397d",
+      "expected_bytes": 2570,
+      "expected_sha256": "02e8d82978732df0cae567fec78beacba47fc173d015c0befeffd01737cf397d",
+      "match": true
+    },
+    {
+      "path": "evidence/GITHUB-COMMIT-1f1a91a785a5-READBACK.json",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/8999cd94c7909c2ee068fc508ad566f8ed5053d1/evidence/GITHUB-COMMIT-1f1a91a785a5-READBACK.json",
+      "bytes": 783,
+      "sha256": "b2ece9d2b1b7eb13c027f1f341d8f478368c1959f642814e5b07cb40bcd18cad",
+      "expected_bytes": 783,
+      "expected_sha256": "b2ece9d2b1b7eb13c027f1f341d8f478368c1959f642814e5b07cb40bcd18cad",
+      "match": true
+    },
+    {
+      "path": "evidence/SEGMENT_CANON_USE.jsonl",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/8999cd94c7909c2ee068fc508ad566f8ed5053d1/evidence/SEGMENT_CANON_USE.jsonl",
+      "bytes": 14938240,
+      "sha256": "110923488617fb86b49807a3233ad5b72a65f5260cfd79c38a0bb598df846d98",
+      "expected_bytes": 14938240,
+      "expected_sha256": "110923488617fb86b49807a3233ad5b72a65f5260cfd79c38a0bb598df846d98",
+      "match": true
+    },
+    {
+      "path": "evidence/SOURCE_CORRECTIONS.jsonl",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/8999cd94c7909c2ee068fc508ad566f8ed5053d1/evidence/SOURCE_CORRECTIONS.jsonl",
+      "bytes": 406081,
+      "sha256": "ab2f0890cc8438989d6d8787ff88e2e35875add761d23a1403d531e681703f4b",
+      "expected_bytes": 406081,
+      "expected_sha256": "ab2f0890cc8438989d6d8787ff88e2e35875add761d23a1403d531e681703f4b",
+      "match": true
+    },
+    {
+      "path": "evidence/TERM_DECISIONS.jsonl",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/8999cd94c7909c2ee068fc508ad566f8ed5053d1/evidence/TERM_DECISIONS.jsonl",
+      "bytes": 200427,
+      "sha256": "68ae2a9626461f322b3d17c467460f8b2096779a5f57bdd0b24466599db4f511",
+      "expected_bytes": 200427,
+      "expected_sha256": "68ae2a9626461f322b3d17c467460f8b2096779a5f57bdd0b24466599db4f511",
+      "match": true
+    },
+    {
+      "path": "evidence/source-audits/2026-09-26-normal-modal-semantics-telugu/FINDINGS.json",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/8999cd94c7909c2ee068fc508ad566f8ed5053d1/evidence/source-audits/2026-09-26-normal-modal-semantics-telugu/FINDINGS.json",
+      "bytes": 3654,
+      "sha256": "78d320a8fce115490445a98af1744494a89c5b908768460dae63c1fef7847f8c",
+      "expected_bytes": 3654,
+      "expected_sha256": "78d320a8fce115490445a98af1744494a89c5b908768460dae63c1fef7847f8c",
+      "match": true
+    },
+    {
+      "path": "evidence/source-audits/2026-09-26-normal-modal-semantics-telugu/REVIEW.md",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/8999cd94c7909c2ee068fc508ad566f8ed5053d1/evidence/source-audits/2026-09-26-normal-modal-semantics-telugu/REVIEW.md",
+      "bytes": 3049,
+      "sha256": "776b11073dc2a73f4fc7647d39066b5753e64e060c0850521235cefad67bd322",
+      "expected_bytes": 3049,
+      "expected_sha256": "776b11073dc2a73f4fc7647d39066b5753e64e060c0850521235cefad67bd322",
+      "match": true
+    },
+    {
+      "path": "scripts/add-batch066-evidence.mjs",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/8999cd94c7909c2ee068fc508ad566f8ed5053d1/scripts/add-batch066-evidence.mjs",
+      "bytes": 12281,
+      "sha256": "fae0c15b3a7d3d5fe1dc0a5d6e9b8a2b75586ec352a9cd546a2a0e80c3f32975",
+      "expected_bytes": 12281,
+      "expected_sha256": "fae0c15b3a7d3d5fe1dc0a5d6e9b8a2b75586ec352a9cd546a2a0e80c3f32975",
+      "match": true
+    },
+    {
+      "path": "scripts/check-batch066-modal-semantics.mjs",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/8999cd94c7909c2ee068fc508ad566f8ed5053d1/scripts/check-batch066-modal-semantics.mjs",
+      "bytes": 5664,
+      "sha256": "e901901973fc73591a650c2043ab2ec08be5fba9746ee0517dcf47eb7e73dcd5",
+      "expected_bytes": 5664,
+      "expected_sha256": "e901901973fc73591a650c2043ab2ec08be5fba9746ee0517dcf47eb7e73dcd5",
+      "match": true
+    },
+    {
+      "path": "translation/content/normal-modal-logic/syntax-and-semantics/relational-models.tex",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/8999cd94c7909c2ee068fc508ad566f8ed5053d1/translation/content/normal-modal-logic/syntax-and-semantics/relational-models.tex",
+      "bytes": 3370,
+      "sha256": "733e7de2e909136a96d35d40e83da28b0595877a836906f8a6884c3e35df58af",
+      "expected_bytes": 3370,
+      "expected_sha256": "733e7de2e909136a96d35d40e83da28b0595877a836906f8a6884c3e35df58af",
+      "match": true
+    },
+    {
+      "path": "translation/content/normal-modal-logic/syntax-and-semantics/substitution.tex",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/8999cd94c7909c2ee068fc508ad566f8ed5053d1/translation/content/normal-modal-logic/syntax-and-semantics/substitution.tex",
+      "bytes": 7121,
+      "sha256": "f652279ec9d85c9688e0e2d536a063369853d0bf7b742712850983df0b6317f6",
+      "expected_bytes": 7121,
+      "expected_sha256": "f652279ec9d85c9688e0e2d536a063369853d0bf7b742712850983df0b6317f6",
+      "match": true
+    },
+    {
+      "path": "translation/content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/8999cd94c7909c2ee068fc508ad566f8ed5053d1/translation/content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex",
+      "bytes": 9425,
+      "sha256": "9f947d8c0dede920f5078b7da1b845d74ea8bbc726aa07c448c10422ad4182c8",
+      "expected_bytes": 9425,
+      "expected_sha256": "9f947d8c0dede920f5078b7da1b845d74ea8bbc726aa07c448c10422ad4182c8",
+      "match": true
+    },
+    {
+      "path": "translation/content/normal-modal-logic/syntax-and-semantics/truth-in-model.tex",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/8999cd94c7909c2ee068fc508ad566f8ed5053d1/translation/content/normal-modal-logic/syntax-and-semantics/truth-in-model.tex",
+      "bytes": 4852,
+      "sha256": "e068aee466c1604ab0bbeef9fa6c271ff0d197acc50d8331e2fd69e5a2a21c7a",
+      "expected_bytes": 4852,
+      "expected_sha256": "e068aee466c1604ab0bbeef9fa6c271ff0d197acc50d8331e2fd69e5a2a21c7a",
+      "match": true
+    }
+  ],
+  "status": "COMPLETE_PASS"
+}

@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 410 of 722 draft units**. This view selects 431 of 485 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 414 of 722 draft units**. This view selects 434 of 489 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4313,3 +4313,33 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0410; normal-modal-logic/syntax-and-semantics/language-modal-logic; translation/content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:120; printed/PDF page pending
 
 - Please double-check: Please double-check: Is the lone unmatched closing parenthesis removed only from the prvOr branch of defIf, with both subformulas, the other branch, and the adjacent Telugu disclosure preserved?
+
+## REV-OLTENMLSYN-001 — OLTENMLSYN-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ద్విసోపాధిక సందర్భపు prvIf గుర్తును పక్కనున్న liff సూత్రం, మూల భాషా నిర్వచనం ప్రకారం prvIffగా సరిచేసి అదే స్థానంలో ప్రకటించాం; గణిత సూత్రం మారలేదు.
+
+- Occurrences: OLP-0411; normal-modal-logic/syntax-and-semantics/substitution; translation/content/normal-modal-logic/syntax-and-semantics/substitution.tex:74; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the biconditional substitution case use the prvIff tag while retaining the exact liff recurrence and disclosing the source tag slip?
+
+## REV-OLTENMLSYN-002 — OLTENMLSYN-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: బాక్స్ ఆగమన సందర్భాన్ని మూల భాషలోని prvBox షరతుతో కట్టి పక్కనే ప్రకటించాం; ప్రతిస్థాపన సూత్రం మారలేదు.
+
+- Occurrences: OLP-0411; normal-modal-logic/syntax-and-semantics/substitution; translation/content/normal-modal-logic/syntax-and-semantics/substitution.tex:82; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the box substitution case use prvBox consistently with the basic-language definition, with no change to the recursive formula?
+
+## REV-OLTENMLSYN-003 — OLTENMLSYN-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ద్వైత నిరూపణ మొదటి అసంతృప్తి సంకేతానికి మూలంలో తప్పిన [w]ను, అదే వాదంలోని మిగతా స్థానాలకు అనుగుణంగా చేర్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0413; normal-modal-logic/syntax-and-semantics/truth-at-w; translation/content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex:146; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the world argument [w] restored only to the first missing non-satisfaction atom in the second box-diamond duality proof?

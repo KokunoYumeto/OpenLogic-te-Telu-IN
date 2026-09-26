@@ -548,6 +548,15 @@ locations['TE-T107']=[
  L('content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex',11,11,11,11,'Basic Modal Logic','మౌలిక మోడల్ తర్కపు భాష'),
  L('content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex',105,105,141,141,'modal-free','మోడల్-రహిత సూత్రం')
 ];
+locations['TE-T108']=[
+ L('content/normal-modal-logic/syntax-and-semantics/substitution.tex',11,11,11,11,'Simultaneous Substitution','ఏకకాల ప్రతిస్థాపన'),
+ L('content/normal-modal-logic/syntax-and-semantics/substitution.tex',71,71,96,96,'substitution instance','ప్రతిస్థాపన నిదర్శనం'),
+ L('content/normal-modal-logic/syntax-and-semantics/relational-models.tex',11,11,11,11,'Relational Models','సంబంధాత్మక నమూనాలు'),
+ L('content/normal-modal-logic/syntax-and-semantics/relational-models.tex',15,15,16,16,'accessibility relation','ప్రాప్యత సంబంధం'),
+ L('content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex',11,11,11,11,'Truth at a World','ఒక లోకంలో సత్యం'),
+ L('content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex',48,48,75,75,'vacuously','శూన్యసందర్భ సత్యం'),
+ L('content/normal-modal-logic/syntax-and-semantics/truth-in-model.tex',9,9,9,9,'Truth in a Model','ఒక నమూనాలో సత్యం')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -640,6 +649,7 @@ alternatives['TE-T104']=['TE-T032/100/101/102/103లోని సత్యమూ
 alternatives['TE-T105']=['TE-P006 కరణీయ/వాస్తవ, TE-P008 సమితి, TE-P019 సత్యతావిలువ, TE-P011 ప్రమేయం పదాలను సంచిక స్థిర వాడుకతో కొనసాగించి, ఫజీ, అనంత-విలువల తర్కం, గోడెల్--డమ్మెట్ పథకాన్ని మూల నిర్వచనానికి కట్టుబడి తాత్కాలికంగా వాడటం (ఎంపిక)','TE-P007లో సహజ సంఖ్యలు ఒకటితో మొదలయ్యే స్థానిక సంప్రదాయాన్ని సున్నాతో మొదలయ్యే OpenLogic Natపై రుద్దడం (తిరస్కరణ)','స్థానిక ద్విమూల్య తర్క పేజీలు ఫజీ లేదా గోడెల్--డమ్మెట్ ప్రత్యేక భావాలను నేరుగా ధృవీకరిస్తాయని చెప్పడం (తిరస్కరణ)','ముద్రిత V_m పరిమితి, అసత్య స్థిరాంక లోపాలను దాచడం (తిరస్కరణ)'];
 alternatives['TE-T106']=['TE-P019/020 సత్యతావిలువ, TE-P024 వ్యుత్పత్తి, TE-P033 అనుమానం అనే ప్రత్యక్ష వాడుకను TE-T035/036 సీక్వెంట్ పదాలతో కొనసాగించి, n-వైపుల ప్రత్యేక రూపాన్ని స్థిర మూల నిర్వచనంతో నియంత్రించడం (ఎంపిక)','సీక్వెంట్‌కు స్థానిక పేజీలలో కనబడని ఒక స్వదేశీ సాంకేతిక పదాన్ని స్థిరపడినదిగా ప్రకటించడం (తిరస్కరణ)','ద్విమూల్య స్థానిక ఫలిత నిర్వచనం మూడు-విలువల నియమాలను నేరుగా నిరూపిస్తుందని ఊహించడం (తిరస్కరణ)','నియమ చిత్రాల్లోని మూడు-విలువల స్థానాలను గద్య సరళీకరణ కోసం మార్చడం (తిరస్కరణ)'];
 alternatives['TE-T107']=['నార్మల్ మోడల్ తర్కం అనే గుర్తించదగిన సాంకేతిక అరువును TE-T053/103 సాధ్యలోక పదజాలంతో కలిపి, ప్రత్యేక నిర్వచనాన్ని స్థిర మూలానికి కట్టుబడి ఉంచడం (ఎంపిక)','నార్మల్‌ను రోజువారీ సాధారణ అని చదివి సాంకేతిక వర్గభేదాన్ని మసకబార్చడం (తిరస్కరణ)','స్థానిక ద్విమూల్య ప్రతిజ్ఞావాక్య పేజీలు క్రిప్కె అర్థవిచారం లేదా అనురూపతా సిద్ధాంతాన్ని నేరుగా బోధిస్తాయని చెప్పడం (తిరస్కరణ)','బాక్స్, డైమండ్ సూత్ర సంకేతాలను గద్య సౌలభ్యం కోసం మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T108']=['స్థానిక సంబంధం, ప్రతిజ్ఞావాక్య తర్కం, సత్యతావిలువ, సోపాధికం, వ్యుత్పత్తి పదజాలాన్ని మాత్రమే తీసుకొని ఏకకాల ప్రతిస్థాపన, సంబంధాత్మక నమూనా, శూన్యసందర్భ సత్యం, ద్వైతత్వ ప్రత్యేక అర్థాలను స్థిర మూల నిర్వచనంతో నియంత్రించడం (ఎంపిక)','సంబంధం అనే స్థానిక పదమే క్రిప్కె ప్రాప్యత సంబంధానికి ప్రత్యక్ష సాక్ష్యమని ప్రకటించడం (తిరస్కరణ)','ఏకకాల, వరుస ప్రతిస్థాపన ఫలితాలు ఎప్పుడూ ఒకటేనని సరళీకరించడం (తిరస్కరణ)','లోకంలో సత్యం, నమూనాలో సత్యం, శూన్యసందర్భ సత్యం మధ్య మూలం చూపిన భేదాలను కలపడం (తిరస్కరణ)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -656,7 +666,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T107 record the Batch 025--Batch 065 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T108 record the Batch 025--Batch 066 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -955,6 +965,9 @@ const correctionQuestions={
   ,'OLTELAMLDFPIX-004':'Yg=(UU)gలో లోపలి UU మాత్రమే రెడెక్స్ అని, మొత్తం పదంలో అది ఉందని వాక్యం స్పష్టంగా చెబుతుందా?'
   ,'OLTELAMLDFPIX-005':'చర్చ్ సంయోజకం బీటా-తుల్యతను మాత్రమే ఇస్తుందనే పోలికలో Y_Cను వాడి, ట్యూరింగ్ Y ముందుకు తగ్గుతుందనే సిద్ధాంతాన్ని నిలిపామా?'
   ,'OLTENMLLAN-001':'Is the lone unmatched closing parenthesis removed only from the prvOr branch of defIf, with both subformulas, the other branch, and the adjacent Telugu disclosure preserved?'
+  ,'OLTENMLSYN-001':'Does the biconditional substitution case use the prvIff tag while retaining the exact liff recurrence and disclosing the source tag slip?'
+  ,'OLTENMLSYN-002':'Does the box substitution case use prvBox consistently with the basic-language definition, with no change to the recursive formula?'
+  ,'OLTENMLSYN-003':'Is the world argument [w] restored only to the first missing non-satisfaction atom in the second box-diamond duality proof?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

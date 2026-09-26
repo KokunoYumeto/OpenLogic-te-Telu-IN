@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **410 of 722 source units drafted**. This readable view contains all 485 decisions and 975 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **414 of 722 source units drafted**. This readable view contains all 489 decisions and 985 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3195,6 +3195,38 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T107-OCC-004; OLP-0409; OLP-0409-B012; source upstream/content/normal-modal-logic/syntax-and-semantics/introduction.tex:85-95 bytes 4163-4849 SHA-256 472bb6066a6995031744114d0238d83c60eb6a3d241d8e77571c59a4b912fed6; target translation/content/normal-modal-logic/syntax-and-semantics/introduction.tex:120-137 bytes 8757-10044 SHA-256 8241df0727fab97569e2cffec45e1780f374f5669f759b91d0cf3f55888bbd4b; reader page pending.
   - te-Telu-IN-TE-T107-OCC-005; OLP-0410; OLP-0410-B005; source upstream/content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:11 bytes 199-245 SHA-256 a75f481c6e175130df3c9145984ca245a8156503d2cb9ff833bd77c39b9529ab; target translation/content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:11 bytes 199-272 SHA-256 4d09a796fd66515a68fdf62725bc3eca35e6089c72d5c53c447ff1d7749916dd; reader page pending.
   - te-Telu-IN-TE-T107-OCC-006; OLP-0410; OLP-0410-B029; source upstream/content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:104-105 bytes 3311-3403 SHA-256 a75f481c6e175130df3c9145984ca245a8156503d2cb9ff833bd77c39b9529ab; target translation/content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:139-141 bytes 6124-6336 SHA-256 4d09a796fd66515a68fdf62725bc3eca35e6089c72d5c53c447ff1d7749916dd; reader page pending.
+
+## te-Telu-IN-TE-T108 — simultaneous substitution and substitution instance / relational model and accessibility relation / valuation V / truth at a world versus truth in a model / vacuous truth / box-diamond duality
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: ఏకకాల ప్రతిస్థాపన, ప్రతిస్థాపన నిదర్శనం / సంబంధాత్మక నమూనా, ప్రాప్యత సంబంధం / కేటాయింపు V / ఒక లోకంలో సత్యం, నమూనాలో సత్యం / శూన్యసందర్భ సత్యం / బాక్స్–డైమండ్ ద్వైతత్వం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “simultaneous substitution and substitution instance / relational model and accessibility relation / valuation V / truth at a world versus truth in a model / vacuous truth / box-diamond duality” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: ప్రతిస్థాపన నిదర్శనం, సంబంధాత్మక నమూనా, శూన్యసందర్భ సత్యం అనే సమాసాలు మూల నిర్వచనాధారిత తాత్కాలిక ఎంపికలు. తెలంగాణ సంబంధ పేజీ ప్రాప్యత అనే ప్రత్యేక మోడల్-అర్థాన్ని స్థాపించదు. బాక్స్/డైమండ్, లోకం, నమూనా వేరు స్థాయిలను మూల సూత్రాల ప్రకారం మాత్రమే చదవాలి; స్థానిక పేజీలను OLTENMLSYN-001–003 మూల సవరణలకు ప్రమాణంగా వాడలేదు.
+
+- Rationale: TE-P010 తెలంగాణ పాఠ్య పేజీలో ద్విస్థానిక సంబంధం, TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, TE-P019లో సత్యతావిలువ, TE-P021లో సోపాధికం, TE-P024లో నియమ-వ్యుత్పత్తి స్థానిక చిత్రాలను ప్రత్యక్షంగా చూశాం. ఈ సాధారణ పదజాలాన్ని OLP-0411–0414లో తగిన భాగాలకు మాత్రమే అన్వయించాం. ఏకకాల ప్రతిస్థాపన, క్రిప్కె ప్రాప్యత సంబంధం, లోకం/నమూనా సత్యభేదం, శూన్యసందర్భ సత్యం, బాక్స్–డైమండ్ ద్వైతత్వం ఈ పేజీలలో నేరుగా నిర్వచించబడలేదు; స్థిర OpenLogic మూల నిర్వచనాలు, TE-T053/103/107 సంప్రదాయమే ప్రత్యేక అర్థాన్ని నియంత్రిస్తున్నాయి. మోడల్, క్రిప్కె ముందరి గుర్తించదగిన అరువులు; W, R, V, M, Box/Diamond, p_i/D_i, source tags and satisfaction macros are protected mathematical or variant identifiers.
+
+- Authorities checked: TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P021 [checked_context_only], PDF page undefined; printed page not stated; Conditional and biconditional headings and explanations; Direct conditional and biconditional terminology. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: స్థానిక సంబంధం, ప్రతిజ్ఞావాక్య తర్కం, సత్యతావిలువ, సోపాధికం, వ్యుత్పత్తి పదజాలాన్ని మాత్రమే తీసుకొని ఏకకాల ప్రతిస్థాపన, సంబంధాత్మక నమూనా, శూన్యసందర్భ సత్యం, ద్వైతత్వ ప్రత్యేక అర్థాలను స్థిర మూల నిర్వచనంతో నియంత్రించడం [viable_alternative: ఎంపిక] | సంబంధం అనే స్థానిక పదమే క్రిప్కె ప్రాప్యత సంబంధానికి ప్రత్యక్ష సాక్ష్యమని ప్రకటించడం [viable_alternative: తిరస్కరణ] | ఏకకాల, వరుస ప్రతిస్థాపన ఫలితాలు ఎప్పుడూ ఒకటేనని సరళీకరించడం [viable_alternative: తిరస్కరణ] | లోకంలో సత్యం, నమూనాలో సత్యం, శూన్యసందర్భ సత్యం మధ్య మూలం చూపిన భేదాలను కలపడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “ఏకకాల ప్రతిస్థాపన, ప్రతిస్థాపన నిదర్శనం / సంబంధాత్మక నమూనా, ప్రాప్యత సంబంధం / కేటాయింపు V / ఒక లోకంలో సత్యం, నమూనాలో సత్యం / శూన్యసందర్భ సత్యం / బాక్స్–డైమండ్ ద్వైతత్వం” is idiomatic and technically standard for “simultaneous substitution and substitution instance / relational model and accessibility relation / valuation V / truth at a world versus truth in a model / vacuous truth / box-diamond duality” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T108-OCC-001; OLP-0411; OLP-0411-B005; source upstream/content/normal-modal-logic/syntax-and-semantics/substitution.tex:11 bytes 191-229 SHA-256 c06b8018d76c34c2242503d94f209cc4c6c731542e9eab27a099b2e794fa30ff; target translation/content/normal-modal-logic/syntax-and-semantics/substitution.tex:11 bytes 191-253 SHA-256 f652279ec9d85c9688e0e2d536a063369853d0bf7b742712850983df0b6317f6; reader page pending.
+  - te-Telu-IN-TE-T108-OCC-002; OLP-0411; OLP-0411-B007; source upstream/content/normal-modal-logic/syntax-and-semantics/substitution.tex:19-73 bytes 553-3452 SHA-256 c06b8018d76c34c2242503d94f209cc4c6c731542e9eab27a099b2e794fa30ff; target translation/content/normal-modal-logic/syntax-and-semantics/substitution.tex:25-97 bytes 1094-5415 SHA-256 f652279ec9d85c9688e0e2d536a063369853d0bf7b742712850983df0b6317f6; reader page pending.
+  - te-Telu-IN-TE-T108-OCC-003; OLP-0412; OLP-0412-B005; source upstream/content/normal-modal-logic/syntax-and-semantics/relational-models.tex:11 bytes 196-226 SHA-256 e8bc152c0c35fa129babf11ba07aa8a42fc867905526c126d93bb50ea2cfc2cf; target translation/content/normal-modal-logic/syntax-and-semantics/relational-models.tex:11 bytes 196-261 SHA-256 733e7de2e909136a96d35d40e83da28b0595877a836906f8a6884c3e35df58af; reader page pending.
+  - te-Telu-IN-TE-T108-OCC-004; OLP-0412; OLP-0412-B006; source upstream/content/normal-modal-logic/syntax-and-semantics/relational-models.tex:13-17 bytes 227-524 SHA-256 e8bc152c0c35fa129babf11ba07aa8a42fc867905526c126d93bb50ea2cfc2cf; target translation/content/normal-modal-logic/syntax-and-semantics/relational-models.tex:13-20 bytes 262-878 SHA-256 733e7de2e909136a96d35d40e83da28b0595877a836906f8a6884c3e35df58af; reader page pending.
+  - te-Telu-IN-TE-T108-OCC-005; OLP-0413; OLP-0413-B005; source upstream/content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex:11 bytes 189-218 SHA-256 4c1ea773c2dd5106ceba1ec676dfadbbae432fc9d56b528a4a6b00f2c270fd50; target translation/content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex:11 bytes 189-243 SHA-256 9f947d8c0dede920f5078b7da1b845d74ea8bbc726aa07c448c10422ad4182c8; reader page pending.
+  - te-Telu-IN-TE-T108-OCC-006; OLP-0413; OLP-0413-B008; source upstream/content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex:46-53 bytes 1944-2415 SHA-256 4c1ea773c2dd5106ceba1ec676dfadbbae432fc9d56b528a4a6b00f2c270fd50; target translation/content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex:70-86 bytes 3478-4373 SHA-256 9f947d8c0dede920f5078b7da1b845d74ea8bbc726aa07c448c10422ad4182c8; reader page pending.
+  - te-Telu-IN-TE-T108-OCC-007; OLP-0414; OLP-0414-B005; source upstream/content/normal-modal-logic/syntax-and-semantics/truth-in-model.tex:9 bytes 134-163 SHA-256 12c305069df324d6b4346d4cf1d7ef7e1ee8c6f44479959de738f8a76323cbd6; target translation/content/normal-modal-logic/syntax-and-semantics/truth-in-model.tex:9 bytes 134-191 SHA-256 e068aee466c1604ab0bbeef9fa6c271ff0d197acc50d8331e2fd69e5a2a21c7a; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -13103,3 +13135,81 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLLAN-001-OCC-001; OLP-0410; OLP-0410-B025; source upstream/content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:91-92 bytes 2929-3040 SHA-256 a75f481c6e175130df3c9145984ca245a8156503d2cb9ff833bd77c39b9529ab; target translation/content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:120 bytes 5218-5295 SHA-256 4d09a796fd66515a68fdf62725bc3eca35e6089c72d5c53c447ff1d7749916dd; reader page pending.
+
+## te-Telu-IN-OLTENMLSYN-001 — OLTENMLSYN-001: biconditional substitution case uses conditional tag
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: ద్విసోపాధిక సందర్భపు prvIf గుర్తును పక్కనున్న liff సూత్రం, మూల భాషా నిర్వచనం ప్రకారం prvIffగా సరిచేసి అదే స్థానంలో ప్రకటించాం; గణిత సూత్రం మారలేదు.
+
+- Intended sense: Repair the audited biconditional substitution case uses conditional tag at substitution.tex lines 56-60, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLSYN-20260926:OLTENMLSYN-001 [checked_supports], content/normal-modal-logic/syntax-and-semantics/substitution.tex; substitution.tex lines 56-60; biconditional_substitution_case_uses_conditional_tag; ద్విసోపాధిక సందర్భపు prvIf గుర్తును పక్కనున్న liff సూత్రం, మూల భాషా నిర్వచనం ప్రకారం prvIffగా సరిచేసి అదే స్థానంలో ప్రకటించాం; గణిత సూత్రం మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the biconditional substitution case use the prvIff tag while retaining the exact liff recurrence and disclosing the source tag slip?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLSYN-001-OCC-001; OLP-0411; OLP-0411-B007; source upstream/content/normal-modal-logic/syntax-and-semantics/substitution.tex:19-73 bytes 553-3452 SHA-256 c06b8018d76c34c2242503d94f209cc4c6c731542e9eab27a099b2e794fa30ff; target translation/content/normal-modal-logic/syntax-and-semantics/substitution.tex:74 bytes 3994-4069 SHA-256 f652279ec9d85c9688e0e2d536a063369853d0bf7b742712850983df0b6317f6; reader page pending.
+
+## te-Telu-IN-OLTENMLSYN-002 — OLTENMLSYN-002: box substitution case omits primitive operator tag
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: బాక్స్ ఆగమన సందర్భాన్ని మూల భాషలోని prvBox షరతుతో కట్టి పక్కనే ప్రకటించాం; ప్రతిస్థాపన సూత్రం మారలేదు.
+
+- Intended sense: Repair the audited box substitution case omits primitive operator tag at substitution.tex lines 61-64, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLSYN-20260926:OLTENMLSYN-002 [checked_supports], content/normal-modal-logic/syntax-and-semantics/substitution.tex; substitution.tex lines 61-64; box_substitution_case_omits_primitive_operator_tag; బాక్స్ ఆగమన సందర్భాన్ని మూల భాషలోని prvBox షరతుతో కట్టి పక్కనే ప్రకటించాం; ప్రతిస్థాపన సూత్రం మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the box substitution case use prvBox consistently with the basic-language definition, with no change to the recursive formula?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLSYN-002-OCC-001; OLP-0411; OLP-0411-B007; source upstream/content/normal-modal-logic/syntax-and-semantics/substitution.tex:19-73 bytes 553-3452 SHA-256 c06b8018d76c34c2242503d94f209cc4c6c731542e9eab27a099b2e794fa30ff; target translation/content/normal-modal-logic/syntax-and-semantics/substitution.tex:82 bytes 4529-4588 SHA-256 f652279ec9d85c9688e0e2d536a063369853d0bf7b742712850983df0b6317f6; reader page pending.
+
+## te-Telu-IN-OLTENMLSYN-003 — OLTENMLSYN-003: world argument missing from duality proof satisfaction atom
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: ద్వైత నిరూపణ మొదటి అసంతృప్తి సంకేతానికి మూలంలో తప్పిన [w]ను, అదే వాదంలోని మిగతా స్థానాలకు అనుగుణంగా చేర్చి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited world argument missing from duality proof satisfaction atom at truth-at-w.tex lines 91-94, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLSYN-20260926:OLTENMLSYN-003 [checked_supports], content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex; truth-at-w.tex lines 91-94; world_argument_missing_from_duality_proof_satisfaction_atom; ద్వైత నిరూపణ మొదటి అసంతృప్తి సంకేతానికి మూలంలో తప్పిన [w]ను, అదే వాదంలోని మిగతా స్థానాలకు అనుగుణంగా చేర్చి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Is the world argument [w] restored only to the first missing non-satisfaction atom in the second box-diamond duality proof?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLSYN-003-OCC-001; OLP-0413; OLP-0413-B011; source upstream/content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex:80-102 bytes 3212-4467 SHA-256 4c1ea773c2dd5106ceba1ec676dfadbbae432fc9d56b528a4a6b00f2c270fd50; target translation/content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex:146 bytes 6771-6852 SHA-256 9f947d8c0dede920f5078b7da1b845d74ea8bbc726aa07c448c10422ad4182c8; reader page pending.

@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 410 of 722 draft units**. This log contains 107 terminology/sense decisions and 378 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 414 of 722 draft units**. This log contains 108 terminology/sense decisions and 381 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2575,6 +2575,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: నార్మల్, మోడల్, అలెథిక్, క్రిప్కె వంటి గుర్తించదగిన అరువులు లేదా లిప్యంతరీకరణలు తాత్కాలిక ఎంపికలు. నార్మల్ అనేది సాంకేతిక తర్క-వర్గం; రోజువారీ సాధారణ అనే అర్థం కాదు. స్థానిక ద్విమూల్య తర్క పేజీలు సాధ్య లోకాల అర్థవిచారానికిగాని OLTENMLLAN-001 కుండలీకరణ సవరణకుగాని గణిత ప్రమాణం కావు.
 
 - Please double-check: Please double-check whether “నార్మల్ మోడల్ తర్కం / మోడల్ ప్రతిజ్ఞావాక్యం / సాధ్యత, అవశ్యకత / అలెథిక్ (సత్య-అవశ్యకత) మోడాలిటీ / క్రిప్కె అర్థవిచారం, ప్రాప్యత సంబంధం / అనురూపతా సిద్ధాంతం / మోడల్-రహిత సూత్రం / బాక్స్, డైమండ్ మోడల్ సంచాలకాలు” is idiomatic and technically standard for “normal modal logic / modal proposition / possibility and necessity / alethic modality / Kripke semantics and accessibility relation / correspondence theory / modal-free formula / box and diamond operators” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T108 — simultaneous substitution and substitution instance / relational model and accessibility relation / valuation V / truth at a world versus truth in a model / vacuous truth / box-diamond duality
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: ఏకకాల ప్రతిస్థాపన, ప్రతిస్థాపన నిదర్శనం / సంబంధాత్మక నమూనా, ప్రాప్యత సంబంధం / కేటాయింపు V / ఒక లోకంలో సత్యం, నమూనాలో సత్యం / శూన్యసందర్భ సత్యం / బాక్స్–డైమండ్ ద్వైతత్వం
+
+- Exact implementation: OLP-0411; normal-modal-logic/syntax-and-semantics/substitution; content/normal-modal-logic/syntax-and-semantics/substitution.tex:11 ↔ translation/content/normal-modal-logic/syntax-and-semantics/substitution.tex:11 (OLP-0411-B005); printed/PDF page pending; OLP-0411; normal-modal-logic/syntax-and-semantics/substitution; content/normal-modal-logic/syntax-and-semantics/substitution.tex:19-73 ↔ translation/content/normal-modal-logic/syntax-and-semantics/substitution.tex:25-97 (OLP-0411-B007); printed/PDF page pending; OLP-0412; normal-modal-logic/syntax-and-semantics/relational-models; content/normal-modal-logic/syntax-and-semantics/relational-models.tex:11 ↔ translation/content/normal-modal-logic/syntax-and-semantics/relational-models.tex:11 (OLP-0412-B005); printed/PDF page pending; OLP-0412; normal-modal-logic/syntax-and-semantics/relational-models; content/normal-modal-logic/syntax-and-semantics/relational-models.tex:13-17 ↔ translation/content/normal-modal-logic/syntax-and-semantics/relational-models.tex:13-20 (OLP-0412-B006); printed/PDF page pending; OLP-0413; normal-modal-logic/syntax-and-semantics/truth-at-w; content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex:11 ↔ translation/content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex:11 (OLP-0413-B005); printed/PDF page pending; OLP-0413; normal-modal-logic/syntax-and-semantics/truth-at-w; content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex:46-53 ↔ translation/content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex:70-86 (OLP-0413-B008); printed/PDF page pending; OLP-0414; normal-modal-logic/syntax-and-semantics/truth-in-model; content/normal-modal-logic/syntax-and-semantics/truth-in-model.tex:9 ↔ translation/content/normal-modal-logic/syntax-and-semantics/truth-in-model.tex:9 (OLP-0414-B005); printed/PDF page pending
+
+- Authorities actually checked: TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P021, PDF undefined, printed undefined, Conditional and biconditional headings and explanations; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P010 తెలంగాణ పాఠ్య పేజీలో ద్విస్థానిక సంబంధం, TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, TE-P019లో సత్యతావిలువ, TE-P021లో సోపాధికం, TE-P024లో నియమ-వ్యుత్పత్తి స్థానిక చిత్రాలను ప్రత్యక్షంగా చూశాం. ఈ సాధారణ పదజాలాన్ని OLP-0411–0414లో తగిన భాగాలకు మాత్రమే అన్వయించాం. ఏకకాల ప్రతిస్థాపన, క్రిప్కె ప్రాప్యత సంబంధం, లోకం/నమూనా సత్యభేదం, శూన్యసందర్భ సత్యం, బాక్స్–డైమండ్ ద్వైతత్వం ఈ పేజీలలో నేరుగా నిర్వచించబడలేదు; స్థిర OpenLogic మూల నిర్వచనాలు, TE-T053/103/107 సంప్రదాయమే ప్రత్యేక అర్థాన్ని నియంత్రిస్తున్నాయి. మోడల్, క్రిప్కె ముందరి గుర్తించదగిన అరువులు; W, R, V, M, Box/Diamond, p_i/D_i, source tags and satisfaction macros are protected mathematical or variant identifiers.
+
+- Alternatives: స్థానిక సంబంధం, ప్రతిజ్ఞావాక్య తర్కం, సత్యతావిలువ, సోపాధికం, వ్యుత్పత్తి పదజాలాన్ని మాత్రమే తీసుకొని ఏకకాల ప్రతిస్థాపన, సంబంధాత్మక నమూనా, శూన్యసందర్భ సత్యం, ద్వైతత్వ ప్రత్యేక అర్థాలను స్థిర మూల నిర్వచనంతో నియంత్రించడం (ఎంపిక); సంబంధం అనే స్థానిక పదమే క్రిప్కె ప్రాప్యత సంబంధానికి ప్రత్యక్ష సాక్ష్యమని ప్రకటించడం (తిరస్కరణ); ఏకకాల, వరుస ప్రతిస్థాపన ఫలితాలు ఎప్పుడూ ఒకటేనని సరళీకరించడం (తిరస్కరణ); లోకంలో సత్యం, నమూనాలో సత్యం, శూన్యసందర్భ సత్యం మధ్య మూలం చూపిన భేదాలను కలపడం (తిరస్కరణ)
+
+- Uncertainty: ప్రతిస్థాపన నిదర్శనం, సంబంధాత్మక నమూనా, శూన్యసందర్భ సత్యం అనే సమాసాలు మూల నిర్వచనాధారిత తాత్కాలిక ఎంపికలు. తెలంగాణ సంబంధ పేజీ ప్రాప్యత అనే ప్రత్యేక మోడల్-అర్థాన్ని స్థాపించదు. బాక్స్/డైమండ్, లోకం, నమూనా వేరు స్థాయిలను మూల సూత్రాల ప్రకారం మాత్రమే చదవాలి; స్థానిక పేజీలను OLTENMLSYN-001–003 మూల సవరణలకు ప్రమాణంగా వాడలేదు.
+
+- Please double-check: Please double-check whether “ఏకకాల ప్రతిస్థాపన, ప్రతిస్థాపన నిదర్శనం / సంబంధాత్మక నమూనా, ప్రాప్యత సంబంధం / కేటాయింపు V / ఒక లోకంలో సత్యం, నమూనాలో సత్యం / శూన్యసందర్భ సత్యం / బాక్స్–డైమండ్ ద్వైతత్వం” is idiomatic and technically standard for “simultaneous substitution and substitution instance / relational model and accessibility relation / valuation V / truth at a world versus truth in a model / vacuous truth / box-diamond duality” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -11647,3 +11671,75 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Is the lone unmatched closing parenthesis removed only from the prvOr branch of defIf, with both subformulas, the other branch, and the adjacent Telugu disclosure preserved?
+
+## REV-OLTENMLSYN-001 — OLTENMLSYN-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: ద్విసోపాధిక సందర్భపు prvIf గుర్తును పక్కనున్న liff సూత్రం, మూల భాషా నిర్వచనం ప్రకారం prvIffగా సరిచేసి అదే స్థానంలో ప్రకటించాం; గణిత సూత్రం మారలేదు.
+
+- Exact implementation: OLP-0411; normal-modal-logic/syntax-and-semantics/substitution; substitution.tex lines 56-60 ↔ translation/content/normal-modal-logic/syntax-and-semantics/substitution.tex:74 (OLP-0411-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLSYN-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: ద్విసోపాధిక సందర్భపు prvIf గుర్తును పక్కనున్న liff సూత్రం, మూల భాషా నిర్వచనం ప్రకారం prvIffగా సరిచేసి అదే స్థానంలో ప్రకటించాం; గణిత సూత్రం మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the biconditional substitution case use the prvIff tag while retaining the exact liff recurrence and disclosing the source tag slip?
+
+## REV-OLTENMLSYN-002 — OLTENMLSYN-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: బాక్స్ ఆగమన సందర్భాన్ని మూల భాషలోని prvBox షరతుతో కట్టి పక్కనే ప్రకటించాం; ప్రతిస్థాపన సూత్రం మారలేదు.
+
+- Exact implementation: OLP-0411; normal-modal-logic/syntax-and-semantics/substitution; substitution.tex lines 61-64 ↔ translation/content/normal-modal-logic/syntax-and-semantics/substitution.tex:82 (OLP-0411-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLSYN-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: బాక్స్ ఆగమన సందర్భాన్ని మూల భాషలోని prvBox షరతుతో కట్టి పక్కనే ప్రకటించాం; ప్రతిస్థాపన సూత్రం మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the box substitution case use prvBox consistently with the basic-language definition, with no change to the recursive formula?
+
+## REV-OLTENMLSYN-003 — OLTENMLSYN-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: ద్వైత నిరూపణ మొదటి అసంతృప్తి సంకేతానికి మూలంలో తప్పిన [w]ను, అదే వాదంలోని మిగతా స్థానాలకు అనుగుణంగా చేర్చి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0413; normal-modal-logic/syntax-and-semantics/truth-at-w; truth-at-w.tex lines 91-94 ↔ translation/content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex:146 (OLP-0413-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLSYN-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: ద్వైత నిరూపణ మొదటి అసంతృప్తి సంకేతానికి మూలంలో తప్పిన [w]ను, అదే వాదంలోని మిగతా స్థానాలకు అనుగుణంగా చేర్చి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Is the world argument [w] restored only to the first missing non-satisfaction atom in the second box-diamond duality proof?
