@@ -1,0 +1,110 @@
+{
+  "schema": "openlogic-te-commit-readback/1",
+  "checked_at": "2026-09-26T19:09:14.754Z",
+  "commit": "3b300d1efad04a3617af704e1689dec5e54483e1",
+  "anonymous": true,
+  "authorization_header_sent": false,
+  "file_count": 11,
+  "files": [
+    {
+      "path": "evidence/GITHUB-COMMIT-2589a7de791c-READBACK.json",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/3b300d1efad04a3617af704e1689dec5e54483e1/evidence/GITHUB-COMMIT-2589a7de791c-READBACK.json",
+      "bytes": 783,
+      "sha256": "9e8bcb0b632c75ea736222a1408193da0ce30e6fd04df4123647f5b44a9c31f9",
+      "expected_bytes": 783,
+      "expected_sha256": "9e8bcb0b632c75ea736222a1408193da0ce30e6fd04df4123647f5b44a9c31f9",
+      "match": true
+    },
+    {
+      "path": "evidence/SEGMENT_CANON_USE.jsonl",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/3b300d1efad04a3617af704e1689dec5e54483e1/evidence/SEGMENT_CANON_USE.jsonl",
+      "bytes": 14617222,
+      "sha256": "efcf1e3962054b1bf8d55c22e3224cb756c33885b36a85f49458462f33510c75",
+      "expected_bytes": 14617222,
+      "expected_sha256": "efcf1e3962054b1bf8d55c22e3224cb756c33885b36a85f49458462f33510c75",
+      "match": true
+    },
+    {
+      "path": "evidence/SOURCE_CORRECTIONS.jsonl",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/3b300d1efad04a3617af704e1689dec5e54483e1/evidence/SOURCE_CORRECTIONS.jsonl",
+      "bytes": 398255,
+      "sha256": "8c25242b81fa08cc142657ee7719c7c3f20353929f1057f002e38a0cb53880a1",
+      "expected_bytes": 398255,
+      "expected_sha256": "8c25242b81fa08cc142657ee7719c7c3f20353929f1057f002e38a0cb53880a1",
+      "match": true
+    },
+    {
+      "path": "evidence/TERM_DECISIONS.jsonl",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/3b300d1efad04a3617af704e1689dec5e54483e1/evidence/TERM_DECISIONS.jsonl",
+      "bytes": 190754,
+      "sha256": "f5dce3c624d0c45c60d320ee1cc76f6228466704cc8c4057308332bbd4832243",
+      "expected_bytes": 190754,
+      "expected_sha256": "f5dce3c624d0c45c60d320ee1cc76f6228466704cc8c4057308332bbd4832243",
+      "match": true
+    },
+    {
+      "path": "evidence/source-audits/2026-09-26-infinite-valued-telugu/FINDINGS.json",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/3b300d1efad04a3617af704e1689dec5e54483e1/evidence/source-audits/2026-09-26-infinite-valued-telugu/FINDINGS.json",
+      "bytes": 4919,
+      "sha256": "904c80e5effd766074e156c24b4d6f423ed953ce09a7e1e643d5314fbf8fb3a0",
+      "expected_bytes": 4919,
+      "expected_sha256": "904c80e5effd766074e156c24b4d6f423ed953ce09a7e1e643d5314fbf8fb3a0",
+      "match": true
+    },
+    {
+      "path": "evidence/source-audits/2026-09-26-infinite-valued-telugu/REVIEW.md",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/3b300d1efad04a3617af704e1689dec5e54483e1/evidence/source-audits/2026-09-26-infinite-valued-telugu/REVIEW.md",
+      "bytes": 1854,
+      "sha256": "a9db01d23e0d106410dc4825dc8e344e7c8fe2e654ada894527befe337db2a2d",
+      "expected_bytes": 1854,
+      "expected_sha256": "a9db01d23e0d106410dc4825dc8e344e7c8fe2e654ada894527befe337db2a2d",
+      "match": true
+    },
+    {
+      "path": "scripts/add-batch063-evidence.mjs",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/3b300d1efad04a3617af704e1689dec5e54483e1/scripts/add-batch063-evidence.mjs",
+      "bytes": 12512,
+      "sha256": "551ce98b1c2e12fd108fabfdb4c786f5b8fca934c5b053fc71597c3c80abb4cc",
+      "expected_bytes": 12512,
+      "expected_sha256": "551ce98b1c2e12fd108fabfdb4c786f5b8fca934c5b053fc71597c3c80abb4cc",
+      "match": true
+    },
+    {
+      "path": "translation/content/many-valued-logic/infinite-valued-logics/goedel.tex",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/3b300d1efad04a3617af704e1689dec5e54483e1/translation/content/many-valued-logic/infinite-valued-logics/goedel.tex",
+      "bytes": 6063,
+      "sha256": "94f553c7cc3aa02f552248219b6320fe4afd7e0b7091b6225e623d18efc0aff4",
+      "expected_bytes": 6063,
+      "expected_sha256": "94f553c7cc3aa02f552248219b6320fe4afd7e0b7091b6225e623d18efc0aff4",
+      "match": true
+    },
+    {
+      "path": "translation/content/many-valued-logic/infinite-valued-logics/infinite-valued-logics.tex",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/3b300d1efad04a3617af704e1689dec5e54483e1/translation/content/many-valued-logic/infinite-valued-logics/infinite-valued-logics.tex",
+      "bytes": 321,
+      "sha256": "5021b786d0cace42bcdf07fe0c610bb8d9b3365562e43a94cf053ac91ebb93c9",
+      "expected_bytes": 321,
+      "expected_sha256": "5021b786d0cace42bcdf07fe0c610bb8d9b3365562e43a94cf053ac91ebb93c9",
+      "match": true
+    },
+    {
+      "path": "translation/content/many-valued-logic/infinite-valued-logics/introduction.tex",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/3b300d1efad04a3617af704e1689dec5e54483e1/translation/content/many-valued-logic/infinite-valued-logics/introduction.tex",
+      "bytes": 3659,
+      "sha256": "467cde77683d5b7612b8e62bd7aac91666a131adbdab3d1c98c1aa401c25bc7d",
+      "expected_bytes": 3659,
+      "expected_sha256": "467cde77683d5b7612b8e62bd7aac91666a131adbdab3d1c98c1aa401c25bc7d",
+      "match": true
+    },
+    {
+      "path": "translation/content/many-valued-logic/infinite-valued-logics/lukasiewicz.tex",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/3b300d1efad04a3617af704e1689dec5e54483e1/translation/content/many-valued-logic/infinite-valued-logics/lukasiewicz.tex",
+      "bytes": 5049,
+      "sha256": "e348d7dcbfda7a03d9f6a7cd1392837deb0aaf11771df7cd60eb0f80910860c0",
+      "expected_bytes": 5049,
+      "expected_sha256": "e348d7dcbfda7a03d9f6a7cd1392837deb0aaf11771df7cd60eb0f80910860c0",
+      "match": true
+    }
+  ],
+  "status": "COMPLETE_PASS"
+}

@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 397 of 722 draft units**. This log contains 104 terminology/sense decisions and 370 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 401 of 722 draft units**. This log contains 105 terminology/sense decisions and 374 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2503,6 +2503,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: సాధారణ ప్రతిజ్ఞావాక్య తర్కం, సత్యమూల్యం, నిషేధం, సంయోగం, వికల్పం, సత్య పట్టిక, ఫలిత భావనకు ప్రత్యక్ష స్థానిక ఆధారం ఉంది. బలమైన/బలహీనమైన క్లీని, గోడెల్, అంతర్బోధవాద, వైరుధ్యాభాస, అర్థరహిత, విస్ఫోటనరహిత, ఆర్-మింగిల్ అనే ప్రత్యేక నామాలు ఈ స్థానిక పేజీల్లో నేరుగా లేవు; మూల నిర్వచనాలకు కట్టుబడి తాత్కాలికంగా వాడుతున్నాం. LP, Hallden భాషా పరిధి సంపాదకీయంగా స్పష్టం చేయబడింది; మూడు నిరూపణ సవరణలు మూల గణితానికి కట్టుబడి ఉన్నాయి.
 
 - Please double-check: Please double-check whether “బలమైన/బలహీనమైన క్లీని తర్కం / నిర్వచితం కాని లేదా తెలియని సత్యమూల్యం / సమాంతర గణన / గోడెల్ తర్కం / అంతర్బోధవాద తర్కం / వైరుధ్యాభాస తర్కం / అర్థరహిత తర్కం / విస్ఫోటనరహిత / విస్ఫోటన సూత్రం / మూడు-విలువల ఆర్-మింగిల్ / సాధారణ సంయోజక భాగం” is idiomatic and technically standard for “strong/weak Kleene logic / undefined or unknown truth value / parallel evaluation / Gödel logic / intuitionistic logic / logic of paradox / logic of nonsense / paraconsistent / explosion / 3-valued R-Mingle / common connective fragment” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T105 — infinite-valued logic / rational and real truth-value sets / finite m-valued approximation / fuzzy logic / Łukasiewicz implication / Gödel implication / Gödel-Dummett logic / linearity schema
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: అనంత-విలువల తర్కం / కరణీయ, వాస్తవ సంఖ్యల సత్యమూల్య సమితులు / పరిమిత m-విలువల సమీపనం / ఫజీ తర్కం / Łukasiewicz సోపాధికం / గోడెల్ సోపాధికం / గోడెల్--డమ్మెట్ తర్కం / రేఖీయత పథకం
+
+- Exact implementation: OLP-0398; many-valued-logic/infinite-valued-logics/infinite-valued-logics; content/many-valued-logic/infinite-valued-logics/infinite-valued-logics.tex:8 ↔ translation/content/many-valued-logic/infinite-valued-logics/infinite-valued-logics.tex:8 (OLP-0398-B004); printed/PDF page pending; OLP-0399; many-valued-logic/infinite-valued-logics/introduction; content/many-valued-logic/infinite-valued-logics/introduction.tex:13-28 ↔ translation/content/many-valued-logic/infinite-valued-logics/introduction.tex:13-45 (OLP-0399-B006); printed/PDF page pending; OLP-0399; many-valued-logic/infinite-valued-logics/introduction; content/many-valued-logic/infinite-valued-logics/introduction.tex:13-28 ↔ translation/content/many-valued-logic/infinite-valued-logics/introduction.tex:13-45 (OLP-0399-B006); printed/PDF page pending; OLP-0399; many-valued-logic/infinite-valued-logics/introduction; content/many-valued-logic/infinite-valued-logics/introduction.tex:30-32 ↔ translation/content/many-valued-logic/infinite-valued-logics/introduction.tex:47-52 (OLP-0399-B007); printed/PDF page pending; OLP-0399; many-valued-logic/infinite-valued-logics/introduction; content/many-valued-logic/infinite-valued-logics/introduction.tex:30-32 ↔ translation/content/many-valued-logic/infinite-valued-logics/introduction.tex:47-52 (OLP-0399-B007); printed/PDF page pending; OLP-0400; many-valued-logic/infinite-valued-logics/lukasiewicz; content/many-valued-logic/infinite-valued-logics/lukasiewicz.tex:18-37 ↔ translation/content/many-valued-logic/infinite-valued-logics/lukasiewicz.tex:18-55 (OLP-0400-B007); printed/PDF page pending; OLP-0400; many-valued-logic/infinite-valued-logics/lukasiewicz; content/many-valued-logic/infinite-valued-logics/lukasiewicz.tex:18-37 ↔ translation/content/many-valued-logic/infinite-valued-logics/lukasiewicz.tex:18-55 (OLP-0400-B007); printed/PDF page pending; OLP-0401; many-valued-logic/infinite-valued-logics/goedel; content/many-valued-logic/infinite-valued-logics/goedel.tex:17-40 ↔ translation/content/many-valued-logic/infinite-valued-logics/goedel.tex:18-52 (OLP-0401-B007); printed/PDF page pending; OLP-0401; many-valued-logic/infinite-valued-logics/goedel; content/many-valued-logic/infinite-valued-logics/goedel.tex:17-40 ↔ translation/content/many-valued-logic/infinite-valued-logics/goedel.tex:18-52 (OLP-0401-B007); printed/PDF page pending; OLP-0401; many-valued-logic/infinite-valued-logics/goedel; content/many-valued-logic/infinite-valued-logics/goedel.tex:101-115 ↔ translation/content/many-valued-logic/infinite-valued-logics/goedel.tex:119-143 (OLP-0401-B014); printed/PDF page pending; OLP-0401; many-valued-logic/infinite-valued-logics/goedel; content/many-valued-logic/infinite-valued-logics/goedel.tex:101-115 ↔ translation/content/many-valued-logic/infinite-valued-logics/goedel.tex:119-143 (OLP-0401-B014); printed/PDF page pending
+
+- Authorities actually checked: TE-P006, PDF 10, printed 36, Section 1 on real numbers; TE-P007, PDF 26, printed 16, Sections 2.1-2.2, natural and whole number sets; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P020, PDF 79, printed 72, Disjunction heading and truth-table discussion; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P006లో కరణీయ, అకరణీయ, వాస్తవ సంఖ్యల భేదం; TE-P007లో సహజ సంఖ్యల ఒక తెలంగాణ పాఠ్య సంప్రదాయం; TE-P008లో సమితి, ఉపసమితి; TE-P011లో ప్రమేయం; TE-P018–P020లో ప్రతిజ్ఞావాక్య తర్కం, సత్యతావిలువ, సంయోజక/వియోజక పట్టికలు; TE-P023లో ఫలిత సంబంధం ప్రత్యక్ష పేజీ చిత్రాల్లో చూశాం. TE-P007 సహజ సంఖ్యల సమితిని ఒకటితో మొదలుపెడుతుంది; స్థిర OpenLogic ముఖ్య సమితుల మూలం మాత్రం Natను సున్నాతో మొదలుపెడుతుంది, V_5 ఉదాహరణలోనూ సున్నా ఉంది. స్థానిక సంప్రదాయాన్ని మూల సంకేతంపై రుద్దలేదు. ఏ స్థానిక పేజీ అనంత-విలువల, ఫజీ, లూకాసియెవిచ్/గోడెల్ సోపాధికం, గోడెల్--డమ్మెట్ ప్రత్యేక భావాలను నేరుగా బోధించదు; OLP-0398–0401 స్థిర నిర్వచనాలు, పట్టికలే వాటిని నియంత్రిస్తాయి. ఫజీ ఒక ప్రకటిత సాంకేతిక అరువు; Łukasiewicz, Gödel, Dummett వ్యక్తి/వ్యవస్థ పేర్లను గుర్తించదగిన రూపంలో నిలిపాం. V_infinity, V_m, Nat, Rat, L_0, min/max and logic macros are protected notation, not unexplained English prose.
+
+- Alternatives: TE-P006 కరణీయ/వాస్తవ, TE-P008 సమితి, TE-P019 సత్యతావిలువ, TE-P011 ప్రమేయం పదాలను సంచిక స్థిర వాడుకతో కొనసాగించి, ఫజీ, అనంత-విలువల తర్కం, గోడెల్--డమ్మెట్ పథకాన్ని మూల నిర్వచనానికి కట్టుబడి తాత్కాలికంగా వాడటం (ఎంపిక); TE-P007లో సహజ సంఖ్యలు ఒకటితో మొదలయ్యే స్థానిక సంప్రదాయాన్ని సున్నాతో మొదలయ్యే OpenLogic Natపై రుద్దడం (తిరస్కరణ); స్థానిక ద్విమూల్య తర్క పేజీలు ఫజీ లేదా గోడెల్--డమ్మెట్ ప్రత్యేక భావాలను నేరుగా ధృవీకరిస్తాయని చెప్పడం (తిరస్కరణ); ముద్రిత V_m పరిమితి, అసత్య స్థిరాంక లోపాలను దాచడం (తిరస్కరణ)
+
+- Uncertainty: కరణీయ, వాస్తవ, సమితి, సత్యతావిలువ, సంయోజకం, ప్రమేయం, ఫలితం అనే సాధారణ పదజాలానికి ప్రత్యక్ష స్థానిక సాక్ష్యం ఉంది. ఫజీ అనే అరువు, అనంత-విలువల సోపాధిక ప్రమేయాలు, గోడెల్--డమ్మెట్ పథక నామాలు మూల నిర్వచన ఆధారిత తాత్కాలిక ఎంపికలు. ఆ పేజీలు OLTEMVLINF-001–004 గణిత సవరణలకు ఆధారం కావు; స్థిర మూల సమితి వివరణ, ఐదు-విలువల ఉదాహరణ, మాత్రిక పోలిక, TeX స్థితే ఆధారం.
+
+- Please double-check: Please double-check whether “అనంత-విలువల తర్కం / కరణీయ, వాస్తవ సంఖ్యల సత్యమూల్య సమితులు / పరిమిత m-విలువల సమీపనం / ఫజీ తర్కం / Łukasiewicz సోపాధికం / గోడెల్ సోపాధికం / గోడెల్--డమ్మెట్ తర్కం / రేఖీయత పథకం” is idiomatic and technically standard for “infinite-valued logic / rational and real truth-value sets / finite m-valued approximation / fuzzy logic / Łukasiewicz implication / Gödel implication / Gödel-Dummett logic / linearity schema” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -11383,3 +11407,99 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Is the shared-tautology claim scoped to the common four-connective language rather than treating Hallden plus-formulas as classical formulas?
+
+## REV-OLTEMVLINF-001 — OLTEMVLINF-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: కరణీయ అంతర సమితిలో హారం సున్నా కావచ్చనే లోపాన్ని హారం సున్నాకన్నా పెద్దదనే షరతుతో సరిచేసి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0399; many-valued-logic/infinite-valued-logics/introduction; introduction.tex lines 14-18 ↔ translation/content/many-valued-logic/infinite-valued-logics/introduction.tex:27 (OLP-0399-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLINF-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: కరణీయ అంతర సమితిలో హారం సున్నా కావచ్చనే లోపాన్ని హారం సున్నాకన్నా పెద్దదనే షరతుతో సరిచేసి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the rational truth-value comprehension exclude a zero denominator while retaining every rational in the unit interval?
+
+## REV-OLTEMVLINF-002 — OLTEMVLINF-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: లవాన్ని విలువల సంఖ్యకన్నా చిన్నదిగా చేసి, కనీసం రెండు విలువల సందర్భమని గద్యంలో స్పష్టం చేసి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0399; many-valued-logic/infinite-valued-logics/introduction; introduction.tex lines 19-23 ↔ translation/content/many-valued-logic/infinite-valued-logics/introduction.tex:32 (OLP-0399-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLINF-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: లవాన్ని విలువల సంఖ్యకన్నా చిన్నదిగా చేసి, కనీసం రెండు విలువల సందర్భమని గద్యంలో స్పష్టం చేసి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does V_m now have exactly m evenly spaced values from zero through one for each m at least two, matching the printed V_5 example?
+
+## REV-OLTEMVLINF-003 — OLTEMVLINF-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: ప్రామాణిక భాషలోని అసత్య స్థిరాంకాన్ని జాబితాలో చేర్చి సున్నా విలువను సంపాదకీయంగా ఇచ్చి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0400; many-valued-logic/infinite-valued-logics/lukasiewicz; lukasiewicz.tex lines 18-39 ↔ translation/content/many-valued-logic/infinite-valued-logics/lukasiewicz.tex:45 (OLP-0400-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLINF-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: ప్రామాణిక భాషలోని అసత్య స్థిరాంకాన్ని జాబితాలో చేర్చి సున్నా విలువను సంపాదకీయంగా ఇచ్చి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Is the falsity constant valued zero explicitly and disclosed as an editorial completion needed for the standard-language comparison?
+
+## REV-OLTEMVLINF-004 — OLTEMVLINF-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: గణిత స్థితిలోని నిషేధపు రెండు ఫలితాల చుట్టూ ఉన్న అదనపు డాలర్ గుర్తులను మాత్రమే తొలగించి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0401; many-valued-logic/infinite-valued-logics/goedel; goedel.tex lines 25-30 ↔ translation/content/many-valued-logic/infinite-valued-logics/goedel.tex:47 (OLP-0401-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLINF-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: గణిత స్థితిలోని నిషేధపు రెండు ఫలితాల చుట్టూ ఉన్న అదనపు డాలర్ గుర్తులను మాత్రమే తొలగించి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Were only the two nested dollar delimiters removed from Gödel negation cases, with numeric outputs and conditions unchanged?

@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 397 of 722 draft units**. This view selects 423 of 474 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 401 of 722 draft units**. This view selects 427 of 479 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4233,3 +4233,43 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0397; many-valued-logic/three-valued-logics/multiple-designation; translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:226; printed/PDF page pending
 
 - Please double-check: Please double-check: Is the shared-tautology claim scoped to the common four-connective language rather than treating Hallden plus-formulas as classical formulas?
+
+## REV-OLTEMVLINF-001 — OLTEMVLINF-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: కరణీయ అంతర సమితిలో హారం సున్నా కావచ్చనే లోపాన్ని హారం సున్నాకన్నా పెద్దదనే షరతుతో సరిచేసి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0399; many-valued-logic/infinite-valued-logics/introduction; translation/content/many-valued-logic/infinite-valued-logics/introduction.tex:27; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the rational truth-value comprehension exclude a zero denominator while retaining every rational in the unit interval?
+
+## REV-OLTEMVLINF-002 — OLTEMVLINF-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: లవాన్ని విలువల సంఖ్యకన్నా చిన్నదిగా చేసి, కనీసం రెండు విలువల సందర్భమని గద్యంలో స్పష్టం చేసి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0399; many-valued-logic/infinite-valued-logics/introduction; translation/content/many-valued-logic/infinite-valued-logics/introduction.tex:32; printed/PDF page pending
+
+- Please double-check: Please double-check: Does V_m now have exactly m evenly spaced values from zero through one for each m at least two, matching the printed V_5 example?
+
+## REV-OLTEMVLINF-003 — OLTEMVLINF-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రామాణిక భాషలోని అసత్య స్థిరాంకాన్ని జాబితాలో చేర్చి సున్నా విలువను సంపాదకీయంగా ఇచ్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0400; many-valued-logic/infinite-valued-logics/lukasiewicz; translation/content/many-valued-logic/infinite-valued-logics/lukasiewicz.tex:45; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the falsity constant valued zero explicitly and disclosed as an editorial completion needed for the standard-language comparison?
+
+## REV-OLTEMVLINF-004 — OLTEMVLINF-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: గణిత స్థితిలోని నిషేధపు రెండు ఫలితాల చుట్టూ ఉన్న అదనపు డాలర్ గుర్తులను మాత్రమే తొలగించి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0401; many-valued-logic/infinite-valued-logics/goedel; translation/content/many-valued-logic/infinite-valued-logics/goedel.tex:47; printed/PDF page pending
+
+- Please double-check: Please double-check: Were only the two nested dollar delimiters removed from Gödel negation cases, with numeric outputs and conditions unchanged?

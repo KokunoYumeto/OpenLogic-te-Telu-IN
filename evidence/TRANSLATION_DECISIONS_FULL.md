@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **397 of 722 source units drafted**. This readable view contains all 474 decisions and 942 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **401 of 722 source units drafted**. This readable view contains all 479 decisions and 957 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3095,6 +3095,42 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T104-OCC-010; OLP-0397; OLP-0397-B018; source upstream/content/many-valued-logic/three-valued-logics/multiple-designation.tex:139-144 bytes 5693-6041 SHA-256 4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f; target translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:217-232 bytes 12540-13895 SHA-256 18672add254fa3a5f854b6d92f87d48664ef26e2e0983003eaf675f0b7149195; reader page pending.
   - te-Telu-IN-TE-T104-OCC-011; OLP-0397; OLP-0397-B021; source upstream/content/many-valued-logic/three-valued-logics/multiple-designation.tex:161-170 bytes 6506-6981 SHA-256 4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f; target translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:251-265 bytes 14562-15394 SHA-256 18672add254fa3a5f854b6d92f87d48664ef26e2e0983003eaf675f0b7149195; reader page pending.
   - te-Telu-IN-TE-T104-OCC-012; OLP-0397; OLP-0397-B007; source upstream/content/many-valued-logic/three-valued-logics/multiple-designation.tex:19-28 bytes 560-988 SHA-256 4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f; target translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:21-40 bytes 998-2416 SHA-256 18672add254fa3a5f854b6d92f87d48664ef26e2e0983003eaf675f0b7149195; reader page pending.
+
+## te-Telu-IN-TE-T105 — infinite-valued logic / rational and real truth-value sets / finite m-valued approximation / fuzzy logic / Łukasiewicz implication / Gödel implication / Gödel-Dummett logic / linearity schema
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: అనంత-విలువల తర్కం / కరణీయ, వాస్తవ సంఖ్యల సత్యమూల్య సమితులు / పరిమిత m-విలువల సమీపనం / ఫజీ తర్కం / Łukasiewicz సోపాధికం / గోడెల్ సోపాధికం / గోడెల్--డమ్మెట్ తర్కం / రేఖీయత పథకం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “infinite-valued logic / rational and real truth-value sets / finite m-valued approximation / fuzzy logic / Łukasiewicz implication / Gödel implication / Gödel-Dummett logic / linearity schema” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: కరణీయ, వాస్తవ, సమితి, సత్యతావిలువ, సంయోజకం, ప్రమేయం, ఫలితం అనే సాధారణ పదజాలానికి ప్రత్యక్ష స్థానిక సాక్ష్యం ఉంది. ఫజీ అనే అరువు, అనంత-విలువల సోపాధిక ప్రమేయాలు, గోడెల్--డమ్మెట్ పథక నామాలు మూల నిర్వచన ఆధారిత తాత్కాలిక ఎంపికలు. ఆ పేజీలు OLTEMVLINF-001–004 గణిత సవరణలకు ఆధారం కావు; స్థిర మూల సమితి వివరణ, ఐదు-విలువల ఉదాహరణ, మాత్రిక పోలిక, TeX స్థితే ఆధారం.
+
+- Rationale: TE-P006లో కరణీయ, అకరణీయ, వాస్తవ సంఖ్యల భేదం; TE-P007లో సహజ సంఖ్యల ఒక తెలంగాణ పాఠ్య సంప్రదాయం; TE-P008లో సమితి, ఉపసమితి; TE-P011లో ప్రమేయం; TE-P018–P020లో ప్రతిజ్ఞావాక్య తర్కం, సత్యతావిలువ, సంయోజక/వియోజక పట్టికలు; TE-P023లో ఫలిత సంబంధం ప్రత్యక్ష పేజీ చిత్రాల్లో చూశాం. TE-P007 సహజ సంఖ్యల సమితిని ఒకటితో మొదలుపెడుతుంది; స్థిర OpenLogic ముఖ్య సమితుల మూలం మాత్రం Natను సున్నాతో మొదలుపెడుతుంది, V_5 ఉదాహరణలోనూ సున్నా ఉంది. స్థానిక సంప్రదాయాన్ని మూల సంకేతంపై రుద్దలేదు. ఏ స్థానిక పేజీ అనంత-విలువల, ఫజీ, లూకాసియెవిచ్/గోడెల్ సోపాధికం, గోడెల్--డమ్మెట్ ప్రత్యేక భావాలను నేరుగా బోధించదు; OLP-0398–0401 స్థిర నిర్వచనాలు, పట్టికలే వాటిని నియంత్రిస్తాయి. ఫజీ ఒక ప్రకటిత సాంకేతిక అరువు; Łukasiewicz, Gödel, Dummett వ్యక్తి/వ్యవస్థ పేర్లను గుర్తించదగిన రూపంలో నిలిపాం. V_infinity, V_m, Nat, Rat, L_0, min/max and logic macros are protected notation, not unexplained English prose.
+
+- Authorities checked: TE-C003:TE-P006 [checked_context_only], PDF page 10; printed page 36; Section 1 on real numbers; Concept-specific number class terminology | TE-C001:TE-P007 [checked_context_only], PDF page 26; printed page 16; Sections 2.1-2.2, natural and whole number sets; Telangana-specific concept witness and contrastive number convention; does not establish negative integer terminology | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P020 [checked_context_only], PDF page 79; printed page 72; Disjunction heading and truth-table discussion; Direct disjunction and truth-table register; compound operator labels remain definition-controlled. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately.
+
+- Alternatives: TE-P006 కరణీయ/వాస్తవ, TE-P008 సమితి, TE-P019 సత్యతావిలువ, TE-P011 ప్రమేయం పదాలను సంచిక స్థిర వాడుకతో కొనసాగించి, ఫజీ, అనంత-విలువల తర్కం, గోడెల్--డమ్మెట్ పథకాన్ని మూల నిర్వచనానికి కట్టుబడి తాత్కాలికంగా వాడటం [viable_alternative: ఎంపిక] | TE-P007లో సహజ సంఖ్యలు ఒకటితో మొదలయ్యే స్థానిక సంప్రదాయాన్ని సున్నాతో మొదలయ్యే OpenLogic Natపై రుద్దడం [viable_alternative: తిరస్కరణ] | స్థానిక ద్విమూల్య తర్క పేజీలు ఫజీ లేదా గోడెల్--డమ్మెట్ ప్రత్యేక భావాలను నేరుగా ధృవీకరిస్తాయని చెప్పడం [viable_alternative: తిరస్కరణ] | ముద్రిత V_m పరిమితి, అసత్య స్థిరాంక లోపాలను దాచడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “అనంత-విలువల తర్కం / కరణీయ, వాస్తవ సంఖ్యల సత్యమూల్య సమితులు / పరిమిత m-విలువల సమీపనం / ఫజీ తర్కం / Łukasiewicz సోపాధికం / గోడెల్ సోపాధికం / గోడెల్--డమ్మెట్ తర్కం / రేఖీయత పథకం” is idiomatic and technically standard for “infinite-valued logic / rational and real truth-value sets / finite m-valued approximation / fuzzy logic / Łukasiewicz implication / Gödel implication / Gödel-Dummett logic / linearity schema” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T105-OCC-001; OLP-0398; OLP-0398-B004; source upstream/content/many-valued-logic/infinite-valued-logics/infinite-valued-logics.tex:8 bytes 139-184 SHA-256 023a2c8bb60bba2541628de969f9e9e8c0be8c9df88786f9749b4c2b36c1cd84; target translation/content/many-valued-logic/infinite-valued-logics/infinite-valued-logics.tex:8 bytes 142-218 SHA-256 5021b786d0cace42bcdf07fe0c610bb8d9b3365562e43a94cf053ac91ebb93c9; reader page pending.
+  - te-Telu-IN-TE-T105-OCC-002; OLP-0399; OLP-0399-B006; source upstream/content/many-valued-logic/infinite-valued-logics/introduction.tex:13-28 bytes 218-1076 SHA-256 4ce56099c4d8b852148cfe24eb6d1ed00a03fce30c9e1770e52eadbd4412762c; target translation/content/many-valued-logic/infinite-valued-logics/introduction.tex:13-45 bytes 224-3190 SHA-256 467cde77683d5b7612b8e62bd7aac91666a131adbdab3d1c98c1aa401c25bc7d; reader page pending.
+  - te-Telu-IN-TE-T105-OCC-003; OLP-0399; OLP-0399-B006; source upstream/content/many-valued-logic/infinite-valued-logics/introduction.tex:13-28 bytes 218-1076 SHA-256 4ce56099c4d8b852148cfe24eb6d1ed00a03fce30c9e1770e52eadbd4412762c; target translation/content/many-valued-logic/infinite-valued-logics/introduction.tex:13-45 bytes 224-3190 SHA-256 467cde77683d5b7612b8e62bd7aac91666a131adbdab3d1c98c1aa401c25bc7d; reader page pending.
+  - te-Telu-IN-TE-T105-OCC-004; OLP-0399; OLP-0399-B007; source upstream/content/many-valued-logic/infinite-valued-logics/introduction.tex:30-32 bytes 1077-1286 SHA-256 4ce56099c4d8b852148cfe24eb6d1ed00a03fce30c9e1770e52eadbd4412762c; target translation/content/many-valued-logic/infinite-valued-logics/introduction.tex:47-52 bytes 3191-3643 SHA-256 467cde77683d5b7612b8e62bd7aac91666a131adbdab3d1c98c1aa401c25bc7d; reader page pending.
+  - te-Telu-IN-TE-T105-OCC-005; OLP-0399; OLP-0399-B007; source upstream/content/many-valued-logic/infinite-valued-logics/introduction.tex:30-32 bytes 1077-1286 SHA-256 4ce56099c4d8b852148cfe24eb6d1ed00a03fce30c9e1770e52eadbd4412762c; target translation/content/many-valued-logic/infinite-valued-logics/introduction.tex:47-52 bytes 3191-3643 SHA-256 467cde77683d5b7612b8e62bd7aac91666a131adbdab3d1c98c1aa401c25bc7d; reader page pending.
+  - te-Telu-IN-TE-T105-OCC-006; OLP-0400; OLP-0400-B007; source upstream/content/many-valued-logic/infinite-valued-logics/lukasiewicz.tex:18-37 bytes 338-1147 SHA-256 cd08c78b079f961505db9f62af56babd0570bf52682f8375f6ba4d340c2afcc6; target translation/content/many-valued-logic/infinite-valued-logics/lukasiewicz.tex:18-55 bytes 446-2573 SHA-256 e348d7dcbfda7a03d9f6a7cd1392837deb0aaf11771df7cd60eb0f80910860c0; reader page pending.
+  - te-Telu-IN-TE-T105-OCC-007; OLP-0400; OLP-0400-B007; source upstream/content/many-valued-logic/infinite-valued-logics/lukasiewicz.tex:18-37 bytes 338-1147 SHA-256 cd08c78b079f961505db9f62af56babd0570bf52682f8375f6ba4d340c2afcc6; target translation/content/many-valued-logic/infinite-valued-logics/lukasiewicz.tex:18-55 bytes 446-2573 SHA-256 e348d7dcbfda7a03d9f6a7cd1392837deb0aaf11771df7cd60eb0f80910860c0; reader page pending.
+  - te-Telu-IN-TE-T105-OCC-008; OLP-0401; OLP-0401-B007; source upstream/content/many-valued-logic/infinite-valued-logics/goedel.tex:17-40 bytes 325-1212 SHA-256 5d2ee265f4bec099c01297f7e6d605c3c0100e59a96cce2cf9636ec9fb9e186b; target translation/content/many-valued-logic/infinite-valued-logics/goedel.tex:18-52 bytes 457-2324 SHA-256 94f553c7cc3aa02f552248219b6320fe4afd7e0b7091b6225e623d18efc0aff4; reader page pending.
+  - te-Telu-IN-TE-T105-OCC-009; OLP-0401; OLP-0401-B007; source upstream/content/many-valued-logic/infinite-valued-logics/goedel.tex:17-40 bytes 325-1212 SHA-256 5d2ee265f4bec099c01297f7e6d605c3c0100e59a96cce2cf9636ec9fb9e186b; target translation/content/many-valued-logic/infinite-valued-logics/goedel.tex:18-52 bytes 457-2324 SHA-256 94f553c7cc3aa02f552248219b6320fe4afd7e0b7091b6225e623d18efc0aff4; reader page pending.
+  - te-Telu-IN-TE-T105-OCC-010; OLP-0401; OLP-0401-B014; source upstream/content/many-valued-logic/infinite-valued-logics/goedel.tex:101-115 bytes 2732-3581 SHA-256 5d2ee265f4bec099c01297f7e6d605c3c0100e59a96cce2cf9636ec9fb9e186b; target translation/content/many-valued-logic/infinite-valued-logics/goedel.tex:119-143 bytes 4179-5673 SHA-256 94f553c7cc3aa02f552248219b6320fe4afd7e0b7091b6225e623d18efc0aff4; reader page pending.
+  - te-Telu-IN-TE-T105-OCC-011; OLP-0401; OLP-0401-B014; source upstream/content/many-valued-logic/infinite-valued-logics/goedel.tex:101-115 bytes 2732-3581 SHA-256 5d2ee265f4bec099c01297f7e6d605c3c0100e59a96cce2cf9636ec9fb9e186b; target translation/content/many-valued-logic/infinite-valued-logics/goedel.tex:119-143 bytes 4179-5673 SHA-256 94f553c7cc3aa02f552248219b6320fe4afd7e0b7091b6225e623d18efc0aff4; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -12795,3 +12831,107 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEMVLMUL-006-OCC-001; OLP-0397; OLP-0397-B018; source upstream/content/many-valued-logic/three-valued-logics/multiple-designation.tex:139-144 bytes 5693-6041 SHA-256 4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f; target translation/content/many-valued-logic/three-valued-logics/multiple-designation.tex:226 bytes 13275-13325 SHA-256 18672add254fa3a5f854b6d92f87d48664ef26e2e0983003eaf675f0b7149195; reader page pending.
+
+## te-Telu-IN-OLTEMVLINF-001 — OLTEMVLINF-001: rational truth value set allows zero denominator
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: కరణీయ అంతర సమితిలో హారం సున్నా కావచ్చనే లోపాన్ని హారం సున్నాకన్నా పెద్దదనే షరతుతో సరిచేసి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited rational truth value set allows zero denominator at introduction.tex lines 14-18, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLINF-20260926:OLTEMVLINF-001 [checked_supports], content/many-valued-logic/infinite-valued-logics/introduction.tex; introduction.tex lines 14-18; rational_truth_value_set_allows_zero_denominator; కరణీయ అంతర సమితిలో హారం సున్నా కావచ్చనే లోపాన్ని హారం సున్నాకన్నా పెద్దదనే షరతుతో సరిచేసి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the rational truth-value comprehension exclude a zero denominator while retaining every rational in the unit interval?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLINF-001-OCC-001; OLP-0399; OLP-0399-B006; source upstream/content/many-valued-logic/infinite-valued-logics/introduction.tex:13-28 bytes 218-1076 SHA-256 4ce56099c4d8b852148cfe24eb6d1ed00a03fce30c9e1770e52eadbd4412762c; target translation/content/many-valued-logic/infinite-valued-logics/introduction.tex:27 bytes 1412-1487 SHA-256 467cde77683d5b7612b8e62bd7aac91666a131adbdab3d1c98c1aa401c25bc7d; reader page pending.
+
+## te-Telu-IN-OLTEMVLINF-002 — OLTEMVLINF-002: finite truth value set has one extra out of range value
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: లవాన్ని విలువల సంఖ్యకన్నా చిన్నదిగా చేసి, కనీసం రెండు విలువల సందర్భమని గద్యంలో స్పష్టం చేసి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited finite truth value set has one extra out of range value at introduction.tex lines 19-23, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLINF-20260926:OLTEMVLINF-002 [checked_supports], content/many-valued-logic/infinite-valued-logics/introduction.tex; introduction.tex lines 19-23; finite_truth_value_set_has_one_extra_out_of_range_value; లవాన్ని విలువల సంఖ్యకన్నా చిన్నదిగా చేసి, కనీసం రెండు విలువల సందర్భమని గద్యంలో స్పష్టం చేసి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does V_m now have exactly m evenly spaced values from zero through one for each m at least two, matching the printed V_5 example?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLINF-002-OCC-001; OLP-0399; OLP-0399-B006; source upstream/content/many-valued-logic/infinite-valued-logics/introduction.tex:13-28 bytes 218-1076 SHA-256 4ce56099c4d8b852148cfe24eb6d1ed00a03fce30c9e1770e52eadbd4412762c; target translation/content/many-valued-logic/infinite-valued-logics/introduction.tex:32 bytes 1923-1983 SHA-256 467cde77683d5b7612b8e62bd7aac91666a131adbdab3d1c98c1aa401c25bc7d; reader page pending.
+
+## te-Telu-IN-OLTEMVLINF-003 — OLTEMVLINF-003: standard lukasiewicz matrix omits falsity constant
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: ప్రామాణిక భాషలోని అసత్య స్థిరాంకాన్ని జాబితాలో చేర్చి సున్నా విలువను సంపాదకీయంగా ఇచ్చి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited standard lukasiewicz matrix omits falsity constant at lukasiewicz.tex lines 18-39, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLINF-20260926:OLTEMVLINF-003 [checked_supports], content/many-valued-logic/infinite-valued-logics/lukasiewicz.tex; lukasiewicz.tex lines 18-39; standard_lukasiewicz_matrix_omits_falsity_constant; ప్రామాణిక భాషలోని అసత్య స్థిరాంకాన్ని జాబితాలో చేర్చి సున్నా విలువను సంపాదకీయంగా ఇచ్చి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Is the falsity constant valued zero explicitly and disclosed as an editorial completion needed for the standard-language comparison?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLINF-003-OCC-001; OLP-0400; OLP-0400-B007; source upstream/content/many-valued-logic/infinite-valued-logics/lukasiewicz.tex:18-37 bytes 338-1147 SHA-256 cd08c78b079f961505db9f62af56babd0570bf52682f8375f6ba4d340c2afcc6; target translation/content/many-valued-logic/infinite-valued-logics/lukasiewicz.tex:45 bytes 1729-1779 SHA-256 e348d7dcbfda7a03d9f6a7cd1392837deb0aaf11771df7cd60eb0f80910860c0; reader page pending.
+
+## te-Telu-IN-OLTEMVLINF-004 — OLTEMVLINF-004: nested math delimiters in goedel negation cases
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: గణిత స్థితిలోని నిషేధపు రెండు ఫలితాల చుట్టూ ఉన్న అదనపు డాలర్ గుర్తులను మాత్రమే తొలగించి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited nested math delimiters in goedel negation cases at goedel.tex lines 25-30, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLINF-20260926:OLTEMVLINF-004 [checked_supports], content/many-valued-logic/infinite-valued-logics/goedel.tex; goedel.tex lines 25-30; nested_math_delimiters_in_goedel_negation_cases; గణిత స్థితిలోని నిషేధపు రెండు ఫలితాల చుట్టూ ఉన్న అదనపు డాలర్ గుర్తులను మాత్రమే తొలగించి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Were only the two nested dollar delimiters removed from Gödel negation cases, with numeric outputs and conditions unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLINF-004-OCC-001; OLP-0401; OLP-0401-B007; source upstream/content/many-valued-logic/infinite-valued-logics/goedel.tex:17-40 bytes 325-1212 SHA-256 5d2ee265f4bec099c01297f7e6d605c3c0100e59a96cce2cf9636ec9fb9e186b; target translation/content/many-valued-logic/infinite-valued-logics/goedel.tex:47 bytes 1825-1894 SHA-256 94f553c7cc3aa02f552248219b6320fe4afd7e0b7091b6225e623d18efc0aff4; reader page pending.
