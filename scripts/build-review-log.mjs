@@ -421,6 +421,15 @@ locations['TE-T096']=[
  L('content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex',91,94,101,105,'induction','ఆగమనంతో'),
  L('content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex',142,148,153,164,'closed under composition and primitive recursion','సంవృతమైనవి')
 ];
+locations['TE-T097']=[
+ L('content/lambda-calculus/lambda-definability/fixpoints.tex',11,11,11,11,'Fixpoints','స్థిరబిందువులు'),
+ L('content/lambda-calculus/lambda-definability/fixpoints.tex',13,20,13,20,'factorial function','క్రమగుణిత ప్రమేయాన్ని'),
+ L('content/lambda-calculus/lambda-definability/fixpoints.tex',21,22,21,22,'self-reference','స్వీయ-సూచన'),
+ L('content/lambda-calculus/lambda-definability/fixpoints.tex',56,59,59,65,'fixpoint','స్థిరబిందువు'),
+ L('content/lambda-calculus/lambda-definability/fixpoints.tex',67,69,73,76,'Y-combinator','Y-సంయోజకం'),
+ L('content/lambda-calculus/lambda-definability/fixpoints.tex',102,107,113,118,'normal form','నియత రూపంలో'),
+ L('content/lambda-calculus/lambda-definability/fixpoints.tex',157,164,168,178,"Church's combinator",'చర్చ్ సంయోజకం')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -502,6 +511,7 @@ alternatives['TE-T093']=['TE-T079లోని లాంబ్డాతో ని
 alternatives['TE-T094']=['TE-P034లో ప్రత్యక్షంగా ఉన్న క్రమయుగ్మం పదాన్ని లాంబ్డా జతకు వర్తింపజేసి Fst/Snd సూత్రాలతో క్రమాన్ని నిలపడం (ఎంపిక)','క్రమిత జత అనే అస్థిర పర్యాయాన్ని తిరిగి తెచ్చుకోవడం (తిరస్కరణ)','స్థానిక పేజీ చర్చ్ జత సంకేతీకరణను నేరుగా బోధిస్తుందని చెప్పడం (తిరస్కరణ)','Predలో మొదటి, రెండవ అవయవాల క్రమాన్ని మార్చడం (తిరస్కరణ)'];
 alternatives['TE-T095']=['పూర్వ సత్యమూల్యం, సంయోగం, వికల్పం పదాలను సూత్రాల ఎంపిక-ప్రమేయ అర్థంతో కొనసాగించడం (ఎంపిక)','సత్యమూల్యపు లాంబ్డా సంకేతీకరణకు ప్రత్యక్ష స్థానిక సాక్ష్యం ఉందని చెప్పడం (తిరస్కరణ)','బహిష్కార వికల్పాన్ని కనీసం ఒకటి నిజమైన సందర్భంతో కలపడం (తిరస్కరణ)','సంబంధపు స్థానం n/k అసమానతను దాచడం (తిరస్కరణ)'];
 alternatives['TE-T096']=['TE-T064, TE-T079, TE-T094లోని ఆదిమ పునరావృత్తి, సంయుక్తం, క్రమయుగ్మం రూపాలను ఈ దశ-స్థితి నిర్మాణంలో నిలపడం (ఎంపిక)','దశ ప్రమేయం g బదులు n+1-స్థానిక hనే n+2 ఆర్గ్యుమెంట్లకు ప్రయోగించడం (తిరస్కరణ)','స్థానిక పేజీలు చర్చ్ పునరావర్తక లాంబ్డా పదాన్ని నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ)','ఆగమన స్థితిలో సూచిక, విలువ అవయవాల క్రమాన్ని మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T097']=['పూర్వ క్రమగుణిత ప్రమేయం, స్థిరబిందువు, సంయోజకం, బీటా-తుల్యత, నియత రూపం వాడుకను మూల ట్యూరింగ్/చర్చ్ తగ్గింపుల భేదంతో కొనసాగించడం (ఎంపిక)','ఒకే సంఖ్యాప్రమేయాన్ని సూచించడం నుంచి పదాల బీటా-తుల్యతను తేల్చడం (తిరస్కరణ)','చర్చ్, ట్యూరింగ్ సంయోజకాల్లో ఏది ముందుకు తగ్గుతుందో కలపడం (తిరస్కరణ)','స్థానిక సాధారణ పేజీలు లాంబ్డా స్థిరబిందు సిద్ధాంతాన్ని నేరుగా బోధిస్తాయని చెప్పడం (తిరస్కరణ)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -518,7 +528,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T096 record the Batch 025--Batch 055 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T097 record the Batch 025--Batch 056 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -789,6 +799,11 @@ const correctionQuestions={
   ,'OLTELAMLDFTVR-001':'సంబంధపు రెండు ప్రయోగాల్లో k ఆర్గ్యుమెంట్లు ఉండగా ప్రకటించిన ఘాతం మాత్రమే Nat^kగా మార్చి, ఆ స్థాన సవరణను స్పష్టంగా చెప్పామా?'
   ,'OLTELAMLDFPRF-001':'సంయుక్త లెమ్మాలో k ప్రతినిధి పదాలకు G_0 నుంచి G_{k-1} వరకు మాత్రమే పేర్లు ఇచ్చి, H పదం h ప్రమేయాన్ని సూచిస్తుందని స్పష్టంగా చెప్పామా?'
   ,'OLTELAMLDFPRF-002':'ఆదిమ పునరావృత్తి దశలో బయట gను వాడి, Gతో నిర్మించిన స్థితి-నవీకరణ, ఆగమన నిర్ధారణకు దాని స్థానసంఖ్య సరిపోతుందా?'
+  ,'OLTELAMLDFPIX-001':'ముందరి ప్రత్యామ్నాయ గుణకార సవరణకు అనుగుణంగా Addకు b ఇవ్వడం, చర్చ్ శూన్యాన్ని వాడటం ఇక్కడి ఉదాహరణకు సరిపోతుందా?'
+  ,'OLTELAMLDFPIX-002':'స్వీయ-ప్రతిస్థాపన తర్వాత గుణకార శాఖ బయటి లాంబ్డా శరీరంలోనే ఉండగా లోపలి Fac స్వీయ సూచన మిగిలిందా?'
+  ,'OLTELAMLDFPIX-003':'ఒకే సంఖ్యాప్రమేయాన్ని సూచించడాన్ని పదాల బీటా-తుల్యతతో కలపకుండా స్థిరబిందు సమీకరణాన్ని ప్రత్యేకంగా చెప్పామా?'
+  ,'OLTELAMLDFPIX-004':'Yg=(UU)gలో లోపలి UU మాత్రమే రెడెక్స్ అని, మొత్తం పదంలో అది ఉందని వాక్యం స్పష్టంగా చెబుతుందా?'
+  ,'OLTELAMLDFPIX-005':'చర్చ్ సంయోజకం బీటా-తుల్యతను మాత్రమే ఇస్తుందనే పోలికలో Y_Cను వాడి, ట్యూరింగ్ Y ముందుకు తగ్గుతుందనే సిద్ధాంతాన్ని నిలిపామా?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

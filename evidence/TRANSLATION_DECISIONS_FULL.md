@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **378 of 722 source units drafted**. This readable view contains all 442 decisions and 837 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **379 of 722 source units drafted**. This readable view contains all 448 decisions and 849 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2815,6 +2815,38 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T096-OCC-006; OLP-0378; OLP-0378-B014; source upstream/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:75-89 bytes 2480-3241 SHA-256 dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d; target translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:83-99 bytes 5920-7566 SHA-256 7b0242dfb2b4538e1eadf19091e38bc174954a6c20bb826c9816f385c7559e3e; reader page pending.
   - te-Telu-IN-TE-T096-OCC-007; OLP-0378; OLP-0378-B015; source upstream/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:91-94 bytes 3242-3513 SHA-256 dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d; target translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:101-105 bytes 7567-7956 SHA-256 7b0242dfb2b4538e1eadf19091e38bc174954a6c20bb826c9816f385c7559e3e; reader page pending.
   - te-Telu-IN-TE-T096-OCC-008; OLP-0378; OLP-0378-B020; source upstream/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:145-149 bytes 5583-5818 SHA-256 dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d; target translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:158-164 bytes 10628-11183 SHA-256 7b0242dfb2b4538e1eadf19091e38bc174954a6c20bb826c9816f385c7559e3e; reader page pending.
+
+## te-Telu-IN-TE-T097 — factorial / recursive self-reference / fixpoint / Y-combinator / beta-equivalence / normal form
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: క్రమగుణిత ప్రమేయం / పునరావృత్త స్వీయ-సూచన / స్థిరబిందువు / Y-సంయోజకం / బీటా-తుల్యత / నియత రూపం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “factorial / recursive self-reference / fixpoint / Y-combinator / beta-equivalence / normal form” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: సాధారణ ప్రమేయం, అంకగణిత/నిరూపణ శైలికి స్థానిక ఆధారం ఉంది. క్రమగుణిత, లాంబ్డా స్థిరబిందు నామకరణానికి ఈ పేజీల్లో ప్రత్యక్ష సాక్ష్యం లేదు; మూల నిర్వచనాలు, పూర్వ స్థిర తెలుగు వాడుక ఆధారంగా తాత్కాలిక ఎంపిక.
+
+- Rationale: TE-P005లో సహజ సంఖ్యల అంకగణిత గద్యం, TE-P011లో ప్రమేయం/సంయుక్తం, TE-P032లో తర్క నిరూపణ గద్యాన్ని ప్రత్యక్షంగా చూశాం. ఇవి క్రమగుణితపు స్థానిక పదాన్ని గానీ లాంబ్డా స్థిరబిందు సంయోజకపు ప్రత్యేక సిద్ధాంతాన్ని గానీ నేరుగా స్థాపించవు. క్రమగుణిత ప్రమేయం OLP-0230 పూర్వ లక్ష్య వాడుక; స్థిరబిందువు, సంయోజకం, బీటా-తుల్యత TE-T067, TE-T074, TE-T079 మరియు OLP-0354 పదజాలం. OLP-0379 ట్యూరింగ్/చర్చ్ సూత్రాలు, OLTELAMLDFPIX-001–005 ప్రకటిత సవరణలే ప్రత్యేక భావాన్ని నియంత్రిస్తాయి. లాంబ్డా, బీటా ప్రత్యేక గణిత బదిలీ; ట్యూరింగ్, చర్చ్ మూల వ్యక్తి పేర్లు; Y, Y_C, U, V, Fac, IsZero, Pred, Mult, Add గుర్తింపులుగా యథాతథం.
+
+- Authorities checked: TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: పూర్వ క్రమగుణిత ప్రమేయం, స్థిరబిందువు, సంయోజకం, బీటా-తుల్యత, నియత రూపం వాడుకను మూల ట్యూరింగ్/చర్చ్ తగ్గింపుల భేదంతో కొనసాగించడం [viable_alternative: ఎంపిక] | ఒకే సంఖ్యాప్రమేయాన్ని సూచించడం నుంచి పదాల బీటా-తుల్యతను తేల్చడం [viable_alternative: తిరస్కరణ] | చర్చ్, ట్యూరింగ్ సంయోజకాల్లో ఏది ముందుకు తగ్గుతుందో కలపడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ పేజీలు లాంబ్డా స్థిరబిందు సిద్ధాంతాన్ని నేరుగా బోధిస్తాయని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “క్రమగుణిత ప్రమేయం / పునరావృత్త స్వీయ-సూచన / స్థిరబిందువు / Y-సంయోజకం / బీటా-తుల్యత / నియత రూపం” is idiomatic and technically standard for “factorial / recursive self-reference / fixpoint / Y-combinator / beta-equivalence / normal form” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T097-OCC-001; OLP-0379; OLP-0379-B005; source upstream/content/lambda-calculus/lambda-definability/fixpoints.tex:11 bytes 183-205 SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93; target translation/content/lambda-calculus/lambda-definability/fixpoints.tex:11 bytes 183-238 SHA-256 35bbd9b20c01d829c8a95f6d0836f48e7bb402cc7bfc30add5c2cb82a4751f51; reader page pending.
+  - te-Telu-IN-TE-T097-OCC-002; OLP-0379; OLP-0379-B006; source upstream/content/lambda-calculus/lambda-definability/fixpoints.tex:13-31 bytes 206-1163 SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93; target translation/content/lambda-calculus/lambda-definability/fixpoints.tex:13-33 bytes 239-2724 SHA-256 35bbd9b20c01d829c8a95f6d0836f48e7bb402cc7bfc30add5c2cb82a4751f51; reader page pending.
+  - te-Telu-IN-TE-T097-OCC-003; OLP-0379; OLP-0379-B006; source upstream/content/lambda-calculus/lambda-definability/fixpoints.tex:13-31 bytes 206-1163 SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93; target translation/content/lambda-calculus/lambda-definability/fixpoints.tex:13-33 bytes 239-2724 SHA-256 35bbd9b20c01d829c8a95f6d0836f48e7bb402cc7bfc30add5c2cb82a4751f51; reader page pending.
+  - te-Telu-IN-TE-T097-OCC-004; OLP-0379; OLP-0379-B008; source upstream/content/lambda-calculus/lambda-definability/fixpoints.tex:48-59 bytes 1893-2550 SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93; target translation/content/lambda-calculus/lambda-definability/fixpoints.tex:51-65 bytes 4634-7061 SHA-256 35bbd9b20c01d829c8a95f6d0836f48e7bb402cc7bfc30add5c2cb82a4751f51; reader page pending.
+  - te-Telu-IN-TE-T097-OCC-005; OLP-0379; OLP-0379-B010; source upstream/content/lambda-calculus/lambda-definability/fixpoints.tex:65-71 bytes 2739-2891 SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93; target translation/content/lambda-calculus/lambda-definability/fixpoints.tex:71-77 bytes 7449-7610 SHA-256 35bbd9b20c01d829c8a95f6d0836f48e7bb402cc7bfc30add5c2cb82a4751f51; reader page pending.
+  - te-Telu-IN-TE-T097-OCC-006; OLP-0379; OLP-0379-B014; source upstream/content/lambda-calculus/lambda-definability/fixpoints.tex:102-107 bytes 3835-4197 SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93; target translation/content/lambda-calculus/lambda-definability/fixpoints.tex:113-118 bytes 9872-10484 SHA-256 35bbd9b20c01d829c8a95f6d0836f48e7bb402cc7bfc30add5c2cb82a4751f51; reader page pending.
+  - te-Telu-IN-TE-T097-OCC-007; OLP-0379; OLP-0379-B017; source upstream/content/lambda-calculus/lambda-definability/fixpoints.tex:157-173 bytes 6149-6904 SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93; target translation/content/lambda-calculus/lambda-definability/fixpoints.tex:169-190 bytes 13002-14881 SHA-256 35bbd9b20c01d829c8a95f6d0836f48e7bb402cc7bfc30add5c2cb82a4751f51; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -11890,3 +11922,133 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTELAMLDFPRF-002-OCC-001; OLP-0378; OLP-0378-B013; source upstream/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:64-73 bytes 2019-2479 SHA-256 dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d; target translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:77 bytes 4685-5374 SHA-256 7b0242dfb2b4538e1eadf19091e38bc174954a6c20bb826c9816f385c7559e3e; reader page pending.
+
+## te-Telu-IN-OLTELAMLDFPIX-001 — OLTELAMLDFPIX-001: multiplication example ignores second argument and uses raw zero
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: ఇక్కడి ఉదాహరణలో కూడా $b$, $\num{0}$ను వాడి, ముందరి సవరణతో అనుసంధానాన్ని పక్కనే ప్రకటించాలి.
+
+- Intended sense: Repair the audited multiplication example ignores second argument and uses raw zero at fixpoints.tex lines 22-30, especially line 24; compare arithmetical-functions.tex lines 115-123, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMLDFPIX-20260926:OLTELAMLDFPIX-001 [checked_supports], content/lambda-calculus/lambda-definability/fixpoints.tex; fixpoints.tex lines 22-30, especially line 24; compare arithmetical-functions.tex lines 115-123; multiplication_example_ignores_second_argument_and_uses_raw_zero; ఇక్కడి ఉదాహరణలో కూడా $b$, $\num{0}$ను వాడి, ముందరి సవరణతో అనుసంధానాన్ని పక్కనే ప్రకటించాలి..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: ముందరి ప్రత్యామ్నాయ గుణకార సవరణకు అనుగుణంగా Addకు b ఇవ్వడం, చర్చ్ శూన్యాన్ని వాడటం ఇక్కడి ఉదాహరణకు సరిపోతుందా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMLDFPIX-001-OCC-001; OLP-0379; OLP-0379-B006; source upstream/content/lambda-calculus/lambda-definability/fixpoints.tex:13-31 bytes 206-1163 SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93; target translation/content/lambda-calculus/lambda-definability/fixpoints.tex:28 bytes 1523-2097 SHA-256 35bbd9b20c01d829c8a95f6d0836f48e7bb402cc7bfc30add5c2cb82a4751f51; reader page pending.
+
+## te-Telu-IN-OLTELAMLDFPIX-002 — OLTELAMLDFPIX-002: recursive self substitution branch outside lambda body
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: బయటి లాంబ్డా బంధాన్ని రెండు పంక్తుల గణిత అమరికంతా వర్తించే $\lambd[n].$ రూపంలో చూపి, గుణకార శాఖను తిరిగి అదే శరీరంలో ఉంచాలి; లోపలి స్వీయ సూచనను ఉంచి పక్కనే ప్రకటించాలి.
+
+- Intended sense: Repair the audited recursive self substitution branch outside lambda body at fixpoints.tex lines 33-41, especially lines 37-40, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMLDFPIX-20260926:OLTELAMLDFPIX-002 [checked_supports], content/lambda-calculus/lambda-definability/fixpoints.tex; fixpoints.tex lines 33-41, especially lines 37-40; recursive_self_substitution_branch_outside_lambda_body; బయటి లాంబ్డా బంధాన్ని రెండు పంక్తుల గణిత అమరికంతా వర్తించే $\lambd[n].$ రూపంలో చూపి, గుణకార శాఖను తిరిగి అదే శరీరంలో ఉంచాలి; లోపలి స్వీయ సూచనను ఉంచి పక్కనే ప్రకటించాలి..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: స్వీయ-ప్రతిస్థాపన తర్వాత గుణకార శాఖ బయటి లాంబ్డా శరీరంలోనే ఉండగా లోపలి Fac స్వీయ సూచన మిగిలిందా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMLDFPIX-002-OCC-001; OLP-0379; OLP-0379-B007; source upstream/content/lambda-calculus/lambda-definability/fixpoints.tex:33-46 bytes 1164-1892 SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93; target translation/content/lambda-calculus/lambda-definability/fixpoints.tex:44 bytes 3263-4022 SHA-256 35bbd9b20c01d829c8a95f6d0836f48e7bb402cc7bfc30add5c2cb82a4751f51; reader page pending.
+
+## te-Telu-IN-OLTELAMLDFPIX-003 — OLTELAMLDFPIX-003: numerical function representation confused with beta equivalence
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: సంఖ్యాంకాలపై ఒకే ప్రమేయాన్ని సూచించడాన్ని, పదాల $\beta$-తుల్యత అనే అదనపు షరతును వేరుచెప్పాలి; స్థిరబిందువు గురించి ముందస్తు అతివ్యాప్తి చేయకుండా పక్కనే వివరణ ఇవ్వాలి.
+
+- Intended sense: Repair the audited numerical function representation confused with beta equivalence at fixpoints.tex lines 48-59, especially lines 53-58, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMLDFPIX-20260926:OLTELAMLDFPIX-003 [checked_supports], content/lambda-calculus/lambda-definability/fixpoints.tex; fixpoints.tex lines 48-59, especially lines 53-58; numerical_function_representation_confused_with_beta_equivalence; సంఖ్యాంకాలపై ఒకే ప్రమేయాన్ని సూచించడాన్ని, పదాల $\beta$-తుల్యత అనే అదనపు షరతును వేరుచెప్పాలి; స్థిరబిందువు గురించి ముందస్తు అతివ్యాప్తి చేయకుండా పక్కనే వివరణ ఇవ్వాలి..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: ఒకే సంఖ్యాప్రమేయాన్ని సూచించడాన్ని పదాల బీటా-తుల్యతతో కలపకుండా స్థిరబిందు సమీకరణాన్ని ప్రత్యేకంగా చెప్పామా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMLDFPIX-003-OCC-001; OLP-0379; OLP-0379-B008; source upstream/content/lambda-calculus/lambda-definability/fixpoints.tex:48-59 bytes 1893-2550 SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93; target translation/content/lambda-calculus/lambda-definability/fixpoints.tex:62 bytes 5804-6693 SHA-256 35bbd9b20c01d829c8a95f6d0836f48e7bb402cc7bfc30add5c2cb82a4751f51; reader page pending.
+
+## te-Telu-IN-OLTELAMLDFPIX-004 — OLTELAMLDFPIX-004: whole Yg application called redex instead of containing one
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: $Yg$లో రెడెక్స్ ఉందని మాత్రమే మార్చి, కింది తగ్గింపు క్రమాన్ని నిలిపి పక్కనే ప్రకటించాలి.
+
+- Intended sense: Repair the audited whole Yg application called redex instead of containing one at fixpoints.tex lines 89-96, especially line 89, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMLDFPIX-20260926:OLTELAMLDFPIX-004 [checked_supports], content/lambda-calculus/lambda-definability/fixpoints.tex; fixpoints.tex lines 89-96, especially line 89; whole_Yg_application_called_redex_instead_of_containing_one; $Yg$లో రెడెక్స్ ఉందని మాత్రమే మార్చి, కింది తగ్గింపు క్రమాన్ని నిలిపి పక్కనే ప్రకటించాలి..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Yg=(UU)gలో లోపలి UU మాత్రమే రెడెక్స్ అని, మొత్తం పదంలో అది ఉందని వాక్యం స్పష్టంగా చెబుతుందా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMLDFPIX-004-OCC-001; OLP-0379; OLP-0379-B013; source upstream/content/lambda-calculus/lambda-definability/fixpoints.tex:89-100 bytes 3372-3834 SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93; target translation/content/lambda-calculus/lambda-definability/fixpoints.tex:99 bytes 8534-9091 SHA-256 35bbd9b20c01d829c8a95f6d0836f48e7bb402cc7bfc30add5c2cb82a4751f51; reader page pending.
+
+## te-Telu-IN-OLTELAMLDFPIX-005 — OLTELAMLDFPIX-005: Church combinator comparison uses Turing symbol
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: ఆ రెండు పోలికలలో మాత్రమే $Y_Cg$, $g(Y_Cg)$ను పునరుద్ధరించి పక్కనే సవరణను ప్రకటించాలి.
+
+- Intended sense: Repair the audited Church combinator comparison uses Turing symbol at fixpoints.tex lines 158-174, especially lines 163-164, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMLDFPIX-20260926:OLTELAMLDFPIX-005 [checked_supports], content/lambda-calculus/lambda-definability/fixpoints.tex; fixpoints.tex lines 158-174, especially lines 163-164; Church_combinator_comparison_uses_Turing_symbol; ఆ రెండు పోలికలలో మాత్రమే $Y_Cg$, $g(Y_Cg)$ను పునరుద్ధరించి పక్కనే సవరణను ప్రకటించాలి..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: చర్చ్ సంయోజకం బీటా-తుల్యతను మాత్రమే ఇస్తుందనే పోలికలో Y_Cను వాడి, ట్యూరింగ్ Y ముందుకు తగ్గుతుందనే సిద్ధాంతాన్ని నిలిపామా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMLDFPIX-005-OCC-001; OLP-0379; OLP-0379-B017; source upstream/content/lambda-calculus/lambda-definability/fixpoints.tex:157-173 bytes 6149-6904 SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93; target translation/content/lambda-calculus/lambda-definability/fixpoints.tex:178 bytes 13608-14245 SHA-256 35bbd9b20c01d829c8a95f6d0836f48e7bb402cc7bfc30add5c2cb82a4751f51; reader page pending.

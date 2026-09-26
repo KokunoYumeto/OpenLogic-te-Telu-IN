@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 378 of 722 draft units**. This view selects 399 of 442 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 379 of 722 draft units**. This view selects 404 of 448 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -3993,3 +3993,53 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0378; lambda-calculus/lambda-definability/primitive-recursive-functions; translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:77; printed/PDF page pending
 
 - Please double-check: Please double-check: ఆదిమ పునరావృత్తి దశలో బయట gను వాడి, Gతో నిర్మించిన స్థితి-నవీకరణ, ఆగమన నిర్ధారణకు దాని స్థానసంఖ్య సరిపోతుందా?
+
+## REV-OLTELAMLDFPIX-001 — OLTELAMLDFPIX-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఇక్కడి ఉదాహరణలో కూడా $b$, $\num{0}$ను వాడి, ముందరి సవరణతో అనుసంధానాన్ని పక్కనే ప్రకటించాలి.
+
+- Occurrences: OLP-0379; lambda-calculus/lambda-definability/fixpoints; translation/content/lambda-calculus/lambda-definability/fixpoints.tex:28; printed/PDF page pending
+
+- Please double-check: Please double-check: ముందరి ప్రత్యామ్నాయ గుణకార సవరణకు అనుగుణంగా Addకు b ఇవ్వడం, చర్చ్ శూన్యాన్ని వాడటం ఇక్కడి ఉదాహరణకు సరిపోతుందా?
+
+## REV-OLTELAMLDFPIX-002 — OLTELAMLDFPIX-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: బయటి లాంబ్డా బంధాన్ని రెండు పంక్తుల గణిత అమరికంతా వర్తించే $\lambd[n].$ రూపంలో చూపి, గుణకార శాఖను తిరిగి అదే శరీరంలో ఉంచాలి; లోపలి స్వీయ సూచనను ఉంచి పక్కనే ప్రకటించాలి.
+
+- Occurrences: OLP-0379; lambda-calculus/lambda-definability/fixpoints; translation/content/lambda-calculus/lambda-definability/fixpoints.tex:44; printed/PDF page pending
+
+- Please double-check: Please double-check: స్వీయ-ప్రతిస్థాపన తర్వాత గుణకార శాఖ బయటి లాంబ్డా శరీరంలోనే ఉండగా లోపలి Fac స్వీయ సూచన మిగిలిందా?
+
+## REV-OLTELAMLDFPIX-003 — OLTELAMLDFPIX-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సంఖ్యాంకాలపై ఒకే ప్రమేయాన్ని సూచించడాన్ని, పదాల $\beta$-తుల్యత అనే అదనపు షరతును వేరుచెప్పాలి; స్థిరబిందువు గురించి ముందస్తు అతివ్యాప్తి చేయకుండా పక్కనే వివరణ ఇవ్వాలి.
+
+- Occurrences: OLP-0379; lambda-calculus/lambda-definability/fixpoints; translation/content/lambda-calculus/lambda-definability/fixpoints.tex:62; printed/PDF page pending
+
+- Please double-check: Please double-check: ఒకే సంఖ్యాప్రమేయాన్ని సూచించడాన్ని పదాల బీటా-తుల్యతతో కలపకుండా స్థిరబిందు సమీకరణాన్ని ప్రత్యేకంగా చెప్పామా?
+
+## REV-OLTELAMLDFPIX-004 — OLTELAMLDFPIX-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: $Yg$లో రెడెక్స్ ఉందని మాత్రమే మార్చి, కింది తగ్గింపు క్రమాన్ని నిలిపి పక్కనే ప్రకటించాలి.
+
+- Occurrences: OLP-0379; lambda-calculus/lambda-definability/fixpoints; translation/content/lambda-calculus/lambda-definability/fixpoints.tex:99; printed/PDF page pending
+
+- Please double-check: Please double-check: Yg=(UU)gలో లోపలి UU మాత్రమే రెడెక్స్ అని, మొత్తం పదంలో అది ఉందని వాక్యం స్పష్టంగా చెబుతుందా?
+
+## REV-OLTELAMLDFPIX-005 — OLTELAMLDFPIX-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఆ రెండు పోలికలలో మాత్రమే $Y_Cg$, $g(Y_Cg)$ను పునరుద్ధరించి పక్కనే సవరణను ప్రకటించాలి.
+
+- Occurrences: OLP-0379; lambda-calculus/lambda-definability/fixpoints; translation/content/lambda-calculus/lambda-definability/fixpoints.tex:178; printed/PDF page pending
+
+- Please double-check: Please double-check: చర్చ్ సంయోజకం బీటా-తుల్యతను మాత్రమే ఇస్తుందనే పోలికలో Y_Cను వాడి, ట్యూరింగ్ Y ముందుకు తగ్గుతుందనే సిద్ధాంతాన్ని నిలిపామా?

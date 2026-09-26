@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 378 of 722 draft units**. This log contains 96 terminology/sense decisions and 346 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 379 of 722 draft units**. This log contains 97 terminology/sense decisions and 351 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2311,6 +2311,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: ప్రమేయం, సంయుక్తం, క్రమయుగ్మం సాధారణ రూపాలకు స్థానిక ఆధారం ఉంది; ఆదిమ పునరావృత్తి లాంబ్డా నిర్మాణానికి ప్రత్యక్ష స్థానిక సాక్ష్యం లేదు. n-స్థానిక, n+2-స్థానిక ప్రమేయాల వాదన మూల గణిత అర్థం ప్రకారం నిలిచింది.
 
 - Please double-check: Please double-check whether “ఆదిమ పునరావృత్త ప్రమేయం / సంయుక్తం / ప్రక్షేప ప్రమేయం / ఆదిమ పునరావృత్తి / లాంబ్డాతో నిర్వచించదగిన ప్రమేయాల సంవృతత్వం” is idiomatic and technically standard for “primitive recursive function / composition / projection / primitive recursion / lambda-definable closure” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T097 — factorial / recursive self-reference / fixpoint / Y-combinator / beta-equivalence / normal form
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: క్రమగుణిత ప్రమేయం / పునరావృత్త స్వీయ-సూచన / స్థిరబిందువు / Y-సంయోజకం / బీటా-తుల్యత / నియత రూపం
+
+- Exact implementation: OLP-0379; lambda-calculus/lambda-definability/fixpoints; content/lambda-calculus/lambda-definability/fixpoints.tex:11 ↔ translation/content/lambda-calculus/lambda-definability/fixpoints.tex:11 (OLP-0379-B005); printed/PDF page pending; OLP-0379; lambda-calculus/lambda-definability/fixpoints; content/lambda-calculus/lambda-definability/fixpoints.tex:13-31 ↔ translation/content/lambda-calculus/lambda-definability/fixpoints.tex:13-33 (OLP-0379-B006); printed/PDF page pending; OLP-0379; lambda-calculus/lambda-definability/fixpoints; content/lambda-calculus/lambda-definability/fixpoints.tex:13-31 ↔ translation/content/lambda-calculus/lambda-definability/fixpoints.tex:13-33 (OLP-0379-B006); printed/PDF page pending; OLP-0379; lambda-calculus/lambda-definability/fixpoints; content/lambda-calculus/lambda-definability/fixpoints.tex:48-59 ↔ translation/content/lambda-calculus/lambda-definability/fixpoints.tex:51-65 (OLP-0379-B008); printed/PDF page pending; OLP-0379; lambda-calculus/lambda-definability/fixpoints; content/lambda-calculus/lambda-definability/fixpoints.tex:65-71 ↔ translation/content/lambda-calculus/lambda-definability/fixpoints.tex:71-77 (OLP-0379-B010); printed/PDF page pending; OLP-0379; lambda-calculus/lambda-definability/fixpoints; content/lambda-calculus/lambda-definability/fixpoints.tex:102-107 ↔ translation/content/lambda-calculus/lambda-definability/fixpoints.tex:113-118 (OLP-0379-B014); printed/PDF page pending; OLP-0379; lambda-calculus/lambda-definability/fixpoints; content/lambda-calculus/lambda-definability/fixpoints.tex:157-173 ↔ translation/content/lambda-calculus/lambda-definability/fixpoints.tex:169-190 (OLP-0379-B017); printed/PDF page pending
+
+- Authorities actually checked: TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P005లో సహజ సంఖ్యల అంకగణిత గద్యం, TE-P011లో ప్రమేయం/సంయుక్తం, TE-P032లో తర్క నిరూపణ గద్యాన్ని ప్రత్యక్షంగా చూశాం. ఇవి క్రమగుణితపు స్థానిక పదాన్ని గానీ లాంబ్డా స్థిరబిందు సంయోజకపు ప్రత్యేక సిద్ధాంతాన్ని గానీ నేరుగా స్థాపించవు. క్రమగుణిత ప్రమేయం OLP-0230 పూర్వ లక్ష్య వాడుక; స్థిరబిందువు, సంయోజకం, బీటా-తుల్యత TE-T067, TE-T074, TE-T079 మరియు OLP-0354 పదజాలం. OLP-0379 ట్యూరింగ్/చర్చ్ సూత్రాలు, OLTELAMLDFPIX-001–005 ప్రకటిత సవరణలే ప్రత్యేక భావాన్ని నియంత్రిస్తాయి. లాంబ్డా, బీటా ప్రత్యేక గణిత బదిలీ; ట్యూరింగ్, చర్చ్ మూల వ్యక్తి పేర్లు; Y, Y_C, U, V, Fac, IsZero, Pred, Mult, Add గుర్తింపులుగా యథాతథం.
+
+- Alternatives: పూర్వ క్రమగుణిత ప్రమేయం, స్థిరబిందువు, సంయోజకం, బీటా-తుల్యత, నియత రూపం వాడుకను మూల ట్యూరింగ్/చర్చ్ తగ్గింపుల భేదంతో కొనసాగించడం (ఎంపిక); ఒకే సంఖ్యాప్రమేయాన్ని సూచించడం నుంచి పదాల బీటా-తుల్యతను తేల్చడం (తిరస్కరణ); చర్చ్, ట్యూరింగ్ సంయోజకాల్లో ఏది ముందుకు తగ్గుతుందో కలపడం (తిరస్కరణ); స్థానిక సాధారణ పేజీలు లాంబ్డా స్థిరబిందు సిద్ధాంతాన్ని నేరుగా బోధిస్తాయని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: సాధారణ ప్రమేయం, అంకగణిత/నిరూపణ శైలికి స్థానిక ఆధారం ఉంది. క్రమగుణిత, లాంబ్డా స్థిరబిందు నామకరణానికి ఈ పేజీల్లో ప్రత్యక్ష సాక్ష్యం లేదు; మూల నిర్వచనాలు, పూర్వ స్థిర తెలుగు వాడుక ఆధారంగా తాత్కాలిక ఎంపిక.
+
+- Please double-check: Please double-check whether “క్రమగుణిత ప్రమేయం / పునరావృత్త స్వీయ-సూచన / స్థిరబిందువు / Y-సంయోజకం / బీటా-తుల్యత / నియత రూపం” is idiomatic and technically standard for “factorial / recursive self-reference / fixpoint / Y-combinator / beta-equivalence / normal form” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -10615,3 +10639,123 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: ఆదిమ పునరావృత్తి దశలో బయట gను వాడి, Gతో నిర్మించిన స్థితి-నవీకరణ, ఆగమన నిర్ధారణకు దాని స్థానసంఖ్య సరిపోతుందా?
+
+## REV-OLTELAMLDFPIX-001 — OLTELAMLDFPIX-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: ఇక్కడి ఉదాహరణలో కూడా $b$, $\num{0}$ను వాడి, ముందరి సవరణతో అనుసంధానాన్ని పక్కనే ప్రకటించాలి.
+
+- Exact implementation: OLP-0379; lambda-calculus/lambda-definability/fixpoints; fixpoints.tex lines 22-30, especially line 24; compare arithmetical-functions.tex lines 115-123 ↔ translation/content/lambda-calculus/lambda-definability/fixpoints.tex:28 (OLP-0379-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMLDFPIX-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: ఇక్కడి ఉదాహరణలో కూడా $b$, $\num{0}$ను వాడి, ముందరి సవరణతో అనుసంధానాన్ని పక్కనే ప్రకటించాలి.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: ముందరి ప్రత్యామ్నాయ గుణకార సవరణకు అనుగుణంగా Addకు b ఇవ్వడం, చర్చ్ శూన్యాన్ని వాడటం ఇక్కడి ఉదాహరణకు సరిపోతుందా?
+
+## REV-OLTELAMLDFPIX-002 — OLTELAMLDFPIX-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: బయటి లాంబ్డా బంధాన్ని రెండు పంక్తుల గణిత అమరికంతా వర్తించే $\lambd[n].$ రూపంలో చూపి, గుణకార శాఖను తిరిగి అదే శరీరంలో ఉంచాలి; లోపలి స్వీయ సూచనను ఉంచి పక్కనే ప్రకటించాలి.
+
+- Exact implementation: OLP-0379; lambda-calculus/lambda-definability/fixpoints; fixpoints.tex lines 33-41, especially lines 37-40 ↔ translation/content/lambda-calculus/lambda-definability/fixpoints.tex:44 (OLP-0379-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMLDFPIX-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: బయటి లాంబ్డా బంధాన్ని రెండు పంక్తుల గణిత అమరికంతా వర్తించే $\lambd[n].$ రూపంలో చూపి, గుణకార శాఖను తిరిగి అదే శరీరంలో ఉంచాలి; లోపలి స్వీయ సూచనను ఉంచి పక్కనే ప్రకటించాలి.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: స్వీయ-ప్రతిస్థాపన తర్వాత గుణకార శాఖ బయటి లాంబ్డా శరీరంలోనే ఉండగా లోపలి Fac స్వీయ సూచన మిగిలిందా?
+
+## REV-OLTELAMLDFPIX-003 — OLTELAMLDFPIX-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: సంఖ్యాంకాలపై ఒకే ప్రమేయాన్ని సూచించడాన్ని, పదాల $\beta$-తుల్యత అనే అదనపు షరతును వేరుచెప్పాలి; స్థిరబిందువు గురించి ముందస్తు అతివ్యాప్తి చేయకుండా పక్కనే వివరణ ఇవ్వాలి.
+
+- Exact implementation: OLP-0379; lambda-calculus/lambda-definability/fixpoints; fixpoints.tex lines 48-59, especially lines 53-58 ↔ translation/content/lambda-calculus/lambda-definability/fixpoints.tex:62 (OLP-0379-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMLDFPIX-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: సంఖ్యాంకాలపై ఒకే ప్రమేయాన్ని సూచించడాన్ని, పదాల $\beta$-తుల్యత అనే అదనపు షరతును వేరుచెప్పాలి; స్థిరబిందువు గురించి ముందస్తు అతివ్యాప్తి చేయకుండా పక్కనే వివరణ ఇవ్వాలి.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: ఒకే సంఖ్యాప్రమేయాన్ని సూచించడాన్ని పదాల బీటా-తుల్యతతో కలపకుండా స్థిరబిందు సమీకరణాన్ని ప్రత్యేకంగా చెప్పామా?
+
+## REV-OLTELAMLDFPIX-004 — OLTELAMLDFPIX-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: $Yg$లో రెడెక్స్ ఉందని మాత్రమే మార్చి, కింది తగ్గింపు క్రమాన్ని నిలిపి పక్కనే ప్రకటించాలి.
+
+- Exact implementation: OLP-0379; lambda-calculus/lambda-definability/fixpoints; fixpoints.tex lines 89-96, especially line 89 ↔ translation/content/lambda-calculus/lambda-definability/fixpoints.tex:99 (OLP-0379-B013); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMLDFPIX-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: $Yg$లో రెడెక్స్ ఉందని మాత్రమే మార్చి, కింది తగ్గింపు క్రమాన్ని నిలిపి పక్కనే ప్రకటించాలి.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Yg=(UU)gలో లోపలి UU మాత్రమే రెడెక్స్ అని, మొత్తం పదంలో అది ఉందని వాక్యం స్పష్టంగా చెబుతుందా?
+
+## REV-OLTELAMLDFPIX-005 — OLTELAMLDFPIX-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: ఆ రెండు పోలికలలో మాత్రమే $Y_Cg$, $g(Y_Cg)$ను పునరుద్ధరించి పక్కనే సవరణను ప్రకటించాలి.
+
+- Exact implementation: OLP-0379; lambda-calculus/lambda-definability/fixpoints; fixpoints.tex lines 158-174, especially lines 163-164 ↔ translation/content/lambda-calculus/lambda-definability/fixpoints.tex:178 (OLP-0379-B017); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMLDFPIX-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: ఆ రెండు పోలికలలో మాత్రమే $Y_Cg$, $g(Y_Cg)$ను పునరుద్ధరించి పక్కనే సవరణను ప్రకటించాలి.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: చర్చ్ సంయోజకం బీటా-తుల్యతను మాత్రమే ఇస్తుందనే పోలికలో Y_Cను వాడి, ట్యూరింగ్ Y ముందుకు తగ్గుతుందనే సిద్ధాంతాన్ని నిలిపామా?

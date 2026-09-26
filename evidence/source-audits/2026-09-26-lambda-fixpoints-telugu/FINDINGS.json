@@ -1,0 +1,70 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTELAMLDFPIX-20260926",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": ["OLP-0379"],
+    "finding_count": 5
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "source_files": [
+    {
+      "unit_id": "OLP-0379",
+      "path": "content/lambda-calculus/lambda-definability/fixpoints.tex",
+      "bytes": 6921,
+      "sha256": "d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "OLTELAMLDFPIX-001",
+      "unit_id": "OLP-0379",
+      "classification": "multiplication_example_ignores_second_argument_and_uses_raw_zero",
+      "source_locator": "fixpoints.tex lines 22-30, especially line 24; compare arithmetical-functions.tex lines 115-123",
+      "finding": "ముందే నిర్వచించిన పదాలను విప్పే ఉదాహరణలో మూలం $\\lambd[ab][a(\\fn{Add}\\,a)0]$ అని వ్రాసింది. $b$ ఉపయోగించబడదు; చివరి $0$ చర్చ్ శూన్య పదంగా కూడా రాయలేదు.",
+      "controlling_evidence": "ముందరి అంకగణిత విభాగంలో ఇదే ప్రత్యామ్నాయ గుణకార నిర్మాణాన్ని ప్రకటించిన సవరణ OLTELAMLDFARF-003, $\\lambd[ab][a(\\fn{Add}\\,b)\\num{0}]$ను పునరుద్ధరిస్తుంది. $a$ పునరావర్తనలు $b$ను శూన్యానికి కలపాలి; మూల రూపం సాధారణంగా $a^2$ను ఇస్తుంది.",
+      "required_translation_handling": "ఇక్కడి ఉదాహరణలో కూడా $b$, $\\num{0}$ను వాడి, ముందరి సవరణతో అనుసంధానాన్ని పక్కనే ప్రకటించాలి."
+    },
+    {
+      "finding_id": "OLTELAMLDFPIX-002",
+      "unit_id": "OLP-0379",
+      "classification": "recursive_self_substitution_branch_outside_lambda_body",
+      "source_locator": "fixpoints.tex lines 33-41, especially lines 37-40",
+      "finding": "పునరావృత్త $\\fn{Fac}$ స్వీయ-ప్రతిస్థాపనను చూపే రెండు పంక్తుల సూత్రం మొదటి పంక్తిలో $\\lambd[n][\\fn{IsZero}\\,n\\,\\num{1}]$ వద్ద లాంబ్డా పదాన్ని ముగిస్తుంది; శూన్యం కాని సందర్భపు గుణకార శాఖ తరువాత దాని వెలుపల పడుతుంది.",
+      "controlling_evidence": "15–16 పంక్తుల ఉద్దేశిత షరతులో $\\fn{IsZero}$కు శూన్య, శూన్యం కాని రెండు శాఖలు ఒకే లాంబ్డా శరీరంలో ఉన్నాయి. కుడి శాఖలోని $\\fn{Fac}(\\fn{Pred}n)$ను ఆ నిర్వచన పదంతో భర్తీ చేసిన తరువాత కూడా మొత్తం $\\fn{Mult}$ శాఖ అదే శరీరంలో ఉండాలి; లోపలి $\\fn{Fac}$ మాత్రం మిగులుతుంది.",
+      "required_translation_handling": "బయటి లాంబ్డా బంధాన్ని రెండు పంక్తుల గణిత అమరికంతా వర్తించే $\\lambd[n].$ రూపంలో చూపి, గుణకార శాఖను తిరిగి అదే శరీరంలో ఉంచాలి; లోపలి స్వీయ సూచనను ఉంచి పక్కనే ప్రకటించాలి."
+    },
+    {
+      "finding_id": "OLTELAMLDFPIX-003",
+      "unit_id": "OLP-0379",
+      "classification": "numerical_function_representation_confused_with_beta_equivalence",
+      "source_locator": "fixpoints.tex lines 48-59, especially lines 53-58",
+      "finding": "క్రమగుణితాన్ని సూచించే ఏ పదం $f$ అయినా $\\fn{Fac}'f$ అదే సంఖ్యా ప్రమేయాన్ని సూచిస్తుంది; కానీ మూలం అక్కడినుంచి పదం విలువ $f$నేనని, క్రమగుణితమే $\\beta$-స్థిరబిందువు అని తేల్చింది.",
+      "controlling_evidence": "సంఖ్యాంక ఇన్‌పుట్లపై సమాన ఫలితాలు రావడం అనేది పదాల $\\beta$-తుల్యత కంటే బలహీనమైనది. మూలం వెంటనే స్థిరబిందువును ప్రత్యేకంగా $\\fn{Fac}'f\\equal[\\beta]f$ ద్వారా నిర్వచిస్తుంది; తరువాతి $Y$-సిద్ధాంతం అలాంటి పదాన్ని నిర్మిస్తుంది. ప్రాతినిధ్యం ఒక్కటే ఆ సమీకరణాన్ని ఇవ్వదు.",
+      "required_translation_handling": "సంఖ్యాంకాలపై ఒకే ప్రమేయాన్ని సూచించడాన్ని, పదాల $\\beta$-తుల్యత అనే అదనపు షరతును వేరుచెప్పాలి; స్థిరబిందువు గురించి ముందస్తు అతివ్యాప్తి చేయకుండా పక్కనే వివరణ ఇవ్వాలి."
+    },
+    {
+      "finding_id": "OLTELAMLDFPIX-004",
+      "unit_id": "OLP-0379",
+      "classification": "whole_Yg_application_called_redex_instead_of_containing_one",
+      "source_locator": "fixpoints.tex lines 89-96, especially line 89",
+      "finding": "మూలం $Yg$ స్వయంగా రెడెక్స్ అని చెబుతుంది. $Y=UU$ నిర్వచనాన్ని విస్తరిస్తే $(UU)g$లో బయట ప్రయోగం రెడెక్స్ కాదు; లోపలి $UU$ రెడెక్స్.",
+      "controlling_evidence": "78–84 పంక్తుల నిరూపణలో మొదటి తగ్గింపు $UU$ అనే ఎడమ ఉపపదాన్నే సంకోచిస్తుంది. తరువాతి అనంత తగ్గింపు క్రమం నిలుస్తుంది; మొత్తం పదంలో రెడెక్స్ ఉందని చెప్పడం ఖచ్చితం.",
+      "required_translation_handling": "$Yg$లో రెడెక్స్ ఉందని మాత్రమే మార్చి, కింది తగ్గింపు క్రమాన్ని నిలిపి పక్కనే ప్రకటించాలి."
+    },
+    {
+      "finding_id": "OLTELAMLDFPIX-005",
+      "unit_id": "OLP-0379",
+      "classification": "Church_combinator_comparison_uses_Turing_symbol",
+      "source_locator": "fixpoints.tex lines 158-174, especially lines 163-164",
+      "finding": "చర్చ్ $Y_C$ సంయోజకం ట్యూరింగ్ $Y$ కంటే బలహీనమని వివరిస్తూ మూలం రెండు పోలికల్లోనూ $Yg$ అని వ్రాసింది. ముందరి సిద్ధాంతం మాత్రం $Yg\\red g(Yg)$ను నిరూపించింది.",
+      "controlling_evidence": "165–174 పంక్తుల తదుపరి నిర్మాణం $Y_Cg$, $g(Y_Cg)$లను రెండూ $g(VV)$కు తగ్గించి $\\beta$-తుల్యతను చూపుతుంది; ముందుకు తగ్గింపు రూపం $g(Y_Cg)$కు రాదని చెబుతుంది. కాబట్టి పోలికలో కావలసింది $Y_C$.",
+      "required_translation_handling": "ఆ రెండు పోలికలలో మాత్రమే $Y_Cg$, $g(Y_Cg)$ను పునరుద్ధరించి పక్కనే సవరణను ప్రకటించాలి."
+    }
+  ]
+}
