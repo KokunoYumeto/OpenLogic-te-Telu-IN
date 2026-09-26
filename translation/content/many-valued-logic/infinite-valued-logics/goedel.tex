@@ -1,0 +1,158 @@
+% Part: many-valued-logic
+% Chapter: infinite-valued-logics
+% Section: goedel
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{inf}{god}
+
+\olsection{గోడెల్ తర్కాలు}
+
+\begin{editorial}
+  ఇది అనంత-విలువల గోడెల్ తర్కంపై
+  సంక్షిప్త ప్రాథమిక విభాగం మాత్రమే.
+\end{editorial}
+
+\begin{defn}\ollabel{def:goedel}
+అనంత-విలువల గోడెల్
+తర్కం~$\LogGod[\infty]$ను కింది మాత్రికతో
+నిర్వచిస్తాం:
+\begin{enumerate}
+  \item $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$
+  సంయోజకాలు గల ప్రామాణిక ప్రతిజ్ఞావాక్య
+  భాష $\Lang L_0$.
+  \item సత్యమూల్యాల సమితి $V_\infty$.
+  \item $1$ మాత్రమే నిర్దేశిత విలువ; అంటే
+  $V^+ = \{1\}$.
+  \item సత్యమూల్య ప్రమేయాలను కింది
+  ప్రమేయాలు ఇస్తాయి:
+  \begin{align*}
+    \tf{\lfalse} & = 0\\
+    \tf{\lnot}[\LogGod](x) & = \begin{cases}
+      1 & \text{ఒకవేళ } x =0\\
+      0 & \text{లేకపోతే}
+    \end{cases}\\
+    \tf{\land}[\LogGod](x,y) & = \min(x,y)\\
+    \tf{\lor}[\LogGod](x,y) & = \max(x,y)\\
+    \tf{\lif}[\LogGod](x,y) & = \begin{cases}
+      1 & \text{ఒకవేళ } x \le y\\
+      y & \text{లేకపోతే.}
+    \end{cases}
+    \end{align*}
+\end{enumerate}
+$V = V_m$ తీసుకోవడం మినహా $m$-విలువల
+గోడెల్ తర్కాన్ని ఇదే విధంగా నిర్వచిస్తాం.
+\sourcecorrection{OLTEMVLINF-004}{ఆంగ్ల మూలంలో
+నిషేధపు సందర్భాల ఫలితాల చుట్టూ, ఇప్పటికే
+గణిత స్థితిలో ఉన్న చోట, అదనపు డాలర్
+గుర్తులు ఉన్నాయి. గణిత విలువలు మారకుండా
+ఆ అంతర్గత గుర్తులను మాత్రమే తొలగించాం.}
+\end{defn}
+
+\begin{prop}
+  \olref[thr][god]{defn:goedel}లో
+  నిర్వచించిన $\LogGod[3]$ తర్కమే
+  \olref{def:goedel}లో
+  నిర్వచించిన $\LogGod[3]$ తర్కం.
+\end{prop}
+
+\begin{proof}
+  \olref[thr][god]{defn:goedel}లో
+  ఇచ్చిన సంయోజకాల సత్య పట్టికలను,
+  \olref{def:goedel}లోని సమీకరణాలు
+  నిర్ణయించే కింది సత్య పట్టికలతో
+  పోల్చి దీన్ని చూడవచ్చు:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}[\LogGod[3]]$ & \\
+      \hline
+      $1$ & $0$ \\
+      $1/2$ & $0$ \\
+      $0$ & $1$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogGod]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1/2$ & $0$ \\
+      $1/2$ & $1/2$ & $1/2$ & $0$\\
+      $0$ & $0$ & $0$ & $0$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogGod]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1$ & $1$ \\
+      $1/2$ & $1$ & $1/2$ & $1/2$ \\
+      $0$ & $1$ & $1/2$ & $0$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogGod]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1/2$ & $0$ \\
+      $1/2$ & $1$ & $1$ & $0$  \\
+      $0$ & $1$ & $1$ & $1$
+    \end{tabular}
+  \end{center}
+\end{proof}
+
+\begin{prop}\ollabel{prop:god-infty-m}
+  $\Gamma \Entails[\LogGod[\infty]] !B$
+  అయితే ప్రతి~$m \ge 2$కు
+  $\Gamma \Entails[\LogGod[m]] !B$.
+\end{prop}
+
+\begin{proof}
+  సాధన.
+\end{proof}
+
+\begin{prob}
+  \olref[mvl][inf][god]{prop:god-infty-m}ను
+  నిరూపించండి.
+\end{prob}
+
+నిజానికి తిరుగు దిశ కూడా నిలుస్తుంది.
+
+$\LogGod[3]$లాగే, $\LogGod[\infty]$లోనూ
+అంతర్బోధవాద తర్కంలో చెల్లే అన్ని
+\tetoken{సూత్రాలు}{!!{formula}s}
+సర్వసత్యాలే. మూడు-విలువల సందర్భంలో
+సర్వసత్యాలు కాని అదే ఉదాహరణలు
+~$\LogGod[\infty]$లోనూ
+సర్వసత్యాలు కావు:
+\begin{align*}
+  & p \lor \lnot p && (p \lif q) \lif (\lnot p \lor q) \\
+  & \lnot\lnot p \lif p && \lnot(\lnot p \land \lnot q) \lif (p \lor q) \\
+  & ((p \lif q) \lif p) \lif p && \lnot(p \lif q) \lif (p \land \lnot q)
+\end{align*}
+అంతర్బోధవాద తర్కంలో చెల్లకపోయినా
+~$\LogGod[3]$లో సర్వసత్యమైన
+\tetoken{సూత్రం}{!!{formula}}కు ఉదాహరణ
+$(p \lif q) \lor (q \lif
+p)$; అది~$\LogGod[\infty]$లోనూ
+సర్వసత్యమే. నిజానికి
+$\LogGod[\infty]$ను, అంతర్బోధవాద
+తర్కానికి $(!A \lif !B) \lor (!B \lif !A)$
+పథకాన్ని చేర్చిన తర్కంగా
+వర్ణించవచ్చు. దీన్ని మైకేల్ డమ్మెట్
+చూపించాడు. అందువల్ల $\LogGod[\infty]$ను
+తరచూ గోడెల్--డమ్మెట్
+తర్కం~$\Log{LC}$ అంటారు.
+
+\begin{prob}
+  $(p \lif q) \lor (q \lif p)$
+  ~$\LogGod[\infty]$లో సర్వసత్యమని
+  చూపండి.
+\end{prob}
+
+\begin{prob}
+  $\LogGod[3]$లో సర్వసత్యమైన
+  $(p \lif q) \lor (q \lif r) \lor (r \lif s)$
+  అనేది~$\LogGod[\infty]$లో
+  సర్వసత్యం కాదని చూపండి.
+\end{prob}
+
+\end{document}

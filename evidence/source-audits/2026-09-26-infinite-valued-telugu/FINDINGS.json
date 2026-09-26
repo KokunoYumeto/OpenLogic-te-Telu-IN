@@ -1,0 +1,75 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTEMVLINF-20260926",
+  "created_utc": "2026-09-26T18:57:35Z",
+  "status": "confirmed_against_frozen_value_sets_matrices_and_three_valued_comparisons",
+  "scope": {
+    "chapter": "Many-valued Logic — Infinite-valued Logics",
+    "unit_ids": ["OLP-0399", "OLP-0400", "OLP-0401"],
+    "finding_count": 4
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEMVLINF-001",
+      "unit_id": "OLP-0399",
+      "classification": "rational_truth_value_set_allows_zero_denominator",
+      "source": {
+        "path": "content/many-valued-logic/infinite-valued-logics/introduction.tex",
+        "bytes": 1303,
+        "sha256": "4ce56099c4d8b852148cfe24eb6d1ed00a03fce30c9e1770e52eadbd4412762c",
+        "locator": "introduction.tex lines 14-18"
+      },
+      "finding": "The source describes V_infinity as rational numbers in [0,1], but its displayed set comprehension permits m=0 while placing m in Nat, which would make n/m undefined.",
+      "controlling_evidence": "The preceding equality V_infinity=[0,1] intersection Rat requires defined rational numbers. The explicit additional condition 0<m excludes the undefined denominator without removing any rational value in the intended interval.",
+      "required_translation_handling": "Add 0<m to the displayed comprehension and disclose the restriction adjacent to the display."
+    },
+    {
+      "finding_id": "OLTEMVLINF-002",
+      "unit_id": "OLP-0399",
+      "classification": "finite_truth_value_set_has_one_extra_out_of_range_value",
+      "source": {
+        "path": "content/many-valued-logic/infinite-valued-logics/introduction.tex",
+        "bytes": 1303,
+        "sha256": "4ce56099c4d8b852148cfe24eb6d1ed00a03fce30c9e1770e52eadbd4412762c",
+        "locator": "introduction.tex lines 19-23; compare V_5 example and OLP-0400/0401 m>=2 propositions"
+      },
+      "finding": "The source bounds the numerator by n<=m despite denominator m-1. This includes n=m, giving m/(m-1)>1 and m+1 values rather than the printed m evenly spaced values. For m=1 the denominator also vanishes.",
+      "controlling_evidence": "The displayed V_5={0,1/4,1/2,3/4,1} and later m>=2 statements require n<m and m>=2.",
+      "required_translation_handling": "Change the numerator bound to n<m, state in adjacent prose that m is at least two, and disclose both scope repairs."
+    },
+    {
+      "finding_id": "OLTEMVLINF-003",
+      "unit_id": "OLP-0400",
+      "classification": "standard_lukasiewicz_matrix_omits_falsity_constant",
+      "source": {
+        "path": "content/many-valued-logic/infinite-valued-logics/lukasiewicz.tex",
+        "bytes": 3022,
+        "sha256": "cd08c78b079f961505db9f62af56babd0570bf52682f8375f6ba4d340c2afcc6",
+        "locator": "lukasiewicz.tex lines 18-39; compare OLP-0386/0388 and OLP-0394"
+      },
+      "finding": "The matrix names standard L_0 but lists only four nonconstant connectives and no value for its falsity constant. The next proposition says its three-valued restriction is the same logic as the earlier three-valued Łukasiewicz matrix, whose Telugu edition explicitly interprets that constant as False.",
+      "controlling_evidence": "A matrix must give each language connective a truth function. Adding lfalse=0 is consistent with the earlier three-valued constant False, but the four printed functions alone do not force this editorial value.",
+      "required_translation_handling": "List lfalse and state its value 0 in the infinite-valued matrix, with an adjacent disclosure that this is an editorial completion for the standard language and comparison theorem."
+    },
+    {
+      "finding_id": "OLTEMVLINF-004",
+      "unit_id": "OLP-0401",
+      "classification": "nested_math_delimiters_in_goedel_negation_cases",
+      "source": {
+        "path": "content/many-valued-logic/infinite-valued-logics/goedel.tex",
+        "bytes": 3866,
+        "sha256": "5d2ee265f4bec099c01297f7e6d605c3c0100e59a96cce2cf9636ec9fb9e186b",
+        "locator": "goedel.tex lines 25-30"
+      },
+      "finding": "The Gödel negation cases are already within align math mode, yet enclose the case outputs 1 and 0 in additional dollar delimiters.",
+      "controlling_evidence": "The subsequent printed truth table has the same numeric outputs without nested math shifts, and the surrounding align/cases environments already supply math mode.",
+      "required_translation_handling": "Remove only the inner dollar delimiters around the two numbers, retain their values and conditions, and disclose this TeX-source repair."
+    }
+  ]
+}

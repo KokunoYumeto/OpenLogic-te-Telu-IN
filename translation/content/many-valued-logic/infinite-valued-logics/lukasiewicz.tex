@@ -1,0 +1,136 @@
+% Part: many-valued-logic
+% Chapter: infinite-valued-logics
+% Section: lukasiewicz
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{inf}{luk}
+
+\olsection{\L ukasiewicz తర్కం}
+
+\begin{editorial}
+  ఇది అనంత-విలువల \L ukasiewicz తర్కంపై
+  సంక్షిప్త ప్రాథమిక విభాగం మాత్రమే.
+\end{editorial}
+
+\begin{defn}\ollabel{def:lukasiewicz}
+అనంత-విలువల \L ukasiewicz
+తర్కం~$\LogLuk[\infty]$ను కింది మాత్రికతో
+నిర్వచిస్తాం:
+\begin{enumerate}
+  \item $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$
+  సంయోజకాలు గల ప్రామాణిక ప్రతిజ్ఞావాక్య
+  భాష $\Lang L_0$.
+  \item సత్యమూల్యాల సమితి $V_\infty$.
+  \item $1$ మాత్రమే నిర్దేశిత విలువ; అంటే
+  $V^+ = \{1\}$.
+  \item సత్యమూల్య ప్రమేయాలను కింది
+  ప్రమేయాలు ఇస్తాయి:
+  \begin{align*}
+    \tf{\lfalse} & = 0\\
+    \tf{\lnot}[\LogLuk](x) & = 1 - x\\
+    \tf{\land}[\LogLuk](x,y) & = \min(x,y)\\
+    \tf{\lor}[\LogLuk](x,y) & = \max(x,y)\\
+    \tf{\lif}[\LogLuk](x,y) & = \min(1,1-(x-y)) = \begin{cases}
+      1 & \text{ఒకవేళ } x \le y\\
+      1-(x-y) & \text{లేకపోతే.}
+    \end{cases}
+    \end{align*}
+\end{enumerate}
+$V = V_m$ తీసుకోవడం మినహా $m$-విలువల
+\L ukasiewicz తర్కాన్ని ఇదే విధంగా
+నిర్వచిస్తాం.
+\sourcecorrection{OLTEMVLINF-003}{ఆంగ్ల
+మూలం ప్రామాణిక భాషను పేర్కొన్నా,
+దానిలోని అసత్య స్థిరాంకాన్ని జాబితాలో
+గానీ ప్రమేయాల్లో గానీ ఇవ్వలేదు.
+మూడు-విలువల నిర్వచనంతో తరువాతి
+సమానత్వ వాదం సరిపోవడానికి అసత్య
+స్థిరాంకాన్ని చేర్చి దానికి సున్నా
+విలువను సంపాదకీయంగా ఇచ్చాం. నాలుగు
+ముద్రిత ప్రమేయాలు మాత్రమే ఆ విలువను
+నిర్బంధించవు.}
+\end{defn}
+
+\begin{prop}
+  \olref[thr][luk]{def:lukasiewicz}లో
+  నిర్వచించిన $\LogLuk[3]$ తర్కమే
+  \olref{def:lukasiewicz}లో
+  నిర్వచించిన $\LogLuk[3]$ తర్కం.
+\end{prop}
+
+\begin{proof}
+  \olref[thr][luk]{def:lukasiewicz}లో
+  ఇచ్చిన సంయోజకాల సత్య పట్టికలను,
+  \olref{def:lukasiewicz}లోని
+  సమీకరణాలు నిర్ణయించే కింది సత్య
+  పట్టికలతో పోల్చి దీన్ని చూడవచ్చు:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}$ & \\
+      \hline
+      $1$ & $0$ \\
+      $1/2$ & $1/2$ \\
+      $0$ & $1$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogLuk[3]]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1/2$ & $0$ \\
+      $1/2$ & $1/2$ & $1/2$ & $0$\\
+      $0$ & $0$ & $0$ & $0$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogLuk[3]]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1$ & $1$ \\
+      $1/2$ & $1$ & $1/2$ & $1/2$ \\
+      $0$ & $1$ & $1/2$ & $0$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogLuk[3]]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1/2$ & $0$ \\
+      $1/2$ & $1$ & $1$ & $1/2$  \\
+      $0$ & $1$ & $1$ & $1$
+    \end{tabular}
+  \end{center}
+\end{proof}
+
+\begin{prop}\ollabel{prop:luk-infty-m}
+  $\Gamma \Entails[\LogLuk[\infty]] !B$
+  అయితే ప్రతి~$m \ge 2$కు
+  $\Gamma \Entails[\LogLuk[m]] !B$.
+\end{prop}
+
+\begin{proof}
+  సాధన.
+\end{proof}
+
+\begin{prob}
+  \olref[mvl][inf][luk]{prop:luk-infty-m}ను
+  నిరూపించండి.
+\end{prob}
+
+నిజానికి తిరుగు దిశ కూడా నిలుస్తుంది.
+
+అనంత-విలువల \L ukasiewicz తర్కం
+అత్యంత ప్రసిద్ధ ఫజీ తర్కం.
+ఫజీ తర్క సాహిత్యంలో సోపాధికాన్ని
+తరచూ $\lnot !A \lor !B$గా
+నిర్వచిస్తారు. అలా చేస్తే
+అనంత-విలువల బలమైన క్లీని తర్కం
+లభిస్తుంది.
+
+\begin{prob}
+  $(p \lif q) \lor (q \lif p)$
+  ~$\LogLuk[\infty]$లో సర్వసత్యమని
+  చూపండి.
+\end{prob}
+
+\end{document}
