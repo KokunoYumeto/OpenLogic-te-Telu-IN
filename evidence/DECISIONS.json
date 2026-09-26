@@ -68255,7 +68255,7 @@
           "target": {
             "path": "translation/content/normal-modal-logic/frame-definability/frames.tex",
             "file_id": "OLP-0422:target:te-Telu-IN",
-            "file_sha256": "1413dfb35315e23eba8bb670b1c3b6140a0cf439873779d7cbf574591c6cd482",
+            "file_sha256": "df5d1dbd6625e7c78fd892c85762fca1e8f72c8af9089e8be9f0e53d1956c2c7",
             "line_span": {
               "status": "available",
               "start": 13,
@@ -68264,10 +68264,10 @@
             "byte_span": {
               "status": "available",
               "start": 220,
-              "end_exclusive": 766
+              "end_exclusive": 797
             },
             "printed_page": null,
-            "excerpt": "\\begin{defn}\n  \\emph{చట్రం} అంటే $\\mModel{F} = \\tuple{W,R}$ అనే జత;\n  ఇక్కడ $W$ అనేది లోకాల ఖాళీ కాని సమితి, $R$\n  అనేది~$W$పై ద్విస్థానిక సంబంధం. ఏదో మూల్యనిర్ణయం\n  $V$కు $\\mModel{M} = \\tuple{W, R, V}$ అయితేనే,\n  నమూనా $\\mModel{M}$ చట్రం $\\mModel{F} = \\tuple{W,R}$పై\n  \\emph{ఆధారపడుతుంది} అంటాం.\n\\end{defn}",
+            "excerpt": "\\begin{defn}\n  \\emph{చట్రం} అంటే $\\mModel{F} = \\tuple{W,R}$ అనే జత;\n  ఇక్కడ $W$ అనేది లోకాల ఖాళీ కాని సమితి, $R$\n  అనేది~$W$పై ద్విస్థానిక సంబంధం. ఏదో మూల్యనిర్ణయం\n  $V$కు $\\mModel{M} = \\tuple{W, R, V}$ అయినప్పుడే, అప్పుడే\n  నమూనా $\\mModel{M}$ చట్రం $\\mModel{F} = \\tuple{W,R}$పై\n  \\emph{ఆధారపడుతుంది} అంటాం.\n\\end{defn}",
             "term": "చట్రం / చట్రాల నిర్వచనీయత / చట్రంపై ఆధారపడే నమూనా / చట్రంలో చెల్లుబాటు / సూత్ర–చట్ర అనురూపత / స్వావర్తన ప్రాప్యత సంబంధం",
             "intended_sense": "The OpenLogic technical sense or grouped senses of “frame / frame definability / model based on a frame / frame validity / formula-frame correspondence / reflexive accessibility relation” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.",
             "context": "Accepted Telugu rendering; legacy locator translation/content/normal-modal-logic/frame-definability/frames.tex:13-20."
@@ -68346,7 +68346,7 @@
           "target": {
             "path": "translation/content/normal-modal-logic/frame-definability/frames.tex",
             "file_id": "OLP-0422:target:te-Telu-IN",
-            "file_sha256": "1413dfb35315e23eba8bb670b1c3b6140a0cf439873779d7cbf574591c6cd482",
+            "file_sha256": "df5d1dbd6625e7c78fd892c85762fca1e8f72c8af9089e8be9f0e53d1956c2c7",
             "line_span": {
               "status": "available",
               "start": 22,
@@ -68354,8 +68354,8 @@
             },
             "byte_span": {
               "status": "available",
-              "start": 767,
-              "end_exclusive": 1116
+              "start": 798,
+              "end_exclusive": 1147
             },
             "printed_page": null,
             "excerpt": "\\begin{defn}\n  $\\mModel{F}$ చట్రం అయితే, $\\mModel{F}$పై ఆధారపడే ప్రతి\n  నమూనా~$\\mModel{M}$కు $\\mSat{M}{!A}$ అయినప్పుడే,\n  $!A$ \\emph{$\\mModel{F}$లో చెల్లుబాటు అవుతుంది,}\n  అంటే $\\mModel{F} \\Entails !A$ అంటాం.",
@@ -68437,7 +68437,7 @@
           "target": {
             "path": "translation/content/normal-modal-logic/frame-definability/frames.tex",
             "file_id": "OLP-0422:target:te-Telu-IN",
-            "file_sha256": "1413dfb35315e23eba8bb670b1c3b6140a0cf439873779d7cbf574591c6cd482",
+            "file_sha256": "df5d1dbd6625e7c78fd892c85762fca1e8f72c8af9089e8be9f0e53d1956c2c7",
             "line_span": {
               "status": "available",
               "start": 28,
@@ -68445,8 +68445,8 @@
             },
             "byte_span": {
               "status": "available",
-              "start": 1117,
-              "end_exclusive": 1459
+              "start": 1148,
+              "end_exclusive": 1490
             },
             "printed_page": null,
             "excerpt": "$\\mClass{F}$ చట్రాల వర్గమైతే, ప్రతి చట్రం~$\\mModel{F} \\in \\mClass{F}$కు\n  $\\mModel{F} \\Entails !A$ అయినప్పుడే $!A$\n  \\emph{$\\mClass{F}$లో చెల్లుబాటు అవుతుంది,}\n  అంటే $\\mClass{F} \\Entails !A$ అంటాం.\n\\end{defn}",

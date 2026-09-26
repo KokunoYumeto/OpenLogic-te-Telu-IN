@@ -1,6 +1,6 @@
 {
   "schema": "telugu-openlogic-batch-qa/1",
-  "generated_utc": "2026-09-26T22:59:30.897Z",
+  "generated_utc": "2026-09-26T23:02:54.756Z",
   "note": "Cumulative diagnostic assembled from the prior passing unit QA and the passing bounded batch. This does not prove semantic equivalence or full-reader completion.",
   "units": [
     {
@@ -112473,7 +112473,7 @@
       "unit_id": "OLP-0422",
       "source_path": "content/normal-modal-logic/frame-definability/frames.tex",
       "source_sha256": "2dab4bab23543be815492a62159b5e44069c50f55fee06e8a866446634a75b39",
-      "translation_sha256": "1413dfb35315e23eba8bb670b1c3b6140a0cf439873779d7cbf574591c6cd482",
+      "translation_sha256": "df5d1dbd6625e7c78fd892c85762fca1e8f72c8af9089e8be9f0e53d1956c2c7",
       "source_blocks": 12,
       "target_blocks": 12,
       "paragraph_alignment": true,
@@ -112554,7 +112554,7 @@
       "declared_source_correction_ids": [],
       "math_declared_source_correction_match": true,
       "math_multiset_match": true,
-      "telugu_chars": 800,
+      "telugu_chars": 810,
       "unicode_replacement_char": false,
       "unpaired_surrogate": false,
       "blocks": [
