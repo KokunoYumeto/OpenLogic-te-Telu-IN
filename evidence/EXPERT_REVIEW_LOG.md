@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 414 of 722 draft units**. This log contains 108 terminology/sense decisions and 381 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 417 of 722 draft units**. This log contains 111 terminology/sense decisions and 385 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2599,6 +2599,78 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: ప్రతిస్థాపన నిదర్శనం, సంబంధాత్మక నమూనా, శూన్యసందర్భ సత్యం అనే సమాసాలు మూల నిర్వచనాధారిత తాత్కాలిక ఎంపికలు. తెలంగాణ సంబంధ పేజీ ప్రాప్యత అనే ప్రత్యేక మోడల్-అర్థాన్ని స్థాపించదు. బాక్స్/డైమండ్, లోకం, నమూనా వేరు స్థాయిలను మూల సూత్రాల ప్రకారం మాత్రమే చదవాలి; స్థానిక పేజీలను OLTENMLSYN-001–003 మూల సవరణలకు ప్రమాణంగా వాడలేదు.
 
 - Please double-check: Please double-check whether “ఏకకాల ప్రతిస్థాపన, ప్రతిస్థాపన నిదర్శనం / సంబంధాత్మక నమూనా, ప్రాప్యత సంబంధం / కేటాయింపు V / ఒక లోకంలో సత్యం, నమూనాలో సత్యం / శూన్యసందర్భ సత్యం / బాక్స్–డైమండ్ ద్వైతత్వం” is idiomatic and technically standard for “simultaneous substitution and substitution instance / relational model and accessibility relation / valuation V / truth at a world versus truth in a model / vacuous truth / box-diamond duality” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T109 — modal validity in a class of models / reflexive accessibility relation / necessitation rule
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: మోడల్ చెల్లుబాటుతనం; నమూనాల వర్గంలో చెల్లుబాటు / స్వావర్తన ప్రాప్యత సంబంధం / అవశ్యకీకరణ నియమం
+
+- Exact implementation: OLP-0415; normal-modal-logic/syntax-and-semantics/modal-validity; content/normal-modal-logic/syntax-and-semantics/modal-validity.tex:11 ↔ translation/content/normal-modal-logic/syntax-and-semantics/modal-validity.tex:11 (OLP-0415-B005); printed/PDF page pending; OLP-0415; normal-modal-logic/syntax-and-semantics/modal-validity; content/normal-modal-logic/syntax-and-semantics/modal-validity.tex:13-33 ↔ translation/content/normal-modal-logic/syntax-and-semantics/modal-validity.tex:13-36 (OLP-0415-B006); printed/PDF page pending; OLP-0415; normal-modal-logic/syntax-and-semantics/modal-validity; content/normal-modal-logic/syntax-and-semantics/modal-validity.tex:35-42 ↔ translation/content/normal-modal-logic/syntax-and-semantics/modal-validity.tex:38-46 (OLP-0415-B007); printed/PDF page pending; OLP-0415; normal-modal-logic/syntax-and-semantics/modal-validity; content/normal-modal-logic/syntax-and-semantics/modal-validity.tex:49-51 ↔ translation/content/normal-modal-logic/syntax-and-semantics/modal-validity.tex:54-56 (OLP-0415-B009); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P021, PDF undefined, printed undefined, Conditional and biconditional headings and explanations; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P008లో ఉపసమితి, TE-P010లో ద్విస్థానిక సంబంధం, TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, TE-P019లో సత్యతావిలువ, TE-P021లో సోపాధికం, TE-P023లో ఫలితం, TE-P024లో నియమ వ్యుత్పత్తి స్థానిక చిత్రాలను OLP-0415కు ముందు ప్రత్యక్షంగా చూశాం. ఇవి సాధారణ తర్క, సమితి, సంబంధ రిజిస్టర్‌కు మాత్రమే ఆధారం. అన్ని క్రిప్కె నమూనాల్లో లేదా ఒక నమూనాల వర్గంలో చెల్లుబాటు, స్వావర్తన ప్రాప్యత, అవశ్యకీకరణ నియమాల ప్రత్యేక అర్థం స్థిర OLP-0415 నిర్వచనం, ప్రతిపాదన, నిరూపణ ఆధారితం; పూర్వ TE-T016/034/103/107/108 పదజాలంతో సమన్వయం చేశాం. మోడల్, నార్మల్, అలెథిక్ గుర్తించదగిన సాంకేతిక అరువులు; Box, Diamond, W, R, V, M, C, satisfaction and entailment macros protected mathematical notation.
+
+- Alternatives: ముందరి చెల్లుబాటు, స్వావర్తన పదజాలాన్ని కొనసాగించి నమూనాల వర్గంలోని ఖచ్చిత అర్థాన్ని మూల నిర్వచనానికి కట్టడం (ఎంపిక); స్థానిక ద్విమూల్య ఫలిత భావన క్రిప్కె నమూనా చెల్లుబాటును నేరుగా నిరూపిస్తుందని ప్రకటించడం (తిరస్కరణ); నార్మల్ అనే సాంకేతిక పరిమితిని రోజువారీ సాధారణ అనే అర్థంగా మార్చడం (తిరస్కరణ); ఖాళీ ప్రాప్యత సంబంధంలో బాక్స్/డైమండ్ శూన్యసందర్భ భేదాన్ని విస్మరించడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక పేజీలు మోడల్ చెల్లుబాటు లేదా అవశ్యకీకరణను నేరుగా నిర్వచించవు. స్వావర్తన అనే సంబంధ గుణనామం TE-T016లోనూ మూల నిర్వచనాధారిత తాత్కాలిక ఎంపిక; ఇక్కడ ప్రతి లోకం తనకు తానే ప్రాప్యమయ్యే ఖచ్చిత అర్థంలో వాడాం.
+
+- Please double-check: Please double-check whether “మోడల్ చెల్లుబాటుతనం; నమూనాల వర్గంలో చెల్లుబాటు / స్వావర్తన ప్రాప్యత సంబంధం / అవశ్యకీకరణ నియమం” is idiomatic and technically standard for “modal validity in a class of models / reflexive accessibility relation / necessitation rule” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T110 — modal-free tautology / tautological substitution instance / propositional assignment matching modal formula truth at a world / structural induction
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: మోడల్-రహిత సర్వసత్యం / సర్వసత్య ప్రతిస్థాపన నిదర్శనం / లోకంలో మోడల్ సూత్రాల సత్యానికి సరిపడే ప్రతిజ్ఞావాక్య కేటాయింపు / నిర్మాణాత్మక ఆగమనం
+
+- Exact implementation: OLP-0416; normal-modal-logic/syntax-and-semantics/tautological-instances; content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:11 ↔ translation/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:11 (OLP-0416-B005); printed/PDF page pending; OLP-0416; normal-modal-logic/syntax-and-semantics/tautological-instances; content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:13-24 ↔ translation/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:13-29 (OLP-0416-B006); printed/PDF page pending; OLP-0416; normal-modal-logic/syntax-and-semantics/tautological-instances; content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:26-32 ↔ translation/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:31-41 (OLP-0416-B007); printed/PDF page pending; OLP-0416; normal-modal-logic/syntax-and-semantics/tautological-instances; content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:34-43 ↔ translation/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:43-58 (OLP-0416-B008); printed/PDF page pending; OLP-0416; normal-modal-logic/syntax-and-semantics/tautological-instances; content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:45-144 ↔ translation/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:60-173 (OLP-0416-B009); printed/PDF page pending; OLP-0416; normal-modal-logic/syntax-and-semantics/tautological-instances; content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:146-148 ↔ translation/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:175-177 (OLP-0416-B010); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P021, PDF undefined, printed undefined, Conditional and biconditional headings and explanations; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, సంయోజకాల జాబితా; TE-P019లో సత్యతావిలువ, నిషేధం, సంయోజక పట్టిక; TE-P021లో సోపాధిక పట్టిక; TE-P024లో నియమ-వ్యుత్పత్తి స్థానిక పేజీలను OLP-0416 మూలం/లక్ష్యం పక్కపక్కన ఉంచి ప్రత్యక్షంగా పునఃపరిశీలించాం. ఈ పేజీలు సాధారణ ద్విమూల్య పదజాలానికే సాక్ష్యం. మోడల్-రహిత సర్వసత్య ప్రతిస్థాపన నిదర్శనానికి ప్రత్యేక అర్థం OLP-0416 స్థిర నిర్వచనం, ఆగమన ఉపసిద్ధాంతం, ప్రతిపాదన ఆధారితం; TE-T103/107/108/109 పూర్వ పదజాలం కొనసాగించాం. మోడల్ గుర్తించదగిన సాంకేతిక అరువు; Box, Diamond, p_i, D_i, assignments, satisfaction and substitution macros protected mathematical notation.
+
+- Alternatives: ముందరి సర్వసత్యం, ప్రతిస్థాపన నిదర్శనం పదాలను కలిపి, మోడల్-రహిత మూల సర్వసత్యం మరియు మోడల్ లక్ష్య సూత్రం మధ్య భేదాన్ని నిలపడం (ఎంపిక); ప్రతి మోడల్ సూత్రానికీ సర్వసత్యం నేరుగా నిర్వచించబడిందని చెప్పడం (తిరస్కరణ); సర్వసత్య ప్రతిస్థాపన నిదర్శనాన్ని సాధారణ మోడల్ చెల్లుబాటుతో సమానపరచడం (తిరస్కరణ); స్థానిక ద్విమూల్య పేజీలే మోడల్ ఆగమన ఉపసిద్ధాంతాన్ని నిరూపిస్తాయని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: సర్వసత్యం స్థానిక సత్య పట్టికతో సారూప్యమైనా దాని సాంకేతిక సర్వకేటాయింపు భావం స్థిర మూలం, TE-T103 ద్వారా నియంత్రితం. మోడల్ ప్రతిస్థాపన నిదర్శనం, ప్రపంచ-సత్యానికి సరిపడే కేటాయింపు అనే పూర్తి ప్రత్యేక భావానికి స్థానిక పేజీల్లో ప్రత్యక్ష సాక్ష్యం లేదు; తాత్కాలిక రూపం. OLTENMLTAU-001–003 సవరణలకు స్థానిక పేజీలు గణిత ఆధారం కావు.
+
+- Please double-check: Please double-check whether “మోడల్-రహిత సర్వసత్యం / సర్వసత్య ప్రతిస్థాపన నిదర్శనం / లోకంలో మోడల్ సూత్రాల సత్యానికి సరిపడే ప్రతిజ్ఞావాక్య కేటాయింపు / నిర్మాణాత్మక ఆగమనం” is idiomatic and technically standard for “modal-free tautology / tautological substitution instance / propositional assignment matching modal formula truth at a world / structural induction” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T111 — modal schema as substitution-instance set / characteristic formula / truth in a model versus validity / normal modal K and Dual schemas / modus ponens closure
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: ప్రతిస్థాపన నిదర్శనాల సమితిగా మోడల్ పథకం / లక్షణ సూత్రం / నమూనాలో సత్యం, సర్వనమూనా చెల్లుబాటు / నార్మల్ మోడల్ K, Dual పథకాలు / మోడస్ పోనెన్స్ సంవృతం
+
+- Exact implementation: OLP-0417; normal-modal-logic/syntax-and-semantics/schemas; content/normal-modal-logic/syntax-and-semantics/schemas.tex:11 ↔ translation/content/normal-modal-logic/syntax-and-semantics/schemas.tex:11 (OLP-0417-B005); printed/PDF page pending; OLP-0417; normal-modal-logic/syntax-and-semantics/schemas; content/normal-modal-logic/syntax-and-semantics/schemas.tex:13-24 ↔ translation/content/normal-modal-logic/syntax-and-semantics/schemas.tex:13-28 (OLP-0417-B006); printed/PDF page pending; OLP-0417; normal-modal-logic/syntax-and-semantics/schemas; content/normal-modal-logic/syntax-and-semantics/schemas.tex:13-24 ↔ translation/content/normal-modal-logic/syntax-and-semantics/schemas.tex:13-28 (OLP-0417-B006); printed/PDF page pending; OLP-0417; normal-modal-logic/syntax-and-semantics/schemas; content/normal-modal-logic/syntax-and-semantics/schemas.tex:34-38 ↔ translation/content/normal-modal-logic/syntax-and-semantics/schemas.tex:40-45 (OLP-0417-B008); printed/PDF page pending; OLP-0417; normal-modal-logic/syntax-and-semantics/schemas; content/normal-modal-logic/syntax-and-semantics/schemas.tex:40-45 ↔ translation/content/normal-modal-logic/syntax-and-semantics/schemas.tex:47-52 (OLP-0417-B009); printed/PDF page pending; OLP-0417; normal-modal-logic/syntax-and-semantics/schemas; content/normal-modal-logic/syntax-and-semantics/schemas.tex:75-79 ↔ translation/content/normal-modal-logic/syntax-and-semantics/schemas.tex:88-94 (OLP-0417-B014); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P021, PDF undefined, printed undefined, Conditional and biconditional headings and explanations; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P008లో సమితి/ఉపసమితి, TE-P010లో ద్విస్థానిక సంబంధం, TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, TE-P019లో సత్యతావిలువ, TE-P021లో సోపాధికం, TE-P023లో ఫలితం, TE-P024లో నియమ-వ్యుత్పత్తి చిత్రాలను ప్రత్యక్షంగా చూశాం. ఈ పేజీలు సాధారణ రిజిస్టర్‌కే సాక్ష్యం; పథకం ఒక ప్రతిస్థాపన నిదర్శనాల సమితి కావడం, లక్షణ సూత్రం, K/Dual చెల్లుబాటు, మోడస్ పోనెన్స్ సంవృతం OLP-0417 స్థిర నిర్వచనాలు, నిరూపణల ఆధారితాలు. TE-T035/103/108/109/110 వాడుకను కొనసాగించాం. మోడల్, మోడస్ పోనెన్స్ గుర్తించదగిన సాంకేతిక అరువులు; K, Dual, D/T/B/4/5, W, R, V, p_i, formula/entailment/satisfaction macros protected notation.
+
+- Alternatives: పథకం ప్రతిస్థాపన నిదర్శనాల సమితి, లక్షణ సూత్రం, నమూనాలో సత్యం, సర్వనమూనా చెల్లుబాటు భేదాలను మూల నిర్వచనాలకు కట్టుబడి ఉంచడం (ఎంపిక); పథకాన్ని ఒకే సూత్రంగా పరిగణించడం (తిరస్కరణ); ఒక నమూనాలో లక్షణ సూత్రం సత్యం అయితే దాని పథకం కూడా అక్కడ సత్యమని ఊహించడం (తిరస్కరణ); స్థానిక సాధారణ తర్క పేజీలు K, Dual ప్రత్యేక పథకాలను నేరుగా నిరూపిస్తాయని ప్రకటించడం (తిరస్కరణ)
+
+- Uncertainty: పథకం, లక్షణ సూత్రం ప్రత్యేక మోడల్ నామాలకు స్థానిక పేజీలలో ప్రత్యక్ష సాక్ష్యం లేదు; నిర్వచనాధారిత తాత్కాలిక ఎంపికలు. పథకం అనే సమితిని నమూనా అనే క్రిప్కె మోడల్‌తో కలపరాదు. మూలంలోని V-prime పాక్షిక నిర్దేశ సవరణకు స్థానిక పదజాల పేజీలు గణిత ఆధారం కావు.
+
+- Please double-check: Please double-check whether “ప్రతిస్థాపన నిదర్శనాల సమితిగా మోడల్ పథకం / లక్షణ సూత్రం / నమూనాలో సత్యం, సర్వనమూనా చెల్లుబాటు / నార్మల్ మోడల్ K, Dual పథకాలు / మోడస్ పోనెన్స్ సంవృతం” is idiomatic and technically standard for “modal schema as substitution-instance set / characteristic formula / truth in a model versus validity / normal modal K and Dual schemas / modus ponens closure” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -11743,3 +11815,99 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Is the world argument [w] restored only to the first missing non-satisfaction atom in the second box-diamond duality proof?
+
+## REV-OLTENMLTAU-001 — OLTENMLTAU-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: నిషేధ సందర్భపు prvFalse గుర్తును స్థిర భాషా నిర్వచనం ప్రకారం prvNotగా సరిచేసి పక్కనే ప్రకటించాం; నిరూపణ సూత్రం మారలేదు.
+
+- Exact implementation: OLP-0416; normal-modal-logic/syntax-and-semantics/tautological-instances; tautological-instances.tex lines 63-78 ↔ translation/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:80 (OLP-0416-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLTAU-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: నిషేధ సందర్భపు prvFalse గుర్తును స్థిర భాషా నిర్వచనం ప్రకారం prvNotగా సరిచేసి పక్కనే ప్రకటించాం; నిరూపణ సూత్రం మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLTAU-001 is mathematically precise and idiomatic.
+
+## REV-OLTENMLTAU-002 — OLTENMLTAU-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: నిషేధ సందర్భపు చివరి దశకు లోక-సంతృప్తి నిర్వచనాన్ని ఉదహరించి పక్కనే ప్రకటించాం; సమానత మారలేదు.
+
+- Exact implementation: OLP-0416; normal-modal-logic/syntax-and-semantics/tautological-instances; tautological-instances.tex lines 73-77 ↔ translation/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:89 (OLP-0416-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLTAU-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: నిషేధ సందర్భపు చివరి దశకు లోక-సంతృప్తి నిర్వచనాన్ని ఉదహరించి పక్కనే ప్రకటించాం; సమానత మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLTAU-002 is mathematically precise and idiomatic.
+
+## REV-OLTENMLTAU-003 — OLTENMLTAU-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: ద్విసోపాధిక సందర్భపు మొదటి lifను liffగా మార్చి పక్కనే ప్రకటించాం; రెండు సత్య-అసత్య శాఖలు, చివరి సూత్రంతో సరిపోతుంది.
+
+- Exact implementation: OLP-0416; normal-modal-logic/syntax-and-semantics/tautological-instances; tautological-instances.tex lines 122-147 ↔ translation/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:148 (OLP-0416-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLTAU-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: ద్విసోపాధిక సందర్భపు మొదటి lifను liffగా మార్చి పక్కనే ప్రకటించాం; రెండు సత్య-అసత్య శాఖలు, చివరి సూత్రంతో సరిపోతుంది.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLTAU-003 is mathematically precise and idiomatic.
+
+## REV-OLTENMLSCH-001 — OLTENMLSCH-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: మోడల్ V' కేటాయింపును ప్రతిస్థాపిత చరాలకు మూలంలాగే, మిగిలిన చరాలకు అసలు Vతో నిర్వచించి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0417; normal-modal-logic/syntax-and-semantics/schemas; schemas.tex lines 90-98 ↔ translation/content/normal-modal-logic/syntax-and-semantics/schemas.tex:118 (OLP-0417-B017); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLSCH-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: మోడల్ V' కేటాయింపును ప్రతిస్థాపిత చరాలకు మూలంలాగే, మిగిలిన చరాలకు అసలు Vతో నిర్వచించి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLSCH-001 is mathematically precise and idiomatic.

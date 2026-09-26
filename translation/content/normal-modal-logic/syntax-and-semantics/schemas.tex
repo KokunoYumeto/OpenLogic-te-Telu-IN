@@ -1,0 +1,230 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: schemas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{sch}
+
+\olsection{పథకాలు మరియు చెల్లుబాటుతనం}
+
+\begin{defn}
+  \emph{పథకం} అంటే ఏదో మోడల్
+  \tetoken{సూత్రం}{!!{formula}}~$!C$ యొక్క
+  ప్రతిస్థాపన నిదర్శనాలన్నీ, అవి మాత్రమే గల
+  \tetoken{సూత్రాల}{!!{formula}s} సమితి; అంటే,
+  \[
+  \Setabs{!B}{\lexists[!D_1], \dots, \lexists[!D_n] \left(!B =
+  \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \right) }.
+  \]
+  \tetoken{సూత్రం}{!!{formula}}~$!C$ను ఆ పథకపు
+  \emph{లక్షణ} \tetoken{సూత్రం}{!!{formula}} అంటాం.
+  \tetoken{ప్రతిజ్ఞావాక్య చరాల}{!!{propositional
+  variable}s} పేర్ల మార్పు వరకు అది ఏకైకం.
+  \tetoken{సూత్రం}{!!^a{formula}}~$!A$ ఆ సమితిలో
+  సభ్యమైతే, అది పథకానికి \emph{నిదర్శనం}.
+\end{defn}
+
+$!C$ పరమాణు భాగాల స్థానంలో ‘$!A$’, ‘$!B$’,
+~\dots ఉంచి వచ్చిన అధిభాషా వ్యక్తీకరణతో
+పథకాన్ని సూచించడం సౌకర్యకరం. ఉదాహరణకు,
+‘$!A$’, ‘$!A \lif \Box!A$’,
+‘$!A \lif (!B \lif !A)$’ పథకాలను సూచిస్తాయి.
+వాటి లక్షణ \tetoken{సూత్రాలు}{!!{formula}s}
+వరుసగా $p$, $p \lif \Box p$, $p \lif (q
+\lif p)$. ‘$!A$’ పథకం \emph{అన్ని}
+\tetoken{సూత్రాల}{!!{formula}s} సమితిని సూచిస్తుంది.
+
+\begin{defn}
+  ఒక పథకం నమూనాలో \emph{సత్యం} అంటే దాని
+  నిదర్శనాలన్నీ ఆ నమూనాలో సత్యం;
+  ఒక పథకం \emph{చెల్లుబాటు} అంటే అది
+  ప్రతి నమూనాలో సత్యం.
+\end{defn}
+
+\begin{prop}\ollabel{prop:Kvalid}
+  కింది \Ax{K} పథకం చెల్లుబాటవుతుంది:
+  \begin{equation*}
+  \Box(!A \lif !B) \lif (\Box !A \lif \Box !B). \tag{\Ax{K}}
+  \end{equation*}
+\end{prop}
+
+\begin{proof}
+  పథకంలోని ప్రతి నిదర్శనం ప్రతి నమూనాలోని
+  ప్రతి లోకంలో సత్యమని చూపాలి. ఏదైనా
+  $\mModel{M} = \tuple{W,R,V}$ను,
+  $w \in W$ను తీసుకుందాం. ఒక లోకంలో
+  సోపాధికం సత్యమని చూపడానికి, దాని
+  పూర్వాంగం సత్యమనుకొని ఉత్తరాంగమూ
+  సత్యమని చూపుతాం. ఇక్కడ
+  $\mSat{M}{\Box(!A \lif !B)}[w]$,
+  $\mSat{M}{\Box !A}[w]$ అనుకుందాం.
+  $\mSat{M}{\Box !B}[w]$ చూపాలి.
+  $Rww'$ అయ్యే ఏదైనా $w'$ను తీసుకుందాం.
+  మొదటి ఊహ ప్రకారం
+  $\mSat{M}{!A \lif !B}[w']$;
+  రెండవ ఊహ ప్రకారం $\mSat{M}{!A}[w']$.
+  అందువల్ల $\mSat{M}{!B}[w']$.
+  $w'$ ఏదైనా కాబట్టి $\mSat{M}{\Box !B}[w]$.
+\end{proof}
+
+\begin{prop}\ollabel{prop:Dual-valid}
+  కింది \Dual{} పథకం చెల్లుబాటవుతుంది:
+  \begin{equation*}
+  \Diamond !A \liff \lnot\Box\lnot !A. \tag{\Dual}
+  \end{equation*}
+\end{prop}
+
+\begin{proof}
+  సాధన.
+\end{proof}
+
+\begin{prob}
+  \olref[nml][syn][sch]{prop:Dual-valid}ను నిరూపించండి.
+\end{prob}
+
+\begin{prop}\ollabel{prop:soundMP}
+  ఒక నమూనాలోని ఒక లోకంలో $!A$,
+  $!A \lif !B$ సత్యమైతే $!B$ కూడా
+  అక్కడ సత్యం. కాబట్టి చెల్లుబాటయ్యే
+  \tetoken{సూత్రాల}{!!{formula}s} సమితి
+  మోడస్ పోనెన్స్ కింద సంవృతం.
+\end{prop}
+
+\begin{prop}\ollabel{prop:valid-instances}
+  \tetoken{సూత్రం}{!!^a{formula}}~$!A$
+  చెల్లుబాటవుతుంది, అప్పుడే, అప్పుడే
+  దాని ప్రతిస్థాపన నిదర్శనాలన్నీ
+  చెల్లుబాటవుతాయి. మరోలా అంటే,
+  పథకం చెల్లుబాటవుతుంది, అప్పుడే,
+  అప్పుడే దాని లక్షణ
+  \tetoken{సూత్రం}{!!{formula}} చెల్లుబాటవుతుంది.
+\end{prop}
+
+\begin{proof}
+  “అయితే” దిశ స్పష్టం: $!A$
+  తనకే ఒక ప్రతిస్థాపన నిదర్శనం.
+
+  “అప్పుడే” దిశకు ఈ వాదాన్ని చూపుదాం:
+  $\mModel{M} = \tuple{W, R, V}$
+  మోడల్ నమూనా అనుకుందాం; $!B \ident
+  \SSubst{!A}{\subst{!D_1}{p_1},\dots,\subst{!D_n}{p_n}}$
+  అనేది $!A$కి ప్రతిస్థాపన నిదర్శనం.
+  $V'(p_i) = \Setabs{w}{\mSat{M}{!D_i}[w]}$
+  అయ్యేలా $\mModel{M'} = \tuple{W, R,
+    V'}$ను నిర్వచిద్దాం; ఇతర చరాలకు
+  $V'(q)=V(q)$.
+  \sourcecorrection{OLTENMLSCH-001}{మూలంలో
+    $V'$ను $p_i$లకే నిర్దేశించారు.
+    మిగతా చరాలకు అసలు కేటాయింపునే
+    ఉంచి నమూనా నిర్వచనాన్ని పూర్తిచేశాం.}
+  ఏ $w \in W$కైనా $\mSat{M}{!B}[w]$
+  అప్పుడే, అప్పుడే $\mSat{M'}{!A}[w]$.
+  (దీని నిరూపణను సాధనగా విడిచిపెడుతున్నాం.)
+  ఇప్పుడు $!A$ చెల్లుబాటై,
+  $!A$కి చెందిన ఏదో ప్రతిస్థాపన నిదర్శనం
+  $!B$ చెల్లుబాటు కాలేదనుకుందాం.
+  అప్పుడు ఏదో $\mModel{M} = \tuple{W, R, V}$
+  మరియు ఏదో $w \in W$కు
+  $\mSat/{M}{!B}[w]$. కానీ వాదం ప్రకారం
+  $\mSat/{M'}{!A}[w]$; కనుక $!A$
+  చెల్లుబాటు కాదు. ఇది వైరుధ్యం.
+\end{proof}
+
+\begin{prob}
+  \olref[nml][syn][sch]{prop:valid-instances}
+  నిరూపణలోని “అప్పుడే” భాగంలో
+  చెప్పిన వాదాన్ని నిరూపించండి.
+  (సూచన: $!A$పై ఆగమనం ఉపయోగించండి.)
+\end{prob}
+
+అయితే, పథకం నమూనాలో సత్యమైతే
+అప్పుడే దాని లక్షణ సూత్రం ఆ
+నమూనాలో సత్యమని చెప్పలేం.
+“అప్పుడే” దిశ మాత్రం నిలుస్తుంది:
+$!A$లోని ప్రతి నిదర్శనం
+$\mModel{M}$లో సత్యమైతే
+$!A$~కూడా $\mModel{M}$లో సత్యమే.
+కానీ $!A$ అనేది $\mModel{M}$లో
+సత్యమై ఉండి, $!A$కి చెందిన ఏదో నిదర్శనం
+$\mModel{M}$లోని ఏదో లోకంలో
+అసత్యమయ్యే అవకాశం ఉంది. సరళ
+ప్రతిదృష్టాంతంగా, ఒక్క లోకం~$w$
+మాత్రమే ఉండి $V(p) = \{w\}$
+అయ్యే నమూనాలో~$p$ను పరిశీలించండి.
+అప్పుడు $p$ అనేది~$w$లో సత్యం.
+కానీ $\lfalse$ అనేది~$p$కి
+నిదర్శనం; అది~$w$లో సత్యం కాదు.
+
+\begin{prob}
+  కింది \tetoken{సూత్రాలలో}{!!{formula}s}
+  ఏదీ చెల్లుబాటు కాదని చూపండి:
+  \begin{enumerate}
+    \item[\Ax{D}:] \quad $\Box p \lif \Diamond p$;
+    \item[\Ax{T}:] \quad $\Box p \lif p$;
+    \item[\Ax{B}:] \quad $p \lif \Box\Diamond p$;
+    \item[\Ax{4}:] \quad $\Box p \lif \Box \Box p$;
+    \item[\Ax{5}:] \quad $\Diamond p \lif \Box \Diamond
+      p$.
+  \end{enumerate}
+\end{prob}
+
+\begin{table}[t]
+    \centering
+    \begin{tabular}{| l || l |}
+      \hline
+      {\emph{చెల్లుబాటయ్యే పథకాలు}} & {\emph{చెల్లుబాటు కాని పథకాలు}} \\
+      \hline\hline
+      $\Box(!A \lif !B) \lif (\Diamond !A \lif \Diamond !B)$
+      & $\Box (!A \lor !B) \lif (\Box !A \lor \Box !B)$ \\
+      $\Diamond (!A \lif !B) \lif (\Box !A \lif \Diamond
+      !B)$
+      & $(\Diamond !A \land \Diamond !B) \lif \Diamond (!A
+      \land !B)$\\
+      $\Box (!A \land !B) \liff (\Box !A \land \Box !B)$
+      & $!A \lif \Box !A$ \\
+      $\Box !A \lif \Box (!B \lif !A)$
+      & $\Box \Diamond !A \lif !B$ \\
+      $\lnot \Diamond !A \lif \Box (!A \lif !B)$
+      & $\Box \Box !A \lif \Box !A$ \\
+      $\Diamond (!A \lor !B) \liff (\Diamond !A \lor
+      \Diamond !B)$
+      & $\Box \Diamond !A \lif \Diamond \Box !A$. \\
+      \hline
+    \end{tabular}
+    \caption{చెల్లుబాటయ్యే మరియు చెల్లుబాటు కాని పథకాలు.}
+    \ollabel{tab:valid-invalidSchemas}
+\end{table}
+
+\begin{prob}%\ollabel{ex:in/validSchemas}
+  \olref[nml][syn][sch]{tab:valid-invalidSchemas}లో
+  మొదటి నిలువు వరుస పథకాలు
+  చెల్లుబాటవుతాయని, రెండవ నిలువు వరుస
+  పథకాలు చెల్లుబాటు కావని నిరూపించండి.
+\end{prob}
+
+\begin{prob}
+  కింది పథకాలు చెల్లుబాటవుతాయా,
+  కావా నిర్ణయించండి:
+  \begin{enumerate}
+  \item $(\Diamond !A \lif \Box !B) \lif (\Box !A \lif \Box
+    !B)$;
+  \item $\Diamond(!A \lif !B) \lor \Box(!B \lif !A)$.
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+  కింది ప్రతి పథకానికి, ఆ
+  \tetoken{సూత్రం}{!!{formula}}
+  యొక్క ప్రతి నిదర్శనం
+  $\mModel{M}$లో సత్యమయ్యేలా
+  ఒక నమూనా $\mModel{M}$ను కనుగొనండి:
+  \begin{enumerate}
+  \item $p \lif \Diamond\Diamond p$;
+  \item $\Diamond p \lif \Box p$.
+  \end{enumerate}
+\end{prob}
+
+\end{document}

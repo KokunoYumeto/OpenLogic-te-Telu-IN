@@ -1,0 +1,61 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTENMLTAU-20260926",
+  "created_utc": "2026-09-26T20:59:04Z",
+  "status": "confirmed_against_frozen_language_definition_and_adjacent_proof",
+  "scope": {
+    "chapter": "Normal Modal Logic — Syntax and Semantics",
+    "unit_ids": ["OLP-0416"],
+    "finding_count": 3
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTENMLTAU-001",
+      "unit_id": "OLP-0416",
+      "classification": "negation_induction_case_uses_falsity_tag",
+      "source": {
+        "path": "content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex",
+        "bytes": 6733,
+        "sha256": "d951c14acce27168cd66ef02bdecd76610bb803879b399ec08e82183aa8732aa",
+        "locator": "tautological-instances.tex lines 63-78"
+      },
+      "finding": "The negation induction case is guarded by prvFalse, duplicating the falsity case, although its case formula and argument concern not B.",
+      "controlling_evidence": "The frozen basic-language formation clause and adjacent substitution definition guard negation by prvNot and falsity by prvFalse.",
+      "required_translation_handling": "Guard only the negation case by prvNot, leave the proof formulas intact, and disclose the tag repair adjacent to the case."
+    },
+    {
+      "finding_id": "OLTENMLTAU-002",
+      "unit_id": "OLP-0416",
+      "classification": "negation_final_step_cites_propositional_instead_of_world_satisfaction_definition",
+      "source": {
+        "path": "content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex",
+        "bytes": 6733,
+        "sha256": "d951c14acce27168cd66ef02bdecd76610bb803879b399ec08e82183aa8732aa",
+        "locator": "tautological-instances.tex lines 73-77"
+      },
+      "finding": "The final equivalence in the negation case converts world non-satisfaction into world satisfaction of a negation, but its justification cites the propositional satisfaction definition.",
+      "controlling_evidence": "The world-indexed satisfaction definition in the preceding section gives exactly this negation clause; the first step of the proof separately uses propositional satisfaction.",
+      "required_translation_handling": "Cite the world-indexed model satisfaction definition in that final justification and disclose the corrected citation."
+    },
+    {
+      "finding_id": "OLTENMLTAU-003",
+      "unit_id": "OLP-0416",
+      "classification": "biconditional_case_first_formula_uses_conditional",
+      "source": {
+        "path": "content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex",
+        "bytes": 6733,
+        "sha256": "d951c14acce27168cd66ef02bdecd76610bb803879b399ec08e82183aa8732aa",
+        "locator": "tautological-instances.tex lines 122-147"
+      },
+      "finding": "The biconditional induction case begins with B lif C, while the case header, true/true-or-false/false expansion and final substitution formula all use biconditional semantics.",
+      "controlling_evidence": "The frozen propositional biconditional truth clause and the case's own two-branch expansion require B liff C; the conditional truth clause is handled by the preceding induction case.",
+      "required_translation_handling": "Replace only the first displayed lif by liff in the biconditional case and disclose the repair adjacent to it."
+    }
+  ]
+}

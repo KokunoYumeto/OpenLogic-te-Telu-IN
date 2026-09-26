@@ -557,6 +557,28 @@ locations['TE-T108']=[
  L('content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex',48,48,75,75,'vacuously','శూన్యసందర్భ సత్యం'),
  L('content/normal-modal-logic/syntax-and-semantics/truth-in-model.tex',9,9,9,9,'Truth in a Model','ఒక నమూనాలో సత్యం')
 ];
+locations['TE-T109']=[
+ L('content/normal-modal-logic/syntax-and-semantics/modal-validity.tex',11,11,11,11,'Validity','చెల్లుబాటుతనం'),
+ L('content/normal-modal-logic/syntax-and-semantics/modal-validity.tex',29,30,31,31,'reflexive','స్వావర్తనమైన'),
+ L('content/normal-modal-logic/syntax-and-semantics/modal-validity.tex',36,36,39,40,'\\emph{valid}','చెల్లుబాటవుతుంది'),
+ L('content/normal-modal-logic/syntax-and-semantics/modal-validity.tex',50,50,55,55,'then so is','కూడా చెల్లుబాటవుతుంది')
+];
+locations['TE-T110']=[
+ L('content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex',11,11,11,11,'Tautological Instances','సర్వసత్య ప్రతిస్థాపన నిదర్శనాలు'),
+ L('content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex',14,15,14,15,'modal-free formula','మోడల్ సంచాలకాలు లేని సూత్రం'),
+ L('content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex',27,28,32,36,'tautological instance','సర్వసత్య ప్రతిస్థాపన నిదర్శనం'),
+ L('content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex',37,37,50,50,'assignment','కేటాయింపు'),
+ L('content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex',46,46,61,61,'By induction','ఆగమనంతో'),
+ L('content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex',147,147,176,176,'All tautological instances','ప్రతి సర్వసత్య ప్రతిస్థాపన నిదర్శనం')
+];
+locations['TE-T111']=[
+ L('content/normal-modal-logic/syntax-and-semantics/schemas.tex',11,11,11,11,'Schemas and Validity','పథకాలు మరియు చెల్లుబాటుతనం'),
+ L('content/normal-modal-logic/syntax-and-semantics/schemas.tex',14,15,14,17,'schema','పథకం'),
+ L('content/normal-modal-logic/syntax-and-semantics/schemas.tex',20,22,22,27,'characteristic','లక్షణ సూత్రం'),
+ L('content/normal-modal-logic/syntax-and-semantics/schemas.tex',35,36,41,44,'true','సత్యం'),
+ L('content/normal-modal-logic/syntax-and-semantics/schemas.tex',41,43,48,50,'K','K'),
+ L('content/normal-modal-logic/syntax-and-semantics/schemas.tex',77,78,91,93,'modus ponens','మోడస్ పోనెన్స్')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -650,7 +672,10 @@ alternatives['TE-T105']=['TE-P006 కరణీయ/వాస్తవ, TE-P008 �
 alternatives['TE-T106']=['TE-P019/020 సత్యతావిలువ, TE-P024 వ్యుత్పత్తి, TE-P033 అనుమానం అనే ప్రత్యక్ష వాడుకను TE-T035/036 సీక్వెంట్ పదాలతో కొనసాగించి, n-వైపుల ప్రత్యేక రూపాన్ని స్థిర మూల నిర్వచనంతో నియంత్రించడం (ఎంపిక)','సీక్వెంట్‌కు స్థానిక పేజీలలో కనబడని ఒక స్వదేశీ సాంకేతిక పదాన్ని స్థిరపడినదిగా ప్రకటించడం (తిరస్కరణ)','ద్విమూల్య స్థానిక ఫలిత నిర్వచనం మూడు-విలువల నియమాలను నేరుగా నిరూపిస్తుందని ఊహించడం (తిరస్కరణ)','నియమ చిత్రాల్లోని మూడు-విలువల స్థానాలను గద్య సరళీకరణ కోసం మార్చడం (తిరస్కరణ)'];
 alternatives['TE-T107']=['నార్మల్ మోడల్ తర్కం అనే గుర్తించదగిన సాంకేతిక అరువును TE-T053/103 సాధ్యలోక పదజాలంతో కలిపి, ప్రత్యేక నిర్వచనాన్ని స్థిర మూలానికి కట్టుబడి ఉంచడం (ఎంపిక)','నార్మల్‌ను రోజువారీ సాధారణ అని చదివి సాంకేతిక వర్గభేదాన్ని మసకబార్చడం (తిరస్కరణ)','స్థానిక ద్విమూల్య ప్రతిజ్ఞావాక్య పేజీలు క్రిప్కె అర్థవిచారం లేదా అనురూపతా సిద్ధాంతాన్ని నేరుగా బోధిస్తాయని చెప్పడం (తిరస్కరణ)','బాక్స్, డైమండ్ సూత్ర సంకేతాలను గద్య సౌలభ్యం కోసం మార్చడం (తిరస్కరణ)'];
 alternatives['TE-T108']=['స్థానిక సంబంధం, ప్రతిజ్ఞావాక్య తర్కం, సత్యతావిలువ, సోపాధికం, వ్యుత్పత్తి పదజాలాన్ని మాత్రమే తీసుకొని ఏకకాల ప్రతిస్థాపన, సంబంధాత్మక నమూనా, శూన్యసందర్భ సత్యం, ద్వైతత్వ ప్రత్యేక అర్థాలను స్థిర మూల నిర్వచనంతో నియంత్రించడం (ఎంపిక)','సంబంధం అనే స్థానిక పదమే క్రిప్కె ప్రాప్యత సంబంధానికి ప్రత్యక్ష సాక్ష్యమని ప్రకటించడం (తిరస్కరణ)','ఏకకాల, వరుస ప్రతిస్థాపన ఫలితాలు ఎప్పుడూ ఒకటేనని సరళీకరించడం (తిరస్కరణ)','లోకంలో సత్యం, నమూనాలో సత్యం, శూన్యసందర్భ సత్యం మధ్య మూలం చూపిన భేదాలను కలపడం (తిరస్కరణ)'];
+alternatives['TE-T109']=['ముందరి చెల్లుబాటు, స్వావర్తన పదజాలాన్ని కొనసాగించి నమూనాల వర్గంలోని ఖచ్చిత అర్థాన్ని మూల నిర్వచనానికి కట్టడం (ఎంపిక)','స్థానిక ద్విమూల్య ఫలిత భావన క్రిప్కె నమూనా చెల్లుబాటును నేరుగా నిరూపిస్తుందని ప్రకటించడం (తిరస్కరణ)','నార్మల్ అనే సాంకేతిక పరిమితిని రోజువారీ సాధారణ అనే అర్థంగా మార్చడం (తిరస్కరణ)','ఖాళీ ప్రాప్యత సంబంధంలో బాక్స్/డైమండ్ శూన్యసందర్భ భేదాన్ని విస్మరించడం (తిరస్కరణ)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
+alternatives['TE-T110']=['ముందరి సర్వసత్యం, ప్రతిస్థాపన నిదర్శనం పదాలను కలిపి, మోడల్-రహిత మూల సర్వసత్యం మరియు మోడల్ లక్ష్య సూత్రం మధ్య భేదాన్ని నిలపడం (ఎంపిక)','ప్రతి మోడల్ సూత్రానికీ సర్వసత్యం నేరుగా నిర్వచించబడిందని చెప్పడం (తిరస్కరణ)','సర్వసత్య ప్రతిస్థాపన నిదర్శనాన్ని సాధారణ మోడల్ చెల్లుబాటుతో సమానపరచడం (తిరస్కరణ)','స్థానిక ద్విమూల్య పేజీలే మోడల్ ఆగమన ఉపసిద్ధాంతాన్ని నిరూపిస్తాయని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T111']=['పథకం ప్రతిస్థాపన నిదర్శనాల సమితి, లక్షణ సూత్రం, నమూనాలో సత్యం, సర్వనమూనా చెల్లుబాటు భేదాలను మూల నిర్వచనాలకు కట్టుబడి ఉంచడం (ఎంపిక)','పథకాన్ని ఒకే సూత్రంగా పరిగణించడం (తిరస్కరణ)','ఒక నమూనాలో లక్షణ సూత్రం సత్యం అయితే దాని పథకం కూడా అక్కడ సత్యమని ఊహించడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలు K, Dual ప్రత్యేక పథకాలను నేరుగా నిరూపిస్తాయని ప్రకటించడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -666,7 +691,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T108 record the Batch 025--Batch 066 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T111 record the Batch 025--Batch 069 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);

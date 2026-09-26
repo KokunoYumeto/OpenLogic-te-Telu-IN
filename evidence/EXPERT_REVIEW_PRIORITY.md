@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 414 of 722 draft units**. This view selects 434 of 489 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 417 of 722 draft units**. This view selects 438 of 496 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4343,3 +4343,43 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0413; normal-modal-logic/syntax-and-semantics/truth-at-w; translation/content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex:146; printed/PDF page pending
 
 - Please double-check: Please double-check: Is the world argument [w] restored only to the first missing non-satisfaction atom in the second box-diamond duality proof?
+
+## REV-OLTENMLTAU-001 — OLTENMLTAU-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: నిషేధ సందర్భపు prvFalse గుర్తును స్థిర భాషా నిర్వచనం ప్రకారం prvNotగా సరిచేసి పక్కనే ప్రకటించాం; నిరూపణ సూత్రం మారలేదు.
+
+- Occurrences: OLP-0416; normal-modal-logic/syntax-and-semantics/tautological-instances; translation/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:80; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLTAU-001 is mathematically precise and idiomatic.
+
+## REV-OLTENMLTAU-002 — OLTENMLTAU-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: నిషేధ సందర్భపు చివరి దశకు లోక-సంతృప్తి నిర్వచనాన్ని ఉదహరించి పక్కనే ప్రకటించాం; సమానత మారలేదు.
+
+- Occurrences: OLP-0416; normal-modal-logic/syntax-and-semantics/tautological-instances; translation/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:89; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLTAU-002 is mathematically precise and idiomatic.
+
+## REV-OLTENMLTAU-003 — OLTENMLTAU-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ద్విసోపాధిక సందర్భపు మొదటి lifను liffగా మార్చి పక్కనే ప్రకటించాం; రెండు సత్య-అసత్య శాఖలు, చివరి సూత్రంతో సరిపోతుంది.
+
+- Occurrences: OLP-0416; normal-modal-logic/syntax-and-semantics/tautological-instances; translation/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:148; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLTAU-003 is mathematically precise and idiomatic.
+
+## REV-OLTENMLSCH-001 — OLTENMLSCH-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మోడల్ V' కేటాయింపును ప్రతిస్థాపిత చరాలకు మూలంలాగే, మిగిలిన చరాలకు అసలు Vతో నిర్వచించి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0417; normal-modal-logic/syntax-and-semantics/schemas; translation/content/normal-modal-logic/syntax-and-semantics/schemas.tex:118; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLSCH-001 is mathematically precise and idiomatic.

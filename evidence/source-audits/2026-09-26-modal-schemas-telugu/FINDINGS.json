@@ -1,0 +1,33 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTENMLSCH-20260926",
+  "created_utc": "2026-09-26T21:14:59Z",
+  "status": "confirmed_against_frozen_model_definition_and_substitution_claim",
+  "scope": {
+    "chapter": "Normal Modal Logic — Syntax and Semantics",
+    "unit_ids": ["OLP-0417"],
+    "finding_count": 1
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTENMLSCH-001",
+      "unit_id": "OLP-0417",
+      "classification": "substitution_model_valuation_unspecified_outside_replaced_variables",
+      "source": {
+        "path": "content/normal-modal-logic/syntax-and-semantics/schemas.tex",
+        "bytes": 6462,
+        "sha256": "2644661ac31c8a11b18826df77ecd26332c0b3452f584d08260c01ee4fe727dc",
+        "locator": "schemas.tex lines 90-98"
+      },
+      "finding": "The proof calls M-prime a model after specifying V-prime only on p_i; a model valuation must be defined on all propositional variables.",
+      "controlling_evidence": "The frozen relational-model definition makes V total on propositional variables. Assigning V-prime(q)=V(q) on variables outside the replaced list completes the valuation without changing the displayed substitution claim, since those variables are not replaced.",
+      "required_translation_handling": "State the unchanged valuation on other variables adjacent to the construction and disclose the completion, leaving the frozen English source unchanged."
+    }
+  ]
+}

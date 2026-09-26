@@ -1,0 +1,193 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: tautological-instances
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{tau}
+
+\olsection{సర్వసత్య ప్రతిస్థాపన నిదర్శనాలు}
+
+\begin{explain}
+  మోడల్ సంచాలకాలు లేని సూత్రం ప్రతి సత్యమూల్య
+  కేటాయింపులో సత్యమైతే అది సర్వసత్యం. ప్రతి సర్వసత్యం
+  ప్రతి నమూనాలోని ప్రతి లోకంలో సత్యమే.
+  కానీ $\Box$, $\Diamond$ కలిగిన
+  \tetoken{సూత్రాలకు}{!!{formula}s} సర్వసత్యం అనే
+  భావం నిర్వచించబడలేదు. ఉదాహరణకు,
+  నిషిద్ధ మధ్యమ నియమానికి ఒక నిదర్శనమైన
+  $\Box p \lor \lnot \Box p$ చెల్లుబాటవుతుందా?
+  \emph{సర్వసత్య ప్రతిస్థాపన నిదర్శనం} అనే భావన
+  దీనికి తోడ్పడుతుంది: మోడల్-రహిత సర్వసత్యానికి
+  ప్రతిస్థాపన నిదర్శనంగా ఉన్న
+  \tetoken{సూత్రం}{!!a{formula}}.
+  ప్రతి సర్వసత్య ప్రతిస్థాపన నిదర్శనం
+  చెల్లుబాటవుతుందనడం ఆశ్చర్యకరం కాదు;
+  అయినా దానికి నిరూపణ అవసరం.
+\end{explain}
+
+\begin{defn}
+  మోడల్ \tetoken{సూత్రం}{!!{formula}}~$!B$ ఒక
+  \emph{సర్వసత్య ప్రతిస్థాపన నిదర్శనం}
+  అవుతుంది, అప్పుడూ అప్పుడే: $p_1$, \dots,~$p_n$
+  అనే \tetoken{ప్రతిజ్ఞావాక్య చరాలు}{!!{propositional
+    variable}s} గల మోడల్-రహిత సర్వసత్యం~$!A$,
+  అలాగే $!D_1$, \dots,~$!D_n$ అనే
+  \tetoken{సూత్రాలు}{!!{formula}s} ఉండి,
+  $!B \ident \SSubst{!A}{\subst{!D_1}{p_1},
+    \dots, \subst{!D_n}{p_n}}$ కావాలి.
+\end{defn}
+
+\begin{lem}\ollabel{lem:valid-taut}
+  $!A$ అనేది $p_1$, \dots, $p_n$ అనే
+  \tetoken{ప్రతిజ్ఞావాక్య చరాలు}{!!{propositional
+  variable}s} గల మోడల్-రహిత
+  \tetoken{సూత్రం}{!!{formula}} అనుకుందాం;
+  $!D_1$, \dots, $!D_n$లు మోడల్
+  \tetoken{సూత్రాలు}{!!{formula}s} కానివ్వండి.
+  ఏ కేటాయింపు $\pAssign{v}$, ఏ నమూనా
+  $\mModel{M} = \tuple{W, R, V}$,
+  ఏ $w \in W$కైనా, ప్రతి సూచికకు
+  $\pAssign{v}(p_i) = \True$
+  అప్పుడే, అప్పుడే $\mSat{M}{!D_i}[w]$
+  అయితే, $\pSat{v}{!A}$ అప్పుడే, అప్పుడే
+  $\mSat{M}{\SSubst{!A}{\subst{!D_1}{p_1}, \dots,
+      \subst{!D_n}{p_n}}}[w]$.
+\end{lem}
+
+\begin{proof}
+  $!A$పై ఆగమనంతో నిరూపిద్దాం.
+  \begin{enumerate}
+  \tagitem{prvFalse}{\indcase{!A}{\lfalse}{%
+      $\pSat/{v}{\lfalse}$ మరియు
+      $\mSat/{M}{\lfalse}[w]$ రెండూ నిలుస్తాయి.}}{}
+  \tagitem{prvTrue}{\indcase{!A}{\ltrue}{%
+      $\pSat{v}{\ltrue}$ మరియు
+      $\mSat{M}{\ltrue}[w]$ రెండూ నిలుస్తాయి.}}{}
+  \item \indcase{!A}{p_i}{%
+    \begin{align*}
+      \pSat{v}{p_i} \Leftrightarrow {} & \pAssign{v}(p_i) = \True \\
+      & \qquad \text{$\pSat{v}{p_i}$ నిర్వచనం ప్రకారం}\\
+      \Leftrightarrow {} & \mSat{M}{!D_i}[w] \\
+      &\qquad \text{ఊహ ప్రకారం}\\
+      \Leftrightarrow {} & \mSat{M}{\SSubst{p_i}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+      &\qquad \text{ఎందుకంటే $\SSubst{p_i}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}} \ident !D_i$}.
+      \end{align*}}
+  \tagitem{prvNot}{\indcase{!A}{\lnot !B}{%
+      \begin{align*}
+        \pSat{v}{\lnot !B} \Leftrightarrow {} & \pSat/{v}{!B}\\
+        &\qquad \text{$\pSat{v}{}$ నిర్వచనం ప్రకారం};\\
+        \Leftrightarrow {} & \mSat/{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{ఆగమన పరికల్పన ప్రకారం}\\
+        \Leftrightarrow {} &
+        \mSat{M}{\SSubst{\lnot !B}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{$\mSat{M}{}[w]$ నిర్వచనం ప్రకారం}.
+      \end{align*}}
+    \sourcecorrection{OLTENMLTAU-001}{మూలంలో నిషేధ
+      సందర్భానికి prvFalse గుర్తు ఉంది; నిషేధ
+      నియమం ప్రకారం prvNotగా సరిచేశాం.}
+    \sourcecorrection{OLTENMLTAU-002}{మూలంలోని చివరి
+      వివరణ ప్రతిజ్ఞావాక్య సంతృప్తి నిర్వచనాన్ని
+      సూచిస్తుంది; ఈ దశలో మాత్రం లోకంలో
+      మోడల్ సంతృప్తి నిర్వచనం వర్తిస్తుంది.}}{}
+  \tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{%
+      \begin{align*}
+        \pSat{v}{!B \land !C} \Leftrightarrow {} &
+        \pSat{v}{!B} \text{ మరియు } \pSat{v}{!C}\\
+        &\qquad \text{$\pSat{v}{}$ నిర్వచనం ప్రకారం}\\
+        \Leftrightarrow {} &
+        \mSat{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+            \subst{!D_n}{p_n}}}[w] \text{ మరియు } \\
+        & \mSat{M}{\SSubst{!C}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{ఆగమన పరికల్పన ప్రకారం}\\
+        \Leftrightarrow{} &
+        \mSat{M}{\SSubst{(!B \land !C)}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{$\mSat{M}{}[w]$ నిర్వచనం ప్రకారం}.
+      \end{align*}}}{}
+  \tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{%
+      \begin{align*}
+        \pSat{v}{!B \lor !C} \Leftrightarrow{} &
+        \pSat{v}{!B} \text{ లేదా } \pSat{v}{!C}\\
+        &\qquad \text{$\pSat{v}{}$ నిర్వచనం ప్రకారం};\\
+        \Leftrightarrow{} & \mSat{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+            \subst{!D_n}{p_n}}}[w] \text{ లేదా }\\
+        & \mSat{M}{\SSubst{!C}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{ఆగమన పరికల్పన ప్రకారం}\\
+        \Leftrightarrow{} &
+        \mSat{M}{\SSubst{(!B \lor !C)}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{$\mSat{M}{}[w]$ నిర్వచనం ప్రకారం}.
+      \end{align*}}}{}
+  \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{%
+      \begin{align*}
+        \pSat{v}{!B \lif !C} \Leftrightarrow{} &
+        \pSat/{v}{!B} \text{ లేదా } \pSat{v}{!C}\\
+        &\qquad \text{$\pSat{v}{}$ నిర్వచనం ప్రకారం}\\
+        \Leftrightarrow{} &
+        \mSat/{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+            \subst{!D_n}{p_n}}}[w] \text{ లేదా }\\
+        & \mSat{M}{\SSubst{!C}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{ఆగమన పరికల్పన ప్రకారం}\\
+        \Leftrightarrow{} &
+        \mSat{M}{\SSubst{(!B \lif !C)}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{$\mSat{M}{}[w]$ నిర్వచనం ప్రకారం}.
+      \end{align*}}}{}
+  \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{%
+      \begin{align*}
+        \pSat{v}{!B \liff !C} \Leftrightarrow {} &
+        \text{రెండూ } \pSat{v}{!B} \text{ మరియు } \pSat{v}{!C}\\
+        & \text{లేదా రెండూ } \pSat/{v}{!B} \text{ మరియు } \pSat/{v}{!C}\\
+        &\qquad \text{$\pSat{v}{}$ నిర్వచనం ప్రకారం}\\
+        \Leftrightarrow {} &
+        \text{రెండూ } \mSat{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+            \subst{!D_n}{p_n}}}[w] \text{ మరియు }\\
+        & \qquad \mSat{M}{\SSubst{!C}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &  \text{ లేదా రెండూ } \mSat/{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+            \subst{!D_n}{p_n}}}[w] \text{ మరియు }\\
+        & \qquad \mSat/{M}{\SSubst{!C}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad\text{ఆగమన పరికల్పన ప్రకారం}\\
+        \Leftrightarrow {} &
+        \mSat{M}{\SSubst{(!B \liff !C)}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{$\mSat{M}{}[w]$ నిర్వచనం ప్రకారం}.
+      \end{align*}}
+    \sourcecorrection{OLTENMLTAU-003}{మూలంలో
+      ద్విసోపాధిక సందర్భపు మొదటి సూత్రంలో
+      lif ఉంది; సందర్భ శీర్షిక, రెండు
+      సత్య-అసత్య శాఖలు, చివరి సూత్రానికి
+      అనుగుణంగా liffగా సరిచేశాం.}}{}
+  \end{enumerate}
+  \end{proof}
+
+\begin{prop}\ollabel{prop:valid-taut}
+  ప్రతి సర్వసత్య ప్రతిస్థాపన నిదర్శనం చెల్లుబాటవుతుంది.
+\end{prop}
+
+\begin{proof}
+  వ్యతిరేక ప్రతిపాదనను నిరూపిద్దాం. ఏదో నమూనా
+  $\mModel{M}$లోని ఏదో లోకం~$w$ వద్ద
+  $\mSat/{M}{\SSubst{!A}{\subst{!D_1}{p_1}, \dots,
+  \subst{!D_n}{p_n}}}[w]$ అయ్యే $!A$ ఉందనుకుందాం.
+  $\pAssign{v}(p_i) = \True$ అప్పుడే, అప్పుడే
+  $\mSat{M}{!D_i}[w]$ అయ్యేలా ఒక కేటాయింపు
+  $\pAssign{v}$ను నిర్వచిద్దాం
+  (మరియు $q \notin \{p_1, \dots, p_n \}$కు
+  $\pAssign{v}$ ఏవైనా సత్యమూల్యాలను కేటాయిస్తుంది).
+  అప్పుడు \olref{lem:valid-taut} ప్రకారం
+  $\pSat/{v}{!A}$; కనుక $!A$ సర్వసత్యం కాదు.
+\end{proof}
+
+\end{document}
