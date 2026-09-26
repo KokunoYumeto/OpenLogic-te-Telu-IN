@@ -486,6 +486,23 @@ locations['TE-T102']=[
  L('content/many-valued-logic/syntax-and-semantics/sublogics.tex',36,38,37,42,'for any valuation','ఏ సత్యమూల్య కేటాయింపు'),
  L('content/many-valued-logic/syntax-and-semantics/sublogics.tex',70,75,83,91,'every tautology','ప్రతి సర్వసత్యమూ')
 ];
+locations['TE-T103']=[
+ L('content/many-valued-logic/three-valued-logics/three-valued-logics.tex',8,8,8,8,'Three-valued Logics','మూడు-విలువల తర్కాలు'),
+ L('content/many-valued-logic/three-valued-logics/introduction.tex',13,18,13,20,'three-valued logic','మూడు-విలువల తర్కం'),
+ L('content/many-valued-logic/three-valued-logics/introduction.tex',17,18,17,20,'designated','నిర్దేశిత విలువ'),
+ L('content/many-valued-logic/three-valued-logics/lukasiewicz.tex',11,11,11,11,'logic','తర్కం'),
+ L('content/many-valued-logic/three-valued-logics/lukasiewicz.tex',13,20,13,20,'future contingent','భవిష్యత్తుపై ఆధారపడిన'),
+ L('content/many-valued-logic/three-valued-logics/lukasiewicz.tex',22,40,21,43,'possible, but not necessary','సాధ్యమే, కాని తప్పనిసరి కాదు'),
+ L('content/many-valued-logic/three-valued-logics/lukasiewicz.tex',41,57,45,65,'truth functions','సత్యమూల్య ప్రమేయాలను'),
+ L('content/many-valued-logic/three-valued-logics/lukasiewicz.tex',59,75,67,84,'tautology','సర్వసత్యం'),
+ L('content/many-valued-logic/three-valued-logics/lukasiewicz.tex',77,84,86,96,'matrix','మాత్రికతో'),
+ L('content/many-valued-logic/three-valued-logics/lukasiewicz.tex',82,84,92,95,'designated value','నిర్దేశిత విలువ'),
+ L('content/many-valued-logic/three-valued-logics/lukasiewicz.tex',121,126,139,146,'classical tautologies','సాంప్రదాయిక సర్వసత్యాలు'),
+ L('content/many-valued-logic/three-valued-logics/lukasiewicz.tex',190,199,224,233,'relations hold','సంబంధాల్లో ఏవి'),
+ L('content/many-valued-logic/three-valued-logics/lukasiewicz.tex',201,204,235,242,'logic of possibility','సంభావ్యత తర్కాన్ని'),
+ L('content/many-valued-logic/three-valued-logics/lukasiewicz.tex',222,223,258,260,'possible','సాధ్యం'),
+ L('content/many-valued-logic/three-valued-logics/lukasiewicz.tex',231,240,270,283,'modal logic','మోడల్ తర్కపు')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -573,6 +590,7 @@ alternatives['TE-T099']=['గోడెల్ అంకీకరణ–నియ�
 alternatives['TE-T100']=['TE-P019లో ప్రత్యక్షంగా కనిపించే సత్యతావిలువకు బదులుగా ఈ సంచికలో స్థిరపడిన సత్యమూల్యం వాడుకను, TE-T033/095 అర్థపర గద్యంతో కలిపి కొనసాగించడం (ఎంపిక)','సత్యతావిలువ అనే స్థానిక సాక్ష్య రూపాన్ని సంచికలోని సమాన సందర్భాలకు ఒకేసారి మార్పు లేకుండా మాత్రమే ప్రతిష్ఠించడం (తిరస్కరణ; సందర్భానుసార సమీక్షకు తెరిచి ఉంది)','బహుమూల్య తర్కాన్ని తప్పనిసరిగా True విలువ కలిగిన వ్యవస్థగా చూపడం (తిరస్కరణ)','నిర్దేశిత విలువల కొత్త భావానికి స్థానిక ద్విమూల్య సత్య పట్టికనే ప్రత్యక్ష సాక్ష్యంగా ప్రకటించడం (తిరస్కరణ)','మూల కరణీయ సంఖ్యలను అకరణీయ సంఖ్యలుగా మార్చడం (తిరస్కరణ; TE-P006 భేదం ప్రత్యక్షంగా చూసాం)'];
 alternatives['TE-T101']=['స్థానసంఖ్యను n-స్థానిక సంయోజకంగా, మాత్రికను మూల నిర్వచించిన భాష–V–V^+–సత్యమూల్య ప్రమేయాల నిర్మాణంగా చదవడం (ఎంపిక)','మాత్రికను కేవలం సంఖ్యల దీర్ఘచతురస్ర పట్టికగా చదవడం (తిరస్కరణ)','గుణిత తర్కం, నిర్ణీతత్వ సంచాలకం పేర్లకు స్థానిక ద్విమూల్య తర్క పేజీలే నేరుగా సాక్ష్యమని ప్రకటించడం (తిరస్కరణ)','మూల n, 0, 1, 2 స్థానసంఖ్యలను వదిలేయడం (తిరస్కరణ)'];
 alternatives['TE-T102']=['కేటాయింపు, మూల్యాంకనం, సంతృప్తి, అనుగమనం అనే వేరు సంబంధాలను మూల మాత్రిక నిర్వచనాలకు అనుగుణంగా విడదీయడం; నాలుగు సంయోజకాలతో చరాల నుంచి నిర్మించిన సాధారణ భాగానికే పోలిక ఫలితాన్ని పరిమితం చేయడం (ఎంపిక)','కేటాయింపునే సూత్రాల సమితి అనుగమనానికి ఎడమ పదంగా చదవడం (తిరస్కరణ; మూల సంబంధానికి రకం సరిపోదు)','నాలుగు సంయోజకాల పరికల్పనల నుంచే భాషలోని అన్ని స్థిరాంకాలు, అదనపు సంయోజకాల విలువలూ నియంత్రితమవుతాయని ఊహించడం (తిరస్కరణ; ప్రతిదృష్టాంతం ఉంది)','స్థానిక ద్విమూల్య పేజీలు బహుమూల్య సంతృప్తి, ఉపతర్కం ప్రత్యేక పదజాలాన్ని నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T103']=['సత్యమూల్యం, సత్య పట్టిక, ప్రమేయం, ఫలితానికి ప్రత్యక్ష స్థానిక పేజీల వాడుకను; అనిర్ణీత మూడవ విలువ, భవిష్యత్ ఆధారిత వాక్యం, మోడల్ సాధ్యత/అనివార్యతకు స్థిర మూల పట్టికలు, TE-T053/100/102 అర్థ నియంత్రణను వేరుగా నమోదు చేయడం (ఎంపిక)','స్థానిక ద్విమూల్య పట్టికలే లూకాసియెవిచ్ మూడు-విలువల లేదా మోడల్ పదాలకు ప్రత్యక్ష సాక్ష్యమని చెప్పడం (తిరస్కరణ)','సాధ్యమే కాని తప్పనిసరి కాదు అనే చారిత్రక ఉపయోగాన్ని నేటి సాధారణ సాధ్యతతో ఒకటిగా చదవడం (తిరస్కరణ; మూల పాదటిప్పణి భేదం చెబుతుంది)','నాలుగు ముద్రిత పట్టికలే అసత్య స్థిరాంక విలువను నిర్బంధిస్తాయని ఊహించి దాని సంపాదకీయ చేర్పును దాచడం (తిరస్కరణ)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -589,7 +607,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T102 record the Batch 025--Batch 060 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T103 record the Batch 025--Batch 061 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -637,6 +655,10 @@ const correctionQuestions={
  'OLTEMVLSYN-001':'Does the final defTrue tag test close its empty false arm before the outer defined-symbol block closes, without changing the displayed connective list?',
  'OLTEMVLSUB-001':'Does the proposition and corollary now apply only to the variable-generated fragment using the four controlled connectives, with the uncontrolled lfalse counterexample disclosed?',
  'OLTEMVLSUB-002':'Does the final countervaluation satisfy Gamma and fail to satisfy B using the previously defined satisfaction relation, without putting a valuation on the left of formula-set entailment?',
+ 'OLTEMVLLUK-001':'Does the second conjunction term now reverse the False and Undef inputs, as the adjacent truth table requires?',
+ 'OLTEMVLLUK-002':'Does the standard L_0 matrix explicitly interpret its falsity constant as False, while disclosing that the four printed tables alone do not force this editorial completion?',
+ 'OLTEMVLLUK-003':'Was only the unmatched last parenthesis removed from the first non-tautology exercise formula?',
+ 'OLTEMVLLUK-004':'Does the modal counterexample evaluate to False for p=Undef by the printed conjunction, Diamond and negation tables, with its non-tautology conclusion preserved?',
  'OLTEPLSYN-002':'Does the material-conditional abbreviation read exactly as not A or B after removal of the source’s unmatched closing parenthesis?',
  'OLTEPLSYN-003':'Does the formation-sequence proof use syntactic identity, rather than semantic equivalence, for literal identity of symbol strings?',
  'OLTEPLSYN-004':'Does Local Determination unambiguously restrict agreement to variables occurring in the one fixed formula A?',

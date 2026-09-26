@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **391 of 722 source units drafted**. This readable view contains all 460 decisions and 903 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **394 of 722 source units drafted**. This readable view contains all 465 decisions and 922 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3018,6 +3018,46 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T102-OCC-013; OLP-0391; OLP-0391-B005; source upstream/content/many-valued-logic/syntax-and-semantics/sublogics.tex:11 bytes 187-243 SHA-256 1180052e6f39c499a3d55b43200ce6af0e92b3f2c5b55d416eaac29e96bb66a7; target translation/content/many-valued-logic/syntax-and-semantics/sublogics.tex:11 bytes 187-305 SHA-256 9c9d21d43a79a02a6e1743ccff8c28444edc10f660441aa286174ba35a723d79; reader page pending.
   - te-Telu-IN-TE-T102-OCC-014; OLP-0391; OLP-0391-B007; source upstream/content/many-valued-logic/syntax-and-semantics/sublogics.tex:23-39 bytes 831-1633 SHA-256 1180052e6f39c499a3d55b43200ce6af0e92b3f2c5b55d416eaac29e96bb66a7; target translation/content/many-valued-logic/syntax-and-semantics/sublogics.tex:24-52 bytes 1361-3940 SHA-256 9c9d21d43a79a02a6e1743ccff8c28444edc10f660441aa286174ba35a723d79; reader page pending.
   - te-Telu-IN-TE-T102-OCC-015; OLP-0391; OLP-0391-B009; source upstream/content/many-valued-logic/syntax-and-semantics/sublogics.tex:70-76 bytes 2985-3333 SHA-256 1180052e6f39c499a3d55b43200ce6af0e92b3f2c5b55d416eaac29e96bb66a7; target translation/content/many-valued-logic/syntax-and-semantics/sublogics.tex:83-92 bytes 5609-6443 SHA-256 9c9d21d43a79a02a6e1743ccff8c28444edc10f660441aa286174ba35a723d79; reader page pending.
+
+## te-Telu-IN-TE-T103 — three-valued logic / undetermined / future contingent / Łukasiewicz logic / truth function / designated value / tautology / possible / necessary / modal logic
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: మూడు-విలువల తర్కం / అనిర్ణీతం / భవిష్యత్తుపై ఆధారపడిన వాక్యం / Łukasiewicz తర్కం / సత్యమూల్య ప్రమేయం / నిర్దేశిత విలువ / సర్వసత్యం / సాధ్యం / తప్పనిసరి / మోడల్ తర్కం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “three-valued logic / undetermined / future contingent / Łukasiewicz logic / truth function / designated value / tautology / possible / necessary / modal logic” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: సత్యతావిలువ, ప్రతిజ్ఞావాక్య సంయోజకం, పట్టిక, ప్రమేయం, ఫలితం అనే సాధారణ పదజాలానికి ప్రత్యక్ష సాక్ష్యం ఉంది. మూడు-విలువల అనిర్ణీత స్థితి, చారిత్రక భావంలో సాధ్యమే కాని తప్పనిసరి కాని భవిష్యత్తు వాక్యం, మోడల్ సాధ్యత/అనివార్యత నామాలకు ఇక్కడ ప్రత్యక్ష స్థానిక సాక్ష్యం లేదు; మూల వ్యాఖ్యానం, పట్టికలకే వాటిని కట్టుబడి తాత్కాలికంగా వాడుతున్నాం. మూలంలో మిగిలిన అసత్య స్థిరాంక విలువను Falseగా చేర్చడం ఒక స్పష్టమైన సంపాదకీయ ఎంపిక; నాలుగు ముద్రిత పట్టికల నుంచి అది తప్పనిసరిగా రాదు.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్య తర్కపు పరిచయం, TE-P019లో సత్యతావిలువ, నిషేధం, సంయోగ సత్య పట్టిక, TE-P020లో వికల్ప సత్య పట్టిక, TE-P023లో ఫలితానికి సత్య పట్టిక పరీక్ష, TE-P011లో ప్రమేయం అనే గణిత పదాన్ని పేజీ చిత్రాల్లో ప్రత్యక్షంగా చూశాం. మూడు-విలువల/అనిర్ణీత విలువ, Łukasiewicz చారిత్రక ప్రేరణ, భవిష్యత్ ఆధారిత వాక్యం, నిర్దేశిత విలువ, సంభావ్యత/అనివార్యతల ప్రత్యేక మోడల్ అర్థం ఆ పేజీల్లో నేరుగా లేవు. OLP-0393–0394 స్థిర మూల నిర్వచనాలు, పట్టికలు, TE-T053 మోడల్ తర్కం, TE-T100/102 సత్యమూల్యం/మాత్రిక అర్థాలు ఈ ప్రత్యేక వాడుకను నియంత్రిస్తాయి. నాలుగు OLTEMVLLUK ఆడిట్ సవరణలకు స్థానిక పదజాలం కాదు, స్థిర మూల పట్టికలు, ముందరి భాష/మాత్రిక నిర్వచనాలే గణిత ఆధారం. మోడల్ తర్కం TE-T053లో ప్రకటించిన సాంకేతిక అరువు; Łukasiewicz, Aristotle, Warsaw వ్యక్తి/స్థల నామాలు మూలంతో గుర్తించదగినట్లు ఉంచాం. True, False, Undef, L_0, Diamond, Box, formula and valuation macros protected notation, not unexplained English headwords in prose.
+
+- Authorities checked: TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P020 [checked_context_only], PDF page 79; printed page 72; Disjunction heading and truth-table discussion; Direct disjunction and truth-table register; compound operator labels remain definition-controlled. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately.
+
+- Alternatives: సత్యమూల్యం, సత్య పట్టిక, ప్రమేయం, ఫలితానికి ప్రత్యక్ష స్థానిక పేజీల వాడుకను; అనిర్ణీత మూడవ విలువ, భవిష్యత్ ఆధారిత వాక్యం, మోడల్ సాధ్యత/అనివార్యతకు స్థిర మూల పట్టికలు, TE-T053/100/102 అర్థ నియంత్రణను వేరుగా నమోదు చేయడం [viable_alternative: ఎంపిక] | స్థానిక ద్విమూల్య పట్టికలే లూకాసియెవిచ్ మూడు-విలువల లేదా మోడల్ పదాలకు ప్రత్యక్ష సాక్ష్యమని చెప్పడం [viable_alternative: తిరస్కరణ] | సాధ్యమే కాని తప్పనిసరి కాదు అనే చారిత్రక ఉపయోగాన్ని నేటి సాధారణ సాధ్యతతో ఒకటిగా చదవడం [viable_alternative: తిరస్కరణ; మూల పాదటిప్పణి భేదం చెబుతుంది] | నాలుగు ముద్రిత పట్టికలే అసత్య స్థిరాంక విలువను నిర్బంధిస్తాయని ఊహించి దాని సంపాదకీయ చేర్పును దాచడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “మూడు-విలువల తర్కం / అనిర్ణీతం / భవిష్యత్తుపై ఆధారపడిన వాక్యం / Łukasiewicz తర్కం / సత్యమూల్య ప్రమేయం / నిర్దేశిత విలువ / సర్వసత్యం / సాధ్యం / తప్పనిసరి / మోడల్ తర్కం” is idiomatic and technically standard for “three-valued logic / undetermined / future contingent / Łukasiewicz logic / truth function / designated value / tautology / possible / necessary / modal logic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T103-OCC-001; OLP-0392; OLP-0392-B004; source upstream/content/many-valued-logic/three-valued-logics/three-valued-logics.tex:8 bytes 139-181 SHA-256 24ee5d0ab52f218eb4750bea0441cbdaf05d19cfa480cf2f92376dc0c697ecc3; target translation/content/many-valued-logic/three-valued-logics/three-valued-logics.tex:8 bytes 139-215 SHA-256 3a788c7a47e47b90614e84b7512b7e7ce82eb09adde381becfef6ba25ce7dac2; reader page pending.
+  - te-Telu-IN-TE-T103-OCC-002; OLP-0393; OLP-0393-B006; source upstream/content/many-valued-logic/three-valued-logics/introduction.tex:13-18 bytes 215-625 SHA-256 77b91c121cc775c602663a64f615c3604a32db5d61625d07dfc9ea30ab5047e1; target translation/content/many-valued-logic/three-valued-logics/introduction.tex:13-20 bytes 221-1166 SHA-256 1b0b44b6e5ffe01f6a18c769170fb0ed582a950e1110becb72dcd03df808e57f; reader page pending.
+  - te-Telu-IN-TE-T103-OCC-003; OLP-0393; OLP-0393-B006; source upstream/content/many-valued-logic/three-valued-logics/introduction.tex:13-18 bytes 215-625 SHA-256 77b91c121cc775c602663a64f615c3604a32db5d61625d07dfc9ea30ab5047e1; target translation/content/many-valued-logic/three-valued-logics/introduction.tex:13-20 bytes 221-1166 SHA-256 1b0b44b6e5ffe01f6a18c769170fb0ed582a950e1110becb72dcd03df808e57f; reader page pending.
+  - te-Telu-IN-TE-T103-OCC-004; OLP-0394; OLP-0394-B005; source upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:11 bytes 188-220 SHA-256 fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a; target translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:11 bytes 188-230 SHA-256 8d58323053847a3488e3f0d8eed84f03461d6e5e7e07d79cb44234df3b23d076; reader page pending.
+  - te-Telu-IN-TE-T103-OCC-005; OLP-0394; OLP-0394-B006; source upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:13-39 bytes 221-1880 SHA-256 fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a; target translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:13-43 bytes 231-3885 SHA-256 8d58323053847a3488e3f0d8eed84f03461d6e5e7e07d79cb44234df3b23d076; reader page pending.
+  - te-Telu-IN-TE-T103-OCC-006; OLP-0394; OLP-0394-B006; source upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:13-39 bytes 221-1880 SHA-256 fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a; target translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:13-43 bytes 231-3885 SHA-256 8d58323053847a3488e3f0d8eed84f03461d6e5e7e07d79cb44234df3b23d076; reader page pending.
+  - te-Telu-IN-TE-T103-OCC-007; OLP-0394; OLP-0394-B007; source upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:41-57 bytes 1881-2700 SHA-256 fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a; target translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:45-65 bytes 3886-5718 SHA-256 8d58323053847a3488e3f0d8eed84f03461d6e5e7e07d79cb44234df3b23d076; reader page pending.
+  - te-Telu-IN-TE-T103-OCC-008; OLP-0394; OLP-0394-B008; source upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:59-75 bytes 2701-3688 SHA-256 fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a; target translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:67-84 bytes 5719-7410 SHA-256 8d58323053847a3488e3f0d8eed84f03461d6e5e7e07d79cb44234df3b23d076; reader page pending.
+  - te-Telu-IN-TE-T103-OCC-009; OLP-0394; OLP-0394-B009; source upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:77-119 bytes 3689-5181 SHA-256 fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a; target translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:86-137 bytes 7411-10064 SHA-256 8d58323053847a3488e3f0d8eed84f03461d6e5e7e07d79cb44234df3b23d076; reader page pending.
+  - te-Telu-IN-TE-T103-OCC-010; OLP-0394; OLP-0394-B009; source upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:77-119 bytes 3689-5181 SHA-256 fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a; target translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:86-137 bytes 7411-10064 SHA-256 8d58323053847a3488e3f0d8eed84f03461d6e5e7e07d79cb44234df3b23d076; reader page pending.
+  - te-Telu-IN-TE-T103-OCC-011; OLP-0394; OLP-0394-B010; source upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:121-126 bytes 5182-5561 SHA-256 fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a; target translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:139-147 bytes 10065-10817 SHA-256 8d58323053847a3488e3f0d8eed84f03461d6e5e7e07d79cb44234df3b23d076; reader page pending.
+  - te-Telu-IN-TE-T103-OCC-012; OLP-0394; OLP-0394-B018; source upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:190-199 bytes 8211-8535 SHA-256 fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a; target translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:223-233 bytes 14854-15303 SHA-256 8d58323053847a3488e3f0d8eed84f03461d6e5e7e07d79cb44234df3b23d076; reader page pending.
+  - te-Telu-IN-TE-T103-OCC-013; OLP-0394; OLP-0394-B019; source upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:201-223 bytes 8536-9240 SHA-256 fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a; target translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:235-260 bytes 15304-16465 SHA-256 8d58323053847a3488e3f0d8eed84f03461d6e5e7e07d79cb44234df3b23d076; reader page pending.
+  - te-Telu-IN-TE-T103-OCC-014; OLP-0394; OLP-0394-B019; source upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:201-223 bytes 8536-9240 SHA-256 fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a; target translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:235-260 bytes 15304-16465 SHA-256 8d58323053847a3488e3f0d8eed84f03461d6e5e7e07d79cb44234df3b23d076; reader page pending.
+  - te-Telu-IN-TE-T103-OCC-015; OLP-0394; OLP-0394-B021; source upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:231-240 bytes 9450-10051 SHA-256 fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a; target translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:270-287 bytes 16765-18439 SHA-256 8d58323053847a3488e3f0d8eed84f03461d6e5e7e07d79cb44234df3b23d076; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -12406,3 +12446,107 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEMVLSUB-002-OCC-001; OLP-0391; OLP-0391-B010; source upstream/content/many-valued-logic/syntax-and-semantics/sublogics.tex:78-90 bytes 3334-4032 SHA-256 1180052e6f39c499a3d55b43200ce6af0e92b3f2c5b55d416eaac29e96bb66a7; target translation/content/many-valued-logic/syntax-and-semantics/sublogics.tex:109 bytes 7521-7613 SHA-256 9c9d21d43a79a02a6e1743ccff8c28444edc10f660441aa286174ba35a723d79; reader page pending.
+
+## te-Telu-IN-OLTEMVLLUK-001 — OLTEMVLLUK-001: duplicated conjunction argument order in symmetric case
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: సంయోగ ప్రదర్శనలో రెండవ భాగాన్ని తిరగవేసి, తరువాతి సత్య పట్టికకు సరిపోల్చి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited duplicated conjunction argument order in symmetric case at lukasiewicz.tex lines 54-55; compare conjunction truth table lines 91-100, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLLUK-20260926:OLTEMVLLUK-001 [checked_supports], content/many-valued-logic/three-valued-logics/lukasiewicz.tex; lukasiewicz.tex lines 54-55; compare conjunction truth table lines 91-100; duplicated_conjunction_argument_order_in_symmetric_case; సంయోగ ప్రదర్శనలో రెండవ భాగాన్ని తిరగవేసి, తరువాతి సత్య పట్టికకు సరిపోల్చి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the second conjunction term now reverse the False and Undef inputs, as the adjacent truth table requires?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLLUK-001-OCC-001; OLP-0394; OLP-0394-B007; source upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:41-57 bytes 1881-2700 SHA-256 fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a; target translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:59 bytes 4977-5050 SHA-256 8d58323053847a3488e3f0d8eed84f03461d6e5e7e07d79cb44234df3b23d076; reader page pending.
+
+## te-Telu-IN-OLTEMVLLUK-002 — OLTEMVLLUK-002: standard language matrix omits zero place falsity value
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: ప్రామాణిక భాషలోని అసత్య స్థిరాంకాన్ని జాబితాలో చేర్చి, దానికి అసత్య విలువను సంపాదకీయంగా కేటాయించి, మూల పట్టికలు దాన్ని నిర్బంధించవని వెల్లడించాం.
+
+- Intended sense: Repair the audited standard language matrix omits zero place falsity value at lukasiewicz.tex lines 77-120, 128-134; compare OLP-0386 and OLP-0388 matrix definitions, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLLUK-20260926:OLTEMVLLUK-002 [checked_supports], content/many-valued-logic/three-valued-logics/lukasiewicz.tex; lukasiewicz.tex lines 77-120, 128-134; compare OLP-0386 and OLP-0388 matrix definitions; standard_language_matrix_omits_zero_place_falsity_value; ప్రామాణిక భాషలోని అసత్య స్థిరాంకాన్ని జాబితాలో చేర్చి, దానికి అసత్య విలువను సంపాదకీయంగా కేటాయించి, మూల పట్టికలు దాన్ని నిర్బంధించవని వెల్లడించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the standard L_0 matrix explicitly interpret its falsity constant as False, while disclosing that the four printed tables alone do not force this editorial completion?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLLUK-002-OCC-001; OLP-0394; OLP-0394-B009; source upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:77-119 bytes 3689-5181 SHA-256 fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a; target translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:131 bytes 9260-9351 SHA-256 8d58323053847a3488e3f0d8eed84f03461d6e5e7e07d79cb44234df3b23d076; reader page pending.
+
+## te-Telu-IN-OLTEMVLLUK-003 — OLTEMVLLUK-003: unmatched closing parenthesis in exercise formula
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: సాధనలోని మొదటి సూత్రం చివరి జతలేని ముగింపు కుండలీకరణను మాత్రమే తీసేసి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited unmatched closing parenthesis in exercise formula at lukasiewicz.tex line 175, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLLUK-20260926:OLTEMVLLUK-003 [checked_supports], content/many-valued-logic/three-valued-logics/lukasiewicz.tex; lukasiewicz.tex line 175; unmatched_closing_parenthesis_in_exercise_formula; సాధనలోని మొదటి సూత్రం చివరి జతలేని ముగింపు కుండలీకరణను మాత్రమే తీసేసి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Was only the unmatched last parenthesis removed from the first non-tautology exercise formula?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLLUK-003-OCC-001; OLP-0394; OLP-0394-B016; source upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:172-179 bytes 7585-7855 SHA-256 fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a; target translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:208 bytes 13922-13993 SHA-256 8d58323053847a3488e3f0d8eed84f03461d6e5e7e07d79cb44234df3b23d076; reader page pending.
+
+## te-Telu-IN-OLTEMVLLUK-004 — OLTEMVLLUK-004: modal counterexample has wrong evaluated truth value
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: చివరి మోడల్ ప్రతిదృష్టాంత విలువను పట్టికల ప్రకారం అసత్యంగా మార్చి, మూడు దశల లెక్కను పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited modal counterexample has wrong evaluated truth value at lukasiewicz.tex lines 231-240; compare conjunction, possibility and negation tables, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLLUK-20260926:OLTEMVLLUK-004 [checked_supports], content/many-valued-logic/three-valued-logics/lukasiewicz.tex; lukasiewicz.tex lines 231-240; compare conjunction, possibility and negation tables; modal_counterexample_has_wrong_evaluated_truth_value; చివరి మోడల్ ప్రతిదృష్టాంత విలువను పట్టికల ప్రకారం అసత్యంగా మార్చి, మూడు దశల లెక్కను పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the modal counterexample evaluate to False for p=Undef by the printed conjunction, Diamond and negation tables, with its non-tautology conclusion preserved?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLLUK-004-OCC-001; OLP-0394; OLP-0394-B021; source upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:231-240 bytes 9450-10051 SHA-256 fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a; target translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:282 bytes 17838-17905 SHA-256 8d58323053847a3488e3f0d8eed84f03461d6e5e7e07d79cb44234df3b23d076; reader page pending.

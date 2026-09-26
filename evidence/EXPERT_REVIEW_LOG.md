@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 391 of 722 draft units**. This log contains 102 terminology/sense decisions and 358 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 394 of 722 draft units**. This log contains 103 terminology/sense decisions and 362 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2455,6 +2455,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: సత్యతావిలువ, ఫలితం, సమితి, ప్రమేయం సాధారణ పదజాలానికి స్థానిక ఆధారం ఉంది. బహుమూల్య సంతృప్తి, ఉపతర్కం, సాధారణ భాగం, అర్థపర నిగమన సిద్ధాంతం అనే ప్రత్యేక కూర్పులకు ప్రత్యక్ష నామసాక్ష్యం లేదు; వాటిని మూల నిర్వచనాలకే కట్టుబడి తాత్కాలికంగా వాడుతున్నాం.
 
 - Please double-check: Please double-check whether “సత్యమూల్య కేటాయింపు / మూల్యాంకనం / సంతృప్తి / సంతృప్తిపరచదగినది / సర్వసత్యం / అర్థపర అనుగమనం / అర్థపర భావనలు / ఏకదిశత / సంక్రమణశీలత / మోడస్ పోనెన్స్ / అర్థపర నిగమన సిద్ధాంతం / ఉపతర్కం / సాధారణ భాగం” is idiomatic and technically standard for “valuation / evaluation / satisfaction / satisfiable / tautology / entailment / semantic notions / monotonicity / transitivity / modus ponens / semantic deduction theorem / sublogic / common fragment” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T103 — three-valued logic / undetermined / future contingent / Łukasiewicz logic / truth function / designated value / tautology / possible / necessary / modal logic
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: మూడు-విలువల తర్కం / అనిర్ణీతం / భవిష్యత్తుపై ఆధారపడిన వాక్యం / Łukasiewicz తర్కం / సత్యమూల్య ప్రమేయం / నిర్దేశిత విలువ / సర్వసత్యం / సాధ్యం / తప్పనిసరి / మోడల్ తర్కం
+
+- Exact implementation: OLP-0392; many-valued-logic/three-valued-logics/three-valued-logics; content/many-valued-logic/three-valued-logics/three-valued-logics.tex:8 ↔ translation/content/many-valued-logic/three-valued-logics/three-valued-logics.tex:8 (OLP-0392-B004); printed/PDF page pending; OLP-0393; many-valued-logic/three-valued-logics/introduction; content/many-valued-logic/three-valued-logics/introduction.tex:13-18 ↔ translation/content/many-valued-logic/three-valued-logics/introduction.tex:13-20 (OLP-0393-B006); printed/PDF page pending; OLP-0393; many-valued-logic/three-valued-logics/introduction; content/many-valued-logic/three-valued-logics/introduction.tex:13-18 ↔ translation/content/many-valued-logic/three-valued-logics/introduction.tex:13-20 (OLP-0393-B006); printed/PDF page pending; OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; content/many-valued-logic/three-valued-logics/lukasiewicz.tex:11 ↔ translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:11 (OLP-0394-B005); printed/PDF page pending; OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; content/many-valued-logic/three-valued-logics/lukasiewicz.tex:13-39 ↔ translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:13-43 (OLP-0394-B006); printed/PDF page pending; OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; content/many-valued-logic/three-valued-logics/lukasiewicz.tex:13-39 ↔ translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:13-43 (OLP-0394-B006); printed/PDF page pending; OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; content/many-valued-logic/three-valued-logics/lukasiewicz.tex:41-57 ↔ translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:45-65 (OLP-0394-B007); printed/PDF page pending; OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; content/many-valued-logic/three-valued-logics/lukasiewicz.tex:59-75 ↔ translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:67-84 (OLP-0394-B008); printed/PDF page pending; OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; content/many-valued-logic/three-valued-logics/lukasiewicz.tex:77-119 ↔ translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:86-137 (OLP-0394-B009); printed/PDF page pending; OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; content/many-valued-logic/three-valued-logics/lukasiewicz.tex:77-119 ↔ translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:86-137 (OLP-0394-B009); printed/PDF page pending; OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; content/many-valued-logic/three-valued-logics/lukasiewicz.tex:121-126 ↔ translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:139-147 (OLP-0394-B010); printed/PDF page pending; OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; content/many-valued-logic/three-valued-logics/lukasiewicz.tex:190-199 ↔ translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:223-233 (OLP-0394-B018); printed/PDF page pending; OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; content/many-valued-logic/three-valued-logics/lukasiewicz.tex:201-223 ↔ translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:235-260 (OLP-0394-B019); printed/PDF page pending; OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; content/many-valued-logic/three-valued-logics/lukasiewicz.tex:201-223 ↔ translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:235-260 (OLP-0394-B019); printed/PDF page pending; OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; content/many-valued-logic/three-valued-logics/lukasiewicz.tex:231-240 ↔ translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:270-287 (OLP-0394-B021); printed/PDF page pending
+
+- Authorities actually checked: TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P020, PDF 79, printed 72, Disjunction heading and truth-table discussion; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్య తర్కపు పరిచయం, TE-P019లో సత్యతావిలువ, నిషేధం, సంయోగ సత్య పట్టిక, TE-P020లో వికల్ప సత్య పట్టిక, TE-P023లో ఫలితానికి సత్య పట్టిక పరీక్ష, TE-P011లో ప్రమేయం అనే గణిత పదాన్ని పేజీ చిత్రాల్లో ప్రత్యక్షంగా చూశాం. మూడు-విలువల/అనిర్ణీత విలువ, Łukasiewicz చారిత్రక ప్రేరణ, భవిష్యత్ ఆధారిత వాక్యం, నిర్దేశిత విలువ, సంభావ్యత/అనివార్యతల ప్రత్యేక మోడల్ అర్థం ఆ పేజీల్లో నేరుగా లేవు. OLP-0393–0394 స్థిర మూల నిర్వచనాలు, పట్టికలు, TE-T053 మోడల్ తర్కం, TE-T100/102 సత్యమూల్యం/మాత్రిక అర్థాలు ఈ ప్రత్యేక వాడుకను నియంత్రిస్తాయి. నాలుగు OLTEMVLLUK ఆడిట్ సవరణలకు స్థానిక పదజాలం కాదు, స్థిర మూల పట్టికలు, ముందరి భాష/మాత్రిక నిర్వచనాలే గణిత ఆధారం. మోడల్ తర్కం TE-T053లో ప్రకటించిన సాంకేతిక అరువు; Łukasiewicz, Aristotle, Warsaw వ్యక్తి/స్థల నామాలు మూలంతో గుర్తించదగినట్లు ఉంచాం. True, False, Undef, L_0, Diamond, Box, formula and valuation macros protected notation, not unexplained English headwords in prose.
+
+- Alternatives: సత్యమూల్యం, సత్య పట్టిక, ప్రమేయం, ఫలితానికి ప్రత్యక్ష స్థానిక పేజీల వాడుకను; అనిర్ణీత మూడవ విలువ, భవిష్యత్ ఆధారిత వాక్యం, మోడల్ సాధ్యత/అనివార్యతకు స్థిర మూల పట్టికలు, TE-T053/100/102 అర్థ నియంత్రణను వేరుగా నమోదు చేయడం (ఎంపిక); స్థానిక ద్విమూల్య పట్టికలే లూకాసియెవిచ్ మూడు-విలువల లేదా మోడల్ పదాలకు ప్రత్యక్ష సాక్ష్యమని చెప్పడం (తిరస్కరణ); సాధ్యమే కాని తప్పనిసరి కాదు అనే చారిత్రక ఉపయోగాన్ని నేటి సాధారణ సాధ్యతతో ఒకటిగా చదవడం (తిరస్కరణ; మూల పాదటిప్పణి భేదం చెబుతుంది); నాలుగు ముద్రిత పట్టికలే అసత్య స్థిరాంక విలువను నిర్బంధిస్తాయని ఊహించి దాని సంపాదకీయ చేర్పును దాచడం (తిరస్కరణ)
+
+- Uncertainty: సత్యతావిలువ, ప్రతిజ్ఞావాక్య సంయోజకం, పట్టిక, ప్రమేయం, ఫలితం అనే సాధారణ పదజాలానికి ప్రత్యక్ష సాక్ష్యం ఉంది. మూడు-విలువల అనిర్ణీత స్థితి, చారిత్రక భావంలో సాధ్యమే కాని తప్పనిసరి కాని భవిష్యత్తు వాక్యం, మోడల్ సాధ్యత/అనివార్యత నామాలకు ఇక్కడ ప్రత్యక్ష స్థానిక సాక్ష్యం లేదు; మూల వ్యాఖ్యానం, పట్టికలకే వాటిని కట్టుబడి తాత్కాలికంగా వాడుతున్నాం. మూలంలో మిగిలిన అసత్య స్థిరాంక విలువను Falseగా చేర్చడం ఒక స్పష్టమైన సంపాదకీయ ఎంపిక; నాలుగు ముద్రిత పట్టికల నుంచి అది తప్పనిసరిగా రాదు.
+
+- Please double-check: Please double-check whether “మూడు-విలువల తర్కం / అనిర్ణీతం / భవిష్యత్తుపై ఆధారపడిన వాక్యం / Łukasiewicz తర్కం / సత్యమూల్య ప్రమేయం / నిర్దేశిత విలువ / సర్వసత్యం / సాధ్యం / తప్పనిసరి / మోడల్ తర్కం” is idiomatic and technically standard for “three-valued logic / undetermined / future contingent / Łukasiewicz logic / truth function / designated value / tautology / possible / necessary / modal logic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -11047,3 +11071,99 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Does the final countervaluation satisfy Gamma and fail to satisfy B using the previously defined satisfaction relation, without putting a valuation on the left of formula-set entailment?
+
+## REV-OLTEMVLLUK-001 — OLTEMVLLUK-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: సంయోగ ప్రదర్శనలో రెండవ భాగాన్ని తిరగవేసి, తరువాతి సత్య పట్టికకు సరిపోల్చి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; lukasiewicz.tex lines 54-55; compare conjunction truth table lines 91-100 ↔ translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:59 (OLP-0394-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLLUK-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: సంయోగ ప్రదర్శనలో రెండవ భాగాన్ని తిరగవేసి, తరువాతి సత్య పట్టికకు సరిపోల్చి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the second conjunction term now reverse the False and Undef inputs, as the adjacent truth table requires?
+
+## REV-OLTEMVLLUK-002 — OLTEMVLLUK-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: ప్రామాణిక భాషలోని అసత్య స్థిరాంకాన్ని జాబితాలో చేర్చి, దానికి అసత్య విలువను సంపాదకీయంగా కేటాయించి, మూల పట్టికలు దాన్ని నిర్బంధించవని వెల్లడించాం.
+
+- Exact implementation: OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; lukasiewicz.tex lines 77-120, 128-134; compare OLP-0386 and OLP-0388 matrix definitions ↔ translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:131 (OLP-0394-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLLUK-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: ప్రామాణిక భాషలోని అసత్య స్థిరాంకాన్ని జాబితాలో చేర్చి, దానికి అసత్య విలువను సంపాదకీయంగా కేటాయించి, మూల పట్టికలు దాన్ని నిర్బంధించవని వెల్లడించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the standard L_0 matrix explicitly interpret its falsity constant as False, while disclosing that the four printed tables alone do not force this editorial completion?
+
+## REV-OLTEMVLLUK-003 — OLTEMVLLUK-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: సాధనలోని మొదటి సూత్రం చివరి జతలేని ముగింపు కుండలీకరణను మాత్రమే తీసేసి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; lukasiewicz.tex line 175 ↔ translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:208 (OLP-0394-B016); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLLUK-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: సాధనలోని మొదటి సూత్రం చివరి జతలేని ముగింపు కుండలీకరణను మాత్రమే తీసేసి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Was only the unmatched last parenthesis removed from the first non-tautology exercise formula?
+
+## REV-OLTEMVLLUK-004 — OLTEMVLLUK-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: చివరి మోడల్ ప్రతిదృష్టాంత విలువను పట్టికల ప్రకారం అసత్యంగా మార్చి, మూడు దశల లెక్కను పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; lukasiewicz.tex lines 231-240; compare conjunction, possibility and negation tables ↔ translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:282 (OLP-0394-B021); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLLUK-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: చివరి మోడల్ ప్రతిదృష్టాంత విలువను పట్టికల ప్రకారం అసత్యంగా మార్చి, మూడు దశల లెక్కను పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the modal counterexample evaluate to False for p=Undef by the printed conjunction, Diamond and negation tables, with its non-tautology conclusion preserved?

@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 391 of 722 draft units**. This view selects 411 of 460 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 394 of 722 draft units**. This view selects 415 of 465 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4113,3 +4113,43 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0391; many-valued-logic/syntax-and-semantics/sublogics; translation/content/many-valued-logic/syntax-and-semantics/sublogics.tex:109; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the final countervaluation satisfy Gamma and fail to satisfy B using the previously defined satisfaction relation, without putting a valuation on the left of formula-set entailment?
+
+## REV-OLTEMVLLUK-001 — OLTEMVLLUK-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సంయోగ ప్రదర్శనలో రెండవ భాగాన్ని తిరగవేసి, తరువాతి సత్య పట్టికకు సరిపోల్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:59; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the second conjunction term now reverse the False and Undef inputs, as the adjacent truth table requires?
+
+## REV-OLTEMVLLUK-002 — OLTEMVLLUK-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రామాణిక భాషలోని అసత్య స్థిరాంకాన్ని జాబితాలో చేర్చి, దానికి అసత్య విలువను సంపాదకీయంగా కేటాయించి, మూల పట్టికలు దాన్ని నిర్బంధించవని వెల్లడించాం.
+
+- Occurrences: OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:131; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the standard L_0 matrix explicitly interpret its falsity constant as False, while disclosing that the four printed tables alone do not force this editorial completion?
+
+## REV-OLTEMVLLUK-003 — OLTEMVLLUK-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సాధనలోని మొదటి సూత్రం చివరి జతలేని ముగింపు కుండలీకరణను మాత్రమే తీసేసి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:208; printed/PDF page pending
+
+- Please double-check: Please double-check: Was only the unmatched last parenthesis removed from the first non-tautology exercise formula?
+
+## REV-OLTEMVLLUK-004 — OLTEMVLLUK-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: చివరి మోడల్ ప్రతిదృష్టాంత విలువను పట్టికల ప్రకారం అసత్యంగా మార్చి, మూడు దశల లెక్కను పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0394; many-valued-logic/three-valued-logics/lukasiewicz; translation/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:282; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the modal counterexample evaluate to False for p=Undef by the printed conjunction, Diamond and negation tables, with its non-tautology conclusion preserved?
