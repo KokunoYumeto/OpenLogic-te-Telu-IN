@@ -1,0 +1,317 @@
+% Part: many-valued-logic
+% Chapter: three-valued-logics
+% Section: multiple-designation
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{thr}{mul}
+
+\olsection{$\True$ మాత్రమే కాక ఇతర విలువలనూ నిర్దేశించడం}
+
+ఇప్పటివరకు చూసిన తర్కాలన్నిటిలో నిర్దేశిత
+సత్యమూల్యాల సమితి $V^+ = \{\True\}$;
+అంటే ఒక దాని సత్యమూల్యం~$\True$ అయితేనే
+దాన్ని నిజంగా పరిగణించాం. కానీ దాని విలువ
+~$\False$ కాకపోయినా నిజంగా పరిగణించవచ్చు.
+ఉదాహరణకు మాత్రికలో $V^+ = \{\True, \Undef\}$
+అని నిర్దేశిస్తే మరో తర్కం లభిస్తుంది.
+
+\begin{defn}
+\emph{వైరుధ్యాభాస తర్కం}~$\LogLP$ను కింది
+మాత్రికతో నిర్వచిస్తాం:
+\begin{enumerate}
+  \item చరాల నుంచి $\lnot$, $\land$, $\lor$, $\lif$
+  సంయోజకాలతో మాత్రమే నిర్మించిన ప్రామాణిక
+  ప్రతిజ్ఞావాక్య భాష $\Lang L_0$ యొక్క ఉపభాష.
+  \item సత్యమూల్యాల సమితి $V = \{\True, \Undef, \False\}$.
+  \item $\True$, $\Undef$లు నిర్దేశిత విలువలు;
+  అంటే $V^+ = \{\True, \Undef\}$.
+  \item సత్యమూల్య ప్రమేయాలు బలమైన క్లీని
+  తర్కంలో ఉన్నట్లే ఉంటాయి.
+\end{enumerate}
+\sourcecorrection{OLTEMVLMUL-001}{ఆంగ్ల మూలం
+ప్రామాణిక భాషను పేర్కొన్నా, దానిలోని అసత్య
+స్థిరాంకానికి విలువ ఇవ్వలేదు. బలమైన క్లీని
+మాత్రికతో పంచుకునే నాలుగు సంయోజకాల
+చర-ఆధారిత ఉపభాషకే ఇక్కడి నిర్వచనాన్ని
+పరిమితం చేశాం.}
+\end{defn}
+
+\begin{defn}
+హాల్డెన్ యొక్క \emph{అర్థరహిత తర్కం}~$\LogHal$ను
+కింది మాత్రికతో నిర్వచిస్తాం:
+\begin{enumerate}
+  \item చరాల నుంచి $\lnot$, $\land$, $\lor$, $\lif$
+  సంయోజకాలతో నిర్మించిన ప్రామాణిక
+  ప్రతిజ్ఞావాక్య భాష $\Lang L_0$ ఉపభాషకు
+  $1$-స్థానిక సంయోజకం~$+$ను చేర్చిన భాష.
+  \item సత్యమూల్యాల సమితి $V = \{\True, \Undef, \False\}$.
+  \item $\True$, $\Undef$లు నిర్దేశిత విలువలు;
+  అంటే $V^+ = \{\True, \Undef\}$.
+  \item సత్యమూల్య ప్రమేయాలు బలహీనమైన క్లీని
+  తర్కంలో ఉన్నట్లే ఉంటాయి; అదనంగా
+  “అర్థరహితం” అనే సంచాలకం ఉంది:
+  \begin{center}
+    \begin{tabular}{c|c}
+    $\tf{+}$ & \\
+    \hline
+    $\True$ & $\False$ \\
+    $\Undef$ & $\True$ \\
+    $\False$ & $\False$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\sourcecorrection{OLTEMVLMUL-002}{ఆంగ్ల మూలం
+ప్రామాణిక భాష అని చెప్పి అసత్య స్థిరాంకాన్ని
+జాబితాలోనూ పట్టికల్లోనూ ఇవ్వలేదు. బలహీన
+క్లీని తర్కపు నాలుగు సంయోజకాల ఉపభాషకు
+అదనపు ఏకస్థానిక సంయోజకాన్ని చేర్చిన
+భాషగా ఇక్కడ స్పష్టం చేశాం.}
+\end{defn}
+
+సత్య పట్టికలు పంచుకునే క్లీని తర్కాలకు
+భిన్నంగా, ఈ తర్కాల్లో \emph{సర్వసత్యాలు ఉన్నాయి}.
+
+\begin{prop}\ollabel{prop:LP-taut-CL}
+  సాధారణ నాలుగు-సంయోజక భాషలో $\LogLP$
+  సర్వసత్యాలే సాంప్రదాయిక ప్రతిజ్ఞావాక్య
+  తర్కపు సర్వసత్యాలు.
+\sourcecorrection{OLTEMVLMUL-003}{భాషల
+పరిధులు భిన్నంగా ఉండకుండా, ఈ సమానత్వ
+వాదాన్ని రెండు తర్కాలకూ ఉమ్మడిగా ఉన్న
+నాలుగు-సంయోజక భాగానికి పరిమితం చేశాం.
+ప్రామాణిక భాషలోని అసత్య స్థిరాంకం ఈ
+మాత్రికలో నిర్వచించబడలేదు.}
+\end{prop}
+
+\begin{proof}
+  \olref[syn][sub]{prop:mvl-cl} ప్రకారం
+  $\Entails[\LogLP] !A$ అయితే
+  $\Entails[\LogCL] !A$. తిరుగు దిశను
+చూపడానికి, $\pAssign v\colon \PVar \to \{\False, \True,
+  \Undef\}$ అనే \tetoken{సత్యమూల్య కేటాయింపులో}{!!a{valuation}}~
+  $\pValue v(!A)[\LogKs] = \False$ అయితే,
+  $\pAssign {v'}\colon \PVar \to \{\False, \True\}$
+  అనే \tetoken{సత్యమూల్య కేటాయింపులో}{!!a{valuation}}~
+  $\pValue {v'}(!A)[\LogCL] = \False$ అవుతుందని
+  చూపుతాం. దీనితో $\LogLP$కు ఫలితం
+స్థాపితమవుతుంది: $\LogKs$, $\LogLP$లకు
+ఒకే లక్షణాత్మక సత్యమూల్య ప్రమేయాలు ఉన్నాయి;
+$\LogLP$లో నిర్దేశితం కాని ఏకైక సత్యమూల్యం
+  $\False$ మాత్రమే. $\LogLP$,~$\LogKs$ల
+  మధ్య తేడా ఇదొక్కటే. కనుక
+  $\Entails/[\LogLP] !A$ అయితే, ఏదో
+  \tetoken{సత్యమూల్య కేటాయింపులో}{!!{valuation}}~
+  $\pAssign v$ వద్ద $\pValue v(!A)[\LogLP] = \pValue
+  v[\LogKs](!A) = \False$. మనం నిరూపించే
+వాదం ప్రకారం $\pValue{v'}[\LogCL](!A) = \False$;
+అంటే $\Entails/[\LogCL] !A$.
+
+  ఈ వాదాన్ని స్థాపించడానికి మొదట
+  $\pAssign {v'}$ను ఇలా నిర్వచిస్తాం:
+  \[
+    \pAssign {v'}(p) =
+    \begin{cases}
+    \True & \text{ఒకవేళ } \pAssign {v}(p) \in \{\True, \Undef\}\\
+    \False & \text{లేకపోతే}
+  \end{cases}
+  \]
+  ఇప్పుడు $!A$పై ఆగమన పద్ధతిలో రెండు
+విషయాలను చూపుతాం: (a)~$\pValue v(!A)[\LogKs]
+  = \False$ అయితే $\pValue {v'}(!A)[\LogCL] = \False$;
+  (b)~$\pValue v(!A)[\LogKs] = \True$ అయితే
+  $\pValue {v'}(!A)[\LogCL] =
+  \True$.
+  \begin{enumerate}
+    \item ఆగమన ఆధారం: $!A \ident p$.
+    \olref[syn][val]{defn:pValue} ప్రకారం
+    $\pValue v(!A)[\LogKs] = \pAssign v(p)$,
+    అలాగే $\pValue {v'}(!A)[\LogCL] =
+    \pAssign {v'}(p)$. మొదటి విలువ
+    అసత్యం లేదా సత్యం అయినప్పుడు
+    నిర్వచనం ప్రకారం రెండవ విలువ
+    వరుసగా అసత్యం లేదా సత్యం;
+    అందువల్ల (a), (b) రెండూ నిలుస్తాయి.
+    \sourcecorrection{OLTEMVLMUL-004}{ఆంగ్ల
+    మూలం చరం అనిర్ణీతంగా ఉన్నప్పుడూ రెండు
+    కేటాయింపుల విలువలు సమానమని వ్రాసింది.
+    అనిర్ణీత విలువను రెండవ కేటాయింపు
+    సత్యంగా మార్చుతుంది; కావలసిన
+    అసత్య-సత్య సంరక్షణ వాదాలను మాత్రమే
+    ఇక్కడ నిరూపించాం.}
+
+    ఆగమన దశలో కింది సందర్భాలు చూడండి:
+    \item $!A \ident \lnot !B$.
+    \begin{enumerate}
+      \item $\pValue v(\lnot!B)[\LogKs] = \False$
+      అనుకుందాం. $\tf{\lnot}[\LogKs]$ నిర్వచనం
+      ప్రకారం $\pValue v(!B)[\LogKs]  =
+      \True$. ఆగమన పరికల్పనలోని (b) ప్రకారం
+      $\pValue {v'}(!B)[\LogCL]  = \True$;
+      కాబట్టి $\pValue {v'}(\lnot !B)[\LogCL] = \False$.
+      \item $\pValue v(\lnot!B)[\LogKs] = \True$
+      అనుకుందాం. $\tf{\lnot}[\LogKs]$ నిర్వచనం
+      ప్రకారం $\pValue v(!B)[\LogKs]  =
+      \False$. ఆగమన పరికల్పనలోని (a) ప్రకారం
+      $\pValue {v'}(!B)[\LogCL]  = \False$;
+      కాబట్టి $\pValue {v'}(\lnot !B)[\LogCL] = \True$.
+    \end{enumerate}
+
+    \item $!A \ident (!B \land !C)$.
+    \begin{enumerate}
+      \item $\pValue v(!B \land !C)[\LogKs] = \False$
+      అనుకుందాం. $\tf{\land}[\LogKs]$ నిర్వచనం
+      ప్రకారం $\pValue v(!B)[\LogKs]  =
+      \False$ లేదా $\pValue v(!C)[\LogKs]  =
+      \False$. ఆగమన పరికల్పనలోని (a) ప్రకారం
+      $\pValue {v'}(!B)[\LogCL]  = \False$
+      లేదా $\pValue {v'}(!C)[\LogCL]  = \False$;
+      కాబట్టి $\pValue {v'}(!B \land
+      !C)[\LogCL] = \False$.
+      \item $\pValue v(!B \land !C)[\LogKs] = \True$
+      అనుకుందాం. $\tf{\land}[\LogKs]$ నిర్వచనం
+      ప్రకారం $\pValue v(!B)[\LogKs]  =
+      \True$ మరియు $\pValue v(!C)[\LogKs]  =
+      \True$. ఆగమన పరికల్పనలోని (b) ప్రకారం
+      $\pValue {v'}(!B)[\LogCL]  = \True$
+      మరియు $\pValue {v'}(!C)[\LogCL]  = \True$;
+      కాబట్టి $\pValue {v'}(!B \land
+      !C)[\LogCL] = \True$.
+    \end{enumerate}
+    \sourcecorrection{OLTEMVLMUL-005}{ఆంగ్ల మూలం
+    సంయోగంలో రెండు సందర్భాల్లోనూ రెండవ
+    భాగం స్థానంలో మొదటి భాగాన్నే మళ్లీ
+    పేర్కొంది. పట్టిక, ఆగమన పరికల్పన,
+    చివరి నిర్ధారణకు సరిపోయేలా రెండవ
+    భాగాన్ని స్పష్టం చేశాం.}
+  \end{enumerate}
+
+  మిగిలిన రెండు సందర్భాలు ఇదే విధంగా
+నిరూపించవచ్చు; వాటిని సాధనలుగా వదిలాం.
+మరో విధంగా, పై నిరూపణ $\lnot$,
+~$\land$ మాత్రమే కలిగిన అన్ని
+\tetoken{సూత్రాలకు}{!!{formula}s} ఫలితాన్ని
+స్థాపిస్తుంది. ఇప్పుడు $\LogKs$,
+$\LogCL$ రెండింటిలోనూ ఏ $\pAssign v$కైనా
+$\pValue v(!B \lor
+  !C) = \pValue v(\lnot(\lnot!B \land \lnot !C))$
+మరియు $\pValue v(!B \lif
+  !C) = \pValue v(\lnot(!B \land \lnot !C))$
+అనే వాస్తవాలను వాడవచ్చు.
+\end{proof}
+
+\begin{prob}
+  \olref[mvl][thr][mul]{prop:LP-taut-CL}
+  నిరూపణను పూర్తి చేయండి. అంటే
+  $!A \ident (!B \lor !C)$, $!A \ident (!B \lif !C)$
+  సందర్భాల్లో (a), (b)లను స్థాపించండి.
+\end{prob}
+
+\begin{prob}
+ప్రతి సాంప్రదాయిక సర్వసత్యమూ~$\LogHal$లో
+సర్వసత్యమని నిరూపించండి.
+\end{prob}
+
+సాధారణ నాలుగు-సంయోజక భాషలో సాంప్రదాయిక
+తర్కంతో ఒకే సర్వసత్యాలు ఉన్నప్పటికీ, ఈ
+తర్కాల పర్యవసాన సంబంధాలు వేరు.
+ఉదాహరణకు $\LogLP$ \emph{విస్ఫోటనరహిత}
+తర్కం: $\lnot p, p \Entails/ q$.
+కాబట్టి విస్ఫోటన సూత్రం
+$\lnot !A, !A \Entails !B$ సాధారణంగా
+నిలవదు. కొన్ని $!A$, $!B$ సందర్భాల్లో,
+ఉదాహరణకు $!B$~సర్వసత్యమైతే, అది నిలుస్తుంది.
+\sourcecorrection{OLTEMVLMUL-006}{ఆంగ్ల
+మూలంలోని “ఒకే సర్వసత్యాలు” వాదాన్ని
+రెండు తర్కాలకూ, సాంప్రదాయిక తర్కానికీ
+ఉమ్మడిగా ఉన్న నాలుగు-సంయోజక భాషకే
+పరిమితం చేశాం. హాల్డెన్ తర్కానికి
+అదనపు సంచాలకం ఉంది కాబట్టి మొత్తం
+సూత్ర సమితులను నేరుగా సమానమనలేం.}
+
+\begin{prob}
+  కింది సంబంధాల్లో ఏవి (a)~$\LogLP$లో,
+  (b)~$\LogHal$లో నిలుస్తాయి?
+  ప్రతిదానికీ సత్య పట్టిక ఇవ్వండి.
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $\lnot q, p \lif q \Entails \lnot p$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $\lnot p, p \Entails q$
+    \item $p \Entails p \lor q$
+    \item $p \lif q, q\lif r \Entails p \lif r$
+  \end{enumerate}
+\end{prob}
+
+$\LogLuk[3]$లో $\Undef$ను నిర్దేశిత
+విలువగా తీసుకుంటే ఏమవుతుంది?
+
+\begin{defn}
+  \emph{మూడు-విలువల ఆర్-మింగిల్}
+  తర్కం~$\LogRM[3]$ను కింది మాత్రికతో
+  నిర్వచిస్తాం:
+  \begin{enumerate}
+    \item $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$
+    సంయోజకాలు గల ప్రామాణిక ప్రతిజ్ఞావాక్య
+    భాష $\Lang L_0$.
+    \item సత్యమూల్యాల సమితి $V = \{\True, \Undef, \False\}$.
+    \item $\True$, $\Undef$లు నిర్దేశిత విలువలు;
+    అంటే $V^+ = \{\True, \Undef\}$.
+    \item సత్యమూల్య ప్రమేయాలు \L ukasiewicz
+    తర్కం~$\LogLuk[3]$లో ఉన్నట్లే ఉంటాయి.
+  \end{enumerate}
+\end{defn}
+
+\begin{prob}
+  కింది సంబంధాల్లో ఏవి $\LogRM[3]$లో నిలుస్తాయి?
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $\lnot p, p \Entails q$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+
+నిర్దేశిత విలువలను మార్చడం వల్ల,
+వేర్వేరు సత్య పట్టికలు కొన్ని సందర్భాల్లో
+ఒకే తర్కాన్ని, అంటే ఒకే అనుగమన సంబంధాన్ని,
+ఇవ్వవచ్చు. ఉదాహరణకు గోడెల్ తర్కంలో
+~$\{\True\}$ బదులు $V^+ = \{\True,
+\Undef\}$ తీసుకుంటే ఇలా జరుగుతుంది.
+
+\begin{prop}\ollabel{prop:gl-udes}
+  $V = \{\False, \Undef,\True\}$,
+  $V^+=\{\True,
+  \Undef\}$, $3$-విలువల గోడెల్ తర్కపు
+  సత్యమూల్య ప్రమేయాలు గల మాత్రిక
+  సాంప్రదాయిక తర్కాన్ని నిర్వచిస్తుంది.
+\end{prop}
+
+\begin{proof}
+  సాధన.
+\end{proof}
+
+\begin{prob}
+  \olref[mvl][thr][mul]{prop:gl-udes}ను
+నిరూపించండి. అంటే, గోడెల్ తర్కం మాదిరిగానే
+నిర్వచించి, $V^+=\{\True,\Undef\}$గా
+మార్చిన తర్కం~$\Log L$లో
+$\Gamma \Entails/[\Log L] !B$ అయితే
+$\Gamma \Entails/[\LogCL] !B$ అని చూపండి.
+\olref[mvl][thr][mul]{prop:LP-taut-CL}
+ఆలోచనలను వాడండి; అయితే (a), (b)
+లక్షణాలను నిరూపించడానికి బదులుగా
+$\pValue v(!A)[\LogGod] = \False$
+అయితే, అప్పుడే $\pValue {v'}(!A)[\LogCL] = \False$
+అని చూపండి. అందువల్ల
+$\pValue
+  v(!A)[\LogGod] \in \{\True,\Undef\}$
+అయితే, అప్పుడే
+$\pValue {v'}(!A)[\LogCL] =
+  \True$ అని చూపినట్లే. ఇది ప్రతిపాదనను
+ఎందుకు స్థాపిస్తుందో వివరించండి.
+\end{prob}
+
+\end{document}

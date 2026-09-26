@@ -1,0 +1,233 @@
+% Part: many-valued-logic
+% Chapter: three-valued-logics
+% Section: kleene
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{thr}{skl}
+
+\olsection{క్లీని తర్కాలు}
+
+గణన ప్రక్రియల ఫలితాలుగా సత్యమూల్యాలను భావించే
+దృష్టితో స్టీఫెన్ క్లీని రెండు మూడు-విలువల తర్కాలను
+ప్రవేశపెట్టాడు. ఒక ప్రక్రియ $\True$ లేదా $\False$
+ఫలితాన్ని ఇవ్వవచ్చు; కానీ అది ముగియకపోవచ్చూ.
+అప్పుడు సంబంధిత సత్యమూల్యం నిర్వచితం కాదు;
+దానిని $\Undef$ అనే సత్యమూల్యంతో సూచిస్తాం.
+
+ఒక ప్రతిపాదన~$!A$ నిషేధాన్ని గణించాలంటే, మొదట
+$!A$ విలువను గణించి, తరువాత దానికి వ్యతిరేకమైన
+ఫలితాన్ని ఇవ్వాలి. $!A$ గణన ముగియకపోతే మొత్తం
+ప్రక్రియ కూడా ముగియదు; కాబట్టి $\Undef$ నిషేధం
+$\Undef$.
+
+సంయోగం $!A \land !B$ను గణించడానికి రెండు
+మార్గాలున్నాయి. మొదట~$!A$ను, తరువాత $!B$ను
+గణించి, రెండింటి ఫలితాలూ~$\True$ అయితే
+$\True$ను, లేకపోతే $\False$ను ఇవ్వవచ్చు.
+ఏ గణన అయినా ఆగకపోతే మొత్తం ప్రక్రియ కూడా
+ఆగదు. ఈ పద్ధతిలో ఒక సంయోగ భాగం నిర్వచితం
+కాకపోతే సంయోగమూ నిర్వచితం కాదు. వికల్పానికీ
+ఇదే వర్తిస్తుంది.
+
+అయితే $!A$, $!B$లను సమాంతరంగా గణించగలిగితే
+మరింత చెప్పవచ్చు. రెండు ప్రక్రియల్లో ఒకటి ఆగి
+$\False$ ఇస్తే, సంయోగం తప్పకుండా అబద్ధమని
+తెలిసి అక్కడే ఆగవచ్చు. అందువల్ల ఒక భాగం
+నిర్వచితం కాకపోయినా, మరొక భాగం అబద్ధమైతే
+సంయోగం అబద్ధమే. అలాగే వికల్పాన్ని సమాంతరంగా
+గణించేటప్పుడు ఒక భాగం నిజమని తేలగానే,
+వికల్పం నిజమని చెప్పి ఆగవచ్చు. ఈ సందర్భంలో,
+ఒక భాగం నిర్వచితం కాకపోయినా సంయుక్త వాక్యపు
+ఫలితం తెలియవచ్చు. ఈ వ్యాఖ్యానంలో $\Undef$ను
+“నిర్వచితం కానిది” కన్నా “తెలియనిది”గా
+చదవవచ్చు.
+
+ఈ రెండు వ్యాఖ్యానాల నుంచి క్లీని యొక్క బలమైన,
+బలహీనమైన తర్కాలు వస్తాయి. సోపాధిక సంయోజకాన్ని
+$\lnot !A \lor !B$కు సమానార్థకంగా నిర్వచిస్తాం.
+
+\begin{defn}
+\emph{బలమైన క్లీని తర్కం}~$\LogKs$ను కింది మాత్రికతో
+నిర్వచిస్తాం:
+\begin{enumerate}
+  \item చరాల నుంచి $\lnot$, $\land$, $\lor$, $\lif$
+  సంయోజకాలతో మాత్రమే నిర్మించిన ప్రామాణిక
+  ప్రతిజ్ఞావాక్య భాష $\Lang L_0$ యొక్క ఉపభాష.
+  \item సత్యమూల్యాల సమితి $V = \{\True, \Undef, \False\}$.
+  \item $\True$ మాత్రమే నిర్దేశిత విలువ; అంటే
+  $V^+ = \{\True\}$.
+  \item సత్యమూల్య ప్రమేయాలను కింది పట్టికలు ఇస్తాయి:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}$ & \\
+      \hline
+      $\True$ & $\False$ \\
+      $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogKs]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\False$\\
+      $\False$ & $\False$ & $\False$ & $\False$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogKs]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\True$ & $\True$ \\
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogKs]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$  \\
+      $\False$ & $\True$ & $\True$ & $\True$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\sourcecorrection{OLTEMVLKLE-001}{ఆంగ్ల మూలం
+ప్రామాణిక భాషను పేర్కొన్నా, అందులోని అసత్య
+స్థిరాంకానికి విలువ ఇవ్వలేదు. తరువాతి
+సర్వసత్యాలు లేవనే నిరూపణ నిలవాలంటే,
+ఈ మాత్రికను చరాలు మరియు పట్టికల్లోని నాలుగు
+సంయోజకాలతో ఏర్పడే ఉపభాషకే పరిమితం చేయాలి;
+అసత్య స్థిరాంకం ఇందులో లేదు.}
+\end{defn}
+
+\begin{defn}
+\emph{బలహీనమైన క్లీని తర్కం}~$\LogKw$ను కింది మాత్రికతో
+నిర్వచిస్తాం:
+\begin{enumerate}
+  \item చరాల నుంచి $\lnot$, $\land$, $\lor$, $\lif$
+  సంయోజకాలతో మాత్రమే నిర్మించిన ప్రామాణిక
+  ప్రతిజ్ఞావాక్య భాష $\Lang L_0$ యొక్క ఉపభాష.
+  \item సత్యమూల్యాల సమితి $V = \{\True, \Undef, \False\}$.
+  \item $\True$ మాత్రమే నిర్దేశిత విలువ; అంటే
+  $V^+ = \{\True\}$.
+  \item సత్యమూల్య ప్రమేయాలను కింది పట్టికలు ఇస్తాయి:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}$ & \\
+      \hline
+      $\True$ & $\False$ \\
+      $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogKw]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\Undef$\\
+      $\False$ & $\False$ & $\Undef$ & $\False$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogKw]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\True$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogKw]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\Undef$  \\
+      $\False$ & $\True$ & $\Undef$ & $\True$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\sourcecorrection{OLTEMVLKLE-002}{ఇక్కడ కూడా ఆంగ్ల
+మూలం ప్రామాణిక భాషను పేర్కొని అసత్య స్థిరాంకపు
+విలువను ఇవ్వలేదు. కింది నిరూపణకు అనుగుణంగా
+చరాలు, పట్టికల్లోని నాలుగు సంయోజకాలతో ఏర్పడే
+ఉపభాషనే తీసుకున్నాం; అసత్య స్థిరాంకాన్ని
+చేర్చలేదు.}
+\end{defn}
+
+\begin{prop}
+  $\LogKs$, $\LogKw$లలో సర్వసత్యాలు లేవు.
+\end{prop}
+
+\begin{proof}
+  అన్ని \tetoken{ప్రతిజ్ఞావాక్య చరాలకు}{!!{propositional variable}s}~$p$
+  $\pAssign v(p) = \Undef$ అయితే, ఏ
+  సూత్రం~$!A$ సత్యమూల్యమైనా~$\pValue v(!A) =
+  \Undef$ అవుతుంది. ఎందుకంటే రెండు తర్కాల్లోనూ
+  \[
+    \tf{\lnot}(\Undef) = \tf{\lor}(\Undef, \Undef) = \tf{\land}(\Undef,
+  \Undef) = \tf{\lif}(\Undef, \Undef) = \Undef
+  \]
+  అవుతుంది. $\LogKs$, $\LogKw$లలోనూ
+  $\Undef \notin V^+$ కనుక, ఈ
+  \tetoken{సత్యమూల్య కేటాయింపులో}{!!{valuation}}
+  $!A$ నిర్దేశిత విలువను పొందదు.
+\end{proof}
+
+బలహీన, బలమైన క్లీని తర్కాలు రెండింటిలోనూ
+సర్వసత్యాలు లేకపోయినా, వాటి పర్యవసాన
+సంబంధాలు అల్పమైనవి కావు.
+
+\begin{prob}
+  కింది సంబంధాల్లో ఏవి (a) బలమైన,
+  (b) బలహీనమైన క్లీని తర్కంలో నిలుస్తాయి?
+  ప్రతిదానికీ సత్య పట్టిక ఇవ్వండి.
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $p \land q \Entails p$
+    \item $p \Entails p \land p$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+
+ద్మిత్రి బోచ్వార్ $\Undef$ను “అర్థరహితం”గా
+వ్యాఖ్యానించాడు. వైరుధ్యపూరిత వాక్యాలకు
+$\Undef$ విలువను నిర్దేశించడం ద్వారా
+అసత్యవాది వైరుధ్యాభాసం వంటి వాటిని
+పరిష్కరించడానికి ప్రయత్నించాడు. అతడు,
+ముఖ్యంగా బలహీన క్లీని తర్కాన్ని అదనపు
+సంయోజకాలతో విస్తరించిన తర్కాన్ని ప్రవేశపెట్టాడు.
+వాటిలో రెండు “బాహ్య నిషేధం”, “నిర్వచితం
+కానిది” అనే సంచాలకాలు:
+\begin{center}
+  \begin{tabular}{c|c}
+    $\tf{\sim}$ & \\
+    \hline
+    $\True$ & $\False$ \\
+    $\Undef$ & $\True$ \\
+    $\False$ & $\True$
+  \end{tabular}
+\quad
+  \begin{tabular}{c|c}
+    $\tf{+}$ & \\
+    \hline
+    $\True$ & $\False$ \\
+    $\Undef$ & $\True$ \\
+    $\False$ & $\False$
+  \end{tabular}
+\end{center}
+
+\begin{prob}
+  బోచ్వార్ తర్కంలో $\sim$ను $\lnot$,
+  $+$లతో నిర్వచించగలరా? అంటే $\sim$ లేకుండా,
+  \tetoken{ప్రతిజ్ఞావాక్య చరం}{!!{propositional
+  variable}}~$p$ మాత్రమే కలిగి, ఎప్పుడూ
+  $\mathord{\sim}p$తో సమాన సత్యమూల్యాన్ని
+  పొందే \tetoken{సూత్రాన్ని}{!!a{formula}}
+  కనుగొనండి. మీ సమాధానాన్ని సమర్థించే
+  సత్య పట్టిక ఇవ్వండి.
+\end{prob}
+
+\end{document}

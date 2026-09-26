@@ -1,0 +1,97 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTEMVLMUL-20260926",
+  "created_utc": "2026-09-26T18:38:12Z",
+  "status": "confirmed_against_frozen_matrices_and_lp_proof",
+  "scope": {
+    "chapter": "Many-valued Logic — Three-valued Logics",
+    "unit_ids": ["OLP-0397"],
+    "finding_count": 6
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEMVLMUL-001",
+      "unit_id": "OLP-0397",
+      "classification": "lp_standard_language_omits_falsity_constant",
+      "source": {
+        "path": "content/many-valued-logic/three-valued-logics/multiple-designation.tex",
+        "bytes": 8320,
+        "sha256": "4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f",
+        "locator": "LP matrix lines 19-28; compare OLP-0386, OLP-0388 and OLP-0395"
+      },
+      "finding": "The source calls the language standard L_0 while listing only its four nonconstant connectives. It adopts the strong Kleene truth functions, for which the preceding Telugu edition explicitly restricts the language to the variable-generated four-connective fragment.",
+      "required_translation_handling": "State that LP uses this four-connective fragment, excluding the unstated falsity constant, and disclose the restriction adjacent to the matrix."
+    },
+    {
+      "finding_id": "OLTEMVLMUL-002",
+      "unit_id": "OLP-0397",
+      "classification": "hallden_standard_language_omits_falsity_constant",
+      "source": {
+        "path": "content/many-valued-logic/three-valued-logics/multiple-designation.tex",
+        "bytes": 8320,
+        "sha256": "4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f",
+        "locator": "Hallden matrix lines 30-48; compare OLP-0386, OLP-0388 and OLP-0395"
+      },
+      "finding": "The source again names standard L_0 but omits its falsity constant while adding a unary plus operator to the weak Kleene truth functions.",
+      "required_translation_handling": "Define the variable-generated four-connective fragment extended by plus, and disclose that this does not silently assign a value to the falsity constant."
+    },
+    {
+      "finding_id": "OLTEMVLMUL-003",
+      "unit_id": "OLP-0397",
+      "classification": "lp_tautology_equality_needs_common_language_scope",
+      "source": {
+        "path": "content/many-valued-logic/three-valued-logics/multiple-designation.tex",
+        "bytes": 8320,
+        "sha256": "4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f",
+        "locator": "LP tautology proposition lines 54-56"
+      },
+      "finding": "After the matrix-language repair, equality of tautology sets with full classical L_0 is not literal because the latter contains a falsity constant absent from LP. The proof compares formulas in the common fragment.",
+      "required_translation_handling": "State equality only for the common variable-generated four-connective language and disclose the qualification beside the proposition."
+    },
+    {
+      "finding_id": "OLTEMVLMUL-004",
+      "unit_id": "OLP-0397",
+      "classification": "lp_induction_base_false_assignment_equality",
+      "source": {
+        "path": "content/many-valued-logic/three-valued-logics/multiple-designation.tex",
+        "bytes": 8320,
+        "sha256": "4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f",
+        "locator": "LP induction base lines 86-89"
+      },
+      "finding": "The source equates the two evaluations for every variable even though its just-defined v-prime maps Undef to True. The induction needs only preservation of definite False and True values.",
+      "required_translation_handling": "Give each evaluation as its own assignment and prove the conditional False and True preservation claims; disclose the repair."
+    },
+    {
+      "finding_id": "OLTEMVLMUL-005",
+      "unit_id": "OLP-0397",
+      "classification": "lp_conjunction_induction_repeats_first_conjunct",
+      "source": {
+        "path": "content/many-valued-logic/three-valued-logics/multiple-designation.tex",
+        "bytes": 8320,
+        "sha256": "4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f",
+        "locator": "LP conjunction induction false and true cases lines 105-119"
+      },
+      "finding": "Both conjunction cases repeat the B evaluation in the second condition where the C evaluation is required. The strong Kleene conjunction table and the subsequent induction conclusion both require B and C.",
+      "required_translation_handling": "Change only the duplicated second conjunct in both cases to C and disclose the two repairs as one finding."
+    },
+    {
+      "finding_id": "OLTEMVLMUL-006",
+      "unit_id": "OLP-0397",
+      "classification": "shared_tautologies_claim_needs_common_language_scope",
+      "source": {
+        "path": "content/many-valued-logic/three-valued-logics/multiple-designation.tex",
+        "bytes": 8320,
+        "sha256": "4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f",
+        "locator": "paragraph after Hallden tautology exercise lines 139-144"
+      },
+      "finding": "LP and Hallden share classical tautologies on their common four-connective fragment, but Hallden has an additional plus connective and hence a larger formula language. Literal equality of all formula sets is not well typed.",
+      "required_translation_handling": "Qualify the shared-tautologies statement to the common four-connective language and disclose that Hallden's extended language is not literally the same set."
+    }
+  ]
+}

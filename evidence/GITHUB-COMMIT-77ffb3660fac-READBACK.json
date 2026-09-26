@@ -1,0 +1,29 @@
+{
+  "schema": "openlogic-te-commit-readback/1",
+  "checked_at": "2026-09-26T18:16:24.751Z",
+  "commit": "77ffb3660fac9b49c56189851d673885536efdf2",
+  "anonymous": true,
+  "authorization_header_sent": false,
+  "file_count": 2,
+  "files": [
+    {
+      "path": "evidence/GITHUB-COMMIT-51be995ce4a9-READBACK.json",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/77ffb3660fac9b49c56189851d673885536efdf2/evidence/GITHUB-COMMIT-51be995ce4a9-READBACK.json",
+      "bytes": 5528,
+      "sha256": "4fe474a83f1b49b3c4837079d8e3081cf24b651debca54cf80d6cb3deda75cfa",
+      "expected_bytes": 5528,
+      "expected_sha256": "4fe474a83f1b49b3c4837079d8e3081cf24b651debca54cf80d6cb3deda75cfa",
+      "match": true
+    },
+    {
+      "path": "evidence/GITHUB-COMMIT-9334e87f2192-READBACK.json",
+      "public_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/77ffb3660fac9b49c56189851d673885536efdf2/evidence/GITHUB-COMMIT-9334e87f2192-READBACK.json",
+      "bytes": 7910,
+      "sha256": "42e19daf597bca52f2e09811559a3e1cb43540ece0e074b52d64772a5ac9ee8e",
+      "expected_bytes": 7910,
+      "expected_sha256": "42e19daf597bca52f2e09811559a3e1cb43540ece0e074b52d64772a5ac9ee8e",
+      "match": true
+    }
+  ],
+  "status": "COMPLETE_PASS"
+}

@@ -1,0 +1,47 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTEMVLKLE-20260926",
+  "created_utc": "2026-09-26T18:21:53Z",
+  "status": "confirmed_against_frozen_language_matrix_and_no_tautology_proof",
+  "scope": {
+    "chapter": "Many-valued Logic — Three-valued Logics",
+    "unit_ids": ["OLP-0395"],
+    "finding_count": 2
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEMVLKLE-001",
+      "unit_id": "OLP-0395",
+      "classification": "strong_kleene_standard_language_constant_conflicts_with_no_tautology_theorem",
+      "source": {
+        "path": "content/many-valued-logic/three-valued-logics/kleene.tex",
+        "bytes": 6879,
+        "sha256": "0b632552858c410d3670357a0df7071cb5a3c5bd285681e86988ed07263852d7",
+        "locator": "strong matrix lines 45-87; no-tautology proposition/proof lines 132-147"
+      },
+      "finding": "The strong Kleene matrix names standard language L_0 but lists only the four nonconstant connectives and gives no value for its previously defined falsity constant. The later theorem and induction claim every formula is Undef under an all-Undef variable assignment, which fails if the usual falsity constant is included and interpreted as False.",
+      "controlling_evidence": "OLP-0386 defines L_0 to contain zero-place lfalse; OLP-0388 requires a value for each connective. If lfalse=False, then not-lfalse is True on every valuation, contradicting the no-tautology claim. The printed strong Kleene tables and proof cover the variable-generated four-connective sublanguage, without the constant.",
+      "required_translation_handling": "State that the strong Kleene matrix uses the sublanguage of L_0 generated from variables with only negation, conjunction, disjunction and conditional, excluding the falsity constant; disclose the source-scope repair next to this definition. Preserve the no-tautology proposition for this repaired language."
+    },
+    {
+      "finding_id": "OLTEMVLKLE-002",
+      "unit_id": "OLP-0395",
+      "classification": "weak_kleene_standard_language_constant_conflicts_with_no_tautology_theorem",
+      "source": {
+        "path": "content/many-valued-logic/three-valued-logics/kleene.tex",
+        "bytes": 6879,
+        "sha256": "0b632552858c410d3670357a0df7071cb5a3c5bd285681e86988ed07263852d7",
+        "locator": "weak matrix lines 89-130; no-tautology proposition/proof lines 132-147"
+      },
+      "finding": "The weak Kleene matrix repeats the same standard-L_0/four-connective mismatch. Its no-tautology proof also requires formulas built from variables and the four truth-table connectives only.",
+      "controlling_evidence": "With the standard falsity constant interpreted False, not-lfalse is again a tautology. Assigning the constant Undef would be an unforced reinterpretation of falsity; it is not stated in the source. The printed weak Kleene tables and all-Undef induction instead support the four-connective variable-generated sublanguage.",
+      "required_translation_handling": "State the same restricted sublanguage for weak Kleene logic and disclose it adjacent to the weak matrix; do not mechanically copy the Łukasiewicz edition's explicit falsity-constant completion into either Kleene system."
+    }
+  ]
+}
