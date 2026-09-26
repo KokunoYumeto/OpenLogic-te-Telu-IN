@@ -1,0 +1,47 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTENMLENT-20260927",
+  "created_utc": "2026-09-26T22:08:46Z",
+  "status": "confirmed_against_frozen_relational_model_definition",
+  "scope": {
+    "chapter": "Normal Modal Logic — Syntax and Semantics",
+    "unit_ids": ["OLP-0418"],
+    "finding_count": 2
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTENMLENT-001",
+      "unit_id": "OLP-0418",
+      "classification": "countermodel_unordered_set_instead_of_ordered_model_triple",
+      "source": {
+        "path": "content/normal-modal-logic/syntax-and-semantics/entailment.tex",
+        "bytes": 3406,
+        "sha256": "825d28934a3a8ef5f7f6775e0624e97ede3be1ae9c0dc7af64883becb0bcfdee",
+        "locator": "entailment.tex lines 68-70"
+      },
+      "finding": "The counterexample calls M-prime a model while displaying its three components with set braces, unlike the ordered triple in the frozen relational-model definition and in the same section's earlier model examples.",
+      "controlling_evidence": "The semantic clauses use the first component as worlds, the second as accessibility, and the third as valuation; their roles require an ordered triple.",
+      "required_translation_handling": "Use the existing model-triple macro at this one occurrence, disclose the repair adjacent to it, and leave the English source frozen."
+    },
+    {
+      "finding_id": "OLTENMLENT-002",
+      "unit_id": "OLP-0418",
+      "classification": "countermodel_valuation_unspecified_on_other_variables",
+      "source": {
+        "path": "content/normal-modal-logic/syntax-and-semantics/entailment.tex",
+        "bytes": 3406,
+        "sha256": "825d28934a3a8ef5f7f6775e0624e97ede3be1ae9c0dc7af64883becb0bcfdee",
+        "locator": "entailment.tex lines 68-70"
+      },
+      "finding": "The counterexample gives V-prime(p) only, whereas the model definition requires a valuation for every propositional variable.",
+      "controlling_evidence": "The two counterexample formulas use p alone. Setting the truth set of every other variable q to the empty set makes V-prime total without affecting either truth value.",
+      "required_translation_handling": "Specify V-prime(q)=empty for all other variables and disclose that completion adjacent to the model description."
+    }
+  ]
+}

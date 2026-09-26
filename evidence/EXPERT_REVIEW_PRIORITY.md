@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 417 of 722 draft units**. This view selects 438 of 496 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 418 of 722 draft units**. This view selects 440 of 499 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4383,3 +4383,23 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0417; normal-modal-logic/syntax-and-semantics/schemas; translation/content/normal-modal-logic/syntax-and-semantics/schemas.tex:118; printed/PDF page pending
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLSCH-001 is mathematically precise and idiomatic.
+
+## REV-OLTENMLENT-001 — OLTENMLENT-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మూలంలోని సమితి బ్రేసులను నమూనా నిర్వచనానికి తగిన క్రమిత త్రయంగా మార్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0418; normal-modal-logic/syntax-and-semantics/entailment; translation/content/normal-modal-logic/syntax-and-semantics/entailment.tex:85; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the one-world countermodel an ordered W-prime/R-prime/V-prime triple rather than an unordered set, with the exact source repair disclosed?
+
+## REV-OLTENMLENT-002 — OLTENMLENT-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మూలంలో pకే కేటాయించిన V'ను ఇతర చరాలకూ ఖాళీ సత్య సమితిగా పూర్తిచేసి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0418; normal-modal-logic/syntax-and-semantics/entailment; translation/content/normal-modal-logic/syntax-and-semantics/entailment.tex:89; printed/PDF page pending
+
+- Please double-check: Please double-check: Is V-prime total on every propositional variable while preserving the stated p-only counterexample truth values and disclosing the completion?

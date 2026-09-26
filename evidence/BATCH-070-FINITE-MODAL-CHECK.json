@@ -1,0 +1,52 @@
+{
+  "schema": "telugu-openlogic-batch070-finite-modal-check/1",
+  "status": "pass_bounded_not_a_proof",
+  "scope": "OLP-0418 modal entailment and non-entailment examples",
+  "model_sizes": [
+    1,
+    2,
+    3
+  ],
+  "total_world_cases": 98824,
+  "universal_checks": [
+    "p -> Diamond p entails Box not p -> not p",
+    "Box (A and B) entails Box A"
+  ],
+  "witnesses": {
+    "box_p_not_p": {
+      "n": 1,
+      "r": 0,
+      "p": 0,
+      "q": 0,
+      "w": 0
+    },
+    "box_conditional_not_entail": {
+      "n": 2,
+      "r": 2,
+      "p": 1,
+      "q": 0,
+      "w": 0
+    },
+    "conditional_box_not_entail": {
+      "n": 2,
+      "r": 2,
+      "p": 2,
+      "q": 0,
+      "w": 0
+    }
+  },
+  "printed_three_world_figure": {
+    "n": 3,
+    "r": 6,
+    "p": 6,
+    "w": 0
+  },
+  "one_world_empty_relation_empty_p_truth_set": {
+    "n": 1,
+    "r": 0,
+    "p": 0,
+    "q": 0,
+    "w": 0
+  },
+  "limitation": "Finite enumeration supports the source-aligned review but does not prove unrestricted validity."
+}

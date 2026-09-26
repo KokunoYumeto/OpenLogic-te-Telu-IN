@@ -1,0 +1,111 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: entailment
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{ent}
+
+\olsection{అర్థపర అనుగమనం}
+
+\begin{explain}
+  ఒక లోకంలో సత్యం అనే నిర్వచనంతో \tetoken{సూత్రాల}{!!{formula}s}
+  మధ్య అర్థపర అనుగమన సంబంధాన్ని నిర్వచించవచ్చు.
+  \tetoken{సూత్రం}{!!^a{formula}}~$!B$ నుండి $!A$
+  అనుగమిస్తుంది అంటే, $!B$ సత్యమైనప్పుడల్లా $!A$ కూడా సత్యం.
+  ఇక్కడ ``అప్పుడల్లా'' అంటే ``ఏ నమూనాను పరిగణించినా''
+  మరియు ``ఆ నమూనాలో ఏ లోకాన్ని పరిగణించినా'' అనే రెండూ.
+\end{explain}
+
+\begin{defn}
+  $\Gamma$ అనేది \tetoken{సూత్రాల}{!!{formula}s} సమితి,
+  $!A$ ఒక \tetoken{సూత్రం}{!!a{formula}} అనుకుందాం.
+  $\Gamma$ నుండి $!A$ \emph{అర్థపరంగా అనుగమిస్తుంది},
+  సంకేతంగా $\Gamma \Entails !A$, అంటే ప్రతి నమూనా
+  $\mModel{M} = \tuple{W, R, V}$లోని ప్రతి లోకం $w \in W$ వద్ద,
+  ప్రతి $!B \in \Gamma$కు $\mSat{M}{!B}[w]$ అయితే
+  $\mSat{M}{!A}[w]$ కూడా కావాలి; అప్పుడే, అప్పుడే.
+  $\Gamma$లో ఒకే \tetoken{సూత్రం}{!!{formula}}~$!B$
+  ఉంటే $!B \Entails !A$ అని రాస్తాం.
+\end{defn}
+
+\begin{ex}
+  ఒక \tetoken{సూత్రం}{!!a{formula}} నుండి మరొకటి
+  అనుగమిస్తుందని చూపడానికి, $\mSat{M}{}[w]$ నిర్వచనం
+  వాడి అన్ని నమూనాల గురించి వాదించాలి. ఉదాహరణకు,
+  $p \lif \Diamond p \Entails \Box\lnot p \lif \lnot p$
+  చూపడానికి ఇలా వాదించవచ్చు: ఒక నమూనా
+  $\mModel{M} = \tuple{W, R, V}$ను, $w \in W$ను తీసుకుని,
+  $\mSat{M}{p \lif \Diamond p}[w]$ అనుకుందాం.
+  $\mSat{M}{\Box\lnot p \lif \lnot p}[w]$ చూపాలి.
+  అది కాదనుకుందాం. అప్పుడు $\mSat{M}{\Box\lnot p}[w]$,
+  $\mSat/{M}{\lnot p}[w]$. $\mSat/{M}{\lnot p}[w]$
+  కాబట్టి $\mSat{M}{p}[w]$. ఊహ ప్రకారం
+  $\mSat{M}{p \lif \Diamond p}[w]$ కాబట్టి
+  $\mSat{M}{\Diamond p}[w]$. $\mSat{M}{\Diamond p}[w]$
+  నిర్వచనం వల్ల $Rww'$ అయ్యే, $\mSat{M}{p}[w']$
+  నిలిచే లోకం $w'$ ఉంది. అయితే
+  $\mSat{M}{\Box \lnot p}[w]$ కూడా కాబట్టి
+  $\mSat{M}{\lnot p}[w']$. ఇది వైరుధ్యం.
+
+  \tetoken{సూత్రం}{!!a{formula}}~$!B$ నుండి మరొక
+  సూత్రం~$!A$ అనుగమించదని చూపడానికి ప్రతిదృష్టాంతం,
+  అంటే ఏదో నమూనా $\mModel{M} = \tuple{W, R, V}$లో
+  ఏదో లోకం~$w \in W$ వద్ద $\mSat{M}{!B}[w]$ అయినా
+  $\mSat/{M}{!A}[w]$ అయ్యే ఉదాహరణ, ఇవ్వాలి.
+  $p \lif \Diamond p \Entails/
+  \Box p \lif p$ అని చూపుదాం.
+  \olref{fig:counterex}లోని నమూనాను తీసుకుందాం.
+  అక్కడ $\mSat{M}{\Diamond p}[w_1]$;
+  కాబట్టి $\mSat{M}{p \lif
+    \Diamond p}[w_1]$. కానీ $\mSat{M}{\Box p}[w_1]$
+  అయి, $\mSat/{M}{p}[w_1]$ కాబట్టి
+  $\mSat/{M}{\Box p \lif p}[w_1]$.
+  \begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label=right:\mFalse{p}]{$w_1$};
+      \node[world] (w2) [label=right:\mTrue{p}, above left=of w1]{$w_2$};
+      \node[world] (w3) [label=right:\mTrue{p}, above right=of w1] {$w_3$};
+      \draw[->] (w1) to (w2);
+      \draw[->] (w1) to (w3);
+    \end{tikzpicture}
+  \end{center}
+  \caption{$p \lif \Diamond p
+  \Entails \Box p \lif p$కు ప్రతిదృష్టాంతం.}
+  \ollabel{fig:counterex}
+  \end{figure}
+
+  చాలా సరళమైన ప్రతిదృష్టాంతాలు కూడా తరచుగా సరిపోతాయి.
+  $W' = \{w\}$, $R' = \emptyset$, $V'(p) =
+  \emptyset$ అయ్యే నమూనా $\mModel{M'} =
+  \tuple{W', R', V'}$ కూడా ఒక ప్రతిదృష్టాంతమే.
+  \sourcecorrection{OLTENMLENT-001}{మూలంలో ఈ నమూనా
+    మూడు అంశాలను క్రమిత త్రయానికి బదులు సమితి సంకేతంతో
+    చూపారు; ముందరి నమూనా నిర్వచనానికి అనుగుణంగా
+    క్రమిత త్రయంగా చూపాం.}
+  ఇతర ప్రతిజ్ఞావాక్య చరాలన్నిటికీ $V'(q)=\emptyset$
+  అని తీసుకుందాం.
+  \sourcecorrection{OLTENMLENT-002}{మూలం $V'(p)$ను
+    మాత్రమే నిర్దేశించింది; మిగిలిన చరాలకూ కేటాయింపు
+    ఇచ్చి నమూనా నిర్దేశాన్ని పూర్తిచేశాం.}
+  $\mSat/{M'}{p}[w]$ కాబట్టి
+  $\mSat{M'}{p \lif \Diamond p}[w]$.
+  $w$ నుండి ప్రాప్యమైన లోకాలు ఏవీ లేవు కాబట్టి
+  $\mSat{M'}{\Box p}[w]$; అందువల్ల
+  $\mSat/{M'}{\Box p
+    \lif p}[w]$.
+\end{ex}
+
+\begin{prob}
+  $\Box (!A \land !B) \Entails \Box !A$ అని చూపండి.
+\end{prob}
+
+\begin{prob}
+  $\Box (p \lif q) \Entails/ p \lif \Box q$ మరియు
+  $p \lif \Box q \Entails/\Box (p \lif q)$ అని చూపండి.
+\end{prob}
+
+\end{document}

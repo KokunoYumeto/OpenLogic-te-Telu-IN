@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **417 of 722 source units drafted**. This readable view contains all 496 decisions and 1005 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **418 of 722 source units drafted**. This readable view contains all 499 decisions and 1012 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3318,6 +3318,36 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T111-OCC-004; OLP-0417; OLP-0417-B008; source upstream/content/normal-modal-logic/syntax-and-semantics/schemas.tex:34-38 bytes 1179-1356 SHA-256 2644661ac31c8a11b18826df77ecd26332c0b3452f584d08260c01ee4fe727dc; target translation/content/normal-modal-logic/syntax-and-semantics/schemas.tex:40-45 bytes 1971-2313 SHA-256 cf9e09cc6e5a7f8f4b16ddcfbb855ff73aa9b2519142442d29e30adb6bc3e864; reader page pending.
   - te-Telu-IN-TE-T111-OCC-005; OLP-0417; OLP-0417-B009; source upstream/content/normal-modal-logic/syntax-and-semantics/schemas.tex:40-45 bytes 1357-1540 SHA-256 2644661ac31c8a11b18826df77ecd26332c0b3452f584d08260c01ee4fe727dc; target translation/content/normal-modal-logic/syntax-and-semantics/schemas.tex:47-52 bytes 2314-2546 SHA-256 cf9e09cc6e5a7f8f4b16ddcfbb855ff73aa9b2519142442d29e30adb6bc3e864; reader page pending.
   - te-Telu-IN-TE-T111-OCC-006; OLP-0417; OLP-0417-B014; source upstream/content/normal-modal-logic/syntax-and-semantics/schemas.tex:75-79 bytes 2508-2694 SHA-256 2644661ac31c8a11b18826df77ecd26332c0b3452f584d08260c01ee4fe727dc; target translation/content/normal-modal-logic/syntax-and-semantics/schemas.tex:88-94 bytes 4000-4410 SHA-256 cf9e09cc6e5a7f8f4b16ddcfbb855ff73aa9b2519142442d29e30adb6bc3e864; reader page pending.
+
+## te-Telu-IN-TE-T112 — modal semantic entailment across all models and worlds / countermodel at one world / vacuous box truth
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: అన్ని నమూనాల, లోకాలలో అర్థపర అనుగమనం / ఒక లోకంలో ప్రతిదృష్టాంతం / ప్రాప్య లోకాలు లేనప్పుడు బాక్స్ శూన్యసందర్భ సత్యం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “modal semantic entailment across all models and worlds / countermodel at one world / vacuous box truth” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: అర్థపర అనుగమనం ముందరి సంచిక స్థిర పదం; స్థానిక పేజీ ప్రత్యక్షంగా ప్రామాణిక ప్రతిజ్ఞావాక్య ఫలితాన్ని చూపుతుంది, మోడల్-లోక అర్థవిచారాన్ని కాదు. ప్రతిదృష్టాంతం, శూన్యసందర్భ బాక్స్ సత్యం మూల నియమాల ప్రకారం తాత్కాలిక ప్రత్యేక కూర్పులు. OLTENMLENT-001/002 గణిత సవరణలకు స్థానిక పదజాల పేజీలు ప్రమాణం కావు.
+
+- Rationale: TE-P019లో సత్యతావిలువ, TE-P021లో సోపాధికం, TE-P023లో పూర్వ వాక్యాల సత్యాన్ని నిలిపే ఫలితం నిర్వచనాన్ని ప్రత్యక్షంగా చూశాం. అవి సాధారణ ద్విమూల్య పదజాలానికి సాక్ష్యం; OLP-0418లో ప్రతి క్రిప్కె నమూనాలో ప్రతి లోకం మీద అనుగమనం, ఒక్క లోక ప్రతిదృష్టాంతం, ప్రాప్య లోకాలు లేనప్పుడు బాక్స్ సత్యం స్థిర మూల నిర్వచనాలు, నిరూపణల ఆధారితాలు. TE-T033/044/103/108/109 వాడుకను కొనసాగించాం. మోడల్ సాంకేతిక అరువు; M, W, R, V, p, q, satisfaction/entailment macros and protected mathematical notation remain unchanged.
+
+- Authorities checked: TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P021 [checked_context_only], PDF page undefined; printed page not stated; Conditional and biconditional headings and explanations; Direct conditional and biconditional terminology. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately.
+
+- Alternatives: ముందరి అర్థపర అనుగమనం పదాన్ని కొనసాగించి, అన్ని నమూనాలు/లోకాల నిర్వచనం, ఒక లోక ప్రతిదృష్టాంతం, ఖాళీ ప్రాప్యతలో బాక్స్ సత్యం భేదాలను మూలానికి కట్టడం [viable_alternative: ఎంపిక] | ప్రతి నమూనాలో ఒకే లోకం సరిపోతుందని అనుగమనాన్ని బలహీనపరచడం [viable_alternative: తిరస్కరణ] | వాక్య ఫలితానికి స్థానిక ద్విమూల్య సత్య పట్టికయే క్రిప్కె అనుగమనాన్ని నేరుగా నిరూపిస్తుందని చెప్పడం [viable_alternative: తిరస్కరణ] | ఖాళీ ప్రాప్యతలో బాక్స్ సత్యాన్ని బాక్స్ p అసత్యమని పొరబడడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “అన్ని నమూనాల, లోకాలలో అర్థపర అనుగమనం / ఒక లోకంలో ప్రతిదృష్టాంతం / ప్రాప్య లోకాలు లేనప్పుడు బాక్స్ శూన్యసందర్భ సత్యం” is idiomatic and technically standard for “modal semantic entailment across all models and worlds / countermodel at one world / vacuous box truth” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T112-OCC-001; OLP-0418; OLP-0418-B005; source upstream/content/normal-modal-logic/syntax-and-semantics/entailment.tex:11 bytes 189-212 SHA-256 825d28934a3a8ef5f7f6775e0624e97ede3be1ae9c0dc7af64883becb0bcfdee; target translation/content/normal-modal-logic/syntax-and-semantics/entailment.tex:11 bytes 189-242 SHA-256 6fd3d08b43b96f96d57e6f9105b99853277f7b6ac9f932e91e66db2861373e5e; reader page pending.
+  - te-Telu-IN-TE-T112-OCC-002; OLP-0418; OLP-0418-B006; source upstream/content/normal-modal-logic/syntax-and-semantics/entailment.tex:13-19 bytes 213-555 SHA-256 825d28934a3a8ef5f7f6775e0624e97ede3be1ae9c0dc7af64883becb0bcfdee; target translation/content/normal-modal-logic/syntax-and-semantics/entailment.tex:13-20 bytes 243-1017 SHA-256 6fd3d08b43b96f96d57e6f9105b99853277f7b6ac9f932e91e66db2861373e5e; reader page pending.
+  - te-Telu-IN-TE-T112-OCC-003; OLP-0418; OLP-0418-B007; source upstream/content/normal-modal-logic/syntax-and-semantics/entailment.tex:21-28 bytes 556-956 SHA-256 825d28934a3a8ef5f7f6775e0624e97ede3be1ae9c0dc7af64883becb0bcfdee; target translation/content/normal-modal-logic/syntax-and-semantics/entailment.tex:22-32 bytes 1018-1830 SHA-256 6fd3d08b43b96f96d57e6f9105b99853277f7b6ac9f932e91e66db2861373e5e; reader page pending.
+  - te-Telu-IN-TE-T112-OCC-004; OLP-0418; OLP-0418-B009; source upstream/content/normal-modal-logic/syntax-and-semantics/entailment.tex:45-66 bytes 1792-2820 SHA-256 825d28934a3a8ef5f7f6775e0624e97ede3be1ae9c0dc7af64883becb0bcfdee; target translation/content/normal-modal-logic/syntax-and-semantics/entailment.tex:53-79 bytes 3144-4521 SHA-256 6fd3d08b43b96f96d57e6f9105b99853277f7b6ac9f932e91e66db2861373e5e; reader page pending.
+  - te-Telu-IN-TE-T112-OCC-005; OLP-0418; OLP-0418-B010; source upstream/content/normal-modal-logic/syntax-and-semantics/entailment.tex:68-74 bytes 2823-3187 SHA-256 825d28934a3a8ef5f7f6775e0624e97ede3be1ae9c0dc7af64883becb0bcfdee; target translation/content/normal-modal-logic/syntax-and-semantics/entailment.tex:81-100 bytes 4522-6023 SHA-256 6fd3d08b43b96f96d57e6f9105b99853277f7b6ac9f932e91e66db2861373e5e; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -13408,3 +13438,55 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLSCH-001-OCC-001; OLP-0417; OLP-0417-B017; source upstream/content/normal-modal-logic/syntax-and-semantics/schemas.tex:91-102 bytes 2998-3707 SHA-256 2644661ac31c8a11b18826df77ecd26332c0b3452f584d08260c01ee4fe727dc; target translation/content/normal-modal-logic/syntax-and-semantics/schemas.tex:118 bytes 5706-5722 SHA-256 cf9e09cc6e5a7f8f4b16ddcfbb855ff73aa9b2519142442d29e30adb6bc3e864; reader page pending.
+
+## te-Telu-IN-OLTENMLENT-001 — OLTENMLENT-001: countermodel unordered set instead of ordered model triple
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: మూలంలోని సమితి బ్రేసులను నమూనా నిర్వచనానికి తగిన క్రమిత త్రయంగా మార్చి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited countermodel unordered set instead of ordered model triple at entailment.tex lines 68-70, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLENT-20260927:OLTENMLENT-001 [checked_supports], content/normal-modal-logic/syntax-and-semantics/entailment.tex; entailment.tex lines 68-70; countermodel_unordered_set_instead_of_ordered_model_triple; మూలంలోని సమితి బ్రేసులను నమూనా నిర్వచనానికి తగిన క్రమిత త్రయంగా మార్చి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Is the one-world countermodel an ordered W-prime/R-prime/V-prime triple rather than an unordered set, with the exact source repair disclosed?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLENT-001-OCC-001; OLP-0418; OLP-0418-B010; source upstream/content/normal-modal-logic/syntax-and-semantics/entailment.tex:68-74 bytes 2823-3187 SHA-256 825d28934a3a8ef5f7f6775e0624e97ede3be1ae9c0dc7af64883becb0bcfdee; target translation/content/normal-modal-logic/syntax-and-semantics/entailment.tex:85 bytes 4858-4933 SHA-256 6fd3d08b43b96f96d57e6f9105b99853277f7b6ac9f932e91e66db2861373e5e; reader page pending.
+
+## te-Telu-IN-OLTENMLENT-002 — OLTENMLENT-002: countermodel valuation unspecified on other variables
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: మూలంలో pకే కేటాయించిన V'ను ఇతర చరాలకూ ఖాళీ సత్య సమితిగా పూర్తిచేసి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited countermodel valuation unspecified on other variables at entailment.tex lines 68-70, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLENT-20260927:OLTENMLENT-002 [checked_supports], content/normal-modal-logic/syntax-and-semantics/entailment.tex; entailment.tex lines 68-70; countermodel_valuation_unspecified_on_other_variables; మూలంలో pకే కేటాయించిన V'ను ఇతర చరాలకూ ఖాళీ సత్య సమితిగా పూర్తిచేసి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Is V-prime total on every propositional variable while preserving the stated p-only counterexample truth values and disclosing the completion?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLENT-002-OCC-001; OLP-0418; OLP-0418-B010; source upstream/content/normal-modal-logic/syntax-and-semantics/entailment.tex:68-74 bytes 2823-3187 SHA-256 825d28934a3a8ef5f7f6775e0624e97ede3be1ae9c0dc7af64883becb0bcfdee; target translation/content/normal-modal-logic/syntax-and-semantics/entailment.tex:89 bytes 5263-5373 SHA-256 6fd3d08b43b96f96d57e6f9105b99853277f7b6ac9f932e91e66db2861373e5e; reader page pending.
