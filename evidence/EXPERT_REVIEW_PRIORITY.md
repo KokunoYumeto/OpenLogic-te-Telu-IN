@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 377 of 722 draft units**. This view selects 397 of 439 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 378 of 722 draft units**. This view selects 399 of 442 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -3973,3 +3973,23 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0377; lambda-calculus/lambda-definability/truth-values; translation/content/lambda-calculus/lambda-definability/truth-values.tex:37; printed/PDF page pending
 
 - Please double-check: Please double-check: సంబంధపు రెండు ప్రయోగాల్లో k ఆర్గ్యుమెంట్లు ఉండగా ప్రకటించిన ఘాతం మాత్రమే Nat^kగా మార్చి, ఆ స్థాన సవరణను స్పష్టంగా చెప్పామా?
+
+## REV-OLTELAMLDFPRF-001 — OLTELAMLDFPRF-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: లెమ్మాలో మాత్రమే $G_{k-1}$, $h$గా సరిచేసి, తరువాతి నిర్మాణం, అభ్యాసాన్ని యథాతథంగా ఉంచాలి; పక్కనే మూల సవరణను ప్రకటించాలి.
+
+- Occurrences: OLP-0378; lambda-calculus/lambda-definability/primitive-recursive-functions; translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:39; printed/PDF page pending
+
+- Please double-check: Please double-check: సంయుక్త లెమ్మాలో k ప్రతినిధి పదాలకు G_0 నుంచి G_{k-1} వరకు మాత్రమే పేర్లు ఇచ్చి, H పదం h ప్రమేయాన్ని సూచిస్తుందని స్పష్టంగా చెప్పామా?
+
+## REV-OLTELAMLDFPRF-002 — OLTELAMLDFPRF-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సమీకరణంలో బయట $h$ను $g$గా మాత్రమే మార్చి, ప్రతి దశలో సూచిక/విలువపై $g$ ఆధారిత నవీకరణ $y$ సార్లు జరుగుతుందని గద్యంలో స్పష్టం చేసి, పక్కనే సవరణను ప్రకటించాలి.
+
+- Occurrences: OLP-0378; lambda-calculus/lambda-definability/primitive-recursive-functions; translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:77; printed/PDF page pending
+
+- Please double-check: Please double-check: ఆదిమ పునరావృత్తి దశలో బయట gను వాడి, Gతో నిర్మించిన స్థితి-నవీకరణ, ఆగమన నిర్ధారణకు దాని స్థానసంఖ్య సరిపోతుందా?

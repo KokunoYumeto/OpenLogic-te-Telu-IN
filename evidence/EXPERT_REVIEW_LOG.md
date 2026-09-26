@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 377 of 722 draft units**. This log contains 95 terminology/sense decisions and 344 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 378 of 722 draft units**. This log contains 96 terminology/sense decisions and 346 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2287,6 +2287,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: నిషేధ/సంయోగ/వికల్ప సత్య షరతులకు స్థానిక తర్క పేజీలు ప్రత్యక్ష ఆధారం. సత్యమూల్యాన్ని రెండు-ఆర్గ్యుమెంట్ల లాంబ్డా ఎంపిక ప్రమేయంగా సూచించే ప్రత్యేక నామకరణం తాత్కాలికం; Xorకు వివరించిన అభ్యాస షరతే ఖచ్చిత అర్థం.
 
 - Please double-check: Please double-check whether “చర్చ్ సత్యమూల్య ఎంపిక ప్రమేయం / లాంబ్డాతో నిర్వచించదగిన సంబంధం / సున్నా పరీక్ష / నిషేధం, సంయోగం, వికల్పం” is idiomatic and technically standard for “Church truth-value selector / lambda-definable relation / zero test / negation, conjunction and disjunction” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T096 — primitive recursive function / composition / projection / primitive recursion / lambda-definable closure
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: ఆదిమ పునరావృత్త ప్రమేయం / సంయుక్తం / ప్రక్షేప ప్రమేయం / ఆదిమ పునరావృత్తి / లాంబ్డాతో నిర్వచించదగిన ప్రమేయాల సంవృతత్వం
+
+- Exact implementation: OLP-0378; lambda-calculus/lambda-definability/primitive-recursive-functions; content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:9-10 ↔ translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:9-10 (OLP-0378-B004); printed/PDF page pending; OLP-0378; lambda-calculus/lambda-definability/primitive-recursive-functions; content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:12-14 ↔ translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:12-14 (OLP-0378-B005); printed/PDF page pending; OLP-0378; lambda-calculus/lambda-definability/primitive-recursive-functions; content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:16-20 ↔ translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:16-21 (OLP-0378-B006); printed/PDF page pending; OLP-0378; lambda-calculus/lambda-definability/primitive-recursive-functions; content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:31-36 ↔ translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:32-40 (OLP-0378-B008); printed/PDF page pending; OLP-0378; lambda-calculus/lambda-definability/primitive-recursive-functions; content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:64-73 ↔ translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:71-81 (OLP-0378-B013); printed/PDF page pending; OLP-0378; lambda-calculus/lambda-definability/primitive-recursive-functions; content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:75-89 ↔ translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:83-99 (OLP-0378-B014); printed/PDF page pending; OLP-0378; lambda-calculus/lambda-definability/primitive-recursive-functions; content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:91-94 ↔ translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:101-105 (OLP-0378-B015); printed/PDF page pending; OLP-0378; lambda-calculus/lambda-definability/primitive-recursive-functions; content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:145-149 ↔ translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:158-164 (OLP-0378-B020); printed/PDF page pending
+
+- Authorities actually checked: TE-P011, PDF 309, printed 302, Main points 8-18; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P034, PDF 308, printed 301, Main point 5, Cartesian product definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P011లో ప్రమేయం, సంయుక్త ప్రమేయం, TE-P032లో గణిత నిరూపణ/ఆగమన శైలి, TE-P034లో క్రమయుగ్మం ప్రత్యక్షంగా చూశాం. వాటిని గత TE-T064, TE-T079, TE-T093, TE-T094తో పోల్చి ఇదే రూపాలను కొనసాగించాం. ఈ పేజీలు చర్చ్ సంఖ్యాంకాల పునరావర్తనం లేదా ఆదిమ పునరావృత్త ప్రమేయాల లాంబ్డా సంకేతీకరణను నేరుగా స్థాపించవు; OLP-0378 నిర్మాణం, OLTELAMLDFPRF-001–002 ప్రకటిత సవరణలే ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి. లాంబ్డా, చర్చ్ ప్రత్యేక గణిత బదిలీ; Zero, Succ, Proj, F, G, H, D, Fst, Snd, \tuple, \num గుర్తింపులుగా యథాతథం.
+
+- Alternatives: TE-T064, TE-T079, TE-T094లోని ఆదిమ పునరావృత్తి, సంయుక్తం, క్రమయుగ్మం రూపాలను ఈ దశ-స్థితి నిర్మాణంలో నిలపడం (ఎంపిక); దశ ప్రమేయం g బదులు n+1-స్థానిక hనే n+2 ఆర్గ్యుమెంట్లకు ప్రయోగించడం (తిరస్కరణ); స్థానిక పేజీలు చర్చ్ పునరావర్తక లాంబ్డా పదాన్ని నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ); ఆగమన స్థితిలో సూచిక, విలువ అవయవాల క్రమాన్ని మార్చడం (తిరస్కరణ)
+
+- Uncertainty: ప్రమేయం, సంయుక్తం, క్రమయుగ్మం సాధారణ రూపాలకు స్థానిక ఆధారం ఉంది; ఆదిమ పునరావృత్తి లాంబ్డా నిర్మాణానికి ప్రత్యక్ష స్థానిక సాక్ష్యం లేదు. n-స్థానిక, n+2-స్థానిక ప్రమేయాల వాదన మూల గణిత అర్థం ప్రకారం నిలిచింది.
+
+- Please double-check: Please double-check whether “ఆదిమ పునరావృత్త ప్రమేయం / సంయుక్తం / ప్రక్షేప ప్రమేయం / ఆదిమ పునరావృత్తి / లాంబ్డాతో నిర్వచించదగిన ప్రమేయాల సంవృతత్వం” is idiomatic and technically standard for “primitive recursive function / composition / projection / primitive recursion / lambda-definable closure” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -10543,3 +10567,51 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: సంబంధపు రెండు ప్రయోగాల్లో k ఆర్గ్యుమెంట్లు ఉండగా ప్రకటించిన ఘాతం మాత్రమే Nat^kగా మార్చి, ఆ స్థాన సవరణను స్పష్టంగా చెప్పామా?
+
+## REV-OLTELAMLDFPRF-001 — OLTELAMLDFPRF-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: లెమ్మాలో మాత్రమే $G_{k-1}$, $h$గా సరిచేసి, తరువాతి నిర్మాణం, అభ్యాసాన్ని యథాతథంగా ఉంచాలి; పక్కనే మూల సవరణను ప్రకటించాలి.
+
+- Exact implementation: OLP-0378; lambda-calculus/lambda-definability/primitive-recursive-functions; primitive-recursive-functions.tex lines 32-36, confirmed by lines 41-47 ↔ translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:39 (OLP-0378-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMLDFPRF-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: లెమ్మాలో మాత్రమే $G_{k-1}$, $h$గా సరిచేసి, తరువాతి నిర్మాణం, అభ్యాసాన్ని యథాతథంగా ఉంచాలి; పక్కనే మూల సవరణను ప్రకటించాలి.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: సంయుక్త లెమ్మాలో k ప్రతినిధి పదాలకు G_0 నుంచి G_{k-1} వరకు మాత్రమే పేర్లు ఇచ్చి, H పదం h ప్రమేయాన్ని సూచిస్తుందని స్పష్టంగా చెప్పామా?
+
+## REV-OLTELAMLDFPRF-002 — OLTELAMLDFPRF-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: సమీకరణంలో బయట $h$ను $g$గా మాత్రమే మార్చి, ప్రతి దశలో సూచిక/విలువపై $g$ ఆధారిత నవీకరణ $y$ సార్లు జరుగుతుందని గద్యంలో స్పష్టం చేసి, పక్కనే సవరణను ప్రకటించాలి.
+
+- Exact implementation: OLP-0378; lambda-calculus/lambda-definability/primitive-recursive-functions; primitive-recursive-functions.tex lines 63-74, confirmed by lines 79-83 and 118-122 ↔ translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:77 (OLP-0378-B013); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMLDFPRF-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: సమీకరణంలో బయట $h$ను $g$గా మాత్రమే మార్చి, ప్రతి దశలో సూచిక/విలువపై $g$ ఆధారిత నవీకరణ $y$ సార్లు జరుగుతుందని గద్యంలో స్పష్టం చేసి, పక్కనే సవరణను ప్రకటించాలి.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: ఆదిమ పునరావృత్తి దశలో బయట gను వాడి, Gతో నిర్మించిన స్థితి-నవీకరణ, ఆగమన నిర్ధారణకు దాని స్థానసంఖ్య సరిపోతుందా?

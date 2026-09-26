@@ -17,9 +17,9 @@
 - [వెబ్‌లో చదివే తెలుగు సంచిక](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sfr/)
   ఇంకా OLP-0004–OLP-0026 వరకే, అంటే 23/722 భాగాలు.
 - ఈ నిల్వలో నేరుగా సవరించదగిన తెలుగు TeX ముసాయిదాలు
-  OLP-0001–OLP-0377 వరకు వరుసగా 377/722 ఉన్నాయి. ఇవన్నీ
+  OLP-0001–OLP-0378 వరకు వరుసగా 378/722 ఉన్నాయి. ఇవన్నీ
   ప్రస్తుత PDF, EPUB లేదా వెబ్ పాఠ్యంలో ఉన్నాయని అర్థం కాదు.
-  తదుపరి అనువదించాల్సినది OLP-0378; ఇంకా 345 ఫైళ్లు మిగిలాయి.
+  తదుపరి అనువదించాల్సినది OLP-0379; ఇంకా 344 ఫైళ్లు మిగిలాయి.
 - [తాజా Zenodo సంచిక DOI](https://doi.org/10.5281/zenodo.22726674),
   [కొనసాగే సంచికల DOI](https://doi.org/10.5281/zenodo.22307937)
   మునుపటి Zenodo విడుదలను సూచిస్తాయి. ప్రస్తుత GitHub v0.4.0కు
@@ -44,8 +44,8 @@
 మూలపాఠ నిర్వచనమే ఆధారం. కాపీరైట్ పరిమితులున్న అసలు పుస్తకాలను,
 వాటి పేజీ చిత్రాలను ఇక్కడ పంచడం లేదు.
 
-ప్రస్తుత [పదజాల నిర్ణయాలు](evidence/TERM_DECISIONS.jsonl) 95;
-[ప్రకటిత మూల దోషాలు, సవరణలు](evidence/SOURCE_CORRECTIONS.jsonl) 344.
+ప్రస్తుత [పదజాల నిర్ణయాలు](evidence/TERM_DECISIONS.jsonl) 96;
+[ప్రకటిత మూల దోషాలు, సవరణలు](evidence/SOURCE_CORRECTIONS.jsonl) 346.
 వాటిలో ఆల్ఫా-ప్రతిస్థాపన సిద్ధాంతపు రెండు, సమాంతర బీటా
 ప్రతిస్థాపన ఉపసిద్ధాంతపు ఒకటి, బీటా సంకోచనం నుంచి
 సమాంతర తగ్గింపుకు ఒక నిరూపణ ఖాళీ ఇంకా
@@ -53,23 +53,23 @@
 బీటా-ఏటా విభాగాల్లో సంపూర్ణ వికాస సమీకరణాల అతివ్యాప్తి,
 నిర్వచించని ఒక-దశ సంకేతం, వారసత్వ నిరూపణ ఖాళీలనూ
 ప్రకటించాం.
-[తెలుగు నిర్ణయాల మార్గదర్శి](evidence/START_HERE.te.md)లో 439 నిర్ణయాలు,
-827 అమలు స్థానాలు ఉన్నాయి. తుది పేజీ సంఖ్యలు సమగ్ర పాఠక
+[తెలుగు నిర్ణయాల మార్గదర్శి](evidence/START_HERE.te.md)లో 442 నిర్ణయాలు,
+837 అమలు స్థానాలు ఉన్నాయి. తుది పేజీ సంఖ్యలు సమగ్ర పాఠక
 సంచిక ముద్రణ తరువాతే నిర్ణయించగలం; ఇప్పటికి ఫైలు, విభాగం,
 పంక్తి, అనుసంధానిత ఖండం ద్వారా ఖచ్చితమైన స్థానాలు ఉన్నాయి.
-[తాజా తెలుగు పరిశీలన](evidence/BATCH-054-SEMANTIC-REVIEW.md),
-[మూల దోష పరిశీలన](evidence/source-audits/2026-09-26-lambda-pairs-truth-values-telugu/REVIEW.md)
-క్రమయుగ్మాలు, సత్యమూల్యాలు, సంబంధపు స్థాన సవరణను
+[తాజా తెలుగు పరిశీలన](evidence/BATCH-055-SEMANTIC-REVIEW.md),
+[మూల దోష పరిశీలన](evidence/source-audits/2026-09-26-lambda-primitive-recursion-telugu/REVIEW.md)
+ఆదిమ పునరావృత్త ప్రమేయాల లాంబ్డా నిర్మాణం, రెండు సూత్ర సవరణలను
 వివరిస్తాయి. మునుపటి నిర్ణయ
 నమోదుల్లో ఆంగ్లం ఇంకా ఉంది; వాటి పూర్తి తెలుగు రూపం పనిలో ఉంది.
 
-OLP-0001–OLP-0377 వరకు 377/377 ఫైళ్లు మూల-లక్ష్య ఖండాలు,
+OLP-0001–OLP-0378 వరకు 378/378 ఫైళ్లు మూల-లక్ష్య ఖండాలు,
 TeX నిర్మాణాలు, మూల పదసంకేతాలు, స్థిర గుర్తింపులు,
 ప్రకటిత సవరణలను పరిగణనలోకి తీసుకున్న గణిత రూపాల
-[నిర్మాణ తనిఖీ](evidence/CUMULATIVE-OLP0377-STRUCTURAL-QA.json)
-దాటాయి. 5,817 అనుసంధానిత ఖండాల్లో 3,687 అనువాద
+[నిర్మాణ తనిఖీ](evidence/CUMULATIVE-OLP0378-STRUCTURAL-QA.json)
+దాటాయి. 5,838 అనుసంధానిత ఖండాల్లో 3,704 అనువాద
 భాషా ఖండాలు; వాటికి చదివిన తెలుగు పేజీల సూచనలు ఉన్నాయి.
-మిగిలిన 2,130 ఖండాలు నిర్మాణాత్మకమైనవి. పాత వర్గీకరణలో
+మిగిలిన 2,134 ఖండాలు నిర్మాణాత్మకమైనవి. పాత వర్గీకరణలో
 పాఠకులకు కనిపించే 110 ఖండాలను పొరపాటున నిర్మాణాత్మకంగా
 చూపిన విషయం [ఇక్కడ](evidence/SEGMENT-CLASSIFICATION-REPAIR-20260925.json)
 సరిచేశాం; మూల లేదా అనువాద బైట్లు మారలేదు.
@@ -81,13 +81,13 @@ TeX నిర్మాణాలు, మూల పదసంకేతాలు, �
 గ్రంథసూచి/సూచనల తనిఖీ, అన్ని పేజీల చిత్రాల పరిశీలన చేశాం.
 పూర్తి 722-భాగాల పాఠక సంచిక ఇంకా నిర్మించబడలేదు. నిర్వాహకుడి
 వేరైన తెలుగు-మూలాధార సమీక్ష OLP-0004–OLP-0148 వరకే;
-ఈ 377 ముసాయిదాలకు ఆ ధృవీకరణను విస్తరించి చెప్పడం లేదు.
+ఈ 378 ముసాయిదాలకు ఆ ధృవీకరణను విస్తరించి చెప్పడం లేదు.
 
 ## AI పని వెల్లడింపు, పునర్నిర్మాణం, హక్కులు
 
 ఈ పనిలో OLP-0004–OLP-0355 తెలుగు అనువాదం, సవరణలు,
 సంపాదక పనిని OpenAI Codex — GPT-5.6 Sol, Ultra effort చేసింది;
-OLP-0001–OLP-0003, OLP-0356–OLP-0377పై అదే పనిని OpenAI Codex — GPT-6 Sol,
+OLP-0001–OLP-0003, OLP-0356–OLP-0378పై అదే పనిని OpenAI Codex — GPT-6 Sol,
 Ultra effort చేసింది. ఇవి మానవ సంపాదకత్వం లేదా సమీక్ష
 అని అర్థం కాదు. ఖచ్చితమైన మోడల్, శ్రమ స్థాయి ఈ పనికి
 చెందిన స్థానిక కార్య-సందర్భ నమోదుతో తనిఖీ చేశాం.
@@ -141,9 +141,9 @@ The repaired v0.4.0 release has 16 public assets; its cumulative EPUB and
 source companions, manifest, checksums, and QA records were downloaded
 anonymously and verified byte-for-byte.
 
-Three hundred seventy-seven full-unit editable TeX drafts form the contiguous
-OLP-0001--OLP-0377 range; editable coverage is 377/722 and the next manifest
-cursor is OLP-0378. They cover the
+Three hundred seventy-eight full-unit editable TeX drafts form the contiguous
+OLP-0001--OLP-0378 range; editable coverage is 378/722 and the next manifest
+cursor is OLP-0379. They cover the
 opening front matter and corpus/part drivers, then the
 Sets, Relations and Functions material, Propositional and First-Order Logic,
 Model Theory, Computability and Turing Machines, plus the complete introductory
@@ -155,14 +155,15 @@ Second-order Logic and Set Theory chapters, followed by the Lambda Calculus
 part driver and its complete Introduction and Syntax chapters, plus the
 complete Church--Rosser chapter, followed by the Lambda Definability chapter
 driver and its Introduction, Arithmetical Functions, Pairs and Predecessor,
-and Truth Values and Relations sections. All fifty-four batches have
+Truth Values and Relations, and Primitive Recursive Functions sections.
+All fifty-five batches have
 source-aligned structural and same-agent semantic review records.
 
 Format coverage is deliberately separate. The current cumulative PDF and EPUB
 contain 276 editable units in OLP-0004--OLP-0279. The deployed semantic HTML
 reader contains OLP-0004--OLP-0026 only: 23 units, the complete Sets, Relations
-and Functions chapters. Thus 352 current editable drafts are not yet in that
-23-unit HTML reader, and 99 are not yet in the cumulative PDF or
+and Functions chapters. Thus 355 current editable drafts are not yet in that
+23-unit HTML reader, and 102 are not yet in the cumulative PDF or
 EPUB.
 The public browser version is
 [OpenLogic తెలుగు — సమితులు, సంబంధాలు, ప్రమేయాలు](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sfr/).
@@ -193,7 +194,7 @@ particular, the original zero-inclusive natural-number convention is kept.
 Original rights-restricted Telugu books and their page images are **not**
 redistributed here.
 
-The correction ledger records 344 audited source issues, with repairs or
+The correction ledger records 346 audited source issues, with repairs or
 explicit disclosures beside the affected Telugu claims. Two gaps in the
 source proof of alpha-safe substitution, one in parallel-beta substitution,
 and one in the β-contraction-to-parallel proof
@@ -204,19 +205,21 @@ The new arithmetic-function sections additionally repair a constant-function
 subscript, five misstated one-step reductions, and an alternative multiplication
 term that otherwise ignores its second argument. The following truth-value
 section repairs a declared relation arity from n to k to match its two
-k-argument tests. The frozen English
+k-argument tests. The primitive-recursion section repairs the composition
+representative index/result name and the recurrence's outer step function.
+The frozen English
 bytes remain unchanged. Each correction is bound to a bounded audit, an exact
 source hash, target locator and declared mathematical delta. See
 [SOURCE_CORRECTIONS.jsonl](evidence/SOURCE_CORRECTIONS.jsonl), the
 [source-audit directory](evidence/source-audits/), and the current
-[lambda-pairs-and-truth audit](evidence/source-audits/2026-09-26-lambda-pairs-truth-values-telugu/REVIEW.md).
+[primitive-recursion audit](evidence/source-audits/2026-09-26-lambda-primitive-recursion-telugu/REVIEW.md).
 
 The [canonical translation-decision index](evidence/START_HERE.md) exposes all
-95 current terminology/sense decisions and 344 correction/disclosure records across 827
+96 current terminology/sense decisions and 346 correction/disclosure records across 837
 implementation occurrences, with exact
 source/target locators, aligned segment hashes, authorities actually checked,
 known evidence limits, alternatives, uncertainty, and concrete review
-questions. Its status is explicitly partial (377/722); optional expert review
+questions. Its status is explicitly partial (378/722); optional expert review
 creates no translation hold. The canonical views include a
 [full readable register](evidence/TRANSLATION_DECISIONS_FULL.md), a
 [priority view](evidence/PRIORITY_REVIEW.md), a
@@ -249,14 +252,14 @@ zero errors or warnings. The deployed reader passed desktop and 390-pixel
 visual, interaction, asset-loading and console checks; all 16 public files were
 then read back anonymously and matched the repository byte-for-byte.
 
-All 377 editable TeX drafts in OLP-0001--OLP-0377 pass correction-aware
+All 378 editable TeX drafts in OLP-0001--OLP-0378 pass correction-aware
 blank-block, environment, source-token, protected-identifier and
-mathematical-form checks. Fifty-four same-agent semantic reviews record
+mathematical-form checks. Fifty-five same-agent semantic reviews record
 source-aligned reverse paraphrases and their limits. The cumulative structural
-receipt is [CUMULATIVE-OLP0377-STRUCTURAL-QA.json](evidence/CUMULATIVE-OLP0377-STRUCTURAL-QA.json).
+receipt is [CUMULATIVE-OLP0378-STRUCTURAL-QA.json](evidence/CUMULATIVE-OLP0378-STRUCTURAL-QA.json).
 The [segment classification repair](evidence/SEGMENT-CLASSIFICATION-REPAIR-20260925.json)
 reclassified 110 previously mislabelled reader-visible blocks without changing
-source or translation bytes; all 5,817 current aligned blocks retain exact hashes.
+source or translation bytes; all 5,838 current aligned blocks retain exact hashes.
 Beyond the explicit reader boundaries stated above, source QA does not imply
 PDF, EPUB, or HTML reader integration.
 
@@ -267,7 +270,7 @@ Checks on this chapter do not establish completion or QA of the whole corpus.
 
 In this task, OpenAI Codex — GPT-5.6 Sol, Ultra effort produced the editable
 Telugu translation and corrections in OLP-0004--OLP-0355; OpenAI Codex — GPT-6 Sol,
-Ultra effort produced OLP-0001--OLP-0003 and OLP-0356--OLP-0377. This is AI work, not human editing
+Ultra effort produced OLP-0001--OLP-0003 and OLP-0356--OLP-0378. This is AI work, not human editing
 or independent specialist review. The model/effort ranges were verified from
 the local task context record.
 

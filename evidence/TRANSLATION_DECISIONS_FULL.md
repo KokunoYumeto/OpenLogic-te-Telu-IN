@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **377 of 722 source units drafted**. This readable view contains all 439 decisions and 827 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **378 of 722 source units drafted**. This readable view contains all 442 decisions and 837 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2782,6 +2782,39 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T095-OCC-003; OLP-0377; OLP-0377-B007; source upstream/content/lambda-calculus/lambda-definability/truth-values.tex:24-33 bytes 722-1028 SHA-256 c59cf879d08ccb846c28886a957ffee1a5256157e9a160af104606743eb9006c; target translation/content/lambda-calculus/lambda-definability/truth-values.tex:26-37 bytes 1294-2498 SHA-256 38ccfff43ab960e0a3fc0105db7c192dd59a696b5c7f0884f1eb07f12f707de7; reader page pending.
   - te-Telu-IN-TE-T095-OCC-004; OLP-0377; OLP-0377-B009; source upstream/content/lambda-calculus/lambda-definability/truth-values.tex:48-66 bytes 1660-2756 SHA-256 c59cf879d08ccb846c28886a957ffee1a5256157e9a160af104606743eb9006c; target translation/content/lambda-calculus/lambda-definability/truth-values.tex:53-73 bytes 3787-5845 SHA-256 38ccfff43ab960e0a3fc0105db7c192dd59a696b5c7f0884f1eb07f12f707de7; reader page pending.
   - te-Telu-IN-TE-T095-OCC-005; OLP-0377; OLP-0377-B011; source upstream/content/lambda-calculus/lambda-definability/truth-values.tex:72-76 bytes 2952-3154 SHA-256 c59cf879d08ccb846c28886a957ffee1a5256157e9a160af104606743eb9006c; target translation/content/lambda-calculus/lambda-definability/truth-values.tex:79-86 bytes 6267-6914 SHA-256 38ccfff43ab960e0a3fc0105db7c192dd59a696b5c7f0884f1eb07f12f707de7; reader page pending.
+
+## te-Telu-IN-TE-T096 — primitive recursive function / composition / projection / primitive recursion / lambda-definable closure
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: ఆదిమ పునరావృత్త ప్రమేయం / సంయుక్తం / ప్రక్షేప ప్రమేయం / ఆదిమ పునరావృత్తి / లాంబ్డాతో నిర్వచించదగిన ప్రమేయాల సంవృతత్వం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “primitive recursive function / composition / projection / primitive recursion / lambda-definable closure” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: ప్రమేయం, సంయుక్తం, క్రమయుగ్మం సాధారణ రూపాలకు స్థానిక ఆధారం ఉంది; ఆదిమ పునరావృత్తి లాంబ్డా నిర్మాణానికి ప్రత్యక్ష స్థానిక సాక్ష్యం లేదు. n-స్థానిక, n+2-స్థానిక ప్రమేయాల వాదన మూల గణిత అర్థం ప్రకారం నిలిచింది.
+
+- Rationale: TE-P011లో ప్రమేయం, సంయుక్త ప్రమేయం, TE-P032లో గణిత నిరూపణ/ఆగమన శైలి, TE-P034లో క్రమయుగ్మం ప్రత్యక్షంగా చూశాం. వాటిని గత TE-T064, TE-T079, TE-T093, TE-T094తో పోల్చి ఇదే రూపాలను కొనసాగించాం. ఈ పేజీలు చర్చ్ సంఖ్యాంకాల పునరావర్తనం లేదా ఆదిమ పునరావృత్త ప్రమేయాల లాంబ్డా సంకేతీకరణను నేరుగా స్థాపించవు; OLP-0378 నిర్మాణం, OLTELAMLDFPRF-001–002 ప్రకటిత సవరణలే ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి. లాంబ్డా, చర్చ్ ప్రత్యేక గణిత బదిలీ; Zero, Succ, Proj, F, G, H, D, Fst, Snd, \tuple, \num గుర్తింపులుగా యథాతథం.
+
+- Authorities checked: TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C004:TE-P034 [checked_context_only], PDF page 308; printed page 301; Main point 5, Cartesian product definition; Direct ordered-pair and Cartesian-product terminology; singular క్రమయుగ్మం is a transparent inflection.
+
+- Alternatives: TE-T064, TE-T079, TE-T094లోని ఆదిమ పునరావృత్తి, సంయుక్తం, క్రమయుగ్మం రూపాలను ఈ దశ-స్థితి నిర్మాణంలో నిలపడం [viable_alternative: ఎంపిక] | దశ ప్రమేయం g బదులు n+1-స్థానిక hనే n+2 ఆర్గ్యుమెంట్లకు ప్రయోగించడం [viable_alternative: తిరస్కరణ] | స్థానిక పేజీలు చర్చ్ పునరావర్తక లాంబ్డా పదాన్ని నేరుగా స్థాపిస్తాయని చెప్పడం [viable_alternative: తిరస్కరణ] | ఆగమన స్థితిలో సూచిక, విలువ అవయవాల క్రమాన్ని మార్చడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “ఆదిమ పునరావృత్త ప్రమేయం / సంయుక్తం / ప్రక్షేప ప్రమేయం / ఆదిమ పునరావృత్తి / లాంబ్డాతో నిర్వచించదగిన ప్రమేయాల సంవృతత్వం” is idiomatic and technically standard for “primitive recursive function / composition / projection / primitive recursion / lambda-definable closure” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T096-OCC-001; OLP-0378; OLP-0378-B004; source upstream/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:9-10 bytes 178-281 SHA-256 dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d; target translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:9-10 bytes 178-318 SHA-256 7b0242dfb2b4538e1eadf19091e38bc174954a6c20bb826c9816f385c7559e3e; reader page pending.
+  - te-Telu-IN-TE-T096-OCC-002; OLP-0378; OLP-0378-B005; source upstream/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:12-14 bytes 282-459 SHA-256 dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d; target translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:12-14 bytes 319-712 SHA-256 7b0242dfb2b4538e1eadf19091e38bc174954a6c20bb826c9816f385c7559e3e; reader page pending.
+  - te-Telu-IN-TE-T096-OCC-003; OLP-0378; OLP-0378-B006; source upstream/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:16-20 bytes 460-622 SHA-256 dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d; target translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:16-21 bytes 713-1055 SHA-256 7b0242dfb2b4538e1eadf19091e38bc174954a6c20bb826c9816f385c7559e3e; reader page pending.
+  - te-Telu-IN-TE-T096-OCC-004; OLP-0378; OLP-0378-B008; source upstream/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:31-36 bytes 890-1157 SHA-256 dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d; target translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:32-40 bytes 1420-2711 SHA-256 7b0242dfb2b4538e1eadf19091e38bc174954a6c20bb826c9816f385c7559e3e; reader page pending.
+  - te-Telu-IN-TE-T096-OCC-005; OLP-0378; OLP-0378-B013; source upstream/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:64-73 bytes 2019-2479 SHA-256 dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d; target translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:71-81 bytes 4418-5919 SHA-256 7b0242dfb2b4538e1eadf19091e38bc174954a6c20bb826c9816f385c7559e3e; reader page pending.
+  - te-Telu-IN-TE-T096-OCC-006; OLP-0378; OLP-0378-B014; source upstream/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:75-89 bytes 2480-3241 SHA-256 dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d; target translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:83-99 bytes 5920-7566 SHA-256 7b0242dfb2b4538e1eadf19091e38bc174954a6c20bb826c9816f385c7559e3e; reader page pending.
+  - te-Telu-IN-TE-T096-OCC-007; OLP-0378; OLP-0378-B015; source upstream/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:91-94 bytes 3242-3513 SHA-256 dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d; target translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:101-105 bytes 7567-7956 SHA-256 7b0242dfb2b4538e1eadf19091e38bc174954a6c20bb826c9816f385c7559e3e; reader page pending.
+  - te-Telu-IN-TE-T096-OCC-008; OLP-0378; OLP-0378-B020; source upstream/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:145-149 bytes 5583-5818 SHA-256 dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d; target translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:158-164 bytes 10628-11183 SHA-256 7b0242dfb2b4538e1eadf19091e38bc174954a6c20bb826c9816f385c7559e3e; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -11805,3 +11838,55 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTELAMLDFTVR-001-OCC-001; OLP-0377; OLP-0377-B007; source upstream/content/lambda-calculus/lambda-definability/truth-values.tex:24-33 bytes 722-1028 SHA-256 c59cf879d08ccb846c28886a957ffee1a5256157e9a160af104606743eb9006c; target translation/content/lambda-calculus/lambda-definability/truth-values.tex:37 bytes 1916-2498 SHA-256 38ccfff43ab960e0a3fc0105db7c192dd59a696b5c7f0884f1eb07f12f707de7; reader page pending.
+
+## te-Telu-IN-OLTELAMLDFPRF-001 — OLTELAMLDFPRF-001: composition representative index and result symbol
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: లెమ్మాలో మాత్రమే $G_{k-1}$, $h$గా సరిచేసి, తరువాతి నిర్మాణం, అభ్యాసాన్ని యథాతథంగా ఉంచాలి; పక్కనే మూల సవరణను ప్రకటించాలి.
+
+- Intended sense: Repair the audited composition representative index and result symbol at primitive-recursive-functions.tex lines 32-36, confirmed by lines 41-47, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMLDFPRF-20260926:OLTELAMLDFPRF-001 [checked_supports], content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex; primitive-recursive-functions.tex lines 32-36, confirmed by lines 41-47; composition_representative_index_and_result_symbol; లెమ్మాలో మాత్రమే $G_{k-1}$, $h$గా సరిచేసి, తరువాతి నిర్మాణం, అభ్యాసాన్ని యథాతథంగా ఉంచాలి; పక్కనే మూల సవరణను ప్రకటించాలి..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: సంయుక్త లెమ్మాలో k ప్రతినిధి పదాలకు G_0 నుంచి G_{k-1} వరకు మాత్రమే పేర్లు ఇచ్చి, H పదం h ప్రమేయాన్ని సూచిస్తుందని స్పష్టంగా చెప్పామా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMLDFPRF-001-OCC-001; OLP-0378; OLP-0378-B008; source upstream/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:31-36 bytes 890-1157 SHA-256 dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d; target translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:39 bytes 2063-2701 SHA-256 7b0242dfb2b4538e1eadf19091e38bc174954a6c20bb826c9816f385c7559e3e; reader page pending.
+
+## te-Telu-IN-OLTELAMLDFPRF-002 — OLTELAMLDFPRF-002: primitive recursion step uses wrong outer function
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: సమీకరణంలో బయట $h$ను $g$గా మాత్రమే మార్చి, ప్రతి దశలో సూచిక/విలువపై $g$ ఆధారిత నవీకరణ $y$ సార్లు జరుగుతుందని గద్యంలో స్పష్టం చేసి, పక్కనే సవరణను ప్రకటించాలి.
+
+- Intended sense: Repair the audited primitive recursion step uses wrong outer function at primitive-recursive-functions.tex lines 63-74, confirmed by lines 79-83 and 118-122, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMLDFPRF-20260926:OLTELAMLDFPRF-002 [checked_supports], content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex; primitive-recursive-functions.tex lines 63-74, confirmed by lines 79-83 and 118-122; primitive_recursion_step_uses_wrong_outer_function; సమీకరణంలో బయట $h$ను $g$గా మాత్రమే మార్చి, ప్రతి దశలో సూచిక/విలువపై $g$ ఆధారిత నవీకరణ $y$ సార్లు జరుగుతుందని గద్యంలో స్పష్టం చేసి, పక్కనే సవరణను ప్రకటించాలి..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: ఆదిమ పునరావృత్తి దశలో బయట gను వాడి, Gతో నిర్మించిన స్థితి-నవీకరణ, ఆగమన నిర్ధారణకు దాని స్థానసంఖ్య సరిపోతుందా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMLDFPRF-002-OCC-001; OLP-0378; OLP-0378-B013; source upstream/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:64-73 bytes 2019-2479 SHA-256 dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d; target translation/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:77 bytes 4685-5374 SHA-256 7b0242dfb2b4538e1eadf19091e38bc174954a6c20bb826c9816f385c7559e3e; reader page pending.

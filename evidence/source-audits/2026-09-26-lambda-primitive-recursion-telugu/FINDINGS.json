@@ -1,0 +1,43 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTELAMLDFPRF-20260926",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": ["OLP-0378"],
+    "finding_count": 2
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "source_files": [
+    {
+      "unit_id": "OLP-0378",
+      "path": "content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex",
+      "bytes": 5835,
+      "sha256": "dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "OLTELAMLDFPRF-001",
+      "unit_id": "OLP-0378",
+      "classification": "composition_representative_index_and_result_symbol",
+      "source_locator": "primitive-recursive-functions.tex lines 32-36, confirmed by lines 41-47",
+      "finding": "సంయుక్త లెమ్మాలో $k$ ప్రమేయాలు $g_0,\\dots,g_{k-1}$ అని ఉన్నా ప్రతినిధి పదాల చివరి సూచిక $G_k$గా ఉంది. అదే లెమ్మా ముగింపులో నిర్వచించదగిన ప్రమేయాన్ని $H$ అంటుంది; తరువాతి నిరూపణలో $H$ అనేది $h$కు ప్రతినిధి పదం.",
+      "controlling_evidence": "ప్రతినిధి పదం సూత్రంలో కచ్చితంగా $G_0$ నుంచి $G_{k-1}$ వరకే వాడారు; తదుపరి అభ్యాసం $H\\num{n_0}\\dots\\num{n_{n-1}}\\red\\num{h(n_0,\\dots,n_{n-1})}$ అని అడుగుతుంది. కాబట్టి పదాల చివరి సూచిక $k-1$, నిర్వచించదగిన ప్రమేయం $h$.",
+      "required_translation_handling": "లెమ్మాలో మాత్రమే $G_{k-1}$, $h$గా సరిచేసి, తరువాతి నిర్మాణం, అభ్యాసాన్ని యథాతథంగా ఉంచాలి; పక్కనే మూల సవరణను ప్రకటించాలి."
+    },
+    {
+      "finding_id": "OLTELAMLDFPRF-002",
+      "unit_id": "OLP-0378",
+      "classification": "primitive_recursion_step_uses_wrong_outer_function",
+      "source_locator": "primitive-recursive-functions.tex lines 63-74, confirmed by lines 79-83 and 118-122",
+      "finding": "ఆదిమ పునరావృత్తి సమీకరణపు కుడి వైపున మూలం బయట $h$ను వ్రాసింది; దీంతో $n+1$-స్థానిక $h$కు $n+2$ ఆర్గ్యుమెంట్లు అందుతున్నాయి. దశలో వాడవలసింది $g$.",
+      "controlling_evidence": "లెమ్మా $g$ను $n+2$-స్థానిక ప్రమేయంగా ప్రకటిస్తుంది. నిర్మాణంలోని $D$ దశ $G$ను ప్రస్తుత సూచిక, విలువకు ప్రయోగిస్తుంది; ఆగమన పంక్తి $g(n,m,h(n,m))=h(n,m+1)$ అని చెబుతుంది. ముందరి pr-functions.texలోని సాధారణ ఆదిమ పునరావృత్తి నిర్వచనం కూడా ఇదే. తదుపరి అనౌపచారిక వాక్యంలో $h$ను $y$ సార్లు ప్రయోగిస్తామనే వర్ణన దీనితో సరిపోదు: పునరావర్తించేది $g$ ద్వారా ఇచ్చిన స్థితి-నవీకరణ.",
+      "required_translation_handling": "సమీకరణంలో బయట $h$ను $g$గా మాత్రమే మార్చి, ప్రతి దశలో సూచిక/విలువపై $g$ ఆధారిత నవీకరణ $y$ సార్లు జరుగుతుందని గద్యంలో స్పష్టం చేసి, పక్కనే సవరణను ప్రకటించాలి."
+    }
+  ]
+}

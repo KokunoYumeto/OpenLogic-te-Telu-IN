@@ -411,6 +411,16 @@ locations['TE-T095']=[
  L('content/lambda-calculus/lambda-definability/truth-values.tex',48,51,53,55,'negation and conjunction','నిషేధం, సంయోగం'),
  L('content/lambda-calculus/lambda-definability/truth-values.tex',73,75,81,84,'inclusive and exclusive disjunction','బహిష్కార వికల్పం')
 ];
+locations['TE-T096']=[
+ L('content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex',10,10,10,10,'Primitive Recursive Functions','ఆదిమ పునరావృత్త ప్రమేయాలు'),
+ L('content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex',12,14,12,14,'primitive recursive functions','ఆదిమ పునరావృత్త ప్రమేయాలు'),
+ L('content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex',17,19,17,20,'projections','ప్రక్షేప ప్రమేయాలు'),
+ L('content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex',32,36,32,39,'composition','సంయుక్తం'),
+ L('content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex',63,70,62,82,'primitive','ఆదిమ పునరావృత్తి'),
+ L('content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex',84,89,93,99,'iteration state','క్రమయుగ్మాన్ని స్థితిగా'),
+ L('content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex',91,94,101,105,'induction','ఆగమనంతో'),
+ L('content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex',142,148,153,164,'closed under composition and primitive recursion','సంవృతమైనవి')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -491,6 +501,7 @@ alternatives['TE-T092']=['మునుపటి సమాంతర బీటా,
 alternatives['TE-T093']=['TE-T079లోని లాంబ్డాతో నిర్వచించదగిన, చర్చ్ సంఖ్యాంకం పదాలను కొత్త అంకగణిత ఉదాహరణలలో మూల నిర్వచనాలకు తగినట్లు కొనసాగించడం (ఎంపిక)','TE-P007లో సున్నా సహజ సంఖ్య కాదన్న ప్రాంతీయ సంప్రదాయాన్ని OpenLogic \\Natపై రుద్దడం (తిరస్కరణ)','స్థానిక పేజీలు చర్చ్ సంఖ్యాంకాల బీటా గణనలను నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ)','దశల సంఖ్య లేదా గుణకార ప్రత్యామ్నాయంలోని తప్పును దాచిపెట్టడం (తిరస్కరణ)'];
 alternatives['TE-T094']=['TE-P034లో ప్రత్యక్షంగా ఉన్న క్రమయుగ్మం పదాన్ని లాంబ్డా జతకు వర్తింపజేసి Fst/Snd సూత్రాలతో క్రమాన్ని నిలపడం (ఎంపిక)','క్రమిత జత అనే అస్థిర పర్యాయాన్ని తిరిగి తెచ్చుకోవడం (తిరస్కరణ)','స్థానిక పేజీ చర్చ్ జత సంకేతీకరణను నేరుగా బోధిస్తుందని చెప్పడం (తిరస్కరణ)','Predలో మొదటి, రెండవ అవయవాల క్రమాన్ని మార్చడం (తిరస్కరణ)'];
 alternatives['TE-T095']=['పూర్వ సత్యమూల్యం, సంయోగం, వికల్పం పదాలను సూత్రాల ఎంపిక-ప్రమేయ అర్థంతో కొనసాగించడం (ఎంపిక)','సత్యమూల్యపు లాంబ్డా సంకేతీకరణకు ప్రత్యక్ష స్థానిక సాక్ష్యం ఉందని చెప్పడం (తిరస్కరణ)','బహిష్కార వికల్పాన్ని కనీసం ఒకటి నిజమైన సందర్భంతో కలపడం (తిరస్కరణ)','సంబంధపు స్థానం n/k అసమానతను దాచడం (తిరస్కరణ)'];
+alternatives['TE-T096']=['TE-T064, TE-T079, TE-T094లోని ఆదిమ పునరావృత్తి, సంయుక్తం, క్రమయుగ్మం రూపాలను ఈ దశ-స్థితి నిర్మాణంలో నిలపడం (ఎంపిక)','దశ ప్రమేయం g బదులు n+1-స్థానిక hనే n+2 ఆర్గ్యుమెంట్లకు ప్రయోగించడం (తిరస్కరణ)','స్థానిక పేజీలు చర్చ్ పునరావర్తక లాంబ్డా పదాన్ని నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ)','ఆగమన స్థితిలో సూచిక, విలువ అవయవాల క్రమాన్ని మార్చడం (తిరస్కరణ)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -507,7 +518,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T095 record the Batch 025--Batch 054 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T096 record the Batch 025--Batch 055 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -776,6 +787,8 @@ const correctionQuestions={
   ,'OLTELAMLDFARF-002':'సంకలన గణనలో నాలుగు బాణాలన్నిటికీ కనీసం రెండు దశలు కావాలని, మధ్య పదాలను మార్చకుండా చూపామా?'
   ,'OLTELAMLDFARF-003':'ప్రత్యామ్నాయ గుణకార పదంలో Add b పునరుద్ధరణ రెండవ ఆర్గ్యుమెంటును వాడి n mను ఇస్తుందా?'
   ,'OLTELAMLDFTVR-001':'సంబంధపు రెండు ప్రయోగాల్లో k ఆర్గ్యుమెంట్లు ఉండగా ప్రకటించిన ఘాతం మాత్రమే Nat^kగా మార్చి, ఆ స్థాన సవరణను స్పష్టంగా చెప్పామా?'
+  ,'OLTELAMLDFPRF-001':'సంయుక్త లెమ్మాలో k ప్రతినిధి పదాలకు G_0 నుంచి G_{k-1} వరకు మాత్రమే పేర్లు ఇచ్చి, H పదం h ప్రమేయాన్ని సూచిస్తుందని స్పష్టంగా చెప్పామా?'
+  ,'OLTELAMLDFPRF-002':'ఆదిమ పునరావృత్తి దశలో బయట gను వాడి, Gతో నిర్మించిన స్థితి-నవీకరణ, ఆగమన నిర్ధారణకు దాని స్థానసంఖ్య సరిపోతుందా?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));
