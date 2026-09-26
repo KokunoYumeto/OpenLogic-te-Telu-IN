@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **420 of 722 source units drafted**. This readable view contains all 501 decisions and 1019 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **421 of 722 source units drafted**. This readable view contains all 504 decisions and 1027 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3379,6 +3379,37 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T113-OCC-004; OLP-0420; OLP-0420-B009; source upstream/content/normal-modal-logic/frame-definability/introduction.tex:44-53 bytes 2019-2671 SHA-256 a61229335a4a2f9fc6815e7e058fe5c6d7ff75c46f265f1e7cd609e4f83ce6ff; target translation/content/normal-modal-logic/frame-definability/introduction.tex:58-72 bytes 4386-5786 SHA-256 bee2d565d5ca20068cb7590641b1fd24d234973ec00811775d2c0f89ba46f460; reader page pending.
   - te-Telu-IN-TE-T113-OCC-005; OLP-0420; OLP-0420-B009; source upstream/content/normal-modal-logic/frame-definability/introduction.tex:44-53 bytes 2019-2671 SHA-256 a61229335a4a2f9fc6815e7e058fe5c6d7ff75c46f265f1e7cd609e4f83ce6ff; target translation/content/normal-modal-logic/frame-definability/introduction.tex:58-72 bytes 4386-5786 SHA-256 bee2d565d5ca20068cb7590641b1fd24d234973ec00811775d2c0f89ba46f460; reader page pending.
   - te-Telu-IN-TE-T113-OCC-006; OLP-0420; OLP-0420-B010; source upstream/content/normal-modal-logic/frame-definability/introduction.tex:55-57 bytes 2672-2864 SHA-256 a61229335a4a2f9fc6815e7e058fe5c6d7ff75c46f265f1e7cd609e4f83ce6ff; target translation/content/normal-modal-logic/frame-definability/introduction.tex:74-78 bytes 5787-6183 SHA-256 bee2d565d5ca20068cb7590641b1fd24d234973ec00811775d2c0f89ba46f460; reader page pending.
+
+## te-Telu-IN-TE-T114 — serial / reflexive / symmetric / transitive / euclidean accessibility; partially functional / functional / weakly dense / weakly connected / weakly directed; diamond property / confluence
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: సీరియల్ / స్వావర్తన / సౌష్ఠవ / సంక్రామక / యూక్లిడియన్ ప్రాప్యత; పాక్షిక ప్రమేయాత్మక / ప్రమేయాత్మక / బలహీన సాంద్ర / బలహీన సంయుక్త / బలహీన సహగమ్య; వజ్ర ధర్మం / సంగమం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “serial / reflexive / symmetric / transitive / euclidean accessibility; partially functional / functional / weakly dense / weakly connected / weakly directed; diamond property / confluence” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: యూక్లిడియన్, బలహీన సాంద్ర, బలహీన సంయుక్త, బలహీన సహగమ్య, వజ్ర ధర్మం, సంగమం పేర్లు మూల నిర్వచనాధీన తాత్కాలిక ఎంపికలు; స్థానిక సాక్ష్యాలు ఈ modal correspondence వాదాలను లేదా OLTENMLFRDACC-001/002 సవరణలను నిరూపించవు.
+
+- Rationale: TE-P008లో సమితి/ప్రమేయం, TE-P010లో ద్విస్థానిక సంబంధం, TE-P011/012లో ప్రమేయ ఏకైకత మరియు సర్వత్ర నిర్వచితత్వం, TE-P021లో సోపాధికం, TE-P024లో నిరూపణ గద్యాన్ని స్థానిక చిత్రాల్లో చూశాం. ఈ సాక్ష్యాలు ప్రత్యేక క్రిప్కె ప్రాప్యత-ధర్మాలకు ప్రత్యక్ష పేర్లు ఇవ్వవు. OLP-0421లోని పరిమాణక నిర్వచనాలు, పట్టిక సూత్రాలు, సౌష్ఠవ నిరూపణ, ముందరి TE-T016/024/113 స్థిర వాడుక ఖచ్చిత అర్థాన్ని నియంత్రిస్తాయి. సీరియల్ మునుపటి బహిరంగ సాంకేతిక అరువు; యూక్లిడియన్ మూలంలోని Euclidean పేరుకు గుర్తించదగిన అరువు. D,T,B,4,5,L,G, Box, Diamond మరియు చరాలు రక్షిత గణిత సంకేతాలు.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C004:TE-P012 [checked_context_only], PDF page 319; printed page 312; Questions 37-38; Function-versus-relation explanatory register; do not copy source answers mechanically. | TE-C005:TE-P021 [checked_context_only], PDF page undefined; printed page not stated; Conditional and biconditional headings and explanations; Direct conditional and biconditional terminology. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: పూర్వ సంబంధ/ప్రమేయ పదజాలాన్ని కొనసాగించి, ప్రతి ప్రాప్యత ధర్మాన్ని పట్టికలోని ఖచ్చిత పరిమాణక నిర్వచనానికి కట్టడం [viable_alternative: ఎంపిక] | బలహీన సంయుక్తను గ్రాఫు అనుసంధానత్వంతో సమానం చేయడం [viable_alternative: తిరస్కరణ] | పాక్షిక ప్రమేయాత్మకాన్ని ప్రతి లోకానికి ఖచ్చితంగా ఒక ప్రాప్య లోకం ఉండడంగా పొరబడడం [viable_alternative: తిరస్కరణ] | స్థానిక సంబంధ చిత్రాలే యూక్లిడియన్ లేదా వజ్ర ధర్మానికి ప్రత్యక్ష పేరు ఇస్తాయని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “సీరియల్ / స్వావర్తన / సౌష్ఠవ / సంక్రామక / యూక్లిడియన్ ప్రాప్యత; పాక్షిక ప్రమేయాత్మక / ప్రమేయాత్మక / బలహీన సాంద్ర / బలహీన సంయుక్త / బలహీన సహగమ్య; వజ్ర ధర్మం / సంగమం” is idiomatic and technically standard for “serial / reflexive / symmetric / transitive / euclidean accessibility; partially functional / functional / weakly dense / weakly connected / weakly directed; diamond property / confluence” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T114-OCC-001; OLP-0421; OLP-0421-B005; source upstream/content/normal-modal-logic/frame-definability/properties-accessibility.tex:11 bytes 203-253 SHA-256 eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622; target translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:11 bytes 203-284 SHA-256 af72eab91f6aaf09a616c58f17e4a1d0106d8761934140a8218f002d96e6a74b; reader page pending.
+  - te-Telu-IN-TE-T114-OCC-002; OLP-0421; OLP-0421-B008; source upstream/content/normal-modal-logic/frame-definability/properties-accessibility.tex:26-53 bytes 896-1983 SHA-256 eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622; target translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:28-55 bytes 1642-2869 SHA-256 af72eab91f6aaf09a616c58f17e4a1d0106d8761934140a8218f002d96e6a74b; reader page pending.
+  - te-Telu-IN-TE-T114-OCC-003; OLP-0421; OLP-0421-B008; source upstream/content/normal-modal-logic/frame-definability/properties-accessibility.tex:26-53 bytes 896-1983 SHA-256 eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622; target translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:28-55 bytes 1642-2869 SHA-256 af72eab91f6aaf09a616c58f17e4a1d0106d8761934140a8218f002d96e6a74b; reader page pending.
+  - te-Telu-IN-TE-T114-OCC-004; OLP-0421; OLP-0421-B016; source upstream/content/normal-modal-logic/frame-definability/properties-accessibility.tex:125-143 bytes 4941-6165 SHA-256 eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622; target translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:146-169 bytes 9264-11933 SHA-256 af72eab91f6aaf09a616c58f17e4a1d0106d8761934140a8218f002d96e6a74b; reader page pending.
+  - te-Telu-IN-TE-T114-OCC-005; OLP-0421; OLP-0421-B016; source upstream/content/normal-modal-logic/frame-definability/properties-accessibility.tex:125-143 bytes 4941-6165 SHA-256 eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622; target translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:146-169 bytes 9264-11933 SHA-256 af72eab91f6aaf09a616c58f17e4a1d0106d8761934140a8218f002d96e6a74b; reader page pending.
+  - te-Telu-IN-TE-T114-OCC-006; OLP-0421; OLP-0421-B016; source upstream/content/normal-modal-logic/frame-definability/properties-accessibility.tex:125-143 bytes 4941-6165 SHA-256 eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622; target translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:146-169 bytes 9264-11933 SHA-256 af72eab91f6aaf09a616c58f17e4a1d0106d8761934140a8218f002d96e6a74b; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -13547,3 +13578,55 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLFRDINT-001-OCC-001; OLP-0420; OLP-0420-B007; source upstream/content/normal-modal-logic/frame-definability/introduction.tex:25-31 bytes 947-1384 SHA-256 a61229335a4a2f9fc6815e7e058fe5c6d7ff75c46f265f1e7cd609e4f83ce6ff; target translation/content/normal-modal-logic/frame-definability/introduction.tex:35 bytes 2360-2474 SHA-256 bee2d565d5ca20068cb7590641b1fd24d234973ec00811775d2c0f89ba46f460; reader page pending.
+
+## te-Telu-IN-OLTENMLFRDACC-001 — OLTENMLFRDACC-001: one world countermodel relation unspecified
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: ఒక-లోక ఉదాహరణలో ప్రాప్యత సంబంధం ఖాళీ అని గద్యంలో స్పష్టం చేసి, పక్కనే మూల లోటును ప్రకటించాం.
+
+- Intended sense: Repair the audited one world countermodel relation unspecified at properties-accessibility.tex lines 95-99, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLFRDACC-20260927:OLTENMLFRDACC-001 [checked_supports], content/normal-modal-logic/frame-definability/properties-accessibility.tex; properties-accessibility.tex lines 95-99; one_world_countermodel_relation_unspecified; ఒక-లోక ఉదాహరణలో ప్రాప్యత సంబంధం ఖాళీ అని గద్యంలో స్పష్టం చేసి, పక్కనే మూల లోటును ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the one-world countermodel explicitly take an empty accessibility relation before asserting non-reflexivity and vacuous Box p?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLFRDACC-001-OCC-001; OLP-0421; OLP-0421-B013; source upstream/content/normal-modal-logic/frame-definability/properties-accessibility.tex:91-102 bytes 3358-4108 SHA-256 eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622; target translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:103 bytes 5897-5983 SHA-256 af72eab91f6aaf09a616c58f17e4a1d0106d8761934140a8218f002d96e6a74b; reader page pending.
+
+## te-Telu-IN-OLTENMLFRDACC-002 — OLTENMLFRDACC-002: two world example cross edges do not exclude loops
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: రెండు-లోకాల ఉదాహరణలో పరస్పర జతలు మాత్రమే Rలో ఉన్నాయని స్పష్టం చేసి, పక్కనే అస్వావర్తన నిర్ధారణ లోటును ప్రకటించాం.
+
+- Intended sense: Repair the audited two world example cross edges do not exclude loops at properties-accessibility.tex lines 105-116, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLFRDACC-20260927:OLTENMLFRDACC-002 [checked_supports], content/normal-modal-logic/frame-definability/properties-accessibility.tex; properties-accessibility.tex lines 105-116; two_world_example_cross_edges_do_not_exclude_loops; రెండు-లోకాల ఉదాహరణలో పరస్పర జతలు మాత్రమే Rలో ఉన్నాయని స్పష్టం చేసి, పక్కనే అస్వావర్తన నిర్ధారణ లోటును ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the two-world example explicitly exclude self-loops before calling the relation irreflexive, while preserving both cross-edges and equal atomic valuations?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLFRDACC-002-OCC-001; OLP-0421; OLP-0421-B014; source upstream/content/normal-modal-logic/frame-definability/properties-accessibility.tex:104-119 bytes 4109-4854 SHA-256 eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622; target translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:123 bytes 7656-7715 SHA-256 af72eab91f6aaf09a616c58f17e4a1d0106d8761934140a8218f002d96e6a74b; reader page pending.

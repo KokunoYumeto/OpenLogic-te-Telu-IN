@@ -1,0 +1,47 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTENMLFRDACC-20260927",
+  "created_utc": "2026-09-26T22:42:03Z",
+  "status": "confirmed_against_one_world_and_two_world_model_conditions",
+  "scope": {
+    "chapter": "Normal Modal Logic — Frame Definability",
+    "unit_ids": ["OLP-0421"],
+    "finding_count": 2
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTENMLFRDACC-001",
+      "unit_id": "OLP-0421",
+      "classification": "one_world_countermodel_relation_unspecified",
+      "source": {
+        "path": "content/normal-modal-logic/frame-definability/properties-accessibility.tex",
+        "bytes": 7905,
+        "sha256": "eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622",
+        "locator": "properties-accessibility.tex lines 95-99"
+      },
+      "finding": "The example sets W={w} and V(p)=empty and immediately asserts non-reflexivity and vacuous Box p, but does not specify R. Both assertions require the empty relation on the one-world domain; a self-loop instead makes the relation reflexive and Box p false.",
+      "controlling_evidence": "On the sole world, the only possible accessibility edge is (w,w). With R empty, Box p is vacuously true and p false.",
+      "required_translation_handling": "State in adjacent Telugu prose that the accessibility relation has no pairs, with a visible source-correction note; keep the frozen English source."
+    },
+    {
+      "finding_id": "OLTENMLFRDACC-002",
+      "unit_id": "OLP-0421",
+      "classification": "two_world_example_cross_edges_do_not_exclude_loops",
+      "source": {
+        "path": "content/normal-modal-logic/frame-definability/properties-accessibility.tex",
+        "bytes": 7905,
+        "sha256": "eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622",
+        "locator": "properties-accessibility.tex lines 105-116"
+      },
+      "finding": "The proposition requires Ruv and Rvu but does not rule out Ruu or Rvv, then concludes that the model is irreflexive. The listed cross-edges alone do not entail absence of self-loops.",
+      "controlling_evidence": "Taking R exactly {(u,v),(v,u)} and equal atomic valuations makes u and v modally indistinguishable by formula induction, yields all T instances at both worlds, and makes the relation irreflexive.",
+      "required_translation_handling": "Explicitly restrict the intended example to the two listed cross-edges, with an adjacent source-correction note; do not strengthen the general theorem beyond this example."
+    }
+  ]
+}

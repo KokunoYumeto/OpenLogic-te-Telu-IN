@@ -1,0 +1,217 @@
+% Part: normal-modal-logic
+% Chapter: frame-correspondence
+% Section: properties-accessibility
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{frd}{acc}
+
+\olsection{ప్రాప్యత సంబంధాల ధర్మాలు}
+
+అనేక మోడల్ \tetoken{సూత్రాలు}{!!{formula}s} ప్రాప్యత సంబంధానికి
+ఉండే సరళమైన, కొన్నిసార్లు పరిచితమైన ధర్మాలకు లక్షణాత్మకంగా
+ఉంటాయి. ఒక దిశలో దీని అర్థం: నిర్దిష్ట ధర్మం గల ఏ నమూనాలోనైనా,
+దానికి అనురూపమైన \tetoken{సూత్రం}{!!{formula}}, దాని అన్ని
+ప్రతిస్థాపన నిదర్శనాలూ సత్యమవుతాయి. ప్రాప్యత సంబంధాల ఐదు
+సాంప్రదాయిక రకాలను, అవి సత్యమయ్యేలా హామీ ఇచ్చే సూత్రాలను
+మొదట చూద్దాం.
+
+\begin{thm}\ollabel{thm:soundschemas}
+  $\mModel{M} = \tuple{W, R, V}$ ఒక నమూనా అనుకుందాం.
+  $R$కు \olref{tab:five} ఎడమవైపు చూపిన ధర్మం ఉంటే,
+  కుడివైపు ఉన్న \tetoken{సూత్రం}{!!{formula}} యొక్క ప్రతి
+  నిదర్శనం~$\mModel{M}$లో సత్యమవుతుంది.
+\end{thm}
+
+\begin{table}[t]
+    \begin{tabular}{| l || l |}
+      \hline
+      {\emph{$R$ ఇలా ఉంటే \dots}} & {\emph{$\mModel{M}$లో ఇది సత్యం:}} \\
+      \hline \hline
+      \emph{సీరియల్}: $\forall u \exists v Ruv$ & \hbox to.43\textwidth
+           {$\Box p \lif \Diamond p$ \hfill (\Ax{D})} \\
+      \hline
+      \emph{స్వావర్తన}: $\forall w Rww$
+      & \hbox to.43\textwidth
+          {$\Box p \lif p$ \hfill (\Ax{T})} \\
+      \hline
+      \emph{సౌష్ఠవ}: &  \hbox to .43\textwidth
+           {$p \lif \Box\Diamond p$ \hfill (\Ax{B})} \\
+           $\forall u\forall v(Ruv \lif Rvu)$ & \\
+      \hline
+      \emph{సంక్రామక}: & \hbox to.43\textwidth
+           {$\Box p \lif \Box \Box p$ \hfill (\Ax{4})} \\
+      $\forall u \forall v \forall w ((Ruv \land Rvw) \lif Ruw)$ & \\
+      \hline
+      \emph{యూక్లిడియన్}: & \hbox to .43\textwidth
+        {$\Diamond p \lif \Box\Diamond p$ \hfill (\Ax{5})} \\
+      $\forall w \forall u \forall v ((Rwu \land Rwv) \lif Ruv)$ &\\
+      \hline
+    \end{tabular}
+    \caption{ఐదు అనురూపతా వాస్తవాలు.}
+    \ollabel{tab:five}
+  \end{table}
+
+
+\begin{proof}
+  \Ax{B} సందర్భాన్ని చూద్దాం: ఒక నమూనాలో ఈ పథకం
+  సత్యమని చూపాలంటే, దాని అన్ని నిదర్శనాలూ ఆ నమూనాలోని
+  అన్ని లోకాల్లో సత్యమని చూపాలి. అందువల్ల \Ax{B}కు
+  $!A \lif \Box\Diamond !A$ అనే నిదర్శనాన్ని తీసుకుందాం;
+  $w \in W$ను ఏకపక్ష లోకంగా తీసుకుందాం.
+  $w$ వద్ద $\Box \Diamond !A$ సత్యమని చూపడానికి,
+  పూర్వపక్షం $!A$ అనేది $w$ వద్ద సత్యమని అనుకుందాం.
+  కాబట్టి $w$ నుంచి ప్రాప్యమయ్యే ప్రతి $w'$ వద్ద
+  $\Diamond !A$ సత్యమని చూపాలి. ఇప్పుడు $Rww'$
+  అయ్యే ఏ $w'$కైనా, సౌష్ఠవ ఊహ వల్ల $Rw'w$ కూడా
+  ఉంటుంది (\olref{fig:Bsymm} చూడండి). $\mSat{M}{!A}[w]$
+  కాబట్టి $\mSat{M}{\Diamond !A}[w']$.
+  $Rww'$ అయ్యే ఏకపక్ష లోకం $w'$ను తీసుకున్నాం కాబట్టి
+  $\mSat{M}{\Box\Diamond!A}[w]$.
+
+  మిగిలిన సందర్భాలను అభ్యాసాలుగా వదిలేస్తున్నాం.
+\end{proof}
+
+\begin{prob}
+  \olref[nml][frd][acc]{thm:soundschemas} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={below:$\mSat{{}}{\formula{A}}$\\
+          $\mSat{{}}{\Box\Diamond \formula{A}}$}] {$w$};
+      \node[world] (w2) [label=below:{$\mSat{{}}{\Diamond \formula{A}}$},
+        right=of w1] {$w'$};
+      \draw[->, bend left] (w1) to (w2);
+      \draw[->, bend left] (w2) to (w1);
+    \end{tikzpicture}
+  \end{center}
+\caption{సౌష్ఠవాన్ని ఉపయోగించిన వాదన.}
+\ollabel{fig:Bsymm}
+\end{figure}
+
+\olref{thm:soundschemas}లోని విలోమ సూచనలు నిలవవని గమనించండి:
+ఒక నమూనాలో పథకం సత్యమైతే, ఆ నమూనా ప్రాప్యత సంబంధానికి
+దానికి అనురూపమైన ధర్మం తప్పక ఉంటుందని చెప్పలేం.
+\Ax{T}, స్వావర్తన నమూనాల సందర్భంలో, \Ax{T} పథకానికే
+ఒక నిదర్శనం అసత్యమయ్యే నమూనాను సులభంగా ఇవ్వవచ్చు:
+$W = \{w\}$, $V(p) = \emptyset$ అనుకుందాం;
+ప్రాప్యత సంబంధంలో ఏ జతా లేకుండా తీసుకుందాం.
+\sourcecorrection{OLTENMLFRDACC-001}{మూలం ఒకే లోకాన్ని,
+  $V(p)=\emptyset$ను ఇచ్చి $R$ స్వావర్తనం కాదని,
+  $\Box p$ సత్యమని నిర్ధారిస్తుంది; కానీ $R$ను నిర్దేశించదు.
+  ఆ నిర్ధారణలకు అవసరమైన $R=\emptyset$ను ఉదాహరణలో
+  స్పష్టంగా చేర్చాం.}
+అప్పుడు $R$ స్వావర్తనం కాదు; అయితే $\mSat{M}{\Box
+  p}[w]$ మరియు $\mSat/{M}{p}[w]$. కానీ ఇక్కడ
+\Ax{T}కు చెందిన ఒక్క నిదర్శనం మాత్రమే~$\mModel{M}$లో
+అసత్యమైంది; $\Box \lnot p \lif \lnot p$ వంటి ఇతర
+నిదర్శనాలు సత్యమే. \Ax{T} యొక్క \emph{ప్రతి ప్రతిస్థాపన
+నిదర్శనం}~$\mModel{M}$లో సత్యమైనా $\mModel{M}$
+స్వావర్తనం కాని ఉదాహరణలు ఇవ్వడం మరింత కష్టం.
+అయితే అలాంటి నమూనాలు కూడా ఉన్నాయి:
+
+\begin{prop}\ollabel{prop:reflexive}
+  $\mModel{M} = \tuple{W, R, V}$ అనే నమూనాలో $W = \{u, v
+  \}$ అనుకుందాం. $u$, $v$ లోకాలు $R$ ద్వారా
+  ఒకదానికొకటి సంబంధించబడి ఉండాలి: అంటే $Ruv$,
+  $Rvu$ రెండూ ఉండాలి. ఈ రెండు జతలే సంబంధంలో ఉండాలని
+  కూడా తీసుకుందాం.
+  \sourcecorrection{OLTENMLFRDACC-002}{మూలం $Ruv$,
+    $Rvu$లను పేర్కొన్నా $Ruu$, $Rvv$ లేవని చెప్పదు;
+    అందువల్ల చివరలో చెప్పిన అస్వావర్తనత్వం ఆ ఊహలతో
+    అనుగమించదు. ఉద్దేశించిన ఉదాహరణకు
+    $R=\{(u,v),(v,u)\}$ అని స్పష్టం చేశాం.}
+  అన్ని $p$లకు $u \in V(p) \Leftrightarrow v
+  \in V(p)$ అని అనుకుందాం. అప్పుడు:
+  \begin{enumerate}
+  \item అన్ని $!A$లకు: $\mSat{M}{!A}[u]$ అప్పుడే, అప్పుడే
+    $\mSat{M}{!A}[v]$ ($!A$పై ఆగమనాన్ని వాడండి).
+  \item \Ax{T} యొక్క ప్రతి నిదర్శనం $\mModel{M}$లో సత్యం.
+  \end{enumerate}
+  $\mModel{M}$ స్వావర్తనం కాదు (నిజానికి అది
+  \emph{అస్వావర్తనం}) కాబట్టి, \Ax{T} సందర్భంలో
+  \olref{thm:soundschemas} విలోమం విఫలమవుతుంది
+  (\olref{thm:soundschemas}లో పేర్కొన్న ఇతర పథకాలలో
+  కొన్ని పథకాలకూ---అన్నింటికీ కాదు---ఇలాంటి వాదనలు ఇవ్వవచ్చు).
+\end{prop}
+
+\begin{prob}
+  \olref[nml][frd][acc]{prop:reflexive}లోని వాదనలను నిరూపించండి.
+\end{prob}
+
+\Ax{D}, \Ax{T}, \Ax{B}, \Ax{4}, \Ax{5} అనే ఐదు
+సాంప్రదాయిక \tetoken{సూత్రాల}{!!{formula}s}పై ప్రధానంగా
+దృష్టి పెట్టబోతున్నా, ప్రాప్యత సంబంధాల మరికొన్ని
+ధర్మాలను \olref{tab:anotherfive}లో నమోదు చేస్తున్నాం.
+ఏ లోకం నుంచైనా గరిష్ఠంగా ఒకే లోకం ప్రాప్యమైతే,
+ప్రాప్యత సంబంధం~$R$ \emph{పాక్షిక ప్రమేయాత్మకమైనది}.
+ఏ లోకం నుంచైనా ఖచ్చితంగా ఒకే లోకం ప్రాప్యమైతే,
+దానిని \emph{ప్రమేయాత్మకమైనది} అంటాం.
+(అందువల్ల ప్రమేయాత్మక సంబంధాలు సీరియల్, పాక్షిక
+ప్రమేయాత్మక అనే రెండు ధర్మాలూ గలవే.) ప్రాప్యత సంబంధం
+ఒక (పాక్షిక) ప్రమేయంలా పనిచేస్తుంది కాబట్టి వాటికి
+``ప్రమేయాత్మక'' అనే పేరు వచ్చింది. $Ruv$
+అయినప్పుడల్లా $u$, $v$ల ``మధ్య'' ఒక~$w$
+ఉంటే ఆ సంబంధం \emph{బలహీన సాంద్రత గలది}.
+ఈ అర్థంలో బలహీన సాంద్ర సంబంధాలు సంక్రామక సంబంధాలకు
+వ్యతిరేక దిశలో ఉంటాయి: సంక్రామక సంబంధంలో $u$ నుంచి
+$w$ మీదుగా $v$కు చేరగలిగితే $u$ నుంచి $v$కు
+నేరుగానూ చేరగలం; బలహీన సాంద్ర సంబంధంలో $u$ నుంచి
+$v$కు నేరుగా చేరగలిగితే ఏదో~$w$ మీదుగా కూడా
+చేరగలం. ఏదో లోకం~$w$ నుంచి $u$, $v$ లోకాలు
+రెండింటికీ చేరగలిగినప్పుడల్లా, ఆ $u$, $v$
+రెండింటి నుంచీ ఒకే లోకం~$t$కు చేరగలిగితే సంబంధం
+\emph{బలహీన సహగమ్యమైనది}. దీన్నే కొన్నిసార్లు
+``వజ్ర ధర్మం'' లేదా ``సంగమం'' అంటారు.
+
+\begin{table}[t]
+    \begin{tabular}{| p{.50\textwidth} || p{.43\textwidth} |}
+      \hline
+      {\emph{$R$ ఇలా ఉంటే \dots}} & {\emph{$\mModel{M}$లో ఇది సత్యం:}} \\
+      \hline \hline
+      \emph{పాక్షిక ప్రమేయాత్మక}: &
+      \multirow{2}{*}{$\Diamond p \lif \Box p$} \\
+      $ \forall w \forall u \forall v ((Rwu \land Rwv) \lif u =v )$ & \\
+      \hline
+      \multirow{2}{*}{\emph{ప్రమేయాత్మక}: $\forall w \exists v \forall u(Rwu \liff \eq[u][v]) $}
+      & \multirow{2}{*}{$\Diamond p \liff \Box p$} \\
+      & \\
+      \hline
+      \emph{బలహీన సాంద్ర}: &  \multirow{2}{*}{$\Box \Box p \lif
+        \Box p$} \\
+      $\forall u\forall v(Ruv \lif \exists w(Ruw \land Rwv))$ & \\
+      \hline
+      \emph{బలహీన సంయుక్త}: &
+      \multirow{3}{*}{\hbox to.43\textwidth{$
+        \begin{array}{@{}l@{}}
+          \Box ((p \land \Box p) \lif q) \lor {} \\
+          \qquad \Box ((q \land \Box q) \lif p)
+        \end{array}$ \hfill (\Ax{L})}
+      } \\
+      $\forall w \forall u \forall v ((Rwu \land Rwv) \lif {}$ &\\
+      \qquad $(Ruv \lor u=v \lor Rvu))$ & \\
+      \hline
+      \emph{బలహీన సహగమ్య}: & \multirow{3}{*}{\hbox to .43\textwidth
+        {$\Diamond\Box p \lif \Box\Diamond p$\hfill (\Ax{G})}} \\
+      $\forall w \forall u \forall v ((Rwu \land Rwv) \lif {}$ & \\
+      \qquad $\exists t (Rut \land Rvt))$ & \\
+      \hline
+    \end{tabular}
+    \caption{ఇంకా ఐదు అనురూపతా వాస్తవాలు.}
+    \ollabel{tab:anotherfive}
+  \end{table}
+
+\begin{prob}
+  $\mModel{M} = \tuple{W, R, V}$ ఒక నమూనా అనుకుందాం.
+  $R$కు \olref[nml][frd][acc]{tab:anotherfive} ఎడమవైపు
+  చూపిన ధర్మాలు ఉంటే, అనురూపమైన కుడివైపు సూత్రం యొక్క
+  ప్రతి నిదర్శనం~$\mModel{M}$లో సత్యమని చూపండి.
+\end{prob}
+
+
+
+\end{document}

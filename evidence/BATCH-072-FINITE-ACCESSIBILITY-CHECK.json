@@ -1,0 +1,64 @@
+{
+  "schema": "telugu-openlogic-batch072-finite-accessibility-check/1",
+  "status": "pass",
+  "scope": "All directed relations on nonempty worlds of sizes 1, 2, 3; all p,q Boolean valuations and worlds for property-implies-formula checks; selected one-world and two-world examples.",
+  "limitation": "Finite enumeration does not prove unrestricted correspondence, arbitrary-formula substitution instances or the full two-world induction claim.",
+  "source_unit": "OLP-0421",
+  "frames": 530,
+  "checks": {
+    "4": {
+      "property_frames": 186,
+      "valuation_cases": 11160,
+      "world_cases": 33256
+    },
+    "5": {
+      "property_frames": 48,
+      "valuation_cases": 2616,
+      "world_cases": 7720
+    },
+    "D": {
+      "property_frames": 353,
+      "valuation_cases": 22100,
+      "world_cases": 66148
+    },
+    "T": {
+      "property_frames": 69,
+      "valuation_cases": 4164,
+      "world_cases": 12420
+    },
+    "B": {
+      "property_frames": 74,
+      "valuation_cases": 4232,
+      "world_cases": 12552
+    },
+    "partial_functional": {
+      "property_frames": 75,
+      "valuation_cases": 4248,
+      "world_cases": 12584
+    },
+    "functional": {
+      "property_frames": 32,
+      "valuation_cases": 1796,
+      "world_cases": 5316
+    },
+    "weakly_dense": {
+      "property_frames": 348,
+      "valuation_cases": 21528,
+      "world_cases": 64360
+    },
+    "L": {
+      "property_frames": 434,
+      "valuation_cases": 26888,
+      "world_cases": 80392
+    },
+    "G": {
+      "property_frames": 286,
+      "valuation_cases": 17608,
+      "world_cases": 52616
+    }
+  },
+  "examples": {
+    "one_world_empty_relation_p_false": "Box p true, T instance false",
+    "two_world_cross_edges_equal_pq": "R irreflexive; sampled T instances true at both worlds"
+  }
+}

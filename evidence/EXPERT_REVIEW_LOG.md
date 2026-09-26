@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 420 of 722 draft units**. This log contains 113 terminology/sense decisions and 388 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 421 of 722 draft units**. This log contains 114 terminology/sense decisions and 390 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2719,6 +2719,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: చట్రం అనే క్రిప్కె frame ప్రత్యేక పేరుకూ, చట్ర నిర్వచనీయతకూ ఈ స్థానిక పేజీల్లో ప్రత్యక్ష సాక్ష్యం లేదు; మూల నిర్వచనాధారిత తాత్కాలిక ఎంపికలు. స్థానిక సంబంధ పేజీ స్వావర్తనాన్ని లేదా OLTENMLFRDINT-001 సవరణను నిరూపించదు.
 
 - Please double-check: Please double-check whether “చట్రం / చట్రాల నిర్వచనీయత / చట్రంపై ఆధారపడే నమూనా / చట్రంలో చెల్లుబాటు / సూత్ర–చట్ర అనురూపత / స్వావర్తన ప్రాప్యత సంబంధం” is idiomatic and technically standard for “frame / frame definability / model based on a frame / frame validity / formula-frame correspondence / reflexive accessibility relation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T114 — serial / reflexive / symmetric / transitive / euclidean accessibility; partially functional / functional / weakly dense / weakly connected / weakly directed; diamond property / confluence
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: సీరియల్ / స్వావర్తన / సౌష్ఠవ / సంక్రామక / యూక్లిడియన్ ప్రాప్యత; పాక్షిక ప్రమేయాత్మక / ప్రమేయాత్మక / బలహీన సాంద్ర / బలహీన సంయుక్త / బలహీన సహగమ్య; వజ్ర ధర్మం / సంగమం
+
+- Exact implementation: OLP-0421; normal-modal-logic/frame-definability/properties-accessibility; content/normal-modal-logic/frame-definability/properties-accessibility.tex:11 ↔ translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:11 (OLP-0421-B005); printed/PDF page pending; OLP-0421; normal-modal-logic/frame-definability/properties-accessibility; content/normal-modal-logic/frame-definability/properties-accessibility.tex:26-53 ↔ translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:28-55 (OLP-0421-B008); printed/PDF page pending; OLP-0421; normal-modal-logic/frame-definability/properties-accessibility; content/normal-modal-logic/frame-definability/properties-accessibility.tex:26-53 ↔ translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:28-55 (OLP-0421-B008); printed/PDF page pending; OLP-0421; normal-modal-logic/frame-definability/properties-accessibility; content/normal-modal-logic/frame-definability/properties-accessibility.tex:125-143 ↔ translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:146-169 (OLP-0421-B016); printed/PDF page pending; OLP-0421; normal-modal-logic/frame-definability/properties-accessibility; content/normal-modal-logic/frame-definability/properties-accessibility.tex:125-143 ↔ translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:146-169 (OLP-0421-B016); printed/PDF page pending; OLP-0421; normal-modal-logic/frame-definability/properties-accessibility; content/normal-modal-logic/frame-definability/properties-accessibility.tex:125-143 ↔ translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:146-169 (OLP-0421-B016); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P012, PDF 319, printed 312, Questions 37-38; TE-P021, PDF undefined, printed undefined, Conditional and biconditional headings and explanations; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P008లో సమితి/ప్రమేయం, TE-P010లో ద్విస్థానిక సంబంధం, TE-P011/012లో ప్రమేయ ఏకైకత మరియు సర్వత్ర నిర్వచితత్వం, TE-P021లో సోపాధికం, TE-P024లో నిరూపణ గద్యాన్ని స్థానిక చిత్రాల్లో చూశాం. ఈ సాక్ష్యాలు ప్రత్యేక క్రిప్కె ప్రాప్యత-ధర్మాలకు ప్రత్యక్ష పేర్లు ఇవ్వవు. OLP-0421లోని పరిమాణక నిర్వచనాలు, పట్టిక సూత్రాలు, సౌష్ఠవ నిరూపణ, ముందరి TE-T016/024/113 స్థిర వాడుక ఖచ్చిత అర్థాన్ని నియంత్రిస్తాయి. సీరియల్ మునుపటి బహిరంగ సాంకేతిక అరువు; యూక్లిడియన్ మూలంలోని Euclidean పేరుకు గుర్తించదగిన అరువు. D,T,B,4,5,L,G, Box, Diamond మరియు చరాలు రక్షిత గణిత సంకేతాలు.
+
+- Alternatives: పూర్వ సంబంధ/ప్రమేయ పదజాలాన్ని కొనసాగించి, ప్రతి ప్రాప్యత ధర్మాన్ని పట్టికలోని ఖచ్చిత పరిమాణక నిర్వచనానికి కట్టడం (ఎంపిక); బలహీన సంయుక్తను గ్రాఫు అనుసంధానత్వంతో సమానం చేయడం (తిరస్కరణ); పాక్షిక ప్రమేయాత్మకాన్ని ప్రతి లోకానికి ఖచ్చితంగా ఒక ప్రాప్య లోకం ఉండడంగా పొరబడడం (తిరస్కరణ); స్థానిక సంబంధ చిత్రాలే యూక్లిడియన్ లేదా వజ్ర ధర్మానికి ప్రత్యక్ష పేరు ఇస్తాయని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: యూక్లిడియన్, బలహీన సాంద్ర, బలహీన సంయుక్త, బలహీన సహగమ్య, వజ్ర ధర్మం, సంగమం పేర్లు మూల నిర్వచనాధీన తాత్కాలిక ఎంపికలు; స్థానిక సాక్ష్యాలు ఈ modal correspondence వాదాలను లేదా OLTENMLFRDACC-001/002 సవరణలను నిరూపించవు.
+
+- Please double-check: Please double-check whether “సీరియల్ / స్వావర్తన / సౌష్ఠవ / సంక్రామక / యూక్లిడియన్ ప్రాప్యత; పాక్షిక ప్రమేయాత్మక / ప్రమేయాత్మక / బలహీన సాంద్ర / బలహీన సంయుక్త / బలహీన సహగమ్య; వజ్ర ధర్మం / సంగమం” is idiomatic and technically standard for “serial / reflexive / symmetric / transitive / euclidean accessibility; partially functional / functional / weakly dense / weakly connected / weakly directed; diamond property / confluence” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -12031,3 +12055,51 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Is the fixed-valuation non-reflexive example explicitly restricted to A=p, without treating it as frame-validity for arbitrary A?
+
+## REV-OLTENMLFRDACC-001 — OLTENMLFRDACC-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: ఒక-లోక ఉదాహరణలో ప్రాప్యత సంబంధం ఖాళీ అని గద్యంలో స్పష్టం చేసి, పక్కనే మూల లోటును ప్రకటించాం.
+
+- Exact implementation: OLP-0421; normal-modal-logic/frame-definability/properties-accessibility; properties-accessibility.tex lines 95-99 ↔ translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:103 (OLP-0421-B013); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLFRDACC-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: ఒక-లోక ఉదాహరణలో ప్రాప్యత సంబంధం ఖాళీ అని గద్యంలో స్పష్టం చేసి, పక్కనే మూల లోటును ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the one-world countermodel explicitly take an empty accessibility relation before asserting non-reflexivity and vacuous Box p?
+
+## REV-OLTENMLFRDACC-002 — OLTENMLFRDACC-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: రెండు-లోకాల ఉదాహరణలో పరస్పర జతలు మాత్రమే Rలో ఉన్నాయని స్పష్టం చేసి, పక్కనే అస్వావర్తన నిర్ధారణ లోటును ప్రకటించాం.
+
+- Exact implementation: OLP-0421; normal-modal-logic/frame-definability/properties-accessibility; properties-accessibility.tex lines 105-116 ↔ translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:123 (OLP-0421-B014); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLFRDACC-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: రెండు-లోకాల ఉదాహరణలో పరస్పర జతలు మాత్రమే Rలో ఉన్నాయని స్పష్టం చేసి, పక్కనే అస్వావర్తన నిర్ధారణ లోటును ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the two-world example explicitly exclude self-loops before calling the relation irreflexive, while preserving both cross-edges and equal atomic valuations?

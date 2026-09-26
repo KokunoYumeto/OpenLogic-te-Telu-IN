@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 420 of 722 draft units**. This view selects 441 of 501 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 421 of 722 draft units**. This view selects 443 of 504 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4413,3 +4413,23 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0420; normal-modal-logic/frame-definability/introduction; translation/content/normal-modal-logic/frame-definability/introduction.tex:35; printed/PDF page pending
 
 - Please double-check: Please double-check: Is the fixed-valuation non-reflexive example explicitly restricted to A=p, without treating it as frame-validity for arbitrary A?
+
+## REV-OLTENMLFRDACC-001 — OLTENMLFRDACC-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఒక-లోక ఉదాహరణలో ప్రాప్యత సంబంధం ఖాళీ అని గద్యంలో స్పష్టం చేసి, పక్కనే మూల లోటును ప్రకటించాం.
+
+- Occurrences: OLP-0421; normal-modal-logic/frame-definability/properties-accessibility; translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:103; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the one-world countermodel explicitly take an empty accessibility relation before asserting non-reflexivity and vacuous Box p?
+
+## REV-OLTENMLFRDACC-002 — OLTENMLFRDACC-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: రెండు-లోకాల ఉదాహరణలో పరస్పర జతలు మాత్రమే Rలో ఉన్నాయని స్పష్టం చేసి, పక్కనే అస్వావర్తన నిర్ధారణ లోటును ప్రకటించాం.
+
+- Occurrences: OLP-0421; normal-modal-logic/frame-definability/properties-accessibility; translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:123; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the two-world example explicitly exclude self-loops before calling the relation irreflexive, while preserving both cross-edges and equal atomic valuations?

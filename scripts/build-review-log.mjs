@@ -594,6 +594,14 @@ locations['TE-T113']=[
  L('content/normal-modal-logic/frame-definability/introduction.tex',49,53,64,72,'based on','ఆధారపడే'),
  L('content/normal-modal-logic/frame-definability/introduction.tex',55,57,74,78,'correspondence','అనురూపతా')
 ];
+locations['TE-T114']=[
+ L('content/normal-modal-logic/frame-definability/properties-accessibility.tex',11,11,11,11,'Properties of Accessibility Relations','ప్రాప్యత సంబంధాల ధర్మాలు'),
+ L('content/normal-modal-logic/frame-definability/properties-accessibility.tex',31,31,33,33,'serial','సీరియల్'),
+ L('content/normal-modal-logic/frame-definability/properties-accessibility.tex',38,38,40,40,'symmetric','సౌష్ఠవ'),
+ L('content/normal-modal-logic/frame-definability/properties-accessibility.tex',128,132,150,155,'partially functional','పాక్షిక ప్రమేయాత్మక'),
+ L('content/normal-modal-logic/frame-definability/properties-accessibility.tex',134,135,157,160,'weakly dense','బలహీన సాంద్ర'),
+ L('content/normal-modal-logic/frame-definability/properties-accessibility.tex',140,143,165,169,'weakly directed','బలహీన సహగమ్య')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -693,6 +701,7 @@ alternatives['TE-T110']=['ముందరి సర్వసత్యం, ప్
 alternatives['TE-T111']=['పథకం ప్రతిస్థాపన నిదర్శనాల సమితి, లక్షణ సూత్రం, నమూనాలో సత్యం, సర్వనమూనా చెల్లుబాటు భేదాలను మూల నిర్వచనాలకు కట్టుబడి ఉంచడం (ఎంపిక)','పథకాన్ని ఒకే సూత్రంగా పరిగణించడం (తిరస్కరణ)','ఒక నమూనాలో లక్షణ సూత్రం సత్యం అయితే దాని పథకం కూడా అక్కడ సత్యమని ఊహించడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలు K, Dual ప్రత్యేక పథకాలను నేరుగా నిరూపిస్తాయని ప్రకటించడం (తిరస్కరణ)'];
 alternatives['TE-T112']=['ముందరి అర్థపర అనుగమనం పదాన్ని కొనసాగించి, అన్ని నమూనాలు/లోకాల నిర్వచనం, ఒక లోక ప్రతిదృష్టాంతం, ఖాళీ ప్రాప్యతలో బాక్స్ సత్యం భేదాలను మూలానికి కట్టడం (ఎంపిక)','ప్రతి నమూనాలో ఒకే లోకం సరిపోతుందని అనుగమనాన్ని బలహీనపరచడం (తిరస్కరణ)','వాక్య ఫలితానికి స్థానిక ద్విమూల్య సత్య పట్టికయే క్రిప్కె అనుగమనాన్ని నేరుగా నిరూపిస్తుందని చెప్పడం (తిరస్కరణ)','ఖాళీ ప్రాప్యతలో బాక్స్ సత్యాన్ని బాక్స్ p అసత్యమని పొరబడడం (తిరస్కరణ)'];
 alternatives['TE-T113']=['చట్రాన్ని W,R జతగా, దానిపై ఆధారపడే నమూనాను W,R,V త్రయంగా వేరు చేసి, అన్ని కేటాయింపుల చెల్లుబాటును మూల నిర్వచనానికి కట్టడం (ఎంపిక)','ఒక నిర్ణీత Vలో సూత్రం సత్యమైతే చట్రంలో చెల్లుబాటవుతుందని పొరబడడం (తిరస్కరణ)','స్థానిక సంబంధ పేజీలే క్రిప్కె చట్ర నిర్వచనీయతకు ప్రత్యక్ష సాక్ష్యమని చెప్పడం (తిరస్కరణ)','స్వావర్తనానికి ఒకే నమూనా సరిపోతుందని సాధారణీకరించడం (తిరస్కరణ)'];
+alternatives['TE-T114']=['పూర్వ సంబంధ/ప్రమేయ పదజాలాన్ని కొనసాగించి, ప్రతి ప్రాప్యత ధర్మాన్ని పట్టికలోని ఖచ్చిత పరిమాణక నిర్వచనానికి కట్టడం (ఎంపిక)','బలహీన సంయుక్తను గ్రాఫు అనుసంధానత్వంతో సమానం చేయడం (తిరస్కరణ)','పాక్షిక ప్రమేయాత్మకాన్ని ప్రతి లోకానికి ఖచ్చితంగా ఒక ప్రాప్య లోకం ఉండడంగా పొరబడడం (తిరస్కరణ)','స్థానిక సంబంధ చిత్రాలే యూక్లిడియన్ లేదా వజ్ర ధర్మానికి ప్రత్యక్ష పేరు ఇస్తాయని చెప్పడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -708,7 +717,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T113 record the Batch 025--Batch 071 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T114 record the Batch 025--Batch 072 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1013,6 +1022,8 @@ const correctionQuestions={
  ,'OLTENMLENT-001':'Is the one-world countermodel an ordered W-prime/R-prime/V-prime triple rather than an unordered set, with the exact source repair disclosed?'
  ,'OLTENMLENT-002':'Is V-prime total on every propositional variable while preserving the stated p-only counterexample truth values and disclosing the completion?'
  ,'OLTENMLFRDINT-001':'Is the fixed-valuation non-reflexive example explicitly restricted to A=p, without treating it as frame-validity for arbitrary A?'
+ ,'OLTENMLFRDACC-001':'Does the one-world countermodel explicitly take an empty accessibility relation before asserting non-reflexivity and vacuous Box p?'
+ ,'OLTENMLFRDACC-002':'Does the two-world example explicitly exclude self-loops before calling the relation irreflexive, while preserving both cross-edges and equal atomic valuations?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));
