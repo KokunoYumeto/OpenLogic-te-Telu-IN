@@ -1,0 +1,143 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: language-modal-logic
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{lan}
+
+\olsection{మౌలిక మోడల్ తర్కపు భాష}
+
+\begin{defn}
+మోడల్ తర్కపు మౌలిక భాషలో ఇవి ఉంటాయి:
+\begin{enumerate}
+  \tagitem{prvFalse}{\tetoken{అసత్యాన్ని}{!!{falsity}} సూచించే ప్రతిజ్ఞావాక్య
+    స్థిరాంకం~$\lfalse$.}{}
+  \tagitem{prvTrue}{\tetoken{సత్యాన్ని}{!!{truth}} సూచించే ప్రతిజ్ఞావాక్య
+    స్థిరాంకం~$\ltrue$.}{}
+  \item \tetoken{లెక్కించదగిన}{!!{denumerable}s}
+    \tetoken{ప్రతిజ్ఞావాక్య చరాల}{!!{propositional variable}s}
+    సమితి: $\Obj p_0$, $\Obj p_1$, $\Obj p_2$, \dots
+  \item ప్రతిజ్ఞావాక్య సంయోజకాలు: \startycommalist
+  \iftag{prvNot}{\ycomma $\lnot$ (నిషేధం)}{}%
+  \iftag{prvAnd}{\ycomma $\land$ (సంయోగం)}{}%
+  \iftag{prvOr}{\ycomma $\lor$ (వికల్పం)}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (\tetoken{సోపాధికం}{!!{conditional}})}{}%
+  \iftag{prvIff}{\ycomma $\liff$ (\tetoken{ద్విసోపాధికం}{!!{biconditional}})}{}.
+  \tagitem{prvBox}{మోడల్ సంచాలకం $\Box$.}{}
+  \tagitem{prvDiamond}{మోడల్ సంచాలకం $\Diamond$.}{}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}
+మౌలిక మోడల్ భాషలోని
+\emph{\tetoken{సూత్రాలను}{!!^{formula}s}}
+కింది విధంగా ఆగమనాత్మకంగా నిర్వచిస్తాం:
+\begin{enumerate}
+\tagitem{prvFalse}{$\lfalse$ ఒక పరమాణు
+  \tetoken{సూత్రం}{!!{formula}}.}{}
+
+\tagitem{prvTrue}{$\ltrue$ ఒక పరమాణు
+  \tetoken{సూత్రం}{!!{formula}}.}{}
+
+\item ప్రతి \tetoken{ప్రతిజ్ఞావాక్య చరం}{!!{propositional variable}}
+  $\Obj p_i$ ఒక (పరమాణు)
+  \tetoken{సూత్రం}{!!{formula}}.
+
+\tagitem{prvNot}{$!A$ ఒక
+  \tetoken{సూత్రమైతే}{!!a{formula}}, $\lnot !A$
+  కూడా \tetoken{సూత్రమే}{!!a{formula}}.}{}
+
+\tagitem{prvAnd}{$!A$, $!B$లు
+  \tetoken{సూత్రాలైతే}{!!{formula}s},
+  $(!A \land !B)$ కూడా
+  \tetoken{సూత్రమే}{!!a{formula}}.}{}
+
+\tagitem{prvOr}{$!A$, $!B$లు
+  \tetoken{సూత్రాలైతే}{!!{formula}s},
+  $(!A \lor !B)$ కూడా
+  \tetoken{సూత్రమే}{!!a{formula}}.}{}
+
+\tagitem{prvIf}{$!A$, $!B$లు
+  \tetoken{సూత్రాలైతే}{!!{formula}s},
+  $(!A \lif !B)$ కూడా
+  \tetoken{సూత్రమే}{!!a{formula}}.}{}
+
+\tagitem{prvIff}{$!A$, $!B$లు
+  \tetoken{సూత్రాలైతే}{!!{formula}s},
+  $(!A \liff !B)$ కూడా
+  \tetoken{సూత్రమే}{!!a{formula}}.}{}
+
+\tagitem{prvBox}{$!A$ ఒక
+  \tetoken{సూత్రమైతే}{!!a{formula}},
+  $\Box !A$ కూడా
+  \tetoken{సూత్రమే}{!!a{formula}}.}{}
+
+\tagitem{prvDiamond}{$!A$ ఒక
+  \tetoken{సూత్రమైతే}{!!a{formula}},
+  $\Diamond !A$ కూడా
+  \tetoken{సూత్రమే}{!!a{formula}}.}{}
+
+\tagitem{limitClause}{ఇవి తప్ప మరేదీ
+  \tetoken{సూత్రం}{!!a{formula}} కాదు.}{}
+\end{enumerate}
+\end{defn}
+
+\begin{tagblock}{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defBox,defDiamond}
+\begin{defn}
+నిర్వచిత సంచాలకాలతో నిర్మించిన
+సూత్రాలను కింది విధంగా అర్థం
+చేసుకోవాలి:
+
+\begin{tagenumerate}{defTrue,defFalse,defNot,defOr,defAnd,defIf,defIff,defBox,defDiamond}
+
+\tagitem{defTrue}{$\ltrue$ అనేది
+  \iftag{prvFalse}{$\lnot\lfalse$}{$(!A \lor \lnot !A)$;
+    ఇక్కడ $!A$ ఒక నిర్దిష్ట పరమాణు
+    \tetoken{సూత్రం}{!!{formula}}}కు సంక్షిప్త రూపం.}{}
+
+\tagitem{defFalse}{$\lfalse$ అనేది
+  \iftag{prvTrue}{$\lnot\ltrue$}{$(!A \land \lnot !A)$;
+    ఇక్కడ $!A$ ఒక నిర్దిష్ట పరమాణు
+    \tetoken{సూత్రం}{!!{formula}}}కు సంక్షిప్త రూపం.}{}
+
+\tagitem{defNot}{$\lnot !A$ అనేది
+  $!A \lif \lfalse$కు సంక్షిప్త రూపం.}{}
+
+\tagitem{defOr}{$!A \lor !B$ అనేది
+  \iftag{prvAnd}{$\lnot(\lnot !A \land \lnot !B)$}{$\lnot !A \lif
+    !B$}కు సంక్షిప్త రూపం.}{}
+
+\tagitem{defAnd}{$!A \land !B$ అనేది
+  \iftag{prvOr}{$\lnot(\lnot !A \lor \lnot !B)$}{$\lnot (!A \lif
+    \lnot !B)$}కు సంక్షిప్త రూపం.}{}
+
+\tagitem{defIf}{$!A \lif !B$ అనేది
+  \iftag{prvOr}{$\lnot !A \lor !B$}{$\lnot (!A \land \lnot !B)$}కు
+  సంక్షిప్త రూపం.
+  \sourcecorrection{OLTENMLLAN-001}{ఆంగ్ల మూలంలోని
+  మొదటి ప్రత్యామ్నాయ వ్యక్తీకరణ చివర జతలేని
+  ముగింపు కుండలీకరణ ఉంది. దాన్ని మాత్రమే
+  తొలగించాం; నిషేధం, వికల్పం, రెండు
+  ఉపసూత్రాలు యథాతథంగా ఉన్నాయి.}}{}
+
+\tagitem{defIff}{$!A \liff !B$ అనేది
+  $(!A \lif !B) \land (!B \lif !A)$కు
+  సంక్షిప్త రూపం.}{}
+
+\tagitem{defBox}{$\Box !A$ అనేది
+  $\lnot\Diamond\lnot !A$కు సంక్షిప్త రూపం.}{}
+
+\tagitem{defDiamond}{$\Diamond !A$ అనేది
+  $\lnot\Box\lnot !A$కు సంక్షిప్త రూపం.}{}
+\end{tagenumerate}
+\end{defn}
+\end{tagblock}
+
+\tetoken{సూత్రం}{!!a{formula}}~$!A$లో
+$\Box$ గానీ $\Diamond$ గానీ లేకపోతే,
+దాన్ని \emph{మోడల్-రహిత సూత్రం} అంటాం.
+
+\end{document}

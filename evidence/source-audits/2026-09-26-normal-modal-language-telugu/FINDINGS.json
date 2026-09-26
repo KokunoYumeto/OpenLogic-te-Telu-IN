@@ -1,0 +1,33 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTENMLLAN-20260926",
+  "created_utc": "2026-09-26T19:42:13Z",
+  "status": "confirmed_against_the_adjacent_defined_operator_clauses",
+  "scope": {
+    "chapter": "Normal Modal Logic — Syntax and Semantics",
+    "unit_ids": ["OLP-0410"],
+    "finding_count": 1
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTENMLLAN-001",
+      "unit_id": "OLP-0410",
+      "classification": "unmatched_closing_parenthesis_in_defined_conditional_alternative",
+      "source": {
+        "path": "content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex",
+        "bytes": 3419,
+        "sha256": "a75f481c6e175130df3c9145984ca245a8156503d2cb9ff833bd77c39b9529ab",
+        "locator": "language-modal-logic.tex lines 91-92"
+      },
+      "finding": "The prvOr branch of defIf prints the alternative as not A or B followed by a closing parenthesis, although no opening parenthesis occurs in that formula.",
+      "controlling_evidence": "The surrounding defOr and defAnd clauses use balanced formula delimiters, and the defined conditional is the disjunction of not A and B. The unmatched final parenthesis is not an operator or part of either subformula.",
+      "required_translation_handling": "Remove only the unmatched closing parenthesis in that tagged alternative, retain the negation, disjunction, both subformulas and the other branch, and disclose the repair adjacent to defIf."
+    }
+  ]
+}
