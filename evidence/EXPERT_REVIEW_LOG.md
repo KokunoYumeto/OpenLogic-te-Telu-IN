@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 372 of 722 draft units**. This log contains 92 terminology/sense decisions and 339 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 375 of 722 draft units**. This log contains 93 terminology/sense decisions and 343 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2215,6 +2215,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: ప్రత్యక్ష స్థానిక లాంబ్డా-కలనశాస్త్ర సాక్ష్యం లేదు; ప్రత్యేక పదాల ఎంపిక తాత్కాలికం. సంపూర్ణ వికాస సమీకరణాలు ఏటా సందర్భంలో అతివ్యాప్తి చెందుతున్నాయి; beredone ఒక-దశ సంబంధం మూలంలో నిర్వచితం కాదు; పేర్కొన్న నిరూపణ ఖాళీలు పూరించలేదు.
 
 - Please double-check: Please double-check whether “సమాంతర బీటా-ఏటా తగ్గింపు / బీటా-ఏటా సంపూర్ణ వికాసం / ఒక-దశ బీటా-ఏటా పోలిక” is idiomatic and technically standard for “parallel beta-eta reduction / beta-eta complete development / one-step beta-eta comparison” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T093 — lambda definability / Church numeral / natural-number function / successor, addition, multiplication and exponentiation encodings
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: లాంబ్డాతో నిర్వచనీయత / చర్చ్ సంఖ్యాంకం / సహజ సంఖ్యలపై ప్రమేయం / ఉత్తరగామి, సంకలనం, గుణకారం, ఘాతాంకన సంకేతీకరణలు
+
+- Exact implementation: OLP-0373; lambda-calculus/lambda-definability/lambda-definability; content/lambda-calculus/lambda-definability/lambda-definability.tex:8 ↔ translation/content/lambda-calculus/lambda-definability/lambda-definability.tex:8 (OLP-0373-B004); printed/PDF page pending; OLP-0374; lambda-calculus/lambda-definability/introduction; content/lambda-calculus/lambda-definability/introduction.tex:21-25 ↔ translation/content/lambda-calculus/lambda-definability/introduction.tex:21-26 (OLP-0374-B006); printed/PDF page pending; OLP-0374; lambda-calculus/lambda-definability/introduction; content/lambda-calculus/lambda-definability/introduction.tex:55-59 ↔ translation/content/lambda-calculus/lambda-definability/introduction.tex:59-63 (OLP-0374-B010); printed/PDF page pending; OLP-0375; lambda-calculus/lambda-definability/arithmetical-functions; content/lambda-calculus/lambda-definability/arithmetical-functions.tex:12-15 ↔ translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:12-15 (OLP-0375-B005); printed/PDF page pending; OLP-0375; lambda-calculus/lambda-definability/arithmetical-functions; content/lambda-calculus/lambda-definability/arithmetical-functions.tex:56-59 ↔ translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:60-63 (OLP-0375-B009); printed/PDF page pending; OLP-0375; lambda-calculus/lambda-definability/arithmetical-functions; content/lambda-calculus/lambda-definability/arithmetical-functions.tex:89-95 ↔ translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:96-102 (OLP-0375-B011); printed/PDF page pending; OLP-0375; lambda-calculus/lambda-definability/arithmetical-functions; content/lambda-calculus/lambda-definability/arithmetical-functions.tex:125-136 ↔ translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:137-149 (OLP-0375-B016); printed/PDF page pending
+
+- Authorities actually checked: TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P007, PDF 26, printed 16, Sections 2.1-2.2, natural and whole number sets; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P005లో సహజ సంఖ్యల అంకగణిత ఉదాహరణలు, TE-P007లో సహజ సంఖ్యల వివరణతో సున్నా గురించి భిన్న ప్రాంతీయ సంప్రదాయం, TE-P011లో ప్రమేయం/స్థిర/తత్సమ ప్రమేయాల వాడుక, TE-P032లో ఆగమన-నిరూపణ శైలిని ప్రత్యక్షంగా చూశాం. ఇవి చర్చ్ సంఖ్యాంకాలను, లాంబ్డా సంకేతీకరణలను నేరుగా స్థాపించవు. OLP-0374 సంఖ్యాంక నిర్వచనం, పాక్షిక ప్రమేయ నిర్వచనం, OLP-0375 ఉత్తరగామి/సంకలన/గుణకార/ఘాతాంక పదాలే ప్రత్యేక అర్థాలను నియంత్రిస్తాయి; TE-T079లోని పూర్వ తాత్కాలిక నిర్ణయాన్ని కొనసాగిస్తున్నాం. OLTELAMLDFI-001, OLTELAMLDFARF-001–003 సూత్ర, దశ సవరణలను ప్రకటిస్తున్నాయి. లాంబ్డా, చర్చ్ పూర్వ ప్రత్యేక/వ్యక్తి-పేరు బదిలీలు; f, F, \Nat, \num, \lambd, \fn వంటి గుర్తింపులు, లేబుళ్లు యథాతథం.
+
+- Alternatives: TE-T079లోని లాంబ్డాతో నిర్వచించదగిన, చర్చ్ సంఖ్యాంకం పదాలను కొత్త అంకగణిత ఉదాహరణలలో మూల నిర్వచనాలకు తగినట్లు కొనసాగించడం (ఎంపిక); TE-P007లో సున్నా సహజ సంఖ్య కాదన్న ప్రాంతీయ సంప్రదాయాన్ని OpenLogic \Natపై రుద్దడం (తిరస్కరణ); స్థానిక పేజీలు చర్చ్ సంఖ్యాంకాల బీటా గణనలను నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ); దశల సంఖ్య లేదా గుణకార ప్రత్యామ్నాయంలోని తప్పును దాచిపెట్టడం (తిరస్కరణ)
+
+- Uncertainty: ప్రత్యక్ష స్థానిక లాంబ్డా-కలనశాస్త్ర సాక్ష్యం లేదు; సంఖ్యాంకం, నిర్వచనీయత, సంఖ్యల సంకేతీకరణ పదాలు తాత్కాలికం. స్థానిక పేజీ TE-P007 సున్నాను సహజ సంఖ్యలలో చేర్చదు; OpenLogic \Nat సంప్రదాయం సున్నాను చేర్చుతుంది, కాబట్టి మూల గణిత సంప్రదాయాన్ని నిలిపాం.
+
+- Please double-check: Please double-check whether “లాంబ్డాతో నిర్వచనీయత / చర్చ్ సంఖ్యాంకం / సహజ సంఖ్యలపై ప్రమేయం / ఉత్తరగామి, సంకలనం, గుణకారం, ఘాతాంకన సంకేతీకరణలు” is idiomatic and technically standard for “lambda definability / Church numeral / natural-number function / successor, addition, multiplication and exponentiation encodings” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -10351,3 +10375,99 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: మూల వాదనలో నిరూపణ ఖాళీ నిర్ధారితమైనది; పూర్తి సిద్ధాంత నిరూపణ ఇంకా లేదు.
 
 - Please double-check: Please double-check: తుది సిద్ధాంతం ఆధారపడే పూర్వ నిర్వచన, నిరూపణ పరిమితులు పూర్తి ధ్రువీకరణగా పొరబడకుండా ఉన్నాయా?
+
+## REV-OLTELAMLDFI-001 — OLTELAMLDFI-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: restored the introduced constant-function subscript in c_k(n)=k and disclosed the source prose typo
+
+- Exact implementation: OLP-0374; lambda-calculus/lambda-definability/introduction; introduction.tex lines 73-76, especially line 75 ↔ translation/content/lambda-calculus/lambda-definability/introduction.tex:83 (OLP-0374-B012); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMLDF-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: restored the introduced constant-function subscript in c_k(n)=k and disclosed the source prose typo
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: స్థిర ప్రమేయం c_k పరిచయానికి అనుగుణంగా c_k(n)=k ఉపసూచిక పునరుద్ధరణ సరైనదా?
+
+## REV-OLTELAMLDFARF-001 — OLTELAMLDFARF-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: changed the numeral-to-two-arguments successor-proof arrow from one-step to many-step beta reduction and disclosed why
+
+- Exact implementation: OLP-0375; lambda-calculus/lambda-definability/arithmetical-functions; arithmetical-functions.tex lines 29-33 ↔ translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:37 (OLP-0375-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMLDF-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: changed the numeral-to-two-arguments successor-proof arrow from one-step to many-step beta reduction and disclosed why
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: చర్చ్ సంఖ్యాంకాన్ని f, xలకు ప్రయోగించడానికి రెండు బీటా సంకోచనాలు కావడంతో బహుదశ బాణం సరైనదా?
+
+## REV-OLTELAMLDFARF-002 — OLTELAMLDFARF-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: changed four addition-derivation arrows from one-step to many-step beta reduction, retaining every intermediate term
+
+- Exact implementation: OLP-0375; lambda-calculus/lambda-definability/arithmetical-functions; arithmetical-functions.tex lines 72-80 ↔ translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:93 (OLP-0375-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMLDF-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: changed four addition-derivation arrows from one-step to many-step beta reduction, retaining every intermediate term
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: సంకలన గణనలో నాలుగు బాణాలన్నిటికీ కనీసం రెండు దశలు కావాలని, మధ్య పదాలను మార్చకుండా చూపామా?
+
+## REV-OLTELAMLDFARF-003 — OLTELAMLDFARF-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: changed Add a to Add b in the alternative multiplication term so the second input is used, with adjacent disclosure
+
+- Exact implementation: OLP-0375; lambda-calculus/lambda-definability/arithmetical-functions; arithmetical-functions.tex lines 116-122, especially line 120 ↔ translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:133 (OLP-0375-B015); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMLDF-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: changed Add a to Add b in the alternative multiplication term so the second input is used, with adjacent disclosure
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: ప్రత్యామ్నాయ గుణకార పదంలో Add b పునరుద్ధరణ రెండవ ఆర్గ్యుమెంటును వాడి n mను ఇస్తుందా?

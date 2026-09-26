@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 372 of 722 draft units**. This view selects 392 of 431 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 375 of 722 draft units**. This view selects 396 of 436 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -3923,3 +3923,43 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0372; lambda-calculus/church-rosser/beta-eta-reduction; translation/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:63; printed/PDF page pending
 
 - Please double-check: Please double-check: తుది సిద్ధాంతం ఆధారపడే పూర్వ నిర్వచన, నిరూపణ పరిమితులు పూర్తి ధ్రువీకరణగా పొరబడకుండా ఉన్నాయా?
+
+## REV-OLTELAMLDFI-001 — OLTELAMLDFI-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: restored the introduced constant-function subscript in c_k(n)=k and disclosed the source prose typo
+
+- Occurrences: OLP-0374; lambda-calculus/lambda-definability/introduction; translation/content/lambda-calculus/lambda-definability/introduction.tex:83; printed/PDF page pending
+
+- Please double-check: Please double-check: స్థిర ప్రమేయం c_k పరిచయానికి అనుగుణంగా c_k(n)=k ఉపసూచిక పునరుద్ధరణ సరైనదా?
+
+## REV-OLTELAMLDFARF-001 — OLTELAMLDFARF-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: changed the numeral-to-two-arguments successor-proof arrow from one-step to many-step beta reduction and disclosed why
+
+- Occurrences: OLP-0375; lambda-calculus/lambda-definability/arithmetical-functions; translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:37; printed/PDF page pending
+
+- Please double-check: Please double-check: చర్చ్ సంఖ్యాంకాన్ని f, xలకు ప్రయోగించడానికి రెండు బీటా సంకోచనాలు కావడంతో బహుదశ బాణం సరైనదా?
+
+## REV-OLTELAMLDFARF-002 — OLTELAMLDFARF-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: changed four addition-derivation arrows from one-step to many-step beta reduction, retaining every intermediate term
+
+- Occurrences: OLP-0375; lambda-calculus/lambda-definability/arithmetical-functions; translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:93; printed/PDF page pending
+
+- Please double-check: Please double-check: సంకలన గణనలో నాలుగు బాణాలన్నిటికీ కనీసం రెండు దశలు కావాలని, మధ్య పదాలను మార్చకుండా చూపామా?
+
+## REV-OLTELAMLDFARF-003 — OLTELAMLDFARF-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: changed Add a to Add b in the alternative multiplication term so the second input is used, with adjacent disclosure
+
+- Occurrences: OLP-0375; lambda-calculus/lambda-definability/arithmetical-functions; translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:133; printed/PDF page pending
+
+- Please double-check: Please double-check: ప్రత్యామ్నాయ గుణకార పదంలో Add b పునరుద్ధరణ రెండవ ఆర్గ్యుమెంటును వాడి n mను ఇస్తుందా?

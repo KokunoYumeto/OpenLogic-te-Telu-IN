@@ -389,6 +389,15 @@ locations['TE-T092']=[
  L('content/lambda-calculus/church-rosser/beta-eta-reduction.tex',16,18,15,18,'$M \\beredone M\'$','$M \\beredone M\'$'),
  L('content/lambda-calculus/church-rosser/beta-eta-reduction.tex',43,45,48,50,'smallest transitive relation','కనిష్ఠ సంక్రమణ సంబంధం')
 ];
+locations['TE-T093']=[
+ L('content/lambda-calculus/lambda-definability/lambda-definability.tex',8,8,8,8,'Lambda Definability','లాంబ్డాతో నిర్వచనీయత'),
+ L('content/lambda-calculus/lambda-definability/introduction.tex',23,25,23,26,'Church numeral','చర్చ్ సంఖ్యాంకం'),
+ L('content/lambda-calculus/lambda-definability/introduction.tex',55,59,59,64,'!!{lambda definable}','లాంబ్డాతో నిర్వచించదగిన'),
+ L('content/lambda-calculus/lambda-definability/arithmetical-functions.tex',12,15,12,15,'successor function','ఉత్తరగామి ప్రమేయం'),
+ L('content/lambda-calculus/lambda-definability/arithmetical-functions.tex',56,59,60,63,'addition function','సంకలన ప్రమేయం'),
+ L('content/lambda-calculus/lambda-definability/arithmetical-functions.tex',89,94,96,101,'Multiplication','గుణకారం'),
+ L('content/lambda-calculus/lambda-definability/arithmetical-functions.tex',125,127,137,140,'exponentiation','ఘాతాంకనాన్ని')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -466,6 +475,7 @@ alternatives['TE-T089']=['చర్చ్--రోసర్ అనే మూల �
 alternatives['TE-T090']=['నాలుగు నియమాల ప్రత్యేక అర్థాన్ని నిలిపే సమాంతర బీటా-తగ్గింపు, బీటా-సంపూర్ణ వికాసం అనే వివరణాత్మక పదాలు (ఎంపిక)','స్థానిక పేజీలు ఈ ప్రత్యేక లాంబ్డా భావాలను నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ)','మూలంలోని సాధారణ బీటా పూర్వాపేక్షను సమాంతర నియమంలో నిశ్శబ్దంగా ఉంచడం (తిరస్కరణ)','ప్రతిస్థాపన నిరూపణ ఖాళీని పూర్తి నిరూపణగా చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T091']=['మునుపటి బీటా సంకోచనం, సమాంతర తగ్గింపు, సంక్రమణ సంబంధం పదజాలాన్ని మూల నిర్వచనాల తేడాతో కొనసాగించడం (ఎంపిక)','అనుకూల బీటా సంకోచనాన్ని మూలస్థాన రెడెక్స్‌కే పరిమితం చేయడం (తిరస్కరణ)','స్థానిక పేజీలు ప్రత్యేక చర్చ్--రోసర్ బదిలీని నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ)','ఆధార నిరూపణ ఖాళీలను దాచిపెట్టి తుది వాదనకు స్వతంత్ర ధృవీకరణ ఉందనడం (తిరస్కరణ)'];
 alternatives['TE-T092']=['మునుపటి సమాంతర బీటా, ఏటా పదజాలంతో ప్రత్యేక బీటా-ఏటా సంబంధాన్ని మూల నియమాల మేరకు కొనసాగించడం (ఎంపిక)','స్థానిక పేజీలు సంపూర్ణ వికాసం లేదా ఒక-దశ బీటా-ఏటా సంబంధాన్ని నేరుగా నిర్వచిస్తాయని చెప్పడం (తిరస్కరణ)','మూలంలోని సంపూర్ణ-వికాస అతివ్యాప్తి, నిర్వచించని ఒక-దశ సంకేతాన్ని దాచడం (తిరస్కరణ)','పూరించని ఆగమన నిరూపణను పూర్తి నిరూపణగా చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T093']=['TE-T079లోని లాంబ్డాతో నిర్వచించదగిన, చర్చ్ సంఖ్యాంకం పదాలను కొత్త అంకగణిత ఉదాహరణలలో మూల నిర్వచనాలకు తగినట్లు కొనసాగించడం (ఎంపిక)','TE-P007లో సున్నా సహజ సంఖ్య కాదన్న ప్రాంతీయ సంప్రదాయాన్ని OpenLogic \\Natపై రుద్దడం (తిరస్కరణ)','స్థానిక పేజీలు చర్చ్ సంఖ్యాంకాల బీటా గణనలను నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ)','దశల సంఖ్య లేదా గుణకార ప్రత్యామ్నాయంలోని తప్పును దాచిపెట్టడం (తిరస్కరణ)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -482,7 +492,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T092 record the Batch 025--Batch 052 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T093 record the Batch 025--Batch 053 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -746,6 +756,10 @@ const correctionQuestions={
   ,'OLTELAMCRBE-002':'ఏటా సందర్భంలో eredone పునరుద్ధరణ, సమాంతర ఏటా నియమం అవసరం, పూర్వ అనుకూల-సందర్భ ఖాళీ స్పష్టమా?'
   ,'OLTELAMCRBE-003':'అయిదవ సందర్భమే ముద్రించబడిందనీ, తొలి నాలుగు సందర్భాలు, ఒక-దశ సంకేతం నిర్వచనం లేవనీ స్పష్టమా?'
   ,'OLTELAMCRBE-004':'తుది సిద్ధాంతం ఆధారపడే పూర్వ నిర్వచన, నిరూపణ పరిమితులు పూర్తి ధ్రువీకరణగా పొరబడకుండా ఉన్నాయా?'
+  ,'OLTELAMLDFI-001':'స్థిర ప్రమేయం c_k పరిచయానికి అనుగుణంగా c_k(n)=k ఉపసూచిక పునరుద్ధరణ సరైనదా?'
+  ,'OLTELAMLDFARF-001':'చర్చ్ సంఖ్యాంకాన్ని f, xలకు ప్రయోగించడానికి రెండు బీటా సంకోచనాలు కావడంతో బహుదశ బాణం సరైనదా?'
+  ,'OLTELAMLDFARF-002':'సంకలన గణనలో నాలుగు బాణాలన్నిటికీ కనీసం రెండు దశలు కావాలని, మధ్య పదాలను మార్చకుండా చూపామా?'
+  ,'OLTELAMLDFARF-003':'ప్రత్యామ్నాయ గుణకార పదంలో Add b పునరుద్ధరణ రెండవ ఆర్గ్యుమెంటును వాడి n mను ఇస్తుందా?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

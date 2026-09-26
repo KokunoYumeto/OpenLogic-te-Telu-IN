@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **372 of 722 source units drafted**. This readable view contains all 431 decisions and 806 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **375 of 722 source units drafted**. This readable view contains all 436 decisions and 817 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2691,6 +2691,38 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T092-OCC-002; OLP-0371; OLP-0371-B011; source upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:45-58 bytes 1328-2005 SHA-256 88130e362effc83767b2fae97dcab4b6ae13f657a7d7a43da2df13883c9d54f2; target translation/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:45-59 bytes 2487-4285 SHA-256 8b0571a8b673b6c92b7b6b3d9c63e0d7b18bfcbcf0a4ffffbdd031018f83fd67; reader page pending.
   - te-Telu-IN-TE-T092-OCC-003; OLP-0372; OLP-0372-B007; source upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:16-18 bytes 293-382 SHA-256 2eee11e77e3bb3052a2e139079f26cb22c1126577b4418f88918a3ede85a3cf4; target translation/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:15-18 bytes 356-1290 SHA-256 cd30356c3a44615e9a8217af5f665f54cda2498ea0260e83ee44ca2c2f12b95d; reader page pending.
   - te-Telu-IN-TE-T092-OCC-004; OLP-0372; OLP-0372-B012; source upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:43-45 bytes 1163-1273 SHA-256 2eee11e77e3bb3052a2e139079f26cb22c1126577b4418f88918a3ede85a3cf4; target translation/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:48-50 bytes 4716-4874 SHA-256 cd30356c3a44615e9a8217af5f665f54cda2498ea0260e83ee44ca2c2f12b95d; reader page pending.
+
+## te-Telu-IN-TE-T093 — lambda definability / Church numeral / natural-number function / successor, addition, multiplication and exponentiation encodings
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: లాంబ్డాతో నిర్వచనీయత / చర్చ్ సంఖ్యాంకం / సహజ సంఖ్యలపై ప్రమేయం / ఉత్తరగామి, సంకలనం, గుణకారం, ఘాతాంకన సంకేతీకరణలు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “lambda definability / Church numeral / natural-number function / successor, addition, multiplication and exponentiation encodings” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: ప్రత్యక్ష స్థానిక లాంబ్డా-కలనశాస్త్ర సాక్ష్యం లేదు; సంఖ్యాంకం, నిర్వచనీయత, సంఖ్యల సంకేతీకరణ పదాలు తాత్కాలికం. స్థానిక పేజీ TE-P007 సున్నాను సహజ సంఖ్యలలో చేర్చదు; OpenLogic \Nat సంప్రదాయం సున్నాను చేర్చుతుంది, కాబట్టి మూల గణిత సంప్రదాయాన్ని నిలిపాం.
+
+- Rationale: TE-P005లో సహజ సంఖ్యల అంకగణిత ఉదాహరణలు, TE-P007లో సహజ సంఖ్యల వివరణతో సున్నా గురించి భిన్న ప్రాంతీయ సంప్రదాయం, TE-P011లో ప్రమేయం/స్థిర/తత్సమ ప్రమేయాల వాడుక, TE-P032లో ఆగమన-నిరూపణ శైలిని ప్రత్యక్షంగా చూశాం. ఇవి చర్చ్ సంఖ్యాంకాలను, లాంబ్డా సంకేతీకరణలను నేరుగా స్థాపించవు. OLP-0374 సంఖ్యాంక నిర్వచనం, పాక్షిక ప్రమేయ నిర్వచనం, OLP-0375 ఉత్తరగామి/సంకలన/గుణకార/ఘాతాంక పదాలే ప్రత్యేక అర్థాలను నియంత్రిస్తాయి; TE-T079లోని పూర్వ తాత్కాలిక నిర్ణయాన్ని కొనసాగిస్తున్నాం. OLTELAMLDFI-001, OLTELAMLDFARF-001–003 సూత్ర, దశ సవరణలను ప్రకటిస్తున్నాయి. లాంబ్డా, చర్చ్ పూర్వ ప్రత్యేక/వ్యక్తి-పేరు బదిలీలు; f, F, \Nat, \num, \lambd, \fn వంటి గుర్తింపులు, లేబుళ్లు యథాతథం.
+
+- Authorities checked: TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C001:TE-P007 [checked_context_only], PDF page 26; printed page 16; Sections 2.1-2.2, natural and whole number sets; Telangana-specific concept witness and contrastive number convention; does not establish negative integer terminology | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: TE-T079లోని లాంబ్డాతో నిర్వచించదగిన, చర్చ్ సంఖ్యాంకం పదాలను కొత్త అంకగణిత ఉదాహరణలలో మూల నిర్వచనాలకు తగినట్లు కొనసాగించడం [viable_alternative: ఎంపిక] | TE-P007లో సున్నా సహజ సంఖ్య కాదన్న ప్రాంతీయ సంప్రదాయాన్ని OpenLogic \Natపై రుద్దడం [viable_alternative: తిరస్కరణ] | స్థానిక పేజీలు చర్చ్ సంఖ్యాంకాల బీటా గణనలను నేరుగా స్థాపిస్తాయని చెప్పడం [viable_alternative: తిరస్కరణ] | దశల సంఖ్య లేదా గుణకార ప్రత్యామ్నాయంలోని తప్పును దాచిపెట్టడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “లాంబ్డాతో నిర్వచనీయత / చర్చ్ సంఖ్యాంకం / సహజ సంఖ్యలపై ప్రమేయం / ఉత్తరగామి, సంకలనం, గుణకారం, ఘాతాంకన సంకేతీకరణలు” is idiomatic and technically standard for “lambda definability / Church numeral / natural-number function / successor, addition, multiplication and exponentiation encodings” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T093-OCC-001; OLP-0373; OLP-0373-B004; source upstream/content/lambda-calculus/lambda-definability/lambda-definability.tex:8 bytes 137-179 SHA-256 42df17a2d1c3ff9e2f53676b6bad10a9b10e7787f70d6371a2f60d0a22a78708; target translation/content/lambda-calculus/lambda-definability/lambda-definability.tex:8 bytes 137-218 SHA-256 660acc744708aade6f69a9068bc41555088f8ba9258a8c209d6c45a57c330e74; reader page pending.
+  - te-Telu-IN-TE-T093-OCC-002; OLP-0374; OLP-0374-B006; source upstream/content/lambda-calculus/lambda-definability/introduction.tex:21-25 bytes 679-1004 SHA-256 ff7c8dba694a6e61b7d6445949a00ed6e61c5ddc1af1bcabcc7e0587ed1cb2d2; target translation/content/lambda-calculus/lambda-definability/introduction.tex:21-26 bytes 1267-1992 SHA-256 860d841cf9d6ada3b5ba185828b12082df7a8ee97403f10a187941c6e785cd95; reader page pending.
+  - te-Telu-IN-TE-T093-OCC-003; OLP-0374; OLP-0374-B010; source upstream/content/lambda-calculus/lambda-definability/introduction.tex:55-59 bytes 2349-2625 SHA-256 ff7c8dba694a6e61b7d6445949a00ed6e61c5ddc1af1bcabcc7e0587ed1cb2d2; target translation/content/lambda-calculus/lambda-definability/introduction.tex:59-63 bytes 4473-5131 SHA-256 860d841cf9d6ada3b5ba185828b12082df7a8ee97403f10a187941c6e785cd95; reader page pending.
+  - te-Telu-IN-TE-T093-OCC-004; OLP-0375; OLP-0375-B005; source upstream/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:12-15 bytes 262-369 SHA-256 1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24; target translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:12-15 bytes 289-505 SHA-256 9a1de0ca213ef92c2d61c150b852edce25f341cdc2f3346665cf3259877402a9; reader page pending.
+  - te-Telu-IN-TE-T093-OCC-005; OLP-0375; OLP-0375-B009; source upstream/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:56-59 bytes 1962-2066 SHA-256 1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24; target translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:60-63 bytes 3568-3770 SHA-256 9a1de0ca213ef92c2d61c150b852edce25f341cdc2f3346665cf3259877402a9; reader page pending.
+  - te-Telu-IN-TE-T093-OCC-006; OLP-0375; OLP-0375-B011; source upstream/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:89-95 bytes 3369-3534 SHA-256 1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24; target translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:96-102 bytes 6848-7124 SHA-256 9a1de0ca213ef92c2d61c150b852edce25f341cdc2f3346665cf3259877402a9; reader page pending.
+  - te-Telu-IN-TE-T093-OCC-007; OLP-0375; OLP-0375-B016; source upstream/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:125-136 bytes 4449-4860 SHA-256 1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24; target translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:137-149 bytes 9643-10388 SHA-256 9a1de0ca213ef92c2d61c150b852edce25f341cdc2f3346665cf3259877402a9; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -11584,3 +11616,107 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTELAMCRBE-004-OCC-001; OLP-0372; OLP-0372-B015; source upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:55-58 bytes 1413-1521 SHA-256 2eee11e77e3bb3052a2e139079f26cb22c1126577b4418f88918a3ede85a3cf4; target translation/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:63 bytes 5235-5985 SHA-256 cd30356c3a44615e9a8217af5f665f54cda2498ea0260e83ee44ca2c2f12b95d; reader page pending.
+
+## te-Telu-IN-OLTELAMLDFI-001 — OLTELAMLDFI-001: constant function subscript dropped in value equation
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: restored the introduced constant-function subscript in c_k(n)=k and disclosed the source prose typo
+
+- Intended sense: Repair the audited constant function subscript dropped in value equation at introduction.tex lines 73-76, especially line 75, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMLDF-20260926:OLTELAMLDFI-001 [checked_supports], content/lambda-calculus/lambda-definability/introduction.tex; introduction.tex lines 73-76, especially line 75; constant_function_subscript_dropped_in_value_equation; restored the introduced constant-function subscript in c_k(n)=k and disclosed the source prose typo.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: స్థిర ప్రమేయం c_k పరిచయానికి అనుగుణంగా c_k(n)=k ఉపసూచిక పునరుద్ధరణ సరైనదా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMLDFI-001-OCC-001; OLP-0374; OLP-0374-B012; source upstream/content/lambda-calculus/lambda-definability/introduction.tex:73-81 bytes 3002-3580 SHA-256 ff7c8dba694a6e61b7d6445949a00ed6e61c5ddc1af1bcabcc7e0587ed1cb2d2; target translation/content/lambda-calculus/lambda-definability/introduction.tex:83 bytes 6173-6729 SHA-256 860d841cf9d6ada3b5ba185828b12082df7a8ee97403f10a187941c6e785cd95; reader page pending.
+
+## te-Telu-IN-OLTELAMLDFARF-001 — OLTELAMLDFARF-001: church numeral two argument application mislabeled one step in successor proof
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: changed the numeral-to-two-arguments successor-proof arrow from one-step to many-step beta reduction and disclosed why
+
+- Intended sense: Repair the audited church numeral two argument application mislabeled one step in successor proof at arithmetical-functions.tex lines 29-33, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMLDF-20260926:OLTELAMLDFARF-001 [checked_supports], content/lambda-calculus/lambda-definability/arithmetical-functions.tex; arithmetical-functions.tex lines 29-33; church_numeral_two_argument_application_mislabeled_one_step_in_successor_proof; changed the numeral-to-two-arguments successor-proof arrow from one-step to many-step beta reduction and disclosed why.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: చర్చ్ సంఖ్యాంకాన్ని f, xలకు ప్రయోగించడానికి రెండు బీటా సంకోచనాలు కావడంతో బహుదశ బాణం సరైనదా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMLDFARF-001-OCC-001; OLP-0375; OLP-0375-B006; source upstream/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:17-35 bytes 370-1278 SHA-256 1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24; target translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:37 bytes 2015-2609 SHA-256 9a1de0ca213ef92c2d61c150b852edce25f341cdc2f3346665cf3259877402a9; reader page pending.
+
+## te-Telu-IN-OLTELAMLDFARF-002 — OLTELAMLDFARF-002: addition derivation four multistep arrows mislabeled one step
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: changed four addition-derivation arrows from one-step to many-step beta reduction, retaining every intermediate term
+
+- Intended sense: Repair the audited addition derivation four multistep arrows mislabeled one step at arithmetical-functions.tex lines 72-80, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMLDF-20260926:OLTELAMLDFARF-002 [checked_supports], content/lambda-calculus/lambda-definability/arithmetical-functions.tex; arithmetical-functions.tex lines 72-80; addition_derivation_four_multistep_arrows_mislabeled_one_step; changed four addition-derivation arrows from one-step to many-step beta reduction, retaining every intermediate term.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: సంకలన గణనలో నాలుగు బాణాలన్నిటికీ కనీసం రెండు దశలు కావాలని, మధ్య పదాలను మార్చకుండా చూపామా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMLDFARF-002-OCC-001; OLP-0375; OLP-0375-B010; source upstream/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:61-87 bytes 2067-3368 SHA-256 1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24; target translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:93 bytes 5952-6835 SHA-256 9a1de0ca213ef92c2d61c150b852edce25f341cdc2f3346665cf3259877402a9; reader page pending.
+
+## te-Telu-IN-OLTELAMLDFARF-003 — OLTELAMLDFARF-003: alternative multiplication term ignores second argument
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: changed Add a to Add b in the alternative multiplication term so the second input is used, with adjacent disclosure
+
+- Intended sense: Repair the audited alternative multiplication term ignores second argument at arithmetical-functions.tex lines 116-122, especially line 120, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMLDF-20260926:OLTELAMLDFARF-003 [checked_supports], content/lambda-calculus/lambda-definability/arithmetical-functions.tex; arithmetical-functions.tex lines 116-122, especially line 120; alternative_multiplication_term_ignores_second_argument; changed Add a to Add b in the alternative multiplication term so the second input is used, with adjacent disclosure.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: ప్రత్యామ్నాయ గుణకార పదంలో Add b పునరుద్ధరణ రెండవ ఆర్గ్యుమెంటును వాడి n mను ఇస్తుందా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMLDFARF-003-OCC-001; OLP-0375; OLP-0375-B015; source upstream/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:117-123 bytes 4283-4448 SHA-256 1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24; target translation/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:133 bytes 8806-9533 SHA-256 9a1de0ca213ef92c2d61c150b852edce25f341cdc2f3346665cf3259877402a9; reader page pending.

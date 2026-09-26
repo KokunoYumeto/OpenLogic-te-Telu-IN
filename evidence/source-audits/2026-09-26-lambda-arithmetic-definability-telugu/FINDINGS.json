@@ -1,0 +1,73 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTELAMLDF-20260926",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": ["OLP-0373", "OLP-0374", "OLP-0375"],
+    "finding_count": 4
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "source_files": [
+    {
+      "unit_id": "OLP-0373",
+      "path": "content/lambda-calculus/lambda-definability/lambda-definability.tex",
+      "bytes": 704,
+      "sha256": "42df17a2d1c3ff9e2f53676b6bad10a9b10e7787f70d6371a2f60d0a22a78708"
+    },
+    {
+      "unit_id": "OLP-0374",
+      "path": "content/lambda-calculus/lambda-definability/introduction.tex",
+      "bytes": 3596,
+      "sha256": "ff7c8dba694a6e61b7d6445949a00ed6e61c5ddc1af1bcabcc7e0587ed1cb2d2"
+    },
+    {
+      "unit_id": "OLP-0375",
+      "path": "content/lambda-calculus/lambda-definability/arithmetical-functions.tex",
+      "bytes": 4990,
+      "sha256": "1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "OLTELAMLDFI-001",
+      "unit_id": "OLP-0374",
+      "classification": "constant_function_subscript_dropped_in_value_equation",
+      "source_locator": "introduction.tex lines 73-76, especially line 75",
+      "finding": "మూలం స్థిర ప్రమేయాన్ని c_kగా పరిచయం చేసి, దాని విలువను c(n)=k అని వేరే ప్రమేయం పేరిట రాసింది.",
+      "controlling_evidence": "The same sentence defines C_k and c_k, and its following beta calculation yields numeral k for any n. The value equation must retain the introduced subscript: c_k(n)=k.",
+      "required_translation_handling": "Use c_k(n)=k in the Telugu prose and disclose the one-subscript repair adjacent to it. Preserve the source's C_k beta-reduction formula."
+    },
+    {
+      "finding_id": "OLTELAMLDFARF-001",
+      "unit_id": "OLP-0375",
+      "classification": "church_numeral_two_argument_application_mislabeled_one_step_in_successor_proof",
+      "source_locator": "arithmetical-functions.tex lines 29-33",
+      "finding": "ఉత్తరగామి నిరూపణలో చర్చ్ సంఖ్యాంకం f, x అనే రెండు ఆర్గ్యుమెంట్లకు ప్రయోగించబడుతుంది; మూలం దాన్ని ఒకే బీటా దశగా సూచిస్తుంది.",
+      "controlling_evidence": "The source's abbreviated-syntax.tex lines 25-28 expands lambda[fx] to nested lambda[f][lambda[x][...]], and syntax/beta.tex lines 20-38 defines redone as one compatible beta contraction and red as reflexive-transitive reduction. From numeral n applied to f then x to f^n(x), two beta contractions are needed.",
+      "required_translation_handling": "Use the many-step red relation for the inline numeral application, with adjacent disclosure; retain the rest of the successor proof."
+    },
+    {
+      "finding_id": "OLTELAMLDFARF-002",
+      "unit_id": "OLP-0375",
+      "classification": "addition_derivation_four_multistep_arrows_mislabeled_one_step",
+      "source_locator": "arithmetical-functions.tex lines 72-80",
+      "finding": "సంకలన గణనలోని నాలుగు బాణాల్లో ఒక్కొక్క దానికి కనీసం రెండు కరీకరించిన బీటా దశలు అవసరం; మూలం వాటిని ఒక్కో దశగా ముద్రించింది.",
+      "controlling_evidence": "The first and fourth displayed reductions each apply a nested two-argument lambda term. The two middle reductions each apply a Church numeral to f and then x. By the source's abbreviated-syntax and beta-contraction definitions, each is a multi-step red, not redone.",
+      "required_translation_handling": "Replace only those four redone arrows with red, disclose the step-count reason beside the addition proof, and preserve all intermediate terms and order."
+    },
+    {
+      "finding_id": "OLTELAMLDFARF-003",
+      "unit_id": "OLP-0375",
+      "classification": "alternative_multiplication_term_ignores_second_argument",
+      "source_locator": "arithmetical-functions.tex lines 116-122, especially line 120",
+      "finding": "ప్రత్యామ్నాయ గుణకార పదంలో రెండవ ఆర్గ్యుమెంటు b వాడబడదు. మొదటి సంఖ్యాంకం n అయితే ముద్రిత పదం n^2ను ఇస్తుంది, సాధారణ n mను కాదు.",
+      "controlling_evidence": "Printed lambda[ab][a (Add a) numeral0] iterates addition of a exactly a times. For a=1,b=2 it yields numeral1 rather than numeral2. Lambda[ab][a (Add b) numeral0] iterates addition of b a times and yields a*b.",
+      "required_translation_handling": "Change only the argument of Add from a to b in the alternative term, retain the exercise, and disclose the repair adjacent to the formula."
+    }
+  ]
+}

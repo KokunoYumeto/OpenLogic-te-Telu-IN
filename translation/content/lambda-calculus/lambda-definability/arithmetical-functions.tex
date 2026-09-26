@@ -1,0 +1,155 @@
+% Part: lambda-calculus
+% Chapter: lambda-definablity
+% Section: arithmetical-functions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{rep}{arf}
+\olsection{\usetoken{S}{lambda definable} అంకగణిత ప్రమేయాలు}
+
+\begin{prop}
+  \ollabel{prop:succ-ld}
+  ఉత్తరగామి ప్రమేయం~$\Succ$ \tetoken{లాంబ్డాతో నిర్వచించదగిన}{!!{lambda definable}}ది.
+\end{prop}
+
+\begin{proof}
+ఉత్తరగామి ప్రమేయాన్ని \tetoken{లాంబ్డాతో నిర్వచించే}{!!{lambda define}s}
+పదం ఇది:
+\begin{align*}
+  \fn{Succ} & \ident \lambd[a][\lambd[fx][f ({a} f x)]].
+  \intertext{మన సంకేత సంప్రదాయాల ప్రకారం దీని విస్తృత రూపం}
+  \fn{Succ} & \ident \lambd[a][\lambd[f][\lambd[x][(f (({a} f) x))]]].
+  \intertext{$\fn{Succ}$ సంఖ్య~$a$ను ఆర్గ్యుమెంటుగా స్వీకరించి,
+    మరో ప్రమేయం $\lambd[fx][f ({a}
+      f x)]$ను ఫలితంగా ఇస్తుంది. ఆ ప్రమేయం స్వయంగా
+    చర్చ్ సంఖ్యాంకం కాదు. అయితే $a$ ఆర్గ్యుమెంటు చర్చ్
+    సంఖ్యాంకమైతే, అది ఒక సంఖ్యాంకానికి తగ్గుతుంది. చూడండి:}
+   (\lambd[a][\lambd[fx][f ({a} f x)]])\,\num{n} & \redone
+   \lambd[fx][f ({\num{n}} f x)].
+   \intertext{లోపలి $\num{n}fx$ పదం రెడెక్స్‌ను కలిగి ఉంది:
+     $\num{n}$ అనేది $\lambd[fx][f^nx]$. కనుక
+     $\num{n}fx \red f^nx$; మొత్తం పదానికి}
+   \fn{Succ}\, \num n & \red \lambd[fx][f(f^n(x))],
+\end{align*}
+అంటే $\num{n+1}$ వస్తుంది.
+\sourcecorrection{OLTELAMLDFARF-001}{మూలం $\num{n}fx \redone f^nx$ అని ఒకే దశ బాణం పెట్టింది. కానీ $\num n=\lambd[f][\lambd[x][f^n(x)]]$ కావడంతో $f$, $x$ అనే రెండు ఆర్గ్యుమెంట్లకు వరుసగా రెండు బీటా సంకోచనాలు అవసరం. తెలుగు మధ్య వాక్యంలో ఆ బాణాన్ని బహుదశ $\red$గా సరిచేశాం; మిగిలిన గణనను నిలిపాం.}
+\end{proof}
+
+\begin{ex}
+  $\fn{Succ}$ను $\num{0}$కు, అంటే $\lambd[fx][x]$కు,
+  ప్రయోగిస్తే ఏమవుతుందో చూద్దాం. పదాలను పూర్తిగా రాస్తాం:
+  \begin{align*}
+    \fn{Succ}\, \num{0} & \ident (\lambd[a][\lambd[f][\lambd[x][(f (({a} f) x))]]])(\lambd[f][\lambd[x][x]])\\
+    & \redone \lambd[f][\lambd[x][(f (({(\lambd[f][\lambd[x][x]])} f) x))]] \\
+    & \redone \lambd[f][\lambd[x][(f ({(\lambd[x][x])} x))]] \\
+    & \redone \lambd[f][\lambd[x][(f x)]] \ident \num{1}\\
+  \end{align*}
+\end{ex}
+
+\begin{prob}
+  ఈ పదం
+  \begin{align*}
+    \fn{Succ}' & \ident \lambd[{n}][\lambd[fx][{n} f (f x)]]
+  \end{align*}
+  ఉత్తరగామి ప్రమేయాన్ని \tetoken{లాంబ్డాతో నిర్వచిస్తుంది}{!!{lambda define}s}.
+  ఎందుకో వివరించండి.
+\end{prob}
+
+\begin{prop}
+  \ollabel{prop:add-ld}
+  సంకలన ప్రమేయం~$\Add$ \tetoken{లాంబ్డాతో నిర్వచించదగిన}{!!{lambda definable}}ది.
+\end{prop}
+
+\begin{proof}
+సంకలనాన్ని \tetoken{లాంబ్డాతో నిర్వచించే}{!!{lambda define}} పదాలు ఇవి:
+\begin{align*}
+  \fn{Add} & \ident \lambd[{a}{b}][\lambd[fx][{a} f ({b} f x)]]
+\intertext{లేదా ప్రత్యామ్నాయంగా,}
+  \fn{Add}' & \ident \lambd[{a}{b}][{a}\, \fn{Succ} \, {b}].
+\intertext{మొదటి సంకలన పదం ఇలా పనిచేస్తుంది: $\fn{Add}$ మొదట
+  ${a}$, ${b}$ అనే రెండు సంఖ్యలను స్వీకరిస్తుంది. ఫలితం
+  $f$, $x$లను స్వీకరించి $af(bfx)$ను తిరిగి ఇచ్చే ప్రమేయం.
+  $a$, $b$లు $\num{n}$, $\num{m}$ అనే చర్చ్ సంఖ్యాంకాలైతే,
+  అది $f^{n+m}(x)$కు తగ్గుతుంది; ఇది $f^{n}(f^{m}(x))$తో
+  సమానం. దశలవారీగా చూస్తే:}
+  (\lambd[{a}{b}][\lambd[fx][{a} f ({b} f x)]])\num n\,\num m & \red
+  \lambd[fx][\num{n}\, f (\num {m}\, f x)] \\
+  & \red \lambd[fx][\num{n}\, f (f^m x)] \\
+  & \red \lambd[fx][f^n (f^m x)] \ident \num {n+m}.
+\intertext{రెండవ సంకలన ప్రాతినిధ్యం $\fn{Add'}$ వేరుగా
+  పనిచేస్తుంది. దాన్ని $\num{n}$, $\num{m}$ అనే రెండు
+  చర్చ్ సంఖ్యాంకాలకు ప్రయోగిస్తే,}
+\fn{Add}' \num n \,\num m
+& \red \num{n}\, \fn{Succ}\, \num{m}.
+\intertext{కానీ $\num{n} f x$ ఎప్పుడూ $f^n(x)$కు తగ్గుతుంది. కనుక}
+  \num{n}\,  \fn{Succ}\, \num{m} & \red \fn{Succ}^n(\num{m}).
+\end{align*}
+$\fn{Succ}$ ఉత్తరగామి ప్రమేయాన్ని
+\tetoken{లాంబ్డాతో నిర్వచిస్తుంది}{!!{lambda define}s};
+దాన్ని $m$కు $n$ సార్లు ప్రయోగిస్తే $n+m$ వస్తుంది.
+కనుక ఈ పదం కూడా $\num{n+m}$కు తగ్గుతుంది.
+\sourcecorrection{OLTELAMLDFARF-002}{మూలంలోని ఈ సంకలన గణనలో నాలుగు $\redone$ బాణాలు ఒక్క సంకోచనంగా చూపుతున్నాయి. మొదటి, నాలుగవ బాణాలకు కరీకరించిన రెండు-ఆర్గ్యుమెంట్ల ప్రయోగం వల్ల కనీసం రెండు బీటా దశలు; మధ్య రెండు బాణాలకు చర్చ్ సంఖ్యాంకాన్ని $f$, $x$లకు ప్రయోగించడం వల్ల రెండు దశలు కావాలి. ఆ నాలుగు బాణాలను మాత్రమే బహుదశ $\red$గా మార్చాం; సూత్రాల పదాలు, క్రమం మారలేదు.}
+\end{proof}
+
+\begin{prop}
+  \ollabel{prop:mult-ld}
+  గుణకారం ఈ పదం ద్వారా \tetoken{లాంబ్డాతో నిర్వచించదగిన}{!!{lambda definable}}ది:
+  \[
+  \fn{Mult} \ident \lambd[ab][\lambd[fx][a (b f) x]]
+  \]
+\end{prop}
+
+\begin{proof}
+  ఇది ఎలా పనిచేస్తుందో చూడడానికి $\fn{Mult}$ను
+  $\num{n}$, $\num{m}$ అనే చర్చ్ సంఖ్యాంకాలకు
+  ప్రయోగిద్దాం. $\fn{Mult} \, \num{n} \, \num{m}$ అనేది
+  $\lambd[fx][\num{n}(\num{m}\, f)x]$కు తగ్గుతుంది.
+  $\num{m} f$ తన ఆర్గ్యుమెంటుకు $f$ను $m$ సార్లు
+  ప్రయోగించే ప్రమేయాన్ని నిర్వచిస్తుంది. అందువల్ల
+  $\num{n} (\num{m} f) x$ అనేది ``$f$ను $m$ సార్లు
+  ప్రయోగించు'' అనే ప్రమేయాన్నే $x$కు $n$ సార్లు
+  ప్రయోగిస్తుంది. మరో మాటలో, $x$కు $f$ను
+  $n\cdot m$ సార్లు ప్రయోగిస్తాం. ఫలితంగా వచ్చే
+  నియత పదం చర్చ్ సంఖ్యాంకం $\num{nm}$.
+\end{proof}
+
+\begin{editorial}
+ఈ పదాన్ని $\eta$-తగ్గింపు ద్వారా ఇంకా సరళీకరించవచ్చు:
+\[
+  \fn{Mult} \ident \lambd[ab][\lambd[f][a (b f)]].
+\]
+
+అయితే ముందుగా $\eta$-తగ్గింపును వివరించాలి.
+\end{editorial}
+
+\begin{prob}
+ఈ పదం ద్వారా కూడా గుణకారాన్ని
+\tetoken{లాంబ్డాతో నిర్వచించవచ్చు}{!!{lambda define}}:
+\[
+  \fn{Mult}' \ident \lambd[ab][a (\fn{Add}\, b) \num{0}].
+\]
+\sourcecorrection{OLTELAMLDFARF-003}{మూల ప్రత్యామ్నాయ పదం $\lambd[ab][a (\fn{Add}\, a) \num{0}]$లో రెండవ ఆర్గ్యుమెంటు $b$ అసలు ఉపయోగించబడదు; $a$ను $n$గా తీసుకుంటే అది $n^2$ను ఇస్తుంది, సాధారణ $n m$ను కాదు. తెలుగు సూత్రంలో సంకలనానికి ఇచ్చే ఆర్గ్యుమెంటును $b$గా పునరుద్ధరించాం. ఇప్పుడు $a$-పునరావర్తకం $b$ను సున్నాకు $n$ సార్లు కలుపుతుంది.}
+ఇది ఎందుకు పనిచేస్తుందో వివరించండి.
+\end{prob}
+
+ఘాతాంకనాన్ని $\lambd$-పదంగా నిర్వచించడం ఆశ్చర్యకరంగా
+సరళం:
+\[
+  \fn{Exp} \ident \lambd[be][e b].
+\]
+మొదటి ఆర్గ్యుమెంటు $b$ ఆధారం; రెండవది~$e$ ఘాతాంకం.
+సంఖ్యల సంకేతీకరణ ప్రకారం సహజ అవగాహనలో $e f$
+అంటే $f^e$. ఇది అర్థం చేసుకోవడం కష్టమైతే,
+పునరావృత గుణకారం ద్వారా కూడా ఘాతాంకనాన్ని
+నిర్వచించవచ్చు:
+\[
+  \fn{Exp}' \ident \lambd[be][e (\fn{Mult}\, b) \num{1}].
+\]
+
+చర్చ్ సంఖ్యాంకాలపై పూర్వవర్తి ప్రమేయం, వ్యవకలనం
+మనకు అనిపించినంత సరళం కావు: వాటికి క్రమిత జతల
+సంకేతీకరణ అవసరం.
+
+\end{document}
