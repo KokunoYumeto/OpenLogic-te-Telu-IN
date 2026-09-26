@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 385 of 722 draft units**. This log contains 100 terminology/sense decisions and 355 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 388 of 722 draft units**. This log contains 101 terminology/sense decisions and 356 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2407,6 +2407,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: సాంప్రదాయిక ప్రతిజ్ఞావాక్య తర్కం, సత్యతావిలువ, సంయోజకం, కరణీయ సంఖ్యలకు స్థానిక ఆధారం ఉంది. బహుమూల్య, నిర్దేశిత విలువ, సత్యమూల్య-ప్రమేయాత్మకము అనే ప్రత్యేక కూర్పులు మూల నిర్వచనాలు, పూర్వ స్థిర వాడుక ఆధారంగా తాత్కాలికం. సత్యతావిలువ ప్రత్యక్ష సాక్ష్యమైనా సత్యమూల్యం ఎంపిక సందర్భానుసారమైన సంచిక స్థిరీకరణ.
 
 - Please double-check: Please double-check whether “బహుమూల్య తర్కం / ద్విమూల్య తర్కం / సత్యమూల్యం / సత్యమూల్య కేటాయింపు / సత్యమూల్య ప్రమేయం / సత్యమూల్య-ప్రమేయాత్మకం / నిర్దేశిత సత్యమూల్యం / సర్వసత్యం / అర్థపర అనుగమనం / కరణీయ సంఖ్య” is idiomatic and technically standard for “many-valued logic / two-valued logic / truth value / valuation / truth function / truth-functional / designated value / tautology / entailment / rational number” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T101 — propositional language / connective / arity / n-place / constant / unary / binary / product logic / determinateness operator / matrix / truth function
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: ప్రతిజ్ఞావాక్య భాష / సంయోజకం / స్థానసంఖ్య / n-స్థానికం / స్థిరాంకం / ఏకస్థానికం / ద్విస్థానికం / గుణిత తర్కం / నిర్ణీతత్వ సంచాలకం / మాత్రిక / సత్యమూల్య ప్రమేయం
+
+- Exact implementation: OLP-0386; many-valued-logic/syntax-and-semantics/connectives; content/many-valued-logic/syntax-and-semantics/connectives.tex:11 ↔ translation/content/many-valued-logic/syntax-and-semantics/connectives.tex:11 (OLP-0386-B005); printed/PDF page pending; OLP-0386; many-valued-logic/syntax-and-semantics/connectives; content/many-valued-logic/syntax-and-semantics/connectives.tex:46-53 ↔ translation/content/many-valued-logic/syntax-and-semantics/connectives.tex:51-58 (OLP-0386-B008); printed/PDF page pending; OLP-0386; many-valued-logic/syntax-and-semantics/connectives; content/many-valued-logic/syntax-and-semantics/connectives.tex:46-53 ↔ translation/content/many-valued-logic/syntax-and-semantics/connectives.tex:51-58 (OLP-0386-B008); printed/PDF page pending; OLP-0386; many-valued-logic/syntax-and-semantics/connectives; content/many-valued-logic/syntax-and-semantics/connectives.tex:55-68 ↔ translation/content/many-valued-logic/syntax-and-semantics/connectives.tex:60-73 (OLP-0386-B009); printed/PDF page pending; OLP-0386; many-valued-logic/syntax-and-semantics/connectives; content/many-valued-logic/syntax-and-semantics/connectives.tex:55-68 ↔ translation/content/many-valued-logic/syntax-and-semantics/connectives.tex:60-73 (OLP-0386-B009); printed/PDF page pending; OLP-0387; many-valued-logic/syntax-and-semantics/formulas; content/many-valued-logic/syntax-and-semantics/formulas.tex:13-30 ↔ translation/content/many-valued-logic/syntax-and-semantics/formulas.tex:13-30 (OLP-0387-B006); printed/PDF page pending; OLP-0388; many-valued-logic/syntax-and-semantics/matrices; content/many-valued-logic/syntax-and-semantics/matrices.tex:11 ↔ translation/content/many-valued-logic/syntax-and-semantics/matrices.tex:11 (OLP-0388-B005); printed/PDF page pending; OLP-0388; many-valued-logic/syntax-and-semantics/matrices; content/many-valued-logic/syntax-and-semantics/matrices.tex:17-28 ↔ translation/content/many-valued-logic/syntax-and-semantics/matrices.tex:18-29 (OLP-0388-B007); printed/PDF page pending; OLP-0388; many-valued-logic/syntax-and-semantics/matrices; content/many-valued-logic/syntax-and-semantics/matrices.tex:17-28 ↔ translation/content/many-valued-logic/syntax-and-semantics/matrices.tex:18-29 (OLP-0388-B007); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P020, PDF 79, printed 72, Disjunction heading and truth-table discussion
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్యాత్మక తర్కం, సంయోజకాల పరిచయం; TE-P019–P020లో సంయోజకం, వియోజకం, సత్యతావిలువ, సత్య పట్టికలు; TE-P008లో సమితి/ఉపసమితి; TE-P011లో ప్రమేయం, దాని సంయుక్తం ప్రత్యక్షంగా కనిపించాయి. ఆ పేజీలు n-స్థానిక సంయోజకం, గుణిత తర్కం, నిర్ణీతత్వ సంచాలకం, లేదా బహుమూల్య తర్కపు మాత్రికను ప్రత్యక్షంగా నిర్వచించవు. OLP-0386–0388 స్థిర మూల నిర్వచనాలు, పూర్వ TE-T050 స్థానసంఖ్య, TE-T100 సత్యమూల్య ప్రమేయం ఎంపికలు ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి. మాత్రిక అనేది భాష, ఖాళీ కాని V, V^+ ఉపసమితి, ప్రతి సంయోజకానికి సత్యమూల్య ప్రమేయం గల నిర్మాణం; అది కేవలం సంఖ్యల దీర్ఘచతురస్ర పట్టిక కాదు. L, L_0, V, V^+, star, triangle, truth-value and connective macros, and arity numerals are protected source notation. మాత్రిక is an explicit technical loan rendered in Telugu script; ordinary explanatory prose remains Telugu.
+
+- Alternatives: స్థానసంఖ్యను n-స్థానిక సంయోజకంగా, మాత్రికను మూల నిర్వచించిన భాష–V–V^+–సత్యమూల్య ప్రమేయాల నిర్మాణంగా చదవడం (ఎంపిక); మాత్రికను కేవలం సంఖ్యల దీర్ఘచతురస్ర పట్టికగా చదవడం (తిరస్కరణ); గుణిత తర్కం, నిర్ణీతత్వ సంచాలకం పేర్లకు స్థానిక ద్విమూల్య తర్క పేజీలే నేరుగా సాక్ష్యమని ప్రకటించడం (తిరస్కరణ); మూల n, 0, 1, 2 స్థానసంఖ్యలను వదిలేయడం (తిరస్కరణ)
+
+- Uncertainty: ప్రతిజ్ఞావాక్య తర్కం, సత్యతా పట్టిక, సమితి, ప్రమేయం రూపాలకు స్థానిక ఆధారం ఉంది. మాత్రిక, గుణిత తర్కం, నిర్ణీతత్వ సంచాలకం, స్థానసంఖ్య అనే ప్రత్యేక కూర్పులకు నామసాక్ష్యం పరిమితం; మూల నిర్వచనాలకు కట్టుబడిన తాత్కాలిక ఎంపికలు.
+
+- Please double-check: Please double-check whether “ప్రతిజ్ఞావాక్య భాష / సంయోజకం / స్థానసంఖ్య / n-స్థానికం / స్థిరాంకం / ఏకస్థానికం / ద్విస్థానికం / గుణిత తర్కం / నిర్ణీతత్వ సంచాలకం / మాత్రిక / సత్యమూల్య ప్రమేయం” is idiomatic and technically standard for “propositional language / connective / arity / n-place / constant / unary / binary / product logic / determinateness operator / matrix / truth function” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -10927,3 +10951,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMLDFLDR-001 is mathematically precise and idiomatic.
+
+## REV-OLTEMVLSYN-001 — OLTEMVLSYN-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: లోపలి defTrue పరీక్షకు ఖాళీ అసత్య శాఖను జోడించి, తరువాత బయటి పరీక్షను ముగించాం; పక్కనే తెలుగు మూల సవరణ వివరణ ఉంది; సంకేతాల జాబితా మారలేదు.
+
+- Exact implementation: OLP-0386; many-valued-logic/syntax-and-semantics/connectives; connectives.tex lines 27-37, nested defined-symbol tag block ↔ translation/content/many-valued-logic/syntax-and-semantics/connectives.tex:40 (OLP-0386-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLSYN-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: లోపలి defTrue పరీక్షకు ఖాళీ అసత్య శాఖను జోడించి, తరువాత బయటి పరీక్షను ముగించాం; పక్కనే తెలుగు మూల సవరణ వివరణ ఉంది; సంకేతాల జాబితా మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the final defTrue tag test close its empty false arm before the outer defined-symbol block closes, without changing the displayed connective list?

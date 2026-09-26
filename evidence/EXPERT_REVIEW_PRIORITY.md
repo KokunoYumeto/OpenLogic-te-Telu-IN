@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 385 of 722 draft units**. This view selects 408 of 455 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 388 of 722 draft units**. This view selects 409 of 457 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4083,3 +4083,13 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0382; lambda-calculus/lambda-definability/lambda-definable-recursive; translation/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:10; printed/PDF page pending
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTELAMLDFLDR-001 is mathematically precise and idiomatic.
+
+## REV-OLTEMVLSYN-001 — OLTEMVLSYN-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: లోపలి defTrue పరీక్షకు ఖాళీ అసత్య శాఖను జోడించి, తరువాత బయటి పరీక్షను ముగించాం; పక్కనే తెలుగు మూల సవరణ వివరణ ఉంది; సంకేతాల జాబితా మారలేదు.
+
+- Occurrences: OLP-0386; many-valued-logic/syntax-and-semantics/connectives; translation/content/many-valued-logic/syntax-and-semantics/connectives.tex:40; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the final defTrue tag test close its empty false arm before the outer defined-symbol block closes, without changing the displayed connective list?

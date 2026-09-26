@@ -1,0 +1,77 @@
+% Part: many-valued-logic
+% Chapter: syntax-and-semantics
+% Section: matrices
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{syn}{mat}
+
+\olsection{మాత్రికలు}
+
+ఒక బహుమూల్య తర్కాన్ని దాని భాష, సత్యమూల్యాల సమితి~$V$,
+నిర్దేశిత సత్యమూల్యాల ఉపసమితి, దాని సంయోజకాలకు చెందిన
+సత్యమూల్య ప్రమేయాలు నిర్ణయిస్తాయి. ఈ అంశాలన్నిటినీ
+కలిపి ఒక \emph{మాత్రిక} అంటాం.
+
+\begin{defn}[మాత్రిక]
+\ollabel{defn:matrix}
+తర్కం~$\Log L$కు ఒక \emph{మాత్రిక}లో కింది అంశాలు ఉంటాయి:
+\begin{enumerate}
+\item భాష~$\Lang L$ను ఏర్పరచే సంయోజకాల సమితి;
+\item ఖాళీ కాని సత్యమూల్యాల సమితి $V \neq \emptyset$;
+\item నిర్దేశిత సత్యమూల్యాల సమితి $V^+ \subseteq V$;
+\item $\Lang L$లోని ప్రతి $n$-స్థానిక సంయోజకం~$\star$కు
+సత్యమూల్య ప్రమేయం~$\tf{\star} : V^n \to V$.
+$n = 0$ అయితే, $\tf{\star}$ అనేది $V$లోని ఒక మూలకం మాత్రమే.
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+సాంప్రదాయిక తర్కం~\LogCL{} యొక్క మాత్రికలో కింది అంశాలు ఉంటాయి:
+\begin{enumerate}
+  \item $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$ గల
+  ప్రామాణిక ప్రతిజ్ఞావాక్య భాష~$\Lang L_0$.
+  \item సత్యమూల్యాల సమితి $V = \{\True, \False\}$.
+  \item $\True$ ఒక్కటే నిర్దేశిత విలువ; అంటే $V^+ = \{\True\}$.
+  \item $\lfalse$కు $\tf{\lfalse} = \False$. ఇతర
+  సత్యమూల్య ప్రమేయాలను సాధారణ సత్య పట్టికలు ఇస్తాయి
+  (\olref{fig:tf-CL} చూడండి).
+\end{enumerate}
+\begin{figure}
+  \begin{center}
+      \begin{tabular}{c|c}
+        $\tf{\lnot}$ & \\
+        \hline
+        $\True$ & $\False$ \\
+        $\False$ & $\True$
+      \end{tabular}
+      \quad
+      \begin{tabular}{c|cc}
+        $\tf{\land}$ & $\True$ & $\False$ \\
+        \hline
+        $\True$ & $\True$ & $\False$ \\
+        $\False$ & $\False$ & $\False$
+      \end{tabular}
+      \quad
+      \begin{tabular}{c|cc}
+        $\tf{\lor}$ & $\True$ & $\False$ \\
+        \hline
+        $\True$ & $\True$ & $\True$ \\
+        $\False$ & $\True$ & $\False$
+      \end{tabular}
+      \quad
+      \begin{tabular}{c|cc}
+        $\tf{\lif}$ & $\True$ & $\False$ \\
+        \hline
+        $\True$ & $\True$ & $\False$ \\
+        $\False$ & $\True$ & $\True$
+      \end{tabular}
+    \end{center}
+    \caption{సాంప్రదాయిక తర్కం~$\LogCL$కు సత్యమూల్య ప్రమేయాలు.}
+    \ollabel{fig:tf-CL}
+  \end{figure}
+  \end{ex}
+
+\end{document}

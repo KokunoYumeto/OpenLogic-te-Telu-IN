@@ -1,0 +1,45 @@
+% Part: many-valued-logic
+% Chapter: syntax-and-semantics
+% Section: formulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{syn}{fml}
+
+\olsection{\usetoken{P}{formula}}
+
+\begin{defn}[సూత్రం]
+\ollabel{defn:formulas}
+ప్రతిజ్ఞావాక్య భాష~$\Lang L$లోని \emph{\tetoken{సూత్రాల}{!!{formula}s}}
+సమితి~$\Frm[L]$ను కింది విధంగా ఆగమనాత్మకంగా నిర్వచిస్తాం:
+\begin{enumerate}
+\item ప్రతి \tetoken{ప్రతిజ్ఞావాక్య చరం}{!!{propositional variable}}~$\Obj p_i$
+  ఒక పరమాణు \tetoken{సూత్రం}{!!{formula}}.
+\item $\Lang L$లోని ప్రతి $0$-స్థానిక సంయోజకం (ప్రతిజ్ఞావాక్య స్థిరాంకం)
+ఒక పరమాణు \tetoken{సూత్రం}{!!{formula}}.
+\item $\star$ అనేది $\Lang L$లోని $n$-స్థానిక సంయోజకమై, $!A_1$,
+\dots, $!A_n$లు \tetoken{సూత్రాలు}{!!{formula}s} అయితే,
+$\star(!A_1, \dots, !A_n)$ కూడా \tetoken{ఒక సూత్రం}{!!a{formula}}.
+\tagitem{limitClause}{ఇవి తప్ప మరేదీ \tetoken{సూత్రం}{!!a{formula}} కాదు.}{}
+\end{enumerate}
+$\star$ $1$-స్థానికమైతే, $\star(!A_1)$ను తరచుగా
+$\star !A_1$ అని సంక్షిప్తంగా రాస్తాం. $\star$ $2$-స్థానికమైతే,
+$\star(!A_1,!A_2)$ను తరచుగా $(!A_1 \star !A_2)$గా రాస్తాం.
+\end{defn}
+
+మామూలుగానే, బయటివైపు ఉన్న కుండలీకరణలను చాలాసార్లు చెప్పకుండానే వదిలేస్తాం.
+
+\begin{ex}
+  ప్రామాణిక భాష~$\Lang{L_0}$లో, $\Obj p_1 \lif (\Obj p_1
+  \land \lnot \Obj p_2)$ ఒక సూత్రం. గుణిత తర్కపు భాషలో దాన్ని
+  $\Obj p_1 \lif (\Obj p_1 \odot
+  \lnot \Obj p_2)$గా రాస్తాం. భాషకు $1$-స్థానిక
+  $\triangle$ను చేరిస్తే,
+  $\triangle (\Obj p_1
+  \land \Obj p_2) \lif (\triangle \Obj p_1 \land \triangle \Obj p_2)$
+  వంటి సూత్రాలూ ఉంటాయి.
+\end{ex}
+
+\end{document}

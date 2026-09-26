@@ -1,0 +1,33 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTEMVLSYN-20260926",
+  "created_utc": "2026-09-26T04:03:46Z",
+  "status": "confirmed_against_frozen_source_and_immediate_macro_context",
+  "scope": {
+    "chapter": "Many-valued Logic — Syntax and Semantics",
+    "unit_ids": ["OLP-0386", "OLP-0387", "OLP-0388"],
+    "finding_count": 1
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEMVLSYN-001",
+      "unit_id": "OLP-0386",
+      "classification": "confirmed_malformed_nested_tag_closure",
+      "source": {
+        "path": "content/many-valued-logic/syntax-and-semantics/connectives.tex",
+        "bytes": 2792,
+        "sha256": "5eab2399773774dcc0ad724bf710775b247fa781eddca68a814f39537880ff30",
+        "locator": "lines 27-37"
+      },
+      "finding": "The final inner defTrue tag test has no empty false arm before the outer tag block closes; its third argument consumes the outer group's closing brace, the same structural defect audited in OLP-0058.",
+      "controlling_evidence": "Every neighboring iftag call has a true and false arm, and the outer iftag opened on line 27 requires its own closing true arm and empty false arm. The parallel propositional-language list in OLP-0058 has the same determined repair.",
+      "required_translation_handling": "Close the inner defTrue call with an empty false arm, then close the outer call with an empty false arm; keep the symbol list and terminal period and add an adjacent Telugu sourcecorrection note."
+    }
+  ]
+}

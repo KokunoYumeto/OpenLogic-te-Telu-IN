@@ -458,6 +458,17 @@ locations['TE-T100']=[
  L('content/many-valued-logic/syntax-and-semantics/introduction.tex',53,56,65,70,'designated values','నిర్దేశిత సత్యమూల్యాల'),
  L('content/many-valued-logic/syntax-and-semantics/introduction.tex',57,61,72,81,'tautology','సర్వసత్యం')
 ];
+locations['TE-T101']=[
+ L('content/many-valued-logic/syntax-and-semantics/connectives.tex',11,11,11,11,'Languages and Connectives','భాషలు, సంయోజకాలు'),
+ L('content/many-valued-logic/syntax-and-semantics/connectives.tex',47,52,51,57,'propositional language','ప్రతిజ్ఞావాక్య భాష'),
+ L('content/many-valued-logic/syntax-and-semantics/connectives.tex',48,52,53,57,'arity','స్థానసంఖ్య'),
+ L('content/many-valued-logic/syntax-and-semantics/connectives.tex',64,67,69,72,'product logic','గుణిత తర్కం'),
+ L('content/many-valued-logic/syntax-and-semantics/connectives.tex',65,67,70,72,'determinateness operator','నిర్ణీతత్వ సంచాలకం'),
+ L('content/many-valued-logic/syntax-and-semantics/formulas.tex',13,16,13,17,'Formula','సూత్రం'),
+ L('content/many-valued-logic/syntax-and-semantics/matrices.tex',11,11,11,11,'Matrices','మాత్రికలు'),
+ L('content/many-valued-logic/syntax-and-semantics/matrices.tex',18,27,18,29,'matrix','మాత్రిక'),
+ L('content/many-valued-logic/syntax-and-semantics/matrices.tex',24,27,24,28,'truth','సత్యమూల్య ప్రమేయం')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -543,6 +554,7 @@ alternatives['TE-T097']=['పూర్వ క్రమగుణిత ప్ర�
 alternatives['TE-T098']=['TE-T065, TE-T078, TE-T079లోని సక్రమత, పాక్షిక పునరావృత్తి, నియత రూపం పదజాలాన్ని OLP-0380–0381 మూల నిర్వచనాలు, ప్రతిదృష్టాంతంతో కొనసాగించడం (ఎంపిక)','పాక్షిక ప్రమేయం నిర్వచితం కాని చోట తప్పనిసరిగా F(Gx)కు నియత రూపం ఉండదని ఊహించడం (తిరస్కరణ)','స్థానిక సాధారణ పేజీలు లాంబ్డా పాక్షికతను నేరుగా బోధిస్తాయని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T099']=['గోడెల్ అంకీకరణ–నియత రూపం–చర్చ్ సంఖ్యాంక మార్పిడిని మూల రూపురేఖల పరిమితిలో తెలుగులో వివరించడం (ఎంపిక)','మూల నిరూపణ రూపురేఖలను పూర్తి నిర్మాణాత్మక నిరూపణగా ప్రకటించడం (తిరస్కరణ)','గోడెల్ పేరు లేదా కోడ్ ప్రమేయాల గుర్తింపులను అనువదించి మూల అనుసంధానం పోగొట్టడం (తిరస్కరణ)','స్థానిక ప్రధాన సంఖ్యల పేజీ గోడెల్ సంకేతీకరణను నేరుగా ధృవీకరిస్తుందని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T100']=['TE-P019లో ప్రత్యక్షంగా కనిపించే సత్యతావిలువకు బదులుగా ఈ సంచికలో స్థిరపడిన సత్యమూల్యం వాడుకను, TE-T033/095 అర్థపర గద్యంతో కలిపి కొనసాగించడం (ఎంపిక)','సత్యతావిలువ అనే స్థానిక సాక్ష్య రూపాన్ని సంచికలోని సమాన సందర్భాలకు ఒకేసారి మార్పు లేకుండా మాత్రమే ప్రతిష్ఠించడం (తిరస్కరణ; సందర్భానుసార సమీక్షకు తెరిచి ఉంది)','బహుమూల్య తర్కాన్ని తప్పనిసరిగా True విలువ కలిగిన వ్యవస్థగా చూపడం (తిరస్కరణ)','నిర్దేశిత విలువల కొత్త భావానికి స్థానిక ద్విమూల్య సత్య పట్టికనే ప్రత్యక్ష సాక్ష్యంగా ప్రకటించడం (తిరస్కరణ)','మూల కరణీయ సంఖ్యలను అకరణీయ సంఖ్యలుగా మార్చడం (తిరస్కరణ; TE-P006 భేదం ప్రత్యక్షంగా చూసాం)'];
+alternatives['TE-T101']=['స్థానసంఖ్యను n-స్థానిక సంయోజకంగా, మాత్రికను మూల నిర్వచించిన భాష–V–V^+–సత్యమూల్య ప్రమేయాల నిర్మాణంగా చదవడం (ఎంపిక)','మాత్రికను కేవలం సంఖ్యల దీర్ఘచతురస్ర పట్టికగా చదవడం (తిరస్కరణ)','గుణిత తర్కం, నిర్ణీతత్వ సంచాలకం పేర్లకు స్థానిక ద్విమూల్య తర్క పేజీలే నేరుగా సాక్ష్యమని ప్రకటించడం (తిరస్కరణ)','మూల n, 0, 1, 2 స్థానసంఖ్యలను వదిలేయడం (తిరస్కరణ)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -559,7 +571,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T100 record the Batch 025--Batch 058 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T101 record the Batch 025--Batch 059 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -604,6 +616,7 @@ const correctionQuestions={
  'OLTEINF-005':'Please double-check that the qualified note correctly explains the valid nested cardinality chain and that the two explicit target comparisons are mathematically equivalent without retaining the rejected source-error claim.',
  'OLTEINF-006':'Does the proof establish both inclusions needed for ran(g)=B, including the formerly missing ran(g)-subset-B direction?',
  'OLTEPLSYN-001':'Does the Telugu disclosure identify the malformed nested tag arms and make clear that only their brace/empty-arm closure was repaired?',
+ 'OLTEMVLSYN-001':'Does the final defTrue tag test close its empty false arm before the outer defined-symbol block closes, without changing the displayed connective list?',
  'OLTEPLSYN-002':'Does the material-conditional abbreviation read exactly as not A or B after removal of the source’s unmatched closing parenthesis?',
  'OLTEPLSYN-003':'Does the formation-sequence proof use syntactic identity, rather than semantic equivalence, for literal identity of symbol strings?',
  'OLTEPLSYN-004':'Does Local Determination unambiguously restrict agreement to variables occurring in the one fixed formula A?',

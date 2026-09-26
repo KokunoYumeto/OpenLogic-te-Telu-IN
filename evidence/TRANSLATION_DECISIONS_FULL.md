@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **385 of 722 source units drafted**. This readable view contains all 455 decisions and 875 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **388 of 722 source units drafted**. This readable view contains all 457 decisions and 885 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2944,6 +2944,40 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T100-OCC-008; OLP-0385; OLP-0385-B009; source upstream/content/many-valued-logic/syntax-and-semantics/introduction.tex:44-61 bytes 1993-3206 SHA-256 d53637e3cabd6f0a5973bfe4b7b6ec9adc7d4c8c3ca9aa68a5949b2f936ff14c; target translation/content/many-valued-logic/syntax-and-semantics/introduction.tex:53-81 bytes 4571-7464 SHA-256 3e2252da574fbf907153355329a6a7ddab683242ae4f1b4f687ca52d470a6d5e; reader page pending.
   - te-Telu-IN-TE-T100-OCC-009; OLP-0385; OLP-0385-B009; source upstream/content/many-valued-logic/syntax-and-semantics/introduction.tex:44-61 bytes 1993-3206 SHA-256 d53637e3cabd6f0a5973bfe4b7b6ec9adc7d4c8c3ca9aa68a5949b2f936ff14c; target translation/content/many-valued-logic/syntax-and-semantics/introduction.tex:53-81 bytes 4571-7464 SHA-256 3e2252da574fbf907153355329a6a7ddab683242ae4f1b4f687ca52d470a6d5e; reader page pending.
   - te-Telu-IN-TE-T100-OCC-010; OLP-0385; OLP-0385-B009; source upstream/content/many-valued-logic/syntax-and-semantics/introduction.tex:44-61 bytes 1993-3206 SHA-256 d53637e3cabd6f0a5973bfe4b7b6ec9adc7d4c8c3ca9aa68a5949b2f936ff14c; target translation/content/many-valued-logic/syntax-and-semantics/introduction.tex:53-81 bytes 4571-7464 SHA-256 3e2252da574fbf907153355329a6a7ddab683242ae4f1b4f687ca52d470a6d5e; reader page pending.
+
+## te-Telu-IN-TE-T101 — propositional language / connective / arity / n-place / constant / unary / binary / product logic / determinateness operator / matrix / truth function
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: ప్రతిజ్ఞావాక్య భాష / సంయోజకం / స్థానసంఖ్య / n-స్థానికం / స్థిరాంకం / ఏకస్థానికం / ద్విస్థానికం / గుణిత తర్కం / నిర్ణీతత్వ సంచాలకం / మాత్రిక / సత్యమూల్య ప్రమేయం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “propositional language / connective / arity / n-place / constant / unary / binary / product logic / determinateness operator / matrix / truth function” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: ప్రతిజ్ఞావాక్య తర్కం, సత్యతా పట్టిక, సమితి, ప్రమేయం రూపాలకు స్థానిక ఆధారం ఉంది. మాత్రిక, గుణిత తర్కం, నిర్ణీతత్వ సంచాలకం, స్థానసంఖ్య అనే ప్రత్యేక కూర్పులకు నామసాక్ష్యం పరిమితం; మూల నిర్వచనాలకు కట్టుబడిన తాత్కాలిక ఎంపికలు.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్యాత్మక తర్కం, సంయోజకాల పరిచయం; TE-P019–P020లో సంయోజకం, వియోజకం, సత్యతావిలువ, సత్య పట్టికలు; TE-P008లో సమితి/ఉపసమితి; TE-P011లో ప్రమేయం, దాని సంయుక్తం ప్రత్యక్షంగా కనిపించాయి. ఆ పేజీలు n-స్థానిక సంయోజకం, గుణిత తర్కం, నిర్ణీతత్వ సంచాలకం, లేదా బహుమూల్య తర్కపు మాత్రికను ప్రత్యక్షంగా నిర్వచించవు. OLP-0386–0388 స్థిర మూల నిర్వచనాలు, పూర్వ TE-T050 స్థానసంఖ్య, TE-T100 సత్యమూల్య ప్రమేయం ఎంపికలు ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి. మాత్రిక అనేది భాష, ఖాళీ కాని V, V^+ ఉపసమితి, ప్రతి సంయోజకానికి సత్యమూల్య ప్రమేయం గల నిర్మాణం; అది కేవలం సంఖ్యల దీర్ఘచతురస్ర పట్టిక కాదు. L, L_0, V, V^+, star, triangle, truth-value and connective macros, and arity numerals are protected source notation. మాత్రిక is an explicit technical loan rendered in Telugu script; ordinary explanatory prose remains Telugu.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P020 [checked_context_only], PDF page 79; printed page 72; Disjunction heading and truth-table discussion; Direct disjunction and truth-table register; compound operator labels remain definition-controlled.
+
+- Alternatives: స్థానసంఖ్యను n-స్థానిక సంయోజకంగా, మాత్రికను మూల నిర్వచించిన భాష–V–V^+–సత్యమూల్య ప్రమేయాల నిర్మాణంగా చదవడం [viable_alternative: ఎంపిక] | మాత్రికను కేవలం సంఖ్యల దీర్ఘచతురస్ర పట్టికగా చదవడం [viable_alternative: తిరస్కరణ] | గుణిత తర్కం, నిర్ణీతత్వ సంచాలకం పేర్లకు స్థానిక ద్విమూల్య తర్క పేజీలే నేరుగా సాక్ష్యమని ప్రకటించడం [viable_alternative: తిరస్కరణ] | మూల n, 0, 1, 2 స్థానసంఖ్యలను వదిలేయడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “ప్రతిజ్ఞావాక్య భాష / సంయోజకం / స్థానసంఖ్య / n-స్థానికం / స్థిరాంకం / ఏకస్థానికం / ద్విస్థానికం / గుణిత తర్కం / నిర్ణీతత్వ సంచాలకం / మాత్రిక / సత్యమూల్య ప్రమేయం” is idiomatic and technically standard for “propositional language / connective / arity / n-place / constant / unary / binary / product logic / determinateness operator / matrix / truth function” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T101-OCC-001; OLP-0386; OLP-0386-B005; source upstream/content/many-valued-logic/syntax-and-semantics/connectives.tex:11 bytes 189-227 SHA-256 5eab2399773774dcc0ad724bf710775b247fa781eddca68a814f39537880ff30; target translation/content/many-valued-logic/syntax-and-semantics/connectives.tex:11 bytes 189-246 SHA-256 901f4b2d7cbb652f95d334b4e58f8f9831261e351abe72bfb3cf460c1626c65f; reader page pending.
+  - te-Telu-IN-TE-T101-OCC-002; OLP-0386; OLP-0386-B008; source upstream/content/many-valued-logic/syntax-and-semantics/connectives.tex:46-53 bytes 1825-2201 SHA-256 5eab2399773774dcc0ad724bf710775b247fa781eddca68a814f39537880ff30; target translation/content/many-valued-logic/syntax-and-semantics/connectives.tex:51-58 bytes 3977-4779 SHA-256 901f4b2d7cbb652f95d334b4e58f8f9831261e351abe72bfb3cf460c1626c65f; reader page pending.
+  - te-Telu-IN-TE-T101-OCC-003; OLP-0386; OLP-0386-B008; source upstream/content/many-valued-logic/syntax-and-semantics/connectives.tex:46-53 bytes 1825-2201 SHA-256 5eab2399773774dcc0ad724bf710775b247fa781eddca68a814f39537880ff30; target translation/content/many-valued-logic/syntax-and-semantics/connectives.tex:51-58 bytes 3977-4779 SHA-256 901f4b2d7cbb652f95d334b4e58f8f9831261e351abe72bfb3cf460c1626c65f; reader page pending.
+  - te-Telu-IN-TE-T101-OCC-004; OLP-0386; OLP-0386-B009; source upstream/content/many-valued-logic/syntax-and-semantics/connectives.tex:55-68 bytes 2202-2776 SHA-256 5eab2399773774dcc0ad724bf710775b247fa781eddca68a814f39537880ff30; target translation/content/many-valued-logic/syntax-and-semantics/connectives.tex:60-73 bytes 4780-5951 SHA-256 901f4b2d7cbb652f95d334b4e58f8f9831261e351abe72bfb3cf460c1626c65f; reader page pending.
+  - te-Telu-IN-TE-T101-OCC-005; OLP-0386; OLP-0386-B009; source upstream/content/many-valued-logic/syntax-and-semantics/connectives.tex:55-68 bytes 2202-2776 SHA-256 5eab2399773774dcc0ad724bf710775b247fa781eddca68a814f39537880ff30; target translation/content/many-valued-logic/syntax-and-semantics/connectives.tex:60-73 bytes 4780-5951 SHA-256 901f4b2d7cbb652f95d334b4e58f8f9831261e351abe72bfb3cf460c1626c65f; reader page pending.
+  - te-Telu-IN-TE-T101-OCC-006; OLP-0387; OLP-0387-B006; source upstream/content/many-valued-logic/syntax-and-semantics/formulas.tex:13-30 bytes 221-989 SHA-256 9cf70dccee9df26bf72e5f2ca8460f15bc02da829229ad2f338f0778a1b8143c; target translation/content/many-valued-logic/syntax-and-semantics/formulas.tex:13-30 bytes 221-1741 SHA-256 60c468472724c4ca41237bad8211c97dd87308d3787d4130e03c7824d78ce6e2; reader page pending.
+  - te-Telu-IN-TE-T101-OCC-007; OLP-0388; OLP-0388-B005; source upstream/content/many-valued-logic/syntax-and-semantics/matrices.tex:11 bytes 186-207 SHA-256 b52a35007f90b9c696d8f3396d4ebbf625e24983bbbbb806fdffa6837bd0f9a1; target translation/content/many-valued-logic/syntax-and-semantics/matrices.tex:11 bytes 186-226 SHA-256 eb1082aec4aaa96a96a8a8276eac1eed17ee387b7729e9ad24964ce7f3ef5bf5; reader page pending.
+  - te-Telu-IN-TE-T101-OCC-008; OLP-0388; OLP-0388-B007; source upstream/content/many-valued-logic/syntax-and-semantics/matrices.tex:17-28 bytes 419-882 SHA-256 b52a35007f90b9c696d8f3396d4ebbf625e24983bbbbb806fdffa6837bd0f9a1; target translation/content/many-valued-logic/syntax-and-semantics/matrices.tex:18-29 bytes 725-1555 SHA-256 eb1082aec4aaa96a96a8a8276eac1eed17ee387b7729e9ad24964ce7f3ef5bf5; reader page pending.
+  - te-Telu-IN-TE-T101-OCC-009; OLP-0388; OLP-0388-B007; source upstream/content/many-valued-logic/syntax-and-semantics/matrices.tex:17-28 bytes 419-882 SHA-256 b52a35007f90b9c696d8f3396d4ebbf625e24983bbbbb806fdffa6837bd0f9a1; target translation/content/many-valued-logic/syntax-and-semantics/matrices.tex:18-29 bytes 725-1555 SHA-256 eb1082aec4aaa96a96a8a8276eac1eed17ee387b7729e9ad24964ce7f3ef5bf5; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -12253,3 +12287,29 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTELAMLDFLDR-001-OCC-001; OLP-0382; OLP-0382-B004; source upstream/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:9-10 bytes 175-267 SHA-256 ff6f9c3dbe4c11e42b9528b74afa11ecc68978c3c76211000b8e8f279ad1db07; target translation/content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex:10 bytes 200-732 SHA-256 ee7bf997c34abc008097479f8ac7c162c9995d603b27853c07ce85f1ba57ebe6; reader page pending.
+
+## te-Telu-IN-OLTEMVLSYN-001 — OLTEMVLSYN-001: confirmed malformed nested tag closure
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: లోపలి defTrue పరీక్షకు ఖాళీ అసత్య శాఖను జోడించి, తరువాత బయటి పరీక్షను ముగించాం; పక్కనే తెలుగు మూల సవరణ వివరణ ఉంది; సంకేతాల జాబితా మారలేదు.
+
+- Intended sense: Repair the audited confirmed malformed nested tag closure at connectives.tex lines 27-37, nested defined-symbol tag block, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLSYN-20260926:OLTEMVLSYN-001 [checked_supports], content/many-valued-logic/syntax-and-semantics/connectives.tex; connectives.tex lines 27-37, nested defined-symbol tag block; confirmed_malformed_nested_tag_closure; లోపలి defTrue పరీక్షకు ఖాళీ అసత్య శాఖను జోడించి, తరువాత బయటి పరీక్షను ముగించాం; పక్కనే తెలుగు మూల సవరణ వివరణ ఉంది; సంకేతాల జాబితా మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the final defTrue tag test close its empty false arm before the outer defined-symbol block closes, without changing the displayed connective list?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLSYN-001-OCC-001; OLP-0386; OLP-0386-B006; source upstream/content/many-valued-logic/syntax-and-semantics/connectives.tex:13-37 bytes 228-1454 SHA-256 5eab2399773774dcc0ad724bf710775b247fa781eddca68a814f39537880ff30; target translation/content/many-valued-logic/syntax-and-semantics/connectives.tex:40 bytes 2427-2575 SHA-256 901f4b2d7cbb652f95d334b4e58f8f9831261e351abe72bfb3cf460c1626c65f; reader page pending.
