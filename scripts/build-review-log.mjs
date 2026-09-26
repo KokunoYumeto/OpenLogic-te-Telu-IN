@@ -446,6 +446,18 @@ locations['TE-T099']=[
  L('content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex',28,30,33,36,'\\fn{toChurch}','\\fn{toChurch}'),
  L('content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex',32,43,38,52,'\\fn{fromChurch}','\\fn{fromChurch}')
 ];
+locations['TE-T100']=[
+ L('content/many-valued-logic/many-valued-logic.tex',7,7,7,7,'Many-valued Logic','బహుమూల్య తర్కం'),
+ L('content/many-valued-logic/many-valued-logic.tex',9,11,9,11,'propositional many-valued logics','ప్రతిజ్ఞావాక్యాత్మక బహుమూల్య తర్కాలపై'),
+ L('content/many-valued-logic/syntax-and-semantics/syntax-and-semantics.tex',8,8,8,8,'Syntax and Semantics','వాక్యనిర్మాణం, అర్థవిచారం'),
+ L('content/many-valued-logic/syntax-and-semantics/introduction.tex',11,11,11,11,'Introduction','పరిచయం'),
+ L('content/many-valued-logic/syntax-and-semantics/introduction.tex',14,23,14,28,'two truth values','రెండు సత్యమూల్యాలను'),
+ L('content/many-valued-logic/syntax-and-semantics/introduction.tex',25,32,30,39,'two-valued logic','ద్విమూల్య తర్కానికి'),
+ L('content/many-valued-logic/syntax-and-semantics/introduction.tex',34,42,41,51,'truth functions','సత్యమూల్య ప్రమేయాలు'),
+ L('content/many-valued-logic/syntax-and-semantics/introduction.tex',44,61,53,81,'rational numbers','కరణీయ సంఖ్యలను'),
+ L('content/many-valued-logic/syntax-and-semantics/introduction.tex',53,56,65,70,'designated values','నిర్దేశిత సత్యమూల్యాల'),
+ L('content/many-valued-logic/syntax-and-semantics/introduction.tex',57,61,72,81,'tautology','సర్వసత్యం')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -530,6 +542,7 @@ alternatives['TE-T096']=['TE-T064, TE-T079, TE-T094లోని ఆదిమ ప
 alternatives['TE-T097']=['పూర్వ క్రమగుణిత ప్రమేయం, స్థిరబిందువు, సంయోజకం, బీటా-తుల్యత, నియత రూపం వాడుకను మూల ట్యూరింగ్/చర్చ్ తగ్గింపుల భేదంతో కొనసాగించడం (ఎంపిక)','ఒకే సంఖ్యాప్రమేయాన్ని సూచించడం నుంచి పదాల బీటా-తుల్యతను తేల్చడం (తిరస్కరణ)','చర్చ్, ట్యూరింగ్ సంయోజకాల్లో ఏది ముందుకు తగ్గుతుందో కలపడం (తిరస్కరణ)','స్థానిక సాధారణ పేజీలు లాంబ్డా స్థిరబిందు సిద్ధాంతాన్ని నేరుగా బోధిస్తాయని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T098']=['TE-T065, TE-T078, TE-T079లోని సక్రమత, పాక్షిక పునరావృత్తి, నియత రూపం పదజాలాన్ని OLP-0380–0381 మూల నిర్వచనాలు, ప్రతిదృష్టాంతంతో కొనసాగించడం (ఎంపిక)','పాక్షిక ప్రమేయం నిర్వచితం కాని చోట తప్పనిసరిగా F(Gx)కు నియత రూపం ఉండదని ఊహించడం (తిరస్కరణ)','స్థానిక సాధారణ పేజీలు లాంబ్డా పాక్షికతను నేరుగా బోధిస్తాయని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T099']=['గోడెల్ అంకీకరణ–నియత రూపం–చర్చ్ సంఖ్యాంక మార్పిడిని మూల రూపురేఖల పరిమితిలో తెలుగులో వివరించడం (ఎంపిక)','మూల నిరూపణ రూపురేఖలను పూర్తి నిర్మాణాత్మక నిరూపణగా ప్రకటించడం (తిరస్కరణ)','గోడెల్ పేరు లేదా కోడ్ ప్రమేయాల గుర్తింపులను అనువదించి మూల అనుసంధానం పోగొట్టడం (తిరస్కరణ)','స్థానిక ప్రధాన సంఖ్యల పేజీ గోడెల్ సంకేతీకరణను నేరుగా ధృవీకరిస్తుందని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T100']=['TE-P019లో ప్రత్యక్షంగా కనిపించే సత్యతావిలువకు బదులుగా ఈ సంచికలో స్థిరపడిన సత్యమూల్యం వాడుకను, TE-T033/095 అర్థపర గద్యంతో కలిపి కొనసాగించడం (ఎంపిక)','సత్యతావిలువ అనే స్థానిక సాక్ష్య రూపాన్ని సంచికలోని సమాన సందర్భాలకు ఒకేసారి మార్పు లేకుండా మాత్రమే ప్రతిష్ఠించడం (తిరస్కరణ; సందర్భానుసార సమీక్షకు తెరిచి ఉంది)','బహుమూల్య తర్కాన్ని తప్పనిసరిగా True విలువ కలిగిన వ్యవస్థగా చూపడం (తిరస్కరణ)','నిర్దేశిత విలువల కొత్త భావానికి స్థానిక ద్విమూల్య సత్య పట్టికనే ప్రత్యక్ష సాక్ష్యంగా ప్రకటించడం (తిరస్కరణ)','మూల కరణీయ సంఖ్యలను అకరణీయ సంఖ్యలుగా మార్చడం (తిరస్కరణ; TE-P006 భేదం ప్రత్యక్షంగా చూసాం)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -546,7 +559,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T099 record the Batch 025--Batch 057 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T100 record the Batch 025--Batch 058 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
