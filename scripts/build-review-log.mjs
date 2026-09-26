@@ -613,6 +613,14 @@ locations['TE-T115']=[
  L('content/normal-modal-logic/frame-definability/definability.tex',135,140,185,194,'S4','S4'),
  L('content/normal-modal-logic/frame-definability/definability.tex',143,148,195,205,'entailment','అనుగమనం')
 ];
+locations['TE-T116']=[
+ L('content/normal-modal-logic/frame-definability/first-order-definability.tex',11,11,11,11,'First-order Definability','మొదటిస్థాయి నిర్వచనీయత'),
+ L('content/normal-modal-logic/frame-definability/first-order-definability.tex',25,29,28,36,'first-order definable','మొదటిస్థాయి'),
+ L('content/normal-modal-logic/frame-definability/first-order-definability.tex',38,43,46,53,'formula:','లొబ్ సూత్రం'),
+ L('content/normal-modal-logic/frame-definability/first-order-definability.tex',42,47,50,58,'well-founded','సుస్థాపిత'),
+ L('content/normal-modal-logic/frame-definability/first-order-definability.tex',68,68,86,86,'Compactness Theorem','సంహతత్వ సిద్ధాంతం'),
+ L('content/normal-modal-logic/frame-definability/first-order-definability.tex',76,78,95,99,'universality','సార్వత్రికత')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -714,6 +722,7 @@ alternatives['TE-T112']=['ముందరి అర్థపర అనుగమ�
 alternatives['TE-T113']=['చట్రాన్ని W,R జతగా, దానిపై ఆధారపడే నమూనాను W,R,V త్రయంగా వేరు చేసి, అన్ని కేటాయింపుల చెల్లుబాటును మూల నిర్వచనానికి కట్టడం (ఎంపిక)','ఒక నిర్ణీత Vలో సూత్రం సత్యమైతే చట్రంలో చెల్లుబాటవుతుందని పొరబడడం (తిరస్కరణ)','స్థానిక సంబంధ పేజీలే క్రిప్కె చట్ర నిర్వచనీయతకు ప్రత్యక్ష సాక్ష్యమని చెప్పడం (తిరస్కరణ)','స్వావర్తనానికి ఒకే నమూనా సరిపోతుందని సాధారణీకరించడం (తిరస్కరణ)'];
 alternatives['TE-T114']=['పూర్వ సంబంధ/ప్రమేయ పదజాలాన్ని కొనసాగించి, ప్రతి ప్రాప్యత ధర్మాన్ని పట్టికలోని ఖచ్చిత పరిమాణక నిర్వచనానికి కట్టడం (ఎంపిక)','బలహీన సంయుక్తను గ్రాఫు అనుసంధానత్వంతో సమానం చేయడం (తిరస్కరణ)','పాక్షిక ప్రమేయాత్మకాన్ని ప్రతి లోకానికి ఖచ్చితంగా ఒక ప్రాప్య లోకం ఉండడంగా పొరబడడం (తిరస్కరణ)','స్థానిక సంబంధ చిత్రాలే యూక్లిడియన్ లేదా వజ్ర ధర్మానికి ప్రత్యక్ష పేరు ఇస్తాయని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T115']=['చట్రాల వర్గాన్ని నిర్వచించే iff భావాన్ని రెండు దిశల నిరూపణతో కట్టి, నమూనాలో సత్యం వర్సెస్ చట్ర-చెల్లుబాటు, చట్ర సూచన వర్సెస్ లోక-అనుగమనం భేదాలను నిలపడం (ఎంపిక)','ఒక నిర్ణీత నమూనాలో B/T సత్యమైతే సంబంధ ధర్మం తప్పక వస్తుందని సాధారణీకరించడం (తిరస్కరణ)','S4/S5ను ఒక్క లోకంలో పథక అనుగమనం ద్వారా నిర్వచించడం (తిరస్కరణ)','స్థానిక ద్విమూల్య తర్క పేజీలే క్రిప్కె చట్ర అనురూపతకు ప్రత్యక్ష సాక్ష్యమని ప్రకటించడం (తిరస్కరణ)'];
+alternatives['TE-T116']=['మొదటిస్థాయి, ద్విస్థాన సంబంధం, వాక్యం అనే స్థానిక వాడుకను కొనసాగించి, సుస్థాపితత్వాన్ని మూల అనంత-శ్రేణి దిశతో, సంహతత్వాన్ని పూర్వ నిర్వచనంతో కట్టడం (ఎంపిక)','సుస్థాపితత్వం, దాని విలోమాన్ని ఒకే శ్రేణి దిశగా కలపడం (తిరస్కరణ)','సార్వత్రిక చట్రాలన్నిటిలో చెల్లుబాటును ఒక్క సార్వత్రిక చట్రంలో సత్యంగా కుదించడం (తిరస్కరణ)','స్థానిక పేజీలే లొబ్ లేదా సంహతత్వ ప్రత్యేక పేర్లను నేరుగా ధ్రువీకరిస్తాయని చెప్పడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -729,7 +738,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T115 record the Batch 025--Batch 074 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T116 record the Batch 025--Batch 075 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1037,6 +1046,7 @@ const correctionQuestions={
  ,'OLTENMLFRDACC-001':'Does the one-world countermodel explicitly take an empty accessibility relation before asserting non-reflexivity and vacuous Box p?'
  ,'OLTENMLFRDACC-002':'Does the two-world example explicitly exclude self-loops before calling the relation irreflexive, while preserving both cross-edges and equal atomic valuations?'
  ,'OLTENMLFRDDEF-001':'Is Box A asserted only at the chosen world w with no successors, with the added [w] disclosed and the D contradiction kept at that same world?'
+ ,'OLTENMLFRDFOL-001':'Is A_1 explicitly read as the true empty conjunction, and is the finite subset with no A_n covered by a one-element model, without altering the printed n≥2 chain?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

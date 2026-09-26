@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **423 of 722 source units drafted**. This readable view contains all 506 decisions and 1037 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **424 of 722 source units drafted**. This readable view contains all 508 decisions and 1044 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3444,6 +3444,37 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T115-OCC-004; OLP-0423; OLP-0423-B011; source upstream/content/normal-modal-logic/frame-definability/definability.tex:95-98 bytes 4623-4889 SHA-256 a107f2b5ce681ff056d243b0cd68955cdf997d66276ce17b74207164b1af6d8c; target translation/content/normal-modal-logic/frame-definability/definability.tex:132-138 bytes 8859-9511 SHA-256 252073d90a08d22082f5604db3c0c8ab44eb5c96e3c8263a7351d7676153034c; reader page pending.
   - te-Telu-IN-TE-T115-OCC-005; OLP-0423; OLP-0423-B016; source upstream/content/normal-modal-logic/frame-definability/definability.tex:128-140 bytes 5967-6774 SHA-256 a107f2b5ce681ff056d243b0cd68955cdf997d66276ce17b74207164b1af6d8c; target translation/content/normal-modal-logic/frame-definability/definability.tex:174-194 bytes 11491-13639 SHA-256 252073d90a08d22082f5604db3c0c8ab44eb5c96e3c8263a7351d7676153034c; reader page pending.
   - te-Telu-IN-TE-T115-OCC-006; OLP-0423; OLP-0423-B017; source upstream/content/normal-modal-logic/frame-definability/definability.tex:142-148 bytes 6775-7201 SHA-256 a107f2b5ce681ff056d243b0cd68955cdf997d66276ce17b74207164b1af6d8c; target translation/content/normal-modal-logic/frame-definability/definability.tex:196-205 bytes 13640-14580 SHA-256 252073d90a08d22082f5604db3c0c8ab44eb5c96e3c8263a7351d7676153034c; reader page pending.
+
+## te-Telu-IN-TE-T116 — first-order definable frame class / well-founded and converse well-founded / Löb W / Compactness Theorem / universal frames
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: మొదటిస్థాయి నిర్వచనీయ చట్రాల వర్గం / సుస్థాపిత మరియు విలోమంగా సుస్థాపిత / లొబ్ సూత్రం W / సంహతత్వ సిద్ధాంతం / సార్వత్రిక చట్రాలు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “first-order definable frame class / well-founded and converse well-founded / Löb W / Compactness Theorem / universal frames” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: మొదటిస్థాయి, సంబంధం, వాక్యం సాధారణ వాడుకకు ప్రత్యక్ష ఆధారం ఉంది; సుస్థాపితత్వం, విలోమ సుస్థాపితత్వం, లొబ్ మరియు సార్వత్రిక చట్రాల ప్రత్యేక తెలుగు పేర్లకు నామకరణ అనిశ్చితి ఎక్కువ. గణిత అర్థం పక్కనున్న నిర్వచనాలు, స్థిర మూల వాదానికి పరిమితం.
+
+- Rationale: TE-P010లో సంబంధం, TE-P024లో నియమ నిరూపణ, TE-P027లో విధేయతర్కం, TE-P028లో ద్విస్థాన సంబంధం, TE-P029లో మొదటిస్థాయి, TE-P030లో వ్యక్తి క్షేత్రం, TE-P031లో వాక్యం అనే వాడుకలను స్థానిక చిత్రాల్లో చూశాం. ఈ చిత్రాలు లొబ్ పథకం, సుస్థాపితత్వం, సంహతత్వం లేదా చట్ర సార్వత్రికతకు ప్రత్యక్ష ప్రత్యేక సాక్ష్యం కావు. OLP-0424లోని అనంత శ్రేణుల నిర్వచనం, సంహతత్వ ప్రతివాదం, మొదటిస్థాయి వాక్యం–చట్ర సభ్యత్వం iff షరతు, పూర్వ OLP మొదటిస్థాయి సంహతత్వ అధ్యాయం, TE-T041/044/113/115 నిర్ణయాలు ఆ అర్థాలను నియంత్రిస్తాయి. లొబ్ మూల నామధేయం; W, Q, R, Nat, Int, Γ మరియు చర సూచికలు రక్షిత గణిత సంకేతాలు. సంహతత్వం పూర్వ అనువాదంలో తీసుకున్న, స్థానిక పేజీల్లో ప్రత్యక్షంగా నిర్ధారించని ప్రత్యేక తర్కపదం.
+
+- Authorities checked: TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P028 [checked_context_only], PDF page 92; printed page 85; Unary predicates, binary relations and quantifier classification; Direct quantifier taxonomy and predicate/relation context. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage.
+
+- Alternatives: మొదటిస్థాయి, ద్విస్థాన సంబంధం, వాక్యం అనే స్థానిక వాడుకను కొనసాగించి, సుస్థాపితత్వాన్ని మూల అనంత-శ్రేణి దిశతో, సంహతత్వాన్ని పూర్వ నిర్వచనంతో కట్టడం [viable_alternative: ఎంపిక] | సుస్థాపితత్వం, దాని విలోమాన్ని ఒకే శ్రేణి దిశగా కలపడం [viable_alternative: తిరస్కరణ] | సార్వత్రిక చట్రాలన్నిటిలో చెల్లుబాటును ఒక్క సార్వత్రిక చట్రంలో సత్యంగా కుదించడం [viable_alternative: తిరస్కరణ] | స్థానిక పేజీలే లొబ్ లేదా సంహతత్వ ప్రత్యేక పేర్లను నేరుగా ధ్రువీకరిస్తాయని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “మొదటిస్థాయి నిర్వచనీయ చట్రాల వర్గం / సుస్థాపిత మరియు విలోమంగా సుస్థాపిత / లొబ్ సూత్రం W / సంహతత్వ సిద్ధాంతం / సార్వత్రిక చట్రాలు” is idiomatic and technically standard for “first-order definable frame class / well-founded and converse well-founded / Löb W / Compactness Theorem / universal frames” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T116-OCC-001; OLP-0424; OLP-0424-B005; source upstream/content/normal-modal-logic/frame-definability/first-order-definability.tex:11 bytes 203-240 SHA-256 9c5c15840f4ad33863a32492fc8e16e7d4ce9b530bce2501a86b3f9466742358; target translation/content/normal-modal-logic/frame-definability/first-order-definability.tex:11 bytes 203-280 SHA-256 7ee6579f4a8c230c741cf5797810b8cf86ddf188ca49de32b0a02409d94c756b; reader page pending.
+  - te-Telu-IN-TE-T116-OCC-002; OLP-0424; OLP-0424-B007; source upstream/content/normal-modal-logic/frame-definability/first-order-definability.tex:24-31 bytes 906-1270 SHA-256 9c5c15840f4ad33863a32492fc8e16e7d4ce9b530bce2501a86b3f9466742358; target translation/content/normal-modal-logic/frame-definability/first-order-definability.tex:27-37 bytes 1669-2460 SHA-256 7ee6579f4a8c230c741cf5797810b8cf86ddf188ca49de32b0a02409d94c756b; reader page pending.
+  - te-Telu-IN-TE-T116-OCC-003; OLP-0424; OLP-0424-B009; source upstream/content/normal-modal-logic/frame-definability/first-order-definability.tex:38-49 bytes 1536-2183 SHA-256 9c5c15840f4ad33863a32492fc8e16e7d4ce9b530bce2501a86b3f9466742358; target translation/content/normal-modal-logic/frame-definability/first-order-definability.tex:46-58 bytes 3177-4382 SHA-256 7ee6579f4a8c230c741cf5797810b8cf86ddf188ca49de32b0a02409d94c756b; reader page pending.
+  - te-Telu-IN-TE-T116-OCC-004; OLP-0424; OLP-0424-B009; source upstream/content/normal-modal-logic/frame-definability/first-order-definability.tex:38-49 bytes 1536-2183 SHA-256 9c5c15840f4ad33863a32492fc8e16e7d4ce9b530bce2501a86b3f9466742358; target translation/content/normal-modal-logic/frame-definability/first-order-definability.tex:46-58 bytes 3177-4382 SHA-256 7ee6579f4a8c230c741cf5797810b8cf86ddf188ca49de32b0a02409d94c756b; reader page pending.
+  - te-Telu-IN-TE-T116-OCC-005; OLP-0424; OLP-0424-B010; source upstream/content/normal-modal-logic/frame-definability/first-order-definability.tex:51-73 bytes 2184-3226 SHA-256 9c5c15840f4ad33863a32492fc8e16e7d4ce9b530bce2501a86b3f9466742358; target translation/content/normal-modal-logic/frame-definability/first-order-definability.tex:60-93 bytes 4383-7177 SHA-256 7ee6579f4a8c230c741cf5797810b8cf86ddf188ca49de32b0a02409d94c756b; reader page pending.
+  - te-Telu-IN-TE-T116-OCC-006; OLP-0424; OLP-0424-B011; source upstream/content/normal-modal-logic/frame-definability/first-order-definability.tex:75-85 bytes 3227-3879 SHA-256 9c5c15840f4ad33863a32492fc8e16e7d4ce9b530bce2501a86b3f9466742358; target translation/content/normal-modal-logic/frame-definability/first-order-definability.tex:95-108 bytes 7178-8837 SHA-256 7ee6579f4a8c230c741cf5797810b8cf86ddf188ca49de32b0a02409d94c756b; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -13690,3 +13721,29 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLFRDDEF-001-OCC-001; OLP-0423; OLP-0423-B010; source upstream/content/normal-modal-logic/frame-definability/definability.tex:36-93 bytes 1127-4622 SHA-256 a107f2b5ce681ff056d243b0cd68955cdf997d66276ce17b74207164b1af6d8c; target translation/content/normal-modal-logic/frame-definability/definability.tex:50 bytes 2788-2864 SHA-256 252073d90a08d22082f5604db3c0c8ab44eb5c96e3c8263a7351d7676153034c; reader page pending.
+
+## te-Telu-IN-OLTENMLFRDFOL-001 — OLTENMLFRDFOL-001: compactness chain index boundary implicit
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: A_1ను సత్యమైన శూన్య సంయోగంగా, A_n లేని పరిమిత ఉపసమితికి ఒక మూలక నమూనా సరిపోతుందని పక్కనే స్పష్టం చేశాం; ముద్రించిన శృంఖల యథాతథం.
+
+- Intended sense: Repair the audited compactness chain index boundary implicit at first-order-definability.tex lines 53-64, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLFRDFOL-20260927:OLTENMLFRDFOL-001 [checked_supports], content/normal-modal-logic/frame-definability/first-order-definability.tex; first-order-definability.tex lines 53-64; compactness_chain_index_boundary_implicit; A_1ను సత్యమైన శూన్య సంయోగంగా, A_n లేని పరిమిత ఉపసమితికి ఒక మూలక నమూనా సరిపోతుందని పక్కనే స్పష్టం చేశాం; ముద్రించిన శృంఖల యథాతథం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Is A_1 explicitly read as the true empty conjunction, and is the finite subset with no A_n covered by a one-element model, without altering the printed n≥2 chain?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLFRDFOL-001-OCC-001; OLP-0424; OLP-0424-B010; source upstream/content/normal-modal-logic/frame-definability/first-order-definability.tex:51-73 bytes 2184-3226 SHA-256 9c5c15840f4ad33863a32492fc8e16e7d4ce9b530bce2501a86b3f9466742358; target translation/content/normal-modal-logic/frame-definability/first-order-definability.tex:69 bytes 5052-5055 SHA-256 7ee6579f4a8c230c741cf5797810b8cf86ddf188ca49de32b0a02409d94c756b; reader page pending.

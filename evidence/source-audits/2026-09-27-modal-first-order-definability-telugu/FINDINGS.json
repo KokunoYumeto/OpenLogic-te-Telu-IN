@@ -1,0 +1,33 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTENMLFRDFOL-20260927",
+  "created_utc": "2026-09-26T23:21:55Z",
+  "status": "confirmed_index_boundary_clarification",
+  "scope": {
+    "chapter": "Normal Modal Logic — Frame Definability",
+    "unit_ids": ["OLP-0424"],
+    "finding_count": 1
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTENMLFRDFOL-001",
+      "unit_id": "OLP-0424",
+      "classification": "compactness_chain_index_boundary_implicit",
+      "source": {
+        "path": "content/normal-modal-logic/frame-definability/first-order-definability.tex",
+        "bytes": 3895,
+        "sha256": "9c5c15840f4ad33863a32492fc8e16e7d4ce9b530bce2501a86b3f9466742358",
+        "locator": "first-order-definability.tex lines 53-64"
+      },
+      "finding": "ముద్రించిన Q-శృంఖలలో n=1 వద్ద అంచు సంయోగం స్పష్టంగా నిర్వచించబడలేదు; Γ యొక్క పరిమిత ఉపసమితిలో A_n ఏదీ లేకపోయినా గరిష్ఠ k అనే వాక్యం నేరుగా వర్తించదు.",
+      "controlling_evidence": "సంహతత్వ వాదానికి n≥2 శృంఖలలే అనంత ముందడుగును బలవంతం చేస్తాయి. A_1ను సదా సత్యమైన ఖాళీ సంయోగంగా చదవడం, A_n లేని పరిమిత ఉపసమితికి ఒక-మూలక నమూనా తీసుకోవడం వాదాన్ని పూర్తి చేస్తాయి; ముద్రించిన n≥2 సూత్రం మారదు.",
+      "required_translation_handling": "లక్ష్యంలో ఈ రెండు అంచు సందర్భాలను పక్కనున్న ప్రకటిత గమనికలో స్పష్టం చేసి, మూల సూత్రాలు, Γ, చట్ర వాదం యథాతథంగా ఉంచాలి; స్థిర ఆంగ్ల మూలాన్ని మార్చకూడదు."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 423 of 722 draft units**. This log contains 115 terminology/sense decisions and 391 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 424 of 722 draft units**. This log contains 116 terminology/sense decisions and 392 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2767,6 +2767,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: నిర్వచక సూత్రం, పూర్తి అనురూపత, S4/S5 పేర్ల ప్రత్యేక తెలుగు వాడుకకు ఈ స్థానిక పేజీల్లో ప్రత్యక్ష ప్రమాణం లేదు. గణిత వాదం మూల నిరూపణ, పరిమిత నమూనా పరీక్షకు కట్టుబడి ఉంది; OLTENMLFRDDEF-001 దిద్దుబాటు స్థానిక సాక్ష్యంతో కాదు, లోక-సత్య నిర్వచనంతో సమర్థితం.
 
 - Please double-check: Please double-check whether “సూత్రం చట్రాల వర్గాన్ని నిర్వచిస్తుంది / పూర్తి చట్ర అనురూపత / లక్షణ పథకం / మోడల్ వ్యవస్థలు S4 మరియు S5 / చట్ర-చెల్లుబాటు సూచన వర్సెస్ నమూనా-లోక అనుగమనం” is idiomatic and technically standard for “formula defines a class of frames / full frame correspondence / characteristic schema / modal systems S4 and S5 / frame-validity implication versus model-world entailment” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T116 — first-order definable frame class / well-founded and converse well-founded / Löb W / Compactness Theorem / universal frames
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: మొదటిస్థాయి నిర్వచనీయ చట్రాల వర్గం / సుస్థాపిత మరియు విలోమంగా సుస్థాపిత / లొబ్ సూత్రం W / సంహతత్వ సిద్ధాంతం / సార్వత్రిక చట్రాలు
+
+- Exact implementation: OLP-0424; normal-modal-logic/frame-definability/first-order-definability; content/normal-modal-logic/frame-definability/first-order-definability.tex:11 ↔ translation/content/normal-modal-logic/frame-definability/first-order-definability.tex:11 (OLP-0424-B005); printed/PDF page pending; OLP-0424; normal-modal-logic/frame-definability/first-order-definability; content/normal-modal-logic/frame-definability/first-order-definability.tex:24-31 ↔ translation/content/normal-modal-logic/frame-definability/first-order-definability.tex:27-37 (OLP-0424-B007); printed/PDF page pending; OLP-0424; normal-modal-logic/frame-definability/first-order-definability; content/normal-modal-logic/frame-definability/first-order-definability.tex:38-49 ↔ translation/content/normal-modal-logic/frame-definability/first-order-definability.tex:46-58 (OLP-0424-B009); printed/PDF page pending; OLP-0424; normal-modal-logic/frame-definability/first-order-definability; content/normal-modal-logic/frame-definability/first-order-definability.tex:38-49 ↔ translation/content/normal-modal-logic/frame-definability/first-order-definability.tex:46-58 (OLP-0424-B009); printed/PDF page pending; OLP-0424; normal-modal-logic/frame-definability/first-order-definability; content/normal-modal-logic/frame-definability/first-order-definability.tex:51-73 ↔ translation/content/normal-modal-logic/frame-definability/first-order-definability.tex:60-93 (OLP-0424-B010); printed/PDF page pending; OLP-0424; normal-modal-logic/frame-definability/first-order-definability; content/normal-modal-logic/frame-definability/first-order-definability.tex:75-85 ↔ translation/content/normal-modal-logic/frame-definability/first-order-definability.tex:95-108 (OLP-0424-B011); printed/PDF page pending
+
+- Authorities actually checked: TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P028, PDF 92, printed 85, Unary predicates, binary relations and quantifier classification; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P010లో సంబంధం, TE-P024లో నియమ నిరూపణ, TE-P027లో విధేయతర్కం, TE-P028లో ద్విస్థాన సంబంధం, TE-P029లో మొదటిస్థాయి, TE-P030లో వ్యక్తి క్షేత్రం, TE-P031లో వాక్యం అనే వాడుకలను స్థానిక చిత్రాల్లో చూశాం. ఈ చిత్రాలు లొబ్ పథకం, సుస్థాపితత్వం, సంహతత్వం లేదా చట్ర సార్వత్రికతకు ప్రత్యక్ష ప్రత్యేక సాక్ష్యం కావు. OLP-0424లోని అనంత శ్రేణుల నిర్వచనం, సంహతత్వ ప్రతివాదం, మొదటిస్థాయి వాక్యం–చట్ర సభ్యత్వం iff షరతు, పూర్వ OLP మొదటిస్థాయి సంహతత్వ అధ్యాయం, TE-T041/044/113/115 నిర్ణయాలు ఆ అర్థాలను నియంత్రిస్తాయి. లొబ్ మూల నామధేయం; W, Q, R, Nat, Int, Γ మరియు చర సూచికలు రక్షిత గణిత సంకేతాలు. సంహతత్వం పూర్వ అనువాదంలో తీసుకున్న, స్థానిక పేజీల్లో ప్రత్యక్షంగా నిర్ధారించని ప్రత్యేక తర్కపదం.
+
+- Alternatives: మొదటిస్థాయి, ద్విస్థాన సంబంధం, వాక్యం అనే స్థానిక వాడుకను కొనసాగించి, సుస్థాపితత్వాన్ని మూల అనంత-శ్రేణి దిశతో, సంహతత్వాన్ని పూర్వ నిర్వచనంతో కట్టడం (ఎంపిక); సుస్థాపితత్వం, దాని విలోమాన్ని ఒకే శ్రేణి దిశగా కలపడం (తిరస్కరణ); సార్వత్రిక చట్రాలన్నిటిలో చెల్లుబాటును ఒక్క సార్వత్రిక చట్రంలో సత్యంగా కుదించడం (తిరస్కరణ); స్థానిక పేజీలే లొబ్ లేదా సంహతత్వ ప్రత్యేక పేర్లను నేరుగా ధ్రువీకరిస్తాయని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: మొదటిస్థాయి, సంబంధం, వాక్యం సాధారణ వాడుకకు ప్రత్యక్ష ఆధారం ఉంది; సుస్థాపితత్వం, విలోమ సుస్థాపితత్వం, లొబ్ మరియు సార్వత్రిక చట్రాల ప్రత్యేక తెలుగు పేర్లకు నామకరణ అనిశ్చితి ఎక్కువ. గణిత అర్థం పక్కనున్న నిర్వచనాలు, స్థిర మూల వాదానికి పరిమితం.
+
+- Please double-check: Please double-check whether “మొదటిస్థాయి నిర్వచనీయ చట్రాల వర్గం / సుస్థాపిత మరియు విలోమంగా సుస్థాపిత / లొబ్ సూత్రం W / సంహతత్వ సిద్ధాంతం / సార్వత్రిక చట్రాలు” is idiomatic and technically standard for “first-order definable frame class / well-founded and converse well-founded / Löb W / Compactness Theorem / universal frames” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -12151,3 +12175,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Is Box A asserted only at the chosen world w with no successors, with the added [w] disclosed and the D contradiction kept at that same world?
+
+## REV-OLTENMLFRDFOL-001 — OLTENMLFRDFOL-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: A_1ను సత్యమైన శూన్య సంయోగంగా, A_n లేని పరిమిత ఉపసమితికి ఒక మూలక నమూనా సరిపోతుందని పక్కనే స్పష్టం చేశాం; ముద్రించిన శృంఖల యథాతథం.
+
+- Exact implementation: OLP-0424; normal-modal-logic/frame-definability/first-order-definability; first-order-definability.tex lines 53-64 ↔ translation/content/normal-modal-logic/frame-definability/first-order-definability.tex:69 (OLP-0424-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLFRDFOL-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: A_1ను సత్యమైన శూన్య సంయోగంగా, A_n లేని పరిమిత ఉపసమితికి ఒక మూలక నమూనా సరిపోతుందని పక్కనే స్పష్టం చేశాం; ముద్రించిన శృంఖల యథాతథం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Is A_1 explicitly read as the true empty conjunction, and is the finite subset with no A_n covered by a one-element model, without altering the printed n≥2 chain?

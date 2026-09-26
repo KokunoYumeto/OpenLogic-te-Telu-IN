@@ -1,0 +1,15 @@
+{
+  "schema": "telugu-openlogic-batch075-finite-definability/1",
+  "status": "pass",
+  "source_unit": "OLP-0424",
+  "frames": 530,
+  "lob_correspondence": {
+    "transitive_converse_well_founded": 23,
+    "modal_validity": 23,
+    "valuation_world_cases": 12420
+  },
+  "equivalence_nonuniversal_frames": 5,
+  "finite_chain_models_checked": 5,
+  "scope": "All directed relations on one to three worlds, every p valuation and world for the Loeb W schema; finite strict-order witnesses for k=1 to 5.",
+  "limitation": "Finite acyclicity is converse well-foundedness only on finite frames. This test neither proves the unrestricted Loeb correspondence, first-order nondefinability by Compactness, nor modal indistinguishability of universal and equivalence frames."
+}
