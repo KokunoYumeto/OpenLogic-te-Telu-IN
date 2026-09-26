@@ -586,6 +586,14 @@ locations['TE-T112']=[
  L('content/normal-modal-logic/syntax-and-semantics/entailment.tex',45,48,53,57,'counterexample','ప్రతిదృష్టాంతం'),
  L('content/normal-modal-logic/syntax-and-semantics/entailment.tex',68,73,81,99,'counterexamples','ప్రతిదృష్టాంతాలు')
 ];
+locations['TE-T113']=[
+ L('content/normal-modal-logic/frame-definability/frame-definability.tex',8,8,8,8,'Frame Definability','చట్రాల నిర్వచనీయత'),
+ L('content/normal-modal-logic/frame-definability/introduction.tex',13,16,13,17,'accessibility relation','ప్రాప్యత సంబంధం'),
+ L('content/normal-modal-logic/frame-definability/introduction.tex',25,30,28,37,'non-reflexive','స్వావర్తనం కాని'),
+ L('content/normal-modal-logic/frame-definability/introduction.tex',44,48,58,64,'frames','చట్రాలు'),
+ L('content/normal-modal-logic/frame-definability/introduction.tex',49,53,64,72,'based on','ఆధారపడే'),
+ L('content/normal-modal-logic/frame-definability/introduction.tex',55,57,74,78,'correspondence','అనురూపతా')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -684,6 +692,7 @@ const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_unit
 alternatives['TE-T110']=['ముందరి సర్వసత్యం, ప్రతిస్థాపన నిదర్శనం పదాలను కలిపి, మోడల్-రహిత మూల సర్వసత్యం మరియు మోడల్ లక్ష్య సూత్రం మధ్య భేదాన్ని నిలపడం (ఎంపిక)','ప్రతి మోడల్ సూత్రానికీ సర్వసత్యం నేరుగా నిర్వచించబడిందని చెప్పడం (తిరస్కరణ)','సర్వసత్య ప్రతిస్థాపన నిదర్శనాన్ని సాధారణ మోడల్ చెల్లుబాటుతో సమానపరచడం (తిరస్కరణ)','స్థానిక ద్విమూల్య పేజీలే మోడల్ ఆగమన ఉపసిద్ధాంతాన్ని నిరూపిస్తాయని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T111']=['పథకం ప్రతిస్థాపన నిదర్శనాల సమితి, లక్షణ సూత్రం, నమూనాలో సత్యం, సర్వనమూనా చెల్లుబాటు భేదాలను మూల నిర్వచనాలకు కట్టుబడి ఉంచడం (ఎంపిక)','పథకాన్ని ఒకే సూత్రంగా పరిగణించడం (తిరస్కరణ)','ఒక నమూనాలో లక్షణ సూత్రం సత్యం అయితే దాని పథకం కూడా అక్కడ సత్యమని ఊహించడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలు K, Dual ప్రత్యేక పథకాలను నేరుగా నిరూపిస్తాయని ప్రకటించడం (తిరస్కరణ)'];
 alternatives['TE-T112']=['ముందరి అర్థపర అనుగమనం పదాన్ని కొనసాగించి, అన్ని నమూనాలు/లోకాల నిర్వచనం, ఒక లోక ప్రతిదృష్టాంతం, ఖాళీ ప్రాప్యతలో బాక్స్ సత్యం భేదాలను మూలానికి కట్టడం (ఎంపిక)','ప్రతి నమూనాలో ఒకే లోకం సరిపోతుందని అనుగమనాన్ని బలహీనపరచడం (తిరస్కరణ)','వాక్య ఫలితానికి స్థానిక ద్విమూల్య సత్య పట్టికయే క్రిప్కె అనుగమనాన్ని నేరుగా నిరూపిస్తుందని చెప్పడం (తిరస్కరణ)','ఖాళీ ప్రాప్యతలో బాక్స్ సత్యాన్ని బాక్స్ p అసత్యమని పొరబడడం (తిరస్కరణ)'];
+alternatives['TE-T113']=['చట్రాన్ని W,R జతగా, దానిపై ఆధారపడే నమూనాను W,R,V త్రయంగా వేరు చేసి, అన్ని కేటాయింపుల చెల్లుబాటును మూల నిర్వచనానికి కట్టడం (ఎంపిక)','ఒక నిర్ణీత Vలో సూత్రం సత్యమైతే చట్రంలో చెల్లుబాటవుతుందని పొరబడడం (తిరస్కరణ)','స్థానిక సంబంధ పేజీలే క్రిప్కె చట్ర నిర్వచనీయతకు ప్రత్యక్ష సాక్ష్యమని చెప్పడం (తిరస్కరణ)','స్వావర్తనానికి ఒకే నమూనా సరిపోతుందని సాధారణీకరించడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -699,7 +708,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T112 record the Batch 025--Batch 070 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T113 record the Batch 025--Batch 071 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1003,6 +1012,7 @@ const correctionQuestions={
  ,'OLTENMLSYN-003':'Is the world argument [w] restored only to the first missing non-satisfaction atom in the second box-diamond duality proof?'
  ,'OLTENMLENT-001':'Is the one-world countermodel an ordered W-prime/R-prime/V-prime triple rather than an unordered set, with the exact source repair disclosed?'
  ,'OLTENMLENT-002':'Is V-prime total on every propositional variable while preserving the stated p-only counterexample truth values and disclosing the completion?'
+ ,'OLTENMLFRDINT-001':'Is the fixed-valuation non-reflexive example explicitly restricted to A=p, without treating it as frame-validity for arbitrary A?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

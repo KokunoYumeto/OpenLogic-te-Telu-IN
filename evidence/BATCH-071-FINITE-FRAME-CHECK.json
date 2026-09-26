@@ -1,0 +1,23 @@
+{
+  "schema": "telugu-openlogic-batch071-finite-frame-check/1",
+  "status": "pass_bounded_not_a_proof",
+  "scope": "OLP-0420 frame reflexivity versus validity of Box p implies p",
+  "model_sizes": [
+    1,
+    2,
+    3
+  ],
+  "frames": 530,
+  "valuationCases": 4164,
+  "worldCases": 12420,
+  "correspondence": "For each enumerated frame: reflexive iff every valuation makes Box p implies p true at every world.",
+  "counterexample_to_fixed_model_converse": {
+    "n": 1,
+    "relation": 0,
+    "p_true_valuation": 1,
+    "p_false_valuation": 0,
+    "box_p_implies_p_when_p_true": true,
+    "box_p_implies_p_when_p_false": false
+  },
+  "limitation": "Finite enumeration supports source-aligned review but not unrestricted correspondence."
+}

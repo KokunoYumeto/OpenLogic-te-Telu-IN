@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 418 of 722 draft units**. This log contains 112 terminology/sense decisions and 387 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 420 of 722 draft units**. This log contains 113 terminology/sense decisions and 388 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2695,6 +2695,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: అర్థపర అనుగమనం ముందరి సంచిక స్థిర పదం; స్థానిక పేజీ ప్రత్యక్షంగా ప్రామాణిక ప్రతిజ్ఞావాక్య ఫలితాన్ని చూపుతుంది, మోడల్-లోక అర్థవిచారాన్ని కాదు. ప్రతిదృష్టాంతం, శూన్యసందర్భ బాక్స్ సత్యం మూల నియమాల ప్రకారం తాత్కాలిక ప్రత్యేక కూర్పులు. OLTENMLENT-001/002 గణిత సవరణలకు స్థానిక పదజాల పేజీలు ప్రమాణం కావు.
 
 - Please double-check: Please double-check whether “అన్ని నమూనాల, లోకాలలో అర్థపర అనుగమనం / ఒక లోకంలో ప్రతిదృష్టాంతం / ప్రాప్య లోకాలు లేనప్పుడు బాక్స్ శూన్యసందర్భ సత్యం” is idiomatic and technically standard for “modal semantic entailment across all models and worlds / countermodel at one world / vacuous box truth” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T113 — frame / frame definability / model based on a frame / frame validity / formula-frame correspondence / reflexive accessibility relation
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: చట్రం / చట్రాల నిర్వచనీయత / చట్రంపై ఆధారపడే నమూనా / చట్రంలో చెల్లుబాటు / సూత్ర–చట్ర అనురూపత / స్వావర్తన ప్రాప్యత సంబంధం
+
+- Exact implementation: OLP-0419; normal-modal-logic/frame-definability/frame-definability; content/normal-modal-logic/frame-definability/frame-definability.tex:8 ↔ translation/content/normal-modal-logic/frame-definability/frame-definability.tex:8 (OLP-0419-B004); printed/PDF page pending; OLP-0420; normal-modal-logic/frame-definability/introduction; content/normal-modal-logic/frame-definability/introduction.tex:13-23 ↔ translation/content/normal-modal-logic/frame-definability/introduction.tex:13-26 (OLP-0420-B006); printed/PDF page pending; OLP-0420; normal-modal-logic/frame-definability/introduction; content/normal-modal-logic/frame-definability/introduction.tex:25-31 ↔ translation/content/normal-modal-logic/frame-definability/introduction.tex:28-42 (OLP-0420-B007); printed/PDF page pending; OLP-0420; normal-modal-logic/frame-definability/introduction; content/normal-modal-logic/frame-definability/introduction.tex:44-53 ↔ translation/content/normal-modal-logic/frame-definability/introduction.tex:58-72 (OLP-0420-B009); printed/PDF page pending; OLP-0420; normal-modal-logic/frame-definability/introduction; content/normal-modal-logic/frame-definability/introduction.tex:44-53 ↔ translation/content/normal-modal-logic/frame-definability/introduction.tex:58-72 (OLP-0420-B009); printed/PDF page pending; OLP-0420; normal-modal-logic/frame-definability/introduction; content/normal-modal-logic/frame-definability/introduction.tex:55-57 ↔ translation/content/normal-modal-logic/frame-definability/introduction.tex:74-78 (OLP-0420-B010); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P021, PDF undefined, printed undefined, Conditional and biconditional headings and explanations; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P008లో సమితి/జత, TE-P010లో సంబంధం, TE-P019లో సత్యతావిలువ, TE-P021లో సోపాధికం, TE-P023లో ఫలితాన్ని ప్రత్యక్షంగా చూశాం. అవి సాధారణ రిజిస్టర్‌కే సాక్ష్యం. OLP-0420లో చట్రం W,R జతగా, నమూనా దానిపై ఆధారపడడంగా, చట్ర చెల్లుబాటు అన్ని ఆధారిత నమూనాల్లో సత్యంగా నిర్వచించబడుతుంది; స్వావర్తన–బాక్స్ అనురూపత అదే నిర్వచనాధీనం. TE-T053/062/108/109/111/112 స్థిర వాడుకను కొనసాగించాం. మోడల్ ముందరి సాంకేతిక అరువు; F, M, W, R, V, Box, p and source macro identities protected notation.
+
+- Alternatives: చట్రాన్ని W,R జతగా, దానిపై ఆధారపడే నమూనాను W,R,V త్రయంగా వేరు చేసి, అన్ని కేటాయింపుల చెల్లుబాటును మూల నిర్వచనానికి కట్టడం (ఎంపిక); ఒక నిర్ణీత Vలో సూత్రం సత్యమైతే చట్రంలో చెల్లుబాటవుతుందని పొరబడడం (తిరస్కరణ); స్థానిక సంబంధ పేజీలే క్రిప్కె చట్ర నిర్వచనీయతకు ప్రత్యక్ష సాక్ష్యమని చెప్పడం (తిరస్కరణ); స్వావర్తనానికి ఒకే నమూనా సరిపోతుందని సాధారణీకరించడం (తిరస్కరణ)
+
+- Uncertainty: చట్రం అనే క్రిప్కె frame ప్రత్యేక పేరుకూ, చట్ర నిర్వచనీయతకూ ఈ స్థానిక పేజీల్లో ప్రత్యక్ష సాక్ష్యం లేదు; మూల నిర్వచనాధారిత తాత్కాలిక ఎంపికలు. స్థానిక సంబంధ పేజీ స్వావర్తనాన్ని లేదా OLTENMLFRDINT-001 సవరణను నిరూపించదు.
+
+- Please double-check: Please double-check whether “చట్రం / చట్రాల నిర్వచనీయత / చట్రంపై ఆధారపడే నమూనా / చట్రంలో చెల్లుబాటు / సూత్ర–చట్ర అనురూపత / స్వావర్తన ప్రాప్యత సంబంధం” is idiomatic and technically standard for “frame / frame definability / model based on a frame / frame validity / formula-frame correspondence / reflexive accessibility relation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -11983,3 +12007,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Is V-prime total on every propositional variable while preserving the stated p-only counterexample truth values and disclosing the completion?
+
+## REV-OLTENMLFRDINT-001 — OLTENMLFRDINT-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: ఒక-లోక ప్రతిదృష్టాంతం !A=p సందర్భానికే ఆధారమని లక్ష్యంలో పేర్కొని, పక్కనే మూల సాధారణీకరణ పరిమితిని ప్రకటించాం.
+
+- Exact implementation: OLP-0420; normal-modal-logic/frame-definability/introduction; introduction.tex lines 24-31 ↔ translation/content/normal-modal-logic/frame-definability/introduction.tex:35 (OLP-0420-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLFRDINT-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: ఒక-లోక ప్రతిదృష్టాంతం !A=p సందర్భానికే ఆధారమని లక్ష్యంలో పేర్కొని, పక్కనే మూల సాధారణీకరణ పరిమితిని ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Is the fixed-valuation non-reflexive example explicitly restricted to A=p, without treating it as frame-validity for arbitrary A?

@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 418 of 722 draft units**. This view selects 440 of 499 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 420 of 722 draft units**. This view selects 441 of 501 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4403,3 +4403,13 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0418; normal-modal-logic/syntax-and-semantics/entailment; translation/content/normal-modal-logic/syntax-and-semantics/entailment.tex:89; printed/PDF page pending
 
 - Please double-check: Please double-check: Is V-prime total on every propositional variable while preserving the stated p-only counterexample truth values and disclosing the completion?
+
+## REV-OLTENMLFRDINT-001 — OLTENMLFRDINT-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఒక-లోక ప్రతిదృష్టాంతం !A=p సందర్భానికే ఆధారమని లక్ష్యంలో పేర్కొని, పక్కనే మూల సాధారణీకరణ పరిమితిని ప్రకటించాం.
+
+- Occurrences: OLP-0420; normal-modal-logic/frame-definability/introduction; translation/content/normal-modal-logic/frame-definability/introduction.tex:35; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the fixed-valuation non-reflexive example explicitly restricted to A=p, without treating it as frame-validity for arbitrary A?

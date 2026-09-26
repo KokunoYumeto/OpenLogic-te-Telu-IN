@@ -1,0 +1,33 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTENMLFRDINT-20260927",
+  "created_utc": "2026-09-26T22:29:09Z",
+  "status": "confirmed_against_one_world_countermodel_and_schema_definition",
+  "scope": {
+    "chapter": "Normal Modal Logic — Frame Definability",
+    "unit_ids": ["OLP-0420"],
+    "finding_count": 1
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTENMLFRDINT-001",
+      "unit_id": "OLP-0420",
+      "classification": "counterexample_p_valuation_stated_with_unqualified_A_metavariable",
+      "source": {
+        "path": "content/normal-modal-logic/frame-definability/introduction.tex",
+        "bytes": 2880,
+        "sha256": "a61229335a4a2f9fc6815e7e058fe5c6d7ff75c46f265f1e7cd609e4f83ce6ff",
+        "locator": "introduction.tex lines 24-31"
+      },
+      "finding": "The worked non-reflexive one-world model assigns p true, then describes making Box A implies A true by choosing p suitably without qualifying A. That assignment establishes the displayed instance only when A is p (or a suitable formula involving p); it does not make every arbitrary A work, such as a falsity constant in the empty-accessibility frame.",
+      "controlling_evidence": "The immediately preceding example is Box p implies p. The later frame-validity definition quantifies over all valuations and thereby blocks extrapolation from one assignment.",
+      "required_translation_handling": "Explicitly restrict this example to A=p and disclose the restriction adjacent to the sentence; retain the frozen English source and the later all-valuations argument."
+    }
+  ]
+}
