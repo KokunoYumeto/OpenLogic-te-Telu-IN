@@ -1,0 +1,47 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTEMVLSUB-20260926",
+  "created_utc": "2026-09-26T04:19:54Z",
+  "status": "confirmed_against_frozen_source_and_controlling_matrix_and_formula_definitions",
+  "scope": {
+    "chapter": "Many-valued Logic — Syntax and Semantics",
+    "unit_ids": ["OLP-0391"],
+    "finding_count": 2
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTEMVLSUB-001",
+      "unit_id": "OLP-0391",
+      "classification": "theorem_and_corollary_false_without_common_fragment_restriction",
+      "source": {
+        "path": "content/many-valued-logic/syntax-and-semantics/sublogics.tex",
+        "bytes": 4032,
+        "sha256": "1180052e6f39c499a3d55b43200ce6af0e92b3f2c5b55d416eaac29e96bb66a7",
+        "locator": "proposition lines 24-38, proof lines 40-68, corollary lines 70-77"
+      },
+      "finding": "The hypotheses constrain only negation, conjunction, disjunction and conditional on Boolean inputs. The proposition nevertheless claims valuation agreement for arbitrary formulas, and the corollary claims entailment inclusion and tautology transfer for every formula. Neither hypothesis constrains a falsity constant or any additional connective, and the proof's induction only treats variables and the four named connectives.",
+      "controlling_evidence": "OLP-0386 defines a language as an arbitrary set of connectives; OLP-0387 makes every zero-place connective an atomic formula; OLP-0388 allows each zero-place connective any value in V. For a concrete counterexample, take language L_0 and V={True,False}, interpret the four named connectives classically on Boolean inputs, set the value of lfalse to True, and let V+={True}. All printed proposition and corollary hypotheses hold, but A=lfalse has L-value True and classical value False, and is an L-tautology but not a classical tautology.",
+      "required_translation_handling": "Restrict the proposition, corollary, and their premise/conclusion formulas to the common fragment generated from propositional variables using only the four named connectives; exclude the unconstrained falsity constant and extra connectives. Preserve the source relation symbols with this explicit scope, and disclose the source counterexample adjacent to the proposition."
+    },
+    {
+      "finding_id": "OLTEMVLSUB-002",
+      "unit_id": "OLP-0391",
+      "classification": "typed_satisfaction_relation_replaced_for_valuation",
+      "source": {
+        "path": "content/many-valued-logic/syntax-and-semantics/sublogics.tex",
+        "bytes": 4032,
+        "sha256": "1180052e6f39c499a3d55b43200ce6af0e92b3f2c5b55d416eaac29e96bb66a7",
+        "locator": "corollary proof lines 79-88"
+      },
+      "finding": "The proof concludes with a valuation on the left of Entails and a set or formula on the right, although Entails is defined between a set of formulas and one formula. What follows from the displayed truth values is that the valuation satisfies Gamma and fails to satisfy B.",
+      "controlling_evidence": "OLP-0389 defines pSat{v}{Gamma}[L] and pSat/{v}{B}[L], and OLP-0390 defines Gamma Entails B by all Gamma-satisfying valuations also satisfying B.",
+      "required_translation_handling": "Replace the two mistyped valuation-Entails expressions by pSat{v}{Gamma}[L] and pSat/{v}{B}[L], retain the final Gamma non-entails B conclusion, and disclose this minimal typed-notation repair adjacent to the proof."
+    }
+  ]
+}

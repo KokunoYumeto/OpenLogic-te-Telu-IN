@@ -1,0 +1,75 @@
+% Part: many-valued-logic
+% Chapter: syntax-and-semantics
+% Section: semantic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{syn}{sem}
+
+\olsection{అర్థపర భావనలు}
+
+బహుమూల్య తర్కం~$\Log L$ ఒక మాత్రిక ద్వారా ఇవ్వబడిందనుకుందాం.
+అప్పుడు~$\Log L$కు సాధారణ అర్థపర భావనలను నిర్వచించవచ్చు.
+
+\begin{defn}
+\begin{enumerate}
+\item ఏదో~$\pAssign{v}$కు $\pSat{v}{!A}$ అయితే
+  \tetoken{ఒక సూత్రం}{!!^a{formula}}~$!A$ \emph{సంతృప్తిపరచదగినది};
+  ఏ $\pAssign{v}$కూ $\pSat{v}{!A}$ కాకపోతే అది
+  \emph{సంతృప్తిపరచలేనిది};
+\item అన్ని \tetoken{సత్యమూల్య కేటాయింపులు}{!!{valuation}s}~$v$కు
+  $\pSat{v}{!A}$ అయితే \tetoken{ఒక సూత్రం}{!!^a{formula}}~$!A$
+  ఒక \emph{సర్వసత్యం};
+\item $\Gamma$ ఒక \tetoken{సూత్రాల}{!!{formula}s} సమితి అయితే,
+  $\pSat{v}{\Gamma}$ అయ్యే ప్రతి
+  \tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}~$\pAssign{v}$కు
+  $\pSat{v}{!A}$ అయినప్పుడూ, అప్పుడు మాత్రమే
+  $\Gamma \Entails !A$ (``$\Gamma$ నుంచి $!A$ అనుగమిస్తుంది'').
+\item $\Gamma$ ఒక \tetoken{సూత్రాల}{!!{formula}s} సమితి అయితే,
+  ఏదో \tetoken{ఒక సత్యమూల్య కేటాయింపు}{!!a{valuation}}~$\pAssign{v}$కు
+  $\pSat{v}{\Gamma}$ అయినప్పుడు $\Gamma$
+  \emph{సంతృప్తిపరచదగినది}; లేకపోతే $\Gamma$
+  \emph{సంతృప్తిపరచలేనిది}.
+\end{enumerate}
+\end{defn}
+
+సాంప్రదాయిక తర్కంలోలాగే ఈ భావనలకూ కొన్ని లక్షణాలు ఉంటాయి:
+
+\begin{prop}
+\ollabel{prop:semanticalfacts}
+\begin{enumerate}
+\item $!A$ ఒక సర్వసత్యం అయినప్పుడూ, అప్పుడు మాత్రమే
+  $\emptyset \Entails !A$;
+\item $\Gamma$ సంతృప్తిపరచదగినదైతే, $\Gamma$ యొక్క
+  ప్రతి పరిమిత ఉపసమితి కూడా సంతృప్తిపరచదగినదే;
+\item\ollabel{def:monotonicity}%
+ఏకదిశత: $\Gamma \subseteq \Delta$,
+  $\Gamma \Entails !A$ అయితే $\Delta \Entails !A$ కూడా;
+\item\ollabel{def:Cut}%
+సంక్రమణశీలత: $\Gamma \Entails !A$,
+  $\Delta \cup \{ !A\} \Entails !B$ అయితే
+  $\Gamma \cup \Delta \Entails !B$;
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+సాధన.
+\end{proof}
+
+\begin{prob}
+\olref[mvl][syn][sem]{prop:semanticalfacts}ను నిరూపించండి.
+\end{prob}
+
+సాంప్రదాయిక తర్కంలో అనుగమనాన్ని సోపాధిక సంయోజకంతో
+అనుసంధానించవచ్చు. ఉదాహరణకు, \emph{మోడస్ పోనెన్స్}
+చెల్లుబాటవుతుంది: $\Gamma
+\Entails !A$, $\Gamma \Entails !A \lif !B$ అయితే
+$\Gamma \Entails !B$. $\Entails$, $\lif$ మధ్య మరో ముఖ్య
+సంబంధం అర్థపర నిగమన సిద్ధాంతం: $\Gamma \Entails !A
+\lif !B$ అయినప్పుడూ, అప్పుడు మాత్రమే $\Gamma \cup \{!A\} \Entails !B$.
+బహుమూల్య తర్కాల్లో ఈ ఫలితాలు \emph{ఎల్లప్పుడూ వర్తించవు}.
+వర్తిస్తాయో లేదో సత్యమూల్య ప్రమేయం~$\tf{\lif}$పై ఆధారపడి ఉంటుంది.
+
+\end{document}

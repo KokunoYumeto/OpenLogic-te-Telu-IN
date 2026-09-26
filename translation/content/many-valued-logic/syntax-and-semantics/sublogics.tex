@@ -1,0 +1,116 @@
+% Part: many-valued-logic
+% Chapter: syntax-and-semantics
+% Section: sublogics
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{syn}{sub}
+
+\olsection{బహుమూల్య తర్కాలు~$\LogCL$ యొక్క ఉపతర్కాలుగా}
+
+సాధారణ బహుమూల్య తర్కాల మాత్రికల్లో, $\{\True, \False\}$లోని
+ఆర్గుమెంట్లకు సత్యమూల్య ప్రమేయాల విలువలు సాంప్రదాయిక
+సత్యమూల్య ప్రమేయాల విలువలతో సరిపోతాయి. స్పష్టంగా, ఈ తర్కాల్లో
+$x \in \{\True, \False\}$ అయితే $\tf{\lnot}[\Log L](x) =
+\tf{\lnot}[\LogCL](x)$; అలాగే $\star$ అనేది $\land$, $\lor$,
+$\lif$లలో ఏదైనా, $x, y \in \{\True, \False\}$ అయితే
+$\tf{\star}[\Log L](x,y) = \tf{\star}[\LogCL](x,y)$.
+అంటే $\lnot$, $\land$, $\lor$, $\lif$లకు చెందిన
+సత్యమూల్య ప్రమేయాలను $\{\True,\False\}$కు పరిమితం చేస్తే
+అవి కచ్చితంగా సాంప్రదాయిక సత్యమూల్య ప్రమేయాలే.
+
+\begin{prop}\ollabel{prop:mvl-cl}
+  బహుమూల్య తర్కం~$\Log L$ భాషలో $\lnot$, $\land$, $\lor$,
+  $\lif$ సంయోజకాలు ఉండి, $\True, \False \in
+  V$ అని, దాని సత్యమూల్య ప్రమేయాలు కింది షరతులను
+  సంతృప్తిపరుస్తాయని అనుకుందాం:
+  \begin{enumerate}
+    \item\ollabel{prop:not} $\tf{\lnot}[\Log L](x) = \tf{\lnot}[\LogCL](x)$, $x =
+    \True$ లేదా $x = \False$ అయితే;
+    \item\ollabel{prop:land} $\tf{\land}[\Log L](x,y) = \tf{\land}[\LogCL](x,y)$,
+    \item\ollabel{prop:lor} $\tf{\lor}[\Log L](x,y) = \tf{\lor}[\LogCL](x,y)$,
+    \item\ollabel{prop:lif} $\tf{\lif}[\Log L](x,y) = \tf{\lif}[\LogCL](x,y)$,
+    $x, y \in \{\True, \False\}$ అయితే.
+  \end{enumerate}
+  అప్పుడు, ప్రతి ప్రతిజ్ఞావాక్య చరానికి $\pAssign
+  v(p) \in \{\True,\False\}$ అయ్యేలా~$V$లోకి విలువలు కేటాయించే
+  ఏ సత్యమూల్య కేటాయింపు~$\pAssign v$కైనా, ఈ నాలుగు
+  సంయోజకాలను మాత్రమే వాడి ప్రతిజ్ఞావాక్య చరాల నుంచి నిర్మించిన
+  ఏ సూత్రానికైనా, $\pValue v[\Log L](!A) = \pValue
+  v[\LogCL](!A)$.
+\end{prop}
+\sourcecorrection{OLTEMVLSUB-001}{ఆంగ్ల మూలం ఈ ఫలితాన్ని అన్ని
+సూత్రాలకూ చెబుతుంది; కానీ దాని పరికల్పనలు $\lfalse$ స్థిరాంకం
+విలువను గానీ, అదనపు సంయోజకాల విలువలను గానీ నియంత్రించవు.
+ఉదాహరణకు $\tf{\lfalse}[\Log L]=\True$ అయినా పేర్కొన్న
+నాలుగు సంయోజకాలు పరికల్పనలను తీర్చగలవు; అప్పుడు
+$!A=\lfalse$కు సమానత్వం విఫలం. అందుకే నిరూపణ నిజంగా
+ఆవరించే, చరాల నుంచి ఈ నాలుగు సంయోజకాలతో మాత్రమే
+నిర్మించిన సాధారణ భాగానికి ఫలితం, దిగువ అనుబంధ ఫలితాన్ని
+పరిమితం చేశాం.}
+
+\begin{proof}
+  $!A$పై ఆగమనం ద్వారా.
+  \begin{enumerate}
+  \item $!A \ident p$ పరమాణువైతే, $\pValue v[\Log L](!A) =
+  \pAssign v(p) = \pValue
+  v[\LogCL](!A)$.
+  \item $!A \ident \lnot B$ అయితే,
+  \begin{align*}
+    \pValue v[\Log L](!A) & = \tf{\lnot}[\Log L](\pValue v[\Log L](!B)) & &\text{\olref[val]{defn:pValue} ప్రకారం}\\
+    & = \tf{\lnot}[\Log L](\pValue v[\LogCL](!B)) && \text{ఆగమన పరికల్పన ప్రకారం}\\
+    & = \tf{\lnot}[\LogCL](\pValue v[\LogCL](!B))
+&&\text{\olref{prop:not} పరికల్పన ప్రకారం,}\\
+&&&\text{ఎందుకంటే $\pValue v[\LogCL](!B) \in \{\True, \False\}$,}\\
+& = \pValue v[\LogCL](!A) &&\text{\olref[val]{defn:pValue} ప్రకారం}.
+\end{align*}
+\item $!A \ident (!B \land !C)$ అయితే,
+\begin{align*}
+  \pValue v[\Log L](!A) & = \tf{\land}[\Log L](\pValue v[\Log L](!B), \pValue v[\Log L](!C)) & &\text{\olref[val]{defn:pValue} ప్రకారం}\\
+  & = \tf{\land}[\Log L](\pValue v[\LogCL](!B),\pValue v[\LogCL](!C)) && \text{ఆగమన పరికల్పన ప్రకారం}\\
+  & = \tf{\land}[\LogCL](\pValue v[\LogCL](!B),\pValue v[\LogCL](!C))
+&&\text{\olref{prop:land} పరికల్పన ప్రకారం,}\\
+&&&\text{ఎందుకంటే $\pValue v[\LogCL](!B),\pValue v[\LogCL](!C) \in \{\True, \False\}$,}\\
+& = \pValue v[\LogCL](!A) &&\text{\olref[val]{defn:pValue} ప్రకారం}.
+\end{align*}
+\end{enumerate}
+$!A \ident (!B \lor !C)$, $!A \ident (!B \lif !C)$ సందర్భాలు
+ఇలాంటివే.
+\end{proof}
+
+\begin{cor}
+  ఒక బహుమూల్య తర్కం \olref{prop:mvl-cl} షరతులను
+  సంతృప్తిపరచి, $\True \in V^+$, $\False \notin V^+$
+  అయితే, పై నాలుగు సంయోజకాలతో చరాల నుంచి నిర్మించిన
+  సాధారణ భాగానికి ${\Entails[\Log L]} \subseteq {\Entails[\LogCL]}$;
+  అంటే ఆ భాగంలోని పూర్వపక్ష సమితి, ముగింపు సూత్రానికి $\Gamma
+  \Entails[\Log L] !B$ అయితే $\Gamma \Entails[\LogCL] !B$.
+  ముఖ్యంగా, ఆ భాగంలో $\Log L$ యొక్క ప్రతి సర్వసత్యమూ
+  సాంప్రదాయిక సర్వసత్యమే.
+\end{cor}
+
+\begin{proof}
+  వ్యతిరేక-ప్రతిపాదనను నిరూపిస్తాం. $\Gamma \Entails/[\LogCL] !B$
+  అనుకుందాం. అప్పుడు ఏదో \tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}~$\pAssign v\colon \PVar \to
+  \{\True, \False\}$ ఉండి, అన్ని $!A \in \Gamma$లకు
+  $\pValue v[\LogCL](!A) = \True$, అలాగే
+  $\pValue v[\LogCL](!B) = \False$. $\True,
+  \False \in V$ కనుక \tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}~$\pAssign v$
+  తర్కం~$\Log L$కు కూడా \tetoken{ఒక సత్యమూల్య కేటాయింపు}{!!a{valuation}}.
+  \olref{prop:mvl-cl} ప్రకారం, అన్ని $!A \in \Gamma$లకు
+  $\pValue v[\Log L](!A) = \True$, ఇంకా
+  $\pValue v[\Log L](!B) = \False$.
+  $\True \in V^+$, $\False \notin V^+$ కనుక
+  $\pSat{v}{\Gamma}[\Log L]$, $\pSat/{v}{!B}[\Log L]$;
+  అంటే $\Gamma \Entails/[\Log L] !B$.
+\end{proof}
+\sourcecorrection{OLTEMVLSUB-002}{ఆంగ్ల మూలం చివరి దశలో
+సత్యమూల్య కేటాయింపు~$\pAssign v$ను సూత్రాల సమితికి
+అనుగమనం సంబంధపు ఎడమవైపున ఉంచింది. ఇక్కడ అవసరమైనది
+సంతృప్తి సంబంధం: అదే కేటాయింపు $\Gamma$ను సంతృప్తిపరచి,
+$!B$ను సంతృప్తిపరచదు. మూలంలోని రెండు అసంగత
+`\Entails` ప్రయోగాలను ముందే నిర్వచించిన `\pSat` రూపాలతో
+మార్చి పక్కనే ప్రకటించాం.}
+\end{document}
