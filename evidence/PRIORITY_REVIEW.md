@@ -1,6 +1,6 @@
 # Priority review
 
-This view contains 70 of 508 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
+This view contains 70 of 509 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
 
 Final reader pages remain pending; exact source and target file/line locators are shown.
 
@@ -70,7 +70,7 @@ Final reader pages remain pending; exact source and target file/line locators ar
 
 - Confidence / provisional: low / true
 
-- Occurrences: OLP-0015 translation/content/sets-functions-relations/relations/equivalence-relations.tex:16-21; OLP-0015 translation/content/sets-functions-relations/relations/equivalence-relations.tex:30-37; OLP-0016 translation/content/sets-functions-relations/relations/orders.tex:23-26; OLP-0016 translation/content/sets-functions-relations/relations/orders.tex:28-31; OLP-0016 translation/content/sets-functions-relations/relations/orders.tex:33-36; OLP-0016 translation/content/sets-functions-relations/relations/orders.tex:88-91
+- Occurrences: OLP-0015 translation/content/sets-functions-relations/relations/equivalence-relations.tex:16-21; OLP-0015 translation/content/sets-functions-relations/relations/equivalence-relations.tex:30-37; OLP-0016 translation/content/sets-functions-relations/relations/orders.tex:23-26; OLP-0016 translation/content/sets-functions-relations/relations/orders.tex:28-31; OLP-0016 translation/content/sets-functions-relations/relations/orders.tex:33-36; OLP-0016 translation/content/sets-functions-relations/relations/orders.tex:88-91; OLP-0425 translation/content/normal-modal-logic/frame-definability/equivalence-S5.tex:25-31; OLP-0425 translation/content/normal-modal-logic/frame-definability/equivalence-S5.tex:84-95
 
 - Review question: Please double-check whether “తాదాత్మ్య / తుల్యతా సంబంధం / తుల్యతా వర్గం / వర్గీకృత సమితి / పూర్వక్రమం / పాక్షిక క్రమం / రేఖీయ క్రమం / కఠిన క్రమం” is idiomatic and technically standard for “identity / equivalence relation / equivalence class / quotient / preorder / partial order / linear order / strict order” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 

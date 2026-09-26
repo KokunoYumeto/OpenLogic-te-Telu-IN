@@ -1,0 +1,15 @@
+{
+  "schema": "telugu-openlogic-batch076-equivalence-s5-finite/1",
+  "status": "pass",
+  "source_unit": "OLP-0425",
+  "frames": 530,
+  "equivalence_frames": 8,
+  "universal_frames": 3,
+  "nonuniversal_equivalence_frames": 5,
+  "condition_comparisons": 2120,
+  "partition_checks": 20,
+  "restriction_truth_cases": 18280,
+  "sample_formulas": 10,
+  "scope": "Every directed relation on one to three worlds for the four equivalence conditions; each equivalence class and all p/q valuations for ten sample modal formulas under class restriction.",
+  "limitation": "Finite enumeration and ten formulas do not prove the unrestricted S5 frame-validity equivalence or induction for every modal formula."
+}
