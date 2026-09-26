@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **422 of 722 source units drafted**. This readable view contains all 504 decisions and 1030 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **423 of 722 source units drafted**. This readable view contains all 506 decisions and 1037 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3413,6 +3413,37 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T114-OCC-004; OLP-0421; OLP-0421-B016; source upstream/content/normal-modal-logic/frame-definability/properties-accessibility.tex:125-143 bytes 4941-6165 SHA-256 eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622; target translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:146-169 bytes 9264-11933 SHA-256 af72eab91f6aaf09a616c58f17e4a1d0106d8761934140a8218f002d96e6a74b; reader page pending.
   - te-Telu-IN-TE-T114-OCC-005; OLP-0421; OLP-0421-B016; source upstream/content/normal-modal-logic/frame-definability/properties-accessibility.tex:125-143 bytes 4941-6165 SHA-256 eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622; target translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:146-169 bytes 9264-11933 SHA-256 af72eab91f6aaf09a616c58f17e4a1d0106d8761934140a8218f002d96e6a74b; reader page pending.
   - te-Telu-IN-TE-T114-OCC-006; OLP-0421; OLP-0421-B016; source upstream/content/normal-modal-logic/frame-definability/properties-accessibility.tex:125-143 bytes 4941-6165 SHA-256 eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622; target translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:146-169 bytes 9264-11933 SHA-256 af72eab91f6aaf09a616c58f17e4a1d0106d8761934140a8218f002d96e6a74b; reader page pending.
+
+## te-Telu-IN-TE-T115 — formula defines a class of frames / full frame correspondence / characteristic schema / modal systems S4 and S5 / frame-validity implication versus model-world entailment
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: సూత్రం చట్రాల వర్గాన్ని నిర్వచిస్తుంది / పూర్తి చట్ర అనురూపత / లక్షణ పథకం / మోడల్ వ్యవస్థలు S4 మరియు S5 / చట్ర-చెల్లుబాటు సూచన వర్సెస్ నమూనా-లోక అనుగమనం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “formula defines a class of frames / full frame correspondence / characteristic schema / modal systems S4 and S5 / frame-validity implication versus model-world entailment” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: నిర్వచక సూత్రం, పూర్తి అనురూపత, S4/S5 పేర్ల ప్రత్యేక తెలుగు వాడుకకు ఈ స్థానిక పేజీల్లో ప్రత్యక్ష ప్రమాణం లేదు. గణిత వాదం మూల నిరూపణ, పరిమిత నమూనా పరీక్షకు కట్టుబడి ఉంది; OLTENMLFRDDEF-001 దిద్దుబాటు స్థానిక సాక్ష్యంతో కాదు, లోక-సత్య నిర్వచనంతో సమర్థితం.
+
+- Rationale: TE-P008లో సమితి/వర్గానికి సంబంధించిన సాధారణ గద్యం, TE-P010లో ద్విస్థానిక సంబంధం, TE-P011లో ప్రమేయం, TE-P019లో సత్యతావిలువ, TE-P021లో సోపాధికం, TE-P023లో ఫలితం, TE-P024లో నియమ నిరూపణను స్థానిక చిత్రాల్లో చూశాం. ఈ చిత్రాలు ప్రత్యేక క్రిప్కె చట్ర అనురూపతను నిరూపించవు. OLP-0422 చట్ర చెల్లుబాటు నిర్వచనం, OLP-0423లోని అన్ని-మరియు-మాత్రమే నిర్వచనం, D/T/B/4/5 ప్రతివాద మూల్యనిర్ణయాలు, పూర్వ TE-T111/113/114 వాడుక ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి. S4, S5, D, T, B, 4, 5 మూల వ్యవస్థ/పథక గుర్తింపులు; మోడల్ పూర్వ సాంకేతిక అరువు; ఫార్మల్ మాక్రోలు, చరాలు రక్షిత సంకేతాలు.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P021 [checked_context_only], PDF page undefined; printed page not stated; Conditional and biconditional headings and explanations; Direct conditional and biconditional terminology. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: చట్రాల వర్గాన్ని నిర్వచించే iff భావాన్ని రెండు దిశల నిరూపణతో కట్టి, నమూనాలో సత్యం వర్సెస్ చట్ర-చెల్లుబాటు, చట్ర సూచన వర్సెస్ లోక-అనుగమనం భేదాలను నిలపడం [viable_alternative: ఎంపిక] | ఒక నిర్ణీత నమూనాలో B/T సత్యమైతే సంబంధ ధర్మం తప్పక వస్తుందని సాధారణీకరించడం [viable_alternative: తిరస్కరణ] | S4/S5ను ఒక్క లోకంలో పథక అనుగమనం ద్వారా నిర్వచించడం [viable_alternative: తిరస్కరణ] | స్థానిక ద్విమూల్య తర్క పేజీలే క్రిప్కె చట్ర అనురూపతకు ప్రత్యక్ష సాక్ష్యమని ప్రకటించడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “సూత్రం చట్రాల వర్గాన్ని నిర్వచిస్తుంది / పూర్తి చట్ర అనురూపత / లక్షణ పథకం / మోడల్ వ్యవస్థలు S4 మరియు S5 / చట్ర-చెల్లుబాటు సూచన వర్సెస్ నమూనా-లోక అనుగమనం” is idiomatic and technically standard for “formula defines a class of frames / full frame correspondence / characteristic schema / modal systems S4 and S5 / frame-validity implication versus model-world entailment” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T115-OCC-001; OLP-0423; OLP-0423-B005; source upstream/content/normal-modal-logic/frame-definability/definability.tex:11 bytes 189-220 SHA-256 a107f2b5ce681ff056d243b0cd68955cdf997d66276ce17b74207164b1af6d8c; target translation/content/normal-modal-logic/frame-definability/definability.tex:11 bytes 189-251 SHA-256 252073d90a08d22082f5604db3c0c8ab44eb5c96e3c8263a7351d7676153034c; reader page pending.
+  - te-Telu-IN-TE-T115-OCC-002; OLP-0423; OLP-0423-B007; source upstream/content/normal-modal-logic/frame-definability/definability.tex:21-25 bytes 661-851 SHA-256 a107f2b5ce681ff056d243b0cd68955cdf997d66276ce17b74207164b1af6d8c; target translation/content/normal-modal-logic/frame-definability/definability.tex:22-28 bytes 1171-1588 SHA-256 252073d90a08d22082f5604db3c0c8ab44eb5c96e3c8263a7351d7676153034c; reader page pending.
+  - te-Telu-IN-TE-T115-OCC-003; OLP-0423; OLP-0423-B009; source upstream/content/normal-modal-logic/frame-definability/definability.tex:30-34 bytes 923-1126 SHA-256 a107f2b5ce681ff056d243b0cd68955cdf997d66276ce17b74207164b1af6d8c; target translation/content/normal-modal-logic/frame-definability/definability.tex:33-37 bytes 1778-2110 SHA-256 252073d90a08d22082f5604db3c0c8ab44eb5c96e3c8263a7351d7676153034c; reader page pending.
+  - te-Telu-IN-TE-T115-OCC-004; OLP-0423; OLP-0423-B011; source upstream/content/normal-modal-logic/frame-definability/definability.tex:95-98 bytes 4623-4889 SHA-256 a107f2b5ce681ff056d243b0cd68955cdf997d66276ce17b74207164b1af6d8c; target translation/content/normal-modal-logic/frame-definability/definability.tex:132-138 bytes 8859-9511 SHA-256 252073d90a08d22082f5604db3c0c8ab44eb5c96e3c8263a7351d7676153034c; reader page pending.
+  - te-Telu-IN-TE-T115-OCC-005; OLP-0423; OLP-0423-B016; source upstream/content/normal-modal-logic/frame-definability/definability.tex:128-140 bytes 5967-6774 SHA-256 a107f2b5ce681ff056d243b0cd68955cdf997d66276ce17b74207164b1af6d8c; target translation/content/normal-modal-logic/frame-definability/definability.tex:174-194 bytes 11491-13639 SHA-256 252073d90a08d22082f5604db3c0c8ab44eb5c96e3c8263a7351d7676153034c; reader page pending.
+  - te-Telu-IN-TE-T115-OCC-006; OLP-0423; OLP-0423-B017; source upstream/content/normal-modal-logic/frame-definability/definability.tex:142-148 bytes 6775-7201 SHA-256 a107f2b5ce681ff056d243b0cd68955cdf997d66276ce17b74207164b1af6d8c; target translation/content/normal-modal-logic/frame-definability/definability.tex:196-205 bytes 13640-14580 SHA-256 252073d90a08d22082f5604db3c0c8ab44eb5c96e3c8263a7351d7676153034c; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -13633,3 +13664,29 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLFRDACC-002-OCC-001; OLP-0421; OLP-0421-B014; source upstream/content/normal-modal-logic/frame-definability/properties-accessibility.tex:104-119 bytes 4109-4854 SHA-256 eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622; target translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:123 bytes 7656-7715 SHA-256 af72eab91f6aaf09a616c58f17e4a1d0106d8761934140a8218f002d96e6a74b; reader page pending.
+
+## te-Telu-IN-OLTENMLFRDDEF-001 — OLTENMLFRDDEF-001: seriality proof box satisfaction missing world argument
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: D నిరూపణలో ప్రాప్య లోకాలేని w వద్ద బాక్స్ సత్యాన్ని [w]తో చూపి పక్కనే మూల లోక సూచీ లోటును ప్రకటించాం.
+
+- Intended sense: Repair the audited seriality proof box satisfaction missing world argument at definability.tex lines 38-45, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLFRDDEF-20260927:OLTENMLFRDDEF-001 [checked_supports], content/normal-modal-logic/frame-definability/definability.tex; definability.tex lines 38-45; seriality_proof_box_satisfaction_missing_world_argument; D నిరూపణలో ప్రాప్య లోకాలేని w వద్ద బాక్స్ సత్యాన్ని [w]తో చూపి పక్కనే మూల లోక సూచీ లోటును ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Is Box A asserted only at the chosen world w with no successors, with the added [w] disclosed and the D contradiction kept at that same world?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLFRDDEF-001-OCC-001; OLP-0423; OLP-0423-B010; source upstream/content/normal-modal-logic/frame-definability/definability.tex:36-93 bytes 1127-4622 SHA-256 a107f2b5ce681ff056d243b0cd68955cdf997d66276ce17b74207164b1af6d8c; target translation/content/normal-modal-logic/frame-definability/definability.tex:50 bytes 2788-2864 SHA-256 252073d90a08d22082f5604db3c0c8ab44eb5c96e3c8263a7351d7676153034c; reader page pending.

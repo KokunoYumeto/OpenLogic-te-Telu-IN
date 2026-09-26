@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 422 of 722 draft units**. This log contains 114 terminology/sense decisions and 390 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 423 of 722 draft units**. This log contains 115 terminology/sense decisions and 391 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2743,6 +2743,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: యూక్లిడియన్, బలహీన సాంద్ర, బలహీన సంయుక్త, బలహీన సహగమ్య, వజ్ర ధర్మం, సంగమం పేర్లు మూల నిర్వచనాధీన తాత్కాలిక ఎంపికలు; స్థానిక సాక్ష్యాలు ఈ modal correspondence వాదాలను లేదా OLTENMLFRDACC-001/002 సవరణలను నిరూపించవు.
 
 - Please double-check: Please double-check whether “సీరియల్ / స్వావర్తన / సౌష్ఠవ / సంక్రామక / యూక్లిడియన్ ప్రాప్యత; పాక్షిక ప్రమేయాత్మక / ప్రమేయాత్మక / బలహీన సాంద్ర / బలహీన సంయుక్త / బలహీన సహగమ్య; వజ్ర ధర్మం / సంగమం” is idiomatic and technically standard for “serial / reflexive / symmetric / transitive / euclidean accessibility; partially functional / functional / weakly dense / weakly connected / weakly directed; diamond property / confluence” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T115 — formula defines a class of frames / full frame correspondence / characteristic schema / modal systems S4 and S5 / frame-validity implication versus model-world entailment
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: సూత్రం చట్రాల వర్గాన్ని నిర్వచిస్తుంది / పూర్తి చట్ర అనురూపత / లక్షణ పథకం / మోడల్ వ్యవస్థలు S4 మరియు S5 / చట్ర-చెల్లుబాటు సూచన వర్సెస్ నమూనా-లోక అనుగమనం
+
+- Exact implementation: OLP-0423; normal-modal-logic/frame-definability/definability; content/normal-modal-logic/frame-definability/definability.tex:11 ↔ translation/content/normal-modal-logic/frame-definability/definability.tex:11 (OLP-0423-B005); printed/PDF page pending; OLP-0423; normal-modal-logic/frame-definability/definability; content/normal-modal-logic/frame-definability/definability.tex:21-25 ↔ translation/content/normal-modal-logic/frame-definability/definability.tex:22-28 (OLP-0423-B007); printed/PDF page pending; OLP-0423; normal-modal-logic/frame-definability/definability; content/normal-modal-logic/frame-definability/definability.tex:30-34 ↔ translation/content/normal-modal-logic/frame-definability/definability.tex:33-37 (OLP-0423-B009); printed/PDF page pending; OLP-0423; normal-modal-logic/frame-definability/definability; content/normal-modal-logic/frame-definability/definability.tex:95-98 ↔ translation/content/normal-modal-logic/frame-definability/definability.tex:132-138 (OLP-0423-B011); printed/PDF page pending; OLP-0423; normal-modal-logic/frame-definability/definability; content/normal-modal-logic/frame-definability/definability.tex:128-140 ↔ translation/content/normal-modal-logic/frame-definability/definability.tex:174-194 (OLP-0423-B016); printed/PDF page pending; OLP-0423; normal-modal-logic/frame-definability/definability; content/normal-modal-logic/frame-definability/definability.tex:142-148 ↔ translation/content/normal-modal-logic/frame-definability/definability.tex:196-205 (OLP-0423-B017); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P021, PDF undefined, printed undefined, Conditional and biconditional headings and explanations; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P008లో సమితి/వర్గానికి సంబంధించిన సాధారణ గద్యం, TE-P010లో ద్విస్థానిక సంబంధం, TE-P011లో ప్రమేయం, TE-P019లో సత్యతావిలువ, TE-P021లో సోపాధికం, TE-P023లో ఫలితం, TE-P024లో నియమ నిరూపణను స్థానిక చిత్రాల్లో చూశాం. ఈ చిత్రాలు ప్రత్యేక క్రిప్కె చట్ర అనురూపతను నిరూపించవు. OLP-0422 చట్ర చెల్లుబాటు నిర్వచనం, OLP-0423లోని అన్ని-మరియు-మాత్రమే నిర్వచనం, D/T/B/4/5 ప్రతివాద మూల్యనిర్ణయాలు, పూర్వ TE-T111/113/114 వాడుక ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి. S4, S5, D, T, B, 4, 5 మూల వ్యవస్థ/పథక గుర్తింపులు; మోడల్ పూర్వ సాంకేతిక అరువు; ఫార్మల్ మాక్రోలు, చరాలు రక్షిత సంకేతాలు.
+
+- Alternatives: చట్రాల వర్గాన్ని నిర్వచించే iff భావాన్ని రెండు దిశల నిరూపణతో కట్టి, నమూనాలో సత్యం వర్సెస్ చట్ర-చెల్లుబాటు, చట్ర సూచన వర్సెస్ లోక-అనుగమనం భేదాలను నిలపడం (ఎంపిక); ఒక నిర్ణీత నమూనాలో B/T సత్యమైతే సంబంధ ధర్మం తప్పక వస్తుందని సాధారణీకరించడం (తిరస్కరణ); S4/S5ను ఒక్క లోకంలో పథక అనుగమనం ద్వారా నిర్వచించడం (తిరస్కరణ); స్థానిక ద్విమూల్య తర్క పేజీలే క్రిప్కె చట్ర అనురూపతకు ప్రత్యక్ష సాక్ష్యమని ప్రకటించడం (తిరస్కరణ)
+
+- Uncertainty: నిర్వచక సూత్రం, పూర్తి అనురూపత, S4/S5 పేర్ల ప్రత్యేక తెలుగు వాడుకకు ఈ స్థానిక పేజీల్లో ప్రత్యక్ష ప్రమాణం లేదు. గణిత వాదం మూల నిరూపణ, పరిమిత నమూనా పరీక్షకు కట్టుబడి ఉంది; OLTENMLFRDDEF-001 దిద్దుబాటు స్థానిక సాక్ష్యంతో కాదు, లోక-సత్య నిర్వచనంతో సమర్థితం.
+
+- Please double-check: Please double-check whether “సూత్రం చట్రాల వర్గాన్ని నిర్వచిస్తుంది / పూర్తి చట్ర అనురూపత / లక్షణ పథకం / మోడల్ వ్యవస్థలు S4 మరియు S5 / చట్ర-చెల్లుబాటు సూచన వర్సెస్ నమూనా-లోక అనుగమనం” is idiomatic and technically standard for “formula defines a class of frames / full frame correspondence / characteristic schema / modal systems S4 and S5 / frame-validity implication versus model-world entailment” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -12103,3 +12127,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Does the two-world example explicitly exclude self-loops before calling the relation irreflexive, while preserving both cross-edges and equal atomic valuations?
+
+## REV-OLTENMLFRDDEF-001 — OLTENMLFRDDEF-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: D నిరూపణలో ప్రాప్య లోకాలేని w వద్ద బాక్స్ సత్యాన్ని [w]తో చూపి పక్కనే మూల లోక సూచీ లోటును ప్రకటించాం.
+
+- Exact implementation: OLP-0423; normal-modal-logic/frame-definability/definability; definability.tex lines 38-45 ↔ translation/content/normal-modal-logic/frame-definability/definability.tex:50 (OLP-0423-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLFRDDEF-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: D నిరూపణలో ప్రాప్య లోకాలేని w వద్ద బాక్స్ సత్యాన్ని [w]తో చూపి పక్కనే మూల లోక సూచీ లోటును ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Is Box A asserted only at the chosen world w with no successors, with the added [w] disclosed and the D contradiction kept at that same world?

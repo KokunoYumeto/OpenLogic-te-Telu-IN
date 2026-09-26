@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 422 of 722 draft units**. This view selects 443 of 504 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 423 of 722 draft units**. This view selects 444 of 506 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4433,3 +4433,13 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0421; normal-modal-logic/frame-definability/properties-accessibility; translation/content/normal-modal-logic/frame-definability/properties-accessibility.tex:123; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the two-world example explicitly exclude self-loops before calling the relation irreflexive, while preserving both cross-edges and equal atomic valuations?
+
+## REV-OLTENMLFRDDEF-001 — OLTENMLFRDDEF-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: D నిరూపణలో ప్రాప్య లోకాలేని w వద్ద బాక్స్ సత్యాన్ని [w]తో చూపి పక్కనే మూల లోక సూచీ లోటును ప్రకటించాం.
+
+- Occurrences: OLP-0423; normal-modal-logic/frame-definability/definability; translation/content/normal-modal-logic/frame-definability/definability.tex:50; printed/PDF page pending
+
+- Please double-check: Please double-check: Is Box A asserted only at the chosen world w with no successors, with the added [w] disclosed and the D contradiction kept at that same world?

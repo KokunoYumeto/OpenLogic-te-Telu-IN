@@ -1,0 +1,42 @@
+{
+  "schema": "telugu-openlogic-batch074-finite-frame-correspondence/1",
+  "status": "pass",
+  "source_unit": "OLP-0423",
+  "frames": 530,
+  "scope": "All directed relations on nonempty domains of one, two and three worlds; all valuations of p, all worlds, five characteristic schemas; five relation-property implications.",
+  "limitation": "Finite testing of p does not prove unrestricted all-frame correspondence or every substitution instance, nor replace the source proof.",
+  "correspondences": {
+    "4": {
+      "property_frames": 186,
+      "validity_frames": 186,
+      "checked_valuation_world_cases": 12420
+    },
+    "5": {
+      "property_frames": 48,
+      "validity_frames": 48,
+      "checked_valuation_world_cases": 12420
+    },
+    "D": {
+      "property_frames": 353,
+      "validity_frames": 353,
+      "checked_valuation_world_cases": 12420
+    },
+    "T": {
+      "property_frames": 69,
+      "validity_frames": 69,
+      "checked_valuation_world_cases": 12420
+    },
+    "B": {
+      "property_frames": 74,
+      "validity_frames": 74,
+      "checked_valuation_world_cases": 12420
+    }
+  },
+  "relation_facts": {
+    "reflexive_serial": 530,
+    "symmetric_transitive_iff_euclidean": 530,
+    "symmetric_or_euclidean_weakly_directed": 530,
+    "euclidean_weakly_connected": 530,
+    "functional_serial": 530
+  }
+}
