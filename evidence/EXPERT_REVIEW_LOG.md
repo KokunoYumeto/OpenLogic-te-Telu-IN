@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 388 of 722 draft units**. This log contains 101 terminology/sense decisions and 356 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 391 of 722 draft units**. This log contains 102 terminology/sense decisions and 358 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2431,6 +2431,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: ప్రతిజ్ఞావాక్య తర్కం, సత్యతా పట్టిక, సమితి, ప్రమేయం రూపాలకు స్థానిక ఆధారం ఉంది. మాత్రిక, గుణిత తర్కం, నిర్ణీతత్వ సంచాలకం, స్థానసంఖ్య అనే ప్రత్యేక కూర్పులకు నామసాక్ష్యం పరిమితం; మూల నిర్వచనాలకు కట్టుబడిన తాత్కాలిక ఎంపికలు.
 
 - Please double-check: Please double-check whether “ప్రతిజ్ఞావాక్య భాష / సంయోజకం / స్థానసంఖ్య / n-స్థానికం / స్థిరాంకం / ఏకస్థానికం / ద్విస్థానికం / గుణిత తర్కం / నిర్ణీతత్వ సంచాలకం / మాత్రిక / సత్యమూల్య ప్రమేయం” is idiomatic and technically standard for “propositional language / connective / arity / n-place / constant / unary / binary / product logic / determinateness operator / matrix / truth function” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T102 — valuation / evaluation / satisfaction / satisfiable / tautology / entailment / semantic notions / monotonicity / transitivity / modus ponens / semantic deduction theorem / sublogic / common fragment
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: సత్యమూల్య కేటాయింపు / మూల్యాంకనం / సంతృప్తి / సంతృప్తిపరచదగినది / సర్వసత్యం / అర్థపర అనుగమనం / అర్థపర భావనలు / ఏకదిశత / సంక్రమణశీలత / మోడస్ పోనెన్స్ / అర్థపర నిగమన సిద్ధాంతం / ఉపతర్కం / సాధారణ భాగం
+
+- Exact implementation: OLP-0389; many-valued-logic/syntax-and-semantics/valuations-sat; content/many-valued-logic/syntax-and-semantics/valuations-sat.tex:11 ↔ translation/content/many-valued-logic/syntax-and-semantics/valuations-sat.tex:11 (OLP-0389-B005); printed/PDF page pending; OLP-0389; many-valued-logic/syntax-and-semantics/valuations-sat; content/many-valued-logic/syntax-and-semantics/valuations-sat.tex:13-19 ↔ translation/content/many-valued-logic/syntax-and-semantics/valuations-sat.tex:13-20 (OLP-0389-B006); printed/PDF page pending; OLP-0389; many-valued-logic/syntax-and-semantics/valuations-sat; content/many-valued-logic/syntax-and-semantics/valuations-sat.tex:21-34 ↔ translation/content/many-valued-logic/syntax-and-semantics/valuations-sat.tex:22-38 (OLP-0389-B007); printed/PDF page pending; OLP-0389; many-valued-logic/syntax-and-semantics/valuations-sat; content/many-valued-logic/syntax-and-semantics/valuations-sat.tex:36-40 ↔ translation/content/many-valued-logic/syntax-and-semantics/valuations-sat.tex:40-45 (OLP-0389-B008); printed/PDF page pending; OLP-0390; many-valued-logic/syntax-and-semantics/semantic-notions; content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:11 ↔ translation/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:11 (OLP-0390-B005); printed/PDF page pending; OLP-0390; many-valued-logic/syntax-and-semantics/semantic-notions; content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:16-31 ↔ translation/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:16-36 (OLP-0390-B007); printed/PDF page pending; OLP-0390; many-valued-logic/syntax-and-semantics/semantic-notions; content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:16-31 ↔ translation/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:16-36 (OLP-0390-B007); printed/PDF page pending; OLP-0390; many-valued-logic/syntax-and-semantics/semantic-notions; content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:16-31 ↔ translation/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:16-36 (OLP-0390-B007); printed/PDF page pending; OLP-0390; many-valued-logic/syntax-and-semantics/semantic-notions; content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:36-51 ↔ translation/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:40-55 (OLP-0390-B009); printed/PDF page pending; OLP-0390; many-valued-logic/syntax-and-semantics/semantic-notions; content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:36-51 ↔ translation/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:40-55 (OLP-0390-B009); printed/PDF page pending; OLP-0390; many-valued-logic/syntax-and-semantics/semantic-notions; content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:61-68 ↔ translation/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:65-73 (OLP-0390-B012); printed/PDF page pending; OLP-0390; many-valued-logic/syntax-and-semantics/semantic-notions; content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:61-68 ↔ translation/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:65-73 (OLP-0390-B012); printed/PDF page pending; OLP-0391; many-valued-logic/syntax-and-semantics/sublogics; content/many-valued-logic/syntax-and-semantics/sublogics.tex:11 ↔ translation/content/many-valued-logic/syntax-and-semantics/sublogics.tex:11 (OLP-0391-B005); printed/PDF page pending; OLP-0391; many-valued-logic/syntax-and-semantics/sublogics; content/many-valued-logic/syntax-and-semantics/sublogics.tex:23-39 ↔ translation/content/many-valued-logic/syntax-and-semantics/sublogics.tex:24-52 (OLP-0391-B007); printed/PDF page pending; OLP-0391; many-valued-logic/syntax-and-semantics/sublogics; content/many-valued-logic/syntax-and-semantics/sublogics.tex:70-76 ↔ translation/content/many-valued-logic/syntax-and-semantics/sublogics.tex:83-92 (OLP-0391-B009); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P020, PDF 79, printed 72, Disjunction heading and truth-table discussion; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్యాత్మక తర్కపు నేపథ్యం; TE-P019–P020లో సత్యతావిలువ, సంయోజకం, సత్య పట్టికలు; TE-P023లో పూర్వపక్షాల నుంచి ఫలితంగా సత్యం నిలిచే భావన; TE-P008లో సమితి/ఉపసమితి; TE-P011లో ప్రమేయం ప్రత్యక్షంగా కనిపించాయి. ఈ పేజీలు బహుమూల్య సంతృప్తి, నిర్దేశిత విలువలు, ఉపతర్కపు సాధారణ భాగం, లేదా అర్థపర నిగమన సిద్ధాంతం ప్రత్యేక నిర్వచనాలను నేరుగా ఇవ్వవు. OLP-0389–0391లోని కేటాయింపు–మూల్యాంకనం–సంతృప్తి నిర్వచనాలు, నాలుగు సంయోజకాల Boolean పరిమితి, TE-T033/035/037/100 పూర్వ స్థిర వాడుక ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి. OLTEMVLSUB-001లో మూల సిద్ధాంతాన్ని చరాల నుంచి నాలుగు పేర్కొన్న సంయోజకాలతో ఏర్పడిన భాగానికి పరిమితం చేయడం స్థానిక పదజాల ఎంపిక కాదు, గణిత ప్రతిదృష్టాంతం వల్ల అవసరమైన మూల సవరణ. మోడస్ పోనెన్స్ పూర్వ TE-T035/040లో ఇప్పటికే వివరణతో కూడిన సాంకేతిక తర్జుమా. L, V, V^+, valuation/satisfaction/entailment macros, Gamma and formula metavariables protected notation; no unexplained English technical headword remains in ordinary prose.
+
+- Alternatives: కేటాయింపు, మూల్యాంకనం, సంతృప్తి, అనుగమనం అనే వేరు సంబంధాలను మూల మాత్రిక నిర్వచనాలకు అనుగుణంగా విడదీయడం; నాలుగు సంయోజకాలతో చరాల నుంచి నిర్మించిన సాధారణ భాగానికే పోలిక ఫలితాన్ని పరిమితం చేయడం (ఎంపిక); కేటాయింపునే సూత్రాల సమితి అనుగమనానికి ఎడమ పదంగా చదవడం (తిరస్కరణ; మూల సంబంధానికి రకం సరిపోదు); నాలుగు సంయోజకాల పరికల్పనల నుంచే భాషలోని అన్ని స్థిరాంకాలు, అదనపు సంయోజకాల విలువలూ నియంత్రితమవుతాయని ఊహించడం (తిరస్కరణ; ప్రతిదృష్టాంతం ఉంది); స్థానిక ద్విమూల్య పేజీలు బహుమూల్య సంతృప్తి, ఉపతర్కం ప్రత్యేక పదజాలాన్ని నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: సత్యతావిలువ, ఫలితం, సమితి, ప్రమేయం సాధారణ పదజాలానికి స్థానిక ఆధారం ఉంది. బహుమూల్య సంతృప్తి, ఉపతర్కం, సాధారణ భాగం, అర్థపర నిగమన సిద్ధాంతం అనే ప్రత్యేక కూర్పులకు ప్రత్యక్ష నామసాక్ష్యం లేదు; వాటిని మూల నిర్వచనాలకే కట్టుబడి తాత్కాలికంగా వాడుతున్నాం.
+
+- Please double-check: Please double-check whether “సత్యమూల్య కేటాయింపు / మూల్యాంకనం / సంతృప్తి / సంతృప్తిపరచదగినది / సర్వసత్యం / అర్థపర అనుగమనం / అర్థపర భావనలు / ఏకదిశత / సంక్రమణశీలత / మోడస్ పోనెన్స్ / అర్థపర నిగమన సిద్ధాంతం / ఉపతర్కం / సాధారణ భాగం” is idiomatic and technically standard for “valuation / evaluation / satisfaction / satisfiable / tautology / entailment / semantic notions / monotonicity / transitivity / modus ponens / semantic deduction theorem / sublogic / common fragment” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -10975,3 +10999,51 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Does the final defTrue tag test close its empty false arm before the outer defined-symbol block closes, without changing the displayed connective list?
+
+## REV-OLTEMVLSUB-001 — OLTEMVLSUB-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: ప్రతిజ్ఞావాక్య చరాల నుంచి నాలుగు పేర్కొన్న సంయోజకాలతో మాత్రమే ఏర్పడిన సాధారణ భాగానికి ప్రతిపాదన, అనుబంధ ఫలితాన్ని పరిమితం చేసి, అసత్య స్థిరాంక ప్రతిదృష్టాంతాన్ని పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0391; many-valued-logic/syntax-and-semantics/sublogics; lines 23-39; mapped segment within audited scope sublogics.tex lines 24-38 and 70-77; compare induction cases and OLP-0386--0388 definitions ↔ translation/content/many-valued-logic/syntax-and-semantics/sublogics.tex:24-52 (OLP-0391-B007); printed/PDF page pending; OLP-0391; many-valued-logic/syntax-and-semantics/sublogics; lines 70-76; mapped segment within audited scope sublogics.tex lines 24-38 and 70-77; compare induction cases and OLP-0386--0388 definitions ↔ translation/content/many-valued-logic/syntax-and-semantics/sublogics.tex:83-92 (OLP-0391-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLSUB-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: ప్రతిజ్ఞావాక్య చరాల నుంచి నాలుగు పేర్కొన్న సంయోజకాలతో మాత్రమే ఏర్పడిన సాధారణ భాగానికి ప్రతిపాదన, అనుబంధ ఫలితాన్ని పరిమితం చేసి, అసత్య స్థిరాంక ప్రతిదృష్టాంతాన్ని పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the proposition and corollary now apply only to the variable-generated fragment using the four controlled connectives, with the uncontrolled lfalse counterexample disclosed?
+
+## REV-OLTEMVLSUB-002 — OLTEMVLSUB-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: మూలంలోని విలువకేటాయింపు–Entails ప్రయోగాలను సంతృప్తి, అసంతృప్తి pSat రూపాలతో మార్చి, ముగింపు Γ non-entails Bను నిలిపి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0391; many-valued-logic/syntax-and-semantics/sublogics; sublogics.tex lines 86-88; compare OLP-0389 satisfaction and OLP-0390 entailment definitions ↔ translation/content/many-valued-logic/syntax-and-semantics/sublogics.tex:109 (OLP-0391-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTEMVLSUB-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: మూలంలోని విలువకేటాయింపు–Entails ప్రయోగాలను సంతృప్తి, అసంతృప్తి pSat రూపాలతో మార్చి, ముగింపు Γ non-entails Bను నిలిపి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the final countervaluation satisfy Gamma and fail to satisfy B using the previously defined satisfaction relation, without putting a valuation on the left of formula-set entailment?

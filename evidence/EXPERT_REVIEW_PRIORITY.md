@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 388 of 722 draft units**. This view selects 409 of 457 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 391 of 722 draft units**. This view selects 411 of 460 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4093,3 +4093,23 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0386; many-valued-logic/syntax-and-semantics/connectives; translation/content/many-valued-logic/syntax-and-semantics/connectives.tex:40; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the final defTrue tag test close its empty false arm before the outer defined-symbol block closes, without changing the displayed connective list?
+
+## REV-OLTEMVLSUB-001 — OLTEMVLSUB-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రతిజ్ఞావాక్య చరాల నుంచి నాలుగు పేర్కొన్న సంయోజకాలతో మాత్రమే ఏర్పడిన సాధారణ భాగానికి ప్రతిపాదన, అనుబంధ ఫలితాన్ని పరిమితం చేసి, అసత్య స్థిరాంక ప్రతిదృష్టాంతాన్ని పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0391; many-valued-logic/syntax-and-semantics/sublogics; translation/content/many-valued-logic/syntax-and-semantics/sublogics.tex:24-52; printed/PDF page pending; OLP-0391; many-valued-logic/syntax-and-semantics/sublogics; translation/content/many-valued-logic/syntax-and-semantics/sublogics.tex:83-92; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the proposition and corollary now apply only to the variable-generated fragment using the four controlled connectives, with the uncontrolled lfalse counterexample disclosed?
+
+## REV-OLTEMVLSUB-002 — OLTEMVLSUB-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మూలంలోని విలువకేటాయింపు–Entails ప్రయోగాలను సంతృప్తి, అసంతృప్తి pSat రూపాలతో మార్చి, ముగింపు Γ non-entails Bను నిలిపి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0391; many-valued-logic/syntax-and-semantics/sublogics; translation/content/many-valued-logic/syntax-and-semantics/sublogics.tex:109; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the final countervaluation satisfy Gamma and fail to satisfy B using the previously defined satisfaction relation, without putting a valuation on the left of formula-set entailment?

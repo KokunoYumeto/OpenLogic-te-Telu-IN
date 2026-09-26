@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **388 of 722 source units drafted**. This readable view contains all 457 decisions and 885 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **391 of 722 source units drafted**. This readable view contains all 460 decisions and 903 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2978,6 +2978,46 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T101-OCC-007; OLP-0388; OLP-0388-B005; source upstream/content/many-valued-logic/syntax-and-semantics/matrices.tex:11 bytes 186-207 SHA-256 b52a35007f90b9c696d8f3396d4ebbf625e24983bbbbb806fdffa6837bd0f9a1; target translation/content/many-valued-logic/syntax-and-semantics/matrices.tex:11 bytes 186-226 SHA-256 eb1082aec4aaa96a96a8a8276eac1eed17ee387b7729e9ad24964ce7f3ef5bf5; reader page pending.
   - te-Telu-IN-TE-T101-OCC-008; OLP-0388; OLP-0388-B007; source upstream/content/many-valued-logic/syntax-and-semantics/matrices.tex:17-28 bytes 419-882 SHA-256 b52a35007f90b9c696d8f3396d4ebbf625e24983bbbbb806fdffa6837bd0f9a1; target translation/content/many-valued-logic/syntax-and-semantics/matrices.tex:18-29 bytes 725-1555 SHA-256 eb1082aec4aaa96a96a8a8276eac1eed17ee387b7729e9ad24964ce7f3ef5bf5; reader page pending.
   - te-Telu-IN-TE-T101-OCC-009; OLP-0388; OLP-0388-B007; source upstream/content/many-valued-logic/syntax-and-semantics/matrices.tex:17-28 bytes 419-882 SHA-256 b52a35007f90b9c696d8f3396d4ebbf625e24983bbbbb806fdffa6837bd0f9a1; target translation/content/many-valued-logic/syntax-and-semantics/matrices.tex:18-29 bytes 725-1555 SHA-256 eb1082aec4aaa96a96a8a8276eac1eed17ee387b7729e9ad24964ce7f3ef5bf5; reader page pending.
+
+## te-Telu-IN-TE-T102 — valuation / evaluation / satisfaction / satisfiable / tautology / entailment / semantic notions / monotonicity / transitivity / modus ponens / semantic deduction theorem / sublogic / common fragment
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: సత్యమూల్య కేటాయింపు / మూల్యాంకనం / సంతృప్తి / సంతృప్తిపరచదగినది / సర్వసత్యం / అర్థపర అనుగమనం / అర్థపర భావనలు / ఏకదిశత / సంక్రమణశీలత / మోడస్ పోనెన్స్ / అర్థపర నిగమన సిద్ధాంతం / ఉపతర్కం / సాధారణ భాగం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “valuation / evaluation / satisfaction / satisfiable / tautology / entailment / semantic notions / monotonicity / transitivity / modus ponens / semantic deduction theorem / sublogic / common fragment” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: సత్యతావిలువ, ఫలితం, సమితి, ప్రమేయం సాధారణ పదజాలానికి స్థానిక ఆధారం ఉంది. బహుమూల్య సంతృప్తి, ఉపతర్కం, సాధారణ భాగం, అర్థపర నిగమన సిద్ధాంతం అనే ప్రత్యేక కూర్పులకు ప్రత్యక్ష నామసాక్ష్యం లేదు; వాటిని మూల నిర్వచనాలకే కట్టుబడి తాత్కాలికంగా వాడుతున్నాం.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్యాత్మక తర్కపు నేపథ్యం; TE-P019–P020లో సత్యతావిలువ, సంయోజకం, సత్య పట్టికలు; TE-P023లో పూర్వపక్షాల నుంచి ఫలితంగా సత్యం నిలిచే భావన; TE-P008లో సమితి/ఉపసమితి; TE-P011లో ప్రమేయం ప్రత్యక్షంగా కనిపించాయి. ఈ పేజీలు బహుమూల్య సంతృప్తి, నిర్దేశిత విలువలు, ఉపతర్కపు సాధారణ భాగం, లేదా అర్థపర నిగమన సిద్ధాంతం ప్రత్యేక నిర్వచనాలను నేరుగా ఇవ్వవు. OLP-0389–0391లోని కేటాయింపు–మూల్యాంకనం–సంతృప్తి నిర్వచనాలు, నాలుగు సంయోజకాల Boolean పరిమితి, TE-T033/035/037/100 పూర్వ స్థిర వాడుక ప్రత్యేక అర్థాన్ని నియంత్రిస్తాయి. OLTEMVLSUB-001లో మూల సిద్ధాంతాన్ని చరాల నుంచి నాలుగు పేర్కొన్న సంయోజకాలతో ఏర్పడిన భాగానికి పరిమితం చేయడం స్థానిక పదజాల ఎంపిక కాదు, గణిత ప్రతిదృష్టాంతం వల్ల అవసరమైన మూల సవరణ. మోడస్ పోనెన్స్ పూర్వ TE-T035/040లో ఇప్పటికే వివరణతో కూడిన సాంకేతిక తర్జుమా. L, V, V^+, valuation/satisfaction/entailment macros, Gamma and formula metavariables protected notation; no unexplained English technical headword remains in ordinary prose.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P020 [checked_context_only], PDF page 79; printed page 72; Disjunction heading and truth-table discussion; Direct disjunction and truth-table register; compound operator labels remain definition-controlled. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately.
+
+- Alternatives: కేటాయింపు, మూల్యాంకనం, సంతృప్తి, అనుగమనం అనే వేరు సంబంధాలను మూల మాత్రిక నిర్వచనాలకు అనుగుణంగా విడదీయడం; నాలుగు సంయోజకాలతో చరాల నుంచి నిర్మించిన సాధారణ భాగానికే పోలిక ఫలితాన్ని పరిమితం చేయడం [viable_alternative: ఎంపిక] | కేటాయింపునే సూత్రాల సమితి అనుగమనానికి ఎడమ పదంగా చదవడం [viable_alternative: తిరస్కరణ; మూల సంబంధానికి రకం సరిపోదు] | నాలుగు సంయోజకాల పరికల్పనల నుంచే భాషలోని అన్ని స్థిరాంకాలు, అదనపు సంయోజకాల విలువలూ నియంత్రితమవుతాయని ఊహించడం [viable_alternative: తిరస్కరణ; ప్రతిదృష్టాంతం ఉంది] | స్థానిక ద్విమూల్య పేజీలు బహుమూల్య సంతృప్తి, ఉపతర్కం ప్రత్యేక పదజాలాన్ని నేరుగా స్థాపిస్తాయని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “సత్యమూల్య కేటాయింపు / మూల్యాంకనం / సంతృప్తి / సంతృప్తిపరచదగినది / సర్వసత్యం / అర్థపర అనుగమనం / అర్థపర భావనలు / ఏకదిశత / సంక్రమణశీలత / మోడస్ పోనెన్స్ / అర్థపర నిగమన సిద్ధాంతం / ఉపతర్కం / సాధారణ భాగం” is idiomatic and technically standard for “valuation / evaluation / satisfaction / satisfiable / tautology / entailment / semantic notions / monotonicity / transitivity / modus ponens / semantic deduction theorem / sublogic / common fragment” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T102-OCC-001; OLP-0389; OLP-0389-B005; source upstream/content/many-valued-logic/syntax-and-semantics/valuations-sat.tex:11 bytes 192-245 SHA-256 295efac982d3d4d6a5a4c2b910b3a37ecb85ce1b7925950db359034733498bb1; target translation/content/many-valued-logic/syntax-and-semantics/valuations-sat.tex:11 bytes 192-269 SHA-256 ecae2d5b46128c8b4333c29e044e0913f9d1c7f6935c634f744d11a01e012247; reader page pending.
+  - te-Telu-IN-TE-T102-OCC-002; OLP-0389; OLP-0389-B006; source upstream/content/many-valued-logic/syntax-and-semantics/valuations-sat.tex:13-19 bytes 246-519 SHA-256 295efac982d3d4d6a5a4c2b910b3a37ecb85ce1b7925950db359034733498bb1; target translation/content/many-valued-logic/syntax-and-semantics/valuations-sat.tex:13-20 bytes 270-929 SHA-256 ecae2d5b46128c8b4333c29e044e0913f9d1c7f6935c634f744d11a01e012247; reader page pending.
+  - te-Telu-IN-TE-T102-OCC-003; OLP-0389; OLP-0389-B007; source upstream/content/many-valued-logic/syntax-and-semantics/valuations-sat.tex:21-34 bytes 520-1130 SHA-256 295efac982d3d4d6a5a4c2b910b3a37ecb85ce1b7925950db359034733498bb1; target translation/content/many-valued-logic/syntax-and-semantics/valuations-sat.tex:22-38 bytes 930-1929 SHA-256 ecae2d5b46128c8b4333c29e044e0913f9d1c7f6935c634f744d11a01e012247; reader page pending.
+  - te-Telu-IN-TE-T102-OCC-004; OLP-0389; OLP-0389-B008; source upstream/content/many-valued-logic/syntax-and-semantics/valuations-sat.tex:36-40 bytes 1131-1392 SHA-256 295efac982d3d4d6a5a4c2b910b3a37ecb85ce1b7925950db359034733498bb1; target translation/content/many-valued-logic/syntax-and-semantics/valuations-sat.tex:40-45 bytes 1930-2509 SHA-256 ecae2d5b46128c8b4333c29e044e0913f9d1c7f6935c634f744d11a01e012247; reader page pending.
+  - te-Telu-IN-TE-T102-OCC-005; OLP-0390; OLP-0390-B005; source upstream/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:11 bytes 194-223 SHA-256 897125a2b2dddc985219270cc16af490719261dc292857bbcb157d1ad899597d; target translation/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:11 bytes 194-244 SHA-256 950011dd1a2b4f47ba36326376f9841eb091cdba7c53b28ba35e2c14571cfb60; reader page pending.
+  - te-Telu-IN-TE-T102-OCC-006; OLP-0390; OLP-0390-B007; source upstream/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:16-31 bytes 345-1057 SHA-256 897125a2b2dddc985219270cc16af490719261dc292857bbcb157d1ad899597d; target translation/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:16-36 bytes 538-2058 SHA-256 950011dd1a2b4f47ba36326376f9841eb091cdba7c53b28ba35e2c14571cfb60; reader page pending.
+  - te-Telu-IN-TE-T102-OCC-007; OLP-0390; OLP-0390-B007; source upstream/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:16-31 bytes 345-1057 SHA-256 897125a2b2dddc985219270cc16af490719261dc292857bbcb157d1ad899597d; target translation/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:16-36 bytes 538-2058 SHA-256 950011dd1a2b4f47ba36326376f9841eb091cdba7c53b28ba35e2c14571cfb60; reader page pending.
+  - te-Telu-IN-TE-T102-OCC-008; OLP-0390; OLP-0390-B007; source upstream/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:16-31 bytes 345-1057 SHA-256 897125a2b2dddc985219270cc16af490719261dc292857bbcb157d1ad899597d; target translation/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:16-36 bytes 538-2058 SHA-256 950011dd1a2b4f47ba36326376f9841eb091cdba7c53b28ba35e2c14571cfb60; reader page pending.
+  - te-Telu-IN-TE-T102-OCC-009; OLP-0390; OLP-0390-B009; source upstream/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:36-51 bytes 1150-1682 SHA-256 897125a2b2dddc985219270cc16af490719261dc292857bbcb157d1ad899597d; target translation/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:40-55 bytes 2218-3003 SHA-256 950011dd1a2b4f47ba36326376f9841eb091cdba7c53b28ba35e2c14571cfb60; reader page pending.
+  - te-Telu-IN-TE-T102-OCC-010; OLP-0390; OLP-0390-B009; source upstream/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:36-51 bytes 1150-1682 SHA-256 897125a2b2dddc985219270cc16af490719261dc292857bbcb157d1ad899597d; target translation/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:40-55 bytes 2218-3003 SHA-256 950011dd1a2b4f47ba36326376f9841eb091cdba7c53b28ba35e2c14571cfb60; reader page pending.
+  - te-Telu-IN-TE-T102-OCC-011; OLP-0390; OLP-0390-B012; source upstream/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:61-68 bytes 1795-2320 SHA-256 897125a2b2dddc985219270cc16af490719261dc292857bbcb157d1ad899597d; target translation/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:65-73 bytes 3155-4144 SHA-256 950011dd1a2b4f47ba36326376f9841eb091cdba7c53b28ba35e2c14571cfb60; reader page pending.
+  - te-Telu-IN-TE-T102-OCC-012; OLP-0390; OLP-0390-B012; source upstream/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:61-68 bytes 1795-2320 SHA-256 897125a2b2dddc985219270cc16af490719261dc292857bbcb157d1ad899597d; target translation/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex:65-73 bytes 3155-4144 SHA-256 950011dd1a2b4f47ba36326376f9841eb091cdba7c53b28ba35e2c14571cfb60; reader page pending.
+  - te-Telu-IN-TE-T102-OCC-013; OLP-0391; OLP-0391-B005; source upstream/content/many-valued-logic/syntax-and-semantics/sublogics.tex:11 bytes 187-243 SHA-256 1180052e6f39c499a3d55b43200ce6af0e92b3f2c5b55d416eaac29e96bb66a7; target translation/content/many-valued-logic/syntax-and-semantics/sublogics.tex:11 bytes 187-305 SHA-256 9c9d21d43a79a02a6e1743ccff8c28444edc10f660441aa286174ba35a723d79; reader page pending.
+  - te-Telu-IN-TE-T102-OCC-014; OLP-0391; OLP-0391-B007; source upstream/content/many-valued-logic/syntax-and-semantics/sublogics.tex:23-39 bytes 831-1633 SHA-256 1180052e6f39c499a3d55b43200ce6af0e92b3f2c5b55d416eaac29e96bb66a7; target translation/content/many-valued-logic/syntax-and-semantics/sublogics.tex:24-52 bytes 1361-3940 SHA-256 9c9d21d43a79a02a6e1743ccff8c28444edc10f660441aa286174ba35a723d79; reader page pending.
+  - te-Telu-IN-TE-T102-OCC-015; OLP-0391; OLP-0391-B009; source upstream/content/many-valued-logic/syntax-and-semantics/sublogics.tex:70-76 bytes 2985-3333 SHA-256 1180052e6f39c499a3d55b43200ce6af0e92b3f2c5b55d416eaac29e96bb66a7; target translation/content/many-valued-logic/syntax-and-semantics/sublogics.tex:83-92 bytes 5609-6443 SHA-256 9c9d21d43a79a02a6e1743ccff8c28444edc10f660441aa286174ba35a723d79; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -12313,3 +12353,56 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEMVLSYN-001-OCC-001; OLP-0386; OLP-0386-B006; source upstream/content/many-valued-logic/syntax-and-semantics/connectives.tex:13-37 bytes 228-1454 SHA-256 5eab2399773774dcc0ad724bf710775b247fa781eddca68a814f39537880ff30; target translation/content/many-valued-logic/syntax-and-semantics/connectives.tex:40 bytes 2427-2575 SHA-256 901f4b2d7cbb652f95d334b4e58f8f9831261e351abe72bfb3cf460c1626c65f; reader page pending.
+
+## te-Telu-IN-OLTEMVLSUB-001 — OLTEMVLSUB-001: theorem and corollary false without common fragment restriction
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: ప్రతిజ్ఞావాక్య చరాల నుంచి నాలుగు పేర్కొన్న సంయోజకాలతో మాత్రమే ఏర్పడిన సాధారణ భాగానికి ప్రతిపాదన, అనుబంధ ఫలితాన్ని పరిమితం చేసి, అసత్య స్థిరాంక ప్రతిదృష్టాంతాన్ని పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited theorem and corollary false without common fragment restriction at sublogics.tex lines 24-38 and 70-77; compare induction cases and OLP-0386--0388 definitions, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLSUB-20260926:OLTEMVLSUB-001 [checked_supports], content/many-valued-logic/syntax-and-semantics/sublogics.tex; sublogics.tex lines 24-38 and 70-77; compare induction cases and OLP-0386--0388 definitions; theorem_and_corollary_false_without_common_fragment_restriction; ప్రతిజ్ఞావాక్య చరాల నుంచి నాలుగు పేర్కొన్న సంయోజకాలతో మాత్రమే ఏర్పడిన సాధారణ భాగానికి ప్రతిపాదన, అనుబంధ ఫలితాన్ని పరిమితం చేసి, అసత్య స్థిరాంక ప్రతిదృష్టాంతాన్ని పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the proposition and corollary now apply only to the variable-generated fragment using the four controlled connectives, with the uncontrolled lfalse counterexample disclosed?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLSUB-001-OCC-001; OLP-0391; OLP-0391-B007; source upstream/content/many-valued-logic/syntax-and-semantics/sublogics.tex:23-39 bytes 831-1633 SHA-256 1180052e6f39c499a3d55b43200ce6af0e92b3f2c5b55d416eaac29e96bb66a7; target translation/content/many-valued-logic/syntax-and-semantics/sublogics.tex:24-52 bytes 1361-3940 SHA-256 9c9d21d43a79a02a6e1743ccff8c28444edc10f660441aa286174ba35a723d79; reader page pending.
+  - te-Telu-IN-OLTEMVLSUB-001-OCC-002; OLP-0391; OLP-0391-B009; source upstream/content/many-valued-logic/syntax-and-semantics/sublogics.tex:70-76 bytes 2985-3333 SHA-256 1180052e6f39c499a3d55b43200ce6af0e92b3f2c5b55d416eaac29e96bb66a7; target translation/content/many-valued-logic/syntax-and-semantics/sublogics.tex:83-92 bytes 5609-6443 SHA-256 9c9d21d43a79a02a6e1743ccff8c28444edc10f660441aa286174ba35a723d79; reader page pending.
+
+## te-Telu-IN-OLTEMVLSUB-002 — OLTEMVLSUB-002: typed satisfaction relation replaced for valuation
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: మూలంలోని విలువకేటాయింపు–Entails ప్రయోగాలను సంతృప్తి, అసంతృప్తి pSat రూపాలతో మార్చి, ముగింపు Γ non-entails Bను నిలిపి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited typed satisfaction relation replaced for valuation at sublogics.tex lines 86-88; compare OLP-0389 satisfaction and OLP-0390 entailment definitions, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEMVLSUB-20260926:OLTEMVLSUB-002 [checked_supports], content/many-valued-logic/syntax-and-semantics/sublogics.tex; sublogics.tex lines 86-88; compare OLP-0389 satisfaction and OLP-0390 entailment definitions; typed_satisfaction_relation_replaced_for_valuation; మూలంలోని విలువకేటాయింపు–Entails ప్రయోగాలను సంతృప్తి, అసంతృప్తి pSat రూపాలతో మార్చి, ముగింపు Γ non-entails Bను నిలిపి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the final countervaluation satisfy Gamma and fail to satisfy B using the previously defined satisfaction relation, without putting a valuation on the left of formula-set entailment?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEMVLSUB-002-OCC-001; OLP-0391; OLP-0391-B010; source upstream/content/many-valued-logic/syntax-and-semantics/sublogics.tex:78-90 bytes 3334-4032 SHA-256 1180052e6f39c499a3d55b43200ce6af0e92b3f2c5b55d416eaac29e96bb66a7; target translation/content/many-valued-logic/syntax-and-semantics/sublogics.tex:109 bytes 7521-7613 SHA-256 9c9d21d43a79a02a6e1743ccff8c28444edc10f660441aa286174ba35a723d79; reader page pending.

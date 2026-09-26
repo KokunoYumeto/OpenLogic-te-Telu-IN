@@ -469,6 +469,23 @@ locations['TE-T101']=[
  L('content/many-valued-logic/syntax-and-semantics/matrices.tex',18,27,18,29,'matrix','మాత్రిక'),
  L('content/many-valued-logic/syntax-and-semantics/matrices.tex',24,27,24,28,'truth','సత్యమూల్య ప్రమేయం')
 ];
+locations['TE-T102']=[
+ L('content/many-valued-logic/syntax-and-semantics/valuations-sat.tex',11,11,11,11,'Satisfaction','సంతృప్తి'),
+ L('content/many-valued-logic/syntax-and-semantics/valuations-sat.tex',13,17,13,18,'valuation','సత్యమూల్య కేటాయింపు'),
+ L('content/many-valued-logic/syntax-and-semantics/valuations-sat.tex',21,24,22,27,'evaluation function','మూల్యాంకన ప్రమేయం'),
+ L('content/many-valued-logic/syntax-and-semantics/valuations-sat.tex',36,40,40,45,'satisfied','సంతృప్తమవడం'),
+ L('content/many-valued-logic/syntax-and-semantics/semantic-notions.tex',11,11,11,11,'Semantic Notions','అర్థపర భావనలు'),
+ L('content/many-valued-logic/syntax-and-semantics/semantic-notions.tex',18,20,18,21,'satisfiable','సంతృప్తిపరచదగినది'),
+ L('content/many-valued-logic/syntax-and-semantics/semantic-notions.tex',21,22,22,24,'tautology','సర్వసత్యం'),
+ L('content/many-valued-logic/syntax-and-semantics/semantic-notions.tex',23,25,25,29,'entails','అనుగమిస్తుంది'),
+ L('content/many-valued-logic/syntax-and-semantics/semantic-notions.tex',43,45,47,49,'Monotonicity','ఏకదిశత'),
+ L('content/many-valued-logic/syntax-and-semantics/semantic-notions.tex',46,49,50,53,'Transitivity','సంక్రమణశీలత'),
+ L('content/many-valued-logic/syntax-and-semantics/semantic-notions.tex',61,64,65,69,'modus ponens','మోడస్ పోనెన్స్'),
+ L('content/many-valued-logic/syntax-and-semantics/semantic-notions.tex',65,68,69,73,'semantic deduction theorem','అర్థపర నిగమన సిద్ధాంతం'),
+ L('content/many-valued-logic/syntax-and-semantics/sublogics.tex',11,11,11,11,'sublogics','ఉపతర్కాలుగా'),
+ L('content/many-valued-logic/syntax-and-semantics/sublogics.tex',36,38,37,42,'for any valuation','ఏ సత్యమూల్య కేటాయింపు'),
+ L('content/many-valued-logic/syntax-and-semantics/sublogics.tex',70,75,83,91,'every tautology','ప్రతి సర్వసత్యమూ')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -555,6 +572,7 @@ alternatives['TE-T098']=['TE-T065, TE-T078, TE-T079లోని సక్రమ�
 alternatives['TE-T099']=['గోడెల్ అంకీకరణ–నియత రూపం–చర్చ్ సంఖ్యాంక మార్పిడిని మూల రూపురేఖల పరిమితిలో తెలుగులో వివరించడం (ఎంపిక)','మూల నిరూపణ రూపురేఖలను పూర్తి నిర్మాణాత్మక నిరూపణగా ప్రకటించడం (తిరస్కరణ)','గోడెల్ పేరు లేదా కోడ్ ప్రమేయాల గుర్తింపులను అనువదించి మూల అనుసంధానం పోగొట్టడం (తిరస్కరణ)','స్థానిక ప్రధాన సంఖ్యల పేజీ గోడెల్ సంకేతీకరణను నేరుగా ధృవీకరిస్తుందని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T100']=['TE-P019లో ప్రత్యక్షంగా కనిపించే సత్యతావిలువకు బదులుగా ఈ సంచికలో స్థిరపడిన సత్యమూల్యం వాడుకను, TE-T033/095 అర్థపర గద్యంతో కలిపి కొనసాగించడం (ఎంపిక)','సత్యతావిలువ అనే స్థానిక సాక్ష్య రూపాన్ని సంచికలోని సమాన సందర్భాలకు ఒకేసారి మార్పు లేకుండా మాత్రమే ప్రతిష్ఠించడం (తిరస్కరణ; సందర్భానుసార సమీక్షకు తెరిచి ఉంది)','బహుమూల్య తర్కాన్ని తప్పనిసరిగా True విలువ కలిగిన వ్యవస్థగా చూపడం (తిరస్కరణ)','నిర్దేశిత విలువల కొత్త భావానికి స్థానిక ద్విమూల్య సత్య పట్టికనే ప్రత్యక్ష సాక్ష్యంగా ప్రకటించడం (తిరస్కరణ)','మూల కరణీయ సంఖ్యలను అకరణీయ సంఖ్యలుగా మార్చడం (తిరస్కరణ; TE-P006 భేదం ప్రత్యక్షంగా చూసాం)'];
 alternatives['TE-T101']=['స్థానసంఖ్యను n-స్థానిక సంయోజకంగా, మాత్రికను మూల నిర్వచించిన భాష–V–V^+–సత్యమూల్య ప్రమేయాల నిర్మాణంగా చదవడం (ఎంపిక)','మాత్రికను కేవలం సంఖ్యల దీర్ఘచతురస్ర పట్టికగా చదవడం (తిరస్కరణ)','గుణిత తర్కం, నిర్ణీతత్వ సంచాలకం పేర్లకు స్థానిక ద్విమూల్య తర్క పేజీలే నేరుగా సాక్ష్యమని ప్రకటించడం (తిరస్కరణ)','మూల n, 0, 1, 2 స్థానసంఖ్యలను వదిలేయడం (తిరస్కరణ)'];
+alternatives['TE-T102']=['కేటాయింపు, మూల్యాంకనం, సంతృప్తి, అనుగమనం అనే వేరు సంబంధాలను మూల మాత్రిక నిర్వచనాలకు అనుగుణంగా విడదీయడం; నాలుగు సంయోజకాలతో చరాల నుంచి నిర్మించిన సాధారణ భాగానికే పోలిక ఫలితాన్ని పరిమితం చేయడం (ఎంపిక)','కేటాయింపునే సూత్రాల సమితి అనుగమనానికి ఎడమ పదంగా చదవడం (తిరస్కరణ; మూల సంబంధానికి రకం సరిపోదు)','నాలుగు సంయోజకాల పరికల్పనల నుంచే భాషలోని అన్ని స్థిరాంకాలు, అదనపు సంయోజకాల విలువలూ నియంత్రితమవుతాయని ఊహించడం (తిరస్కరణ; ప్రతిదృష్టాంతం ఉంది)','స్థానిక ద్విమూల్య పేజీలు బహుమూల్య సంతృప్తి, ఉపతర్కం ప్రత్యేక పదజాలాన్ని నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -571,7 +589,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T101 record the Batch 025--Batch 059 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T102 record the Batch 025--Batch 060 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -617,6 +635,8 @@ const correctionQuestions={
  'OLTEINF-006':'Does the proof establish both inclusions needed for ran(g)=B, including the formerly missing ran(g)-subset-B direction?',
  'OLTEPLSYN-001':'Does the Telugu disclosure identify the malformed nested tag arms and make clear that only their brace/empty-arm closure was repaired?',
  'OLTEMVLSYN-001':'Does the final defTrue tag test close its empty false arm before the outer defined-symbol block closes, without changing the displayed connective list?',
+ 'OLTEMVLSUB-001':'Does the proposition and corollary now apply only to the variable-generated fragment using the four controlled connectives, with the uncontrolled lfalse counterexample disclosed?',
+ 'OLTEMVLSUB-002':'Does the final countervaluation satisfy Gamma and fail to satisfy B using the previously defined satisfaction relation, without putting a valuation on the left of formula-set entailment?',
  'OLTEPLSYN-002':'Does the material-conditional abbreviation read exactly as not A or B after removal of the source’s unmatched closing parenthesis?',
  'OLTEPLSYN-003':'Does the formation-sequence proof use syntactic identity, rather than semantic equivalence, for literal identity of symbol strings?',
  'OLTEPLSYN-004':'Does Local Determination unambiguously restrict agreement to variables occurring in the one fixed formula A?',
