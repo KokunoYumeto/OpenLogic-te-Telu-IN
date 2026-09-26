@@ -1,0 +1,113 @@
+% Part: lambda-calculus
+% Chapter: church-rosser
+% Section: parallel-beta-eta-reduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{cr}{pbe}
+
+\olsection{సమాంతర $\beta\eta$-తగ్గింపు}
+
+ఈ విభాగంలో $\beta\eta$-తగ్గింపుకు అనుగుణమైన సమాంతర
+$\beta\eta$-తగ్గింపుకు చర్చ్--రోసర్ లక్షణం ఉందని నిరూపిస్తాం.
+
+\begin{defn}[సమాంతర $\beta\eta$-తగ్గింపు, $\beredpar$] \ollabel{defn:beredpar}
+  పదాలపై \emph{సమాంతర $\beta\eta$-తగ్గింపు}
+  ($\beredpar$)ను ఆగమన పద్ధతిలో ఇలా నిర్వచిస్తాం:
+  \begin{enumerate}
+    \item \ollabel{defn:beredpar1} $x \beredpar x$.
+    \item \ollabel{defn:beredpar2} $N \beredpar N'$ అయితే $\lambd[x][N] \beredpar
+      \lambd[x][N']$.
+      \sourcecorrection{OLTELAMCRPBE-001}{మూలంలోని అమూర్తీకరణ నియమం పూర్వాపేక్షలో $N \xrightarrow{\beta} N'$ అని ఉంది. కానీ సమాంతర $\beta\eta$ సంబంధపు స్వప్రతిఫలకత్వం, కింది ఆగమన వాదనలు శరీరంపై $N \beredpar N'$ పూర్వాపేక్షను కోరుతాయి; $\eta$-మాత్రమే తగ్గే శరీరాన్ని కూడా అదే నియమం కవర్ చేయాలి. తెలుగు నియమంలో సమాంతర పూర్వాపేక్షను పునరుద్ధరించాం; స్థిర మూలాన్ని మార్చలేదు.}
+    \item \ollabel{defn:beredpar3} $P \beredpar P'$, $Q \beredpar Q'$ అయితే $PQ \beredpar
+      P'Q'$.
+    \item \ollabel{defn:beredpar4} $N \beredpar N'$, $Q \beredpar Q'$ అయితే
+      $(\lambd[x][N])Q \beredpar \Subst{N'}{Q'}{x}$.
+    \item \ollabel{defn:beredpar5} $N \beredpar N'$ అయితే $\lambd[x][Nx]
+      \beredpar N'$, అయితే $x \notin FV(N)$ కావాలి.
+  \end{enumerate}
+\end{defn}
+
+\begin{thm}\ollabel{thm:refl}
+  $M \beredpar M$.
+\end{thm}
+
+\begin{proof}
+  సాధన.
+\end{proof}
+
+\begin{prob}
+  \olref[lam][cr][pbe]{thm:refl}ను నిరూపించండి.
+\end{prob}
+
+\begin{defn}[$\beta\eta$-సంపూర్ణ వికాసం]\ollabel{defn:becd}
+  $M$ పదం యొక్క \emph{$\beta\eta$-సంపూర్ణ వికాసం}~$\becd{M}$ను
+  ఇలా నిర్వచిస్తాం:
+  \begin{align}
+    \becd{x} &= x \ollabel{defn:becd1} \\
+    \becd{(\lambd[x][N])} &= \lambd[x][\becd{N}] \ollabel{defn:becd2}\\
+    \becd{(PQ)} &= \becd{P}\becd{Q} && \text{$P$ ఒక $\lambd$-అమూర్తీకరణ కాకపోతే}
+    \ollabel{defn:becd3} \\
+    \becd{((\lambd[x][N])Q)} &= \Subst{\becd{N}}{\becd{Q}}{x}
+                             \ollabel{defn:becd4} \\
+    \becd{(\lambd[x][Nx])} &= \becd{N} \ollabel{defn:becd5} & \text{$x
+                                                      \notin FV(N)$ అయితే}
+  \end{align}
+  \sourcecorrection{OLTELAMCRPBE-002}{మూలంలోని రెండవ, అయిదవ సమీకరణాలు $x\notin FV(N)$ ఉన్న $\lambd[x][Nx]$పై రెండూ వర్తిస్తాయి. రెండవది $\lambd[x][\becd{Nx}]$ను, అయిదవది $\becd{N}$ను ఇస్తాయి; ఉదాహరణకు $N=f$ అయితే అవి వేర్వేరు పదాలు. ఏ నియమానికి ప్రాధాన్యం ఇవ్వాలో మూలం చెప్పలేదు. రెండు ముద్రిత సమీకరణాలను అలాగే ఉంచి, సంపూర్ణ వికాసం ఇక్కడ ఏకార్థకంగా నిర్వచించబడలేదని ప్రకటిస్తున్నాం; కింది నిరూపణను పూర్తి ధ్రువీకరణగా చెప్పడం లేదు.}
+\end{defn}
+
+\begin{lem}\ollabel{lem:comp}
+  $M \beredpar M'$, $R \beredpar R'$ అయితే,
+  $\Subst{M}{R}{y} \beredpar \Subst{M'}{R'}{y}$.
+\end{lem}
+
+\begin{proof}
+  $M \beredpar M'$ యొక్క \tetoken{వ్యుత్పత్తి}{!!{derivation}}పై
+  ఆగమన పద్ధతిలో నిరూపిస్తాం.
+
+  తొలి నాలుగు సందర్భాలు \olref[pb]{lem:comp}లోని
+  సందర్భాల మాదిరిగానే ఉంటాయి. చివరి నియమం
+  \olref{defn:beredpar5} అయితే, $M$ అనేది
+  $\lambd[x][Nx]$, $M'$ అనేది $N'$; ఇక్కడ తగిన
+  $x$, $N'$, $x \notin FV(N)$, అలాగే
+  $N \beredpar N'$. చూపవలసింది
+  $\Subst{(\lambd[x][Nx])}{R}{y} \beredpar
+  \Subst{N'}{R'}{y}$, అంటే
+  $\lambd[x][\Subst{N}{R}{y} x] \beredpar \Subst{N'}{R'}{y}$.
+  ఇది \olref{defn:beredpar}\olref{defn:beredpar5},
+  ఆగమన పరికల్పనల నుంచి వస్తుందని మూలం చెబుతుంది.
+  \sourcecorrection{OLTELAMCRPBE-003}{ఈ $\eta$-సందర్భంలో అయిదవ నియమాన్ని ప్రతిస్థాపన తరువాత వాడాలంటే $x\notin FV(\Subst{N}{R}{y})$ కావాలి. మూలం $x\notin FV(N)$ను మాత్రమే చెప్పి, ప్రతినిధిని $x\neq y$, $x\notin FV(R)$గా తాజాగా ఎంచుకోవడం, ప్రతిస్థాపనల నిర్వచితత్వం వివరించలేదు. పై నాలుగు సందర్భాలు ఆధారపడే \olref[pb]{lem:comp}లో OLTELAMCRPB-003 ఖాళీ కూడా తెరిచే ఉంది. ముద్రిత నిర్ధారణను మూల వాదనగా మాత్రమే ఉంచాం; పూర్తి నిరూపణగా ధ్రువీకరించడం లేదు.}
+\end{proof}
+
+\begin{lem}\ollabel{lem:cont}
+  $M \beredpar M'$ అయితే $M' \beredpar \becd{M}$.
+\end{lem}
+
+\begin{proof}
+  $M \beredpar M'$ యొక్క \tetoken{వ్యుత్పత్తి}{!!{derivation}}పై
+  ఆగమన పద్ధతిలో నిరూపిస్తాం.
+
+  తొలి నాలుగు సందర్భాలు \olref[pb]{lem:cont}లోని
+  సందర్భాల మాదిరిగానే ఉంటాయి. చివరి నియమం
+  \olref{defn:beredpar5} అయితే, $M$ అనేది
+  $\lambd[x][Nx]$, $M'$ అనేది $N'$; ఇక్కడ
+  $x$, $N$, $N'$ తగిన చరం, పదాలు;
+  $x \notin FV(N)$, $N
+  \beredpar N'$. చూపవలసింది $N' \beredpar
+  \becd{(\lambd[x][Nx])}$, అంటే $N' \beredpar \becd{N}$.
+  ఇది ఆగమన పరికల్పన నుంచి వెంటనే వస్తుందని మూలం చెబుతుంది.
+  \sourcecorrection{OLTELAMCRPBE-004}{చివరి సమానార్థక మార్పు అయిదవ సంపూర్ణ-వికాస సమీకరణాన్ని ఎంచుకుంటుంది; అదే పదానికి రెండవ సమీకరణమూ వర్తించే OLTELAMCRPBE-002 అస్పష్టత ఇంకా ఉంది. తొలి నాలుగు సందర్భాలు OLTELAMCRPB-003 ఖాళీ ఉన్న పూర్వ \olref[pb]{lem:cont} వాదనను అనుసరిస్తాయి. అందువల్ల మూల ఆగమన రూపాన్ని ఉంచినా ఉపసిద్ధాంతానికి స్వతంత్ర పూర్తి నిరూపణను ప్రకటించడం లేదు.}
+\end{proof}
+
+\begin{thm}\ollabel{thm:cr}
+  $\beredpar$కు చర్చ్--రోసర్ లక్షణం ఉంది.
+\end{thm}
+
+\begin{proof}
+  \olref{lem:cont} నుంచి నేరుగా వస్తుంది.
+  \sourcecorrection{OLTELAMCRPBE-005}{ఈ నిర్ధారణ \olref{lem:cont}పై ఆధారపడుతుంది. ఆ ఉపసిద్ధాంతంలో OLTELAMCRPBE-002–004గా ప్రకటించిన నిర్వచన అస్పష్టత, ప్రతిస్థాపన-నిరూపణ ఖాళీలు ఇంకా పూరించలేదు. మూల ఆధార సూచనను అలాగే ఉంచాం; ఈ గమనిక పూర్తి చర్చ్--రోసర్ నిరూపణను కొత్తగా ఇవ్వదు.}
+\end{proof}
+
+\end{document}

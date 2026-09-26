@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 370 of 722 draft units**. This view selects 383 of 421 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 372 of 722 draft units**. This view selects 392 of 431 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -3833,3 +3833,93 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0370; lambda-calculus/church-rosser/beta-reduction; translation/content/lambda-calculus/church-rosser/beta-reduction.tex:96; printed/PDF page pending
 
 - Please double-check: Please double-check: తుది చర్చ్--రోసర్ వాదన ముందరి రెండు ఇంకా అసంపూర్ణ నిరూపణలపై ఆధారపడుతుందనే జాగ్రత్త పాఠకుడికి కనిపిస్తుందా?
+
+## REV-OLTELAMCRPBE-001 — OLTELAMCRPBE-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: replaced ordinary beta premise in abstraction rule with parallel beta-eta premise and disclosed the source formula
+
+- Occurrences: OLP-0371; lambda-calculus/church-rosser/parallel-beta-eta-reduction; translation/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:23; printed/PDF page pending
+
+- Please double-check: Please double-check: అమూర్తీకరణ నియమంలో సమాంతర బీటా-ఏటా పూర్వాపేక్ష పునరుద్ధరణ స్వప్రతిఫలకత్వం, ఆగమన వాదనలకు సరిపోతుందా?
+
+## REV-OLTELAMCRPBE-002 — OLTELAMCRPBE-002
+
+- Priority/confidence: high / source_proof_gap_disclosed_not_repaired
+
+- Chosen wording/treatment: retained all five printed complete-development equations and disclosed eta-clause overlap and non-uniqueness
+
+- Occurrences: OLP-0371; lambda-calculus/church-rosser/parallel-beta-eta-reduction; translation/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:58; printed/PDF page pending
+
+- Please double-check: Please double-check: సంపూర్ణ వికాసం రెండవ, అయిదవ సమీకరణాల ఏటా అతివ్యాప్తి, ప్రాధాన్య నియమం లేనితనం స్పష్టమా?
+
+## REV-OLTELAMCRPBE-003 — OLTELAMCRPBE-003
+
+- Priority/confidence: high / source_proof_gap_disclosed_not_repaired
+
+- Chosen wording/treatment: retained printed eta-substitution case but disclosed missing freshness, definedness and earlier proof dependency
+
+- Occurrences: OLP-0371; lambda-calculus/church-rosser/parallel-beta-eta-reduction; translation/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:81; printed/PDF page pending
+
+- Please double-check: Please double-check: ఏటా-ప్రతిస్థాపన సందర్భానికి తాజా చరం, నిర్వచిత ప్రతిస్థాపనలు కావాలనే పరిమితి తగినంత స్పష్టమా?
+
+## REV-OLTELAMCRPBE-004 — OLTELAMCRPBE-004
+
+- Priority/confidence: high / source_proof_gap_disclosed_not_repaired
+
+- Chosen wording/treatment: retained induction shape but disclosed dependence on ambiguous complete development and earlier proof gap
+
+- Occurrences: OLP-0371; lambda-calculus/church-rosser/parallel-beta-eta-reduction; translation/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:101; printed/PDF page pending
+
+- Please double-check: Please double-check: సంపూర్ణ-వికాస ఉపసిద్ధాంతం నిర్వచన అస్పష్టత, పూర్వ నిరూపణ ఖాళీపై ఆధారపడుతుందనే హెచ్చరిక సరిపోతుందా?
+
+## REV-OLTELAMCRPBE-005 — OLTELAMCRPBE-005
+
+- Priority/confidence: high / source_proof_gap_disclosed_not_repaired
+
+- Chosen wording/treatment: retained Church--Rosser theorem and citation but disclosed inherited unresolved lemma
+
+- Occurrences: OLP-0371; lambda-calculus/church-rosser/parallel-beta-eta-reduction; translation/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:110; printed/PDF page pending
+
+- Please double-check: Please double-check: సమాంతర చర్చ్--రోసర్ సిద్ధాంతం పూరించని ఉపసిద్ధాంతంపై ఆధారపడుతుందనే పరిమితి పాఠకుడికి కనిపిస్తుందా?
+
+## REV-OLTELAMCRBE-001 — OLTELAMCRBE-001
+
+- Priority/confidence: high / source_proof_gap_disclosed_not_repaired
+
+- Chosen wording/treatment: retained printed one-step lemma and disclosed undefined mathematical one-step relation
+
+- Occurrences: OLP-0372; lambda-calculus/church-rosser/beta-eta-reduction; translation/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:17; printed/PDF page pending
+
+- Please double-check: Please double-check: beredone టెక్స్ మాక్రో మాత్రమే ఉండి ఒక-దశ గణిత సంబంధం నిర్వచించబడలేదనే తేడా స్పష్టమా?
+
+## REV-OLTELAMCRBE-002 — OLTELAMCRBE-002
+
+- Priority/confidence: high / source_proof_gap_disclosed_not_repaired
+
+- Chosen wording/treatment: corrected eta branch from beta to eta contraction while disclosing missing rule justification and prior context-case gap
+
+- Occurrences: OLP-0372; lambda-calculus/church-rosser/beta-eta-reduction; translation/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:27; printed/PDF page pending
+
+- Please double-check: Please double-check: ఏటా సందర్భంలో eredone పునరుద్ధరణ, సమాంతర ఏటా నియమం అవసరం, పూర్వ అనుకూల-సందర్భ ఖాళీ స్పష్టమా?
+
+## REV-OLTELAMCRBE-003 — OLTELAMCRBE-003
+
+- Priority/confidence: high / source_proof_gap_disclosed_not_repaired
+
+- Chosen wording/treatment: retained printed final eta case and disclosed omitted four cases and undefined one-step notation
+
+- Occurrences: OLP-0372; lambda-calculus/church-rosser/beta-eta-reduction; translation/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:45; printed/PDF page pending
+
+- Please double-check: Please double-check: అయిదవ సందర్భమే ముద్రించబడిందనీ, తొలి నాలుగు సందర్భాలు, ఒక-దశ సంకేతం నిర్వచనం లేవనీ స్పష్టమా?
+
+## REV-OLTELAMCRBE-004 — OLTELAMCRBE-004
+
+- Priority/confidence: high / source_proof_gap_disclosed_not_repaired
+
+- Chosen wording/treatment: retained three exact theorem citations and disclosed inherited definition and proof limitations
+
+- Occurrences: OLP-0372; lambda-calculus/church-rosser/beta-eta-reduction; translation/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:63; printed/PDF page pending
+
+- Please double-check: Please double-check: తుది సిద్ధాంతం ఆధారపడే పూర్వ నిర్వచన, నిరూపణ పరిమితులు పూర్తి ధ్రువీకరణగా పొరబడకుండా ఉన్నాయా?

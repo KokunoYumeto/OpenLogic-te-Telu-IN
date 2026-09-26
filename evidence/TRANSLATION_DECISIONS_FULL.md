@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **370 of 722 source units drafted**. This readable view contains all 421 decisions and 793 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **372 of 722 source units drafted**. This readable view contains all 431 decisions and 806 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2662,6 +2662,35 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T091-OCC-002; OLP-0370; OLP-0370-B006; source upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:13-21 bytes 211-628 SHA-256 c51e50d16a675080277053003c33dc22951be9a43bb9910cc1bf1dff6e05f361; target translation/content/lambda-calculus/church-rosser/beta-reduction.tex:13-25 bytes 226-1800 SHA-256 42ab7e7d2bca2aa2cf876c10cf9c2163db834f6b245d256e7fb39f73b2fdd8f1; reader page pending.
   - te-Telu-IN-TE-T091-OCC-003; OLP-0370; OLP-0370-B009; source upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:51-53 bytes 2025-2133 SHA-256 c51e50d16a675080277053003c33dc22951be9a43bb9910cc1bf1dff6e05f361; target translation/content/lambda-calculus/church-rosser/beta-reduction.tex:65-67 bytes 4612-4768 SHA-256 42ab7e7d2bca2aa2cf876c10cf9c2163db834f6b245d256e7fb39f73b2fdd8f1; reader page pending.
   - te-Telu-IN-TE-T091-OCC-004; OLP-0370; OLP-0370-B013; source upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:70-72 bytes 2731-2818 SHA-256 c51e50d16a675080277053003c33dc22951be9a43bb9910cc1bf1dff6e05f361; target translation/content/lambda-calculus/church-rosser/beta-reduction.tex:89-91 bytes 5673-5820 SHA-256 42ab7e7d2bca2aa2cf876c10cf9c2163db834f6b245d256e7fb39f73b2fdd8f1; reader page pending.
+
+## te-Telu-IN-TE-T092 — parallel beta-eta reduction / beta-eta complete development / one-step beta-eta comparison
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: సమాంతర బీటా-ఏటా తగ్గింపు / బీటా-ఏటా సంపూర్ణ వికాసం / ఒక-దశ బీటా-ఏటా పోలిక
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “parallel beta-eta reduction / beta-eta complete development / one-step beta-eta comparison” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: ప్రత్యక్ష స్థానిక లాంబ్డా-కలనశాస్త్ర సాక్ష్యం లేదు; ప్రత్యేక పదాల ఎంపిక తాత్కాలికం. సంపూర్ణ వికాస సమీకరణాలు ఏటా సందర్భంలో అతివ్యాప్తి చెందుతున్నాయి; beredone ఒక-దశ సంబంధం మూలంలో నిర్వచితం కాదు; పేర్కొన్న నిరూపణ ఖాళీలు పూరించలేదు.
+
+- Rationale: TE-P024లో వ్యుత్పత్తి, నిరూపణ దశలు; TE-P027లో చరరాశి వాడుక; TE-P032లో ఆగమన, నిరూపణ పద్ధతుల గద్యాన్ని ప్రత్యక్షంగా చూశాం. ఏ పేజీ సమాంతర బీటా-ఏటా తగ్గింపు, సంపూర్ణ వికాసం, ఒక-దశ సంబంధాన్ని నేరుగా నిర్వచించదు. OLP-0371లోని అయిదు నియమాలు, సంపూర్ణ వికాస సమీకరణాలు, OLP-0372లోని పూర్వ సంబంధ నిర్వచనాలే ప్రత్యేక అర్థాలను నియంత్రిస్తాయి. OLTELAMCRPBE-001–005, OLTELAMCRBE-001–004 సవరణలు, నిర్వచన మరియు నిరూపణ పరిమితులను పక్కనే ప్రకటిస్తున్నాయి. బీటా, ఏటా, చర్చ్--రోసర్ మునుపటి బదిలీ పదాలు; β, η, M, N, సంబంధ/ప్రతిస్థాపన మాక్రోలు గణిత గుర్తింపులుగా యథాతథం.
+
+- Authorities checked: TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: మునుపటి సమాంతర బీటా, ఏటా పదజాలంతో ప్రత్యేక బీటా-ఏటా సంబంధాన్ని మూల నియమాల మేరకు కొనసాగించడం [viable_alternative: ఎంపిక] | స్థానిక పేజీలు సంపూర్ణ వికాసం లేదా ఒక-దశ బీటా-ఏటా సంబంధాన్ని నేరుగా నిర్వచిస్తాయని చెప్పడం [viable_alternative: తిరస్కరణ] | మూలంలోని సంపూర్ణ-వికాస అతివ్యాప్తి, నిర్వచించని ఒక-దశ సంకేతాన్ని దాచడం [viable_alternative: తిరస్కరణ] | పూరించని ఆగమన నిరూపణను పూర్తి నిరూపణగా చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “సమాంతర బీటా-ఏటా తగ్గింపు / బీటా-ఏటా సంపూర్ణ వికాసం / ఒక-దశ బీటా-ఏటా పోలిక” is idiomatic and technically standard for “parallel beta-eta reduction / beta-eta complete development / one-step beta-eta comparison” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T092-OCC-001; OLP-0371; OLP-0371-B005; source upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:11 bytes 195-238 SHA-256 88130e362effc83767b2fae97dcab4b6ae13f657a7d7a43da2df13883c9d54f2; target translation/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:11 bytes 195-263 SHA-256 8b0571a8b673b6c92b7b6b3d9c63e0d7b18bfcbcf0a4ffffbdd031018f83fd67; reader page pending.
+  - te-Telu-IN-TE-T092-OCC-002; OLP-0371; OLP-0371-B011; source upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:45-58 bytes 1328-2005 SHA-256 88130e362effc83767b2fae97dcab4b6ae13f657a7d7a43da2df13883c9d54f2; target translation/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:45-59 bytes 2487-4285 SHA-256 8b0571a8b673b6c92b7b6b3d9c63e0d7b18bfcbcf0a4ffffbdd031018f83fd67; reader page pending.
+  - te-Telu-IN-TE-T092-OCC-003; OLP-0372; OLP-0372-B007; source upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:16-18 bytes 293-382 SHA-256 2eee11e77e3bb3052a2e139079f26cb22c1126577b4418f88918a3ede85a3cf4; target translation/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:15-18 bytes 356-1290 SHA-256 cd30356c3a44615e9a8217af5f665f54cda2498ea0260e83ee44ca2c2f12b95d; reader page pending.
+  - te-Telu-IN-TE-T092-OCC-004; OLP-0372; OLP-0372-B012; source upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:43-45 bytes 1163-1273 SHA-256 2eee11e77e3bb3052a2e139079f26cb22c1126577b4418f88918a3ede85a3cf4; target translation/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:48-50 bytes 4716-4874 SHA-256 cd30356c3a44615e9a8217af5f665f54cda2498ea0260e83ee44ca2c2f12b95d; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -10833,19 +10862,19 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Chosen rendering or treatment: explicitly flagged unproved nested-substitution definedness and supplied a counterexample to the source argument; theorem proof remains open
 
-- Intended sense: Preserve the source argument at lines 236-246, abstraction case of thm:sub, disclose the identified proof gap, and do not claim to have supplied a complete proof.
+- Intended sense: Preserve the source argument at lines 236-246, abstraction case of thm:sub, disclose the identified definition or proof limitation, and do not claim to have supplied a complete proof.
 
 - Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
 
 - Confidence / provisional / priority: low / true / high
 
-- Confidence reason: The missing proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.
+- Confidence reason: The unresolved definition or proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.
 
-- Rationale: The bounded source audit identified a missing proof step. The target keeps the printed argument with an adjacent limitation; structural QA checks preservation and does not complete the mathematical proof.
+- Rationale: The bounded source audit identified an unresolved definition or proof limitation. The target keeps the printed argument with an adjacent disclosure; structural QA checks preservation and does not complete the mathematical proof.
 
 - Authorities checked: OLTELAMALP-20260925:OLTELAMALP-005 [checked_supports], content/lambda-calculus/syntax/alpha.tex; lines 236-246, abstraction case of thm:sub; unproved_definedness_in_alpha_safe_substitution_construction; explicitly flagged unproved nested-substitution definedness and supplied a counterexample to the source argument; theorem proof remains open.
 
-- Alternatives: Present the source proof as complete without qualifying the unsupported step. [rejected: The identified missing side condition or derivation has not been supplied.]
+- Alternatives: Present the source proof as complete without qualifying the unsupported step. [rejected: The identified missing definition, side condition or derivation has not been supplied.]
 
 - Review question: Please double-check: రెండో ప్రతిస్థాపన నిర్వచితమన్న మూల వాదనలో ఖాళీని ఇచ్చిన ఉదాహరణ సరిగ్గా చూపుతుందా? దానికి పూర్తి నిర్మాణాత్మక నిరూపణ ఏమిటి?
 
@@ -10859,19 +10888,19 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Chosen rendering or treatment: preserved source display for inspection and explicitly flagged unjustified equalities and incomplete uniqueness scope; theorem proof remains open
 
-- Intended sense: Preserve the source argument at lines 248-261, displayed uniqueness chain in thm:sub, disclose the identified proof gap, and do not claim to have supplied a complete proof.
+- Intended sense: Preserve the source argument at lines 248-261, displayed uniqueness chain in thm:sub, disclose the identified definition or proof limitation, and do not claim to have supplied a complete proof.
 
 - Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
 
 - Confidence / provisional / priority: low / true / high
 
-- Confidence reason: The missing proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.
+- Confidence reason: The unresolved definition or proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.
 
-- Rationale: The bounded source audit identified a missing proof step. The target keeps the printed argument with an adjacent limitation; structural QA checks preservation and does not complete the mathematical proof.
+- Rationale: The bounded source audit identified an unresolved definition or proof limitation. The target keeps the printed argument with an adjacent disclosure; structural QA checks preservation and does not complete the mathematical proof.
 
 - Authorities checked: OLTELAMALP-20260925:OLTELAMALP-006 [checked_supports], content/lambda-calculus/syntax/alpha.tex; lines 248-261, displayed uniqueness chain in thm:sub; invalid_equalities_and_incomplete_uniqueness_scope; preserved source display for inspection and explicitly flagged unjustified equalities and incomplete uniqueness scope; theorem proof remains open.
 
-- Alternatives: Present the source proof as complete without qualifying the unsupported step. [rejected: The identified missing side condition or derivation has not been supplied.]
+- Alternatives: Present the source proof as complete without qualifying the unsupported step. [rejected: The identified missing definition, side condition or derivation has not been supplied.]
 
 - Review question: Please double-check: మూల గణనలో సమానత్వానికి బదులుగా ఏ ఆల్ఫా-తుల్యత దశలు కావాలి? సాధారణ M-double-primeను ఎలా కవర్ చేస్తారు?
 
@@ -11224,19 +11253,19 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Chosen rendering or treatment: retained the displayed source formulas but disclosed missing freshness, definedness and substitution-interchange justification; no complete proof claimed
 
-- Intended sense: Preserve the source argument at lines 92-98, in context of the partial substitution in syntax/substitution.tex and alpha-class descent in syntax/alpha.tex, disclose the identified proof gap, and do not claim to have supplied a complete proof.
+- Intended sense: Preserve the source argument at lines 92-98, in context of the partial substitution in syntax/substitution.tex and alpha-class descent in syntax/alpha.tex, disclose the identified definition or proof limitation, and do not claim to have supplied a complete proof.
 
 - Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
 
 - Confidence / provisional / priority: low / true / high
 
-- Confidence reason: The missing proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.
+- Confidence reason: The unresolved definition or proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.
 
-- Rationale: The bounded source audit identified a missing proof step. The target keeps the printed argument with an adjacent limitation; structural QA checks preservation and does not complete the mathematical proof.
+- Rationale: The bounded source audit identified an unresolved definition or proof limitation. The target keeps the printed argument with an adjacent disclosure; structural QA checks preservation and does not complete the mathematical proof.
 
 - Authorities checked: OLTELAMCRPB-20260925:OLTELAMCRPB-003 [checked_supports], content/lambda-calculus/church-rosser/parallel-beta-reduction.tex; lines 92-98, in context of the partial substitution in syntax/substitution.tex and alpha-class descent in syntax/alpha.tex; substitution_composition_proof_gap_disclosed; retained the displayed source formulas but disclosed missing freshness, definedness and substitution-interchange justification; no complete proof claimed.
 
-- Alternatives: Present the source proof as complete without qualifying the unsupported step. [rejected: The identified missing side condition or derivation has not been supplied.]
+- Alternatives: Present the source proof as complete without qualifying the unsupported step. [rejected: The identified missing definition, side condition or derivation has not been supplied.]
 
 - Review question: Please double-check: నాలుగవ సందర్భానికి అవసరమైన తాజా ప్రతినిధులు, ప్రతిస్థాపనల నిర్వచితత్వం, మార్పిడి నియమం మూలంలో నిరూపించలేదనే పరిమితి తగినంత స్పష్టమా?
 
@@ -11250,19 +11279,19 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Chosen rendering or treatment: retained the printed root-redex calculation but disclosed omitted compatible context cases; no complete proof claimed
 
-- Intended sense: Preserve the source argument at lines 13-21, contrasted with syntax/beta.tex lines 16-24, disclose the identified proof gap, and do not claim to have supplied a complete proof.
+- Intended sense: Preserve the source argument at lines 13-21, contrasted with syntax/beta.tex lines 16-24, disclose the identified definition or proof limitation, and do not claim to have supplied a complete proof.
 
 - Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
 
 - Confidence / provisional / priority: low / true / high
 
-- Confidence reason: The missing proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.
+- Confidence reason: The unresolved definition or proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.
 
-- Rationale: The bounded source audit identified a missing proof step. The target keeps the printed argument with an adjacent limitation; structural QA checks preservation and does not complete the mathematical proof.
+- Rationale: The bounded source audit identified an unresolved definition or proof limitation. The target keeps the printed argument with an adjacent disclosure; structural QA checks preservation and does not complete the mathematical proof.
 
 - Authorities checked: OLTELAMCRB-20260925:OLTELAMCRB-001 [checked_supports], content/lambda-calculus/church-rosser/beta-reduction.tex; lines 13-21, contrasted with syntax/beta.tex lines 16-24; one_step_beta_to_parallel_proof_omits_compatible_context_cases; retained the printed root-redex calculation but disclosed omitted compatible context cases; no complete proof claimed.
 
-- Alternatives: Present the source proof as complete without qualifying the unsupported step. [rejected: The identified missing side condition or derivation has not been supplied.]
+- Alternatives: Present the source proof as complete without qualifying the unsupported step. [rejected: The identified missing definition, side condition or derivation has not been supplied.]
 
 - Review question: Please double-check: అనుకూల బీటా సంకోచనంలోని అమూర్తీకరణ/ప్రయోగ సందర్భాలకు మూలస్థాన గణన సరిపోదనే నిరూపణ పరిమితి స్పష్టమా?
 
@@ -11302,22 +11331,256 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
 - Chosen rendering or treatment: retained the three cited dependencies in the final Church--Rosser proof but disclosed inherited proof gaps; no independent certification claimed
 
-- Intended sense: Preserve the source argument at lines 70-76, with dependencies lines 13-21 and parallel-beta-reduction.tex lines 75-100, disclose the identified proof gap, and do not claim to have supplied a complete proof.
+- Intended sense: Preserve the source argument at lines 70-76, with dependencies lines 13-21 and parallel-beta-reduction.tex lines 75-100, disclose the identified definition or proof limitation, and do not claim to have supplied a complete proof.
 
 - Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
 
 - Confidence / provisional / priority: low / true / high
 
-- Confidence reason: The missing proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.
+- Confidence reason: The unresolved definition or proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.
 
-- Rationale: The bounded source audit identified a missing proof step. The target keeps the printed argument with an adjacent limitation; structural QA checks preservation and does not complete the mathematical proof.
+- Rationale: The bounded source audit identified an unresolved definition or proof limitation. The target keeps the printed argument with an adjacent disclosure; structural QA checks preservation and does not complete the mathematical proof.
 
 - Authorities checked: OLTELAMCRB-20260925:OLTELAMCRB-003 [checked_supports], content/lambda-calculus/church-rosser/beta-reduction.tex; lines 70-76, with dependencies lines 13-21 and parallel-beta-reduction.tex lines 75-100; church_rosser_conclusion_inherits_unresolved_source_proof_dependencies; retained the three cited dependencies in the final Church--Rosser proof but disclosed inherited proof gaps; no independent certification claimed.
 
-- Alternatives: Present the source proof as complete without qualifying the unsupported step. [rejected: The identified missing side condition or derivation has not been supplied.]
+- Alternatives: Present the source proof as complete without qualifying the unsupported step. [rejected: The identified missing definition, side condition or derivation has not been supplied.]
 
 - Review question: Please double-check: తుది చర్చ్--రోసర్ వాదన ముందరి రెండు ఇంకా అసంపూర్ణ నిరూపణలపై ఆధారపడుతుందనే జాగ్రత్త పాఠకుడికి కనిపిస్తుందా?
 
 - Occurrences:
 
   - te-Telu-IN-OLTELAMCRB-003-OCC-001; OLP-0370; OLP-0370-B013; source upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:70-76 bytes 2731-2925 SHA-256 c51e50d16a675080277053003c33dc22951be9a43bb9910cc1bf1dff6e05f361; target translation/content/lambda-calculus/church-rosser/beta-reduction.tex:96 bytes 5958-6737 SHA-256 42ab7e7d2bca2aa2cf876c10cf9c2163db834f6b245d256e7fb39f73b2fdd8f1; reader page pending.
+
+## te-Telu-IN-OLTELAMCRPBE-001 — OLTELAMCRPBE-001: parallel beta eta abstraction rule has ordinary beta premise
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: replaced ordinary beta premise in abstraction rule with parallel beta-eta premise and disclosed the source formula
+
+- Intended sense: Repair the audited parallel beta eta abstraction rule has ordinary beta premise at parallel-beta-eta-reduction.tex lines 17-31, especially line 22, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMCRBE-20260926:OLTELAMCRPBE-001 [checked_supports], content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex; parallel-beta-eta-reduction.tex lines 17-31, especially line 22; parallel_beta_eta_abstraction_rule_has_ordinary_beta_premise; replaced ordinary beta premise in abstraction rule with parallel beta-eta premise and disclosed the source formula.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: అమూర్తీకరణ నియమంలో సమాంతర బీటా-ఏటా పూర్వాపేక్ష పునరుద్ధరణ స్వప్రతిఫలకత్వం, ఆగమన వాదనలకు సరిపోతుందా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMCRPBE-001-OCC-001; OLP-0371; OLP-0371-B007; source upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:17-31 bytes 399-1163 SHA-256 88130e362effc83767b2fae97dcab4b6ae13f657a7d7a43da2df13883c9d54f2; target translation/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:23 bytes 1015-1846 SHA-256 8b0571a8b673b6c92b7b6b3d9c63e0d7b18bfcbcf0a4ffffbdd031018f83fd67; reader page pending.
+
+## te-Telu-IN-OLTELAMCRPBE-002 — OLTELAMCRPBE-002: beta eta complete development overlapping abstraction and eta clauses
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: retained all five printed complete-development equations and disclosed eta-clause overlap and non-uniqueness
+
+- Intended sense: Preserve the source argument at parallel-beta-eta-reduction.tex lines 45-58, especially 50 and 55-56, disclose the identified definition or proof limitation, and do not claim to have supplied a complete proof.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: The unresolved definition or proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.
+
+- Rationale: The bounded source audit identified an unresolved definition or proof limitation. The target keeps the printed argument with an adjacent disclosure; structural QA checks preservation and does not complete the mathematical proof.
+
+- Authorities checked: OLTELAMCRBE-20260926:OLTELAMCRPBE-002 [checked_supports], content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex; parallel-beta-eta-reduction.tex lines 45-58, especially 50 and 55-56; beta_eta_complete_development_overlapping_abstraction_and_eta_clauses; retained all five printed complete-development equations and disclosed eta-clause overlap and non-uniqueness.
+
+- Alternatives: Present the source proof as complete without qualifying the unsupported step. [rejected: The identified missing definition, side condition or derivation has not been supplied.]
+
+- Review question: Please double-check: సంపూర్ణ వికాసం రెండవ, అయిదవ సమీకరణాల ఏటా అతివ్యాప్తి, ప్రాధాన్య నియమం లేనితనం స్పష్టమా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMCRPBE-002-OCC-001; OLP-0371; OLP-0371-B011; source upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:45-58 bytes 1328-2005 SHA-256 88130e362effc83767b2fae97dcab4b6ae13f657a7d7a43da2df13883c9d54f2; target translation/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:58 bytes 3294-4274 SHA-256 8b0571a8b673b6c92b7b6b3d9c63e0d7b18bfcbcf0a4ffffbdd031018f83fd67; reader page pending.
+
+## te-Telu-IN-OLTELAMCRPBE-003 — OLTELAMCRPBE-003: eta substitution case omits freshness and definedness justification
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: retained printed eta-substitution case but disclosed missing freshness, definedness and earlier proof dependency
+
+- Intended sense: Preserve the source argument at parallel-beta-eta-reduction.tex lines 65-76, especially 69-75, disclose the identified definition or proof limitation, and do not claim to have supplied a complete proof.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: The unresolved definition or proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.
+
+- Rationale: The bounded source audit identified an unresolved definition or proof limitation. The target keeps the printed argument with an adjacent disclosure; structural QA checks preservation and does not complete the mathematical proof.
+
+- Authorities checked: OLTELAMCRBE-20260926:OLTELAMCRPBE-003 [checked_supports], content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex; parallel-beta-eta-reduction.tex lines 65-76, especially 69-75; eta_substitution_case_omits_freshness_and_definedness_justification; retained printed eta-substitution case but disclosed missing freshness, definedness and earlier proof dependency.
+
+- Alternatives: Present the source proof as complete without qualifying the unsupported step. [rejected: The identified missing definition, side condition or derivation has not been supplied.]
+
+- Review question: Please double-check: ఏటా-ప్రతిస్థాపన సందర్భానికి తాజా చరం, నిర్వచిత ప్రతిస్థాపనలు కావాలనే పరిమితి తగినంత స్పష్టమా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMCRPBE-003-OCC-001; OLP-0371; OLP-0371-B014; source upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:68-76 bytes 2218-2705 SHA-256 88130e362effc83767b2fae97dcab4b6ae13f657a7d7a43da2df13883c9d54f2; target translation/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:81 bytes 5387-6335 SHA-256 8b0571a8b673b6c92b7b6b3d9c63e0d7b18bfcbcf0a4ffffbdd031018f83fd67; reader page pending.
+
+## te-Telu-IN-OLTELAMCRPBE-004 — OLTELAMCRPBE-004: complete development lemma depends on ambiguous eta clause and prior substitution gap
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: retained induction shape but disclosed dependence on ambiguous complete development and earlier proof gap
+
+- Intended sense: Preserve the source argument at parallel-beta-eta-reduction.tex lines 78-91, disclose the identified definition or proof limitation, and do not claim to have supplied a complete proof.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: The unresolved definition or proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.
+
+- Rationale: The bounded source audit identified an unresolved definition or proof limitation. The target keeps the printed argument with an adjacent disclosure; structural QA checks preservation and does not complete the mathematical proof.
+
+- Authorities checked: OLTELAMCRBE-20260926:OLTELAMCRPBE-004 [checked_supports], content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex; parallel-beta-eta-reduction.tex lines 78-91; complete_development_lemma_depends_on_ambiguous_eta_clause_and_prior_substitution_gap; retained induction shape but disclosed dependence on ambiguous complete development and earlier proof gap.
+
+- Alternatives: Present the source proof as complete without qualifying the unsupported step. [rejected: The identified missing definition, side condition or derivation has not been supplied.]
+
+- Review question: Please double-check: సంపూర్ణ-వికాస ఉపసిద్ధాంతం నిర్వచన అస్పష్టత, పూర్వ నిరూపణ ఖాళీపై ఆధారపడుతుందనే హెచ్చరిక సరిపోతుందా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMCRPBE-004-OCC-001; OLP-0371; OLP-0371-B017; source upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:85-91 bytes 2872-3250 SHA-256 88130e362effc83767b2fae97dcab4b6ae13f657a7d7a43da2df13883c9d54f2; target translation/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:101 bytes 7332-8175 SHA-256 8b0571a8b673b6c92b7b6b3d9c63e0d7b18bfcbcf0a4ffffbdd031018f83fd67; reader page pending.
+
+## te-Telu-IN-OLTELAMCRPBE-005 — OLTELAMCRPBE-005: parallel beta eta church rosser conclusion inherits unresolved lemma
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: retained Church--Rosser theorem and citation but disclosed inherited unresolved lemma
+
+- Intended sense: Preserve the source argument at parallel-beta-eta-reduction.tex lines 93-99, disclose the identified definition or proof limitation, and do not claim to have supplied a complete proof.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: The unresolved definition or proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.
+
+- Rationale: The bounded source audit identified an unresolved definition or proof limitation. The target keeps the printed argument with an adjacent disclosure; structural QA checks preservation and does not complete the mathematical proof.
+
+- Authorities checked: OLTELAMCRBE-20260926:OLTELAMCRPBE-005 [checked_supports], content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex; parallel-beta-eta-reduction.tex lines 93-99; parallel_beta_eta_church_rosser_conclusion_inherits_unresolved_lemma; retained Church--Rosser theorem and citation but disclosed inherited unresolved lemma.
+
+- Alternatives: Present the source proof as complete without qualifying the unsupported step. [rejected: The identified missing definition, side condition or derivation has not been supplied.]
+
+- Review question: Please double-check: సమాంతర చర్చ్--రోసర్ సిద్ధాంతం పూరించని ఉపసిద్ధాంతంపై ఆధారపడుతుందనే పరిమితి పాఠకుడికి కనిపిస్తుందా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMCRPBE-005-OCC-001; OLP-0371; OLP-0371-B019; source upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:97-99 bytes 3336-3397 SHA-256 88130e362effc83767b2fae97dcab4b6ae13f657a7d7a43da2df13883c9d54f2; target translation/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:110 bytes 8407-9019 SHA-256 8b0571a8b673b6c92b7b6b3d9c63e0d7b18bfcbcf0a4ffffbdd031018f83fd67; reader page pending.
+
+## te-Telu-IN-OLTELAMCRBE-001 — OLTELAMCRBE-001: beta eta one step relation symbol used without mathematical definition
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: retained printed one-step lemma and disclosed undefined mathematical one-step relation
+
+- Intended sense: Preserve the source argument at beta-eta-reduction.tex lines 16-22, compared with syntax/eta.tex lines 25-37 and open-logic-config.sty line 665, disclose the identified definition or proof limitation, and do not claim to have supplied a complete proof.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: The unresolved definition or proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.
+
+- Rationale: The bounded source audit identified an unresolved definition or proof limitation. The target keeps the printed argument with an adjacent disclosure; structural QA checks preservation and does not complete the mathematical proof.
+
+- Authorities checked: OLTELAMCRBE-20260926:OLTELAMCRBE-001 [checked_supports], content/lambda-calculus/church-rosser/beta-eta-reduction.tex; beta-eta-reduction.tex lines 16-22, compared with syntax/eta.tex lines 25-37 and open-logic-config.sty line 665; beta_eta_one_step_relation_symbol_used_without_mathematical_definition; retained printed one-step lemma and disclosed undefined mathematical one-step relation.
+
+- Alternatives: Present the source proof as complete without qualifying the unsupported step. [rejected: The identified missing definition, side condition or derivation has not been supplied.]
+
+- Review question: Please double-check: beredone టెక్స్ మాక్రో మాత్రమే ఉండి ఒక-దశ గణిత సంబంధం నిర్వచించబడలేదనే తేడా స్పష్టమా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMCRBE-001-OCC-001; OLP-0372; OLP-0372-B007; source upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:16-18 bytes 293-382 SHA-256 2eee11e77e3bb3052a2e139079f26cb22c1126577b4418f88918a3ede85a3cf4; target translation/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:17 bytes 442-1280 SHA-256 cd30356c3a44615e9a8217af5f665f54cda2498ea0260e83ee44ca2c2f12b95d; reader page pending.
+
+## te-Telu-IN-OLTELAMCRBE-002 — OLTELAMCRBE-002: eta branch misnamed beta contraction and incomplete rule justification
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: corrected eta branch from beta to eta contraction while disclosing missing rule justification and prior context-case gap
+
+- Intended sense: Preserve the source argument at beta-eta-reduction.tex lines 20-25, especially 21-23, disclose the identified definition or proof limitation, and do not claim to have supplied a complete proof.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: The unresolved definition or proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.
+
+- Rationale: The bounded source audit identified an unresolved definition or proof limitation. The target keeps the printed argument with an adjacent disclosure; structural QA checks preservation and does not complete the mathematical proof.
+
+- Authorities checked: OLTELAMCRBE-20260926:OLTELAMCRBE-002 [checked_supports], content/lambda-calculus/church-rosser/beta-eta-reduction.tex; beta-eta-reduction.tex lines 20-25, especially 21-23; eta_branch_misnamed_beta_contraction_and_incomplete_rule_justification; corrected eta branch from beta to eta contraction while disclosing missing rule justification and prior context-case gap.
+
+- Alternatives: Present the source proof as complete without qualifying the unsupported step. [rejected: The identified missing definition, side condition or derivation has not been supplied.]
+
+- Review question: Please double-check: ఏటా సందర్భంలో eredone పునరుద్ధరణ, సమాంతర ఏటా నియమం అవసరం, పూర్వ అనుకూల-సందర్భ ఖాళీ స్పష్టమా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMCRBE-002-OCC-001; OLP-0372; OLP-0372-B008; source upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:20-25 bytes 383-635 SHA-256 2eee11e77e3bb3052a2e139079f26cb22c1126577b4418f88918a3ede85a3cf4; target translation/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:27 bytes 1908-2939 SHA-256 cd30356c3a44615e9a8217af5f665f54cda2498ea0260e83ee44ca2c2f12b95d; reader page pending.
+
+## te-Telu-IN-OLTELAMCRBE-003 — OLTELAMCRBE-003: parallel beta eta to beta eta induction only details eta case
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: retained printed final eta case and disclosed omitted four cases and undefined one-step notation
+
+- Intended sense: Preserve the source argument at beta-eta-reduction.tex lines 28-40, disclose the identified definition or proof limitation, and do not claim to have supplied a complete proof.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: The unresolved definition or proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.
+
+- Rationale: The bounded source audit identified an unresolved definition or proof limitation. The target keeps the printed argument with an adjacent disclosure; structural QA checks preservation and does not complete the mathematical proof.
+
+- Authorities checked: OLTELAMCRBE-20260926:OLTELAMCRBE-003 [checked_supports], content/lambda-calculus/church-rosser/beta-eta-reduction.tex; beta-eta-reduction.tex lines 28-40; parallel_beta_eta_to_beta_eta_induction_only_details_eta_case; retained printed final eta case and disclosed omitted four cases and undefined one-step notation.
+
+- Alternatives: Present the source proof as complete without qualifying the unsupported step. [rejected: The identified missing definition, side condition or derivation has not been supplied.]
+
+- Review question: Please double-check: అయిదవ సందర్భమే ముద్రించబడిందనీ, తొలి నాలుగు సందర్భాలు, ఒక-దశ సంకేతం నిర్వచనం లేవనీ స్పష్టమా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMCRBE-003-OCC-001; OLP-0372; OLP-0372-B011; source upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:34-40 bytes 792-1161 SHA-256 2eee11e77e3bb3052a2e139079f26cb22c1126577b4418f88918a3ede85a3cf4; target translation/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:45 bytes 3884-4703 SHA-256 cd30356c3a44615e9a8217af5f665f54cda2498ea0260e83ee44ca2c2f12b95d; reader page pending.
+
+## te-Telu-IN-OLTELAMCRBE-004 — OLTELAMCRBE-004: beta eta church rosser conclusion inherits unresolved source dependencies
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: retained three exact theorem citations and disclosed inherited definition and proof limitations
+
+- Intended sense: Preserve the source argument at beta-eta-reduction.tex lines 51-57, disclose the identified definition or proof limitation, and do not claim to have supplied a complete proof.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: The unresolved definition or proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.
+
+- Rationale: The bounded source audit identified an unresolved definition or proof limitation. The target keeps the printed argument with an adjacent disclosure; structural QA checks preservation and does not complete the mathematical proof.
+
+- Authorities checked: OLTELAMCRBE-20260926:OLTELAMCRBE-004 [checked_supports], content/lambda-calculus/church-rosser/beta-eta-reduction.tex; beta-eta-reduction.tex lines 51-57; beta_eta_church_rosser_conclusion_inherits_unresolved_source_dependencies; retained three exact theorem citations and disclosed inherited definition and proof limitations.
+
+- Alternatives: Present the source proof as complete without qualifying the unsupported step. [rejected: The identified missing definition, side condition or derivation has not been supplied.]
+
+- Review question: Please double-check: తుది సిద్ధాంతం ఆధారపడే పూర్వ నిర్వచన, నిరూపణ పరిమితులు పూర్తి ధ్రువీకరణగా పొరబడకుండా ఉన్నాయా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMCRBE-004-OCC-001; OLP-0372; OLP-0372-B015; source upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:55-58 bytes 1413-1521 SHA-256 2eee11e77e3bb3052a2e139079f26cb22c1126577b4418f88918a3ede85a3cf4; target translation/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:63 bytes 5235-5985 SHA-256 cd30356c3a44615e9a8217af5f665f54cda2498ea0260e83ee44ca2c2f12b95d; reader page pending.

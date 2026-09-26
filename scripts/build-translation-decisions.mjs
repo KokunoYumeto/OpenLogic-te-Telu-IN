@@ -275,11 +275,11 @@ const correctionDecisions = corrections.map(correction => {
   const targetRange = fileRange(correction.target_locator, segment.target_start_line, segment.target_end_line);
   const decisionId = `te-Telu-IN-${correction.finding_id}`;
   const qualified = correction.qualification?.disposition === 'rejected_false_positive';
-  const proofGap = ['OLTELAMALP-005', 'OLTELAMALP-006', 'OLTELAMCRPB-003', 'OLTELAMCRB-001', 'OLTELAMCRB-003'].includes(correction.finding_id);
+  const proofGap = ['OLTELAMALP-005', 'OLTELAMALP-006', 'OLTELAMCRPB-003', 'OLTELAMCRB-001', 'OLTELAMCRB-003', 'OLTELAMCRPBE-002', 'OLTELAMCRPBE-003', 'OLTELAMCRPBE-004', 'OLTELAMCRPBE-005', 'OLTELAMCRBE-001', 'OLTELAMCRBE-002', 'OLTELAMCRBE-003', 'OLTELAMCRBE-004'].includes(correction.finding_id);
   const intendedSense = qualified
     ? `Preserve the valid source construction at ${correction.source_locator}, present its equivalent explicit notation for readability, and record that the historical error classification was rejected as a false positive.`
     : proofGap
-    ? `Preserve the source argument at ${correction.source_locator}, disclose the identified proof gap, and do not claim to have supplied a complete proof.`
+    ? `Preserve the source argument at ${correction.source_locator}, disclose the identified definition or proof limitation, and do not claim to have supplied a complete proof.`
     : `Repair the audited ${correction.classification.replaceAll('_', ' ')} at ${correction.source_locator}, preserving unaffected notation and argument structure.`;
   const reviewArtifact = auditArtifact(correction.audit_review_sha256, 'REVIEW.md', correction.audit_id);
   const findingsArtifact = auditArtifact(correction.audit_findings_sha256, 'FINDINGS.json', correction.finding_id);
@@ -329,7 +329,7 @@ const correctionDecisions = corrections.map(correction => {
     rationale: qualified
       ? `A later consolidation review established that the nested source notation is valid because \\cardeq takes two mandatory arguments. The historical audit claim remains traceable, while the target gives the equivalent two explicit comparisons and its adjacent note records the rejected-false-positive disposition.`
       : proofGap
-      ? `The bounded source audit identified a missing proof step. The target keeps the printed argument with an adjacent limitation; structural QA checks preservation and does not complete the mathematical proof.`
+      ? `The bounded source audit identified an unresolved definition or proof limitation. The target keeps the printed argument with an adjacent disclosure; structural QA checks preservation and does not complete the mathematical proof.`
       : `The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.`,
     authorities_checked: [{
       authority_id: `${correction.audit_id}:${correction.finding_id}`,
@@ -350,7 +350,7 @@ const correctionDecisions = corrections.map(correction => {
     }] : proofGap ? [{
       rendering: 'Present the source proof as complete without qualifying the unsupported step.',
       disposition: 'rejected',
-      reason: 'The identified missing side condition or derivation has not been supplied.'
+      reason: 'The identified missing definition, side condition or derivation has not been supplied.'
     }] : [{
       rendering: 'Translate the defective source wording or formula verbatim.',
       disposition: 'rejected',
@@ -360,7 +360,7 @@ const correctionDecisions = corrections.map(correction => {
     confidence_reason: qualified
       ? 'The notation expansion and the proof establish mathematical equivalence, and the cited consolidation review rejects the former defect claim; only specialist assessment of Telugu qualification phrasing remains useful.'
       : proofGap
-      ? 'The missing proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.'
+      ? 'The unresolved definition or proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.'
       : 'The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.',
     provisional: proofGap,
     review_priority: proofGap ? 'high' : 'normal',
