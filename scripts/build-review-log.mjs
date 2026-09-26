@@ -540,6 +540,14 @@ locations['TE-T106']=[
  L('content/many-valued-logic/sequent-calculus/propositional-rules.tex',141,141,149,150,'strong Kleene logic','బలమైన క్లీని తర్కంలో'),
  L('content/many-valued-logic/sequent-calculus/propositional-rules.tex',232,232,242,243,'Example','ఉదాహరణ')
 ];
+locations['TE-T107']=[
+ L('content/normal-modal-logic/normal-modal-logic.tex',7,7,7,7,'Normal Modal Logics','నార్మల్ మోడల్ తర్కాలు'),
+ L('content/normal-modal-logic/syntax-and-semantics/introduction.tex',13,14,13,14,'modal propositions','మోడల్ ప్రతిజ్ఞావాక్యాలను'),
+ L('content/normal-modal-logic/syntax-and-semantics/introduction.tex',66,66,88,88,'accessibility relation','ప్రాప్యత సంబంధం'),
+ L('content/normal-modal-logic/syntax-and-semantics/introduction.tex',86,86,120,120,'correspondence theory','అనురూపతా సిద్ధాంతం'),
+ L('content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex',11,11,11,11,'Basic Modal Logic','మౌలిక మోడల్ తర్కపు భాష'),
+ L('content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex',105,105,141,141,'modal-free','మోడల్-రహిత సూత్రం')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -631,6 +639,7 @@ alternatives['TE-T103']=['సత్యమూల్యం, సత్య పట్
 alternatives['TE-T104']=['TE-T032/100/101/102/103లోని సత్యమూల్యం, మాత్రిక, వికల్పం, సర్వసత్యం, అనుగమనం పదాలను కొనసాగించి ప్రత్యేక మూడు-విలువల వ్యవస్థల పేర్లు, విస్ఫోటనరహిత భావం మూల నిర్వచనాలకు కట్టుబడి తాత్కాలికంగా ఇవ్వడం (ఎంపిక)','స్థానిక ద్విమూల్య పేజీలు క్లీని, గోడెల్, LP, హాల్డెన్, ఆర్-మింగిల్ వ్యవస్థలను నేరుగా బోధిస్తాయని చెప్పడం (తిరస్కరణ)','అసత్య స్థిరాంకానికి మూలంలో లేని విలువను మౌనంగా చేర్చి క్లీని సర్వసత్యాలు లేవనే వాదం నిలుస్తుందని ఊహించడం (తిరస్కరణ)','విస్ఫోటనరహితతను అన్ని వైరుధ్యాలనుంచి అన్ని ముగింపులు వస్తాయని పొరబడడం (తిరస్కరణ)'];
 alternatives['TE-T105']=['TE-P006 కరణీయ/వాస్తవ, TE-P008 సమితి, TE-P019 సత్యతావిలువ, TE-P011 ప్రమేయం పదాలను సంచిక స్థిర వాడుకతో కొనసాగించి, ఫజీ, అనంత-విలువల తర్కం, గోడెల్--డమ్మెట్ పథకాన్ని మూల నిర్వచనానికి కట్టుబడి తాత్కాలికంగా వాడటం (ఎంపిక)','TE-P007లో సహజ సంఖ్యలు ఒకటితో మొదలయ్యే స్థానిక సంప్రదాయాన్ని సున్నాతో మొదలయ్యే OpenLogic Natపై రుద్దడం (తిరస్కరణ)','స్థానిక ద్విమూల్య తర్క పేజీలు ఫజీ లేదా గోడెల్--డమ్మెట్ ప్రత్యేక భావాలను నేరుగా ధృవీకరిస్తాయని చెప్పడం (తిరస్కరణ)','ముద్రిత V_m పరిమితి, అసత్య స్థిరాంక లోపాలను దాచడం (తిరస్కరణ)'];
 alternatives['TE-T106']=['TE-P019/020 సత్యతావిలువ, TE-P024 వ్యుత్పత్తి, TE-P033 అనుమానం అనే ప్రత్యక్ష వాడుకను TE-T035/036 సీక్వెంట్ పదాలతో కొనసాగించి, n-వైపుల ప్రత్యేక రూపాన్ని స్థిర మూల నిర్వచనంతో నియంత్రించడం (ఎంపిక)','సీక్వెంట్‌కు స్థానిక పేజీలలో కనబడని ఒక స్వదేశీ సాంకేతిక పదాన్ని స్థిరపడినదిగా ప్రకటించడం (తిరస్కరణ)','ద్విమూల్య స్థానిక ఫలిత నిర్వచనం మూడు-విలువల నియమాలను నేరుగా నిరూపిస్తుందని ఊహించడం (తిరస్కరణ)','నియమ చిత్రాల్లోని మూడు-విలువల స్థానాలను గద్య సరళీకరణ కోసం మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T107']=['నార్మల్ మోడల్ తర్కం అనే గుర్తించదగిన సాంకేతిక అరువును TE-T053/103 సాధ్యలోక పదజాలంతో కలిపి, ప్రత్యేక నిర్వచనాన్ని స్థిర మూలానికి కట్టుబడి ఉంచడం (ఎంపిక)','నార్మల్‌ను రోజువారీ సాధారణ అని చదివి సాంకేతిక వర్గభేదాన్ని మసకబార్చడం (తిరస్కరణ)','స్థానిక ద్విమూల్య ప్రతిజ్ఞావాక్య పేజీలు క్రిప్కె అర్థవిచారం లేదా అనురూపతా సిద్ధాంతాన్ని నేరుగా బోధిస్తాయని చెప్పడం (తిరస్కరణ)','బాక్స్, డైమండ్ సూత్ర సంకేతాలను గద్య సౌలభ్యం కోసం మార్చడం (తిరస్కరణ)'];
 const completion=`partial_${draftedSourceUnits}_of_${sourceUnitTotal}_draft_units`;
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
@@ -647,7 +656,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T106 record the Batch 025--Batch 064 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-26 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T107 record the Batch 025--Batch 065 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -945,6 +954,7 @@ const correctionQuestions={
   ,'OLTELAMLDFPIX-003':'ఒకే సంఖ్యాప్రమేయాన్ని సూచించడాన్ని పదాల బీటా-తుల్యతతో కలపకుండా స్థిరబిందు సమీకరణాన్ని ప్రత్యేకంగా చెప్పామా?'
   ,'OLTELAMLDFPIX-004':'Yg=(UU)gలో లోపలి UU మాత్రమే రెడెక్స్ అని, మొత్తం పదంలో అది ఉందని వాక్యం స్పష్టంగా చెబుతుందా?'
   ,'OLTELAMLDFPIX-005':'చర్చ్ సంయోజకం బీటా-తుల్యతను మాత్రమే ఇస్తుందనే పోలికలో Y_Cను వాడి, ట్యూరింగ్ Y ముందుకు తగ్గుతుందనే సిద్ధాంతాన్ని నిలిపామా?'
+  ,'OLTENMLLAN-001':'Is the lone unmatched closing parenthesis removed only from the prvOr branch of defIf, with both subformulas, the other branch, and the adjacent Telugu disclosure preserved?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

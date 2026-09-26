@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 406 of 722 draft units**. This view selects 430 of 483 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 410 of 722 draft units**. This view selects 431 of 485 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4303,3 +4303,13 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0404; many-valued-logic/sequent-calculus/rules-and-proofs; translation/content/many-valued-logic/sequent-calculus/rules-and-proofs.tex:24; printed/PDF page pending
 
 - Please double-check: Please double-check: Does each Gamma_i correctly quantify over all n sides, consistent with the displayed sequent and later position-i rules?
+
+## REV-OLTENMLLAN-001 — OLTENMLLAN-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: defIfలో prvOr ప్రత్యామ్నాయపు చివరి జతలేని ముగింపు కుండలీకరణను మాత్రమే తొలగించి, మిగతా సంచాలకాలు, ఉపసూత్రాలు, మరో శాఖను యథాతథంగా ఉంచాం; అదే స్థానంలో ప్రకటించాం.
+
+- Occurrences: OLP-0410; normal-modal-logic/syntax-and-semantics/language-modal-logic; translation/content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:120; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the lone unmatched closing parenthesis removed only from the prvOr branch of defIf, with both subformulas, the other branch, and the adjacent Telugu disclosure preserved?

@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 406 of 722 draft units**. This log contains 106 terminology/sense decisions and 377 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 410 of 722 draft units**. This log contains 107 terminology/sense decisions and 378 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2551,6 +2551,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: సీక్వెంట్ అరువు, n-వైపుల సంకేతం, నిర్దేశిత స్థానాలు, నిర్దిష్ట బహు-విలువల నియమాలకు స్థానిక పేజీలలో ప్రత్యక్ష సాక్ష్యం లేదు; ఎంపిక తాత్కాలికం. స్థానిక ద్విమూల్య ఫలిత వివరణను మూడు-విలువల నియమాలకు గణిత ప్రమాణంగా వాడలేదు. OLTEMVLSEQ-001–003 సవరణలు స్థిర మూలంలోని సమీప ప్రదర్శనలు, స్థానం-i నియమాలపై ఆధారపడతాయి.
 
 - Please double-check: Please double-check whether “n-వైపుల సీక్వెంట్ కలనం / ప్రారంభ సీక్వెంట్ / నిర్దేశిత సత్యమూల్యపు స్థానం / వ్యుత్పత్తి, సిద్ధాంతం / నిర్మాణాత్మక బలహీనీకరణ, సంకోచనం, మార్పిడి, కట్ / మూడు-విలువల తార్కిక నియమాలు” is idiomatic and technically standard for “n-sided sequent calculus / initial sequent / designated-value position / derivation and theorem / structural weakening, contraction, exchange and cut / three-valued logical rules” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T107 — normal modal logic / modal proposition / possibility and necessity / alethic modality / Kripke semantics and accessibility relation / correspondence theory / modal-free formula / box and diamond operators
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: నార్మల్ మోడల్ తర్కం / మోడల్ ప్రతిజ్ఞావాక్యం / సాధ్యత, అవశ్యకత / అలెథిక్ (సత్య-అవశ్యకత) మోడాలిటీ / క్రిప్కె అర్థవిచారం, ప్రాప్యత సంబంధం / అనురూపతా సిద్ధాంతం / మోడల్-రహిత సూత్రం / బాక్స్, డైమండ్ మోడల్ సంచాలకాలు
+
+- Exact implementation: OLP-0407; normal-modal-logic/normal-modal-logic; content/normal-modal-logic/normal-modal-logic.tex:7 ↔ translation/content/normal-modal-logic/normal-modal-logic.tex:7 (OLP-0407-B004); printed/PDF page pending; OLP-0409; normal-modal-logic/syntax-and-semantics/introduction; content/normal-modal-logic/syntax-and-semantics/introduction.tex:13-25 ↔ translation/content/normal-modal-logic/syntax-and-semantics/introduction.tex:13-26 (OLP-0409-B006); printed/PDF page pending; OLP-0409; normal-modal-logic/syntax-and-semantics/introduction; content/normal-modal-logic/syntax-and-semantics/introduction.tex:59-71 ↔ translation/content/normal-modal-logic/syntax-and-semantics/introduction.tex:77-98 (OLP-0409-B010); printed/PDF page pending; OLP-0409; normal-modal-logic/syntax-and-semantics/introduction; content/normal-modal-logic/syntax-and-semantics/introduction.tex:85-95 ↔ translation/content/normal-modal-logic/syntax-and-semantics/introduction.tex:120-137 (OLP-0409-B012); printed/PDF page pending; OLP-0410; normal-modal-logic/syntax-and-semantics/language-modal-logic; content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:11 ↔ translation/content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:11 (OLP-0410-B005); printed/PDF page pending; OLP-0410; normal-modal-logic/syntax-and-semantics/language-modal-logic; content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:104-105 ↔ translation/content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:139-141 (OLP-0410-B029); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P023, PDF 85, printed 78, Consequence heading and truth-table definition; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, TE-P019లో సత్యతావిలువ మరియు సంయోజకం, TE-P023లో ఫలితం, TE-P024లో నియమ-ఆధార వ్యుత్పత్తి పేజీలను స్థానిక చిత్రాల్లో చూశాం. ఈ సాధారణ పదజాలాన్ని OLP-0407–0410 భాగ, అధ్యాయ, పరిచయ, భాషా నిర్వచనాల గద్యానికి అన్వయించాం. నార్మల్ మోడల్ తర్కం, క్రిప్కె ప్రాప్యత సంబంధం, అనురూపతా సిద్ధాంతం, అలెథిక్ మోడాలిటీ, బాక్స్/డైమండ్ నిర్దిష్ట అర్థాలను ఈ స్థానిక పేజీలు నేరుగా బోధించవు; స్థిర OpenLogic మూల నిర్వచనాలు, ముందరి TE-T053/103 నిర్ణయాలే వాటిని నియంత్రిస్తాయి. నార్మల్, మోడల్, అలెథిక్, క్రిప్కె, లూయిస్, లాంగ్‌ఫర్డ్, కార్నాప్ గుర్తించదగిన సాంకేతిక/వ్యక్తి నామ రూపాలు; Box, Diamond, S1–S5, D/T/B/4/5 and tag/logic macros protected mathematical notation.
+
+- Alternatives: నార్మల్ మోడల్ తర్కం అనే గుర్తించదగిన సాంకేతిక అరువును TE-T053/103 సాధ్యలోక పదజాలంతో కలిపి, ప్రత్యేక నిర్వచనాన్ని స్థిర మూలానికి కట్టుబడి ఉంచడం (ఎంపిక); నార్మల్‌ను రోజువారీ సాధారణ అని చదివి సాంకేతిక వర్గభేదాన్ని మసకబార్చడం (తిరస్కరణ); స్థానిక ద్విమూల్య ప్రతిజ్ఞావాక్య పేజీలు క్రిప్కె అర్థవిచారం లేదా అనురూపతా సిద్ధాంతాన్ని నేరుగా బోధిస్తాయని చెప్పడం (తిరస్కరణ); బాక్స్, డైమండ్ సూత్ర సంకేతాలను గద్య సౌలభ్యం కోసం మార్చడం (తిరస్కరణ)
+
+- Uncertainty: నార్మల్, మోడల్, అలెథిక్, క్రిప్కె వంటి గుర్తించదగిన అరువులు లేదా లిప్యంతరీకరణలు తాత్కాలిక ఎంపికలు. నార్మల్ అనేది సాంకేతిక తర్క-వర్గం; రోజువారీ సాధారణ అనే అర్థం కాదు. స్థానిక ద్విమూల్య తర్క పేజీలు సాధ్య లోకాల అర్థవిచారానికిగాని OLTENMLLAN-001 కుండలీకరణ సవరణకుగాని గణిత ప్రమాణం కావు.
+
+- Please double-check: Please double-check whether “నార్మల్ మోడల్ తర్కం / మోడల్ ప్రతిజ్ఞావాక్యం / సాధ్యత, అవశ్యకత / అలెథిక్ (సత్య-అవశ్యకత) మోడాలిటీ / క్రిప్కె అర్థవిచారం, ప్రాప్యత సంబంధం / అనురూపతా సిద్ధాంతం / మోడల్-రహిత సూత్రం / బాక్స్, డైమండ్ మోడల్ సంచాలకాలు” is idiomatic and technically standard for “normal modal logic / modal proposition / possibility and necessity / alethic modality / Kripke semantics and accessibility relation / correspondence theory / modal-free formula / box and diamond operators” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -11599,3 +11623,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Does each Gamma_i correctly quantify over all n sides, consistent with the displayed sequent and later position-i rules?
+
+## REV-OLTENMLLAN-001 — OLTENMLLAN-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: defIfలో prvOr ప్రత్యామ్నాయపు చివరి జతలేని ముగింపు కుండలీకరణను మాత్రమే తొలగించి, మిగతా సంచాలకాలు, ఉపసూత్రాలు, మరో శాఖను యథాతథంగా ఉంచాం; అదే స్థానంలో ప్రకటించాం.
+
+- Exact implementation: OLP-0410; normal-modal-logic/syntax-and-semantics/language-modal-logic; language-modal-logic.tex lines 91-92 ↔ translation/content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:120 (OLP-0410-B025); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLLAN-20260926; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: defIfలో prvOr ప్రత్యామ్నాయపు చివరి జతలేని ముగింపు కుండలీకరణను మాత్రమే తొలగించి, మిగతా సంచాలకాలు, ఉపసూత్రాలు, మరో శాఖను యథాతథంగా ఉంచాం; అదే స్థానంలో ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Is the lone unmatched closing parenthesis removed only from the prvOr branch of defIf, with both subformulas, the other branch, and the adjacent Telugu disclosure preserved?

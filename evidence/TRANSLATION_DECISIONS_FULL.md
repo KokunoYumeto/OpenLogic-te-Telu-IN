@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **406 of 722 source units drafted**. This readable view contains all 483 decisions and 968 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **410 of 722 source units drafted**. This readable view contains all 485 decisions and 975 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3164,6 +3164,37 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T106-OCC-006; OLP-0406; OLP-0406-B005; source upstream/content/many-valued-logic/sequent-calculus/propositional-rules.tex:11 bytes 193-245 SHA-256 7ec37019c2bc225b2cd247dbee140a3ba8e39b319c8e5c49e5b635dc669659e7; target translation/content/many-valued-logic/sequent-calculus/propositional-rules.tex:11 bytes 193-323 SHA-256 5bd72cc29464d67496c96c24f5aa6ed5affa03919497cf318b65ef7ece668dfa; reader page pending.
   - te-Telu-IN-TE-T106-OCC-007; OLP-0406; OLP-0406-B022; source upstream/content/many-valued-logic/sequent-calculus/propositional-rules.tex:141 bytes 4466-4521 SHA-256 7ec37019c2bc225b2cd247dbee140a3ba8e39b319c8e5c49e5b635dc669659e7; target translation/content/many-valued-logic/sequent-calculus/propositional-rules.tex:149-150 bytes 5493-5615 SHA-256 5bd72cc29464d67496c96c24f5aa6ed5affa03919497cf318b65ef7ece668dfa; reader page pending.
   - te-Telu-IN-TE-T106-OCC-008; OLP-0406; OLP-0406-B026; source upstream/content/many-valued-logic/sequent-calculus/propositional-rules.tex:190-233 bytes 6169-7922 SHA-256 7ec37019c2bc225b2cd247dbee140a3ba8e39b319c8e5c49e5b635dc669659e7; target translation/content/many-valued-logic/sequent-calculus/propositional-rules.tex:200-244 bytes 7320-9140 SHA-256 5bd72cc29464d67496c96c24f5aa6ed5affa03919497cf318b65ef7ece668dfa; reader page pending.
+
+## te-Telu-IN-TE-T107 — normal modal logic / modal proposition / possibility and necessity / alethic modality / Kripke semantics and accessibility relation / correspondence theory / modal-free formula / box and diamond operators
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: నార్మల్ మోడల్ తర్కం / మోడల్ ప్రతిజ్ఞావాక్యం / సాధ్యత, అవశ్యకత / అలెథిక్ (సత్య-అవశ్యకత) మోడాలిటీ / క్రిప్కె అర్థవిచారం, ప్రాప్యత సంబంధం / అనురూపతా సిద్ధాంతం / మోడల్-రహిత సూత్రం / బాక్స్, డైమండ్ మోడల్ సంచాలకాలు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “normal modal logic / modal proposition / possibility and necessity / alethic modality / Kripke semantics and accessibility relation / correspondence theory / modal-free formula / box and diamond operators” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: నార్మల్, మోడల్, అలెథిక్, క్రిప్కె వంటి గుర్తించదగిన అరువులు లేదా లిప్యంతరీకరణలు తాత్కాలిక ఎంపికలు. నార్మల్ అనేది సాంకేతిక తర్క-వర్గం; రోజువారీ సాధారణ అనే అర్థం కాదు. స్థానిక ద్విమూల్య తర్క పేజీలు సాధ్య లోకాల అర్థవిచారానికిగాని OLTENMLLAN-001 కుండలీకరణ సవరణకుగాని గణిత ప్రమాణం కావు.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, TE-P019లో సత్యతావిలువ మరియు సంయోజకం, TE-P023లో ఫలితం, TE-P024లో నియమ-ఆధార వ్యుత్పత్తి పేజీలను స్థానిక చిత్రాల్లో చూశాం. ఈ సాధారణ పదజాలాన్ని OLP-0407–0410 భాగ, అధ్యాయ, పరిచయ, భాషా నిర్వచనాల గద్యానికి అన్వయించాం. నార్మల్ మోడల్ తర్కం, క్రిప్కె ప్రాప్యత సంబంధం, అనురూపతా సిద్ధాంతం, అలెథిక్ మోడాలిటీ, బాక్స్/డైమండ్ నిర్దిష్ట అర్థాలను ఈ స్థానిక పేజీలు నేరుగా బోధించవు; స్థిర OpenLogic మూల నిర్వచనాలు, ముందరి TE-T053/103 నిర్ణయాలే వాటిని నియంత్రిస్తాయి. నార్మల్, మోడల్, అలెథిక్, క్రిప్కె, లూయిస్, లాంగ్‌ఫర్డ్, కార్నాప్ గుర్తించదగిన సాంకేతిక/వ్యక్తి నామ రూపాలు; Box, Diamond, S1–S5, D/T/B/4/5 and tag/logic macros protected mathematical notation.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P023 [checked_context_only], PDF page 85; printed page 78; Consequence heading and truth-table definition; Direct consequence terminology; derivability is evidenced separately. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: నార్మల్ మోడల్ తర్కం అనే గుర్తించదగిన సాంకేతిక అరువును TE-T053/103 సాధ్యలోక పదజాలంతో కలిపి, ప్రత్యేక నిర్వచనాన్ని స్థిర మూలానికి కట్టుబడి ఉంచడం [viable_alternative: ఎంపిక] | నార్మల్‌ను రోజువారీ సాధారణ అని చదివి సాంకేతిక వర్గభేదాన్ని మసకబార్చడం [viable_alternative: తిరస్కరణ] | స్థానిక ద్విమూల్య ప్రతిజ్ఞావాక్య పేజీలు క్రిప్కె అర్థవిచారం లేదా అనురూపతా సిద్ధాంతాన్ని నేరుగా బోధిస్తాయని చెప్పడం [viable_alternative: తిరస్కరణ] | బాక్స్, డైమండ్ సూత్ర సంకేతాలను గద్య సౌలభ్యం కోసం మార్చడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “నార్మల్ మోడల్ తర్కం / మోడల్ ప్రతిజ్ఞావాక్యం / సాధ్యత, అవశ్యకత / అలెథిక్ (సత్య-అవశ్యకత) మోడాలిటీ / క్రిప్కె అర్థవిచారం, ప్రాప్యత సంబంధం / అనురూపతా సిద్ధాంతం / మోడల్-రహిత సూత్రం / బాక్స్, డైమండ్ మోడల్ సంచాలకాలు” is idiomatic and technically standard for “normal modal logic / modal proposition / possibility and necessity / alethic modality / Kripke semantics and accessibility relation / correspondence theory / modal-free formula / box and diamond operators” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T107-OCC-001; OLP-0407; OLP-0407-B004; source upstream/content/normal-modal-logic/normal-modal-logic.tex:7 bytes 103-137 SHA-256 8dcd5a551f104cbdeb2a3bf027ce4b2a203c2dffcc5f93a0827bdcda7e230604; target translation/content/normal-modal-logic/normal-modal-logic.tex:7 bytes 103-177 SHA-256 6b1e1f4b0fd0f29780da6ae5d8f945e6ea509eff6fda6620fc12fbc0792b96aa; reader page pending.
+  - te-Telu-IN-TE-T107-OCC-002; OLP-0409; OLP-0409-B006; source upstream/content/normal-modal-logic/syntax-and-semantics/introduction.tex:13-25 bytes 217-827 SHA-256 472bb6066a6995031744114d0238d83c60eb6a3d241d8e77571c59a4b912fed6; target translation/content/normal-modal-logic/syntax-and-semantics/introduction.tex:13-26 bytes 223-1364 SHA-256 8241df0727fab97569e2cffec45e1780f374f5669f759b91d0cf3f55888bbd4b; reader page pending.
+  - te-Telu-IN-TE-T107-OCC-003; OLP-0409; OLP-0409-B010; source upstream/content/normal-modal-logic/syntax-and-semantics/introduction.tex:59-71 bytes 2622-3433 SHA-256 472bb6066a6995031744114d0238d83c60eb6a3d241d8e77571c59a4b912fed6; target translation/content/normal-modal-logic/syntax-and-semantics/introduction.tex:77-98 bytes 5304-7034 SHA-256 8241df0727fab97569e2cffec45e1780f374f5669f759b91d0cf3f55888bbd4b; reader page pending.
+  - te-Telu-IN-TE-T107-OCC-004; OLP-0409; OLP-0409-B012; source upstream/content/normal-modal-logic/syntax-and-semantics/introduction.tex:85-95 bytes 4163-4849 SHA-256 472bb6066a6995031744114d0238d83c60eb6a3d241d8e77571c59a4b912fed6; target translation/content/normal-modal-logic/syntax-and-semantics/introduction.tex:120-137 bytes 8757-10044 SHA-256 8241df0727fab97569e2cffec45e1780f374f5669f759b91d0cf3f55888bbd4b; reader page pending.
+  - te-Telu-IN-TE-T107-OCC-005; OLP-0410; OLP-0410-B005; source upstream/content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:11 bytes 199-245 SHA-256 a75f481c6e175130df3c9145984ca245a8156503d2cb9ff833bd77c39b9529ab; target translation/content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:11 bytes 199-272 SHA-256 4d09a796fd66515a68fdf62725bc3eca35e6089c72d5c53c447ff1d7749916dd; reader page pending.
+  - te-Telu-IN-TE-T107-OCC-006; OLP-0410; OLP-0410-B029; source upstream/content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:104-105 bytes 3311-3403 SHA-256 a75f481c6e175130df3c9145984ca245a8156503d2cb9ff833bd77c39b9529ab; target translation/content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:139-141 bytes 6124-6336 SHA-256 4d09a796fd66515a68fdf62725bc3eca35e6089c72d5c53c447ff1d7749916dd; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -13046,3 +13077,29 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEMVLSEQ-003-OCC-001; OLP-0404; OLP-0404-B007; source upstream/content/many-valued-logic/sequent-calculus/rules-and-proofs.tex:16-23 bytes 338-583 SHA-256 edaed42989f5e52e48f2d3a4c28b822e99df5c7fad3861cf31005e23791240a3; target translation/content/many-valued-logic/sequent-calculus/rules-and-proofs.tex:24 bytes 943-1006 SHA-256 9d4f562676c982a5fba5afb88e409222ada929de1d7d42d515db0e909b1849dc; reader page pending.
+
+## te-Telu-IN-OLTENMLLAN-001 — OLTENMLLAN-001: unmatched closing parenthesis in defined conditional alternative
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: defIfలో prvOr ప్రత్యామ్నాయపు చివరి జతలేని ముగింపు కుండలీకరణను మాత్రమే తొలగించి, మిగతా సంచాలకాలు, ఉపసూత్రాలు, మరో శాఖను యథాతథంగా ఉంచాం; అదే స్థానంలో ప్రకటించాం.
+
+- Intended sense: Repair the audited unmatched closing parenthesis in defined conditional alternative at language-modal-logic.tex lines 91-92, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLLAN-20260926:OLTENMLLAN-001 [checked_supports], content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex; language-modal-logic.tex lines 91-92; unmatched_closing_parenthesis_in_defined_conditional_alternative; defIfలో prvOr ప్రత్యామ్నాయపు చివరి జతలేని ముగింపు కుండలీకరణను మాత్రమే తొలగించి, మిగతా సంచాలకాలు, ఉపసూత్రాలు, మరో శాఖను యథాతథంగా ఉంచాం; అదే స్థానంలో ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Is the lone unmatched closing parenthesis removed only from the prvOr branch of defIf, with both subformulas, the other branch, and the adjacent Telugu disclosure preserved?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLLAN-001-OCC-001; OLP-0410; OLP-0410-B025; source upstream/content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:91-92 bytes 2929-3040 SHA-256 a75f481c6e175130df3c9145984ca245a8156503d2cb9ff833bd77c39b9529ab; target translation/content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:120 bytes 5218-5295 SHA-256 4d09a796fd66515a68fdf62725bc3eca35e6089c72d5c53c447ff1d7749916dd; reader page pending.
