@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 369 of 722 draft units**. This view selects 380 of 417 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 370 of 722 draft units**. This view selects 383 of 421 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -3803,3 +3803,33 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0369; lambda-calculus/church-rosser/parallel-beta-reduction; translation/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:110; printed/PDF page pending
 
 - Please double-check: Please double-check: నాలుగవ సందర్భానికి అవసరమైన తాజా ప్రతినిధులు, ప్రతిస్థాపనల నిర్వచితత్వం, మార్పిడి నియమం మూలంలో నిరూపించలేదనే పరిమితి తగినంత స్పష్టమా?
+
+## REV-OLTELAMCRB-001 — OLTELAMCRB-001
+
+- Priority/confidence: high / source_proof_gap_disclosed_not_repaired
+
+- Chosen wording/treatment: retained the printed root-redex calculation but disclosed omitted compatible context cases; no complete proof claimed
+
+- Occurrences: OLP-0370; lambda-calculus/church-rosser/beta-reduction; translation/content/lambda-calculus/church-rosser/beta-reduction.tex:24; printed/PDF page pending
+
+- Please double-check: Please double-check: అనుకూల బీటా సంకోచనంలోని అమూర్తీకరణ/ప్రయోగ సందర్భాలకు మూలస్థాన గణన సరిపోదనే నిరూపణ పరిమితి స్పష్టమా?
+
+## REV-OLTELAMCRB-002 — OLTELAMCRB-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: replaced the extraneous M-prime in the case-four witness list with N-prime, with adjacent Telugu disclosure
+
+- Occurrences: OLP-0370; lambda-calculus/church-rosser/beta-reduction; translation/content/lambda-calculus/church-rosser/beta-reduction.tex:55; printed/PDF page pending
+
+- Please double-check: Please double-check: నాలుగవ సందర్భపు సాక్షి-పద జాబితాలో N-prime పునరుద్ధరణ అదే సందర్భపు పూర్వాపేక్ష, తరువాతి తగ్గింపుతో సరిపోతుందా?
+
+## REV-OLTELAMCRB-003 — OLTELAMCRB-003
+
+- Priority/confidence: high / source_proof_gap_disclosed_not_repaired
+
+- Chosen wording/treatment: retained the three cited dependencies in the final Church--Rosser proof but disclosed inherited proof gaps; no independent certification claimed
+
+- Occurrences: OLP-0370; lambda-calculus/church-rosser/beta-reduction; translation/content/lambda-calculus/church-rosser/beta-reduction.tex:96; printed/PDF page pending
+
+- Please double-check: Please double-check: తుది చర్చ్--రోసర్ వాదన ముందరి రెండు ఇంకా అసంపూర్ణ నిరూపణలపై ఆధారపడుతుందనే జాగ్రత్త పాఠకుడికి కనిపిస్తుందా?

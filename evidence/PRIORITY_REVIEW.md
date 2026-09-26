@@ -1,6 +1,6 @@
 # Priority review
 
-This view contains 60 of 417 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
+This view contains 62 of 421 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
 
 Final reader pages remain pending; exact source and target file/line locators are shown.
 
@@ -603,3 +603,23 @@ Final reader pages remain pending; exact source and target file/line locators ar
 - Occurrences: OLP-0369 translation/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:110
 
 - Review question: Please double-check: నాలుగవ సందర్భానికి అవసరమైన తాజా ప్రతినిధులు, ప్రతిస్థాపనల నిర్వచితత్వం, మార్పిడి నియమం మూలంలో నిరూపించలేదనే పరిమితి తగినంత స్పష్టమా?
+
+## te-Telu-IN-OLTELAMCRB-001 — OLTELAMCRB-001: one step beta to parallel proof omits compatible context cases
+
+- Chosen rendering: retained the printed root-redex calculation but disclosed omitted compatible context cases; no complete proof claimed
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0370 translation/content/lambda-calculus/church-rosser/beta-reduction.tex:24
+
+- Review question: Please double-check: అనుకూల బీటా సంకోచనంలోని అమూర్తీకరణ/ప్రయోగ సందర్భాలకు మూలస్థాన గణన సరిపోదనే నిరూపణ పరిమితి స్పష్టమా?
+
+## te-Telu-IN-OLTELAMCRB-003 — OLTELAMCRB-003: church rosser conclusion inherits unresolved source proof dependencies
+
+- Chosen rendering: retained the three cited dependencies in the final Church--Rosser proof but disclosed inherited proof gaps; no independent certification claimed
+
+- Confidence / provisional: low / true
+
+- Occurrences: OLP-0370 translation/content/lambda-calculus/church-rosser/beta-reduction.tex:96
+
+- Review question: Please double-check: తుది చర్చ్--రోసర్ వాదన ముందరి రెండు ఇంకా అసంపూర్ణ నిరూపణలపై ఆధారపడుతుందనే జాగ్రత్త పాఠకుడికి కనిపిస్తుందా?

@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **369 of 722 source units drafted**. This readable view contains all 417 decisions and 786 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **370 of 722 source units drafted**. This readable view contains all 421 decisions and 793 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -2633,6 +2633,35 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T090-OCC-003; OLP-0369; OLP-0369-B012; source upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:51-61 bytes 1701-2192 SHA-256 37905b8d25e97bb2554d4df43321bbcefd55816a7d89fe85279c4119a7871f52; target translation/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:55-65 bytes 3486-4131 SHA-256 3cb825a6078d0d87f56e189794c35ee1aef678a10b844a244a1f3a3180a2272f; reader page pending.
   - te-Telu-IN-TE-T090-OCC-004; OLP-0369; OLP-0369-B016; source upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:79-100 bytes 2862-3943 SHA-256 37905b8d25e97bb2554d4df43321bbcefd55816a7d89fe85279c4119a7871f52; target translation/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:85-112 bytes 5398-8485 SHA-256 3cb825a6078d0d87f56e189794c35ee1aef678a10b844a244a1f3a3180a2272f; reader page pending.
   - te-Telu-IN-TE-T090-OCC-005; OLP-0369; OLP-0369-B018; source upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:106-141 bytes 4024-5947 SHA-256 37905b8d25e97bb2554d4df43321bbcefd55816a7d89fe85279c4119a7871f52; target translation/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:118-162 bytes 8607-11308 SHA-256 3cb825a6078d0d87f56e189794c35ee1aef678a10b844a244a1f3a3180a2272f; reader page pending.
+
+## te-Telu-IN-TE-T091 — compatible beta-contraction / parallel beta-reduction comparison / least transitive relation / Church--Rosser transfer
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: అనుకూల బీటా-సంకోచనం / సమాంతర బీటా-తగ్గింపుతో పోలిక / కనిష్ఠ సంక్రమణ సంబంధం / చర్చ్--రోసర్ లక్షణ బదిలీ
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “compatible beta-contraction / parallel beta-reduction comparison / least transitive relation / Church--Rosser transfer” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: ప్రత్యక్ష స్థానిక లాంబ్డా-కలనశాస్త్ర సాక్ష్యం లేదు; ప్రత్యేక పదాల ఎంపిక తాత్కాలికం. బీటా సంకోచనం నుంచి సమాంతర తగ్గింపుకు మూల నిరూపణలో అనుకూల సందర్భాలు లేవు; ముందరి ప్రతిస్థాపన-సంయోజన ఖాళీ కూడా తెరిచే ఉంది.
+
+- Rationale: TE-P024లో వ్యుత్పత్తి, నిరూపణ దశలు; TE-P029లో చర పరిధి/బద్ధత్వం; TE-P032లో తర్క పద్ధతుల ఆగమన, సిద్ధాంత గద్యాన్ని ప్రత్యక్షంగా చూశాం. ఏ పేజీ లాంబ్డా-బీటా సంకోచనం, సమాంతర తగ్గింపు లేదా చర్చ్--రోసర్ బదిలీని నేరుగా నిర్వచించదు. OLP-0365లోని అనుకూల బీటా-సంకోచన నిర్వచనం, OLP-0369 నాలుగు నియమాలు, OLP-0368 సంక్రమణ-మూసివేత ఫలితం ఇక్కడి ప్రత్యేక అర్థాలను నియంత్రిస్తాయి. OLTELAMCRB-001–003 నిరూపణ పరిమితి, సాక్షి-పద సవరణ, వారసత్వ ఖాళీలను పక్కనే ప్రకటిస్తున్నాయి. బీటా, చర్చ్--రోసర్ మునుపటి బదిలీ పదాలు; β, M, N, P, Q, సంబంధ/ప్రతిస్థాపన మాక్రోలు గణిత గుర్తింపులుగా యథాతథం.
+
+- Authorities checked: TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: మునుపటి బీటా సంకోచనం, సమాంతర తగ్గింపు, సంక్రమణ సంబంధం పదజాలాన్ని మూల నిర్వచనాల తేడాతో కొనసాగించడం [viable_alternative: ఎంపిక] | అనుకూల బీటా సంకోచనాన్ని మూలస్థాన రెడెక్స్‌కే పరిమితం చేయడం [viable_alternative: తిరస్కరణ] | స్థానిక పేజీలు ప్రత్యేక చర్చ్--రోసర్ బదిలీని నేరుగా స్థాపిస్తాయని చెప్పడం [viable_alternative: తిరస్కరణ] | ఆధార నిరూపణ ఖాళీలను దాచిపెట్టి తుది వాదనకు స్వతంత్ర ధృవీకరణ ఉందనడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “అనుకూల బీటా-సంకోచనం / సమాంతర బీటా-తగ్గింపుతో పోలిక / కనిష్ఠ సంక్రమణ సంబంధం / చర్చ్--రోసర్ లక్షణ బదిలీ” is idiomatic and technically standard for “compatible beta-contraction / parallel beta-reduction comparison / least transitive relation / Church--Rosser transfer” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T091-OCC-001; OLP-0370; OLP-0370-B005; source upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:11 bytes 180-210 SHA-256 c51e50d16a675080277053003c33dc22951be9a43bb9910cc1bf1dff6e05f361; target translation/content/lambda-calculus/church-rosser/beta-reduction.tex:11 bytes 180-225 SHA-256 42ab7e7d2bca2aa2cf876c10cf9c2163db834f6b245d256e7fb39f73b2fdd8f1; reader page pending.
+  - te-Telu-IN-TE-T091-OCC-002; OLP-0370; OLP-0370-B006; source upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:13-21 bytes 211-628 SHA-256 c51e50d16a675080277053003c33dc22951be9a43bb9910cc1bf1dff6e05f361; target translation/content/lambda-calculus/church-rosser/beta-reduction.tex:13-25 bytes 226-1800 SHA-256 42ab7e7d2bca2aa2cf876c10cf9c2163db834f6b245d256e7fb39f73b2fdd8f1; reader page pending.
+  - te-Telu-IN-TE-T091-OCC-003; OLP-0370; OLP-0370-B009; source upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:51-53 bytes 2025-2133 SHA-256 c51e50d16a675080277053003c33dc22951be9a43bb9910cc1bf1dff6e05f361; target translation/content/lambda-calculus/church-rosser/beta-reduction.tex:65-67 bytes 4612-4768 SHA-256 42ab7e7d2bca2aa2cf876c10cf9c2163db834f6b245d256e7fb39f73b2fdd8f1; reader page pending.
+  - te-Telu-IN-TE-T091-OCC-004; OLP-0370; OLP-0370-B013; source upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:70-72 bytes 2731-2818 SHA-256 c51e50d16a675080277053003c33dc22951be9a43bb9910cc1bf1dff6e05f361; target translation/content/lambda-calculus/church-rosser/beta-reduction.tex:89-91 bytes 5673-5820 SHA-256 42ab7e7d2bca2aa2cf876c10cf9c2163db834f6b245d256e7fb39f73b2fdd8f1; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -11214,3 +11243,81 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTELAMCRPB-003-OCC-001; OLP-0369; OLP-0369-B016; source upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:92-98 bytes 3492-3913 SHA-256 37905b8d25e97bb2554d4df43321bbcefd55816a7d89fe85279c4119a7871f52; target translation/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:110 bytes 7495-8455 SHA-256 3cb825a6078d0d87f56e189794c35ee1aef678a10b844a244a1f3a3180a2272f; reader page pending.
+
+## te-Telu-IN-OLTELAMCRB-001 — OLTELAMCRB-001: one step beta to parallel proof omits compatible context cases
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: retained the printed root-redex calculation but disclosed omitted compatible context cases; no complete proof claimed
+
+- Intended sense: Preserve the source argument at lines 13-21, contrasted with syntax/beta.tex lines 16-24, disclose the identified proof gap, and do not claim to have supplied a complete proof.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: The missing proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.
+
+- Rationale: The bounded source audit identified a missing proof step. The target keeps the printed argument with an adjacent limitation; structural QA checks preservation and does not complete the mathematical proof.
+
+- Authorities checked: OLTELAMCRB-20260925:OLTELAMCRB-001 [checked_supports], content/lambda-calculus/church-rosser/beta-reduction.tex; lines 13-21, contrasted with syntax/beta.tex lines 16-24; one_step_beta_to_parallel_proof_omits_compatible_context_cases; retained the printed root-redex calculation but disclosed omitted compatible context cases; no complete proof claimed.
+
+- Alternatives: Present the source proof as complete without qualifying the unsupported step. [rejected: The identified missing side condition or derivation has not been supplied.]
+
+- Review question: Please double-check: అనుకూల బీటా సంకోచనంలోని అమూర్తీకరణ/ప్రయోగ సందర్భాలకు మూలస్థాన గణన సరిపోదనే నిరూపణ పరిమితి స్పష్టమా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMCRB-001-OCC-001; OLP-0370; OLP-0370-B006; source upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:13-21 bytes 211-628 SHA-256 c51e50d16a675080277053003c33dc22951be9a43bb9910cc1bf1dff6e05f361; target translation/content/lambda-calculus/church-rosser/beta-reduction.tex:24 bytes 852-1788 SHA-256 42ab7e7d2bca2aa2cf876c10cf9c2163db834f6b245d256e7fb39f73b2fdd8f1; reader page pending.
+
+## te-Telu-IN-OLTELAMCRB-002 — OLTELAMCRB-002: extraneous M prime in parallel to beta case four witness list
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: replaced the extraneous M-prime in the case-four witness list with N-prime, with adjacent Telugu disclosure
+
+- Intended sense: Repair the audited extraneous M prime in parallel to beta case four witness list at lines 41-47, especially line 43, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTELAMCRB-20260925:OLTELAMCRB-002 [checked_supports], content/lambda-calculus/church-rosser/beta-reduction.tex; lines 41-47, especially line 43; extraneous_M_prime_in_parallel_to_beta_case_four_witness_list; replaced the extraneous M-prime in the case-four witness list with N-prime, with adjacent Telugu disclosure.
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: నాలుగవ సందర్భపు సాక్షి-పద జాబితాలో N-prime పునరుద్ధరణ అదే సందర్భపు పూర్వాపేక్ష, తరువాతి తగ్గింపుతో సరిపోతుందా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMCRB-002-OCC-001; OLP-0370; OLP-0370-B008; source upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:41-47 bytes 1562-1994 SHA-256 c51e50d16a675080277053003c33dc22951be9a43bb9910cc1bf1dff6e05f361; target translation/content/lambda-calculus/church-rosser/beta-reduction.tex:55 bytes 3651-4158 SHA-256 42ab7e7d2bca2aa2cf876c10cf9c2163db834f6b245d256e7fb39f73b2fdd8f1; reader page pending.
+
+## te-Telu-IN-OLTELAMCRB-003 — OLTELAMCRB-003: church rosser conclusion inherits unresolved source proof dependencies
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: retained the three cited dependencies in the final Church--Rosser proof but disclosed inherited proof gaps; no independent certification claimed
+
+- Intended sense: Preserve the source argument at lines 70-76, with dependencies lines 13-21 and parallel-beta-reduction.tex lines 75-100, disclose the identified proof gap, and do not claim to have supplied a complete proof.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: low / true / high
+
+- Confidence reason: The missing proof step was identified against the frozen source; no complete replacement proof has been established, and structural parity is not a proof check.
+
+- Rationale: The bounded source audit identified a missing proof step. The target keeps the printed argument with an adjacent limitation; structural QA checks preservation and does not complete the mathematical proof.
+
+- Authorities checked: OLTELAMCRB-20260925:OLTELAMCRB-003 [checked_supports], content/lambda-calculus/church-rosser/beta-reduction.tex; lines 70-76, with dependencies lines 13-21 and parallel-beta-reduction.tex lines 75-100; church_rosser_conclusion_inherits_unresolved_source_proof_dependencies; retained the three cited dependencies in the final Church--Rosser proof but disclosed inherited proof gaps; no independent certification claimed.
+
+- Alternatives: Present the source proof as complete without qualifying the unsupported step. [rejected: The identified missing side condition or derivation has not been supplied.]
+
+- Review question: Please double-check: తుది చర్చ్--రోసర్ వాదన ముందరి రెండు ఇంకా అసంపూర్ణ నిరూపణలపై ఆధారపడుతుందనే జాగ్రత్త పాఠకుడికి కనిపిస్తుందా?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTELAMCRB-003-OCC-001; OLP-0370; OLP-0370-B013; source upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:70-76 bytes 2731-2925 SHA-256 c51e50d16a675080277053003c33dc22951be9a43bb9910cc1bf1dff6e05f361; target translation/content/lambda-calculus/church-rosser/beta-reduction.tex:96 bytes 5958-6737 SHA-256 42ab7e7d2bca2aa2cf876c10cf9c2163db834f6b245d256e7fb39f73b2fdd8f1; reader page pending.

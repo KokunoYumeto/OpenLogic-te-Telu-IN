@@ -275,7 +275,7 @@ const correctionDecisions = corrections.map(correction => {
   const targetRange = fileRange(correction.target_locator, segment.target_start_line, segment.target_end_line);
   const decisionId = `te-Telu-IN-${correction.finding_id}`;
   const qualified = correction.qualification?.disposition === 'rejected_false_positive';
-  const proofGap = ['OLTELAMALP-005', 'OLTELAMALP-006', 'OLTELAMCRPB-003'].includes(correction.finding_id);
+  const proofGap = ['OLTELAMALP-005', 'OLTELAMALP-006', 'OLTELAMCRPB-003', 'OLTELAMCRB-001', 'OLTELAMCRB-003'].includes(correction.finding_id);
   const intendedSense = qualified
     ? `Preserve the valid source construction at ${correction.source_locator}, present its equivalent explicit notation for readability, and record that the historical error classification was rejected as a false positive.`
     : proofGap

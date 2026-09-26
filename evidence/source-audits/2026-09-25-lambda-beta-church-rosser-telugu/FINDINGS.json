@@ -1,0 +1,46 @@
+{
+  "schema": "openlogic-source-audit/1",
+  "audit_id": "OLTELAMCRB-20260925",
+  "language": "te-Telu-IN",
+  "scope": {
+    "unit_ids": ["OLP-0370"],
+    "finding_count": 3
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "source_file": {
+    "path": "content/lambda-calculus/church-rosser/beta-reduction.tex",
+    "bytes": 2941,
+    "sha256": "c51e50d16a675080277053003c33dc22951be9a43bb9910cc1bf1dff6e05f361"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTELAMCRB-001",
+      "classification": "one_step_beta_to_parallel_proof_omits_compatible_context_cases",
+      "source_locator": "lines 13-21, contrasted with syntax/beta.tex lines 16-24",
+      "finding": "మూల ఉపసిద్ధాంత నిరూపణ ప్రతి ఒక-దశ బీటా సంకోచనాన్ని మూలస్థాన రెడెక్స్ సంకోచనంగా తీసుకుంటుంది. కానీ ముందరి నిర్వచనం బీటా సంకోచనాన్ని కనిష్ఠ అనుకూల సంబంధం అంటుంది; అమూర్తీకరణ, ప్రయోగం లోపలి సంకోచనాలూ అందులో ఉన్నాయి.",
+      "controlling_evidence": "The prior definition calls bredone the smallest compatible relation containing the redex contraction. A contextual one-step contraction need not have M=(lambda x.N)Q at the root; the printed proof only applies the redex rule and does not provide congruence cases or induction over the compatible closure.",
+      "required_translation_handling": "Keep the source's root-redex calculation, identify it as the printed argument, and disclose the omitted context cases adjacent to that proof. Do not claim to have independently completed the lemma."
+    },
+    {
+      "finding_id": "OLTELAMCRB-002",
+      "classification": "extraneous_M_prime_in_parallel_to_beta_case_four_witness_list",
+      "source_locator": "lines 41-47, especially line 43",
+      "finding": "నాలుగవ సందర్భంలో మూల పదాల జాబితా x,N,M',Q,Q' అని ఇస్తుంది; అదే వాక్యం M'ను ఇప్పటికే ప్రతిస్థాపన ఫలితంగా నిర్వచిస్తుంది. పూర్వాపేక్షలోనూ తరువాతి తగ్గింపులోనూ అవసరమైన మధ్య పదం N'.",
+      "controlling_evidence": "The case explicitly states M'=Subst(N',Q',x) and N bredpar N', then uses N bred N' to reach the redex (lambda x.N')Q'. The witness list should therefore name N', not repeat M'.",
+      "required_translation_handling": "Replace only the extraneous M' in the witness list with N'; disclose the correction adjacent to the list. Preserve all surrounding formulae."
+    },
+    {
+      "finding_id": "OLTELAMCRB-003",
+      "classification": "church_rosser_conclusion_inherits_unresolved_source_proof_dependencies",
+      "source_locator": "lines 70-76, with dependencies lines 13-21 and parallel-beta-reduction.tex lines 75-100",
+      "finding": "తుది చర్చ్--రోసర్ నిరూపణ ముందు సమాంతర-తగ్గింపు సిద్ధాంతం, ఈ విభాగపు మొదటి ఉపసిద్ధాంతంపై ఆధారపడుతుంది. ముందరి ప్రతిస్థాపన-సంయోజన నిరూపణలోనూ ఈ మొదటి ఉపసిద్ధాంత నిరూపణలోనూ గుర్తించిన ఖాళీలు ఇంకా పూరించలేదు.",
+      "controlling_evidence": "The printed proof cites dap:thm:str, pb:thm:cr and lem:str. The cited parallel result uses the substitution-composition lemma with disclosed gap OLTELAMCRPB-003; lem:str uses lem:one-par, whose printed proof omits compatible context cases.",
+      "required_translation_handling": "Retain all three source citations and the stated theorem, but disclose the two inherited proof limitations adjacent to the final proof; do not claim independent mathematical certification."
+    }
+  ]
+}

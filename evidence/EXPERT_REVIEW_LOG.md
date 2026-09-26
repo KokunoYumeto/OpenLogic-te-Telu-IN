@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 369 of 722 draft units**. This log contains 90 terminology/sense decisions and 327 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 370 of 722 draft units**. This log contains 91 terminology/sense decisions and 330 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2167,6 +2167,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: సమాంతర, సంపూర్ణ వికాసం అనే ప్రత్యేక లాంబ్డా-కలనశాస్త్ర పదాలకు ప్రత్యక్ష స్థానిక సాక్ష్యం లేదు; నామకరణం తాత్కాలికం. ప్రతిస్థాపన-సంయోజన ఉపసిద్ధాంతపు పూర్తి నిరూపణ మూలంలో లేదు, ఈ అనువాదం దానిని పూరించలేదు.
 
 - Please double-check: Please double-check whether “సమాంతర బీటా-తగ్గింపు / బీటా-సంపూర్ణ వికాసం / ప్రతిస్థాపన-సంయోజన వ్యుత్పత్తి” is idiomatic and technically standard for “parallel beta-reduction / beta-complete development / substitution-composition derivation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T091 — compatible beta-contraction / parallel beta-reduction comparison / least transitive relation / Church--Rosser transfer
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: అనుకూల బీటా-సంకోచనం / సమాంతర బీటా-తగ్గింపుతో పోలిక / కనిష్ఠ సంక్రమణ సంబంధం / చర్చ్--రోసర్ లక్షణ బదిలీ
+
+- Exact implementation: OLP-0370; lambda-calculus/church-rosser/beta-reduction; content/lambda-calculus/church-rosser/beta-reduction.tex:11 ↔ translation/content/lambda-calculus/church-rosser/beta-reduction.tex:11 (OLP-0370-B005); printed/PDF page pending; OLP-0370; lambda-calculus/church-rosser/beta-reduction; content/lambda-calculus/church-rosser/beta-reduction.tex:13-21 ↔ translation/content/lambda-calculus/church-rosser/beta-reduction.tex:13-25 (OLP-0370-B006); printed/PDF page pending; OLP-0370; lambda-calculus/church-rosser/beta-reduction; content/lambda-calculus/church-rosser/beta-reduction.tex:51-53 ↔ translation/content/lambda-calculus/church-rosser/beta-reduction.tex:65-67 (OLP-0370-B009); printed/PDF page pending; OLP-0370; lambda-calculus/church-rosser/beta-reduction; content/lambda-calculus/church-rosser/beta-reduction.tex:70-72 ↔ translation/content/lambda-calculus/church-rosser/beta-reduction.tex:89-91 (OLP-0370-B013); printed/PDF page pending
+
+- Authorities actually checked: TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P024లో వ్యుత్పత్తి, నిరూపణ దశలు; TE-P029లో చర పరిధి/బద్ధత్వం; TE-P032లో తర్క పద్ధతుల ఆగమన, సిద్ధాంత గద్యాన్ని ప్రత్యక్షంగా చూశాం. ఏ పేజీ లాంబ్డా-బీటా సంకోచనం, సమాంతర తగ్గింపు లేదా చర్చ్--రోసర్ బదిలీని నేరుగా నిర్వచించదు. OLP-0365లోని అనుకూల బీటా-సంకోచన నిర్వచనం, OLP-0369 నాలుగు నియమాలు, OLP-0368 సంక్రమణ-మూసివేత ఫలితం ఇక్కడి ప్రత్యేక అర్థాలను నియంత్రిస్తాయి. OLTELAMCRB-001–003 నిరూపణ పరిమితి, సాక్షి-పద సవరణ, వారసత్వ ఖాళీలను పక్కనే ప్రకటిస్తున్నాయి. బీటా, చర్చ్--రోసర్ మునుపటి బదిలీ పదాలు; β, M, N, P, Q, సంబంధ/ప్రతిస్థాపన మాక్రోలు గణిత గుర్తింపులుగా యథాతథం.
+
+- Alternatives: మునుపటి బీటా సంకోచనం, సమాంతర తగ్గింపు, సంక్రమణ సంబంధం పదజాలాన్ని మూల నిర్వచనాల తేడాతో కొనసాగించడం (ఎంపిక); అనుకూల బీటా సంకోచనాన్ని మూలస్థాన రెడెక్స్‌కే పరిమితం చేయడం (తిరస్కరణ); స్థానిక పేజీలు ప్రత్యేక చర్చ్--రోసర్ బదిలీని నేరుగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ); ఆధార నిరూపణ ఖాళీలను దాచిపెట్టి తుది వాదనకు స్వతంత్ర ధృవీకరణ ఉందనడం (తిరస్కరణ)
+
+- Uncertainty: ప్రత్యక్ష స్థానిక లాంబ్డా-కలనశాస్త్ర సాక్ష్యం లేదు; ప్రత్యేక పదాల ఎంపిక తాత్కాలికం. బీటా సంకోచనం నుంచి సమాంతర తగ్గింపుకు మూల నిరూపణలో అనుకూల సందర్భాలు లేవు; ముందరి ప్రతిస్థాపన-సంయోజన ఖాళీ కూడా తెరిచే ఉంది.
+
+- Please double-check: Please double-check whether “అనుకూల బీటా-సంకోచనం / సమాంతర బీటా-తగ్గింపుతో పోలిక / కనిష్ఠ సంక్రమణ సంబంధం / చర్చ్--రోసర్ లక్షణ బదిలీ” is idiomatic and technically standard for “compatible beta-contraction / parallel beta-reduction comparison / least transitive relation / Church--Rosser transfer” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -10015,3 +10039,75 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: మూల వాదనలో నిరూపణ ఖాళీ నిర్ధారితమైనది; పూర్తి సిద్ధాంత నిరూపణ ఇంకా లేదు.
 
 - Please double-check: Please double-check: నాలుగవ సందర్భానికి అవసరమైన తాజా ప్రతినిధులు, ప్రతిస్థాపనల నిర్వచితత్వం, మార్పిడి నియమం మూలంలో నిరూపించలేదనే పరిమితి తగినంత స్పష్టమా?
+
+## REV-OLTELAMCRB-001 — OLTELAMCRB-001
+
+- Status: source_proof_gap_disclosed_structural_qa_passed_full_proof_pending_no_translation_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: source_proof_gap_disclosed_not_repaired / high
+
+- Chosen wording/treatment: retained the printed root-redex calculation but disclosed omitted compatible context cases; no complete proof claimed
+
+- Exact implementation: OLP-0370; lambda-calculus/church-rosser/beta-reduction; lines 13-21, contrasted with syntax/beta.tex lines 16-24 ↔ translation/content/lambda-calculus/church-rosser/beta-reduction.tex:24 (OLP-0370-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMCRB-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: మూల సిద్ధాంతానికి పూర్తి స్వతంత్ర నిరూపణ ఇంకా నమోదు కాలేదు; నిర్మాణాత్మక QA నిరూపణను ధృవీకరించదు.
+
+- Rationale: retained the printed root-redex calculation but disclosed omitted compatible context cases; no complete proof claimed
+
+- Alternatives: మూల నిరూపణలోని అన్యాయ దశను నిరూపితంగా ప్రకటించడం (తిరస్కరణ); మూల దశను పరిశీలన కోసం ఉంచి ఖాళీని పక్కనే ప్రకటించడం (ఎంపిక); బలపరిచిన ఆగమన పరికల్పనతో పూర్తి నిరూపణను తరువాతి సమీక్షలో ఇవ్వడం (ఇంకా చేయలేదు)
+
+- Uncertainty: మూల వాదనలో నిరూపణ ఖాళీ నిర్ధారితమైనది; పూర్తి సిద్ధాంత నిరూపణ ఇంకా లేదు.
+
+- Please double-check: Please double-check: అనుకూల బీటా సంకోచనంలోని అమూర్తీకరణ/ప్రయోగ సందర్భాలకు మూలస్థాన గణన సరిపోదనే నిరూపణ పరిమితి స్పష్టమా?
+
+## REV-OLTELAMCRB-002 — OLTELAMCRB-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: replaced the extraneous M-prime in the case-four witness list with N-prime, with adjacent Telugu disclosure
+
+- Exact implementation: OLP-0370; lambda-calculus/church-rosser/beta-reduction; lines 41-47, especially line 43 ↔ translation/content/lambda-calculus/church-rosser/beta-reduction.tex:55 (OLP-0370-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMCRB-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: replaced the extraneous M-prime in the case-four witness list with N-prime, with adjacent Telugu disclosure
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: నాలుగవ సందర్భపు సాక్షి-పద జాబితాలో N-prime పునరుద్ధరణ అదే సందర్భపు పూర్వాపేక్ష, తరువాతి తగ్గింపుతో సరిపోతుందా?
+
+## REV-OLTELAMCRB-003 — OLTELAMCRB-003
+
+- Status: source_proof_gap_disclosed_structural_qa_passed_full_proof_pending_no_translation_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: source_proof_gap_disclosed_not_repaired / high
+
+- Chosen wording/treatment: retained the three cited dependencies in the final Church--Rosser proof but disclosed inherited proof gaps; no independent certification claimed
+
+- Exact implementation: OLP-0370; lambda-calculus/church-rosser/beta-reduction; lines 70-76, with dependencies lines 13-21 and parallel-beta-reduction.tex lines 75-100 ↔ translation/content/lambda-calculus/church-rosser/beta-reduction.tex:96 (OLP-0370-B014); printed/PDF page pending
+
+- Authorities actually checked: OLTELAMCRB-20260925; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: మూల సిద్ధాంతానికి పూర్తి స్వతంత్ర నిరూపణ ఇంకా నమోదు కాలేదు; నిర్మాణాత్మక QA నిరూపణను ధృవీకరించదు.
+
+- Rationale: retained the three cited dependencies in the final Church--Rosser proof but disclosed inherited proof gaps; no independent certification claimed
+
+- Alternatives: మూల నిరూపణలోని అన్యాయ దశను నిరూపితంగా ప్రకటించడం (తిరస్కరణ); మూల దశను పరిశీలన కోసం ఉంచి ఖాళీని పక్కనే ప్రకటించడం (ఎంపిక); బలపరిచిన ఆగమన పరికల్పనతో పూర్తి నిరూపణను తరువాతి సమీక్షలో ఇవ్వడం (ఇంకా చేయలేదు)
+
+- Uncertainty: మూల వాదనలో నిరూపణ ఖాళీ నిర్ధారితమైనది; పూర్తి సిద్ధాంత నిరూపణ ఇంకా లేదు.
+
+- Please double-check: Please double-check: తుది చర్చ్--రోసర్ వాదన ముందరి రెండు ఇంకా అసంపూర్ణ నిరూపణలపై ఆధారపడుతుందనే జాగ్రత్త పాఠకుడికి కనిపిస్తుందా?
