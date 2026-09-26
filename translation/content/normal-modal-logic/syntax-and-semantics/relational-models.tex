@@ -1,0 +1,74 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: relational-models
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{rel}
+
+\olsection{సంబంధాత్మక నమూనాలు}
+
+నార్మల్ మోడల్ తర్కాల అర్థవిచారంలో
+మౌలిక భావన \emph{సంబంధాత్మక నమూనా}.
+దానిలో లోకాల సమితి, వాటిని కలిపే
+ద్విస్థానిక “ప్రాప్యత సంబంధం,”
+ఏ లోకంలో ఏ
+\tetoken{ప్రతిజ్ఞావాక్య చరాలు}{!!{propositional variable}s}
+“సత్యం”గా పరిగణించాలో నిర్ణయించే
+కేటాయింపు ఉంటాయి.
+
+\begin{defn}
+  మౌలిక మోడల్ భాషకు ఒక \emph{నమూనా}
+  $\mModel{M} = \tuple{W, R, V}$ అనే
+  త్రయం. ఇందులో
+  \begin{enumerate}
+  \item $W$ అనేది “లోకాల” ఖాళీ కాని సమితి,
+  \item $R$ అనేది $W$పై ద్విస్థానిక ప్రాప్యత సంబంధం,
+  \item $V$ అనేది ప్రతి
+    \tetoken{ప్రతిజ్ఞావాక్య చరానికి}{!!{propositional
+    variable}}~$p$ సాధ్య లోకాల
+    సమితి $V(p)$ని కేటాయించే ప్రమేయం.
+  \end{enumerate}
+  $Rww'$ నిలిస్తే, $w'$ అనేది
+  $w$ నుంచి \emph{ప్రాప్యమైనది}
+  అంటాం. $w \in V(p)$ అయితే,
+  $p$ అనేది $w$లో \emph{సత్యం}
+  అంటాం.
+\end{defn}
+
+సంబంధాత్మక అర్థవిచారపు గొప్ప సౌలభ్యం:
+\olref{fig:simple}లో ఉన్నటువంటి
+సరళ చిత్రాలతో నమూనాలను చూపవచ్చు.
+లోకాలను బిందువులు సూచిస్తాయి;
+$w$ నుంచి $w'$కు బాణం ఉన్నప్పుడు,
+అప్పుడు మాత్రమే $w'$ అనేది
+$w$ నుంచి ప్రాప్యమైనది. అంతేకాక,
+$w \in V(p)$ అయితే బిందువుకు
+(లోకానికి)~$\mTrue{p}$ గుర్తు,
+లేకపోతే~\mFalse{p} గుర్తు పెడతాం.
+\olref{fig:simple} చిత్రం
+$W = \{w_1, w_2, w_3\}$,
+$R = \{\tuple{w_1, w_2},\tuple{w_1,
+  w_3}\}$, $V(p) = \{w_1, w_2\}$,
+మరియు $V(q) = \{w_2\}$ ఉన్న
+నమూనాను చూపుతుంది.
+
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={[align=right]right:\mTrue{p}\\ \mFalse{q}}]{$w_1$};
+      \node[world] (w2) [label={[align=right]right:\mTrue{p}\\ \mTrue{q}},
+        above right=of w1]{$w_2$};
+      \node[world] (w3) [label={[align=right]right:\mFalse{p}\\ \mFalse{q}},
+        below right=of w1] {$w_3$};
+      \draw[->] (w1) to (w2);
+      \draw[->] (w1) to (w3);
+    \end{tikzpicture}
+  \end{center}
+  \caption{ఒక సరళ నమూనా.}
+  \ollabel{fig:simple}
+\end{figure}
+
+\end{document}

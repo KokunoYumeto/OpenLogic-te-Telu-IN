@@ -1,0 +1,208 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: truth-at-w
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{trw}
+
+\olsection{ఒక లోకంలో సత్యం}
+
+ప్రతి మోడల్ నమూనా, దానిలోని ఏ
+లోకాల్లో ఏ మోడల్
+\tetoken{సూత్రాలు}{!!{formula}s}
+సత్యంగా పరిగణించబడతాయో
+నిర్ణయిస్తుంది. “నమూనా
+$\mModel{M}$, \tetoken{సూత్రం}{!!{formula}}~$!A$ను
+లోకం~$w$లో సత్యం చేస్తుంది”
+అనే సంబంధం సంబంధాత్మక
+అర్థవిచారపు మౌలిక భావన.
+దాన్ని ఆగమనాత్మకంగా నిర్వచిస్తాం;
+మోడల్ కాని సంచాలకాల విషయంలో
+అది సాధారణ సత్య పట్టికల
+లక్షణీకరణతో సరిపోతుంది.
+
+\begin{defn}\ollabel{defn:mmodels}
+  $\mModel M$లో \emph{\tetoken{సూత్రం}{!!a{formula}}~$!A$,
+  $w$లో సత్యం} కావడం,
+  సంకేతంగా $\mSat{M}{!A}[w]$,
+  కింది విధంగా ఆగమనాత్మకంగా
+  నిర్వచించబడుతుంది:
+  \begin{enumerate}
+  \tagitem{prvFalse}{\indcase{!A}{\lfalse}{ఎప్పుడూ
+    $\mSat{M}{\lfalse}[w]$ కాదు}.}{}
+  \tagitem{prvTrue}{\indcase{!A}{\ltrue}{ఎప్పుడూ
+    $\mSat{M}{\ltrue}[w]$ నిలుస్తుంది}.}{}
+  \item $\mSat{M}{p}[w]$ అయితే, అప్పుడు మాత్రమే $w \in V(p)$.
+  \tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\mSat{M}{\indfrm}[w]$
+    అయితే, అప్పుడు మాత్రమే
+    $\mSat/{M}{!B}[w]$}.}{}
+  \tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{$\mSat{M}{\indfrm}[w]$
+    అయితే, అప్పుడు మాత్రమే
+    $\mSat{M}{!B}[w]$ మరియు $\mSat{M}{!C}[w]$}.}{}
+  \tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{$\mSat{M}{\indfrm}[w]$
+    అయితే, అప్పుడు మాత్రమే
+    $\mSat{M}{!B}[w]$ లేదా $\mSat{M}{!C}[w]$} (రెండూ కావచ్చు).}{}
+  \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{$\mSat{M}{\indfrm}[w]$
+    అయితే, అప్పుడు మాత్రమే
+    $\mSat/{M}{!B}[w]$ లేదా $\mSat{M}{!C}[w]$}.}{}
+  \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{$\mSat{M}{\indfrm}[w]$
+    అయితే, అప్పుడు మాత్రమే
+    $\mSat{M}{!B}[w]$, $\mSat{M}{!C}[w]$
+    రెండూ నిలుస్తాయి లేదా
+    $\mSat{M}{!B}[w]$, $\mSat{M}{!C}[w]$
+    రెండూ నిలవవు}.}{}
+  \item\ollabel{defn:sub:mmodels-box}
+    \indcase{!A}{\Box !B}{$\mSat{M}{\indfrm}[w]$
+    అయితే, అప్పుడు మాత్రమే $Rww'$
+    ఉన్న ప్రతి $w' \in W$లో
+    $\mSat{M}{!B}[w']$ నిలుస్తుంది.}
+  \item\ollabel{defn:sub:mmodels-diamond}
+    \indcase{!A}{\Diamond !B}{$\mSat{M}{\indfrm}[w]$
+    అయితే, అప్పుడు మాత్రమే $Rww'$
+    ఉన్న కనీసం ఒక $w' \in W$లో
+    $\mSat{M}{!B}[w']$ నిలుస్తుంది.}
+  \end{enumerate}
+\end{defn}
+
+\olref{defn:sub:mmodels-box} ప్రకారం
+$Rww'$ ఉన్న $w'$ ఏదీ లేకపోతే,
+\tetoken{సూత్రం}{!!a{formula}}~$\Box
+!B$ కూడా $w$లో సత్యం.
+అప్పుడు $\Box !B$ అనేది
+$w$లో \emph{శూన్యసందర్భ సత్యం}.
+$!B$ మాత్రం అక్కడ సత్యం
+కాకపోయినా, $\Box !B$
+$w$లో సత్యం కావచ్చు.
+$!B$ అనేది $w$లో సత్యమనే
+విషయం, $\Diamond !B$ కూడా
+$w$లో సత్యమని హామీ ఇవ్వదు.
+అయితే $Rww$ ఉంటే, ఉదాహరణకు
+$R$ స్వప్రావర్తకమైతే, అది
+నిలుస్తుంది. $Rww'$ అయ్యే
+$w'$ ఏదీ లేకపోతే, ఏ
+$!A$కైనా $\mSat/{M}{\Diamond !A}[w]$.
+
+\begin{prob}
+  \olref[nml][syn][rel]{fig:simple}లోని
+  నమూనాను పరిశీలించండి. కింది
+  వాటిలో ఏవి నిలుస్తాయి?
+    \begin{enumerate}
+    \item $\mSat{M}{q}[w_1]$;
+    \item $\mSat{M}{\lnot q}[w_3]$;
+    \item $\mSat{M}{p \lor q}[w_1]$;
+    \item $\mSat{M}{\Box (p \lor q)}[w_1]$;
+    \item $\mSat{M}{\Box q}[w_3]$;
+    \item $\mSat{M}{\Box \bot}[w_3]$;
+    \item $\mSat{M}{\Diamond q}[w_1]$;
+    \item $\mSat{M}{\Box q}[w_1]$;
+    \item $\mSat{M}{\lnot \Box\Box \lnot q}[w_1]$.
+    \end{enumerate}
+\end{prob}
+
+% Prove duality of \Box and \Diamond
+\begin{tagblock}{prvDiamond}
+\begin{prop}\ollabel{prop:dual}
+  \begin{enumerate}
+  \item $\mSat{M}{\Box !A}[w]$ అయితే, అప్పుడు మాత్రమే
+    $\mSat{M}{\lnot\Diamond\lnot !A}[w]$.
+  \item $\mSat{M}{\Diamond !A}[w]$ అయితే, అప్పుడు మాత్రమే
+    $\mSat{M}{\lnot\Box\lnot !A}[w]$.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $\mSat{M}{\lnot\Diamond\lnot !A}[w]$
+      అయితే, అప్పుడు మాత్రమే
+      $\mSat/{M}{\Diamond\lnot !A}[w]$;
+      ఇది $\mSat{M}{}[w]$ నిర్వచనం వల్ల.
+      $\mSat{M}{\Diamond\lnot !A}[w]$
+      అయితే, అప్పుడు మాత్రమే
+      $Rww'$ ఉన్న ఏదో $w'$లో
+      $\mSat{M}{\lnot !A}[w']$.
+      కాబట్టి
+      $\mSat/{M}{\Diamond\lnot !A}[w]$
+      అయితే, అప్పుడు మాత్రమే
+      $Rww'$ ఉన్న ప్రతి $w'$లో
+      $\mSat/{M}{\lnot !A}[w']$.
+      అలాగే $\mSat/{M}{\lnot !A}[w']$
+      అయితే, అప్పుడు మాత్రమే
+      $\mSat{M}{!A}[w']$.
+      వీటిని కలిపితే
+      $\mSat{M}{\lnot\Diamond\lnot !A}[w]$
+      అయితే, అప్పుడు మాత్రమే
+      $Rww'$ ఉన్న ప్రతి $w'$లో
+      $\mSat{M}{!A}[w']$.
+      మళ్లీ $\mSat{M}{}[w]$
+      నిర్వచనం ప్రకారం అది
+      $\mSat{M}{\Box !A}[w]$కు
+      సమానం.
+    \item \iftag{probDiamond}{సాధన.}{$\mSat{M}{\lnot\Box\lnot !A}[w]$
+      అయితే, అప్పుడు మాత్రమే
+      $\mSat/{M}{\Box\lnot !A}[w]$.
+      \sourcecorrection{OLTENMLSYN-003}{ఆంగ్ల మూలంలోని
+        ఈ అసత్యతా సంకేతం తరువాత లోక
+        ఆర్గ్యుమెంట్ లేదు; అదే పంక్తిలోని
+        ఎడమవైపు మరియు తరువాతి
+        పంక్తుల మాదిరిగా [w] చేర్చాం.}
+      $\mSat{M}{\Box\lnot !A}[w]$
+      అయితే, అప్పుడు మాత్రమే
+      $Rww'$ ఉన్న ప్రతి $w'$లో
+      $\mSat{M}{\lnot !A}[w']$.
+      కాబట్టి $\mSat/{M}{\Box\lnot !A}[w]$
+      అయితే, అప్పుడు మాత్రమే
+      $Rww'$ ఉన్న ఏదో $w'$లో
+      $\mSat/{M}{\lnot !A}[w']$.
+      అలాగే $\mSat/{M}{\lnot !A}[w']$
+      అయితే, అప్పుడు మాత్రమే
+      $\mSat{M}{!A}[w']$.
+      అందువల్ల
+      $\mSat{M}{\lnot\Box\lnot !A}[w]$
+      అయితే, అప్పుడు మాత్రమే
+      $Rww'$ ఉన్న ఏదో~$w'$లో
+      $\mSat{M}{!A}[w']$.
+      మళ్లీ $\mSat{M}{}[w]$
+      నిర్వచనం ప్రకారం అది
+      $\mSat{M}{\Diamond !A}[w]$కు
+      సమానం.}
+  \end{enumerate}
+\end{proof}
+
+\begin{probtag}{probDiamond}
+  \olref[nml][syn][trw]{prop:dual}
+  నిరూపణను పూర్తి చేయండి.
+\end{probtag}
+\end{tagblock}
+
+\begin{prob}
+  $\mModel{M} = \tuple{W, R, V}$
+  ఒక నమూనా అనుకుందాం.
+  $w_1, w_2 \in W$లకు:
+  \begin{enumerate}
+  \item ప్రతి
+    \tetoken{ప్రతిజ్ఞావాక్య చరం}{!!{propositional variable}}
+    $p$కు $w_1 \in V(p)$ అయితే,
+    అప్పుడు మాత్రమే $w_2 \in V(p)$; మరియు
+  \item ప్రతి $w \in W$కు:
+    $Rw_1w$ అయితే, అప్పుడు మాత్రమే $Rw_2w$.
+  \end{enumerate}
+  \tetoken{సూత్రాలపై}{!!{formula}s}
+  ఆగమనంతో, ప్రతి
+  \tetoken{సూత్రాల}{!!{formula}s}లోని ప్రతి $!A$కూ
+  $\mSat{M}{!A}[w_1]$ అయితే,
+  అప్పుడు మాత్రమే $\mSat{M}{!A}[w_2]$
+  అని చూపండి.
+\end{prob}
+
+\begin{probtag}{prvDiamond}
+  $\mModel{M} = \tuple{W, R, V}$
+  అనుకుందాం. $\mSat{M}{\lnot\Diamond !A}[w]$
+  అయితే, అప్పుడు మాత్రమే
+  $\mSat{M}{\Box\lnot!A}[w]$
+  అని చూపండి.
+\end{probtag}
+
+\end{document}

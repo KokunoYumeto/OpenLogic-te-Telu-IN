@@ -1,0 +1,134 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: substitution
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{sub}
+
+\olsection{ఏకకాల ప్రతిస్థాపన}
+
+\tetoken{సూత్రం}{!!a{formula}}~$!A$కు ఒక
+\emph{నిదర్శనం} అంటే, $!A$లోని ఒక
+\tetoken{ప్రతిజ్ఞావాక్య చరం}{!!a{propositional variable}}
+యొక్క అన్ని ఘటనలను మరొక
+\tetoken{సూత్రంతో}{!!{formula}} ప్రతిస్థాపించి
+వచ్చిన ఫలితం. చెల్లుబాటును,
+\tetoken{నిరూప్యతను}{!!{derivability}}
+చర్చించేటప్పుడు \tetoken{సూత్రాల}{!!{formula}s}
+నిదర్శనాలను తరచుగా ప్రస్తావిస్తాం.
+కాబట్టి ఈ భావాన్ని ఖచ్చితంగా
+నిర్వచించడం ఉపయోగకరం.
+
+\begin{defn}\ollabel{def:subst-inst}
+  మోడల్ \tetoken{సూత్రం}{!!{formula}}~$!A$లోని
+  \tetoken{ప్రతిజ్ఞావాక్య చరాలన్నీ}{!!{propositional
+    variable}s} $p_1$, \dots, $p_n$లలోనే
+  ఉండి, $!D_1$, \dots, $!D_n$లు కూడా
+  మోడల్ \tetoken{సూత్రాలైతే}{!!{formula}s},
+  $\SSubst{!A}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$ను
+  $!A$లో ప్రతి $p_i$ స్థానంలో $!D_i$ని
+  ఏకకాలంలో ప్రతిస్థాపించి వచ్చిన ఫలితంగా
+  నిర్వచిస్తాం. అధికారికంగా, $!A$పై
+  ఆగమనంతో నిర్వచనం ఇలా ఉంటుంది:
+  \begin{enumerate}
+    \tagitem{prvFalse}{\indcase{!A}{\lfalse}{%
+        $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ అనేది $\lfalse$.}}{}
+    \tagitem{prvTrue}{\indcase{!A}{\ltrue}{%
+        $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ అనేది $\ltrue$.}}{}
+    \item \indcase{!A}{q}{$i
+      = 1$, \dots,~$n$ అన్నింటికీ
+      $q \not\ident p_i$ అయితే,
+      $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+        \subst{!D_n}{p_n}}$ అనేది $q$.}
+    \item \indcase{!A}{p_i}{$\SSubst{\indfrm}{\subst{!D_1}{p_1},
+        \dots, \subst{!D_n}{p_n}}$ అనేది $!D_i$.}
+    \tagitem{prvNot}{\indcase{!A}{\lnot !B}{%
+        $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$
+        అనేది
+        $\lnot \SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$.}}{}
+    \tagitem{prvAnd}{\indcase{!A}{(!B \land
+        !C)}{$\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ అనేది
+        \[(\SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \land
+          \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}).\]}}{}
+    \tagitem{prvOr}{\indcase{!A}{(!B \lor
+          !C)}{$\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ అనేది
+        \[(\SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \lor
+          \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}).\]}}{}
+    \tagitem{prvIf}{\indcase{!A}{(!B \lif
+          !C)}{$\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ అనేది
+        \[(\SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \lif
+          \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}).\]}}{}
+    \tagitem{prvIff}{\indcase{!A}{(!B \liff
+          !C)}{$\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ అనేది
+        \[(\SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \liff
+          \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}).\]}
+      \sourcecorrection{OLTENMLSYN-001}{ఆంగ్ల మూలంలో
+        ద్విసోపాధిక సందర్భానికి prvIf గుర్తు
+        ఉంది; పక్కనున్న \liff సూత్రానుసారం
+        prvIffగా సరిచేశాం.}}{}
+    \tagitem{prvBox}{\indcase{!A}{\Box !B}{%
+        $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$
+        అనేది $\Box
+        \SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}.$}
+      \sourcecorrection{OLTENMLSYN-002}{మూలంలో
+        ఈ బాక్స్ సందర్భం సాధారణ జాబితా
+        అంశంగా ఉంది; భాషా నిర్వచనంలోని
+        prvBox షరతుకు అనుగుణంగా
+        అదే సందర్భాన్ని ఆ గుర్తుతో
+        కట్టాం.}}{}
+    \tagitem{prvDiamond}{\indcase{!A}{\Diamond !B}{%
+        $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$
+        అనేది $\Diamond
+        \SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}.$}}{}
+  \end{enumerate}
+  \tetoken{సూత్రం}{!!{formula}}
+  $\SSubst{!A}{\subst{!D_1}{p_1}, \dots,
+    \subst{!D_n}{p_n}}$ను $!A$కి
+  \emph{ప్రతిస్థాపన నిదర్శనం} అంటాం.
+\end{defn}
+
+\begin{ex}
+  $!A$ అనేది $p_1 \lif \Box(p_1 \land p_2)$,
+  $!D_1$ అనేది $\Diamond(p_2 \lif p_3)$,
+  $!D_2$ అనేది $\lnot\Box p_1$
+  అనుకుందాం. అప్పుడు
+  $\SSubst{!A}{\subst{!D_1}{p_1}, \subst{!D_2}{p_2}}$
+  ఇలా ఉంటుంది:
+  \begin{align*}
+    \Diamond(p_2 \lif p_3) &
+    \lif \Box(\Diamond(p_2 \lif p_3) \land \lnot\Box p_1)
+    \intertext{అయితే
+      $\SSubst{!A}{\subst{!D_2}{p_1}, \subst{!D_1}{p_2}}$
+      ఇలా ఉంటుంది:}
+    \lnot\Box p_1 &
+    \lif \Box(\lnot\Box p_1 \land \Diamond(p_2 \lif p_3))
+    \intertext{ఏకకాల ప్రతిస్థాపన సాధారణంగా
+      వరుస ప్రతిస్థాపనతో సమానం కాదని గమనించండి.
+      ఉదాహరణకు, పైన ఉన్న
+      $\SSubst{!A}{\subst{!D_1}{p_1}, \subst{!D_2}{p_2}}$ను
+      $\Subst{(\Subst{!A}{!D_1}{p_1})}{!D_2}{p_2}$తో
+      పోల్చండి; రెండవది ఇలా ఉంటుంది:}
+    \Diamond(p_2 \lif p_3) & \Subst{\lif \Box(\Diamond(p_2 \lif p_3) \land p_2)}{\lnot\Box p_1}{p_2}, \text{ అంటే,}\\
+    \Diamond(\lnot\Box p_1 \lif p_3) &
+    \lif \Box(\Diamond(\lnot\Box p_1
+    \lif p_3) \land \lnot\Box p_1)\\
+    \intertext{అలాగే
+      $\Subst{(\Subst{!A}{!D_2}{p_2})}{!D_1}{p_1}$తో
+      పోలిస్తే:}
+    p_1 & \lif \Subst{\Box(p_1 \land \lnot\Box p_1)}{\Diamond(p_2 \lif p_3)}{p_1}, \text{ అంటే,}\\
+    \Diamond(p_2 \lif p_3) &
+    \lif \Box(\Diamond(p_2
+    \lif p_3) \land \lnot\Box\Diamond(p_2 \lif p_3)).
+  \end{align*}
+\end{ex}
+
+\end{document}

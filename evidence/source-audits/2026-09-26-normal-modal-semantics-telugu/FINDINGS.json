@@ -1,0 +1,61 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTENMLSYN-20260926",
+  "created_utc": "2026-09-26T20:01:50Z",
+  "status": "confirmed_against_frozen_language_definition_and_adjacent_proof",
+  "scope": {
+    "chapter": "Normal Modal Logic — Syntax and Semantics",
+    "unit_ids": ["OLP-0411", "OLP-0413"],
+    "finding_count": 3
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTENMLSYN-001",
+      "unit_id": "OLP-0411",
+      "classification": "biconditional_substitution_case_uses_conditional_tag",
+      "source": {
+        "path": "content/normal-modal-logic/syntax-and-semantics/substitution.tex",
+        "bytes": 4710,
+        "sha256": "c06b8018d76c34c2242503d94f209cc4c6c731542e9eab27a099b2e794fa30ff",
+        "locator": "substitution.tex lines 56-60"
+      },
+      "finding": "The biconditional substitution clause is guarded by prvIf, duplicating the conditional case, although its displayed operator and output both use liff.",
+      "controlling_evidence": "The frozen basic-language definition guards biconditional formation by prvIff and conditional formation by prvIf. The adjacent substitution clauses otherwise use matching tags and operators.",
+      "required_translation_handling": "Guard only the biconditional clause by prvIff; leave its formula unchanged and disclose the tag repair adjacent to that clause."
+    },
+    {
+      "finding_id": "OLTENMLSYN-002",
+      "unit_id": "OLP-0411",
+      "classification": "box_substitution_case_omits_primitive_operator_tag",
+      "source": {
+        "path": "content/normal-modal-logic/syntax-and-semantics/substitution.tex",
+        "bytes": 4710,
+        "sha256": "c06b8018d76c34c2242503d94f209cc4c6c731542e9eab27a099b2e794fa30ff",
+        "locator": "substitution.tex lines 61-64"
+      },
+      "finding": "The box substitution clause is an unconditional list item, unlike the diamond clause and the frozen language definition where the box operator is guarded by prvBox.",
+      "controlling_evidence": "The frozen basic-language definition includes box formulas only under prvBox. This is a tag-scope repair for language variants, not a change to the recursive substitution formula.",
+      "required_translation_handling": "Use a prvBox tag item for the same box clause and disclose the scope repair next to it."
+    },
+    {
+      "finding_id": "OLTENMLSYN-003",
+      "unit_id": "OLP-0413",
+      "classification": "world_argument_missing_from_duality_proof_satisfaction_atom",
+      "source": {
+        "path": "content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex",
+        "bytes": 5218,
+        "sha256": "4c1ea773c2dd5106ceba1ec676dfadbbae432fc9d56b528a4a6b00f2c270fd50",
+        "locator": "truth-at-w.tex lines 91-94"
+      },
+      "finding": "The first non-satisfaction expression for Box not A in the second duality argument omits [w], unlike the expression immediately to its left and its next occurrence.",
+      "controlling_evidence": "Every claim in this argument concerns truth at the same world w; the adjacent expressions explicitly supply [w], and the world-indexed satisfaction relation is defined in this chapter.",
+      "required_translation_handling": "Add [w] only to that first non-satisfaction expression and disclose the notation repair adjacent to the proof step."
+    }
+  ]
+}

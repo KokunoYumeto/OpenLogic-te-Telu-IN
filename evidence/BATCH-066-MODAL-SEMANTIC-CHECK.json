@@ -1,0 +1,104 @@
+{
+  "schema": "openlogic-te-batch066-modal-semantic-check/1",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_paths_and_sha256": [
+    {
+      "source_path": "content/normal-modal-logic/syntax-and-semantics/relational-models.tex",
+      "source_sha256": "e8bc152c0c35fa129babf11ba07aa8a42fc867905526c126d93bb50ea2cfc2cf"
+    },
+    {
+      "source_path": "content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex",
+      "source_sha256": "4c1ea773c2dd5106ceba1ec676dfadbbae432fc9d56b528a4a6b00f2c270fd50"
+    },
+    {
+      "source_path": "content/normal-modal-logic/syntax-and-semantics/truth-in-model.tex",
+      "source_sha256": "12c305069df324d6b4346d4cf1d7ef7e1ee8c6f44479959de738f8a76323cbd6"
+    }
+  ],
+  "simple_model": {
+    "worlds": [
+      "w1",
+      "w2",
+      "w3"
+    ],
+    "accessibility_edges": [
+      [
+        "w1",
+        "w2"
+      ],
+      [
+        "w1",
+        "w3"
+      ]
+    ],
+    "p_true_at": [
+      "w1",
+      "w2"
+    ],
+    "q_true_at": [
+      "w2"
+    ],
+    "nine_problem_cases": [
+      {
+        "label": "q@w1",
+        "value": false
+      },
+      {
+        "label": "not q@w3",
+        "value": true
+      },
+      {
+        "label": "p or q@w1",
+        "value": true
+      },
+      {
+        "label": "box(p or q)@w1",
+        "value": false
+      },
+      {
+        "label": "box q@w3",
+        "value": true
+      },
+      {
+        "label": "box false@w3",
+        "value": true
+      },
+      {
+        "label": "diamond q@w1",
+        "value": true
+      },
+      {
+        "label": "box q@w1",
+        "value": false
+      },
+      {
+        "label": "not box box not q@w1",
+        "value": false
+      }
+    ]
+  },
+  "truth_in_model_counterexample": {
+    "p_not_true_in_model": true,
+    "not_p_not_true_in_model": true,
+    "p_implies_q_not_true_in_model": true,
+    "meta_implication_vacuously_true": true
+  },
+  "substitution_tag_scope_checks": {
+    "source_conditional_cases": 2,
+    "target_conditional_cases": 1,
+    "source_biconditional_cases": 0,
+    "target_biconditional_cases": 1,
+    "source_box_cases": 0,
+    "target_box_cases": 1
+  },
+  "duality": {
+    "relation_masks": 512,
+    "truth_masks": 8,
+    "worlds_per_case": 3,
+    "relation_truth_world_checks": 12288,
+    "box_not_diamond_not": true,
+    "diamond_not_box_not": true
+  },
+  "limitation": "Finite extensional model checks for printed examples and duality identities; not a proof of the full substitution induction, tag configuration, TeX compilation, or all modal schemas.",
+  "status": "pass"
+}
