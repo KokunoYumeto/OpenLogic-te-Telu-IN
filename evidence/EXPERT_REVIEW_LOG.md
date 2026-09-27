@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 436 of 722 draft units**. This log contains 127 terminology/sense decisions and 400 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 437 of 722 draft units**. This log contains 128 terminology/sense decisions and 402 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3055,6 +3055,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక పేజీలు నిర్దిష్ట మోడల్ నిర్దుష్టతా సిద్ధాంతానికి ప్రత్యక్ష సాక్ష్యం కావు. మూల ఆగమన దశలో K/ఐచ్ఛిక Dual సందర్భాలు తప్పాయి; Nec ఉదాహరణ ప్రపంచ చెల్లుబాటుగా మాత్రమే ప్రకటించబడింది. రెండు స్థానిక స్పష్టీకరణలు ప్రకటిత సవరణలుగా వేరు నమోదు చేశాం.
 
 - Please double-check: Please double-check whether “మోడల్ వ్యుత్పత్తి వ్యవస్థ నిర్దుష్టత / నిర్దుష్టతా సిద్ధాంతం / నిరూపణ పొడవుపై ఆగమనం / అవశ్యకీకరణలో వర్గ-సాపేక్ష చెల్లుబాటు” is idiomatic and technically standard for “soundness of a modal derivation system / soundness theorem / induction on proof length / class-relative validity under necessitation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T128 — distinct modal systems / proper inclusion / symmetric, reflexive, serial and Euclidean countermodels / falsifying axiom instances
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: భిన్నమైన మోడల్ వ్యవస్థలు / నిజమైన చేరిక / సౌష్ఠవ, స్వావర్తన, సీరియల్, యూక్లిడియన్ ప్రతినమూనాలు / స్వీకృత నిదర్శనాలు విఫలమవడం
+
+- Exact implementation: OLP-0437; normal-modal-logic/axioms-systems/systems-distinct; content/normal-modal-logic/axioms-systems/systems-distinct.tex:11 ↔ translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:11 (OLP-0437-B005); printed/PDF page pending; OLP-0437; normal-modal-logic/axioms-systems/systems-distinct; content/normal-modal-logic/axioms-systems/systems-distinct.tex:13-17 ↔ translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:13-17 (OLP-0437-B006); printed/PDF page pending; OLP-0437; normal-modal-logic/axioms-systems/systems-distinct; content/normal-modal-logic/axioms-systems/systems-distinct.tex:23-34 ↔ translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:23-37 (OLP-0437-B008); printed/PDF page pending; OLP-0437; normal-modal-logic/axioms-systems/systems-distinct; content/normal-modal-logic/axioms-systems/systems-distinct.tex:40-49 ↔ translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:43-53 (OLP-0437-B010); printed/PDF page pending; OLP-0437; normal-modal-logic/axioms-systems/systems-distinct; content/normal-modal-logic/axioms-systems/systems-distinct.tex:65-67 ↔ translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:69-75 (OLP-0437-B012); printed/PDF page pending; OLP-0437; normal-modal-logic/axioms-systems/systems-distinct; content/normal-modal-logic/axioms-systems/systems-distinct.tex:118-141 ↔ translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:126-149 (OLP-0437-B017); printed/PDF page pending; OLP-0437; normal-modal-logic/axioms-systems/systems-distinct; content/normal-modal-logic/axioms-systems/systems-distinct.tex:148-151 ↔ translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:156-159 (OLP-0437-B019); printed/PDF page pending
+
+- Authorities actually checked: TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P010లో సంబంధం అనే సాధారణ గణిత పదజాలం, TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, TE-P024లో నియమ-ఆధారిత వ్యుత్పత్తిని నేరుగా చూశాం. TE-T017, TE-T024, TE-T114--TE-T127 పూర్వ ఎంపికలతో రూపాలు సరిపోల్చాం. మూడు TikZ గ్రాఫుల అంచులు/సత్యమూల్యాలు, KD/KT, KB/K4, KTB, KD5/KT4 విభేదాలు OLP-0437 మూల గణిత నియంత్రణలో ఉన్నాయి. K, D, T, B, 4, 5, S4, ప్రపంచ సంకేతాలు, TikZ identifiers మరియు modal operators రక్షిత గణిత గుర్తులు; సీరియల్, యూక్లిడియన్ ప్రకటిత సాంకేతిక ఋణపదాలు.
+
+- Alternatives: మూడూ మూల TikZ ప్రతినమూనాలు, చట్ర ధర్మాలు, రెండు వ్యాయామాలు, వ్యుత్పాద్యత/చేరిక దిశలు నిలిపి, D/4/5 స్వీకృత సూత్రాల రకభేదాన్ని రెండు ప్రకటిత సవరణలతో స్పష్టం చేయడం (ఎంపిక); వ్యవస్థ-పేర్లనే వ్యుత్పాద్య సూత్రాలుగా మౌనంగా ఉంచడం (తిరస్కరణ); సౌష్ఠవ, స్వావర్తన, సీరియల్, యూక్లిడియన్ ధర్మాలను ఒకే లక్షణంగా కలపడం (తిరస్కరణ); స్థానిక సంబంధ పేజీనే మోడల్ ప్రతినమూనాలకు ప్రత్యక్ష సాక్ష్యంగా చూపడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక పేజీలు మోడల్ ప్రతినమూనాలు లేదా వ్యవస్థ-వేరుపాటు సిద్ధాంతాలకు ప్రత్యక్ష ఆధారం కావు. సీరియల్, యూక్లిడియన్ రూపాలు పూర్వ నిర్ణయాల ప్రకారం కొనసాగాయి; D/4/5 వ్యవస్థ-సూచిక స్థానాల్లో స్వీకృత సూత్రాల అవసరం మూల గణిత పఠనం ద్వారా నిర్ణయించాం.
+
+- Please double-check: Please double-check whether “భిన్నమైన మోడల్ వ్యవస్థలు / నిజమైన చేరిక / సౌష్ఠవ, స్వావర్తన, సీరియల్, యూక్లిడియన్ ప్రతినమూనాలు / స్వీకృత నిదర్శనాలు విఫలమవడం” is idiomatic and technically standard for “distinct modal systems / proper inclusion / symmetric, reflexive, serial and Euclidean countermodels / falsifying axiom instances” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -12655,3 +12679,51 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Is necessitation justified for validity at every world in each model of the stated intersection class, rather than inferred solely from the cited global-validity proposition?
+
+## REV-OLTENMLAXSDIS-001 — OLTENMLAXSDIS-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: KT వ్యుత్పాదించే వస్తువు వ్యవస్థ D కాదు, D స్వీకృత సూత్రమని Ax{D}తో స్పష్టం చేసి పక్కనే ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Exact implementation: OLP-0437; normal-modal-logic/axioms-systems/systems-distinct; systems-distinct.tex lines 26-28 ↔ translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:29 (OLP-0437-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLAXSDIS-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: KT వ్యుత్పాదించే వస్తువు వ్యవస్థ D కాదు, D స్వీకృత సూత్రమని Ax{D}తో స్పష్టం చేసి పక్కనే ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the KD-in-KT proof derive the D axiom formula, not a system named D, consistently with the cited KT proves Ax D result?
+
+## REV-OLTENMLAXSDIS-002 — OLTENMLAXSDIS-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: KTB వ్యుత్పాదించని వస్తువులుగా వ్యవస్థ-సూచికల బదులు Ax{4}, Ax{5} స్వీకృత సూత్రాలను రాసి పక్కనే ప్రకటించాం; స్థిర మూలం మారలేదు.
+
+- Exact implementation: OLP-0437; normal-modal-logic/axioms-systems/systems-distinct; systems-distinct.tex lines 65-67 ↔ translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:71 (OLP-0437-B012); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLAXSDIS-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: KTB వ్యుత్పాదించని వస్తువులుగా వ్యవస్థ-సూచికల బదులు Ax{4}, Ax{5} స్వీకృత సూత్రాలను రాసి పక్కనే ప్రకటించాం; స్థిర మూలం మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Do the two KTB nonprovability claims concern axiom formulas 4 and 5, as the countermodel proof requires, rather than system labels?

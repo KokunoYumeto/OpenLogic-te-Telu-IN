@@ -1,0 +1,10 @@
+# OLP-0437 distinct modal systems — source audit
+
+Frozen source: `content/normal-modal-logic/axioms-systems/systems-distinct.tex`, OpenLogic revision `9620cc73f9c8e0ad003c514a5d3748f29611c4c0`, 5,642 bytes, SHA-256 `5242bad1abef085ce60944f529370410d12a911fbe55fa1047a29fca3c7b214b`.
+
+1. Lines 26–28 infer the formula axiom D from KT but print `$\Log{KT} \Proves \Log{D}$`. `\Log{D}` denotes a system label, not the D axiom formula, and the cross-reference points to the preceding `$\Log{KT} \Proves \Ax{D}$` result. The Telugu proof uses `\Ax{D}` and discloses that single atom correction as OLTENMLAXSDIS-001; frozen English remains unchanged.
+2. Line 66 says KTB does not prove `\Log{4}` and `\Log{5}`. The following proof falsifies instances of the 4 and 5 *axiom formulas*, and the theorem requires `\Ax{4}`, `\Ax{5}`. The Telugu theorem uses those two axiom macros and discloses the correction as OLTENMLAXSDIS-002; frozen English remains unchanged.
+
+Direct graph check of the three source TikZ diagrams: `fig:Bnot4` is a two-world loop-free symmetric cycle with $p$ false at $w_1$ and true at $w_2$; $\Box p$ holds but $\Box\Box p$ fails at $w_1$. `fig:KTBnot45` has reflexive loops, bidirectional $w_1$–$w_2$ and $w_2$–$w_3$ edges, and $p$ true at the first two worlds only; 4 fails at $w_1$ and the displayed instance of 5 fails at $w_2$. In `fig:KD5not4`, $w_1$ sees $w_2,w_3$, while $w_2,w_3,w_4$ form a reflexive complete cluster. This is serial and Euclidean; $\Box p$ holds at $w_1$ but $\Box\Box p$ fails there because $w_2$ and $w_3$ see false-$p$ world $w_4$. These graph conclusions come from exact edges/valuations, not from a canon witness.
+
+TE-P010 was directly inspected for a general relation register; TE-P018/024 were previously and directly inspected for propositional-logic and derivation register. Those native pages do not establish these modal-system separations. The two final problems remain open exercises. The three figure nodes, arrows, valuations, labels, and math annotations are to remain exactly source-faithful; captions and prose must be Telugu.

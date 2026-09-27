@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 436 of 722 draft units**. This view selects 453 of 527 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 437 of 722 draft units**. This view selects 455 of 530 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4533,3 +4533,23 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0436; normal-modal-logic/axioms-systems/soundness; translation/content/normal-modal-logic/axioms-systems/soundness.tex:68; printed/PDF page pending
 
 - Please double-check: Please double-check: Is necessitation justified for validity at every world in each model of the stated intersection class, rather than inferred solely from the cited global-validity proposition?
+
+## REV-OLTENMLAXSDIS-001 — OLTENMLAXSDIS-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: KT వ్యుత్పాదించే వస్తువు వ్యవస్థ D కాదు, D స్వీకృత సూత్రమని Ax{D}తో స్పష్టం చేసి పక్కనే ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Occurrences: OLP-0437; normal-modal-logic/axioms-systems/systems-distinct; translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:29; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the KD-in-KT proof derive the D axiom formula, not a system named D, consistently with the cited KT proves Ax D result?
+
+## REV-OLTENMLAXSDIS-002 — OLTENMLAXSDIS-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: KTB వ్యుత్పాదించని వస్తువులుగా వ్యవస్థ-సూచికల బదులు Ax{4}, Ax{5} స్వీకృత సూత్రాలను రాసి పక్కనే ప్రకటించాం; స్థిర మూలం మారలేదు.
+
+- Occurrences: OLP-0437; normal-modal-logic/axioms-systems/systems-distinct; translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:71; printed/PDF page pending
+
+- Please double-check: Please double-check: Do the two KTB nonprovability claims concern axiom formulas 4 and 5, as the countermodel proof requires, rather than system labels?

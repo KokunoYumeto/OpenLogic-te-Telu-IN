@@ -1,0 +1,31 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLAXSDIS-20260927",
+  "unit_id": "OLP-0437",
+  "source_path": "content/normal-modal-logic/axioms-systems/systems-distinct.tex",
+  "source_sha256": "5242bad1abef085ce60944f529370410d12a911fbe55fa1047a29fca3c7b214b",
+  "findings": [
+    {
+      "finding_id": "OLTENMLAXSDIS-001",
+      "source_locator": "systems-distinct.tex lines 26-28",
+      "classification": "D_axiom_formula_miswritten_as_system_label",
+      "source_issue": "The proof cites the earlier KT proves Ax D proposition but uses Log D as the object of provability.",
+      "minimal_treatment": "Use Ax D in the Telugu proof and disclose the one-macro source repair.",
+      "expected_core_math_delta": {
+        "source_only": ["$\\Log{KT}\\Proves\\Log{D}$"],
+        "target_only": ["$\\Log{KT}\\Proves\\Ax{D}$"]
+      }
+    },
+    {
+      "finding_id": "OLTENMLAXSDIS-002",
+      "source_locator": "systems-distinct.tex lines 65-67",
+      "classification": "four_and_five_axiom_formulas_miswritten_as_system_labels",
+      "source_issue": "The theorem states nonprovability of Log 4 and Log 5 while its proof supplies countermodels to instances of Ax 4 and Ax 5.",
+      "minimal_treatment": "Use Ax 4 and Ax 5 in the Telugu theorem and disclose both macro substitutions.",
+      "expected_core_math_delta": {
+        "source_only": ["$\\Log{KTB}\\Proves/\\Log{4}$", "$\\Log{KTB}\\Proves/\\Log{5}$"],
+        "target_only": ["$\\Log{KTB}\\Proves/\\Ax{4}$", "$\\Log{KTB}\\Proves/\\Ax{5}$"]
+      }
+    }
+  ]
+}

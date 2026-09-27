@@ -1,0 +1,161 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: systems-distinct
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{dis}
+
+\olsection{వ్యవస్థలు భిన్నమైనవని చూపడం}
+
+\olref[prs]{sec}లో రెండు మోడల్ తర్క వ్యవస్థలు నిజానికి ఒకే వ్యవస్థ అని
+ఎలా నిరూపించాలో చూశాం. మోడల్ వ్యవస్థలు $\Sigma$, $\Sigma'$ భిన్నమైనవని
+చూపడానికి \olref[snd]{thm:soundness} తోడ్పడుతుంది: $\Sigma' \Proves !A$
+అయ్యే, కానీ $\Sigma$ యొక్క ఒక నమూనాలో విఫలమయ్యే
+\tetoken{ఒక సూత్రాన్ని}{!!a{formula}}~$!A$ కనుగొంటే సరిపోతుంది.
+
+\begin{prop}
+  $\Log{KD} \subsetneq \Log{KT}$
+\end{prop}
+
+\begin{proof} స్వావర్తన సంబంధాలన్నీ సీరియల్ అనే అర్థపర వాస్తవానికి
+  ఇది వాక్యనిర్మాణపర ప్రతిరూపం. $\Log{KD} \subseteq
+  \Log{KT}$ అని చూపడానికి $\Log{KD} \Proves !B$ అయితే
+  $\Log{KT} \Proves !B$ అని చూడాలి. ఇది
+  $\Log{KT} \Proves \Ax{D}$ నుంచి అనుసరిస్తుంది; ఆ ఫలితాన్ని
+  \olref[prs]{prop:S5facts}\olref[prs]{prop:S5facts-KT-D}లో చూపాం.
+  \sourcecorrection{OLTENMLAXSDIS-001}{స్థిర మూలంలో ఈ వ్యుత్పాద్యత
+    ప్రకటనకు $\Log{D}$ ఉంది; ఇక్కడ వ్యవస్థ పేరు కాదు, D స్వీకృత
+    సూత్రం కావాలి. అందుకే $\Ax{D}$గా స్పష్టం చేశాం.}
+  చేరిక నిజమైనదని చూపడానికి, నిర్దుష్టత
+  (\olref[snd]{thm:soundness}) ప్రకారం, \Ax{T}, అంటే
+  $\Box p \lif p$, విఫలమయ్యే \Log{KD} నమూనాను చూపితే సరిపోతుంది
+  (ఈ సులభ పనిని వ్యాయామంగా వదిలాం). అప్పుడు నిర్దుష్టత వల్ల
+  $\Log{KD} \Proves/ \Box p \lif p$.
+\end{proof}
+
+\begin{prop}
+  $\Log{KB} \neq \Log{K4}$.
+\end{prop}
+
+\begin{proof}
+  \Ax{4} యొక్క ఏదో నిదర్శనం విఫలమయ్యే సౌష్ఠవ నమూనాను నిర్మిస్తాం.
+  ఆ నిదర్శనం \Log{K4}లో స్పష్టంగా
+  \tetoken{వ్యుత్పాదించదగినది}{!!{derivable}}, కానీ \Log{KB}లో కాదు;
+  కనుక $\Log{K4} \nsubseteq \Log{KB}$ అని తేలుతుంది.
+  \olref{fig:Bnot4}లోని సౌష్ఠవ నమూనా $\mModel{M}$ను పరిశీలించండి.
+  ఆ నమూనా సౌష్ఠవమైనది కనుక \Ax{K}, \Ax{B} రెండూ
+  $\mModel{M}$లో సత్యం (వరుసగా \olref[syn][sch]{prop:Kvalid},
+  \olref[frd][acc]{thm:soundschemas} ప్రకారం). అయితే,
+  $\mSat/{M}{\Box p \lif \Box\Box p}[w_1]$.
+\end{proof}
+
+\begin{figure}[htpb]
+  \centering
+  \begin{tikzpicture}[modal]
+    \node[world] (w1) [label=above:\mFalse{p},
+    label={below:$\mSat{{}}{\Box p}$\\ $\mSat/{{}}{\Box\Box p}$}] {$w_1$};
+    \node[world] (w2) [label=above:\mTrue{p},
+      label=below:$\mSat/{{}}{\Box p}$, right=of w1]{$w_2$};
+    \draw[->, bend left] (w1) to (w2);
+    \draw[->, bend left] (w2) to (w1);
+  \end{tikzpicture}
+  \caption{\Ax{4} యొక్క ఒక నిదర్శనాన్ని అసత్యం చేసే సౌష్ఠవ నమూనా.}
+  \ollabel{fig:Bnot4}
+\end{figure}
+
+\begin{thm}\ollabel{thm:KTBnot45}
+  $\Log{KTB} \Proves/ \Ax{4}$ మరియు $\Log{KTB} \Proves/ \Ax{5}$.
+  \sourcecorrection{OLTENMLAXSDIS-002}{స్థిర మూలంలోని ఈ సిద్ధాంత
+    వాక్యంలో $\Log{4}$, $\Log{5}$ అని వ్యవస్థ-సూచికలు ఉన్నాయి;
+    వ్యుత్పాద్యత వాదనకు అవసరమైనవి 4, 5 స్వీకృత సూత్రాలు.
+    అందుకే $\Ax{4}$, $\Ax{5}$గా రాశాం.}
+\end{thm}
+
+\begin{proof}
+  \olref[frd][acc]{thm:soundschemas} ప్రకారం \Ax{T}, \Ax{B}ల
+  అన్ని నిదర్శనాలు వరుసగా ప్రతి స్వావర్తన, సౌష్ఠవ నమూనాలో సత్యం.
+  కనుక నిర్దుష్టత ప్రకారం, \Ax{4} యొక్క ఏదో నిదర్శనం విఫలమయ్యే
+  లోకం గల స్వావర్తన, సౌష్ఠవ నమూనాను, అలాగే~\Ax{5}కు కూడా
+  అటువంటి నమూనాను కనుగొంటే సరిపోతుంది. రెండు వాదాలకూ ఒకే
+  నమూనాను వాడతాం. \olref{fig:KTBnot45}లోని సౌష్ఠవ,
+  స్వావర్తన నమూనాను పరిశీలించండి. అక్కడ $\mSat/{M}{\Box p \to \Box \Box
+    p}[w_1]$ కనుక \Ax{4}, $w_1$ వద్ద విఫలమవుతుంది. అలాగే
+  $\mSat/{M}{\Diamond \lnot p \lif \Box \Diamond \lnot p}[w_2]$;
+  కనుక $!A = \lnot p$ను ఉంచిన~\Ax{5} నిదర్శనం $w_2$ వద్ద విఫలమవుతుంది.
+\end{proof}
+
+\begin{figure}[htpb]
+  \centering
+  \begin{tikzpicture}[modal]
+    \node[world] (w1) [label={right:\mTrue{p}},
+      label={below: $\mSat{{}}{\Box p}$\\
+        $\mSat/{{}}{\Box\Box p}$\\
+        $\mSat/{{}}{\Diamond\lnot p}$}] {$w_1$};
+    \draw[reflexive above] (w1) to (w1);
+    \node[world] (w2) [label={right:\mTrue{p}}, label={below:
+        $\mSat{{}}{\Diamond\lnot p}$\\
+        $\mSat/{{}}{\Box\Diamond\lnot p}$}, right=of w1] {$w_2$} ;
+    \draw[reflexive above] (w2) to (w2);
+    \node[world] (w3) [label={right:\mFalse{p}},right=of w2] {$w_3$};
+    \draw[reflexive above] (w3) to (w3);
+    \draw[->, bend left] (w1) to (w2);
+    \draw[->, bend left] (w2) to (w3);
+    \draw[->, bend left] (w3) to (w2);
+    \draw[->, bend left] (w2) to (w1);
+  \end{tikzpicture}
+  \caption{\olref{thm:KTBnot45} కోసం ఉపయోగించిన నమూనా.}
+  \ollabel{fig:KTBnot45}
+\end{figure}
+
+\begin{thm}\ollabel{thm:KD5not4}
+  $\Log{KD5} \neq \Log{KT4} = \Log{S4}$.
+\end{thm}
+
+\begin{proof}
+  \olref[frd][acc]{thm:soundschemas} ప్రకారం \Ax{D}, \Ax{5}ల
+  అన్ని నిదర్శనాలు ప్రతి సీరియల్, యూక్లిడియన్ నమూనాలో సత్యం.
+  కనుక \Ax{4} యొక్క ఏదో నిదర్శనం విఫలమయ్యే లోకం గల
+  సీరియల్, యూక్లిడియన్ నమూనాను కనుగొంటే సరిపోతుంది.
+  \olref{fig:KD5not4}లోని నమూనాను పరిశీలించండి; అందులో
+  $\mSat/{M}{\Box p \lif \Box\Box p}[w_1]$ అని గమనించండి.
+\end{proof}
+
+\begin{figure}[t]
+  \centering
+  \begin{tikzpicture}[modal]
+    \node[world] (w2) [label=north west:\mTrue{p}]{$w_2$} ;
+    \draw[reflexive left] (w2) to (w2);
+    \node[world] (w1) [label=right:\mFalse{p},
+      label=below:{$\mSat{{}}{\Box p}, \mSat/{{}}{\Box\Box p}$},
+      below right=of w2]{$w_1$};
+    \node[world] (w3) [label=north east:\mTrue{p}, above right=of w1]{$w_3$} ;
+    \draw[reflexive right] (w3) to (w3);
+    \node[world] (w4) [label=right:\mFalse{p},above right=of w2]{$w_4$};
+    \draw[reflexive above] (w4) to (w4);
+    \draw[->] (w1) to (w2);
+    \draw[->] (w1) to (w3);
+    \draw[->, bend left=15] (w2) to (w3);
+    \draw[->, bend left=15] (w3) to (w2);
+    \draw[->, bend left=15] (w2) to (w4);
+    \draw[->, bend left=15] (w4) to (w2);
+    \draw[->, bend left=15] (w3) to (w4);
+    \draw[->, bend left=15] (w4) to (w3);
+  \end{tikzpicture}
+  \caption{\olref{thm:KD5not4} కోసం ఉపయోగించిన నమూనా.}
+  \ollabel{fig:KD5not4}
+\end{figure}
+
+\begin{prob}
+  $3$ లోకాలున్న నమూనాను వాడి
+  \olref[nml][prf][dis]{thm:KD5not4}కు ప్రత్యామ్నాయ నిరూపణ ఇవ్వండి.
+\end{prob}
+
+\begin{prob}
+  $\Log{KT4} \Proves/ \Ax{B}$, $\Log{KT4} \Proves/ \Ax{5}$
+  రెండింటినీ చూపే ఒకే స్వావర్తన, సంక్రామక నమూనాను ఇవ్వండి.
+\end{prob}
+
+\end{document}

@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **436 of 722 source units drafted**. This readable view contains all 527 decisions and 1134 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **437 of 722 source units drafted**. This readable view contains all 530 decisions and 1143 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3832,6 +3832,38 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T127-OCC-003; OLP-0436; OLP-0436-B007; source upstream/content/normal-modal-logic/axioms-systems/soundness.tex:20-26 bytes 544-883 SHA-256 ff44b1e495e2dca06b0c6e7fed1c5dab9971288a8c3bef061f00f7f025f61d17; target translation/content/normal-modal-logic/axioms-systems/soundness.tex:22-28 bytes 1149-1724 SHA-256 229b576a04a64ad978b1589020f7153db7fccca02cd11d20d5430efa627294b0; reader page pending.
   - te-Telu-IN-TE-T127-OCC-004; OLP-0436; OLP-0436-B008; source upstream/content/normal-modal-logic/axioms-systems/soundness.tex:28-55 bytes 884-2478 SHA-256 ff44b1e495e2dca06b0c6e7fed1c5dab9971288a8c3bef061f00f7f025f61d17; target translation/content/normal-modal-logic/axioms-systems/soundness.tex:30-73 bytes 1725-6485 SHA-256 229b576a04a64ad978b1589020f7153db7fccca02cd11d20d5430efa627294b0; reader page pending.
   - te-Telu-IN-TE-T127-OCC-005; OLP-0436; OLP-0436-B008; source upstream/content/normal-modal-logic/axioms-systems/soundness.tex:28-55 bytes 884-2478 SHA-256 ff44b1e495e2dca06b0c6e7fed1c5dab9971288a8c3bef061f00f7f025f61d17; target translation/content/normal-modal-logic/axioms-systems/soundness.tex:30-73 bytes 1725-6485 SHA-256 229b576a04a64ad978b1589020f7153db7fccca02cd11d20d5430efa627294b0; reader page pending.
+
+## te-Telu-IN-TE-T128 — distinct modal systems / proper inclusion / symmetric, reflexive, serial and Euclidean countermodels / falsifying axiom instances
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: భిన్నమైన మోడల్ వ్యవస్థలు / నిజమైన చేరిక / సౌష్ఠవ, స్వావర్తన, సీరియల్, యూక్లిడియన్ ప్రతినమూనాలు / స్వీకృత నిదర్శనాలు విఫలమవడం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “distinct modal systems / proper inclusion / symmetric, reflexive, serial and Euclidean countermodels / falsifying axiom instances” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక పేజీలు మోడల్ ప్రతినమూనాలు లేదా వ్యవస్థ-వేరుపాటు సిద్ధాంతాలకు ప్రత్యక్ష ఆధారం కావు. సీరియల్, యూక్లిడియన్ రూపాలు పూర్వ నిర్ణయాల ప్రకారం కొనసాగాయి; D/4/5 వ్యవస్థ-సూచిక స్థానాల్లో స్వీకృత సూత్రాల అవసరం మూల గణిత పఠనం ద్వారా నిర్ణయించాం.
+
+- Rationale: TE-P010లో సంబంధం అనే సాధారణ గణిత పదజాలం, TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, TE-P024లో నియమ-ఆధారిత వ్యుత్పత్తిని నేరుగా చూశాం. TE-T017, TE-T024, TE-T114--TE-T127 పూర్వ ఎంపికలతో రూపాలు సరిపోల్చాం. మూడు TikZ గ్రాఫుల అంచులు/సత్యమూల్యాలు, KD/KT, KB/K4, KTB, KD5/KT4 విభేదాలు OLP-0437 మూల గణిత నియంత్రణలో ఉన్నాయి. K, D, T, B, 4, 5, S4, ప్రపంచ సంకేతాలు, TikZ identifiers మరియు modal operators రక్షిత గణిత గుర్తులు; సీరియల్, యూక్లిడియన్ ప్రకటిత సాంకేతిక ఋణపదాలు.
+
+- Authorities checked: TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: మూడూ మూల TikZ ప్రతినమూనాలు, చట్ర ధర్మాలు, రెండు వ్యాయామాలు, వ్యుత్పాద్యత/చేరిక దిశలు నిలిపి, D/4/5 స్వీకృత సూత్రాల రకభేదాన్ని రెండు ప్రకటిత సవరణలతో స్పష్టం చేయడం [viable_alternative: ఎంపిక] | వ్యవస్థ-పేర్లనే వ్యుత్పాద్య సూత్రాలుగా మౌనంగా ఉంచడం [viable_alternative: తిరస్కరణ] | సౌష్ఠవ, స్వావర్తన, సీరియల్, యూక్లిడియన్ ధర్మాలను ఒకే లక్షణంగా కలపడం [viable_alternative: తిరస్కరణ] | స్థానిక సంబంధ పేజీనే మోడల్ ప్రతినమూనాలకు ప్రత్యక్ష సాక్ష్యంగా చూపడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “భిన్నమైన మోడల్ వ్యవస్థలు / నిజమైన చేరిక / సౌష్ఠవ, స్వావర్తన, సీరియల్, యూక్లిడియన్ ప్రతినమూనాలు / స్వీకృత నిదర్శనాలు విఫలమవడం” is idiomatic and technically standard for “distinct modal systems / proper inclusion / symmetric, reflexive, serial and Euclidean countermodels / falsifying axiom instances” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T128-OCC-001; OLP-0437; OLP-0437-B005; source upstream/content/normal-modal-logic/axioms-systems/systems-distinct.tex:11 bytes 189-230 SHA-256 5242bad1abef085ce60944f529370410d12a911fbe55fa1047a29fca3c7b214b; target translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:11 bytes 189-279 SHA-256 5b01b6be1639efe34253e0b7dd84895156d66721b832d2c2035444c71532632b; reader page pending.
+  - te-Telu-IN-TE-T128-OCC-002; OLP-0437; OLP-0437-B006; source upstream/content/normal-modal-logic/axioms-systems/systems-distinct.tex:13-17 bytes 231-532 SHA-256 5242bad1abef085ce60944f529370410d12a911fbe55fa1047a29fca3c7b214b; target translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:13-17 bytes 280-952 SHA-256 5b01b6be1639efe34253e0b7dd84895156d66721b832d2c2035444c71532632b; reader page pending.
+  - te-Telu-IN-TE-T128-OCC-003; OLP-0437; OLP-0437-B008; source upstream/content/normal-modal-logic/axioms-systems/systems-distinct.tex:23-34 bytes 591-1221 SHA-256 5242bad1abef085ce60944f529370410d12a911fbe55fa1047a29fca3c7b214b; target translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:23-37 bytes 1011-2512 SHA-256 5b01b6be1639efe34253e0b7dd84895156d66721b832d2c2035444c71532632b; reader page pending.
+  - te-Telu-IN-TE-T128-OCC-004; OLP-0437; OLP-0437-B010; source upstream/content/normal-modal-logic/axioms-systems/systems-distinct.tex:40-49 bytes 1276-1790 SHA-256 5242bad1abef085ce60944f529370410d12a911fbe55fa1047a29fca3c7b214b; target translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:43-53 bytes 2566-3474 SHA-256 5b01b6be1639efe34253e0b7dd84895156d66721b832d2c2035444c71532632b; reader page pending.
+  - te-Telu-IN-TE-T128-OCC-005; OLP-0437; OLP-0437-B012; source upstream/content/normal-modal-logic/axioms-systems/systems-distinct.tex:65-67 bytes 2286-2395 SHA-256 5242bad1abef085ce60944f529370410d12a911fbe55fa1047a29fca3c7b214b; target translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:69-75 bytes 4048-4610 SHA-256 5b01b6be1639efe34253e0b7dd84895156d66721b832d2c2035444c71532632b; reader page pending.
+  - te-Telu-IN-TE-T128-OCC-006; OLP-0437; OLP-0437-B017; source upstream/content/normal-modal-logic/axioms-systems/systems-distinct.tex:118-141 bytes 4389-5350 SHA-256 5242bad1abef085ce60944f529370410d12a911fbe55fa1047a29fca3c7b214b; target translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:126-149 bytes 7586-8583 SHA-256 5b01b6be1639efe34253e0b7dd84895156d66721b832d2c2035444c71532632b; reader page pending.
+  - te-Telu-IN-TE-T128-OCC-007; OLP-0437; OLP-0437-B019; source upstream/content/normal-modal-logic/axioms-systems/systems-distinct.tex:148-151 bytes 5475-5626 SHA-256 5242bad1abef085ce60944f529370410d12a911fbe55fa1047a29fca3c7b214b; target translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:156-159 bytes 8800-9038 SHA-256 5b01b6be1639efe34253e0b7dd84895156d66721b832d2c2035444c71532632b; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -14312,3 +14344,55 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLAXSSND-002-OCC-001; OLP-0436; OLP-0436-B008; source upstream/content/normal-modal-logic/axioms-systems/soundness.tex:28-55 bytes 884-2478 SHA-256 ff44b1e495e2dca06b0c6e7fed1c5dab9971288a8c3bef061f00f7f025f61d17; target translation/content/normal-modal-logic/axioms-systems/soundness.tex:68 bytes 5896-5994 SHA-256 229b576a04a64ad978b1589020f7153db7fccca02cd11d20d5430efa627294b0; reader page pending.
+
+## te-Telu-IN-OLTENMLAXSDIS-001 — OLTENMLAXSDIS-001: D axiom formula miswritten as system label
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: KT వ్యుత్పాదించే వస్తువు వ్యవస్థ D కాదు, D స్వీకృత సూత్రమని Ax{D}తో స్పష్టం చేసి పక్కనే ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Intended sense: Repair the audited D axiom formula miswritten as system label at systems-distinct.tex lines 26-28, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLAXSDIS-20260927:OLTENMLAXSDIS-001 [checked_supports], content/normal-modal-logic/axioms-systems/systems-distinct.tex; systems-distinct.tex lines 26-28; D_axiom_formula_miswritten_as_system_label; KT వ్యుత్పాదించే వస్తువు వ్యవస్థ D కాదు, D స్వీకృత సూత్రమని Ax{D}తో స్పష్టం చేసి పక్కనే ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the KD-in-KT proof derive the D axiom formula, not a system named D, consistently with the cited KT proves Ax D result?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLAXSDIS-001-OCC-001; OLP-0437; OLP-0437-B008; source upstream/content/normal-modal-logic/axioms-systems/systems-distinct.tex:23-34 bytes 591-1221 SHA-256 5242bad1abef085ce60944f529370410d12a911fbe55fa1047a29fca3c7b214b; target translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:29 bytes 1626-1741 SHA-256 5b01b6be1639efe34253e0b7dd84895156d66721b832d2c2035444c71532632b; reader page pending.
+
+## te-Telu-IN-OLTENMLAXSDIS-002 — OLTENMLAXSDIS-002: four and five axiom formulas miswritten as system labels
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: KTB వ్యుత్పాదించని వస్తువులుగా వ్యవస్థ-సూచికల బదులు Ax{4}, Ax{5} స్వీకృత సూత్రాలను రాసి పక్కనే ప్రకటించాం; స్థిర మూలం మారలేదు.
+
+- Intended sense: Repair the audited four and five axiom formulas miswritten as system labels at systems-distinct.tex lines 65-67, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLAXSDIS-20260927:OLTENMLAXSDIS-002 [checked_supports], content/normal-modal-logic/axioms-systems/systems-distinct.tex; systems-distinct.tex lines 65-67; four_and_five_axiom_formulas_miswritten_as_system_labels; KTB వ్యుత్పాదించని వస్తువులుగా వ్యవస్థ-సూచికల బదులు Ax{4}, Ax{5} స్వీకృత సూత్రాలను రాసి పక్కనే ప్రకటించాం; స్థిర మూలం మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Do the two KTB nonprovability claims concern axiom formulas 4 and 5, as the countermodel proof requires, rather than system labels?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLAXSDIS-002-OCC-001; OLP-0437; OLP-0437-B012; source upstream/content/normal-modal-logic/axioms-systems/systems-distinct.tex:65-67 bytes 2286-2395 SHA-256 5242bad1abef085ce60944f529370410d12a911fbe55fa1047a29fca3c7b214b; target translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:71 bytes 4157-4266 SHA-256 5b01b6be1639efe34253e0b7dd84895156d66721b832d2c2035444c71532632b; reader page pending.
