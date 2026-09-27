@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 453 of 722 draft units**. This log contains 143 terminology/sense decisions and 419 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 454 of 722 draft units**. This log contains 144 terminology/sense decisions and 421 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3439,6 +3439,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: వడపోతకు స్వతంత్ర స్థానిక మోడల్-తర్క సాంకేతిక సాక్ష్యం ఇప్పటికీ లేదు; ఈ ఎంపిక స్పష్టమైన మూల నిర్వచనాధీన అనువాదం. అనేక R*ల అవకాశం, p Gammaలో ఉన్నప్పుడే పరమాణు ప్రతిదిశ, నాలుగు మోడల్ నిరూపణ దిశలు కీలకం.
 
 - Please double-check: Please double-check whether “గామా ద్వారా వడపోత; R1/R2/R3 ప్రాప్యత షరతులు; సత్య సంరక్షణ సిద్ధాంతం” is idiomatic and technically standard for “filtration through Gamma; relation conditions R1/R2/R3; truth-preservation theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T144 — finest and coarsest filtrations; optional quotient accessibility edges
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: అత్యంత సూక్ష్మ, అత్యంత స్థూల వడపోతలు; ఐచ్ఛిక వర్గ-ప్రాప్యత జతలు
+
+- Exact implementation: OLP-0454; normal-modal-logic/filtrations/examples-of-filtrations; content/normal-modal-logic/filtrations/examples-of-filtrations.tex:11 ↔ translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:11 (OLP-0454-B005); printed/PDF page pending; OLP-0454; normal-modal-logic/filtrations/examples-of-filtrations; content/normal-modal-logic/filtrations/examples-of-filtrations.tex:13-20 ↔ translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:13-23 (OLP-0454-B006); printed/PDF page pending; OLP-0454; normal-modal-logic/filtrations/examples-of-filtrations; content/normal-modal-logic/filtrations/examples-of-filtrations.tex:22-29 ↔ translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:25-33 (OLP-0454-B007); printed/PDF page pending; OLP-0454; normal-modal-logic/filtrations/examples-of-filtrations; content/normal-modal-logic/filtrations/examples-of-filtrations.tex:35-38 ↔ translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:39-43 (OLP-0454-B009); printed/PDF page pending; OLP-0454; normal-modal-logic/filtrations/examples-of-filtrations; content/normal-modal-logic/filtrations/examples-of-filtrations.tex:64-66 ↔ translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:82-84 (OLP-0454-B013); printed/PDF page pending; OLP-0454; normal-modal-logic/filtrations/examples-of-filtrations; content/normal-modal-logic/filtrations/examples-of-filtrations.tex:68-82 ↔ translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:86-102 (OLP-0454-B014); printed/PDF page pending; OLP-0454; normal-modal-logic/filtrations/examples-of-filtrations; content/normal-modal-logic/filtrations/examples-of-filtrations.tex:101-106 ↔ translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:120-134 (OLP-0454-B017); printed/PDF page pending; OLP-0454; normal-modal-logic/filtrations/examples-of-filtrations; content/normal-modal-logic/filtrations/examples-of-filtrations.tex:128-136 ↔ translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:156-164 (OLP-0454-B020); printed/PDF page pending; OLP-0454; normal-modal-logic/filtrations/examples-of-filtrations; content/normal-modal-logic/filtrations/examples-of-filtrations.tex:149-166 ↔ translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:186-207 (OLP-0454-B022); printed/PDF page pending; OLP-0454; normal-modal-logic/filtrations/examples-of-filtrations; content/normal-modal-logic/filtrations/examples-of-filtrations.tex:222-226 ↔ translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:274-280 (OLP-0454-B026); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P022, PDF 84, printed 77, Implication and equivalence headings; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: OLP-0454లో సూక్ష్మ వడపోతకు ప్రతినిధుల మధ్య అసలు ప్రాప్యత ఉన్నప్పుడే R* జత, స్థూల వడపోతకు R2/R3 అనుమతించే అన్ని జతలు అనే ఖచ్చిత క్రమాన్ని నిలిపాం. TE-P008/010/022 సాధారణ సమితి/సంబంధం/తుల్యత, TE-P018/024 తర్క రిజిస్టర్ మాత్రమే; సాంకేతిక సూక్ష్మ/స్థూల క్రమాన్ని మూల నిర్వచనం నిర్ణయిస్తుంది. రెండు ఉదాహరణల్లో W వెలుపలి విలువలను వేరువేరు మూల సవరణలతో తొలగించాం. R, R*, W, W*, V, V*, Gamma, Bin*, PosInt, Nat, TikZ nodes, references and tags remain protected mathematical/structural notation.
+
+- Alternatives: అత్యంత సూక్ష్మ/స్థూలను R* జతల చేరిక క్రమంతో నిర్వచనాధీనంగా నిలిపి, R1/R2/R3 నిరూపణలు, చిత్రాలు, ఉదాహరణల్లోని మూడు విలువ సమితి సవరణలను పక్కనే ప్రకటించి నిలపడం (ఎంపిక); సూక్ష్మ/స్థూలను లోకాల సంఖ్యతో పోల్చడం (తిరస్కరణ); మొదటి ఉదాహరణలో 1 V(p)లో లేకపోవడమే [1] V*(p)లో లేదని తేల్చుతుందని చెప్పడం (తిరస్కరణ); W వెలుపలి binary strings/zeroను విలువ సమితుల్లో యథాతథం ఉంచడం (తిరస్కరణ); చివరి వ్యాయామానికి కోరని పూర్తి పరిష్కారం చేర్చడం (తిరస్కరణ)
+
+- Uncertainty: సూక్ష్మ/స్థూల పదాలకు స్వతంత్ర స్థానిక modal-filtration సాక్ష్యం లేదు; ఈ పదాలు ప్రాప్యత జతల సమితి చేరిక క్రమానికి నిర్వచనాధీనంగా ఉన్నాయి. చిత్రాలు, guarded శాఖల సూత్రార్థం మూల నియంత్రితం.
+
+- Please double-check: Please double-check whether “అత్యంత సూక్ష్మ, అత్యంత స్థూల వడపోతలు; ఐచ్ఛిక వర్గ-ప్రాప్యత జతలు” is idiomatic and technically standard for “finest and coarsest filtrations; optional quotient accessibility edges” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -13495,3 +13519,51 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Is the p argument restored only to the defective first V-star membership assertion, leaving the already correct second assertion unchanged?
+
+## REV-OLTENMLFILEXF-001 — OLTENMLFILEXF-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: వ్యాయామంలో విలువ సమితులు లోకాల సమితి Wకు ఉపసమితులు కాని అవకాశాన్ని తొలగించేందుకు V(p), V(q) రెండింటికీ Wతో ఛేదనం చేర్చి పక్కనే ప్రకటించాం; మూలంలోని {1} మినహాయింపును, చిత్రంలోని సత్యమూల్యాలను మార్చలేదు.
+
+- Exact implementation: OLP-0454; normal-modal-logic/filtrations/examples-of-filtrations; examples-of-filtrations.tex lines 170-175 ↔ translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:221 (OLP-0454-B023); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLFILEXF-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: వ్యాయామంలో విలువ సమితులు లోకాల సమితి Wకు ఉపసమితులు కాని అవకాశాన్ని తొలగించేందుకు V(p), V(q) రెండింటికీ Wతో ఛేదనం చేర్చి పక్కనే ప్రకటించాం; మూలంలోని {1} మినహాయింపును, చిత్రంలోని సత్యమూల్యాలను మార్చలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Do both binary-tree valuation sets explicitly intersect W, keeping the diagram labels and the source exclusion of the string 1 without claiming that exclusion alone fixes the codomain?
+
+## REV-OLTENMLFILEXF-002 — OLTENMLFILEXF-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: మూలం Natలో 0ను కలిగి ఉండగా W=PosIntలో 0 లేకపోవడంతో, మొదటి ఉదాహరణలో V(p)కు Wతో ఛేదనం చేర్చి విలువ నిర్ణయాన్ని లోకాలకే పరిమితం చేశాం; చిత్రం, సరి/బేసి లోకాల సత్యమూల్యాలు మారవు. సవరణ పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0454; normal-modal-logic/filtrations/examples-of-filtrations; examples-of-filtrations.tex lines 101-106; important-sets.tex line 17 ↔ translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:129 (OLP-0454-B017); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLFILEXF-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: మూలం Natలో 0ను కలిగి ఉండగా W=PosIntలో 0 లేకపోవడంతో, మొదటి ఉదాహరణలో V(p)కు Wతో ఛేదనం చేర్చి విలువ నిర్ణయాన్ని లోకాలకే పరిమితం చేశాం; చిత్రం, సరి/బేసి లోకాల సత్యమూల్యాలు మారవు. సవరణ పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the first example restrict the even-natural valuation to positive world set W, given that this edition includes zero in Nat, without changing any depicted positive-world truth value?

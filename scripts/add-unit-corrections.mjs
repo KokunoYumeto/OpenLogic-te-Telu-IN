@@ -21,9 +21,11 @@ if(authority.audit_id!==c.audit_id||authority.unit_id!==c.unit_id||
 const file=path.join(root,'evidence/SOURCE_CORRECTIONS.jsonl');
 const records=fs.readFileSync(file,'utf8').trimEnd().split(/\r?\n/u).map(JSON.parse);
 const previous=records.filter(row=>row.unit_id!==c.unit_id);
-const existing=new Map(records.filter(row=>row.unit_id===c.unit_id).map(row=>[row.finding_id,row]));
+const ownRecords=records.filter(row=>row.unit_id===c.unit_id);
+const existing=new Map(ownRecords.map(row=>[row.finding_id,row]));
 if(previous.length!==c.previous_corrections||
-   ![0,authority.findings.length].includes(records.length-previous.length))
+   existing.size!==ownRecords.length||ownRecords.length>authority.findings.length||
+   ownRecords.some(row=>!authority.findings.some(f=>f.finding_id===row.finding_id)))
   throw new Error('Unexpected correction cursor');
 const added=authority.findings.map(f=>{
   const treatment=c.treatments[f.finding_id];

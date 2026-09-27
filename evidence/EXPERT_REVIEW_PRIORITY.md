@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 453 of 722 draft units**. This view selects 472 of 562 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 454 of 722 draft units**. This view selects 474 of 565 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4723,3 +4723,23 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0451; normal-modal-logic/filtrations/introduction; translation/content/normal-modal-logic/filtrations/introduction.tex:131; printed/PDF page pending
 
 - Please double-check: Please double-check: Is the p argument restored only to the defective first V-star membership assertion, leaving the already correct second assertion unchanged?
+
+## REV-OLTENMLFILEXF-001 — OLTENMLFILEXF-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: వ్యాయామంలో విలువ సమితులు లోకాల సమితి Wకు ఉపసమితులు కాని అవకాశాన్ని తొలగించేందుకు V(p), V(q) రెండింటికీ Wతో ఛేదనం చేర్చి పక్కనే ప్రకటించాం; మూలంలోని {1} మినహాయింపును, చిత్రంలోని సత్యమూల్యాలను మార్చలేదు.
+
+- Occurrences: OLP-0454; normal-modal-logic/filtrations/examples-of-filtrations; translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:221; printed/PDF page pending
+
+- Please double-check: Please double-check: Do both binary-tree valuation sets explicitly intersect W, keeping the diagram labels and the source exclusion of the string 1 without claiming that exclusion alone fixes the codomain?
+
+## REV-OLTENMLFILEXF-002 — OLTENMLFILEXF-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మూలం Natలో 0ను కలిగి ఉండగా W=PosIntలో 0 లేకపోవడంతో, మొదటి ఉదాహరణలో V(p)కు Wతో ఛేదనం చేర్చి విలువ నిర్ణయాన్ని లోకాలకే పరిమితం చేశాం; చిత్రం, సరి/బేసి లోకాల సత్యమూల్యాలు మారవు. సవరణ పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0454; normal-modal-logic/filtrations/examples-of-filtrations; translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:129; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the first example restrict the even-natural valuation to positive world set W, given that this edition includes zero in Nat, without changing any depicted positive-world truth value?

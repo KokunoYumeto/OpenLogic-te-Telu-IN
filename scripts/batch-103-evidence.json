@@ -1,0 +1,50 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "103",
+  "unit_id": "OLP-0454",
+  "unit_order": 454,
+  "source_path": "content/normal-modal-logic/filtrations/examples-of-filtrations.tex",
+  "blocks": 27,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 20, 21, 22, 23, 25, 26],
+  "previous_segments": 6898,
+  "previous_terms": 143,
+  "expected_corrections": 421,
+  "canon_default": ["TE-P008", "TE-P010", "TE-P018", "TE-P022", "TE-P024"],
+  "canon_by_block": {
+    "5": ["TE-P018", "TE-P024"],
+    "6": ["TE-P008", "TE-P010", "TE-P018"],
+    "7": ["TE-P008", "TE-P010", "TE-P022"],
+    "8": ["TE-P018", "TE-P024"],
+    "9": ["TE-P010", "TE-P018", "TE-P024"],
+    "10": ["TE-P008", "TE-P010", "TE-P024"],
+    "11": ["TE-P008", "TE-P010", "TE-P022", "TE-P024"],
+    "12": ["TE-P008", "TE-P010", "TE-P022", "TE-P024"],
+    "13": ["TE-P024"],
+    "14": ["TE-P008", "TE-P010", "TE-P018"],
+    "15": ["TE-P018", "TE-P024"],
+    "16": ["TE-P010", "TE-P018", "TE-P024"],
+    "17": ["TE-P008", "TE-P010"],
+    "20": ["TE-P008", "TE-P018"],
+    "21": ["TE-P008", "TE-P010", "TE-P022"],
+    "22": ["TE-P008", "TE-P010", "TE-P018"],
+    "23": ["TE-P008", "TE-P010", "TE-P018"],
+    "25": ["TE-P018", "TE-P024"],
+    "26": ["TE-P008", "TE-P010", "TE-P024"]
+  },
+  "corrections_by_block": {
+    "17": ["OLTENMLFILEXF-002"],
+    "23": ["OLTENMLFILEXF-001"]
+  },
+  "consultation_phase": "స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ ప్రత్యక్ష స్థానిక సమితి/సంబంధం/తుల్యత/సాధారణ తర్క పేజీలను ఎదురెదురు చూశాం; రెండు ఉదాహరణల విలువ సమితులను ఈ ఎడిషన్‌లోని Nat={0,1,...} నిర్వచనంతో నేరుగా తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P008/010 సాధారణ సమితి, సభ్యత్వం, సంబంధానికే; TE-P022 సాధారణ తుల్యత పదానికే; TE-P018/024 సాధారణ తర్క/వ్యుత్పత్తి రిజిస్టర్‌కే ప్రత్యక్ష సాక్ష్యం. సూక్ష్మ/స్థూల వడపోతలు, ప్రత్యేక గ్రాఫులు, సత్య పట్టికలు మూల నిర్వచనం, చిత్రాలు, ప్రకటిత గణిత సవరణల ఆధీనంలో ఉన్నాయి.",
+  "term_decision": {
+    "term_id": "TE-T144",
+    "source_term": "finest and coarsest filtrations; optional quotient accessibility edges",
+    "telugu": "అత్యంత సూక్ష్మ, అత్యంత స్థూల వడపోతలు; ఐచ్ఛిక వర్గ-ప్రాప్యత జతలు",
+    "status": "definition_controlled_modal_ordering_native_general_relation_register_only",
+    "passages": ["TE-P008", "TE-P010", "TE-P018", "TE-P022", "TE-P024"],
+    "basis": "OLP-0454లో సూక్ష్మ వడపోతకు ప్రతినిధుల మధ్య అసలు ప్రాప్యత ఉన్నప్పుడే R* జత, స్థూల వడపోతకు R2/R3 అనుమతించే అన్ని జతలు అనే ఖచ్చిత క్రమాన్ని నిలిపాం. TE-P008/010/022 సాధారణ సమితి/సంబంధం/తుల్యత, TE-P018/024 తర్క రిజిస్టర్ మాత్రమే; సాంకేతిక సూక్ష్మ/స్థూల క్రమాన్ని మూల నిర్వచనం నిర్ణయిస్తుంది. రెండు ఉదాహరణల్లో W వెలుపలి విలువలను వేరువేరు మూల సవరణలతో తొలగించాం.",
+    "uncertainty": "సూక్ష్మ/స్థూల పదాలకు స్వతంత్ర స్థానిక modal-filtration సాక్ష్యం లేదు; ఈ పదాలు ప్రాప్యత జతల సమితి చేరిక క్రమానికి నిర్వచనాధీనంగా ఉన్నాయి. చిత్రాలు, guarded శాఖల సూత్రార్థం మూల నియంత్రితం.",
+    "borrowing": "R, R*, W, W*, V, V*, Gamma, Bin*, PosInt, Nat, TikZ nodes, references and tags remain protected mathematical/structural notation."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLFILEXF-20260927",
+  "unit_id": "OLP-0454",
+  "source_path": "content/normal-modal-logic/filtrations/examples-of-filtrations.tex",
+  "source_sha256": "8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484",
+  "findings": [
+    {
+      "finding_id": "OLTENMLFILEXF-001",
+      "source_locator": "examples-of-filtrations.tex lines 170-175",
+      "classification": "exercise_valuation_sets_not_restricted_to_worlds",
+      "source_issue": "The two displayed valuation sets may contain binary strings not in W, even though a model valuation must assign subsets of W.",
+      "minimal_treatment": "Intersect each valuation set with W, preserve the source's exclusion of the string 1, and disclose the correction adjacent to the definition.",
+      "expected_core_math_delta": {
+        "source_only": ["$V(p)=\\Setabs{\\sigma0}{\\sigma\\in\\Bin^*}$", "$V(q)=\\Setabs{\\sigma1}{\\sigma\\in\\Bin^*\\setminus\\{1\\}}$"],
+        "target_only": ["$V(p)=W\\cap\\Setabs{\\sigma0}{\\sigma\\in\\Bin^*}$", "$V(q)=W\\cap\\Setabs{\\sigma1}{\\sigma\\in\\Bin^*\\setminus\\{1\\}}$"]
+      }
+    },
+    {
+      "finding_id": "OLTENMLFILEXF-002",
+      "source_locator": "examples-of-filtrations.tex lines 101-106; important-sets.tex line 17",
+      "classification": "first_example_valuation_includes_zero_outside_positive_worlds",
+      "source_issue": "OpenLogic defines Nat with 0, so the displayed even-number valuation contains 0 although the example's worlds are positive integers.",
+      "minimal_treatment": "Intersect the first example's valuation set with W, preserving positive-even truth assignments, and disclose adjacent to the example.",
+      "expected_core_math_delta": {"source_only": ["$V(p)=\\Setabs{2n}{n\\in\\Nat}$"], "target_only": ["$V(p)=W\\cap\\Setabs{2n}{n\\in\\Nat}$"]}
+    }
+  ]
+}

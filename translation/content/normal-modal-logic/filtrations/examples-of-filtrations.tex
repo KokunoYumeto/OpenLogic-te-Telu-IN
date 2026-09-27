@@ -1,0 +1,282 @@
+% Part: normal-modal-logic
+% Chapter: filtrations
+% Section: examples-of-filtrations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{fil}{exf}
+
+\olsection{వడపోతల ఉదాహరణలు}
+
+వడపోతలు ఉన్నాయని ఇంకా చూపలేదు. అయితే ఏ
+నమూనా~$\mModel{M}$కైనా $\Gamma$ ద్వారా
+$\mModel{M}$కు చేసే అనేక
+వడపోతలు ఉన్నాయి. వాటిలో ప్రత్యేకంగా రెండింటిని,
+అత్యంత సూక్ష్మ వడపోతను, అత్యంత స్థూల వడపోతను
+గుర్తిద్దాం. ఒకే నమూనాకు చేసే వడపోతలు వాటి ప్రాప్యత
+సంబంధంలో వేరుగా ఉంటాయి (
+\olref[fil]{defn:filtration}లో $W^*$,~$V^*$ ఏమిటో
+నేరుగా నిర్దేశించాం). అత్యంత సూక్ష్మ వడపోతలో
+సంబంధిత లోకాల జతలు సాధ్యమైనంత తక్కువగా, అత్యంత
+స్థూల వడపోతలో సాధ్యమైనంత ఎక్కువగా ఉంటాయి.
+
+\begin{defn}
+  $\Gamma$ ఉపసూత్రాల పరంగా సంవృతమై ఉంటే,
+  నమూనా $\mModel{M}$కు చేసే \emph{అత్యంత సూక్ష్మ}
+  వడపోత $\mModel{M^*}$ను ఇలా నిర్వచిస్తాం:
+  \[
+  R^*[u][v] \quad \text{అప్పుడు మరియు అప్పుడు మాత్రమే} \quad \exists u'\in [u] \;
+  \exists v' \in [v] : Ru'v'.
+  \]
+\end{defn}
+
+\begin{prop}\ollabel{prop:finest}
+  అత్యంత సూక్ష్మ వడపోత $\mModel{M^*}$ నిజంగానే వడపోత.
+\end{prop}
+
+\begin{proof}
+  ఇలా నిర్వచించిన $R^*$,
+  \olref[fil]{defn:filtration}\olref[fil]{defn:filtration-R}ను
+  నెరవేరుస్తుందో తనిఖీ చేయాలి. మూడు షరతులనూ వరుసగా
+  చూద్దాం.
+
+  $Ruv$ అయితే $u \in [u]$, $v \in [v]$ కనుక
+  $R^*[u][v]$ కూడా. అందువల్ల
+  \olref[fil]{defn:filtration-R1} నెరవేరింది.
+
+  \iftag{prvBox}{\iftag{probBox}{
+      \olref[fil]{defn:filtration-R2} నిర్ధారణను
+      వ్యాయామంగా వదిలేస్తాం.}{
+        \olref[fil]{defn:filtration-R2} కోసం
+        $\Box!A \in \Gamma$, $R^*[u][v]$,
+        $\mSat{M}{\Box!A}[u]$ అనుకుందాం. $R^*$ నిర్వచనం
+        ప్రకారం, $u' \equiv u$, $v' \equiv v$ అయ్యే,
+        $Ru'v'$ను నెరవేర్చే ప్రతినిధులు ఉన్నాయి.
+        $u$, $u'$లు $\Gamma$పై ఏకీభవిస్తాయి కనుక
+        $\mSat{M}{\Box!A}[u']$ కూడా; అందువల్ల
+        $\mSat{M}{!A}[v']$. $\Gamma$ ఉపసూత్రాల పరంగా
+        సంవృతమై ఉంది కనుక, $v$, $v'$లు
+        \tetoken{ఉపసూత్రాల}{!!{formula}s}లోని $!A$పై
+        ఏకీభవిస్తాయి. కాబట్టి కావలసినట్లు
+        $\mSat{M}{!A}[v]$.}}{}
+
+  \iftag{prvDiamond}{\iftag{probDiamond}{
+      \olref[fil]{defn:filtration-R3} నిర్ధారణను
+      వ్యాయామంగా వదిలేస్తాం.}{
+        \olref[fil]{defn:filtration-R3}ను తనిఖీ చేయడానికి
+        $\Diamond!A \in \Gamma$, $R^*[u][v]$,
+        $\mSat{M}{!A}[v]$ అనుకుందాం. $R^*$ నిర్వచనం
+        ప్రకారం, $u' \equiv u$, $v' \equiv v$ అయ్యే,
+        $Ru'v'$ను నెరవేర్చే ప్రతినిధులు ఉన్నాయి.
+        $v$, $v'$లు~$\Gamma$పై ఏకీభవిస్తాయి;
+        $\Gamma$ ఉపసూత్రాల పరంగా సంవృతం కనుక
+        \tetoken{ఉపసూత్రాల}{!!{formula}s} సంవృతత వల్ల
+        $\mSat{M}{!A}[v']$ కూడా. అందువల్ల
+        $\mSat{M}{\Diamond !A}[u']$. $u$, $u'$లు కూడా
+        $\Gamma$పై ఏకీభవిస్తాయి కనుక
+        $\mSat{M}{\Diamond !A}[u]$.}}{}
+\end{proof}
+
+\begin{probtag}{probBox,probDiamond}
+  \olref[nml][fil][exf]{prop:finest} నిరూపణను పూర్తి చేయండి.
+\end{probtag}
+
+\begin{defn}
+  $\Gamma$ ఉపసూత్రాల పరంగా సంవృతమై ఉంటే,
+  నమూనా~$\mModel{M}$కు చేసే \emph{అత్యంత స్థూల}
+  వడపోత~$\mModel{M^*}$ను, $R^*[u][v]$ అయితే,
+  అప్పుడు మాత్రమే ఈ
+  \iftag{notprvBox,notprvDiamond}{కింది షరతు
+    నెరవేరేలా:}{కింది \emph{రెండు} షరతులూ నెరవేరేలా:}
+  నిర్వచిస్తాం.
+  \begin{tagenumerate}{prvBox,prvDiamond}
+  \tagitem{prvBox}{\ollabel{defn:coarsest-Box}$\Box!A \in \Gamma$,
+    $\mSat{M}{\Box!A}[u]$ అయితే
+    $\mSat{M}{!A}[v]$\iftag{prvDiamond}{;}{.}}{}
+  \tagitem{prvDiamond}{\ollabel{defn:coarsest-Diamond}$\Diamond!A
+    \in \Gamma$, $\mSat{M}{!A}[v]$ అయితే
+    $\mSat{M}{\Diamond!A}[u]$.}{}
+  \end{tagenumerate}
+\end{defn}
+
+\begin{prop}
+  అత్యంత స్థూల వడపోత $\mModel{M^*}$ నిజంగానే వడపోత.
+\end{prop}
+
+\begin{proof}
+  $R^*$ నిర్వచనం ప్రకారం, $Ruv$ నుంచి $R^*[u][v]$
+  వస్తుందని మాత్రమే ఇక నిర్ధారించాలి. $Ruv$
+  అనుకుందాం. \iftag{prvBox}{$\Box!A \in \Gamma$,
+    $\mSat{M}{\Box!A}[u]$ అయితే, స్పష్టంగా
+    $\mSat{M}{!A}[v]$\iftag{prvDiamond}{;
+      \olref{defn:coarsest-Box} నెరవేరింది. }{.}}{}\iftag{prvDiamond}{$\Diamond!A \in
+    \Gamma$, $\mSat{M}{!A}[v]$ అనుకుందాం. $Ruv$
+    కనుక $\mSat{M}{\Diamond!A}[u]$\iftag{prvBox}{;
+      \olref{defn:coarsest-Diamond} నెరవేరింది}{}.}{}
+\end{proof}
+
+\begin{ex}
+  $W = \PosInt$, $Rnm$ అయితే, అప్పుడు మాత్రమే
+  $m = n + 1$; $V(p) = W \cap \Setabs{2n}{n \in
+    \Nat}$ అని ఉంచుదాం. నమూనా
+  $\mModel{M} = \tuple{W, R, V}$ను
+  \olref{fig:ex-filtration}లో చిత్రించాం. లోకాలు
+  $1$, $2$ మొదలైనవి. ప్రతి లోకం తన ఉత్తరవర్తి అయిన
+  ఒకే లోకానికి ప్రాప్యత కలిగి ఉంటుంది; $p$ సరి
+  సంఖ్యల వద్ద మాత్రమే సత్యం.
+  \sourcecorrection{OLTENMLFILEXF-002}{ఈ ఎడిషన్‌లో
+    $\Nat$లో $0$ ఉంది; కానీ లోకాల సమితి $\PosInt$లో
+    అది లేదు. స్థిర మూలంలోని విలువ సమితిలో $2\cdot0$
+    కూడా చేరుతుంది. కాబట్టి విలువ నిర్ణయాన్ని $W$తో
+    ఛేదించి లోకాలకే పరిమితం చేశాం; చిత్రంలోని
+    సత్యమూల్యాలు మారవు.}
+
+  \begin{figure}
+    \centering
+    \begin{tikzpicture}[modal]
+      \node[world] (1) [label=below:\mFalse{p}] {$1$};
+      \node[world] (2) [label=below:\mTrue{p}, right=of 1] {$2$};
+      \node[world] (3) [label=below:\mFalse{p}, right=of 2] {$3$};
+      \node[world] (4) [label=below:\mTrue{p}, right=of 3] {$4$};
+      \node[phantom] (5) [right=of 4] {};
+      \draw[->] (1) to (2);
+      \draw[->] (2) to (3);
+      \draw[->] (3) to (4);
+      \draw[dotted] (4) to (5);
+    \end{tikzpicture}
+
+    \begin{tikzpicture}[modal]
+      \node[world] (1) [label=below:\mFalse{p}] {$[1]$};
+      \node[world] (2) [label=below:\mTrue{p}, right=of 1] {$[2]$};
+      \draw[->,bend left] (1) to (2);
+      \draw[->,bend left] (2) to (1);
+
+      \node[world] (3) [label=below:\mFalse{p},right=of 2] {$[1]$};
+      \node[world] (4) [label=below:\mTrue{p}, right=of 3] {$[2]$};
+      \draw[->,bend left] (3) to (4);
+      \draw[->,bend left] (4) to (3);
+      \draw[->,reflexive above] (4) to (4);
+    \end{tikzpicture}
+    \caption{అనంత నమూనా మరియు దాని వడపోతలు.}
+    \ollabel{fig:ex-filtration}
+  \end{figure}
+
+  ఇప్పుడు $\Gamma$ అనేది~$\Box p \lif p$ యొక్క
+  \tetoken{ఉపసూత్రాల}{!!{formula}s} సమితి అనుకుందాం;
+  అంటే $\{p, \Box p, \Box p \lif p\}$.
+  $p$ సరి సంఖ్యల వద్ద మాత్రమే సత్యం; $\Box p$
+  బేసి సంఖ్యల వద్ద మాత్రమే సత్యం. అందువల్ల
+  $\Box p \lif p$ సరి సంఖ్యల వద్ద మాత్రమే సత్యం.
+  మరోలా చెప్పాలంటే, ప్రతి బేసి సంఖ్య $\Box p$ను
+  సత్యం చేస్తుంది; కానీ $p$, $\Box p \lif p$లను
+  అసత్యం చేస్తుంది. ప్రతి సరి సంఖ్య $p$,
+  $\Box p \lif p$లను సత్యం చేస్తుంది; కానీ
+  $\Box p$ను అసత్యం చేస్తుంది. కనుక
+  $W^* = \{ [1], [2] \}$; ఇక్కడ
+  $[1] = \{1, 3, 5, \dots\}$,
+  $[2] = \{2, 4, 6, \dots\}$. $2 \in V(p)$ కనుక
+  $[2] \in V^*(p)$. మొదటి వర్గంలోని లోకాలన్నీ బేసి,
+  అందువల్ల $1 \notin V(p)$ మాత్రమే కాక మొత్తం
+  వర్గమే విలువ సమితికి వెలుపల ఉంది; కనుక
+  $[1] \notin V^*(p)$. అందువల్ల
+  $V^*(p) = \{[2]\}$.
+
+  $W^*$ ఆధారంగా చేసే ఏ వడపోత ప్రాప్యత సంబంధంలోనైనా
+  $\tuple{[1], [2]}, \tuple{[2],[1]}$ తప్పనిసరిగా
+  ఉండాలి. ఎందుకంటే $R12$ కనుక
+  \olref[fil]{defn:filtration}\olref[fil]{defn:filtration-R1}
+  వల్ల $R^*[1][2]$ కావాలి; అలాగే $R23$ కనుక
+  $R^*[2][3]$ కావాలి; $[3]=[1]$. కానీ
+  $\tuple{[1],[1]}$ ఉండకూడదు: అది ఉంటే
+  $R^*[1][1]$, $\mSat{M}{\Box p}[1]$ ఉండి,
+  $\mSat/{M}{p}[1]$ ఉంటుంది; ఇది
+  \olref[fil]{defn:filtration-R2}కు విరుద్ధం.
+  $R^*[2][2]$ను ఏ షరతూ తప్పనిసరి చేయదు,
+  నిషేధించదు. కాబట్టి~$\mModel{M}$కు రెండు వడపోతలు
+  సాధ్యం; వాటి ప్రాప్యత సంబంధాలు:
+  \[
+  \{\tuple{[1],[2]}, \tuple{[2],[1]}\} \text{ మరియు }
+  \{\tuple{[1],[2]}, \tuple{[2],[1]}, \tuple{[2],[2]}\}.
+  \]
+  రెండు సందర్భాల్లోనూ~$[1]$ వద్ద $p$,
+  $\Box p \lif p$ అసత్యం, $\Box p$ సత్యం;
+  $[2]$ వద్ద $p$, $\Box p \lif p$ సత్యం,
+  $\Box p$ అసత్యం.
+\end{ex}
+
+
+\begin{prob}
+  కింది నమూనా $\mModel{M} = \tuple{W, R, V}$ను
+  పరిశీలించండి. ఇక్కడ $W
+  = \Setabs{0\sigma}{\sigma \in \Bin^*}$,
+  అంటే $0$తో ప్రారంభమయ్యే $0$,~$1$ల క్రమాల సమితి;
+  $R\sigma\sigma'$ అయితే, అప్పుడు మాత్రమే
+  $\sigma' = \sigma 0$ లేదా $\sigma' = \sigma 1$.
+  అలాగే $V(p) = W \cap \Setabs{\sigma
+    0}{\sigma \in \Bin^*}$,
+  $V(q) = W \cap \Setabs{\sigma 1}{\sigma \in
+    \Bin^* \setminus \{1\}}$. చిత్రం ఇలా ఉంది:
+  \sourcecorrection{OLTENMLFILEXF-001}{స్థిర మూలం
+    $V(p)$, $V(q)$ సమితులను $W$కు పరిమితం చేయలేదు;
+    అందువల్ల కొన్ని $1$తో మొదలయ్యే క్రమాలు
+    లోకాలు కాకపోయినా విలువ సమితుల్లోకి రావచ్చు.
+    నమూనా విలువ నిర్ణయం $W$ ఉపసమితులనే ఇవ్వాలి
+    కనుక రెండింటికీ $W$తో ఛేదనం చేర్చాం. మూలంలోని
+    $\{1\}$ మినహాయింపును యథాతథంగా ఉంచాం.}
+  \begin{center}
+    \begin{tikzpicture}[modal,
+        node distance=2cm
+      ]
+
+      \node[world] (0) [label={below:\mTrue{p}\\\mFalse{q}},font=\tiny] {$0$};
+      \node[world] (00) [label={below:\mTrue{p}\\\mFalse{q}},
+        above right=of 0,font=\tiny] {$00$};
+      \node[world] (000) [label={below:\mTrue{p}\\\mFalse{q}},
+        right=of 00, yshift=.8cm, font=\tiny] {$000$};
+      \node[phantom] (0000) [right=of 000, yshift=.5cm] {};
+      \node[phantom] (0001) [right=of 000, yshift=-.5cm] {};
+      \node[world] (001) [label={below:\mFalse{p}\\\mTrue{q}},
+        right=of 00, yshift=-.8cm, font=\tiny] {$001$};
+      \node[phantom](0010) [right=of 001, yshift=.5cm] {};
+      \node[phantom](0011) [right=of 001, yshift=-.5cm] {};
+      \node[world] (01) [label={below:\mFalse{p}\\\mTrue{q}},
+        below right=of 0,font=\tiny] {$01$};
+      \node[world] (010) [label={below:\mTrue{p}\\\mFalse{q}},
+        right=of 01, yshift=.8cm,font=\tiny] {$010$};
+      \node[phantom] (0100) [right=of 010, yshift=.5cm] {};
+      \node[phantom] (0101) [right=of 010, yshift=-.5cm] {};
+      \node[world] (011) [label={below:\mFalse{p}\\\mTrue{q}},
+        right=of 01, yshift=-.8cm,font=\tiny] {$011$};
+      \node[phantom] (0110) [right=of 011, yshift=.5cm] {};
+      \node[phantom] (0111) [right=of 011, yshift=-.5cm] {};
+
+      \draw[->] (0) to (00);
+      \draw[->] (0) to (01);
+      \draw[->] (00) to (000);
+      \draw[dotted] (000) to (0000);
+      \draw[dotted] (000) to (0001);
+      \draw[->] (00) to (001);
+      \draw[dotted] (001) to (0010);
+      \draw[dotted] (001) to (0011);
+      \draw[->] (01) to (010);
+      \draw[dotted] (010) to (0100);
+      \draw[dotted] (010) to (0101);
+      \draw[->] (01) to (011);
+      \draw[dotted] (011) to (0110);
+      \draw[dotted] (011) to (0111);
+    \end{tikzpicture}
+  \end{center}
+  ప్రతి~$w$ వద్ద
+  $\mSat/{M}{\Box(p \lor q) \lif (\Box p \lor \Box q)}[w]$.
+
+  ఇప్పుడు $\Gamma$ అనేది~$\Box(p \lor q) \lif
+  (\Box p \lor \Box q)$ యొక్క
+  \tetoken{ఉపసూత్రాల}{!!{formula}s} సమితి అనుకుందాం.
+  $W^*$,~$V^*$ ఏమిటి? $\mModel{M}$కు చేసే
+  అత్యంత సూక్ష్మ వడపోత ప్రాప్యత సంబంధం ఏమిటి?
+  అత్యంత స్థూల వడపోత ప్రాప్యత సంబంధం ఏమిటి?
+\end{prob}
+
+\end{document}

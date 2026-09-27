@@ -866,6 +866,18 @@ locations['TE-T143']=[
  L('content/normal-modal-logic/filtrations/filtrations-def.tex',152,154,186,188,'Complete the proof','నిరూపణను పూర్తి చేయండి'),
  L('content/normal-modal-logic/filtrations/filtrations-def.tex',156,170,190,209,'class of models','నమూనాల వర్గం')
 ];
+locations['TE-T144']=[
+ L('content/normal-modal-logic/filtrations/examples-of-filtrations.tex',11,11,11,11,'Examples of Filtrations','వడపోతల ఉదాహరణలు'),
+ L('content/normal-modal-logic/filtrations/examples-of-filtrations.tex',13,20,13,23,'finest','అత్యంత సూక్ష్మ'),
+ L('content/normal-modal-logic/filtrations/examples-of-filtrations.tex',22,29,25,33,'finest','అత్యంత సూక్ష్మ'),
+ L('content/normal-modal-logic/filtrations/examples-of-filtrations.tex',31,62,35,80,'three conditions','మూడు షరతులనూ'),
+ L('content/normal-modal-logic/filtrations/examples-of-filtrations.tex',64,66,82,84,'Complete the proof','నిరూపణను పూర్తి చేయండి'),
+ L('content/normal-modal-logic/filtrations/examples-of-filtrations.tex',68,99,86,118,'coarsest','అత్యంత స్థూల'),
+ L('content/normal-modal-logic/filtrations/examples-of-filtrations.tex',101,106,120,135,'even numbers','సరి సంఖ్యల'),
+ L('content/normal-modal-logic/filtrations/examples-of-filtrations.tex',108,136,136,164,'An infinite model and its filtrations.','అనంత నమూనా మరియు దాని వడపోతలు.'),
+ L('content/normal-modal-logic/filtrations/examples-of-filtrations.tex',138,165,166,207,'two possible filtrations','రెండు వడపోతలు'),
+ L('content/normal-modal-logic/filtrations/examples-of-filtrations.tex',169,226,210,280,'finest filtration','అత్యంత సూక్ష్మ వడపోత')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -995,6 +1007,7 @@ alternatives['TE-T140']=['Filtrationsకు నిర్వచనాధీన �
 alternatives['TE-T141']=['పరిమిత ప్రతినమూనా శోధన, పరిమిత నమూనా ధర్మం, సూత్రాధార పరిమాణ హద్దు అనే మూడు వేర్వేరు దశలను నిలిపి, వడపోతను తాత్కాలిక పదంగా ఉంచి నాలుగు మూల సమస్యలను పక్కనే ప్రకటించి సరిచేయడం (ఎంపిక)','పరిమిత ప్రతినమూనా శోధన ఒక్కటే నిర్ణయ ప్రక్రియ అని చెప్పడం (తిరస్కరణ)','ప్రతి తుల్యతా వర్గం అనంతమని చెప్పడం (తిరస్కరణ)','మూలంలోని అస్తిత్వాత్మక బాక్స్ షరతు, అన్ని నమూనా చరాల పరీక్షను యథాతథం ఉంచడం (తిరస్కరణ)'];
 alternatives['TE-T142']=['ఉపసూత్ర సంవృతతకు అదనంగా Box/Diamond సంవృతతను విడిగా నిర్వచించి, తుల్యతా వర్గాలకు పూర్వ తుల్యతా సంబంధ పదజాలం, ఖచ్చిత సభ్యత్వ/సూత్ర పరీక్షలు నిలపడం (ఎంపిక)','మోడల్ సంవృత సమితి కూడా పరిమితమని అనుకోకుండా చేర్చడం (తిరస్కరణ)','TE-P022 ప్రతిజ్ఞావాక్య తుల్యత పేజీనే తుల్యతా సంబంధ సిద్ధాంతానికి ప్రత్యక్ష సాక్ష్యంగా చూపడం (తిరస్కరణ)','ప్రాప్యత సంబంధం R ధర్మాలను ఈ కొత్త తుల్యతా సంబంధానికి బదిలీ చేయడం (తిరస్కరణ)'];
 alternatives['TE-T143']=['పూర్తి అధికార నిర్వచనం చూశాక వడపోతను నిర్వచనాధీన ఎడిషన్ పదంగా నిలిపి, స్థిర W*/V*, భిన్న R*, మూడు షరతులు, పరమాణు ప్రతిదిశ, నాలుగు మోడల్ నిరూపణ దిశలు, guarded వ్యాయామాలను యథాతథం ఉంచడం (ఎంపిక)','వడపోతను ఏకైక R* నిర్మాణంగా చెప్పడం (తిరస్కరణ)','V*(p)లో [w] ఉండగానే wలో p సత్యమని p Gamma షరతు లేకుండా తేల్చడం (తిరస్కరణ)','స్థానిక సాధారణ సంబంధ పేజీలు modal సత్య సంరక్షణను ప్రత్యక్షంగా నిరూపిస్తాయని చూపడం (తిరస్కరణ)'];
+alternatives['TE-T144']=['అత్యంత సూక్ష్మ/స్థూలను R* జతల చేరిక క్రమంతో నిర్వచనాధీనంగా నిలిపి, R1/R2/R3 నిరూపణలు, చిత్రాలు, ఉదాహరణల్లోని మూడు విలువ సమితి సవరణలను పక్కనే ప్రకటించి నిలపడం (ఎంపిక)','సూక్ష్మ/స్థూలను లోకాల సంఖ్యతో పోల్చడం (తిరస్కరణ)','మొదటి ఉదాహరణలో 1 V(p)లో లేకపోవడమే [1] V*(p)లో లేదని తేల్చుతుందని చెప్పడం (తిరస్కరణ)','W వెలుపలి binary strings/zeroను విలువ సమితుల్లో యథాతథం ఉంచడం (తిరస్కరణ)','చివరి వ్యాయామానికి కోరని పూర్తి పరిష్కారం చేర్చడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -1010,7 +1023,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T143 record the Batch 025--Batch 102 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T144 record the Batch 025--Batch 103 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1343,6 +1356,8 @@ const correctionQuestions={
  ,'OLTENMLFILINT-002':'Does the universal-accessibility toy case give the universal truth clause for Box B, consistent with the later Box induction, without implying the same clause for arbitrary frames?'
  ,'OLTENMLFILINT-003':'Is the first equivalence restricted to variables occurring in A, and is the later general equivalence correctly strengthened to all subformulas of A?'
  ,'OLTENMLFILINT-004':'Is the p argument restored only to the defective first V-star membership assertion, leaving the already correct second assertion unchanged?'
+ ,'OLTENMLFILEXF-001':'Do both binary-tree valuation sets explicitly intersect W, keeping the diagram labels and the source exclusion of the string 1 without claiming that exclusion alone fixes the codomain?'
+ ,'OLTENMLFILEXF-002':'Does the first example restrict the even-natural valuation to positive world set W, given that this edition includes zero in Nat, without changing any depicted positive-world truth value?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

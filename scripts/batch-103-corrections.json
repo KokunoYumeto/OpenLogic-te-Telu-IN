@@ -1,0 +1,22 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0454",
+  "source_path": "content/normal-modal-logic/filtrations/examples-of-filtrations.tex",
+  "source_sha256": "8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484",
+  "audit_id": "OLTENMLFILEXF-20260927",
+  "audit_review_path": "evidence/OLP-0454-FILTRATION-EXAMPLES-SOURCE-AUDIT.md",
+  "audit_review_sha256": "b1c74ee8392124d9d6a9839554240a72cd9014e1320880adf47132844dfcc89e",
+  "audit_findings_path": "evidence/OLP-0454-FILTRATION-EXAMPLES-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "252898b61f2d1b42e43b330597031e771f43301dbbcd498f2fb22298abb106a8",
+  "previous_corrections": 419,
+  "treatments": {
+    "OLTENMLFILEXF-001": {
+      "target_line": 221,
+      "body_treatment": "వ్యాయామంలో విలువ సమితులు లోకాల సమితి Wకు ఉపసమితులు కాని అవకాశాన్ని తొలగించేందుకు V(p), V(q) రెండింటికీ Wతో ఛేదనం చేర్చి పక్కనే ప్రకటించాం; మూలంలోని {1} మినహాయింపును, చిత్రంలోని సత్యమూల్యాలను మార్చలేదు."
+    },
+    "OLTENMLFILEXF-002": {
+      "target_line": 129,
+      "body_treatment": "మూలం Natలో 0ను కలిగి ఉండగా W=PosIntలో 0 లేకపోవడంతో, మొదటి ఉదాహరణలో V(p)కు Wతో ఛేదనం చేర్చి విలువ నిర్ణయాన్ని లోకాలకే పరిమితం చేశాం; చిత్రం, సరి/బేసి లోకాల సత్యమూల్యాలు మారవు. సవరణ పక్కనే ప్రకటించాం."
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **453 of 722 source units drafted**. This readable view contains all 562 decisions and 1264 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **454 of 722 source units drafted**. This readable view contains all 565 decisions and 1276 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4343,6 +4343,41 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T143-OCC-008; OLP-0453; OLP-0453-B017; source upstream/content/normal-modal-logic/filtrations/filtrations-def.tex:130-135 bytes 6121-6483 SHA-256 e7f0f36522a5549a046c4c7999dec2c80751ed486edb72efaa3c3962bb4d02d1; target translation/content/normal-modal-logic/filtrations/filtrations-def.tex:162-168 bytes 9910-10418 SHA-256 319473b8961dd7d462fc94d9688555a0cd156965c56ac151688ac1705cde3188; reader page pending.
   - te-Telu-IN-TE-T143-OCC-009; OLP-0453; OLP-0453-B020; source upstream/content/normal-modal-logic/filtrations/filtrations-def.tex:152-154 bytes 7207-7294 SHA-256 e7f0f36522a5549a046c4c7999dec2c80751ed486edb72efaa3c3962bb4d02d1; target translation/content/normal-modal-logic/filtrations/filtrations-def.tex:186-188 bytes 11327-11456 SHA-256 319473b8961dd7d462fc94d9688555a0cd156965c56ac151688ac1705cde3188; reader page pending.
   - te-Telu-IN-TE-T143-OCC-010; OLP-0453; OLP-0453-B021; source upstream/content/normal-modal-logic/filtrations/filtrations-def.tex:156-157 bytes 7295-7404 SHA-256 e7f0f36522a5549a046c4c7999dec2c80751ed486edb72efaa3c3962bb4d02d1; target translation/content/normal-modal-logic/filtrations/filtrations-def.tex:190-192 bytes 11457-11747 SHA-256 319473b8961dd7d462fc94d9688555a0cd156965c56ac151688ac1705cde3188; reader page pending.
+
+## te-Telu-IN-TE-T144 — finest and coarsest filtrations; optional quotient accessibility edges
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: అత్యంత సూక్ష్మ, అత్యంత స్థూల వడపోతలు; ఐచ్ఛిక వర్గ-ప్రాప్యత జతలు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “finest and coarsest filtrations; optional quotient accessibility edges” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: సూక్ష్మ/స్థూల పదాలకు స్వతంత్ర స్థానిక modal-filtration సాక్ష్యం లేదు; ఈ పదాలు ప్రాప్యత జతల సమితి చేరిక క్రమానికి నిర్వచనాధీనంగా ఉన్నాయి. చిత్రాలు, guarded శాఖల సూత్రార్థం మూల నియంత్రితం.
+
+- Rationale: OLP-0454లో సూక్ష్మ వడపోతకు ప్రతినిధుల మధ్య అసలు ప్రాప్యత ఉన్నప్పుడే R* జత, స్థూల వడపోతకు R2/R3 అనుమతించే అన్ని జతలు అనే ఖచ్చిత క్రమాన్ని నిలిపాం. TE-P008/010/022 సాధారణ సమితి/సంబంధం/తుల్యత, TE-P018/024 తర్క రిజిస్టర్ మాత్రమే; సాంకేతిక సూక్ష్మ/స్థూల క్రమాన్ని మూల నిర్వచనం నిర్ణయిస్తుంది. రెండు ఉదాహరణల్లో W వెలుపలి విలువలను వేరువేరు మూల సవరణలతో తొలగించాం. R, R*, W, W*, V, V*, Gamma, Bin*, PosInt, Nat, TikZ nodes, references and tags remain protected mathematical/structural notation.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P022 [checked_context_only], PDF page 84; printed page 77; Implication and equivalence headings; Direct implication and equivalence terminology in propositional logic. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: అత్యంత సూక్ష్మ/స్థూలను R* జతల చేరిక క్రమంతో నిర్వచనాధీనంగా నిలిపి, R1/R2/R3 నిరూపణలు, చిత్రాలు, ఉదాహరణల్లోని మూడు విలువ సమితి సవరణలను పక్కనే ప్రకటించి నిలపడం [viable_alternative: ఎంపిక] | సూక్ష్మ/స్థూలను లోకాల సంఖ్యతో పోల్చడం [viable_alternative: తిరస్కరణ] | మొదటి ఉదాహరణలో 1 V(p)లో లేకపోవడమే [1] V*(p)లో లేదని తేల్చుతుందని చెప్పడం [viable_alternative: తిరస్కరణ] | W వెలుపలి binary strings/zeroను విలువ సమితుల్లో యథాతథం ఉంచడం [viable_alternative: తిరస్కరణ] | చివరి వ్యాయామానికి కోరని పూర్తి పరిష్కారం చేర్చడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “అత్యంత సూక్ష్మ, అత్యంత స్థూల వడపోతలు; ఐచ్ఛిక వర్గ-ప్రాప్యత జతలు” is idiomatic and technically standard for “finest and coarsest filtrations; optional quotient accessibility edges” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T144-OCC-001; OLP-0454; OLP-0454-B005; source upstream/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:11 bytes 193-229 SHA-256 8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484; target translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:11 bytes 193-249 SHA-256 94b3a69b6606e4e4f849d29a9996748b011b73e3d05248029f2ae30f3773b639; reader page pending.
+  - te-Telu-IN-TE-T144-OCC-002; OLP-0454; OLP-0454-B006; source upstream/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:13-20 bytes 230-734 SHA-256 8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484; target translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:13-23 bytes 250-1349 SHA-256 94b3a69b6606e4e4f849d29a9996748b011b73e3d05248029f2ae30f3773b639; reader page pending.
+  - te-Telu-IN-TE-T144-OCC-003; OLP-0454; OLP-0454-B007; source upstream/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:22-29 bytes 735-1005 SHA-256 8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484; target translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:25-33 bytes 1350-1824 SHA-256 94b3a69b6606e4e4f849d29a9996748b011b73e3d05248029f2ae30f3773b639; reader page pending.
+  - te-Telu-IN-TE-T144-OCC-004; OLP-0454; OLP-0454-B009; source upstream/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:35-38 bytes 1116-1286 SHA-256 8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484; target translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:39-43 bytes 1987-2281 SHA-256 94b3a69b6606e4e4f849d29a9996748b011b73e3d05248029f2ae30f3773b639; reader page pending.
+  - te-Telu-IN-TE-T144-OCC-005; OLP-0454; OLP-0454-B013; source upstream/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:64-66 bytes 2600-2711 SHA-256 8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484; target translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:82-84 bytes 4645-4797 SHA-256 94b3a69b6606e4e4f849d29a9996748b011b73e3d05248029f2ae30f3773b639; reader page pending.
+  - te-Telu-IN-TE-T144-OCC-006; OLP-0454; OLP-0454-B014; source upstream/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:68-82 bytes 2712-3388 SHA-256 8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484; target translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:86-102 bytes 4798-5721 SHA-256 94b3a69b6606e4e4f849d29a9996748b011b73e3d05248029f2ae30f3773b639; reader page pending.
+  - te-Telu-IN-TE-T144-OCC-007; OLP-0454; OLP-0454-B017; source upstream/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:101-106 bytes 4044-4375 SHA-256 8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484; target translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:120-134 bytes 6565-7786 SHA-256 94b3a69b6606e4e4f849d29a9996748b011b73e3d05248029f2ae30f3773b639; reader page pending.
+  - te-Telu-IN-TE-T144-OCC-008; OLP-0454; OLP-0454-B020; source upstream/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:128-136 bytes 5113-5491 SHA-256 8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484; target translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:156-164 bytes 8518-8938 SHA-256 94b3a69b6606e4e4f849d29a9996748b011b73e3d05248029f2ae30f3773b639; reader page pending.
+  - te-Telu-IN-TE-T144-OCC-009; OLP-0454; OLP-0454-B022; source upstream/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:149-166 bytes 6137-7029 SHA-256 8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484; target translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:186-207 bytes 10436-11797 SHA-256 94b3a69b6606e4e4f849d29a9996748b011b73e3d05248029f2ae30f3773b639; reader page pending.
+  - te-Telu-IN-TE-T144-OCC-010; OLP-0454; OLP-0454-B026; source upstream/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:222-226 bytes 9364-9595 SHA-256 8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484; target translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:274-280 bytes 15094-15612 SHA-256 94b3a69b6606e4e4f849d29a9996748b011b73e3d05248029f2ae30f3773b639; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -15317,3 +15352,55 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLFILINT-004-OCC-001; OLP-0451; OLP-0451-B011; source upstream/content/normal-modal-logic/filtrations/introduction.tex:87-108 bytes 4713-6141 SHA-256 faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a; target translation/content/normal-modal-logic/filtrations/introduction.tex:131 bytes 13504-13559 SHA-256 83eeaaa4963e94604665fbcdf7a7e4468b27932b37f8c5ebf40ed26a9298df4c; reader page pending.
+
+## te-Telu-IN-OLTENMLFILEXF-001 — OLTENMLFILEXF-001: exercise valuation sets not restricted to worlds
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: వ్యాయామంలో విలువ సమితులు లోకాల సమితి Wకు ఉపసమితులు కాని అవకాశాన్ని తొలగించేందుకు V(p), V(q) రెండింటికీ Wతో ఛేదనం చేర్చి పక్కనే ప్రకటించాం; మూలంలోని {1} మినహాయింపును, చిత్రంలోని సత్యమూల్యాలను మార్చలేదు.
+
+- Intended sense: Repair the audited exercise valuation sets not restricted to worlds at examples-of-filtrations.tex lines 170-175, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLFILEXF-20260927:OLTENMLFILEXF-001 [checked_supports], content/normal-modal-logic/filtrations/examples-of-filtrations.tex; examples-of-filtrations.tex lines 170-175; exercise_valuation_sets_not_restricted_to_worlds; వ్యాయామంలో విలువ సమితులు లోకాల సమితి Wకు ఉపసమితులు కాని అవకాశాన్ని తొలగించేందుకు V(p), V(q) రెండింటికీ Wతో ఛేదనం చేర్చి పక్కనే ప్రకటించాం; మూలంలోని {1} మినహాయింపును, చిత్రంలోని సత్యమూల్యాలను మార్చలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Do both binary-tree valuation sets explicitly intersect W, keeping the diagram labels and the source exclusion of the string 1 without claiming that exclusion alone fixes the codomain?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLFILEXF-001-OCC-001; OLP-0454; OLP-0454-B023; source upstream/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:169-179 bytes 7031-7515 SHA-256 8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484; target translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:221 bytes 12427-12495 SHA-256 94b3a69b6606e4e4f849d29a9996748b011b73e3d05248029f2ae30f3773b639; reader page pending.
+
+## te-Telu-IN-OLTENMLFILEXF-002 — OLTENMLFILEXF-002: first example valuation includes zero outside positive worlds
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: మూలం Natలో 0ను కలిగి ఉండగా W=PosIntలో 0 లేకపోవడంతో, మొదటి ఉదాహరణలో V(p)కు Wతో ఛేదనం చేర్చి విలువ నిర్ణయాన్ని లోకాలకే పరిమితం చేశాం; చిత్రం, సరి/బేసి లోకాల సత్యమూల్యాలు మారవు. సవరణ పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited first example valuation includes zero outside positive worlds at examples-of-filtrations.tex lines 101-106; important-sets.tex line 17, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLFILEXF-20260927:OLTENMLFILEXF-002 [checked_supports], content/normal-modal-logic/filtrations/examples-of-filtrations.tex; examples-of-filtrations.tex lines 101-106; important-sets.tex line 17; first_example_valuation_includes_zero_outside_positive_worlds; మూలం Natలో 0ను కలిగి ఉండగా W=PosIntలో 0 లేకపోవడంతో, మొదటి ఉదాహరణలో V(p)కు Wతో ఛేదనం చేర్చి విలువ నిర్ణయాన్ని లోకాలకే పరిమితం చేశాం; చిత్రం, సరి/బేసి లోకాల సత్యమూల్యాలు మారవు. సవరణ పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the first example restrict the even-natural valuation to positive world set W, given that this edition includes zero in Nat, without changing any depicted positive-world truth value?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLFILEXF-002-OCC-001; OLP-0454; OLP-0454-B017; source upstream/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:101-106 bytes 4044-4375 SHA-256 8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484; target translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:129 bytes 7197-7268 SHA-256 94b3a69b6606e4e4f849d29a9996748b011b73e3d05248029f2ae30f3773b639; reader page pending.
