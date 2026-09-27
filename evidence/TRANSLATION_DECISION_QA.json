@@ -15,20 +15,20 @@
   },
   "coverage": {
     "state": "partial",
-    "source_units": 460,
+    "source_units": 461,
     "corpus_units": 722,
     "reader_units": null
   },
   "counts": {
-    "decisions": 577,
-    "terminology": 150,
+    "decisions": 578,
+    "terminology": 151,
     "source_corrections": 427,
-    "occurrences": 1317,
+    "occurrences": 1321,
     "priority_urgent_or_high": 70,
-    "distinct_source_and_target_files_checked": 756,
-    "public_evidence_file_references_checked": 3065,
+    "distinct_source_and_target_files_checked": 758,
+    "public_evidence_file_references_checked": 3073,
     "reader_locator_status": {
-      "pending": 1317
+      "pending": 1321
     }
   },
   "checks": {
@@ -51,27 +51,27 @@
     {
       "path": "evidence/START_HERE.md",
       "bytes": 2343,
-      "sha256": "68c6f36da6e633fe4db8a609333c2b917e9ab985e2a5286d16ba0717c96657e5"
+      "sha256": "114c5d23ef479046498778affb79716b17d139b4df56cdcbfa93397ebf70cd47"
     },
     {
       "path": "evidence/TRANSLATION_DECISIONS_FULL.md",
-      "bytes": 2143950,
-      "sha256": "f236102cb7c54e7ee0a4ef8bfef29fd121b41b5337c6d3dd8ed76eb61fa71653"
+      "bytes": 2150480,
+      "sha256": "79b4d202d521dbc6a30b072f43d2520a0666c103df5829035dd5d0d3ef4372c9"
     },
     {
       "path": "evidence/PRIORITY_REVIEW.md",
       "bytes": 128735,
-      "sha256": "17b47d5a465ec090f432d9b3887cda4400b9863610fe084c56ed9caf3c40f7b5"
+      "sha256": "781889310271093397fca1974b666f47ce41e2998330f90461ac14a45fe973ef"
     },
     {
       "path": "evidence/DECISION_OCCURRENCES.csv",
-      "bytes": 2310924,
-      "sha256": "db43492e3f7f100cf12baf499282377c8a64e9517507f107bc785f24827d939e"
+      "bytes": 2317648,
+      "sha256": "870f5d3a0d738497a0d6a6042a2b30ec52e70d314d4830fca072886d44770a8d"
     },
     {
       "path": "evidence/DECISIONS.json",
-      "bytes": 10879543,
-      "sha256": "9d232389d2dc4d8d5f33dd212f3f71f2699e266299613ead6f30feba17de6d13"
+      "bytes": 10915403,
+      "sha256": "840752d1beda1f5fd7aaa64741204a52cb8169995ed937c76b4a0b7db59d87d8"
     },
     {
       "path": "evidence/translation-decision.schema.json",

@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "110",
+  "unit_id": "OLP-0461",
+  "unit_order": 461,
+  "source_path": "content/normal-modal-logic/tableaux/introduction.tex",
+  "blocks": 9,
+  "linguistic_blocks": [5, 6, 7, 8],
+  "previous_segments": 6992,
+  "previous_terms": 150,
+  "expected_corrections": 427,
+  "canon_default": ["TE-P019", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర మోడల్ టాబ్లో పరిచయం, తెలుగు లక్ష్యం, పూర్వ టాబ్లో పదనిర్ణయం, స్థానిక సత్యమూల్య/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; పూర్వసూచిక అనుక్రమం, dot notation, ప్రాప్య లోకం అర్థాన్ని మూల నిర్వచనంతో తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P019/024 సాధారణ సత్యమూల్య, వ్యుత్పత్తి/నియమ పదాలకు మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. మోడల్ టాబ్లోలు, పూర్వసూచిక గల సూత్రాలు, లోకాల ప్రాప్యత లేదా K నియమాలు ఈ పేజీల్లో లేవు; ఆ అర్థాలకు స్థిర మూలమే నియంత్రణ.",
+  "term_decision": {
+    "term_id": "TE-T151",
+    "source_term": "prefixed modal tableau / signed formula / prefix sequence / closed branch / accessible world",
+    "telugu": "పూర్వసూచిక గల మోడల్ టాబ్లో / చిహ్నిత సూత్రం / పూర్వసూచిక అనుక్రమం / సంవృత శాఖ / ప్రాప్యమైన లోకం",
+    "status": "native_truth_and_derivation_register_attested_prefixed_modal_tableau_definition_controlled",
+    "passages": ["TE-P019", "TE-P024"],
+    "basis": "TE-T039లోని టాబ్లో, చిహ్నిత సూత్రం, సంవృత శాఖ, వ్యుత్పత్తి రూపాలను కొనసాగించాం. మూలం పూర్వసూచికను శూన్యం కాని ధన పూర్ణసంఖ్యల అనుక్రమంగా, sigma.nను sigmaకు ప్రాప్యమైన లోకం పేరుగా నిర్వచిస్తుంది; ఈ నియంత్రణతో పూర్వసూచిక గల సూత్రం అని వాడాం. సంవృత శాఖ, పరిమిత Gamma_0, మోడల్ చిహ్నాల షరతుల్ని నిలిపాం.",
+    "uncertainty": "స్థానిక పేజీలు prefixed modal tableauకు ప్రత్యక్ష సాంకేతిక నామం ఇవ్వవు. మూలంలోని అసంపూర్ణ ఆంగ్ల ఉపవాక్యాన్ని భావం మార్చకుండా సంపూర్ణ తెలుగు వాక్యంగా మార్చాం; గణిత సవరణ చేయలేదు. స్వతంత్ర నిపుణ సమీక్ష, TeX దృశ్య తనిఖీ ఇంకా లేవు.",
+    "borrowing": "టాబ్లో is the established edition borrowing; K/Box/Diamond tags, sigma, signs, Gamma and displayed formulas remain protected notation. పూర్వసూచిక is a transparent definition-controlled rendering rather than an attested borrowed headword."
+  }
+}

@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **460 of 722 source units drafted**. This readable view contains all 577 decisions and 1317 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **461 of 722 source units drafted**. This readable view contains all 578 decisions and 1321 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4563,6 +4563,35 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 
   - te-Telu-IN-TE-T150-OCC-001; OLP-0460; OLP-0460-B004; source upstream/content/normal-modal-logic/tableaux/tableaux.tex:8 bytes 135-185 SHA-256 58eea9ef8caa03576eb40d2be64cbd3d5dbfc07e1bb052af3558481e9f7d8f1b; target translation/content/normal-modal-logic/tableaux/tableaux.tex:8 bytes 135-195 SHA-256 8a09f4efee3a00318d50a960766906824d8c6858101eb2a28b26405faa9bde17; reader page pending.
   - te-Telu-IN-TE-T150-OCC-002; OLP-0460; OLP-0460-B005; source upstream/content/normal-modal-logic/tableaux/tableaux.tex:10-14 bytes 186-417 SHA-256 58eea9ef8caa03576eb40d2be64cbd3d5dbfc07e1bb052af3558481e9f7d8f1b; target translation/content/normal-modal-logic/tableaux/tableaux.tex:10-16 bytes 196-793 SHA-256 8a09f4efee3a00318d50a960766906824d8c6858101eb2a28b26405faa9bde17; reader page pending.
+
+## te-Telu-IN-TE-T151 — prefixed modal tableau / signed formula / prefix sequence / closed branch / accessible world
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: పూర్వసూచిక గల మోడల్ టాబ్లో / చిహ్నిత సూత్రం / పూర్వసూచిక అనుక్రమం / సంవృత శాఖ / ప్రాప్యమైన లోకం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “prefixed modal tableau / signed formula / prefix sequence / closed branch / accessible world” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక పేజీలు prefixed modal tableauకు ప్రత్యక్ష సాంకేతిక నామం ఇవ్వవు. మూలంలోని అసంపూర్ణ ఆంగ్ల ఉపవాక్యాన్ని భావం మార్చకుండా సంపూర్ణ తెలుగు వాక్యంగా మార్చాం; గణిత సవరణ చేయలేదు. స్వతంత్ర నిపుణ సమీక్ష, TeX దృశ్య తనిఖీ ఇంకా లేవు.
+
+- Rationale: TE-T039లోని టాబ్లో, చిహ్నిత సూత్రం, సంవృత శాఖ, వ్యుత్పత్తి రూపాలను కొనసాగించాం. మూలం పూర్వసూచికను శూన్యం కాని ధన పూర్ణసంఖ్యల అనుక్రమంగా, sigma.nను sigmaకు ప్రాప్యమైన లోకం పేరుగా నిర్వచిస్తుంది; ఈ నియంత్రణతో పూర్వసూచిక గల సూత్రం అని వాడాం. సంవృత శాఖ, పరిమిత Gamma_0, మోడల్ చిహ్నాల షరతుల్ని నిలిపాం. టాబ్లో is the established edition borrowing; K/Box/Diamond tags, sigma, signs, Gamma and displayed formulas remain protected notation. పూర్వసూచిక is a transparent definition-controlled rendering rather than an attested borrowed headword.
+
+- Authorities checked: TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: పూర్వ టాబ్లో/చిహ్నిత సూత్రం/సంవృత శాఖ రూపాలను నిలిపి, పూర్వసూచికను మూల నిర్వచనం ప్రకారం ధన పూర్ణసంఖ్యల శూన్యం కాని అనుక్రమంగా, sigma.nను ప్రాప్య లోకపు పేరుగా అర్థం చేసుకోవడం [viable_alternative: ఎంపిక] | ప్రతి పూర్వసూచికను ఒకే పూర్ణసంఖ్యగా చెప్పడం [viable_alternative: తిరస్కరణ] | వేర్వేరు పూర్వసూచికల వద్ద ఎదురైన సత్యసంకేతాలకే శాఖను సంవృతమని చెప్పడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ సత్యమూల్య/వ్యుత్పత్తి పేజీల్లోనే prefixed modal tableaux నేరుగా ఉన్నాయని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “పూర్వసూచిక గల మోడల్ టాబ్లో / చిహ్నిత సూత్రం / పూర్వసూచిక అనుక్రమం / సంవృత శాఖ / ప్రాప్యమైన లోకం” is idiomatic and technically standard for “prefixed modal tableau / signed formula / prefix sequence / closed branch / accessible world” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T151-OCC-001; OLP-0461; OLP-0461-B006; source upstream/content/normal-modal-logic/tableaux/introduction.tex:13-36 bytes 205-1467 SHA-256 87a62d9825b9d30949d14e5530488544e403e28c7594774a9bf6c91e73803b54; target translation/content/normal-modal-logic/tableaux/introduction.tex:13-44 bytes 211-3357 SHA-256 8ad1d6af38a9b2547f232d8d131fee51749d0bee0b1475cc686b3e56e13e044f; reader page pending.
+  - te-Telu-IN-TE-T151-OCC-002; OLP-0461; OLP-0461-B006; source upstream/content/normal-modal-logic/tableaux/introduction.tex:13-36 bytes 205-1467 SHA-256 87a62d9825b9d30949d14e5530488544e403e28c7594774a9bf6c91e73803b54; target translation/content/normal-modal-logic/tableaux/introduction.tex:13-44 bytes 211-3357 SHA-256 8ad1d6af38a9b2547f232d8d131fee51749d0bee0b1475cc686b3e56e13e044f; reader page pending.
+  - te-Telu-IN-TE-T151-OCC-003; OLP-0461; OLP-0461-B007; source upstream/content/normal-modal-logic/tableaux/introduction.tex:38-54 bytes 1468-2287 SHA-256 87a62d9825b9d30949d14e5530488544e403e28c7594774a9bf6c91e73803b54; target translation/content/normal-modal-logic/tableaux/introduction.tex:46-65 bytes 3358-5105 SHA-256 8ad1d6af38a9b2547f232d8d131fee51749d0bee0b1475cc686b3e56e13e044f; reader page pending.
+  - te-Telu-IN-TE-T151-OCC-004; OLP-0461; OLP-0461-B008; source upstream/content/normal-modal-logic/tableaux/introduction.tex:56-59 bytes 2288-2513 SHA-256 87a62d9825b9d30949d14e5530488544e403e28c7594774a9bf6c91e73803b54; target translation/content/normal-modal-logic/tableaux/introduction.tex:67-71 bytes 5106-5688 SHA-256 8ad1d6af38a9b2547f232d8d131fee51749d0bee0b1475cc686b3e56e13e044f; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 

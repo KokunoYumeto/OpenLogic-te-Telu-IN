@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 460 of 722 draft units**. This log contains 150 terminology/sense decisions and 427 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 461 of 722 draft units**. This log contains 151 terminology/sense decisions and 427 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3607,6 +3607,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక సాక్షులు prefixed modal tableauకు ప్రత్యక్ష సాంకేతిక సాక్ష్యం కాదు. మూల వ్యాఖ్య చాప్టర్ ముసాయిదా అని చెబుతుంది; అనువాదం దాన్ని పూర్తి పాఠ్యంగా ప్రకటించదు. మూల metadata వ్యాఖ్యలోని axioms-systemsను రక్షితంగానే ఉంచాం.
 
 - Please double-check: Please double-check whether “మోడల్ పూర్వసూచిక టాబ్లోలు / ముసాయిదా అధ్యాయ శీర్షిక, తొమ్మిది రక్షిత దిగుమతులు” is idiomatic and technically standard for “modal prefixed tableaux / draft chapter wrapper and nine imports” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T151 — prefixed modal tableau / signed formula / prefix sequence / closed branch / accessible world
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: పూర్వసూచిక గల మోడల్ టాబ్లో / చిహ్నిత సూత్రం / పూర్వసూచిక అనుక్రమం / సంవృత శాఖ / ప్రాప్యమైన లోకం
+
+- Exact implementation: OLP-0461; normal-modal-logic/tableaux/introduction; content/normal-modal-logic/tableaux/introduction.tex:13-36 ↔ translation/content/normal-modal-logic/tableaux/introduction.tex:13-44 (OLP-0461-B006); printed/PDF page pending; OLP-0461; normal-modal-logic/tableaux/introduction; content/normal-modal-logic/tableaux/introduction.tex:13-36 ↔ translation/content/normal-modal-logic/tableaux/introduction.tex:13-44 (OLP-0461-B006); printed/PDF page pending; OLP-0461; normal-modal-logic/tableaux/introduction; content/normal-modal-logic/tableaux/introduction.tex:38-54 ↔ translation/content/normal-modal-logic/tableaux/introduction.tex:46-65 (OLP-0461-B007); printed/PDF page pending; OLP-0461; normal-modal-logic/tableaux/introduction; content/normal-modal-logic/tableaux/introduction.tex:56-59 ↔ translation/content/normal-modal-logic/tableaux/introduction.tex:67-71 (OLP-0461-B008); printed/PDF page pending
+
+- Authorities actually checked: TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-T039లోని టాబ్లో, చిహ్నిత సూత్రం, సంవృత శాఖ, వ్యుత్పత్తి రూపాలను కొనసాగించాం. మూలం పూర్వసూచికను శూన్యం కాని ధన పూర్ణసంఖ్యల అనుక్రమంగా, sigma.nను sigmaకు ప్రాప్యమైన లోకం పేరుగా నిర్వచిస్తుంది; ఈ నియంత్రణతో పూర్వసూచిక గల సూత్రం అని వాడాం. సంవృత శాఖ, పరిమిత Gamma_0, మోడల్ చిహ్నాల షరతుల్ని నిలిపాం. టాబ్లో is the established edition borrowing; K/Box/Diamond tags, sigma, signs, Gamma and displayed formulas remain protected notation. పూర్వసూచిక is a transparent definition-controlled rendering rather than an attested borrowed headword.
+
+- Alternatives: పూర్వ టాబ్లో/చిహ్నిత సూత్రం/సంవృత శాఖ రూపాలను నిలిపి, పూర్వసూచికను మూల నిర్వచనం ప్రకారం ధన పూర్ణసంఖ్యల శూన్యం కాని అనుక్రమంగా, sigma.nను ప్రాప్య లోకపు పేరుగా అర్థం చేసుకోవడం (ఎంపిక); ప్రతి పూర్వసూచికను ఒకే పూర్ణసంఖ్యగా చెప్పడం (తిరస్కరణ); వేర్వేరు పూర్వసూచికల వద్ద ఎదురైన సత్యసంకేతాలకే శాఖను సంవృతమని చెప్పడం (తిరస్కరణ); స్థానిక సాధారణ సత్యమూల్య/వ్యుత్పత్తి పేజీల్లోనే prefixed modal tableaux నేరుగా ఉన్నాయని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక పేజీలు prefixed modal tableauకు ప్రత్యక్ష సాంకేతిక నామం ఇవ్వవు. మూలంలోని అసంపూర్ణ ఆంగ్ల ఉపవాక్యాన్ని భావం మార్చకుండా సంపూర్ణ తెలుగు వాక్యంగా మార్చాం; గణిత సవరణ చేయలేదు. స్వతంత్ర నిపుణ సమీక్ష, TeX దృశ్య తనిఖీ ఇంకా లేవు.
+
+- Please double-check: Please double-check whether “పూర్వసూచిక గల మోడల్ టాబ్లో / చిహ్నిత సూత్రం / పూర్వసూచిక అనుక్రమం / సంవృత శాఖ / ప్రాప్యమైన లోకం” is idiomatic and technically standard for “prefixed modal tableau / signed formula / prefix sequence / closed branch / accessible world” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 

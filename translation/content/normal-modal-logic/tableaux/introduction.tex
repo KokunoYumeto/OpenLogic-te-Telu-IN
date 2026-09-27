@@ -1,0 +1,73 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: introduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{int}
+
+\olsection{పరిచయం}
+
+\tetoken{టాబ్లోలు}{!!^{tableau}s} అంటే కిందికి శాఖలుగా విస్తరించే
+\tetoken{చిహ్నిత సూత్రాల}{!!{signed
+  formula}s} వృక్షాలు. చిహ్నిత సూత్రం అనేది ఒక సత్యమూల్య
+సంకేతం ($\True$ లేదా $\False$), \tetoken{ఒక వాక్యంతో}{!!a{sentence}}
+కూడిన జంట:
+\[
+\sFmla{\True}{!A} \text{ లేదా } \sFmla{\False}{!A}.
+\]
+\tetoken{ఒక టాబ్లో}{!!^a{tableau}} కొన్ని \emph{పరికల్పనలతో}
+మొదలవుతుంది. ఆ తరువాతి ప్రతి \tetoken{చిహ్నిత సూత్రం}{!!{signed formula}}
+నిగమన నియమాల్లో ఒకదాన్ని వర్తింపజేయడం వల్ల వస్తుంది. కొన్ని
+నియమాలు వృక్షపు శాఖ చివరికి ఒకటి లేదా అంతకంటే ఎక్కువ
+\tetoken{చిహ్నిత సూత్రాలను}{!!{signed formula}s} చేర్చుతాయి;
+మరికొన్ని రెండు కొత్త చివరలను చేర్చి రెండు శాఖలను ఏర్పరుస్తాయి.
+నియమాన్ని వర్తింపజేసిన \tetoken{చిహ్నిత సూత్రంలోని}{!!{signed formula}}
+సూత్రం కంటే తక్కువ సంక్లిష్టతగల
+\tetoken{సూత్రం}{!!{formula}} ఉన్న \tetoken{చిహ్నిత సూత్రాలను}{!!{signed formula}s}
+ఆ నియమాలు ఇస్తాయి. ఒక శాఖలో $\sFmla{\True}{!A}$,
+$\sFmla{\False}{!A}$ రెండూ ఉంటే ఆ శాఖ \emph{సంవృతమైనది} అంటాం.
+\tetoken{ఒక టాబ్లోలోని}{!!a{tableau}} ప్రతి శాఖ సంవృతమైతే
+ఆ \tetoken{టాబ్లో}{!!{tableau}} మొత్తం సంవృతమైనది. సంవృత
+\tetoken{టాబ్లో}{!!{tableau}}, \tetoken{టాబ్లోను}{!!{tableau}}
+ప్రారంభించడానికి ఉపయోగించిన
+\tetoken{చిహ్నిత సూత్రాల}{!!{signed formula}s} సమితి
+సంతృప్తిపరచలేనిదని చూపే \tetoken{వ్యుత్పత్తి}{!!a{derivation}}.
+దీని ద్వారా $\Proves$ సంబంధాన్ని ఇలా నిర్వచించవచ్చు:
+$\Gamma \Proves !A$ అయితే, అప్పుడు మాత్రమే దానిలోని ఏదో
+పరిమిత సమితి~$\Gamma_0 = \{!B_1, \dots, !B_n\} \subseteq \Gamma$
+కోసం కింది పరికల్పనలకు సంవృత \tetoken{టాబ్లో}{!!{tableau}} ఉంటుంది:
+\[
+\{\sFmla{\False}{!A}, \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}.
+\]
+
+మోడల్ తర్కాల కోసం \tetoken{చిహ్నిత సూత్రం}{!!{signed
+formula}} అనే భావనను విస్తరించడంతోపాటు,
+\iftag{prvBox}{$\Box$\iftag{prvDiamond}{ మరియు
+    $\Diamond$}}{$\Diamond$}ను కవర్ చేసే నియమాలనూ చేర్చాలి.
+సంకేతం ($\True$ లేదా $\False$)తోపాటు, మోడల్
+\tetoken{టాబ్లోలలోని}{!!{tableau}s} \tetoken{సూత్రాలకు}{!!{formula}s}
+\emph{పూర్వసూచికలు}~$\sigma$ కూడా ఉంటాయి. పూర్వసూచికలు ధన
+పూర్ణసంఖ్యల శూన్యం కాని అనుక్రమాలు; అంటే
+$\sigma \in (\PosInt)^* \setminus \{\emptyseq\}$.
+అటువంటి పూర్వసూచికలను చుట్టూ $\tuple{\ }$ లేకుండా రాస్తాం;
+వాటిలోని \tetoken{మూలకాలను}{!!{element}s} వేరుచేయడానికి
+$.$లను ఉపయోగిస్తాం, $,$లను కాదు. $\sigma$ ఒక పూర్వసూచిక అయితే
+$\sigma.n$ అంటే $\sigma \concat \tuple{n}$; ఉదాహరణకు,
+$\sigma = 1.2.1$ అయితే $\sigma.3$ అనేది $1.2.1.3$.
+కాబట్టి, ఉదాహరణకు,
+\[
+\sFmla{\True}{\Box !A \lif !A}[1.2]
+\]
+అనేది \emph{పూర్వసూచిక గల \tetoken{చిహ్నిత సూత్రం}{!!{signed formula}}}
+(సంక్షిప్తంగా \emph{పూర్వసూచిక గల \tetoken{సూత్రం}{!!{formula}}}).
+
+సహజ అవగాహన ప్రకారం, పూర్వసూచిక ఒక నమూనాలోని లోకానికి
+పేరు. ఆ లోకం \tetoken{ఒక టాబ్లోలోని}{!!a{tableau}} శాఖపై ఉన్న
+\tetoken{సూత్రాలను}{!!{formula}s} సంతృప్తిపరచవచ్చు.
+$\sigma$ ఒక లోకానికి పేరైతే, $\sigma.n$ అనేది~$\sigma$ పేరుగల
+లోకం నుంచి ప్రాప్యమైన లోకానికి పేరు.
+
+\end{document}
