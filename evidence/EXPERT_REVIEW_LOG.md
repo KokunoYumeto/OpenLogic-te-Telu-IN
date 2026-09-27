@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 474 of 722 draft units**. This log contains 164 terminology/sense decisions and 451 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 477 of 722 draft units**. This log contains 167 terminology/sense decisions and 452 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3943,6 +3943,78 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక సాక్షులు modal సీక్వెంట్ నిర్దుష్టత/సంపూర్ణత లేదా S5 కట్ అవసరానికి ప్రత్యక్ష నిరూపణలు ఇవ్వవు. అధ్యాయం డ్రైవరులో మూలం ఇంకా నిరూపణలు కావాలని ప్రకటించింది. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
 
 - Please double-check: Please double-check whether “ప్రాప్యత వర్గాల సీక్వెంట్ నియమాలు / T D B 4 5 / కట్‌పై ఆధారపడే S5 ఉదాహరణ” is idiomatic and technically standard for “sequent rules for accessibility classes / T D B 4 5 / cut-dependent S5 example” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T165 — applied modal logic / temporal and epistemic logic / experimental draft
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: అనువర్తిత మోడల్ తర్కం / కాలిక, జ్ఞాన తర్కాలు / ప్రయోగాత్మక ముసాయిదా
+
+- Exact implementation: OLP-0475; applied-modal-logic/applied-modal-logic; content/applied-modal-logic/applied-modal-logic.tex:7 ↔ translation/content/applied-modal-logic/applied-modal-logic.tex:7 (OLP-0475-B004); printed/PDF page pending; OLP-0475; applied-modal-logic/applied-modal-logic; content/applied-modal-logic/applied-modal-logic.tex:9-12 ↔ translation/content/applied-modal-logic/applied-modal-logic.tex:9-12 (OLP-0475-B005); printed/PDF page pending; OLP-0475; applied-modal-logic/applied-modal-logic; content/applied-modal-logic/applied-modal-logic.tex:14 ↔ translation/content/applied-modal-logic/applied-modal-logic.tex:14 (OLP-0475-B006); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: మోడల్ తర్కానికి పూర్వ TE-T160–164 రూపాన్ని కొనసాగించాం. భాగం శీర్షిక, ప్రయోగాత్మక ముసాయిదా స్థితి, రెండు అధ్యాయ దిగుమతులు, భాగం ముగింపు హుక్ నిలిచాయి. Modal is rendered by established మోడల్; part ID, import paths and end hook remain protected.
+
+- Alternatives: అనువర్తిత మోడల్ తర్క భాగ శీర్షిక, ప్రయోగాత్మక ముసాయిదా స్థితి, కాలిక/జ్ఞాన దిగుమతులను నిలపడం (ఎంపిక); ముసాయిదాను పూర్తయిన తుది పాఠ్యంగా చూపడం (తిరస్కరణ); ఇంపోర్టులను లేదా భాగం ముగింపు హుక్‌ను మార్చడం (తిరస్కరణ); స్థానిక సాధారణ తర్క పేజీలు కాలిక/జ్ఞాన తర్కాలకు ప్రత్యక్ష పాఠ్య సాక్ష్యం అని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు కాలిక/జ్ఞాన తర్కానికి ప్రత్యక్ష సాంకేతిక పదం ఇవ్వవు. ఈ భాగం మూలంలో ప్రయోగాత్మక ముసాయిదా. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Please double-check: Please double-check whether “అనువర్తిత మోడల్ తర్కం / కాలిక, జ్ఞాన తర్కాలు / ప్రయోగాత్మక ముసాయిదా” is idiomatic and technically standard for “applied modal logic / temporal and epistemic logic / experimental draft” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T166 — temporal logics chapter / chapter end hook / temporal imports
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: కాలిక తర్కాల అధ్యాయం / అధ్యాయ ముగింపు హుక్ / కాలిక విభాగ దిగుమతులు
+
+- Exact implementation: OLP-0476; applied-modal-logic/temporal-logic/temporal-logic; content/applied-modal-logic/temporal-logic/temporal-logic.tex:8 ↔ translation/content/applied-modal-logic/temporal-logic/temporal-logic.tex:8 (OLP-0476-B004); printed/PDF page pending; OLP-0476; applied-modal-logic/temporal-logic/temporal-logic; content/applied-modal-logic/temporal-logic/temporal-logic.tex:14-18 ↔ translation/content/applied-modal-logic/temporal-logic/temporal-logic.tex:14-18 (OLP-0476-B006); printed/PDF page pending; OLP-0476; applied-modal-logic/temporal-logic/temporal-logic; content/applied-modal-logic/temporal-logic/temporal-logic.tex:20 ↔ translation/content/applied-modal-logic/temporal-logic/temporal-logic.tex:20-24 (OLP-0476-B007); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-T165లోని కాలిక తర్క రూపాన్ని కొనసాగించాం. అధ్యాయ శీర్షిక, ఐదు దిగుమతులు నిలిచి, మూలంలోని అధ్యాయంలో భాగం ముగింపు హుక్‌కు బదులు అధ్యాయ ముగింపు హుక్‌ను ఒక ప్రకటిత సవరణతో పెట్టాం. మోడల్ is established edition form; chapter IDs, import paths and chapter end hook remain protected structural notation.
+
+- Alternatives: కాలిక తర్క అధ్యాయ శీర్షిక, ఐదు దిగుమతులు నిలిపి, తప్పు భాగం ముగింపు హుక్‌ను ప్రకటించి అధ్యాయ హుక్‌గా సరిచేయడం (ఎంపిక); అధ్యాయ డ్రైవరులో భాగం హుక్‌ను యథాతథంగా ఉంచడం (తిరస్కరణ); దిగుమతుల పథాలను మార్చడం (తిరస్కరణ); స్థానిక సాధారణ తర్క పేజీ TeX హుక్‌కు ప్రత్యక్ష సాక్ష్యం అని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు కాలిక తర్క సాంకేతిక పదం ఇవ్వవు. హుక్ సవరణ TeX నిర్మాణ పాత్ర పోలికపై ఆధారపడింది; పూర్తి TeX నిర్మాణ తనిఖీ, స్వతంత్ర సమీక్ష ఇంకా లేవు.
+
+- Please double-check: Please double-check whether “కాలిక తర్కాల అధ్యాయం / అధ్యాయ ముగింపు హుక్ / కాలిక విభాగ దిగుమతులు” is idiomatic and technically standard for “temporal logics chapter / chapter end hook / temporal imports” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T167 — temporal logic / tense logic / future contingent / determinism and open future / linear branching circular time
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: కాలిక తర్కం / కాలరూప తర్కం / భవిష్యత్ అనిశ్చిత వాక్యం / నిర్ణయవాదం, తెరచిన భవిష్యత్తు / రేఖీయ, శాఖావిభజిత, చక్రీయ కాలం
+
+- Exact implementation: OLP-0477; applied-modal-logic/temporal-logic/introduction; content/applied-modal-logic/temporal-logic/introduction.tex:11 ↔ translation/content/applied-modal-logic/temporal-logic/introduction.tex:11 (OLP-0477-B005); printed/PDF page pending; OLP-0477; applied-modal-logic/temporal-logic/introduction; content/applied-modal-logic/temporal-logic/introduction.tex:13-19 ↔ translation/content/applied-modal-logic/temporal-logic/introduction.tex:13-20 (OLP-0477-B006); printed/PDF page pending; OLP-0477; applied-modal-logic/temporal-logic/introduction; content/applied-modal-logic/temporal-logic/introduction.tex:21-29 ↔ translation/content/applied-modal-logic/temporal-logic/introduction.tex:22-31 (OLP-0477-B007); printed/PDF page pending; OLP-0477; applied-modal-logic/temporal-logic/introduction; content/applied-modal-logic/temporal-logic/introduction.tex:31-43 ↔ translation/content/applied-modal-logic/temporal-logic/introduction.tex:33-46 (OLP-0477-B008); printed/PDF page pending; OLP-0477; applied-modal-logic/temporal-logic/introduction; content/applied-modal-logic/temporal-logic/introduction.tex:45-51 ↔ translation/content/applied-modal-logic/temporal-logic/introduction.tex:48-54 (OLP-0477-B009); printed/PDF page pending
+
+- Authorities actually checked: TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-T165/166లోని కాలిక తర్కం, పూర్వ సత్యమూల్య/మోడల్ పదాలను కొనసాగించాం. స్థిర మూలంలోని ప్రైయర్ attribution, కుక్క ఉదాహరణలో సమయ వ్యత్యాసం, భవిష్యత్ లేదా-నిష్కర్ష, రిచర్డ్ అనిశ్చిత వాక్యం, నియత/తెరచిన భవిష్యత్తు, కాల రూపాలు యథాతథం. ఆర్థర్ ప్రైయర్, బీజీ, రిచర్డ్ are source-example names; no public user attribution is inferred. Technical phrases are transparent Telugu constructions pending specialist review.
+
+- Alternatives: ప్రైయర్ కాలరూప తర్కం, బీజీ సమయ ఉదాహరణ, భవిష్యత్ అనిశ్చిత వాక్యం, నిర్ణయవాదం/తెరచిన భవిష్యత్తు, రేఖీయ/శాఖా/చక్రీయ కాల ఎంపికలను నిలపడం (ఎంపిక); కూర్చోవడం-కూర్చోకపోవడం ఒకేసారి సత్యమని చెప్పడం (తిరస్కరణ); భవిష్యత్ అనిశ్చిత వాక్యాన్ని తప్పనిసరిగా అసత్యమని చెప్పడం (తిరస్కరణ); కాలం తప్పనిసరిగా రేఖీయమే అని మూలం నిర్ణయించినట్లు చూపడం (తిరస్కరణ); స్థానిక సాధారణ పేజీలు ప్రైయర్ చరిత్రకు ప్రత్యక్ష ఆధారం అని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు కాలిక తర్కానికి ప్రత్యక్ష సాంకేతిక రూపాలు లేదా మూలంలోని చారిత్రక attributionకు ఆధారాలు కాదు. TeX దృశ్య తనిఖీ, స్వతంత్ర తాత్త్విక/భాషా సమీక్ష ఇంకా లేవు.
+
+- Please double-check: Please double-check whether “కాలిక తర్కం / కాలరూప తర్కం / భవిష్యత్ అనిశ్చిత వాక్యం / నిర్ణయవాదం, తెరచిన భవిష్యత్తు / రేఖీయ, శాఖావిభజిత, చక్రీయ కాలం” is idiomatic and technically standard for “temporal logic / tense logic / future contingent / determinism and open future / linear branching circular time” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -14767,3 +14839,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Do both corrected Dual-tree labels introduce negation on the antecedent, matching the frozen LK left-negation rule?
+
+## REV-OLTEAMLTLDRV-001 — OLTEAMLTLDRV-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: కాలిక తర్క అధ్యాయ డ్రైవరులో భాగం ముగింపు హుక్‌ను అధ్యాయ ముగింపు హుక్‌గా మార్చి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0476; applied-modal-logic/temporal-logic/temporal-logic; temporal-logic.tex lines 8 and 20; normal-modal-logic chapter drivers and open-logic.sty hook definitions ↔ translation/content/applied-modal-logic/temporal-logic/temporal-logic.tex:20 (OLP-0476-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTEAMLTLDRV-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: కాలిక తర్క అధ్యాయ డ్రైవరులో భాగం ముగింపు హుక్‌ను అధ్యాయ ముగింపు హుక్‌గా మార్చి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does this olchapter driver now invoke the chapter-end hook rather than the part-end hook, matching the separate macro roles and chapter-driver pattern?

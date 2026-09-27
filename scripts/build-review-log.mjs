@@ -1030,6 +1030,23 @@ locations['TE-T164']=[
  L('content/normal-modal-logic/sequent-calculus/more-rules.tex',293,350,299,356,'not complete without','లేకుండా సంపూర్ణం కాదు'),
  L('content/normal-modal-logic/sequent-calculus/more-rules.tex',352,362,358,368,'Give sequent','వ్యుత్పత్తులను')
 ];
+locations['TE-T165']=[
+ L('content/applied-modal-logic/applied-modal-logic.tex',7,7,7,7,'Applied Modal Logic','అనువర్తిత మోడల్ తర్కం'),
+ L('content/applied-modal-logic/applied-modal-logic.tex',9,12,9,12,'experimental draft','ప్రయోగాత్మక ముసాయిదా'),
+ L('content/applied-modal-logic/applied-modal-logic.tex',14,18,14,18,'\\olimport[temporal-logic]','\\olimport[temporal-logic]')
+];
+locations['TE-T166']=[
+ L('content/applied-modal-logic/temporal-logic/temporal-logic.tex',8,12,8,12,'Temporal Logics','కాలిక తర్కాలు'),
+ L('content/applied-modal-logic/temporal-logic/temporal-logic.tex',14,18,14,18,'\\olimport{possible-histories}','\\olimport{possible-histories}'),
+ L('content/applied-modal-logic/temporal-logic/temporal-logic.tex',20,20,20,24,'\\OLEndPartHook','\\OLEndChapterHook')
+];
+locations['TE-T167']=[
+ L('content/applied-modal-logic/temporal-logic/introduction.tex',11,11,11,11,'Introduction','పరిచయం'),
+ L('content/applied-modal-logic/temporal-logic/introduction.tex',13,19,13,20,'Arthur Prior','ఆర్థర్ ప్రైయర్'),
+ L('content/applied-modal-logic/temporal-logic/introduction.tex',21,29,22,31,'Beezie','బీజీ'),
+ L('content/applied-modal-logic/temporal-logic/introduction.tex',31,43,33,46,'future contingent','భవిష్యత్ అనిశ్చిత వాక్యం'),
+ L('content/applied-modal-logic/temporal-logic/introduction.tex',45,51,48,54,'linear, branching','రేఖీయంగా, శాఖలుగా')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -1180,6 +1197,9 @@ alternatives['TE-T161']=['LK నుంచి Kకి Box/Diamond feature ని�
 alternatives['TE-T162']=['K నియమాల్లో ఒక్క ప్రధాన సూత్ర పరిమితి, ఖాళీ సందర్భాలు, రెండు నక్షత్ర నియమ ప్రతివాదాలను నిలపడం (ఎంపిక)','నక్షత్ర నియమాలను చెల్లే K నియమాలుగా చూపడం (తిరస్కరణ)','Gamma/Delta అనుక్రమాలకు అన్ని సూత్రాల prefix చేర్పును మానడం (తిరస్కరణ)','స్థానిక సాధారణ వ్యుత్పత్తి పేజీ modal K నియమ నిర్దుష్టతకు ప్రత్యక్ష నిరూపణ అని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T163']=['Box/Diamond వ్యాప్తి చెట్లు, Dual వ్యుత్పత్తి, నాలుగు వ్యాయామాలు నిలిపి రెండు ఎడమ నిరాకరణ చీటీలను ప్రకటించి సరిచేయడం (ఎంపిక)','ఎడమ నిరాకరణ అడుగులను కుడి నిరాకరణగా వదిలేయడం (తిరస్కరణ)','వ్యాయామాలకు మూలంలో లేని పూర్తి పరిష్కారాలు చేర్చడం (తిరస్కరణ)','Dual చెట్టు చివరి iff/land దశ అన్ని feature రూపాల్లో స్వతంత్రంగా ధ్రువీకరించామని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T164']=['T/D/B/4/5 మూడు feature పట్టికలు, ఆరు తర్క-ప్రాప్యత జతలు, K4/S5 చెట్లు, కట్ ఉదాహరణ, ఆరు సమస్యలు నిలపడం (ఎంపిక)','S5 కట్ లేకుండానే ఈ LK-ఆధార వ్యవస్థ సంపూర్ణమని చెప్పడం (తిరస్కరణ)','మూలం ఇంకా కావాలన్న నిరూపణలను పూర్తిగా ఇచ్చినట్టు చెప్పడం (తిరస్కరణ)','స్థానిక సాధారణ సంబంధ పేజీ modal సీక్వెంట్ సంపూర్ణతకు ప్రత్యక్ష నిరూపణ అని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T165']=['అనువర్తిత మోడల్ తర్క భాగ శీర్షిక, ప్రయోగాత్మక ముసాయిదా స్థితి, కాలిక/జ్ఞాన దిగుమతులను నిలపడం (ఎంపిక)','ముసాయిదాను పూర్తయిన తుది పాఠ్యంగా చూపడం (తిరస్కరణ)','ఇంపోర్టులను లేదా భాగం ముగింపు హుక్‌ను మార్చడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలు కాలిక/జ్ఞాన తర్కాలకు ప్రత్యక్ష పాఠ్య సాక్ష్యం అని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T166']=['కాలిక తర్క అధ్యాయ శీర్షిక, ఐదు దిగుమతులు నిలిపి, తప్పు భాగం ముగింపు హుక్‌ను ప్రకటించి అధ్యాయ హుక్‌గా సరిచేయడం (ఎంపిక)','అధ్యాయ డ్రైవరులో భాగం హుక్‌ను యథాతథంగా ఉంచడం (తిరస్కరణ)','దిగుమతుల పథాలను మార్చడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీ TeX హుక్‌కు ప్రత్యక్ష సాక్ష్యం అని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T167']=['ప్రైయర్ కాలరూప తర్కం, బీజీ సమయ ఉదాహరణ, భవిష్యత్ అనిశ్చిత వాక్యం, నిర్ణయవాదం/తెరచిన భవిష్యత్తు, రేఖీయ/శాఖా/చక్రీయ కాల ఎంపికలను నిలపడం (ఎంపిక)','కూర్చోవడం-కూర్చోకపోవడం ఒకేసారి సత్యమని చెప్పడం (తిరస్కరణ)','భవిష్యత్ అనిశ్చిత వాక్యాన్ని తప్పనిసరిగా అసత్యమని చెప్పడం (తిరస్కరణ)','కాలం తప్పనిసరిగా రేఖీయమే అని మూలం నిర్ణయించినట్లు చూపడం (తిరస్కరణ)','స్థానిక సాధారణ పేజీలు ప్రైయర్ చరిత్రకు ప్రత్యక్ష ఆధారం అని చెప్పడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -1195,7 +1215,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T164 record the Batch 025--Batch 123 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T167 record the Batch 025--Batch 126 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1560,6 +1580,7 @@ const correctionQuestions={
  ,'OLTENMLTABCM-004':'Does the middle Diamond tableau root test the same implication as the first and third trees, consistent with its F conditional children?'
  ,'OLTENMLTABCM-005':'Does the Diamond model assign q to 1.2 and cite the T q[1.2] witness on line 7?'
  ,'OLTENMLSEQPRK-001':'Do both corrected Dual-tree labels introduce negation on the antecedent, matching the frozen LK left-negation rule?'
+ ,'OLTEAMLTLDRV-001':'Does this olchapter driver now invoke the chapter-end hook rather than the part-end hook, matching the separate macro roles and chapter-driver pattern?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

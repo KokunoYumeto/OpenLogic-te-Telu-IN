@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 474 of 722 draft units**. This view selects 504 of 615 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 477 of 722 draft units**. This view selects 505 of 619 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -5043,3 +5043,13 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0473; normal-modal-logic/sequent-calculus/proofs-in-K; translation/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:111; printed/PDF page pending
 
 - Please double-check: Please double-check: Do both corrected Dual-tree labels introduce negation on the antecedent, matching the frozen LK left-negation rule?
+
+## REV-OLTEAMLTLDRV-001 — OLTEAMLTLDRV-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: కాలిక తర్క అధ్యాయ డ్రైవరులో భాగం ముగింపు హుక్‌ను అధ్యాయ ముగింపు హుక్‌గా మార్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0476; applied-modal-logic/temporal-logic/temporal-logic; translation/content/applied-modal-logic/temporal-logic/temporal-logic.tex:20; printed/PDF page pending
+
+- Please double-check: Please double-check: Does this olchapter driver now invoke the chapter-end hook rather than the part-end hook, matching the separate macro roles and chapter-driver pattern?

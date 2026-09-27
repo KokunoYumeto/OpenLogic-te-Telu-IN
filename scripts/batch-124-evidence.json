@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "124",
+  "unit_id": "OLP-0475",
+  "unit_order": 475,
+  "source_path": "content/applied-modal-logic/applied-modal-logic.tex",
+  "blocks": 9,
+  "linguistic_blocks": [4, 5],
+  "previous_segments": 7188,
+  "previous_terms": 164,
+  "expected_corrections": 451,
+  "canon_default": ["TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర అనువర్తిత మోడల్ తర్క భాగ డ్రైవరును, తెలుగు లక్ష్యాన్ని, పూర్వ మోడల్/తర్క పదాలను, స్థానిక సాధారణ తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; ప్రయోగాత్మక ముసాయిదా హెచ్చరిక, కాలిక/జ్ఞాన దిగుమతులు, భాగం హుక్ తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P018/024 సాధారణ తర్కం, వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. కాలిక లేదా జ్ఞాన మోడల్ తర్కానికి నేర సాంకేతిక పదసాక్ష్యం ఈ పేజీల్లో లేదు; మూలం ప్రయోగాత్మక ముసాయిదా అని ప్రకటిస్తుంది.",
+  "term_decision": {
+    "term_id": "TE-T165",
+    "source_term": "applied modal logic / temporal and epistemic logic / experimental draft",
+    "telugu": "అనువర్తిత మోడల్ తర్కం / కాలిక, జ్ఞాన తర్కాలు / ప్రయోగాత్మక ముసాయిదా",
+    "status": "native_general_logic_derivation_register_attested_applied_modal_source_controlled_draft_warning_preserved",
+    "passages": ["TE-P018", "TE-P024"],
+    "basis": "మోడల్ తర్కానికి పూర్వ TE-T160–164 రూపాన్ని కొనసాగించాం. భాగం శీర్షిక, ప్రయోగాత్మక ముసాయిదా స్థితి, రెండు అధ్యాయ దిగుమతులు, భాగం ముగింపు హుక్ నిలిచాయి.",
+    "uncertainty": "స్థానిక సాక్షులు కాలిక/జ్ఞాన తర్కానికి ప్రత్యక్ష సాంకేతిక పదం ఇవ్వవు. ఈ భాగం మూలంలో ప్రయోగాత్మక ముసాయిదా. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "Modal is rendered by established మోడల్; part ID, import paths and end hook remain protected."
+  }
+}

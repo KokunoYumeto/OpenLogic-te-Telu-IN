@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **474 of 722 source units drafted**. This readable view contains all 615 decisions and 1418 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **477 of 722 source units drafted**. This readable view contains all 619 decisions and 1430 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4990,6 +4990,92 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T164-OCC-005; OLP-0474; OLP-0474-B010; source upstream/content/normal-modal-logic/sequent-calculus/more-rules.tex:222-246 bytes 6327-7108 SHA-256 7208b51ded8fec09ae57789b113c42fc47b8e8a4c8e6c290c8f7b25ffb27ef45; target translation/content/normal-modal-logic/sequent-calculus/more-rules.tex:223-249 bytes 7083-8086 SHA-256 18d295c61582ff808294c62d08d7b9f2379a7005a238a77c555ebb3ec582e35e; reader page pending.
   - te-Telu-IN-TE-T164-OCC-006; OLP-0474; OLP-0474-B011; source upstream/content/normal-modal-logic/sequent-calculus/more-rules.tex:248-302 bytes 7109-9187 SHA-256 7208b51ded8fec09ae57789b113c42fc47b8e8a4c8e6c290c8f7b25ffb27ef45; target translation/content/normal-modal-logic/sequent-calculus/more-rules.tex:251-310 bytes 8087-10787 SHA-256 18d295c61582ff808294c62d08d7b9f2379a7005a238a77c555ebb3ec582e35e; reader page pending.
   - te-Telu-IN-TE-T164-OCC-007; OLP-0474; OLP-0474-B016; source upstream/content/normal-modal-logic/sequent-calculus/more-rules.tex:352-362 bytes 10585-10917 SHA-256 7208b51ded8fec09ae57789b113c42fc47b8e8a4c8e6c290c8f7b25ffb27ef45; target translation/content/normal-modal-logic/sequent-calculus/more-rules.tex:360-371 bytes 12185-12632 SHA-256 18d295c61582ff808294c62d08d7b9f2379a7005a238a77c555ebb3ec582e35e; reader page pending.
+
+## te-Telu-IN-TE-T165 — applied modal logic / temporal and epistemic logic / experimental draft
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: అనువర్తిత మోడల్ తర్కం / కాలిక, జ్ఞాన తర్కాలు / ప్రయోగాత్మక ముసాయిదా
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “applied modal logic / temporal and epistemic logic / experimental draft” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు కాలిక/జ్ఞాన తర్కానికి ప్రత్యక్ష సాంకేతిక పదం ఇవ్వవు. ఈ భాగం మూలంలో ప్రయోగాత్మక ముసాయిదా. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Rationale: మోడల్ తర్కానికి పూర్వ TE-T160–164 రూపాన్ని కొనసాగించాం. భాగం శీర్షిక, ప్రయోగాత్మక ముసాయిదా స్థితి, రెండు అధ్యాయ దిగుమతులు, భాగం ముగింపు హుక్ నిలిచాయి. Modal is rendered by established మోడల్; part ID, import paths and end hook remain protected.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: అనువర్తిత మోడల్ తర్క భాగ శీర్షిక, ప్రయోగాత్మక ముసాయిదా స్థితి, కాలిక/జ్ఞాన దిగుమతులను నిలపడం [viable_alternative: ఎంపిక] | ముసాయిదాను పూర్తయిన తుది పాఠ్యంగా చూపడం [viable_alternative: తిరస్కరణ] | ఇంపోర్టులను లేదా భాగం ముగింపు హుక్‌ను మార్చడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ తర్క పేజీలు కాలిక/జ్ఞాన తర్కాలకు ప్రత్యక్ష పాఠ్య సాక్ష్యం అని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “అనువర్తిత మోడల్ తర్కం / కాలిక, జ్ఞాన తర్కాలు / ప్రయోగాత్మక ముసాయిదా” is idiomatic and technically standard for “applied modal logic / temporal and epistemic logic / experimental draft” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T165-OCC-001; OLP-0475; OLP-0475-B004; source upstream/content/applied-modal-logic/applied-modal-logic.tex:7 bytes 104-138 SHA-256 e4daecb067402048d5f0180f1ed05cc9260fc93d2442079ac5ddf7841327ef1e; target translation/content/applied-modal-logic/applied-modal-logic.tex:7 bytes 104-178 SHA-256 29ce667e9d5f32ed9e9f80c5e510ee467d1b80b8f22f7d23ff8cb97ddaadb686; reader page pending.
+  - te-Telu-IN-TE-T165-OCC-002; OLP-0475; OLP-0475-B005; source upstream/content/applied-modal-logic/applied-modal-logic.tex:9-12 bytes 139-296 SHA-256 e4daecb067402048d5f0180f1ed05cc9260fc93d2442079ac5ddf7841327ef1e; target translation/content/applied-modal-logic/applied-modal-logic.tex:9-12 bytes 179-455 SHA-256 29ce667e9d5f32ed9e9f80c5e510ee467d1b80b8f22f7d23ff8cb97ddaadb686; reader page pending.
+  - te-Telu-IN-TE-T165-OCC-003; OLP-0475; OLP-0475-B006; source upstream/content/applied-modal-logic/applied-modal-logic.tex:14 bytes 297-339 SHA-256 e4daecb067402048d5f0180f1ed05cc9260fc93d2442079ac5ddf7841327ef1e; target translation/content/applied-modal-logic/applied-modal-logic.tex:14 bytes 456-498 SHA-256 29ce667e9d5f32ed9e9f80c5e510ee467d1b80b8f22f7d23ff8cb97ddaadb686; reader page pending.
+
+## te-Telu-IN-TE-T166 — temporal logics chapter / chapter end hook / temporal imports
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: కాలిక తర్కాల అధ్యాయం / అధ్యాయ ముగింపు హుక్ / కాలిక విభాగ దిగుమతులు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “temporal logics chapter / chapter end hook / temporal imports” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు కాలిక తర్క సాంకేతిక పదం ఇవ్వవు. హుక్ సవరణ TeX నిర్మాణ పాత్ర పోలికపై ఆధారపడింది; పూర్తి TeX నిర్మాణ తనిఖీ, స్వతంత్ర సమీక్ష ఇంకా లేవు.
+
+- Rationale: TE-T165లోని కాలిక తర్క రూపాన్ని కొనసాగించాం. అధ్యాయ శీర్షిక, ఐదు దిగుమతులు నిలిచి, మూలంలోని అధ్యాయంలో భాగం ముగింపు హుక్‌కు బదులు అధ్యాయ ముగింపు హుక్‌ను ఒక ప్రకటిత సవరణతో పెట్టాం. మోడల్ is established edition form; chapter IDs, import paths and chapter end hook remain protected structural notation.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: కాలిక తర్క అధ్యాయ శీర్షిక, ఐదు దిగుమతులు నిలిపి, తప్పు భాగం ముగింపు హుక్‌ను ప్రకటించి అధ్యాయ హుక్‌గా సరిచేయడం [viable_alternative: ఎంపిక] | అధ్యాయ డ్రైవరులో భాగం హుక్‌ను యథాతథంగా ఉంచడం [viable_alternative: తిరస్కరణ] | దిగుమతుల పథాలను మార్చడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ తర్క పేజీ TeX హుక్‌కు ప్రత్యక్ష సాక్ష్యం అని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “కాలిక తర్కాల అధ్యాయం / అధ్యాయ ముగింపు హుక్ / కాలిక విభాగ దిగుమతులు” is idiomatic and technically standard for “temporal logics chapter / chapter end hook / temporal imports” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T166-OCC-001; OLP-0476; OLP-0476-B004; source upstream/content/applied-modal-logic/temporal-logic/temporal-logic.tex:8 bytes 137-174 SHA-256 002d60bc4f9fd0b84f7d062f1cf8a325563ce8f343c5d070e124e4f05c4115e4; target translation/content/applied-modal-logic/temporal-logic/temporal-logic.tex:8 bytes 137-196 SHA-256 4d55f4937a2ffd15ac7038e265260187b26fa81fb65e58df13be35c7ad098cb4; reader page pending.
+  - te-Telu-IN-TE-T166-OCC-002; OLP-0476; OLP-0476-B006; source upstream/content/applied-modal-logic/temporal-logic/temporal-logic.tex:14-18 bytes 249-411 SHA-256 002d60bc4f9fd0b84f7d062f1cf8a325563ce8f343c5d070e124e4f05c4115e4; target translation/content/applied-modal-logic/temporal-logic/temporal-logic.tex:14-18 bytes 339-501 SHA-256 4d55f4937a2ffd15ac7038e265260187b26fa81fb65e58df13be35c7ad098cb4; reader page pending.
+  - te-Telu-IN-TE-T166-OCC-003; OLP-0476; OLP-0476-B007; source upstream/content/applied-modal-logic/temporal-logic/temporal-logic.tex:20 bytes 412-427 SHA-256 002d60bc4f9fd0b84f7d062f1cf8a325563ce8f343c5d070e124e4f05c4115e4; target translation/content/applied-modal-logic/temporal-logic/temporal-logic.tex:20-24 bytes 502-918 SHA-256 4d55f4937a2ffd15ac7038e265260187b26fa81fb65e58df13be35c7ad098cb4; reader page pending.
+
+## te-Telu-IN-TE-T167 — temporal logic / tense logic / future contingent / determinism and open future / linear branching circular time
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: కాలిక తర్కం / కాలరూప తర్కం / భవిష్యత్ అనిశ్చిత వాక్యం / నిర్ణయవాదం, తెరచిన భవిష్యత్తు / రేఖీయ, శాఖావిభజిత, చక్రీయ కాలం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “temporal logic / tense logic / future contingent / determinism and open future / linear branching circular time” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు కాలిక తర్కానికి ప్రత్యక్ష సాంకేతిక రూపాలు లేదా మూలంలోని చారిత్రక attributionకు ఆధారాలు కాదు. TeX దృశ్య తనిఖీ, స్వతంత్ర తాత్త్విక/భాషా సమీక్ష ఇంకా లేవు.
+
+- Rationale: TE-T165/166లోని కాలిక తర్కం, పూర్వ సత్యమూల్య/మోడల్ పదాలను కొనసాగించాం. స్థిర మూలంలోని ప్రైయర్ attribution, కుక్క ఉదాహరణలో సమయ వ్యత్యాసం, భవిష్యత్ లేదా-నిష్కర్ష, రిచర్డ్ అనిశ్చిత వాక్యం, నియత/తెరచిన భవిష్యత్తు, కాల రూపాలు యథాతథం. ఆర్థర్ ప్రైయర్, బీజీ, రిచర్డ్ are source-example names; no public user attribution is inferred. Technical phrases are transparent Telugu constructions pending specialist review.
+
+- Authorities checked: TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: ప్రైయర్ కాలరూప తర్కం, బీజీ సమయ ఉదాహరణ, భవిష్యత్ అనిశ్చిత వాక్యం, నిర్ణయవాదం/తెరచిన భవిష్యత్తు, రేఖీయ/శాఖా/చక్రీయ కాల ఎంపికలను నిలపడం [viable_alternative: ఎంపిక] | కూర్చోవడం-కూర్చోకపోవడం ఒకేసారి సత్యమని చెప్పడం [viable_alternative: తిరస్కరణ] | భవిష్యత్ అనిశ్చిత వాక్యాన్ని తప్పనిసరిగా అసత్యమని చెప్పడం [viable_alternative: తిరస్కరణ] | కాలం తప్పనిసరిగా రేఖీయమే అని మూలం నిర్ణయించినట్లు చూపడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ పేజీలు ప్రైయర్ చరిత్రకు ప్రత్యక్ష ఆధారం అని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “కాలిక తర్కం / కాలరూప తర్కం / భవిష్యత్ అనిశ్చిత వాక్యం / నిర్ణయవాదం, తెరచిన భవిష్యత్తు / రేఖీయ, శాఖావిభజిత, చక్రీయ కాలం” is idiomatic and technically standard for “temporal logic / tense logic / future contingent / determinism and open future / linear branching circular time” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T167-OCC-001; OLP-0477; OLP-0477-B005; source upstream/content/applied-modal-logic/temporal-logic/introduction.tex:11 bytes 186-211 SHA-256 327c7c72f1b98905b0786413d23b688185ed185226419ff49bcd78aaeb3f76dd; target translation/content/applied-modal-logic/temporal-logic/introduction.tex:11 bytes 186-217 SHA-256 b18cdb8c74ac63d0b88f87651a077d6cf72b349a148891606001f81ae1e514bf; reader page pending.
+  - te-Telu-IN-TE-T167-OCC-002; OLP-0477; OLP-0477-B006; source upstream/content/applied-modal-logic/temporal-logic/introduction.tex:13-19 bytes 212-613 SHA-256 327c7c72f1b98905b0786413d23b688185ed185226419ff49bcd78aaeb3f76dd; target translation/content/applied-modal-logic/temporal-logic/introduction.tex:13-20 bytes 218-1234 SHA-256 b18cdb8c74ac63d0b88f87651a077d6cf72b349a148891606001f81ae1e514bf; reader page pending.
+  - te-Telu-IN-TE-T167-OCC-003; OLP-0477; OLP-0477-B007; source upstream/content/applied-modal-logic/temporal-logic/introduction.tex:21-29 bytes 614-1229 SHA-256 327c7c72f1b98905b0786413d23b688185ed185226419ff49bcd78aaeb3f76dd; target translation/content/applied-modal-logic/temporal-logic/introduction.tex:22-31 bytes 1235-2604 SHA-256 b18cdb8c74ac63d0b88f87651a077d6cf72b349a148891606001f81ae1e514bf; reader page pending.
+  - te-Telu-IN-TE-T167-OCC-004; OLP-0477; OLP-0477-B008; source upstream/content/applied-modal-logic/temporal-logic/introduction.tex:31-43 bytes 1230-2119 SHA-256 327c7c72f1b98905b0786413d23b688185ed185226419ff49bcd78aaeb3f76dd; target translation/content/applied-modal-logic/temporal-logic/introduction.tex:33-46 bytes 2605-4439 SHA-256 b18cdb8c74ac63d0b88f87651a077d6cf72b349a148891606001f81ae1e514bf; reader page pending.
+  - te-Telu-IN-TE-T167-OCC-005; OLP-0477; OLP-0477-B009; source upstream/content/applied-modal-logic/temporal-logic/introduction.tex:45-51 bytes 2120-2584 SHA-256 327c7c72f1b98905b0786413d23b688185ed185226419ff49bcd78aaeb3f76dd; target translation/content/applied-modal-logic/temporal-logic/introduction.tex:48-54 bytes 4440-5341 SHA-256 b18cdb8c74ac63d0b88f87651a077d6cf72b349a148891606001f81ae1e514bf; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -16796,3 +16882,29 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLSEQPRK-001-OCC-001; OLP-0473; OLP-0473-B009; source upstream/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:81-108 bytes 2522-3587 SHA-256 62589ae78eea5962800114b6fdfffa1923072dfb10c85746d042c4d5dc7f4c30; target translation/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:111 bytes 3882-3969 SHA-256 047e7151d6b38e49a70d96d358c1719304e4f0e76ffbae8a93bbc540e4883f97; reader page pending.
+
+## te-Telu-IN-OLTEAMLTLDRV-001 — OLTEAMLTLDRV-001: chapter driver uses part end hook
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: కాలిక తర్క అధ్యాయ డ్రైవరులో భాగం ముగింపు హుక్‌ను అధ్యాయ ముగింపు హుక్‌గా మార్చి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited chapter driver uses part end hook at temporal-logic.tex lines 8 and 20; normal-modal-logic chapter drivers and open-logic.sty hook definitions, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEAMLTLDRV-20260927:OLTEAMLTLDRV-001 [checked_supports], content/applied-modal-logic/temporal-logic/temporal-logic.tex; temporal-logic.tex lines 8 and 20; normal-modal-logic chapter drivers and open-logic.sty hook definitions; chapter_driver_uses_part_end_hook; కాలిక తర్క అధ్యాయ డ్రైవరులో భాగం ముగింపు హుక్‌ను అధ్యాయ ముగింపు హుక్‌గా మార్చి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does this olchapter driver now invoke the chapter-end hook rather than the part-end hook, matching the separate macro roles and chapter-driver pattern?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEAMLTLDRV-001-OCC-001; OLP-0476; OLP-0476-B007; source upstream/content/applied-modal-logic/temporal-logic/temporal-logic.tex:20 bytes 412-427 SHA-256 002d60bc4f9fd0b84f7d062f1cf8a325563ce8f343c5d070e124e4f05c4115e4; target translation/content/applied-modal-logic/temporal-logic/temporal-logic.tex:20 bytes 502-598 SHA-256 4d55f4937a2ffd15ac7038e265260187b26fa81fb65e58df13be35c7ad098cb4; reader page pending.

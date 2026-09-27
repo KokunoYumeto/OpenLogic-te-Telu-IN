@@ -15,20 +15,20 @@
   },
   "coverage": {
     "state": "partial",
-    "source_units": 474,
+    "source_units": 477,
     "corpus_units": 722,
     "reader_units": null
   },
   "counts": {
-    "decisions": 615,
-    "terminology": 164,
-    "source_corrections": 451,
-    "occurrences": 1418,
+    "decisions": 619,
+    "terminology": 167,
+    "source_corrections": 452,
+    "occurrences": 1430,
     "priority_urgent_or_high": 70,
-    "distinct_source_and_target_files_checked": 784,
-    "public_evidence_file_references_checked": 3243,
+    "distinct_source_and_target_files_checked": 790,
+    "public_evidence_file_references_checked": 3266,
     "reader_locator_status": {
-      "pending": 1418
+      "pending": 1430
     }
   },
   "checks": {
@@ -51,27 +51,27 @@
     {
       "path": "evidence/START_HERE.md",
       "bytes": 2343,
-      "sha256": "2aebad3c89e8c9b6420f754b7262deae779fd522787ab604a754e2bb983c4893"
+      "sha256": "59f8bd2f6e43e1d64281fc5c1e1a37af436612a9bb70e3ebbe14269afb9c224a"
     },
     {
       "path": "evidence/TRANSLATION_DECISIONS_FULL.md",
-      "bytes": 2307318,
-      "sha256": "fad6da8e164c9187453603678c8803f2f1479436d8611865f80f8be08ad15adb"
+      "bytes": 2326988,
+      "sha256": "51607d83d03f38f2140217a020079c3ca12d20ebba7ed274eb7310cdbe46d7cf"
     },
     {
       "path": "evidence/PRIORITY_REVIEW.md",
       "bytes": 128735,
-      "sha256": "c2ed31c415fddb5098dc5a66e0652158835ea121dba6035683dbd554b7b947fa"
+      "sha256": "3e370edeccf2a453f95dee7c914f7ee26c6cd239bf689c8f3d6a603bc90bed29"
     },
     {
       "path": "evidence/DECISION_OCCURRENCES.csv",
-      "bytes": 2469527,
-      "sha256": "46dd852321c5577846d9c932b99b8be3a8e38f96ff7b26b6d96a18359ae53a8f"
+      "bytes": 2488975,
+      "sha256": "7f9c9443ac239b385a6399cd4a4e01ec55f31c435d4b317a77bce4d7aeee2a8c"
     },
     {
       "path": "evidence/DECISIONS.json",
-      "bytes": 11803515,
-      "sha256": "d20ca9e3756efaafee3c657d029f13f8593a8a90b03c26165e9334bb83d2d88e"
+      "bytes": 11885082,
+      "sha256": "03292b7d24313052d57e2d6084423214a9994aa4b7d217d5e468589299edefc7"
     },
     {
       "path": "evidence/translation-decision.schema.json",

@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "125",
+  "unit_id": "OLP-0476",
+  "unit_order": 476,
+  "source_path": "content/applied-modal-logic/temporal-logic/temporal-logic.tex",
+  "blocks": 8,
+  "linguistic_blocks": [4, 5, 7],
+  "previous_segments": 7197,
+  "previous_terms": 165,
+  "expected_corrections": 452,
+  "canon_default": ["TE-P018", "TE-P024"],
+  "corrections_by_block": {"7": ["OLTEAMLTLDRV-001"]},
+  "consultation_phase": "స్థిర కాలిక తర్క అధ్యాయ డ్రైవరును, తెలుగు లక్ష్యాన్ని, సాధారణ మోడల్ అధ్యాయ డ్రైవర్లు/హుక్ నిర్వచనాలను, స్థానిక సాధారణ తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; ఐదు దిగుమతులు, ముసాయిదా వాక్యం, తప్పు భాగం హుక్‌ను తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P018/024 సాధారణ తర్కం, వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు; కాలిక తర్కం లేదా TeX హుక్‌కు కాదు. హుక్ సవరణ స్థానిక ఫైలు పాత్ర, పక్క అధ్యాయ నమూనా, వేర్వేరు శైలి మాక్రోలపై ఆధారపడింది.",
+  "term_decision": {
+    "term_id": "TE-T166",
+    "source_term": "temporal logics chapter / chapter end hook / temporal imports",
+    "telugu": "కాలిక తర్కాల అధ్యాయం / అధ్యాయ ముగింపు హుక్ / కాలిక విభాగ దిగుమతులు",
+    "status": "native_general_logic_derivation_register_attested_temporal_driver_source_controlled_one_disclosed_hook_repair",
+    "passages": ["TE-P018", "TE-P024"],
+    "basis": "TE-T165లోని కాలిక తర్క రూపాన్ని కొనసాగించాం. అధ్యాయ శీర్షిక, ఐదు దిగుమతులు నిలిచి, మూలంలోని అధ్యాయంలో భాగం ముగింపు హుక్‌కు బదులు అధ్యాయ ముగింపు హుక్‌ను ఒక ప్రకటిత సవరణతో పెట్టాం.",
+    "uncertainty": "స్థానిక సాక్షులు కాలిక తర్క సాంకేతిక పదం ఇవ్వవు. హుక్ సవరణ TeX నిర్మాణ పాత్ర పోలికపై ఆధారపడింది; పూర్తి TeX నిర్మాణ తనిఖీ, స్వతంత్ర సమీక్ష ఇంకా లేవు.",
+    "borrowing": "మోడల్ is established edition form; chapter IDs, import paths and chapter end hook remain protected structural notation."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEAMLTLDRV-20260927",
+  "unit_id": "OLP-0476",
+  "source_path": "content/applied-modal-logic/temporal-logic/temporal-logic.tex",
+  "source_sha256": "002d60bc4f9fd0b84f7d062f1cf8a325563ce8f343c5d070e124e4f05c4115e4",
+  "findings": [
+    {
+      "finding_id": "OLTEAMLTLDRV-001",
+      "source_locator": "temporal-logic.tex lines 8 and 20; normal-modal-logic chapter drivers and open-logic.sty hook definitions",
+      "classification": "chapter_driver_uses_part_end_hook",
+      "source_issue": "The chapter driver declares an olchapter but invokes the part end hook, despite distinct chapter and part hooks in the style.",
+      "minimal_treatment": "Use the chapter end hook and disclose adjacent to the changed macro.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

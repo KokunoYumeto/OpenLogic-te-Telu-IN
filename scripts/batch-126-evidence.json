@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "126",
+  "unit_id": "OLP-0477",
+  "unit_order": 477,
+  "source_path": "content/applied-modal-logic/temporal-logic/introduction.tex",
+  "blocks": 10,
+  "linguistic_blocks": [5, 6, 7, 8, 9],
+  "previous_segments": 7205,
+  "previous_terms": 166,
+  "expected_corrections": 452,
+  "canon_default": ["TE-P010", "TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర కాలిక తర్క పరిచయ మూలం, తెలుగు లక్ష్యం, పూర్వ మోడల్/సంబంధ/సత్యమూల్య పదాలు, స్థానిక సాధారణ సంబంధ/తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; ప్రైయర్, బీజీ, రిచర్డ్ ఉదాహరణలు, భవిష్యత్ అనిశ్చిత వాక్యం, నిర్ణయవాదం/తెరచిన భవిష్యత్తు, కాల నిర్మాణ ఎంపికలు తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P010 సాధారణ సంబంధానికి, TE-P018/024 సాధారణ తర్కం/వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. కాలిక తర్క సాంకేతిక పదజాలం, ప్రైయర్ చరిత్ర, భవిష్యత్ అనిశ్చిత భావనకు ఇవి ప్రత్యక్ష సాక్ష్యాలు కావు; అవి స్థిర మూల నియంత్రణలో అనువదించబడ్డాయి.",
+  "term_decision": {
+    "term_id": "TE-T167",
+    "source_term": "temporal logic / tense logic / future contingent / determinism and open future / linear branching circular time",
+    "telugu": "కాలిక తర్కం / కాలరూప తర్కం / భవిష్యత్ అనిశ్చిత వాక్యం / నిర్ణయవాదం, తెరచిన భవిష్యత్తు / రేఖీయ, శాఖావిభజిత, చక్రీయ కాలం",
+    "status": "native_general_relation_logic_derivation_register_attested_temporal_philosophy_source_controlled",
+    "passages": ["TE-P010", "TE-P018", "TE-P024"],
+    "basis": "TE-T165/166లోని కాలిక తర్కం, పూర్వ సత్యమూల్య/మోడల్ పదాలను కొనసాగించాం. స్థిర మూలంలోని ప్రైయర్ attribution, కుక్క ఉదాహరణలో సమయ వ్యత్యాసం, భవిష్యత్ లేదా-నిష్కర్ష, రిచర్డ్ అనిశ్చిత వాక్యం, నియత/తెరచిన భవిష్యత్తు, కాల రూపాలు యథాతథం.",
+    "uncertainty": "స్థానిక సాక్షులు కాలిక తర్కానికి ప్రత్యక్ష సాంకేతిక రూపాలు లేదా మూలంలోని చారిత్రక attributionకు ఆధారాలు కాదు. TeX దృశ్య తనిఖీ, స్వతంత్ర తాత్త్విక/భాషా సమీక్ష ఇంకా లేవు.",
+    "borrowing": "ఆర్థర్ ప్రైయర్, బీజీ, రిచర్డ్ are source-example names; no public user attribution is inferred. Technical phrases are transparent Telugu constructions pending specialist review."
+  }
+}

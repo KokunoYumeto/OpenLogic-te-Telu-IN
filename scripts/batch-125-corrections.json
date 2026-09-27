@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0476",
+  "source_path": "content/applied-modal-logic/temporal-logic/temporal-logic.tex",
+  "source_sha256": "002d60bc4f9fd0b84f7d062f1cf8a325563ce8f343c5d070e124e4f05c4115e4",
+  "audit_id": "OLTEAMLTLDRV-20260927",
+  "audit_review_path": "evidence/OLP-0476-TEMPORAL-DRIVER-SOURCE-AUDIT.md",
+  "audit_review_sha256": "9167fad19ec731eef005dbbd0c30ce85a17b8440b2f461b802a6017b59c45d65",
+  "audit_findings_path": "evidence/OLP-0476-TEMPORAL-DRIVER-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "fc3a497b5228dfe52f9069524c89e08d0f698a56d017f51e4db6ead3d4d4c109",
+  "previous_corrections": 451,
+  "treatments": {
+    "OLTEAMLTLDRV-001": {
+      "target_line": 20,
+      "body_treatment": "కాలిక తర్క అధ్యాయ డ్రైవరులో భాగం ముగింపు హుక్‌ను అధ్యాయ ముగింపు హుక్‌గా మార్చి పక్కనే ప్రకటించాం."
+    }
+  }
+}
