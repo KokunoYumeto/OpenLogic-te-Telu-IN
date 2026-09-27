@@ -1,0 +1,125 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLTABCPL-20260927",
+  "unit_id": "OLP-0468",
+  "source_path": "content/normal-modal-logic/tableaux/completeness.tex",
+  "source_sha256": "ee4e86d1549731cdbe7088d4d682c304f04a9c007a93a525c99b25959a2c2d90",
+  "findings": [
+    {
+      "finding_id": "OLTENMLTABCPL-001",
+      "source_locator": "completeness.tex lines 30-61, especially 49-60",
+      "classification": "complete_branch_illustrations_inconsistent_with_signed_prefix_rules",
+      "source_issue": "Several examples omit prefixes or modal operands, give the wrong disjunction sign, and copy modal operators instead of the signed operand conclusions.",
+      "minimal_treatment": "Use the preceding formal tableau rules to restore matching prefixes, signs, operands and fresh/used conclusions in the explanatory examples; disclose the grouped repair.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\sFmla{\\False}{!B}[\\sigma]$",
+          "$\\sFmla{\\False}{\\Box}[\\sigma.n]$",
+          "$\\sFmla{\\False}{\\Box}[\\sigma]$",
+          "$\\sFmla{\\False}{\\Diamond}[\\sigma.n]$",
+          "$\\sFmla{\\False}{\\Diamond}[\\sigma]$",
+          "$\\sFmla{\\True}{!B\\land!C}$",
+          "$\\sFmla{\\True}{\\Box}[\\sigma.n]$",
+          "$\\sFmla{\\True}{\\Box}[\\sigma]$",
+          "$\\sFmla{\\True}{\\Diamond}[\\sigma.n]$",
+          "$\\sFmla{\\True}{\\Diamond}[\\sigma]$"
+        ],
+        "target_only": [
+          "$\\sFmla{\\False}{!B}[\\sigma.n]$",
+          "$\\sFmla{\\False}{!B}[\\sigma.n]$",
+          "$\\sFmla{\\False}{\\Box!B}[\\sigma]$",
+          "$\\sFmla{\\False}{\\Diamond!B}[\\sigma]$",
+          "$\\sFmla{\\True}{!B\\land!C}[\\sigma]$",
+          "$\\sFmla{\\True}{!B}[\\sigma.n]$",
+          "$\\sFmla{\\True}{!B}[\\sigma.n]$",
+          "$\\sFmla{\\True}{!B}[\\sigma]$",
+          "$\\sFmla{\\True}{\\Box!B}[\\sigma]$",
+          "$\\sFmla{\\True}{\\Diamond!B}[\\sigma]$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTENMLTABCPL-002",
+      "source_locator": "completeness.tex lines 68-81",
+      "classification": "saturation_proposition_proof_concludes_closed_not_complete",
+      "source_issue": "The proof of existence of complete branches ends by saying all branches are closed, contrary to its proposition and the later use of an open branch.",
+      "minimal_treatment": "Say complete rather than closed and disclose that termination of the repetition is not independently established in this source proof.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTENMLTABCPL-003",
+      "source_locator": "completeness.tex lines 64-90 and 220-228",
+      "classification": "finite_gamma_proposition_used_for_unqualified_completeness_theorem",
+      "source_issue": "The finite-Gamma proposition alone does not justify the unqualified Gamma theorem or corollary; the proof gives no compactness or infinite fair-branch step.",
+      "minimal_treatment": "Preserve the source theorem claims, state that the displayed proof step follows only for finite Gamma, and disclose the unresolved general-case gap without inventing a proof.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTENMLTABCPL-004",
+      "source_locator": "completeness.tex lines 141-147",
+      "classification": "false_conjunction_induction_repeats_b_in_second_alternative",
+      "source_issue": "The second negative-satisfaction alternative repeats B instead of C despite the F C branch premise.",
+      "minimal_treatment": "Use negative satisfaction of C in the second alternative and disclose.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\mSat/{M(\\Delta)}{!B}[\\sigma]$"
+        ],
+        "target_only": [
+          "$\\mSat/{M(\\Delta)}{!C}[\\sigma]$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTENMLTABCPL-005",
+      "source_locator": "completeness.tex lines 157-163",
+      "classification": "false_disjunction_induction_repeats_b_in_second_conjunct",
+      "source_issue": "The second negative-satisfaction conjunct repeats B instead of C despite the F C branch premise.",
+      "minimal_treatment": "Use negative satisfaction of C in the second conjunct and disclose.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\mSat/{M(\\Delta)}{!B}[\\sigma]$"
+        ],
+        "target_only": [
+          "$\\mSat/{M(\\Delta)}{!C}[\\sigma]$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTENMLTABCPL-006",
+      "source_locator": "completeness.tex lines 173-179",
+      "classification": "false_conditional_induction_uses_b_not_consequent_c",
+      "source_issue": "The second induction conjunct says not B instead of not C, contradicting the F C premise and the false-conditional truth clause.",
+      "minimal_treatment": "Use negative satisfaction of C and disclose.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\mSat/{M(\\Delta)}{!B}[\\sigma]$"
+        ],
+        "target_only": [
+          "$\\mSat/{M(\\Delta)}{!C}[\\sigma]$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTENMLTABCPL-007",
+      "source_locator": "completeness.tex lines 95-109 and 213; soundness.tex lines 45-69",
+      "classification": "constructed_prefix_model_omits_identity_interpretation_and_final_f_parameter",
+      "source_issue": "The model uses prefixes as worlds but does not state the identity prefix interpretation required by its earlier satisfaction definition, and final satisfaction of Gamma omits [f].",
+      "minimal_treatment": "State the identity interpretation of prefixes and include [f] in the final Gamma satisfaction assertion, with adjacent disclosure.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\mSat{M(\\Delta)}{\\Gamma}$"
+        ],
+        "target_only": [
+          "$\\mSat{M(\\Delta)}{\\Gamma}[f]$",
+          "$f$"
+        ]
+      }
+    }
+  ]
+}

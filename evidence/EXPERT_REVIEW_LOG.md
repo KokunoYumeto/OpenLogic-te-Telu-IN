@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 467 of 722 draft units**. This log contains 157 terminology/sense decisions and 438 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 468 of 722 draft units**. This log contains 158 terminology/sense decisions and 445 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3775,6 +3775,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక సాక్షులు S5 టాబ్లో/సంపూర్ణతకు ప్రత్యక్ష సాంకేతిక పదం లేదా నిరూపణ ఇవ్వవు. మూలపు సార్వత్రిక నమూనా వర్గమే ఈ సరళీకరణ అర్థాన్ని నిర్ణయిస్తుంది; TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
 
 - Please double-check: Please double-check whether “సరళ S5 టాబ్లోలు / సార్వత్రిక నమూనాలు / పూర్ణసంఖ్య పూర్వసూచికలు / ఉపయోగించిన, కొత్త m / 5 స్వీకృత సంవృత టాబ్లో” is idiomatic and technically standard for “simple S5 tableaux / universal models / integer prefixes / used and new m / axiom 5 closed tableau” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T158 — complete tableau branch / completeness / prefix model / induction on signed formulas
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: సంపూర్ణ టాబ్లో శాఖ / సంపూర్ణత / పూర్వసూచిక నమూనా / చిహ్నిత సూత్రాలపై ఆగమనం
+
+- Exact implementation: OLP-0468; normal-modal-logic/tableaux/completeness; content/normal-modal-logic/tableaux/completeness.tex:11 ↔ translation/content/normal-modal-logic/tableaux/completeness.tex:11 (OLP-0468-B005); printed/PDF page pending; OLP-0468; normal-modal-logic/tableaux/completeness; content/normal-modal-logic/tableaux/completeness.tex:30-46 ↔ translation/content/normal-modal-logic/tableaux/completeness.tex:32-48 (OLP-0468-B007); printed/PDF page pending; OLP-0468; normal-modal-logic/tableaux/completeness; content/normal-modal-logic/tableaux/completeness.tex:48-62 ↔ translation/content/normal-modal-logic/tableaux/completeness.tex:50-74 (OLP-0468-B008); printed/PDF page pending; OLP-0468; normal-modal-logic/tableaux/completeness; content/normal-modal-logic/tableaux/completeness.tex:68-81 ↔ translation/content/normal-modal-logic/tableaux/completeness.tex:81-104 (OLP-0468-B010); printed/PDF page pending; OLP-0468; normal-modal-logic/tableaux/completeness; content/normal-modal-logic/tableaux/completeness.tex:83-86 ↔ translation/content/normal-modal-logic/tableaux/completeness.tex:106-110 (OLP-0468-B011); printed/PDF page pending; OLP-0468; normal-modal-logic/tableaux/completeness; content/normal-modal-logic/tableaux/completeness.tex:95-109 ↔ translation/content/normal-modal-logic/tableaux/completeness.tex:128-149 (OLP-0468-B013); printed/PDF page pending; OLP-0468; normal-modal-logic/tableaux/completeness; content/normal-modal-logic/tableaux/completeness.tex:141-155 ↔ translation/content/normal-modal-logic/tableaux/completeness.tex:182-202 (OLP-0468-B017); printed/PDF page pending; OLP-0468; normal-modal-logic/tableaux/completeness; content/normal-modal-logic/tableaux/completeness.tex:205-214 ↔ translation/content/normal-modal-logic/tableaux/completeness.tex:268-279 (OLP-0468-B021); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-T151–156లోని పూర్వసూచిక, చిహ్నిత సూత్రం, టాబ్లో, నమూనా, నిర్దుష్టత పదాలను కొనసాగించాం. స్థిర మూలంలోని శాఖ సంతృప్తి నిర్మాణం, ప్రతిజ్ఞావాక్య/modal ఆగమన సందర్భాలు, వ్యాయామ ట్యాగ్‌లు నిలిచాయి. ఏడు ప్రకటిత సవరణలు తప్పు ఉదాహరణలు, ముగింపు పదం, మూడు B/C పొరపాట్లు, f అర్థనిర్దేశాన్ని సరిచేస్తాయి; సాధారణ Gamma నిరూపణ ఖాళీని పరిష్కరించినట్టు చెప్పవు. టాబ్లో is the established edition borrowing; K, Gamma/Delta, Box/Diamond, signed-formula macros, conditional exercise tags, prefix identifiers and cross-reference labels remain source-controlled notation.
+
+- Alternatives: సంపూర్ణ శాఖ సంతృప్తి, పూర్వసూచిక నమూనా, సత్య ఆగమనాన్ని నిలిపి, ఏడు మూల సవరణలను ప్రకటించడం; పరిమిత Gamma ఆధారంతో సాధారణ సంపూర్ణతను నిరూపించలేదని స్పష్టంగా ఉంచడం (ఎంపిక); ప్రతి శాఖ సంవృతం అనే మూల ముగింపును యథాతథంగా అనువదించడం (తిరస్కరణ); మూడు అసత్య ఆగమన సందర్భాల్లో రెండో Bనే ఉంచడం (తిరస్కరణ); అనంత Gammaకు మూలంలో లేని నిరూపణను కల్పించడం (తిరస్కరణ); స్థానిక సాధారణ తర్క పేజీలు K టాబ్లో సంపూర్ణతను నిరూపిస్తాయని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు మోడల్ సంపూర్ణతకు ప్రత్యక్ష నిరూపణ కాదు. సాధారణ Gamma సిద్ధాంతానికి మూల నిరూపణలో పరిమితత్వ ఖాళీ ఉంది; ముగింపు వాదన కూడా విడిగా స్థాపితం కాలేదు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Please double-check: Please double-check whether “సంపూర్ణ టాబ్లో శాఖ / సంపూర్ణత / పూర్వసూచిక నమూనా / చిహ్నిత సూత్రాలపై ఆగమనం” is idiomatic and technically standard for “complete tableau branch / completeness / prefix model / induction on signed formulas” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -14287,3 +14311,171 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Does the 4r Diamond proof conclude F Diamond B at sigma and evaluate its premise at f(sigma.n), consistently with the rule table and final line?
+
+## REV-OLTENMLTABCPL-001 — OLTENMLTABCPL-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: సంపూర్ణ శాఖ ఉదాహరణల్లో మిస్సయిన పూర్వసూచిక, విడియోజన సత్య సంకేతం, Box/Diamond లోపలి B సూత్రం, నియమ నిష్కర్షలను పూర్వ నియమ పట్టిక ప్రకారం మార్చి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0468; normal-modal-logic/tableaux/completeness; completeness.tex lines 30-61, especially 49-60 ↔ translation/content/normal-modal-logic/tableaux/completeness.tex:67 (OLP-0468-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLTABCPL-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: సంపూర్ణ శాఖ ఉదాహరణల్లో మిస్సయిన పూర్వసూచిక, విడియోజన సత్య సంకేతం, Box/Diamond లోపలి B సూత్రం, నియమ నిష్కర్షలను పూర్వ నియమ పట్టిక ప్రకారం మార్చి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Do the complete-branch examples now match the preceding signed and prefixed K tableau rules in every propositional and modal conclusion?
+
+## REV-OLTENMLTABCPL-002 — OLTENMLTABCPL-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: సంపూర్ణ శాఖల ప్రతిపాదన చివర మూలంలోని ప్రతి శాఖ సంవృతం అన్న తప్పును సంపూర్ణం అని మార్చి, పునరావృత ప్రక్రియ ముగింపు వాదన మూలంలో విడిగా లేదని పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0468; normal-modal-logic/tableaux/completeness; completeness.tex lines 68-81 ↔ translation/content/normal-modal-logic/tableaux/completeness.tex:98 (OLP-0468-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLTABCPL-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: సంపూర్ణ శాఖల ప్రతిపాదన చివర మూలంలోని ప్రతి శాఖ సంవృతం అన్న తప్పును సంపూర్ణం అని మార్చి, పునరావృత ప్రక్రియ ముగింపు వాదన మూలంలో విడిగా లేదని పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the proposition end with every branch complete rather than closed, while disclosing the unstated termination justification?
+
+## REV-OLTENMLTABCPL-003 — OLTENMLTABCPL-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: పరిమిత Gamma ప్రతిపాదన సాధారణ Gamma సిద్ధాంతానికి సరిపోదన్న అసంపూర్ణ నిరూపణ పరిధిని పక్కనే ప్రకటించాం; సాధారణ సిద్ధాంత/ఉపసిద్ధాంత ప్రకటనలను మార్చలేదు, కొత్త నిరూపణను కల్పించలేదు.
+
+- Exact implementation: OLP-0468; normal-modal-logic/tableaux/completeness; completeness.tex lines 64-90 and 220-228 ↔ translation/content/normal-modal-logic/tableaux/completeness.tex:120 (OLP-0468-B012); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLTABCPL-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: పరిమిత Gamma ప్రతిపాదన సాధారణ Gamma సిద్ధాంతానికి సరిపోదన్న అసంపూర్ణ నిరూపణ పరిధిని పక్కనే ప్రకటించాం; సాధారణ సిద్ధాంత/ఉపసిద్ధాంత ప్రకటనలను మార్చలేదు, కొత్త నిరూపణను కల్పించలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Is the finite-Gamma scope of the displayed proof distinguished from the unqualified theorem and corollaries, without claiming to fill the general-case gap?
+
+## REV-OLTENMLTABCPL-004 — OLTENMLTABCPL-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: అసత్య సంయోజన ఆగమనంలో రెండో ప్రత్యామ్నాయం B బదులు C అసత్యం అని సరిచేసి ప్రకటించాం.
+
+- Exact implementation: OLP-0468; normal-modal-logic/tableaux/completeness; completeness.tex lines 141-147 ↔ translation/content/normal-modal-logic/tableaux/completeness.tex:190 (OLP-0468-B017); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLTABCPL-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: అసత్య సంయోజన ఆగమనంలో రెండో ప్రత్యామ్నాయం B బదులు C అసత్యం అని సరిచేసి ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the false-conjunction induction use negative satisfaction of C in its second alternative?
+
+## REV-OLTENMLTABCPL-005 — OLTENMLTABCPL-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: అసత్య విడియోజన ఆగమనంలో రెండో సంయోజ్యం B బదులు C అసత్యం అని సరిచేసి ప్రకటించాం.
+
+- Exact implementation: OLP-0468; normal-modal-logic/tableaux/completeness; completeness.tex lines 157-163 ↔ translation/content/normal-modal-logic/tableaux/completeness.tex:212 (OLP-0468-B018); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLTABCPL-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: అసత్య విడియోజన ఆగమనంలో రెండో సంయోజ్యం B బదులు C అసత్యం అని సరిచేసి ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the false-disjunction induction use negative satisfaction of C in its second conjunct?
+
+## REV-OLTENMLTABCPL-006 — OLTENMLTABCPL-006
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: అసత్య షరతు ఆగమనంలో నిష్కర్ష భాగం B బదులు C అసత్యం అని సరిచేసి ప్రకటించాం.
+
+- Exact implementation: OLP-0468; normal-modal-logic/tableaux/completeness; completeness.tex lines 173-179 ↔ translation/content/normal-modal-logic/tableaux/completeness.tex:234 (OLP-0468-B019); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLTABCPL-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: అసత్య షరతు ఆగమనంలో నిష్కర్ష భాగం B బదులు C అసత్యం అని సరిచేసి ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the false-conditional induction use negative satisfaction of consequent C in its second conjunct?
+
+## REV-OLTENMLTABCPL-007 — OLTENMLTABCPL-007
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: లోకాలు పూర్వసూచికలే అయిన నమూనాకు తాదాత్మ్య పూర్వసూచిక అర్థనిర్దేశం fను స్పష్టం చేసి చివరి Gamma సంతృప్తి ప్రకటనలో [f] చేర్చి ప్రకటించాం.
+
+- Exact implementation: OLP-0468; normal-modal-logic/tableaux/completeness; completeness.tex lines 95-109 and 213; soundness.tex lines 45-69 ↔ translation/content/normal-modal-logic/tableaux/completeness.tex:141 (OLP-0468-B013); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLTABCPL-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: లోకాలు పూర్వసూచికలే అయిన నమూనాకు తాదాత్మ్య పూర్వసూచిక అర్థనిర్దేశం fను స్పష్టం చేసి చివరి Gamma సంతృప్తి ప్రకటనలో [f] చేర్చి ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Is the identity prefix interpretation f explicit and used in the final Gamma satisfaction statement?

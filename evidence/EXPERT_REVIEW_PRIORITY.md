@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 467 of 722 draft units**. This view selects 491 of 595 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 468 of 722 draft units**. This view selects 498 of 603 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4913,3 +4913,73 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0466; normal-modal-logic/tableaux/more-soundness; translation/content/normal-modal-logic/tableaux/more-soundness.tex:227; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the 4r Diamond proof conclude F Diamond B at sigma and evaluate its premise at f(sigma.n), consistently with the rule table and final line?
+
+## REV-OLTENMLTABCPL-001 — OLTENMLTABCPL-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సంపూర్ణ శాఖ ఉదాహరణల్లో మిస్సయిన పూర్వసూచిక, విడియోజన సత్య సంకేతం, Box/Diamond లోపలి B సూత్రం, నియమ నిష్కర్షలను పూర్వ నియమ పట్టిక ప్రకారం మార్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0468; normal-modal-logic/tableaux/completeness; translation/content/normal-modal-logic/tableaux/completeness.tex:67; printed/PDF page pending
+
+- Please double-check: Please double-check: Do the complete-branch examples now match the preceding signed and prefixed K tableau rules in every propositional and modal conclusion?
+
+## REV-OLTENMLTABCPL-002 — OLTENMLTABCPL-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సంపూర్ణ శాఖల ప్రతిపాదన చివర మూలంలోని ప్రతి శాఖ సంవృతం అన్న తప్పును సంపూర్ణం అని మార్చి, పునరావృత ప్రక్రియ ముగింపు వాదన మూలంలో విడిగా లేదని పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0468; normal-modal-logic/tableaux/completeness; translation/content/normal-modal-logic/tableaux/completeness.tex:98; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the proposition end with every branch complete rather than closed, while disclosing the unstated termination justification?
+
+## REV-OLTENMLTABCPL-003 — OLTENMLTABCPL-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: పరిమిత Gamma ప్రతిపాదన సాధారణ Gamma సిద్ధాంతానికి సరిపోదన్న అసంపూర్ణ నిరూపణ పరిధిని పక్కనే ప్రకటించాం; సాధారణ సిద్ధాంత/ఉపసిద్ధాంత ప్రకటనలను మార్చలేదు, కొత్త నిరూపణను కల్పించలేదు.
+
+- Occurrences: OLP-0468; normal-modal-logic/tableaux/completeness; translation/content/normal-modal-logic/tableaux/completeness.tex:120; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the finite-Gamma scope of the displayed proof distinguished from the unqualified theorem and corollaries, without claiming to fill the general-case gap?
+
+## REV-OLTENMLTABCPL-004 — OLTENMLTABCPL-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: అసత్య సంయోజన ఆగమనంలో రెండో ప్రత్యామ్నాయం B బదులు C అసత్యం అని సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0468; normal-modal-logic/tableaux/completeness; translation/content/normal-modal-logic/tableaux/completeness.tex:190; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the false-conjunction induction use negative satisfaction of C in its second alternative?
+
+## REV-OLTENMLTABCPL-005 — OLTENMLTABCPL-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: అసత్య విడియోజన ఆగమనంలో రెండో సంయోజ్యం B బదులు C అసత్యం అని సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0468; normal-modal-logic/tableaux/completeness; translation/content/normal-modal-logic/tableaux/completeness.tex:212; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the false-disjunction induction use negative satisfaction of C in its second conjunct?
+
+## REV-OLTENMLTABCPL-006 — OLTENMLTABCPL-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: అసత్య షరతు ఆగమనంలో నిష్కర్ష భాగం B బదులు C అసత్యం అని సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0468; normal-modal-logic/tableaux/completeness; translation/content/normal-modal-logic/tableaux/completeness.tex:234; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the false-conditional induction use negative satisfaction of consequent C in its second conjunct?
+
+## REV-OLTENMLTABCPL-007 — OLTENMLTABCPL-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: లోకాలు పూర్వసూచికలే అయిన నమూనాకు తాదాత్మ్య పూర్వసూచిక అర్థనిర్దేశం fను స్పష్టం చేసి చివరి Gamma సంతృప్తి ప్రకటనలో [f] చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0468; normal-modal-logic/tableaux/completeness; translation/content/normal-modal-logic/tableaux/completeness.tex:141; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the identity prefix interpretation f explicit and used in the final Gamma satisfaction statement?

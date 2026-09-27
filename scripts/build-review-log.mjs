@@ -980,6 +980,16 @@ locations['TE-T157']=[
  L('content/normal-modal-logic/tableaux/simple-S5.tex',28,63,32,67,'is used','ఉపయోగించినది'),
  L('content/normal-modal-logic/tableaux/simple-S5.tex',65,86,69,91,'simplified closed tableau','సరళీకృత')
 ];
+locations['TE-T158']=[
+ L('content/normal-modal-logic/tableaux/completeness.tex',11,11,11,11,'Completeness for \\Log{K}','సంపూర్ణత'),
+ L('content/normal-modal-logic/tableaux/completeness.tex',30,44,31,47,'A branch in','సంపూర్ణమైనది'),
+ L('content/normal-modal-logic/tableaux/completeness.tex',48,62,50,74,'\\sFmla{\\True}{!B \\lor !C}','\\sFmla{\\True}{!B \\lor !C}'),
+ L('content/normal-modal-logic/tableaux/completeness.tex',64,80,76,104,'every branch is closed','ప్రతి శాఖ సంపూర్ణంగా ఉంటుంది'),
+ L('content/normal-modal-logic/tableaux/completeness.tex',83,93,106,126,'If $\\Gamma$ has no closed','పరిమితమైన~$\\Gamma$'),
+ L('content/normal-modal-logic/tableaux/completeness.tex',95,109,128,149,'R\\sigma\\sigma\'','తాదాత్మ్య అర్థనిర్దేశం'),
+ L('content/normal-modal-logic/tableaux/completeness.tex',141,179,182,237,'\\mSat/{M(\\Delta)}{!B}[\\sigma]','\\mSat/{M(\\Delta)}{!C}[\\sigma]'),
+ L('content/normal-modal-logic/tableaux/completeness.tex',213,227,277,293,'\\mSat{M(\\Delta)}{\\Gamma}','\\mSat{M(\\Delta)}{\\Gamma}[f]')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -1123,6 +1133,7 @@ alternatives['TE-T154']=['f:P->W అర్థనిర్దేశం, R సం�
 alternatives['TE-T155']=['T/D/B/4/4r పట్టిక, ఆరు తర్కాల ప్రాప్యత వర్గీకరణ, ఉపయోగించిన sigma.n షరతు, ఆరు పరిష్కరించని సమస్యలు నిలిపి, S5లో 5 స్వీకృత ఉదాహరణను స్థిర నిర్వచనానికి సరిపోయే సంవృత చెట్టుగా ఒక ప్రకటిత మూల సవరణతో మార్చడం (ఎంపిక)','Box A implies Box Diamond Aనే 5 స్వీకృతమని చెప్పడం (తిరస్కరణ)','S5 ఉదాహరణను వేరే సూత్రానికి మార్చి మూల 5 వాదనను వదలడం (తిరస్కరణ)','కొత్త 1.2 సాక్షిని ఉపయోగించిన పూర్వసూచికగా ముందుగానే భావించడం (తిరస్కరణ)','స్థానిక సాధారణ సంబంధ పేజీలో modal 4r నియమం ప్రత్యక్షంగా ఉందని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T156']=['T స్వావర్తన, D సీరియల్, B సౌష్ఠవ, 4 సంక్రామక, 4r యూక్లిడియన్ నిర్దుష్టత కేసులు, షరతు వ్యాయామాలు నిలిపి 4r రెండు లోక/నిష్కర్ష తప్పులను పక్కన ప్రకటించి సరిచేయడం (ఎంపిక)','4r Boxలో లోకం f(sigma).nను సరైన ప్రపంచ సూచికగా స్వీకరించడం (తిరస్కరణ)','4r Diamondలో T Box Bని ఆ నియమ నిష్కర్షగా ఉంచడం (తిరస్కరణ)','probBox/probDiamond వ్యాయామాలకు పూర్తి నిరూపణలు జోడించినట్లు చెప్పడం (తిరస్కరణ)','స్థానిక సాధారణ సంబంధ పేజీనే modal నిర్దుష్టత ప్రత్యక్ష నిరూపణగా చూపడం (తిరస్కరణ)'];
 alternatives['TE-T157']=['సార్వత్రిక S5 నమూనాల్లో ప్రతి లోకం నుంచి ప్రతి లోకం ప్రాప్యమని, అనుక్రమాల బదులు ధన పూర్ణసంఖ్య పూర్వసూచికలు వాడవచ్చని, T Box/F Diamondకు పాత m, F Box/T Diamondకు కొత్త m, 2/3 సాక్షులతో 5 సంవృత చెట్టు అని నిలపడం (ఎంపిక)','S5లోని ఏకైక లోకమే ప్రతి పూర్వసూచికకు ఉండాలని చెప్పడం (తిరస్కరణ)','used/new m నియమాలను తారుమారు చేయడం (తిరస్కరణ)','ప్రతి సార్వత్రిక నమూనా అచ్చంగా ఒక్క లోకం గలదని చెప్పడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీ S5 సంపూర్ణతకు ప్రత్యక్ష నిరూపణ అని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T158']=['సంపూర్ణ శాఖ సంతృప్తి, పూర్వసూచిక నమూనా, సత్య ఆగమనాన్ని నిలిపి, ఏడు మూల సవరణలను ప్రకటించడం; పరిమిత Gamma ఆధారంతో సాధారణ సంపూర్ణతను నిరూపించలేదని స్పష్టంగా ఉంచడం (ఎంపిక)','ప్రతి శాఖ సంవృతం అనే మూల ముగింపును యథాతథంగా అనువదించడం (తిరస్కరణ)','మూడు అసత్య ఆగమన సందర్భాల్లో రెండో Bనే ఉంచడం (తిరస్కరణ)','అనంత Gammaకు మూలంలో లేని నిరూపణను కల్పించడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలు K టాబ్లో సంపూర్ణతను నిరూపిస్తాయని చెప్పడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -1138,7 +1149,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T157 record the Batch 025--Batch 116 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T158 record the Batch 025--Batch 117 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1490,6 +1501,13 @@ const correctionQuestions={
  ,'OLTENMLTABMRU-001':'Does the S5 tableau actually close for the edition-defined axiom 5 Diamond A -> Box Diamond A, using distinct fresh prefixes 1.1 and 1.2 and the Euclidean 4r Diamond step?'
  ,'OLTENMLTABMSN-001':'Does the 4r Box proof evaluate its premise at f(sigma.n), not the ill-formed f(sigma).n, while keeping the Euclidean edge argument?'
  ,'OLTENMLTABMSN-002':'Does the 4r Diamond proof conclude F Diamond B at sigma and evaluate its premise at f(sigma.n), consistently with the rule table and final line?'
+ ,'OLTENMLTABCPL-001':'Do the complete-branch examples now match the preceding signed and prefixed K tableau rules in every propositional and modal conclusion?'
+ ,'OLTENMLTABCPL-002':'Does the proposition end with every branch complete rather than closed, while disclosing the unstated termination justification?'
+ ,'OLTENMLTABCPL-003':'Is the finite-Gamma scope of the displayed proof distinguished from the unqualified theorem and corollaries, without claiming to fill the general-case gap?'
+ ,'OLTENMLTABCPL-004':'Does the false-conjunction induction use negative satisfaction of C in its second alternative?'
+ ,'OLTENMLTABCPL-005':'Does the false-disjunction induction use negative satisfaction of C in its second conjunct?'
+ ,'OLTENMLTABCPL-006':'Does the false-conditional induction use negative satisfaction of consequent C in its second conjunct?'
+ ,'OLTENMLTABCPL-007':'Is the identity prefix interpretation f explicit and used in the final Gamma satisfaction statement?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0468",
+  "source_path": "content/normal-modal-logic/tableaux/completeness.tex",
+  "source_sha256": "ee4e86d1549731cdbe7088d4d682c304f04a9c007a93a525c99b25959a2c2d90",
+  "audit_id": "OLTENMLTABCPL-20260927",
+  "audit_review_path": "evidence/OLP-0468-MODAL-TABLEAUX-COMPLETENESS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "68c4eb4910b641d96486217cee270620161a98d42e8ae7af1a04c564b1b0e0e3",
+  "audit_findings_path": "evidence/OLP-0468-MODAL-TABLEAUX-COMPLETENESS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "cba23085043d17e3784640c3ad7ee9d7b1421e7e54e21b3eeb7519c555a2edd2",
+  "previous_corrections": 438,
+  "treatments": {
+    "OLTENMLTABCPL-001": {
+      "target_line": 67,
+      "body_treatment": "సంపూర్ణ శాఖ ఉదాహరణల్లో మిస్సయిన పూర్వసూచిక, విడియోజన సత్య సంకేతం, Box/Diamond లోపలి B సూత్రం, నియమ నిష్కర్షలను పూర్వ నియమ పట్టిక ప్రకారం మార్చి పక్కనే ప్రకటించాం."
+    },
+    "OLTENMLTABCPL-002": {
+      "target_line": 98,
+      "body_treatment": "సంపూర్ణ శాఖల ప్రతిపాదన చివర మూలంలోని ప్రతి శాఖ సంవృతం అన్న తప్పును సంపూర్ణం అని మార్చి, పునరావృత ప్రక్రియ ముగింపు వాదన మూలంలో విడిగా లేదని పక్కనే ప్రకటించాం."
+    },
+    "OLTENMLTABCPL-003": {
+      "target_line": 120,
+      "body_treatment": "పరిమిత Gamma ప్రతిపాదన సాధారణ Gamma సిద్ధాంతానికి సరిపోదన్న అసంపూర్ణ నిరూపణ పరిధిని పక్కనే ప్రకటించాం; సాధారణ సిద్ధాంత/ఉపసిద్ధాంత ప్రకటనలను మార్చలేదు, కొత్త నిరూపణను కల్పించలేదు."
+    },
+    "OLTENMLTABCPL-004": {
+      "target_line": 190,
+      "body_treatment": "అసత్య సంయోజన ఆగమనంలో రెండో ప్రత్యామ్నాయం B బదులు C అసత్యం అని సరిచేసి ప్రకటించాం."
+    },
+    "OLTENMLTABCPL-005": {
+      "target_line": 212,
+      "body_treatment": "అసత్య విడియోజన ఆగమనంలో రెండో సంయోజ్యం B బదులు C అసత్యం అని సరిచేసి ప్రకటించాం."
+    },
+    "OLTENMLTABCPL-006": {
+      "target_line": 234,
+      "body_treatment": "అసత్య షరతు ఆగమనంలో నిష్కర్ష భాగం B బదులు C అసత్యం అని సరిచేసి ప్రకటించాం."
+    },
+    "OLTENMLTABCPL-007": {
+      "target_line": 141,
+      "body_treatment": "లోకాలు పూర్వసూచికలే అయిన నమూనాకు తాదాత్మ్య పూర్వసూచిక అర్థనిర్దేశం fను స్పష్టం చేసి చివరి Gamma సంతృప్తి ప్రకటనలో [f] చేర్చి ప్రకటించాం."
+    }
+  }
+}

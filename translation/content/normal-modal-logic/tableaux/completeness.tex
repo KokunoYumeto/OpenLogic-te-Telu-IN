@@ -1,0 +1,295 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: completeness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{cpl}
+
+\olsection{\Log{K} సంపూర్ణత}
+
+\begin{explain}
+  \tetoken{టాబ్లోల}{!!{tableau}s} పద్ధతి సంపూర్ణమని చూపాలంటే,
+  $\Gamma \Proves !A$ అని చూపే సంవృత \tetoken{టాబ్లో}{!!{tableau}}
+లేనప్పుడల్లా $\Gamma \Entails/ !A$, అంటే ప్రతినమూనా
+ఉంటుందని చూపాలి. కానీ ``సంవృత \tetoken{టాబ్లో}{!!{tableau}}
+లేదు'' అంటే దాన్ని నిర్మించడానికి ప్రయత్నించే ప్రతి మార్గమూ
+సంవృతం కావడంలో విఫలమవుతుంది. ప్రతి మార్గం అలా
+విఫలమైతే ఒక నిర్దిష్టమైన \emph{క్రమబద్ధమైన, సమగ్ర}
+మార్గమూ విఫలమవుతుందన్నదే కీలకం. సంవృత
+\tetoken{టాబ్లో}{!!{tableau}} ఉంటే ఈ క్రమబద్ధమైన,
+సమగ్ర మార్గం దాన్ని సంవృతం చేస్తుంది. ఆ ఒక్క టాబ్లోలోని
+వివృత శాఖల్లో ప్రతినమూనాను నిర్వచించడానికి కావలసిన
+సమాచారమంతా ఉంటుంది. అటువంటి వివృత శాఖ ఇచ్చే
+ప్రతినమూనాలో ఆ శాఖపై ఉపయోగించిన పూర్వసూచికలే లోకాలు;
+\tetoken{ప్రతిజ్ఞావాక్య చరరాశి}{!!a{propositional
+    variable}}~$p$ అనేది~$\sigma$లో సత్యమవుతుంది,
+అప్పుడు మాత్రమే $\sFmla{\True}{p}[\sigma]$ ఆ శాఖపై ఉంటుంది.
+\end{explain}
+
+\begin{defn}
+  \tetoken{ఒక టాబ్లో}{!!a{tableau}} శాఖలో నియమాన్ని
+వర్తింపజేయగల పూర్వసూచిక గల \tetoken{సూత్రం}{!!{formula}}
+$\sFmla{S}{!A}[\sigma]$ ఉన్నప్పుడల్లా, కింది వాటినీ
+కలిగి ఉంటే ఆ శాఖను \emph{సంపూర్ణమైనది} అంటాం:
+  \begin{enumerate}
+    \item ప్రతిజ్ఞావాక్య వరుస-చేర్పు నియమాలైతే, సంబంధిత
+      నిష్కర్షలైన పూర్వసూచిక గల \tetoken{సూత్రాలన్నీ}{!!{formula}s};
+    \item ప్రతిజ్ఞావాక్య శాఖావిభజన నియమాలైతే, సంబంధిత
+      నిష్కర్ష \tetoken{సూత్రాల్లో}{!!{formula}s} కనీసం ఒకటి;
+    \item కొత్త పూర్వసూచిక కావలసిన మోడల్ నియమాలైతే,
+      సాధ్యమైన నిష్కర్షల్లో కనీసం ఒకటి;
+    \item ఉపయోగించిన పూర్వసూచిక కావలసిన మోడల్ నియమాలైతే,
+      శాఖపై కనిపించే ప్రతి అనువర్తనయోగ్య పూర్వసూచికకు
+      సంబంధిత నిష్కర్ష.
+  \end{enumerate}
+\end{defn}
+
+\begin{explain}
+ఉదాహరణకు, సంపూర్ణ శాఖలో $\sFmla{\True}{!B \land !C}[\sigma]$
+ఉంటే $\sFmla{\True}{!B}[\sigma]$,
+$\sFmla{\True}{!C}[\sigma]$ రెండూ ఉంటాయి.
+$\sFmla{\True}{!B \lor !C}[\sigma]$ ఉంటే
+$\sFmla{\True}{!B}[\sigma]$, $\sFmla{\True}{!C}[\sigma]$
+లలో కనీసం ఒకటి ఉంటుంది.
+\iftag{prvBox}{$\sFmla{\False}{\Box !B}[\sigma]$}
+{$\sFmla{\True}{\Diamond !B}[\sigma]$} ఉంటే, ఏదో ఒక
+కొత్త~$n$ కోసం వరుసగా
+\iftag{prvBox}{$\sFmla{\False}{!B}[\sigma.n]$}
+{$\sFmla{\True}{!B}[\sigma.n]$} కూడా ఉంటుంది.
+అలాగే \iftag{prvBox}{$\sFmla{\True}{\Box !B}[\sigma]$}
+{$\sFmla{\False}{\Diamond !B}[\sigma]$} ఉంటే,
+శాఖపై $\sigma.n$ ఉపయోగించిన ప్రతి~$n$ కోసం వరుసగా
+\iftag{prvBox}{$\sFmla{\True}{!B}[\sigma.n]$}
+{$\sFmla{\False}{!B}[\sigma.n]$} కూడా ఉంటుంది.
+\sourcecorrection{OLTENMLTABCPL-001}{సంపూర్ణ శాఖ ఉదాహరణల్లో
+  మూలం సంయోజన పూర్వసూచికను వదిలింది; విడియోజనలో
+  సత్యమైన~$!B$ బదులు అసత్యమైన~$!B$ను ఇచ్చింది;
+  మోడల్ చిహ్నిత సూత్రాల్లో లోపలి సూత్రాన్ని వదిలి,
+  నిష్కర్షల్లో కూడా అసలు సంయోజకాన్నే ఉంచింది.
+  ముందటి నియమ పట్టిక ప్రకారం పూర్వసూచికలు,
+  సత్య సంకేతాలు,~$!B$ నిష్కర్షలను పునరుద్ధరించాం.}
+\end{explain}
+
+\begin{prop}\ollabel{prop:complete-tableau}
+  ప్రతి పరిమిత $\Gamma$కు, ప్రతి శాఖా సంపూర్ణంగా ఉండే
+  \tetoken{టాబ్లో}{!!a{tableau}} ఉంటుంది.
+\end{prop}
+
+\begin{proof}
+  $\Gamma$ కోసం ఉన్న \tetoken{ఒక టాబ్లో}{!!a{tableau}}లోని
+  వివృత శాఖను పరిశీలిద్దాం. ఆ శాఖలో నియమం వర్తింపజేయగల
+  పూర్వసూచిక గల \tetoken{సూత్రాలు}{!!{formula}s}
+  పరిమిత సంఖ్యలో ఉన్నాయి. వాటిలో (1)--(4) షరతులు
+  ఇంకా నెరవేరని ప్రతి పూర్వసూచిక గల \tetoken{సూత్రానికి}{!!{formula}s}
+  ఒక స్థిర క్రమంలో (ఉదాహరణకు, పై నుంచి కిందికి)
+  వర్తించే నియమాలను వర్తింపజేసి శాఖను విస్తరించండి.
+  కొన్ని సందర్భాల్లో శాఖలు విడిపోతాయి; మిగిలిన
+  పూర్వసూచిక గల \tetoken{సూత్రాలకు}{!!{formula}s} ప్రతి
+  ఫలిత శాఖ చివర నియమాన్ని వర్తింపజేయండి. శాఖలో
+  పూర్వసూచిక గల \tetoken{సూత్రాలు}{!!{formula}s}, ఉపయోగించిన
+  పూర్వసూచికలు రెండూ పరిమిత సంఖ్యలోనే ఉన్నందున, ఈ
+  ప్రక్రియ చివరకు అసలు శాఖను విస్తరించే (బహుశా అనేక)
+  శాఖలను ఇస్తుంది. వాటిలో ప్రతిదానికి ప్రక్రియను
+  వర్తింపజేసి పునరావృతం చేయండి. నిర్మాణం ప్రకారం
+  చివరకు ప్రతి శాఖ సంపూర్ణంగా ఉంటుంది.
+  \sourcecorrection{OLTENMLTABCPL-002}{మూల నిరూపణ చివర
+    ప్రతి శాఖ ``సంవృతం'' అవుతుందని ఉంది; ఇది ప్రతిపాదనలోని
+    ``సంపూర్ణం'' వాదనకు విరుద్ధం, వివృత శాఖల నుంచే
+    ప్రతినమూనా నిర్మించాలనే తదుపరి దశకూ విరుద్ధం.
+    ``సంపూర్ణం''గా సరిచేశాం. ఈ పునరావృత ప్రక్రియ
+    పరిమిత సమయంలో ముగుస్తుందని మూలం విడిగా నిరూపించదు.}
+\end{proof}
+
+\begin{thm}[సంపూర్ణత]
+  \ollabel{thm:tableau-completeness}
+  $\Gamma$కు సంవృత \tetoken{టాబ్లో}{!!{tableau}} లేకపోతే,
+  $\Gamma$ సంతృప్తిపరచదగినది.
+\end{thm}
+
+\begin{proof}
+పై ప్రతిపాదన ప్రకారం, పరిమితమైన~$\Gamma$కు ప్రతి శాఖా
+సంపూర్ణంగా ఉండే \tetoken{టాబ్లో}{!!a{tableau}} ఉంది.
+దానికి సంవృత \tetoken{టాబ్లో}{!!{tableau}} లేదు కనుక,
+కనీసం ఒక శాఖ వివృతంగానూ సంపూర్ణంగానూ ఉండే
+\tetoken{టాబ్లో}{!!a{tableau}} ఉంది. ఆ శాఖపైని పూర్వసూచిక
+గల \tetoken{సూత్రాల}{!!{formula}s} సమితి~$\Delta$,
+దానిలోని పూర్వసూచికల సమితి~$P(\Delta)$ అనుకుందాం.
+\sourcecorrection{OLTENMLTABCPL-003}{పైన ప్రతిపాదన
+  పరిమిత~$\Gamma$కు మాత్రమే చెప్పబడింది; మూల సంపూర్ణత
+  సిద్ధాంతం, దిగువ పర్యవసాన ఉపసిద్ధాంతాలు పరిమితత్వ
+  షరతు లేకుండా ఉన్నాయి. సాధారణ~$\Gamma$కు ఈ అడుగు
+  వర్తించాలంటే సంహతత్వం లేదా అనంత శాఖపై న్యాయమైన
+  విస్తరణ వంటి అదనపు వాదన కావాలి; మూలంలో అది లేదు.
+  ఇక్కడ పరిమిత సందర్భం వరకే నిరూపణ అందుతుందని ప్రకటించాం.}
+
+నమూనా~$\mModel{M(\Delta)} = \tuple{P(\Delta), R, V}$ను
+నిర్వచిద్దాం. దీని లోకాలు~$\Delta$లో కనిపించే పూర్వసూచికలు;
+ప్రాప్యత సంబంధం ఇది:
+\[
+R\sigma\sigma' \quad \text{అప్పుడే, అప్పుడు మాత్రమే} \quad
+\sigma'=\sigma.n \quad \text{ఏదో~$n$ కోసం}
+\]
+మరియు
+\[
+V(p) = \Setabs{\sigma}{\sFmla{\True}{p}[\sigma] \in \Delta}.
+\]
+ప్రతి పూర్వసూచికను అదే పూర్వసూచిక అనే లోకానికి
+కేటాయించే తాదాత్మ్య అర్థనిర్దేశం~$f$ను తీసుకుందాం.
+\sourcecorrection{OLTENMLTABCPL-007}{మూలం లోకాలుగా
+  పూర్వసూచికలను తీసుకున్నా, ముందటి సంతృప్తి నిర్వచనం
+  కోరే అర్థనిర్దేశం~$f$ను స్పష్టంగా చెప్పలేదు;
+  పూర్వసూచికలపై తాదాత్మ్య అర్థనిర్దేశాన్ని ప్రకటించి,
+  చివరి~$\Gamma$ సంతృప్తి ప్రకటనకు~$[f]$ను చేర్చాం.}
+$!A$పై ఆగమనంతో, $\sFmla{\True}{!A}[\sigma] \in \Delta$
+అయితే $\mSat{M(\Delta)}{!A}[\sigma]$ అనీ,
+$\sFmla{\False}{!A}[\sigma] \in \Delta$ అయితే
+$\mSat/{M(\Delta)}{!A}[\sigma]$ అనీ చూపుదాం.
+
+\begin{enumerate}
+  \item \indcase{!A}{p}{$\sFmla{\True}{\indfrm}[\sigma] \in \Delta$
+    అయితే,~$V$ నిర్వచనం ప్రకారం $\sigma \in V(p)$;
+    అందువల్ల $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+    $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ అయితే
+    $\sFmla{\True}{\indfrm}[\sigma] \notin \Delta$; లేకపోతే
+    శాఖ సంవృతమవుతుంది. కాబట్టి $\sigma \notin V(p)$;
+    అందువల్ల $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}
+  \item \indcase{!A}{\lnot !B}{\iftag{probNot}{వ్యాయామం.}{
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$ అయితే,
+      శాఖ సంపూర్ణం కాబట్టి
+      $\sFmla{\False}{!B}[\sigma] \in \Delta$. ఆగమన
+      పరికల్పన ప్రకారం $\mSat/{M(\Delta)}{!B}[\sigma]$;
+      అందువల్ల $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+      $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ అయితే,
+      శాఖ సంపూర్ణం కాబట్టి
+      $\sFmla{\True}{!B}[\sigma] \in \Delta$. ఆగమన
+      పరికల్పన ప్రకారం $\mSat{M(\Delta)}{!B}[\sigma]$;
+      అందువల్ల $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}}
+  \item \indcase{!A}{!B \land !C}{\iftag{probAnd}{వ్యాయామం.}{
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$ అయితే,
+      శాఖ సంపూర్ణం కాబట్టి
+      $\sFmla{\True}{!B}[\sigma] \in \Delta$,
+      $\sFmla{\True}{!C}[\sigma] \in \Delta$ రెండూ ఉంటాయి.
+      ఆగమన పరికల్పన ప్రకారం
+      $\mSat{M(\Delta)}{!B}[\sigma]$,
+      $\mSat{M(\Delta)}{!C}[\sigma]$; కనుక
+      $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+      $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ అయితే,
+      శాఖ సంపూర్ణం కాబట్టి
+      $\sFmla{\False}{!B}[\sigma] \in \Delta$ లేదా
+      $\sFmla{\False}{!C}[\sigma] \in \Delta$.
+      ఆగమన పరికల్పన ప్రకారం
+      $\mSat/{M(\Delta)}{!B}[\sigma]$ లేదా
+      $\mSat/{M(\Delta)}{!C}[\sigma]$; కనుక
+      $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.
+      \sourcecorrection{OLTENMLTABCPL-004}{సంయోజనం అసత్యమైన
+        శాఖలో రెండో ప్రత్యామ్నాయానికి మూలం పొరపాటుగా
+        మళ్లీ~$!B$ అసత్యం అని ఇచ్చింది; శాఖ నియమంలోని
+        రెండో ప్రత్యామ్నాయం~$!C$ అసత్యం.}}
+  \item \indcase{!A}{!B \lor !C}{\iftag{probOr}{వ్యాయామం.}{
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$ అయితే,
+      శాఖ సంపూర్ణం కాబట్టి
+      $\sFmla{\True}{!B}[\sigma] \in \Delta$ లేదా
+      $\sFmla{\True}{!C}[\sigma] \in \Delta$.
+      ఆగమన పరికల్పన ప్రకారం
+      $\mSat{M(\Delta)}{!B}[\sigma]$ లేదా
+      $\mSat{M(\Delta)}{!C}[\sigma]$; కనుక
+      $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+      $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ అయితే,
+      శాఖ సంపూర్ణం కాబట్టి
+      $\sFmla{\False}{!B}[\sigma] \in \Delta$,
+      $\sFmla{\False}{!C}[\sigma] \in \Delta$ రెండూ.
+      ఆగమన పరికల్పన ప్రకారం
+      $\mSat/{M(\Delta)}{!B}[\sigma]$,
+      $\mSat/{M(\Delta)}{!C}[\sigma]$ రెండూ; కనుక
+      $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.
+      \sourcecorrection{OLTENMLTABCPL-005}{విడియోజనం
+        అసత్యమైన శాఖలో రెండో ఆగమన నిష్కర్షకు మూలం
+        మళ్లీ~$!B$ అసత్యం అని ఇచ్చింది; రెండో సంయోజ్యం
+        $!C$ అసత్యం కావాలి.}}
+  \item \indcase{!A}{!B \lif !C}{\iftag{probIf}{వ్యాయామం.}{
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$ అయితే,
+      శాఖ సంపూర్ణం కాబట్టి
+      $\sFmla{\False}{!B}[\sigma] \in \Delta$ లేదా
+      $\sFmla{\True}{!C}[\sigma] \in \Delta$.
+      ఆగమన పరికల్పన ప్రకారం
+      $\mSat/{M(\Delta)}{!B}[\sigma]$ లేదా
+      $\mSat{M(\Delta)}{!C}[\sigma]$; కనుక
+      $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+      $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ అయితే,
+      శాఖ సంపూర్ణం కాబట్టి
+      $\sFmla{\True}{!B}[\sigma] \in \Delta$,
+      $\sFmla{\False}{!C}[\sigma] \in \Delta$ రెండూ.
+      ఆగమన పరికల్పన ప్రకారం
+      $\mSat{M(\Delta)}{!B}[\sigma]$,
+      $\mSat/{M(\Delta)}{!C}[\sigma]$ రెండూ; కనుక
+      $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.
+      \sourcecorrection{OLTENMLTABCPL-006}{షరతు సూత్రం
+        అసత్యమైన శాఖలో రెండో ఆగమన నిష్కర్షను మూలం
+        $!B$ అసత్యంగా వ్రాసింది; నిష్కర్ష భాగం
+        $!C$ అసత్యం కావాలి.}}
+  \item \indcase{!A}{\Box !B}{\iftag{probBox}{వ్యాయామం.}{
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$ అయితే,
+      శాఖ సంపూర్ణం కాబట్టి, శాఖపై ఉపయోగించిన ప్రతి
+      $\sigma.n$కు $\sFmla{\True}{!B}[\sigma.n] \in \Delta$;
+      అంటే $R\sigma\sigma'$ అయ్యే ప్రతి
+      $\sigma' \in P(\Delta)$కు ఇదే వర్తిస్తుంది. ఆగమన
+      పరికల్పన ప్రకారం $R\sigma\sigma'$ అయ్యే ప్రతి~$\sigma'$కు
+      $\mSat{M(\Delta)}{!B}[\sigma']$. కనుక
+      $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+      $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ అయితే,
+      శాఖ సంపూర్ణం కాబట్టి ఏదో~$\sigma.n$కు
+      $\sFmla{\False}{!B}[\sigma.n] \in \Delta$.
+      ఆగమన పరికల్పన ప్రకారం
+      $\mSat/{M(\Delta)}{!B}[\sigma.n]$.
+      $R\sigma(\sigma.n)$ కాబట్టి, అటువంటి
+      $\mSat/{M(\Delta)}{!B}[\sigma']$ అయ్యే
+      $\sigma'$ ఉంది. కనుక
+      $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}}
+  \item \indcase{!A}{\Diamond !B}{\iftag{probDiamond}{వ్యాయామం.}{
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$ అయితే,
+      శాఖ సంపూర్ణం కాబట్టి ఏదో~$\sigma.n$కు
+      $\sFmla{\True}{!B}[\sigma.n] \in \Delta$.
+      ఆగమన పరికల్పన ప్రకారం
+      $\mSat{M(\Delta)}{!B}[\sigma.n]$.
+      $R\sigma(\sigma.n)$ కాబట్టి, అటువంటి
+      $\mSat{M(\Delta)}{!B}[\sigma']$ అయ్యే
+      $\sigma'$ ఉంది. కనుక
+      $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+      $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ అయితే,
+      శాఖ సంపూర్ణం కాబట్టి, శాఖపై ఉపయోగించిన ప్రతి
+      $\sigma.n$కు $\sFmla{\False}{!B}[\sigma.n] \in \Delta$;
+      అంటే $R\sigma\sigma'$ అయ్యే ప్రతి
+      $\sigma' \in P(\Delta)$కు ఇదే వర్తిస్తుంది. ఆగమన
+      పరికల్పన ప్రకారం $R\sigma\sigma'$ అయ్యే ప్రతి~$\sigma'$కు
+      $\mSat/{M(\Delta)}{!B}[\sigma']$. కనుక
+      $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}}
+\end{enumerate}
+$\Gamma \subseteq \Delta$ కాబట్టి,
+$\mSat{M(\Delta)}{\Gamma}[f]$.
+\end{proof}
+
+\begin{prob}
+\olref[nml][tab][cpl]{thm:tableau-completeness} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+
+\begin{cor}
+\ollabel{cor:entailment-completeness}
+$\Gamma \Entails !A$ అయితే $\Gamma \Proves !A$.
+\end{cor}
+
+\begin{cor}
+\ollabel{cor:weak-completeness}
+$!A$ అన్ని నమూనాల్లో సత్యమైతే, $\Proves !A$.
+\end{cor}
+
+\end{document}
