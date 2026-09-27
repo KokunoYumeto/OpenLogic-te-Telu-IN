@@ -957,6 +957,14 @@ locations['TE-T154']=[
  L('content/normal-modal-logic/tableaux/soundness.tex',222,239,276,301,'two premises','రెండుగా విడగొట్టే'),
  L('content/normal-modal-logic/tableaux/soundness.tex',242,267,304,339,'\\Gamma \\Entails !A','\\Gamma \\Entails !A')
 ];
+locations['TE-T155']=[
+ L('content/normal-modal-logic/tableaux/more-rules.tex',11,14,11,15,'Other Accessibility Relations','ఇతర ప్రాప్యత సంబంధాల'),
+ L('content/normal-modal-logic/tableaux/more-rules.tex',16,96,17,97,'is used','ఉపయోగించినది'),
+ L('content/normal-modal-logic/tableaux/more-rules.tex',98,99,99,100,'sound and complete','నిర్దుష్టమైన, సంపూర్ణమైన'),
+ L('content/normal-modal-logic/tableaux/more-rules.tex',101,157,102,158,'Logic','తర్కం'),
+ L('content/normal-modal-logic/tableaux/more-rules.tex',160,184,161,194,'closed tableau','సంవృత'),
+ L('content/normal-modal-logic/tableaux/more-rules.tex',186,196,196,206,'Give closed','ఇవ్వండి')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -1097,6 +1105,7 @@ alternatives['TE-T151']=['పూర్వ టాబ్లో/చిహ్ని�
 alternatives['TE-T152']=['T Box/F Diamondలకు ఉపయోగించిన sigma.n, F Box/T Diamondలకు కొత్త sigma.n, ఒకే పూర్వసూచిక వద్ద సంవృతత, నిషిద్ధ countertableau శాఖలను నిలిపి, ఇతర లోకాల సత్య వాదన/Box-only నియమ చీటీని రెండు ప్రకటిత మూల సవరణలతో సరిచేయడం (ఎంపిక)','T Boxకు కొత్త, F Boxకు పాత పూర్వసూచిక అనుమతించడం (తిరస్కరణ)','వేర్వేరు పూర్వసూచికల వద్ద T A, F Aతో శాఖను మూయడం (తిరస్కరణ)','నిషిద్ధ సంవృత చిత్రాలను చెల్లుబాటు నిరూపణలుగా చెప్పడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీల్లోనే modal K నియమాలు నేరుగా ఉన్నాయని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T153']=['Box, Diamond షరతు ఉదాహరణల పూర్తి చెట్లను, నాలుగు పరిష్కరించని సమస్యలను, K శీర్షికలో రక్షిత టాబ్లో హుక్‌ను నిలపడం (ఎంపిక)','వ్యాయామాలకు సమాధానాలు చేర్చి మూల పాఠ్య పరిధిని మార్చడం (తిరస్కరణ)','ఒక modal operator మాత్రమే ఉన్న ఎడిషన్‌లోనూ రెండో షరతు ఉదాహరణను బలవంతంగా చూపడం (తిరస్కరణ)','చెట్టు లోని 1.1 పూర్వసూచిక లేదా సంవృత గుర్తులను మార్చడం (తిరస్కరణ)'];
 alternatives['TE-T154']=['f:P->W అర్థనిర్దేశం, R సంరక్షణ, T/F సంతృప్తి, శాఖ సంతృప్తి, ఉపయోగించిన/కొత్త సాక్షి, ఆరు ప్రకటిత మూల సవరణలు, మూల వ్యాయామాలు/tagfalse పరిమితిని నిలపడం (ఎంపిక)','ప్రతినమూనాలో A సత్యమని చెప్పడం (తిరస్కరణ)','F Box B, T Diamond B నుంచి A నిష్కర్షలు తీయడం (తిరస్కరణ)','రెండు శాఖల నియమాలను రెండు పూర్వాధారాల నియమాలుగా చెప్పడం (తిరస్కరణ)','Gamma Proves A పరికల్పననే పర్యవసాన నిష్కర్షగా పునరావృతం చేయడం (తిరస్కరణ)','సాధారణ సంబంధ/తర్క పేజీలు మోడల్ నిర్దుష్టతను నేరుగా నిరూపిస్తాయని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T155']=['T/D/B/4/4r పట్టిక, ఆరు తర్కాల ప్రాప్యత వర్గీకరణ, ఉపయోగించిన sigma.n షరతు, ఆరు పరిష్కరించని సమస్యలు నిలిపి, S5లో 5 స్వీకృత ఉదాహరణను స్థిర నిర్వచనానికి సరిపోయే సంవృత చెట్టుగా ఒక ప్రకటిత మూల సవరణతో మార్చడం (ఎంపిక)','Box A implies Box Diamond Aనే 5 స్వీకృతమని చెప్పడం (తిరస్కరణ)','S5 ఉదాహరణను వేరే సూత్రానికి మార్చి మూల 5 వాదనను వదలడం (తిరస్కరణ)','కొత్త 1.2 సాక్షిని ఉపయోగించిన పూర్వసూచికగా ముందుగానే భావించడం (తిరస్కరణ)','స్థానిక సాధారణ సంబంధ పేజీలో modal 4r నియమం ప్రత్యక్షంగా ఉందని చెప్పడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -1112,7 +1121,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T154 record the Batch 025--Batch 113 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T155 record the Batch 025--Batch 114 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1461,6 +1470,7 @@ const correctionQuestions={
  ,'OLTENMLTABSOU-004':'Does the T Diamond B case conclude T B at the new prefix and use modal model/satisfaction notation consistently while retaining its tags?'
  ,'OLTENMLTABSOU-005':'Are the three later rule cases correctly described as one-premise, two-branch inferences rather than two-premise rules?'
  ,'OLTENMLTABSOU-006':'Does the contradiction proof conclude Gamma entails A, matching the corollary, rather than repeat Gamma proves A?'
+ ,'OLTENMLTABMRU-001':'Does the S5 tableau actually close for the edition-defined axiom 5 Diamond A -> Box Diamond A, using distinct fresh prefixes 1.1 and 1.2 and the Euclidean 4r Diamond step?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 464 of 722 draft units**. This log contains 154 terminology/sense decisions and 435 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 465 of 722 draft units**. This log contains 155 terminology/sense decisions and 436 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3703,6 +3703,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక సాక్షులు modal K టాబ్లో నిర్దుష్టతకు ప్రత్యక్ష సాంకేతిక పదం/నిరూపణ ఇవ్వవు. మూల స్వయంగా కొన్ని సందర్భాలను వ్యాయామాలుగా వదులుతుంది; tagfalse prvDiamondని నిలిపాం. స్వతంత్ర నిపుణ సమీక్ష, TeX దృశ్య తనిఖీ ఇంకా లేవు.
 
 - Please double-check: Please double-check whether “పూర్వసూచిక గల K టాబ్లోల నిర్దుష్టత / పూర్వసూచిక అర్థనిర్దేశం / సంతృప్తిపరచదగిన శాఖ / కొత్త సాక్షి లోకం / పర్యవసాన ఉపసిద్ధాంతం” is idiomatic and technically standard for “soundness of prefixed K tableaux / prefix interpretation / satisfiable branch / fresh witness / entailment corollary” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T155 — additional accessibility tableau rules T/D/B/4/4r / logic-frame table / S5 axiom 5 example
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: అదనపు ప్రాప్యత టాబ్లో నియమాలు T/D/B/4/4r / తర్క-ఫ్రేమ్ పట్టిక / S5లో 5 స్వీకృత ఉదాహరణ
+
+- Exact implementation: OLP-0465; normal-modal-logic/tableaux/more-rules; content/normal-modal-logic/tableaux/more-rules.tex:11 ↔ translation/content/normal-modal-logic/tableaux/more-rules.tex:11 (OLP-0465-B005); printed/PDF page pending; OLP-0465; normal-modal-logic/tableaux/more-rules; content/normal-modal-logic/tableaux/more-rules.tex:16-96 ↔ translation/content/normal-modal-logic/tableaux/more-rules.tex:17-97 (OLP-0465-B007); printed/PDF page pending; OLP-0465; normal-modal-logic/tableaux/more-rules; content/normal-modal-logic/tableaux/more-rules.tex:98-99 ↔ translation/content/normal-modal-logic/tableaux/more-rules.tex:99-100 (OLP-0465-B008); printed/PDF page pending; OLP-0465; normal-modal-logic/tableaux/more-rules; content/normal-modal-logic/tableaux/more-rules.tex:101-157 ↔ translation/content/normal-modal-logic/tableaux/more-rules.tex:102-158 (OLP-0465-B009); printed/PDF page pending; OLP-0465; normal-modal-logic/tableaux/more-rules; content/normal-modal-logic/tableaux/more-rules.tex:160-184 ↔ translation/content/normal-modal-logic/tableaux/more-rules.tex:161-194 (OLP-0465-B010); printed/PDF page pending; OLP-0465; normal-modal-logic/tableaux/more-rules; content/normal-modal-logic/tableaux/more-rules.tex:186-196 ↔ translation/content/normal-modal-logic/tableaux/more-rules.tex:196-206 (OLP-0465-B011); printed/PDF page pending
+
+- Authorities actually checked: TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P022, PDF 84, printed 77, Implication and equivalence headings; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-T114/152లోని స్వావర్తన, సీరియల్, సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ రూపాలను కొనసాగించాం. మూలంలోని T/D/B/4/4r నియమాలు, ఉపయోగించిన sigma.n షరతు, ఆరు తర్కాల పట్టిక నిలిచాయి. S5లో 5 స్వీకృతం అని చెప్పి వేరే సూత్రం చూపిన ఉదాహరణను స్థిర 5 నిర్వచనం ప్రకారం ఒక ప్రకటిత మూల సవరణతో నిజమైన సంవృత చెట్టుగా సరిచేశాం; ఆరు సమస్యలు వ్యాయామాలే. టాబ్లో, సీరియల్, యూక్లిడియన్ are established edition borrowings; T/D/B/4/4r, K/S4/S5, modal signs, feature tags, tableau node labels and identifiers remain protected notation.
+
+- Alternatives: T/D/B/4/4r పట్టిక, ఆరు తర్కాల ప్రాప్యత వర్గీకరణ, ఉపయోగించిన sigma.n షరతు, ఆరు పరిష్కరించని సమస్యలు నిలిపి, S5లో 5 స్వీకృత ఉదాహరణను స్థిర నిర్వచనానికి సరిపోయే సంవృత చెట్టుగా ఒక ప్రకటిత మూల సవరణతో మార్చడం (ఎంపిక); Box A implies Box Diamond Aనే 5 స్వీకృతమని చెప్పడం (తిరస్కరణ); S5 ఉదాహరణను వేరే సూత్రానికి మార్చి మూల 5 వాదనను వదలడం (తిరస్కరణ); కొత్త 1.2 సాక్షిని ఉపయోగించిన పూర్వసూచికగా ముందుగానే భావించడం (తిరస్కరణ); స్థానిక సాధారణ సంబంధ పేజీలో modal 4r నియమం ప్రత్యక్షంగా ఉందని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు modal tableau నియమాలకు లేదా వాటి సంపూర్ణతకు ప్రత్యక్ష సాంకేతిక సాక్ష్యం కాదు. సవరించిన S5 చెట్టు అదే-agent నియమ తనిఖీ మాత్రమే; స్వతంత్ర నిపుణ సమీక్ష, TeX దృశ్య తనిఖీ ఇంకా లేవు.
+
+- Please double-check: Please double-check whether “అదనపు ప్రాప్యత టాబ్లో నియమాలు T/D/B/4/4r / తర్క-ఫ్రేమ్ పట్టిక / S5లో 5 స్వీకృత ఉదాహరణ” is idiomatic and technically standard for “additional accessibility tableau rules T/D/B/4/4r / logic-frame table / S5 axiom 5 example” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -14143,3 +14167,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Does the contradiction proof conclude Gamma entails A, matching the corollary, rather than repeat Gamma proves A?
+
+## REV-OLTENMLTABMRU-001 — OLTENMLTABMRU-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: S5లో 5 స్వీకృతం అని మూలం ప్రకటించిన ఉదాహరణకు వేరే సూత్రం ఇచ్చింది. స్థిర 5 నిర్వచనం Diamond A implies Box Diamond Aకు సరిపడేలా సూత్రం, T Diamond సాక్షి 1.2, F Diamond సంవృత వరుసలను మార్చి పక్కనే ప్రకటించాం; మిగిలిన పట్టిక, వ్యాయామాలు నిలిపాం.
+
+- Exact implementation: OLP-0465; normal-modal-logic/tableaux/more-rules; more-rules.tex lines 160-183; compare syntax-and-semantics/schemas.tex lines 124-127 ↔ translation/content/normal-modal-logic/tableaux/more-rules.tex:165 (OLP-0465-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLTABMRU-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: S5లో 5 స్వీకృతం అని మూలం ప్రకటించిన ఉదాహరణకు వేరే సూత్రం ఇచ్చింది. స్థిర 5 నిర్వచనం Diamond A implies Box Diamond Aకు సరిపడేలా సూత్రం, T Diamond సాక్షి 1.2, F Diamond సంవృత వరుసలను మార్చి పక్కనే ప్రకటించాం; మిగిలిన పట్టిక, వ్యాయామాలు నిలిపాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the S5 tableau actually close for the edition-defined axiom 5 Diamond A -> Box Diamond A, using distinct fresh prefixes 1.1 and 1.2 and the Euclidean 4r Diamond step?

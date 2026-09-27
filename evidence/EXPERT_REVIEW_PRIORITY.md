@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 464 of 722 draft units**. This view selects 488 of 589 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 465 of 722 draft units**. This view selects 489 of 591 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4883,3 +4883,13 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0464; normal-modal-logic/tableaux/soundness; translation/content/normal-modal-logic/tableaux/soundness.tex:329; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the contradiction proof conclude Gamma entails A, matching the corollary, rather than repeat Gamma proves A?
+
+## REV-OLTENMLTABMRU-001 — OLTENMLTABMRU-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: S5లో 5 స్వీకృతం అని మూలం ప్రకటించిన ఉదాహరణకు వేరే సూత్రం ఇచ్చింది. స్థిర 5 నిర్వచనం Diamond A implies Box Diamond Aకు సరిపడేలా సూత్రం, T Diamond సాక్షి 1.2, F Diamond సంవృత వరుసలను మార్చి పక్కనే ప్రకటించాం; మిగిలిన పట్టిక, వ్యాయామాలు నిలిపాం.
+
+- Occurrences: OLP-0465; normal-modal-logic/tableaux/more-rules; translation/content/normal-modal-logic/tableaux/more-rules.tex:165; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the S5 tableau actually close for the edition-defined axiom 5 Diamond A -> Box Diamond A, using distinct fresh prefixes 1.1 and 1.2 and the Euclidean 4r Diamond step?

@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLTABMRU-20260927",
+  "unit_id": "OLP-0465",
+  "source_path": "content/normal-modal-logic/tableaux/more-rules.tex",
+  "source_sha256": "1763d19e944f908c2890c6918b0197280a38ce9932867b28f563a7140b6d9c48",
+  "findings": [
+    {
+      "finding_id": "OLTENMLTABMRU-001",
+      "source_locator": "more-rules.tex lines 160-183; compare syntax-and-semantics/schemas.tex lines 124-127",
+      "classification": "s5_axiom_5_example_proves_different_formula",
+      "source_issue": "The example calls Box A -> Box Diamond A axiom 5, but the edition defines 5 as Diamond A -> Box Diamond A; its old tableau proves the former, not the claimed latter.",
+      "minimal_treatment": "Keep the intended S5 proves axiom 5 claim; change the explanatory formula and tableau to the actual axiom 5 by using the true-Diamond witness at new 1.2 and closing with false Diamond there; disclose adjacent to the example.",
+      "expected_core_math_delta": {"source_only": ["$\\Box!A\\lif\\Box\\Diamond!A$"], "target_only": ["$\\Diamond!A\\lif\\Box\\Diamond!A$"]}
+    }
+  ]
+}

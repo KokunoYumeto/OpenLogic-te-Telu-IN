@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0465",
+  "source_path": "content/normal-modal-logic/tableaux/more-rules.tex",
+  "source_sha256": "1763d19e944f908c2890c6918b0197280a38ce9932867b28f563a7140b6d9c48",
+  "audit_id": "OLTENMLTABMRU-20260927",
+  "audit_review_path": "evidence/OLP-0465-MODAL-TABLEAUX-MORE-RULES-SOURCE-AUDIT.md",
+  "audit_review_sha256": "ebbd22d84d66eaffccec1198af97bfb9b88121ca9cff5b7a6d3a0496ddc9d37a",
+  "audit_findings_path": "evidence/OLP-0465-MODAL-TABLEAUX-MORE-RULES-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "dfe2f3653f8c8de5eb88605ed9db43f878f8f7f34cace2870e3cdc4214ee2244",
+  "previous_corrections": 435,
+  "treatments": {
+    "OLTENMLTABMRU-001": {
+      "target_line": 165,
+      "body_treatment": "S5లో 5 స్వీకృతం అని మూలం ప్రకటించిన ఉదాహరణకు వేరే సూత్రం ఇచ్చింది. స్థిర 5 నిర్వచనం Diamond A implies Box Diamond Aకు సరిపడేలా సూత్రం, T Diamond సాక్షి 1.2, F Diamond సంవృత వరుసలను మార్చి పక్కనే ప్రకటించాం; మిగిలిన పట్టిక, వ్యాయామాలు నిలిపాం."
+    }
+  }
+}

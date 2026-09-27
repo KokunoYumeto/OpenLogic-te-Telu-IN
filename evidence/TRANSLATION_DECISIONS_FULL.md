@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **464 of 722 source units drafted**. This readable view contains all 589 decisions and 1349 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **465 of 722 source units drafted**. This readable view contains all 591 decisions and 1356 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4687,6 +4687,37 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T154-OCC-007; OLP-0464; OLP-0464-B022; source upstream/content/normal-modal-logic/tableaux/soundness.tex:188-199 bytes 8739-9446 SHA-256 337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100; target translation/content/normal-modal-logic/tableaux/soundness.tex:229-249 bytes 17879-19664 SHA-256 5554e67d871f015c4c1159a3f05f1b93dd6882077672cd4ea8992fa1ff69b6c1; reader page pending.
   - te-Telu-IN-TE-T154-OCC-008; OLP-0464; OLP-0464-B023; source upstream/content/normal-modal-logic/tableaux/soundness.tex:201-240 bytes 9447-11690 SHA-256 337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100; target translation/content/normal-modal-logic/tableaux/soundness.tex:251-302 bytes 19665-23656 SHA-256 5554e67d871f015c4c1159a3f05f1b93dd6882077672cd4ea8992fa1ff69b6c1; reader page pending.
   - te-Telu-IN-TE-T154-OCC-009; OLP-0464; OLP-0464-B025; source upstream/content/normal-modal-logic/tableaux/soundness.tex:246-249 bytes 11784-11891 SHA-256 337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100; target translation/content/normal-modal-logic/tableaux/soundness.tex:308-311 bytes 23791-23906 SHA-256 5554e67d871f015c4c1159a3f05f1b93dd6882077672cd4ea8992fa1ff69b6c1; reader page pending.
+
+## te-Telu-IN-TE-T155 — additional accessibility tableau rules T/D/B/4/4r / logic-frame table / S5 axiom 5 example
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: అదనపు ప్రాప్యత టాబ్లో నియమాలు T/D/B/4/4r / తర్క-ఫ్రేమ్ పట్టిక / S5లో 5 స్వీకృత ఉదాహరణ
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “additional accessibility tableau rules T/D/B/4/4r / logic-frame table / S5 axiom 5 example” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు modal tableau నియమాలకు లేదా వాటి సంపూర్ణతకు ప్రత్యక్ష సాంకేతిక సాక్ష్యం కాదు. సవరించిన S5 చెట్టు అదే-agent నియమ తనిఖీ మాత్రమే; స్వతంత్ర నిపుణ సమీక్ష, TeX దృశ్య తనిఖీ ఇంకా లేవు.
+
+- Rationale: TE-T114/152లోని స్వావర్తన, సీరియల్, సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ రూపాలను కొనసాగించాం. మూలంలోని T/D/B/4/4r నియమాలు, ఉపయోగించిన sigma.n షరతు, ఆరు తర్కాల పట్టిక నిలిచాయి. S5లో 5 స్వీకృతం అని చెప్పి వేరే సూత్రం చూపిన ఉదాహరణను స్థిర 5 నిర్వచనం ప్రకారం ఒక ప్రకటిత మూల సవరణతో నిజమైన సంవృత చెట్టుగా సరిచేశాం; ఆరు సమస్యలు వ్యాయామాలే. టాబ్లో, సీరియల్, యూక్లిడియన్ are established edition borrowings; T/D/B/4/4r, K/S4/S5, modal signs, feature tags, tableau node labels and identifiers remain protected notation.
+
+- Authorities checked: TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P022 [checked_context_only], PDF page 84; printed page 77; Implication and equivalence headings; Direct implication and equivalence terminology in propositional logic. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: T/D/B/4/4r పట్టిక, ఆరు తర్కాల ప్రాప్యత వర్గీకరణ, ఉపయోగించిన sigma.n షరతు, ఆరు పరిష్కరించని సమస్యలు నిలిపి, S5లో 5 స్వీకృత ఉదాహరణను స్థిర నిర్వచనానికి సరిపోయే సంవృత చెట్టుగా ఒక ప్రకటిత మూల సవరణతో మార్చడం [viable_alternative: ఎంపిక] | Box A implies Box Diamond Aనే 5 స్వీకృతమని చెప్పడం [viable_alternative: తిరస్కరణ] | S5 ఉదాహరణను వేరే సూత్రానికి మార్చి మూల 5 వాదనను వదలడం [viable_alternative: తిరస్కరణ] | కొత్త 1.2 సాక్షిని ఉపయోగించిన పూర్వసూచికగా ముందుగానే భావించడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ సంబంధ పేజీలో modal 4r నియమం ప్రత్యక్షంగా ఉందని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “అదనపు ప్రాప్యత టాబ్లో నియమాలు T/D/B/4/4r / తర్క-ఫ్రేమ్ పట్టిక / S5లో 5 స్వీకృత ఉదాహరణ” is idiomatic and technically standard for “additional accessibility tableau rules T/D/B/4/4r / logic-frame table / S5 axiom 5 example” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T155-OCC-001; OLP-0465; OLP-0465-B005; source upstream/content/normal-modal-logic/tableaux/more-rules.tex:11 bytes 177-229 SHA-256 1763d19e944f908c2890c6918b0197280a38ce9932867b28f563a7140b6d9c48; target translation/content/normal-modal-logic/tableaux/more-rules.tex:11 bytes 177-281 SHA-256 5fd5066ca6c473b8f77b90efdba42c3786e7d7b0c308dfe165eb5bc3dc2bb651; reader page pending.
+  - te-Telu-IN-TE-T155-OCC-002; OLP-0465; OLP-0465-B007; source upstream/content/normal-modal-logic/tableaux/more-rules.tex:16-96 bytes 367-2818 SHA-256 1763d19e944f908c2890c6918b0197280a38ce9932867b28f563a7140b6d9c48; target translation/content/normal-modal-logic/tableaux/more-rules.tex:17-97 bytes 569-3150 SHA-256 5fd5066ca6c473b8f77b90efdba42c3786e7d7b0c308dfe165eb5bc3dc2bb651; reader page pending.
+  - te-Telu-IN-TE-T155-OCC-003; OLP-0465; OLP-0465-B008; source upstream/content/normal-modal-logic/tableaux/more-rules.tex:98-99 bytes 2819-2935 SHA-256 1763d19e944f908c2890c6918b0197280a38ce9932867b28f563a7140b6d9c48; target translation/content/normal-modal-logic/tableaux/more-rules.tex:99-100 bytes 3151-3394 SHA-256 5fd5066ca6c473b8f77b90efdba42c3786e7d7b0c308dfe165eb5bc3dc2bb651; reader page pending.
+  - te-Telu-IN-TE-T155-OCC-004; OLP-0465; OLP-0465-B009; source upstream/content/normal-modal-logic/tableaux/more-rules.tex:101-157 bytes 2936-4802 SHA-256 1763d19e944f908c2890c6918b0197280a38ce9932867b28f563a7140b6d9c48; target translation/content/normal-modal-logic/tableaux/more-rules.tex:102-158 bytes 3395-5541 SHA-256 5fd5066ca6c473b8f77b90efdba42c3786e7d7b0c308dfe165eb5bc3dc2bb651; reader page pending.
+  - te-Telu-IN-TE-T155-OCC-005; OLP-0465; OLP-0465-B010; source upstream/content/normal-modal-logic/tableaux/more-rules.tex:160-184 bytes 4804-5695 SHA-256 1763d19e944f908c2890c6918b0197280a38ce9932867b28f563a7140b6d9c48; target translation/content/normal-modal-logic/tableaux/more-rules.tex:161-194 bytes 5543-7245 SHA-256 5fd5066ca6c473b8f77b90efdba42c3786e7d7b0c308dfe165eb5bc3dc2bb651; reader page pending.
+  - te-Telu-IN-TE-T155-OCC-006; OLP-0465; OLP-0465-B011; source upstream/content/normal-modal-logic/tableaux/more-rules.tex:186-196 bytes 5696-6024 SHA-256 1763d19e944f908c2890c6918b0197280a38ce9932867b28f563a7140b6d9c48; target translation/content/normal-modal-logic/tableaux/more-rules.tex:196-206 bytes 7246-7662 SHA-256 5fd5066ca6c473b8f77b90efdba42c3786e7d7b0c308dfe165eb5bc3dc2bb651; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -16077,3 +16108,29 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLTABSOU-006-OCC-001; OLP-0464; OLP-0464-B026; source upstream/content/normal-modal-logic/tableaux/soundness.tex:251-262 bytes 11892-12584 SHA-256 337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100; target translation/content/normal-modal-logic/tableaux/soundness.tex:329 bytes 25044-25132 SHA-256 5554e67d871f015c4c1159a3f05f1b93dd6882077672cd4ea8992fa1ff69b6c1; reader page pending.
+
+## te-Telu-IN-OLTENMLTABMRU-001 — OLTENMLTABMRU-001: s5 axiom 5 example proves different formula
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: S5లో 5 స్వీకృతం అని మూలం ప్రకటించిన ఉదాహరణకు వేరే సూత్రం ఇచ్చింది. స్థిర 5 నిర్వచనం Diamond A implies Box Diamond Aకు సరిపడేలా సూత్రం, T Diamond సాక్షి 1.2, F Diamond సంవృత వరుసలను మార్చి పక్కనే ప్రకటించాం; మిగిలిన పట్టిక, వ్యాయామాలు నిలిపాం.
+
+- Intended sense: Repair the audited s5 axiom 5 example proves different formula at more-rules.tex lines 160-183; compare syntax-and-semantics/schemas.tex lines 124-127, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLTABMRU-20260927:OLTENMLTABMRU-001 [checked_supports], content/normal-modal-logic/tableaux/more-rules.tex; more-rules.tex lines 160-183; compare syntax-and-semantics/schemas.tex lines 124-127; s5_axiom_5_example_proves_different_formula; S5లో 5 స్వీకృతం అని మూలం ప్రకటించిన ఉదాహరణకు వేరే సూత్రం ఇచ్చింది. స్థిర 5 నిర్వచనం Diamond A implies Box Diamond Aకు సరిపడేలా సూత్రం, T Diamond సాక్షి 1.2, F Diamond సంవృత వరుసలను మార్చి పక్కనే ప్రకటించాం; మిగిలిన పట్టిక, వ్యాయామాలు నిలిపాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the S5 tableau actually close for the edition-defined axiom 5 Diamond A -> Box Diamond A, using distinct fresh prefixes 1.1 and 1.2 and the Euclidean 4r Diamond step?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLTABMRU-001-OCC-001; OLP-0465; OLP-0465-B010; source upstream/content/normal-modal-logic/tableaux/more-rules.tex:160-184 bytes 4804-5695 SHA-256 1763d19e944f908c2890c6918b0197280a38ce9932867b28f563a7140b6d9c48; target translation/content/normal-modal-logic/tableaux/more-rules.tex:165 bytes 5729-5826 SHA-256 5fd5066ca6c473b8f77b90efdba42c3786e7d7b0c308dfe165eb5bc3dc2bb651; reader page pending.
