@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **440 of 722 source units drafted**. This readable view contains all 535 decisions and 1163 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **442 of 722 source units drafted**. This readable view contains all 536 decisions and 1169 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3957,6 +3957,37 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T131-OCC-005; OLP-0440; OLP-0440-B008; source upstream/content/normal-modal-logic/axioms-systems/consistency.tex:27-30 bytes 815-1059 SHA-256 410cd2532bf8c2ba318f476f6e9192064021f16e0a42aa297015bb41851e889b; target translation/content/normal-modal-logic/axioms-systems/consistency.tex:33-36 bytes 2396-2810 SHA-256 f201fc7a26032c0cb7dbdf571b46ea2e54403457b37d21d8181228bfaf7b6732; reader page pending.
   - te-Telu-IN-TE-T131-OCC-006; OLP-0440; OLP-0440-B009; source upstream/content/normal-modal-logic/axioms-systems/consistency.tex:32-47 bytes 1060-1718 SHA-256 410cd2532bf8c2ba318f476f6e9192064021f16e0a42aa297015bb41851e889b; target translation/content/normal-modal-logic/axioms-systems/consistency.tex:38-53 bytes 2811-3814 SHA-256 f201fc7a26032c0cb7dbdf571b46ea2e54403457b37d21d8181228bfaf7b6732; reader page pending.
   - te-Telu-IN-TE-T131-OCC-007; OLP-0440; OLP-0440-B010; source upstream/content/normal-modal-logic/axioms-systems/consistency.tex:49-62 bytes 1719-2477 SHA-256 410cd2532bf8c2ba318f476f6e9192064021f16e0a42aa297015bb41851e889b; target translation/content/normal-modal-logic/axioms-systems/consistency.tex:55-73 bytes 3815-5538 SHA-256 f201fc7a26032c0cb7dbdf571b46ea2e54403457b37d21d8181228bfaf7b6732; reader page pending.
+
+## te-Telu-IN-TE-T132 — modal completeness / canonical model / countermodel / complete Sigma-consistent set / truth as membership
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: మోడల్ సంపూర్ణత / కానానికల్ నమూనా / ప్రతినమూనా / సంపూర్ణ Sigma-అవిరుద్ధ సమితి / సమితి మూలకత్వంగా సత్యం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “modal completeness / canonical model / countermodel / complete Sigma-consistent set / truth as membership” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక పేజీలు మోడల్ సంపూర్ణతా సిద్ధాంతాన్ని లేదా కానానికల్ నిర్మాణాన్ని నేరుగా నిరూపించవు. కానానికల్ అనేది తరువాతి మూల నిర్మాణంతో అర్థం స్థిరపడాల్సిన ఋణపదం; శీర్షిక, పరిచయం రెండింటిలోనూ ఒకే రూపం ఉంచాం. Sigma-సాపేక్ష నమూనా-సత్య పరిమితి TE-T131తో అనుగుణం.
+
+- Rationale: TE-P010లో సాధారణ సంబంధం, TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, TE-P024లో నియమ-వ్యుత్పత్తి, ఈ బ్యాచ్‌లో తిరిగి చూసిన TE-P026లో సుసంగతత్వం/అసంగత ప్రత్యక్షం. TE-T034, TE-T131లోని సంపూర్ణత, అవైరుధ్యం, కానానికల్ పదరూపాలను కొనసాగించాం. K/KT/KD నిర్దుష్టత నుంచి ప్రతినమూనా దిశ, పూర్తి అవిరుద్ధ సమితుల ప్రపంచాలు, ప్రాప్యత, సభ్యత్వ-సత్య లక్ష్యం OLP-0441--0442 మూల గణితానికి కట్టబడి ఉన్నాయి. కానానికల్ స్పష్టమైన సాంకేతిక ఋణపదం; K, KT, KD, Sigma, Box, Diamond, Gamma, A, B, C, M మరియు మోడల్ సంకేతాలు రక్షిత గణిత రూపాలు.
+
+- Authorities checked: TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P026 [checked_context_only], PDF page 88; printed page 81; Consistency section; Direct consistency/inconsistency terminology; not direct completeness terminology.
+
+- Alternatives: అధ్యాయ శీర్షిక నుంచి కానానికల్ నమూనా వరకూ పూర్వ సంపూర్ణత/అవైరుధ్యం/ప్రతినమూనా రూపాలను కొనసాగించి, K/KT/KD నిర్దుష్టత, విపర్యయ ప్రతినమూనా, పూర్తి సమితుల ప్రాప్యత, సభ్యత్వ-సత్య లక్ష్యం నిలపడం [viable_alternative: ఎంపిక] | ఈ పరిచయంలో భవిష్యత్ కానానికల్ నిర్మాణం పూర్తిగా నిరూపించబడిందని చూపడం [viable_alternative: తిరస్కరణ] | సౌష్ఠవ/స్వావర్తన/సీరియల్ నమూనా వర్గాలను కలపడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ తర్క పేజీలే మోడల్ సంపూర్ణతకు ప్రత్యక్ష సాక్ష్యం అని చూపడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “మోడల్ సంపూర్ణత / కానానికల్ నమూనా / ప్రతినమూనా / సంపూర్ణ Sigma-అవిరుద్ధ సమితి / సమితి మూలకత్వంగా సత్యం” is idiomatic and technically standard for “modal completeness / canonical model / countermodel / complete Sigma-consistent set / truth as membership” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T132-OCC-001; OLP-0441; OLP-0441-B004; source upstream/content/normal-modal-logic/completeness/completeness.tex:8 bytes 133-189 SHA-256 b1cc08131ec5862cc854398515ad134b4c816dfa7b9060ef15d2d5833e51b58d; target translation/content/normal-modal-logic/completeness/completeness.tex:8 bytes 133-246 SHA-256 afaebaa3c71703227f2230f8687196de31a4827804572ae7dbd7fbea404eb819; reader page pending.
+  - te-Telu-IN-TE-T132-OCC-002; OLP-0442; OLP-0442-B006; source upstream/content/normal-modal-logic/completeness/introduction.tex:13-19 bytes 209-654 SHA-256 c9ecf5ad894817a8446043393bd6b5d5e20e9755134d32fe362b503306a51fe7; target translation/content/normal-modal-logic/completeness/introduction.tex:13-21 bytes 215-1208 SHA-256 1e5b3548bd67afb9e484361be17ac65a5ba476d4a6c5825ea2c6f78b9ec6cdc7; reader page pending.
+  - te-Telu-IN-TE-T132-OCC-003; OLP-0442; OLP-0442-B007; source upstream/content/normal-modal-logic/completeness/introduction.tex:21-36 bytes 655-1680 SHA-256 c9ecf5ad894817a8446043393bd6b5d5e20e9755134d32fe362b503306a51fe7; target translation/content/normal-modal-logic/completeness/introduction.tex:23-39 bytes 1209-3367 SHA-256 1e5b3548bd67afb9e484361be17ac65a5ba476d4a6c5825ea2c6f78b9ec6cdc7; reader page pending.
+  - te-Telu-IN-TE-T132-OCC-004; OLP-0442; OLP-0442-B008; source upstream/content/normal-modal-logic/completeness/introduction.tex:38-47 bytes 1681-2304 SHA-256 c9ecf5ad894817a8446043393bd6b5d5e20e9755134d32fe362b503306a51fe7; target translation/content/normal-modal-logic/completeness/introduction.tex:41-51 bytes 3368-4598 SHA-256 1e5b3548bd67afb9e484361be17ac65a5ba476d4a6c5825ea2c6f78b9ec6cdc7; reader page pending.
+  - te-Telu-IN-TE-T132-OCC-005; OLP-0442; OLP-0442-B009; source upstream/content/normal-modal-logic/completeness/introduction.tex:49-62 bytes 2305-3182 SHA-256 c9ecf5ad894817a8446043393bd6b5d5e20e9755134d32fe362b503306a51fe7; target translation/content/normal-modal-logic/completeness/introduction.tex:53-66 bytes 4599-6393 SHA-256 1e5b3548bd67afb9e484361be17ac65a5ba476d4a6c5825ea2c6f78b9ec6cdc7; reader page pending.
+  - te-Telu-IN-TE-T132-OCC-006; OLP-0442; OLP-0442-B010; source upstream/content/normal-modal-logic/completeness/introduction.tex:64-71 bytes 3183-3682 SHA-256 c9ecf5ad894817a8446043393bd6b5d5e20e9755134d32fe362b503306a51fe7; target translation/content/normal-modal-logic/completeness/introduction.tex:68-77 bytes 6394-7532 SHA-256 1e5b3548bd67afb9e484361be17ac65a5ba476d4a6c5825ea2c6f78b9ec6cdc7; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 

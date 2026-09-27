@@ -756,6 +756,14 @@ locations['TE-T131']=[
  L('content/normal-modal-logic/axioms-systems/consistency.tex',32,47,38,53,'some !!{formula}','సూత్రం'),
  L('content/normal-modal-logic/axioms-systems/consistency.tex',49,62,55,73,'contrapositively','విపర్యయంగా')
 ];
+locations['TE-T132']=[
+ L('content/normal-modal-logic/completeness/completeness.tex',8,8,8,8,'Completeness and Canonical Models','సంపూర్ణత మరియు కానానికల్ నమూనాలు'),
+ L('content/normal-modal-logic/completeness/introduction.tex',13,19,13,21,'soundness theorem','నిర్దుష్టతా సిద్ధాంతం'),
+ L('content/normal-modal-logic/completeness/introduction.tex',21,36,23,39,'countermodel','ప్రతినమూనా'),
+ L('content/normal-modal-logic/completeness/introduction.tex',38,47,41,51,'\\Proves/[\\Sigma] \\lnot !A','\\Proves/[\\Sigma] \\lnot !A'),
+ L('content/normal-modal-logic/completeness/introduction.tex',49,62,53,66,'complete','సంపూర్ణ'),
+ L('content/normal-modal-logic/completeness/introduction.tex',64,71,68,77,'canonical','కానానికల్')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -873,6 +881,7 @@ alternatives['TE-T128']=['మూడూ మూల TikZ ప్రతినమూ�
 alternatives['TE-T129']=['సమితి Gamma నుంచి వ్యవస్థ Sigmaలో నిరూపణీయతకు మూలంలోని అంతర్నిహితార్థ-శ్రేణి షరతును యథాతథంగా ఉంచి, పూర్వ వ్యుత్పాద్యత పదరూపాన్ని కొనసాగించడం (ఎంపిక)','Gamma/Sigma పాత్రలను తారుమారు చేయడం (తిరస్కరణ)','మూలంలో చెప్పని శూన్య-n సంప్రదాయాన్ని నిర్వచనంలో జోడించడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలనే ఈ మోడల్-ప్రత్యేక నిర్వచనానికి ప్రత్యక్ష సాక్ష్యంగా చూపడం (తిరస్కరణ)'];
 alternatives['TE-T130']=['ఏకదిశత, స్వావర్తనత్వం, కట్, నిగమన సిద్ధాంతం, నిగమన పరంగా సంవృతం అనే పూర్వ పదరూపాలను Gamma/Sigma-సాపేక్ష ఐదు మూల షరతులతో కలిపి నిలపడం (ఎంపిక)','కట్‌కు మూలంలో కనిపించని కొత్త ఉపపత్తిని చేర్చడం (తిరస్కరణ)','రెండు దిశల నిగమన సిద్ధాంతాన్ని ఒక్క దిశగా పరిమితం చేయడం (తిరస్కరణ)','పేరులేని ఐదవ అంశానికి మూలంలో కనిపించే Rule T లేబుల్ ఉన్నట్లుగా ప్రకటించడం (తిరస్కరణ)'];
 alternatives['TE-T131']=['స్థిర అవైరుధ్యం/వైరుధ్యం జోడీని స్థానిక సుసంగతత్వం/అసంగత పర్యాయంతో కలిపి నమోదు చేసి, వ్యవస్థ-సాపేక్ష షరతులు, K/K5 ఉదాహరణలు, మూడు లక్షణాలు, విపర్యయ నిరూపణ నిలపడం; రెండు మూల స్పష్టీకరణలు ప్రకటించడం (ఎంపిక)','స్థానిక సాధారణ ప్రతిజ్ఞావాక్య అవైరుధ్య భావమే K/K5-సాపేక్ష పూర్తి సిద్ధాంతాన్ని నిరూపిస్తుందని చెప్పడం (తిరస్కరణ)','ఏ నమూనాలోనైనా వ్యవస్థ-సాపేక్ష వైరుధ్యం అసంతృప్తిని ఇస్తుందని పరిమితి లేకుండా ఉంచడం (తిరస్కరణ)','(b) అంశాన్ని విస్తరించిన సమితుల నుంచి bottom వ్యుత్పాద్యతకు తక్షణ నిర్వచనంగా పొరబడడం (తిరస్కరణ)'];
+alternatives['TE-T132']=['అధ్యాయ శీర్షిక నుంచి కానానికల్ నమూనా వరకూ పూర్వ సంపూర్ణత/అవైరుధ్యం/ప్రతినమూనా రూపాలను కొనసాగించి, K/KT/KD నిర్దుష్టత, విపర్యయ ప్రతినమూనా, పూర్తి సమితుల ప్రాప్యత, సభ్యత్వ-సత్య లక్ష్యం నిలపడం (ఎంపిక)','ఈ పరిచయంలో భవిష్యత్ కానానికల్ నిర్మాణం పూర్తిగా నిరూపించబడిందని చూపడం (తిరస్కరణ)','సౌష్ఠవ/స్వావర్తన/సీరియల్ నమూనా వర్గాలను కలపడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలే మోడల్ సంపూర్ణతకు ప్రత్యక్ష సాక్ష్యం అని చూపడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -888,7 +897,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T131 record the Batch 025--Batch 090 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T132 record the Batch 025--Batch 091 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
