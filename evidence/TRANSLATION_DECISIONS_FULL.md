@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **466 of 722 source units drafted**. This readable view contains all 594 decisions and 1365 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **467 of 722 source units drafted**. This readable view contains all 595 decisions and 1369 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4750,6 +4750,35 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T156-OCC-005; OLP-0466; OLP-0466-B016; source upstream/content/normal-modal-logic/tableaux/more-soundness.tex:134-141 bytes 5246-5493 SHA-256 8c68f92959ba86967753495c186b9f49a3da00247457511f5527e72e5a9eb936; target translation/content/normal-modal-logic/tableaux/more-soundness.tex:142-148 bytes 8243-8651 SHA-256 ff0de40bd20f773548ac54e9febc72def50f3fff82836a533750de003246c998; reader page pending.
   - te-Telu-IN-TE-T156-OCC-006; OLP-0466; OLP-0466-B019; source upstream/content/normal-modal-logic/tableaux/more-soundness.tex:178-185 bytes 7252-7501 SHA-256 8c68f92959ba86967753495c186b9f49a3da00247457511f5527e72e5a9eb936; target translation/content/normal-modal-logic/tableaux/more-soundness.tex:191-197 bytes 11392-11821 SHA-256 ff0de40bd20f773548ac54e9febc72def50f3fff82836a533750de003246c998; reader page pending.
   - te-Telu-IN-TE-T156-OCC-007; OLP-0466; OLP-0466-B022; source upstream/content/normal-modal-logic/tableaux/more-soundness.tex:222-226 bytes 9204-9368 SHA-256 8c68f92959ba86967753495c186b9f49a3da00247457511f5527e72e5a9eb936; target translation/content/normal-modal-logic/tableaux/more-soundness.tex:254-258 bytes 15431-15703 SHA-256 ff0de40bd20f773548ac54e9febc72def50f3fff82836a533750de003246c998; reader page pending.
+
+## te-Telu-IN-TE-T157 — simple S5 tableaux / universal models / integer prefixes / used and new m / axiom 5 closed tableau
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: సరళ S5 టాబ్లోలు / సార్వత్రిక నమూనాలు / పూర్ణసంఖ్య పూర్వసూచికలు / ఉపయోగించిన, కొత్త m / 5 స్వీకృత సంవృత టాబ్లో
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “simple S5 tableaux / universal models / integer prefixes / used and new m / axiom 5 closed tableau” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు S5 టాబ్లో/సంపూర్ణతకు ప్రత్యక్ష సాంకేతిక పదం లేదా నిరూపణ ఇవ్వవు. మూలపు సార్వత్రిక నమూనా వర్గమే ఈ సరళీకరణ అర్థాన్ని నిర్ణయిస్తుంది; TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Rationale: TE-T141/146/151/152/155లోని సార్వత్రిక నమూనా, పూర్వసూచిక, టాబ్లో, 5 స్వీకృత రూపాలను కొనసాగించాం. స్థిర మూలంలోని ప్రతి లోకం నుంచి ప్రతి లోకం ప్రాప్యత, అనుక్రమాల బదులు ధన పూర్ణసంఖ్యలు, T Box/F Diamondకు పాత m, F Box/T Diamondకు కొత్త m, 2/3 సాక్షులతో సంవృత చెట్టు యథాతథం. టాబ్లో is the established edition borrowing; S5, Box/Diamond, n/m, conditional tags, tableau node labels and protected usetoken heading retain source identities.
+
+- Authorities checked: TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: సార్వత్రిక S5 నమూనాల్లో ప్రతి లోకం నుంచి ప్రతి లోకం ప్రాప్యమని, అనుక్రమాల బదులు ధన పూర్ణసంఖ్య పూర్వసూచికలు వాడవచ్చని, T Box/F Diamondకు పాత m, F Box/T Diamondకు కొత్త m, 2/3 సాక్షులతో 5 సంవృత చెట్టు అని నిలపడం [viable_alternative: ఎంపిక] | S5లోని ఏకైక లోకమే ప్రతి పూర్వసూచికకు ఉండాలని చెప్పడం [viable_alternative: తిరస్కరణ] | used/new m నియమాలను తారుమారు చేయడం [viable_alternative: తిరస్కరణ] | ప్రతి సార్వత్రిక నమూనా అచ్చంగా ఒక్క లోకం గలదని చెప్పడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ తర్క పేజీ S5 సంపూర్ణతకు ప్రత్యక్ష నిరూపణ అని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “సరళ S5 టాబ్లోలు / సార్వత్రిక నమూనాలు / పూర్ణసంఖ్య పూర్వసూచికలు / ఉపయోగించిన, కొత్త m / 5 స్వీకృత సంవృత టాబ్లో” is idiomatic and technically standard for “simple S5 tableaux / universal models / integer prefixes / used and new m / axiom 5 closed tableau” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T157-OCC-001; OLP-0467; OLP-0467-B005; source upstream/content/normal-modal-logic/tableaux/simple-S5.tex:11 bytes 175-229 SHA-256 424a248ae136b994af3f140ae1e3cc4d68dbbbedd4ba0ca88f24d6148615fa65; target translation/content/normal-modal-logic/tableaux/simple-S5.tex:11 bytes 175-241 SHA-256 41f21e6a50e99331d1882fc44c856b2fd2007eee4c698c9e2861a0c17eadaca7; reader page pending.
+  - te-Telu-IN-TE-T157-OCC-002; OLP-0467; OLP-0467-B006; source upstream/content/normal-modal-logic/tableaux/simple-S5.tex:13-26 bytes 230-1138 SHA-256 424a248ae136b994af3f140ae1e3cc4d68dbbbedd4ba0ca88f24d6148615fa65; target translation/content/normal-modal-logic/tableaux/simple-S5.tex:13-30 bytes 242-2573 SHA-256 41f21e6a50e99331d1882fc44c856b2fd2007eee4c698c9e2861a0c17eadaca7; reader page pending.
+  - te-Telu-IN-TE-T157-OCC-003; OLP-0467; OLP-0467-B007; source upstream/content/normal-modal-logic/tableaux/simple-S5.tex:28-63 bytes 1139-2124 SHA-256 424a248ae136b994af3f140ae1e3cc4d68dbbbedd4ba0ca88f24d6148615fa65; target translation/content/normal-modal-logic/tableaux/simple-S5.tex:32-67 bytes 2574-3683 SHA-256 41f21e6a50e99331d1882fc44c856b2fd2007eee4c698c9e2861a0c17eadaca7; reader page pending.
+  - te-Telu-IN-TE-T157-OCC-004; OLP-0467; OLP-0467-B008; source upstream/content/normal-modal-logic/tableaux/simple-S5.tex:65-86 bytes 2125-2925 SHA-256 424a248ae136b994af3f140ae1e3cc4d68dbbbedd4ba0ca88f24d6148615fa65; target translation/content/normal-modal-logic/tableaux/simple-S5.tex:69-91 bytes 3684-4563 SHA-256 41f21e6a50e99331d1882fc44c856b2fd2007eee4c698c9e2861a0c17eadaca7; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 

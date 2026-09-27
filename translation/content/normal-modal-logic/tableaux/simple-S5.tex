@@ -1,0 +1,93 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: simple-S5
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{s5}
+
+\olsection{\Log{S5} కోసం సరళ \usetoken{P}{tableau}}
+
+\Log{S5}, సార్వత్రిక నమూనాల వర్గానికి సంబంధించి
+నిర్దుష్టమైనదీ సంపూర్ణమైనదీ. సార్వత్రిక నమూనాలో ప్రతి
+లోకం నుంచి ప్రతి లోకం ప్రాప్యమే. అటువంటి నమూనాల్లో
+ప్రాప్యత సంబంధాన్ని ప్రత్యేకంగా గుర్తుంచుకోవాల్సిన పని
+లేదు: ``$\mSat{M}{!A}[w]$ అయ్యే లోకం~$w$ ఉంది'' అనేది,
+ఆ లక్షణం గల~$u$ నుంచి ప్రాప్యమైన లోకం~$w$ ఉంది అనేదానికి
+సమానార్థకం. కనుక \Log{S5}లో నమూనాను లోకాల సమితి,
+మూల్యనిర్దేశం~$V$ ద్వారానే నిర్వచించవచ్చు. దాంతో
+\tetoken{టాబ్లో}{!!{tableau}} నియమాలనూ సరళీకరించవచ్చని
+తెలుస్తుంది. సాధారణ సందర్భంలో పూర్వసూచికలుగా ధన
+పూర్ణసంఖ్యల అనుక్రమాలను తీసుకుంటాం; అప్పుడు ఏ
+పూర్వసూచిక ఏ పూర్వసూచిక పేరుగల లోకం నుంచి ప్రాప్యమైన
+లోకాన్ని సూచిస్తుందో గుర్తుంచుకోవచ్చు: $\sigma.n$ అనేది
+$\sigma$ పేరుగల లోకం నుంచి ప్రాప్యమైన లోకానికి పేరు.
+కానీ \Log{S5}లో ప్రతి లోకం నుంచి ప్రతి లోకం ప్రాప్యం;
+కాబట్టి ఆ వివరాన్ని గుర్తుంచుకోవాల్సిన అవసరం లేదు.
+దానికి బదులు ధన పూర్ణసంఖ్యలనే పూర్వసూచికలుగా వాడవచ్చు.
+సరళీకృత నియమాలు \olref{tab:rules-S5}లో ఉన్నాయి.
+
+\begin{table}
+  \begin{center}
+    \def\arraystretch{3}\def\fCenter{}
+    \begin{tabular}{|c|c|}
+    \hline
+    \iftag{prvBox}{
+      \AxiomC{\sFmla{\True}{\Box !A}[n]}
+      \RightLabel{\TRule{\True}{\Box}}
+      \UnaryInfC{\sFmla{\True}{!A}[m]}
+      \DisplayProof
+      &
+      \AxiomC{\sFmla{\False}{\Box !A}[n]}
+      \RightLabel{\TRule{\False}{\Box}}
+      \UnaryInfC{\sFmla{\False}{!A}[m]}
+      \DisplayProof\\
+      $m$ ఉపయోగించినది & $m$ కొత్తది
+      \\[1ex]
+      \hline}{}
+    \iftag{prvDiamond}{
+      \AxiomC{\sFmla{\True}{\Diamond !A}[n]}
+      \RightLabel{\TRule{\True}{\Diamond}}
+      \UnaryInfC{\sFmla{\True}{!A}[m]}
+      \DisplayProof
+      &
+      \AxiomC{\sFmla{\False}{\Diamond !A}[n]}
+      \RightLabel{\TRule{\False}{\Diamond}}
+      \UnaryInfC{\sFmla{\False}{!A}[m]}
+      \DisplayProof\\
+      $m$ కొత్తది & $m$ ఉపయోగించినది
+      \\[1ex]
+      \hline}{}
+    \end{tabular}
+  \end{center}
+  \caption{\Log{S5} కోసం సరళీకృత నియమాలు.}
+  \ollabel{tab:rules-S5}
+\end{table}
+
+\begin{ex}
+  $\Log{S5} \Proves \Ax{5}$, అంటే
+  $\Diamond!A \lif \Box\Diamond!A$ అని చూపే సరళీకృత
+  సంవృత టాబ్లోను ఇస్తున్నాం.
+  \begin{oltableau}
+    [\pFmla{\False}{\Diamond\formula{A} \lif \Box\Diamond \formula{A}}{1},
+      just = \TAss
+      [\pFmla{\True}{\Diamond \formula{A}}{1}, just = {\TRule{\False}{\lif}[1]}
+        [\pFmla{\False}{\Box\Diamond \formula{A}}{1},
+          just = {\TRule{\False}{\lif}[1]}
+          [\pFmla{\False}{\Diamond \formula{A}}{2},
+            just = {\TRule{\False}{\Box}[3]}
+            [\pFmla{\True}{\formula{A}}{3},
+              just = {\TRule{\True}{\Diamond}[2]}
+                [\pFmla{\False}{\formula{A}}{3},
+                  just = {\TRule{\False}{\Diamond}[4]}, close]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+\end{ex}
+
+\end{document}

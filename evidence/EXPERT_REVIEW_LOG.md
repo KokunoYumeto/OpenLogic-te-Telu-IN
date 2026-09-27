@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 466 of 722 draft units**. This log contains 156 terminology/sense decisions and 438 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 467 of 722 draft units**. This log contains 157 terminology/sense decisions and 438 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3751,6 +3751,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక సాక్షులు modal rule soundnessకు ప్రత్యక్ష సాంకేతిక సాక్ష్యం కాదు. కొన్ని శాఖలు probBox/probDiamond ట్యాగ్‌ల వల్ల వ్యాయామాలుగా ఉంటాయి. పూర్తి TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
 
 - Please double-check: Please double-check whether “T/D/B/4/4r టాబ్లో నియమాల నిర్దుష్టత / స్వావర్తన, సీరియల్, సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ ప్రాప్యత” is idiomatic and technically standard for “soundness of T/D/B/4/4r tableau rules / reflexive, serial, symmetric, transitive, Euclidean accessibility” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T157 — simple S5 tableaux / universal models / integer prefixes / used and new m / axiom 5 closed tableau
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: సరళ S5 టాబ్లోలు / సార్వత్రిక నమూనాలు / పూర్ణసంఖ్య పూర్వసూచికలు / ఉపయోగించిన, కొత్త m / 5 స్వీకృత సంవృత టాబ్లో
+
+- Exact implementation: OLP-0467; normal-modal-logic/tableaux/simple-S5; content/normal-modal-logic/tableaux/simple-S5.tex:11 ↔ translation/content/normal-modal-logic/tableaux/simple-S5.tex:11 (OLP-0467-B005); printed/PDF page pending; OLP-0467; normal-modal-logic/tableaux/simple-S5; content/normal-modal-logic/tableaux/simple-S5.tex:13-26 ↔ translation/content/normal-modal-logic/tableaux/simple-S5.tex:13-30 (OLP-0467-B006); printed/PDF page pending; OLP-0467; normal-modal-logic/tableaux/simple-S5; content/normal-modal-logic/tableaux/simple-S5.tex:28-63 ↔ translation/content/normal-modal-logic/tableaux/simple-S5.tex:32-67 (OLP-0467-B007); printed/PDF page pending; OLP-0467; normal-modal-logic/tableaux/simple-S5; content/normal-modal-logic/tableaux/simple-S5.tex:65-86 ↔ translation/content/normal-modal-logic/tableaux/simple-S5.tex:69-91 (OLP-0467-B008); printed/PDF page pending
+
+- Authorities actually checked: TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-T141/146/151/152/155లోని సార్వత్రిక నమూనా, పూర్వసూచిక, టాబ్లో, 5 స్వీకృత రూపాలను కొనసాగించాం. స్థిర మూలంలోని ప్రతి లోకం నుంచి ప్రతి లోకం ప్రాప్యత, అనుక్రమాల బదులు ధన పూర్ణసంఖ్యలు, T Box/F Diamondకు పాత m, F Box/T Diamondకు కొత్త m, 2/3 సాక్షులతో సంవృత చెట్టు యథాతథం. టాబ్లో is the established edition borrowing; S5, Box/Diamond, n/m, conditional tags, tableau node labels and protected usetoken heading retain source identities.
+
+- Alternatives: సార్వత్రిక S5 నమూనాల్లో ప్రతి లోకం నుంచి ప్రతి లోకం ప్రాప్యమని, అనుక్రమాల బదులు ధన పూర్ణసంఖ్య పూర్వసూచికలు వాడవచ్చని, T Box/F Diamondకు పాత m, F Box/T Diamondకు కొత్త m, 2/3 సాక్షులతో 5 సంవృత చెట్టు అని నిలపడం (ఎంపిక); S5లోని ఏకైక లోకమే ప్రతి పూర్వసూచికకు ఉండాలని చెప్పడం (తిరస్కరణ); used/new m నియమాలను తారుమారు చేయడం (తిరస్కరణ); ప్రతి సార్వత్రిక నమూనా అచ్చంగా ఒక్క లోకం గలదని చెప్పడం (తిరస్కరణ); స్థానిక సాధారణ తర్క పేజీ S5 సంపూర్ణతకు ప్రత్యక్ష నిరూపణ అని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు S5 టాబ్లో/సంపూర్ణతకు ప్రత్యక్ష సాంకేతిక పదం లేదా నిరూపణ ఇవ్వవు. మూలపు సార్వత్రిక నమూనా వర్గమే ఈ సరళీకరణ అర్థాన్ని నిర్ణయిస్తుంది; TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Please double-check: Please double-check whether “సరళ S5 టాబ్లోలు / సార్వత్రిక నమూనాలు / పూర్ణసంఖ్య పూర్వసూచికలు / ఉపయోగించిన, కొత్త m / 5 స్వీకృత సంవృత టాబ్లో” is idiomatic and technically standard for “simple S5 tableaux / universal models / integer prefixes / used and new m / axiom 5 closed tableau” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 

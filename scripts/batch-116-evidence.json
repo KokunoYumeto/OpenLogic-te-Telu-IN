@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "116",
+  "unit_id": "OLP-0467",
+  "unit_order": 467,
+  "source_path": "content/normal-modal-logic/tableaux/simple-S5.tex",
+  "blocks": 9,
+  "linguistic_blocks": [5, 6, 7, 8],
+  "previous_segments": 7091,
+  "previous_terms": 156,
+  "expected_corrections": 438,
+  "canon_default": ["TE-P005", "TE-P008", "TE-P010", "TE-P011", "TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర సరళ S5 టాబ్లో మూలం, తెలుగు లక్ష్యం, పూర్వ సార్వత్రిక నమూనా/టాబ్లో నిర్ణయాలు, స్థానిక ధన పూర్ణసంఖ్య/సమితి/సంబంధ/ప్రమేయకం/తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; m ఉపయోగించిన/కొత్త షరతులు, 2/3 పూర్వసూచికల ఉదాహరణను తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P005/008/010/011 సాధారణ సంఖ్య, సమితి, సంబంధం, ప్రమేయకానికి; TE-P018/024 సాధారణ తర్కం, వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. సార్వత్రిక S5 నమూనాలు, వాటి సంపూర్ణత, సరళీకృత టాబ్లో నియమాలు లేదా 5 స్వీకృత నిరూపణకు ఈ పేజీల్లో ప్రత్యక్ష సాక్ష్యం లేదు.",
+  "term_decision": {
+    "term_id": "TE-T157",
+    "source_term": "simple S5 tableaux / universal models / integer prefixes / used and new m / axiom 5 closed tableau",
+    "telugu": "సరళ S5 టాబ్లోలు / సార్వత్రిక నమూనాలు / పూర్ణసంఖ్య పూర్వసూచికలు / ఉపయోగించిన, కొత్త m / 5 స్వీకృత సంవృత టాబ్లో",
+    "status": "native_number_set_relation_function_logic_derivation_register_attested_s5_tableau_source_controlled",
+    "passages": ["TE-P005", "TE-P008", "TE-P010", "TE-P011", "TE-P018", "TE-P024"],
+    "basis": "TE-T141/146/151/152/155లోని సార్వత్రిక నమూనా, పూర్వసూచిక, టాబ్లో, 5 స్వీకృత రూపాలను కొనసాగించాం. స్థిర మూలంలోని ప్రతి లోకం నుంచి ప్రతి లోకం ప్రాప్యత, అనుక్రమాల బదులు ధన పూర్ణసంఖ్యలు, T Box/F Diamondకు పాత m, F Box/T Diamondకు కొత్త m, 2/3 సాక్షులతో సంవృత చెట్టు యథాతథం.",
+    "uncertainty": "స్థానిక సాక్షులు S5 టాబ్లో/సంపూర్ణతకు ప్రత్యక్ష సాంకేతిక పదం లేదా నిరూపణ ఇవ్వవు. మూలపు సార్వత్రిక నమూనా వర్గమే ఈ సరళీకరణ అర్థాన్ని నిర్ణయిస్తుంది; TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "టాబ్లో is the established edition borrowing; S5, Box/Diamond, n/m, conditional tags, tableau node labels and protected usetoken heading retain source identities."
+  }
+}
