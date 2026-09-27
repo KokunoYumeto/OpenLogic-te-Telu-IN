@@ -1,0 +1,156 @@
+% Part: normal-modal-logic
+% Chapter: filtrations
+% Section: more-filtrations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{fil}{acc}
+
+\olsection{వడపోతలు మరియు ప్రాప్యత ధర్మాలు}
+
+ముందు చెప్పినట్లు, సార్వత్రిక, సీరియల్,
+స్వావర్తన నమూనాల వడపోతలు కూడా వరుసగా సార్వత్రిక,
+సీరియల్, స్వావర్తన నమూనాలే. కానీ సౌష్ఠవ లేదా
+సంక్రామక నమూనాకు చేసే ప్రతి వడపోత వరుసగా సౌష్ఠవ
+లేదా సంక్రామక నమూనా కావాల్సిన అవసరం లేదు.
+అయితే కొన్ని సందర్భాల్లో ఆ ధర్మాలు నిలిచేలా
+వడపోతలను నిర్వచించవచ్చు. అందుకోసం అత్యంత స్థూల
+వడపోత నిర్వచనం మాదిరిగానే చేసి,~$R^*$ నిర్వచనానికి
+అదనపు షరతులను చేర్చుతాం. $\Gamma$ \tetoken{ఉపసూత్రాల}{!!{formula}s}
+పరంగా సంవృతమై ఉండనివ్వండి. నమూనా
+$\mModel{M} =\tuple{W, R, V}$లోని లోకాలు $u$, $v$
+మధ్య \olref{tab:Cn-filtrations}లో ఉన్న
+సంబంధాలు~$C_i(u,v)$ను పరిశీలిద్దాం.
+ఈ షరతుల సంయోజనాల ఆధారంగా $R^*[u][v]$ను
+నిర్వచించవచ్చు. ఉదాహరణకు, $C_1(u,v)$
+నెరవేరితే, అప్పుడు మాత్రమే $R^*[u][v]$ అని
+నిర్దేశిస్తే, ఖచ్చితంగా అత్యంత స్థూల వడపోతే
+వస్తుంది. $C_1(u,v)$, $C_2(u, v)$ రెండూ
+నెరవేరితే, అప్పుడు మాత్రమే $R^*[u][v]$ అని
+నిర్దేశిస్తే, వేరొక వడపోత వస్తుంది. కేవలం
+$C_1(u,v)$ను నెరవేర్చే జతలకంటే రెండింటినీ
+$C_1(u,v)$, $C_2(u,v)$ నెరవేర్చే లోకాల జతలు
+తక్కువ కనుక ఇది అత్యంత స్థూల వడపోతకంటే
+``సూక్ష్మమైనది''.
+
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{|ll|}
+    \hline
+    \multirow{2}{*}{$C_1(u,v)$:}
+    \iftag{prvBox}{&
+      $\Box!A \in \Gamma$, $\mSat{M}{\Box!A}[u]$ అయితే
+      $\mSat{M}{!A}[v]$;\iftag{prvDiamond}{ మరియు}{}\\}{}
+    \iftag{prvDiamond}{&
+      $\Diamond!A \in \Gamma$, $\mSat{M}{!A}[v]$ అయితే
+      $\mSat{M}{\Diamond!A}[u]$; \\}{}
+    \hline
+    \multirow{2}{*}{$C_2(u,v)$:}
+    \iftag{prvBox}{&
+      $\Box!A \in \Gamma$, $\mSat{M}{\Box!A}[v]$ అయితే
+      $\mSat{M}{!A}[u]$;\iftag{prvDiamond}{ మరియు}{}\\}{}
+    \iftag{prvDiamond}{&
+      $\Diamond!A \in \Gamma$, $\mSat{M}{!A}[u]$ అయితే
+      $\mSat{M}{\Diamond!A}[v]$; \\}{}
+    \hline
+    \multirow{2}{*}{$C_3(u,v)$:}
+    \iftag{prvBox}{&
+      $\Box!A \in \Gamma$, $\mSat{M}{\Box!A}[u]$ అయితే
+      $\mSat{M}{\Box!A}[v]$;\iftag{prvDiamond}{ మరియు}{}\\}{}
+    \iftag{prvDiamond}{&
+      $\Diamond!A \in \Gamma$, $\mSat{M}{\Diamond!A}[v]$ అయితే
+      $\mSat{M}{\Diamond!A}[u]$; \\}{}
+    \hline
+    \multirow{2}{*}{$C_4(u,v)$:}
+    \iftag{prvBox}{&
+      $\Box!A \in \Gamma$, $\mSat{M}{\Box!A}[v]$ అయితే
+      $\mSat{M}{\Box!A}[u]$;\iftag{prvDiamond}{ మరియు}{}\\}{}
+    \iftag{prvDiamond}{&
+      $\Diamond!A \in \Gamma$, $\mSat{M}{\Diamond!A}[u]$ అయితే
+      $\mSat{M}{\Diamond!A}[v]$; \\}{}
+    \hline
+    \end{tabular}
+  \caption{వడపోతలను నిర్వచించడానికి లోకాలపై షరతులు.}
+  \ollabel{tab:Cn-filtrations}
+\end{table}
+
+\begin{thm}\ollabel{thm:more-filtrations}
+  $\mModel{M} =\tuple{W,R,V}$ ఒక నమూనా,
+  $\Gamma$ \tetoken{ఉపసూత్రాల}{!!{formula}s} పరంగా
+  సంవృతమై ఉండనివ్వండి. $W^*$, $V^*$లు
+  \olref[fil]{defn:filtration}లోలాగే
+  నిర్వచించబడ్డాయని అనుకుందాం. అప్పుడు:
+  \begin{enumerate}
+  \item $C_1(u, v) \land C_2(u,v)$ అయితే, అప్పుడు
+    మాత్రమే $R^*[u][v]$ అనుకుందాం. అప్పుడు $R^*$
+    సౌష్ఠవం; $\mModel{M}$ సౌష్ఠవమైతే
+    $\mModel{M^*} = \tuple{W^*,R^*,V^*}$ ఒక వడపోత.
+  \item $C_1(u, v) \land C_3(u,v)$ అయితే, అప్పుడు
+    మాత్రమే $R^*[u][v]$ అనుకుందాం. అప్పుడు $R^*$
+    సంక్రామకం; $\mModel{M}$ సంక్రామకమైతే
+    $\mModel{M^*}=\tuple{W^*,R^*,V^*}$ ఒక వడపోత.
+  \item $C_1(u, v) \land C_2(u,v)
+    \land C_3(u,v) \land C_4(u,v)$ అయితే,
+    అప్పుడు మాత్రమే $R^*[u][v]$ అనుకుందాం.
+    అప్పుడు $R^*$ సౌష్ఠవమూ సంక్రామకమూ;
+    $\mModel{M}$ సౌష్ఠవమూ సంక్రామకమూ అయితే
+    $\mModel{M^*}=\tuple{W^*,R^*,V^*}$ ఒక వడపోత.
+  \item $C_1(u,
+    v) \land C_3(u,v) \land C_4(u,v)$ అయితే,
+    అప్పుడు మాత్రమే $R^*[u][v]$ అనేలా $R^*$ను
+    నిర్వచించామనుకుందాం. అప్పుడు $R^*$ సంక్రామకమూ
+    యూక్లిడియన్‌దీ; $\mModel{M}$ సంక్రామకమూ
+    యూక్లిడియన్‌దీ అయితే
+    $\mModel{M^*}=\tuple{W^*,R^*,V^*}$ ఒక వడపోత.
+  \end{enumerate}
+\end{thm}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $C_1(u,v)
+      \Leftrightarrow C_2(v,u)$,
+      $C_2(u,v) \Leftrightarrow C_1(v,u)$ కనుక
+      $R^*$ సౌష్ఠవమని తక్షణమే తెలుస్తుంది.
+      కాబట్టి $\mModel{M}$ సౌష్ఠవమైతే
+      $\mModel{M^*}$,~$\Gamma$ ద్వారా వడపోత
+      అని చూపడమే మిగిలింది. $C_1(u,v)$ వల్ల
+      \iftag{prvBox}{%
+        \iftag{prvDiamond}{%
+          \olref[fil]{defn:filtration-R2} మరియు
+          \olref[fil]{defn:filtration-R3} అనే
+          \olref[fil]{defn:filtration} షరతులు}{%
+          \olref[fil]{defn:filtration}\olref[fil]{defn:filtration-R2} షరతు}}{%
+        \olref[fil]{defn:filtration}\olref[fil]{defn:filtration-R3} షరతు}
+      నెరవేరినట్లే. కనుక ఇక
+      \olref[fil]{defn:filtration}\olref[fil]{defn:filtration-R1},
+      అంటే $Ruv$ నుంచి $R^*[u][v]$ వస్తుందని
+      నిర్ధారించాలి.
+
+      $Ruv$ అనుకుందాం. $R^*[u][v]$ కోసం
+      $C_1(u,v)$, $C_2(u,v)$లను స్థాపించాలి.
+      $C_1$ కోసం: \iftag{prvBox}{$\Box!A
+        \in\Gamma$, $\mSat{M}{\Box!A}[u]$ అయితే
+        $Ruv$ కనుక $\mSat{M}{!A}[v]$ కూడా.
+        \iftag{prvDiamond}{అలాగే, }{}}{}\iftag{prvDiamond}{$\Diamond!A \in \Gamma$,
+        $\mSat{M}{!A}[v]$ అయితే $Ruv$ కనుక
+        $\mSat{M}{\Diamond!A}[u]$.}{}
+      $C_2$ కోసం: \iftag{prvBox}{$\Box!A \in \Gamma$,
+        $\mSat{M}{\Box!A}[v]$ అయితే, సౌష్ఠవం వల్ల
+        $Ruv$ నుంచి $Rvu$; అందువల్ల
+        $\mSat{M}{!A}[u]$.\iftag{prvDiamond}{అలాగే, }{}}{}\iftag{prvDiamond}{$\Diamond!A \in\Gamma$,
+        $\mSat{M}{!A}[u]$ అయితే, సౌష్ఠవం వల్ల
+        $Rvu$ కనుక $\mSat{M}{\Diamond!A}[v]$.}{}
+    \item వ్యాయామం.
+    \item వ్యాయామం.
+    \item వ్యాయామం.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[nml][fil][acc]{thm:more-filtrations} నిరూపణను
+  పూర్తి చేయండి.
+\end{prob}
+
+\end{document}

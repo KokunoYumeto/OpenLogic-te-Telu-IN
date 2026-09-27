@@ -902,6 +902,15 @@ locations['TE-T147']=[
  L('content/normal-modal-logic/filtrations/S5-decidable.tex',21,32,23,48,'in parallel','సమాంతరంగా'),
  L('content/normal-modal-logic/filtrations/S5-decidable.tex',34,36,50,53,'universal','సార్వత్రిక')
 ];
+locations['TE-T148']=[
+ L('content/normal-modal-logic/filtrations/more-filtrations.tex',11,11,11,11,'Properties of Accessibility','ప్రాప్యత ధర్మాలు'),
+ L('content/normal-modal-logic/filtrations/more-filtrations.tex',13,28,13,36,'finer','సూక్ష్మమైనది'),
+ L('content/normal-modal-logic/filtrations/more-filtrations.tex',30,70,38,77,'Conditions on possible worlds','లోకాలపై షరతులు'),
+ L('content/normal-modal-logic/filtrations/more-filtrations.tex',72,93,79,108,'symmetric and transitive','సౌష్ఠవమూ సంక్రామకమూ'),
+ L('content/normal-modal-logic/filtrations/more-filtrations.tex',95,111,110,129,'symmetric','సౌష్ఠవమని'),
+ L('content/normal-modal-logic/filtrations/more-filtrations.tex',113,129,131,149,'Exercise.','వ్యాయామం.'),
+ L('content/normal-modal-logic/filtrations/more-filtrations.tex',131,133,151,154,'Complete the proof','నిరూపణను')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -1035,6 +1044,7 @@ alternatives['TE-T144']=['అత్యంత సూక్ష్మ/స్థూ�
 alternatives['TE-T145']=['పరిమిత Gammaలోనే ప్రతి వడపోత లోక వర్గాన్ని దాని సత్య సూత్రాల ఉపసమితికి పంపే ఒకటి-ఒకటి ప్రమేయం, |W*|≤|P(Gamma)|=2^n హద్దును నిలపడం (ఎంపిక)','వడపోత నిర్వచనమే Gammaతో సంబంధం లేకుండా పరిమితత్వం ఇస్తుందని చెప్పడం (తిరస్కరణ)','ప్రతి సాధ్య ఉపసమితి తప్పనిసరిగా ఒక వర్గం అని భావించి సమానత్వం చెప్పడం (తిరస్కరణ)','సాధారణ స్థానిక సమితి పేజీనే modal ఫిల్ట్రేషన్ నిరూపణగా చూపడం (తిరస్కరణ)'];
 alternatives['TE-T146']=['Kకు నమూనా వర్గ ఆంక్ష లేకపోవడం, సార్వత్రిక నమూనా వడపోతలో R1 వల్ల సార్వత్రికత, S5కు తుల్యతా వర్గ పరిమితి, రెండు వ్యాయామ భేదాలను నిలిపి, K నిరూపణలో ఒక వర్గ సూచన సవరించడం (ఎంపిక)','పాత wనే వడపోత లోకంగా వాడడం (తిరస్కరణ)','ఏ L నమూనాకు చేసిన ప్రతి వడపోత L నమూనానే అని సామాన్యీకరించడం (తిరస్కరణ)','ఫ్రేమ్ చెల్లుబాటు సమానత్వమే స్థానిక సత్య మార్పును వేరే వాదన లేకుండా తక్షణం ఇస్తుందని చెప్పడం (తిరస్కరణ)','సౌష్ఠవం/సంక్రామకత్వం/యూక్లిడియన్ కూడా ప్రతి వడపోతలో నిలుస్తాయని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T147']=['నిరూపణల లెక్కింపు, పరిమిత సార్వత్రిక నమూనాల ప్రతినమూనా శోధనను సమాంతరంగా నడిపి, S5 నిర్ణాయకత్వం మరియు పరిమిత నమూనా ధర్మం వల్ల ముగింపును చూపడం; మూలంలోని నమూనా వర్గ లోపాన్ని పక్కనే ప్రకటించి సరిచేయడం (ఎంపిక)','S5కు చెందని అన్ని పరిమిత నమూనాలను ప్రతినమూనాలుగా అనుమతించడం (తిరస్కరణ)','పరిమిత ప్రతినమూనా శోధన ఒక్కటే ఎప్పుడూ నిర్ణయ ప్రక్రియ అని చెప్పడం (తిరస్కరణ)','నిరూపణ శాఖ, నమూనా శాఖలను క్రమంగా మాత్రమే నడిపి నిలుపు సమస్యను తిరిగి తెచ్చుకోవడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలు S5 నిర్ణేయతకు ప్రత్యక్ష నిరూపణ అని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T148']=['C1..C4 పట్టికలో అన్ని Box/Diamond guarded దిశలను నిలిపి, జతల చేరిక తగ్గితే సూక్ష్మత పెరుగుతుందని, నాలుగు వడపోత నిర్వచనాలు వాటి ధర్మాలకు సరిపోతాయని, మూడు శాఖలు మూలంలాగే వ్యాయామాలేనని చెప్పడం (ఎంపిక)','సూక్ష్మతను W*లో లోకాల సంఖ్యతో కలపడం (తిరస్కరణ)','C3/C4లో Box/Diamond బదిలీ దిశలను తారుమారు చేయడం (తిరస్కరణ)','వ్యాయామ శాఖలను పూర్తిగా నిరూపించామని ప్రకటించడం (తిరస్కరణ)','స్థానిక సాధారణ సంబంధ పేజీనే modal C-షరతులకు ప్రత్యక్ష సాక్ష్యంగా చూపడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -1050,7 +1060,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T147 record the Batch 025--Batch 106 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T148 record the Batch 025--Batch 107 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);

@@ -1,0 +1,35 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "107",
+  "unit_id": "OLP-0458",
+  "unit_order": 458,
+  "source_path": "content/normal-modal-logic/filtrations/more-filtrations.tex",
+  "blocks": 12,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11],
+  "previous_segments": 6959,
+  "previous_terms": 147,
+  "expected_corrections": 423,
+  "canon_default": ["TE-P008", "TE-P010", "TE-P018", "TE-P022", "TE-P024"],
+  "canon_by_block": {
+    "5": ["TE-P010", "TE-P018", "TE-P024"],
+    "6": ["TE-P008", "TE-P010", "TE-P018", "TE-P024"],
+    "7": ["TE-P010", "TE-P018", "TE-P024"],
+    "8": ["TE-P010", "TE-P018", "TE-P024"],
+    "9": ["TE-P010", "TE-P018", "TE-P022", "TE-P024"],
+    "10": ["TE-P010", "TE-P018", "TE-P022", "TE-P024"],
+    "11": ["TE-P024"]
+  },
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర మూల C1..C4 పట్టిక, తెలుగు లక్ష్యం, ముందరి వడపోత R1/R2/R3 నిర్వచనం, స్థానిక సాధారణ సంబంధ/తుల్యత/తర్క పేజీలను ఎదురెదురు చూశాం; modal ధర్మాల దిశలు మూల సూత్రాల ఆధీనంలో ఉన్నాయి.",
+  "evidence_limit": "TE-P008/010 సాధారణ సమితి/సంబంధానికి, TE-P022 సాధారణ తుల్యతకు, TE-P018/024 సాధారణ తర్క/నిరూపణకు మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. C1..C4 ఆధారిత modal వడపోతలు, సౌష్ఠవ/సంక్రామక/యూక్లిడియన్ ఫలితాలకు స్థానిక పేజీల్లో ప్రత్యక్ష నిరూపణ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T148",
+    "source_term": "finer filtration conditions C1-C4 preserving symmetric, transitive and Euclidean accessibility",
+    "telugu": "సూక్ష్మతర వడపోత షరతులు C1-C4: సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ ప్రాప్యత",
+    "status": "native_general_relation_register_attested_modal_condition_table_source_controlled",
+    "passages": ["TE-P008", "TE-P010", "TE-P018", "TE-P022", "TE-P024"],
+    "basis": "పూర్వ TE-T114, TE-T144లోని ప్రాప్యత ధర్మాలు, అత్యంత స్థూలం కంటే సూక్ష్మమైన జతల చేరిక క్రమాన్ని కొనసాగించాం. C1=R2/R3, C2 ప్రతిదిశ, C3/C4 modal సత్య బదిలీ షరతులను మూల పట్టిక అచ్చంగా నియంత్రిస్తుంది. స్థానిక పేజీలు సాధారణ సంబంధ/తర్క పదజాలానికే మద్దతు; మూడు నిరూపణ శాఖలను మూలంలాగే వ్యాయామాలుగా ఉంచాం.",
+    "uncertainty": "స్థానిక సాక్షులు ఈ modal పట్టికకు ప్రత్యక్షం కాదు. సూక్ష్మత అనేది R*లో జతలు తక్కువగా ఉండటాన్ని సూచిస్తుంది; quotient W* పరిమాణాన్ని కాదు. 2–4 అంశాల పూర్తి నిరూపణ ఈ విభాగంలో మూలంలాగే వ్యాయామం.",
+    "borrowing": "C1-C4, R, R*, W*, V*, Gamma, modal symbols, tags and protected TeX references retain source identities."
+  }
+}

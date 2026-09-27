@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **457 of 722 source units drafted**. This readable view contains all 570 decisions and 1296 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **458 of 722 source units drafted**. This readable view contains all 571 decisions and 1303 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4471,6 +4471,38 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T147-OCC-002; OLP-0457; OLP-0457-B006; source upstream/content/normal-modal-logic/filtrations/S5-decidable.tex:17-19 bytes 456-503 SHA-256 f6f07c518a0df3bdcff427979834a918256085715f1353b5b35cc6dafe75d1b1; target translation/content/normal-modal-logic/filtrations/S5-decidable.tex:19-21 bytes 853-933 SHA-256 bcf63971f6a59dc72917a8641602bfb7fced0d287152a4c216f800225d509974; reader page pending.
   - te-Telu-IN-TE-T147-OCC-003; OLP-0457; OLP-0457-B007; source upstream/content/normal-modal-logic/filtrations/S5-decidable.tex:21-32 bytes 504-1207 SHA-256 f6f07c518a0df3bdcff427979834a918256085715f1353b5b35cc6dafe75d1b1; target translation/content/normal-modal-logic/filtrations/S5-decidable.tex:23-48 bytes 934-3307 SHA-256 bcf63971f6a59dc72917a8641602bfb7fced0d287152a4c216f800225d509974; reader page pending.
   - te-Telu-IN-TE-T147-OCC-004; OLP-0457; OLP-0457-B008; source upstream/content/normal-modal-logic/filtrations/S5-decidable.tex:34-36 bytes 1208-1404 SHA-256 f6f07c518a0df3bdcff427979834a918256085715f1353b5b35cc6dafe75d1b1; target translation/content/normal-modal-logic/filtrations/S5-decidable.tex:50-53 bytes 3308-3809 SHA-256 bcf63971f6a59dc72917a8641602bfb7fced0d287152a4c216f800225d509974; reader page pending.
+
+## te-Telu-IN-TE-T148 — finer filtration conditions C1-C4 preserving symmetric, transitive and Euclidean accessibility
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: సూక్ష్మతర వడపోత షరతులు C1-C4: సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ ప్రాప్యత
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “finer filtration conditions C1-C4 preserving symmetric, transitive and Euclidean accessibility” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు ఈ modal పట్టికకు ప్రత్యక్షం కాదు. సూక్ష్మత అనేది R*లో జతలు తక్కువగా ఉండటాన్ని సూచిస్తుంది; quotient W* పరిమాణాన్ని కాదు. 2–4 అంశాల పూర్తి నిరూపణ ఈ విభాగంలో మూలంలాగే వ్యాయామం.
+
+- Rationale: పూర్వ TE-T114, TE-T144లోని ప్రాప్యత ధర్మాలు, అత్యంత స్థూలం కంటే సూక్ష్మమైన జతల చేరిక క్రమాన్ని కొనసాగించాం. C1=R2/R3, C2 ప్రతిదిశ, C3/C4 modal సత్య బదిలీ షరతులను మూల పట్టిక అచ్చంగా నియంత్రిస్తుంది. స్థానిక పేజీలు సాధారణ సంబంధ/తర్క పదజాలానికే మద్దతు; మూడు నిరూపణ శాఖలను మూలంలాగే వ్యాయామాలుగా ఉంచాం. C1-C4, R, R*, W*, V*, Gamma, modal symbols, tags and protected TeX references retain source identities.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P022 [checked_context_only], PDF page 84; printed page 77; Implication and equivalence headings; Direct implication and equivalence terminology in propositional logic. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: C1..C4 పట్టికలో అన్ని Box/Diamond guarded దిశలను నిలిపి, జతల చేరిక తగ్గితే సూక్ష్మత పెరుగుతుందని, నాలుగు వడపోత నిర్వచనాలు వాటి ధర్మాలకు సరిపోతాయని, మూడు శాఖలు మూలంలాగే వ్యాయామాలేనని చెప్పడం [viable_alternative: ఎంపిక] | సూక్ష్మతను W*లో లోకాల సంఖ్యతో కలపడం [viable_alternative: తిరస్కరణ] | C3/C4లో Box/Diamond బదిలీ దిశలను తారుమారు చేయడం [viable_alternative: తిరస్కరణ] | వ్యాయామ శాఖలను పూర్తిగా నిరూపించామని ప్రకటించడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ సంబంధ పేజీనే modal C-షరతులకు ప్రత్యక్ష సాక్ష్యంగా చూపడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “సూక్ష్మతర వడపోత షరతులు C1-C4: సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ ప్రాప్యత” is idiomatic and technically standard for “finer filtration conditions C1-C4 preserving symmetric, transitive and Euclidean accessibility” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T148-OCC-001; OLP-0458; OLP-0458-B005; source upstream/content/normal-modal-logic/filtrations/more-filtrations.tex:11 bytes 186-242 SHA-256 6b103381a08ffabe6a5add8967f9ea83fa5dfb97ec349cd817f372fd752cdc0b; target translation/content/normal-modal-logic/filtrations/more-filtrations.tex:11 bytes 186-283 SHA-256 fcab7d92c7ba2c2ce96efab02e8499543144468f7453d4f5622124663bd430d9; reader page pending.
+  - te-Telu-IN-TE-T148-OCC-002; OLP-0458; OLP-0458-B006; source upstream/content/normal-modal-logic/filtrations/more-filtrations.tex:13-28 bytes 243-1278 SHA-256 6b103381a08ffabe6a5add8967f9ea83fa5dfb97ec349cd817f372fd752cdc0b; target translation/content/normal-modal-logic/filtrations/more-filtrations.tex:13-36 bytes 284-2667 SHA-256 fcab7d92c7ba2c2ce96efab02e8499543144468f7453d4f5622124663bd430d9; reader page pending.
+  - te-Telu-IN-TE-T148-OCC-003; OLP-0458; OLP-0458-B007; source upstream/content/normal-modal-logic/filtrations/more-filtrations.tex:30-70 bytes 1279-2724 SHA-256 6b103381a08ffabe6a5add8967f9ea83fa5dfb97ec349cd817f372fd752cdc0b; target translation/content/normal-modal-logic/filtrations/more-filtrations.tex:38-77 bytes 2668-4252 SHA-256 fcab7d92c7ba2c2ce96efab02e8499543144468f7453d4f5622124663bd430d9; reader page pending.
+  - te-Telu-IN-TE-T148-OCC-004; OLP-0458; OLP-0458-B008; source upstream/content/normal-modal-logic/filtrations/more-filtrations.tex:72-93 bytes 2725-3875 SHA-256 6b103381a08ffabe6a5add8967f9ea83fa5dfb97ec349cd817f372fd752cdc0b; target translation/content/normal-modal-logic/filtrations/more-filtrations.tex:79-108 bytes 4253-6244 SHA-256 fcab7d92c7ba2c2ce96efab02e8499543144468f7453d4f5622124663bd430d9; reader page pending.
+  - te-Telu-IN-TE-T148-OCC-005; OLP-0458; OLP-0458-B009; source upstream/content/normal-modal-logic/filtrations/more-filtrations.tex:95-111 bytes 3876-4705 SHA-256 6b103381a08ffabe6a5add8967f9ea83fa5dfb97ec349cd817f372fd752cdc0b; target translation/content/normal-modal-logic/filtrations/more-filtrations.tex:110-129 bytes 6245-7361 SHA-256 fcab7d92c7ba2c2ce96efab02e8499543144468f7453d4f5622124663bd430d9; reader page pending.
+  - te-Telu-IN-TE-T148-OCC-006; OLP-0458; OLP-0458-B010; source upstream/content/normal-modal-logic/filtrations/more-filtrations.tex:113-129 bytes 4706-5551 SHA-256 6b103381a08ffabe6a5add8967f9ea83fa5dfb97ec349cd817f372fd752cdc0b; target translation/content/normal-modal-logic/filtrations/more-filtrations.tex:131-149 bytes 7362-8450 SHA-256 fcab7d92c7ba2c2ce96efab02e8499543144468f7453d4f5622124663bd430d9; reader page pending.
+  - te-Telu-IN-TE-T148-OCC-007; OLP-0458; OLP-0458-B011; source upstream/content/normal-modal-logic/filtrations/more-filtrations.tex:131-133 bytes 5552-5645 SHA-256 6b103381a08ffabe6a5add8967f9ea83fa5dfb97ec349cd817f372fd752cdc0b; target translation/content/normal-modal-logic/filtrations/more-filtrations.tex:151-154 bytes 8451-8587 SHA-256 fcab7d92c7ba2c2ce96efab02e8499543144468f7453d4f5622124663bd430d9; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 

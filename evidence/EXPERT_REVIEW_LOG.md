@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 457 of 722 draft units**. This log contains 147 terminology/sense decisions and 423 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 458 of 722 draft units**. This log contains 148 terminology/sense decisions and 423 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3535,6 +3535,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక సాక్షులు S5 నిర్ణయ ప్రక్రియను ప్రత్యక్షంగా నిర్వచించవు. అన్ని నమూనాల బదులు సార్వత్రిక నమూనాల శోధన తప్పనిసరి; స్కీమాల/నిరూపణల ప్రభావవంతమైన జాబితా మూల వ్యవస్థ నేపథ్యానికి ఆధారితం.
 
 - Please double-check: Please double-check whether “సమాంతర సిద్ధాంత/పరిమిత సార్వత్రిక ప్రతినమూనా శోధనతో S5 నిర్ణేయత” is idiomatic and technically standard for “S5 decidability by parallel theorem and finite-universal-countermodel searches” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T148 — finer filtration conditions C1-C4 preserving symmetric, transitive and Euclidean accessibility
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: సూక్ష్మతర వడపోత షరతులు C1-C4: సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ ప్రాప్యత
+
+- Exact implementation: OLP-0458; normal-modal-logic/filtrations/more-filtrations; content/normal-modal-logic/filtrations/more-filtrations.tex:11 ↔ translation/content/normal-modal-logic/filtrations/more-filtrations.tex:11 (OLP-0458-B005); printed/PDF page pending; OLP-0458; normal-modal-logic/filtrations/more-filtrations; content/normal-modal-logic/filtrations/more-filtrations.tex:13-28 ↔ translation/content/normal-modal-logic/filtrations/more-filtrations.tex:13-36 (OLP-0458-B006); printed/PDF page pending; OLP-0458; normal-modal-logic/filtrations/more-filtrations; content/normal-modal-logic/filtrations/more-filtrations.tex:30-70 ↔ translation/content/normal-modal-logic/filtrations/more-filtrations.tex:38-77 (OLP-0458-B007); printed/PDF page pending; OLP-0458; normal-modal-logic/filtrations/more-filtrations; content/normal-modal-logic/filtrations/more-filtrations.tex:72-93 ↔ translation/content/normal-modal-logic/filtrations/more-filtrations.tex:79-108 (OLP-0458-B008); printed/PDF page pending; OLP-0458; normal-modal-logic/filtrations/more-filtrations; content/normal-modal-logic/filtrations/more-filtrations.tex:95-111 ↔ translation/content/normal-modal-logic/filtrations/more-filtrations.tex:110-129 (OLP-0458-B009); printed/PDF page pending; OLP-0458; normal-modal-logic/filtrations/more-filtrations; content/normal-modal-logic/filtrations/more-filtrations.tex:113-129 ↔ translation/content/normal-modal-logic/filtrations/more-filtrations.tex:131-149 (OLP-0458-B010); printed/PDF page pending; OLP-0458; normal-modal-logic/filtrations/more-filtrations; content/normal-modal-logic/filtrations/more-filtrations.tex:131-133 ↔ translation/content/normal-modal-logic/filtrations/more-filtrations.tex:151-154 (OLP-0458-B011); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P022, PDF 84, printed 77, Implication and equivalence headings; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: పూర్వ TE-T114, TE-T144లోని ప్రాప్యత ధర్మాలు, అత్యంత స్థూలం కంటే సూక్ష్మమైన జతల చేరిక క్రమాన్ని కొనసాగించాం. C1=R2/R3, C2 ప్రతిదిశ, C3/C4 modal సత్య బదిలీ షరతులను మూల పట్టిక అచ్చంగా నియంత్రిస్తుంది. స్థానిక పేజీలు సాధారణ సంబంధ/తర్క పదజాలానికే మద్దతు; మూడు నిరూపణ శాఖలను మూలంలాగే వ్యాయామాలుగా ఉంచాం. C1-C4, R, R*, W*, V*, Gamma, modal symbols, tags and protected TeX references retain source identities.
+
+- Alternatives: C1..C4 పట్టికలో అన్ని Box/Diamond guarded దిశలను నిలిపి, జతల చేరిక తగ్గితే సూక్ష్మత పెరుగుతుందని, నాలుగు వడపోత నిర్వచనాలు వాటి ధర్మాలకు సరిపోతాయని, మూడు శాఖలు మూలంలాగే వ్యాయామాలేనని చెప్పడం (ఎంపిక); సూక్ష్మతను W*లో లోకాల సంఖ్యతో కలపడం (తిరస్కరణ); C3/C4లో Box/Diamond బదిలీ దిశలను తారుమారు చేయడం (తిరస్కరణ); వ్యాయామ శాఖలను పూర్తిగా నిరూపించామని ప్రకటించడం (తిరస్కరణ); స్థానిక సాధారణ సంబంధ పేజీనే modal C-షరతులకు ప్రత్యక్ష సాక్ష్యంగా చూపడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు ఈ modal పట్టికకు ప్రత్యక్షం కాదు. సూక్ష్మత అనేది R*లో జతలు తక్కువగా ఉండటాన్ని సూచిస్తుంది; quotient W* పరిమాణాన్ని కాదు. 2–4 అంశాల పూర్తి నిరూపణ ఈ విభాగంలో మూలంలాగే వ్యాయామం.
+
+- Please double-check: Please double-check whether “సూక్ష్మతర వడపోత షరతులు C1-C4: సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ ప్రాప్యత” is idiomatic and technically standard for “finer filtration conditions C1-C4 preserving symmetric, transitive and Euclidean accessibility” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
