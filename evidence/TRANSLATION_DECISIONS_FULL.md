@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **442 of 722 source units drafted**. This readable view contains all 536 decisions and 1169 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **443 of 722 source units drafted**. This readable view contains all 541 decisions and 1181 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3988,6 +3988,39 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T132-OCC-004; OLP-0442; OLP-0442-B008; source upstream/content/normal-modal-logic/completeness/introduction.tex:38-47 bytes 1681-2304 SHA-256 c9ecf5ad894817a8446043393bd6b5d5e20e9755134d32fe362b503306a51fe7; target translation/content/normal-modal-logic/completeness/introduction.tex:41-51 bytes 3368-4598 SHA-256 1e5b3548bd67afb9e484361be17ac65a5ba476d4a6c5825ea2c6f78b9ec6cdc7; reader page pending.
   - te-Telu-IN-TE-T132-OCC-005; OLP-0442; OLP-0442-B009; source upstream/content/normal-modal-logic/completeness/introduction.tex:49-62 bytes 2305-3182 SHA-256 c9ecf5ad894817a8446043393bd6b5d5e20e9755134d32fe362b503306a51fe7; target translation/content/normal-modal-logic/completeness/introduction.tex:53-66 bytes 4599-6393 SHA-256 1e5b3548bd67afb9e484361be17ac65a5ba476d4a6c5825ea2c6f78b9ec6cdc7; reader page pending.
   - te-Telu-IN-TE-T132-OCC-006; OLP-0442; OLP-0442-B010; source upstream/content/normal-modal-logic/completeness/introduction.tex:64-71 bytes 3183-3682 SHA-256 c9ecf5ad894817a8446043393bd6b5d5e20e9755134d32fe362b503306a51fe7; target translation/content/normal-modal-logic/completeness/introduction.tex:68-77 bytes 6394-7532 SHA-256 1e5b3548bd67afb9e484361be17ac65a5ba476d4a6c5825ea2c6f78b9ec6cdc7; reader page pending.
+
+## te-Telu-IN-TE-T133 — complete Sigma-consistent set / maximal consistency / deductive closure / connective membership conditions / guarded proof exercises
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: సంపూర్ణ Sigma-అవిరుద్ధ సమితి / గరిష్ఠ అవైరుధ్యం / నిగమన సంవృతత / సంయోజకాల మూలకత్వ షరతులు / షరతుపర నిరూపణ వ్యాయామాలు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “complete Sigma-consistent set / maximal consistency / deductive closure / connective membership conditions / guarded proof exercises” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక పేజీలు ఈ మోడల్-ప్రత్యేక గరిష్ఠ అవిరుద్ధత లేదా కానానికల్ ప్రపంచాల నిరూపణను ప్రత్యక్షంగా ఇవ్వవు. మూల నిరూపణలో నిషేధ ముగింపు, వికల్ప తిరుగు దిశ, తుల్యత పరికల్పన/రెండూ-లేని కేసు నాలుగు సమస్యలను ప్రకటిత సవరణలుగా నమోదు చేశాం; వ్యాయామ శాఖలు యథాతథం.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, TE-P024లో నియమ-ఆధారిత వ్యుత్పత్తి, నేరుగా మళ్లీ చూసిన TE-P026లో సాధారణ సమితి సుసంగతత్వం/అసంగత కనిపించాయి. TE-T034/073/131/132లో స్థిర అవైరుధ్యం, నిగమన సంవృతత, కానానికల్ రూపాలను కొనసాగించాం. Sigma-సాపేక్ష సంపూర్ణత, ప్రతి సంయోజక మూలకత్వ తుల్యత, guarded proof branches OLP-0443 స్థిర నిర్వచనం, ప్రతిపాదనల నుంచే నిర్ణీతం. Sigma, Gamma, Box, Diamond, A, B, truth constants, connective macros, tag keys మరియు modal notation రక్షిత గణిత సంకేతాలు.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P026 [checked_context_only], PDF page 88; printed page 81; Consistency section; Direct consistency/inconsistency terminology; not direct completeness terminology.
+
+- Alternatives: సంపూర్ణ Sigma-అవిరుద్ధత, నిగమన సంవృతత, సంయోజకాల సభ్యత్వ షరతులు, guarded exercise branches నిలిపి, నాలుగు స్థానిక నిరూపణ సమస్యలను పక్కనే ప్రకటించి సరిచేయడం [viable_alternative: ఎంపిక] | నిషేధం రెండవ దిశలో A/నిషేధ-A పొరపాటును నిలపడం [viable_alternative: తిరస్కరణ] | వికల్ప, తుల్యత నిరూపణల తప్పిన దిశలను మౌనంగా వదలడం [viable_alternative: తిరస్కరణ] | సాధారణ స్థానిక అవైరుధ్య పేజీనే మోడల్ పూర్తి సమితుల ప్రత్యక్ష నిరూపణగా చూపడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “సంపూర్ణ Sigma-అవిరుద్ధ సమితి / గరిష్ఠ అవైరుధ్యం / నిగమన సంవృతత / సంయోజకాల మూలకత్వ షరతులు / షరతుపర నిరూపణ వ్యాయామాలు” is idiomatic and technically standard for “complete Sigma-consistent set / maximal consistency / deductive closure / connective membership conditions / guarded proof exercises” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T133-OCC-001; OLP-0443; OLP-0443-B005; source upstream/content/normal-modal-logic/completeness/complete-consistent-sets.tex:11 bytes 195-241 SHA-256 b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1; target translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:11 bytes 195-285 SHA-256 b411c1439b385f38bea20933fe8e8f83340fe5726bea914c40e3927a4daf4bdc; reader page pending.
+  - te-Telu-IN-TE-T133-OCC-002; OLP-0443; OLP-0443-B006; source upstream/content/normal-modal-logic/completeness/complete-consistent-sets.tex:13-22 bytes 242-902 SHA-256 b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1; target translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:13-24 bytes 286-1616 SHA-256 b411c1439b385f38bea20933fe8e8f83340fe5726bea914c40e3927a4daf4bdc; reader page pending.
+  - te-Telu-IN-TE-T133-OCC-003; OLP-0443; OLP-0443-B007; source upstream/content/normal-modal-logic/completeness/complete-consistent-sets.tex:24-28 bytes 903-1097 SHA-256 b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1; target translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:26-30 bytes 1617-1942 SHA-256 b411c1439b385f38bea20933fe8e8f83340fe5726bea914c40e3927a4daf4bdc; reader page pending.
+  - te-Telu-IN-TE-T133-OCC-004; OLP-0443; OLP-0443-B008; source upstream/content/normal-modal-logic/completeness/complete-consistent-sets.tex:30-36 bytes 1098-1533 SHA-256 b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1; target translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:32-39 bytes 1943-2844 SHA-256 b411c1439b385f38bea20933fe8e8f83340fe5726bea914c40e3927a4daf4bdc; reader page pending.
+  - te-Telu-IN-TE-T133-OCC-005; OLP-0443; OLP-0443-B009; source upstream/content/normal-modal-logic/completeness/complete-consistent-sets.tex:38-62 bytes 1534-2596 SHA-256 b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1; target translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:41-69 bytes 2845-4398 SHA-256 b411c1439b385f38bea20933fe8e8f83340fe5726bea914c40e3927a4daf4bdc; reader page pending.
+  - te-Telu-IN-TE-T133-OCC-006; OLP-0443; OLP-0443-B014; source upstream/content/normal-modal-logic/completeness/complete-consistent-sets.tex:83-85 bytes 3317-3491 SHA-256 b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1; target translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:90-96 bytes 5389-6043 SHA-256 b411c1439b385f38bea20933fe8e8f83340fe5726bea914c40e3927a4daf4bdc; reader page pending.
+  - te-Telu-IN-TE-T133-OCC-007; OLP-0443; OLP-0443-B016; source upstream/content/normal-modal-logic/completeness/complete-consistent-sets.tex:96-102 bytes 3982-4436 SHA-256 b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1; target translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:107-120 bytes 6697-8167 SHA-256 b411c1439b385f38bea20933fe8e8f83340fe5726bea914c40e3927a4daf4bdc; reader page pending.
+  - te-Telu-IN-TE-T133-OCC-008; OLP-0443; OLP-0443-B019; source upstream/content/normal-modal-logic/completeness/complete-consistent-sets.tex:122-131 bytes 5438-5989 SHA-256 b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1; target translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:141-164 bytes 9605-11814 SHA-256 b411c1439b385f38bea20933fe8e8f83340fe5726bea914c40e3927a4daf4bdc; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -14572,3 +14605,107 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLAXSCON-002-OCC-001; OLP-0440; OLP-0440-B010; source upstream/content/normal-modal-logic/axioms-systems/consistency.tex:49-62 bytes 1719-2477 SHA-256 410cd2532bf8c2ba318f476f6e9192064021f16e0a42aa297015bb41851e889b; target translation/content/normal-modal-logic/axioms-systems/consistency.tex:63 bytes 4568-4656 SHA-256 f201fc7a26032c0cb7dbdf571b46ea2e54403457b37d21d8181228bfaf7b6732; reader page pending.
+
+## te-Telu-IN-OLTENMLCOMCCS-001 — OLTENMLCOMCCS-001: negation reverse case wrong conclusion atom
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: నిషేధ-మూలకత్వం రెండవ దిశలో A స్థానంలో not-Aను రాసి పక్కనే ప్రకటించాం; సిద్ధాంత వాక్యం, స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Intended sense: Repair the audited negation reverse case wrong conclusion atom at complete-consistent-sets.tex lines 83-85, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLCOMCCS-20260927:OLTENMLCOMCCS-001 [checked_supports], content/normal-modal-logic/completeness/complete-consistent-sets.tex; complete-consistent-sets.tex lines 83-85; negation_reverse_case_wrong_conclusion_atom; నిషేధ-మూలకత్వం రెండవ దిశలో A స్థానంలో not-Aను రాసి పక్కనే ప్రకటించాం; సిద్ధాంత వాక్యం, స్థిర ఆంగ్ల మూలం మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the reverse negation case conclude not-A in Gamma from A not in Gamma, instead of the source contradictory A in Gamma?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLCOMCCS-001-OCC-001; OLP-0443; OLP-0443-B014; source upstream/content/normal-modal-logic/completeness/complete-consistent-sets.tex:83-85 bytes 3317-3491 SHA-256 b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1; target translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:93 bytes 5657-5755 SHA-256 b411c1439b385f38bea20933fe8e8f83340fe5726bea914c40e3927a4daf4bdc; reader page pending.
+
+## te-Telu-IN-OLTENMLCOMCCS-002 — OLTENMLCOMCCS-002: disjunction reverse direction omitted
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: వ్యాయామం కాని వికల్ప శాఖలో తప్పిన తిరుగు దిశను సర్వసత్య వికల్ప ప్రవేశం, నిగమన సంవృతతతో గద్యంగా చేర్చి ప్రకటించాం; వ్యాయామ శాఖ తెరిచే ఉంది.
+
+- Intended sense: Repair the audited disjunction reverse direction omitted at complete-consistent-sets.tex lines 96-102, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLCOMCCS-20260927:OLTENMLCOMCCS-002 [checked_supports], content/normal-modal-logic/completeness/complete-consistent-sets.tex; complete-consistent-sets.tex lines 96-102; disjunction_reverse_direction_omitted; వ్యాయామం కాని వికల్ప శాఖలో తప్పిన తిరుగు దిశను సర్వసత్య వికల్ప ప్రవేశం, నిగమన సంవృతతతో గద్యంగా చేర్చి ప్రకటించాం; వ్యాయామ శాఖ తెరిచే ఉంది..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the non-exercise disjunction proof also establish membership from either disjunct by tautology and deductive closure, while leaving the exercise branch open?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLCOMCCS-002-OCC-001; OLP-0443; OLP-0443-B016; source upstream/content/normal-modal-logic/completeness/complete-consistent-sets.tex:96-102 bytes 3982-4436 SHA-256 b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1; target translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:117 bytes 7675-7759 SHA-256 b411c1439b385f38bea20933fe8e8f83340fe5726bea914c40e3927a4daf4bdc; reader page pending.
+
+## te-Telu-IN-OLTENMLCOMCCS-003 — OLTENMLCOMCCS-003: biconditional converse premise wrong connective
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: తుల్యత తిరుగు నిరూపణ పరికల్పనలో implication స్థానంలో biconditionalను పెట్టి ప్రకటించాం; స్థిర మూలం మారలేదు.
+
+- Intended sense: Repair the audited biconditional converse premise wrong connective at complete-consistent-sets.tex lines 122-123, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLCOMCCS-20260927:OLTENMLCOMCCS-003 [checked_supports], content/normal-modal-logic/completeness/complete-consistent-sets.tex; complete-consistent-sets.tex lines 122-123; biconditional_converse_premise_wrong_connective; తుల్యత తిరుగు నిరూపణ పరికల్పనలో implication స్థానంలో biconditionalను పెట్టి ప్రకటించాం; స్థిర మూలం మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the biconditional converse start from A iff B not in Gamma, which alone licenses the next negated-biconditional membership step?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLCOMCCS-003-OCC-001; OLP-0443; OLP-0443-B019; source upstream/content/normal-modal-logic/completeness/complete-consistent-sets.tex:122-131 bytes 5438-5989 SHA-256 b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1; target translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:142 bytes 9704-9792 SHA-256 b411c1439b385f38bea20933fe8e8f83340fe5726bea914c40e3927a4daf4bdc; reader page pending.
+
+## te-Telu-IN-OLTENMLCOMCCS-004 — OLTENMLCOMCCS-004: biconditional converse neither case unproved
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: తుల్యత తిరుగు శాఖలో రెండూ లేని సందర్భం అసాధ్యమని సంపూర్ణత, ప్రతిజ్ఞావాక్య సర్వసత్యం, సంవృతతతో చూపి ప్రకటించాం; వ్యాయామ శాఖ తెరిచే ఉంది.
+
+- Intended sense: Repair the audited biconditional converse neither case unproved at complete-consistent-sets.tex lines 124-129, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLCOMCCS-20260927:OLTENMLCOMCCS-004 [checked_supports], content/normal-modal-logic/completeness/complete-consistent-sets.tex; complete-consistent-sets.tex lines 124-129; biconditional_converse_neither_case_unproved; తుల్యత తిరుగు శాఖలో రెండూ లేని సందర్భం అసాధ్యమని సంపూర్ణత, ప్రతిజ్ఞావాక్య సర్వసత్యం, సంవృతతతో చూపి ప్రకటించాం; వ్యాయామ శాఖ తెరిచే ఉంది..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Is the neither-belongs case excluded using completeness and closure before the biconditional converse conclusion, without silently filling the exercise branch?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLCOMCCS-004-OCC-001; OLP-0443; OLP-0443-B019; source upstream/content/normal-modal-logic/completeness/complete-consistent-sets.tex:122-131 bytes 5438-5989 SHA-256 b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1; target translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:156 bytes 11041-11129 SHA-256 b411c1439b385f38bea20933fe8e8f83340fe5726bea914c40e3927a4daf4bdc; reader page pending.

@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 442 of 722 draft units**. This log contains 132 terminology/sense decisions and 404 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 443 of 722 draft units**. This log contains 133 terminology/sense decisions and 408 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3175,6 +3175,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక పేజీలు మోడల్ సంపూర్ణతా సిద్ధాంతాన్ని లేదా కానానికల్ నిర్మాణాన్ని నేరుగా నిరూపించవు. కానానికల్ అనేది తరువాతి మూల నిర్మాణంతో అర్థం స్థిరపడాల్సిన ఋణపదం; శీర్షిక, పరిచయం రెండింటిలోనూ ఒకే రూపం ఉంచాం. Sigma-సాపేక్ష నమూనా-సత్య పరిమితి TE-T131తో అనుగుణం.
 
 - Please double-check: Please double-check whether “మోడల్ సంపూర్ణత / కానానికల్ నమూనా / ప్రతినమూనా / సంపూర్ణ Sigma-అవిరుద్ధ సమితి / సమితి మూలకత్వంగా సత్యం” is idiomatic and technically standard for “modal completeness / canonical model / countermodel / complete Sigma-consistent set / truth as membership” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T133 — complete Sigma-consistent set / maximal consistency / deductive closure / connective membership conditions / guarded proof exercises
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: సంపూర్ణ Sigma-అవిరుద్ధ సమితి / గరిష్ఠ అవైరుధ్యం / నిగమన సంవృతత / సంయోజకాల మూలకత్వ షరతులు / షరతుపర నిరూపణ వ్యాయామాలు
+
+- Exact implementation: OLP-0443; normal-modal-logic/completeness/complete-consistent-sets; content/normal-modal-logic/completeness/complete-consistent-sets.tex:11 ↔ translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:11 (OLP-0443-B005); printed/PDF page pending; OLP-0443; normal-modal-logic/completeness/complete-consistent-sets; content/normal-modal-logic/completeness/complete-consistent-sets.tex:13-22 ↔ translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:13-24 (OLP-0443-B006); printed/PDF page pending; OLP-0443; normal-modal-logic/completeness/complete-consistent-sets; content/normal-modal-logic/completeness/complete-consistent-sets.tex:24-28 ↔ translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:26-30 (OLP-0443-B007); printed/PDF page pending; OLP-0443; normal-modal-logic/completeness/complete-consistent-sets; content/normal-modal-logic/completeness/complete-consistent-sets.tex:30-36 ↔ translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:32-39 (OLP-0443-B008); printed/PDF page pending; OLP-0443; normal-modal-logic/completeness/complete-consistent-sets; content/normal-modal-logic/completeness/complete-consistent-sets.tex:38-62 ↔ translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:41-69 (OLP-0443-B009); printed/PDF page pending; OLP-0443; normal-modal-logic/completeness/complete-consistent-sets; content/normal-modal-logic/completeness/complete-consistent-sets.tex:83-85 ↔ translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:90-96 (OLP-0443-B014); printed/PDF page pending; OLP-0443; normal-modal-logic/completeness/complete-consistent-sets; content/normal-modal-logic/completeness/complete-consistent-sets.tex:96-102 ↔ translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:107-120 (OLP-0443-B016); printed/PDF page pending; OLP-0443; normal-modal-logic/completeness/complete-consistent-sets; content/normal-modal-logic/completeness/complete-consistent-sets.tex:122-131 ↔ translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:141-164 (OLP-0443-B019); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P026, PDF 88, printed 81, Consistency section
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, TE-P024లో నియమ-ఆధారిత వ్యుత్పత్తి, నేరుగా మళ్లీ చూసిన TE-P026లో సాధారణ సమితి సుసంగతత్వం/అసంగత కనిపించాయి. TE-T034/073/131/132లో స్థిర అవైరుధ్యం, నిగమన సంవృతత, కానానికల్ రూపాలను కొనసాగించాం. Sigma-సాపేక్ష సంపూర్ణత, ప్రతి సంయోజక మూలకత్వ తుల్యత, guarded proof branches OLP-0443 స్థిర నిర్వచనం, ప్రతిపాదనల నుంచే నిర్ణీతం. Sigma, Gamma, Box, Diamond, A, B, truth constants, connective macros, tag keys మరియు modal notation రక్షిత గణిత సంకేతాలు.
+
+- Alternatives: సంపూర్ణ Sigma-అవిరుద్ధత, నిగమన సంవృతత, సంయోజకాల సభ్యత్వ షరతులు, guarded exercise branches నిలిపి, నాలుగు స్థానిక నిరూపణ సమస్యలను పక్కనే ప్రకటించి సరిచేయడం (ఎంపిక); నిషేధం రెండవ దిశలో A/నిషేధ-A పొరపాటును నిలపడం (తిరస్కరణ); వికల్ప, తుల్యత నిరూపణల తప్పిన దిశలను మౌనంగా వదలడం (తిరస్కరణ); సాధారణ స్థానిక అవైరుధ్య పేజీనే మోడల్ పూర్తి సమితుల ప్రత్యక్ష నిరూపణగా చూపడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక పేజీలు ఈ మోడల్-ప్రత్యేక గరిష్ఠ అవిరుద్ధత లేదా కానానికల్ ప్రపంచాల నిరూపణను ప్రత్యక్షంగా ఇవ్వవు. మూల నిరూపణలో నిషేధ ముగింపు, వికల్ప తిరుగు దిశ, తుల్యత పరికల్పన/రెండూ-లేని కేసు నాలుగు సమస్యలను ప్రకటిత సవరణలుగా నమోదు చేశాం; వ్యాయామ శాఖలు యథాతథం.
+
+- Please double-check: Please double-check whether “సంపూర్ణ Sigma-అవిరుద్ధ సమితి / గరిష్ఠ అవైరుధ్యం / నిగమన సంవృతత / సంయోజకాల మూలకత్వ షరతులు / షరతుపర నిరూపణ వ్యాయామాలు” is idiomatic and technically standard for “complete Sigma-consistent set / maximal consistency / deductive closure / connective membership conditions / guarded proof exercises” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -12871,3 +12895,99 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Do the two Gamma-plus-assumption derives-bottom lines follow directly from the Sigma-consistency definition and union shorthand, with item (b) cited only as context?
+
+## REV-OLTENMLCOMCCS-001 — OLTENMLCOMCCS-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: నిషేధ-మూలకత్వం రెండవ దిశలో A స్థానంలో not-Aను రాసి పక్కనే ప్రకటించాం; సిద్ధాంత వాక్యం, స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Exact implementation: OLP-0443; normal-modal-logic/completeness/complete-consistent-sets; complete-consistent-sets.tex lines 83-85 ↔ translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:93 (OLP-0443-B014); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLCOMCCS-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: నిషేధ-మూలకత్వం రెండవ దిశలో A స్థానంలో not-Aను రాసి పక్కనే ప్రకటించాం; సిద్ధాంత వాక్యం, స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the reverse negation case conclude not-A in Gamma from A not in Gamma, instead of the source contradictory A in Gamma?
+
+## REV-OLTENMLCOMCCS-002 — OLTENMLCOMCCS-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: వ్యాయామం కాని వికల్ప శాఖలో తప్పిన తిరుగు దిశను సర్వసత్య వికల్ప ప్రవేశం, నిగమన సంవృతతతో గద్యంగా చేర్చి ప్రకటించాం; వ్యాయామ శాఖ తెరిచే ఉంది.
+
+- Exact implementation: OLP-0443; normal-modal-logic/completeness/complete-consistent-sets; complete-consistent-sets.tex lines 96-102 ↔ translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:117 (OLP-0443-B016); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLCOMCCS-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: వ్యాయామం కాని వికల్ప శాఖలో తప్పిన తిరుగు దిశను సర్వసత్య వికల్ప ప్రవేశం, నిగమన సంవృతతతో గద్యంగా చేర్చి ప్రకటించాం; వ్యాయామ శాఖ తెరిచే ఉంది.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the non-exercise disjunction proof also establish membership from either disjunct by tautology and deductive closure, while leaving the exercise branch open?
+
+## REV-OLTENMLCOMCCS-003 — OLTENMLCOMCCS-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: తుల్యత తిరుగు నిరూపణ పరికల్పనలో implication స్థానంలో biconditionalను పెట్టి ప్రకటించాం; స్థిర మూలం మారలేదు.
+
+- Exact implementation: OLP-0443; normal-modal-logic/completeness/complete-consistent-sets; complete-consistent-sets.tex lines 122-123 ↔ translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:142 (OLP-0443-B019); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLCOMCCS-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: తుల్యత తిరుగు నిరూపణ పరికల్పనలో implication స్థానంలో biconditionalను పెట్టి ప్రకటించాం; స్థిర మూలం మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the biconditional converse start from A iff B not in Gamma, which alone licenses the next negated-biconditional membership step?
+
+## REV-OLTENMLCOMCCS-004 — OLTENMLCOMCCS-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: తుల్యత తిరుగు శాఖలో రెండూ లేని సందర్భం అసాధ్యమని సంపూర్ణత, ప్రతిజ్ఞావాక్య సర్వసత్యం, సంవృతతతో చూపి ప్రకటించాం; వ్యాయామ శాఖ తెరిచే ఉంది.
+
+- Exact implementation: OLP-0443; normal-modal-logic/completeness/complete-consistent-sets; complete-consistent-sets.tex lines 124-129 ↔ translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:156 (OLP-0443-B019); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLCOMCCS-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: తుల్యత తిరుగు శాఖలో రెండూ లేని సందర్భం అసాధ్యమని సంపూర్ణత, ప్రతిజ్ఞావాక్య సర్వసత్యం, సంవృతతతో చూపి ప్రకటించాం; వ్యాయామ శాఖ తెరిచే ఉంది.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Is the neither-belongs case excluded using completeness and closure before the biconditional converse conclusion, without silently filling the exercise branch?

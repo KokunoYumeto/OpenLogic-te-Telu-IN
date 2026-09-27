@@ -1,0 +1,41 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLCOMCCS-20260927",
+  "unit_id": "OLP-0443",
+  "source_path": "content/normal-modal-logic/completeness/complete-consistent-sets.tex",
+  "source_sha256": "b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1",
+  "findings": [
+    {
+      "finding_id": "OLTENMLCOMCCS-001",
+      "source_locator": "complete-consistent-sets.tex lines 83-85",
+      "classification": "negation_reverse_case_wrong_conclusion_atom",
+      "source_issue": "From A not in Gamma, completeness gives not-A in Gamma, but the proof prints A in Gamma.",
+      "minimal_treatment": "Use not-A in Gamma in the Telugu proof and disclose the atom correction.",
+      "expected_core_math_delta": {"source_only": ["$!A\\in\\Gamma$"], "target_only": ["$\\lnot!A\\in\\Gamma$"]}
+    },
+    {
+      "finding_id": "OLTENMLCOMCCS-002",
+      "source_locator": "complete-consistent-sets.tex lines 96-102",
+      "classification": "disjunction_reverse_direction_omitted",
+      "source_issue": "The non-exercise proof establishes only the left-to-right disjunction membership direction.",
+      "minimal_treatment": "Add the reverse using a disjunction-introduction tautology and deductive closure in prose, with an adjacent disclosure inside the solved branch.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTENMLCOMCCS-003",
+      "source_locator": "complete-consistent-sets.tex lines 122-123",
+      "classification": "biconditional_converse_premise_wrong_connective",
+      "source_issue": "The proof starts from A implies B not in Gamma but then infers the negation of A iff B by completeness.",
+      "minimal_treatment": "Use A iff B not in Gamma in the Telugu converse premise and disclose the one-connective correction.",
+      "expected_core_math_delta": {"source_only": ["$!A\\lif!B\\notin\\Gamma$"], "target_only": ["$!A\\liff!B\\notin\\Gamma$"]}
+    },
+    {
+      "finding_id": "OLTENMLCOMCCS-004",
+      "source_locator": "complete-consistent-sets.tex lines 124-129",
+      "classification": "biconditional_converse_neither_case_unproved",
+      "source_issue": "Showing that A and B cannot both belong does not rule out neither belonging, although the conclusion asserts both exclusions.",
+      "minimal_treatment": "Add the neither-belongs contradiction from completeness, a propositional tautology and closure, with disclosure inside the solved branch.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

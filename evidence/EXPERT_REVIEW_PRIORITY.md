@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 442 of 722 draft units**. This view selects 457 of 536 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 443 of 722 draft units**. This view selects 461 of 541 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4573,3 +4573,43 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0440; normal-modal-logic/axioms-systems/consistency; translation/content/normal-modal-logic/axioms-systems/consistency.tex:63; printed/PDF page pending
 
 - Please double-check: Please double-check: Do the two Gamma-plus-assumption derives-bottom lines follow directly from the Sigma-consistency definition and union shorthand, with item (b) cited only as context?
+
+## REV-OLTENMLCOMCCS-001 — OLTENMLCOMCCS-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: నిషేధ-మూలకత్వం రెండవ దిశలో A స్థానంలో not-Aను రాసి పక్కనే ప్రకటించాం; సిద్ధాంత వాక్యం, స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Occurrences: OLP-0443; normal-modal-logic/completeness/complete-consistent-sets; translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:93; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the reverse negation case conclude not-A in Gamma from A not in Gamma, instead of the source contradictory A in Gamma?
+
+## REV-OLTENMLCOMCCS-002 — OLTENMLCOMCCS-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: వ్యాయామం కాని వికల్ప శాఖలో తప్పిన తిరుగు దిశను సర్వసత్య వికల్ప ప్రవేశం, నిగమన సంవృతతతో గద్యంగా చేర్చి ప్రకటించాం; వ్యాయామ శాఖ తెరిచే ఉంది.
+
+- Occurrences: OLP-0443; normal-modal-logic/completeness/complete-consistent-sets; translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:117; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the non-exercise disjunction proof also establish membership from either disjunct by tautology and deductive closure, while leaving the exercise branch open?
+
+## REV-OLTENMLCOMCCS-003 — OLTENMLCOMCCS-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: తుల్యత తిరుగు నిరూపణ పరికల్పనలో implication స్థానంలో biconditionalను పెట్టి ప్రకటించాం; స్థిర మూలం మారలేదు.
+
+- Occurrences: OLP-0443; normal-modal-logic/completeness/complete-consistent-sets; translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:142; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the biconditional converse start from A iff B not in Gamma, which alone licenses the next negated-biconditional membership step?
+
+## REV-OLTENMLCOMCCS-004 — OLTENMLCOMCCS-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: తుల్యత తిరుగు శాఖలో రెండూ లేని సందర్భం అసాధ్యమని సంపూర్ణత, ప్రతిజ్ఞావాక్య సర్వసత్యం, సంవృతతతో చూపి ప్రకటించాం; వ్యాయామ శాఖ తెరిచే ఉంది.
+
+- Occurrences: OLP-0443; normal-modal-logic/completeness/complete-consistent-sets; translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:156; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the neither-belongs case excluded using completeness and closure before the biconditional converse conclusion, without silently filling the exercise branch?

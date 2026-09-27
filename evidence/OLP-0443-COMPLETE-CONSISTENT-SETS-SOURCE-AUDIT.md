@@ -1,0 +1,12 @@
+# OLP-0443 complete consistent sets — source audit
+
+Frozen source: `content/normal-modal-logic/completeness/complete-consistent-sets.tex`, OpenLogic revision `9620cc73f9c8e0ad003c514a5d3748f29611c4c0`, 6,135 bytes, SHA-256 `b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1`.
+
+The proposition's closure, system inclusion, guarded truth constants, negation, conjunction, disjunction, implication and biconditional cases were checked against the complete-consistency definition and prior `prop:derivabilityfacts`/`prop:consistencyfacts`. Four local proof issues occur in the non-exercise paths:
+
+1. Lines 83–85: the reverse negation case says $!A\notin\Gamma$ implies $!A\in\Gamma$ by completeness. Completeness gives $\lnot !A\in\Gamma$. OLTENMLCOMCCS-001 changes only that target atom and discloses it; the theorem already states the correct negation equivalence.
+2. Lines 96–102: the disjunction proof establishes $!A\lor !B\in\Gamma\Rightarrow !A\in\Gamma$ or $!B\in\Gamma$, but omits the reverse. From either disjunct in $\Gamma$, its disjunction follows by a propositional tautology and deductive closure. OLTENMLCOMCCS-002 adds this short prose step and discloses the omission only in the non-`probOr` branch; the exercise branch stays open.
+3. Lines 122–123: the converse biconditional proof assumes $!A\lif !B\notin\Gamma$ yet immediately infers $\lnot(!A\liff !B)\in\Gamma$. It needs $!A\liff !B\notin\Gamma$. OLTENMLCOMCCS-003 changes only the target premise atom and discloses it in the non-`probIff` branch.
+4. Lines 124–129: from the negated biconditional the source shows that $!A$ and $!B$ cannot both belong to $\Gamma$, but does not rule out neither belonging. If neither belongs, completeness gives both negations; propositional logic and deductive closure then give the biconditional, contradicting the premise. OLTENMLCOMCCS-004 states this missing direction in prose and discloses it in the non-`probIff` branch. The exercise branch stays open.
+
+The other guarded `probAnd`/`probIf` and final `probtag` paths are kept source-faithful. No source mathematics or exercise switches are altered. TE-P010/018/024/026 provide only general relation, propositional-logic, derivation and consistency register; the specialized maximal-consistency argument comes from the displayed source definitions and formulas. The English source remains frozen; no TeX or publication occurred.
