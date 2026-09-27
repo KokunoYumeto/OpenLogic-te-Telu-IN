@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **438 of 722 source units drafted**. This readable view contains all 531 decisions and 1147 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **439 of 722 source units drafted**. This readable view contains all 532 decisions and 1154 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3893,6 +3893,38 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T129-OCC-002; OLP-0438; OLP-0438-B006; source upstream/content/normal-modal-logic/axioms-systems/provability-from-set.tex:13-15 bytes 269-457 SHA-256 de08bf7a3bc7b183438d82d4678a9fc80a4b8efbb072cb25c0e49d10d296f540; target translation/content/normal-modal-logic/axioms-systems/provability-from-set.tex:13-17 bytes 287-733 SHA-256 06e7d6fb49db4f5423bfbfee4ef8e80269f66dc346766e65f3dea439d5c6c8c2; reader page pending.
   - te-Telu-IN-TE-T129-OCC-003; OLP-0438; OLP-0438-B007; source upstream/content/normal-modal-logic/axioms-systems/provability-from-set.tex:17-23 bytes 458-786 SHA-256 de08bf7a3bc7b183438d82d4678a9fc80a4b8efbb072cb25c0e49d10d296f540; target translation/content/normal-modal-logic/axioms-systems/provability-from-set.tex:19-27 bytes 734-1360 SHA-256 06e7d6fb49db4f5423bfbfee4ef8e80269f66dc346766e65f3dea439d5c6c8c2; reader page pending.
   - te-Telu-IN-TE-T129-OCC-004; OLP-0438; OLP-0438-B007; source upstream/content/normal-modal-logic/axioms-systems/provability-from-set.tex:17-23 bytes 458-786 SHA-256 de08bf7a3bc7b183438d82d4678a9fc80a4b8efbb072cb25c0e49d10d296f540; target translation/content/normal-modal-logic/axioms-systems/provability-from-set.tex:19-27 bytes 734-1360 SHA-256 06e7d6fb49db4f5423bfbfee4ef8e80269f66dc346766e65f3dea439d5c6c8c2; reader page pending.
+
+## te-Telu-IN-TE-T130 — properties of modal derivability / monotonicity / reflexivity / cut / deduction theorem / deductively closed set
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: మోడల్ వ్యుత్పాద్యత లక్షణాలు / ఏకదిశత / స్వావర్తనత్వం / కట్ / నిగమన సిద్ధాంతం / నిగమన పరంగా సంవృతమైన సమితి
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “properties of modal derivability / monotonicity / reflexivity / cut / deduction theorem / deductively closed set” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక పేజీలు ఈ మోడల్ వ్యుత్పాద్యత ప్రతిపాదనకు ప్రత్యక్ష నిరూపణ కావు. కట్ అనేది పూర్వ సీక్వెంట్ నియమంలో వాడిన ప్రకటిత ఋణపేరు; ఈ సమితి-సాపేక్ష సందర్భంలో గణిత షరతే అర్థాన్ని స్థిరపరుస్తుంది. ఐదవ అంశానికి మూలంలో కనిపించే పేరు లేదు.
+
+- Rationale: TE-P010లో సంబంధాల సాధారణ పదజాలం, TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, TE-P024లో నియమ-ఆధారిత వ్యుత్పత్తి ప్రత్యక్షంగా చూశాం. TE-T037/073/102 మరియు TE-T119--TE-T129 పూర్వ రూపాలను కొనసాగించాం. Gamma/Sigma-సాపేక్ష ఐదు షరతులు, వాటి దిశలు, చివరి సంవృతత నిర్వచనం OLP-0439 స్థిర మూల గణితానికి కట్టబడి ఉన్నాయి. కట్ అనేది ముందే వివరణతో వాడిన సాంకేతిక పేరు; Sigma, Gamma, Delta, A, B మరియు Proves రక్షిత గణిత సంకేతాలు.
+
+- Authorities checked: TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: ఏకదిశత, స్వావర్తనత్వం, కట్, నిగమన సిద్ధాంతం, నిగమన పరంగా సంవృతం అనే పూర్వ పదరూపాలను Gamma/Sigma-సాపేక్ష ఐదు మూల షరతులతో కలిపి నిలపడం [viable_alternative: ఎంపిక] | కట్‌కు మూలంలో కనిపించని కొత్త ఉపపత్తిని చేర్చడం [viable_alternative: తిరస్కరణ] | రెండు దిశల నిగమన సిద్ధాంతాన్ని ఒక్క దిశగా పరిమితం చేయడం [viable_alternative: తిరస్కరణ] | పేరులేని ఐదవ అంశానికి మూలంలో కనిపించే Rule T లేబుల్ ఉన్నట్లుగా ప్రకటించడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “మోడల్ వ్యుత్పాద్యత లక్షణాలు / ఏకదిశత / స్వావర్తనత్వం / కట్ / నిగమన సిద్ధాంతం / నిగమన పరంగా సంవృతమైన సమితి” is idiomatic and technically standard for “properties of modal derivability / monotonicity / reflexivity / cut / deduction theorem / deductively closed set” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T130-OCC-001; OLP-0439; OLP-0439-B005; source upstream/content/normal-modal-logic/axioms-systems/provability-properties.tex:11 bytes 195-248 SHA-256 2054b1d871723e1845690d3dc42bf9e44a994965341fc3e6505e0c91c1b3a246; target translation/content/normal-modal-logic/axioms-systems/provability-properties.tex:11 bytes 195-259 SHA-256 0e3de14277659c64ee46f75e809c7f30491f8294fecd017c1af9b5ba3f3fa73c; reader page pending.
+  - te-Telu-IN-TE-T130-OCC-002; OLP-0439; OLP-0439-B006; source upstream/content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 bytes 249-1397 SHA-256 2054b1d871723e1845690d3dc42bf9e44a994965341fc3e6505e0c91c1b3a246; target translation/content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 bytes 260-1800 SHA-256 0e3de14277659c64ee46f75e809c7f30491f8294fecd017c1af9b5ba3f3fa73c; reader page pending.
+  - te-Telu-IN-TE-T130-OCC-003; OLP-0439; OLP-0439-B006; source upstream/content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 bytes 249-1397 SHA-256 2054b1d871723e1845690d3dc42bf9e44a994965341fc3e6505e0c91c1b3a246; target translation/content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 bytes 260-1800 SHA-256 0e3de14277659c64ee46f75e809c7f30491f8294fecd017c1af9b5ba3f3fa73c; reader page pending.
+  - te-Telu-IN-TE-T130-OCC-004; OLP-0439; OLP-0439-B006; source upstream/content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 bytes 249-1397 SHA-256 2054b1d871723e1845690d3dc42bf9e44a994965341fc3e6505e0c91c1b3a246; target translation/content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 bytes 260-1800 SHA-256 0e3de14277659c64ee46f75e809c7f30491f8294fecd017c1af9b5ba3f3fa73c; reader page pending.
+  - te-Telu-IN-TE-T130-OCC-005; OLP-0439; OLP-0439-B006; source upstream/content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 bytes 249-1397 SHA-256 2054b1d871723e1845690d3dc42bf9e44a994965341fc3e6505e0c91c1b3a246; target translation/content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 bytes 260-1800 SHA-256 0e3de14277659c64ee46f75e809c7f30491f8294fecd017c1af9b5ba3f3fa73c; reader page pending.
+  - te-Telu-IN-TE-T130-OCC-006; OLP-0439; OLP-0439-B006; source upstream/content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 bytes 249-1397 SHA-256 2054b1d871723e1845690d3dc42bf9e44a994965341fc3e6505e0c91c1b3a246; target translation/content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 bytes 260-1800 SHA-256 0e3de14277659c64ee46f75e809c7f30491f8294fecd017c1af9b5ba3f3fa73c; reader page pending.
+  - te-Telu-IN-TE-T130-OCC-007; OLP-0439; OLP-0439-B008; source upstream/content/normal-modal-logic/axioms-systems/provability-properties.tex:44-48 bytes 1764-1938 SHA-256 2054b1d871723e1845690d3dc42bf9e44a994965341fc3e6505e0c91c1b3a246; target translation/content/normal-modal-logic/axioms-systems/provability-properties.tex:45-49 bytes 2339-2636 SHA-256 0e3de14277659c64ee46f75e809c7f30491f8294fecd017c1af9b5ba3f3fa73c; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 

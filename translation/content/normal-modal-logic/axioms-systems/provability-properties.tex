@@ -1,0 +1,51 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: provability-properties
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{prp}
+
+\olsection{\usetoken{S}{derivability} లక్షణాలు}
+
+\begin{prop}\ollabel{prop:derivabilityfacts}
+  $\Sigma$ ఒక మోడల్ వ్యవస్థ, $\Gamma$ మోడల్
+  \tetoken{సూత్రాల}{!!{formula}s} సమితి అనుకుందాం. అప్పుడు కింది లక్షణాలు వర్తిస్తాయి:
+  \begin{enumerate}
+  \item\ollabel{prop:derivabilityfacts-monotonicity} \emph{ఏకదిశత}:
+    $\Gamma \Proves[\Sigma] !A$ మరియు $\Gamma \subseteq \Delta$ అయితే,
+    $\Delta \Proves[\Sigma] !A$;
+  \item\ollabel{prop:derivabilityfacts-reflexivity}
+    \emph{స్వావర్తనత్వం}: $!A \in \Gamma$ అయితే, $\Gamma
+    \Proves[\Sigma] !A$;
+  \item\ollabel{prop:derivabilityfacts-cut} \emph{కట్}: $\Gamma
+    \Proves[\Sigma] !A$ మరియు $\Delta \cup \{!A\} \Proves[\Sigma] !B$
+    అయితే, $\Gamma \cup \Delta \Proves[\Sigma] !B$;
+  \item\ollabel{prop:derivabilityfacts-deduction} \emph{నిగమన సిద్ధాంతం}:
+    $\Gamma \cup \{!B\} \Proves[\Sigma] !A$ అయితే, అప్పుడు మాత్రమే
+    $\Gamma \Proves[\Sigma] !B \lif !A$;
+  \item \ollabel{prop:derivabilityfacts-ruleT}% \emph{Rule T}: If
+    $\Gamma \Proves[\Sigma] !A_1$ మరియు \dots{} మరియు $\Gamma
+    \Proves[\Sigma] !A_n$ అయ్యి, $!A_1 \to (!A_2 \lif \cdots (!A_n \lif
+    !B)\cdots)$ సర్వసత్య నిదర్శనమైతే, $\Gamma
+    \Proves[\Sigma] !B$.
+  \end{enumerate}
+\end{prop}
+
+నిరూపణ సులభమైన వ్యాయామం. \olref{prop:derivabilityfacts-ruleT},
+అంటే \olref{prop:derivabilityfacts}లోని ఆ భాగం వల్ల, ఉదాహరణకు,
+$\Gamma \Proves[\Sigma] !A \lor !B$ మరియు
+$\Gamma \Proves[\Sigma] \lnot !A$ అయితే,
+$\Gamma \Proves[\Sigma] !B$ అని వస్తుంది. అలాగే, ఇకపై
+$\Gamma \cup \{ !A\} \Proves[\Sigma] !B$ బదులు
+$\Gamma, !A \Proves[\Sigma] !B$ అని రాస్తాం.
+
+\begin{defn}
+  $\Gamma$ సమితి, $\Sigma$ వ్యవస్థకు సాపేక్షంగా
+  \emph{నిగమన పరంగా సంవృతం} అంటే, $\Gamma \Proves[\Sigma] !A$
+  అయినప్పుడల్లా $!A \in \Gamma$ కావడం.
+\end{defn}
+
+\end{document}

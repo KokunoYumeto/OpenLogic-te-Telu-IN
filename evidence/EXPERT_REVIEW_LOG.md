@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 438 of 722 draft units**. This log contains 129 terminology/sense decisions and 402 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 439 of 722 draft units**. This log contains 130 terminology/sense decisions and 402 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3103,6 +3103,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక పేజీలు మోడల్ వ్యవస్థలో సమితి-సాపేక్ష వ్యుత్పాద్యత ప్రత్యేక నిర్వచనాన్ని నేరుగా ఇవ్వవు. n శూన్యమయ్యే సంప్రదాయంపై మూలం విడిగా వ్యాఖ్యానించలేదు; తెలుగు వచనం దాన్ని జోడించలేదు. శీర్షికలోని usetoken గుర్తులు మూల పద-గుర్తింపుగా యథాతథం.
 
 - Please double-check: Please double-check whether “మోడల్ వ్యవస్థలో సూత్రాల సమితి నుంచి నిరూపణీయత / వ్యుత్పాద్యత / వరుస అంతర్నిహితార్థ సాక్ష్యం” is idiomatic and technically standard for “provability / derivability from a set of formulas in a modal system / iterated implication witness” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T130 — properties of modal derivability / monotonicity / reflexivity / cut / deduction theorem / deductively closed set
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: మోడల్ వ్యుత్పాద్యత లక్షణాలు / ఏకదిశత / స్వావర్తనత్వం / కట్ / నిగమన సిద్ధాంతం / నిగమన పరంగా సంవృతమైన సమితి
+
+- Exact implementation: OLP-0439; normal-modal-logic/axioms-systems/provability-properties; content/normal-modal-logic/axioms-systems/provability-properties.tex:11 ↔ translation/content/normal-modal-logic/axioms-systems/provability-properties.tex:11 (OLP-0439-B005); printed/PDF page pending; OLP-0439; normal-modal-logic/axioms-systems/provability-properties; content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 ↔ translation/content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 (OLP-0439-B006); printed/PDF page pending; OLP-0439; normal-modal-logic/axioms-systems/provability-properties; content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 ↔ translation/content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 (OLP-0439-B006); printed/PDF page pending; OLP-0439; normal-modal-logic/axioms-systems/provability-properties; content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 ↔ translation/content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 (OLP-0439-B006); printed/PDF page pending; OLP-0439; normal-modal-logic/axioms-systems/provability-properties; content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 ↔ translation/content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 (OLP-0439-B006); printed/PDF page pending; OLP-0439; normal-modal-logic/axioms-systems/provability-properties; content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 ↔ translation/content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 (OLP-0439-B006); printed/PDF page pending; OLP-0439; normal-modal-logic/axioms-systems/provability-properties; content/normal-modal-logic/axioms-systems/provability-properties.tex:44-48 ↔ translation/content/normal-modal-logic/axioms-systems/provability-properties.tex:45-49 (OLP-0439-B008); printed/PDF page pending
+
+- Authorities actually checked: TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P010లో సంబంధాల సాధారణ పదజాలం, TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, TE-P024లో నియమ-ఆధారిత వ్యుత్పత్తి ప్రత్యక్షంగా చూశాం. TE-T037/073/102 మరియు TE-T119--TE-T129 పూర్వ రూపాలను కొనసాగించాం. Gamma/Sigma-సాపేక్ష ఐదు షరతులు, వాటి దిశలు, చివరి సంవృతత నిర్వచనం OLP-0439 స్థిర మూల గణితానికి కట్టబడి ఉన్నాయి. కట్ అనేది ముందే వివరణతో వాడిన సాంకేతిక పేరు; Sigma, Gamma, Delta, A, B మరియు Proves రక్షిత గణిత సంకేతాలు.
+
+- Alternatives: ఏకదిశత, స్వావర్తనత్వం, కట్, నిగమన సిద్ధాంతం, నిగమన పరంగా సంవృతం అనే పూర్వ పదరూపాలను Gamma/Sigma-సాపేక్ష ఐదు మూల షరతులతో కలిపి నిలపడం (ఎంపిక); కట్‌కు మూలంలో కనిపించని కొత్త ఉపపత్తిని చేర్చడం (తిరస్కరణ); రెండు దిశల నిగమన సిద్ధాంతాన్ని ఒక్క దిశగా పరిమితం చేయడం (తిరస్కరణ); పేరులేని ఐదవ అంశానికి మూలంలో కనిపించే Rule T లేబుల్ ఉన్నట్లుగా ప్రకటించడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక పేజీలు ఈ మోడల్ వ్యుత్పాద్యత ప్రతిపాదనకు ప్రత్యక్ష నిరూపణ కావు. కట్ అనేది పూర్వ సీక్వెంట్ నియమంలో వాడిన ప్రకటిత ఋణపేరు; ఈ సమితి-సాపేక్ష సందర్భంలో గణిత షరతే అర్థాన్ని స్థిరపరుస్తుంది. ఐదవ అంశానికి మూలంలో కనిపించే పేరు లేదు.
+
+- Please double-check: Please double-check whether “మోడల్ వ్యుత్పాద్యత లక్షణాలు / ఏకదిశత / స్వావర్తనత్వం / కట్ / నిగమన సిద్ధాంతం / నిగమన పరంగా సంవృతమైన సమితి” is idiomatic and technically standard for “properties of modal derivability / monotonicity / reflexivity / cut / deduction theorem / deductively closed set” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
