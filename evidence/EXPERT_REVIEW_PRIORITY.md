@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 463 of 722 draft units**. This view selects 482 of 582 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 464 of 722 draft units**. This view selects 488 of 589 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4823,3 +4823,63 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0462; normal-modal-logic/tableaux/rules-for-K; translation/content/normal-modal-logic/tableaux/rules-for-K.tex:240; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the Box-only countertableau label the first F Box expansion F Box while still leaving the later forbidden reuse of 1.1 visible?
+
+## REV-OLTENMLTABSOU-001 — OLTENMLTABSOU-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: వ్యతిరేకావర్తన ప్రతినమూనాలో A సత్య చిహ్నాన్ని అసత్య చిహ్నంగా మార్చి పక్కనే ప్రకటించాం; B_i, లోకం w యథాతథం.
+
+- Occurrences: OLP-0464; normal-modal-logic/tableaux/soundness; translation/content/normal-modal-logic/tableaux/soundness.tex:35; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the contrapositive countermodel make A false at w while all B_i are true there?
+
+## REV-OLTENMLTABSOU-002 — OLTENMLTABSOU-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: F disjunction పరికల్పనకు తప్పిపోయిన [sigma] పూర్వసూచికను తిరిగి చేర్చి పక్కనే ప్రకటించాం; అది ఇంకా వ్యాయామమే.
+
+- Occurrences: OLP-0464; normal-modal-logic/tableaux/soundness; translation/content/normal-modal-logic/tableaux/soundness.tex:166; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the false-disjunction rule premise have the missing [sigma] prefix restored and remain an exercise?
+
+## REV-OLTENMLTABSOU-003 — OLTENMLTABSOU-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: F Box B నియమ నిష్కర్షలో Aను Bగా, ఇదే మోడల్ వాదనలో generic Struct/Sat చిహ్నాలను mModel/mSatగా సరిచేసి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0464; normal-modal-logic/tableaux/soundness; translation/content/normal-modal-logic/tableaux/soundness.tex:202; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the F Box B case conclude F B at the new prefix and use modal model/satisfaction notation consistently?
+
+## REV-OLTENMLTABSOU-004 — OLTENMLTABSOU-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: T Diamond B నియమ నిష్కర్షలో Aను Bగా, ఇదే మోడల్ వాదనలో generic Struct/Sat చిహ్నాలను mModel/mSatగా సరిచేసి పక్కనే ప్రకటించాం; షరతు ట్యాగ్ నిలిపాం.
+
+- Occurrences: OLP-0464; normal-modal-logic/tableaux/soundness; translation/content/normal-modal-logic/tableaux/soundness.tex:237; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the T Diamond B case conclude T B at the new prefix and use modal model/satisfaction notation consistently while retaining its tags?
+
+## REV-OLTENMLTABSOU-005 — OLTENMLTABSOU-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: రెండు పూర్వాధారాల నిగమనాలు అన్న మూల వర్ణనను ఒక్క పూర్వాధారం నుంచి రెండు శాఖలుగా విడిగే నిగమనాలుగా సరిచేసి ప్రకటించాం; రెండు వ్యాయామాలు నిలిపాం.
+
+- Occurrences: OLP-0464; normal-modal-logic/tableaux/soundness; translation/content/normal-modal-logic/tableaux/soundness.tex:278; printed/PDF page pending
+
+- Please double-check: Please double-check: Are the three later rule cases correctly described as one-premise, two-branch inferences rather than two-premise rules?
+
+## REV-OLTENMLTABSOU-006 — OLTENMLTABSOU-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: వైరుధ్య నిరూపణ చివర పరికల్పన Gamma Proves A పునరుక్తికి బదులు సిద్ధాంత నిష్కర్ష Gamma Entails Aను చేర్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0464; normal-modal-logic/tableaux/soundness; translation/content/normal-modal-logic/tableaux/soundness.tex:329; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the contradiction proof conclude Gamma entails A, matching the corollary, rather than repeat Gamma proves A?

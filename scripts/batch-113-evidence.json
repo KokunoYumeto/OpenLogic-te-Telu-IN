@@ -1,0 +1,33 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "113",
+  "unit_id": "OLP-0464",
+  "unit_order": 464,
+  "source_path": "content/normal-modal-logic/tableaux/soundness.tex",
+  "blocks": 28,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27],
+  "previous_segments": 7028,
+  "previous_terms": 153,
+  "expected_corrections": 435,
+  "canon_default": ["TE-P008", "TE-P010", "TE-P011", "TE-P018", "TE-P019", "TE-P024"],
+  "corrections_by_block": {
+    "7": ["OLTENMLTABSOU-001"],
+    "18": ["OLTENMLTABSOU-002"],
+    "20": ["OLTENMLTABSOU-003"],
+    "22": ["OLTENMLTABSOU-004"],
+    "23": ["OLTENMLTABSOU-005"],
+    "26": ["OLTENMLTABSOU-006"]
+  },
+  "consultation_phase": "స్థిర మోడల్ టాబ్లో నిర్దుష్టత మూలం, తెలుగు లక్ష్యం, పూర్వ టాబ్లో నియమాలు, స్థానిక సమితి/సంబంధ/ప్రమేయకం/సత్యమూల్య/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; f:P->W, ఉపయోగించిన/కొత్త పూర్వసూచిక, శాఖ సంతృప్తి, ఆరు మూల తప్పులను తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P008/010/011 సాధారణ సమితి, సంబంధం, ప్రమేయకానికి; TE-P018/019/024 సాధారణ ప్రతిజ్ఞావాక్య తర్కం, సత్యమూల్యాలు, వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. మోడల్ టాబ్లో అర్థనిర్దేశం, K నిర్దుష్టత, Box/Diamond శాఖ నియమాలకు వాటిలో ప్రత్యక్ష నిరూపణ లేదు. మూల tagfalse, వ్యాయామాలు, ముసాయిదా గమనిక పరిమితులుగా నిలిచాయి.",
+  "term_decision": {
+    "term_id": "TE-T154",
+    "source_term": "soundness of prefixed K tableaux / prefix interpretation / satisfiable branch / fresh witness / entailment corollary",
+    "telugu": "పూర్వసూచిక గల K టాబ్లోల నిర్దుష్టత / పూర్వసూచిక అర్థనిర్దేశం / సంతృప్తిపరచదగిన శాఖ / కొత్త సాక్షి లోకం / పర్యవసాన ఉపసిద్ధాంతం",
+    "status": "native_set_relation_function_truth_derivation_register_attested_modal_soundness_source_controlled_six_disclosed_repairs",
+    "passages": ["TE-P008", "TE-P010", "TE-P011", "TE-P018", "TE-P019", "TE-P024"],
+    "basis": "TE-T039/151/152/153లోని టాబ్లో, చిహ్నిత సూత్రం, పూర్వసూచిక, సంవృత శాఖ రూపాలను కొనసాగించాం. మూలం f:P->W, R సంరక్షణ, T/F సంతృప్తి, శాఖ సంతృప్తిని నిర్వచిస్తుంది; ఉపయోగించిన Box, కొత్త Box/Diamond సాక్షులు, శాఖ విభజన, Gamma Proves నుంచి Gamma Entails నిష్కర్షను ఆరు పక్కన ప్రకటిత మూల సవరణలతో నిలిపాం.",
+    "uncertainty": "స్థానిక సాక్షులు modal K టాబ్లో నిర్దుష్టతకు ప్రత్యక్ష సాంకేతిక పదం/నిరూపణ ఇవ్వవు. మూల స్వయంగా కొన్ని సందర్భాలను వ్యాయామాలుగా వదులుతుంది; tagfalse prvDiamondని నిలిపాం. స్వతంత్ర నిపుణ సమీక్ష, TeX దృశ్య తనిఖీ ఇంకా లేవు.",
+    "borrowing": "టాబ్లో is an established edition borrowing; K, P/Gamma, modal signs, satisfaction macros, references, feature tags and proof identifiers remain protected notation."
+  }
+}

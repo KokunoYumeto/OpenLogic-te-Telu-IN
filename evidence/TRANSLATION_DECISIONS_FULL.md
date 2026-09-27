@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **463 of 722 source units drafted**. This readable view contains all 582 decisions and 1334 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **464 of 722 source units drafted**. This readable view contains all 589 decisions and 1349 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4653,6 +4653,40 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T153-OCC-002; OLP-0463; OLP-0463-B007; source upstream/content/normal-modal-logic/tableaux/proofs-in-K.tex:15-48 bytes 242-1545 SHA-256 17c60b914fceb4b984233ac0cf4aa37d1f6ee938b91e052aa986b970f0f0842b; target translation/content/normal-modal-logic/tableaux/proofs-in-K.tex:15-48 bytes 251-1613 SHA-256 26b077d107dd5943b7d582b1ecc877ca2b90e32d2e7558395ce7be3975b7b59c; reader page pending.
   - te-Telu-IN-TE-T153-OCC-003; OLP-0463; OLP-0463-B008; source upstream/content/normal-modal-logic/tableaux/proofs-in-K.tex:50-84 bytes 1546-2919 SHA-256 17c60b914fceb4b984233ac0cf4aa37d1f6ee938b91e052aa986b970f0f0842b; target translation/content/normal-modal-logic/tableaux/proofs-in-K.tex:50-84 bytes 1614-3046 SHA-256 26b077d107dd5943b7d582b1ecc877ca2b90e32d2e7558395ce7be3975b7b59c; reader page pending.
   - te-Telu-IN-TE-T153-OCC-004; OLP-0463; OLP-0463-B009; source upstream/content/normal-modal-logic/tableaux/proofs-in-K.tex:87-95 bytes 2921-3240 SHA-256 17c60b914fceb4b984233ac0cf4aa37d1f6ee938b91e052aa986b970f0f0842b; target translation/content/normal-modal-logic/tableaux/proofs-in-K.tex:87-96 bytes 3048-3480 SHA-256 26b077d107dd5943b7d582b1ecc877ca2b90e32d2e7558395ce7be3975b7b59c; reader page pending.
+
+## te-Telu-IN-TE-T154 — soundness of prefixed K tableaux / prefix interpretation / satisfiable branch / fresh witness / entailment corollary
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: పూర్వసూచిక గల K టాబ్లోల నిర్దుష్టత / పూర్వసూచిక అర్థనిర్దేశం / సంతృప్తిపరచదగిన శాఖ / కొత్త సాక్షి లోకం / పర్యవసాన ఉపసిద్ధాంతం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “soundness of prefixed K tableaux / prefix interpretation / satisfiable branch / fresh witness / entailment corollary” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు modal K టాబ్లో నిర్దుష్టతకు ప్రత్యక్ష సాంకేతిక పదం/నిరూపణ ఇవ్వవు. మూల స్వయంగా కొన్ని సందర్భాలను వ్యాయామాలుగా వదులుతుంది; tagfalse prvDiamondని నిలిపాం. స్వతంత్ర నిపుణ సమీక్ష, TeX దృశ్య తనిఖీ ఇంకా లేవు.
+
+- Rationale: TE-T039/151/152/153లోని టాబ్లో, చిహ్నిత సూత్రం, పూర్వసూచిక, సంవృత శాఖ రూపాలను కొనసాగించాం. మూలం f:P->W, R సంరక్షణ, T/F సంతృప్తి, శాఖ సంతృప్తిని నిర్వచిస్తుంది; ఉపయోగించిన Box, కొత్త Box/Diamond సాక్షులు, శాఖ విభజన, Gamma Proves నుంచి Gamma Entails నిష్కర్షను ఆరు పక్కన ప్రకటిత మూల సవరణలతో నిలిపాం. టాబ్లో is an established edition borrowing; K, P/Gamma, modal signs, satisfaction macros, references, feature tags and proof identifiers remain protected notation.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: f:P->W అర్థనిర్దేశం, R సంరక్షణ, T/F సంతృప్తి, శాఖ సంతృప్తి, ఉపయోగించిన/కొత్త సాక్షి, ఆరు ప్రకటిత మూల సవరణలు, మూల వ్యాయామాలు/tagfalse పరిమితిని నిలపడం [viable_alternative: ఎంపిక] | ప్రతినమూనాలో A సత్యమని చెప్పడం [viable_alternative: తిరస్కరణ] | F Box B, T Diamond B నుంచి A నిష్కర్షలు తీయడం [viable_alternative: తిరస్కరణ] | రెండు శాఖల నియమాలను రెండు పూర్వాధారాల నియమాలుగా చెప్పడం [viable_alternative: తిరస్కరణ] | Gamma Proves A పరికల్పననే పర్యవసాన నిష్కర్షగా పునరావృతం చేయడం [viable_alternative: తిరస్కరణ] | సాధారణ సంబంధ/తర్క పేజీలు మోడల్ నిర్దుష్టతను నేరుగా నిరూపిస్తాయని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “పూర్వసూచిక గల K టాబ్లోల నిర్దుష్టత / పూర్వసూచిక అర్థనిర్దేశం / సంతృప్తిపరచదగిన శాఖ / కొత్త సాక్షి లోకం / పర్యవసాన ఉపసిద్ధాంతం” is idiomatic and technically standard for “soundness of prefixed K tableaux / prefix interpretation / satisfiable branch / fresh witness / entailment corollary” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T154-OCC-001; OLP-0464; OLP-0464-B005; source upstream/content/normal-modal-logic/tableaux/soundness.tex:11 bytes 176-210 SHA-256 337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100; target translation/content/normal-modal-logic/tableaux/soundness.tex:11 bytes 176-227 SHA-256 5554e67d871f015c4c1159a3f05f1b93dd6882077672cd4ea8992fa1ff69b6c1; reader page pending.
+  - te-Telu-IN-TE-T154-OCC-002; OLP-0464; OLP-0464-B007; source upstream/content/normal-modal-logic/tableaux/soundness.tex:22-38 bytes 639-1538 SHA-256 337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100; target translation/content/normal-modal-logic/tableaux/soundness.tex:23-47 bytes 1329-3702 SHA-256 5554e67d871f015c4c1159a3f05f1b93dd6882077672cd4ea8992fa1ff69b6c1; reader page pending.
+  - te-Telu-IN-TE-T154-OCC-003; OLP-0464; OLP-0464-B009; source upstream/content/normal-modal-logic/tableaux/soundness.tex:45-50 bytes 1751-2061 SHA-256 337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100; target translation/content/normal-modal-logic/tableaux/soundness.tex:54-59 bytes 4172-4663 SHA-256 5554e67d871f015c4c1159a3f05f1b93dd6882077672cd4ea8992fa1ff69b6c1; reader page pending.
+  - te-Telu-IN-TE-T154-OCC-004; OLP-0464; OLP-0464-B011; source upstream/content/normal-modal-logic/tableaux/soundness.tex:61-70 bytes 2365-2884 SHA-256 337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100; target translation/content/normal-modal-logic/tableaux/soundness.tex:70-81 bytes 5281-6317 SHA-256 5554e67d871f015c4c1159a3f05f1b93dd6882077672cd4ea8992fa1ff69b6c1; reader page pending.
+  - te-Telu-IN-TE-T154-OCC-005; OLP-0464; OLP-0464-B015; source upstream/content/normal-modal-logic/tableaux/soundness.tex:89-92 bytes 3399-3603 SHA-256 337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100; target translation/content/normal-modal-logic/tableaux/soundness.tex:102-107 bytes 7087-7649 SHA-256 5554e67d871f015c4c1159a3f05f1b93dd6882077672cd4ea8992fa1ff69b6c1; reader page pending.
+  - te-Telu-IN-TE-T154-OCC-006; OLP-0464; OLP-0464-B020; source upstream/content/normal-modal-logic/tableaux/soundness.tex:165-175 bytes 7506-8181 SHA-256 337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100; target translation/content/normal-modal-logic/tableaux/soundness.tex:195-214 bytes 15289-17053 SHA-256 5554e67d871f015c4c1159a3f05f1b93dd6882077672cd4ea8992fa1ff69b6c1; reader page pending.
+  - te-Telu-IN-TE-T154-OCC-007; OLP-0464; OLP-0464-B022; source upstream/content/normal-modal-logic/tableaux/soundness.tex:188-199 bytes 8739-9446 SHA-256 337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100; target translation/content/normal-modal-logic/tableaux/soundness.tex:229-249 bytes 17879-19664 SHA-256 5554e67d871f015c4c1159a3f05f1b93dd6882077672cd4ea8992fa1ff69b6c1; reader page pending.
+  - te-Telu-IN-TE-T154-OCC-008; OLP-0464; OLP-0464-B023; source upstream/content/normal-modal-logic/tableaux/soundness.tex:201-240 bytes 9447-11690 SHA-256 337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100; target translation/content/normal-modal-logic/tableaux/soundness.tex:251-302 bytes 19665-23656 SHA-256 5554e67d871f015c4c1159a3f05f1b93dd6882077672cd4ea8992fa1ff69b6c1; reader page pending.
+  - te-Telu-IN-TE-T154-OCC-009; OLP-0464; OLP-0464-B025; source upstream/content/normal-modal-logic/tableaux/soundness.tex:246-249 bytes 11784-11891 SHA-256 337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100; target translation/content/normal-modal-logic/tableaux/soundness.tex:308-311 bytes 23791-23906 SHA-256 5554e67d871f015c4c1159a3f05f1b93dd6882077672cd4ea8992fa1ff69b6c1; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -15887,3 +15921,159 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLTABRUL-002-OCC-001; OLP-0462; OLP-0462-B016; source upstream/content/normal-modal-logic/tableaux/rules-for-K.tex:222-271 bytes 7611-9543 SHA-256 781f917de40a4b8e0c38ade5e7cd1d9eab39a629563df7f6d07e0434ab5dffe3; target translation/content/normal-modal-logic/tableaux/rules-for-K.tex:240 bytes 11957-12053 SHA-256 acefd674d2f2afe9014f2de606ce92bf99ea032bb8356e6f70e198282a64f1a2; reader page pending.
+
+## te-Telu-IN-OLTENMLTABSOU-001 — OLTENMLTABSOU-001: contrapositive countermodel wrong truth sign
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: వ్యతిరేకావర్తన ప్రతినమూనాలో A సత్య చిహ్నాన్ని అసత్య చిహ్నంగా మార్చి పక్కనే ప్రకటించాం; B_i, లోకం w యథాతథం.
+
+- Intended sense: Repair the audited contrapositive countermodel wrong truth sign at soundness.tex lines 28-32, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLTABSOU-20260927:OLTENMLTABSOU-001 [checked_supports], content/normal-modal-logic/tableaux/soundness.tex; soundness.tex lines 28-32; contrapositive_countermodel_wrong_truth_sign; వ్యతిరేకావర్తన ప్రతినమూనాలో A సత్య చిహ్నాన్ని అసత్య చిహ్నంగా మార్చి పక్కనే ప్రకటించాం; B_i, లోకం w యథాతథం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the contrapositive countermodel make A false at w while all B_i are true there?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLTABSOU-001-OCC-001; OLP-0464; OLP-0464-B007; source upstream/content/normal-modal-logic/tableaux/soundness.tex:22-38 bytes 639-1538 SHA-256 337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100; target translation/content/normal-modal-logic/tableaux/soundness.tex:35 bytes 2167-2248 SHA-256 5554e67d871f015c4c1159a3f05f1b93dd6882077672cd4ea8992fa1ff69b6c1; reader page pending.
+
+## te-Telu-IN-OLTENMLTABSOU-002 — OLTENMLTABSOU-002: false disjunction premise missing prefix
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: F disjunction పరికల్పనకు తప్పిపోయిన [sigma] పూర్వసూచికను తిరిగి చేర్చి పక్కనే ప్రకటించాం; అది ఇంకా వ్యాయామమే.
+
+- Intended sense: Repair the audited false disjunction premise missing prefix at soundness.tex lines 140-141, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLTABSOU-20260927:OLTENMLTABSOU-002 [checked_supports], content/normal-modal-logic/tableaux/soundness.tex; soundness.tex lines 140-141; false_disjunction_premise_missing_prefix; F disjunction పరికల్పనకు తప్పిపోయిన [sigma] పూర్వసూచికను తిరిగి చేర్చి పక్కనే ప్రకటించాం; అది ఇంకా వ్యాయామమే..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the false-disjunction rule premise have the missing [sigma] prefix restored and remain an exercise?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLTABSOU-002-OCC-001; OLP-0464; OLP-0464-B018; source upstream/content/normal-modal-logic/tableaux/soundness.tex:112-151 bytes 4600-6854 SHA-256 337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100; target translation/content/normal-modal-logic/tableaux/soundness.tex:166 bytes 13132-13207 SHA-256 5554e67d871f015c4c1159a3f05f1b93dd6882077672cd4ea8992fa1ff69b6c1; reader page pending.
+
+## te-Telu-IN-OLTENMLTABSOU-003 — OLTENMLTABSOU-003: false box new conclusion wrong variable and generic satisfaction notation
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: F Box B నియమ నిష్కర్షలో Aను Bగా, ఇదే మోడల్ వాదనలో generic Struct/Sat చిహ్నాలను mModel/mSatగా సరిచేసి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited false box new conclusion wrong variable and generic satisfaction notation at soundness.tex lines 165-175, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLTABSOU-20260927:OLTENMLTABSOU-003 [checked_supports], content/normal-modal-logic/tableaux/soundness.tex; soundness.tex lines 165-175; false_box_new_conclusion_wrong_variable_and_generic_satisfaction_notation; F Box B నియమ నిష్కర్షలో Aను Bగా, ఇదే మోడల్ వాదనలో generic Struct/Sat చిహ్నాలను mModel/mSatగా సరిచేసి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the F Box B case conclude F B at the new prefix and use modal model/satisfaction notation consistently?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLTABSOU-003-OCC-001; OLP-0464; OLP-0464-B020; source upstream/content/normal-modal-logic/tableaux/soundness.tex:165-175 bytes 7506-8181 SHA-256 337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100; target translation/content/normal-modal-logic/tableaux/soundness.tex:202 bytes 15824-15911 SHA-256 5554e67d871f015c4c1159a3f05f1b93dd6882077672cd4ea8992fa1ff69b6c1; reader page pending.
+
+## te-Telu-IN-OLTENMLTABSOU-004 — OLTENMLTABSOU-004: true diamond new conclusion wrong variable and generic satisfaction notation
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: T Diamond B నియమ నిష్కర్షలో Aను Bగా, ఇదే మోడల్ వాదనలో generic Struct/Sat చిహ్నాలను mModel/mSatగా సరిచేసి పక్కనే ప్రకటించాం; షరతు ట్యాగ్ నిలిపాం.
+
+- Intended sense: Repair the audited true diamond new conclusion wrong variable and generic satisfaction notation at soundness.tex lines 188-199, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLTABSOU-20260927:OLTENMLTABSOU-004 [checked_supports], content/normal-modal-logic/tableaux/soundness.tex; soundness.tex lines 188-199; true_diamond_new_conclusion_wrong_variable_and_generic_satisfaction_notation; T Diamond B నియమ నిష్కర్షలో Aను Bగా, ఇదే మోడల్ వాదనలో generic Struct/Sat చిహ్నాలను mModel/mSatగా సరిచేసి పక్కనే ప్రకటించాం; షరతు ట్యాగ్ నిలిపాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the T Diamond B case conclude T B at the new prefix and use modal model/satisfaction notation consistently while retaining its tags?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLTABSOU-004-OCC-001; OLP-0464; OLP-0464-B022; source upstream/content/normal-modal-logic/tableaux/soundness.tex:188-199 bytes 8739-9446 SHA-256 337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100; target translation/content/normal-modal-logic/tableaux/soundness.tex:237 bytes 18428-18518 SHA-256 5554e67d871f015c4c1159a3f05f1b93dd6882077672cd4ea8992fa1ff69b6c1; reader page pending.
+
+## te-Telu-IN-OLTENMLTABSOU-005 — OLTENMLTABSOU-005: branching rules misdescribed two premises
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: రెండు పూర్వాధారాల నిగమనాలు అన్న మూల వర్ణనను ఒక్క పూర్వాధారం నుంచి రెండు శాఖలుగా విడిగే నిగమనాలుగా సరిచేసి ప్రకటించాం; రెండు వ్యాయామాలు నిలిపాం.
+
+- Intended sense: Repair the audited branching rules misdescribed two premises at soundness.tex lines 222-239, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLTABSOU-20260927:OLTENMLTABSOU-005 [checked_supports], content/normal-modal-logic/tableaux/soundness.tex; soundness.tex lines 222-239; branching_rules_misdescribed_two_premises; రెండు పూర్వాధారాల నిగమనాలు అన్న మూల వర్ణనను ఒక్క పూర్వాధారం నుంచి రెండు శాఖలుగా విడిగే నిగమనాలుగా సరిచేసి ప్రకటించాం; రెండు వ్యాయామాలు నిలిపాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Are the three later rule cases correctly described as one-premise, two-branch inferences rather than two-premise rules?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLTABSOU-005-OCC-001; OLP-0464; OLP-0464-B023; source upstream/content/normal-modal-logic/tableaux/soundness.tex:201-240 bytes 9447-11690 SHA-256 337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100; target translation/content/normal-modal-logic/tableaux/soundness.tex:278 bytes 21724-21821 SHA-256 5554e67d871f015c4c1159a3f05f1b93dd6882077672cd4ea8992fa1ff69b6c1; reader page pending.
+
+## te-Telu-IN-OLTENMLTABSOU-006 — OLTENMLTABSOU-006: soundness corollary proof repeats premise as conclusion
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: వైరుధ్య నిరూపణ చివర పరికల్పన Gamma Proves A పునరుక్తికి బదులు సిద్ధాంత నిష్కర్ష Gamma Entails Aను చేర్చి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited soundness corollary proof repeats premise as conclusion at soundness.tex lines 251-261, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLTABSOU-20260927:OLTENMLTABSOU-006 [checked_supports], content/normal-modal-logic/tableaux/soundness.tex; soundness.tex lines 251-261; soundness_corollary_proof_repeats_premise_as_conclusion; వైరుధ్య నిరూపణ చివర పరికల్పన Gamma Proves A పునరుక్తికి బదులు సిద్ధాంత నిష్కర్ష Gamma Entails Aను చేర్చి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the contradiction proof conclude Gamma entails A, matching the corollary, rather than repeat Gamma proves A?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLTABSOU-006-OCC-001; OLP-0464; OLP-0464-B026; source upstream/content/normal-modal-logic/tableaux/soundness.tex:251-262 bytes 11892-12584 SHA-256 337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100; target translation/content/normal-modal-logic/tableaux/soundness.tex:329 bytes 25044-25132 SHA-256 5554e67d871f015c4c1159a3f05f1b93dd6882077672cd4ea8992fa1ff69b6c1; reader page pending.

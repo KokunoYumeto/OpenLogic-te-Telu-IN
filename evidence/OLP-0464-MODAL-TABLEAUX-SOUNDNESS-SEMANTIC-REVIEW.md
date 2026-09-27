@@ -1,0 +1,14 @@
+# OLP-0464 — same-agent semantic review
+
+- Frozen source: `upstream/content/normal-modal-logic/tableaux/soundness.tex`, SHA-256 `337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100`.
+- Telugu target: `translation/content/normal-modal-logic/tableaux/soundness.tex`, SHA-256 `5554e67d871f015c4c1159a3f05f1b93dd6882077672cd4ea8992fa1ff69b6c1`.
+- Bounded QA: `build/BATCH-113-STRUCTURAL-QA.json`, 28 aligned blocks; structure, tokens, protected identifiers and math pass after the six exact disclosed source repairs in `evidence/OLP-0464-MODAL-TABLEAUX-SOUNDNESS-SOURCE-AUDIT.md`. This is same-agent review, not TeX compilation or independent proof certification.
+
+## Reverse reading
+
+1. The editorial text retains the self-contained-versus-repetitive proof warning. The contraposition starts with all premises true and the conclusion false at one world; correction 001 repairs the source's contradictory positive sign. The proof strategy is to preserve at least one satisfiable branch under every rule application.
+2. The prefix interpretation is exactly a map `f:P->W` respecting `R` whenever both `sigma` and `sigma.n` occur. The signed truth and falsehood clauses, satisfaction of a set `Gamma`, the inconsistency of opposite signs at one prefix, and the closed-tableau theorem retain their quantifier and conditional directions.
+3. The proof keeps the original one-premise cases, including the exercises. Correction 002 restores the missing prefix on the false-disjunction premise. The true-Box used-prefix argument and false-Box fresh-witness argument remain distinguished. Correction 003 makes the false-Box conclusion use the premise's `B` and consistently uses modal satisfaction notation; correction 004 does the same for true-Diamond. The false-Diamond used-prefix case remains unchanged. The source's explicit `\tagfalse{prvDiamond}` is retained: the tagged Diamond cases are not represented here as guaranteed visible in a compiled variant.
+4. The false-conjunction rule has one premise and two branches; the other two branching cases remain exercises. Correction 005 fixes the source's “two premises” heading. The final problem still asks the reader to complete the theorem proof. The first corollary's contradiction establishes entailment from provability; correction 006 repairs the source's repeated-premise conclusion. The weak-soundness corollary is retained without adding a proof the source does not give.
+
+Native TE-P008/010/011 and TE-P018/019/024 support general sets, relations, functions, propositional logic, truth values and derivation register only. They do not directly attest modal prefix interpretations or the soundness theorem. The special definitions and rule cases are governed by the frozen source and preceding OLP-0461–0463 units. Full visual TeX QA and independent mathematical review remain pending.

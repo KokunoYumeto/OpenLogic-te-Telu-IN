@@ -1,0 +1,57 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLTABSOU-20260927",
+  "unit_id": "OLP-0464",
+  "source_path": "content/normal-modal-logic/tableaux/soundness.tex",
+  "source_sha256": "337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100",
+  "findings": [
+    {
+      "finding_id": "OLTENMLTABSOU-001",
+      "source_locator": "soundness.tex lines 28-32",
+      "classification": "contrapositive_countermodel_wrong_truth_sign",
+      "source_issue": "The purported countermodel says A is true at w, but must make A false for failure of entailment.",
+      "minimal_treatment": "Use negative modal satisfaction for A at w and disclose; preserve all B_i and w notation.",
+      "expected_core_math_delta": {"source_only": ["$\\mSat{M}{!A}[w]$"], "target_only": ["$\\mSat/{M}{!A}[w]$"]}
+    },
+    {
+      "finding_id": "OLTENMLTABSOU-002",
+      "source_locator": "soundness.tex lines 140-141",
+      "classification": "false_disjunction_premise_missing_prefix",
+      "source_issue": "The false-disjunction premise omits [sigma], although the rule and surrounding proof concern prefixed signed formulas.",
+      "minimal_treatment": "Restore [sigma] on the premise only and keep the case as an exercise.",
+      "expected_core_math_delta": {"source_only": ["$\\sFmla{\\False}{!B\\lor!C}\\in\\Gamma$"], "target_only": ["$\\sFmla{\\False}{!B\\lor!C}[\\sigma]\\in\\Gamma$"]}
+    },
+    {
+      "finding_id": "OLTENMLTABSOU-003",
+      "source_locator": "soundness.tex lines 165-175",
+      "classification": "false_box_new_conclusion_wrong_variable_and_generic_satisfaction_notation",
+      "source_issue": "F Box B incorrectly yields a displayed F A conclusion; the same modal argument uses Struct/Sat notation rather than the defined mModel/mSat notation.",
+      "minimal_treatment": "Use F B as the new conclusion and modal-model/satisfaction notation consistently, with adjacent disclosure; retain the witness argument.",
+      "expected_core_math_delta": {"source_only": ["$\\sFmla{\\False}{!A}[\\sigma.n]$", "$\\Struct{M}$", "$\\Sat{M}{\\Gamma}[f]$"], "target_only": ["$\\sFmla{\\False}{!B}[\\sigma.n]$", "$\\mModel{M}$", "$\\mSat{M}{\\Gamma}[f]$"]}
+    },
+    {
+      "finding_id": "OLTENMLTABSOU-004",
+      "source_locator": "soundness.tex lines 188-199",
+      "classification": "true_diamond_new_conclusion_wrong_variable_and_generic_satisfaction_notation",
+      "source_issue": "T Diamond B incorrectly yields a displayed T A conclusion; the same modal argument uses Struct/Sat notation rather than the defined mModel/mSat notation.",
+      "minimal_treatment": "Use T B as the new conclusion and modal-model/satisfaction notation consistently, with adjacent disclosure; retain conditional tags and witness argument.",
+      "expected_core_math_delta": {"source_only": ["$\\sFmla{\\True}{!A}[\\sigma.n]$", "$\\Struct{M}$", "$\\Sat{M}{\\Gamma}[f]$"], "target_only": ["$\\sFmla{\\True}{!B}[\\sigma.n]$", "$\\mModel{M}$", "$\\mSat{M}{\\Gamma}[f]$"]}
+    },
+    {
+      "finding_id": "OLTENMLTABSOU-005",
+      "source_locator": "soundness.tex lines 222-239",
+      "classification": "branching_rules_misdescribed_two_premises",
+      "source_issue": "The three listed rules each have one premise and two conclusion branches, not two premises.",
+      "minimal_treatment": "Introduce them as branch-splitting inferences and disclose; leave the worked case and two exercises intact.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTENMLTABSOU-006",
+      "source_locator": "soundness.tex lines 251-261",
+      "classification": "soundness_corollary_proof_repeats_premise_as_conclusion",
+      "source_issue": "The final sentence concludes Gamma proves A instead of the claimed Gamma entails A after the contradiction argument.",
+      "minimal_treatment": "Conclude Gamma entails A and disclose; preserve the formal corollary statement and preceding proof.",
+      "expected_core_math_delta": {"source_only": ["$\\Gamma\\Proves!A$"], "target_only": ["$\\Gamma\\Entails!A$"]}
+    }
+  ]
+}

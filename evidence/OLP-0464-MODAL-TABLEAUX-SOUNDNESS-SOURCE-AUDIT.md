@@ -1,0 +1,12 @@
+# OLP-0464 — source-error audit
+
+Frozen source: `upstream/content/normal-modal-logic/tableaux/soundness.tex`, SHA-256 `337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100`. The source is unchanged. Each treatment below is disclosed in the Telugu unit; no exercise is silently filled in.
+
+1. **OLTENMLTABSOU-001 (lines 28–32):** The countermodel for the contrapositive has all `B_i` true at `w` but must have `A` **false** there. Source prints positive `\mSat{M}{!A}[w]`, contradicting the countermodel and subsequent corollary proof. Target uses negative `\mSat/{M}{!A}[w]`.
+2. **OLTENMLTABSOU-002 (lines 140–141):** The false-disjunction rule item omits the prefix on its premise, unlike the preceding definition and every other item. Target restores `[\sigma]` on `\sFmla{\False}{!B \lor !C}`; it remains an exercise.
+3. **OLTENMLTABSOU-003 (lines 165–175):** The false-Box item starts from `F Box B` but calls its new conclusion `F A`; the rest of the same argument uses `F B`. Target makes the conclusion `F B`. This same modal-model argument switches to generic `\Struct{M}` and `\Sat{M}{\Gamma}` notation, so target uses the already defined `\mModel{M}` and `\mSat{M}{\Gamma}` consistently. The witness and fresh-prefix proof are not altered.
+4. **OLTENMLTABSOU-004 (lines 188–199):** The true-Diamond item analogously starts from `T Diamond B` but calls its new conclusion `T A`, while all subsequent steps use `T B`. Target uses `T B` and restores the modal-model/satisfaction notation as in finding 003. The item remains behind the frozen source's conditional tags.
+5. **OLTENMLTABSOU-005 (line 222):** The source introduces the false-conjunction, true-disjunction and true-conditional rules as “inferences with two premises.” Each has one premise and splits into two branches. Target calls them branch-splitting inferences. The false-conjunction case and two open exercises are preserved.
+6. **OLTENMLTABSOU-006 (lines 251–261):** The first corollary proves `\Gamma \Proves !A` implies `\Gamma \Entails !A` by contradiction, but its final sentence repeats the premise `\Gamma \Proves !A`. Target concludes `\Gamma \Entails !A`.
+
+The source's `\tagfalse{prvDiamond}` inside the proof is retained, not silently re-enabled; its effect on feature-specific rendering requires later TeX validation. The duplicated wording “modal modals” and the editorial draft note are rendered intelligibly without altering formal content or claiming a source repair. This audit is same-agent textual/mathematical review, not external refereeing.

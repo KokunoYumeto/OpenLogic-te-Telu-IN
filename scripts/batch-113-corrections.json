@@ -1,0 +1,38 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0464",
+  "source_path": "content/normal-modal-logic/tableaux/soundness.tex",
+  "source_sha256": "337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100",
+  "audit_id": "OLTENMLTABSOU-20260927",
+  "audit_review_path": "evidence/OLP-0464-MODAL-TABLEAUX-SOUNDNESS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "125edec5d39be358cfc1398645f885d8a1aa9ad0752e4f451c8ccd05d5e674ae",
+  "audit_findings_path": "evidence/OLP-0464-MODAL-TABLEAUX-SOUNDNESS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "e144b1abbc0cf45cad2fe06101821a2ca5c4d4d695104780d9991ae45e06976b",
+  "previous_corrections": 429,
+  "treatments": {
+    "OLTENMLTABSOU-001": {
+      "target_line": 35,
+      "body_treatment": "వ్యతిరేకావర్తన ప్రతినమూనాలో A సత్య చిహ్నాన్ని అసత్య చిహ్నంగా మార్చి పక్కనే ప్రకటించాం; B_i, లోకం w యథాతథం."
+    },
+    "OLTENMLTABSOU-002": {
+      "target_line": 166,
+      "body_treatment": "F disjunction పరికల్పనకు తప్పిపోయిన [sigma] పూర్వసూచికను తిరిగి చేర్చి పక్కనే ప్రకటించాం; అది ఇంకా వ్యాయామమే."
+    },
+    "OLTENMLTABSOU-003": {
+      "target_line": 202,
+      "body_treatment": "F Box B నియమ నిష్కర్షలో Aను Bగా, ఇదే మోడల్ వాదనలో generic Struct/Sat చిహ్నాలను mModel/mSatగా సరిచేసి పక్కనే ప్రకటించాం."
+    },
+    "OLTENMLTABSOU-004": {
+      "target_line": 237,
+      "body_treatment": "T Diamond B నియమ నిష్కర్షలో Aను Bగా, ఇదే మోడల్ వాదనలో generic Struct/Sat చిహ్నాలను mModel/mSatగా సరిచేసి పక్కనే ప్రకటించాం; షరతు ట్యాగ్ నిలిపాం."
+    },
+    "OLTENMLTABSOU-005": {
+      "target_line": 278,
+      "body_treatment": "రెండు పూర్వాధారాల నిగమనాలు అన్న మూల వర్ణనను ఒక్క పూర్వాధారం నుంచి రెండు శాఖలుగా విడిగే నిగమనాలుగా సరిచేసి ప్రకటించాం; రెండు వ్యాయామాలు నిలిపాం."
+    },
+    "OLTENMLTABSOU-006": {
+      "target_line": 329,
+      "body_treatment": "వైరుధ్య నిరూపణ చివర పరికల్పన Gamma Proves A పునరుక్తికి బదులు సిద్ధాంత నిష్కర్ష Gamma Entails Aను చేర్చి పక్కనే ప్రకటించాం."
+    }
+  }
+}
