@@ -998,6 +998,38 @@ locations['TE-T159']=[
  L('content/normal-modal-logic/tableaux/countermodels.tex',203,209,228,243,'\\sFmla{\\True}{\\Diamond(p \\land q)}[1]','\\sFmla{\\False}{\\Diamond(p \\land q)}[1]'),
  L('content/normal-modal-logic/tableaux/countermodels.tex',279,287,317,332,'V(q)','V(q)')
 ];
+locations['TE-T160']=[
+ L('content/normal-modal-logic/sequent-calculus/sequent-calculus.tex',8,8,8,8,'Modal Sequent Calculus','మోడల్ సీక్వెంట్ కలనశాస్త్రం'),
+ L('content/normal-modal-logic/sequent-calculus/sequent-calculus.tex',10,13,10,13,'Draft chapter','ముసాయిదా అధ్యాయం'),
+ L('content/normal-modal-logic/sequent-calculus/sequent-calculus.tex',15,23,15,23,'\\olimport{introduction}','\\olimport{introduction}')
+];
+locations['TE-T161']=[
+ L('content/normal-modal-logic/sequent-calculus/introduction.tex',11,16,11,17,'sequent calculus','సీక్వెంట్ కలనశాస్త్రాన్ని'),
+ L('content/normal-modal-logic/sequent-calculus/introduction.tex',18,40,18,40,'\\Axiom','\\Axiom'),
+ L('content/normal-modal-logic/sequent-calculus/introduction.tex',44,49,44,50,'hypersequent','హైపర్ సీక్వెంట్')
+];
+locations['TE-T162']=[
+ L('content/normal-modal-logic/sequent-calculus/rules-for-K.tex',11,15,11,15,'Rules for \\Log{K}','\\Log{K} కోసం నియమాలు'),
+ L('content/normal-modal-logic/sequent-calculus/rules-for-K.tex',17,42,17,42,'additional','అదనపు'),
+ L('content/normal-modal-logic/sequent-calculus/rules-for-K.tex',43,56,43,61,'\\Box\\Gamma','\\Box\\Gamma'),
+ L('content/normal-modal-logic/sequent-calculus/rules-for-K.tex',58,92,63,99,'restriction','పరిమితి'),
+ L('content/normal-modal-logic/sequent-calculus/rules-for-K.tex',94,127,101,136,'side formulas','ఇతర సూత్రాలను')
+];
+locations['TE-T163']=[
+ L('content/normal-modal-logic/sequent-calculus/proofs-in-K.tex',11,17,11,18,'Sequent \\usetoken{P}{derivation}','సీక్వెంట్ \\usetoken{P}{derivation}'),
+ L('content/normal-modal-logic/sequent-calculus/proofs-in-K.tex',47,50,49,52,'\\Diamond(!A','\\Diamond(!A'),
+ L('content/normal-modal-logic/sequent-calculus/proofs-in-K.tex',81,108,83,115,'Here is','వ్యుత్పత్తి'),
+ L('content/normal-modal-logic/sequent-calculus/proofs-in-K.tex',117,125,124,132,'Find sequent','సీక్వెంట్ కలనశాస్త్ర')
+];
+locations['TE-T164']=[
+ L('content/normal-modal-logic/sequent-calculus/more-rules.tex',11,14,11,15,'Other Accessibility Relations','ఇతర ప్రాప్యత సంబంధాల'),
+ L('content/normal-modal-logic/sequent-calculus/more-rules.tex',16,79,16,80,'More modal rules','మరికొన్ని మోడల్ నియమాలు'),
+ L('content/normal-modal-logic/sequent-calculus/more-rules.tex',165,166,165,167,'sound and complete','నిర్దుష్టమైన, సంపూర్ణమైన'),
+ L('content/normal-modal-logic/sequent-calculus/more-rules.tex',168,220,169,221,'reflexive','స్వావర్తనం'),
+ L('content/normal-modal-logic/sequent-calculus/more-rules.tex',222,246,223,249,'\\Log{K4} \\Proves \\Ax{4}','\\Log{K4} \\Proves \\Ax{4}'),
+ L('content/normal-modal-logic/sequent-calculus/more-rules.tex',293,350,299,356,'not complete without','లేకుండా సంపూర్ణం కాదు'),
+ L('content/normal-modal-logic/sequent-calculus/more-rules.tex',352,362,358,368,'Give sequent','వ్యుత్పత్తులను')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -1143,6 +1175,11 @@ alternatives['TE-T156']=['T స్వావర్తన, D సీరియల్
 alternatives['TE-T157']=['సార్వత్రిక S5 నమూనాల్లో ప్రతి లోకం నుంచి ప్రతి లోకం ప్రాప్యమని, అనుక్రమాల బదులు ధన పూర్ణసంఖ్య పూర్వసూచికలు వాడవచ్చని, T Box/F Diamondకు పాత m, F Box/T Diamondకు కొత్త m, 2/3 సాక్షులతో 5 సంవృత చెట్టు అని నిలపడం (ఎంపిక)','S5లోని ఏకైక లోకమే ప్రతి పూర్వసూచికకు ఉండాలని చెప్పడం (తిరస్కరణ)','used/new m నియమాలను తారుమారు చేయడం (తిరస్కరణ)','ప్రతి సార్వత్రిక నమూనా అచ్చంగా ఒక్క లోకం గలదని చెప్పడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీ S5 సంపూర్ణతకు ప్రత్యక్ష నిరూపణ అని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T158']=['సంపూర్ణ శాఖ సంతృప్తి, పూర్వసూచిక నమూనా, సత్య ఆగమనాన్ని నిలిపి, ఏడు మూల సవరణలను ప్రకటించడం; పరిమిత Gamma ఆధారంతో సాధారణ సంపూర్ణతను నిరూపించలేదని స్పష్టంగా ఉంచడం (ఎంపిక)','ప్రతి శాఖ సంవృతం అనే మూల ముగింపును యథాతథంగా అనువదించడం (తిరస్కరణ)','మూడు అసత్య ఆగమన సందర్భాల్లో రెండో Bనే ఉంచడం (తిరస్కరణ)','అనంత Gammaకు మూలంలో లేని నిరూపణను కల్పించడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలు K టాబ్లో సంపూర్ణతను నిరూపిస్తాయని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T159']=['K నిర్ణయ విధానం, Box/Diamond రెండు ప్రతినమూనా చెట్లు, W/R/V నమూనాలను నిలిపి, ఐదు స్థానిక మూల పొరపాట్లు ప్రకటించి సరిచేయడం (ఎంపిక)','F Diamond పంక్తికి T Diamond నియమాన్ని వర్తింపజేయడం (తిరస్కరణ)','మధ్య చెట్టులో తిరగబడిన షరతును నిజమైన మొదటి సూత్రంగా ఉంచడం (తిరస్కరణ)','నమూనా చిత్రాన్ని చెట్టుకి విరుద్ధంగా మార్చడం (తిరస్కరణ)','మునుపటి సాధారణ Gamma నిరూపణ ఖాళీ ఇక్కడే పరిష్కరించబడిందని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T160']=['మోడల్ సీక్వెంట్ కలనశాస్త్రం శీర్షిక, ముసాయిదా హెచ్చరిక, నాలుగు క్రియాశీల/మూడు వ్యాఖ్యానిత దిగుమతులను నిలపడం (ఎంపిక)','ముసాయిదాను పూర్తి నిరూపణలున్న అధ్యాయంగా చూపడం (తిరస్కరణ)','వ్యాఖ్యానిత దిగుమతులను సక్రియం చేయడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీని modal సీక్వెంట్ పూర్తి నిరూపణగా చూపడం (తిరస్కరణ)'];
+alternatives['TE-T161']=['LK నుంచి Kకి Box/Diamond feature నియమాలు, S5లో సాధారణ కట్-రహిత సీక్వెంట్ తెలియదనే పరిమిత వాదన, హైపర్ సీక్వెంట్ ఉనికిని నిలపడం (ఎంపిక)','S5కు అలాంటి కలనశాస్త్రం అసాధ్యమని బలమైన వాదనగా మార్చడం (తిరస్కరణ)','మూడు feature రూపాల్లో ఒకటే ముద్రించడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీ హైపర్ సీక్వెంట్‌ను నేరుగా నిరూపిస్తుందని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T162']=['K నియమాల్లో ఒక్క ప్రధాన సూత్ర పరిమితి, ఖాళీ సందర్భాలు, రెండు నక్షత్ర నియమ ప్రతివాదాలను నిలపడం (ఎంపిక)','నక్షత్ర నియమాలను చెల్లే K నియమాలుగా చూపడం (తిరస్కరణ)','Gamma/Delta అనుక్రమాలకు అన్ని సూత్రాల prefix చేర్పును మానడం (తిరస్కరణ)','స్థానిక సాధారణ వ్యుత్పత్తి పేజీ modal K నియమ నిర్దుష్టతకు ప్రత్యక్ష నిరూపణ అని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T163']=['Box/Diamond వ్యాప్తి చెట్లు, Dual వ్యుత్పత్తి, నాలుగు వ్యాయామాలు నిలిపి రెండు ఎడమ నిరాకరణ చీటీలను ప్రకటించి సరిచేయడం (ఎంపిక)','ఎడమ నిరాకరణ అడుగులను కుడి నిరాకరణగా వదిలేయడం (తిరస్కరణ)','వ్యాయామాలకు మూలంలో లేని పూర్తి పరిష్కారాలు చేర్చడం (తిరస్కరణ)','Dual చెట్టు చివరి iff/land దశ అన్ని feature రూపాల్లో స్వతంత్రంగా ధ్రువీకరించామని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T164']=['T/D/B/4/5 మూడు feature పట్టికలు, ఆరు తర్క-ప్రాప్యత జతలు, K4/S5 చెట్లు, కట్ ఉదాహరణ, ఆరు సమస్యలు నిలపడం (ఎంపిక)','S5 కట్ లేకుండానే ఈ LK-ఆధార వ్యవస్థ సంపూర్ణమని చెప్పడం (తిరస్కరణ)','మూలం ఇంకా కావాలన్న నిరూపణలను పూర్తిగా ఇచ్చినట్టు చెప్పడం (తిరస్కరణ)','స్థానిక సాధారణ సంబంధ పేజీ modal సీక్వెంట్ సంపూర్ణతకు ప్రత్యక్ష నిరూపణ అని చెప్పడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -1158,7 +1195,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T159 record the Batch 025--Batch 118 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T164 record the Batch 025--Batch 123 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1522,6 +1559,7 @@ const correctionQuestions={
  ,'OLTENMLTABCM-003':'Does the Diamond example apply F Diamond to its F Diamond line 3 at both already-used successor prefixes?'
  ,'OLTENMLTABCM-004':'Does the middle Diamond tableau root test the same implication as the first and third trees, consistent with its F conditional children?'
  ,'OLTENMLTABCM-005':'Does the Diamond model assign q to 1.2 and cite the T q[1.2] witness on line 7?'
+ ,'OLTENMLSEQPRK-001':'Do both corrected Dual-tree labels introduce negation on the antecedent, matching the frozen LK left-negation rule?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

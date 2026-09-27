@@ -1,0 +1,52 @@
+% Part: normal-modal-logic
+% Chapter: sequent-calculus
+% Section: introduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{seq}{int}
+
+\olsection{పరిచయం}
+
+ప్రతిజ్ఞావాక్య తర్కపు సీక్వెంట్ కలనశాస్త్రాన్ని
+\iftag{prvBox}{$\Box$\iftag{prvDiamond}{ మరియు~}{}}{}%
+\iftag{prvDiamond}{$\Diamond$}{} కోసం అదనపు నియమాలతో
+విస్తరించవచ్చు. ఉదాహరణకు, $\Log{K}$ కోసం
+\Log{LK}తో పాటు ఇవి ఉంటాయి:
+\[
+  \iftag{prvBox}{\iftag{prvDiamond}{% <> and [] primitive
+    \Axiom$\Gamma \fCenter \Delta, !A$
+    \RightLabel{$\Box$}
+    \UnaryInf$\Box\Gamma \fCenter \Diamond\Delta, \Box!A$
+    \DisplayProof
+    \qquad
+    \Axiom$!A, \Gamma \fCenter \Delta$
+    \RightLabel{$\Diamond$}
+    \UnaryInf$\Diamond!A, \Box\Gamma \fCenter \Diamond\Delta$
+    \DisplayProof
+}{% only Box primitive
+\Axiom$\Gamma \fCenter !A$
+\RightLabel{$\Box$}
+\UnaryInf$\Box\Gamma \fCenter \Box!A$
+\DisplayProof
+}}{% only <> primitive
+  \Axiom$!A \fCenter \Delta$
+  \RightLabel{$\Diamond$}
+  \UnaryInf$\Diamond!A \fCenter \Diamond\Delta$
+  \DisplayProof
+}
+\]
+$\Log{K}$ విస్తరణలకు ఇంకా అదనపు నియమాలు చేర్చాలి.
+
+ప్రతి మోడల్ తర్కానికీ ఇలాంటి సీక్వెంట్ కలనశాస్త్రం
+ఉండదు. అర్థవిజ్ఞాన పరంగా సరళమైన $\Log{S5}$ను
+ప్రాప్యత సంబంధాలను అసలు ఉపయోగించకుండానే
+నిర్వచించవచ్చు. అయినా, $\Log{LK}$ నుంచి ఏర్పడి,
+\Cut{} నియమం లేకుండానే సంపూర్ణంగా ఉండే సీక్వెంట్
+కలనశాస్త్రం దానికి ఉన్నట్టు తెలియదు. అయితే దానికి
+కట్-రహిత, సంపూర్ణ \emph{హైపర్ సీక్వెంట్}
+కలనశాస్త్రం ఉంది.
+
+\end{document}

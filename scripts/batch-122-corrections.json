@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0473",
+  "source_path": "content/normal-modal-logic/sequent-calculus/proofs-in-K.tex",
+  "source_sha256": "62589ae78eea5962800114b6fdfffa1923072dfb10c85746d042c4d5dc7f4c30",
+  "audit_id": "OLTENMLSEQPRK-20260927",
+  "audit_review_path": "evidence/OLP-0473-MODAL-SEQUENT-K-PROOFS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "5ece9219104706bff13dfd83ae768b526b6042b55d0c0df8032c8532cdc85eef",
+  "audit_findings_path": "evidence/OLP-0473-MODAL-SEQUENT-K-PROOFS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "7ac5cbeea53496b590d95c32dd08a683dcbcd750ba8f54c0eaff764d0cef004b",
+  "previous_corrections": 450,
+  "treatments": {
+    "OLTENMLSEQPRK-001": {
+      "target_line": 111,
+      "body_treatment": "ద్వంద్వత్వ వ్యుత్పత్తిలో ఎడమ నిరాకరణను పరిచయం చేసే రెండు అడుగుల తప్పు కుడి నిరాకరణ చీటీలను LK పట్టిక ప్రకారం ఎడమ నిరాకరణగా మార్చి పక్కనే ప్రకటించాం."
+    }
+  }
+}

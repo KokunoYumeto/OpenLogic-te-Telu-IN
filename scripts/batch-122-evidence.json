@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "122",
+  "unit_id": "OLP-0473",
+  "unit_order": 473,
+  "source_path": "content/normal-modal-logic/sequent-calculus/proofs-in-K.tex",
+  "blocks": 12,
+  "linguistic_blocks": [5, 7, 8, 9, 11],
+  "previous_segments": 7159,
+  "previous_terms": 162,
+  "expected_corrections": 451,
+  "canon_default": ["TE-P018", "TE-P024"],
+  "corrections_by_block": {"9": ["OLTENMLSEQPRK-001"]},
+  "consultation_phase": "స్థిర K సీక్వెంట్ వ్యుత్పత్తి మూలం, తెలుగు లక్ష్యం, ముందు LK నిరాకరణ నియమ పట్టిక, స్థానిక సాధారణ తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; Box/Diamond వ్యాప్తి చెట్లు, Dual చెట్టు, రెండు ఎడమ నిరాకరణ చీటీలు, నాలుగు వ్యాయామాలు తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P018/024 సాధారణ తర్కం, వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. ఈ K modal వ్యుత్పత్తులకు ప్రత్యక్ష ధ్రువీకరణలు కావు; ద్వంద్వత్వ చెట్టు చివరి iff/land నియమాన్ని ప్రతి feature రూపానికి స్వతంత్రంగా ధ్రువీకరించలేదు.",
+  "term_decision": {
+    "term_id": "TE-T163",
+    "source_term": "K sequent derivations / modal distribution / duality proof / left-negation rule",
+    "telugu": "K సీక్వెంట్ వ్యుత్పత్తులు / మోడల్ వ్యాప్తి / ద్వంద్వత్వ నిరూపణ / ఎడమ నిరాకరణ నియమం",
+    "status": "native_general_logic_derivation_register_attested_K_proof_trees_source_controlled_one_disclosed_label_repair",
+    "passages": ["TE-P018", "TE-P024"],
+    "basis": "TE-T160–162లోని సీక్వెంట్, K, Box/Diamond పదాలను కొనసాగించాం. మూల రెండు వ్యాప్తి చెట్లు, Dual చెట్టు, నాలుగు పరిష్కరించని సమస్యలు నిలిచాయి; Dual చెట్టులో ఎడమవైపు నిరాకరణను పరిచయం చేసే రెండు దశల తప్పు కుడి చీటీలను పూర్వ LK నియమ పట్టిక ప్రకారం ఒక ప్రకటిత సవరణతో మార్చాం.",
+    "uncertainty": "స్థానిక సాక్షులు modal proof-tree నియమాలకు ప్రత్యక్ష నిరూపణలు కాదు. చివరి iff/land చీటీని అన్ని feature అమరికల్లో స్వతంత్రంగా ధ్రువీకరించలేదు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "సీక్వెంట్ is an explicit technical borrowing; K, Box/Diamond, Dual, proof-tree labels, formulas, feature tags and protected usetoken heading retain source identities."
+  }
+}

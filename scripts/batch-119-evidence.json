@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "119",
+  "unit_id": "OLP-0470",
+  "unit_order": 470,
+  "source_path": "content/normal-modal-logic/sequent-calculus/sequent-calculus.tex",
+  "blocks": 7,
+  "linguistic_blocks": [4],
+  "previous_segments": 7134,
+  "previous_terms": 159,
+  "expected_corrections": 450,
+  "canon_default": ["TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర మోడల్ సీక్వెంట్ అధ్యాయ డ్రైవరును, తెలుగు లక్ష్యాన్ని, పూర్వ తర్క/వ్యుత్పత్తి పదాలను, స్థానిక సాధారణ తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; ముసాయిదా హెచ్చరిక, నాలుగు క్రియాశీల దిగుమతులు, మూడు వ్యాఖ్యానిత దిగుమతులు తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P018/024 సాధారణ తర్కం, వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. మోడల్ సీక్వెంట్ కలనశాస్త్ర నియమాలు లేదా నిర్దుష్టత/సంపూర్ణత నిరూపణలకు అవి ప్రత్యక్ష సాక్ష్యం కావు; మూల అధ్యాయం ముసాయిదానే అని చెబుతుంది.",
+  "term_decision": {
+    "term_id": "TE-T160",
+    "source_term": "modal sequent calculus / draft chapter / soundness and completeness proofs",
+    "telugu": "మోడల్ సీక్వెంట్ కలనశాస్త్రం / ముసాయిదా అధ్యాయం / నిర్దుష్టత, సంపూర్ణత నిరూపణలు",
+    "status": "native_general_logic_derivation_register_attested_modal_sequent_source_controlled_draft_warning_preserved",
+    "passages": ["TE-P018", "TE-P024"],
+    "basis": "TE-T150–159లోని మోడల్ తర్కం, నిర్దుష్టత, సంపూర్ణత పదాలను కొనసాగించాం. మూల డ్రైవరులోని ముసాయిదా హెచ్చరిక, నాలుగు క్రియాశీల దిగుమతులు, మూడు వ్యాఖ్యానిత దిగుమతులు, అధ్యాయ ముగింపు హుక్ యథాతథం.",
+    "uncertainty": "స్థానిక సాక్షులు modal sequent calculusకు ప్రత్యక్ష సాంకేతిక పదం లేదా పూర్తి నిరూపణ ఇవ్వవు. మూలం కూడా ఇంకా ఉదాహరణలు, నిరూపణలు కావాలని ప్రకటిస్తుంది. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "సీక్వెంట్ is an explicit source-controlled technical borrowing; modal chapter identifiers, import paths, tagfalse/comment state and end hook remain protected."
+  }
+}

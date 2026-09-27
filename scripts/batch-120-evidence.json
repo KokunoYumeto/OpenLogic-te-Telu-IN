@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "120",
+  "unit_id": "OLP-0471",
+  "unit_order": 471,
+  "source_path": "content/normal-modal-logic/sequent-calculus/introduction.tex",
+  "blocks": 8,
+  "linguistic_blocks": [5, 6, 7],
+  "previous_segments": 7141,
+  "previous_terms": 160,
+  "expected_corrections": 450,
+  "canon_default": ["TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర మోడల్ సీక్వెంట్ పరిచయ మూలం, తెలుగు లక్ష్యం, పూర్వ మోడల్/వ్యుత్పత్తి పదాలు, స్థానిక సాధారణ తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; LK నుంచి Kకి మూడు లక్షణ-ట్యాగ్ నియమ రూపాలు, S5 కట్-రహిత సాధారణ/హైపర్ సీక్వెంట్ తేడాను తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P018/024 సాధారణ తర్కం, వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. K సీక్వెంట్ నియమాలు లేదా S5 హైపర్ సీక్వెంట్ కలనశాస్త్రానికి స్థానిక పేజీల్లో ప్రత్యక్ష నిరూపణ లేదు; స్థిర మూలమే సాంకేతిక నియంత్రణ.",
+  "term_decision": {
+    "term_id": "TE-T161",
+    "source_term": "modal sequent rules for K / cut-free hypersequent calculus for S5",
+    "telugu": "K మోడల్ సీక్వెంట్ నియమాలు / S5 కట్-రహిత హైపర్ సీక్వెంట్ కలనశాస్త్రం",
+    "status": "native_general_logic_derivation_register_attested_modal_sequent_and_hypersequent_source_controlled",
+    "passages": ["TE-P018", "TE-P024"],
+    "basis": "TE-T160లోని సీక్వెంట్ కలనశాస్త్రం, TE-T151–159లోని K/S5 మోడల్ తర్క రూపాలను కొనసాగించాం. Box/Diamond రెండు primitive, ఒక్కో primitive రూపాల అన్ని iftag శాఖలూ, నియమ చిత్రాలూ, LK నుంచి K విస్తరణ, S5 కట్-రహిత సాధారణ సీక్వెంట్ తెలియదనే పరిమిత వాదన, హైపర్ సీక్వెంట్ ఉనికి నిలిచాయి.",
+    "uncertainty": "స్థానిక సాక్షులు modal sequent/hypersequentకు ప్రత్యక్ష సాంకేతిక పదం లేదా ఉనికి నిరూపణ ఇవ్వవు. S5పై మూలం చెప్పింది తెలియదు అన్నదే; అసాధ్యం అని కాదు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "సీక్వెంట్ and హైపర్ సీక్వెంట్ are explicit technical borrowings; LK/K/S5, Box/Diamond, Cut, feature tags and proof-tree macros remain protected notation."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLSEQPRK-20260927",
+  "unit_id": "OLP-0473",
+  "source_path": "content/normal-modal-logic/sequent-calculus/proofs-in-K.tex",
+  "source_sha256": "62589ae78eea5962800114b6fdfffa1923072dfb10c85746d042c4d5dc7f4c30",
+  "findings": [
+    {
+      "finding_id": "OLTENMLSEQPRK-001",
+      "source_locator": "proofs-in-K.tex lines 85 and 102; rules-LK.tex negation rule table",
+      "classification": "left_negation_inferences_mislabeled_right_negation",
+      "source_issue": "The two inferences introduce negation to the antecedent but are labeled right-negation, contrary to the LK rule table.",
+      "minimal_treatment": "Use the left-negation label on those two inferences only and disclose adjacent to the proof tree.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

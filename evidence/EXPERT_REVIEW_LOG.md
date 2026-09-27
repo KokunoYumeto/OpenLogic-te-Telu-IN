@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 469 of 722 draft units**. This log contains 159 terminology/sense decisions and 450 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 474 of 722 draft units**. This log contains 164 terminology/sense decisions and 451 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3823,6 +3823,126 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక సాధారణ తర్క పేజీలు modal K నిర్ణాయకత్వం లేదా ప్రతినమూనాలకు ప్రత్యక్ష సాక్ష్యం కాదు. పూర్వ సాధారణ Gamma సంపూర్ణత ఖాళీ ఇక్కడ కొత్త నిరూపణతో పూరించలేదు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
 
 - Please double-check: Please double-check whether “సంపూర్ణ వివృత టాబ్లో నుంచి ప్రతినమూనా / K నిర్ణయ విధానం / Box, Diamond ప్రతినమూనాలు” is idiomatic and technically standard for “countermodel from a complete open tableau / K decision procedure / Box and Diamond countermodels” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T160 — modal sequent calculus / draft chapter / soundness and completeness proofs
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: మోడల్ సీక్వెంట్ కలనశాస్త్రం / ముసాయిదా అధ్యాయం / నిర్దుష్టత, సంపూర్ణత నిరూపణలు
+
+- Exact implementation: OLP-0470; normal-modal-logic/sequent-calculus/sequent-calculus; content/normal-modal-logic/sequent-calculus/sequent-calculus.tex:8-13 ↔ translation/content/normal-modal-logic/sequent-calculus/sequent-calculus.tex:8-13 (OLP-0470-B004); printed/PDF page pending; OLP-0470; normal-modal-logic/sequent-calculus/sequent-calculus; content/normal-modal-logic/sequent-calculus/sequent-calculus.tex:8-13 ↔ translation/content/normal-modal-logic/sequent-calculus/sequent-calculus.tex:8-13 (OLP-0470-B004); printed/PDF page pending; OLP-0470; normal-modal-logic/sequent-calculus/sequent-calculus; content/normal-modal-logic/sequent-calculus/sequent-calculus.tex:15-21 ↔ translation/content/normal-modal-logic/sequent-calculus/sequent-calculus.tex:15-21 (OLP-0470-B005); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-T150–159లోని మోడల్ తర్కం, నిర్దుష్టత, సంపూర్ణత పదాలను కొనసాగించాం. మూల డ్రైవరులోని ముసాయిదా హెచ్చరిక, నాలుగు క్రియాశీల దిగుమతులు, మూడు వ్యాఖ్యానిత దిగుమతులు, అధ్యాయ ముగింపు హుక్ యథాతథం. సీక్వెంట్ is an explicit source-controlled technical borrowing; modal chapter identifiers, import paths, tagfalse/comment state and end hook remain protected.
+
+- Alternatives: మోడల్ సీక్వెంట్ కలనశాస్త్రం శీర్షిక, ముసాయిదా హెచ్చరిక, నాలుగు క్రియాశీల/మూడు వ్యాఖ్యానిత దిగుమతులను నిలపడం (ఎంపిక); ముసాయిదాను పూర్తి నిరూపణలున్న అధ్యాయంగా చూపడం (తిరస్కరణ); వ్యాఖ్యానిత దిగుమతులను సక్రియం చేయడం (తిరస్కరణ); స్థానిక సాధారణ తర్క పేజీని modal సీక్వెంట్ పూర్తి నిరూపణగా చూపడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు modal sequent calculusకు ప్రత్యక్ష సాంకేతిక పదం లేదా పూర్తి నిరూపణ ఇవ్వవు. మూలం కూడా ఇంకా ఉదాహరణలు, నిరూపణలు కావాలని ప్రకటిస్తుంది. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Please double-check: Please double-check whether “మోడల్ సీక్వెంట్ కలనశాస్త్రం / ముసాయిదా అధ్యాయం / నిర్దుష్టత, సంపూర్ణత నిరూపణలు” is idiomatic and technically standard for “modal sequent calculus / draft chapter / soundness and completeness proofs” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T161 — modal sequent rules for K / cut-free hypersequent calculus for S5
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: K మోడల్ సీక్వెంట్ నియమాలు / S5 కట్-రహిత హైపర్ సీక్వెంట్ కలనశాస్త్రం
+
+- Exact implementation: OLP-0471; normal-modal-logic/sequent-calculus/introduction; content/normal-modal-logic/sequent-calculus/introduction.tex:13-42 ↔ translation/content/normal-modal-logic/sequent-calculus/introduction.tex:13-41 (OLP-0471-B006); printed/PDF page pending; OLP-0471; normal-modal-logic/sequent-calculus/introduction; content/normal-modal-logic/sequent-calculus/introduction.tex:13-42 ↔ translation/content/normal-modal-logic/sequent-calculus/introduction.tex:13-41 (OLP-0471-B006); printed/PDF page pending; OLP-0471; normal-modal-logic/sequent-calculus/introduction; content/normal-modal-logic/sequent-calculus/introduction.tex:44-49 ↔ translation/content/normal-modal-logic/sequent-calculus/introduction.tex:43-50 (OLP-0471-B007); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-T160లోని సీక్వెంట్ కలనశాస్త్రం, TE-T151–159లోని K/S5 మోడల్ తర్క రూపాలను కొనసాగించాం. Box/Diamond రెండు primitive, ఒక్కో primitive రూపాల అన్ని iftag శాఖలూ, నియమ చిత్రాలూ, LK నుంచి K విస్తరణ, S5 కట్-రహిత సాధారణ సీక్వెంట్ తెలియదనే పరిమిత వాదన, హైపర్ సీక్వెంట్ ఉనికి నిలిచాయి. సీక్వెంట్ and హైపర్ సీక్వెంట్ are explicit technical borrowings; LK/K/S5, Box/Diamond, Cut, feature tags and proof-tree macros remain protected notation.
+
+- Alternatives: LK నుంచి Kకి Box/Diamond feature నియమాలు, S5లో సాధారణ కట్-రహిత సీక్వెంట్ తెలియదనే పరిమిత వాదన, హైపర్ సీక్వెంట్ ఉనికిని నిలపడం (ఎంపిక); S5కు అలాంటి కలనశాస్త్రం అసాధ్యమని బలమైన వాదనగా మార్చడం (తిరస్కరణ); మూడు feature రూపాల్లో ఒకటే ముద్రించడం (తిరస్కరణ); స్థానిక సాధారణ తర్క పేజీ హైపర్ సీక్వెంట్‌ను నేరుగా నిరూపిస్తుందని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు modal sequent/hypersequentకు ప్రత్యక్ష సాంకేతిక పదం లేదా ఉనికి నిరూపణ ఇవ్వవు. S5పై మూలం చెప్పింది తెలియదు అన్నదే; అసాధ్యం అని కాదు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Please double-check: Please double-check whether “K మోడల్ సీక్వెంట్ నియమాలు / S5 కట్-రహిత హైపర్ సీక్వెంట్ కలనశాస్త్రం” is idiomatic and technically standard for “modal sequent rules for K / cut-free hypersequent calculus for S5” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T162 — K sequent rules / principal formula restriction / side formulas / hypothetical starred modal rules
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: K సీక్వెంట్ నియమాలు / ప్రధాన సూత్ర పరిమితి / ఇతర సూత్రాలు / ఊహాత్మక నక్షత్ర మోడల్ నియమాలు
+
+- Exact implementation: OLP-0472; normal-modal-logic/sequent-calculus/rules-for-K; content/normal-modal-logic/sequent-calculus/rules-for-K.tex:11 ↔ translation/content/normal-modal-logic/sequent-calculus/rules-for-K.tex:11 (OLP-0472-B005); printed/PDF page pending; OLP-0472; normal-modal-logic/sequent-calculus/rules-for-K; content/normal-modal-logic/sequent-calculus/rules-for-K.tex:17-56 ↔ translation/content/normal-modal-logic/sequent-calculus/rules-for-K.tex:17-61 (OLP-0472-B007); printed/PDF page pending; OLP-0472; normal-modal-logic/sequent-calculus/rules-for-K; content/normal-modal-logic/sequent-calculus/rules-for-K.tex:17-56 ↔ translation/content/normal-modal-logic/sequent-calculus/rules-for-K.tex:17-61 (OLP-0472-B007); printed/PDF page pending; OLP-0472; normal-modal-logic/sequent-calculus/rules-for-K; content/normal-modal-logic/sequent-calculus/rules-for-K.tex:58-92 ↔ translation/content/normal-modal-logic/sequent-calculus/rules-for-K.tex:63-99 (OLP-0472-B008); printed/PDF page pending; OLP-0472; normal-modal-logic/sequent-calculus/rules-for-K; content/normal-modal-logic/sequent-calculus/rules-for-K.tex:94-127 ↔ translation/content/normal-modal-logic/sequent-calculus/rules-for-K.tex:101-136 (OLP-0472-B009); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-T160/161లోని సీక్వెంట్, LK/K, Box/Diamond పదాలను కొనసాగించాం. మూల మూడు feature-tag నియమ రూపాలు, Box Gamma/Diamond Delta అనుక్రమాలు, ఖాళీ భాగాల అనుమతి, ఒక్క A పరిమితి, రెండు తప్పు నక్షత్ర-నియమ వ్యుత్పత్తులు, వాటి K చెల్లనితనం యథాతథం. సీక్వెంట్ is an explicit borrowing; LK/K, Box/Diamond, Gamma/Delta, proof-tree macros, starred labels and feature tags retain protected source identities.
+
+- Alternatives: K నియమాల్లో ఒక్క ప్రధాన సూత్ర పరిమితి, ఖాళీ సందర్భాలు, రెండు నక్షత్ర నియమ ప్రతివాదాలను నిలపడం (ఎంపిక); నక్షత్ర నియమాలను చెల్లే K నియమాలుగా చూపడం (తిరస్కరణ); Gamma/Delta అనుక్రమాలకు అన్ని సూత్రాల prefix చేర్పును మానడం (తిరస్కరణ); స్థానిక సాధారణ వ్యుత్పత్తి పేజీ modal K నియమ నిర్దుష్టతకు ప్రత్యక్ష నిరూపణ అని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు modal సీక్వెంట్ నియమాలకు ప్రత్యక్ష సాంకేతిక రూపం ఇవ్వవు. నక్షత్ర నియమాలు మూలంలోని ఊహాత్మక ప్రతివాదాలు మాత్రమే. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Please double-check: Please double-check whether “K సీక్వెంట్ నియమాలు / ప్రధాన సూత్ర పరిమితి / ఇతర సూత్రాలు / ఊహాత్మక నక్షత్ర మోడల్ నియమాలు” is idiomatic and technically standard for “K sequent rules / principal formula restriction / side formulas / hypothetical starred modal rules” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T163 — K sequent derivations / modal distribution / duality proof / left-negation rule
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: K సీక్వెంట్ వ్యుత్పత్తులు / మోడల్ వ్యాప్తి / ద్వంద్వత్వ నిరూపణ / ఎడమ నిరాకరణ నియమం
+
+- Exact implementation: OLP-0473; normal-modal-logic/sequent-calculus/proofs-in-K; content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:11 ↔ translation/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:11 (OLP-0473-B005); printed/PDF page pending; OLP-0473; normal-modal-logic/sequent-calculus/proofs-in-K; content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:47-79 ↔ translation/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:48-81 (OLP-0473-B008); printed/PDF page pending; OLP-0473; normal-modal-logic/sequent-calculus/proofs-in-K; content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:81-108 ↔ translation/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:83-115 (OLP-0473-B009); printed/PDF page pending; OLP-0473; normal-modal-logic/sequent-calculus/proofs-in-K; content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:117-126 ↔ translation/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:124-133 (OLP-0473-B011); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-T160–162లోని సీక్వెంట్, K, Box/Diamond పదాలను కొనసాగించాం. మూల రెండు వ్యాప్తి చెట్లు, Dual చెట్టు, నాలుగు పరిష్కరించని సమస్యలు నిలిచాయి; Dual చెట్టులో ఎడమవైపు నిరాకరణను పరిచయం చేసే రెండు దశల తప్పు కుడి చీటీలను పూర్వ LK నియమ పట్టిక ప్రకారం ఒక ప్రకటిత సవరణతో మార్చాం. సీక్వెంట్ is an explicit technical borrowing; K, Box/Diamond, Dual, proof-tree labels, formulas, feature tags and protected usetoken heading retain source identities.
+
+- Alternatives: Box/Diamond వ్యాప్తి చెట్లు, Dual వ్యుత్పత్తి, నాలుగు వ్యాయామాలు నిలిపి రెండు ఎడమ నిరాకరణ చీటీలను ప్రకటించి సరిచేయడం (ఎంపిక); ఎడమ నిరాకరణ అడుగులను కుడి నిరాకరణగా వదిలేయడం (తిరస్కరణ); వ్యాయామాలకు మూలంలో లేని పూర్తి పరిష్కారాలు చేర్చడం (తిరస్కరణ); Dual చెట్టు చివరి iff/land దశ అన్ని feature రూపాల్లో స్వతంత్రంగా ధ్రువీకరించామని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు modal proof-tree నియమాలకు ప్రత్యక్ష నిరూపణలు కాదు. చివరి iff/land చీటీని అన్ని feature అమరికల్లో స్వతంత్రంగా ధ్రువీకరించలేదు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Please double-check: Please double-check whether “K సీక్వెంట్ వ్యుత్పత్తులు / మోడల్ వ్యాప్తి / ద్వంద్వత్వ నిరూపణ / ఎడమ నిరాకరణ నియమం” is idiomatic and technically standard for “K sequent derivations / modal distribution / duality proof / left-negation rule” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T164 — sequent rules for accessibility classes / T D B 4 5 / cut-dependent S5 example
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: ప్రాప్యత వర్గాల సీక్వెంట్ నియమాలు / T D B 4 5 / కట్‌పై ఆధారపడే S5 ఉదాహరణ
+
+- Exact implementation: OLP-0474; normal-modal-logic/sequent-calculus/more-rules; content/normal-modal-logic/sequent-calculus/more-rules.tex:11 ↔ translation/content/normal-modal-logic/sequent-calculus/more-rules.tex:11 (OLP-0474-B005); printed/PDF page pending; OLP-0474; normal-modal-logic/sequent-calculus/more-rules; content/normal-modal-logic/sequent-calculus/more-rules.tex:16-163 ↔ translation/content/normal-modal-logic/sequent-calculus/more-rules.tex:17-164 (OLP-0474-B007); printed/PDF page pending; OLP-0474; normal-modal-logic/sequent-calculus/more-rules; content/normal-modal-logic/sequent-calculus/more-rules.tex:165-166 ↔ translation/content/normal-modal-logic/sequent-calculus/more-rules.tex:166-167 (OLP-0474-B008); printed/PDF page pending; OLP-0474; normal-modal-logic/sequent-calculus/more-rules; content/normal-modal-logic/sequent-calculus/more-rules.tex:168-220 ↔ translation/content/normal-modal-logic/sequent-calculus/more-rules.tex:169-221 (OLP-0474-B009); printed/PDF page pending; OLP-0474; normal-modal-logic/sequent-calculus/more-rules; content/normal-modal-logic/sequent-calculus/more-rules.tex:222-246 ↔ translation/content/normal-modal-logic/sequent-calculus/more-rules.tex:223-249 (OLP-0474-B010); printed/PDF page pending; OLP-0474; normal-modal-logic/sequent-calculus/more-rules; content/normal-modal-logic/sequent-calculus/more-rules.tex:248-302 ↔ translation/content/normal-modal-logic/sequent-calculus/more-rules.tex:251-310 (OLP-0474-B011); printed/PDF page pending; OLP-0474; normal-modal-logic/sequent-calculus/more-rules; content/normal-modal-logic/sequent-calculus/more-rules.tex:352-362 ↔ translation/content/normal-modal-logic/sequent-calculus/more-rules.tex:360-371 (OLP-0474-B016); printed/PDF page pending
+
+- Authorities actually checked: TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-T155/156లోని స్వావర్తన, సీరియల్, సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ ప్రాప్యత పదాలు, TE-T160–163లోని సీక్వెంట్ పదాలను కొనసాగించాం. స్థిర మూలంలోని మూడు primitive శాఖల T/D/B/4/5 నియమాలు, తర్క-ప్రాప్యత పట్టిక, K4/S5 చెట్లు, కట్ ఉదాహరణ, ఆరు సమస్యల సూత్రాలు యథాతథం. సీక్వెంట్, సీరియల్, యూక్లిడియన్ are established borrowings; T/D/B/4/5 labels, K-family names, Cut, feature tags, proof-tree macros and table identifiers retain source notation.
+
+- Alternatives: T/D/B/4/5 మూడు feature పట్టికలు, ఆరు తర్క-ప్రాప్యత జతలు, K4/S5 చెట్లు, కట్ ఉదాహరణ, ఆరు సమస్యలు నిలపడం (ఎంపిక); S5 కట్ లేకుండానే ఈ LK-ఆధార వ్యవస్థ సంపూర్ణమని చెప్పడం (తిరస్కరణ); మూలం ఇంకా కావాలన్న నిరూపణలను పూర్తిగా ఇచ్చినట్టు చెప్పడం (తిరస్కరణ); స్థానిక సాధారణ సంబంధ పేజీ modal సీక్వెంట్ సంపూర్ణతకు ప్రత్యక్ష నిరూపణ అని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు modal సీక్వెంట్ నిర్దుష్టత/సంపూర్ణత లేదా S5 కట్ అవసరానికి ప్రత్యక్ష నిరూపణలు ఇవ్వవు. అధ్యాయం డ్రైవరులో మూలం ఇంకా నిరూపణలు కావాలని ప్రకటించింది. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Please double-check: Please double-check whether “ప్రాప్యత వర్గాల సీక్వెంట్ నియమాలు / T D B 4 5 / కట్‌పై ఆధారపడే S5 ఉదాహరణ” is idiomatic and technically standard for “sequent rules for accessibility classes / T D B 4 5 / cut-dependent S5 example” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -14623,3 +14743,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Does the Diamond model assign q to 1.2 and cite the T q[1.2] witness on line 7?
+
+## REV-OLTENMLSEQPRK-001 — OLTENMLSEQPRK-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: ద్వంద్వత్వ వ్యుత్పత్తిలో ఎడమ నిరాకరణను పరిచయం చేసే రెండు అడుగుల తప్పు కుడి నిరాకరణ చీటీలను LK పట్టిక ప్రకారం ఎడమ నిరాకరణగా మార్చి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0473; normal-modal-logic/sequent-calculus/proofs-in-K; proofs-in-K.tex lines 85 and 102; rules-LK.tex negation rule table ↔ translation/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:111 (OLP-0473-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLSEQPRK-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: ద్వంద్వత్వ వ్యుత్పత్తిలో ఎడమ నిరాకరణను పరిచయం చేసే రెండు అడుగుల తప్పు కుడి నిరాకరణ చీటీలను LK పట్టిక ప్రకారం ఎడమ నిరాకరణగా మార్చి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Do both corrected Dual-tree labels introduce negation on the antecedent, matching the frozen LK left-negation rule?

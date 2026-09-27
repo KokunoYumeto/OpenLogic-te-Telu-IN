@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **469 of 722 source units drafted**. This readable view contains all 609 decisions and 1395 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **474 of 722 source units drafted**. This readable view contains all 615 decisions and 1418 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4843,6 +4843,153 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T159-OCC-004; OLP-0469; OLP-0469-B008; source upstream/content/normal-modal-logic/tableaux/countermodels.tex:46-305 bytes 2161-12858 SHA-256 c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd; target translation/content/normal-modal-logic/tableaux/countermodels.tex:58-350 bytes 4376-18586 SHA-256 60a05ac625211461cbd1a139cd71bb201d49f898abc39df8f1b2915a9232320d; reader page pending.
   - te-Telu-IN-TE-T159-OCC-005; OLP-0469; OLP-0469-B008; source upstream/content/normal-modal-logic/tableaux/countermodels.tex:46-305 bytes 2161-12858 SHA-256 c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd; target translation/content/normal-modal-logic/tableaux/countermodels.tex:58-350 bytes 4376-18586 SHA-256 60a05ac625211461cbd1a139cd71bb201d49f898abc39df8f1b2915a9232320d; reader page pending.
   - te-Telu-IN-TE-T159-OCC-006; OLP-0469; OLP-0469-B008; source upstream/content/normal-modal-logic/tableaux/countermodels.tex:46-305 bytes 2161-12858 SHA-256 c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd; target translation/content/normal-modal-logic/tableaux/countermodels.tex:58-350 bytes 4376-18586 SHA-256 60a05ac625211461cbd1a139cd71bb201d49f898abc39df8f1b2915a9232320d; reader page pending.
+
+## te-Telu-IN-TE-T160 — modal sequent calculus / draft chapter / soundness and completeness proofs
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: మోడల్ సీక్వెంట్ కలనశాస్త్రం / ముసాయిదా అధ్యాయం / నిర్దుష్టత, సంపూర్ణత నిరూపణలు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “modal sequent calculus / draft chapter / soundness and completeness proofs” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు modal sequent calculusకు ప్రత్యక్ష సాంకేతిక పదం లేదా పూర్తి నిరూపణ ఇవ్వవు. మూలం కూడా ఇంకా ఉదాహరణలు, నిరూపణలు కావాలని ప్రకటిస్తుంది. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Rationale: TE-T150–159లోని మోడల్ తర్కం, నిర్దుష్టత, సంపూర్ణత పదాలను కొనసాగించాం. మూల డ్రైవరులోని ముసాయిదా హెచ్చరిక, నాలుగు క్రియాశీల దిగుమతులు, మూడు వ్యాఖ్యానిత దిగుమతులు, అధ్యాయ ముగింపు హుక్ యథాతథం. సీక్వెంట్ is an explicit source-controlled technical borrowing; modal chapter identifiers, import paths, tagfalse/comment state and end hook remain protected.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: మోడల్ సీక్వెంట్ కలనశాస్త్రం శీర్షిక, ముసాయిదా హెచ్చరిక, నాలుగు క్రియాశీల/మూడు వ్యాఖ్యానిత దిగుమతులను నిలపడం [viable_alternative: ఎంపిక] | ముసాయిదాను పూర్తి నిరూపణలున్న అధ్యాయంగా చూపడం [viable_alternative: తిరస్కరణ] | వ్యాఖ్యానిత దిగుమతులను సక్రియం చేయడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ తర్క పేజీని modal సీక్వెంట్ పూర్తి నిరూపణగా చూపడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “మోడల్ సీక్వెంట్ కలనశాస్త్రం / ముసాయిదా అధ్యాయం / నిర్దుష్టత, సంపూర్ణత నిరూపణలు” is idiomatic and technically standard for “modal sequent calculus / draft chapter / soundness and completeness proofs” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T160-OCC-001; OLP-0470; OLP-0470-B004; source upstream/content/normal-modal-logic/sequent-calculus/sequent-calculus.tex:8-13 bytes 137-349 SHA-256 94307f3948f0d7279630b64423a6095dd687e47e84368fde684e0e2203d256a1; target translation/content/normal-modal-logic/sequent-calculus/sequent-calculus.tex:8-13 bytes 137-608 SHA-256 0888de9a1c7cc5826df48f37747f93cd45d28c894026e563382f80ff1beff749; reader page pending.
+  - te-Telu-IN-TE-T160-OCC-002; OLP-0470; OLP-0470-B004; source upstream/content/normal-modal-logic/sequent-calculus/sequent-calculus.tex:8-13 bytes 137-349 SHA-256 94307f3948f0d7279630b64423a6095dd687e47e84368fde684e0e2203d256a1; target translation/content/normal-modal-logic/sequent-calculus/sequent-calculus.tex:8-13 bytes 137-608 SHA-256 0888de9a1c7cc5826df48f37747f93cd45d28c894026e563382f80ff1beff749; reader page pending.
+  - te-Telu-IN-TE-T160-OCC-003; OLP-0470; OLP-0470-B005; source upstream/content/normal-modal-logic/sequent-calculus/sequent-calculus.tex:15-21 bytes 350-520 SHA-256 94307f3948f0d7279630b64423a6095dd687e47e84368fde684e0e2203d256a1; target translation/content/normal-modal-logic/sequent-calculus/sequent-calculus.tex:15-21 bytes 609-779 SHA-256 0888de9a1c7cc5826df48f37747f93cd45d28c894026e563382f80ff1beff749; reader page pending.
+
+## te-Telu-IN-TE-T161 — modal sequent rules for K / cut-free hypersequent calculus for S5
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: K మోడల్ సీక్వెంట్ నియమాలు / S5 కట్-రహిత హైపర్ సీక్వెంట్ కలనశాస్త్రం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “modal sequent rules for K / cut-free hypersequent calculus for S5” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు modal sequent/hypersequentకు ప్రత్యక్ష సాంకేతిక పదం లేదా ఉనికి నిరూపణ ఇవ్వవు. S5పై మూలం చెప్పింది తెలియదు అన్నదే; అసాధ్యం అని కాదు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Rationale: TE-T160లోని సీక్వెంట్ కలనశాస్త్రం, TE-T151–159లోని K/S5 మోడల్ తర్క రూపాలను కొనసాగించాం. Box/Diamond రెండు primitive, ఒక్కో primitive రూపాల అన్ని iftag శాఖలూ, నియమ చిత్రాలూ, LK నుంచి K విస్తరణ, S5 కట్-రహిత సాధారణ సీక్వెంట్ తెలియదనే పరిమిత వాదన, హైపర్ సీక్వెంట్ ఉనికి నిలిచాయి. సీక్వెంట్ and హైపర్ సీక్వెంట్ are explicit technical borrowings; LK/K/S5, Box/Diamond, Cut, feature tags and proof-tree macros remain protected notation.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: LK నుంచి Kకి Box/Diamond feature నియమాలు, S5లో సాధారణ కట్-రహిత సీక్వెంట్ తెలియదనే పరిమిత వాదన, హైపర్ సీక్వెంట్ ఉనికిని నిలపడం [viable_alternative: ఎంపిక] | S5కు అలాంటి కలనశాస్త్రం అసాధ్యమని బలమైన వాదనగా మార్చడం [viable_alternative: తిరస్కరణ] | మూడు feature రూపాల్లో ఒకటే ముద్రించడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ తర్క పేజీ హైపర్ సీక్వెంట్‌ను నేరుగా నిరూపిస్తుందని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “K మోడల్ సీక్వెంట్ నియమాలు / S5 కట్-రహిత హైపర్ సీక్వెంట్ కలనశాస్త్రం” is idiomatic and technically standard for “modal sequent rules for K / cut-free hypersequent calculus for S5” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T161-OCC-001; OLP-0471; OLP-0471-B006; source upstream/content/normal-modal-logic/sequent-calculus/introduction.tex:13-42 bytes 213-1149 SHA-256 c647612a3cbf98569d9533d15a111b2df1457e6c19a63a8e77f1a2f75c895897; target translation/content/normal-modal-logic/sequent-calculus/introduction.tex:13-41 bytes 219-1403 SHA-256 06e4ac0d4ba9f4d91833f598505e8fbbba5bc0d5912d49173b65af2452ff9b18; reader page pending.
+  - te-Telu-IN-TE-T161-OCC-002; OLP-0471; OLP-0471-B006; source upstream/content/normal-modal-logic/sequent-calculus/introduction.tex:13-42 bytes 213-1149 SHA-256 c647612a3cbf98569d9533d15a111b2df1457e6c19a63a8e77f1a2f75c895897; target translation/content/normal-modal-logic/sequent-calculus/introduction.tex:13-41 bytes 219-1403 SHA-256 06e4ac0d4ba9f4d91833f598505e8fbbba5bc0d5912d49173b65af2452ff9b18; reader page pending.
+  - te-Telu-IN-TE-T161-OCC-003; OLP-0471; OLP-0471-B007; source upstream/content/normal-modal-logic/sequent-calculus/introduction.tex:44-49 bytes 1150-1489 SHA-256 c647612a3cbf98569d9533d15a111b2df1457e6c19a63a8e77f1a2f75c895897; target translation/content/normal-modal-logic/sequent-calculus/introduction.tex:43-50 bytes 1404-2272 SHA-256 06e4ac0d4ba9f4d91833f598505e8fbbba5bc0d5912d49173b65af2452ff9b18; reader page pending.
+
+## te-Telu-IN-TE-T162 — K sequent rules / principal formula restriction / side formulas / hypothetical starred modal rules
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: K సీక్వెంట్ నియమాలు / ప్రధాన సూత్ర పరిమితి / ఇతర సూత్రాలు / ఊహాత్మక నక్షత్ర మోడల్ నియమాలు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “K sequent rules / principal formula restriction / side formulas / hypothetical starred modal rules” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు modal సీక్వెంట్ నియమాలకు ప్రత్యక్ష సాంకేతిక రూపం ఇవ్వవు. నక్షత్ర నియమాలు మూలంలోని ఊహాత్మక ప్రతివాదాలు మాత్రమే. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Rationale: TE-T160/161లోని సీక్వెంట్, LK/K, Box/Diamond పదాలను కొనసాగించాం. మూల మూడు feature-tag నియమ రూపాలు, Box Gamma/Diamond Delta అనుక్రమాలు, ఖాళీ భాగాల అనుమతి, ఒక్క A పరిమితి, రెండు తప్పు నక్షత్ర-నియమ వ్యుత్పత్తులు, వాటి K చెల్లనితనం యథాతథం. సీక్వెంట్ is an explicit borrowing; LK/K, Box/Diamond, Gamma/Delta, proof-tree macros, starred labels and feature tags retain protected source identities.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: K నియమాల్లో ఒక్క ప్రధాన సూత్ర పరిమితి, ఖాళీ సందర్భాలు, రెండు నక్షత్ర నియమ ప్రతివాదాలను నిలపడం [viable_alternative: ఎంపిక] | నక్షత్ర నియమాలను చెల్లే K నియమాలుగా చూపడం [viable_alternative: తిరస్కరణ] | Gamma/Delta అనుక్రమాలకు అన్ని సూత్రాల prefix చేర్పును మానడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ వ్యుత్పత్తి పేజీ modal K నియమ నిర్దుష్టతకు ప్రత్యక్ష నిరూపణ అని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “K సీక్వెంట్ నియమాలు / ప్రధాన సూత్ర పరిమితి / ఇతర సూత్రాలు / ఊహాత్మక నక్షత్ర మోడల్ నియమాలు” is idiomatic and technically standard for “K sequent rules / principal formula restriction / side formulas / hypothetical starred modal rules” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T162-OCC-001; OLP-0472; OLP-0472-B005; source upstream/content/normal-modal-logic/sequent-calculus/rules-for-K.tex:11 bytes 186-216 SHA-256 ae411a3ba93f8dead177612c4e2ac01e15814d1270e2a0cd4012338ad262018f; target translation/content/normal-modal-logic/sequent-calculus/rules-for-K.tex:11 bytes 186-241 SHA-256 56c6cfd18d7687481362667d6375ddcee8abf1f524045b29cb723ce7e0efb735; reader page pending.
+  - te-Telu-IN-TE-T162-OCC-002; OLP-0472; OLP-0472-B007; source upstream/content/normal-modal-logic/sequent-calculus/rules-for-K.tex:17-56 bytes 414-2091 SHA-256 ae411a3ba93f8dead177612c4e2ac01e15814d1270e2a0cd4012338ad262018f; target translation/content/normal-modal-logic/sequent-calculus/rules-for-K.tex:17-61 bytes 637-3042 SHA-256 56c6cfd18d7687481362667d6375ddcee8abf1f524045b29cb723ce7e0efb735; reader page pending.
+  - te-Telu-IN-TE-T162-OCC-003; OLP-0472; OLP-0472-B007; source upstream/content/normal-modal-logic/sequent-calculus/rules-for-K.tex:17-56 bytes 414-2091 SHA-256 ae411a3ba93f8dead177612c4e2ac01e15814d1270e2a0cd4012338ad262018f; target translation/content/normal-modal-logic/sequent-calculus/rules-for-K.tex:17-61 bytes 637-3042 SHA-256 56c6cfd18d7687481362667d6375ddcee8abf1f524045b29cb723ce7e0efb735; reader page pending.
+  - te-Telu-IN-TE-T162-OCC-004; OLP-0472; OLP-0472-B008; source upstream/content/normal-modal-logic/sequent-calculus/rules-for-K.tex:58-92 bytes 2092-3491 SHA-256 ae411a3ba93f8dead177612c4e2ac01e15814d1270e2a0cd4012338ad262018f; target translation/content/normal-modal-logic/sequent-calculus/rules-for-K.tex:63-99 bytes 3043-4910 SHA-256 56c6cfd18d7687481362667d6375ddcee8abf1f524045b29cb723ce7e0efb735; reader page pending.
+  - te-Telu-IN-TE-T162-OCC-005; OLP-0472; OLP-0472-B009; source upstream/content/normal-modal-logic/sequent-calculus/rules-for-K.tex:94-127 bytes 3492-4836 SHA-256 ae411a3ba93f8dead177612c4e2ac01e15814d1270e2a0cd4012338ad262018f; target translation/content/normal-modal-logic/sequent-calculus/rules-for-K.tex:101-136 bytes 4911-6730 SHA-256 56c6cfd18d7687481362667d6375ddcee8abf1f524045b29cb723ce7e0efb735; reader page pending.
+
+## te-Telu-IN-TE-T163 — K sequent derivations / modal distribution / duality proof / left-negation rule
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: K సీక్వెంట్ వ్యుత్పత్తులు / మోడల్ వ్యాప్తి / ద్వంద్వత్వ నిరూపణ / ఎడమ నిరాకరణ నియమం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “K sequent derivations / modal distribution / duality proof / left-negation rule” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు modal proof-tree నియమాలకు ప్రత్యక్ష నిరూపణలు కాదు. చివరి iff/land చీటీని అన్ని feature అమరికల్లో స్వతంత్రంగా ధ్రువీకరించలేదు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Rationale: TE-T160–162లోని సీక్వెంట్, K, Box/Diamond పదాలను కొనసాగించాం. మూల రెండు వ్యాప్తి చెట్లు, Dual చెట్టు, నాలుగు పరిష్కరించని సమస్యలు నిలిచాయి; Dual చెట్టులో ఎడమవైపు నిరాకరణను పరిచయం చేసే రెండు దశల తప్పు కుడి చీటీలను పూర్వ LK నియమ పట్టిక ప్రకారం ఒక ప్రకటిత సవరణతో మార్చాం. సీక్వెంట్ is an explicit technical borrowing; K, Box/Diamond, Dual, proof-tree labels, formulas, feature tags and protected usetoken heading retain source identities.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: Box/Diamond వ్యాప్తి చెట్లు, Dual వ్యుత్పత్తి, నాలుగు వ్యాయామాలు నిలిపి రెండు ఎడమ నిరాకరణ చీటీలను ప్రకటించి సరిచేయడం [viable_alternative: ఎంపిక] | ఎడమ నిరాకరణ అడుగులను కుడి నిరాకరణగా వదిలేయడం [viable_alternative: తిరస్కరణ] | వ్యాయామాలకు మూలంలో లేని పూర్తి పరిష్కారాలు చేర్చడం [viable_alternative: తిరస్కరణ] | Dual చెట్టు చివరి iff/land దశ అన్ని feature రూపాల్లో స్వతంత్రంగా ధ్రువీకరించామని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “K సీక్వెంట్ వ్యుత్పత్తులు / మోడల్ వ్యాప్తి / ద్వంద్వత్వ నిరూపణ / ఎడమ నిరాకరణ నియమం” is idiomatic and technically standard for “K sequent derivations / modal distribution / duality proof / left-negation rule” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T163-OCC-001; OLP-0473; OLP-0473-B005; source upstream/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:11 bytes 186-243 SHA-256 62589ae78eea5962800114b6fdfffa1923072dfb10c85746d042c4d5dc7f4c30; target translation/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:11 bytes 186-272 SHA-256 047e7151d6b38e49a70d96d358c1719304e4f0e76ffbae8a93bbc540e4883f97; reader page pending.
+  - te-Telu-IN-TE-T163-OCC-002; OLP-0473; OLP-0473-B008; source upstream/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:47-79 bytes 1301-2521 SHA-256 62589ae78eea5962800114b6fdfffa1923072dfb10c85746d042c4d5dc7f4c30; target translation/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:48-81 bytes 1436-2761 SHA-256 047e7151d6b38e49a70d96d358c1719304e4f0e76ffbae8a93bbc540e4883f97; reader page pending.
+  - te-Telu-IN-TE-T163-OCC-003; OLP-0473; OLP-0473-B009; source upstream/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:81-108 bytes 2522-3587 SHA-256 62589ae78eea5962800114b6fdfffa1923072dfb10c85746d042c4d5dc7f4c30; target translation/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:83-115 bytes 2762-4441 SHA-256 047e7151d6b38e49a70d96d358c1719304e4f0e76ffbae8a93bbc540e4883f97; reader page pending.
+  - te-Telu-IN-TE-T163-OCC-004; OLP-0473; OLP-0473-B011; source upstream/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:117-126 bytes 3752-4077 SHA-256 62589ae78eea5962800114b6fdfffa1923072dfb10c85746d042c4d5dc7f4c30; target translation/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:124-133 bytes 4630-5081 SHA-256 047e7151d6b38e49a70d96d358c1719304e4f0e76ffbae8a93bbc540e4883f97; reader page pending.
+
+## te-Telu-IN-TE-T164 — sequent rules for accessibility classes / T D B 4 5 / cut-dependent S5 example
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: ప్రాప్యత వర్గాల సీక్వెంట్ నియమాలు / T D B 4 5 / కట్‌పై ఆధారపడే S5 ఉదాహరణ
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “sequent rules for accessibility classes / T D B 4 5 / cut-dependent S5 example” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు modal సీక్వెంట్ నిర్దుష్టత/సంపూర్ణత లేదా S5 కట్ అవసరానికి ప్రత్యక్ష నిరూపణలు ఇవ్వవు. అధ్యాయం డ్రైవరులో మూలం ఇంకా నిరూపణలు కావాలని ప్రకటించింది. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Rationale: TE-T155/156లోని స్వావర్తన, సీరియల్, సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ ప్రాప్యత పదాలు, TE-T160–163లోని సీక్వెంట్ పదాలను కొనసాగించాం. స్థిర మూలంలోని మూడు primitive శాఖల T/D/B/4/5 నియమాలు, తర్క-ప్రాప్యత పట్టిక, K4/S5 చెట్లు, కట్ ఉదాహరణ, ఆరు సమస్యల సూత్రాలు యథాతథం. సీక్వెంట్, సీరియల్, యూక్లిడియన్ are established borrowings; T/D/B/4/5 labels, K-family names, Cut, feature tags, proof-tree macros and table identifiers retain source notation.
+
+- Authorities checked: TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: T/D/B/4/5 మూడు feature పట్టికలు, ఆరు తర్క-ప్రాప్యత జతలు, K4/S5 చెట్లు, కట్ ఉదాహరణ, ఆరు సమస్యలు నిలపడం [viable_alternative: ఎంపిక] | S5 కట్ లేకుండానే ఈ LK-ఆధార వ్యవస్థ సంపూర్ణమని చెప్పడం [viable_alternative: తిరస్కరణ] | మూలం ఇంకా కావాలన్న నిరూపణలను పూర్తిగా ఇచ్చినట్టు చెప్పడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ సంబంధ పేజీ modal సీక్వెంట్ సంపూర్ణతకు ప్రత్యక్ష నిరూపణ అని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “ప్రాప్యత వర్గాల సీక్వెంట్ నియమాలు / T D B 4 5 / కట్‌పై ఆధారపడే S5 ఉదాహరణ” is idiomatic and technically standard for “sequent rules for accessibility classes / T D B 4 5 / cut-dependent S5 example” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T164-OCC-001; OLP-0474; OLP-0474-B005; source upstream/content/normal-modal-logic/sequent-calculus/more-rules.tex:11 bytes 185-237 SHA-256 7208b51ded8fec09ae57789b113c42fc47b8e8a4c8e6c290c8f7b25ffb27ef45; target translation/content/normal-modal-logic/sequent-calculus/more-rules.tex:11 bytes 185-289 SHA-256 18d295c61582ff808294c62d08d7b9f2379a7005a238a77c555ebb3ec582e35e; reader page pending.
+  - te-Telu-IN-TE-T164-OCC-002; OLP-0474; OLP-0474-B007; source upstream/content/normal-modal-logic/sequent-calculus/more-rules.tex:16-163 bytes 375-4464 SHA-256 7208b51ded8fec09ae57789b113c42fc47b8e8a4c8e6c290c8f7b25ffb27ef45; target translation/content/normal-modal-logic/sequent-calculus/more-rules.tex:17-164 bytes 585-4821 SHA-256 18d295c61582ff808294c62d08d7b9f2379a7005a238a77c555ebb3ec582e35e; reader page pending.
+  - te-Telu-IN-TE-T164-OCC-003; OLP-0474; OLP-0474-B008; source upstream/content/normal-modal-logic/sequent-calculus/more-rules.tex:165-166 bytes 4465-4581 SHA-256 7208b51ded8fec09ae57789b113c42fc47b8e8a4c8e6c290c8f7b25ffb27ef45; target translation/content/normal-modal-logic/sequent-calculus/more-rules.tex:166-167 bytes 4822-5058 SHA-256 18d295c61582ff808294c62d08d7b9f2379a7005a238a77c555ebb3ec582e35e; reader page pending.
+  - te-Telu-IN-TE-T164-OCC-004; OLP-0474; OLP-0474-B009; source upstream/content/normal-modal-logic/sequent-calculus/more-rules.tex:168-220 bytes 4582-6326 SHA-256 7208b51ded8fec09ae57789b113c42fc47b8e8a4c8e6c290c8f7b25ffb27ef45; target translation/content/normal-modal-logic/sequent-calculus/more-rules.tex:169-221 bytes 5059-7082 SHA-256 18d295c61582ff808294c62d08d7b9f2379a7005a238a77c555ebb3ec582e35e; reader page pending.
+  - te-Telu-IN-TE-T164-OCC-005; OLP-0474; OLP-0474-B010; source upstream/content/normal-modal-logic/sequent-calculus/more-rules.tex:222-246 bytes 6327-7108 SHA-256 7208b51ded8fec09ae57789b113c42fc47b8e8a4c8e6c290c8f7b25ffb27ef45; target translation/content/normal-modal-logic/sequent-calculus/more-rules.tex:223-249 bytes 7083-8086 SHA-256 18d295c61582ff808294c62d08d7b9f2379a7005a238a77c555ebb3ec582e35e; reader page pending.
+  - te-Telu-IN-TE-T164-OCC-006; OLP-0474; OLP-0474-B011; source upstream/content/normal-modal-logic/sequent-calculus/more-rules.tex:248-302 bytes 7109-9187 SHA-256 7208b51ded8fec09ae57789b113c42fc47b8e8a4c8e6c290c8f7b25ffb27ef45; target translation/content/normal-modal-logic/sequent-calculus/more-rules.tex:251-310 bytes 8087-10787 SHA-256 18d295c61582ff808294c62d08d7b9f2379a7005a238a77c555ebb3ec582e35e; reader page pending.
+  - te-Telu-IN-TE-T164-OCC-007; OLP-0474; OLP-0474-B016; source upstream/content/normal-modal-logic/sequent-calculus/more-rules.tex:352-362 bytes 10585-10917 SHA-256 7208b51ded8fec09ae57789b113c42fc47b8e8a4c8e6c290c8f7b25ffb27ef45; target translation/content/normal-modal-logic/sequent-calculus/more-rules.tex:360-371 bytes 12185-12632 SHA-256 18d295c61582ff808294c62d08d7b9f2379a7005a238a77c555ebb3ec582e35e; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -16623,3 +16770,29 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLTABCM-005-OCC-001; OLP-0469; OLP-0469-B008; source upstream/content/normal-modal-logic/tableaux/countermodels.tex:46-305 bytes 2161-12858 SHA-256 c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd; target translation/content/normal-modal-logic/tableaux/countermodels.tex:326 bytes 17376-17450 SHA-256 60a05ac625211461cbd1a139cd71bb201d49f898abc39df8f1b2915a9232320d; reader page pending.
+
+## te-Telu-IN-OLTENMLSEQPRK-001 — OLTENMLSEQPRK-001: left negation inferences mislabeled right negation
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: ద్వంద్వత్వ వ్యుత్పత్తిలో ఎడమ నిరాకరణను పరిచయం చేసే రెండు అడుగుల తప్పు కుడి నిరాకరణ చీటీలను LK పట్టిక ప్రకారం ఎడమ నిరాకరణగా మార్చి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited left negation inferences mislabeled right negation at proofs-in-K.tex lines 85 and 102; rules-LK.tex negation rule table, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLSEQPRK-20260927:OLTENMLSEQPRK-001 [checked_supports], content/normal-modal-logic/sequent-calculus/proofs-in-K.tex; proofs-in-K.tex lines 85 and 102; rules-LK.tex negation rule table; left_negation_inferences_mislabeled_right_negation; ద్వంద్వత్వ వ్యుత్పత్తిలో ఎడమ నిరాకరణను పరిచయం చేసే రెండు అడుగుల తప్పు కుడి నిరాకరణ చీటీలను LK పట్టిక ప్రకారం ఎడమ నిరాకరణగా మార్చి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Do both corrected Dual-tree labels introduce negation on the antecedent, matching the frozen LK left-negation rule?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLSEQPRK-001-OCC-001; OLP-0473; OLP-0473-B009; source upstream/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:81-108 bytes 2522-3587 SHA-256 62589ae78eea5962800114b6fdfffa1923072dfb10c85746d042c4d5dc7f4c30; target translation/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:111 bytes 3882-3969 SHA-256 047e7151d6b38e49a70d96d358c1719304e4f0e76ffbae8a93bbc540e4883f97; reader page pending.

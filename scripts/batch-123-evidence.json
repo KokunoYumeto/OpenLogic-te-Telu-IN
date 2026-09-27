@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "123",
+  "unit_id": "OLP-0474",
+  "unit_order": 474,
+  "source_path": "content/normal-modal-logic/sequent-calculus/more-rules.tex",
+  "blocks": 17,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 16],
+  "previous_segments": 7171,
+  "previous_terms": 163,
+  "expected_corrections": 451,
+  "canon_default": ["TE-P010", "TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర అదనపు సీక్వెంట్ నియమ మూలం, తెలుగు లక్ష్యం, పూర్వ T/D/B/4/5 ప్రాప్యత నిర్ణయాలు, స్థానిక సాధారణ సంబంధ/తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; మూడు feature శాఖల నియమ పట్టికలు, ఆరు తర్కాల R వర్గాలు, K4/S5 చెట్లు, కట్ అవసర ఉదాహరణ, ఆరు వ్యాయామాలు తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P010 సాధారణ సంబంధానికి, TE-P018/024 సాధారణ తర్కం/వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. Modal సీక్వెంట్ T/D/B/4/5 నియమ నిర్దుష్టత/సంపూర్ణతకు లేదా S5 కట్ అవసరానికి ఈ పేజీలు ప్రత్యక్ష నిరూపణలు కావు; ఇవి మూల వాదనలుగానే నిలుస్తాయి.",
+  "term_decision": {
+    "term_id": "TE-T164",
+    "source_term": "sequent rules for accessibility classes / T D B 4 5 / cut-dependent S5 example",
+    "telugu": "ప్రాప్యత వర్గాల సీక్వెంట్ నియమాలు / T D B 4 5 / కట్‌పై ఆధారపడే S5 ఉదాహరణ",
+    "status": "native_general_relation_logic_derivation_register_attested_modal_sequent_rule_tables_source_controlled",
+    "passages": ["TE-P010", "TE-P018", "TE-P024"],
+    "basis": "TE-T155/156లోని స్వావర్తన, సీరియల్, సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ ప్రాప్యత పదాలు, TE-T160–163లోని సీక్వెంట్ పదాలను కొనసాగించాం. స్థిర మూలంలోని మూడు primitive శాఖల T/D/B/4/5 నియమాలు, తర్క-ప్రాప్యత పట్టిక, K4/S5 చెట్లు, కట్ ఉదాహరణ, ఆరు సమస్యల సూత్రాలు యథాతథం.",
+    "uncertainty": "స్థానిక సాక్షులు modal సీక్వెంట్ నిర్దుష్టత/సంపూర్ణత లేదా S5 కట్ అవసరానికి ప్రత్యక్ష నిరూపణలు ఇవ్వవు. అధ్యాయం డ్రైవరులో మూలం ఇంకా నిరూపణలు కావాలని ప్రకటించింది. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "సీక్వెంట్, సీరియల్, యూక్లిడియన్ are established borrowings; T/D/B/4/5 labels, K-family names, Cut, feature tags, proof-tree macros and table identifiers retain source notation."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "121",
+  "unit_id": "OLP-0472",
+  "unit_order": 472,
+  "source_path": "content/normal-modal-logic/sequent-calculus/rules-for-K.tex",
+  "blocks": 10,
+  "linguistic_blocks": [5, 6, 7, 8, 9],
+  "previous_segments": 7149,
+  "previous_terms": 161,
+  "expected_corrections": 450,
+  "canon_default": ["TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర K సీక్వెంట్ నియమ మూలం, తెలుగు లక్ష్యం, పూర్వ K/LK మరియు సీక్వెంట్ నిర్ణయాలు, స్థానిక సాధారణ తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; మూడు లక్షణ రూపాలు, ఖాళీ Gamma/Delta, ఒక్క ప్రధాన సూత్ర పరిమితి, రెండు నిషిద్ధ నక్షత్ర నియమ ఉదాహరణలు తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P018/024 సాధారణ తర్కం, వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. K modal సీక్వెంట్ నియమ నిర్దుష్టతకు లేదా నిషిద్ధ నక్షత్ర నియమాల ప్రతివాదాలకు ఈ పేజీలు ప్రత్యక్ష నిరూపణలు కావు; స్థిర మూల ప్రదర్శనలు నియంత్రణ.",
+  "term_decision": {
+    "term_id": "TE-T162",
+    "source_term": "K sequent rules / principal formula restriction / side formulas / hypothetical starred modal rules",
+    "telugu": "K సీక్వెంట్ నియమాలు / ప్రధాన సూత్ర పరిమితి / ఇతర సూత్రాలు / ఊహాత్మక నక్షత్ర మోడల్ నియమాలు",
+    "status": "native_general_logic_derivation_register_attested_K_sequent_rule_constraints_source_controlled",
+    "passages": ["TE-P018", "TE-P024"],
+    "basis": "TE-T160/161లోని సీక్వెంట్, LK/K, Box/Diamond పదాలను కొనసాగించాం. మూల మూడు feature-tag నియమ రూపాలు, Box Gamma/Diamond Delta అనుక్రమాలు, ఖాళీ భాగాల అనుమతి, ఒక్క A పరిమితి, రెండు తప్పు నక్షత్ర-నియమ వ్యుత్పత్తులు, వాటి K చెల్లనితనం యథాతథం.",
+    "uncertainty": "స్థానిక సాక్షులు modal సీక్వెంట్ నియమాలకు ప్రత్యక్ష సాంకేతిక రూపం ఇవ్వవు. నక్షత్ర నియమాలు మూలంలోని ఊహాత్మక ప్రతివాదాలు మాత్రమే. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "సీక్వెంట్ is an explicit borrowing; LK/K, Box/Diamond, Gamma/Delta, proof-tree macros, starred labels and feature tags retain protected source identities."
+  }
+}

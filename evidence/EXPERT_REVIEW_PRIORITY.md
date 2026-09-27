@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 469 of 722 draft units**. This view selects 503 of 609 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 474 of 722 draft units**. This view selects 504 of 615 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -5033,3 +5033,13 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0469; normal-modal-logic/tableaux/countermodels; translation/content/normal-modal-logic/tableaux/countermodels.tex:326; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the Diamond model assign q to 1.2 and cite the T q[1.2] witness on line 7?
+
+## REV-OLTENMLSEQPRK-001 — OLTENMLSEQPRK-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ద్వంద్వత్వ వ్యుత్పత్తిలో ఎడమ నిరాకరణను పరిచయం చేసే రెండు అడుగుల తప్పు కుడి నిరాకరణ చీటీలను LK పట్టిక ప్రకారం ఎడమ నిరాకరణగా మార్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0473; normal-modal-logic/sequent-calculus/proofs-in-K; translation/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:111; printed/PDF page pending
+
+- Please double-check: Please double-check: Do both corrected Dual-tree labels introduce negation on the antecedent, matching the frozen LK left-negation rule?

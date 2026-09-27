@@ -43,9 +43,18 @@ if(linguistic.size!==c.linguistic_blocks.length||
   throw new Error('Bad linguistic block map');
 const canon=new Map(jsonl('evidence/CANON_PASSAGES.jsonl').map(x=>[x.passage_id,x]));
 const current=jsonl('evidence/SEGMENT_CANON_USE.jsonl');
-const previous=current.filter(x=>x.unit_id!==unit.unit_id);
-if(previous.length!==c.previous_segments||![0,c.blocks].includes(current.length-previous.length)||
-   previous.at(-1)?.unit_id!=='OLP-'+String(c.unit_order-1).padStart(4,'0'))
+const ownSegments=current.filter(x=>x.unit_id===unit.unit_id);
+const existingSegments=ownSegments.length===c.blocks;
+const prior=current.slice(0,c.previous_segments);
+const later=existingSegments?current.slice(c.previous_segments+c.blocks):[];
+const orderById=new Map(manifest.map(row=>[row.unit_id,row.order]));
+if(![0,c.blocks].includes(ownSegments.length)||
+   prior.length!==c.previous_segments||
+   prior.at(-1)?.unit_id!=='OLP-'+String(c.unit_order-1).padStart(4,'0')||
+   (existingSegments&&(!current.slice(c.previous_segments,c.previous_segments+c.blocks)
+     .every(x=>x.unit_id===unit.unit_id)||
+     later.some(x=>(orderById.get(x.unit_id)??0)<=c.unit_order)))||
+   (!existingSegments&&current.length!==c.previous_segments))
   throw new Error('Unexpected segment cursor');
 const rows=sb.map((block,index)=>{const n=index+1,t=tb[index],isLinguistic=linguistic.has(n);
   if(isLinguistic!==/[\u0C00-\u0C7F]/u.test(t.block))throw new Error('Misclassified block '+n);
@@ -66,18 +75,21 @@ const rows=sb.map((block,index)=>{const n=index+1,t=tb[index],isLinguistic=lingu
 const termsPath='evidence/TERM_DECISIONS.jsonl',terms=jsonl(termsPath);
 const term=c.term_decision;
 if(term.term_id!=='TE-T'+String(c.previous_terms+1).padStart(3,'0'))throw new Error('Unexpected term ID');
-const existing=terms.length===c.previous_terms+1&&terms.at(-1).term_id===term.term_id;
+const existing=terms.length>c.previous_terms&&terms[c.previous_terms]?.term_id===term.term_id;
 if(!existing&&(terms.length!==c.previous_terms||
    terms.at(-1)?.term_id!=='TE-T'+String(c.previous_terms).padStart(3,'0')))
   throw new Error('Unexpected terminology cursor');
-if(!existing)terms.push(term);
+if(existing)terms[c.previous_terms]=term;
+else terms.push(term);
 const corrections=jsonl('evidence/SOURCE_CORRECTIONS.jsonl');
 const own=corrections.filter(x=>x.unit_id===unit.unit_id);
 const declared=Object.values(c.corrections_by_block??{}).flat().sort();
-if(corrections.length!==c.expected_corrections||JSON.stringify(own.map(x=>x.finding_id).sort())!==JSON.stringify(declared))
+if(corrections.length<c.expected_corrections||
+   corrections.slice(c.expected_corrections).some(x=>(orderById.get(x.unit_id)??0)<=c.unit_order)||
+   JSON.stringify(own.map(x=>x.finding_id).sort())!==JSON.stringify(declared))
   throw new Error('Correction ledger or block map mismatch');
 writeJsonl('evidence/SOURCE_CORRECTIONS.jsonl',corrections.map(x=>x.unit_id===unit.unit_id?{...x,status:'applied_qa_pass'}:x));
 writeJsonl(termsPath,terms);
-writeJsonl('evidence/SEGMENT_CANON_USE.jsonl',[...previous,...rows]);
+writeJsonl('evidence/SEGMENT_CANON_USE.jsonl',[...prior,...rows,...later]);
 console.log(JSON.stringify({unit:unit.unit_id,target_sha256:sha(target),segments:rows.length,
   linguistic:linguistic.size,structural:rows.length-linguistic.size,terms:terms.length,corrections:corrections.length}));

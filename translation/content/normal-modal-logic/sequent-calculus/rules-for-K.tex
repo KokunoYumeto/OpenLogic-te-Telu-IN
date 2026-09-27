@@ -1,0 +1,138 @@
+% Part: normal-modal-logic
+% Chapter: sequent-calculus
+% Section: rules-for-K
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{seq}{rul}
+
+\olsection{\Log{K} కోసం నియమాలు}
+
+సాధారణ ప్రతిజ్ఞావాక్య సంధాయకాల నియమాలు సాధారణ సీక్వెంట్
+కలనశాస్త్రం~$\Log{LK}$లోని నియమాలే. స్వీకృతాలూ అవే:
+$!A \Sequent !A$ రూపంలోని ఏ సీక్వెంట్ అయినా స్వీకృతం.
+
+మోడల్ కారకం\iftag{prvBox}{\iftag{prvDiamond}{లైన~$\Box$
+మరియు}{మైన~$\Box$}}{}\iftag{prvDiamond}{~$\Diamond$}{} కోసం
+కింది అదనపు \iftag{notprvBox,notprvDiamond}{నియమం}{నియమాలు}
+ఉన్నాయి:
+\[
+  \iftag{prvBox}{\iftag{prvDiamond}{% <> and [] primitive
+    \Axiom$\Gamma \fCenter \Delta, !A$
+    \RightLabel{$\Box$}
+    \UnaryInf$\Box\Gamma \fCenter \Diamond\Delta, \Box!A$
+    \DisplayProof
+    \qquad
+    \Axiom$!A, \Gamma \fCenter \Delta$
+    \RightLabel{$\Diamond$}
+    \UnaryInf$\Diamond!A, \Box\Gamma \fCenter \Diamond\Delta$
+    \DisplayProof
+}{% only Box primitive
+\Axiom$\Gamma \fCenter !A$
+\RightLabel{$\Box$}
+\UnaryInf$\Box\Gamma \fCenter \Box!A$
+\DisplayProof
+}}{% only <> primitive
+  \Axiom$!A \fCenter \Delta$
+  \RightLabel{$\Diamond$}
+  \UnaryInf$\Diamond!A \fCenter \Diamond\Delta$
+  \DisplayProof
+}
+\]
+ఇక్కడ, \iftag{prvBox}{$\Gamma$ నుంచి, ఆ $\Gamma$లోని ప్రతి
+\tetoken{సూత్రం}{!!{formula}} ముందు $\Box$ ఉంచితే
+వచ్చే \tetoken{సూత్రాల}{!!{formula}s} అనుక్రమమే
+$\Box\Gamma$\iftag{prvDiamond}{; అలాగే
+}{}}{}\iftag{prvDiamond}{$\Delta$ నుంచి, ఆ $\Delta$లోని ప్రతి
+\tetoken{సూత్రం}{!!{formula}} ముందు $\Diamond$ ఉంచితే
+వచ్చే \tetoken{సూత్రాల}{!!{formula}s} అనుక్రమమే
+$\Diamond\Delta$}{}. \iftag{notprvDiamond}{$\Box$ నియమపు
+పూర్వపక్షం కుడివైపున గరిష్ఠంగా ఒక్క
+\tetoken{సూత్రమే}{!!{formula}}~$!A$ ఉండాలి. }{}%
+\iftag{notprvBox}{$\Diamond$ నియమపు పూర్వపక్షం
+ఎడమవైపున గరిష్ఠంగా ఒక్క
+\tetoken{సూత్రమే}{!!{formula}}~$!A$ ఉండాలి. }{}%
+\iftag{prvBox}{$\Gamma$\iftag{prvDiamond}{~మరియు~}{}}{}\iftag{prvDiamond}{$\Delta$}{}
+ఖాళీగా ఉండవచ్చు; అప్పుడు నిష్కర్ష సీక్వెంట్‌లోని
+సంబంధిత భాగం
+\iftag{prvBox}{$\Box\Gamma$\iftag{prvDiamond}{~మరియు~}{}}{}\iftag{prvDiamond}{$\Diamond\Delta$}{}
+కూడా ఖాళీగా ఉంటుంది.
+
+\iftag{prvBox}{కుడివైపున $\Box$ను\iftag{prvDiamond}{,
+అలాగే }{}}{}\iftag{prvDiamond}{ఎడమవైపున $\Diamond$ను}{}
+ఒక్క \tetoken{సూత్రం}{!!{formula}}~$!A$కే చేర్చాలనే
+పరిమితి అవసరం. ఒకవేళ
+\iftag{prvBox}{కుడివైపున ఎన్ని
+\tetoken{సూత్రాలకైనా}{!!{formula}s} $\Box$ను
+చేర్చనిస్తే\iftag{prvDiamond}{ లేదా }{}}{}\iftag{prvDiamond}{ఎడమవైపున ఎన్ని
+\tetoken{సూత్రాలకైనా}{!!{formula}s} $\Diamond$ను
+చేర్చనిస్తే}{} కింది వాటిని
+\tetoken{వ్యుత్పాదించగలం}{!!{derive}}:
+  \[
+    \iftag{prvBox}{
+      \Axiom$!A \fCenter !A$
+      \RightLabel{\RightR{\lnot}}
+      \UnaryInf$\fCenter !A, \lnot !A$
+      \RightLabel{$\Box*$}
+      \UnaryInf$\fCenter \Box!A, \Box\lnot !A$
+      \doubleLine
+      \RightLabel{\RightR{\lor}}
+      \UnaryInf$\fCenter \Box!A \lor \Box \lnot !A$
+      \DisplayProof}{}
+    \iftag{notprvBox,notprvDiamond}{}{\qquad}
+    \iftag{prvDiamond}{
+      \Axiom$!A \fCenter !A$
+      \RightLabel{\LeftR{\lnot}}
+      \UnaryInf$\lnot !A, !A \fCenter$
+      \RightLabel{$\Diamond*$}
+      \UnaryInf$\Diamond\lnot !A,\Diamond!A \fCenter $
+      \RightLabel{\RightR{\lnot}}
+      \UnaryInf$\Diamond!A \fCenter \lnot\Diamond\lnot !A$
+      \RightLabel{\RightR{\lif}}
+      \UnaryInf$ \fCenter \Diamond!A \lif \lnot\Diamond\lnot !A$
+      \DisplayProof}{}
+  \]
+అయితే \iftag{prvBox}{$\Box!A \lor \Box \lnot !A$\iftag{prvDiamond}{ మరియు
+$\Diamond!A \lif \lnot\Diamond\lnot !A$ రెండూ}{ఇది}}{$\Diamond!A \lif
+\lnot\Diamond\lnot !A$ ఇది} $\Log{K}$లో చెల్లుబాటు కాదు.
+
+పూర్వపక్షంలో~$!A$తో పాటు ఇతర సూత్రాలనూ అనుమతించి,
+\iftag{prvBox}{$\Box$ నియమం కుడివైపున~$!A$కు
+మాత్రమే $\Box$ చేర్చడానికి అనుమతిస్తే\iftag{prvDiamond}{,
+లేదా }{}}{}\iftag{prvDiamond}{$\Diamond$ నియమం
+ఎడమవైపున~$!A$కు మాత్రమే $\Diamond$ చేర్చడానికి
+అనుమతిస్తే}{} (ఇతర సూత్రాలను మాత్రం మార్చకుండా)
+కింది వాటిని \tetoken{వ్యుత్పాదించగలం}{!!{derive}}:
+\[
+  \iftag{prvBox}{
+    \Axiom$!A \fCenter !A$
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$\fCenter !A, \lnot !A$
+    \RightLabel{\RightR{\Exchange}}
+    \UnaryInf$\fCenter \lnot !A, !A$
+    \RightLabel{$\Box*$}
+    \UnaryInf$\fCenter \lnot!A, \Box !A$
+    \doubleLine
+    \RightLabel{\RightR{\lor}}
+    \UnaryInf$\fCenter \lnot!A \lor \Box !A$
+    \DisplayProof}{}
+  \iftag{notprvBox,notprvDiamond}{}{\qquad}
+  \iftag{prvDiamond}{
+    \Axiom$!A \fCenter !A$
+    \RightLabel{\LeftR{\lnot}}
+    \UnaryInf$\lnot !A, !A \fCenter$
+    \RightLabel{$\Diamond*$}
+    \UnaryInf$\Diamond\lnot !A, !A \fCenter $
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$!A \fCenter \lnot\Diamond\lnot !A$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$ \fCenter !A \lif \lnot\Diamond\lnot !A$
+    \DisplayProof}{}
+\]
+అయితే \iftag{prvBox}{$\lnot!A \lor \Box !A$ (ఇది $!A
+\lif \Box!A$కు తుల్యం)\iftag{prvDiamond}{ మరియు $!A \lif \lnot\Diamond\lnot !A$
+రెండూ}{ఇది}}{$!A \lif \lnot\Diamond\lnot !A$ ఇది} $\Log{K}$లో చెల్లుబాటు కాదు.
+
+\end{document}
