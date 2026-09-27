@@ -1,0 +1,213 @@
+% Part: normal-modal-logic
+% Chapter: filtrations
+% Section: filtrations-def
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{fil}{fil}
+
+\olsection{వడపోతలు}
+
+$\Gamma$ ద్వారా $\mModel{M}$కు చేసే ``ఆ'' వడపోతను
+నిర్వచించడానికి బదులు, ఒక నమూనా~$\mModel{M^*}$ ఎప్పుడు
+$\mModel{M}$కు వడపోతగా పరిగణించబడుతుందో
+నిర్వచిస్తాం. అన్ని వడపోతలలో లోకాల సమితి~$W^*$,
+విలువ నిర్ణయం~$V^*$ ఒకటే. కానీ వేర్వేరు వడపోతల్లో
+ప్రాప్యత సంబంధం~$R^*$ వేర్వేరుగా ఉండవచ్చు. అయితే
+వడపోతగా పరిగణించాలంటే $R^*$ కొన్ని షరతులను
+నెరవేర్చాలి. ప్రధాన ఫలితం, అంటే $!A \in \Gamma$
+అయినప్పుడు $\mSat{M}{!A}[w]$ అయితే, అప్పుడు మాత్రమే
+$\mSat{M^*}{!A}[{[w]}]$ అని నిరూపించడానికి
+అవసరమైన షరతులే అవి.
+
+\begin{defn}\ollabel{defn:filtration}
+  $\Gamma$ ఉపసూత్రాల పరంగా సంవృతమై ఉండనివ్వండి;
+  $\mModel{M} = \tuple{W, R, V}$ అనుకుందాం.
+  $\Gamma$ ద్వారా $\mModel{M}$కు చేసే \emph{వడపోత}
+  అంటే, ఈ విధమైన ఏ నమూనా $\mModel{M^*} = \tuple{W^*,R^*,V^*}$ అయినా:
+  \begin{enumerate}
+  \item $W^* = \Setabs{[w]}{w \in W}$;
+  \item \ollabel{defn:filtration-R}%
+    ఏ $u,v \in W$కైనా:
+    \begin{enumerate}
+    \item \ollabel{defn:filtration-R1}%
+      $Ruv$ అయితే $R^*[u][v]$;
+    \tagitem{prvBox}{\ollabel{defn:filtration-R2}%
+      $R^*[u][v]$ అయితే, ఏ $\Box !A \in \Gamma$కైనా,
+      $\mSat{M}{\Box!A}[u]$ అయినప్పుడు
+      $\mSat{M}{!A}[v]$}{};
+    \tagitem{prvDiamond}{\ollabel{defn:filtration-R3}%
+      $R^*[u][v]$ అయితే, ఏ $\Diamond !A \in \Gamma$కైనా,
+      $\mSat{M}{!A}[v]$ అయినప్పుడు
+      $\mSat{M}{\Diamond!A}[u]$.}{}
+    \end{enumerate}
+  \item $V^*(p) = \Setabs{[u]}{u \in V(p)}$.
+  \end{enumerate}
+\end{defn}
+
+$V^*(p)$ ఏమిటో ఆలోచించడం ఉపయోగకరం:
+$\mModel{M}$లో $p$ సత్యమయ్యే అన్ని లోకాలు~$w$
+తాలూకు తుల్యతా వర్గాలు~$[w]$ కలిసిన సమితి అది.
+ఒకవైపు, $w \in V(p)$ అయితే ఈ నిర్వచనం వల్ల
+$[w] \in V^*(p)$. అయితే $[w] \in V^*(p)$ అయితే
+$w \in V(p)$ తప్పనిసరి కాదు. $[w] \in V^*(p)$
+అయినప్పుడు \emph{ఏదో}~$u \in V(p)$కు $[w] = [u]$
+అని మాత్రమే హామీ. $[w] = [u]$ అంటే $w \equiv u$.
+కాబట్టి $[w] \in V^*(p)$ నుంచి, ఏదో $u \in
+V(p)$కు $w \equiv u$ అని మాత్రమే తేల్చగలం.
+
+\begin{thm}\ollabel{thm:filtrations}
+  $\mModel{M^*}$ అనేది $\Gamma$ ద్వారా
+  $\mModel{M}$కు చేసే వడపోత అయితే, ప్రతి
+  $!A \in \Gamma$, $w \in W$ కోసం
+  $\mSat{M}{!A}[w]$ అయితే, అప్పుడు మాత్రమే
+  $\mSat{M^*}{!A}[{[w]}]$.
+\end{thm}
+
+\begin{proof}
+  $\Gamma$ ఉపసూత్రాల పరంగా సంవృతమనే విషయాన్ని
+  ఉపయోగించి $!A$పై ఆగమనం చేద్దాం. $!A \in \Gamma$,
+  $\Gamma$ \tetoken{ఉపసూత్రాల}{!!{formula}s} పరంగా
+  సంవృతం కనుక~$!A$ యొక్క అన్ని
+  \tetoken{ఉపసూత్రాలు}{!!{formula}s} కూడా $\in
+  \Gamma$. అందువల్ల ప్రతి ఆగమన దశలో~$!A$ యొక్క
+  \tetoken{ఉపసూత్రాలకు}{!!{formula}s} ఆగమన పరికల్పన
+  వర్తిస్తుంది.
+  \begin{enumerate}
+    \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\mSat{M}{\indfrm}[w]$
+        గానీ $\mSat{M^*}{\indfrm}[{[w]}]$ గానీ లేదు.}}{}
+    \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\mSat{M}{\indfrm}[w]$,
+        $\mSat{M^*}{\indfrm}[{[w]}]$ రెండూ ఉన్నాయి.}}{}
+    \item \indcase{!A}{p}{ఎడమ నుంచి కుడికి దిశ తక్షణమే:
+      $\mSat{M}{\indfrm}[w]$ అయితేనే $w \in V(p)$;
+      దీని నుంచి $[w] \in V^*(p)$, అంటే
+      $\mSat{M^*}{\indfrm}[{[w]}]$. తిరిగి,
+      $\mSat{M^*}{\indfrm}[{[w]}]$, అంటే
+      $[w] \in V^*(p)$ అనుకుందాం. అప్పుడు ఏదో
+      $v \in V(p)$కు $w \equiv v$. కనుక
+      $\mSat{M}{p}[v]$ కూడా. $w \equiv v$ కనుక
+      $w$, $v$లు $\Gamma$లోని ఒకే
+      \tetoken{సూత్రాలను}{!!{formula}s} సత్యం చేస్తాయి.
+      పరికల్పన ప్రకారం $p \in \Gamma$, అలాగే
+      $\mSat{M}{p}[v]$ కనుక
+      $\mSat{M}{\indfrm}[w]$.}
+
+    \tagitem{prvNot}{\iftag{probNot}{వ్యాయామం.}{\indcase{!A}{\lnot
+          !B}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడు మాత్రమే
+          $\mSat/{M}{!B}[w]$. ఆగమన పరికల్పన ప్రకారం,
+          $\mSat/{M}{!B}[w]$ అయితే, అప్పుడు మాత్రమే
+          $\mSat/{M^*}{!B}[{[w]}]$. చివరగా,
+          $\mSat/{M^*}{!B}[{[w]}]$ అయితే, అప్పుడు మాత్రమే
+          $\mSat{M^*}{\indfrm}[{[w]}]$.}}}{}
+
+    \tagitem{prvAnd}{\iftag{probAnd}{వ్యాయామం.}{\indcase{!A}{(!B \land
+          !C)}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడు మాత్రమే
+          $\mSat{M}{!B}[w]$, $\mSat{M}{!C}[w]$ రెండూ.
+          ఆగమన పరికల్పన ప్రకారం, $\mSat{M}{!B}[w]$
+          అయితే, అప్పుడు మాత్రమే $\mSat{M^*}{!B}[{[w]}]$;
+          $\mSat{M}{!C}[w]$ అయితే, అప్పుడు మాత్రమే
+          $\mSat{M^*}{!C}[{[w]}]$. అలాగే
+          $\mSat{M^*}{\indfrm}[{[w]}]$ అయితే, అప్పుడు మాత్రమే
+          $\mSat{M^*}{!B}[{[w]}]$,
+          $\mSat{M^*}{!C}[{[w]}]$ రెండూ.}}}{}
+
+    \tagitem{prvOr}{\iftag{probOr}{వ్యాయామం.}{\indcase{!A}{(!B \lor
+          !C)}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడు మాత్రమే
+          $\mSat{M}{!B}[w]$ లేదా $\mSat{M}{!C}[w]$.
+          ఆగమన పరికల్పన ప్రకారం, $\mSat{M}{!B}[w]$
+          అయితే, అప్పుడు మాత్రమే $\mSat{M^*}{!B}[{[w]}]$;
+          $\mSat{M}{!C}[w]$ అయితే, అప్పుడు మాత్రమే
+          $\mSat{M^*}{!C}[{[w]}]$. అలాగే
+          $\mSat{M^*}{\indfrm}[{[w]}]$ అయితే, అప్పుడు మాత్రమే
+          $\mSat{M^*}{!B}[{[w]}]$ లేదా
+          $\mSat{M^*}{!C}[{[w]}]$.}}}{}
+
+    \tagitem{prvIf}{\iftag{probIf}{వ్యాయామం.}{\indcase{!A}{(!B \lif
+          !C)}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడు మాత్రమే
+          $\mSat/{M}{!B}[w]$ లేదా $\mSat{M}{!C}[w]$.
+          ఆగమన పరికల్పన ప్రకారం, $\mSat{M}{!B}[w]$
+          అయితే, అప్పుడు మాత్రమే $\mSat{M^*}{!B}[{[w]}]$;
+          $\mSat{M}{!C}[w]$ అయితే, అప్పుడు మాత్రమే
+          $\mSat{M^*}{!C}[{[w]}]$. అలాగే
+          $\mSat{M^*}{\indfrm}[{[w]}]$ అయితే, అప్పుడు మాత్రమే
+          $\mSat/{M^*}{!B}[{[w]}]$ లేదా
+          $\mSat{M^*}{!C}[{[w]}]$.}}}{}
+
+    \tagitem{prvIff}{\iftag{probIff}{వ్యాయామం.}{\indcase{!A}{(!B \liff
+          !C)}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడు మాత్రమే
+          $\mSat{M}{!B}[w]$ మరియు $\mSat{M}{!C}[w]$,
+          లేదా $\mSat/{M}{!B}[w]$ మరియు
+          $\mSat/{M}{!C}[w]$. ఆగమన పరికల్పన ప్రకారం,
+          $\mSat{M}{!B}[w]$ అయితే, అప్పుడు మాత్రమే
+          $\mSat{M^*}{!B}[{[w]}]$;
+          $\mSat{M}{!C}[w]$ అయితే, అప్పుడు మాత్రమే
+          $\mSat{M^*}{!C}[{[w]}]$. అలాగే
+          $\mSat{M^*}{\indfrm}[{[w]}]$ అయితే, అప్పుడు మాత్రమే
+          $\mSat{M^*}{!B}[{[w]}]$ మరియు
+          $\mSat{M^*}{!C}[{[w]}]$, లేదా
+          $\mSat/{M^*}{!B}[{[w]}]$ మరియు
+          $\mSat/{M^*}{!C}[{[w]}]$.}}}{}
+
+    \tagitem{prvBox}{\iftag{probBox}{వ్యాయామం.}{\indcase{!A}{\Box
+          !B}{$\mSat{M}{\indfrm}[w]$ అనుకుందాం.
+          $\mSat{M^*}{\indfrm}[{[w]}]$ అని చూపడానికి,
+          $R^*[w][v]$ అయ్యే $v$ను తీసుకుందాం.
+          \olref{defn:filtration}\olref{defn:filtration-R2} వల్ల
+          $\mSat{M}{!B}[v]$; ఆగమన పరికల్పన వల్ల
+          $\mSat{M^*}{!B}[{[v]}]$. $v$ ఏదైనా కావచ్చు కనుక
+          $\mSat{M^*}{\indfrm}[{[w]}]$.
+
+          తిరిగి, $\mSat{M^*}{\indfrm}[{[w]}]$ అనుకుందాం;
+          $Rwv$ అయ్యే ఏదైనా $v$ను తీసుకుందాం.
+          \olref{defn:filtration}\olref{defn:filtration-R1} వల్ల
+          $R^*[w][v]$; అందువల్ల
+          $\mSat{M^*}{!B}[{[v]}]$. ఆగమన పరికల్పన వల్ల
+          $\mSat{M}{!B}[v]$; $v$ ఏదైనా కావచ్చు కనుక
+          $\mSat{M}{\indfrm}[w]$.}}}{}
+
+    \tagitem{prvDiamond}{\iftag{probDiamond}{వ్యాయామం.}{\indcase{!A}{\Diamond
+          !B}{$\mSat{M}{\indfrm}[w]$ అనుకుందాం. అప్పుడు
+          ఏదో $v \in W$కు $Rwv$, $\mSat{M}{!B}[v]$.
+          ఆగమన పరికల్పన వల్ల $\mSat{M^*}{!B}[{[v]}]$;
+          \olref{defn:filtration}\olref{defn:filtration-R1} వల్ల
+          $R^*[w][v]$. కనుక $\mSat{M^*}{\indfrm}[{[w]}]$.
+
+          ఇప్పుడు $\mSat{M^*}{\indfrm}[{[w]}]$ అనుకుందాం.
+          అప్పుడు $R^*[w][v]$ అయ్యే ఏదో $[v]
+          \in W^*$కు $\mSat{M^*}{!B}[{[v]}]$.
+          ఆగమన పరికల్పన వల్ల $\mSat{M}{!B}[v]$.
+          \olref{defn:filtration}\olref{defn:filtration-R3} వల్ల
+          $\mSat{M}{\indfrm}[w]$.}}}{}
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[nml][fil][fil]{thm:filtrations} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+
+ఒక నమూనాలోని లోకాల వద్ద సత్యానికి వర్తించేది,
+నమూనాలో సత్యానికీ నమూనాల వర్గంలో చెల్లుబాటుకూ
+వర్తిస్తుంది.
+
+\begin{cor}
+  $\Gamma$ ఉపసూత్రాల పరంగా సంవృతమై ఉండనివ్వండి.
+  అప్పుడు:
+  \begin{enumerate}
+  \item $\mModel{M^*}$ అనేది $\Gamma$ ద్వారా
+    $\mModel{M}$కు చేసే వడపోత అయితే, ఏ
+    $!A \in \Gamma$కైనా $\mSat{M}{!A}$ అయితే,
+    అప్పుడు మాత్రమే $\mSat{M^*}{!A}$.
+  \item $\mClass{C}$ నమూనాల వర్గం,
+    $\Gamma(\mClass{C})$ అనేది $\mClass{C}$లోని
+    నమూనాలకు చేసే $\Gamma$-వడపోతల వర్గం అయితే,
+    ఏ \tetoken{సూత్రం}{!!{formula}}~$!A \in \Gamma$ అయినా
+    $\mClass{C}$లో చెల్లుబాటైతే, అప్పుడు మాత్రమే
+    $\Gamma(\mClass{C})$లో చెల్లుబాటవుతుంది.
+  \end{enumerate}
+\end{cor}
+
+
+
+\end{document}

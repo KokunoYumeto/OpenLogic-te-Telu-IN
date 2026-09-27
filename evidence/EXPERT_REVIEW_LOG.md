@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 452 of 722 draft units**. This log contains 142 terminology/sense decisions and 419 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 453 of 722 draft units**. This log contains 143 terminology/sense decisions and 419 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3415,6 +3415,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక తుల్యత పేజీ equivalence relationకు ప్రత్యక్ష సాంకేతిక సాక్ష్యం కాదు. వడపోత అనే పదం OLP-0453 అధికార నిర్వచనం వద్ద మళ్లీ తనిఖీ చేయాలి; ఇక్కడ modal closureకు పరిమితత్వం ఆపాదించలేదు.
 
 - Please double-check: Please double-check whether “ఉపసూత్రాల పరంగా సంవృతం, మోడల్ సంయోజకాల పరంగా సంవృతం; వడపోత తుల్యతా వర్గాలు” is idiomatic and technically standard for “subformula-closed and modally closed sets; filtration equivalence classes” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T143 — filtration through Gamma; relation conditions R1/R2/R3; truth-preservation theorem
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: గామా ద్వారా వడపోత; R1/R2/R3 ప్రాప్యత షరతులు; సత్య సంరక్షణ సిద్ధాంతం
+
+- Exact implementation: OLP-0453; normal-modal-logic/filtrations/filtrations-def; content/normal-modal-logic/filtrations/filtrations-def.tex:11 ↔ translation/content/normal-modal-logic/filtrations/filtrations-def.tex:11 (OLP-0453-B005); printed/PDF page pending; OLP-0453; normal-modal-logic/filtrations/filtrations-def; content/normal-modal-logic/filtrations/filtrations-def.tex:13-21 ↔ translation/content/normal-modal-logic/filtrations/filtrations-def.tex:13-23 (OLP-0453-B006); printed/PDF page pending; OLP-0453; normal-modal-logic/filtrations/filtrations-def; content/normal-modal-logic/filtrations/filtrations-def.tex:23-43 ↔ translation/content/normal-modal-logic/filtrations/filtrations-def.tex:25-48 (OLP-0453-B007); printed/PDF page pending; OLP-0453; normal-modal-logic/filtrations/filtrations-def; content/normal-modal-logic/filtrations/filtrations-def.tex:45-53 ↔ translation/content/normal-modal-logic/filtrations/filtrations-def.tex:50-59 (OLP-0453-B008); printed/PDF page pending; OLP-0453; normal-modal-logic/filtrations/filtrations-def; content/normal-modal-logic/filtrations/filtrations-def.tex:55-59 ↔ translation/content/normal-modal-logic/filtrations/filtrations-def.tex:61-67 (OLP-0453-B009); printed/PDF page pending; OLP-0453; normal-modal-logic/filtrations/filtrations-def; content/normal-modal-logic/filtrations/filtrations-def.tex:61-79 ↔ translation/content/normal-modal-logic/filtrations/filtrations-def.tex:69-95 (OLP-0453-B010); printed/PDF page pending; OLP-0453; normal-modal-logic/filtrations/filtrations-def; content/normal-modal-logic/filtrations/filtrations-def.tex:81-85 ↔ translation/content/normal-modal-logic/filtrations/filtrations-def.tex:97-103 (OLP-0453-B011); printed/PDF page pending; OLP-0453; normal-modal-logic/filtrations/filtrations-def; content/normal-modal-logic/filtrations/filtrations-def.tex:130-135 ↔ translation/content/normal-modal-logic/filtrations/filtrations-def.tex:162-168 (OLP-0453-B017); printed/PDF page pending; OLP-0453; normal-modal-logic/filtrations/filtrations-def; content/normal-modal-logic/filtrations/filtrations-def.tex:152-154 ↔ translation/content/normal-modal-logic/filtrations/filtrations-def.tex:186-188 (OLP-0453-B020); printed/PDF page pending; OLP-0453; normal-modal-logic/filtrations/filtrations-def; content/normal-modal-logic/filtrations/filtrations-def.tex:156-157 ↔ translation/content/normal-modal-logic/filtrations/filtrations-def.tex:190-192 (OLP-0453-B021); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P022, PDF 84, printed 77, Implication and equivalence headings; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: OLP-0453 అధికార నిర్వచనం ప్రకారం ఒకే W*, V*కు వేర్వేరు R*లు R1/R2/R3ను నెరవేర్చవచ్చు; వడపోత అనే పూర్వ TE-T140/141/142 తాత్కాలిక రూపం ఈ పూర్తి నిర్వచనానికి అనుగుణంగా ఉన్నందున ఎడిషన్ పదంగా నిలిపాం. స్థానిక పేజీలు సాధారణ సభ్యత్వం, సంబంధం, తుల్యత, తర్క రిజిస్టర్‌ను మాత్రమే సమర్థిస్తాయి; modal ప్రత్యేక సిద్ధాంతాన్ని కాదు. M, M*, W*, R*, V*, Gamma, Box/Diamond, tags, labels and TeX macro identities remain protected source notation.
+
+- Alternatives: పూర్తి అధికార నిర్వచనం చూశాక వడపోతను నిర్వచనాధీన ఎడిషన్ పదంగా నిలిపి, స్థిర W*/V*, భిన్న R*, మూడు షరతులు, పరమాణు ప్రతిదిశ, నాలుగు మోడల్ నిరూపణ దిశలు, guarded వ్యాయామాలను యథాతథం ఉంచడం (ఎంపిక); వడపోతను ఏకైక R* నిర్మాణంగా చెప్పడం (తిరస్కరణ); V*(p)లో [w] ఉండగానే wలో p సత్యమని p Gamma షరతు లేకుండా తేల్చడం (తిరస్కరణ); స్థానిక సాధారణ సంబంధ పేజీలు modal సత్య సంరక్షణను ప్రత్యక్షంగా నిరూపిస్తాయని చూపడం (తిరస్కరణ)
+
+- Uncertainty: వడపోతకు స్వతంత్ర స్థానిక మోడల్-తర్క సాంకేతిక సాక్ష్యం ఇప్పటికీ లేదు; ఈ ఎంపిక స్పష్టమైన మూల నిర్వచనాధీన అనువాదం. అనేక R*ల అవకాశం, p Gammaలో ఉన్నప్పుడే పరమాణు ప్రతిదిశ, నాలుగు మోడల్ నిరూపణ దిశలు కీలకం.
+
+- Please double-check: Please double-check whether “గామా ద్వారా వడపోత; R1/R2/R3 ప్రాప్యత షరతులు; సత్య సంరక్షణ సిద్ధాంతం” is idiomatic and technically standard for “filtration through Gamma; relation conditions R1/R2/R3; truth-preservation theorem” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
