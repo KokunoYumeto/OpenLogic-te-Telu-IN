@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **434 of 722 source units drafted**. This readable view contains all 523 decisions and 1119 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **435 of 722 source units drafted**. This readable view contains all 524 decisions and 1127 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3769,6 +3769,39 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T125-OCC-004; OLP-0434; OLP-0434-B007; source upstream/content/normal-modal-logic/axioms-systems/duals.tex:25-29 bytes 645-935 SHA-256 f008b31a37a4d325a5a3983a340e7bb8037b7b892af4b107822aaebb0ec08849; target translation/content/normal-modal-logic/axioms-systems/duals.tex:25-30 bytes 885-1549 SHA-256 a4aacafdac17f222632230f824558477630bb3e7d2ceff22103cb0c2c70dc798; reader page pending.
   - te-Telu-IN-TE-T125-OCC-005; OLP-0434; OLP-0434-B008; source upstream/content/normal-modal-logic/axioms-systems/duals.tex:31-40 bytes 936-1192 SHA-256 f008b31a37a4d325a5a3983a340e7bb8037b7b892af4b107822aaebb0ec08849; target translation/content/normal-modal-logic/axioms-systems/duals.tex:32-42 bytes 1550-1910 SHA-256 a4aacafdac17f222632230f824558477630bb3e7d2ceff22103cb0c2c70dc798; reader page pending.
   - te-Telu-IN-TE-T125-OCC-006; OLP-0434; OLP-0434-B008; source upstream/content/normal-modal-logic/axioms-systems/duals.tex:31-40 bytes 936-1192 SHA-256 f008b31a37a4d325a5a3983a340e7bb8037b7b892af4b107822aaebb0ec08849; target translation/content/normal-modal-logic/axioms-systems/duals.tex:32-42 bytes 1550-1910 SHA-256 a4aacafdac17f222632230f824558477630bb3e7d2ceff22103cb0c2c70dc798; reader page pending.
+
+## te-Telu-IN-TE-T126 — proofs in modal systems / provability results / equivalent axiomatizations / S4 and S5 systems / equivalence relations
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: మోడల్ వ్యవస్థల్లో నిరూపణలు / నిరూపణీయత ఫలితాలు / తుల్య స్వీకృతీకరణలు / S4, S5 వ్యవస్థలు / తుల్యతా సంబంధాలు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “proofs in modal systems / provability results / equivalent axiomatizations / S4 and S5 systems / equivalence relations” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక పేజీలు ఈ ప్రత్యేక మోడల్ స్వీకృత వ్యవస్థలకో, తుల్య స్వీకృతీకరణలకో ప్రత్యక్ష ఆధారం కావు. తుల్యతా సంబంధం అనే రూపం పూర్వ నిర్ణయానికి అనుగుణం; చివరి సమానత్వ నిరూపణ మూలంలో వ్యాయామంగానే మిగిలింది.
+
+- Rationale: TE-P010లో సంబంధాల సాధారణ పదజాలం, TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, TE-P024లో నియమ-ఆధారిత వ్యుత్పత్తి ప్రత్యక్షంగా చూశాం. TE-T017, TE-T047, TE-T119--TE-T125 నిర్ణయాలతో సరిపోల్చాం. ఆరు మోడల్ నిరూపణలు, S4/S5 నిర్వచనాలు, వ్యవస్థల సమానత్వ వాక్యం OLP-0435 స్థిర మూలం నుంచి మాత్రమే వస్తాయి. K, T, B, D, 4, 5, S4, S5, p, Box, Diamond మరియు నియమ సంక్షిప్తాలు రక్షిత గణిత సంకేతాలు.
+
+- Authorities checked: TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: ఆరు నిరూపణలు, ప్రతిస్థాపన సూచనలు, S4/S5 నిర్వచనాలు, సమాన వ్యవస్థలను మూల క్రమంలో నిలిపి, తుల్యతా సంబంధం అనే పూర్వ పదాన్ని కొనసాగించడం [viable_alternative: ఎంపిక] | మూలంలో వ్యాయామంగా ఉన్న చివరి సమానత్వ నిరూపణను మౌనంగా పూరించడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ సంబంధ/వ్యుత్పత్తి పేజీలు ప్రత్యేక మోడల్ సమానత్వాలను నేరుగా నిరూపిస్తాయని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “మోడల్ వ్యవస్థల్లో నిరూపణలు / నిరూపణీయత ఫలితాలు / తుల్య స్వీకృతీకరణలు / S4, S5 వ్యవస్థలు / తుల్యతా సంబంధాలు” is idiomatic and technically standard for “proofs in modal systems / provability results / equivalent axiomatizations / S4 and S5 systems / equivalence relations” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T126-OCC-001; OLP-0435; OLP-0435-B005; source upstream/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:11 bytes 193-229 SHA-256 12956456e135cb022e30070608a0aa8c6b08a72c2cc9d2c63729816da57bf4f9; target translation/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:11 bytes 193-280 SHA-256 34db8042ab367a6aedce9a1042dfbd8a7600c146c439084ede91518bebe69931; reader page pending.
+  - te-Telu-IN-TE-T126-OCC-002; OLP-0435; OLP-0435-B006; source upstream/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:13 bytes 230-298 SHA-256 12956456e135cb022e30070608a0aa8c6b08a72c2cc9d2c63729816da57bf4f9; target translation/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:13-14 bytes 281-488 SHA-256 34db8042ab367a6aedce9a1042dfbd8a7600c146c439084ede91518bebe69931; reader page pending.
+  - te-Telu-IN-TE-T126-OCC-003; OLP-0435; OLP-0435-B007; source upstream/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:15-25 bytes 299-668 SHA-256 12956456e135cb022e30070608a0aa8c6b08a72c2cc9d2c63729816da57bf4f9; target translation/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:16-26 bytes 489-920 SHA-256 34db8042ab367a6aedce9a1042dfbd8a7600c146c439084ede91518bebe69931; reader page pending.
+  - te-Telu-IN-TE-T126-OCC-004; OLP-0435; OLP-0435-B008; source upstream/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:27-82 bytes 669-3378 SHA-256 12956456e135cb022e30070608a0aa8c6b08a72c2cc9d2c63729816da57bf4f9; target translation/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:28-83 bytes 921-3912 SHA-256 34db8042ab367a6aedce9a1042dfbd8a7600c146c439084ede91518bebe69931; reader page pending.
+  - te-Telu-IN-TE-T126-OCC-005; OLP-0435; OLP-0435-B009; source upstream/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:84-87 bytes 3379-3511 SHA-256 12956456e135cb022e30070608a0aa8c6b08a72c2cc9d2c63729816da57bf4f9; target translation/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:85-88 bytes 3913-4159 SHA-256 34db8042ab367a6aedce9a1042dfbd8a7600c146c439084ede91518bebe69931; reader page pending.
+  - te-Telu-IN-TE-T126-OCC-006; OLP-0435; OLP-0435-B010; source upstream/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:89-92 bytes 3512-3765 SHA-256 12956456e135cb022e30070608a0aa8c6b08a72c2cc9d2c63729816da57bf4f9; target translation/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:90-93 bytes 4160-4698 SHA-256 34db8042ab367a6aedce9a1042dfbd8a7600c146c439084ede91518bebe69931; reader page pending.
+  - te-Telu-IN-TE-T126-OCC-007; OLP-0435; OLP-0435-B010; source upstream/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:89-92 bytes 3512-3765 SHA-256 12956456e135cb022e30070608a0aa8c6b08a72c2cc9d2c63729816da57bf4f9; target translation/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:90-93 bytes 4160-4698 SHA-256 34db8042ab367a6aedce9a1042dfbd8a7600c146c439084ede91518bebe69931; reader page pending.
+  - te-Telu-IN-TE-T126-OCC-008; OLP-0435; OLP-0435-B013; source upstream/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:102-104 bytes 3901-3965 SHA-256 12956456e135cb022e30070608a0aa8c6b08a72c2cc9d2c63729816da57bf4f9; target translation/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:103-105 bytes 4850-4948 SHA-256 34db8042ab367a6aedce9a1042dfbd8a7600c146c439084ede91518bebe69931; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 

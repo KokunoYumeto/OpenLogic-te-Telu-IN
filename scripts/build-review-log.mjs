@@ -706,6 +706,16 @@ locations['TE-T125']=[
  L('content/normal-modal-logic/axioms-systems/duals.tex',32,34,32,35,'For each','ప్రతి'),
  L('content/normal-modal-logic/axioms-systems/duals.tex',39,39,41,41,'Prove','నిరూపించండి')
 ];
+locations['TE-T126']=[
+ L('content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex',11,11,11,11,'Proofs in Modal Systems','మోడల్ వ్యవస్థల్లో నిరూపణలు'),
+ L('content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex',13,13,13,14,'other than','కాకుండా'),
+ L('content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex',16,16,17,17,'provability results','నిరూపణీయత ఫలితాలు'),
+ L('content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex',39,39,40,40,'with $\\Box!A$ for $p$','$p$ స్థానంలో $\\Box!A$ను'),
+ L('content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex',85,86,86,87,'Following tradition','సాంప్రదాయాన్ని అనుసరించి'),
+ L('content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex',89,92,90,93,'equivalent axiomatizations','తుల్య స్వీకృతీకరణలు'),
+ L('content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex',91,92,92,93,'equivalence relations','తుల్యతా సంబంధాలనే'),
+ L('content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex',103,103,104,104,'Prove','నిరూపించండి')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -817,6 +827,7 @@ alternatives['TE-T122']=['నాలుగు K నిరూపణలను, స�
 alternatives['TE-T123']=['ప్రతిజ్ఞావాక్య తర్కం, నియమ-ఆధారిత వ్యుత్పత్తి, ఆగమనం అనే స్థానిక రూపాలను తీసుకుని, PL/RK/rewriting ప్రత్యేక ఫలితాలను స్థిర మూల నిరూపణలకే కట్టడం; రెండు మూల దిశ/మెటాచర భేదాలను ప్రకటించడం (ఎంపిక)','PL/RK ప్రత్యేక నియమాలను స్థానిక పేజీలే ప్రత్యక్షంగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ)','ప్రతిస్థాపనలో పాత–కొత్త క్రమాన్ని తారుమారు చేసి వ్యుత్పత్తి దిశను మార్చడం (తిరస్కరణ)','rewriting అభ్యాసాన్ని పరిష్కరించామని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T124']=['నాలుగు K నిరూపణలను PL/RK, Diamond భర్తీ సూచికలతో నిలిపి, చివరి వికల్ప క్రమాన్ని ప్రతిపాదనకు సరిపడే ఒక ప్రకటిత మార్పుగా చూపడం (ఎంపిక)','చివరి నిరూపణను ప్రతిపాదనతో వేరే క్రమంలో ముగిసినా గమనిక లేకుండా ఉంచడం (తిరస్కరణ)','స్థానిక ప్రతిజ్ఞావాక్య తర్క పేజీనే Box/Diamond పంపిణీ సిద్ధాంతాలకు ప్రత్యక్ష ఆధారంగా చూపడం (తిరస్కరణ)','చివరి మూడు అభ్యాసాలకు మూలంలో లేని పరిష్కారాలను చేర్చడం (తిరస్కరణ)'];
 alternatives['TE-T125']=['ద్వంద్వ సూత్రం అని T/B/4/5 డైమండ్-ఉపసూచిక రూపాలను వివరించి, D స్వద్వంద్వత్వం, K వ్యవస్థ సమానత్వ వాదనను మూల గణితానికి కట్టడం (ఎంపిక)','డైమండ్ ఉపసూచికను కొత్త భాషా పదంగా కల్పించి గణిత సంకేతాన్ని మార్చడం (తిరస్కరణ)','స్థానిక ప్రతిజ్ఞావాక్య తర్క పేజీనే మోడల్ ద్వంద్వత్వానికి ప్రత్యక్ష సాక్ష్యమని చెప్పడం (తిరస్కరణ)','సమానత్వ నిరూపణను మూల వ్యాయామం స్థానంలో మౌనంగా చేర్చడం (తిరస్కరణ)'];
+alternatives['TE-T126']=['ఆరు నిరూపణలు, ప్రతిస్థాపన సూచనలు, S4/S5 నిర్వచనాలు, సమాన వ్యవస్థలను మూల క్రమంలో నిలిపి, తుల్యతా సంబంధం అనే పూర్వ పదాన్ని కొనసాగించడం (ఎంపిక)','మూలంలో వ్యాయామంగా ఉన్న చివరి సమానత్వ నిరూపణను మౌనంగా పూరించడం (తిరస్కరణ)','స్థానిక సాధారణ సంబంధ/వ్యుత్పత్తి పేజీలు ప్రత్యేక మోడల్ సమానత్వాలను నేరుగా నిరూపిస్తాయని చెప్పడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -832,7 +843,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T125 record the Batch 025--Batch 084 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T126 record the Batch 025--Batch 085 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
