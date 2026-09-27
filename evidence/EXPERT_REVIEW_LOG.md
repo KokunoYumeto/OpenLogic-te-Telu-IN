@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 430 of 722 draft units**. This log contains 121 terminology/sense decisions and 395 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 431 of 722 draft units**. This log contains 122 terminology/sense decisions and 395 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2911,6 +2911,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: వ్యుత్పత్తి, నిగమనం, ఆగమనం, సమితి భాగాలకు స్థానిక ఆధారం ఉంది; మోడల్ వ్యవస్థ-వ్యుత్పాద్యత సమానత్వం, ఏకరీతి ప్రతిస్థాపన, K/Dual సూత్ర సభ్యత్వానికి మూల నిర్వచనాలు/నిరూపణలే ఆధారం. మూల K పేరు–సూత్రం తేడాను ప్రకటిత గణిత సవరణలో చూపాం.
 
 - Please double-check: Please double-check whether “మోడల్ వ్యవస్థలో వ్యుత్పత్తి / వ్యుత్పాదించదగిన సూత్రాల సమితిగానే వ్యవస్థ / స్వీకృత ప్రతిస్థాపన నిదర్శనాలు / ఏకరీతి ప్రతిస్థాపన కింద సంవృతం / K స్వీకృత సూత్రపు సభ్యత్వం” is idiomatic and technically standard for “derivation in a modal system / derivable formulas as the system / axiom instances / closure under uniform substitution / K axiom formula membership” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T122 — proofs in K / necessitation and K distribution / duality / tautology instances / primitive versus defined Box and Diamond
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: Kలో నిరూపణలు / అవశ్యకీకరణ మరియు K పంపిణీ / ద్వంద్వత్వం / సర్వసత్య ప్రతిస్థాపన నిదర్శనాలు / ప్రాథమిక లేదా నిర్వచిత Box, Diamond
+
+- Exact implementation: OLP-0431; normal-modal-logic/axioms-systems/proofs-in-K; content/normal-modal-logic/axioms-systems/proofs-in-K.tex:11 ↔ translation/content/normal-modal-logic/axioms-systems/proofs-in-K.tex:11 (OLP-0431-B005); printed/PDF page pending; OLP-0431; normal-modal-logic/axioms-systems/proofs-in-K; content/normal-modal-logic/axioms-systems/proofs-in-K.tex:13-16 ↔ translation/content/normal-modal-logic/axioms-systems/proofs-in-K.tex:13-16 (OLP-0431-B006); printed/PDF page pending; OLP-0431; normal-modal-logic/axioms-systems/proofs-in-K; content/normal-modal-logic/axioms-systems/proofs-in-K.tex:36-59 ↔ translation/content/normal-modal-logic/axioms-systems/proofs-in-K.tex:36-60 (OLP-0431-B010); printed/PDF page pending; OLP-0431; normal-modal-logic/axioms-systems/proofs-in-K; content/normal-modal-logic/axioms-systems/proofs-in-K.tex:65-87 ↔ translation/content/normal-modal-logic/axioms-systems/proofs-in-K.tex:66-89 (OLP-0431-B012); printed/PDF page pending; OLP-0431; normal-modal-logic/axioms-systems/proofs-in-K; content/normal-modal-logic/axioms-systems/proofs-in-K.tex:94-148 ↔ translation/content/normal-modal-logic/axioms-systems/proofs-in-K.tex:96-152 (OLP-0431-B014); printed/PDF page pending; OLP-0431; normal-modal-logic/axioms-systems/proofs-in-K; content/normal-modal-logic/axioms-systems/proofs-in-K.tex:94-148 ↔ translation/content/normal-modal-logic/axioms-systems/proofs-in-K.tex:96-152 (OLP-0431-B014); printed/PDF page pending; OLP-0431; normal-modal-logic/axioms-systems/proofs-in-K; content/normal-modal-logic/axioms-systems/proofs-in-K.tex:150-157 ↔ translation/content/normal-modal-logic/axioms-systems/proofs-in-K.tex:154-162 (OLP-0431-B015); printed/PDF page pending
+
+- Authorities actually checked: TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P033, PDF 40, printed 33, Inference section heading and definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P024లో నియమ-ఆధారిత ఫలిత వ్యుత్పత్తి, TE-P032లో నిగమనం మరియు సిద్ధాంతవాక్య సందర్భం, TE-P033లో అనుమానం అనే ప్రత్యక్ష స్థానిక రూపాలు చూశాం. OLP-0431లో నాలుగు ప్రతిపాదనలు, Nec/K/MP దశలు, సర్వసత్య నిదర్శనాలు, prvBox/prvDiamond శాఖలే మోడల్-ప్రత్యేక భావాన్ని నిర్దేశిస్తాయి; స్థానిక పేజీలు ఆ ప్రత్యేక సిద్ధాంతాల ప్రత్యక్ష ఆధారం కావు. పూర్వ TE-T119--TE-T121 ఎంపికలతో పదరూపాన్ని సమన్వయించాం. K, Nec, Dual, MP, Box, Diamond మరియు పథక చరాలు రక్షిత గణిత సంకేతాలుగా ఉంచాం; మోడల్ ముందే సందర్భీకరించిన రూపం.
+
+- Alternatives: నాలుగు K నిరూపణలను, సర్వసత్య ప్రతిస్థాపన నిదర్శనాల పంక్తి-సూచనలను, మూడు Box/Diamond tag శాఖలను, పరిష్కరించని మూడు వ్యాయామాలను యథాతథంగా ఉంచడం (ఎంపిక); Diamond నిర్వచిత శాఖను ప్రాథమిక శాఖగా కలపడం లేదా Box నిర్వచిత శాఖలో అదే తీర్మానాన్ని బలవంతంగా రాయడం (తిరస్కరణ); స్థానిక నియమ-వ్యుత్పత్తి పేజీలు K పంపిణీ, Dual, Necలను ప్రత్యక్షంగా ధ్రువీకరిస్తాయని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: సాధారణ నిరూపణ, వ్యుత్పత్తి, అనుమానం వాడుకకు స్థానిక ఆధారం ఉంది; K పంపిణీ, ద్వంద్వత్వం, అవశ్యకీకరణ, రెండు modalityల ప్రాథమిక/నిర్వచిత స్థితికి మూల సూత్రాలు, tag షరతులే ఆధారం. మూల నిరూపణల గణితాన్ని మార్చలేదు.
+
+- Please double-check: Please double-check whether “Kలో నిరూపణలు / అవశ్యకీకరణ మరియు K పంపిణీ / ద్వంద్వత్వం / సర్వసత్య ప్రతిస్థాపన నిదర్శనాలు / ప్రాథమిక లేదా నిర్వచిత Box, Diamond” is idiomatic and technically standard for “proofs in K / necessitation and K distribution / duality / tautology instances / primitive versus defined Box and Diamond” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
