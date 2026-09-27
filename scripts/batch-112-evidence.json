@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "112",
+  "unit_id": "OLP-0463",
+  "unit_order": 463,
+  "source_path": "content/normal-modal-logic/tableaux/proofs-in-K.tex",
+  "blocks": 10,
+  "linguistic_blocks": [5, 7, 8, 9],
+  "previous_segments": 7018,
+  "previous_terms": 152,
+  "expected_corrections": 429,
+  "canon_default": ["TE-P018", "TE-P019", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర K టాబ్లో నిరూపణల మూలం, తెలుగు లక్ష్యం, పూర్వ నియమాల/పదాల నిర్ణయాలు, స్థానిక సాధారణ ప్రతిజ్ఞావాక్య/సత్యమూల్య/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; రెండు షరతు చెట్లు, నాలుగు పరిష్కరించని సమస్యల జాబితాను నిలిపాం.",
+  "evidence_limit": "TE-P018/019/024 సాధారణ ప్రతిజ్ఞావాక్య తర్కం, సత్యమూల్యాలు, వ్యుత్పత్తి రిజిస్టర్‌కే ప్రత్యక్ష సాక్ష్యాలు. K మోడల్ టాబ్లోల రెండు నిరూపణ చెట్లు, Box/Diamond సిద్ధాంతాలు, నాలుగు సమస్యల ప్రత్యేక భావాలు స్థానిక పేజీల్లో లేవు; స్థిర మూల చిత్రాలు వాటిని నిర్ణయిస్తాయి.",
+  "term_decision": {
+    "term_id": "TE-T153",
+    "source_term": "closed tableaux proofs in K / conditional Box and Diamond examples / four unsolved tableau problems",
+    "telugu": "Kలో సంవృత టాబ్లో నిరూపణలు / షరతు Box, Diamond ఉదాహరణలు / నాలుగు పరిష్కరించని టాబ్లో సమస్యలు",
+    "status": "prior_tableau_register_continued_modal_k_examples_source_controlled",
+    "passages": ["TE-P018", "TE-P019", "TE-P024"],
+    "basis": "TE-T039/151/152లోని టాబ్లో, పూర్వసూచిక, సంవృతత, K నియమాల రూపాలను కొనసాగించాం. రెండు షరతు చెట్లలోని పరికల్పన, శాఖలు, 1.1 పూర్వసూచిక, సంవృత గుర్తులు మారలేదు. నాలుగు సమస్యల సూత్రాలు, అవి పాఠకుడు కనుగొనాల్సిన వ్యాయామాలన్న స్థితి యథాతథం.",
+    "uncertainty": "స్థానిక సాక్షులు K టాబ్లో నిరూపణలకు ప్రత్యక్ష సాంకేతిక పదం/నిరూపణ ఇవ్వవు. చెట్లకు TeX దృశ్య తనిఖీ లేదా స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేదు; నిర్మాణ, సూత్ర సమానత్వం యాంత్రికంగా తనిఖీ అయింది.",
+    "borrowing": "టాబ్లో is established edition borrowing; K, Box, Diamond, formula metavariables, tableau node justifications, feature tags and protected usetoken heading retain source identities."
+  }
+}

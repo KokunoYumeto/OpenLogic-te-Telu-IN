@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **462 of 722 source units drafted**. This readable view contains all 581 decisions and 1330 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **463 of 722 source units drafted**. This readable view contains all 582 decisions and 1334 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4624,6 +4624,35 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T152-OCC-005; OLP-0462; OLP-0462-B014; source upstream/content/normal-modal-logic/tableaux/rules-for-K.tex:134-169 bytes 4738-5795 SHA-256 781f917de40a4b8e0c38ade5e7cd1d9eab39a629563df7f6d07e0434ab5dffe3; target translation/content/normal-modal-logic/tableaux/rules-for-K.tex:144-179 bytes 8145-9321 SHA-256 acefd674d2f2afe9014f2de606ce92bf99ea032bb8356e6f70e198282a64f1a2; reader page pending.
   - te-Telu-IN-TE-T152-OCC-006; OLP-0462; OLP-0462-B015; source upstream/content/normal-modal-logic/tableaux/rules-for-K.tex:171-220 bytes 5796-7610 SHA-256 781f917de40a4b8e0c38ade5e7cd1d9eab39a629563df7f6d07e0434ab5dffe3; target translation/content/normal-modal-logic/tableaux/rules-for-K.tex:181-230 bytes 9322-11320 SHA-256 acefd674d2f2afe9014f2de606ce92bf99ea032bb8356e6f70e198282a64f1a2; reader page pending.
   - te-Telu-IN-TE-T152-OCC-007; OLP-0462; OLP-0462-B016; source upstream/content/normal-modal-logic/tableaux/rules-for-K.tex:222-271 bytes 7611-9543 SHA-256 781f917de40a4b8e0c38ade5e7cd1d9eab39a629563df7f6d07e0434ab5dffe3; target translation/content/normal-modal-logic/tableaux/rules-for-K.tex:232-289 bytes 11321-14127 SHA-256 acefd674d2f2afe9014f2de606ce92bf99ea032bb8356e6f70e198282a64f1a2; reader page pending.
+
+## te-Telu-IN-TE-T153 — closed tableaux proofs in K / conditional Box and Diamond examples / four unsolved tableau problems
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: Kలో సంవృత టాబ్లో నిరూపణలు / షరతు Box, Diamond ఉదాహరణలు / నాలుగు పరిష్కరించని టాబ్లో సమస్యలు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “closed tableaux proofs in K / conditional Box and Diamond examples / four unsolved tableau problems” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు K టాబ్లో నిరూపణలకు ప్రత్యక్ష సాంకేతిక పదం/నిరూపణ ఇవ్వవు. చెట్లకు TeX దృశ్య తనిఖీ లేదా స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేదు; నిర్మాణ, సూత్ర సమానత్వం యాంత్రికంగా తనిఖీ అయింది.
+
+- Rationale: TE-T039/151/152లోని టాబ్లో, పూర్వసూచిక, సంవృతత, K నియమాల రూపాలను కొనసాగించాం. రెండు షరతు చెట్లలోని పరికల్పన, శాఖలు, 1.1 పూర్వసూచిక, సంవృత గుర్తులు మారలేదు. నాలుగు సమస్యల సూత్రాలు, అవి పాఠకుడు కనుగొనాల్సిన వ్యాయామాలన్న స్థితి యథాతథం. టాబ్లో is established edition borrowing; K, Box, Diamond, formula metavariables, tableau node justifications, feature tags and protected usetoken heading retain source identities.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: Box, Diamond షరతు ఉదాహరణల పూర్తి చెట్లను, నాలుగు పరిష్కరించని సమస్యలను, K శీర్షికలో రక్షిత టాబ్లో హుక్‌ను నిలపడం [viable_alternative: ఎంపిక] | వ్యాయామాలకు సమాధానాలు చేర్చి మూల పాఠ్య పరిధిని మార్చడం [viable_alternative: తిరస్కరణ] | ఒక modal operator మాత్రమే ఉన్న ఎడిషన్‌లోనూ రెండో షరతు ఉదాహరణను బలవంతంగా చూపడం [viable_alternative: తిరస్కరణ] | చెట్టు లోని 1.1 పూర్వసూచిక లేదా సంవృత గుర్తులను మార్చడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “Kలో సంవృత టాబ్లో నిరూపణలు / షరతు Box, Diamond ఉదాహరణలు / నాలుగు పరిష్కరించని టాబ్లో సమస్యలు” is idiomatic and technically standard for “closed tableaux proofs in K / conditional Box and Diamond examples / four unsolved tableau problems” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T153-OCC-001; OLP-0463; OLP-0463-B005; source upstream/content/normal-modal-logic/tableaux/proofs-in-K.tex:11 bytes 178-224 SHA-256 17c60b914fceb4b984233ac0cf4aa37d1f6ee938b91e052aa986b970f0f0842b; target translation/content/normal-modal-logic/tableaux/proofs-in-K.tex:11 bytes 178-233 SHA-256 26b077d107dd5943b7d582b1ecc877ca2b90e32d2e7558395ce7be3975b7b59c; reader page pending.
+  - te-Telu-IN-TE-T153-OCC-002; OLP-0463; OLP-0463-B007; source upstream/content/normal-modal-logic/tableaux/proofs-in-K.tex:15-48 bytes 242-1545 SHA-256 17c60b914fceb4b984233ac0cf4aa37d1f6ee938b91e052aa986b970f0f0842b; target translation/content/normal-modal-logic/tableaux/proofs-in-K.tex:15-48 bytes 251-1613 SHA-256 26b077d107dd5943b7d582b1ecc877ca2b90e32d2e7558395ce7be3975b7b59c; reader page pending.
+  - te-Telu-IN-TE-T153-OCC-003; OLP-0463; OLP-0463-B008; source upstream/content/normal-modal-logic/tableaux/proofs-in-K.tex:50-84 bytes 1546-2919 SHA-256 17c60b914fceb4b984233ac0cf4aa37d1f6ee938b91e052aa986b970f0f0842b; target translation/content/normal-modal-logic/tableaux/proofs-in-K.tex:50-84 bytes 1614-3046 SHA-256 26b077d107dd5943b7d582b1ecc877ca2b90e32d2e7558395ce7be3975b7b59c; reader page pending.
+  - te-Telu-IN-TE-T153-OCC-004; OLP-0463; OLP-0463-B009; source upstream/content/normal-modal-logic/tableaux/proofs-in-K.tex:87-95 bytes 2921-3240 SHA-256 17c60b914fceb4b984233ac0cf4aa37d1f6ee938b91e052aa986b970f0f0842b; target translation/content/normal-modal-logic/tableaux/proofs-in-K.tex:87-96 bytes 3048-3480 SHA-256 26b077d107dd5943b7d582b1ecc877ca2b90e32d2e7558395ce7be3975b7b59c; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 

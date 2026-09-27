@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 462 of 722 draft units**. This log contains 152 terminology/sense decisions and 429 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 463 of 722 draft units**. This log contains 153 terminology/sense decisions and 429 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3655,6 +3655,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక సాక్షులు modal K టాబ్లోకు ప్రత్యక్ష నామం/నిరూపణ ఇవ్వవు. countertableau చిత్రాలు TeX దృశ్య తనిఖీ లేదా స్వతంత్ర నిపుణ సమీక్ష పొందలేదు; మూలంలోని conditional tags కింద వాటి శాస్త్రీయ అర్థాన్ని అదే మూల నియమాలతో పోల్చాం.
 
 - Please double-check: Please double-check whether “K పూర్వసూచిక టాబ్లో నియమాలు / ఉపయోగించిన, కొత్త sigma.n / ఒకే పూర్వసూచిక వద్ద సంవృతత / అనుమతించని ప్రతిటాబ్లోలు” is idiomatic and technically standard for “K prefixed tableau rules / used and new sigma.n / same-prefix closure / invalid countertableaux” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T153 — closed tableaux proofs in K / conditional Box and Diamond examples / four unsolved tableau problems
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: Kలో సంవృత టాబ్లో నిరూపణలు / షరతు Box, Diamond ఉదాహరణలు / నాలుగు పరిష్కరించని టాబ్లో సమస్యలు
+
+- Exact implementation: OLP-0463; normal-modal-logic/tableaux/proofs-in-K; content/normal-modal-logic/tableaux/proofs-in-K.tex:11 ↔ translation/content/normal-modal-logic/tableaux/proofs-in-K.tex:11 (OLP-0463-B005); printed/PDF page pending; OLP-0463; normal-modal-logic/tableaux/proofs-in-K; content/normal-modal-logic/tableaux/proofs-in-K.tex:15-48 ↔ translation/content/normal-modal-logic/tableaux/proofs-in-K.tex:15-48 (OLP-0463-B007); printed/PDF page pending; OLP-0463; normal-modal-logic/tableaux/proofs-in-K; content/normal-modal-logic/tableaux/proofs-in-K.tex:50-84 ↔ translation/content/normal-modal-logic/tableaux/proofs-in-K.tex:50-84 (OLP-0463-B008); printed/PDF page pending; OLP-0463; normal-modal-logic/tableaux/proofs-in-K; content/normal-modal-logic/tableaux/proofs-in-K.tex:87-95 ↔ translation/content/normal-modal-logic/tableaux/proofs-in-K.tex:87-96 (OLP-0463-B009); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-T039/151/152లోని టాబ్లో, పూర్వసూచిక, సంవృతత, K నియమాల రూపాలను కొనసాగించాం. రెండు షరతు చెట్లలోని పరికల్పన, శాఖలు, 1.1 పూర్వసూచిక, సంవృత గుర్తులు మారలేదు. నాలుగు సమస్యల సూత్రాలు, అవి పాఠకుడు కనుగొనాల్సిన వ్యాయామాలన్న స్థితి యథాతథం. టాబ్లో is established edition borrowing; K, Box, Diamond, formula metavariables, tableau node justifications, feature tags and protected usetoken heading retain source identities.
+
+- Alternatives: Box, Diamond షరతు ఉదాహరణల పూర్తి చెట్లను, నాలుగు పరిష్కరించని సమస్యలను, K శీర్షికలో రక్షిత టాబ్లో హుక్‌ను నిలపడం (ఎంపిక); వ్యాయామాలకు సమాధానాలు చేర్చి మూల పాఠ్య పరిధిని మార్చడం (తిరస్కరణ); ఒక modal operator మాత్రమే ఉన్న ఎడిషన్‌లోనూ రెండో షరతు ఉదాహరణను బలవంతంగా చూపడం (తిరస్కరణ); చెట్టు లోని 1.1 పూర్వసూచిక లేదా సంవృత గుర్తులను మార్చడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు K టాబ్లో నిరూపణలకు ప్రత్యక్ష సాంకేతిక పదం/నిరూపణ ఇవ్వవు. చెట్లకు TeX దృశ్య తనిఖీ లేదా స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేదు; నిర్మాణ, సూత్ర సమానత్వం యాంత్రికంగా తనిఖీ అయింది.
+
+- Please double-check: Please double-check whether “Kలో సంవృత టాబ్లో నిరూపణలు / షరతు Box, Diamond ఉదాహరణలు / నాలుగు పరిష్కరించని టాబ్లో సమస్యలు” is idiomatic and technically standard for “closed tableaux proofs in K / conditional Box and Diamond examples / four unsolved tableau problems” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
