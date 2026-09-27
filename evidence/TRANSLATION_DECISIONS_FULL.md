@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **432 of 722 source units drafted**. This readable view contains all 520 decisions and 1106 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **433 of 722 source units drafted**. This readable view contains all 522 decisions and 1113 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3707,6 +3707,37 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T123-OCC-005; OLP-0432; OLP-0432-B015; source upstream/content/normal-modal-logic/axioms-systems/derived-rules.tex:73-76 bytes 2447-2612 SHA-256 ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8; target translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:80-87 bytes 4545-5198 SHA-256 4cdc53197ab7e9dde07884ea2bce9bd0c615e74341aa63242e4ba6d295540047; reader page pending.
   - te-Telu-IN-TE-T123-OCC-006; OLP-0432; OLP-0432-B018; source upstream/content/normal-modal-logic/axioms-systems/derived-rules.tex:88-99 bytes 2883-3394 SHA-256 ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8; target translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:99-116 bytes 5574-7072 SHA-256 4cdc53197ab7e9dde07884ea2bce9bd0c615e74341aa63242e4ba6d295540047; reader page pending.
   - te-Telu-IN-TE-T123-OCC-007; OLP-0432; OLP-0432-B024; source upstream/content/normal-modal-logic/axioms-systems/derived-rules.tex:148-151 bytes 5382-5506 SHA-256 ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8; target translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:167-170 bytes 9983-10151 SHA-256 4cdc53197ab7e9dde07884ea2bce9bd0c615e74341aa63242e4ba6d295540047; reader page pending.
+
+## te-Telu-IN-TE-T124 — more K proofs / derivability examples / Diamond for not-Box-not / PL and RK proof labels / disjunction-order conclusion
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: Kలో మరిన్ని నిరూపణలు / వ్యుత్పాద్యత ఉదాహరణలు / నిషేధ-Box-నిషేధ స్థానంలో Diamond / PL, RK నిరూపణ సూచికలు / వికల్ప క్రమ తీర్మానం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “more K proofs / derivability examples / Diamond for not-Box-not / PL and RK proof labels / disjunction-order conclusion” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక పేజీలు సాధారణ ప్రతిజ్ఞావాక్య తర్కం, నియమ-వ్యుత్పత్తికి ఆధారం; Kలో Box/Diamond నిరూపణలు, PL/RK అర్థం, చివరి సూత్ర క్రమం ఆ మూల గణితం నుంచే తీసుకున్నాం. నాలుగవ నిరూపణ చివరి పంక్తి–ప్రతిపాదన భేదాన్ని ప్రకటిత సవరణగా ఉంచాం.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, అనుసంధానాల జాబితా; TE-P024లో నియమాలతో ఫలిత వ్యుత్పత్తి ప్రత్యక్షంగా చూశాం. OLP-0433లోని నాలుగు K నిరూపణలు, PL/RK సంక్షిప్త దశలు, Diamond భర్తీ, OLTENMLAXSMPR-001 చివరి వికల్ప క్రమం మూల సూత్రాలు/ప్రతిపాదనలే నిర్ణయిస్తాయి. TE-T119--TE-T123 పదరూపాలను కొనసాగించాం. K, PL, RK, Box, Diamond మరియు సూత్ర మెటాచరాలు రక్షిత గణిత సంకేతాలు; స్థానిక పేజీల్లో ఈ ప్రత్యేక మోడల్-నియమాలు కనిపించలేదు.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: నాలుగు K నిరూపణలను PL/RK, Diamond భర్తీ సూచికలతో నిలిపి, చివరి వికల్ప క్రమాన్ని ప్రతిపాదనకు సరిపడే ఒక ప్రకటిత మార్పుగా చూపడం [viable_alternative: ఎంపిక] | చివరి నిరూపణను ప్రతిపాదనతో వేరే క్రమంలో ముగిసినా గమనిక లేకుండా ఉంచడం [viable_alternative: తిరస్కరణ] | స్థానిక ప్రతిజ్ఞావాక్య తర్క పేజీనే Box/Diamond పంపిణీ సిద్ధాంతాలకు ప్రత్యక్ష ఆధారంగా చూపడం [viable_alternative: తిరస్కరణ] | చివరి మూడు అభ్యాసాలకు మూలంలో లేని పరిష్కారాలను చేర్చడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “Kలో మరిన్ని నిరూపణలు / వ్యుత్పాద్యత ఉదాహరణలు / నిషేధ-Box-నిషేధ స్థానంలో Diamond / PL, RK నిరూపణ సూచికలు / వికల్ప క్రమ తీర్మానం” is idiomatic and technically standard for “more K proofs / derivability examples / Diamond for not-Box-not / PL and RK proof labels / disjunction-order conclusion” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T124-OCC-001; OLP-0433; OLP-0433-B005; source upstream/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:11 bytes 189-224 SHA-256 75ea00c1a293c5648d59722ef93fb3a0c0b5b4a003e638f656fa4e1c11eddd4e; target translation/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:11 bytes 189-262 SHA-256 6b93be316aead5eeb366103dfac9d5c49b4e14eea86b14f876ec818b7b007b7c; reader page pending.
+  - te-Telu-IN-TE-T124-OCC-002; OLP-0433; OLP-0433-B006; source upstream/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:13-14 bytes 225-350 SHA-256 75ea00c1a293c5648d59722ef93fb3a0c0b5b4a003e638f656fa4e1c11eddd4e; target translation/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:13-15 bytes 263-611 SHA-256 6b93be316aead5eeb366103dfac9d5c49b4e14eea86b14f876ec818b7b007b7c; reader page pending.
+  - te-Telu-IN-TE-T124-OCC-003; OLP-0433; OLP-0433-B008; source upstream/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:21-31 bytes 452-1001 SHA-256 75ea00c1a293c5648d59722ef93fb3a0c0b5b4a003e638f656fa4e1c11eddd4e; target translation/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:22-32 bytes 713-1283 SHA-256 6b93be316aead5eeb366103dfac9d5c49b4e14eea86b14f876ec818b7b007b7c; reader page pending.
+  - te-Telu-IN-TE-T124-OCC-004; OLP-0433; OLP-0433-B012; source upstream/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:54-66 bytes 1657-2241 SHA-256 75ea00c1a293c5648d59722ef93fb3a0c0b5b4a003e638f656fa4e1c11eddd4e; target translation/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:55-67 bytes 1958-2582 SHA-256 6b93be316aead5eeb366103dfac9d5c49b4e14eea86b14f876ec818b7b007b7c; reader page pending.
+  - te-Telu-IN-TE-T124-OCC-005; OLP-0433; OLP-0433-B014; source upstream/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:72-87 bytes 2341-3166 SHA-256 75ea00c1a293c5648d59722ef93fb3a0c0b5b4a003e638f656fa4e1c11eddd4e; target translation/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:73-93 bytes 2682-4087 SHA-256 6b93be316aead5eeb366103dfac9d5c49b4e14eea86b14f876ec818b7b007b7c; reader page pending.
+  - te-Telu-IN-TE-T124-OCC-006; OLP-0433; OLP-0433-B015; source upstream/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:89-99 bytes 3167-3531 SHA-256 75ea00c1a293c5648d59722ef93fb3a0c0b5b4a003e638f656fa4e1c11eddd4e; target translation/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:95-106 bytes 4088-4539 SHA-256 6b93be316aead5eeb366103dfac9d5c49b4e14eea86b14f876ec818b7b007b7c; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -14109,3 +14140,29 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLAXSDER-002-OCC-001; OLP-0432; OLP-0432-B018; source upstream/content/normal-modal-logic/axioms-systems/derived-rules.tex:88-99 bytes 2883-3394 SHA-256 ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8; target translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:105 bytes 6220-6311 SHA-256 4cdc53197ab7e9dde07884ea2bce9bd0c615e74341aa63242e4ba6d295540047; reader page pending.
+
+## te-Telu-IN-OLTENMLAXSMPR-001 — OLTENMLAXSMPR-001: last line disjunction order does not match proposition
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: చివరి PL దశను ప్రతిపాదనలోని A,B కలయిక క్రమంతో సరిపడేలా రాసి, అదే నిరూపణలో ప్రకటిత గమనిక ఉంచాం; స్థిర మూలం మారలేదు.
+
+- Intended sense: Repair the audited last line disjunction order does not match proposition at more-proofs-in-K.tex lines 71-85, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLAXSMPR-20260927:OLTENMLAXSMPR-001 [checked_supports], content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex; more-proofs-in-K.tex lines 71-85; last_line_disjunction_order_does_not_match_proposition; చివరి PL దశను ప్రతిపాదనలోని A,B కలయిక క్రమంతో సరిపడేలా రాసి, అదే నిరూపణలో ప్రకటిత గమనిక ఉంచాం; స్థిర మూలం మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the final PL step yield the proposition’s Diamond A or Diamond B order directly from line 6, with the single source atom delta and disclosure recorded?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLAXSMPR-001-OCC-001; OLP-0433; OLP-0433-B014; source upstream/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:72-87 bytes 2341-3166 SHA-256 75ea00c1a293c5648d59722ef93fb3a0c0b5b4a003e638f656fa4e1c11eddd4e; target translation/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:86 bytes 3403-3495 SHA-256 6b93be316aead5eeb366103dfac9d5c49b4e14eea86b14f876ec818b7b007b7c; reader page pending.

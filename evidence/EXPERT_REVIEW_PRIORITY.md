@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 432 of 722 draft units**. This view selects 450 of 520 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 433 of 722 draft units**. This view selects 451 of 522 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4503,3 +4503,13 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0432; normal-modal-logic/axioms-systems/derived-rules; translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:105; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the Telugu replacement label say that new !B replaces old !A in C(!A) to C(!B), consistently with the later p-for-double-negation example?
+
+## REV-OLTENMLAXSMPR-001 — OLTENMLAXSMPR-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: చివరి PL దశను ప్రతిపాదనలోని A,B కలయిక క్రమంతో సరిపడేలా రాసి, అదే నిరూపణలో ప్రకటిత గమనిక ఉంచాం; స్థిర మూలం మారలేదు.
+
+- Occurrences: OLP-0433; normal-modal-logic/axioms-systems/more-proofs-in-K; translation/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:86; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the final PL step yield the proposition’s Diamond A or Diamond B order directly from line 6, with the single source atom delta and disclosure recorded?

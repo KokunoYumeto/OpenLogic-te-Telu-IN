@@ -1,0 +1,33 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTENMLAXSMPR-20260927",
+  "created_utc": "2026-09-27T02:00:06Z",
+  "status": "confirmed_last_line_disjunction_order_mismatch",
+  "scope": {
+    "chapter": "Normal Modal Logic — Axioms and Systems",
+    "unit_ids": ["OLP-0433"],
+    "finding_count": 1
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTENMLAXSMPR-001",
+      "unit_id": "OLP-0433",
+      "classification": "last_line_disjunction_order_does_not_match_proposition",
+      "source": {
+        "path": "content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex",
+        "bytes": 3547,
+        "sha256": "75ea00c1a293c5648d59722ef93fb3a0c0b5b4a003e638f656fa4e1c11eddd4e",
+        "locator": "more-proofs-in-K.tex lines 71-85"
+      },
+      "finding": "స్థిర మూలంలోని నాలుగవ ప్రతిపాదన తీర్మానం `◇(A∨B)→(◇A∨◇B)`. దాని నిరూపణ చివరి 85వ పంక్తి మాత్రం `◇(A∨B)→(◇B∨◇A)` అని వ్యతిరేక క్రమంలో ముగుస్తుంది.",
+      "controlling_evidence": "84వ పంక్తిలోని `◇(A∨B)→(¬◇B→◇A)` నుంచి ప్రతిజ్ఞావాక్య తర్కం ద్వారా `◇(A∨B)→(◇A∨◇B)` నేరుగా అనుసరిస్తుంది: `¬Q→R` సమానమైనది `R∨Q`కు. అందువల్ల ప్రకటించిన `\\PL, 6` దశను అలాగే ఉంచవచ్చు.",
+      "required_translation_handling": "స్థిర ఆంగ్ల మూలాన్ని మార్చకుండా, తెలుగు లక్ష్యపు చివరి పంక్తిలో ప్రతిపాదనతో సరిపడే `◇A∨◇B` క్రమాన్ని రాసి, అదే నిరూపణలో `OLTENMLAXSMPR-001` గమనిక ఉంచాలి. ఇతర సూత్రాలు, tagలు మారవు."
+    }
+  ]
+}

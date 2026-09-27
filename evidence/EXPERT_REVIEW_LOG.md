@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 432 of 722 draft units**. This log contains 123 terminology/sense decisions and 397 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 433 of 722 draft units**. This log contains 124 terminology/sense decisions and 398 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2959,6 +2959,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: సాధారణ ప్రతిజ్ఞావాక్య తర్కం, నియమం, వ్యుత్పత్తి, ఆగమనం స్థానికంగా సాక్షాత్కరించాయి; PL/RK అనే Kలో వ్యుత్పన్న నియమాల పూర్తి భావం, సమానార్థక-సూత్ర స్థానభర్తీ, ప్రతిస్థాపన సంవృతం మూల గణితంపైనే ఆధారపడ్డాయి. రెండో మూల భేదంలో పాత–కొత్త క్రమాన్ని ప్రదర్శిత దశలతో సరిచూశాం.
 
 - Please double-check: Please double-check whether “వ్యుత్పన్న నియమాలు / ప్రతిజ్ఞావాక్య తర్క నియమం PL / వ్యుత్పన్న నియమం RK / స్థానభర్తీ / K నిరూపణల ప్రతిస్థాపన సంవృతం” is idiomatic and technically standard for “derived rules / propositional-logic rule PL / derived rule RK / rewriting replacement / substitution closure of K proofs” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T124 — more K proofs / derivability examples / Diamond for not-Box-not / PL and RK proof labels / disjunction-order conclusion
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: Kలో మరిన్ని నిరూపణలు / వ్యుత్పాద్యత ఉదాహరణలు / నిషేధ-Box-నిషేధ స్థానంలో Diamond / PL, RK నిరూపణ సూచికలు / వికల్ప క్రమ తీర్మానం
+
+- Exact implementation: OLP-0433; normal-modal-logic/axioms-systems/more-proofs-in-K; content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:11 ↔ translation/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:11 (OLP-0433-B005); printed/PDF page pending; OLP-0433; normal-modal-logic/axioms-systems/more-proofs-in-K; content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:13-14 ↔ translation/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:13-15 (OLP-0433-B006); printed/PDF page pending; OLP-0433; normal-modal-logic/axioms-systems/more-proofs-in-K; content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:21-31 ↔ translation/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:22-32 (OLP-0433-B008); printed/PDF page pending; OLP-0433; normal-modal-logic/axioms-systems/more-proofs-in-K; content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:54-66 ↔ translation/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:55-67 (OLP-0433-B012); printed/PDF page pending; OLP-0433; normal-modal-logic/axioms-systems/more-proofs-in-K; content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:72-87 ↔ translation/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:73-93 (OLP-0433-B014); printed/PDF page pending; OLP-0433; normal-modal-logic/axioms-systems/more-proofs-in-K; content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:89-99 ↔ translation/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:95-106 (OLP-0433-B015); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, అనుసంధానాల జాబితా; TE-P024లో నియమాలతో ఫలిత వ్యుత్పత్తి ప్రత్యక్షంగా చూశాం. OLP-0433లోని నాలుగు K నిరూపణలు, PL/RK సంక్షిప్త దశలు, Diamond భర్తీ, OLTENMLAXSMPR-001 చివరి వికల్ప క్రమం మూల సూత్రాలు/ప్రతిపాదనలే నిర్ణయిస్తాయి. TE-T119--TE-T123 పదరూపాలను కొనసాగించాం. K, PL, RK, Box, Diamond మరియు సూత్ర మెటాచరాలు రక్షిత గణిత సంకేతాలు; స్థానిక పేజీల్లో ఈ ప్రత్యేక మోడల్-నియమాలు కనిపించలేదు.
+
+- Alternatives: నాలుగు K నిరూపణలను PL/RK, Diamond భర్తీ సూచికలతో నిలిపి, చివరి వికల్ప క్రమాన్ని ప్రతిపాదనకు సరిపడే ఒక ప్రకటిత మార్పుగా చూపడం (ఎంపిక); చివరి నిరూపణను ప్రతిపాదనతో వేరే క్రమంలో ముగిసినా గమనిక లేకుండా ఉంచడం (తిరస్కరణ); స్థానిక ప్రతిజ్ఞావాక్య తర్క పేజీనే Box/Diamond పంపిణీ సిద్ధాంతాలకు ప్రత్యక్ష ఆధారంగా చూపడం (తిరస్కరణ); చివరి మూడు అభ్యాసాలకు మూలంలో లేని పరిష్కారాలను చేర్చడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక పేజీలు సాధారణ ప్రతిజ్ఞావాక్య తర్కం, నియమ-వ్యుత్పత్తికి ఆధారం; Kలో Box/Diamond నిరూపణలు, PL/RK అర్థం, చివరి సూత్ర క్రమం ఆ మూల గణితం నుంచే తీసుకున్నాం. నాలుగవ నిరూపణ చివరి పంక్తి–ప్రతిపాదన భేదాన్ని ప్రకటిత సవరణగా ఉంచాం.
+
+- Please double-check: Please double-check whether “Kలో మరిన్ని నిరూపణలు / వ్యుత్పాద్యత ఉదాహరణలు / నిషేధ-Box-నిషేధ స్థానంలో Diamond / PL, RK నిరూపణ సూచికలు / వికల్ప క్రమ తీర్మానం” is idiomatic and technically standard for “more K proofs / derivability examples / Diamond for not-Box-not / PL and RK proof labels / disjunction-order conclusion” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -12487,3 +12511,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Does the Telugu replacement label say that new !B replaces old !A in C(!A) to C(!B), consistently with the later p-for-double-negation example?
+
+## REV-OLTENMLAXSMPR-001 — OLTENMLAXSMPR-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: చివరి PL దశను ప్రతిపాదనలోని A,B కలయిక క్రమంతో సరిపడేలా రాసి, అదే నిరూపణలో ప్రకటిత గమనిక ఉంచాం; స్థిర మూలం మారలేదు.
+
+- Exact implementation: OLP-0433; normal-modal-logic/axioms-systems/more-proofs-in-K; more-proofs-in-K.tex lines 71-85 ↔ translation/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:86 (OLP-0433-B014); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLAXSMPR-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: చివరి PL దశను ప్రతిపాదనలోని A,B కలయిక క్రమంతో సరిపడేలా రాసి, అదే నిరూపణలో ప్రకటిత గమనిక ఉంచాం; స్థిర మూలం మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the final PL step yield the proposition’s Diamond A or Diamond B order directly from line 6, with the single source atom delta and disclosure recorded?
