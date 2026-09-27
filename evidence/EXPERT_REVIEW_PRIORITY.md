@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 444 of 722 draft units**. This view selects 462 of 543 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 445 of 722 draft units**. This view selects 464 of 546 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4623,3 +4623,23 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0444; normal-modal-logic/completeness/lindenbaums-lemma; translation/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:35; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the at-most-n schedule list every finite formula while keeping each stage finite, including short formulas using higher-indexed variables?
+
+## REV-OLTENMLCOMMOD-001 — OLTENMLCOMMOD-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: పరిమిత సాక్షుల జాబితా B_1 నుంచి B_k దాకా ఉన్నందున రెండు అంతర్నిహితార్థ శ్రేణుల చివరి B_nను B_kగా మార్చి పక్కనే ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Occurrences: OLP-0445; normal-modal-logic/completeness/modalities-ccs; translation/content/normal-modal-logic/completeness/modalities-ccs.tex:109; printed/PDF page pending
+
+- Please double-check: Please double-check: Do both Box-lifting implication chains end at the same B_k as the finite witness list, without changing the normal-system RK step?
+
+## REV-OLTENMLCOMMOD-002 — OLTENMLCOMMOD-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: రెండవ Box ఉపసిద్ధాంతం మధ్యంతర వ్యుత్పాద్యతకు సూచించిన మొదటి ఉపసిద్ధాంతంలోని Sigma పరామితిని స్పష్టంగా చేర్చి పక్కనే ప్రకటించాం; స్థిర మూలం మారలేదు.
+
+- Occurrences: OLP-0445; normal-modal-logic/completeness/modalities-ccs; translation/content/normal-modal-logic/completeness/modalities-ccs.tex:126; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the intermediate Box-lifted entailment retain the Sigma parameter required by the cited lemma and subsequent monotonicity step?

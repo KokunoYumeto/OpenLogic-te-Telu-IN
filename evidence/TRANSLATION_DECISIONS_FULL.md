@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **444 of 722 source units drafted**. This readable view contains all 543 decisions and 1189 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **445 of 722 source units drafted**. This readable view contains all 546 decisions and 1202 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4053,6 +4053,42 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T134-OCC-005; OLP-0444; OLP-0444-B010; source upstream/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:49-59 bytes 1817-2506 SHA-256 1708ac2baa1773893a9bff57d63c9201aaea7c990213c76478fb4065a269196b; target translation/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:59-71 bytes 4210-5418 SHA-256 d9131eac42141ab451b096071aca693801c995d179dd0160f14cd401349c290c; reader page pending.
   - te-Telu-IN-TE-T134-OCC-006; OLP-0444; OLP-0444-B012; source upstream/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:66-73 bytes 2743-3275 SHA-256 1708ac2baa1773893a9bff57d63c9201aaea7c990213c76478fb4065a269196b; target translation/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:78-86 bytes 5783-6588 SHA-256 d9131eac42141ab451b096071aca693801c995d179dd0160f14cd401349c290c; reader page pending.
   - te-Telu-IN-TE-T134-OCC-007; OLP-0444; OLP-0444-B014; source upstream/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:87-92 bytes 3977-4294 SHA-256 1708ac2baa1773893a9bff57d63c9201aaea7c990213c76478fb4065a269196b; target translation/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:102-108 bytes 7696-8274 SHA-256 d9131eac42141ab451b096071aca693801c995d179dd0160f14cd401349c290c; reader page pending.
+
+## te-Telu-IN-TE-T135 — modalities with complete consistent sets / canonical accessibility / Box and Diamond images and inverse images / RK lifting / guarded primitive-modal proofs
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: సంపూర్ణ అవిరుద్ధ సమితుల మోడల్ సంయోజకాలు / కానానికల్ ప్రాప్యత / Box, Diamond ప్రతిబింబాలు, పూర్వప్రతిబింబాలు / RK ద్వారా ఉద్ధరణ / షరతుపర మోడల్ నిరూపణలు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “modalities with complete consistent sets / canonical accessibility / Box and Diamond images and inverse images / RK lifting / guarded primitive-modal proofs” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక పేజీలు ఈ మోడల్-ప్రత్యేక కానానికల్ ప్రాప్యత, Box/Diamond పూర్వప్రతిబింబ ఉపసిద్ధాంతాలు లేదా guarded శాఖలను ప్రత్యక్షంగా ఇవ్వవు. స్థిర మూలంలోని రెండు సూచిక/పరామితి లోపాలను OLTENMLCOMMOD-001/002లో ప్రకటించి సరిచేశాం.
+
+- Rationale: TE-P018లో సాధారణ ప్రతిజ్ఞావాక్య తర్కం, TE-P024లో నియమ-వ్యుత్పత్తి, TE-P026లో సమితి సుసంగతత్వం/అసంగత ప్రత్యక్షంగా చూశాం. TE-T131–134లో అవైరుధ్యం, కానానికల్ నమూనా, సంపూర్ణ విస్తరణ పదజాలాన్ని కొనసాగించాం. ప్రాప్యత సంబంధం, RK ఉద్ధరణ, Box/Diamond శాఖలు OLP-0445 స్థిర మూల నిర్మాణం నుంచే నిర్ణీతం. Sigma, Gamma, Delta, Box, Diamond, RK, Dual, R, V, modal-system labels and TeX tag keys రక్షిత సంకేతాలు.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P026 [checked_context_only], PDF page 88; printed page 81; Consistency section; Direct consistency/inconsistency terminology; not direct completeness terminology.
+
+- Alternatives: Box/Diamond షరతుపర శాఖలు, పూర్వప్రతిబింబాలు, కానానికల్ ప్రాప్యత సంబంధం, RK ఉద్ధరణను నిలిపి, రెండు మూల సూచిక/పరామితి సమస్యలను పక్కనే ప్రకటించి సరిచేయడం [viable_alternative: ఎంపిక] | B_k సాక్షుల శ్రేణిలో నిర్వచించని B_nను నిలపడం [viable_alternative: తిరస్కరణ] | Sigma-సాపేక్ష మధ్యంతర వ్యుత్పాద్యతను పరామితి లేకుండా ఉంచడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ తర్క పేజీలే ఈ మోడల్-ప్రత్యేక నిరూపణలను ప్రత్యక్షంగా ఇస్తాయని చూపడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “సంపూర్ణ అవిరుద్ధ సమితుల మోడల్ సంయోజకాలు / కానానికల్ ప్రాప్యత / Box, Diamond ప్రతిబింబాలు, పూర్వప్రతిబింబాలు / RK ద్వారా ఉద్ధరణ / షరతుపర మోడల్ నిరూపణలు” is idiomatic and technically standard for “modalities with complete consistent sets / canonical accessibility / Box and Diamond images and inverse images / RK lifting / guarded primitive-modal proofs” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T135-OCC-001; OLP-0445; OLP-0445-B005; source upstream/content/normal-modal-logic/completeness/modalities-ccs.tex:11 bytes 185-237 SHA-256 92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6; target translation/content/normal-modal-logic/completeness/modalities-ccs.tex:11 bytes 185-311 SHA-256 81a175de702934504ce5d2bbff44e49af17dd6c7c53294699082d2de46c7fbb0; reader page pending.
+  - te-Telu-IN-TE-T135-OCC-002; OLP-0445; OLP-0445-B006; source upstream/content/normal-modal-logic/completeness/modalities-ccs.tex:13-20 bytes 238-701 SHA-256 92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6; target translation/content/normal-modal-logic/completeness/modalities-ccs.tex:13-21 bytes 312-1170 SHA-256 81a175de702934504ce5d2bbff44e49af17dd6c7c53294699082d2de46c7fbb0; reader page pending.
+  - te-Telu-IN-TE-T135-OCC-003; OLP-0445; OLP-0445-B007; source upstream/content/normal-modal-logic/completeness/modalities-ccs.tex:22-53 bytes 702-2618 SHA-256 92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6; target translation/content/normal-modal-logic/completeness/modalities-ccs.tex:23-60 bytes 1171-4748 SHA-256 81a175de702934504ce5d2bbff44e49af17dd6c7c53294699082d2de46c7fbb0; reader page pending.
+  - te-Telu-IN-TE-T135-OCC-004; OLP-0445; OLP-0445-B009; source upstream/content/normal-modal-logic/completeness/modalities-ccs.tex:63-72 bytes 2982-3340 SHA-256 92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6; target translation/content/normal-modal-logic/completeness/modalities-ccs.tex:71-80 bytes 5424-5840 SHA-256 81a175de702934504ce5d2bbff44e49af17dd6c7c53294699082d2de46c7fbb0; reader page pending.
+  - te-Telu-IN-TE-T135-OCC-005; OLP-0445; OLP-0445-B013; source upstream/content/normal-modal-logic/completeness/modalities-ccs.tex:92-100 bytes 3956-4400 SHA-256 92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6; target translation/content/normal-modal-logic/completeness/modalities-ccs.tex:102-114 bytes 6937-7987 SHA-256 81a175de702934504ce5d2bbff44e49af17dd6c7c53294699082d2de46c7fbb0; reader page pending.
+  - te-Telu-IN-TE-T135-OCC-006; OLP-0445; OLP-0445-B015; source upstream/content/normal-modal-logic/completeness/modalities-ccs.tex:107-112 bytes 4525-4773 SHA-256 92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6; target translation/content/normal-modal-logic/completeness/modalities-ccs.tex:121-131 bytes 8120-8955 SHA-256 81a175de702934504ce5d2bbff44e49af17dd6c7c53294699082d2de46c7fbb0; reader page pending.
+  - te-Telu-IN-TE-T135-OCC-007; OLP-0445; OLP-0445-B017; source upstream/content/normal-modal-logic/completeness/modalities-ccs.tex:117-122 bytes 4813-5075 SHA-256 92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6; target translation/content/normal-modal-logic/completeness/modalities-ccs.tex:136-141 bytes 8993-9399 SHA-256 81a175de702934504ce5d2bbff44e49af17dd6c7c53294699082d2de46c7fbb0; reader page pending.
+  - te-Telu-IN-TE-T135-OCC-008; OLP-0445; OLP-0445-B020; source upstream/content/normal-modal-logic/completeness/modalities-ccs.tex:144-149 bytes 6014-6281 SHA-256 92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6; target translation/content/normal-modal-logic/completeness/modalities-ccs.tex:165-170 bytes 10801-11218 SHA-256 81a175de702934504ce5d2bbff44e49af17dd6c7c53294699082d2de46c7fbb0; reader page pending.
+  - te-Telu-IN-TE-T135-OCC-009; OLP-0445; OLP-0445-B023; source upstream/content/normal-modal-logic/completeness/modalities-ccs.tex:179-183 bytes 7726-7937 SHA-256 92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6; target translation/content/normal-modal-logic/completeness/modalities-ccs.tex:204-208 bytes 13407-13743 SHA-256 81a175de702934504ce5d2bbff44e49af17dd6c7c53294699082d2de46c7fbb0; reader page pending.
+  - te-Telu-IN-TE-T135-OCC-010; OLP-0445; OLP-0445-B028; source upstream/content/normal-modal-logic/completeness/modalities-ccs.tex:216-231 bytes 9289-10182 SHA-256 92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6; target translation/content/normal-modal-logic/completeness/modalities-ccs.tex:243-264 bytes 15828-17407 SHA-256 81a175de702934504ce5d2bbff44e49af17dd6c7c53294699082d2de46c7fbb0; reader page pending.
+  - te-Telu-IN-TE-T135-OCC-011; OLP-0445; OLP-0445-B030; source upstream/content/normal-modal-logic/completeness/modalities-ccs.tex:235-244 bytes 10193-10713 SHA-256 92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6; target translation/content/normal-modal-logic/completeness/modalities-ccs.tex:268-278 bytes 17416-18258 SHA-256 81a175de702934504ce5d2bbff44e49af17dd6c7c53294699082d2de46c7fbb0; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -14767,3 +14803,55 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLCOMLIN-001-OCC-001; OLP-0444; OLP-0444-B008; source upstream/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:26-43 bytes 876-1639 SHA-256 1708ac2baa1773893a9bff57d63c9201aaea7c990213c76478fb4065a269196b; target translation/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:35 bytes 2405-2497 SHA-256 d9131eac42141ab451b096071aca693801c995d179dd0160f14cd401349c290c; reader page pending.
+
+## te-Telu-IN-OLTENMLCOMMOD-001 — OLTENMLCOMMOD-001: box lifting finite witness index mismatch
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: పరిమిత సాక్షుల జాబితా B_1 నుంచి B_k దాకా ఉన్నందున రెండు అంతర్నిహితార్థ శ్రేణుల చివరి B_nను B_kగా మార్చి పక్కనే ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Intended sense: Repair the audited box lifting finite witness index mismatch at modalities-ccs.tex lines 93-97, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLCOMMOD-20260927:OLTENMLCOMMOD-001 [checked_supports], content/normal-modal-logic/completeness/modalities-ccs.tex; modalities-ccs.tex lines 93-97; box_lifting_finite_witness_index_mismatch; పరిమిత సాక్షుల జాబితా B_1 నుంచి B_k దాకా ఉన్నందున రెండు అంతర్నిహితార్థ శ్రేణుల చివరి B_nను B_kగా మార్చి పక్కనే ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Do both Box-lifting implication chains end at the same B_k as the finite witness list, without changing the normal-system RK step?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLCOMMOD-001-OCC-001; OLP-0445; OLP-0445-B013; source upstream/content/normal-modal-logic/completeness/modalities-ccs.tex:92-100 bytes 3956-4400 SHA-256 92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6; target translation/content/normal-modal-logic/completeness/modalities-ccs.tex:109 bytes 7369-7469 SHA-256 81a175de702934504ce5d2bbff44e49af17dd6c7c53294699082d2de46c7fbb0; reader page pending.
+
+## te-Telu-IN-OLTENMLCOMMOD-002 — OLTENMLCOMMOD-002: sigma parameter omitted in intermediate entailment
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: రెండవ Box ఉపసిద్ధాంతం మధ్యంతర వ్యుత్పాద్యతకు సూచించిన మొదటి ఉపసిద్ధాంతంలోని Sigma పరామితిని స్పష్టంగా చేర్చి పక్కనే ప్రకటించాం; స్థిర మూలం మారలేదు.
+
+- Intended sense: Repair the audited sigma parameter omitted in intermediate entailment at modalities-ccs.tex lines 107-111, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLCOMMOD-20260927:OLTENMLCOMMOD-002 [checked_supports], content/normal-modal-logic/completeness/modalities-ccs.tex; modalities-ccs.tex lines 107-111; sigma_parameter_omitted_in_intermediate_entailment; రెండవ Box ఉపసిద్ధాంతం మధ్యంతర వ్యుత్పాద్యతకు సూచించిన మొదటి ఉపసిద్ధాంతంలోని Sigma పరామితిని స్పష్టంగా చేర్చి పక్కనే ప్రకటించాం; స్థిర మూలం మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the intermediate Box-lifted entailment retain the Sigma parameter required by the cited lemma and subsequent monotonicity step?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLCOMMOD-002-OCC-001; OLP-0445; OLP-0445-B015; source upstream/content/normal-modal-logic/completeness/modalities-ccs.tex:107-112 bytes 4525-4773 SHA-256 92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6; target translation/content/normal-modal-logic/completeness/modalities-ccs.tex:126 bytes 8432-8472 SHA-256 81a175de702934504ce5d2bbff44e49af17dd6c7c53294699082d2de46c7fbb0; reader page pending.

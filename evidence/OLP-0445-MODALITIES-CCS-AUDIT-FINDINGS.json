@@ -1,0 +1,37 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLCOMMOD-20260927",
+  "unit_id": "OLP-0445",
+  "source_path": "content/normal-modal-logic/completeness/modalities-ccs.tex",
+  "source_sha256": "92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6",
+  "findings": [
+    {
+      "finding_id": "OLTENMLCOMMOD-001",
+      "source_locator": "modalities-ccs.tex lines 93-97",
+      "classification": "box_lifting_finite_witness_index_mismatch",
+      "source_issue": "The witnesses are B_1 through B_k, but both implication chains use B_n as their final antecedent with no n introduced.",
+      "minimal_treatment": "Use B_k in the two chains, preserving the same finite witness list and disclosing the repair adjacent to the proof.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\Sigma\\Proves!B_1\\lif(!B_2\\lif\\cdots(!B_n\\lif!A)\\cdots)$",
+          "$\\Sigma\\Proves\\Box!B_1\\lif(\\Box!B_2\\lif\\cdots(\\Box!B_n\\lif\\Box!A)\\cdots)$"
+        ],
+        "target_only": [
+          "$\\Sigma\\Proves!B_1\\lif(!B_2\\lif\\cdots(!B_k\\lif!A)\\cdots)$",
+          "$\\Sigma\\Proves\\Box!B_1\\lif(\\Box!B_2\\lif\\cdots(\\Box!B_k\\lif\\Box!A)\\cdots)$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTENMLCOMMOD-002",
+      "source_locator": "modalities-ccs.tex lines 107-111",
+      "classification": "sigma_parameter_omitted_in_intermediate_entailment",
+      "source_issue": "The invocation of lem:box1 is Sigma-relative, but the intermediate entailment drops the Sigma parameter.",
+      "minimal_treatment": "Restore the Sigma parameter in that intermediate entailment and disclose the local clarification.",
+      "expected_core_math_delta": {
+        "source_only": ["$\\Box\\Box^{-1}\\Gamma\\Proves\\Box!A$"],
+        "target_only": ["$\\Box\\Box^{-1}\\Gamma\\Proves[\\Sigma]\\Box!A$"]
+      }
+    }
+  ]
+}

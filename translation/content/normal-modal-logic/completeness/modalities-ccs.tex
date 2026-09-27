@@ -1,0 +1,280 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: modalities-ccs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{mod}
+
+\olsection{మోడల్ సంయోజకాలు, సంపూర్ణ అవిరుద్ధ సమితులు}
+
+\begin{explain}
+ఏదో ఒక నార్మల్ మోడల్ తర్కం~$\Sigma$లోని సంపూర్ణ
+$\Sigma$-అవిరుద్ధ సమితులు~$\Delta$యే లోకాలుగా ఉండే
+నమూనా~$\mModel{M^\Sigma}$ను నిర్మించినప్పుడు, ఈ ``లోకాల''
+మధ్య ప్రాప్యత సంబంధం~$R^\Sigma$ను కూడా నిర్వచించాలి.
+ప్రాప్యత సంబంధాన్ని (అలాగే విలువ నిర్ణయం~$V^\Sigma)$ను
+$\mSat{M^\Sigma}{!A}[\Delta]$ అయితే, అప్పుడు మాత్రమే
+$!A \in \Delta$ అయ్యేలా నిర్వచించాలనుకుంటున్నాం.
+దీన్ని ఎలా చేయాలి?
+
+ప్రాప్యత సంబంధాన్ని నిర్వచించిన తరువాత, లోకంలో సత్యం యొక్క
+నిర్వచనం ప్రకారం \iftag{prvBox}{$R^\Sigma\Delta\Delta'$
+  అయిన ప్రతి $\Delta'$కు $\mSat{M^\Sigma}{!A}[\Delta']$
+  అయితే, అప్పుడు మాత్రమే $\mSat{M^\Sigma}{\Box!A}[\Delta]$}{
+  $R^\Sigma\Delta\Delta'$ అయ్యే కనీసం ఒక $\Delta'$కు
+  $\mSat{M^\Sigma}{!A}[\Delta']$ అయితే, అప్పుడు మాత్రమే
+  $\mSat{M^\Sigma}{\Diamond!A}[\Delta]$}.
+$\mSat{M^\Sigma}{!A}[\Delta]$ అయితే, అప్పుడు మాత్రమే $!A \in
+\Delta$ అని నిరూపించేటప్పుడు, ప్రత్యేకించి మోడల్ సంయోజకంతో
+మొదలయ్యే \tetoken{సూత్రాల}{!!{formula}s}కూ ఇది వర్తించాలి;
+అంటే, \iftag{prvBox}{$\mSat{M^\Sigma}{\Box!A}[\Delta]$
+  అయితే, అప్పుడు మాత్రమే $\Box !A \in \Delta$}{
+  $\mSat{M^\Sigma}{\Diamond!A}[\Delta]$ అయితే, అప్పుడు మాత్రమే
+  $\Diamond !A \in \Delta$}. ఈ అవసరాన్ని
+\iftag{prvBox}{$\Box !A$}{$\Diamond !A$}కు లోకంలో
+సత్య నిర్వచనంతో కలిపితే:
+\[
+\iftag{prvBox}{%
+  \Box!A \in \Delta \text{ అయితే, అప్పుడు మాత్రమే } !A \in \Delta' \text{
+    అన్నది } R^\Sigma\Delta\Delta' \text{ అయ్యే ప్రతి $\Delta'$కు}}{%
+  \Diamond!A \in \Delta \text{ అయితే, అప్పుడు మాత్రమే } !A \in \Delta' \text{ అన్నది
+    కనీసం ఒక } \Delta' \text{కు వర్తిస్తుంది; దానికి } R^\Sigma\Delta\Delta'}
+\]
+\iftag{prvBox}{ఎడమ నుంచి కుడికి దిశను పరిశీలిద్దాం: ఏ $!A$,
+  $R^\Sigma\Delta\Delta'$ అయ్యే ఏ $\Delta'$కైనా,
+  $\Box !A \in \Delta$ అయితే $!A \in \Delta'$ అని అది చెబుతుంది.
+  $\Box!A \in \Delta$ అయ్యే ప్రతి సందర్భంలో $!A \in \Delta'$ అయినప్పుడే
+  $R^\Sigma\Delta\Delta'$ అని నిర్ణయిస్తే ఇది నెరవేరుతుంది.
+  ఈ ``అయితే, అప్పుడు మాత్రమే'' యొక్క కుడివైపు షరతును
+  $\Setabs{!A}{\Box!A \in \Delta} \subseteq \Delta'$
+  అని సంక్షిప్తంగా రాయవచ్చు.}{కుడి నుంచి ఎడమకు దిశను
+  పరిశీలిద్దాం: ఏ $!A$, $R^\Sigma\Delta\Delta'$ అయ్యే ఏ
+  $\Delta'$కైనా, $!A \in \Delta'$ అయితే $\Diamond!A \in
+  \Delta$ అని అది చెబుతుంది. $!A \in \Delta'$ అయ్యే ప్రతి సందర్భంలో
+  $\Diamond!A \in \Delta$ అయినప్పుడల్లా $R^\Sigma\Delta\Delta'$
+  అని నిర్ణయిస్తే ఇది నెరవేరుతుంది. ఈ ``అయితే, అప్పుడు మాత్రమే''
+  యొక్క కుడివైపు షరతును $\Setabs{\Diamond!A}{!A \in \Delta'}
+  \subseteq \Delta$ అని సంక్షిప్తంగా రాయవచ్చు.}
+
+ప్రశ్న ఏమిటంటే: $R^\Sigma$ యొక్క ఈ నిర్వచనం నిజంగా
+\iftag{prvBox}{$\Box !A \in \Delta$ అయితే, అప్పుడు మాత్రమే
+  $\mSat{M^\Sigma}{\Box !A}[\Delta]$ అని హామీ ఇస్తుందా?
+  \iftag{prvDiamond}{అలాగే }{}}{}\iftag{prvDiamond}{$\Diamond !A
+  \in \Delta$ అయితే, అప్పుడు మాత్రమే $\mSat{M^\Sigma}{\Diamond
+  !A}[\Delta]$ అని హామీ ఇస్తుందా?}{} రాబోయే కొన్ని ఫలితాలు
+దీనిని స్థాపిస్తాయి.
+\end{explain}
+
+\begin{defn}
+  $\Gamma$ \tetoken{సూత్రాల}{!!{formula}s} సమితి అయితే,
+  \begin{align*}
+    \Box\Gamma & = \Setabs{\Box !B}{!B \in \Gamma}\\
+    \Diamond\Gamma & = \Setabs{\Diamond !B}{!B \in \Gamma}\\
+    \intertext{మరియు}
+    \Box^{-1}\Gamma & = \Setabs{!B}{\Box !B \in \Gamma}\\
+    \Diamond^{-1}\Gamma & = \Setabs{!B}{\Diamond !B \in \Gamma}\\
+  \end{align*}
+\end{defn}
+
+అంటే, $\Box\Gamma$ అనేది $\Gamma$ నుంచి ఏర్పడి, $\Gamma$లోని
+ప్రతి \tetoken{సూత్రం}{!!{formula}}
+ముందు $\Box$ చేర్చితే లభిస్తుంది;
+$\Gamma$లో మొదట $\Box$ ఉన్న \tetoken{సూత్రాల}{!!{formula}s}
+నుంచి ఆ మొదటి $\Box$ను తొలగిస్తే వచ్చే సమితి
+$\Box^{-1}\Gamma$. ఈ నిర్వచనం స్వతంత్రంగా అంత
+ముఖ్యమైనది కాదు, కానీ సంకేతరచనను బాగా సరళం చేస్తుంది.
+
+$\Box\Box^{-1}\Gamma \subseteq \Gamma$ అని గమనించండి:
+\[
+\Box\Box^{-1}\Gamma = \Setabs{\Box!B}{\Box!B \in \Gamma}
+\]
+అంటే, $\Gamma$లో $\Box$తో మొదలయ్యే
+\tetoken{సూత్రాల}{!!{formula}s} సమితే ఇది.
+
+\begin{lem}\ollabel{lem:box1}
+  $\Gamma \Proves[\Sigma] !A$ అయితే $\Box\Gamma
+  \Proves[\Sigma] \Box !A$.
+\end{lem}
+
+\begin{proof}
+  $\Gamma \Proves[\Sigma] !A$ అయితే, $!B_1$, \dots, $!B_k
+  \in \Gamma$ ఉండి, $\Sigma \Proves !B_1 \lif (!B_2 \lif
+  \cdots (!B_k \lif !A)\cdots)$. $\Sigma$ నార్మల్ కనుక
+  \RK{} నియమం ప్రకారం $\Sigma \Proves \Box!B_1 \lif
+  (\Box!B_2 \lif \cdots (\Box!B_k \lif \Box!A)\cdots)$.
+  స్పష్టంగా $\Box!B_1$, \dots, $\Box!B_k \in \Box\Gamma$;
+  కనుక నిర్వచనం ప్రకారం $\Box\Gamma \Proves[\Sigma] \Box !A$.
+  \sourcecorrection{OLTENMLCOMMOD-001}{స్థిర మూలంలో $!B_1$ నుంచి
+    $!B_k$ వరకు సాక్షులను పేర్కొని, రెండు అంతర్నిహితార్థ
+    శ్రేణుల్లో చివరి సూచికను $n$గా రాసింది. అదే సాక్ష్యాల
+    శ్రేణి కావడానికి ఆ రెండు చోట్ల $k$ అని సరిచేశాం.}
+\end{proof}
+
+\begin{lem}\ollabel{lem:box2}
+  $\Box^{-1} \Gamma \Proves[\Sigma] !A$ అయితే $\Gamma
+  \Proves[\Sigma] \Box!A$.
+\end{lem}
+
+\begin{proof}
+  $\Box^{-1}\Gamma \Proves[\Sigma] !A$ అనుకుందాం; అప్పుడు
+  \olref{lem:box1} ప్రకారం $\Box\Box^{-1}\Gamma
+  \Proves[\Sigma] \Box!A$. అయితే $\Box\Box^{-1}\Gamma
+  \subseteq \Gamma$ కనుక ఏకదిశత్వం వల్ల $\Gamma
+  \Proves[\Sigma] \Box!A$ కూడా.
+  \sourcecorrection{OLTENMLCOMMOD-002}{స్థిర మూలంలోని మధ్యంతర
+    వ్యుత్పాద్యతకు $\Sigma$ సూచిక లేదు. సూచించిన మొదటి ఉపసిద్ధాంతం
+    $\Sigma$-సాపేక్ష వ్యుత్పాద్యతనే ఇస్తుంది; అదే సూచికను
+    ఇక్కడ స్పష్టంగా చేర్చాం.}
+\end{proof}
+
+\iftag{prvBox}{%
+% Box is primitive
+
+\begin{prop}\ollabel{prop:box}
+  $\Gamma$ సంపూర్ణ $\Sigma$-అవిరుద్ధమైతే, ప్రతి
+  సంపూర్ణ $\Sigma$-అవిరుద్ధ $\Delta$కు $\Box^{-1} \Gamma
+  \subseteq \Delta$ అయినప్పుడు $!A \in \Delta$ అవుతుంది
+  అయితే, అప్పుడు మాత్రమే $\Box !A \in \Gamma$.
+\end{prop}
+
+\begin{proof}
+  $\Gamma$ సంపూర్ణ $\Sigma$-అవిరుద్ధం అనుకుందాం. ``అయితేనే''
+  దిశ సులభం: $\Box !A \in \Gamma$ మరియు $\Box^{-1}\Gamma
+  \subseteq \Delta$ అనుకుందాం. $\Box!A \in \Gamma$ కనుక
+  $!A \in \Box^{-1}\Gamma \subseteq \Delta$; అందువల్ల
+  $!A \in \Delta$.
+
+  ``అయితే'' దిశకు విపర్యయాన్ని నిరూపిద్దాం: $\Box!A \notin
+  \Gamma$ అనుకుందాం. $\Gamma$ సంపూర్ణ $\Sigma$-అవిరుద్ధం
+  కనుక నిగమన పరంగా సంవృతం; అందువల్ల $\Gamma
+  \Proves/[\Sigma] \Box !A$. \olref{lem:box2} ప్రకారం
+  $\Box^{-1}\Gamma \Proves/[\Sigma] !A$.
+  \olref[prf][con]{prop:consistencyfacts}\olref[prf][con]{prop:consistencyfacts-b}
+  ప్రకారం $\Box^{-1}\Gamma \cup \{ \lnot!A \}$
+  $\Sigma$-అవిరుద్ధం. లిండెన్‌బామ్ ఉపసిద్ధాంతం ప్రకారం
+  $\Box^{-1}\Gamma \cup \{ \lnot!A \} \subseteq \Delta$
+  అయ్యే సంపూర్ణ $\Sigma$-అవిరుద్ధ సమితి~$\Delta$ ఉంది.
+  అవిరుధ్యం వల్ల $!A \notin \Delta$.
+\end{proof}
+}{%
+% Box is not primitive, only Diamond is
+
+\begin{prop}\ollabel{prop:diamond}
+  $\Gamma$ సంపూర్ణ $\Sigma$-అవిరుద్ధమైతే,
+  $\Diamond !A \in \Gamma$ అయితే, అప్పుడు మాత్రమే
+  $\Diamond\Delta \subseteq \Gamma$ మరియు $!A \in \Delta$
+  అయ్యే సంపూర్ణ $\Sigma$-అవిరుద్ధ సమితి $\Delta$ ఒకటి ఉంటుంది.
+\end{prop}
+
+\begin{proof}
+  $\Gamma$ సంపూర్ణ $\Sigma$-అవిరుద్ధం అనుకుందాం. కుడి
+  నుంచి ఎడమకు దిశ సులభం: $\Diamond\Delta \subseteq \Gamma$
+  మరియు $!A \in \Delta$ అయ్యే సంపూర్ణ $\Sigma$-అవిరుద్ధ
+  $\Delta$ను తీసుకుందాం. అప్పుడు $\Diamond!A \in
+  \Diamond\Delta \subseteq \Gamma$; అంటే $\Diamond!A \in
+  \Gamma$.
+
+  ఎడమ నుంచి కుడికి దిశకు $\Diamond !A \in \Gamma$
+  అనుకుందాం. $!A \in \Delta$, $\Diamond\Delta \subseteq
+  \Gamma$ అయ్యే సంపూర్ణ $\Sigma$-అవిరుద్ధ $\Delta$ ఉందని
+  చూపాలి. $\Diamond !A \in \Gamma$, $\Gamma$
+  $\Sigma$-అవిరుద్ధం కనుక $\Box\lnot !A \notin \Gamma$.
+  $\Gamma$ సంపూర్ణ $\Sigma$-అవిరుద్ధం కనుక నిగమన పరంగా
+  సంవృతం; అందుచేత $\Gamma \Proves/[\Sigma] \Box\lnot !A$.
+  \olref{lem:box2} ప్రకారం $\Box^{-1}\Gamma
+  \Proves/[\Sigma] \lnot !A$.
+  \olref[prf][con]{prop:consistencyfacts}\olref[prf][con]{prop:consistencyfacts-b}
+  ప్రకారం $\Box^{-1}\Gamma \cup \{ !A \}$
+  $\Sigma$-అవిరుద్ధం. లిండెన్‌బామ్ ఉపసిద్ధాంతం ప్రకారం
+  $\Box^{-1}\Gamma \cup \{ !A \} \subseteq \Delta$
+  అయ్యే సంపూర్ణ $\Sigma$-అవిరుద్ధ సమితి~$\Delta$ ఒకటి
+  ఉంటుంది. స్పష్టంగా $!A \in \Delta$. ఇప్పుడు
+  $\Diamond\Delta \subseteq \Gamma$ అని చూడాలి. అలా
+  కాకపోతే, ఏదో $!B \in \Delta$కు $\Diamond !B \notin
+  \Gamma$. అప్పుడు $\Gamma$ సంపూర్ణ $\Sigma$-అవిరుద్ధం
+  కనుక $\Box\lnot !B \in \Gamma$. కానీ $\lnot !B \in
+  \Box^{-1}\Gamma \subseteq \Delta$ కూడా; ఇది $\Delta$ను
+  విరుద్ధంగా చేస్తుంది.
+\end{proof}
+}
+
+\begin{lem}\ollabel{lem:box-iff-diamond}
+  $\Gamma$, $\Delta$ సంపూర్ణ $\Sigma$-అవిరుద్ధ సమితులు
+  అనుకుందాం. అప్పుడు $\Box^{-1}\Gamma \subseteq \Delta$
+  అయితే, అప్పుడు మాత్రమే $\Diamond\Delta \subseteq \Gamma$.
+\end{lem}
+
+\begin{proof}
+  ``అయితేనే'' దిశ: $\Box^{-1}\Gamma \subseteq \Delta$
+  అనుకుని, $\Diamond!A \in \Diamond\Delta$ (అంటే $!A \in
+  \Delta$) అనుకుందాం. $\Diamond!A \in \Gamma$ అని చూపడానికి
+  $\Box\lnot!A \notin \Gamma$ అని చూపడం చాలు; ఎందుకంటే అప్పుడు
+  గరిష్ఠత వల్ల $\lnot\Box\lnot !A \in \Gamma$. ఇప్పుడు
+  $\Box\lnot!A \in \Gamma$ అయితే పరికల్పన వల్ల $\lnot!A
+  \in \Delta$; ఇది $!A \in \Delta$ కూడా ఉన్న $\Delta$
+  అవిరుధ్యానికి విరుద్ధం. కనుక కావలసినట్లే $\Box\lnot!A
+  \notin \Gamma$.
+
+  ``అయితే'' దిశ: $\Diamond\Delta \subseteq \Gamma$
+  అనుకుందాం. విపర్యయంగా వాదిద్దాం: $\Box!A \notin \Gamma$
+  అని చూపడానికి $!A \notin \Delta$ అనుకుందాం.
+  $!A \notin \Delta$ అయితే గరిష్ఠత వల్ల $\lnot!A \in
+  \Delta$; కాబట్టి పరికల్పన వల్ల $\Diamond\lnot!A \in \Gamma$.
+  అయితే నార్మల్ మోడల్ తర్కంలో $\Diamond\lnot!A$,
+  $\lnot\Box !A$కు తుల్యం. తరువాతిది $\Gamma$లో ఉంటే,
+  అవిరుధ్యం వల్ల కావలసినట్లే $\Box!A \notin\Gamma$.
+\end{proof}
+
+\iftag{prvBox}{%
+  \iftag{prvDiamond}{%
+% Box and Diamond are both primitive; prove
+% prop:diamond using lem:box-iff-diamond
+
+\begin{prop}\ollabel{prop:diamond}
+  $\Gamma$ సంపూర్ణ $\Sigma$-అవిరుద్ధమైతే,
+  $\Diamond !A \in \Gamma$ అయితే, అప్పుడు మాత్రమే
+  $\Diamond\Delta \subseteq \Gamma$, $!A \in \Delta$
+  అయ్యే సంపూర్ణ $\Sigma$-అవిరుద్ధ సమితి $\Delta$ ఒకటి ఉంటుంది.
+\end{prop}
+
+\begin{proof}
+$\Gamma$ సంపూర్ణ $\Sigma$-అవిరుద్ధం అనుకుందాం. \Dual{}
+మరియు సంవృతత వల్ల $\Diamond!A \in \Gamma$ అయితే,
+అప్పుడు మాత్రమే $\lnot\Box\lnot !A \in \Gamma$.
+$\Gamma$ సంపూర్ణ $\Sigma$-అవిరుద్ధం కనుక
+\olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lnot}
+ప్రకారం $\lnot\Box\lnot !A \in \Gamma$ అయితే, అప్పుడు
+మాత్రమే $\Box\lnot !A \notin \Gamma$. \olref{prop:box}
+ప్రకారం $\Box\lnot !A \notin \Gamma$ అయితే, అప్పుడు
+మాత్రమే $\Box^{-1}\Gamma \subseteq \Delta$ అయ్యే ఏదో
+సంపూర్ణ $\Sigma$-అవిరుద్ధ $\Delta$కు $\lnot!A \notin
+\Delta$. అటువంటి~$\Delta$ను తీసుకుందాం.
+\olref{lem:box-iff-diamond} ప్రకారం $\Box^{-1}\Gamma
+\subseteq \Delta$ అయితే, అప్పుడు మాత్రమే $\Diamond\Delta
+\subseteq \Gamma$. అలాగే
+\olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lnot}
+ప్రకారం $\lnot !A \notin \Delta$ అయితే, అప్పుడు మాత్రమే
+$!A \in \Delta$. కనుక $\Diamond!A \in \Gamma$ అయితే,
+అప్పుడు మాత్రమే $\Diamond\Delta \subseteq \Gamma$,
+$!A \in \Delta$ అయ్యే ఏదో సంపూర్ణ $\Sigma$-అవిరుద్ధ
+$\Delta$ ఉంటుంది.
+\end{proof}
+
+}{}}{}
+
+\begin{prob}
+  $\Gamma$ సంపూర్ణ $\Sigma$-అవిరుద్ధమైతే,
+  \iftag{prvBox}{$\Diamond !A \in \Gamma$ అయితే, అప్పుడు
+    మాత్రమే $\Box^{-1}\Gamma \subseteq \Delta$, $!A \in
+    \Delta$ అయ్యే సంపూర్ణ $\Sigma$-అవిరుద్ధ సమితి $\Delta$
+    ఒకటి ఉంటుందని.}{$\Box !A \in \Gamma$ అయితే, అప్పుడు
+    మాత్రమే $\Box^{-1} \Gamma \subseteq \Delta$ అయ్యే
+    ప్రతి సంపూర్ణ $\Sigma$-అవిరుద్ధ $\Delta$కు $!A \in
+    \Delta$ అవుతుందని.} నిరూపించండి. \emph{ఇందుకోసం
+    \olref[nml][com][mod]{lem:box-iff-diamond} ఉపయోగించవద్దు}.
+\end{prob}
+
+\end{document}

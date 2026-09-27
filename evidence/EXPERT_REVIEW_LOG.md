@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 444 of 722 draft units**. This log contains 134 terminology/sense decisions and 409 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 445 of 722 draft units**. This log contains 135 terminology/sense decisions and 411 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3223,6 +3223,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక పేజీలు ఈ మోడల్-ప్రత్యేక ఉపసిద్ధాంతం, సమగ్ర జాబితా షెడ్యూలును ప్రత్యక్షంగా ఇవ్వవు. స్థిర మూలం ఇచ్చిన సరిగ్గా n పొడవు దశలు సమగ్రం కావు; గరిష్ఠంగా n పొడవుగా చేసిన సవరణను OLTENMLCOMLIN-001లో ప్రకటించాం.
 
 - Please double-check: Please double-check whether “లిండెన్‌బామ్ ఉపసిద్ధాంతం / సంపూర్ణ Sigma-అవిరుద్ధ విస్తరణ / సమగ్ర జాబితా / కానానికల్ నమూనా లోకం / పరిమిత సాక్ష్య అవైరుధ్యం” is idiomatic and technically standard for “Lindenbaum's Lemma / complete Sigma-consistent extension / exhaustive enumeration / canonical-model world / finite-witness consistency” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T135 — modalities with complete consistent sets / canonical accessibility / Box and Diamond images and inverse images / RK lifting / guarded primitive-modal proofs
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: సంపూర్ణ అవిరుద్ధ సమితుల మోడల్ సంయోజకాలు / కానానికల్ ప్రాప్యత / Box, Diamond ప్రతిబింబాలు, పూర్వప్రతిబింబాలు / RK ద్వారా ఉద్ధరణ / షరతుపర మోడల్ నిరూపణలు
+
+- Exact implementation: OLP-0445; normal-modal-logic/completeness/modalities-ccs; content/normal-modal-logic/completeness/modalities-ccs.tex:11 ↔ translation/content/normal-modal-logic/completeness/modalities-ccs.tex:11 (OLP-0445-B005); printed/PDF page pending; OLP-0445; normal-modal-logic/completeness/modalities-ccs; content/normal-modal-logic/completeness/modalities-ccs.tex:13-20 ↔ translation/content/normal-modal-logic/completeness/modalities-ccs.tex:13-21 (OLP-0445-B006); printed/PDF page pending; OLP-0445; normal-modal-logic/completeness/modalities-ccs; content/normal-modal-logic/completeness/modalities-ccs.tex:22-53 ↔ translation/content/normal-modal-logic/completeness/modalities-ccs.tex:23-60 (OLP-0445-B007); printed/PDF page pending; OLP-0445; normal-modal-logic/completeness/modalities-ccs; content/normal-modal-logic/completeness/modalities-ccs.tex:63-72 ↔ translation/content/normal-modal-logic/completeness/modalities-ccs.tex:71-80 (OLP-0445-B009); printed/PDF page pending; OLP-0445; normal-modal-logic/completeness/modalities-ccs; content/normal-modal-logic/completeness/modalities-ccs.tex:92-100 ↔ translation/content/normal-modal-logic/completeness/modalities-ccs.tex:102-114 (OLP-0445-B013); printed/PDF page pending; OLP-0445; normal-modal-logic/completeness/modalities-ccs; content/normal-modal-logic/completeness/modalities-ccs.tex:107-112 ↔ translation/content/normal-modal-logic/completeness/modalities-ccs.tex:121-131 (OLP-0445-B015); printed/PDF page pending; OLP-0445; normal-modal-logic/completeness/modalities-ccs; content/normal-modal-logic/completeness/modalities-ccs.tex:117-122 ↔ translation/content/normal-modal-logic/completeness/modalities-ccs.tex:136-141 (OLP-0445-B017); printed/PDF page pending; OLP-0445; normal-modal-logic/completeness/modalities-ccs; content/normal-modal-logic/completeness/modalities-ccs.tex:144-149 ↔ translation/content/normal-modal-logic/completeness/modalities-ccs.tex:165-170 (OLP-0445-B020); printed/PDF page pending; OLP-0445; normal-modal-logic/completeness/modalities-ccs; content/normal-modal-logic/completeness/modalities-ccs.tex:179-183 ↔ translation/content/normal-modal-logic/completeness/modalities-ccs.tex:204-208 (OLP-0445-B023); printed/PDF page pending; OLP-0445; normal-modal-logic/completeness/modalities-ccs; content/normal-modal-logic/completeness/modalities-ccs.tex:216-231 ↔ translation/content/normal-modal-logic/completeness/modalities-ccs.tex:243-264 (OLP-0445-B028); printed/PDF page pending; OLP-0445; normal-modal-logic/completeness/modalities-ccs; content/normal-modal-logic/completeness/modalities-ccs.tex:235-244 ↔ translation/content/normal-modal-logic/completeness/modalities-ccs.tex:268-278 (OLP-0445-B030); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P026, PDF 88, printed 81, Consistency section
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P018లో సాధారణ ప్రతిజ్ఞావాక్య తర్కం, TE-P024లో నియమ-వ్యుత్పత్తి, TE-P026లో సమితి సుసంగతత్వం/అసంగత ప్రత్యక్షంగా చూశాం. TE-T131–134లో అవైరుధ్యం, కానానికల్ నమూనా, సంపూర్ణ విస్తరణ పదజాలాన్ని కొనసాగించాం. ప్రాప్యత సంబంధం, RK ఉద్ధరణ, Box/Diamond శాఖలు OLP-0445 స్థిర మూల నిర్మాణం నుంచే నిర్ణీతం. Sigma, Gamma, Delta, Box, Diamond, RK, Dual, R, V, modal-system labels and TeX tag keys రక్షిత సంకేతాలు.
+
+- Alternatives: Box/Diamond షరతుపర శాఖలు, పూర్వప్రతిబింబాలు, కానానికల్ ప్రాప్యత సంబంధం, RK ఉద్ధరణను నిలిపి, రెండు మూల సూచిక/పరామితి సమస్యలను పక్కనే ప్రకటించి సరిచేయడం (ఎంపిక); B_k సాక్షుల శ్రేణిలో నిర్వచించని B_nను నిలపడం (తిరస్కరణ); Sigma-సాపేక్ష మధ్యంతర వ్యుత్పాద్యతను పరామితి లేకుండా ఉంచడం (తిరస్కరణ); స్థానిక సాధారణ తర్క పేజీలే ఈ మోడల్-ప్రత్యేక నిరూపణలను ప్రత్యక్షంగా ఇస్తాయని చూపడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక పేజీలు ఈ మోడల్-ప్రత్యేక కానానికల్ ప్రాప్యత, Box/Diamond పూర్వప్రతిబింబ ఉపసిద్ధాంతాలు లేదా guarded శాఖలను ప్రత్యక్షంగా ఇవ్వవు. స్థిర మూలంలోని రెండు సూచిక/పరామితి లోపాలను OLTENMLCOMMOD-001/002లో ప్రకటించి సరిచేశాం.
+
+- Please double-check: Please double-check whether “సంపూర్ణ అవిరుద్ధ సమితుల మోడల్ సంయోజకాలు / కానానికల్ ప్రాప్యత / Box, Diamond ప్రతిబింబాలు, పూర్వప్రతిబింబాలు / RK ద్వారా ఉద్ధరణ / షరతుపర మోడల్ నిరూపణలు” is idiomatic and technically standard for “modalities with complete consistent sets / canonical accessibility / Box and Diamond images and inverse images / RK lifting / guarded primitive-modal proofs” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -13039,3 +13063,51 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Does the at-most-n schedule list every finite formula while keeping each stage finite, including short formulas using higher-indexed variables?
+
+## REV-OLTENMLCOMMOD-001 — OLTENMLCOMMOD-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: పరిమిత సాక్షుల జాబితా B_1 నుంచి B_k దాకా ఉన్నందున రెండు అంతర్నిహితార్థ శ్రేణుల చివరి B_nను B_kగా మార్చి పక్కనే ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Exact implementation: OLP-0445; normal-modal-logic/completeness/modalities-ccs; modalities-ccs.tex lines 93-97 ↔ translation/content/normal-modal-logic/completeness/modalities-ccs.tex:109 (OLP-0445-B013); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLCOMMOD-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: పరిమిత సాక్షుల జాబితా B_1 నుంచి B_k దాకా ఉన్నందున రెండు అంతర్నిహితార్థ శ్రేణుల చివరి B_nను B_kగా మార్చి పక్కనే ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Do both Box-lifting implication chains end at the same B_k as the finite witness list, without changing the normal-system RK step?
+
+## REV-OLTENMLCOMMOD-002 — OLTENMLCOMMOD-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: రెండవ Box ఉపసిద్ధాంతం మధ్యంతర వ్యుత్పాద్యతకు సూచించిన మొదటి ఉపసిద్ధాంతంలోని Sigma పరామితిని స్పష్టంగా చేర్చి పక్కనే ప్రకటించాం; స్థిర మూలం మారలేదు.
+
+- Exact implementation: OLP-0445; normal-modal-logic/completeness/modalities-ccs; modalities-ccs.tex lines 107-111 ↔ translation/content/normal-modal-logic/completeness/modalities-ccs.tex:126 (OLP-0445-B015); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLCOMMOD-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: రెండవ Box ఉపసిద్ధాంతం మధ్యంతర వ్యుత్పాద్యతకు సూచించిన మొదటి ఉపసిద్ధాంతంలోని Sigma పరామితిని స్పష్టంగా చేర్చి పక్కనే ప్రకటించాం; స్థిర మూలం మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the intermediate Box-lifted entailment retain the Sigma parameter required by the cited lemma and subsequent monotonicity step?

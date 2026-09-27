@@ -783,6 +783,19 @@ locations['TE-T134']=[
  L('content/normal-modal-logic/completeness/lindenbaums-lemma.tex',66,73,78,86,'largest of','అతి పెద్దదాన్ని'),
  L('content/normal-modal-logic/completeness/lindenbaums-lemma.tex',87,104,102,122,'if and only if','అయితే, అప్పుడు మాత్రమే')
 ];
+locations['TE-T135']=[
+ L('content/normal-modal-logic/completeness/modalities-ccs.tex',11,11,11,11,'Modalities','మోడల్ సంయోజకాలు'),
+ L('content/normal-modal-logic/completeness/modalities-ccs.tex',13,20,13,21,'accessibility relation','ప్రాప్యత సంబంధం'),
+ L('content/normal-modal-logic/completeness/modalities-ccs.tex',22,59,23,67,'truth at','సత్యం'),
+ L('content/normal-modal-logic/completeness/modalities-ccs.tex',63,85,71,95,'\\Box\\Gamma','\\Box\\Gamma'),
+ L('content/normal-modal-logic/completeness/modalities-ccs.tex',87,100,97,115,'by rule \\RK','\\RK{} నియమం'),
+ L('content/normal-modal-logic/completeness/modalities-ccs.tex',102,112,116,131,'\\Box\\Box^{-1}\\Gamma','\\Box\\Box^{-1}\\Gamma'),
+ L('content/normal-modal-logic/completeness/modalities-ccs.tex',117,139,136,161,'complete','సంపూర్ణ'),
+ L('content/normal-modal-logic/completeness/modalities-ccs.tex',144,175,164,201,'\\Diamond\\Delta','\\Diamond\\Delta'),
+ L('content/normal-modal-logic/completeness/modalities-ccs.tex',179,201,204,230,'if and','అయితే, అప్పుడు మాత్రమే'),
+ L('content/normal-modal-logic/completeness/modalities-ccs.tex',209,231,236,264,'by \\Dual','\\Dual{}'),
+ L('content/normal-modal-logic/completeness/modalities-ccs.tex',235,244,267,278,'Do this without using','ఉపయోగించవద్దు')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -903,6 +916,7 @@ alternatives['TE-T131']=['స్థిర అవైరుధ్యం/వైర�
 alternatives['TE-T132']=['అధ్యాయ శీర్షిక నుంచి కానానికల్ నమూనా వరకూ పూర్వ సంపూర్ణత/అవైరుధ్యం/ప్రతినమూనా రూపాలను కొనసాగించి, K/KT/KD నిర్దుష్టత, విపర్యయ ప్రతినమూనా, పూర్తి సమితుల ప్రాప్యత, సభ్యత్వ-సత్య లక్ష్యం నిలపడం (ఎంపిక)','ఈ పరిచయంలో భవిష్యత్ కానానికల్ నిర్మాణం పూర్తిగా నిరూపించబడిందని చూపడం (తిరస్కరణ)','సౌష్ఠవ/స్వావర్తన/సీరియల్ నమూనా వర్గాలను కలపడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలే మోడల్ సంపూర్ణతకు ప్రత్యక్ష సాక్ష్యం అని చూపడం (తిరస్కరణ)'];
 alternatives['TE-T133']=['సంపూర్ణ Sigma-అవిరుద్ధత, నిగమన సంవృతత, సంయోజకాల సభ్యత్వ షరతులు, guarded exercise branches నిలిపి, నాలుగు స్థానిక నిరూపణ సమస్యలను పక్కనే ప్రకటించి సరిచేయడం (ఎంపిక)','నిషేధం రెండవ దిశలో A/నిషేధ-A పొరపాటును నిలపడం (తిరస్కరణ)','వికల్ప, తుల్యత నిరూపణల తప్పిన దిశలను మౌనంగా వదలడం (తిరస్కరణ)','సాధారణ స్థానిక అవైరుధ్య పేజీనే మోడల్ పూర్తి సమితుల ప్రత్యక్ష నిరూపణగా చూపడం (తిరస్కరణ)'];
 alternatives['TE-T134']=['లిండెన్‌బామ్ ఉపసిద్ధాంతం, సంపూర్ణ Sigma-అవిరుద్ధ విస్తరణ, సమగ్ర జాబితా, పరిమిత సాక్ష్య అవైరుధ్య వాదనను నిలిపి, జాబితా దశ పొడవును గరిష్ఠంగా nగా ప్రకటితంగా సరిచేయడం (ఎంపిక)','సరిగ్గా n పొడవు దశలనే సమగ్ర జాబితా అని అనువదించడం (తిరస్కరణ)','స్థానిక సాధారణ ప్రతిజ్ఞావాక్య పేజీలే మోడల్ లిండెన్‌బామ్ నిరూపణను ప్రత్యక్షంగా ఇస్తాయని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T135']=['Box/Diamond షరతుపర శాఖలు, పూర్వప్రతిబింబాలు, కానానికల్ ప్రాప్యత సంబంధం, RK ఉద్ధరణను నిలిపి, రెండు మూల సూచిక/పరామితి సమస్యలను పక్కనే ప్రకటించి సరిచేయడం (ఎంపిక)','B_k సాక్షుల శ్రేణిలో నిర్వచించని B_nను నిలపడం (తిరస్కరణ)','Sigma-సాపేక్ష మధ్యంతర వ్యుత్పాద్యతను పరామితి లేకుండా ఉంచడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలే ఈ మోడల్-ప్రత్యేక నిరూపణలను ప్రత్యక్షంగా ఇస్తాయని చూపడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -918,7 +932,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T134 record the Batch 025--Batch 093 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T135 record the Batch 025--Batch 094 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1241,6 +1255,8 @@ const correctionQuestions={
  ,'OLTENMLCOMCCS-003':'Does the biconditional converse start from A iff B not in Gamma, which alone licenses the next negated-biconditional membership step?'
  ,'OLTENMLCOMCCS-004':'Is the neither-belongs case excluded using completeness and closure before the biconditional converse conclusion, without silently filling the exercise branch?'
  ,'OLTENMLCOMLIN-001':'Does the at-most-n schedule list every finite formula while keeping each stage finite, including short formulas using higher-indexed variables?'
+ ,'OLTENMLCOMMOD-001':'Do both Box-lifting implication chains end at the same B_k as the finite witness list, without changing the normal-system RK step?'
+ ,'OLTENMLCOMMOD-002':'Does the intermediate Box-lifted entailment retain the Sigma parameter required by the cited lemma and subsequent monotonicity step?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));
