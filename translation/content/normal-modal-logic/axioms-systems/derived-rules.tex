@@ -1,0 +1,189 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: derived-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{der}
+
+\olsection{వ్యుత్పన్న నియమాలు}
+
+\tetoken{వ్యుత్పత్తులను}{!!{derivation}s} కనుగొని రాయడం కష్టసాధ్యం,
+శ్రమతో కూడినది, పునరావృతమయ్యేది కూడా. ఉదాహరణకు, $!A \lif !B$ నుంచి
+$\Box !A \lif \Box !B$కు వెళ్లాలని, అంటే నియమం~\RKను
+వర్తింపజేయాలని, మనకు తరచుగా అవసరమవుతుంది. అందుకు ముందుగా \Necను
+వర్తింపజేసి, తరువాత~\Ax{K} యొక్క తగిన ప్రతిస్థాపన నిదర్శనాన్ని
+నమోదు చేసి, చివరగా~\MPను వర్తింపజేయాలి. $!A \lif !B$, $!B \lif !C$
+నుంచి $!A \lif !C$కు వెళ్లాలంటే, ఈ (పొడవైన) సర్వసత్య నిదర్శనాన్ని
+నమోదు చేయాలి:
+\[
+(!A \lif !B) \lif ((!B \lif !C) \lif (!A \lif !C))
+\]
+దీనికి \MPను రెండుసార్లు వర్తింపజేయాలి. మనకు తెలిసిన సమానార్థక
+సూత్రంతో ఒక \tetoken{ఉపసూత్రాన్ని}{!!{formula}} భర్తీ చేయాలని కూడా
+తరచుగా అనుకుంటాం; ఉదాహరణకు,
+\iftag{prvDiamond}{$\Diamond
+  !A$ స్థానంలో $\lnot\Box\lnot !A$}{$\Box !A$ స్థానంలో
+  $\lnot\Diamond\lnot !A$}, లేదా $\lnot\lnot !A$ స్థానంలో $!A$.
+అందువల్ల పూర్తి \tetoken{వ్యుత్పత్తిని}{!!{derivation}} రాయడంకంటే,
+మధ్యంతర దశలు ఎందుకు \tetoken{వ్యుత్పాదించదగినవో}{!!{derivable}}
+సూచించడం సౌకర్యంగా ఉంటుంది. ఇందుకోసం
+\tetoken{వ్యుత్పాద్యత}{!!{derivability}}కు సంబంధించిన కొన్ని
+వాస్తవాలను సమీకరిద్దాం.
+
+\begin{prop}
+  $\Log{K} \Proves !A_1$, \dots, $\Log{K} \Proves !A_n$ కాగా,
+  ప్రతిజ్ఞావాక్య తర్కం ప్రకారం $!A_1$, \dots, $!A_n$ నుంచి $!B$
+  అనుసరిస్తే, $\Log{K} \Proves !B$.
+\end{prop}
+
+\begin{proof}
+  ప్రతిజ్ఞావాక్య తర్కం ప్రకారం $!A_1$, \dots,~$!A_n$ నుంచి $!B$
+  అనుసరిస్తే,
+  \[
+  !A_1 \lif (!A_2 \lif \cdots (!A_n \lif !B)\dots)
+  \]
+  ఒక సర్వసత్య ప్రతిస్థాపన నిదర్శనం. \MPను $n$ సార్లు వర్తింపజేస్తే
+  $!B$కు ఒక \tetoken{వ్యుత్పత్తి}{!!{derivation}} లభిస్తుంది.
+\end{proof}
+
+ఈ ప్రతిపాదనను వాడినప్పుడు~\PLతో సూచిస్తాం.
+
+\begin{prop}
+  $\Log{K} \Proves !A_1 \lif (!A_2 \lif \cdots (!A_{n-1} \lif
+  !A_n)\dots)$ అయితే $\Log{K} \Proves \Box !A_1 \lif (\Box !A_2 \lif
+  \cdots (\Box !A_{n-1} \lif \Box !A_n)\dots)$.
+\end{prop}
+
+\begin{proof}
+  \olref[nor]{prop:rk} నిరూపణలో మాదిరిగానే $n$పై ఆగమనం ద్వారా.
+\end{proof}
+
+ఈ ప్రతిపాదనను వాడినప్పుడు~\RKతో సూచిస్తాం. ఈ ఫలితాలు
+\tetoken{వ్యుత్పాద్యత}{!!{derivability}} ఫలితాలను మరింత సులభంగా
+స్థాపించడానికి ఎలా తోడ్పడతాయో చూద్దాం.
+
+\begin{prop}
+  $\Log{K} \Proves (\Box!A \land \Box!B) \lif \Box (!A \land !B)$
+\end{prop}
+
+\begin{proof}
+  \begin{derivation}
+    1. & $\Log{K} \Proves !A \lif (!B \lif (!A \land !B))$ & \Taut \\
+    2. & $\Log{K} \Proves \Box!A \lif (\Box !B \lif \Box(!A \land !B)))$ & \RK, 1\\
+    3. & $\Log{K} \Proves (\Box!A \land \Box!B) \lif \Box(!A \land !B)$ & \PL, 2
+  \end{derivation}
+\end{proof}
+
+\begin{prop}\ollabel{prop:rewriting}
+  $\Log{K} \Proves !A \liff !B$ మరియు $\Log{K} \Proves
+  \Subst{!C}{!A}{q}$ అయితే $\Log{K} \Proves \Subst{!C}{!B}{q}$.
+  \sourcecorrection{OLTENMLAXSDER-001}{స్థిర మూలంలోని ఈ
+    తీర్మానంలో రెండవ ప్రతిస్థాపనకు $B$ అని మాత్రమే ఉంది;
+    తరువాతి అభ్యాసం, ఇక్కడి పరికల్పన రెండూ చూపినట్లుగా
+    సూత్ర మెటాచరం $!B$ను పునరుద్ధరించాం.}
+\end{prop}
+
+\begin{proof}
+  వ్యాయామం.
+\end{proof}
+
+\begin{prob}
+  $!C$ సంక్లిష్టతపై ఆగమనంతో, $\Log{K} \Proves !A \liff !B$ అయితే
+  $\Log{K} \Proves \Subst{!C}{!A}{q} \liff \Subst{!C}{!B}{q}$ అని
+  నిరూపించి, \olref[nml][prf][der]{prop:rewriting}ను నిరూపించండి.
+\end{prob}
+
+ముఖ్యంగా $\Diamond$ను $\Box$గా (లేదా విలోమంగా) మార్చాలన్నా,
+\tetoken{ఒక సూత్రం}{!!a{formula}} లోపలి ద్వినిషేధాలను తొలగించాలన్నా
+ఈ ప్రతిపాదన ఉపయోగపడుతుంది. ఇకపై \olref{prop:rewriting}ను
+వర్తింపజేసి $!C(!A)$ అనే \tetoken{సూత్రాన్ని}{!!a{formula}}
+$!C(!B)$గా తిరిగి రాసినప్పుడు,
+``$!A$ స్థానంలో $!B$'' అని సూచిస్తాం.
+\sourcecorrection{OLTENMLAXSDER-002}{స్థిర మూలంలో సాధారణ
+  సంక్షిప్త సూచన ``$!A$ for $!B$'' అని ఉంది; కానీ చూపిన
+  దిశ $!C(!A)$ నుంచి $!C(!B)$కు, తరువాతి ఉదాహరణలోనూ
+  పాత పదం స్థానంలో కొత్త పదమే వాడారు. కనుక దిశను
+  ``$!A$ స్థానంలో $!B$''గా స్పష్టం చేశాం.}
+మరో మాటలో, ``$!A$ స్థానంలో $!B$'' అనేది దీని సంక్షిప్త రూపం:
+  \begin{derivation}
+    & $\Proves !C(!A)$ \\
+    & $\Proves !A \liff !B$\\
+    & $\Proves !C(!B)$ & \olref{prop:rewriting} ప్రకారం
+  \end{derivation}
+ఉదాహరణకు:
+
+\begin{prop}
+  $\Log{K} \Proves \lnot\Box p \lif \Diamond \lnot p$
+\end{prop}
+
+\begin{proof}
+  \iftag{prvDiamond}{% Diamond is primitive
+  \begin{derivation}
+    1. & $\Log{K} \Proves \Diamond \lnot p \liff \lnot\Box\lnot\lnot p$ &
+    \Dual\\
+    2. & $\Log{K} \Proves \lnot \Box \lnot\lnot p \lif \Diamond \lnot p$ & \PL, 1\\
+    3. & $\Log{K} \Proves \lnot\Box p \lif \Diamond \lnot p$ & $\lnot\lnot p$ స్థానంలో $p$\\
+  \end{derivation}
+  }{% Diamond is defined
+  \begin{derivation}
+    1. & $\Log{K} \Proves \lnot \Box \lnot\lnot p \lif \Diamond \lnot p$ & \Taut\\
+    2. & $\Log{K} \Proves \lnot\Box p \lif \Diamond \lnot p$ & $\lnot\lnot p$ స్థానంలో $p$\\
+  \end{derivation}
+  $1$వ పంక్తిలోని సూత్రం, $q$ స్థానంలో $\Box\lnot\lnot p$ను
+  ప్రతిస్థాపిస్తే వచ్చే $\lnot q \lif \lnot q$ నిదర్శనం.
+  $\Diamond\lnot p$, $\lnot\Box\lnot\lnot p$ రెండూ ఒకటే;
+  ఎందుకంటే $\Diamond$ను $\lnot\Box\lnot$గా నిర్వచించాం.}
+\end{proof}
+
+పై \tetoken{వ్యుత్పత్తి}{!!{derivation}}లో చివరి దశ
+``$\lnot\lnot p$ స్థానంలో $p$'' అనేది దీని సంక్షిప్త రూపం:
+  \begin{derivation}
+    & $\Log{K} \Proves \lnot \Box \lnot\lnot p \lif \Diamond \lnot
+    p$\\
+    & $\Log{K} \Proves \lnot\lnot p \liff p$ & \Taut\\
+    & $\Log{K} \Proves \lnot\Box p \lif \Diamond \lnot p$ & \olref{prop:rewriting} ప్రకారం
+  \end{derivation}
+ఇక్కడ \olref{prop:rewriting}లోని $!C(q)$, $!A$, $!B$ల స్థానాల్లో
+వరుసగా $\lnot \Box q \lif \Diamond \lnot p$,
+$\lnot\lnot p$, $p$ ఉన్నాయి.
+
+\tetoken{ఒక సూత్రంలో}{!!a{formula}} $\lnot\Diamond !A$ అనే
+\tetoken{ఉపసూత్రం}{!!{formula}} ఉంటే,
+$\Log{K} \Proves \lnot\Diamond !A \liff \Box\lnot !A$ కనుక,
+\olref{prop:rewriting}ను వాడి దాని స్థానంలో $\Box\lnot !A$ను
+రాయవచ్చు. ఇటువంటి భర్తీలను ``$\lnot\Diamond$ స్థానంలో
+$\Box\lnot$'' అని సంక్షిప్తంగా సూచిస్తాం.
+
+కింది ప్రతిపాదన, \tetoken{వ్యుత్పాద్యత}{!!{derivability}} ఫలితాలను
+సూత్రపద్ధతిలో స్థాపించవచ్చని సమర్థిస్తుంది. ఉదాహరణకు, పూర్వ
+ప్రతిపాదన కేవలం $\Log{K} \Proves \lnot\Box p \lif
+\Diamond \lnot p$ను మాత్రమే కాక, ఏ $!A$కైనా
+$\Log{K} \Proves \lnot\Box !A \lif \Diamond \lnot !A$ను
+స్థాపిస్తుంది.
+
+\begin{prop}
+  $!A$, $!B$కు ప్రతిస్థాపన నిదర్శనమై, $\Log{K} \Proves !B$ అయితే,
+  $\Log{K} \Proves !A$.
+\end{prop}
+
+\begin{proof}
+  $!B$కు ఉన్న \tetoken{వ్యుత్పత్తి}{!!{derivation}} పొడవుపై
+  ఆగమనం చేసి, మొత్తం \tetoken{వ్యుత్పత్తికి}{!!{derivation}}
+  ప్రతిస్థాపన వర్తింపజేసినప్పుడు కూడా సరైన
+  \tetoken{వ్యుత్పత్తి}{!!{derivation}} లభిస్తుందని తనిఖీ చేయడం
+  శ్రమతో కూడినదైనా సాధారణమైన పని. ప్రత్యేకంగా, సర్వసత్య నిదర్శనాల
+  ప్రతిస్థాపన నిదర్శనాలు మళ్లీ సర్వసత్య నిదర్శనాలే;
+  \iftag{prvDiamond}{\Dual{} మరియు~}{}\Ax{K} నిదర్శనాల
+  ప్రతిస్థాపన నిదర్శనాలు మళ్లీ
+  \iftag{prvDiamond}{\Dual{} మరియు~}{}\Ax{K} నిదర్శనాలే; అలాగే
+  పూర్వపక్షం(లు), తీర్మానం రెండింటిలో
+  \tetoken{ప్రతిజ్ఞావాక్య చరాల}{!!{propositional variable}s}
+  స్థానంలో \tetoken{సూత్రాలను}{!!{formula}s} ప్రతిస్థాపించినా
+  \MP{}, \Nec{} అనువర్తనాలు సరైనవిగానే ఉంటాయి.
+\end{proof}
+
+
+\end{document}

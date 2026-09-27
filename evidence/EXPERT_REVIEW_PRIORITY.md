@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 431 of 722 draft units**. This view selects 448 of 517 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 432 of 722 draft units**. This view selects 450 of 520 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4483,3 +4483,23 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0430; normal-modal-logic/axioms-systems/logics-proofs; translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:105; printed/PDF page pending
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLAXSPRF-001 is mathematically precise and idiomatic.
+
+## REV-OLTENMLAXSDER-001 — OLTENMLAXSDER-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: తీర్మానంలో సూత్ర మెటాచరం !Bను పునరుద్ధరించి, పక్కనే ప్రకటిత గమనిక ఉంచాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Occurrences: OLP-0432; normal-modal-logic/axioms-systems/derived-rules; translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:82; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the rewriting conclusion use the formula metavariable !B, matching its hypothesis and exercise, with the one source atom delta disclosed?
+
+## REV-OLTENMLAXSDER-002 — OLTENMLAXSDER-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: పాత !A స్థానంలో కొత్త !B అనే దిశను తెలుగులో స్పష్టం చేసి, మొదటి సందర్భంలో ప్రకటిత గమనిక ఉంచాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Occurrences: OLP-0432; normal-modal-logic/axioms-systems/derived-rules; translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:105; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the Telugu replacement label say that new !B replaces old !A in C(!A) to C(!B), consistently with the later p-for-double-negation example?

@@ -1,0 +1,47 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTENMLAXSDER-20260927",
+  "created_utc": "2026-09-27T01:50:02Z",
+  "status": "confirmed_local_rewriting_notation_and_direction_mismatches",
+  "scope": {
+    "chapter": "Normal Modal Logic — Axioms and Systems",
+    "unit_ids": ["OLP-0432"],
+    "finding_count": 2
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTENMLAXSDER-001",
+      "unit_id": "OLP-0432",
+      "classification": "rewriting_conclusion_omits_formula_metavariable_marker",
+      "source": {
+        "path": "content/normal-modal-logic/axioms-systems/derived-rules.tex",
+        "bytes": 6168,
+        "sha256": "ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8",
+        "locator": "derived-rules.tex lines 73-75"
+      },
+      "finding": "స్థిర మూలంలోని rewriting ప్రతిపాదన పరికల్పనలో సూత్ర మెటాచరం `!B`, అభ్యాసంలో `\\Subst{!C}{!B}{q}`; కానీ ప్రతిపాదన తీర్మానంలో `\\Subst{!C}{B}{q}` అని `!` గుర్తు లేకుండా ఉంది.",
+      "controlling_evidence": "అదే ప్రతిపాదనలోని `!A \\liff !B`, వెంటనే వచ్చే సంక్లిష్టత-ఆగమన అభ్యాసంలోని రెండవ ప్రతిస్థాపన, తరువాతి `C(!A)` నుంచి `C(!B)` వివరణ అన్నీ `!B`ను నిర్దేశిస్తాయి.",
+      "required_translation_handling": "స్థిర ఆంగ్ల మూలాన్ని మార్చకుండా తెలుగు తీర్మానంలో `\\Subst{!C}{!B}{q}`గా రాసి పక్కనే `OLTENMLAXSDER-001` గమనిక ఉంచాలి."
+    },
+    {
+      "finding_id": "OLTENMLAXSDER-002",
+      "unit_id": "OLP-0432",
+      "classification": "generic_replacement_label_reverses_displayed_rewrite_direction",
+      "source": {
+        "path": "content/normal-modal-logic/axioms-systems/derived-rules.tex",
+        "bytes": 6168,
+        "sha256": "ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8",
+        "locator": "derived-rules.tex lines 88-99"
+      },
+      "finding": "స్థిర మూలం `C(!A)`ను `C(!B)`గా తిరిగి రాయడాన్ని `$!A$ for $!B$`గా పిలుస్తుంది; ఇంగ్లీషు `X for Y`లో X కొత్తది, Y పాతది అవుతాయి కాబట్టి ఇది చూపిన దిశకు విరుద్ధం.",
+      "controlling_evidence": "అదే చోట మూడు-పంక్తుల రూపం `C(!A), !A\\liff !B, C(!B)`; తరువాతి ప్రత్యేక ఉదాహరణ `p for \\lnot\\lnot p`లోనూ పాత `\\lnot\\lnot p` స్థానంలో కొత్త `p` వస్తుంది.",
+      "required_translation_handling": "తెలుగులో `!A స్థానంలో !B` అని దిశను స్పష్టంగా రాసి మొదటి సందర్భంలో `OLTENMLAXSDER-002` గమనిక ఉంచాలి; మూల సమీకరణలు మారవు."
+    }
+  ]
+}

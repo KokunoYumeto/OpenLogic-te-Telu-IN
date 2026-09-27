@@ -681,6 +681,15 @@ locations['TE-T122']=[
  L('content/normal-modal-logic/axioms-systems/proofs-in-K.tex',127,129,130,133,'is defined as','నిర్వచించాం'),
  L('content/normal-modal-logic/axioms-systems/proofs-in-K.tex',151,151,154,156,'derivation','వ్యుత్పత్తులను')
 ];
+locations['TE-T123']=[
+ L('content/normal-modal-logic/axioms-systems/derived-rules.tex',11,11,11,11,'Derived Rules','వ్యుత్పన్న నియమాలు'),
+ L('content/normal-modal-logic/axioms-systems/derived-rules.tex',13,16,13,18,'Finding and writing','కనుగొని రాయడం'),
+ L('content/normal-modal-logic/axioms-systems/derived-rules.tex',32,40,37,45,'propositional logic','ప్రతిజ్ఞావాక్య తర్కం'),
+ L('content/normal-modal-logic/axioms-systems/derived-rules.tex',55,55,61,61,'induction on','ఆగమనం ద్వారా'),
+ L('content/normal-modal-logic/axioms-systems/derived-rules.tex',73,75,81,85,'\\Subst{!C}{B}{q}','\\Subst{!C}{!B}{q}'),
+ L('content/normal-modal-logic/axioms-systems/derived-rules.tex',88,99,100,114,'whenever we re-write','తిరిగి రాసినప్పుడు'),
+ L('content/normal-modal-logic/axioms-systems/derived-rules.tex',149,161,167,186,'substitution instance of','ప్రతిస్థాపన నిదర్శనమై')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -789,6 +798,7 @@ alternatives['TE-T119']=['పూర్వ స్వీకృతాధారి�
 alternatives['TE-T120']=['మోడల్ తర్కం, నార్మల్ మోడల్ తర్కం వేరు నిర్వచనాలుగా ఉంచి, K/Dual మరియు అవశ్యకీకరణను రెండో దానికి మాత్రమే జోడించడం; ప్రతిపాదనకు అన్ని మోడల్ తర్కాల ప్రతిచ్ఛేదం వాడడం (ఎంపిక)','అన్ని మోడల్ తర్కాల స్థానంలో నార్మల్ తర్కాల ప్రతిచ్ఛేదాన్ని తీసుకొని మొదటి ప్రతిపాదన కనిష్ఠత నిరూపితమని చెప్పడం (తిరస్కరణ)','RK ఆగమన దశలో K నిదర్శనాన్ని లేదా మోడస్ పోనెన్స్‌ను మౌనంగా తొలగించడం (తిరస్కరణ)','స్థానిక సమితి పేజీ మోడల్ తర్కాల ప్రత్యేక కనిష్ఠత సిద్ధాంతాన్నే స్థాపిస్తుందని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T121']=['వ్యుత్పత్తి నిర్వచనంలోని సర్వసత్య/K/Dual/అదనపు స్వీకృత శాఖలను, MP/Nec నియమాలను వేరుగా ఉంచి, రెండు సమితి-చేరికల వాదనను మూల క్రమంలో నిలపడం; K సూత్రపు సభ్యత్వాన్ని ప్రకటిత సవరణతో రాయడం (ఎంపిక)','K పథకం పేరును సూత్రాల సమితిలో సాక్షాత్తు మూలకంగా ప్రకటించడం (తిరస్కరణ)','ఒకే నమూనాలో సత్యాన్ని నార్మల్ మోడల్ వ్యవస్థలో వ్యుత్పాద్యతతో సమానమని అనుకోవడం (తిరస్కరణ)','ప్రతిస్థాపనపై మూల వ్యాయామాన్ని పరిష్కరించామని మౌనంగా చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T122']=['నాలుగు K నిరూపణలను, సర్వసత్య ప్రతిస్థాపన నిదర్శనాల పంక్తి-సూచనలను, మూడు Box/Diamond tag శాఖలను, పరిష్కరించని మూడు వ్యాయామాలను యథాతథంగా ఉంచడం (ఎంపిక)','Diamond నిర్వచిత శాఖను ప్రాథమిక శాఖగా కలపడం లేదా Box నిర్వచిత శాఖలో అదే తీర్మానాన్ని బలవంతంగా రాయడం (తిరస్కరణ)','స్థానిక నియమ-వ్యుత్పత్తి పేజీలు K పంపిణీ, Dual, Necలను ప్రత్యక్షంగా ధ్రువీకరిస్తాయని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T123']=['ప్రతిజ్ఞావాక్య తర్కం, నియమ-ఆధారిత వ్యుత్పత్తి, ఆగమనం అనే స్థానిక రూపాలను తీసుకుని, PL/RK/rewriting ప్రత్యేక ఫలితాలను స్థిర మూల నిరూపణలకే కట్టడం; రెండు మూల దిశ/మెటాచర భేదాలను ప్రకటించడం (ఎంపిక)','PL/RK ప్రత్యేక నియమాలను స్థానిక పేజీలే ప్రత్యక్షంగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ)','ప్రతిస్థాపనలో పాత–కొత్త క్రమాన్ని తారుమారు చేసి వ్యుత్పత్తి దిశను మార్చడం (తిరస్కరణ)','rewriting అభ్యాసాన్ని పరిష్కరించామని చెప్పడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -804,7 +814,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T122 record the Batch 025--Batch 081 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T123 record the Batch 025--Batch 082 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1113,6 +1123,8 @@ const correctionQuestions={
  ,'OLTENMLFRDACC-002':'Does the two-world example explicitly exclude self-loops before calling the relation irreflexive, while preserving both cross-edges and equal atomic valuations?'
  ,'OLTENMLFRDDEF-001':'Is Box A asserted only at the chosen world w with no successors, with the added [w] disclosed and the D contradiction kept at that same world?'
  ,'OLTENMLFRDFOL-001':'Is A_1 explicitly read as the true empty conjunction, and is the finite subset with no A_n covered by a one-element model, without altering the printed n≥2 chain?'
+ ,'OLTENMLAXSDER-001':'Does the rewriting conclusion use the formula metavariable !B, matching its hypothesis and exercise, with the one source atom delta disclosed?'
+ ,'OLTENMLAXSDER-002':'Does the Telugu replacement label say that new !B replaces old !A in C(!A) to C(!B), consistently with the later p-for-double-negation example?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

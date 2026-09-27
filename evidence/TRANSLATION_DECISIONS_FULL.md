@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **431 of 722 source units drafted**. This readable view contains all 517 decisions and 1097 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **432 of 722 source units drafted**. This readable view contains all 520 decisions and 1106 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3675,6 +3675,38 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T122-OCC-005; OLP-0431; OLP-0431-B014; source upstream/content/normal-modal-logic/axioms-systems/proofs-in-K.tex:94-148 bytes 3476-6155 SHA-256 c320ad89ad9b3c091d61aceebf38dc3626e52bcf4d66d23cf7c356646090393d; target translation/content/normal-modal-logic/axioms-systems/proofs-in-K.tex:96-152 bytes 4030-7190 SHA-256 ca72846c7d9bd52f8bcf3d864f1d88e8d44824f0844872547d23abbbf3a0807d; reader page pending.
   - te-Telu-IN-TE-T122-OCC-006; OLP-0431; OLP-0431-B014; source upstream/content/normal-modal-logic/axioms-systems/proofs-in-K.tex:94-148 bytes 3476-6155 SHA-256 c320ad89ad9b3c091d61aceebf38dc3626e52bcf4d66d23cf7c356646090393d; target translation/content/normal-modal-logic/axioms-systems/proofs-in-K.tex:96-152 bytes 4030-7190 SHA-256 ca72846c7d9bd52f8bcf3d864f1d88e8d44824f0844872547d23abbbf3a0807d; reader page pending.
   - te-Telu-IN-TE-T122-OCC-007; OLP-0431; OLP-0431-B015; source upstream/content/normal-modal-logic/axioms-systems/proofs-in-K.tex:150-157 bytes 6156-6431 SHA-256 c320ad89ad9b3c091d61aceebf38dc3626e52bcf4d66d23cf7c356646090393d; target translation/content/normal-modal-logic/axioms-systems/proofs-in-K.tex:154-162 bytes 7191-7585 SHA-256 ca72846c7d9bd52f8bcf3d864f1d88e8d44824f0844872547d23abbbf3a0807d; reader page pending.
+
+## te-Telu-IN-TE-T123 — derived rules / propositional-logic rule PL / derived rule RK / rewriting replacement / substitution closure of K proofs
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: వ్యుత్పన్న నియమాలు / ప్రతిజ్ఞావాక్య తర్క నియమం PL / వ్యుత్పన్న నియమం RK / స్థానభర్తీ / K నిరూపణల ప్రతిస్థాపన సంవృతం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “derived rules / propositional-logic rule PL / derived rule RK / rewriting replacement / substitution closure of K proofs” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: సాధారణ ప్రతిజ్ఞావాక్య తర్కం, నియమం, వ్యుత్పత్తి, ఆగమనం స్థానికంగా సాక్షాత్కరించాయి; PL/RK అనే Kలో వ్యుత్పన్న నియమాల పూర్తి భావం, సమానార్థక-సూత్ర స్థానభర్తీ, ప్రతిస్థాపన సంవృతం మూల గణితంపైనే ఆధారపడ్డాయి. రెండో మూల భేదంలో పాత–కొత్త క్రమాన్ని ప్రదర్శిత దశలతో సరిచూశాం.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞా వాక్యాత్మక తర్కం, TE-P024లో నియమ-ఆధారిత ఫలిత వ్యుత్పత్తి, TE-P032లో నిగమనం/ఆగమనం, TE-P033లో అనుమానం అనే స్థానిక పాఠాలను చూశాం. OLP-0432లో PL, RK, rewriting, సమస్త వ్యుత్పత్తికి ప్రతిస్థాపన వంటి మోడల్-ప్రత్యేక విధులు మూల ప్రతిపాదనలు, నిరూపణలకే కట్టబడి ఉన్నాయి. పూర్వ TE-T119--TE-T122 పదరూపాలతో సమన్వయించాం; OLTENMLAXSDER-001--002 స్థానిక మూల భేదాలను విడిగా ప్రకటించాం. PL, RK, K, Nec, Dual, MP, Box, Diamond, Subst మరియు సూత్ర మెటాచరాలు రక్షిత గణిత సంకేతాలు; వాటికి స్థానిక పేజీలు ప్రత్యేక ఆధారం కావు.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C005:TE-P033 [checked_context_only], PDF page 40; printed page 33; Inference section heading and definition; Direct inference and explanatory register; derivation headword is separately witnessed at TE-P024.
+
+- Alternatives: ప్రతిజ్ఞావాక్య తర్కం, నియమ-ఆధారిత వ్యుత్పత్తి, ఆగమనం అనే స్థానిక రూపాలను తీసుకుని, PL/RK/rewriting ప్రత్యేక ఫలితాలను స్థిర మూల నిరూపణలకే కట్టడం; రెండు మూల దిశ/మెటాచర భేదాలను ప్రకటించడం [viable_alternative: ఎంపిక] | PL/RK ప్రత్యేక నియమాలను స్థానిక పేజీలే ప్రత్యక్షంగా స్థాపిస్తాయని చెప్పడం [viable_alternative: తిరస్కరణ] | ప్రతిస్థాపనలో పాత–కొత్త క్రమాన్ని తారుమారు చేసి వ్యుత్పత్తి దిశను మార్చడం [viable_alternative: తిరస్కరణ] | rewriting అభ్యాసాన్ని పరిష్కరించామని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “వ్యుత్పన్న నియమాలు / ప్రతిజ్ఞావాక్య తర్క నియమం PL / వ్యుత్పన్న నియమం RK / స్థానభర్తీ / K నిరూపణల ప్రతిస్థాపన సంవృతం” is idiomatic and technically standard for “derived rules / propositional-logic rule PL / derived rule RK / rewriting replacement / substitution closure of K proofs” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T123-OCC-001; OLP-0432; OLP-0432-B005; source upstream/content/normal-modal-logic/axioms-systems/derived-rules.tex:11 bytes 186-212 SHA-256 ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8; target translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:11 bytes 186-251 SHA-256 4cdc53197ab7e9dde07884ea2bce9bd0c615e74341aa63242e4ba6d295540047; reader page pending.
+  - te-Telu-IN-TE-T123-OCC-002; OLP-0432; OLP-0432-B006; source upstream/content/normal-modal-logic/axioms-systems/derived-rules.tex:13-29 bytes 213-1125 SHA-256 ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8; target translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:13-34 bytes 252-2496 SHA-256 4cdc53197ab7e9dde07884ea2bce9bd0c615e74341aa63242e4ba6d295540047; reader page pending.
+  - te-Telu-IN-TE-T123-OCC-003; OLP-0432; OLP-0432-B007; source upstream/content/normal-modal-logic/axioms-systems/derived-rules.tex:31-35 bytes 1126-1309 SHA-256 ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8; target translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:36-40 bytes 2497-2773 SHA-256 4cdc53197ab7e9dde07884ea2bce9bd0c615e74341aa63242e4ba6d295540047; reader page pending.
+  - te-Telu-IN-TE-T123-OCC-004; OLP-0432; OLP-0432-B011; source upstream/content/normal-modal-logic/axioms-systems/derived-rules.tex:54-56 bytes 1817-1912 SHA-256 ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8; target translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:60-62 bytes 3627-3778 SHA-256 4cdc53197ab7e9dde07884ea2bce9bd0c615e74341aa63242e4ba6d295540047; reader page pending.
+  - te-Telu-IN-TE-T123-OCC-005; OLP-0432; OLP-0432-B015; source upstream/content/normal-modal-logic/axioms-systems/derived-rules.tex:73-76 bytes 2447-2612 SHA-256 ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8; target translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:80-87 bytes 4545-5198 SHA-256 4cdc53197ab7e9dde07884ea2bce9bd0c615e74341aa63242e4ba6d295540047; reader page pending.
+  - te-Telu-IN-TE-T123-OCC-006; OLP-0432; OLP-0432-B018; source upstream/content/normal-modal-logic/axioms-systems/derived-rules.tex:88-99 bytes 2883-3394 SHA-256 ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8; target translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:99-116 bytes 5574-7072 SHA-256 4cdc53197ab7e9dde07884ea2bce9bd0c615e74341aa63242e4ba6d295540047; reader page pending.
+  - te-Telu-IN-TE-T123-OCC-007; OLP-0432; OLP-0432-B024; source upstream/content/normal-modal-logic/axioms-systems/derived-rules.tex:148-151 bytes 5382-5506 SHA-256 ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8; target translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:167-170 bytes 9983-10151 SHA-256 4cdc53197ab7e9dde07884ea2bce9bd0c615e74341aa63242e4ba6d295540047; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -14025,3 +14057,55 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLAXSPRF-001-OCC-001; OLP-0430; OLP-0430-B013; source upstream/content/normal-modal-logic/axioms-systems/logics-proofs.tex:65-94 bytes 2793-4427 SHA-256 bf3926886e2d6d2740ceb631fc5c5618fe300fb0d6813fe2b30367072c45d66a; target translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:105 bytes 8371-8453 SHA-256 d46ca3183c6b9da0e2a22d7788e801e08c3b3de8664c21ef2b075bf525dd619f; reader page pending.
+
+## te-Telu-IN-OLTENMLAXSDER-001 — OLTENMLAXSDER-001: rewriting conclusion omits formula metavariable marker
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: తీర్మానంలో సూత్ర మెటాచరం !Bను పునరుద్ధరించి, పక్కనే ప్రకటిత గమనిక ఉంచాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Intended sense: Repair the audited rewriting conclusion omits formula metavariable marker at derived-rules.tex lines 73-75, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLAXSDER-20260927:OLTENMLAXSDER-001 [checked_supports], content/normal-modal-logic/axioms-systems/derived-rules.tex; derived-rules.tex lines 73-75; rewriting_conclusion_omits_formula_metavariable_marker; తీర్మానంలో సూత్ర మెటాచరం !Bను పునరుద్ధరించి, పక్కనే ప్రకటిత గమనిక ఉంచాం; స్థిర ఆంగ్ల మూలం మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the rewriting conclusion use the formula metavariable !B, matching its hypothesis and exercise, with the one source atom delta disclosed?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLAXSDER-001-OCC-001; OLP-0432; OLP-0432-B015; source upstream/content/normal-modal-logic/axioms-systems/derived-rules.tex:73-76 bytes 2447-2612 SHA-256 ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8; target translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:82 bytes 4647-4721 SHA-256 4cdc53197ab7e9dde07884ea2bce9bd0c615e74341aa63242e4ba6d295540047; reader page pending.
+
+## te-Telu-IN-OLTENMLAXSDER-002 — OLTENMLAXSDER-002: generic replacement label reverses displayed rewrite direction
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: పాత !A స్థానంలో కొత్త !B అనే దిశను తెలుగులో స్పష్టం చేసి, మొదటి సందర్భంలో ప్రకటిత గమనిక ఉంచాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Intended sense: Repair the audited generic replacement label reverses displayed rewrite direction at derived-rules.tex lines 88-99, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLAXSDER-20260927:OLTENMLAXSDER-002 [checked_supports], content/normal-modal-logic/axioms-systems/derived-rules.tex; derived-rules.tex lines 88-99; generic_replacement_label_reverses_displayed_rewrite_direction; పాత !A స్థానంలో కొత్త !B అనే దిశను తెలుగులో స్పష్టం చేసి, మొదటి సందర్భంలో ప్రకటిత గమనిక ఉంచాం; స్థిర ఆంగ్ల మూలం మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the Telugu replacement label say that new !B replaces old !A in C(!A) to C(!B), consistently with the later p-for-double-negation example?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLAXSDER-002-OCC-001; OLP-0432; OLP-0432-B018; source upstream/content/normal-modal-logic/axioms-systems/derived-rules.tex:88-99 bytes 2883-3394 SHA-256 ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8; target translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:105 bytes 6220-6311 SHA-256 4cdc53197ab7e9dde07884ea2bce9bd0c615e74341aa63242e4ba6d295540047; reader page pending.

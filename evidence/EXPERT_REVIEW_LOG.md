@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 431 of 722 draft units**. This log contains 122 terminology/sense decisions and 395 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 432 of 722 draft units**. This log contains 123 terminology/sense decisions and 397 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2935,6 +2935,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: సాధారణ నిరూపణ, వ్యుత్పత్తి, అనుమానం వాడుకకు స్థానిక ఆధారం ఉంది; K పంపిణీ, ద్వంద్వత్వం, అవశ్యకీకరణ, రెండు modalityల ప్రాథమిక/నిర్వచిత స్థితికి మూల సూత్రాలు, tag షరతులే ఆధారం. మూల నిరూపణల గణితాన్ని మార్చలేదు.
 
 - Please double-check: Please double-check whether “Kలో నిరూపణలు / అవశ్యకీకరణ మరియు K పంపిణీ / ద్వంద్వత్వం / సర్వసత్య ప్రతిస్థాపన నిదర్శనాలు / ప్రాథమిక లేదా నిర్వచిత Box, Diamond” is idiomatic and technically standard for “proofs in K / necessitation and K distribution / duality / tautology instances / primitive versus defined Box and Diamond” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T123 — derived rules / propositional-logic rule PL / derived rule RK / rewriting replacement / substitution closure of K proofs
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: వ్యుత్పన్న నియమాలు / ప్రతిజ్ఞావాక్య తర్క నియమం PL / వ్యుత్పన్న నియమం RK / స్థానభర్తీ / K నిరూపణల ప్రతిస్థాపన సంవృతం
+
+- Exact implementation: OLP-0432; normal-modal-logic/axioms-systems/derived-rules; content/normal-modal-logic/axioms-systems/derived-rules.tex:11 ↔ translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:11 (OLP-0432-B005); printed/PDF page pending; OLP-0432; normal-modal-logic/axioms-systems/derived-rules; content/normal-modal-logic/axioms-systems/derived-rules.tex:13-29 ↔ translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:13-34 (OLP-0432-B006); printed/PDF page pending; OLP-0432; normal-modal-logic/axioms-systems/derived-rules; content/normal-modal-logic/axioms-systems/derived-rules.tex:31-35 ↔ translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:36-40 (OLP-0432-B007); printed/PDF page pending; OLP-0432; normal-modal-logic/axioms-systems/derived-rules; content/normal-modal-logic/axioms-systems/derived-rules.tex:54-56 ↔ translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:60-62 (OLP-0432-B011); printed/PDF page pending; OLP-0432; normal-modal-logic/axioms-systems/derived-rules; content/normal-modal-logic/axioms-systems/derived-rules.tex:73-76 ↔ translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:80-87 (OLP-0432-B015); printed/PDF page pending; OLP-0432; normal-modal-logic/axioms-systems/derived-rules; content/normal-modal-logic/axioms-systems/derived-rules.tex:88-99 ↔ translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:99-116 (OLP-0432-B018); printed/PDF page pending; OLP-0432; normal-modal-logic/axioms-systems/derived-rules; content/normal-modal-logic/axioms-systems/derived-rules.tex:148-151 ↔ translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:167-170 (OLP-0432-B024); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P033, PDF 40, printed 33, Inference section heading and definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞా వాక్యాత్మక తర్కం, TE-P024లో నియమ-ఆధారిత ఫలిత వ్యుత్పత్తి, TE-P032లో నిగమనం/ఆగమనం, TE-P033లో అనుమానం అనే స్థానిక పాఠాలను చూశాం. OLP-0432లో PL, RK, rewriting, సమస్త వ్యుత్పత్తికి ప్రతిస్థాపన వంటి మోడల్-ప్రత్యేక విధులు మూల ప్రతిపాదనలు, నిరూపణలకే కట్టబడి ఉన్నాయి. పూర్వ TE-T119--TE-T122 పదరూపాలతో సమన్వయించాం; OLTENMLAXSDER-001--002 స్థానిక మూల భేదాలను విడిగా ప్రకటించాం. PL, RK, K, Nec, Dual, MP, Box, Diamond, Subst మరియు సూత్ర మెటాచరాలు రక్షిత గణిత సంకేతాలు; వాటికి స్థానిక పేజీలు ప్రత్యేక ఆధారం కావు.
+
+- Alternatives: ప్రతిజ్ఞావాక్య తర్కం, నియమ-ఆధారిత వ్యుత్పత్తి, ఆగమనం అనే స్థానిక రూపాలను తీసుకుని, PL/RK/rewriting ప్రత్యేక ఫలితాలను స్థిర మూల నిరూపణలకే కట్టడం; రెండు మూల దిశ/మెటాచర భేదాలను ప్రకటించడం (ఎంపిక); PL/RK ప్రత్యేక నియమాలను స్థానిక పేజీలే ప్రత్యక్షంగా స్థాపిస్తాయని చెప్పడం (తిరస్కరణ); ప్రతిస్థాపనలో పాత–కొత్త క్రమాన్ని తారుమారు చేసి వ్యుత్పత్తి దిశను మార్చడం (తిరస్కరణ); rewriting అభ్యాసాన్ని పరిష్కరించామని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: సాధారణ ప్రతిజ్ఞావాక్య తర్కం, నియమం, వ్యుత్పత్తి, ఆగమనం స్థానికంగా సాక్షాత్కరించాయి; PL/RK అనే Kలో వ్యుత్పన్న నియమాల పూర్తి భావం, సమానార్థక-సూత్ర స్థానభర్తీ, ప్రతిస్థాపన సంవృతం మూల గణితంపైనే ఆధారపడ్డాయి. రెండో మూల భేదంలో పాత–కొత్త క్రమాన్ని ప్రదర్శిత దశలతో సరిచూశాం.
+
+- Please double-check: Please double-check whether “వ్యుత్పన్న నియమాలు / ప్రతిజ్ఞావాక్య తర్క నియమం PL / వ్యుత్పన్న నియమం RK / స్థానభర్తీ / K నిరూపణల ప్రతిస్థాపన సంవృతం” is idiomatic and technically standard for “derived rules / propositional-logic rule PL / derived rule RK / rewriting replacement / substitution closure of K proofs” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -12415,3 +12439,51 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLAXSPRF-001 is mathematically precise and idiomatic.
+
+## REV-OLTENMLAXSDER-001 — OLTENMLAXSDER-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: తీర్మానంలో సూత్ర మెటాచరం !Bను పునరుద్ధరించి, పక్కనే ప్రకటిత గమనిక ఉంచాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Exact implementation: OLP-0432; normal-modal-logic/axioms-systems/derived-rules; derived-rules.tex lines 73-75 ↔ translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:82 (OLP-0432-B015); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLAXSDER-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: తీర్మానంలో సూత్ర మెటాచరం !Bను పునరుద్ధరించి, పక్కనే ప్రకటిత గమనిక ఉంచాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the rewriting conclusion use the formula metavariable !B, matching its hypothesis and exercise, with the one source atom delta disclosed?
+
+## REV-OLTENMLAXSDER-002 — OLTENMLAXSDER-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: పాత !A స్థానంలో కొత్త !B అనే దిశను తెలుగులో స్పష్టం చేసి, మొదటి సందర్భంలో ప్రకటిత గమనిక ఉంచాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Exact implementation: OLP-0432; normal-modal-logic/axioms-systems/derived-rules; derived-rules.tex lines 88-99 ↔ translation/content/normal-modal-logic/axioms-systems/derived-rules.tex:105 (OLP-0432-B018); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLAXSDER-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: పాత !A స్థానంలో కొత్త !B అనే దిశను తెలుగులో స్పష్టం చేసి, మొదటి సందర్భంలో ప్రకటిత గమనిక ఉంచాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the Telugu replacement label say that new !B replaces old !A in C(!A) to C(!B), consistently with the later p-for-double-negation example?
