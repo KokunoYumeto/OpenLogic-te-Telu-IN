@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 426 of 722 draft units**. This log contains 118 terminology/sense decisions and 393 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 428 of 722 draft units**. This log contains 119 terminology/sense decisions and 393 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2839,6 +2839,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: సమితి, సంబంధం, విధేయం, మొదటిస్థాయి, వాక్యం అనే భాగాలకు స్థానిక ఆధారం ఉంది. ప్రామాణిక అనువాదం, ఏకస్థానిక ద్వితీయ-స్థాయి చట్ర నిర్వచనీయత ప్రత్యేక తెలుగు పేర్లు తాత్కాలికం; గణిత అర్థం మూల ST శాఖలు, రెండు iff నిరూపణలకే పరిమితం.
 
 - Please double-check: Please double-check whether “మోడల్ సూత్రాల ప్రామాణిక అనువాదం / ఏకస్థానిక ద్వితీయ-స్థాయి చట్ర నిర్వచనీయత / ఏకస్థానిక విధేయాలపై పరిమాణీకరణ / మోడల్ నమూనా–మొదటిస్థాయి నిర్మాణం అనురూపత” is idiomatic and technically standard for “standard translation of modal formulas / monadic second-order frame definability / unary-predicate quantification / modal-model to first-order-structure correspondence” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T119 — Hilbert-type / axiomatic derivation / modus ponens / necessitation / derivability / soundness / completeness (normal modal logic)
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: హిల్బర్ట్-రకం / స్వీకృతాధారిత వ్యుత్పత్తి / మోడస్ పోనెన్స్ / అవశ్యకీకరణ / వ్యుత్పాద్యత / నిర్దుష్టత / సంపూర్ణత (నార్మల్ మోడల్ తర్కం)
+
+- Exact implementation: OLP-0427; normal-modal-logic/axioms-systems/axioms-systems; content/normal-modal-logic/axioms-systems/axioms-systems.tex:8 ↔ translation/content/normal-modal-logic/axioms-systems/axioms-systems.tex:8 (OLP-0427-B004); printed/PDF page pending; OLP-0428; normal-modal-logic/axioms-systems/introduction; content/normal-modal-logic/axioms-systems/introduction.tex:22-28 ↔ translation/content/normal-modal-logic/axioms-systems/introduction.tex:26-33 (OLP-0428-B007); printed/PDF page pending; OLP-0428; normal-modal-logic/axioms-systems/introduction; content/normal-modal-logic/axioms-systems/introduction.tex:13-20 ↔ translation/content/normal-modal-logic/axioms-systems/introduction.tex:13-24 (OLP-0428-B006); printed/PDF page pending; OLP-0428; normal-modal-logic/axioms-systems/introduction; content/normal-modal-logic/axioms-systems/introduction.tex:30-44 ↔ translation/content/normal-modal-logic/axioms-systems/introduction.tex:35-52 (OLP-0428-B008); printed/PDF page pending; OLP-0428; normal-modal-logic/axioms-systems/introduction; content/normal-modal-logic/axioms-systems/introduction.tex:58-67 ↔ translation/content/normal-modal-logic/axioms-systems/introduction.tex:68-78 (OLP-0428-B010); printed/PDF page pending; OLP-0428; normal-modal-logic/axioms-systems/introduction; content/normal-modal-logic/axioms-systems/introduction.tex:69-82 ↔ translation/content/normal-modal-logic/axioms-systems/introduction.tex:80-96 (OLP-0428-B011); printed/PDF page pending; OLP-0428; normal-modal-logic/axioms-systems/introduction; content/normal-modal-logic/axioms-systems/introduction.tex:84-88 ↔ translation/content/normal-modal-logic/axioms-systems/introduction.tex:98-103 (OLP-0428-B012); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P033, PDF 40, printed 33, Inference section heading and definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్యాత్మక తర్కం, TE-P019లో సత్యతావిలువ, TE-P024లో నియమాలతో ఫలిత వ్యుత్పత్తి, TE-P032లో నిగమనం/ఆగమనం, TE-P033లో అనుమానం అనే వాడుకలను స్థానిక చిత్రాల్లో నేరుగా చూశాం. అవి నార్మల్ మోడల్ తర్కం, హిల్బర్ట్-రకం వ్యవస్థ, మోడస్ పోనెన్స్ లేదా అవశ్యకీకరణకు ప్రత్యక్ష తెలుగు పేర్లను ఇవ్వవు. OLP-0427 శీర్షికలో పూర్వ స్వీకృతాధారిత రూపం, OLP-0428లోని MP/Nec నిర్దిష్ట నియమ వృక్షాలు, నాలుగు వ్యుత్పత్తి శాఖలు, K/Dual రక్షిత స్వీకృతాలు, పూర్వ TE-T034/035 మరియు మోడల్ ఎంపికలు ప్రత్యేక అర్థాలను నియంత్రిస్తాయి. హిల్బర్ట్ అనే మూల వ్యక్తినామం, మోడస్ పోనెన్స్ అనే స్పష్టంగా సందర్భీకరించిన నియమ పేరు; K, Dual, MP, Nec, Sigma, Box మరియు సూత్ర మెటాచరాలు రక్షిత గణిత సంకేతాలు.
+
+- Alternatives: పూర్వ స్వీకృతాధారిత వ్యుత్పత్తి/మోడస్ పోనెన్స్ ఎంపికలను కొనసాగించి, అవశ్యకీకరణను A నుంచి □A అనే మూల నియమంతో నిర్వచించడం (ఎంపిక); అవశ్యకీకరణను A నుంచి A సాధ్యమే అనే నియమంగా చదవడం (తిరస్కరణ); వ్యుత్పత్తిలో నాలుగు శాఖల్లో ప్రతిస్థాపన నిదర్శనాలను సాధారణ స్వీకృతాలతో కలిపివేయడం (తిరస్కరణ); స్థానిక నియమ-వ్యుత్పత్తి పేజీలే K/Dual నార్మల్ మోడల్ వ్యవస్థకు ప్రత్యక్ష ధ్రువీకరణ అని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: వ్యుత్పత్తి, నిగమనం, అనుమానం సాధారణ పదజాలానికి స్థానిక ఆధారం ఉంది. అవశ్యకీకరణ, నిర్దుష్టత/సంపూర్ణత మోడల్ అధిసిద్ధాంత పేర్లు, స్వీకృతాధారిత మోడల్ వ్యవస్థ పదబంధం తాత్కాలిక సంపాదకీయ ఎంపికలు; నియమాల గణిత అర్థం ప్రదర్శిత పథకాల ద్వారా నిర్ణీతం.
+
+- Please double-check: Please double-check whether “హిల్బర్ట్-రకం / స్వీకృతాధారిత వ్యుత్పత్తి / మోడస్ పోనెన్స్ / అవశ్యకీకరణ / వ్యుత్పాద్యత / నిర్దుష్టత / సంపూర్ణత (నార్మల్ మోడల్ తర్కం)” is idiomatic and technically standard for “Hilbert-type / axiomatic derivation / modus ponens / necessitation / derivability / soundness / completeness (normal modal logic)” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 

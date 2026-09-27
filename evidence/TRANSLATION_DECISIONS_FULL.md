@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **426 of 722 source units drafted**. This readable view contains all 511 decisions and 1064 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **428 of 722 source units drafted**. This readable view contains all 512 decisions and 1071 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3544,6 +3544,38 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T118-OCC-007; OLP-0426; OLP-0426-B013; source upstream/content/normal-modal-logic/frame-definability/second-order-definability.tex:99-106 bytes 3983-4385 SHA-256 1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490; target translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:115-127 bytes 7363-8220 SHA-256 8e7950312c9e4f97aa2827bc9922c035be2de8563bc61a117b7bcd4d2769110b; reader page pending.
   - te-Telu-IN-TE-T118-OCC-008; OLP-0426; OLP-0426-B016; source upstream/content/normal-modal-logic/frame-definability/second-order-definability.tex:119-138 bytes 4692-5841 SHA-256 1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490; target translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:141-170 bytes 8885-11243 SHA-256 8e7950312c9e4f97aa2827bc9922c035be2de8563bc61a117b7bcd4d2769110b; reader page pending.
   - te-Telu-IN-TE-T118-OCC-009; OLP-0426; OLP-0426-B018; source upstream/content/normal-modal-logic/frame-definability/second-order-definability.tex:150-153 bytes 6428-6660 SHA-256 1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490; target translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:185-191 bytes 12068-12743 SHA-256 8e7950312c9e4f97aa2827bc9922c035be2de8563bc61a117b7bcd4d2769110b; reader page pending.
+
+## te-Telu-IN-TE-T119 — Hilbert-type / axiomatic derivation / modus ponens / necessitation / derivability / soundness / completeness (normal modal logic)
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: హిల్బర్ట్-రకం / స్వీకృతాధారిత వ్యుత్పత్తి / మోడస్ పోనెన్స్ / అవశ్యకీకరణ / వ్యుత్పాద్యత / నిర్దుష్టత / సంపూర్ణత (నార్మల్ మోడల్ తర్కం)
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “Hilbert-type / axiomatic derivation / modus ponens / necessitation / derivability / soundness / completeness (normal modal logic)” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: వ్యుత్పత్తి, నిగమనం, అనుమానం సాధారణ పదజాలానికి స్థానిక ఆధారం ఉంది. అవశ్యకీకరణ, నిర్దుష్టత/సంపూర్ణత మోడల్ అధిసిద్ధాంత పేర్లు, స్వీకృతాధారిత మోడల్ వ్యవస్థ పదబంధం తాత్కాలిక సంపాదకీయ ఎంపికలు; నియమాల గణిత అర్థం ప్రదర్శిత పథకాల ద్వారా నిర్ణీతం.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్యాత్మక తర్కం, TE-P019లో సత్యతావిలువ, TE-P024లో నియమాలతో ఫలిత వ్యుత్పత్తి, TE-P032లో నిగమనం/ఆగమనం, TE-P033లో అనుమానం అనే వాడుకలను స్థానిక చిత్రాల్లో నేరుగా చూశాం. అవి నార్మల్ మోడల్ తర్కం, హిల్బర్ట్-రకం వ్యవస్థ, మోడస్ పోనెన్స్ లేదా అవశ్యకీకరణకు ప్రత్యక్ష తెలుగు పేర్లను ఇవ్వవు. OLP-0427 శీర్షికలో పూర్వ స్వీకృతాధారిత రూపం, OLP-0428లోని MP/Nec నిర్దిష్ట నియమ వృక్షాలు, నాలుగు వ్యుత్పత్తి శాఖలు, K/Dual రక్షిత స్వీకృతాలు, పూర్వ TE-T034/035 మరియు మోడల్ ఎంపికలు ప్రత్యేక అర్థాలను నియంత్రిస్తాయి. హిల్బర్ట్ అనే మూల వ్యక్తినామం, మోడస్ పోనెన్స్ అనే స్పష్టంగా సందర్భీకరించిన నియమ పేరు; K, Dual, MP, Nec, Sigma, Box మరియు సూత్ర మెటాచరాలు రక్షిత గణిత సంకేతాలు.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C005:TE-P033 [checked_context_only], PDF page 40; printed page 33; Inference section heading and definition; Direct inference and explanatory register; derivation headword is separately witnessed at TE-P024.
+
+- Alternatives: పూర్వ స్వీకృతాధారిత వ్యుత్పత్తి/మోడస్ పోనెన్స్ ఎంపికలను కొనసాగించి, అవశ్యకీకరణను A నుంచి □A అనే మూల నియమంతో నిర్వచించడం [viable_alternative: ఎంపిక] | అవశ్యకీకరణను A నుంచి A సాధ్యమే అనే నియమంగా చదవడం [viable_alternative: తిరస్కరణ] | వ్యుత్పత్తిలో నాలుగు శాఖల్లో ప్రతిస్థాపన నిదర్శనాలను సాధారణ స్వీకృతాలతో కలిపివేయడం [viable_alternative: తిరస్కరణ] | స్థానిక నియమ-వ్యుత్పత్తి పేజీలే K/Dual నార్మల్ మోడల్ వ్యవస్థకు ప్రత్యక్ష ధ్రువీకరణ అని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “హిల్బర్ట్-రకం / స్వీకృతాధారిత వ్యుత్పత్తి / మోడస్ పోనెన్స్ / అవశ్యకీకరణ / వ్యుత్పాద్యత / నిర్దుష్టత / సంపూర్ణత (నార్మల్ మోడల్ తర్కం)” is idiomatic and technically standard for “Hilbert-type / axiomatic derivation / modus ponens / necessitation / derivability / soundness / completeness (normal modal logic)” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T119-OCC-001; OLP-0427; OLP-0427-B004; source upstream/content/normal-modal-logic/axioms-systems/axioms-systems.tex:8 bytes 135-192 SHA-256 cbbd3a3ac813625c2cf55ccd7bdde41407008f7fb46b51ef302525f6160383ec; target translation/content/normal-modal-logic/axioms-systems/axioms-systems.tex:8 bytes 135-222 SHA-256 e85ececec435c15bda4770a52fb1861a52f7b4a01bccbd4ff1c5998ea092dc69; reader page pending.
+  - te-Telu-IN-TE-T119-OCC-002; OLP-0428; OLP-0428-B007; source upstream/content/normal-modal-logic/axioms-systems/introduction.tex:22-28 bytes 733-1146 SHA-256 554f263088c8e6e98b5cd4e9bf341c5497f787d11f9d136b07fceb1671a36068; target translation/content/normal-modal-logic/axioms-systems/introduction.tex:26-33 bytes 1983-3104 SHA-256 7504cd367bf7bfeac4ed15910c1f004c46b2c8c5bf48d214403663caae787c32; reader page pending.
+  - te-Telu-IN-TE-T119-OCC-003; OLP-0428; OLP-0428-B006; source upstream/content/normal-modal-logic/axioms-systems/introduction.tex:13-20 bytes 211-732 SHA-256 554f263088c8e6e98b5cd4e9bf341c5497f787d11f9d136b07fceb1671a36068; target translation/content/normal-modal-logic/axioms-systems/introduction.tex:13-24 bytes 217-1982 SHA-256 7504cd367bf7bfeac4ed15910c1f004c46b2c8c5bf48d214403663caae787c32; reader page pending.
+  - te-Telu-IN-TE-T119-OCC-004; OLP-0428; OLP-0428-B008; source upstream/content/normal-modal-logic/axioms-systems/introduction.tex:30-44 bytes 1147-2150 SHA-256 554f263088c8e6e98b5cd4e9bf341c5497f787d11f9d136b07fceb1671a36068; target translation/content/normal-modal-logic/axioms-systems/introduction.tex:35-52 bytes 3105-5733 SHA-256 7504cd367bf7bfeac4ed15910c1f004c46b2c8c5bf48d214403663caae787c32; reader page pending.
+  - te-Telu-IN-TE-T119-OCC-005; OLP-0428; OLP-0428-B010; source upstream/content/normal-modal-logic/axioms-systems/introduction.tex:58-67 bytes 2450-2724 SHA-256 554f263088c8e6e98b5cd4e9bf341c5497f787d11f9d136b07fceb1671a36068; target translation/content/normal-modal-logic/axioms-systems/introduction.tex:68-78 bytes 6339-6884 SHA-256 7504cd367bf7bfeac4ed15910c1f004c46b2c8c5bf48d214403663caae787c32; reader page pending.
+  - te-Telu-IN-TE-T119-OCC-006; OLP-0428; OLP-0428-B011; source upstream/content/normal-modal-logic/axioms-systems/introduction.tex:69-82 bytes 2725-3342 SHA-256 554f263088c8e6e98b5cd4e9bf341c5497f787d11f9d136b07fceb1671a36068; target translation/content/normal-modal-logic/axioms-systems/introduction.tex:80-96 bytes 6885-8347 SHA-256 7504cd367bf7bfeac4ed15910c1f004c46b2c8c5bf48d214403663caae787c32; reader page pending.
+  - te-Telu-IN-TE-T119-OCC-007; OLP-0428; OLP-0428-B012; source upstream/content/normal-modal-logic/axioms-systems/introduction.tex:84-88 bytes 3343-3657 SHA-256 554f263088c8e6e98b5cd4e9bf341c5497f787d11f9d136b07fceb1671a36068; target translation/content/normal-modal-logic/axioms-systems/introduction.tex:98-103 bytes 8348-9218 SHA-256 7504cd367bf7bfeac4ed15910c1f004c46b2c8c5bf48d214403663caae787c32; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
