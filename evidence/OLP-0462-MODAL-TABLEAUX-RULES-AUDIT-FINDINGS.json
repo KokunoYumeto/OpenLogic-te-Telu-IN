@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLTABRUL-20260927",
+  "unit_id": "OLP-0462",
+  "source_path": "content/normal-modal-logic/tableaux/rules-for-K.tex",
+  "source_sha256": "781f917de40a4b8e0c38ade5e7cd1d9eab39a629563df7f6d07e0434ab5dffe3",
+  "findings": [
+    {
+      "finding_id": "OLTENMLTABRUL-001",
+      "source_locator": "rules-for-K.tex lines 17-19",
+      "classification": "same_prefix_conjunction_rule_overstates_other_world_truth",
+      "source_issue": "The source's parenthetical 'and not at any other world' is false if read as saying the conjuncts are false at all other worlds; the rule only licenses conclusions at sigma.",
+      "minimal_treatment": "Translate as not necessarily true at other worlds and disclose the semantic limitation, leaving the propositional rules and all prefixes unchanged.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTENMLTABRUL-002",
+      "source_locator": "rules-for-K.tex lines 227-243, Box-only conditional tableau; wrong rule label at line 231",
+      "classification": "box_only_countertableau_false_box_rule_mislabeled_true_box",
+      "source_issue": "The premise F Box A is expanded to F A at 1.1, but the diagram labels that step with the T Box rule rather than F Box.",
+      "minimal_treatment": "Change only that displayed rule label to F Box and disclose; retain the later illicit reuse of 1.1 that illustrates why freshness is needed.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

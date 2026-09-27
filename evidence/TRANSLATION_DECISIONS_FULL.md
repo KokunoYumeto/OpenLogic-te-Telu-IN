@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **461 of 722 source units drafted**. This readable view contains all 578 decisions and 1321 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **462 of 722 source units drafted**. This readable view contains all 581 decisions and 1330 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4592,6 +4592,38 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T151-OCC-002; OLP-0461; OLP-0461-B006; source upstream/content/normal-modal-logic/tableaux/introduction.tex:13-36 bytes 205-1467 SHA-256 87a62d9825b9d30949d14e5530488544e403e28c7594774a9bf6c91e73803b54; target translation/content/normal-modal-logic/tableaux/introduction.tex:13-44 bytes 211-3357 SHA-256 8ad1d6af38a9b2547f232d8d131fee51749d0bee0b1475cc686b3e56e13e044f; reader page pending.
   - te-Telu-IN-TE-T151-OCC-003; OLP-0461; OLP-0461-B007; source upstream/content/normal-modal-logic/tableaux/introduction.tex:38-54 bytes 1468-2287 SHA-256 87a62d9825b9d30949d14e5530488544e403e28c7594774a9bf6c91e73803b54; target translation/content/normal-modal-logic/tableaux/introduction.tex:46-65 bytes 3358-5105 SHA-256 8ad1d6af38a9b2547f232d8d131fee51749d0bee0b1475cc686b3e56e13e044f; reader page pending.
   - te-Telu-IN-TE-T151-OCC-004; OLP-0461; OLP-0461-B008; source upstream/content/normal-modal-logic/tableaux/introduction.tex:56-59 bytes 2288-2513 SHA-256 87a62d9825b9d30949d14e5530488544e403e28c7594774a9bf6c91e73803b54; target translation/content/normal-modal-logic/tableaux/introduction.tex:67-71 bytes 5106-5688 SHA-256 8ad1d6af38a9b2547f232d8d131fee51749d0bee0b1475cc686b3e56e13e044f; reader page pending.
+
+## te-Telu-IN-TE-T152 — K prefixed tableau rules / used and new sigma.n / same-prefix closure / invalid countertableaux
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: K పూర్వసూచిక టాబ్లో నియమాలు / ఉపయోగించిన, కొత్త sigma.n / ఒకే పూర్వసూచిక వద్ద సంవృతత / అనుమతించని ప్రతిటాబ్లోలు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “K prefixed tableau rules / used and new sigma.n / same-prefix closure / invalid countertableaux” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు modal K టాబ్లోకు ప్రత్యక్ష నామం/నిరూపణ ఇవ్వవు. countertableau చిత్రాలు TeX దృశ్య తనిఖీ లేదా స్వతంత్ర నిపుణ సమీక్ష పొందలేదు; మూలంలోని conditional tags కింద వాటి శాస్త్రీయ అర్థాన్ని అదే మూల నియమాలతో పోల్చాం.
+
+- Rationale: TE-T039/151లోని చిహ్నిత సూత్రం, టాబ్లో, పూర్వసూచిక, సంవృత శాఖ పదాలను కొనసాగించాం. స్థిర మూల పట్టికలో T Box/F Diamondలకు ఉపయోగించిన sigma.n, F Box/T Diamondలకు కొత్త sigma.n అనే రెండు విరుద్ధ ఆంక్షలను నిలిపాం; రెండు నిషిద్ధ సంవృత చిత్రాలు ఆ షరతుల అవసరాన్ని చూపుతాయి. మొదటి పేరాలో ఇతర లోకాల సత్యం గురించిన అధిక వాదనను, Box-only చిత్రంలోని F Box చీటీని ప్రకటిత మూల సవరణలతో సరిచేశాం. టాబ్లో is an established edition borrowing; K, modal signs, sigma/n, rule names, conditional tags, tableau trees and cross-reference identifiers remain protected formal material.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: T Box/F Diamondలకు ఉపయోగించిన sigma.n, F Box/T Diamondలకు కొత్త sigma.n, ఒకే పూర్వసూచిక వద్ద సంవృతత, నిషిద్ధ countertableau శాఖలను నిలిపి, ఇతర లోకాల సత్య వాదన/Box-only నియమ చీటీని రెండు ప్రకటిత మూల సవరణలతో సరిచేయడం [viable_alternative: ఎంపిక] | T Boxకు కొత్త, F Boxకు పాత పూర్వసూచిక అనుమతించడం [viable_alternative: తిరస్కరణ] | వేర్వేరు పూర్వసూచికల వద్ద T A, F Aతో శాఖను మూయడం [viable_alternative: తిరస్కరణ] | నిషిద్ధ సంవృత చిత్రాలను చెల్లుబాటు నిరూపణలుగా చెప్పడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ తర్క పేజీల్లోనే modal K నియమాలు నేరుగా ఉన్నాయని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “K పూర్వసూచిక టాబ్లో నియమాలు / ఉపయోగించిన, కొత్త sigma.n / ఒకే పూర్వసూచిక వద్ద సంవృతత / అనుమతించని ప్రతిటాబ్లోలు” is idiomatic and technically standard for “K prefixed tableau rules / used and new sigma.n / same-prefix closure / invalid countertableaux” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T152-OCC-001; OLP-0462; OLP-0462-B006; source upstream/content/normal-modal-logic/tableaux/rules-for-K.tex:13-20 bytes 208-719 SHA-256 781f917de40a4b8e0c38ade5e7cd1d9eab39a629563df7f6d07e0434ab5dffe3; target translation/content/normal-modal-logic/tableaux/rules-for-K.tex:13-26 bytes 233-2016 SHA-256 acefd674d2f2afe9014f2de606ce92bf99ea032bb8356e6f70e198282a64f1a2; reader page pending.
+  - te-Telu-IN-TE-T152-OCC-002; OLP-0462; OLP-0462-B008; source upstream/content/normal-modal-logic/tableaux/rules-for-K.tex:84-90 bytes 2523-2841 SHA-256 781f917de40a4b8e0c38ade5e7cd1d9eab39a629563df7f6d07e0434ab5dffe3; target translation/content/normal-modal-logic/tableaux/rules-for-K.tex:90-97 bytes 3942-4617 SHA-256 acefd674d2f2afe9014f2de606ce92bf99ea032bb8356e6f70e198282a64f1a2; reader page pending.
+  - te-Telu-IN-TE-T152-OCC-003; OLP-0462; OLP-0462-B010; source upstream/content/normal-modal-logic/tableaux/rules-for-K.tex:105-109 bytes 3255-3558 SHA-256 781f917de40a4b8e0c38ade5e7cd1d9eab39a629563df7f6d07e0434ab5dffe3; target translation/content/normal-modal-logic/tableaux/rules-for-K.tex:114-118 bytes 5537-6250 SHA-256 acefd674d2f2afe9014f2de606ce92bf99ea032bb8356e6f70e198282a64f1a2; reader page pending.
+  - te-Telu-IN-TE-T152-OCC-004; OLP-0462; OLP-0462-B011; source upstream/content/normal-modal-logic/tableaux/rules-for-K.tex:111-119 bytes 3559-4111 SHA-256 781f917de40a4b8e0c38ade5e7cd1d9eab39a629563df7f6d07e0434ab5dffe3; target translation/content/normal-modal-logic/tableaux/rules-for-K.tex:120-129 bytes 6251-7152 SHA-256 acefd674d2f2afe9014f2de606ce92bf99ea032bb8356e6f70e198282a64f1a2; reader page pending.
+  - te-Telu-IN-TE-T152-OCC-005; OLP-0462; OLP-0462-B014; source upstream/content/normal-modal-logic/tableaux/rules-for-K.tex:134-169 bytes 4738-5795 SHA-256 781f917de40a4b8e0c38ade5e7cd1d9eab39a629563df7f6d07e0434ab5dffe3; target translation/content/normal-modal-logic/tableaux/rules-for-K.tex:144-179 bytes 8145-9321 SHA-256 acefd674d2f2afe9014f2de606ce92bf99ea032bb8356e6f70e198282a64f1a2; reader page pending.
+  - te-Telu-IN-TE-T152-OCC-006; OLP-0462; OLP-0462-B015; source upstream/content/normal-modal-logic/tableaux/rules-for-K.tex:171-220 bytes 5796-7610 SHA-256 781f917de40a4b8e0c38ade5e7cd1d9eab39a629563df7f6d07e0434ab5dffe3; target translation/content/normal-modal-logic/tableaux/rules-for-K.tex:181-230 bytes 9322-11320 SHA-256 acefd674d2f2afe9014f2de606ce92bf99ea032bb8356e6f70e198282a64f1a2; reader page pending.
+  - te-Telu-IN-TE-T152-OCC-007; OLP-0462; OLP-0462-B016; source upstream/content/normal-modal-logic/tableaux/rules-for-K.tex:222-271 bytes 7611-9543 SHA-256 781f917de40a4b8e0c38ade5e7cd1d9eab39a629563df7f6d07e0434ab5dffe3; target translation/content/normal-modal-logic/tableaux/rules-for-K.tex:232-289 bytes 11321-14127 SHA-256 acefd674d2f2afe9014f2de606ce92bf99ea032bb8356e6f70e198282a64f1a2; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -15774,3 +15806,55 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLFILEUC-004-OCC-001; OLP-0459; OLP-0459-B006; source upstream/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:13-23 bytes 236-990 SHA-256 904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db; target translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:28 bytes 1772-1838 SHA-256 3f58269b78ab800ed649d0e78e9fc06e61d52cbcd339cc318306185b390211ca; reader page pending.
+
+## te-Telu-IN-OLTENMLTABRUL-001 — OLTENMLTABRUL-001: same prefix conjunction rule overstates other world truth
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: ఇతర లోకాలన్నింటిలో అసత్యమని మూల వాక్యాన్ని చదవకుండా, ఇదే sigma లోకంలోనే నియమ నిష్కర్ష అని చెప్పి ఇతర లోకాల సత్యాన్ని నిర్ణయించదని పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited same prefix conjunction rule overstates other world truth at rules-for-K.tex lines 17-19, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLTABRUL-20260927:OLTENMLTABRUL-001 [checked_supports], content/normal-modal-logic/tableaux/rules-for-K.tex; rules-for-K.tex lines 17-19; same_prefix_conjunction_rule_overstates_other_world_truth; ఇతర లోకాలన్నింటిలో అసత్యమని మూల వాక్యాన్ని చదవకుండా, ఇదే sigma లోకంలోనే నియమ నిష్కర్ష అని చెప్పి ఇతర లోకాల సత్యాన్ని నిర్ణయించదని పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the conjunction rule draw A and B only at the same prefix without claiming they are false in all other worlds?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLTABRUL-001-OCC-001; OLP-0462; OLP-0462-B006; source upstream/content/normal-modal-logic/tableaux/rules-for-K.tex:13-20 bytes 208-719 SHA-256 781f917de40a4b8e0c38ade5e7cd1d9eab39a629563df7f6d07e0434ab5dffe3; target translation/content/normal-modal-logic/tableaux/rules-for-K.tex:22 bytes 1322-1443 SHA-256 acefd674d2f2afe9014f2de606ce92bf99ea032bb8356e6f70e198282a64f1a2; reader page pending.
+
+## te-Telu-IN-OLTENMLTABRUL-002 — OLTENMLTABRUL-002: box only countertableau false box rule mislabeled true box
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: Box-only ప్రతినిరూపణ చిత్రంలో F Box A నుంచి F Aకి వెళ్లే వరుసపై T Box నియమ చీటీని F Boxగా సరిచేసి పక్కనే ప్రకటించాం; కొత్త పూర్వసూచిక ఆంక్ష ఉల్లంఘనను చూపే మిగతా చిత్రం మారలేదు.
+
+- Intended sense: Repair the audited box only countertableau false box rule mislabeled true box at rules-for-K.tex lines 227-243, Box-only conditional tableau; wrong rule label at line 231, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLTABRUL-20260927:OLTENMLTABRUL-002 [checked_supports], content/normal-modal-logic/tableaux/rules-for-K.tex; rules-for-K.tex lines 227-243, Box-only conditional tableau; wrong rule label at line 231; box_only_countertableau_false_box_rule_mislabeled_true_box; Box-only ప్రతినిరూపణ చిత్రంలో F Box A నుంచి F Aకి వెళ్లే వరుసపై T Box నియమ చీటీని F Boxగా సరిచేసి పక్కనే ప్రకటించాం; కొత్త పూర్వసూచిక ఆంక్ష ఉల్లంఘనను చూపే మిగతా చిత్రం మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the Box-only countertableau label the first F Box expansion F Box while still leaving the later forbidden reuse of 1.1 visible?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLTABRUL-002-OCC-001; OLP-0462; OLP-0462-B016; source upstream/content/normal-modal-logic/tableaux/rules-for-K.tex:222-271 bytes 7611-9543 SHA-256 781f917de40a4b8e0c38ade5e7cd1d9eab39a629563df7f6d07e0434ab5dffe3; target translation/content/normal-modal-logic/tableaux/rules-for-K.tex:240 bytes 11957-12053 SHA-256 acefd674d2f2afe9014f2de606ce92bf99ea032bb8356e6f70e198282a64f1a2; reader page pending.

@@ -1,0 +1,29 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "111",
+  "unit_id": "OLP-0462",
+  "unit_order": 462,
+  "source_path": "content/normal-modal-logic/tableaux/rules-for-K.tex",
+  "blocks": 17,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+  "previous_segments": 7001,
+  "previous_terms": 151,
+  "expected_corrections": 429,
+  "canon_default": ["TE-P018", "TE-P019", "TE-P024"],
+  "corrections_by_block": {
+    "6": ["OLTENMLTABRUL-001"],
+    "16": ["OLTENMLTABRUL-002"]
+  },
+  "consultation_phase": "స్థిర K టాబ్లో నియమాల మూలం, తెలుగు లక్ష్యం, పూర్వ టాబ్లో/పూర్వసూచిక నిర్ణయాలు, స్థానిక ప్రతిజ్ఞావాక్య తర్కం/సత్యమూల్యం/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; ఉపయోగించిన/కొత్త sigma.n నియమాలు, షరతు చిత్రాలు, రెండు మూల తప్పులను విడిగా తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P018/019/024 సాధారణ ప్రతిజ్ఞావాక్య తర్కం, సత్యమూల్యాలు, వ్యుత్పత్తి రిజిస్టర్‌కే ప్రత్యక్ష సాక్ష్యాలు. మోడల్ Kకు చెందిన నాలుగు పూర్వసూచిక నియమాలు, used/new షరతులు, countertableauలు స్థానిక పేజీల్లో లేవు; మూల పట్టిక/చిత్రాలు వాటి అర్థాన్ని నియంత్రిస్తాయి.",
+  "term_decision": {
+    "term_id": "TE-T152",
+    "source_term": "K prefixed tableau rules / used and new sigma.n / same-prefix closure / invalid countertableaux",
+    "telugu": "K పూర్వసూచిక టాబ్లో నియమాలు / ఉపయోగించిన, కొత్త sigma.n / ఒకే పూర్వసూచిక వద్ద సంవృతత / అనుమతించని ప్రతిటాబ్లోలు",
+    "status": "native_propositional_truth_derivation_register_attested_k_prefix_rules_source_controlled_with_two_disclosed_repairs",
+    "passages": ["TE-P018", "TE-P019", "TE-P024"],
+    "basis": "TE-T039/151లోని చిహ్నిత సూత్రం, టాబ్లో, పూర్వసూచిక, సంవృత శాఖ పదాలను కొనసాగించాం. స్థిర మూల పట్టికలో T Box/F Diamondలకు ఉపయోగించిన sigma.n, F Box/T Diamondలకు కొత్త sigma.n అనే రెండు విరుద్ధ ఆంక్షలను నిలిపాం; రెండు నిషిద్ధ సంవృత చిత్రాలు ఆ షరతుల అవసరాన్ని చూపుతాయి. మొదటి పేరాలో ఇతర లోకాల సత్యం గురించిన అధిక వాదనను, Box-only చిత్రంలోని F Box చీటీని ప్రకటిత మూల సవరణలతో సరిచేశాం.",
+    "uncertainty": "స్థానిక సాక్షులు modal K టాబ్లోకు ప్రత్యక్ష నామం/నిరూపణ ఇవ్వవు. countertableau చిత్రాలు TeX దృశ్య తనిఖీ లేదా స్వతంత్ర నిపుణ సమీక్ష పొందలేదు; మూలంలోని conditional tags కింద వాటి శాస్త్రీయ అర్థాన్ని అదే మూల నియమాలతో పోల్చాం.",
+    "borrowing": "టాబ్లో is an established edition borrowing; K, modal signs, sigma/n, rule names, conditional tags, tableau trees and cross-reference identifiers remain protected formal material."
+  }
+}

@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 461 of 722 draft units**. This log contains 151 terminology/sense decisions and 427 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 462 of 722 draft units**. This log contains 152 terminology/sense decisions and 429 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3631,6 +3631,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక పేజీలు prefixed modal tableauకు ప్రత్యక్ష సాంకేతిక నామం ఇవ్వవు. మూలంలోని అసంపూర్ణ ఆంగ్ల ఉపవాక్యాన్ని భావం మార్చకుండా సంపూర్ణ తెలుగు వాక్యంగా మార్చాం; గణిత సవరణ చేయలేదు. స్వతంత్ర నిపుణ సమీక్ష, TeX దృశ్య తనిఖీ ఇంకా లేవు.
 
 - Please double-check: Please double-check whether “పూర్వసూచిక గల మోడల్ టాబ్లో / చిహ్నిత సూత్రం / పూర్వసూచిక అనుక్రమం / సంవృత శాఖ / ప్రాప్యమైన లోకం” is idiomatic and technically standard for “prefixed modal tableau / signed formula / prefix sequence / closed branch / accessible world” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T152 — K prefixed tableau rules / used and new sigma.n / same-prefix closure / invalid countertableaux
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: K పూర్వసూచిక టాబ్లో నియమాలు / ఉపయోగించిన, కొత్త sigma.n / ఒకే పూర్వసూచిక వద్ద సంవృతత / అనుమతించని ప్రతిటాబ్లోలు
+
+- Exact implementation: OLP-0462; normal-modal-logic/tableaux/rules-for-K; content/normal-modal-logic/tableaux/rules-for-K.tex:13-20 ↔ translation/content/normal-modal-logic/tableaux/rules-for-K.tex:13-26 (OLP-0462-B006); printed/PDF page pending; OLP-0462; normal-modal-logic/tableaux/rules-for-K; content/normal-modal-logic/tableaux/rules-for-K.tex:84-90 ↔ translation/content/normal-modal-logic/tableaux/rules-for-K.tex:90-97 (OLP-0462-B008); printed/PDF page pending; OLP-0462; normal-modal-logic/tableaux/rules-for-K; content/normal-modal-logic/tableaux/rules-for-K.tex:105-109 ↔ translation/content/normal-modal-logic/tableaux/rules-for-K.tex:114-118 (OLP-0462-B010); printed/PDF page pending; OLP-0462; normal-modal-logic/tableaux/rules-for-K; content/normal-modal-logic/tableaux/rules-for-K.tex:111-119 ↔ translation/content/normal-modal-logic/tableaux/rules-for-K.tex:120-129 (OLP-0462-B011); printed/PDF page pending; OLP-0462; normal-modal-logic/tableaux/rules-for-K; content/normal-modal-logic/tableaux/rules-for-K.tex:134-169 ↔ translation/content/normal-modal-logic/tableaux/rules-for-K.tex:144-179 (OLP-0462-B014); printed/PDF page pending; OLP-0462; normal-modal-logic/tableaux/rules-for-K; content/normal-modal-logic/tableaux/rules-for-K.tex:171-220 ↔ translation/content/normal-modal-logic/tableaux/rules-for-K.tex:181-230 (OLP-0462-B015); printed/PDF page pending; OLP-0462; normal-modal-logic/tableaux/rules-for-K; content/normal-modal-logic/tableaux/rules-for-K.tex:222-271 ↔ translation/content/normal-modal-logic/tableaux/rules-for-K.tex:232-289 (OLP-0462-B016); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-T039/151లోని చిహ్నిత సూత్రం, టాబ్లో, పూర్వసూచిక, సంవృత శాఖ పదాలను కొనసాగించాం. స్థిర మూల పట్టికలో T Box/F Diamondలకు ఉపయోగించిన sigma.n, F Box/T Diamondలకు కొత్త sigma.n అనే రెండు విరుద్ధ ఆంక్షలను నిలిపాం; రెండు నిషిద్ధ సంవృత చిత్రాలు ఆ షరతుల అవసరాన్ని చూపుతాయి. మొదటి పేరాలో ఇతర లోకాల సత్యం గురించిన అధిక వాదనను, Box-only చిత్రంలోని F Box చీటీని ప్రకటిత మూల సవరణలతో సరిచేశాం. టాబ్లో is an established edition borrowing; K, modal signs, sigma/n, rule names, conditional tags, tableau trees and cross-reference identifiers remain protected formal material.
+
+- Alternatives: T Box/F Diamondలకు ఉపయోగించిన sigma.n, F Box/T Diamondలకు కొత్త sigma.n, ఒకే పూర్వసూచిక వద్ద సంవృతత, నిషిద్ధ countertableau శాఖలను నిలిపి, ఇతర లోకాల సత్య వాదన/Box-only నియమ చీటీని రెండు ప్రకటిత మూల సవరణలతో సరిచేయడం (ఎంపిక); T Boxకు కొత్త, F Boxకు పాత పూర్వసూచిక అనుమతించడం (తిరస్కరణ); వేర్వేరు పూర్వసూచికల వద్ద T A, F Aతో శాఖను మూయడం (తిరస్కరణ); నిషిద్ధ సంవృత చిత్రాలను చెల్లుబాటు నిరూపణలుగా చెప్పడం (తిరస్కరణ); స్థానిక సాధారణ తర్క పేజీల్లోనే modal K నియమాలు నేరుగా ఉన్నాయని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు modal K టాబ్లోకు ప్రత్యక్ష నామం/నిరూపణ ఇవ్వవు. countertableau చిత్రాలు TeX దృశ్య తనిఖీ లేదా స్వతంత్ర నిపుణ సమీక్ష పొందలేదు; మూలంలోని conditional tags కింద వాటి శాస్త్రీయ అర్థాన్ని అదే మూల నియమాలతో పోల్చాం.
+
+- Please double-check: Please double-check whether “K పూర్వసూచిక టాబ్లో నియమాలు / ఉపయోగించిన, కొత్త sigma.n / ఒకే పూర్వసూచిక వద్ద సంవృతత / అనుమతించని ప్రతిటాబ్లోలు” is idiomatic and technically standard for “K prefixed tableau rules / used and new sigma.n / same-prefix closure / invalid countertableaux” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -13879,3 +13903,51 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Are the newly forced quotient arrows described between [w2] and [w5], while the Box p at w2 and not-p at w5 checks remain at original worlds?
+
+## REV-OLTENMLTABRUL-001 — OLTENMLTABRUL-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: ఇతర లోకాలన్నింటిలో అసత్యమని మూల వాక్యాన్ని చదవకుండా, ఇదే sigma లోకంలోనే నియమ నిష్కర్ష అని చెప్పి ఇతర లోకాల సత్యాన్ని నిర్ణయించదని పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0462; normal-modal-logic/tableaux/rules-for-K; rules-for-K.tex lines 17-19 ↔ translation/content/normal-modal-logic/tableaux/rules-for-K.tex:22 (OLP-0462-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLTABRUL-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: ఇతర లోకాలన్నింటిలో అసత్యమని మూల వాక్యాన్ని చదవకుండా, ఇదే sigma లోకంలోనే నియమ నిష్కర్ష అని చెప్పి ఇతర లోకాల సత్యాన్ని నిర్ణయించదని పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the conjunction rule draw A and B only at the same prefix without claiming they are false in all other worlds?
+
+## REV-OLTENMLTABRUL-002 — OLTENMLTABRUL-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: Box-only ప్రతినిరూపణ చిత్రంలో F Box A నుంచి F Aకి వెళ్లే వరుసపై T Box నియమ చీటీని F Boxగా సరిచేసి పక్కనే ప్రకటించాం; కొత్త పూర్వసూచిక ఆంక్ష ఉల్లంఘనను చూపే మిగతా చిత్రం మారలేదు.
+
+- Exact implementation: OLP-0462; normal-modal-logic/tableaux/rules-for-K; rules-for-K.tex lines 227-243, Box-only conditional tableau; wrong rule label at line 231 ↔ translation/content/normal-modal-logic/tableaux/rules-for-K.tex:240 (OLP-0462-B016); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLTABRUL-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: Box-only ప్రతినిరూపణ చిత్రంలో F Box A నుంచి F Aకి వెళ్లే వరుసపై T Box నియమ చీటీని F Boxగా సరిచేసి పక్కనే ప్రకటించాం; కొత్త పూర్వసూచిక ఆంక్ష ఉల్లంఘనను చూపే మిగతా చిత్రం మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the Box-only countertableau label the first F Box expansion F Box while still leaving the later forbidden reuse of 1.1 visible?

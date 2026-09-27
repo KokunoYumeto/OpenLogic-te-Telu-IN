@@ -1,0 +1,22 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0462",
+  "source_path": "content/normal-modal-logic/tableaux/rules-for-K.tex",
+  "source_sha256": "781f917de40a4b8e0c38ade5e7cd1d9eab39a629563df7f6d07e0434ab5dffe3",
+  "audit_id": "OLTENMLTABRUL-20260927",
+  "audit_review_path": "evidence/OLP-0462-MODAL-TABLEAUX-RULES-SOURCE-AUDIT.md",
+  "audit_review_sha256": "fb5c7d0f607aab514eba7202ce952db9ec6611f2609c54f5bffe55b3c698c820",
+  "audit_findings_path": "evidence/OLP-0462-MODAL-TABLEAUX-RULES-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "c3190f79ebb37e8ec07918b1572dc3151f0d16addb492877117eaa5ee4e7e4c8",
+  "previous_corrections": 427,
+  "treatments": {
+    "OLTENMLTABRUL-001": {
+      "target_line": 22,
+      "body_treatment": "ఇతర లోకాలన్నింటిలో అసత్యమని మూల వాక్యాన్ని చదవకుండా, ఇదే sigma లోకంలోనే నియమ నిష్కర్ష అని చెప్పి ఇతర లోకాల సత్యాన్ని నిర్ణయించదని పక్కనే ప్రకటించాం."
+    },
+    "OLTENMLTABRUL-002": {
+      "target_line": 240,
+      "body_treatment": "Box-only ప్రతినిరూపణ చిత్రంలో F Box A నుంచి F Aకి వెళ్లే వరుసపై T Box నియమ చీటీని F Boxగా సరిచేసి పక్కనే ప్రకటించాం; కొత్త పూర్వసూచిక ఆంక్ష ఉల్లంఘనను చూపే మిగతా చిత్రం మారలేదు."
+    }
+  }
+}

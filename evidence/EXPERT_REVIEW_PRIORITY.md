@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 461 of 722 draft units**. This view selects 480 of 578 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 462 of 722 draft units**. This view selects 482 of 581 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4803,3 +4803,23 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0459; normal-modal-logic/filtrations/euclidean-filtrations; translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:28; printed/PDF page pending
 
 - Please double-check: Please double-check: Are the newly forced quotient arrows described between [w2] and [w5], while the Box p at w2 and not-p at w5 checks remain at original worlds?
+
+## REV-OLTENMLTABRUL-001 — OLTENMLTABRUL-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఇతర లోకాలన్నింటిలో అసత్యమని మూల వాక్యాన్ని చదవకుండా, ఇదే sigma లోకంలోనే నియమ నిష్కర్ష అని చెప్పి ఇతర లోకాల సత్యాన్ని నిర్ణయించదని పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0462; normal-modal-logic/tableaux/rules-for-K; translation/content/normal-modal-logic/tableaux/rules-for-K.tex:22; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the conjunction rule draw A and B only at the same prefix without claiming they are false in all other worlds?
+
+## REV-OLTENMLTABRUL-002 — OLTENMLTABRUL-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Box-only ప్రతినిరూపణ చిత్రంలో F Box A నుంచి F Aకి వెళ్లే వరుసపై T Box నియమ చీటీని F Boxగా సరిచేసి పక్కనే ప్రకటించాం; కొత్త పూర్వసూచిక ఆంక్ష ఉల్లంఘనను చూపే మిగతా చిత్రం మారలేదు.
+
+- Occurrences: OLP-0462; normal-modal-logic/tableaux/rules-for-K; translation/content/normal-modal-logic/tableaux/rules-for-K.tex:240; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the Box-only countertableau label the first F Box expansion F Box while still leaving the later forbidden reuse of 1.1 visible?
