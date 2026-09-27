@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **459 of 722 source units drafted**. This readable view contains all 576 decisions and 1315 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **460 of 722 source units drafted**. This readable view contains all 577 decisions and 1317 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4536,6 +4536,33 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T149-OCC-006; OLP-0459; OLP-0459-B010; source upstream/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:95-104 bytes 3547-3968 SHA-256 904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db; target translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:123-136 bytes 6692-7463 SHA-256 3f58269b78ab800ed649d0e78e9fc06e61d52cbcd339cc318306185b390211ca; reader page pending.
   - te-Telu-IN-TE-T149-OCC-007; OLP-0459; OLP-0459-B011; source upstream/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:106-127 bytes 3969-5111 SHA-256 904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db; target translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:138-174 bytes 7464-10081 SHA-256 3f58269b78ab800ed649d0e78e9fc06e61d52cbcd339cc318306185b390211ca; reader page pending.
   - te-Telu-IN-TE-T149-OCC-008; OLP-0459; OLP-0459-B012; source upstream/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:129-131 bytes 5112-5206 SHA-256 904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db; target translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:176-179 bytes 10082-10219 SHA-256 3f58269b78ab800ed649d0e78e9fc06e61d52cbcd339cc318306185b390211ca; reader page pending.
+
+## te-Telu-IN-TE-T150 — modal prefixed tableaux / draft chapter wrapper and nine imports
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: మోడల్ పూర్వసూచిక టాబ్లోలు / ముసాయిదా అధ్యాయ శీర్షిక, తొమ్మిది రక్షిత దిగుమతులు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “modal prefixed tableaux / draft chapter wrapper and nine imports” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు prefixed modal tableauకు ప్రత్యక్ష సాంకేతిక సాక్ష్యం కాదు. మూల వ్యాఖ్య చాప్టర్ ముసాయిదా అని చెబుతుంది; అనువాదం దాన్ని పూర్తి పాఠ్యంగా ప్రకటించదు. మూల metadata వ్యాఖ్యలోని axioms-systemsను రక్షితంగానే ఉంచాం.
+
+- Rationale: పూర్వ TE-T039లో స్థిర టాబ్లో రూపాన్ని కొనసాగించాం. Prefixedకు పూర్వసూచికలతో కూడిన అనే వివరణాత్మక రూపం ఈ ముసాయిదా సంపాదకీయ వాక్యానికి మాత్రమే; దాని ఖచ్చిత మోడల్ అర్థాన్ని తరువాతి నియమాలు నిర్ణయిస్తాయి. స్థిర మూలంలోని ముసాయిదా/అసంపూర్ణత హెచ్చరికను, తొమ్మిది దిగుమతుల క్రమాన్ని నిలిపాం. tableau remains established edition borrowing; nml/tab identities, usetoken hook, import filenames and end hook retain protected TeX form.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: పూర్వ టాబ్లో రూపం, prefixedకు నిర్వచనాధీన పూర్వసూచికలతో కూడిన వివరణ, ముసాయిదా/ఇంకా కావలసిన అంశాల హెచ్చరిక, తొమ్మిది దిగుమతులు, రక్షిత శీర్షిక హుక్‌ను నిలపడం [viable_alternative: ఎంపిక] | ముసాయిదా గమనికను తొలగించి అధ్యాయం సంపూర్ణమని చూపడం [viable_alternative: తిరస్కరణ] | prefixedకు స్థానిక సాధారణ తర్క పేజీలో ప్రత్యక్ష సాంకేతిక పదం ఉందని చెప్పడం [viable_alternative: తిరస్కరణ] | దిగుమతి ఫైల్ మార్గాలు లేదా usetoken గుర్తింపును అనువదించడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “మోడల్ పూర్వసూచిక టాబ్లోలు / ముసాయిదా అధ్యాయ శీర్షిక, తొమ్మిది రక్షిత దిగుమతులు” is idiomatic and technically standard for “modal prefixed tableaux / draft chapter wrapper and nine imports” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T150-OCC-001; OLP-0460; OLP-0460-B004; source upstream/content/normal-modal-logic/tableaux/tableaux.tex:8 bytes 135-185 SHA-256 58eea9ef8caa03576eb40d2be64cbd3d5dbfc07e1bb052af3558481e9f7d8f1b; target translation/content/normal-modal-logic/tableaux/tableaux.tex:8 bytes 135-195 SHA-256 8a09f4efee3a00318d50a960766906824d8c6858101eb2a28b26405faa9bde17; reader page pending.
+  - te-Telu-IN-TE-T150-OCC-002; OLP-0460; OLP-0460-B005; source upstream/content/normal-modal-logic/tableaux/tableaux.tex:10-14 bytes 186-417 SHA-256 58eea9ef8caa03576eb40d2be64cbd3d5dbfc07e1bb052af3558481e9f7d8f1b; target translation/content/normal-modal-logic/tableaux/tableaux.tex:10-16 bytes 196-793 SHA-256 8a09f4efee3a00318d50a960766906824d8c6858101eb2a28b26405faa9bde17; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 

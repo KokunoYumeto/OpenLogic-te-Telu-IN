@@ -921,6 +921,10 @@ locations['TE-T149']=[
  L('content/normal-modal-logic/filtrations/euclidean-filtrations.tex',106,127,138,174,'transitivity','సంక్రామకత్వం'),
  L('content/normal-modal-logic/filtrations/euclidean-filtrations.tex',129,131,176,179,'Complete the proof','నిరూపణను పూర్తి చేయండి')
 ];
+locations['TE-T150']=[
+ L('content/normal-modal-logic/tableaux/tableaux.tex',8,8,8,8,'Modal \\usetoken{P}{tableau}','మోడల్ \\usetoken{P}{tableau}'),
+ L('content/normal-modal-logic/tableaux/tableaux.tex',10,14,10,17,'Draft chapter on prefixed tableaux','పూర్వసూచికలతో కూడిన టాబ్లోలపై')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -1056,6 +1060,7 @@ alternatives['TE-T146']=['Kకు నమూనా వర్గ ఆంక్ష �
 alternatives['TE-T147']=['నిరూపణల లెక్కింపు, పరిమిత సార్వత్రిక నమూనాల ప్రతినమూనా శోధనను సమాంతరంగా నడిపి, S5 నిర్ణాయకత్వం మరియు పరిమిత నమూనా ధర్మం వల్ల ముగింపును చూపడం; మూలంలోని నమూనా వర్గ లోపాన్ని పక్కనే ప్రకటించి సరిచేయడం (ఎంపిక)','S5కు చెందని అన్ని పరిమిత నమూనాలను ప్రతినమూనాలుగా అనుమతించడం (తిరస్కరణ)','పరిమిత ప్రతినమూనా శోధన ఒక్కటే ఎప్పుడూ నిర్ణయ ప్రక్రియ అని చెప్పడం (తిరస్కరణ)','నిరూపణ శాఖ, నమూనా శాఖలను క్రమంగా మాత్రమే నడిపి నిలుపు సమస్యను తిరిగి తెచ్చుకోవడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలు S5 నిర్ణేయతకు ప్రత్యక్ష నిరూపణ అని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T148']=['C1..C4 పట్టికలో అన్ని Box/Diamond guarded దిశలను నిలిపి, జతల చేరిక తగ్గితే సూక్ష్మత పెరుగుతుందని, నాలుగు వడపోత నిర్వచనాలు వాటి ధర్మాలకు సరిపోతాయని, మూడు శాఖలు మూలంలాగే వ్యాయామాలేనని చెప్పడం (ఎంపిక)','సూక్ష్మతను W*లో లోకాల సంఖ్యతో కలపడం (తిరస్కరణ)','C3/C4లో Box/Diamond బదిలీ దిశలను తారుమారు చేయడం (తిరస్కరణ)','వ్యాయామ శాఖలను పూర్తిగా నిరూపించామని ప్రకటించడం (తిరస్కరణ)','స్థానిక సాధారణ సంబంధ పేజీనే modal C-షరతులకు ప్రత్యక్ష సాక్ష్యంగా చూపడం (తిరస్కరణ)'];
 alternatives['TE-T149']=['మొదటి నమూనా w2 స్వబాణం, వడపోత [w2] స్వబాణం, quotient బాణాల బ్రాకెట్లు, శూన్యం కాని modal సంవృతత, సిద్ధాంత-నిరూపణ అంశ క్రమాన్ని నాలుగు మూల సవరణలతో ప్రకటించి సరిచేయడం; పని చేసిన సంక్రామక నిరూపణ, రెండు వ్యాయామాలను నిలపడం (ఎంపిక)','w2కు బయటకు బాణం లేకుండానే చిత్రం సీరియల్/యూక్లిడియన్ అని చెప్పడం (తిరస్కరణ)','పాత లోకాలు w2,w5నే వడపోత బాణాల చివరలుగా చూపడం (తిరస్కరణ)','ఖాళీ modal సంవృత సమితి కూడా అనంతమని చెప్పడం (తిరస్కరణ)','సంక్రామక నిరూపణను సిద్ధాంతంలోని సౌష్ఠవ అంశానికి అంటించడం (తిరస్కరణ)'];
+alternatives['TE-T150']=['పూర్వ టాబ్లో రూపం, prefixedకు నిర్వచనాధీన పూర్వసూచికలతో కూడిన వివరణ, ముసాయిదా/ఇంకా కావలసిన అంశాల హెచ్చరిక, తొమ్మిది దిగుమతులు, రక్షిత శీర్షిక హుక్‌ను నిలపడం (ఎంపిక)','ముసాయిదా గమనికను తొలగించి అధ్యాయం సంపూర్ణమని చూపడం (తిరస్కరణ)','prefixedకు స్థానిక సాధారణ తర్క పేజీలో ప్రత్యక్ష సాంకేతిక పదం ఉందని చెప్పడం (తిరస్కరణ)','దిగుమతి ఫైల్ మార్గాలు లేదా usetoken గుర్తింపును అనువదించడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -1071,7 +1076,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T149 record the Batch 025--Batch 108 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T150 record the Batch 025--Batch 109 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);

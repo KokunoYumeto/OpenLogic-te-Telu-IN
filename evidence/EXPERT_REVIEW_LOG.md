@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 459 of 722 draft units**. This log contains 149 terminology/sense decisions and 427 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 460 of 722 draft units**. This log contains 150 terminology/sense decisions and 427 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3583,6 +3583,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక సాక్షులు modal Euclidean వడపోతకు ప్రత్యక్ష సాంకేతిక పదం/సిద్ధాంతం ఇవ్వవు. సౌష్ఠవ, యూక్లిడియన్ శాఖల పూర్తి నిరూపణ ఈ మూల విభాగంలోనే వ్యాయామాలు; చిత్రాలు ఇంకా TeX render ద్వారా దృశ్యంగా తనిఖీ కాలేదు.
 
 - Please double-check: Please double-check whether “యూక్లిడియన్ వడపోతలు; శూన్యం కాని మోడల్ సంవృతత; వర్గ స్వబాణం” is idiomatic and technically standard for “Euclidean filtrations; nonempty modal closure; inherited quotient self-loop” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T150 — modal prefixed tableaux / draft chapter wrapper and nine imports
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: మోడల్ పూర్వసూచిక టాబ్లోలు / ముసాయిదా అధ్యాయ శీర్షిక, తొమ్మిది రక్షిత దిగుమతులు
+
+- Exact implementation: OLP-0460; normal-modal-logic/tableaux/tableaux; content/normal-modal-logic/tableaux/tableaux.tex:8 ↔ translation/content/normal-modal-logic/tableaux/tableaux.tex:8 (OLP-0460-B004); printed/PDF page pending; OLP-0460; normal-modal-logic/tableaux/tableaux; content/normal-modal-logic/tableaux/tableaux.tex:10-14 ↔ translation/content/normal-modal-logic/tableaux/tableaux.tex:10-16 (OLP-0460-B005); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: పూర్వ TE-T039లో స్థిర టాబ్లో రూపాన్ని కొనసాగించాం. Prefixedకు పూర్వసూచికలతో కూడిన అనే వివరణాత్మక రూపం ఈ ముసాయిదా సంపాదకీయ వాక్యానికి మాత్రమే; దాని ఖచ్చిత మోడల్ అర్థాన్ని తరువాతి నియమాలు నిర్ణయిస్తాయి. స్థిర మూలంలోని ముసాయిదా/అసంపూర్ణత హెచ్చరికను, తొమ్మిది దిగుమతుల క్రమాన్ని నిలిపాం. tableau remains established edition borrowing; nml/tab identities, usetoken hook, import filenames and end hook retain protected TeX form.
+
+- Alternatives: పూర్వ టాబ్లో రూపం, prefixedకు నిర్వచనాధీన పూర్వసూచికలతో కూడిన వివరణ, ముసాయిదా/ఇంకా కావలసిన అంశాల హెచ్చరిక, తొమ్మిది దిగుమతులు, రక్షిత శీర్షిక హుక్‌ను నిలపడం (ఎంపిక); ముసాయిదా గమనికను తొలగించి అధ్యాయం సంపూర్ణమని చూపడం (తిరస్కరణ); prefixedకు స్థానిక సాధారణ తర్క పేజీలో ప్రత్యక్ష సాంకేతిక పదం ఉందని చెప్పడం (తిరస్కరణ); దిగుమతి ఫైల్ మార్గాలు లేదా usetoken గుర్తింపును అనువదించడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు prefixed modal tableauకు ప్రత్యక్ష సాంకేతిక సాక్ష్యం కాదు. మూల వ్యాఖ్య చాప్టర్ ముసాయిదా అని చెబుతుంది; అనువాదం దాన్ని పూర్తి పాఠ్యంగా ప్రకటించదు. మూల metadata వ్యాఖ్యలోని axioms-systemsను రక్షితంగానే ఉంచాం.
+
+- Please double-check: Please double-check whether “మోడల్ పూర్వసూచిక టాబ్లోలు / ముసాయిదా అధ్యాయ శీర్షిక, తొమ్మిది రక్షిత దిగుమతులు” is idiomatic and technically standard for “modal prefixed tableaux / draft chapter wrapper and nine imports” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
