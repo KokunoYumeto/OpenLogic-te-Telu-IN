@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLFILDEC-20260927",
+  "unit_id": "OLP-0457",
+  "source_path": "content/normal-modal-logic/filtrations/S5-decidable.tex",
+  "source_sha256": "f6f07c518a0df3bdcff427979834a918256085715f1353b5b35cc6dafe75d1b1",
+  "findings": [
+    {
+      "finding_id": "OLTENMLFILDEC-001",
+      "source_locator": "S5-decidable.tex lines 24-31",
+      "classification": "countermodel_search_class_must_be_universal",
+      "source_issue": "Searching all finite models, rather than finite universal models, could find a refutation outside the S5 class and give an unsound negative answer.",
+      "minimal_treatment": "Explicitly enumerate finite universal models while leaving proof enumeration and the theorem unchanged; disclose the restriction adjacent to the procedure.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

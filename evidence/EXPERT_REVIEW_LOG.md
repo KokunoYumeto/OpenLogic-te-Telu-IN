@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 456 of 722 draft units**. This log contains 146 terminology/sense decisions and 422 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 457 of 722 draft units**. This log contains 147 terminology/sense decisions and 423 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3511,6 +3511,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక సాక్షులు modal K/S5 ఫలితాలను ప్రత్యక్షంగా ఇవ్వవు. మొదటి K నిరూపణలో మూల w/[w] సూచన లోపం OLTENMLFILFMP-001గా ప్రకటిత సవరణ; S5 స్థానిక సత్య మార్పు ముందరి prop:S5=univ నిరూపణలోని వర్గ పరిమితి నిర్మాణాన్ని ఆధారంగా వాడుతుంది.
 
 - Please double-check: Please double-check whether “K, S5లకు వడపోతలు/సార్వత్రిక నమూనాల ద్వారా పరిమిత నమూనా ధర్మం” is idiomatic and technically standard for “finite model property for K and S5 via filtrations and universal models” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T147 — S5 decidability by parallel theorem and finite-universal-countermodel searches
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: సమాంతర సిద్ధాంత/పరిమిత సార్వత్రిక ప్రతినమూనా శోధనతో S5 నిర్ణేయత
+
+- Exact implementation: OLP-0457; normal-modal-logic/filtrations/S5-decidable; content/normal-modal-logic/filtrations/S5-decidable.tex:11-15 ↔ translation/content/normal-modal-logic/filtrations/S5-decidable.tex:11-17 (OLP-0457-B005); printed/PDF page pending; OLP-0457; normal-modal-logic/filtrations/S5-decidable; content/normal-modal-logic/filtrations/S5-decidable.tex:17-19 ↔ translation/content/normal-modal-logic/filtrations/S5-decidable.tex:19-21 (OLP-0457-B006); printed/PDF page pending; OLP-0457; normal-modal-logic/filtrations/S5-decidable; content/normal-modal-logic/filtrations/S5-decidable.tex:21-32 ↔ translation/content/normal-modal-logic/filtrations/S5-decidable.tex:23-48 (OLP-0457-B007); printed/PDF page pending; OLP-0457; normal-modal-logic/filtrations/S5-decidable; content/normal-modal-logic/filtrations/S5-decidable.tex:34-36 ↔ translation/content/normal-modal-logic/filtrations/S5-decidable.tex:50-53 (OLP-0457-B008); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: పూర్వ TE-T020/066/069/140 నిర్ణేయత కుటుంబాన్ని కొనసాగించాం. మూల వాదనలో వ్యవస్థ నిరూపణల జాబితా, పరిమిత సార్వత్రిక నమూనాల జాబితా సమాంతరంగా నడిచి, S5 నిర్ణాయకత్వం/పరిమిత ప్రతినమూనా ఫలితాల వల్ల ఒక శాఖ ముగుస్తుంది. సాధారణ స్థానిక పేజీలు పదజాలానికి పరిమిత సాక్ష్యం మాత్రమే; నమూనా వర్గ పరిమితి OLTENMLFILDEC-001గా ప్రకటిత సవరణ. S5, p_i, A, K, finite-world notation and protected TeX references retain source identities.
+
+- Alternatives: నిరూపణల లెక్కింపు, పరిమిత సార్వత్రిక నమూనాల ప్రతినమూనా శోధనను సమాంతరంగా నడిపి, S5 నిర్ణాయకత్వం మరియు పరిమిత నమూనా ధర్మం వల్ల ముగింపును చూపడం; మూలంలోని నమూనా వర్గ లోపాన్ని పక్కనే ప్రకటించి సరిచేయడం (ఎంపిక); S5కు చెందని అన్ని పరిమిత నమూనాలను ప్రతినమూనాలుగా అనుమతించడం (తిరస్కరణ); పరిమిత ప్రతినమూనా శోధన ఒక్కటే ఎప్పుడూ నిర్ణయ ప్రక్రియ అని చెప్పడం (తిరస్కరణ); నిరూపణ శాఖ, నమూనా శాఖలను క్రమంగా మాత్రమే నడిపి నిలుపు సమస్యను తిరిగి తెచ్చుకోవడం (తిరస్కరణ); స్థానిక సాధారణ తర్క పేజీలు S5 నిర్ణేయతకు ప్రత్యక్ష నిరూపణ అని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు S5 నిర్ణయ ప్రక్రియను ప్రత్యక్షంగా నిర్వచించవు. అన్ని నమూనాల బదులు సార్వత్రిక నమూనాల శోధన తప్పనిసరి; స్కీమాల/నిరూపణల ప్రభావవంతమైన జాబితా మూల వ్యవస్థ నేపథ్యానికి ఆధారితం.
+
+- Please double-check: Please double-check whether “సమాంతర సిద్ధాంత/పరిమిత సార్వత్రిక ప్రతినమూనా శోధనతో S5 నిర్ణేయత” is idiomatic and technically standard for “S5 decidability by parallel theorem and finite-universal-countermodel searches” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -13639,3 +13663,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Does the K proof put the filtered truth of A at quotient world [w], rather than original world w, exactly as the preceding truth-preservation theorem requires?
+
+## REV-OLTENMLFILDEC-001 — OLTENMLFILDEC-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: సమాంతర ప్రతినమూనా శోధనను ఏ పరిమిత నమూనాలకైనా కాక S5కు తగిన పరిమిత సార్వత్రిక నమూనాలకే పరిమితం చేసి పక్కనే ప్రకటించాం; నిరూపణల లెక్కింపును, రెండు శాఖల ముగింపు వాదనను నిలిపాం.
+
+- Exact implementation: OLP-0457; normal-modal-logic/filtrations/S5-decidable; S5-decidable.tex lines 24-31 ↔ translation/content/normal-modal-logic/filtrations/S5-decidable.tex:36 (OLP-0457-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLFILDEC-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: సమాంతర ప్రతినమూనా శోధనను ఏ పరిమిత నమూనాలకైనా కాక S5కు తగిన పరిమిత సార్వత్రిక నమూనాలకే పరిమితం చేసి పక్కనే ప్రకటించాం; నిరూపణల లెక్కింపును, రెండు శాఖల ముగింపు వాదనను నిలిపాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the countermodel branch enumerate only finite universal models appropriate to S5, rather than arbitrary finite models, while preserving the independent proof-enumeration branch?

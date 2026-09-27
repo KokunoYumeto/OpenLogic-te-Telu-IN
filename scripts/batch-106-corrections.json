@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0457",
+  "source_path": "content/normal-modal-logic/filtrations/S5-decidable.tex",
+  "source_sha256": "f6f07c518a0df3bdcff427979834a918256085715f1353b5b35cc6dafe75d1b1",
+  "audit_id": "OLTENMLFILDEC-20260927",
+  "audit_review_path": "evidence/OLP-0457-S5-DECIDABLE-SOURCE-AUDIT.md",
+  "audit_review_sha256": "0791184c4561f46e9a88272fe4005e014f6d1417a3e6049b6026484ae850cea5",
+  "audit_findings_path": "evidence/OLP-0457-S5-DECIDABLE-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "b3d4074f1e0ceecd9e9932425def9bc760a4842a4f649370c29172933e23be26",
+  "previous_corrections": 422,
+  "treatments": {
+    "OLTENMLFILDEC-001": {
+      "target_line": 36,
+      "body_treatment": "సమాంతర ప్రతినమూనా శోధనను ఏ పరిమిత నమూనాలకైనా కాక S5కు తగిన పరిమిత సార్వత్రిక నమూనాలకే పరిమితం చేసి పక్కనే ప్రకటించాం; నిరూపణల లెక్కింపును, రెండు శాఖల ముగింపు వాదనను నిలిపాం."
+    }
+  }
+}

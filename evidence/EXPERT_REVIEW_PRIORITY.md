@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 456 of 722 draft units**. This view selects 475 of 568 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 457 of 722 draft units**. This view selects 476 of 570 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4753,3 +4753,13 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0456; normal-modal-logic/filtrations/S5-fmp; translation/content/normal-modal-logic/filtrations/S5-fmp.tex:34; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the K proof put the filtered truth of A at quotient world [w], rather than original world w, exactly as the preceding truth-preservation theorem requires?
+
+## REV-OLTENMLFILDEC-001 — OLTENMLFILDEC-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సమాంతర ప్రతినమూనా శోధనను ఏ పరిమిత నమూనాలకైనా కాక S5కు తగిన పరిమిత సార్వత్రిక నమూనాలకే పరిమితం చేసి పక్కనే ప్రకటించాం; నిరూపణల లెక్కింపును, రెండు శాఖల ముగింపు వాదనను నిలిపాం.
+
+- Occurrences: OLP-0457; normal-modal-logic/filtrations/S5-decidable; translation/content/normal-modal-logic/filtrations/S5-decidable.tex:36; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the countermodel branch enumerate only finite universal models appropriate to S5, rather than arbitrary finite models, while preserving the independent proof-enumeration branch?

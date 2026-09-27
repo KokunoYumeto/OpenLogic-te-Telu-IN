@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **456 of 722 source units drafted**. This readable view contains all 568 decisions and 1291 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **457 of 722 source units drafted**. This readable view contains all 570 decisions and 1296 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4442,6 +4442,35 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T146-OCC-008; OLP-0456; OLP-0456-B013; source upstream/content/normal-modal-logic/filtrations/S5-fmp.tex:69-77 bytes 2587-3055 SHA-256 73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e; target translation/content/normal-modal-logic/filtrations/S5-fmp.tex:90-102 bytes 5241-6303 SHA-256 ea8b2abcac0fb66c08fbb6c1ab55d758130fc53a7b692c112d91d6ac4d7091c2; reader page pending.
   - te-Telu-IN-TE-T146-OCC-009; OLP-0456; OLP-0456-B014; source upstream/content/normal-modal-logic/filtrations/S5-fmp.tex:79-82 bytes 3056-3184 SHA-256 73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e; target translation/content/normal-modal-logic/filtrations/S5-fmp.tex:104-107 bytes 6304-6593 SHA-256 ea8b2abcac0fb66c08fbb6c1ab55d758130fc53a7b692c112d91d6ac4d7091c2; reader page pending.
   - te-Telu-IN-TE-T146-OCC-010; OLP-0456; OLP-0456-B015; source upstream/content/normal-modal-logic/filtrations/S5-fmp.tex:84-87 bytes 3185-3323 SHA-256 73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e; target translation/content/normal-modal-logic/filtrations/S5-fmp.tex:109-113 bytes 6594-6913 SHA-256 ea8b2abcac0fb66c08fbb6c1ab55d758130fc53a7b692c112d91d6ac4d7091c2; reader page pending.
+
+## te-Telu-IN-TE-T147 — S5 decidability by parallel theorem and finite-universal-countermodel searches
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: సమాంతర సిద్ధాంత/పరిమిత సార్వత్రిక ప్రతినమూనా శోధనతో S5 నిర్ణేయత
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “S5 decidability by parallel theorem and finite-universal-countermodel searches” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు S5 నిర్ణయ ప్రక్రియను ప్రత్యక్షంగా నిర్వచించవు. అన్ని నమూనాల బదులు సార్వత్రిక నమూనాల శోధన తప్పనిసరి; స్కీమాల/నిరూపణల ప్రభావవంతమైన జాబితా మూల వ్యవస్థ నేపథ్యానికి ఆధారితం.
+
+- Rationale: పూర్వ TE-T020/066/069/140 నిర్ణేయత కుటుంబాన్ని కొనసాగించాం. మూల వాదనలో వ్యవస్థ నిరూపణల జాబితా, పరిమిత సార్వత్రిక నమూనాల జాబితా సమాంతరంగా నడిచి, S5 నిర్ణాయకత్వం/పరిమిత ప్రతినమూనా ఫలితాల వల్ల ఒక శాఖ ముగుస్తుంది. సాధారణ స్థానిక పేజీలు పదజాలానికి పరిమిత సాక్ష్యం మాత్రమే; నమూనా వర్గ పరిమితి OLTENMLFILDEC-001గా ప్రకటిత సవరణ. S5, p_i, A, K, finite-world notation and protected TeX references retain source identities.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: నిరూపణల లెక్కింపు, పరిమిత సార్వత్రిక నమూనాల ప్రతినమూనా శోధనను సమాంతరంగా నడిపి, S5 నిర్ణాయకత్వం మరియు పరిమిత నమూనా ధర్మం వల్ల ముగింపును చూపడం; మూలంలోని నమూనా వర్గ లోపాన్ని పక్కనే ప్రకటించి సరిచేయడం [viable_alternative: ఎంపిక] | S5కు చెందని అన్ని పరిమిత నమూనాలను ప్రతినమూనాలుగా అనుమతించడం [viable_alternative: తిరస్కరణ] | పరిమిత ప్రతినమూనా శోధన ఒక్కటే ఎప్పుడూ నిర్ణయ ప్రక్రియ అని చెప్పడం [viable_alternative: తిరస్కరణ] | నిరూపణ శాఖ, నమూనా శాఖలను క్రమంగా మాత్రమే నడిపి నిలుపు సమస్యను తిరిగి తెచ్చుకోవడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ తర్క పేజీలు S5 నిర్ణేయతకు ప్రత్యక్ష నిరూపణ అని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “సమాంతర సిద్ధాంత/పరిమిత సార్వత్రిక ప్రతినమూనా శోధనతో S5 నిర్ణేయత” is idiomatic and technically standard for “S5 decidability by parallel theorem and finite-universal-countermodel searches” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T147-OCC-001; OLP-0457; OLP-0457-B005; source upstream/content/normal-modal-logic/filtrations/S5-decidable.tex:11-15 bytes 182-455 SHA-256 f6f07c518a0df3bdcff427979834a918256085715f1353b5b35cc6dafe75d1b1; target translation/content/normal-modal-logic/filtrations/S5-decidable.tex:11-17 bytes 182-852 SHA-256 bcf63971f6a59dc72917a8641602bfb7fced0d287152a4c216f800225d509974; reader page pending.
+  - te-Telu-IN-TE-T147-OCC-002; OLP-0457; OLP-0457-B006; source upstream/content/normal-modal-logic/filtrations/S5-decidable.tex:17-19 bytes 456-503 SHA-256 f6f07c518a0df3bdcff427979834a918256085715f1353b5b35cc6dafe75d1b1; target translation/content/normal-modal-logic/filtrations/S5-decidable.tex:19-21 bytes 853-933 SHA-256 bcf63971f6a59dc72917a8641602bfb7fced0d287152a4c216f800225d509974; reader page pending.
+  - te-Telu-IN-TE-T147-OCC-003; OLP-0457; OLP-0457-B007; source upstream/content/normal-modal-logic/filtrations/S5-decidable.tex:21-32 bytes 504-1207 SHA-256 f6f07c518a0df3bdcff427979834a918256085715f1353b5b35cc6dafe75d1b1; target translation/content/normal-modal-logic/filtrations/S5-decidable.tex:23-48 bytes 934-3307 SHA-256 bcf63971f6a59dc72917a8641602bfb7fced0d287152a4c216f800225d509974; reader page pending.
+  - te-Telu-IN-TE-T147-OCC-004; OLP-0457; OLP-0457-B008; source upstream/content/normal-modal-logic/filtrations/S5-decidable.tex:34-36 bytes 1208-1404 SHA-256 f6f07c518a0df3bdcff427979834a918256085715f1353b5b35cc6dafe75d1b1; target translation/content/normal-modal-logic/filtrations/S5-decidable.tex:50-53 bytes 3308-3809 SHA-256 bcf63971f6a59dc72917a8641602bfb7fced0d287152a4c216f800225d509974; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -15494,3 +15523,29 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLFILFMP-001-OCC-001; OLP-0456; OLP-0456-B008; source upstream/content/normal-modal-logic/filtrations/S5-fmp.tex:24-34 bytes 583-1158 SHA-256 73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e; target translation/content/normal-modal-logic/filtrations/S5-fmp.tex:34 bytes 1437-1505 SHA-256 ea8b2abcac0fb66c08fbb6c1ab55d758130fc53a7b692c112d91d6ac4d7091c2; reader page pending.
+
+## te-Telu-IN-OLTENMLFILDEC-001 — OLTENMLFILDEC-001: countermodel search class must be universal
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: సమాంతర ప్రతినమూనా శోధనను ఏ పరిమిత నమూనాలకైనా కాక S5కు తగిన పరిమిత సార్వత్రిక నమూనాలకే పరిమితం చేసి పక్కనే ప్రకటించాం; నిరూపణల లెక్కింపును, రెండు శాఖల ముగింపు వాదనను నిలిపాం.
+
+- Intended sense: Repair the audited countermodel search class must be universal at S5-decidable.tex lines 24-31, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLFILDEC-20260927:OLTENMLFILDEC-001 [checked_supports], content/normal-modal-logic/filtrations/S5-decidable.tex; S5-decidable.tex lines 24-31; countermodel_search_class_must_be_universal; సమాంతర ప్రతినమూనా శోధనను ఏ పరిమిత నమూనాలకైనా కాక S5కు తగిన పరిమిత సార్వత్రిక నమూనాలకే పరిమితం చేసి పక్కనే ప్రకటించాం; నిరూపణల లెక్కింపును, రెండు శాఖల ముగింపు వాదనను నిలిపాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the countermodel branch enumerate only finite universal models appropriate to S5, rather than arbitrary finite models, while preserving the independent proof-enumeration branch?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLFILDEC-001-OCC-001; OLP-0457; OLP-0457-B007; source upstream/content/normal-modal-logic/filtrations/S5-decidable.tex:21-32 bytes 504-1207 SHA-256 f6f07c518a0df3bdcff427979834a918256085715f1353b5b35cc6dafe75d1b1; target translation/content/normal-modal-logic/filtrations/S5-decidable.tex:36 bytes 2166-2234 SHA-256 bcf63971f6a59dc72917a8641602bfb7fced0d287152a4c216f800225d509974; reader page pending.
