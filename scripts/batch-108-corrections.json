@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0459",
+  "source_path": "content/normal-modal-logic/filtrations/euclidean-filtrations.tex",
+  "source_sha256": "904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db",
+  "audit_id": "OLTENMLFILEUC-20260927",
+  "audit_review_path": "evidence/OLP-0459-EUCLIDEAN-FILTRATIONS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "6be0959452ac594c50fa73fad14704b7452e77d59c8e216dab2b3735a9dbd103",
+  "audit_findings_path": "evidence/OLP-0459-EUCLIDEAN-FILTRATIONS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "bd2cf16ecfeefb045c23f02041acac16d35c828a71328d52f5353d90e8b595cc",
+  "previous_corrections": 423,
+  "treatments": {
+    "OLTENMLFILEUC-001": {
+      "target_line": 99,
+      "body_treatment": "సీరియల్, యూక్లిడియన్ అని ప్రకటించిన మొదటి చిత్రంలో w2కు తప్పనిసరి స్వబాణం, R1 వల్ల వడపోత చిత్రంలో [w2]కు సంక్రమించే స్వబాణం చేర్చి రెండు చిత్రాల తరువాత పక్కనే ప్రకటించాం; సత్య గుర్తులు మారలేదు."
+    },
+    "OLTENMLFILEUC-002": {
+      "target_line": 117,
+      "body_treatment": "మోడల్ సంయోజకాల పరంగా సంవృతమైన ఖాళీ సమితి పరిమితమే కనుక అనంతత్వ వాదనను శూన్యం కాని సమితులకు పరిమితం చేసి పక్కనే ప్రకటించాం."
+    },
+    "OLTENMLFILEUC-003": {
+      "target_line": 139,
+      "body_treatment": "మూల సిద్ధాంతం, నిరూపణ అంశాల క్రమం అసమానంగా ఉండగా నిరూపణ అంశాలను సిద్ధాంతంలోని సౌష్ఠవం, సంక్రామకత్వం, యూక్లిడియన్ క్రమానికి అమర్చాం; పనిచేసిన సంక్రామక నిరూపణ, రెండు వ్యాయామాలు యథాతథం. సవరణ పక్కనే ప్రకటించాం."
+    },
+    "OLTENMLFILEUC-004": {
+      "target_line": 28,
+      "body_treatment": "వడపోత నమూనాలో చేర్చాల్సిన రెండో బాణజత చివరలను మూల w2,w5 నుంచి వర్గ లోకాలు [w2],[w5]గా మార్చి పక్కనే ప్రకటించాం; అసలు లోకాల వద్ద Box p/p సత్య పరీక్షను యథాతథం ఉంచాం."
+    }
+  }
+}

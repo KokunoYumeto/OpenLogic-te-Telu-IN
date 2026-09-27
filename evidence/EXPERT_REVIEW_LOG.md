@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 458 of 722 draft units**. This log contains 148 terminology/sense decisions and 423 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 459 of 722 draft units**. This log contains 149 terminology/sense decisions and 427 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3559,6 +3559,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక సాక్షులు ఈ modal పట్టికకు ప్రత్యక్షం కాదు. సూక్ష్మత అనేది R*లో జతలు తక్కువగా ఉండటాన్ని సూచిస్తుంది; quotient W* పరిమాణాన్ని కాదు. 2–4 అంశాల పూర్తి నిరూపణ ఈ విభాగంలో మూలంలాగే వ్యాయామం.
 
 - Please double-check: Please double-check whether “సూక్ష్మతర వడపోత షరతులు C1-C4: సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ ప్రాప్యత” is idiomatic and technically standard for “finer filtration conditions C1-C4 preserving symmetric, transitive and Euclidean accessibility” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T149 — Euclidean filtrations; nonempty modal closure; inherited quotient self-loop
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: యూక్లిడియన్ వడపోతలు; శూన్యం కాని మోడల్ సంవృతత; వర్గ స్వబాణం
+
+- Exact implementation: OLP-0459; normal-modal-logic/filtrations/euclidean-filtrations; content/normal-modal-logic/filtrations/euclidean-filtrations.tex:11 ↔ translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:11 (OLP-0459-B005); printed/PDF page pending; OLP-0459; normal-modal-logic/filtrations/euclidean-filtrations; content/normal-modal-logic/filtrations/euclidean-filtrations.tex:13-23 ↔ translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:13-33 (OLP-0459-B006); printed/PDF page pending; OLP-0459; normal-modal-logic/filtrations/euclidean-filtrations; content/normal-modal-logic/filtrations/euclidean-filtrations.tex:25-56 ↔ translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:35-67 (OLP-0459-B007); printed/PDF page pending; OLP-0459; normal-modal-logic/filtrations/euclidean-filtrations; content/normal-modal-logic/filtrations/euclidean-filtrations.tex:58-86 ↔ translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:69-105 (OLP-0459-B008); printed/PDF page pending; OLP-0459; normal-modal-logic/filtrations/euclidean-filtrations; content/normal-modal-logic/filtrations/euclidean-filtrations.tex:88-93 ↔ translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:107-121 (OLP-0459-B009); printed/PDF page pending; OLP-0459; normal-modal-logic/filtrations/euclidean-filtrations; content/normal-modal-logic/filtrations/euclidean-filtrations.tex:95-104 ↔ translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:123-136 (OLP-0459-B010); printed/PDF page pending; OLP-0459; normal-modal-logic/filtrations/euclidean-filtrations; content/normal-modal-logic/filtrations/euclidean-filtrations.tex:106-127 ↔ translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:138-174 (OLP-0459-B011); printed/PDF page pending; OLP-0459; normal-modal-logic/filtrations/euclidean-filtrations; content/normal-modal-logic/filtrations/euclidean-filtrations.tex:129-131 ↔ translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:176-179 (OLP-0459-B012); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P022, PDF 84, printed 77, Implication and equivalence headings; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: పూర్వ TE-T114లోని యూక్లిడియన్, సీరియల్, సౌష్ఠవ/సంక్రామక రూపాలు, TE-T142 modal closure, TE-T143/144 వడపోత నిర్మాణాన్ని కొనసాగించాం. రెండు చిత్రాల్లో w2 స్వబాణం, quotient చివరల బ్రాకెట్లు, శూన్యం కాని modal సంవృతత, నిరూపణ అంశ క్రమం నాలుగు ప్రకటిత మూల సవరణలతో నియంత్రించబడ్డాయి. Euclidean is established edition borrowing; Gamma, R/R*, worlds, modal operators, TikZ node names, tags and references retain source identities.
+
+- Alternatives: మొదటి నమూనా w2 స్వబాణం, వడపోత [w2] స్వబాణం, quotient బాణాల బ్రాకెట్లు, శూన్యం కాని modal సంవృతత, సిద్ధాంత-నిరూపణ అంశ క్రమాన్ని నాలుగు మూల సవరణలతో ప్రకటించి సరిచేయడం; పని చేసిన సంక్రామక నిరూపణ, రెండు వ్యాయామాలను నిలపడం (ఎంపిక); w2కు బయటకు బాణం లేకుండానే చిత్రం సీరియల్/యూక్లిడియన్ అని చెప్పడం (తిరస్కరణ); పాత లోకాలు w2,w5నే వడపోత బాణాల చివరలుగా చూపడం (తిరస్కరణ); ఖాళీ modal సంవృత సమితి కూడా అనంతమని చెప్పడం (తిరస్కరణ); సంక్రామక నిరూపణను సిద్ధాంతంలోని సౌష్ఠవ అంశానికి అంటించడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు modal Euclidean వడపోతకు ప్రత్యక్ష సాంకేతిక పదం/సిద్ధాంతం ఇవ్వవు. సౌష్ఠవ, యూక్లిడియన్ శాఖల పూర్తి నిరూపణ ఈ మూల విభాగంలోనే వ్యాయామాలు; చిత్రాలు ఇంకా TeX render ద్వారా దృశ్యంగా తనిఖీ కాలేదు.
+
+- Please double-check: Please double-check whether “యూక్లిడియన్ వడపోతలు; శూన్యం కాని మోడల్ సంవృతత; వర్గ స్వబాణం” is idiomatic and technically standard for “Euclidean filtrations; nonempty modal closure; inherited quotient self-loop” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -13711,3 +13735,99 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Does the countermodel branch enumerate only finite universal models appropriate to S5, rather than arbitrary finite models, while preserving the independent proof-enumeration branch?
+
+## REV-OLTENMLFILEUC-001 — OLTENMLFILEUC-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: సీరియల్, యూక్లిడియన్ అని ప్రకటించిన మొదటి చిత్రంలో w2కు తప్పనిసరి స్వబాణం, R1 వల్ల వడపోత చిత్రంలో [w2]కు సంక్రమించే స్వబాణం చేర్చి రెండు చిత్రాల తరువాత పక్కనే ప్రకటించాం; సత్య గుర్తులు మారలేదు.
+
+- Exact implementation: OLP-0459; normal-modal-logic/filtrations/euclidean-filtrations; euclidean-filtrations.tex lines 25-86, both figure diagrams ↔ translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:99 (OLP-0459-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLFILEUC-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: సీరియల్, యూక్లిడియన్ అని ప్రకటించిన మొదటి చిత్రంలో w2కు తప్పనిసరి స్వబాణం, R1 వల్ల వడపోత చిత్రంలో [w2]కు సంక్రమించే స్వబాణం చేర్చి రెండు చిత్రాల తరువాత పక్కనే ప్రకటించాం; సత్య గుర్తులు మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Do both diagrams show the w2 and [w2] self-loops required for the claimed original serial/Euclidean relation and the filtration R1 inheritance, without altering p or Box p truth labels?
+
+## REV-OLTENMLFILEUC-002 — OLTENMLFILEUC-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: మోడల్ సంయోజకాల పరంగా సంవృతమైన ఖాళీ సమితి పరిమితమే కనుక అనంతత్వ వాదనను శూన్యం కాని సమితులకు పరిమితం చేసి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0459; normal-modal-logic/filtrations/euclidean-filtrations; euclidean-filtrations.tex lines 88-93; preliminaries.tex lines 20-26 ↔ translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:117 (OLP-0459-B009); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLFILEUC-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: మోడల్ సంయోజకాల పరంగా సంవృతమైన ఖాళీ సమితి పరిమితమే కనుక అనంతత్వ వాదనను శూన్యం కాని సమితులకు పరిమితం చేసి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the infinite modal-closure claim explicitly exclude the empty set while preserving the warning that the construction gives no immediate finite-model bound?
+
+## REV-OLTENMLFILEUC-003 — OLTENMLFILEUC-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: మూల సిద్ధాంతం, నిరూపణ అంశాల క్రమం అసమానంగా ఉండగా నిరూపణ అంశాలను సిద్ధాంతంలోని సౌష్ఠవం, సంక్రామకత్వం, యూక్లిడియన్ క్రమానికి అమర్చాం; పనిచేసిన సంక్రామక నిరూపణ, రెండు వ్యాయామాలు యథాతథం. సవరణ పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0459; normal-modal-logic/filtrations/euclidean-filtrations; euclidean-filtrations.tex lines 99-125 ↔ translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:139 (OLP-0459-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLFILEUC-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: మూల సిద్ధాంతం, నిరూపణ అంశాల క్రమం అసమానంగా ఉండగా నిరూపణ అంశాలను సిద్ధాంతంలోని సౌష్ఠవం, సంక్రామకత్వం, యూక్లిడియన్ క్రమానికి అమర్చాం; పనిచేసిన సంక్రామక నిరూపణ, రెండు వ్యాయామాలు యథాతథం. సవరణ పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Do the proof cases now follow the theorem order symmetry, transitivity, Euclideanness, with only transitivity worked and the other two still exercises?
+
+## REV-OLTENMLFILEUC-004 — OLTENMLFILEUC-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: వడపోత నమూనాలో చేర్చాల్సిన రెండో బాణజత చివరలను మూల w2,w5 నుంచి వర్గ లోకాలు [w2],[w5]గా మార్చి పక్కనే ప్రకటించాం; అసలు లోకాల వద్ద Box p/p సత్య పరీక్షను యథాతథం ఉంచాం.
+
+- Exact implementation: OLP-0459; normal-modal-logic/filtrations/euclidean-filtrations; euclidean-filtrations.tex lines 20-23 ↔ translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:28 (OLP-0459-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLFILEUC-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: వడపోత నమూనాలో చేర్చాల్సిన రెండో బాణజత చివరలను మూల w2,w5 నుంచి వర్గ లోకాలు [w2],[w5]గా మార్చి పక్కనే ప్రకటించాం; అసలు లోకాల వద్ద Box p/p సత్య పరీక్షను యథాతథం ఉంచాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Are the newly forced quotient arrows described between [w2] and [w5], while the Box p at w2 and not-p at w5 checks remain at original worlds?

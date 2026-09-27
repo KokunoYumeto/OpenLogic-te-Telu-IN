@@ -1,0 +1,181 @@
+% Part: normal-modal-logic
+% Chapter: filtrations
+% Section: euclidean-filtrations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{fil}{euc}
+
+\olsection{యూక్లిడియన్ నమూనాల వడపోతలు}
+
+\olref[acc]{sec}లోని విధానం యూక్లిడియన్, లేదా
+సీరియల్-యూక్లిడియన్ నమూనాల విషయంలో పనిచేయదు.
+\olref{fig:ser-eucl} పైభాగంలోని నమూనాను చూడండి;
+అది యూక్లిడియన్ కూడా, సీరియల్ కూడా. $\Gamma =
+\{p, \Box p \}$ అనుకుందాం. $\Gamma$ ద్వారా వడపోత
+చేసినప్పుడు $[w_1] = [w_3]$: ఎందుకంటే~$\Gamma$పై
+ఏకీభవించే లోకాలు $w_1$, $w_3$ మాత్రమే.
+\olref{fig:ser-eucl2}లో చూపినట్లుగా, ఏ వడపోతలోనైనా
+$\mModel{M}$ నుంచి సంక్రమించిన బాణం కూడా ఉంటుంది.
+ఆ నమూనా యూక్లిడియన్ కాదు. దానిని యూక్లిడియన్‌గా
+మార్చడానికి అదనపు బాణాలు చేర్చలేం. $[w_2]$,
+$[w_4]$ మధ్య రెండు దిశల్లో బాణాలు, ఆపై $[w_2]$,
+$[w_5]$ మధ్య కూడా రెండు దిశల్లో బాణాలు చేర్చాల్సి
+వస్తుంది. కానీ~$w_2$ వద్ద $\Box
+p$ సత్యం కావాలి;~$w_5$ వద్ద $p$ అసత్యం.
+\sourcecorrection{OLTENMLFILEUC-004}{స్థిర మూలం
+  రెండో జత బాణాల చివరలను $w_2$, $w_5$గా
+  రాసింది. ఇక్కడ బాణాలు వడపోత నమూనాలోనివి
+  కనుక చివరలు $[w_2]$, $[w_5]$ కావాలి;
+  తరువాతి సత్య పరీక్ష మాత్రం అసలు లోకాల
+  $w_2$, $w_5$ వద్దనే ఉంటుంది.}
+
+\begin{figure}[htpb]
+  \centering
+  \begin{tikzpicture}[modal]
+    \node[world] (w1)
+          [label={left: \mFalse{p}},
+            label={below: $\mSat{{}}{\Box p}$}] {$w_1$};
+    \node[world] (w2)
+          [label={right: \mTrue{p}},
+            label = {below: $\mSat{{}}{\Box p}$},
+            right=of w1] {$w_2$};
+    \draw[->] (w1) to (w2);
+    \draw[reflexive above] (w2) to (w2);
+    \node[world] (w3)
+          [label={left: \mFalse{p}},
+            label={below: $\mSat{{}}{\Box p}$},
+            below=of w1] {$w_3$};
+    \node[world] (w4)
+          [label={right:\mTrue{p}},
+            label={below: $\mSat/{{}}{\Box p}$},
+            right=of w3] {$w_4$};
+    \draw[->] (w3) to (w4);
+    \draw[reflexive above] (w4) to (w4);
+    \node[world] (w5)
+          [label={right: \mFalse{p}},
+            label=below:$\mSat/{{}}{\Box p}$,
+            right=of w4] {$w_5$};
+    \draw[->, bend left] (w4) to (w5);
+    \draw[->, bend left] (w5) to (w4);
+    \draw[reflexive above] (w5) to (w5);
+  \end{tikzpicture}
+  \caption{సీరియల్, యూక్లిడియన్ నమూనా.}
+  \ollabel{fig:ser-eucl}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \begin{tikzpicture}[modal,every text node part/.style={align=center}]
+    \node[world] (w1)
+          [label={left: \mFalse{p}},
+            label={right:$[w_1]=[w_3]$},
+            label={below: $\mSat{{}}{\Box p}$}] {$[w_1]$};
+    \node[world] (w2)
+         [label={right: \mTrue{p}},
+           label = {below: $\mSat{{}}{\Box p}$},
+           right=of w1, yshift=1.5cm] {$[w_2]$};
+    \draw[->] (w1) to (w2);
+    \draw[reflexive above] (w2) to (w2);
+    \node[world] (w4)
+         [label={right:\mTrue{p}},
+           label={below: $\mSat/{{}}{\Box p}$},
+           right=of w1,yshift=-1.5cm] {$[w_4]$};
+    \draw[->] (w1) to (w4);
+    \draw[reflexive above] (w4) to (w4);
+    \node[world] (w5)
+         [label={right: \mFalse{p}},
+             label=below:$\mSat/{{}}{\Box p}$,
+             right=of w4] {$[w_5]$};
+    \draw[->, bend left] (w4) to (w5);
+    \draw[->, bend left] (w5) to (w4);
+    \draw[reflexive above] (w5) to (w5);
+  \end{tikzpicture}
+  \caption{\olref{fig:ser-eucl}లోని నమూనా వడపోత.}
+  \ollabel{fig:ser-eucl2}
+\end{figure}
+\sourcecorrection{OLTENMLFILEUC-001}{స్థిర మూలంలోని
+  మొదటి చిత్రంలో $w_2$కు బయటకు వెళ్లే బాణం లేదు;
+  కాబట్టి అది ప్రకటించినట్లు సీరియల్ కాదు,
+  $w_1Rw_2$ ఉన్నందున యూక్లిడియన్ కూడా కాదు.
+  అవసరమైన $w_2$ స్వబాణాన్ని మొదటి చిత్రంలో,
+  దాని వర్గానికి సంక్రమించే స్వబాణాన్ని రెండో
+  చిత్రంలో చేర్చాం. $p$, $\Box p$ గుర్తులు మారవు.}
+
+ముఖ్యంగా, యూక్లిడియన్ వడపోత పొందడానికి,
+\tetoken{ఉపసూత్రాల}{!!{formula}s} పరంగా సంవృతమైన
+ఏకపక్ష $\Gamma$ సమితుల ద్వారా వడపోతలను
+పరిగణించడం సరిపోదు. బదులుగా
+\emph{మోడల్ సంయోజకాల పరంగా సంవృతమైన}
+$\Gamma$ సమితులను తీసుకోవాలి
+(\olref[pre]{defn:modallyclosed} చూడండి).
+అలాంటి శూన్యం కాని వాక్య సమితులు అనంతం;
+అందువల్ల వాటి వల్ల సంబంధిత వ్యవస్థకు పరిమిత
+నమూనా ధర్మం లేదా నిర్ణేయత వెంటనే లభించవు.
+\sourcecorrection{OLTENMLFILEUC-002}{స్థిర మూలం
+  మోడల్ సంయోజకాల పరంగా సంవృతమైన ప్రతి సమితీ
+  అనంతమని చెప్పింది. ఖాళీ సమితి కూడా ఆ
+  నిర్వచనాన్ని తృప్తిపరుస్తుంది; అది పరిమితమే.
+  అందుకే ``శూన్యం కాని'' అని స్పష్టం చేశాం.}
+
+\begin{thm}\ollabel{thm:modal-closed-filt}
+  $\Gamma$ మోడల్ సంయోజకాల పరంగా సంవృతం,
+  $\mModel{M}=\tuple{W,R,V}$ ఒక నమూనా,
+  $\mModel{M^*} = \tuple{W^*,R^*,V^*}$ అనేది
+  $\mModel{M}$కు చేసే అత్యంత స్థూల వడపోత అనుకుందాం.
+  \begin{enumerate}
+  \item $\mModel{M}$ సౌష్ఠవమైతే
+    $\mModel{M^*}$ కూడా సౌష్ఠవమే.
+  \item $\mModel{M}$ సంక్రామకమైతే
+    $\mModel{M^*}$ కూడా సంక్రామకమే.
+  \item $\mModel{M}$ యూక్లిడియన్ అయితే
+    $\mModel{M^*}$ కూడా యూక్లిడియన్.
+  \end{enumerate}
+\end{thm}
+
+\begin{proof}
+\sourcecorrection{OLTENMLFILEUC-003}{స్థిర మూల
+  సిద్ధాంతంలో అంశాల క్రమం సౌష్ఠవం, సంక్రామకత్వం,
+  యూక్లిడియన్; కానీ నిరూపణలో ముందుగా సంక్రామకత్వం,
+  తరువాత యూక్లిడియన్, చివర సౌష్ఠవం ఉన్నాయి.
+  అదే నిరూపణను, అదే రెండు వ్యాయామాలను సిద్ధాంత
+  అంశాల క్రమానికి అనుగుణంగా ఇక్కడ అమర్చాం.}
+\begin{enumerate}
+  \item వ్యాయామం. అన్ని సౌష్ఠవ నమూనాల్లో
+    \Ax{B}, $\Ax{B_\Diamond}$ చెల్లుబాటవుతాయని
+    వాడండి.
+  \item $\mModel{M^*}$ అత్యంత స్థూల వడపోత అయితే,
+    నిర్వచనం ప్రకారం $R^*[u][v]$ అయితే,
+    అప్పుడు మాత్రమే $C_1(u,v)$. సంక్రామకత్వం కోసం
+    $C_1(u,v)$, $C_1(v,w)$ అనుకుందాం; $C_1(u,w)$
+    చూపాలి. \iftag{prvBox}{$\mSat{M}{\Box !A}[u]$
+      అనుకుందాం. సంక్రామక నమూనాలన్నింటిలో
+      \Ax{4} చెల్లుబాటవుతుంది కనుక
+      $\mSat{M}{\Box\Box!A}[u]$. మోడల్ సంవృతత
+      వల్ల $\Box\Box!A \in \Gamma$ కూడా; కనుక
+      $C_1(u,v)$ వల్ల $\mSat{M}{\Box!A}[v]$;
+      $C_1(v,w)$ వల్ల $\mSat{M}{!A}[w]$ కూడా.}{}\iftag{prvDiamond}{$\mSat{M}{!A}[w]$
+      అనుకుందాం. మోడల్ సంవృతత వల్ల
+      $\Diamond !A \in \Gamma$ కనుక $C_1(v,w)$
+      నుంచి $\mSat{M}{\Diamond !A}[v]$.
+      మోడల్ సంవృతత వల్ల
+      $\Diamond\Diamond!A \in \Gamma$ కూడా;
+      కనుక $C_1(u,v)$ నుంచి
+      $\mSat{M}{\Diamond\Diamond !A}[u]$.
+      సంక్రామక నమూనాలన్నింటిలో
+      $\Ax{4}_\Diamond$ చెల్లుబాటవుతుంది కనుక
+      $\mSat{M}{\Diamond!A}[u]$.}{}
+  \item వ్యాయామం. అన్ని యూక్లిడియన్ నమూనాల్లో
+    \Ax{5}, $\Ax{5_\Diamond}$ చెల్లుబాటవుతాయని
+    వాడండి.
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[nml][fil][euc]{thm:modal-closed-filt}
+  నిరూపణను పూర్తి చేయండి.
+\end{prob}
+
+\end{document}

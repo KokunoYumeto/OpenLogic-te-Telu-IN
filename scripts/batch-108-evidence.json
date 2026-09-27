@@ -1,0 +1,41 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "108",
+  "unit_id": "OLP-0459",
+  "unit_order": 459,
+  "source_path": "content/normal-modal-logic/filtrations/euclidean-filtrations.tex",
+  "blocks": 13,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12],
+  "previous_segments": 6971,
+  "previous_terms": 148,
+  "expected_corrections": 427,
+  "canon_default": ["TE-P008", "TE-P010", "TE-P018", "TE-P022", "TE-P024"],
+  "canon_by_block": {
+    "5": ["TE-P010", "TE-P018", "TE-P024"],
+    "6": ["TE-P008", "TE-P010", "TE-P018", "TE-P024"],
+    "7": ["TE-P008", "TE-P010", "TE-P018"],
+    "8": ["TE-P008", "TE-P010", "TE-P018", "TE-P022"],
+    "9": ["TE-P008", "TE-P010", "TE-P018", "TE-P024"],
+    "10": ["TE-P010", "TE-P018", "TE-P024"],
+    "11": ["TE-P010", "TE-P018", "TE-P022", "TE-P024"],
+    "12": ["TE-P024"]
+  },
+  "corrections_by_block": {
+    "6": ["OLTENMLFILEUC-004"],
+    "8": ["OLTENMLFILEUC-001"],
+    "9": ["OLTENMLFILEUC-002"],
+    "11": ["OLTENMLFILEUC-003"]
+  },
+  "consultation_phase": "స్థిర యూక్లిడియన్ వడపోత మూలం, రెండు చిత్రాల బాణాలు/సత్య గుర్తులు, తెలుగు లక్ష్యం, modal closure నిర్వచనం, స్థానిక సాధారణ సంబంధ/తుల్యత/తర్క పేజీలను ఎదురెదురు చూశాం; చిత్ర మరమ్మతు, అంశ క్రమం మూల గణిత షరతులతో తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P008/010 సాధారణ సమితి/సంబంధానికి, TE-P022 సాధారణ తుల్యతకు, TE-P018/024 సాధారణ తర్క/వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. యూక్లిడియన్ వడపోత, 4/B/5 స్కీమాలు, చిత్ర ప్రాప్యత, modal closure ఫలితం స్థానిక పేజీల్లో ప్రత్యక్షంగా లేవు.",
+  "term_decision": {
+    "term_id": "TE-T149",
+    "source_term": "Euclidean filtrations; nonempty modal closure; inherited quotient self-loop",
+    "telugu": "యూక్లిడియన్ వడపోతలు; శూన్యం కాని మోడల్ సంవృతత; వర్గ స్వబాణం",
+    "status": "native_general_relation_logic_register_attested_euclidean_filtration_source_controlled_with_disclosed_repairs",
+    "passages": ["TE-P008", "TE-P010", "TE-P018", "TE-P022", "TE-P024"],
+    "basis": "పూర్వ TE-T114లోని యూక్లిడియన్, సీరియల్, సౌష్ఠవ/సంక్రామక రూపాలు, TE-T142 modal closure, TE-T143/144 వడపోత నిర్మాణాన్ని కొనసాగించాం. రెండు చిత్రాల్లో w2 స్వబాణం, quotient చివరల బ్రాకెట్లు, శూన్యం కాని modal సంవృతత, నిరూపణ అంశ క్రమం నాలుగు ప్రకటిత మూల సవరణలతో నియంత్రించబడ్డాయి.",
+    "uncertainty": "స్థానిక సాక్షులు modal Euclidean వడపోతకు ప్రత్యక్ష సాంకేతిక పదం/సిద్ధాంతం ఇవ్వవు. సౌష్ఠవ, యూక్లిడియన్ శాఖల పూర్తి నిరూపణ ఈ మూల విభాగంలోనే వ్యాయామాలు; చిత్రాలు ఇంకా TeX render ద్వారా దృశ్యంగా తనిఖీ కాలేదు.",
+    "borrowing": "Euclidean is established edition borrowing; Gamma, R/R*, worlds, modal operators, TikZ node names, tags and references retain source identities."
+  }
+}

@@ -911,6 +911,16 @@ locations['TE-T148']=[
  L('content/normal-modal-logic/filtrations/more-filtrations.tex',113,129,131,149,'Exercise.','వ్యాయామం.'),
  L('content/normal-modal-logic/filtrations/more-filtrations.tex',131,133,151,154,'Complete the proof','నిరూపణను')
 ];
+locations['TE-T149']=[
+ L('content/normal-modal-logic/filtrations/euclidean-filtrations.tex',11,11,11,11,'Filtrations of Euclidean Models','యూక్లిడియన్ నమూనాల వడపోతలు'),
+ L('content/normal-modal-logic/filtrations/euclidean-filtrations.tex',13,23,13,33,'euclidean','యూక్లిడియన్'),
+ L('content/normal-modal-logic/filtrations/euclidean-filtrations.tex',25,56,35,67,'A serial and euclidean model.','సీరియల్, యూక్లిడియన్ నమూనా.'),
+ L('content/normal-modal-logic/filtrations/euclidean-filtrations.tex',58,86,69,106,'filtration of the model','నమూనా వడపోత'),
+ L('content/normal-modal-logic/filtrations/euclidean-filtrations.tex',88,93,108,121,'modally closed','మోడల్ సంయోజకాల పరంగా సంవృతమైన'),
+ L('content/normal-modal-logic/filtrations/euclidean-filtrations.tex',95,104,123,136,'coarsest filtration','అత్యంత స్థూల వడపోత'),
+ L('content/normal-modal-logic/filtrations/euclidean-filtrations.tex',106,127,138,174,'transitivity','సంక్రామకత్వం'),
+ L('content/normal-modal-logic/filtrations/euclidean-filtrations.tex',129,131,176,179,'Complete the proof','నిరూపణను పూర్తి చేయండి')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -1045,6 +1055,7 @@ alternatives['TE-T145']=['పరిమిత Gammaలోనే ప్రతి �
 alternatives['TE-T146']=['Kకు నమూనా వర్గ ఆంక్ష లేకపోవడం, సార్వత్రిక నమూనా వడపోతలో R1 వల్ల సార్వత్రికత, S5కు తుల్యతా వర్గ పరిమితి, రెండు వ్యాయామ భేదాలను నిలిపి, K నిరూపణలో ఒక వర్గ సూచన సవరించడం (ఎంపిక)','పాత wనే వడపోత లోకంగా వాడడం (తిరస్కరణ)','ఏ L నమూనాకు చేసిన ప్రతి వడపోత L నమూనానే అని సామాన్యీకరించడం (తిరస్కరణ)','ఫ్రేమ్ చెల్లుబాటు సమానత్వమే స్థానిక సత్య మార్పును వేరే వాదన లేకుండా తక్షణం ఇస్తుందని చెప్పడం (తిరస్కరణ)','సౌష్ఠవం/సంక్రామకత్వం/యూక్లిడియన్ కూడా ప్రతి వడపోతలో నిలుస్తాయని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T147']=['నిరూపణల లెక్కింపు, పరిమిత సార్వత్రిక నమూనాల ప్రతినమూనా శోధనను సమాంతరంగా నడిపి, S5 నిర్ణాయకత్వం మరియు పరిమిత నమూనా ధర్మం వల్ల ముగింపును చూపడం; మూలంలోని నమూనా వర్గ లోపాన్ని పక్కనే ప్రకటించి సరిచేయడం (ఎంపిక)','S5కు చెందని అన్ని పరిమిత నమూనాలను ప్రతినమూనాలుగా అనుమతించడం (తిరస్కరణ)','పరిమిత ప్రతినమూనా శోధన ఒక్కటే ఎప్పుడూ నిర్ణయ ప్రక్రియ అని చెప్పడం (తిరస్కరణ)','నిరూపణ శాఖ, నమూనా శాఖలను క్రమంగా మాత్రమే నడిపి నిలుపు సమస్యను తిరిగి తెచ్చుకోవడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలు S5 నిర్ణేయతకు ప్రత్యక్ష నిరూపణ అని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T148']=['C1..C4 పట్టికలో అన్ని Box/Diamond guarded దిశలను నిలిపి, జతల చేరిక తగ్గితే సూక్ష్మత పెరుగుతుందని, నాలుగు వడపోత నిర్వచనాలు వాటి ధర్మాలకు సరిపోతాయని, మూడు శాఖలు మూలంలాగే వ్యాయామాలేనని చెప్పడం (ఎంపిక)','సూక్ష్మతను W*లో లోకాల సంఖ్యతో కలపడం (తిరస్కరణ)','C3/C4లో Box/Diamond బదిలీ దిశలను తారుమారు చేయడం (తిరస్కరణ)','వ్యాయామ శాఖలను పూర్తిగా నిరూపించామని ప్రకటించడం (తిరస్కరణ)','స్థానిక సాధారణ సంబంధ పేజీనే modal C-షరతులకు ప్రత్యక్ష సాక్ష్యంగా చూపడం (తిరస్కరణ)'];
+alternatives['TE-T149']=['మొదటి నమూనా w2 స్వబాణం, వడపోత [w2] స్వబాణం, quotient బాణాల బ్రాకెట్లు, శూన్యం కాని modal సంవృతత, సిద్ధాంత-నిరూపణ అంశ క్రమాన్ని నాలుగు మూల సవరణలతో ప్రకటించి సరిచేయడం; పని చేసిన సంక్రామక నిరూపణ, రెండు వ్యాయామాలను నిలపడం (ఎంపిక)','w2కు బయటకు బాణం లేకుండానే చిత్రం సీరియల్/యూక్లిడియన్ అని చెప్పడం (తిరస్కరణ)','పాత లోకాలు w2,w5నే వడపోత బాణాల చివరలుగా చూపడం (తిరస్కరణ)','ఖాళీ modal సంవృత సమితి కూడా అనంతమని చెప్పడం (తిరస్కరణ)','సంక్రామక నిరూపణను సిద్ధాంతంలోని సౌష్ఠవ అంశానికి అంటించడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -1060,7 +1071,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T148 record the Batch 025--Batch 107 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T149 record the Batch 025--Batch 108 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1397,6 +1408,10 @@ const correctionQuestions={
  ,'OLTENMLFILEXF-002':'Does the first example restrict the even-natural valuation to positive world set W, given that this edition includes zero in Nat, without changing any depicted positive-world truth value?'
  ,'OLTENMLFILFMP-001':'Does the K proof put the filtered truth of A at quotient world [w], rather than original world w, exactly as the preceding truth-preservation theorem requires?'
  ,'OLTENMLFILDEC-001':'Does the countermodel branch enumerate only finite universal models appropriate to S5, rather than arbitrary finite models, while preserving the independent proof-enumeration branch?'
+ ,'OLTENMLFILEUC-001':'Do both diagrams show the w2 and [w2] self-loops required for the claimed original serial/Euclidean relation and the filtration R1 inheritance, without altering p or Box p truth labels?'
+ ,'OLTENMLFILEUC-002':'Does the infinite modal-closure claim explicitly exclude the empty set while preserving the warning that the construction gives no immediate finite-model bound?'
+ ,'OLTENMLFILEUC-003':'Do the proof cases now follow the theorem order symmetry, transitivity, Euclideanness, with only transitivity worked and the other two still exercises?'
+ ,'OLTENMLFILEUC-004':'Are the newly forced quotient arrows described between [w2] and [w5], while the Box p at w2 and not-p at w5 checks remain at original worlds?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

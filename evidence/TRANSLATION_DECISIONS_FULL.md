@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **458 of 722 source units drafted**. This readable view contains all 571 decisions and 1303 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **459 of 722 source units drafted**. This readable view contains all 576 decisions and 1315 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4503,6 +4503,39 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T148-OCC-005; OLP-0458; OLP-0458-B009; source upstream/content/normal-modal-logic/filtrations/more-filtrations.tex:95-111 bytes 3876-4705 SHA-256 6b103381a08ffabe6a5add8967f9ea83fa5dfb97ec349cd817f372fd752cdc0b; target translation/content/normal-modal-logic/filtrations/more-filtrations.tex:110-129 bytes 6245-7361 SHA-256 fcab7d92c7ba2c2ce96efab02e8499543144468f7453d4f5622124663bd430d9; reader page pending.
   - te-Telu-IN-TE-T148-OCC-006; OLP-0458; OLP-0458-B010; source upstream/content/normal-modal-logic/filtrations/more-filtrations.tex:113-129 bytes 4706-5551 SHA-256 6b103381a08ffabe6a5add8967f9ea83fa5dfb97ec349cd817f372fd752cdc0b; target translation/content/normal-modal-logic/filtrations/more-filtrations.tex:131-149 bytes 7362-8450 SHA-256 fcab7d92c7ba2c2ce96efab02e8499543144468f7453d4f5622124663bd430d9; reader page pending.
   - te-Telu-IN-TE-T148-OCC-007; OLP-0458; OLP-0458-B011; source upstream/content/normal-modal-logic/filtrations/more-filtrations.tex:131-133 bytes 5552-5645 SHA-256 6b103381a08ffabe6a5add8967f9ea83fa5dfb97ec349cd817f372fd752cdc0b; target translation/content/normal-modal-logic/filtrations/more-filtrations.tex:151-154 bytes 8451-8587 SHA-256 fcab7d92c7ba2c2ce96efab02e8499543144468f7453d4f5622124663bd430d9; reader page pending.
+
+## te-Telu-IN-TE-T149 — Euclidean filtrations; nonempty modal closure; inherited quotient self-loop
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: యూక్లిడియన్ వడపోతలు; శూన్యం కాని మోడల్ సంవృతత; వర్గ స్వబాణం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “Euclidean filtrations; nonempty modal closure; inherited quotient self-loop” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు modal Euclidean వడపోతకు ప్రత్యక్ష సాంకేతిక పదం/సిద్ధాంతం ఇవ్వవు. సౌష్ఠవ, యూక్లిడియన్ శాఖల పూర్తి నిరూపణ ఈ మూల విభాగంలోనే వ్యాయామాలు; చిత్రాలు ఇంకా TeX render ద్వారా దృశ్యంగా తనిఖీ కాలేదు.
+
+- Rationale: పూర్వ TE-T114లోని యూక్లిడియన్, సీరియల్, సౌష్ఠవ/సంక్రామక రూపాలు, TE-T142 modal closure, TE-T143/144 వడపోత నిర్మాణాన్ని కొనసాగించాం. రెండు చిత్రాల్లో w2 స్వబాణం, quotient చివరల బ్రాకెట్లు, శూన్యం కాని modal సంవృతత, నిరూపణ అంశ క్రమం నాలుగు ప్రకటిత మూల సవరణలతో నియంత్రించబడ్డాయి. Euclidean is established edition borrowing; Gamma, R/R*, worlds, modal operators, TikZ node names, tags and references retain source identities.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P022 [checked_context_only], PDF page 84; printed page 77; Implication and equivalence headings; Direct implication and equivalence terminology in propositional logic. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: మొదటి నమూనా w2 స్వబాణం, వడపోత [w2] స్వబాణం, quotient బాణాల బ్రాకెట్లు, శూన్యం కాని modal సంవృతత, సిద్ధాంత-నిరూపణ అంశ క్రమాన్ని నాలుగు మూల సవరణలతో ప్రకటించి సరిచేయడం; పని చేసిన సంక్రామక నిరూపణ, రెండు వ్యాయామాలను నిలపడం [viable_alternative: ఎంపిక] | w2కు బయటకు బాణం లేకుండానే చిత్రం సీరియల్/యూక్లిడియన్ అని చెప్పడం [viable_alternative: తిరస్కరణ] | పాత లోకాలు w2,w5నే వడపోత బాణాల చివరలుగా చూపడం [viable_alternative: తిరస్కరణ] | ఖాళీ modal సంవృత సమితి కూడా అనంతమని చెప్పడం [viable_alternative: తిరస్కరణ] | సంక్రామక నిరూపణను సిద్ధాంతంలోని సౌష్ఠవ అంశానికి అంటించడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “యూక్లిడియన్ వడపోతలు; శూన్యం కాని మోడల్ సంవృతత; వర్గ స్వబాణం” is idiomatic and technically standard for “Euclidean filtrations; nonempty modal closure; inherited quotient self-loop” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T149-OCC-001; OLP-0459; OLP-0459-B005; source upstream/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:11 bytes 191-235 SHA-256 904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db; target translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:11 bytes 191-278 SHA-256 3f58269b78ab800ed649d0e78e9fc06e61d52cbcd339cc318306185b390211ca; reader page pending.
+  - te-Telu-IN-TE-T149-OCC-002; OLP-0459; OLP-0459-B006; source upstream/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:13-23 bytes 236-990 SHA-256 904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db; target translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:13-33 bytes 279-2263 SHA-256 3f58269b78ab800ed649d0e78e9fc06e61d52cbcd339cc318306185b390211ca; reader page pending.
+  - te-Telu-IN-TE-T149-OCC-003; OLP-0459; OLP-0459-B007; source upstream/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:25-56 bytes 991-2065 SHA-256 904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db; target translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:35-67 bytes 2264-3409 SHA-256 3f58269b78ab800ed649d0e78e9fc06e61d52cbcd339cc318306185b390211ca; reader page pending.
+  - te-Telu-IN-TE-T149-OCC-004; OLP-0459; OLP-0459-B008; source upstream/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:58-86 bytes 2066-3135 SHA-256 904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db; target translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:69-105 bytes 3410-5263 SHA-256 3f58269b78ab800ed649d0e78e9fc06e61d52cbcd339cc318306185b390211ca; reader page pending.
+  - te-Telu-IN-TE-T149-OCC-005; OLP-0459; OLP-0459-B009; source upstream/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:88-93 bytes 3136-3546 SHA-256 904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db; target translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:107-121 bytes 5264-6691 SHA-256 3f58269b78ab800ed649d0e78e9fc06e61d52cbcd339cc318306185b390211ca; reader page pending.
+  - te-Telu-IN-TE-T149-OCC-006; OLP-0459; OLP-0459-B010; source upstream/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:95-104 bytes 3547-3968 SHA-256 904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db; target translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:123-136 bytes 6692-7463 SHA-256 3f58269b78ab800ed649d0e78e9fc06e61d52cbcd339cc318306185b390211ca; reader page pending.
+  - te-Telu-IN-TE-T149-OCC-007; OLP-0459; OLP-0459-B011; source upstream/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:106-127 bytes 3969-5111 SHA-256 904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db; target translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:138-174 bytes 7464-10081 SHA-256 3f58269b78ab800ed649d0e78e9fc06e61d52cbcd339cc318306185b390211ca; reader page pending.
+  - te-Telu-IN-TE-T149-OCC-008; OLP-0459; OLP-0459-B012; source upstream/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:129-131 bytes 5112-5206 SHA-256 904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db; target translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:176-179 bytes 10082-10219 SHA-256 3f58269b78ab800ed649d0e78e9fc06e61d52cbcd339cc318306185b390211ca; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -15581,3 +15614,107 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLFILDEC-001-OCC-001; OLP-0457; OLP-0457-B007; source upstream/content/normal-modal-logic/filtrations/S5-decidable.tex:21-32 bytes 504-1207 SHA-256 f6f07c518a0df3bdcff427979834a918256085715f1353b5b35cc6dafe75d1b1; target translation/content/normal-modal-logic/filtrations/S5-decidable.tex:36 bytes 2166-2234 SHA-256 bcf63971f6a59dc72917a8641602bfb7fced0d287152a4c216f800225d509974; reader page pending.
+
+## te-Telu-IN-OLTENMLFILEUC-001 — OLTENMLFILEUC-001: serial euclidean diagram missing forced self loop
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: సీరియల్, యూక్లిడియన్ అని ప్రకటించిన మొదటి చిత్రంలో w2కు తప్పనిసరి స్వబాణం, R1 వల్ల వడపోత చిత్రంలో [w2]కు సంక్రమించే స్వబాణం చేర్చి రెండు చిత్రాల తరువాత పక్కనే ప్రకటించాం; సత్య గుర్తులు మారలేదు.
+
+- Intended sense: Repair the audited serial euclidean diagram missing forced self loop at euclidean-filtrations.tex lines 25-86, both figure diagrams, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLFILEUC-20260927:OLTENMLFILEUC-001 [checked_supports], content/normal-modal-logic/filtrations/euclidean-filtrations.tex; euclidean-filtrations.tex lines 25-86, both figure diagrams; serial_euclidean_diagram_missing_forced_self_loop; సీరియల్, యూక్లిడియన్ అని ప్రకటించిన మొదటి చిత్రంలో w2కు తప్పనిసరి స్వబాణం, R1 వల్ల వడపోత చిత్రంలో [w2]కు సంక్రమించే స్వబాణం చేర్చి రెండు చిత్రాల తరువాత పక్కనే ప్రకటించాం; సత్య గుర్తులు మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Do both diagrams show the w2 and [w2] self-loops required for the claimed original serial/Euclidean relation and the filtration R1 inheritance, without altering p or Box p truth labels?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLFILEUC-001-OCC-001; OLP-0459; OLP-0459-B008; source upstream/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:58-86 bytes 2066-3135 SHA-256 904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db; target translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:99 bytes 4520-4598 SHA-256 3f58269b78ab800ed649d0e78e9fc06e61d52cbcd339cc318306185b390211ca; reader page pending.
+
+## te-Telu-IN-OLTENMLFILEUC-002 — OLTENMLFILEUC-002: modal closure infinite claim missing nonempty case
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: మోడల్ సంయోజకాల పరంగా సంవృతమైన ఖాళీ సమితి పరిమితమే కనుక అనంతత్వ వాదనను శూన్యం కాని సమితులకు పరిమితం చేసి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited modal closure infinite claim missing nonempty case at euclidean-filtrations.tex lines 88-93; preliminaries.tex lines 20-26, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLFILEUC-20260927:OLTENMLFILEUC-002 [checked_supports], content/normal-modal-logic/filtrations/euclidean-filtrations.tex; euclidean-filtrations.tex lines 88-93; preliminaries.tex lines 20-26; modal_closure_infinite_claim_missing_nonempty_case; మోడల్ సంయోజకాల పరంగా సంవృతమైన ఖాళీ సమితి పరిమితమే కనుక అనంతత్వ వాదనను శూన్యం కాని సమితులకు పరిమితం చేసి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the infinite modal-closure claim explicitly exclude the empty set while preserving the warning that the construction gives no immediate finite-model bound?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLFILEUC-002-OCC-001; OLP-0459; OLP-0459-B009; source upstream/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:88-93 bytes 3136-3546 SHA-256 904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db; target translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:117 bytes 6178-6244 SHA-256 3f58269b78ab800ed649d0e78e9fc06e61d52cbcd339cc318306185b390211ca; reader page pending.
+
+## te-Telu-IN-OLTENMLFILEUC-003 — OLTENMLFILEUC-003: theorem proof item order mismatch
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: మూల సిద్ధాంతం, నిరూపణ అంశాల క్రమం అసమానంగా ఉండగా నిరూపణ అంశాలను సిద్ధాంతంలోని సౌష్ఠవం, సంక్రామకత్వం, యూక్లిడియన్ క్రమానికి అమర్చాం; పనిచేసిన సంక్రామక నిరూపణ, రెండు వ్యాయామాలు యథాతథం. సవరణ పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited theorem proof item order mismatch at euclidean-filtrations.tex lines 99-125, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLFILEUC-20260927:OLTENMLFILEUC-003 [checked_supports], content/normal-modal-logic/filtrations/euclidean-filtrations.tex; euclidean-filtrations.tex lines 99-125; theorem_proof_item_order_mismatch; మూల సిద్ధాంతం, నిరూపణ అంశాల క్రమం అసమానంగా ఉండగా నిరూపణ అంశాలను సిద్ధాంతంలోని సౌష్ఠవం, సంక్రామకత్వం, యూక్లిడియన్ క్రమానికి అమర్చాం; పనిచేసిన సంక్రామక నిరూపణ, రెండు వ్యాయామాలు యథాతథం. సవరణ పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Do the proof cases now follow the theorem order symmetry, transitivity, Euclideanness, with only transitivity worked and the other two still exercises?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLFILEUC-003-OCC-001; OLP-0459; OLP-0459-B011; source upstream/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:106-127 bytes 3969-5111 SHA-256 904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db; target translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:139 bytes 7478-7541 SHA-256 3f58269b78ab800ed649d0e78e9fc06e61d52cbcd339cc318306185b390211ca; reader page pending.
+
+## te-Telu-IN-OLTENMLFILEUC-004 — OLTENMLFILEUC-004: quotient arrow endpoints missing class brackets
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: వడపోత నమూనాలో చేర్చాల్సిన రెండో బాణజత చివరలను మూల w2,w5 నుంచి వర్గ లోకాలు [w2],[w5]గా మార్చి పక్కనే ప్రకటించాం; అసలు లోకాల వద్ద Box p/p సత్య పరీక్షను యథాతథం ఉంచాం.
+
+- Intended sense: Repair the audited quotient arrow endpoints missing class brackets at euclidean-filtrations.tex lines 20-23, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLFILEUC-20260927:OLTENMLFILEUC-004 [checked_supports], content/normal-modal-logic/filtrations/euclidean-filtrations.tex; euclidean-filtrations.tex lines 20-23; quotient_arrow_endpoints_missing_class_brackets; వడపోత నమూనాలో చేర్చాల్సిన రెండో బాణజత చివరలను మూల w2,w5 నుంచి వర్గ లోకాలు [w2],[w5]గా మార్చి పక్కనే ప్రకటించాం; అసలు లోకాల వద్ద Box p/p సత్య పరీక్షను యథాతథం ఉంచాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Are the newly forced quotient arrows described between [w2] and [w5], while the Box p at w2 and not-p at w5 checks remain at original worlds?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLFILEUC-004-OCC-001; OLP-0459; OLP-0459-B006; source upstream/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:13-23 bytes 236-990 SHA-256 904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db; target translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:28 bytes 1772-1838 SHA-256 3f58269b78ab800ed649d0e78e9fc06e61d52cbcd339cc318306185b390211ca; reader page pending.

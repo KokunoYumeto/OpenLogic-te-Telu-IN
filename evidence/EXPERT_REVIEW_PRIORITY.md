@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 458 of 722 draft units**. This view selects 476 of 571 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 459 of 722 draft units**. This view selects 480 of 576 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4763,3 +4763,43 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0457; normal-modal-logic/filtrations/S5-decidable; translation/content/normal-modal-logic/filtrations/S5-decidable.tex:36; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the countermodel branch enumerate only finite universal models appropriate to S5, rather than arbitrary finite models, while preserving the independent proof-enumeration branch?
+
+## REV-OLTENMLFILEUC-001 — OLTENMLFILEUC-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సీరియల్, యూక్లిడియన్ అని ప్రకటించిన మొదటి చిత్రంలో w2కు తప్పనిసరి స్వబాణం, R1 వల్ల వడపోత చిత్రంలో [w2]కు సంక్రమించే స్వబాణం చేర్చి రెండు చిత్రాల తరువాత పక్కనే ప్రకటించాం; సత్య గుర్తులు మారలేదు.
+
+- Occurrences: OLP-0459; normal-modal-logic/filtrations/euclidean-filtrations; translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:99; printed/PDF page pending
+
+- Please double-check: Please double-check: Do both diagrams show the w2 and [w2] self-loops required for the claimed original serial/Euclidean relation and the filtration R1 inheritance, without altering p or Box p truth labels?
+
+## REV-OLTENMLFILEUC-002 — OLTENMLFILEUC-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మోడల్ సంయోజకాల పరంగా సంవృతమైన ఖాళీ సమితి పరిమితమే కనుక అనంతత్వ వాదనను శూన్యం కాని సమితులకు పరిమితం చేసి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0459; normal-modal-logic/filtrations/euclidean-filtrations; translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:117; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the infinite modal-closure claim explicitly exclude the empty set while preserving the warning that the construction gives no immediate finite-model bound?
+
+## REV-OLTENMLFILEUC-003 — OLTENMLFILEUC-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మూల సిద్ధాంతం, నిరూపణ అంశాల క్రమం అసమానంగా ఉండగా నిరూపణ అంశాలను సిద్ధాంతంలోని సౌష్ఠవం, సంక్రామకత్వం, యూక్లిడియన్ క్రమానికి అమర్చాం; పనిచేసిన సంక్రామక నిరూపణ, రెండు వ్యాయామాలు యథాతథం. సవరణ పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0459; normal-modal-logic/filtrations/euclidean-filtrations; translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:139; printed/PDF page pending
+
+- Please double-check: Please double-check: Do the proof cases now follow the theorem order symmetry, transitivity, Euclideanness, with only transitivity worked and the other two still exercises?
+
+## REV-OLTENMLFILEUC-004 — OLTENMLFILEUC-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: వడపోత నమూనాలో చేర్చాల్సిన రెండో బాణజత చివరలను మూల w2,w5 నుంచి వర్గ లోకాలు [w2],[w5]గా మార్చి పక్కనే ప్రకటించాం; అసలు లోకాల వద్ద Box p/p సత్య పరీక్షను యథాతథం ఉంచాం.
+
+- Occurrences: OLP-0459; normal-modal-logic/filtrations/euclidean-filtrations; translation/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:28; printed/PDF page pending
+
+- Please double-check: Please double-check: Are the newly forced quotient arrows described between [w2] and [w5], while the Box p at w2 and not-p at w5 checks remain at original worlds?

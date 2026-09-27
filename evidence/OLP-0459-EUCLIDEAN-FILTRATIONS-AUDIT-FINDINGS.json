@@ -1,0 +1,41 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLFILEUC-20260927",
+  "unit_id": "OLP-0459",
+  "source_path": "content/normal-modal-logic/filtrations/euclidean-filtrations.tex",
+  "source_sha256": "904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db",
+  "findings": [
+    {
+      "finding_id": "OLTENMLFILEUC-001",
+      "source_locator": "euclidean-filtrations.tex lines 25-86, both figure diagrams",
+      "classification": "serial_euclidean_diagram_missing_forced_self_loop",
+      "source_issue": "The first pictured model leaves w2 with no successor despite asserting seriality and Euclideanness; the quotient diagram also omits its R1-inherited class loop.",
+      "minimal_treatment": "Draw the w2 self-loop in both diagrams and disclose it; leave all world labels and obstruction edges intact.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTENMLFILEUC-002",
+      "source_locator": "euclidean-filtrations.tex lines 88-93; preliminaries.tex lines 20-26",
+      "classification": "modal_closure_infinite_claim_missing_nonempty_case",
+      "source_issue": "The empty set is modally closed and finite, so only nonempty modally closed sets are necessarily infinite.",
+      "minimal_treatment": "Qualify the infinite-set claim as nonempty and disclose the vacuous empty-set exception.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTENMLFILEUC-003",
+      "source_locator": "euclidean-filtrations.tex lines 99-125",
+      "classification": "theorem_proof_item_order_mismatch",
+      "source_issue": "The theorem orders symmetry/transitivity/Euclideanness, but the proof orders transitivity/Euclideanness/symmetry.",
+      "minimal_treatment": "Reorder the proof items to symmetry exercise, worked transitivity, Euclidean exercise, preserving every claim and open exercise, with adjacent disclosure.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTENMLFILEUC-004",
+      "source_locator": "euclidean-filtrations.tex lines 20-23",
+      "classification": "quotient_arrow_endpoints_missing_class_brackets",
+      "source_issue": "The second pair of forced arrows is described between original worlds w2 and w5 although arrows are being added to the quotient model.",
+      "minimal_treatment": "Use quotient endpoints [w2] and [w5] for the arrows, retain the original-world truth test, and disclose the notation repair.",
+      "expected_core_math_delta": {"source_only": ["$w_2$", "$w_5$"], "target_only": ["$[w_2]$", "$[w_5]$"]}
+    }
+  ]
+}
