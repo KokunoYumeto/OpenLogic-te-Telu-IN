@@ -1,0 +1,51 @@
+% Part: applied-modal-logics
+% Chapter: temporal-logic
+% Section: extra-operators
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{tl}{ext}
+
+\olsection{కాలిక తర్కానికి అదనపు కారకాలు}
+
+గతం, భవిష్యత్తు కోసం ఉన్న ఏకస్థాన కారకాలతో పాటు,
+కాలిక తర్కాల్లో కొన్నిసార్లు ``అప్పటి నుంచి'',
+``అప్పటి వరకు'' అనే అర్థాలున్న ద్విస్థాన కారకాలు
+$\Since $,~$\Until$ కూడా ఉంటాయి. అంటే కాలిక తర్క
+భాషలో $\Since $,~$\Until$లను చేర్చి, కాలిక
+\tetoken{సూత్రం}{!!{formula}} నిర్వచనంలో కింది
+నియమాన్ని చేర్చాలి:
+
+\begin{itemize}
+\item[] $!A$, $!B$ \tetoken{సూత్రాలు}{!!{formula}s}
+  అయితే, $(\Since  !A !B)$, $(\Until !A !B)$ రెండూ
+  \tetoken{సూత్రాలు}{!!{formula}s}.
+\end{itemize}
+
+ఈ కారకాల అర్థవిజ్ఞానం ఇలా ఉంటుంది:
+
+\begin{defn}\ollabel{defn:since-until}
+  నమూనా~$\mModel M$లో \emph{$t$ వద్ద
+  \tetoken{ఒక సూత్రం}{!!a{formula}}~$!A$ సత్యం}:
+  \begin{enumerate}
+  \item\ollabel{defn:sub:mmodels-since} \indcase{!A}{\Since  !B
+    !C}{$\mSat{M}{\indfrm}[t]$ అప్పుడే, అప్పుడు మాత్రమే
+    $t' \prec t$ అయ్యే ఏదో $t' \in T$ వద్ద
+    $\mSat{M}{!B}[t']$, అలాగే $t' \prec s \prec t$
+    అయ్యే ప్రతి $s$ వద్ద $\mSat{M}{!C}[s]$}
+   \item\ollabel{defn:sub:mmodels-until} \indcase{!A}{\Until !B
+    !C}{$\mSat{M}{\indfrm}[t]$ అప్పుడే, అప్పుడు మాత్రమే
+    $t \prec t'$ అయ్యే ఏదో $t' \in T$ వద్ద
+    $\mSat{M}{!B}[t']$, అలాగే $t \prec s \prec t'$
+    అయ్యే ప్రతి $s$ వద్ద $\mSat{M}{!C}[s]$}
+  \end{enumerate}
+\end{defn}
+
+$\Since !B !C$కు సహజ పఠనం ``$!B$ జరిగినప్పటి
+నుంచి~$!C$ జరుగుతోంది.'' అలాగే $\Until !B !C$కు
+``$!B$ జరిగే వరకు~$!C$ జరుగుతుంది'' అనేది
+సహజ పఠనం.
+
+\end{document}

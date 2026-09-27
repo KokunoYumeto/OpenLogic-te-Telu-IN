@@ -1,0 +1,7 @@
+# OLP-0478 — same-agent semantic review
+
+- Frozen source: `upstream/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex`, SHA-256 `237c841d5cb359d63f994fd71e13fb6e7101c266c2390e0059ab52e9efb8fd6d`.
+- Telugu target: `translation/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex`, SHA-256 `930209a1ae03225c5c52f4e716634c41d4d4725f6b9e5963f7675679a7fe37a5`.
+- Bounded QA: `build/BATCH-127-STRUCTURAL-QA.json`, 24 aligned blocks; structure, tokens, identifiers and declared math pass. Same-agent review only, not TeX compilation or independent proof certification.
+
+The language definition keeps false/truth constants, an infinite denumerable family of propositional variables, conditional connective tags, two past operators and two future operators. Formation is inductive; bare `F` in the source's temporal formation clause is corrected to the introduced `\Ftemp` and disclosed as OLTEAMLTLSEM-001. The model is `\tuple{T,\prec,V}` with nonempty time points, unrestricted binary precedence and a point-set valuation. The truth clauses preserve past/future direction and existential/universal force: `P`/`H` inspect preceding points, `F`/`G` succeeding points. The final P–H and F–G duality observation remains a source claim. The stale, non-rendered source section comment is retained as source metadata. TE-P008/010/011/018/024 support only general sets, relations, functions and logic; they do not directly attest temporal semantics.

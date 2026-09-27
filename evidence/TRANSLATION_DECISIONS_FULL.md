@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **477 of 722 source units drafted**. This readable view contains all 619 decisions and 1430 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **481 of 722 source units drafted**. This readable view contains all 624 decisions and 1449 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -5076,6 +5076,124 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T167-OCC-003; OLP-0477; OLP-0477-B007; source upstream/content/applied-modal-logic/temporal-logic/introduction.tex:21-29 bytes 614-1229 SHA-256 327c7c72f1b98905b0786413d23b688185ed185226419ff49bcd78aaeb3f76dd; target translation/content/applied-modal-logic/temporal-logic/introduction.tex:22-31 bytes 1235-2604 SHA-256 b18cdb8c74ac63d0b88f87651a077d6cf72b349a148891606001f81ae1e514bf; reader page pending.
   - te-Telu-IN-TE-T167-OCC-004; OLP-0477; OLP-0477-B008; source upstream/content/applied-modal-logic/temporal-logic/introduction.tex:31-43 bytes 1230-2119 SHA-256 327c7c72f1b98905b0786413d23b688185ed185226419ff49bcd78aaeb3f76dd; target translation/content/applied-modal-logic/temporal-logic/introduction.tex:33-46 bytes 2605-4439 SHA-256 b18cdb8c74ac63d0b88f87651a077d6cf72b349a148891606001f81ae1e514bf; reader page pending.
   - te-Telu-IN-TE-T167-OCC-005; OLP-0477; OLP-0477-B009; source upstream/content/applied-modal-logic/temporal-logic/introduction.tex:45-51 bytes 2120-2584 SHA-256 327c7c72f1b98905b0786413d23b688185ed185226419ff49bcd78aaeb3f76dd; target translation/content/applied-modal-logic/temporal-logic/introduction.tex:48-54 bytes 4440-5341 SHA-256 b18cdb8c74ac63d0b88f87651a077d6cf72b349a148891606001f81ae1e514bf; reader page pending.
+
+## te-Telu-IN-TE-T168 — temporal semantics / past P H and future F G / precedence / temporal model and truth
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: కాలిక అర్థవిజ్ఞానం / గత P H, భవిష్యత్ F G / పూర్వగామిత్వం / కాలిక నమూనా, సత్యం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “temporal semantics / past P H and future F G / precedence / temporal model and truth” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు కాలిక P/H/F/Gకు ప్రత్యక్ష సాంకేతిక పదం లేదా నిరూపణ ఇవ్వవు. మూలపు denumerables ఆంగ్ల వ్యాకరణ పొరపాటు భావాన్ని మార్చకుండా అనంతంగా లెక్కించదగిన సమితిగా అనువదించాం. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Rationale: TE-T167లోని కాలిక తర్కం, పూర్వ నమూనా/సత్య పదాలు కొనసాగించాం. స్థిర మూలంలోని అణు/సంధాయక/కాలిక నిర్మాణం, T-prec-V నమూనా, షరతులేని prec, గత/భవిష్యత్ నాలుగు సత్య షరతులు నిలిచాయి. F నిర్మాణ సందర్భంలోని మూల మాక్రో తప్పు ఒక ప్రకటిత సవరణతో సరిచేసాం. P/H/F/G temporal operator macros, T/prec/V, truth macros, feature tags and section identifiers remain source-controlled notation; general Telugu terms follow earlier edition decisions.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: P/H గత, F/G భవిష్యత్ సాక్షి/సార్వత్రిక దిశలు, T-prec-V నమూనా, ద్వంద్వత్వం నిలిపి bare F మూల మాక్రో తప్పును ప్రకటించి సరిచేయడం [viable_alternative: ఎంపిక] | Fను పాఠ్య లాటిన్ చరంగా ఉంచడం [viable_alternative: తిరస్కరణ] | H/Gకి ఏదో ఒక బిందువు షరతు పెట్టడం [viable_alternative: తిరస్కరణ] | denumerableను కేవలం పరిమిత సమితిగా చెప్పడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ సంబంధ పేజీ కాలిక అర్థవిజ్ఞానానికి ప్రత్యక్ష నిర్వచనం అని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “కాలిక అర్థవిజ్ఞానం / గత P H, భవిష్యత్ F G / పూర్వగామిత్వం / కాలిక నమూనా, సత్యం” is idiomatic and technically standard for “temporal semantics / past P H and future F G / precedence / temporal model and truth” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T168-OCC-001; OLP-0478; OLP-0478-B005; source upstream/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:11 bytes 198-239 SHA-256 237c841d5cb359d63f994fd71e13fb6e7101c266c2390e0059ab52e9efb8fd6d; target translation/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:11 bytes 198-276 SHA-256 930209a1ae03225c5c52f4e716634c41d4d4725f6b9e5963f7675679a7fe37a5; reader page pending.
+  - te-Telu-IN-TE-T168-OCC-002; OLP-0478; OLP-0478-B006; source upstream/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:13-29 bytes 240-1013 SHA-256 237c841d5cb359d63f994fd71e13fb6e7101c266c2390e0059ab52e9efb8fd6d; target translation/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:13-30 bytes 277-1632 SHA-256 930209a1ae03225c5c52f4e716634c41d4d4725f6b9e5963f7675679a7fe37a5; reader page pending.
+  - te-Telu-IN-TE-T168-OCC-003; OLP-0478; OLP-0478-B016; source upstream/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:58-59 bytes 1866-1975 SHA-256 237c841d5cb359d63f994fd71e13fb6e7101c266c2390e0059ab52e9efb8fd6d; target translation/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:60-66 bytes 3171-3727 SHA-256 930209a1ae03225c5c52f4e716634c41d4d4725f6b9e5963f7675679a7fe37a5; reader page pending.
+  - te-Telu-IN-TE-T168-OCC-004; OLP-0478; OLP-0478-B019; source upstream/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:67-78 bytes 2178-2673 SHA-256 237c841d5cb359d63f994fd71e13fb6e7101c266c2390e0059ab52e9efb8fd6d; target translation/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:76-92 bytes 4133-5139 SHA-256 930209a1ae03225c5c52f4e716634c41d4d4725f6b9e5963f7675679a7fe37a5; reader page pending.
+  - te-Telu-IN-TE-T168-OCC-005; OLP-0478; OLP-0478-B022; source upstream/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:89-120 bytes 3336-5020 SHA-256 237c841d5cb359d63f994fd71e13fb6e7101c266c2390e0059ab52e9efb8fd6d; target translation/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:108-149 bytes 6515-9262 SHA-256 930209a1ae03225c5c52f4e716634c41d4d4725f6b9e5963f7675679a7fe37a5; reader page pending.
+  - te-Telu-IN-TE-T168-OCC-006; OLP-0478; OLP-0478-B023; source upstream/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:122-123 bytes 5021-5278 SHA-256 237c841d5cb359d63f994fd71e13fb6e7101c266c2390e0059ab52e9efb8fd6d; target translation/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:151-155 bytes 9263-9715 SHA-256 930209a1ae03225c5c52f4e716634c41d4d4725f6b9e5963f7675679a7fe37a5; reader page pending.
+
+## te-Telu-IN-TE-T169 — temporal frame correspondence / transitive linear dense past- and future-unbounded / irreflexivity
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: కాలిక చట్ర అనురూపత / సంక్రామక, రేఖీయ, సాంద్ర, గత-భవిష్యత్ అంచులేని / అస్వావర్తనత్వం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “temporal frame correspondence / transitive linear dense past- and future-unbounded / irreflexivity” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు కాలిక చట్ర అనురూపతకు ప్రత్యక్ష నిరూపణలు ఇవ్వవు. అస్వావర్తనత్వం వ్యక్తం కానితనం మూల వాదన మాత్రమే. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Rationale: TE-T168లోని కాలిక నమూనా/prec, TE-T155/156లోని చట్ర ప్రాప్యత పదాలను కొనసాగించాం. స్థిర మూలంలోని రెండు K రూపాలు, ఐదు మొదటి-స్థాయి చట్ర షరతులు/కాలిక సూత్రాల జతలు, అస్వావర్తనత్వం ఉదాహరణ యథాతథం. K, P/H/F/G temporal operator macros, prec, table labels and model notation remain protected; general Telugu relation terms follow earlier decisions.
+
+- Authorities checked: TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: కాలిక K పూర్వ/భవిష్యత్ రూపాలు, సంక్రామక/రేఖీయ/సాంద్ర/రెండు అంచులేని చట్ర అనురూపతలు, అస్వావర్తనత్వం వ్యక్తీకరణ పరిమితిని నిలపడం [viable_alternative: ఎంపిక] | రేఖీయత్వాన్నే షరతులేని అన్ని కాలిక నమూనాల ధర్మంగా చెప్పడం [viable_alternative: తిరస్కరణ] | గత, భవిష్యత్ అంచులేని షరతులను తారుమారు చేయడం [viable_alternative: తిరస్కరణ] | అస్వావర్తనత్వానికి మూలం ఇచ్చని కాలిక సూత్రం కల్పించడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “కాలిక చట్ర అనురూపత / సంక్రామక, రేఖీయ, సాంద్ర, గత-భవిష్యత్ అంచులేని / అస్వావర్తనత్వం” is idiomatic and technically standard for “temporal frame correspondence / transitive linear dense past- and future-unbounded / irreflexivity” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T169-OCC-001; OLP-0479; OLP-0479-B005; source upstream/content/applied-modal-logic/temporal-logic/properties-accessibility.tex:11 bytes 198-240 SHA-256 63699c7012da1cd23c29024e0e1ebecedaac878fcb0d6678fd26d69b7400d095; target translation/content/applied-modal-logic/temporal-logic/properties-accessibility.tex:11 bytes 198-267 SHA-256 b87442d45085ba967aff7ad3937feadeb82c4d112b9f37168bdae16791527e98; reader page pending.
+  - te-Telu-IN-TE-T169-OCC-002; OLP-0479; OLP-0479-B008; source upstream/content/applied-modal-logic/temporal-logic/properties-accessibility.tex:25-53 bytes 812-1886 SHA-256 63699c7012da1cd23c29024e0e1ebecedaac878fcb0d6678fd26d69b7400d095; target translation/content/applied-modal-logic/temporal-logic/properties-accessibility.tex:26-54 bytes 1196-2459 SHA-256 b87442d45085ba967aff7ad3937feadeb82c4d112b9f37168bdae16791527e98; reader page pending.
+  - te-Telu-IN-TE-T169-OCC-003; OLP-0479; OLP-0479-B009; source upstream/content/applied-modal-logic/temporal-logic/properties-accessibility.tex:55-62 bytes 1887-2379 SHA-256 63699c7012da1cd23c29024e0e1ebecedaac878fcb0d6678fd26d69b7400d095; target translation/content/applied-modal-logic/temporal-logic/properties-accessibility.tex:56-63 bytes 2460-3276 SHA-256 b87442d45085ba967aff7ad3937feadeb82c4d112b9f37168bdae16791527e98; reader page pending.
+
+## te-Telu-IN-TE-T170 — Since and Until binary temporal operators / strict intermediate-time truth clauses
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: అప్పటి నుంచి, అప్పటి వరకు ద్విస్థాన కాలిక కారకాలు / మధ్యంతర కాల బిందువుల సత్య షరతులు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “Since and Until binary temporal operators / strict intermediate-time truth clauses” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు Since/Untilకు ప్రత్యక్ష కాలిక తర్క పదం లేదా నిరూపణ ఇవ్వవు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Rationale: TE-T168/169లోని కాలిక భాష, prec సత్య షరతులు కొనసాగించాం. Since B Cలో గత సాక్షి వద్ద B, మధ్యలో C; Until B Cలో భవిష్యత్ సాక్షి వద్ద B, మధ్యలో C అనే మూల క్రమం, రెండు సహజ పఠనాలు నిలిచాయి. Since/Until remain protected operator macros; B/C, strict precedence, model satisfaction notation and labels retain source identities.
+
+- Authorities checked: TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: Since B Cలో గత B సాక్షి, మధ్య C; Until B Cలో భవిష్యత్ B సాక్షి, మధ్య C, మూల సహజ పఠనాలు నిలపడం [viable_alternative: ఎంపిక] | B/C స్థానాలను మార్చడం [viable_alternative: తిరస్కరణ] | Since/Untilను ఏకస్థాన కారకాలుగా చూపడం [viable_alternative: తిరస్కరణ] | మధ్య బిందువుల కఠిన అసమానతలను వదలడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ సంబంధ పేజీ ఈ కాలిక కారకాలకు ప్రత్యక్ష సాక్ష్యం అని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “అప్పటి నుంచి, అప్పటి వరకు ద్విస్థాన కాలిక కారకాలు / మధ్యంతర కాల బిందువుల సత్య షరతులు” is idiomatic and technically standard for “Since and Until binary temporal operators / strict intermediate-time truth clauses” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T170-OCC-001; OLP-0480; OLP-0480-B005; source upstream/content/applied-modal-logic/temporal-logic/extra-temporal-operators.tex:11 bytes 189-241 SHA-256 610e36a049e01fb2ace59164fd64a6482a8109a49e5d859af928922edfe26f97; target translation/content/applied-modal-logic/temporal-logic/extra-temporal-operators.tex:11 bytes 189-283 SHA-256 1240fe818b6b3562266c98c8133d14810aa0a6e5e011e41e4fe0dbb47aeaef38; reader page pending.
+  - te-Telu-IN-TE-T170-OCC-002; OLP-0480; OLP-0480-B007; source upstream/content/applied-modal-logic/temporal-logic/extra-temporal-operators.tex:19-22 bytes 582-724 SHA-256 610e36a049e01fb2ace59164fd64a6482a8109a49e5d859af928922edfe26f97; target translation/content/applied-modal-logic/temporal-logic/extra-temporal-operators.tex:21-25 bytes 981-1202 SHA-256 1240fe818b6b3562266c98c8133d14810aa0a6e5e011e41e4fe0dbb47aeaef38; reader page pending.
+  - te-Telu-IN-TE-T170-OCC-003; OLP-0480; OLP-0480-B009; source upstream/content/applied-modal-logic/temporal-logic/extra-temporal-operators.tex:26-38 bytes 787-1391 SHA-256 610e36a049e01fb2ace59164fd64a6482a8109a49e5d859af928922edfe26f97; target translation/content/applied-modal-logic/temporal-logic/extra-temporal-operators.tex:29-44 bytes 1297-2243 SHA-256 1240fe818b6b3562266c98c8133d14810aa0a6e5e011e41e4fe0dbb47aeaef38; reader page pending.
+  - te-Telu-IN-TE-T170-OCC-004; OLP-0480; OLP-0480-B010; source upstream/content/applied-modal-logic/temporal-logic/extra-temporal-operators.tex:40-42 bytes 1392-1592 SHA-256 610e36a049e01fb2ace59164fd64a6482a8109a49e5d859af928922edfe26f97; target translation/content/applied-modal-logic/temporal-logic/extra-temporal-operators.tex:46-49 bytes 2244-2535 SHA-256 1240fe818b6b3562266c98c8133d14810aa0a6e5e011e41e4fe0dbb47aeaef38; reader page pending.
+
+## te-Telu-IN-TE-T171 — possible histories model / computational paths / suffix closure / history-relative future and possibility
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: సాధ్య చరిత్రల నమూనా / గణన మార్గాలు / శేష అనుక్రమ మూసుకుపోవడం / చరిత్రకు సంబంధిత భవిష్యత్తు, సాధ్యత
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “possible histories model / computational paths / suffix closure / history-relative future and possibility” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు branching-time చరిత్రలకు ప్రత్యక్ష సాంకేతిక పదం లేదా నిరూపణ ఇవ్వవు. మూలం ఇతర కాలిక కారకాలకు సారూప్య నిర్వచనమే చెబుతుంది, పూర్తి నిర్వచనలు ఇక్కడ ఇవ్వదు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Rationale: TE-T168–170లోని కాలిక T/prec/V, F, మోడల్ Diamond పదాలను కొనసాగించాం. స్థిర మూలంలోని C స్థితి అనుక్రమాలు, శేష మూసుకుపోవడం, i<j క్రమం, సూత్ర సత్యం t/sigma జతకు సంబంధం, F ప్రస్తుత చరిత్ర, Diamond ప్రత్యామ్నాయ చరిత్ర, చివరి p ఉదాహరణ యథాతథం. Ftemp/Diamond, T/C/V, sigma, prec_sigma, model satisfaction macros and labels retain source-controlled notation; సాధ్య చరిత్రలు is a transparent Telugu rendering.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: T-C-V సాధ్య చరిత్రలు, శేష అనుక్రమ మూసుకుపోవడం, sigma క్రమం, ప్రస్తుత చరిత్రలో F, ప్రత్యామ్నాయ చరిత్రలో Diamond, చివరి p ఉదాహరణ నిలపడం [viable_alternative: ఎంపిక] | Diamondను అదే చరిత్రలోని మరొక కాల బిందువుకు మార్చడం [viable_alternative: తిరస్కరణ] | Fను అన్ని ప్రత్యామ్నాయ చరిత్రల్లో సత్యంగా చెప్పడం [viable_alternative: తిరస్కరణ] | భాష మార్చడం తప్పనిసరి అని మూలం చెప్పినట్టు చూపడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ సంబంధ పేజీ branching-time నమూనాకు ప్రత్యక్ష నిరూపణ అని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “సాధ్య చరిత్రల నమూనా / గణన మార్గాలు / శేష అనుక్రమ మూసుకుపోవడం / చరిత్రకు సంబంధిత భవిష్యత్తు, సాధ్యత” is idiomatic and technically standard for “possible histories model / computational paths / suffix closure / history-relative future and possibility” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T171-OCC-001; OLP-0481; OLP-0481-B005; source upstream/content/applied-modal-logic/temporal-logic/possible-histories.tex:11 bytes 193-224 SHA-256 29a288f0012cbdf900f927cb285864444ca0f8d7dea27c1d037cdaaae40e924a; target translation/content/applied-modal-logic/temporal-logic/possible-histories.tex:11 bytes 193-246 SHA-256 ff2d8c970a954578591339bbb196e16fed9caba927aab997df89820a2c77aa88; reader page pending.
+  - te-Telu-IN-TE-T171-OCC-002; OLP-0481; OLP-0481-B007; source upstream/content/applied-modal-logic/temporal-logic/possible-histories.tex:24-42 bytes 861-1831 SHA-256 29a288f0012cbdf900f927cb285864444ca0f8d7dea27c1d037cdaaae40e924a; target translation/content/applied-modal-logic/temporal-logic/possible-histories.tex:24-48 bytes 1572-3460 SHA-256 ff2d8c970a954578591339bbb196e16fed9caba927aab997df89820a2c77aa88; reader page pending.
+  - te-Telu-IN-TE-T171-OCC-003; OLP-0481; OLP-0481-B008; source upstream/content/applied-modal-logic/temporal-logic/possible-histories.tex:44-52 bytes 1832-2392 SHA-256 29a288f0012cbdf900f927cb285864444ca0f8d7dea27c1d037cdaaae40e924a; target translation/content/applied-modal-logic/temporal-logic/possible-histories.tex:50-60 bytes 3461-4632 SHA-256 ff2d8c970a954578591339bbb196e16fed9caba927aab997df89820a2c77aa88; reader page pending.
+  - te-Telu-IN-TE-T171-OCC-004; OLP-0481; OLP-0481-B009; source upstream/content/applied-modal-logic/temporal-logic/possible-histories.tex:54-65 bytes 2393-2956 SHA-256 29a288f0012cbdf900f927cb285864444ca0f8d7dea27c1d037cdaaae40e924a; target translation/content/applied-modal-logic/temporal-logic/possible-histories.tex:62-76 bytes 4633-5446 SHA-256 ff2d8c970a954578591339bbb196e16fed9caba927aab997df89820a2c77aa88; reader page pending.
+  - te-Telu-IN-TE-T171-OCC-005; OLP-0481; OLP-0481-B010; source upstream/content/applied-modal-logic/temporal-logic/possible-histories.tex:67-73 bytes 2957-3396 SHA-256 29a288f0012cbdf900f927cb285864444ca0f8d7dea27c1d037cdaaae40e924a; target translation/content/applied-modal-logic/temporal-logic/possible-histories.tex:78-86 bytes 5447-6394 SHA-256 ff2d8c970a954578591339bbb196e16fed9caba927aab997df89820a2c77aa88; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -16908,3 +17026,29 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEAMLTLDRV-001-OCC-001; OLP-0476; OLP-0476-B007; source upstream/content/applied-modal-logic/temporal-logic/temporal-logic.tex:20 bytes 412-427 SHA-256 002d60bc4f9fd0b84f7d062f1cf8a325563ce8f343c5d070e124e4f05c4115e4; target translation/content/applied-modal-logic/temporal-logic/temporal-logic.tex:20 bytes 502-598 SHA-256 4d55f4937a2ffd15ac7038e265260187b26fa81fb65e58df13be35c7ad098cb4; reader page pending.
+
+## te-Telu-IN-OLTEAMLTLSEM-001 — OLTEAMLTLSEM-001: formation clause uses bare f instead of future operator macro
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: కాలిక సూత్ర నిర్మాణ నియమంలో మూలపు ఖాళీ Fను ముందే పరిచయమైన Ftemp కారక మాక్రోగా మార్చి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited formation clause uses bare f instead of future operator macro at temporal-logic-semantics.tex lines 26-27, 58 and 113-115, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEAMLTLSEM-20260927:OLTEAMLTLSEM-001 [checked_supports], content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex; temporal-logic-semantics.tex lines 26-27, 58 and 113-115; formation_clause_uses_bare_f_instead_of_future_operator_macro; కాలిక సూత్ర నిర్మాణ నియమంలో మూలపు ఖాళీ Fను ముందే పరిచయమైన Ftemp కారక మాక్రోగా మార్చి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the temporal formation clause use the Ftemp macro already introduced in the operator list and used in the future truth clause?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEAMLTLSEM-001-OCC-001; OLP-0478; OLP-0478-B016; source upstream/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:58-59 bytes 1866-1975 SHA-256 237c841d5cb359d63f994fd71e13fb6e7101c266c2390e0059ab52e9efb8fd6d; target translation/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:63 bytes 3370-3446 SHA-256 930209a1ae03225c5c52f4e716634c41d4d4725f6b9e5963f7675679a7fe37a5; reader page pending.

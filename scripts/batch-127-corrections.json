@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0478",
+  "source_path": "content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex",
+  "source_sha256": "237c841d5cb359d63f994fd71e13fb6e7101c266c2390e0059ab52e9efb8fd6d",
+  "audit_id": "OLTEAMLTLSEM-20260927",
+  "audit_review_path": "evidence/OLP-0478-TEMPORAL-SEMANTICS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "c0f2ae42b6b865d5a00fa0144ed3ad8d3b8d5dcf8e05dc217dbf25dc65f6535f",
+  "audit_findings_path": "evidence/OLP-0478-TEMPORAL-SEMANTICS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "f2b7b53cd64c08b324e19d366f8d9043b550c2c2856c26890f1de45df2cb70cb",
+  "previous_corrections": 452,
+  "treatments": {
+    "OLTEAMLTLSEM-001": {
+      "target_line": 63,
+      "body_treatment": "కాలిక సూత్ర నిర్మాణ నియమంలో మూలపు ఖాళీ Fను ముందే పరిచయమైన Ftemp కారక మాక్రోగా మార్చి పక్కనే ప్రకటించాం."
+    }
+  }
+}

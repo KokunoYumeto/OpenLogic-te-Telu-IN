@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "130",
+  "unit_id": "OLP-0481",
+  "unit_order": 481,
+  "source_path": "content/applied-modal-logic/temporal-logic/possible-histories.tex",
+  "blocks": 11,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10],
+  "previous_segments": 7260,
+  "previous_terms": 170,
+  "expected_corrections": 453,
+  "canon_default": ["TE-P008", "TE-P010", "TE-P011", "TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర సాధ్య చరిత్రల మూలం, తెలుగు లక్ష్యం, పూర్వ కాలిక/మోడల్ నమూనా పదాలు, స్థానిక సాధారణ సమితి/సంబంధ/ప్రమేయకం/తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; T-C-V స్థితులు, శేష-అనుక్రమ మూసుకుపోవడం, sigma-సంబంధ క్రమం, చరిత్రలో F, ప్రత్యామ్నాయ చరిత్రలో Diamond తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P008/010/011 సాధారణ సమితి/సంబంధ/ప్రమేయకానికి, TE-P018/024 సాధారణ తర్క/వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. శాఖా-కాల సాధ్య చరిత్రలు, చరిత్రకు సంబంధిత F/Diamond సత్య షరతులకు అవి ప్రత్యక్ష నిరూపణలు కావు.",
+  "term_decision": {
+    "term_id": "TE-T171",
+    "source_term": "possible histories model / computational paths / suffix closure / history-relative future and possibility",
+    "telugu": "సాధ్య చరిత్రల నమూనా / గణన మార్గాలు / శేష అనుక్రమ మూసుకుపోవడం / చరిత్రకు సంబంధిత భవిష్యత్తు, సాధ్యత",
+    "status": "native_general_set_relation_function_logic_derivation_register_attested_branching_time_histories_source_controlled",
+    "passages": ["TE-P008", "TE-P010", "TE-P011", "TE-P018", "TE-P024"],
+    "basis": "TE-T168–170లోని కాలిక T/prec/V, F, మోడల్ Diamond పదాలను కొనసాగించాం. స్థిర మూలంలోని C స్థితి అనుక్రమాలు, శేష మూసుకుపోవడం, i<j క్రమం, సూత్ర సత్యం t/sigma జతకు సంబంధం, F ప్రస్తుత చరిత్ర, Diamond ప్రత్యామ్నాయ చరిత్ర, చివరి p ఉదాహరణ యథాతథం.",
+    "uncertainty": "స్థానిక సాక్షులు branching-time చరిత్రలకు ప్రత్యక్ష సాంకేతిక పదం లేదా నిరూపణ ఇవ్వవు. మూలం ఇతర కాలిక కారకాలకు సారూప్య నిర్వచనమే చెబుతుంది, పూర్తి నిర్వచనలు ఇక్కడ ఇవ్వదు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "Ftemp/Diamond, T/C/V, sigma, prec_sigma, model satisfaction macros and labels retain source-controlled notation; సాధ్య చరిత్రలు is a transparent Telugu rendering."
+  }
+}

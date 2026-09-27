@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "128",
+  "unit_id": "OLP-0479",
+  "unit_order": 479,
+  "source_path": "content/applied-modal-logic/temporal-logic/properties-accessibility.tex",
+  "blocks": 10,
+  "linguistic_blocks": [5, 6, 7, 8, 9],
+  "previous_segments": 7239,
+  "previous_terms": 168,
+  "expected_corrections": 453,
+  "canon_default": ["TE-P010", "TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర కాలిక చట్ర ధర్మాల మూలం, తెలుగు లక్ష్యం, పూర్వ ప్రాప్యత/చట్ర/కాలిక పదాలు, స్థానిక సాధారణ సంబంధ/తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; K పూర్వ/భవిష్యత్ రూపాలు, ఐదు చట్ర అనురూపతలు, అస్వావర్తనత్వ నిర్వచనీయత పరిమితిని తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P010 సాధారణ సంబంధానికి, TE-P018/024 సాధారణ తర్కం/వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. కాలిక K రూపాలు, ఐదు అనురూపతలు, అస్వావర్తనత్వం భాషలో వ్యక్తం కానితనానికి ఈ పేజీలు ప్రత్యక్ష నిరూపణలు కావు; అవి స్థిర మూల వాదనలు.",
+  "term_decision": {
+    "term_id": "TE-T169",
+    "source_term": "temporal frame correspondence / transitive linear dense past- and future-unbounded / irreflexivity",
+    "telugu": "కాలిక చట్ర అనురూపత / సంక్రామక, రేఖీయ, సాంద్ర, గత-భవిష్యత్ అంచులేని / అస్వావర్తనత్వం",
+    "status": "native_general_relation_logic_derivation_register_attested_temporal_frame_correspondence_source_controlled",
+    "passages": ["TE-P010", "TE-P018", "TE-P024"],
+    "basis": "TE-T168లోని కాలిక నమూనా/prec, TE-T155/156లోని చట్ర ప్రాప్యత పదాలను కొనసాగించాం. స్థిర మూలంలోని రెండు K రూపాలు, ఐదు మొదటి-స్థాయి చట్ర షరతులు/కాలిక సూత్రాల జతలు, అస్వావర్తనత్వం ఉదాహరణ యథాతథం.",
+    "uncertainty": "స్థానిక సాక్షులు కాలిక చట్ర అనురూపతకు ప్రత్యక్ష నిరూపణలు ఇవ్వవు. అస్వావర్తనత్వం వ్యక్తం కానితనం మూల వాదన మాత్రమే. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "K, P/H/F/G temporal operator macros, prec, table labels and model notation remain protected; general Telugu relation terms follow earlier decisions."
+  }
+}

@@ -1,0 +1,65 @@
+% Part: applied-modal-logics
+% Chapter: temporal-logic
+% Section: properties-accessibility
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{tl}{acc}
+
+\olsection{కాలిక చట్రాల ధర్మాలు}
+
+మన కాలిక నమూనాలు సంబంధం~$\prec$పై ఎలాంటి షరతులూ
+విధించనందున, పరిచయమైన స్వీకృతాల్లో అన్ని నమూనాల్లో
+నిలిచేది~$K$ మాత్రమే; లేదా దాని సదృశ రూపాలైన
+$K_{\Gtemp}$,~$K_{\Htemp}$ ఇవి:
+\begin{align*}
+\tag{$K_{\Gtemp}$}  \Gtemp (p \to q) & \to (\Gtemp p \to \Gtemp q)\\
+\tag{$K_{\Htemp}$}  \Htemp (p \to q) & \to (\Htemp p \to \Htemp q)
+\end{align*}
+
+అయితే నమూనాల్లో కాలాన్ని సూచించే విధానంపై కఠినమైన
+షరతులు, ఉదాహరణకు $\prec$ రేఖీయ క్రమం కావాలనే షరతు,
+విధిస్తే ఇతర చెల్లుబాటులూ వస్తాయి.
+
+\begin{table}[t]
+  \begin{tabular}{| p{.48\textwidth} || p{.48\textwidth} |}
+    \hline
+    {\emph{$\prec$ ఇలా ఉంటే \dots}} & {\emph{$\mModel{M}$లో ఇది సత్యం \dots:}} \\
+    \hline \hline
+    \emph{సంక్రామకం}: \newline
+    $\forall u \forall v \forall w ((u \prec v \land v \prec w) \lif u \prec w)$ &
+    $\Ftemp \Ftemp p \lif \Ftemp p$  \\
+    \hline
+    \emph{రేఖీయం}: \newline
+    $\forall w \forall v (w \prec v \lor w = v \lor v \prec w)$ &
+    $(\Ftemp \Ptemp  p \lor \Ptemp \Ftemp p) \lif (\Ptemp p \lor p \lor \Ftemp p)$\\
+    \hline
+    \emph{సాంద్రం}: \newline
+    $\forall w \forall v (w \prec v \to \exists u(w \prec u \land u \prec v))$ &
+    $\Ftemp p \lif \Ftemp \Ftemp p$ \\
+    \hline
+    \emph{గతంలో అంచులేనిది}: \newline
+    $\forall w \exists v( v \prec w)$ &
+    $\Htemp p \to \Ptemp p$ \\
+    \hline
+    \emph{భవిష్యత్తులో అంచులేనిది}: \newline
+    $\forall w \exists v( w \prec v)$ &
+    $\Gtemp p \to \Ftemp p$ \\
+    \hline
+  \end{tabular}
+  \caption{కొన్ని కాలిక చట్ర అనురూప ధర్మాలు.}
+  \ollabel{tab:correspondence}
+\end{table}
+
+\olref{tab:correspondence}లోని అనేక ధర్మాలు కాలాన్ని
+సూచించే నమూనాకు కావాల్సినవిగా అనిపించవచ్చు. అయితే
+$\prec$ సంబంధంపై మనకు నచ్చిన షరతులు విధించగలిగినా,
+ప్రతి షరతుకూ కాలిక తర్క భాషలో వ్యక్తం చేయగల
+\tetoken{సూత్రం}{!!{formula}s} అనురూపంగా ఉండదని
+గమనించాలి. ఉదాహరణకు, అస్వావర్తనత్వం, అంటే
+$\forall w \lnot (w \prec w)$, కోసం కాలిక తర్కంలో
+అనురూప సూత్రం లేదు.
+
+\end{document}

@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 477 of 722 draft units**. This view selects 505 of 619 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 481 of 722 draft units**. This view selects 506 of 624 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -5053,3 +5053,13 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0476; applied-modal-logic/temporal-logic/temporal-logic; translation/content/applied-modal-logic/temporal-logic/temporal-logic.tex:20; printed/PDF page pending
 
 - Please double-check: Please double-check: Does this olchapter driver now invoke the chapter-end hook rather than the part-end hook, matching the separate macro roles and chapter-driver pattern?
+
+## REV-OLTEAMLTLSEM-001 — OLTEAMLTLSEM-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: కాలిక సూత్ర నిర్మాణ నియమంలో మూలపు ఖాళీ Fను ముందే పరిచయమైన Ftemp కారక మాక్రోగా మార్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0478; applied-modal-logic/temporal-logic/temporal-logic-semantics; translation/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:63; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the temporal formation clause use the Ftemp macro already introduced in the operator list and used in the future truth clause?

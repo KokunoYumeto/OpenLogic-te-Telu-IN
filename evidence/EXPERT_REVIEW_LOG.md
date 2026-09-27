@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 477 of 722 draft units**. This log contains 167 terminology/sense decisions and 452 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 481 of 722 draft units**. This log contains 171 terminology/sense decisions and 453 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -4015,6 +4015,102 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక సాక్షులు కాలిక తర్కానికి ప్రత్యక్ష సాంకేతిక రూపాలు లేదా మూలంలోని చారిత్రక attributionకు ఆధారాలు కాదు. TeX దృశ్య తనిఖీ, స్వతంత్ర తాత్త్విక/భాషా సమీక్ష ఇంకా లేవు.
 
 - Please double-check: Please double-check whether “కాలిక తర్కం / కాలరూప తర్కం / భవిష్యత్ అనిశ్చిత వాక్యం / నిర్ణయవాదం, తెరచిన భవిష్యత్తు / రేఖీయ, శాఖావిభజిత, చక్రీయ కాలం” is idiomatic and technically standard for “temporal logic / tense logic / future contingent / determinism and open future / linear branching circular time” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T168 — temporal semantics / past P H and future F G / precedence / temporal model and truth
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: కాలిక అర్థవిజ్ఞానం / గత P H, భవిష్యత్ F G / పూర్వగామిత్వం / కాలిక నమూనా, సత్యం
+
+- Exact implementation: OLP-0478; applied-modal-logic/temporal-logic/temporal-logic-semantics; content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:11 ↔ translation/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:11 (OLP-0478-B005); printed/PDF page pending; OLP-0478; applied-modal-logic/temporal-logic/temporal-logic-semantics; content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:13-29 ↔ translation/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:13-30 (OLP-0478-B006); printed/PDF page pending; OLP-0478; applied-modal-logic/temporal-logic/temporal-logic-semantics; content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:58-59 ↔ translation/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:60-66 (OLP-0478-B016); printed/PDF page pending; OLP-0478; applied-modal-logic/temporal-logic/temporal-logic-semantics; content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:67-78 ↔ translation/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:76-92 (OLP-0478-B019); printed/PDF page pending; OLP-0478; applied-modal-logic/temporal-logic/temporal-logic-semantics; content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:89-120 ↔ translation/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:108-149 (OLP-0478-B022); printed/PDF page pending; OLP-0478; applied-modal-logic/temporal-logic/temporal-logic-semantics; content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:122-123 ↔ translation/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:151-155 (OLP-0478-B023); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-T167లోని కాలిక తర్కం, పూర్వ నమూనా/సత్య పదాలు కొనసాగించాం. స్థిర మూలంలోని అణు/సంధాయక/కాలిక నిర్మాణం, T-prec-V నమూనా, షరతులేని prec, గత/భవిష్యత్ నాలుగు సత్య షరతులు నిలిచాయి. F నిర్మాణ సందర్భంలోని మూల మాక్రో తప్పు ఒక ప్రకటిత సవరణతో సరిచేసాం. P/H/F/G temporal operator macros, T/prec/V, truth macros, feature tags and section identifiers remain source-controlled notation; general Telugu terms follow earlier edition decisions.
+
+- Alternatives: P/H గత, F/G భవిష్యత్ సాక్షి/సార్వత్రిక దిశలు, T-prec-V నమూనా, ద్వంద్వత్వం నిలిపి bare F మూల మాక్రో తప్పును ప్రకటించి సరిచేయడం (ఎంపిక); Fను పాఠ్య లాటిన్ చరంగా ఉంచడం (తిరస్కరణ); H/Gకి ఏదో ఒక బిందువు షరతు పెట్టడం (తిరస్కరణ); denumerableను కేవలం పరిమిత సమితిగా చెప్పడం (తిరస్కరణ); స్థానిక సాధారణ సంబంధ పేజీ కాలిక అర్థవిజ్ఞానానికి ప్రత్యక్ష నిర్వచనం అని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు కాలిక P/H/F/Gకు ప్రత్యక్ష సాంకేతిక పదం లేదా నిరూపణ ఇవ్వవు. మూలపు denumerables ఆంగ్ల వ్యాకరణ పొరపాటు భావాన్ని మార్చకుండా అనంతంగా లెక్కించదగిన సమితిగా అనువదించాం. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Please double-check: Please double-check whether “కాలిక అర్థవిజ్ఞానం / గత P H, భవిష్యత్ F G / పూర్వగామిత్వం / కాలిక నమూనా, సత్యం” is idiomatic and technically standard for “temporal semantics / past P H and future F G / precedence / temporal model and truth” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T169 — temporal frame correspondence / transitive linear dense past- and future-unbounded / irreflexivity
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: కాలిక చట్ర అనురూపత / సంక్రామక, రేఖీయ, సాంద్ర, గత-భవిష్యత్ అంచులేని / అస్వావర్తనత్వం
+
+- Exact implementation: OLP-0479; applied-modal-logic/temporal-logic/properties-accessibility; content/applied-modal-logic/temporal-logic/properties-accessibility.tex:11 ↔ translation/content/applied-modal-logic/temporal-logic/properties-accessibility.tex:11 (OLP-0479-B005); printed/PDF page pending; OLP-0479; applied-modal-logic/temporal-logic/properties-accessibility; content/applied-modal-logic/temporal-logic/properties-accessibility.tex:25-53 ↔ translation/content/applied-modal-logic/temporal-logic/properties-accessibility.tex:26-54 (OLP-0479-B008); printed/PDF page pending; OLP-0479; applied-modal-logic/temporal-logic/properties-accessibility; content/applied-modal-logic/temporal-logic/properties-accessibility.tex:55-62 ↔ translation/content/applied-modal-logic/temporal-logic/properties-accessibility.tex:56-63 (OLP-0479-B009); printed/PDF page pending
+
+- Authorities actually checked: TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-T168లోని కాలిక నమూనా/prec, TE-T155/156లోని చట్ర ప్రాప్యత పదాలను కొనసాగించాం. స్థిర మూలంలోని రెండు K రూపాలు, ఐదు మొదటి-స్థాయి చట్ర షరతులు/కాలిక సూత్రాల జతలు, అస్వావర్తనత్వం ఉదాహరణ యథాతథం. K, P/H/F/G temporal operator macros, prec, table labels and model notation remain protected; general Telugu relation terms follow earlier decisions.
+
+- Alternatives: కాలిక K పూర్వ/భవిష్యత్ రూపాలు, సంక్రామక/రేఖీయ/సాంద్ర/రెండు అంచులేని చట్ర అనురూపతలు, అస్వావర్తనత్వం వ్యక్తీకరణ పరిమితిని నిలపడం (ఎంపిక); రేఖీయత్వాన్నే షరతులేని అన్ని కాలిక నమూనాల ధర్మంగా చెప్పడం (తిరస్కరణ); గత, భవిష్యత్ అంచులేని షరతులను తారుమారు చేయడం (తిరస్కరణ); అస్వావర్తనత్వానికి మూలం ఇచ్చని కాలిక సూత్రం కల్పించడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు కాలిక చట్ర అనురూపతకు ప్రత్యక్ష నిరూపణలు ఇవ్వవు. అస్వావర్తనత్వం వ్యక్తం కానితనం మూల వాదన మాత్రమే. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Please double-check: Please double-check whether “కాలిక చట్ర అనురూపత / సంక్రామక, రేఖీయ, సాంద్ర, గత-భవిష్యత్ అంచులేని / అస్వావర్తనత్వం” is idiomatic and technically standard for “temporal frame correspondence / transitive linear dense past- and future-unbounded / irreflexivity” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T170 — Since and Until binary temporal operators / strict intermediate-time truth clauses
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: అప్పటి నుంచి, అప్పటి వరకు ద్విస్థాన కాలిక కారకాలు / మధ్యంతర కాల బిందువుల సత్య షరతులు
+
+- Exact implementation: OLP-0480; applied-modal-logic/temporal-logic/extra-temporal-operators; content/applied-modal-logic/temporal-logic/extra-temporal-operators.tex:11 ↔ translation/content/applied-modal-logic/temporal-logic/extra-temporal-operators.tex:11 (OLP-0480-B005); printed/PDF page pending; OLP-0480; applied-modal-logic/temporal-logic/extra-temporal-operators; content/applied-modal-logic/temporal-logic/extra-temporal-operators.tex:19-22 ↔ translation/content/applied-modal-logic/temporal-logic/extra-temporal-operators.tex:21-25 (OLP-0480-B007); printed/PDF page pending; OLP-0480; applied-modal-logic/temporal-logic/extra-temporal-operators; content/applied-modal-logic/temporal-logic/extra-temporal-operators.tex:26-38 ↔ translation/content/applied-modal-logic/temporal-logic/extra-temporal-operators.tex:29-44 (OLP-0480-B009); printed/PDF page pending; OLP-0480; applied-modal-logic/temporal-logic/extra-temporal-operators; content/applied-modal-logic/temporal-logic/extra-temporal-operators.tex:40-42 ↔ translation/content/applied-modal-logic/temporal-logic/extra-temporal-operators.tex:46-49 (OLP-0480-B010); printed/PDF page pending
+
+- Authorities actually checked: TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-T168/169లోని కాలిక భాష, prec సత్య షరతులు కొనసాగించాం. Since B Cలో గత సాక్షి వద్ద B, మధ్యలో C; Until B Cలో భవిష్యత్ సాక్షి వద్ద B, మధ్యలో C అనే మూల క్రమం, రెండు సహజ పఠనాలు నిలిచాయి. Since/Until remain protected operator macros; B/C, strict precedence, model satisfaction notation and labels retain source identities.
+
+- Alternatives: Since B Cలో గత B సాక్షి, మధ్య C; Until B Cలో భవిష్యత్ B సాక్షి, మధ్య C, మూల సహజ పఠనాలు నిలపడం (ఎంపిక); B/C స్థానాలను మార్చడం (తిరస్కరణ); Since/Untilను ఏకస్థాన కారకాలుగా చూపడం (తిరస్కరణ); మధ్య బిందువుల కఠిన అసమానతలను వదలడం (తిరస్కరణ); స్థానిక సాధారణ సంబంధ పేజీ ఈ కాలిక కారకాలకు ప్రత్యక్ష సాక్ష్యం అని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు Since/Untilకు ప్రత్యక్ష కాలిక తర్క పదం లేదా నిరూపణ ఇవ్వవు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Please double-check: Please double-check whether “అప్పటి నుంచి, అప్పటి వరకు ద్విస్థాన కాలిక కారకాలు / మధ్యంతర కాల బిందువుల సత్య షరతులు” is idiomatic and technically standard for “Since and Until binary temporal operators / strict intermediate-time truth clauses” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T171 — possible histories model / computational paths / suffix closure / history-relative future and possibility
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: సాధ్య చరిత్రల నమూనా / గణన మార్గాలు / శేష అనుక్రమ మూసుకుపోవడం / చరిత్రకు సంబంధిత భవిష్యత్తు, సాధ్యత
+
+- Exact implementation: OLP-0481; applied-modal-logic/temporal-logic/possible-histories; content/applied-modal-logic/temporal-logic/possible-histories.tex:11 ↔ translation/content/applied-modal-logic/temporal-logic/possible-histories.tex:11 (OLP-0481-B005); printed/PDF page pending; OLP-0481; applied-modal-logic/temporal-logic/possible-histories; content/applied-modal-logic/temporal-logic/possible-histories.tex:24-42 ↔ translation/content/applied-modal-logic/temporal-logic/possible-histories.tex:24-48 (OLP-0481-B007); printed/PDF page pending; OLP-0481; applied-modal-logic/temporal-logic/possible-histories; content/applied-modal-logic/temporal-logic/possible-histories.tex:44-52 ↔ translation/content/applied-modal-logic/temporal-logic/possible-histories.tex:50-60 (OLP-0481-B008); printed/PDF page pending; OLP-0481; applied-modal-logic/temporal-logic/possible-histories; content/applied-modal-logic/temporal-logic/possible-histories.tex:54-65 ↔ translation/content/applied-modal-logic/temporal-logic/possible-histories.tex:62-76 (OLP-0481-B009); printed/PDF page pending; OLP-0481; applied-modal-logic/temporal-logic/possible-histories; content/applied-modal-logic/temporal-logic/possible-histories.tex:67-73 ↔ translation/content/applied-modal-logic/temporal-logic/possible-histories.tex:78-86 (OLP-0481-B010); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-T168–170లోని కాలిక T/prec/V, F, మోడల్ Diamond పదాలను కొనసాగించాం. స్థిర మూలంలోని C స్థితి అనుక్రమాలు, శేష మూసుకుపోవడం, i<j క్రమం, సూత్ర సత్యం t/sigma జతకు సంబంధం, F ప్రస్తుత చరిత్ర, Diamond ప్రత్యామ్నాయ చరిత్ర, చివరి p ఉదాహరణ యథాతథం. Ftemp/Diamond, T/C/V, sigma, prec_sigma, model satisfaction macros and labels retain source-controlled notation; సాధ్య చరిత్రలు is a transparent Telugu rendering.
+
+- Alternatives: T-C-V సాధ్య చరిత్రలు, శేష అనుక్రమ మూసుకుపోవడం, sigma క్రమం, ప్రస్తుత చరిత్రలో F, ప్రత్యామ్నాయ చరిత్రలో Diamond, చివరి p ఉదాహరణ నిలపడం (ఎంపిక); Diamondను అదే చరిత్రలోని మరొక కాల బిందువుకు మార్చడం (తిరస్కరణ); Fను అన్ని ప్రత్యామ్నాయ చరిత్రల్లో సత్యంగా చెప్పడం (తిరస్కరణ); భాష మార్చడం తప్పనిసరి అని మూలం చెప్పినట్టు చూపడం (తిరస్కరణ); స్థానిక సాధారణ సంబంధ పేజీ branching-time నమూనాకు ప్రత్యక్ష నిరూపణ అని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు branching-time చరిత్రలకు ప్రత్యక్ష సాంకేతిక పదం లేదా నిరూపణ ఇవ్వవు. మూలం ఇతర కాలిక కారకాలకు సారూప్య నిర్వచనమే చెబుతుంది, పూర్తి నిర్వచనలు ఇక్కడ ఇవ్వదు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Please double-check: Please double-check whether “సాధ్య చరిత్రల నమూనా / గణన మార్గాలు / శేష అనుక్రమ మూసుకుపోవడం / చరిత్రకు సంబంధిత భవిష్యత్తు, సాధ్యత” is idiomatic and technically standard for “possible histories model / computational paths / suffix closure / history-relative future and possibility” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -14863,3 +14959,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Does this olchapter driver now invoke the chapter-end hook rather than the part-end hook, matching the separate macro roles and chapter-driver pattern?
+
+## REV-OLTEAMLTLSEM-001 — OLTEAMLTLSEM-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: కాలిక సూత్ర నిర్మాణ నియమంలో మూలపు ఖాళీ Fను ముందే పరిచయమైన Ftemp కారక మాక్రోగా మార్చి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0478; applied-modal-logic/temporal-logic/temporal-logic-semantics; temporal-logic-semantics.tex lines 26-27, 58 and 113-115 ↔ translation/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:63 (OLP-0478-B016); printed/PDF page pending
+
+- Authorities actually checked: OLTEAMLTLSEM-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: కాలిక సూత్ర నిర్మాణ నియమంలో మూలపు ఖాళీ Fను ముందే పరిచయమైన Ftemp కారక మాక్రోగా మార్చి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the temporal formation clause use the Ftemp macro already introduced in the operator list and used in the future truth clause?

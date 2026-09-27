@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "129",
+  "unit_id": "OLP-0480",
+  "unit_order": 480,
+  "source_path": "content/applied-modal-logic/temporal-logic/extra-temporal-operators.tex",
+  "blocks": 11,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10],
+  "previous_segments": 7249,
+  "previous_terms": 169,
+  "expected_corrections": 453,
+  "canon_default": ["TE-P010", "TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర అదనపు కాలిక కారకాల మూలం, తెలుగు లక్ష్యం, పూర్వ కాలిక/సంబంధ/సూత్ర పదాలు, స్థానిక సాధారణ సంబంధ/తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; Since/Until వాదన క్రమం, గత/భవిష్యత్ సాక్షి, మధ్యంతర బిందువుల సార్వత్రిక షరతులను తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P010 సాధారణ సంబంధానికి, TE-P018/024 సాధారణ తర్కం/వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. Since/Until కాలిక సత్య షరతులకు ప్రత్యక్ష సాంకేతిక సాక్ష్యం లేదు; స్థిర మూల నిర్వచనం నియంత్రణ.",
+  "term_decision": {
+    "term_id": "TE-T170",
+    "source_term": "Since and Until binary temporal operators / strict intermediate-time truth clauses",
+    "telugu": "అప్పటి నుంచి, అప్పటి వరకు ద్విస్థాన కాలిక కారకాలు / మధ్యంతర కాల బిందువుల సత్య షరతులు",
+    "status": "native_general_relation_logic_derivation_register_attested_temporal_binary_operators_source_controlled",
+    "passages": ["TE-P010", "TE-P018", "TE-P024"],
+    "basis": "TE-T168/169లోని కాలిక భాష, prec సత్య షరతులు కొనసాగించాం. Since B Cలో గత సాక్షి వద్ద B, మధ్యలో C; Until B Cలో భవిష్యత్ సాక్షి వద్ద B, మధ్యలో C అనే మూల క్రమం, రెండు సహజ పఠనాలు నిలిచాయి.",
+    "uncertainty": "స్థానిక సాక్షులు Since/Untilకు ప్రత్యక్ష కాలిక తర్క పదం లేదా నిరూపణ ఇవ్వవు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "Since/Until remain protected operator macros; B/C, strict precedence, model satisfaction notation and labels retain source identities."
+  }
+}
