@@ -774,6 +774,15 @@ locations['TE-T133']=[
  L('content/normal-modal-logic/completeness/complete-consistent-sets.tex',96,102,107,120,'tautological instance','సర్వసత్య నిదర్శనం'),
  L('content/normal-modal-logic/completeness/complete-consistent-sets.tex',122,129,140,165,'$!A \\lif !B \\notin \\Gamma$','$!A \\liff !B \\notin \\Gamma$')
 ];
+locations['TE-T134']=[
+ L('content/normal-modal-logic/completeness/lindenbaums-lemma.tex',11,11,11,11,"Lindenbaum's Lemma",'లిండెన్‌బామ్ ఉపసిద్ధాంతం'),
+ L('content/normal-modal-logic/completeness/lindenbaums-lemma.tex',13,19,13,21,'canonical model','కానానికల్ నమూనా'),
+ L('content/normal-modal-logic/completeness/lindenbaums-lemma.tex',21,24,23,26,'extending','విస్తరించే'),
+ L('content/normal-modal-logic/completeness/lindenbaums-lemma.tex',27,43,29,53,'exhaustive listing','సమగ్ర జాబితా'),
+ L('content/normal-modal-logic/completeness/lindenbaums-lemma.tex',49,59,59,71,'complete by','సంపూర్ణం'),
+ L('content/normal-modal-logic/completeness/lindenbaums-lemma.tex',66,73,78,86,'largest of','అతి పెద్దదాన్ని'),
+ L('content/normal-modal-logic/completeness/lindenbaums-lemma.tex',87,104,102,122,'if and only if','అయితే, అప్పుడు మాత్రమే')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -893,6 +902,7 @@ alternatives['TE-T130']=['ఏకదిశత, స్వావర్తనత్�
 alternatives['TE-T131']=['స్థిర అవైరుధ్యం/వైరుధ్యం జోడీని స్థానిక సుసంగతత్వం/అసంగత పర్యాయంతో కలిపి నమోదు చేసి, వ్యవస్థ-సాపేక్ష షరతులు, K/K5 ఉదాహరణలు, మూడు లక్షణాలు, విపర్యయ నిరూపణ నిలపడం; రెండు మూల స్పష్టీకరణలు ప్రకటించడం (ఎంపిక)','స్థానిక సాధారణ ప్రతిజ్ఞావాక్య అవైరుధ్య భావమే K/K5-సాపేక్ష పూర్తి సిద్ధాంతాన్ని నిరూపిస్తుందని చెప్పడం (తిరస్కరణ)','ఏ నమూనాలోనైనా వ్యవస్థ-సాపేక్ష వైరుధ్యం అసంతృప్తిని ఇస్తుందని పరిమితి లేకుండా ఉంచడం (తిరస్కరణ)','(b) అంశాన్ని విస్తరించిన సమితుల నుంచి bottom వ్యుత్పాద్యతకు తక్షణ నిర్వచనంగా పొరబడడం (తిరస్కరణ)'];
 alternatives['TE-T132']=['అధ్యాయ శీర్షిక నుంచి కానానికల్ నమూనా వరకూ పూర్వ సంపూర్ణత/అవైరుధ్యం/ప్రతినమూనా రూపాలను కొనసాగించి, K/KT/KD నిర్దుష్టత, విపర్యయ ప్రతినమూనా, పూర్తి సమితుల ప్రాప్యత, సభ్యత్వ-సత్య లక్ష్యం నిలపడం (ఎంపిక)','ఈ పరిచయంలో భవిష్యత్ కానానికల్ నిర్మాణం పూర్తిగా నిరూపించబడిందని చూపడం (తిరస్కరణ)','సౌష్ఠవ/స్వావర్తన/సీరియల్ నమూనా వర్గాలను కలపడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలే మోడల్ సంపూర్ణతకు ప్రత్యక్ష సాక్ష్యం అని చూపడం (తిరస్కరణ)'];
 alternatives['TE-T133']=['సంపూర్ణ Sigma-అవిరుద్ధత, నిగమన సంవృతత, సంయోజకాల సభ్యత్వ షరతులు, guarded exercise branches నిలిపి, నాలుగు స్థానిక నిరూపణ సమస్యలను పక్కనే ప్రకటించి సరిచేయడం (ఎంపిక)','నిషేధం రెండవ దిశలో A/నిషేధ-A పొరపాటును నిలపడం (తిరస్కరణ)','వికల్ప, తుల్యత నిరూపణల తప్పిన దిశలను మౌనంగా వదలడం (తిరస్కరణ)','సాధారణ స్థానిక అవైరుధ్య పేజీనే మోడల్ పూర్తి సమితుల ప్రత్యక్ష నిరూపణగా చూపడం (తిరస్కరణ)'];
+alternatives['TE-T134']=['లిండెన్‌బామ్ ఉపసిద్ధాంతం, సంపూర్ణ Sigma-అవిరుద్ధ విస్తరణ, సమగ్ర జాబితా, పరిమిత సాక్ష్య అవైరుధ్య వాదనను నిలిపి, జాబితా దశ పొడవును గరిష్ఠంగా nగా ప్రకటితంగా సరిచేయడం (ఎంపిక)','సరిగ్గా n పొడవు దశలనే సమగ్ర జాబితా అని అనువదించడం (తిరస్కరణ)','స్థానిక సాధారణ ప్రతిజ్ఞావాక్య పేజీలే మోడల్ లిండెన్‌బామ్ నిరూపణను ప్రత్యక్షంగా ఇస్తాయని చెప్పడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -908,7 +918,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T133 record the Batch 025--Batch 092 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T134 record the Batch 025--Batch 093 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1230,6 +1240,7 @@ const correctionQuestions={
  ,'OLTENMLCOMCCS-002':'Does the non-exercise disjunction proof also establish membership from either disjunct by tautology and deductive closure, while leaving the exercise branch open?'
  ,'OLTENMLCOMCCS-003':'Does the biconditional converse start from A iff B not in Gamma, which alone licenses the next negated-biconditional membership step?'
  ,'OLTENMLCOMCCS-004':'Is the neither-belongs case excluded using completeness and closure before the biconditional converse conclusion, without silently filling the exercise branch?'
+ ,'OLTENMLCOMLIN-001':'Does the at-most-n schedule list every finite formula while keeping each stage finite, including short formulas using higher-indexed variables?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

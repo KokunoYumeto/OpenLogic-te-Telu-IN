@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLCOMLIN-20260927",
+  "unit_id": "OLP-0444",
+  "source_path": "content/normal-modal-logic/completeness/lindenbaums-lemma.tex",
+  "source_sha256": "1708ac2baa1773893a9bff57d63c9201aaea7c990213c76478fb4065a269196b",
+  "findings": [
+    {
+      "finding_id": "OLTENMLCOMLIN-001",
+      "source_locator": "lindenbaums-lemma.tex lines 27-31",
+      "classification": "exact_length_diagonal_listing_not_exhaustive",
+      "source_issue": "At stage n the example lists only length-n formulas over the first n+1 variables, so short formulas using a higher-index variable are never listed.",
+      "minimal_treatment": "List formulas of length at most n over the first n+1 variables, retaining finite stages and allowed repetition; disclose the source correction beside the Telugu construction.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

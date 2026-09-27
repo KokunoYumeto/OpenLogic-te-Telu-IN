@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 443 of 722 draft units**. This view selects 461 of 541 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 444 of 722 draft units**. This view selects 462 of 543 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4613,3 +4613,13 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0443; normal-modal-logic/completeness/complete-consistent-sets; translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:156; printed/PDF page pending
 
 - Please double-check: Please double-check: Is the neither-belongs case excluded using completeness and closure before the biconditional converse conclusion, without silently filling the exercise branch?
+
+## REV-OLTENMLCOMLIN-001 — OLTENMLCOMLIN-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: దశ nలో పొడవు సరిగ్గా n అనే స్థిర మూల ఉదాహరణను గరిష్ఠంగా nగా సవరించి, ప్రతి దశ పరిమితతను, మొత్తం జాబితా సమగ్రతను పక్కనే ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Occurrences: OLP-0444; normal-modal-logic/completeness/lindenbaums-lemma; translation/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:35; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the at-most-n schedule list every finite formula while keeping each stage finite, including short formulas using higher-indexed variables?

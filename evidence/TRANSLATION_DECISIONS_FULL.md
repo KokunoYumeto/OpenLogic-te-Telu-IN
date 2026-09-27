@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **443 of 722 source units drafted**. This readable view contains all 541 decisions and 1181 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **444 of 722 source units drafted**. This readable view contains all 543 decisions and 1189 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4021,6 +4021,38 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T133-OCC-006; OLP-0443; OLP-0443-B014; source upstream/content/normal-modal-logic/completeness/complete-consistent-sets.tex:83-85 bytes 3317-3491 SHA-256 b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1; target translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:90-96 bytes 5389-6043 SHA-256 b411c1439b385f38bea20933fe8e8f83340fe5726bea914c40e3927a4daf4bdc; reader page pending.
   - te-Telu-IN-TE-T133-OCC-007; OLP-0443; OLP-0443-B016; source upstream/content/normal-modal-logic/completeness/complete-consistent-sets.tex:96-102 bytes 3982-4436 SHA-256 b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1; target translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:107-120 bytes 6697-8167 SHA-256 b411c1439b385f38bea20933fe8e8f83340fe5726bea914c40e3927a4daf4bdc; reader page pending.
   - te-Telu-IN-TE-T133-OCC-008; OLP-0443; OLP-0443-B019; source upstream/content/normal-modal-logic/completeness/complete-consistent-sets.tex:122-131 bytes 5438-5989 SHA-256 b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1; target translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:141-164 bytes 9605-11814 SHA-256 b411c1439b385f38bea20933fe8e8f83340fe5726bea914c40e3927a4daf4bdc; reader page pending.
+
+## te-Telu-IN-TE-T134 — Lindenbaum's Lemma / complete Sigma-consistent extension / exhaustive enumeration / canonical-model world / finite-witness consistency
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: లిండెన్‌బామ్ ఉపసిద్ధాంతం / సంపూర్ణ Sigma-అవిరుద్ధ విస్తరణ / సమగ్ర జాబితా / కానానికల్ నమూనా లోకం / పరిమిత సాక్ష్య అవైరుధ్యం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “Lindenbaum's Lemma / complete Sigma-consistent extension / exhaustive enumeration / canonical-model world / finite-witness consistency” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక పేజీలు ఈ మోడల్-ప్రత్యేక ఉపసిద్ధాంతం, సమగ్ర జాబితా షెడ్యూలును ప్రత్యక్షంగా ఇవ్వవు. స్థిర మూలం ఇచ్చిన సరిగ్గా n పొడవు దశలు సమగ్రం కావు; గరిష్ఠంగా n పొడవుగా చేసిన సవరణను OLTENMLCOMLIN-001లో ప్రకటించాం.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, TE-P024లో నియమ-వ్యుత్పత్తి, TE-P026లో సాధారణ సమితి సుసంగతత్వం/అసంగత ప్రత్యక్షంగా చూశాం. TE-T034/073/131–133లో స్థిర అవైరుధ్యం, నిగమన సంవృతత, కానానికల్ పదజాలాన్ని కొనసాగించాం. లిండెన్‌బామ్ నిర్మాణం, Sigma-సాపేక్ష సంపూర్ణత, పరిమిత సాక్ష్య నిరూపణ OLP-0444 స్థిర మూలం నుంచే తీసుకున్నాం. Lindenbaum eponym, Sigma, Gamma, Delta, p-indexed variables, formula and derivability macros రక్షిత గణిత సంకేతాలు.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P026 [checked_context_only], PDF page 88; printed page 81; Consistency section; Direct consistency/inconsistency terminology; not direct completeness terminology.
+
+- Alternatives: లిండెన్‌బామ్ ఉపసిద్ధాంతం, సంపూర్ణ Sigma-అవిరుద్ధ విస్తరణ, సమగ్ర జాబితా, పరిమిత సాక్ష్య అవైరుధ్య వాదనను నిలిపి, జాబితా దశ పొడవును గరిష్ఠంగా nగా ప్రకటితంగా సరిచేయడం [viable_alternative: ఎంపిక] | సరిగ్గా n పొడవు దశలనే సమగ్ర జాబితా అని అనువదించడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ ప్రతిజ్ఞావాక్య పేజీలే మోడల్ లిండెన్‌బామ్ నిరూపణను ప్రత్యక్షంగా ఇస్తాయని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “లిండెన్‌బామ్ ఉపసిద్ధాంతం / సంపూర్ణ Sigma-అవిరుద్ధ విస్తరణ / సమగ్ర జాబితా / కానానికల్ నమూనా లోకం / పరిమిత సాక్ష్య అవైరుధ్యం” is idiomatic and technically standard for “Lindenbaum's Lemma / complete Sigma-consistent extension / exhaustive enumeration / canonical-model world / finite-witness consistency” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T134-OCC-001; OLP-0444; OLP-0444-B005; source upstream/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:11 bytes 188-219 SHA-256 1708ac2baa1773893a9bff57d63c9201aaea7c990213c76478fb4065a269196b; target translation/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:11 bytes 188-271 SHA-256 d9131eac42141ab451b096071aca693801c995d179dd0160f14cd401349c290c; reader page pending.
+  - te-Telu-IN-TE-T134-OCC-002; OLP-0444; OLP-0444-B006; source upstream/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:13-19 bytes 220-691 SHA-256 1708ac2baa1773893a9bff57d63c9201aaea7c990213c76478fb4065a269196b; target translation/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:13-21 bytes 272-1355 SHA-256 d9131eac42141ab451b096071aca693801c995d179dd0160f14cd401349c290c; reader page pending.
+  - te-Telu-IN-TE-T134-OCC-003; OLP-0444; OLP-0444-B007; source upstream/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:21-24 bytes 692-875 SHA-256 1708ac2baa1773893a9bff57d63c9201aaea7c990213c76478fb4065a269196b; target translation/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:23-26 bytes 1356-1697 SHA-256 d9131eac42141ab451b096071aca693801c995d179dd0160f14cd401349c290c; reader page pending.
+  - te-Telu-IN-TE-T134-OCC-004; OLP-0444; OLP-0444-B008; source upstream/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:26-43 bytes 876-1639 SHA-256 1708ac2baa1773893a9bff57d63c9201aaea7c990213c76478fb4065a269196b; target translation/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:28-53 bytes 1698-3894 SHA-256 d9131eac42141ab451b096071aca693801c995d179dd0160f14cd401349c290c; reader page pending.
+  - te-Telu-IN-TE-T134-OCC-005; OLP-0444; OLP-0444-B010; source upstream/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:49-59 bytes 1817-2506 SHA-256 1708ac2baa1773893a9bff57d63c9201aaea7c990213c76478fb4065a269196b; target translation/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:59-71 bytes 4210-5418 SHA-256 d9131eac42141ab451b096071aca693801c995d179dd0160f14cd401349c290c; reader page pending.
+  - te-Telu-IN-TE-T134-OCC-006; OLP-0444; OLP-0444-B012; source upstream/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:66-73 bytes 2743-3275 SHA-256 1708ac2baa1773893a9bff57d63c9201aaea7c990213c76478fb4065a269196b; target translation/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:78-86 bytes 5783-6588 SHA-256 d9131eac42141ab451b096071aca693801c995d179dd0160f14cd401349c290c; reader page pending.
+  - te-Telu-IN-TE-T134-OCC-007; OLP-0444; OLP-0444-B014; source upstream/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:87-92 bytes 3977-4294 SHA-256 1708ac2baa1773893a9bff57d63c9201aaea7c990213c76478fb4065a269196b; target translation/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:102-108 bytes 7696-8274 SHA-256 d9131eac42141ab451b096071aca693801c995d179dd0160f14cd401349c290c; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -14709,3 +14741,29 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLCOMCCS-004-OCC-001; OLP-0443; OLP-0443-B019; source upstream/content/normal-modal-logic/completeness/complete-consistent-sets.tex:122-131 bytes 5438-5989 SHA-256 b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1; target translation/content/normal-modal-logic/completeness/complete-consistent-sets.tex:156 bytes 11041-11129 SHA-256 b411c1439b385f38bea20933fe8e8f83340fe5726bea914c40e3927a4daf4bdc; reader page pending.
+
+## te-Telu-IN-OLTENMLCOMLIN-001 — OLTENMLCOMLIN-001: exact length diagonal listing not exhaustive
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: దశ nలో పొడవు సరిగ్గా n అనే స్థిర మూల ఉదాహరణను గరిష్ఠంగా nగా సవరించి, ప్రతి దశ పరిమితతను, మొత్తం జాబితా సమగ్రతను పక్కనే ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Intended sense: Repair the audited exact length diagonal listing not exhaustive at lindenbaums-lemma.tex lines 27-31, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLCOMLIN-20260927:OLTENMLCOMLIN-001 [checked_supports], content/normal-modal-logic/completeness/lindenbaums-lemma.tex; lindenbaums-lemma.tex lines 27-31; exact_length_diagonal_listing_not_exhaustive; దశ nలో పొడవు సరిగ్గా n అనే స్థిర మూల ఉదాహరణను గరిష్ఠంగా nగా సవరించి, ప్రతి దశ పరిమితతను, మొత్తం జాబితా సమగ్రతను పక్కనే ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the at-most-n schedule list every finite formula while keeping each stage finite, including short formulas using higher-indexed variables?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLCOMLIN-001-OCC-001; OLP-0444; OLP-0444-B008; source upstream/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:26-43 bytes 876-1639 SHA-256 1708ac2baa1773893a9bff57d63c9201aaea7c990213c76478fb4065a269196b; target translation/content/normal-modal-logic/completeness/lindenbaums-lemma.tex:35 bytes 2405-2497 SHA-256 d9131eac42141ab451b096071aca693801c995d179dd0160f14cd401349c290c; reader page pending.

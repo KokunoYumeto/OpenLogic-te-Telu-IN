@@ -1,0 +1,124 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: lindenbaums-lemma
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{lin}
+
+\olsection{లిండెన్‌బామ్ ఉపసిద్ధాంతం}
+
+లిండెన్‌బామ్ ఉపసిద్ధాంతం ప్రకారం, ప్రతి $\Sigma$-అవిరుద్ధ
+\tetoken{సూత్రాల}{!!{formula}s} సమితి కనీసం ఒక
+\emph{సంపూర్ణ} $\Sigma$-అవిరుద్ధ సమితిలో ఇమిడి ఉంటుంది.
+కానానికల్ నమూనా నిర్మాణంలో, ప్రతి సంపూర్ణ $\Sigma$-అవిరుద్ధ
+సమితి~$\Delta$కు ఆ నమూనాలో ఒక లోకం ఉంటుందని చూపుతాం;
+ఆ లోకంలో సరిగ్గా $\Delta$లోని \tetoken{సూత్రాలు}{!!{formula}s}
+మాత్రమే సత్యం. కనుక ప్రతి $\Sigma$-అవిరుద్ధ సమితి
+కానానికల్ నమూనాలోని ఏదో ఒక లోకంలో సత్యమని
+లిండెన్‌బామ్ ఉపసిద్ధాంతం హామీ ఇస్తుంది.
+
+\begin{thm}[లిండెన్‌బామ్ ఉపసిద్ధాంతం]\ollabel{thm:lindenbaum}
+  $\Gamma$ $\Sigma$-అవిరుద్ధమైతే, $\Gamma$ను విస్తరించే
+  సంపూర్ణ $\Sigma$-అవిరుద్ధ సమితి $\Delta$ ఒకటి ఉంటుంది.
+\end{thm}
+
+\begin{proof}
+$!A_0$, $!A_1$, \dots{} అని భాషలోని అన్ని సూత్రాల
+సమగ్ర జాబితాను తీసుకుందాం (పునరావృత్తులు ఉండవచ్చు). ఉదాహరణకు,
+ముందుగా $\Obj p_0$ను జాబితాలో చేర్చి, ప్రతి $n \ge 1$
+దశలో పొడవు గరిష్ఠంగా~$n$ ఉండి, $\Obj p_0$,
+\dots,~$\Obj p_n$లలోని చరరాశులను మాత్రమే ఉపయోగించే
+పరిమిత సంఖ్యలోని సూత్రాలన్నిటినీ చేర్చవచ్చు.
+\sourcecorrection{OLTENMLCOMLIN-001}{స్థిర మూలంలో ప్రతి $n$
+  దశకు పొడవు సరిగ్గా $n$ ఉన్న సూత్రాలనే చేర్చమని ఉంది. అలా
+  చేస్తే తక్కువ పొడవు గల, ఎక్కువ సూచికగల చరరాశిని వాడే
+  సూత్రాలు జాబితా నుంచి తప్పిపోతాయి. పొడవు గరిష్ఠంగా $n$
+  అని తీసుకుంటే ప్రతి దశ పరిమితంగానే ఉండి, జాబితా సమగ్రమవుతుంది.}
+ఇప్పుడు $n$పై ఆగమనంతో \tetoken{సూత్రాల}{!!{formula}s}
+సమితులు $\Delta_n$ను నిర్వచించి, తరువాత $\Delta = \bigcup_n
+\Delta_n$ అని ఉంచుదాం. మొదట $\Delta_0 = \Gamma$ అని
+ఉంచుదాం. $\Delta_n$ నిర్వచించబడిందని అనుకుని,
+$\Delta_{n+1}$ను ఇలా నిర్వచిద్దాం:
+\[
+\Delta_{n+1} =
+\begin{cases}
+  \Delta_n \cup \{!A_n\}, & \text{$\Delta_n \cup \{ !A_n\}$
+    $\Sigma$-అవిరుద్ధమైతే;} \\
+  \Delta_n \cup \{ \lnot !A_n\}, & \text{లేకపోతే.}
+\end{cases}
+\]
+ఇప్పుడు $\Delta = \bigcup_{n=0}^\infty \Delta_n$ అనుకుందాం.
+
+ఈ నిర్వచనం నిజంగానే కావలసిన ధర్మాలుగల $\Delta$ సమితిని
+ఇస్తుందని, అంటే $\Gamma \subseteq \Delta$ మరియు $\Delta$
+సంపూర్ణ $\Sigma$-అవిరుద్ధమని, చూపాలి.
+
+నిర్మాణం వల్ల $\Delta_0 \subseteq \Delta$, అలాగే
+$\Delta_0 = \Gamma$; కాబట్టి $\Gamma \subseteq \Delta$
+స్పష్టమే. నిజానికి $\Delta$ అన్ని $\Delta_n$ల సమ్మేళనం
+కనుక ప్రతి~$n$కు $\Delta_n \subseteq \Delta$. (నిర్మాణంలోని
+ప్రతి దశలో ఇప్పటికే నిర్మించిన సమితికి
+\tetoken{ఒక సూత్రాన్ని}{!!a{formula}} చేర్చుతాం; కనుక
+$\Delta_n \subseteq \Delta_{n+1}$. $\subseteq$ సంక్రమణీయత
+వల్ల $n \le m$ అయినప్పుడల్లా $\Delta_n \subseteq
+\Delta_{m}$.) ప్రతి దశలో $!A_n$ లేదా $\lnot !A_n$ను
+చేర్చుతాం; ప్రతి \tetoken{సూత్రం}{!!{formula}} అన్ని~$!A_n$ల
+జాబితాలో (కనీసం ఒకసారైనా) వస్తుంది. కనుక ప్రతి $!A$కు
+$!A \in \Delta$ లేదా $\lnot !A \in \Delta$; నిర్వచనం
+ప్రకారం $\Delta$ సంపూర్ణం.
+
+చివరగా $\Delta$ $\Sigma$-అవిరుద్ధమని చూపాలి. దీనికోసం
+(a) $\Delta$ $\Sigma$-విరుద్ధమైతే, ఏదో ఒక $\Delta_n$
+$\Sigma$-విరుద్ధమవుతుందని, (b) అన్ని $\Delta_n$లు
+$\Sigma$-అవిరుద్ధమని చూపుతాం.
+
+$\Delta$ $\Sigma$-విరుద్ధమని అనుకుందాం. అప్పుడు $\Delta
+\Proves[\Sigma] \lfalse$; అంటే, $!A_1$, \dots,~$!A_k \in
+\Delta$ ఉండి, $\Sigma \Proves !A_1 \lif (!A_2 \lif \cdots (!A_k
+\lif \lfalse)\dots)$. $\Delta = \bigcup_{n=0}^\infty \Delta_n$
+కనుక, ప్రతి $!A_i \in \Delta_{n_i}$ అయ్యే ఏదో ఒక~$n_i$ ఉంటుంది.
+ఈ సూచికలలో అతి పెద్దదాన్ని $n$ అనుకుందాం. $n_i \le n$ కనుక
+$\Delta_{n_i} \subseteq \Delta_n$. అందువల్ల ఆ $!A_i$లన్నీ
+ఒకే~$\Delta_n$లో ఉంటాయి. అప్పుడు $\Delta_n
+\Proves[\Sigma] \lfalse$; అంటే $\Delta_n$ $\Sigma$-విరుద్ధం.
+
+ప్రతి $\Delta_n$ $\Sigma$-అవిరుద్ధమని చూపడానికి $n$పై
+సరళ ఆగమనం వాడుదాం. $\Delta_0 = \Gamma$; $\Gamma$
+$\Sigma$-అవిరుద్ధమని మన పరికల్పన. కనుక $n = 0$కు వాదన
+నిజం. ఇప్పుడు $n$కు నిజమని, అంటే $\Delta_n$
+$\Sigma$-అవిరుద్ధమని అనుకుందాం. $\Delta_n \cup \{!A_n\}$
+$\Sigma$-అవిరుద్ధమైతే $\Delta_{n+1}$ అదే; లేకపోతే
+$\Delta_n \cup \{\lnot!A_n\}$ అవుతుంది. మొదటి సందర్భంలో
+$\Delta_{n+1}$ $\Sigma$-అవిరుద్ధమని స్పష్టమే. అయితే
+\olref[prf][con]{prop:consistencyfacts}\olref[prf][con]{prop:consistencyfacts-c}
+ప్రకారం $\Delta_n \cup \{!A_n\}$ లేదా $\Delta_n \cup
+\{\lnot!A_n\}$ అవిరుద్ధమే. కనుక రెండవ సందర్భంలోనూ
+$\Delta_{n+1}$ అవిరుద్ధం.
+\end{proof}
+
+\begin{cor}\ollabel{cor:provability-characterization}
+  $\Gamma \Proves[\Sigma] !A$ అయితే, అప్పుడు మాత్రమే
+  $\Gamma$ను విస్తరించే ప్రతి సంపూర్ణ $\Sigma$-అవిరుద్ధ
+  సమితి $\Delta$లో $!A \in \Delta$ (ఇది $\Gamma = \emptyset$
+  అయినప్పుడూ వర్తిస్తుంది; అప్పుడు మోడల్ వ్యవస్థ $\Sigma$కు
+  మరొక లక్షణీకరణ లభిస్తుంది).
+\end{cor}
+
+\begin{proof}
+  $\Gamma \Proves[\Sigma] !A$ అనుకుని, $\Gamma$ను విస్తరించే
+  ఏదైనా సంపూర్ణ $\Sigma$-అవిరుద్ధ సమితి $\Delta$ను తీసుకుందాం.
+  $!A \notin \Delta$ అయితే గరిష్ఠత వల్ల $\lnot!A \in \Delta$.
+  అప్పుడు ఏకదిశత్వం వల్ల $\Delta \Proves[\Sigma] !A$;
+  స్వప్రతిఫలనత్వం వల్ల $\Delta \Proves[\Sigma] \lnot!A$.
+  కాబట్టి $\Delta$ విరుద్ధమవుతుంది. విపరీతంగా,
+  $\Gamma \Proves/[\Sigma] !A$ అయితే $\Gamma \cup \{
+  \lnot!A\}$ $\Sigma$-అవిరుద్ధం. లిండెన్‌బామ్
+  ఉపసిద్ధాంతం ప్రకారం $\Gamma \cup \{ \lnot!A \}$ను
+  విస్తరించే సంపూర్ణ అవిరుద్ధ సమితి $\Delta$ ఒకటి ఉంటుంది.
+  అవిరుధ్యం వల్ల $!A \notin \Delta$.
+\end{proof}
+
+\end{document}
