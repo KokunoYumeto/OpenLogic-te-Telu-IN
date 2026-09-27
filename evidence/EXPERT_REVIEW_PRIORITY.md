@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 454 of 722 draft units**. This view selects 474 of 565 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 455 of 722 draft units**. This view selects 474 of 566 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 

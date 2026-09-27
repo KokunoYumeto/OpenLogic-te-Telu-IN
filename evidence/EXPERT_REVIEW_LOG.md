@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 454 of 722 draft units**. This log contains 144 terminology/sense decisions and 421 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 455 of 722 draft units**. This log contains 145 terminology/sense decisions and 421 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3463,6 +3463,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: సూక్ష్మ/స్థూల పదాలకు స్వతంత్ర స్థానిక modal-filtration సాక్ష్యం లేదు; ఈ పదాలు ప్రాప్యత జతల సమితి చేరిక క్రమానికి నిర్వచనాధీనంగా ఉన్నాయి. చిత్రాలు, guarded శాఖల సూత్రార్థం మూల నియంత్రితం.
 
 - Please double-check: Please double-check whether “అత్యంత సూక్ష్మ, అత్యంత స్థూల వడపోతలు; ఐచ్ఛిక వర్గ-ప్రాప్యత జతలు” is idiomatic and technically standard for “finest and coarsest filtrations; optional quotient accessibility edges” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T145 — finite filtration; injection into the power set of Gamma; 2^n world bound
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: పరిమిత వడపోత; గామా ఘాత సమితిలోకి ఒకటి-ఒకటి ప్రమేయం; 2^n లోక హద్దు
+
+- Exact implementation: OLP-0455; normal-modal-logic/filtrations/finite; content/normal-modal-logic/filtrations/finite.tex:11 ↔ translation/content/normal-modal-logic/filtrations/finite.tex:11 (OLP-0455-B005); printed/PDF page pending; OLP-0455; normal-modal-logic/filtrations/finite; content/normal-modal-logic/filtrations/finite.tex:13-18 ↔ translation/content/normal-modal-logic/filtrations/finite.tex:13-22 (OLP-0455-B006); printed/PDF page pending; OLP-0455; normal-modal-logic/filtrations/finite; content/normal-modal-logic/filtrations/finite.tex:20-23 ↔ translation/content/normal-modal-logic/filtrations/finite.tex:24-28 (OLP-0455-B007); printed/PDF page pending; OLP-0455; normal-modal-logic/filtrations/finite; content/normal-modal-logic/filtrations/finite.tex:25-41 ↔ translation/content/normal-modal-logic/filtrations/finite.tex:30-54 (OLP-0455-B008); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P022, PDF 84, printed 77, Implication and equivalence headings
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P008 సమితి/ఉపసమితి, TE-P010 సంబంధం, TE-P011 ప్రమేయం, TE-P022 తుల్యత సాధారణ పదాన్ని చూపుతాయి. పూర్వ TE-T023లో స్థిర ఒకటి-ఒకటి పారదర్శక రూపాన్ని కొనసాగించాం. ప్రతి వడపోత లోక వర్గం Gammaలో సత్యమైన సూత్రాల ఉపసమితికి ఇంజెక్టివ్‌గా వెళ్తుందని, అందువల్ల |W*|≤2^n అని మూల నిరూపణతో నియంత్రించాం. Gamma, W*, power-set and cardinality macros, and file/label identifiers remain protected source notation.
+
+- Alternatives: పరిమిత Gammaలోనే ప్రతి వడపోత లోక వర్గాన్ని దాని సత్య సూత్రాల ఉపసమితికి పంపే ఒకటి-ఒకటి ప్రమేయం, |W*|≤|P(Gamma)|=2^n హద్దును నిలపడం (ఎంపిక); వడపోత నిర్వచనమే Gammaతో సంబంధం లేకుండా పరిమితత్వం ఇస్తుందని చెప్పడం (తిరస్కరణ); ప్రతి సాధ్య ఉపసమితి తప్పనిసరిగా ఒక వర్గం అని భావించి సమానత్వం చెప్పడం (తిరస్కరణ); సాధారణ స్థానిక సమితి పేజీనే modal ఫిల్ట్రేషన్ నిరూపణగా చూపడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు మోడల్ వడపోత పరిమితత్వం లేదా 2^n హద్దును ప్రత్యక్షంగా నిరూపించవు. పరిమిత Gamma మాత్రమే హద్దుకు పరికల్పన; సాధారణ అనంత Gammaకు కాదు.
+
+- Please double-check: Please double-check whether “పరిమిత వడపోత; గామా ఘాత సమితిలోకి ఒకటి-ఒకటి ప్రమేయం; 2^n లోక హద్దు” is idiomatic and technically standard for “finite filtration; injection into the power set of Gamma; 2^n world bound” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 

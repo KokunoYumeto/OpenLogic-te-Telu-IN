@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **454 of 722 source units drafted**. This readable view contains all 565 decisions and 1276 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **455 of 722 source units drafted**. This readable view contains all 566 decisions and 1280 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4378,6 +4378,35 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T144-OCC-008; OLP-0454; OLP-0454-B020; source upstream/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:128-136 bytes 5113-5491 SHA-256 8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484; target translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:156-164 bytes 8518-8938 SHA-256 94b3a69b6606e4e4f849d29a9996748b011b73e3d05248029f2ae30f3773b639; reader page pending.
   - te-Telu-IN-TE-T144-OCC-009; OLP-0454; OLP-0454-B022; source upstream/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:149-166 bytes 6137-7029 SHA-256 8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484; target translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:186-207 bytes 10436-11797 SHA-256 94b3a69b6606e4e4f849d29a9996748b011b73e3d05248029f2ae30f3773b639; reader page pending.
   - te-Telu-IN-TE-T144-OCC-010; OLP-0454; OLP-0454-B026; source upstream/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:222-226 bytes 9364-9595 SHA-256 8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484; target translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:274-280 bytes 15094-15612 SHA-256 94b3a69b6606e4e4f849d29a9996748b011b73e3d05248029f2ae30f3773b639; reader page pending.
+
+## te-Telu-IN-TE-T145 — finite filtration; injection into the power set of Gamma; 2^n world bound
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: పరిమిత వడపోత; గామా ఘాత సమితిలోకి ఒకటి-ఒకటి ప్రమేయం; 2^n లోక హద్దు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “finite filtration; injection into the power set of Gamma; 2^n world bound” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు మోడల్ వడపోత పరిమితత్వం లేదా 2^n హద్దును ప్రత్యక్షంగా నిరూపించవు. పరిమిత Gamma మాత్రమే హద్దుకు పరికల్పన; సాధారణ అనంత Gammaకు కాదు.
+
+- Rationale: TE-P008 సమితి/ఉపసమితి, TE-P010 సంబంధం, TE-P011 ప్రమేయం, TE-P022 తుల్యత సాధారణ పదాన్ని చూపుతాయి. పూర్వ TE-T023లో స్థిర ఒకటి-ఒకటి పారదర్శక రూపాన్ని కొనసాగించాం. ప్రతి వడపోత లోక వర్గం Gammaలో సత్యమైన సూత్రాల ఉపసమితికి ఇంజెక్టివ్‌గా వెళ్తుందని, అందువల్ల |W*|≤2^n అని మూల నిరూపణతో నియంత్రించాం. Gamma, W*, power-set and cardinality macros, and file/label identifiers remain protected source notation.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P022 [checked_context_only], PDF page 84; printed page 77; Implication and equivalence headings; Direct implication and equivalence terminology in propositional logic.
+
+- Alternatives: పరిమిత Gammaలోనే ప్రతి వడపోత లోక వర్గాన్ని దాని సత్య సూత్రాల ఉపసమితికి పంపే ఒకటి-ఒకటి ప్రమేయం, |W*|≤|P(Gamma)|=2^n హద్దును నిలపడం [viable_alternative: ఎంపిక] | వడపోత నిర్వచనమే Gammaతో సంబంధం లేకుండా పరిమితత్వం ఇస్తుందని చెప్పడం [viable_alternative: తిరస్కరణ] | ప్రతి సాధ్య ఉపసమితి తప్పనిసరిగా ఒక వర్గం అని భావించి సమానత్వం చెప్పడం [viable_alternative: తిరస్కరణ] | సాధారణ స్థానిక సమితి పేజీనే modal ఫిల్ట్రేషన్ నిరూపణగా చూపడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “పరిమిత వడపోత; గామా ఘాత సమితిలోకి ఒకటి-ఒకటి ప్రమేయం; 2^n లోక హద్దు” is idiomatic and technically standard for “finite filtration; injection into the power set of Gamma; 2^n world bound” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T145-OCC-001; OLP-0455; OLP-0455-B005; source upstream/content/normal-modal-logic/filtrations/finite.tex:11 bytes 176-211 SHA-256 aea5dd77f54889d35f027a23600c24a206ad42e7a6d736d51c16862ddd0997f5; target translation/content/normal-modal-logic/filtrations/finite.tex:11 bytes 176-238 SHA-256 72c9d37fd7ce286ee0175930604beefb88ed91f266bdd18168d3d315f1b2176d; reader page pending.
+  - te-Telu-IN-TE-T145-OCC-002; OLP-0455; OLP-0455-B006; source upstream/content/normal-modal-logic/filtrations/finite.tex:13-18 bytes 212-617 SHA-256 aea5dd77f54889d35f027a23600c24a206ad42e7a6d736d51c16862ddd0997f5; target translation/content/normal-modal-logic/filtrations/finite.tex:13-22 bytes 239-1162 SHA-256 72c9d37fd7ce286ee0175930604beefb88ed91f266bdd18168d3d315f1b2176d; reader page pending.
+  - te-Telu-IN-TE-T145-OCC-003; OLP-0455; OLP-0455-B007; source upstream/content/normal-modal-logic/filtrations/finite.tex:20-23 bytes 618-790 SHA-256 aea5dd77f54889d35f027a23600c24a206ad42e7a6d736d51c16862ddd0997f5; target translation/content/normal-modal-logic/filtrations/finite.tex:24-28 bytes 1163-1417 SHA-256 72c9d37fd7ce286ee0175930604beefb88ed91f266bdd18168d3d315f1b2176d; reader page pending.
+  - te-Telu-IN-TE-T145-OCC-004; OLP-0455; OLP-0455-B008; source upstream/content/normal-modal-logic/filtrations/finite.tex:25-41 bytes 791-1775 SHA-256 aea5dd77f54889d35f027a23600c24a206ad42e7a6d736d51c16862ddd0997f5; target translation/content/normal-modal-logic/filtrations/finite.tex:30-54 bytes 1418-3451 SHA-256 72c9d37fd7ce286ee0175930604beefb88ed91f266bdd18168d3d315f1b2176d; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 

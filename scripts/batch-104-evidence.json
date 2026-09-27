@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "104",
+  "unit_id": "OLP-0455",
+  "unit_order": 455,
+  "source_path": "content/normal-modal-logic/filtrations/finite.tex",
+  "blocks": 9,
+  "linguistic_blocks": [5, 6, 7, 8],
+  "previous_segments": 6925,
+  "previous_terms": 144,
+  "expected_corrections": 421,
+  "canon_default": ["TE-P008", "TE-P010", "TE-P011", "TE-P022"],
+  "canon_by_block": {
+    "5": ["TE-P008", "TE-P010"],
+    "6": ["TE-P008", "TE-P010", "TE-P022"],
+    "7": ["TE-P008", "TE-P010"],
+    "8": ["TE-P008", "TE-P010", "TE-P011", "TE-P022"]
+  },
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర మూలం, తెలుగు లక్ష్యం, నేరుగా మళ్లీ చూసిన స్థానిక సమితి/సంబంధం/ప్రమేయం పేజీలు, పూర్వ తుల్యత పేజీ ఎదురెదురు చదివాం; 2^n హద్దు మూల సమితి-ప్రమేయ వాదనతో నియంత్రితం.",
+  "evidence_limit": "TE-P008/010/011 సాధారణ సమితి, సంబంధం, ప్రమేయ వినియోగానికే; TE-P022 తుల్యత పదానికే ప్రత్యక్ష సాక్ష్యం. ఒకటి-ఒకటి రూపం పూర్వ TE-T023 పారదర్శక నిర్ణయం; స్థానిక పేజీలు modal-filtration పరిమితత్వ సిద్ధాంతాన్ని ప్రత్యక్షంగా ఇవ్వవు.",
+  "term_decision": {
+    "term_id": "TE-T145",
+    "source_term": "finite filtration; injection into the power set of Gamma; 2^n world bound",
+    "telugu": "పరిమిత వడపోత; గామా ఘాత సమితిలోకి ఒకటి-ఒకటి ప్రమేయం; 2^n లోక హద్దు",
+    "status": "native_general_set_function_register_attested_modal_bound_source_controlled",
+    "passages": ["TE-P008", "TE-P010", "TE-P011", "TE-P022"],
+    "basis": "TE-P008 సమితి/ఉపసమితి, TE-P010 సంబంధం, TE-P011 ప్రమేయం, TE-P022 తుల్యత సాధారణ పదాన్ని చూపుతాయి. పూర్వ TE-T023లో స్థిర ఒకటి-ఒకటి పారదర్శక రూపాన్ని కొనసాగించాం. ప్రతి వడపోత లోక వర్గం Gammaలో సత్యమైన సూత్రాల ఉపసమితికి ఇంజెక్టివ్‌గా వెళ్తుందని, అందువల్ల |W*|≤2^n అని మూల నిరూపణతో నియంత్రించాం.",
+    "uncertainty": "స్థానిక సాక్షులు మోడల్ వడపోత పరిమితత్వం లేదా 2^n హద్దును ప్రత్యక్షంగా నిరూపించవు. పరిమిత Gamma మాత్రమే హద్దుకు పరికల్పన; సాధారణ అనంత Gammaకు కాదు.",
+    "borrowing": "Gamma, W*, power-set and cardinality macros, and file/label identifiers remain protected source notation."
+  }
+}
