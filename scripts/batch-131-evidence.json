@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "131",
+  "unit_id": "OLP-0482",
+  "unit_order": 482,
+  "source_path": "content/applied-modal-logic/epistemic-logic/epistemic-logic.tex",
+  "blocks": 8,
+  "linguistic_blocks": [4, 5, 7],
+  "previous_segments": 7271,
+  "previous_terms": 171,
+  "expected_corrections": 454,
+  "canon_default": ["TE-P018", "TE-P024"],
+  "corrections_by_block": {"7": ["OLTEAMLELDRV-001"]},
+  "consultation_phase": "స్థిర జ్ఞానసంబంధ తర్క అధ్యాయ డ్రైవరు, తెలుగు లక్ష్యం, పొరుగు మోడల్/కాలిక అధ్యాయ హుక్లు, స్థానిక సాధారణ తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; శీర్షిక, రచయితల గమనిక, ఎనిమిది దిగుమతులు, అధ్యాయ హుక్‌ను తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P018/024 సాధారణ తర్కం, వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు; జ్ఞానసంబంధ తర్కపు సాంకేతిక పదానికి లేదా TeX హుక్‌కు కాదు. హుక్ సవరణ స్థానిక ఫైలు పాత్ర, పక్క అధ్యాయ నమూనా, వేర్వేరు శైలి మాక్రోలపై ఆధారపడింది.",
+  "term_decision": {
+    "term_id": "TE-T172",
+    "source_term": "epistemic logics / metatheory / bisimulation / dynamic epistemic logic / chapter end hook",
+    "telugu": "జ్ఞానసంబంధ తర్కాలు / అధిసిద్ధాంతం / ద్విసమానుకరణ / గతి జ్ఞానసంబంధ తర్కం / అధ్యాయ ముగింపు హుక్",
+    "status": "native_general_logic_derivation_register_attested_epistemic_driver_source_controlled_one_disclosed_hook_repair",
+    "passages": ["TE-P018", "TE-P024"],
+    "basis": "అధ్యాయ శీర్షిక, ఆంటొనెల్లి–యాప్ రచనా గమనిక, ఎనిమిది దిగుమతులు నిలిపాం. అధ్యాయంలో తప్పు భాగం ముగింపు హుక్‌కు బదులు పక్కనే ప్రకటించిన సవరణతో అధ్యాయ హుక్ వాడాం.",
+    "uncertainty": "స్థానిక సాక్షులు epistemic, bisimulation లేదా dynamic epistemic logic శాఖా పదాలకు ప్రత్యక్ష ధృవీకరణ ఇవ్వవు. పూర్తి TeX నిర్మాణ తనిఖీ, స్వతంత్ర తెలుగు నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "Source author names, chapter IDs, import paths and chapter-end macro remain source-controlled structural or proper-name material."
+  }
+}

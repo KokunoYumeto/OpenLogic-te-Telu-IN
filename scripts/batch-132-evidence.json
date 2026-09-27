@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "132",
+  "unit_id": "OLP-0483",
+  "unit_order": 483,
+  "source_path": "content/applied-modal-logic/epistemic-logic/introduction.tex",
+  "blocks": 8,
+  "linguistic_blocks": [5, 6, 7],
+  "previous_segments": 7279,
+  "previous_terms": 172,
+  "expected_corrections": 454,
+  "canon_default": ["TE-P008", "TE-P010", "TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర పరిచయం, తెలుగు లక్ష్యం, పూర్వ మోడల్ ప్రాప్యత/అనురూపత పదాలు, స్థానిక సాధారణ సమితి/సంబంధ/తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; జ్ఞానం-విశ్వాసం భేదం, నాలుగు ఉదాహరణలు, బహు-కర్త పరిధి తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P008/010/018/024 సాధారణ సమితి, సంబంధం, తర్కం, వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. జ్ఞానసంబంధ/విశ్వాససంబంధ శాఖా వాడుక, హింటిక్కా చరిత్ర, epistemic possibilityకి అవి ప్రత్యక్ష ధృవీకరణలు కావు.",
+  "term_decision": {
+    "term_id": "TE-T173",
+    "source_term": "epistemic / doxastic / accessibility relation as epistemic possibility / multi-agent logic",
+    "telugu": "జ్ఞానసంబంధ / విశ్వాససంబంధ / జ్ఞానపర సాధ్యతను సూచించే ప్రాప్యత సంబంధం / బహు-కర్త తర్కం",
+    "status": "native_general_set_relation_logic_derivation_register_attested_epistemic_doxastic_senses_source_controlled",
+    "passages": ["TE-P008", "TE-P010", "TE-P018", "TE-P024"],
+    "basis": "మోడల్, జ్ఞానసంబంధ ప్రతిపాదనల అనుగమనం భేదం, knowledge/belief జంట, నాలుగు సహజభాష ఉదాహరణలు, ప్రాప్యత సంబంధపు మారిన అర్థం, బహు-కర్తకు వ్యతిరేక ఏక-కర్త పరిమితి నిలిపాం.",
+    "uncertainty": "స్థానిక సాక్షులు శాఖా పదాల ప్రామాణికతను లేదా చారిత్రక పేరు/గ్రంథ వివరాలను స్వతంత్రంగా నిర్ధారించవు. మూలం Jaako అని వ్రాసిన పేరును చారిత్రక దిద్దుబాటు చేయకుండా అనుసరించాం; స్వతంత్ర నిపుణ సమీక్ష లేదు.",
+    "borrowing": "Richard, Audrey and the book title remain source-controlled proper names; prior edition form ప్రాప్యత సంబంధం is retained."
+  }
+}

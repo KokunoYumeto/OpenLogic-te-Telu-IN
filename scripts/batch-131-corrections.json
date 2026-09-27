@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0482",
+  "source_path": "content/applied-modal-logic/epistemic-logic/epistemic-logic.tex",
+  "source_sha256": "12674717c3c51628c4a275e5c34b38b66e2ec1eb7bbffea7bf08629d68489834",
+  "audit_id": "OLTEAMLELDRV-20260927",
+  "audit_review_path": "evidence/OLP-0482-EPISTEMIC-DRIVER-SOURCE-AUDIT.md",
+  "audit_review_sha256": "eb2f23ccaaa097b56b214a87753ca996dc738f1bc04ca23f6ca4d54739e973c5",
+  "audit_findings_path": "evidence/OLP-0482-EPISTEMIC-DRIVER-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "3978d1afc5422e3721c8461658d7ef63887085e8c9680c7dd91c9c04560e5d15",
+  "previous_corrections": 453,
+  "treatments": {
+    "OLTEAMLELDRV-001": {
+      "target_line": 24,
+      "body_treatment": "జ్ఞానసంబంధ తర్క అధ్యాయ డ్రైవరులో భాగం ముగింపు హుక్‌ను అధ్యాయ ముగింపు హుక్‌గా మార్చి పక్కనే ప్రకటించాం."
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "133",
+  "unit_id": "OLP-0484",
+  "unit_order": 484,
+  "source_path": "content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex",
+  "blocks": 21,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+  "previous_segments": 7287,
+  "previous_terms": 173,
+  "expected_corrections": 454,
+  "canon_default": ["TE-P008", "TE-P010", "TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర భాషా నిర్వచనాలు, తెలుగు లక్ష్యం, మునుపటి మోడల్/కాలిక సూత్ర-సంధాయక పదాలు, స్థానిక సాధారణ సమితి/సంబంధ/తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; G కర్త-సంకేతాలు, Knows_a నిర్మాణం, EKnows సమూహ జ్ఞానం, CKnows సామాన్య జ్ఞానం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P008/010/018/024 సాధారణ సమితి, సంబంధం, తర్కం, వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. బహు-కర్త కారకాలు, సామాన్య జ్ఞానపు సాంకేతిక నిర్వచనానికి అవి ప్రత్యక్ష మూలాలు కావు.",
+  "term_decision": {
+    "term_id": "TE-T174",
+    "source_term": "agent symbols / individual knowledge / group knowledge / common knowledge / modal-free",
+    "telugu": "కర్త-సంకేతాలు / వ్యక్తిగత జ్ఞానం / సమూహ జ్ఞానం / సామాన్య జ్ఞానం / మోడల్-రహితం",
+    "status": "native_general_set_relation_logic_derivation_register_attested_epistemic_operators_source_controlled",
+    "passages": ["TE-P008", "TE-P010", "TE-P018", "TE-P024"],
+    "basis": "G కర్తల సమితి, aలో Knows_a, ఒక్క కర్తకు Knows, సూత్రాల ఆగమన నిర్మాణం, G'పై EKnows సంయోగం, పునరావృత పరస్పరజ్ఞానం సూచించే CKnows భేదం మూల గణితంతో నిలిచాయి.",
+    "uncertainty": "స్థానిక సాక్షులు group/common knowledge తెలుగు శాఖా పదాలకు ప్రత్యక్ష ధృవీకరణ ఇవ్వవు. CKnowsకు ఇక్కడ స్వతంత్ర సత్య షరతు ఇవ్వలేదు; దాన్ని కల్పించలేదు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "All Knows/EKnows/CKnows macros, agent indices, proposition symbols and protected !! markers retain source-controlled identity."
+  }
+}

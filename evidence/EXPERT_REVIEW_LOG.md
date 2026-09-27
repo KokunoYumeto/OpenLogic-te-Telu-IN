@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 481 of 722 draft units**. This log contains 171 terminology/sense decisions and 453 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 484 of 722 draft units**. This log contains 174 terminology/sense decisions and 454 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -4111,6 +4111,78 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక సాక్షులు branching-time చరిత్రలకు ప్రత్యక్ష సాంకేతిక పదం లేదా నిరూపణ ఇవ్వవు. మూలం ఇతర కాలిక కారకాలకు సారూప్య నిర్వచనమే చెబుతుంది, పూర్తి నిర్వచనలు ఇక్కడ ఇవ్వదు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
 
 - Please double-check: Please double-check whether “సాధ్య చరిత్రల నమూనా / గణన మార్గాలు / శేష అనుక్రమ మూసుకుపోవడం / చరిత్రకు సంబంధిత భవిష్యత్తు, సాధ్యత” is idiomatic and technically standard for “possible histories model / computational paths / suffix closure / history-relative future and possibility” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T172 — epistemic logics / metatheory / bisimulation / dynamic epistemic logic / chapter end hook
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: జ్ఞానసంబంధ తర్కాలు / అధిసిద్ధాంతం / ద్విసమానుకరణ / గతి జ్ఞానసంబంధ తర్కం / అధ్యాయ ముగింపు హుక్
+
+- Exact implementation: OLP-0482; applied-modal-logic/epistemic-logic/epistemic-logic; content/applied-modal-logic/epistemic-logic/epistemic-logic.tex:8 ↔ translation/content/applied-modal-logic/epistemic-logic/epistemic-logic.tex:8 (OLP-0482-B004); printed/PDF page pending; OLP-0482; applied-modal-logic/epistemic-logic/epistemic-logic; content/applied-modal-logic/epistemic-logic/epistemic-logic.tex:10-12 ↔ translation/content/applied-modal-logic/epistemic-logic/epistemic-logic.tex:10-12 (OLP-0482-B005); printed/PDF page pending; OLP-0482; applied-modal-logic/epistemic-logic/epistemic-logic; content/applied-modal-logic/epistemic-logic/epistemic-logic.tex:24 ↔ translation/content/applied-modal-logic/epistemic-logic/epistemic-logic.tex:24-25 (OLP-0482-B007); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: అధ్యాయ శీర్షిక, ఆంటొనెల్లి–యాప్ రచనా గమనిక, ఎనిమిది దిగుమతులు నిలిపాం. అధ్యాయంలో తప్పు భాగం ముగింపు హుక్‌కు బదులు పక్కనే ప్రకటించిన సవరణతో అధ్యాయ హుక్ వాడాం. Source author names, chapter IDs, import paths and chapter-end macro remain source-controlled structural or proper-name material.
+
+- Alternatives: జ్ఞానసంబంధ తర్క శీర్షిక, మూల రచయితల గమనిక, ఎనిమిది దిగుమతులు నిలిపి తప్పు భాగం హుక్‌ను ప్రకటిత అధ్యాయ హుక్‌గా సరిచేయడం (ఎంపిక); భాగం హుక్‌ను అధ్యాయంలో అలాగే ఉంచడం (తిరస్కరణ); స్థానిక సాధారణ తర్క పేజీ TeX హుక్‌కు ప్రత్యక్ష సాక్ష్యం అని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు epistemic, bisimulation లేదా dynamic epistemic logic శాఖా పదాలకు ప్రత్యక్ష ధృవీకరణ ఇవ్వవు. పూర్తి TeX నిర్మాణ తనిఖీ, స్వతంత్ర తెలుగు నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Please double-check: Please double-check whether “జ్ఞానసంబంధ తర్కాలు / అధిసిద్ధాంతం / ద్విసమానుకరణ / గతి జ్ఞానసంబంధ తర్కం / అధ్యాయ ముగింపు హుక్” is idiomatic and technically standard for “epistemic logics / metatheory / bisimulation / dynamic epistemic logic / chapter end hook” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T173 — epistemic / doxastic / accessibility relation as epistemic possibility / multi-agent logic
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: జ్ఞానసంబంధ / విశ్వాససంబంధ / జ్ఞానపర సాధ్యతను సూచించే ప్రాప్యత సంబంధం / బహు-కర్త తర్కం
+
+- Exact implementation: OLP-0483; applied-modal-logic/epistemic-logic/introduction; content/applied-modal-logic/epistemic-logic/introduction.tex:13 ↔ translation/content/applied-modal-logic/epistemic-logic/introduction.tex:13 (OLP-0483-B006); printed/PDF page pending; OLP-0483; applied-modal-logic/epistemic-logic/introduction; content/applied-modal-logic/epistemic-logic/introduction.tex:15-21 ↔ translation/content/applied-modal-logic/epistemic-logic/introduction.tex:15-21 (OLP-0483-B007); printed/PDF page pending; OLP-0483; applied-modal-logic/epistemic-logic/introduction; content/applied-modal-logic/epistemic-logic/introduction.tex:15-21 ↔ translation/content/applied-modal-logic/epistemic-logic/introduction.tex:15-21 (OLP-0483-B007); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: మోడల్, జ్ఞానసంబంధ ప్రతిపాదనల అనుగమనం భేదం, knowledge/belief జంట, నాలుగు సహజభాష ఉదాహరణలు, ప్రాప్యత సంబంధపు మారిన అర్థం, బహు-కర్తకు వ్యతిరేక ఏక-కర్త పరిమితి నిలిపాం. Richard, Audrey and the book title remain source-controlled proper names; prior edition form ప్రాప్యత సంబంధం is retained.
+
+- Alternatives: జ్ఞానసంబంధ/విశ్వాససంబంధ భేదం, పూర్వ ప్రాప్యత సంబంధ పదం, నాలుగు ఉదాహరణలు, బహు-కర్త పరిమితి నిలపడం (ఎంపిక); epistemic, doxastic రెండింటినీ ఒకే జ్ఞాన పదంగా అనువదించడం (తిరస్కరణ); ప్రాప్యత సంబంధాన్ని కాల సంబంధంగా చూపడం (తిరస్కరణ); మూల చారిత్రక పేరును నిశ్శబ్దంగా సరిచేయడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు శాఖా పదాల ప్రామాణికతను లేదా చారిత్రక పేరు/గ్రంథ వివరాలను స్వతంత్రంగా నిర్ధారించవు. మూలం Jaako అని వ్రాసిన పేరును చారిత్రక దిద్దుబాటు చేయకుండా అనుసరించాం; స్వతంత్ర నిపుణ సమీక్ష లేదు.
+
+- Please double-check: Please double-check whether “జ్ఞానసంబంధ / విశ్వాససంబంధ / జ్ఞానపర సాధ్యతను సూచించే ప్రాప్యత సంబంధం / బహు-కర్త తర్కం” is idiomatic and technically standard for “epistemic / doxastic / accessibility relation as epistemic possibility / multi-agent logic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T174 — agent symbols / individual knowledge / group knowledge / common knowledge / modal-free
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: కర్త-సంకేతాలు / వ్యక్తిగత జ్ఞానం / సమూహ జ్ఞానం / సామాన్య జ్ఞానం / మోడల్-రహితం
+
+- Exact implementation: OLP-0484; applied-modal-logic/epistemic-logic/language-epistemic-logic; content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex:13-29 ↔ translation/content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex:13-30 (OLP-0484-B006); printed/PDF page pending; OLP-0484; applied-modal-logic/epistemic-logic/language-epistemic-logic; content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex:67-68 ↔ translation/content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex:68-69 (OLP-0484-B018); printed/PDF page pending; OLP-0484; applied-modal-logic/epistemic-logic/language-epistemic-logic; content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex:70-75 ↔ translation/content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex:71-77 (OLP-0484-B019); printed/PDF page pending; OLP-0484; applied-modal-logic/epistemic-logic/language-epistemic-logic; content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex:77-85 ↔ translation/content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex:79-88 (OLP-0484-B020); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: G కర్తల సమితి, aలో Knows_a, ఒక్క కర్తకు Knows, సూత్రాల ఆగమన నిర్మాణం, G'పై EKnows సంయోగం, పునరావృత పరస్పరజ్ఞానం సూచించే CKnows భేదం మూల గణితంతో నిలిచాయి. All Knows/EKnows/CKnows macros, agent indices, proposition symbols and protected !! markers retain source-controlled identity.
+
+- Alternatives: Knows వ్యక్తి జ్ఞానం, EKnows సమూహ సంయోగం, CKnows అంతులేని పరస్పరజ్ఞానం భేదం నిలపడం (ఎంపిక); సమూహ జ్ఞానం, సామాన్య జ్ఞానం ఒకటేనని చూపడం (తిరస్కరణ); C కర్తకు అదనపు సత్య షరతు కల్పించడం (తిరస్కరణ); మూల !! టోకెన్లను తీసివేయడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు group/common knowledge తెలుగు శాఖా పదాలకు ప్రత్యక్ష ధృవీకరణ ఇవ్వవు. CKnowsకు ఇక్కడ స్వతంత్ర సత్య షరతు ఇవ్వలేదు; దాన్ని కల్పించలేదు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Please double-check: Please double-check whether “కర్త-సంకేతాలు / వ్యక్తిగత జ్ఞానం / సమూహ జ్ఞానం / సామాన్య జ్ఞానం / మోడల్-రహితం” is idiomatic and technically standard for “agent symbols / individual knowledge / group knowledge / common knowledge / modal-free” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -14983,3 +15055,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Does the temporal formation clause use the Ftemp macro already introduced in the operator list and used in the future truth clause?
+
+## REV-OLTEAMLELDRV-001 — OLTEAMLELDRV-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: జ్ఞానసంబంధ తర్క అధ్యాయ డ్రైవరులో భాగం ముగింపు హుక్‌ను అధ్యాయ ముగింపు హుక్‌గా మార్చి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0482; applied-modal-logic/epistemic-logic/epistemic-logic; epistemic-logic.tex lines 8 and 24; applied-modal-logic part driver, temporal-logic chapter driver and open-logic.sty hook definitions ↔ translation/content/applied-modal-logic/epistemic-logic/epistemic-logic.tex:24 (OLP-0482-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTEAMLELDRV-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: జ్ఞానసంబంధ తర్క అధ్యాయ డ్రైవరులో భాగం ముగింపు హుక్‌ను అధ్యాయ ముగింపు హుక్‌గా మార్చి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does this epistemic olchapter driver now invoke the chapter-end hook rather than the part-end hook, matching the separate macro roles and chapter-driver pattern?

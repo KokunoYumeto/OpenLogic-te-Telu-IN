@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **481 of 722 source units drafted**. This readable view contains all 624 decisions and 1449 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **484 of 722 source units drafted**. This readable view contains all 628 decisions and 1460 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -5194,6 +5194,91 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T171-OCC-003; OLP-0481; OLP-0481-B008; source upstream/content/applied-modal-logic/temporal-logic/possible-histories.tex:44-52 bytes 1832-2392 SHA-256 29a288f0012cbdf900f927cb285864444ca0f8d7dea27c1d037cdaaae40e924a; target translation/content/applied-modal-logic/temporal-logic/possible-histories.tex:50-60 bytes 3461-4632 SHA-256 ff2d8c970a954578591339bbb196e16fed9caba927aab997df89820a2c77aa88; reader page pending.
   - te-Telu-IN-TE-T171-OCC-004; OLP-0481; OLP-0481-B009; source upstream/content/applied-modal-logic/temporal-logic/possible-histories.tex:54-65 bytes 2393-2956 SHA-256 29a288f0012cbdf900f927cb285864444ca0f8d7dea27c1d037cdaaae40e924a; target translation/content/applied-modal-logic/temporal-logic/possible-histories.tex:62-76 bytes 4633-5446 SHA-256 ff2d8c970a954578591339bbb196e16fed9caba927aab997df89820a2c77aa88; reader page pending.
   - te-Telu-IN-TE-T171-OCC-005; OLP-0481; OLP-0481-B010; source upstream/content/applied-modal-logic/temporal-logic/possible-histories.tex:67-73 bytes 2957-3396 SHA-256 29a288f0012cbdf900f927cb285864444ca0f8d7dea27c1d037cdaaae40e924a; target translation/content/applied-modal-logic/temporal-logic/possible-histories.tex:78-86 bytes 5447-6394 SHA-256 ff2d8c970a954578591339bbb196e16fed9caba927aab997df89820a2c77aa88; reader page pending.
+
+## te-Telu-IN-TE-T172 — epistemic logics / metatheory / bisimulation / dynamic epistemic logic / chapter end hook
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: జ్ఞానసంబంధ తర్కాలు / అధిసిద్ధాంతం / ద్విసమానుకరణ / గతి జ్ఞానసంబంధ తర్కం / అధ్యాయ ముగింపు హుక్
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “epistemic logics / metatheory / bisimulation / dynamic epistemic logic / chapter end hook” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు epistemic, bisimulation లేదా dynamic epistemic logic శాఖా పదాలకు ప్రత్యక్ష ధృవీకరణ ఇవ్వవు. పూర్తి TeX నిర్మాణ తనిఖీ, స్వతంత్ర తెలుగు నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Rationale: అధ్యాయ శీర్షిక, ఆంటొనెల్లి–యాప్ రచనా గమనిక, ఎనిమిది దిగుమతులు నిలిపాం. అధ్యాయంలో తప్పు భాగం ముగింపు హుక్‌కు బదులు పక్కనే ప్రకటించిన సవరణతో అధ్యాయ హుక్ వాడాం. Source author names, chapter IDs, import paths and chapter-end macro remain source-controlled structural or proper-name material.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: జ్ఞానసంబంధ తర్క శీర్షిక, మూల రచయితల గమనిక, ఎనిమిది దిగుమతులు నిలిపి తప్పు భాగం హుక్‌ను ప్రకటిత అధ్యాయ హుక్‌గా సరిచేయడం [viable_alternative: ఎంపిక] | భాగం హుక్‌ను అధ్యాయంలో అలాగే ఉంచడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ తర్క పేజీ TeX హుక్‌కు ప్రత్యక్ష సాక్ష్యం అని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “జ్ఞానసంబంధ తర్కాలు / అధిసిద్ధాంతం / ద్విసమానుకరణ / గతి జ్ఞానసంబంధ తర్కం / అధ్యాయ ముగింపు హుక్” is idiomatic and technically standard for “epistemic logics / metatheory / bisimulation / dynamic epistemic logic / chapter end hook” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T172-OCC-001; OLP-0482; OLP-0482-B004; source upstream/content/applied-modal-logic/epistemic-logic/epistemic-logic.tex:8 bytes 138-176 SHA-256 12674717c3c51628c4a275e5c34b38b66e2ec1eb7bbffea7bf08629d68489834; target translation/content/applied-modal-logic/epistemic-logic/epistemic-logic.tex:8 bytes 138-212 SHA-256 5ffc25caa28b49687dd50b6e342b9db4fce1a6f01acc29c061df6e50aa89fda9; reader page pending.
+  - te-Telu-IN-TE-T172-OCC-002; OLP-0482; OLP-0482-B005; source upstream/content/applied-modal-logic/epistemic-logic/epistemic-logic.tex:10-12 bytes 177-470 SHA-256 12674717c3c51628c4a275e5c34b38b66e2ec1eb7bbffea7bf08629d68489834; target translation/content/applied-modal-logic/epistemic-logic/epistemic-logic.tex:10-12 bytes 213-937 SHA-256 5ffc25caa28b49687dd50b6e342b9db4fce1a6f01acc29c061df6e50aa89fda9; reader page pending.
+  - te-Telu-IN-TE-T172-OCC-003; OLP-0482; OLP-0482-B007; source upstream/content/applied-modal-logic/epistemic-logic/epistemic-logic.tex:24 bytes 734-749 SHA-256 12674717c3c51628c4a275e5c34b38b66e2ec1eb7bbffea7bf08629d68489834; target translation/content/applied-modal-logic/epistemic-logic/epistemic-logic.tex:24-25 bytes 1201-1552 SHA-256 5ffc25caa28b49687dd50b6e342b9db4fce1a6f01acc29c061df6e50aa89fda9; reader page pending.
+
+## te-Telu-IN-TE-T173 — epistemic / doxastic / accessibility relation as epistemic possibility / multi-agent logic
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: జ్ఞానసంబంధ / విశ్వాససంబంధ / జ్ఞానపర సాధ్యతను సూచించే ప్రాప్యత సంబంధం / బహు-కర్త తర్కం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “epistemic / doxastic / accessibility relation as epistemic possibility / multi-agent logic” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు శాఖా పదాల ప్రామాణికతను లేదా చారిత్రక పేరు/గ్రంథ వివరాలను స్వతంత్రంగా నిర్ధారించవు. మూలం Jaako అని వ్రాసిన పేరును చారిత్రక దిద్దుబాటు చేయకుండా అనుసరించాం; స్వతంత్ర నిపుణ సమీక్ష లేదు.
+
+- Rationale: మోడల్, జ్ఞానసంబంధ ప్రతిపాదనల అనుగమనం భేదం, knowledge/belief జంట, నాలుగు సహజభాష ఉదాహరణలు, ప్రాప్యత సంబంధపు మారిన అర్థం, బహు-కర్తకు వ్యతిరేక ఏక-కర్త పరిమితి నిలిపాం. Richard, Audrey and the book title remain source-controlled proper names; prior edition form ప్రాప్యత సంబంధం is retained.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: జ్ఞానసంబంధ/విశ్వాససంబంధ భేదం, పూర్వ ప్రాప్యత సంబంధ పదం, నాలుగు ఉదాహరణలు, బహు-కర్త పరిమితి నిలపడం [viable_alternative: ఎంపిక] | epistemic, doxastic రెండింటినీ ఒకే జ్ఞాన పదంగా అనువదించడం [viable_alternative: తిరస్కరణ] | ప్రాప్యత సంబంధాన్ని కాల సంబంధంగా చూపడం [viable_alternative: తిరస్కరణ] | మూల చారిత్రక పేరును నిశ్శబ్దంగా సరిచేయడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “జ్ఞానసంబంధ / విశ్వాససంబంధ / జ్ఞానపర సాధ్యతను సూచించే ప్రాప్యత సంబంధం / బహు-కర్త తర్కం” is idiomatic and technically standard for “epistemic / doxastic / accessibility relation as epistemic possibility / multi-agent logic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T173-OCC-001; OLP-0483; OLP-0483-B006; source upstream/content/applied-modal-logic/epistemic-logic/introduction.tex:13 bytes 213-662 SHA-256 b2c3d1cfca757032d8e89e4f17207aa4f37248926fa4f1a3057ef724407c09d9; target translation/content/applied-modal-logic/epistemic-logic/introduction.tex:13 bytes 219-1351 SHA-256 31094c35b0bef70cadf81fd5cb9065e69f46fb24ff01a358d67742acefa6b52f; reader page pending.
+  - te-Telu-IN-TE-T173-OCC-002; OLP-0483; OLP-0483-B007; source upstream/content/applied-modal-logic/epistemic-logic/introduction.tex:15-21 bytes 663-2009 SHA-256 b2c3d1cfca757032d8e89e4f17207aa4f37248926fa4f1a3057ef724407c09d9; target translation/content/applied-modal-logic/epistemic-logic/introduction.tex:15-21 bytes 1352-4672 SHA-256 31094c35b0bef70cadf81fd5cb9065e69f46fb24ff01a358d67742acefa6b52f; reader page pending.
+  - te-Telu-IN-TE-T173-OCC-003; OLP-0483; OLP-0483-B007; source upstream/content/applied-modal-logic/epistemic-logic/introduction.tex:15-21 bytes 663-2009 SHA-256 b2c3d1cfca757032d8e89e4f17207aa4f37248926fa4f1a3057ef724407c09d9; target translation/content/applied-modal-logic/epistemic-logic/introduction.tex:15-21 bytes 1352-4672 SHA-256 31094c35b0bef70cadf81fd5cb9065e69f46fb24ff01a358d67742acefa6b52f; reader page pending.
+
+## te-Telu-IN-TE-T174 — agent symbols / individual knowledge / group knowledge / common knowledge / modal-free
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: కర్త-సంకేతాలు / వ్యక్తిగత జ్ఞానం / సమూహ జ్ఞానం / సామాన్య జ్ఞానం / మోడల్-రహితం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “agent symbols / individual knowledge / group knowledge / common knowledge / modal-free” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు group/common knowledge తెలుగు శాఖా పదాలకు ప్రత్యక్ష ధృవీకరణ ఇవ్వవు. CKnowsకు ఇక్కడ స్వతంత్ర సత్య షరతు ఇవ్వలేదు; దాన్ని కల్పించలేదు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Rationale: G కర్తల సమితి, aలో Knows_a, ఒక్క కర్తకు Knows, సూత్రాల ఆగమన నిర్మాణం, G'పై EKnows సంయోగం, పునరావృత పరస్పరజ్ఞానం సూచించే CKnows భేదం మూల గణితంతో నిలిచాయి. All Knows/EKnows/CKnows macros, agent indices, proposition symbols and protected !! markers retain source-controlled identity.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: Knows వ్యక్తి జ్ఞానం, EKnows సమూహ సంయోగం, CKnows అంతులేని పరస్పరజ్ఞానం భేదం నిలపడం [viable_alternative: ఎంపిక] | సమూహ జ్ఞానం, సామాన్య జ్ఞానం ఒకటేనని చూపడం [viable_alternative: తిరస్కరణ] | C కర్తకు అదనపు సత్య షరతు కల్పించడం [viable_alternative: తిరస్కరణ] | మూల !! టోకెన్లను తీసివేయడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “కర్త-సంకేతాలు / వ్యక్తిగత జ్ఞానం / సమూహ జ్ఞానం / సామాన్య జ్ఞానం / మోడల్-రహితం” is idiomatic and technically standard for “agent symbols / individual knowledge / group knowledge / common knowledge / modal-free” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T174-OCC-001; OLP-0484; OLP-0484-B006; source upstream/content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex:13-29 bytes 244-1030 SHA-256 a3dbe66fb9357878583c30a38b9801609179a229bc1ae39a6fd3e565f243e455; target translation/content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex:13-30 bytes 272-1701 SHA-256 97673f61e0e9e4ea7a3c05e16c3ca160227ade167078e1b7bf474fbd8325990d; reader page pending.
+  - te-Telu-IN-TE-T174-OCC-002; OLP-0484; OLP-0484-B018; source upstream/content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex:67-68 bytes 2165-2247 SHA-256 a3dbe66fb9357878583c30a38b9801609179a229bc1ae39a6fd3e565f243e455; target translation/content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex:68-69 bytes 3785-3955 SHA-256 97673f61e0e9e4ea7a3c05e16c3ca160227ade167078e1b7bf474fbd8325990d; reader page pending.
+  - te-Telu-IN-TE-T174-OCC-003; OLP-0484; OLP-0484-B019; source upstream/content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex:70-75 bytes 2248-2541 SHA-256 a3dbe66fb9357878583c30a38b9801609179a229bc1ae39a6fd3e565f243e455; target translation/content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex:71-77 bytes 3956-4507 SHA-256 97673f61e0e9e4ea7a3c05e16c3ca160227ade167078e1b7bf474fbd8325990d; reader page pending.
+  - te-Telu-IN-TE-T174-OCC-004; OLP-0484; OLP-0484-B020; source upstream/content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex:77-85 bytes 2542-3128 SHA-256 a3dbe66fb9357878583c30a38b9801609179a229bc1ae39a6fd3e565f243e455; target translation/content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex:79-88 bytes 4508-5751 SHA-256 97673f61e0e9e4ea7a3c05e16c3ca160227ade167078e1b7bf474fbd8325990d; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -17052,3 +17137,29 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTEAMLTLSEM-001-OCC-001; OLP-0478; OLP-0478-B016; source upstream/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:58-59 bytes 1866-1975 SHA-256 237c841d5cb359d63f994fd71e13fb6e7101c266c2390e0059ab52e9efb8fd6d; target translation/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:63 bytes 3370-3446 SHA-256 930209a1ae03225c5c52f4e716634c41d4d4725f6b9e5963f7675679a7fe37a5; reader page pending.
+
+## te-Telu-IN-OLTEAMLELDRV-001 — OLTEAMLELDRV-001: chapter driver uses part end hook
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: జ్ఞానసంబంధ తర్క అధ్యాయ డ్రైవరులో భాగం ముగింపు హుక్‌ను అధ్యాయ ముగింపు హుక్‌గా మార్చి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited chapter driver uses part end hook at epistemic-logic.tex lines 8 and 24; applied-modal-logic part driver, temporal-logic chapter driver and open-logic.sty hook definitions, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTEAMLELDRV-20260927:OLTEAMLELDRV-001 [checked_supports], content/applied-modal-logic/epistemic-logic/epistemic-logic.tex; epistemic-logic.tex lines 8 and 24; applied-modal-logic part driver, temporal-logic chapter driver and open-logic.sty hook definitions; chapter_driver_uses_part_end_hook; జ్ఞానసంబంధ తర్క అధ్యాయ డ్రైవరులో భాగం ముగింపు హుక్‌ను అధ్యాయ ముగింపు హుక్‌గా మార్చి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does this epistemic olchapter driver now invoke the chapter-end hook rather than the part-end hook, matching the separate macro roles and chapter-driver pattern?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTEAMLELDRV-001-OCC-001; OLP-0482; OLP-0482-B007; source upstream/content/applied-modal-logic/epistemic-logic/epistemic-logic.tex:24 bytes 734-749 SHA-256 12674717c3c51628c4a275e5c34b38b66e2ec1eb7bbffea7bf08629d68489834; target translation/content/applied-modal-logic/epistemic-logic/epistemic-logic.tex:24 bytes 1201-1534 SHA-256 5ffc25caa28b49687dd50b6e342b9db4fce1a6f01acc29c061df6e50aa89fda9; reader page pending.

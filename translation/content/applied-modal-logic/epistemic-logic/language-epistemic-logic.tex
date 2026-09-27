@@ -1,0 +1,90 @@
+% Part: applied-modal-logics
+% Chapter: epistemic-logic
+% Section: language-epistemic-logic
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{el}{lan}
+
+\olsection{జ్ఞానసంబంధ తర్కపు భాష}
+
+\begin{defn}
+$G$ కర్త-సంకేతాల సమితి అనుకుందాం. బహు-కర్త
+జ్ఞానసంబంధ తర్కపు ప్రాథమిక భాషలో ఇవి ఉంటాయి:
+\begin{enumerate}
+  \tagitem{prvFalse}{\tetoken{అసత్యం}{!!{falsity}} కోసం ప్రతిజ్ఞావాక్య స్థిరాంకం~$\lfalse$.}{}
+  \tagitem{prvTrue}{\tetoken{సత్యం}{!!{truth}} కోసం ప్రతిజ్ఞావాక్య స్థిరాంకం~$\ltrue$.}{}
+  \item \tetoken{ప్రతిజ్ఞావాక్య చరాల}{!!{propositional variable}s}
+    \tetoken{అనంతంగా లెక్కించదగిన}{!!{denumerable}s} సమితి: $\Obj
+    p_0$, $\Obj p_1$, $\Obj p_2$, \dots
+  \item ప్రతిజ్ఞావాక్య సంధాయకాలు: \startycommalist
+  \iftag{prvNot}{\ycomma $\lnot$ (నిరాకరణ)}{}%
+  \iftag{prvAnd}{\ycomma $\land$ (సంయోజనం)}{}%
+  \iftag{prvOr}{\ycomma $\lor$ (విడియోజనం)}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (\tetoken{సోపాధికం}{!!{conditional}})}{}%
+  \iftag{prvIff}{\ycomma $\liff$ (\tetoken{ద్విసోపాధికం}{!!{biconditional}})}{}.
+  \item $a \in G$ అయినప్పుడు జ్ఞాన కారకం $\Knows_a$.
+\end{enumerate}
+\end{defn}
+
+మన వ్యవస్థలో ఒక్క కర్త జ్ఞానంపైనే దృష్టి పెడితే,
+$G$ సమితిని, విడివిడి కర్తలను సూచించనవసరం లేదు.
+అప్పుడు ప్రాథమిక కారకం~$\Knows$ ఒక్కటే ఉంటుంది.
+
+\begin{defn}
+జ్ఞానసంబంధ భాషలోని \emph{\tetoken{సూత్రాలను}{!!^{formula}s}}
+  ఇలా ఆగమన పద్ధతిలో నిర్వచిస్తాం:
+\begin{enumerate}
+\tagitem{prvFalse}{$\lfalse$ ఒక అణు \tetoken{సూత్రం}{!!{formula}}.}{}
+
+\tagitem{prvTrue}{$\ltrue$ ఒక అణు \tetoken{సూత్రం}{!!{formula}}.}{}
+
+\item ప్రతి ప్రతిజ్ఞావాక్య చరం $\Obj p_i$ ఒక (అణు) \tetoken{సూత్రం}{!!{formula}}.
+
+\tagitem{prvNot}{$!A$ \tetoken{ఒక సూత్రం}{!!a{formula}} అయితే, $\lnot !A$ కూడా
+  \tetoken{ఒక సూత్రం}{!!a{formula}}.}{}
+
+\tagitem{prvAnd}{$!A$, $!B$ \tetoken{సూత్రాలు}{!!{formula}s} అయితే, $(!A \land
+  !B)$ \tetoken{ఒక సూత్రం}{!!a{formula}}.}{}
+
+\tagitem{prvOr}{$!A$, $!B$ \tetoken{సూత్రాలు}{!!{formula}s} అయితే, $(!A \lor !B)$
+  \tetoken{ఒక సూత్రం}{!!a{formula}}.}{}
+
+\tagitem{prvIf}{$!A$, $!B$ \tetoken{సూత్రాలు}{!!{formula}s} అయితే, $(!A \lif !B)$
+  \tetoken{ఒక సూత్రం}{!!a{formula}}.}{}
+
+\tagitem{prvIff}{$!A$, $!B$ \tetoken{సూత్రాలు}{!!{formula}s} అయితే, $(!A \liff !B)$
+  \tetoken{ఒక సూత్రం}{!!a{formula}}.}{}
+
+\item $!A$ \tetoken{ఒక సూత్రం}{!!a{formula}} అయి, $a \in G$ అయితే, $\Knows_a !A$
+  \tetoken{ఒక సూత్రం}{!!a{formula}}.
+
+\tagitem{limitClause}{ఇవి తప్ప మరేదీ \tetoken{సూత్రం}{!!a{formula}} కాదు.}{}
+\end{enumerate}
+\end{defn}
+
+\tetoken{ఒక సూత్రం}{!!a{formula}}~$!A$లో $\Knows_a$ లేకపోతే, దానిని
+\emph{మోడల్-రహితం} అంటాం.
+
+\begin{defn}
+  $\Knows$ కారకం వ్యక్తిగత జ్ఞానాన్ని సూచిస్తే,
+  తరచూ ``అందరికీ తెలుసు'' అని చదివే $\EKnows$
+  సమూహ జ్ఞానాన్ని సూచిస్తుంది. $G' \subseteq G$ అయితే,
+  $\EKnows_{G'} !A$ను కింది వ్యక్తీకరణకు సంక్షిప్త
+  రూపంగా నిర్వచిస్తాం: \[\bigwedge_{b \in G'} \Knows_b !A.\]
+\end{defn}
+
+కర్తల సమూహం~$G$కు సంబంధించి మరింత బలమైన జ్ఞాన భావనను,
+అంటే \emph{సామాన్య జ్ఞానాన్ని}, కూడా నిర్వచించవచ్చు.
+ఏదైనా సమాచారం ఆ సమూహంలో సామాన్య జ్ఞానం అయితే,
+ఆ సమూహంలోని కర్తల ప్రతి కలయికకూ, ఒకరికి మరొకరికి
+తెలుసని, వారికి మరొకరికి తెలుసని, అలా అంతులేకుండా
+అందరికీ తెలుసని అర్థం. ఇది సమూహ జ్ఞానం కంటే
+గణనీయంగా బలమైనది; ఒక \tetoken{సూత్రం}{!!a{formula}}
+సమూహ జ్ఞానమే అయినా సామాన్య జ్ఞానం కాని సంబంధ నమూనాలను
+సులభంగా నిర్మించవచ్చు. ``$!A$ అనేది~$G$లో సామాన్య
+జ్ఞానం'' అని సూచించడానికి $\CKnows_G !A$ను వాడతాం.
+
+\end{document}

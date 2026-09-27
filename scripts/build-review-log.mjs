@@ -1073,6 +1073,22 @@ locations['TE-T171']=[
  L('content/applied-modal-logic/temporal-logic/possible-histories.tex',54,65,62,76,'\\prec_\\sigma','\\prec_\\sigma'),
  L('content/applied-modal-logic/temporal-logic/possible-histories.tex',67,73,78,86,'\\lnot \\Ftemp p \\land \\Diamond \\Ftemp p','\\lnot \\Ftemp p \\land \\Diamond \\Ftemp p')
 ];
+locations['TE-T172']=[
+ L('content/applied-modal-logic/epistemic-logic/epistemic-logic.tex',8,8,8,8,'Epistemic Logics','జ్ఞానసంబంధ తర్కాలు'),
+ L('content/applied-modal-logic/epistemic-logic/epistemic-logic.tex',10,12,10,12,'bisimulation','ద్విసమానుకరణ'),
+ L('content/applied-modal-logic/epistemic-logic/epistemic-logic.tex',24,24,24,25,'\\OLEndPartHook','\\OLEndChapterHook')
+];
+locations['TE-T173']=[
+ L('content/applied-modal-logic/epistemic-logic/introduction.tex',13,13,13,13,'epistemic or doxastic','జ్ఞానసంబంధ లేదా విశ్వాససంబంధ'),
+ L('content/applied-modal-logic/epistemic-logic/introduction.tex',21,21,21,21,'accessibility relation','ప్రాప్యత సంబంధం'),
+ L('content/applied-modal-logic/epistemic-logic/introduction.tex',21,21,21,21,'multi-agent logics','బహు-కర్త తర్కాలు')
+];
+locations['TE-T174']=[
+ L('content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex',13,28,13,28,'agent-symbols','కర్త-సంకేతాల'),
+ L('content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex',67,68,68,69,'modal-free','మోడల్-రహితం'),
+ L('content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex',71,74,72,77,'group knowledge','సమూహ జ్ఞానాన్ని'),
+ L('content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex',77,85,79,88,'common knowledge','సామాన్య జ్ఞానాన్ని')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -1230,6 +1246,9 @@ alternatives['TE-T168']=['P/H గత, F/G భవిష్యత్ సాక్�
 alternatives['TE-T169']=['కాలిక K పూర్వ/భవిష్యత్ రూపాలు, సంక్రామక/రేఖీయ/సాంద్ర/రెండు అంచులేని చట్ర అనురూపతలు, అస్వావర్తనత్వం వ్యక్తీకరణ పరిమితిని నిలపడం (ఎంపిక)','రేఖీయత్వాన్నే షరతులేని అన్ని కాలిక నమూనాల ధర్మంగా చెప్పడం (తిరస్కరణ)','గత, భవిష్యత్ అంచులేని షరతులను తారుమారు చేయడం (తిరస్కరణ)','అస్వావర్తనత్వానికి మూలం ఇచ్చని కాలిక సూత్రం కల్పించడం (తిరస్కరణ)'];
 alternatives['TE-T170']=['Since B Cలో గత B సాక్షి, మధ్య C; Until B Cలో భవిష్యత్ B సాక్షి, మధ్య C, మూల సహజ పఠనాలు నిలపడం (ఎంపిక)','B/C స్థానాలను మార్చడం (తిరస్కరణ)','Since/Untilను ఏకస్థాన కారకాలుగా చూపడం (తిరస్కరణ)','మధ్య బిందువుల కఠిన అసమానతలను వదలడం (తిరస్కరణ)','స్థానిక సాధారణ సంబంధ పేజీ ఈ కాలిక కారకాలకు ప్రత్యక్ష సాక్ష్యం అని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T171']=['T-C-V సాధ్య చరిత్రలు, శేష అనుక్రమ మూసుకుపోవడం, sigma క్రమం, ప్రస్తుత చరిత్రలో F, ప్రత్యామ్నాయ చరిత్రలో Diamond, చివరి p ఉదాహరణ నిలపడం (ఎంపిక)','Diamondను అదే చరిత్రలోని మరొక కాల బిందువుకు మార్చడం (తిరస్కరణ)','Fను అన్ని ప్రత్యామ్నాయ చరిత్రల్లో సత్యంగా చెప్పడం (తిరస్కరణ)','భాష మార్చడం తప్పనిసరి అని మూలం చెప్పినట్టు చూపడం (తిరస్కరణ)','స్థానిక సాధారణ సంబంధ పేజీ branching-time నమూనాకు ప్రత్యక్ష నిరూపణ అని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T172']=['జ్ఞానసంబంధ తర్క శీర్షిక, మూల రచయితల గమనిక, ఎనిమిది దిగుమతులు నిలిపి తప్పు భాగం హుక్‌ను ప్రకటిత అధ్యాయ హుక్‌గా సరిచేయడం (ఎంపిక)','భాగం హుక్‌ను అధ్యాయంలో అలాగే ఉంచడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీ TeX హుక్‌కు ప్రత్యక్ష సాక్ష్యం అని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T173']=['జ్ఞానసంబంధ/విశ్వాససంబంధ భేదం, పూర్వ ప్రాప్యత సంబంధ పదం, నాలుగు ఉదాహరణలు, బహు-కర్త పరిమితి నిలపడం (ఎంపిక)','epistemic, doxastic రెండింటినీ ఒకే జ్ఞాన పదంగా అనువదించడం (తిరస్కరణ)','ప్రాప్యత సంబంధాన్ని కాల సంబంధంగా చూపడం (తిరస్కరణ)','మూల చారిత్రక పేరును నిశ్శబ్దంగా సరిచేయడం (తిరస్కరణ)'];
+alternatives['TE-T174']=['Knows వ్యక్తి జ్ఞానం, EKnows సమూహ సంయోగం, CKnows అంతులేని పరస్పరజ్ఞానం భేదం నిలపడం (ఎంపిక)','సమూహ జ్ఞానం, సామాన్య జ్ఞానం ఒకటేనని చూపడం (తిరస్కరణ)','C కర్తకు అదనపు సత్య షరతు కల్పించడం (తిరస్కరణ)','మూల !! టోకెన్లను తీసివేయడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -1245,7 +1264,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T171 record the Batch 025--Batch 130 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T174 record the Batch 025--Batch 133 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1612,6 +1631,7 @@ const correctionQuestions={
  ,'OLTENMLSEQPRK-001':'Do both corrected Dual-tree labels introduce negation on the antecedent, matching the frozen LK left-negation rule?'
  ,'OLTEAMLTLDRV-001':'Does this olchapter driver now invoke the chapter-end hook rather than the part-end hook, matching the separate macro roles and chapter-driver pattern?'
  ,'OLTEAMLTLSEM-001':'Does the temporal formation clause use the Ftemp macro already introduced in the operator list and used in the future truth clause?'
+ ,'OLTEAMLELDRV-001':'Does this epistemic olchapter driver now invoke the chapter-end hook rather than the part-end hook, matching the separate macro roles and chapter-driver pattern?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));
