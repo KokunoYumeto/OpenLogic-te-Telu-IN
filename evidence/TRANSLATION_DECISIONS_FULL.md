@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **445 of 722 source units drafted**. This readable view contains all 546 decisions and 1202 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **446 of 722 source units drafted**. This readable view contains all 547 decisions and 1206 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4089,6 +4089,35 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T135-OCC-009; OLP-0445; OLP-0445-B023; source upstream/content/normal-modal-logic/completeness/modalities-ccs.tex:179-183 bytes 7726-7937 SHA-256 92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6; target translation/content/normal-modal-logic/completeness/modalities-ccs.tex:204-208 bytes 13407-13743 SHA-256 81a175de702934504ce5d2bbff44e49af17dd6c7c53294699082d2de46c7fbb0; reader page pending.
   - te-Telu-IN-TE-T135-OCC-010; OLP-0445; OLP-0445-B028; source upstream/content/normal-modal-logic/completeness/modalities-ccs.tex:216-231 bytes 9289-10182 SHA-256 92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6; target translation/content/normal-modal-logic/completeness/modalities-ccs.tex:243-264 bytes 15828-17407 SHA-256 81a175de702934504ce5d2bbff44e49af17dd6c7c53294699082d2de46c7fbb0; reader page pending.
   - te-Telu-IN-TE-T135-OCC-011; OLP-0445; OLP-0445-B030; source upstream/content/normal-modal-logic/completeness/modalities-ccs.tex:235-244 bytes 10193-10713 SHA-256 92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6; target translation/content/normal-modal-logic/completeness/modalities-ccs.tex:268-278 bytes 17416-18258 SHA-256 81a175de702934504ce5d2bbff44e49af17dd6c7c53294699082d2de46c7fbb0; reader page pending.
+
+## te-Telu-IN-TE-T136 — canonical model / complete consistent worlds / canonical accessibility and atomic valuation
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: కానానికల్ నమూనా / సంపూర్ణ అవిరుద్ధ సమితుల లోకాలు / కానానికల్ ప్రాప్యత, పరమాణు విలువ నిర్ణయం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “canonical model / complete consistent worlds / canonical accessibility and atomic valuation” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక పేజీలు ఈ మోడల్-ప్రత్యేక కానానికల్ నమూనా లేదా W/R/V నిర్వచనాన్ని ప్రత్యక్షంగా ఇవ్వవు; సత్య-మూలకత్వ తుల్యత ఇక్కడ ఇంకా నిరూపించబడలేదు.
+
+- Rationale: TE-P018/024/026లో సాధారణ ప్రతిజ్ఞావాక్య తర్కం, వ్యుత్పత్తి, సమితి సుసంగతత్వం/అసంగత చూశాం. TE-T132–135లో కానానికల్, సంపూర్ణ Sigma-అవిరుద్ధ, Box/Diamond ప్రాప్యత రూపాలను కొనసాగించాం. నిర్దిష్ట W/R/V త్రయం OLP-0446 స్థిర మూలం నుంచే. Sigma, Delta, W, R, V, Box, Diamond, model tuple and primitive-modality tag keys రక్షిత సంకేతాలు.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P026 [checked_context_only], PDF page 88; printed page 81; Consistency section; Direct consistency/inconsistency terminology; not direct completeness terminology.
+
+- Alternatives: సంపూర్ణ Sigma-అవిరుద్ధ సమితులను లోకాలుగా, Box/Diamond guarded ప్రాప్యతను Rగా, మూలకత్వ-ఆధారిత పరమాణు విలువ నిర్ణయాన్ని Vగా నిర్వచించడం [viable_alternative: ఎంపిక] | సత్య-మూలకత్వ తుల్యతను ఈ నిర్వచనంలోనే పూర్తిగా నిరూపించామని చూపడం [viable_alternative: తిరస్కరణ] | Box/Diamond శాఖల ప్రాప్యత షరతులను తారుమారు చేయడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ తర్క పేజీలే కానానికల్ నమూనాను ప్రత్యక్షంగా నిర్వచించాయని చూపడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “కానానికల్ నమూనా / సంపూర్ణ అవిరుద్ధ సమితుల లోకాలు / కానానికల్ ప్రాప్యత, పరమాణు విలువ నిర్ణయం” is idiomatic and technically standard for “canonical model / complete consistent worlds / canonical accessibility and atomic valuation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T136-OCC-001; OLP-0446; OLP-0446-B005; source upstream/content/normal-modal-logic/completeness/canonical-models.tex:11 bytes 187-216 SHA-256 7d21c989f62f34ed387f7cbaef899f8b6d2c37467306110765c7395f70b1e4c3; target translation/content/normal-modal-logic/completeness/canonical-models.tex:11 bytes 187-249 SHA-256 b954c886497dfe160a15a02b2d18a05fb1fbad56e1362e117324f861f528f398; reader page pending.
+  - te-Telu-IN-TE-T136-OCC-002; OLP-0446; OLP-0446-B006; source upstream/content/normal-modal-logic/completeness/canonical-models.tex:13-18 bytes 217-565 SHA-256 7d21c989f62f34ed387f7cbaef899f8b6d2c37467306110765c7395f70b1e4c3; target translation/content/normal-modal-logic/completeness/canonical-models.tex:13-19 bytes 250-970 SHA-256 b954c886497dfe160a15a02b2d18a05fb1fbad56e1362e117324f861f528f398; reader page pending.
+  - te-Telu-IN-TE-T136-OCC-003; OLP-0446; OLP-0446-B007; source upstream/content/normal-modal-logic/completeness/canonical-models.tex:20-32 bytes 566-1087 SHA-256 7d21c989f62f34ed387f7cbaef899f8b6d2c37467306110765c7395f70b1e4c3; target translation/content/normal-modal-logic/completeness/canonical-models.tex:21-33 bytes 971-1686 SHA-256 b954c886497dfe160a15a02b2d18a05fb1fbad56e1362e117324f861f528f398; reader page pending.
+  - te-Telu-IN-TE-T136-OCC-004; OLP-0446; OLP-0446-B007; source upstream/content/normal-modal-logic/completeness/canonical-models.tex:20-32 bytes 566-1087 SHA-256 7d21c989f62f34ed387f7cbaef899f8b6d2c37467306110765c7395f70b1e4c3; target translation/content/normal-modal-logic/completeness/canonical-models.tex:21-33 bytes 971-1686 SHA-256 b954c886497dfe160a15a02b2d18a05fb1fbad56e1362e117324f861f528f398; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 

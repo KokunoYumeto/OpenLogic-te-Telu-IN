@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 445 of 722 draft units**. This log contains 135 terminology/sense decisions and 411 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 446 of 722 draft units**. This log contains 136 terminology/sense decisions and 411 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3247,6 +3247,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక పేజీలు ఈ మోడల్-ప్రత్యేక కానానికల్ ప్రాప్యత, Box/Diamond పూర్వప్రతిబింబ ఉపసిద్ధాంతాలు లేదా guarded శాఖలను ప్రత్యక్షంగా ఇవ్వవు. స్థిర మూలంలోని రెండు సూచిక/పరామితి లోపాలను OLTENMLCOMMOD-001/002లో ప్రకటించి సరిచేశాం.
 
 - Please double-check: Please double-check whether “సంపూర్ణ అవిరుద్ధ సమితుల మోడల్ సంయోజకాలు / కానానికల్ ప్రాప్యత / Box, Diamond ప్రతిబింబాలు, పూర్వప్రతిబింబాలు / RK ద్వారా ఉద్ధరణ / షరతుపర మోడల్ నిరూపణలు” is idiomatic and technically standard for “modalities with complete consistent sets / canonical accessibility / Box and Diamond images and inverse images / RK lifting / guarded primitive-modal proofs” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T136 — canonical model / complete consistent worlds / canonical accessibility and atomic valuation
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: కానానికల్ నమూనా / సంపూర్ణ అవిరుద్ధ సమితుల లోకాలు / కానానికల్ ప్రాప్యత, పరమాణు విలువ నిర్ణయం
+
+- Exact implementation: OLP-0446; normal-modal-logic/completeness/canonical-models; content/normal-modal-logic/completeness/canonical-models.tex:11 ↔ translation/content/normal-modal-logic/completeness/canonical-models.tex:11 (OLP-0446-B005); printed/PDF page pending; OLP-0446; normal-modal-logic/completeness/canonical-models; content/normal-modal-logic/completeness/canonical-models.tex:13-18 ↔ translation/content/normal-modal-logic/completeness/canonical-models.tex:13-19 (OLP-0446-B006); printed/PDF page pending; OLP-0446; normal-modal-logic/completeness/canonical-models; content/normal-modal-logic/completeness/canonical-models.tex:20-32 ↔ translation/content/normal-modal-logic/completeness/canonical-models.tex:21-33 (OLP-0446-B007); printed/PDF page pending; OLP-0446; normal-modal-logic/completeness/canonical-models; content/normal-modal-logic/completeness/canonical-models.tex:20-32 ↔ translation/content/normal-modal-logic/completeness/canonical-models.tex:21-33 (OLP-0446-B007); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P026, PDF 88, printed 81, Consistency section
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P018/024/026లో సాధారణ ప్రతిజ్ఞావాక్య తర్కం, వ్యుత్పత్తి, సమితి సుసంగతత్వం/అసంగత చూశాం. TE-T132–135లో కానానికల్, సంపూర్ణ Sigma-అవిరుద్ధ, Box/Diamond ప్రాప్యత రూపాలను కొనసాగించాం. నిర్దిష్ట W/R/V త్రయం OLP-0446 స్థిర మూలం నుంచే. Sigma, Delta, W, R, V, Box, Diamond, model tuple and primitive-modality tag keys రక్షిత సంకేతాలు.
+
+- Alternatives: సంపూర్ణ Sigma-అవిరుద్ధ సమితులను లోకాలుగా, Box/Diamond guarded ప్రాప్యతను Rగా, మూలకత్వ-ఆధారిత పరమాణు విలువ నిర్ణయాన్ని Vగా నిర్వచించడం (ఎంపిక); సత్య-మూలకత్వ తుల్యతను ఈ నిర్వచనంలోనే పూర్తిగా నిరూపించామని చూపడం (తిరస్కరణ); Box/Diamond శాఖల ప్రాప్యత షరతులను తారుమారు చేయడం (తిరస్కరణ); స్థానిక సాధారణ తర్క పేజీలే కానానికల్ నమూనాను ప్రత్యక్షంగా నిర్వచించాయని చూపడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక పేజీలు ఈ మోడల్-ప్రత్యేక కానానికల్ నమూనా లేదా W/R/V నిర్వచనాన్ని ప్రత్యక్షంగా ఇవ్వవు; సత్య-మూలకత్వ తుల్యత ఇక్కడ ఇంకా నిరూపించబడలేదు.
+
+- Please double-check: Please double-check whether “కానానికల్ నమూనా / సంపూర్ణ అవిరుద్ధ సమితుల లోకాలు / కానానికల్ ప్రాప్యత, పరమాణు విలువ నిర్ణయం” is idiomatic and technically standard for “canonical model / complete consistent worlds / canonical accessibility and atomic valuation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 

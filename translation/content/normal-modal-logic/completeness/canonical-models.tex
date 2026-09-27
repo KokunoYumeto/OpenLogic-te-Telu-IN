@@ -1,0 +1,36 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: canonical-models
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{cmd}
+
+\olsection{కానానికల్ నమూనాలు}
+
+మోడల్ వ్యవస్థ~$\Sigma$కు చెందిన \emph{కానానికల్ నమూనా},
+అన్ని సంపూర్ణ $\Sigma$-అవిరుద్ధ సమితులే లోకాలుగా ఉండే
+ఒక నిర్దిష్ట నమూనా~$\mModel{M^\Sigma}$. దాని ప్రాప్యత
+సంబంధం~$R^\Sigma$, విలువ నిర్ణయం $V^\Sigma$లను,
+ఒక లోకం~$\Delta$లో సత్యమయ్యే \tetoken{సూత్రాలు}{!!{formula}s}
+సరిగ్గా~$\Delta$లోని \tetoken{సూత్రాలే}{!!{formula}s} అయ్యేలా
+నిర్వచిస్తాం.
+
+\begin{defn}
+  $\Sigma$ నార్మల్ మోడల్ తర్కం అనుకుందాం. $\Sigma$కు చెందిన
+  \emph{కానానికల్ నమూనా} $\mModel{M}^\Sigma = \tuple{W^\Sigma,
+    R^\Sigma, V^\Sigma}$; ఇక్కడ:
+  \begin{enumerate}
+  \item $W^\Sigma = \Setabs{ \Delta }{\Delta \text{
+      సంపూర్ణ $\Sigma$-అవిరుద్ధం} }$.
+  \item $R^\Sigma \Delta\Delta'$ నెరవేరుతుంది, అప్పుడు మాత్రమే
+    \iftag{prvBox}{$\Box^{-1}\Delta \subseteq
+      \Delta'$}{$\Diamond\Delta' \subseteq \Delta$}.
+  \item $V^\Sigma(p) = \Setabs{\Delta}{p \in \Delta}$.
+  \end{enumerate}
+\end{defn}
+
+
+\end{document}
