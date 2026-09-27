@@ -747,6 +747,15 @@ locations['TE-T130']=[
  L('content/normal-modal-logic/axioms-systems/provability-properties.tex',29,33,29,33,'tautological instance','సర్వసత్య నిదర్శనమైతే'),
  L('content/normal-modal-logic/axioms-systems/provability-properties.tex',44,48,45,49,'deductively closed','నిగమన పరంగా సంవృతం')
 ];
+locations['TE-T131']=[
+ L('content/normal-modal-logic/axioms-systems/consistency.tex',11,11,11,11,'Consistency','అవైరుధ్యం'),
+ L('content/normal-modal-logic/axioms-systems/consistency.tex',13,19,13,25,'inconsistent','విరుద్ధం'),
+ L('content/normal-modal-logic/axioms-systems/consistency.tex',17,19,23,25,'canonical','కానానికల్'),
+ L('content/normal-modal-logic/axioms-systems/consistency.tex',21,25,27,31,'consistent','అవిరుద్ధం'),
+ L('content/normal-modal-logic/axioms-systems/consistency.tex',27,30,33,36,'consistent relatively to propositional logic','ప్రతిజ్ఞావాక్య తర్కానికి సాపేక్షంగా అవిరుద్ధం'),
+ L('content/normal-modal-logic/axioms-systems/consistency.tex',32,47,38,53,'some !!{formula}','సూత్రం'),
+ L('content/normal-modal-logic/axioms-systems/consistency.tex',49,62,55,73,'contrapositively','విపర్యయంగా')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -863,6 +872,7 @@ alternatives['TE-T127']=['నిర్దుష్టత అనే పూర్�
 alternatives['TE-T128']=['మూడూ మూల TikZ ప్రతినమూనాలు, చట్ర ధర్మాలు, రెండు వ్యాయామాలు, వ్యుత్పాద్యత/చేరిక దిశలు నిలిపి, D/4/5 స్వీకృత సూత్రాల రకభేదాన్ని రెండు ప్రకటిత సవరణలతో స్పష్టం చేయడం (ఎంపిక)','వ్యవస్థ-పేర్లనే వ్యుత్పాద్య సూత్రాలుగా మౌనంగా ఉంచడం (తిరస్కరణ)','సౌష్ఠవ, స్వావర్తన, సీరియల్, యూక్లిడియన్ ధర్మాలను ఒకే లక్షణంగా కలపడం (తిరస్కరణ)','స్థానిక సంబంధ పేజీనే మోడల్ ప్రతినమూనాలకు ప్రత్యక్ష సాక్ష్యంగా చూపడం (తిరస్కరణ)'];
 alternatives['TE-T129']=['సమితి Gamma నుంచి వ్యవస్థ Sigmaలో నిరూపణీయతకు మూలంలోని అంతర్నిహితార్థ-శ్రేణి షరతును యథాతథంగా ఉంచి, పూర్వ వ్యుత్పాద్యత పదరూపాన్ని కొనసాగించడం (ఎంపిక)','Gamma/Sigma పాత్రలను తారుమారు చేయడం (తిరస్కరణ)','మూలంలో చెప్పని శూన్య-n సంప్రదాయాన్ని నిర్వచనంలో జోడించడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలనే ఈ మోడల్-ప్రత్యేక నిర్వచనానికి ప్రత్యక్ష సాక్ష్యంగా చూపడం (తిరస్కరణ)'];
 alternatives['TE-T130']=['ఏకదిశత, స్వావర్తనత్వం, కట్, నిగమన సిద్ధాంతం, నిగమన పరంగా సంవృతం అనే పూర్వ పదరూపాలను Gamma/Sigma-సాపేక్ష ఐదు మూల షరతులతో కలిపి నిలపడం (ఎంపిక)','కట్‌కు మూలంలో కనిపించని కొత్త ఉపపత్తిని చేర్చడం (తిరస్కరణ)','రెండు దిశల నిగమన సిద్ధాంతాన్ని ఒక్క దిశగా పరిమితం చేయడం (తిరస్కరణ)','పేరులేని ఐదవ అంశానికి మూలంలో కనిపించే Rule T లేబుల్ ఉన్నట్లుగా ప్రకటించడం (తిరస్కరణ)'];
+alternatives['TE-T131']=['స్థిర అవైరుధ్యం/వైరుధ్యం జోడీని స్థానిక సుసంగతత్వం/అసంగత పర్యాయంతో కలిపి నమోదు చేసి, వ్యవస్థ-సాపేక్ష షరతులు, K/K5 ఉదాహరణలు, మూడు లక్షణాలు, విపర్యయ నిరూపణ నిలపడం; రెండు మూల స్పష్టీకరణలు ప్రకటించడం (ఎంపిక)','స్థానిక సాధారణ ప్రతిజ్ఞావాక్య అవైరుధ్య భావమే K/K5-సాపేక్ష పూర్తి సిద్ధాంతాన్ని నిరూపిస్తుందని చెప్పడం (తిరస్కరణ)','ఏ నమూనాలోనైనా వ్యవస్థ-సాపేక్ష వైరుధ్యం అసంతృప్తిని ఇస్తుందని పరిమితి లేకుండా ఉంచడం (తిరస్కరణ)','(b) అంశాన్ని విస్తరించిన సమితుల నుంచి bottom వ్యుత్పాద్యతకు తక్షణ నిర్వచనంగా పొరబడడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -878,7 +888,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T130 record the Batch 025--Batch 089 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T131 record the Batch 025--Batch 090 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1194,6 +1204,8 @@ const correctionQuestions={
  ,'OLTENMLAXSSND-002':'Is necessitation justified for validity at every world in each model of the stated intersection class, rather than inferred solely from the cited global-validity proposition?'
  ,'OLTENMLAXSDIS-001':'Does the KD-in-KT proof derive the D axiom formula, not a system named D, consistently with the cited KT proves Ax D result?'
  ,'OLTENMLAXSDIS-002':'Do the two KTB nonprovability claims concern axiom formulas 4 and 5, as the countermodel proof requires, rather than system labels?'
+ ,'OLTENMLAXSCON-001':'Is the non-satisfiability of a Sigma-inconsistent set restricted to a model class where Sigma is sound, rather than asserted for arbitrary models?'
+ ,'OLTENMLAXSCON-002':'Do the two Gamma-plus-assumption derives-bottom lines follow directly from the Sigma-consistency definition and union shorthand, with item (b) cited only as context?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

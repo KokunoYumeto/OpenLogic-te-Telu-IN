@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **439 of 722 source units drafted**. This readable view contains all 532 decisions and 1154 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **440 of 722 source units drafted**. This readable view contains all 535 decisions and 1163 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3925,6 +3925,38 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T130-OCC-005; OLP-0439; OLP-0439-B006; source upstream/content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 bytes 249-1397 SHA-256 2054b1d871723e1845690d3dc42bf9e44a994965341fc3e6505e0c91c1b3a246; target translation/content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 bytes 260-1800 SHA-256 0e3de14277659c64ee46f75e809c7f30491f8294fecd017c1af9b5ba3f3fa73c; reader page pending.
   - te-Telu-IN-TE-T130-OCC-006; OLP-0439; OLP-0439-B006; source upstream/content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 bytes 249-1397 SHA-256 2054b1d871723e1845690d3dc42bf9e44a994965341fc3e6505e0c91c1b3a246; target translation/content/normal-modal-logic/axioms-systems/provability-properties.tex:13-35 bytes 260-1800 SHA-256 0e3de14277659c64ee46f75e809c7f30491f8294fecd017c1af9b5ba3f3fa73c; reader page pending.
   - te-Telu-IN-TE-T130-OCC-007; OLP-0439; OLP-0439-B008; source upstream/content/normal-modal-logic/axioms-systems/provability-properties.tex:44-48 bytes 1764-1938 SHA-256 2054b1d871723e1845690d3dc42bf9e44a994965341fc3e6505e0c91c1b3a246; target translation/content/normal-modal-logic/axioms-systems/provability-properties.tex:45-49 bytes 2339-2636 SHA-256 0e3de14277659c64ee46f75e809c7f30491f8294fecd017c1af9b5ba3f3fa73c; reader page pending.
+
+## te-Telu-IN-TE-T131 — system-relative consistency / inconsistency / canonical model / consistent extension / contraposition proof
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: వ్యవస్థ-సాపేక్ష అవైరుధ్యం / వైరుధ్యం / కానానికల్ నమూనా / అవిరుద్ధ విస్తరణ / విపర్యయ నిరూపణ
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “system-relative consistency / inconsistency / canonical model / consistent extension / contraposition proof” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: సుసంగతత్వం అనే స్థానిక పర్యాయాన్ని త్రోసిపుచ్చలేదు; స్థిర అవైరుధ్యం రూపం సంపాదకీయ సమన్వయం. కానానికల్ నమూనా ప్రత్యేక మోడల్-సిద్ధాంత ఋణపదం, తరువాతి మూల నిర్మాణం ద్వారా స్థిరీకరణకు లోబడి ఉంది. నమూనా-సత్య వాక్య పరిమితి, నిరూపణలో తక్షణ ఆధార సూచన OLTENMLAXSCON-001--002గా ప్రకటించబడ్డాయి.
+
+- Rationale: TE-P026 స్థానిక పేజీని ఈ బ్యాచ్‌లో నేరుగా మళ్లీ చూసాం: అక్కడ సాధారణ ప్రతిజ్ఞావాక్య సమితి సుసంగతత్వం/అసంగత ప్రత్యక్షం. TE-P018/024లో ప్రతిజ్ఞావాక్య తర్కం, నియమ-వ్యుత్పత్తి ప్రత్యక్షం. TE-T034, TE-T073, TE-T119--TE-T130 పూర్వ వాడుకతో సమన్వయంగా స్థిర లక్ష్యంలో అవైరుధ్యం/వైరుధ్యం కొనసాగించాం. Sigma-సాపేక్ష నిర్వచనం, K/K5 ఉదాహరణలు, మూడు లక్షణాలు, విపర్యయ నిరూపణ OLP-0440 మూల గణితం నుంచే. కానానికల్ అనేది నిర్వచనంతో సందర్భీకరించాల్సిన ప్రత్యేక సాంకేతిక ఋణపదం; Sigma, Gamma, K, K5, Box, Diamond, Proves మరియు సూత్ర మెటాచరాలు రక్షిత గణిత సంకేతాలు.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P026 [checked_context_only], PDF page 88; printed page 81; Consistency section; Direct consistency/inconsistency terminology; not direct completeness terminology.
+
+- Alternatives: స్థిర అవైరుధ్యం/వైరుధ్యం జోడీని స్థానిక సుసంగతత్వం/అసంగత పర్యాయంతో కలిపి నమోదు చేసి, వ్యవస్థ-సాపేక్ష షరతులు, K/K5 ఉదాహరణలు, మూడు లక్షణాలు, విపర్యయ నిరూపణ నిలపడం; రెండు మూల స్పష్టీకరణలు ప్రకటించడం [viable_alternative: ఎంపిక] | స్థానిక సాధారణ ప్రతిజ్ఞావాక్య అవైరుధ్య భావమే K/K5-సాపేక్ష పూర్తి సిద్ధాంతాన్ని నిరూపిస్తుందని చెప్పడం [viable_alternative: తిరస్కరణ] | ఏ నమూనాలోనైనా వ్యవస్థ-సాపేక్ష వైరుధ్యం అసంతృప్తిని ఇస్తుందని పరిమితి లేకుండా ఉంచడం [viable_alternative: తిరస్కరణ] | (b) అంశాన్ని విస్తరించిన సమితుల నుంచి bottom వ్యుత్పాద్యతకు తక్షణ నిర్వచనంగా పొరబడడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “వ్యవస్థ-సాపేక్ష అవైరుధ్యం / వైరుధ్యం / కానానికల్ నమూనా / అవిరుద్ధ విస్తరణ / విపర్యయ నిరూపణ” is idiomatic and technically standard for “system-relative consistency / inconsistency / canonical model / consistent extension / contraposition proof” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T131-OCC-001; OLP-0440; OLP-0440-B005; source upstream/content/normal-modal-logic/axioms-systems/consistency.tex:11 bytes 184-208 SHA-256 410cd2532bf8c2ba318f476f6e9192064021f16e0a42aa297015bb41851e889b; target translation/content/normal-modal-logic/axioms-systems/consistency.tex:11 bytes 184-224 SHA-256 f201fc7a26032c0cb7dbdf571b46ea2e54403457b37d21d8181228bfaf7b6732; reader page pending.
+  - te-Telu-IN-TE-T131-OCC-002; OLP-0440; OLP-0440-B006; source upstream/content/normal-modal-logic/axioms-systems/consistency.tex:13-19 bytes 209-624 SHA-256 410cd2532bf8c2ba318f476f6e9192064021f16e0a42aa297015bb41851e889b; target translation/content/normal-modal-logic/axioms-systems/consistency.tex:13-25 bytes 225-2047 SHA-256 f201fc7a26032c0cb7dbdf571b46ea2e54403457b37d21d8181228bfaf7b6732; reader page pending.
+  - te-Telu-IN-TE-T131-OCC-003; OLP-0440; OLP-0440-B006; source upstream/content/normal-modal-logic/axioms-systems/consistency.tex:13-19 bytes 209-624 SHA-256 410cd2532bf8c2ba318f476f6e9192064021f16e0a42aa297015bb41851e889b; target translation/content/normal-modal-logic/axioms-systems/consistency.tex:13-25 bytes 225-2047 SHA-256 f201fc7a26032c0cb7dbdf571b46ea2e54403457b37d21d8181228bfaf7b6732; reader page pending.
+  - te-Telu-IN-TE-T131-OCC-004; OLP-0440; OLP-0440-B007; source upstream/content/normal-modal-logic/axioms-systems/consistency.tex:21-25 bytes 625-814 SHA-256 410cd2532bf8c2ba318f476f6e9192064021f16e0a42aa297015bb41851e889b; target translation/content/normal-modal-logic/axioms-systems/consistency.tex:27-31 bytes 2048-2395 SHA-256 f201fc7a26032c0cb7dbdf571b46ea2e54403457b37d21d8181228bfaf7b6732; reader page pending.
+  - te-Telu-IN-TE-T131-OCC-005; OLP-0440; OLP-0440-B008; source upstream/content/normal-modal-logic/axioms-systems/consistency.tex:27-30 bytes 815-1059 SHA-256 410cd2532bf8c2ba318f476f6e9192064021f16e0a42aa297015bb41851e889b; target translation/content/normal-modal-logic/axioms-systems/consistency.tex:33-36 bytes 2396-2810 SHA-256 f201fc7a26032c0cb7dbdf571b46ea2e54403457b37d21d8181228bfaf7b6732; reader page pending.
+  - te-Telu-IN-TE-T131-OCC-006; OLP-0440; OLP-0440-B009; source upstream/content/normal-modal-logic/axioms-systems/consistency.tex:32-47 bytes 1060-1718 SHA-256 410cd2532bf8c2ba318f476f6e9192064021f16e0a42aa297015bb41851e889b; target translation/content/normal-modal-logic/axioms-systems/consistency.tex:38-53 bytes 2811-3814 SHA-256 f201fc7a26032c0cb7dbdf571b46ea2e54403457b37d21d8181228bfaf7b6732; reader page pending.
+  - te-Telu-IN-TE-T131-OCC-007; OLP-0440; OLP-0440-B010; source upstream/content/normal-modal-logic/axioms-systems/consistency.tex:49-62 bytes 1719-2477 SHA-256 410cd2532bf8c2ba318f476f6e9192064021f16e0a42aa297015bb41851e889b; target translation/content/normal-modal-logic/axioms-systems/consistency.tex:55-73 bytes 3815-5538 SHA-256 f201fc7a26032c0cb7dbdf571b46ea2e54403457b37d21d8181228bfaf7b6732; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -14457,3 +14489,55 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLAXSDIS-002-OCC-001; OLP-0437; OLP-0437-B012; source upstream/content/normal-modal-logic/axioms-systems/systems-distinct.tex:65-67 bytes 2286-2395 SHA-256 5242bad1abef085ce60944f529370410d12a911fbe55fa1047a29fca3c7b214b; target translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:71 bytes 4157-4266 SHA-256 5b01b6be1639efe34253e0b7dd84895156d66721b832d2c2035444c71532632b; reader page pending.
+
+## te-Telu-IN-OLTENMLAXSCON-001 — OLTENMLAXSCON-001: unqualified model satisfaction from system relative inconsistency
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: వ్యవస్థ-సాపేక్ష వైరుధ్యం నుంచి నమూనా-అసంతృప్తి ఆ వ్యవస్థ నిర్దుష్టత వర్తించే నమూనాల వర్గంలోనే అనుసరిస్తుందని తెలుగు గద్యంలో ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Intended sense: Repair the audited unqualified model satisfaction from system relative inconsistency at consistency.tex lines 15-17, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLAXSCON-20260927:OLTENMLAXSCON-001 [checked_supports], content/normal-modal-logic/axioms-systems/consistency.tex; consistency.tex lines 15-17; unqualified_model_satisfaction_from_system_relative_inconsistency; వ్యవస్థ-సాపేక్ష వైరుధ్యం నుంచి నమూనా-అసంతృప్తి ఆ వ్యవస్థ నిర్దుష్టత వర్తించే నమూనాల వర్గంలోనే అనుసరిస్తుందని తెలుగు గద్యంలో ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Is the non-satisfiability of a Sigma-inconsistent set restricted to a model class where Sigma is sound, rather than asserted for arbitrary models?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLAXSCON-001-OCC-001; OLP-0440; OLP-0440-B006; source upstream/content/normal-modal-logic/axioms-systems/consistency.tex:13-19 bytes 209-624 SHA-256 410cd2532bf8c2ba318f476f6e9192064021f16e0a42aa297015bb41851e889b; target translation/content/normal-modal-logic/axioms-systems/consistency.tex:19 bytes 1061-1169 SHA-256 f201fc7a26032c0cb7dbdf571b46ea2e54403457b37d21d8181228bfaf7b6732; reader page pending.
+
+## te-Telu-IN-OLTENMLAXSCON-002 — OLTENMLAXSCON-002: immediate inconsistency step cites wrong proposition
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: విస్తరించిన సమితుల నుంచి bottom వ్యుత్పాద్యతకు తక్షణ ఆధారం అవైరుధ్య నిర్వచనం అని తెలిపి, (b) సూచనను సందర్భంగా నిలిపి, భేదాన్ని పక్కనే ప్రకటించాం; గణిత సూత్రాలు మారలేదు.
+
+- Intended sense: Repair the audited immediate inconsistency step cites wrong proposition at consistency.tex lines 53-55, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLAXSCON-20260927:OLTENMLAXSCON-002 [checked_supports], content/normal-modal-logic/axioms-systems/consistency.tex; consistency.tex lines 53-55; immediate_inconsistency_step_cites_wrong_proposition; విస్తరించిన సమితుల నుంచి bottom వ్యుత్పాద్యతకు తక్షణ ఆధారం అవైరుధ్య నిర్వచనం అని తెలిపి, (b) సూచనను సందర్భంగా నిలిపి, భేదాన్ని పక్కనే ప్రకటించాం; గణిత సూత్రాలు మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Do the two Gamma-plus-assumption derives-bottom lines follow directly from the Sigma-consistency definition and union shorthand, with item (b) cited only as context?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLAXSCON-002-OCC-001; OLP-0440; OLP-0440-B010; source upstream/content/normal-modal-logic/axioms-systems/consistency.tex:49-62 bytes 1719-2477 SHA-256 410cd2532bf8c2ba318f476f6e9192064021f16e0a42aa297015bb41851e889b; target translation/content/normal-modal-logic/axioms-systems/consistency.tex:63 bytes 4568-4656 SHA-256 f201fc7a26032c0cb7dbdf571b46ea2e54403457b37d21d8181228bfaf7b6732; reader page pending.

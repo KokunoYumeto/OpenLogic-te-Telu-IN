@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 439 of 722 draft units**. This log contains 130 terminology/sense decisions and 402 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 440 of 722 draft units**. This log contains 131 terminology/sense decisions and 404 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3127,6 +3127,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక పేజీలు ఈ మోడల్ వ్యుత్పాద్యత ప్రతిపాదనకు ప్రత్యక్ష నిరూపణ కావు. కట్ అనేది పూర్వ సీక్వెంట్ నియమంలో వాడిన ప్రకటిత ఋణపేరు; ఈ సమితి-సాపేక్ష సందర్భంలో గణిత షరతే అర్థాన్ని స్థిరపరుస్తుంది. ఐదవ అంశానికి మూలంలో కనిపించే పేరు లేదు.
 
 - Please double-check: Please double-check whether “మోడల్ వ్యుత్పాద్యత లక్షణాలు / ఏకదిశత / స్వావర్తనత్వం / కట్ / నిగమన సిద్ధాంతం / నిగమన పరంగా సంవృతమైన సమితి” is idiomatic and technically standard for “properties of modal derivability / monotonicity / reflexivity / cut / deduction theorem / deductively closed set” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T131 — system-relative consistency / inconsistency / canonical model / consistent extension / contraposition proof
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: వ్యవస్థ-సాపేక్ష అవైరుధ్యం / వైరుధ్యం / కానానికల్ నమూనా / అవిరుద్ధ విస్తరణ / విపర్యయ నిరూపణ
+
+- Exact implementation: OLP-0440; normal-modal-logic/axioms-systems/consistency; content/normal-modal-logic/axioms-systems/consistency.tex:11 ↔ translation/content/normal-modal-logic/axioms-systems/consistency.tex:11 (OLP-0440-B005); printed/PDF page pending; OLP-0440; normal-modal-logic/axioms-systems/consistency; content/normal-modal-logic/axioms-systems/consistency.tex:13-19 ↔ translation/content/normal-modal-logic/axioms-systems/consistency.tex:13-25 (OLP-0440-B006); printed/PDF page pending; OLP-0440; normal-modal-logic/axioms-systems/consistency; content/normal-modal-logic/axioms-systems/consistency.tex:13-19 ↔ translation/content/normal-modal-logic/axioms-systems/consistency.tex:13-25 (OLP-0440-B006); printed/PDF page pending; OLP-0440; normal-modal-logic/axioms-systems/consistency; content/normal-modal-logic/axioms-systems/consistency.tex:21-25 ↔ translation/content/normal-modal-logic/axioms-systems/consistency.tex:27-31 (OLP-0440-B007); printed/PDF page pending; OLP-0440; normal-modal-logic/axioms-systems/consistency; content/normal-modal-logic/axioms-systems/consistency.tex:27-30 ↔ translation/content/normal-modal-logic/axioms-systems/consistency.tex:33-36 (OLP-0440-B008); printed/PDF page pending; OLP-0440; normal-modal-logic/axioms-systems/consistency; content/normal-modal-logic/axioms-systems/consistency.tex:32-47 ↔ translation/content/normal-modal-logic/axioms-systems/consistency.tex:38-53 (OLP-0440-B009); printed/PDF page pending; OLP-0440; normal-modal-logic/axioms-systems/consistency; content/normal-modal-logic/axioms-systems/consistency.tex:49-62 ↔ translation/content/normal-modal-logic/axioms-systems/consistency.tex:55-73 (OLP-0440-B010); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P026, PDF 88, printed 81, Consistency section
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P026 స్థానిక పేజీని ఈ బ్యాచ్‌లో నేరుగా మళ్లీ చూసాం: అక్కడ సాధారణ ప్రతిజ్ఞావాక్య సమితి సుసంగతత్వం/అసంగత ప్రత్యక్షం. TE-P018/024లో ప్రతిజ్ఞావాక్య తర్కం, నియమ-వ్యుత్పత్తి ప్రత్యక్షం. TE-T034, TE-T073, TE-T119--TE-T130 పూర్వ వాడుకతో సమన్వయంగా స్థిర లక్ష్యంలో అవైరుధ్యం/వైరుధ్యం కొనసాగించాం. Sigma-సాపేక్ష నిర్వచనం, K/K5 ఉదాహరణలు, మూడు లక్షణాలు, విపర్యయ నిరూపణ OLP-0440 మూల గణితం నుంచే. కానానికల్ అనేది నిర్వచనంతో సందర్భీకరించాల్సిన ప్రత్యేక సాంకేతిక ఋణపదం; Sigma, Gamma, K, K5, Box, Diamond, Proves మరియు సూత్ర మెటాచరాలు రక్షిత గణిత సంకేతాలు.
+
+- Alternatives: స్థిర అవైరుధ్యం/వైరుధ్యం జోడీని స్థానిక సుసంగతత్వం/అసంగత పర్యాయంతో కలిపి నమోదు చేసి, వ్యవస్థ-సాపేక్ష షరతులు, K/K5 ఉదాహరణలు, మూడు లక్షణాలు, విపర్యయ నిరూపణ నిలపడం; రెండు మూల స్పష్టీకరణలు ప్రకటించడం (ఎంపిక); స్థానిక సాధారణ ప్రతిజ్ఞావాక్య అవైరుధ్య భావమే K/K5-సాపేక్ష పూర్తి సిద్ధాంతాన్ని నిరూపిస్తుందని చెప్పడం (తిరస్కరణ); ఏ నమూనాలోనైనా వ్యవస్థ-సాపేక్ష వైరుధ్యం అసంతృప్తిని ఇస్తుందని పరిమితి లేకుండా ఉంచడం (తిరస్కరణ); (b) అంశాన్ని విస్తరించిన సమితుల నుంచి bottom వ్యుత్పాద్యతకు తక్షణ నిర్వచనంగా పొరబడడం (తిరస్కరణ)
+
+- Uncertainty: సుసంగతత్వం అనే స్థానిక పర్యాయాన్ని త్రోసిపుచ్చలేదు; స్థిర అవైరుధ్యం రూపం సంపాదకీయ సమన్వయం. కానానికల్ నమూనా ప్రత్యేక మోడల్-సిద్ధాంత ఋణపదం, తరువాతి మూల నిర్మాణం ద్వారా స్థిరీకరణకు లోబడి ఉంది. నమూనా-సత్య వాక్య పరిమితి, నిరూపణలో తక్షణ ఆధార సూచన OLTENMLAXSCON-001--002గా ప్రకటించబడ్డాయి.
+
+- Please double-check: Please double-check whether “వ్యవస్థ-సాపేక్ష అవైరుధ్యం / వైరుధ్యం / కానానికల్ నమూనా / అవిరుద్ధ విస్తరణ / విపర్యయ నిరూపణ” is idiomatic and technically standard for “system-relative consistency / inconsistency / canonical model / consistent extension / contraposition proof” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -12775,3 +12799,51 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Do the two KTB nonprovability claims concern axiom formulas 4 and 5, as the countermodel proof requires, rather than system labels?
+
+## REV-OLTENMLAXSCON-001 — OLTENMLAXSCON-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: వ్యవస్థ-సాపేక్ష వైరుధ్యం నుంచి నమూనా-అసంతృప్తి ఆ వ్యవస్థ నిర్దుష్టత వర్తించే నమూనాల వర్గంలోనే అనుసరిస్తుందని తెలుగు గద్యంలో ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Exact implementation: OLP-0440; normal-modal-logic/axioms-systems/consistency; consistency.tex lines 15-17 ↔ translation/content/normal-modal-logic/axioms-systems/consistency.tex:19 (OLP-0440-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLAXSCON-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: వ్యవస్థ-సాపేక్ష వైరుధ్యం నుంచి నమూనా-అసంతృప్తి ఆ వ్యవస్థ నిర్దుష్టత వర్తించే నమూనాల వర్గంలోనే అనుసరిస్తుందని తెలుగు గద్యంలో ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Is the non-satisfiability of a Sigma-inconsistent set restricted to a model class where Sigma is sound, rather than asserted for arbitrary models?
+
+## REV-OLTENMLAXSCON-002 — OLTENMLAXSCON-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: విస్తరించిన సమితుల నుంచి bottom వ్యుత్పాద్యతకు తక్షణ ఆధారం అవైరుధ్య నిర్వచనం అని తెలిపి, (b) సూచనను సందర్భంగా నిలిపి, భేదాన్ని పక్కనే ప్రకటించాం; గణిత సూత్రాలు మారలేదు.
+
+- Exact implementation: OLP-0440; normal-modal-logic/axioms-systems/consistency; consistency.tex lines 53-55 ↔ translation/content/normal-modal-logic/axioms-systems/consistency.tex:63 (OLP-0440-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLAXSCON-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: విస్తరించిన సమితుల నుంచి bottom వ్యుత్పాద్యతకు తక్షణ ఆధారం అవైరుధ్య నిర్వచనం అని తెలిపి, (b) సూచనను సందర్భంగా నిలిపి, భేదాన్ని పక్కనే ప్రకటించాం; గణిత సూత్రాలు మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Do the two Gamma-plus-assumption derives-bottom lines follow directly from the Sigma-consistency definition and union shorthand, with item (b) cited only as context?

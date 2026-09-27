@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 439 of 722 draft units**. This view selects 455 of 532 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 440 of 722 draft units**. This view selects 457 of 535 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4553,3 +4553,23 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0437; normal-modal-logic/axioms-systems/systems-distinct; translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:71; printed/PDF page pending
 
 - Please double-check: Please double-check: Do the two KTB nonprovability claims concern axiom formulas 4 and 5, as the countermodel proof requires, rather than system labels?
+
+## REV-OLTENMLAXSCON-001 — OLTENMLAXSCON-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: వ్యవస్థ-సాపేక్ష వైరుధ్యం నుంచి నమూనా-అసంతృప్తి ఆ వ్యవస్థ నిర్దుష్టత వర్తించే నమూనాల వర్గంలోనే అనుసరిస్తుందని తెలుగు గద్యంలో ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Occurrences: OLP-0440; normal-modal-logic/axioms-systems/consistency; translation/content/normal-modal-logic/axioms-systems/consistency.tex:19; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the non-satisfiability of a Sigma-inconsistent set restricted to a model class where Sigma is sound, rather than asserted for arbitrary models?
+
+## REV-OLTENMLAXSCON-002 — OLTENMLAXSCON-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: విస్తరించిన సమితుల నుంచి bottom వ్యుత్పాద్యతకు తక్షణ ఆధారం అవైరుధ్య నిర్వచనం అని తెలిపి, (b) సూచనను సందర్భంగా నిలిపి, భేదాన్ని పక్కనే ప్రకటించాం; గణిత సూత్రాలు మారలేదు.
+
+- Occurrences: OLP-0440; normal-modal-logic/axioms-systems/consistency; translation/content/normal-modal-logic/axioms-systems/consistency.tex:63; printed/PDF page pending
+
+- Please double-check: Please double-check: Do the two Gamma-plus-assumption derives-bottom lines follow directly from the Sigma-consistency definition and union shorthand, with item (b) cited only as context?

@@ -1,0 +1,75 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: consistency
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{con}
+
+\olsection{అవైరుధ్యం}
+
+అవైరుధ్యం \tetoken{సూత్రాల}{!!{formula}s} సమితులకు ముఖ్యమైన ధర్మం.
+ఒక \tetoken{సూత్రాల}{!!{formula}s} సమితి నుంచి~$\lfalse$ వంటి
+వైరుధ్యం \tetoken{వ్యుత్పాదించదగినది}{!!{derivable}} అయితే ఆ సమితి
+విరుద్ధం; లేకపోతే అవిరుద్ధం. ఆ వ్యుత్పత్తి వ్యవస్థకు నిర్దుష్టత
+వర్తించే నమూనాల వర్గంలో, విరుద్ధ సమితిలోని
+\tetoken{సూత్రాలన్నీ}{!!{formula}s} ఒకే నమూనాలోని ఒకే లోకంలో సత్యం కావు.
+\sourcecorrection{OLTENMLAXSCON-001}{స్థిర మూలం ``ఏదైనా నమూనాలో''
+  అన్నట్లు పరిమితి లేకుండా చెబుతుంది. వ్యవస్థకు సాపేక్షంగా
+  విరుద్ధమైన సమితి విషయంలో ఈ నిష్కర్ష ఆ వ్యవస్థ నిర్దుష్టంగా ఉన్న
+  నమూనాల వర్గానికే వర్తిస్తుంది; అందుకే ఆ పరిధిని పేర్కొన్నాం.}
+సంపూర్ణతా సిద్ధాంతం కోసం దీనికి విపర్యయాన్ని నిరూపిస్తాం:
+ప్రతి అవిరుద్ధ సమితి ఒక నమూనాలోని ఒక లోకంలో సత్యమవుతుంది;
+అదే ``కానానికల్ నమూనా''.
+
+\begin{defn}
+  సమితి~$\Gamma$, వ్యవస్థ~$\Sigma$కు సాపేక్షంగా
+  \emph{అవిరుద్ధం}, లేదా మనం చెప్పబోయే విధంగా $\Sigma$-అవిరుద్ధం,
+  అంటే $\Gamma \Proves/[\Sigma] \lfalse$ అయినప్పుడే.
+\end{defn}
+
+ఉదాహరణకు, $\{ \Box(p \lif q), \Box p, \lnot\Box q \}$ సమితి
+ప్రతిజ్ఞావాక్య తర్కానికి సాపేక్షంగా అవిరుద్ధం, కానీ
+\Log{K}-అవిరుద్ధం కాదు. అలాగే $\{ \Diamond p, \Box\Diamond
+p \lif q, \lnot q \}$ సమితి \Log{K5}-అవిరుద్ధం కాదు.
+
+\begin{prop}\ollabel{prop:consistencyfacts}
+  $\Gamma$ \tetoken{సూత్రాల}{!!{formula}s} సమితి అనుకుందాం. అప్పుడు:
+  \begin{enumerate}
+  \item $\Gamma$ $\Sigma$-అవిరుద్ధం అయితే, అప్పుడు మాత్రమే
+    $\Gamma \Proves/[\Sigma] !A$ అయ్యే ఏదో
+    \tetoken{సూత్రం}{!!{formula}}~$!A$ ఉంటుంది.
+  \item \ollabel{prop:consistencyfacts-b}%
+    $\Gamma \Proves[\Sigma] !A$ అయితే, అప్పుడు మాత్రమే
+    $\Gamma \cup \{ \lnot!A \}$ $\Sigma$-అవిరుద్ధం కాదు.
+  \item \ollabel{prop:consistencyfacts-c}%
+    $\Gamma$ $\Sigma$-అవిరుద్ధమైతే, ఏ
+    \tetoken{సూత్రం}{!!{formula}} $!A$కైనా,
+    $\Gamma \cup \{ !A \}$ $\Sigma$-అవిరుద్ధం లేదా
+    $\Gamma \cup \{ \lnot!A \}$ $\Sigma$-అవిరుద్ధం.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  ఈ వాస్తవాలు సాంప్రదాయ ప్రతిజ్ఞావాక్య తర్కంతో సులభంగా వస్తాయి.
+  \olref{prop:consistencyfacts-c} కోసం వాదన ఇస్తాం. విపర్యయంగా
+  సాగుదాం: $\Gamma \cup \{ !A \}$ గానీ,
+  $\Gamma \cup \{ \lnot!A \}$ గానీ $\Sigma$-అవిరుద్ధం కాదనుకుందాం.
+  అవైరుధ్య నిర్వచనం ప్రకారం (\olref{prop:consistencyfacts-b}తో
+  పోల్చండి), $\Gamma, !A \Proves[\Sigma] \lfalse$ మరియు
+  $\Gamma, \lnot !A \Proves[\Sigma] \lfalse$ రెండూ వస్తాయి.
+  \sourcecorrection{OLTENMLAXSCON-002}{స్థిర మూలం ఈ తక్షణ
+    వ్యుత్పాద్యతలను (b) అంశానికి ఆపాదిస్తుంది. ఇక్కడ అవి
+    $\Sigma$-అవైరుధ్య నిర్వచనం, సమితి-సంయోగ సంక్షిప్త రూపం
+    నుంచే నేరుగా వస్తాయి; (b) వేరే తుల్యతను చెబుతుంది.}
+  నిగమన సిద్ధాంతం వల్ల $\Gamma \Proves[\Sigma] !A \to \lfalse$
+  మరియు $\Gamma \Proves[\Sigma] \lnot!A \lif \lfalse$.
+  అయితే $(!A \lif \lfalse) \lif ((\lnot!A \lif \lfalse) \lif
+  \lfalse)$ ఒక సర్వసత్య నిదర్శనం; కనుక
+  \olref[prp]{prop:derivabilityfacts}\olref[prp]{prop:derivabilityfacts-ruleT}
+  ప్రకారం, $\Gamma \Proves[\Sigma] \lfalse$.
+\end{proof}
+
+\end{document}

@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLAXSCON-20260927",
+  "unit_id": "OLP-0440",
+  "source_path": "content/normal-modal-logic/axioms-systems/consistency.tex",
+  "source_sha256": "410cd2532bf8c2ba318f476f6e9192064021f16e0a42aa297015bb41851e889b",
+  "findings": [
+    {
+      "finding_id": "OLTENMLAXSCON-001",
+      "source_locator": "consistency.tex lines 15-17",
+      "classification": "unqualified_model_satisfaction_from_system_relative_inconsistency",
+      "source_issue": "Inconsistency relative to Sigma rules out joint truth only in model classes for which Sigma-derivability is sound, not at worlds of arbitrary models.",
+      "minimal_treatment": "Qualify the Telugu model-satisfaction claim by the relevant sound model class and disclose the source omission.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTENMLAXSCON-002",
+      "source_locator": "consistency.tex lines 53-55",
+      "classification": "immediate_inconsistency_step_cites_wrong_proposition",
+      "source_issue": "The two Gamma-plus-assumption derives-bottom statements follow from the definition of Sigma-consistency and the union shorthand, whereas cited item (b) concerns Gamma proving a formula versus adjoining its negation.",
+      "minimal_treatment": "Name the definition as the immediate justification in Telugu, retain the existing reference as context, and disclose the citation correction.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}
