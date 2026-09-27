@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0451",
+  "source_path": "content/normal-modal-logic/filtrations/introduction.tex",
+  "source_sha256": "faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a",
+  "audit_id": "OLTENMLFILINT-20260927",
+  "audit_review_path": "evidence/OLP-0451-FILTRATIONS-INTRODUCTION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "4d1978d044a2c004efe7197f722842744072296264ae7123f51bd22fe06bd229",
+  "audit_findings_path": "evidence/OLP-0451-FILTRATIONS-INTRODUCTION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "64fe1fdc279fc0f30612d456b536abdae742c332ce39b3a85e0ff2c081665549",
+  "previous_corrections": 415,
+  "treatments": {
+    "OLTENMLFILINT-001": {
+      "target_line": 87,
+      "body_treatment": "అనంత నమూనా విభాగాల్లో ప్రతి సమానత్వ తరగతీ అనంతమే కావాలన్న మూల వాక్యాన్ని సవరించాం: తరగతి పరిమితమైనదైనా అనంతమైనదైనా కావచ్చు; తరగతుల సంఖ్య పరిమితమై ఉండడమే అవసరం. సవరణ పక్కనే ప్రకటించాం."
+    },
+    "OLTENMLFILINT-002": {
+      "target_line": 107,
+      "body_treatment": "తరువాతి సార్వత్రిక బాక్స్ ఆగమన దశకు విరుద్ధమైన మూలంలోని ప్రవేశ్యతలేని/అస్తిత్వాత్మక ఉదాహరణను సార్వత్రిక ప్రవేశ్యత ఉన్న ఉదాహరణగా మార్చి ప్రతి లోకంలో B నిజం అనే సరైన బాక్స్ నిబంధనను పక్కనే ప్రకటించాం."
+    },
+    "OLTENMLFILINT-003": {
+      "target_line": 119,
+      "body_treatment": "అన్ని చరాలపై ఏకీభవించాలన్న మూల తాత్కాలిక సమానత్వాన్ని Aలో కనిపించే పరిమిత చరాలకే పరిమితం చేశాం; సాధారణ దశలో A ఉపసూత్రాలన్నిటిపై ఏకీభావాన్ని యథాతథం ఉంచి సవరణను పక్కనే ప్రకటించాం."
+    },
+    "OLTENMLFILINT-004": {
+      "target_line": 131,
+      "body_treatment": "పరమాణు ఆధార దశలో మూలం విడిచిన p వాదాన్ని V^*(p) సభ్యత్వానికి తిరిగి చేర్చి పక్కనే ప్రకటించాం."
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 450 of 722 draft units**. This view selects 468 of 555 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 451 of 722 draft units**. This view selects 472 of 560 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4683,3 +4683,43 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0449; normal-modal-logic/completeness/frame-completeness; translation/content/normal-modal-logic/completeness/frame-completeness.tex:245; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the added final sentence make only the source-implied contradiction between the B-witness conjunction and its negation in Delta-2 explicit, without changing the weak-density claim?
+
+## REV-OLTENMLFILINT-001 — OLTENMLFILINT-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: అనంత నమూనా విభాగాల్లో ప్రతి సమానత్వ తరగతీ అనంతమే కావాలన్న మూల వాక్యాన్ని సవరించాం: తరగతి పరిమితమైనదైనా అనంతమైనదైనా కావచ్చు; తరగతుల సంఖ్య పరిమితమై ఉండడమే అవసరం. సవరణ పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0451; normal-modal-logic/filtrations/introduction; translation/content/normal-modal-logic/filtrations/introduction.tex:87; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the Telugu correction distinguish finitely many quotient classes from the possibly finite or infinite cardinality of an individual class?
+
+## REV-OLTENMLFILINT-002 — OLTENMLFILINT-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: తరువాతి సార్వత్రిక బాక్స్ ఆగమన దశకు విరుద్ధమైన మూలంలోని ప్రవేశ్యతలేని/అస్తిత్వాత్మక ఉదాహరణను సార్వత్రిక ప్రవేశ్యత ఉన్న ఉదాహరణగా మార్చి ప్రతి లోకంలో B నిజం అనే సరైన బాక్స్ నిబంధనను పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0451; normal-modal-logic/filtrations/introduction; translation/content/normal-modal-logic/filtrations/introduction.tex:107; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the universal-accessibility toy case give the universal truth clause for Box B, consistent with the later Box induction, without implying the same clause for arbitrary frames?
+
+## REV-OLTENMLFILINT-003 — OLTENMLFILINT-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: అన్ని చరాలపై ఏకీభవించాలన్న మూల తాత్కాలిక సమానత్వాన్ని Aలో కనిపించే పరిమిత చరాలకే పరిమితం చేశాం; సాధారణ దశలో A ఉపసూత్రాలన్నిటిపై ఏకీభావాన్ని యథాతథం ఉంచి సవరణను పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0451; normal-modal-logic/filtrations/introduction; translation/content/normal-modal-logic/filtrations/introduction.tex:119; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the first equivalence restricted to variables occurring in A, and is the later general equivalence correctly strengthened to all subformulas of A?
+
+## REV-OLTENMLFILINT-004 — OLTENMLFILINT-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: పరమాణు ఆధార దశలో మూలం విడిచిన p వాదాన్ని V^*(p) సభ్యత్వానికి తిరిగి చేర్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0451; normal-modal-logic/filtrations/introduction; translation/content/normal-modal-logic/filtrations/introduction.tex:131; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the p argument restored only to the defective first V-star membership assertion, leaving the already correct second assertion unchanged?

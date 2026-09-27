@@ -1,0 +1,39 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "100",
+  "unit_id": "OLP-0451",
+  "unit_order": 451,
+  "source_path": "content/normal-modal-logic/filtrations/introduction.tex",
+  "blocks": 13,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12],
+  "previous_segments": 6848,
+  "previous_terms": 140,
+  "expected_corrections": 419,
+  "canon_default": ["TE-P008", "TE-P010", "TE-P011", "TE-P018", "TE-P024"],
+  "canon_by_block": {
+    "5": ["TE-P018", "TE-P024"],
+    "6": ["TE-P008", "TE-P010", "TE-P011", "TE-P018", "TE-P024"],
+    "7": ["TE-P010", "TE-P018", "TE-P024"],
+    "8": ["TE-P018", "TE-P024"],
+    "9": ["TE-P008", "TE-P011", "TE-P018", "TE-P024"],
+    "10": ["TE-P008", "TE-P010", "TE-P011", "TE-P018", "TE-P024"],
+    "11": ["TE-P008", "TE-P010", "TE-P011", "TE-P018", "TE-P024"],
+    "12": ["TE-P008", "TE-P010", "TE-P011", "TE-P018", "TE-P024"]
+  },
+  "corrections_by_block": {
+    "10": ["OLTENMLFILINT-001"],
+    "11": ["OLTENMLFILINT-002", "OLTENMLFILINT-003", "OLTENMLFILINT-004"]
+  },
+  "consultation_phase": "స్థిర మూలం, తెలుగు లక్ష్యం, స్థానిక సమితి/సంబంధం/ప్రమేయ/సాధారణ తర్క పేజీలను ఎదురెదురు చదివాం; modal filtration సాంకేతిక అర్థం మూల వాదన, ప్రకటించిన సవరణల ఆధీనంలో ఉంది.",
+  "evidence_limit": "TE-P008/010/011 సాధారణ సమితి, సంబంధం, ప్రమేయ రిజిస్టర్‌కే; TE-P018/024 సాధారణ ప్రతిజ్ఞావాక్య, వ్యుత్పత్తి రిజిస్టర్‌కే ప్రత్యక్ష ఆధారం. ఏ పేజీ కూడా మోడల్ వడపోత, పరిమిత నమూనా ధర్మం లేదా నిర్ణేయత ఫలితాన్ని ప్రత్యక్షంగా నిర్ధారించదు.",
+  "term_decision": {
+    "term_id": "TE-T141",
+    "source_term": "finite model property, filtration quotient, bounded decidability / introduction",
+    "telugu": "పరిమిత నమూనా ధర్మం, వడపోత వర్గ నమూనా, హద్దుగల నిర్ణేయత / పరిచయం",
+    "status": "native_general_set_logic_register_attested_modal_filtration_definition_controlled_provisional",
+    "passages": ["TE-P008", "TE-P010", "TE-P011", "TE-P018", "TE-P024"],
+    "basis": "స్థానిక పేజీల్లో సాధారణ సమితి, సంబంధం, ప్రమేయం, ప్రతిజ్ఞావాక్య, వ్యుత్పత్తి రూపాలు చూశాం. పూర్వ TE-T140లోని వడపోత శీర్షికను సవరణలతో కూడిన OLP-0451 వర్గ నిర్మాణానికి కొనసాగించాం; పరిమిత నమూనా ధర్మం, ప్రతినమూనా శోధన/నిర్ణేయత మధ్య భేదం మూల వాదనతో నియంత్రితం.",
+    "uncertainty": "స్థానిక సాక్షులు modal filtrationకు నేరుగా పదం లేదా సిద్ధాంతం ఇవ్వవు. వడపోతను OLP-0453 అధికార నిర్వచనం వద్ద తిరిగి పరిశీలించాలి. నాలుగు మూల గణిత/నిర్మాణ లోపాలు OLTENMLFILINT-001..004గా విడిగా ప్రకటించబడ్డాయి.",
+    "borrowing": "model, filtration technical scope and protected TeX symbols are source-controlled; nml/fil/int file identifier remains untranslated."
+  }
+}

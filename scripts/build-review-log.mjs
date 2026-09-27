@@ -833,6 +833,16 @@ locations['TE-T139']=[
 locations['TE-T140']=[
  L('content/normal-modal-logic/filtrations/filtrations.tex',8,8,8,8,'Filtrations and Decidability','వడపోతలు మరియు నిర్ణేయత')
 ];
+locations['TE-T141']=[
+ L('content/normal-modal-logic/filtrations/introduction.tex',11,11,11,11,'Introduction','పరిచయం'),
+ L('content/normal-modal-logic/filtrations/introduction.tex',13,31,13,35,'decidable','నిర్ణయించదగినదేనా'),
+ L('content/normal-modal-logic/filtrations/introduction.tex',33,42,37,47,'finite frames','పరిమిత ఫ్రేమ్‌లను'),
+ L('content/normal-modal-logic/filtrations/introduction.tex',44,51,49,58,'finite model property','పరిమిత నమూనా ధర్మం'),
+ L('content/normal-modal-logic/filtrations/introduction.tex',53,67,60,75,'maximum size','గరిష్ఠ'),
+ L('content/normal-modal-logic/filtrations/introduction.tex',69,85,77,100,'partitions','విభాగాల'),
+ L('content/normal-modal-logic/filtrations/introduction.tex',87,108,102,152,'equivalent','తుల్యమని'),
+ L('content/normal-modal-logic/filtrations/introduction.tex',110,126,154,174,'filtration','వడపోత')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -959,6 +969,7 @@ alternatives['TE-T137']=['సత్య ఉపసిద్ధాంతం, ప్
 alternatives['TE-T138']=['నిర్ణాయకత్వాన్ని నమూనాలో సర్వత్రా సత్యం, వ్యవస్థలో వ్యుత్పాద్యత తుల్యతగా నిర్వచించి, K సంపూర్ణత విపర్యయ నిరూపణను, సాధారణ నమూనా వర్గ పరిమితిని నిలపడం (ఎంపిక)','నిర్ణాయకత్వమే ఏ నమూనా వర్గానికైనా వ్యవస్థ సంపూర్ణతను ఇస్తుందని చెప్పడం (తిరస్కరణ)','కానానికల్ నమూనా వర్గ-సభ్యత్వ అవసరాన్ని తొలగించడం (తిరస్కరణ)','స్థానిక సాధారణ ప్రతిజ్ఞావాక్య పేజీలే ఈ మోడల్ K సిద్ధాంతాన్ని ప్రత్యక్షంగా నిరూపిస్తాయని చూపడం (తిరస్కరణ)'];
 alternatives['TE-T139']=['TE-T114లో స్థిర సీరియల్/స్వావర్తన/సౌష్ఠవ/సంక్రామక/యూక్లిడియన్, పాక్షిక ప్రమేయాత్మక/ప్రమేయాత్మక/బలహీన సాంద్ర రూపాలను కొనసాగించి D/T/B/4/5 guarded నిరూపణలు, నమూనా వర్గ సిద్ధాంతం, చివరి అసంపూర్ణత హెచ్చరిక నిలపడం (ఎంపిక)','సంక్రామక బదులు కొత్త సంక్రమణీయ రూపాన్ని ఈ అధ్యాయంలో ప్రవేశపెట్టడం (తిరస్కరణ)','కానానికల్ అనురూపత నుంచే ప్రతి మోడల్ వ్యవస్థకు సంపూర్ణత వస్తుందని చెప్పడం (తిరస్కరణ)','బలహీన సాంద్రత నిరూపణ చివరి అవైరుధ్యాన్ని పాఠకుడికి చెప్పకుండా వదలడం (తిరస్కరణ)'];
 alternatives['TE-T140']=['Filtrationsకు నిర్వచనాధీన తాత్కాలిక వడపోతలు, decidabilityకు పూర్వ నిర్ణేయత రూపాన్ని అధ్యాయ శీర్షికలో వాడి తొమ్మిది రక్షిత దిగుమతులను యథాతథం ఉంచడం (ఎంపిక)','మోడల్ వడపోత అర్థం స్థానిక సాధారణ తర్క పేజీలో ప్రత్యక్షంగా ఉన్నట్లు చూపడం (తిరస్కరణ)','దిగుమతి మార్గాలను శీర్షికతోపాటు అనువదించి TeX నిర్మాణం మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T141']=['పరిమిత ప్రతినమూనా శోధన, పరిమిత నమూనా ధర్మం, సూత్రాధార పరిమాణ హద్దు అనే మూడు వేర్వేరు దశలను నిలిపి, వడపోతను తాత్కాలిక పదంగా ఉంచి నాలుగు మూల సమస్యలను పక్కనే ప్రకటించి సరిచేయడం (ఎంపిక)','పరిమిత ప్రతినమూనా శోధన ఒక్కటే నిర్ణయ ప్రక్రియ అని చెప్పడం (తిరస్కరణ)','ప్రతి తుల్యతా వర్గం అనంతమని చెప్పడం (తిరస్కరణ)','మూలంలోని అస్తిత్వాత్మక బాక్స్ షరతు, అన్ని నమూనా చరాల పరీక్షను యథాతథం ఉంచడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -974,7 +985,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T140 record the Batch 025--Batch 099 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T141 record the Batch 025--Batch 100 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1303,6 +1314,10 @@ const correctionQuestions={
  ,'OLTENMLCOMTRU-002':'Does the Diamond-reverse case apply the induction hypothesis to B at the accessible world before invoking the Diamond truth clause?'
  ,'OLTENMLCOMTRU-003':'Does the exercise tag list use the exact probAnd key tested by the conjunction branch, with no loss of the worked or exercise text?'
  ,'OLTENMLCOMFRA-001':'Does the added final sentence make only the source-implied contradiction between the B-witness conjunction and its negation in Delta-2 explicit, without changing the weak-density claim?'
+ ,'OLTENMLFILINT-001':'Does the Telugu correction distinguish finitely many quotient classes from the possibly finite or infinite cardinality of an individual class?'
+ ,'OLTENMLFILINT-002':'Does the universal-accessibility toy case give the universal truth clause for Box B, consistent with the later Box induction, without implying the same clause for arbitrary frames?'
+ ,'OLTENMLFILINT-003':'Is the first equivalence restricted to variables occurring in A, and is the later general equivalence correctly strengthened to all subformulas of A?'
+ ,'OLTENMLFILINT-004':'Is the p argument restored only to the defective first V-star membership assertion, leaving the already correct second assertion unchanged?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

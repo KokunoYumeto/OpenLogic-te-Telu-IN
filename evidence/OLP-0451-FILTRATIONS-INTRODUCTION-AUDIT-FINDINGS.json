@@ -1,0 +1,41 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLFILINT-20260927",
+  "unit_id": "OLP-0451",
+  "source_path": "content/normal-modal-logic/filtrations/introduction.tex",
+  "source_sha256": "faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a",
+  "findings": [
+    {
+      "finding_id": "OLTENMLFILINT-001",
+      "source_locator": "introduction.tex lines 73-77",
+      "classification": "finite_partition_classes_need_not_each_be_infinite",
+      "source_issue": "The source requires every class to have infinitely many worlds although some classes of an infinite model may be finite; only the number of classes must be finite.",
+      "minimal_treatment": "Permit finite or infinite classes and require finitely many classes, with adjacent disclosure.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTENMLFILINT-002",
+      "source_locator": "introduction.tex lines 87-89 and 105-108",
+      "classification": "simplified_box_semantics_conflicts_with_later_induction",
+      "source_issue": "No-accessibility wording and an existential Box-of-Box clause conflict with the later universal Box induction step.",
+      "minimal_treatment": "Use the universal-accessibility toy case and the universal B-at-every-world clause, disclosing the source repair.",
+      "expected_core_math_delta": {"source_only": ["$\\mSat{M}{\\Box!B}[v]$"], "target_only": ["$\\mSat{M}{!B}[v]$"]}
+    },
+    {
+      "finding_id": "OLTENMLFILINT-003",
+      "source_locator": "introduction.tex lines 90-93 and 118-122",
+      "classification": "all_variables_equivalence_does_not_ensure_finitely_many_classes",
+      "source_issue": "Agreement on every variable of M may induce infinitely many equivalence classes, even before adding the subformula tests.",
+      "minimal_treatment": "Compare only variables occurring in A in the provisional case, then all subformulas of A in the general case, with adjacent disclosure.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTENMLFILINT-004",
+      "source_locator": "introduction.tex lines 93-98",
+      "classification": "atomic_valuation_membership_argument_missing",
+      "source_issue": "The base case uses [w] in V-star instead of the just-defined set V-star(p).",
+      "minimal_treatment": "Restore the argument p in this one membership assertion and disclose it.",
+      "expected_core_math_delta": {"source_only": ["$[w]\\inV^*$"], "target_only": ["$[w]\\inV^*(p)$"]}
+    }
+  ]
+}

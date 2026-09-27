@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **450 of 722 source units drafted**. This readable view contains all 555 decisions and 1233 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **451 of 722 source units drafted**. This readable view contains all 560 decisions and 1245 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4241,6 +4241,39 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-TE-T140-OCC-001; OLP-0450; OLP-0450-B004; source upstream/content/normal-modal-logic/filtrations/filtrations.tex:8 bytes 125-176 SHA-256 33219caedd7ed764901499b694eb234af0fcf15c1ccea29b9799a1c32d3b71af; target translation/content/normal-modal-logic/filtrations/filtrations.tex:8 bytes 125-210 SHA-256 41ff2a424170160eeb50cf9fa204308773722cbe1cddf8ad0f095d48620bdc78; reader page pending.
+
+## te-Telu-IN-TE-T141 — finite model property, filtration quotient, bounded decidability / introduction
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: పరిమిత నమూనా ధర్మం, వడపోత వర్గ నమూనా, హద్దుగల నిర్ణేయత / పరిచయం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “finite model property, filtration quotient, bounded decidability / introduction” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు modal filtrationకు నేరుగా పదం లేదా సిద్ధాంతం ఇవ్వవు. వడపోతను OLP-0453 అధికార నిర్వచనం వద్ద తిరిగి పరిశీలించాలి. నాలుగు మూల గణిత/నిర్మాణ లోపాలు OLTENMLFILINT-001..004గా విడిగా ప్రకటించబడ్డాయి.
+
+- Rationale: స్థానిక పేజీల్లో సాధారణ సమితి, సంబంధం, ప్రమేయం, ప్రతిజ్ఞావాక్య, వ్యుత్పత్తి రూపాలు చూశాం. పూర్వ TE-T140లోని వడపోత శీర్షికను సవరణలతో కూడిన OLP-0451 వర్గ నిర్మాణానికి కొనసాగించాం; పరిమిత నమూనా ధర్మం, ప్రతినమూనా శోధన/నిర్ణేయత మధ్య భేదం మూల వాదనతో నియంత్రితం. model, filtration technical scope and protected TeX symbols are source-controlled; nml/fil/int file identifier remains untranslated.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: పరిమిత ప్రతినమూనా శోధన, పరిమిత నమూనా ధర్మం, సూత్రాధార పరిమాణ హద్దు అనే మూడు వేర్వేరు దశలను నిలిపి, వడపోతను తాత్కాలిక పదంగా ఉంచి నాలుగు మూల సమస్యలను పక్కనే ప్రకటించి సరిచేయడం [viable_alternative: ఎంపిక] | పరిమిత ప్రతినమూనా శోధన ఒక్కటే నిర్ణయ ప్రక్రియ అని చెప్పడం [viable_alternative: తిరస్కరణ] | ప్రతి తుల్యతా వర్గం అనంతమని చెప్పడం [viable_alternative: తిరస్కరణ] | మూలంలోని అస్తిత్వాత్మక బాక్స్ షరతు, అన్ని నమూనా చరాల పరీక్షను యథాతథం ఉంచడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “పరిమిత నమూనా ధర్మం, వడపోత వర్గ నమూనా, హద్దుగల నిర్ణేయత / పరిచయం” is idiomatic and technically standard for “finite model property, filtration quotient, bounded decidability / introduction” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T141-OCC-001; OLP-0451; OLP-0451-B005; source upstream/content/normal-modal-logic/filtrations/introduction.tex:11 bytes 182-207 SHA-256 faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a; target translation/content/normal-modal-logic/filtrations/introduction.tex:11 bytes 182-213 SHA-256 83eeaaa4963e94604665fbcdf7a7e4468b27932b37f8c5ebf40ed26a9298df4c; reader page pending.
+  - te-Telu-IN-TE-T141-OCC-002; OLP-0451; OLP-0451-B006; source upstream/content/normal-modal-logic/filtrations/introduction.tex:13-31 bytes 208-1470 SHA-256 faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a; target translation/content/normal-modal-logic/filtrations/introduction.tex:13-35 bytes 214-3008 SHA-256 83eeaaa4963e94604665fbcdf7a7e4468b27932b37f8c5ebf40ed26a9298df4c; reader page pending.
+  - te-Telu-IN-TE-T141-OCC-003; OLP-0451; OLP-0451-B007; source upstream/content/normal-modal-logic/filtrations/introduction.tex:33-42 bytes 1471-2114 SHA-256 faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a; target translation/content/normal-modal-logic/filtrations/introduction.tex:37-47 bytes 3009-4498 SHA-256 83eeaaa4963e94604665fbcdf7a7e4468b27932b37f8c5ebf40ed26a9298df4c; reader page pending.
+  - te-Telu-IN-TE-T141-OCC-004; OLP-0451; OLP-0451-B008; source upstream/content/normal-modal-logic/filtrations/introduction.tex:44-51 bytes 2115-2658 SHA-256 faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a; target translation/content/normal-modal-logic/filtrations/introduction.tex:49-58 bytes 4499-5742 SHA-256 83eeaaa4963e94604665fbcdf7a7e4468b27932b37f8c5ebf40ed26a9298df4c; reader page pending.
+  - te-Telu-IN-TE-T141-OCC-005; OLP-0451; OLP-0451-B009; source upstream/content/normal-modal-logic/filtrations/introduction.tex:53-67 bytes 2659-3608 SHA-256 faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a; target translation/content/normal-modal-logic/filtrations/introduction.tex:60-75 bytes 5743-7707 SHA-256 83eeaaa4963e94604665fbcdf7a7e4468b27932b37f8c5ebf40ed26a9298df4c; reader page pending.
+  - te-Telu-IN-TE-T141-OCC-006; OLP-0451; OLP-0451-B010; source upstream/content/normal-modal-logic/filtrations/introduction.tex:69-85 bytes 3609-4712 SHA-256 faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a; target translation/content/normal-modal-logic/filtrations/introduction.tex:77-100 bytes 7708-10523 SHA-256 83eeaaa4963e94604665fbcdf7a7e4468b27932b37f8c5ebf40ed26a9298df4c; reader page pending.
+  - te-Telu-IN-TE-T141-OCC-007; OLP-0451; OLP-0451-B011; source upstream/content/normal-modal-logic/filtrations/introduction.tex:87-108 bytes 4713-6141 SHA-256 faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a; target translation/content/normal-modal-logic/filtrations/introduction.tex:102-152 bytes 10524-15428 SHA-256 83eeaaa4963e94604665fbcdf7a7e4468b27932b37f8c5ebf40ed26a9298df4c; reader page pending.
+  - te-Telu-IN-TE-T141-OCC-008; OLP-0451; OLP-0451-B012; source upstream/content/normal-modal-logic/filtrations/introduction.tex:110-126 bytes 6142-7237 SHA-256 faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a; target translation/content/normal-modal-logic/filtrations/introduction.tex:154-174 bytes 15429-17737 SHA-256 83eeaaa4963e94604665fbcdf7a7e4468b27932b37f8c5ebf40ed26a9298df4c; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -15111,3 +15144,107 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLCOMFRA-001-OCC-001; OLP-0449; OLP-0449-B021; source upstream/content/normal-modal-logic/completeness/frame-completeness.tex:183-225 bytes 8278-10403 SHA-256 4021151e95c367cfd94030d36b6dfb3c16792ade5767bb24825daf2e0602bb70; target translation/content/normal-modal-logic/completeness/frame-completeness.tex:245 bytes 15371-15441 SHA-256 5bf1c156200f7cbaabb6e41744fe328c15a08ef656e596f0ce0dfe2872c7f798; reader page pending.
+
+## te-Telu-IN-OLTENMLFILINT-001 — OLTENMLFILINT-001: finite partition classes need not each be infinite
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: అనంత నమూనా విభాగాల్లో ప్రతి సమానత్వ తరగతీ అనంతమే కావాలన్న మూల వాక్యాన్ని సవరించాం: తరగతి పరిమితమైనదైనా అనంతమైనదైనా కావచ్చు; తరగతుల సంఖ్య పరిమితమై ఉండడమే అవసరం. సవరణ పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited finite partition classes need not each be infinite at introduction.tex lines 73-77, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLFILINT-20260927:OLTENMLFILINT-001 [checked_supports], content/normal-modal-logic/filtrations/introduction.tex; introduction.tex lines 73-77; finite_partition_classes_need_not_each_be_infinite; అనంత నమూనా విభాగాల్లో ప్రతి సమానత్వ తరగతీ అనంతమే కావాలన్న మూల వాక్యాన్ని సవరించాం: తరగతి పరిమితమైనదైనా అనంతమైనదైనా కావచ్చు; తరగతుల సంఖ్య పరిమితమై ఉండడమే అవసరం. సవరణ పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the Telugu correction distinguish finitely many quotient classes from the possibly finite or infinite cardinality of an individual class?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLFILINT-001-OCC-001; OLP-0451; OLP-0451-B010; source upstream/content/normal-modal-logic/filtrations/introduction.tex:69-85 bytes 3609-4712 SHA-256 faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a; target translation/content/normal-modal-logic/filtrations/introduction.tex:87 bytes 8900-8988 SHA-256 83eeaaa4963e94604665fbcdf7a7e4468b27932b37f8c5ebf40ed26a9298df4c; reader page pending.
+
+## te-Telu-IN-OLTENMLFILINT-002 — OLTENMLFILINT-002: simplified box semantics conflicts with later induction
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: తరువాతి సార్వత్రిక బాక్స్ ఆగమన దశకు విరుద్ధమైన మూలంలోని ప్రవేశ్యతలేని/అస్తిత్వాత్మక ఉదాహరణను సార్వత్రిక ప్రవేశ్యత ఉన్న ఉదాహరణగా మార్చి ప్రతి లోకంలో B నిజం అనే సరైన బాక్స్ నిబంధనను పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited simplified box semantics conflicts with later induction at introduction.tex lines 87-89 and 105-108, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLFILINT-20260927:OLTENMLFILINT-002 [checked_supports], content/normal-modal-logic/filtrations/introduction.tex; introduction.tex lines 87-89 and 105-108; simplified_box_semantics_conflicts_with_later_induction; తరువాతి సార్వత్రిక బాక్స్ ఆగమన దశకు విరుద్ధమైన మూలంలోని ప్రవేశ్యతలేని/అస్తిత్వాత్మక ఉదాహరణను సార్వత్రిక ప్రవేశ్యత ఉన్న ఉదాహరణగా మార్చి ప్రతి లోకంలో B నిజం అనే సరైన బాక్స్ నిబంధనను పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the universal-accessibility toy case give the universal truth clause for Box B, consistent with the later Box induction, without implying the same clause for arbitrary frames?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLFILINT-002-OCC-001; OLP-0451; OLP-0451-B011; source upstream/content/normal-modal-logic/filtrations/introduction.tex:87-108 bytes 4713-6141 SHA-256 faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a; target translation/content/normal-modal-logic/filtrations/introduction.tex:107 bytes 11041-11123 SHA-256 83eeaaa4963e94604665fbcdf7a7e4468b27932b37f8c5ebf40ed26a9298df4c; reader page pending.
+
+## te-Telu-IN-OLTENMLFILINT-003 — OLTENMLFILINT-003: all variables equivalence does not ensure finitely many classes
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: అన్ని చరాలపై ఏకీభవించాలన్న మూల తాత్కాలిక సమానత్వాన్ని Aలో కనిపించే పరిమిత చరాలకే పరిమితం చేశాం; సాధారణ దశలో A ఉపసూత్రాలన్నిటిపై ఏకీభావాన్ని యథాతథం ఉంచి సవరణను పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited all variables equivalence does not ensure finitely many classes at introduction.tex lines 90-93 and 118-122, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLFILINT-20260927:OLTENMLFILINT-003 [checked_supports], content/normal-modal-logic/filtrations/introduction.tex; introduction.tex lines 90-93 and 118-122; all_variables_equivalence_does_not_ensure_finitely_many_classes; అన్ని చరాలపై ఏకీభవించాలన్న మూల తాత్కాలిక సమానత్వాన్ని Aలో కనిపించే పరిమిత చరాలకే పరిమితం చేశాం; సాధారణ దశలో A ఉపసూత్రాలన్నిటిపై ఏకీభావాన్ని యథాతథం ఉంచి సవరణను పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Is the first equivalence restricted to variables occurring in A, and is the later general equivalence correctly strengthened to all subformulas of A?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLFILINT-003-OCC-001; OLP-0451; OLP-0451-B011; source upstream/content/normal-modal-logic/filtrations/introduction.tex:87-108 bytes 4713-6141 SHA-256 faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a; target translation/content/normal-modal-logic/filtrations/introduction.tex:119 bytes 12281-12299 SHA-256 83eeaaa4963e94604665fbcdf7a7e4468b27932b37f8c5ebf40ed26a9298df4c; reader page pending.
+
+## te-Telu-IN-OLTENMLFILINT-004 — OLTENMLFILINT-004: atomic valuation membership argument missing
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: పరమాణు ఆధార దశలో మూలం విడిచిన p వాదాన్ని V^*(p) సభ్యత్వానికి తిరిగి చేర్చి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited atomic valuation membership argument missing at introduction.tex lines 93-98, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLFILINT-20260927:OLTENMLFILINT-004 [checked_supports], content/normal-modal-logic/filtrations/introduction.tex; introduction.tex lines 93-98; atomic_valuation_membership_argument_missing; పరమాణు ఆధార దశలో మూలం విడిచిన p వాదాన్ని V^*(p) సభ్యత్వానికి తిరిగి చేర్చి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Is the p argument restored only to the defective first V-star membership assertion, leaving the already correct second assertion unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLFILINT-004-OCC-001; OLP-0451; OLP-0451-B011; source upstream/content/normal-modal-logic/filtrations/introduction.tex:87-108 bytes 4713-6141 SHA-256 faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a; target translation/content/normal-modal-logic/filtrations/introduction.tex:131 bytes 13504-13559 SHA-256 83eeaaa4963e94604665fbcdf7a7e4468b27932b37f8c5ebf40ed26a9298df4c; reader page pending.

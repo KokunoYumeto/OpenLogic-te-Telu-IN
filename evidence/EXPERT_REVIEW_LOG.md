@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 450 of 722 draft units**. This log contains 140 terminology/sense decisions and 415 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 451 of 722 draft units**. This log contains 141 terminology/sense decisions and 419 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3367,6 +3367,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక పేజీలు మోడల్ filtrationకు ప్రత్యక్ష సాంకేతిక పదాన్ని ఇవ్వవు. వడపోత రూపాన్ని తరువాతి మూల నిర్వచనం, ఉదాహరణలతో మళ్లీ తనిఖీ చేయాలి; అధ్యాయంలోని దిగుమతి మార్గాలు రక్షిత నిర్మాణం.
 
 - Please double-check: Please double-check whether “వడపోతలు మరియు నిర్ణేయత / అధ్యాయ శీర్షిక, తొమ్మిది రక్షిత దిగుమతులు” is idiomatic and technically standard for “filtrations and decidability / chapter wrapper and nine protected imports” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T141 — finite model property, filtration quotient, bounded decidability / introduction
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: పరిమిత నమూనా ధర్మం, వడపోత వర్గ నమూనా, హద్దుగల నిర్ణేయత / పరిచయం
+
+- Exact implementation: OLP-0451; normal-modal-logic/filtrations/introduction; content/normal-modal-logic/filtrations/introduction.tex:11 ↔ translation/content/normal-modal-logic/filtrations/introduction.tex:11 (OLP-0451-B005); printed/PDF page pending; OLP-0451; normal-modal-logic/filtrations/introduction; content/normal-modal-logic/filtrations/introduction.tex:13-31 ↔ translation/content/normal-modal-logic/filtrations/introduction.tex:13-35 (OLP-0451-B006); printed/PDF page pending; OLP-0451; normal-modal-logic/filtrations/introduction; content/normal-modal-logic/filtrations/introduction.tex:33-42 ↔ translation/content/normal-modal-logic/filtrations/introduction.tex:37-47 (OLP-0451-B007); printed/PDF page pending; OLP-0451; normal-modal-logic/filtrations/introduction; content/normal-modal-logic/filtrations/introduction.tex:44-51 ↔ translation/content/normal-modal-logic/filtrations/introduction.tex:49-58 (OLP-0451-B008); printed/PDF page pending; OLP-0451; normal-modal-logic/filtrations/introduction; content/normal-modal-logic/filtrations/introduction.tex:53-67 ↔ translation/content/normal-modal-logic/filtrations/introduction.tex:60-75 (OLP-0451-B009); printed/PDF page pending; OLP-0451; normal-modal-logic/filtrations/introduction; content/normal-modal-logic/filtrations/introduction.tex:69-85 ↔ translation/content/normal-modal-logic/filtrations/introduction.tex:77-100 (OLP-0451-B010); printed/PDF page pending; OLP-0451; normal-modal-logic/filtrations/introduction; content/normal-modal-logic/filtrations/introduction.tex:87-108 ↔ translation/content/normal-modal-logic/filtrations/introduction.tex:102-152 (OLP-0451-B011); printed/PDF page pending; OLP-0451; normal-modal-logic/filtrations/introduction; content/normal-modal-logic/filtrations/introduction.tex:110-126 ↔ translation/content/normal-modal-logic/filtrations/introduction.tex:154-174 (OLP-0451-B012); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: స్థానిక పేజీల్లో సాధారణ సమితి, సంబంధం, ప్రమేయం, ప్రతిజ్ఞావాక్య, వ్యుత్పత్తి రూపాలు చూశాం. పూర్వ TE-T140లోని వడపోత శీర్షికను సవరణలతో కూడిన OLP-0451 వర్గ నిర్మాణానికి కొనసాగించాం; పరిమిత నమూనా ధర్మం, ప్రతినమూనా శోధన/నిర్ణేయత మధ్య భేదం మూల వాదనతో నియంత్రితం. model, filtration technical scope and protected TeX symbols are source-controlled; nml/fil/int file identifier remains untranslated.
+
+- Alternatives: పరిమిత ప్రతినమూనా శోధన, పరిమిత నమూనా ధర్మం, సూత్రాధార పరిమాణ హద్దు అనే మూడు వేర్వేరు దశలను నిలిపి, వడపోతను తాత్కాలిక పదంగా ఉంచి నాలుగు మూల సమస్యలను పక్కనే ప్రకటించి సరిచేయడం (ఎంపిక); పరిమిత ప్రతినమూనా శోధన ఒక్కటే నిర్ణయ ప్రక్రియ అని చెప్పడం (తిరస్కరణ); ప్రతి తుల్యతా వర్గం అనంతమని చెప్పడం (తిరస్కరణ); మూలంలోని అస్తిత్వాత్మక బాక్స్ షరతు, అన్ని నమూనా చరాల పరీక్షను యథాతథం ఉంచడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు modal filtrationకు నేరుగా పదం లేదా సిద్ధాంతం ఇవ్వవు. వడపోతను OLP-0453 అధికార నిర్వచనం వద్ద తిరిగి పరిశీలించాలి. నాలుగు మూల గణిత/నిర్మాణ లోపాలు OLTENMLFILINT-001..004గా విడిగా ప్రకటించబడ్డాయి.
+
+- Please double-check: Please double-check whether “పరిమిత నమూనా ధర్మం, వడపోత వర్గ నమూనా, హద్దుగల నిర్ణేయత / పరిచయం” is idiomatic and technically standard for “finite model property, filtration quotient, bounded decidability / introduction” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -13327,3 +13351,99 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Does the added final sentence make only the source-implied contradiction between the B-witness conjunction and its negation in Delta-2 explicit, without changing the weak-density claim?
+
+## REV-OLTENMLFILINT-001 — OLTENMLFILINT-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: అనంత నమూనా విభాగాల్లో ప్రతి సమానత్వ తరగతీ అనంతమే కావాలన్న మూల వాక్యాన్ని సవరించాం: తరగతి పరిమితమైనదైనా అనంతమైనదైనా కావచ్చు; తరగతుల సంఖ్య పరిమితమై ఉండడమే అవసరం. సవరణ పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0451; normal-modal-logic/filtrations/introduction; introduction.tex lines 73-77 ↔ translation/content/normal-modal-logic/filtrations/introduction.tex:87 (OLP-0451-B010); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLFILINT-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: అనంత నమూనా విభాగాల్లో ప్రతి సమానత్వ తరగతీ అనంతమే కావాలన్న మూల వాక్యాన్ని సవరించాం: తరగతి పరిమితమైనదైనా అనంతమైనదైనా కావచ్చు; తరగతుల సంఖ్య పరిమితమై ఉండడమే అవసరం. సవరణ పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the Telugu correction distinguish finitely many quotient classes from the possibly finite or infinite cardinality of an individual class?
+
+## REV-OLTENMLFILINT-002 — OLTENMLFILINT-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: తరువాతి సార్వత్రిక బాక్స్ ఆగమన దశకు విరుద్ధమైన మూలంలోని ప్రవేశ్యతలేని/అస్తిత్వాత్మక ఉదాహరణను సార్వత్రిక ప్రవేశ్యత ఉన్న ఉదాహరణగా మార్చి ప్రతి లోకంలో B నిజం అనే సరైన బాక్స్ నిబంధనను పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0451; normal-modal-logic/filtrations/introduction; introduction.tex lines 87-89 and 105-108 ↔ translation/content/normal-modal-logic/filtrations/introduction.tex:107 (OLP-0451-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLFILINT-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: తరువాతి సార్వత్రిక బాక్స్ ఆగమన దశకు విరుద్ధమైన మూలంలోని ప్రవేశ్యతలేని/అస్తిత్వాత్మక ఉదాహరణను సార్వత్రిక ప్రవేశ్యత ఉన్న ఉదాహరణగా మార్చి ప్రతి లోకంలో B నిజం అనే సరైన బాక్స్ నిబంధనను పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the universal-accessibility toy case give the universal truth clause for Box B, consistent with the later Box induction, without implying the same clause for arbitrary frames?
+
+## REV-OLTENMLFILINT-003 — OLTENMLFILINT-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: అన్ని చరాలపై ఏకీభవించాలన్న మూల తాత్కాలిక సమానత్వాన్ని Aలో కనిపించే పరిమిత చరాలకే పరిమితం చేశాం; సాధారణ దశలో A ఉపసూత్రాలన్నిటిపై ఏకీభావాన్ని యథాతథం ఉంచి సవరణను పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0451; normal-modal-logic/filtrations/introduction; introduction.tex lines 90-93 and 118-122 ↔ translation/content/normal-modal-logic/filtrations/introduction.tex:119 (OLP-0451-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLFILINT-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: అన్ని చరాలపై ఏకీభవించాలన్న మూల తాత్కాలిక సమానత్వాన్ని Aలో కనిపించే పరిమిత చరాలకే పరిమితం చేశాం; సాధారణ దశలో A ఉపసూత్రాలన్నిటిపై ఏకీభావాన్ని యథాతథం ఉంచి సవరణను పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Is the first equivalence restricted to variables occurring in A, and is the later general equivalence correctly strengthened to all subformulas of A?
+
+## REV-OLTENMLFILINT-004 — OLTENMLFILINT-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: పరమాణు ఆధార దశలో మూలం విడిచిన p వాదాన్ని V^*(p) సభ్యత్వానికి తిరిగి చేర్చి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0451; normal-modal-logic/filtrations/introduction; introduction.tex lines 93-98 ↔ translation/content/normal-modal-logic/filtrations/introduction.tex:131 (OLP-0451-B011); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLFILINT-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: పరమాణు ఆధార దశలో మూలం విడిచిన p వాదాన్ని V^*(p) సభ్యత్వానికి తిరిగి చేర్చి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Is the p argument restored only to the defective first V-star membership assertion, leaving the already correct second assertion unchanged?
