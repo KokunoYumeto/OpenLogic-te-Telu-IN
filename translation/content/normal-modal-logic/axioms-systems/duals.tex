@@ -1,0 +1,44 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: duals
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{dua}
+
+\olsection{ద్వంద్వ \usetoken{P}{formula}}
+
+\begin{defn}\ollabel{def:duals}
+  \Ax{T}, \Ax{B}, \Ax{4}, \Ax{5} అనే \tetoken{సూత్రాలలో}{!!{formula}s}
+  ఒక్కొక్కదానికి ఒక \emph{ద్వంద్వ సూత్రం} ఉంది. దాన్ని ఉపసూచికలో
+  డైమండ్ గుర్తుతో ఈ విధంగా సూచిస్తాం:
+  \begin{align}
+    \tag{\Ax{T_\Diamond}} p & \lif \Diamond p\\
+    \tag{\Ax{B_\Diamond}} \Diamond\Box p & \lif p\\
+    \tag{\Ax{4_\Diamond}} \Diamond\Diamond p & \lif \Diamond p\\
+    \tag{\Ax{5_\Diamond}} \Diamond\Box p & \lif \Box p
+    \end{align}
+\end{defn}
+
+పై ద్వంద్వ \tetoken{సూత్రాలలో}{!!{formula}s} ఒక్కొక్కటి, దానికి
+సంబంధించిన \tetoken{సూత్రంలో}{!!{formula}} $p$ స్థానంలో $\lnot p$ను
+ప్రతిస్థాపించి, ప్రతిలోమం తీసుకుని, $\lnot\Box\lnot$ స్థానంలో
+$\Diamond$ను, $\lnot\Diamond\lnot$ స్థానంలో~$\Box$ను ఉంచడం ద్వారా
+లభిస్తుంది. \Ax{D}, అంటే $\Box!A \lif \Diamond!A$, ఈ అర్థంలో
+తనకుతానే ద్వంద్వం.
+
+\begin{prop}\ollabel{prop:dualsys}
+  \olref[nml][prf][dua]{def:duals}లోని ప్రతి
+  \tetoken{సూత్రం}{!!{formula}}~$!A$కు:
+  $\Log{K}!A = \Log{K}!A_{\Diamond}$.
+\end{prop}
+\begin{proof}
+  వ్యాయామం.
+\end{proof}
+\begin{prob}
+  \olref[nml][prf][dua]{prop:dualsys}ను నిరూపించండి.
+\end{prob}
+
+\end{document}
