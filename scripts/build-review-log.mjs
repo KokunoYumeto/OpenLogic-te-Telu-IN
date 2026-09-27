@@ -811,6 +811,14 @@ locations['TE-T137']=[
  L('content/normal-modal-logic/completeness/truth-lemma.tex',114,139,131,173,'\\olref[mod]{lem:box-iff-diamond}','\\olref[mod]{lem:box-iff-diamond}'),
  L('content/normal-modal-logic/completeness/truth-lemma.tex',143,145,175,180,'proband','probAnd')
 ];
+locations['TE-T138']=[
+ L('content/normal-modal-logic/completeness/completeness-K.tex',11,11,11,11,'Determination','నిర్ణాయకత్వం'),
+ L('content/normal-modal-logic/completeness/completeness-K.tex',13,17,13,18,'determine','నిర్ణయిస్తాయి'),
+ L('content/normal-modal-logic/completeness/completeness-K.tex',19,23,20,25,'determines','నిర్ణయిస్తుంది'),
+ L('content/normal-modal-logic/completeness/completeness-K.tex',25,42,27,47,'\\mSat{M^\\Sigma}{!A}','\\mSat{M^\\Sigma}{!A}'),
+ L('content/normal-modal-logic/completeness/completeness-K.tex',44,56,49,62,'complete','సంపూర్ణ'),
+ L('content/normal-modal-logic/completeness/completeness-K.tex',58,63,64,70,'class of models','నమూనా వర్గానికి')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -934,6 +942,7 @@ alternatives['TE-T134']=['లిండెన్‌బామ్ ఉపసిద�
 alternatives['TE-T135']=['Box/Diamond షరతుపర శాఖలు, పూర్వప్రతిబింబాలు, కానానికల్ ప్రాప్యత సంబంధం, RK ఉద్ధరణను నిలిపి, రెండు మూల సూచిక/పరామితి సమస్యలను పక్కనే ప్రకటించి సరిచేయడం (ఎంపిక)','B_k సాక్షుల శ్రేణిలో నిర్వచించని B_nను నిలపడం (తిరస్కరణ)','Sigma-సాపేక్ష మధ్యంతర వ్యుత్పాద్యతను పరామితి లేకుండా ఉంచడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలే ఈ మోడల్-ప్రత్యేక నిరూపణలను ప్రత్యక్షంగా ఇస్తాయని చూపడం (తిరస్కరణ)'];
 alternatives['TE-T136']=['సంపూర్ణ Sigma-అవిరుద్ధ సమితులను లోకాలుగా, Box/Diamond guarded ప్రాప్యతను Rగా, మూలకత్వ-ఆధారిత పరమాణు విలువ నిర్ణయాన్ని Vగా నిర్వచించడం (ఎంపిక)','సత్య-మూలకత్వ తుల్యతను ఈ నిర్వచనంలోనే పూర్తిగా నిరూపించామని చూపడం (తిరస్కరణ)','Box/Diamond శాఖల ప్రాప్యత షరతులను తారుమారు చేయడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలే కానానికల్ నమూనాను ప్రత్యక్షంగా నిర్వచించాయని చూపడం (తిరస్కరణ)'];
 alternatives['TE-T137']=['సత్య ఉపసిద్ధాంతం, ప్రతిజ్ఞావాక్య/మోడల్ అన్ని ఆగమన సందర్భాలు, guarded వ్యాయామ శాఖలు నిలిపి, Diamond నిరూపణలో రెండు దశలు, వ్యాయామ ట్యాగ్ కేసును పక్కనే ప్రకటించి సరిచేయడం (ఎంపిక)','Box-ప్రాప్యత నుంచి Diamond-ప్రతిబింబానికి తప్పు ప్రతిపాదనను సూచించడం (తిరస్కరణ)','ప్రాప్య లోకంలోని B మూలకత్వం నుంచి ఆగమన పరికల్పన లేకుండా సత్యానికి దూకడం (తిరస్కరణ)','proband అనే అసమాన ట్యాగ్‌ను జాబితాలో ఉంచడం (తిరస్కరణ)'];
+alternatives['TE-T138']=['నిర్ణాయకత్వాన్ని నమూనాలో సర్వత్రా సత్యం, వ్యవస్థలో వ్యుత్పాద్యత తుల్యతగా నిర్వచించి, K సంపూర్ణత విపర్యయ నిరూపణను, సాధారణ నమూనా వర్గ పరిమితిని నిలపడం (ఎంపిక)','నిర్ణాయకత్వమే ఏ నమూనా వర్గానికైనా వ్యవస్థ సంపూర్ణతను ఇస్తుందని చెప్పడం (తిరస్కరణ)','కానానికల్ నమూనా వర్గ-సభ్యత్వ అవసరాన్ని తొలగించడం (తిరస్కరణ)','స్థానిక సాధారణ ప్రతిజ్ఞావాక్య పేజీలే ఈ మోడల్ K సిద్ధాంతాన్ని ప్రత్యక్షంగా నిరూపిస్తాయని చూపడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -949,7 +958,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T137 record the Batch 025--Batch 096 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T138 record the Batch 025--Batch 097 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);

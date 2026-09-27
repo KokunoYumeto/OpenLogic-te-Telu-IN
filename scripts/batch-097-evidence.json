@@ -1,0 +1,33 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "097",
+  "unit_id": "OLP-0448",
+  "unit_order": 448,
+  "source_path": "content/normal-modal-logic/completeness/completeness-K.tex",
+  "blocks": 15,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+  "previous_segments": 6803,
+  "previous_terms": 137,
+  "expected_corrections": 414,
+  "canon_default": ["TE-P018", "TE-P024", "TE-P026"],
+  "canon_by_block": {
+    "5": ["TE-P018", "TE-P024"],
+    "6": ["TE-P018", "TE-P024"],
+    "7": ["TE-P018", "TE-P024"],
+    "11": ["TE-P018", "TE-P024"],
+    "14": ["TE-P018", "TE-P024", "TE-P026"]
+  },
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర మూలం, తెలుగు లక్ష్యం, సూచించిన స్థానిక సాధారణ తర్కం/వ్యుత్పత్తి/అవైరుధ్య పేజీలను ఎదురెదురు చూశాం; నిర్ణాయకత్వం, K సంపూర్ణత వాదనలు మూలం నుంచే.",
+  "evidence_limit": "TE-P018/024/026 సాధారణ ప్రతిజ్ఞావాక్య తర్కం, వ్యుత్పత్తి, సమితి సుసంగతత్వం మాత్రమే చూపుతాయి. మోడల్ K నిర్ణాయకత్వం, నమూనా వర్గాలకు సాపేక్ష సంపూర్ణతను ప్రత్యక్షంగా స్థాపించవు.",
+  "term_decision": {
+    "term_id": "TE-T138",
+    "source_term": "determination / canonical-model determination theorem / completeness of K / completeness relative to a model class",
+    "telugu": "నిర్ణాయకత్వం / కానానికల్ నమూనా నిర్ణాయకత్వ సిద్ధాంతం / K సంపూర్ణత / నమూనా వర్గానికి సాపేక్ష సంపూర్ణత",
+    "status": "native_general_propositional_and_derivation_register_attested_modal_determination_source_controlled_provisional",
+    "passages": ["TE-P018", "TE-P024", "TE-P026"],
+    "basis": "TE-P018/024/026లో సాధారణ ప్రతిజ్ఞావాక్య తర్కం, వ్యుత్పత్తి, సమితి అవైరుధ్య పర్యాయం ప్రత్యక్షంగా చూశాం. TE-T132–137లో సంపూర్ణత, కానానికల్ నమూనా, సత్య ఉపసిద్ధాంతం పదజాలం కొనసాగించాం. నిర్ణాయకత్వ నిర్వచనం, K సంపూర్ణత నిరూపణ OLP-0448 స్థిర మూలం నుంచే.",
+    "uncertainty": "స్థానిక పేజీలు ఈ మోడల్-ప్రత్యేక నిర్ణాయకత్వం లేదా వ్యవస్థ/నమూనా వర్గ సంపూర్ణత నిరూపణను ప్రత్యక్షంగా ఇవ్వవు. సాధారణ వర్గానికి కానానికల్ నమూనా ఆ వర్గంలో ఉండాలని మూలం చెప్పే పరిమితిని నిలిపాం.",
+    "borrowing": "Sigma, K, KTB4, Gamma, Delta, canonical M/W symbols, satisfaction and derivability macros రక్షిత సంకేతాలు."
+  }
+}

@@ -1,0 +1,72 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: completeness-K
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{cmk}
+
+\olsection{\Log{K}కు నిర్ణాయకత్వం, సంపూర్ణత}
+
+ఇప్పుడు కానానికల్ నమూనాతో సంపూర్ణతను స్థాపించడానికి
+సిద్ధంగా ఉన్నాం. $\Sigma$కు చెందిన కానానికల్ నమూనాలో
+సత్యమయ్యే \tetoken{సూత్రాలు}{!!{formula}s},
+$\Sigma$ నుంచి \tetoken{వ్యుత్పాద్యమైనవే}{!!{derivable}}
+అనే వాస్తవం వల్ల సంపూర్ణత అనుసరిస్తుంది. ఈ ధర్మమున్న
+నమూనాలు~$\Sigma$ను \emph{నిర్ణయిస్తాయి} అంటాం.
+
+\begin{defn}
+  ప్రతి \tetoken{సూత్రం}{!!{formula}s}~$!A$కు
+  $\mSat{M}{!A}$, $\Sigma \Proves !A$ రెండూ
+  సమానార్థకమైనప్పుడే నమూనా $\mModel{M}$ నార్మల్
+  మోడల్ తర్కం~$\Sigma$ను \emph{నిర్ణయిస్తుంది}.
+\end{defn}
+
+\begin{thm}[నిర్ణాయకత్వం]\ollabel{thm:determination}
+   $\mSat{M^\Sigma}{!A}$ అయితే, అప్పుడు మాత్రమే
+   $\Sigma \Proves !A$.
+\end{thm}
+
+\begin{proof}
+  $\mSat{M^\Sigma}{!A}$ అయితే, ప్రతి సంపూర్ణ
+  $\Sigma$-అవిరుద్ధ $\Delta$కు
+  $\mSat{M^\Sigma}{!A}[\Delta]$. కనుక సత్య ఉపసిద్ధాంతం వల్ల
+  ప్రతి సంపూర్ణ $\Sigma$-అవిరుద్ధ $\Delta$లో $!A \in
+  \Delta$. అందువల్ల \olref[lin]{cor:provability-characterization}
+  ప్రకారం ($\Gamma = \emptyset$ తీసుకుంటే)
+  $\Sigma \Proves !A$.
+
+  విపరీతంగా, $\Sigma \Proves !A$ అయితే
+  \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-closed}
+  ప్రకారం ప్రతి సంపూర్ణ $\Sigma$-అవిరుద్ధ $\Delta$లో
+  $!A$ ఉంటుంది. కనుక సత్య ఉపసిద్ధాంతం వల్ల ప్రతి~$\Delta \in
+  W^\Sigma$కు $\mSat{M^\Sigma}{!A}[\Delta]$; అంటే,
+  $\mSat{M^\Sigma}{!A}$.
+\end{proof}
+
+\Log{K}కు చెందిన కానానికల్ నమూనా~\Log{K}ను నిర్ణయిస్తుంది
+కనుక, \Log{K} సంపూర్ణత వెంటనే అనుబంధ ఫలితంగా వస్తుంది:
+
+\begin{cor}\ollabel{cor:Kcomplete}
+  ప్రాథమిక మోడల్ తర్కం \Log{K} అన్ని నమూనాల వర్గానికి
+  సంబంధించి సంపూర్ణం; అంటే, $\Entails !A$ అయితే
+  $\Log{K} \Proves !A$.
+\end{cor}
+
+\begin{proof}
+  విపర్యయంగా, $\Log{K} \Proves/ !A$ అయితే నిర్ణాయకత్వం
+  వల్ల $\mSat/{M^{\Log{K}}}{!A}$; కనుక $!A$ సర్వత్రా
+  చెల్లుబాటు కాదు.
+\end{proof}
+
+ఒక నమూనా వర్గానికి సంబంధించి వ్యవస్థ $\Sigma$ సంపూర్ణతను
+సాధారణంగా నిరూపించాలంటే---ఉదాహరణకు, స్వావర్తన, సౌష్ఠవ,
+సంక్రమణీయ నమూనాల వర్గానికి సంబంధించి \Log{KTB4}
+సంపూర్ణతను---నిర్ణాయకత్వం మాత్రమే సరిపోదు. వ్యవస్థ
+$\Sigma$కు చెందిన కానానికల్ నమూనా ఆ వర్గంలో ఉందని కూడా
+చూపాలి. ఇది కానానికల్ నమూనా నిర్మాణం నుంచే స్పష్టంగా
+అనుసరించదు---ఎప్పుడూ నిజం కూడా కాదు!
+
+\end{document}

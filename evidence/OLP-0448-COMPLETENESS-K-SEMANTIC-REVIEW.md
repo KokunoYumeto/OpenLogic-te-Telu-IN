@@ -1,0 +1,7 @@
+# OLP-0448 — same-agent semantic review
+
+- Frozen source: `upstream/content/normal-modal-logic/completeness/completeness-K.tex`, SHA-256 `067d811b2d64251f4f2365320e942a4e47341e8925b45f84de5571d735b5fa2a`.
+- Telugu target: `translation/content/normal-modal-logic/completeness/completeness-K.tex`, SHA-256 `e335b72b1356a7dd6b2494b411927920a8c810d688780dd9cc587ee5d271000a`.
+- Bounded QA: `build/BATCH-097-STRUCTURAL-QA.json`, 15/15 aligned blocks with exact structural, marker, identifier and mathematical parity. No source correction was needed. This is same-agent review, not an independent expert check or TeX compilation.
+
+The definition says a model determines Sigma exactly when its globally true formulas are the Sigma-derivable ones. The theorem proves both directions for the canonical model: global truth gives membership in each complete consistent set by the truth lemma and derivability by the Lindenbaum corollary at empty Gamma; derivability gives membership in each complete set by closure and hence global truth by the truth lemma. K completeness for all models follows contrapositively from its determining canonical model. The final paragraph carefully distinguishes this all-model result from completeness relative to a specified frame/model class: determination alone is insufficient unless the system's canonical model belongs to that class, which need not always hold. TE-P018/024/026 support general logic/derivation/consistency terminology only, not this modal determination theorem or class-relative result.

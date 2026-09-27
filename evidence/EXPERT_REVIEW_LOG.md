@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 447 of 722 draft units**. This log contains 137 terminology/sense decisions and 414 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 448 of 722 draft units**. This log contains 138 terminology/sense decisions and 414 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3295,6 +3295,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక పేజీలు ఈ మోడల్-ప్రత్యేక సత్య ఉపసిద్ధాంతం లేదా guarded నిరూపణ శాఖలను ప్రత్యక్షంగా ఇవ్వవు. Diamond కేసులో రెండు నిరూపణ దశలు, వ్యాయామ ట్యాగ్ కేసు-సామ్యం OLTENMLCOMTRU-001–003లో ప్రకటిత సవరణలు.
 
 - Please double-check: Please double-check whether “సత్య ఉపసిద్ధాంతం / కానానికల్ సత్య-మూలకత్వ తుల్యత / నిర్మాణ ఆగమనం / షరతుపర Box-Diamond సందర్భాలు / నిరూపణ-వ్యాయామ మార్పిళ్లు” is idiomatic and technically standard for “Truth Lemma / canonical truth-membership equivalence / structural induction / guarded Box-Diamond cases / proof-exercise switches” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T138 — determination / canonical-model determination theorem / completeness of K / completeness relative to a model class
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: నిర్ణాయకత్వం / కానానికల్ నమూనా నిర్ణాయకత్వ సిద్ధాంతం / K సంపూర్ణత / నమూనా వర్గానికి సాపేక్ష సంపూర్ణత
+
+- Exact implementation: OLP-0448; normal-modal-logic/completeness/completeness-K; content/normal-modal-logic/completeness/completeness-K.tex:11 ↔ translation/content/normal-modal-logic/completeness/completeness-K.tex:11 (OLP-0448-B005); printed/PDF page pending; OLP-0448; normal-modal-logic/completeness/completeness-K; content/normal-modal-logic/completeness/completeness-K.tex:13-17 ↔ translation/content/normal-modal-logic/completeness/completeness-K.tex:13-18 (OLP-0448-B006); printed/PDF page pending; OLP-0448; normal-modal-logic/completeness/completeness-K; content/normal-modal-logic/completeness/completeness-K.tex:19-23 ↔ translation/content/normal-modal-logic/completeness/completeness-K.tex:20-25 (OLP-0448-B007); printed/PDF page pending; OLP-0448; normal-modal-logic/completeness/completeness-K; content/normal-modal-logic/completeness/completeness-K.tex:25-27 ↔ translation/content/normal-modal-logic/completeness/completeness-K.tex:27-30 (OLP-0448-B008); printed/PDF page pending; OLP-0448; normal-modal-logic/completeness/completeness-K; content/normal-modal-logic/completeness/completeness-K.tex:44-45 ↔ translation/content/normal-modal-logic/completeness/completeness-K.tex:49-50 (OLP-0448-B011); printed/PDF page pending; OLP-0448; normal-modal-logic/completeness/completeness-K; content/normal-modal-logic/completeness/completeness-K.tex:58-63 ↔ translation/content/normal-modal-logic/completeness/completeness-K.tex:64-70 (OLP-0448-B014); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P026, PDF 88, printed 81, Consistency section
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P018/024/026లో సాధారణ ప్రతిజ్ఞావాక్య తర్కం, వ్యుత్పత్తి, సమితి అవైరుధ్య పర్యాయం ప్రత్యక్షంగా చూశాం. TE-T132–137లో సంపూర్ణత, కానానికల్ నమూనా, సత్య ఉపసిద్ధాంతం పదజాలం కొనసాగించాం. నిర్ణాయకత్వ నిర్వచనం, K సంపూర్ణత నిరూపణ OLP-0448 స్థిర మూలం నుంచే. Sigma, K, KTB4, Gamma, Delta, canonical M/W symbols, satisfaction and derivability macros రక్షిత సంకేతాలు.
+
+- Alternatives: నిర్ణాయకత్వాన్ని నమూనాలో సర్వత్రా సత్యం, వ్యవస్థలో వ్యుత్పాద్యత తుల్యతగా నిర్వచించి, K సంపూర్ణత విపర్యయ నిరూపణను, సాధారణ నమూనా వర్గ పరిమితిని నిలపడం (ఎంపిక); నిర్ణాయకత్వమే ఏ నమూనా వర్గానికైనా వ్యవస్థ సంపూర్ణతను ఇస్తుందని చెప్పడం (తిరస్కరణ); కానానికల్ నమూనా వర్గ-సభ్యత్వ అవసరాన్ని తొలగించడం (తిరస్కరణ); స్థానిక సాధారణ ప్రతిజ్ఞావాక్య పేజీలే ఈ మోడల్ K సిద్ధాంతాన్ని ప్రత్యక్షంగా నిరూపిస్తాయని చూపడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక పేజీలు ఈ మోడల్-ప్రత్యేక నిర్ణాయకత్వం లేదా వ్యవస్థ/నమూనా వర్గ సంపూర్ణత నిరూపణను ప్రత్యక్షంగా ఇవ్వవు. సాధారణ వర్గానికి కానానికల్ నమూనా ఆ వర్గంలో ఉండాలని మూలం చెప్పే పరిమితిని నిలిపాం.
+
+- Please double-check: Please double-check whether “నిర్ణాయకత్వం / కానానికల్ నమూనా నిర్ణాయకత్వ సిద్ధాంతం / K సంపూర్ణత / నమూనా వర్గానికి సాపేక్ష సంపూర్ణత” is idiomatic and technically standard for “determination / canonical-model determination theorem / completeness of K / completeness relative to a model class” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
