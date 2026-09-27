@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **468 of 722 source units drafted**. This readable view contains all 603 decisions and 1384 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **469 of 722 source units drafted**. This readable view contains all 609 decisions and 1395 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4812,6 +4812,37 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T158-OCC-006; OLP-0468; OLP-0468-B013; source upstream/content/normal-modal-logic/tableaux/completeness.tex:95-109 bytes 4147-4665 SHA-256 ee4e86d1549731cdbe7088d4d682c304f04a9c007a93a525c99b25959a2c2d90; target translation/content/normal-modal-logic/tableaux/completeness.tex:128-149 bytes 10469-12102 SHA-256 f2d1359f023747157f3a30f39e7200e1f03b5d50f7fc97842ca36bcb067937e6; reader page pending.
   - te-Telu-IN-TE-T158-OCC-007; OLP-0468; OLP-0468-B017; source upstream/content/normal-modal-logic/tableaux/completeness.tex:141-155 bytes 6068-6841 SHA-256 ee4e86d1549731cdbe7088d4d682c304f04a9c007a93a525c99b25959a2c2d90; target translation/content/normal-modal-logic/tableaux/completeness.tex:182-202 bytes 13953-15359 SHA-256 f2d1359f023747157f3a30f39e7200e1f03b5d50f7fc97842ca36bcb067937e6; reader page pending.
   - te-Telu-IN-TE-T158-OCC-008; OLP-0468; OLP-0468-B021; source upstream/content/normal-modal-logic/tableaux/completeness.tex:205-214 bytes 9295-9820 SHA-256 ee4e86d1549731cdbe7088d4d682c304f04a9c007a93a525c99b25959a2c2d90; target translation/content/normal-modal-logic/tableaux/completeness.tex:268-279 bytes 19371-20122 SHA-256 f2d1359f023747157f3a30f39e7200e1f03b5d50f7fc97842ca36bcb067937e6; reader page pending.
+
+## te-Telu-IN-TE-T159 — countermodel from a complete open tableau / K decision procedure / Box and Diamond countermodels
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: సంపూర్ణ వివృత టాబ్లో నుంచి ప్రతినమూనా / K నిర్ణయ విధానం / Box, Diamond ప్రతినమూనాలు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “countermodel from a complete open tableau / K decision procedure / Box and Diamond countermodels” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాధారణ తర్క పేజీలు modal K నిర్ణాయకత్వం లేదా ప్రతినమూనాలకు ప్రత్యక్ష సాక్ష్యం కాదు. పూర్వ సాధారణ Gamma సంపూర్ణత ఖాళీ ఇక్కడ కొత్త నిరూపణతో పూరించలేదు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Rationale: TE-T151–158లోని పూర్వసూచిక, చిహ్నిత సూత్రం, టాబ్లో, సంపూర్ణ శాఖ, నమూనా పదాలను కొనసాగించాం. మూలంలోని మూడు-దశ Box/Diamond చెట్లు, W/R/V సమితులు, చిత్రాలు నిలిచాయి; ఐదు ప్రకటిత స్థానిక సవరణలు ఆశ్చర్యసూచిక, పంక్తి సంఖ్యలు, F Diamond చిహ్నం/నియమం, మధ్య చెట్టు మూల సూత్రం, q పూర్వసూచికను సరిచేస్తాయి. టాబ్లో is the established edition borrowing; K, Box/Diamond, p/q, W/R/V, signed-tableau macros, feature tags, TikZ node identities and protected usetoken heading retain source notation.
+
+- Authorities checked: TE-C002:TE-P005 [checked_context_only], PDF page 21; printed page 9; Prime-factorization discussion and Examples 1-2; Direct prime-number, prime-factorization and fundamental-theorem terminology plus native natural-number exposition | TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: K నిర్ణయ విధానం, Box/Diamond రెండు ప్రతినమూనా చెట్లు, W/R/V నమూనాలను నిలిపి, ఐదు స్థానిక మూల పొరపాట్లు ప్రకటించి సరిచేయడం [viable_alternative: ఎంపిక] | F Diamond పంక్తికి T Diamond నియమాన్ని వర్తింపజేయడం [viable_alternative: తిరస్కరణ] | మధ్య చెట్టులో తిరగబడిన షరతును నిజమైన మొదటి సూత్రంగా ఉంచడం [viable_alternative: తిరస్కరణ] | నమూనా చిత్రాన్ని చెట్టుకి విరుద్ధంగా మార్చడం [viable_alternative: తిరస్కరణ] | మునుపటి సాధారణ Gamma నిరూపణ ఖాళీ ఇక్కడే పరిష్కరించబడిందని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “సంపూర్ణ వివృత టాబ్లో నుంచి ప్రతినమూనా / K నిర్ణయ విధానం / Box, Diamond ప్రతినమూనాలు” is idiomatic and technically standard for “countermodel from a complete open tableau / K decision procedure / Box and Diamond countermodels” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T159-OCC-001; OLP-0469; OLP-0469-B005; source upstream/content/normal-modal-logic/tableaux/countermodels.tex:11 bytes 186-239 SHA-256 c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd; target translation/content/normal-modal-logic/tableaux/countermodels.tex:11 bytes 180-267 SHA-256 60a05ac625211461cbd1a139cd71bb201d49f898abc39df8f1b2915a9232320d; reader page pending.
+  - te-Telu-IN-TE-T159-OCC-002; OLP-0469; OLP-0469-B006; source upstream/content/normal-modal-logic/tableaux/countermodels.tex:13-34 bytes 240-1623 SHA-256 c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd; target translation/content/normal-modal-logic/tableaux/countermodels.tex:13-42 bytes 268-3314 SHA-256 60a05ac625211461cbd1a139cd71bb201d49f898abc39df8f1b2915a9232320d; reader page pending.
+  - te-Telu-IN-TE-T159-OCC-003; OLP-0469; OLP-0469-B007; source upstream/content/normal-modal-logic/tableaux/countermodels.tex:36-44 bytes 1624-2160 SHA-256 c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd; target translation/content/normal-modal-logic/tableaux/countermodels.tex:44-56 bytes 3315-4375 SHA-256 60a05ac625211461cbd1a139cd71bb201d49f898abc39df8f1b2915a9232320d; reader page pending.
+  - te-Telu-IN-TE-T159-OCC-004; OLP-0469; OLP-0469-B008; source upstream/content/normal-modal-logic/tableaux/countermodels.tex:46-305 bytes 2161-12858 SHA-256 c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd; target translation/content/normal-modal-logic/tableaux/countermodels.tex:58-350 bytes 4376-18586 SHA-256 60a05ac625211461cbd1a139cd71bb201d49f898abc39df8f1b2915a9232320d; reader page pending.
+  - te-Telu-IN-TE-T159-OCC-005; OLP-0469; OLP-0469-B008; source upstream/content/normal-modal-logic/tableaux/countermodels.tex:46-305 bytes 2161-12858 SHA-256 c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd; target translation/content/normal-modal-logic/tableaux/countermodels.tex:58-350 bytes 4376-18586 SHA-256 60a05ac625211461cbd1a139cd71bb201d49f898abc39df8f1b2915a9232320d; reader page pending.
+  - te-Telu-IN-TE-T159-OCC-006; OLP-0469; OLP-0469-B008; source upstream/content/normal-modal-logic/tableaux/countermodels.tex:46-305 bytes 2161-12858 SHA-256 c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd; target translation/content/normal-modal-logic/tableaux/countermodels.tex:58-350 bytes 4376-18586 SHA-256 60a05ac625211461cbd1a139cd71bb201d49f898abc39df8f1b2915a9232320d; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -16462,3 +16493,133 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLTABCPL-007-OCC-001; OLP-0468; OLP-0468-B013; source upstream/content/normal-modal-logic/tableaux/completeness.tex:95-109 bytes 4147-4665 SHA-256 ee4e86d1549731cdbe7088d4d682c304f04a9c007a93a525c99b25959a2c2d90; target translation/content/normal-modal-logic/tableaux/completeness.tex:141 bytes 11252-11327 SHA-256 f2d1359f023747157f3a30f39e7200e1f03b5d50f7fc97842ca36bcb067937e6; reader page pending.
+
+## te-Telu-IN-OLTENMLTABCM-001 — OLTENMLTABCM-001: missing formula bang in nonentailment
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: ప్రతినమూనా పరిచయంలో మూలం వదిలిన !A సూత్ర పూర్వచిహ్నాన్ని పునరుద్ధరించి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited missing formula bang in nonentailment at countermodels.tex line 16, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLTABCM-20260927:OLTENMLTABCM-001 [checked_supports], content/normal-modal-logic/tableaux/countermodels.tex; countermodels.tex line 16; missing_formula_bang_in_nonentailment; ప్రతినమూనా పరిచయంలో మూలం వదిలిన !A సూత్ర పూర్వచిహ్నాన్ని పునరుద్ధరించి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the opening non-entailment assertion have the same !A formula as the rest of the decision-procedure explanation?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLTABCM-001-OCC-001; OLP-0469; OLP-0469-B006; source upstream/content/normal-modal-logic/tableaux/countermodels.tex:13-34 bytes 240-1623 SHA-256 c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd; target translation/content/normal-modal-logic/tableaux/countermodels.tex:39 bytes 2925-3010 SHA-256 60a05ac625211461cbd1a139cd71bb201d49f898abc39df8f1b2915a9232320d; reader page pending.
+
+## te-Telu-IN-OLTENMLTABCM-002 — OLTENMLTABCM-002: box tableau model prose line numbers off by one
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: Box టాబ్లోలో p, q సాక్షుల పంక్తి సంఖ్యలను వరుసగా 12, 11గా సరిచేసి ప్రకటించాం.
+
+- Intended sense: Repair the audited box tableau model prose line numbers off by one at countermodels.tex lines 149-155, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLTABCM-20260927:OLTENMLTABCM-002 [checked_supports], content/normal-modal-logic/tableaux/countermodels.tex; countermodels.tex lines 149-155; box_tableau_model_prose_line_numbers_off_by_one; Box టాబ్లోలో p, q సాక్షుల పంక్తి సంఖ్యలను వరుసగా 12, 11గా సరిచేసి ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Are the Box model witness line references 12 for T p at 1.2 and 11 for T q at 1.1 in the final tableau?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLTABCM-002-OCC-001; OLP-0469; OLP-0469-B008; source upstream/content/normal-modal-logic/tableaux/countermodels.tex:46-305 bytes 2161-12858 SHA-256 c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd; target translation/content/normal-modal-logic/tableaux/countermodels.tex:175 bytes 9832-9905 SHA-256 60a05ac625211461cbd1a139cd71bb201d49f898abc39df8f1b2915a9232320d; reader page pending.
+
+## te-Telu-IN-OLTENMLTABCM-003 — OLTENMLTABCM-003: diamond used prefix rule wrong sign
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: Diamond టాబ్లో 3వ పంక్తి, ఉపయోగించిన పూర్వసూచిక నియమం రెండింటినీ F Diamondగా సరిచేసి ప్రకటించాం.
+
+- Intended sense: Repair the audited diamond used prefix rule wrong sign at countermodels.tex lines 203-207, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLTABCM-20260927:OLTENMLTABCM-003 [checked_supports], content/normal-modal-logic/tableaux/countermodels.tex; countermodels.tex lines 203-207; diamond_used_prefix_rule_wrong_sign; Diamond టాబ్లో 3వ పంక్తి, ఉపయోగించిన పూర్వసూచిక నియమం రెండింటినీ F Diamondగా సరిచేసి ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the Diamond example apply F Diamond to its F Diamond line 3 at both already-used successor prefixes?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLTABCM-003-OCC-001; OLP-0469; OLP-0469-B008; source upstream/content/normal-modal-logic/tableaux/countermodels.tex:46-305 bytes 2161-12858 SHA-256 c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd; target translation/content/normal-modal-logic/tableaux/countermodels.tex:236 bytes 12709-12781 SHA-256 60a05ac625211461cbd1a139cd71bb201d49f898abc39df8f1b2915a9232320d; reader page pending.
+
+## te-Telu-IN-OLTENMLTABCM-004 — OLTENMLTABCM-004: middle diamond tableau reverses tested implication
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: మధ్య Diamond చెట్టు మూలంలో తారుమారైన షరతు సూత్రాన్ని మొదటి, చివరి చెట్లతో సరిపడే రూపంలో పునరుద్ధరించి ప్రకటించాం.
+
+- Intended sense: Repair the audited middle diamond tableau reverses tested implication at countermodels.tex line 209, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLTABCM-20260927:OLTENMLTABCM-004 [checked_supports], content/normal-modal-logic/tableaux/countermodels.tex; countermodels.tex line 209; middle_diamond_tableau_reverses_tested_implication; మధ్య Diamond చెట్టు మూలంలో తారుమారైన షరతు సూత్రాన్ని మొదటి, చివరి చెట్లతో సరిపడే రూపంలో పునరుద్ధరించి ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the middle Diamond tableau root test the same implication as the first and third trees, consistent with its F conditional children?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLTABCM-004-OCC-001; OLP-0469; OLP-0469-B008; source upstream/content/normal-modal-logic/tableaux/countermodels.tex:46-305 bytes 2161-12858 SHA-256 c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd; target translation/content/normal-modal-logic/tableaux/countermodels.tex:269 bytes 14109-14176 SHA-256 60a05ac625211461cbd1a139cd71bb201d49f898abc39df8f1b2915a9232320d; reader page pending.
+
+## te-Telu-IN-OLTENMLTABCM-005 — OLTENMLTABCM-005: diamond model q witness wrong prefix
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: Diamond నమూనాలో q సత్య సాక్షి పూర్వసూచికను 1.1 నుంచి 1.2గా సరిచేసి ప్రకటించాం.
+
+- Intended sense: Repair the audited diamond model q witness wrong prefix at countermodels.tex lines 279-287, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLTABCM-20260927:OLTENMLTABCM-005 [checked_supports], content/normal-modal-logic/tableaux/countermodels.tex; countermodels.tex lines 279-287; diamond_model_q_witness_wrong_prefix; Diamond నమూనాలో q సత్య సాక్షి పూర్వసూచికను 1.1 నుంచి 1.2గా సరిచేసి ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the Diamond model assign q to 1.2 and cite the T q[1.2] witness on line 7?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLTABCM-005-OCC-001; OLP-0469; OLP-0469-B008; source upstream/content/normal-modal-logic/tableaux/countermodels.tex:46-305 bytes 2161-12858 SHA-256 c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd; target translation/content/normal-modal-logic/tableaux/countermodels.tex:326 bytes 17376-17450 SHA-256 60a05ac625211461cbd1a139cd71bb201d49f898abc39df8f1b2915a9232320d; reader page pending.

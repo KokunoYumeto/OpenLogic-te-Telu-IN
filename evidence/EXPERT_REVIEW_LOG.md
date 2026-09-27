@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 468 of 722 draft units**. This log contains 158 terminology/sense decisions and 445 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 469 of 722 draft units**. This log contains 159 terminology/sense decisions and 450 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3799,6 +3799,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక సాక్షులు మోడల్ సంపూర్ణతకు ప్రత్యక్ష నిరూపణ కాదు. సాధారణ Gamma సిద్ధాంతానికి మూల నిరూపణలో పరిమితత్వ ఖాళీ ఉంది; ముగింపు వాదన కూడా విడిగా స్థాపితం కాలేదు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
 
 - Please double-check: Please double-check whether “సంపూర్ణ టాబ్లో శాఖ / సంపూర్ణత / పూర్వసూచిక నమూనా / చిహ్నిత సూత్రాలపై ఆగమనం” is idiomatic and technically standard for “complete tableau branch / completeness / prefix model / induction on signed formulas” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T159 — countermodel from a complete open tableau / K decision procedure / Box and Diamond countermodels
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: సంపూర్ణ వివృత టాబ్లో నుంచి ప్రతినమూనా / K నిర్ణయ విధానం / Box, Diamond ప్రతినమూనాలు
+
+- Exact implementation: OLP-0469; normal-modal-logic/tableaux/countermodels; content/normal-modal-logic/tableaux/countermodels.tex:11 ↔ translation/content/normal-modal-logic/tableaux/countermodels.tex:11 (OLP-0469-B005); printed/PDF page pending; OLP-0469; normal-modal-logic/tableaux/countermodels; content/normal-modal-logic/tableaux/countermodels.tex:13-34 ↔ translation/content/normal-modal-logic/tableaux/countermodels.tex:13-42 (OLP-0469-B006); printed/PDF page pending; OLP-0469; normal-modal-logic/tableaux/countermodels; content/normal-modal-logic/tableaux/countermodels.tex:36-44 ↔ translation/content/normal-modal-logic/tableaux/countermodels.tex:44-56 (OLP-0469-B007); printed/PDF page pending; OLP-0469; normal-modal-logic/tableaux/countermodels; content/normal-modal-logic/tableaux/countermodels.tex:46-305 ↔ translation/content/normal-modal-logic/tableaux/countermodels.tex:58-350 (OLP-0469-B008); printed/PDF page pending; OLP-0469; normal-modal-logic/tableaux/countermodels; content/normal-modal-logic/tableaux/countermodels.tex:46-305 ↔ translation/content/normal-modal-logic/tableaux/countermodels.tex:58-350 (OLP-0469-B008); printed/PDF page pending; OLP-0469; normal-modal-logic/tableaux/countermodels; content/normal-modal-logic/tableaux/countermodels.tex:46-305 ↔ translation/content/normal-modal-logic/tableaux/countermodels.tex:58-350 (OLP-0469-B008); printed/PDF page pending
+
+- Authorities actually checked: TE-P005, PDF 21, printed 9, Prime-factorization discussion and Examples 1-2; TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-T151–158లోని పూర్వసూచిక, చిహ్నిత సూత్రం, టాబ్లో, సంపూర్ణ శాఖ, నమూనా పదాలను కొనసాగించాం. మూలంలోని మూడు-దశ Box/Diamond చెట్లు, W/R/V సమితులు, చిత్రాలు నిలిచాయి; ఐదు ప్రకటిత స్థానిక సవరణలు ఆశ్చర్యసూచిక, పంక్తి సంఖ్యలు, F Diamond చిహ్నం/నియమం, మధ్య చెట్టు మూల సూత్రం, q పూర్వసూచికను సరిచేస్తాయి. టాబ్లో is the established edition borrowing; K, Box/Diamond, p/q, W/R/V, signed-tableau macros, feature tags, TikZ node identities and protected usetoken heading retain source notation.
+
+- Alternatives: K నిర్ణయ విధానం, Box/Diamond రెండు ప్రతినమూనా చెట్లు, W/R/V నమూనాలను నిలిపి, ఐదు స్థానిక మూల పొరపాట్లు ప్రకటించి సరిచేయడం (ఎంపిక); F Diamond పంక్తికి T Diamond నియమాన్ని వర్తింపజేయడం (తిరస్కరణ); మధ్య చెట్టులో తిరగబడిన షరతును నిజమైన మొదటి సూత్రంగా ఉంచడం (తిరస్కరణ); నమూనా చిత్రాన్ని చెట్టుకి విరుద్ధంగా మార్చడం (తిరస్కరణ); మునుపటి సాధారణ Gamma నిరూపణ ఖాళీ ఇక్కడే పరిష్కరించబడిందని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాధారణ తర్క పేజీలు modal K నిర్ణాయకత్వం లేదా ప్రతినమూనాలకు ప్రత్యక్ష సాక్ష్యం కాదు. పూర్వ సాధారణ Gamma సంపూర్ణత ఖాళీ ఇక్కడ కొత్త నిరూపణతో పూరించలేదు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Please double-check: Please double-check whether “సంపూర్ణ వివృత టాబ్లో నుంచి ప్రతినమూనా / K నిర్ణయ విధానం / Box, Diamond ప్రతినమూనాలు” is idiomatic and technically standard for “countermodel from a complete open tableau / K decision procedure / Box and Diamond countermodels” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -14479,3 +14503,123 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Is the identity prefix interpretation f explicit and used in the final Gamma satisfaction statement?
+
+## REV-OLTENMLTABCM-001 — OLTENMLTABCM-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: ప్రతినమూనా పరిచయంలో మూలం వదిలిన !A సూత్ర పూర్వచిహ్నాన్ని పునరుద్ధరించి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0469; normal-modal-logic/tableaux/countermodels; countermodels.tex line 16 ↔ translation/content/normal-modal-logic/tableaux/countermodels.tex:39 (OLP-0469-B006); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLTABCM-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: ప్రతినమూనా పరిచయంలో మూలం వదిలిన !A సూత్ర పూర్వచిహ్నాన్ని పునరుద్ధరించి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the opening non-entailment assertion have the same !A formula as the rest of the decision-procedure explanation?
+
+## REV-OLTENMLTABCM-002 — OLTENMLTABCM-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: Box టాబ్లోలో p, q సాక్షుల పంక్తి సంఖ్యలను వరుసగా 12, 11గా సరిచేసి ప్రకటించాం.
+
+- Exact implementation: OLP-0469; normal-modal-logic/tableaux/countermodels; countermodels.tex lines 149-155 ↔ translation/content/normal-modal-logic/tableaux/countermodels.tex:175 (OLP-0469-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLTABCM-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: Box టాబ్లోలో p, q సాక్షుల పంక్తి సంఖ్యలను వరుసగా 12, 11గా సరిచేసి ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Are the Box model witness line references 12 for T p at 1.2 and 11 for T q at 1.1 in the final tableau?
+
+## REV-OLTENMLTABCM-003 — OLTENMLTABCM-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: Diamond టాబ్లో 3వ పంక్తి, ఉపయోగించిన పూర్వసూచిక నియమం రెండింటినీ F Diamondగా సరిచేసి ప్రకటించాం.
+
+- Exact implementation: OLP-0469; normal-modal-logic/tableaux/countermodels; countermodels.tex lines 203-207 ↔ translation/content/normal-modal-logic/tableaux/countermodels.tex:236 (OLP-0469-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLTABCM-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: Diamond టాబ్లో 3వ పంక్తి, ఉపయోగించిన పూర్వసూచిక నియమం రెండింటినీ F Diamondగా సరిచేసి ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the Diamond example apply F Diamond to its F Diamond line 3 at both already-used successor prefixes?
+
+## REV-OLTENMLTABCM-004 — OLTENMLTABCM-004
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: మధ్య Diamond చెట్టు మూలంలో తారుమారైన షరతు సూత్రాన్ని మొదటి, చివరి చెట్లతో సరిపడే రూపంలో పునరుద్ధరించి ప్రకటించాం.
+
+- Exact implementation: OLP-0469; normal-modal-logic/tableaux/countermodels; countermodels.tex line 209 ↔ translation/content/normal-modal-logic/tableaux/countermodels.tex:269 (OLP-0469-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLTABCM-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: మధ్య Diamond చెట్టు మూలంలో తారుమారైన షరతు సూత్రాన్ని మొదటి, చివరి చెట్లతో సరిపడే రూపంలో పునరుద్ధరించి ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the middle Diamond tableau root test the same implication as the first and third trees, consistent with its F conditional children?
+
+## REV-OLTENMLTABCM-005 — OLTENMLTABCM-005
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: Diamond నమూనాలో q సత్య సాక్షి పూర్వసూచికను 1.1 నుంచి 1.2గా సరిచేసి ప్రకటించాం.
+
+- Exact implementation: OLP-0469; normal-modal-logic/tableaux/countermodels; countermodels.tex lines 279-287 ↔ translation/content/normal-modal-logic/tableaux/countermodels.tex:326 (OLP-0469-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLTABCM-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: Diamond నమూనాలో q సత్య సాక్షి పూర్వసూచికను 1.1 నుంచి 1.2గా సరిచేసి ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the Diamond model assign q to 1.2 and cite the T q[1.2] witness on line 7?

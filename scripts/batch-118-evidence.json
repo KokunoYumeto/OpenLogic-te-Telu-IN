@@ -1,0 +1,29 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "118",
+  "unit_id": "OLP-0469",
+  "unit_order": 469,
+  "source_path": "content/normal-modal-logic/tableaux/countermodels.tex",
+  "blocks": 9,
+  "linguistic_blocks": [5, 6, 7, 8],
+  "previous_segments": 7125,
+  "previous_terms": 158,
+  "expected_corrections": 450,
+  "canon_default": ["TE-P005", "TE-P008", "TE-P010", "TE-P011", "TE-P018", "TE-P024"],
+  "corrections_by_block": {
+    "6": ["OLTENMLTABCM-001"],
+    "8": ["OLTENMLTABCM-002", "OLTENMLTABCM-003", "OLTENMLTABCM-004", "OLTENMLTABCM-005"]
+  },
+  "consultation_phase": "స్థిర K ప్రతినమూనా మూలం, తెలుగు లక్ష్యం, పూర్వ K టాబ్లో/సంపూర్ణత నియమాలు, స్థానిక ధన పూర్ణసంఖ్య/సమితి/సంబంధ/ప్రమేయకం/తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; Box, Diamond మూడు-దశ చెట్లలో పంక్తి సంఖ్యలు, చిహ్నాలు, లోక విలువలను తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P005/008/010/011 సాధారణ సంఖ్య, సమితి, సంబంధం, ప్రమేయకానికి; TE-P018/024 సాధారణ తర్కం, వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. K నిర్ణయ విధానానికి లేదా modal ప్రతినమూనా టాబ్లోలకు ఇవి ప్రత్యక్ష నిరూపణలు కావు. పూర్వ విభాగంలోని సాధారణ Gamma సంపూర్ణత నిరూపణ ఖాళీ అలాగే ప్రకటితమే.",
+  "term_decision": {
+    "term_id": "TE-T159",
+    "source_term": "countermodel from a complete open tableau / K decision procedure / Box and Diamond countermodels",
+    "telugu": "సంపూర్ణ వివృత టాబ్లో నుంచి ప్రతినమూనా / K నిర్ణయ విధానం / Box, Diamond ప్రతినమూనాలు",
+    "status": "native_general_number_set_relation_function_logic_derivation_register_attested_modal_countermodels_source_controlled_five_disclosed_repairs",
+    "passages": ["TE-P005", "TE-P008", "TE-P010", "TE-P011", "TE-P018", "TE-P024"],
+    "basis": "TE-T151–158లోని పూర్వసూచిక, చిహ్నిత సూత్రం, టాబ్లో, సంపూర్ణ శాఖ, నమూనా పదాలను కొనసాగించాం. మూలంలోని మూడు-దశ Box/Diamond చెట్లు, W/R/V సమితులు, చిత్రాలు నిలిచాయి; ఐదు ప్రకటిత స్థానిక సవరణలు ఆశ్చర్యసూచిక, పంక్తి సంఖ్యలు, F Diamond చిహ్నం/నియమం, మధ్య చెట్టు మూల సూత్రం, q పూర్వసూచికను సరిచేస్తాయి.",
+    "uncertainty": "స్థానిక సాధారణ తర్క పేజీలు modal K నిర్ణాయకత్వం లేదా ప్రతినమూనాలకు ప్రత్యక్ష సాక్ష్యం కాదు. పూర్వ సాధారణ Gamma సంపూర్ణత ఖాళీ ఇక్కడ కొత్త నిరూపణతో పూరించలేదు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "టాబ్లో is the established edition borrowing; K, Box/Diamond, p/q, W/R/V, signed-tableau macros, feature tags, TikZ node identities and protected usetoken heading retain source notation."
+  }
+}

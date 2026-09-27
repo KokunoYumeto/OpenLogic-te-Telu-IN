@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 468 of 722 draft units**. This view selects 498 of 603 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 469 of 722 draft units**. This view selects 503 of 609 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4983,3 +4983,53 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0468; normal-modal-logic/tableaux/completeness; translation/content/normal-modal-logic/tableaux/completeness.tex:141; printed/PDF page pending
 
 - Please double-check: Please double-check: Is the identity prefix interpretation f explicit and used in the final Gamma satisfaction statement?
+
+## REV-OLTENMLTABCM-001 — OLTENMLTABCM-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రతినమూనా పరిచయంలో మూలం వదిలిన !A సూత్ర పూర్వచిహ్నాన్ని పునరుద్ధరించి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0469; normal-modal-logic/tableaux/countermodels; translation/content/normal-modal-logic/tableaux/countermodels.tex:39; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the opening non-entailment assertion have the same !A formula as the rest of the decision-procedure explanation?
+
+## REV-OLTENMLTABCM-002 — OLTENMLTABCM-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Box టాబ్లోలో p, q సాక్షుల పంక్తి సంఖ్యలను వరుసగా 12, 11గా సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0469; normal-modal-logic/tableaux/countermodels; translation/content/normal-modal-logic/tableaux/countermodels.tex:175; printed/PDF page pending
+
+- Please double-check: Please double-check: Are the Box model witness line references 12 for T p at 1.2 and 11 for T q at 1.1 in the final tableau?
+
+## REV-OLTENMLTABCM-003 — OLTENMLTABCM-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Diamond టాబ్లో 3వ పంక్తి, ఉపయోగించిన పూర్వసూచిక నియమం రెండింటినీ F Diamondగా సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0469; normal-modal-logic/tableaux/countermodels; translation/content/normal-modal-logic/tableaux/countermodels.tex:236; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the Diamond example apply F Diamond to its F Diamond line 3 at both already-used successor prefixes?
+
+## REV-OLTENMLTABCM-004 — OLTENMLTABCM-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మధ్య Diamond చెట్టు మూలంలో తారుమారైన షరతు సూత్రాన్ని మొదటి, చివరి చెట్లతో సరిపడే రూపంలో పునరుద్ధరించి ప్రకటించాం.
+
+- Occurrences: OLP-0469; normal-modal-logic/tableaux/countermodels; translation/content/normal-modal-logic/tableaux/countermodels.tex:269; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the middle Diamond tableau root test the same implication as the first and third trees, consistent with its F conditional children?
+
+## REV-OLTENMLTABCM-005 — OLTENMLTABCM-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Diamond నమూనాలో q సత్య సాక్షి పూర్వసూచికను 1.1 నుంచి 1.2గా సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0469; normal-modal-logic/tableaux/countermodels; translation/content/normal-modal-logic/tableaux/countermodels.tex:326; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the Diamond model assign q to 1.2 and cite the T q[1.2] witness on line 7?

@@ -1,0 +1,34 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0469",
+  "source_path": "content/normal-modal-logic/tableaux/countermodels.tex",
+  "source_sha256": "c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd",
+  "audit_id": "OLTENMLTABCM-20260927",
+  "audit_review_path": "evidence/OLP-0469-MODAL-TABLEAUX-COUNTERMODELS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "d8794de343d5305b54ad60ad41b55f85e4f3107dd4d6f5927b16ad362f298a68",
+  "audit_findings_path": "evidence/OLP-0469-MODAL-TABLEAUX-COUNTERMODELS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "f0b601fb30b5ecf44275bf04009a5c2242d2717b7c8398d350a8a37bfa95c577",
+  "previous_corrections": 445,
+  "treatments": {
+    "OLTENMLTABCM-001": {
+      "target_line": 39,
+      "body_treatment": "ప్రతినమూనా పరిచయంలో మూలం వదిలిన !A సూత్ర పూర్వచిహ్నాన్ని పునరుద్ధరించి పక్కనే ప్రకటించాం."
+    },
+    "OLTENMLTABCM-002": {
+      "target_line": 175,
+      "body_treatment": "Box టాబ్లోలో p, q సాక్షుల పంక్తి సంఖ్యలను వరుసగా 12, 11గా సరిచేసి ప్రకటించాం."
+    },
+    "OLTENMLTABCM-003": {
+      "target_line": 236,
+      "body_treatment": "Diamond టాబ్లో 3వ పంక్తి, ఉపయోగించిన పూర్వసూచిక నియమం రెండింటినీ F Diamondగా సరిచేసి ప్రకటించాం."
+    },
+    "OLTENMLTABCM-004": {
+      "target_line": 269,
+      "body_treatment": "మధ్య Diamond చెట్టు మూలంలో తారుమారైన షరతు సూత్రాన్ని మొదటి, చివరి చెట్లతో సరిపడే రూపంలో పునరుద్ధరించి ప్రకటించాం."
+    },
+    "OLTENMLTABCM-005": {
+      "target_line": 326,
+      "body_treatment": "Diamond నమూనాలో q సత్య సాక్షి పూర్వసూచికను 1.1 నుంచి 1.2గా సరిచేసి ప్రకటించాం."
+    }
+  }
+}

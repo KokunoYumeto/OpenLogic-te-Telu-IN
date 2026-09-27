@@ -1,0 +1,353 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: countermodels
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{cou}
+
+\olsection{\usetoken{P}{tableau} నుంచి ప్రతినమూనాలు}
+
+\begin{explain}
+  సంపూర్ణత సిద్ధాంతం నిరూపణ $\Entails !A$ అయితే
+  $\Proves !A$ అని మాత్రమే చూపదు; $\Entails/ !A$ అయితే
+  $!A$కు ప్రతినమూనా నిర్మించే పద్ధతినీ ఇస్తుంది.
+  $\Log{K}$ సందర్భంలో ఈ పద్ధతి ఒక \emph{నిర్ణయ విధానం}.
+  $\Entails/ !A$ అనుకుందాం. అప్పుడు
+  \olref[cpl]{prop:complete-tableau} నిరూపణ సంపూర్ణ
+  \tetoken{టాబ్లో}{!!{tableau}} నిర్మించే పద్ధతిని ఇస్తుంది.
+  ఆ పద్ధతి ఎప్పుడూ ముగుస్తుంది. $\Log{K}$ ప్రతిజ్ఞావాక్య
+  నియమాలు తక్కువ సంక్లిష్టత గల పూర్వసూచికలతో కూడిన
+  \tetoken{సూత్రాలనే}{!!{formula}s} చేర్చుతాయి; అంటే
+  శాఖపై ప్రతి $\sFmla{S}{!A}[\sigma]$కు ప్రతిజ్ఞావాక్య
+  నియమాన్ని ఒక్కసారే వర్తింపజేయాలి. కొత్త పూర్వసూచికలు
+  కింది నియమాల వల్ల మాత్రమే వస్తాయి:
+  \iftag{prvBox}{$\TRule{\False}{\Box}$}{}\iftag{notprvBox,notprvDiamond}{}{
+    and }\iftag{prvDiamond}{$\TRule{\True}{\Diamond}$}{}
+  \iftag{notprvBox,notprvDiamond}{నియమం}{నియమాలు}.
+  వాటినీ ఒక్కసారే వర్తింపజేయాలి; ప్రతి వర్తింపు ఒక్క కొత్త
+  పూర్వసూచికనే ఉత్పత్తి చేస్తుంది.
+  \iftag{prvBox}{$\TRule{\True}{\Box}$}{}\iftag{notprvBox,notprvDiamond}{}{
+    and }\iftag{prvDiamond}{$\TRule{\False}{\Diamond}$}{}
+  \iftag{notprvBox,notprvDiamond}{నియమాన్ని}{నియమాలను}
+  బహుశా పలుమార్లు వర్తింపజేయాలి; కానీ ప్రతి పూర్వసూచికకు
+  ఒక్కసారే. కొత్త పూర్వసూచికలు పరిమిత సంఖ్యలోనే ఉత్పత్తి
+  అవుతాయి. అందువల్ల పరిమిత దశల్లో నిర్మాణం సంవృత శాఖను
+  లేదా సంపూర్ణ శాఖను ఇస్తుంది.
+  \sourcecorrection{OLTENMLTABCM-001}{మొదటి ప్రతినమూనా
+    వాక్యంలో మూలం $\Entails/ A$ అని ఆశ్చర్యసూచికను
+    వదిలింది; ఈ పేరాలోని మిగిలిన వాక్యాల ప్రకారం
+    $\Entails/ !A$గా పునరుద్ధరించాం.}
+
+  వివృత సంపూర్ణ శాఖ గల టాబ్లో
+  నిర్మించాక, \olref[cpl]{thm:tableau-completeness} నిరూపణ
+  అసలు పూర్వసూచికలతో కూడిన \tetoken{సూత్రాల}{!!{formula}s}
+  సమితిని సంతృప్తిపరిచే స్పష్టమైన నమూనాను ఇస్తుంది.
+  కాబట్టి $\Gamma \Entails !A$ అయితే సంవృత
+  \tetoken{టాబ్లో}{!!{tableau}} ఉండి $\Gamma \Proves !A$
+  అవుతుందని మాత్రమే కాదు; సంవృత
+  \tetoken{టాబ్లో}{!!{tableau}} కోసం సరైన పద్ధతిలో
+  వెతికి చివరికి ``సంపూర్ణ''
+  \tetoken{టాబ్లో}{!!{tableau}} వస్తే,
+  $\Gamma \Entails/ !A$ అని తెలుసుకోవడంతో పాటు
+  ప్రతినమూనానూ నిర్మించగలం.
+\end{explain}
+
+\iftag{prvBox}{
+\begin{ex}
+  $\Proves/ \Box(p \lor q) \lif (\Box p \lor \Box
+  q)$ అని మనకు తెలుసు. టాబ్లో
+  నిర్మాణం ఇలా మొదలవుతుంది:
+  \begin{oltableau}
+    [\pFmla{\False}{\Box(p \lor q) \lif (\Box p \lor \Box q)}{1},
+      just = \TAss, checked
+      [\pFmla{\True}{\Box(p \lor q)}{1},
+        just = {\TRule{\False}{\lif}[1]},
+        [\pFmla{\False}{\Box p \lor \Box q}{1},
+          just = {\TRule{\False}{\lif}[1]}, checked
+          [\pFmla{\False}{\Box p}{1},
+            just = {\TRule{\False}{\lor}[3]}, checked
+            [\pFmla{\False}{\Box q}{1},
+              just = {\TRule{\False}{\lor}[3]}, checked
+              [\pFmla{\False}{p}{1.1},
+                just = {\TRule{\False}{\Box}[4]}, checked
+                [\pFmla{\False}{q}{1.2},
+                  just = {\TRule{\False}{\Box}[5]}, checked
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+  ఈ \tetoken{టాబ్లో}{!!{tableau}} ఇంకా పూర్తి కాలేదు.
+  తరువాత టిక్ గుర్తు లేని ఏకైక పంక్తిని, అంటే
+  $2$వ పంక్తిలోని పూర్వసూచిక గల
+  \tetoken{సూత్రాన్ని}{!!{formula}}
+  $\sFmla{\True}{\Box(p \lor q)}[1]$ పరిశీలిద్దాం.
+  శాఖపై ఉపయోగించిన ప్రతి పూర్వసూచికకు, అంటే
+  $1.1$, $1.2$ రెండింటికీ $\TRule{\True}{\Box}$
+  నియమాన్ని వర్తింపజేస్తాం:
+  \begin{oltableau}
+    [\pFmla{\False}{\Box(p \lor q) \lif (\Box p \lor \Box q)}{1},
+      just = \TAss, checked
+      [\pFmla{\True}{\Box(p \lor q)}{1},
+        just = {\TRule{\False}{\lif}[1]},
+        [\pFmla{\False}{\Box p \lor \Box q}{1},
+          just = {\TRule{\False}{\lif}[1]}, checked
+          [\pFmla{\False}{\Box p}{1},
+            just = {\TRule{\False}{\lor}[3]}, checked
+            [\pFmla{\False}{\Box q}{1},
+              just = {\TRule{\False}{\lor}[3]}, checked
+              [\pFmla{\False}{p}{1.1},
+                just = {\TRule{\False}{\Box}[4]}, checked
+                [\pFmla{\False}{q}{1.2},
+                  just = {\TRule{\False}{\Box}[5]}, checked
+                  [\pFmla{\True}{p \lor q}{1.1},
+                    just = {\TRule{\True}{\Box}[2]}
+                    [\pFmla{\True}{p \lor q}{1.2},
+                      just = {\TRule{\True}{\Box}[2]}
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+  ఇప్పుడు 2, 8, 9 పంక్తులకు టిక్ గుర్తులు లేవు.
+  అయితే కొత్త పూర్వసూచిక చేరలేదు; కాబట్టి 8, 9
+  పంక్తులకు $\TRule{\True}{\lor}$ నియమాన్ని,
+  శాఖ సంవృతమయ్యే వరకు, వచ్చే ప్రతి శాఖలో వర్తింపజేస్తాం:
+  \begin{oltableau}
+    [\pFmla{\False}{\Box(p \lor q) \lif (\Box p \lor \Box q)}{1},
+      just = \TAss, checked
+      [\pFmla{\True}{\Box(p \lor q)}{1},
+        just = {\TRule{\False}{\lif}[1]}, checked
+        [\pFmla{\False}{\Box p \lor \Box q}{1},
+          just = {\TRule{\False}{\lif}[1]}, checked
+          [\pFmla{\False}{\Box p}{1},
+            just = {\TRule{\False}{\lor}[3]}, checked
+            [\pFmla{\False}{\Box q}{1},
+              just = {\TRule{\False}{\lor}[3]}, checked
+              [\pFmla{\False}{p}{1.1},
+                just = {\TRule{\False}{\Box}[4]}, checked
+                [\pFmla{\False}{q}{1.2},
+                  just = {\TRule{\False}{\Box}[5]}, checked
+                  [\pFmla{\True}{p \lor q}{1.1},
+                    just = {\TRule{\True}{\Box}[2]}, checked
+                    [\pFmla{\True}{p \lor q}{1.2},
+                      just = {\TRule{\True}{\Box}[2]}, checked
+                      [\pFmla{\True}{p}{1.1},
+                        just = {\TRule{\True}{\lor}[8]}, checked, close
+                      ]
+                      [\pFmla{\True}{q}{1.1},
+                        just = {\TRule{\True}{\lor}[8]}, checked
+                        [\pFmla{\True}{p}{1.2},
+                          just = {\TRule{\True}{\lor}[9]}, checked]
+                        [\pFmla{\True}{q}{1.2},
+                          just = {\TRule{\True}{\lor}[9]}, checked, close]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+  ఒక్క వివృత శాఖ మిగులుతుంది; అది సంపూర్ణం. దాని నుంచి
+  లోకాలు $W = \{1, 1.1, 1.2\}$ (వివృత శాఖపై కనిపించే
+  పూర్వసూచికలే), ప్రాప్యత సంబంధం
+  $R = \{\tuple{1, 1.1}, \tuple{1, 1.2}\}$,
+  అర్థనిర్దేశం $V(p) = \{1.2\}$ (12వ పంక్తిలో
+  $\sFmla{\True}{p}[1.2]$ ఉంది కాబట్టి),
+  $V(q) = \{1.1\}$ (11వ పంక్తిలో
+  $\sFmla{\True}{q}[1.1]$ ఉంది కాబట్టి) గల
+  నమూనాను నిర్వచిద్దాం.
+  \sourcecorrection{OLTENMLTABCM-002}{మొదటి పూర్తి
+    టాబ్లోలో $\sFmla{\True}{p}[1.2]$ పంక్తి 12,
+    $\sFmla{\True}{q}[1.1]$ పంక్తి 11;
+    మూల గద్యంలో వరుసగా 11, 10 అని తప్పుగా ఉంది.}
+  నమూనాను \olref{fig:counter-Box}లో చూపాం;
+  అది $\Box(p \lor q) \lif (\Box p \lor \Box q)$కు
+  ప్రతినమూనా అని తనిఖీ చేయవచ్చు.
+  \begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={[align=right]right:\mFalse{p}\\ \mFalse{q}}]{$1$};
+      \node[world] (w2) [label={[align=right]right:\mFalse{p}\\ \mTrue{q}},
+        above left=of w1]{$1.1$};
+      \node[world] (w3) [label={[align=right]right:\mTrue{p}\\ \mFalse{q}},
+        above right=of w1] {$1.2$};
+      \draw[->] (w1) to (w2);
+      \draw[->] (w1) to (w3);
+    \end{tikzpicture}
+  \end{center}
+  \caption{$\Box(p \lor q) \lif (\Box p \lor \Box q)$కు
+    ప్రతినమూనా.}
+  \ollabel{fig:counter-Box}
+\end{figure}
+\end{ex}
+}
+{
+\begin{ex}
+  $\Proves/ (\Diamond p \land \Diamond q) \lif \Diamond(p
+  \land q)$ అని మనకు తెలుసు. టాబ్లో
+  నిర్మాణం ఇలా మొదలవుతుంది:
+  \begin{oltableau}
+    [\pFmla{\False}{(\Diamond p \land \Diamond q) \lif \Diamond(p \land q)}{1},
+      just = \TAss, checked
+      [\pFmla{\True}{\Diamond p \land \Diamond q}{1},
+        just = {\TRule{\False}{\lif}[1]}, checked
+        [\pFmla{\False}{\Diamond(p \land q)}{1},
+          just = {\TRule{\False}{\lif}[1]}
+          [\pFmla{\True}{\Diamond p}{1},
+            just = {\TRule{\True}{\land}[2]}, checked
+            [\pFmla{\True}{\Diamond q}{1},
+              just = {\TRule{\True}{\land}[2]}, checked
+              [\pFmla{\True}{p}{1.1},
+                just = {\TRule{\True}{\Diamond}[4]}, checked
+                [\pFmla{\True}{q}{1.2},
+                  just = {\TRule{\True}{\Diamond}[5]}, checked
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+  ఈ \tetoken{టాబ్లో}{!!{tableau}} ఇంకా పూర్తి కాలేదు.
+  తరువాత టిక్ గుర్తు లేని ఏకైక పంక్తిని, అంటే
+  $3$వ పంక్తిలోని పూర్వసూచిక గల
+  \tetoken{సూత్రాన్ని}{!!{formula}}
+  $\sFmla{\False}{\Diamond(p \land q)}[1]$
+  పరిశీలిద్దాం. శాఖపై ఉపయోగించిన ప్రతి పూర్వసూచికకు,
+  అంటే $1.1$, $1.2$ రెండింటికీ
+  $\TRule{\False}{\Diamond}$ నియమాన్ని వర్తింపజేస్తాం:
+  \sourcecorrection{OLTENMLTABCM-003}{3వ పంక్తి మూల
+    చెట్టులో $\False\Diamond$ అయినా మూల వివరణ
+    $\True\Diamond$ అని, దాని నియమాన్నే పేర్కొంది;
+    $\False\Diamond$గా సరిచేశాం.}
+  \begin{oltableau}
+    [\pFmla{\False}{(\Diamond p \land \Diamond q) \lif \Diamond(p \land q)}{1},
+      just = \TAss, checked
+      [\pFmla{\True}{\Diamond p \land \Diamond q}{1},
+        just = {\TRule{\False}{\lif}[1]}, checked
+        [\pFmla{\False}{\Diamond (p \land q)}{1},
+          just = {\TRule{\False}{\lif}[1]}
+          [\pFmla{\True}{\Diamond p}{1},
+            just = {\TRule{\True}{\land}[2]}, checked
+            [\pFmla{\True}{\Diamond q}{1},
+              just = {\TRule{\True}{\land}[2]}, checked
+              [\pFmla{\True}{p}{1.1},
+                just = {\TRule{\True}{\Diamond}[4]}, checked
+                [\pFmla{\True}{q}{1.2},
+                  just = {\TRule{\True}{\Diamond}[5]}, checked
+                  [\pFmla{\False}{p \land q}{1.1},
+                    just = {\TRule{\False}{\Diamond}[3]}
+                    [\pFmla{\False}{p \land q}{1.2},
+                      just = {\TRule{\False}{\Diamond}[3]}
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+  \sourcecorrection{OLTENMLTABCM-004}{రెండో వజ్ర
+    టాబ్లోలో మొదటి పంక్తి మూలంలోని ముందు/వెనుక భాగాలను
+    తారుమారు చేసింది; మిగిలిన రెండు చెట్లు, వాటి
+    $\False\lif$ విస్తరణలకు సరిపడే అసలు సూత్రాన్ని
+    పునరుద్ధరించాం.}
+  ఇప్పుడు 3, 8, 9 పంక్తులకు టిక్ గుర్తులు లేవు.
+  కొత్త పూర్వసూచిక చేరలేదు కాబట్టి 8, 9 పంక్తులకు
+  $\TRule{\False}{\land}$ నియమాన్ని, శాఖ సంవృతమయ్యే
+  వరకు, వచ్చే ప్రతి శాఖలో వర్తింపజేస్తాం:
+  \begin{oltableau}
+    [\pFmla{\False}{(\Diamond p \land \Diamond q) \lif \Diamond(p \land q)}{1},
+      just = \TAss, checked
+      [\pFmla{\True}{\Diamond p \land \Diamond q}{1},
+        just = {\TRule{\False}{\lif}[1]}, checked
+        [\pFmla{\False}{\Diamond(p \land q)}{1},
+          just = {\TRule{\False}{\lif}[1]}
+          [\pFmla{\True}{\Diamond p}{1},
+            just = {\TRule{\True}{\land}[2]}, checked
+            [\pFmla{\True}{\Diamond q}{1},
+              just = {\TRule{\True}{\land}[2]}, checked
+              [\pFmla{\True}{p}{1.1},
+                just = {\TRule{\True}{\Diamond}[4]}, checked
+                [\pFmla{\True}{q}{1.2},
+                  just = {\TRule{\True}{\Diamond}[5]}, checked
+                  [\pFmla{\False}{p \land q}{1.1},
+                    just = {\TRule{\False}{\Diamond}[3]}, checked
+                    [\pFmla{\False}{p \land q}{1.2},
+                      just = {\TRule{\False}{\Diamond}[3]}, checked
+                      [\pFmla{\False}{p}{1.1},
+                        just = {\TRule{\False}{\land}[8]}, checked, close
+                      ]
+                      [\pFmla{\False}{q}{1.1},
+                        just = {\TRule{\False}{\land}[8]}, checked
+                        [\pFmla{\False}{p}{1.2},
+                          just = {\TRule{\False}{\land}[9]}, checked]
+                        [\pFmla{\False}{q}{1.2},
+                          just = {\TRule{\False}{\land}[9]}, checked, close]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+  ఒక్క వివృత శాఖ మిగులుతుంది; అది సంపూర్ణం. దాని నుంచి
+  లోకాలు $W = \{1, 1.1, 1.2\}$ (వివృత శాఖపై కనిపించే
+  పూర్వసూచికలే), ప్రాప్యత సంబంధం
+  $R = \{\tuple{1, 1.1}, \tuple{1, 1.2}\}$,
+  అర్థనిర్దేశం $V(p) = \{1.1\}$ (6వ పంక్తిలో
+  $\sFmla{\True}{p}[1.1]$ ఉంది కాబట్టి),
+  $V(q) = \{1.2\}$ (7వ పంక్తిలో
+  $\sFmla{\True}{q}[1.2]$ ఉంది కాబట్టి) గల
+  నమూనాను నిర్వచిద్దాం.
+  \sourcecorrection{OLTENMLTABCM-005}{7వ పంక్తిలోని
+    $\sFmla{\True}{q}$కు మూల వివరణలో $1.1$ అని
+    ఉన్నా, చెట్టులోనూ నమూనా చిత్రంలోనూ అది $1.2$;
+    ఆ పూర్వసూచికను సరిచేశాం.}
+  నమూనాను \olref{fig:counter-Diamond}లో చూపాం;
+  అది $(\Diamond p \land \Diamond q) \lif \Diamond (p \land q)$కు
+  ప్రతినమూనా అని తనిఖీ చేయవచ్చు.
+  \begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={[align=right]right:\mFalse{p}\\ \mFalse{q}}]{$1$};
+      \node[world] (w2) [label={[align=right]right:\mTrue{p}\\ \mFalse{q}},
+        above left=of w1]{$1.1$};
+      \node[world] (w3) [label={[align=right]right:\mFalse{p}\\ \mTrue{q}},
+        above right=of w1] {$1.2$};
+      \draw[->] (w1) to (w2);
+      \draw[->] (w1) to (w3);
+    \end{tikzpicture}
+  \end{center}
+  \caption{$(\Diamond p \land \Diamond q) \lif
+    \Diamond (p \land q)$కు ప్రతినమూనా.}
+  \ollabel{fig:counter-Diamond}
+\end{figure}
+\end{ex}
+}
+
+\end{document}
+

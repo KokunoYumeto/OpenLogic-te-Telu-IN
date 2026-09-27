@@ -1,0 +1,49 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLTABCM-20260927",
+  "unit_id": "OLP-0469",
+  "source_path": "content/normal-modal-logic/tableaux/countermodels.tex",
+  "source_sha256": "c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd",
+  "findings": [
+    {
+      "finding_id": "OLTENMLTABCM-001",
+      "source_locator": "countermodels.tex line 16",
+      "classification": "missing_formula_bang_in_nonentailment",
+      "source_issue": "The first countermodel sentence has Entails/ A while the rest of the passage concerns non-entailment of !A.",
+      "minimal_treatment": "Restore the ! formula prefix and disclose.",
+      "expected_core_math_delta": {"source_only": ["$\\Entails/A$"], "target_only": ["$\\Entails/!A$"]}
+    },
+    {
+      "finding_id": "OLTENMLTABCM-002",
+      "source_locator": "countermodels.tex lines 149-155",
+      "classification": "box_tableau_model_prose_line_numbers_off_by_one",
+      "source_issue": "The cited true-p and true-q signed formulas occur on tableau lines 12 and 11 rather than 11 and 10.",
+      "minimal_treatment": "Correct only the prose line references and disclose.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTENMLTABCM-003",
+      "source_locator": "countermodels.tex lines 203-207",
+      "classification": "diamond_used_prefix_rule_wrong_sign",
+      "source_issue": "The prose names T Diamond for a tableau line that is F Diamond, and names the wrong rule for used prefixes.",
+      "minimal_treatment": "Use F Diamond in both the line and rule reference and disclose.",
+      "expected_core_math_delta": {"source_only": ["$\\TRule{\\True}{\\Diamond}$", "$\\sFmla{\\True}{\\Diamond(p\\landq)}[1]$"], "target_only": ["$\\TRule{\\False}{\\Diamond}$", "$\\sFmla{\\False}{\\Diamond(p\\landq)}[1]$"]}
+    },
+    {
+      "finding_id": "OLTENMLTABCM-004",
+      "source_locator": "countermodels.tex line 209",
+      "classification": "middle_diamond_tableau_reverses_tested_implication",
+      "source_issue": "The middle tree's root is Diamond(p and q) implies (Diamond p and Diamond q), inconsistent with its own F-conditional children and the first and third trees.",
+      "minimal_treatment": "Restore the original tested implication in the root node and disclose.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTENMLTABCM-005",
+      "source_locator": "countermodels.tex lines 279-287",
+      "classification": "diamond_model_q_witness_wrong_prefix",
+      "source_issue": "The prose assigns V(q) to 1.2 but says its true-q witness is at 1.1; line 7 and the drawing use 1.2.",
+      "minimal_treatment": "Correct the cited witness prefix to 1.2 and disclose.",
+      "expected_core_math_delta": {"source_only": ["$\\sFmla{\\True}{q}[1.1]$"], "target_only": ["$\\sFmla{\\True}{q}[1.2]$"]}
+    }
+  ]
+}
