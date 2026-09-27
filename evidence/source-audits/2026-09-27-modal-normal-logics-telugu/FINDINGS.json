@@ -1,0 +1,33 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTENMLAXSNOR-20260927",
+  "created_utc": "2026-09-27T00:30:28Z",
+  "status": "confirmed_modal_logic_intersection_scope_mismatch",
+  "scope": {
+    "chapter": "Normal Modal Logic — Axioms and Systems",
+    "unit_ids": ["OLP-0429"],
+    "finding_count": 1
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTENMLAXSNOR-001",
+      "unit_id": "OLP-0429",
+      "classification": "smallest_modal_logic_proof_intersects_only_normal_logics",
+      "source": {
+        "path": "content/normal-modal-logic/axioms-systems/normal-logics.tex",
+        "bytes": 4374,
+        "sha256": "6bcccf354cf8966f674c16ad3c6196a62ebcf8ca9545418d60ef08adf89e3819",
+        "locator": "normal-logics.tex lines 101-118"
+      },
+      "finding": "మూల ప్రతిపాదన ఇచ్చిన సూత్రాల నిదర్శనాలను కలిగి ఉండే అతి చిన్న మోడల్ తర్కం ఉనికిని చెబుతుంది; నిరూపణ మాత్రం నార్మల్ మోడల్ తర్కాలన్నిటి ప్రతిచ్ఛేదాన్ని తీసుకుంటుంది. అది అతి చిన్న నార్మల్ మోడల్ తర్కాన్ని మాత్రమే నిరూపిస్తుంది.",
+      "controlling_evidence": "ముందరి రెండు నిర్వచనాలు మోడల్ తర్కం, నార్మల్ మోడల్ తర్కాన్ని వేర్వేరు షరతులతో నిర్వచిస్తున్నాయి. అన్ని మోడల్ తర్కాల వర్గం శూన్యం కాదు (అన్ని సూత్రాల సమితి దానిలో ఉంది), ప్రతిచ్ఛేదం మూడు మోడల్-తర్క సంవృత ధర్మాలను నిలుపుతుంది. నార్మల్ వర్గానికి అదే వాదన వర్తించి తరువాతి మోడల్-వ్యవస్థ నిర్వచనాన్ని సమర్థిస్తుంది; రెండు కనిష్ఠత వాదనలు సమానమైనవి కావు.",
+      "required_translation_handling": "ప్రతిపాదనను యథాతథ సాధారణ మోడల్ తర్కం గురించే ఉంచి, తెలుగు నిరూపణలో అన్ని మోడల్ తర్కాల ప్రతిచ్ఛేదాన్ని తీసుకోవాలి. తరువాతి నార్మల్ సందర్భాన్ని ఒక వాక్యంలో వేరుగా చూపి, మార్పును అదే నిరూపణలో ప్రకటిత గమనికతో తెలియజేయాలి; స్థిర ఆంగ్ల మూలాన్ని మార్చకూడదు."
+    }
+  ]
+}

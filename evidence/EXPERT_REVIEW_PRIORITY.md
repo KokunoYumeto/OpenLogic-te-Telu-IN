@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 428 of 722 draft units**. This view selects 446 of 512 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 429 of 722 draft units**. This view selects 447 of 514 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4463,3 +4463,13 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0426; normal-modal-logic/frame-definability/second-order-definability; translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:34; printed/PDF page pending
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLFRDST-001 is mathematically precise and idiomatic.
+
+## REV-OLTENMLAXSNOR-001 — OLTENMLAXSNOR-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రతిపాదన అతి చిన్న మోడల్ తర్కం గురించే ఉంది; నిరూపణలో అన్ని మోడల్ తర్కాల ప్రతిచ్ఛేదాన్ని తీసుకుని, తరువాతి నిర్వచనానికి నార్మల్ వర్గం వాదనను వేరుగా పేర్కొని ప్రకటిత గమనిక ఉంచాం.
+
+- Occurrences: OLP-0429; normal-modal-logic/axioms-systems/normal-logics; translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:126; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLAXSNOR-001 is mathematically precise and idiomatic.

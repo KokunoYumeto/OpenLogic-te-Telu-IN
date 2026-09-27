@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 428 of 722 draft units**. This log contains 119 terminology/sense decisions and 393 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 429 of 722 draft units**. This log contains 120 terminology/sense decisions and 394 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2863,6 +2863,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: వ్యుత్పత్తి, నిగమనం, అనుమానం సాధారణ పదజాలానికి స్థానిక ఆధారం ఉంది. అవశ్యకీకరణ, నిర్దుష్టత/సంపూర్ణత మోడల్ అధిసిద్ధాంత పేర్లు, స్వీకృతాధారిత మోడల్ వ్యవస్థ పదబంధం తాత్కాలిక సంపాదకీయ ఎంపికలు; నియమాల గణిత అర్థం ప్రదర్శిత పథకాల ద్వారా నిర్ణీతం.
 
 - Please double-check: Please double-check whether “హిల్బర్ట్-రకం / స్వీకృతాధారిత వ్యుత్పత్తి / మోడస్ పోనెన్స్ / అవశ్యకీకరణ / వ్యుత్పాద్యత / నిర్దుష్టత / సంపూర్ణత (నార్మల్ మోడల్ తర్కం)” is idiomatic and technically standard for “Hilbert-type / axiomatic derivation / modus ponens / necessitation / derivability / soundness / completeness (normal modal logic)” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T120 — modal logic / normal modal logic / modal system / substitution closure / necessitation closure / RK rule / smallest modal logic
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: మోడల్ తర్కం / నార్మల్ మోడల్ తర్కం / మోడల్ వ్యవస్థ / ప్రతిస్థాపన కింద సంవృతం / అవశ్యకీకరణ కింద సంవృతం / RK నియమం / అతి చిన్న మోడల్ తర్కం
+
+- Exact implementation: OLP-0429; normal-modal-logic/axioms-systems/normal-logics; content/normal-modal-logic/axioms-systems/normal-logics.tex:11 ↔ translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:11 (OLP-0429-B005); printed/PDF page pending; OLP-0429; normal-modal-logic/axioms-systems/normal-logics; content/normal-modal-logic/axioms-systems/normal-logics.tex:23-35 ↔ translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:25-38 (OLP-0429-B007); printed/PDF page pending; OLP-0429; normal-modal-logic/axioms-systems/normal-logics; content/normal-modal-logic/axioms-systems/normal-logics.tex:23-35 ↔ translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:25-38 (OLP-0429-B007); printed/PDF page pending; OLP-0429; normal-modal-logic/axioms-systems/normal-logics; content/normal-modal-logic/axioms-systems/normal-logics.tex:37-44 ↔ translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:40-50 (OLP-0429-B008); printed/PDF page pending; OLP-0429; normal-modal-logic/axioms-systems/normal-logics; content/normal-modal-logic/axioms-systems/normal-logics.tex:46-55 ↔ translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:52-62 (OLP-0429-B009); printed/PDF page pending; OLP-0429; normal-modal-logic/axioms-systems/normal-logics; content/normal-modal-logic/axioms-systems/normal-logics.tex:62-70 ↔ translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:69-77 (OLP-0429-B011); printed/PDF page pending; OLP-0429; normal-modal-logic/axioms-systems/normal-logics; content/normal-modal-logic/axioms-systems/normal-logics.tex:101-105 ↔ translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:110-115 (OLP-0429-B017); printed/PDF page pending; OLP-0429; normal-modal-logic/axioms-systems/normal-logics; content/normal-modal-logic/axioms-systems/normal-logics.tex:107-113 ↔ translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:117-132 (OLP-0429-B018); printed/PDF page pending; OLP-0429; normal-modal-logic/axioms-systems/normal-logics; content/normal-modal-logic/axioms-systems/normal-logics.tex:115-119 ↔ translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:134-139 (OLP-0429-B019); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P008లో సమితి, ఛేదన; TE-P010లో సంబంధం; TE-P018లో ప్రతిజ్ఞావాక్యాత్మక తర్కం; TE-P019లో సత్యతావిలువ; TE-P024లో నియమ-ఆధారిత వ్యుత్పత్తి; TE-P032లో ఆగమనం, నిగమనం అనే వాడుకలను స్థానిక చిత్రాల్లో చూశాం. అవి నార్మల్ మోడల్ తర్కం, మోడల్ వ్యవస్థ, K/Dual లేదా RKకు ప్రత్యక్ష పేర్లు ఇవ్వవు. OLP-0429లోని రెండు నిర్వచనాలు, K/Dual గార్డులు, RK ఆగమన నిరూపణ, OLTENMLAXSNOR-001లో ప్రకటించిన ప్రతిచ్ఛేద-వర్గ భేదం ప్రత్యేక అర్థాలను నియంత్రిస్తాయి; పూర్వ TE-T111/119తో రూపం సరిపోల్చాం. K, Dual, RK, MP, Nec, Box, Diamond, Sigma మరియు సూత్ర మెటాచరాలు రక్షిత గణిత సంకేతాలు; మోడల్ అనే ముందే స్థిరమైన సందర్భీకృత పదం తప్ప ప్రకటించని ఆంగ్ల సాంకేతిక పదం లేదు.
+
+- Alternatives: మోడల్ తర్కం, నార్మల్ మోడల్ తర్కం వేరు నిర్వచనాలుగా ఉంచి, K/Dual మరియు అవశ్యకీకరణను రెండో దానికి మాత్రమే జోడించడం; ప్రతిపాదనకు అన్ని మోడల్ తర్కాల ప్రతిచ్ఛేదం వాడడం (ఎంపిక); అన్ని మోడల్ తర్కాల స్థానంలో నార్మల్ తర్కాల ప్రతిచ్ఛేదాన్ని తీసుకొని మొదటి ప్రతిపాదన కనిష్ఠత నిరూపితమని చెప్పడం (తిరస్కరణ); RK ఆగమన దశలో K నిదర్శనాన్ని లేదా మోడస్ పోనెన్స్‌ను మౌనంగా తొలగించడం (తిరస్కరణ); స్థానిక సమితి పేజీ మోడల్ తర్కాల ప్రత్యేక కనిష్ఠత సిద్ధాంతాన్నే స్థాపిస్తుందని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: సమితి/ఛేదన, ప్రతిజ్ఞావాక్య తర్కం, వ్యుత్పత్తి, ఆగమనం భాగాలకు స్థానిక ఆధారం ఉంది. నార్మల్ మోడల్ వ్యవస్థ మరియు సంవృత-నియమ సమాసాలు మూల నిర్వచనానికి కట్టిన తాత్కాలిక సంపాదకీయ ఎంపికలు; మూల నిరూపణలోని సాధారణ/నార్మల్ వర్గ తేడా ప్రకటిత సవరణతో పరిష్కరించబడింది.
+
+- Please double-check: Please double-check whether “మోడల్ తర్కం / నార్మల్ మోడల్ తర్కం / మోడల్ వ్యవస్థ / ప్రతిస్థాపన కింద సంవృతం / అవశ్యకీకరణ కింద సంవృతం / RK నియమం / అతి చిన్న మోడల్ తర్కం” is idiomatic and technically standard for “modal logic / normal modal logic / modal system / substitution closure / necessitation closure / RK rule / smallest modal logic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -12295,3 +12319,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLFRDST-001 is mathematically precise and idiomatic.
+
+## REV-OLTENMLAXSNOR-001 — OLTENMLAXSNOR-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: ప్రతిపాదన అతి చిన్న మోడల్ తర్కం గురించే ఉంది; నిరూపణలో అన్ని మోడల్ తర్కాల ప్రతిచ్ఛేదాన్ని తీసుకుని, తరువాతి నిర్వచనానికి నార్మల్ వర్గం వాదనను వేరుగా పేర్కొని ప్రకటిత గమనిక ఉంచాం.
+
+- Exact implementation: OLP-0429; normal-modal-logic/axioms-systems/normal-logics; normal-logics.tex lines 101-118 ↔ translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:126 (OLP-0429-B018); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLAXSNOR-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: ప్రతిపాదన అతి చిన్న మోడల్ తర్కం గురించే ఉంది; నిరూపణలో అన్ని మోడల్ తర్కాల ప్రతిచ్ఛేదాన్ని తీసుకుని, తరువాతి నిర్వచనానికి నార్మల్ వర్గం వాదనను వేరుగా పేర్కొని ప్రకటిత గమనిక ఉంచాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLAXSNOR-001 is mathematically precise and idiomatic.

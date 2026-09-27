@@ -651,6 +651,17 @@ locations['TE-T119']=[
  L('content/normal-modal-logic/axioms-systems/introduction.tex',70,78,80,91,'derivation','వ్యుత్పత్తి'),
  L('content/normal-modal-logic/axioms-systems/introduction.tex',85,88,97,102,'soundness','నిర్దుష్టత')
 ];
+locations['TE-T120']=[
+ L('content/normal-modal-logic/axioms-systems/normal-logics.tex',11,11,11,11,'Normal Modal Logics','నార్మల్ మోడల్ తర్కాలు'),
+ L('content/normal-modal-logic/axioms-systems/normal-logics.tex',24,27,26,30,'modal logic','మోడల్ తర్కం'),
+ L('content/normal-modal-logic/axioms-systems/normal-logics.tex',27,31,30,34,'substitution','ప్రతిస్థాపన'),
+ L('content/normal-modal-logic/axioms-systems/normal-logics.tex',37,43,39,51,'normal','నార్మల్'),
+ L('content/normal-modal-logic/axioms-systems/normal-logics.tex',47,54,53,61,'necessitation','అవశ్యకీకరణ'),
+ L('content/normal-modal-logic/axioms-systems/normal-logics.tex',63,68,70,76,'rule \\RK','\\RK'),
+ L('content/normal-modal-logic/axioms-systems/normal-logics.tex',101,105,110,114,'smallest modal logic','అతి చిన్న మోడల్'),
+ L('content/normal-modal-logic/axioms-systems/normal-logics.tex',108,113,117,131,'intersection of all normal','అన్ని మోడల్ తర్కాల'),
+ L('content/normal-modal-logic/axioms-systems/normal-logics.tex',116,118,135,138,'modal system','మోడల్ వ్యవస్థ')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -756,6 +767,7 @@ alternatives['TE-T116']=['మొదటిస్థాయి, ద్విస్�
 alternatives['TE-T117']=['TE-T017లోని తుల్యతా సంబంధం/వర్గాన్ని కొనసాగించి, పరస్పర వియుక్తతను TE-P009కు, S5 సమాన తర్కాన్ని మూల వర్గ-పరిమిత నమూనా నిరూపణకు కట్టడం (ఎంపిక)','తుల్యతా సంబంధాన్ని సార్వత్రిక సంబంధంతో సమాన ధర్మంగా ప్రకటించడం (తిరస్కరణ)','వర్గానికి పరిమితం చేసిన నమూనాలో బయట లోకాలపై మోడల్ సంచాలకాలను ఇంకా మూల్యాంకనం చేయడం (తిరస్కరణ)','స్థానిక సమితి/సంబంధ పేజీలే S5 పూర్తి అనురూపతను నేరుగా స్థాపిస్తాయని ప్రకటించడం (తిరస్కరణ)'];
 alternatives['TE-T118']=['స్థానిక మొదటిస్థాయి/విధేయ/సమితి పదజాలాన్ని కొనసాగించి, ప్రామాణిక అనువాదం మరియు ఏకస్థానిక ద్వితీయ-స్థాయి చట్ర ఫలితాన్ని OLP-0426 ఆగమన శాఖలు, రెండు iff వాదాలకు కట్టడం (ఎంపిక)','ST_xను కేవలం సంకేతాలను మరో అక్షరంతో మార్చడంగా వర్ణించి బాక్స్/డైమండ్ పరిమాణీకరణ భేదం తొలగించడం (తిరస్కరణ)','చట్రంలో ఒకే నిర్దేశానికి సత్యాన్ని అన్ని ఉపసమితులపై చట్ర చెల్లుబాటుతో సమానపరచడం (తిరస్కరణ)','స్థానిక విధేయ తర్క పేజీలే ప్రామాణిక మోడల్ అనువాదాన్ని లేదా నిర్ణయనీయత-లేమిని నేరుగా నిరూపిస్తాయని ప్రకటించడం (తిరస్కరణ)'];
 alternatives['TE-T119']=['పూర్వ స్వీకృతాధారిత వ్యుత్పత్తి/మోడస్ పోనెన్స్ ఎంపికలను కొనసాగించి, అవశ్యకీకరణను A నుంచి □A అనే మూల నియమంతో నిర్వచించడం (ఎంపిక)','అవశ్యకీకరణను A నుంచి A సాధ్యమే అనే నియమంగా చదవడం (తిరస్కరణ)','వ్యుత్పత్తిలో నాలుగు శాఖల్లో ప్రతిస్థాపన నిదర్శనాలను సాధారణ స్వీకృతాలతో కలిపివేయడం (తిరస్కరణ)','స్థానిక నియమ-వ్యుత్పత్తి పేజీలే K/Dual నార్మల్ మోడల్ వ్యవస్థకు ప్రత్యక్ష ధ్రువీకరణ అని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T120']=['మోడల్ తర్కం, నార్మల్ మోడల్ తర్కం వేరు నిర్వచనాలుగా ఉంచి, K/Dual మరియు అవశ్యకీకరణను రెండో దానికి మాత్రమే జోడించడం; ప్రతిపాదనకు అన్ని మోడల్ తర్కాల ప్రతిచ్ఛేదం వాడడం (ఎంపిక)','అన్ని మోడల్ తర్కాల స్థానంలో నార్మల్ తర్కాల ప్రతిచ్ఛేదాన్ని తీసుకొని మొదటి ప్రతిపాదన కనిష్ఠత నిరూపితమని చెప్పడం (తిరస్కరణ)','RK ఆగమన దశలో K నిదర్శనాన్ని లేదా మోడస్ పోనెన్స్‌ను మౌనంగా తొలగించడం (తిరస్కరణ)','స్థానిక సమితి పేజీ మోడల్ తర్కాల ప్రత్యేక కనిష్ఠత సిద్ధాంతాన్నే స్థాపిస్తుందని చెప్పడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -771,7 +783,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T119 record the Batch 025--Batch 078 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T120 record the Batch 025--Batch 079 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);

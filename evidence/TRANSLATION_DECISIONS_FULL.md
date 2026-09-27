@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **428 of 722 source units drafted**. This readable view contains all 512 decisions and 1071 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **429 of 722 source units drafted**. This readable view contains all 514 decisions and 1081 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3576,6 +3576,40 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T119-OCC-005; OLP-0428; OLP-0428-B010; source upstream/content/normal-modal-logic/axioms-systems/introduction.tex:58-67 bytes 2450-2724 SHA-256 554f263088c8e6e98b5cd4e9bf341c5497f787d11f9d136b07fceb1671a36068; target translation/content/normal-modal-logic/axioms-systems/introduction.tex:68-78 bytes 6339-6884 SHA-256 7504cd367bf7bfeac4ed15910c1f004c46b2c8c5bf48d214403663caae787c32; reader page pending.
   - te-Telu-IN-TE-T119-OCC-006; OLP-0428; OLP-0428-B011; source upstream/content/normal-modal-logic/axioms-systems/introduction.tex:69-82 bytes 2725-3342 SHA-256 554f263088c8e6e98b5cd4e9bf341c5497f787d11f9d136b07fceb1671a36068; target translation/content/normal-modal-logic/axioms-systems/introduction.tex:80-96 bytes 6885-8347 SHA-256 7504cd367bf7bfeac4ed15910c1f004c46b2c8c5bf48d214403663caae787c32; reader page pending.
   - te-Telu-IN-TE-T119-OCC-007; OLP-0428; OLP-0428-B012; source upstream/content/normal-modal-logic/axioms-systems/introduction.tex:84-88 bytes 3343-3657 SHA-256 554f263088c8e6e98b5cd4e9bf341c5497f787d11f9d136b07fceb1671a36068; target translation/content/normal-modal-logic/axioms-systems/introduction.tex:98-103 bytes 8348-9218 SHA-256 7504cd367bf7bfeac4ed15910c1f004c46b2c8c5bf48d214403663caae787c32; reader page pending.
+
+## te-Telu-IN-TE-T120 — modal logic / normal modal logic / modal system / substitution closure / necessitation closure / RK rule / smallest modal logic
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: మోడల్ తర్కం / నార్మల్ మోడల్ తర్కం / మోడల్ వ్యవస్థ / ప్రతిస్థాపన కింద సంవృతం / అవశ్యకీకరణ కింద సంవృతం / RK నియమం / అతి చిన్న మోడల్ తర్కం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “modal logic / normal modal logic / modal system / substitution closure / necessitation closure / RK rule / smallest modal logic” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: సమితి/ఛేదన, ప్రతిజ్ఞావాక్య తర్కం, వ్యుత్పత్తి, ఆగమనం భాగాలకు స్థానిక ఆధారం ఉంది. నార్మల్ మోడల్ వ్యవస్థ మరియు సంవృత-నియమ సమాసాలు మూల నిర్వచనానికి కట్టిన తాత్కాలిక సంపాదకీయ ఎంపికలు; మూల నిరూపణలోని సాధారణ/నార్మల్ వర్గ తేడా ప్రకటిత సవరణతో పరిష్కరించబడింది.
+
+- Rationale: TE-P008లో సమితి, ఛేదన; TE-P010లో సంబంధం; TE-P018లో ప్రతిజ్ఞావాక్యాత్మక తర్కం; TE-P019లో సత్యతావిలువ; TE-P024లో నియమ-ఆధారిత వ్యుత్పత్తి; TE-P032లో ఆగమనం, నిగమనం అనే వాడుకలను స్థానిక చిత్రాల్లో చూశాం. అవి నార్మల్ మోడల్ తర్కం, మోడల్ వ్యవస్థ, K/Dual లేదా RKకు ప్రత్యక్ష పేర్లు ఇవ్వవు. OLP-0429లోని రెండు నిర్వచనాలు, K/Dual గార్డులు, RK ఆగమన నిరూపణ, OLTENMLAXSNOR-001లో ప్రకటించిన ప్రతిచ్ఛేద-వర్గ భేదం ప్రత్యేక అర్థాలను నియంత్రిస్తాయి; పూర్వ TE-T111/119తో రూపం సరిపోల్చాం. K, Dual, RK, MP, Nec, Box, Diamond, Sigma మరియు సూత్ర మెటాచరాలు రక్షిత గణిత సంకేతాలు; మోడల్ అనే ముందే స్థిరమైన సందర్భీకృత పదం తప్ప ప్రకటించని ఆంగ్ల సాంకేతిక పదం లేదు.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: మోడల్ తర్కం, నార్మల్ మోడల్ తర్కం వేరు నిర్వచనాలుగా ఉంచి, K/Dual మరియు అవశ్యకీకరణను రెండో దానికి మాత్రమే జోడించడం; ప్రతిపాదనకు అన్ని మోడల్ తర్కాల ప్రతిచ్ఛేదం వాడడం [viable_alternative: ఎంపిక] | అన్ని మోడల్ తర్కాల స్థానంలో నార్మల్ తర్కాల ప్రతిచ్ఛేదాన్ని తీసుకొని మొదటి ప్రతిపాదన కనిష్ఠత నిరూపితమని చెప్పడం [viable_alternative: తిరస్కరణ] | RK ఆగమన దశలో K నిదర్శనాన్ని లేదా మోడస్ పోనెన్స్‌ను మౌనంగా తొలగించడం [viable_alternative: తిరస్కరణ] | స్థానిక సమితి పేజీ మోడల్ తర్కాల ప్రత్యేక కనిష్ఠత సిద్ధాంతాన్నే స్థాపిస్తుందని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “మోడల్ తర్కం / నార్మల్ మోడల్ తర్కం / మోడల్ వ్యవస్థ / ప్రతిస్థాపన కింద సంవృతం / అవశ్యకీకరణ కింద సంవృతం / RK నియమం / అతి చిన్న మోడల్ తర్కం” is idiomatic and technically standard for “modal logic / normal modal logic / modal system / substitution closure / necessitation closure / RK rule / smallest modal logic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T120-OCC-001; OLP-0429; OLP-0429-B005; source upstream/content/normal-modal-logic/axioms-systems/normal-logics.tex:11 bytes 186-218 SHA-256 6bcccf354cf8966f674c16ad3c6196a62ebcf8ca9545418d60ef08adf89e3819; target translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:11 bytes 186-258 SHA-256 b241057c03700213f0273006e6dd08f7006037a51c681dc0c92a208534634e53; reader page pending.
+  - te-Telu-IN-TE-T120-OCC-002; OLP-0429; OLP-0429-B007; source upstream/content/normal-modal-logic/axioms-systems/normal-logics.tex:23-35 bytes 760-1251 SHA-256 6bcccf354cf8966f674c16ad3c6196a62ebcf8ca9545418d60ef08adf89e3819; target translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:25-38 bytes 1656-2506 SHA-256 b241057c03700213f0273006e6dd08f7006037a51c681dc0c92a208534634e53; reader page pending.
+  - te-Telu-IN-TE-T120-OCC-003; OLP-0429; OLP-0429-B007; source upstream/content/normal-modal-logic/axioms-systems/normal-logics.tex:23-35 bytes 760-1251 SHA-256 6bcccf354cf8966f674c16ad3c6196a62ebcf8ca9545418d60ef08adf89e3819; target translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:25-38 bytes 1656-2506 SHA-256 b241057c03700213f0273006e6dd08f7006037a51c681dc0c92a208534634e53; reader page pending.
+  - te-Telu-IN-TE-T120-OCC-004; OLP-0429; OLP-0429-B008; source upstream/content/normal-modal-logic/axioms-systems/normal-logics.tex:37-44 bytes 1252-1776 SHA-256 6bcccf354cf8966f674c16ad3c6196a62ebcf8ca9545418d60ef08adf89e3819; target translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:40-50 bytes 2507-3807 SHA-256 b241057c03700213f0273006e6dd08f7006037a51c681dc0c92a208534634e53; reader page pending.
+  - te-Telu-IN-TE-T120-OCC-005; OLP-0429; OLP-0429-B009; source upstream/content/normal-modal-logic/axioms-systems/normal-logics.tex:46-55 bytes 1777-2133 SHA-256 6bcccf354cf8966f674c16ad3c6196a62ebcf8ca9545418d60ef08adf89e3819; target translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:52-62 bytes 3808-4347 SHA-256 b241057c03700213f0273006e6dd08f7006037a51c681dc0c92a208534634e53; reader page pending.
+  - te-Telu-IN-TE-T120-OCC-006; OLP-0429; OLP-0429-B011; source upstream/content/normal-modal-logic/axioms-systems/normal-logics.tex:62-70 bytes 2360-2681 SHA-256 6bcccf354cf8966f674c16ad3c6196a62ebcf8ca9545418d60ef08adf89e3819; target translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:69-77 bytes 4888-5308 SHA-256 b241057c03700213f0273006e6dd08f7006037a51c681dc0c92a208534634e53; reader page pending.
+  - te-Telu-IN-TE-T120-OCC-007; OLP-0429; OLP-0429-B017; source upstream/content/normal-modal-logic/axioms-systems/normal-logics.tex:101-105 bytes 3693-3863 SHA-256 6bcccf354cf8966f674c16ad3c6196a62ebcf8ca9545418d60ef08adf89e3819; target translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:110-115 bytes 7036-7392 SHA-256 b241057c03700213f0273006e6dd08f7006037a51c681dc0c92a208534634e53; reader page pending.
+  - te-Telu-IN-TE-T120-OCC-008; OLP-0429; OLP-0429-B018; source upstream/content/normal-modal-logic/axioms-systems/normal-logics.tex:107-113 bytes 3864-4139 SHA-256 6bcccf354cf8966f674c16ad3c6196a62ebcf8ca9545418d60ef08adf89e3819; target translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:117-132 bytes 7393-9199 SHA-256 b241057c03700213f0273006e6dd08f7006037a51c681dc0c92a208534634e53; reader page pending.
+  - te-Telu-IN-TE-T120-OCC-009; OLP-0429; OLP-0429-B019; source upstream/content/normal-modal-logic/axioms-systems/normal-logics.tex:115-119 bytes 4140-4358 SHA-256 6bcccf354cf8966f674c16ad3c6196a62ebcf8ca9545418d60ef08adf89e3819; target translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:134-139 bytes 9200-9650 SHA-256 b241057c03700213f0273006e6dd08f7006037a51c681dc0c92a208534634e53; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -13874,3 +13908,29 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLFRDST-001-OCC-001; OLP-0426; OLP-0426-B007; source upstream/content/normal-modal-logic/frame-definability/second-order-definability.tex:25-46 bytes 921-2015 SHA-256 1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490; target translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:34 bytes 2371-2441 SHA-256 8e7950312c9e4f97aa2827bc9922c035be2de8563bc61a117b7bcd4d2769110b; reader page pending.
+
+## te-Telu-IN-OLTENMLAXSNOR-001 — OLTENMLAXSNOR-001: smallest modal logic proof intersects only normal logics
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: ప్రతిపాదన అతి చిన్న మోడల్ తర్కం గురించే ఉంది; నిరూపణలో అన్ని మోడల్ తర్కాల ప్రతిచ్ఛేదాన్ని తీసుకుని, తరువాతి నిర్వచనానికి నార్మల్ వర్గం వాదనను వేరుగా పేర్కొని ప్రకటిత గమనిక ఉంచాం.
+
+- Intended sense: Repair the audited smallest modal logic proof intersects only normal logics at normal-logics.tex lines 101-118, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLAXSNOR-20260927:OLTENMLAXSNOR-001 [checked_supports], content/normal-modal-logic/axioms-systems/normal-logics.tex; normal-logics.tex lines 101-118; smallest_modal_logic_proof_intersects_only_normal_logics; ప్రతిపాదన అతి చిన్న మోడల్ తర్కం గురించే ఉంది; నిరూపణలో అన్ని మోడల్ తర్కాల ప్రతిచ్ఛేదాన్ని తీసుకుని, తరువాతి నిర్వచనానికి నార్మల్ వర్గం వాదనను వేరుగా పేర్కొని ప్రకటిత గమనిక ఉంచాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTENMLAXSNOR-001 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLAXSNOR-001-OCC-001; OLP-0429; OLP-0429-B018; source upstream/content/normal-modal-logic/axioms-systems/normal-logics.tex:107-113 bytes 3864-4139 SHA-256 6bcccf354cf8966f674c16ad3c6196a62ebcf8ca9545418d60ef08adf89e3819; target translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:126 bytes 8340-8433 SHA-256 b241057c03700213f0273006e6dd08f7006037a51c681dc0c92a208534634e53; reader page pending.
