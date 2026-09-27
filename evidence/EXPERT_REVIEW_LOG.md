@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 435 of 722 draft units**. This log contains 126 terminology/sense decisions and 398 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 436 of 722 draft units**. This log contains 127 terminology/sense decisions and 400 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3031,6 +3031,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక పేజీలు ఈ ప్రత్యేక మోడల్ స్వీకృత వ్యవస్థలకో, తుల్య స్వీకృతీకరణలకో ప్రత్యక్ష ఆధారం కావు. తుల్యతా సంబంధం అనే రూపం పూర్వ నిర్ణయానికి అనుగుణం; చివరి సమానత్వ నిరూపణ మూలంలో వ్యాయామంగానే మిగిలింది.
 
 - Please double-check: Please double-check whether “మోడల్ వ్యవస్థల్లో నిరూపణలు / నిరూపణీయత ఫలితాలు / తుల్య స్వీకృతీకరణలు / S4, S5 వ్యవస్థలు / తుల్యతా సంబంధాలు” is idiomatic and technically standard for “proofs in modal systems / provability results / equivalent axiomatizations / S4 and S5 systems / equivalence relations” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T127 — soundness of a modal derivation system / soundness theorem / induction on proof length / class-relative validity under necessitation
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: మోడల్ వ్యుత్పత్తి వ్యవస్థ నిర్దుష్టత / నిర్దుష్టతా సిద్ధాంతం / నిరూపణ పొడవుపై ఆగమనం / అవశ్యకీకరణలో వర్గ-సాపేక్ష చెల్లుబాటు
+
+- Exact implementation: OLP-0436; normal-modal-logic/axioms-systems/soundness; content/normal-modal-logic/axioms-systems/soundness.tex:11 ↔ translation/content/normal-modal-logic/axioms-systems/soundness.tex:11 (OLP-0436-B005); printed/PDF page pending; OLP-0436; normal-modal-logic/axioms-systems/soundness; content/normal-modal-logic/axioms-systems/soundness.tex:13-18 ↔ translation/content/normal-modal-logic/axioms-systems/soundness.tex:13-20 (OLP-0436-B006); printed/PDF page pending; OLP-0436; normal-modal-logic/axioms-systems/soundness; content/normal-modal-logic/axioms-systems/soundness.tex:20-26 ↔ translation/content/normal-modal-logic/axioms-systems/soundness.tex:22-28 (OLP-0436-B007); printed/PDF page pending; OLP-0436; normal-modal-logic/axioms-systems/soundness; content/normal-modal-logic/axioms-systems/soundness.tex:28-55 ↔ translation/content/normal-modal-logic/axioms-systems/soundness.tex:30-73 (OLP-0436-B008); printed/PDF page pending; OLP-0436; normal-modal-logic/axioms-systems/soundness; content/normal-modal-logic/axioms-systems/soundness.tex:28-55 ↔ translation/content/normal-modal-logic/axioms-systems/soundness.tex:30-73 (OLP-0436-B008); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, TE-P024లో నియమ-ఆధారిత వ్యుత్పత్తి, TE-P032లో నిగమనం/ఆగమనం అనే సాధారణ వాడుక ప్రత్యక్షంగా చూశాం. TE-T034, TE-T119--TE-T126 నిర్ణయాలను కొనసాగించాం. మోడల్ నిర్దుష్టత, నమూనాల వర్గాలు, MP/Nec శాఖల గణితం OLP-0436 స్థిర మూలం మరియు దాని సూచిత నిర్వచనాల నియంత్రణలో ఉన్నాయి. K, Dual, MP, Nec, A_i, B, C మరియు వర్గ సంకేతాలు రక్షిత గణిత గుర్తులు; మోడల్ అనేది స్థిర పూర్వ సాంకేతిక పదరూపం.
+
+- Alternatives: నిర్దుష్టత అనే పూర్వ పదాన్ని కొనసాగించి, ఆధార/ఆగమన శాఖలు, MP/Nec, నమూనాల వర్గ-ప్రతిచ్ఛేదం నిలపడం; మూలంలోని రెండు నిరూపణ-వివరణ ఖాళీలను పక్కనే ప్రకటించడం (ఎంపిక); ఆగమన దశలో K/ఐచ్ఛిక Dual సందర్భాలను మౌనంగా వదిలేయడం (తిరస్కరణ); ప్రపంచ-చెల్లుబాటు ఉదాహరణనే ఏ నమూనాల వర్గానికైనా ప్రత్యక్ష ప్రకటనగా చదవడం (తిరస్కరణ); స్థానిక పేజీలు మోడల్ నిర్దుష్టతా సిద్ధాంతాన్ని నేరుగా ధ్రువీకరిస్తాయని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక పేజీలు నిర్దిష్ట మోడల్ నిర్దుష్టతా సిద్ధాంతానికి ప్రత్యక్ష సాక్ష్యం కావు. మూల ఆగమన దశలో K/ఐచ్ఛిక Dual సందర్భాలు తప్పాయి; Nec ఉదాహరణ ప్రపంచ చెల్లుబాటుగా మాత్రమే ప్రకటించబడింది. రెండు స్థానిక స్పష్టీకరణలు ప్రకటిత సవరణలుగా వేరు నమోదు చేశాం.
+
+- Please double-check: Please double-check whether “మోడల్ వ్యుత్పత్తి వ్యవస్థ నిర్దుష్టత / నిర్దుష్టతా సిద్ధాంతం / నిరూపణ పొడవుపై ఆగమనం / అవశ్యకీకరణలో వర్గ-సాపేక్ష చెల్లుబాటు” is idiomatic and technically standard for “soundness of a modal derivation system / soundness theorem / induction on proof length / class-relative validity under necessitation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -12583,3 +12607,51 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Does the final PL step yield the proposition’s Diamond A or Diamond B order directly from line 6, with the single source atom delta and disclosure recorded?
+
+## REV-OLTENMLAXSSND-001 — OLTENMLAXSSND-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: ఆగమన దశలో పూర్వ ఆధార దశలోని అన్ని ప్రాథమిక నిదర్శనాలనూ చేర్చి, K/ఐచ్ఛిక Dual మినహాయింపు మూలంలో ఉందని పక్కనే ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Exact implementation: OLP-0436; normal-modal-logic/axioms-systems/soundness; soundness.tex lines 44-46 ↔ translation/content/normal-modal-logic/axioms-systems/soundness.tex:51 (OLP-0436-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLAXSSND-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: ఆగమన దశలో పూర్వ ఆధార దశలోని అన్ని ప్రాథమిక నిదర్శనాలనూ చేర్చి, K/ఐచ్ఛిక Dual మినహాయింపు మూలంలో ఉందని పక్కనే ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the induction step cover K and the guarded Dual as possible final-line axioms even in a proof sequence longer than one line, with the source omission disclosed?
+
+## REV-OLTENMLAXSSND-002 — OLTENMLAXSSND-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: నమూనాల నిర్దిష్ట వర్గంలో ప్రతి లోకానికి సత్యమైన C నుంచి Box C అనుసరిస్తుందని స్పష్టంగా చూపి, మూల ఉదాహరణ యొక్క ప్రపంచ-చెల్లుబాటు పరిమితిని ప్రకటించాం; స్థిర మూలం మారలేదు.
+
+- Exact implementation: OLP-0436; normal-modal-logic/axioms-systems/soundness; soundness.tex lines 51-53 ↔ translation/content/normal-modal-logic/axioms-systems/soundness.tex:68 (OLP-0436-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLAXSSND-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: నమూనాల నిర్దిష్ట వర్గంలో ప్రతి లోకానికి సత్యమైన C నుంచి Box C అనుసరిస్తుందని స్పష్టంగా చూపి, మూల ఉదాహరణ యొక్క ప్రపంచ-చెల్లుబాటు పరిమితిని ప్రకటించాం; స్థిర మూలం మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Is necessitation justified for validity at every world in each model of the stated intersection class, rather than inferred solely from the cited global-validity proposition?

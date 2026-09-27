@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 435 of 722 draft units**. This view selects 451 of 524 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 436 of 722 draft units**. This view selects 453 of 527 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4513,3 +4513,23 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0433; normal-modal-logic/axioms-systems/more-proofs-in-K; translation/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:86; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the final PL step yield the proposition’s Diamond A or Diamond B order directly from line 6, with the single source atom delta and disclosure recorded?
+
+## REV-OLTENMLAXSSND-001 — OLTENMLAXSSND-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఆగమన దశలో పూర్వ ఆధార దశలోని అన్ని ప్రాథమిక నిదర్శనాలనూ చేర్చి, K/ఐచ్ఛిక Dual మినహాయింపు మూలంలో ఉందని పక్కనే ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Occurrences: OLP-0436; normal-modal-logic/axioms-systems/soundness; translation/content/normal-modal-logic/axioms-systems/soundness.tex:51; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the induction step cover K and the guarded Dual as possible final-line axioms even in a proof sequence longer than one line, with the source omission disclosed?
+
+## REV-OLTENMLAXSSND-002 — OLTENMLAXSSND-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: నమూనాల నిర్దిష్ట వర్గంలో ప్రతి లోకానికి సత్యమైన C నుంచి Box C అనుసరిస్తుందని స్పష్టంగా చూపి, మూల ఉదాహరణ యొక్క ప్రపంచ-చెల్లుబాటు పరిమితిని ప్రకటించాం; స్థిర మూలం మారలేదు.
+
+- Occurrences: OLP-0436; normal-modal-logic/axioms-systems/soundness; translation/content/normal-modal-logic/axioms-systems/soundness.tex:68; printed/PDF page pending
+
+- Please double-check: Please double-check: Is necessitation justified for validity at every world in each model of the stated intersection class, rather than inferred solely from the cited global-validity proposition?

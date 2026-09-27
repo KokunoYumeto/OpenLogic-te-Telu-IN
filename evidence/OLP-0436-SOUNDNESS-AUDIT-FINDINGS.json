@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLAXSSND-20260927",
+  "unit_id": "OLP-0436",
+  "source_path": "content/normal-modal-logic/axioms-systems/soundness.tex",
+  "source_sha256": "ff44b1e495e2dca06b0c6e7fed1c5dab9971288a8c3bef061f00f7f025f61d17",
+  "findings": [
+    {
+      "finding_id": "OLTENMLAXSSND-001",
+      "source_locator": "soundness.tex lines 44-46",
+      "classification": "induction_step_omits_K_and_guarded_Dual_axiom_cases",
+      "source_issue": "A proof sequence longer than one line may still end in a K or guarded Dual axiom instance, but the induction step's as-before clause lists only tautological and added-axiom instances.",
+      "minimal_treatment": "Include all previously listed base cases in the induction step and disclose this widening; retain the frozen source and guarded mathematics.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTENMLAXSSND-002",
+      "source_locator": "soundness.tex lines 51-53",
+      "classification": "global_Nec_citation_used_for_class_relative_validity",
+      "source_issue": "The cited proposition states global validity preservation, whereas this theorem needs preservation in an arbitrary intersection class of models. The worldwise semantic proof extends to that class.",
+      "minimal_treatment": "State the class-relative worldwise justification explicitly, retain the citation as context, and disclose that the cited statement itself is global.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

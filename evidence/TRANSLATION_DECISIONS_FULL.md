@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **435 of 722 source units drafted**. This readable view contains all 524 decisions and 1127 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **436 of 722 source units drafted**. This readable view contains all 527 decisions and 1134 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3802,6 +3802,36 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T126-OCC-006; OLP-0435; OLP-0435-B010; source upstream/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:89-92 bytes 3512-3765 SHA-256 12956456e135cb022e30070608a0aa8c6b08a72c2cc9d2c63729816da57bf4f9; target translation/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:90-93 bytes 4160-4698 SHA-256 34db8042ab367a6aedce9a1042dfbd8a7600c146c439084ede91518bebe69931; reader page pending.
   - te-Telu-IN-TE-T126-OCC-007; OLP-0435; OLP-0435-B010; source upstream/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:89-92 bytes 3512-3765 SHA-256 12956456e135cb022e30070608a0aa8c6b08a72c2cc9d2c63729816da57bf4f9; target translation/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:90-93 bytes 4160-4698 SHA-256 34db8042ab367a6aedce9a1042dfbd8a7600c146c439084ede91518bebe69931; reader page pending.
   - te-Telu-IN-TE-T126-OCC-008; OLP-0435; OLP-0435-B013; source upstream/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:102-104 bytes 3901-3965 SHA-256 12956456e135cb022e30070608a0aa8c6b08a72c2cc9d2c63729816da57bf4f9; target translation/content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex:103-105 bytes 4850-4948 SHA-256 34db8042ab367a6aedce9a1042dfbd8a7600c146c439084ede91518bebe69931; reader page pending.
+
+## te-Telu-IN-TE-T127 — soundness of a modal derivation system / soundness theorem / induction on proof length / class-relative validity under necessitation
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: మోడల్ వ్యుత్పత్తి వ్యవస్థ నిర్దుష్టత / నిర్దుష్టతా సిద్ధాంతం / నిరూపణ పొడవుపై ఆగమనం / అవశ్యకీకరణలో వర్గ-సాపేక్ష చెల్లుబాటు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “soundness of a modal derivation system / soundness theorem / induction on proof length / class-relative validity under necessitation” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక పేజీలు నిర్దిష్ట మోడల్ నిర్దుష్టతా సిద్ధాంతానికి ప్రత్యక్ష సాక్ష్యం కావు. మూల ఆగమన దశలో K/ఐచ్ఛిక Dual సందర్భాలు తప్పాయి; Nec ఉదాహరణ ప్రపంచ చెల్లుబాటుగా మాత్రమే ప్రకటించబడింది. రెండు స్థానిక స్పష్టీకరణలు ప్రకటిత సవరణలుగా వేరు నమోదు చేశాం.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, TE-P024లో నియమ-ఆధారిత వ్యుత్పత్తి, TE-P032లో నిగమనం/ఆగమనం అనే సాధారణ వాడుక ప్రత్యక్షంగా చూశాం. TE-T034, TE-T119--TE-T126 నిర్ణయాలను కొనసాగించాం. మోడల్ నిర్దుష్టత, నమూనాల వర్గాలు, MP/Nec శాఖల గణితం OLP-0436 స్థిర మూలం మరియు దాని సూచిత నిర్వచనాల నియంత్రణలో ఉన్నాయి. K, Dual, MP, Nec, A_i, B, C మరియు వర్గ సంకేతాలు రక్షిత గణిత గుర్తులు; మోడల్ అనేది స్థిర పూర్వ సాంకేతిక పదరూపం.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: నిర్దుష్టత అనే పూర్వ పదాన్ని కొనసాగించి, ఆధార/ఆగమన శాఖలు, MP/Nec, నమూనాల వర్గ-ప్రతిచ్ఛేదం నిలపడం; మూలంలోని రెండు నిరూపణ-వివరణ ఖాళీలను పక్కనే ప్రకటించడం [viable_alternative: ఎంపిక] | ఆగమన దశలో K/ఐచ్ఛిక Dual సందర్భాలను మౌనంగా వదిలేయడం [viable_alternative: తిరస్కరణ] | ప్రపంచ-చెల్లుబాటు ఉదాహరణనే ఏ నమూనాల వర్గానికైనా ప్రత్యక్ష ప్రకటనగా చదవడం [viable_alternative: తిరస్కరణ] | స్థానిక పేజీలు మోడల్ నిర్దుష్టతా సిద్ధాంతాన్ని నేరుగా ధ్రువీకరిస్తాయని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “మోడల్ వ్యుత్పత్తి వ్యవస్థ నిర్దుష్టత / నిర్దుష్టతా సిద్ధాంతం / నిరూపణ పొడవుపై ఆగమనం / అవశ్యకీకరణలో వర్గ-సాపేక్ష చెల్లుబాటు” is idiomatic and technically standard for “soundness of a modal derivation system / soundness theorem / induction on proof length / class-relative validity under necessitation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T127-OCC-001; OLP-0436; OLP-0436-B005; source upstream/content/normal-modal-logic/axioms-systems/soundness.tex:11 bytes 182-204 SHA-256 ff44b1e495e2dca06b0c6e7fed1c5dab9971288a8c3bef061f00f7f025f61d17; target translation/content/normal-modal-logic/axioms-systems/soundness.tex:11 bytes 182-225 SHA-256 229b576a04a64ad978b1589020f7153db7fccca02cd11d20d5430efa627294b0; reader page pending.
+  - te-Telu-IN-TE-T127-OCC-002; OLP-0436; OLP-0436-B006; source upstream/content/normal-modal-logic/axioms-systems/soundness.tex:13-18 bytes 205-543 SHA-256 ff44b1e495e2dca06b0c6e7fed1c5dab9971288a8c3bef061f00f7f025f61d17; target translation/content/normal-modal-logic/axioms-systems/soundness.tex:13-20 bytes 226-1148 SHA-256 229b576a04a64ad978b1589020f7153db7fccca02cd11d20d5430efa627294b0; reader page pending.
+  - te-Telu-IN-TE-T127-OCC-003; OLP-0436; OLP-0436-B007; source upstream/content/normal-modal-logic/axioms-systems/soundness.tex:20-26 bytes 544-883 SHA-256 ff44b1e495e2dca06b0c6e7fed1c5dab9971288a8c3bef061f00f7f025f61d17; target translation/content/normal-modal-logic/axioms-systems/soundness.tex:22-28 bytes 1149-1724 SHA-256 229b576a04a64ad978b1589020f7153db7fccca02cd11d20d5430efa627294b0; reader page pending.
+  - te-Telu-IN-TE-T127-OCC-004; OLP-0436; OLP-0436-B008; source upstream/content/normal-modal-logic/axioms-systems/soundness.tex:28-55 bytes 884-2478 SHA-256 ff44b1e495e2dca06b0c6e7fed1c5dab9971288a8c3bef061f00f7f025f61d17; target translation/content/normal-modal-logic/axioms-systems/soundness.tex:30-73 bytes 1725-6485 SHA-256 229b576a04a64ad978b1589020f7153db7fccca02cd11d20d5430efa627294b0; reader page pending.
+  - te-Telu-IN-TE-T127-OCC-005; OLP-0436; OLP-0436-B008; source upstream/content/normal-modal-logic/axioms-systems/soundness.tex:28-55 bytes 884-2478 SHA-256 ff44b1e495e2dca06b0c6e7fed1c5dab9971288a8c3bef061f00f7f025f61d17; target translation/content/normal-modal-logic/axioms-systems/soundness.tex:30-73 bytes 1725-6485 SHA-256 229b576a04a64ad978b1589020f7153db7fccca02cd11d20d5430efa627294b0; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -14230,3 +14260,55 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLAXSMPR-001-OCC-001; OLP-0433; OLP-0433-B014; source upstream/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:72-87 bytes 2341-3166 SHA-256 75ea00c1a293c5648d59722ef93fb3a0c0b5b4a003e638f656fa4e1c11eddd4e; target translation/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:86 bytes 3403-3495 SHA-256 6b93be316aead5eeb366103dfac9d5c49b4e14eea86b14f876ec818b7b007b7c; reader page pending.
+
+## te-Telu-IN-OLTENMLAXSSND-001 — OLTENMLAXSSND-001: induction step omits K and guarded Dual axiom cases
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: ఆగమన దశలో పూర్వ ఆధార దశలోని అన్ని ప్రాథమిక నిదర్శనాలనూ చేర్చి, K/ఐచ్ఛిక Dual మినహాయింపు మూలంలో ఉందని పక్కనే ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు.
+
+- Intended sense: Repair the audited induction step omits K and guarded Dual axiom cases at soundness.tex lines 44-46, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLAXSSND-20260927:OLTENMLAXSSND-001 [checked_supports], content/normal-modal-logic/axioms-systems/soundness.tex; soundness.tex lines 44-46; induction_step_omits_K_and_guarded_Dual_axiom_cases; ఆగమన దశలో పూర్వ ఆధార దశలోని అన్ని ప్రాథమిక నిదర్శనాలనూ చేర్చి, K/ఐచ్ఛిక Dual మినహాయింపు మూలంలో ఉందని పక్కనే ప్రకటించాం; స్థిర ఆంగ్ల మూలం మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the induction step cover K and the guarded Dual as possible final-line axioms even in a proof sequence longer than one line, with the source omission disclosed?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLAXSSND-001-OCC-001; OLP-0436; OLP-0436-B008; source upstream/content/normal-modal-logic/axioms-systems/soundness.tex:28-55 bytes 884-2478 SHA-256 ff44b1e495e2dca06b0c6e7fed1c5dab9971288a8c3bef061f00f7f025f61d17; target translation/content/normal-modal-logic/axioms-systems/soundness.tex:51 bytes 3862-3961 SHA-256 229b576a04a64ad978b1589020f7153db7fccca02cd11d20d5430efa627294b0; reader page pending.
+
+## te-Telu-IN-OLTENMLAXSSND-002 — OLTENMLAXSSND-002: global Nec citation used for class relative validity
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: నమూనాల నిర్దిష్ట వర్గంలో ప్రతి లోకానికి సత్యమైన C నుంచి Box C అనుసరిస్తుందని స్పష్టంగా చూపి, మూల ఉదాహరణ యొక్క ప్రపంచ-చెల్లుబాటు పరిమితిని ప్రకటించాం; స్థిర మూలం మారలేదు.
+
+- Intended sense: Repair the audited global Nec citation used for class relative validity at soundness.tex lines 51-53, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLAXSSND-20260927:OLTENMLAXSSND-002 [checked_supports], content/normal-modal-logic/axioms-systems/soundness.tex; soundness.tex lines 51-53; global_Nec_citation_used_for_class_relative_validity; నమూనాల నిర్దిష్ట వర్గంలో ప్రతి లోకానికి సత్యమైన C నుంచి Box C అనుసరిస్తుందని స్పష్టంగా చూపి, మూల ఉదాహరణ యొక్క ప్రపంచ-చెల్లుబాటు పరిమితిని ప్రకటించాం; స్థిర మూలం మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Is necessitation justified for validity at every world in each model of the stated intersection class, rather than inferred solely from the cited global-validity proposition?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLAXSSND-002-OCC-001; OLP-0436; OLP-0436-B008; source upstream/content/normal-modal-logic/axioms-systems/soundness.tex:28-55 bytes 884-2478 SHA-256 ff44b1e495e2dca06b0c6e7fed1c5dab9971288a8c3bef061f00f7f025f61d17; target translation/content/normal-modal-logic/axioms-systems/soundness.tex:68 bytes 5896-5994 SHA-256 229b576a04a64ad978b1589020f7153db7fccca02cd11d20d5430efa627294b0; reader page pending.

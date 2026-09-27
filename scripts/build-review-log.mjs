@@ -716,6 +716,13 @@ locations['TE-T126']=[
  L('content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex',91,92,92,93,'equivalence relations','తుల్యతా సంబంధాలనే'),
  L('content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex',103,103,104,104,'Prove','నిరూపించండి')
 ];
+locations['TE-T127']=[
+ L('content/normal-modal-logic/axioms-systems/soundness.tex',11,11,11,11,'Soundness','నిర్దుష్టత'),
+ L('content/normal-modal-logic/axioms-systems/soundness.tex',13,14,13,15,'system is called sound','నిర్దుష్టమైనదని'),
+ L('content/normal-modal-logic/axioms-systems/soundness.tex',20,20,22,22,'Soundness Theorem','నిర్దుష్టతా సిద్ధాంతం'),
+ L('content/normal-modal-logic/axioms-systems/soundness.tex',28,30,31,32,'induction on length of proofs','నిరూపణల పొడవుపై ఆగమనం'),
+ L('content/normal-modal-logic/axioms-systems/soundness.tex',51,53,60,70,'\\Nec{}','\\Nec{}')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -828,6 +835,7 @@ alternatives['TE-T123']=['ప్రతిజ్ఞావాక్య తర్�
 alternatives['TE-T124']=['నాలుగు K నిరూపణలను PL/RK, Diamond భర్తీ సూచికలతో నిలిపి, చివరి వికల్ప క్రమాన్ని ప్రతిపాదనకు సరిపడే ఒక ప్రకటిత మార్పుగా చూపడం (ఎంపిక)','చివరి నిరూపణను ప్రతిపాదనతో వేరే క్రమంలో ముగిసినా గమనిక లేకుండా ఉంచడం (తిరస్కరణ)','స్థానిక ప్రతిజ్ఞావాక్య తర్క పేజీనే Box/Diamond పంపిణీ సిద్ధాంతాలకు ప్రత్యక్ష ఆధారంగా చూపడం (తిరస్కరణ)','చివరి మూడు అభ్యాసాలకు మూలంలో లేని పరిష్కారాలను చేర్చడం (తిరస్కరణ)'];
 alternatives['TE-T125']=['ద్వంద్వ సూత్రం అని T/B/4/5 డైమండ్-ఉపసూచిక రూపాలను వివరించి, D స్వద్వంద్వత్వం, K వ్యవస్థ సమానత్వ వాదనను మూల గణితానికి కట్టడం (ఎంపిక)','డైమండ్ ఉపసూచికను కొత్త భాషా పదంగా కల్పించి గణిత సంకేతాన్ని మార్చడం (తిరస్కరణ)','స్థానిక ప్రతిజ్ఞావాక్య తర్క పేజీనే మోడల్ ద్వంద్వత్వానికి ప్రత్యక్ష సాక్ష్యమని చెప్పడం (తిరస్కరణ)','సమానత్వ నిరూపణను మూల వ్యాయామం స్థానంలో మౌనంగా చేర్చడం (తిరస్కరణ)'];
 alternatives['TE-T126']=['ఆరు నిరూపణలు, ప్రతిస్థాపన సూచనలు, S4/S5 నిర్వచనాలు, సమాన వ్యవస్థలను మూల క్రమంలో నిలిపి, తుల్యతా సంబంధం అనే పూర్వ పదాన్ని కొనసాగించడం (ఎంపిక)','మూలంలో వ్యాయామంగా ఉన్న చివరి సమానత్వ నిరూపణను మౌనంగా పూరించడం (తిరస్కరణ)','స్థానిక సాధారణ సంబంధ/వ్యుత్పత్తి పేజీలు ప్రత్యేక మోడల్ సమానత్వాలను నేరుగా నిరూపిస్తాయని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T127']=['నిర్దుష్టత అనే పూర్వ పదాన్ని కొనసాగించి, ఆధార/ఆగమన శాఖలు, MP/Nec, నమూనాల వర్గ-ప్రతిచ్ఛేదం నిలపడం; మూలంలోని రెండు నిరూపణ-వివరణ ఖాళీలను పక్కనే ప్రకటించడం (ఎంపిక)','ఆగమన దశలో K/ఐచ్ఛిక Dual సందర్భాలను మౌనంగా వదిలేయడం (తిరస్కరణ)','ప్రపంచ-చెల్లుబాటు ఉదాహరణనే ఏ నమూనాల వర్గానికైనా ప్రత్యక్ష ప్రకటనగా చదవడం (తిరస్కరణ)','స్థానిక పేజీలు మోడల్ నిర్దుష్టతా సిద్ధాంతాన్ని నేరుగా ధ్రువీకరిస్తాయని చెప్పడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -843,7 +851,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T126 record the Batch 025--Batch 085 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T127 record the Batch 025--Batch 086 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1155,6 +1163,8 @@ const correctionQuestions={
  ,'OLTENMLAXSDER-001':'Does the rewriting conclusion use the formula metavariable !B, matching its hypothesis and exercise, with the one source atom delta disclosed?'
  ,'OLTENMLAXSDER-002':'Does the Telugu replacement label say that new !B replaces old !A in C(!A) to C(!B), consistently with the later p-for-double-negation example?'
  ,'OLTENMLAXSMPR-001':'Does the final PL step yield the proposition’s Diamond A or Diamond B order directly from line 6, with the single source atom delta and disclosure recorded?'
+ ,'OLTENMLAXSSND-001':'Does the induction step cover K and the guarded Dual as possible final-line axioms even in a proof sequence longer than one line, with the source omission disclosed?'
+ ,'OLTENMLAXSSND-002':'Is necessitation justified for validity at every world in each model of the stated intersection class, rather than inferred solely from the cited global-validity proposition?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));
