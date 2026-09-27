@@ -1,0 +1,183 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: truth-lemma
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{tru}
+
+\olsection{సత్య ఉపసిద్ధాంతం}
+
+కానానికల్ నమూనా~$\mModel{M^\Sigma}$ను
+$\mSat{M^\Sigma}{!A}[\Delta]$ అయితే, అప్పుడు మాత్రమే
+$!A \in \Delta$ అయ్యేలా నిర్వచించాం. ప్రతిజ్ఞావాక్య
+\tetoken{చరరాశుల}{!!{propositional
+variable}s} విషయంలో
+$V^\Sigma$ నిర్వచనం నుంచే ఇది నేరుగా వస్తుంది. అయితే ఈ
+తుల్యత అన్ని \tetoken{సూత్రాల}{!!{formula}s}కూ వర్తిస్తుందని
+ధృవీకరించాలి. దీన్ని ఆగమనంతో చేస్తాం. ఆగమన దశలో
+ప్రతిజ్ఞావాక్య సంయోజకాలున్న \tetoken{సూత్రాల}{!!{formula}s}కు
+తుల్యతను నిరూపించాలి (అక్కడ
+\olref[ccs]{prop:ccs-properties} ఉపయోగిస్తాం); అలాగే మోడల్
+సంయోజకాలున్న వాటికి నిరూపించాలి (అక్కడ
+\olref[mod]{sec} ఫలితాలను ఉపయోగిస్తాం).
+
+\begin{prop}[సత్య ఉపసిద్ధాంతం]
+  \ollabel{prop:truthlemma}
+  ప్రతి \tetoken{సూత్రం}{!!{formula}}~$!A$కు,
+  $\mSat{M^\Sigma}{!A}[\Delta]$ అయితే, అప్పుడు మాత్రమే
+  $!A \in \Delta$.
+\end{prop}
+
+\begin{proof}
+  $!A$పై ఆగమనం వాడుదాం.
+  \begin{enumerate}
+    \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\mSat/{M^\Sigma}{\lfalse}[\Delta]$
+        అనేది \olref[syn][trw]{defn:mmodels} వల్ల; $\lfalse \notin \Delta$
+        అనేది
+        \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lfalse} వల్ల.}}{}
+
+    \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\mSat{M^\Sigma}{\ltrue}[\Delta]$
+        అనేది \olref[syn][trw]{defn:mmodels} వల్ల; $\ltrue \in \Delta$
+        అనేది \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-ltrue}
+        వల్ల.}}{}
+
+    \item \indcase{!A}{p}{$\mSat{M^\Sigma}{p}[\Delta]$ అయితే,
+      అప్పుడు మాత్రమే $\Delta \in V^\Sigma(p)$ అని
+      \olref[syn][trw]{defn:mmodels} చెబుతుంది. అలాగే
+      $V^\Sigma$ నిర్వచనం ప్రకారం $\Delta \in V^\Sigma(p)$
+      అయితే, అప్పుడు మాత్రమే $p \in \Delta$.}
+
+    \tagitem{prvNot}{\indcase{!A}{\lnot !B}{%
+        \iftag{probNot}{వ్యాయామం.}{$\mSat{M^\Sigma}{\lnot !B}[\Delta]$
+          అయితే, అప్పుడు మాత్రమే $\mSat/{M^\Sigma}{!B}[\Delta]$
+          (\olref[syn][trw]{defn:mmodels}); ఆగమన పరికల్పన
+          ప్రకారం, అప్పుడు మాత్రమే $!B \notin \Delta$;
+          \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lnot}
+          ప్రకారం, అప్పుడు మాత్రమే $\lnot !B \in \Delta$.}}}{}
+
+    \tagitem{prvAnd}{\indcase{!A}{!B \land !C}{%
+        \iftag{probAnd}{వ్యాయామం.}{$\mSat{M^\Sigma}{!B \land
+            !C}[\Delta]$ అయితే, అప్పుడు మాత్రమే
+          $\mSat{M^\Sigma}{!B}[\Delta]$ మరియు
+          $\mSat{M^\Sigma}{!C}[\Delta]$
+          (\olref[syn][trw]{defn:mmodels}); ఆగమన పరికల్పన
+          ప్రకారం, అప్పుడు మాత్రమే $!B \in \Delta$ మరియు
+          $!C \in \Delta$; \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-land}
+          ప్రకారం, అప్పుడు మాత్రమే $!B \land !C \in \Delta$.}}}{}
+
+    \tagitem{prvOr}{\indcase{!A}{!B \lor !C}{%
+        \iftag{probOr}{వ్యాయామం.}{$\mSat{M^\Sigma}{!B \lor
+            !C}[\Delta]$ అయితే, అప్పుడు మాత్రమే
+          $\mSat{M^\Sigma}{!B}[\Delta]$ లేదా
+          $\mSat{M^\Sigma}{!C}[\Delta]$
+          (\olref[syn][trw]{defn:mmodels}); ఆగమన పరికల్పన
+          ప్రకారం, అప్పుడు మాత్రమే $!B \in \Delta$ లేదా
+          $!C \in \Delta$; \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lor}
+          ప్రకారం, అప్పుడు మాత్రమే $!B \lor !C \in \Delta$.}}}{}
+
+    \tagitem{prvIf}{\indcase{!A}{!B \lif !C}{%
+        \iftag{probIf}{వ్యాయామం.}{$\mSat{M^\Sigma}{!B \lif
+            !C}[\Delta]$ అయితే, అప్పుడు మాత్రమే
+          $\mSat/{M^\Sigma}{!B}[\Delta]$ లేదా
+          $\mSat{M^\Sigma}{!C}[\Delta]$
+          (\olref[syn][trw]{defn:mmodels}); ఆగమన పరికల్పన
+          ప్రకారం, అప్పుడు మాత్రమే $!B \notin \Delta$ లేదా
+          $!C \in \Delta$; \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lif}
+          ప్రకారం, అప్పుడు మాత్రమే $!B \lif !C \in \Delta$.}}}{}
+
+    \tagitem{prvIff}{\indcase{!A}{!B \liff !C}{%
+        \iftag{probIff}{వ్యాయామం.}{$\mSat{M^\Sigma}{!B \liff
+            !C}[\Delta]$ అయితే, అప్పుడు మాత్రమే
+          $\mSat{M^\Sigma}{!B}[\Delta]$ మరియు
+          $\mSat{M^\Sigma}{!C}[\Delta]$ రెండూ, లేదా
+          $\mSat/{M^\Sigma}{!B}[\Delta]$ మరియు
+          $\mSat/{M^\Sigma}{!C}[\Delta]$ రెండూ
+          (\olref[syn][trw]{defn:mmodels}); ఆగమన పరికల్పన
+          ప్రకారం, అప్పుడు మాత్రమే $!B \in \Delta$ మరియు
+          $!C \in \Delta$ రెండూ, లేదా $!B \notin \Delta$ మరియు
+          $!C \notin \Delta$ రెండూ;
+          \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-liff}
+          ప్రకారం, అప్పుడు మాత్రమే $!B \liff !C \in \Delta$.}}}{}
+
+    \tagitem{prvBox}{\indcase{!A}{\Box !B}{%
+        \iftag{probBox}{వ్యాయామం.}{మొదట
+          $\mSat{M^\Sigma}{\Box !B}[\Delta]$ అనుకుందాం.
+          \olref[syn][trw]{defn:mmodels} ప్రకారం,
+          $R^\Sigma \Delta\Delta'$ అయ్యే ప్రతి $\Delta'$కు
+          $\mSat{M^\Sigma}{!B}[\Delta']$. ఆగమన పరికల్పన
+          ప్రకారం, $R^\Sigma \Delta\Delta'$ అయ్యే ప్రతి
+          $\Delta'$కు $!B \in \Delta'$. $R^\Sigma$ నిర్వచనం
+          ప్రకారం, $\Box^{-1} \Delta \subseteq \Delta'$
+          అయ్యే ప్రతి $\Delta'$కు $!B \in \Delta'$.
+          \olref[mod]{prop:box} ప్రకారం $\Box !B \in
+          \Delta$.
+
+          ఇప్పుడు $\Box !B \in \Delta$ అనుకుందాం.
+          $R^\Sigma \Delta\Delta'$ అయ్యే $\Delta' \in W^\Sigma$
+          తీసుకుందాం; అంటే, $\Box^{-1}\Delta \subseteq
+          \Delta'$. $\Box !B \in \Delta$ కనుక $!B \in
+          \Box^{-1} \Delta$. అందువల్ల $!B \in \Delta'$.
+          ఆగమన పరికల్పన ప్రకారం $\mSat{M^\Sigma}{!B}[\Delta']$.
+          $R^\Sigma \Delta\Delta'$ అయ్యే $\Delta'$ ఏదైనా
+          కావచ్చు కనుక, $R^\Sigma \Delta\Delta'$ అయ్యే ప్రతి
+          $\Delta' \in W^\Sigma$కు
+          $\mSat{M^\Sigma}{!B}[\Delta']$.
+          \olref[syn][trw]{defn:mmodels} ప్రకారం
+          $\mSat{M^\Sigma}{\Box !B}[\Delta]$.}}}{}
+
+    \tagitem{prvDiamond}{\indcase{!A}{\Diamond !B}{%
+        \iftag{probDiamond}{వ్యాయామం.}{మొదట
+          $\mSat{M^\Sigma}{\Diamond !B}[\Delta]$ అనుకుందాం.
+          \olref[syn][trw]{defn:mmodels} ప్రకారం,
+          $R^\Sigma \Delta\Delta'$ అయ్యే ఏదో $\Delta'$కు
+          $\mSat{M^\Sigma}{!B}[\Delta']$. ఆగమన పరికల్పన
+          ప్రకారం, $R^\Sigma \Delta\Delta'$ అయ్యే ఏదో
+          $\Delta'$కు $!B \in \Delta'$. $R^\Sigma$ నిర్వచనం
+          ప్రకారం,\iftag{prvBox}{$\Box^{-1} \Delta \subseteq
+            \Delta'$ మరియు $!B \in \Delta'$ అయ్యే ఏదో
+            $\Delta'$ ఉంది. \olref[mod]{lem:box-iff-diamond}
+            ప్రకారం,}{} $\Diamond \Delta' \subseteq \Delta$
+          మరియు $!B \in \Delta'$ అయ్యే ఏదో $\Delta'$ ఉంది.
+          \sourcecorrection{OLTENMLCOMTRU-001}{స్థిర మూలంలోని
+            Box-శాఖ ఈ మార్పుకు Diamond ప్రతిపాదనను సూచించింది.
+            ప్రాప్యత యొక్క Box-పూర్వప్రతిబింబ రూపం నుంచి
+            Diamond-ప్రతిబింబ రూపానికి మారేది వాటి తుల్యత
+            ఉపసిద్ధాంతం; ఇక్కడ ఆ సరైన సూచనను ఇచ్చాం.}
+          $!B \in \Delta'$ కనుక $\Diamond !B \in \Diamond
+          \Delta'$; అందువల్ల $\Diamond !B \in \Delta$.
+
+          ఇప్పుడు $\Diamond !B \in \Delta$ అనుకుందాం.
+          \olref[mod]{prop:diamond} ప్రకారం,
+          $\Diamond \Delta' \subseteq \Delta$ మరియు
+          $!B \in \Delta'$ అయ్యే సంపూర్ణ $\Sigma$-అవిరుద్ధ
+          $\Delta' \in W^\Sigma$ ఒకటి ఉంది.
+          \iftag{prvBox}{\olref[mod]{lem:box-iff-diamond}
+            ప్రకారం, $\Box^{-1} \Delta \subseteq \Delta'$
+            మరియు $!B \in \Delta'$ అయ్యే
+            $\Delta' \in W^\Sigma$ ఒకటి ఉంది.}{}
+          $R^\Sigma$ నిర్వచనం ప్రకారం $R^\Sigma \Delta\Delta'$;
+          కనుక $R^\Sigma \Delta\Delta'$ మరియు $!B \in \Delta'$
+          అయ్యే $\Delta' \in W^\Sigma$ ఉంది. ఆగమన పరికల్పన
+          వల్ల $\mSat{M^\Sigma}{!B}[\Delta']$.
+          \sourcecorrection{OLTENMLCOMTRU-002}{స్థిర మూలం
+            $!B \in \Delta'$ నుంచి మోడల్ నిర్వచనాన్ని మాత్రమే
+            సూచించి Diamond సత్యానికి వెళ్తుంది. ముందుగా
+            ఆగమన పరికల్పనతో $!B$ సత్యాన్ని పొందాల్సిన
+            దశను ఇక్కడ స్పష్టంగా చేర్చాం.}
+          \olref[syn][trw]{defn:mmodels} ప్రకారం
+          $\mSat{M^\Sigma}{\Diamond !B}[\Delta]$.}}}{}
+  \end{enumerate}
+\end{proof}
+
+\begin{probtag}{probFalse,probTrue,probNot,probAnd,probOr,probIf,probIff,probBox,probDiamond}
+  \olref[nml][com][tru]{prop:truthlemma} నిరూపణను పూర్తిచేయండి.
+\end{probtag}
+\sourcecorrection{OLTENMLCOMTRU-003}{స్థిర మూలంలోని వ్యాయామ
+  ట్యాగ్ జాబితాలో \texttt{proband} అని ఉండగా, సంబంధిత శాఖ
+  \texttt{probAnd}ను పరీక్షిస్తుంది. ఆ శాఖను వ్యాయామంగా
+  ఎంపికచేయడానికి ఇక్కడ జాబితాను \texttt{probAnd}గా సరిచేశాం.}
+
+\end{document}

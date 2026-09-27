@@ -802,6 +802,15 @@ locations['TE-T136']=[
  L('content/normal-modal-logic/completeness/canonical-models.tex',20,32,21,33,'\\tuple{W^\\Sigma','\\tuple{W^\\Sigma'),
  L('content/normal-modal-logic/completeness/canonical-models.tex',24,30,26,31,'\\Box^{-1}\\Delta','\\Box^{-1}\\Delta')
 ];
+locations['TE-T137']=[
+ L('content/normal-modal-logic/completeness/truth-lemma.tex',11,11,11,11,'The Truth Lemma','సత్య ఉపసిద్ధాంతం'),
+ L('content/normal-modal-logic/completeness/truth-lemma.tex',13,20,13,25,'induction','ఆగమనంతో'),
+ L('content/normal-modal-logic/completeness/truth-lemma.tex',22,27,27,32,'\\mSat{M^\\Sigma}{!A}','\\mSat{M^\\Sigma}{!A}'),
+ L('content/normal-modal-logic/completeness/truth-lemma.tex',28,90,34,104,'inductive hypothesis','ఆగమన పరికల్పన'),
+ L('content/normal-modal-logic/completeness/truth-lemma.tex',91,113,105,130,'\\olref[mod]{prop:box}','\\olref[mod]{prop:box}'),
+ L('content/normal-modal-logic/completeness/truth-lemma.tex',114,139,131,173,'\\olref[mod]{lem:box-iff-diamond}','\\olref[mod]{lem:box-iff-diamond}'),
+ L('content/normal-modal-logic/completeness/truth-lemma.tex',143,145,175,180,'proband','probAnd')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -924,6 +933,7 @@ alternatives['TE-T133']=['సంపూర్ణ Sigma-అవిరుద్ధ�
 alternatives['TE-T134']=['లిండెన్‌బామ్ ఉపసిద్ధాంతం, సంపూర్ణ Sigma-అవిరుద్ధ విస్తరణ, సమగ్ర జాబితా, పరిమిత సాక్ష్య అవైరుధ్య వాదనను నిలిపి, జాబితా దశ పొడవును గరిష్ఠంగా nగా ప్రకటితంగా సరిచేయడం (ఎంపిక)','సరిగ్గా n పొడవు దశలనే సమగ్ర జాబితా అని అనువదించడం (తిరస్కరణ)','స్థానిక సాధారణ ప్రతిజ్ఞావాక్య పేజీలే మోడల్ లిండెన్‌బామ్ నిరూపణను ప్రత్యక్షంగా ఇస్తాయని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T135']=['Box/Diamond షరతుపర శాఖలు, పూర్వప్రతిబింబాలు, కానానికల్ ప్రాప్యత సంబంధం, RK ఉద్ధరణను నిలిపి, రెండు మూల సూచిక/పరామితి సమస్యలను పక్కనే ప్రకటించి సరిచేయడం (ఎంపిక)','B_k సాక్షుల శ్రేణిలో నిర్వచించని B_nను నిలపడం (తిరస్కరణ)','Sigma-సాపేక్ష మధ్యంతర వ్యుత్పాద్యతను పరామితి లేకుండా ఉంచడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలే ఈ మోడల్-ప్రత్యేక నిరూపణలను ప్రత్యక్షంగా ఇస్తాయని చూపడం (తిరస్కరణ)'];
 alternatives['TE-T136']=['సంపూర్ణ Sigma-అవిరుద్ధ సమితులను లోకాలుగా, Box/Diamond guarded ప్రాప్యతను Rగా, మూలకత్వ-ఆధారిత పరమాణు విలువ నిర్ణయాన్ని Vగా నిర్వచించడం (ఎంపిక)','సత్య-మూలకత్వ తుల్యతను ఈ నిర్వచనంలోనే పూర్తిగా నిరూపించామని చూపడం (తిరస్కరణ)','Box/Diamond శాఖల ప్రాప్యత షరతులను తారుమారు చేయడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలే కానానికల్ నమూనాను ప్రత్యక్షంగా నిర్వచించాయని చూపడం (తిరస్కరణ)'];
+alternatives['TE-T137']=['సత్య ఉపసిద్ధాంతం, ప్రతిజ్ఞావాక్య/మోడల్ అన్ని ఆగమన సందర్భాలు, guarded వ్యాయామ శాఖలు నిలిపి, Diamond నిరూపణలో రెండు దశలు, వ్యాయామ ట్యాగ్ కేసును పక్కనే ప్రకటించి సరిచేయడం (ఎంపిక)','Box-ప్రాప్యత నుంచి Diamond-ప్రతిబింబానికి తప్పు ప్రతిపాదనను సూచించడం (తిరస్కరణ)','ప్రాప్య లోకంలోని B మూలకత్వం నుంచి ఆగమన పరికల్పన లేకుండా సత్యానికి దూకడం (తిరస్కరణ)','proband అనే అసమాన ట్యాగ్‌ను జాబితాలో ఉంచడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -939,7 +949,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T136 record the Batch 025--Batch 095 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T137 record the Batch 025--Batch 096 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1264,6 +1274,9 @@ const correctionQuestions={
  ,'OLTENMLCOMLIN-001':'Does the at-most-n schedule list every finite formula while keeping each stage finite, including short formulas using higher-indexed variables?'
  ,'OLTENMLCOMMOD-001':'Do both Box-lifting implication chains end at the same B_k as the finite witness list, without changing the normal-system RK step?'
  ,'OLTENMLCOMMOD-002':'Does the intermediate Box-lifted entailment retain the Sigma parameter required by the cited lemma and subsequent monotonicity step?'
+ ,'OLTENMLCOMTRU-001':'Does the Box-guarded Diamond-forward case use the Box/Diamond accessibility equivalence lemma, not the membership proposition, while preserving the same witness?'
+ ,'OLTENMLCOMTRU-002':'Does the Diamond-reverse case apply the induction hypothesis to B at the accessible world before invoking the Diamond truth clause?'
+ ,'OLTENMLCOMTRU-003':'Does the exercise tag list use the exact probAnd key tested by the conjunction branch, with no loss of the worked or exercise text?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

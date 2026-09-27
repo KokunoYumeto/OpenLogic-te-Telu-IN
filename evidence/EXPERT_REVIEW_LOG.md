@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 446 of 722 draft units**. This log contains 136 terminology/sense decisions and 411 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 447 of 722 draft units**. This log contains 137 terminology/sense decisions and 414 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3271,6 +3271,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక పేజీలు ఈ మోడల్-ప్రత్యేక కానానికల్ నమూనా లేదా W/R/V నిర్వచనాన్ని ప్రత్యక్షంగా ఇవ్వవు; సత్య-మూలకత్వ తుల్యత ఇక్కడ ఇంకా నిరూపించబడలేదు.
 
 - Please double-check: Please double-check whether “కానానికల్ నమూనా / సంపూర్ణ అవిరుద్ధ సమితుల లోకాలు / కానానికల్ ప్రాప్యత, పరమాణు విలువ నిర్ణయం” is idiomatic and technically standard for “canonical model / complete consistent worlds / canonical accessibility and atomic valuation” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T137 — Truth Lemma / canonical truth-membership equivalence / structural induction / guarded Box-Diamond cases / proof-exercise switches
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: సత్య ఉపసిద్ధాంతం / కానానికల్ సత్య-మూలకత్వ తుల్యత / నిర్మాణ ఆగమనం / షరతుపర Box-Diamond సందర్భాలు / నిరూపణ-వ్యాయామ మార్పిళ్లు
+
+- Exact implementation: OLP-0447; normal-modal-logic/completeness/truth-lemma; content/normal-modal-logic/completeness/truth-lemma.tex:11 ↔ translation/content/normal-modal-logic/completeness/truth-lemma.tex:11 (OLP-0447-B005); printed/PDF page pending; OLP-0447; normal-modal-logic/completeness/truth-lemma; content/normal-modal-logic/completeness/truth-lemma.tex:13-20 ↔ translation/content/normal-modal-logic/completeness/truth-lemma.tex:13-25 (OLP-0447-B006); printed/PDF page pending; OLP-0447; normal-modal-logic/completeness/truth-lemma; content/normal-modal-logic/completeness/truth-lemma.tex:22-26 ↔ translation/content/normal-modal-logic/completeness/truth-lemma.tex:27-32 (OLP-0447-B007); printed/PDF page pending; OLP-0447; normal-modal-logic/completeness/truth-lemma; content/normal-modal-logic/completeness/truth-lemma.tex:45-50 ↔ translation/content/normal-modal-logic/completeness/truth-lemma.tex:53-59 (OLP-0447-B011); printed/PDF page pending; OLP-0447; normal-modal-logic/completeness/truth-lemma; content/normal-modal-logic/completeness/truth-lemma.tex:91-101 ↔ translation/content/normal-modal-logic/completeness/truth-lemma.tex:105-116 (OLP-0447-B016); printed/PDF page pending; OLP-0447; normal-modal-logic/completeness/truth-lemma; content/normal-modal-logic/completeness/truth-lemma.tex:128-141 ↔ translation/content/normal-modal-logic/completeness/truth-lemma.tex:152-173 (OLP-0447-B019); printed/PDF page pending; OLP-0447; normal-modal-logic/completeness/truth-lemma; content/normal-modal-logic/completeness/truth-lemma.tex:143-145 ↔ translation/content/normal-modal-logic/completeness/truth-lemma.tex:175-181 (OLP-0447-B020); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P026, PDF 88, printed 81, Consistency section
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P018/024/026లో సాధారణ ప్రతిజ్ఞావాక్య తర్కం, వ్యుత్పత్తి, సమితి అవైరుధ్య పర్యాయం ప్రత్యక్షంగా చూశాం. TE-T131–136లో సంపూర్ణ సమితి, కానానికల్ నమూనా, Box/Diamond సంబంధ పదజాలం కొనసాగించాం. అన్ని ఆగమన శాఖలు OLP-0447 స్థిర మూలం నుంచే నిర్ణీతం. Sigma, Delta, Box, Diamond, W, R, V, formula/valuation macros, proof and exercise tag keys రక్షిత సంకేతాలు.
+
+- Alternatives: సత్య ఉపసిద్ధాంతం, ప్రతిజ్ఞావాక్య/మోడల్ అన్ని ఆగమన సందర్భాలు, guarded వ్యాయామ శాఖలు నిలిపి, Diamond నిరూపణలో రెండు దశలు, వ్యాయామ ట్యాగ్ కేసును పక్కనే ప్రకటించి సరిచేయడం (ఎంపిక); Box-ప్రాప్యత నుంచి Diamond-ప్రతిబింబానికి తప్పు ప్రతిపాదనను సూచించడం (తిరస్కరణ); ప్రాప్య లోకంలోని B మూలకత్వం నుంచి ఆగమన పరికల్పన లేకుండా సత్యానికి దూకడం (తిరస్కరణ); proband అనే అసమాన ట్యాగ్‌ను జాబితాలో ఉంచడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక పేజీలు ఈ మోడల్-ప్రత్యేక సత్య ఉపసిద్ధాంతం లేదా guarded నిరూపణ శాఖలను ప్రత్యక్షంగా ఇవ్వవు. Diamond కేసులో రెండు నిరూపణ దశలు, వ్యాయామ ట్యాగ్ కేసు-సామ్యం OLTENMLCOMTRU-001–003లో ప్రకటిత సవరణలు.
+
+- Please double-check: Please double-check whether “సత్య ఉపసిద్ధాంతం / కానానికల్ సత్య-మూలకత్వ తుల్యత / నిర్మాణ ఆగమనం / షరతుపర Box-Diamond సందర్భాలు / నిరూపణ-వ్యాయామ మార్పిళ్లు” is idiomatic and technically standard for “Truth Lemma / canonical truth-membership equivalence / structural induction / guarded Box-Diamond cases / proof-exercise switches” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -13135,3 +13159,75 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Does the intermediate Box-lifted entailment retain the Sigma parameter required by the cited lemma and subsequent monotonicity step?
+
+## REV-OLTENMLCOMTRU-001 — OLTENMLCOMTRU-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: Diamond ముందుదిశలో Box-ప్రాప్యత నుంచి Diamond-ప్రతిబింబ సమ్మిళితత్వానికి మారే చోట మూలంలోని Diamond ప్రతిపాదన బదులు వాటి తుల్యత ఉపసిద్ధాంతాన్ని సూచించి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0447; normal-modal-logic/completeness/truth-lemma; truth-lemma.tex lines 121-124 ↔ translation/content/normal-modal-logic/completeness/truth-lemma.tex:143 (OLP-0447-B018); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLCOMTRU-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: Diamond ముందుదిశలో Box-ప్రాప్యత నుంచి Diamond-ప్రతిబింబ సమ్మిళితత్వానికి మారే చోట మూలంలోని Diamond ప్రతిపాదన బదులు వాటి తుల్యత ఉపసిద్ధాంతాన్ని సూచించి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the Box-guarded Diamond-forward case use the Box/Diamond accessibility equivalence lemma, not the membership proposition, while preserving the same witness?
+
+## REV-OLTENMLCOMTRU-002 — OLTENMLCOMTRU-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: Diamond వెనుకదిశలో ప్రాప్య లోకంలో B మూలకత్వం నుంచి ముందుగా ఆగమన పరికల్పనతో B సత్యాన్ని పొంది, తరువాత మోడల్ సత్య నిర్వచనం వాడి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0447; normal-modal-logic/completeness/truth-lemma; truth-lemma.tex lines 135-139 ↔ translation/content/normal-modal-logic/completeness/truth-lemma.tex:164 (OLP-0447-B019); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLCOMTRU-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: Diamond వెనుకదిశలో ప్రాప్య లోకంలో B మూలకత్వం నుంచి ముందుగా ఆగమన పరికల్పనతో B సత్యాన్ని పొంది, తరువాత మోడల్ సత్య నిర్వచనం వాడి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the Diamond-reverse case apply the induction hypothesis to B at the accessible world before invoking the Diamond truth clause?
+
+## REV-OLTENMLCOMTRU-003 — OLTENMLCOMTRU-003
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: వ్యాయామ ట్యాగ్ జాబితాలో proband స్థానంలో శాఖ వాస్తవంగా పరీక్షించే probAndను పెట్టి పక్కనే ప్రకటించాం; శాఖ నిరూపణ మారలేదు.
+
+- Exact implementation: OLP-0447; normal-modal-logic/completeness/truth-lemma; truth-lemma.tex line 143 ↔ translation/content/normal-modal-logic/completeness/truth-lemma.tex:177 (OLP-0447-B020); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLCOMTRU-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: వ్యాయామ ట్యాగ్ జాబితాలో proband స్థానంలో శాఖ వాస్తవంగా పరీక్షించే probAndను పెట్టి పక్కనే ప్రకటించాం; శాఖ నిరూపణ మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the exercise tag list use the exact probAnd key tested by the conjunction branch, with no loss of the worked or exercise text?

@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **446 of 722 source units drafted**. This readable view contains all 547 decisions and 1206 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **447 of 722 source units drafted**. This readable view contains all 551 decisions and 1216 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4118,6 +4118,38 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T136-OCC-002; OLP-0446; OLP-0446-B006; source upstream/content/normal-modal-logic/completeness/canonical-models.tex:13-18 bytes 217-565 SHA-256 7d21c989f62f34ed387f7cbaef899f8b6d2c37467306110765c7395f70b1e4c3; target translation/content/normal-modal-logic/completeness/canonical-models.tex:13-19 bytes 250-970 SHA-256 b954c886497dfe160a15a02b2d18a05fb1fbad56e1362e117324f861f528f398; reader page pending.
   - te-Telu-IN-TE-T136-OCC-003; OLP-0446; OLP-0446-B007; source upstream/content/normal-modal-logic/completeness/canonical-models.tex:20-32 bytes 566-1087 SHA-256 7d21c989f62f34ed387f7cbaef899f8b6d2c37467306110765c7395f70b1e4c3; target translation/content/normal-modal-logic/completeness/canonical-models.tex:21-33 bytes 971-1686 SHA-256 b954c886497dfe160a15a02b2d18a05fb1fbad56e1362e117324f861f528f398; reader page pending.
   - te-Telu-IN-TE-T136-OCC-004; OLP-0446; OLP-0446-B007; source upstream/content/normal-modal-logic/completeness/canonical-models.tex:20-32 bytes 566-1087 SHA-256 7d21c989f62f34ed387f7cbaef899f8b6d2c37467306110765c7395f70b1e4c3; target translation/content/normal-modal-logic/completeness/canonical-models.tex:21-33 bytes 971-1686 SHA-256 b954c886497dfe160a15a02b2d18a05fb1fbad56e1362e117324f861f528f398; reader page pending.
+
+## te-Telu-IN-TE-T137 — Truth Lemma / canonical truth-membership equivalence / structural induction / guarded Box-Diamond cases / proof-exercise switches
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: సత్య ఉపసిద్ధాంతం / కానానికల్ సత్య-మూలకత్వ తుల్యత / నిర్మాణ ఆగమనం / షరతుపర Box-Diamond సందర్భాలు / నిరూపణ-వ్యాయామ మార్పిళ్లు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “Truth Lemma / canonical truth-membership equivalence / structural induction / guarded Box-Diamond cases / proof-exercise switches” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక పేజీలు ఈ మోడల్-ప్రత్యేక సత్య ఉపసిద్ధాంతం లేదా guarded నిరూపణ శాఖలను ప్రత్యక్షంగా ఇవ్వవు. Diamond కేసులో రెండు నిరూపణ దశలు, వ్యాయామ ట్యాగ్ కేసు-సామ్యం OLTENMLCOMTRU-001–003లో ప్రకటిత సవరణలు.
+
+- Rationale: TE-P018/024/026లో సాధారణ ప్రతిజ్ఞావాక్య తర్కం, వ్యుత్పత్తి, సమితి అవైరుధ్య పర్యాయం ప్రత్యక్షంగా చూశాం. TE-T131–136లో సంపూర్ణ సమితి, కానానికల్ నమూనా, Box/Diamond సంబంధ పదజాలం కొనసాగించాం. అన్ని ఆగమన శాఖలు OLP-0447 స్థిర మూలం నుంచే నిర్ణీతం. Sigma, Delta, Box, Diamond, W, R, V, formula/valuation macros, proof and exercise tag keys రక్షిత సంకేతాలు.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P026 [checked_context_only], PDF page 88; printed page 81; Consistency section; Direct consistency/inconsistency terminology; not direct completeness terminology.
+
+- Alternatives: సత్య ఉపసిద్ధాంతం, ప్రతిజ్ఞావాక్య/మోడల్ అన్ని ఆగమన సందర్భాలు, guarded వ్యాయామ శాఖలు నిలిపి, Diamond నిరూపణలో రెండు దశలు, వ్యాయామ ట్యాగ్ కేసును పక్కనే ప్రకటించి సరిచేయడం [viable_alternative: ఎంపిక] | Box-ప్రాప్యత నుంచి Diamond-ప్రతిబింబానికి తప్పు ప్రతిపాదనను సూచించడం [viable_alternative: తిరస్కరణ] | ప్రాప్య లోకంలోని B మూలకత్వం నుంచి ఆగమన పరికల్పన లేకుండా సత్యానికి దూకడం [viable_alternative: తిరస్కరణ] | proband అనే అసమాన ట్యాగ్‌ను జాబితాలో ఉంచడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “సత్య ఉపసిద్ధాంతం / కానానికల్ సత్య-మూలకత్వ తుల్యత / నిర్మాణ ఆగమనం / షరతుపర Box-Diamond సందర్భాలు / నిరూపణ-వ్యాయామ మార్పిళ్లు” is idiomatic and technically standard for “Truth Lemma / canonical truth-membership equivalence / structural induction / guarded Box-Diamond cases / proof-exercise switches” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T137-OCC-001; OLP-0447; OLP-0447-B005; source upstream/content/normal-modal-logic/completeness/truth-lemma.tex:11 bytes 182-210 SHA-256 ba09b193f2ccb8f8c5751a1c762c0f81f14937ffbb42bd0e7bfad1f82d51f147; target translation/content/normal-modal-logic/completeness/truth-lemma.tex:11 bytes 182-241 SHA-256 fe75b15b5057a605380e2c0e38506af5531b9677ceb53f0f70527f61baf36b7e; reader page pending.
+  - te-Telu-IN-TE-T137-OCC-002; OLP-0447; OLP-0447-B006; source upstream/content/normal-modal-logic/completeness/truth-lemma.tex:13-20 bytes 211-751 SHA-256 ba09b193f2ccb8f8c5751a1c762c0f81f14937ffbb42bd0e7bfad1f82d51f147; target translation/content/normal-modal-logic/completeness/truth-lemma.tex:13-25 bytes 242-1478 SHA-256 fe75b15b5057a605380e2c0e38506af5531b9677ceb53f0f70527f61baf36b7e; reader page pending.
+  - te-Telu-IN-TE-T137-OCC-003; OLP-0447; OLP-0447-B007; source upstream/content/normal-modal-logic/completeness/truth-lemma.tex:22-26 bytes 752-911 SHA-256 ba09b193f2ccb8f8c5751a1c762c0f81f14937ffbb42bd0e7bfad1f82d51f147; target translation/content/normal-modal-logic/completeness/truth-lemma.tex:27-32 bytes 1479-1763 SHA-256 fe75b15b5057a605380e2c0e38506af5531b9677ceb53f0f70527f61baf36b7e; reader page pending.
+  - te-Telu-IN-TE-T137-OCC-004; OLP-0447; OLP-0447-B011; source upstream/content/normal-modal-logic/completeness/truth-lemma.tex:45-50 bytes 1648-2018 SHA-256 ba09b193f2ccb8f8c5751a1c762c0f81f14937ffbb42bd0e7bfad1f82d51f147; target translation/content/normal-modal-logic/completeness/truth-lemma.tex:53-59 bytes 2826-3414 SHA-256 fe75b15b5057a605380e2c0e38506af5531b9677ceb53f0f70527f61baf36b7e; reader page pending.
+  - te-Telu-IN-TE-T137-OCC-005; OLP-0447; OLP-0447-B016; source upstream/content/normal-modal-logic/completeness/truth-lemma.tex:91-101 bytes 3985-4595 SHA-256 ba09b193f2ccb8f8c5751a1c762c0f81f14937ffbb42bd0e7bfad1f82d51f147; target translation/content/normal-modal-logic/completeness/truth-lemma.tex:105-116 bytes 6435-7247 SHA-256 fe75b15b5057a605380e2c0e38506af5531b9677ceb53f0f70527f61baf36b7e; reader page pending.
+  - te-Telu-IN-TE-T137-OCC-006; OLP-0447; OLP-0447-B019; source upstream/content/normal-modal-logic/completeness/truth-lemma.tex:128-141 bytes 6042-6784 SHA-256 ba09b193f2ccb8f8c5751a1c762c0f81f14937ffbb42bd0e7bfad1f82d51f147; target translation/content/normal-modal-logic/completeness/truth-lemma.tex:152-173 bytes 9802-11433 SHA-256 fe75b15b5057a605380e2c0e38506af5531b9677ceb53f0f70527f61baf36b7e; reader page pending.
+  - te-Telu-IN-TE-T137-OCC-007; OLP-0447; OLP-0447-B020; source upstream/content/normal-modal-logic/completeness/truth-lemma.tex:143-145 bytes 6785-6957 SHA-256 ba09b193f2ccb8f8c5751a1c762c0f81f14937ffbb42bd0e7bfad1f82d51f147; target translation/content/normal-modal-logic/completeness/truth-lemma.tex:175-181 bytes 11434-12124 SHA-256 fe75b15b5057a605380e2c0e38506af5531b9677ceb53f0f70527f61baf36b7e; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -14884,3 +14916,81 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLCOMMOD-002-OCC-001; OLP-0445; OLP-0445-B015; source upstream/content/normal-modal-logic/completeness/modalities-ccs.tex:107-112 bytes 4525-4773 SHA-256 92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6; target translation/content/normal-modal-logic/completeness/modalities-ccs.tex:126 bytes 8432-8472 SHA-256 81a175de702934504ce5d2bbff44e49af17dd6c7c53294699082d2de46c7fbb0; reader page pending.
+
+## te-Telu-IN-OLTENMLCOMTRU-001 — OLTENMLCOMTRU-001: diamond forward box guard wrong accessibility bridge
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: Diamond ముందుదిశలో Box-ప్రాప్యత నుంచి Diamond-ప్రతిబింబ సమ్మిళితత్వానికి మారే చోట మూలంలోని Diamond ప్రతిపాదన బదులు వాటి తుల్యత ఉపసిద్ధాంతాన్ని సూచించి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited diamond forward box guard wrong accessibility bridge at truth-lemma.tex lines 121-124, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLCOMTRU-20260927:OLTENMLCOMTRU-001 [checked_supports], content/normal-modal-logic/completeness/truth-lemma.tex; truth-lemma.tex lines 121-124; diamond_forward_box_guard_wrong_accessibility_bridge; Diamond ముందుదిశలో Box-ప్రాప్యత నుంచి Diamond-ప్రతిబింబ సమ్మిళితత్వానికి మారే చోట మూలంలోని Diamond ప్రతిపాదన బదులు వాటి తుల్యత ఉపసిద్ధాంతాన్ని సూచించి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the Box-guarded Diamond-forward case use the Box/Diamond accessibility equivalence lemma, not the membership proposition, while preserving the same witness?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLCOMTRU-001-OCC-001; OLP-0447; OLP-0447-B018; source upstream/content/normal-modal-logic/completeness/truth-lemma.tex:114-126 bytes 5220-6041 SHA-256 ba09b193f2ccb8f8c5751a1c762c0f81f14937ffbb42bd0e7bfad1f82d51f147; target translation/content/normal-modal-logic/completeness/truth-lemma.tex:143 bytes 8981-9074 SHA-256 fe75b15b5057a605380e2c0e38506af5531b9677ceb53f0f70527f61baf36b7e; reader page pending.
+
+## te-Telu-IN-OLTENMLCOMTRU-002 — OLTENMLCOMTRU-002: diamond reverse inductive truth step omitted
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: Diamond వెనుకదిశలో ప్రాప్య లోకంలో B మూలకత్వం నుంచి ముందుగా ఆగమన పరికల్పనతో B సత్యాన్ని పొంది, తరువాత మోడల్ సత్య నిర్వచనం వాడి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited diamond reverse inductive truth step omitted at truth-lemma.tex lines 135-139, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLCOMTRU-20260927:OLTENMLCOMTRU-002 [checked_supports], content/normal-modal-logic/completeness/truth-lemma.tex; truth-lemma.tex lines 135-139; diamond_reverse_inductive_truth_step_omitted; Diamond వెనుకదిశలో ప్రాప్య లోకంలో B మూలకత్వం నుంచి ముందుగా ఆగమన పరికల్పనతో B సత్యాన్ని పొంది, తరువాత మోడల్ సత్య నిర్వచనం వాడి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the Diamond-reverse case apply the induction hypothesis to B at the accessible world before invoking the Diamond truth clause?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLCOMTRU-002-OCC-001; OLP-0447; OLP-0447-B019; source upstream/content/normal-modal-logic/completeness/truth-lemma.tex:128-141 bytes 6042-6784 SHA-256 ba09b193f2ccb8f8c5751a1c762c0f81f14937ffbb42bd0e7bfad1f82d51f147; target translation/content/normal-modal-logic/completeness/truth-lemma.tex:164 bytes 10700-10755 SHA-256 fe75b15b5057a605380e2c0e38506af5531b9677ceb53f0f70527f61baf36b7e; reader page pending.
+
+## te-Telu-IN-OLTENMLCOMTRU-003 — OLTENMLCOMTRU-003: conjunction exercise tag case mismatch
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: వ్యాయామ ట్యాగ్ జాబితాలో proband స్థానంలో శాఖ వాస్తవంగా పరీక్షించే probAndను పెట్టి పక్కనే ప్రకటించాం; శాఖ నిరూపణ మారలేదు.
+
+- Intended sense: Repair the audited conjunction exercise tag case mismatch at truth-lemma.tex line 143, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLCOMTRU-20260927:OLTENMLCOMTRU-003 [checked_supports], content/normal-modal-logic/completeness/truth-lemma.tex; truth-lemma.tex line 143; conjunction_exercise_tag_case_mismatch; వ్యాయామ ట్యాగ్ జాబితాలో proband స్థానంలో శాఖ వాస్తవంగా పరీక్షించే probAndను పెట్టి పక్కనే ప్రకటించాం; శాఖ నిరూపణ మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the exercise tag list use the exact probAnd key tested by the conjunction branch, with no loss of the worked or exercise text?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLCOMTRU-003-OCC-001; OLP-0447; OLP-0447-B020; source upstream/content/normal-modal-logic/completeness/truth-lemma.tex:143-145 bytes 6785-6957 SHA-256 ba09b193f2ccb8f8c5751a1c762c0f81f14937ffbb42bd0e7bfad1f82d51f147; target translation/content/normal-modal-logic/completeness/truth-lemma.tex:177 bytes 11632-11646 SHA-256 fe75b15b5057a605380e2c0e38506af5531b9677ceb53f0f70527f61baf36b7e; reader page pending.

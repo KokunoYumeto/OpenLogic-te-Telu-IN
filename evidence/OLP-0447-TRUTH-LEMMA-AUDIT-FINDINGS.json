@@ -1,0 +1,40 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLCOMTRU-20260927",
+  "unit_id": "OLP-0447",
+  "source_path": "content/normal-modal-logic/completeness/truth-lemma.tex",
+  "source_sha256": "ba09b193f2ccb8f8c5751a1c762c0f81f14937ffbb42bd0e7bfad1f82d51f147",
+  "findings": [
+    {
+      "finding_id": "OLTENMLCOMTRU-001",
+      "source_locator": "truth-lemma.tex lines 121-124",
+      "classification": "diamond_forward_box_guard_wrong_accessibility_bridge",
+      "source_issue": "The Box-side accessibility witness is converted to Diamond-image inclusion using prop:diamond instead of the lemma establishing equivalence of the two conditions.",
+      "minimal_treatment": "Cite lem:box-iff-diamond in this guarded bridge, retaining the same witness and disclosing the correction.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []},
+      "expected_protected_identifier_delta": {
+        "source_only": ["\\olref[mod]{prop:diamond}"],
+        "target_only": ["\\olref[mod]{lem:box-iff-diamond}"]
+      }
+    },
+    {
+      "finding_id": "OLTENMLCOMTRU-002",
+      "source_locator": "truth-lemma.tex lines 135-139",
+      "classification": "diamond_reverse_inductive_truth_step_omitted",
+      "source_issue": "Membership of B in an accessible Delta-prime is passed directly to the Diamond truth clause without the induction hypothesis that makes B true there.",
+      "minimal_treatment": "Add the inductive truth assertion for B at Delta-prime before invoking the modal truth definition, and disclose it.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": ["$\\mSat{M^\\Sigma}{!B}[\\Delta']$"]
+      }
+    },
+    {
+      "finding_id": "OLTENMLCOMTRU-003",
+      "source_locator": "truth-lemma.tex line 143",
+      "classification": "conjunction_exercise_tag_case_mismatch",
+      "source_issue": "The probtag list uses proband, but the conjunction case tests probAnd.",
+      "minimal_treatment": "Use probAnd in the exercise tag list and disclose the local tag repair; preserve the proof and exercise branch.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

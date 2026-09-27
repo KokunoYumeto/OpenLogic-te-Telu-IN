@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 446 of 722 draft units**. This view selects 464 of 547 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 447 of 722 draft units**. This view selects 467 of 551 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4643,3 +4643,33 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0445; normal-modal-logic/completeness/modalities-ccs; translation/content/normal-modal-logic/completeness/modalities-ccs.tex:126; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the intermediate Box-lifted entailment retain the Sigma parameter required by the cited lemma and subsequent monotonicity step?
+
+## REV-OLTENMLCOMTRU-001 — OLTENMLCOMTRU-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Diamond ముందుదిశలో Box-ప్రాప్యత నుంచి Diamond-ప్రతిబింబ సమ్మిళితత్వానికి మారే చోట మూలంలోని Diamond ప్రతిపాదన బదులు వాటి తుల్యత ఉపసిద్ధాంతాన్ని సూచించి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0447; normal-modal-logic/completeness/truth-lemma; translation/content/normal-modal-logic/completeness/truth-lemma.tex:143; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the Box-guarded Diamond-forward case use the Box/Diamond accessibility equivalence lemma, not the membership proposition, while preserving the same witness?
+
+## REV-OLTENMLCOMTRU-002 — OLTENMLCOMTRU-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Diamond వెనుకదిశలో ప్రాప్య లోకంలో B మూలకత్వం నుంచి ముందుగా ఆగమన పరికల్పనతో B సత్యాన్ని పొంది, తరువాత మోడల్ సత్య నిర్వచనం వాడి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0447; normal-modal-logic/completeness/truth-lemma; translation/content/normal-modal-logic/completeness/truth-lemma.tex:164; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the Diamond-reverse case apply the induction hypothesis to B at the accessible world before invoking the Diamond truth clause?
+
+## REV-OLTENMLCOMTRU-003 — OLTENMLCOMTRU-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: వ్యాయామ ట్యాగ్ జాబితాలో proband స్థానంలో శాఖ వాస్తవంగా పరీక్షించే probAndను పెట్టి పక్కనే ప్రకటించాం; శాఖ నిరూపణ మారలేదు.
+
+- Occurrences: OLP-0447; normal-modal-logic/completeness/truth-lemma; translation/content/normal-modal-logic/completeness/truth-lemma.tex:177; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the exercise tag list use the exact probAnd key tested by the conjunction branch, with no loss of the worked or exercise text?
