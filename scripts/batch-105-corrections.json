@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0456",
+  "source_path": "content/normal-modal-logic/filtrations/S5-fmp.tex",
+  "source_sha256": "73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e",
+  "audit_id": "OLTENMLFILFMP-20260927",
+  "audit_review_path": "evidence/OLP-0456-K-S5-FMP-SOURCE-AUDIT.md",
+  "audit_review_sha256": "25d5e14536b089f32db9728f07608e106875053f5d3a0efcdd6cc76f7b0cbb43",
+  "audit_findings_path": "evidence/OLP-0456-K-S5-FMP-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "00305dbe347006f8328dfe0d62dffddbbeb7d8f4461ee59ff02321dcd21c7d84",
+  "previous_corrections": 421,
+  "treatments": {
+    "OLTENMLFILFMP-001": {
+      "target_line": 34,
+      "body_treatment": "K పరిమిత నమూనా నిరూపణలో వడపోత సత్య లోకాన్ని మూలంలోని w నుంచి నిజమైన వర్గ లోకం [w]గా సరిచేసి పక్కనే ప్రకటించాం; ముందరి thm:filtrations వాక్యంతో సరిపడే ఒక వాద సవరణ మాత్రమే."
+    }
+  }
+}

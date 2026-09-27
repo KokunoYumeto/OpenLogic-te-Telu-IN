@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 455 of 722 draft units**. This log contains 145 terminology/sense decisions and 421 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 456 of 722 draft units**. This log contains 146 terminology/sense decisions and 422 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3487,6 +3487,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక సాక్షులు మోడల్ వడపోత పరిమితత్వం లేదా 2^n హద్దును ప్రత్యక్షంగా నిరూపించవు. పరిమిత Gamma మాత్రమే హద్దుకు పరికల్పన; సాధారణ అనంత Gammaకు కాదు.
 
 - Please double-check: Please double-check whether “పరిమిత వడపోత; గామా ఘాత సమితిలోకి ఒకటి-ఒకటి ప్రమేయం; 2^n లోక హద్దు” is idiomatic and technically standard for “finite filtration; injection into the power set of Gamma; 2^n world bound” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T146 — finite model property for K and S5 via filtrations and universal models
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: K, S5లకు వడపోతలు/సార్వత్రిక నమూనాల ద్వారా పరిమిత నమూనా ధర్మం
+
+- Exact implementation: OLP-0456; normal-modal-logic/filtrations/S5-fmp; content/normal-modal-logic/filtrations/S5-fmp.tex:11 ↔ translation/content/normal-modal-logic/filtrations/S5-fmp.tex:11 (OLP-0456-B005); printed/PDF page pending; OLP-0456; normal-modal-logic/filtrations/S5-fmp; content/normal-modal-logic/filtrations/S5-fmp.tex:13-18 ↔ translation/content/normal-modal-logic/filtrations/S5-fmp.tex:13-19 (OLP-0456-B006); printed/PDF page pending; OLP-0456; normal-modal-logic/filtrations/S5-fmp; content/normal-modal-logic/filtrations/S5-fmp.tex:20-22 ↔ translation/content/normal-modal-logic/filtrations/S5-fmp.tex:21-23 (OLP-0456-B007); printed/PDF page pending; OLP-0456; normal-modal-logic/filtrations/S5-fmp; content/normal-modal-logic/filtrations/S5-fmp.tex:24-34 ↔ translation/content/normal-modal-logic/filtrations/S5-fmp.tex:25-47 (OLP-0456-B008); printed/PDF page pending; OLP-0456; normal-modal-logic/filtrations/S5-fmp; content/normal-modal-logic/filtrations/S5-fmp.tex:36-40 ↔ translation/content/normal-modal-logic/filtrations/S5-fmp.tex:49-54 (OLP-0456-B009); printed/PDF page pending; OLP-0456; normal-modal-logic/filtrations/S5-fmp; content/normal-modal-logic/filtrations/S5-fmp.tex:42-48 ↔ translation/content/normal-modal-logic/filtrations/S5-fmp.tex:56-64 (OLP-0456-B010); printed/PDF page pending; OLP-0456; normal-modal-logic/filtrations/S5-fmp; content/normal-modal-logic/filtrations/S5-fmp.tex:50-63 ↔ translation/content/normal-modal-logic/filtrations/S5-fmp.tex:66-84 (OLP-0456-B011); printed/PDF page pending; OLP-0456; normal-modal-logic/filtrations/S5-fmp; content/normal-modal-logic/filtrations/S5-fmp.tex:69-77 ↔ translation/content/normal-modal-logic/filtrations/S5-fmp.tex:90-102 (OLP-0456-B013); printed/PDF page pending; OLP-0456; normal-modal-logic/filtrations/S5-fmp; content/normal-modal-logic/filtrations/S5-fmp.tex:79-82 ↔ translation/content/normal-modal-logic/filtrations/S5-fmp.tex:104-107 (OLP-0456-B014); printed/PDF page pending; OLP-0456; normal-modal-logic/filtrations/S5-fmp; content/normal-modal-logic/filtrations/S5-fmp.tex:84-87 ↔ translation/content/normal-modal-logic/filtrations/S5-fmp.tex:109-113 (OLP-0456-B015); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P022, PDF 84, printed 77, Implication and equivalence headings; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: స్థానిక పేజీలు సాధారణ సమితి/సంబంధం/తుల్యత/వ్యుత్పత్తి రూపాలను మాత్రమే చూపుతాయి. పూర్వ TE-T114లో స్థిర సీరియల్/స్వావర్తన/సౌష్ఠవ/సంక్రామక/యూక్లిడియన్ పదాలను కొనసాగించి, K నిర్బంధరహిత నమూనాలు, S5 సార్వత్రిక వర్గాలు, పరిమిత వడపోత 2^n హద్దు, R1 ద్వారా సార్వత్రికతను మూల నిరూపణలతో నియంత్రించాం. K, S5, Sigma, Gamma, U, R, W, M and protected TeX labels/references retain source identities.
+
+- Alternatives: Kకు నమూనా వర్గ ఆంక్ష లేకపోవడం, సార్వత్రిక నమూనా వడపోతలో R1 వల్ల సార్వత్రికత, S5కు తుల్యతా వర్గ పరిమితి, రెండు వ్యాయామ భేదాలను నిలిపి, K నిరూపణలో ఒక వర్గ సూచన సవరించడం (ఎంపిక); పాత wనే వడపోత లోకంగా వాడడం (తిరస్కరణ); ఏ L నమూనాకు చేసిన ప్రతి వడపోత L నమూనానే అని సామాన్యీకరించడం (తిరస్కరణ); ఫ్రేమ్ చెల్లుబాటు సమానత్వమే స్థానిక సత్య మార్పును వేరే వాదన లేకుండా తక్షణం ఇస్తుందని చెప్పడం (తిరస్కరణ); సౌష్ఠవం/సంక్రామకత్వం/యూక్లిడియన్ కూడా ప్రతి వడపోతలో నిలుస్తాయని చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు modal K/S5 ఫలితాలను ప్రత్యక్షంగా ఇవ్వవు. మొదటి K నిరూపణలో మూల w/[w] సూచన లోపం OLTENMLFILFMP-001గా ప్రకటిత సవరణ; S5 స్థానిక సత్య మార్పు ముందరి prop:S5=univ నిరూపణలోని వర్గ పరిమితి నిర్మాణాన్ని ఆధారంగా వాడుతుంది.
+
+- Please double-check: Please double-check whether “K, S5లకు వడపోతలు/సార్వత్రిక నమూనాల ద్వారా పరిమిత నమూనా ధర్మం” is idiomatic and technically standard for “finite model property for K and S5 via filtrations and universal models” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -13591,3 +13615,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Does the first example restrict the even-natural valuation to positive world set W, given that this edition includes zero in Nat, without changing any depicted positive-world truth value?
+
+## REV-OLTENMLFILFMP-001 — OLTENMLFILFMP-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: K పరిమిత నమూనా నిరూపణలో వడపోత సత్య లోకాన్ని మూలంలోని w నుంచి నిజమైన వర్గ లోకం [w]గా సరిచేసి పక్కనే ప్రకటించాం; ముందరి thm:filtrations వాక్యంతో సరిపడే ఒక వాద సవరణ మాత్రమే.
+
+- Exact implementation: OLP-0456; normal-modal-logic/filtrations/S5-fmp; S5-fmp.tex line 27; filtrations-def.tex lines 55-59 ↔ translation/content/normal-modal-logic/filtrations/S5-fmp.tex:34 (OLP-0456-B008); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLFILFMP-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: K పరిమిత నమూనా నిరూపణలో వడపోత సత్య లోకాన్ని మూలంలోని w నుంచి నిజమైన వర్గ లోకం [w]గా సరిచేసి పక్కనే ప్రకటించాం; ముందరి thm:filtrations వాక్యంతో సరిపడే ఒక వాద సవరణ మాత్రమే.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the K proof put the filtered truth of A at quotient world [w], rather than original world w, exactly as the preceding truth-preservation theorem requires?

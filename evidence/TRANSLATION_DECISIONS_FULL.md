@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **455 of 722 source units drafted**. This readable view contains all 566 decisions and 1280 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **456 of 722 source units drafted**. This readable view contains all 568 decisions and 1291 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4407,6 +4407,41 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T145-OCC-002; OLP-0455; OLP-0455-B006; source upstream/content/normal-modal-logic/filtrations/finite.tex:13-18 bytes 212-617 SHA-256 aea5dd77f54889d35f027a23600c24a206ad42e7a6d736d51c16862ddd0997f5; target translation/content/normal-modal-logic/filtrations/finite.tex:13-22 bytes 239-1162 SHA-256 72c9d37fd7ce286ee0175930604beefb88ed91f266bdd18168d3d315f1b2176d; reader page pending.
   - te-Telu-IN-TE-T145-OCC-003; OLP-0455; OLP-0455-B007; source upstream/content/normal-modal-logic/filtrations/finite.tex:20-23 bytes 618-790 SHA-256 aea5dd77f54889d35f027a23600c24a206ad42e7a6d736d51c16862ddd0997f5; target translation/content/normal-modal-logic/filtrations/finite.tex:24-28 bytes 1163-1417 SHA-256 72c9d37fd7ce286ee0175930604beefb88ed91f266bdd18168d3d315f1b2176d; reader page pending.
   - te-Telu-IN-TE-T145-OCC-004; OLP-0455; OLP-0455-B008; source upstream/content/normal-modal-logic/filtrations/finite.tex:25-41 bytes 791-1775 SHA-256 aea5dd77f54889d35f027a23600c24a206ad42e7a6d736d51c16862ddd0997f5; target translation/content/normal-modal-logic/filtrations/finite.tex:30-54 bytes 1418-3451 SHA-256 72c9d37fd7ce286ee0175930604beefb88ed91f266bdd18168d3d315f1b2176d; reader page pending.
+
+## te-Telu-IN-TE-T146 — finite model property for K and S5 via filtrations and universal models
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: K, S5లకు వడపోతలు/సార్వత్రిక నమూనాల ద్వారా పరిమిత నమూనా ధర్మం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “finite model property for K and S5 via filtrations and universal models” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు modal K/S5 ఫలితాలను ప్రత్యక్షంగా ఇవ్వవు. మొదటి K నిరూపణలో మూల w/[w] సూచన లోపం OLTENMLFILFMP-001గా ప్రకటిత సవరణ; S5 స్థానిక సత్య మార్పు ముందరి prop:S5=univ నిరూపణలోని వర్గ పరిమితి నిర్మాణాన్ని ఆధారంగా వాడుతుంది.
+
+- Rationale: స్థానిక పేజీలు సాధారణ సమితి/సంబంధం/తుల్యత/వ్యుత్పత్తి రూపాలను మాత్రమే చూపుతాయి. పూర్వ TE-T114లో స్థిర సీరియల్/స్వావర్తన/సౌష్ఠవ/సంక్రామక/యూక్లిడియన్ పదాలను కొనసాగించి, K నిర్బంధరహిత నమూనాలు, S5 సార్వత్రిక వర్గాలు, పరిమిత వడపోత 2^n హద్దు, R1 ద్వారా సార్వత్రికతను మూల నిరూపణలతో నియంత్రించాం. K, S5, Sigma, Gamma, U, R, W, M and protected TeX labels/references retain source identities.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P022 [checked_context_only], PDF page 84; printed page 77; Implication and equivalence headings; Direct implication and equivalence terminology in propositional logic. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: Kకు నమూనా వర్గ ఆంక్ష లేకపోవడం, సార్వత్రిక నమూనా వడపోతలో R1 వల్ల సార్వత్రికత, S5కు తుల్యతా వర్గ పరిమితి, రెండు వ్యాయామ భేదాలను నిలిపి, K నిరూపణలో ఒక వర్గ సూచన సవరించడం [viable_alternative: ఎంపిక] | పాత wనే వడపోత లోకంగా వాడడం [viable_alternative: తిరస్కరణ] | ఏ L నమూనాకు చేసిన ప్రతి వడపోత L నమూనానే అని సామాన్యీకరించడం [viable_alternative: తిరస్కరణ] | ఫ్రేమ్ చెల్లుబాటు సమానత్వమే స్థానిక సత్య మార్పును వేరే వాదన లేకుండా తక్షణం ఇస్తుందని చెప్పడం [viable_alternative: తిరస్కరణ] | సౌష్ఠవం/సంక్రామకత్వం/యూక్లిడియన్ కూడా ప్రతి వడపోతలో నిలుస్తాయని చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “K, S5లకు వడపోతలు/సార్వత్రిక నమూనాల ద్వారా పరిమిత నమూనా ధర్మం” is idiomatic and technically standard for “finite model property for K and S5 via filtrations and universal models” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T146-OCC-001; OLP-0456; OLP-0456-B005; source upstream/content/normal-modal-logic/filtrations/S5-fmp.tex:11 bytes 176-240 SHA-256 73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e; target translation/content/normal-modal-logic/filtrations/S5-fmp.tex:11 bytes 176-279 SHA-256 ea8b2abcac0fb66c08fbb6c1ab55d758130fc53a7b692c112d91d6ac4d7091c2; reader page pending.
+  - te-Telu-IN-TE-T146-OCC-002; OLP-0456; OLP-0456-B006; source upstream/content/normal-modal-logic/filtrations/S5-fmp.tex:13-18 bytes 241-496 SHA-256 73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e; target translation/content/normal-modal-logic/filtrations/S5-fmp.tex:13-19 bytes 280-774 SHA-256 ea8b2abcac0fb66c08fbb6c1ab55d758130fc53a7b692c112d91d6ac4d7091c2; reader page pending.
+  - te-Telu-IN-TE-T146-OCC-003; OLP-0456; OLP-0456-B007; source upstream/content/normal-modal-logic/filtrations/S5-fmp.tex:20-22 bytes 497-582 SHA-256 73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e; target translation/content/normal-modal-logic/filtrations/S5-fmp.tex:21-23 bytes 775-900 SHA-256 ea8b2abcac0fb66c08fbb6c1ab55d758130fc53a7b692c112d91d6ac4d7091c2; reader page pending.
+  - te-Telu-IN-TE-T146-OCC-004; OLP-0456; OLP-0456-B008; source upstream/content/normal-modal-logic/filtrations/S5-fmp.tex:24-34 bytes 583-1158 SHA-256 73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e; target translation/content/normal-modal-logic/filtrations/S5-fmp.tex:25-47 bytes 901-2496 SHA-256 ea8b2abcac0fb66c08fbb6c1ab55d758130fc53a7b692c112d91d6ac4d7091c2; reader page pending.
+  - te-Telu-IN-TE-T146-OCC-005; OLP-0456; OLP-0456-B009; source upstream/content/normal-modal-logic/filtrations/S5-fmp.tex:36-40 bytes 1159-1453 SHA-256 73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e; target translation/content/normal-modal-logic/filtrations/S5-fmp.tex:49-54 bytes 2497-3092 SHA-256 ea8b2abcac0fb66c08fbb6c1ab55d758130fc53a7b692c112d91d6ac4d7091c2; reader page pending.
+  - te-Telu-IN-TE-T146-OCC-006; OLP-0456; OLP-0456-B010; source upstream/content/normal-modal-logic/filtrations/S5-fmp.tex:42-48 bytes 1454-1778 SHA-256 73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e; target translation/content/normal-modal-logic/filtrations/S5-fmp.tex:56-64 bytes 3093-3714 SHA-256 ea8b2abcac0fb66c08fbb6c1ab55d758130fc53a7b692c112d91d6ac4d7091c2; reader page pending.
+  - te-Telu-IN-TE-T146-OCC-007; OLP-0456; OLP-0456-B011; source upstream/content/normal-modal-logic/filtrations/S5-fmp.tex:50-63 bytes 1779-2502 SHA-256 73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e; target translation/content/normal-modal-logic/filtrations/S5-fmp.tex:66-84 bytes 3715-5116 SHA-256 ea8b2abcac0fb66c08fbb6c1ab55d758130fc53a7b692c112d91d6ac4d7091c2; reader page pending.
+  - te-Telu-IN-TE-T146-OCC-008; OLP-0456; OLP-0456-B013; source upstream/content/normal-modal-logic/filtrations/S5-fmp.tex:69-77 bytes 2587-3055 SHA-256 73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e; target translation/content/normal-modal-logic/filtrations/S5-fmp.tex:90-102 bytes 5241-6303 SHA-256 ea8b2abcac0fb66c08fbb6c1ab55d758130fc53a7b692c112d91d6ac4d7091c2; reader page pending.
+  - te-Telu-IN-TE-T146-OCC-009; OLP-0456; OLP-0456-B014; source upstream/content/normal-modal-logic/filtrations/S5-fmp.tex:79-82 bytes 3056-3184 SHA-256 73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e; target translation/content/normal-modal-logic/filtrations/S5-fmp.tex:104-107 bytes 6304-6593 SHA-256 ea8b2abcac0fb66c08fbb6c1ab55d758130fc53a7b692c112d91d6ac4d7091c2; reader page pending.
+  - te-Telu-IN-TE-T146-OCC-010; OLP-0456; OLP-0456-B015; source upstream/content/normal-modal-logic/filtrations/S5-fmp.tex:84-87 bytes 3185-3323 SHA-256 73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e; target translation/content/normal-modal-logic/filtrations/S5-fmp.tex:109-113 bytes 6594-6913 SHA-256 ea8b2abcac0fb66c08fbb6c1ab55d758130fc53a7b692c112d91d6ac4d7091c2; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -15433,3 +15468,29 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLFILEXF-002-OCC-001; OLP-0454; OLP-0454-B017; source upstream/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:101-106 bytes 4044-4375 SHA-256 8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484; target translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:129 bytes 7197-7268 SHA-256 94b3a69b6606e4e4f849d29a9996748b011b73e3d05248029f2ae30f3773b639; reader page pending.
+
+## te-Telu-IN-OLTENMLFILFMP-001 — OLTENMLFILFMP-001: quotient world argument missing brackets
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: K పరిమిత నమూనా నిరూపణలో వడపోత సత్య లోకాన్ని మూలంలోని w నుంచి నిజమైన వర్గ లోకం [w]గా సరిచేసి పక్కనే ప్రకటించాం; ముందరి thm:filtrations వాక్యంతో సరిపడే ఒక వాద సవరణ మాత్రమే.
+
+- Intended sense: Repair the audited quotient world argument missing brackets at S5-fmp.tex line 27; filtrations-def.tex lines 55-59, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLFILFMP-20260927:OLTENMLFILFMP-001 [checked_supports], content/normal-modal-logic/filtrations/S5-fmp.tex; S5-fmp.tex line 27; filtrations-def.tex lines 55-59; quotient_world_argument_missing_brackets; K పరిమిత నమూనా నిరూపణలో వడపోత సత్య లోకాన్ని మూలంలోని w నుంచి నిజమైన వర్గ లోకం [w]గా సరిచేసి పక్కనే ప్రకటించాం; ముందరి thm:filtrations వాక్యంతో సరిపడే ఒక వాద సవరణ మాత్రమే..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the K proof put the filtered truth of A at quotient world [w], rather than original world w, exactly as the preceding truth-preservation theorem requires?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLFILFMP-001-OCC-001; OLP-0456; OLP-0456-B008; source upstream/content/normal-modal-logic/filtrations/S5-fmp.tex:24-34 bytes 583-1158 SHA-256 73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e; target translation/content/normal-modal-logic/filtrations/S5-fmp.tex:34 bytes 1437-1505 SHA-256 ea8b2abcac0fb66c08fbb6c1ab55d758130fc53a7b692c112d91d6ac4d7091c2; reader page pending.

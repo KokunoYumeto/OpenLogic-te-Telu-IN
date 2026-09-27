@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 455 of 722 draft units**. This view selects 474 of 566 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 456 of 722 draft units**. This view selects 475 of 568 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4743,3 +4743,13 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0454; normal-modal-logic/filtrations/examples-of-filtrations; translation/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:129; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the first example restrict the even-natural valuation to positive world set W, given that this edition includes zero in Nat, without changing any depicted positive-world truth value?
+
+## REV-OLTENMLFILFMP-001 — OLTENMLFILFMP-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: K పరిమిత నమూనా నిరూపణలో వడపోత సత్య లోకాన్ని మూలంలోని w నుంచి నిజమైన వర్గ లోకం [w]గా సరిచేసి పక్కనే ప్రకటించాం; ముందరి thm:filtrations వాక్యంతో సరిపడే ఒక వాద సవరణ మాత్రమే.
+
+- Occurrences: OLP-0456; normal-modal-logic/filtrations/S5-fmp; translation/content/normal-modal-logic/filtrations/S5-fmp.tex:34; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the K proof put the filtered truth of A at quotient world [w], rather than original world w, exactly as the preceding truth-preservation theorem requires?

@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLFILFMP-20260927",
+  "unit_id": "OLP-0456",
+  "source_path": "content/normal-modal-logic/filtrations/S5-fmp.tex",
+  "source_sha256": "73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e",
+  "findings": [
+    {
+      "finding_id": "OLTENMLFILFMP-001",
+      "source_locator": "S5-fmp.tex line 27; filtrations-def.tex lines 55-59",
+      "classification": "quotient_world_argument_missing_brackets",
+      "source_issue": "The K proof gives the target filtration's satisfaction world as the original w, although filtration worlds are classes [w].",
+      "minimal_treatment": "Replace the target satisfaction world by [w] and disclose the one-atom correction beside the proof.",
+      "expected_core_math_delta": {"source_only": ["$\\mSat{M^*}{!A}[w]$"], "target_only": ["$\\mSat{M^*}{!A}[{[w]}]$"]}
+    }
+  ]
+}

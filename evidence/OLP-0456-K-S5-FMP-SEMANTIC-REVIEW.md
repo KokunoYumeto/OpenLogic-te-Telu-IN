@@ -1,0 +1,16 @@
+# OLP-0456 — same-agent semantic review
+
+- Frozen source: `upstream/content/normal-modal-logic/filtrations/S5-fmp.tex`, SHA-256 `73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e`.
+- Telugu target: `translation/content/normal-modal-logic/filtrations/S5-fmp.tex`, SHA-256 `ea8b2abcac0fb66c08fbb6c1ab55d758130fc53a7b692c112d91d6ac4d7091c2`.
+- Correction-aware bounded QA: `build/BATCH-105-STRUCTURAL-QA.json`, 16 aligned blocks, token, identifier, environment, reference and declared one-atom formula parity. Same-agent review only, not independent expert validation or TeX compilation.
+
+## Reverse reading
+
+1. The finite model property is defined for a modal system $\Sigma$: whenever a formula is true at a world of a $\Sigma$-model, it is true at a world of a *finite* $\Sigma$-model. The Telugu keeps world-level satisfaction and does not replace this with mere global validity.
+2. For $K$, every Kripke model is a $K$-model. Filter $M$ through the finite set of subformulas of $!A$; truth preservation gives $M^*,[w]\models !A$, and OLP-0455 gives $|W^*|\le 2^n$ for $n=|\Gamma|$. `OLTENMLFILFMP-001` changes the English source's erroneous $M^*,w\models !A$ to the quotient world $[w]$ and discloses this beside the proof. No frame restriction remains to be checked for $K$.
+3. For a general logic $L$, finiteness and truth preservation are not enough: the filtration must still belong to the permitted $L$-model class. The Telugu preserves this caution before the universal-model proposition.
+4. Let $U$ be all universal models and $U_{\mathrm{Fin}}$ their finite members. Validity in $U$ implies validity in its subclass. Conversely, if $!A$ fails at a world of a universal model, filtration through its subformula set is finite, preserves the failure at $[w]$, and remains universal because every original $Ruv$ holds and R1 therefore yields every quotient edge $R^*[u][v]$. Thus it is a finite universal countermodel. The Telugu keeps the contrapositive direction rather than asserting a direct preservation of validity without a witness.
+5. The $S5$ corollary uses the earlier equivalence/universal-frame result. A reflexive Euclidean frame is an equivalence frame; restricting to an equivalence class yields a universal component and preserves local formula truth (equivalently apply the previous proposition's countermodel argument to the negation). Filtering that component produces a finite universal model; such a model is reflexive and Euclidean. The source cites `prop:S5=univ` for this step; its proof supplies the local restriction argument, not merely its stated equivalence of frame-validities.
+6. The exercises remain open: seriality and reflexivity survive every filtration via R1; symmetry, transitivity and Euclideanness can fail for a permissible filtration. The target retains the pairings and does not add a solution.
+
+TE-P008/010/022 support ordinary set/relation/equivalence wording and TE-P018/024 general propositional/proof register. None directly attests the modal finite-model-property proofs or the $S5$ frame argument; the frozen sources and internal references control those claims. Established TE-T114 terminology for serial/reflexive/symmetric/transitive/Euclidean is retained.

@@ -884,6 +884,18 @@ locations['TE-T145']=[
  L('content/normal-modal-logic/filtrations/finite.tex',20,23,24,28,'finite','పరిమితమే'),
  L('content/normal-modal-logic/filtrations/finite.tex',25,41,30,54,'injective','ఒకటి-ఒకటి')
 ];
+locations['TE-T146']=[
+ L('content/normal-modal-logic/filtrations/S5-fmp.tex',11,11,11,11,'Finite Model Property','పరిమిత నమూనా ధర్మం'),
+ L('content/normal-modal-logic/filtrations/S5-fmp.tex',13,18,13,19,'finite','పరిమిత'),
+ L('content/normal-modal-logic/filtrations/S5-fmp.tex',20,22,21,23,'finite model property','పరిమిత నమూనా ధర్మం'),
+ L('content/normal-modal-logic/filtrations/S5-fmp.tex',24,34,25,47,'filtration','వడపోత'),
+ L('content/normal-modal-logic/filtrations/S5-fmp.tex',36,40,49,54,'essential','అత్యవసరం'),
+ L('content/normal-modal-logic/filtrations/S5-fmp.tex',42,48,56,64,'universal models','సార్వత్రిక నమూనాల'),
+ L('content/normal-modal-logic/filtrations/S5-fmp.tex',50,63,66,84,'right-to left','కుడి నుంచి ఎడమకు'),
+ L('content/normal-modal-logic/filtrations/S5-fmp.tex',65,77,86,102,'reflexive and euclidean','స్వావర్తన, యూక్లిడియన్'),
+ L('content/normal-modal-logic/filtrations/S5-fmp.tex',79,82,104,107,'serial or reflexive','సీరియల్ లేదా స్వావర్తన'),
+ L('content/normal-modal-logic/filtrations/S5-fmp.tex',84,87,109,113,'non-symmetric','సౌష్ఠవం లేని')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -1015,6 +1027,7 @@ alternatives['TE-T142']=['ఉపసూత్ర సంవృతతకు అద�
 alternatives['TE-T143']=['పూర్తి అధికార నిర్వచనం చూశాక వడపోతను నిర్వచనాధీన ఎడిషన్ పదంగా నిలిపి, స్థిర W*/V*, భిన్న R*, మూడు షరతులు, పరమాణు ప్రతిదిశ, నాలుగు మోడల్ నిరూపణ దిశలు, guarded వ్యాయామాలను యథాతథం ఉంచడం (ఎంపిక)','వడపోతను ఏకైక R* నిర్మాణంగా చెప్పడం (తిరస్కరణ)','V*(p)లో [w] ఉండగానే wలో p సత్యమని p Gamma షరతు లేకుండా తేల్చడం (తిరస్కరణ)','స్థానిక సాధారణ సంబంధ పేజీలు modal సత్య సంరక్షణను ప్రత్యక్షంగా నిరూపిస్తాయని చూపడం (తిరస్కరణ)'];
 alternatives['TE-T144']=['అత్యంత సూక్ష్మ/స్థూలను R* జతల చేరిక క్రమంతో నిర్వచనాధీనంగా నిలిపి, R1/R2/R3 నిరూపణలు, చిత్రాలు, ఉదాహరణల్లోని మూడు విలువ సమితి సవరణలను పక్కనే ప్రకటించి నిలపడం (ఎంపిక)','సూక్ష్మ/స్థూలను లోకాల సంఖ్యతో పోల్చడం (తిరస్కరణ)','మొదటి ఉదాహరణలో 1 V(p)లో లేకపోవడమే [1] V*(p)లో లేదని తేల్చుతుందని చెప్పడం (తిరస్కరణ)','W వెలుపలి binary strings/zeroను విలువ సమితుల్లో యథాతథం ఉంచడం (తిరస్కరణ)','చివరి వ్యాయామానికి కోరని పూర్తి పరిష్కారం చేర్చడం (తిరస్కరణ)'];
 alternatives['TE-T145']=['పరిమిత Gammaలోనే ప్రతి వడపోత లోక వర్గాన్ని దాని సత్య సూత్రాల ఉపసమితికి పంపే ఒకటి-ఒకటి ప్రమేయం, |W*|≤|P(Gamma)|=2^n హద్దును నిలపడం (ఎంపిక)','వడపోత నిర్వచనమే Gammaతో సంబంధం లేకుండా పరిమితత్వం ఇస్తుందని చెప్పడం (తిరస్కరణ)','ప్రతి సాధ్య ఉపసమితి తప్పనిసరిగా ఒక వర్గం అని భావించి సమానత్వం చెప్పడం (తిరస్కరణ)','సాధారణ స్థానిక సమితి పేజీనే modal ఫిల్ట్రేషన్ నిరూపణగా చూపడం (తిరస్కరణ)'];
+alternatives['TE-T146']=['Kకు నమూనా వర్గ ఆంక్ష లేకపోవడం, సార్వత్రిక నమూనా వడపోతలో R1 వల్ల సార్వత్రికత, S5కు తుల్యతా వర్గ పరిమితి, రెండు వ్యాయామ భేదాలను నిలిపి, K నిరూపణలో ఒక వర్గ సూచన సవరించడం (ఎంపిక)','పాత wనే వడపోత లోకంగా వాడడం (తిరస్కరణ)','ఏ L నమూనాకు చేసిన ప్రతి వడపోత L నమూనానే అని సామాన్యీకరించడం (తిరస్కరణ)','ఫ్రేమ్ చెల్లుబాటు సమానత్వమే స్థానిక సత్య మార్పును వేరే వాదన లేకుండా తక్షణం ఇస్తుందని చెప్పడం (తిరస్కరణ)','సౌష్ఠవం/సంక్రామకత్వం/యూక్లిడియన్ కూడా ప్రతి వడపోతలో నిలుస్తాయని చెప్పడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -1030,7 +1043,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T145 record the Batch 025--Batch 104 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T146 record the Batch 025--Batch 105 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1365,6 +1378,7 @@ const correctionQuestions={
  ,'OLTENMLFILINT-004':'Is the p argument restored only to the defective first V-star membership assertion, leaving the already correct second assertion unchanged?'
  ,'OLTENMLFILEXF-001':'Do both binary-tree valuation sets explicitly intersect W, keeping the diagram labels and the source exclusion of the string 1 without claiming that exclusion alone fixes the codomain?'
  ,'OLTENMLFILEXF-002':'Does the first example restrict the even-natural valuation to positive world set W, given that this edition includes zero in Nat, without changing any depicted positive-world truth value?'
+ ,'OLTENMLFILFMP-001':'Does the K proof put the filtered truth of A at quotient world [w], rather than original world w, exactly as the preceding truth-preservation theorem requires?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));
