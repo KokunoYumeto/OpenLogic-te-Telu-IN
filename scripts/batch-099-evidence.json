@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "099",
+  "unit_id": "OLP-0450",
+  "unit_order": 450,
+  "source_path": "content/normal-modal-logic/filtrations/filtrations.tex",
+  "blocks": 7,
+  "linguistic_blocks": [4],
+  "previous_segments": 6841,
+  "previous_terms": 139,
+  "expected_corrections": 415,
+  "canon_default": ["TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర అధ్యాయ శీర్షిక, తెలుగు లక్ష్యం, సాధారణ స్థానిక తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; వడపోత సాంకేతిక అర్థం తరువాతి మూల నిర్వచనాధీనం.",
+  "evidence_limit": "TE-P018/024 సాధారణ తర్కం, వ్యుత్పత్తి పదజాలానికే ప్రత్యక్ష ఆధారం. మోడల్ filtration లేదా దాని నిర్ణేయతా ఫలితాన్ని ప్రత్యక్షంగా నిర్వచించవు.",
+  "term_decision": {
+    "term_id": "TE-T140",
+    "source_term": "filtrations and decidability / chapter wrapper and nine protected imports",
+    "telugu": "వడపోతలు మరియు నిర్ణేయత / అధ్యాయ శీర్షిక, తొమ్మిది రక్షిత దిగుమతులు",
+    "status": "native_general_logic_register_attested_modal_filtration_title_definition_controlled_provisional",
+    "passages": ["TE-P018", "TE-P024"],
+    "basis": "TE-P018/024లో సాధారణ తర్కం, వ్యుత్పత్తి పదజాలం చూశాం. నిర్ణేయతకు పూర్వ TE-T020/066/069లోని నిర్ణయించదగిన రూపాల కుటుంబాన్ని కొనసాగించాం. వడపోత అనేది OLP-0450 అధ్యాయ శీర్షికకు తాత్కాలిక రూపం; దాని ఖచ్చిత మోడల్ అర్థం తరువాతి OLP-0453 నిర్వచనంతో నియంత్రితం.",
+    "uncertainty": "స్థానిక పేజీలు మోడల్ filtrationకు ప్రత్యక్ష సాంకేతిక పదాన్ని ఇవ్వవు. వడపోత రూపాన్ని తరువాతి మూల నిర్వచనం, ఉదాహరణలతో మళ్లీ తనిఖీ చేయాలి; అధ్యాయంలోని దిగుమతి మార్గాలు రక్షిత నిర్మాణం.",
+    "borrowing": "nml, fil, S5, chapter/import identifiers and TeX hooks రక్షిత నిర్మాణ గుర్తులు."
+  }
+}

@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **449 of 722 source units drafted**. This readable view contains all 554 decisions and 1232 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **450 of 722 source units drafted**. This readable view contains all 555 decisions and 1233 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4215,6 +4215,32 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T139-OCC-007; OLP-0449; OLP-0449-B017; source upstream/content/normal-modal-logic/completeness/frame-completeness.tex:129-142 bytes 5643-6257 SHA-256 4021151e95c367cfd94030d36b6dfb3c16792ade5767bb24825daf2e0602bb70; target translation/content/normal-modal-logic/completeness/frame-completeness.tex:141-154 bytes 8326-9341 SHA-256 5bf1c156200f7cbaabb6e41744fe328c15a08ef656e596f0ce0dfe2872c7f798; reader page pending.
   - te-Telu-IN-TE-T139-OCC-008; OLP-0449; OLP-0449-B020; source upstream/content/normal-modal-logic/completeness/frame-completeness.tex:166-181 bytes 7429-8277 SHA-256 4021151e95c367cfd94030d36b6dfb3c16792ade5767bb24825daf2e0602bb70; target translation/content/normal-modal-logic/completeness/frame-completeness.tex:181-198 bytes 11118-12454 SHA-256 5bf1c156200f7cbaabb6e41744fe328c15a08ef656e596f0ce0dfe2872c7f798; reader page pending.
   - te-Telu-IN-TE-T139-OCC-009; OLP-0449; OLP-0449-B022; source upstream/content/normal-modal-logic/completeness/frame-completeness.tex:227-231 bytes 10404-10709 SHA-256 4021151e95c367cfd94030d36b6dfb3c16792ade5767bb24825daf2e0602bb70; target translation/content/normal-modal-logic/completeness/frame-completeness.tex:253-257 bytes 15988-16691 SHA-256 5bf1c156200f7cbaabb6e41744fe328c15a08ef656e596f0ce0dfe2872c7f798; reader page pending.
+
+## te-Telu-IN-TE-T140 — filtrations and decidability / chapter wrapper and nine protected imports
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: వడపోతలు మరియు నిర్ణేయత / అధ్యాయ శీర్షిక, తొమ్మిది రక్షిత దిగుమతులు
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “filtrations and decidability / chapter wrapper and nine protected imports” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక పేజీలు మోడల్ filtrationకు ప్రత్యక్ష సాంకేతిక పదాన్ని ఇవ్వవు. వడపోత రూపాన్ని తరువాతి మూల నిర్వచనం, ఉదాహరణలతో మళ్లీ తనిఖీ చేయాలి; అధ్యాయంలోని దిగుమతి మార్గాలు రక్షిత నిర్మాణం.
+
+- Rationale: TE-P018/024లో సాధారణ తర్కం, వ్యుత్పత్తి పదజాలం చూశాం. నిర్ణేయతకు పూర్వ TE-T020/066/069లోని నిర్ణయించదగిన రూపాల కుటుంబాన్ని కొనసాగించాం. వడపోత అనేది OLP-0450 అధ్యాయ శీర్షికకు తాత్కాలిక రూపం; దాని ఖచ్చిత మోడల్ అర్థం తరువాతి OLP-0453 నిర్వచనంతో నియంత్రితం. nml, fil, S5, chapter/import identifiers and TeX hooks రక్షిత నిర్మాణ గుర్తులు.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: Filtrationsకు నిర్వచనాధీన తాత్కాలిక వడపోతలు, decidabilityకు పూర్వ నిర్ణేయత రూపాన్ని అధ్యాయ శీర్షికలో వాడి తొమ్మిది రక్షిత దిగుమతులను యథాతథం ఉంచడం [viable_alternative: ఎంపిక] | మోడల్ వడపోత అర్థం స్థానిక సాధారణ తర్క పేజీలో ప్రత్యక్షంగా ఉన్నట్లు చూపడం [viable_alternative: తిరస్కరణ] | దిగుమతి మార్గాలను శీర్షికతోపాటు అనువదించి TeX నిర్మాణం మార్చడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “వడపోతలు మరియు నిర్ణేయత / అధ్యాయ శీర్షిక, తొమ్మిది రక్షిత దిగుమతులు” is idiomatic and technically standard for “filtrations and decidability / chapter wrapper and nine protected imports” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T140-OCC-001; OLP-0450; OLP-0450-B004; source upstream/content/normal-modal-logic/filtrations/filtrations.tex:8 bytes 125-176 SHA-256 33219caedd7ed764901499b694eb234af0fcf15c1ccea29b9799a1c32d3b71af; target translation/content/normal-modal-logic/filtrations/filtrations.tex:8 bytes 125-210 SHA-256 41ff2a424170160eeb50cf9fa204308773722cbe1cddf8ad0f095d48620bdc78; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 

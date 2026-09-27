@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 449 of 722 draft units**. This log contains 139 terminology/sense decisions and 415 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 450 of 722 draft units**. This log contains 140 terminology/sense decisions and 415 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3343,6 +3343,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక పేజీలు ఈ మోడల్-ప్రత్యేక కానానికల్ ఫ్రేమ్ సిద్ధాంతాలను ప్రత్యక్షంగా నిరూపించవు. బలహీన సాంద్రత నిరూపణలో మూలం సూచించినా స్పష్టంగా చెప్పని చివరి అవైరుధ్య విరోధాన్ని OLTENMLCOMFRA-001లో ప్రకటించి వివరించాం.
 
 - Please double-check: Please double-check whether “ఫ్రేమ్ సంపూర్ణత / D-T-B-4-5 కానానికల్ అనురూపత / సీరియల్, స్వావర్తన, సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ / పాక్షిక ప్రమేయాత్మక, ప్రమేయాత్మక, బలహీన సాంద్ర” is idiomatic and technically standard for “frame completeness / D-T-B-4-5 canonical correspondence / serial, reflexive, symmetric, transitive, Euclidean / partially functional, functional, weakly dense” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T140 — filtrations and decidability / chapter wrapper and nine protected imports
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: వడపోతలు మరియు నిర్ణేయత / అధ్యాయ శీర్షిక, తొమ్మిది రక్షిత దిగుమతులు
+
+- Exact implementation: OLP-0450; normal-modal-logic/filtrations/filtrations; content/normal-modal-logic/filtrations/filtrations.tex:8 ↔ translation/content/normal-modal-logic/filtrations/filtrations.tex:8 (OLP-0450-B004); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P018/024లో సాధారణ తర్కం, వ్యుత్పత్తి పదజాలం చూశాం. నిర్ణేయతకు పూర్వ TE-T020/066/069లోని నిర్ణయించదగిన రూపాల కుటుంబాన్ని కొనసాగించాం. వడపోత అనేది OLP-0450 అధ్యాయ శీర్షికకు తాత్కాలిక రూపం; దాని ఖచ్చిత మోడల్ అర్థం తరువాతి OLP-0453 నిర్వచనంతో నియంత్రితం. nml, fil, S5, chapter/import identifiers and TeX hooks రక్షిత నిర్మాణ గుర్తులు.
+
+- Alternatives: Filtrationsకు నిర్వచనాధీన తాత్కాలిక వడపోతలు, decidabilityకు పూర్వ నిర్ణేయత రూపాన్ని అధ్యాయ శీర్షికలో వాడి తొమ్మిది రక్షిత దిగుమతులను యథాతథం ఉంచడం (ఎంపిక); మోడల్ వడపోత అర్థం స్థానిక సాధారణ తర్క పేజీలో ప్రత్యక్షంగా ఉన్నట్లు చూపడం (తిరస్కరణ); దిగుమతి మార్గాలను శీర్షికతోపాటు అనువదించి TeX నిర్మాణం మార్చడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక పేజీలు మోడల్ filtrationకు ప్రత్యక్ష సాంకేతిక పదాన్ని ఇవ్వవు. వడపోత రూపాన్ని తరువాతి మూల నిర్వచనం, ఉదాహరణలతో మళ్లీ తనిఖీ చేయాలి; అధ్యాయంలోని దిగుమతి మార్గాలు రక్షిత నిర్మాణం.
+
+- Please double-check: Please double-check whether “వడపోతలు మరియు నిర్ణేయత / అధ్యాయ శీర్షిక, తొమ్మిది రక్షిత దిగుమతులు” is idiomatic and technically standard for “filtrations and decidability / chapter wrapper and nine protected imports” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
