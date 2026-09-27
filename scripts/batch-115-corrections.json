@@ -1,0 +1,22 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0466",
+  "source_path": "content/normal-modal-logic/tableaux/more-soundness.tex",
+  "source_sha256": "8c68f92959ba86967753495c186b9f49a3da00247457511f5527e72e5a9eb936",
+  "audit_id": "OLTENMLTABMSN-20260927",
+  "audit_review_path": "evidence/OLP-0466-MODAL-TABLEAUX-MORE-SOUNDNESS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "8301e0a7fe33721b0685ab148ea4a9402f24cb0d508b67244ca93113b6f55b85",
+  "audit_findings_path": "evidence/OLP-0466-MODAL-TABLEAUX-MORE-SOUNDNESS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "2d5d613142e8c0e1850492f8287d0df6eb3bc8a8c6ecfdeab10aa9ba111685e0",
+  "previous_corrections": 436,
+  "treatments": {
+    "OLTENMLTABMSN-001": {
+      "target_line": 214,
+      "body_treatment": "4r Box నిరూపణలో మూలంలోని f(sigma).n లోక సూచికను పూర్వసూచిక అర్థనిర్దేశానికి సరిపోయే f(sigma.n)గా మార్చి పక్కనే ప్రకటించాం; యూక్లిడియన్ బాణాలు మారలేదు."
+    },
+    "OLTENMLTABMSN-002": {
+      "target_line": 227,
+      "body_treatment": "4r Diamond నిష్కర్షను T Box B నుంచి నియమ పట్టికతో సరిపోయే F Diamond Bగా, లోక సూచికను f(sigma).n నుంచి f(sigma.n)గా సరిచేసి పక్కనే ప్రకటించాం."
+    }
+  }
+}

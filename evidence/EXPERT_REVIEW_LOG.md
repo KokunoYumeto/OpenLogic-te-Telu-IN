@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 465 of 722 draft units**. This log contains 155 terminology/sense decisions and 436 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 466 of 722 draft units**. This log contains 156 terminology/sense decisions and 438 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3727,6 +3727,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక సాక్షులు modal tableau నియమాలకు లేదా వాటి సంపూర్ణతకు ప్రత్యక్ష సాంకేతిక సాక్ష్యం కాదు. సవరించిన S5 చెట్టు అదే-agent నియమ తనిఖీ మాత్రమే; స్వతంత్ర నిపుణ సమీక్ష, TeX దృశ్య తనిఖీ ఇంకా లేవు.
 
 - Please double-check: Please double-check whether “అదనపు ప్రాప్యత టాబ్లో నియమాలు T/D/B/4/4r / తర్క-ఫ్రేమ్ పట్టిక / S5లో 5 స్వీకృత ఉదాహరణ” is idiomatic and technically standard for “additional accessibility tableau rules T/D/B/4/4r / logic-frame table / S5 axiom 5 example” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T156 — soundness of T/D/B/4/4r tableau rules / reflexive, serial, symmetric, transitive, Euclidean accessibility
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: T/D/B/4/4r టాబ్లో నియమాల నిర్దుష్టత / స్వావర్తన, సీరియల్, సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ ప్రాప్యత
+
+- Exact implementation: OLP-0466; normal-modal-logic/tableaux/more-soundness; content/normal-modal-logic/tableaux/more-soundness.tex:11 ↔ translation/content/normal-modal-logic/tableaux/more-soundness.tex:11 (OLP-0466-B005); printed/PDF page pending; OLP-0466; normal-modal-logic/tableaux/more-soundness; content/normal-modal-logic/tableaux/more-soundness.tex:18-25 ↔ translation/content/normal-modal-logic/tableaux/more-soundness.tex:19-25 (OLP-0466-B007); printed/PDF page pending; OLP-0466; normal-modal-logic/tableaux/more-soundness; content/normal-modal-logic/tableaux/more-soundness.tex:54-61 ↔ translation/content/normal-modal-logic/tableaux/more-soundness.tex:58-64 (OLP-0466-B010); printed/PDF page pending; OLP-0466; normal-modal-logic/tableaux/more-soundness; content/normal-modal-logic/tableaux/more-soundness.tex:92-99 ↔ translation/content/normal-modal-logic/tableaux/more-soundness.tex:99-105 (OLP-0466-B013); printed/PDF page pending; OLP-0466; normal-modal-logic/tableaux/more-soundness; content/normal-modal-logic/tableaux/more-soundness.tex:134-141 ↔ translation/content/normal-modal-logic/tableaux/more-soundness.tex:142-148 (OLP-0466-B016); printed/PDF page pending; OLP-0466; normal-modal-logic/tableaux/more-soundness; content/normal-modal-logic/tableaux/more-soundness.tex:178-185 ↔ translation/content/normal-modal-logic/tableaux/more-soundness.tex:191-197 (OLP-0466-B019); printed/PDF page pending; OLP-0466; normal-modal-logic/tableaux/more-soundness; content/normal-modal-logic/tableaux/more-soundness.tex:222-226 ↔ translation/content/normal-modal-logic/tableaux/more-soundness.tex:254-258 (OLP-0466-B022); printed/PDF page pending
+
+- Authorities actually checked: TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-T114/152/155లోని ప్రాప్యత, నియమ పదాలను కొనసాగించాం. మూల T/D/B/4/4r నిరూపణల్లో రెండు చిహ్న శాఖలు, R బాణాల మార్గాలు, షరతు వ్యాయామాలు నిలిచాయి. 4r Boxలో తప్పు f(sigma).nను f(sigma.n)గా; 4r Diamondలో అదనంగా T Box B నిష్కర్షను F Diamond Bగా రెండు ప్రకటిత మూల సవరణలతో సరిచేశాం. టాబ్లో, సీరియల్, యూక్లిడియన్ are established edition borrowings; T/D/B/4/4r rule names, R, sigma, satisfaction macros, feature tags and cross-reference identifiers remain protected notation.
+
+- Alternatives: T స్వావర్తన, D సీరియల్, B సౌష్ఠవ, 4 సంక్రామక, 4r యూక్లిడియన్ నిర్దుష్టత కేసులు, షరతు వ్యాయామాలు నిలిపి 4r రెండు లోక/నిష్కర్ష తప్పులను పక్కన ప్రకటించి సరిచేయడం (ఎంపిక); 4r Boxలో లోకం f(sigma).nను సరైన ప్రపంచ సూచికగా స్వీకరించడం (తిరస్కరణ); 4r Diamondలో T Box Bని ఆ నియమ నిష్కర్షగా ఉంచడం (తిరస్కరణ); probBox/probDiamond వ్యాయామాలకు పూర్తి నిరూపణలు జోడించినట్లు చెప్పడం (తిరస్కరణ); స్థానిక సాధారణ సంబంధ పేజీనే modal నిర్దుష్టత ప్రత్యక్ష నిరూపణగా చూపడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక సాక్షులు modal rule soundnessకు ప్రత్యక్ష సాంకేతిక సాక్ష్యం కాదు. కొన్ని శాఖలు probBox/probDiamond ట్యాగ్‌ల వల్ల వ్యాయామాలుగా ఉంటాయి. పూర్తి TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Please double-check: Please double-check whether “T/D/B/4/4r టాబ్లో నియమాల నిర్దుష్టత / స్వావర్తన, సీరియల్, సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ ప్రాప్యత” is idiomatic and technically standard for “soundness of T/D/B/4/4r tableau rules / reflexive, serial, symmetric, transitive, Euclidean accessibility” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -14191,3 +14215,51 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Does the S5 tableau actually close for the edition-defined axiom 5 Diamond A -> Box Diamond A, using distinct fresh prefixes 1.1 and 1.2 and the Euclidean 4r Diamond step?
+
+## REV-OLTENMLTABMSN-001 — OLTENMLTABMSN-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: 4r Box నిరూపణలో మూలంలోని f(sigma).n లోక సూచికను పూర్వసూచిక అర్థనిర్దేశానికి సరిపోయే f(sigma.n)గా మార్చి పక్కనే ప్రకటించాం; యూక్లిడియన్ బాణాలు మారలేదు.
+
+- Exact implementation: OLP-0466; normal-modal-logic/tableaux/more-soundness; more-soundness.tex lines 189-200 ↔ translation/content/normal-modal-logic/tableaux/more-soundness.tex:214 (OLP-0466-B020); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLTABMSN-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: 4r Box నిరూపణలో మూలంలోని f(sigma).n లోక సూచికను పూర్వసూచిక అర్థనిర్దేశానికి సరిపోయే f(sigma.n)గా మార్చి పక్కనే ప్రకటించాం; యూక్లిడియన్ బాణాలు మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the 4r Box proof evaluate its premise at f(sigma.n), not the ill-formed f(sigma).n, while keeping the Euclidean edge argument?
+
+## REV-OLTENMLTABMSN-002 — OLTENMLTABMSN-002
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: 4r Diamond నిష్కర్షను T Box B నుంచి నియమ పట్టికతో సరిపోయే F Diamond Bగా, లోక సూచికను f(sigma).n నుంచి f(sigma.n)గా సరిచేసి పక్కనే ప్రకటించాం.
+
+- Exact implementation: OLP-0466; normal-modal-logic/tableaux/more-soundness; more-soundness.tex lines 201-212 ↔ translation/content/normal-modal-logic/tableaux/more-soundness.tex:227 (OLP-0466-B020); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLTABMSN-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: 4r Diamond నిష్కర్షను T Box B నుంచి నియమ పట్టికతో సరిపోయే F Diamond Bగా, లోక సూచికను f(sigma).n నుంచి f(sigma.n)గా సరిచేసి పక్కనే ప్రకటించాం.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the 4r Diamond proof conclude F Diamond B at sigma and evaluate its premise at f(sigma.n), consistently with the rule table and final line?

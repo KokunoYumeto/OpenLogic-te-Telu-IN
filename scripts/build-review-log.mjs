@@ -965,6 +965,15 @@ locations['TE-T155']=[
  L('content/normal-modal-logic/tableaux/more-rules.tex',160,184,161,194,'closed tableau','సంవృత'),
  L('content/normal-modal-logic/tableaux/more-rules.tex',186,196,196,206,'Give closed','ఇవ్వండి')
 ];
+locations['TE-T156']=[
+ L('content/normal-modal-logic/tableaux/more-soundness.tex',11,16,11,17,'Soundness for Additional Rules','అదనపు నియమాల నిర్దుష్టత'),
+ L('content/normal-modal-logic/tableaux/more-soundness.tex',18,46,19,50,'reflexive models','స్వావర్తన నమూనాలకు'),
+ L('content/normal-modal-logic/tableaux/more-soundness.tex',54,84,58,91,'serial models','సీరియల్ నమూనాలకు'),
+ L('content/normal-modal-logic/tableaux/more-soundness.tex',92,126,99,134,'symmetric models','సౌష్ఠవ నమూనాలకు'),
+ L('content/normal-modal-logic/tableaux/more-soundness.tex',134,170,142,183,'transitive models','సంక్రామక నమూనాలకు'),
+ L('content/normal-modal-logic/tableaux/more-soundness.tex',178,214,191,246,'euclidean models','యూక్లిడియన్ నమూనాలకు'),
+ L('content/normal-modal-logic/tableaux/more-soundness.tex',222,226,254,258,'respective classes','సంబంధిత నమూనా')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -1106,6 +1115,7 @@ alternatives['TE-T152']=['T Box/F Diamondలకు ఉపయోగించి�
 alternatives['TE-T153']=['Box, Diamond షరతు ఉదాహరణల పూర్తి చెట్లను, నాలుగు పరిష్కరించని సమస్యలను, K శీర్షికలో రక్షిత టాబ్లో హుక్‌ను నిలపడం (ఎంపిక)','వ్యాయామాలకు సమాధానాలు చేర్చి మూల పాఠ్య పరిధిని మార్చడం (తిరస్కరణ)','ఒక modal operator మాత్రమే ఉన్న ఎడిషన్‌లోనూ రెండో షరతు ఉదాహరణను బలవంతంగా చూపడం (తిరస్కరణ)','చెట్టు లోని 1.1 పూర్వసూచిక లేదా సంవృత గుర్తులను మార్చడం (తిరస్కరణ)'];
 alternatives['TE-T154']=['f:P->W అర్థనిర్దేశం, R సంరక్షణ, T/F సంతృప్తి, శాఖ సంతృప్తి, ఉపయోగించిన/కొత్త సాక్షి, ఆరు ప్రకటిత మూల సవరణలు, మూల వ్యాయామాలు/tagfalse పరిమితిని నిలపడం (ఎంపిక)','ప్రతినమూనాలో A సత్యమని చెప్పడం (తిరస్కరణ)','F Box B, T Diamond B నుంచి A నిష్కర్షలు తీయడం (తిరస్కరణ)','రెండు శాఖల నియమాలను రెండు పూర్వాధారాల నియమాలుగా చెప్పడం (తిరస్కరణ)','Gamma Proves A పరికల్పననే పర్యవసాన నిష్కర్షగా పునరావృతం చేయడం (తిరస్కరణ)','సాధారణ సంబంధ/తర్క పేజీలు మోడల్ నిర్దుష్టతను నేరుగా నిరూపిస్తాయని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T155']=['T/D/B/4/4r పట్టిక, ఆరు తర్కాల ప్రాప్యత వర్గీకరణ, ఉపయోగించిన sigma.n షరతు, ఆరు పరిష్కరించని సమస్యలు నిలిపి, S5లో 5 స్వీకృత ఉదాహరణను స్థిర నిర్వచనానికి సరిపోయే సంవృత చెట్టుగా ఒక ప్రకటిత మూల సవరణతో మార్చడం (ఎంపిక)','Box A implies Box Diamond Aనే 5 స్వీకృతమని చెప్పడం (తిరస్కరణ)','S5 ఉదాహరణను వేరే సూత్రానికి మార్చి మూల 5 వాదనను వదలడం (తిరస్కరణ)','కొత్త 1.2 సాక్షిని ఉపయోగించిన పూర్వసూచికగా ముందుగానే భావించడం (తిరస్కరణ)','స్థానిక సాధారణ సంబంధ పేజీలో modal 4r నియమం ప్రత్యక్షంగా ఉందని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T156']=['T స్వావర్తన, D సీరియల్, B సౌష్ఠవ, 4 సంక్రామక, 4r యూక్లిడియన్ నిర్దుష్టత కేసులు, షరతు వ్యాయామాలు నిలిపి 4r రెండు లోక/నిష్కర్ష తప్పులను పక్కన ప్రకటించి సరిచేయడం (ఎంపిక)','4r Boxలో లోకం f(sigma).nను సరైన ప్రపంచ సూచికగా స్వీకరించడం (తిరస్కరణ)','4r Diamondలో T Box Bని ఆ నియమ నిష్కర్షగా ఉంచడం (తిరస్కరణ)','probBox/probDiamond వ్యాయామాలకు పూర్తి నిరూపణలు జోడించినట్లు చెప్పడం (తిరస్కరణ)','స్థానిక సాధారణ సంబంధ పేజీనే modal నిర్దుష్టత ప్రత్యక్ష నిరూపణగా చూపడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -1121,7 +1131,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T155 record the Batch 025--Batch 114 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T156 record the Batch 025--Batch 115 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1471,6 +1481,8 @@ const correctionQuestions={
  ,'OLTENMLTABSOU-005':'Are the three later rule cases correctly described as one-premise, two-branch inferences rather than two-premise rules?'
  ,'OLTENMLTABSOU-006':'Does the contradiction proof conclude Gamma entails A, matching the corollary, rather than repeat Gamma proves A?'
  ,'OLTENMLTABMRU-001':'Does the S5 tableau actually close for the edition-defined axiom 5 Diamond A -> Box Diamond A, using distinct fresh prefixes 1.1 and 1.2 and the Euclidean 4r Diamond step?'
+ ,'OLTENMLTABMSN-001':'Does the 4r Box proof evaluate its premise at f(sigma.n), not the ill-formed f(sigma).n, while keeping the Euclidean edge argument?'
+ ,'OLTENMLTABMSN-002':'Does the 4r Diamond proof conclude F Diamond B at sigma and evaluate its premise at f(sigma.n), consistently with the rule table and final line?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLTABMSN-20260927",
+  "unit_id": "OLP-0466",
+  "source_path": "content/normal-modal-logic/tableaux/more-soundness.tex",
+  "source_sha256": "8c68f92959ba86967753495c186b9f49a3da00247457511f5527e72e5a9eb936",
+  "findings": [
+    {
+      "finding_id": "OLTENMLTABMSN-001",
+      "source_locator": "more-soundness.tex lines 189-200",
+      "classification": "four_r_box_modal_premise_wrong_world_notation",
+      "source_issue": "The Box premise at prefix sigma.n is later cited at f(sigma).n, which is not a world denoted by any prefix under the defined interpretation.",
+      "minimal_treatment": "Cite the premise at f(sigma.n) as already used in the same proof and disclose; retain the Euclidean edge and conclusion.",
+      "expected_core_math_delta": {"source_only": ["$\\mSat{M}{\\Box!B}[f(\\sigma).n]$"], "target_only": ["$\\mSat{M}{\\Box!B}[f(\\sigma.n)]$"]}
+    },
+    {
+      "finding_id": "OLTENMLTABMSN-002",
+      "source_locator": "more-soundness.tex lines 201-212",
+      "classification": "four_r_diamond_new_conclusion_wrong_sign_operator_and_world_notation",
+      "source_issue": "The new signed conclusion is printed T Box B rather than F Diamond B, and the premise is cited at f(sigma).n instead of f(sigma.n).",
+      "minimal_treatment": "Use F Diamond B at sigma in the new-conclusion statement and cite the source premise at f(sigma.n), matching the rule table and final conclusion; disclose both changes.",
+      "expected_core_math_delta": {"source_only": ["$\\sFmla{\\True}{\\Box!B}[\\sigma]$", "$\\mSat/{M}{\\Diamond!B}[f(\\sigma).n]$"], "target_only": ["$\\sFmla{\\False}{\\Diamond!B}[\\sigma]$", "$\\mSat/{M}{\\Diamond!B}[f(\\sigma.n)]$"]}
+    }
+  ]
+}

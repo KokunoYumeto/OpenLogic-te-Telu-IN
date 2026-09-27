@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 465 of 722 draft units**. This view selects 489 of 591 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 466 of 722 draft units**. This view selects 491 of 594 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4893,3 +4893,23 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0465; normal-modal-logic/tableaux/more-rules; translation/content/normal-modal-logic/tableaux/more-rules.tex:165; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the S5 tableau actually close for the edition-defined axiom 5 Diamond A -> Box Diamond A, using distinct fresh prefixes 1.1 and 1.2 and the Euclidean 4r Diamond step?
+
+## REV-OLTENMLTABMSN-001 — OLTENMLTABMSN-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: 4r Box నిరూపణలో మూలంలోని f(sigma).n లోక సూచికను పూర్వసూచిక అర్థనిర్దేశానికి సరిపోయే f(sigma.n)గా మార్చి పక్కనే ప్రకటించాం; యూక్లిడియన్ బాణాలు మారలేదు.
+
+- Occurrences: OLP-0466; normal-modal-logic/tableaux/more-soundness; translation/content/normal-modal-logic/tableaux/more-soundness.tex:214; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the 4r Box proof evaluate its premise at f(sigma.n), not the ill-formed f(sigma).n, while keeping the Euclidean edge argument?
+
+## REV-OLTENMLTABMSN-002 — OLTENMLTABMSN-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: 4r Diamond నిష్కర్షను T Box B నుంచి నియమ పట్టికతో సరిపోయే F Diamond Bగా, లోక సూచికను f(sigma).n నుంచి f(sigma.n)గా సరిచేసి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0466; normal-modal-logic/tableaux/more-soundness; translation/content/normal-modal-logic/tableaux/more-soundness.tex:227; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the 4r Diamond proof conclude F Diamond B at sigma and evaluate its premise at f(sigma.n), consistently with the rule table and final line?

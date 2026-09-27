@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **465 of 722 source units drafted**. This readable view contains all 591 decisions and 1356 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **466 of 722 source units drafted**. This readable view contains all 594 decisions and 1365 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4718,6 +4718,38 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T155-OCC-004; OLP-0465; OLP-0465-B009; source upstream/content/normal-modal-logic/tableaux/more-rules.tex:101-157 bytes 2936-4802 SHA-256 1763d19e944f908c2890c6918b0197280a38ce9932867b28f563a7140b6d9c48; target translation/content/normal-modal-logic/tableaux/more-rules.tex:102-158 bytes 3395-5541 SHA-256 5fd5066ca6c473b8f77b90efdba42c3786e7d7b0c308dfe165eb5bc3dc2bb651; reader page pending.
   - te-Telu-IN-TE-T155-OCC-005; OLP-0465; OLP-0465-B010; source upstream/content/normal-modal-logic/tableaux/more-rules.tex:160-184 bytes 4804-5695 SHA-256 1763d19e944f908c2890c6918b0197280a38ce9932867b28f563a7140b6d9c48; target translation/content/normal-modal-logic/tableaux/more-rules.tex:161-194 bytes 5543-7245 SHA-256 5fd5066ca6c473b8f77b90efdba42c3786e7d7b0c308dfe165eb5bc3dc2bb651; reader page pending.
   - te-Telu-IN-TE-T155-OCC-006; OLP-0465; OLP-0465-B011; source upstream/content/normal-modal-logic/tableaux/more-rules.tex:186-196 bytes 5696-6024 SHA-256 1763d19e944f908c2890c6918b0197280a38ce9932867b28f563a7140b6d9c48; target translation/content/normal-modal-logic/tableaux/more-rules.tex:196-206 bytes 7246-7662 SHA-256 5fd5066ca6c473b8f77b90efdba42c3786e7d7b0c308dfe165eb5bc3dc2bb651; reader page pending.
+
+## te-Telu-IN-TE-T156 — soundness of T/D/B/4/4r tableau rules / reflexive, serial, symmetric, transitive, Euclidean accessibility
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: T/D/B/4/4r టాబ్లో నియమాల నిర్దుష్టత / స్వావర్తన, సీరియల్, సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ ప్రాప్యత
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “soundness of T/D/B/4/4r tableau rules / reflexive, serial, symmetric, transitive, Euclidean accessibility” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక సాక్షులు modal rule soundnessకు ప్రత్యక్ష సాంకేతిక సాక్ష్యం కాదు. కొన్ని శాఖలు probBox/probDiamond ట్యాగ్‌ల వల్ల వ్యాయామాలుగా ఉంటాయి. పూర్తి TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.
+
+- Rationale: TE-T114/152/155లోని ప్రాప్యత, నియమ పదాలను కొనసాగించాం. మూల T/D/B/4/4r నిరూపణల్లో రెండు చిహ్న శాఖలు, R బాణాల మార్గాలు, షరతు వ్యాయామాలు నిలిచాయి. 4r Boxలో తప్పు f(sigma).nను f(sigma.n)గా; 4r Diamondలో అదనంగా T Box B నిష్కర్షను F Diamond Bగా రెండు ప్రకటిత మూల సవరణలతో సరిచేశాం. టాబ్లో, సీరియల్, యూక్లిడియన్ are established edition borrowings; T/D/B/4/4r rule names, R, sigma, satisfaction macros, feature tags and cross-reference identifiers remain protected notation.
+
+- Authorities checked: TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: T స్వావర్తన, D సీరియల్, B సౌష్ఠవ, 4 సంక్రామక, 4r యూక్లిడియన్ నిర్దుష్టత కేసులు, షరతు వ్యాయామాలు నిలిపి 4r రెండు లోక/నిష్కర్ష తప్పులను పక్కన ప్రకటించి సరిచేయడం [viable_alternative: ఎంపిక] | 4r Boxలో లోకం f(sigma).nను సరైన ప్రపంచ సూచికగా స్వీకరించడం [viable_alternative: తిరస్కరణ] | 4r Diamondలో T Box Bని ఆ నియమ నిష్కర్షగా ఉంచడం [viable_alternative: తిరస్కరణ] | probBox/probDiamond వ్యాయామాలకు పూర్తి నిరూపణలు జోడించినట్లు చెప్పడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ సంబంధ పేజీనే modal నిర్దుష్టత ప్రత్యక్ష నిరూపణగా చూపడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “T/D/B/4/4r టాబ్లో నియమాల నిర్దుష్టత / స్వావర్తన, సీరియల్, సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ ప్రాప్యత” is idiomatic and technically standard for “soundness of T/D/B/4/4r tableau rules / reflexive, serial, symmetric, transitive, Euclidean accessibility” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T156-OCC-001; OLP-0466; OLP-0466-B005; source upstream/content/normal-modal-logic/tableaux/more-soundness.tex:11 bytes 187-230 SHA-256 8c68f92959ba86967753495c186b9f49a3da00247457511f5527e72e5a9eb936; target translation/content/normal-modal-logic/tableaux/more-soundness.tex:11 bytes 181-259 SHA-256 ff0de40bd20f773548ac54e9febc72def50f3fff82836a533750de003246c998; reader page pending.
+  - te-Telu-IN-TE-T156-OCC-002; OLP-0466; OLP-0466-B007; source upstream/content/normal-modal-logic/tableaux/more-soundness.tex:18-25 bytes 450-696 SHA-256 8c68f92959ba86967753495c186b9f49a3da00247457511f5527e72e5a9eb936; target translation/content/normal-modal-logic/tableaux/more-soundness.tex:19-25 bytes 840-1254 SHA-256 ff0de40bd20f773548ac54e9febc72def50f3fff82836a533750de003246c998; reader page pending.
+  - te-Telu-IN-TE-T156-OCC-003; OLP-0466; OLP-0466-B010; source upstream/content/normal-modal-logic/tableaux/more-soundness.tex:54-61 bytes 1909-2152 SHA-256 8c68f92959ba86967753495c186b9f49a3da00247457511f5527e72e5a9eb936; target translation/content/normal-modal-logic/tableaux/more-soundness.tex:58-64 bytes 3143-3545 SHA-256 ff0de40bd20f773548ac54e9febc72def50f3fff82836a533750de003246c998; reader page pending.
+  - te-Telu-IN-TE-T156-OCC-004; OLP-0466; OLP-0466-B013; source upstream/content/normal-modal-logic/tableaux/more-soundness.tex:92-99 bytes 3474-3720 SHA-256 8c68f92959ba86967753495c186b9f49a3da00247457511f5527e72e5a9eb936; target translation/content/normal-modal-logic/tableaux/more-soundness.tex:99-105 bytes 5577-5973 SHA-256 ff0de40bd20f773548ac54e9febc72def50f3fff82836a533750de003246c998; reader page pending.
+  - te-Telu-IN-TE-T156-OCC-005; OLP-0466; OLP-0466-B016; source upstream/content/normal-modal-logic/tableaux/more-soundness.tex:134-141 bytes 5246-5493 SHA-256 8c68f92959ba86967753495c186b9f49a3da00247457511f5527e72e5a9eb936; target translation/content/normal-modal-logic/tableaux/more-soundness.tex:142-148 bytes 8243-8651 SHA-256 ff0de40bd20f773548ac54e9febc72def50f3fff82836a533750de003246c998; reader page pending.
+  - te-Telu-IN-TE-T156-OCC-006; OLP-0466; OLP-0466-B019; source upstream/content/normal-modal-logic/tableaux/more-soundness.tex:178-185 bytes 7252-7501 SHA-256 8c68f92959ba86967753495c186b9f49a3da00247457511f5527e72e5a9eb936; target translation/content/normal-modal-logic/tableaux/more-soundness.tex:191-197 bytes 11392-11821 SHA-256 ff0de40bd20f773548ac54e9febc72def50f3fff82836a533750de003246c998; reader page pending.
+  - te-Telu-IN-TE-T156-OCC-007; OLP-0466; OLP-0466-B022; source upstream/content/normal-modal-logic/tableaux/more-soundness.tex:222-226 bytes 9204-9368 SHA-256 8c68f92959ba86967753495c186b9f49a3da00247457511f5527e72e5a9eb936; target translation/content/normal-modal-logic/tableaux/more-soundness.tex:254-258 bytes 15431-15703 SHA-256 ff0de40bd20f773548ac54e9febc72def50f3fff82836a533750de003246c998; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -16134,3 +16166,55 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLTABMRU-001-OCC-001; OLP-0465; OLP-0465-B010; source upstream/content/normal-modal-logic/tableaux/more-rules.tex:160-184 bytes 4804-5695 SHA-256 1763d19e944f908c2890c6918b0197280a38ce9932867b28f563a7140b6d9c48; target translation/content/normal-modal-logic/tableaux/more-rules.tex:165 bytes 5729-5826 SHA-256 5fd5066ca6c473b8f77b90efdba42c3786e7d7b0c308dfe165eb5bc3dc2bb651; reader page pending.
+
+## te-Telu-IN-OLTENMLTABMSN-001 — OLTENMLTABMSN-001: four r box modal premise wrong world notation
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: 4r Box నిరూపణలో మూలంలోని f(sigma).n లోక సూచికను పూర్వసూచిక అర్థనిర్దేశానికి సరిపోయే f(sigma.n)గా మార్చి పక్కనే ప్రకటించాం; యూక్లిడియన్ బాణాలు మారలేదు.
+
+- Intended sense: Repair the audited four r box modal premise wrong world notation at more-soundness.tex lines 189-200, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLTABMSN-20260927:OLTENMLTABMSN-001 [checked_supports], content/normal-modal-logic/tableaux/more-soundness.tex; more-soundness.tex lines 189-200; four_r_box_modal_premise_wrong_world_notation; 4r Box నిరూపణలో మూలంలోని f(sigma).n లోక సూచికను పూర్వసూచిక అర్థనిర్దేశానికి సరిపోయే f(sigma.n)గా మార్చి పక్కనే ప్రకటించాం; యూక్లిడియన్ బాణాలు మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the 4r Box proof evaluate its premise at f(sigma.n), not the ill-formed f(sigma).n, while keeping the Euclidean edge argument?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLTABMSN-001-OCC-001; OLP-0466; OLP-0466-B020; source upstream/content/normal-modal-logic/tableaux/more-soundness.tex:187-214 bytes 7502-9071 SHA-256 8c68f92959ba86967753495c186b9f49a3da00247457511f5527e72e5a9eb936; target translation/content/normal-modal-logic/tableaux/more-soundness.tex:214 bytes 12830-12884 SHA-256 ff0de40bd20f773548ac54e9febc72def50f3fff82836a533750de003246c998; reader page pending.
+
+## te-Telu-IN-OLTENMLTABMSN-002 — OLTENMLTABMSN-002: four r diamond new conclusion wrong sign operator and world notation
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: 4r Diamond నిష్కర్షను T Box B నుంచి నియమ పట్టికతో సరిపోయే F Diamond Bగా, లోక సూచికను f(sigma).n నుంచి f(sigma.n)గా సరిచేసి పక్కనే ప్రకటించాం.
+
+- Intended sense: Repair the audited four r diamond new conclusion wrong sign operator and world notation at more-soundness.tex lines 201-212, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLTABMSN-20260927:OLTENMLTABMSN-002 [checked_supports], content/normal-modal-logic/tableaux/more-soundness.tex; more-soundness.tex lines 201-212; four_r_diamond_new_conclusion_wrong_sign_operator_and_world_notation; 4r Diamond నిష్కర్షను T Box B నుంచి నియమ పట్టికతో సరిపోయే F Diamond Bగా, లోక సూచికను f(sigma).n నుంచి f(sigma.n)గా సరిచేసి పక్కనే ప్రకటించాం..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the 4r Diamond proof conclude F Diamond B at sigma and evaluate its premise at f(sigma.n), consistently with the rule table and final line?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLTABMSN-002-OCC-001; OLP-0466; OLP-0466-B020; source upstream/content/normal-modal-logic/tableaux/more-soundness.tex:187-214 bytes 7502-9071 SHA-256 8c68f92959ba86967753495c186b9f49a3da00247457511f5527e72e5a9eb936; target translation/content/normal-modal-logic/tableaux/more-soundness.tex:227 bytes 13908-13966 SHA-256 ff0de40bd20f773548ac54e9febc72def50f3fff82836a533750de003246c998; reader page pending.

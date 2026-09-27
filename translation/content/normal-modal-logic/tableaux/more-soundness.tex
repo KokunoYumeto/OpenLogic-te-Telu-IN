@@ -1,0 +1,260 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: more-soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{msn}
+
+\olsection{అదనపు నియమాల నిర్దుష్టత}
+
+ఒక నమూనా వర్గంలోని ఏదో నమూనాలో \tetoken{ఒక టాబ్లో}{!!a{tableau}}
+శాఖ సంతృప్తిపరచదగినదైనప్పుడల్లా, నియమం వర్తింపజేసిన
+తర్వాతి శాఖ కూడా ఆ వర్గంలోని ఒక నమూనాలో
+సంతృప్తిపరచదగినదైతే, ఆ నియమం ఆ నమూనా వర్గానికి
+\emph{నిర్దుష్టమైనది} అంటాం.
+
+\begin{prop}
+  \ollabel{prop:soundness-T}
+  \iftag{prvBox}{\Ax{T}$\Box$}{}%
+  \iftag{notprvBox,notprvDiamond}{}{ మరియు }%
+  \iftag{prvDiamond}{\Ax{T}$\Diamond$}{}
+  \iftag{notprvBox,notprvDiamond}{స్వావర్తన నమూనాలకు నిర్దుష్టమైనది.}{స్వావర్తన నమూనాలకు నిర్దుష్టమైనవి.}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvBox,prvDiamond}
+\tagitem{prvBox}{$\sFmla{\True}{\Box !B}[\sigma] \in \Gamma$కు
+  T$\Box$ వర్తింపజేసి శాఖను విస్తరిస్తాం:
+  \iftag{probBox}{వ్యాయామం.}{దీనివల్ల శాఖపై కొత్త
+    \tetoken{చిహ్నిత సూత్రం}{!!{signed
+      formula}}~$\sFmla{\True}{!B}[\sigma]$ వస్తుంది.
+    $\mSat{M}{\Gamma}[f]$, ముఖ్యంగా
+    $\mSat{M}{\Box !B}[f(\sigma)]$ అనుకుందాం. $R$
+    స్వావర్తన సంబంధం కాబట్టి $Rf(\sigma)f(\sigma)$.
+    అందువల్ల $\mSat{M}{!B}[f(\sigma)]$; అంటే~$\mModel{M}, f$,
+    $\sFmla{\True}{!B}[\sigma]$ను సంతృప్తిపరుస్తుంది.}}{}
+\tagitem{prvDiamond}{$\sFmla{\False}{\Diamond !B}[\sigma] \in \Gamma$కు
+  T$\Diamond$ వర్తింపజేసి శాఖను విస్తరిస్తాం:
+  \iftag{probDiamond}{వ్యాయామం.}{దీనివల్ల శాఖపై కొత్త
+    \tetoken{చిహ్నిత సూత్రం}{!!{signed
+      formula}}~$\sFmla{\False}{!B}[\sigma]$ వస్తుంది.
+    $\mSat{M}{\Gamma}[f]$, ముఖ్యంగా
+    $\mSat/{M}{\Diamond !B}[f(\sigma)]$ అనుకుందాం. $R$
+    స్వావర్తన సంబంధం కాబట్టి $Rf(\sigma)f(\sigma)$.
+    అందువల్ల $\mSat/{M}{!B}[f(\sigma)]$; అంటే~$\mModel{M}, f$,
+    $\sFmla{\False}{!B}[\sigma]$ను సంతృప్తిపరుస్తుంది.}}{}
+\end{tagenumerate}
+\end{proof}
+
+\tagprob{probBox,probDiamond}
+\begin{prob}
+  \olref[nml][tab][msn]{prop:soundness-T} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+\tagendprob
+
+\begin{prop}
+  \ollabel{prop:soundness-D}
+  \iftag{prvBox}{\Ax{D}$\Box$}{}%
+  \iftag{notprvBox,notprvDiamond}{}{ మరియు }%
+  \iftag{prvDiamond}{\Ax{D}$\Diamond$}{}
+  \iftag{notprvBox,notprvDiamond}{సీరియల్ నమూనాలకు నిర్దుష్టమైనది.}{సీరియల్ నమూనాలకు నిర్దుష్టమైనవి.}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvBox,prvDiamond}
+\tagitem{prvBox}{$\sFmla{\True}{\Box !B}[\sigma] \in \Gamma$కు
+  D$\Box$ వర్తింపజేసి శాఖను విస్తరిస్తాం:
+  \iftag{probBox}{వ్యాయామం.}{దీనివల్ల శాఖపై కొత్త
+    \tetoken{చిహ్నిత సూత్రం}{!!{signed
+      formula}}~$\sFmla{\True}{\Diamond !B}[\sigma]$ వస్తుంది.
+    $\mSat{M}{\Gamma}[f]$, ముఖ్యంగా
+    $\mSat{M}{\Box !B}[f(\sigma)]$ అనుకుందాం. $R$
+    సీరియల్ కాబట్టి $Rf(\sigma)w$ అయ్యే $w \in W$ ఉంది.
+    అప్పుడు $\mSat{M}{!B}[w]$; కనుక
+    $\mSat{M}{\Diamond !B}[f(\sigma)]$. అందువల్ల~$\mModel{M}, f$,
+    $\sFmla{\True}{\Diamond!B}[\sigma]$ను సంతృప్తిపరుస్తుంది.}}{}
+\tagitem{prvDiamond}{$\sFmla{\False}{\Diamond !B}[\sigma] \in \Gamma$కు
+  D$\Diamond$ వర్తింపజేసి శాఖను విస్తరిస్తాం:
+  \iftag{probDiamond}{వ్యాయామం.}{దీనివల్ల శాఖపై కొత్త
+    \tetoken{చిహ్నిత సూత్రం}{!!{signed
+      formula}}~$\sFmla{\False}{\Box !B}[\sigma]$ వస్తుంది.
+    $\mSat{M}{\Gamma}[f]$, ముఖ్యంగా
+    $\mSat/{M}{\Diamond !B}[f(\sigma)]$ అనుకుందాం. $R$
+    సీరియల్ కాబట్టి $Rf(\sigma)w$ అయ్యే $w \in W$ ఉంది.
+    అప్పుడు $\mSat/{M}{!B}[w]$; కనుక
+    $\mSat/{M}{\Box !B}[f(\sigma)]$. అందువల్ల~$\mModel{M}, f$,
+    $\sFmla{\False}{\Box!B}[\sigma]$ను సంతృప్తిపరుస్తుంది.}}{}
+\end{tagenumerate}
+\end{proof}
+
+\tagprob{probBox,probDiamond}
+\begin{prob}
+  \olref[nml][tab][msn]{prop:soundness-D} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+\tagendprob
+
+\begin{prop}
+  \ollabel{prop:soundness-B}
+  \iftag{prvBox}{\Ax{B}$\Box$}{}%
+  \iftag{notprvBox,notprvDiamond}{}{ మరియు }%
+  \iftag{prvDiamond}{\Ax{B}$\Diamond$}{}
+  \iftag{notprvBox,notprvDiamond}{సౌష్ఠవ నమూనాలకు నిర్దుష్టమైనది.}{సౌష్ఠవ నమూనాలకు నిర్దుష్టమైనవి.}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvBox,prvDiamond}
+\tagitem{prvBox}{$\sFmla{\True}{\Box !B}[\sigma.n] \in \Gamma$కు
+  B$\Box$ వర్తింపజేసి శాఖను విస్తరిస్తాం:
+  \iftag{probBox}{వ్యాయామం.}{దీనివల్ల శాఖపై కొత్త
+    \tetoken{చిహ్నిత సూత్రం}{!!{signed
+      formula}}~$\sFmla{\True}{!B}[\sigma]$ వస్తుంది.
+    $\mSat{M}{\Gamma}[f]$, ముఖ్యంగా
+    $\mSat{M}{\Box !B}[f(\sigma.n)]$ అనుకుందాం.
+    $f$ శాఖ పూర్వసూచికలకు~$\mModel{M}$లో అర్థనిర్దేశం
+    కాబట్టి $Rf(\sigma)f(\sigma.n)$. $R$ సౌష్ఠవం కాబట్టి
+    $Rf(\sigma.n)f(\sigma)$. $\mSat{M}{\Box !B}[f(\sigma.n)]$
+    కాబట్టి $\mSat{M}{!B}[f(\sigma)]$. అందువల్ల~$\mModel{M}, f$,
+    $\sFmla{\True}{!B}[\sigma]$ను సంతృప్తిపరుస్తుంది.}}{}
+\tagitem{prvDiamond}{$\sFmla{\False}{\Diamond !B}[\sigma.n] \in \Gamma$కు
+  B$\Diamond$ వర్తింపజేసి శాఖను విస్తరిస్తాం:
+  \iftag{probDiamond}{వ్యాయామం.}{దీనివల్ల శాఖపై కొత్త
+    \tetoken{చిహ్నిత సూత్రం}{!!{signed
+      formula}}~$\sFmla{\False}{!B}[\sigma]$ వస్తుంది.
+    $\mSat{M}{\Gamma}[f]$, ముఖ్యంగా
+    $\mSat/{M}{\Diamond !B}[f(\sigma.n)]$ అనుకుందాం.
+    $f$ శాఖ పూర్వసూచికలకు~$\mModel{M}$లో అర్థనిర్దేశం
+    కాబట్టి $Rf(\sigma)f(\sigma.n)$. $R$ సౌష్ఠవం కాబట్టి
+    $Rf(\sigma.n)f(\sigma)$. $\mSat/{M}{\Diamond !B}[f(\sigma.n)]$
+    కాబట్టి $\mSat/{M}{!B}[f(\sigma)]$. అందువల్ల~$\mModel{M}, f$,
+    $\sFmla{\False}{!B}[\sigma]$ను సంతృప్తిపరుస్తుంది.}}{}
+\end{tagenumerate}
+\end{proof}
+
+\tagprob{probBox,probDiamond}
+\begin{prob}
+  \olref[nml][tab][msn]{prop:soundness-B} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+\tagendprob
+
+\begin{prop}
+  \ollabel{prop:soundness-4}
+  \iftag{prvBox}{\Ax{4}$\Box$}{}%
+  \iftag{notprvBox,notprvDiamond}{}{ మరియు }%
+  \iftag{prvDiamond}{\Ax{4}$\Diamond$}{}
+  \iftag{notprvBox,notprvDiamond}{సంక్రామక నమూనాలకు నిర్దుష్టమైనది.}{సంక్రామక నమూనాలకు నిర్దుష్టమైనవి.}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvBox,prvDiamond}
+\tagitem{prvBox}{$\sFmla{\True}{\Box !B}[\sigma] \in \Gamma$కు
+  4$\Box$ వర్తింపజేసి శాఖను విస్తరిస్తాం:
+  \iftag{probBox}{వ్యాయామం.}{దీనివల్ల శాఖపై కొత్త
+    \tetoken{చిహ్నిత సూత్రం}{!!{signed
+      formula}}~$\sFmla{\True}{\Box!B}[\sigma.n]$ వస్తుంది.
+    $\mSat{M}{\Gamma}[f]$, ముఖ్యంగా
+    $\mSat{M}{\Box !B}[f(\sigma)]$ అనుకుందాం. $f$
+    శాఖ పూర్వసూచికలకు~$\mModel{M}$లో అర్థనిర్దేశం,
+    $\sigma.n$ ఉపయోగించిన పూర్వసూచిక కాబట్టి
+    $Rf(\sigma)f(\sigma.n)$. $Rf(\sigma.n)w$ అయ్యే
+    ఏ లోకం~$w$నైనా తీసుకుందాం. $R$ సంక్రామక సంబంధం
+    కాబట్టి $Rf(\sigma)w$. $\mSat{M}{\Box !B}[f(\sigma)]$
+    కాబట్టి $\mSat{M}{!B}[w]$. కనుక
+    $\mSat{M}{\Box !B}[f(\sigma.n)]$; అంటే~$\mModel{M}, f$,
+    $\sFmla{\True}{\Box !B}[\sigma.n]$ను సంతృప్తిపరుస్తుంది.}}{}
+\tagitem{prvDiamond}{$\sFmla{\False}{\Diamond !B}[\sigma] \in \Gamma$కు
+  4$\Diamond$ వర్తింపజేసి శాఖను విస్తరిస్తాం:
+  \iftag{probDiamond}{వ్యాయామం.}{దీనివల్ల శాఖపై కొత్త
+    \tetoken{చిహ్నిత సూత్రం}{!!{signed
+      formula}}~$\sFmla{\False}{\Diamond!B}[\sigma.n]$ వస్తుంది.
+    $\mSat{M}{\Gamma}[f]$, ముఖ్యంగా
+    $\mSat/{M}{\Diamond !B}[f(\sigma)]$ అనుకుందాం. $f$
+    శాఖ పూర్వసూచికలకు~$\mModel{M}$లో అర్థనిర్దేశం,
+    $\sigma.n$ ఉపయోగించిన పూర్వసూచిక కాబట్టి
+    $Rf(\sigma)f(\sigma.n)$. $Rf(\sigma.n)w$ అయ్యే
+    ఏ లోకం~$w$నైనా తీసుకుందాం. $R$ సంక్రామక సంబంధం
+    కాబట్టి $Rf(\sigma)w$. $\mSat/{M}{\Diamond !B}[f(\sigma)]$
+    కాబట్టి $\mSat/{M}{!B}[w]$. కనుక
+    $\mSat/{M}{\Diamond !B}[f(\sigma.n)]$; అంటే~$\mModel{M}, f$,
+    $\sFmla{\False}{\Diamond !B}[\sigma.n]$ను సంతృప్తిపరుస్తుంది.}}{}
+\end{tagenumerate}
+\end{proof}
+
+\tagprob{probBox,probDiamond}
+\begin{prob}
+  \olref[nml][tab][msn]{prop:soundness-4} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+\tagendprob
+
+\begin{prop}
+  \ollabel{prop:soundness-4r}
+  \iftag{prvBox}{\Ax{4r}$\Box$}{}%
+  \iftag{notprvBox,notprvDiamond}{}{ మరియు }%
+  \iftag{prvDiamond}{\Ax{4r}$\Diamond$}{}
+  \iftag{notprvBox,notprvDiamond}{యూక్లిడియన్ నమూనాలకు నిర్దుష్టమైనది.}{యూక్లిడియన్ నమూనాలకు నిర్దుష్టమైనవి.}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvBox,prvDiamond}
+\tagitem{prvBox}{$\sFmla{\True}{\Box !B}[\sigma.n] \in \Gamma$కు
+  4r$\Box$ వర్తింపజేసి శాఖను విస్తరిస్తాం:
+  \iftag{probBox}{వ్యాయామం.}{దీనివల్ల శాఖపై కొత్త
+    \tetoken{చిహ్నిత సూత్రం}{!!{signed
+      formula}}~$\sFmla{\True}{\Box!B}[\sigma]$ వస్తుంది.
+    $\mSat{M}{\Gamma}[f]$, ముఖ్యంగా
+    $\mSat{M}{\Box !B}[f(\sigma.n)]$ అనుకుందాం. $f$
+    శాఖ పూర్వసూచికలకు~$\mModel{M}$లో అర్థనిర్దేశం
+    కాబట్టి $Rf(\sigma)f(\sigma.n)$. $Rf(\sigma)w$
+    అయ్యే ఏ లోకం~$w$నైనా తీసుకుందాం. $R$ యూక్లిడియన్
+    కాబట్టి $Rf(\sigma.n)w$.
+    $\mSat{M}{\Box !B}[f(\sigma.n)]$ కాబట్టి
+    $\mSat{M}{!B}[w]$.
+    \sourcecorrection{OLTENMLTABMSN-001}{ఈ 4r$\Box$
+      నిరూపణలో మూలం లోకాన్ని $f(\sigma).n$గా వ్రాసింది.
+      అది పూర్వసూచికకు~$f$ను వర్తింపజేసిన తర్వాత
+      తప్పుగా~$n$ను అంటిస్తుంది; సరైన లోకం
+      $f(\sigma.n)$ను పునరుద్ధరించాం.}
+    కనుక $\mSat{M}{\Box !B}[f(\sigma)]$; అంటే
+    $\mModel{M}, f$, $\sFmla{\True}{\Box !B}[\sigma]$ను
+    సంతృప్తిపరుస్తుంది.}}{}
+\tagitem{prvDiamond}{$\sFmla{\False}{\Diamond !B}[\sigma.n] \in \Gamma$కు
+  4r$\Diamond$ వర్తింపజేసి శాఖను విస్తరిస్తాం:
+  \iftag{probDiamond}{వ్యాయామం.}{దీనివల్ల శాఖపై కొత్త
+    \tetoken{చిహ్నిత సూత్రం}{!!{signed
+      formula}}~$\sFmla{\False}{\Diamond!B}[\sigma]$ వస్తుంది.
+    \sourcecorrection{OLTENMLTABMSN-002}{ఈ 4r$\Diamond$
+      అంశంలో మూలం నిష్కర్షను తప్పుగా
+      $\sFmla{\True}{\Box!B}[\sigma]$గా వ్రాసింది.
+      నియమ పట్టికకూ దిగువ నిరూపణకూ అనుగుణంగా
+      $\sFmla{\False}{\Diamond!B}[\sigma]$గా సరిచేశాం;
+      దిగువ లోక సూచికను $f(\sigma).n$ నుంచి
+      $f(\sigma.n)$గా పునరుద్ధరించాం.}
+    $\mSat{M}{\Gamma}[f]$, ముఖ్యంగా
+    $\mSat/{M}{\Diamond !B}[f(\sigma.n)]$ అనుకుందాం.
+    $f$ శాఖ పూర్వసూచికలకు~$\mModel{M}$లో అర్థనిర్దేశం
+    కాబట్టి $Rf(\sigma)f(\sigma.n)$. $Rf(\sigma)w$
+    అయ్యే ఏ లోకం~$w$నైనా తీసుకుందాం. $R$ యూక్లిడియన్
+    కాబట్టి $Rf(\sigma.n)w$.
+    $\mSat/{M}{\Diamond !B}[f(\sigma.n)]$ కాబట్టి
+    $\mSat/{M}{!B}[w]$. కనుక
+    $\mSat/{M}{\Diamond !B}[f(\sigma)]$; అంటే
+    $\mModel{M}, f$, $\sFmla{\False}{\Diamond !B}[\sigma]$ను
+    సంతృప్తిపరుస్తుంది.}}{}
+\end{tagenumerate}
+\end{proof}
+
+\tagprob{probBox,probDiamond}
+\begin{prob}
+  \olref[nml][tab][msn]{prop:soundness-4r} నిరూపణను పూర్తి చేయండి.
+\end{prob}
+\tagendprob
+
+\begin{cor}
+\ollabel{cor:soundness-logics} \olref[mru]{tab:logics-rules}లోని
+\tetoken{టాబ్లో}{!!{tableau}} వ్యవస్థలు సంబంధిత నమూనా
+వర్గాలకు నిర్దుష్టమైనవి.
+\end{cor}
+
+\end{document}

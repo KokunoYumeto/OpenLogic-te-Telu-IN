@@ -1,0 +1,28 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "115",
+  "unit_id": "OLP-0466",
+  "unit_order": 466,
+  "source_path": "content/normal-modal-logic/tableaux/more-soundness.tex",
+  "blocks": 23,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],
+  "previous_segments": 7068,
+  "previous_terms": 155,
+  "expected_corrections": 438,
+  "canon_default": ["TE-P010", "TE-P018", "TE-P024"],
+  "corrections_by_block": {
+    "20": ["OLTENMLTABMSN-001", "OLTENMLTABMSN-002"]
+  },
+  "consultation_phase": "స్థిర అదనపు టాబ్లో నిర్దుష్టత మూలం, తెలుగు లక్ష్యం, పూర్వ T/D/B/4/4r నియమ పట్టిక, స్థానిక సాధారణ సంబంధ/తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; స్వావర్తన, సీరియల్, సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ బాణాల రెండు modal దిశలను తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P010 సాధారణ సంబంధానికి, TE-P018/024 సాధారణ ప్రతిజ్ఞావాక్య తర్కం/వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. మోడల్ టాబ్లో T/D/B/4/4r నిర్దుష్టతకు ప్రత్యక్ష నిరూపణలు వాటిలో లేవు; మూల నియమ/నమూనా నిర్వచనాలే నియంత్రణ. probBox/probDiamond షరతు వ్యాయామాలు అలాగే మిగిలాయి.",
+  "term_decision": {
+    "term_id": "TE-T156",
+    "source_term": "soundness of T/D/B/4/4r tableau rules / reflexive, serial, symmetric, transitive, Euclidean accessibility",
+    "telugu": "T/D/B/4/4r టాబ్లో నియమాల నిర్దుష్టత / స్వావర్తన, సీరియల్, సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ ప్రాప్యత",
+    "status": "native_general_relation_logic_derivation_register_attested_modal_rule_soundness_source_controlled_two_disclosed_euclidean_repairs",
+    "passages": ["TE-P010", "TE-P018", "TE-P024"],
+    "basis": "TE-T114/152/155లోని ప్రాప్యత, నియమ పదాలను కొనసాగించాం. మూల T/D/B/4/4r నిరూపణల్లో రెండు చిహ్న శాఖలు, R బాణాల మార్గాలు, షరతు వ్యాయామాలు నిలిచాయి. 4r Boxలో తప్పు f(sigma).nను f(sigma.n)గా; 4r Diamondలో అదనంగా T Box B నిష్కర్షను F Diamond Bగా రెండు ప్రకటిత మూల సవరణలతో సరిచేశాం.",
+    "uncertainty": "స్థానిక సాక్షులు modal rule soundnessకు ప్రత్యక్ష సాంకేతిక సాక్ష్యం కాదు. కొన్ని శాఖలు probBox/probDiamond ట్యాగ్‌ల వల్ల వ్యాయామాలుగా ఉంటాయి. పూర్తి TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "టాబ్లో, సీరియల్, యూక్లిడియన్ are established edition borrowings; T/D/B/4/4r rule names, R, sigma, satisfaction macros, feature tags and cross-reference identifiers remain protected notation."
+  }
+}
