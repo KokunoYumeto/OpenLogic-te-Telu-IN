@@ -1,0 +1,33 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTENMLAXSPRF-20260927",
+  "created_utc": "2026-09-27T00:40:59Z",
+  "status": "confirmed_axiom_schema_name_used_as_formula_member",
+  "scope": {
+    "chapter": "Normal Modal Logic — Axioms and Systems",
+    "unit_ids": ["OLP-0430"],
+    "finding_count": 1
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTENMLAXSPRF-001",
+      "unit_id": "OLP-0430",
+      "classification": "axiom_K_schema_name_instead_of_axiom_formula_membership",
+      "source": {
+        "path": "content/normal-modal-logic/axioms-systems/logics-proofs.tex",
+        "bytes": 4443,
+        "sha256": "bf3926886e2d6d2740ceb631fc5c5618fe300fb0d6813fe2b30367072c45d66a",
+        "locator": "logics-proofs.tex line 87"
+      },
+      "finding": "స్థిర మూలం `\\Log{K}... \\Proves \\Ax{K}` నుంచి `$K \\in \\Sigma$` అని ముగిస్తుంది. కానీ ముందరి నిర్వచనంలో `\\Sigma` సూత్రాల సమితి; `K` అనేది స్వీకృత పథకం పేరు, దాని సూత్రం `\\Ax{K}` రూపంలోనే ఉంది.",
+      "controlling_evidence": "అదే పంక్తిలోని వ్యుత్పాద్యత ప్రకటన `\\Ax{K}`ను వస్తువుగా చూపుతుంది; ముందరి నార్మల్ తర్క నిర్వచనంలో `\\tag{\\Ax{K}}` యొక్క సూత్రం మాత్రమే సమితిలో సభ్యుడు. తరువాతి `Dual` అంశం కూడా `\\Dual \\in \\Sigma` రూపంలో అదే సూత్రాన్ని సభ్యునిగా వాడుతుంది.",
+      "required_translation_handling": "స్థిర ఆంగ్ల మూలాన్ని మార్చకుండా, తెలుగు లక్ష్యంలో సభ్యత్వాన్ని `$\\Ax{K} \\in \\Sigma$`గా సరిచేసి అదే సక్రియ అంశంలో ప్రకటిత గమనిక ఉంచాలి. మిగతా గణిత రూపాలు మారవు."
+    }
+  ]
+}

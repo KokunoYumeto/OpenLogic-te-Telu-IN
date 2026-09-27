@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 429 of 722 draft units**. This log contains 120 terminology/sense decisions and 394 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 430 of 722 draft units**. This log contains 121 terminology/sense decisions and 395 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2887,6 +2887,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: సమితి/ఛేదన, ప్రతిజ్ఞావాక్య తర్కం, వ్యుత్పత్తి, ఆగమనం భాగాలకు స్థానిక ఆధారం ఉంది. నార్మల్ మోడల్ వ్యవస్థ మరియు సంవృత-నియమ సమాసాలు మూల నిర్వచనానికి కట్టిన తాత్కాలిక సంపాదకీయ ఎంపికలు; మూల నిరూపణలోని సాధారణ/నార్మల్ వర్గ తేడా ప్రకటిత సవరణతో పరిష్కరించబడింది.
 
 - Please double-check: Please double-check whether “మోడల్ తర్కం / నార్మల్ మోడల్ తర్కం / మోడల్ వ్యవస్థ / ప్రతిస్థాపన కింద సంవృతం / అవశ్యకీకరణ కింద సంవృతం / RK నియమం / అతి చిన్న మోడల్ తర్కం” is idiomatic and technically standard for “modal logic / normal modal logic / modal system / substitution closure / necessitation closure / RK rule / smallest modal logic” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T121 — derivation in a modal system / derivable formulas as the system / axiom instances / closure under uniform substitution / K axiom formula membership
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: మోడల్ వ్యవస్థలో వ్యుత్పత్తి / వ్యుత్పాదించదగిన సూత్రాల సమితిగానే వ్యవస్థ / స్వీకృత ప్రతిస్థాపన నిదర్శనాలు / ఏకరీతి ప్రతిస్థాపన కింద సంవృతం / K స్వీకృత సూత్రపు సభ్యత్వం
+
+- Exact implementation: OLP-0430; normal-modal-logic/axioms-systems/logics-proofs; content/normal-modal-logic/axioms-systems/logics-proofs.tex:11 ↔ translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:11 (OLP-0430-B005); printed/PDF page pending; OLP-0430; normal-modal-logic/axioms-systems/logics-proofs; content/normal-modal-logic/axioms-systems/logics-proofs.tex:13-22 ↔ translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:13-24 (OLP-0430-B006); printed/PDF page pending; OLP-0430; normal-modal-logic/axioms-systems/logics-proofs; content/normal-modal-logic/axioms-systems/logics-proofs.tex:24-33 ↔ translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:26-39 (OLP-0430-B007); printed/PDF page pending; OLP-0430; normal-modal-logic/axioms-systems/logics-proofs; content/normal-modal-logic/axioms-systems/logics-proofs.tex:35-36 ↔ translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:41-42 (OLP-0430-B008); printed/PDF page pending; OLP-0430; normal-modal-logic/axioms-systems/logics-proofs; content/normal-modal-logic/axioms-systems/logics-proofs.tex:42-45 ↔ translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:48-51 (OLP-0430-B010); printed/PDF page pending; OLP-0430; normal-modal-logic/axioms-systems/logics-proofs; content/normal-modal-logic/axioms-systems/logics-proofs.tex:54-63 ↔ translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:62-74 (OLP-0430-B012); printed/PDF page pending; OLP-0430; normal-modal-logic/axioms-systems/logics-proofs; content/normal-modal-logic/axioms-systems/logics-proofs.tex:65-94 ↔ translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:76-116 (OLP-0430-B013); printed/PDF page pending; OLP-0430; normal-modal-logic/axioms-systems/logics-proofs; content/normal-modal-logic/axioms-systems/logics-proofs.tex:65-94 ↔ translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:76-116 (OLP-0430-B013); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic; TE-P033, PDF 40, printed 33, Inference section heading and definition
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P008లో సమితి; TE-P018లో ప్రతిజ్ఞావాక్య తర్కం; TE-P024లో నియమాలతో ఫలిత వ్యుత్పత్తి; TE-P032లో ఆగమనం; TE-P033లో అనుమానం అనే వాడుకలను స్థానిక చిత్రాల్లో చూశాం. అవి నార్మల్ మోడల్ వ్యవస్థలో K/Dualతో వ్యుత్పాద్యత సమానత్వానికి ప్రత్యక్ష పేరు లేదా నిరూపణ ఇవ్వవు. OLP-0430లోని వ్యుత్పత్తి నిర్వచనం, రెండు సమితి-చేరికల నిరూపణ, ప్రతిస్థాపనపై వ్యాయామం, OLTENMLAXSPRF-001లో ప్రకటించిన K స్వీకృత సూత్రపు సభ్యత్వం ప్రత్యేక అర్థాలను నియంత్రిస్తాయి; పూర్వ TE-T034/119/120 రూపాలను అనుసరించాం. K, Dual, MP, Nec, Sigma, LogK, Box మరియు సూత్ర మెటాచరాలు రక్షిత గణిత సంకేతాలు; మోడల్ ముందే సందర్భీకరించిన పదం.
+
+- Alternatives: వ్యుత్పత్తి నిర్వచనంలోని సర్వసత్య/K/Dual/అదనపు స్వీకృత శాఖలను, MP/Nec నియమాలను వేరుగా ఉంచి, రెండు సమితి-చేరికల వాదనను మూల క్రమంలో నిలపడం; K సూత్రపు సభ్యత్వాన్ని ప్రకటిత సవరణతో రాయడం (ఎంపిక); K పథకం పేరును సూత్రాల సమితిలో సాక్షాత్తు మూలకంగా ప్రకటించడం (తిరస్కరణ); ఒకే నమూనాలో సత్యాన్ని నార్మల్ మోడల్ వ్యవస్థలో వ్యుత్పాద్యతతో సమానమని అనుకోవడం (తిరస్కరణ); ప్రతిస్థాపనపై మూల వ్యాయామాన్ని పరిష్కరించామని మౌనంగా చెప్పడం (తిరస్కరణ)
+
+- Uncertainty: వ్యుత్పత్తి, నిగమనం, ఆగమనం, సమితి భాగాలకు స్థానిక ఆధారం ఉంది; మోడల్ వ్యవస్థ-వ్యుత్పాద్యత సమానత్వం, ఏకరీతి ప్రతిస్థాపన, K/Dual సూత్ర సభ్యత్వానికి మూల నిర్వచనాలు/నిరూపణలే ఆధారం. మూల K పేరు–సూత్రం తేడాను ప్రకటిత గణిత సవరణలో చూపాం.
+
+- Please double-check: Please double-check whether “మోడల్ వ్యవస్థలో వ్యుత్పత్తి / వ్యుత్పాదించదగిన సూత్రాల సమితిగానే వ్యవస్థ / స్వీకృత ప్రతిస్థాపన నిదర్శనాలు / ఏకరీతి ప్రతిస్థాపన కింద సంవృతం / K స్వీకృత సూత్రపు సభ్యత్వం” is idiomatic and technically standard for “derivation in a modal system / derivable formulas as the system / axiom instances / closure under uniform substitution / K axiom formula membership” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -12343,3 +12367,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLAXSNOR-001 is mathematically precise and idiomatic.
+
+## REV-OLTENMLAXSPRF-001 — OLTENMLAXSPRF-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: వ్యుత్పాదించబడిన K స్వీకృత సూత్రాన్నే మోడల్ తర్క సమితి సభ్యునిగా రాసి, అదే అంశంలో ప్రకటిత గమనిక ఉంచాం; స్థిర మూలం మారలేదు.
+
+- Exact implementation: OLP-0430; normal-modal-logic/axioms-systems/logics-proofs; logics-proofs.tex line 87 ↔ translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:105 (OLP-0430-B013); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLAXSPRF-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: వ్యుత్పాదించబడిన K స్వీకృత సూత్రాన్నే మోడల్ తర్క సమితి సభ్యునిగా రాసి, అదే అంశంలో ప్రకటిత గమనిక ఉంచాం; స్థిర మూలం మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLAXSPRF-001 is mathematically precise and idiomatic.

@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **429 of 722 source units drafted**. This readable view contains all 514 decisions and 1081 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **430 of 722 source units drafted**. This readable view contains all 516 decisions and 1090 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3610,6 +3610,39 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T120-OCC-007; OLP-0429; OLP-0429-B017; source upstream/content/normal-modal-logic/axioms-systems/normal-logics.tex:101-105 bytes 3693-3863 SHA-256 6bcccf354cf8966f674c16ad3c6196a62ebcf8ca9545418d60ef08adf89e3819; target translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:110-115 bytes 7036-7392 SHA-256 b241057c03700213f0273006e6dd08f7006037a51c681dc0c92a208534634e53; reader page pending.
   - te-Telu-IN-TE-T120-OCC-008; OLP-0429; OLP-0429-B018; source upstream/content/normal-modal-logic/axioms-systems/normal-logics.tex:107-113 bytes 3864-4139 SHA-256 6bcccf354cf8966f674c16ad3c6196a62ebcf8ca9545418d60ef08adf89e3819; target translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:117-132 bytes 7393-9199 SHA-256 b241057c03700213f0273006e6dd08f7006037a51c681dc0c92a208534634e53; reader page pending.
   - te-Telu-IN-TE-T120-OCC-009; OLP-0429; OLP-0429-B019; source upstream/content/normal-modal-logic/axioms-systems/normal-logics.tex:115-119 bytes 4140-4358 SHA-256 6bcccf354cf8966f674c16ad3c6196a62ebcf8ca9545418d60ef08adf89e3819; target translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:134-139 bytes 9200-9650 SHA-256 b241057c03700213f0273006e6dd08f7006037a51c681dc0c92a208534634e53; reader page pending.
+
+## te-Telu-IN-TE-T121 — derivation in a modal system / derivable formulas as the system / axiom instances / closure under uniform substitution / K axiom formula membership
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: మోడల్ వ్యవస్థలో వ్యుత్పత్తి / వ్యుత్పాదించదగిన సూత్రాల సమితిగానే వ్యవస్థ / స్వీకృత ప్రతిస్థాపన నిదర్శనాలు / ఏకరీతి ప్రతిస్థాపన కింద సంవృతం / K స్వీకృత సూత్రపు సభ్యత్వం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “derivation in a modal system / derivable formulas as the system / axiom instances / closure under uniform substitution / K axiom formula membership” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: వ్యుత్పత్తి, నిగమనం, ఆగమనం, సమితి భాగాలకు స్థానిక ఆధారం ఉంది; మోడల్ వ్యవస్థ-వ్యుత్పాద్యత సమానత్వం, ఏకరీతి ప్రతిస్థాపన, K/Dual సూత్ర సభ్యత్వానికి మూల నిర్వచనాలు/నిరూపణలే ఆధారం. మూల K పేరు–సూత్రం తేడాను ప్రకటిత గణిత సవరణలో చూపాం.
+
+- Rationale: TE-P008లో సమితి; TE-P018లో ప్రతిజ్ఞావాక్య తర్కం; TE-P024లో నియమాలతో ఫలిత వ్యుత్పత్తి; TE-P032లో ఆగమనం; TE-P033లో అనుమానం అనే వాడుకలను స్థానిక చిత్రాల్లో చూశాం. అవి నార్మల్ మోడల్ వ్యవస్థలో K/Dualతో వ్యుత్పాద్యత సమానత్వానికి ప్రత్యక్ష పేరు లేదా నిరూపణ ఇవ్వవు. OLP-0430లోని వ్యుత్పత్తి నిర్వచనం, రెండు సమితి-చేరికల నిరూపణ, ప్రతిస్థాపనపై వ్యాయామం, OLTENMLAXSPRF-001లో ప్రకటించిన K స్వీకృత సూత్రపు సభ్యత్వం ప్రత్యేక అర్థాలను నియంత్రిస్తాయి; పూర్వ TE-T034/119/120 రూపాలను అనుసరించాం. K, Dual, MP, Nec, Sigma, LogK, Box మరియు సూత్ర మెటాచరాలు రక్షిత గణిత సంకేతాలు; మోడల్ ముందే సందర్భీకరించిన పదం.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive. | TE-C005:TE-P033 [checked_context_only], PDF page 40; printed page 33; Inference section heading and definition; Direct inference and explanatory register; derivation headword is separately witnessed at TE-P024.
+
+- Alternatives: వ్యుత్పత్తి నిర్వచనంలోని సర్వసత్య/K/Dual/అదనపు స్వీకృత శాఖలను, MP/Nec నియమాలను వేరుగా ఉంచి, రెండు సమితి-చేరికల వాదనను మూల క్రమంలో నిలపడం; K సూత్రపు సభ్యత్వాన్ని ప్రకటిత సవరణతో రాయడం [viable_alternative: ఎంపిక] | K పథకం పేరును సూత్రాల సమితిలో సాక్షాత్తు మూలకంగా ప్రకటించడం [viable_alternative: తిరస్కరణ] | ఒకే నమూనాలో సత్యాన్ని నార్మల్ మోడల్ వ్యవస్థలో వ్యుత్పాద్యతతో సమానమని అనుకోవడం [viable_alternative: తిరస్కరణ] | ప్రతిస్థాపనపై మూల వ్యాయామాన్ని పరిష్కరించామని మౌనంగా చెప్పడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “మోడల్ వ్యవస్థలో వ్యుత్పత్తి / వ్యుత్పాదించదగిన సూత్రాల సమితిగానే వ్యవస్థ / స్వీకృత ప్రతిస్థాపన నిదర్శనాలు / ఏకరీతి ప్రతిస్థాపన కింద సంవృతం / K స్వీకృత సూత్రపు సభ్యత్వం” is idiomatic and technically standard for “derivation in a modal system / derivable formulas as the system / axiom instances / closure under uniform substitution / K axiom formula membership” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T121-OCC-001; OLP-0430; OLP-0430-B005; source upstream/content/normal-modal-logic/axioms-systems/logics-proofs.tex:11 bytes 186-241 SHA-256 bf3926886e2d6d2740ceb631fc5c5618fe300fb0d6813fe2b30367072c45d66a; target translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:11 bytes 186-283 SHA-256 d46ca3183c6b9da0e2a22d7788e801e08c3b3de8664c21ef2b075bf525dd619f; reader page pending.
+  - te-Telu-IN-TE-T121-OCC-002; OLP-0430; OLP-0430-B006; source upstream/content/normal-modal-logic/axioms-systems/logics-proofs.tex:13-22 bytes 242-870 SHA-256 bf3926886e2d6d2740ceb631fc5c5618fe300fb0d6813fe2b30367072c45d66a; target translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:13-24 bytes 284-1994 SHA-256 d46ca3183c6b9da0e2a22d7788e801e08c3b3de8664c21ef2b075bf525dd619f; reader page pending.
+  - te-Telu-IN-TE-T121-OCC-003; OLP-0430; OLP-0430-B007; source upstream/content/normal-modal-logic/axioms-systems/logics-proofs.tex:24-33 bytes 871-1397 SHA-256 bf3926886e2d6d2740ceb631fc5c5618fe300fb0d6813fe2b30367072c45d66a; target translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:26-39 bytes 1995-3104 SHA-256 d46ca3183c6b9da0e2a22d7788e801e08c3b3de8664c21ef2b075bf525dd619f; reader page pending.
+  - te-Telu-IN-TE-T121-OCC-004; OLP-0430; OLP-0430-B008; source upstream/content/normal-modal-logic/axioms-systems/logics-proofs.tex:35-36 bytes 1398-1512 SHA-256 bf3926886e2d6d2740ceb631fc5c5618fe300fb0d6813fe2b30367072c45d66a; target translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:41-42 bytes 3105-3326 SHA-256 d46ca3183c6b9da0e2a22d7788e801e08c3b3de8664c21ef2b075bf525dd619f; reader page pending.
+  - te-Telu-IN-TE-T121-OCC-005; OLP-0430; OLP-0430-B010; source upstream/content/normal-modal-logic/axioms-systems/logics-proofs.tex:42-45 bytes 1617-1785 SHA-256 bf3926886e2d6d2740ceb631fc5c5618fe300fb0d6813fe2b30367072c45d66a; target translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:48-51 bytes 3431-3683 SHA-256 d46ca3183c6b9da0e2a22d7788e801e08c3b3de8664c21ef2b075bf525dd619f; reader page pending.
+  - te-Telu-IN-TE-T121-OCC-006; OLP-0430; OLP-0430-B012; source upstream/content/normal-modal-logic/axioms-systems/logics-proofs.tex:54-63 bytes 2176-2792 SHA-256 bf3926886e2d6d2740ceb631fc5c5618fe300fb0d6813fe2b30367072c45d66a; target translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:62-74 bytes 4493-5634 SHA-256 d46ca3183c6b9da0e2a22d7788e801e08c3b3de8664c21ef2b075bf525dd619f; reader page pending.
+  - te-Telu-IN-TE-T121-OCC-007; OLP-0430; OLP-0430-B013; source upstream/content/normal-modal-logic/axioms-systems/logics-proofs.tex:65-94 bytes 2793-4427 SHA-256 bf3926886e2d6d2740ceb631fc5c5618fe300fb0d6813fe2b30367072c45d66a; target translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:76-116 bytes 5635-9281 SHA-256 d46ca3183c6b9da0e2a22d7788e801e08c3b3de8664c21ef2b075bf525dd619f; reader page pending.
+  - te-Telu-IN-TE-T121-OCC-008; OLP-0430; OLP-0430-B013; source upstream/content/normal-modal-logic/axioms-systems/logics-proofs.tex:65-94 bytes 2793-4427 SHA-256 bf3926886e2d6d2740ceb631fc5c5618fe300fb0d6813fe2b30367072c45d66a; target translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:76-116 bytes 5635-9281 SHA-256 d46ca3183c6b9da0e2a22d7788e801e08c3b3de8664c21ef2b075bf525dd619f; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -13934,3 +13967,29 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLAXSNOR-001-OCC-001; OLP-0429; OLP-0429-B018; source upstream/content/normal-modal-logic/axioms-systems/normal-logics.tex:107-113 bytes 3864-4139 SHA-256 6bcccf354cf8966f674c16ad3c6196a62ebcf8ca9545418d60ef08adf89e3819; target translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:126 bytes 8340-8433 SHA-256 b241057c03700213f0273006e6dd08f7006037a51c681dc0c92a208534634e53; reader page pending.
+
+## te-Telu-IN-OLTENMLAXSPRF-001 — OLTENMLAXSPRF-001: axiom K schema name instead of axiom formula membership
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: వ్యుత్పాదించబడిన K స్వీకృత సూత్రాన్నే మోడల్ తర్క సమితి సభ్యునిగా రాసి, అదే అంశంలో ప్రకటిత గమనిక ఉంచాం; స్థిర మూలం మారలేదు.
+
+- Intended sense: Repair the audited axiom K schema name instead of axiom formula membership at logics-proofs.tex line 87, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLAXSPRF-20260927:OLTENMLAXSPRF-001 [checked_supports], content/normal-modal-logic/axioms-systems/logics-proofs.tex; logics-proofs.tex line 87; axiom_K_schema_name_instead_of_axiom_formula_membership; వ్యుత్పాదించబడిన K స్వీకృత సూత్రాన్నే మోడల్ తర్క సమితి సభ్యునిగా రాసి, అదే అంశంలో ప్రకటిత గమనిక ఉంచాం; స్థిర మూలం మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTENMLAXSPRF-001 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLAXSPRF-001-OCC-001; OLP-0430; OLP-0430-B013; source upstream/content/normal-modal-logic/axioms-systems/logics-proofs.tex:65-94 bytes 2793-4427 SHA-256 bf3926886e2d6d2740ceb631fc5c5618fe300fb0d6813fe2b30367072c45d66a; target translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:105 bytes 8371-8453 SHA-256 d46ca3183c6b9da0e2a22d7788e801e08c3b3de8664c21ef2b075bf525dd619f; reader page pending.

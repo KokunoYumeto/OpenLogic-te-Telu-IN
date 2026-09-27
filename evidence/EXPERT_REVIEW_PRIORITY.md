@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 429 of 722 draft units**. This view selects 447 of 514 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 430 of 722 draft units**. This view selects 448 of 516 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4473,3 +4473,13 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0429; normal-modal-logic/axioms-systems/normal-logics; translation/content/normal-modal-logic/axioms-systems/normal-logics.tex:126; printed/PDF page pending
 
 - Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLAXSNOR-001 is mathematically precise and idiomatic.
+
+## REV-OLTENMLAXSPRF-001 — OLTENMLAXSPRF-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: వ్యుత్పాదించబడిన K స్వీకృత సూత్రాన్నే మోడల్ తర్క సమితి సభ్యునిగా రాసి, అదే అంశంలో ప్రకటిత గమనిక ఉంచాం; స్థిర మూలం మారలేదు.
+
+- Occurrences: OLP-0430; normal-modal-logic/axioms-systems/logics-proofs; translation/content/normal-modal-logic/axioms-systems/logics-proofs.tex:105; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLAXSPRF-001 is mathematically precise and idiomatic.
