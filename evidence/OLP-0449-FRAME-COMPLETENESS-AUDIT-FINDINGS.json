@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLCOMFRA-20260927",
+  "unit_id": "OLP-0449",
+  "source_path": "content/normal-modal-logic/completeness/frame-completeness.tex",
+  "source_sha256": "4021151e95c367cfd94030d36b6dfb3c16792ade5767bb24825daf2e0602bb70",
+  "findings": [
+    {
+      "finding_id": "OLTENMLCOMFRA-001",
+      "source_locator": "frame-completeness.tex lines 209-224",
+      "classification": "weak_density_final_consistency_inference_implicit",
+      "source_issue": "The final derivation line gives the negated conjunction in Delta-2 but leaves the contradiction with the initially chosen B-witnesses in Delta-2 implicit.",
+      "minimal_treatment": "State the final consistency contradiction in one Telugu sentence after the unchanged derivation and disclose the proof explication.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

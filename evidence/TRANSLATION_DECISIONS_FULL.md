@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **448 of 722 source units drafted**. This readable view contains all 552 decisions and 1222 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **449 of 722 source units drafted**. This readable view contains all 554 decisions and 1232 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -4181,6 +4181,40 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T138-OCC-004; OLP-0448; OLP-0448-B008; source upstream/content/normal-modal-logic/completeness/completeness-K.tex:25-27 bytes 718-843 SHA-256 067d811b2d64251f4f2365320e942a4e47341e8925b45f84de5571d735b5fa2a; target translation/content/normal-modal-logic/completeness/completeness-K.tex:27-30 bytes 1331-1528 SHA-256 e335b72b1356a7dd6b2494b411927920a8c810d688780dd9cc587ee5d271000a; reader page pending.
   - te-Telu-IN-TE-T138-OCC-005; OLP-0448; OLP-0448-B011; source upstream/content/normal-modal-logic/completeness/completeness-K.tex:44-45 bytes 1497-1615 SHA-256 067d811b2d64251f4f2365320e942a4e47341e8925b45f84de5571d735b5fa2a; target translation/content/normal-modal-logic/completeness/completeness-K.tex:49-50 bytes 2530-2797 SHA-256 e335b72b1356a7dd6b2494b411927920a8c810d688780dd9cc587ee5d271000a; reader page pending.
   - te-Telu-IN-TE-T138-OCC-006; OLP-0448; OLP-0448-B014; source upstream/content/normal-modal-logic/completeness/completeness-K.tex:58-63 bytes 1952-2359 SHA-256 067d811b2d64251f4f2365320e942a4e47341e8925b45f84de5571d735b5fa2a; target translation/content/normal-modal-logic/completeness/completeness-K.tex:64-70 bytes 3366-4274 SHA-256 e335b72b1356a7dd6b2494b411927920a8c810d688780dd9cc587ee5d271000a; reader page pending.
+
+## te-Telu-IN-TE-T139 — frame completeness / D-T-B-4-5 canonical correspondence / serial, reflexive, symmetric, transitive, Euclidean / partially functional, functional, weakly dense
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: ఫ్రేమ్ సంపూర్ణత / D-T-B-4-5 కానానికల్ అనురూపత / సీరియల్, స్వావర్తన, సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ / పాక్షిక ప్రమేయాత్మక, ప్రమేయాత్మక, బలహీన సాంద్ర
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “frame completeness / D-T-B-4-5 canonical correspondence / serial, reflexive, symmetric, transitive, Euclidean / partially functional, functional, weakly dense” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక పేజీలు ఈ మోడల్-ప్రత్యేక కానానికల్ ఫ్రేమ్ సిద్ధాంతాలను ప్రత్యక్షంగా నిరూపించవు. బలహీన సాంద్రత నిరూపణలో మూలం సూచించినా స్పష్టంగా చెప్పని చివరి అవైరుధ్య విరోధాన్ని OLTENMLCOMFRA-001లో ప్రకటించి వివరించాం.
+
+- Rationale: TE-P008/010/011/012లో సమితి, ద్విస్థానిక సంబంధం, ప్రమేయ ఏకైకత, సర్వత్ర నిర్వచితత్వం; TE-P018/024/026లో సాధారణ తర్కం, వ్యుత్పత్తి, అవైరుధ్య పర్యాయం చూశాం. TE-T114లో స్థిర ఫ్రేమ్ ధర్మ పదరూపాలు, properties-accessibility.texలో వాటి నిర్వచనాలు కొనసాగించాం. మోడల్ అనురూపత, సాపేక్ష సంపూర్ణత OLP-0449 స్థిర మూలం నుంచే. D, T, B, 4, 5, K, S5, KT5, KTB4, Sigma, Gamma, Delta, R, W, Box, Diamond and tag keys రక్షిత గణిత సంకేతాలు; సీరియల్, యూక్లిడియన్ పూర్వ ప్రకటిత అరువులు.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C004:TE-P011 [checked_context_only], PDF page 309; printed page 302; Main points 8-18; Function, inverse and composition evidence; exact types require individual term decisions. | TE-C004:TE-P012 [checked_context_only], PDF page 319; printed page 312; Questions 37-38; Function-versus-relation explanatory register; do not copy source answers mechanically. | TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P026 [checked_context_only], PDF page 88; printed page 81; Consistency section; Direct consistency/inconsistency terminology; not direct completeness terminology.
+
+- Alternatives: TE-T114లో స్థిర సీరియల్/స్వావర్తన/సౌష్ఠవ/సంక్రామక/యూక్లిడియన్, పాక్షిక ప్రమేయాత్మక/ప్రమేయాత్మక/బలహీన సాంద్ర రూపాలను కొనసాగించి D/T/B/4/5 guarded నిరూపణలు, నమూనా వర్గ సిద్ధాంతం, చివరి అసంపూర్ణత హెచ్చరిక నిలపడం [viable_alternative: ఎంపిక] | సంక్రామక బదులు కొత్త సంక్రమణీయ రూపాన్ని ఈ అధ్యాయంలో ప్రవేశపెట్టడం [viable_alternative: తిరస్కరణ] | కానానికల్ అనురూపత నుంచే ప్రతి మోడల్ వ్యవస్థకు సంపూర్ణత వస్తుందని చెప్పడం [viable_alternative: తిరస్కరణ] | బలహీన సాంద్రత నిరూపణ చివరి అవైరుధ్యాన్ని పాఠకుడికి చెప్పకుండా వదలడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “ఫ్రేమ్ సంపూర్ణత / D-T-B-4-5 కానానికల్ అనురూపత / సీరియల్, స్వావర్తన, సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ / పాక్షిక ప్రమేయాత్మక, ప్రమేయాత్మక, బలహీన సాంద్ర” is idiomatic and technically standard for “frame completeness / D-T-B-4-5 canonical correspondence / serial, reflexive, symmetric, transitive, Euclidean / partially functional, functional, weakly dense” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T139-OCC-001; OLP-0449; OLP-0449-B005; source upstream/content/normal-modal-logic/completeness/frame-completeness.tex:11 bytes 189-220 SHA-256 4021151e95c367cfd94030d36b6dfb3c16792ade5767bb24825daf2e0602bb70; target translation/content/normal-modal-logic/completeness/frame-completeness.tex:11 bytes 189-245 SHA-256 5bf1c156200f7cbaabb6e41744fe328c15a08ef656e596f0ce0dfe2872c7f798; reader page pending.
+  - te-Telu-IN-TE-T139-OCC-002; OLP-0449; OLP-0449-B006; source upstream/content/normal-modal-logic/completeness/frame-completeness.tex:13-15 bytes 221-392 SHA-256 4021151e95c367cfd94030d36b6dfb3c16792ade5767bb24825daf2e0602bb70; target translation/content/normal-modal-logic/completeness/frame-completeness.tex:13-15 bytes 246-640 SHA-256 5bf1c156200f7cbaabb6e41744fe328c15a08ef656e596f0ce0dfe2872c7f798; reader page pending.
+  - te-Telu-IN-TE-T139-OCC-003; OLP-0449; OLP-0449-B008; source upstream/content/normal-modal-logic/completeness/frame-completeness.tex:24-44 bytes 673-1373 SHA-256 4021151e95c367cfd94030d36b6dfb3c16792ade5767bb24825daf2e0602bb70; target translation/content/normal-modal-logic/completeness/frame-completeness.tex:24-44 bytes 1102-1986 SHA-256 5bf1c156200f7cbaabb6e41744fe328c15a08ef656e596f0ce0dfe2872c7f798; reader page pending.
+  - te-Telu-IN-TE-T139-OCC-004; OLP-0449; OLP-0449-B010; source upstream/content/normal-modal-logic/completeness/frame-completeness.tex:49-64 bytes 1425-2388 SHA-256 4021151e95c367cfd94030d36b6dfb3c16792ade5767bb24825daf2e0602bb70; target translation/content/normal-modal-logic/completeness/frame-completeness.tex:49-66 bytes 2098-3572 SHA-256 5bf1c156200f7cbaabb6e41744fe328c15a08ef656e596f0ce0dfe2872c7f798; reader page pending.
+  - te-Telu-IN-TE-T139-OCC-005; OLP-0449; OLP-0449-B014; source upstream/content/normal-modal-logic/completeness/frame-completeness.tex:95-109 bytes 3974-4841 SHA-256 4021151e95c367cfd94030d36b6dfb3c16792ade5767bb24825daf2e0602bb70; target translation/content/normal-modal-logic/completeness/frame-completeness.tex:104-121 bytes 5810-7004 SHA-256 5bf1c156200f7cbaabb6e41744fe328c15a08ef656e596f0ce0dfe2872c7f798; reader page pending.
+  - te-Telu-IN-TE-T139-OCC-006; OLP-0449; OLP-0449-B016; source upstream/content/normal-modal-logic/completeness/frame-completeness.tex:117-127 bytes 5132-5642 SHA-256 4021151e95c367cfd94030d36b6dfb3c16792ade5767bb24825daf2e0602bb70; target translation/content/normal-modal-logic/completeness/frame-completeness.tex:129-139 bytes 7582-8325 SHA-256 5bf1c156200f7cbaabb6e41744fe328c15a08ef656e596f0ce0dfe2872c7f798; reader page pending.
+  - te-Telu-IN-TE-T139-OCC-007; OLP-0449; OLP-0449-B017; source upstream/content/normal-modal-logic/completeness/frame-completeness.tex:129-142 bytes 5643-6257 SHA-256 4021151e95c367cfd94030d36b6dfb3c16792ade5767bb24825daf2e0602bb70; target translation/content/normal-modal-logic/completeness/frame-completeness.tex:141-154 bytes 8326-9341 SHA-256 5bf1c156200f7cbaabb6e41744fe328c15a08ef656e596f0ce0dfe2872c7f798; reader page pending.
+  - te-Telu-IN-TE-T139-OCC-008; OLP-0449; OLP-0449-B020; source upstream/content/normal-modal-logic/completeness/frame-completeness.tex:166-181 bytes 7429-8277 SHA-256 4021151e95c367cfd94030d36b6dfb3c16792ade5767bb24825daf2e0602bb70; target translation/content/normal-modal-logic/completeness/frame-completeness.tex:181-198 bytes 11118-12454 SHA-256 5bf1c156200f7cbaabb6e41744fe328c15a08ef656e596f0ce0dfe2872c7f798; reader page pending.
+  - te-Telu-IN-TE-T139-OCC-009; OLP-0449; OLP-0449-B022; source upstream/content/normal-modal-logic/completeness/frame-completeness.tex:227-231 bytes 10404-10709 SHA-256 4021151e95c367cfd94030d36b6dfb3c16792ade5767bb24825daf2e0602bb70; target translation/content/normal-modal-logic/completeness/frame-completeness.tex:253-257 bytes 15988-16691 SHA-256 5bf1c156200f7cbaabb6e41744fe328c15a08ef656e596f0ce0dfe2872c7f798; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -15025,3 +15059,29 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLCOMTRU-003-OCC-001; OLP-0447; OLP-0447-B020; source upstream/content/normal-modal-logic/completeness/truth-lemma.tex:143-145 bytes 6785-6957 SHA-256 ba09b193f2ccb8f8c5751a1c762c0f81f14937ffbb42bd0e7bfad1f82d51f147; target translation/content/normal-modal-logic/completeness/truth-lemma.tex:177 bytes 11632-11646 SHA-256 fe75b15b5057a605380e2c0e38506af5531b9677ceb53f0f70527f61baf36b7e; reader page pending.
+
+## te-Telu-IN-OLTENMLCOMFRA-001 — OLTENMLCOMFRA-001: weak density final consistency inference implicit
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: బలహీన సాంద్రత నిరూపణలో చివరి గణిత వరుస తరువాత ప్రారంభ సాక్షి సూత్రాల సంయోగ నిషేధం అదే అవిరుద్ధ సమితిలో ఉండటం విరోధమని ఒక వాక్యంతో స్పష్టంచేసి పక్కనే ప్రకటించాం; స్థిర మూలం మారలేదు.
+
+- Intended sense: Repair the audited weak density final consistency inference implicit at frame-completeness.tex lines 209-224, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLCOMFRA-20260927:OLTENMLCOMFRA-001 [checked_supports], content/normal-modal-logic/completeness/frame-completeness.tex; frame-completeness.tex lines 209-224; weak_density_final_consistency_inference_implicit; బలహీన సాంద్రత నిరూపణలో చివరి గణిత వరుస తరువాత ప్రారంభ సాక్షి సూత్రాల సంయోగ నిషేధం అదే అవిరుద్ధ సమితిలో ఉండటం విరోధమని ఒక వాక్యంతో స్పష్టంచేసి పక్కనే ప్రకటించాం; స్థిర మూలం మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: Does the added final sentence make only the source-implied contradiction between the B-witness conjunction and its negation in Delta-2 explicit, without changing the weak-density claim?
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLCOMFRA-001-OCC-001; OLP-0449; OLP-0449-B021; source upstream/content/normal-modal-logic/completeness/frame-completeness.tex:183-225 bytes 8278-10403 SHA-256 4021151e95c367cfd94030d36b6dfb3c16792ade5767bb24825daf2e0602bb70; target translation/content/normal-modal-logic/completeness/frame-completeness.tex:245 bytes 15371-15441 SHA-256 5bf1c156200f7cbaabb6e41744fe328c15a08ef656e596f0ce0dfe2872c7f798; reader page pending.

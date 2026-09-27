@@ -1,0 +1,39 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "098",
+  "unit_id": "OLP-0449",
+  "unit_order": 449,
+  "source_path": "content/normal-modal-logic/completeness/frame-completeness.tex",
+  "blocks": 23,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],
+  "previous_segments": 6818,
+  "previous_terms": 138,
+  "expected_corrections": 415,
+  "canon_default": ["TE-P010", "TE-P018", "TE-P024", "TE-P026"],
+  "canon_by_block": {
+    "5": ["TE-P018", "TE-P024"],
+    "6": ["TE-P010", "TE-P018", "TE-P024"],
+    "8": ["TE-P010", "TE-P018", "TE-P024"],
+    "15": ["TE-P010", "TE-P018", "TE-P024"],
+    "17": ["TE-P008", "TE-P010", "TE-P011", "TE-P012", "TE-P024"],
+    "18": ["TE-P008", "TE-P010", "TE-P011", "TE-P012", "TE-P024"],
+    "19": ["TE-P008", "TE-P010", "TE-P011", "TE-P012", "TE-P024"],
+    "20": ["TE-P008", "TE-P010", "TE-P011", "TE-P012", "TE-P024", "TE-P026"],
+    "22": ["TE-P018", "TE-P024"]
+  },
+  "corrections_by_block": {
+    "21": ["OLTENMLCOMFRA-001"]
+  },
+  "consultation_phase": "స్థిర మూలం, తెలుగు లక్ష్యం, సూచించిన స్థానిక సమితి/సంబంధం/ప్రమేయం/తర్కం/వ్యుత్పత్తి/అవైరుధ్య పేజీలను ఎదురెదురు చూశాం; కానానికల్ ఫ్రేమ్ అనురూపత, guarded నిరూపణలు మూలం నుంచే.",
+  "evidence_limit": "TE-P008/010/011/012/018/024/026 సాధారణ సమితి, సంబంధం, ప్రమేయం, తర్కం, వ్యుత్పత్తి, సుసంగతత్వ పదజాలానికే ప్రత్యక్ష ఆధారం. D/T/B/4/5 కానానికల్ ఫ్రేమ్ అనురూపత లేదా మోడల్ సంపూర్ణత సిద్ధాంతాలను ప్రత్యక్షంగా స్థాపించవు.",
+  "term_decision": {
+    "term_id": "TE-T139",
+    "source_term": "frame completeness / D-T-B-4-5 canonical correspondence / serial, reflexive, symmetric, transitive, Euclidean / partially functional, functional, weakly dense",
+    "telugu": "ఫ్రేమ్ సంపూర్ణత / D-T-B-4-5 కానానికల్ అనురూపత / సీరియల్, స్వావర్తన, సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ / పాక్షిక ప్రమేయాత్మక, ప్రమేయాత్మక, బలహీన సాంద్ర",
+    "status": "native_general_relation_function_logic_register_attested_modal_frame_correspondence_source_controlled_provisional",
+    "passages": ["TE-P008", "TE-P010", "TE-P011", "TE-P012", "TE-P018", "TE-P024", "TE-P026"],
+    "basis": "TE-P008/010/011/012లో సమితి, ద్విస్థానిక సంబంధం, ప్రమేయ ఏకైకత, సర్వత్ర నిర్వచితత్వం; TE-P018/024/026లో సాధారణ తర్కం, వ్యుత్పత్తి, అవైరుధ్య పర్యాయం చూశాం. TE-T114లో స్థిర ఫ్రేమ్ ధర్మ పదరూపాలు, properties-accessibility.texలో వాటి నిర్వచనాలు కొనసాగించాం. మోడల్ అనురూపత, సాపేక్ష సంపూర్ణత OLP-0449 స్థిర మూలం నుంచే.",
+    "uncertainty": "స్థానిక పేజీలు ఈ మోడల్-ప్రత్యేక కానానికల్ ఫ్రేమ్ సిద్ధాంతాలను ప్రత్యక్షంగా నిరూపించవు. బలహీన సాంద్రత నిరూపణలో మూలం సూచించినా స్పష్టంగా చెప్పని చివరి అవైరుధ్య విరోధాన్ని OLTENMLCOMFRA-001లో ప్రకటించి వివరించాం.",
+    "borrowing": "D, T, B, 4, 5, K, S5, KT5, KTB4, Sigma, Gamma, Delta, R, W, Box, Diamond and tag keys రక్షిత గణిత సంకేతాలు; సీరియల్, యూక్లిడియన్ పూర్వ ప్రకటిత అరువులు."
+  }
+}

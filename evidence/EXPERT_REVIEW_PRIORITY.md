@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 448 of 722 draft units**. This view selects 467 of 552 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 449 of 722 draft units**. This view selects 468 of 554 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4673,3 +4673,13 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0447; normal-modal-logic/completeness/truth-lemma; translation/content/normal-modal-logic/completeness/truth-lemma.tex:177; printed/PDF page pending
 
 - Please double-check: Please double-check: Does the exercise tag list use the exact probAnd key tested by the conjunction branch, with no loss of the worked or exercise text?
+
+## REV-OLTENMLCOMFRA-001 — OLTENMLCOMFRA-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: బలహీన సాంద్రత నిరూపణలో చివరి గణిత వరుస తరువాత ప్రారంభ సాక్షి సూత్రాల సంయోగ నిషేధం అదే అవిరుద్ధ సమితిలో ఉండటం విరోధమని ఒక వాక్యంతో స్పష్టంచేసి పక్కనే ప్రకటించాం; స్థిర మూలం మారలేదు.
+
+- Occurrences: OLP-0449; normal-modal-logic/completeness/frame-completeness; translation/content/normal-modal-logic/completeness/frame-completeness.tex:245; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the added final sentence make only the source-implied contradiction between the B-witness conjunction and its negation in Delta-2 explicit, without changing the weak-density claim?

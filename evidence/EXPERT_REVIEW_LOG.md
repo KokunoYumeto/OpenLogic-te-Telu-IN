@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 448 of 722 draft units**. This log contains 138 terminology/sense decisions and 414 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 449 of 722 draft units**. This log contains 139 terminology/sense decisions and 415 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3319,6 +3319,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక పేజీలు ఈ మోడల్-ప్రత్యేక నిర్ణాయకత్వం లేదా వ్యవస్థ/నమూనా వర్గ సంపూర్ణత నిరూపణను ప్రత్యక్షంగా ఇవ్వవు. సాధారణ వర్గానికి కానానికల్ నమూనా ఆ వర్గంలో ఉండాలని మూలం చెప్పే పరిమితిని నిలిపాం.
 
 - Please double-check: Please double-check whether “నిర్ణాయకత్వం / కానానికల్ నమూనా నిర్ణాయకత్వ సిద్ధాంతం / K సంపూర్ణత / నమూనా వర్గానికి సాపేక్ష సంపూర్ణత” is idiomatic and technically standard for “determination / canonical-model determination theorem / completeness of K / completeness relative to a model class” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T139 — frame completeness / D-T-B-4-5 canonical correspondence / serial, reflexive, symmetric, transitive, Euclidean / partially functional, functional, weakly dense
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: ఫ్రేమ్ సంపూర్ణత / D-T-B-4-5 కానానికల్ అనురూపత / సీరియల్, స్వావర్తన, సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ / పాక్షిక ప్రమేయాత్మక, ప్రమేయాత్మక, బలహీన సాంద్ర
+
+- Exact implementation: OLP-0449; normal-modal-logic/completeness/frame-completeness; content/normal-modal-logic/completeness/frame-completeness.tex:11 ↔ translation/content/normal-modal-logic/completeness/frame-completeness.tex:11 (OLP-0449-B005); printed/PDF page pending; OLP-0449; normal-modal-logic/completeness/frame-completeness; content/normal-modal-logic/completeness/frame-completeness.tex:13-15 ↔ translation/content/normal-modal-logic/completeness/frame-completeness.tex:13-15 (OLP-0449-B006); printed/PDF page pending; OLP-0449; normal-modal-logic/completeness/frame-completeness; content/normal-modal-logic/completeness/frame-completeness.tex:24-44 ↔ translation/content/normal-modal-logic/completeness/frame-completeness.tex:24-44 (OLP-0449-B008); printed/PDF page pending; OLP-0449; normal-modal-logic/completeness/frame-completeness; content/normal-modal-logic/completeness/frame-completeness.tex:49-64 ↔ translation/content/normal-modal-logic/completeness/frame-completeness.tex:49-66 (OLP-0449-B010); printed/PDF page pending; OLP-0449; normal-modal-logic/completeness/frame-completeness; content/normal-modal-logic/completeness/frame-completeness.tex:95-109 ↔ translation/content/normal-modal-logic/completeness/frame-completeness.tex:104-121 (OLP-0449-B014); printed/PDF page pending; OLP-0449; normal-modal-logic/completeness/frame-completeness; content/normal-modal-logic/completeness/frame-completeness.tex:117-127 ↔ translation/content/normal-modal-logic/completeness/frame-completeness.tex:129-139 (OLP-0449-B016); printed/PDF page pending; OLP-0449; normal-modal-logic/completeness/frame-completeness; content/normal-modal-logic/completeness/frame-completeness.tex:129-142 ↔ translation/content/normal-modal-logic/completeness/frame-completeness.tex:141-154 (OLP-0449-B017); printed/PDF page pending; OLP-0449; normal-modal-logic/completeness/frame-completeness; content/normal-modal-logic/completeness/frame-completeness.tex:166-181 ↔ translation/content/normal-modal-logic/completeness/frame-completeness.tex:181-198 (OLP-0449-B020); printed/PDF page pending; OLP-0449; normal-modal-logic/completeness/frame-completeness; content/normal-modal-logic/completeness/frame-completeness.tex:227-231 ↔ translation/content/normal-modal-logic/completeness/frame-completeness.tex:253-257 (OLP-0449-B022); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P011, PDF 309, printed 302, Main points 8-18; TE-P012, PDF 319, printed 312, Questions 37-38; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P026, PDF 88, printed 81, Consistency section
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P008/010/011/012లో సమితి, ద్విస్థానిక సంబంధం, ప్రమేయ ఏకైకత, సర్వత్ర నిర్వచితత్వం; TE-P018/024/026లో సాధారణ తర్కం, వ్యుత్పత్తి, అవైరుధ్య పర్యాయం చూశాం. TE-T114లో స్థిర ఫ్రేమ్ ధర్మ పదరూపాలు, properties-accessibility.texలో వాటి నిర్వచనాలు కొనసాగించాం. మోడల్ అనురూపత, సాపేక్ష సంపూర్ణత OLP-0449 స్థిర మూలం నుంచే. D, T, B, 4, 5, K, S5, KT5, KTB4, Sigma, Gamma, Delta, R, W, Box, Diamond and tag keys రక్షిత గణిత సంకేతాలు; సీరియల్, యూక్లిడియన్ పూర్వ ప్రకటిత అరువులు.
+
+- Alternatives: TE-T114లో స్థిర సీరియల్/స్వావర్తన/సౌష్ఠవ/సంక్రామక/యూక్లిడియన్, పాక్షిక ప్రమేయాత్మక/ప్రమేయాత్మక/బలహీన సాంద్ర రూపాలను కొనసాగించి D/T/B/4/5 guarded నిరూపణలు, నమూనా వర్గ సిద్ధాంతం, చివరి అసంపూర్ణత హెచ్చరిక నిలపడం (ఎంపిక); సంక్రామక బదులు కొత్త సంక్రమణీయ రూపాన్ని ఈ అధ్యాయంలో ప్రవేశపెట్టడం (తిరస్కరణ); కానానికల్ అనురూపత నుంచే ప్రతి మోడల్ వ్యవస్థకు సంపూర్ణత వస్తుందని చెప్పడం (తిరస్కరణ); బలహీన సాంద్రత నిరూపణ చివరి అవైరుధ్యాన్ని పాఠకుడికి చెప్పకుండా వదలడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక పేజీలు ఈ మోడల్-ప్రత్యేక కానానికల్ ఫ్రేమ్ సిద్ధాంతాలను ప్రత్యక్షంగా నిరూపించవు. బలహీన సాంద్రత నిరూపణలో మూలం సూచించినా స్పష్టంగా చెప్పని చివరి అవైరుధ్య విరోధాన్ని OLTENMLCOMFRA-001లో ప్రకటించి వివరించాం.
+
+- Please double-check: Please double-check whether “ఫ్రేమ్ సంపూర్ణత / D-T-B-4-5 కానానికల్ అనురూపత / సీరియల్, స్వావర్తన, సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ / పాక్షిక ప్రమేయాత్మక, ప్రమేయాత్మక, బలహీన సాంద్ర” is idiomatic and technically standard for “frame completeness / D-T-B-4-5 canonical correspondence / serial, reflexive, symmetric, transitive, Euclidean / partially functional, functional, weakly dense” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -13255,3 +13279,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Does the exercise tag list use the exact probAnd key tested by the conjunction branch, with no loss of the worked or exercise text?
+
+## REV-OLTENMLCOMFRA-001 — OLTENMLCOMFRA-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: బలహీన సాంద్రత నిరూపణలో చివరి గణిత వరుస తరువాత ప్రారంభ సాక్షి సూత్రాల సంయోగ నిషేధం అదే అవిరుద్ధ సమితిలో ఉండటం విరోధమని ఒక వాక్యంతో స్పష్టంచేసి పక్కనే ప్రకటించాం; స్థిర మూలం మారలేదు.
+
+- Exact implementation: OLP-0449; normal-modal-logic/completeness/frame-completeness; frame-completeness.tex lines 209-224 ↔ translation/content/normal-modal-logic/completeness/frame-completeness.tex:245 (OLP-0449-B021); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLCOMFRA-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: బలహీన సాంద్రత నిరూపణలో చివరి గణిత వరుస తరువాత ప్రారంభ సాక్షి సూత్రాల సంయోగ నిషేధం అదే అవిరుద్ధ సమితిలో ఉండటం విరోధమని ఒక వాక్యంతో స్పష్టంచేసి పక్కనే ప్రకటించాం; స్థిర మూలం మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: Does the added final sentence make only the source-implied contradiction between the B-witness conjunction and its negation in Delta-2 explicit, without changing the weak-density claim?

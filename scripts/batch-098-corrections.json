@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0449",
+  "source_path": "content/normal-modal-logic/completeness/frame-completeness.tex",
+  "source_sha256": "4021151e95c367cfd94030d36b6dfb3c16792ade5767bb24825daf2e0602bb70",
+  "audit_id": "OLTENMLCOMFRA-20260927",
+  "audit_review_path": "evidence/OLP-0449-FRAME-COMPLETENESS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "c0ab4a1619df8fc97a7697e5fb5635209cb8acd7a32bbc8ed91bb41f72d0d399",
+  "audit_findings_path": "evidence/OLP-0449-FRAME-COMPLETENESS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "79ece91ffaca5e07fa576c5c69241056e852a28c94b2211840410d582c960153",
+  "previous_corrections": 414,
+  "treatments": {
+    "OLTENMLCOMFRA-001": {
+      "target_line": 245,
+      "body_treatment": "బలహీన సాంద్రత నిరూపణలో చివరి గణిత వరుస తరువాత ప్రారంభ సాక్షి సూత్రాల సంయోగ నిషేధం అదే అవిరుద్ధ సమితిలో ఉండటం విరోధమని ఒక వాక్యంతో స్పష్టంచేసి పక్కనే ప్రకటించాం; స్థిర మూలం మారలేదు."
+    }
+  }
+}

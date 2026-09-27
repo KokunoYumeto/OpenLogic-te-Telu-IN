@@ -819,6 +819,17 @@ locations['TE-T138']=[
  L('content/normal-modal-logic/completeness/completeness-K.tex',44,56,49,62,'complete','సంపూర్ణ'),
  L('content/normal-modal-logic/completeness/completeness-K.tex',58,63,64,70,'class of models','నమూనా వర్గానికి')
 ];
+locations['TE-T139']=[
+ L('content/normal-modal-logic/completeness/frame-completeness.tex',11,11,11,11,'Frame Completeness','ఫ్రేమ్ సంపూర్ణత'),
+ L('content/normal-modal-logic/completeness/frame-completeness.tex',13,22,13,22,'frame property','ఫ్రేమ్ ధర్మం'),
+ L('content/normal-modal-logic/completeness/frame-completeness.tex',24,44,24,44,'euclidean','యూక్లిడియన్'),
+ L('content/normal-modal-logic/completeness/frame-completeness.tex',49,64,49,66,'\\Box^{-1}\\Delta','\\Box^{-1}\\Delta'),
+ L('content/normal-modal-logic/completeness/frame-completeness.tex',66,110,68,122,'\\Ax{5}','\\Ax{5}'),
+ L('content/normal-modal-logic/completeness/frame-completeness.tex',117,127,129,140,'class of models','నమూనాల వర్గం'),
+ L('content/normal-modal-logic/completeness/frame-completeness.tex',129,141,142,155,'partially functional','పాక్షిక ప్రమేయాత్మకమైనది'),
+ L('content/normal-modal-logic/completeness/frame-completeness.tex',166,225,180,251,'weakly dense','బలహీన సాంద్రత గలదని'),
+ L('content/normal-modal-logic/completeness/frame-completeness.tex',227,231,253,257,'not complete','సంపూర్ణం కాని')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -943,6 +954,7 @@ alternatives['TE-T135']=['Box/Diamond షరతుపర శాఖలు, పూ
 alternatives['TE-T136']=['సంపూర్ణ Sigma-అవిరుద్ధ సమితులను లోకాలుగా, Box/Diamond guarded ప్రాప్యతను Rగా, మూలకత్వ-ఆధారిత పరమాణు విలువ నిర్ణయాన్ని Vగా నిర్వచించడం (ఎంపిక)','సత్య-మూలకత్వ తుల్యతను ఈ నిర్వచనంలోనే పూర్తిగా నిరూపించామని చూపడం (తిరస్కరణ)','Box/Diamond శాఖల ప్రాప్యత షరతులను తారుమారు చేయడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలే కానానికల్ నమూనాను ప్రత్యక్షంగా నిర్వచించాయని చూపడం (తిరస్కరణ)'];
 alternatives['TE-T137']=['సత్య ఉపసిద్ధాంతం, ప్రతిజ్ఞావాక్య/మోడల్ అన్ని ఆగమన సందర్భాలు, guarded వ్యాయామ శాఖలు నిలిపి, Diamond నిరూపణలో రెండు దశలు, వ్యాయామ ట్యాగ్ కేసును పక్కనే ప్రకటించి సరిచేయడం (ఎంపిక)','Box-ప్రాప్యత నుంచి Diamond-ప్రతిబింబానికి తప్పు ప్రతిపాదనను సూచించడం (తిరస్కరణ)','ప్రాప్య లోకంలోని B మూలకత్వం నుంచి ఆగమన పరికల్పన లేకుండా సత్యానికి దూకడం (తిరస్కరణ)','proband అనే అసమాన ట్యాగ్‌ను జాబితాలో ఉంచడం (తిరస్కరణ)'];
 alternatives['TE-T138']=['నిర్ణాయకత్వాన్ని నమూనాలో సర్వత్రా సత్యం, వ్యవస్థలో వ్యుత్పాద్యత తుల్యతగా నిర్వచించి, K సంపూర్ణత విపర్యయ నిరూపణను, సాధారణ నమూనా వర్గ పరిమితిని నిలపడం (ఎంపిక)','నిర్ణాయకత్వమే ఏ నమూనా వర్గానికైనా వ్యవస్థ సంపూర్ణతను ఇస్తుందని చెప్పడం (తిరస్కరణ)','కానానికల్ నమూనా వర్గ-సభ్యత్వ అవసరాన్ని తొలగించడం (తిరస్కరణ)','స్థానిక సాధారణ ప్రతిజ్ఞావాక్య పేజీలే ఈ మోడల్ K సిద్ధాంతాన్ని ప్రత్యక్షంగా నిరూపిస్తాయని చూపడం (తిరస్కరణ)'];
+alternatives['TE-T139']=['TE-T114లో స్థిర సీరియల్/స్వావర్తన/సౌష్ఠవ/సంక్రామక/యూక్లిడియన్, పాక్షిక ప్రమేయాత్మక/ప్రమేయాత్మక/బలహీన సాంద్ర రూపాలను కొనసాగించి D/T/B/4/5 guarded నిరూపణలు, నమూనా వర్గ సిద్ధాంతం, చివరి అసంపూర్ణత హెచ్చరిక నిలపడం (ఎంపిక)','సంక్రామక బదులు కొత్త సంక్రమణీయ రూపాన్ని ఈ అధ్యాయంలో ప్రవేశపెట్టడం (తిరస్కరణ)','కానానికల్ అనురూపత నుంచే ప్రతి మోడల్ వ్యవస్థకు సంపూర్ణత వస్తుందని చెప్పడం (తిరస్కరణ)','బలహీన సాంద్రత నిరూపణ చివరి అవైరుధ్యాన్ని పాఠకుడికి చెప్పకుండా వదలడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -958,7 +970,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T138 record the Batch 025--Batch 097 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T139 record the Batch 025--Batch 098 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1286,6 +1298,7 @@ const correctionQuestions={
  ,'OLTENMLCOMTRU-001':'Does the Box-guarded Diamond-forward case use the Box/Diamond accessibility equivalence lemma, not the membership proposition, while preserving the same witness?'
  ,'OLTENMLCOMTRU-002':'Does the Diamond-reverse case apply the induction hypothesis to B at the accessible world before invoking the Diamond truth clause?'
  ,'OLTENMLCOMTRU-003':'Does the exercise tag list use the exact probAnd key tested by the conjunction branch, with no loss of the worked or exercise text?'
+ ,'OLTENMLCOMFRA-001':'Does the added final sentence make only the source-implied contradiction between the B-witness conjunction and its negation in Delta-2 explicit, without changing the weak-density claim?'
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));

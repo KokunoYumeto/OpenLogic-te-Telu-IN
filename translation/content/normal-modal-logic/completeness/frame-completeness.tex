@@ -1,0 +1,259 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: frame-completeness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{fra}
+
+\olsection{ఫ్రేమ్ సంపూర్ణత}
+
+ఒక తర్కానికి చెందిన కానానికల్ నమూనాకు తగిన ఫ్రేమ్ ధర్మం
+ఉందని చూపిన తరువాత, \Log{K} సంపూర్ణతా సిద్ధాంతాన్ని ఇతర
+మోడల్ వ్యవస్థలకు కూడా విస్తరించవచ్చు.
+
+\begin{thm}\ollabel{thm:completeframeprops}
+  నార్మల్ మోడల్ తర్కం $\Sigma$లో
+  \olref{tab:correspondencetable} ఎడమవైపు ఉన్న
+  \tetoken{సూత్రాల}{!!{formula}s}లో ఒకటి ఉంటే, $\Sigma$కు చెందిన
+  కానానికల్ నమూనాకు కుడివైపు ఉన్న సంబంధిత ధర్మం ఉంటుంది.
+\end{thm}
+
+\begin{table}[htp]
+  \centering
+    \begin{tabular}{| l || l |}
+      \hline
+      \emph{$\Sigma$లో ఇవి ఉంటే \dots} & \emph{\dots $\Sigma$కు చెందిన
+        కానానికల్ నమూనా:} \\
+      \hline \hline
+      \Ax{D}:\;\; $\Box!A \lif \Diamond !A$ & \quad సీరియల్; \\
+      \hline
+      \Ax{T}:\;\; $\Box!A \lif !A$ &\quad స్వావర్తన;\\
+      \hline
+      \Ax{B}: \;\;$!A \lif \Box\Diamond!A$ &\quad సౌష్ఠవ; \\
+      \hline
+      \Ax{4}: \;\; $\Box!A \lif \Box\Box!A$ & \quad సంక్రామక; \\
+      \hline
+      \Ax{5}: \;\; $\Diamond !A \lif \Box\Diamond!A$& \quad యూక్లిడియన్.\\
+      \hline
+    \end{tabular}
+    \caption{ప్రాథమిక అనురూపత వాస్తవాలు.}
+    \ollabel{tab:correspondencetable}
+\end{table}
+
+\begin{proof}
+  వీటిని ఒక్కొక్కటిగా పరిశీలిద్దాం.
+
+  $\Sigma$లో \Ax{D} ఉందని, $\Delta \in W^\Sigma$ అని
+  అనుకుందాం. $R^\Sigma \Delta\Delta'$ అయ్యే $\Delta'$ ఒకటి
+  ఉందని చూపాలి. $\Box^{-1}\Delta$ $\Sigma$-అవిరుద్ధమని
+  చూపితే చాలు. అప్పుడు లిండెన్‌బామ్ ఉపసిద్ధాంతం ప్రకారం
+  సంపూర్ణ $\Sigma$-అవిరుద్ధ సమితి
+  $\Delta' \supseteq \Box^{-1}\Delta$ ఉంటుంది;
+  $R^\Sigma$ నిర్వచనం \iftag{prvBox}{}{మరియు
+    \olref[mod]{lem:box-iff-diamond} }ప్రకారం
+  $R^\Sigma \Delta\Delta'$ అవుతుంది. కాబట్టి విరోధార్థం
+  $\Box^{-1}\Delta$ $\Sigma$-అవిరుద్ధం \emph{కాదని}, అంటే
+  $\Box^{-1}\Delta \Proves[\Sigma] \lfalse$ అని అనుకుందాం.
+  \olref[mod]{lem:box2} ప్రకారం $\Delta \Proves[\Sigma]
+  \Box\lfalse$; $\Sigma$లో \Ax{D} ఉన్నందున
+  $\Delta \Proves[\Sigma] \Diamond\lfalse$ కూడా. అయితే
+  $\Sigma$ నార్మల్ కనుక $\Sigma \Proves \lnot\Diamond
+  \lfalse$ (\olref[prf][nor]{prop:notDiamondBot}); అందువల్ల
+  $\Delta \Proves[\Sigma] \lnot\Diamond \lfalse$ కూడా.
+  ఇది~$\Delta$ అవైరుధ్యానికి విరుద్ధం.
+
+  ఇప్పుడు $\Sigma$లో \Ax{T} ఉందని, $\Delta \in W^\Sigma$
+  అని అనుకుందాం. $R^\Sigma \Delta\Delta$ అని, అంటే
+  \iftag{prvBox}{}{\olref[mod]{lem:box-iff-diamond} ప్రకారం,}
+  $\Box^{-1}\Delta \subseteq \Delta$ అని చూపాలి.
+  $\Box!A \in \Delta$ అయితే \Ax{T} వల్ల $!A \in \Delta$;
+  కావలసింది ఇదే.
+
+  ఇప్పుడు $\Sigma$లో \Ax{B} ఉందని, $\Delta$,
+  $\Delta' \in W^\Sigma$లకు $R^\Sigma \Delta\Delta'$
+  అని అనుకుందాం. $R^\Sigma \Delta'\Delta$ అని, అంటే
+  \iftag{prvBox}{$\Box^{-1}\Delta' \subseteq \Delta$
+    అని చూపాలి. \olref[mod]{lem:box-iff-diamond}
+    ప్రకారం ఇది తుల్యం}{}
+  $\Diamond\Delta \subseteq \Delta'$ అని చూపాలి.
+  $!A \in \Delta$ అనుకుందాం. \Ax{B} వల్ల
+  $\Box\Diamond!A \in \Delta$ కూడా. $R^\Sigma
+  \Delta\Delta'$ అనే పరికల్పన \iftag{prvBox}{}{
+    మరియు \olref[mod]{lem:box-iff-diamond}} ప్రకారం
+  $\Box^{-1}\Delta \subseteq \Delta'$; కనుక కావలసినట్లే
+  $\Diamond!A \in \Delta'$.
+
+  ఇప్పుడు $\Sigma$లో \Ax{4} ఉందని, $R^\Sigma
+  \Delta_1\Delta_2$, $R^\Sigma \Delta_2\Delta_3$ అని
+  అనుకుందాం. $R^\Sigma \Delta_1\Delta_3$ అని చూపాలి.
+  పరికల్పన \iftag{prvBox}{}{మరియు
+    \olref[mod]{lem:box-iff-diamond}} ప్రకారం
+  $\Box^{-1}\Delta_1 \subseteq \Delta_2$ మరియు
+  $\Box^{-1}\Delta_2 \subseteq \Delta_3$ రెండూ ఉన్నాయి.
+  $R^\Sigma \Delta_1\Delta_3$ కోసం
+  $\Box^{-1}\Delta_1 \subseteq \Delta_3$ అని చూపితే చాలు.
+  $!B \in \Box^{-1}\Delta_1$, అంటే $\Box!B \in
+  \Delta_1$ అనుకుందాం. \Ax{4} వల్ల $\Box\Box!B \in
+  \Delta_1$ కూడా. పరికల్పనను మొదట వాడితే
+  $\Box!B \in \Delta_2$; రెండవసారి వాడితే కావలసినట్లే
+  $!B \in \Delta_3$.
+
+  ఇప్పుడు $\Sigma$లో \Ax{5} ఉందని, $R^\Sigma
+  \Delta_1\Delta_2$, $R^\Sigma \Delta_1\Delta_3$ అని
+  అనుకుందాం. $R^\Sigma \Delta_2\Delta_3$ అని చూపాలి.
+  మొదటి పరికల్పన $\Box^{-1}\Delta_1 \subseteq
+  \Delta_2$ను ఇస్తుంది\iftag{prvBox}{}{;
+    \olref[mod]{lem:box-iff-diamond} ప్రకారం}. రెండవ
+  పరికల్పన $\Diamond\Delta_3 \subseteq
+  \Delta_1$కు తుల్యం\iftag{prvBox}{,
+    \olref[mod]{lem:box-iff-diamond} ప్రకారం}{}.
+  $R^\Sigma \Delta_2\Delta_3$ కోసం\iftag{prvBox}{
+    \olref[mod]{lem:box-iff-diamond} ప్రకారం,}{}
+  $\Diamond\Delta_3 \subseteq \Delta_2$ అని చూపాలి.
+  $\Diamond!A \in \Diamond\Delta_3$, అంటే
+  $!A \in \Delta_3$ అనుకుందాం. రెండవ పరికల్పన వల్ల
+  $\Diamond!A \in \Delta_1$; \Ax{5} వల్ల
+  $\Box\Diamond!A \in \Delta_1$ కూడా. ఇప్పుడు మొదటి
+  పరికల్పన వల్ల కావలసినట్లే $\Diamond!A \in \Delta_2$.
+  \end{proof}
+
+ఈ ఫలితాల అనుబంధంగా అనేక వ్యవస్థలకు సంపూర్ణతా ఫలితాలు
+లభిస్తాయి. ఉదాహరణకు $\Log{S5} = \Log{KT5} =
+\Log{KTB4}$ అన్ని స్వావర్తన, యూక్లిడియన్ నమూనాల
+వర్గానికి సంబంధించి సంపూర్ణమని తెలుసు. ఇదే అన్ని
+స్వావర్తన, సౌష్ఠవ, సంక్రామక నమూనాల వర్గం.
+
+\begin{thm}\ollabel{thm:generaldet}
+  $\mClass{C}_\Ax{D}$, $\mClass{C}_\Ax{T}$,
+  $\mClass{C}_\Ax{B}$, $\mClass{C}_\Ax{4}$,
+  $\mClass{C}_\Ax{5}$ వరుసగా అన్ని సీరియల్, స్వావర్తన,
+  సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ నమూనాల వర్గాలు
+  అనుకుందాం. అప్పుడు \Ax{D}, \Ax{T}, \Ax{B},
+  \Ax{4}, \Ax{5}లలోని ఏ స్కీమాలైనా $!A_1$,
+  \dots, $!A_n$కు వ్యవస్థ $\Log{K}!A_1 \dots !A_n$ను
+  నమూనాల వర్గం $\mClass{C} = \mClass{C}_{!A_1} \cap
+  \dots \cap \mClass{C}_{!A_n}$ నిర్ణయిస్తుంది.
+\end{thm}
+
+\begin{prop}
+  $\Sigma$ నార్మల్ మోడల్ తర్కం అనుకుందాం. అప్పుడు:
+  \begin{enumerate}
+  \item\ollabel{prop:anotherfive-a}%
+    $\Sigma$లో స్కీమా $\Diamond!A \lif \Box !A$ ఉంటే,
+    $\Sigma$కు చెందిన కానానికల్ నమూనా పాక్షిక ప్రమేయాత్మకమైనది.
+  \item $\Sigma$లో స్కీమా $\Diamond!A \liff \Box !A$
+    ఉంటే, $\Sigma$కు చెందిన కానానికల్ నమూనా ప్రమేయాత్మకమైనది.
+  \item $\Sigma$లో స్కీమా $\Box\Box!A \lif \Box !A$
+    ఉంటే, $\Sigma$కు చెందిన కానానికల్ నమూనా బలహీన సాంద్రత గలది.
+  \end{enumerate}
+  (ఈ ఫ్రేమ్ ధర్మాల నిర్వచనాలకు
+  \olref[frd][acc]{tab:anotherfive} చూడండి.)
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item $\Sigma$లో స్కీమా $\Diamond !A \lif \Box !A$
+    ఉందని అనుకుందాం. $R^\Sigma$ పాక్షిక ప్రమేయాత్మకమైనది
+    అని చూపడానికి, ఏ $\Delta_1$, $\Delta_2$, $\Delta_3 \in
+    W^\Sigma$లకైనా $R^\Sigma \Delta_1\Delta_2$ మరియు
+    $R^\Sigma \Delta_1\Delta_3$ అయితే $\Delta_2=\Delta_3$
+    అని నిరూపించాలి. $R^\Sigma \Delta_1\Delta_2$ కనుక
+    $\Box^{-1}\Delta_1 \subseteq \Delta_2$; అలాగే
+    $R^\Sigma \Delta_1\Delta_3$ కనుక
+    $\Box^{-1}\Delta_1 \subseteq \Delta_3$\iftag{prvBox}{}{;
+      రెండూ \olref[mod]{lem:box-iff-diamond} ప్రకారం}.
+    $\Delta_2 \subseteq \Delta_3$, $\Delta_3 \subseteq
+    \Delta_2$ అనే రెండు సమ్మిళితత్వాలను స్థాపిస్తే
+    $\Delta_2=\Delta_3$ అనుసరిస్తుంది. మొదటి సమ్మిళితత్వానికి
+    $!A \in \Delta_2$ అనుకుందాం; అప్పుడు $\Diamond!A
+    \in \Delta_1$. స్కీమా, $\Delta_1$ నిగమన సంవృతత వల్ల
+    $\Box!A \in \Delta_1$ కూడా. $R^\Sigma
+    \Delta_1\Delta_3$ పరికల్పన వల్ల $!A \in \Delta_3$.
+    రెండవ సమ్మిళితత్వం కూడా ఇదే విధంగా వస్తుంది.
+
+  \item ఇది \olref{prop:anotherfive-a} అంశం,
+    \olref{thm:completeframeprops}లోని సీరియల్ ధర్మ నిరూపణ
+    నుంచే వెంటనే అనుసరిస్తుంది.
+
+    \item $\Sigma$లో స్కీమా $\Box\Box!A \lif \Box!A$
+    ఉందని అనుకుందాం. $R^\Sigma$ బలహీన సాంద్రత గలదని
+    చూపడానికి $R^\Sigma \Delta_1\Delta_2$ను తీసుకుందాం.
+    $R^\Sigma \Delta_1\Delta_3$ మరియు $R^\Sigma
+    \Delta_3\Delta_2$ అయ్యే సంపూర్ణ $\Sigma$-అవిరుద్ధ
+    సమితి $\Delta_3$ ఒకటి ఉందని చూపాలి. ఇలా ఉంచుదాం:
+    \[
+    \Gamma = \Box^{-1}\Delta_1 \cup \Diamond\Delta_2.
+    \]
+    $\Gamma$ $\Sigma$-అవిరుద్ధమని చూపితే చాలు. అప్పుడు
+    లిండెన్‌బామ్ ఉపసిద్ధాంతం ప్రకారం $\Box^{-1}\Delta_1
+    \subseteq \Delta_3$, $\Diamond\Delta_2 \subseteq
+    \Delta_3$ అయ్యే సంపూర్ణ $\Sigma$-అవిరుద్ధ
+    సమితి~$\Delta_3$గా దాన్ని విస్తరించవచ్చు; అంటే
+    $R^\Sigma \Delta_1\Delta_3$\iftag{prvBox}{}{(
+      \olref[mod]{lem:box-iff-diamond} ప్రకారం)} మరియు
+    $R^\Sigma \Delta_3\Delta_2$\iftag{prvBox}{(
+      \olref[mod]{lem:box-iff-diamond} ప్రకారం)}{}.
+
+    విరోధార్థం $\Gamma$ అవిరుద్ధం కాదని అనుకుందాం.
+    అప్పుడు $\Box!A_1$, \dots, $\Box!A_n \in \Delta_1$
+    అయ్యే \tetoken{సూత్రాలు}{!!{formula}s}, అలాగే
+    $!B_1$, \dots,~$!B_m \in \Delta_2$ ఉండి, \[!A_1, \dots,
+    !A_n, \Diamond!B_1, \dots, \Diamond!B_m \Proves[\Sigma]
+    \lfalse.\] ప్రతి నార్మల్ మోడల్ తర్కంలో
+    $\Diamond (!B_1 \land \dots \land !B_m) \to
+    (\Diamond!B_1 \land \dots \land \Diamond!B_m)$
+    \tetoken{వ్యుత్పాద్యం}{!!{derivable}} కనుక, కింది విధంగా
+    వాదిస్తాం; ఇది~$\Delta_2$ అవైరుధ్యానికి విరుద్ధం:
+    \begin{align*}
+      !A_1, \dots, !A_n, & \Diamond!B_1, \dots,
+      \Diamond!B_m \Proves[\Sigma] \lfalse \\
+      !A_1, \dots,!A_n & \Proves[\Sigma] (\Diamond!B_1 \land
+      \dots \land \Diamond!B_m) \lif \lfalse\\
+      & \qquad\text{నిగమన సిద్ధాంతం ప్రకారం}\\
+      & \qquad\text{\olref[prf][prp]{prop:derivabilityfacts}\olref[prf][prp]{prop:derivabilityfacts-deduction}, మరియు \Taut} \\
+      !A_1, \dots,!A_n & \Proves[\Sigma]
+      \Diamond(!B_1 \land
+      \dots \land !B_m) \lif \lfalse\\
+      & \qquad \text{$\Sigma$ నార్మల్ కనుక} \\
+      !A_1, \dots,!A_n & \Proves[\Sigma]
+      \lnot\Diamond (!B_1 \land \dots \land !B_m)\\
+      & \qquad\text{\PL{} ప్రకారం} \\
+      !A_1, \dots,!A_n & \Proves[\Sigma]
+      \Box\lnot (!B_1 \land \dots \land !B_m)\\
+      & \qquad\text{$\lnot\Diamond$కు $\Box\lnot$} \\
+      \Box!A_1, \dots,\Box!A_n
+      & \Proves[\Sigma] \Box\Box \lnot (!B_1 \land \dots \land !B_m)\\
+      & \qquad\text{\olref[mod]{lem:box1} ప్రకారం} \\
+      \Box!A_1, \dots,\Box!A_n
+      & \Proves[\Sigma]
+      \Box\lnot (!B_1 \land \dots \land !B_m)\\
+      &\qquad\text{స్కీమా $\Box\Box!A \lif \Box!A$ ప్రకారం} \\
+      \Delta_1 & \Proves[\Sigma]
+      \Box\lnot (!B_1 \land \dots \land !B_m)\\
+      &\qquad\text{ఏకదిశత్వం, \olref[prf][prp]{prop:derivabilityfacts}\olref[prf][prp]{prop:derivabilityfacts-monotonicity} ప్రకారం} \\
+      & \Box\lnot (!B_1 \land \dots \land !B_m) \in \Delta_1\\
+      &\qquad\text{నిగమన సంవృతత వల్ల}; \\
+      & \lnot (!B_1 \land \dots \land !B_m) \in \Delta_2\\
+      &\qquad \text{ఎందుకంటే }
+      R^\Sigma \Delta_1\Delta_2.
+    \end{align*}
+    ఆ సాక్షి సూత్రాలన్నీ రెండవ సమితిలోనే ఉండగా వాటి
+    సంయోగ నిషేధమూ అక్కడ ఉండటం అవైరుధ్యానికి విరుద్ధం.
+    \sourcecorrection{OLTENMLCOMFRA-001}{స్థిర మూలం
+      చివరి ప్రదర్శిత వరుసతో నిరూపణను ముగిస్తుంది.
+      ప్రారంభంలో తీసుకున్న అన్ని $!B_i$లు $\Delta_2$లో
+      ఉన్నందున వాటి సంయోగ నిషేధం కూడా అక్కడ ఉండటం
+      అవైరుధ్యానికి విరుద్ధమని ముగింపు దశను స్పష్టం చేశాం.}
+  \end{enumerate}
+\end{proof}
+
+ఈ ఉదాహరణలను బట్టి, ప్రతి మోడల్ తర్క వ్యవస్థ~$\Sigma$
+\emph{సంపూర్ణం} అని అనిపించవచ్చు: అంటే, $\Sigma$లోని ప్రతి
+సిద్ధాంతం చెల్లుబాటయ్యే ప్రతి ఫ్రేమ్‌లో చెల్లుబాటయ్యే ప్రతి
+సూత్రాన్నీ ఆ వ్యవస్థ నిరూపిస్తుందని. దురదృష్టవశాత్తు,
+ఈ అర్థంలో సంపూర్ణం కాని వ్యవస్థలు ఎన్నో ఉన్నాయి.
+
+\end{document}
