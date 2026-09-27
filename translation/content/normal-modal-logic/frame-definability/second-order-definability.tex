@@ -1,0 +1,193 @@
+% Part: normal-modal-logic
+% Chapter: frame-correspondence
+% Section: standard-translation
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{frd}{st}
+
+\olsection{ద్వితీయ-స్థాయి నిర్వచనీయత}
+
+మోడల్ సూత్రాలతో నిర్వచించగల ప్రతి చట్ర ధర్మమూ
+మొదటిస్థాయి నిర్వచనీయమైనది కాదు. అయితే ఏకస్థానిక విధేయాలపై
+పరిమాణీకరణను (అంటే, ఏకస్థానిక ద్వితీయ-స్థాయి పరిమాణీకరణను)
+అనుమతిస్తే, మోడల్ సూత్రాలతో నిర్వచించగల అన్ని చట్ర ధర్మాలనూ
+నిర్వచించవచ్చు. ఒక లోకం వద్ద మోడల్
+\tetoken{సూత్రం}{!!{formula}} సత్యమయ్యే షరతులకూ
+మొదటిస్థాయి \tetoken{సూత్రాలకూ}{!!{formula}s} మధ్య ఉన్న
+క్రమబద్ధమైన సంబంధాన్ని ఉపయోగించడమే ఉపాయం. దీనినే మోడల్
+సూత్రాల \emph{ప్రామాణిక అనువాదం} అంటారు. ప్రాప్యత సంబంధం
+కోసం ద్విస్థాన \tetoken{విధేయ సంకేతం}{!!{predicate}}~$Q$
+మాత్రమే కాక, $!A$లో వచ్చే
+\tetoken{ప్రతిజ్ఞావాక్య చరాలు}{!!{propositional variable}s}~$\Obj p_i$
+కోసం ఏకస్థానిక \tetoken{విధేయ సంకేతం}{!!{predicate}}~$P_i$
+కూడా ఉన్న భాషలోని మొదటిస్థాయి సూత్రాలుగా ఈ అనువాదం
+మోడల్ సూత్రాలను మారుస్తుంది.
+
+\begin{defn}
+  \emph{ప్రామాణిక అనువాదం}~$\ST_x(!A)$ను ఆగమన
+  పద్ధతిలో కిందిలా నిర్వచిస్తాం:
+  \begin{enumerate}
+  \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\ST_x(\indfrm) = \lfalse$.}}{}
+  \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\ST_x(\indfrm) = \ltrue$.}%
+    \sourcecorrection{OLTENMLFRDST-001}{మూలంలోని సత్య
+      విభాగపు సందర్భంలో పొరపాటున అసత్య స్థిరాంకం ఉంది;
+      కుడివైపు సమీకరణానికి, పూర్వ సత్య నిర్వచనానికి అనుగుణంగా
+      దాన్ని సత్య స్థిరాంకంగా సరిచేశాం.}}{}
+  \item \indcase{!A}{\Obj p_i}{$\ST_x(\indfrm) = \Atom{P_i}{x}$.}
+  \tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\ST_x(\indfrm) = \lnot \ST_x(!B)$.}}{}
+  \tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{$\ST_x(\indfrm) = (\ST_x(!B)
+      \land \ST_x(!C))$.}}{}
+  \tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{$\ST_x(\indfrm) = (\ST_x(!B)
+      \lor \ST_x(!C))$.}}{}
+  \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{$\ST_x(\indfrm) = (\ST_x(!B)
+      \lif \ST_x(!C))$.}}{}
+  \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{$\ST_x(\indfrm) = (\ST_x(!B)
+      \liff \ST_x(!C))}$.}{}
+  \tagitem{prvBox}{\indcase{!A}{\Box !B}{$\ST_x(\indfrm) =
+      \lforall[y][(\Atom{Q}{x,y} \lif \ST_y(!B))]$.}}{}
+  \tagitem{prvDiamond}{\indcase{!A}{\Diamond !B}{$\ST_x(\indfrm) =
+      \lexists[y][(\Atom{Q}{x,y} \land \ST_y(!B))]$.}}{}
+  \end{enumerate}
+\end{defn}
+
+ఉదాహరణకు, $\ST_x(\Box p \lif p)$ అనేది $\lforall[y][(\Atom{Q}{x,y}
+  \lif \Atom{P}{y})] \lif \Atom{P}{x}$. $\ST_x(!A)$ భాషకు
+ఏ \tetoken{నిర్మాణానికైనా}{!!{structure}} ఒక వ్యక్తి క్షేత్రం,
+$Q$కు నిర్దేశించిన ద్విస్థాన సంబంధం, ఏకస్థానిక
+\tetoken{విధేయ సంకేతాలు}{!!{predicate}s}~$P_i$కు
+నిర్దేశించిన ఆ క్షేత్రపు ఉపసమితులు కావాలి. అంటే అటువంటి
+\tetoken{నిర్మాణం}{!!a{structure}}లోని అంశాలు
+$!A$కు ఒక నమూనాలోని అంశాలే: వ్యక్తి క్షేత్రం లోకాల సమితి;
+$Q$కు నిర్దేశించిన ద్విస్థాన సంబంధం ప్రాప్యత సంబంధం;
+$P_i$కు నిర్దేశించిన ఉపసమితులు $V(\Obj p_i)$ అనే
+కేటాయింపులు. అందువల్ల మోడల్ నమూనాలో $!A$ సంతృప్తికీ,
+దానికి అనురూపమైన \tetoken{నిర్మాణంలో}{!!{structure}}
+$\ST_x(!A)$ సంతృప్తికీ పొంతన ఉండటం సహజమే:
+
+\begin{prop}\ollabel{prop:st}
+  $\mModel{M} = \tuple{W, R, V}$ అనుకుందాం. $\Domain{M'} = W$,
+  $\Assign{Q}{M'} = R$, $\Assign{P_i}{M'} = V(\Obj p_i)$ గల
+  మొదటిస్థాయి \tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M'}$ను
+  తీసుకొని, $s(x) = w$ అనుకుందాం. అప్పుడు
+  \[
+  \mSat{M}{!A}[w] \text{ iff } \Sat{M'}{\ST_x(!A)}[s]
+  \]
+\end{prop}
+
+\begin{proof}
+  $!A$ నిర్మాణంపై ఆగమనంతో నిరూపించవచ్చు.
+\end{proof}
+
+\begin{prop}
+  $!A$ ఒక మోడల్ \tetoken{సూత్రం}{!!{formula}} అనీ,
+  $\mModel{F} = \tuple{W, R}$ ఒక చట్రం అనీ అనుకుందాం.
+  $\Domain{F'} = W$, $\Assign{Q}{F'} = R$ గల మొదటిస్థాయి
+  \tetoken{నిర్మాణం}{!!{structure}}~$\Struct{F'}$ను తీసుకుందాం.
+  $!A'$ అనే ద్వితీయ-స్థాయి సూత్రం కిందిది అనుకుందాం:
+  \[
+  \lforall[X_1][\dots\lforall[X_n][\lforall[x][
+        \SSubst{\ST_x(!A)}{\subst{X_1}{P_1}, \dots,
+          \subst{X_n}{P_n}}]]],
+  \]
+  ఇక్కడ $P_1$, \dots, $P_n$ అన్నీ $\ST_x(!A)$లోని
+  ఏకస్థానిక \tetoken{విధేయ సంకేతాలు}{!!{predicate}s}.
+  అప్పుడు
+  \[
+  \mModel{F} \Entails !A \text{ iff } \Sat{F'}{!A'}
+  \]
+\end{prop}
+
+\begin{proof}
+  $\Sat{F'}{!A'}$ అయ్యేది, $i = 1$, \dots,~$n$కు
+  $\Assign{P_i}{M'} \subseteq W$ అయ్యే ప్రతి
+  \tetoken{నిర్మాణం}{!!{structure}}~$\mModel{M'}$లోనూ,
+  $s(x) \in W$ అయ్యే ప్రతి $s$కూ
+  $\Sat{M'}{\ST_x(!A)}[s]$ అయినప్పుడే.
+  \olref{prop:st} ప్రకారం, ఇది $\mModel{F}$పై ఆధారపడే
+  అన్ని నమూనాలు~$\mModel{M}$లోనూ, ప్రతి లోకం~$w \in W$
+  వద్దనూ $\mSat{M}{!A}[w]$ అయితేనే; అంటే
+  $\mModel{F} \Entails !A$ అయితేనే.
+\end{proof}
+
+\begin{defn}
+  చట్రాల వర్గం~$\mClass{F}$ను \emph{ద్వితీయ-స్థాయి
+    నిర్వచనీయమైనది} అంటాం, ఒకవేళ ఒక్క ద్విస్థాన
+  \tetoken{విధేయ సంకేతం}{!!{predicate}}~$P$ ఉండి,
+  ద్వితీయ-స్థాయి పరిమాణీకరణలు ఏకస్థానిక సమితి
+  చరాలపైనే ఉండే
+  ద్వితీయ-స్థాయి భాషలో ఒక
+  \tetoken{వాక్యం}{!!a{sentence}}~$!A$ ఉండి,
+  $\mModel{F} = \tuple{W, R} \in \mClass{F}$ అయ్యేది
+  $\Domain{M} = W$, $\Assign{P}{M} = R$ గల
+  \tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M}$లో
+  $\Sat{M}{!A}$ అయినప్పుడే.
+\end{defn}
+
+\begin{cor}
+  చట్రాల వర్గాన్ని \tetoken{ఒక సూత్రం}{!!a{formula}}~$!A$
+  నిర్వచిస్తే, దానికి అనురూపమైన ప్రాప్యత సంబంధాల
+  వర్గాన్ని ఏకస్థానిక ద్వితీయ-స్థాయి వాక్యంతో
+  నిర్వచించవచ్చు.
+\end{cor}
+
+\begin{proof}
+  మునుపటి నిరూపణలోని ఏకస్థానిక ద్వితీయ-స్థాయి
+  వాక్యం~$!A'$కు కావలసిన ధర్మం ఉంది.
+\end{proof}
+
+ఉదాహరణగా, $\Box p \lif p$ అనే
+\tetoken{సూత్రాన్ని}{!!{formula}} మళ్లీ చూద్దాం. అది
+స్వావర్తనాన్ని నిర్వచిస్తుంది. స్వావర్తనాన్ని
+$\lforall[x][\Atom{Q}{x,x}]$ అనే
+మొదటిస్థాయి \tetoken{వాక్యం}{!!{sentence}} కూడా
+నిర్వచిస్తుంది. అయితే కింది ఏకస్థానిక ద్వితీయ-స్థాయి
+\tetoken{వాక్యం}{!!{sentence}} కూడా దాన్ని నిర్వచిస్తుంది:
+\[
+\lforall[X][\lforall[x][(\lforall[y][(\Atom{Q}{x,y} \lif \Atom{X}{y})]
+    \lif \Atom{X}{x})]].
+\]
+అంటే, ఈ రెండు వాక్యాలూ సమానార్థకాలు. దీన్ని నేరుగా
+ఎలా నిర్ధారించవచ్చో చూద్దాం. ముందుగా ద్వితీయ-స్థాయి
+వాక్యం \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct{M}$లో
+సత్యమని అనుకుందాం. $x$, $X$ సార్వత్రికంగా
+పరిమాణీకరించబడ్డాయి కాబట్టి, మిగిలిన భాగం ప్రతి
+$x \in W$కూ ప్రతి సమితి~$X \subseteq W$కూ, ఉదాహరణకు
+$R = \Assign{Q}{M}$ అయినప్పుడు
+$\Setabs{z}{Rxz}$ అనే సమితికీ, నిలవాలి. కనుక
+$s(x) \in W$, $s(X) = \Setabs{z}{Rxz}$ అయ్యే
+ప్రతి~$s$కు
+$\Sat{M}{\lforall[y][(\Atom{Q}{x,y} \lif
+    \Atom{X}{y})] \lif \Atom{X}{x}}$ నిలుస్తుంది.
+కానీ $s(X)$ను ఎంచుకున్న విధం వల్ల ఇది
+$\Sat{M}{\lforall[y][(\Atom{Q}{x,y} \lif
+    \Atom{Q}{x,y})] \lif \Atom{Q}{x,x}}[s]$
+అనే అర్థాన్ని ఇస్తుంది. పూర్వభాగం ఎల్లప్పుడూ
+చెల్లుబాటు అవుతుంది కాబట్టి అది
+$\Atom{Q}{x,x}$కు సమానం. $s(x)$ ఏ లోకమైనా కావచ్చు;
+అందువల్ల $\Sat{M}{\lforall[x][\Atom{Q}{x,x}]}$.
+
+ఇప్పుడు $\Sat{M}{\lforall[x][\Atom{Q}{x,x}]}$
+అనుకుందాం; $\Sat{M}{\lforall[X][\lforall[x][(\lforall[y][(\Atom{Q}{x,y} \lif
+        \Atom{X}{y})] \lif \Atom{X}{x})]]}$ అని చూపుదాం.
+ఏదైనా నిర్దేశం~$s$ను తీసుకొని,
+$\Sat{M}{\lforall[y][(\Atom{Q}{x,y} \lif
+    \Atom{X}{y})]}[s]$ అనుకుందాం. $s'(y)
+= s(x)$ అయ్యే $s$ యొక్క $y$-భేదరూపం $s'$ను
+తీసుకుంటే $\Sat{M}{\Atom{Q}{x,y} \lif \Atom{X}{y}}[s']$;
+అంటే $\Sat{M}{\Atom{Q}{x,x} \lif \Atom{X}{x}}[s]$.
+$\Sat{M}{\lforall[x][\Atom{Q}{x,x}]}$ కాబట్టి
+పూర్వభాగం సత్యం; అందువల్ల
+$\Sat{M}{\Atom{X}{x}}[s]$. చూపవలసింది ఇదే.
+
+నిర్వచించగల కొన్ని చట్రాల వర్గాలు మొదటిస్థాయి
+నిర్వచనీయమైనవి కావు. కనుక $!A'$ రూపంలో ఉన్న
+ప్రతి ఏకస్థానిక ద్వితీయ-స్థాయి
+\tetoken{వాక్యం}{!!{sentence}} మొదటిస్థాయి
+\tetoken{వాక్యానికి}{!!{sentence}} సమానార్థకం కాదు.
+వాటిలో ఏవి సమానార్థకాలో నిర్ణయించే ప్రభావవంతమైన
+పద్ధతి ఏదీ లేదు.
+
+\end{document}

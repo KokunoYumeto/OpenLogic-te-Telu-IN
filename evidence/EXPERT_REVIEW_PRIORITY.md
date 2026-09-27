@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 425 of 722 draft units**. This view selects 445 of 509 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 426 of 722 draft units**. This view selects 446 of 511 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -4453,3 +4453,13 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0424; normal-modal-logic/frame-definability/first-order-definability; translation/content/normal-modal-logic/frame-definability/first-order-definability.tex:69; printed/PDF page pending
 
 - Please double-check: Please double-check: Is A_1 explicitly read as the true empty conjunction, and is the finite subset with no A_n covered by a one-element model, without altering the printed n≥2 chain?
+
+## REV-OLTENMLFRDST-001 — OLTENMLFRDST-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రామాణిక అనువాద నిర్వచనపు prvTrue శాఖలో indcase వాదనను సత్య స్థిరాంకంగా సరిచేసి, అదే యాక్టివ్ శాఖలో ప్రకటిత గమనిక ఉంచాం; సత్య సమీకరణం, స్థిర మూలం మారలేదు.
+
+- Occurrences: OLP-0426; normal-modal-logic/frame-definability/second-order-definability; translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:34; printed/PDF page pending
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLFRDST-001 is mathematically precise and idiomatic.

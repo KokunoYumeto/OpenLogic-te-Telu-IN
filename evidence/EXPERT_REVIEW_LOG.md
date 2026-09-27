@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 425 of 722 draft units**. This log contains 117 terminology/sense decisions and 392 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 426 of 722 draft units**. This log contains 118 terminology/sense decisions and 393 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -2815,6 +2815,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: సమితి, వియుక్తత, సంబంధం, సత్యం సాధారణ వాడుకకు ప్రత్యక్ష ఆధారం; తుల్యతా చట్రాల మోడల్ వ్యవస్థ, సార్వత్రిక చట్రాల సమాన తర్కం, వర్గానికి పరిమిత ప్రతినమూనా ప్రత్యేక తెలుగు రూపాలకు నామకరణ అనిశ్చితి ఎక్కువ. గణిత అర్థం మూల నిరూపణతో పరిమితం.
 
 - Please double-check: Please double-check whether “తుల్యతా చట్రాల తర్కం S5 / సార్వత్రిక సంబంధం / తుల్యతా వర్గాల విభజన / వర్గానికి పరిమిత ప్రతినమూనా” is idiomatic and technically standard for “S5 as equivalence-frame logic / universal relation / equivalence-class partition / class-restricted countermodel” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T118 — standard translation of modal formulas / monadic second-order frame definability / unary-predicate quantification / modal-model to first-order-structure correspondence
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: మోడల్ సూత్రాల ప్రామాణిక అనువాదం / ఏకస్థానిక ద్వితీయ-స్థాయి చట్ర నిర్వచనీయత / ఏకస్థానిక విధేయాలపై పరిమాణీకరణ / మోడల్ నమూనా–మొదటిస్థాయి నిర్మాణం అనురూపత
+
+- Exact implementation: OLP-0426; normal-modal-logic/frame-definability/second-order-definability; content/normal-modal-logic/frame-definability/second-order-definability.tex:11 ↔ translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:11 (OLP-0426-B005); printed/PDF page pending; OLP-0426; normal-modal-logic/frame-definability/second-order-definability; content/normal-modal-logic/frame-definability/second-order-definability.tex:13-23 ↔ translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:13-27 (OLP-0426-B006); printed/PDF page pending; OLP-0426; normal-modal-logic/frame-definability/second-order-definability; content/normal-modal-logic/frame-definability/second-order-definability.tex:13-23 ↔ translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:13-27 (OLP-0426-B006); printed/PDF page pending; OLP-0426; normal-modal-logic/frame-definability/second-order-definability; content/normal-modal-logic/frame-definability/second-order-definability.tex:25-46 ↔ translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:29-54 (OLP-0426-B007); printed/PDF page pending; OLP-0426; normal-modal-logic/frame-definability/second-order-definability; content/normal-modal-logic/frame-definability/second-order-definability.tex:48-58 ↔ translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:56-68 (OLP-0426-B008); printed/PDF page pending; OLP-0426; normal-modal-logic/frame-definability/second-order-definability; content/normal-modal-logic/frame-definability/second-order-definability.tex:73-88 ↔ translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:84-101 (OLP-0426-B011); printed/PDF page pending; OLP-0426; normal-modal-logic/frame-definability/second-order-definability; content/normal-modal-logic/frame-definability/second-order-definability.tex:99-106 ↔ translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:115-127 (OLP-0426-B013); printed/PDF page pending; OLP-0426; normal-modal-logic/frame-definability/second-order-definability; content/normal-modal-logic/frame-definability/second-order-definability.tex:119-138 ↔ translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:141-170 (OLP-0426-B016); printed/PDF page pending; OLP-0426; normal-modal-logic/frame-definability/second-order-definability; content/normal-modal-logic/frame-definability/second-order-definability.tex:150-153 ↔ translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:185-191 (OLP-0426-B018); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P019, PDF 78, printed 71, Negation truth-value discussion and conjunction heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation; TE-P027, PDF 91, printed 84, Predicate-logic opening; TE-P028, PDF 92, printed 85, Unary predicates, binary relations and quantifier classification; TE-P029, PDF 94, printed 87, First-order, scope and bound-variable discussion; TE-P030, PDF 95, printed 88, Opening continuation of free/bound discussion; TE-P031, PDF 25, printed 18, Proposition-versus-sentence opening; TE-P032, PDF 38, printed 31, Chapter 3 opening on methods of logic
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P008లో సమితి, ఉపసమితి; TE-P010లో ద్విస్థాన సంబంధం; TE-P019లో సత్యతావిలువ; TE-P024/032లో నిరూపణ, ఆగమన రిజిస్టర్; TE-P027/028లో విధేయాలు, ద్విస్థాన సంబంధం, పరిమాణీకరణలు; TE-P029లో మొదటిస్థాయి, చర పరిధి; TE-P030లో వ్యక్తి క్షేత్రం; TE-P031లో వాక్యం అనే వాడుకలను స్థానిక చిత్రాల్లో చూశాం. అవి మోడల్ ప్రామాణిక అనువాదం లేదా ఏకస్థానిక ద్వితీయ-స్థాయి చట్ర ఫలితానికి ప్రత్యక్ష పేరు, సిద్ధాంతం ఇవ్వవు. పూర్వ TE-T051/075/113/116 మరియు OLP-0426లోని ST_x ఆగమన శాఖలు, నమూనా–నిర్మాణం iff, అన్ని ఉపసమితులపై పరిమాణీకరణ, స్వావర్తన ఉదాహరణ ప్రత్యేక అర్థాలను నియంత్రిస్తాయి. ST, Q, P_i, X_i, R, W, V మరియు వాక్య మెటాచరాలు రక్షిత గణిత సంకేతాలు; తెలుగులో ప్రకటించని ఆంగ్ల సాంకేతిక పదం పాఠక గద్యంలో లేదు.
+
+- Alternatives: స్థానిక మొదటిస్థాయి/విధేయ/సమితి పదజాలాన్ని కొనసాగించి, ప్రామాణిక అనువాదం మరియు ఏకస్థానిక ద్వితీయ-స్థాయి చట్ర ఫలితాన్ని OLP-0426 ఆగమన శాఖలు, రెండు iff వాదాలకు కట్టడం (ఎంపిక); ST_xను కేవలం సంకేతాలను మరో అక్షరంతో మార్చడంగా వర్ణించి బాక్స్/డైమండ్ పరిమాణీకరణ భేదం తొలగించడం (తిరస్కరణ); చట్రంలో ఒకే నిర్దేశానికి సత్యాన్ని అన్ని ఉపసమితులపై చట్ర చెల్లుబాటుతో సమానపరచడం (తిరస్కరణ); స్థానిక విధేయ తర్క పేజీలే ప్రామాణిక మోడల్ అనువాదాన్ని లేదా నిర్ణయనీయత-లేమిని నేరుగా నిరూపిస్తాయని ప్రకటించడం (తిరస్కరణ)
+
+- Uncertainty: సమితి, సంబంధం, విధేయం, మొదటిస్థాయి, వాక్యం అనే భాగాలకు స్థానిక ఆధారం ఉంది. ప్రామాణిక అనువాదం, ఏకస్థానిక ద్వితీయ-స్థాయి చట్ర నిర్వచనీయత ప్రత్యేక తెలుగు పేర్లు తాత్కాలికం; గణిత అర్థం మూల ST శాఖలు, రెండు iff నిరూపణలకే పరిమితం.
+
+- Please double-check: Please double-check whether “మోడల్ సూత్రాల ప్రామాణిక అనువాదం / ఏకస్థానిక ద్వితీయ-స్థాయి చట్ర నిర్వచనీయత / ఏకస్థానిక విధేయాలపై పరిమాణీకరణ / మోడల్ నమూనా–మొదటిస్థాయి నిర్మాణం అనురూపత” is idiomatic and technically standard for “standard translation of modal formulas / monadic second-order frame definability / unary-predicate quantification / modal-model to first-order-structure correspondence” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -12223,3 +12247,27 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
 
 - Please double-check: Please double-check: Is A_1 explicitly read as the true empty conjunction, and is the finite subset with no A_n covered by a one-element model, without altering the printed n≥2 chain?
+
+## REV-OLTENMLFRDST-001 — OLTENMLFRDST-001
+
+- Status: mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: high_mathematical_repair_moderate_disclosure_wording / medium
+
+- Chosen wording/treatment: ప్రామాణిక అనువాద నిర్వచనపు prvTrue శాఖలో indcase వాదనను సత్య స్థిరాంకంగా సరిచేసి, అదే యాక్టివ్ శాఖలో ప్రకటిత గమనిక ఉంచాం; సత్య సమీకరణం, స్థిర మూలం మారలేదు.
+
+- Exact implementation: OLP-0426; normal-modal-logic/frame-definability/second-order-definability; second-order-definability.tex lines 29-30 ↔ translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:34 (OLP-0426-B007); printed/PDF page pending
+
+- Authorities actually checked: OLTENMLFRDST-20260927; 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+
+- Not checked/not found: No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.
+
+- Rationale: ప్రామాణిక అనువాద నిర్వచనపు prvTrue శాఖలో indcase వాదనను సత్య స్థిరాంకంగా సరిచేసి, అదే యాక్టివ్ శాఖలో ప్రకటిత గమనిక ఉంచాం; సత్య సమీకరణం, స్థిర మూలం మారలేదు.
+
+- Alternatives: Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).; Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).
+
+- Uncertainty: Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.
+
+- Please double-check: Please double-check: whether the Telugu disclosure for OLTENMLFRDST-001 is mathematically precise and idiomatic.

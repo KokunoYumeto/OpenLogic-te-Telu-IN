@@ -1,0 +1,33 @@
+{
+  "schema": "telugu-openlogic-source-audit/1.0.0",
+  "audit_id": "OLTENMLFRDST-20260927",
+  "created_utc": "2026-09-26T23:49:54Z",
+  "status": "confirmed_truth_constructor_typo",
+  "scope": {
+    "chapter": "Normal Modal Logic — Frame Definability",
+    "unit_ids": ["OLP-0426"],
+    "finding_count": 1
+  },
+  "source_authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+  },
+  "findings": [
+    {
+      "finding_id": "OLTENMLFRDST-001",
+      "unit_id": "OLP-0426",
+      "classification": "standard_translation_truth_case_uses_false_constructor",
+      "source": {
+        "path": "content/normal-modal-logic/frame-definability/second-order-definability.tex",
+        "bytes": 6676,
+        "sha256": "1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490",
+        "locator": "second-order-definability.tex lines 29-30"
+      },
+      "finding": "ప్రామాణిక అనువాదం ఆగమన నిర్వచనంలో prvFalse విభాగానికి, prvTrue విభాగానికి రెండింటికీ indcase వాదనగా అసత్య స్థిరాంకమే ఉంది; అయితే prvTrue సమీకరణం ఫలితాన్ని సత్య స్థిరాంకంగా ఇస్తుంది.",
+      "controlling_evidence": "అదే జాబితాలోని prvFalse, prvTrue శాఖల పేర్లు, prvTrue సమీకరణపు కుడివైపు సత్య స్థిరాంకం, పూర్వ truth-at-w.tex నిర్వచనంలోని సత్య శాఖ కలిపి చూస్తే రెండో indcase వాదన సత్య స్థిరాంకమే కావాలి. అసత్య స్థిరాంకాన్ని ఉంచితే సూత్ర-నిర్మాణంపై ఆగమన నిర్వచనం అసంగతం అవుతుంది.",
+      "required_translation_handling": "స్థిర ఆంగ్ల మూలాన్ని మార్చకుండా, తెలుగు లక్ష్యంలో prvTrue యొక్క indcase వాదనను సత్య స్థిరాంకంగా సరిచేసి అదే సక్రియ శాఖలో సంక్షిప్త ప్రకటిత గమనిక ఉంచాలి. మిగతా సూత్రాలు మారవు."
+    }
+  ]
+}

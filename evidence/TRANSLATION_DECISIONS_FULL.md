@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **425 of 722 source units drafted**. This readable view contains all 509 decisions and 1054 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **426 of 722 source units drafted**. This readable view contains all 511 decisions and 1064 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3510,6 +3510,40 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T117-OCC-005; OLP-0425; OLP-0425-B014; source upstream/content/normal-modal-logic/frame-definability/equivalence-S5.tex:76-86 bytes 2905-3320 SHA-256 057897c91d88ced3eebfd46a08cba8c26a80da294f8870f37e08146e01f39798; target translation/content/normal-modal-logic/frame-definability/equivalence-S5.tex:84-95 bytes 5822-6610 SHA-256 12e1a0372528434d63772b8705cea216329f930651c2abf382df00ea36a43d8a; reader page pending.
   - te-Telu-IN-TE-T117-OCC-006; OLP-0425; OLP-0425-B015; source upstream/content/normal-modal-logic/frame-definability/equivalence-S5.tex:88-93 bytes 3321-3627 SHA-256 057897c91d88ced3eebfd46a08cba8c26a80da294f8870f37e08146e01f39798; target translation/content/normal-modal-logic/frame-definability/equivalence-S5.tex:97-105 bytes 6611-7225 SHA-256 12e1a0372528434d63772b8705cea216329f930651c2abf382df00ea36a43d8a; reader page pending.
   - te-Telu-IN-TE-T117-OCC-007; OLP-0425; OLP-0425-B016; source upstream/content/normal-modal-logic/frame-definability/equivalence-S5.tex:95-116 bytes 3628-4729 SHA-256 057897c91d88ced3eebfd46a08cba8c26a80da294f8870f37e08146e01f39798; target translation/content/normal-modal-logic/frame-definability/equivalence-S5.tex:107-136 bytes 7226-9415 SHA-256 12e1a0372528434d63772b8705cea216329f930651c2abf382df00ea36a43d8a; reader page pending.
+
+## te-Telu-IN-TE-T118 — standard translation of modal formulas / monadic second-order frame definability / unary-predicate quantification / modal-model to first-order-structure correspondence
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: మోడల్ సూత్రాల ప్రామాణిక అనువాదం / ఏకస్థానిక ద్వితీయ-స్థాయి చట్ర నిర్వచనీయత / ఏకస్థానిక విధేయాలపై పరిమాణీకరణ / మోడల్ నమూనా–మొదటిస్థాయి నిర్మాణం అనురూపత
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “standard translation of modal formulas / monadic second-order frame definability / unary-predicate quantification / modal-model to first-order-structure correspondence” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: సమితి, సంబంధం, విధేయం, మొదటిస్థాయి, వాక్యం అనే భాగాలకు స్థానిక ఆధారం ఉంది. ప్రామాణిక అనువాదం, ఏకస్థానిక ద్వితీయ-స్థాయి చట్ర నిర్వచనీయత ప్రత్యేక తెలుగు పేర్లు తాత్కాలికం; గణిత అర్థం మూల ST శాఖలు, రెండు iff నిరూపణలకే పరిమితం.
+
+- Rationale: TE-P008లో సమితి, ఉపసమితి; TE-P010లో ద్విస్థాన సంబంధం; TE-P019లో సత్యతావిలువ; TE-P024/032లో నిరూపణ, ఆగమన రిజిస్టర్; TE-P027/028లో విధేయాలు, ద్విస్థాన సంబంధం, పరిమాణీకరణలు; TE-P029లో మొదటిస్థాయి, చర పరిధి; TE-P030లో వ్యక్తి క్షేత్రం; TE-P031లో వాక్యం అనే వాడుకలను స్థానిక చిత్రాల్లో చూశాం. అవి మోడల్ ప్రామాణిక అనువాదం లేదా ఏకస్థానిక ద్వితీయ-స్థాయి చట్ర ఫలితానికి ప్రత్యక్ష పేరు, సిద్ధాంతం ఇవ్వవు. పూర్వ TE-T051/075/113/116 మరియు OLP-0426లోని ST_x ఆగమన శాఖలు, నమూనా–నిర్మాణం iff, అన్ని ఉపసమితులపై పరిమాణీకరణ, స్వావర్తన ఉదాహరణ ప్రత్యేక అర్థాలను నియంత్రిస్తాయి. ST, Q, P_i, X_i, R, W, V మరియు వాక్య మెటాచరాలు రక్షిత గణిత సంకేతాలు; తెలుగులో ప్రకటించని ఆంగ్ల సాంకేతిక పదం పాఠక గద్యంలో లేదు.
+
+- Authorities checked: TE-C004:TE-P008 [checked_context_only], PDF page 308; printed page 301; Chapter 15 objectives and main points 1-6; Direct membership/subset/operations evidence; ordered-pair native alternative; does not attest extensionality. | TE-C004:TE-P010 [checked_context_only], PDF page 318; printed page 311; Worked questions 33-36; Formal binary-relation concept usage; not evidence for reflexivity, symmetry or order taxonomy. | TE-C005:TE-P019 [checked_context_only], PDF page 78; printed page 71; Negation truth-value discussion and conjunction heading; Direct truth-value and conjunction terminology; valuation as an assignment remains definition-controlled. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions. | TE-C005:TE-P027 [checked_context_only], PDF page 91; printed page 84; Predicate-logic opening; Direct predicate-logic and core vocabulary witness; OpenLogic symbol compounds remain definition-controlled. | TE-C005:TE-P028 [checked_context_only], PDF page 92; printed page 85; Unary predicates, binary relations and quantifier classification; Direct quantifier taxonomy and predicate/relation context. | TE-C005:TE-P029 [checked_context_only], PDF page 94; printed page 87; First-order, scope and bound-variable discussion; Direct first-order predicate-logic terminology; modernized spacing and inflection must be documented. | TE-C005:TE-P030 [checked_context_only], PDF page 95; printed page 88; Opening continuation of free/bound discussion; Direct individuals-domain headword; వ్యక్తి క్షేత్రం and terminal -ం are editorial modernizations rather than exact quotations. | TE-C005:TE-P031 [checked_context_only], PDF page 25; printed page 18; Proposition-versus-sentence opening; Direct proposition/sentence distinction; OpenLogic's closed-formula definition controls technical sentence usage. | TE-C005:TE-P032 [checked_context_only], PDF page 38; printed page 31; Chapter 3 opening on methods of logic; Direct deduction/induction and broad theorem register; no blanket verb-form authorization for derive.
+
+- Alternatives: స్థానిక మొదటిస్థాయి/విధేయ/సమితి పదజాలాన్ని కొనసాగించి, ప్రామాణిక అనువాదం మరియు ఏకస్థానిక ద్వితీయ-స్థాయి చట్ర ఫలితాన్ని OLP-0426 ఆగమన శాఖలు, రెండు iff వాదాలకు కట్టడం [viable_alternative: ఎంపిక] | ST_xను కేవలం సంకేతాలను మరో అక్షరంతో మార్చడంగా వర్ణించి బాక్స్/డైమండ్ పరిమాణీకరణ భేదం తొలగించడం [viable_alternative: తిరస్కరణ] | చట్రంలో ఒకే నిర్దేశానికి సత్యాన్ని అన్ని ఉపసమితులపై చట్ర చెల్లుబాటుతో సమానపరచడం [viable_alternative: తిరస్కరణ] | స్థానిక విధేయ తర్క పేజీలే ప్రామాణిక మోడల్ అనువాదాన్ని లేదా నిర్ణయనీయత-లేమిని నేరుగా నిరూపిస్తాయని ప్రకటించడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “మోడల్ సూత్రాల ప్రామాణిక అనువాదం / ఏకస్థానిక ద్వితీయ-స్థాయి చట్ర నిర్వచనీయత / ఏకస్థానిక విధేయాలపై పరిమాణీకరణ / మోడల్ నమూనా–మొదటిస్థాయి నిర్మాణం అనురూపత” is idiomatic and technically standard for “standard translation of modal formulas / monadic second-order frame definability / unary-predicate quantification / modal-model to first-order-structure correspondence” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T118-OCC-001; OLP-0426; OLP-0426-B005; source upstream/content/normal-modal-logic/frame-definability/second-order-definability.tex:11 bytes 198-236 SHA-256 1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490; target translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:11 bytes 198-282 SHA-256 8e7950312c9e4f97aa2827bc9922c035be2de8563bc61a117b7bcd4d2769110b; reader page pending.
+  - te-Telu-IN-TE-T118-OCC-002; OLP-0426; OLP-0426-B006; source upstream/content/normal-modal-logic/frame-definability/second-order-definability.tex:13-23 bytes 237-920 SHA-256 1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490; target translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:13-27 bytes 283-2085 SHA-256 8e7950312c9e4f97aa2827bc9922c035be2de8563bc61a117b7bcd4d2769110b; reader page pending.
+  - te-Telu-IN-TE-T118-OCC-003; OLP-0426; OLP-0426-B006; source upstream/content/normal-modal-logic/frame-definability/second-order-definability.tex:13-23 bytes 237-920 SHA-256 1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490; target translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:13-27 bytes 283-2085 SHA-256 8e7950312c9e4f97aa2827bc9922c035be2de8563bc61a117b7bcd4d2769110b; reader page pending.
+  - te-Telu-IN-TE-T118-OCC-004; OLP-0426; OLP-0426-B007; source upstream/content/normal-modal-logic/frame-definability/second-order-definability.tex:25-46 bytes 921-2015 SHA-256 1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490; target translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:29-54 bytes 2086-3750 SHA-256 8e7950312c9e4f97aa2827bc9922c035be2de8563bc61a117b7bcd4d2769110b; reader page pending.
+  - te-Telu-IN-TE-T118-OCC-005; OLP-0426; OLP-0426-B008; source upstream/content/normal-modal-logic/frame-definability/second-order-definability.tex:48-58 bytes 2016-2697 SHA-256 1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490; target translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:56-68 bytes 3751-5191 SHA-256 8e7950312c9e4f97aa2827bc9922c035be2de8563bc61a117b7bcd4d2769110b; reader page pending.
+  - te-Telu-IN-TE-T118-OCC-006; OLP-0426; OLP-0426-B011; source upstream/content/normal-modal-logic/frame-definability/second-order-definability.tex:73-88 bytes 3049-3591 SHA-256 1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490; target translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:84-101 bytes 5767-6686 SHA-256 8e7950312c9e4f97aa2827bc9922c035be2de8563bc61a117b7bcd4d2769110b; reader page pending.
+  - te-Telu-IN-TE-T118-OCC-007; OLP-0426; OLP-0426-B013; source upstream/content/normal-modal-logic/frame-definability/second-order-definability.tex:99-106 bytes 3983-4385 SHA-256 1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490; target translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:115-127 bytes 7363-8220 SHA-256 8e7950312c9e4f97aa2827bc9922c035be2de8563bc61a117b7bcd4d2769110b; reader page pending.
+  - te-Telu-IN-TE-T118-OCC-008; OLP-0426; OLP-0426-B016; source upstream/content/normal-modal-logic/frame-definability/second-order-definability.tex:119-138 bytes 4692-5841 SHA-256 1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490; target translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:141-170 bytes 8885-11243 SHA-256 8e7950312c9e4f97aa2827bc9922c035be2de8563bc61a117b7bcd4d2769110b; reader page pending.
+  - te-Telu-IN-TE-T118-OCC-009; OLP-0426; OLP-0426-B018; source upstream/content/normal-modal-logic/frame-definability/second-order-definability.tex:150-153 bytes 6428-6660 SHA-256 1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490; target translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:185-191 bytes 12068-12743 SHA-256 8e7950312c9e4f97aa2827bc9922c035be2de8563bc61a117b7bcd4d2769110b; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 
@@ -13782,3 +13816,29 @@ Final reader/PDF page locators remain pending until the cited units are integrat
 - Occurrences:
 
   - te-Telu-IN-OLTENMLFRDFOL-001-OCC-001; OLP-0424; OLP-0424-B010; source upstream/content/normal-modal-logic/frame-definability/first-order-definability.tex:51-73 bytes 2184-3226 SHA-256 9c5c15840f4ad33863a32492fc8e16e7d4ce9b530bce2501a86b3f9466742358; target translation/content/normal-modal-logic/frame-definability/first-order-definability.tex:69 bytes 5052-5055 SHA-256 7ee6579f4a8c230c741cf5797810b8cf86ddf188ca49de32b0a02409d94c756b; reader page pending.
+
+## te-Telu-IN-OLTENMLFRDST-001 — OLTENMLFRDST-001: standard translation truth case uses false constructor
+
+- Kind / recording mode: source_correction / contemporaneous
+
+- Chosen rendering or treatment: ప్రామాణిక అనువాద నిర్వచనపు prvTrue శాఖలో indcase వాదనను సత్య స్థిరాంకంగా సరిచేసి, అదే యాక్టివ్ శాఖలో ప్రకటిత గమనిక ఉంచాం; సత్య సమీకరణం, స్థిర మూలం మారలేదు.
+
+- Intended sense: Repair the audited standard translation truth case uses false constructor at second-order-definability.tex lines 29-30, preserving unaffected notation and argument structure.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: high / false / normal
+
+- Confidence reason: The correction is fixed by the cited source audit, exact source bytes, and correction-aware structural comparison; only specialist assessment of Telugu disclosure phrasing remains useful.
+
+- Rationale: The bounded source audit identified the defect against the frozen source unit and controlling local mathematics. The translation applies only the recorded repair and discloses it adjacent to the affected passage.
+
+- Authorities checked: OLTENMLFRDST-20260927:OLTENMLFRDST-001 [checked_supports], content/normal-modal-logic/frame-definability/second-order-definability.tex; second-order-definability.tex lines 29-30; standard_translation_truth_case_uses_false_constructor; ప్రామాణిక అనువాద నిర్వచనపు prvTrue శాఖలో indcase వాదనను సత్య స్థిరాంకంగా సరిచేసి, అదే యాక్టివ్ శాఖలో ప్రకటిత గమనిక ఉంచాం; సత్య సమీకరణం, స్థిర మూలం మారలేదు..
+
+- Alternatives: Translate the defective source wording or formula verbatim. [rejected: That would knowingly reproduce the audited defect and conflict with the controlling local mathematics.]
+
+- Review question: Please double-check: whether the Telugu disclosure for OLTENMLFRDST-001 is mathematically precise and idiomatic.
+
+- Occurrences:
+
+  - te-Telu-IN-OLTENMLFRDST-001-OCC-001; OLP-0426; OLP-0426-B007; source upstream/content/normal-modal-logic/frame-definability/second-order-definability.tex:25-46 bytes 921-2015 SHA-256 1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490; target translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:34 bytes 2371-2441 SHA-256 8e7950312c9e4f97aa2827bc9922c035be2de8563bc61a117b7bcd4d2769110b; reader page pending.
