@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 437 of 722 draft units**. This log contains 128 terminology/sense decisions and 402 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 438 of 722 draft units**. This log contains 129 terminology/sense decisions and 402 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3079,6 +3079,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక పేజీలు మోడల్ ప్రతినమూనాలు లేదా వ్యవస్థ-వేరుపాటు సిద్ధాంతాలకు ప్రత్యక్ష ఆధారం కావు. సీరియల్, యూక్లిడియన్ రూపాలు పూర్వ నిర్ణయాల ప్రకారం కొనసాగాయి; D/4/5 వ్యవస్థ-సూచిక స్థానాల్లో స్వీకృత సూత్రాల అవసరం మూల గణిత పఠనం ద్వారా నిర్ణయించాం.
 
 - Please double-check: Please double-check whether “భిన్నమైన మోడల్ వ్యవస్థలు / నిజమైన చేరిక / సౌష్ఠవ, స్వావర్తన, సీరియల్, యూక్లిడియన్ ప్రతినమూనాలు / స్వీకృత నిదర్శనాలు విఫలమవడం” is idiomatic and technically standard for “distinct modal systems / proper inclusion / symmetric, reflexive, serial and Euclidean countermodels / falsifying axiom instances” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T129 — provability / derivability from a set of formulas in a modal system / iterated implication witness
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: మోడల్ వ్యవస్థలో సూత్రాల సమితి నుంచి నిరూపణీయత / వ్యుత్పాద్యత / వరుస అంతర్నిహితార్థ సాక్ష్యం
+
+- Exact implementation: OLP-0438; normal-modal-logic/axioms-systems/provability-from-set; content/normal-modal-logic/axioms-systems/provability-from-set.tex:11 ↔ translation/content/normal-modal-logic/axioms-systems/provability-from-set.tex:11 (OLP-0438-B005); printed/PDF page pending; OLP-0438; normal-modal-logic/axioms-systems/provability-from-set; content/normal-modal-logic/axioms-systems/provability-from-set.tex:13-15 ↔ translation/content/normal-modal-logic/axioms-systems/provability-from-set.tex:13-17 (OLP-0438-B006); printed/PDF page pending; OLP-0438; normal-modal-logic/axioms-systems/provability-from-set; content/normal-modal-logic/axioms-systems/provability-from-set.tex:17-23 ↔ translation/content/normal-modal-logic/axioms-systems/provability-from-set.tex:19-27 (OLP-0438-B007); printed/PDF page pending; OLP-0438; normal-modal-logic/axioms-systems/provability-from-set; content/normal-modal-logic/axioms-systems/provability-from-set.tex:17-23 ↔ translation/content/normal-modal-logic/axioms-systems/provability-from-set.tex:19-27 (OLP-0438-B007); printed/PDF page pending
+
+- Authorities actually checked: TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, TE-P024లో నియమ-ఆధారిత వ్యుత్పత్తి వాడుకను నేరుగా చూశాం. TE-T034/035 మరియు TE-T119--TE-T128లో నిరూపణీయత/వ్యుత్పాద్యత రూపాలను కొనసాగించాం. Gamma నుంచి Sigmaలో నిరూపణీయతకు B_1,...,B_nతో ఇచ్చిన ఖచ్చిత షరతు OLP-0438 స్థిర మూల గణితం ద్వారా నిర్ణీతం. Sigma, Gamma, A, B_i, Proves మరియు సూత్ర మెటాచరాలు రక్షిత గణిత సంకేతాలు.
+
+- Alternatives: సమితి Gamma నుంచి వ్యవస్థ Sigmaలో నిరూపణీయతకు మూలంలోని అంతర్నిహితార్థ-శ్రేణి షరతును యథాతథంగా ఉంచి, పూర్వ వ్యుత్పాద్యత పదరూపాన్ని కొనసాగించడం (ఎంపిక); Gamma/Sigma పాత్రలను తారుమారు చేయడం (తిరస్కరణ); మూలంలో చెప్పని శూన్య-n సంప్రదాయాన్ని నిర్వచనంలో జోడించడం (తిరస్కరణ); స్థానిక సాధారణ తర్క పేజీలనే ఈ మోడల్-ప్రత్యేక నిర్వచనానికి ప్రత్యక్ష సాక్ష్యంగా చూపడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక పేజీలు మోడల్ వ్యవస్థలో సమితి-సాపేక్ష వ్యుత్పాద్యత ప్రత్యేక నిర్వచనాన్ని నేరుగా ఇవ్వవు. n శూన్యమయ్యే సంప్రదాయంపై మూలం విడిగా వ్యాఖ్యానించలేదు; తెలుగు వచనం దాన్ని జోడించలేదు. శీర్షికలోని usetoken గుర్తులు మూల పద-గుర్తింపుగా యథాతథం.
+
+- Please double-check: Please double-check whether “మోడల్ వ్యవస్థలో సూత్రాల సమితి నుంచి నిరూపణీయత / వ్యుత్పాద్యత / వరుస అంతర్నిహితార్థ సాక్ష్యం” is idiomatic and technically standard for “provability / derivability from a set of formulas in a modal system / iterated implication witness” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 

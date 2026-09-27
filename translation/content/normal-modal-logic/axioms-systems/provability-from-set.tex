@@ -1,0 +1,29 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: provability-from-set
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{prg}
+
+\olsection{\usetoken{P}{formula} సమితి నుంచి \usetoken{S}{derivability}}
+
+\olref[prf][prs]{sec}లో, ఒక వ్యవస్థ~$\Sigma$లో
+\tetoken{ఒక సూత్రం}{!!a{formula}} యొక్క నిరూపణీయతను నిర్వచించాం.
+ఇప్పుడు ఆ భావనను, సమితి~$\Gamma$లోని
+\tetoken{సూత్రాల}{!!{formula}s} నుంచి
+$\Sigma$లోని నిరూపణీయతకు విస్తరిస్తాం.
+
+\begin{defn}\ollabel{defn:Gammaproves}
+  \tetoken{ఒక సూత్రం}{!!^a{formula}}~$!A$ను, సమితి~$\Gamma$లోని
+  \tetoken{సూత్రాల}{!!{formula}s} నుంచి వ్యవస్థ~$\Sigma$లో
+  \tetoken{వ్యుత్పాదించదగినది}{!!{derivable}} అంటాం; దీన్ని
+  $\Gamma \Proves[\Sigma] !A$ అని రాస్తాం. అంటే, $!B_1$,
+  \dots, $!B_n \in \Gamma$ ఉండి
+  $\Sigma \Proves !B_1 \lif (!B_2 \lif \cdots (!B_n \lif !A)
+  \cdots)$ అయినప్పుడే అలా అంటాం.
+\end{defn}
+
+\end{document}

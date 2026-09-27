@@ -1,6 +1,6 @@
 # Full translation-decision register
 
-Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **437 of 722 source units drafted**. This readable view contains all 530 decisions and 1143 recorded occurrences.
+Edition: **te-Telu-IN / Telu / standard formal Telugu**. Coverage: **438 of 722 source units drafted**. This readable view contains all 531 decisions and 1147 recorded occurrences.
 
 Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.
 
@@ -3864,6 +3864,35 @@ Final reader/PDF page locators remain pending until the cited units are integrat
   - te-Telu-IN-TE-T128-OCC-005; OLP-0437; OLP-0437-B012; source upstream/content/normal-modal-logic/axioms-systems/systems-distinct.tex:65-67 bytes 2286-2395 SHA-256 5242bad1abef085ce60944f529370410d12a911fbe55fa1047a29fca3c7b214b; target translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:69-75 bytes 4048-4610 SHA-256 5b01b6be1639efe34253e0b7dd84895156d66721b832d2c2035444c71532632b; reader page pending.
   - te-Telu-IN-TE-T128-OCC-006; OLP-0437; OLP-0437-B017; source upstream/content/normal-modal-logic/axioms-systems/systems-distinct.tex:118-141 bytes 4389-5350 SHA-256 5242bad1abef085ce60944f529370410d12a911fbe55fa1047a29fca3c7b214b; target translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:126-149 bytes 7586-8583 SHA-256 5b01b6be1639efe34253e0b7dd84895156d66721b832d2c2035444c71532632b; reader page pending.
   - te-Telu-IN-TE-T128-OCC-007; OLP-0437; OLP-0437-B019; source upstream/content/normal-modal-logic/axioms-systems/systems-distinct.tex:148-151 bytes 5475-5626 SHA-256 5242bad1abef085ce60944f529370410d12a911fbe55fa1047a29fca3c7b214b; target translation/content/normal-modal-logic/axioms-systems/systems-distinct.tex:156-159 bytes 8800-9038 SHA-256 5b01b6be1639efe34253e0b7dd84895156d66721b832d2c2035444c71532632b; reader page pending.
+
+## te-Telu-IN-TE-T129 — provability / derivability from a set of formulas in a modal system / iterated implication witness
+
+- Kind / recording mode: terminology / retrospective
+
+- Chosen rendering or treatment: మోడల్ వ్యవస్థలో సూత్రాల సమితి నుంచి నిరూపణీయత / వ్యుత్పాద్యత / వరుస అంతర్నిహితార్థ సాక్ష్యం
+
+- Intended sense: The OpenLogic technical sense or grouped senses of “provability / derivability from a set of formulas in a modal system / iterated implication witness” instantiated by the cited definitions, formulas, examples, and proofs; this is not an unrestricted claim about every everyday or specialist use.
+
+- Locale / script / form: te-Telu-IN / Telu / standard formal Telugu
+
+- Confidence / provisional / priority: medium / true / normal
+
+- Confidence reason: స్థానిక పేజీలు మోడల్ వ్యవస్థలో సమితి-సాపేక్ష వ్యుత్పాద్యత ప్రత్యేక నిర్వచనాన్ని నేరుగా ఇవ్వవు. n శూన్యమయ్యే సంప్రదాయంపై మూలం విడిగా వ్యాఖ్యానించలేదు; తెలుగు వచనం దాన్ని జోడించలేదు. శీర్షికలోని usetoken గుర్తులు మూల పద-గుర్తింపుగా యథాతథం.
+
+- Rationale: TE-P018లో ప్రతిజ్ఞావాక్య తర్కం, TE-P024లో నియమ-ఆధారిత వ్యుత్పత్తి వాడుకను నేరుగా చూశాం. TE-T034/035 మరియు TE-T119--TE-T128లో నిరూపణీయత/వ్యుత్పాద్యత రూపాలను కొనసాగించాం. Gamma నుంచి Sigmaలో నిరూపణీయతకు B_1,...,B_nతో ఇచ్చిన ఖచ్చిత షరతు OLP-0438 స్థిర మూల గణితం ద్వారా నిర్ణీతం. Sigma, Gamma, A, B_i, Proves మరియు సూత్ర మెటాచరాలు రక్షిత గణిత సంకేతాలు.
+
+- Authorities checked: TE-C005:TE-P018 [checked_context_only], PDF page 77; printed page 70; Chapter 6 opening and propositional-logic subsection heading; Direct formal-logic witness for symbolic and propositional logic; not blanket evidence for all later metatheoretic compounds. | TE-C005:TE-P024 [checked_context_only], PDF page 86; printed page 79; Derivation-of-consequence heading and worked derivation; Direct formal derivation terminology; derived adjective and abstract-noun forms remain transparent, definition-controlled extensions.
+
+- Alternatives: సమితి Gamma నుంచి వ్యవస్థ Sigmaలో నిరూపణీయతకు మూలంలోని అంతర్నిహితార్థ-శ్రేణి షరతును యథాతథంగా ఉంచి, పూర్వ వ్యుత్పాద్యత పదరూపాన్ని కొనసాగించడం [viable_alternative: ఎంపిక] | Gamma/Sigma పాత్రలను తారుమారు చేయడం [viable_alternative: తిరస్కరణ] | మూలంలో చెప్పని శూన్య-n సంప్రదాయాన్ని నిర్వచనంలో జోడించడం [viable_alternative: తిరస్కరణ] | స్థానిక సాధారణ తర్క పేజీలనే ఈ మోడల్-ప్రత్యేక నిర్వచనానికి ప్రత్యక్ష సాక్ష్యంగా చూపడం [viable_alternative: తిరస్కరణ]
+
+- Review question: Please double-check whether “మోడల్ వ్యవస్థలో సూత్రాల సమితి నుంచి నిరూపణీయత / వ్యుత్పాద్యత / వరుస అంతర్నిహితార్థ సాక్ష్యం” is idiomatic and technically standard for “provability / derivability from a set of formulas in a modal system / iterated implication witness” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+- Occurrences:
+
+  - te-Telu-IN-TE-T129-OCC-001; OLP-0438; OLP-0438-B005; source upstream/content/normal-modal-logic/axioms-systems/provability-from-set.tex:11 bytes 193-268 SHA-256 de08bf7a3bc7b183438d82d4678a9fc80a4b8efbb072cb25c0e49d10d296f540; target translation/content/normal-modal-logic/axioms-systems/provability-from-set.tex:11 bytes 193-286 SHA-256 06e7d6fb49db4f5423bfbfee4ef8e80269f66dc346766e65f3dea439d5c6c8c2; reader page pending.
+  - te-Telu-IN-TE-T129-OCC-002; OLP-0438; OLP-0438-B006; source upstream/content/normal-modal-logic/axioms-systems/provability-from-set.tex:13-15 bytes 269-457 SHA-256 de08bf7a3bc7b183438d82d4678a9fc80a4b8efbb072cb25c0e49d10d296f540; target translation/content/normal-modal-logic/axioms-systems/provability-from-set.tex:13-17 bytes 287-733 SHA-256 06e7d6fb49db4f5423bfbfee4ef8e80269f66dc346766e65f3dea439d5c6c8c2; reader page pending.
+  - te-Telu-IN-TE-T129-OCC-003; OLP-0438; OLP-0438-B007; source upstream/content/normal-modal-logic/axioms-systems/provability-from-set.tex:17-23 bytes 458-786 SHA-256 de08bf7a3bc7b183438d82d4678a9fc80a4b8efbb072cb25c0e49d10d296f540; target translation/content/normal-modal-logic/axioms-systems/provability-from-set.tex:19-27 bytes 734-1360 SHA-256 06e7d6fb49db4f5423bfbfee4ef8e80269f66dc346766e65f3dea439d5c6c8c2; reader page pending.
+  - te-Telu-IN-TE-T129-OCC-004; OLP-0438; OLP-0438-B007; source upstream/content/normal-modal-logic/axioms-systems/provability-from-set.tex:17-23 bytes 458-786 SHA-256 de08bf7a3bc7b183438d82d4678a9fc80a4b8efbb072cb25c0e49d10d296f540; target translation/content/normal-modal-logic/axioms-systems/provability-from-set.tex:19-27 bytes 734-1360 SHA-256 06e7d6fb49db4f5423bfbfee4ef8e80269f66dc346766e65f3dea439d5c6c8c2; reader page pending.
 
 ## te-Telu-IN-OLFUN-001 — OLFUN-001: confirmed mathematical defect
 

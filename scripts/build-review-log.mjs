@@ -732,6 +732,12 @@ locations['TE-T128']=[
  L('content/normal-modal-logic/axioms-systems/systems-distinct.tex',139,139,147,147,'The model for','కోసం ఉపయోగించిన నమూనా'),
  L('content/normal-modal-logic/axioms-systems/systems-distinct.tex',149,150,157,158,'reflexive transitive model','స్వావర్తన, సంక్రామక నమూనాను')
 ];
+locations['TE-T129']=[
+ L('content/normal-modal-logic/axioms-systems/provability-from-set.tex',11,11,11,11,'from a Set of','సమితి నుంచి'),
+ L('content/normal-modal-logic/axioms-systems/provability-from-set.tex',13,15,13,17,'provability','నిరూపణీయతను'),
+ L('content/normal-modal-logic/axioms-systems/provability-from-set.tex',17,22,19,27,'!!{derivable}','వ్యుత్పాదించదగినది'),
+ L('content/normal-modal-logic/axioms-systems/provability-from-set.tex',19,22,23,26,'\\Gamma \\Proves[\\Sigma] !A','\\Gamma \\Proves[\\Sigma] !A')
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -846,6 +852,7 @@ alternatives['TE-T125']=['ద్వంద్వ సూత్రం అని T/B
 alternatives['TE-T126']=['ఆరు నిరూపణలు, ప్రతిస్థాపన సూచనలు, S4/S5 నిర్వచనాలు, సమాన వ్యవస్థలను మూల క్రమంలో నిలిపి, తుల్యతా సంబంధం అనే పూర్వ పదాన్ని కొనసాగించడం (ఎంపిక)','మూలంలో వ్యాయామంగా ఉన్న చివరి సమానత్వ నిరూపణను మౌనంగా పూరించడం (తిరస్కరణ)','స్థానిక సాధారణ సంబంధ/వ్యుత్పత్తి పేజీలు ప్రత్యేక మోడల్ సమానత్వాలను నేరుగా నిరూపిస్తాయని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T127']=['నిర్దుష్టత అనే పూర్వ పదాన్ని కొనసాగించి, ఆధార/ఆగమన శాఖలు, MP/Nec, నమూనాల వర్గ-ప్రతిచ్ఛేదం నిలపడం; మూలంలోని రెండు నిరూపణ-వివరణ ఖాళీలను పక్కనే ప్రకటించడం (ఎంపిక)','ఆగమన దశలో K/ఐచ్ఛిక Dual సందర్భాలను మౌనంగా వదిలేయడం (తిరస్కరణ)','ప్రపంచ-చెల్లుబాటు ఉదాహరణనే ఏ నమూనాల వర్గానికైనా ప్రత్యక్ష ప్రకటనగా చదవడం (తిరస్కరణ)','స్థానిక పేజీలు మోడల్ నిర్దుష్టతా సిద్ధాంతాన్ని నేరుగా ధ్రువీకరిస్తాయని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T128']=['మూడూ మూల TikZ ప్రతినమూనాలు, చట్ర ధర్మాలు, రెండు వ్యాయామాలు, వ్యుత్పాద్యత/చేరిక దిశలు నిలిపి, D/4/5 స్వీకృత సూత్రాల రకభేదాన్ని రెండు ప్రకటిత సవరణలతో స్పష్టం చేయడం (ఎంపిక)','వ్యవస్థ-పేర్లనే వ్యుత్పాద్య సూత్రాలుగా మౌనంగా ఉంచడం (తిరస్కరణ)','సౌష్ఠవ, స్వావర్తన, సీరియల్, యూక్లిడియన్ ధర్మాలను ఒకే లక్షణంగా కలపడం (తిరస్కరణ)','స్థానిక సంబంధ పేజీనే మోడల్ ప్రతినమూనాలకు ప్రత్యక్ష సాక్ష్యంగా చూపడం (తిరస్కరణ)'];
+alternatives['TE-T129']=['సమితి Gamma నుంచి వ్యవస్థ Sigmaలో నిరూపణీయతకు మూలంలోని అంతర్నిహితార్థ-శ్రేణి షరతును యథాతథంగా ఉంచి, పూర్వ వ్యుత్పాద్యత పదరూపాన్ని కొనసాగించడం (ఎంపిక)','Gamma/Sigma పాత్రలను తారుమారు చేయడం (తిరస్కరణ)','మూలంలో చెప్పని శూన్య-n సంప్రదాయాన్ని నిర్వచనంలో జోడించడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీలనే ఈ మోడల్-ప్రత్యేక నిర్వచనానికి ప్రత్యక్ష సాక్ష్యంగా చూపడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -861,7 +868,7 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T128 record the Batch 025--Batch 087 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T129 record the Batch 025--Batch 088 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
