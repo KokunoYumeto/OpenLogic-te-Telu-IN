@@ -1,0 +1,37 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "101",
+  "unit_id": "OLP-0452",
+  "unit_order": 452,
+  "source_path": "content/normal-modal-logic/filtrations/preliminaries.tex",
+  "blocks": 14,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13],
+  "previous_segments": 6861,
+  "previous_terms": 141,
+  "expected_corrections": 419,
+  "canon_default": ["TE-P008", "TE-P010", "TE-P018", "TE-P022", "TE-P024"],
+  "canon_by_block": {
+    "5": ["TE-P018", "TE-P024"],
+    "6": ["TE-P018", "TE-P024"],
+    "7": ["TE-P018", "TE-P022", "TE-P024"],
+    "8": ["TE-P018", "TE-P024"],
+    "9": ["TE-P008", "TE-P010", "TE-P022"],
+    "10": ["TE-P008", "TE-P010", "TE-P022"],
+    "11": ["TE-P010", "TE-P022"],
+    "12": ["TE-P010", "TE-P022"],
+    "13": ["TE-P008", "TE-P010", "TE-P022"]
+  },
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర మూలం, తెలుగు లక్ష్యం, స్థానిక సమితి/సంబంధం/తుల్యత/సాధారణ ప్రతిజ్ఞావాక్య పేజీలను ఎదురెదురు చూశాం; TE-P008/010/022 చిత్రాలను ఈ దశలో నేరుగా మళ్లీ చదివాం.",
+  "evidence_limit": "TE-P008/010 సాధారణ సభ్యత్వం, ఉపసమితి, సంబంధానికే; TE-P022 ప్రతిజ్ఞావాక్య తుల్యతకే ప్రత్యక్ష సాక్ష్యం, తుల్యతా సంబంధ నిర్మాణానికి కాదు. TE-P018/024 సాధారణ తర్క/వ్యుత్పత్తి రిజిస్టర్‌కే; modal filtration లేదా మోడల్ సంవృతత వాటిలో ప్రత్యక్షంగా లేదు.",
+  "term_decision": {
+    "term_id": "TE-T142",
+    "source_term": "subformula-closed and modally closed sets; filtration equivalence classes",
+    "telugu": "ఉపసూత్రాల పరంగా సంవృతం, మోడల్ సంయోజకాల పరంగా సంవృతం; వడపోత తుల్యతా వర్గాలు",
+    "status": "native_membership_relation_and_equivalence_word_attested_modal_closure_definition_source_controlled",
+    "passages": ["TE-P008", "TE-P010", "TE-P018", "TE-P022", "TE-P024"],
+    "basis": "TE-P008/010 సమితి సభ్యత్వం, సాధారణ సంబంధం; TE-P022 ప్రతిజ్ఞావాక్య తుల్యత పదం; TE-P018/024 సాధారణ తర్క రిజిస్టర్‌ను చూపుతాయి. మోడల్ సంవృత నిర్వచనంలో ఉపసూత్ర సంవృతతకు అదనంగా ప్రతి Aకి Box A, Diamond A చేర్చే నియమాన్ని, వడపోత తుల్యతను మూల సూత్రాలే నిర్దేశిస్తాయి. స్వావర్తన/సౌష్ఠవ/సంక్రామక రూపాలు పూర్వ TE-T016/017తో స్థిరం.",
+    "uncertainty": "స్థానిక తుల్యత పేజీ equivalence relationకు ప్రత్యక్ష సాంకేతిక సాక్ష్యం కాదు. వడపోత అనే పదం OLP-0453 అధికార నిర్వచనం వద్ద మళ్లీ తనిఖీ చేయాలి; ఇక్కడ modal closureకు పరిమితత్వం ఆపాదించలేదు.",
+    "borrowing": "Modal as మోడల్ is established edition usage; TeX identifiers, labels, M/Gamma/W/R/V, Box/Diamond and formulas remain protected."
+  }
+}

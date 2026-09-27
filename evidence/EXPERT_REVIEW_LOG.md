@@ -1,6 +1,6 @@
 # Optional expert-review log
 
-Status: **partial — 451 of 722 draft units**. This log contains 141 terminology/sense decisions and 419 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
+Status: **partial — 452 of 722 draft units**. This log contains 142 terminology/sense decisions and 419 source-correction decisions. Every item remains open to optional specialist review, but **no item is a translation hold**. Work continues even when a dictionary or expert is unavailable.
 
 Locale/script: **te-Telu-IN / Telu**. Final printed/PDF pages are explicitly marked pending until each cited source unit is integrated into the coherent reader and final pagination exists; exact unit, section, file and line locators remain available now.
 
@@ -3391,6 +3391,30 @@ Companions: `EXPERT_REVIEW_PRIORITY.md`, `EXPERT_REVIEW_OCCURRENCES.csv`, `EXPER
 - Uncertainty: స్థానిక సాక్షులు modal filtrationకు నేరుగా పదం లేదా సిద్ధాంతం ఇవ్వవు. వడపోతను OLP-0453 అధికార నిర్వచనం వద్ద తిరిగి పరిశీలించాలి. నాలుగు మూల గణిత/నిర్మాణ లోపాలు OLTENMLFILINT-001..004గా విడిగా ప్రకటించబడ్డాయి.
 
 - Please double-check: Please double-check whether “పరిమిత నమూనా ధర్మం, వడపోత వర్గ నమూనా, హద్దుగల నిర్ణేయత / పరిచయం” is idiomatic and technically standard for “finite model property, filtration quotient, bounded decidability / introduction” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T142 — subformula-closed and modally closed sets; filtration equivalence classes
+
+- Status: provisional_pending_optional_specialist_review_no_hold
+
+- Locale/script: te-Telu-IN / Telu
+
+- Confidence/priority: not_separately_graded / standard
+
+- Chosen wording/treatment: ఉపసూత్రాల పరంగా సంవృతం, మోడల్ సంయోజకాల పరంగా సంవృతం; వడపోత తుల్యతా వర్గాలు
+
+- Exact implementation: OLP-0452; normal-modal-logic/filtrations/preliminaries; content/normal-modal-logic/filtrations/preliminaries.tex:11 ↔ translation/content/normal-modal-logic/filtrations/preliminaries.tex:11 (OLP-0452-B005); printed/PDF page pending; OLP-0452; normal-modal-logic/filtrations/preliminaries; content/normal-modal-logic/filtrations/preliminaries.tex:13-18 ↔ translation/content/normal-modal-logic/filtrations/preliminaries.tex:13-20 (OLP-0452-B006); printed/PDF page pending; OLP-0452; normal-modal-logic/filtrations/preliminaries; content/normal-modal-logic/filtrations/preliminaries.tex:20-26 ↔ translation/content/normal-modal-logic/filtrations/preliminaries.tex:22-30 (OLP-0452-B007); printed/PDF page pending; OLP-0452; normal-modal-logic/filtrations/preliminaries; content/normal-modal-logic/filtrations/preliminaries.tex:28-32 ↔ translation/content/normal-modal-logic/filtrations/preliminaries.tex:32-40 (OLP-0452-B008); printed/PDF page pending; OLP-0452; normal-modal-logic/filtrations/preliminaries; content/normal-modal-logic/filtrations/preliminaries.tex:34-36 ↔ translation/content/normal-modal-logic/filtrations/preliminaries.tex:42-44 (OLP-0452-B009); printed/PDF page pending; OLP-0452; normal-modal-logic/filtrations/preliminaries; content/normal-modal-logic/filtrations/preliminaries.tex:38-51 ↔ translation/content/normal-modal-logic/filtrations/preliminaries.tex:46-63 (OLP-0452-B010); printed/PDF page pending; OLP-0452; normal-modal-logic/filtrations/preliminaries; content/normal-modal-logic/filtrations/preliminaries.tex:53-57 ↔ translation/content/normal-modal-logic/filtrations/preliminaries.tex:65-69 (OLP-0452-B011); printed/PDF page pending; OLP-0452; normal-modal-logic/filtrations/preliminaries; content/normal-modal-logic/filtrations/preliminaries.tex:59-66 ↔ translation/content/normal-modal-logic/filtrations/preliminaries.tex:71-84 (OLP-0452-B012); printed/PDF page pending; OLP-0452; normal-modal-logic/filtrations/preliminaries; content/normal-modal-logic/filtrations/preliminaries.tex:68-74 ↔ translation/content/normal-modal-logic/filtrations/preliminaries.tex:86-95 (OLP-0452-B013); printed/PDF page pending
+
+- Authorities actually checked: TE-P008, PDF 308, printed 301, Chapter 15 objectives and main points 1-6; TE-P010, PDF 318, printed 311, Worked questions 33-36; TE-P018, PDF 77, printed 70, Chapter 6 opening and propositional-logic subsection heading; TE-P022, PDF 84, printed 77, Implication and equivalence headings; TE-P024, PDF 86, printed 79, Derivation-of-consequence heading and worked derivation
+
+- Not checked/not found: No human Telugu logician, mathematician or copy editor has reviewed this choice yet. No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.
+
+- Rationale: TE-P008/010 సమితి సభ్యత్వం, సాధారణ సంబంధం; TE-P022 ప్రతిజ్ఞావాక్య తుల్యత పదం; TE-P018/024 సాధారణ తర్క రిజిస్టర్‌ను చూపుతాయి. మోడల్ సంవృత నిర్వచనంలో ఉపసూత్ర సంవృతతకు అదనంగా ప్రతి Aకి Box A, Diamond A చేర్చే నియమాన్ని, వడపోత తుల్యతను మూల సూత్రాలే నిర్దేశిస్తాయి. స్వావర్తన/సౌష్ఠవ/సంక్రామక రూపాలు పూర్వ TE-T016/017తో స్థిరం. Modal as మోడల్ is established edition usage; TeX identifiers, labels, M/Gamma/W/R/V, Box/Diamond and formulas remain protected.
+
+- Alternatives: ఉపసూత్ర సంవృతతకు అదనంగా Box/Diamond సంవృతతను విడిగా నిర్వచించి, తుల్యతా వర్గాలకు పూర్వ తుల్యతా సంబంధ పదజాలం, ఖచ్చిత సభ్యత్వ/సూత్ర పరీక్షలు నిలపడం (ఎంపిక); మోడల్ సంవృత సమితి కూడా పరిమితమని అనుకోకుండా చేర్చడం (తిరస్కరణ); TE-P022 ప్రతిజ్ఞావాక్య తుల్యత పేజీనే తుల్యతా సంబంధ సిద్ధాంతానికి ప్రత్యక్ష సాక్ష్యంగా చూపడం (తిరస్కరణ); ప్రాప్యత సంబంధం R ధర్మాలను ఈ కొత్త తుల్యతా సంబంధానికి బదిలీ చేయడం (తిరస్కరణ)
+
+- Uncertainty: స్థానిక తుల్యత పేజీ equivalence relationకు ప్రత్యక్ష సాంకేతిక సాక్ష్యం కాదు. వడపోత అనే పదం OLP-0453 అధికార నిర్వచనం వద్ద మళ్లీ తనిఖీ చేయాలి; ఇక్కడ modal closureకు పరిమితత్వం ఆపాదించలేదు.
+
+- Please double-check: Please double-check whether “ఉపసూత్రాల పరంగా సంవృతం, మోడల్ సంయోజకాల పరంగా సంవృతం; వడపోత తుల్యతా వర్గాలు” is idiomatic and technically standard for “subformula-closed and modally closed sets; filtration equivalence classes” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
