@@ -180,8 +180,8 @@ const alternativeObjects = (values = []) => values.flatMap(value => {
 const termConfidence = term => {
   const uncertainty = term.uncertainty ?? '';
   if (/high(?:\s|-)*(?:nomenclatural|lexical)|medium-high/i.test(uncertainty) || /provisional_(?:descriptive|philosophical|formal)/.test(term.status)) return 'low';
-  if (/^attested$|^attested_after_postdraft_review$/.test(term.status) && !uncertainty) return 'high';
-  if (/^attested(?:_|$)/.test(term.status) && /^Low(?:\b|$)/i.test(uncertainty)) return 'high';
+  // An attestation is not a separately graded high-confidence decision. In the
+  // primary ledger, "Low" describes uncertainty, not the confidence grade.
   return 'medium';
 };
 
@@ -246,7 +246,9 @@ const termDecisions = terms.map(term => {
     authorities_checked: (term.passages ?? []).map(id => authorityForPassage(term, id)),
     alternatives: alternativeObjects(record.alternatives_considered_or_recorded),
     confidence,
-    confidence_reason: term.uncertainty ?? `The primary record labels the evidence status ${term.status}; no separate confidence grade was recorded, so this adapter assigns a conservative medium grade.`,
+    confidence_reason: record.confidence === 'moderate'
+      ? `The primary review grades this moderate (represented here as medium). Its uncertainty note is not a confidence grade: ${term.uncertainty ?? 'No separate uncertainty note was recorded.'}`
+      : term.uncertainty ?? `The primary record labels the evidence status ${term.status}; no separate confidence grade was recorded, so this adapter assigns a conservative ${confidence} grade.`,
     provisional,
     review_priority: confidence === 'low' ? 'high' : confidence === 'medium' ? 'normal' : 'low',
     expert_review_useful: true,
@@ -446,6 +448,34 @@ const canonical = {
 };
 fs.writeFileSync(path.join(dataDir, 'DECISIONS.json'), `${JSON.stringify(canonical, null, 2)}\n`);
 
+const termByDecisionId = new Map(terms.map(term => [`te-Telu-IN-${term.term_id}`, term]));
+const correctionByDecisionId = new Map(corrections.map(item => [`te-Telu-IN-${item.finding_id}`, item]));
+const hasTelugu = value => /[\u0c00-\u0c7f]/u.test(value ?? '');
+const isTeluguDominant = value => {
+  const telugu = (value?.match(/[\u0c00-\u0c7f]/gu) ?? []).length;
+  const latin = (value?.match(/[a-z]/giu) ?? []).length;
+  return telugu > latin;
+};
+const correctionNote = correction => {
+  const targetPath = path.join(root, ...slash(correction.target_locator.split(':')[0]).split('/'));
+  const source = fs.readFileSync(targetPath, 'utf8');
+  const marker = new RegExp(`\\\\sourcecorrection\\s*\\{\\s*${correction.finding_id}\\s*\\}\\s*\\{`, 'gu');
+  const match = marker.exec(source);
+  if (!match) throw new Error(`Missing Telugu source-correction note for ${correction.finding_id}`);
+  let depth = 1;
+  let end = match.index + match[0].length;
+  for (; end < source.length && depth; end += 1) {
+    if (source[end - 1] === '\\') continue;
+    if (source[end] === '{') depth += 1;
+    else if (source[end] === '}') depth -= 1;
+  }
+  if (depth) throw new Error(`Unclosed source-correction note for ${correction.finding_id}`);
+  const note = source.slice(match.index + match[0].length, end - 1).trim();
+  if (!hasTelugu(note)) throw new Error(`Source-correction note is not Telugu for ${correction.finding_id}`);
+  return note;
+};
+const correctionNotes = new Map(corrections.map(item => [item.finding_id, correctionNote(item)]));
+
 const lineLabel = span => span.status === 'available' ? `${span.start}${span.end === span.start ? '' : `-${span.end}`}` : span.status;
 const byteLabel = span => span.status === 'available' ? `${span.start}-${span.end_exclusive}` : span.status;
 const full = [
@@ -490,7 +520,7 @@ for (const decision of decisions) {
   }
   full.push('');
 }
-fs.writeFileSync(path.join(dataDir, 'TRANSLATION_DECISIONS_FULL.md'), `${full.join('\n').trimEnd()}\n`);
+fs.writeFileSync(path.join(dataDir, 'TRANSLATION_DECISIONS_FULL.en.md'), `${full.join('\n').trimEnd()}\n`);
 
 const priorityDecisions = decisions.filter(decision => decision.review_priority === 'urgent' || decision.review_priority === 'high');
 const priority = [
@@ -515,7 +545,7 @@ for (const decision of priorityDecisions) {
     ''
   );
 }
-fs.writeFileSync(path.join(dataDir, 'PRIORITY_REVIEW.md'), `${priority.join('\n').trimEnd()}\n`);
+fs.writeFileSync(path.join(dataDir, 'PRIORITY_REVIEW.en.md'), `${priority.join('\n').trimEnd()}\n`);
 
 const occurrenceRows = decisions.flatMap(decision => decision.occurrences.map(occurrence => ({
   decision_id: decision.decision_id,
@@ -579,7 +609,135 @@ Every judgment-dependent item records its source-controlled sense, chosen render
 
 The older \`EXPERT_REVIEW_*\` files remain as compatibility views. The canonical schema is copied byte-for-byte from OpenLogic-translations commit \`811091d54be4989918864732073279a588340e6f\`; its expected SHA-256 is \`50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90\`.
 `;
-fs.writeFileSync(path.join(dataDir, 'START_HERE.md'), startHere);
+fs.writeFileSync(path.join(dataDir, 'START_HERE.en.md'), startHere);
+
+const teConfidence = value => ({high: 'అధిక', medium: 'మధ్యస్థ', low: 'తక్కువ'})[value] ?? value;
+const tePriority = value => ({urgent: 'అత్యవసరం', high: 'ఎక్కువ', normal: 'సాధారణ', low: 'తక్కువ'})[value] ?? value;
+const teBoolean = value => value ? 'అవును' : 'కాదు';
+const sourceNoteQuote = note => note.split(/\r?\n/u).map(line => `> ${line}`).join('\n');
+const termRationaleTe = decision => {
+  const term = termByDecisionId.get(decision.decision_id);
+  if (!term) throw new Error(`Missing primary term for ${decision.decision_id}`);
+  if (isTeluguDominant(term.basis)) return oneLine(term.basis);
+  if (isTeluguDominant(term.scope)) return oneLine(term.scope);
+  if (term.term_id === 'TE-T001') return 'TE-P001లో గణిత సమితికి “సమితి” అనే వాడుక కనిపిస్తుంది. ఇక్కడి నిర్వచనాలు, సూత్రాలు మాత్రం స్థిర Open Logic మూలం నిర్ణయించినవే; ఆ పేజీని వాటికి స్వతంత్ర నిరూపణగా చూపడం లేదు.';
+  if (term.term_id === 'TE-T002') return 'TE-P008లో సభ్యత్వ/చేర్పు సందర్భంలో “మూలకం” అనే వాడుక కనిపిస్తుంది. “సభ్యము” నమోదైన ప్రత్యామ్నాయం; మూలంలోని సభ్యత్వ నిర్వచనాన్ని ఈ పద ఎంపిక మార్చదు.';
+  const refs = (term.passages ?? []).join(', ');
+  return `స్థిర మూలంలోని “${oneLine(term.source_term)}” భావానికి “${oneLine(term.telugu)}” రూపాన్ని ఎంచుకున్నాం. ${refs ? `${refs} పేజీల వాడుక/సందర్భం, వాటి నమోదైన పరిమితులను పరిగణించాం.` : 'ఈ ప్రత్యేక రూపానికి ప్రత్యక్ష స్థానిక పేజీ ఆధారం నమోదు కాలేదు.'} ఖచ్చితమైన గణిత అర్థం మూల నిర్వచనాలు, సూత్రాలు, ఉదాహరణలకే లోబడి ఉంటుంది; ఆంగ్ల ప్రాథమిక వివరణ సమాంతర నమోదులో నిలిచింది.`;
+};
+const termConfidenceTe = decision => {
+  const term = termByDecisionId.get(decision.decision_id);
+  const grade = `నమోదైన విశ్వాస స్థాయి ${teConfidence(decision.confidence)}; ఇది ఎంపిక చేసిన తెలుగు రూపంపై ఉన్న ఆధారాన్ని సూచిస్తుంది, మొత్తం గణిత పాఠ్యానికి ధ్రువీకరణ కాదు.`;
+  if (term.term_id === 'TE-T001') return `${grade} ప్రాథమిక నమోదులో విడి స్థాయి ఇవ్వలేదు; TE-P001లో పద వినియోగం ఉన్నా స్వతంత్ర నిపుణ సమీక్ష మిగిలింది. అందుకే సాంప్రదాయికంగా మధ్యస్థ స్థాయి, తాత్కాలిక స్థితి ఉంచాం.`;
+  if (term.term_id === 'TE-T002') return `${grade} సభ్యత్వ నామవాచకంపై అనిశ్చితి తక్కువని ప్రాథమిక గమనిక చెబుతుంది; “సభ్యము” పర్యాయం సంపాదకీయ ఎంపిక. పాత సమీక్ష స్థాయి moderate కాబట్టి దాన్ని మధ్యస్థంగా చూపి, నిపుణ సమీక్షకు తెరిచి ఉంచాం.`;
+  if (term.term_id === 'TE-T005') return `${grade} ప్రాథమిక గమనికలోని “Low” అనిశ్చితిని సూచిస్తుంది, విశ్వాస స్థాయిని కాదు; పాత సమీక్షలో moderate కావడంతో మధ్యస్థంగా ఉంచాం.`;
+  if (isTeluguDominant(term.uncertainty)) return `${grade} ${oneLine(term.uncertainty)}`;
+  if (decision.confidence === 'low') return `${grade} మూల నిర్వచనం భావాన్ని నియంత్రించినా ఈ ప్రత్యేక తెలుగు నామకరణానికి ప్రత్యక్ష స్థానిక ప్రమాణం పరిమితం లేదా తాత్కాలికం. నిపుణ సూచనతో మార్చవచ్చు; అది ప్రచురణను ఆపదు.`;
+  return `${grade} తనిఖీ చేసిన పేజీ/మూల సందర్భం ఉపయోగపడినా ప్రాథమిక నమోదులో అధిక స్థాయి విడిగా నిర్ధారించలేదు. పదరూపం నిపుణ సమీక్షకు తెరిచి ఉంది; అది ప్రచురణకు అడ్డంకి కాదు.`;
+};
+const correctionRationaleTe = decision => {
+  const correction = correctionByDecisionId.get(decision.decision_id);
+  if (!correction) throw new Error(`Missing primary correction for ${decision.decision_id}`);
+  const lead = decision.provisional
+    ? 'స్థిర ఆంగ్ల మూలంలో గుర్తించిన నిర్వచన/నిరూపణ పరిమితిని లక్ష్యంలో పక్కనే ప్రకటించాం; పూర్తి నిరూపణను కొత్తగా ఇచ్చామని చెప్పడం లేదు.'
+    : correction.qualification?.disposition === 'rejected_false_positive'
+    ? 'తరువాతి సమీక్ష పూర్వ దోష వర్గీకరణను తిరస్కరించింది. చారిత్రక నమోదు తొలగించకుండా, సమానమైన స్పష్ట రూపాన్ని లక్ష్యంలో చూపాం.'
+    : 'స్థిర ఆంగ్ల మూలంలోని గుర్తించిన లోపాన్ని సంబంధిత గణిత సందర్భంతో సరిచూసి లక్ష్యంలో పరిమిత సవరణ చేశాం; మిగిలిన సంకేతాలు, వాదన పరిధి మారలేదని నిర్మాణ తనిఖీ పరిశీలిస్తుంది.';
+  return `${lead} లక్ష్య పాఠ్యంలో ఉన్న ఖచ్చితమైన తెలుగు ప్రకటిత గమనిక:\n\n${sourceNoteQuote(correctionNotes.get(correction.finding_id))}`;
+};
+const correctionConfidenceTe = decision => decision.provisional
+  ? `విశ్వాస స్థాయి ${teConfidence(decision.confidence)}: మూల ఖాళీని గుర్తించి ప్రకటించాం, కానీ దాన్ని పూరించే పూర్తి నిరూపణ స్థాపించలేదు. నిర్మాణ సమానత్వ తనిఖీ గణిత నిరూపణకు బదులు కాదు.`
+  : `విశ్వాస స్థాయి ${teConfidence(decision.confidence)}: గుర్తించిన ఈ నిర్దిష్ట సవరణకు మూల బైట్లు, లక్ష్య బైట్లు, మూల-పరిశీలన ఆధారం ఉన్నాయి. ఇది స్వతంత్ర మానవ నిపుణ సమీక్ష జరిగిందని లేదా మొత్తం పాఠ్యం నిర్దోషమని ప్రకటించదు.`;
+const reviewQuestionTe = decision => decision.record_kind === 'terminology'
+  ? `మూలంలోని “${oneLine(decision.source_term_or_construction)}”కు “${oneLine(decision.chosen_rendering)}” అనే రూపం ఆంధ్రప్రదేశ్, తెలంగాణల అధికారిక గణిత/తర్క వాడుకలో సహజమైనదీ, సాంకేతికంగా ఖచ్చితమైనదీనా? కాకపోతే ప్రదర్శిత నిర్వచనం, సూత్రాలు, మూల పరిధి మారకుండా వాడాల్సిన నిర్దిష్ట ప్రత్యామ్నాయం ఏమిటి?`
+  : `${decision.decision_id}కు లక్ష్య పాఠ్యంలో ఇచ్చిన ప్రకటిత సవరణ లేదా మూల-పరిమితి గమనిక, సంబంధిత స్థిర మూల గణితానికి ఖచ్చితంగా సరిపోతుందా? కాకపోతే మూల/లక్ష్య ఫైలు, పంక్తి, సూత్రాన్ని చూపి ఏ నిర్దిష్ట మార్పు కావాలో తెలియజేయండి; పరిష్కరించని నిరూపణను పూర్తయిందని ఊహించవద్దు.`;
+const decisionRationaleTe = decision => decision.record_kind === 'terminology' ? termRationaleTe(decision) : correctionRationaleTe(decision);
+const decisionConfidenceTe = decision => decision.record_kind === 'terminology' ? termConfidenceTe(decision) : correctionConfidenceTe(decision);
+const authorityTe = decision => decision.authorities_checked.map(authority => `${authority.authority_id} (${authority.status}; ${authority.locator ?? 'స్థాన సూచన లేదు'})`).join(' | ');
+const alternativesTe = decision => decision.record_kind === 'terminology' && decision.alternatives.length
+  ? decision.alternatives.map(item => `${item.rendering} (${({viable_alternative: 'పరిశీలించదగిన ప్రత్యామ్నాయం', rejected: 'తిరస్కరించిన ఎంపిక', reserved_for_other_sense: 'వేరే భావానికి', reserved_for_other_register: 'వేరే శైలికి'})[item.disposition] ?? item.disposition})`).join(' | ')
+  : 'వివరణాత్మక కారణాలు సమాంతర ఆంగ్ల నమోదులో ఉన్నాయి.';
+
+const fullTe = [
+  '# తెలుగు అనువాద నిర్ణయాల పూర్తి పరిశీలన నమోదు',
+  '',
+  `సంచిక: **${edition.language_tag} / ${edition.script} / ప్రామాణిక అధికారిక తెలుగు**. స్థిర మూల విభాగాలు **${draftedSourceUnits}/${sourceUnitTotal}** అనువదించబడ్డాయి. ఈ నమోదులో **${decisions.length} నిర్ణయాలు**, **${occurrenceCount} అమలు స్థానాలు** ఉన్నాయి. [ఆంగ్ల సమాంతర నమోదు](TRANSLATION_DECISIONS_FULL.en.md)లో ప్రాథమిక ఆంగ్ల కారణాల పూర్తి పాఠ్యం నిలిచింది.`,
+  '',
+  'ప్రతి స్థానానికి మూల/లక్ష్య ఫైలు, పంక్తి, బైట్-పరిధి, SHA-256 గుర్తింపులు ఇచ్చాం. పూర్వపు ఆంగ్ల పదజాల గమనికలకు ఇక్కడ మూల/స్థానిక సాక్ష్యంపై ఆధారపడిన సంక్షిప్త తెలుగు కారణం ఇచ్చాం; పదజాల సాక్ష్యపు అన్ని సూక్ష్మ పరిమితులకు సమాంతర ఆంగ్ల ప్రాథమిక నమోదు కూడా చూడండి. మూల సవరణలకు లక్ష్య పాఠ్యంలో ఉన్న ఖచ్చిత తెలుగు ప్రకటిత గమనికను ఉటంకించాం. అంగీకరించిన పూర్తి HTMLలో విభాగ-స్థాయి లింకులు ఉన్నాయి; PDFలో ప్రతి నిర్ణయానికి ఖచ్చిత పుటను ఊహించలేదు. నిపుణ సమీక్ష ఉపయోగకరం, కానీ అనువాదం లేదా ప్రచురణకు అనుమతి-ద్వారం కాదు.',
+  ''
+];
+for (const decision of decisions) {
+  fullTe.push(
+    `## ${decision.decision_id} — ${oneLine(decision.source_term_or_construction)}`,
+    '',
+    `- నమోదు రకం: ${decision.record_kind === 'terminology' ? 'పదజాలం/భావార్థం' : 'ప్రకటిత మూల సవరణ'}; ${decision.recording_mode === 'retrospective' ? 'తరువాత ఆధారాలతో పునర్నిర్మించిన నిర్ణయం' : 'పని సమయంలో నమోదైన నిర్ణయం'}.`,
+    '',
+    `- ఎంపిక చేసిన తెలుగు రూపం/చర్య: ${decision.record_kind === 'terminology' ? oneLine(decision.chosen_rendering) : 'క్రింద ఉటంకించిన లక్ష్య-గమనిక ప్రకారం పరిమిత చర్య'}.`,
+    '',
+    `- కారణం: ${decisionRationaleTe(decision)}`,
+    '',
+    `- విశ్వాసం/అనిశ్చితి: ${decisionConfidenceTe(decision)}`,
+    '',
+    `- స్థాయి/తాత్కాలికం/సమీక్ష ప్రాధాన్యం: ${teConfidence(decision.confidence)} / ${teBoolean(decision.provisional)} / ${tePriority(decision.review_priority)}.`,
+    '',
+    `- తనిఖీ చేసిన ఆధారాలు: ${authorityTe(decision)}.`,
+    '',
+    `- ఇతర ఎంపికలు: ${alternativesTe(decision)}`,
+    '',
+    `- నిపుణ సమీక్ష ప్రశ్న: ${reviewQuestionTe(decision)}`,
+    '',
+    '- అమలు స్థానాలు:',
+    ''
+  );
+  for (const occurrence of decision.occurrences) {
+    fullTe.push(`  - ${occurrence.occurrence_id}; ${occurrence.unit_id}; ${occurrence.semantic_unit_id}; మూలం ${occurrence.source.path}:${lineLabel(occurrence.source.line_span)} బైట్లు ${byteLabel(occurrence.source.byte_span)} SHA-256 ${occurrence.source.file_sha256}; లక్ష్యం ${occurrence.target.path}:${lineLabel(occurrence.target.line_span)} బైట్లు ${byteLabel(occurrence.target.byte_span)} SHA-256 ${occurrence.target.file_sha256}; ${acceptedReader ? `పాఠక రూపం output/html/full/index.html#${occurrence.unit_id} (విభాగ-స్థాయి; PDFలో ఖచ్చిత పుట చెప్పలేదు)` : 'పాఠక రూప స్థానం పెండింగ్'}.`);
+  }
+  fullTe.push('');
+}
+fs.writeFileSync(path.join(dataDir, 'TRANSLATION_DECISIONS_FULL.md'), `${fullTe.join('\n').trimEnd()}\n`);
+
+const priorityTe = [
+  '# అధిక ప్రాధాన్య నిపుణ సమీక్ష',
+  '',
+  `${decisions.length} నిర్ణయాల్లో ${priorityDecisions.length}కు అధిక/అత్యవసర సమీక్ష ప్రాధాన్యం ఉంది. సమీక్ష ఉపయోగకరం; అది అనువాదం లేదా ప్రచురణకు అడ్డంకి కాదు. ఖచ్చిత మూల/లక్ష్య స్థానాలు క్రింద ఉన్నాయి. PDFలో నిర్ణయ-స్థాయి పుటను ఊహించలేదు. [ఆంగ్ల సమాంతర జాబితా](PRIORITY_REVIEW.en.md) కూడా ఉంది.`,
+  ''
+];
+for (const decision of priorityDecisions) {
+  priorityTe.push(
+    `## ${decision.decision_id} — ${oneLine(decision.source_term_or_construction)}`,
+    '',
+    `- ఎంపిక చేసిన తెలుగు రూపం/చర్య: ${decision.record_kind === 'terminology' ? oneLine(decision.chosen_rendering) : 'క్రింది ప్రకటిత లక్ష్య-గమనిక ప్రకారం'}.`,
+    '',
+    `- కారణం: ${decisionRationaleTe(decision)}`,
+    '',
+    `- విశ్వాసం/అనిశ్చితి: ${decisionConfidenceTe(decision)}`,
+    '',
+    `- స్థాయి/తాత్కాలికం: ${teConfidence(decision.confidence)} / ${teBoolean(decision.provisional)}.`,
+    '',
+    `- అమలు స్థానాలు: ${decision.occurrences.map(item => `${item.unit_id} ${item.target.path}:${lineLabel(item.target.line_span)}`).join('; ')}.`,
+    '',
+    `- నిపుణ సమీక్ష ప్రశ్న: ${reviewQuestionTe(decision)}`,
+    ''
+  );
+}
+fs.writeFileSync(path.join(dataDir, 'PRIORITY_REVIEW.md'), `${priorityTe.join('\n').trimEnd()}\n`);
+
+const startHereTe = `# తెలుగు అనువాద నిర్ణయాల పరిశీలనకు మార్గదర్శి
+
+**ప్రస్తుత స్థితి:** స్థిర ఆంగ్ల మూలంలోని **${draftedSourceUnits}/${sourceUnitTotal}** విభాగాలకు తెలుగు పాఠ్యం, సమగ్ర HTML పాఠక రూపం ఉన్నాయి. యంత్ర-పఠన నమోదులో **${decisions.length} నిర్ణయాలు** (${termDecisions.length} పదజాల/భావార్థ ఎంపికలు, ${correctionDecisions.length} ప్రకటిత మూల సవరణలు), **${occurrenceCount} అమలు స్థానాలు** ఉన్నాయి. పాత 426/722, 276-భాగాల స్థితి ప్రస్తుత సంచికకు వర్తించదు.
+
+ముందుగా [అధిక ప్రాధాన్య సమీక్ష](PRIORITY_REVIEW.md), అవసరమైతే [పూర్తి తెలుగు నమోదు](TRANSLATION_DECISIONS_FULL.md) చూడండి. ప్రాథమిక ఆంగ్ల కారణాల పూర్తి పాఠ్యం [ఆంగ్ల సమాంతర నమోదులో](TRANSLATION_DECISIONS_FULL.en.md), [ఆంగ్ల ప్రాధాన్య జాబితాలో](PRIORITY_REVIEW.en.md) నిలిచింది. ఖచ్చిత అమలు స్థానం కోసం [CSV](DECISION_OCCURRENCES.csv), యంత్ర-పఠన ఆధారానికి [కానానికల్ JSON](DECISIONS.json), దాని [schema](translation-decision.schema.json), [నిర్ణీత తనిఖీ ఫలితం](TRANSLATION_DECISION_QA.json) చూడండి.
+
+ఒకే ప్రామాణిక అధికారిక తెలుగు లిపి సంచిక **te-Telu-IN / Telu**ను ఎంచుకున్నాం. అరబిక్ దశాంశ అంకెలు, లాటిన్ చర-గుర్తులు, తర్క-గణిత సంకేతాలు, ఎడమ-నుంచి-కుడికి గణిత అమరికను నిలిపాం. తెలంగాణ, ఆంధ్రప్రదేశ్, రాష్ట్ర విభజనకు పూర్వపు పేజీలు పరిశీలించాం; ఇది అన్ని ప్రాంతాల సంపూర్ణ సర్వే కాదు. విడి రోమన్-లిపి, AP/TS, తెలుగు-అంకెలు, వాడుకభాషా సంచికలకు ఇప్పటి సాక్ష్యం సరిపోదు. తరువాతి నిపుణ ఆధారంతో ఈ నిర్ణయాన్ని మార్చవచ్చు.
+
+పరిశీలించిన ఆధారాల్లో తెలుగు ప్రస్తుత “Top 10” స్థానం లేదా ఈ సంచిక వాడుకపై పరిమాణాత్మక ప్రభావం స్థాపితం కాలేదు. జనగణన, PISA, గ్రంథసూచిక, టోకెన్ పరిమాణాన్ని అలాంటి ర్యాంకుకు సాక్ష్యంగా చూపకండి. భవిష్యత్తులో లిపి, ఉచ్చారణ, సంకేతనం లేదా అందుబాటు సహచర రూపం కావాలంటే విడిగా తయారుచేసి మానిఫెస్టులో నమోదు చేయాలి; అది మూలానికి నిష్ఠగల తెలుగు అనువాదానికి బదులు కాదు, అడ్డంకీ కాదు.
+
+ప్రతి నిర్ణయంలో తెలుగు ఎంపిక, దానికి గల కారణం, ఆధారం, ప్రత్యామ్నాయం, విశ్వాస/అనిశ్చితి వివరణ, నిపుణ సమీక్ష ప్రశ్న ఉన్నాయి. పూర్వపు ఆంగ్ల పదజాల నిర్ణయాలకు ఇక్కడ సంక్షిప్త తెలుగు కారణం; సాక్ష్యపు పూర్తి సూక్ష్మ పరిమితులు ఆంగ్ల సమాంతర నమోదులో ఉన్నాయి. 705 మూల సవరణలకు లక్ష్య ఫైలులోని ఖచ్చిత తెలుగు ప్రకటిత గమనికను ఉటంకించాం. మూల/లక్ష్య ఫైలు, పంక్తి, బైట్-పరిధి, SHA-256 ద్వారా స్థానాన్ని తనిఖీ చేయండి. HTMLలో అంగీకరించిన విభాగ-స్థాయి లింకులు ఉన్నాయి; PDFలో ఒక్కో నిర్ణయానికి పుటను ఊహించలేదు. “అధిక విశ్వాసం” కూడా మొత్తం గణితానికి స్వతంత్ర మానవ ధ్రువీకరణ కాదు. సమీక్ష స్వాగతం; అది అనువాదం లేదా ప్రచురణకు అనుమతి-ద్వారం కాదు.
+
+పాత \`EXPERT_REVIEW_*\` ఫైళ్లు అనుకూలత కోసం ఉన్నాయి. కానానికల్ schemaను OpenLogic-translations commit \`811091d54be4989918864732073279a588340e6f\` నుంచి బైట్-స్థాయిలో యథాతథంగా తీసుకున్నాం; ఊహించిన SHA-256 \`50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90\`.
+`;
+fs.writeFileSync(path.join(dataDir, 'START_HERE.md'), startHereTe);
+fs.writeFileSync(path.join(dataDir, 'START_HERE.te.md'), startHereTe);
 
 console.log(JSON.stringify({
   schema_version: canonical.schema_version,

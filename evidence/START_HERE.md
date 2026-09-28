@@ -1,20 +1,13 @@
-# Start here: Telugu translation decisions
+# తెలుగు అనువాద నిర్ణయాల పరిశీలనకు మార్గదర్శి
 
-Status: **complete reader coverage — 722 of 722 source units translated**. The canonical register currently contains **1117 decisions** (412 terminology/sense decisions and 705 source-correction decisions) with **2446 concrete occurrences**.
+**ప్రస్తుత స్థితి:** స్థిర ఆంగ్ల మూలంలోని **722/722** విభాగాలకు తెలుగు పాఠ్యం, సమగ్ర HTML పాఠక రూపం ఉన్నాయి. యంత్ర-పఠన నమోదులో **1117 నిర్ణయాలు** (412 పదజాల/భావార్థ ఎంపికలు, 705 ప్రకటిత మూల సవరణలు), **2446 అమలు స్థానాలు** ఉన్నాయి. పాత 426/722, 276-భాగాల స్థితి ప్రస్తుత సంచికకు వర్తించదు.
 
-Use these views:
+ముందుగా [అధిక ప్రాధాన్య సమీక్ష](PRIORITY_REVIEW.md), అవసరమైతే [పూర్తి తెలుగు నమోదు](TRANSLATION_DECISIONS_FULL.md) చూడండి. ప్రాథమిక ఆంగ్ల కారణాల పూర్తి పాఠ్యం [ఆంగ్ల సమాంతర నమోదులో](TRANSLATION_DECISIONS_FULL.en.md), [ఆంగ్ల ప్రాధాన్య జాబితాలో](PRIORITY_REVIEW.en.md) నిలిచింది. ఖచ్చిత అమలు స్థానం కోసం [CSV](DECISION_OCCURRENCES.csv), యంత్ర-పఠన ఆధారానికి [కానానికల్ JSON](DECISIONS.json), దాని [schema](translation-decision.schema.json), [నిర్ణీత తనిఖీ ఫలితం](TRANSLATION_DECISION_QA.json) చూడండి.
 
-- [Full readable register](TRANSLATION_DECISIONS_FULL.md)
-- [Priority review](PRIORITY_REVIEW.md)
-- [Per-occurrence CSV](DECISION_OCCURRENCES.csv)
-- [Canonical machine register](DECISIONS.json)
-- [Canonical JSON Schema](translation-decision.schema.json)
-- [Deterministic validation record](TRANSLATION_DECISION_QA.json)
+ఒకే ప్రామాణిక అధికారిక తెలుగు లిపి సంచిక **te-Telu-IN / Telu**ను ఎంచుకున్నాం. అరబిక్ దశాంశ అంకెలు, లాటిన్ చర-గుర్తులు, తర్క-గణిత సంకేతాలు, ఎడమ-నుంచి-కుడికి గణిత అమరికను నిలిపాం. తెలంగాణ, ఆంధ్రప్రదేశ్, రాష్ట్ర విభజనకు పూర్వపు పేజీలు పరిశీలించాం; ఇది అన్ని ప్రాంతాల సంపూర్ణ సర్వే కాదు. విడి రోమన్-లిపి, AP/TS, తెలుగు-అంకెలు, వాడుకభాషా సంచికలకు ఇప్పటి సాక్ష్యం సరిపోదు. తరువాతి నిపుణ ఆధారంతో ఈ నిర్ణయాన్ని మార్చవచ్చు.
 
-The edition recommendation is one standard formal Telugu edition in Telugu script: **te-Telu-IN / Telu**. It preserves Arabic decimal digits, Latin metavariables, logic notation, and left-to-right mathematics. The evidence spans Telangana, Andhra Pradesh, and pre-bifurcation witnesses but is not an exhaustive regional survey; it does not currently justify a second Roman-script, AP/TS-split, Telugu-digit, or colloquial edition. This recommendation is reversible if later specialist evidence warrants a separate form.
+పరిశీలించిన ఆధారాల్లో తెలుగు ప్రస్తుత “Top 10” స్థానం లేదా ఈ సంచిక వాడుకపై పరిమాణాత్మక ప్రభావం స్థాపితం కాలేదు. జనగణన, PISA, గ్రంథసూచిక, టోకెన్ పరిమాణాన్ని అలాంటి ర్యాంకుకు సాక్ష్యంగా చూపకండి. భవిష్యత్తులో లిపి, ఉచ్చారణ, సంకేతనం లేదా అందుబాటు సహచర రూపం కావాలంటే విడిగా తయారుచేసి మానిఫెస్టులో నమోదు చేయాలి; అది మూలానికి నిష్ఠగల తెలుగు అనువాదానికి బదులు కాదు, అడ్డంకీ కాదు.
 
-No inspected source establishes a current Top 10 language ranking or a quantified adoption effect. Census, PISA, catalogue, and token-size evidence must not be presented as ranking evidence. Any future script, notation, pronunciation, or accessibility companion must be separately authored or deterministically generated and separately manifested; it neither replaces nor delays the faithful Telugu translation.
+ప్రతి నిర్ణయంలో తెలుగు ఎంపిక, దానికి గల కారణం, ఆధారం, ప్రత్యామ్నాయం, విశ్వాస/అనిశ్చితి వివరణ, నిపుణ సమీక్ష ప్రశ్న ఉన్నాయి. పూర్వపు ఆంగ్ల పదజాల నిర్ణయాలకు ఇక్కడ సంక్షిప్త తెలుగు కారణం; సాక్ష్యపు పూర్తి సూక్ష్మ పరిమితులు ఆంగ్ల సమాంతర నమోదులో ఉన్నాయి. 705 మూల సవరణలకు లక్ష్య ఫైలులోని ఖచ్చిత తెలుగు ప్రకటిత గమనికను ఉటంకించాం. మూల/లక్ష్య ఫైలు, పంక్తి, బైట్-పరిధి, SHA-256 ద్వారా స్థానాన్ని తనిఖీ చేయండి. HTMLలో అంగీకరించిన విభాగ-స్థాయి లింకులు ఉన్నాయి; PDFలో ఒక్కో నిర్ణయానికి పుటను ఊహించలేదు. “అధిక విశ్వాసం” కూడా మొత్తం గణితానికి స్వతంత్ర మానవ ధ్రువీకరణ కాదు. సమీక్ష స్వాగతం; అది అనువాదం లేదా ప్రచురణకు అనుమతి-ద్వారం కాదు.
 
-Every judgment-dependent item records its source-controlled sense, chosen rendering or treatment, rationale, checked authority, alternatives, confidence, provisional status, and a plain “Please double-check” question. Every occurrence binds a unit and semantic-unit identifier to source and target files, lines, byte spans, and SHA-256 hashes. Accepted full HTML unit anchors are available and hashed; exact PDF occurrence pages are not asserted. Optional expert review remains useful and creates no translation hold.
-
-The older `EXPERT_REVIEW_*` files remain as compatibility views. The canonical schema is copied byte-for-byte from OpenLogic-translations commit `811091d54be4989918864732073279a588340e6f`; its expected SHA-256 is `50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90`.
+పాత `EXPERT_REVIEW_*` ఫైళ్లు అనుకూలత కోసం ఉన్నాయి. కానానికల్ schemaను OpenLogic-translations commit `811091d54be4989918864732073279a588340e6f` నుంచి బైట్-స్థాయిలో యథాతథంగా తీసుకున్నాం; ఊహించిన SHA-256 `50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90`.

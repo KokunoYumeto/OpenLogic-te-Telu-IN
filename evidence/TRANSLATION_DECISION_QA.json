@@ -46,33 +46,56 @@
     "accepted_html_unit_anchors_verified": true,
     "full_readable_view_complete": true,
     "priority_view_complete": true,
+    "telugu_explanations_and_review_questions_complete": true,
+    "english_parallel_views_preserved": true,
+    "primary_confidence_reconciled": true,
     "occurrence_csv_reconciled": true
   },
   "artifacts": [
     {
       "path": "evidence/START_HERE.md",
+      "bytes": 5815,
+      "sha256": "3fe0cf5bbbb1f51b74497deede0730c9da6230cbee085c3f34a128432e62fd48"
+    },
+    {
+      "path": "evidence/START_HERE.te.md",
+      "bytes": 5815,
+      "sha256": "3fe0cf5bbbb1f51b74497deede0730c9da6230cbee085c3f34a128432e62fd48"
+    },
+    {
+      "path": "evidence/START_HERE.en.md",
       "bytes": 2366,
       "sha256": "ae1bd9d9739e1643183a82055493238813a320cf759ee6d07314d56a0897a73b"
     },
     {
       "path": "evidence/TRANSLATION_DECISIONS_FULL.md",
-      "bytes": 4298707,
-      "sha256": "bbb1246721c7b2c8e210cb90930a73786ccae65eb0a29f2f0b8f07ed47b83537"
+      "bytes": 5835310,
+      "sha256": "7acbb70e9744e6eccd14f32c6b83def0d8eda720ca2b3c3563a22210651a6a37"
+    },
+    {
+      "path": "evidence/TRANSLATION_DECISIONS_FULL.en.md",
+      "bytes": 4300017,
+      "sha256": "424e646ef35985ceae70c8dc8658fc37278a86add4fe1a3897676d0eba1de83a"
     },
     {
       "path": "evidence/PRIORITY_REVIEW.md",
+      "bytes": 310338,
+      "sha256": "7ed4bf30846f957bc86d40f2a0801fd0e26b4dc65b2bfb47bc6c96091f50316f"
+    },
+    {
+      "path": "evidence/PRIORITY_REVIEW.en.md",
       "bytes": 128807,
       "sha256": "0f173d4259b05a0efea68122375c1ed0c58ceb07abaffdac2d6878a2c5f4eee1"
     },
     {
       "path": "evidence/DECISION_OCCURRENCES.csv",
-      "bytes": 3755852,
-      "sha256": "15ccdf6526711b0183652aaa6e8a0c4e99ae358bb0c1aa104ae7dc1a37b49301"
+      "bytes": 3755880,
+      "sha256": "1045b37890274041037250cf309110432f1801b6dddea03ac13aa89fc620f24d"
     },
     {
       "path": "evidence/DECISIONS.json",
-      "bytes": 21086921,
-      "sha256": "e551ebe72099373328e4d1d89842b04cbcc70b79962274d6c6cfde64abf06be5"
+      "bytes": 21088231,
+      "sha256": "5ae4a4e3de8955b8594abe1ac3e81ece399f86e2b1d1ee97ff272e85f2845e48"
     },
     {
       "path": "evidence/translation-decision.schema.json",

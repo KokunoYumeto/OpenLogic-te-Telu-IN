@@ -18,8 +18,12 @@ SCHEMA_BYTES = 10787
 SCHEMA_COMMIT = "811091d54be4989918864732073279a588340e6f"
 SURFACES = (
     "START_HERE.md",
+    "START_HERE.te.md",
+    "START_HERE.en.md",
     "TRANSLATION_DECISIONS_FULL.md",
+    "TRANSLATION_DECISIONS_FULL.en.md",
     "PRIORITY_REVIEW.md",
+    "PRIORITY_REVIEW.en.md",
     "DECISION_OCCURRENCES.csv",
     "DECISIONS.json",
     "translation-decision.schema.json",
@@ -61,6 +65,9 @@ def main() -> None:
         raise ValueError(f"Canonical schema validation failed:\n{detail}")
 
     decisions = register["decisions"]
+    legacy_reviews = {item["review_id"]: item for item in json.loads(
+        (data_dir / "EXPERT_REVIEW_LOG.json").read_text(encoding="utf-8")
+    )["records"]}
     term_records = jsonl(data_dir / "TERM_DECISIONS.jsonl")
     correction_records = [item for item in jsonl(data_dir / "SOURCE_CORRECTIONS.jsonl")
                           if item["status"].startswith("applied") or
@@ -97,6 +104,11 @@ def main() -> None:
         if decision_id in decision_ids:
             raise ValueError(f"Duplicate decision id {decision_id}")
         decision_ids.add(decision_id)
+        if decision["record_kind"] == "terminology":
+            primary_id = "REV-" + decision_id.removeprefix("te-Telu-IN-")
+            primary_grade = legacy_reviews[primary_id]["confidence"]
+            if primary_grade in {"moderate", "not_separately_graded", "mixed_provisional"} and decision["confidence"] == "high":
+                raise ValueError(f"Ungraded/moderate primary term was promoted to high confidence: {decision_id}")
         question = decision["please_double_check_question"]
         if not question or not question.startswith("Please double-check"):
             raise ValueError(f"Decision lacks plain review question lead-in: {decision_id}")
@@ -146,17 +158,36 @@ def main() -> None:
         raise ValueError("CSV occurrence ids do not match DECISIONS.json")
 
     full_text = (data_dir / "TRANSLATION_DECISIONS_FULL.md").read_text(encoding="utf-8")
+    full_english = (data_dir / "TRANSLATION_DECISIONS_FULL.en.md").read_text(encoding="utf-8")
     missing_readable_ids = sorted(decision_id for decision_id in decision_ids if decision_id not in full_text)
     if missing_readable_ids:
         raise ValueError(f"Full readable view omits decisions: {missing_readable_ids[:5]}")
+    if (full_text.count("- నిపుణ సమీక్ష ప్రశ్న:") != len(decisions)
+            or full_text.count("- విశ్వాసం/అనిశ్చితి:") != len(decisions)
+            or any(decision_id not in full_english for decision_id in decision_ids)):
+        raise ValueError("Telugu full view or English parallel view is incomplete")
     priority_expected = {
         decision["decision_id"]
         for decision in decisions
         if decision["review_priority"] in {"urgent", "high"}
     }
     priority_text = (data_dir / "PRIORITY_REVIEW.md").read_text(encoding="utf-8")
+    priority_english = (data_dir / "PRIORITY_REVIEW.en.md").read_text(encoding="utf-8")
     if any(decision_id not in priority_text for decision_id in priority_expected):
         raise ValueError("Priority view omits at least one urgent/high decision")
+    if (priority_text.count("- నిపుణ సమీక్ష ప్రశ్న:") != len(priority_expected)
+            or priority_text.count("- విశ్వాసం/అనిశ్చితి:") != len(priority_expected)
+            or any(decision_id not in priority_english for decision_id in priority_expected)):
+        raise ValueError("Telugu priority view or English parallel view is incomplete")
+    start_here = (data_dir / "START_HERE.md").read_text(encoding="utf-8")
+    if ("722/722" not in start_here or "నిర్ణయాలు" not in start_here
+            or start_here != (data_dir / "START_HERE.te.md").read_text(encoding="utf-8")
+            or not (data_dir / "START_HERE.en.md").is_file()):
+        raise ValueError("Current Telugu review entry point or English parallel view is incomplete")
+    for identifier in ("te-Telu-IN-TE-T001", "te-Telu-IN-TE-T002", "te-Telu-IN-TE-T005", "te-Telu-IN-TE-T006", "te-Telu-IN-TE-T007", "te-Telu-IN-TE-T010"):
+        selected = next(item for item in decisions if item["decision_id"] == identifier)
+        if selected["confidence"] != "medium" or not selected["provisional"]:
+            raise ValueError(f"Conservative confidence reconciliation regressed: {identifier}")
 
     artifacts = [artifact(data_dir / name, f"evidence/{name}") for name in SURFACES]
     qa = {
@@ -209,6 +240,9 @@ def main() -> None:
             "accepted_html_unit_anchors_verified": reader_status_counts.get("available", 0) == len(occurrence_ids) if register["edition_release"]["coverage_state"] == "complete" else True,
             "full_readable_view_complete": True,
             "priority_view_complete": True,
+            "telugu_explanations_and_review_questions_complete": True,
+            "english_parallel_views_preserved": True,
+            "primary_confidence_reconciled": True,
             "occurrence_csv_reconciled": True,
         },
         "artifacts": artifacts,
