@@ -1,32 +1,42 @@
 # ఓపెన్ లాజిక్ తెలుగు — సరిచేసిన పూర్తి 722-విభాగాల సంచిక
 
-This is the corrected complete Telugu edition of all 722 tracked Open Logic
-Project content TeX units at frozen revision
-`9620cc73f9c8e0ad003c514a5d3748f29611c4c0`. It retains the original
-source paths and OLP-0001–OLP-0722 identifiers and integrates the main text,
-alternative arrangements, and formal-only units in one reader.
+ఇది Open Logic Project స్థిర ఆంగ్ల మూలంలోని 722 TeX విభాగాల పూర్తి తెలుగు
+యంత్ర-సహాయ అనువాదం. అసలు మార్గాలు, OLP-0001–OLP-0722 గుర్తింపులు
+నిలిచాయి. ప్రధాన పాఠ్యం, ప్రత్యామ్నాయ అమరికలు, ఆచారబద్ధ-మాత్రపు
+విభాగాలు ఒకే సమగ్ర పాఠక సంచికలో ఉన్నాయి. స్థిర మూల రివిజన్
+`9620cc73f9c8e0ad003c514a5d3748f29611c4c0`.
 
-Compared with the historical first full release (v1.0.0), v1.0.1 translates
-short English `if`/`and`/`then` wording left in two units and removes printed
-TeX line-break spacing marks from the reader. The mathematical expressions and
-source identifiers are unchanged. The precise [correction record](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/blob/v1.0.1-full-olp0722/evidence/FULL-LANGUAGE-CORRECTIONS-20260928.md)
-is included in the source and QA archive. Use v1.0.1 for reading and citation;
-v1.0.0 remains an immutable historical release.
+చారిత్రక మొదటి పూర్తి v1.0.0 సంచికతో పోలిస్తే, v1.0.1 రెండు విభాగాల్లో
+మిగిలిన చిన్న ఆంగ్ల `if`/`and`/`then` పదాలను అనువదిస్తుంది; పాఠక రూపంలో
+కనిపించిన TeX పంక్తి-విరామ ఖాళీ గుర్తులను తొలగిస్తుంది. గణిత సూత్రాలు,
+మూల గుర్తింపులు మారలేదు. ఖచ్చితమైన సవరణలు
+`evidence/FULL-LANGUAGE-CORRECTIONS-20260928.md`లో ఉన్నాయి. చదవడానికి,
+ఉటంకించడానికి v1.0.1 వాడండి; v1.0.0 చారిత్రక నమోదుగానే ఉంది.
 
-The release provides a searchable, tagged PDF, a reflowable EPUB with native
-MathML, a self-contained offline HTML reader, all 722 editable Telugu TeX
-units, the committed full source, and a QA evidence bundle. For immediate
-reading, choose the **full PDF**. To read offline in a browser, unzip the HTML
-package and open `index.html`.
+చదవడానికి ముందుగా **పూర్తి PDF** తెరవండి. మార్చుకోగల EPUBలో MathML
+గణితం ఉంది. ఆఫ్‌లైన్ HTML ZIPను విప్పి `index.html` తెరవచ్చు.
+ఒకే ఫైలులోని నేరుగా పొందగల LaTeX మూలం 722 అనువాద విభాగాల నిజమైన
+శరీరాలను కలిగి ఉంది; ఇది కేవలం దిగుమతి ఆదేశాల జాబితా కాదు. పూర్తి
+మూల అనుబంధ ZIPలో విడివిడి ఫైళ్లు, శైలి/మాక్రోలు, చిత్రాలు, ఫాంట్లు,
+పునర్నిర్మాణ సూచనలు, నిర్మాణ తనిఖీ ఆధారాలు ఉన్నాయి. ఈ ఒకే ఫైలు TeX,
+ప్రచురిత PDFకు ప్రత్యక్ష నిర్మాణ డ్రైవర్ కాదు: ఆ PDFను సమగ్ర సెమాంటిక్
+HTML నుంచి ముద్రించారు. `README-RECONSTRUCTION.md`లో ఆ తేడా,
+పునర్నిర్మాణ పద్ధతి వివరంగా ఉంది.
 
-This is a machine-assisted translation. Strict source/target structural QA
-covers 10,611 aligned blocks; the full HTML, EPUB, PDF text layer, diagrams,
-and sampled PDF pages were checked. This is **not** independently human-reviewed
-or a proof of semantic perfection. Provisional terminology, disclosed defects
-or gaps in the frozen English source, and four unresolved frozen-source
-cross-reference occurrences remain traceable in the evidence.
+10,611 అనుసంధానిత భాగాలకు కఠిన మూల–అనువాద నిర్మాణ తనిఖీ జరిగింది;
+పూర్తి HTML, EPUB, PDF పాఠ్య పొర, చిత్రాలు, నమూనా PDF పుటలను తనిఖీ
+చేశాం. అయినా ఇది స్వతంత్ర మానవ నిపుణ సమీక్ష కాదు; అర్థపరమైన సంపూర్ణ
+నిర్దోషతకు రుజువు కాదు. తాత్కాలిక పదజాలం, స్థిర ఆంగ్ల మూలంలోని
+ప్రకటించిన లోపాలు/ఖాళీలు, పరిష్కరించని నాలుగు మూల క్రాస్-రిఫరెన్సులు
+తనిఖీ ఆధారాల్లో చూడవచ్చు.
 
-The adaptation and source text are attributed under CC BY 4.0; bundled Noto
-Serif Telugu fonts retain the SIL Open Font License. See `ATTRIBUTION.md`,
-`LICENSE.md`, the release manifest and the QA bundle for component boundaries
-and reproducibility details. Earlier releases remain available as history.
+చారిత్రక 276-విభాగాల v0.4.0 నమోదులో OpenAI Codex GPT-5.6 Sol,
+Ultra reasoning effort పేర్కొనబడింది. తరువాతి పని-నమోదులో GPT-6 Sol,
+Ultra reasoning effort ప్రత్యక్షంగా ఉంది; ఈ అదనపు TeX సంగ్రహణ,
+చివరి ప్రచురణ తనిఖీ అదే నమూనా/స్థాయిలో జరిగాయి. నమోదు లేని చారిత్రక
+దశలకు నమూనాను ఊహించి ఆపాదించడం లేదు.
+
+మూల పాఠ్యం, అనువాదానికి వర్తించే మేరకు CC BY 4.0; జతచేసిన Noto Serif
+Telugu అక్షరరూపాలకు SIL OFL 1.1. భాగాల హక్కుల సరిహద్దులు, నిరాకరణ,
+పునర్నిర్మాణ వివరాలకు `ATTRIBUTION.md`, `LICENSE.md`, విడుదల మానిఫెస్టు,
+QA ఆధారాలు చూడండి. పాత విడుదలలు చరిత్రగా అందుబాటులో ఉన్నాయి.

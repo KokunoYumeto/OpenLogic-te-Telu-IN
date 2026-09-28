@@ -1,8 +1,8 @@
 # OpenLogic తెలుగు (te-Telu-IN)
 
 ఇది [Open Logic Project](https://openlogicproject.org/) పాఠ్యానికి తెలుగు
-యంత్ర-సహాయ అనువాదం. స్థిరపరిచిన [ఆంగ్ల మూల సవరణ](https://github.com/OpenLogicProject/OpenLogic/tree/9620cc73f9c8e0ad003c514a5d3748f29611c4c0)
-లోని 722 TeX విభాగాలూ ఇక్కడ వాటి మూల మార్గాలు, గుర్తింపులతో సంపాదించగల
+యంత్ర-సహాయ అనువాదం. స్థిరపరిచిన ఆంగ్ల మూలంలోని 722 TeX విభాగాలూ
+ఇక్కడ వాటి మూల మార్గాలు, గుర్తింపులతో సంపాదించగల
 తెలుగు ఫైళ్లుగా ఉన్నాయి. మూల ఆంగ్ల ఫైళ్లు మార్చకుండా ఉంచాం.
 
 ## పూర్తి పాఠక సంచిక
@@ -12,6 +12,11 @@
 సెమాంటిక్ HTML, సంపాదించగల తెలుగు TeX, పూర్తి మూలసంగ్రహం ఉన్నాయి.
 [Zenodo పూర్తి సంచిక DOI](https://doi.org/10.5281/zenodo.23018659)లోనూ
 ఇదే విడుదల అందుబాటులో ఉంది; అక్కడ పూర్తి PDF ప్రత్యక్ష నమూనా.
+[ఒకే ఫైలులోని పూర్తి LaTeX మూలం](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v1.0.1-full-olp0722/01-openlogic-te-Telu-IN-direct-LaTeX-OLP0722-v1.0.1-full-olp0722.tex),
+[పునర్నిర్మాణ ఆధారాల ZIP](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v1.0.1-full-olp0722/02-openlogic-te-Telu-IN-full-source-OLP0722-v1.0.1-full-olp0722-addendum.zip)
+కూడా ఉన్నాయి. ఈ నేరుగా పొందగల TeX 722 విభాగాల అసలు శరీరాలను కలిగి
+ఉంటుంది; అది ప్రచురిత PDFకు ప్రత్యక్ష నిర్మాణ డ్రైవర్ కాదు.
+వివరాలకు [పునర్నిర్మాణ సూచనలు](README-RECONSTRUCTION.md) చూడండి.
 HTML ZIPను విప్పి `index.html` తెరిస్తే ఇంటర్నెట్ లేకుండానే చదవవచ్చు.
 గణితం MathMLలో, చిత్రాలు స్థానిక SVGలలో ఉన్నాయి; పాఠక రూపానికి
 బాహ్య స్క్రిప్టు సేవ అవసరం లేదు.
@@ -32,6 +37,12 @@ HTML ZIPను విప్పి `index.html` తెరిస్తే ఇం�
 స్వతంత్ర భాషా/గణిత నిపుణ సమీక్షగా భావించవద్దు. కొన్ని సాంకేతిక పదాలు
 తాత్కాలిక నిర్ణయాలు; వాటి ఖచ్చితమైన అర్థానికి స్థిర ఆంగ్ల మూలంలోని
 నిర్వచనమే ఆధారం.
+
+చారిత్రక 276-విభాగాల v0.4.0 నమోదులో OpenAI Codex GPT-5.6 Sol, Ultra
+reasoning effort పేర్కొనబడింది. తరువాతి పని-నమోదులో GPT-6 Sol, Ultra
+reasoning effort ప్రత్యక్షంగా ఉంది; ఈ నేరుగా పొందగల TeX సంగ్రహణ,
+చివరి ప్రచురణ తనిఖీ అదే నమూనా/స్థాయిలో జరిగాయి. ప్రతి చారిత్రక
+విభాగాన్ని ఒకే నమూనాకు ఆపాదించడం లేదు; నమోదు లేని దశల నమూనాను ఊహించలేదు.
 
 ## చారిత్రక పాక్షిక సంచికలు
 
@@ -82,32 +93,11 @@ pwsh -File scripts/build-cumulative-279.ps1
 నుంచి Chrome print ద్వారా తయారుచేసి `scripts/audit-full-pdf.py`తో
 తనిఖీ చేస్తాం; ఆ దశలో TeX పని జరగదు.
 
-## English summary
+## సాంకేతిక మూల గుర్తింపు
 
-All 722 tracked content modules at Open Logic Project revision
-`9620cc73f9c8e0ad003c514a5d3748f29611c4c0` now have aligned,
-editable Telugu TeX files at their original paths. A strict structural audit
-passes all 10,611 aligned blocks. This is machine-assisted work with
-source-comparison evidence, not an independently human-reviewed translation.
-The complete integrated reader is available in the
-[corrected v1.0.1 full release](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v1.0.1-full-olp0722)
-and [Zenodo version DOI](https://doi.org/10.5281/zenodo.23018659)
-as a tagged/searchable PDF, reflowable EPUB, and self-contained offline HTML,
-alongside all editable TeX units and reproducible source and QA archives.
-Validation is structural and machine-assisted, with sampled semantic and
-visual review; it is not independent expert review.
-The first full v1.0.0 release remains historical; v1.0.1 translates short
-English connectives missed in two units and removes printed TeX spacing marks.
-
-The [earlier v0.4.0 release](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.4.0-cumulative-olp0279)
-remains a 276-unit cumulative PDF/EPUB and editable-source tranche. The
-[deployed web reader](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sfr/)
-covers 23 units. The earlier [Zenodo v0.4.0 version DOI](https://doi.org/10.5281/zenodo.22726674)
-identifies that historical partial edition; the
-[continuing concept DOI](https://doi.org/10.5281/zenodo.22307937) now resolves
-to the corrected complete v1.0.1 edition.
-
-The Open Logic text and this adaptation are distributed under CC BY 4.0;
-bundled Noto fonts have their own SIL OFL 1.1 license. See
-[attribution and component boundaries](ATTRIBUTION.md) and the
-[publication record](PUBLICATION.md).
+స్థిర ఆంగ్ల [మూల రివిజన్](https://github.com/OpenLogicProject/OpenLogic/tree/9620cc73f9c8e0ad003c514a5d3748f29611c4c0):
+`9620cc73f9c8e0ad003c514a5d3748f29611c4c0`.
+ఖచ్చితమైన 722 మూల మార్గాలు, SHA-256 గుర్తింపులు
+`evidence/SOURCE_MANIFEST.jsonl`లో ఉన్నాయి. ప్రతి అనువాద విభాగపు
+మూల–లక్ష్య నిర్మాణ తనిఖీ `evidence/CUMULATIVE-OLP0722-STRUCTURAL-QA.json`లో,
+ప్రచురిత ఆస్తుల తనిఖీలు [ప్రచురణ నమోదు](PUBLICATION.md)లో ఉన్నాయి.

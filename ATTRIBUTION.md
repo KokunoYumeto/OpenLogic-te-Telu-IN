@@ -1,39 +1,42 @@
-# Attribution and component boundaries
+# కృతజ్ఞతలు, హక్కులు, భాగాల సరిహద్దులు
 
-- The Open Logic Text, by the Open Logic Project, is the source of the
-  translated text and preserved diagrams. Author attribution:
-  https://openlogicproject.org/people/ . Source repository and revision:
-  https://github.com/OpenLogicProject/OpenLogic/tree/9620cc73f9c8e0ad003c514a5d3748f29611c4c0 .
-  CC BY 4.0; full license/disclaimer in LICENSE.md and upstream/LICENSE.md.
-  The source README is retained verbatim. This is an unofficial adaptation.
-- Editable Telugu source units retain all 722 frozen source paths and their
-  original comment identities. The current public v0.4.0 reader release is
-  bounded to 276 units; local full-corpus source coverage is not a claim that
-  a complete reader has passed release QA or been published.
-- Preserved upstream TikZ sources remain under `upstream/assets/diagrams/`
-  and within the frozen content tree. Their reader SVG derivatives are
-  adaptations of those sources; no separate notice is present in the diagram
-  files, so the source repository's CC BY 4.0 notice applies.
-- Telugu translation, localized title/about material, grammatical token
-  realization, integrated reader and task-authored build/package scripts are
-  machine-generated/agent-authored changes. CC BY 4.0 applies to these
-  contributions to the extent copyright applies. No human review or source
-  author endorsement is claimed.
-- Bundled NotoSerifTelugu-Regular.ttf and NotoSerifTelugu-Bold.ttf are
-  unmodified Noto Project fonts, Copyright 2018 The Noto Project Authors
-  (github.com/googlei18n/noto-fonts), SIL OFL 1.1. The exact notice and
-  license accompany them at fonts/OFL.txt.
-- Latin Modern and the TeX installation are external build dependencies,
-  not redistributed source components. Font subsets embedded by XeLaTeX
-  remain subject to the respective font permissions.
-- The SCERT/APOSS source/page metadata and brief isolated terminology
-  observations describe consulted evidence. The original Telugu textbooks,
-  scans, page images and full extractions are excluded from publication;
-  they are not covered by this adaptation's license.
+- మూల రచన `The Open Logic Text` — The Open Logic Projectది.
+  [మూల రచయితలు, సహకారులు](https://openlogicproject.org/people/).
+  ఈ తెలుగు సంచిక అనధికార అనుసరణ; మూల రచయితల ఆమోదం ఉందని సూచించదు.
+  స్థిర ఆంగ్ల మూల రివిజన్, ఫైల్ గుర్తింపులు
+  `evidence/SOURCE_MANIFEST.jsonl`లో ఉన్నాయి. మూల పాఠ్యం, వర్తించే
+  మేరకు ఈ అనువాదం CC BY 4.0 కింద ఉన్నాయి; `LICENSE.md`,
+  `upstream/LICENSE.md`లో పూర్తి అనుమతి, నిరాకరణ చూడండి.
+- సంపాదించగల తెలుగు మూలం 722/722 అసలు మార్గాలు, OLP గుర్తింపులు
+  నిలుపుతుంది. సరిచేసిన v1.0.1లో పూర్తి PDF, EPUB, ఆఫ్‌లైన్ HTML పాఠక
+  రూపాలు ప్రచురించబడ్డాయి. ఒకే ఫైలులోని పూర్తి తెలుగు TeX శరీరాలు,
+  పునర్నిర్మాణ ఆధారాలతో కూడిన అనుబంధ ZIP వేరు; వాటి సంబంధం
+  `README-RECONSTRUCTION.md`లో వివరించాం. పాత v0.4.0లోని 276-విభాగాల
+  PDF/EPUB, 23-విభాగాల వెబ్ పాఠక రూపం చారిత్రక పాక్షిక సంచికలే.
+- మూల TikZ చిత్రాలు `upstream/assets/diagrams/`లో, స్థిర మూల పాఠ్యంలో
+  నిలిచాయి. వాటి SVG పాఠక రూపాలు ఆ చిత్రాల అనుసరణలు. చిత్ర ఫైళ్లలో
+  వేరే అనుమతి గమనిక లేదు; మూల భాండాగారం యొక్క CC BY 4.0 వర్తిస్తుంది.
+- తెలుగు అనువాదం, స్థానికీకరించిన శీర్షిక/పరిచయం, పదరూపాల అమలు,
+  సమగ్ర పాఠక రూపం, నిర్మాణ/ప్యాకేజింగ్ స్క్రిప్టులు యంత్ర-సహాయ,
+  ఏజెంట్-రచిత మార్పులు. హక్కులు వర్తించే మేరకు CC BY 4.0. ఇది స్వతంత్ర
+  మానవ నిపుణ సమీక్ష పొందిన అనువాదం కాదు.
+- చారిత్రక 276-విభాగాల v0.4.0 నమోదులో OpenAI Codex GPT-5.6 Sol,
+  Ultra reasoning effort పేర్కొనబడింది. తరువాతి పని-నమోదులో GPT-6 Sol,
+  Ultra reasoning effort ప్రత్యక్షంగా ఉంది; పూర్తి నేరుగా పొందగల TeX
+  సంగ్రహణ, చివరి ప్రచురణ తనిఖీ ఆ నమూనా/స్థాయిలో జరిగాయి. మొత్తం 722
+  విభాగాల ప్రతి చారిత్రక దశకు ఖచ్చితమైన నమూనా నమోదు లేదు; నమోదు లేని
+  దశలకు నమూనాను ఊహించి ఆపాదించడం లేదు.
+- జతచేసిన `NotoSerifTelugu-Regular.ttf`, `NotoSerifTelugu-Bold.ttf`
+  ఫాంట్లు మార్చని Noto Project అక్షరరూపాలు (Copyright 2018 The Noto
+  Project Authors); వాటికి SIL OFL 1.1. అసలు గమనిక, అనుమతి
+  `fonts/OFL.txt`లో ఉన్నాయి. Latin Modern, TeX ఇన్‌స్టాలేషన్
+  బాహ్య నిర్మాణ ఆధారాలు; అవి మూల ZIPలో పంపిణీ చేయబడలేదు.
+- తెలుగు పాఠ్యగ్రంథాల మూలం/పుటల నమోదు, చిన్న పదజాల పరిశీలనలు మాత్రమే
+  ఆధారాల్లో ఉన్నాయి. అసలు గ్రంథాలు, స్కాన్లు, పుట చిత్రాలు, పూర్తి
+  వెలికితీతలు ఈ విడుదలలో లేవు; ఈ అనుసరణ అనుమతి వాటికి వర్తించదు.
 
-The source license's warranty disclaimer remains applicable. Provisional
-technical nomenclature and mathematical-source caveats are documented in
-evidence. Local editable coverage is 722 of 722 units; the latest accepted
-public reader release remains the bounded 276-unit v0.4.0 PDF/EPUB, with the
-deployed semantic HTML reader bounded to 23 units. The full reader and its
-release remain under QA.
+మూల అనుమతి యొక్క వారంటీ నిరాకరణ యథాతథంగా వర్తిస్తుంది. కొన్ని
+సాంకేతిక పదాలు తాత్కాలిక నిర్ణయాలు. స్థిర ఆంగ్ల మూలంలోని నిరూపణ
+పరిమితులు, నాలుగు పరిష్కరించని క్రాస్-రిఫరెన్సులు పాఠక రూపం,
+తనిఖీ ఆధారాల్లో ప్రకటించబడ్డాయి. ఈ పాఠ్యాన్ని స్వతంత్ర నిపుణ
+ధృవీకరణగా భావించవద్దు.
