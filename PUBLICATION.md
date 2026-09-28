@@ -31,8 +31,12 @@ snapshot are paired with them. The deployed semantic HTML reader remains at
 The new version preserves all six files from the published v0.2.0 record and
 the two files already staged in its unpublished v0.3.0 draft; 12 additional
 release assets were uploaded. All 20 public files were downloaded anonymously
-and matched by filename, byte count and SHA-256. Zenodo's public preview is
-the pertinent cumulative PDF. See the [sanitized readback receipt](evidence/ZENODO-V040-MIRROR-READBACK.json).
+and matched by filename, byte count and SHA-256. The
+[sanitized readback receipt](evidence/ZENODO-V040-MIRROR-READBACK.json) recorded
+the cumulative PDF as the preview on 2026-09-26. A fresh landing-page check on
+2026-09-28 instead shows the build-source ZIP in the preview pane; the ZIP is
+not a readable substitute for the PDF. The complete next version must verify
+its live PDF preview after publication.
 Three detailed QA JSONs remain on GitHub rather than being duplicated in
 Zenodo. Neither the archived version files nor their public access changed.
 
