@@ -1,5 +1,26 @@
 # Verified publication checkpoints
 
+## Corrected complete v1.0.1 GitHub release — 2026-09-28
+
+The [corrected complete 722-unit Telugu release](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v1.0.1-full-olp0722)
+is public. Its tag resolves to source commit
+`3ae3c5971e2857333c7812871fb6135389712ce0`. All eight new assets —
+the searchable and tagged 951-page PDF, MathML EPUB, offline HTML reader,
+editable TeX, full source, QA evidence, manifest and checksums — were downloaded
+anonymously and matched by filename, byte count and SHA-256. The
+[readback receipt](evidence/GITHUB-FULL-V101-READBACK.json) records each result.
+Normal and cold PDF and EPUB builds reproduced identical bytes. The
+[correction record](evidence/FULL-LANGUAGE-CORRECTIONS-20260928.md) explains
+the short English connectives and visible TeX spacing marks fixed after the
+first full release. Use v1.0.1 for reading and citation; v1.0.0 remains
+historical.
+
+The existing [Zenodo concept DOI](https://doi.org/10.5281/zenodo.22307937)
+still has no complete-edition version. Its latest public record remains the
+partial v0.4.0 edition; do not cite that DOI as the corrected full edition
+until a new version in the same lineage has been published and verified,
+including a live preview of the full PDF.
+
 ## Complete v1.0.0 GitHub release — 2026-09-28
 
 The [complete 722-unit Telugu release](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v1.0.0-full-olp0722)
@@ -12,6 +33,8 @@ downloaded anonymously and matched to the local package by byte count and
 SHA-256; see the [readback receipt](evidence/GITHUB-FULL-V1-READBACK.json).
 The [release notes](RELEASE-NOTES-v1.0.0-full-olp0722.md) disclose the
 machine-assisted review boundary and source limitations.
+This historical first full edition retains the residual short English and
+reader-spacing issues documented in the v1.0.1 correction record.
 
 The existing [Zenodo concept DOI](https://doi.org/10.5281/zenodo.22307937)
 currently still identifies the historical partial-edition lineage; do not
