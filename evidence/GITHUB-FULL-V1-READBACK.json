@@ -1,0 +1,60 @@
+{
+  "schema": "openlogic-te-github-full-release-readback/1",
+  "status": "COMPLETE_PASS",
+  "checked_utc": "2026-09-28T03:55:54.508Z",
+  "repository": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN",
+  "release_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v1.0.0-full-olp0722",
+  "tag": "v1.0.0-full-olp0722",
+  "tag_commit": "320108a487b5fdc3dc64e6d08cbff801ac2ec65f",
+  "assets": [
+    {
+      "filename": "00-openlogic-te-Telu-IN-full-OLP0722-v1.0.0-full-olp0722.pdf",
+      "bytes": 86691371,
+      "sha256": "a41a29f8af252b4645b901c88021320b12b14968e32e26cfa5ea66816f565a38",
+      "role": "complete_tagged_searchable_pdf"
+    },
+    {
+      "filename": "openlogic-te-Telu-IN-QA-OLP0722-v1.0.0-full-olp0722.zip",
+      "bytes": 969656,
+      "sha256": "311adac602cc9aa2f1c400b8327e1d462f01ed7f37f01103ff6d35440162c65a",
+      "role": "release_qa_receipts_and_review_disclosures"
+    },
+    {
+      "filename": "openlogic-te-Telu-IN-editable-TeX-OLP0722-v1.0.0-full-olp0722.zip",
+      "bytes": 1907473,
+      "sha256": "a8e21c130c90dbc8d77d0daab9a4d8933e981c7ec04b663a5ebc39d502b8de41",
+      "role": "all_722_editable_telugu_tex_units"
+    },
+    {
+      "filename": "openlogic-te-Telu-IN-full-HTML-OLP0722-v1.0.0-full-olp0722.zip",
+      "bytes": 5564239,
+      "sha256": "b470d51fd3a8bdff733cb3081c9b139787a0e42da906362bda51422a269632ad",
+      "role": "complete_offline_html_reader"
+    },
+    {
+      "filename": "openlogic-te-Telu-IN-full-OLP0722-v1.0.0-full-olp0722.epub",
+      "bytes": 4139571,
+      "sha256": "3746638afa7da9324273535ef782d0043e80a140d6df447c21afcd4cd8f94211",
+      "role": "complete_reflowable_mathml_epub"
+    },
+    {
+      "filename": "openlogic-te-Telu-IN-full-source-OLP0722-v1.0.0-full-olp0722.zip",
+      "bytes": 74563840,
+      "sha256": "4945c2e23a30f4c8b1f54e8833c9aac36e03738e3f8ea34082bcb04cd978518d",
+      "role": "committed_full_source_snapshot"
+    },
+    {
+      "filename": "release-manifest-v1.0.0-full-olp0722.json",
+      "bytes": 3862,
+      "sha256": "464a2aaff06524da17809b37b4a34b2f36ba7ae90910898bb2315278f8fa30d6",
+      "role": "release_manifest"
+    },
+    {
+      "filename": "SHA256SUMS-v1.0.0-full-olp0722.txt",
+      "bytes": 874,
+      "sha256": "c1c789dfc75cab481e31d21de223f54a53366eba1ed62b2a460a3b9b991a1541",
+      "role": "sha256_checksums"
+    }
+  ],
+  "anonymous_downloads": true
+}

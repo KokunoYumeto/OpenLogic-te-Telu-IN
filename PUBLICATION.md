@@ -1,6 +1,24 @@
 # Verified publication checkpoints
 
-## Current v0.4.0 cumulative mirror — 2026-09-26
+## Complete v1.0.0 GitHub release — 2026-09-28
+
+The [complete 722-unit Telugu release](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v1.0.0-full-olp0722)
+is public. Its tag resolves to source commit
+`320108a487b5fdc3dc64e6d08cbff801ac2ec65f`. The release includes a
+951-page tagged, searchable PDF, a MathML EPUB, a self-contained offline HTML
+reader, all 722 editable Telugu TeX units, a full-source snapshot, a QA bundle,
+a release manifest, and SHA-256 checksums. All eight public assets were
+downloaded anonymously and matched to the local package by byte count and
+SHA-256; see the [readback receipt](evidence/GITHUB-FULL-V1-READBACK.json).
+The [release notes](RELEASE-NOTES-v1.0.0-full-olp0722.md) disclose the
+machine-assisted review boundary and source limitations.
+
+The existing [Zenodo concept DOI](https://doi.org/10.5281/zenodo.22307937)
+currently still identifies the historical partial-edition lineage; do not
+describe its latest version as the complete 722-unit reader until that version
+has been published and anonymously verified.
+
+## Historical v0.4.0 cumulative mirror — 2026-09-26
 
 The [GitHub v0.4.0 release](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.4.0-cumulative-olp0279)
 is now mirrored in the existing [Zenodo concept](https://doi.org/10.5281/zenodo.22307937)

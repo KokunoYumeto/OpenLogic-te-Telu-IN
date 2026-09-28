@@ -28,7 +28,13 @@ const api=`https://api.github.com/repos/${repository}`;
 const release=await json(`${api}/releases/tags/${tag}`);
 if(release.tag_name!==tag||release.draft||release.prerelease)throw new Error('Full release is not public and final');
 const ref=await json(`${api}/git/ref/tags/${tag}`);
-if(ref.object?.type!=='commit'||ref.object.sha!==manifest.repository_commit)throw new Error('Public tag does not point to packaged commit');
+let tagCommit=ref.object?.type==='commit'?ref.object.sha:null;
+if(ref.object?.type==='tag'){
+  const annotation=await json(`${api}/git/tags/${ref.object.sha}`);
+  if(annotation.tag!==tag||annotation.object?.type!=='commit')throw new Error('Unexpected annotated release tag');
+  tagCommit=annotation.object.sha;
+}
+if(tagCommit!==manifest.repository_commit)throw new Error('Public tag does not point to packaged commit');
 const rows=[];
 for(const expected of wanted){
   const matches=release.assets.filter(item=>item.name===expected.filename);
@@ -42,6 +48,6 @@ for(const expected of wanted){
   rows.push({filename:expected.filename,bytes,sha256:actual,role:expected.role});
   process.stdout.write(JSON.stringify({verified:expected.filename,bytes})+'\n');
 }
-const receipt={schema:'openlogic-te-github-full-release-readback/1',status:'COMPLETE_PASS',checked_utc:new Date().toISOString(),repository:`https://github.com/${repository}`,release_url:release.html_url,tag,tag_commit:ref.object.sha,assets:rows,anonymous_downloads:true};
+const receipt={schema:'openlogic-te-github-full-release-readback/1',status:'COMPLETE_PASS',checked_utc:new Date().toISOString(),repository:`https://github.com/${repository}`,release_url:release.html_url,tag,tag_commit:tagCommit,assets:rows,anonymous_downloads:true};
 fs.writeFileSync(path.join(root,'evidence','GITHUB-FULL-V1-READBACK.json'),JSON.stringify(receipt,null,2)+'\n');
 console.log(JSON.stringify({status:receipt.status,assets:rows.length,release_url:receipt.release_url,tag_commit:receipt.tag_commit}));
