@@ -328,6 +328,13 @@ def main() -> None:
         raise ValueError("HTML priority review omits or reorders a high-priority decision")
     review_index = (review_dir / "index.html").read_text(encoding="utf-8")
     priority_index = (review_dir / "priority.html").read_text(encoding="utf-8")
+    for page in [review_dir / name for name in sorted(expected_html)]:
+        page_text = page.read_text(encoding="utf-8")
+        if ("OpenAI Codex GPT-5.6 Sol, Ultra reasoning effort" not in page_text
+                or "OpenAI Codex GPT-6 Sol, Ultra reasoning effort" not in page_text
+                or "ఈ విభజించిన HTML సమీక్షా రూపాన్ని 2026-09-28న" not in page_text
+                or "ఇది స్వతంత్ర మానవ భాషా/గణిత నిపుణ సమీక్ష కాదు" not in page_text):
+            raise ValueError(f"Native-language provenance and review limit absent from {page}")
     for page in full_pages:
         if f'href="{page.name}"' not in review_index:
             raise ValueError(f"Main web index omits {page.name}")
@@ -419,6 +426,7 @@ def main() -> None:
             "browser_review_exact_decisions_and_occurrences": True,
             "browser_review_markdown_lines_preserved": True,
             "browser_review_entry_links_and_downloads": True,
+            "browser_review_provenance_and_human_review_limit": True,
         },
         "artifacts": artifacts,
     }

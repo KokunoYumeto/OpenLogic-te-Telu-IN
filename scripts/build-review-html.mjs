@@ -69,7 +69,8 @@ function renderBody(body) {
 }
 
 function documentHtml(title, body) {
-  return `<!doctype html>\n<html lang="te-Telu-IN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="OpenLogic తెలుగు అనువాద నిర్ణయాల నిపుణ సమీక్ష"><title>${escapeText(title)}</title><link rel="stylesheet" href="review.css"></head><body>${body}</body></html>\n`;
+  const provenance = `<aside class="provenance" aria-label="యంత్ర-సహాయ రచన వివరాలు"><h2>యంత్ర-సహాయ రచన వివరాలు</h2><p>మూల తెలుగు అనువాదం, నిర్ణయాల నమోదు యంత్ర-సహాయ పని. చారిత్రక 276-విభాగాల నమోదులో OpenAI Codex GPT-5.6 Sol, Ultra reasoning effort పేర్కొనబడింది; తరువాతి పని-నమోదులో GPT-6 Sol, Ultra reasoning effort ఉంది. నమోదు లేని ప్రతి చారిత్రక దశకు ఒక నమూనాను ఊహించి ఆపాదించడం లేదు. <a href="https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/blob/main/ATTRIBUTION.md">పూర్తి ఆపాదన గమనిక</a>.</p><p>ఈ విభజించిన HTML సమీక్షా రూపాన్ని 2026-09-28న OpenAI Codex GPT-6 Sol, Ultra reasoning effortతో రూపొందించి తనిఖీ చేశాం. ఇది స్వతంత్ర మానవ భాషా/గణిత నిపుణ సమీక్ష కాదు.</p></aside>`;
+  return `<!doctype html>\n<html lang="te-Telu-IN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="OpenLogic తెలుగు అనువాద నిర్ణయాల నిపుణ సమీక్ష"><title>${escapeText(title)}</title><link rel="stylesheet" href="review.css"></head><body>${body}${provenance}</body></html>\n`;
 }
 
 function downloadLinks() {
