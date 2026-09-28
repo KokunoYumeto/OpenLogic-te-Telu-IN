@@ -46,7 +46,10 @@
     "accepted_html_unit_anchors_verified": true,
     "full_readable_view_complete": true,
     "priority_view_complete": true,
-    "telugu_explanations_and_review_questions_complete": true,
+    "early_term_specific_rationales_and_confidence_rendered": true,
+    "later_english_confidence_details_rendered": true,
+    "alternative_reasons_and_term_authority_scope_rendered": true,
+    "telugu_review_questions_present": true,
     "english_parallel_views_preserved": true,
     "primary_confidence_reconciled": true,
     "occurrence_csv_reconciled": true
@@ -54,13 +57,13 @@
   "artifacts": [
     {
       "path": "evidence/START_HERE.md",
-      "bytes": 5815,
-      "sha256": "3fe0cf5bbbb1f51b74497deede0730c9da6230cbee085c3f34a128432e62fd48"
+      "bytes": 6344,
+      "sha256": "e3afcb789793740d03c9ff4b12217e7f46c68fcb5ebc34de34d3408f4a1e6726"
     },
     {
       "path": "evidence/START_HERE.te.md",
-      "bytes": 5815,
-      "sha256": "3fe0cf5bbbb1f51b74497deede0730c9da6230cbee085c3f34a128432e62fd48"
+      "bytes": 6344,
+      "sha256": "e3afcb789793740d03c9ff4b12217e7f46c68fcb5ebc34de34d3408f4a1e6726"
     },
     {
       "path": "evidence/START_HERE.en.md",
@@ -69,8 +72,8 @@
     },
     {
       "path": "evidence/TRANSLATION_DECISIONS_FULL.md",
-      "bytes": 5835310,
-      "sha256": "7acbb70e9744e6eccd14f32c6b83def0d8eda720ca2b3c3563a22210651a6a37"
+      "bytes": 6837664,
+      "sha256": "599519bd6cb4ebb606bdd412f7a50c4e6c00d1636adb6ef6975be68ec7ed705b"
     },
     {
       "path": "evidence/TRANSLATION_DECISIONS_FULL.en.md",
@@ -79,8 +82,8 @@
     },
     {
       "path": "evidence/PRIORITY_REVIEW.md",
-      "bytes": 310338,
-      "sha256": "7ed4bf30846f957bc86d40f2a0801fd0e26b4dc65b2bfb47bc6c96091f50316f"
+      "bytes": 565605,
+      "sha256": "ba68319c947114ce2e7fb94de92c80ec6e39205e5d0aa291a9119d2538a2d417"
     },
     {
       "path": "evidence/PRIORITY_REVIEW.en.md",
@@ -95,7 +98,22 @@
     {
       "path": "evidence/DECISIONS.json",
       "bytes": 21088231,
-      "sha256": "5ae4a4e3de8955b8594abe1ac3e81ece399f86e2b1d1ee97ff272e85f2845e48"
+      "sha256": "b475c1dc338844a1d3a4947ad15ae0ecb2caf7c07351fb3a772ecb44ce91f4de"
+    },
+    {
+      "path": "evidence/TERM_RATIONALES_TE.json",
+      "bytes": 100050,
+      "sha256": "be3852a7bc1eef0f9b2da4feaf034b762db4013d733d93e4df8034fad667d131"
+    },
+    {
+      "path": "evidence/TERM_ALTERNATIVES_TE.json",
+      "bytes": 49247,
+      "sha256": "60983e533178d0b30a15705e0df9f841fa1dfcb16fc8f95eab076d218a75bf3b"
+    },
+    {
+      "path": "evidence/CANON_PASSAGES_TE.json",
+      "bytes": 12717,
+      "sha256": "1f67aaa96cda5f90de6bea40c82c42391662c43863acb5fba0a8f6d66e1ace31"
     },
     {
       "path": "evidence/translation-decision.schema.json",

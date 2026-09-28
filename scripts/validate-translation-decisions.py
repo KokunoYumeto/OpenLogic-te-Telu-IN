@@ -26,6 +26,9 @@ SURFACES = (
     "PRIORITY_REVIEW.en.md",
     "DECISION_OCCURRENCES.csv",
     "DECISIONS.json",
+    "TERM_RATIONALES_TE.json",
+    "TERM_ALTERNATIVES_TE.json",
+    "CANON_PASSAGES_TE.json",
     "translation-decision.schema.json",
 )
 
@@ -41,6 +44,19 @@ def artifact(path: Path, display_path: str) -> dict[str, object]:
 
 def jsonl(path: Path) -> list[dict[str, object]]:
     return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+
+
+def telugu_dominant(value: str) -> bool:
+    telugu = sum("\u0c00" <= character <= "\u0c7f" for character in value)
+    latin = sum("a" <= character.lower() <= "z" for character in value)
+    return telugu > latin
+
+
+def decision_section(view: str, decision_id: str) -> str:
+    marker = f"## {decision_id} — "
+    if view.count(marker) != 1:
+        raise ValueError(f"Review view lacks a unique section for {decision_id}")
+    return view.split(marker, 1)[1].split("\n## ", 1)[0]
 
 
 def main() -> None:
@@ -179,6 +195,74 @@ def main() -> None:
             or priority_text.count("- విశ్వాసం/అనిశ్చితి:") != len(priority_expected)
             or any(decision_id not in priority_english for decision_id in priority_expected)):
         raise ValueError("Telugu priority view or English parallel view is incomplete")
+    term_review_te = json.loads((data_dir / "TERM_RATIONALES_TE.json").read_text(encoding="utf-8"))
+    term_alternatives_te = json.loads((data_dir / "TERM_ALTERNATIVES_TE.json").read_text(encoding="utf-8"))
+    canon_passages_te = json.loads((data_dir / "CANON_PASSAGES_TE.json").read_text(encoding="utf-8"))
+    primary_passages = {item["passage_id"] for item in jsonl(data_dir / "CANON_PASSAGES.jsonl")}
+    if set(canon_passages_te) != primary_passages:
+        raise ValueError("Telugu authority scope map differs from the primary passage ledger")
+    for passage_id, passage in canon_passages_te.items():
+        if any(not isinstance(passage.get(key), str) or len(passage[key]) < (8 if key == "region" else 15)
+               or not telugu_dominant(passage[key]) for key in ("region", "role")):
+            raise ValueError(f"Authority role or region lacks substantive Telugu text: {passage_id}")
+    early_ids = {f"TE-T{index:03d}" for index in range(3, 81)}
+    later_confidence_ids = {f"TE-T{index:03d}" for index in range(401, 413)}
+    if set(term_review_te) != early_ids | later_confidence_ids:
+        raise ValueError("Telugu rationale/confidence map lacks an affected term or has an unexpected term")
+    for term_id in early_ids:
+        review = term_review_te[term_id]
+        for key in ("rationale", "confidence"):
+            if not isinstance(review.get(key), str) or len(review[key]) < 35 or not telugu_dominant(review[key]):
+                raise ValueError(f"Early review field lacks substantive Telugu text: {term_id} {key}")
+    for term_id in later_confidence_ids:
+        review = term_review_te[term_id]
+        if set(review) != {"confidence"} or len(review["confidence"]) < 35 or not telugu_dominant(review["confidence"]):
+            raise ValueError(f"Later English-only confidence detail not localized: {term_id}")
+    terminology = [item for item in decisions if item["record_kind"] == "terminology"]
+    expected_alternative_ids = {
+        item["decision_id"].removeprefix("te-Telu-IN-")
+        for item in terminology[:80] if item["alternatives"]
+    }
+    if set(term_alternatives_te) != expected_alternative_ids:
+        raise ValueError("Telugu alternative map differs from early primary terminology decisions")
+    for decision in terminology:
+        term_id = decision["decision_id"].removeprefix("te-Telu-IN-")
+        full_section = decision_section(full_text, decision["decision_id"])
+        priority_section = decision_section(priority_text, decision["decision_id"]) if decision["decision_id"] in priority_expected else None
+        for section in (full_section, priority_section):
+            if section is None:
+                continue
+            review = term_review_te.get(term_id, {})
+            if "rationale" in review and review["rationale"] not in section:
+                raise ValueError(f"Specific Telugu rationale not rendered: {term_id}")
+            if "confidence" in review and review["confidence"] not in section:
+                raise ValueError(f"Specific Telugu confidence detail not rendered: {term_id}")
+            if term_id in early_ids and "స్థిర మూలంలోని “" in section:
+                raise ValueError(f"Generic rationale remains in early Telugu view: {term_id}")
+            for authority in decision["authorities_checked"]:
+                passage = canon_passages_te.get(authority["passage_id"])
+                if passage and (passage["region"] not in section or passage["role"] not in section):
+                    raise ValueError(f"Authority scope not rendered in Telugu: {term_id} {authority['passage_id']}")
+            alternatives = term_alternatives_te.get(term_id, [])
+            if term_id in expected_alternative_ids and len(alternatives) != len(decision["alternatives"]):
+                raise ValueError(f"Alternative count changed in Telugu view: {term_id}")
+            for alternative in alternatives:
+                if (len(alternative.get("reason", "")) < 15 or not telugu_dominant(alternative["reason"])
+                        or alternative["rendering"] not in section or alternative["reason"] not in section):
+                    raise ValueError(f"Alternative and reason not substantively rendered: {term_id}")
+    for decision in decisions:
+        section = decision_section(full_text, decision["decision_id"])
+        alternative_line = next((line for line in section.splitlines() if line.startswith("- ఇతర ఎంపికలు: ")), "")
+        rendered_count = sum(alternative_line.count(f"({label}:") for label in (
+            "పరిశీలించదగిన ప్రత్యామ్నాయం", "తిరస్కరించిన ఎంపిక", "వేరే భావానికి", "వేరే శైలికి"
+        ))
+        if rendered_count != len(decision["alternatives"]):
+            raise ValueError(f"Review alternatives not fully rendered: {decision['decision_id']}")
+        if decision["alternatives"] and (not telugu_dominant(alternative_line)
+                                         or "వివరణాత్మక కారణాలు సమాంతర ఆంగ్ల నమోదులో ఉన్నాయి" in alternative_line
+                                         or "Leaving reader-visible explanatory prose untranslated" in alternative_line
+                                         or "Translate the defective source wording" in alternative_line):
+            raise ValueError(f"Review alternatives retain untranslated explanation: {decision['decision_id']}")
     start_here = (data_dir / "START_HERE.md").read_text(encoding="utf-8")
     if ("722/722" not in start_here or "నిర్ణయాలు" not in start_here
             or start_here != (data_dir / "START_HERE.te.md").read_text(encoding="utf-8")
@@ -240,7 +324,10 @@ def main() -> None:
             "accepted_html_unit_anchors_verified": reader_status_counts.get("available", 0) == len(occurrence_ids) if register["edition_release"]["coverage_state"] == "complete" else True,
             "full_readable_view_complete": True,
             "priority_view_complete": True,
-            "telugu_explanations_and_review_questions_complete": True,
+            "early_term_specific_rationales_and_confidence_rendered": True,
+            "later_english_confidence_details_rendered": True,
+            "alternative_reasons_and_term_authority_scope_rendered": True,
+            "telugu_review_questions_present": True,
             "english_parallel_views_preserved": True,
             "primary_confidence_reconciled": True,
             "occurrence_csv_reconciled": True,
