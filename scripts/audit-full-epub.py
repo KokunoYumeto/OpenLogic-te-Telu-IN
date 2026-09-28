@@ -152,7 +152,7 @@ def main() -> None:
     args = parser.parse_args()
     report = audit(args.epub.resolve(), args.cold_epub.resolve(), args.epubcheck_jar.resolve(), probe=args.probe)
     if not args.probe:
-        REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps(report, ensure_ascii=False))
 
 

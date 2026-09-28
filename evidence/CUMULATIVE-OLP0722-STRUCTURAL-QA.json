@@ -1,6 +1,6 @@
 {
   "schema": "telugu-openlogic-batch-qa/1",
-  "generated_utc": "2026-09-28T01:57:10.693Z",
+  "generated_utc": "2026-09-28T14:13:11.439Z",
   "note": "Current full-corpus structural diagnostic from the passing 722-unit strict audit; historical cumulative snapshots retain their original audit-time target hashes. This is not a semantic proof or release acceptance.",
   "units": [
     {
@@ -14161,7 +14161,7 @@
       "unit_id": "OLP-0052",
       "source_path": "content/sets-functions-relations/infinite/dedekind-induction.tex",
       "source_sha256": "ea5f6c80d70abca6f5598de3e221c2f60524c40cbf533ae8a5336d5bb7186537",
-      "translation_sha256": "7fd385dc7fbf2700c76424e02f23ba0aed31ba7462817e79749b28b3a31864b4",
+      "translation_sha256": "04612de418f7a5626737ddff68d482a0813cd7365cf0edea746aa6aa1c079549",
       "source_blocks": 14,
       "target_blocks": 14,
       "paragraph_alignment": true,
@@ -14252,7 +14252,7 @@
       ],
       "math_declared_source_correction_match": true,
       "math_multiset_match": true,
-      "telugu_chars": 1577,
+      "telugu_chars": 1597,
       "unicode_replacement_char": false,
       "unpaired_surrogate": false,
       "blocks": [
@@ -126504,7 +126504,7 @@
       "unit_id": "OLP-0469",
       "source_path": "content/normal-modal-logic/tableaux/countermodels.tex",
       "source_sha256": "c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd",
-      "translation_sha256": "60a05ac625211461cbd1a139cd71bb201d49f898abc39df8f1b2915a9232320d",
+      "translation_sha256": "5da43ba39b77eaa21431a1a6da310cb8809e5ac67b69d44ed1948866c41de7d4",
       "source_blocks": 9,
       "target_blocks": 9,
       "paragraph_alignment": true,
@@ -126665,7 +126665,7 @@
       ],
       "math_declared_source_correction_match": true,
       "math_multiset_match": true,
-      "telugu_chars": 2499,
+      "telugu_chars": 2509,
       "unicode_replacement_char": false,
       "unpaired_surrogate": false,
       "blocks": [

@@ -1,7 +1,8 @@
 {
   "schema": "openlogic-te-language-triage/1",
   "scope": "all 722 Telugu faces; English disclosure and MathML excluded",
-  "blocks_examined": 12952,
+  "blocks_examined": 12949,
   "likely_untranslated_prose": [],
-  "note": "Heuristic triage only: flagged technical English may be intentional, and a pass does not establish semantic adequacy."
+  "status": "COMPLETE_PASS",
+  "note": "Heuristic triage only, including short English connectives outside MathML; a pass does not establish semantic adequacy."
 }

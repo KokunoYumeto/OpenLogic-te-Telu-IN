@@ -4,7 +4,7 @@ import path from 'node:path';
 
 const root=path.resolve(import.meta.dirname,'..');
 const out=path.join(root,'output','release');
-const tag='v1.0.0-full-olp0722';
+const tag='v1.0.1-full-olp0722';
 const repository='KokunoYumeto/OpenLogic-te-Telu-IN';
 const manifestName=`release-manifest-${tag}.json`;
 const checksumsName=`SHA256SUMS-${tag}.txt`;
@@ -49,5 +49,5 @@ for(const expected of wanted){
   process.stdout.write(JSON.stringify({verified:expected.filename,bytes})+'\n');
 }
 const receipt={schema:'openlogic-te-github-full-release-readback/1',status:'COMPLETE_PASS',checked_utc:new Date().toISOString(),repository:`https://github.com/${repository}`,release_url:release.html_url,tag,tag_commit:tagCommit,assets:rows,anonymous_downloads:true};
-fs.writeFileSync(path.join(root,'evidence','GITHUB-FULL-V1-READBACK.json'),JSON.stringify(receipt,null,2)+'\n');
+fs.writeFileSync(path.join(root,'evidence','GITHUB-FULL-V101-READBACK.json'),JSON.stringify(receipt,null,2)+'\n');
 console.log(JSON.stringify({status:receipt.status,assets:rows.length,release_url:receipt.release_url,tag_commit:receipt.tag_commit}));

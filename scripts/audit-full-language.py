@@ -18,6 +18,8 @@ HTML = ROOT / "output" / "html" / "full" / "index.html"
 REPORT = ROOT / "evidence" / "FULL-READER-LANGUAGE-TRIAGE.json"
 TELUGU = re.compile(r"[\u0c00-\u0c7f]")
 LATIN_WORD = re.compile(r"[A-Za-z][A-Za-z'-]*")
+MIXED_ENGLISH_CONNECTIVE = re.compile(r"\b(?:if|then|and|or|let|suppose|therefore|hence)\b\s*[\u0c00-\u0c7f]", re.I)
+RAW_TEX_LINE_SKIP = re.compile(r"\[(?:\d+(?:\.\d+)?)(?:em|ex|pt)\]")
 EXCLUDED = {"math", "code", "pre", "svg", "annotation", "script", "style"}
 BLOCKS = {"p", "li", "h1", "h2", "h3", "h4", "figcaption", "dt", "dd", "blockquote"}
 
@@ -55,7 +57,11 @@ def main() -> None:
             examined += 1
             words = LATIN_WORD.findall(value)
             telugu = len(TELUGU.findall(value))
-            if (len(words) >= 12 and telugu == 0) or (len(words) >= 24 and len(words) > telugu / 3):
+            if ((len(words) >= 2 and telugu == 0
+                    and not value.startswith(("http://", "https://")))
+                    or (len(words) >= 24 and len(words) > telugu / 3)
+                    or MIXED_ENGLISH_CONNECTIVE.search(value)
+                    or RAW_TEX_LINE_SKIP.search(value)):
                 flags.append({
                     "unit_id": unit.get("id"),
                     "element": element.tag,
@@ -68,10 +74,13 @@ def main() -> None:
         "scope": "all 722 Telugu faces; English disclosure and MathML excluded",
         "blocks_examined": examined,
         "likely_untranslated_prose": flags,
-        "note": "Heuristic triage only: flagged technical English may be intentional, and a pass does not establish semantic adequacy.",
+        "status": "COMPLETE_PASS" if not flags else "REVIEW_REQUIRED",
+        "note": "Heuristic triage only, including short English connectives outside MathML; a pass does not establish semantic adequacy.",
     }
-    REPORT.write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    REPORT.write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps({"blocks_examined": examined, "flags": len(flags), "report": str(REPORT)}, ensure_ascii=False))
+    if flags:
+        raise RuntimeError("Likely untranslated prose requires review")
 
 
 if __name__ == "__main__":

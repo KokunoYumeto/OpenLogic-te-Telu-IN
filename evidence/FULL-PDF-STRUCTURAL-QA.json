@@ -2,8 +2,8 @@
   "schema": "openlogic-te-full-pdf-structural-qa/1",
   "status": "structural_pass_visual_pending",
   "filename": "openlogic-te-Telu-IN-full-OLP0722.pdf",
-  "bytes": 86691371,
-  "sha256": "a41a29f8af252b4645b901c88021320b12b14968e32e26cfa5ea66816f565a38",
+  "bytes": 86689372,
+  "sha256": "a89900a46b7567eb73132b146dabadea0402a9ed4aa09859db4f0287819683c5",
   "pages": 951,
   "page_sizes_points": [
     [
@@ -12,8 +12,8 @@
     ]
   ],
   "tag_tree_present": true,
-  "text_layer_bytes": 4911311,
-  "telugu_code_points_extracted": 1300298,
+  "text_layer_bytes": 4911343,
+  "telugu_code_points_extracted": 1300328,
   "unit_id_markers": 722,
   "unique_unit_id_markers": 722,
   "unit_ids_seen_anywhere": 722,
@@ -28,6 +28,6 @@
   "noto_regular_embedded": true,
   "noto_bold_embedded": true,
   "extraction_note": "Poppler can insert spaces inside shaped Telugu words; character coverage and searchable phrases are checked separately from exact whitespace fidelity.",
-  "source_html_qa_sha256": "e59fc541bd66e215163ba47ce86e93d89cd025eddc8bdc0c707fb0e1c60626b3",
-  "cold_sha256": "a41a29f8af252b4645b901c88021320b12b14968e32e26cfa5ea66816f565a38"
+  "source_html_qa_sha256": "7b91bf4fe4a7c63f9d840b1d1ffaaf4bd2c960b8b1528334f24d39fb4e58b75d",
+  "cold_sha256": "a89900a46b7567eb73132b146dabadea0402a9ed4aa09859db4f0287819683c5"
 }

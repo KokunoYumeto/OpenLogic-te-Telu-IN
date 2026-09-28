@@ -7,7 +7,7 @@
 
 ## పూర్తి పాఠక సంచిక
 
-[v1.0.0 పూర్తి విడుదల](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v1.0.0-full-olp0722)
+[v1.0.1 సరిచేసిన పూర్తి విడుదల](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v1.0.1-full-olp0722)
 లో 722/722 విభాగాలను కలిపిన, వెతకగల PDF, రీఫ్లో EPUB, ఆఫ్‌లైన్
 సెమాంటిక్ HTML, సంపాదించగల తెలుగు TeX, పూర్తి మూలసంగ్రహం ఉన్నాయి.
 HTML ZIPను విప్పి `index.html` తెరిస్తే ఇంటర్నెట్ లేకుండానే చదవవచ్చు.
@@ -32,6 +32,11 @@ HTML ZIPను విప్పి `index.html` తెరిస్తే ఇం�
 నిర్వచనమే ఆధారం.
 
 ## చారిత్రక పాక్షిక సంచికలు
+
+మొదటి 722-విభాగాల v1.0.0 సంచికలో కొన్ని చిన్న ఆంగ్ల సంధాన పదాలు మిగిలాయి.
+[v1.0.1 దిద్దుబాట్ల నమోదు](evidence/FULL-LANGUAGE-CORRECTIONS-20260928.md)
+వాటిని, పాఠక రూపంలో కనిపించిన TeX ఖాళీ సూచికలను వివరిస్తుంది. చదవడానికి
+v1.0.1నే వాడండి; పాత సంచిక చారిత్రకంగా నిలిచి ఉంటుంది.
 
 [v0.4.0 సంచిత విడుదల](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.4.0-cumulative-olp0279)
 OLP-0004–OLP-0279లోని 276 విభాగాలకు 515 పేజీల PDF, రీఫ్లో EPUB,
@@ -83,11 +88,13 @@ editable Telugu TeX files at their original paths. A strict structural audit
 passes all 10,611 aligned blocks. This is machine-assisted work with
 source-comparison evidence, not an independently human-reviewed translation.
 The complete integrated reader is available in the
-[v1.0.0 full release](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v1.0.0-full-olp0722)
+[corrected v1.0.1 full release](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v1.0.1-full-olp0722)
 as a tagged/searchable PDF, reflowable EPUB, and self-contained offline HTML,
 alongside all editable TeX units and reproducible source and QA archives.
 Validation is structural and machine-assisted, with sampled semantic and
 visual review; it is not independent expert review.
+The first full v1.0.0 release remains historical; v1.0.1 translates short
+English connectives missed in two units and removes printed TeX spacing marks.
 
 The [earlier v0.4.0 release](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.4.0-cumulative-olp0279)
 remains a 276-unit cumulative PDF/EPUB and editable-source tranche. The

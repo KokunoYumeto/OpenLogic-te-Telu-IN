@@ -111,7 +111,7 @@ def main() -> None:
     args = parser.parse_args()
     result = inspect(args.pdf.resolve(), probe=args.probe)
     if not args.probe:
-        REPORT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        REPORT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps(result, ensure_ascii=False))
 
 

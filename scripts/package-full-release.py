@@ -1,4 +1,4 @@
-"""Package the accepted 722-unit edition as reproducible v1.0.0 assets."""
+"""Package the accepted 722-unit edition as reproducible v1.0.1 assets."""
 
 from __future__ import annotations
 
@@ -13,7 +13,7 @@ from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "output" / "release"
-TAG = "v1.0.0-full-olp0722"
+TAG = "v1.0.1-full-olp0722"
 REVISION = "9620cc73f9c8e0ad003c514a5d3748f29611c4c0"
 ZIP_TIME = (2026, 9, 28, 0, 0, 0)
 
@@ -82,12 +82,15 @@ def main() -> None:
     epub = accepted("evidence/FULL-EPUB-QA.json")
     pdf = accepted("evidence/FULL-PDF-STRUCTURAL-QA.json", "structural_pass_visual_pending")
     visual = accepted("evidence/FULL-PDF-VISUAL-QA.json")
+    language = accepted("evidence/FULL-READER-LANGUAGE-TRIAGE.json")
     decisions = accepted("evidence/TRANSLATION_DECISION_QA.json", "pass")
     require(html["units"] == epub["units"] == decisions["coverage"]["reader_units"] == 722, "Reader or decision coverage differs")
     require(token_headings["html_sha256"] == next(item["sha256"] for item in html["files"] if item["name"] == "index.html"), "Token-heading audit covers different HTML")
     require(epub["epubcheck"]["errors"] == epub["epubcheck"]["warnings"] == 0, "EPUBCheck is not clean")
     require(pdf["pages"] == visual["pages"] and pdf["sha256"] == visual["pdf_sha256"], "PDF visual review does not bind the accepted PDF")
     require(not pdf["orphan_unit_labels"] and not pdf["empty_pages"], "PDF has a pagination defect")
+    require(language["blocks_examined"] > 12_000 and not language["likely_untranslated_prose"],
+            "Full reader language triage found unresolved flags")
 
     pdf_source = ROOT / "output" / "pdf" / "openlogic-te-Telu-IN-full-OLP0722.pdf"
     epub_source = OUT / "openlogic-te-Telu-IN-full-OLP0722.epub"
@@ -131,6 +134,7 @@ def main() -> None:
         "evidence/FULL-PDF-VISUAL-QA.json",
         "evidence/TRANSLATION_DECISION_QA.json",
         "evidence/FULL-READER-LANGUAGE-TRIAGE.json",
+        "evidence/FULL-LANGUAGE-CORRECTIONS-20260928.md",
         "evidence/FULL-SEMANTIC-SPOTCHECK-20260928.md",
     ]
     qa_zip = OUT / f"openlogic-te-Telu-IN-QA-OLP0722-{TAG}.zip"
@@ -153,7 +157,7 @@ def main() -> None:
         "source_revision": REVISION,
         "language": "te-Telu-IN",
         "scope": {"source_units": 722, "translated_editable_units": 722, "html_reader_units": 722, "epub_reader_units": 722, "pdf_reader_units": 722, "complete_edition": True},
-        "lineage": {"prior_github_release": "v0.4.0-cumulative-olp0279", "zenodo_concept_doi": "10.5281/zenodo.22307937", "prior_zenodo_version_doi": "10.5281/zenodo.22726674", "new_zenodo_version_doi": None},
+        "lineage": {"prior_github_release": "v1.0.0-full-olp0722", "zenodo_concept_doi": "10.5281/zenodo.22307937", "prior_zenodo_version_doi": "10.5281/zenodo.22726674", "new_zenodo_version_doi": None},
         "review_boundary": "Machine-assisted translation with source-alignment and structural QA; not independently human-reviewed. Frozen-source proof gaps and four unresolved frozen-source cross-reference occurrences are disclosed in the reader and evidence.",
         "qa_receipts": [{"path": name, "sha256": digest(ROOT / name)} for name in qa_names],
         "artifacts": artifacts,

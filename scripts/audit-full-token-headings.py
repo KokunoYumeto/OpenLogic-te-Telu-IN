@@ -39,7 +39,7 @@ def main() -> None:
             if english or malformed:
                 flags.append({"unit_id": section.group(1), "heading": text, "english": english, "malformed": malformed})
     result = {"schema": "openlogic-te-token-heading-audit/1", "html_sha256": hashlib.sha256(raw_html).hexdigest(), "units": len(sections), "headings": heading_count, "flags": flags, "status": "COMPLETE_PASS" if not flags and len(sections) == 722 else "review_needed"}
-    REPORT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    REPORT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps(result, ensure_ascii=True))
     if flags:
         raise SystemExit(1)

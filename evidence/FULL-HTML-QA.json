@@ -1,6 +1,6 @@
 {
   "schema": "openlogic-te-html-deterministic-qa/2",
-  "generated_utc": "2026-09-28T03:44:29.016Z",
+  "generated_utc": "2026-09-28T14:16:14.231Z",
   "scope": "Integrated full reader, all OLP-0001..OLP-0722 units",
   "directory": "output/html/full",
   "units": 722,
@@ -13,13 +13,13 @@
   "citation_keys": 129,
   "inline_svg_instances": 6,
   "compiled_svg_instances": 134,
-  "telugu_code_points": 1377800,
+  "telugu_code_points": 1377830,
   "network_runtime_dependencies": 0,
   "toolchain": {
     "node": "v22.17.0",
     "package_lock_sha256": "790803e48fc7e9e678b39eefc97b1fd4bfe8561ea4baefab486ab41df462294e",
     "builder_sha256": "aae978e198cda7701b19bcfa47cc1b90438fc0d6ff7a8161b4e3b6bf233178c9",
-    "reader_sha256": "a28231f2d5dc250864148609552632c1340b03e07bf4c5d0d2b11381d4aa7898",
+    "reader_sha256": "2e798ea08dd92ade085d3ffa8d8a24601820e720ef0531c5b8a478765e460e9c",
     "auditor_sha256": "8c4b657f1e084a790c261dbd98f5365884a65cfbb43b31a390b3c7e66902e1a1"
   },
   "files": [
@@ -555,8 +555,8 @@
     },
     {
       "name": "index.html",
-      "bytes": 36207764,
-      "sha256": "cc5561696999656a79eb02df4e115413c79c486c7bf0ae94e660abe44689eea1"
+      "bytes": 36207758,
+      "sha256": "a955492380a593d332070fb1c6ffc4d536c70f841216786d2bc5ef5161ed80da"
     },
     {
       "name": "KATEX-LICENSE",
@@ -576,7 +576,7 @@
     {
       "name": "render-manifest.json",
       "bytes": 18144113,
-      "sha256": "f15d926598a4cba36f5ee3de5f5c429b1e4e18333b2baeec06cf1b24d215ea80"
+      "sha256": "b8b2dce5e3d60a33704d17157e20b5ed9eba91c58531d1e8b329b158b7bf5de4"
     }
   ],
   "status": "COMPLETE_PASS"

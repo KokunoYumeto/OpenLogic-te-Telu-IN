@@ -92,6 +92,12 @@ export function parseTex(source) {
       const match=/^(?:[A-Za-z]+\*?|[\u0C00-\u0C7F]+)/u.exec(source.slice(pos));
       if(!match){
         const symbol=source[pos++]??'';
+        // TeX's optional vertical skip after a line break is layout syntax,
+        // not reader text. Keep the break but do not print e.g. "[2ex]".
+        if(symbol==='\\'){
+          const skip=/^\[(?:[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:pt|mm|cm|in|em|ex|bp|pc|dd|cc|sp))\]/u.exec(source.slice(pos));
+          if(skip)pos+=skip[0].length;
+        }
         const accents={'"':'\u0308',"'":'\u0301','`':'\u0300','^':'\u0302','~':'\u0303','=':'\u0304','.':'\u0307'};
         if(symbol in accents&&(source[pos]==='{'||/[A-Za-z]/.test(source[pos]??''))){
           const letter=source[pos]==='{'?group():source[pos++];

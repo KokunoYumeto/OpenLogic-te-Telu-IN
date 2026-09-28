@@ -22,15 +22,15 @@ import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "output" / "release"
-TAG = "v1.0.0-full-olp0722"
+TAG = "v1.0.1-full-olp0722"
 CONCEPT = "10.5281/zenodo.22307937"
 OLD_ID = 22726674
 OLD_DOI = "10.5281/zenodo.22726674"
 API = "https://zenodo.org/api"
 MANIFEST = OUT / f"release-manifest-{TAG}.json"
 CHECKSUMS = OUT / f"SHA256SUMS-{TAG}.txt"
-RECEIPT = ROOT / "evidence" / "ZENODO-FULL-V1-READBACK.json"
-GITHUB_READBACK = ROOT / "evidence" / "GITHUB-FULL-V1-READBACK.json"
+RECEIPT = ROOT / "evidence" / "ZENODO-FULL-V101-READBACK.json"
+GITHUB_READBACK = ROOT / "evidence" / "GITHUB-FULL-V101-READBACK.json"
 
 
 def require(condition: bool, message: str) -> None:
@@ -137,13 +137,13 @@ def metadata_for(draft: dict) -> dict:
     metadata.update({
         "title": "ఓపెన్ లాజిక్ తెలుగు (te-Telu-IN): పూర్తి 722-విభాగాల పాఠక సంచిక",
         "publication_date": "2026-09-28",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "description": (
             "<p>Complete machine-assisted Telugu adaptation of all 722 tracked Open Logic Project "
             "content TeX units at frozen source revision "
             "<code>9620cc73f9c8e0ad003c514a5d3748f29611c4c0</code>. "
             "The integrated edition includes the main text, alternative arrangements and formal-only units.</p>"
-            "<p>Read the complete, searchable 951-page PDF first; the release also provides a "
+            "<p>Read the complete, searchable and tagged PDF first; the release also provides a "
             "reflowable MathML EPUB, self-contained offline HTML, all editable Telugu TeX units, "
             "full source and QA evidence. The full PDF is the intended record preview.</p>"
             "<p>This translation has source-alignment and structural QA and sampled semantic/visual "
@@ -311,7 +311,7 @@ def anonymous_readback(record_id: int, inherited: dict[str, tuple[int, str]], as
         "new_assets_anonymously_verified": checked,
         "live_preview_filename": preview_filename,
     }
-    RECEIPT.write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    RECEIPT.write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     return receipt
 
 
